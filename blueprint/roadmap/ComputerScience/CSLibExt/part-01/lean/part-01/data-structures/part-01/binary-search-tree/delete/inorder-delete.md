@@ -16,19 +16,19 @@ inorder traversal of $t$ itself if $x$ does not occur in it).
 
 ## Depends on
 
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 - [Deletion from a binary search tree](delete.md)
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
 - [Inorder traversal of a join](inorder-join.md)
 - [Join of two binary trees](join.md)
-- [Mem inorder](../../../part-02/binary-search-tree/mem-inorder.md)
+- [Membership in the inorder traversal of a binary tree](../../../part-02/binary-search-tree/mem-inorder.md)
 
 ## Sources
 

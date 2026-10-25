@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.root?
 ---
 
-# Root?
+# Root key of a binary tree
 
-The key at the root of a tree, if any.
+**Root key of a binary tree.** The optional root key of a binary tree is undefined (none) for
+the empty tree, and is the key $k$ for a tree whose root node holds $k$.
 
 ## Depends on
 

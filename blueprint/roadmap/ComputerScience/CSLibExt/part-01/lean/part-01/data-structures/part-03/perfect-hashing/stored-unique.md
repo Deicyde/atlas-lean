@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.stored_unique
 ---
 
-# Stored unique
+# Stored values in a valid perfect hash table are unique
 
-Under `Valid`, the stored value for a key is unique when it exists. This is
-a direct consequence of placement (both bindings would occupy the one slot their
-shared key hashes to), so it needs no decidable equality on keys.
+**Stored values in a valid perfect hash table are unique.** In a valid two-level perfect hash
+table, if some secondary slots hold bindings $(k, v_1)$ and $(k, v_2)$ with the same key $k$, then
+$v_1 = v_2$.
+
+This is a direct consequence of placement (both bindings would occupy the one slot their shared
+key hashes to), so it needs no decidable equality on keys.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Bindings stored in a perfect hash table](stored.md)
+- [Valid perfect hash table](valid.md)
 
 ## Sources
 

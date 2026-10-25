@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.perm_build
 ---
 
-# Perm build
+# The keys of a Cartesian tree permute its input
 
-The elements of the Cartesian tree are a permutation of the input.
+**The keys of a Cartesian tree permute its input.** For every list $xs$ over a linear order,
+the inorder traversal of the Cartesian tree of $xs$ is a permutation of $xs$.
 
 ## Depends on
 
-- [Inorder](../binary-search-tree/inorder.md)
-- [Build](build.md)
+- [Inorder traversal of a binary tree](../binary-search-tree/inorder.md)
+- [Cartesian tree of a list](build.md)
 
 ## Proof depends on
 
-- [Inorder build](inorder-build.md)
+- [Inorder traversal of a Cartesian tree](inorder-build.md)
 
 ## Sources
 

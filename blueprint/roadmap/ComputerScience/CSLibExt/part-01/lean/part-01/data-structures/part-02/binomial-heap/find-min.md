@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.findMin
 ---
 
-# Find Min
+# Minimum of a binomial heap
 
-Inspect the minimum value without removing it.
+**Minimum of a binomial heap.** The minimum lookup of a binomial heap over a linearly ordered
+type returns no value when the heap has no trees, and otherwise returns the least of the root
+values of its trees, leaving the heap unchanged.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 
 ## Proof depends on
 
-- [Remove Min Tree](remove-min-tree.md)
-- [Binomial Tree](binomial-tree.md)
-- [Root](root.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Binomial tree](binomial-tree.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

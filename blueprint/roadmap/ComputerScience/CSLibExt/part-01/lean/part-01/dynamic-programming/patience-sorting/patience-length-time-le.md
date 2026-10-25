@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.patienceLength_time_le
 ---
 
-# Patience Length time le
+# Comparison bound for patience sorting
 
-Patience sorting uses at most `n * ⌈log₂ (n + 1)⌉` comparisons.
+**Comparison bound for patience sorting.** For every list $xs$ of length $n$ over a linear
+order, patience sorting on $xs$ uses at most $n \lceil \log_2 (n + 1) \rceil$ comparisons.
 
 ## Depends on
 
-- [Patience Length](patience-length.md)
+- [Patience sorting](patience-length.md)
 
 ## Proof depends on
 
 - [Lower Bound](../../../part-02/search/lower-bound/lower-bound.md)
 - [Lower Bound time le](../../../part-02/search/lower-bound/lower-bound-time-le.md)
-- [Patience Scan](patience-scan.md)
-- [Patience Step](patience-step.md)
-- [Patience Step size le](patience-step-size-le.md)
+- [Patience scan](patience-scan.md)
+- [Patience step](patience-step.md)
+- [Patience sorting agrees with the quadratic dynamic program](patience-step-size-le.md)
 
 ## Sources
 

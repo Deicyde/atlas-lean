@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.insert_eq
 ---
 
-# Insert eq
+# Cost and result of insertion into a catenable heap
 
-`insert x h` returns the front node holding `x` and `h` at cost 1.
+**Cost and result of insertion into a catenable heap.** For every element $x$ and catenable
+heap $h$, inserting $x$ into $h$ returns the heap with $x$ added in front of $h$, at cost
+exactly $1$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Insert](insert.md)
+- [Catenable heap](catenable-heap.md)
+- [Insertion into a catenable heap](insert.md)
 
 ## Sources
 

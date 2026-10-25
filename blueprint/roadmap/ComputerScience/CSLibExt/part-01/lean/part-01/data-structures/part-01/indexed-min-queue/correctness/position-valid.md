@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.position_valid
 ---
 
-# Position valid
+# Recorded positions lie inside the heap
 
-Every stored inverse slot lies within the current heap.
+**Recorded positions lie inside the heap.** Let $W$ be a linearly ordered type and let $q$
+be an indexed min-queue over $W$ with identities in $\{0, \dots, n-1\}$. If the position
+table of $q$ records slot $i$ for an identity $v$, then $i$ is less than the number of
+entries currently stored in the heap array of $q$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 
 ## Sources
 

@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.maxSubarraySumDC_ret_eq_some_iff
 ---
 
-# Max Subarray Sum DC ret eq some iff
+# Correctness of divide-and-conquer maximum subarray
 
-The divide-and-conquer algorithm returns a value exactly when the input is nonempty, and that
-value is the maximum sum of a nonempty contiguous run.
+**Correctness of divide-and-conquer maximum subarray.** Let $\alpha$ be an additive monoid
+with a linear order such that $b \le c$ implies $a + b \le a + c$ and $b + a \le c + a$. For every
+list $xs$ over $\alpha$ and every $m \in \alpha$, the divide-and-conquer algorithm returns $m$ on
+$xs$ if and only if $m$ is the maximum sum of a nonempty contiguous run of $xs$.
 
 ## Depends on
 
-- [Is Max Subarray Sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
-- [Max Subarray Sum DC](max-subarray-sum-dc.md)
+- [Being the maximum subarray sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
+- [Divide-and-conquer maximum subarray](max-subarray-sum-dc.md)
 
 ## Proof depends on
 
-- [Is Max Prefix Sum](is-max-prefix-sum.md)
-- [Append](append.md)
-- [Ne nil](../../dynamic-programming/maximum-subarray/ne-nil.md)
-- [Unique](../../dynamic-programming/maximum-subarray/unique.md)
-- [Is Max Suffix Sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
-- [Max Subarray DC](max-subarray-dc.md)
-- [Prefix Scan](prefix-scan.md)
-- [Suffix Scan](suffix-scan.md)
-- [Suffix Scan spec](suffix-scan-spec.md)
+- [Maximum prefix sum](is-max-prefix-sum.md)
+- [Maximum subarray sum of a concatenation](append.md)
+- [Cost of Kadane's algorithm](../../dynamic-programming/maximum-subarray/ne-nil.md)
+- [Uniqueness of the maximum subarray sum](../../dynamic-programming/maximum-subarray/unique.md)
+- [Being the maximum suffix sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
+- [Divide-and-conquer core of maximum subarray](max-subarray-dc.md)
+- [Prefix scan](prefix-scan.md)
+- [Right-to-left suffix scan](suffix-scan.md)
+- [Correctness of the suffix scan](suffix-scan-spec.md)
 
 ## Sources
 

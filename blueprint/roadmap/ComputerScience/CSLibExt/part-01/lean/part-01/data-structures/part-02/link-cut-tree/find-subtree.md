@@ -6,14 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.findSubtree
 ---
 
-# Find Subtree
+# Subtree rooted at a vertex
 
-The subtree rooted at `x`, if `x` occurs in the tree: the first such
-subtree in preorder.
+**Subtree rooted at a vertex.** For a vertex $x$ and a tree $T$, the subtree of $T$ rooted at
+the first occurrence of $x$ in preorder, or nothing when $x$ does not occur in $T$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 
 ## Sources
 

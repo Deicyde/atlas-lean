@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.children
 ---
 
-# Children
+# Children of a Fibonacci tree
 
-The children of a Fibonacci tree.
+**Children of a Fibonacci tree.** The children of the Fibonacci tree with stored degree $d$,
+root value $r$ and list of subtrees $c$ are the trees of the list $c$, in order.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

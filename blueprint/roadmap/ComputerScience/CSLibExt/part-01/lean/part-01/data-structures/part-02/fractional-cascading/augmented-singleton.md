@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.augmented_singleton
 ---
 
-# Augmented singleton
+# Augmenting a single catalog
 
-The augmented list of a single catalog is that catalog.
+**Augmenting a single catalog.** For every catalog $c$, the list of augmented catalogs of the
+one-element list $[c]$ is $[c]$: the only augmented catalog is $c$ itself.
 
 ## Depends on
 
-- [Augmented](augmented.md)
+- [Augmented catalogs](augmented.md)
 
 ## Sources
 

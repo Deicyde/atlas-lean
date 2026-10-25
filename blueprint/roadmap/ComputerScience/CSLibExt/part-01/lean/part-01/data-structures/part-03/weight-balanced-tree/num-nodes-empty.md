@@ -7,9 +7,9 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.numNodes_empty
 ---
 
-# Num Nodes empty
+# Number of keys of the empty tree
 
-The number of keys of the empty tree, for `BinaryTree.numNodes`.
+**Number of keys of the empty tree.** The empty binary tree has $0$ nodes.
 
 ## Depends on
 

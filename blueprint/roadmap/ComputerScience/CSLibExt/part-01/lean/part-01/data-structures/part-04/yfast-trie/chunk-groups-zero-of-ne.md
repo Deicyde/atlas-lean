@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.chunkGroups_zero_of_ne
 ---
 
-# Chunk Groups zero of ne
+# Chunking with bound zero
 
-The degenerate `B = 0` chunking of a nonempty list is one chunk.
+**Chunking with bound zero.** For every nonempty list $l$ of $w$-bit keys, the chunking of
+$l$ with bound $B = 0$ consists of the single chunk $l$.
 
 ## Depends on
 
-- [Chunk Groups](chunk-groups.md)
+- [Chunking a list into groups](chunk-groups.md)
 
 ## Proof depends on
 
-- [Chunk Groups Aux](chunk-groups-aux.md)
+- [Fuel-bounded chunking](chunk-groups-aux.md)
 
 ## Sources
 

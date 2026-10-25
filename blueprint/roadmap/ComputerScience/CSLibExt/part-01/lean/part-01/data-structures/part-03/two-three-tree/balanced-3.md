@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.balanced
 ---
 
-# Balanced
+# Every rooted 2-3 tree is balanced
 
-Every root's tree is balanced.
+**Every rooted 2-3 tree is balanced.** For every root, that is, a 2-3 tree packaged with its
+height, the underlying height-indexed tree satisfies the balance invariant.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [Root](root.md)
-- [Tree](tree.md)
+- [Balance invariant for 2-3 trees](balanced.md)
+- [2-3 trees of unspecified height](root.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Proof depends on
 
-- [Balanced](balanced-2.md)
+- [Every height-indexed 2-3 tree is balanced](balanced-2.md)
 
 ## Sources
 

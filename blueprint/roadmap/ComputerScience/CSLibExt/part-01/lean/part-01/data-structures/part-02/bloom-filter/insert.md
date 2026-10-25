@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BloomFilter.insert
 ---
 
-# Insert
+# Bloom filter insertion
 
-Inserts an element by setting the bit selected by each hash function.
+**Bloom filter insertion.** Inserting an element $x$ into a Bloom filter keeps its hash functions
+and sets bit $h(x)$ for every hash function $h$ of the filter, leaving all other bits unchanged.
 
 ## Depends on
 
-- [Bloom Filter](bloom-filter.md)
+- [Bloom filter](bloom-filter.md)
 
 ## Sources
 

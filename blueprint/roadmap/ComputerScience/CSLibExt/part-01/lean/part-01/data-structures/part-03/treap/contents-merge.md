@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.contents_merge
 ---
 
-# Contents merge
+# Treap merge concatenates inorder contents
 
-Merging concatenates the two inorder key-value refinements.
+**Treap merge concatenates inorder contents.** For trees $l$ and $r$, the inorder list of
+key-value pairs of the priority-guided merge of $l$ and $r$ is the inorder list of $l$ followed
+by the inorder list of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Contents](contents.md)
-- [Merge](merge.md)
+- [Treap trees](tree.md)
+- [Treap inorder contents](contents.md)
+- [Treap merge](merge.md)
 
 ## Proof depends on
 
-- [Contents Aux](contents-aux.md)
-- [Contents node](contents-node.md)
-- [Size](size.md)
+- [Treap inorder traversal onto a suffix](contents-aux.md)
+- [Treap inorder contents of a node](contents-node.md)
+- [Size of a treap tree](size.md)
 
 ## Sources
 

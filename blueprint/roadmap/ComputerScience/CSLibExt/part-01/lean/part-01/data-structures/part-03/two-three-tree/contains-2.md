@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.contains
 ---
 
-# Contains
+# Search in a rooted 2-3 tree
 
-Search a root's tree by separator comparisons.
+**Search in a rooted 2-3 tree.** For a linearly ordered key type, searching a root (a 2-3
+tree packaged with its height) for a key $x$ returns the Boolean result of the 2-3 tree search
+for $x$ in the underlying height-indexed tree.
 
 ## Depends on
 
-- [Root](root.md)
+- [2-3 trees of unspecified height](root.md)
 
 ## Proof depends on
 
-- [Tree](tree.md)
-- [Contains](contains.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Search in a 2-3 tree](contains.md)
 
 ## Sources
 

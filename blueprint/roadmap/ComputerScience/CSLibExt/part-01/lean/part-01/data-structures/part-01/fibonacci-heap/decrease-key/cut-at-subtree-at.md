@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt_subtreeAt
 ---
 
-# Cut At subtree At
+# A cut extracts the addressed subtree
 
-Cutting at a path extracts exactly the subtree that the path addresses.
+**A cut extracts the addressed subtree.** Let $t$ be a Fibonacci tree and $p$ a path of
+child indices. If cutting $t$ at $p$ extracts a subtree $s$ (with or without a remainder),
+then $s$ is the subtree of $t$ at $p$.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Cut At](cut-at.md)
-- [Subtree At](subtree-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
+- [Subtree of a Fibonacci tree at a path](subtree-at.md)
 
 ## Sources
 

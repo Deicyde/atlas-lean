@@ -6,20 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.empty
 ---
 
-# Empty
+# Empty Fibonacci heap
 
-The empty Fibonacci heap.
+**Empty Fibonacci heap.** The Fibonacci heap over a linearly ordered type whose list of trees
+is empty and whose cached minimum is absent.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Min Root](min-root.md)
-- [Valid nil](valid-nil.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Minimum root of a forest](min-root.md)
+- [The empty Fibonacci forest is valid](valid-nil.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

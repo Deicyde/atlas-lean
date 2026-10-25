@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.wellFormed_iff
 ---
 
-# Well Formed iff
+# Characterization of well-formed dynamic tables
 
-Well-formedness means exactly that the compact logical prefix is occupied.
+**Characterization of well-formed dynamic tables.** A dynamic table with slots
+$s_0, \dots, s_{m-1}$ and item count $n$ is well formed if and only if, for every $i < m$, slot
+$s_i$ is occupied exactly when $i < n$.
 
 ## Depends on
 
-- [Table](table.md)
-- [Well Formed](well-formed.md)
+- [Dynamic table](table.md)
+- [Well-formed dynamic table](well-formed.md)
 
 ## Sources
 

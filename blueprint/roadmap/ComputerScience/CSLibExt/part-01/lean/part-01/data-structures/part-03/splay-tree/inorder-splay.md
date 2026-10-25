@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.inorder_splay
 ---
 
-# Inorder splay
+# Splaying preserves the inorder traversal
 
-Splaying preserves the inorder traversal exactly (in particular it is
-a permutation of the original traversal).
+**Splaying preserves the inorder traversal.** For every key $x$ and every binary tree $t$
+over a linearly ordered type, the inorder traversal of the tree obtained by splaying $x$ in $t$
+equals the inorder traversal of $t$. No search-tree ordering of $t$ is assumed.
 
 ## Depends on
 
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Splay](splay.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Splay operation](splay.md)
 
 ## Proof depends on
 
-- [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
+- [Inorder traversal of a binary tree with an accumulator](../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

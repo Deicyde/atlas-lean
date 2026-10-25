@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.node
 ---
 
-# Node
+# Order-statistic tree node with computed cache
 
-Construct a node whose cache is computed from its children.
+**Order-statistic tree node with computed cache.** Given a key $k$ and order-statistic
+trees $L$ and $R$, the node built from them has key $k$, left subtree $L$, right subtree $R$,
+and cached subtree size equal to the cached root size of $L$ plus the cached root size of $R$
+plus one, where the empty tree has cached root size zero.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Cached Size](cached-size.md)
+- [Order-statistic tree node entry](entry.md)
+- [Cached root size](cached-size.md)
 
 ## Sources
 

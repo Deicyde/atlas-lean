@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.mem_of_mem_sample
 ---
 
-# Mem of mem sample
+# Entries of a sample are entries of the catalog
 
-Membership in a sample implies membership in the sampled catalog.
+**Entries of a sample are entries of the catalog.** For a catalog (finite list) $L$, every
+entry of the sample of $L$ (every other entry of $L$, starting with the first) is an entry of
+$L$.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Sample sublist](sample-sublist.md)
+- [The sample is a sublist](sample-sublist.md)
 
 ## Sources
 

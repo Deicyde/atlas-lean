@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.memKey_merge
 ---
 
-# Mem Key merge
+# Keys of a merged treap
 
-Merging preserves exactly the union of structural key membership.
+**Keys of a merged treap.** For all trees $l$ and $r$ and every key $k$, $k$ is the key of
+some node of the merge of $l$ and $r$ if and only if $k$ is the key of some node of $l$ or of
+some node of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Mem Key](mem-key.md)
-- [Merge](merge.md)
+- [Treap trees](tree.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Treap merge](merge.md)
 
 ## Proof depends on
 
-- [Size](size.md)
+- [Size of a treap tree](size.md)
 
 ## Sources
 

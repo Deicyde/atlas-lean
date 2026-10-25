@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_mem
 ---
 
-# Min? mem
+# The van Emde Boas minimum is stored
 
-The element returned by `min?` is stored in the tree.
+**The van Emde Boas minimum is stored.** Let $t$ be a two-level van Emde Boas tree over the
+universe $\{0, \dots, m^2 - 1\}$. If the minimum query on $t$ returns $x$, then $x$ is stored in
+$t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Member](member.md)
-- [Min?](min.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Minimum query of a van Emde Boas tree](min.md)
 
 ## Sources
 

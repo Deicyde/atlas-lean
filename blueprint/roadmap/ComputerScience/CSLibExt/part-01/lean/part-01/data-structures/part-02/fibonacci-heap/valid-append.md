@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.valid_append
 ---
 
-# Valid append
+# Concatenation preserves validity of Fibonacci forests
 
-The concatenation of valid forests is valid.
+**Concatenation preserves validity of Fibonacci forests.** Let $\alpha$ carry a relation
+$\le$. If $F$ and $G$ are valid Fibonacci forests with values in $\alpha$, then the forest
+consisting of the trees of $F$ followed by the trees of $G$ is valid.
 
 ## Depends on
 
-- [Valid](valid-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
+- [Valid Fibonacci trees](valid.md)
 
 ## Sources
 

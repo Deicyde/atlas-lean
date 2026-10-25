@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.omin_self
 ---
 
-# Omin self
+# Idempotence of the option minimum
 
-`omin` is idempotent; this is what lets overlapping query intervals double-count.
+**Idempotence of the option minimum.** For every linearly ordered type $\alpha$ and every
+optional value $a$ (an element of $\alpha$ or none), the option minimum of $a$ with itself is $a$.
+
+This is what lets two overlapping query intervals count their overlap twice.
 
 ## Depends on
 
-- [Omin](omin.md)
+- [Option minimum](omin.md)
 
 ## Sources
 

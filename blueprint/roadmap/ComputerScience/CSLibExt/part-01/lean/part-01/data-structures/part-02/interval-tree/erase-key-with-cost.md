@@ -6,23 +6,34 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost
 ---
 
-# Erase Key With Cost
+# Keyed erasure with cost
 
-Keyed deletion, instrumented on its real execution path.
+**Keyed erasure with cost.** Erasing a key $k \in \mathbb{Z} \times \mathbb{N}$ from an
+interval tree returns a new tree together with its cost; the key of an entry is the pair of its low
+endpoint and identifier, and keys are compared lexicographically. The empty tree is returned
+unchanged at a cost of one node visit. At a node with entry $x$, the key $k$ is compared with the
+key of $x$. If $k$ is smaller, $k$ is erased from the left subtree; if it is larger, from the right
+subtree; in both cases the node is rebuilt with the new subtree and rebalanced, and the cost is the
+subtree's cost plus one node visit, one key comparison, one cache write and the rebalancing cost.
+If $k$ equals the key of $x$ and the right subtree is empty (so it has no leftmost entry to
+remove), the result is the left subtree at a cost of one node visit and one key comparison.
+Otherwise the leftmost entry of the right subtree is removed and takes the place of $x$, the node
+is rebuilt and rebalanced, and the cost is the removal's cost plus one node visit, one key
+comparison, one cache write and the rebalancing cost.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Tree](tree.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
-- [Compare Key](compare-key.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

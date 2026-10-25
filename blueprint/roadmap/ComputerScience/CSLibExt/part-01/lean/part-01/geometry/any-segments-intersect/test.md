@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.test
 ---
 
-# Test
+# Intersection test for two input segments
 
-`SEGMENTS-INTERSECT` on segments `i` and `j`.
+**Intersection test for two input segments.** Given $n$ segments in the plane over a
+linearly ordered field, each given by its two endpoints, and indices $i, j < n$, this runs CLRS
+`SEGMENTS-INTERSECT` on the left and right endpoints of segment $i$ and the left and right
+endpoints of segment $j$. It returns that procedure's Boolean answer together with its cost in
+`DIRECTION` and `ON-SEGMENT` evaluations.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Left](left.md)
-- [Right](right.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
 - [Segments Intersect](../segment-intersection/segments-intersect.md)
 
 ## Sources

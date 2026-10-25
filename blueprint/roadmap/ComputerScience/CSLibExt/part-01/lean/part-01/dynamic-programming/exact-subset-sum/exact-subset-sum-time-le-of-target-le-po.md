@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_time_le_of_target_le_pow
 ---
 
-# Exact Subset Sum time le of target le pow
+# Polynomial event bound for exact subset sum with a polynomially bounded target
 
-A numeric polynomial target gives the source's selected-event polynomial bound.
+**Polynomial event bound for exact subset sum with a polynomially bounded target.** Let $x$
+be a list of $n$ natural numbers and let $t, d \in \mathbb{N}$ with $t \le n^d$. Then the exact
+subset-sum procedure on $x$ and $t$ makes at most $1 + n + (7n + 1)(n^d + 1)$ counted events.
 
 ## Depends on
 
-- [Exact Subset Sum](exact-subset-sum.md)
+- [Exact subset sum procedure](exact-subset-sum.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum time le numeric](exact-subset-sum-time-le-numeric.md)
+- [Pseudo-polynomial bound for exact subset sum](exact-subset-sum-time-le-numeric.md)
 
 ## Sources
 

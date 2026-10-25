@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.toList_node
 ---
 
-# To List node
+# Point list of a kd-tree split node
 
-Characteristic equation for `toList` at a split node; with the
-accumulator definition this is a theorem, not a definitional unfolding.
+**Point list of a kd-tree split node.** For a split node with axis $a$, split value $s$, left
+subtree $L$ and right subtree $R$, the point list of the node is the point list of $L$ followed
+by the point list of $R$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
-- [To List](to-list.md)
+- [Kd-trees](kd-tree.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
-- [To List Aux eq](to-list-aux-eq.md)
+- [Kd-tree point traversal with an accumulator](to-list-aux.md)
+- [Accumulator traversal of a kd-tree](to-list-aux-eq.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv
 ---
 
-# Lookup Equiv
+# Lookup equivalence of tries
 
-Semantic equality of tries: every list key has the same lookup result.
+**Lookup equivalence of tries.** Two tries $T$ and $T'$ are lookup-equivalent when, for every
+key $k$, looking up $k$ in $T$ gives the same result as looking up $k$ in $T'$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ Semantic equality of tries: every list key has the same lookup result.
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

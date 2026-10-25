@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.contents_eq_append_of_popBack_eq_some
 ---
 
-# Contents eq append of pop Back eq some
+# Popping the back of a deque
 
-A successful back pop returns the last element and a deque for the remaining prefix.
+**Popping the back of a deque.** If popping the back of a deque $d$ succeeds and returns an
+element $x$ and a deque $d'$, then the sequence represented by $d$ is the sequence represented by
+$d'$ followed by $x$.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Pop Back](pop-back.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Pop the back of a deque](pop-back.md)
 
 ## Sources
 

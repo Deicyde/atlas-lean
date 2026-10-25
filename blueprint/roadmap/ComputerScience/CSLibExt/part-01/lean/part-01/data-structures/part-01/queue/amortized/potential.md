@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.potential
 ---
 
-# Potential
+# Potential of a two-list queue
 
-The number of queued elements waiting in the list that the next transfer reverses.
+**Potential of a two-list queue.** For a queue stored as an enqueue list and a dequeue list, the
+potential is the length of the enqueue list: the number of elements that will be reversed when
+they are moved to the dequeue list.
 
 ## Depends on
 

@@ -7,13 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.nodup_terminated_drops
 ---
 
-# Nodup terminated drops
+# Terminated suffixes are distinct
 
-The terminated suffixes are pairwise distinct, since their lengths differ.
+**Terminated suffixes are distinct.** Let $s$ be a list over $\alpha$. The lists obtained from
+the terminated string of $s$ by removing its first $i$ symbols, for $i$ ranging over
+$0, 1, \ldots, |s|$, are pairwise distinct.
+
+They are distinct because their lengths differ.
 
 ## Depends on
 
-- [Terminated](terminated.md)
+- [Terminated string](terminated.md)
 
 ## Sources
 

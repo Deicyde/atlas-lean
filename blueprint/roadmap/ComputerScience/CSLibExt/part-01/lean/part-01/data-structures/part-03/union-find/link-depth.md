@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.linkDepth
 ---
 
-# Link Depth
+# Depth certificate after linking two roots
 
-Depth certificate used after redirecting `fromRoot` to `toRoot`.
+**Depth certificate after linking two roots.** Let $F$ be a parent forest with depth
+certificate $d$, and let $r$ and $s$ be vertices. The linked depth certificate assigns to a
+vertex $z$ the number $d(z) + d(s) + 1$ if $z$ is equivalent to $r$ in $F$ (that is, $z$ and $r$
+have the same root), and $d(z)$ otherwise.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Parent forest with a depth certificate](forest.md)
 
 ## Proof depends on
 
-- [Equivalent](equivalent.md)
-- [Find](find.md)
+- [Equivalent vertices of a parent forest](equivalent.md)
+- [Root of a vertex in a parent forest](find.md)
 
 ## Sources
 

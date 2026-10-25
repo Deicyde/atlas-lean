@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.contents_insert
 ---
 
-# Contents insert
+# Contents after insertion into a van Emde Boas tree
 
-Abstracting insertion is finite-set insertion.
+**Contents after insertion into a van Emde Boas tree.** Let $m$ be a natural number, let
+$t$ be a van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$ and let $x$ be an
+element of the universe. The set of stored elements of the tree obtained by inserting $x$ into
+$t$ is the set of stored elements of $t$ together with $x$. No validity assumption on $t$ is
+needed.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Contents](contents.md)
-- [Insert](insert.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Set of stored elements of a van Emde Boas tree](contents.md)
+- [Insertion into a van Emde Boas tree](insert.md)
 
 ## Proof depends on
 
-- [Mem contents](mem-contents.md)
-- [Member](member.md)
-- [Member insert](member-insert.md)
+- [The contents of a van Emde Boas tree are its members](mem-contents.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Membership after insertion into a van Emde Boas tree](member-insert.md)
 
 ## Sources
 

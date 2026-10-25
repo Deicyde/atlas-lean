@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.lookup_eq_some_of_mem_entries
 ---
 
-# Lookup eq some of mem entries
+# Lookup finds every entry
 
-Lookup completeness phrased against the list abstraction `entries`.
+**Lookup finds every entry.** For a valid two-level perfect hash table, if the pair
+$(k, v)$ belongs to the list of entries of the table, then looking up $k$ returns $v$.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Valid](valid.md)
-- [Entries](entries.md)
-- [Lookup](lookup.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Valid perfect hash table](valid.md)
+- [Entries of a perfect hash table](entries.md)
+- [Lookup in a perfect hash table](lookup.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
-- [Mem entries iff](mem-entries-iff.md)
+- [Bindings stored in a perfect hash table](stored.md)
+- [Lookup finds every stored binding](lookup-eq-some-of-stored.md)
+- [Entries of a perfect hash table are its stored bindings](mem-entries-iff.md)
 
 ## Sources
 

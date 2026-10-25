@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_empty
 ---
 
-# To Multiset empty
+# The empty catenable heap has no elements
 
-The empty heap has the empty multiset.
+**The empty catenable heap has no elements.** The multiset of elements of the empty catenable
+heap is the empty multiset.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To Multiset](to-multiset.md)
+- [Catenable heap](catenable-heap.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
 
 ## Sources
 

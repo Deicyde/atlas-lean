@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.headCoord
 ---
 
-# Head Coord
+# First-point coordinate
 
-The `a`-coordinate of the first point of a list, or `0` if it is empty.
+**First-point coordinate.** For an axis $a \in \{0, \dots, d-1\}$ and a list of points in
+$\mathbb{Z}^d$, this is the $a$-coordinate of the first point of the list, or $0$ if the list
+is empty.
 
 ## Depends on
 

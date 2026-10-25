@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.extractMin_eq_none_iff
 ---
 
-# Extract Min eq none iff
+# Extraction from a binary min-heap fails exactly when it is empty
 
-Extraction fails exactly for the empty representation.
+**Extraction from a binary min-heap fails exactly when it is empty.** For a binary min-heap
+$h$ over a linearly ordered type, extracting the minimum of $h$ returns no result if and only if
+the level-order storage array of $h$ has size $0$.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Extract Min](extract-min.md)
+- [Binary min-heap](min-heap.md)
+- [Extracting the minimum of a binary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Tail](extract-tail.md)
+- [Removing the root of a nonempty binary min-heap](extract-tail.md)
 
 ## Sources
 

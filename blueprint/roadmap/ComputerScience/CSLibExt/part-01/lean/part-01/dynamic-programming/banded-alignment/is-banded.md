@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IsBanded
 ---
 
-# Is Banded
+# Banded alignments
 
-An alignment is banded when its path, from offset `(0, 0)`, stays in the band.
+**Banded alignments.** Let $w \in \mathbb{N}$. An alignment $A$ is banded with width $w$ when,
+for every prefix of $A$ (including the empty prefix and $A$ itself), the number of columns of
+that prefix with a letter in the first row and the number with a letter in the second row
+differ by at most $w$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ An alignment is banded when its path, from offset `(0, 0)`, stays in the band.
 
 ## Proof depends on
 
-- [Banded From](banded-from.md)
+- [Band check from a starting offset](banded-from.md)
 
 ## Sources
 

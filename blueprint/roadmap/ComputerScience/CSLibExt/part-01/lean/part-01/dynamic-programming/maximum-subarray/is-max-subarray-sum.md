@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsMaxSubarraySum
 ---
 
-# Is Max Subarray Sum
+# Being the maximum subarray sum
 
-`m` is the maximum sum of a nonempty contiguous run of `xs`: some nonempty run sums to `m`,
-and every nonempty run sums to at most `m`.
+**Being the maximum subarray sum.** For a list $L$ over an additive monoid $\alpha$ with a
+linear order, an element $m \in \alpha$ is the maximum subarray sum of $L$ when some nonempty
+contiguous sublist of $L$ has sum $m$ and every nonempty contiguous sublist of $L$ has sum at
+most $m$.
 
 ## Depends on
 

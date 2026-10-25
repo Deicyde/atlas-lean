@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.chunkGroupsAux
 ---
 
-# Chunk Groups Aux
+# Fuel-bounded chunking
 
-Fuel-bounded chunking: cut off a chunk of length at most `B` and continue.
+**Fuel-bounded chunking.** Given a bound $B$, a fuel $n$ and a list $l$ of $w$-bit keys, the
+fuel-bounded chunking is the empty list of chunks when $n = 0$ or $l$ is empty; otherwise it is
+the chunk formed by the first $\min(B, |l|)$ elements of $l$, followed by the fuel-bounded
+chunking with bound $B$ and fuel $n - 1$ of the remaining elements of $l$.
 
 ## Depends on
 

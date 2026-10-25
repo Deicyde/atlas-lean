@@ -7,26 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.findMin_le
 ---
 
-# Find Min le
+# Find-min returns a lower bound of the Fibonacci heap
 
-Minimum inspection returns a value no greater than every represented value.
+**Find-min returns a lower bound of the Fibonacci heap.** Let $H$ be a Fibonacci heap over a
+linearly ordered type. If find-min on $H$ returns $m$, then $m \le v$ for every value $v$ in the
+multiset represented by $H$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Find Min](find-min.md)
+- [Find-min for Fibonacci heaps](find-min.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
+- [Valid Fibonacci forests](valid-2.md)
 - [Elements](elements-2.md)
-- [Min Root](min-root.md)
-- [Min Root spec](min-root-spec.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Root le](root-le.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Minimum root of a forest](min-root.md)
+- [The minimum root is a least root](min-root-spec.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Roots of valid Fibonacci trees are lower bounds](root-le.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

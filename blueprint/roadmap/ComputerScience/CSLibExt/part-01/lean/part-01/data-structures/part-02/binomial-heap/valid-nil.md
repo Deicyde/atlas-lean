@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.valid_nil
 ---
 
-# Valid nil
+# The empty forest is valid
 
-The empty forest is valid.
+**The empty forest is valid.** For every type $\alpha$ with a relation $\le$, the empty list of
+binomial trees over $\alpha$ is a valid binomial forest.
 
 ## Depends on
 
-- [Valid](valid-2.md)
-- [Binomial Tree](binomial-tree.md)
+- [Valid binomial forest](valid-2.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Rank](rank.md)
+- [Valid binomial tree](valid.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_make
 ---
 
-# To Multiset make
+# A newly made catenable heap has no elements
 
-`make` has the empty multiset.
+**A newly made catenable heap has no elements.** The multiset of elements of the heap returned
+by the make operation is the empty multiset.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
-- [To Multiset](to-multiset.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
 
 ## Sources
 

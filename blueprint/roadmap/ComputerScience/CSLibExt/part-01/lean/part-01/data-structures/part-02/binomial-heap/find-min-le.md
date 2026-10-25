@@ -7,28 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.findMin_le
 ---
 
-# Find Min le
+# The minimum lookup of a binomial heap returns a lower bound
 
-Minimum inspection returns a value no greater than every represented value.
+**The minimum lookup of a binomial heap returns a lower bound.** Let $H$ be a binomial heap over
+a linearly ordered type. If the minimum lookup of $H$ returns $m$, then $m \le v$ for every
+element $v$ of $H$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Find Min](find-min.md)
+- [Minimum of a binomial heap](find-min.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
+- [Valid binomial forest](valid-2.md)
 - [Elements](elements-2.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Root le](root-le.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Removing a minimum-root tree](remove-min-tree-spec.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [The root of a valid binomial tree is a lower bound](root-le.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

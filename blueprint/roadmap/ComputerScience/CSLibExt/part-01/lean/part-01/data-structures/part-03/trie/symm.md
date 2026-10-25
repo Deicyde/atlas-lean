@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv.symm
 ---
 
-# Symm
+# Symmetry of trie lookup equivalence
 
-Lookup equivalence is symmetric.
+**Symmetry of trie lookup equivalence.** If a trie $T$ is lookup-equivalent to a trie $T'$,
+then $T'$ is lookup-equivalent to $T$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Lookup Equiv](lookup-equiv.md)
+- [Lookup equivalence of tries](lookup-equiv.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

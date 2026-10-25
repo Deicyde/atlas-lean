@@ -7,25 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toList_update_of_lt
 ---
 
-# To List update of lt
+# Leaf list after an in-range point update
 
-Point update at an in-range index of a valid tree updates the leaf list at
-that index. Validity is what ties the cached sizes used for routing to the
-leaf list.
+**Leaf list after an in-range point update.** Let $t$ be a valid segment tree over an
+additive monoid and let $i$ be a natural number less than the size of $t$. Then for every value
+$y$, the leaf list of the point update of $t$ at $i$ with $y$ is the leaf list of $t$ with its
+entry at position $i$ (counting from $0$) replaced by $y$.
+
+Validity is what ties the cached sizes used for routing to the leaf list.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [Valid](valid.md)
-- [Size](size.md)
-- [To List](to-list.md)
-- [Update](update.md)
+- [Valid segment trees](valid.md)
+- [Size of a segment tree](size.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Point update of a segment tree](update.md)
 
 ## Proof depends on
 
-- [Agg](agg.md)
-- [Length to List of valid](length-to-list-of-valid.md)
-- [To List node](to-list-node.md)
+- [Aggregate of a segment tree](agg.md)
+- [Size of a valid segment tree](length-to-list-of-valid.md)
+- [Leaf list of an internal node](to-list-node.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_fromList
 ---
 
-# Cache Correct from List
+# Order-statistic trees built from a list have correct size caches
 
-Trees built by insertion have correct caches.
+**Order-statistic trees built from a list have correct size caches.** Let $\alpha$ be a
+linearly ordered type. For every list $\ell$ of elements of $\alpha$, the order-statistic tree
+obtained by inserting the elements of $\ell$ into the empty tree, from right to left, has correct
+cached subtree sizes at every node.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [From List](from-list.md)
+- [Correct size caches](cache-correct.md)
+- [Order-statistic tree built from a list](from-list.md)
 
 ## Proof depends on
 
-- [Cache Correct insert](cache-correct-insert.md)
+- [Insertion preserves correct size caches](cache-correct-insert.md)
 
 ## Sources
 

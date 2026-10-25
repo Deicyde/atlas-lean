@@ -7,25 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.rank_delete_eq_bstRank
 ---
 
-# Rank delete eq bst Rank
+# Rank after deletion in an order-statistic tree
 
-Cached rank after deletion refines the traversal rank of the erased result.
+**Rank after deletion in an order-statistic tree.** Let $\alpha$ be a linearly ordered type
+and let $T$ be an order-statistic tree over $\alpha$ that is ordered and whose cached subtree
+sizes are correct. Let $k$ and $q$ be keys and let $T'$ be the tree obtained from $T$ by
+deleting $k$. Then the rank of $q$ in $T'$, computed by navigation with cached sizes, equals the
+number of entries strictly smaller than $q$ in the inorder traversal of $T'$ with its cached
+sizes removed.
 
 ## Depends on
 
-- [Rank](../../../part-02/binary-search-tree/rank.md)
-- [Cache Correct](../../../part-02/order-statistic-tree/cache-correct.md)
-- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Delete](delete.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
-- [Rank](../../../part-02/order-statistic-tree/rank.md)
+- [Rank of a key in a binary tree](../../../part-02/binary-search-tree/rank.md)
+- [Correct size caches](../../../part-02/order-statistic-tree/cache-correct.md)
+- [Ordered order-statistic tree](../../../part-02/order-statistic-tree/ordered.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Deletion from an order-statistic tree](delete.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
+- [Rank in an order-statistic tree](../../../part-02/order-statistic-tree/rank.md)
 
 ## Proof depends on
 
-- [Cache Correct delete](cache-correct-delete.md)
-- [Ordered delete](ordered-delete.md)
-- [Rank eq bst Rank](../../../part-02/order-statistic-tree/rank-eq-bst-rank.md)
+- [Order-statistic deletion preserves cache correctness](cache-correct-delete.md)
+- [Deletion preserves order in an order-statistic tree](ordered-delete.md)
+- [Cached rank agrees with traversal rank](../../../part-02/order-statistic-tree/rank-eq-bst-rank.md)
 
 ## Sources
 

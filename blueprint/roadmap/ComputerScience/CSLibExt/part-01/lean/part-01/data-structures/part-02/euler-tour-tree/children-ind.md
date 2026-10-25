@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.children_ind
 ---
 
-# Children ind
+# Induction principle for rooted trees
 
-Induction on a tree from the statement for every child subtree. The built-in
-`induction` tactic does not support the nested recursion through `List`, so this
-principle is derived from `Tree.rec` and used with `induction … using`.
+**Induction principle for rooted trees.** Let $P$ be a property of trees. Suppose that for
+every vertex $r$ and all trees $c_1, \dots, c_k$ (with $k \ge 0$), if $P$ holds for each $c_i$, then
+$P$ holds for the tree with root $r$ and child subtrees $c_1, \dots, c_k$. Then $P$ holds for every
+tree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 
 ## Sources
 

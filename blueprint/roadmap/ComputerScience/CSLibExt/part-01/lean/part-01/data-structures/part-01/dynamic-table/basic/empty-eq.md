@@ -14,7 +14,7 @@ slot array, so capacity $0$, and item count $0$.
 
 ## Depends on
 
-- [Table](table.md)
+- [Dynamic table](table.md)
 - [Empty dynamic table](empty.md)
 
 ## Sources

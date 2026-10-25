@@ -6,18 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.rotateRightLeft
 ---
 
-# Rotate Right Left
+# Right-left double rotation
 
-A right-left rotation repairs the three affected nodes' metadata.
+**Right-left double rotation.** Write $\langle L, x, R\rangle$ for a node with left subtree
+$L$, entry $x$ and right subtree $R$. The right-left rotation sends
+$\langle a, x, \langle\langle b, y, c\rangle, z, d\rangle\rangle$ to
+$\langle\langle a, x, b\rangle, y, \langle c, z, d\rangle\rangle$, where all three nodes of the
+result get freshly recomputed height, size and maximum high endpoint. Every tree not of this
+shape is returned unchanged.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Mk Node](mk-node.md)
+- [Interval tree entry](entry.md)
+- [Node construction with repaired metadata](mk-node.md)
 
 ## Sources
 

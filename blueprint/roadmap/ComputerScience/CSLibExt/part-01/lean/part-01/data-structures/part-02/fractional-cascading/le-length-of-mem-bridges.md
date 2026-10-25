@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.le_length_of_mem_bridges
 ---
 
-# Le length of mem bridges
+# Bridge pointers are at most the next catalog's length
 
-Every recorded bridge pointer is a boundary index of the next catalog.
+**Bridge pointers are at most the next catalog's length.** For lists $c$ and $d$ over a
+linearly ordered type, every entry $p$ of the list of bridge pointers of $c$ into $d$ satisfies
+$p \le |d|$, where $|d|$ is the length of $d$; so every recorded bridge pointer is a boundary
+index of $d$.
 
 ## Depends on
 
-- [Bridges](bridges.md)
+- [Bridge pointer list](bridges.md)
 
 ## Proof depends on
 
-- [Bridge Ptr](bridge-ptr.md)
-- [Bridge Ptr le length](bridge-ptr-le-length.md)
+- [Bridge pointer](bridge-ptr.md)
+- [Bridge pointers are at most the catalog length](bridge-ptr-le-length.md)
 
 ## Sources
 

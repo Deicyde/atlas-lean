@@ -7,24 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt_remainder_valid
 ---
 
-# Cut At remainder valid
+# The remainder of a cut from a valid tree is valid
 
-The remainder left by a cut from a valid tree is valid: its children are valid,
-its stored degree is corrected, and its root still bounds every remaining element.
+**The remainder of a cut from a valid tree is valid.** Let $t$ be a valid Fibonacci tree
+over a type with a relation $\le$, and $p$ a path of child indices. If cutting $t$ at $p$
+extracts a subtree and leaves a remainder tree $t'$, then $t'$ is valid: its children are
+valid, its stored degree equals its number of children, and its root is $\le$ every element
+of $t'$.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Valid](../../../part-02/fibonacci-heap/valid.md)
-- [Cut At](cut-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Valid Fibonacci trees](../../../part-02/fibonacci-heap/valid.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
 
 ## Proof depends on
 
-- [Child valid](../../../part-02/fibonacci-heap/child-valid.md)
-- [Root le](../../../part-02/fibonacci-heap/root-le.md)
-- [Children](../../../part-02/fibonacci-heap/children.md)
-- [Cut At elements](cut-at-elements.md)
-- [Elements](../../../part-02/fibonacci-heap/elements.md)
+- [Children of a valid Fibonacci tree are valid](../../../part-02/fibonacci-heap/child-valid.md)
+- [Roots of valid Fibonacci trees are lower bounds](../../../part-02/fibonacci-heap/root-le.md)
+- [Children of a Fibonacci tree](../../../part-02/fibonacci-heap/children.md)
+- [Cutting a subtree splits the elements of a Fibonacci tree](cut-at-elements.md)
+- [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
 
 ## Sources
 

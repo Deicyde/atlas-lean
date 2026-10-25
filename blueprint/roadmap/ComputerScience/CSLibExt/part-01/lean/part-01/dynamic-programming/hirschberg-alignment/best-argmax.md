@@ -5,11 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.bestArgmax
 ---
 
-# Best Argmax
+# Argmax over an initial segment
 
-The argmax of `f` over `0, …, n`, via the standard `List.argmax` API:
-the argmax of `f` on `List.range (n + 1)`, defaulting to `0` (the range is
-never empty, so the default is never used).
+**Argmax over an initial segment.** For a function $f : \mathbb{N} \to \mathbb{Z}$ and
+$n \in \mathbb{N}$, the argmax of $f$ over $\{0, \dots, n\}$ is the least $k \le n$ such that
+$f(j) \le f(k)$ for all $j \le n$.
+
+It is computed as the first maximizer of $f$ on the list $[0, 1, \dots, n]$, which is never
+empty.
 
 ## Depends on
 

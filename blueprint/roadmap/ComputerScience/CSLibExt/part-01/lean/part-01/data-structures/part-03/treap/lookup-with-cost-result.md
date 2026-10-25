@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.lookupWithCost_result
 ---
 
-# Lookup With Cost result
+# Costed lookup returns the ordinary lookup result
 
-The value component of costed lookup is ordinary lookup.
+**Costed lookup returns the ordinary lookup result.** For every tree $t$ with keys in a
+linearly ordered type and every key $k$, the value component of the costed lookup of $k$ in $t$
+(ignoring the visit count) equals the result of looking up $k$ in $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Lookup](lookup.md)
-- [Lookup With Cost](lookup-with-cost.md)
+- [Treap trees](tree.md)
+- [Treap lookup](lookup.md)
+- [Lookup with cost](lookup-with-cost.md)
 
 ## Sources
 

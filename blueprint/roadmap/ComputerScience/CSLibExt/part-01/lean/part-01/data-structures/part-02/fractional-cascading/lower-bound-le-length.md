@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.lowerBound_le_length
 ---
 
-# Lower Bound le length
+# Lower bound is at most the catalog length
 
-The lower bound of a catalog is at most its length.
+**Lower bound is at most the catalog length.** For a value $x$ and a catalog $L$ over a
+linearly ordered type, the lower bound of $x$ in $L$ (the number of entries of $L$ less than $x$)
+is at most the length of $L$.
 
 ## Depends on
 
-- [Lower Bound](lower-bound.md)
+- [Lower bound of a value in a catalog](lower-bound.md)
 
 ## Sources
 

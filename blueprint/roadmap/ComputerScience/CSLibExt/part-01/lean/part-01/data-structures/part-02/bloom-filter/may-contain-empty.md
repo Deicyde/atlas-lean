@@ -13,12 +13,12 @@ With at least one hash function, the empty filter reports every element absent.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [May Contain](may-contain.md)
+- [Empty Bloom filter](empty.md)
+- [Bloom filter membership query](may-contain.md)
 
 ## Proof depends on
 
-- [Bloom Filter](bloom-filter.md)
+- [Bloom filter](bloom-filter.md)
 
 ## Sources
 

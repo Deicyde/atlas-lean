@@ -17,10 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Min Heap](../../../part-01/data-structures/part-02/binary-heap/min-heap.md)
-- [Empty](../../../part-01/data-structures/part-02/binary-heap/empty.md)
-- [Extract Min](../../../part-01/data-structures/part-02/binary-heap/extract-min.md)
-- [Push](../../../part-01/data-structures/part-02/binary-heap/push.md)
+- [Binary min-heap](../../../part-01/data-structures/part-02/binary-heap/min-heap.md)
+- [Empty binary min-heap](../../../part-01/data-structures/part-02/binary-heap/empty.md)
+- [Extracting the minimum of a binary min-heap](../../../part-01/data-structures/part-02/binary-heap/extract-min.md)
+- [Insertion into a binary min-heap](../../../part-01/data-structures/part-02/binary-heap/push.md)
 
 ## Sources
 

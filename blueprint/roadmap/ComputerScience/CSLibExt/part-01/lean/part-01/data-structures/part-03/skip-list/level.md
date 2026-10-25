@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SkipList.level
 ---
 
-# Level
+# Level of a skip list
 
-The ordered key-value association list visible at one zero-based level.
+**Level of a skip list.** For a skip list and a level index $i$ (levels are numbered from $0$
+at the bottom), level $i$ is the list of key-value pairs $(k, v)$ of the stored nodes whose tower
+height $h$ satisfies $i < h$, in the order in which these nodes appear in the bottom-level list
+of the skip list.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
+- [Skip list](skip-list.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The discrete union-find forest used before scanning any edges.
 
 ## Depends on
 
-- [Forest](../../data-structures/part-03/union-find/forest.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 
 ## Sources
 

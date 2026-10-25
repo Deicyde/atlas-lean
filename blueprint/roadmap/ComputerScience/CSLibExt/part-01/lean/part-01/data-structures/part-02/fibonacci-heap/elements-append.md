@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.elements_append
 ---
 
-# Elements append
+# Elements of a concatenated forest
 
-The elements of a concatenated forest are the sum of the elements of its parts.
+**Elements of a concatenated forest.** For any two lists $L$ and $R$ of Fibonacci trees, the
+forest made of the trees of $L$ followed by the trees of $R$ represents the sum of the multisets
+represented by $L$ and by $R$.
 
 ## Depends on
 
 - [Elements](elements-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

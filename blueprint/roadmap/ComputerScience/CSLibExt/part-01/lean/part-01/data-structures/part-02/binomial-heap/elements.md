@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.elements
 ---
 
-# Elements
+# Elements of a binomial tree
 
-The multiset represented by a binomial tree.
+**Elements of a binomial tree.** The multiset of elements of a binomial tree with root value
+$x$ and children $t_1, \dots, t_k$ is defined recursively as $\{x\}$ added to the multiset sum of
+the multisets of elements of $t_1, \dots, t_k$; the stored rank plays no role.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

@@ -6,22 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.meld
 ---
 
-# Meld
+# Melding binomial heaps
 
-Meld two binomial heaps.
+**Melding binomial heaps.** Over a linear order, the meld of two binomial heaps is the
+binomial heap whose forest is the meld of the forests of the two heaps.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 
 ## Proof depends on
 
-- [Ranks At Least](ranks-at-least.md)
-- [Valid](valid-2.md)
-- [Meld Trees](meld-trees.md)
-- [Meld Trees correct](meld-trees-correct.md)
-- [Binomial Tree](binomial-tree.md)
-- [Rank](rank.md)
+- [Rank lower bound for a forest](ranks-at-least.md)
+- [Valid binomial forest](valid-2.md)
+- [Melding binomial forests](meld-trees.md)
+- [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)
+- [Binomial tree](binomial-tree.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

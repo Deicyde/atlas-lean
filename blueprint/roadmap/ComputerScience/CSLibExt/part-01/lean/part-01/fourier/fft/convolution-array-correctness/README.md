@@ -4,11 +4,11 @@ navigation: module
 
 # Convolution Array Correctness
 
-- [Fft Circular Array ret of vector](fft-circular-array-ret-of-vector.md)
-- [Fft Circular Array time of vector](fft-circular-array-time-of-vector.md)
-- [Fft Circular Array time add two](fft-circular-array-time-add-two.md)
-- [Fft Circular Array size of eq some](fft-circular-array-size-of-eq-some.md)
-- [Fft Linear Array ret of vector](fft-linear-array-ret-of-vector.md)
-- [Fft Linear Array time of vector](fft-linear-array-time-of-vector.md)
-- [Fft Linear Array time add two](fft-linear-array-time-add-two.md)
-- [Fft Linear Array size of eq some](fft-linear-array-size-of-eq-some.md)
+- [Array circular FFT convolution agrees with the vector version](fft-circular-array-ret-of-vector.md)
+- [Array circular FFT convolution costs the same as the vector version](fft-circular-array-time-of-vector.md)
+- [Exact cost of array circular FFT convolution](fft-circular-array-time-add-two.md)
+- [Output length of array circular FFT convolution](fft-circular-array-size-of-eq-some.md)
+- [Array linear FFT convolution agrees with the vector version](fft-linear-array-ret-of-vector.md)
+- [Array linear FFT convolution costs the same as the vector version](fft-linear-array-time-of-vector.md)
+- [Exact cost of array linear FFT convolution](fft-linear-array-time-add-two.md)
+- [Output length of array linear FFT convolution](fft-linear-array-size-of-eq-some.md)

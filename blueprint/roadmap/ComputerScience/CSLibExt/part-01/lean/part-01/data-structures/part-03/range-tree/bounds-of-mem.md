@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.bounds_of_mem
 ---
 
-# Bounds of mem
+# Leaf values of a bounds-valid tree lie between the cached bounds
 
-Every leaf value of a bounds-valid tree lies in `[tmin, tmax]`.
+**Leaf values of a bounds-valid tree lie between the cached bounds.** Let $t$ be a
+bounds-valid range tree, and write $t_{\min}$ and $t_{\max}$ for its cached lower and upper
+bounds. Then every leaf value $x$ of $t$ satisfies $t_{\min} \le x \le t_{\max}$.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [Bounds Ok](bounds-ok.md)
-- [Tmax](tmax.md)
-- [Tmin](tmin.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Bounds-valid range trees](bounds-ok.md)
+- [Cached upper bound of a range tree](tmax.md)
+- [Cached lower bound of a range tree](tmin.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [To List node](to-list-node.md)
+- [Leaf list of a range-tree node](to-list-node.md)
 
 ## Sources
 

@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_eq_none_iff
 ---
 
-# Max? eq none iff
+# When the van Emde Boas maximum query returns nothing
 
-In a valid tree, `max?` returns `none` exactly when nothing is stored.
+**When the van Emde Boas maximum query returns nothing.** Let $m$ be a natural number and let
+$t$ be a valid van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$. The maximum query
+on $t$ returns no element if and only if no element of the universe is a member of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Max?](max.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Maximum query of a van Emde Boas tree](max.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

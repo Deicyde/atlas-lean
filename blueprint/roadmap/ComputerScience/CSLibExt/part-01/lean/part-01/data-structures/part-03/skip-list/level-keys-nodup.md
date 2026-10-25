@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.level_keys_nodup
 ---
 
-# Level keys nodup
+# Keys on each skip-list level are distinct
 
-Every valid derived level has no duplicate keys.
+**Keys on each skip-list level are distinct.** If a skip list is valid, then for every level
+index $i$ (levels are numbered from $0$ at the bottom), no key occurs twice in the list of
+key-value pairs visible at level $i$.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Valid](valid.md)
-- [Level](level.md)
+- [Skip list](skip-list.md)
+- [Valid skip list](valid.md)
+- [Level of a skip list](level.md)
 
 ## Proof depends on
 
-- [Level pairwise](level-pairwise.md)
+- [Skip-list levels are sorted by key](level-pairwise.md)
 
 ## Sources
 

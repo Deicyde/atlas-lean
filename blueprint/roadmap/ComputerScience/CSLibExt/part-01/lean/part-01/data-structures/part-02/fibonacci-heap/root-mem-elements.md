@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.root_mem_elements
 ---
 
-# Root mem elements
+# The root of a Fibonacci tree is one of its elements
 
-A tree's root occurs in its represented multiset.
+**The root of a Fibonacci tree is one of its elements.** For every Fibonacci tree, its root
+value belongs to the multiset of elements the tree represents.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

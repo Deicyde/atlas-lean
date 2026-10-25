@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.toList_build_perm
 ---
 
-# To List build perm
+# Building a kd-tree preserves its points
 
-The point list of a built tree is a permutation of the input.
+**Building a kd-tree preserves its points.** For $d \ge 1$, every axis $a$ and every list of
+points of $\mathbb{Z}^d$, the point list of the kd-tree built from the list by median splits
+starting at axis $a$ is a permutation of the list.
 
 ## Depends on
 
-- [Build](build.md)
-- [To List](to-list.md)
+- [Kd-tree construction by median splits](build.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [Kd Tree](kd-tree.md)
-- [Valid](valid.md)
-- [Head Coord](head-coord.md)
-- [Next Axis](next-axis.md)
-- [To List node](to-list-node.md)
+- [Kd-trees](kd-tree.md)
+- [Kd invariant](valid.md)
+- [First-point coordinate](head-coord.md)
+- [Next split axis of a kd-tree](next-axis.md)
+- [Point list of a kd-tree split node](to-list-node.md)
 
 ## Sources
 

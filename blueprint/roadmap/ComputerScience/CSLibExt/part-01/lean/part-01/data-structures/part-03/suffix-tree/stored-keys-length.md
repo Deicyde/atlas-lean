@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.storedKeys_length
 ---
 
-# Stored Keys length
+# The suffix tree stores one key per suffix
 
-The suffix tree stores exactly `s.length + 1` keys, one per terminated
-suffix.
+**The suffix tree stores one key per suffix.** For a list $s$ over $\alpha$, the list of
+stored keys of the suffix tree of $s$ has length $|s| + 1$.
+
+There is one key for each terminated suffix.
 
 ## Depends on
 
-- [Stored Keys](stored-keys.md)
+- [Stored keys of the suffix tree](stored-keys.md)
 
 ## Proof depends on
 
-- [Valid](../radix-trie/valid.md)
-- [Empty](../radix-trie/empty-2.md)
-- [Insert](../radix-trie/insert-2.md)
-- [Keys nodup](../radix-trie/keys-nodup.md)
-- [Build From](../radix-trie/build-from.md)
-- [Mem suffix Tree keys](mem-suffix-tree-keys.md)
-- [Nodup terminated drops](nodup-terminated-drops.md)
-- [Suffix Entries](suffix-entries.md)
-- [Suffix Tree](suffix-tree.md)
-- [Terminated](terminated.md)
+- [Valid radix trie](../radix-trie/valid.md)
+- [The empty radix trie is valid](../radix-trie/empty-2.md)
+- [Insertion preserves validity of radix tries](../radix-trie/insert-2.md)
+- [Stored keys of a valid radix trie are distinct](../radix-trie/keys-nodup.md)
+- [Radix trie built from a list of key-value pairs](../radix-trie/build-from.md)
+- [The stored keys of a suffix tree are its terminated suffixes](mem-suffix-tree-keys.md)
+- [Terminated suffixes are distinct](nodup-terminated-drops.md)
+- [Suffix entries of a string](suffix-entries.md)
+- [Suffix tree](suffix-tree.md)
+- [Terminated string](terminated.md)
 
 ## Sources
 

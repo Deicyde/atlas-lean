@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fft_conjugate_ret
 ---
 
-# Fft conjugate ret
+# Conjugating around the FFT conjugates the root
 
-Conjugate the input, execute FFT and conjugate its returned coefficients.
+**Conjugating around the FFT conjugates the root.** Let $N = 2^d$, let $\omega \in \mathbb{C}$
+be a primitive $N$-th root of unity and let $x \in \mathbb{C}^N$. Conjugating every entry of $x$,
+running the FFT procedure with root $\omega$ and conjugating every entry of the result gives the
+same vector as running the FFT procedure on $x$ with root $\overline{\omega}$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Fft Conjugate](../inverse/fft-conjugate.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Charged entrywise conjugation](../inverse/fft-conjugate.md)
 
 ## Proof depends on
 
-- [DFTCorrectness](../fft-correct.md)
+- [Correctness of the radix-two FFT](../fft-correct.md)
 - [Discrete Fourier sum](../../../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources

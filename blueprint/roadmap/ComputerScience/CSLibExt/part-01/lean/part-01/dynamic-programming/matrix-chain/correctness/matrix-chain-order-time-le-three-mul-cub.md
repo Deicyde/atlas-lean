@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_time_le_three_mul_cube
 ---
 
-# Matrix Chain Order time le three mul cube
+# Cubic bound for matrix-chain ordering
 
-The declared event count is bounded above by three times the cube of chain length.
+**Cubic bound for matrix-chain ordering.** For every $n \ge 1$ and all natural numbers
+$p_0, \dots, p_n$, the total number of events charged by the matrix-chain ordering algorithm run
+on the dimensions $p_0, \dots, p_n$ is at most $3n^3$.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Total](../basic/total.md)
-- [Result](../basic/result.md)
-- [Matrix Chain Order](matrix-chain-order.md)
+- [Matrix-chain cost](../basic/cost.md)
+- [Total matrix-chain cost](../basic/total.md)
+- [Matrix-chain result](../basic/result.md)
+- [Matrix-chain ordering](matrix-chain-order.md)
 
 ## Proof depends on
 
-- [Matrix Chain Order time](matrix-chain-order-time.md)
+- [Exact event count of matrix-chain ordering](matrix-chain-order-time.md)
 
 ## Sources
 

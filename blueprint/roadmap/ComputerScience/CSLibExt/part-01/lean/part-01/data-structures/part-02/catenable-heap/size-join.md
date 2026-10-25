@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_join
 ---
 
-# Size join
+# Size of a catenable heap join
 
-The size of a join node is the sum of the sizes of its children.
+**Size of a catenable heap join.** For catenable heaps $\ell$ and $r$, the size of the join
+node with left child $\ell$ and right child $r$ is the size of $\ell$ plus the size of $r$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Size](size.md)
+- [Catenable heap](catenable-heap.md)
+- [Size of a catenable heap](size.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
-- [To List join](to-list-join.md)
+- [Flattening of a catenable heap](to-list.md)
+- [Flattening a join of catenable heaps](to-list-join.md)
 
 ## Sources
 

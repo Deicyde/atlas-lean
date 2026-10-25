@@ -7,22 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.cutRodSolution_revenue
 ---
 
-# Cut Rod Solution revenue
+# Reconstruction earns the final saved revenue
 
-Following tight saved cuts earns exactly the final saved revenue.
+**Reconstruction earns the final saved revenue.** Let $p$ be a price vector of length $n$
+with entries in an additive commutative monoid carrying a linear order, and let
+$r = (r_0, \dots, r_n)$ be the revenue table computed by the extended bottom-up rod-cutting
+algorithm. The revenue of the composition of $n$ returned by the rod-cutting reconstruction
+equals $r_n$.
 
 ## Depends on
 
-- [Composition Revenue](composition-revenue.md)
-- [Cut Rod Solution](cut-rod-solution.md)
-- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Revenue of a rod composition](composition-revenue.md)
+- [Rod cutting with reconstruction](cut-rod-solution.md)
+- [Extended bottom-up rod cutting](extended-bottom-up-cut-rod.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](composition-revenue-append.md)
-- [Composition Revenue single](composition-revenue-single.md)
-- [Composition Revenue zero](composition-revenue-zero.md)
-- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
+- [Revenue is additive under concatenation](composition-revenue-append.md)
+- [Revenue of an uncut rod](composition-revenue-single.md)
+- [The empty rod earns nothing](composition-revenue-zero.md)
+- [The saved first cut attains the saved revenue](extended-bottom-up-cut-rod-first-cut.md)
 
 ## Sources
 

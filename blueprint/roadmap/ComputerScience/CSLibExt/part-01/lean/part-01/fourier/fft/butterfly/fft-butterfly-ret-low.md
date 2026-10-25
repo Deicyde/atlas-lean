@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftButterfly_ret_low
 ---
 
-# Fft Butterfly ret low
+# Lower write of a butterfly step
 
-The actual butterfly writes the sum into its lower output position.
+**Lower write of a butterfly step.** Let $R$ be a commutative ring, $\omega \in R$, $m$ a
+natural number, $q, r$ vectors over $R$ of length $m$, $w \in R$ a twiddle, $o$ an output vector
+over $R$ of length $2m$, and $k < m$. Then the butterfly step at index $k$ applied to the state
+$(w, o)$ produces an output vector whose entry at index $k$ is $q_k + w r_k$.
 
 ## Depends on
 
-- [Fft Butterfly](../../fft-2/fft-butterfly.md)
+- [One FFT butterfly](../../fft-2/fft-butterfly.md)
 
 ## Sources
 

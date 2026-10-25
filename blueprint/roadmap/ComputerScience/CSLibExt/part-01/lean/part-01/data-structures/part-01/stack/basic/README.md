@@ -4,9 +4,9 @@ navigation: module
 
 # Basic
 
-- [Push](push.md)
-- [Pop](pop.md)
-- [Top](top.md)
-- [Pop eq](pop-eq.md)
-- [Top eq](top-eq.md)
-- [Operations spec](operations-spec.md)
+- [Stack push](push.md)
+- [Stack pop](pop.md)
+- [Stack top](top.md)
+- [Result and cost of stack pop](pop-eq.md)
+- [Result and cost of reading the stack top](top-eq.md)
+- [Result and cost of the stack operations](operations-spec.md)

@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.searchAugmented_eq_map_lowerBound
 ---
 
-# Search Augmented eq map lower Bound
+# Correctness of augmented search
 
-Augmented search computes the lower bound in every augmented catalog.
+**Correctness of augmented search.** For a value $x$ and a list of catalogs $cs$, searching
+every augmented catalog of $cs$ for $x$ returns, for each augmented catalog in order, the lower
+bound of $x$ in it, that is, the number of its elements that are $< x$.
 
 ## Depends on
 
-- [Augmented](augmented.md)
-- [Lower Bound](lower-bound.md)
-- [Search Augmented](search-augmented.md)
+- [Augmented catalogs](augmented.md)
+- [Lower bound of a value in a catalog](lower-bound.md)
+- [Searching every augmented catalog](search-augmented.md)
 
 ## Proof depends on
 
-- [Count LT](count-lt.md)
-- [Count LT eq lower Bound](count-lt-eq-lower-bound.md)
+- [Scan count of smaller elements](count-lt.md)
+- [The scan count equals the lower bound](count-lt-eq-lower-bound.md)
 
 ## Sources
 

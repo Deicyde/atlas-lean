@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySiftUp_perm
 ---
 
-# Dary Sift Up perm
+# Sifting up permutes the array
 
-Sifting up only permutes the input array.
+**Sifting up permutes the array.** Let $d \ge 2$, let $a$ be an array over a linearly ordered
+type and let $i$ be a natural number. The array obtained from $a$ by $d$-ary sift-up from index $i$
+is a permutation of $a$.
 
 ## Depends on
 
-- [Dary Sift Up](dary-sift-up.md)
+- [$d$-ary sift-up](dary-sift-up.md)
 
 ## Proof depends on
 
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt](dary-parent-lt.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [A $d$-ary parent has a smaller index](dary-parent-lt.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.testOpt
 ---
 
-# Test Opt
+# Testing a segment against an optional neighbour
 
-Test segment `i` against a neighbour, if there is one.
+**Testing a segment against an optional neighbour.** Given a segment $i$ and possibly a
+neighbour $j$, return the result of `SEGMENTS-INTERSECT` on segments $i$ and $j$, with its cost,
+when $j$ is given, and return false at no cost when there is no neighbour.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Test](test.md)
+- [Intersection test for two input segments](test.md)
 
 ## Sources
 

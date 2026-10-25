@@ -7,24 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.insert_eq_none_iff
 ---
 
-# Insert eq none iff
+# Insertion fails exactly on present identities
 
-INSERT rejects exactly the identities already present.
+**Insertion fails exactly on present identities.** Let $q$ be an indexed min queue over a
+linear order $W$ with identities in $\{0, \dots, n-1\}$, let $v$ be an identity and let
+$k \in W \cup \{\top\}$. Inserting $v$ with key $k$ into $q$ returns no queue if and only if
+the position vector of $q$ records a slot for $v$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Insert](../basic/insert.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Insertion into an indexed minimum queue](../basic/insert.md)
 
 ## Proof depends on
 
-- [Heap Ordered](../../../part-02/binary-heap/heap-ordered.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
-- [Push](../../../part-02/binary-heap/push.md)
-- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
-- [Heap Parent lt size](../../../part-02/binary-heap/heap-parent-lt-size.md)
-- [Sift Up](../../../part-02/binary-heap/sift-up.md)
-- [Sift Up perm](../../../part-02/binary-heap/sift-up-perm.md)
+- [Heap order on a level-order array](../../../part-02/binary-heap/heap-ordered.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
+- [Insertion into a binary min-heap](../../../part-02/binary-heap/push.md)
+- [Parent index in a level-order binary tree](../../../part-02/binary-heap/heap-parent.md)
+- [The parent of a valid nonroot index is valid](../../../part-02/binary-heap/heap-parent-lt-size.md)
+- [Sift-up](../../../part-02/binary-heap/sift-up.md)
+- [Sift-up permutes the array](../../../part-02/binary-heap/sift-up-perm.md)
 
 ## Sources
 

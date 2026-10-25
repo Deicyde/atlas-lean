@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.delete
 ---
 
-# Delete
+# Red-black tree deletion by rebuilding
 
-Delete a key, leaving a valid red-black tree.
+**Red-black tree deletion by rebuilding.** For a key $x$ of a linearly ordered type and a
+red-black tree $t$, deleting $x$ from $t$ by rebuilding first forms the unbalanced deletion of
+$x$ from $t$, then rebalances it: starting from the empty tree, it inserts the keys of the inorder
+traversal of that tree one at a time, from the last key to the first.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Del](del.md)
-- [Rebalance](rebalance.md)
+- [Unbalanced red-black tree deletion](del.md)
+- [Rebuilding a red-black tree from its keys](rebalance.md)
 
 ## Sources
 

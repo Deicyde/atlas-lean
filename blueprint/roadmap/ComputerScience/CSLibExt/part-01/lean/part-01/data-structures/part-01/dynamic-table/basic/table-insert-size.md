@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_size
 ---
 
-# Table Insert size
+# Capacity after an insertion
 
-The actual first allocation and full-table doubling determine the returned capacity.
+**Capacity after an insertion.** Let $T$ be a dynamic table with item count $n$ and capacity
+(number of slots) $m$, and let $x$ be an item. The table returned by inserting $x$ into $T$ with
+TABLE-INSERT has capacity $1$ if $m = 0$, capacity $2m$ if $m > 0$ and $n = m$, and capacity $m$
+otherwise.
 
 ## Depends on
 
-- [Table](table.md)
-- [Table Insert](table-insert.md)
+- [Dynamic table](table.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Sources
 

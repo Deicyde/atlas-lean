@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.valid_empty
 ---
 
-# Valid empty
+# The empty red-black tree is valid
 
-The empty tree is a valid red-black tree.
+**The empty red-black tree is valid.** For every type $\alpha$ with a relation $<$, the empty
+red-black tree with keys in $\alpha$ is a valid red-black tree.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
+- [Red-black tree data type](tree.md)
+- [Valid red-black tree](valid.md)
 
 ## Proof depends on
 
-- [Balanced](balanced.md)
-- [Color](color.md)
-- [Ordered](ordered.md)
-- [Red Ok](red-ok.md)
-- [Color Of](color-of.md)
+- [Black-height balanced red-black tree](balanced.md)
+- [Red-black node colors](color.md)
+- [Ordered red-black tree](ordered.md)
+- [Red property of red-black trees](red-ok.md)
+- [Root color](color-of.md)
 
 ## Sources
 

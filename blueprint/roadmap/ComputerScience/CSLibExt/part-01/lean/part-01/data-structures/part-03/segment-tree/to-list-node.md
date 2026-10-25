@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toList_node
 ---
 
-# To List node
+# Leaf list of an internal node
 
-Characteristic equation for `toList` at an internal node; with the
-accumulator definition this is a theorem, not a definitional unfolding.
+**Leaf list of an internal node.** For every internal node of a segment tree, with any cached
+aggregate, any cached length, left child $L$ and right child $R$, its leaf list is the leaf list
+of $L$ followed by the leaf list of $R$.
+
+With the accumulator definition of the leaf list this is a theorem, not a definitional
+unfolding.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [To List](to-list.md)
+- [Leaf list of a segment tree](to-list.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
-- [To List Aux eq](to-list-aux-eq.md)
+- [Accumulator traversal of a segment tree](to-list-aux.md)
+- [Accumulator traversal prepends the leaf list](to-list-aux-eq.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.Valid.setChild
 ---
 
-# Set Child
+# Setting a child preserves validity
 
-Replacing a child of a valid node by a valid child with `setChild`
-keeps the node valid.
+**Setting a child preserves validity.** Let a trie node with value $v$ and child list $L$ be
+valid, let $c$ be a valid trie and $a$ a letter. Then the node with value $v$ whose child list
+is obtained from $L$ by setting the child at $a$ to $c$ (removing the entries at $a$ instead
+when $c$ has neither value nor children) is valid.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Valid](../../../part-03/trie/valid.md)
-- [Set Child](set-child.md)
+- [Valid trie](../../../part-03/trie/valid.md)
+- [Setting a child in a trie's child list](set-child.md)
 
 ## Proof depends on
 
-- [Set Child valid](set-child-valid.md)
+- [Setting a child preserves the child-list part of validity](set-child-valid.md)
 
 ## Sources
 

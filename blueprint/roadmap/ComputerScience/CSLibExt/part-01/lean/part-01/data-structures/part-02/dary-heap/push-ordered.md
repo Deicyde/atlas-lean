@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.push_ordered
 ---
 
-# Push ordered
+# Insertion keeps a $d$-ary heap ordered
 
-Insertion preserves local `d`-ary heap order.
+**Insertion keeps a $d$-ary heap ordered.** Let $h$ be a $d$-ary min-heap of arity $d$ and let
+$x$ be a value. Then the level-order array of the heap obtained by inserting $x$ into $h$ is
+$d$-ary heap-ordered for the same arity $d$.
 
 ## Depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Min Heap](dary-min-heap.md)
-- [Push](push.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Insertion into a $d$-ary heap](push.md)
 
 ## Sources
 

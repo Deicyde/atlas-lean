@@ -13,15 +13,15 @@ Insertion leaves lookup of every distinct key unchanged.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Skip list](skip-list.md)
+- [Skip-list insertion](insert.md)
+- [Skip-list lookup](lookup.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Abstraction](abstraction.md)
-- [Lookup eq abstraction](lookup-eq-abstraction.md)
+- [Skip-list node](entry.md)
+- [Bottom-level abstraction of a skip list](abstraction.md)
+- [Skip-list search agrees with bottom-level lookup](lookup-eq-abstraction.md)
 
 ## Sources
 

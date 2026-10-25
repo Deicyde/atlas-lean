@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.contents_node
 ---
 
-# Contents node
+# Treap inorder contents of a node
 
-Characteristic node equation for the linear inorder traversal.
+**Treap inorder contents of a node.** For trees $l$ and $r$, a key $k$, a value $v$ and a
+natural-number priority $n$, the inorder list of key-value pairs of the node with left subtree
+$l$, key $k$, value $v$, priority $n$ and right subtree $r$ is the inorder list of $l$, followed
+by $(k, v)$, followed by the inorder list of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Contents](contents.md)
+- [Treap trees](tree.md)
+- [Treap inorder contents](contents.md)
 
 ## Proof depends on
 
-- [Contents Aux](contents-aux.md)
+- [Treap inorder traversal onto a suffix](contents-aux.md)
 
 ## Sources
 

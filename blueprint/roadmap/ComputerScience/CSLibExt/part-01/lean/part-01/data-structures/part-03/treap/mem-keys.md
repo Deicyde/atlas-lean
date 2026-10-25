@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.mem_keys
 ---
 
-# Mem keys
+# The inorder key list lists exactly the keys of a treap
 
-The key list contains exactly the structurally present keys.
+**The inorder key list lists exactly the keys of a treap.** For every treap tree $t$ and
+key $k$, $k$ occurs in the inorder key list of $t$ if and only if $k$ is a key of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Mem Key](mem-key.md)
-- [Keys](keys.md)
+- [Treap trees](tree.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Inorder key list of a treap](keys.md)
 
 ## Proof depends on
 
-- [Keys node](keys-node.md)
+- [Inorder keys of a node](keys-node.md)
 
 ## Sources
 

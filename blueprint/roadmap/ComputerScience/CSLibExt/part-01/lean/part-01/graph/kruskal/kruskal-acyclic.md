@@ -27,11 +27,11 @@ Kruskal never accepts an edge whose endpoints were already connected.
 - [Initial Forest](initial-forest.md)
 - [Ordered Edges](ordered-edges.md)
 - [Scan](scan.md)
-- [Equivalent](../../data-structures/part-03/union-find/equivalent.md)
-- [Forest](../../data-structures/part-03/union-find/forest.md)
-- [Equivalent union iff](../../data-structures/part-03/union-find/equivalent-union-iff.md)
-- [Find](../../data-structures/part-03/union-find/find.md)
-- [Union](../../data-structures/part-03/union-find/union.md)
+- [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
+- [Equivalence after a union](../../data-structures/part-03/union-find/equivalent-union-iff.md)
+- [Root of a vertex in a parent forest](../../data-structures/part-03/union-find/find.md)
+- [Union in a union-find forest](../../data-structures/part-03/union-find/union.md)
 
 ## Sources
 

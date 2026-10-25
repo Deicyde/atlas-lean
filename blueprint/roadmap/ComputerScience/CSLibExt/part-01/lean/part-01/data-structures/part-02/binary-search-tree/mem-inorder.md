@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_inorder
 ---
 
-# Mem inorder
+# Membership in the inorder traversal of a binary tree
 
-Inorder traversal contains exactly the structurally present keys.
+**Membership in the inorder traversal of a binary tree.** For every binary tree $T$ and every
+key $x$, $x$ occurs in the inorder traversal of $T$ if and only if $x$ lies in $T$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Inorder](inorder.md)
+- [Membership in a binary tree](mem.md)
+- [Inorder traversal of a binary tree](inorder.md)
 
 ## Proof depends on
 
-- [Inorder Aux](inorder-aux.md)
+- [Inorder traversal of a binary tree with an accumulator](inorder-aux.md)
 
 ## Sources
 

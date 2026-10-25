@@ -5,11 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.listMax
 ---
 
-# List Max
+# Maximum of an integer list with floor zero
 
-Maximum of a list of integers, with floor `0` (the empty list folds to `0`).
-Internal helper for the candidate-list maxima; the public maxima are `suffixMax`,
-`localScore`, and `swScore`.
+**Maximum of an integer list with floor zero.** For a list $l$ of integers, this is the
+largest of $0$ and the entries of $l$; in particular the empty list gives $0$.
+
+It is used to define the suffix maximum, the local score and the Smith–Waterman score.
 
 ## Depends on
 

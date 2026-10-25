@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.nwScore_le_overlapScore
 ---
 
-# Nw Score le overlap Score
+# Overlap-pair scores are at most the overlap score
 
-An overlap pair's score is at most the overlap score.
+**Overlap-pair scores are at most the overlap score.** Let $\sigma$ be a substitution
+score and $g$ a gap score. If $(x', y')$ is an overlap pair of sequences $x$ and $y$, then the
+Needleman–Wunsch score of $x'$ against $y'$ is at most the overlap score of $x$ and $y$, both
+taken with $\sigma$ and $g$.
 
 ## Depends on
 
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Overlap Pairs](overlap-pairs.md)
-- [Overlap Score](overlap-score.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Overlap pairs](overlap-pairs.md)
+- [Overlap alignment score](overlap-score.md)
 
 ## Proof depends on
 
-- [List Max](../sequence-alignment/list-max.md)
+- [Maximum of an integer list with floor zero](../sequence-alignment/list-max.md)
 
 ## Sources
 

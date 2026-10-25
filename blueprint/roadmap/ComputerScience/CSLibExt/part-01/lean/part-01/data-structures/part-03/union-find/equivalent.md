@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.Equivalent
 ---
 
-# Equivalent
+# Equivalent vertices of a parent forest
 
-Two vertices are equivalent when `find` returns the same representative.
+**Equivalent vertices of a parent forest.** Two vertices $x$ and $y$ of a parent forest $F$
+are equivalent when find returns the same root for $x$ as for $y$ in $F$.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Parent forest with a depth certificate](forest.md)
 
 ## Proof depends on
 
-- [Find](find.md)
+- [Root of a vertex in a parent forest](find.md)
 
 ## Sources
 

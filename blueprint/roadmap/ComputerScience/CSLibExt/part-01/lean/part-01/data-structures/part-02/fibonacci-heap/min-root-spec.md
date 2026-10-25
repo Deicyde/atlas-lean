@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot_spec
 ---
 
-# Min Root spec
+# The minimum root is a least root
 
-The minimum root is the root of some tree in the forest and is no greater than
-every root in the forest.
+**The minimum root is a least root.** If a forest $F$ of Fibonacci trees over a linearly
+ordered type has minimum root $m$, then $m$ is the root of some tree of $F$ and $m$ is at most
+the root of every tree of $F$.
 
 ## Depends on
 
-- [Min Root](min-root.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Root](root.md)
+- [Minimum root of a forest](min-root.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Proof depends on
 
-- [Min Root eq none iff](min-root-eq-none-iff.md)
+- [Only the empty forest has no minimum root](min-root-eq-none-iff.md)
 
 ## Sources
 

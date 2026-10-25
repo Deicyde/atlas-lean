@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.Valid.member_rank_le_log2_card
 ---
 
-# Member rank le log2 card
+# Tree ranks in a valid forest are logarithmic
 
-Every forest member has rank at most the binary logarithm of the forest cardinality.
+**Tree ranks in a valid forest are logarithmic.** If $F$ is a valid binomial forest and $T$
+is a tree of $F$ of rank $r$, then $r \le \lfloor \log_2 n \rfloor$, where $n$ is the number of
+elements, counted with multiplicity, represented by $F$.
 
 ## Depends on
 
-- [Valid](valid-2.md)
+- [Valid binomial forest](valid-2.md)
 - [Elements](elements-2.md)
-- [Binomial Tree](binomial-tree.md)
-- [Rank](rank.md)
+- [Binomial tree](binomial-tree.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Card elements](card-elements.md)
-- [Elements](elements.md)
+- [Valid binomial tree](valid.md)
+- [Size of a valid binomial tree](card-elements.md)
+- [Elements of a binomial tree](elements.md)
 
 ## Sources
 

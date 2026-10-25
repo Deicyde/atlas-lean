@@ -7,28 +7,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_insertKeyWithCost
 ---
 
-# Key Ordered insert Key With Cost
+# Insertion into an interval tree preserves key ordering
 
-Insertion preserves strict key ordering.
+**Insertion into an interval tree preserves key ordering.** Let $t$ be a key-ordered interval
+tree and let $e$ be an entry. Then the tree returned by the cost-instrumented keyed insertion of
+$e$ into $t$ (which replaces the entry with the same key, if there is one; the reported cost is
+discarded) is again key-ordered.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Key Ordered](key-ordered.md)
-- [Insert Key With Cost](insert-key-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [Key-ordered interval tree](key-ordered.md)
+- [Keyed insertion with cost](insert-key-with-cost.md)
 
 ## Proof depends on
 
-- [Key](key.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
-- [Compare Key](compare-key.md)
+- [Search key of an interval entry](key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

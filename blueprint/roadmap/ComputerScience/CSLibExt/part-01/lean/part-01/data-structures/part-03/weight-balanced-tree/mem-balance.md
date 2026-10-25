@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.mem_balance
 ---
 
-# Mem balance
+# Membership after weight-balanced rebalancing
 
-Rebalancing preserves structural membership.
+**Membership after weight-balanced rebalancing.** For binary trees $l$ and $r$ and a key $k$,
+an element $x$ occurs in the weight-balanced rebalancing of $l$, $k$, $r$ exactly when $x$ occurs
+in $l$, $x = k$, or $x$ occurs in $r$. Membership is structural: $x$ is the key of some node.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Balance](balance.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Weight-balanced rebalancing](balance.md)
 
 ## Sources
 

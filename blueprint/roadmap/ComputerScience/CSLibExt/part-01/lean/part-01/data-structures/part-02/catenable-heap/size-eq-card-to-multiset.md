@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_eq_card_toMultiset
 ---
 
-# Size eq card to Multiset
+# Size of a catenable heap as a multiset cardinality
 
-The size is the cardinality of the multiset of elements.
+**Size of a catenable heap as a multiset cardinality.** For every catenable heap $h$, the size
+of $h$ equals the cardinality of the multiset of its elements.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Size](size.md)
-- [To Multiset](to-multiset.md)
+- [Catenable heap](catenable-heap.md)
+- [Size of a catenable heap](size.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Sources
 

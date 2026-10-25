@@ -15,11 +15,11 @@ smaller child of $i$ in $a$, then $\lfloor \log_2 (c+1) \rfloor \le \lfloor \log
 
 ## Depends on
 
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

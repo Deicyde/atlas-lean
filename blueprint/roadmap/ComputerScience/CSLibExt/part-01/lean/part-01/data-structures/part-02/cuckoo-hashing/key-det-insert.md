@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.keyDet_insert
 ---
 
-# Key Det insert
+# Cuckoo insertion preserves key determinism
 
-A successful insertion or replacement preserves key determinism: replacement leaves no
-stale copy of the key with a different value in the other slot.
+**Cuckoo insertion preserves key determinism.** Let $T$ be a cuckoo hash table that
+satisfies the placement invariant and is key-deterministic. If inserting a key $k$ with value
+$v$ into $T$ with some fuel succeeds with result $T'$, then $T'$ is key-deterministic. In
+particular, replacement leaves no stale copy of $k$ with a different value in the other slot.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Key Det](key-det.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Key determinism of a cuckoo hash table](key-det.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash insertion](insert.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Insert Aux](insert-aux.md)
-- [Slot Has Key](slot-has-key.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

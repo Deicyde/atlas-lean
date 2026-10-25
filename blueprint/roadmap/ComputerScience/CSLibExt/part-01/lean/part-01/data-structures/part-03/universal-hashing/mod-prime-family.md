@@ -6,12 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UniversalHashing.modPrimeFamily
 ---
 
-# Mod Prime Family
+# Mod-prime family of distinct functions
 
-The mod-prime family as a `Finset` of distinct functions. The universality result
-below is proved for the indexed family `modPrimeHashes`, matching the `p * (p - 1)`
-count of indices in CLRS; the image here can be smaller, since distinct index pairs
-may agree as functions after the final reduction modulo `m`.
+**Mod-prime family of distinct functions.** For $p > 0$ and $m > 0$, the mod-prime family
+is the finite set of all functions $h_{a,b}$ from $\mathbb{Z}/p\mathbb{Z}$ to
+$\{0, 1, \dots, m - 1\}$ with $a, b \in \mathbb{Z}/p\mathbb{Z}$ and $a \ne 0$, where
+$h_{a,b}$ is the mod-prime hash function with index $(a, b)$.
+
+Universality is proved for the indexed family of mod-prime hash functions, matching the
+$p(p - 1)$ count of indices in CLRS; this set of distinct functions can be smaller, since
+distinct index pairs may give the same function after the final reduction modulo $m$.
 
 ## Depends on
 
@@ -19,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mod Prime Index](mod-prime-index.md)
-- [Mod Prime Hashes](mod-prime-hashes.md)
+- [Mod-prime index set](mod-prime-index.md)
+- [Indexed mod-prime family](mod-prime-hashes.md)
 
 ## Sources
 

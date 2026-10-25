@@ -6,19 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.All
 ---
 
-# All
+# Predicate holding at every key of a red-black tree
 
-`All p tree` states that every key in `tree` satisfies `p`; it is
-`BinarySearchTree.All` of the color-erased tree.
+**Predicate holding at every key of a red-black tree.** For a predicate $p$ on $\alpha$ and a
+red-black tree $t$ with keys in $\alpha$, $p$ holds at every key of $t$ when $p$ holds at every key
+of the binary search tree obtained from $t$ by erasing colors.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [All](../../part-02/binary-search-tree/all.md)
-- [Erase](erase.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.put_size_le
 ---
 
-# Put size le
+# Insertion respects the capacity of an LRU cache
 
-`put` preserves the capacity bound.
+**Insertion respects the capacity of an LRU cache.** For every LRU cache $C$ of capacity
+$c$, key $k$ and value $v$, the cache obtained by putting the binding $(k, v)$ into $C$ has
+size at most $c$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Put](put.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Insertion into an LRU cache](put.md)
+- [Size of an LRU cache](size.md)
 
 ## Proof depends on
 
-- [Size le cap](size-le-cap.md)
+- [An LRU cache never exceeds its capacity](size-le-cap.md)
 
 ## Sources
 

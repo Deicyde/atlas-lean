@@ -6,14 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.entry
 ---
 
-# Entry
+# Sparse-table entries
 
-Entry `i` of level `k`, as an `Option`; `none` when out of range. Both indexes are
-array lookups.
+**Sparse-table entries.** For a sparse table $t$ and natural numbers $k$ and $i$, the entry
+of $t$ at row $k$ and index $i$ is element $i$ of the $k$-th stored row of $t$ (both counted
+from $0$) when $t$ has a $k$-th row and that row has an element at index $i$; otherwise the
+entry is undefined. Both lookups are random-access array lookups.
 
 ## Depends on
 
-- [Sparse Table](sparse-table.md)
+- [Sparse table](sparse-table.md)
 
 ## Sources
 

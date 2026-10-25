@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.report_eq_filter
 ---
 
-# Report eq filter
+# Correctness of the kd-tree range report
 
-The report of a valid tree is its point list filtered by the box.
+**Correctness of the kd-tree range report.** For every valid kd-tree $t$ over
+$\mathbb{Z}^d$ and all $lo, hi \in \mathbb{Z}^d$, the range report of $t$ for the box
+$[lo, hi]$ equals the list of points of $t$, in left-to-right order, that lie in the box,
+that is, the points $p$ with $lo_i \le p_i \le hi_i$ for every coordinate $i$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
-- [Valid](valid.md)
-- [In Box](in-box.md)
-- [Report](report.md)
-- [To List](to-list.md)
+- [Kd-trees](kd-tree.md)
+- [Kd invariant](valid.md)
+- [Membership in an axis-aligned box](in-box.md)
+- [Orthogonal range report of a kd-tree](report.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [Report Aux](report-aux.md)
-- [Report Aux eq filter append](report-aux-eq-filter-append.md)
+- [Accumulator range report of a kd-tree](report-aux.md)
+- [Accumulator range report of a valid kd-tree](report-aux-eq-filter-append.md)
 
 ## Sources
 

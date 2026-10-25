@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.mem_keys_buildFrom
 ---
 
-# Mem keys build From
+# Keys of a radix trie built from a list
 
-The stored keys of the built trie are exactly the listed keys.
+**Keys of a radix trie built from a list.** For every list $L$ of key-value pairs and every
+key $k$, $k$ is a stored key of the radix trie built from $L$ if and only if the pair $(k, v)$
+occurs in $L$ for some value $v$.
 
 ## Depends on
 
-- [Build From](build-from.md)
-- [Keys](keys.md)
+- [Radix trie built from a list of key-value pairs](build-from.md)
+- [Stored keys of a radix trie](keys.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Empty](empty-2.md)
-- [Insert](insert-2.md)
-- [Lookup](lookup.md)
-- [Lookup build From exists of mem](lookup-build-from-exists-of-mem.md)
-- [Mem keys iff](mem-keys-iff.md)
-- [Mem of lookup build From](mem-of-lookup-build-from.md)
+- [Valid radix trie](valid.md)
+- [The empty radix trie is valid](empty-2.md)
+- [Insertion preserves validity of radix tries](insert-2.md)
+- [Radix trie lookup](lookup.md)
+- [Every listed key is present in the built radix trie](lookup-build-from-exists-of-mem.md)
+- [Stored keys of a valid radix trie are the keys with a successful lookup](mem-keys-iff.md)
+- [Lookups in a radix trie built from a list come from the list](mem-of-lookup-build-from.md)
 
 ## Sources
 

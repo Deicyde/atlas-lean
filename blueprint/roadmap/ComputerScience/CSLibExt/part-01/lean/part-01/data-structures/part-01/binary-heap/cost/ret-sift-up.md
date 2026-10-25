@@ -16,12 +16,12 @@ swap counts on $a$ at index $i$ equals the array returned by the plain sift-up o
 ## Depends on
 
 - [Sift-up with comparison and swap counts](sift-up.md)
-- [Sift Up](../../../part-02/binary-heap/sift-up.md)
+- [Sift-up](../../../part-02/binary-heap/sift-up.md)
 
 ## Proof depends on
 
-- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
-- [Heap Parent lt size](../../../part-02/binary-heap/heap-parent-lt-size.md)
+- [Parent index in a level-order binary tree](../../../part-02/binary-heap/heap-parent.md)
+- [The parent of a valid nonroot index is valid](../../../part-02/binary-heap/heap-parent-lt-size.md)
 
 ## Sources
 

@@ -5,13 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.nwScoreAux
 ---
 
-# Nw Score Aux
+# Fuel-bounded Needleman–Wunsch recursion
 
-The Needleman–Wunsch score, by fuel recursion on the total length. The fuel is the
-sum of the two lengths; the recursion below only calls itself on strictly shorter pairs.
-Exponential-time specification, not a memoized table (see the module cost model).
-Implementation detail: use `nwScore`, not this worker, which returns `0` on
-insufficient fuel.
+**Fuel-bounded Needleman–Wunsch recursion.** Fix a substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $|x|$ for
+the length of a sequence $x$ and $ax$ for the sequence with first element $a$ followed by $x$.
+For a fuel $n \in \mathbb{N}$ and sequences $x, y$ over $\alpha$, the value
+$N_n(x, y) \in \mathbb{Z}$ is defined by $N_0(x, y) = 0$, by $N_{n+1}(x, y) = g\,|y|$ if $x$ is
+empty and $N_{n+1}(x, y) = g\,|x|$ if $y$ is empty, and by
+
+$$N_{n+1}(ax, by) = \max\bigl(N_n(x, y) + \sigma(a, b),\ N_n(x, by) + g,\ N_n(ax, y) + g\bigr).$$
+
+The Needleman–Wunsch score of $x$ and $y$ is $N_{|x|+|y|}(x, y)$; this fuel suffices because every
+recursive call shortens the pair. This is an exponential-time specification, not a memoized
+table.
 
 ## Depends on
 

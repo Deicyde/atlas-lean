@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.popFront_eq_none_iff
 ---
 
-# Pop Front eq none iff
+# Popping the front fails exactly on empty deques
 
-Popping the front fails exactly when the represented sequence is empty.
+**Popping the front fails exactly on empty deques.** For every deque $d$, popping the front of
+$d$ returns no result if and only if the sequence represented by $d$ is empty.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Pop Front](pop-front.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Pop the front of a deque](pop-front.md)
 
 ## Sources
 

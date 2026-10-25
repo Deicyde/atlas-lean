@@ -7,24 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.abstraction_insert
 ---
 
-# Abstraction insert
+# Insertion commutes with the abstraction
 
-Abstracting insertion is finite-map insertion, including replacement.
+**Insertion commutes with the abstraction.** For every valid hash table $T$, every key $k$ and
+every value $v$, the finite map represented by the table obtained by inserting $k$ with value $v$
+into $T$ equals the finite map represented by $T$ with $k$ bound to $v$, replacing any earlier
+binding of $k$.
 
 ## Depends on
 
-- [Hash Table](hash-table.md)
-- [Valid](valid.md)
-- [Abstraction](abstraction.md)
-- [Insert](insert.md)
+- [Hash table with separate chaining](hash-table.md)
+- [Valid hash table](valid.md)
+- [Finite map represented by a hash table](abstraction.md)
+- [Insertion into a hash table](insert.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Lookup abstraction](lookup-abstraction.md)
-- [Lookup insert](lookup-insert.md)
-- [Lookup insert of ne](lookup-insert-of-ne.md)
-- [Valid insert](valid-insert.md)
+- [Hash table lookup](lookup.md)
+- [Lookup agrees with the abstraction](lookup-abstraction.md)
+- [Lookup after insertion](lookup-insert.md)
+- [Insertion does not affect other keys](lookup-insert-of-ne.md)
+- [Insertion preserves validity of a hash table](valid-insert.md)
 
 ## Sources
 

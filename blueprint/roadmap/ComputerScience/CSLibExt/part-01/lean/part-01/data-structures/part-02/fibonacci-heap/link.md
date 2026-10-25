@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.link
 ---
 
-# Link
+# Linking two Fibonacci trees
 
-Link two trees by making the tree with the larger root a child of the other, retaining
-the left root when the roots compare equal.
+**Linking two Fibonacci trees.** Let $s$ and $t$ be Fibonacci trees over a linearly ordered
+type. If the root of $s$ is at most the root of $t$, the link of $s$ and $t$ is the tree with the
+root of $s$, stored degree one more than that of $s$, and children $t$ followed by the children
+of $s$. Otherwise it is the tree with the root of $t$, stored degree one more than that of $t$,
+and children $s$ followed by the children of $t$.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Children](children.md)
-- [Degree](degree.md)
-- [Root](root.md)
+- [Children of a Fibonacci tree](children.md)
+- [Degree of a Fibonacci tree](degree.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

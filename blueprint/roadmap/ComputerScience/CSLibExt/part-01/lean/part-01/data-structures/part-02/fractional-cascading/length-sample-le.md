@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_sample_le
 ---
 
-# Length sample le
+# The sample has at most half the length, rounded up
 
-The sample length is at most half the catalog length, rounded up:
-for an even length `2m` this is `m`, and for an odd length `2m + 1` it is
-`m + 1`, matching `(xs.length + 1) / 2` exactly.
+**The sample has at most half the length, rounded up.** For every list $xs$ (over any
+type), the sample of $xs$ has length at most $\lfloor (|xs| + 1)/2 \rfloor$, half the length of
+$xs$ rounded up: for an even length $2m$ the bound is $m$, and for an odd length $2m + 1$ it is
+$m + 1$.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Two mul length sample le](two-mul-length-sample-le.md)
+- [Doubled sample length bound](two-mul-length-sample-le.md)
 
 ## Sources
 

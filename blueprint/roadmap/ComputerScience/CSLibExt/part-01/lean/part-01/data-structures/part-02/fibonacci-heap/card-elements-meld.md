@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.card_elements_meld
 ---
 
-# Card elements meld
+# Melding adds the sizes of Fibonacci heaps
 
-Meld adds the element counts of both heaps.
+**Melding adds the sizes of Fibonacci heaps.** For Fibonacci heaps $H_1$ and $H_2$, the number
+of elements of the meld of $H_1$ and $H_2$, counted with multiplicity, is the number of
+elements of $H_1$ plus the number of elements of $H_2$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Meld](meld.md)
+- [Melding Fibonacci heaps](meld.md)
 
 ## Proof depends on
 
-- [Elements meld](elements-meld.md)
+- [Melding adds the elements](elements-meld.md)
 
 ## Sources
 

@@ -6,24 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.decomp
 ---
 
-# Decomp
+# Preferred-path decomposition of a tree
 
-The preferred-path decomposition of one represented tree, given a list
-of preferred (solid) edges `edges` directed from parent to preferred child.
-Returns `(down, rest)`: `down` is the preferred path starting at the root of
-the tree and following preferred edges downward, and `rest` is the list of
-all other preferred paths of the tree. When a node has several preferred
-children in `edges` (excluded in valid states by the at-most-one condition),
-the first one in child order extends the downward path and the others head
-their own paths in `rest`.
+**Preferred-path decomposition of a tree.** Given a list $E$ of preferred edges, each a pair
+(parent, preferred child), the decomposition of a tree $T$ is a pair (down, rest): down is the
+preferred path that starts at the root of $T$ and follows edges of $E$ downward, and rest is the
+list of all other preferred paths of $T$. When a node has several children joined to it by edges
+of $E$ (excluded in valid states, where each vertex has at most one preferred child), the first
+one in child order continues the path through that node and each of the others starts its own
+path in rest.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 
 ## Proof depends on
 
-- [Root](../euler-tour-tree/root.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
 
 ## Sources
 

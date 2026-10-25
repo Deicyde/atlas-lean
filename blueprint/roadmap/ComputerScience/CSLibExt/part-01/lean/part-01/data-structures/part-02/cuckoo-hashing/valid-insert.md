@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.valid_insert
 ---
 
-# Valid insert
+# Cuckoo insertion preserves the placement invariant
 
-A successful insertion or replacement preserves the placement invariant.
+**Cuckoo insertion preserves the placement invariant.** Let $T$ be a cuckoo hash table that
+satisfies the placement invariant. If inserting the binding $k \mapsto v$ into $T$ (which
+replaces an existing binding for $k$ in place) with some fuel bound succeeds and returns the
+table $T'$, then $T'$ satisfies the placement invariant.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash insertion](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
-- [Slot Has Key](slot-has-key.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

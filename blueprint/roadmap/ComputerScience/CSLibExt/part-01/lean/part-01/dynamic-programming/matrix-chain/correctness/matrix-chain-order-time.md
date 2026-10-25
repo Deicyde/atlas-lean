@@ -7,21 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_time
 ---
 
-# Matrix Chain Order time
+# Exact event count of matrix-chain ordering
 
-The total event count is the split count plus the reconstructed-tree size.
+**Exact event count of matrix-chain ordering.** For every $n \ge 1$ and all natural numbers
+$p_0, \dots, p_n$, the total number of events charged by the matrix-chain ordering algorithm run
+on the dimensions $p_0, \dots, p_n$ is $\binom{n+1}{3} + (2n - 1)$.
+
+The first term counts evaluated split candidates and the second the nodes of the reconstructed
+tree.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Total](../basic/total.md)
-- [Result](../basic/result.md)
-- [Matrix Chain Order](matrix-chain-order.md)
+- [Matrix-chain cost](../basic/cost.md)
+- [Total matrix-chain cost](../basic/total.md)
+- [Matrix-chain result](../basic/result.md)
+- [Matrix-chain ordering](matrix-chain-order.md)
 
 ## Proof depends on
 
-- [Matrix Chain Order candidate Evaluations](matrix-chain-order-candidate-evaluations.md)
-- [Matrix Chain Order reconstruction Nodes](matrix-chain-order-reconstruction-nodes.md)
+- [Split candidates evaluated by matrix-chain ordering](matrix-chain-order-candidate-evaluations.md)
+- [Reconstruction size in matrix-chain ordering](matrix-chain-order-reconstruction-nodes.md)
 
 ## Sources
 

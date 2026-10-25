@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_eq_none_iff
 ---
 
-# Successor eq none iff
+# Successor query fails exactly when no larger key is stored
 
-The successor is `none` exactly when no stored key is greater than `x`.
+**Successor query fails exactly when no larger key is stored.** Let $t$ be a valid grouped
+y-fast trie and $x$ a key. The successor query for $x$ in $t$ returns nothing if and only if no
+key stored in $t$ is greater than $x$.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
-- [Valid](valid.md)
-- [Contents](contents.md)
-- [Successor](successor.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
+- [Validity of a grouped y-fast trie](valid.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Successor query in a grouped y-fast trie](successor.md)
 
 ## Proof depends on
 
-- [Group Ordered](group-ordered.md)
-- [Find Group](find-group.md)
-- [Mem contents iff](mem-contents-iff.md)
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Valid](../../part-03/xfast-trie/valid.md)
-- [Successor](../../part-03/xfast-trie/successor.md)
-- [Successor eq none iff](../../part-03/xfast-trie/successor-eq-none-iff.md)
-- [Successor eq some iff](../../part-03/xfast-trie/successor-eq-some-iff.md)
+- [Ordered list of groups](group-ordered.md)
+- [Group of a representative](find-group.md)
+- [Stored keys are the keys of the groups](mem-contents-iff.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Valid x-fast trie](../../part-03/xfast-trie/valid.md)
+- [Successor in an x-fast trie](../../part-03/xfast-trie/successor.md)
+- [When an x-fast trie has no successor](../../part-03/xfast-trie/successor-eq-none-iff.md)
+- [Characterization of the x-fast trie successor](../../part-03/xfast-trie/successor-eq-some-iff.md)
 
 ## Sources
 

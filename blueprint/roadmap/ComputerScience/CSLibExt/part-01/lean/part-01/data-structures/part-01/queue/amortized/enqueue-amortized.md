@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.enqueue_amortized
 ---
 
-# Enqueue amortized
+# Amortized cost of enqueueing
 
-Enqueueing has amortized charge two.
+**Amortized cost of enqueueing.** For every two-list queue $q$ and every value $v$, the modeled
+cost of enqueueing $v$ onto $q$ plus the potential of the resulting queue equals the potential of
+$q$ plus $2$.
 
 ## Depends on
 
 - [Enqueue](enqueue.md)
-- [Potential](potential.md)
+- [Potential of a two-list queue](potential.md)
 
 ## Sources
 

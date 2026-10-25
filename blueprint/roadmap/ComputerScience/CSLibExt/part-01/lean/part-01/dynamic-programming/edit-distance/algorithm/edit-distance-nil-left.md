@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_nil_left
 ---
 
-# Edit Distance nil left
+# Edit distance from the empty list
 
-Distance from the empty list is the target length.
+**Edit distance from the empty list.** For every list $t$ over a type with a Boolean equality
+test, the distance returned by the edit distance algorithm from the empty list to $t$ is the
+length of $t$.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
-- [Edit Distance](edit-distance.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Sources
 

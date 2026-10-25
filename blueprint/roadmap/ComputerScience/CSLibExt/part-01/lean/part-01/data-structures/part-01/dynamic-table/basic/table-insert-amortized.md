@@ -17,14 +17,14 @@ one unit for each old slot copied when a full table is doubled.
 
 ## Depends on
 
-- [Table](table.md)
-- [Table Insert](table-insert.md)
+- [Dynamic table](table.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Proof depends on
 
-- [Table Insert num](table-insert-num.md)
-- [Table Insert size](table-insert-size.md)
-- [Table Insert time](table-insert-time.md)
+- [Insertion increases the item count by one](table-insert-num.md)
+- [Capacity after an insertion](table-insert-size.md)
+- [Cost of an insertion](table-insert-time.md)
 
 ## Sources
 

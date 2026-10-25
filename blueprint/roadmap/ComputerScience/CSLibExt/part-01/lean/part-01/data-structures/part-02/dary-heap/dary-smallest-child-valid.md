@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySmallestChild_valid
 ---
 
-# Dary Smallest Child valid
+# The smallest child is a valid index
 
-The smallest valid child of `i` is a valid array index.
+**The smallest child is a valid index.** Let $a$ be an array of length $|a|$ over a linearly
+ordered type and let $d$, $i$ and $c$ be natural numbers. If the smallest valid child of $i$ in
+the $d$-ary heap array $a$ is $c$, then $c < |a|$.
 
 ## Depends on
 
-- [Dary Smallest Child](dary-smallest-child.md)
+- [Smallest child in a $d$-ary heap array](dary-smallest-child.md)
 
 ## Proof depends on
 
-- [Dary Child](dary-child.md)
-- [Dary Smallest Child From](dary-smallest-child-from.md)
+- [Child index in a $d$-ary heap array](dary-child.md)
+- [Smallest child among the offsets from $s$](dary-smallest-child-from.md)
 
 ## Sources
 

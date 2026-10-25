@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.mem_of_root_eq_some
 ---
 
-# Mem of root eq some
+# The root of a binary tree is one of its keys
 
-The root of a nonempty tree is a member of the tree.
+**The root of a binary tree is one of its keys.** For every binary tree $T$ and every key $k$,
+if $T$ is nonempty with root key $k$, then $k$ is a key of $T$.
 
 ## Depends on
 
-- [Mem](../binary-search-tree/mem.md)
-- [Root](root.md)
+- [Membership in a binary tree](../binary-search-tree/mem.md)
+- [Root key of a binary tree](root.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums_zero_mem
 ---
 
-# Exact Subset Sum Sums zero mem
+# Zero is always a computed sum
 
-The empty sublist's zero sum survives every actual phase.
+**Zero is always a computed sum.** For every list $x$ of natural numbers and every natural
+number $t$, the final list of sums computed by the exact subset sum traversal on $x$ with target
+$t$ contains $0$.
 
 ## Depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
+- [Characterization of the exact subset sum list](exact-subset-sum-sums-mem.md)
 
 ## Sources
 

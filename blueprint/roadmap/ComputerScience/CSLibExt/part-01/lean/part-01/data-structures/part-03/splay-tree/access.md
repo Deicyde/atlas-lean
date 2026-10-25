@@ -6,10 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.access
 ---
 
-# Access
+# Splay-tree access
 
-Access a key: splay it and report whether it reached the root,
-together with the restructured tree.
+**Splay-tree access.** For a key $x$ and a binary tree $t$ over a linearly ordered type, the
+access of $x$ in $t$ is the pair $(b, t')$, where $t'$ is the tree obtained by splaying $x$ in
+$t$ and $b$ is true exactly when $t'$ is nonempty and its root key is $x$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Root?](root.md)
-- [Splay](splay.md)
+- [Root key of a binary tree](root.md)
+- [Splay operation](splay.md)
 
 ## Sources
 

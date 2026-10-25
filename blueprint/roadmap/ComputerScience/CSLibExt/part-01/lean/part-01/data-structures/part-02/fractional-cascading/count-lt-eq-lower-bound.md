@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.countLT_eq_lowerBound
 ---
 
-# Count LT eq lower Bound
+# The scan count equals the lower bound
 
-The direct scan computes the lower-bound specification.
+**The scan count equals the lower bound.** For every value $x$ and every catalog $L$, the scan
+count of elements of $L$ that are $< x$ equals the lower bound of $x$ in $L$.
 
 ## Depends on
 
-- [Count LT](count-lt.md)
-- [Lower Bound](lower-bound.md)
+- [Scan count of smaller elements](count-lt.md)
+- [Lower bound of a value in a catalog](lower-bound.md)
 
 ## Sources
 

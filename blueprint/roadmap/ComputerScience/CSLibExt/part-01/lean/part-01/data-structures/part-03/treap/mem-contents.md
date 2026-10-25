@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.mem_contents
 ---
 
-# Mem contents
+# Inorder contents list the treap's entries
 
-Inorder contents contain exactly the tree's key-value pairs.
+**Inorder contents list the treap's entries.** For every tree $t$, key $k$ and value $v$,
+the pair $(k, v)$ occurs in the inorder key-value list of $t$ if and only if $t$ has a node
+with key $k$ and value $v$, for some priority.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Mem Node](mem-node.md)
-- [Contents](contents.md)
+- [Treap trees](tree.md)
+- [Entry membership in a treap tree](mem-node.md)
+- [Treap inorder contents](contents.md)
 
 ## Proof depends on
 
-- [Contents node](contents-node.md)
+- [Treap inorder contents of a node](contents-node.md)
 
 ## Sources
 

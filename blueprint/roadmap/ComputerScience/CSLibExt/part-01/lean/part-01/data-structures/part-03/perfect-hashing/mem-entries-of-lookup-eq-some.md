@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.mem_entries_of_lookup_eq_some
 ---
 
-# Mem entries of lookup eq some
+# Successful perfect-hash lookups return entries
 
-Lookup soundness phrased against the list abstraction `entries`.
+**Successful perfect-hash lookups return entries.** For a two-level perfect hash table with
+decidable equality on keys, if looking up a key $k$ returns a value $v$, then $(k, v)$ belongs to
+the list of entries of the table. No validity hypothesis is needed.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Entries](entries.md)
-- [Lookup](lookup.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Entries of a perfect hash table](entries.md)
+- [Lookup in a perfect hash table](lookup.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Mem entries iff](mem-entries-iff.md)
-- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
+- [Bindings stored in a perfect hash table](stored.md)
+- [Entries of a perfect hash table are its stored bindings](mem-entries-iff.md)
+- [Soundness of perfect-hash lookup](stored-of-lookup-eq-some.md)
 
 ## Sources
 

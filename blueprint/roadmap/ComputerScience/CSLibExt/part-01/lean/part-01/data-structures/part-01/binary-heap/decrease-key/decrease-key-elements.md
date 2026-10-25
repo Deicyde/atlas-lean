@@ -17,15 +17,15 @@ occurrence of $x$.
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease-key in a binary min-heap](decrease-key.md)
-- [Elements](../../../part-02/binary-heap/elements.md)
+- [Elements of a binary min-heap](../../../part-02/binary-heap/elements.md)
 
 ## Proof depends on
 
 - [Array of a binary heap after decrease-key](decrease-key-data.md)
-- [Sift Up](../../../part-02/binary-heap/sift-up.md)
-- [Sift Up multiset](../../../part-02/binary-heap/sift-up-multiset.md)
+- [Sift-up](../../../part-02/binary-heap/sift-up.md)
+- [Binary-heap sift-up preserves the multiset of entries](../../../part-02/binary-heap/sift-up-multiset.md)
 
 ## Sources
 

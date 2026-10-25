@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.valid_ofSortedList
 ---
 
-# Valid of Sorted List
+# Building from a sorted list gives a valid grouped y-fast trie
 
-Building from a strictly sorted list with a positive bound gives a valid trie.
+**Building from a sorted list gives a valid grouped y-fast trie.** Let $w$ and $B$ be
+natural numbers with $0 < B$, and let $l$ be a strictly increasing list of keys in
+$\{0, \dots, 2^w - 1\}$. Then the grouped y-fast trie with group bound $B$ built from $l$ by
+cutting it into consecutive groups of at most $B$ keys is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Of Sorted List](of-sorted-list.md)
+- [Validity of a grouped y-fast trie](valid.md)
+- [Grouped y-fast trie from a sorted list](of-sorted-list.md)
 
 ## Proof depends on
 
-- [Chunk Groups](chunk-groups.md)
-- [Chunk Groups spec](chunk-groups-spec.md)
-- [Group Ordered chunk Groups](group-ordered-chunk-groups.md)
-- [Valid of Groups](valid-of-groups.md)
+- [Chunking a list into groups](chunk-groups.md)
+- [Chunks of a sorted list](chunk-groups-spec.md)
+- [Chunks of a sorted list are ordered](group-ordered-chunk-groups.md)
+- [Assembling a valid grouped y-fast trie from groups](valid-of-groups.md)
 
 ## Sources
 

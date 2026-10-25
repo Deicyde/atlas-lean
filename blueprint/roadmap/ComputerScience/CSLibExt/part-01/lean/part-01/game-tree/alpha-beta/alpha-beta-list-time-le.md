@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AlphaBeta.alphaBetaList_time_le
 ---
 
-# Alpha Beta List time le
+# Cost of the alpha-beta scan
 
-The scan over the children evaluates at most their total number of leaves.
+**Cost of the alpha-beta scan.** For either player $p$, all values $a, b$ in a linear order
+and every list $ts$ of game trees, the alpha-beta scan of $ts$ for $p$ with lower bound $a$ and
+upper bound $b$ evaluates at most as many leaves as the trees in $ts$ have in total, each leaf
+evaluation costing one unit.
 
 ## Depends on
 
-- [Game Tree](game-tree.md)
-- [Alpha Beta List](alpha-beta-list.md)
-- [Leaves List](leaves-list.md)
+- [Game tree](game-tree.md)
+- [Alpha-beta scan of the children](alpha-beta-list.md)
+- [Number of leaves of a list of game trees](leaves-list.md)
 
 ## Proof depends on
 
-- [Alpha Beta](alpha-beta.md)
-- [Leaves](leaves.md)
+- [Alpha-beta pruning](alpha-beta.md)
+- [Number of leaves](leaves.md)
 
 ## Sources
 

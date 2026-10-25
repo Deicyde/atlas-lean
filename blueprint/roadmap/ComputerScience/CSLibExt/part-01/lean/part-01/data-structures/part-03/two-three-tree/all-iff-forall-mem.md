@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.all_iff_forall_mem
 ---
 
-# All iff forall mem
+# All-keys predicate agrees with membership on 2-3 trees
 
-`All` is equivalent to universal quantification over structural membership.
+**All-keys predicate agrees with membership on 2-3 trees.** For every predicate $p$ on
+keys and every 2-3 tree $t$ of height $h$, the recursive predicate requiring $p$ at every key
+stored at a node of $t$ holds if and only if $p(x)$ holds for every member $x$ of $t$, where
+$x$ is a member of $t$ when it equals one of the keys stored at some node of $t$.
 
 ## Depends on
 
-- [All](all.md)
-- [Mem](mem.md)
-- [Tree](tree.md)
+- [Predicate on all keys of a 2-3 tree](all.md)
+- [Membership in a 2-3 tree](mem.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Sources
 

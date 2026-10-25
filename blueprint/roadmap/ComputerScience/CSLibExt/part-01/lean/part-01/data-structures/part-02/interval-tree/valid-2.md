@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Interval.valid
 ---
 
-# Valid
+# Boolean interval validity test
 
-Boolean validity check used by the executable update interface.
+**Boolean interval validity test.** For an interval $[a, b]$ with integer endpoints, the
+Boolean validity test returns true exactly when $a \le b$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ Boolean validity check used by the executable update interface.
 
 ## Proof depends on
 
-- [Valid](valid.md)
+- [Valid interval](valid.md)
 
 ## Sources
 

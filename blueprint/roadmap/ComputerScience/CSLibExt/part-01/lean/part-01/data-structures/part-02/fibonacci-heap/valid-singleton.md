@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.valid_singleton
 ---
 
-# Valid singleton
+# Singleton Fibonacci trees are valid
 
-A singleton tree satisfies every Fibonacci-tree invariant.
+**Singleton Fibonacci trees are valid.** Let $\alpha$ be a linearly ordered type. For every
+$v \in \alpha$, the Fibonacci tree of degree $0$ with root $v$ and no children is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Singleton](singleton.md)
+- [Valid Fibonacci trees](valid.md)
+- [One-element Fibonacci heap](singleton.md)
 
 ## Proof depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

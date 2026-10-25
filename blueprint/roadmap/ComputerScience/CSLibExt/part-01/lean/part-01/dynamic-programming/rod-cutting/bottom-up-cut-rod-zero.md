@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_zero
 ---
 
-# Bottom Up Cut Rod zero
+# Bottom-up rod cutting on the empty rod
 
-Empty input needs no candidate evaluation and earns zero.
+**Bottom-up rod cutting on the empty rod.** For the empty price vector ($n = 0$) over an
+additive commutative monoid with a linear order, bottom-up rod cutting returns $0$ at cost $0$.
 
 ## Depends on
 
-- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Bottom-up rod cutting](bottom-up-cut-rod.md)
 
 ## Sources
 

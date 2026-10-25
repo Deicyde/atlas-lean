@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor
 ---
 
-# Successor
+# Successor query in a grouped y-fast trie
 
-Successor: locate the least representative above `x` in the x-fast trie, then
-scan its group for the first key above `x`.
+**Successor query in a grouped y-fast trie.** For a grouped y-fast trie $t$ and a key
+$x$, let $r$ be the least key greater than $x$ stored in the representative x-fast trie of
+$t$; if there is none, the query returns nothing. Otherwise let $g$ be the first group of $t$
+whose last element is $r$, or the empty list if no group has last element $r$. The query then
+returns the first key of $g$ greater than $x$, or nothing if $g$ has no such key.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Proof depends on
 
-- [Find Group](find-group.md)
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Successor](../../part-03/xfast-trie/successor.md)
+- [Group of a representative](find-group.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Successor in an x-fast trie](../../part-03/xfast-trie/successor.md)
 
 ## Sources
 

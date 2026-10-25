@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.Ordered
 ---
 
-# Ordered
+# Ordered red-black tree
 
-Every left key is smaller and every right key is larger, recursively; it is
-`BinarySearchTree.Ordered` of the color-erased tree.
+**Ordered red-black tree.** Let $\alpha$ be a type with a relation $<$. A red-black tree with
+keys in $\alpha$ is ordered when, at every node with key $k$, every key $y$ in the left subtree
+satisfies $y < k$ and every key $z$ in the right subtree satisfies $k < z$.
+
+Equivalently, the binary tree obtained by erasing the colors is an ordered binary search tree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Erase](erase.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

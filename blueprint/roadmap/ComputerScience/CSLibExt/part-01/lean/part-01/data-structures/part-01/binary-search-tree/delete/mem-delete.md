@@ -15,8 +15,8 @@ $t$ if and only if $y$ occurs in $t$ and $y \ne x$.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 - [Deletion from a binary search tree](delete.md)
 
 ## Proof depends on

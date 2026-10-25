@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.rank
 ---
 
-# Rank
+# Rank of a key in a binary tree
 
-The number of keys strictly smaller than `x`, computed from inorder traversal.
+**Rank of a key in a binary tree.** For a linearly ordered type $\alpha$, a key
+$x \in \alpha$ and a binary tree $t$ with keys in $\alpha$, the rank of $x$ in $t$ is the number
+of positions of the inorder traversal of $t$ whose entry is strictly less than $x$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inorder](inorder.md)
+- [Inorder traversal of a binary tree](inorder.md)
 
 ## Sources
 

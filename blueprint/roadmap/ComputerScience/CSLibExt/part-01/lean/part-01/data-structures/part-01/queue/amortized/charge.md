@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.Operation.charge
 ---
 
-# Charge
+# Amortized charge of a queue operation
 
-The potential-method charge assigned to one queue operation.
+**Amortized charge of a queue operation.** The potential-method charge of a queue operation is
+$2$ for an enqueue and $1$ for a dequeue.
 
 ## Depends on
 
-- [Operation](operation.md)
+- [Queue operation](operation.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.numNodes_insert_le
 ---
 
-# Num Nodes insert le
+# Weight-balanced insertion adds at most one key
 
-Insertion increases the number of keys by at most one.
+**Weight-balanced insertion adds at most one key.** Let the keys carry a linear order. For
+every key $x$ and every binary tree $t$, the tree obtained from $t$ by weight-balanced insertion
+of $x$ has at most one more node than $t$.
 
 ## Depends on
 
-- [Insert](insert.md)
+- [Weight-balanced insertion](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Num Nodes balance](num-nodes-balance.md)
+- [Weight-balanced rebalancing](balance.md)
+- [Weight-balanced rebalancing preserves the number of keys](num-nodes-balance.md)
 
 ## Sources
 

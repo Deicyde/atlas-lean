@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.exists_nwScore_eq_overlapScore
 ---
 
-# Exists nw Score eq overlap Score
+# The overlap score is attained
 
-The overlap score is attained by some overlap pair.
+**The overlap score is attained.** Let $\sigma$ be a substitution score and $g$ a gap
+score. For all sequences $x$ and $y$ there is an overlap pair $(x', y')$ of $x$ and $y$ such
+that the Needleman–Wunsch score of $x'$ against $y'$ (with $\sigma$ and $g$) equals the
+overlap score of $x$ and $y$.
 
 ## Depends on
 
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Overlap Pairs](overlap-pairs.md)
-- [Overlap Score](overlap-score.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Overlap pairs](overlap-pairs.md)
+- [Overlap alignment score](overlap-score.md)
 
 ## Proof depends on
 
-- [List Max](../sequence-alignment/list-max.md)
+- [Maximum of an integer list with floor zero](../sequence-alignment/list-max.md)
 
 ## Sources
 

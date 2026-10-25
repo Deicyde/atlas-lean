@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.suffixPairs
 ---
 
-# Suffix Pairs
+# Pairs of suffixes
 
-All suffix pairs of `xs` and `ys`, as a list of pairs.
+**Pairs of suffixes.** For lists $xs$ and $ys$, the list of all pairs $(u, v)$ where $u$ is
+a suffix of $xs$ and $v$ is a suffix of $ys$, the empty lists and $xs$, $ys$ themselves
+included.
 
 ## Depends on
 

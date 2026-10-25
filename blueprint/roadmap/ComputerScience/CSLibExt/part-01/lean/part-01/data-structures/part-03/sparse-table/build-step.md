@@ -6,11 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.buildStep
 ---
 
-# Build Step
+# One step of the sparse-table construction
 
-One step of the iterative construction: record the current row as the next level and
-compute the following row from it. The state is the current row together with the levels
-built so far.
+**One step of the sparse-table construction.** Work over a type with a minimum operation
+$\min$. Given a pair $(r, L)$ of a current row $r$ (an array of length $|r|$) and an array $L$
+of the rows recorded so far, and a natural number $k$, the build step returns the pair
+$(r', L')$, where $L'$ is $L$ with $r$ appended at the end, and $r'$ is the array whose
+entry $i$ is $\min(r_i, r_{i+2^k})$ for each $i$ with $i + 2^k < |r|$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Next Level](next-level.md)
+- [Next level of a sparse table row](next-level.md)
 
 ## Sources
 

@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_put_of_ne
 ---
 
-# Get put of ne
+# A put without eviction preserves lookups of other keys
 
-Looking up a different key after a `put` that evicts nothing returns exactly what the
-lookup returned before the `put`: surviving bindings keep their values.
+**A put without eviction preserves lookups of other keys.** Let $C$ be an LRU cache of
+capacity $c$ that holds fewer than $c$ entries or already stores the key $k$. Then for every
+key $k' \ne k$ and every value $v$, looking up $k'$ in the cache obtained by putting the binding
+$(k, v)$ into $C$ returns the same optional value as looking up $k'$ in $C$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Keys](keys.md)
-- [Put](put.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Key list of an LRU cache](keys.md)
+- [Insertion into an LRU cache](put.md)
+- [Size of an LRU cache](size.md)
 
 ## Proof depends on
 
-- [Get hit](get-hit.md)
-- [Get miss](get-miss.md)
-- [Mem put entries iff of not full](mem-put-entries-iff-of-not-full.md)
+- [A lookup of a stored key returns its value](get-hit.md)
+- [A lookup of an absent key misses](get-miss.md)
+- [Insertion without eviction](mem-put-entries-iff-of-not-full.md)
 
 ## Sources
 

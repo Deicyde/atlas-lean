@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.bridgePtr
 ---
 
-# Bridge Ptr
+# Bridge pointer
 
-The bridge pointer for a value into the next catalog: the index just past
-the elements of that catalog that are `≤ v`.
+**Bridge pointer.** For a catalog $L$ and a value $v$, the bridge pointer of $v$ into $L$ is
+the number of elements of $L$ that are $\le v$.
+
+When $L$ is sorted, this is the index just past the elements of $L$ that are $\le v$.
 
 ## Depends on
 

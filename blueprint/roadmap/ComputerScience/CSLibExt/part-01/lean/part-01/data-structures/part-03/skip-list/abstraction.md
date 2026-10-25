@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SkipList.abstraction
 ---
 
-# Abstraction
+# Bottom-level abstraction of a skip list
 
-The canonical bottom-level association-list abstraction.
+**Bottom-level abstraction of a skip list.** The bottom-level abstraction of a skip list is
+the association list obtained from its bottom-level nodes, in order, by keeping the key-value
+pair $(k, v)$ of each node and forgetting its tower height.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
+- [Skip list](skip-list.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

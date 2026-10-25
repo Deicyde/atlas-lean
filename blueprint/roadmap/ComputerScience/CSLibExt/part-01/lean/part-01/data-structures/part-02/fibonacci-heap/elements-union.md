@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_union
 ---
 
-# Elements union
+# The union of Fibonacci heaps adds their multisets
 
-Union preserves every occurrence from both heaps.
+**The union of Fibonacci heaps adds their multisets.** For Fibonacci heaps $H_1$ and $H_2$ over
+a linearly ordered type, the multiset represented by the union of $H_1$ and $H_2$ is the sum of
+the multisets represented by $H_1$ and by $H_2$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Union](union.md)
+- [Union of Fibonacci heaps](union.md)
 
 ## Proof depends on
 
-- [Elements meld](elements-meld.md)
+- [Melding adds the elements](elements-meld.md)
 
 ## Sources
 

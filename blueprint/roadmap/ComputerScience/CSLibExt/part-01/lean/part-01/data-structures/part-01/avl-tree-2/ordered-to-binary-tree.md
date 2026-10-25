@@ -19,7 +19,7 @@ tree.
 - [Ordered AVL trees](ordered.md)
 - [Binary trees with cached heights](tree.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

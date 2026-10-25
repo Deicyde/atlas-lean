@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.inorder_join
 ---
 
-# Inorder join
+# Inorder traversal of a splice
 
-The inorder traversal of a splice appends the two traversals.
+**Inorder traversal of a splice.** For red-black trees $t$ and $s$ with keys of any type,
+the inorder traversal of the splice of $t$ with $s$ is the inorder traversal of $t$ followed by the
+inorder traversal of $s$.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/tree.md)
-- [Inorder](../../../part-03/red-black-tree/inorder.md)
-- [Join](join.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
+- [Inorder traversal of a red-black tree](../../../part-03/red-black-tree/inorder.md)
+- [Splicing two red-black trees](join.md)
 
 ## Proof depends on
 
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [Color](../../../part-03/red-black-tree/color.md)
-- [Erase](../../../part-03/red-black-tree/erase.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
+- [Color erasure](../../../part-03/red-black-tree/erase.md)
 
 ## Sources
 

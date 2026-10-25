@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.nodup_of_mem_paths
 ---
 
-# Nodup of mem paths
+# Preferred paths have distinct vertices
 
-Every preferred path of a valid state has distinct vertices.
+**Preferred paths have distinct vertices.** Every preferred path of a valid state has
+distinct vertices.
 
 ## Depends on
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Paths](paths.md)
+- [Link-cut tree state](state.md)
+- [Valid link-cut tree states](valid.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
 
 ## Proof depends on
 
-- [Nodup paths flat Map](nodup-paths-flat-map.md)
+- [Preferred paths cover each vertex at most once](nodup-paths-flat-map.md)
 
 ## Sources
 

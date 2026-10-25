@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.size_update
 ---
 
-# Size update
+# Point update preserves the size of a segment tree
 
-Point update does not change the size of a tree: every node on the update
-path keeps its cached segment length.
+**Point update preserves the size of a segment tree.** For every segment tree $t$ over an
+additive monoid, every index $i$ and every value $y$, the point update of $t$ at $i$ with $y$
+has the same size as $t$.
+
+Every node on the update path keeps its cached segment length.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [Size](size.md)
-- [Update](update.md)
+- [Size of a segment tree](size.md)
+- [Point update of a segment tree](update.md)
 
 ## Proof depends on
 
-- [Agg](agg.md)
+- [Aggregate of a segment tree](agg.md)
 
 ## Sources
 

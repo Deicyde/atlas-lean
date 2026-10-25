@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ifft_ret
 ---
 
-# Ifft ret
+# The inverse FFT is a normalized FFT at the conjugate root
 
-The actual inverse returns the normalized actual FFT at the conjugated root.
+**The inverse FFT is a normalized FFT at the conjugate root.** Let $N = 2^d$, let
+$\omega \in \mathbb{C}$ be a primitive $N$-th root of unity and let $x \in \mathbb{C}^N$. The
+output of the inverse FFT procedure on $x$ with root $\omega$ is the output of the FFT procedure
+on $x$ with root $\overline{\omega}$ with every entry multiplied by $N^{-1}$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Ifft](../inverse/ifft.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Inverse FFT by conjugation](../inverse/ifft.md)
 
 ## Proof depends on
 
-- [Fft Conjugate](../inverse/fft-conjugate.md)
-- [Fft conjugate ret](fft-conjugate-ret.md)
+- [Charged entrywise conjugation](../inverse/fft-conjugate.md)
+- [Conjugating around the FFT conjugates the root](fft-conjugate-ret.md)
 
 ## Sources
 

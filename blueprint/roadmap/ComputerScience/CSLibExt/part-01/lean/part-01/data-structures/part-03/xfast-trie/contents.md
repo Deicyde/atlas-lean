@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.YFastTrie.contents
 ---
 
-# Contents
+# Keys of a y-fast trie
 
-All stored keys: the union of the representatives' buckets. Computed
-from `reps.contents` (sparse), not by filtering the `2 ^ w`-element key
-universe against an existential over all potential owners.
+**Keys of a y-fast trie.** Let $t$ be a y-fast trie over $w$-bit keys, let $R$ be the set of
+keys stored in the representative x-fast trie of $t$, and for each $r \in R$ let $B(r)$ be the
+bucket owned by $r$. The set of keys stored in $t$ is the union of the buckets of its
+representatives, $\bigcup_{r \in R} B(r)$.
+
+It is computed from the representatives alone, not by filtering all $2^w$ possible keys.
 
 ## Depends on
 
-- [YFast Trie](yfast-trie.md)
+- [y-fast trie skeleton](yfast-trie.md)
 
 ## Proof depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Sources
 

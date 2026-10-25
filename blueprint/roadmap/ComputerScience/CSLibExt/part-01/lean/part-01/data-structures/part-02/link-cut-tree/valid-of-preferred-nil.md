@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.valid_of_preferred_nil
 ---
 
-# Valid of preferred nil
+# Validity of states with no preferred edges
 
-A state with no preferred edges is valid exactly when its forest is
-duplicate-free. This is the invariant after every structural operation,
-which resets all edges to dashed.
+**Validity of states with no preferred edges.** Let $s$ be a link-cut tree state whose list
+of preferred edges is empty. If the concatenation of the vertex lists of the trees of the
+represented forest of $s$ has no duplicates, then $s$ is valid.
+
+This is the situation after every structural operation, which resets all edges to dashed.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [State](state.md)
-- [Valid](valid.md)
+- [Link-cut tree state](state.md)
+- [Valid link-cut tree states](valid.md)
 
 ## Proof depends on
 
-- [Parent Child](parent-child.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
 
 ## Sources
 

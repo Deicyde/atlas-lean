@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.time_union
 ---
 
-# Time union
+# Union of catenable heaps costs one
 
-`union` costs exactly 1, independently of its operands.
+**Union of catenable heaps costs one.** For all catenable heaps $h_1$ and $h_2$, the union of
+$h_1$ and $h_2$ has time cost exactly $1$, independently of $h_1$ and $h_2$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Union](union.md)
+- [Catenable heap](catenable-heap.md)
+- [Union of catenable heaps](union.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.mem_sortedMerge_iff
 ---
 
-# Mem sorted Merge iff
+# Elements of a sorted merge
 
-Membership in a sorted merge is membership in one of the inputs.
+**Elements of a sorted merge.** For lists $\ell_1$ and $\ell_2$ over a linear order and any
+element $v$, $v$ belongs to the sorted merge of $\ell_1$ and $\ell_2$ if and only if $v$ belongs
+to $\ell_1$ or to $\ell_2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ Membership in a sorted merge is membership in one of the inputs.
 
 ## Proof depends on
 
-- [Perm sorted Merge](perm-sorted-merge.md)
+- [A sorted merge rearranges the concatenation](perm-sorted-merge.md)
 
 ## Sources
 

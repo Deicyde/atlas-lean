@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.popBack_eq_none_iff
 ---
 
-# Pop Back eq none iff
+# Popping the back fails exactly on empty deques
 
-Popping the back fails exactly when the represented sequence is empty.
+**Popping the back fails exactly on empty deques.** For every deque $d$, popping the back of
+$d$ returns no result if and only if the sequence represented by $d$ is empty.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Pop Back](pop-back.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Pop the back of a deque](pop-back.md)
 
 ## Sources
 

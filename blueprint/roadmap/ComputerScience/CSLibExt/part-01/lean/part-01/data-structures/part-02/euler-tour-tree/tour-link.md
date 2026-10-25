@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.tour_link
 ---
 
-# Tour link
+# Euler tour of a linked tree
 
-The tour of a linked tree is the splice of the two tours: the first tour is a
-prefix, and the second tour is inserted whole before the final return to the root.
+**Euler tour of a linked tree.** For trees $t_1$ and $t_2$, let $t$ be the link of $t_1$ and
+$t_2$, that is, $t_1$ with $t_2$ added as the last child subtree of its root. The Euler tour of
+$t$ is the Euler tour of $t_1$, followed by the Euler tour of $t_2$, followed by the root of
+$t_1$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Link](link.md)
-- [Root](root.md)
-- [Tour](tour.md)
+- [Rooted ordered tree](tree.md)
+- [Linking two rooted trees](link.md)
+- [Root of a rooted tree](root.md)
+- [Euler tour](tour.md)
 
 ## Proof depends on
 
-- [Tour node](tour-node.md)
+- [Recursive formula for the Euler tour](tour-node.md)
 
 ## Sources
 

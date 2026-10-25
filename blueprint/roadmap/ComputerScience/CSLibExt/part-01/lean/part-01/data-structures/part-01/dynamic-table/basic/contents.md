@@ -17,7 +17,7 @@ The insertion procedure never consults the contents.
 
 ## Depends on
 
-- [Table](table.md)
+- [Dynamic table](table.md)
 
 ## Sources
 

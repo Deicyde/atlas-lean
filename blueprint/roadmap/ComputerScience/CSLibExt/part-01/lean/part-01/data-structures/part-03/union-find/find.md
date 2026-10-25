@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.find
 ---
 
-# Find
+# Root of a vertex in a parent forest
 
-Follow parent pointers to the unique root reached from `x`.
+**Root of a vertex in a parent forest.** For a parent forest $F$ with parent map $p$ and a
+vertex $x$, the root of $x$ is found by following parent pointers from $x$: it is $x$ itself
+if $p(x) = x$, and otherwise it is the root of $p(x)$.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Parent forest with a depth certificate](forest.md)
 
 ## Sources
 

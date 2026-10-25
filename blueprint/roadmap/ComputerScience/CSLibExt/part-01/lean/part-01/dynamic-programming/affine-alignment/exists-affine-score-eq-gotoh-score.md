@@ -8,24 +8,27 @@ lean: Cslib.Algorithms.Lean.exists_affineScore_eq_gotohScore
 
 # Gotoh is attained
 
-**Gotoh is attained**: some valid alignment achieves `gotohScore`.
+**Gotoh is attained.** Let $\sigma$ be an integer substitution score, $o$ an integer gap-open
+cost and $e$ an integer gap-extend cost. For all sequences $x$ and $y$ there is a valid alignment
+$A$ of $x$ and $y$ whose affine-gap score equals the Gotoh score of $x$ and $y$, both taken with
+$\sigma$, $o$ and $e$.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Affine Score](affine-score.md)
-- [Gotoh Score](gotoh-score.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Affine-gap alignment score](affine-score.md)
+- [Gotoh score](gotoh-score.md)
 
 ## Proof depends on
 
-- [Gap State](gap-state.md)
-- [Affine Score Aux](affine-score-aux.md)
-- [Gap Cost](gap-cost.md)
-- [Gotoh Aux](gotoh-aux.md)
-- [Is Alignment cons gap X](is-alignment-cons-gap-x.md)
-- [Is Alignment cons gap Y](is-alignment-cons-gap-y.md)
-- [Is Alignment cons match](is-alignment-cons-match.md)
+- [Gap states](gap-state.md)
+- [Affine-gap score from a gap state](affine-score-aux.md)
+- [Gap cost](gap-cost.md)
+- [Fuel-bounded Gotoh recursion](gotoh-aux.md)
+- [Prepending a column with a gap in the second sequence](is-alignment-cons-gap-x.md)
+- [Prepending a column with a gap in the first sequence](is-alignment-cons-gap-y.md)
+- [Prepending a match column](is-alignment-cons-match.md)
 
 ## Sources
 

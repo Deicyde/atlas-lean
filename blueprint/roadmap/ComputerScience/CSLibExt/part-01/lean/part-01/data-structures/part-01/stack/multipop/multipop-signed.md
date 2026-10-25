@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Stack.multipopSigned
 ---
 
-# Multipop Signed
+# MULTIPOP with an integer count
 
-Integer request interface; nonpositive counts perform no POP.
+**MULTIPOP with an integer count.** For a stack $S$ and an integer $k$, MULTIPOP with integer
+count $k$ is MULTIPOP of $S$ with the natural count $\max(k, 0)$, with the same result and cost.
+In particular, a count $k \le 0$ removes nothing.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Multipop](multipop.md)
+- [MULTIPOP](multipop.md)
 
 ## Sources
 

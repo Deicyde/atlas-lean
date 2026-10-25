@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_reconstructionSteps_le
 ---
 
-# Edit Distance reconstruction Steps le
+# Reconstruction cost bound for edit distance
 
-Reconstruction emits at most one operation per consumed or produced symbol.
+**Reconstruction cost bound for edit distance.** For lists $s$ and $t$ over a type with a
+Boolean equality test, write $|s|$ and $|t|$ for their lengths. The number of reconstruction
+steps charged by the edit distance algorithm on $s$ and $t$ is at most $|s| + |t|$.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
-- [Edit Distance](edit-distance.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Proof depends on
 
 - [Edit Script](../script/edit-script.md)
-- [Cost](../script/cost-2.md)
-- [Edit Step](../script/edit-step.md)
-- [Cost](../script/cost.md)
-- [Edit Distance reconstruction Steps](edit-distance-reconstruction-steps.md)
+- [Cost of an edit script](../script/cost-2.md)
+- [Edit step](../script/edit-step.md)
+- [Unit cost of an edit step](../script/cost.md)
+- [Reconstruction cost of the edit distance algorithm](edit-distance-reconstruction-steps.md)
 
 ## Sources
 

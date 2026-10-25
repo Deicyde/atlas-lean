@@ -6,9 +6,14 @@ statement: formalized
 lean: Batteries.UnionFind.Internal.countedFind
 ---
 
-# Counted Find
+# Cost-counted FIND
 
-This packages the same carried array and root; it does not run canonical FIND a second time.
+**Cost-counted FIND.** For a union-find structure $S$ and a node $x < |S|$, this runs the
+cost-counted FIND auxiliary on $x$, obtaining a node array $A'$, a root $r$ and a cost $(t, w)$.
+It returns the union-find structure with node array $A'$, together with $r$ as a node of that
+structure (whose size equals $|S|$), at cost $(t, w)$.
+
+It reuses the array and root of that single run; FIND is not run a second time.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Counted Aux](counted-aux.md)
-- [Counted Aux ret](counted-aux-ret.md)
+- [Cost-counted FIND auxiliary](counted-aux.md)
+- [The cost-counted FIND auxiliary returns the uncounted result](counted-aux-ret.md)
 
 ## Sources
 

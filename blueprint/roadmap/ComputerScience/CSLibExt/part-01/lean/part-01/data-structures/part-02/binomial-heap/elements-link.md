@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.elements_link
 ---
 
-# Elements link
+# Linking binomial trees adds their elements
 
-Linking preserves the disjoint multiset union of both input trees.
+**Linking binomial trees adds their elements.** For any two binomial trees $s$ and $t$ over a
+linearly ordered type, the multiset of elements of the tree obtained by linking $s$ and $t$ is
+the sum of the multisets of elements of $s$ and $t$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Elements](elements.md)
-- [Link](link.md)
+- [Binomial tree](binomial-tree.md)
+- [Elements of a binomial tree](elements.md)
+- [Linking two binomial trees](link.md)
 
 ## Proof depends on
 
-- [Children](children.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Children of a binomial tree](children.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.balanced
 ---
 
-# Balanced
+# Every height-indexed 2-3 tree is balanced
 
-Every height-indexed tree is balanced.
+**Every height-indexed 2-3 tree is balanced.** For every height $h$, every 2-3 tree of
+height $h$ satisfies the balance invariant: at every node, the subtrees are balanced and have
+equal computed heights.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [Tree](tree.md)
+- [Balance invariant for 2-3 trees](balanced.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Proof depends on
 
-- [Height](height.md)
-- [Height eq](height-eq.md)
+- [Height of a 2-3 tree](height.md)
+- [Computed height equals the height index](height-eq.md)
 
 ## Sources
 

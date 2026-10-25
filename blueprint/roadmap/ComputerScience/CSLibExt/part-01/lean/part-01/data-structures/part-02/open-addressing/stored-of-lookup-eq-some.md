@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.stored_of_lookup_eq_some
 ---
 
-# Stored of lookup eq some
+# Open-addressing lookup returns only stored bindings
 
-A value returned by `lookup` is stored in the table.
+**Open-addressing lookup returns only stored bindings.** If looking up a key $k$ in an
+open-addressing hash table $T$ returns the value $v$, then $T$ stores the binding $k \mapsto v$.
+No validity assumption is needed.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Stored](stored.md)
-- [Lookup](lookup.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Stored binding in an open-addressing table](stored.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Lookup Aux](lookup-aux.md)
+- [Bounded lookup scan](lookup-aux.md)
 
 ## Sources
 

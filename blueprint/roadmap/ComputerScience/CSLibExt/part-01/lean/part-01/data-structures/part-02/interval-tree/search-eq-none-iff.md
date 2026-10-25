@@ -7,29 +7,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.search_eq_none_iff
 ---
 
-# Search eq none iff
+# Interval-tree search fails exactly when nothing overlaps
 
-Failure is equivalent to the absence of an overlapping stored occurrence.
+**Interval-tree search fails exactly when nothing overlaps.** Let $T$ be an interval tree
+whose cached height, size and maximum high endpoint are exact at every node, and whose low
+endpoints respect the search order (at every node, low endpoints in the left subtree are at most
+the node's, and those in the right subtree at least the node's). Then searching $T$ for a query
+interval $Q$ returns nothing if and only if no entry stored in $T$ has an interval that overlaps
+$Q$ (each interval's low endpoint is at most the other's high endpoint).
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Overlaps](overlaps.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Low Ordered](low-ordered.md)
-- [Search](search.md)
+- [Overlapping closed intervals](overlaps.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Low-endpoint ordered interval tree](low-ordered.md)
+- [Interval-tree overlap search](search.md)
 
 ## Proof depends on
 
-- [Cost](cost.md)
-- [Overlaps](overlaps-2.md)
-- [Overlaps With Cost](overlaps-with-cost.md)
-- [Overlaps With Cost fst](overlaps-with-cost-fst.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Overlap test for closed intervals](overlaps-2.md)
+- [Overlap test with comparison count](overlaps-with-cost.md)
+- [The instrumented overlap test returns the plain result](overlaps-with-cost-fst.md)
 - [Cached Max?](cached-max.md)
-- [Search With Cost](search-with-cost.md)
-- [Search complete](search-complete.md)
+- [Instrumented overlap search](search-with-cost.md)
+- [Completeness of interval-tree search](search-complete.md)
 
 ## Sources
 

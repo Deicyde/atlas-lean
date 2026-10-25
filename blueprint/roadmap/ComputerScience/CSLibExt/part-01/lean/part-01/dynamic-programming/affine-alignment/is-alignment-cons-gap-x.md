@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isAlignment_cons_gapX
 ---
 
-# Is Alignment cons gap X
+# Prepending a column with a gap in the second sequence
 
-Prepending a gap-in-`ys` column preserves validity.
+**Prepending a column with a gap in the second sequence.** If $A$ is a valid alignment of
+sequences $x$ and $y$, then for every element $a$, the alignment obtained by prepending to $A$ the
+column that pairs $a$ with a gap is a valid alignment of $a x$ (the sequence $x$ with $a$
+prepended) and $y$.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
 
 ## Sources
 

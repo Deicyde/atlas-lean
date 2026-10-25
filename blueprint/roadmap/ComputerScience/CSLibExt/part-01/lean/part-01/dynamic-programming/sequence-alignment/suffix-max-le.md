@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.suffixMax_le
 ---
 
-# Suffix Max le
+# Upper bounds on the suffix maximum
 
-A bound on all suffix-pair scores bounds the suffix maximum.
+**Upper bounds on the suffix maximum.** Let $\sigma$ be a substitution score, $g$ an integer
+gap score, $xs$ and $ys$ lists and $y$ an integer. If every pair $(u, v)$ with $u$ a suffix of
+$xs$ and $v$ a suffix of $ys$ has Needleman–Wunsch score at most $y$, then the maximum
+Needleman–Wunsch score over all such suffix pairs is at most $y$.
 
 ## Depends on
 
-- [Nw Score](nw-score.md)
-- [Suffix Max](suffix-max.md)
-- [Suffix Pairs](suffix-pairs.md)
+- [Needleman–Wunsch score](nw-score.md)
+- [Suffix maximum of Needleman–Wunsch scores](suffix-max.md)
+- [Pairs of suffixes](suffix-pairs.md)
 
 ## Proof depends on
 
-- [List Max](list-max.md)
-- [Nw Score nil left](nw-score-nil-left.md)
+- [Maximum of an integer list with floor zero](list-max.md)
+- [Aligning the empty sequence with a sequence](nw-score-nil-left.md)
 
 ## Sources
 

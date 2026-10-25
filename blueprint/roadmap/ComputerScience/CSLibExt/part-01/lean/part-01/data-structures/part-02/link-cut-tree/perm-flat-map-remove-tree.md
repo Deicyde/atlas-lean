@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.perm_flatMap_removeTree
 ---
 
-# Perm flat Map remove Tree
+# Removing the tree containing a vertex splits the forest's vertices
 
-Removing the (unique, by duplicate-freeness) tree containing `x` from a
-forest splits its flat vertex list into the remainder plus that tree, up
-to permutation.
+**Removing the tree containing a vertex splits the forest's vertices.** Let $f$ be a forest of
+rooted ordered trees whose concatenated vertex lists have no duplicates, let $x$ be a vertex, and
+let $t$ be the first tree of $f$ containing $x$. Then the concatenated vertex list of the forest
+obtained from $f$ by removing every tree containing $x$, followed by the vertex list of $t$, is a
+permutation of the concatenated vertex list of $f$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Find Tree](find-tree.md)
-- [Remove Tree](remove-tree.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
 
 ## Sources
 

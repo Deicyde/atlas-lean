@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.siftDown_multiset
 ---
 
-# Sift Down multiset
+# Binary-heap sift-down preserves the multiset of entries
 
-Sifting down preserves the represented multiset.
+**Binary-heap sift-down preserves the multiset of entries.** For every array $a$ over a
+linearly ordered type and every index $i$, the array obtained by sifting down $a$ from $i$ has
+the same multiset of entries as $a$.
 
 ## Depends on
 
-- [Sift Down](sift-down.md)
+- [Sift-down](sift-down.md)
 
 ## Proof depends on
 
-- [Sift Down perm](sift-down-perm.md)
+- [Binary-heap sift-down permutes the array](sift-down-perm.md)
 
 ## Sources
 

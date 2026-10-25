@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_hit
 ---
 
-# Get hit
+# A lookup of a stored key returns its value
 
-A lookup of a stored key returns its stored value.
+**A lookup of a stored key returns its value.** If an LRU cache stores the pair $(k, v)$,
+then looking up $k$ returns $v$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.ordered_inorder
 ---
 
-# Ordered inorder
+# The inorder traversal of an ordered binary tree is strictly increasing
 
-The inorder traversal of an ordered tree is strictly increasing.
+**The inorder traversal of an ordered binary tree is strictly increasing.** Let $\alpha$ be
+a linearly ordered type. If a binary tree $T$ over $\alpha$ is ordered, then in the inorder
+traversal of $T$ every key is less than every key that comes after it.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Inorder](inorder.md)
+- [Ordered binary trees](ordered.md)
+- [Inorder traversal of a binary tree](inorder.md)
 
 ## Proof depends on
 
-- [All](all.md)
-- [Mem](mem.md)
-- [All iff forall mem](all-iff-forall-mem.md)
-- [Inorder Aux](inorder-aux.md)
-- [Mem inorder](mem-inorder.md)
+- [A predicate holding at every key of a binary tree](all.md)
+- [Membership in a binary tree](mem.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](all-iff-forall-mem.md)
+- [Inorder traversal of a binary tree with an accumulator](inorder-aux.md)
+- [Membership in the inorder traversal of a binary tree](mem-inorder.md)
 
 ## Sources
 

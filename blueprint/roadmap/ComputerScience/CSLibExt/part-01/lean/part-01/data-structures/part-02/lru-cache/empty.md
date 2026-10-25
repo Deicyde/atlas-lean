@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LruCache.empty
 ---
 
-# Empty
+# Empty LRU cache
 
-The empty cache.
+**Empty LRU cache.** For every capacity $c$, the empty LRU cache of capacity $c$ is the cache
+with no entries.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
+- [Least-recently-used cache](lru-cache.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.rangeSum_eq
 ---
 
-# Range Sum eq
+# Correctness of Fenwick tree range sums
 
-`rangeSum` agrees with the sum of the represented array over `[lo, hi)`,
-with both ends clamped through `List.take`. This holds for every `lo` and
-`hi`: when `hi ≤ lo` both sides are `0`.
+**Correctness of Fenwick tree range sums.** Let $t$ be a Fenwick tree representing a list
+$a = (a_0, \dots, a_{n-1})$ of elements of an additive commutative group. Then for all natural
+numbers $\mathit{lo}$ and $\mathit{hi}$, the range sum of $t$ over $[\mathit{lo}, \mathit{hi})$
+equals $\sum_{\mathit{lo} \le i < \min(\mathit{hi}, n)} a_i$; in particular it is $0$ when
+$\mathit{hi} \le \mathit{lo}$.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Valid](valid.md)
-- [Range Sum](range-sum.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Fenwick tree representing a list](valid.md)
+- [Fenwick tree range sum](range-sum.md)
 
 ## Proof depends on
 
-- [Prefix Sum](prefix-sum.md)
-- [Prefix Sum eq take sum](prefix-sum-eq-take-sum.md)
+- [Fenwick tree prefix sum](prefix-sum.md)
+- [Correctness of Fenwick tree prefix sums](prefix-sum-eq-take-sum.md)
 
 ## Sources
 

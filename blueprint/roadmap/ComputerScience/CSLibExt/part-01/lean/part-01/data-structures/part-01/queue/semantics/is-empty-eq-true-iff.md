@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.isEmpty_eq_true_iff
 ---
 
-# Is Empty eq true iff
+# The queue emptiness test matches the contents
 
-A queue reports that it is empty exactly when its FIFO contents are empty.
+**The queue emptiness test matches the contents.** For every queue $q$, the emptiness test
+of $q$ returns true if and only if the contents of $q$ are empty.
 
 ## Depends on
 
-- [Contents](contents.md)
+- [Contents of a two-list queue](contents.md)
 
 ## Sources
 

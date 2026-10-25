@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.lookup_abstraction
 ---
 
-# Lookup abstraction
+# Lookup agrees with the abstraction
 
-Table lookup agrees with lookup in its bucket-independent finite-map abstraction.
+**Lookup agrees with the abstraction.** For every valid hash table $T$ and every key $k$,
+looking up $k$ in the finite map represented by $T$ gives the same result as looking up $k$ in
+$T$.
 
 ## Depends on
 
-- [Hash Table](hash-table.md)
-- [Valid](valid.md)
-- [Abstraction](abstraction.md)
-- [Lookup](lookup.md)
+- [Hash table with separate chaining](hash-table.md)
+- [Valid hash table](valid.md)
+- [Finite map represented by a hash table](abstraction.md)
+- [Hash table lookup](lookup.md)
 
 ## Sources
 

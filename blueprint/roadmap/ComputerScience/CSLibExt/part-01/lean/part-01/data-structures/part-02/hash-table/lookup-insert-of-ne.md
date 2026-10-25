@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.lookup_insert_of_ne
 ---
 
-# Lookup insert of ne
+# Insertion does not affect other keys
 
-Inserting one key leaves lookup of every distinct key unchanged, including collisions.
+**Insertion does not affect other keys.** For every hash table $T$, all keys $k \ne k'$ and
+every value $v$, looking up $k'$ in the table obtained by inserting $k$ with value $v$ into $T$
+gives the same result as looking up $k'$ in $T$, also when $k$ and $k'$ lie in the same bucket.
 
 ## Depends on
 
-- [Hash Table](hash-table.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Hash table with separate chaining](hash-table.md)
+- [Insertion into a hash table](insert.md)
+- [Hash table lookup](lookup.md)
 
 ## Sources
 

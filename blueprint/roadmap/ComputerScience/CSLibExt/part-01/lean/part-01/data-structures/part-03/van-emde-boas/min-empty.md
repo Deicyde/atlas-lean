@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_empty
 ---
 
-# Min? empty
+# The empty van Emde Boas tree has no minimum
 
-The empty tree has no least element.
+**The empty van Emde Boas tree has no minimum.** For every $m$, the minimum query of the empty
+two-level van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$ returns no element.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Min?](min.md)
+- [Empty van Emde Boas tree](empty.md)
+- [Minimum query of a van Emde Boas tree](min.md)
 
 ## Proof depends on
 
-- [Member](member.md)
-- [Member empty](member-empty.md)
-- [Min? eq none iff](min-eq-none-iff.md)
-- [Valid empty](valid-empty.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [The empty van Emde Boas tree has no members](member-empty.md)
+- [Empty minimum query in a van Emde Boas tree](min-eq-none-iff.md)
+- [The empty van Emde Boas tree is valid](valid-empty.md)
 
 ## Sources
 

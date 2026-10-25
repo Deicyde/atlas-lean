@@ -7,26 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_of_not_adjacent
 ---
 
-# Cut Edge eq of not adjacent
+# Edge cut on a non-adjacent pair
 
-On a non-adjacent pair, `cutEdge` does not touch the forest: there is
-no `x`-`y` edge to remove, and in particular no other edge at `y` is cut.
-Only the preferred edges are reset, as for every structural operation.
+**Edge cut on a non-adjacent pair.** Let $s$ be a link-cut tree state and let $x$ and $y$ be
+adjacent in no tree of the represented forest of $s$. Then cutting the edge between $x$ and $y$
+in $s$ leaves the represented forest unchanged and makes the list of preferred edges empty.
+
+In particular, no other edge at $y$ is cut.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
-- [State](state.md)
-- [Cut Edge](cut-edge.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Link-cut tree state](state.md)
+- [Cutting an edge of a link-cut tree](cut-edge.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Cut](cut.md)
-- [Make Root](make-root.md)
-- [Adjacent B](adjacent-b.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Cutting off the subtree at a vertex](cut.md)
+- [Making a vertex the root in a link-cut tree state](make-root.md)
+- [Adjacency test](adjacent-b.md)
 
 ## Sources
 

@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_make
 ---
 
-# To List make
+# A newly created catenable heap flattens to the empty list
 
-`make` flattens to the empty list.
+**A newly created catenable heap flattens to the empty list.** The flattening of the heap
+returned by the operation that creates a catenable heap is the empty list.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
-- [To List](to-list.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Sources
 

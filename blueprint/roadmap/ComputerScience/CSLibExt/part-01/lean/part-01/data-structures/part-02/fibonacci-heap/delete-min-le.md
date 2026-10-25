@@ -7,34 +7,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_le
 ---
 
-# Delete Min le
+# Fibonacci heap minimum deletion returns a lower bound
 
-Successful deletion returns a represented globally minimal value.
+**Fibonacci heap minimum deletion returns a lower bound.** If deleting the minimum of a
+Fibonacci heap $H$ succeeds and returns the value $m$, then $m \le v$ for every element $v$
+of $H$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
-- [Delete Min](delete-min.md)
+- [Fibonacci heap](fibonacci-heap.md)
+- [Deleting the minimum of a Fibonacci heap](delete-min.md)
 - [Elements](elements-3.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
-- [Consolidate](consolidate.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Sublists of valid Fibonacci forests are valid](sublist.md)
+- [Consolidation of a forest](consolidate.md)
 - [Elements](elements-2.md)
-- [Min Root](min-root.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid append](valid-append.md)
-- [Valid consolidate](valid-consolidate.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Child valid](child-valid.md)
-- [Root le](root-le.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Minimum root of a forest](min-root.md)
+- [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
+- [Minimum-tree removal in a Fibonacci forest](remove-min-tree-spec.md)
+- [Concatenation preserves validity of Fibonacci forests](valid-append.md)
+- [Consolidation preserves validity](valid-consolidate.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [Children of a valid Fibonacci tree are valid](child-valid.md)
+- [Roots of valid Fibonacci trees are lower bounds](root-le.md)
+- [Children of a Fibonacci tree](children.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

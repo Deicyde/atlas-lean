@@ -7,9 +7,13 @@ lean: Cslib.Algorithms.Lean.swScore
 
 # The Smith–Waterman score
 
-**The Smith–Waterman score**: the maximum terminal-cell score over all pairs of
-prefixes. For `gap ≤ 0` this is the optimal local alignment score
-(`localScore_eq_swScore`); for positive gaps it can be smaller.
+**The Smith–Waterman score.** Given a substitution score $\sigma$ and a gap score $g$, the
+Smith–Waterman score of two sequences $x$ and $y$ is the maximum of the terminal Smith–Waterman
+cell $H(p, q)$ over all pairs of a prefix $p$ of $x$ and a prefix $q$ of $y$ (the empty prefixes
+included).
+
+For $g \le 0$ this is the optimal local alignment score, the maximum Needleman–Wunsch score over
+pairs of infixes; for $g > 0$ it can be smaller.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [List Max](list-max.md)
-- [Prefix Pairs](prefix-pairs.md)
-- [Sw Cell Score](sw-cell-score.md)
+- [Maximum of an integer list with floor zero](list-max.md)
+- [Pairs of prefixes](prefix-pairs.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
 
 ## Sources
 

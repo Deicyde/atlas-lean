@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.degree
 ---
 
-# Degree
+# Degree of a Fibonacci tree
 
-The stored degree of a Fibonacci tree.
+**Degree of a Fibonacci tree.** The degree of the Fibonacci tree with stored degree $d$,
+root value $r$ and list of children $c$ is the stored natural number $d$; it is not computed
+from the children.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

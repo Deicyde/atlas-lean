@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.inorder_erase
 ---
 
-# Inorder erase
+# Inorder traversal ignores colors
 
-The inorder traversal of a red-black tree is the `BinarySearchTree`
-inorder traversal of its color-erased tree, by definition.
+**Inorder traversal ignores colors.** For every red-black tree $t$, the inorder traversal of
+$t$ equals the binary-search-tree inorder traversal of the color erasure of $t$; this holds by
+definition.
 
 ## Depends on
 
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Tree](tree.md)
-- [Erase](erase.md)
-- [Inorder](inorder.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Red-black tree data type](tree.md)
+- [Color erasure](erase.md)
+- [Inorder traversal of a red-black tree](inorder.md)
 
 ## Sources
 

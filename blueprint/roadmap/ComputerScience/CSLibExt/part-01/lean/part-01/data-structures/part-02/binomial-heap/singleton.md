@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.singleton
 ---
 
-# Singleton
+# Singleton binomial heap
 
-A rank-zero tree containing one value.
+**Singleton binomial heap.** For a value $a$ in a linear order, the binomial heap whose list of
+trees consists of exactly one tree: the tree of rank $0$ with root $a$ and no children.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Array
 
-- [Fft Array](fft-array.md)
-- [Fft Array eq none iff](fft-array-eq-none-iff.md)
+- [Radix-two FFT on arrays](fft-array.md)
+- [The array FFT rejects exactly the non-powers of two](fft-array-eq-none-iff.md)

@@ -45,22 +45,32 @@ open scoped List
 
 variable {α : Type} [LinearOrder α]
 
-/-- One step, for `tails` sorted increasingly (the invariant that `patienceScan` keeps from `#[]`,
-`PatienceInv`): replace the first entry `≥ x`, or append `x` if there is none. The position comes
-from `lowerBound`, whose contract assumes a sorted array; on unsorted input it need not be the
-first entry `≥ x`. -/
+/-- **Patience step.** Given an array $t$ of tails and an element $x$ over a linear order, let $i$
+be the index returned by the lower-bound binary search for $x$ in $t$. If $i$ is less than the
+size of $t$, the step replaces the entry of $t$ at index $i$ by $x$; otherwise it appends $x$ to
+$t$. Its cost is the number of comparisons made by the binary search.
+
+When $t$ is sorted increasingly, as it stays throughout the patience scan from the empty array,
+$i$ is the first index whose entry is at least $x$, so the step replaces the first entry $\ge x$,
+or appends $x$ if there is none. On unsorted input $i$ need not be the first such index. -/
 def patienceStep (tails : Array α) (x : α) : TimeM ℕ (Array α) := do
   let i ← lowerBound tails x
   if h : i < tails.size then pure (tails.set i x h) else pure (tails.push x)
 
-/-- Process the remaining elements in order, starting from sorted `tails`. -/
+/-- **Patience scan.** Given an array of tails and a list over a linear order, the patience scan
+applies the patience step to the elements of the list in order: on the empty list it returns the
+tails unchanged, and on a list $x$ followed by $xs$ it applies the patience step for $x$ to the
+tails and then runs the patience scan of $xs$ from the result. Its cost is the total cost of the
+steps. -/
 def patienceScan : Array α → List α → TimeM ℕ (Array α)
   | tails, [] => pure tails
   | tails, x :: xs => do
       let t ← patienceStep tails x
       patienceScan t xs
 
-/-- The length of a longest strictly increasing subsequence, by patience sorting. -/
+/-- **Patience sorting.** Given a list $xs$ over a linear order, patience sorting runs the patience
+scan of $xs$ starting from the empty array of tails and returns the size of the resulting array.
+Its cost is the number of comparisons made by the scan. -/
 def patienceLength (xs : List α) : TimeM ℕ ℕ := do
   let t ← patienceScan #[] xs
   pure t.size
@@ -119,10 +129,11 @@ private theorem getElem_replaceAt_gt {t : List α} {i j : ℕ} (x : α) (hij : i
 
 /-! ## The invariant -/
 
-/-- After processing the prefix `P`, the tails `t` are strictly increasing, entry `k` is the last
-element of some strictly increasing subsequence of `P` of length `k + 1`, and every strictly
-increasing subsequence of `P` ending at `y` has length at most `t.length`, with
-`t[length - 1] ≤ y`. -/
+/-- **Patience sorting invariant.** For lists $P$ and $t = (t_0, \dots, t_{m-1})$ over a linear
+order, the invariant holds for the processed prefix $P$ and the tails $t$ when three conditions
+hold: $t$ is strictly increasing; for every $k < m$ some strictly increasing subsequence of $P$ of
+length $k + 1$ has last element $t_k$; and every nonempty strictly increasing subsequence of $P$,
+of length $\ell$ and with last element $y$, satisfies $\ell \le m$ and $t_{\ell - 1} \le y$. -/
 structure PatienceInv (P t : List α) : Prop where
   sorted : t.Pairwise (· < ·)
   witness : ∀ k (hk : k < t.length), ∃ ys, ys <+ P ∧ ys.Pairwise (· < ·) ∧
@@ -145,93 +156,10 @@ private theorem le_of_mem_of_getLast? {ys : List α} [Preorder α] {a y : α}
   · exact le_of_lt ((List.pairwise_append.1 hp).2.2 a ha y List.mem_cons_self)
   · rw [List.mem_singleton.1 ha]
 
-/-- One step preserves the invariant, given the lower-bound index `i` of `x` in `t`. -/
-private theorem PatienceInv.step {P t : List α} (h : PatienceInv P t) (x : α) {i : ℕ}
-    (hi : i ≤ t.length) (hlt : ∀ j, j < i → ∀ (hjt : j < t.length), t[j] < x)
-    (hge : ∀ j, i ≤ j → ∀ (hjt : j < t.length), x ≤ t[j]) :
-    PatienceInv (P ++ [x]) (replaceAt t i x) := by
-  have hlen := length_replaceAt x hi
-  have hsort := List.pairwise_iff_getElem.1 h.sorted
-  constructor
-  · -- strictly increasing
-    rw [List.pairwise_iff_getElem]
-    intro a b ha hb hab
-    rcases lt_trichotomy a i with hai | rfl | hai
-    · rw [getElem_replaceAt_lt x hai hi]
-      rcases lt_trichotomy b a with hba | rfl | hba
-      · omega
-      · omega
-      rcases lt_trichotomy b i with hbi | rfl | hbi
-      · rw [getElem_replaceAt_lt x hbi hi]
-        exact hsort _ _ _ _ hab
-      · rw [getElem_replaceAt_self x hi]
-        exact hlt a hai _
-      · rw [getElem_replaceAt_gt x hbi hi]
-        exact hsort _ _ _ _ hab
-    · rw [getElem_replaceAt_self x hi, getElem_replaceAt_gt x hab hi]
-      have hat : a < t.length := by omega
-      exact lt_of_le_of_lt (hge a le_rfl hat) (hsort _ _ _ _ hab)
-    · rw [getElem_replaceAt_gt x hai hi, getElem_replaceAt_gt x (hai.trans hab) hi]
-      exact hsort _ _ _ _ hab
-  · -- witnesses
-    intro k hk
-    rcases lt_trichotomy k i with hki | rfl | hki
-    · obtain ⟨ys, hs, hp, hl, hlast⟩ := h.witness k (by omega)
-      refine ⟨ys, hs.trans (List.sublist_append_left P [x]), hp, hl, ?_⟩
-      rw [getElem_replaceAt_lt x hki hi]
-      exact hlast
-    · rw [getElem_replaceAt_self x hi]
-      rcases Nat.eq_zero_or_pos k with rfl | hk0
-      · exact ⟨[x], List.singleton_sublist.2 (List.mem_append_right P (List.mem_singleton_self x)),
-          List.pairwise_singleton _ _, rfl, rfl⟩
-      · obtain ⟨ys, hs, hp, hl, hlast⟩ := h.witness (k - 1) (by omega)
-        have hlast' := hlt (k - 1) (by omega) (by omega)
-        refine ⟨ys ++ [x], hs.append (List.Sublist.refl [x]), ?_, by simp [hl]; omega, by simp⟩
-        rw [List.pairwise_append]
-        exact ⟨hp, List.pairwise_singleton _ _, fun a ha b hb => by
-          rw [List.mem_singleton.1 hb]
-          exact lt_of_le_of_lt (le_of_mem_of_getLast? hp hlast ha) hlast'⟩
-    · obtain ⟨ys, hs, hp, hl, hlast⟩ := h.witness k (by omega)
-      refine ⟨ys, hs.trans (List.sublist_append_left P [x]), hp, hl, ?_⟩
-      rw [getElem_replaceAt_gt x hki hi]
-      exact hlast
-  · -- bound
-    intro ys y hys hp hy
-    obtain ⟨r₁, r₂, rfl, h₁, h₂⟩ := List.sublist_append_iff.1 hys
-    rcases List.sublist_singleton.1 h₂ with rfl | rfl
-    · rw [List.append_nil] at hy hp ⊢
-      obtain ⟨hm, hle⟩ := h.bound r₁ y h₁ hp hy
-      refine ⟨by omega, ?_⟩
-      rcases lt_trichotomy (r₁.length - 1) i with hm' | hm' | hm'
-      · rwa [getElem_replaceAt_lt x hm' hi]
-      · simp only [hm', getElem_replaceAt_self x hi]
-        exact (hge i le_rfl (by omega)).trans (by simpa [hm'] using hle)
-      · rwa [getElem_replaceAt_gt x hm' hi]
-    · have hyx : y = x := by simpa using hy.symm
-      subst hyx
-      have hp₁ : r₁.Pairwise (· < ·) := (List.pairwise_append.1 hp).1
-      have hlt₁ : ∀ a ∈ r₁, a < y := fun a ha =>
-        (List.pairwise_append.1 hp).2.2 a ha y (List.mem_singleton_self y)
-      -- every new entry at or below `i` is at most `y`
-      have key : ∀ m (hm : m < (replaceAt t i y).length), m ≤ i → (replaceAt t i y)[m] ≤ y := by
-        intro m hm hmi
-        rcases Nat.lt_or_ge m i with hmi' | hmi'
-        · rw [getElem_replaceAt_lt y hmi' hi]
-          exact le_of_lt (hlt m hmi' _)
-        · obtain rfl : m = i := by omega
-          rw [getElem_replaceAt_self y hi]
-      rcases List.eq_nil_or_concat r₁ with rfl | ⟨r, z, rfl⟩
-      · exact ⟨by simp; omega, key _ _ (by simp)⟩
-      · rw [List.concat_eq_append] at *
-        have hz : z < y := hlt₁ z (by simp)
-        obtain ⟨hm, hle⟩ := h.bound (r ++ [z]) z h₁ hp₁ (by simp)
-        have hmi : (r ++ [z]).length - 1 < i := by
-          by_contra hcon
-          exact absurd (lt_of_le_of_lt (hge _ (by omega) hm) (lt_of_le_of_lt hle hz)) (lt_irrefl _)
-        simp only [List.length_append, List.length_singleton] at hmi
-        exact ⟨by simp; omega, key _ _ (by simp; omega)⟩
-
-/-! ## Correctness -/
+/-- **The patience scan preserves the invariant.** Let $P$ be a list and $t$ an array of tails over
+a linear order such that the patience sorting invariant holds for $P$ and the entries of $t$. Then
+for every list $xs$, the invariant holds for $P$ followed by $xs$ and the entries of the array
+returned by the patience scan of $xs$ from $t$. -/
 
 theorem PatienceInv.scan {P : List α} {tails : Array α} (h : PatienceInv P tails.toList)
     (xs : List α) : PatienceInv (P ++ xs) (patienceScan tails xs).ret.toList := by
@@ -255,7 +183,10 @@ theorem PatienceInv.scan {P : List α} {tails : Array α} (h : PatienceInv P tai
       · simpa using hlt j hj (by simpa using hjt)
       · simpa using hge j hj (by simpa using hjt)
 
-/-- Patience sorting computes the length of a longest strictly increasing subsequence. -/
+/-- **Correctness of patience sorting.** For every list $xs$ over a linear order, the value
+returned by patience sorting on $xs$ is the length of a longest strictly increasing subsequence of
+$xs$: some strictly increasing subsequence of $xs$ has this length, and no strictly increasing
+subsequence of $xs$ is longer. -/
 theorem patienceLength_spec (xs : List α) : IsLISLength xs (patienceLength xs).ret := by
   have h := patienceInv_nil.scan (tails := #[]) xs
   simp only [List.nil_append] at h
@@ -273,7 +204,9 @@ theorem patienceLength_spec (xs : List α) : IsLISLength xs (patienceLength xs).
       simp only [List.concat_eq_append, List.length_append, List.length_singleton] at hm ⊢
       omega
 
-/-- Patience sorting agrees with the quadratic dynamic program. -/
+/-- **Patience sorting agrees with the quadratic dynamic program.** For every list $xs$ over a
+linear order, the value returned by patience sorting on $xs$ equals the length of the list
+returned on $xs$ by the quadratic dynamic program for a longest strictly increasing subsequence. -/
 theorem patienceLength_eq_length_longestIncreasingSubsequence (xs : List α) :
     (patienceLength xs).ret = (longestIncreasingSubsequence xs).ret.length :=
   ((length_longestIncreasingSubsequence_eq_iff xs _).2 (patienceLength_spec xs)).symm
@@ -309,7 +242,8 @@ theorem patienceScan_le (tails : Array α) (xs : List α) :
       rw [Nat.add_mul, Nat.one_mul]
       omega
 
-/-- Patience sorting uses at most `n * ⌈log₂ (n + 1)⌉` comparisons. -/
+/-- **Comparison bound for patience sorting.** For every list $xs$ of length $n$ over a linear
+order, patience sorting on $xs$ uses at most $n \lceil \log_2 (n + 1) \rceil$ comparisons. -/
 theorem patienceLength_time_le (xs : List α) :
     (patienceLength xs).time ≤ xs.length * Nat.clog 2 (xs.length + 1) := by
   simpa [patienceLength] using (patienceScan_le #[] xs).2

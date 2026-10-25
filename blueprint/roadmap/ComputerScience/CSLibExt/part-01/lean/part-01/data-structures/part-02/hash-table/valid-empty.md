@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.valid_empty
 ---
 
-# Valid empty
+# The empty hash table is valid
 
-The empty table satisfies the canonicality invariant.
+**The empty hash table is valid.** For every hash function $h$ and every positive bucket
+count $m$, the empty hash table with hash function $h$ and $m$ buckets is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Valid hash table](valid.md)
+- [Empty hash table](empty.md)
 
 ## Proof depends on
 
-- [Hash Table](hash-table.md)
+- [Hash table with separate chaining](hash-table.md)
 
 ## Sources
 

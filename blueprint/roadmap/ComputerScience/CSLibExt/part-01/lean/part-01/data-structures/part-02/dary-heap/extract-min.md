@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractMin
 ---
 
-# Extract Min
+# Extracting the minimum of a $d$-ary min-heap
 
-Remove and return the minimum. The last entry moves to the root and
-sifts down, so extraction follows one `d`-ary child path.
+**Extracting the minimum of a $d$-ary min-heap.** For a $d$-ary min-heap $h$,
+extracting the minimum returns nothing if the storage array of $h$ is empty. Otherwise it
+returns the root entry (the entry at index $0$) together with the heap obtained from $h$ by
+removing its root: the last entry moves to the root and sifts down along a single $d$-ary
+child path.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Proof depends on
 
-- [Extract Tail](extract-tail.md)
+- [Removing the root of a $d$-ary min-heap](extract-tail.md)
 
 ## Sources
 

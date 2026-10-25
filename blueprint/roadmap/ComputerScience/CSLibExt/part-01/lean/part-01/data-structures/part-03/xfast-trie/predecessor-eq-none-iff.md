@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.predecessor_eq_none_iff
 ---
 
-# Predecessor eq none iff
+# When an x-fast trie has no predecessor
 
-The predecessor is `none` exactly when no stored key is smaller than `x`.
+**When an x-fast trie has no predecessor.** For an x-fast trie $t$ over $w$-bit keys
+and a key $x < 2^w$, the predecessor query of $x$ in $t$ returns no key if and only if
+no key stored in $t$ is smaller than $x$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Predecessor](predecessor.md)
+- [x-fast trie](xfast-trie.md)
+- [Predecessor query in an x-fast trie](predecessor.md)
 
 ## Sources
 

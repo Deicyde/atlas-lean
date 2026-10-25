@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateLeftRight
 ---
 
-# Cache Invariant rotate Left Right
+# Left-right rotation preserves the interval-tree cache invariant
 
-A left-right rotation preserves attained maximum caches.
+**Left-right rotation preserves the interval-tree cache invariant.** If an interval tree $t$
+satisfies the cache invariant, then so does the left-right double rotation of $t$, which leaves
+$t$ unchanged unless $t$ has a nonempty left subtree whose right subtree is nonempty.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Rotate Left Right](rotate-left-right.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Left-right double rotation](rotate-left-right.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Cache Invariant mk Node](cache-invariant-mk-node.md)
-- [Mk Node](mk-node.md)
+- [The interval-tree smart constructor preserves the cache invariant](cache-invariant-mk-node.md)
+- [Node construction with repaired metadata](mk-node.md)
 
 ## Sources
 

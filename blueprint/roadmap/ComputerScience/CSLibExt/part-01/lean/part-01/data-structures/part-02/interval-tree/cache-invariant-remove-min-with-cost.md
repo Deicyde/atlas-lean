@@ -7,29 +7,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_removeMinWithCost
 ---
 
-# Cache Invariant remove Min With Cost
+# Removing the minimum preserves the interval-tree cache invariant
 
-Removing the minimum preserves attained maximum caches in the returned tree.
+**Removing the minimum preserves the interval-tree cache invariant.** Let $t$ be an interval
+tree that satisfies the cache invariant. If removing the leftmost entry of $t$ succeeds and
+returns an entry, a tree $t'$ and an operation cost, then $t'$ satisfies the cache invariant.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
 
 ## Proof depends on
 
 - [Interval](interval.md)
-- [Cache Invariant mk Node](cache-invariant-mk-node.md)
-- [Cache Invariant rebalance With Cost](cache-invariant-rebalance-with-cost.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
+- [The interval-tree smart constructor preserves the cache invariant](cache-invariant-mk-node.md)
+- [Rebalancing preserves the interval-tree cache invariant](cache-invariant-rebalance-with-cost.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
 
 ## Sources
 

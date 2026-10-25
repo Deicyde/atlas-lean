@@ -7,28 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_insert
 ---
 
-# Lookup insert
+# Cuckoo lookup returns an inserted value
 
-Looking up a successfully inserted key returns the inserted value, for tables satisfying
-`Valid` and `KeyDet`. The inserted pair sits in one of the key's two slots in the result
-(`stored_insert`), and the two invariants rule out a competing value in the other slot.
+**Cuckoo lookup returns an inserted value.** Let $T$ be a cuckoo hash table with hash functions
+$h_1$ and $h_2$ that satisfies the placement invariant and stores each key with at most one value.
+If inserting (or replacing) the binding $k \mapsto v$ in $T$ with fuel $f$ succeeds and returns the
+table $T'$, then looking up $k$ in $T'$ returns $v$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Key Det](key-det.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Key determinism of a cuckoo hash table](key-det.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash insertion](insert.md)
+- [Cuckoo hash table lookup](lookup.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Insert Aux](insert-aux.md)
-- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
-- [Lookup eq some of table1](lookup-eq-some-of-table1.md)
-- [Lookup eq some of table2](lookup-eq-some-of-table2.md)
-- [Slot Has Key](slot-has-key.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Cuckoo lookup finds every stored binding](lookup-eq-some-of-stored.md)
+- [Cuckoo lookup finds a key in its first-table slot](lookup-eq-some-of-table1.md)
+- [Cuckoo lookup finds a key in its second-table slot](lookup-eq-some-of-table2.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

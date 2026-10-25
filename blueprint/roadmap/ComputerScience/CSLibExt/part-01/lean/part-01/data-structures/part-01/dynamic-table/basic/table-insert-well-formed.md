@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_wellFormed
 ---
 
-# Table Insert well Formed
+# Insertion preserves well-formedness
 
-Insertion preserves exact compact-prefix occupancy for arbitrary payload types.
+**Insertion preserves well-formedness.** If $T$ is a well-formed dynamic table and $x$ is an
+item, then the table returned by inserting $x$ into $T$ with TABLE-INSERT is well formed.
 
 ## Depends on
 
-- [Table](table.md)
-- [Well Formed](well-formed.md)
-- [Table Insert](table-insert.md)
+- [Dynamic table](table.md)
+- [Well-formed dynamic table](well-formed.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Proof depends on
 
-- [Table Insert num](table-insert-num.md)
-- [Table Insert slots](table-insert-slots.md)
+- [Insertion increases the item count by one](table-insert-num.md)
+- [Slots after an insertion](table-insert-slots.md)
 
 ## Sources
 

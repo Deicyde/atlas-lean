@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.makeBlack
 ---
 
-# Make Black
+# Blackening the root
 
-Recolor the root of a tree black.
+**Blackening the root.** Recoloring the root of a red-black tree black leaves the empty tree
+unchanged and turns a node with any color, left subtree $l$, key $k$ and right subtree $r$ into the
+black node with left subtree $l$, key $k$ and right subtree $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Color](color.md)
+- [Red-black node colors](color.md)
 
 ## Sources
 

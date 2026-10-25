@@ -15,15 +15,15 @@ followed by $x$.
 
 ## Depends on
 
-- [Table](table.md)
-- [Well Formed](well-formed.md)
+- [Dynamic table](table.md)
+- [Well-formed dynamic table](well-formed.md)
 - [Contents of a dynamic table](contents.md)
-- [Table Insert](table-insert.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Proof depends on
 
-- [Table Insert num](table-insert-num.md)
-- [Table Insert slots](table-insert-slots.md)
+- [Insertion increases the item count by one](table-insert-num.md)
+- [Slots after an insertion](table-insert-slots.md)
 
 ## Sources
 

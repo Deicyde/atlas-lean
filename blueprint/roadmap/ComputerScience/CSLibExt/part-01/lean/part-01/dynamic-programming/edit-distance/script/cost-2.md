@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditScript.cost
 ---
 
-# Cost
+# Cost of an edit script
 
-Sum of the unit costs of a script.
+**Cost of an edit script.** The cost of an edit script is the sum of the unit costs of its
+steps; the empty script has cost $0$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ Sum of the unit costs of a script.
 
 ## Proof depends on
 
-- [Edit Step](edit-step.md)
-- [Cost](cost.md)
+- [Edit step](edit-step.md)
+- [Unit cost of an edit step](cost.md)
 
 ## Sources
 

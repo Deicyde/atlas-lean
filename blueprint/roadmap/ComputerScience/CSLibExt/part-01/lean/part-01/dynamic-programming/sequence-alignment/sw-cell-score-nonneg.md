@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.swCellScore_nonneg
 ---
 
-# Sw Cell Score nonneg
+# The terminal Smith–Waterman cell is nonnegative
 
-The Smith–Waterman score is nonnegative.
+**The terminal Smith–Waterman cell is nonnegative.** For every substitution score $\sigma$,
+every gap score $g$ and all sequences $x$ and $y$, the terminal Smith–Waterman cell $H(x, y)$
+satisfies $H(x, y) \ge 0$.
 
 ## Depends on
 
-- [Sw Cell Score](sw-cell-score.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
 
 ## Proof depends on
 

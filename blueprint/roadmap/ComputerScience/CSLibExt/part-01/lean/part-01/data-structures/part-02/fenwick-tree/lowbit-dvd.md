@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_dvd
 ---
 
-# Lowbit dvd
+# The lowest set bit divides the number
 
-`lowbit n` divides `n`.
+**The lowest set bit divides the number.** For every natural number $n > 0$,
+$\operatorname{lowbit}(n)$ divides $n$, where $\operatorname{lowbit}(n)$ is the value of the
+lowest set bit of $n$ in binary.
 
 ## Depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

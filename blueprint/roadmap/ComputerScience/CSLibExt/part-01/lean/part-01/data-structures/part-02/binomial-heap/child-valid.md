@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.Valid.child_valid
 ---
 
-# Child valid
+# Children of a valid binomial tree are valid
 
-Every child of a valid tree is valid.
+**Children of a valid binomial tree are valid.** For a type $\alpha$ with a relation $\le$,
+every child of a valid binomial tree over $\alpha$ is itself a valid binomial tree.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Children of a binomial tree](children.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
-- [Rank](rank.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

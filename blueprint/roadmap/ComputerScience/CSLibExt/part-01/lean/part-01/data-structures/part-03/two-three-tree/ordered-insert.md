@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.ordered_insert
 ---
 
-# Ordered insert
+# Insertion preserves the ordering of 2-3 trees
 
-Insertion preserves the ordering invariant at the root.
+**Insertion preserves the ordering of 2-3 trees.** Let $\alpha$ be a linearly ordered type.
+If $t$ is an ordered 2-3 tree of unspecified height over $\alpha$ and $x \in \alpha$, then the
+tree obtained by inserting $x$ into $t$ is ordered.
 
 ## Depends on
 
-- [Root](root.md)
-- [Ordered](ordered-2.md)
-- [Insert](insert.md)
+- [2-3 trees of unspecified height](root.md)
+- [Ordering invariant for 2-3 trees of unspecified height](ordered-2.md)
+- [Insertion into a 2-3 tree root](insert.md)
 
 ## Proof depends on
 
-- [All](all.md)
-- [Ins Spec](ins-spec.md)
-- [Ordered](ordered.md)
-- [Overflow](overflow.md)
-- [Tree](tree.md)
-- [Flatten](flatten.md)
-- [Ins](ins.md)
-- [Ins spec](ins-spec-2.md)
-- [Ordered Insert](../ordered-insert/ordered-insert.md)
+- [Predicate on all keys of a 2-3 tree](all.md)
+- [Insertion specification for 2-3 trees](ins-spec.md)
+- [Ordering invariant for 2-3 trees](ordered.md)
+- [Insertion results for 2-3 trees](overflow.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
+- [Insertion into a height-indexed 2-3 tree](ins.md)
+- [Correctness of 2-3 tree insertion](ins-spec-2.md)
+- [Ordered insertion into a list](../ordered-insert/ordered-insert.md)
 
 ## Sources
 

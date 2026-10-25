@@ -12,11 +12,11 @@ The sum of the potential-method charges for a sequence of operations.
 
 ## Depends on
 
-- [Operation](operation.md)
+- [Queue operation](operation.md)
 
 ## Proof depends on
 
-- [Charge](charge.md)
+- [Amortized charge of a queue operation](charge.md)
 
 ## Sources
 

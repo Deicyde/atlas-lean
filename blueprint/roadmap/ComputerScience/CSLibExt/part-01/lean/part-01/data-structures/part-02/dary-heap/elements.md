@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.elements
 ---
 
-# Elements
+# Elements of a d-ary heap
 
-The multiset represented by a heap.
+**Elements of a d-ary heap.** The multiset of elements of a $d$-ary min-heap $h$ over a
+linearly ordered type is the multiset of the entries of its level-order storage array, counted
+with multiplicity.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Sources
 

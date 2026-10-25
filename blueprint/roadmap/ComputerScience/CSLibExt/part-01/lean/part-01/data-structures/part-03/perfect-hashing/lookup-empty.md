@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty perfect hash table fails
 
-Looking up any key in the empty table returns `none`.
+**Lookup in the empty perfect hash table fails.** For every primary hash function, every
+number of buckets $b > 0$, all secondary table sizes and secondary hash functions, and every
+key $k$, looking up $k$ in the empty table returns no value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty perfect hash table](empty.md)
+- [Lookup in a perfect hash table](lookup.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Lookup eq none iff](lookup-eq-none-iff.md)
-- [Not stored empty](not-stored-empty.md)
-- [Valid empty](valid-empty.md)
+- [Bindings stored in a perfect hash table](stored.md)
+- [Lookup fails exactly on unstored keys](lookup-eq-none-iff.md)
+- [The empty perfect hash table stores nothing](not-stored-empty.md)
+- [The empty perfect hash table is valid](valid-empty.md)
 
 ## Sources
 

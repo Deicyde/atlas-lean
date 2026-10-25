@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.mem_report_buildRoot_iff
 ---
 
-# Mem report build Root iff
+# Range report of a kd-tree built from the first axis
 
-Membership in the report of a tree built from axis `0`.
+**Range report of a kd-tree built from the first axis.** Let $d \ge 1$, let $P$ be a list
+of points in $\mathbb{Z}^d$ and let $lo, hi, p \in \mathbb{Z}^d$. Then $p$ occurs in the range
+report, for the box $[lo, hi]$, of the kd-tree built from $P$ by median splits starting at
+axis $0$ if and only if $p$ occurs in $P$ and $lo_i \le p_i \le hi_i$ for every coordinate
+$i$.
 
 ## Depends on
 
-- [Build Root](build-root.md)
-- [In Box](in-box.md)
-- [Report](report.md)
+- [Kd-tree construction from the first axis](build-root.md)
+- [Membership in an axis-aligned box](in-box.md)
+- [Orthogonal range report of a kd-tree](report.md)
 
 ## Proof depends on
 
-- [Mem report build iff](mem-report-build-iff.md)
+- [Range report of a built kd-tree](mem-report-build-iff.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.InStrip
 ---
 
-# In Strip
+# Strip points
 
-A strip point: within squared distance `δ` of the line `x = xmid`, on its own side.
+**Strip points.** Given reals $\delta$ and $x_{\mathrm{mid}}$, a tagged point $((x, y), s)$ lies
+in the strip when $(x - x_{\mathrm{mid}})^2 < \delta$, and moreover $x \le x_{\mathrm{mid}}$ if its
+side $s$ is left ($s$ false) and $x_{\mathrm{mid}} \le x$ if its side $s$ is right ($s$ true).
 
 ## Depends on
 
-- [Tagged](tagged.md)
+- [Side-tagged points](tagged.md)
 
 ## Sources
 

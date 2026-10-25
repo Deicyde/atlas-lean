@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.position_eq_none_iff
 ---
 
-# Position eq none iff
+# Absent identities carry no heap entry
 
-An identity is absent exactly when no heap entry carries it.
+**Absent identities carry no heap entry.** Let $q$ be an indexed min queue over a linear
+order $W$ with identities in $\{0, \dots, n-1\}$ and let $v$ be an identity. The position
+vector of $q$ records no slot for $v$ if and only if no entry of the heap array of $q$ has
+identity $v$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 
 ## Sources
 

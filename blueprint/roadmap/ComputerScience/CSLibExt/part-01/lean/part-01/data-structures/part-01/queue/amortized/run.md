@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.run
 ---
 
-# Run
+# Running a sequence of queue operations
 
-Executes queue operations from left to right, accumulating modeled cost.
+**Running a sequence of queue operations.** Running a list of queue operations from a
+queue $q$ performs the operations one step at a time from left to right, starting at $q$.
+The result is the final queue, and the cost is the sum of the costs of the individual
+steps; running the empty list returns $q$ at cost $0$.
 
 ## Depends on
 
-- [Operation](operation.md)
+- [Queue operation](operation.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One step of a queue operation](step.md)
 
 ## Sources
 

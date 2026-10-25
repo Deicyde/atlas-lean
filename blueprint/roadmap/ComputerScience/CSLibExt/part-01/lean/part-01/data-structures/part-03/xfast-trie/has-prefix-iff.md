@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.hasPrefix_iff
 ---
 
-# Has Prefix iff
+# Level probes of a valid x-fast trie
 
-Under `Valid`, the level-`l` probe succeeds exactly on shared prefixes.
+**Level probes of a valid x-fast trie.** Let $t$ be a valid x-fast trie over $w$-bit keys,
+let $0 \le l \le w$ and let $x$ be a $w$-bit key. The probe of level $l$ of $t$ at $x$ succeeds if
+and only if some key $y$ stored in $t$ has the same $l$-bit prefix as $x$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Valid](valid.md)
-- [Has Prefix](has-prefix.md)
-- [Prefix Of](prefix-of.md)
+- [x-fast trie](xfast-trie.md)
+- [Valid x-fast trie](valid.md)
+- [Level probe of an x-fast trie](has-prefix.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

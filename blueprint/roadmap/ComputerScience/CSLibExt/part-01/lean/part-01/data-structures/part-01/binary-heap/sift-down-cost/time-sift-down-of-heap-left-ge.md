@@ -17,13 +17,13 @@ $(0, 0)$: it counts no comparisons and no swaps.
 ## Depends on
 
 - [Sift-down with comparison and swap counts](sift-down.md)
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
 
 ## Proof depends on
 
 - [Sift-down from a node without children costs nothing](time-sift-down-of-smaller-child-none.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Sources
 

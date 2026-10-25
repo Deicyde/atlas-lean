@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.pairwise_augmentOne
 ---
 
-# Pairwise augment One
+# One augmentation step yields a sorted list
 
-An augmented catalog is sorted.
+**One augmentation step yields a sorted list.** For any lists $c$ and $a$ over a linear order,
+sorted or not, the augmented catalog obtained by merging $c$ with the sample of $a$ is sorted in
+nondecreasing order.
 
 ## Depends on
 
-- [Augment One](augment-one.md)
+- [Augmenting a catalog by the next one](augment-one.md)
 
 ## Proof depends on
 
-- [Pairwise sorted Merge](pairwise-sorted-merge.md)
-- [Sample](sample.md)
+- [A sorted merge is sorted](pairwise-sorted-merge.md)
+- [Sample of a catalog](sample.md)
 
 ## Sources
 

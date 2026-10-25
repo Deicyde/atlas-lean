@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.valid_buildRoot
 ---
 
-# Valid build Root
+# Kd-trees built from axis 0 satisfy the kd invariant
 
-A tree built from axis `0` satisfies the kd invariant.
+**Kd-trees built from axis 0 satisfy the kd invariant.** For $d \ge 1$ and every list of
+points of $\mathbb{Z}^d$, the kd-tree built from the list by median splits starting at axis $0$
+satisfies the kd invariant.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Build Root](build-root.md)
+- [Kd invariant](valid.md)
+- [Kd-tree construction from the first axis](build-root.md)
 
 ## Proof depends on
 
-- [Valid build](valid-build.md)
+- [Median-split kd-trees satisfy the kd invariant](valid-build.md)
 
 ## Sources
 

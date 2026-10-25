@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.contents_mkReps
 ---
 
-# Contents mk Reps
+# Keys of the trie of representatives
 
-The representative trie built from a list stores exactly that list's keys.
+**Keys of the trie of representatives.** For every list $L$ of $w$-bit keys, the x-fast
+trie obtained by inserting the elements of $L$ one by one into the empty x-fast trie stores
+exactly the elements of $L$: its key set is the set of elements of $L$.
 
 ## Depends on
 
-- [Mk Reps](mk-reps.md)
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Representative trie of a list](mk-reps.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
 
 ## Proof depends on
 
-- [Empty](../../part-03/xfast-trie/empty.md)
-- [Insert](../../part-03/xfast-trie/insert.md)
+- [The empty x-fast trie](../../part-03/xfast-trie/empty.md)
+- [Insertion into an x-fast trie](../../part-03/xfast-trie/insert.md)
 
 ## Sources
 

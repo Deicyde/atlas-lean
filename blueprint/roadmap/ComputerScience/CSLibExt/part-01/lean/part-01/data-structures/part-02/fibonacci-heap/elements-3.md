@@ -12,12 +12,12 @@ The multiset represented by a Fibonacci heap.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
 - [Elements](elements-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.Valid.insert
 ---
 
-# Insert
+# Insertion preserves validity of radix tries
 
-Insertion preserves the radix-trie invariant.
+**Insertion preserves validity of radix tries.** If $t$ is a valid radix trie, then for every
+key $k$ and value $v$, the trie obtained by inserting $v$ at $k$ in $t$ is valid.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Radix trie](radix-trie.md)
+- [Valid radix trie](valid.md)
+- [Insertion into a radix trie](insert.md)
 
 ## Proof depends on
 
-- [Root Compact](root-compact.md)
-- [Common Prefix](common-prefix.md)
-- [Common Prefix drop spec](common-prefix-drop-spec.md)
-- [Find Edge](find-edge.md)
-- [Replace Edge](replace-edge.md)
+- [Path-compressed root](root-compact.md)
+- [Longest common prefix](common-prefix.md)
+- [Longest common prefix in terms of dropped remainders](common-prefix-drop-spec.md)
+- [Edge search by first symbol](find-edge.md)
+- [Replacing the child edge for a symbol](replace-edge.md)
 
 ## Sources
 

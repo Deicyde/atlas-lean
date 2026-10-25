@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.root_mem_elements
 ---
 
-# Root mem elements
+# The root of a binomial tree is one of its elements
 
-A tree's root occurs in its represented multiset.
+**The root of a binomial tree is one of its elements.** For every binomial tree $t$, the root
+of $t$ occurs in the multiset represented by $t$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Binomial tree](binomial-tree.md)
+- [Elements of a binomial tree](elements.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

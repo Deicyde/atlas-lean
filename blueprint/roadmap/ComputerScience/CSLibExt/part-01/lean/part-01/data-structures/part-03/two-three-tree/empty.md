@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.empty
 ---
 
-# Empty
+# Empty 2-3 tree
 
-The empty 2-3 tree.
+**Empty 2-3 tree.** The empty 2-3 tree is the root of height $0$ whose underlying tree is
+the leaf.
 
 ## Depends on
 
-- [Root](root.md)
+- [2-3 trees of unspecified height](root.md)
 
 ## Proof depends on
 
-- [Tree](tree.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Sources
 

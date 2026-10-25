@@ -5,21 +5,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.hasPrefix
 ---
 
-# Has Prefix
+# Prefix search in a radix trie
 
-Whether some key stored in the trie extends `p`. The walk follows the edge whose label
-starts with the pattern's head symbol; it succeeds when the pattern ends inside that
-edge (with a stored key below) or at a node reached by consuming whole edges.
+**Prefix search in a radix trie.** For a radix trie $t$ and a pattern $p$ (a list of symbols),
+prefix search returns a boolean computed as follows. If $p$ is empty, it is true exactly when
+$t$ stores at least one key. Otherwise let $c$ be the first symbol of $p$ and take the first
+child edge of the root whose label starts with $c$; if there is none, the answer is false. If
+that edge has label $\ell$ and subtree $s$, then: when $p$ is a prefix of $\ell$, the answer is
+whether $s$ stores at least one key; otherwise, when $\ell$ is a prefix of $p$, the search
+continues in $s$ with $p$ minus its first $|\ell|$ symbols; otherwise the answer is false.
+
+On valid radix tries this decides whether some stored key has $p$ as a prefix.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
+- [Radix trie](radix-trie.md)
 
 ## Proof depends on
 
-- [Common Prefix](common-prefix.md)
-- [Find Edge](find-edge.md)
-- [Keys](keys.md)
+- [Longest common prefix](common-prefix.md)
+- [Edge search by first symbol](find-edge.md)
+- [Stored keys of a radix trie](keys.md)
 
 ## Sources
 

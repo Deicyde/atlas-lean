@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.alignmentScore_reverse
 ---
 
-# Alignment Score reverse
+# Reversal preserves alignment score
 
-Reversing an alignment preserves its score.
+**Reversal preserves alignment score.** For every substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$, gap score $g \in \mathbb{Z}$ and alignment $A$, the
+alignment obtained by listing the columns of $A$ in reverse order has the same score as $A$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ Reversing an alignment preserves its score.
 
 ## Proof depends on
 
-- [Column Score](column-score.md)
+- [Score of an alignment column](column-score.md)
 
 ## Sources
 

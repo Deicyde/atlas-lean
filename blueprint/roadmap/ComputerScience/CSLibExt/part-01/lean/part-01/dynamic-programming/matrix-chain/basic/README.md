@@ -10,15 +10,15 @@ navigation: module
 
 ## Parenthesization
 
-- [Matrix Indices](matrix-indices.md)
-- [Rows](rows.md)
-- [Cols](cols.md)
-- [Dimension Compatible](dimension-compatible.md)
-- [Is Valid](is-valid.md)
+- [Leaf indices of a parenthesization](matrix-indices.md)
+- [Row count of a parenthesization](rows.md)
+- [Column count of a parenthesization](cols.md)
+- [Dimension-compatible parenthesization](dimension-compatible.md)
+- [Valid parenthesization](is-valid.md)
 
 ## Matrix Chain
 
-- [Scalar Multiplication Cost](scalar-multiplication-cost.md)
-- [Cost](cost.md)
-- [Total](total.md)
-- [Result](result.md)
+- [Scalar multiplication count of a parenthesization](scalar-multiplication-cost.md)
+- [Matrix-chain cost](cost.md)
+- [Total matrix-chain cost](total.md)
+- [Matrix-chain result](result.md)

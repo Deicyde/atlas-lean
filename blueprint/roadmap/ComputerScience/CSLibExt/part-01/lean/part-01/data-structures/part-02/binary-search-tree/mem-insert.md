@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_insert
 ---
 
-# Mem insert
+# Membership after insertion into a binary search tree
 
-Inserting a key adds exactly that key to structural membership.
+**Membership after insertion into a binary search tree.** Let the keys be linearly ordered.
+For all keys $x, y$ and every binary tree $T$, $y$ lies in the tree obtained by inserting $x$
+into $T$ if and only if $y = x$ or $y$ lies in $T$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Insert](insert.md)
+- [Membership in a binary tree](mem.md)
+- [Insertion into a binary search tree](insert.md)
 
 ## Sources
 

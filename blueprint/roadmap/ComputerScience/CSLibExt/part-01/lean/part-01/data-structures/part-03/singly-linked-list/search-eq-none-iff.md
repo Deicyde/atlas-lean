@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.search_eq_none_iff
 ---
 
-# Search eq none iff
+# Search fails exactly when no represented node has the target payload
 
-Search fails exactly when no represented payload equals the target.
+**Search fails exactly when no represented node has the target payload.** If a node pool
+represents, from the head $h$, the list of distinct identities $\ell$, then for every target
+payload $t$ the search for $t$ from $h$ returns nothing if and only if no identity in $\ell$ has
+a cell holding a node with payload $t$.
 
 ## Depends on
 
-- [Node](node.md)
-- [Represents](represents.md)
-- [Search](search.md)
+- [Singly linked list node](node.md)
+- [Store representing a singly linked list](represents.md)
+- [Search in a singly-linked list](search.md)
 
 ## Proof depends on
 
-- [Search eq find?](search-eq-find.md)
+- [Search finds the first matching represented identity](search-eq-find.md)
 
 ## Sources
 

@@ -7,31 +7,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.extractMin_time
 ---
 
-# Extract Min time
+# Logarithmic event bound for indexed-queue extract-min
 
-Each selected EXTRACT-MIN coordinate has the frozen logarithmic bound.
+**Logarithmic event bound for indexed-queue extract-min.** Let $q$ be an indexed minimum
+queue whose heap has $s$ entries. For each of the five counted events (comparisons, swaps,
+position reads, position writes, and entry appends, pops or replacements), the number of times
+that event occurs when extracting the minimum of $q$ is at most
+$20 (\lfloor \log_2 (s + 1) \rfloor + 1)$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Extract Min](../basic/extract-min.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Extract-min in an indexed minimum queue](../basic/extract-min.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 
 ## Proof depends on
 
-- [Heap Ordered](../../../part-02/binary-heap/heap-ordered.md)
-- [Empty](../../../part-02/binary-heap/empty.md)
-- [Extract Tail](../../../part-02/binary-heap/extract-tail.md)
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
-- [Move Last To Root](../../../part-02/binary-heap/move-last-to-root.md)
-- [Move Last To Root sift Down Ready](../../../part-02/binary-heap/move-last-to-root-sift-down-ready.md)
-- [Sift Down](../../../part-02/binary-heap/sift-down.md)
-- [Sift Down ordered](../../../part-02/binary-heap/sift-down-ordered.md)
-- [Sift Down perm](../../../part-02/binary-heap/sift-down-perm.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [Heap order on a level-order array](../../../part-02/binary-heap/heap-ordered.md)
+- [Empty binary min-heap](../../../part-02/binary-heap/empty.md)
+- [Removing the root of a nonempty binary min-heap](../../../part-02/binary-heap/extract-tail.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
+- [Moving the last entry to the root](../../../part-02/binary-heap/move-last-to-root.md)
+- [Moving the last entry to the root prepares a sift-down](../../../part-02/binary-heap/move-last-to-root-sift-down-ready.md)
+- [Sift-down](../../../part-02/binary-heap/sift-down.md)
+- [Sift-down restores heap order](../../../part-02/binary-heap/sift-down-ordered.md)
+- [Binary-heap sift-down permutes the array](../../../part-02/binary-heap/sift-down-perm.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

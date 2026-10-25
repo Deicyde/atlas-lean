@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.Valid.insert
 ---
 
-# Insert
+# Insertion preserves trie validity
 
-Insertion preserves the trie invariant.
+**Insertion preserves trie validity.** If a trie $T$ is valid, then for every key $k$ (a list
+of letters) and every value $v$, the trie obtained by inserting $v$ at $k$ in $T$ is valid.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Valid trie](valid.md)
+- [Trie insertion](insert.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
+- [Empty trie](empty.md)
 
 ## Sources
 

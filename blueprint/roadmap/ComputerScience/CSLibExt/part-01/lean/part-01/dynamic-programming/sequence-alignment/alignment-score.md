@@ -15,7 +15,7 @@ The score of an alignment: the sum of its column scores.
 
 ## Proof depends on
 
-- [Column Score](column-score.md)
+- [Score of an alignment column](column-score.md)
 
 ## Sources
 

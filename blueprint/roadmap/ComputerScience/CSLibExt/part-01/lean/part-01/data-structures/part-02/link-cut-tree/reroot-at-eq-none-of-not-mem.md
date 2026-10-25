@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.rerootAt_eq_none_of_not_mem
 ---
 
-# Reroot At eq none of not mem
+# Rerooting fails at an absent vertex
 
-Rerooting at a vertex that does not occur fails.
+**Rerooting fails at an absent vertex.** For every rooted ordered tree $T$ and every vertex $x$
+that is not a vertex of $T$, rerooting $T$ at $x$ is undefined (it returns no tree).
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Reroot At](reroot-at.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Graft At](graft-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Sources
 

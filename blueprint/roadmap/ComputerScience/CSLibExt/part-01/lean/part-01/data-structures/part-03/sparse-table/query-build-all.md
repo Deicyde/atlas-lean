@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.query_build_all
 ---
 
-# Query build all
+# Whole-range sparse table query
 
-A query over the whole array is `List.min?` of the whole list.
+**Whole-range sparse table query.** For every list $a$ of length $n$ over a linearly ordered
+type, the range-minimum query over $[0, n)$ on the sparse table built from $a$ returns the
+minimum of $a$ (none when $a$ is empty).
 
 ## Depends on
 
-- [Build](build.md)
-- [Query](query.md)
+- [Building a sparse table](build.md)
+- [Sparse table range-minimum query](query.md)
 
 ## Proof depends on
 
-- [Sparse Table](sparse-table.md)
-- [Valid](valid.md)
-- [Build valid](build-valid.md)
-- [Entry](entry.md)
-- [Entry eq of valid](entry-eq-of-valid.md)
-- [Level](level.md)
-- [Omin](omin.md)
-- [Omin self](omin-self.md)
+- [Sparse table](sparse-table.md)
+- [Valid sparse table](valid.md)
+- [Built sparse tables are valid](build-valid.md)
+- [Sparse-table entries](entry.md)
+- [Rows of a valid sparse table are its levels](entry-eq-of-valid.md)
+- [Levels of a sparse table](level.md)
+- [Option minimum](omin.md)
+- [Idempotence of the option minimum](omin-self.md)
 
 ## Sources
 

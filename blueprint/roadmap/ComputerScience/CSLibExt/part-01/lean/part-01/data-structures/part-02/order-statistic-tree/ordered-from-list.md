@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.ordered_fromList
 ---
 
-# Ordered from List
+# Order-statistic trees built from lists are ordered
 
-Trees built by insertion satisfy the prerequisite BST ordering invariant.
+**Order-statistic trees built from lists are ordered.** For every list $l$ of keys from a
+linearly ordered type, the order-statistic tree built from $l$ by successive insertion is
+ordered: after its cached sizes are erased, at every node each key of the left subtree is
+strictly smaller than the node's key and each key of the right subtree is strictly larger.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [From List](from-list.md)
+- [Ordered order-statistic tree](ordered.md)
+- [Order-statistic tree built from a list](from-list.md)
 
 ## Proof depends on
 
-- [Ordered insert](ordered-insert.md)
+- [Insertion preserves ordering of order-statistic trees](ordered-insert.md)
 
 ## Sources
 

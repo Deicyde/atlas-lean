@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.gapRunCost
 ---
 
-# Gap Run Cost
+# Cost of a gap run
 
-The cost of a gap run of length `k` in one direction, given the previous state:
-continuing an open run costs `k * gapExtend`; otherwise a fresh run costs
-`gapOpen + (k - 1) * gapExtend` (and `0` for `k = 0`).
+**Cost of a gap run.** Given an integer gap-open cost $o$, an integer gap-extend cost $e$, gap
+states $p$ (of the column before the run) and $c$ (of the run's columns) and a length
+$k \in \mathbb{N}$, the cost of a run of $k$ gap columns is $k e$ if $p = c$ (the run continues
+an open run); otherwise it is $0$ for $k = 0$ and $o + (k - 1) e$ for $k \ge 1$.
 
 ## Depends on
 
-- [Gap State](gap-state.md)
+- [Gap states](gap-state.md)
 
 ## Sources
 

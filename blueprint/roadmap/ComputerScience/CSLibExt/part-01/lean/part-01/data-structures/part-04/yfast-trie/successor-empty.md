@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_empty
 ---
 
-# Successor empty
+# The empty grouped y-fast trie has no successors
 
-Nothing succeeds in the empty trie.
+**The empty grouped y-fast trie has no successors.** For every key $x$, the successor query
+for $x$ in the empty grouped y-fast trie returns nothing.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Successor](successor.md)
+- [The empty grouped y-fast trie](empty.md)
+- [Successor query in a grouped y-fast trie](successor.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
-- [Successor eq none iff](successor-eq-none-iff.md)
-- [Valid empty](valid-empty.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Successor query fails exactly when no larger key is stored](successor-eq-none-iff.md)
+- [The empty grouped y-fast trie is valid](valid-empty.md)
 
 ## Sources
 

@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.closestPair_eq_bruteMin
 ---
 
-# Closest Pair eq brute Min
+# Divide and conquer agrees with brute force
 
-Divide and conquer agrees with the brute-force scan.
+**Divide and conquer agrees with brute force.** Let $K$ be a linearly ordered field. For every
+list of points in $K^2$, the divide-and-conquer closest-pair algorithm returns the same value as
+the brute-force scan (their costs may differ).
 
 ## Depends on
 
-- [Brute Min](brute-min.md)
-- [Closest Pair](closest-pair.md)
+- [Brute-force closest pair](brute-min.md)
+- [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Proof depends on
 
 - [Is Answer](is-answer.md)
-- [Closest Pair is Answer](closest-pair-is-answer.md)
+- [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
 - [Dist2](dist2.md)
 - [Min Dist From](min-dist-from.md)
 - [Min Dist From spec](min-dist-from-spec.md)
-- [Omin](../../data-structures/part-03/sparse-table/omin.md)
+- [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State
 ---
 
-# State
+# Link-cut tree state
 
-A link-cut tree state: the represented forest, together with the current
-preferred (solid) edges. Each preferred edge is directed from a node to its
-preferred child in the represented forest; the preferred-path decomposition
-`paths` is derived from the edge list as the maximal solid chains in each
-represented tree (`treePaths`). `preferred = []` means every edge is dashed,
-so every vertex is its own singleton path.
+**Link-cut tree state.** A state of a link-cut tree over a vertex type $V$ consists of the
+represented forest, a list of rooted ordered trees with vertices in $V$, and a list of preferred
+(solid) edges, each a pair $(u, v)$ of vertices meant as the edge from a node $u$ to its preferred
+child $v$ in the represented forest; the structure itself does not require these pairs to be
+edges of the forest. The preferred-path decomposition is derived from the preferred edges as the
+maximal solid chains in each represented tree. With no preferred edges, every edge is dashed
+and every vertex is its own singleton path.
 
 ## Depends on
 

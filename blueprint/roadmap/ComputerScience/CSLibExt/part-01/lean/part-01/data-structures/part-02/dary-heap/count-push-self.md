@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.count_push_self
 ---
 
-# Count push self
+# Insertion into a $d$-ary heap raises the multiplicity by one
 
-Inserting a value raises its multiplicity by one.
+**Insertion into a $d$-ary heap raises the multiplicity by one.** For every $d$-ary min-heap
+$h$ over a linearly ordered type and every value $x$, the multiplicity of $x$ among the elements
+of the heap obtained by inserting $x$ into $h$ is one more than its multiplicity among the
+elements of $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
-- [Push](push.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
+- [Insertion into a $d$-ary heap](push.md)
 
 ## Proof depends on
 
-- [Elements push](elements-push.md)
+- [Insertion into a d-ary heap adds one occurrence](elements-push.md)
 
 ## Sources
 

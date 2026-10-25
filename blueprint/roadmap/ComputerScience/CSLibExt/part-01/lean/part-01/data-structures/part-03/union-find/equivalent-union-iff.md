@@ -7,20 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.equivalent_union_iff
 ---
 
-# Equivalent union iff
+# Equivalence after a union
 
-Exact partition semantics: only the two selected old classes are merged.
+**Equivalence after a union.** Let $F$ be a parent forest and let $x, y, a, b$ be vertices of
+$F$. Then $a$ and $b$ are equivalent in the forest obtained from $F$ by the union of $x$ and $y$
+if and only if $a$ and $b$ are equivalent in $F$, or $a$ is equivalent to $x$ and $b$ is
+equivalent to $y$ in $F$, or $a$ is equivalent to $y$ and $b$ is equivalent to $x$ in $F$.
+
+Thus the union merges exactly the old classes of $x$ and $y$.
 
 ## Depends on
 
-- [Equivalent](equivalent.md)
-- [Forest](forest.md)
-- [Union](union.md)
+- [Equivalent vertices of a parent forest](equivalent.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Union in a union-find forest](union.md)
 
 ## Proof depends on
 
-- [Find](find.md)
-- [Find union](find-union.md)
+- [Root of a vertex in a parent forest](find.md)
+- [Representatives after a union](find-union.md)
 
 ## Sources
 

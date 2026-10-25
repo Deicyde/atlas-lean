@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.inducedPair
 ---
 
-# Induced Pair
+# Induced pairwise alignment
 
-The induced pairwise alignment of rows `i` and `j`: the two rows, with
-columns that are gaps in both rows dropped.
+**Induced pairwise alignment.** Given a multiple alignment $A$ of $k$ sequences and rows
+$i, j < k$, the pairwise alignment induced by $A$ on rows $i$ and $j$ is obtained by keeping, for
+each column $c$ of $A$ in order, the pair $(c_i, c_j)$, and dropping the columns in which both
+$c_i$ and $c_j$ are gaps.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [MSAlignment](msalignment.md)
+- [Multiple alignments](msalignment.md)
 
 ## Sources
 

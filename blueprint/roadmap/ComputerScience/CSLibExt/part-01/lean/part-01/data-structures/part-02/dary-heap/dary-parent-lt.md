@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.daryParent_lt
 ---
 
-# Dary Parent lt
+# A $d$-ary parent has a smaller index
 
-The parent of a nonroot node has a strictly smaller index.
+**A $d$-ary parent has a smaller index.** Let $d$ and $i$ be natural numbers with $d \ge 2$ and
+$i > 0$. Then the $d$-ary parent of $i$ is strictly less than $i$.
 
 ## Depends on
 
-- [Dary Parent](dary-parent.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
 
 ## Sources
 

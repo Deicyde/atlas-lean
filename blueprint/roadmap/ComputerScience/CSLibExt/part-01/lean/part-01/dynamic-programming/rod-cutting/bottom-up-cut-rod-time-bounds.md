@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time_bounds
 ---
 
-# Bottom Up Cut Rod time bounds
+# Bottom-up rod cutting takes quadratic time
 
-Matching quadratic bounds in the stated candidate-evaluation cost model.
+**Bottom-up rod cutting takes quadratic time.** For prices $p = (p_1, \dots, p_n)$ in an
+additive commutative monoid with a linear order, the cost $T$ of bottom-up rod cutting on $p$, the
+number of first-piece candidates it evaluates, satisfies $n^2 \le 2T$ and $T \le n^2$.
 
 ## Depends on
 
-- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Bottom-up rod cutting](bottom-up-cut-rod.md)
 
 ## Proof depends on
 
-- [Bottom Up Cut Rod time sum](bottom-up-cut-rod-time-sum.md)
-- [Bottom Up Cut Rod time twice](bottom-up-cut-rod-time-twice.md)
+- [Cost of bottom-up rod cutting as a sum over rows](bottom-up-cut-rod-time-sum.md)
+- [Twice the cost of bottom-up rod cutting](bottom-up-cut-rod-time-twice.md)
 
 ## Sources
 

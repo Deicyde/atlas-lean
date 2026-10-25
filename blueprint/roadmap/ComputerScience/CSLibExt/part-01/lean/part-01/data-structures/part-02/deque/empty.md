@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Deque.empty
 ---
 
-# Empty
+# The empty deque
 
-The deque containing no elements.
+**The empty deque.** The empty deque is the deque whose front list and back list are both
+empty.
 
 ## Depends on
 
-- [Deque](deque.md)
+- [Two-list deque](deque.md)
 
 ## Sources
 

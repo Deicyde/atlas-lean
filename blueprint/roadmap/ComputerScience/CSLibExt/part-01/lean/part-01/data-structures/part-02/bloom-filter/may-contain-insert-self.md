@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_insert_self
 ---
 
-# May Contain insert self
+# An inserted element is reported present
 
-No false negatives: an element is reported present immediately after its own insertion.
+**An inserted element is reported present.** For every Bloom filter $F$ and element $x$, the
+filter obtained by inserting $x$ into $F$ reports that $x$ may be present.
 
 ## Depends on
 
-- [Bloom Filter](bloom-filter.md)
-- [Insert](insert.md)
-- [May Contain](may-contain.md)
+- [Bloom filter](bloom-filter.md)
+- [Bloom filter insertion](insert.md)
+- [Bloom filter membership query](may-contain.md)
 
 ## Proof depends on
 
-- [Bit insert iff](bit-insert-iff.md)
-- [May Contain iff](may-contain-iff.md)
+- [Bits set by an insertion](bit-insert-iff.md)
+- [Membership query in terms of bits](may-contain-iff.md)
 
 ## Sources
 

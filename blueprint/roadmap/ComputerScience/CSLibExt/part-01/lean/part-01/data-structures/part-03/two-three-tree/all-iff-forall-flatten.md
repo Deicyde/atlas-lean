@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.all_iff_forall_flatten
 ---
 
-# All iff forall flatten
+# All-keys predicate agrees with the flattening on 2-3 trees
 
-`All` is equivalent to universal quantification over the flattening.
+**All-keys predicate agrees with the flattening on 2-3 trees.** For every predicate $p$
+on keys and every 2-3 tree $t$ of height $h$, every key stored at a node of $t$ satisfies $p$
+if and only if every element of the inorder flattening of $t$ satisfies $p$.
 
 ## Depends on
 
-- [All](all.md)
-- [Tree](tree.md)
-- [Flatten](flatten.md)
+- [Predicate on all keys of a 2-3 tree](all.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
 
 ## Proof depends on
 
-- [Mem](mem.md)
-- [All iff forall mem](all-iff-forall-mem.md)
-- [Mem flatten](mem-flatten.md)
+- [Membership in a 2-3 tree](mem.md)
+- [All-keys predicate agrees with membership on 2-3 trees](all-iff-forall-mem.md)
+- [The inorder traversal lists exactly the keys of a 2-3 tree](mem-flatten.md)
 
 ## Sources
 

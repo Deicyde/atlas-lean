@@ -6,20 +6,24 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.CacheInvariant
 ---
 
-# Cache Invariant
+# Cache invariant of an interval tree
 
-Every cached field is exact, recursively: the cached maximum is an
-attained upper bound, and the stored height and size equal the recursive
-height (`max` of the child heights plus one) and size (sum of the child
-sizes plus one) of the subtree.
+**Cache invariant of an interval tree.** An interval tree satisfies the cache invariant when
+every cached field is exact, recursively. The empty tree satisfies it. A node with stored height
+$h$, stored size $s$, stored maximum $m$, left subtree $L$, entry $e$ and right subtree $R$
+satisfies it when $L$ and $R$ satisfy it, $m$ is at least the high endpoint of every entry of
+$L$, of $e$ and of every entry of $R$, $m$ equals the high endpoint of one of these entries,
+$h = \max(\operatorname{height} L, \operatorname{height} R) + 1$ and
+$s = \operatorname{size} L + \operatorname{size} R + 1$. Here the height and size of a subtree
+are its stored fields, and the empty tree has height and size $0$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
 
 ## Sources

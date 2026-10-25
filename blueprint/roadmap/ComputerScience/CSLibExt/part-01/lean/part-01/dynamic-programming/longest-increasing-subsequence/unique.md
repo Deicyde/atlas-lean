@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsLISLength.unique
 ---
 
-# Unique
+# Uniqueness of the longest increasing subsequence length
 
-The longest increasing subsequence length is unique.
+**Uniqueness of the longest increasing subsequence length.** For every list $xs$ of elements
+of a preorder and all natural numbers $k$ and $k'$, if both $k$ and $k'$ are the length of a
+longest strictly increasing subsequence of $xs$, then $k = k'$.
 
 ## Depends on
 
-- [Is LISLength](is-lislength.md)
+- [Length of a longest increasing subsequence](is-lislength.md)
 
 ## Sources
 

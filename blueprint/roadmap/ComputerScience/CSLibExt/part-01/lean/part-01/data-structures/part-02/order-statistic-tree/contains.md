@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.contains
 ---
 
-# Contains
+# Search in an order-statistic tree
 
-Comparison search navigates one branch.
+**Search in an order-statistic tree.** Let $\alpha$ be a linearly ordered type and
+$q \in \alpha$. Searching for $q$ in the empty tree returns false. At a node with key $k$, the
+search continues in the left subtree if $q < k$, continues in the right subtree if $k < q$, and
+returns true otherwise.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Order-statistic tree node entry](entry.md)
 
 ## Sources
 

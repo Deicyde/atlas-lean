@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.normalizedArity_valid
 ---
 
-# Normalized Arity valid
+# Normalized arities are at least two
 
-Normalization always produces a valid heap arity.
+**Normalized arities are at least two.** For every natural number $r$, the normalized arity
+$\max(2, r)$ of $r$ is at least $2$.
 
 ## Depends on
 
-- [Normalized Arity](normalized-arity.md)
+- [Normalized heap arity](normalized-arity.md)
 
 ## Sources
 

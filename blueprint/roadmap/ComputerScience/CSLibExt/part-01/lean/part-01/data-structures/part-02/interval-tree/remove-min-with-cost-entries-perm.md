@@ -7,26 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost_entries_perm
 ---
 
-# Remove Min With Cost entries perm
+# Removing the minimum preserves the other entries
 
-Removing the minimum permutes the entry list by deleting exactly
-that entry from the front of the remaining entries.
+**Removing the minimum preserves the other entries.** If removing the leftmost entry of a tree
+$T$ returns an entry $m$, a tree $T'$ and a cost, then the list consisting of $m$ followed by the
+in-order entries of $T'$ is a permutation of the in-order entries of $T$.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
 
 ## Proof depends on
 
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
 
 ## Sources
 

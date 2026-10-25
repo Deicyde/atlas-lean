@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.mem_alignments
 ---
 
-# Mem alignments
+# The enumerated alignments are exactly the valid ones
 
-Membership in the alignment list is exactly validity.
+**The enumerated alignments are exactly the valid ones.** For sequences $x$ and $y$ and a
+list $A$ of columns, $A$ occurs in the enumerated list of all alignments of $x$ and $y$ if and
+only if $A$ is an alignment of $x$ and $y$.
 
 ## Depends on
 
 - [Alignment](alignment.md)
-- [Is Alignment](is-alignment.md)
-- [Alignments](alignments.md)
+- [Valid alignment of two sequences](is-alignment.md)
+- [The list of all alignments](alignments.md)
 
 ## Proof depends on
 
-- [Alignments Aux](alignments-aux.md)
+- [Fuel-bounded enumeration of alignments](alignments-aux.md)
 
 ## Sources
 

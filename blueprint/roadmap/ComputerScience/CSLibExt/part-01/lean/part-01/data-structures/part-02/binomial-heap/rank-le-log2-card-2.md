@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.rank_le_log2_card
 ---
 
-# Rank le log2 card
+# Tree ranks in a binomial heap are logarithmic
 
-Every heap tree has rank at most the binary logarithm of the heap cardinality.
+**Tree ranks in a binomial heap are logarithmic.** Every tree in a binomial heap holding $n$
+elements, counted with multiplicity, has rank at most $\lfloor \log_2 n \rfloor$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Binomial Tree](binomial-tree.md)
-- [Rank](rank.md)
+- [Binomial tree](binomial-tree.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Member rank le log2 card](member-rank-le-log2-card.md)
+- [Valid binomial forest](valid-2.md)
+- [Tree ranks in a valid forest are logarithmic](member-rank-le-log2-card.md)
 
 ## Sources
 

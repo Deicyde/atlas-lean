@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.height_eq
 ---
 
-# Height eq
+# Computed height equals the height index
 
-The computed height of a tree agrees with its height index.
+**Computed height equals the height index.** For every 2-3 tree $t$ with height index $h$,
+the height of $t$ computed along its leftmost spine equals $h$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Height](height.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Height of a 2-3 tree](height.md)
 
 ## Sources
 

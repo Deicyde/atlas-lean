@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_union
 ---
 
-# To Multiset union
+# Union adds the multisets of elements
 
-The multiset of `union h₁ h₂` is the sum of the multisets of `h₁` and `h₂`.
+**Union adds the multisets of elements.** For all catenable heaps $h_1$ and $h_2$, the multiset
+of elements of the heap returned by the union of $h_1$ and $h_2$ is the multiset sum of the
+multisets of elements of $h_1$ and $h_2$ (multiplicities add).
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To Multiset](to-multiset.md)
-- [Union](union.md)
+- [Catenable heap](catenable-heap.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
+- [Union of catenable heaps](union.md)
 
 ## Proof depends on
 
-- [To Multiset join](to-multiset-join.md)
+- [Multiset of a join node](to-multiset-join.md)
 
 ## Sources
 

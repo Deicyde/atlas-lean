@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_cut_makeRoot_of_adjacent
 ---
 
-# Cut Edge eq cut make Root of adjacent
+# Edge cut on an adjacent pair
 
-On an adjacent pair, `cutEdge` is the textbook composite `cut y`
-after `makeRoot x`.
+**Edge cut on an adjacent pair.** Let $s$ be a link-cut tree state and let $x$ and $y$ be
+adjacent in some tree of the represented forest of $s$. Then cutting the edge between $x$ and
+$y$ in $s$ gives the same state as first making $x$ the root of its represented tree and then
+cutting off the subtree rooted at $y$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
-- [State](state.md)
-- [Cut](cut.md)
-- [Cut Edge](cut-edge.md)
-- [Make Root](make-root.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Link-cut tree state](state.md)
+- [Cutting off the subtree at a vertex](cut.md)
+- [Cutting an edge of a link-cut tree](cut-edge.md)
+- [Making a vertex the root in a link-cut tree state](make-root.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Adjacent B](adjacent-b.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Adjacency test](adjacent-b.md)
 
 ## Sources
 

@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.elements_insert
 ---
 
-# Elements insert
+# Insertion into a binomial heap adds one occurrence
 
-Insertion adds exactly one occurrence.
+**Insertion into a binomial heap adds one occurrence.** For every binomial heap $H$ over a
+linearly ordered type and every value $v$, the multiset of elements of the heap obtained by
+inserting $v$ into $H$ is the multiset of elements of $H$ with one more occurrence of $v$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Insert](insert.md)
+- [Insertion into a binomial heap](insert.md)
 
 ## Proof depends on
 
-- [Elements meld](elements-meld.md)
-- [Meld](meld.md)
+- [Melding binomial heaps adds their elements](elements-meld.md)
+- [Melding binomial heaps](meld.md)
 - [Singleton](singleton-2.md)
-- [Binomial Tree](binomial-tree.md)
-- [Elements](elements.md)
-- [Singleton](singleton.md)
+- [Binomial tree](binomial-tree.md)
+- [Elements of a binomial tree](elements.md)
+- [Singleton binomial heap](singleton.md)
 
 ## Sources
 

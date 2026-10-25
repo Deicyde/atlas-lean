@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.access_forest
 ---
 
-# Access forest
+# Access leaves the represented forest unchanged
 
-Access changes only the preferred edges, never the represented forest.
+**Access leaves the represented forest unchanged.** For every link-cut tree state $s$ and
+every vertex $x$, accessing $x$ changes only the preferred edges: the represented forest of the
+resulting state equals the represented forest of $s$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [State](state.md)
-- [Access](access.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Link-cut tree state](state.md)
+- [Access in a link-cut tree](access.md)
 
 ## Proof depends on
 
-- [Find Tree](find-tree.md)
-- [Path Edges](path-edges.md)
-- [Root Path](root-path.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Consecutive edges of a vertex path](path-edges.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.min?_mem
 ---
 
-# Min? mem
+# The minimum query on a $d$-ary heap returns an element of the heap
 
-Inspection returns a stored value.
+**The minimum query on a $d$-ary heap returns an element of the heap.** Let $h$ be a
+$d$-ary min-heap. If the minimum query on $h$ returns $x$, then $x$ belongs to the multiset of
+elements of $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
-- [Min?](min.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
+- [Minimum query on a $d$-ary min-heap](min.md)
 
 ## Sources
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.nwScore_nil_right
 ---
 
-# Nw Score nil right
+# Aligning a sequence with the empty sequence
 
-Aligning anything with the empty sequence costs one gap per letter.
+**Aligning a sequence with the empty sequence.** For every substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$, gap score $g \in \mathbb{Z}$ and sequence $x$ over
+$\alpha$ of length $|x|$, the Needleman–Wunsch score of $x$ and the empty sequence with respect to
+$\sigma$ and $g$ is $g\,|x|$: one gap per letter.
 
 ## Depends on
 
-- [Nw Score](nw-score.md)
+- [Needleman–Wunsch score](nw-score.md)
 
 ## Proof depends on
 
-- [Nw Score Aux](nw-score-aux.md)
+- [Fuel-bounded Needleman–Wunsch recursion](nw-score-aux.md)
 
 ## Sources
 

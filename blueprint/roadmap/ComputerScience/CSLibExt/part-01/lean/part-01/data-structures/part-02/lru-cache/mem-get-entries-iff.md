@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.mem_get_entries_iff
 ---
 
-# Mem get entries iff
+# Lookup preserves the stored bindings
 
-`get` preserves exactly the stored bindings: promotion reorders but neither adds,
-removes, nor changes any entry.
+**Lookup preserves the stored bindings.** For every LRU cache and every key $k$, a
+key-value pair is stored in the cache after looking up $k$ if and only if it was stored in
+the cache before the lookup.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

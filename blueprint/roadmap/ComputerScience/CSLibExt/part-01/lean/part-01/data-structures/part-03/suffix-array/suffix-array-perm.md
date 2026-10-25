@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixArray.suffixArray_perm
 ---
 
-# Suffix Array perm
+# The suffix array is a permutation of the indices
 
-The suffix array is a permutation of all starting indices.
+**The suffix array is a permutation of the indices.** For a list $s$ of length $n$ over a
+linearly ordered alphabet, the suffix array of $s$ is a permutation of the list
+$0, 1, \dots, n - 1$ of all indices below $n$.
 
 ## Depends on
 
-- [Suffix Array](suffix-array.md)
+- [Suffix array](suffix-array.md)
 
 ## Proof depends on
 

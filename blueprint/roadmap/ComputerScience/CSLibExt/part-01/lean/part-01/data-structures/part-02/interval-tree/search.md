@@ -6,20 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.search
 ---
 
-# Search
+# Interval-tree overlap search
 
-Production overlap search; definitionally the answer from `searchWithCost`.
+**Interval-tree overlap search.** The overlap search of a query interval $q$ in an interval
+tree $T$ returns the optional entry produced by the instrumented overlap search of $q$ in $T$,
+discarding its cost record.
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Cost](cost.md)
-- [Search With Cost](search-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Instrumented overlap search](search-with-cost.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.commonPrefix_self
 ---
 
-# Common Prefix self
+# Longest common prefix of a list with itself
 
-The longest common prefix of a list with itself is the list.
+**Longest common prefix of a list with itself.** For every list $s$ over a type with decidable
+equality, the longest common prefix of $s$ and $s$ is $s$.
 
 ## Depends on
 
-- [Common Prefix](common-prefix.md)
+- [Longest common prefix](common-prefix.md)
 
 ## Sources
 

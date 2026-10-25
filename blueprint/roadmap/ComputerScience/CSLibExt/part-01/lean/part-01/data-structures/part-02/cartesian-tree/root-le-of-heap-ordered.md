@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.root_le_of_heapOrdered
 ---
 
-# Root le of heap Ordered
+# The root of a heap-ordered tree is below every key
 
-In a heap-ordered tree, the root is no greater than every member.
+**The root of a heap-ordered tree is below every key.** Let $T$ be a binary tree over a
+preordered type that is heap-ordered (in min-heap order). If $T$ has root key $k$, then
+$k \le x$ for every key $x$ occurring in $T$.
 
 ## Depends on
 
-- [Mem](../binary-search-tree/mem.md)
-- [Heap Ordered](heap-ordered.md)
-- [Root](root.md)
+- [Membership in a binary tree](../binary-search-tree/mem.md)
+- [Min-heap ordered binary tree](heap-ordered.md)
+- [Root key of a binary tree](root.md)
 
 ## Proof depends on
 
-- [All](../binary-search-tree/all.md)
-- [All iff forall mem](../binary-search-tree/all-iff-forall-mem.md)
+- [A predicate holding at every key of a binary tree](../binary-search-tree/all.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../binary-search-tree/all-iff-forall-mem.md)
 
 ## Sources
 

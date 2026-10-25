@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.longestIncreasingSubsequence_time
 ---
 
-# Longest Increasing Subsequence time
+# Running time of the quadratic LIS program
 
-The dynamic program inspects exactly `n * (n + 1) / 2` table entries.
+**Running time of the quadratic LIS program.** For every list $xs$ of length $n$ over a
+preorder, twice the cost of the quadratic longest-increasing-subsequence program on $xs$ equals
+$n(n + 1)$, so the program costs exactly $n(n + 1)/2$.
+
+The cost model charges one unit for each table entry inspected.
 
 ## Depends on
 
-- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+- [Longest increasing subsequence by dynamic programming](longest-increasing-subsequence.md)
 
 ## Proof depends on
 
-- [Lis Table](lis-table.md)
-- [Max Above](max-above.md)
-- [Max Above time](max-above-time.md)
-- [Max Entry](max-entry.md)
+- [Table of the quadratic LIS program](lis-table.md)
+- [Best table entry above a value](max-above.md)
+- [Longest increasing subsequence by dynamic programming](max-above-time.md)
+- [Table entry of largest length](max-entry.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.toArray_toList
 ---
 
-# To Array to List
+# Array conversion lists the contents
 
-Converting a queue to an array preserves its FIFO contents.
+**Array conversion lists the contents.** For every queue $q$, the array obtained from $q$,
+read as a list, equals the contents of $q$.
 
 ## Depends on
 
-- [Contents](contents.md)
+- [Contents of a two-list queue](contents.md)
 
 ## Sources
 

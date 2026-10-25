@@ -5,9 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.alignments
 ---
 
-# Alignments
+# The list of all alignments
 
-All alignments of two sequences.
+**The list of all alignments.** For sequences $x$ and $y$ over $\alpha$, this is the list
+produced by the fuel-bounded enumeration of alignments of $x$ and $y$ with fuel
+$|x| + |y| + 1$.
+
+This fuel suffices: an alignment belongs to the list exactly when it is a valid alignment of
+$x$ and $y$.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ All alignments of two sequences.
 
 ## Proof depends on
 
-- [Alignments Aux](alignments-aux.md)
+- [Fuel-bounded enumeration of alignments](alignments-aux.md)
 
 ## Sources
 

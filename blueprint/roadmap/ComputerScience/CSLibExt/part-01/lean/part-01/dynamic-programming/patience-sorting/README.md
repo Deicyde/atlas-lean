@@ -4,21 +4,18 @@ navigation: module
 
 # Patience Sorting
 
-- [Patience Step](patience-step.md)
-- [Patience Scan](patience-scan.md)
-- [Patience Length](patience-length.md)
+- [Patience step](patience-step.md)
+- [Patience scan](patience-scan.md)
+- [Patience sorting](patience-length.md)
 
 ## The invariant
 
-- [Patience Inv](patience-inv.md)
-
-## Correctness
-
-- [Scan](scan.md)
-- [Patience Length spec](patience-length-spec.md)
-- [Patience Length eq length longest Increasing Subsequence](patience-length-eq-length-longest-increa.md)
+- [Patience sorting invariant](patience-inv.md)
+- [The patience scan preserves the invariant](scan.md)
+- [Correctness of patience sorting](patience-length-spec.md)
+- [Patience sorting agrees with the quadratic dynamic program](patience-length-eq-length-longest-increa.md)
 
 ## Cost
 
-- [Patience Step size le](patience-step-size-le.md)
-- [Patience Length time le](patience-length-time-le.md)
+- [Patience sorting agrees with the quadratic dynamic program](patience-step-size-le.md)
+- [Comparison bound for patience sorting](patience-length-time-le.md)

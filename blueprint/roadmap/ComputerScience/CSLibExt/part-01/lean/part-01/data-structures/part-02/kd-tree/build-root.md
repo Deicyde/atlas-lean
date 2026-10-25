@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.buildRoot
 ---
 
-# Build Root
+# Kd-tree construction from the first axis
 
-Builds a kd-tree starting from axis `0`.
+**Kd-tree construction from the first axis.** For $d \ge 1$ and a list of points in
+$\mathbb{Z}^d$, this is the kd-tree built from the list by alternating-axis median splits,
+starting with split axis $0$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Proof depends on
 
-- [Build](build.md)
+- [Kd-tree construction by median splits](build.md)
 
 ## Sources
 

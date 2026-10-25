@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.mem_put_entries_iff_of_not_full
 ---
 
-# Mem put entries iff of not full
+# Insertion without eviction
 
-When `put` evicts nothing, because the cache is not full or the key replaces an
-existing binding, the stored entries are characterized exactly: the new binding together
-with every previously stored binding for a different key, values unchanged.
+**Insertion without eviction.** Let an LRU cache of capacity $c$ hold fewer than $c$
+entries or already store a binding for the key $k$, and let $v$ be a value. Then a key-value
+pair $p$ is stored in the cache after putting the binding $(k, v)$ if and only if $p = (k, v)$,
+or $p$ was stored before and the key of $p$ differs from $k$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Keys](keys.md)
-- [Put](put.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Key list of an LRU cache](keys.md)
+- [Insertion into an LRU cache](put.md)
+- [Size of an LRU cache](size.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

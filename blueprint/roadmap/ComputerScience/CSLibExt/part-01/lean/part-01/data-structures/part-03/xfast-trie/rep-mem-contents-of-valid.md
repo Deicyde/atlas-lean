@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.YFastTrie.rep_mem_contents_of_valid
 ---
 
-# Rep mem contents of valid
+# Representatives of a valid y-fast trie are stored keys
 
-Under validity, every representative is a stored key.
+**Representatives of a valid y-fast trie are stored keys.** If a y-fast trie $t$ over
+$w$-bit keys is valid, then every key of the representative x-fast trie of $t$ is a stored
+key of $t$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [YFast Trie](yfast-trie.md)
+- [x-fast trie](xfast-trie.md)
+- [y-fast trie skeleton](yfast-trie.md)
 - [Valid](valid-2.md)
-- [Contents](contents.md)
+- [Keys of a y-fast trie](contents.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Mem contents iff](mem-contents-iff.md)
+- [Valid x-fast trie](valid.md)
+- [Membership in a y-fast trie via representatives' buckets](mem-contents-iff.md)
 
 ## Sources
 

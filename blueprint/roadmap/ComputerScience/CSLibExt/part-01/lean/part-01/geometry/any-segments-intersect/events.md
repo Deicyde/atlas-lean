@@ -5,17 +5,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.events
 ---
 
-# Events
+# Sorted sweep events
 
-The `2n` endpoints, sorted by `key` (CLRS line 2).
+**Sorted sweep events.** For $n$ segments, each given by its two endpoints, the left endpoint
+of a segment is its endpoint with the smaller $x$-coordinate, or its first given endpoint when
+both $x$-coordinates agree, and the right endpoint is the other one. The event list consists of
+the $2n$ events, the left and the right endpoint of each segment, sorted by the $x$-coordinate
+of the endpoint, with left endpoints before right endpoints at equal $x$, and then by the
+$y$-coordinate of the endpoint; events that tie appear in increasing order of segment index.
+This is line 2 of CLRS ANY-SEGMENTS-INTERSECT.
 
 ## Depends on
 
-- [Event](event.md)
+- [Sweep event](event.md)
 
 ## Proof depends on
 
-- [Key](key.md)
+- [Sweep order on endpoint events](key.md)
 
 ## Sources
 

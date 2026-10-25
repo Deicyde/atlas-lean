@@ -4,9 +4,9 @@ navigation: module
 
 # Basic
 
-- [Indexed Min Queue](indexed-min-queue.md)
-- [Empty](empty.md)
-- [Member](member.md)
-- [Insert](insert.md)
-- [Decrease Key](decrease-key.md)
-- [Extract Min](extract-min.md)
+- [Indexed minimum queue](indexed-min-queue.md)
+- [Empty indexed minimum queue](empty.md)
+- [Membership test in an indexed minimum queue](member.md)
+- [Insertion into an indexed minimum queue](insert.md)
+- [Decrease-key in an indexed minimum queue](decrease-key.md)
+- [Extract-min in an indexed minimum queue](extract-min.md)

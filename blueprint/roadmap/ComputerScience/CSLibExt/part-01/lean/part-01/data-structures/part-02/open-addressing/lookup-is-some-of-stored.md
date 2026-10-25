@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_isSome_of_stored
 ---
 
-# Lookup is Some of stored
+# Valid open-addressing tables find every stored key
 
-Under `Valid`, a stored key is found by `lookup`.
+**Valid open-addressing tables find every stored key.** If a valid open-addressing hash table
+$T$ stores the binding $k \mapsto v$, then looking up $k$ in $T$ returns some value.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
-- [Lookup](lookup.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Stored binding in an open-addressing table](stored.md)
+- [Valid open-addressing tables](valid.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Lookup Aux](lookup-aux.md)
+- [Bounded lookup scan](lookup-aux.md)
 
 ## Sources
 

@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.contains_eq_true_iff
 ---
 
-# Contains eq true iff
+# Search in an ordered red-black tree is correct
 
-Search is equivalent to structural membership for an ordered tree;
-inherited from `BinarySearchTree` through `erase`.
+**Search in an ordered red-black tree is correct.** Let $t$ be a red-black tree over a
+linearly ordered type that is ordered (every left key is smaller and every right key larger,
+recursively). Then for every key $x$, the search for $x$ in $t$ returns true if and only if $x$
+is a key of some node of $t$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Contains](contains.md)
+- [Membership in a red-black tree](mem.md)
+- [Ordered red-black tree](ordered.md)
+- [Red-black tree data type](tree.md)
+- [Search in a red-black tree](contains.md)
 
 ## Proof depends on
 
-- [Contains](../../part-02/binary-search-tree/contains.md)
-- [Contains eq true iff](../../part-02/binary-search-tree/contains-eq-true-iff.md)
-- [Color](color.md)
-- [Erase](erase.md)
+- [Search in a binary search tree](../../part-02/binary-search-tree/contains.md)
+- [Search in a binary search tree is correct](../../part-02/binary-search-tree/contains-eq-true-iff.md)
+- [Red-black node colors](color.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

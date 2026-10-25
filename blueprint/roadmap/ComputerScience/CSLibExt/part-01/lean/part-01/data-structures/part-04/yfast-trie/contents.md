@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.contents
 ---
 
-# Contents
+# Keys of a grouped y-fast trie
 
-All stored keys: the flattened groups.
+**Keys of a grouped y-fast trie.** The key set of a grouped y-fast trie $t$ is the finite
+set of all keys that occur in some group of $t$.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Sources
 

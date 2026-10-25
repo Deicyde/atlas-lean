@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.length_toList
 ---
 
-# Length to List
+# Length of the leaf list of a range tree
 
-The length of the leaf list is the size of the tree.
+**Length of the leaf list of a range tree.** For every range tree $t$, the list of leaf values
+of $t$ read from left to right has length equal to the number of leaves of $t$.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [Size](size.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Number of leaves of a range tree](size.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [To List node](to-list-node.md)
+- [Leaf list of a range-tree node](to-list-node.md)
 
 ## Sources
 

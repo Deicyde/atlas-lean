@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_reconstructionSteps
 ---
 
-# Edit Distance reconstruction Steps
+# Reconstruction cost of the edit distance algorithm
 
-Reconstruction charges exactly one step per emitted operation.
+**Reconstruction cost of the edit distance algorithm.** For lists $s$ and $t$ over a type with
+a Boolean equality test, the number of reconstruction steps charged by the edit distance
+algorithm on $s$ and $t$ equals the length of the edit script it returns.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
 - [Edit Script](../script/edit-script.md)
-- [Edit Step](../script/edit-step.md)
-- [Edit Distance](edit-distance.md)
+- [Edit step](../script/edit-step.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Proof depends on
 
-- [Cost](../script/cost-2.md)
-- [Cost](../script/cost.md)
+- [Cost of an edit script](../script/cost-2.md)
+- [Unit cost of an edit step](../script/cost.md)
 
 ## Sources
 

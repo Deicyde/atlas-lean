@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.contents_pushBack
 ---
 
-# Contents push Back
+# Pushing at the back of a deque
 
-Pushing at the back appends to the represented sequence.
+**Pushing at the back of a deque.** For every deque $d$ and element $x$, the sequence
+represented by the deque obtained by pushing $x$ at the back of $d$ is the sequence represented by
+$d$ followed by $x$.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Push Back](push-back.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Push at the back of a deque](push-back.md)
 
 ## Sources
 

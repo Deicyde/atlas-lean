@@ -6,27 +6,31 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.Invariant
 ---
 
-# Invariant
+# Representation invariant of an indexed interval tree
 
-Bundled representation invariant for the public indexed tree: exact
-caches, strict composite-key BST ordering, stored-interval validity, AVL
-balance, unique identifiers, and two-way identifier-index correspondence.
-Low-endpoint ordering used by search is derived from the strict key
-ordering via `Tree.keyOrdered_lowOrdered`.
+**Representation invariant of an indexed interval tree.** An indexed interval tree $T$
+satisfies the representation invariant when its root tree has exact cached metadata (heights,
+sizes, and attained maximum high endpoints), is strictly ordered by the composite key (low
+endpoint, then identifier), is AVL balanced with exact stored heights, and stores only valid
+intervals; the identifiers of the stored entries are pairwise distinct; the identifier index maps
+the identifier of every stored entry to that entry's low endpoint; and every pair $(i, \ell)$ in
+the identifier index is the identifier and low endpoint of some stored entry.
+
+The ordering of low endpoints used by search follows from the strict key ordering.
 
 ## Depends on
 
-- [Indexed Interval Tree](indexed-interval-tree.md)
+- [Indexed interval tree](indexed-interval-tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
-- [Balanced Prop](balanced-prop.md)
-- [Cache Invariant](cache-invariant.md)
-- [Key Ordered](key-ordered.md)
-- [Valid Invariant](valid-invariant.md)
+- [Interval tree](tree.md)
+- [AVL balance of an interval tree](balanced-prop.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Key-ordered interval tree](key-ordered.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
 
 ## Sources
 

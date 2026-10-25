@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_cons
 ---
 
-# To List cons
+# Flattening a front node of a catenable heap
 
-A front node flattens to its element followed by the flattening of its tail.
+**Flattening a front node of a catenable heap.** For an element $x$ and a catenable heap $t$,
+the flattening of the heap with $x$ added in front of $t$ is $x$ followed by the flattening of
+$t$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List](to-list.md)
+- [Catenable heap](catenable-heap.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Proof depends on
 
-- [To List Naive](to-list-naive.md)
-- [To List eq to List Naive](to-list-eq-to-list-naive.md)
+- [Naive flattening of a catenable heap](to-list-naive.md)
+- [Flattening of a catenable heap equals its naive flattening](to-list-eq-to-list-naive.md)
 
 ## Sources
 

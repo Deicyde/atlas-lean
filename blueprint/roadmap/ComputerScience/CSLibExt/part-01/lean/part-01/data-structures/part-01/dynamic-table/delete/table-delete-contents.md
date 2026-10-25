@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_contents
 ---
 
-# Table Delete contents
+# Deletion removes the last item from the contents
 
-Deletion removes exactly the last logical item from the contents.
+**Deletion removes the last item from the contents.** Let $T$ be a well-formed dynamic table.
+The contents of the table obtained by applying deletion to $T$ is the contents of $T$ with its
+last entry removed; when the contents of $T$ is empty, it stays empty.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Well Formed](../basic/well-formed.md)
+- [Dynamic table](../basic/table.md)
+- [Well-formed dynamic table](../basic/well-formed.md)
 - [Contents of a dynamic table](../basic/contents.md)
-- [Table Delete](table-delete.md)
+- [Deletion from a dynamic table](table-delete.md)
 
 ## Proof depends on
 
 - [Formula for the contents of a dynamic table](../basic/contents-eq.md)
-- [Table Delete num](table-delete-num.md)
-- [Table Delete slots](table-delete-slots.md)
-- [Well Formed iff](../basic/well-formed-iff.md)
+- [Item count after deletion](table-delete-num.md)
+- [Slots after deletion](table-delete-slots.md)
+- [Characterization of well-formed dynamic tables](../basic/well-formed-iff.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.empty
 ---
 
-# Empty
+# Empty binary min-heap
 
-The empty min-heap.
+**Empty binary min-heap.** The empty binary min-heap is the min-heap whose level-order storage
+array has no entries.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
+- [Binary min-heap](min-heap.md)
 
 ## Proof depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Heap Parent](heap-parent.md)
-- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Heap order on a level-order array](heap-ordered.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
+- [The parent of a valid nonroot index is valid](heap-parent-lt-size.md)
 
 ## Sources
 

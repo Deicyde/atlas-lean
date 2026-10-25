@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixArray.take_lcp_eq
 ---
 
-# Take lcp eq
+# Two lists agree on their longest common prefix
 
-Both lists agree on their first `lcp x y` elements.
+**Two lists agree on their longest common prefix.** For lists $x$ and $y$ over a type with
+decidable equality, let $\operatorname{lcp}(x, y)$ be the length of their longest common prefix.
+Then the first $\operatorname{lcp}(x, y)$ elements of $x$ and the first $\operatorname{lcp}(x, y)$
+elements of $y$ form the same list.
 
 ## Depends on
 
-- [Lcp](lcp.md)
+- [Longest common prefix length](lcp.md)
 
 ## Sources
 

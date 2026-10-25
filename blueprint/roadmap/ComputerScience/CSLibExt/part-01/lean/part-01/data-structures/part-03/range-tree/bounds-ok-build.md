@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.boundsOk_build
 ---
 
-# Bounds Ok build
+# Built range trees are bounds-valid
 
-A built tree has correct cached bounds.
+**Built range trees are bounds-valid.** For every list $L$ of integers, the range tree built
+from $L$ by recursive halving is bounds-valid.
 
 ## Depends on
 
-- [Bounds Ok](bounds-ok.md)
-- [Build](build.md)
+- [Bounds-valid range trees](bounds-ok.md)
+- [Building a range tree from a list](build.md)
 
 ## Proof depends on
 
-- [Range Tree](range-tree.md)
-- [Tmax](tmax.md)
-- [Tmin](tmin.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
+- [Range tree](range-tree.md)
+- [Cached upper bound of a range tree](tmax.md)
+- [Cached lower bound of a range tree](tmin.md)
+- [Leaf list of a range tree](to-list.md)
+- [Building a range tree preserves the list](to-list-build.md)
 
 ## Sources
 

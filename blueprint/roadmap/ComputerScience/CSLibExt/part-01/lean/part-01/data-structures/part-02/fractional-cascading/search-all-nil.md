@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.searchAll_nil
 ---
 
-# Search All nil
+# Searching no catalogs
 
-Searching no catalogs gives no positions.
+**Searching no catalogs.** Searching the empty list of catalogs for any value $x$ gives the
+empty list of positions.
 
 ## Depends on
 
-- [Search All](search-all.md)
+- [Searching every catalog](search-all.md)
 
 ## Sources
 

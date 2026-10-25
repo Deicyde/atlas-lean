@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.head?_rootPath
 ---
 
-# Head? root Path
+# The root path starts at the root
 
-The first vertex of a root path is the root of the tree.
+**The root path starts at the root.** Let $t$ be a tree and $x$ a vertex. If the root path
+of $x$ in $t$ (the path from the root of $t$ down to $x$) is defined and equals $p$, then $p$ is
+nonempty and its first vertex is the root of $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Root](../euler-tour-tree/root.md)
-- [Root Path](root-path.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Sources
 

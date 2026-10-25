@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.toList
 ---
 
-# To List
+# Point list of a kd-tree
 
-The points stored in a tree, from left to right.
+**Point list of a kd-tree.** The point list of a kd-tree is the list of the points stored at
+its leaves, from left to right.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Kd-tree point traversal with an accumulator](to-list-aux.md)
 
 ## Sources
 

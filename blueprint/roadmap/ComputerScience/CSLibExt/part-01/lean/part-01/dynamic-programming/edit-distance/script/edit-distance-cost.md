@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditDistanceCost
 ---
 
-# Edit Distance Cost
+# Edit-distance cost counters
 
-Counts table cells and emitted reconstruction steps separately.
+**Edit-distance cost counters.** An edit-distance cost record is a pair of natural numbers:
+the number of dynamic-programming table cells initialized or transitioned, and the number of
+operations emitted while reconstructing an edit script.
 
 ## Depends on
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.report_eq_filter
 ---
 
-# Report eq filter
+# Correctness of the range report
 
-The report of a bounds-valid tree is the leaf list filtered to `[lo, hi]`.
+**Correctness of the range report.** Let $t$ be a range tree satisfying the bounds-correctness
+predicate: every node has two subtrees with at least one leaf each and caches the least and the
+greatest leaf value of its subtree. For all integers $a$ and $b$, the range report of $t$ for
+$[a, b]$ equals the list of leaf values $x$ of $t$ with $a \le x \le b$, in left-to-right order.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [Bounds Ok](bounds-ok.md)
-- [Report](report.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Bounds-valid range trees](bounds-ok.md)
+- [Range report](report.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [Report Aux](report-aux.md)
+- [Accumulator range report](report-aux.md)
 - [Report Aux eq filter append](report-aux-eq-filter-append.md)
 
 ## Sources

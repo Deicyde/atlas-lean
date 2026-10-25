@@ -7,20 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_optimal
 ---
 
-# Exact Subset Sum optimal
+# Optimality of exact subset sum
 
-The returned value is optimal for positional Nat inputs, including zero and repeated values.
+**Optimality of exact subset sum.** Let $x$ be a list of natural numbers, $t$ a natural
+number, and $r$ the value returned by the exact subset sum algorithm on $x$ with target $t$.
+Then $r$ is the sum of some sublist of $x$ (a subsequence, not necessarily contiguous),
+$r \le t$, and every sublist of $x$ whose sum is at most $t$ has sum at most $r$.
+
+The entries of $x$ may be zero or repeated.
 
 ## Depends on
 
-- [Exact Subset Sum](exact-subset-sum.md)
+- [Exact subset sum procedure](exact-subset-sum.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
-- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
-- [Exact Subset Sum Sums zero mem](exact-subset-sum-sums-zero-mem.md)
-- [Exact Subset Sum ret](exact-subset-sum-ret.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
+- [Characterization of the exact subset sum list](exact-subset-sum-sums-mem.md)
+- [Zero is always a computed sum](exact-subset-sum-sums-zero-mem.md)
+- [Exact subset sum returns the maximum of the computed sums](exact-subset-sum-ret.md)
 
 ## Sources
 

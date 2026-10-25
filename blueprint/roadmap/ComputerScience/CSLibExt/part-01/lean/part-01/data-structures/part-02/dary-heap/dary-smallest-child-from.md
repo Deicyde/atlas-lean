@@ -6,10 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.darySmallestChildFrom
 ---
 
-# Dary Smallest Child From
+# Smallest child among the offsets from $s$
 
-Scan child offsets `start, start + 1, …, d - 1` and return the index of
-a smallest valid child of `i`, if one exists.
+**Smallest child among the offsets from $s$.** Let $a$ be an array over a linearly ordered
+type, of length $|a|$, let $d$, $i$ and $s$ be natural numbers, and call $d i + k + 1$ the child
+of $i$ at offset $k$. Scanning the offsets $s, s + 1, \dots, d - 1$, this returns the index of a
+scanned child of $i$ below $|a|$ whose entry in $a$ is least among those, taking the smallest
+offset among ties, or nothing if no scanned child index is below $|a|$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dary Child](dary-child.md)
+- [Child index in a $d$-ary heap array](dary-child.md)
 
 ## Sources
 

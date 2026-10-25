@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.Valid.update
 ---
 
-# Update
+# Point update preserves validity
 
-Point update preserves validity.
+**Point update preserves validity.** If $t$ is a valid segment tree over an additive monoid,
+then for every natural number $i$ and every value $y$, the point update of $t$ at $i$ with $y$ is
+valid.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [Valid](valid.md)
-- [Update](update.md)
+- [Valid segment trees](valid.md)
+- [Point update of a segment tree](update.md)
 
 ## Proof depends on
 
-- [Agg](agg.md)
-- [Size](size.md)
-- [Size update](size-update.md)
+- [Aggregate of a segment tree](agg.md)
+- [Size of a segment tree](size.md)
+- [Point update preserves the size of a segment tree](size-update.md)
 
 ## Sources
 

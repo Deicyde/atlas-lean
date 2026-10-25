@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.isEmpty_eq_true_iff
 ---
 
-# Is Empty eq true iff
+# Correctness of the deque emptiness test
 
-A deque reports that it is empty exactly when its represented sequence is empty.
+**Correctness of the deque emptiness test.** For every deque $d$, the emptiness test of $d$
+returns true if and only if the sequence represented by $d$ is empty.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Is Empty](is-empty.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Emptiness test for a deque](is-empty.md)
 
 ## Sources
 

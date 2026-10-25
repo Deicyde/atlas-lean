@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.searchWindow_suffix
 ---
 
-# Search Window suffix
+# The search window is a suffix of the bottom level
 
-Top-down navigation returns a suffix of the complete bottom-level entries.
+**The search window is a suffix of the bottom level.** For every skip list and every key $k$,
+the search window for $k$ is a suffix of the list of the skip list's bottom-level nodes.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Entry](entry.md)
-- [Search Window](search-window.md)
+- [Skip list](skip-list.md)
+- [Skip-list node](entry.md)
+- [Skip-list search window](search-window.md)
 
 ## Proof depends on
 
-- [Advance At Level](advance-at-level.md)
-- [Advance At Level suffix](advance-at-level-suffix.md)
+- [One level of skip-list search](advance-at-level.md)
+- [One search step returns a suffix](advance-at-level-suffix.md)
 
 ## Sources
 

@@ -6,25 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.Valid
 ---
 
-# Valid
+# Valid link-cut tree states
 
-The state invariant bundle used below: the vertex lists of the represented
-trees are collectively duplicate-free (so the trees are vertex-disjoint), and
-the preferred edges are a functional set of represented directed edges: no
-duplicates, every preferred edge is a parent-child edge of some represented
-tree, and each vertex has at most one preferred child. The duplicate-free
-vertex condition also pins down the parent of each vertex, so the maximal
-solid chains (`treePaths`) are genuine disjoint paths.
+**Valid link-cut tree states.** A link-cut tree state $s$ is valid when four conditions
+hold: the concatenation of the vertex lists of the trees of its represented forest has no
+duplicates (so the trees are vertex-disjoint); its list of preferred edges has no duplicates;
+every preferred edge $(a, b)$ is a parent-child edge of some tree of the represented forest,
+with $a$ the parent of $b$; and any two preferred edges with the same parent are equal, so each
+vertex has at most one preferred child.
+
+The duplicate-free vertex condition also pins down the parent of each vertex, so the maximal
+chains of preferred edges in each tree are genuine disjoint paths.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Parent Child](parent-child.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
 
 ## Sources
 

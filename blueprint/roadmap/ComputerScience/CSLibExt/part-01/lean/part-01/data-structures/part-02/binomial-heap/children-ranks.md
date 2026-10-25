@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.Valid.children_ranks
 ---
 
-# Children ranks
+# Child ranks of a valid binomial tree
 
-The child ranks of a valid tree are exactly `r - 1, ..., 0`.
+**Child ranks of a valid binomial tree.** For a type $\alpha$ with a relation $\le$, if a
+valid binomial tree over $\alpha$ has rank $r$, then the ranks of its children, listed in their
+stored order, are $r - 1, r - 2, \dots, 1, 0$; there are no children when $r = 0$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
-- [Rank](rank.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Children of a binomial tree](children.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Elements of a binomial tree](elements.md)
 
 ## Sources
 

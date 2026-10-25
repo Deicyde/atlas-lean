@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.connected_iff_tour
 ---
 
-# Connected iff tour
+# Connectivity via Euler tours
 
-Connectivity can equally be read off the Euler tours of the represented
-trees.
+**Connectivity via Euler tours.** For a link-cut tree state $s$ and vertices $x$ and $y$,
+$x$ and $y$ are connected in $s$ if and only if some tree of the represented forest of $s$
+contains both $x$ and $y$ in its Euler tour.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Tour](../euler-tour-tree/tour.md)
-- [State](state.md)
-- [Connected](connected.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Euler tour](../euler-tour-tree/tour.md)
+- [Link-cut tree state](state.md)
+- [Connectivity in a link-cut tree state](connected.md)
 
 ## Proof depends on
 
-- [Mem tour iff](../euler-tour-tree/mem-tour-iff.md)
+- [The Euler tour visits exactly the vertices of the tree](../euler-tour-tree/mem-tour-iff.md)
 - [Vertices](../euler-tour-tree/vertices.md)
 
 ## Sources

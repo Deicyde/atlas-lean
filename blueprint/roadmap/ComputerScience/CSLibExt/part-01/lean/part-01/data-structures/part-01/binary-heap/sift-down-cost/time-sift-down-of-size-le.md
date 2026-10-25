@@ -20,7 +20,7 @@ sift-down from $i$ has cost pair $(0, 0)$: it counts no comparisons and no swaps
 ## Proof depends on
 
 - [Sift-down from a leaf costs nothing](time-sift-down-of-heap-left-ge.md)
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
 
 ## Sources
 

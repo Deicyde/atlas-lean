@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.valid_erase
 ---
 
-# Valid erase
+# Erasure preserves skip-list validity
 
-Erasure preserves strict key ordering and positive tower heights.
+**Erasure preserves skip-list validity.** Let $L$ be a valid skip list, that is, its keys are
+strictly increasing and every stored tower has positive height. For every key $k$, the skip list
+obtained from $L$ by erasing $k$ is again valid.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/skip-list.md)
-- [Valid](../../../part-03/skip-list/valid.md)
-- [Erase](erase.md)
+- [Skip list](../../../part-03/skip-list/skip-list.md)
+- [Valid skip list](../../../part-03/skip-list/valid.md)
+- [Skip-list erasure](erase.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-03/skip-list/entry.md)
-- [Erase entries filter](erase-entries-filter.md)
+- [Skip-list node](../../../part-03/skip-list/entry.md)
+- [Erasure on a valid skip list filters out the key](erase-entries-filter.md)
 
 ## Sources
 

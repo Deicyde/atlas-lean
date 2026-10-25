@@ -7,13 +7,15 @@ proof: formalized
 lean: Batteries.UnionFind.Internal.countedAux_time_root
 ---
 
-# Counted Aux time root
+# Cost of the FIND auxiliary at a root
 
-A root still executes one source conditional and performs no parent assignment.
+**Cost of the FIND auxiliary at a root.** Let $S$ be a union-find structure and $x < |S|$
+a node. If the parent of $x$ in $S$ is $x$ itself, then the cost-counted FIND auxiliary on $x$
+has cost $(1, 0)$: one root test and no parent writes.
 
 ## Depends on
 
-- [Counted Aux](counted-aux.md)
+- [Cost-counted FIND auxiliary](counted-aux.md)
 
 ## Sources
 

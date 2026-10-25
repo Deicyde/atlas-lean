@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.gotohContGapY_nil_right
 ---
 
-# Gotoh Cont Gap Y nil right
+# Continuation after a gap in the first sequence, empty second sequence
 
-The `gapY` continuation against the empty sequence is a single gap run.
+**Continuation after a gap in the first sequence, empty second sequence.** Fix a scoring
+function $\sigma$ on pairs of letters and integer gap-open and gap-extend penalties $g_o$ and
+$g_e$, and let $Y(u, v)$ be the Gotoh continuation value of sequences $u$, $v$ when the previous
+column was a gap in $u$. For every sequence $u$ of length $k$, the value $Y(u, \varepsilon)$,
+where $\varepsilon$ is the empty sequence, is the cost of one freshly opened gap run of length
+$k$: it is $0$ if $k = 0$ and $g_o + (k - 1) g_e$ if $k \ge 1$.
 
 ## Depends on
 
-- [Gap State](gap-state.md)
-- [Gap Run Cost](gap-run-cost.md)
-- [Gotoh Cont Gap Y](gotoh-cont-gap-y.md)
+- [Gap states](gap-state.md)
+- [Cost of a gap run](gap-run-cost.md)
+- [Gotoh continuation value after a gap in the first sequence](gotoh-cont-gap-y.md)
 
 ## Proof depends on
 
-- [Gap Cost](gap-cost.md)
-- [Gap Run Cost succ](gap-run-cost-succ.md)
-- [Gotoh Aux](gotoh-aux.md)
+- [Gap cost](gap-cost.md)
+- [Adding a column to a gap run](gap-run-cost-succ.md)
+- [Fuel-bounded Gotoh recursion](gotoh-aux.md)
 
 ## Sources
 

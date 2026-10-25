@@ -8,29 +8,35 @@ lean: Cslib.Algorithms.Lean.localScore_eq_swScore
 
 # The local score equals the Smith–Waterman score
 
-**The local score equals the Smith–Waterman score** (needs `gap ≤ 0`): an infix
-is a suffix of a prefix, and the terminal cell is a max over suffixes.
+**The local score equals the Smith–Waterman score.** Let $\sigma$ be an integer-valued
+substitution score on letters and let $g$ be an integer gap score with $g \le 0$. Then for all
+sequences $x$ and $y$, the local score of $x$ and $y$ (the maximum Needleman–Wunsch score over
+pairs of infixes) equals their Smith–Waterman score (the maximum terminal-cell score over pairs
+of prefixes).
+
+The proof uses that an infix is a suffix of a prefix and that the terminal cell is a maximum
+over pairs of suffixes.
 
 ## Depends on
 
-- [Local Score](local-score.md)
+- [Local alignment score](local-score.md)
 - [The Smith–Waterman score](sw-score.md)
 
 ## Proof depends on
 
-- [Exists nw Score eq suffix Max](exists-nw-score-eq-suffix-max.md)
-- [Infix Pairs](infix-pairs.md)
-- [Local Score le](local-score-le.md)
-- [Nw Score](nw-score.md)
-- [Nw Score le local Score](nw-score-le-local-score.md)
-- [Every suffix pair scores at most the Smith–Waterman score](nw-score-le-sw-cell-score-of-suffix.md)
-- [Prefix Pairs](prefix-pairs.md)
-- [Suffix Max](suffix-max.md)
-- [Suffix Pairs](suffix-pairs.md)
-- [Sw Cell Score](sw-cell-score.md)
-- [Smith–Waterman equals the max Needleman–Wunsch score over suffix pairs](sw-cell-score-eq-suffix-max.md)
-- [Sw Cell Score le sw Score](sw-cell-score-le-sw-score.md)
-- [Sw Score le](sw-score-le.md)
+- [The suffix maximum is attained](exists-nw-score-eq-suffix-max.md)
+- [Infix pairs](infix-pairs.md)
+- [Upper bounds on the local score](local-score-le.md)
+- [Needleman–Wunsch score](nw-score.md)
+- [Infix pairs score at most the local score](nw-score-le-local-score.md)
+- [Suffix pairs score at most the terminal Smith–Waterman cell](nw-score-le-sw-cell-score-of-suffix.md)
+- [Pairs of prefixes](prefix-pairs.md)
+- [Suffix maximum of Needleman–Wunsch scores](suffix-max.md)
+- [Pairs of suffixes](suffix-pairs.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
+- [For nonpositive gaps, the terminal Smith–Waterman cell is the best suffix-pair score](sw-cell-score-eq-suffix-max.md)
+- [Each prefix-pair cell is at most the Smith–Waterman score](sw-cell-score-le-sw-score.md)
+- [Bounding the Smith–Waterman score by its cells](sw-score-le.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ the inorder traversal of $t$ every key is less than every key that comes after i
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Ordered inorder](../../part-02/binary-search-tree/ordered-inorder.md)
+- [The inorder traversal of an ordered binary tree is strictly increasing](../../part-02/binary-search-tree/ordered-inorder.md)
 
 ## Sources
 

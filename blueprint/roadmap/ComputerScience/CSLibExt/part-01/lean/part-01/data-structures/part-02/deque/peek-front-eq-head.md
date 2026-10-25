@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.peekFront_eq_head
 ---
 
-# Peek Front eq head
+# Peeking at the front gives the first element
 
-Peeking at the front returns the head of the represented sequence.
+**Peeking at the front gives the first element.** For every deque $d$, peeking at the front of
+$d$ returns the first element of the sequence represented by $d$, and returns no element when
+that sequence is empty.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Peek Front](peek-front.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Peek at the front of a deque](peek-front.md)
 
 ## Sources
 

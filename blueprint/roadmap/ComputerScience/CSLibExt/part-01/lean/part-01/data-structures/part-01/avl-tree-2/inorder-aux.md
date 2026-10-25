@@ -20,7 +20,7 @@ its cached heights erased.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
+- [Inorder traversal of a binary tree with an accumulator](../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

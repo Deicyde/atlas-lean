@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.card_elements
 ---
 
-# Card elements
+# Size of a $d$-ary min-heap
 
-The backing array stores exactly one entry per represented occurrence.
+**Size of a $d$-ary min-heap.** For every $d$-ary min-heap $h$ over a linearly ordered type,
+the number of elements of $h$, counted with multiplicity, equals the length of its backing
+array.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
 
 ## Sources
 

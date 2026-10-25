@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.union_eq_self_of_equivalent
 ---
 
-# Union eq self of equivalent
+# Union of equivalent vertices changes nothing
 
-Unioning two already equivalent vertices leaves the persistent forest unchanged.
+**Union of equivalent vertices changes nothing.** If $x$ and $y$ are equivalent vertices of a
+parent forest $F$, then the union of $x$ and $y$ in $F$ is $F$ itself.
 
 ## Depends on
 
-- [Equivalent](equivalent.md)
-- [Forest](forest.md)
-- [Union](union.md)
+- [Equivalent vertices of a parent forest](equivalent.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Union in a union-find forest](union.md)
 
 ## Proof depends on
 
-- [Find](find.md)
-- [Find is Root](find-is-root.md)
-- [Link](link.md)
+- [Root of a vertex in a parent forest](find.md)
+- [Find returns a root](find-is-root.md)
+- [Linking two roots of a parent forest](link.md)
 
 ## Sources
 

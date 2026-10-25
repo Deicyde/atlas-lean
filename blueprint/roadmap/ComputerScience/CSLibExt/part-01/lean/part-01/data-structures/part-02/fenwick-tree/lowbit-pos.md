@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_pos
 ---
 
-# Lowbit pos
+# The lowest set bit of a positive number is positive
 
-`lowbit` is positive on positive inputs.
+**The lowest set bit of a positive number is positive.** For every natural number $n > 0$,
+$\operatorname{lowbit}(n) > 0$, where $\operatorname{lowbit}(n)$ is the value of the lowest set
+bit of $n$ in binary.
 
 ## Depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

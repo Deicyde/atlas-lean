@@ -6,30 +6,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.run_isChain
 ---
 
-# Run is Chain
+# Neighbours on the sweep status are disjoint
 
-Every two neighbours on the status list have been tested and found disjoint.
+**Neighbours on the sweep status are disjoint.** Let $P$ be an initial part of the sorted list
+of events. If running the sweep over $P$ from the empty status list reports no intersection and
+ends with status list $T$, then no two consecutive segments of $T$ meet.
 
 ## Depends on
 
-- [Event](event.md)
-- [Meets](meets.md)
-- [Events](events.md)
-- [Run](run.md)
+- [Sweep event](event.md)
+- [Meeting segments](meets.md)
+- [Sorted sweep events](events.md)
+- [Running the sweep over a list of events](run.md)
 
 ## Proof depends on
 
-- [Below](below.md)
-- [Key](key.md)
-- [Left](left.md)
+- [Segment strictly below a point](below.md)
+- [Sweep order on endpoint events](key.md)
+- [Left endpoint of a segment](left.md)
 - [Left mem of right mem](left-mem-of-right-mem.md)
-- [Right](right.md)
-- [Run mem iff](run-mem-iff.md)
-- [Step](step.md)
-- [Take While append cons tail drop While](take-while-append-cons-tail-drop-while.md)
-- [Test](test.md)
-- [Test Opt](test-opt.md)
-- [Test Pair](test-pair.md)
+- [Right endpoint of a segment](right.md)
+- [The sweep status holds the active segments](run-mem-iff.md)
+- [One step of the sweep](step.md)
+- [Splitting a list at the first occurrence of a member](take-while-append-cons-tail-drop-while.md)
+- [Intersection test for two input segments](test.md)
+- [Testing a segment against an optional neighbour](test-opt.md)
+- [Testing the neighbours of a deleted segment](test-pair.md)
 - [Segments Intersect ret eq true iff](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
 
 ## Sources

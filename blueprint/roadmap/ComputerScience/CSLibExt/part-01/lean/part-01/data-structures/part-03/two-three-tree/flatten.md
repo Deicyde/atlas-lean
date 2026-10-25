@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.flatten
 ---
 
-# Flatten
+# Inorder traversal of a 2-3 tree
 
-The linear-time inorder traversal of a tree: subtrees interleaved with
-separator keys.
+**Inorder traversal of a 2-3 tree.** The flattening of a 2-3 tree $t$ is the accumulated
+inorder traversal of $t$ onto the empty list. Equivalently, the flattening of a leaf is empty;
+that of a 2-node with key $a$ and children $l, r$ is the flattening of $l$, then $a$, then the
+flattening of $r$; and that of a 3-node with keys $a, b$ and children $l, m, r$ is the flattening
+of $l$, then $a$, then the flattening of $m$, then $b$, then the flattening of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
+- [Accumulated inorder traversal of a 2-3 tree](flatten-aux.md)
 
 ## Sources
 

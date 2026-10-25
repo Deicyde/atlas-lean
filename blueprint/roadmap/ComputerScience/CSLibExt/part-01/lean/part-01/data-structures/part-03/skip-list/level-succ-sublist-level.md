@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.level_succ_sublist_level
 ---
 
-# Level succ sublist level
+# Each skip-list level is a subsequence of the level below
 
-Each upper tower level is a subsequence of the level immediately below it.
+**Each skip-list level is a subsequence of the level below.** For every skip list and every
+level index $i$ (levels are numbered from $0$ at the bottom), the list of key-value pairs visible
+at level $i + 1$ is a subsequence, not necessarily contiguous, of the list of key-value pairs
+visible at level $i$.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Level](level.md)
+- [Skip list](skip-list.md)
+- [Level of a skip list](level.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

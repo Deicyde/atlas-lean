@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.lookup_suffix
 ---
 
-# Lookup suffix
+# Lookup of a suffix returns its starting index
 
-Looking up a terminated suffix in the suffix tree returns its starting index.
+**Lookup of a suffix returns its starting index.** Let $s$ be a list over $\alpha$ and $i$ a
+natural number with $i \le |s|$. Looking up, in the suffix tree of $s$, the terminated string of
+$s$ with its first $i$ symbols removed returns $i$.
 
 ## Depends on
 
-- [Lookup](../radix-trie/lookup.md)
-- [Suffix Tree](suffix-tree.md)
-- [Terminated](terminated.md)
+- [Radix trie lookup](../radix-trie/lookup.md)
+- [Suffix tree](suffix-tree.md)
+- [Terminated string](terminated.md)
 
 ## Proof depends on
 
-- [Lookup build From of mem](../radix-trie/lookup-build-from-of-mem.md)
-- [Nodup terminated drops](nodup-terminated-drops.md)
-- [Suffix Entries](suffix-entries.md)
+- [Lookup in a radix trie built from a list with distinct keys](../radix-trie/lookup-build-from-of-mem.md)
+- [Terminated suffixes are distinct](nodup-terminated-drops.md)
+- [Suffix entries of a string](suffix-entries.md)
 
 ## Sources
 

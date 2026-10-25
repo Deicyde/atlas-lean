@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.mem_orderedInsert
 ---
 
-# Mem ordered Insert
+# Members after ordered insertion
 
-Ordered insertion into a list adds exactly the inserted key.
+**Members after ordered insertion.** Over a linearly ordered type, for all elements $x$, $y$
+and every list $\ell$, the element $y$ belongs to the ordered insertion of $x$ into $\ell$ if and
+only if $y = x$ or $y$ belongs to $\ell$.
 
 ## Depends on
 
-- [Ordered Insert](ordered-insert.md)
+- [Ordered insertion into a list](ordered-insert.md)
 
 ## Sources
 

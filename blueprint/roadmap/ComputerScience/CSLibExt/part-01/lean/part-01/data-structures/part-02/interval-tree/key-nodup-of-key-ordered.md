@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.keyNodup_of_keyOrdered
 ---
 
-# Key Nodup of key Ordered
+# Strictly key-ordered trees have distinct keys
 
-Strict key ordering implies the stored keys are duplicate-free.
+**Strictly key-ordered trees have distinct keys.** If a tree is strictly ordered by key, then
+the keys of its stored entries are pairwise distinct.
 
 ## Depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
-- [Tree](tree.md)
-- [Key Ordered](key-ordered.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Interval tree](tree.md)
+- [Key-ordered interval tree](key-ordered.md)
 
 ## Proof depends on
 
-- [Compare Key](compare-key.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

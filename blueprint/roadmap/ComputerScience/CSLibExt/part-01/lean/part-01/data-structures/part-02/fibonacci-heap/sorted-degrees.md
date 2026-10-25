@@ -12,11 +12,11 @@ The trees of a forest have strictly increasing degrees.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Degree](degree.md)
+- [Degree of a Fibonacci tree](degree.md)
 
 ## Sources
 

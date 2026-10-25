@@ -4,26 +4,26 @@ navigation: module
 
 # Maximum Subarray
 
-- [Is Max Subarray Sum](is-max-subarray-sum.md)
-- [Is Max Suffix Sum](is-max-suffix-sum.md)
-- [Kadane Scan](kadane-scan.md)
-- [Max Subarray Sum](max-subarray-sum.md)
+- [Being the maximum subarray sum](is-max-subarray-sum.md)
+- [Being the maximum suffix sum](is-max-suffix-sum.md)
+- [Kadane's scan](kadane-scan.md)
+- [Kadane's algorithm](max-subarray-sum.md)
 
 ## Cost
 
-- [Kadane Scan time](kadane-scan-time.md)
-- [Max Subarray Sum time](max-subarray-sum-time.md)
+- [Kadane's algorithm](kadane-scan-time.md)
+- [Cost of Kadane's algorithm](max-subarray-sum-time.md)
 
 ## The specification
 
-- [Ne nil](ne-nil.md)
-- [Unique](unique.md)
-- [Concat](concat.md)
-- [Concat](concat-2.md)
+- [Cost of Kadane's algorithm](ne-nil.md)
+- [Uniqueness of the maximum subarray sum](unique.md)
+- [Maximum suffix sum after appending an element](concat.md)
+- [Maximum subarray sum after appending an element](concat-2.md)
 
 ## Correctness
 
-- [Kadane Scan ret](kadane-scan-ret.md)
-- [Max Subarray Sum ret eq some iff](max-subarray-sum-ret-eq-some-iff.md)
-- [Sum le of max Subarray Sum](sum-le-of-max-subarray-sum.md)
-- [Exists sum eq of max Subarray Sum](exists-sum-eq-of-max-subarray-sum.md)
+- [Invariant of Kadane's scan](kadane-scan-ret.md)
+- [Correctness of Kadane's algorithm](max-subarray-sum-ret-eq-some-iff.md)
+- [Kadane's algorithm bounds every nonempty run](sum-le-of-max-subarray-sum.md)
+- [Kadane's algorithm returns an attained sum](exists-sum-eq-of-max-subarray-sum.md)

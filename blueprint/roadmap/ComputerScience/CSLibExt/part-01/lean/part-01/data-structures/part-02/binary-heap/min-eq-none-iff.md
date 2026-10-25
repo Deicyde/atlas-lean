@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.min?_eq_none_iff
 ---
 
-# Min? eq none iff
+# Binary heap minimum lookup fails exactly when empty
 
-Inspection fails exactly for the empty representation.
+**Binary heap minimum lookup fails exactly when empty.** For a binary min-heap $h$ over a
+linearly ordered type, looking up the minimum of $h$ returns no value if and only if the storage
+array of $h$ has size $0$.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Min?](min.md)
+- [Binary min-heap](min-heap.md)
+- [Minimum lookup in a binary heap](min.md)
 
 ## Sources
 

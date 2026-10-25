@@ -20,7 +20,7 @@ $x$ belongs to $L$, $x = k$, or $x$ belongs to $R$.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Mem](../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UniversalHashing.collisionCount_le_card
 ---
 
-# Collision Count le card
+# Collision count is at most the family size
 
-The collision count never exceeds the size of the family.
+**Collision count is at most the family size.** For every finite family $H$ of functions
+from a set $\alpha$ to $\{0, 1, \dots, m - 1\}$ and all keys $x, y \in \alpha$, the number of
+functions $h \in H$ with $h(x) = h(y)$ is at most $|H|$.
 
 ## Depends on
 
-- [Collision Count](collision-count.md)
+- [Collision count](collision-count.md)
 
 ## Sources
 

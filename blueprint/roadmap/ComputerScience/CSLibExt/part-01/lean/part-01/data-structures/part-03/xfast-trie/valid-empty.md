@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.valid_empty
 ---
 
-# Valid empty
+# The empty x-fast trie is valid
 
-The empty trie satisfies the level invariant.
+**The empty x-fast trie is valid.** For every $w$, the empty x-fast trie over $w$-bit keys,
+which has no stored keys and every level empty, is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Valid x-fast trie](valid.md)
+- [The empty x-fast trie](empty.md)
 
 ## Proof depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Prefix Of](prefix-of.md)
+- [x-fast trie](xfast-trie.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

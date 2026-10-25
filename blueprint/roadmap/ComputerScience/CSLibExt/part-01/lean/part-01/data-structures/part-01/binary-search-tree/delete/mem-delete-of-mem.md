@@ -15,7 +15,7 @@ occurs in the tree obtained by deleting $x$ from $t$.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
 - [Deletion from a binary search tree](delete.md)
 
 ## Proof depends on

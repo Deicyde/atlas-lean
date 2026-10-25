@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.add_eq_self_of_le
 ---
 
-# Add eq self of le
+# Out-of-range point updates leave a Fenwick tree unchanged
 
-A point update at an out-of-range position is the identity.
+**Out-of-range point updates leave a Fenwick tree unchanged.** Let $t$ be a Fenwick tree
+over a commutative additive monoid $\alpha$, and let $n$ be its size (the length of its stored
+array minus one). For every natural number $i \ge n$ and every $\delta \in \alpha$, the point
+update of $t$ adding $\delta$ at position $i$ returns $t$ itself.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Add](add.md)
-- [Size](size.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Point update of a Fenwick tree](add.md)
+- [Size of a Fenwick tree](size.md)
 
 ## Proof depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

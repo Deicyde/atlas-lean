@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.push_siftUpReady
 ---
 
-# Push sift Up Ready
+# Appending to a heap-ordered array prepares it for sift-up
 
-Appending to an ordered heap creates exactly the admissible sift-up
-violation at the new last index.
+**Appending to a heap-ordered array prepares it for sift-up.** If an array $a$ of length $n$
+over a linearly ordered type is heap-ordered and $x$ is any value, then the array obtained by
+appending $x$ to $a$ satisfies the sift-up precondition at index $n$, the position of $x$: the
+only edge that may violate heap order is the one entering index $n$.
 
 ## Depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Sift Up Ready](sift-up-ready.md)
+- [Heap order on a level-order array](heap-ordered.md)
+- [Arrays ready for sift-up](sift-up-ready.md)
 
 ## Proof depends on
 
-- [Heap Parent](heap-parent.md)
-- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
+- [The parent of a valid nonroot index is valid](heap-parent-lt-size.md)
 
 ## Sources
 

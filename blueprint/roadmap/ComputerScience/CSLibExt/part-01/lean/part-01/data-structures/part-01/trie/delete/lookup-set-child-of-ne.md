@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_setChild_of_ne
 ---
 
-# Lookup set Child of ne
+# Setting a child leaves the other children unchanged
 
-Lookup at any other key is unchanged by `setChild`.
+**Setting a child leaves the other children unchanged.** Let $L$ be a list of letter–trie
+pairs, $c$ a trie and $a \ne b$ letters, and let $L'$ be obtained from $L$ by setting the child
+at $b$ to $c$ (removing the entries at $b$ instead when $c$ has neither value nor children).
+Then looking up $a$ in $L'$ gives the same result as looking up $a$ in $L$.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Set Child](set-child.md)
+- [Setting a child in a trie's child list](set-child.md)
 
 ## Proof depends on
 
-- [Is Empty Node](is-empty-node.md)
+- [Empty trie nodes](is-empty-node.md)
 
 ## Sources
 

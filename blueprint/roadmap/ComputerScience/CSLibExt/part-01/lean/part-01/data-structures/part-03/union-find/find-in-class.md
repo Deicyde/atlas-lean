@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.find_in_class
 ---
 
-# Find in class
+# Every vertex is equivalent to its representative
 
-Every queried vertex is equivalent to its representative.
+**Every vertex is equivalent to its representative.** For every vertex $x$ of a parent
+forest $F$, the vertex $x$ is equivalent in $F$ to the root that find returns for $x$.
 
 ## Depends on
 
-- [Equivalent](equivalent.md)
-- [Forest](forest.md)
-- [Find](find.md)
+- [Equivalent vertices of a parent forest](equivalent.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Root of a vertex in a parent forest](find.md)
 
 ## Proof depends on
 
-- [Find is Root](find-is-root.md)
+- [Find returns a root](find-is-root.md)
 
 ## Sources
 

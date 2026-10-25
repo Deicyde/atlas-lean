@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BloomFilter.mayContain
 ---
 
-# May Contain
+# Bloom filter membership query
 
-Whether every bit selected for `x` is set, so `x` may have been inserted.
+**Bloom filter membership query.** A Bloom filter reports that an element $x$ may be present
+when bit $h(x)$ is set for every hash function $h$ of the filter, and reports $x$ absent
+otherwise.
 
 ## Depends on
 
-- [Bloom Filter](bloom-filter.md)
+- [Bloom filter](bloom-filter.md)
 
 ## Sources
 

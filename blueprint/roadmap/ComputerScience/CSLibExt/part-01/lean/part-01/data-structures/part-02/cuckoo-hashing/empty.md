@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.empty
 ---
 
-# Empty
+# Empty cuckoo hash table
 
-The empty table, with every slot of both tables vacant.
+**Empty cuckoo hash table.** The empty cuckoo hash table has every slot of both tables
+vacant.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixArray.take_eq_of_le_lcp
 ---
 
-# Take eq of le lcp
+# Common prefixes of every shorter length
 
-Any shorter prefix length also agrees: truncating the common prefix
-of length `lcp x y` at `q ≤ lcp x y` still gives equal prefixes.
+**Common prefixes of every shorter length.** Let $x$ and $y$ be lists and let
+$\mathrm{lcp}(x, y)$ be the length of their longest common prefix. For every natural number
+$q \le \mathrm{lcp}(x, y)$, the first $q$ elements of $x$ and of $y$ agree.
 
 ## Depends on
 
-- [Lcp](lcp.md)
+- [Longest common prefix length](lcp.md)
 
 ## Proof depends on
 
-- [Take lcp eq](take-lcp-eq.md)
+- [Two lists agree on their longest common prefix](take-lcp-eq.md)
 
 ## Sources
 

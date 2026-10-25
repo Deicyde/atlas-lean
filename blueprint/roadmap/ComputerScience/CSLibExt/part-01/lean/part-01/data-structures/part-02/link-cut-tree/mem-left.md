@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_left
 ---
 
-# Mem left
+# The first endpoint of a tree edge is a vertex
 
-The endpoints of an edge of a tree are vertices of the tree.
+**The first endpoint of a tree edge is a vertex.** If $a$ and $b$ are adjacent in a tree
+$t$, that is, joined by a parent-child edge in either direction, then $a$ is a vertex of
+$t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Adjacent](adjacent.md)
+- [Adjacency in a rooted tree](adjacent.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

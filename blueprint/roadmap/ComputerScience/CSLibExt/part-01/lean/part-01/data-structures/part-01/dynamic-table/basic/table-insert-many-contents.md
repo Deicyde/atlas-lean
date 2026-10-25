@@ -16,16 +16,16 @@ $x_1, \dots, x_k$.
 
 ## Depends on
 
-- [Table](table.md)
-- [Well Formed](well-formed.md)
+- [Dynamic table](table.md)
+- [Well-formed dynamic table](well-formed.md)
 - [Contents of a dynamic table](contents.md)
-- [Table Insert Many](table-insert-many.md)
+- [Inserting an array of items into a dynamic table](table-insert-many.md)
 
 ## Proof depends on
 
-- [Table Insert](table-insert.md)
+- [TABLE-INSERT](table-insert.md)
 - [Insertion appends to the contents](table-insert-contents.md)
-- [Table Insert well Formed](table-insert-well-formed.md)
+- [Insertion preserves well-formedness](table-insert-well-formed.md)
 
 ## Sources
 

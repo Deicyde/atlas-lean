@@ -6,23 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.meld
 ---
 
-# Meld
+# Melding Fibonacci heaps
 
-Meld two Fibonacci heaps: concatenate the root lists and keep the smaller cached
-minimum. No linking happens until the next minimum deletion.
+**Melding Fibonacci heaps.** The meld of Fibonacci heaps $H_1$ and $H_2$ is the Fibonacci heap
+whose root list is the root list of $H_1$ followed by that of $H_2$, and whose cached minimum is
+the smaller of the two cached minima when both heaps have one, and otherwise the cached minimum
+of whichever heap has one (none if neither does).
+
+No linking happens until the next minimum deletion.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Min Option](min-option.md)
-- [Min Root](min-root.md)
-- [Min Root append](min-root-append.md)
-- [Valid append](valid-append.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Minimum of two optional values](min-option.md)
+- [Minimum root of a forest](min-root.md)
+- [Minimum root of a concatenated forest](min-root-append.md)
+- [Concatenation preserves validity of Fibonacci forests](valid-append.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

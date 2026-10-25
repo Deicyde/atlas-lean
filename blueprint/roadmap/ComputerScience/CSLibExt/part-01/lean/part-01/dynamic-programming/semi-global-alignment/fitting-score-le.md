@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.fittingScore_le
 ---
 
-# Fitting Score le
+# Upper bounds on the fitting score
 
-A bound on all infix scores bounds the fitting score.
+**Upper bounds on the fitting score.** Let $\sigma$ be a substitution score, $g$ a gap
+score, $x$ and $y$ sequences and $b$ an integer. If the Needleman–Wunsch score of $x$ against
+every infix of $y$ (with $\sigma$ and $g$) is at most $b$, then the fitting score of $x$
+against $y$ is at most $b$.
 
 ## Depends on
 
-- [Fitting Score](fitting-score.md)
+- [Fitting score](fitting-score.md)
 - [Infixes](infixes.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

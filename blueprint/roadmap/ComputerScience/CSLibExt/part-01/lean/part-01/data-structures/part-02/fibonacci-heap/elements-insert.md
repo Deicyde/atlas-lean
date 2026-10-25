@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_insert
 ---
 
-# Elements insert
+# Insertion adds one occurrence
 
-Insertion adds exactly one occurrence.
+**Insertion adds one occurrence.** For every Fibonacci heap $H$ over a linearly ordered type
+and every value $x$, the heap obtained by inserting $x$ into $H$ represents the multiset of $H$
+with one more occurrence of $x$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Insert](insert.md)
+- [Insertion into a Fibonacci heap](insert.md)
 
 ## Proof depends on
 
-- [Elements meld](elements-meld.md)
-- [Meld](meld.md)
+- [Melding adds the elements](elements-meld.md)
+- [Melding Fibonacci heaps](meld.md)
 - [Singleton](singleton-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
-- [Singleton](singleton.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [One-element Fibonacci heap](singleton.md)
 
 ## Sources
 

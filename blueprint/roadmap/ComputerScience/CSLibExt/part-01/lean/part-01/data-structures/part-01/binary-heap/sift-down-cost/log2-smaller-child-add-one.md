@@ -16,13 +16,13 @@ level-order binary tree stored in $a$, the node $c$ lies exactly one level below
 
 ## Depends on
 
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
 
 ## Sources
 

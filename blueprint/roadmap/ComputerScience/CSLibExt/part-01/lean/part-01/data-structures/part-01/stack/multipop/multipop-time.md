@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Stack.multipop_time
 ---
 
-# Multipop time
+# Cost of MULTIPOP
 
-The actual loop costs one unit per available element in the requested prefix.
+**Cost of MULTIPOP.** For every stack $S$ and every natural number $k$, the cost of MULTIPOP
+of $S$ with count $k$ is $\min(|S|, k)$, where $|S|$ is the number of elements of $S$.
 
 ## Depends on
 
-- [Multipop](multipop.md)
+- [MULTIPOP](multipop.md)
 
 ## Sources
 

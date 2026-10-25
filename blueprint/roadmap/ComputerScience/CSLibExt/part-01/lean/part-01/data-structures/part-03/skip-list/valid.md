@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SkipList.Valid
 ---
 
-# Valid
+# Valid skip list
 
-Keys are strictly increasing and every stored tower has positive height.
+**Valid skip list.** Let $\alpha$ be a linearly ordered type. A skip list with keys in
+$\alpha$ and values in $\beta$ is valid when the keys of its bottom-level nodes are strictly
+increasing along the list and every node has a tower of positive height.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
+- [Skip list](skip-list.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

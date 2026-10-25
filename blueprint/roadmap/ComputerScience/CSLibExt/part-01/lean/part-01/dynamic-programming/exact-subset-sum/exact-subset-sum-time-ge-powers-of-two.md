@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_time_ge_powers_of_two
 ---
 
-# Exact Subset Sum time ge powers of two
+# Exponential lower bound for exact subset sum on powers of two
 
-The actual shifted additions alone establish exponential growth on powers-of-two inputs.
+**Exponential lower bound for exact subset sum on powers of two.** For every
+$n \in \mathbb{N}$, the exact subset-sum procedure on the list $(2^0, 2^1, \dots, 2^{n-1})$
+(empty when $n = 0$) with target $2^n - 1$ makes at least $2^n - 1$ counted events.
 
 ## Depends on
 
-- [Exact Subset Sum](exact-subset-sum.md)
+- [Exact subset sum procedure](exact-subset-sum.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
-- [Exact Subset Sum Sums powers of two](exact-subset-sum-sums-powers-of-two.md)
-- [Exact Subset Sum time](exact-subset-sum-time.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
+- [Prefixes of the powers of two attain every sum](exact-subset-sum-sums-powers-of-two.md)
+- [Event count of exact subset sum](exact-subset-sum-time.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ $x \in t$, where $x \in t$ means that $x$ is the key of some node of $t$.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [All iff forall mem](../../part-02/binary-search-tree/all-iff-forall-mem.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../../part-02/binary-search-tree/all-iff-forall-mem.md)
 
 ## Sources
 

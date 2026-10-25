@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.SameSideFar
 ---
 
-# Same Side Far
+# Same-side points far apart
 
-Two points of the same side are at squared distance at least `δ`.
+**Same-side points far apart.** For a real $\delta$, two tagged points $a$ and $b$ are
+same-side far apart when, if $a$ and $b$ carry the same side, the squared distance between their
+points is at least $\delta$.
 
 ## Depends on
 
-- [Tagged](tagged.md)
+- [Side-tagged points](tagged.md)
 
 ## Proof depends on
 

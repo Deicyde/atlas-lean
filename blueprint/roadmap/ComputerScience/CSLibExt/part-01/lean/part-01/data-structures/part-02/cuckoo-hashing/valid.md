@@ -6,15 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.Valid
 ---
 
-# Valid
+# Placement invariant of a cuckoo hash table
 
-The placement invariant: an entry in the first table sits at `h1` of its key, and an entry
-in the second table sits at `h2` of its key. This is what lets `lookup` check only two
-slots.
+**Placement invariant of a cuckoo hash table.** A cuckoo hash table with hash functions
+$h_1, h_2$ satisfies the placement invariant when every pair $(k, v)$ in slot $i$ of the first
+table has $i = h_1(k)$, and every pair $(k, v)$ in slot $i$ of the second table has
+$i = h_2(k)$.
+
+This is what lets lookup check only two slots.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
 
 ## Sources
 

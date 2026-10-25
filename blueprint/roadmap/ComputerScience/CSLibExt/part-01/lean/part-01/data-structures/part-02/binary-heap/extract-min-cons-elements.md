@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.extractMin_cons_elements
 ---
 
-# Extract Min cons elements
+# Binary heap extraction splits off the minimum
 
-A successful extraction partitions the original multiset into its result
-and the returned heap, without using multiset erasure.
+**Binary heap extraction splits off the minimum.** Let $h$ be a binary min-heap over a linearly
+ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$ and the heap
+$h'$, then the multiset of elements of $h$ equals the multiset of elements of $h'$ with one copy
+of $x$ added.
+
+The statement is phrased by adding $x$ back, not by erasing it from the multiset of $h$.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Elements](elements.md)
-- [Extract Min](extract-min.md)
+- [Binary min-heap](min-heap.md)
+- [Elements of a binary min-heap](elements.md)
+- [Extracting the minimum of a binary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Empty](empty.md)
-- [Extract Tail](extract-tail.md)
-- [Move Last To Root](move-last-to-root.md)
-- [Move Last To Root sift Down Ready](move-last-to-root-sift-down-ready.md)
-- [Sift Down](sift-down.md)
-- [Sift Down ordered](sift-down-ordered.md)
-- [Sift Down perm](sift-down-perm.md)
+- [Heap order on a level-order array](heap-ordered.md)
+- [Empty binary min-heap](empty.md)
+- [Removing the root of a nonempty binary min-heap](extract-tail.md)
+- [Moving the last entry to the root](move-last-to-root.md)
+- [Moving the last entry to the root prepares a sift-down](move-last-to-root-sift-down-ready.md)
+- [Sift-down](sift-down.md)
+- [Sift-down restores heap order](sift-down-ordered.md)
+- [Binary-heap sift-down permutes the array](sift-down-perm.md)
 
 ## Sources
 

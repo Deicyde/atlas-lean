@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isAlignment_smallAlign
 ---
 
-# Is Alignment small Align
+# The base-case alignment is valid
 
-The base case is valid.
+**The base-case alignment is valid.** For every substitution score $\sigma$ assigning an
+integer to each pair of letters, integer gap score $g$ and sequences $x$, $y$ with
+$|x| \le 1$ and $|y| \le 1$, the base-case alignment of $x$ and $y$ is a valid alignment of
+$x$ and $y$.
 
 ## Depends on
 
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Small Align](small-align.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Base-case alignment for Hirschberg](small-align.md)
 
 ## Proof depends on
 

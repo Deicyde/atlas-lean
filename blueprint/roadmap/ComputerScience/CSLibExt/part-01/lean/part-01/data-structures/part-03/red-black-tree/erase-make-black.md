@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.erase_makeBlack
 ---
 
-# Erase make Black
+# Recoloring the root black does not change the color erasure
 
-Recoloring the root black is invisible after erasing colors.
+**Recoloring the root black does not change the color erasure.** For every red-black
+tree $t$, the color erasure of the tree obtained from $t$ by recoloring its root black (the empty
+tree is left unchanged) equals the color erasure of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Erase](erase.md)
-- [Make Black](make-black.md)
+- [Red-black tree data type](tree.md)
+- [Color erasure](erase.md)
+- [Blackening the root](make-black.md)
 
 ## Proof depends on
 
-- [Color](color.md)
+- [Red-black node colors](color.md)
 
 ## Sources
 

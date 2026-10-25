@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditScript.Transforms
 ---
 
-# Transforms
+# An edit script transforming one list into another
 
-A script transforms a source when its executable interpretation returns the target.
+**An edit script transforming one list into another.** Over a type with a boolean equality
+test, an edit script transforms a list $x$ into a list $y$ when running the script on $x$
+succeeds and outputs $y$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A script transforms a source when its executable interpretation returns the targ
 
 ## Proof depends on
 
-- [Apply?](apply.md)
+- [Running an edit script](apply.md)
 
 ## Sources
 

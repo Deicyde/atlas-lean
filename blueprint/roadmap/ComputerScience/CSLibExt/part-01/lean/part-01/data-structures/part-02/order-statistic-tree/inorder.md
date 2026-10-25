@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.inorder
 ---
 
-# Inorder
+# Inorder traversal of an order-statistic tree
 
-Inorder traversal is inherited from the prerequisite BST.
+**Inorder traversal of an order-statistic tree.** The inorder traversal of an
+order-statistic tree is the inorder traversal of the binary tree obtained by erasing its cached
+subtree sizes: the traversal of the left subtree, then the root key, then the traversal of the
+right subtree, and the empty list for the empty tree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Inorder](../binary-search-tree/inorder.md)
-- [Erase](erase.md)
+- [Inorder traversal of a binary tree](../binary-search-tree/inorder.md)
+- [Erasing the size caches of an order-statistic tree](erase.md)
 
 ## Sources
 

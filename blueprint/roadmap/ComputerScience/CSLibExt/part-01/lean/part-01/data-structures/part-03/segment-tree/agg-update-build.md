@@ -7,23 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.agg_update_build
 ---
 
-# Agg update build
+# Aggregate after a point update of a built segment tree
 
-The root aggregate after updating a built tree is the sum of the updated list.
+**Aggregate after a point update of a built segment tree.** Let $L = (x_0, \dots, x_{n-1})$
+be a list with entries in an additive monoid, let $i < n$, and let $y$ be an element of the
+monoid. Applying the point update at index $i$ with value $y$ to the segment tree built from $L$
+gives a tree whose aggregate is the sum, taken from left to right, of the list obtained from $L$
+by replacing $x_i$ with $y$.
 
 ## Depends on
 
-- [Agg](agg.md)
-- [Build](build.md)
-- [Update](update.md)
+- [Aggregate of a segment tree](agg.md)
+- [Building a segment tree from a list](build.md)
+- [Point update of a segment tree](update.md)
 
 ## Proof depends on
 
-- [Update](update-2.md)
-- [Agg eq sum to List](agg-eq-sum-to-list.md)
-- [To List](to-list.md)
-- [To List update build](to-list-update-build.md)
-- [Valid build](valid-build.md)
+- [Point update preserves validity](update-2.md)
+- [Aggregate of a valid segment tree](agg-eq-sum-to-list.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Point update of a built segment tree](to-list-update-build.md)
+- [Built segment trees are valid](valid-build.md)
 
 ## Sources
 

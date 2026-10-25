@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.indexForwardOK
 ---
 
-# Index Forward OK
+# Forward identifier-index check
 
-Every stored occurrence agrees with its identifier-index entry.
+**Forward identifier-index check.** For an indexed interval tree, the forward index check
+returns true exactly when the identifier index maps the identifier of every stored entry to the low
+endpoint of that entry's interval.
 
 ## Depends on
 
-- [Indexed Interval Tree](indexed-interval-tree.md)
+- [Indexed interval tree](indexed-interval-tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Sources
 

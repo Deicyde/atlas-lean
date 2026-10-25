@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.CacheCorrect
 ---
 
-# Cache Correct
+# Correct size caches
 
-Cached sizes are correct at every node.
+**Correct size caches.** An order-statistic tree has correct size caches when, at every
+node, the cached subtree size equals the number of nodes of the left subtree plus the number of
+nodes of the right subtree plus one, that is, the number of nodes of the subtree rooted at that
+node. The empty tree has correct size caches.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Order-statistic tree node entry](entry.md)
 
 ## Sources
 

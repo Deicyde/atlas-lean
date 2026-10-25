@@ -17,15 +17,15 @@ has cost $(0, 0)$: it makes no value comparisons and no array swaps.
 ## Depends on
 
 - [Sift-down with comparison and swap counts](sift-down.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
 - [Timed child selection returns the smaller child](ret-timed-smaller-child.md)
 - [Child selection at a node without children costs nothing](time-timed-smaller-child-of-none.md)
 - [Timed smaller-child selection](timed-smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

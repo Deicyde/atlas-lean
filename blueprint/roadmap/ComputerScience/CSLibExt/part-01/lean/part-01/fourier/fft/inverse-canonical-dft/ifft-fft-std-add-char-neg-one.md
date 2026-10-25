@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ifft_fft_stdAddChar_neg_one
 ---
 
-# Ifft fft std Add Char neg one
+# Inverse FFT after FFT is the identity at the negative-sign root
 
-Execute the actual negative forward and inverse procedures on every admitted vector.
+**Inverse FFT after FFT is the identity at the negative-sign root.** Let $N = 2^d$ and let
+$\omega = e^{-2\pi i/N}$, the value at $-1$ of the standard additive character of
+$\mathbb{Z}/N\mathbb{Z}$. For every $x \in \mathbb{C}^N$, running the FFT procedure on $x$ with
+root $\omega$ and then the inverse FFT procedure on its output with root $\omega$ returns $x$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Ifft](../inverse/ifft.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Inverse FFT by conjugation](../inverse/ifft.md)
 
 ## Proof depends on
 
-- [Fft std Add Char neg one](../canonical-dft/fft-std-add-char-neg-one.md)
-- [Ifft std Add Char neg one](ifft-std-add-char-neg-one.md)
+- [The radix-two FFT with root $e^{-2\pi i/n}$ computes the DFT](../canonical-dft/fft-std-add-char-neg-one.md)
+- [Inverse FFT at the negative-sign root computes the inverse DFT](ifft-std-add-char-neg-one.md)
 
 ## Sources
 

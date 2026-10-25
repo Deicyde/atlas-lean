@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.prefixPairs
 ---
 
-# Prefix Pairs
+# Pairs of prefixes
 
-All prefix pairs of `xs` and `ys`, as a list of pairs.
+**Pairs of prefixes.** For lists $xs$ and $ys$, the list of all pairs $(p, q)$ where $p$ is
+a prefix of $xs$ and $q$ is a prefix of $ys$, the empty lists and $xs$, $ys$ themselves
+included.
 
 ## Depends on
 

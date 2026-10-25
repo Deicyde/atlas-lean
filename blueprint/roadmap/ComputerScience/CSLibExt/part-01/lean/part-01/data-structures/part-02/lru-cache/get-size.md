@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_size
 ---
 
-# Get size
+# Lookup preserves the size
 
-`get` does not change the number of stored entries.
+**Lookup preserves the size.** For every LRU cache and every key $k$, the cache after
+looking up $k$ holds exactly as many entries as before.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Size of an LRU cache](size.md)
 
 ## Proof depends on
 
-- [Get perm](get-perm.md)
+- [A lookup permutes the entries](get-perm.md)
 
 ## Sources
 

@@ -17,14 +17,14 @@ order, is again well formed.
 
 ## Depends on
 
-- [Table](table.md)
-- [Well Formed](well-formed.md)
-- [Table Insert Many](table-insert-many.md)
+- [Dynamic table](table.md)
+- [Well-formed dynamic table](well-formed.md)
+- [Inserting an array of items into a dynamic table](table-insert-many.md)
 
 ## Proof depends on
 
-- [Table Insert](table-insert.md)
-- [Table Insert well Formed](table-insert-well-formed.md)
+- [TABLE-INSERT](table-insert.md)
+- [Insertion preserves well-formedness](table-insert-well-formed.md)
 
 ## Sources
 

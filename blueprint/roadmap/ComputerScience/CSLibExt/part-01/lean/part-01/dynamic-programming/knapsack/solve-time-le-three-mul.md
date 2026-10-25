@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.solve_time_le_three_mul
 ---
 
-# Solve time le three mul
+# Pseudo-polynomial cost bound for knapsack
 
-For positive capacity, the exact pseudo-polynomial cost is at most `3 * n * W`.
+**Pseudo-polynomial cost bound for knapsack.** For every list of $n$ knapsack items and every
+capacity $W \in \mathbb{N}$ with $W \ge 1$, the bottom-up knapsack algorithm costs at most $3nW$
+ticks.
 
 ## Depends on
 
-- [Item](item.md)
-- [Result](result.md)
-- [Solve](solve.md)
+- [Knapsack item](item.md)
+- [Knapsack result](result.md)
+- [Bottom-up zero-one knapsack algorithm](solve.md)
 
 ## Proof depends on
 
-- [Solve time](solve-time.md)
+- [Exact cost of the knapsack algorithm](solve-time.md)
 
 ## Sources
 

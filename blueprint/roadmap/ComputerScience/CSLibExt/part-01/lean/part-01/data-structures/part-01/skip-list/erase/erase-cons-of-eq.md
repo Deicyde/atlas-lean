@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.erase_cons_of_eq
 ---
 
-# Erase cons of eq
+# Erasing the key of the first entry
 
-Erasure removes the matching head entry and returns its existing tail.
+**Erasing the key of the first entry.** Let $e$ be a skip-list entry and $L$ a list of
+entries, and consider the skip list whose entry list is $e$ followed by $L$. If a key $k$ equals
+the key of $e$, then erasing $k$ from this skip list leaves the entry list $L$.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/skip-list.md)
-- [Entry](../../../part-03/skip-list/entry.md)
-- [Erase](erase.md)
+- [Skip list](../../../part-03/skip-list/skip-list.md)
+- [Skip-list node](../../../part-03/skip-list/entry.md)
+- [Skip-list erasure](erase.md)
 
 ## Sources
 

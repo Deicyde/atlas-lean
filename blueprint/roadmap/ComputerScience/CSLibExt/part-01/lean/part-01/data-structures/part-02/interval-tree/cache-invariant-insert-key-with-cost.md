@@ -7,27 +7,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_insertKeyWithCost
 ---
 
-# Cache Invariant insert Key With Cost
+# Keyed insertion preserves the interval-tree cache invariant
 
-Key insertion preserves attained maximum caches, including replacement.
+**Keyed insertion preserves the interval-tree cache invariant.** Let $T$ be an interval tree
+satisfying the cache invariant (every cached maximum high endpoint, height and size is exact), and
+let $e$ be an entry. The tree returned by keyed insertion of $e$ into $T$ (the tree component of
+the result; the cost is ignored) also satisfies the cache invariant. This includes the case where
+an entry with the same key is replaced.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Insert Key With Cost](insert-key-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Keyed insertion with cost](insert-key-with-cost.md)
 
 ## Proof depends on
 
-- [Key](key.md)
+- [Search key of an interval entry](key.md)
 - [Interval](interval.md)
-- [Cache Invariant mk Node](cache-invariant-mk-node.md)
-- [Cache Invariant rebalance With Cost](cache-invariant-rebalance-with-cost.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Compare Key](compare-key.md)
+- [The interval-tree smart constructor preserves the cache invariant](cache-invariant-mk-node.md)
+- [Rebalancing preserves the interval-tree cache invariant](cache-invariant-rebalance-with-cost.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

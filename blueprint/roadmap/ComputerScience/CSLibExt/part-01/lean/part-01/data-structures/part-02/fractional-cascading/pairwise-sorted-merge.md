@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.pairwise_sortedMerge
 ---
 
-# Pairwise sorted Merge
+# A sorted merge is sorted
 
-A sorted merge is sorted.
+**A sorted merge is sorted.** For any lists $\ell_1$ and $\ell_2$ over a linear order, sorted
+or not, their sorted merge is sorted in nondecreasing order.
 
 ## Depends on
 

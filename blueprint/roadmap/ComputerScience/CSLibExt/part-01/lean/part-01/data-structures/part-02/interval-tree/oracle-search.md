@@ -6,19 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.oracleSearch
 ---
 
-# Oracle Search
+# Linear-scan overlap search
 
-A separate full-traversal oracle used only by specifications and tests.
+**Linear-scan overlap search.** For a tree $T$ and a query interval $q$, the oracle search
+returns the first entry, in the in-order list of entries of $T$, whose interval overlaps $q$ as
+closed intervals, and returns nothing when no entry's interval overlaps $q$.
+
+It is a separate full-traversal oracle used only by specifications and tests.
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Overlaps](overlaps-2.md)
+- [Overlap test for closed intervals](overlaps-2.md)
 
 ## Sources
 

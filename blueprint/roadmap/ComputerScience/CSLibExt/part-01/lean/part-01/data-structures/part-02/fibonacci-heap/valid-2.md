@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.Valid
 ---
 
-# Valid
+# Valid Fibonacci forests
 
-A Fibonacci forest is valid when every tree in it is valid. Root degrees may repeat;
-consolidation below is what makes them distinct.
+**Valid Fibonacci forests.** Let $\alpha$ carry a relation $\le$. A Fibonacci forest,
+a list of Fibonacci trees with values in $\alpha$, is valid when every tree in it is a valid
+Fibonacci tree.
+
+Root degrees may repeat; consolidation is what makes them distinct.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
+- [Valid Fibonacci trees](valid.md)
 
 ## Sources
 

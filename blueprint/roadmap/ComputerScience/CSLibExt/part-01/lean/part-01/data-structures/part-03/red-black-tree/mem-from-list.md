@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.mem_fromList
 ---
 
-# Mem from List
+# Membership in a red-black tree built from a list
 
-A key is in a tree built from a list exactly when it is in the list.
+**Membership in a red-black tree built from a list.** For keys from a linearly ordered type and
+every list $xs$, a key $x$ is a member of the red-black tree built from $xs$ by successive
+insertion if and only if $x$ occurs in $xs$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [From List](from-list.md)
+- [Membership in a red-black tree](mem.md)
+- [Red-black tree data type](tree.md)
+- [Red-black tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
-- [Mem insert](mem-insert.md)
+- [Red-black tree insertion](insert.md)
+- [Membership after insertion into a red-black tree](mem-insert.md)
 
 ## Sources
 

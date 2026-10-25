@@ -6,15 +6,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.Valid
 ---
 
-# Valid
+# Valid Euler-tour tree
 
-Forest validity: every vertex occurs at most once in the tree. Raw
-`Tree`s may repeat vertex labels; the dynamic-forest interpretation of
-`link` requires `Valid` inputs with disjoint vertex sets.
+**Valid Euler-tour tree.** A rooted ordered tree is valid when its list of vertices in
+preorder has no duplicates, that is, every vertex label occurs at most once in the tree.
+
+Raw trees may repeat vertex labels; reading the linking of two trees as a link in a dynamic
+forest requires valid trees with disjoint vertex sets.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 
 ## Proof depends on
 

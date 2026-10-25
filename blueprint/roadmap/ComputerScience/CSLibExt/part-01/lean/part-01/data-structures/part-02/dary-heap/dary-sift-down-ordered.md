@@ -7,28 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySiftDown_ordered
 ---
 
-# Dary Sift Down ordered
+# Sifting down restores $d$-ary heap order
 
-Sifting down an array with admissible outgoing-edge violations restores
-the local `d`-ary heap-order invariant.
+**Sifting down restores $d$-ary heap order.** Let $\alpha$ be a linearly ordered type, let
+$d \ge 2$, and let $a$ be an array over $\alpha$ that is ready for $d$-ary sifting down at an
+index $i$. Then the array produced by $d$-ary sifting down from index $i$ in $a$ is $d$-ary heap
+ordered.
 
 ## Depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Sift Down Ready](dary-sift-down-ready.md)
-- [Dary Sift Down](dary-sift-down.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Readiness for $d$-ary sift-down](dary-sift-down-ready.md)
+- [$d$-ary sift-down](dary-sift-down.md)
 
 ## Proof depends on
 
-- [Dary Child](dary-child.md)
-- [Dary Parent](dary-parent.md)
-- [Dary Parent child](dary-parent-child.md)
-- [Dary Parent lt](dary-parent-lt.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
-- [Dary Smallest Child](dary-smallest-child.md)
-- [Dary Smallest Child From](dary-smallest-child-from.md)
-- [Dary Smallest Child gt](dary-smallest-child-gt.md)
-- [Dary Smallest Child valid](dary-smallest-child-valid.md)
+- [Child index in a $d$-ary heap array](dary-child.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [The parent of a $d$-ary child](dary-parent-child.md)
+- [A $d$-ary parent has a smaller index](dary-parent-lt.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
+- [Smallest child in a $d$-ary heap array](dary-smallest-child.md)
+- [Smallest child among the offsets from $s$](dary-smallest-child-from.md)
+- [The smallest child lies after its parent](dary-smallest-child-gt.md)
+- [The smallest child is a valid index](dary-smallest-child-valid.md)
 
 ## Sources
 

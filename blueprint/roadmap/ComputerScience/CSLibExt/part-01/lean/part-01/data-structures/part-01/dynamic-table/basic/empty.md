@@ -13,7 +13,7 @@ and item count $0$. It models a table before its first allocation.
 
 ## Depends on
 
-- [Table](table.md)
+- [Dynamic table](table.md)
 
 ## Sources
 

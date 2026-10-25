@@ -6,13 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.chunkGroups
 ---
 
-# Chunk Groups
+# Chunking a list into groups
 
-Split a list into consecutive chunks (groups) of length at most `B`.
-The length bound holds only for `0 < B` (see `chunkGroups_spec`): at
-`B = 0` this degenerates to a single chunk `[l]` for nonempty `l`
-(`chunkGroups_zero_of_ne`), whose length exceeds `0`. Callers needing the
-bound must supply `0 < B`.
+**Chunking a list into groups.** Given a bound $B$ and a list $l$ of $w$-bit keys, when
+$B > 0$ the chunking of $l$ cuts $l$ from the left into consecutive chunks of exactly $B$
+elements each, except that the last chunk holds the remaining one to $B$ elements; there are no
+chunks when $l$ is empty. When $B = 0$, the chunking has no chunks if $l$ is empty and is the
+single chunk $l$ otherwise.
+
+So every chunk has at most $B$ elements when $B > 0$, but not when $B = 0$ and $l$ is
+nonempty.
 
 ## Depends on
 
@@ -20,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chunk Groups Aux](chunk-groups-aux.md)
+- [Fuel-bounded chunking](chunk-groups-aux.md)
 
 ## Sources
 

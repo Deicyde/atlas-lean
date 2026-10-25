@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixArray.pairwise_suffix_suffixArray
 ---
 
-# Pairwise suffix suffix Array
+# The suffix array sorts the suffixes
 
-The suffixes in suffix-array order are pairwise sorted in lexicographic order.
+**The suffix array sorts the suffixes.** For a list $s$ over a linearly ordered alphabet,
+the suffixes of $s$ taken in suffix-array order are sorted lexicographically: whenever an index
+$i$ comes before an index $j$ in the suffix array of $s$, the suffix of $s$ starting at $i$ is
+lexicographically less than or equal to the suffix of $s$ starting at $j$.
 
 ## Depends on
 
 - [Suffix](suffix.md)
-- [Suffix Array](suffix-array.md)
+- [Suffix array](suffix-array.md)
 
 ## Sources
 

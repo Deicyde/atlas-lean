@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.searchAll_eq_map_lowerBound
 ---
 
-# Search All eq map lower Bound
+# Correctness of searching every catalog
 
-`searchAll` computes the lower-bound specification in every catalog.
+**Correctness of searching every catalog.** For a value $x$ and a list of catalogs
+$c_1, \dots, c_k$, searching every catalog for $x$ returns the list whose $i$-th entry is the
+lower bound of $x$ in $c_i$, that is, the number of elements of $c_i$ that are $< x$.
 
 ## Depends on
 
-- [Lower Bound](lower-bound.md)
-- [Search All](search-all.md)
+- [Lower bound of a value in a catalog](lower-bound.md)
+- [Searching every catalog](search-all.md)
 
 ## Proof depends on
 
-- [Count LT](count-lt.md)
-- [Count LT eq lower Bound](count-lt-eq-lower-bound.md)
+- [Scan count of smaller elements](count-lt.md)
+- [The scan count equals the lower bound](count-lt-eq-lower-bound.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.moveLastToRoot_elements
 ---
 
-# Move Last To Root elements
+# Moving the last entry to the root removes the old root
 
-Last-to-root replacement removes exactly one occurrence of the old root.
+**Moving the last entry to the root removes the old root.** For a nonempty array $a$ over a
+linearly ordered type, the multiset of entries of the array obtained from $a$ by moving its last
+entry to the root equals the multiset of entries of $a$ with one occurrence of $a_0$ removed.
 
 ## Depends on
 
-- [Move Last To Root](move-last-to-root.md)
+- [Moving the last entry to the root](move-last-to-root.md)
 
 ## Sources
 

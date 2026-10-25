@@ -7,32 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.mem_cut
 ---
 
-# Mem cut
+# Both sides of a cut remain in the forest
 
-After `cut x`, the detached subtree occurs in the forest with root
-`x`, so `x` itself remains a vertex, as does every vertex of its old tree
-on the other side of the cut. The duplicate-free hypothesis is the
-validity side condition under which pruning partitions the vertex set
-(`mem_vertices_pruneAt_of_mem_not_mem`).
+**Both sides of a cut remain in the forest.** Let $s$ be a link-cut tree state, let $x$ and
+$y$ be vertices, and let $t$ be the first tree of the represented forest of $s$ that contains
+$x$. Suppose no vertex occurs twice in $t$, and let $T_x$ be the subtree of $t$ rooted at $x$.
+If $y$ is a vertex of $t$ but not of $T_x$, then after cutting $s$ at $x$ both $x$ and $y$ are
+vertices of the represented forest.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [State](state.md)
-- [Mem](mem.md)
-- [Cut](cut.md)
-- [Find Subtree](find-subtree.md)
-- [Find Tree](find-tree.md)
+- [Link-cut tree state](state.md)
+- [Vertex of a link-cut tree state](mem.md)
+- [Cutting off the subtree at a vertex](cut.md)
+- [Subtree rooted at a vertex](find-subtree.md)
+- [Tree of a forest containing a vertex](find-tree.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Mem vertices prune At of mem not mem](mem-vertices-prune-at-of-mem-not-mem.md)
-- [Prune At](prune-at.md)
-- [Remove Tree](remove-tree.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Pruning keeps the vertices outside the detached subtree](mem-vertices-prune-at-of-mem-not-mem.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
 
 ## Sources
 

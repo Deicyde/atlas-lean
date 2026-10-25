@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.Feasible
 ---
 
-# Feasible
+# Feasible knapsack selection
 
-A selected set is feasible when its total weight does not exceed the capacity.
+**Feasible knapsack selection.** For knapsack items $x_0, \dots, x_{n-1}$ with weights $w_i$
+and a capacity $W \in \mathbb{N}$, a set $S \subseteq \{0, \dots, n - 1\}$ of item indices is
+feasible when its total weight $\sum_{i \in S} w_i$ is at most $W$.
 
 ## Depends on
 
-- [Item](item.md)
+- [Knapsack item](item.md)
 
 ## Proof depends on
 
-- [Total Weight](total-weight.md)
+- [Total weight of a knapsack selection](total-weight.md)
 
 ## Sources
 

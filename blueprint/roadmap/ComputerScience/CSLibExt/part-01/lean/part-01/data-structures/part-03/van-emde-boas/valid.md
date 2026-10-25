@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.Valid
 ---
 
-# Valid
+# Summary invariant of a van Emde Boas tree
 
-The summary bit of a cluster is set exactly when the cluster is nonempty.
+**Summary invariant of a van Emde Boas tree.** A two-level van Emde Boas tree $t$ with $m$
+clusters is valid when, for every cluster index $i < m$, summary bit $i$ of $t$ is set exactly when
+cluster $i$ of $t$ is nonempty, that is, when some bit $j < m$ of cluster $i$ is set.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
 
 ## Sources
 

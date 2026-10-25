@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_right
 ---
 
-# Mem right
+# The second endpoint of a tree edge is a vertex
 
-The right endpoint of an edge is a vertex of the tree.
+**The second endpoint of a tree edge is a vertex.** If $a$ and $b$ are adjacent in a tree
+$t$, that is, joined by a parent-child edge in either direction, then $b$ is a vertex of
+$t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Adjacent](adjacent.md)
+- [Adjacency in a rooted tree](adjacent.md)
 
 ## Proof depends on
 
-- [Mem left](mem-left.md)
-- [Symm](symm.md)
+- [The first endpoint of a tree edge is a vertex](mem-left.md)
+- [Adjacency in a tree is symmetric](symm.md)
 
 ## Sources
 

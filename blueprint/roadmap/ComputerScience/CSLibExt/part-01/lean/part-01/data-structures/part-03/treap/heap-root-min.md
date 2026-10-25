@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.heap_root_min
 ---
 
-# Heap root min
+# The root of a heap-ordered tree has minimal priority
 
-Every node in a heap-ordered nonempty tree has priority at least its root.
+**The root of a heap-ordered tree has minimal priority.** If a nonempty tree whose root
+has priority $p$ is heap-ordered, then every node of the tree, the root included, has
+priority at least $p$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [All Nodes](all-nodes.md)
-- [Heap Ordered](heap-ordered.md)
+- [Treap trees](tree.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Heap order of treap priorities](heap-ordered.md)
 
 ## Sources
 

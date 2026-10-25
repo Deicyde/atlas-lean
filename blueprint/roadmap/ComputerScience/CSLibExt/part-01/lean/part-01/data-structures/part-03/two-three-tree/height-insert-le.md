@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.height_insert_le
 ---
 
-# Height insert le
+# Insertion raises the height of a 2-3 tree by at most one
 
-Insertion grows the stored height by at most one.
+**Insertion raises the height of a 2-3 tree by at most one.** For linearly ordered keys,
+every key $x$ and every 2-3 tree root $t$, the stored height of the root obtained by inserting
+$x$ into $t$ is at most the stored height of $t$ plus one.
 
 ## Depends on
 
-- [Root](root.md)
-- [Insert](insert.md)
+- [2-3 trees of unspecified height](root.md)
+- [Insertion into a 2-3 tree root](insert.md)
 
 ## Proof depends on
 
-- [Overflow](overflow.md)
-- [Tree](tree.md)
-- [Ins](ins.md)
+- [Insertion results for 2-3 trees](overflow.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Insertion into a height-indexed 2-3 tree](ins.md)
 
 ## Sources
 

@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.nodup_rootPath
 ---
 
-# Nodup root Path
+# Root paths have distinct vertices
 
-A root path in a duplicate-free tree has distinct vertices.
+**Root paths have distinct vertices.** If the preorder vertex list of a rooted tree $t$
+has no repeated vertex and $p$ is the path from the root of $t$ down to a vertex $x$, then
+$p$ has no repeated vertex.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Root Path](root-path.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Mem root Path](mem-root-path.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Root paths stay inside the tree](mem-root-path.md)
 
 ## Sources
 

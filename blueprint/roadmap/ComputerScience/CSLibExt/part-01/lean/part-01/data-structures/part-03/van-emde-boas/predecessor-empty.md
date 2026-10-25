@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor_empty
 ---
 
-# Predecessor empty
+# Predecessor queries in the empty van Emde Boas tree
 
-The empty tree has no predecessor for any element.
+**Predecessor queries in the empty van Emde Boas tree.** For every $x$ in the universe
+$\{0, \dots, m^2 - 1\}$, the predecessor query for $x$ in the empty two-level van Emde Boas tree
+returns no element.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Predecessor](predecessor.md)
+- [Empty van Emde Boas tree](empty.md)
+- [Predecessor query in a two-level van Emde Boas tree](predecessor.md)
 
 ## Proof depends on
 
-- [Member](member.md)
-- [Member empty](member-empty.md)
-- [Predecessor eq none iff](predecessor-eq-none-iff.md)
-- [Valid empty](valid-empty.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [The empty van Emde Boas tree has no members](member-empty.md)
+- [Empty predecessor query in a van Emde Boas tree](predecessor-eq-none-iff.md)
+- [The empty van Emde Boas tree is valid](valid-empty.md)
 
 ## Sources
 

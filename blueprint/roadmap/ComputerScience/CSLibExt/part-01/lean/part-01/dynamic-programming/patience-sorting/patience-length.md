@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.patienceLength
 ---
 
-# Patience Length
+# Patience sorting
 
-The length of a longest strictly increasing subsequence, by patience sorting.
+**Patience sorting.** Given a list $xs$ over a linear order, patience sorting runs the patience
+scan of $xs$ starting from the empty array of tails and returns the size of the resulting array.
+Its cost is the number of comparisons made by the scan.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Patience Scan](patience-scan.md)
+- [Patience scan](patience-scan.md)
 
 ## Sources
 

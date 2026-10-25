@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftConjugate
 ---
 
-# Fft Conjugate
+# Charged entrywise conjugation
 
-Materialize every conjugated entry and charge its read, conjugation and write.
+**Charged entrywise conjugation.** For a type with a star operation $z \mapsto \bar z$ and a
+vector $x = (x_0, \dots, x_{n-1})$ of length $n$ over it, this costed computation returns
+$(\bar x_0, \dots, \bar x_{n-1})$ and charges $3n$ operations: one read, one conjugation and one
+write per entry.
 
 ## Depends on
 

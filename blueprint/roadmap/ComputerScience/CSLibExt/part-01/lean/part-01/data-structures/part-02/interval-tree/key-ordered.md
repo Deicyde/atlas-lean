@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.KeyOrdered
 ---
 
-# Key Ordered
+# Key-ordered interval tree
 
-Full key ordering: every left-subtree key is below the node key and
-every right-subtree key is above it.
+**Key-ordered interval tree.** The empty tree is key-ordered, and a node is key-ordered when
+both of its subtrees are key-ordered, the key of every entry in the left subtree is strictly less
+than the key of the node's entry, and the key of the node's entry is strictly less than the key of
+every entry in the right subtree. Keys are compared lexicographically: low endpoint first, then
+identifier.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
-- [Compare Key](compare-key.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

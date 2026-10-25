@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.Valid.delete
 ---
 
-# Delete
+# Deletion preserves trie validity
 
-Deletion preserves the trie invariant.
+**Deletion preserves trie validity.** If a trie $t$ is valid, that is, every node has distinct
+child keys and valid child tries, then for every key $k$ the trie obtained from $t$ by deleting
+$k$ is valid.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Valid](../../../part-03/trie/valid.md)
-- [Delete](delete.md)
+- [Valid trie](../../../part-03/trie/valid.md)
+- [Deletion from a trie](delete.md)
 
 ## Proof depends on
 
-- [Set Child](set-child.md)
-- [Set Child valid](set-child-valid.md)
+- [Setting a child in a trie's child list](set-child.md)
+- [Setting a child preserves the child-list part of validity](set-child-valid.md)
 
 ## Sources
 

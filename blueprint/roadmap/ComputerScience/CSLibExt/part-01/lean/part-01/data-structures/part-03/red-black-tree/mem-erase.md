@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.mem_erase
 ---
 
-# Mem erase
+# Red-black membership is membership in the underlying binary tree
 
-Membership in a red-black tree is `BinarySearchTree` membership in its
-color-erased tree, by definition.
+**Red-black membership is membership in the underlying binary tree.** For every red-black tree
+$t$ and every $x$, $x$ is a member of $t$ if and only if $x$ is a member of the binary tree obtained
+from $t$ by erasing its colors.
+
+This holds by definition.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Erase](erase.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Membership in a red-black tree](mem.md)
+- [Red-black tree data type](tree.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

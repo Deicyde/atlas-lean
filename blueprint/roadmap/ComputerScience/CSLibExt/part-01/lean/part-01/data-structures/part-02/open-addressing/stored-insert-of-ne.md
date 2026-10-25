@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.stored_insert_of_ne
 ---
 
-# Stored insert of ne
+# Open-addressing insertion leaves other keys' bindings unchanged
 
-A successful insert changes no other key's stored binding: for `other ≠ key`,
-`other ↦ otherValue` is stored after the insert exactly when it was stored
-before. No validity assumption is needed; the insert writes a single slot,
-previously empty or previously holding `key`, and leaves every other slot
-unchanged.
+**Open-addressing insertion leaves other keys' bindings unchanged.** Let $T$ be an
+open-addressing hash table, and suppose that inserting the binding $k \mapsto v$ into $T$
+succeeds and yields the table $T'$. Then for every key $k' \neq k$ and every value $v'$, the
+table $T'$ stores $k' \mapsto v'$ if and only if $T$ stores $k' \mapsto v'$.
+
+No validity assumption is needed: the insertion writes a single slot, previously empty or
+previously holding $k$, and leaves every other slot unchanged.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Stored](stored.md)
-- [Insert](insert.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Stored binding in an open-addressing table](stored.md)
+- [Insertion into an open-addressing table](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
+- [Bounded insertion scan](insert-aux.md)
 
 ## Sources
 

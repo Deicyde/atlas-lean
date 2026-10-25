@@ -4,6 +4,6 @@ navigation: module
 
 # Longest Common Subsequence
 
-- [Longest Common Subsequence](longest-common-subsequence.md)
-- [Longest Common Subsequence correct](longest-common-subsequence-correct.md)
-- [Longest Common Subsequence time](longest-common-subsequence-time.md)
+- [Longest common subsequence by dynamic programming](longest-common-subsequence.md)
+- [Correctness of the longest common subsequence algorithm](longest-common-subsequence-correct.md)
+- [Running time of the longest common subsequence algorithm](longest-common-subsequence-time.md)

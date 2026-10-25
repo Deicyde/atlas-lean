@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.allNodes_key_iff
 ---
 
-# All Nodes key iff
+# Treap all-nodes predicate on keys via key membership
 
-For predicates depending only on keys, `AllNodes` is key-membership quantification.
+**Treap all-nodes predicate on keys via key membership.** Let $p$ be a predicate on keys and
+let $t$ be a tree. Then the key of every node of $t$ satisfies $p$ if and only if $p(k)$ holds
+for every key $k$ that occurs in $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [All Nodes](all-nodes.md)
-- [Mem Key](mem-key.md)
+- [Treap trees](tree.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Key membership in a treap tree](mem-key.md)
 
 ## Sources
 

@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UniversalHashing.modPrimeHashes
 ---
 
-# Mod Prime Hashes
+# Indexed mod-prime family
 
-The mod-prime family as functions indexed by pairs `(a, b)` with `a ≠ 0`.
+**Indexed mod-prime family.** For natural numbers $p$ and $m$ with $m > 0$, the indexed
+mod-prime family assigns to each index $(a, b)$, with $a, b \in \mathbb{Z}/p\mathbb{Z}$ and
+$a \neq 0$, the mod-prime hash function
+$h_{a,b} \colon \mathbb{Z}/p\mathbb{Z} \to \{0, \dots, m - 1\}$.
 
 ## Depends on
 
-- [Mod Prime Index](mod-prime-index.md)
+- [Mod-prime index set](mod-prime-index.md)
 
 ## Proof depends on
 
-- [Mod Prime Hash](mod-prime-hash.md)
+- [Mod-prime hash function](mod-prime-hash.md)
 
 ## Sources
 

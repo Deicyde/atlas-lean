@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.Stored
 ---
 
-# Stored
+# Binding stored in a cuckoo hash table
 
-The binding `key ↦ value` is held in some slot of either table.
+**Binding stored in a cuckoo hash table.** A key $k$ is stored with value $v$ in a cuckoo hash
+table when the pair $(k, v)$ occupies some slot of the first table or some slot of the second
+table.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
 
 ## Sources
 

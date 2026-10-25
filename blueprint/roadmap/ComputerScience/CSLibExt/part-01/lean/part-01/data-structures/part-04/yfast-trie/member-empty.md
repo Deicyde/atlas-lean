@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.member_empty
 ---
 
-# Member empty
+# The empty grouped y-fast trie has no members
 
-Nothing is a member of the empty trie.
+**The empty grouped y-fast trie has no members.** For all natural numbers $w$ and $B$ and
+every $w$-bit key $x$, the membership query on the empty grouped y-fast trie over $w$-bit keys
+with group bound $B$ returns false at $x$.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Member](member.md)
+- [The empty grouped y-fast trie](empty.md)
+- [Membership query of a grouped y-fast trie](member.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
-- [Member iff](member-iff.md)
-- [Valid empty](valid-empty.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Correctness of the y-fast trie membership query](member-iff.md)
+- [The empty grouped y-fast trie is valid](valid-empty.md)
 
 ## Sources
 

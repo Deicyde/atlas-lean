@@ -7,27 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.ordered_merge
 ---
 
-# Ordered merge
+# Merging separated ordered order-statistic trees preserves order
 
-Merging separated trees preserves the prerequisite BST ordering invariant.
+**Merging separated ordered order-statistic trees preserves order.** Let $\alpha$ be a
+linearly ordered type and let $L$ and $R$ be ordered order-statistic trees over $\alpha$ such
+that $x < y$ for every key $x$ of $L$ and every key $y$ of $R$. Then the merge of $L$ and $R$
+is ordered.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
-- [Merge](merge.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered order-statistic tree](../../../part-02/order-statistic-tree/ordered.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
+- [Merging order-statistic trees](merge.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
-- [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [Mem inorder](../../../part-02/binary-search-tree/mem-inorder.md)
-- [Entry](../../../part-02/order-statistic-tree/entry.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Membership in the inorder traversal of a binary tree](../../../part-02/binary-search-tree/mem-inorder.md)
+- [Order-statistic tree node entry](../../../part-02/order-statistic-tree/entry.md)
 
 ## Sources
 

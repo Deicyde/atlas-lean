@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.heapParent_lt_size
 ---
 
-# Heap Parent lt size
+# The parent of a valid nonroot index is valid
 
-A nonroot node's parent is a valid index whenever the node is.
+**The parent of a valid nonroot index is valid.** For an array $a$ of length $|a|$ and an index
+$i$ with $0 < i < |a|$, the parent index $\lfloor (i-1)/2 \rfloor$ of $i$ is also less than
+$|a|$.
 
 ## Depends on
 
-- [Heap Parent](heap-parent.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
 
 ## Sources
 

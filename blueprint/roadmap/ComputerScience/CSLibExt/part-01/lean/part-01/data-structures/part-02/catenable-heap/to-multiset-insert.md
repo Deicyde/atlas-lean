@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_insert
 ---
 
-# To Multiset insert
+# Insertion adds one copy of the element
 
-`insert x h` adds `x` to the multiset of `h`.
+**Insertion adds one copy of the element.** For every element $x$ and every catenable heap $h$,
+the multiset of elements of the heap returned by inserting $x$ into $h$ is the multiset of
+elements of $h$ with one more copy of $x$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Insert](insert.md)
-- [To Multiset](to-multiset.md)
+- [Catenable heap](catenable-heap.md)
+- [Insertion into a catenable heap](insert.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
 
 ## Proof depends on
 
-- [To Multiset cons](to-multiset-cons.md)
+- [Multiset of a front node](to-multiset-cons.md)
 
 ## Sources
 

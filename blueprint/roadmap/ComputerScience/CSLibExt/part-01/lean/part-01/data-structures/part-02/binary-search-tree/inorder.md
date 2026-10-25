@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.inorder
 ---
 
-# Inorder
+# Inorder traversal of a binary tree
 
-The linear-time inorder traversal of a tree.
+**Inorder traversal of a binary tree.** The inorder traversal of a binary tree $t$ is the
+accumulated inorder traversal of $t$ onto the empty list. Equivalently, the empty tree gives the
+empty list, and a node with key $k$, left subtree $L$ and right subtree $R$ gives the inorder
+traversal of $L$, then $k$, then the inorder traversal of $R$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inorder Aux](inorder-aux.md)
+- [Inorder traversal of a binary tree with an accumulator](inorder-aux.md)
 
 ## Sources
 

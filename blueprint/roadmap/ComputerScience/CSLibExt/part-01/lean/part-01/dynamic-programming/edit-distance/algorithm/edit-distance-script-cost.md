@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_script_cost
 ---
 
-# Edit Distance script cost
+# The returned edit script realizes the distance
 
-The returned script's unit cost is the reported distance.
+**The returned edit script realizes the distance.** For lists $s$ and $t$ over a type with a
+Boolean equality test, the unit cost of the edit script returned by the edit distance algorithm
+on $s$ and $t$ equals the distance it returns.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
 - [Edit Script](../script/edit-script.md)
-- [Cost](../script/cost-2.md)
-- [Edit Distance](edit-distance.md)
+- [Cost of an edit script](../script/cost-2.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Proof depends on
 
-- [Edit Step](../script/edit-step.md)
-- [Cost](../script/cost.md)
+- [Edit step](../script/edit-step.md)
+- [Unit cost of an edit step](../script/cost.md)
 
 ## Sources
 

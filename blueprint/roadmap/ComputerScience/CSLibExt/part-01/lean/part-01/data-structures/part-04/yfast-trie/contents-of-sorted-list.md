@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.contents_ofSortedList
 ---
 
-# Contents of Sorted List
+# Keys of the grouped y-fast trie built from a list
 
-The trie built from a list stores exactly that list.
+**Keys of the grouped y-fast trie built from a list.** For every group bound $B$ (including
+$B = 0$) and every list $l$ of $w$-bit keys, sorted or not, the key set of the grouped y-fast
+trie built from $l$ with group bound $B$ is exactly the set of elements of $l$.
 
 ## Depends on
 
-- [Contents](contents.md)
-- [Of Sorted List](of-sorted-list.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Grouped y-fast trie from a sorted list](of-sorted-list.md)
 
 ## Proof depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
-- [Chunk Groups](chunk-groups.md)
-- [Flatten chunk Groups](flatten-chunk-groups.md)
-- [Of Groups](of-groups.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
+- [Chunking a list into groups](chunk-groups.md)
+- [Chunking preserves the list](flatten-chunk-groups.md)
+- [Grouped y-fast trie from a list of groups](of-groups.md)
 
 ## Sources
 

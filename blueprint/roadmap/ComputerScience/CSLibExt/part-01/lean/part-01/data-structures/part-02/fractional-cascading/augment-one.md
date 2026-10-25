@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.augmentOne
 ---
 
-# Augment One
+# Augmenting a catalog by the next one
 
-One augmented catalog: the merge of a catalog with the sample of the next
-augmented catalog.
+**Augmenting a catalog by the next one.** For catalogs $c$ and $a$, the augmentation of $c$
+by $a$ is the sorted merge of $c$ with the sample of $a$ (every other element of $a$, starting
+with the first). In fractional cascading, $a$ is the next augmented catalog.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 - [Sorted Merge](sorted-merge.md)
 
 ## Sources

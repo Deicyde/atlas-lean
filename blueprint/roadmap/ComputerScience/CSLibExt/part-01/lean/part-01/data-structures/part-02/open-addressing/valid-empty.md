@@ -7,18 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.valid_empty
 ---
 
-# Valid empty
+# The empty open-addressing table is valid
 
-The empty table satisfies the probe-closed invariant.
+**The empty open-addressing table is valid.** For all types $K$ and $V$, every number of
+slots $m$ and every probe sequence $p$, which assigns to each key $k$ and each $i \in \mathbb{N}$
+a slot $p(k, i) \in \{0, \dots, m - 1\}$, the empty table with $m$ slots and probe sequence $p$,
+in which every slot is vacant, is valid: it is probe-closed and no key is stored in two
+different slots.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Valid open-addressing tables](valid.md)
+- [Empty open-addressing table](empty.md)
 
 ## Proof depends on
 
-- [Open Addressing](open-addressing.md)
+- [Open-addressing hash table](open-addressing.md)
 
 ## Sources
 

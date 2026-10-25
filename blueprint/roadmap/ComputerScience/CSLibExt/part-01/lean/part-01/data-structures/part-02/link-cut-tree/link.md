@@ -6,28 +6,30 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.link
 ---
 
-# Link
+# Linking two trees of a link-cut tree state
 
-Link the represented trees of `x` and `y` with the new edge `x`-`y`,
-as in the textbook operation: the tree of `x` is first rerooted at `x`
-(`rerootAt`, so `x` becomes its root with every old edge kept) and then
-grafted as a new child subtree of `y` (`graftAt`), adding exactly the edge
-from `y` to `x`. Linking two vertices of the same tree, or a vertex
-outside the forest, leaves the forest unchanged. Preferred edges are
-reset.
+**Linking two trees of a link-cut tree state.** Given vertices $x$ and $y$ and a state $s$,
+the state $\operatorname{link}(x, y, s)$ has no preferred edges (all edges dashed), and its
+forest is defined as follows. If $x$ or $y$ is not a vertex of the forest, the forest is
+unchanged. Otherwise let $t_x$ and $t_y$ be the first represented trees containing $x$ and $y$.
+If $x$ is a vertex of $t_y$, the forest is unchanged. Otherwise $t_x$ is rerooted at $x$ (the
+edges on its old root-to-$x$ path are reversed, so $x$ becomes its root), the result is
+attached as a new last child subtree of the first node labelled $y$ in $t_y$, which adds the
+edge from $y$ to $x$, and this joined tree replaces every tree containing $x$ or $y$, placed at
+the end of the forest.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Find Tree](find-tree.md)
-- [Graft At](graft-at.md)
-- [Remove Tree](remove-tree.md)
-- [Reroot At](reroot-at.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Grafting a tree below a vertex](graft-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
 
 ## Sources
 

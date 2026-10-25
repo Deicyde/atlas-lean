@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums_length_le_pow
 ---
 
-# Exact Subset Sum Sums length le pow
+# The number of computed sums is at most two to the power of the input length
 
-The distinct computed sums are bounded by the number of positional sublists.
+**The number of computed sums is at most two to the power of the input length.** For every
+list $x$ of natural numbers, of length $n$, and every natural number $t$, the final list of sums
+computed by the exact subset sum traversal on $x$ with target $t$ has length at most $2^n$.
 
 ## Depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
-- [Exact Subset Sum Sums sorted](exact-subset-sum-sums-sorted.md)
+- [Characterization of the exact subset sum list](exact-subset-sum-sums-mem.md)
+- [The exact subset sum list is strictly increasing](exact-subset-sum-sums-sorted.md)
 
 ## Sources
 

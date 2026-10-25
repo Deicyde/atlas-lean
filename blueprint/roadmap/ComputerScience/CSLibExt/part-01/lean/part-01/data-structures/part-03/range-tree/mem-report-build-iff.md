@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.mem_report_build_iff
 ---
 
-# Mem report build iff
+# Range report membership on a built tree
 
-Membership in the report on a built tree, stated on the input list.
+**Range report membership on a built tree.** For every list $L$ of integers and all integers
+$a$, $b$ and $x$, the value $x$ occurs in the range report for $[a, b]$ on the range tree built
+from $L$ if and only if $x$ is an entry of $L$ and $a \le x \le b$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Report](report.md)
+- [Building a range tree from a list](build.md)
+- [Range report](report.md)
 
 ## Proof depends on
 
-- [Bounds Ok build](bounds-ok-build.md)
-- [Mem report iff](mem-report-iff.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
+- [Built range trees are bounds-valid](bounds-ok-build.md)
+- [Membership in a range report](mem-report-iff.md)
+- [Leaf list of a range tree](to-list.md)
+- [Building a range tree preserves the list](to-list-build.md)
 
 ## Sources
 

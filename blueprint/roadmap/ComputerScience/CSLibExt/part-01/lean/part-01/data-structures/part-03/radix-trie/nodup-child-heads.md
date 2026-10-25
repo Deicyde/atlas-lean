@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.Valid.nodup_child_heads
 ---
 
-# Nodup child heads
+# Sibling edge labels start with distinct symbols
 
-A valid node has no duplicate edge first symbols.
+**Sibling edge labels start with distinct symbols.** If a radix-trie node with child edges
+$(\ell_1, t_1), \dots, (\ell_n, t_n)$ is valid, then the first symbols of the labels
+$\ell_1, \dots, \ell_n$ are pairwise distinct.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Valid](valid.md)
+- [Radix trie](radix-trie.md)
+- [Valid radix trie](valid.md)
 
 ## Proof depends on
 
-- [Root Compact](root-compact.md)
+- [Path-compressed root](root-compact.md)
 
 ## Sources
 

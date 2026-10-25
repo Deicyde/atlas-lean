@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.tourAux_eq
 ---
 
-# Tour Aux eq
+# Accumulator lemma for the Euler tour
 
-The accumulator tour appends the tour onto its accumulator.
+**Accumulator lemma for the Euler tour.** For every tree $t$ and every list $a$ of vertices,
+the Euler tour of $t$ with accumulator $a$ equals the Euler tour of $t$ followed by $a$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Tour](tour.md)
-- [Tour Aux](tour-aux.md)
+- [Rooted ordered tree](tree.md)
+- [Euler tour](tour.md)
+- [Euler tour with an accumulator](tour-aux.md)
 
 ## Proof depends on
 
-- [Children ind](children-ind.md)
+- [Induction principle for rooted trees](children-ind.md)
 
 ## Sources
 

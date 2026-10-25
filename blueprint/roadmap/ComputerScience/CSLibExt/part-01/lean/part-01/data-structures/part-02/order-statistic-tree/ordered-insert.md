@@ -7,23 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.ordered_insert
 ---
 
-# Ordered insert
+# Insertion preserves ordering of order-statistic trees
 
-Insertion preserves the prerequisite BST ordering invariant.
+**Insertion preserves ordering of order-statistic trees.** Let $T$ be an order-statistic
+tree over a linearly ordered key type that is ordered, meaning that after its cached sizes are
+erased, at every node each key of the left subtree is strictly smaller than the node's key and
+each key of the right subtree is strictly larger. Then for every key $k$, the tree obtained by
+inserting $k$ into $T$ is again ordered.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Ordered order-statistic tree](ordered.md)
+- [Order-statistic tree](tree.md)
+- [Insertion into an order-statistic tree](insert.md)
 
 ## Proof depends on
 
-- [Ordered](../binary-search-tree/ordered.md)
-- [Insert](../binary-search-tree/insert.md)
-- [Ordered insert](../binary-search-tree/ordered-insert.md)
-- [Erase](erase.md)
-- [Erase insert](erase-insert.md)
+- [Ordered binary trees](../binary-search-tree/ordered.md)
+- [Insertion into a binary search tree](../binary-search-tree/insert.md)
+- [Binary search tree insertion preserves order](../binary-search-tree/ordered-insert.md)
+- [Erasing the size caches of an order-statistic tree](erase.md)
+- [Insertion commutes with forgetting the size caches](erase-insert.md)
 
 ## Sources
 

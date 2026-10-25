@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.singleton
 ---
 
-# Singleton
+# One-element Fibonacci heap
 
-A degree-zero tree containing one value.
+**One-element Fibonacci heap.** For a value $x$ of a linearly ordered type, the one-element
+Fibonacci heap on $x$ has as its only tree the single-node tree with root $x$, and its cached
+minimum is $x$.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

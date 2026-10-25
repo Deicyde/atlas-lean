@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.represents_contents_isSome
 ---
 
-# Represents contents is Some
+# Represented lists have no missing contents
 
-In a represented list every content entry is present.
+**Represented lists have no missing contents.** Fix a capacity $n$, let $s$ be a store
+assigning to each identity below $n$ either nothing or a singly linked list node, and let
+$\mathrm{head}$ be an identity below $n$ or NIL. If $s$ and $\mathrm{head}$ represent the list of
+identities $i_0, \dots, i_{k-1}$, then every entry of the contents of $s$ at $i_0, \dots, i_{k-1}$
+is a payload rather than nothing.
 
 ## Depends on
 
-- [Node](node.md)
-- [Represents](represents.md)
-- [Contents](contents.md)
+- [Singly linked list node](node.md)
+- [Store representing a singly linked list](represents.md)
+- [Payload list of a singly linked list store](contents.md)
 
 ## Proof depends on
 
-- [Represents allocated](represents-allocated.md)
+- [Represented identities hold nodes](represents-allocated.md)
 
 ## Sources
 

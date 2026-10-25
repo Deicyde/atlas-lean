@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.inorder_nodup
 ---
 
-# Inorder nodup
+# The inorder traversal of a binary search tree has no duplicates
 
-The inorder traversal of an ordered tree has no duplicate keys.
+**The inorder traversal of a binary search tree has no duplicates.** For a linearly ordered
+type $\alpha$ and a binary tree $t$ with keys in $\alpha$ that is ordered (recursively, every key
+in the left subtree of a node is strictly smaller than the node's key and every key in its right
+subtree is strictly larger), the inorder traversal of $t$ is a list with no repeated entries.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Inorder](inorder.md)
+- [Ordered binary trees](ordered.md)
+- [Inorder traversal of a binary tree](inorder.md)
 
 ## Proof depends on
 
-- [Ordered inorder](ordered-inorder.md)
+- [The inorder traversal of an ordered binary tree is strictly increasing](ordered-inorder.md)
 
 ## Sources
 

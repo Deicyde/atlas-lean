@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.prefixOf_full
 ---
 
-# Prefix Of full
+# The full-length prefix of a key is the key
 
-The full-length prefix of a key is the key itself.
+**The full-length prefix of a key is the key.** For every $w$-bit key $x < 2^w$, the
+length-$w$ prefix of $x$ equals $x$.
 
 ## Depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

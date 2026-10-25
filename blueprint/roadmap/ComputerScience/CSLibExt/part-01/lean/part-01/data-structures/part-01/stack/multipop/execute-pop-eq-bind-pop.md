@@ -7,15 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Stack.execute_pop_eq_bind_pop
 ---
 
-# Execute pop eq bind pop
+# Running a POP agrees with the standalone POP
 
-Sequence POP agrees with the standalone operation, including underflow.
+**Running a POP agrees with the standalone POP.** For every stack $S$ and every finite
+sequence $\sigma$ of stack operations, running POP followed by $\sigma$ on $S$ has the same result
+and cost as first performing the standalone POP on $S$ and then, if it reports underflow,
+stopping with an error at no further cost, or, if it removes the top element and leaves the stack
+$S'$, running $\sigma$ on $S'$, the two costs being added.
 
 ## Depends on
 
-- [Operation](operation.md)
-- [Execute](execute.md)
-- [Pop](../basic/pop.md)
+- [Stack operations for the MULTIPOP aggregate analysis](operation.md)
+- [Running a sequence of stack operations](execute.md)
+- [Stack pop](../basic/pop.md)
 
 ## Sources
 

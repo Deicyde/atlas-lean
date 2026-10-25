@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.inorder_merge
 ---
 
-# Inorder merge
+# Inorder traversal of an order-statistic merge
 
-The inorder traversal of a merge is the concatenation of the traversals.
+**Inorder traversal of an order-statistic merge.** For order-statistic trees $A$ and $B$, the
+inorder traversal of the merge of $A$ and $B$ is the inorder traversal of $A$ followed by the
+inorder traversal of $B$. No ordering between the keys of $A$ and $B$ is assumed.
 
 ## Depends on
 
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Inorder](../../../part-02/order-statistic-tree/inorder.md)
-- [Merge](merge.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Inorder traversal of an order-statistic tree](../../../part-02/order-statistic-tree/inorder.md)
+- [Merging order-statistic trees](merge.md)
 
 ## Proof depends on
 
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [Entry](../../../part-02/order-statistic-tree/entry.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Order-statistic tree node entry](../../../part-02/order-statistic-tree/entry.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
 
 ## Sources
 

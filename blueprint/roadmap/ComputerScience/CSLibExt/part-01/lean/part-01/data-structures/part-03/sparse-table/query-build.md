@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.query_build
 ---
 
-# Query build
+# Correctness of sparse table queries
 
-A query on a built table is `List.min?` of the corresponding list slice,
-with no ordering premise on the bounds.
+**Correctness of sparse table queries.** Let $a = (a_0, \dots, a_{n-1})$ be a list over a
+linearly ordered type and let $l, r$ be natural numbers with $r \le n$. Then the range-minimum
+query over $[l, r)$ on the sparse table built from $a$ returns the minimum of the slice
+$(a_l, \dots, a_{r-1})$ (none when $r \le l$, where the slice is empty).
+
+No ordering premise $l \le r$ is needed.
 
 ## Depends on
 
-- [Build](build.md)
-- [Query](query.md)
+- [Building a sparse table](build.md)
+- [Sparse table range-minimum query](query.md)
 
 ## Proof depends on
 
-- [Sparse Table](sparse-table.md)
-- [Build valid](build-valid.md)
-- [Query eq of valid](query-eq-of-valid.md)
+- [Sparse table](sparse-table.md)
+- [Built sparse tables are valid](build-valid.md)
+- [Correctness of queries on valid sparse tables](query-eq-of-valid.md)
 
 ## Sources
 

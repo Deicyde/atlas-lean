@@ -15,16 +15,16 @@ in `Valid`. Use `0 < B` (see `valid_ofSortedList`).
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Of Sorted List](of-sorted-list.md)
+- [Validity of a grouped y-fast trie](valid.md)
+- [Grouped y-fast trie from a sorted list](of-sorted-list.md)
 
 ## Proof depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
-- [Group Ordered](group-ordered.md)
-- [Chunk Groups zero of ne](chunk-groups-zero-of-ne.md)
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Valid](../../part-03/xfast-trie/valid.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
+- [Ordered list of groups](group-ordered.md)
+- [Chunking with bound zero](chunk-groups-zero-of-ne.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Valid x-fast trie](../../part-03/xfast-trie/valid.md)
 
 ## Sources
 

@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_keys_nodup
 ---
 
-# Get keys nodup
+# Lookups keep keys distinct
 
-`get` preserves key uniqueness.
+**Lookups keep keys distinct.** For every LRU cache and every key $k$, the keys of the cache
+obtained by looking up $k$ are pairwise distinct.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Keys](keys.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Key list of an LRU cache](keys.md)
 
 ## Proof depends on
 
-- [Keys nodup](keys-nodup.md)
+- [Keys of an LRU cache are distinct](keys-nodup.md)
 
 ## Sources
 

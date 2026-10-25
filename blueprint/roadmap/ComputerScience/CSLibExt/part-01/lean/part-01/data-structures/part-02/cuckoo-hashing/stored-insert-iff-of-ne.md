@@ -7,25 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.stored_insert_iff_of_ne
 ---
 
-# Stored insert iff of ne
+# Cuckoo insertion preserves the bindings of other keys
 
-A successful insertion or replacement preserves exactly the bindings of
-every other key: for `other ≠ key`, a binding is stored after the operation
-if and only if it was stored before. The forward direction covers both
-replacement paths and the eviction loop; the backward direction rules out
-new unrelated bindings.
+**Cuckoo insertion preserves the bindings of other keys.** Let $T$ be a cuckoo hash table with hash
+functions $h_1$ and $h_2$ that satisfies the placement invariant. Suppose inserting (or replacing)
+the binding $k \mapsto v$ in $T$ with fuel $f$ succeeds and returns the table $T'$. Then for every
+key $k' \ne k$ and every value $v'$, the binding $k' \mapsto v'$ is stored in $T'$ if and only if
+it is stored in $T$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash insertion](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
-- [Slot Has Key](slot-has-key.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

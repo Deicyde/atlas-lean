@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.suffixScan_spec
 ---
 
-# Suffix Scan spec
+# Correctness of the suffix scan
 
-One scan from the right gives the total and the best nonempty suffix sum.
+**Correctness of the suffix scan.** Let $\alpha$ be an additive monoid with a linear order. For
+every nonempty list $xs$ over $\alpha$, the suffix scan of $xs$ returns a pair whose first
+component is the sum of $xs$ and whose second component is the maximum sum of a nonempty suffix
+of $xs$.
 
 ## Depends on
 
-- [Is Max Suffix Sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
-- [Suffix Scan](suffix-scan.md)
+- [Being the maximum suffix sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
+- [Right-to-left suffix scan](suffix-scan.md)
 
 ## Sources
 

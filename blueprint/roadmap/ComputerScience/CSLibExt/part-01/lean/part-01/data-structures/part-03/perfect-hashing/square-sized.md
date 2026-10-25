@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.SquareSized
 ---
 
-# Square Sized
+# FKS square sizing rule
 
-The FKS sizing rule: every bucket's secondary table has size the square of the
-number of keys in the bucket, `mᵢ = nᵢ²`.
+**FKS square sizing rule.** A two-level perfect hash table with $b$ buckets is square-sized when,
+for every bucket $i < b$, the size $m_i$ of its secondary table equals $n_i^2$, where $n_i$ is the
+number of occupied slots of that secondary table.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
+- [Two-level perfect hash table](perfect-hashing.md)
 
 ## Proof depends on
 
-- [Bucket Size](bucket-size.md)
+- [Occupancy of a perfect-hashing bucket](bucket-size.md)
 
 ## Sources
 

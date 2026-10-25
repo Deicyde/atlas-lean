@@ -4,5 +4,5 @@ navigation: module
 
 # Inverse Cost
 
-- [Ifft time add one](ifft-time-add-one.md)
-- [Ifft time le](ifft-time-le.md)
+- [Exact operation count of the inverse FFT](ifft-time-add-one.md)
+- [Operation bound for the inverse FFT](ifft-time-le.md)

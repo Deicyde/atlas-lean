@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.dequeueCost
 ---
 
-# Dequeue Cost
+# Modeled cost of a dequeue
 
-The modeled cost of dequeueing: one unit plus the number of elements reversed.
+**Modeled cost of a dequeue.** For a queue stored as an enqueue list and a dequeue list, the
+modeled cost of dequeueing is $1$ when the dequeue list is nonempty, and $m + 1$ when the dequeue
+list is empty, where $m$ is the length of the enqueue list (the number of elements reversed when
+they are moved to the dequeue list).
 
 ## Depends on
 

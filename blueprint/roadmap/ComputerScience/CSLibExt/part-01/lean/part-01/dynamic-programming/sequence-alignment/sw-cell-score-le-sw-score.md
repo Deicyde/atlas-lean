@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.swCellScore_le_swScore
 ---
 
-# Sw Cell Score le sw Score
+# Each prefix-pair cell is at most the Smith–Waterman score
 
-A prefix pair's cell score is at most the Smith–Waterman score.
+**Each prefix-pair cell is at most the Smith–Waterman score.** For a substitution score
+$\sigma$, a gap score $g$, sequences $x$ and $y$, a prefix $p$ of $x$ and a prefix $q$ of $y$,
+the terminal Smith–Waterman cell $H(p, q)$ is at most the Smith–Waterman score of $x$ and $y$.
 
 ## Depends on
 
-- [Prefix Pairs](prefix-pairs.md)
-- [Sw Cell Score](sw-cell-score.md)
+- [Pairs of prefixes](prefix-pairs.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
 - [The Smith–Waterman score](sw-score.md)
 
 ## Proof depends on
 
-- [List Max](list-max.md)
+- [Maximum of an integer list with floor zero](list-max.md)
 
 ## Sources
 

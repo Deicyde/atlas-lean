@@ -6,27 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isAlignment_hirschbergAlign
 ---
 
-# Is Alignment hirschberg Align
+# Hirschberg reconstruction with enough fuel is valid
 
-Hirschberg reconstruction returns a valid alignment.
+**Hirschberg reconstruction with enough fuel is valid.** For every substitution score
+$\sigma$ assigning an integer to each pair of letters, integer gap score $g$, natural number
+$n$ and sequences $x$, $y$ with $|x| + |y| \le n$, the Hirschberg reconstruction of $x$ and
+$y$ with fuel $n$ is a valid alignment of $x$ and $y$.
 
 ## Depends on
 
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Hirschberg Align](hirschberg-align.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Hirschberg reconstruction with fuel](hirschberg-align.md)
 
 ## Proof depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Best Argmax](best-argmax.md)
-- [Best Argmax le](best-argmax-le.md)
-- [Hirschberg Align small](hirschberg-align-small.md)
-- [Hirschberg Align split xs](hirschberg-align-split-xs.md)
-- [Hirschberg Align split ys](hirschberg-align-split-ys.md)
-- [Is Alignment append](../sequence-alignment/is-alignment-append.md)
-- [Is Alignment small Align](is-alignment-small-align.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Small Align](small-align.md)
+- [Argmax over an initial segment](best-argmax.md)
+- [The argmax over $\{0, \dots, n\}$ is at most $n$](best-argmax-le.md)
+- [Hirschberg reconstruction on lists of length at most one](hirschberg-align-small.md)
+- [Hirschberg reconstruction splits the longer first list](hirschberg-align-split-xs.md)
+- [Hirschberg recursion step splitting the second sequence](hirschberg-align-split-ys.md)
+- [Concatenation of alignments](../sequence-alignment/is-alignment-append.md)
+- [The base-case alignment is valid](is-alignment-small-align.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Base-case alignment for Hirschberg](small-align.md)
 
 ## Sources
 

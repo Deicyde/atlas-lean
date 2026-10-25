@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.replaceEdge
 ---
 
-# Replace Edge
+# Replacing the child edge for a symbol
 
-Replaces the first child edge whose label starts with `c` by `newEdge`, appending
-`newEdge` at the end when there is no such edge.
+**Replacing the child edge for a symbol.** Given a symbol $c$, an edge $e$ (a pair of a label
+and a radix trie) and a list of child edges, this operation replaces the first edge of the list
+whose label starts with $c$ by $e$ and keeps all other edges in order. If no label in the list
+starts with $c$, it appends $e$ at the end of the list.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
+- [Radix trie](radix-trie.md)
 
 ## Sources
 

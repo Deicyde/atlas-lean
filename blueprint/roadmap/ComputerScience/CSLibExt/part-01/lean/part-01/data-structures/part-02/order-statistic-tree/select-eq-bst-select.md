@@ -7,26 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.select_eq_bstSelect
 ---
 
-# Select eq bst Select
+# Cached select agrees with inorder select
 
-Cached navigation select refines the prerequisite traversal-based select.
+**Cached select agrees with inorder select.** For every order-statistic tree $T$ whose
+cached subtree sizes are correct and every natural number $i$, select at index $i$ in $T$
+(descending with the cached sizes) returns the same result as taking the element at zero-based
+position $i$ of the inorder traversal of the binary tree obtained from $T$ by erasing the cached
+sizes; in particular both return nothing when that position does not exist.
 
 ## Depends on
 
-- [Select](../binary-search-tree/select.md)
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Erase](erase.md)
-- [Select](select.md)
+- [Inorder selection in a binary tree](../binary-search-tree/select.md)
+- [Correct size caches](cache-correct.md)
+- [Order-statistic tree](tree.md)
+- [Erasing the size caches of an order-statistic tree](erase.md)
+- [Select in an order-statistic tree](select.md)
 
 ## Proof depends on
 
-- [Inorder](../binary-search-tree/inorder.md)
-- [Inorder Aux](../binary-search-tree/inorder-aux.md)
-- [Num Nodes eq length inorder](../binary-search-tree/num-nodes-eq-length-inorder.md)
-- [Entry](entry.md)
-- [Cached Size](cached-size.md)
-- [Cached Size eq num Nodes](cached-size-eq-num-nodes.md)
+- [Inorder traversal of a binary tree](../binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../binary-search-tree/inorder-aux.md)
+- [The length of the inorder traversal of a binary tree is its number of nodes](../binary-search-tree/num-nodes-eq-length-inorder.md)
+- [Order-statistic tree node entry](entry.md)
+- [Cached root size](cached-size.md)
+- [Correct caches give the tree size](cached-size-eq-num-nodes.md)
 
 ## Sources
 

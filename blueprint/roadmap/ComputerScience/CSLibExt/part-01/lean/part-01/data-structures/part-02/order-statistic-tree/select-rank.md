@@ -7,27 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.select_rank
 ---
 
-# Select rank
+# Select inverts rank in an order-statistic tree
 
-Selecting the rank of a present key returns that key.
+**Select inverts rank in an order-statistic tree.** Let $T$ be an order-statistic tree over
+a linearly ordered type whose cached subtree sizes are correct and which satisfies the
+binary-search-tree ordering. For every key $k$ in $T$, select in $T$ at the index equal to the
+rank of $k$ in $T$ returns $k$.
 
 ## Depends on
 
-- [Mem](../binary-search-tree/mem.md)
-- [Cache Correct](cache-correct.md)
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Erase](erase.md)
-- [Rank](rank.md)
-- [Select](select.md)
+- [Membership in a binary tree](../binary-search-tree/mem.md)
+- [Correct size caches](cache-correct.md)
+- [Ordered order-statistic tree](ordered.md)
+- [Order-statistic tree](tree.md)
+- [Erasing the size caches of an order-statistic tree](erase.md)
+- [Rank in an order-statistic tree](rank.md)
+- [Select in an order-statistic tree](select.md)
 
 ## Proof depends on
 
-- [Rank](../binary-search-tree/rank.md)
-- [Select](../binary-search-tree/select.md)
-- [Select rank](../binary-search-tree/select-rank.md)
-- [Rank eq bst Rank](rank-eq-bst-rank.md)
-- [Select eq bst Select](select-eq-bst-select.md)
+- [Rank of a key in a binary tree](../binary-search-tree/rank.md)
+- [Inorder selection in a binary tree](../binary-search-tree/select.md)
+- [Selecting the rank of a key returns the key](../binary-search-tree/select-rank.md)
+- [Cached rank agrees with traversal rank](rank-eq-bst-rank.md)
+- [Cached select agrees with inorder select](select-eq-bst-select.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.root_build_min
 ---
 
-# Root build min
+# The root of a Cartesian tree is a minimum of the list
 
-The root of the Cartesian tree is a minimum of the input list.
+**The root of a Cartesian tree is a minimum of the list.** Let $xs$ be a list over a
+linearly ordered type. If the Cartesian tree of $xs$ has root key $m$, then $m$ occurs in $xs$
+and $m \le y$ for every element $y$ of $xs$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Root](root.md)
+- [Cartesian tree of a list](build.md)
+- [Root key of a binary tree](root.md)
 
 ## Proof depends on
 
-- [Mem](../binary-search-tree/mem.md)
-- [Heap Ordered build](heap-ordered-build.md)
-- [Mem build](mem-build.md)
-- [Mem of root eq some](mem-of-root-eq-some.md)
-- [Root le of heap Ordered](root-le-of-heap-ordered.md)
+- [Membership in a binary tree](../binary-search-tree/mem.md)
+- [Cartesian trees are heap-ordered](heap-ordered-build.md)
+- [Keys of a Cartesian tree](mem-build.md)
+- [The root of a binary tree is one of its keys](mem-of-root-eq-some.md)
+- [The root of a heap-ordered tree is below every key](root-le-of-heap-ordered.md)
 
 ## Sources
 

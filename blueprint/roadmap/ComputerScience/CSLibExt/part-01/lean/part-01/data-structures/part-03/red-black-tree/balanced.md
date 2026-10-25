@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.Balanced
 ---
 
-# Balanced
+# Black-height balanced red-black tree
 
-All root-to-leaf paths contain the same number of black nodes.
+**Black-height balanced red-black tree.** A red-black tree is balanced when every root-to-leaf
+path contains the same number of black nodes. Recursively: the empty tree is balanced, and a node
+is balanced when both of its subtrees are balanced and have the same black height (the number of
+black nodes on the leftmost root-to-leaf path, counting the leaf).
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Color](color.md)
-- [Black Height](black-height.md)
+- [Red-black node colors](color.md)
+- [Black height](black-height.md)
 
 ## Sources
 

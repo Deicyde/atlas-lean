@@ -20,8 +20,8 @@ Each accepted edge has minimum weight among all edges crossing the current parti
 - [Ordered Edges](ordered-edges.md)
 - [Scan](scan.md)
 - [Valid Edges](valid-edges.md)
-- [Equivalent](../../data-structures/part-03/union-find/equivalent.md)
-- [Forest](../../data-structures/part-03/union-find/forest.md)
+- [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 
 ## Proof depends on
 

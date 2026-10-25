@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.ret_make
 ---
 
-# Ret make
+# Result of creating a catenable heap
 
-The result of `make` is the empty heap.
+**Result of creating a catenable heap.** The heap returned by the operation that creates a
+catenable heap is the empty heap.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
 
 ## Sources
 

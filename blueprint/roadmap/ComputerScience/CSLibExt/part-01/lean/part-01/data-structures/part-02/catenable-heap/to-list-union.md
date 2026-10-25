@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_union
 ---
 
-# To List union
+# Flattening a union of catenable heaps
 
-`union h₁ h₂` flattens to the flattening of `h₁` followed by that of `h₂`.
+**Flattening a union of catenable heaps.** For catenable heaps $h_1$ and $h_2$, the flattening
+of the heap returned by the union of $h_1$ and $h_2$ is the flattening of $h_1$ followed by the
+flattening of $h_2$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List](to-list.md)
-- [Union](union.md)
+- [Catenable heap](catenable-heap.md)
+- [Flattening of a catenable heap](to-list.md)
+- [Union of catenable heaps](union.md)
 
 ## Proof depends on
 
-- [To List join](to-list-join.md)
+- [Flattening a join of catenable heaps](to-list-join.md)
 
 ## Sources
 

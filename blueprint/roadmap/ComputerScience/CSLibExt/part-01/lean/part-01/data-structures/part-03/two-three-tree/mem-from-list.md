@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.mem_fromList
 ---
 
-# Mem from List
+# Keys of a 2-3 tree built from a list
 
-A key is in the flattening of a tree built from a list exactly when it is
-in the list.
+**Keys of a 2-3 tree built from a list.** Let $\alpha$ be linearly ordered. For every list
+$L$ over $\alpha$ and every $x \in \alpha$, $x$ occurs in the inorder traversal of the 2-3 tree
+built from $L$ (by inserting its elements from right to left into the empty tree) if and only
+if $x$ occurs in $L$.
 
 ## Depends on
 
-- [Flatten](flatten-2.md)
-- [From List](from-list.md)
+- [Inorder traversal of a 2-3 tree root](flatten-2.md)
+- [Building a 2-3 tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
-- [Mem flatten insert](mem-flatten-insert.md)
-- [Ordered from List](ordered-from-list.md)
+- [Insertion into a 2-3 tree root](insert.md)
+- [Keys after insertion into a 2-3 tree](mem-flatten-insert.md)
+- [Building a 2-3 tree from a list gives an ordered tree](ordered-from-list.md)
 
 ## Sources
 

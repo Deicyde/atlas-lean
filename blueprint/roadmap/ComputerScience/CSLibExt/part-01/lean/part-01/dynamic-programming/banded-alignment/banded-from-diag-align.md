@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.bandedFrom_diagAlign
 ---
 
-# Banded From diag Align
+# The diagonal alignment stays in the band
 
-The diagonal alignment stays in the band whenever its start and end offsets
-do: the match phase keeps the difference, the gap phases interpolate it.
+**The diagonal alignment stays in the band.** Let $w, i, j \in \mathbb{N}$ and let $x$, $y$
+be lists of lengths $m$ and $n$. If $|i - j| \le w$ and $|(i + m) - (j + n)| \le w$, then the
+band check of the diagonal alignment of $x$ and $y$ with width $w$ from offset $(i, j)$ is true.
+
+The match phase keeps the offset difference and the gap phases interpolate it.
 
 ## Depends on
 
-- [Banded From](banded-from.md)
-- [Diag Align](diag-align.md)
+- [Band check from a starting offset](banded-from.md)
+- [Diagonal alignment](diag-align.md)
 
 ## Proof depends on
 
-- [Banded From map gap X](banded-from-map-gap-x.md)
-- [Banded From map gap Y](banded-from-map-gap-y.md)
+- [Columns using only the first sequence stay in the band](banded-from-map-gap-x.md)
+- [Columns using only the second sequence stay in the band](banded-from-map-gap-y.md)
 
 ## Sources
 

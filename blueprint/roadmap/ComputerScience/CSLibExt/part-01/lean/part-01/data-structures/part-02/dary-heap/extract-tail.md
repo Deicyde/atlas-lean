@@ -6,24 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractTail
 ---
 
-# Extract Tail
+# Removing the root of a $d$-ary min-heap
 
-Remove the root from a known nonempty heap and restore heap order:
-the last entry moves to the root and sifts down its `d`-ary child path.
+**Removing the root of a $d$-ary min-heap.** Let $h$ be a $d$-ary min-heap whose storage
+array $a$ is nonempty. Removing the root of $h$ gives the heap of arity $d$ whose storage array
+is empty if $a$ has one entry. Otherwise the last entry of $a$ replaces the root, the last
+position is dropped, and the new root is repeatedly swapped with its smallest $d$-ary child
+while that child is smaller.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Proof depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Move Last To Root](dary-move-last-to-root.md)
-- [Dary Move Last To Root sift Down Ready](dary-move-last-to-root-sift-down-ready.md)
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
-- [Dary Sift Down](dary-sift-down.md)
-- [Dary Sift Down ordered](dary-sift-down-ordered.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Last-to-root move on an array](dary-move-last-to-root.md)
+- [Last-to-root move in a $d$-ary heap is ready for sift-down](dary-move-last-to-root-sift-down-ready.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
+- [$d$-ary sift-down](dary-sift-down.md)
+- [Sifting down restores $d$-ary heap order](dary-sift-down-ordered.md)
 
 ## Sources
 

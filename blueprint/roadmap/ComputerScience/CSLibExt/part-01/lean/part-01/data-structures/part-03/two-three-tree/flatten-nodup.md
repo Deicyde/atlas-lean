@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.flatten_nodup
 ---
 
-# Flatten nodup
+# The traversal of an ordered 2-3 tree has no duplicates
 
-The flattening of an ordered tree has no duplicate keys.
+**The traversal of an ordered 2-3 tree has no duplicates.** If the keys are linearly ordered
+and a 2-3 tree $t$ (of any height) is ordered, then no key occurs twice in the flattening of
+$t$.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Flatten](flatten.md)
+- [Ordering invariant for 2-3 trees](ordered.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
 
 ## Proof depends on
 
-- [Ordered flatten pairwise](ordered-flatten-pairwise.md)
+- [Inorder traversal of an ordered 2-3 tree is strictly increasing](ordered-flatten-pairwise.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.root
 ---
 
-# Root
+# Root of a binomial tree
 
-The root value of a binomial tree.
+**Root of a binomial tree.** The root of the binomial tree with rank $r$, root value $a$ and
+list of children $c$ is $a$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

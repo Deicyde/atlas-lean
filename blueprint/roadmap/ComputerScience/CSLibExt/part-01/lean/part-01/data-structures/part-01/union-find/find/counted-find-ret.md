@@ -7,18 +7,21 @@ proof: formalized
 lean: Batteries.UnionFind.Internal.countedFind_ret
 ---
 
-# Counted Find ret
+# The cost-counted FIND returns the FIND result
 
-Full dependent result equality includes the saved store and returned valid representative.
+**The cost-counted FIND returns the FIND result.** For a union-find structure $S$ and a node
+$x < |S|$, the value returned by the cost-counted FIND on $x$ (the compressed union-find
+structure together with the root of $x$), with its cost discarded, equals the result of the
+Batteries FIND with path compression on $x$.
 
 ## Depends on
 
-- [Counted Find](counted-find.md)
+- [Cost-counted FIND](counted-find.md)
 
 ## Proof depends on
 
-- [Counted Aux](counted-aux.md)
-- [Counted Aux ret](counted-aux-ret.md)
+- [Cost-counted FIND auxiliary](counted-aux.md)
+- [The cost-counted FIND auxiliary returns the uncounted result](counted-aux-ret.md)
 
 ## Sources
 

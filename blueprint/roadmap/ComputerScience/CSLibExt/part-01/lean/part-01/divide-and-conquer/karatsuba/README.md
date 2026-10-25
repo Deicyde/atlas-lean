@@ -4,23 +4,23 @@ navigation: module
 
 # Karatsuba
 
-- [Karatsuba](karatsuba.md)
-- [Karatsuba Cost](karatsuba-cost.md)
+- [Karatsuba multiplication](karatsuba.md)
+- [Karatsuba cost recurrence](karatsuba-cost.md)
 
 ## Correctness
 
-- [Karatsuba middle](karatsuba-middle.md)
-- [Karatsuba ret](karatsuba-ret.md)
+- [Karatsuba's middle coefficient](karatsuba-middle.md)
+- [Correctness of Karatsuba multiplication](karatsuba-ret.md)
 
 ## Operand sizes
 
-- [Karatsuba operands lt](karatsuba-operands-lt.md)
+- [Size bound for Karatsuba's recursive operands](karatsuba-operands-lt.md)
 
 ## Cost
 
-- [Karatsuba time](karatsuba-time.md)
-- [Karatsuba Cost two pow](karatsuba-cost-two-pow.md)
-- [Karatsuba Cost le](karatsuba-cost-le.md)
-- [Karatsuba time le](karatsuba-time-le.md)
-- [Karatsuba Cost le rpow](karatsuba-cost-le-rpow.md)
-- [Karatsuba time le rpow](karatsuba-time-le-rpow.md)
+- [Size bound for Karatsuba's recursive operands](karatsuba-time.md)
+- [Karatsuba cost at powers of two](karatsuba-cost-two-pow.md)
+- [Power-of-three bound on the Karatsuba cost recurrence](karatsuba-cost-le.md)
+- [Power-of-three bound on the cost of Karatsuba multiplication](karatsuba-time-le.md)
+- [The $n^{\log_2 3}$ bound for the Karatsuba cost recurrence](karatsuba-cost-le-rpow.md)
+- [The $n^{\log_2 3}$ bound for Karatsuba multiplication](karatsuba-time-le-rpow.md)

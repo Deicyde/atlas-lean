@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_insert
 ---
 
-# Lookup insert
+# Lookup after a successful open-addressing insertion
 
-Looking up a successfully inserted key returns the newly supplied value.
+**Lookup after a successful open-addressing insertion.** If inserting the binding $k \mapsto v$
+into an open-addressing hash table $T$ succeeds and yields the table $T'$, then looking up $k$
+in $T'$ returns $v$. No validity assumption on $T$ is needed.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Insertion into an open-addressing table](insert.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
-- [Lookup Aux](lookup-aux.md)
+- [Bounded insertion scan](insert-aux.md)
+- [Bounded lookup scan](lookup-aux.md)
 
 ## Sources
 

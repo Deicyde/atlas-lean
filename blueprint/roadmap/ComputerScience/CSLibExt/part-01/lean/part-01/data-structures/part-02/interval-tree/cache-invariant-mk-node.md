@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_mkNode
 ---
 
-# Cache Invariant mk Node
+# The interval-tree smart constructor preserves the cache invariant
 
-The smart constructor preserves recursively attained maximum caches.
+**The interval-tree smart constructor preserves the cache invariant.** If interval trees $L$
+and $R$ satisfy the cache invariant (every cached maximum high endpoint, height and size is
+exact), then for every entry $e$ the node that the smart constructor builds from $L$, $e$ and $R$
+also satisfies the cache invariant.
 
 ## Depends on
 
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Mk Node](mk-node.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Node construction with repaired metadata](mk-node.md)
 
 ## Proof depends on
 
 - [Interval](interval.md)
 - [Cached Max?](cached-max.md)
-- [Max With](max-with.md)
-- [Node Max](node-max.md)
+- [Maximum with an optional value](max-with.md)
+- [Maximum high endpoint at a node](node-max.md)
 
 ## Sources
 

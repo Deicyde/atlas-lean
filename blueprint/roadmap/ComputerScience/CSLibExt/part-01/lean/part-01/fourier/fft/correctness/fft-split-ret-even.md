@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftSplit_ret_even
 ---
 
-# Fft Split ret even
+# The FFT split extracts the even-indexed entries
 
-The materialized even subsequence preserves the ordered even input entries.
+**The FFT split extracts the even-indexed entries.** Let $R$ be a type, $m$ a natural number
+and $x = (x_0, \dots, x_{2m-1})$ a vector of length $2m$ over $R$. For every $k < m$, entry $k$
+of the first (even) vector returned by the FFT split of $x$ is $x_{2k}$.
 
 ## Depends on
 
-- [Fft Split](../../fft-2/fft-split.md)
+- [Even–odd split for the FFT](../../fft-2/fft-split.md)
 
 ## Sources
 

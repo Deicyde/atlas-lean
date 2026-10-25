@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_greatest
 ---
 
-# Max? greatest
+# The van Emde Boas maximum query bounds every member
 
-In a valid tree, the element returned by `max?` follows every member.
+**The van Emde Boas maximum query bounds every member.** Let $m$ be a natural number and let
+$t$ be a valid van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$. If the maximum
+query on $t$ returns $x$, then $y \le x$ for every member $y$ of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Max?](max.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Maximum query of a van Emde Boas tree](max.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

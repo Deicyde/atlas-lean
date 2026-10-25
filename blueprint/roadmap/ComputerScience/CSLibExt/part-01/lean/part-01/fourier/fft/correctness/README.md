@@ -4,8 +4,8 @@ navigation: module
 
 # Correctness
 
-- [Fft Split ret even](fft-split-ret-even.md)
-- [Fft Split ret odd](fft-split-ret-odd.md)
-- [Fft ret zero](fft-ret-zero.md)
-- [Fft ret succ low](fft-ret-succ-low.md)
-- [Fft ret succ high](fft-ret-succ-high.md)
+- [The FFT split extracts the even-indexed entries](fft-split-ret-even.md)
+- [The FFT split extracts the odd-indexed entries](fft-split-ret-odd.md)
+- [The FFT of depth zero returns its input](fft-ret-zero.md)
+- [Low half of the FFT butterfly recurrence](fft-ret-succ-low.md)
+- [High half of the FFT butterfly recurrence](fft-ret-succ-high.md)

@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.size_le_cap
 ---
 
-# Size le cap
+# An LRU cache never exceeds its capacity
 
-The size of any cache is at most its capacity.
+**An LRU cache never exceeds its capacity.** Every LRU cache of capacity $c$ has size at most
+$c$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Size of an LRU cache](size.md)
 
 ## Sources
 

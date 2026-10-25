@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Deque.contents
 ---
 
-# Contents
+# Represented sequence of a deque
 
-The sequence represented by a deque, from front to back.
+**Represented sequence of a deque.** The sequence represented by a deque with front list $f$
+and back list $b$ is $f$ followed by the reverse of $b$; it lists the elements from front to
+back.
 
 ## Depends on
 
-- [Deque](deque.md)
+- [Two-list deque](deque.md)
 
 ## Sources
 

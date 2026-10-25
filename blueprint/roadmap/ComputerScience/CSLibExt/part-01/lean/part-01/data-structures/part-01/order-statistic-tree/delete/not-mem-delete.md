@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.not_mem_delete
 ---
 
-# Not mem delete
+# Deleted key is absent from an order-statistic tree
 
-The deleted key is absent from the result.
+**Deleted key is absent from an order-statistic tree.** Let $\alpha$ be a linearly ordered
+type, $k \in \alpha$ and $T$ an ordered order-statistic tree over $\alpha$ (at every node, all keys
+of the left subtree are smaller and all keys of the right subtree are larger than the node's
+key). Then $k$ is not a key of the tree obtained by deleting $k$ from $T$.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Delete](delete.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered order-statistic tree](../../../part-02/order-statistic-tree/ordered.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Deletion from an order-statistic tree](delete.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
 
 ## Proof depends on
 
-- [Mem delete iff](mem-delete-iff.md)
+- [Keys of an order-statistic tree after deletion](mem-delete-iff.md)
 
 ## Sources
 

@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.YFastTrie.mem_contents_iff
 ---
 
-# Mem contents iff
+# Membership in a y-fast trie via representatives' buckets
 
-A key is stored exactly when it lies in some representative's bucket.
+**Membership in a y-fast trie via representatives' buckets.** For every y-fast trie $t$ over
+$w$-bit keys and every $w$-bit key $x$, $x$ is stored in $t$ if and only if $x$ lies in the bucket
+owned by some representative of $t$, that is, by some key stored in the representative x-fast
+trie of $t$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [YFast Trie](yfast-trie.md)
-- [Contents](contents.md)
+- [x-fast trie](xfast-trie.md)
+- [y-fast trie skeleton](yfast-trie.md)
+- [Keys of a y-fast trie](contents.md)
 
 ## Sources
 

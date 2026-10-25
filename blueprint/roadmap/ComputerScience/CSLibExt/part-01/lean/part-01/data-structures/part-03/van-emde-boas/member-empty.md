@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.member_empty
 ---
 
-# Member empty
+# The empty van Emde Boas tree has no members
 
-No element is a member of the empty tree.
+**The empty van Emde Boas tree has no members.** For every $m$ and every $x$ in the universe
+$\{0, 1, \dots, m^2 - 1\}$, $x$ is not a member of the empty two-level van Emde Boas tree over that
+universe.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Member](member.md)
+- [Empty van Emde Boas tree](empty.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

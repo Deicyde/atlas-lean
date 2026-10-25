@@ -12,11 +12,11 @@ The multiset represented by a forest.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

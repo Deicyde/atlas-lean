@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.hasPrefix_eq_true_iff
 ---
 
-# Has Prefix eq true iff
+# Prefix search is correct on valid radix tries
 
-Prefix search succeeds exactly when some stored key extends the pattern.
+**Prefix search is correct on valid radix tries.** For a valid radix trie $t$ and a list $p$
+of symbols, prefix search for $p$ in $t$ succeeds if and only if some stored key $k$ of $t$ has
+$p$ as a prefix.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Valid](valid.md)
-- [Has Prefix](has-prefix.md)
-- [Keys](keys.md)
+- [Radix trie](radix-trie.md)
+- [Valid radix trie](valid.md)
+- [Prefix search in a radix trie](has-prefix.md)
+- [Stored keys of a radix trie](keys.md)
 
 ## Proof depends on
 
-- [Root Compact](root-compact.md)
-- [Append drop common Prefix left](append-drop-common-prefix-left.md)
-- [Common Prefix](common-prefix.md)
-- [Common Prefix eq of append](common-prefix-eq-of-append.md)
-- [Common Prefix spec](common-prefix-spec.md)
-- [Entries](entries.md)
-- [Find Edge](find-edge.md)
+- [Path-compressed root](root-compact.md)
+- [A list is its common prefix with another list followed by the rest](append-drop-common-prefix-left.md)
+- [Longest common prefix](common-prefix.md)
+- [The longest common prefix of a list and its prefix](common-prefix-eq-of-append.md)
+- [Characterization of the longest common prefix](common-prefix-spec.md)
+- [Entries of a radix trie](entries.md)
+- [Edge search by first symbol](find-edge.md)
 
 ## Sources
 

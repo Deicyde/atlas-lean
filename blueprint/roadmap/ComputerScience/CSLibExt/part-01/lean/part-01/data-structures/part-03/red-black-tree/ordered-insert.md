@@ -7,33 +7,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.ordered_insert
 ---
 
-# Ordered insert
+# Red-black insertion preserves the search-tree order
 
-Insertion preserves the strict search-tree invariant.
+**Red-black insertion preserves the search-tree order.** Let $\alpha$ be a linearly ordered
+type, $x \in \alpha$ a key, and $t$ a red-black tree with keys in $\alpha$. If $t$ is ordered (at
+every node with key $k$, every key in the left subtree is less than $k$ and every key in the right
+subtree is greater than $k$), then the tree obtained by inserting $x$ into $t$ is ordered.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Ordered red-black tree](ordered.md)
+- [Red-black tree data type](tree.md)
+- [Red-black tree insertion](insert.md)
 
 ## Proof depends on
 
-- [All](../../part-02/binary-search-tree/all.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
-- [All](all.md)
-- [Color](color.md)
-- [Mem](mem.md)
-- [All iff forall mem](all-iff-forall-mem.md)
-- [Balance](balance.md)
-- [Erase](erase.md)
-- [Inorder](inorder.md)
-- [Ins](ins.md)
-- [Make Black](make-black.md)
-- [Mem inorder](mem-inorder.md)
-- [Ordered inorder](ordered-inorder.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../part-02/binary-search-tree/inorder-aux.md)
+- [Predicate holding at every key of a red-black tree](all.md)
+- [Red-black node colors](color.md)
+- [Membership in a red-black tree](mem.md)
+- [All keys versus members of a red-black tree](all-iff-forall-mem.md)
+- [Okasaki's rebalancing](balance.md)
+- [Color erasure](erase.md)
+- [Inorder traversal of a red-black tree](inorder.md)
+- [Unchecked red-black insertion](ins.md)
+- [Blackening the root](make-black.md)
+- [Membership in the inorder traversal of a red-black tree](mem-inorder.md)
+- [The inorder traversal of an ordered red-black tree is strictly increasing](ordered-inorder.md)
 
 ## Sources
 

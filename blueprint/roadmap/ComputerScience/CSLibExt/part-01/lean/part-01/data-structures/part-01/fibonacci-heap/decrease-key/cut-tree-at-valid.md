@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.cutTreeAt_valid
 ---
 
-# Cut Tree At valid
+# Cutting a valid forest leaves valid parts
 
-Both parts of a forest cut from a valid forest are valid.
+**Cutting a valid forest leaves valid parts.** Let $F$ be a valid forest of Fibonacci trees
+over a type with a relation $\le$, $i$ an index and $p$ a path of child indices. If cutting $F$
+at index $i$ and path $p$ extracts a subtree $s$ and leaves the forest $F'$, then $s$ is a valid
+tree and $F'$ is a valid forest.
 
 ## Depends on
 
-- [Valid](../../../part-02/fibonacci-heap/valid-2.md)
-- [Cut Tree At](cut-tree-at.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Valid](../../../part-02/fibonacci-heap/valid.md)
+- [Valid Fibonacci forests](../../../part-02/fibonacci-heap/valid-2.md)
+- [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Valid Fibonacci trees](../../../part-02/fibonacci-heap/valid.md)
 
 ## Proof depends on
 
-- [Cut At](cut-at.md)
-- [Cut At remainder valid](cut-at-remainder-valid.md)
-- [Cut At sub valid](cut-at-sub-valid.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
+- [The remainder of a cut from a valid tree is valid](cut-at-remainder-valid.md)
+- [The subtree extracted by a cut from a valid tree is valid](cut-at-sub-valid.md)
 
 ## Sources
 

@@ -7,16 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.root_le
 ---
 
-# Root le
+# Roots of valid Fibonacci trees are lower bounds
 
-The root of a valid tree is no greater than every represented element.
+**Roots of valid Fibonacci trees are lower bounds.** The root of a valid Fibonacci tree is no
+greater than every element of the multiset the tree represents.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

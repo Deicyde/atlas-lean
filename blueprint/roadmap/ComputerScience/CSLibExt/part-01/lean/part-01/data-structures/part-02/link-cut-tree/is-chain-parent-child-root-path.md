@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.isChain_parentChild_rootPath
 ---
 
-# Is Chain parent Child root Path
+# A root path follows parent-child edges downward
 
-Consecutive vertices of a root path are joined by a directed
-parent-child edge of the tree, from parent to child.
+**A root path follows parent-child edges downward.** Let $t$ be a tree and $x$ a vertex. If
+the root path of $x$ in $t$ is defined and equals $p = (p_0, \dots, p_k)$, then for every
+$i < k$ the vertex $p_i$ is the parent of $p_{i+1}$ somewhere in $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Parent Child](parent-child.md)
-- [Root Path](root-path.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Head? root Path](head-root-path.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [The root path starts at the root](head-root-path.md)
 
 ## Sources
 

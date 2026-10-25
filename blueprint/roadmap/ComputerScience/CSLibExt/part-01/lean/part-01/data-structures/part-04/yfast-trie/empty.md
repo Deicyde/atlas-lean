@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.empty
 ---
 
-# Empty
+# The empty grouped y-fast trie
 
-The empty grouped y-fast trie: empty representative trie, no groups.
+**The empty grouped y-fast trie.** For every key length $w$ and group bound $B$, the empty
+grouped y-fast trie has the empty x-fast trie as its trie of representatives and has no
+groups.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Proof depends on
 
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Empty](../../part-03/xfast-trie/empty.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [The empty x-fast trie](../../part-03/xfast-trie/empty.md)
 
 ## Sources
 

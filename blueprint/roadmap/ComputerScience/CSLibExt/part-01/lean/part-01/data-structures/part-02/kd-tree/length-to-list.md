@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.length_toList
 ---
 
-# Length to List
+# Length of the point list of a kd-tree
 
-The length of the point list is the size of the tree.
+**Length of the point list of a kd-tree.** For every kd-tree $t$, the list of the points
+stored in $t$, read from left to right, has length equal to the size of $t$, the number of
+points stored in $t$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
-- [Size](size.md)
-- [To List](to-list.md)
+- [Kd-trees](kd-tree.md)
+- [Size of a kd-tree](size.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [To List node](to-list-node.md)
+- [Point list of a kd-tree split node](to-list-node.md)
 
 ## Sources
 

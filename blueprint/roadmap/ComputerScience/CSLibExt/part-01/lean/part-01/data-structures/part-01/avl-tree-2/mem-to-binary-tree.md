@@ -19,7 +19,7 @@ This holds by definition.
 - [Membership in an AVL tree](mem.md)
 - [Binary trees with cached heights](tree.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Mem](../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

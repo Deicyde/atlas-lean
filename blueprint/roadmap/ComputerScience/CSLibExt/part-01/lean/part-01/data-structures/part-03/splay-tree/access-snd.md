@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.access_snd
 ---
 
-# Access snd
+# The tree returned by a splay-tree access
 
-The tree returned by `access` is the splayed tree.
+**The tree returned by a splay-tree access.** For a key $x$ and a binary tree $t$ over a
+linearly ordered type, the tree component of the access of $x$ in $t$ is the tree obtained by
+splaying $x$ in $t$.
 
 ## Depends on
 
-- [Access](access.md)
-- [Splay](splay.md)
+- [Splay-tree access](access.md)
+- [Splay operation](splay.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.smallerChild_valid
 ---
 
-# Smaller Child valid
+# The smaller child is a valid index
 
-A selected child is a valid array index.
+**The smaller child is a valid index.** For every array $a$ over a linearly ordered type and
+all indices $i$ and $c$, if $c$ is the smaller child of $i$ in $a$, then $c$ is less than the
+length $|a|$ of $a$.
 
 ## Depends on
 
-- [Smaller Child](smaller-child.md)
+- [Smaller child](smaller-child.md)
 
 ## Proof depends on
 
-- [Heap Left](heap-left.md)
-- [Heap Right](heap-right.md)
+- [Left child index in a level-order binary tree](heap-left.md)
+- [Right child index in an array-backed binary tree](heap-right.md)
 
 ## Sources
 

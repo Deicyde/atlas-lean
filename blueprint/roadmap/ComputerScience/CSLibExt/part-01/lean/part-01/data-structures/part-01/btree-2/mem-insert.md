@@ -24,8 +24,8 @@ obtained by inserting $x$ into $T$ if and only if $y = x$ or $y$ belongs to $T$.
 
 - [Inorder flattening of a B-tree](flatten.md)
 - [B-tree insertion as sorted list insertion](flatten-insert.md)
-- [Mem ordered Insert](../../part-03/ordered-insert/mem-ordered-insert.md)
-- [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
+- [Members after ordered insertion](../../part-03/ordered-insert/mem-ordered-insert.md)
+- [Ordered insertion into a list](../../part-03/ordered-insert/ordered-insert.md)
 
 ## Sources
 

@@ -7,24 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.heapOrdered_build
 ---
 
-# Heap Ordered build
+# Cartesian trees are heap-ordered
 
-The Cartesian tree of a list is heap-ordered.
+**Cartesian trees are heap-ordered.** For every list $xs$ over a linear order, the Cartesian
+tree of $xs$ is min-heap ordered.
 
 ## Depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Build](build.md)
+- [Min-heap ordered binary tree](heap-ordered.md)
+- [Cartesian tree of a list](build.md)
 
 ## Proof depends on
 
-- [All](../binary-search-tree/all.md)
-- [Inorder](../binary-search-tree/inorder.md)
-- [Inorder Aux](../binary-search-tree/inorder-aux.md)
-- [All iff forall inorder](all-iff-forall-inorder.md)
-- [Build Fuel](build-fuel.md)
-- [List Min](list-min.md)
-- [Split At First](split-at-first.md)
+- [A predicate holding at every key of a binary tree](../binary-search-tree/all.md)
+- [Inorder traversal of a binary tree](../binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../binary-search-tree/inorder-aux.md)
+- [A predicate holds on every key iff it holds along the inorder traversal](all-iff-forall-inorder.md)
+- [Fuel-bounded Cartesian tree construction](build-fuel.md)
+- [Minimum of a nonempty list](list-min.md)
+- [Splitting a list at the first occurrence of a value](split-at-first.md)
 
 ## Sources
 

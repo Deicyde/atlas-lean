@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.Parenthesization.IsValid
 ---
 
-# Is Valid
+# Valid parenthesization
 
-A parenthesization uses every input matrix exactly once in order and is dimension-valid.
+**Valid parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector of natural numbers,
+regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$ columns. A
+parenthesization of $n$ matrices is valid for $p$ when its leaf indices, read left to right, are
+exactly $0, 1, \dots, n - 1$, and it is dimension-compatible with $p$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ A parenthesization uses every input matrix exactly once in order and is dimensio
 
 ## Proof depends on
 
-- [Dimension Compatible](dimension-compatible.md)
-- [Matrix Indices](matrix-indices.md)
+- [Dimension-compatible parenthesization](dimension-compatible.md)
+- [Leaf indices of a parenthesization](matrix-indices.md)
 
 ## Sources
 

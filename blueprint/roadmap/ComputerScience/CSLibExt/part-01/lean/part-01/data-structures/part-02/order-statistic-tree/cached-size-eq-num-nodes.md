@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cachedSize_eq_numNodes
 ---
 
-# Cached Size eq num Nodes
+# Correct caches give the tree size
 
-A correct root cache equals the canonical number of nodes.
+**Correct caches give the tree size.** If an order-statistic tree $T$ has correct cached
+subtree sizes at every node, then the cached root size of $T$ (zero for the empty tree) equals
+the number of nodes of $T$.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Cached Size](cached-size.md)
+- [Correct size caches](cache-correct.md)
+- [Order-statistic tree node entry](entry.md)
+- [Order-statistic tree](tree.md)
+- [Cached root size](cached-size.md)
 
 ## Sources
 

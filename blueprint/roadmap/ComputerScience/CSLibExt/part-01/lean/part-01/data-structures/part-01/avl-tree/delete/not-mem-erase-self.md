@@ -31,9 +31,9 @@ $x$ does not occur in the tree obtained by deleting $x$ from $T$.
 - [Leftmost key of a tree](min-d.md)
 - [The leftmost key lies in the tree](min-d-mem.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

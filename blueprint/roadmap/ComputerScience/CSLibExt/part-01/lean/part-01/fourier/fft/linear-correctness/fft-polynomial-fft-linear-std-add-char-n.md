@@ -6,20 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftPolynomial_fftLinear_stdAddChar_neg_one
 ---
 
-# Fft Polynomial fft Linear std Add Char neg one
+# FFT linear convolution returns the product polynomial (Princeton sign)
 
-The complete polynomial represented by the actual Princeton-sign return is the product.
+**FFT linear convolution returns the product polynomial (Princeton sign).** Let $d$ be a
+natural number, $N = 2^{d+1}$ and $\omega = e^{-2\pi i/N}$. For vectors $x, y \in \mathbb{C}^{2^d}$,
+write $P_x = \sum_{j < 2^d} x_j X^j$ and $P_y = \sum_{j < 2^d} y_j X^j$, and let
+$z \in \mathbb{C}^N$ be the output of the FFT linear convolution of $x$ and $y$ with root $\omega$,
+which pads both vectors with zeros to length $N$ and convolves them circularly by FFT. Then
+$\sum_{k < N} z_k X^k = P_x P_y$ as polynomials over $\mathbb{C}$.
 
 ## Depends on
 
-- [Fft Linear](../convolution/fft-linear.md)
-- [Fft Polynomial](../polynomial/fft-polynomial.md)
+- [FFT linear convolution](../convolution/fft-linear.md)
+- [Polynomial of a coefficient vector](../polynomial/fft-polynomial.md)
 
 ## Proof depends on
 
-- [Fft Linear std Add Char neg one coeff](fft-linear-std-add-char-neg-one-coeff.md)
-- [Fft Polynomial coeff](../polynomial/fft-polynomial-coeff.md)
-- [Fft Polynomial mul coeff eq zero of two mul le](../polynomial/fft-polynomial-mul-coeff-eq-zero-of-two.md)
+- [FFT linear convolution gives the product coefficients (Princeton sign)](fft-linear-std-add-char-neg-one-coeff.md)
+- [Coefficients of the polynomial of a vector](../polynomial/fft-polynomial-coeff.md)
+- [Coefficients of a product beyond twice the length vanish](../polynomial/fft-polynomial-mul-coeff-eq-zero-of-two.md)
 
 ## Sources
 

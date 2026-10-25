@@ -6,18 +6,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Cost
 ---
 
-# Cost
+# Operation cost counters for interval trees
 
-Counts performed by the executable branches of an operation.
+**Operation cost counters for interval trees.** A cost record for the interval tree consists
+of seven natural-number counters, each defaulting to $0$: node visits, key comparisons, endpoint
+comparisons, cached-maximum reads, cache writes, rotations, and identifier-index operations.
 
-The `maxCacheReads` field is deliberately narrow: it counts only the
-cached-maximum reads performed by search pruning in `searchWithCost`, one
-per visited node where the left subtree's cached maximum decides the
-descent. Maintenance paths (`mkNode`, `rebalanceWithCost`, and the
-rotations) read cached heights, sizes, and maxima through constructor
-patterns while rebuilding nodes; those field projections are not
-separately instrumented, and maintenance work is reported through
-`cacheWrites`, `rotations`, and the remaining counters instead.
+The cached-maximum counter is deliberately narrow: it counts only the reads made by search
+pruning, one per visited node where the left subtree's cached maximum decides the descent. Node
+construction, rebalancing and the rotations read cached heights, sizes and maxima while rebuilding
+nodes; those reads are not counted separately, and maintenance work is reported through the cache
+write, rotation and remaining counters instead.
 
 ## Depends on
 

@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.mem_tour_iff
 ---
 
-# Mem tour iff
+# The Euler tour visits exactly the vertices of the tree
 
-A vertex occurs in the Euler tour exactly when it is a vertex of the tree.
+**The Euler tour visits exactly the vertices of the tree.** For every tree $t$ and every $v$,
+$v$ occurs in the Euler tour of $t$ if and only if $v$ is a vertex of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Tour](tour.md)
+- [Rooted ordered tree](tree.md)
+- [Euler tour](tour.md)
 - [Vertices](vertices.md)
 
 ## Proof depends on
 
-- [Children ind](children-ind.md)
-- [Tour node](tour-node.md)
-- [Vertices node](vertices-node.md)
+- [Induction principle for rooted trees](children-ind.md)
+- [Recursive formula for the Euler tour](tour-node.md)
+- [Preorder vertex list of a node](vertices-node.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.arity_ofList
 ---
 
-# Arity of List
+# Arity of a $d$-ary heap built from a list
 
-Building from a list uses the normalized requested arity.
+**Arity of a $d$-ary heap built from a list.** For every requested arity $r \in \mathbb{N}$
+and every list $xs$ over a linearly ordered type, the $d$-ary min-heap built from $xs$ with
+requested arity $r$ has arity equal to the normalized arity of $r$, namely $\max(2, r)$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Of List](of-list.md)
-- [Normalized Arity](normalized-arity.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Building a $d$-ary min-heap from a list](of-list.md)
+- [Normalized heap arity](normalized-arity.md)
 
 ## Sources
 

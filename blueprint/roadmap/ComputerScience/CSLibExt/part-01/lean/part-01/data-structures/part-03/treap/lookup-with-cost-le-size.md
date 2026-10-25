@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.lookupWithCost_le_size
 ---
 
-# Lookup With Cost le size
+# Lookup cost is at most the tree size
 
-Costed lookup visits no more nodes than the tree contains.
+**Lookup cost is at most the tree size.** For every tree $t$ with keys in a linearly ordered
+type and every key $k$, the number of nodes visited by the costed lookup of $k$ in $t$ is at most
+the number of nodes of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Lookup With Cost](lookup-with-cost.md)
-- [Size](size.md)
+- [Treap trees](tree.md)
+- [Lookup with cost](lookup-with-cost.md)
+- [Size of a treap tree](size.md)
 
 ## Sources
 

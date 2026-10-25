@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty hash table
 
-Looking up any key in the empty table returns `none`.
+**Lookup in the empty hash table.** For every hash function $h$, every positive bucket count
+$m$ and every key $k$, looking up $k$ in the empty hash table with hash function $h$ and $m$
+buckets finds no value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty hash table](empty.md)
+- [Hash table lookup](lookup.md)
 
 ## Sources
 

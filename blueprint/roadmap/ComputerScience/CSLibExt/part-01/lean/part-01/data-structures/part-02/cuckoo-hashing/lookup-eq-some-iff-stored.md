@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_eq_some_iff_stored
 ---
 
-# Lookup eq some iff stored
+# Cuckoo lookup finds exactly the stored bindings
 
-Under `Valid` and `KeyDet`, lookup agrees exactly with `Stored`.
+**Cuckoo lookup finds exactly the stored bindings.** Let $T$ be a cuckoo hash table that
+satisfies the placement invariant and is key-deterministic. For every key $k$ and value $v$,
+looking up $k$ in $T$ returns $v$ if and only if the binding $k \mapsto v$ is stored in $T$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Key Det](key-det.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
-- [Lookup](lookup.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Key determinism of a cuckoo hash table](key-det.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash table lookup](lookup.md)
 
 ## Proof depends on
 
-- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
-- [Lookup sound](lookup-sound.md)
+- [Cuckoo lookup finds every stored binding](lookup-eq-some-of-stored.md)
+- [Soundness of cuckoo lookup](lookup-sound.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Convolution Characteristic
 
-- [Fft Pointwise ret](fft-pointwise-ret.md)
-- [Fft Pad ret low](fft-pad-ret-low.md)
-- [Fft Pad ret high](fft-pad-ret-high.md)
-- [Fft Circular Array eq none iff](fft-circular-array-eq-none-iff.md)
-- [Fft Linear Array eq none iff](fft-linear-array-eq-none-iff.md)
+- [Entries of the pointwise product](fft-pointwise-ret.md)
+- [Zero padding keeps the input prefix](fft-pad-ret-low.md)
+- [Zero padding fills the second half with zeros](fft-pad-ret-high.md)
+- [Rejection by array circular convolution](fft-circular-array-eq-none-iff.md)
+- [Rejection by array linear convolution](fft-linear-array-eq-none-iff.md)

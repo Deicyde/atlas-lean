@@ -4,5 +4,5 @@ navigation: module
 
 # Cost
 
-- [Optimal BST time](optimal-bst-time.md)
-- [Optimal BST time bounds](optimal-bst-time-bounds.md)
+- [Exact running time of the optimal BST procedure](optimal-bst-time.md)
+- [Cubic running time of the optimal BST procedure](optimal-bst-time-bounds.md)

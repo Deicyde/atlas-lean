@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.affineScore
 ---
 
-# Affine Score
+# Affine-gap alignment score
 
-The affine-gap score of an alignment, starting with no open run.
+**Affine-gap alignment score.** Given an integer substitution score $\sigma$, an integer
+gap-open cost $o$ and an integer gap-extend cost $e$, the affine-gap score of an alignment is its
+affine-gap score from a gap state, started from the state $\mathrm{none}$ (no open gap run).
 
 ## Depends on
 
@@ -15,8 +17,8 @@ The affine-gap score of an alignment, starting with no open run.
 
 ## Proof depends on
 
-- [Gap State](gap-state.md)
-- [Affine Score Aux](affine-score-aux.md)
+- [Gap states](gap-state.md)
+- [Affine-gap score from a gap state](affine-score-aux.md)
 
 ## Sources
 

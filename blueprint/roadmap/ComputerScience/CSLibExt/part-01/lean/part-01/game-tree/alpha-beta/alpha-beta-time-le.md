@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AlphaBeta.alphaBeta_time_le
 ---
 
-# Cost
+# Alpha-beta never evaluates more leaves than the tree has
 
-**Cost.** Alpha-beta evaluates at most as many leaves as the tree has.
+**Alpha-beta never evaluates more leaves than the tree has.** For either player $p$ to move
+and all values $a, b$ in a linear order, alpha-beta pruning run on a game tree $t$ for $p$ with
+window $[a, b]$ evaluates at most as many leaves as $t$ has, each leaf evaluation costing one
+unit.
 
 ## Depends on
 
-- [Game Tree](game-tree.md)
-- [Alpha Beta](alpha-beta.md)
-- [Leaves](leaves.md)
+- [Game tree](game-tree.md)
+- [Alpha-beta pruning](alpha-beta.md)
+- [Number of leaves](leaves.md)
 
 ## Proof depends on
 
-- [Alpha Beta List](alpha-beta-list.md)
-- [Leaves List](leaves-list.md)
+- [Alpha-beta scan of the children](alpha-beta-list.md)
+- [Number of leaves of a list of game trees](leaves-list.md)
 
 ## Sources
 

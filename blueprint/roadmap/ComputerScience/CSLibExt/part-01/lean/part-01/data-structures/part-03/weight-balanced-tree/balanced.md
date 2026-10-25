@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.Balanced
 ---
 
-# Balanced
+# Weight-balanced trees
 
-The weight-balance invariant `BB[1/4]`: at every node, each child has
-weight at most three quarters of the weight of the node,
-`4 * weight child ≤ 3 * weight node`, written out in key counts as
-`4 * (child.numNodes + 1) ≤ 3 * (left.numNodes + right.numNodes + 2)`.
-See `balanced_node_iff_weight` for the same statement using `weight`.
+**Weight-balanced trees.** Write $|t|$ for the number of keys of a binary tree $t$ and
+$w(t) = |t| + 1$ for its weight. A binary tree is weight-balanced, or satisfies the
+invariant $\mathrm{BB}[1/4]$, when it is empty, or when it is a node with left subtree $L$
+and right subtree $R$ such that $L$ and $R$ are weight-balanced,
+$4\,w(L) \le 3(w(L) + w(R))$ and $4\,w(R) \le 3(w(L) + w(R))$. Since the weight of a node
+is $w(L) + w(R)$, this says that each child has weight at most three quarters of the
+weight of the node.
 
 ## Depends on
 

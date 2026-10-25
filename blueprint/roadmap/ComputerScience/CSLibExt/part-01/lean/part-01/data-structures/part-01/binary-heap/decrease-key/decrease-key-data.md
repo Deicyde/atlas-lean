@@ -16,9 +16,9 @@ in the array obtained from $a$ by replacing its entry at position $i$ with $x$.
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease-key in a binary min-heap](decrease-key.md)
-- [Sift Up](../../../part-02/binary-heap/sift-up.md)
+- [Sift-up](../../../part-02/binary-heap/sift-up.md)
 
 ## Sources
 

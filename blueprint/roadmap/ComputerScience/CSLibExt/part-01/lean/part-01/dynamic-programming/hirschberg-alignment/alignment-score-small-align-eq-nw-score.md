@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.alignmentScore_smallAlign_eq_nwScore
 ---
 
-# Alignment Score small Align eq nw Score
+# The base-case alignment is optimal
 
-The base case attains the optimum.
+**The base-case alignment is optimal.** Fix a type $\alpha$, a substitution score
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$. For all lists
+$xs$, $ys$ over $\alpha$ with $|xs| \le 1$ and $|ys| \le 1$, the alignment score of the
+base-case alignment of $xs$ and $ys$ equals the Needleman–Wunsch score of $xs$ and $ys$.
 
 ## Depends on
 
 - [Alignment Score](../sequence-alignment/alignment-score.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Small Align](small-align.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Base-case alignment for Hirschberg](small-align.md)
 
 ## Proof depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Column Score](../sequence-alignment/column-score.md)
-- [Nw Score nil left](../sequence-alignment/nw-score-nil-left.md)
-- [Nw Score nil right](../sequence-alignment/nw-score-nil-right.md)
-- [Nw Score singleton singleton](nw-score-singleton-singleton.md)
+- [Score of an alignment column](../sequence-alignment/column-score.md)
+- [Aligning the empty sequence with a sequence](../sequence-alignment/nw-score-nil-left.md)
+- [Aligning a sequence with the empty sequence](../sequence-alignment/nw-score-nil-right.md)
+- [Needleman–Wunsch score of two single letters](nw-score-singleton-singleton.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySmallestChild_gt
 ---
 
-# Dary Smallest Child gt
+# The smallest child lies after its parent
 
-A selected child has a strictly larger index than its parent.
+**The smallest child lies after its parent.** Let $d \ge 2$, let $a$ be an array over a
+linearly ordered type and let $i$ and $c$ be natural numbers. If the smallest valid child of $i$
+in the $d$-ary heap array $a$ is $c$, then $i < c$.
 
 ## Depends on
 
-- [Dary Smallest Child](dary-smallest-child.md)
+- [Smallest child in a $d$-ary heap array](dary-smallest-child.md)
 
 ## Proof depends on
 
-- [Dary Child](dary-child.md)
-- [Dary Smallest Child From](dary-smallest-child-from.md)
+- [Child index in a $d$-ary heap array](dary-child.md)
+- [Smallest child among the offsets from $s$](dary-smallest-child-from.md)
 
 ## Sources
 

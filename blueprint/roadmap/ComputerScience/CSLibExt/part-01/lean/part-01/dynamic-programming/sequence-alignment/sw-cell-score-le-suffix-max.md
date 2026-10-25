@@ -8,28 +8,32 @@ lean: Cslib.Algorithms.Lean.swCellScore_le_suffixMax
 
 # The terminal cell is at most the suffix maximum
 
-**The terminal cell is at most the suffix maximum**, for every gap: only the
-reverse inequality needs `gap ≤ 0`.
+**The terminal cell is at most the suffix maximum.** For every substitution score $\sigma$,
+every gap score $g$ of either sign and all sequences $x$ and $y$, the terminal Smith–Waterman
+cell $H(x, y)$ is at most the maximum Needleman–Wunsch score over all pairs of a suffix of $x$
+and a suffix of $y$.
+
+Only the reverse inequality needs $g \le 0$.
 
 ## Depends on
 
-- [Suffix Max](suffix-max.md)
-- [Sw Cell Score](sw-cell-score.md)
+- [Suffix maximum of Needleman–Wunsch scores](suffix-max.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
 
 ## Proof depends on
 
-- [Exists nw Score eq suffix Max](exists-nw-score-eq-suffix-max.md)
-- [Nw Score](nw-score.md)
-- [Nw Score le nw Score snoc left](nw-score-le-nw-score-snoc-left.md)
-- [Nw Score le nw Score snoc right](nw-score-le-nw-score-snoc-right.md)
-- [Nw Score le suffix Max](nw-score-le-suffix-max.md)
+- [The suffix maximum is attained](exists-nw-score-eq-suffix-max.md)
+- [Needleman–Wunsch score](nw-score.md)
+- [Appending to the first sequence loses at most one gap](nw-score-le-nw-score-snoc-left.md)
+- [Appending to the second sequence loses at most one gap](nw-score-le-nw-score-snoc-right.md)
+- [Suffix pairs score at most the suffix maximum](nw-score-le-suffix-max.md)
 - [The Needleman–Wunsch recurrence, end-peeling](nw-score-snoc.md)
-- [Suffix Pairs](suffix-pairs.md)
-- [Suffix append snoc](suffix-append-snoc.md)
+- [Pairs of suffixes](suffix-pairs.md)
+- [Appending an element preserves suffixes](suffix-append-snoc.md)
 - [The Smith–Waterman recurrence](sw-cell-score-eq.md)
-- [Sw Cell Score nil left](sw-cell-score-nil-left.md)
-- [Sw Cell Score nil right](sw-cell-score-nil-right.md)
-- [Zero le suffix Max](zero-le-suffix-max.md)
+- [The terminal cell vanishes when the first sequence is empty](sw-cell-score-nil-left.md)
+- [The terminal cell vanishes when the second sequence is empty](sw-cell-score-nil-right.md)
+- [The suffix maximum is nonnegative](zero-le-suffix-max.md)
 
 ## Sources
 

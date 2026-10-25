@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.query
 ---
 
-# Query
+# Sparse table range-minimum query
 
-Range-minimum query over `[l, r)`: the minimum of the two length-`2 ^ k` entries starting
-at `l` and at `r - 2 ^ k`, where `k = Nat.log2 (r - l)`. Empty intervals give `none`.
+**Sparse table range-minimum query.** For a sparse table $t$ over a type with a minimum operation
+and natural numbers $l, r$, the query over $[l, r)$ returns none when $r \le l$. Otherwise, with
+$k = \lfloor \log_2 (r - l) \rfloor$, it returns the option minimum (the minimum, with none as a
+neutral element on either side) of the entries of $t$ at level $k$ and indices $l$ and $r - 2^k$,
+in this order, where an entry not stored in $t$ counts as none.
 
 ## Depends on
 
-- [Sparse Table](sparse-table.md)
+- [Sparse table](sparse-table.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Omin](omin.md)
+- [Sparse-table entries](entry.md)
+- [Option minimum](omin.md)
 
 ## Sources
 

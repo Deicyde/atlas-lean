@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.Color
 ---
 
-# Color
+# Red-black node colors
 
-The color of a red-black tree node.
+**Red-black node colors.** The colors of red-black tree nodes are the two values red and
+black.
 
 ## Depends on
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.ext
 ---
 
-# Ext
+# Extensionality of LRU caches
 
-Two caches with the same entries are equal; the bundled invariant proofs are irrelevant.
+**Extensionality of LRU caches.** Two LRU caches with the same key type, value type and
+capacity are equal if their lists of entries are equal.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
+- [Least-recently-used cache](lru-cache.md)
 
 ## Sources
 

@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.contents_empty
 ---
 
-# Contents empty
+# Contents of the empty van Emde Boas tree
 
-The empty tree abstracts to the empty finite set.
+**Contents of the empty van Emde Boas tree.** For every natural number $m$, the set of
+stored elements of the empty van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$
+is empty.
 
 ## Depends on
 
-- [Contents](contents.md)
-- [Empty](empty.md)
+- [Set of stored elements of a van Emde Boas tree](contents.md)
+- [Empty van Emde Boas tree](empty.md)
 
 ## Proof depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Mem contents](mem-contents.md)
-- [Member](member.md)
-- [Member empty](member-empty.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [The contents of a van Emde Boas tree are its members](mem-contents.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [The empty van Emde Boas tree has no members](member-empty.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.two_mul_length_sample_le
 ---
 
-# Two mul length sample le
+# Doubled sample length bound
 
-Twice the sample length is at most the catalog length plus one.
+**Doubled sample length bound.** For every catalog $L$, twice the length of the sample of $L$
+is at most the length of $L$ plus one.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Sample Aux](sample-aux.md)
+- [Alternating selection with a flag](sample-aux.md)
 
 ## Sources
 

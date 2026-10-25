@@ -21,7 +21,7 @@ type $\alpha$, if an AVL tree is ordered, then its inorder traversal contains no
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Inorder nodup](../../part-02/binary-search-tree/inorder-nodup.md)
+- [The inorder traversal of a binary search tree has no duplicates](../../part-02/binary-search-tree/inorder-nodup.md)
 
 ## Sources
 

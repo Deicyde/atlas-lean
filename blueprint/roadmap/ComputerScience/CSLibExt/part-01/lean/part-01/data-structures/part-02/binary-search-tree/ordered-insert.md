@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.ordered_insert
 ---
 
-# Ordered insert
+# Binary search tree insertion preserves order
 
-Insertion preserves the strict search-tree invariant.
+**Binary search tree insertion preserves order.** Let $\alpha$ be a linearly ordered type.
+For every key $x \in \alpha$ and every ordered binary tree $T$ over $\alpha$, the tree obtained
+by inserting $x$ into $T$ is ordered.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Insert](insert.md)
+- [Ordered binary trees](ordered.md)
+- [Insertion into a binary search tree](insert.md)
 
 ## Proof depends on
 
-- [All](all.md)
+- [A predicate holding at every key of a binary tree](all.md)
 
 ## Sources
 

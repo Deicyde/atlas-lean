@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Overflow.toRoot
 ---
 
-# To Root
+# Turning an insertion result into a 2-3 tree
 
-Turn an insertion overflow into a root: a split becomes a new 2-node one
-level higher.
+**Turning an insertion result into a 2-3 tree.** An insertion result at height $h$ becomes a
+2-3 tree of unspecified height as follows: a tree $t$ of height $h$ gives $t$ itself, of height
+$h$, and a split into trees $l$, $r$ of height $h$ around a key $k$ gives the 2-node with
+separator $k$, left child $l$ and right child $r$, of height $h + 1$.
 
 ## Depends on
 
-- [Overflow](overflow.md)
-- [Root](root.md)
+- [Insertion results for 2-3 trees](overflow.md)
+- [2-3 trees of unspecified height](root.md)
 
 ## Proof depends on
 
-- [Tree](tree.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Sources
 

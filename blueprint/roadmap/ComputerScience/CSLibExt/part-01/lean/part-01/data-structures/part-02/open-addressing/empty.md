@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.empty
 ---
 
-# Empty
+# Empty open-addressing table
 
-The empty table, with every slot vacant.
+**Empty open-addressing table.** The open-addressing table with $m$ slots and a given probe
+sequence in which every slot is empty.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
+- [Open-addressing hash table](open-addressing.md)
 
 ## Sources
 

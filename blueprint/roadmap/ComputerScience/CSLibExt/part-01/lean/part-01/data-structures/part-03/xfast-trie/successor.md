@@ -6,15 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.successor
 ---
 
-# Successor
+# Successor in an x-fast trie
 
-The successor of `x`: the least stored key greater than `x`, if one exists. Defined from
-`contents`; the classical binary search over levels is not formalized, so no O(log w)
-bound is claimed.
+**Successor in an x-fast trie.** For an x-fast trie $t$ over $w$-bit keys and a key
+$x \in \{0, \dots, 2^w - 1\}$, the successor of $x$ in $t$ is the least stored key of $t$ that is
+greater than $x$ when some stored key is greater than $x$; otherwise $x$ has no successor in $t$.
+
+It is computed directly from the stored key set rather than by the classical binary search over
+the levels, so no $O(\log w)$ time bound is claimed.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Sources
 

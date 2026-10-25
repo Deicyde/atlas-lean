@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractTail_arity
 ---
 
-# Extract Tail arity
+# Removing the root of a $d$-ary heap preserves its arity
 
-Extraction preserves the heap arity.
+**Removing the root of a $d$-ary heap preserves its arity.** For a $d$-ary min-heap $h$
+with nonempty storage array, the heap obtained from $h$ by removing its root has the same
+arity $d$ as $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Extract Tail](extract-tail.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Removing the root of a $d$-ary min-heap](extract-tail.md)
 
 ## Proof depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Move Last To Root](dary-move-last-to-root.md)
-- [Dary Move Last To Root sift Down Ready](dary-move-last-to-root-sift-down-ready.md)
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
-- [Dary Sift Down](dary-sift-down.md)
-- [Dary Sift Down ordered](dary-sift-down-ordered.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Last-to-root move on an array](dary-move-last-to-root.md)
+- [Last-to-root move in a $d$-ary heap is ready for sift-down](dary-move-last-to-root-sift-down-ready.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
+- [$d$-ary sift-down](dary-sift-down.md)
+- [Sifting down restores $d$-ary heap order](dary-sift-down-ordered.md)
 
 ## Sources
 

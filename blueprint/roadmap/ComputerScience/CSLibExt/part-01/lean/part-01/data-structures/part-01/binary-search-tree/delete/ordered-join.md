@@ -15,14 +15,14 @@ of $L$ and $R$ is ordered.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 - [Join of two binary trees](join.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/all.md)
-- [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
 - [Membership in a join](mem-join.md)
 
 ## Sources

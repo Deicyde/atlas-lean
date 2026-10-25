@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_num
 ---
 
-# Table Delete num
+# Item count after deletion
 
-Deletion decrements the item count, with an empty table left at zero.
+**Item count after deletion.** Applying deletion to a dynamic table with item count $n$ gives
+a table with item count $n - 1$ when $n \ge 1$, and item count $0$ when $n = 0$.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Table Delete](table-delete.md)
+- [Dynamic table](../basic/table.md)
+- [Deletion from a dynamic table](table-delete.md)
 
 ## Sources
 

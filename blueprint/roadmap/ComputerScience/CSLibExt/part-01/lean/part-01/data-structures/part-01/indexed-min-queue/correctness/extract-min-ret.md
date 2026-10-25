@@ -7,34 +7,40 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.extractMin_ret
 ---
 
-# Extract Min ret
+# Successful extraction from an indexed min queue
 
-Successful extraction refines canonical extraction and removes only its identity.
+**Successful extraction from an indexed min queue.** Let $q$ be an indexed min queue over a
+linear order $W$ with identities in $\{0, \dots, n-1\}$, and suppose that extracting the
+minimum of $q$ returns the heap entry $e = (k, u)$, with key $k \in W \cup \{\top\}$ and
+identity $u$, together with the queue $q'$. Then binary min-heap extraction on the heap of $q$
+returns $e$ together with the heap of $q'$; the position vector of $q'$ records no slot for
+$u$; and every identity $w \neq u$ has a recorded slot in $q'$ if and only if it has one in
+$q$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Extract Min](../basic/extract-min.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
-- [Extract Min](../../../part-02/binary-heap/extract-min.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Extract-min in an indexed minimum queue](../basic/extract-min.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
+- [Extracting the minimum of a binary min-heap](../../../part-02/binary-heap/extract-min.md)
 
 ## Proof depends on
 
-- [Heap Ordered](../../../part-02/binary-heap/heap-ordered.md)
-- [Position eq none iff](position-eq-none-iff.md)
-- [Elements](../../../part-02/binary-heap/elements.md)
-- [Empty](../../../part-02/binary-heap/empty.md)
-- [Extract Min mem of ne iff](../../../part-02/binary-heap/extract-min-mem-of-ne-iff.md)
-- [Extract Tail](../../../part-02/binary-heap/extract-tail.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
-- [Move Last To Root](../../../part-02/binary-heap/move-last-to-root.md)
-- [Move Last To Root sift Down Ready](../../../part-02/binary-heap/move-last-to-root-sift-down-ready.md)
-- [Sift Down](../../../part-02/binary-heap/sift-down.md)
-- [Sift Down ordered](../../../part-02/binary-heap/sift-down-ordered.md)
-- [Sift Down perm](../../../part-02/binary-heap/sift-down-perm.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [Heap order on a level-order array](../../../part-02/binary-heap/heap-ordered.md)
+- [Absent identities carry no heap entry](position-eq-none-iff.md)
+- [Elements of a binary min-heap](../../../part-02/binary-heap/elements.md)
+- [Empty binary min-heap](../../../part-02/binary-heap/empty.md)
+- [Membership after extraction from a binary min-heap](../../../part-02/binary-heap/extract-min-mem-of-ne-iff.md)
+- [Removing the root of a nonempty binary min-heap](../../../part-02/binary-heap/extract-tail.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
+- [Moving the last entry to the root](../../../part-02/binary-heap/move-last-to-root.md)
+- [Moving the last entry to the root prepares a sift-down](../../../part-02/binary-heap/move-last-to-root-sift-down-ready.md)
+- [Sift-down](../../../part-02/binary-heap/sift-down.md)
+- [Sift-down restores heap order](../../../part-02/binary-heap/sift-down-ordered.md)
+- [Binary-heap sift-down permutes the array](../../../part-02/binary-heap/sift-down-perm.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

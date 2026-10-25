@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.Valid.mk_of_placed
 ---
 
-# Mk of placed
+# Placement suffices for validity of a perfect hash table
 
-A table satisfying the placement clause is valid.
+**Placement suffices for validity of a perfect hash table.** Let $T$ be a two-level perfect
+hash table with $b$ buckets, primary hash $h$, secondary sizes $m_i$ and secondary hashes $h_i$.
+If, whenever slot $j$ of the secondary table of bucket $i$ holds a binding $(k, v)$, we have
+$h(k) \bmod b = i$ and $j = h_i(k) \bmod m_i$, then $T$ is valid.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Valid](valid.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Valid perfect hash table](valid.md)
 
 ## Proof depends on
 
-- [Injective of placed](injective-of-placed.md)
+- [Placement implies secondary injectivity](injective-of-placed.md)
 
 ## Sources
 

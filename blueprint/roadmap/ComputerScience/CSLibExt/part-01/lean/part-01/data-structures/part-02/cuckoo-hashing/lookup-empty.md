@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty cuckoo hash table
 
-Looking up any key in the empty table returns `none`.
+**Lookup in the empty cuckoo hash table.** Looking up any key in the empty cuckoo hash table
+finds no value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty cuckoo hash table](empty.md)
+- [Cuckoo hash table lookup](lookup.md)
 
 ## Proof depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
 
 ## Sources
 

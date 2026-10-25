@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.Valid.nodup_child_keys
 ---
 
-# Nodup child keys
+# Valid trie nodes have distinct child keys
 
-A valid node has no duplicate child keys.
+**Valid trie nodes have distinct child keys.** If a trie node with optional value $v$ and
+child list $c$ is valid, then the letters labelling the children in $c$ are pairwise distinct.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Valid](valid.md)
+- [Valid trie](valid.md)
 
 ## Sources
 

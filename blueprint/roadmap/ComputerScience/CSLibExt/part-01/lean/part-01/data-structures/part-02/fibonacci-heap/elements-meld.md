@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_meld
 ---
 
-# Elements meld
+# Melding adds the elements
 
-Meld preserves every occurrence from both heaps.
+**Melding adds the elements.** For any two Fibonacci heaps $H_1$ and $H_2$ over a linearly
+ordered type, the meld of $H_1$ and $H_2$ represents the sum of the multisets represented by
+$H_1$ and by $H_2$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Meld](meld.md)
+- [Melding Fibonacci heaps](meld.md)
 
 ## Proof depends on
 
-- [Elements append](elements-append.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Elements of a concatenated forest](elements-append.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

@@ -6,15 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.toListAux
 ---
 
-# To List Aux
+# Kd-tree point traversal with an accumulator
 
-Accumulator traversal threading the output suffix, so collecting the
-points of an `n`-point tree takes linear time instead of repeatedly
-appending (and copying) left-subtree results.
+**Kd-tree point traversal with an accumulator.** For a kd-tree $t$ over points of
+$\mathbb{Z}^d$ and a list $\mathit{acc}$ of such points, the accumulator traversal of $t$ onto
+$\mathit{acc}$ is $\mathit{acc}$ when $t$ is empty, the point $p$ followed by $\mathit{acc}$ when
+$t$ is a leaf holding $p$, and, when $t$ is a split node with left subtree $L$ and right subtree
+$R$, the traversal of $L$ onto the traversal of $R$ onto $\mathit{acc}$.
+
+Threading the output suffix avoids repeatedly appending (and copying) left-subtree results.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Sources
 

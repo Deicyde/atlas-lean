@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.Connected
 ---
 
-# Connected
+# Connectivity in a link-cut tree state
 
-Undirected connectivity in the represented forest: some represented tree
-contains both vertices. This is the abstraction of the structure.
+**Connectivity in a link-cut tree state.** Two vertices $x$ and $y$ are connected in a
+link-cut tree state $s$ when some tree of the represented forest of $s$ has both $x$ and $y$
+among its vertices.
+
+Connectivity is the abstraction against which the link-cut tree operations are specified.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
 
 ## Sources

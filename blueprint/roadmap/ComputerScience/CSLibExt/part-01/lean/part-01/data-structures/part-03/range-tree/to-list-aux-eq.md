@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.toListAux_eq
 ---
 
-# To List Aux eq
+# Range-tree leaf traversal appends to its accumulator
 
-The accumulator traversal appends the leaf list onto its accumulator.
+**Range-tree leaf traversal appends to its accumulator.** For every range tree $t$ and every
+list $a$ of integers, the accumulator leaf traversal of $t$ started from $a$ equals the leaf list
+of $t$ followed by $a$.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [To List](to-list.md)
-- [To List Aux](to-list-aux.md)
+- [Range tree](range-tree.md)
+- [Leaf list of a range tree](to-list.md)
+- [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_augmentOne
 ---
 
-# Length augment One
+# Length of one augmented catalog
 
-The length of an augmented catalog splits over its two parts.
+**Length of one augmented catalog.** For lists $c$ and $a$ over a linearly ordered type, the
+augmented catalog obtained by merging $c$ with the sample $s(a)$ of $a$ has length
+$|c| + |s(a)|$.
 
 ## Depends on
 
-- [Augment One](augment-one.md)
-- [Sample](sample.md)
+- [Augmenting a catalog by the next one](augment-one.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Length sorted Merge](length-sorted-merge.md)
+- [Length of a sorted merge](length-sorted-merge.md)
 
 ## Sources
 

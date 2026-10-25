@@ -38,8 +38,8 @@ root-valid at some height.
 - [Insertion into a B-tree leaf](ins-leaf.md)
 - [Rebuilding an internal node after insertion](mk-node.md)
 - [Splitting a B-tree node](split-node.md)
-- [Mem ordered Insert](../../part-03/ordered-insert/mem-ordered-insert.md)
-- [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
+- [Members after ordered insertion](../../part-03/ordered-insert/mem-ordered-insert.md)
+- [Ordered insertion into a list](../../part-03/ordered-insert/ordered-insert.md)
 - [Ordered Insert eq of mem](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources

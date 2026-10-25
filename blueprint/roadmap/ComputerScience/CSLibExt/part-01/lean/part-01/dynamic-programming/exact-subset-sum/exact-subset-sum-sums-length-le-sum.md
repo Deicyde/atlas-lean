@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums_length_le_sum
 ---
 
-# Exact Subset Sum Sums length le sum
+# The number of computed sums is at most the input total plus one
 
-Nonnegative positional inputs bound all computed sums by the total input value.
+**The number of computed sums is at most the input total plus one.** For every list $x$ of
+natural numbers with sum $S$ and every natural number $t$, the final list of sums computed by the
+exact subset sum traversal on $x$ with target $t$ has length at most $S + 1$.
 
 ## Depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
-- [Exact Subset Sum Sums sorted](exact-subset-sum-sums-sorted.md)
+- [Characterization of the exact subset sum list](exact-subset-sum-sums-mem.md)
+- [The exact subset sum list is strictly increasing](exact-subset-sum-sums-sorted.md)
 
 ## Sources
 

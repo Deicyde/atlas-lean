@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.decreaseRoot
 ---
 
-# Decrease Root
+# Lowering the root keeps a Fibonacci tree valid
 
-Lowering the root of a valid tree to a key no larger than the old root keeps the
-tree valid: the new root is still no greater than every represented element.
+**Lowering the root keeps a Fibonacci tree valid.** Let $T$ be a valid Fibonacci tree over a
+preordered type and let $k$ be a key that is at most the root of $T$. Then the tree obtained
+from $T$ by replacing its root by $k$, keeping its degree and children, is valid: the new root
+is still no greater than every represented element.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Valid](../../../part-02/fibonacci-heap/valid.md)
-- [Decrease Root](decrease-root.md)
-- [Root](../../../part-02/fibonacci-heap/root.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Valid Fibonacci trees](../../../part-02/fibonacci-heap/valid.md)
+- [Replacing the root key of a Fibonacci tree](decrease-root.md)
+- [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 
 ## Proof depends on
 
-- [Child valid](../../../part-02/fibonacci-heap/child-valid.md)
-- [Degree eq](../../../part-02/fibonacci-heap/degree-eq.md)
-- [Root le](../../../part-02/fibonacci-heap/root-le.md)
-- [Elements](../../../part-02/fibonacci-heap/elements.md)
+- [Children of a valid Fibonacci tree are valid](../../../part-02/fibonacci-heap/child-valid.md)
+- [The degree of a valid Fibonacci tree is its number of children](../../../part-02/fibonacci-heap/degree-eq.md)
+- [Roots of valid Fibonacci trees are lower bounds](../../../part-02/fibonacci-heap/root-le.md)
+- [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
 
 ## Sources
 

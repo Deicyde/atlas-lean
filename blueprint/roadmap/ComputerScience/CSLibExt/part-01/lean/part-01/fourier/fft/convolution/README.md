@@ -4,9 +4,9 @@ navigation: module
 
 # Convolution
 
-- [Fft Pointwise](fft-pointwise.md)
-- [Fft Pad](fft-pad.md)
-- [Fft Circular](fft-circular.md)
-- [Fft Linear](fft-linear.md)
-- [Fft Circular Array](fft-circular-array.md)
-- [Fft Linear Array](fft-linear-array.md)
+- [Timed pointwise product](fft-pointwise.md)
+- [Zero padding to twice the length](fft-pad.md)
+- [FFT circular convolution](fft-circular.md)
+- [FFT linear convolution](fft-linear.md)
+- [FFT circular convolution on arrays](fft-circular-array.md)
+- [FFT linear convolution on arrays](fft-linear-array.md)

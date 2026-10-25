@@ -7,23 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.heapOrdered_merge
 ---
 
-# Heap Ordered merge
+# Merging preserves heap order
 
-Priority-guided merge preserves the min-heap invariant.
+**Merging preserves heap order.** If two trees $l$ and $r$ are both heap-ordered in their
+priorities, then the priority-guided merge of $l$ and $r$ is heap-ordered.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Heap Ordered](heap-ordered.md)
-- [Merge](merge.md)
+- [Treap trees](tree.md)
+- [Heap order of treap priorities](heap-ordered.md)
+- [Treap merge](merge.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
-- [Mem Node](mem-node.md)
-- [All Nodes iff forall mem](all-nodes-iff-forall-mem.md)
-- [Heap root min](heap-root-min.md)
-- [Size](size.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Entry membership in a treap tree](mem-node.md)
+- [Treap all-nodes predicate via node membership](all-nodes-iff-forall-mem.md)
+- [The root of a heap-ordered tree has minimal priority](heap-root-min.md)
+- [Size of a treap tree](size.md)
 
 ## Sources
 

@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty trie
 
-Every lookup in the empty trie fails.
+**Lookup in the empty trie.** For every key $k$, looking up $k$ in the empty trie returns no
+value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty trie](empty.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

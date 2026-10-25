@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_graftAt
 ---
 
-# Mem vertices graft At
+# Vertices after grafting
 
-Grafting keeps every old vertex and adds exactly the vertices of the
-new child.
+**Vertices after grafting.** Let $t$ and $C$ be trees and $y$ a vertex. If grafting $C$ at
+$y$ in $t$, that is, attaching $C$ as a new last child of a node labelled $y$, produces the
+tree $t'$, then for every $v$, $v$ is a vertex of $t'$ if and only if $v$ is a vertex of $t$ or
+a vertex of $C$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Graft At](graft-at.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

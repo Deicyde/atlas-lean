@@ -4,7 +4,7 @@ navigation: module
 
 # FFT
 
-- [Fft Split](fft-split.md)
-- [Fft Butterfly](fft-butterfly.md)
-- [Fft Butterflies](fft-butterflies.md)
-- [Fft](fft.md)
+- [Even–odd split for the FFT](fft-split.md)
+- [One FFT butterfly](fft-butterfly.md)
+- [FFT butterfly pass](fft-butterflies.md)
+- [Radix-two fast Fourier transform](fft.md)

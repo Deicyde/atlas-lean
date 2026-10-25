@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_bridges
 ---
 
-# Length bridges
+# Number of bridge pointers
 
-There is one bridge pointer per entry of the current catalog.
+**Number of bridge pointers.** For lists $c$ and $d$ over a linearly ordered type, the list
+of bridge pointers of $c$ into $d$ has the same length as $c$: there is one bridge pointer per
+entry of $c$.
 
 ## Depends on
 
-- [Bridges](bridges.md)
+- [Bridge pointer list](bridges.md)
 
 ## Proof depends on
 
-- [Bridge Ptr](bridge-ptr.md)
+- [Bridge pointer](bridge-ptr.md)
 
 ## Sources
 

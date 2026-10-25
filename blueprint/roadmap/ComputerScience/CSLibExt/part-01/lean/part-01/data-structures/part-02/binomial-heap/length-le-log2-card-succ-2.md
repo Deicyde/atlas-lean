@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.length_le_log2_card_succ
 ---
 
-# Length le log2 card succ
+# A binomial heap has logarithmically many trees
 
-A heap has at most one more root than the binary logarithm of its cardinality.
+**A binomial heap has logarithmically many trees.** If a binomial heap over a linearly ordered
+type has $n$ elements, counted with multiplicity, then its number of trees is at most
+$\lfloor \log_2 n \rfloor + 1$, where $\lfloor \log_2 0 \rfloor$ is taken to be $0$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Length le log2 card succ](length-le-log2-card-succ.md)
+- [Valid binomial forest](valid-2.md)
+- [A valid binomial forest has logarithmically many trees](length-le-log2-card-succ.md)
 
 ## Sources
 

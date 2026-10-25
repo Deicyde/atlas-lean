@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_time
 ---
 
-# Bottom Up Cut Rod time
+# Exact cost of bottom-up rod cutting
 
-The actual candidate count is the triangular number, independent of all prices.
+**Exact cost of bottom-up rod cutting.** For prices $p = (p_1, \dots, p_n)$ in an additive
+commutative monoid with a linear order, the cost of bottom-up rod cutting on $p$ (the number of
+first-piece candidates it evaluates) is the triangular number $n(n + 1)/2$, whatever the prices.
 
 ## Depends on
 
-- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Bottom-up rod cutting](bottom-up-cut-rod.md)
 
 ## Proof depends on
 
-- [Bottom Up Cut Rod time sum](bottom-up-cut-rod-time-sum.md)
+- [Cost of bottom-up rod cutting as a sum over rows](bottom-up-cut-rod-time-sum.md)
 
 ## Sources
 

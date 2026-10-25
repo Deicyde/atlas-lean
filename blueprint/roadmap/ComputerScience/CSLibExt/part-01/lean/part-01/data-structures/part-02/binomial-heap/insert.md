@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.insert
 ---
 
-# Insert
+# Insertion into a binomial heap
 
-Insert one value into a binomial heap.
+**Insertion into a binomial heap.** Inserting a value $x$ into a binomial heap $H$ over a
+linearly ordered type gives the meld of the one-element binomial heap containing $x$ with $H$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 
 ## Proof depends on
 
-- [Meld](meld.md)
+- [Melding binomial heaps](meld.md)
 - [Singleton](singleton-2.md)
 
 ## Sources

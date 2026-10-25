@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.root?_insert
 ---
 
-# Root? insert
+# Splay-tree insertion puts the inserted key at the root
 
-The inserted key is the root of the result.
+**Splay-tree insertion puts the inserted key at the root.** For every binary tree $t$ with keys
+in a linearly ordered type and every key $x$, the splay-tree insertion of $x$ into $t$ is a
+nonempty tree whose root key is $x$.
 
 ## Depends on
 
-- [Insert](insert.md)
-- [Root?](root.md)
+- [Splay-tree insertion](insert.md)
+- [Root key of a binary tree](root.md)
 
 ## Proof depends on
 
-- [Splay](splay.md)
-- [Split](split.md)
+- [Splay operation](splay.md)
+- [Search-path split at a key](split.md)
 
 ## Sources
 

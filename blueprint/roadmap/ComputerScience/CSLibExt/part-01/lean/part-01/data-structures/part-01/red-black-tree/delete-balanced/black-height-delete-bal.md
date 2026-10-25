@@ -7,51 +7,55 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.blackHeight_deleteBal
 ---
 
-# Black Height delete Bal
+# Black height after double-black deletion
 
-Deletion from a valid tree keeps the black height or lowers it by one,
-when a double-black bubble is absorbed at the root.
+**Black height after double-black deletion.** Let $\alpha$ be a linearly ordered type,
+$x \in \alpha$, $T$ a valid red-black tree over $\alpha$, and $T'$ the tree obtained from $T$ by
+double-black deletion of $x$. Then the black height of $T'$ either equals the black height of $T$
+or is one less than it.
+
+The black height drops by one when a double black left by the deletion is absorbed at the root.
 
 ## Depends on
 
-- [Delete Bal](delete-bal.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
-- [Valid](../../../part-03/red-black-tree/valid.md)
-- [Black Height](../../../part-03/red-black-tree/black-height.md)
+- [Red-black tree deletion by the double-black method](delete-bal.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
+- [Valid red-black tree](../../../part-03/red-black-tree/valid.md)
+- [Black height](../../../part-03/red-black-tree/black-height.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [All](../../../part-03/red-black-tree/all.md)
-- [Balanced](../../../part-03/red-black-tree/balanced.md)
-- [Color](../../../part-03/red-black-tree/color.md)
-- [BBTree](bbtree.md)
-- [BColor](bcolor.md)
-- [Balanced BB](balanced-bb.md)
-- [Red Ok BB](red-ok-bb.md)
-- [Bal Left](bal-left.md)
-- [Bal Right](bal-right.md)
-- [Bh BB](bh-bb.md)
-- [Blacken](blacken.md)
-- [Color BB](color-bb.md)
-- [Del](del.md)
-- [Fix Left](fix-left.md)
-- [Fix Right](fix-right.md)
-- [Incr Black](incr-black.md)
-- [Inorder BB](inorder-bb.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Predicate holding at every key of a red-black tree](../../../part-03/red-black-tree/all.md)
+- [Black-height balanced red-black tree](../../../part-03/red-black-tree/balanced.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
+- [Trees with a possibly double-black root](bbtree.md)
+- [Extended root colors](bcolor.md)
+- [Black-height balance of a possibly double-black tree](balanced-bb.md)
+- [Red invariant for trees with a possibly double-black root](red-ok-bb.md)
+- [Rebalancing after deletion from the left subtree](bal-left.md)
+- [Rebalancing after deletion from the right subtree](bal-right.md)
+- [Black height of a possibly double-black tree](bh-bb.md)
+- [Absorbing a double-black root](blacken.md)
+- [Extended root color](color-bb.md)
+- [Double-black deletion](del.md)
+- [Left repair after double-black deletion](fix-left.md)
+- [Right repair after double-black deletion](fix-right.md)
+- [Adding a black to the root](incr-black.md)
+- [Inorder traversal of a possibly double-black tree](inorder-bb.md)
 - [Min Key](min-key.md)
-- [Root Black](root-black.md)
-- [Mem](../../../part-03/red-black-tree/mem.md)
-- [Ordered](../../../part-03/red-black-tree/ordered.md)
-- [Red Ok](../../../part-03/red-black-tree/red-ok.md)
-- [All iff forall mem](../../../part-03/red-black-tree/all-iff-forall-mem.md)
-- [Color Of](../../../part-03/red-black-tree/color-of.md)
-- [Erase](../../../part-03/red-black-tree/erase.md)
-- [Inorder](../../../part-03/red-black-tree/inorder.md)
-- [Mem inorder](../../../part-03/red-black-tree/mem-inorder.md)
+- [Recoloring the root black](root-black.md)
+- [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)
+- [Ordered red-black tree](../../../part-03/red-black-tree/ordered.md)
+- [Red property of red-black trees](../../../part-03/red-black-tree/red-ok.md)
+- [All keys versus members of a red-black tree](../../../part-03/red-black-tree/all-iff-forall-mem.md)
+- [Root color](../../../part-03/red-black-tree/color-of.md)
+- [Color erasure](../../../part-03/red-black-tree/erase.md)
+- [Inorder traversal of a red-black tree](../../../part-03/red-black-tree/inorder.md)
+- [Membership in the inorder traversal of a red-black tree](../../../part-03/red-black-tree/mem-inorder.md)
 
 ## Sources
 

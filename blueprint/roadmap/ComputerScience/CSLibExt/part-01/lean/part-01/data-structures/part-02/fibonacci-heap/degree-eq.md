@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.degree_eq
 ---
 
-# Degree eq
+# The degree of a valid Fibonacci tree is its number of children
 
-The stored degree of a valid tree is its number of children.
+**The degree of a valid Fibonacci tree is its number of children.** For every valid Fibonacci
+tree, its stored degree equals the number of its children.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
-- [Degree](degree.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [Children of a Fibonacci tree](children.md)
+- [Degree of a Fibonacci tree](degree.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

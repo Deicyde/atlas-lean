@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_eq_some_iff_of_valid
 ---
 
-# Min? eq some iff of valid
+# Characterization of the van Emde Boas minimum
 
-In a valid tree, `min?` returns the least stored element.
+**Characterization of the van Emde Boas minimum.** Let $t$ be a valid two-level van Emde Boas
+tree over the universe $\{0, \dots, m^2 - 1\}$, and let $x$ be in the universe. The minimum query
+on $t$ returns $x$ if and only if $x$ is stored in $t$ and $x \le y$ for every $y$ stored in $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Min?](min.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Minimum query of a van Emde Boas tree](min.md)
 
 ## Proof depends on
 
-- [Min? eq none iff](min-eq-none-iff.md)
-- [Min? least](min-least.md)
-- [Min? mem](min-mem.md)
+- [Empty minimum query in a van Emde Boas tree](min-eq-none-iff.md)
+- [The van Emde Boas minimum is a lower bound](min-least.md)
+- [The van Emde Boas minimum is stored](min-mem.md)
 
 ## Sources
 

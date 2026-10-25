@@ -6,17 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.lookup_eq_some_of_stored
 ---
 
-# Lookup eq some of stored
+# Lookup finds every stored binding
 
-Completeness of lookup under `Valid`: a stored binding is found, because placement
-puts it in exactly the bucket and slot that lookup probes.
+**Lookup finds every stored binding.** For a valid two-level perfect hash table, if the
+binding $(k, v)$ is held in some slot of the table, then looking up $k$ returns $v$.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
-- [Lookup](lookup.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Bindings stored in a perfect hash table](stored.md)
+- [Valid perfect hash table](valid.md)
+- [Lookup in a perfect hash table](lookup.md)
 
 ## Sources
 

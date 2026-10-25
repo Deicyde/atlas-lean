@@ -6,14 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.toListAux
 ---
 
-# To List Aux
+# Leaf traversal of a range tree with an accumulator
 
-Accumulator leaf traversal: `toListAux t acc = toList t ++ acc`, so
-`toList` is linear rather than repeatedly appending left leaf lists.
+**Leaf traversal of a range tree with an accumulator.** For a range tree $t$ and a list $a$
+of integers, $\operatorname{aux}(t, a)$ is $a$ if $t$ is empty, the list $x$ followed by $a$ if
+$t$ is a single leaf with value $x$, and $\operatorname{aux}(L, \operatorname{aux}(R, a))$ if $t$
+is a node with left subtree $L$ and right subtree $R$.
+
+Equivalently, $\operatorname{aux}(t, a)$ is the leaf list of $t$ followed by $a$, so the leaf list
+is computed in linear time rather than by repeatedly appending left leaf lists.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
+- [Range tree](range-tree.md)
 
 ## Sources
 

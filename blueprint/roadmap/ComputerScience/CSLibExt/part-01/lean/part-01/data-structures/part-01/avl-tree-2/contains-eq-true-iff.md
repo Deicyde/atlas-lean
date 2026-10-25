@@ -23,8 +23,8 @@ following comparisons from the root returns true if and only if $x$ is a key of 
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Contains](../../part-02/binary-search-tree/contains.md)
-- [Contains eq true iff](../../part-02/binary-search-tree/contains-eq-true-iff.md)
+- [Search in a binary search tree](../../part-02/binary-search-tree/contains.md)
+- [Search in a binary search tree is correct](../../part-02/binary-search-tree/contains-eq-true-iff.md)
 
 ## Sources
 

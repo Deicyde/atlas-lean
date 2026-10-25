@@ -7,28 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rebalanceWithCost
 ---
 
-# Cache Invariant rebalance With Cost
+# Rebalancing preserves the interval-tree cache invariant
 
-Rebalancing preserves attained maximum caches on every selected branch.
+**Rebalancing preserves the interval-tree cache invariant.** If an interval tree $t$
+satisfies the cache invariant, then the tree returned by the rebalancing step at the root of $t$
+also satisfies the cache invariant.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Cache Invariant rotate Left](cache-invariant-rotate-left.md)
-- [Cache Invariant rotate Left Right](cache-invariant-rotate-left-right.md)
-- [Cache Invariant rotate Right](cache-invariant-rotate-right.md)
-- [Cache Invariant rotate Right Left](cache-invariant-rotate-right-left.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
+- [Interval tree entry](entry.md)
+- [Left rotation preserves the interval-tree cache invariant](cache-invariant-rotate-left.md)
+- [Left-right rotation preserves the interval-tree cache invariant](cache-invariant-rotate-left-right.md)
+- [Right rotation preserves the interval-tree cache invariant](cache-invariant-rotate-right.md)
+- [Right-left rotation preserves the interval-tree cache invariant](cache-invariant-rotate-right-left.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.rank
 ---
 
-# Rank
+# Rank of a binomial tree
 
-The stored rank of a binomial tree.
+**Rank of a binomial tree.** The rank of a binomial tree is the natural number stored at its
+root node.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

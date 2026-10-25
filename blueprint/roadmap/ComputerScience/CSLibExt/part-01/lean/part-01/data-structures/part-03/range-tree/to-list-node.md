@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.toList_node
 ---
 
-# To List node
+# Leaf list of a range-tree node
 
-Characteristic node equation for `toList` (the former definition).
+**Leaf list of a range-tree node.** For all integers $lo$, $hi$ and range trees $L$, $R$, the
+leaf list of the node with stored bounds $lo$, $hi$, left subtree $L$ and right subtree $R$ is
+the leaf list of $L$ followed by the leaf list of $R$.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
-- [To List Aux eq](to-list-aux-eq.md)
+- [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
+- [Range-tree leaf traversal appends to its accumulator](to-list-aux-eq.md)
 
 ## Sources
 

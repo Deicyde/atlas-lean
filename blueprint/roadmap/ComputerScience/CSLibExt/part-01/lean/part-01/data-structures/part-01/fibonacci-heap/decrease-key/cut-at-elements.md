@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt_elements
 ---
 
-# Cut At elements
+# Cutting a subtree splits the elements of a Fibonacci tree
 
-Cutting partitions the represented multiset into the remainder and the extracted
-subtree.
+**Cutting a subtree splits the elements of a Fibonacci tree.** Let $t$ be a Fibonacci tree
+and $p$ a path of child indices. If cutting $t$ at $p$ extracts a subtree $s$ and leaves a
+remainder tree $t'$, then the multiset of elements of $t$ is the sum of the multisets of
+elements of $t'$ and of $s$.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Cut At](cut-at.md)
-- [Elements](../../../part-02/fibonacci-heap/elements.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
+- [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
 
 ## Proof depends on
 
-- [Cut At eq self](cut-at-eq-self.md)
+- [A cut without remainder extracts the whole tree](cut-at-eq-self.md)
 
 ## Sources
 

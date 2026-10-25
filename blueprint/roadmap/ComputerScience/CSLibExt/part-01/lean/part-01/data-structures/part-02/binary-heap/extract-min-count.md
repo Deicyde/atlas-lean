@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.extractMin_count
 ---
 
-# Extract Min count
+# Binary heap extraction removes one copy of the minimum
 
-Successful extraction decreases the returned value's multiplicity by one.
+**Binary heap extraction removes one copy of the minimum.** Let $h$ be a binary min-heap over
+a linearly ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$ and
+the heap $h'$, then the multiplicity of $x$ in the multiset of elements of $h'$ is its
+multiplicity in the multiset of elements of $h$ minus one.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Elements](elements.md)
-- [Extract Min](extract-min.md)
+- [Binary min-heap](min-heap.md)
+- [Elements of a binary min-heap](elements.md)
+- [Extracting the minimum of a binary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Min cons elements](extract-min-cons-elements.md)
+- [Binary heap extraction splits off the minimum](extract-min-cons-elements.md)
 
 ## Sources
 

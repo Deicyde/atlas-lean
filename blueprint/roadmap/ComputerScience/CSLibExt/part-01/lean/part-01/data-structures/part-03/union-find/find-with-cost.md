@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.findWithCost
 ---
 
-# Find With Cost
+# Find with cost
 
-Run `find`, charging one unit for every visited vertex, including the root.
+**Find with cost.** For a vertex $x$ of a parent forest $F$, find with cost returns the root
+that find returns for $x$, together with the cost $\ell(x) + 1$, where $\ell(x)$ is the path
+length of $x$ (the number of non-root parent edges that find traverses from $x$). That is, it
+charges one unit for every visited vertex, including the root.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Parent forest with a depth certificate](forest.md)
 
 ## Proof depends on
 
-- [Find](find.md)
-- [Path Length](path-length.md)
+- [Root of a vertex in a parent forest](find.md)
+- [Path length to the root](path-length.md)
 
 ## Sources
 

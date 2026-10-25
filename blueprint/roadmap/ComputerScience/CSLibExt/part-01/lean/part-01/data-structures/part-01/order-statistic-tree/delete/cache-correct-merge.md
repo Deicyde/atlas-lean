@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_merge
 ---
 
-# Cache Correct merge
+# Order-statistic merge preserves cache correctness
 
-Merging preserves correct caches.
+**Order-statistic merge preserves cache correctness.** Let $A$ and $B$ be order-statistic trees
+whose cached subtree size at every node equals the number of nodes in that node's subtree. Then
+the merge of $A$ and $B$ has the same property. No ordering between the keys of $A$ and $B$ is
+assumed.
 
 ## Depends on
 
-- [Cache Correct](../../../part-02/order-statistic-tree/cache-correct.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Merge](merge.md)
+- [Correct size caches](../../../part-02/order-statistic-tree/cache-correct.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Merging order-statistic trees](merge.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-02/order-statistic-tree/entry.md)
-- [Cache Correct node](../../../part-02/order-statistic-tree/cache-correct-node.md)
-- [Node](../../../part-02/order-statistic-tree/node.md)
+- [Order-statistic tree node entry](../../../part-02/order-statistic-tree/entry.md)
+- [The cache-computing node constructor preserves correct size caches](../../../part-02/order-statistic-tree/cache-correct-node.md)
+- [Order-statistic tree node with computed cache](../../../part-02/order-statistic-tree/node.md)
 
 ## Sources
 

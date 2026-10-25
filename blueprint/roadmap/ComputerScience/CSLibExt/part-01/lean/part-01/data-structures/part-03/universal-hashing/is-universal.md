@@ -6,12 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UniversalHashing.IsUniversal
 ---
 
-# Is Universal
+# Universal hash family
 
-A finite hash family is universal if it is nonempty (so that choosing a member
-uniformly at random, the reading behind the bound, makes sense) and every two
-distinct keys collide under at most a `1 / m` fraction of its members, stated
-without division as `collisionCount H x y * m ≤ H.card`.
+**Universal hash family.** A finite family $H$ of functions from a set $\alpha$ to
+$\{0, 1, \dots, m - 1\}$ is universal if $m > 0$, $H$ is nonempty, and for all distinct keys
+$x \ne y$ in $\alpha$ the number of functions $h \in H$ with $h(x) = h(y)$, multiplied by $m$,
+is at most $|H|$; that is, $x$ and $y$ collide under at most a $1/m$ fraction of the members
+of $H$.
+
+Nonemptiness makes sense of choosing a member of $H$ uniformly at random, the reading behind
+the bound.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Collision Count](collision-count.md)
+- [Collision count](collision-count.md)
 
 ## Sources
 

@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.terminated_drop_eq_suffix_map
 ---
 
-# Terminated drop eq suffix map
+# Suffixes of the terminated string
 
-Terminated suffixes are the `SuffixArray.suffix` suffixes, tagged and terminated.
+**Suffixes of the terminated string.** For a list $s$ over $\alpha$ and a natural number
+$i \le |s|$, removing the first $i$ entries of the terminated string of $s$ gives the suffix
+of $s$ starting at index $i$ with every symbol tagged $\mathrm{some}$, followed by
+$\mathrm{none}$.
 
 ## Depends on
 
 - [Suffix](../suffix-array/suffix.md)
-- [Terminated](terminated.md)
+- [Terminated string](terminated.md)
 
 ## Sources
 

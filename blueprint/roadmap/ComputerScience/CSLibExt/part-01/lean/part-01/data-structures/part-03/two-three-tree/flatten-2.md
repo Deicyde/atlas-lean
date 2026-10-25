@@ -6,18 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.flatten
 ---
 
-# Flatten
+# Inorder traversal of a 2-3 tree root
 
-The inorder traversal of a root's tree.
+**Inorder traversal of a 2-3 tree root.** The flattening of a 2-3 tree root is the
+flattening of its underlying tree, that is, the list of its keys in inorder.
 
 ## Depends on
 
-- [Root](root.md)
+- [2-3 trees of unspecified height](root.md)
 
 ## Proof depends on
 
-- [Tree](tree.md)
-- [Flatten](flatten.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CartesianTree.root
 ---
 
-# Root
+# Root key of a binary tree
 
-The root key of a tree, if it has one.
+**Root key of a binary tree.** The root of a binary tree is the key stored at its top node
+when the tree is nonempty, and is undefined when the tree is empty.
 
 ## Depends on
 

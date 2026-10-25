@@ -29,8 +29,8 @@ tree obtained by inserting $x$ into $t$ is ordered.
 - [Membership after insertion into an AVL tree](mem-insert.md)
 - [Rebalancing an AVL node preserves the search-tree order](ordered-balance.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [All](../../part-02/binary-search-tree/all.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

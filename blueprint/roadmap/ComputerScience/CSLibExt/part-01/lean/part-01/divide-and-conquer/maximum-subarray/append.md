@@ -6,16 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsMaxSubarraySum.append
 ---
 
-# Append
+# Maximum subarray sum of a concatenation
 
-Combining the halves: a best run of `L ++ R` is a best run of `L`, a best run of `R`, or a
-best suffix of `L` followed by a best prefix of `R`.
+**Maximum subarray sum of a concatenation.** Let $\alpha$ be an additive monoid with a linear
+order such that $b \le c$ implies $a + b \le a + c$ and $b + a \le c + a$, and let $L$ and $R$ be
+lists over $\alpha$. Suppose that $l$ is the maximum sum of a nonempty contiguous run of $L$, $r$
+is the maximum sum of a nonempty contiguous run of $R$, $s$ is the maximum sum of a nonempty
+suffix of $L$, and $p$ is the maximum sum of a nonempty prefix of $R$. Then
+$\max(\max(l, r), s + p)$ is the maximum sum of a nonempty contiguous run of the concatenation of
+$L$ followed by $R$.
 
 ## Depends on
 
-- [Is Max Prefix Sum](is-max-prefix-sum.md)
-- [Is Max Subarray Sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
-- [Is Max Suffix Sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
+- [Maximum prefix sum](is-max-prefix-sum.md)
+- [Being the maximum subarray sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
+- [Being the maximum suffix sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
 
 ## Sources
 

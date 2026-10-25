@@ -20,7 +20,7 @@ This value is the greatest length of a common subsequence of $x$ and $y$.
 
 ## Proof depends on
 
-- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
+- [Longest common subsequence by dynamic programming](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
 
 ## Sources
 

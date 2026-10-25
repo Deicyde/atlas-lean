@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_time
 ---
 
-# Edit Distance time
+# Running time of the edit distance algorithm
 
-Total charged events are all table cells plus all reconstructed operations.
+**Running time of the edit distance algorithm.** For lists $s$ and $t$ over a type with a
+Boolean equality test, the total number of events charged by the edit distance algorithm on $s$
+and $t$, that is its cell transitions plus its reconstruction steps, equals
+$(|s| + 1)(|t| + 1) + k$, where $k$ is the length of the edit script it returns.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Total](../script/total.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Total edit-distance cost](../script/total.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
 - [Edit Script](../script/edit-script.md)
-- [Edit Step](../script/edit-step.md)
-- [Edit Distance](edit-distance.md)
+- [Edit step](../script/edit-step.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Proof depends on
 
-- [Edit Distance cell Transitions](edit-distance-cell-transitions.md)
-- [Edit Distance reconstruction Steps](edit-distance-reconstruction-steps.md)
+- [Table cost of the edit distance algorithm](edit-distance-cell-transitions.md)
+- [Reconstruction cost of the edit distance algorithm](edit-distance-reconstruction-steps.md)
 
 ## Sources
 

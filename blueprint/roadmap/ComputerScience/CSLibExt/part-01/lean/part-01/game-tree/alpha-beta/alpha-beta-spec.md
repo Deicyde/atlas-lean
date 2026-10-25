@@ -13,16 +13,16 @@ alpha-beta agrees with the minimax value after clamping both to the window `[a, 
 
 ## Depends on
 
-- [Game Tree](game-tree.md)
-- [Alpha Beta](alpha-beta.md)
-- [Minimax](minimax.md)
+- [Game tree](game-tree.md)
+- [Alpha-beta pruning](alpha-beta.md)
+- [Minimax value](minimax.md)
 
 ## Proof depends on
 
-- [Alpha Beta List](alpha-beta-list.md)
-- [Alpha Beta List false le](alpha-beta-list-false-le.md)
-- [Le alpha Beta List true](le-alpha-beta-list-true.md)
-- [Minimax List](minimax-list.md)
+- [Alpha-beta scan of the children](alpha-beta-list.md)
+- [The minimizer's alpha-beta scan stays at or below its upper bound](alpha-beta-list-false-le.md)
+- [Lower bound for the maximizer's scan](le-alpha-beta-list-true.md)
+- [Minimax value of a list of positions](minimax-list.md)
 
 ## Sources
 

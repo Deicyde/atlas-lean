@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.mem_insert
 ---
 
-# Mem insert
+# Membership after insertion into a red-black tree
 
-Inserting a key adds exactly that key to structural membership.
+**Membership after insertion into a red-black tree.** For keys from a linearly ordered type, a
+key $y$ is a member of the red-black tree obtained by inserting $x$ into $t$ if and only if $y = x$
+or $y$ is a member of $t$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Membership in a red-black tree](mem.md)
+- [Red-black tree data type](tree.md)
+- [Red-black tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
-- [Color](color.md)
-- [Balance](balance.md)
-- [Erase](erase.md)
-- [Inorder](inorder.md)
-- [Ins](ins.md)
-- [Make Black](make-black.md)
-- [Mem inorder](mem-inorder.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../part-02/binary-search-tree/inorder-aux.md)
+- [Red-black node colors](color.md)
+- [Okasaki's rebalancing](balance.md)
+- [Color erasure](erase.md)
+- [Inorder traversal of a red-black tree](inorder.md)
+- [Unchecked red-black insertion](ins.md)
+- [Blackening the root](make-black.md)
+- [Membership in the inorder traversal of a red-black tree](mem-inorder.md)
 
 ## Sources
 

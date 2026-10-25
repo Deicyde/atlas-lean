@@ -6,20 +6,24 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.rangeSum
 ---
 
-# Range Sum
+# Fenwick tree range sum
 
-The sum of the underlying entries with indices in `[lo, hi)`, as a
-difference of prefix sums. This is the one operation that needs additive
-inverses. Reversed or empty ranges (`hi ≤ lo`) return `0`, matching the sum
-over the empty list interval `((arr.take hi).drop lo)`.
+**Fenwick tree range sum.** For a Fenwick tree $t$ over an additive commutative group and
+natural numbers $\mathit{lo}$ and $\mathit{hi}$, the range sum of $t$ over
+$[\mathit{lo}, \mathit{hi})$ is $0$ if $\mathit{hi} \le \mathit{lo}$, and otherwise the prefix sum
+of length $\mathit{hi}$ of $t$ minus the prefix sum of length $\mathit{lo}$ of $t$.
+
+When $t$ represents a list, this is the sum of its entries with indices in
+$[\mathit{lo}, \mathit{hi})$. This is the only Fenwick tree operation that needs additive
+inverses.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
+- [Fenwick tree](fenwick-tree.md)
 
 ## Proof depends on
 
-- [Prefix Sum](prefix-sum.md)
+- [Fenwick tree prefix sum](prefix-sum.md)
 
 ## Sources
 

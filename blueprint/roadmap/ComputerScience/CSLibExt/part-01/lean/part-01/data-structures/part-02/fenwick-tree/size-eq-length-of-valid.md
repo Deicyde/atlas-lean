@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.size_eq_length_of_valid
 ---
 
-# Size eq length of valid
+# A Fenwick tree has the length of the list it represents
 
-A tree representing `arr` has size `arr.length`.
+**A Fenwick tree has the length of the list it represents.** If a Fenwick tree $t$ over an
+additive commutative monoid represents a list $a$, then the size of $t$ equals the length of
+$a$.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Valid](valid.md)
-- [Size](size.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Fenwick tree representing a list](valid.md)
+- [Size of a Fenwick tree](size.md)
 
 ## Proof depends on
 
-- [Block Sum](block-sum.md)
+- [Fenwick-tree interval sum of a list](block-sum.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Edit Step](edit-step.md)
+- [Edit step](edit-step.md)
 
 ## Sources
 

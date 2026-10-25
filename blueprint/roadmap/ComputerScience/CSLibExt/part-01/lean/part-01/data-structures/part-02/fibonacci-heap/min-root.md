@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot
 ---
 
-# Min Root
+# Minimum root of a forest
 
-The minimum root value in a forest, or `none` for the empty forest.
+**Minimum root of a forest.** The minimum root of a forest of Fibonacci trees over a linearly
+ordered type is an optional value: it is absent for the empty forest, and for a nonempty forest
+it is the least of the roots of its trees.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Root](root.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

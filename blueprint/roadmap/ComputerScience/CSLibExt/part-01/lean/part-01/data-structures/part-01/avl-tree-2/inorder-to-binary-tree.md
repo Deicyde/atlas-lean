@@ -18,7 +18,7 @@ tree obtained from $t$ by erasing its cached heights; this holds by definition.
 - [Binary trees with cached heights](tree.md)
 - [Inorder traversal of an AVL tree](inorder.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
 
 ## Sources
 

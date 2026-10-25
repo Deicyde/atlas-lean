@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.extractMin_mem_of_ne_iff
 ---
 
-# Extract Min mem of ne iff
+# Membership after extraction from a binary min-heap
 
-Successful extraction preserves membership of every value other than the
-returned minimum.
+**Membership after extraction from a binary min-heap.** Let $h$ be a binary min-heap over a
+linearly ordered type, and suppose extracting the minimum from $h$ succeeds and returns a value
+$x$ together with a heap $r$. Then every value $y \ne x$ is an element of $r$ if and only if it
+is an element of $h$.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Elements](elements.md)
-- [Extract Min](extract-min.md)
+- [Binary min-heap](min-heap.md)
+- [Elements of a binary min-heap](elements.md)
+- [Extracting the minimum of a binary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Min cons elements](extract-min-cons-elements.md)
+- [Binary heap extraction splits off the minimum](extract-min-cons-elements.md)
 
 ## Sources
 

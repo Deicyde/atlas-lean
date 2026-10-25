@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.abstraction_keys_nodup
 ---
 
-# Abstraction keys nodup
+# Keys of a valid skip list are distinct
 
-Valid bottom-level abstractions have no duplicate keys.
+**Keys of a valid skip list are distinct.** If a skip list is valid, then the keys of the
+pairs in its bottom-level abstraction, read in order, form a list without duplicates.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Valid](valid.md)
-- [Abstraction](abstraction.md)
+- [Skip list](skip-list.md)
+- [Valid skip list](valid.md)
+- [Bottom-level abstraction of a skip list](abstraction.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

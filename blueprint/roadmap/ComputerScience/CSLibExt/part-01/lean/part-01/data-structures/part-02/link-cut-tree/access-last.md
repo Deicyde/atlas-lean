@@ -7,37 +7,38 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.access_last
 ---
 
-# Access last
+# After access, the accessed vertex ends its preferred path
 
-After `access x` in a valid state, the root-to-`x` path of the tree
-containing `x` is one of the preferred paths of the decomposition, and
-`x` is its last (deepest) vertex: `p.getLast? = some x`. No auxiliary
-splay tree is modeled, so no claim is made about a splay-tree root. This
-is only the endpoint property of the accessed preferred path. Other
-preferred paths off that root path are retained (`mem_preferred_access`).
+**After access, the accessed vertex ends its preferred path.** Let $s$ be a valid link-cut
+tree state and let $x$ be a vertex of its represented forest. Then, after accessing $x$, the
+preferred-path decomposition of the new state contains a path $p$ whose last vertex is $x$, and
+$p$ is the path from the root down to $x$ in some tree of the represented forest of $s$.
+
+Paths are listed from the root downward, so $x$ is the deepest vertex of $p$. No auxiliary splay
+tree is modeled, so this is only the endpoint property of the accessed preferred path.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [State](state.md)
-- [Mem](mem.md)
-- [Valid](valid.md)
-- [Access](access.md)
-- [Paths](paths.md)
-- [Root Path](root-path.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Link-cut tree state](state.md)
+- [Vertex of a link-cut tree state](mem.md)
+- [Valid link-cut tree states](valid.md)
+- [Access in a link-cut tree](access.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Parent Child](parent-child.md)
-- [Decomp](decomp.md)
-- [Decomp fst eq root Path](decomp-fst-eq-root-path.md)
-- [Find Tree](find-tree.md)
-- [Get Last? root Path](get-last-root-path.md)
-- [Path Edges](path-edges.md)
-- [Tree Paths](tree-paths.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
+- [Preferred-path decomposition of a tree](decomp.md)
+- [Access edges make the root path the downward preferred path](decomp-fst-eq-root-path.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [A root path ends at its target](get-last-root-path.md)
+- [Consecutive edges of a vertex path](path-edges.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Sources
 

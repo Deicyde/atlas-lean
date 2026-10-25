@@ -5,24 +5,30 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.sweep
 ---
 
-# Sweep
+# The any-segments-intersect sweep
 
-CLRS `ANY-SEGMENTS-INTERSECT`, lines 3-11, on the sorted events, with the sweep-line status
-`T` a list of segment indices from bottom to top. At a left endpoint the segment is inserted
-below the first segment not strictly below that endpoint (one `DIRECTION` per segment scanned)
-and tested against its new neighbours; at a right endpoint its two neighbours are tested against
-each other and the segment is deleted.
+**The any-segments-intersect sweep.** CLRS `ANY-SEGMENTS-INTERSECT`, lines 3-11: the sweep
+processes a list of events with a status list $T$ of segments ordered from bottom to top, returns
+true as soon as an intersection test succeeds, and returns false once the events run out. At the
+left endpoint $p$ of segment $i$, split $T$ as $A$ followed by $B$, where $A$ is the longest
+initial part of $T$ whose segments pass strictly below $p$ by the `DIRECTION` test; this scan
+costs $\min(|A| + 1, |T|)$, one `DIRECTION` per segment scanned. Segment $i$ is tested with
+`SEGMENTS-INTERSECT` against the first segment of $B$ and then against the last segment of $A$
+(when these exist), and the sweep continues with $A$, then $i$, then $B$. At the right endpoint
+of segment $i$, with $A$ the part of $T$ before the first occurrence of $i$ and $B$ the part
+after it, the last segment of $A$ is tested against the first segment of $B$ when both exist,
+and the sweep continues with $A$ followed by $B$.
 
 ## Depends on
 
-- [Event](event.md)
+- [Sweep event](event.md)
 
 ## Proof depends on
 
-- [Below](below.md)
-- [Left](left.md)
-- [Test Opt](test-opt.md)
-- [Test Pair](test-pair.md)
+- [Segment strictly below a point](below.md)
+- [Left endpoint of a segment](left.md)
+- [Testing a segment against an optional neighbour](test-opt.md)
+- [Testing the neighbours of a deleted segment](test-pair.md)
 
 ## Sources
 

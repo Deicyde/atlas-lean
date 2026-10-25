@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.root
 ---
 
-# Root
+# Root of a rooted tree
 
-The root vertex of a tree.
+**Root of a rooted tree.** The root of the tree with root vertex $r$ and child subtrees
+$c_1, \dots, c_k$ is the vertex $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 
 ## Sources
 

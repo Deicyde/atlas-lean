@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.put_head?
 ---
 
-# Put head?
+# With positive capacity, the inserted binding becomes the most recent entry
 
-With positive capacity, the binding stored by `put` is the most recent entry.
+**With positive capacity, the inserted binding becomes the most recent entry.** Let $C$
+be an LRU cache of positive capacity, $k$ a key and $v$ a value. After the binding $(k, v)$
+is put into $C$, the first entry of the resulting cache, its most recently used entry, is
+$(k, v)$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Put](put.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Insertion into an LRU cache](put.md)
 
 ## Sources
 

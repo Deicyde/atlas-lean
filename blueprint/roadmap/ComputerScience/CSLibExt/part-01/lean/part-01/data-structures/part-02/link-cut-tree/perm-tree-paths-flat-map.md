@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.perm_treePaths_flatMap
 ---
 
-# Perm tree Paths flat Map
+# The preferred paths of a tree rearrange its vertex list
 
-The preferred paths of a tree partition its vertex set.
+**The preferred paths of a tree rearrange its vertex list.** For every list $E$ of directed
+edges and every rooted ordered tree $t$, the concatenation of the preferred paths of $t$ under
+$E$ is a permutation of the preorder vertex list of $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Tree Paths](tree-paths.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Proof depends on
 
-- [Decomp](decomp.md)
-- [Decomp perm](decomp-perm.md)
+- [Preferred-path decomposition of a tree](decomp.md)
+- [Preferred paths permute the vertex list](decomp-perm.md)
 
 ## Sources
 

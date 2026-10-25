@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.Valid.rootCompact_child
 ---
 
-# Root Compact child
+# Children of a valid node are path-compressed
 
-Every child subtree of a valid node is path-compressed at its root.
+**Children of a valid node are path-compressed.** If a radix-trie node is valid, then for each
+of its child edges, the subtree at the end of that edge is path-compressed at its root: its root
+stores a value or has at least two child edges.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Root Compact](root-compact.md)
-- [Valid](valid.md)
+- [Radix trie](radix-trie.md)
+- [Path-compressed root](root-compact.md)
+- [Valid radix trie](valid.md)
 
 ## Sources
 

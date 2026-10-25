@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.mem_join
 ---
 
-# Mem join
+# Membership in a splice
 
-A key is in a splice exactly when it is in one of the two parts.
+**Membership in a splice.** For red-black trees $t$ and $s$ with keys of any type, a key $x$
+belongs to the splice of $t$ with $s$ if and only if $x$ belongs to $t$ or $x$ belongs to $s$.
 
 ## Depends on
 
-- [Mem](../../../part-03/red-black-tree/mem.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
-- [Join](join.md)
+- [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
+- [Splicing two red-black trees](join.md)
 
 ## Proof depends on
 
-- [Color](../../../part-03/red-black-tree/color.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
 
 ## Sources
 

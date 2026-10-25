@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.toList
 ---
 
-# To List
+# Leaf list of a range tree
 
-The leaf values of a tree from left to right.
+**Leaf list of a range tree.** The leaf list of a range tree $t$ is the list of the integers
+stored at its leaves, read from left to right and with repetitions.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
+- [Range tree](range-tree.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
 
 ## Sources
 

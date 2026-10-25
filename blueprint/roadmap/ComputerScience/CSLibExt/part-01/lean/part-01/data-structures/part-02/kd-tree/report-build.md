@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.report_build
 ---
 
-# Report build
+# Range report of a built kd-tree as a filter
 
-The report of a built tree is its point list filtered by the box.
+**Range report of a built kd-tree as a filter.** Let $d \ge 1$. For every starting axis
+$a$, every list $P$ of points of $\mathbb{Z}^d$ and all $lo, hi \in \mathbb{Z}^d$, let $T$ be
+the kd-tree built from $P$ starting at axis $a$. The range report of $T$ for the box
+$[lo, hi]$ equals the list of points of $T$, in left-to-right order, that lie in the box,
+that is, the points $p$ with $lo_i \le p_i \le hi_i$ for every coordinate $i$.
 
 ## Depends on
 
-- [Build](build.md)
-- [In Box](in-box.md)
-- [Report](report.md)
-- [To List](to-list.md)
+- [Kd-tree construction by median splits](build.md)
+- [Membership in an axis-aligned box](in-box.md)
+- [Orthogonal range report of a kd-tree](report.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [Report eq filter](report-eq-filter.md)
-- [Valid build](valid-build.md)
+- [Correctness of the kd-tree range report](report-eq-filter.md)
+- [Median-split kd-trees satisfy the kd invariant](valid-build.md)
 
 ## Sources
 

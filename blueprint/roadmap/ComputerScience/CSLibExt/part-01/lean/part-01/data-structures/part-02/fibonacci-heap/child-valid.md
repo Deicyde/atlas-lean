@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.child_valid
 ---
 
-# Child valid
+# Children of a valid Fibonacci tree are valid
 
-Every child of a valid tree is valid.
+**Children of a valid Fibonacci tree are valid.** Every child of a valid Fibonacci tree is
+itself a valid Fibonacci tree.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [Children of a Fibonacci tree](children.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

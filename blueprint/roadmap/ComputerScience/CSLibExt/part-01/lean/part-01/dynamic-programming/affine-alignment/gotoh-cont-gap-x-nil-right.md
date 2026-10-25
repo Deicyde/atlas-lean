@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.gotohContGapX_nil_right
 ---
 
-# Gotoh Cont Gap X nil right
+# Continuation after a gap in the second sequence, empty second sequence
 
-The `gapX` continuation against the empty sequence is a single gap run.
+**Continuation after a gap in the second sequence, empty second sequence.** Fix a scoring
+function $\sigma$ on pairs of letters and integer gap-open and gap-extend penalties $g_o$ and
+$g_e$, and let $X(u, v)$ be the Gotoh continuation value of sequences $u$, $v$ when the previous
+column was a gap in $v$. For every sequence $u$ of length $k$, the value $X(u, \varepsilon)$,
+where $\varepsilon$ is the empty sequence, equals $k \, g_e$: the open gap run is extended by
+$k$ columns.
 
 ## Depends on
 
-- [Gap State](gap-state.md)
-- [Gap Run Cost](gap-run-cost.md)
-- [Gotoh Cont Gap X](gotoh-cont-gap-x.md)
+- [Gap states](gap-state.md)
+- [Cost of a gap run](gap-run-cost.md)
+- [Gotoh continuation value after a gap in the second sequence](gotoh-cont-gap-x.md)
 
 ## Proof depends on
 
-- [Gap Cost](gap-cost.md)
-- [Gap Run Cost succ](gap-run-cost-succ.md)
-- [Gotoh Aux](gotoh-aux.md)
+- [Gap cost](gap-cost.md)
+- [Adding a column to a gap run](gap-run-cost-succ.md)
+- [Fuel-bounded Gotoh recursion](gotoh-aux.md)
 
 ## Sources
 

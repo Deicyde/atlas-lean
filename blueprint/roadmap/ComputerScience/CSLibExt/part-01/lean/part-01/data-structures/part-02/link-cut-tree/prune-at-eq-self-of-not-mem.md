@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.pruneAt_eq_self_of_not_mem
 ---
 
-# Prune At eq self of not mem
+# Pruning at an absent vertex changes nothing
 
-Pruning at a vertex that does not occur is the identity.
+**Pruning at an absent vertex changes nothing.** Let $t$ be a rooted ordered tree and $x$ a
+vertex that does not occur in $t$. Then pruning the subtrees rooted at $x$ from $t$ succeeds and
+returns $t$ itself.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Prune At](prune-at.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

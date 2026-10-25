@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.normalizedArity_eq
 ---
 
-# Normalized Arity eq
+# Normalization leaves a valid arity unchanged
 
-A valid requested arity is unchanged by normalization.
+**Normalization leaves a valid arity unchanged.** For every natural number $d \ge 2$, the
+normalized arity $\max(2, d)$ of $d$ equals $d$.
 
 ## Depends on
 
-- [Normalized Arity](normalized-arity.md)
+- [Normalized heap arity](normalized-arity.md)
 
 ## Sources
 

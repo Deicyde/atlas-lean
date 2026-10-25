@@ -6,19 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fft_ret_succ_low
 ---
 
-# Fft ret succ low
+# Low half of the FFT butterfly recurrence
 
-Each low-half output uses the two stored actual child transforms.
+**Low half of the FFT butterfly recurrence.** Let $R$ be a commutative ring, $d$ a natural
+number, $\omega \in R$ and $x \in R^{2^{d+1}}$, with entries indexed from $0$. Let
+$e, o \in R^{2^d}$ be the even- and odd-indexed subsequences of $x$ returned by the FFT split,
+and let $E$ and $O$ be the vectors returned by the radix-two FFT of depth $d$ with root
+$\omega \cdot \omega$ on $e$ and on $o$. Then for every $k < 2^d$, entry $k$ of the vector
+returned by the radix-two FFT of depth $d + 1$ with root $\omega$ on $x$ equals
+$E_k + \omega^k O_k$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Fft Split](../../fft-2/fft-split.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Even–odd split for the FFT](../../fft-2/fft-split.md)
 
 ## Proof depends on
 
-- [Fft Butterflies](../../fft-2/fft-butterflies.md)
-- [Fft Butterflies ret](../butterfly/fft-butterflies-ret.md)
+- [FFT butterfly pass](../../fft-2/fft-butterflies.md)
+- [Result of the butterfly loop](../butterfly/fft-butterflies-ret.md)
 
 ## Sources
 

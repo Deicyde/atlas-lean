@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty radix trie
 
-Every lookup in the empty trie fails.
+**Lookup in the empty radix trie.** For every key $k$, looking up $k$ in the empty radix
+trie returns no value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty radix trie](empty.md)
+- [Radix trie lookup](lookup.md)
 
 ## Proof depends on
 
-- [Radix Trie](radix-trie.md)
-- [Lookup node cons](lookup-node-cons.md)
+- [Radix trie](radix-trie.md)
+- [Radix trie lookup of a nonempty key at a node](lookup-node-cons.md)
 
 ## Sources
 

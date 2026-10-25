@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.empty
 ---
 
-# Empty
+# The empty x-fast trie
 
-The empty x-fast trie: no keys, every level empty.
+**The empty x-fast trie.** The empty x-fast trie over $w$-bit keys stores no keys, and the
+prefix set at each of its levels $0, 1, \dots, w$ is empty.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Sources
 

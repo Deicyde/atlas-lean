@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.insert
 ---
 
-# Insert
+# Insertion into a catenable heap
 
-Add `x` in front of `h`, allocating one front node.
+**Insertion into a catenable heap.** For an element $x$ and a catenable heap $h$, inserting
+$x$ into $h$ returns the heap with $x$ added in front of $h$ and charges cost $1$, for the one
+front node it allocates.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
+- [Catenable heap](catenable-heap.md)
 
 ## Sources
 

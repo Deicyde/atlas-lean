@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.findMin_eq_none_iff
 ---
 
-# Find Min eq none iff
+# Find-min fails exactly on the empty Fibonacci heap
 
-Minimum inspection fails exactly for the empty heap.
+**Find-min fails exactly on the empty Fibonacci heap.** For a Fibonacci heap $H$ over a
+linearly ordered type, find-min on $H$ returns no value if and only if $H$ has no trees.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
-- [Find Min](find-min.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci heap](fibonacci-heap.md)
+- [Find-min for Fibonacci heaps](find-min.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Min Root](min-root.md)
-- [Min Root eq none iff](min-root-eq-none-iff.md)
+- [Minimum root of a forest](min-root.md)
+- [Only the empty forest has no minimum root](min-root-eq-none-iff.md)
 
 ## Sources
 

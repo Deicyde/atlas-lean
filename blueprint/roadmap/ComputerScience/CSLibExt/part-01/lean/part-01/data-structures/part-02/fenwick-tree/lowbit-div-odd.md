@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_div_odd
 ---
 
-# Lowbit div odd
+# Dividing out the lowest set bit leaves an odd number
 
-The quotient `n / lowbit n` is odd, so `lowbit n` is the largest power of two
-dividing `n`.
+**Dividing out the lowest set bit leaves an odd number.** For every natural number $n > 0$,
+the quotient $n / \operatorname{lowbit}(n)$ is odd, where $\operatorname{lowbit}(n)$ is the
+value of the lowest set bit of $n$ in binary.
 
 ## Depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

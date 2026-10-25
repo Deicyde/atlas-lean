@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_eq_some_iff_mem_entries
 ---
 
-# Lookup eq some iff mem entries
+# Trie lookup agrees with the entries
 
-Lookup succeeds with a value exactly when the corresponding pair occurs in `entries`.
+**Trie lookup agrees with the entries.** For every valid trie $T$, every key $k$ and every
+value $v$, looking up $k$ in $T$ returns $v$ if and only if $(k, v)$ is one of the entries of
+$T$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Valid](valid.md)
-- [Entries](entries.md)
-- [Lookup](lookup.md)
+- [Valid trie](valid.md)
+- [Entries of a trie](entries.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

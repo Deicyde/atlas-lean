@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fft_stdAddChar_one_normalized
 ---
 
-# Fft std Add Char one normalized
+# The radix-two FFT with root $e^{2\pi i/n}$, divided by $n$, computes the inverse DFT
 
-The actual positive-sign source FFT, explicitly normalized, is canonical inverse DFT.
+**The radix-two FFT with root $e^{2\pi i/n}$, divided by $n$, computes the inverse DFT.** Let
+$n = 2^d$ and let $x_0, \dots, x_{n-1}$ be complex numbers, indexed by $\mathbb{Z}/n\mathbb{Z}$.
+Run the radix-two FFT on $x$ with sample root $\omega = e^{2\pi i/n}$, the value at $1$ of the
+standard additive character of $\mathbb{Z}/n\mathbb{Z}$. Then for every $k < n$, entry $k$ of
+the returned vector multiplied by $1/n$ equals the inverse discrete Fourier transform coefficient
+$\frac{1}{n} \sum_{j \in \mathbb{Z}/n\mathbb{Z}} e^{2\pi i jk/n} x_j$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
 
 ## Proof depends on
 
-- [DFTCorrectness](../fft-correct.md)
+- [Correctness of the radix-two FFT](../fft-correct.md)
 - [Discrete Fourier sum](../../../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources

@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree
 ---
 
-# Indexed Interval Tree
+# Indexed interval tree
 
-The interval tree plus its balanced ID-to-low-endpoint index.
+**Indexed interval tree.** An indexed interval tree consists of a root interval tree together
+with an identifier index: a finite map, implemented as a balanced search tree, from natural-number
+identifiers to integer low endpoints.
 
 ## Depends on
 

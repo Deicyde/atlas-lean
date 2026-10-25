@@ -6,11 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.blockSum
 ---
 
-# Block Sum
+# Fenwick-tree interval sum of a list
 
-The interval sum stored at one-indexed position `j`: the sum of the
-`lowbit j` entries of `arr` ending at position `j - 1`, with entries past the end
-reading as `0`.
+**Fenwick-tree interval sum of a list.** For a list $a$ of elements of a commutative additive
+monoid $\alpha$ and a natural number $j$, the interval sum at the one-indexed position $j$ is
+the sum of the $\operatorname{lowbit}(j)$ entries of $a$ ending at zero-indexed position
+$j - 1$, where $\operatorname{lowbit}(j)$ is the largest power of two dividing $j$ (with
+$\operatorname{lowbit}(0) = 0$) and entries past the end of $a$ count as $0$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

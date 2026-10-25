@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.Item
 ---
 
-# Item
+# Knapsack item
 
-A zero-one knapsack item with a natural weight and value.
+**Knapsack item.** A zero-one knapsack item consists of a weight $w \in \mathbb{N}$ and a value
+$v \in \mathbb{N}$.
 
 ## Depends on
 

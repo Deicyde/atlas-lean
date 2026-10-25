@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.mem_rootPath
 ---
 
-# Mem root Path
+# Root paths stay inside the tree
 
-Every vertex on a root path is a vertex of the tree.
+**Root paths stay inside the tree.** If $p$ is the path in a tree $t$ from the root down to
+a vertex $x$, then every vertex of $p$ is a vertex of $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Root Path](root-path.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

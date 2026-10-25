@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.stripScan_time_le
 ---
 
-# Strip Scan time le
+# Cost of the strip scan
 
-A strip sorted by `y` whose same-side points are `δ` apart costs at most `7` per point.
+**Cost of the strip scan.** Let $\delta$ and $x_{\mathrm{mid}}$ be reals and $Y$ a list of
+tagged points that is sorted by nondecreasing $y$-coordinate, whose points all lie in the strip for
+$\delta$ and $x_{\mathrm{mid}}$, and in which any two points at different positions with the same
+side are at squared distance at least $\delta$. Then the strip scan with parameter $\delta$ over the
+underlying points of $Y$ (tags forgotten) computes at most $7m$ squared distances, where $m$ is the
+length of $Y$.
 
 ## Depends on
 
-- [In Strip](in-strip.md)
-- [Same Side Far](same-side-far.md)
-- [Tagged](tagged.md)
+- [Strip points](in-strip.md)
+- [Same-side points far apart](same-side-far.md)
+- [Side-tagged points](tagged.md)
 - [Strip Scan](../closest-pair/strip-scan.md)
 
 ## Proof depends on
 
-- [Length le seven](length-le-seven.md)
+- [Packing bound for the strip](length-le-seven.md)
 - [Scan From](../closest-pair/scan-from.md)
-- [Scan From time](scan-from-time.md)
-- [Omin](../../data-structures/part-03/sparse-table/omin.md)
+- [Packing bound for the strip](scan-from-time.md)
+- [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

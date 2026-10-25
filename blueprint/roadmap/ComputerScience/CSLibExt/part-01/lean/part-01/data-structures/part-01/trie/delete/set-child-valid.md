@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.setChild_valid
 ---
 
-# Set Child valid
+# Setting a child preserves the child-list part of validity
 
-`setChild` preserves the child-list half of trie validity: the child
-keys stay duplicate-free and every surviving child stays valid.
+**Setting a child preserves the child-list part of validity.** Let $L$ be a list of
+letter–trie pairs whose letters are pairwise distinct and whose tries are all valid, let $c$
+be a valid trie and $a$ a letter. Then the list obtained from $L$ by setting the child at $a$
+to $c$ (removing the entries at $a$ instead when $c$ has neither value nor children) again has
+pairwise distinct letters, and every trie in it is valid.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Valid](../../../part-03/trie/valid.md)
-- [Set Child](set-child.md)
+- [Valid trie](../../../part-03/trie/valid.md)
+- [Setting a child in a trie's child list](set-child.md)
 
 ## Proof depends on
 
-- [Is Empty Node](is-empty-node.md)
+- [Empty trie nodes](is-empty-node.md)
 
 ## Sources
 

@@ -6,21 +6,24 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.prefixSum
 ---
 
-# Prefix Sum
+# Fenwick tree prefix sum
 
-The sum of the first `k` underlying entries, computed by walking the stored
-entries at `k, k - lowbit k, …` down to `0`. Indices past the end are clamped:
-querying at `k` greater than the size sums the whole represented array, just
-like `List.take`.
+**Fenwick tree prefix sum.** Let $t$ be a Fenwick tree over an additive commutative monoid
+with $n$ underlying entries, let $k$ be a natural number and let $m = \min(k, n)$. The prefix sum
+of length $k$ of $t$ is the sum of the stored entries of $t$ at the positions $j_0 = m$,
+$j_{r+1} = j_r - \operatorname{lowbit}(j_r)$, taken for as long as $j_r > 0$.
+
+When $t$ represents a list, this is the sum of its first $m$ entries, so queries past the end
+are clamped.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
+- [Fenwick tree](fenwick-tree.md)
 
 ## Proof depends on
 
-- [Lowbit](lowbit.md)
-- [Size](size.md)
+- [Lowest set bit](lowbit.md)
+- [Size of a Fenwick tree](size.md)
 
 ## Sources
 

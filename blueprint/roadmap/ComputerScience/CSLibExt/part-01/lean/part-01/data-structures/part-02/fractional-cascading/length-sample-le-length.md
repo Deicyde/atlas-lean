@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_sample_le_length
 ---
 
-# Length sample le length
+# The sample is no longer than the list
 
-The sample is no longer than the catalog.
+**The sample is no longer than the list.** For every list $xs$ (over any type), the sample
+of $xs$, every other element starting with the first, has length at most the length of $xs$.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Sample sublist](sample-sublist.md)
+- [The sample is a sublist](sample-sublist.md)
 
 ## Sources
 

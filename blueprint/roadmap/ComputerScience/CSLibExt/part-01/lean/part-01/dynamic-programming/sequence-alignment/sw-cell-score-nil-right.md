@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.swCellScore_nil_right
 ---
 
-# Sw Cell Score nil right
+# The terminal cell vanishes when the second sequence is empty
 
-Local alignment against the empty sequence scores `0`.
+**The terminal cell vanishes when the second sequence is empty.** For a substitution score
+$\sigma$, a gap score $g$ and every sequence $x$, the terminal Smith–Waterman cell of $x$ and the
+empty sequence is $0$.
 
 ## Depends on
 
-- [Sw Cell Score](sw-cell-score.md)
+- [The terminal Smith–Waterman cell](sw-cell-score.md)
 
 ## Proof depends on
 

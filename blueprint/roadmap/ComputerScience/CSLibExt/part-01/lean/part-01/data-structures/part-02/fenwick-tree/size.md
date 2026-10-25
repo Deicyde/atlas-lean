@@ -6,14 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.size
 ---
 
-# Size
+# Size of a Fenwick tree
 
-The number of underlying elements, read off the stored array in constant
-time.
+**Size of a Fenwick tree.** The size of a Fenwick tree is the length of its stored array
+minus one, truncated at $0$; the one accounts for the dummy entry at index $0$. It is read off
+the stored array in constant time.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
+- [Fenwick tree](fenwick-tree.md)
 
 ## Sources
 

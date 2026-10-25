@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Dist2](dist2.md)
-- [Omin](../../data-structures/part-03/sparse-table/omin.md)
+- [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

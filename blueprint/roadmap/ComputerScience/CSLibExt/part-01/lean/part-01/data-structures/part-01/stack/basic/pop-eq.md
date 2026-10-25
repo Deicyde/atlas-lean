@@ -7,13 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Stack.pop_eq
 ---
 
-# Pop eq
+# Result and cost of stack pop
 
-POP refinement and cost do not require an inhabitant of the element type.
+**Result and cost of stack pop.** Let $s$ be a stack over a type $\alpha$ (a list of elements
+of $\alpha$ whose first element is the top). If $s$ is empty, popping $s$ returns underflow (no
+value) at cost $0$. If $s$ has top $h$ and remaining stack $t$, popping $s$ returns the pair
+$(h, t)$ at cost $1$.
+
+This holds for every type $\alpha$; no element of $\alpha$ is assumed to exist.
 
 ## Depends on
 
-- [Pop](pop.md)
+- [Stack pop](pop.md)
 
 ## Sources
 

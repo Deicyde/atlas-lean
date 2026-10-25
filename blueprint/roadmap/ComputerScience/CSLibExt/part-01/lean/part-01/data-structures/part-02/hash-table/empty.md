@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HashTable.empty
 ---
 
-# Empty
+# Empty hash table
 
-The empty hash table with the specified positive bucket count.
+**Empty hash table.** For a hash function $h$ and a positive integer $m$, the empty hash table
+with hash function $h$ has $m$ buckets, each holding the empty chain.
 
 ## Depends on
 
-- [Hash Table](hash-table.md)
+- [Hash table with separate chaining](hash-table.md)
 
 ## Sources
 

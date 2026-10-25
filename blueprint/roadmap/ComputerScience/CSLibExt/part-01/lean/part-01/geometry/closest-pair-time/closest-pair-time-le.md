@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.closestPair_time_le
 ---
 
-# Closest Pair time le
+# Running time of the closest-pair algorithm
 
-CLRS Section 33.4: the closest-pair algorithm computes `O(n lg n)` distances, at most
-`7 n ⌈log₂ n⌉ + n` on `n` points.
+**Running time of the closest-pair algorithm.** For every list of $n$ points in $\mathbb{R}^2$,
+the closest-pair algorithm computes at most $7 n \lceil \log_2 n \rceil + n$ squared distances,
+where $\lceil \log_2 0 \rceil$ is read as $0$. In particular it computes $O(n \log n)$ distances.
 
 ## Depends on
 
-- [Closest Pair](../closest-pair/closest-pair.md)
+- [Divide-and-conquer closest pair](../closest-pair/closest-pair.md)
 
 ## Proof depends on
 
 - [Closest Rec](../closest-pair/closest-rec.md)
-- [Closest Rec time le](closest-rec-time-le.md)
+- [Running time of the closest-pair recursion](closest-rec-time-le.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.ClosestPairTime](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Section 33.4.

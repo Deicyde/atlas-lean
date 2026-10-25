@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.subtreeAt
 ---
 
-# Subtree At
+# Subtrees of a valid Fibonacci tree are valid
 
-Every subtree addressed by a path in a valid tree is valid.
+**Subtrees of a valid Fibonacci tree are valid.** If a Fibonacci tree $t$ is valid and a path
+$p$ of child indices addresses a subtree $s$ of $t$, then $s$ is valid.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Valid](../../../part-02/fibonacci-heap/valid.md)
-- [Subtree At](subtree-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Valid Fibonacci trees](../../../part-02/fibonacci-heap/valid.md)
+- [Subtree of a Fibonacci tree at a path](subtree-at.md)
 
 ## Proof depends on
 
-- [Child valid](../../../part-02/fibonacci-heap/child-valid.md)
-- [Children](../../../part-02/fibonacci-heap/children.md)
+- [Children of a valid Fibonacci tree are valid](../../../part-02/fibonacci-heap/child-valid.md)
+- [Children of a Fibonacci tree](../../../part-02/fibonacci-heap/children.md)
 
 ## Sources
 

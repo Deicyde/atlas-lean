@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.deleteAfter_frame
 ---
 
-# Delete After frame
+# Deleting a successor leaves other cells unchanged
 
-Cells other than the predecessor of the deleted node are unchanged.
+**Deleting a successor leaves other cells unchanged.** Fix a capacity $n$, let $s$ be a store
+assigning to each identity below $n$ either nothing or a singly linked list node, let $y$ be an
+identity such that $s(y)$ is a node, and let $s'$ be the store obtained from $s$ by deleting the
+successor of $y$. Then $s'(z) = s(z)$ for every identity $z \ne y$.
 
 ## Depends on
 
-- [Node](node.md)
-- [Delete After](delete-after.md)
+- [Singly linked list node](node.md)
+- [Deleting the successor in a singly linked list](delete-after.md)
 
 ## Proof depends on
 
-- [Delete After get](delete-after-get.md)
+- [Cells after deleting a successor](delete-after-get.md)
 
 ## Sources
 

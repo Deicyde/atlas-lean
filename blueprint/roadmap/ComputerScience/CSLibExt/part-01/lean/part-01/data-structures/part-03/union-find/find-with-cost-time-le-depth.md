@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.findWithCost_time_le_depth
 ---
 
-# Find With Cost time le depth
+# The cost of find is at most the depth certificate plus one
 
-One `find` costs at most the certified input depth plus one root visit.
+**The cost of find is at most the depth certificate plus one.** For every vertex $x$ of a
+parent forest $F$ with depth certificate $d$, the cost that find with cost charges on $x$ is at
+most $d(x) + 1$.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Find With Cost](find-with-cost.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Find with cost](find-with-cost.md)
 
 ## Proof depends on
 
-- [Find With Cost time](find-with-cost-time.md)
-- [Path Length](path-length.md)
+- [The cost of find is the path length plus one](find-with-cost-time.md)
+- [Path length to the root](path-length.md)
 
 ## Sources
 

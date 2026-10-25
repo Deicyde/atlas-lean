@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.ParentChild.adjacent
 ---
 
-# Adjacent
+# Parent-child edges are edges
 
-A directed parent-child edge is an undirected edge.
+**Parent-child edges are edges.** For every rooted tree $t$ and all vertices $a$ and $b$, if
+$a$ is the parent of $b$ somewhere in $t$, then $a$ and $b$ are adjacent in $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
-- [Parent Child](parent-child.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
 
 ## Sources
 

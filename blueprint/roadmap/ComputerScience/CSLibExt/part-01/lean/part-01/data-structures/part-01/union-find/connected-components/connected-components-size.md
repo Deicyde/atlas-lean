@@ -7,13 +7,15 @@ proof: formalized
 lean: Batteries.UnionFind.connectedComponents_size
 ---
 
-# Connected Components size
+# Connected components allocates $n$ nodes
 
-The returned union-find has exactly the requested number of allocated vertices.
+**Connected components allocates $n$ nodes.** For every natural number $n$ and every list
+$E$ of pairs of vertices in $\{0, \dots, n-1\}$, the union-find structure returned by
+CONNECTED-COMPONENTS on $n$ and $E$ has exactly $n$ nodes.
 
 ## Depends on
 
-- [Connected Components](connected-components.md)
+- [Connected components via union-find](connected-components.md)
 
 ## Sources
 

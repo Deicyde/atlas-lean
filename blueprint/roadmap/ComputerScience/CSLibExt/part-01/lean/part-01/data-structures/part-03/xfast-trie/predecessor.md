@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.predecessor
 ---
 
-# Predecessor
+# Predecessor query in an x-fast trie
 
-The predecessor of `x`: the greatest stored key smaller than `x`, if one exists.
+**Predecessor query in an x-fast trie.** For an x-fast trie $t$ over $w$-bit keys and
+a key $x < 2^w$, the predecessor of $x$ in $t$ is the greatest key stored in $t$ that is
+smaller than $x$, if such a key exists; otherwise the query returns no key.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Sources
 

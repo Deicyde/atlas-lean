@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.valid_reverse_children
 ---
 
-# Valid reverse children
+# Reversed children of a valid binomial tree form a valid forest
 
-Reversing a valid tree's children produces a valid increasing-rank forest.
+**Reversed children of a valid binomial tree form a valid forest.** For a linearly ordered
+type $\alpha$ and a valid binomial tree $t$ over $\alpha$, the children of $t$ listed in reverse
+order form a valid binomial forest: every tree in the list is valid and the ranks strictly
+increase along the list.
 
 ## Depends on
 
-- [Valid](valid-2.md)
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
+- [Valid binomial forest](valid-2.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Children of a binomial tree](children.md)
 
 ## Proof depends on
 
-- [Child valid](child-valid.md)
-- [Children ranks](children-ranks.md)
-- [Rank](rank.md)
+- [Children of a valid binomial tree are valid](child-valid.md)
+- [Child ranks of a valid binomial tree](children-ranks.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

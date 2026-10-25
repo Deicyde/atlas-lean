@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditStep
 ---
 
-# Edit Step
+# Edit step
 
-One alignment step in a unit-cost edit script.
+**Edit step.** An edit step over a type $\alpha$ is one of four operations, for
+$a, b \in \alpha$: keep $a$ (consume the input value $a$ and reproduce it), delete $a$ (consume
+$a$), insert $a$ (produce $a$ without consuming input), or substitute $a$ by $b$ (consume $a$
+and produce $b$).
 
 ## Depends on
 

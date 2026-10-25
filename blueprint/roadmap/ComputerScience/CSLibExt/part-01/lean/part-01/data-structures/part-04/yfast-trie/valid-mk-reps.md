@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.valid_mkReps
 ---
 
-# Valid mk Reps
+# Inserting a list of keys into the empty x-fast trie gives a valid trie
 
-The folded representative trie is a valid x-fast trie.
+**Inserting a list of keys into the empty x-fast trie gives a valid trie.** For every list
+of $w$-bit keys, the x-fast trie obtained from the empty x-fast trie by inserting the keys of
+the list one at a time satisfies the x-fast trie invariant: each level holds exactly the
+prefixes of that length of the stored keys.
 
 ## Depends on
 
-- [Mk Reps](mk-reps.md)
-- [Valid](../../part-03/xfast-trie/valid.md)
+- [Representative trie of a list](mk-reps.md)
+- [Valid x-fast trie](../../part-03/xfast-trie/valid.md)
 
 ## Proof depends on
 
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Empty](../../part-03/xfast-trie/empty.md)
-- [Insert](../../part-03/xfast-trie/insert.md)
-- [Valid empty](../../part-03/xfast-trie/valid-empty.md)
-- [Valid insert](../../part-03/xfast-trie/valid-insert.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [The empty x-fast trie](../../part-03/xfast-trie/empty.md)
+- [Insertion into an x-fast trie](../../part-03/xfast-trie/insert.md)
+- [The empty x-fast trie is valid](../../part-03/xfast-trie/valid-empty.md)
+- [Insertion preserves validity of an x-fast trie](../../part-03/xfast-trie/valid-insert.md)
 
 ## Sources
 

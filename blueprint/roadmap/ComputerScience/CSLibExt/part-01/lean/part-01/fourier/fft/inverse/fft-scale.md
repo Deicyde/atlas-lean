@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftScale
 ---
 
-# Fft Scale
+# Charged entrywise scaling
 
-Materialize every normalized entry and charge its read, multiplication and write.
+**Charged entrywise scaling.** For a type with a multiplication, a scalar $c$ and a vector
+$x = (x_0, \dots, x_{n-1})$ of length $n$ over it, this costed computation returns
+$(c x_0, \dots, c x_{n-1})$ and charges $3n$ operations: one read, one multiplication and one
+write per entry.
 
 ## Depends on
 

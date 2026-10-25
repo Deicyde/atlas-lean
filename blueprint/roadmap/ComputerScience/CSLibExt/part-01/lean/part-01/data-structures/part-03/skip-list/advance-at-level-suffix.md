@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.advanceAtLevel_suffix
 ---
 
-# Advance At Level suffix
+# One search step returns a suffix
 
-Advancing one level returns a suffix of the supplied search window.
+**One search step returns a suffix.** For every search key, every level $i$ and every list
+$L$ of skip-list nodes, advancing the search at level $i$ on $L$ returns a suffix of $L$.
 
 ## Depends on
 
-- [Entry](entry.md)
-- [Advance At Level](advance-at-level.md)
+- [Skip-list node](entry.md)
+- [One level of skip-list search](advance-at-level.md)
 
 ## Sources
 

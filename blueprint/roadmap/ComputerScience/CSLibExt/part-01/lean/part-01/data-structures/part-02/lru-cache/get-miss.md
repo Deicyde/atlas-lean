@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_miss
 ---
 
-# Get miss
+# A lookup of an absent key misses
 
-A lookup of an absent key misses and leaves the cache unchanged.
+**A lookup of an absent key misses.** If the key $k$ is not stored in an LRU cache, then
+looking up $k$ returns no value and leaves the cache unchanged.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Keys](keys.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Key list of an LRU cache](keys.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

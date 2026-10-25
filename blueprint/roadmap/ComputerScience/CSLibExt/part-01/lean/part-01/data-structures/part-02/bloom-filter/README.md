@@ -6,15 +6,15 @@ navigation: module
 
 ## Lean
 
-- [Bloom Filter](bloom-filter.md)
+- [Bloom filter](bloom-filter.md)
 
 ## Bloom Filter
 
-- [Empty](empty.md)
-- [Insert](insert.md)
-- [May Contain](may-contain.md)
-- [Bit insert iff](bit-insert-iff.md)
-- [May Contain iff](may-contain-iff.md)
-- [May Contain insert self](may-contain-insert-self.md)
-- [May Contain insert mono](may-contain-insert-mono.md)
+- [Empty Bloom filter](empty.md)
+- [Bloom filter insertion](insert.md)
+- [Bloom filter membership query](may-contain.md)
+- [Bits set by an insertion](bit-insert-iff.md)
+- [Membership query in terms of bits](may-contain-iff.md)
+- [An inserted element is reported present](may-contain-insert-self.md)
+- [Insertion preserves positive answers](may-contain-insert-mono.md)
 - [May Contain empty](may-contain-empty.md)

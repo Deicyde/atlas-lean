@@ -7,21 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.mem_inorder
 ---
 
-# Mem inorder
+# Membership in the inorder traversal of a red-black tree
 
-Inorder traversal contains exactly the structurally present keys;
-inherited from `BinarySearchTree`.
+**Membership in the inorder traversal of a red-black tree.** For every red-black tree $t$ and
+every $x$, $x$ occurs in the inorder traversal of $t$ if and only if $x$ is a member of $t$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Inorder](inorder.md)
+- [Membership in a red-black tree](mem.md)
+- [Red-black tree data type](tree.md)
+- [Inorder traversal of a red-black tree](inorder.md)
 
 ## Proof depends on
 
-- [Mem inorder](../../part-02/binary-search-tree/mem-inorder.md)
-- [Erase](erase.md)
+- [Membership in the inorder traversal of a binary tree](../../part-02/binary-search-tree/mem-inorder.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.findWithCost_time
 ---
 
-# Find With Cost time
+# The cost of find is the path length plus one
 
-The cost annotation is exactly the traversed edge count plus the root visit.
+**The cost of find is the path length plus one.** For every vertex $x$ of a parent forest $F$,
+the cost that find with cost charges on $x$ equals $\ell(x) + 1$, where $\ell(x)$ is the path
+length of $x$: the number of non-root parent edges that find traverses from $x$.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Find With Cost](find-with-cost.md)
-- [Path Length](path-length.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Find with cost](find-with-cost.md)
+- [Path length to the root](path-length.md)
 
 ## Sources
 

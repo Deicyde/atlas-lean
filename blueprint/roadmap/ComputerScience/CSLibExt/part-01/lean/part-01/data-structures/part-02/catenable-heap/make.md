@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.make
 ---
 
-# Make
+# Creating an empty catenable heap
 
-The empty heap; it allocates no node.
+**Creating an empty catenable heap.** The operation that creates a catenable heap returns the
+empty heap and charges cost $0$, since it allocates no node.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
+- [Catenable heap](catenable-heap.md)
 
 ## Sources
 

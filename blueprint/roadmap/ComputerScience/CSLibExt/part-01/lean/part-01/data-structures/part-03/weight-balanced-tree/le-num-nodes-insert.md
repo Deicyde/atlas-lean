@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.le_numNodes_insert
 ---
 
-# Le num Nodes insert
+# Weight-balanced insertion does not decrease the number of keys
 
-Insertion never decreases the size.
+**Weight-balanced insertion does not decrease the number of keys.** Let the keys
+carry a linear order. For every key $x$ and every binary tree $t$, the number of nodes of $t$ is
+at most the number of nodes of the tree obtained from $t$ by weight-balanced insertion of $x$.
 
 ## Depends on
 
-- [Insert](insert.md)
+- [Weight-balanced insertion](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Num Nodes balance](num-nodes-balance.md)
+- [Weight-balanced rebalancing](balance.md)
+- [Weight-balanced rebalancing preserves the number of keys](num-nodes-balance.md)
 
 ## Sources
 

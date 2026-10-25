@@ -6,14 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.colorOf
 ---
 
-# Color Of
+# Root color
 
-The color of the root of a tree; the empty tree counts as black.
+**Root color.** The root color of a red-black tree is the color of its root node; the empty
+tree has root color black.
 
 ## Depends on
 
-- [Color](color.md)
-- [Tree](tree.md)
+- [Red-black node colors](color.md)
+- [Red-black tree data type](tree.md)
 
 ## Sources
 

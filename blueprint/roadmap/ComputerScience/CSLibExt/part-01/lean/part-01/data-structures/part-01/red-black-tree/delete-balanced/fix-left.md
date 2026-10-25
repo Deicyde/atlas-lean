@@ -6,23 +6,33 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.fixLeft
 ---
 
-# Fix Left
+# Left repair after double-black deletion
 
-Repair a black-height deficit in the left child. Here `left` is the
-deficient subtree with its double black already absorbed, so
-`blackHeight left + 1 = blackHeight right`; `color` and `key` are the parent
-color and key. The cases, in order: a black sibling with a red far (right)
-nephew (single rotation), a black sibling with a red near (left) nephew
-(double rotation), a black sibling with two black nephews (redden the
-sibling and bubble the double black into the parent), and a red sibling
-(rotate it up and solve the black-sibling problem under the resulting red
-parent; the three subcases mirror the black-sibling cases).
+**Left repair after double-black deletion.** Write $\mathrm{R}$ and $\mathrm{B}$ for red and
+black, and $N(c, T, y, T')$ for the node of color $c$ with left subtree $T$, key $y$ and right
+subtree $T'$. Given a color $c$, a tree $D$, a key $k$ and a tree $S$, the left repair returns a
+tree whose root may be double black, by the first case that applies. If
+$S = N(\mathrm{B}, T_1, y, N(\mathrm{R}, T_2, z, T_3))$ or, failing that,
+$S = N(\mathrm{B}, N(\mathrm{R}, T_1, y, T_2), z, T_3)$, it returns
+$N(c, N(\mathrm{B}, D, k, T_1), y, N(\mathrm{B}, T_2, z, T_3))$. Otherwise, if
+$S = N(\mathrm{B}, T_1, y, T_2)$, it returns $N(\mathrm{B}, D, k, N(\mathrm{R}, T_1, y, T_2))$ when
+$c$ is red, and the double-black node with left child $D$, key $k$ and right child
+$N(\mathrm{R}, T_1, y, T_2)$ when $c$ is black. In the next three cases $c$ is not used. If
+$S = N(\mathrm{R}, N(\mathrm{B}, T_1, y, N(\mathrm{R}, T_2, z, T_3)), w, T_4)$ or, failing that,
+$S = N(\mathrm{R}, N(\mathrm{B}, N(\mathrm{R}, T_1, y, T_2), z, T_3), w, T_4)$, it returns
+$N(\mathrm{B}, N(\mathrm{R}, N(\mathrm{B}, D, k, T_1), y, N(\mathrm{B}, T_2, z, T_3)), w, T_4)$.
+Otherwise, if $S = N(\mathrm{R}, N(\mathrm{B}, T_1, y, T_2), w, T_3)$, it returns
+$N(\mathrm{B}, N(\mathrm{B}, D, k, N(\mathrm{R}, T_1, y, T_2)), w, T_3)$. In every remaining case
+it returns $N(c, D, k, S)$.
+
+The repair is meant for a deficient left subtree $D$ whose double black has been absorbed, so
+that $D$ has one black node fewer than its sibling $S$ on every root-to-leaf path.
 
 ## Depends on
 
-- [Color](../../../part-03/red-black-tree/color.md)
-- [BBTree](bbtree.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
+- [Trees with a possibly double-black root](bbtree.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Sources
 

@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_delete
 ---
 
-# Cache Correct delete
+# Order-statistic deletion preserves cache correctness
 
-Deletion preserves correct caches.
+**Order-statistic deletion preserves cache correctness.** Let $\alpha$ be a linearly ordered
+type, $k \in \alpha$ a key and $T$ an order-statistic tree over $\alpha$. If the cached subtree size
+at every node of $T$ equals the number of nodes in that node's subtree, then the same holds for the
+tree obtained by deleting $k$ from $T$.
 
 ## Depends on
 
-- [Cache Correct](../../../part-02/order-statistic-tree/cache-correct.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Delete](delete.md)
+- [Correct size caches](../../../part-02/order-statistic-tree/cache-correct.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Deletion from an order-statistic tree](delete.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-02/order-statistic-tree/entry.md)
-- [Cache Correct merge](cache-correct-merge.md)
-- [Cache Correct node](../../../part-02/order-statistic-tree/cache-correct-node.md)
-- [Merge](merge.md)
-- [Node](../../../part-02/order-statistic-tree/node.md)
+- [Order-statistic tree node entry](../../../part-02/order-statistic-tree/entry.md)
+- [Order-statistic merge preserves cache correctness](cache-correct-merge.md)
+- [The cache-computing node constructor preserves correct size caches](../../../part-02/order-statistic-tree/cache-correct-node.md)
+- [Merging order-statistic trees](merge.md)
+- [Order-statistic tree node with computed cache](../../../part-02/order-statistic-tree/node.md)
 
 ## Sources
 

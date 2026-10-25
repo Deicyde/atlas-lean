@@ -7,30 +7,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost_entries_perm
 ---
 
-# Erase Key With Cost entries perm
+# Keyed erasure removes exactly the entries with that key
 
-Erasure permutes the entry list by filtering out the erased key.
+**Keyed erasure removes exactly the entries with that key.** The key of an entry is the pair
+$(\ell, i) \in \mathbb{Z} \times \mathbb{N}$ of its low endpoint $\ell$ and identifier $i$; keys are
+compared lexicographically. Let $T$ be an interval tree whose keys are strictly ordered (every key
+in a left subtree is lexicographically below its node's key and every key in a right subtree is
+above it), and let $k \in \mathbb{Z} \times \mathbb{N}$ be a key. Then the in-order list of entries
+of the tree obtained by erasing $k$ from $T$ is a permutation of the in-order list of entries of $T$
+with every entry of key $k$ removed.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Key](key.md)
-- [Tree](tree.md)
-- [Key Ordered](key-ordered.md)
-- [Erase Key With Cost](erase-key-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Interval tree](tree.md)
+- [Key-ordered interval tree](key-ordered.md)
+- [Keyed erasure with cost](erase-key-with-cost.md)
 
 ## Proof depends on
 
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
-- [Remove Min With Cost entries perm](remove-min-with-cost-entries-perm.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
-- [Compare Key](compare-key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
+- [Removing the minimum preserves the other entries](remove-min-with-cost-entries-perm.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

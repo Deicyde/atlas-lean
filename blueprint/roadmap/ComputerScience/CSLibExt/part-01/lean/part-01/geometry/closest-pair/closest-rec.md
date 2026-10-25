@@ -15,9 +15,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Brute Min](brute-min.md)
+- [Brute-force closest pair](brute-min.md)
 - [Strip Scan](strip-scan.md)
-- [Omin](../../data-structures/part-03/sparse-table/omin.md)
+- [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

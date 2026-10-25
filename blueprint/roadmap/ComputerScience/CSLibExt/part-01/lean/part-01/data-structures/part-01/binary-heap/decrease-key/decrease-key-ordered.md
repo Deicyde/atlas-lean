@@ -16,8 +16,8 @@ position is at least the entry at its parent position.
 
 ## Depends on
 
-- [Heap Ordered](../../../part-02/binary-heap/heap-ordered.md)
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Heap order on a level-order array](../../../part-02/binary-heap/heap-ordered.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease-key in a binary min-heap](decrease-key.md)
 
 ## Sources

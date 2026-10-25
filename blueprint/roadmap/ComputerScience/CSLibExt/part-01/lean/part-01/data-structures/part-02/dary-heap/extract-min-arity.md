@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractMin_arity
 ---
 
-# Extract Min arity
+# Extracting the minimum preserves the arity of a d-ary heap
 
-A successful extraction preserves the heap arity.
+**Extracting the minimum preserves the arity of a d-ary heap.** Let $h$ be a $d$-ary min-heap
+over a linearly ordered type. If extracting the minimum from $h$ succeeds, returning a value $x$
+and a heap $h'$, then $h'$ has the same arity as $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Extract Min](extract-min.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Extracting the minimum of a $d$-ary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Tail](extract-tail.md)
-- [Extract Tail arity](extract-tail-arity.md)
+- [Removing the root of a $d$-ary min-heap](extract-tail.md)
+- [Removing the root of a $d$-ary heap preserves its arity](extract-tail-arity.md)
 
 ## Sources
 

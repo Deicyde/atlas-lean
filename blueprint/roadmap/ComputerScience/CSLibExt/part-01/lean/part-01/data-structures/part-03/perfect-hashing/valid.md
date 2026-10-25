@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.Valid
 ---
 
-# Valid
+# Valid perfect hash table
 
-The correctness invariant of a two-level table. `placed` says every stored binding
-lies in the bucket selected by the primary hash for its key, at the slot selected by
-that bucket's secondary hash. `injective` says each secondary hash is injective, as
-a slot selector, on the keys stored in its bucket: no two stored keys of one bucket
-collide. The second clause follows from the first (`Valid.injective_of_placed`); it
-is recorded separately because choosing such injective secondary hashes is the task
-of the FKS construction.
+**Valid perfect hash table.** Let $T$ be a two-level perfect hash table with primary hash $h$,
+$b$ buckets, secondary table sizes $m_i$ and secondary hashes $g_i$. Then $T$ is valid when two
+conditions hold. Placement: whenever slot $j$ of bucket $i$ holds a binding $(k, v)$, we have
+$i = h(k) \bmod b$ and $j = g_i(k) \bmod m_i$. Injectivity: for every bucket $i$, if keys $k_1$
+and $k_2$ both occur in bindings stored in bucket $i$ and $g_i(k_1) \bmod m_i = g_i(k_2) \bmod m_i$,
+then $k_1 = k_2$.
+
+The injectivity condition follows from placement. It is recorded separately because choosing
+secondary hash functions that are injective on each bucket's keys is the task of the FKS
+construction.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
+- [Two-level perfect hash table](perfect-hashing.md)
 
 ## Sources
 

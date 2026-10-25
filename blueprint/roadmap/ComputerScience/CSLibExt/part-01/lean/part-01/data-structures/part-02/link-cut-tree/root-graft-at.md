@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.root_graftAt
 ---
 
-# Root graft At
+# Grafting keeps the root
 
-Grafting does not change the root.
+**Grafting keeps the root.** Let $T$ and $N$ be rooted ordered trees and $y$ a vertex. If
+grafting $N$ into $T$ at $y$ is defined and yields the tree $T'$, then the root of $T'$ equals the
+root of $T$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Root](../euler-tour-tree/root.md)
-- [Graft At](graft-at.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.Tagged
 ---
 
-# Tagged
+# Side-tagged points
 
-A strip point with its side of the dividing line (`false` left, `true` right).
+**Side-tagged points.** A tagged point is a pair $(p, s)$ of a point $p \in \mathbb{R}^2$ and a
+Boolean $s$, read as the side of the dividing line on which $p$ lies: false for left, true for
+right.
 
 ## Depends on
 

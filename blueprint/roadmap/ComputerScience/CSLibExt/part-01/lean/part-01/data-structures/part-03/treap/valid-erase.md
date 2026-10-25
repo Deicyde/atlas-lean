@@ -7,29 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.valid_erase
 ---
 
-# Valid erase
+# Erasing from a treap preserves validity
 
-Deletion preserves strict key ordering and min-heap priority ordering.
+**Erasing from a treap preserves validity.** Let the keys come from a linear order. If a
+tree is a valid treap, that is, its keys are in strict binary-search-tree order and its
+priorities are in min-heap order, then for every key $k$ the tree obtained by erasing $k$ from
+it is again a valid treap.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
-- [Erase](erase.md)
+- [Treap trees](tree.md)
+- [Valid treap](valid.md)
+- [Treap deletion](erase.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
-- [Heap Ordered](heap-ordered.md)
-- [Mem Key](mem-key.md)
-- [Ordered](ordered.md)
-- [Separated](separated.md)
-- [Split Result](split-result.md)
-- [All Nodes key iff](all-nodes-key-iff.md)
-- [Split](split.md)
-- [Split bounds](split-bounds.md)
-- [Valid merge](valid-merge.md)
-- [Valid split](valid-split.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Heap order of treap priorities](heap-ordered.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Ordered treap tree](ordered.md)
+- [Separated treap trees](separated.md)
+- [Result of a treap split](split-result.md)
+- [Treap all-nodes predicate on keys via key membership](all-nodes-key-iff.md)
+- [Treap split](split.md)
+- [Split bounds for an ordered treap](split-bounds.md)
+- [Merging separated treaps preserves validity](valid-merge.md)
+- [Splitting a treap preserves validity](valid-split.md)
 
 ## Sources
 

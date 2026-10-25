@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.all_split
 ---
 
-# All split
+# Splitting an ordered tree separates the keys around the split key
 
-In an ordered tree, the left split part lies below `x` and the right
-part lies above `x`.
+**Splitting an ordered tree separates the keys around the split key.** Let $t$ be an ordered
+binary tree over a linearly ordered type and let $x$ be a key. When $t$ is split at $x$, every
+key of the left part is strictly less than $x$ and every key of the right part is strictly
+greater than $x$.
 
 ## Depends on
 
-- [All](../../part-02/binary-search-tree/all.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Split](split.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Search-path split at a key](split.md)
 
 ## Proof depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [All iff forall mem](../../part-02/binary-search-tree/all-iff-forall-mem.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [A predicate holds at all keys of a binary tree iff it holds at all its members](../../part-02/binary-search-tree/all-iff-forall-mem.md)
 
 ## Sources
 

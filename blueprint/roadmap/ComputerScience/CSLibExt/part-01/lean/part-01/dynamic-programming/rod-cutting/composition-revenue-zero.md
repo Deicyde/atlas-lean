@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.compositionRevenue_zero
 ---
 
-# Composition Revenue zero
+# The empty rod earns nothing
 
-The empty rod earns zero revenue.
+**The empty rod earns nothing.** Let $p = (p_1, \dots, p_n)$ be prices in an additive
+commutative monoid. Every composition of $0$, namely the empty one, has revenue $0$ with respect
+to $p$.
 
 ## Depends on
 
-- [Composition Revenue](composition-revenue.md)
+- [Revenue of a rod composition](composition-revenue.md)
 
 ## Sources
 

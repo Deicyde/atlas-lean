@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.successor_eq_none_iff
 ---
 
-# Successor eq none iff
+# A van Emde Boas successor is missing exactly when nothing larger is stored
 
-In a valid tree, `successor` returns `none` exactly when no stored
-element is above `x`.
+**A van Emde Boas successor is missing exactly when nothing larger is stored.** Let $T$ be a
+valid two-level van Emde Boas tree over the universe $\{0, \dots, m^2 - 1\}$ and let $x$ be an
+element of the universe. Then $x$ has no successor in $T$ if and only if every member $z$ of $T$
+satisfies $z \le x$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Successor](successor.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Successor query in a two-level van Emde Boas tree](successor.md)
 
 ## Proof depends on
 
-- [Successor gt](successor-gt.md)
-- [Successor mem](successor-mem.md)
+- [The van Emde Boas successor is strictly larger than its argument](successor-gt.md)
+- [The van Emde Boas successor is stored](successor-mem.md)
 
 ## Sources
 

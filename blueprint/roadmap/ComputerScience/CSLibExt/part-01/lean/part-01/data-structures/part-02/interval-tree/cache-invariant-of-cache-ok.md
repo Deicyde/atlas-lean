@@ -7,23 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_of_cacheOK
 ---
 
-# Cache Invariant of cache OK
+# The executable cache check implies the cache invariant
 
-A successful executable metadata check supplies the recursive cache invariant.
+**The executable cache check implies the cache invariant.** If the executable cache check
+returns true on an interval tree $t$, then $t$ satisfies the cache invariant.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Cache OK](cache-ok.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Executable cache check for interval trees](cache-ok.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Cache Invariant mk Node](cache-invariant-mk-node.md)
-- [Mk Node](mk-node.md)
-- [Node Max](node-max.md)
+- [The interval-tree smart constructor preserves the cache invariant](cache-invariant-mk-node.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [Maximum high endpoint at a node](node-max.md)
 
 ## Sources
 

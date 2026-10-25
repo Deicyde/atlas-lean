@@ -6,23 +6,25 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.deleteBal
 ---
 
-# Delete Bal
+# Red-black tree deletion by the double-black method
 
-Delete a key by the double-black method. The result is again valid
-when the input satisfies the three structural invariants `Ordered`,
-`RedOk`, and `Balanced` (`valid_deleteBal_of_invariants`); in
-particular `valid_deleteBal` covers `Valid tree`. The traversal
-specifications `inorder_deleteBal` and `mem_deleteBal` require only
-`Ordered tree`.
+**Red-black tree deletion by the double-black method.** For a key $x$ of a linearly ordered
+type and a red-black tree $t$, deleting $x$ from $t$ runs the double-black deletion of $x$ from
+$t$, which returns a tree whose root may be double black, and then absorbs a remaining double
+black at the root and recolors the root black.
+
+When $t$ is ordered, has no red node with a red child and has the same number of black nodes on
+every root-to-leaf path, the result is a valid red-black tree; when $t$ is only ordered, the
+inorder traversal of the result is that of $t$ with $x$ erased.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Blacken](blacken.md)
-- [Del](del.md)
+- [Absorbing a double-black root](blacken.md)
+- [Double-black deletion](del.md)
 
 ## Sources
 

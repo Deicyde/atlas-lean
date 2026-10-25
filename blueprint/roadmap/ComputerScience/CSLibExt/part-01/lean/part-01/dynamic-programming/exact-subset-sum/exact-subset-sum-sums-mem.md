@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums_mem
 ---
 
-# Exact Subset Sum Sums mem
+# Characterization of the exact subset sum list
 
-Every returned value is exactly a feasible sum of an input sublist.
+**Characterization of the exact subset sum list.** Let $x$ be a list of natural numbers,
+$t$ a natural number, and $L$ the final list of sums computed by the exact subset sum traversal
+on $x$ with target $t$. A natural number $z$ belongs to $L$ if and only if $z \le t$ and $z$ is
+the sum of some sublist of $x$ (a subsequence, not necessarily contiguous).
 
 ## Depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
 
 ## Sources
 

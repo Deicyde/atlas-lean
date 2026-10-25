@@ -7,15 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.represents_length_le_capacity
 ---
 
-# Represents length le capacity
+# Represented lists fit in the store
 
-A represented identity list is no longer than the pool capacity: its
-identities are distinct elements of `Fin capacity`.
+**Represented lists fit in the store.** Fix a capacity $n$, let $s$ be a store assigning to
+each identity below $n$ either nothing or a singly linked list node, and let $\mathrm{head}$ be an
+identity below $n$ or NIL. If $s$ and $\mathrm{head}$ represent the list of identities
+$i_0, \dots, i_{k-1}$, then $k \le n$.
+
+The identities are pairwise distinct and there are only $n$ of them.
 
 ## Depends on
 
-- [Node](node.md)
-- [Represents](represents.md)
+- [Singly linked list node](node.md)
+- [Store representing a singly linked list](represents.md)
 
 ## Sources
 

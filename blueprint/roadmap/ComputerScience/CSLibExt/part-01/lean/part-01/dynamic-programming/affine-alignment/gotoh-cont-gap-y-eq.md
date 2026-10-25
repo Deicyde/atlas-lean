@@ -6,21 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.gotohContGapY_eq
 ---
 
-# First-column recurrence for the `gapY` continuation
+# First-column recurrence for the continuation after a gap in the first sequence
 
-**First-column recurrence for the `gapY` continuation.**
+**First-column recurrence for the continuation after a gap in the first sequence.** Fix an
+integer-valued scoring function $\sigma$ on pairs of letters and integer gap-open and gap-extend
+penalties $g_o$ and $g_e$. For sequences $u$, $v$ let $N(u, v)$, $X(u, v)$ and $Y(u, v)$ be the
+Gotoh continuation values when the previous column was a match, a gap in $v$ and a gap in $u$
+respectively, and write $a \cdot u$ for the sequence with first letter $a$ followed by $u$. For
+all letters $a$, $b$ and sequences $u$, $v$, the value $Y(a \cdot u, b \cdot v)$ is the maximum
+of $N(u, v) + \sigma(a, b)$, $X(u, b \cdot v) + g_o$ and $Y(a \cdot u, v) + g_e$.
 
 ## Depends on
 
-- [Gotoh Cont Gap X](gotoh-cont-gap-x.md)
-- [Gotoh Cont Gap Y](gotoh-cont-gap-y.md)
-- [Gotoh Cont None](gotoh-cont-none.md)
+- [Gotoh continuation value after a gap in the second sequence](gotoh-cont-gap-x.md)
+- [Gotoh continuation value after a gap in the first sequence](gotoh-cont-gap-y.md)
+- [Gotoh value with no open gap run](gotoh-cont-none.md)
 
 ## Proof depends on
 
-- [Gap State](gap-state.md)
-- [Gap Cost](gap-cost.md)
-- [Gotoh Aux](gotoh-aux.md)
+- [Gap states](gap-state.md)
+- [Gap cost](gap-cost.md)
+- [Fuel-bounded Gotoh recursion](gotoh-aux.md)
 
 ## Sources
 

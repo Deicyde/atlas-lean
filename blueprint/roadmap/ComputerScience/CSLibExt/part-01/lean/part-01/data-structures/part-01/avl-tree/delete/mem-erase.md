@@ -33,7 +33,7 @@ $T$ and $y \ne x$.
 - [The leftmost key lies in the tree](min-d-mem.md)
 - [Deletion removes the deleted key from an ordered AVL tree](not-mem-erase-self.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

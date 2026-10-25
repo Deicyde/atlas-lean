@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractMin_mem
 ---
 
-# Extract Min mem
+# The extracted minimum of a d-ary heap is one of its elements
 
-A successful extraction returns a stored value.
+**The extracted minimum of a d-ary heap is one of its elements.** Let $h$ be a $d$-ary
+min-heap over a linearly ordered type. If extracting the minimum from $h$ succeeds, returning a
+value $x$ and a heap $h'$, then $x$ belongs to the multiset of elements of $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
-- [Extract Min](extract-min.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
+- [Extracting the minimum of a $d$-ary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Min cons elements](extract-min-cons-elements.md)
+- [Extracted minimum and remaining d-ary heap recover the original elements](extract-min-cons-elements.md)
 
 ## Sources
 

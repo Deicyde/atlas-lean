@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.hasPrefix_suffixTree_iff_isInfix
 ---
 
-# Has Prefix suffix Tree iff is Infix
+# Suffix-tree search finds exactly the infixes
 
-Prefix lookup in the suffix tree succeeds exactly when the pattern occurs in `s`.
+**Suffix-tree search finds exactly the infixes.** For lists $s$ and $p$ over $\alpha$, prefix
+search for $p$ (each symbol viewed in the alphabet extended by the terminator) in the suffix tree
+of $s$ succeeds if and only if $p$ occurs in $s$ as a contiguous sublist (an infix).
 
 ## Depends on
 
-- [Has Prefix](../radix-trie/has-prefix.md)
-- [Suffix Tree](suffix-tree.md)
+- [Prefix search in a radix trie](../radix-trie/has-prefix.md)
+- [Suffix tree](suffix-tree.md)
 
 ## Proof depends on
 
-- [Has Prefix suffix Tree iff exists](has-prefix-suffix-tree-iff-exists.md)
-- [Is Infix iff exists is Prefix drop](is-infix-iff-exists-is-prefix-drop.md)
+- [Suffix-tree search finds exactly the prefixes of suffixes](has-prefix-suffix-tree-iff-exists.md)
+- [Infixes are prefixes of suffixes](is-infix-iff-exists-is-prefix-drop.md)
 
 ## Sources
 

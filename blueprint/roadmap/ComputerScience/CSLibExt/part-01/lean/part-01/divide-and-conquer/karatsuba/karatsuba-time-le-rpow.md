@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.karatsuba_time_le_rpow
 ---
 
-# Karatsuba time le rpow
+# The $n^{\log_2 3}$ bound for Karatsuba multiplication
 
-Karatsuba multiplication of `n ≥ 1` digit numbers costs at most `9 * n^(log₂ 3)`.
+**The $n^{\log_2 3}$ bound for Karatsuba multiplication.** For all natural numbers $B$, $x$,
+$y$ and $n \ge 1$, the cost of Karatsuba multiplication of $x$ and $y$ as $n$-digit numbers in
+base $B$ is at most $9\, n^{\log_2 3}$.
 
 ## Depends on
 
-- [Karatsuba](karatsuba.md)
+- [Karatsuba multiplication](karatsuba.md)
 
 ## Proof depends on
 
-- [Karatsuba Cost](karatsuba-cost.md)
-- [Karatsuba Cost le rpow](karatsuba-cost-le-rpow.md)
-- [Karatsuba time](karatsuba-time.md)
+- [Karatsuba cost recurrence](karatsuba-cost.md)
+- [The $n^{\log_2 3}$ bound for the Karatsuba cost recurrence](karatsuba-cost-le-rpow.md)
+- [Size bound for Karatsuba's recursive operands](karatsuba-time.md)
 
 ## Sources
 

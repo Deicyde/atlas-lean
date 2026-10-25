@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Interval.Valid
 ---
 
-# Valid
+# Valid interval
 
-The endpoints of an interval are ordered.
+**Valid interval.** A closed interval with integer endpoints $a$ (low) and $b$ (high) is
+valid when its low endpoint is at most its high endpoint, $a \le b$.
 
 ## Depends on
 

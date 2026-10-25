@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.count_build
 ---
 
-# Count build
+# Range counting on a built tree
 
-The count on a tree built from a list is the filtered length of that list.
+**Range counting on a built tree.** For every list $L$ of integers and all integers $a$ and
+$b$, the range count over $[a, b]$ of the range tree built from $L$ equals the number of entries
+of $L$, counted with multiplicity, that lie in $[a, b]$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Count](count.md)
+- [Building a range tree from a list](build.md)
+- [Range count](count.md)
 
 ## Proof depends on
 
-- [Bounds Ok build](bounds-ok-build.md)
-- [Count eq](count-eq.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
+- [Built range trees are bounds-valid](bounds-ok-build.md)
+- [Range count of a bounds-valid tree](count-eq.md)
+- [Leaf list of a range tree](to-list.md)
+- [Building a range tree preserves the list](to-list-build.md)
 
 ## Sources
 

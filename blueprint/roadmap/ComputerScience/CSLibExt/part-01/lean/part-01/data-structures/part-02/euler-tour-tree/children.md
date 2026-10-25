@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.children
 ---
 
-# Children
+# Children of a rooted tree
 
-The child subtrees of the root, in order.
+**Children of a rooted tree.** The children of a tree are the child subtrees of its root, as a
+list in their given order.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 
 ## Sources
 

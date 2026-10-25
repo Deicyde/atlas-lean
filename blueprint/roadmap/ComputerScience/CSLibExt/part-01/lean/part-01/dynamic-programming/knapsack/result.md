@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.Result
 ---
 
-# Result
+# Knapsack result
 
-A knapsack result. `Finset` gives distinct indices and `Fin` keeps them in range.
+**Knapsack result.** For a list of $n$ knapsack items, a knapsack result consists of a set
+$S \subseteq \{0, \dots, n - 1\}$ of item indices, the chosen items, and a natural number, the
+reported total value.
 
 ## Depends on
 
-- [Item](item.md)
+- [Knapsack item](item.md)
 
 ## Sources
 

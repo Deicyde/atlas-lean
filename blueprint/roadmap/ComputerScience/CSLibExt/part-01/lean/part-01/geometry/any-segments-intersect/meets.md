@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.Meets
 ---
 
-# Meets
+# Meeting segments
 
-Segments `i` and `j` meet.
+**Meeting segments.** Let $K$ be a field with a linear order and $S$ a family of segments in
+$K^2$, each given by its two endpoints. Segments $i$ and $j$ of $S$ meet when the closed segment
+between the endpoints of $i$ and the closed segment between the endpoints of $j$ have a point in
+common.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Left](left.md)
-- [Right](right.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
 
 ## Sources
 

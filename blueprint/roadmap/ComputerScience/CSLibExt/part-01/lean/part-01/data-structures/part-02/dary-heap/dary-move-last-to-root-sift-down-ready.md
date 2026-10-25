@@ -7,22 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.daryMoveLastToRoot_siftDownReady
 ---
 
-# Dary Move Last To Root sift Down Ready
+# Last-to-root move in a $d$-ary heap is ready for sift-down
 
-Last-to-root replacement creates exactly an admissible sift-down
-violation at the root whenever at least two entries were present.
+**Last-to-root move in a $d$-ary heap is ready for sift-down.** Let $d$ be a natural number,
+let $a$ be a $d$-ary heap ordered array with at least two entries over a linearly ordered type,
+and let $b = (b_0, \dots, b_{m-1})$ be the array obtained from $a$ by the last-to-root move.
+Then $b$ is ready for a $d$-ary sift-down at index $0$: $d \ge 2$, $0 < m$, and
+$b_{\lfloor (j-1)/d \rfloor} \le b_j$ for every index $j$ with $0 < j < m$ whose parent index
+$\lfloor (j-1)/d \rfloor$ is not $0$.
 
 ## Depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Sift Down Ready](dary-sift-down-ready.md)
-- [Dary Move Last To Root](dary-move-last-to-root.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Readiness for $d$-ary sift-down](dary-sift-down-ready.md)
+- [Last-to-root move on an array](dary-move-last-to-root.md)
 
 ## Proof depends on
 
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt](dary-parent-lt.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [A $d$-ary parent has a smaller index](dary-parent-lt.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
 
 ## Sources
 

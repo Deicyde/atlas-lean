@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.Valid
 ---
 
-# Valid
+# Valid range tree
 
-Range-tree validity: correct cached bounds and sorted (classical)
-leaf order.
+**Valid range tree.** A range tree $t$ is valid when it has correct cached bounds (every node
+has two subtrees with nonempty leaf lists, and its stored lower and upper bounds are the minimum
+of the lower bounds and the maximum of the upper bounds of its two subtrees, recursively) and
+its leaf list is sorted in nondecreasing order.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
+- [Range tree](range-tree.md)
 
 ## Proof depends on
 
-- [Bounds Ok](bounds-ok.md)
-- [To List](to-list.md)
+- [Bounds-valid range trees](bounds-ok.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Sources
 

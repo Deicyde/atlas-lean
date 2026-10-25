@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toList_build
 ---
 
-# To List build
+# Building a segment tree preserves the list
 
-The leaf list of a tree built from a list is that list.
+**Building a segment tree preserves the list.** For every list $xs$ with entries in an
+additive monoid, the leaf list of the segment tree built from $xs$ is $xs$.
 
 ## Depends on
 
-- [Build](build.md)
-- [To List](to-list.md)
+- [Building a segment tree from a list](build.md)
+- [Leaf list of a segment tree](to-list.md)
 
 ## Proof depends on
 
 - [Segment Tree](segment-tree.md)
-- [Valid](valid.md)
-- [Agg](agg.md)
-- [Size](size.md)
-- [To List node](to-list-node.md)
+- [Valid segment trees](valid.md)
+- [Aggregate of a segment tree](agg.md)
+- [Size of a segment tree](size.md)
+- [Leaf list of an internal node](to-list-node.md)
 
 ## Sources
 

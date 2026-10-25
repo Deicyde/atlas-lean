@@ -7,15 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.isEmptyNode_eq_true_iff
 ---
 
-# Is Empty Node eq true iff
+# Characterization of empty nodes
 
-A trie is a childless non-terminal node exactly when it is the empty
-node.
+**Characterization of empty nodes.** The empty-node test is true on a trie $t$ exactly when
+$t$ is the node with no value and no children, that is, the empty trie.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Is Empty Node](is-empty-node.md)
+- [Empty trie nodes](is-empty-node.md)
 
 ## Sources
 

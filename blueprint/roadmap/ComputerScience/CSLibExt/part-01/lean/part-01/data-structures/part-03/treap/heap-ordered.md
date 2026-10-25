@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.HeapOrdered
 ---
 
-# Heap Ordered
+# Heap order of treap priorities
 
-Every node priority is no greater than every descendant priority.
+**Heap order of treap priorities.** A tree is heap-ordered when the priority of every
+node is at most the priority of every node below it. Recursively, the empty tree is
+heap-ordered, and a node with priority $p$ is heap-ordered when its left and right subtrees
+are heap-ordered and every node in them has priority at least $p$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
+- [Treap predicate holding at every node](all-nodes.md)
 
 ## Sources
 

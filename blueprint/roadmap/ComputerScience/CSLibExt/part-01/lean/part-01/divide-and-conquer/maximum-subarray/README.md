@@ -4,20 +4,20 @@ navigation: module
 
 # Maximum Subarray
 
-- [Is Max Prefix Sum](is-max-prefix-sum.md)
-- [Suffix Scan](suffix-scan.md)
-- [Prefix Scan](prefix-scan.md)
-- [Max Subarray DC](max-subarray-dc.md)
-- [Max Subarray Sum DC](max-subarray-sum-dc.md)
+- [Maximum prefix sum](is-max-prefix-sum.md)
+- [Right-to-left suffix scan](suffix-scan.md)
+- [Prefix scan](prefix-scan.md)
+- [Divide-and-conquer core of maximum subarray](max-subarray-dc.md)
+- [Divide-and-conquer maximum subarray](max-subarray-sum-dc.md)
 
 ## Cost
 
-- [Max Subarray DCCost](max-subarray-dccost.md)
-- [Max Subarray Sum DC time le](max-subarray-sum-dc-time-le.md)
+- [Cost recurrence of divide-and-conquer maximum subarray](max-subarray-dccost.md)
+- [Running time of divide-and-conquer maximum subarray](max-subarray-sum-dc-time-le.md)
 
 ## Correctness
 
-- [Suffix Scan spec](suffix-scan-spec.md)
-- [Append](append.md)
-- [Max Subarray Sum DC ret eq some iff](max-subarray-sum-dc-ret-eq-some-iff.md)
-- [Max Subarray Sum DC eq max Subarray Sum](max-subarray-sum-dc-eq-max-subarray-sum.md)
+- [Correctness of the suffix scan](suffix-scan-spec.md)
+- [Maximum subarray sum of a concatenation](append.md)
+- [Correctness of divide-and-conquer maximum subarray](max-subarray-sum-dc-ret-eq-some-iff.md)
+- [Divide and conquer agrees with Kadane's algorithm](max-subarray-sum-dc-eq-max-subarray-sum.md)

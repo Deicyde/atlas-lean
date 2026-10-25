@@ -7,30 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.adjacent_pruneAt_of_mem_mem
 ---
 
-# Adjacent prune At of mem mem
+# Pruning keeps surviving edges
 
-Pruning keeps every edge whose endpoints survive: in a duplicate-free
-tree, an edge of the original tree with both endpoints in the pruned
-remainder is an edge of the remainder. Together with
-`mem_vertices_pruneAt` (which gives the converse inclusion of vertices)
-this specifies `pruneAt` at edge level on the surviving vertices.
+**Pruning keeps surviving edges.** Let $t$ be a rooted tree with no repeated vertex and $x$ a
+vertex, and suppose that removing every subtree rooted at $x$ from $t$ leaves the tree $t'$ (that
+is, the root of $t$ is not $x$). If $a$ and $b$ are adjacent in $t$ and both are vertices of
+$t'$, then $a$ and $b$ are adjacent in $t'$.
+
+Together with the fact that every vertex of $t'$ is a vertex of $t$ other than $x$, this
+specifies pruning at the level of edges on the surviving vertices.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Adjacent](adjacent.md)
-- [Prune At](prune-at.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Mem left](mem-left.md)
-- [Mem right](mem-right.md)
-- [Mem vertices prune At](mem-vertices-prune-at.md)
-- [Root prune At](root-prune-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [The first endpoint of a tree edge is a vertex](mem-left.md)
+- [The second endpoint of a tree edge is a vertex](mem-right.md)
+- [Vertices of a pruned tree](mem-vertices-prune-at.md)
+- [Pruning keeps the root](root-prune-at.md)
 
 ## Sources
 

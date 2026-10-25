@@ -7,21 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySiftUp_ordered
 ---
 
-# Dary Sift Up ordered
+# Sift-up restores $d$-ary heap order
 
-Sifting up one admissible incoming-edge violation restores heap order.
+**Sift-up restores $d$-ary heap order.** Let $a$ be an array over a linearly ordered type,
+of length $|a|$ with entries $a_0, \dots, a_{|a|-1}$, let $d$ and $i$ be natural numbers, and
+write $p(j) = \lfloor (j-1)/d \rfloor$ for the parent of an index $j > 0$. Suppose $a$ is ready
+for sift-up at $i$: $d \ge 2$, $i < |a|$, $a_{p(j)} \le a_j$ for every $0 < j < |a|$ with
+$j \ne i$, and, if $i > 0$, $a_{p(i)} \le a_j$ for every $0 < j < |a|$ with $p(j) = i$. Then the
+array $b$, of length $|b|$ with entries $b_0, \dots, b_{|b|-1}$, obtained from $a$ by $d$-ary
+sift-up from index $i$ is $d$-ary heap ordered: $b_{p(j)} \le b_j$ for every $0 < j < |b|$.
 
 ## Depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Sift Up Ready](dary-sift-up-ready.md)
-- [Dary Sift Up](dary-sift-up.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Arrays ready for $d$-ary sift-up](dary-sift-up-ready.md)
+- [$d$-ary sift-up](dary-sift-up.md)
 
 ## Proof depends on
 
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt](dary-parent-lt.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [A $d$-ary parent has a smaller index](dary-parent-lt.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
 
 ## Sources
 

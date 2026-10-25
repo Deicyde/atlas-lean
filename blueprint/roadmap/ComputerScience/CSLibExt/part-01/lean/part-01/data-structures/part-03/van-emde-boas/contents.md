@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.contents
 ---
 
-# Contents
+# Set of stored elements of a van Emde Boas tree
 
-The finite set of stored elements.
+**Set of stored elements of a van Emde Boas tree.** Let $m$ be a natural number. For a van
+Emde Boas tree $t$ over the universe $\{0, 1, \dots, m^2 - 1\}$, the set of stored elements of
+$t$ is the finite set of those elements of the universe that are members of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
 
 ## Proof depends on
 
-- [Member](member.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

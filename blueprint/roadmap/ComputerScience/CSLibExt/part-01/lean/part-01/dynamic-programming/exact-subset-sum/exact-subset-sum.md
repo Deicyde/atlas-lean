@@ -6,9 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum
 ---
 
-# Exact Subset Sum
+# Exact subset sum procedure
 
-Compute the largest feasible sum by scanning the sole traversal's actual result.
+**Exact subset sum procedure.** Given a list $x$ of natural numbers and a target
+$t \in \mathbb{N}$, the procedure first computes the list $L = (\ell_1, \dots, \ell_m)$ of
+attainable sums of $x$ with target $t$, then scans it from left to right, keeping a running
+maximum that starts at $0$, and returns $\max(0, \ell_1, \dots, \ell_m)$. Its counted events
+are those of computing $L$ plus one per entry of $L$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Attainable sums in exact subset sum](exact-subset-sum-sums.md)
 
 ## Sources
 

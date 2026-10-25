@@ -12,17 +12,17 @@ Insert a new occurrence or replace the occurrence with the same identifier.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Indexed Interval Tree](indexed-interval-tree.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Indexed interval tree](indexed-interval-tree.md)
 
 ## Proof depends on
 
 - [Interval](interval.md)
-- [Valid](valid-2.md)
-- [Tree](tree.md)
-- [Erase Key With Cost](erase-key-with-cost.md)
-- [Insert Key With Cost](insert-key-with-cost.md)
+- [Boolean interval validity test](valid-2.md)
+- [Interval tree](tree.md)
+- [Keyed erasure with cost](erase-key-with-cost.md)
+- [Keyed insertion with cost](insert-key-with-cost.md)
 
 ## Sources
 

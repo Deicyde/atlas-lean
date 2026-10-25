@@ -7,35 +7,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.invariant_of_check
 ---
 
-# Invariant of check
+# Soundness of the invariant checker
 
-The executable checker is sound for the bundled invariant.
+**Soundness of the invariant checker.** If the executable checker returns true on an indexed
+interval tree $T$, then $T$ satisfies the representation invariant.
 
 ## Depends on
 
-- [Indexed Interval Tree](indexed-interval-tree.md)
-- [Invariant](invariant.md)
-- [Check](check.md)
+- [Indexed interval tree](indexed-interval-tree.md)
+- [Representation invariant of an indexed interval tree](invariant.md)
+- [Representation check for the indexed interval tree](check.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
-- [Index Backward OK](index-backward-ok.md)
-- [Index Forward OK](index-forward-ok.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Backward identifier-index check](index-backward-ok.md)
+- [Forward identifier-index check](index-forward-ok.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
-- [Balanced Prop](balanced-prop.md)
-- [Cache Invariant](cache-invariant.md)
-- [Key Ordered](key-ordered.md)
-- [Valid Invariant](valid-invariant.md)
-- [Balanced](balanced.md)
-- [Cache Invariant of cache OK](cache-invariant-of-cache-ok.md)
-- [Cache OK](cache-ok.md)
-- [Key Ordered of ordered Valid](key-ordered-of-ordered-valid.md)
-- [Ordered Valid](ordered-valid.md)
-- [Valid Invariant of ordered Valid](valid-invariant-of-ordered-valid.md)
-- [Compare Key](compare-key.md)
+- [Interval tree](tree.md)
+- [AVL balance of an interval tree](balanced-prop.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Key-ordered interval tree](key-ordered.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
+- [Boolean AVL balance check for interval trees](balanced.md)
+- [The executable cache check implies the cache invariant](cache-invariant-of-cache-ok.md)
+- [Executable cache check for interval trees](cache-ok.md)
+- [The executable ordering check implies key ordering](key-ordered-of-ordered-valid.md)
+- [Ordered-and-valid check for interval trees](ordered-valid.md)
+- [The ordering check implies interval validity](valid-invariant-of-ordered-valid.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

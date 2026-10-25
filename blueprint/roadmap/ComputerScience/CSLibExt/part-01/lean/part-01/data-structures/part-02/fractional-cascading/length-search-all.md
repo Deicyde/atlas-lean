@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_searchAll
 ---
 
-# Length search All
+# One search position per catalog
 
-There is one search position per catalog.
+**One search position per catalog.** For every value $x$ and every list $cs$ of catalogs
+over a linearly ordered type, searching each catalog of $cs$ for $x$ gives a list of positions
+of the same length as $cs$.
 
 ## Depends on
 
-- [Search All](search-all.md)
+- [Searching every catalog](search-all.md)
 
 ## Proof depends on
 
-- [Count LT](count-lt.md)
+- [Scan count of smaller elements](count-lt.md)
 
 ## Sources
 

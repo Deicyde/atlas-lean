@@ -21,7 +21,7 @@ traversal of a tree $T$ if and only if $x$ lies in $T$.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Mem inorder](../../part-02/binary-search-tree/mem-inorder.md)
+- [Membership in the inorder traversal of a binary tree](../../part-02/binary-search-tree/mem-inorder.md)
 
 ## Sources
 

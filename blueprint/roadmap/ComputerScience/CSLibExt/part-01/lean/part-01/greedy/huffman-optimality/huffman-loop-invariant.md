@@ -15,7 +15,7 @@ uniquely-serial-numbered weighted trees.
 
 - [Huffman Priority](../huffman/huffman-priority.md)
 - [Huffman Work Item](../huffman/huffman-work-item.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Sources
 

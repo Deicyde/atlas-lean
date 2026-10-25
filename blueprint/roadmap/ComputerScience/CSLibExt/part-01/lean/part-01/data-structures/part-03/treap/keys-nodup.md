@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.keys_nodup
 ---
 
-# Keys nodup
+# Treap keys are distinct
 
-Strict BST ordering implies that all stored keys are distinct.
+**Treap keys are distinct.** For a linearly ordered key type, if a tree is ordered as a
+binary search tree (at every node, every key in the left subtree is smaller and every key in
+the right subtree is larger than the node's key), then its inorder key list has no
+duplicates.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Ordered](ordered.md)
-- [Keys](keys.md)
+- [Treap trees](tree.md)
+- [Ordered treap tree](ordered.md)
+- [Inorder key list of a treap](keys.md)
 
 ## Proof depends on
 
-- [Ordered keys](ordered-keys.md)
+- [Inorder keys of an ordered treap are strictly increasing](ordered-keys.md)
 
 ## Sources
 

@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv.mem_entries_iff
 ---
 
-# Mem entries iff
+# Lookup-equivalent valid tries have the same entries
 
-Lookup-equivalent valid tries enumerate the same entries, disregarding list order.
+**Lookup-equivalent valid tries have the same entries.** Let $T$ and $T'$ be valid tries
+with keys that are lists over $\alpha$ and values in $\beta$, and suppose $T$ and $T'$ are
+lookup-equivalent. Then for every key $k$ and every value $v \in \beta$, the pair $(k, v)$
+occurs in the entry list of $T$ if and only if it occurs in the entry list of $T'$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Lookup Equiv](lookup-equiv.md)
-- [Valid](valid.md)
-- [Entries](entries.md)
+- [Lookup equivalence of tries](lookup-equiv.md)
+- [Valid trie](valid.md)
+- [Entries of a trie](entries.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Lookup eq some iff mem entries](lookup-eq-some-iff-mem-entries.md)
+- [Trie lookup](lookup.md)
+- [Trie lookup agrees with the entries](lookup-eq-some-iff-mem-entries.md)
 
 ## Sources
 

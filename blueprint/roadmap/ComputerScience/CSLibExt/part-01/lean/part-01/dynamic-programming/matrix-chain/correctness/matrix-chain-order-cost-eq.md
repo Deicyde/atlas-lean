@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_cost_eq
 ---
 
-# Matrix Chain Order cost eq
+# Matrix-chain ordering reports the cost of its parenthesization
 
-The reported optimum is the scalar cost of the returned parenthesization.
+**Matrix-chain ordering reports the cost of its parenthesization.** For every $n \ge 1$ and
+all natural numbers $p_0, \dots, p_n$, the scalar-multiplication cost of the parenthesization
+returned by the matrix-chain ordering algorithm on the dimensions $p_0, \dots, p_n$ equals the
+optimal cost it reports.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
+- [Matrix-chain cost](../basic/cost.md)
 - [Parenthesization](../basic/parenthesization.md)
-- [Result](../basic/result.md)
-- [Matrix Chain Order](matrix-chain-order.md)
-- [Scalar Multiplication Cost](../basic/scalar-multiplication-cost.md)
+- [Matrix-chain result](../basic/result.md)
+- [Matrix-chain ordering](matrix-chain-order.md)
+- [Scalar multiplication count of a parenthesization](../basic/scalar-multiplication-cost.md)
 
 ## Proof depends on
 
-- [Cols](../basic/cols.md)
-- [Rows](../basic/rows.md)
+- [Column count of a parenthesization](../basic/cols.md)
+- [Row count of a parenthesization](../basic/rows.md)
 
 ## Sources
 

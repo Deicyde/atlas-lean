@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.length_longestIncreasingSubsequence_eq_iff
 ---
 
-# Length longest Increasing Subsequence eq iff
+# Correctness of the quadratic LIS program, by length
 
-The returned subsequence has length `k` exactly when `k` is the optimum.
+**Correctness of the quadratic LIS program, by length.** For every list $xs$ over a preorder
+and every natural number $k$, the list returned by the quadratic longest-increasing-subsequence
+program on $xs$ has length $k$ if and only if $k$ is the length of a longest strictly increasing
+subsequence of $xs$.
 
 ## Depends on
 
-- [Is LISLength](is-lislength.md)
-- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+- [Length of a longest increasing subsequence](is-lislength.md)
+- [Longest increasing subsequence by dynamic programming](longest-increasing-subsequence.md)
 
 ## Proof depends on
 
-- [Unique](unique.md)
-- [Is LISLength longest Increasing Subsequence](is-lislength-longest-increasing-subseque.md)
+- [Uniqueness of the longest increasing subsequence length](unique.md)
+- [The quadratic LIS program attains the optimal length](is-lislength-longest-increasing-subseque.md)
 
 ## Sources
 

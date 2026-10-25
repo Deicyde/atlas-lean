@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_size_le
 ---
 
-# Get size le
+# Lookup respects the capacity
 
-`get` preserves the capacity bound.
+**Lookup respects the capacity.** For every LRU cache of capacity $c$ and every key
+$k$, the cache after looking up $k$ holds at most $c$ entries.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Size](size.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Size of an LRU cache](size.md)
 
 ## Proof depends on
 
-- [Size le cap](size-le-cap.md)
+- [An LRU cache never exceeds its capacity](size-le-cap.md)
 
 ## Sources
 

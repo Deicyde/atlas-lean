@@ -7,23 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.select_delete_eq_bstSelect
 ---
 
-# Select delete eq bst Select
+# Selection after deletion in an order-statistic tree
 
-Cached select after deletion refines the traversal select of the erased result.
+**Selection after deletion in an order-statistic tree.** Let $\alpha$ be a linearly ordered
+type and let $T$ be an order-statistic tree over $\alpha$ whose cached subtree sizes are correct.
+Let $k$ be a key and let $T'$ be the tree obtained from $T$ by deleting $k$. Then for every
+natural number $i$, selecting position $i$ in $T'$ by navigation with cached sizes returns the
+entry at zero-based position $i$ of the inorder traversal of $T'$ with its cached sizes removed,
+and returns nothing when that traversal has at most $i$ entries.
 
 ## Depends on
 
-- [Select](../../../part-02/binary-search-tree/select.md)
-- [Cache Correct](../../../part-02/order-statistic-tree/cache-correct.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Delete](delete.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
-- [Select](../../../part-02/order-statistic-tree/select.md)
+- [Inorder selection in a binary tree](../../../part-02/binary-search-tree/select.md)
+- [Correct size caches](../../../part-02/order-statistic-tree/cache-correct.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Deletion from an order-statistic tree](delete.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
+- [Select in an order-statistic tree](../../../part-02/order-statistic-tree/select.md)
 
 ## Proof depends on
 
-- [Cache Correct delete](cache-correct-delete.md)
-- [Select eq bst Select](../../../part-02/order-statistic-tree/select-eq-bst-select.md)
+- [Order-statistic deletion preserves cache correctness](cache-correct-delete.md)
+- [Cached select agrees with inorder select](../../../part-02/order-statistic-tree/select-eq-bst-select.md)
 
 ## Sources
 

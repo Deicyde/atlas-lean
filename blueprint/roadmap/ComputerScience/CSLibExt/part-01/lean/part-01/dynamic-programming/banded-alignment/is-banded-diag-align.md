@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isBanded_diagAlign
 ---
 
-# Is Banded diag Align
+# The diagonal alignment is banded
 
-The diagonal alignment is banded when the length difference fits the band.
+**The diagonal alignment is banded.** Let $w \in \mathbb{N}$. If two sequences $x$ and $y$
+have lengths differing by at most $w$, that is $\bigl| |x| - |y| \bigr| \le w$, then the diagonal
+alignment of $x$ and $y$ is banded with width $w$.
 
 ## Depends on
 
-- [Is Banded](is-banded.md)
-- [Diag Align](diag-align.md)
+- [Banded alignments](is-banded.md)
+- [Diagonal alignment](diag-align.md)
 
 ## Proof depends on
 
-- [Banded From diag Align](banded-from-diag-align.md)
+- [The diagonal alignment stays in the band](banded-from-diag-align.md)
 
 ## Sources
 

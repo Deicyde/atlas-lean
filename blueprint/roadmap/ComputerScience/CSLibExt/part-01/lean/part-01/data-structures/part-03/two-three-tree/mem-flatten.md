@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.mem_flatten
 ---
 
-# Mem flatten
+# The inorder traversal lists exactly the keys of a 2-3 tree
 
-The flattening contains exactly the structurally present keys.
+**The inorder traversal lists exactly the keys of a 2-3 tree.** For every 2-3 tree $t$ of
+height $h$ and every key $x$, $x$ occurs in the inorder traversal of $t$ if and only if $x$ is a
+member of $t$, that is, one of the separator keys stored at its nodes.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Flatten](flatten.md)
+- [Membership in a 2-3 tree](mem.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
+- [Accumulated inorder traversal of a 2-3 tree](flatten-aux.md)
 
 ## Sources
 

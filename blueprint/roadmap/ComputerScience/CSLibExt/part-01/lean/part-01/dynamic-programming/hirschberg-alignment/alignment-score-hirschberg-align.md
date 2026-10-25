@@ -6,29 +6,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.alignmentScore_hirschbergAlign
 ---
 
-# Alignment Score hirschberg Align
+# Hirschberg reconstruction with enough fuel attains the optimum
 
-Hirschberg reconstruction attains the optimum.
+**Hirschberg reconstruction with enough fuel attains the optimum.** Fix a type $\alpha$, a
+substitution score $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$.
+For every fuel $n \in \mathbb{N}$ and all lists $xs$, $ys$ over $\alpha$ with
+$|xs| + |ys| \le n$, the alignment score of the Hirschberg reconstruction of $xs$ and $ys$ with
+fuel $n$ equals the Needleman–Wunsch score of $xs$ and $ys$.
 
 ## Depends on
 
 - [Alignment Score](../sequence-alignment/alignment-score.md)
-- [Hirschberg Align](hirschberg-align.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
+- [Hirschberg reconstruction with fuel](hirschberg-align.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 
 ## Proof depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Alignment Score small Align eq nw Score](alignment-score-small-align-eq-nw-score.md)
-- [Best Argmax](best-argmax.md)
-- [Best Argmax le](best-argmax-le.md)
-- [Column Score](../sequence-alignment/column-score.md)
-- [Hirschberg Align small](hirschberg-align-small.md)
-- [Hirschberg Align split xs](hirschberg-align-split-xs.md)
-- [Hirschberg Align split ys](hirschberg-align-split-ys.md)
-- [Nw Score eq best Split xs](nw-score-eq-best-split-xs.md)
-- [Nw Score eq best Split ys](nw-score-eq-best-split-ys.md)
-- [Small Align](small-align.md)
+- [The base-case alignment is optimal](alignment-score-small-align-eq-nw-score.md)
+- [Argmax over an initial segment](best-argmax.md)
+- [The argmax over $\{0, \dots, n\}$ is at most $n$](best-argmax-le.md)
+- [Score of an alignment column](../sequence-alignment/column-score.md)
+- [Hirschberg reconstruction on lists of length at most one](hirschberg-align-small.md)
+- [Hirschberg reconstruction splits the longer first list](hirschberg-align-split-xs.md)
+- [Hirschberg recursion step splitting the second sequence](hirschberg-align-split-ys.md)
+- [Hirschberg split identity, splitting the first sequence](nw-score-eq-best-split-xs.md)
+- [Hirschberg split identity, splitting the second sequence](nw-score-eq-best-split-ys.md)
+- [Base-case alignment for Hirschberg](small-align.md)
 
 ## Sources
 

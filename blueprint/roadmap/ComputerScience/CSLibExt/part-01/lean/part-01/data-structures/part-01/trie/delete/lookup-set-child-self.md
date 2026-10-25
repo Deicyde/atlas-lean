@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_setChild_self
 ---
 
-# Lookup set Child self
+# Looking up a child just set
 
-Lookup at the updated key after `setChild`: the new child, or `none`
-when the child was pruned as an empty node.
+**Looking up a child just set.** Let $L$ be a list of letter–trie pairs, $a$ a letter and
+$c$ a trie, and let $L'$ be obtained from $L$ by setting the child at $a$ to $c$ (removing the
+entries at $a$ instead when $c$ has neither value nor children). Looking up $a$ in $L'$ finds
+nothing when $c$ has neither value nor children, and finds $c$ otherwise.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Is Empty Node](is-empty-node.md)
-- [Set Child](set-child.md)
+- [Empty trie nodes](is-empty-node.md)
+- [Setting a child in a trie's child list](set-child.md)
 
 ## Sources
 

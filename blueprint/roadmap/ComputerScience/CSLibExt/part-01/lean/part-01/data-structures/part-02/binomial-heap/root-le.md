@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.Valid.root_le
 ---
 
-# Root le
+# The root of a valid binomial tree is a lower bound
 
-The root of a valid tree is no greater than every represented element.
+**The root of a valid binomial tree is a lower bound.** For a type $\alpha$ with a relation
+$\le$ and a valid binomial tree $t$ over $\alpha$, the root $a$ of $t$ satisfies $a \le v$ for
+every element $v$ of the multiset represented by $t$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Elements of a binomial tree](elements.md)
+- [Root of a binomial tree](root.md)
 
 ## Proof depends on
 
-- [Rank](rank.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_eq_toListNaive
 ---
 
-# To List eq to List Naive
+# Flattening of a catenable heap equals its naive flattening
 
-The accumulator flattening equals the naive recursive flattening.
+**Flattening of a catenable heap equals its naive flattening.** For every catenable heap $h$,
+the flattening of $h$ equals the naive flattening of $h$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List](to-list.md)
-- [To List Naive](to-list-naive.md)
+- [Catenable heap](catenable-heap.md)
+- [Flattening of a catenable heap](to-list.md)
+- [Naive flattening of a catenable heap](to-list-naive.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
-- [To List Aux eq](to-list-aux-eq.md)
+- [Accumulating flattening of a catenable heap](to-list-aux.md)
+- [Accumulator flattening of a catenable heap](to-list-aux-eq.md)
 
 ## Sources
 

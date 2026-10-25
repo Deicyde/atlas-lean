@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.arcTour_eq_zip
 ---
 
-# Arc Tour eq zip
+# Arc sequence as the zipped Euler tour
 
-`arcTour` computed from the single shared tour list.
+**Arc sequence as the zipped Euler tour.** For every tree $t$, the arc sequence of $t$ is
+the Euler tour of $t$ zipped with its own tail: if the Euler tour of $t$ is $v_0, v_1, \dots, v_k$,
+then the arc sequence of $t$ is $(v_0, v_1), (v_1, v_2), \dots, (v_{k-1}, v_k)$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Arc Tour](arc-tour.md)
-- [Tour](tour.md)
+- [Rooted ordered tree](tree.md)
+- [Arc sequence of the Euler tour](arc-tour.md)
+- [Euler tour](tour.md)
 
 ## Sources
 

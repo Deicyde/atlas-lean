@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.cutTreeAt_of_subtreeAt
 ---
 
-# Cut Tree At of subtree At
+# Every addressed subtree of a forest can be cut out
 
-A subtree addressed by an index into the root list and a path inside that tree can
-be cut out of the forest.
+**Every addressed subtree of a forest can be cut out.** Let $F$ be a forest of Fibonacci
+trees whose tree at position $i$ is $t$, and let $p$ be a path of child indices such that the
+subtree of $t$ at $p$ is $s$. Then cutting $F$ at index $i$ and path $p$ is defined and extracts
+$s$, together with some remaining forest.
 
 ## Depends on
 
-- [Cut Tree At](cut-tree-at.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Subtree At](subtree-at.md)
+- [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Subtree of a Fibonacci tree at a path](subtree-at.md)
 
 ## Proof depends on
 
-- [Cut At](cut-at.md)
-- [Subtree At cut At](subtree-at-cut-at.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
+- [Every addressed subtree can be cut out](subtree-at-cut-at.md)
 
 ## Sources
 

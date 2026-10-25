@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.insertAfter_frame
 ---
 
-# Insert After frame
+# Frame property of singly-linked-list insertion
 
-Cells other than the inserted node and its predecessor are unchanged.
+**Frame property of singly-linked-list insertion.** Let $S$ be a store assigning to each
+identity below $n$ either nothing or a singly linked list node, and let $x$ and $y$ be identities
+whose store entries are nodes. For every identity $z$ with $z \ne y$ and $z \ne x$, cell $z$ of
+the store obtained by inserting $x$ after $y$ equals cell $z$ of $S$.
 
 ## Depends on
 
-- [Node](node.md)
-- [Insert After](insert-after.md)
+- [Singly linked list node](node.md)
+- [Inserting a node after another in a singly linked list](insert-after.md)
 
 ## Proof depends on
 
-- [Insert After get](insert-after-get.md)
+- [Cells after singly-linked-list insertion](insert-after-get.md)
 
 ## Sources
 

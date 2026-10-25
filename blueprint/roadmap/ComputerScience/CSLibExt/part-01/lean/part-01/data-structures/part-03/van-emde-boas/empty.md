@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.empty
 ---
 
-# Empty
+# Empty van Emde Boas tree
 
-The empty tree: every summary and cluster bit is unset.
+**Empty van Emde Boas tree.** For a natural number $m$, the empty van Emde Boas tree over
+the universe $\{0, 1, \dots, m^2 - 1\}$ is the tree in which all $m$ summary bits and all
+$m^2$ cluster bits ($m$ clusters of $m$ bits each) are unset.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
 
 ## Sources
 

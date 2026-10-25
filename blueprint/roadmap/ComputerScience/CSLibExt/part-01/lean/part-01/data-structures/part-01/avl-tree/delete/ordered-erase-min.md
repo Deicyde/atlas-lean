@@ -28,9 +28,9 @@ obtained from $T$ by removing its leftmost key and rebalancing on the way back u
 - [Membership after AVL rebalancing](../../avl-tree-2/mem-balance.md)
 - [Rebalancing an AVL node preserves the search-tree order](../../avl-tree-2/ordered-balance.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

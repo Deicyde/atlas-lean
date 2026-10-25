@@ -7,28 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_insert_of_ne
 ---
 
-# Lookup insert of ne
+# Insertion does not affect lookups of other keys
 
-Frame theorem for insertion: in a valid table, looking up a key different
-from the inserted one gives the same result before and after a successful
-insert. Together with `lookup_insert` this is the map-update specification
-of `insert`, in the form of `HashTable.lookup_insert_of_ne`.
+**Insertion does not affect lookups of other keys.** Let $T$ be a valid open-addressing table and
+suppose inserting the binding $k \mapsto v$ into $T$ succeeds with result $T'$. Then for every key
+$k' \ne k$, looking up $k'$ in $T'$ gives the same result as looking up $k'$ in $T$.
+
+Together with the fact that looking up $k$ in $T'$ returns $v$, this is the map-update
+specification of insertion, matching the corresponding statement for separate chaining.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Valid open-addressing tables](valid.md)
+- [Insertion into an open-addressing table](insert.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Stored](stored.md)
-- [Lookup eq none of not stored](lookup-eq-none-of-not-stored.md)
-- [Lookup eq some iff](lookup-eq-some-iff.md)
-- [Stored insert of ne](stored-insert-of-ne.md)
-- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
-- [Valid insert](valid-insert.md)
+- [Stored binding in an open-addressing table](stored.md)
+- [Lookup of an absent key fails](lookup-eq-none-of-not-stored.md)
+- [Lookup in a valid table returns exactly the stored binding](lookup-eq-some-iff.md)
+- [Open-addressing insertion leaves other keys' bindings unchanged](stored-insert-of-ne.md)
+- [Open-addressing lookup returns only stored bindings](stored-of-lookup-eq-some.md)
+- [Insertion preserves validity of an open-addressing table](valid-insert.md)
 
 ## Sources
 

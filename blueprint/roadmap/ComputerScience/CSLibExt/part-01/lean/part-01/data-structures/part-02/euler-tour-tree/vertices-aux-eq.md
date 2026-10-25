@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.verticesAux_eq
 ---
 
-# Vertices Aux eq
+# Accumulator preorder traversal is append
 
-The accumulator traversal appends the preorder list onto its accumulator.
+**Accumulator preorder traversal is append.** For every rooted ordered tree $t$ and every
+list $a$, the accumulator preorder traversal of $t$ started from $a$ equals the preorder vertex
+list of $t$ followed by $a$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 - [Vertices](vertices.md)
-- [Vertices Aux](vertices-aux.md)
+- [Accumulator preorder traversal](vertices-aux.md)
 
 ## Proof depends on
 
-- [Children ind](children-ind.md)
+- [Induction principle for rooted trees](children-ind.md)
 
 ## Sources
 

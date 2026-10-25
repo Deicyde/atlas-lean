@@ -7,13 +7,15 @@ proof: formalized
 lean: Batteries.UnionFind.LinkInternal.countedLinkAux_ret
 ---
 
-# Counted Link Aux ret
+# Counted linking returns the linked array
 
-The saved array is exactly canonical linkAux's result, not a reference-only result.
+**Counted linking returns the linked array.** For an array $A$ of union-find nodes and
+indices $x, y$ of $A$, the array returned by counted linking of $x$ and $y$ in $A$ is exactly the
+array produced by the uncounted Batteries link by rank of $x$ and $y$ in $A$.
 
 ## Depends on
 
-- [Counted Link Aux](counted-link-aux.md)
+- [Linking by rank with operation counts](counted-link-aux.md)
 
 ## Sources
 

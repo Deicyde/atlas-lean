@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_valid
 ---
 
-# Decrease Key valid
+# Decrease-key yields a valid forest
 
-The forest after decrease-key is valid: heap order is restored. This is the
-validity field of the resulting heap, exposed as a theorem for convenience.
+**Decrease-key yields a valid forest.** For every Fibonacci heap $H$, root index $i$, path $p$
+of child indices and key $k$, the root list of the heap obtained from $H$ by decreasing the key
+at root index $i$ and path $p$ to $k$ is a valid forest, that is, every tree in it is valid.
+
+This holds by construction: every Fibonacci heap carries a valid forest.
 
 ## Depends on
 
-- [Valid](../../../part-02/fibonacci-heap/valid-2.md)
-- [Fibonacci Heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
-- [Decrease Key](decrease-key.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Valid Fibonacci forests](../../../part-02/fibonacci-heap/valid-2.md)
+- [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
+- [Decrease-key in a Fibonacci heap](decrease-key.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 
 ## Sources
 

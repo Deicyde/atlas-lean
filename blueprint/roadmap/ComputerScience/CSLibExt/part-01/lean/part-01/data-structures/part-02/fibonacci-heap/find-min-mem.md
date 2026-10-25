@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.findMin_mem
 ---
 
-# Find Min mem
+# Find-min returns an element of the Fibonacci heap
 
-Minimum inspection returns a represented element.
+**Find-min returns an element of the Fibonacci heap.** Let $H$ be a Fibonacci heap over a
+linearly ordered type. If find-min on $H$ returns $m$, then $m$ belongs to the multiset
+represented by $H$.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Find Min](find-min.md)
+- [Find-min for Fibonacci heaps](find-min.md)
 
 ## Proof depends on
 
 - [Elements](elements-2.md)
-- [Min Root](min-root.md)
-- [Min Root spec](min-root-spec.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
-- [Root](root.md)
-- [Root mem elements](root-mem-elements.md)
+- [Minimum root of a forest](min-root.md)
+- [The minimum root is a least root](min-root-spec.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
+- [The root of a Fibonacci tree is one of its elements](root-mem-elements.md)
 
 ## Sources
 

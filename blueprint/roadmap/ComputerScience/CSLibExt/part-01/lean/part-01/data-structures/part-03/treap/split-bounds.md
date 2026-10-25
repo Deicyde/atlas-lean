@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.split_bounds
 ---
 
-# Split bounds
+# Split bounds for an ordered treap
 
-Split outputs contain only keys respectively below and above the pivot.
+**Split bounds for an ordered treap.** Let the keys come from a linear order and let $T$ be
+an ordered tree. For every pivot $p$, every key of the lower tree obtained by splitting $T$ at
+$p$ is strictly less than $p$, and every key of the upper tree is strictly greater than $p$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [All Nodes](all-nodes.md)
-- [Ordered](ordered.md)
-- [Split Result](split-result.md)
-- [Split](split.md)
+- [Treap trees](tree.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Ordered treap tree](ordered.md)
+- [Result of a treap split](split-result.md)
+- [Treap split](split.md)
 
 ## Proof depends on
 
-- [Mem Node](mem-node.md)
-- [All Nodes iff forall mem](all-nodes-iff-forall-mem.md)
+- [Entry membership in a treap tree](mem-node.md)
+- [Treap all-nodes predicate via node membership](all-nodes-iff-forall-mem.md)
 
 ## Sources
 

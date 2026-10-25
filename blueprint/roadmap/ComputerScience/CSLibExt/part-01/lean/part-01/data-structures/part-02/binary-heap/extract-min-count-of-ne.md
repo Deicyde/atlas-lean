@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.extractMin_count_of_ne
 ---
 
-# Extract Min count of ne
+# Binary heap extraction leaves other multiplicities unchanged
 
-Successful extraction preserves every other value's multiplicity.
+**Binary heap extraction leaves other multiplicities unchanged.** Let $h$ be a binary min-heap
+over a linearly ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$
+and the heap $h'$, then every value $y \ne x$ occurs in the multiset of elements of $h'$ exactly
+as many times as in the multiset of elements of $h$.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Elements](elements.md)
-- [Extract Min](extract-min.md)
+- [Binary min-heap](min-heap.md)
+- [Elements of a binary min-heap](elements.md)
+- [Extracting the minimum of a binary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Min cons elements](extract-min-cons-elements.md)
+- [Binary heap extraction splits off the minimum](extract-min-cons-elements.md)
 
 ## Sources
 

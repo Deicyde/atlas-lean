@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.inducedPair_isAlignment
 ---
 
-# Induced Pair is Alignment
+# Induced pairwise alignments are valid
 
-The induced pairwise alignment is a valid pairwise alignment.
+**Induced pairwise alignments are valid.** Let $A$ be a valid multiple alignment of sequences
+$s_0, \dots, s_{k-1}$. Then for all rows $i, j < k$, the pairwise alignment induced by $A$ on rows
+$i$ and $j$ is a valid pairwise alignment of $s_i$ and $s_j$.
 
 ## Depends on
 
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Is MSAlignment](is-msalignment.md)
-- [MSAlignment](msalignment.md)
-- [Induced Pair](induced-pair.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Valid multiple alignment](is-msalignment.md)
+- [Multiple alignments](msalignment.md)
+- [Induced pairwise alignment](induced-pair.md)
 
 ## Proof depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Induced Pair filter Map fst](induced-pair-filter-map-fst.md)
-- [Induced Pair filter Map snd](induced-pair-filter-map-snd.md)
-- [Induced Pair ne none none](induced-pair-ne-none-none.md)
+- [Letters of the first row of an induced alignment](induced-pair-filter-map-fst.md)
+- [Letters of the second row of an induced alignment](induced-pair-filter-map-snd.md)
+- [Induced alignments have no all-gap column](induced-pair-ne-none-none.md)
 
 ## Sources
 

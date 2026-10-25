@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_empty
 ---
 
-# Lookup empty
+# Lookup in the empty open-addressing table
 
-Looking up any key in the empty table returns `none`.
+**Lookup in the empty open-addressing table.** For every key $k$, looking up $k$ in the empty
+open-addressing table returns no value.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Lookup](lookup.md)
+- [Empty open-addressing table](empty.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Open Addressing](open-addressing.md)
-- [Lookup Aux](lookup-aux.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Bounded lookup scan](lookup-aux.md)
 
 ## Sources
 

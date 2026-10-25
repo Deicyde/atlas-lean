@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.insert
 ---
 
-# Insert
+# Insertion into an x-fast trie
 
-Inserts a key and adds its prefix to every level.
+**Insertion into an x-fast trie.** Inserting a $w$-bit key $x$ into an x-fast trie $t$ adds $x$
+to the keys stored in $t$ and, for each level $0 \le l \le w$, adds the $l$-bit prefix of $x$ to
+the prefix set at level $l$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Proof depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

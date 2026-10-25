@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_empty
 ---
 
-# To List empty
+# Flattening the empty catenable heap
 
-The empty heap flattens to the empty list.
+**Flattening the empty catenable heap.** The flattening of the empty catenable heap is the
+empty list.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List](to-list.md)
+- [Catenable heap](catenable-heap.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Sources
 

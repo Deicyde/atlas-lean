@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.Valid
 ---
 
-# Valid
+# Valid binomial forest
 
-A forest has valid trees at unique, strictly increasing ranks.
+**Valid binomial forest.** For a type $\alpha$ with a relation $\le$, a list of binomial trees
+over $\alpha$ is a valid forest when every tree in it is a valid binomial tree and the ranks of its
+trees are strictly increasing along the list.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Rank](rank.md)
+- [Valid binomial tree](valid.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

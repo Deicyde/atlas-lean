@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.erase_cons_of_gt
 ---
 
-# Erase cons of gt
+# Erasing past a smaller first entry
 
-Erasure retains a preceding entry and continues through the remaining entries.
+**Erasing past a smaller first entry.** Let $e$ be a skip-list entry and $L$ a list of
+entries. If the key of $e$ is less than a key $k$, then erasing $k$ from the skip list with entry
+list $e$ followed by $L$ gives the entry list consisting of $e$ followed by the entry list obtained
+by erasing $k$ from the skip list with entry list $L$.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/skip-list.md)
-- [Entry](../../../part-03/skip-list/entry.md)
-- [Erase](erase.md)
+- [Skip list](../../../part-03/skip-list/skip-list.md)
+- [Skip-list node](../../../part-03/skip-list/entry.md)
+- [Skip-list erasure](erase.md)
 
 ## Sources
 

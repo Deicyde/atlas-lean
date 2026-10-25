@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.valid_empty
 ---
 
-# Valid empty
+# The empty grouped y-fast trie is valid
 
-The empty trie is valid.
+**The empty grouped y-fast trie is valid.** For every key width $w$ and group bound $B$,
+the empty grouped y-fast trie satisfies the grouped y-fast trie invariant.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Validity of a grouped y-fast trie](valid.md)
+- [The empty grouped y-fast trie](empty.md)
 
 ## Proof depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
-- [Group Ordered](group-ordered.md)
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Valid](../../part-03/xfast-trie/valid.md)
-- [Valid empty](../../part-03/xfast-trie/valid-empty.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
+- [Ordered list of groups](group-ordered.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Valid x-fast trie](../../part-03/xfast-trie/valid.md)
+- [The empty x-fast trie is valid](../../part-03/xfast-trie/valid-empty.md)
 
 ## Sources
 

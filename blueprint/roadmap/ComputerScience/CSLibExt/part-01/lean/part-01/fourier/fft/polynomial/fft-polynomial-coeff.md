@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftPolynomial_coeff
 ---
 
-# Fft Polynomial coeff
+# Coefficients of the polynomial of a vector
 
-The canonical polynomial's coefficients are exactly the stored zero extension.
+**Coefficients of the polynomial of a vector.** For every vector
+$x = (x_0, \dots, x_{n-1}) \in \mathbb{C}^n$ and every natural number $k$, the coefficient of
+$X^k$ in the polynomial of $x$ is $x_k$ if $k < n$ and $0$ if $k \ge n$.
 
 ## Depends on
 
-- [Fft Polynomial](fft-polynomial.md)
+- [Polynomial of a coefficient vector](fft-polynomial.md)
 
 ## Sources
 

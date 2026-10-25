@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.consolidate_degrees_nodup
 ---
 
-# Consolidate degrees nodup
+# Consolidation yields distinct root degrees
 
-A consolidated forest has distinct root degrees.
+**Consolidation yields distinct root degrees.** For every list of Fibonacci trees, the trees
+in its consolidation have pairwise distinct stored degrees.
 
 ## Depends on
 
-- [Consolidate](consolidate.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Degree](degree.md)
+- [Consolidation of a forest](consolidate.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Degree of a Fibonacci tree](degree.md)
 
 ## Proof depends on
 
-- [Consolidate sorted](consolidate-sorted.md)
+- [Consolidation sorts root degrees](consolidate-sorted.md)
 
 ## Sources
 

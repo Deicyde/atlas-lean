@@ -13,14 +13,14 @@ Splitting preserves min-heap priority order in both output trees.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Heap Ordered](heap-ordered.md)
-- [Split Result](split-result.md)
-- [Split](split.md)
+- [Treap trees](tree.md)
+- [Heap order of treap priorities](heap-ordered.md)
+- [Result of a treap split](split-result.md)
+- [Treap split](split.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
+- [Treap predicate holding at every node](all-nodes.md)
 
 ## Sources
 

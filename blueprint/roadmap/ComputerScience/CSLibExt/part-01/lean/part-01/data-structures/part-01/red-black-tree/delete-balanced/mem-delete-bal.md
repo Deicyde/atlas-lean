@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.mem_deleteBal
 ---
 
-# Mem delete Bal
+# Keys after double-black deletion
 
-Deletion from an ordered tree removes exactly the deleted key.
+**Keys after double-black deletion.** For keys $x$ and $y$ of a linearly ordered type and an
+ordered red-black tree $t$, $y$ is a key of the tree obtained by deleting $x$ from $t$ by the
+double-black method if and only if $y$ is a key of $t$ and $y \ne x$.
 
 ## Depends on
 
-- [Delete Bal](delete-bal.md)
-- [Mem](../../../part-03/red-black-tree/mem.md)
-- [Ordered](../../../part-03/red-black-tree/ordered.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree deletion by the double-black method](delete-bal.md)
+- [Membership in a red-black tree](../../../part-03/red-black-tree/mem.md)
+- [Ordered red-black tree](../../../part-03/red-black-tree/ordered.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Inorder delete Bal](inorder-delete-bal.md)
-- [Inorder](../../../part-03/red-black-tree/inorder.md)
-- [Inorder nodup](../../../part-03/red-black-tree/inorder-nodup.md)
-- [Mem inorder](../../../part-03/red-black-tree/mem-inorder.md)
+- [Double-black deletion erases the key from the inorder traversal](inorder-delete-bal.md)
+- [Inorder traversal of a red-black tree](../../../part-03/red-black-tree/inorder.md)
+- [Ordered red-black trees have duplicate-free inorder traversals](../../../part-03/red-black-tree/inorder-nodup.md)
+- [Membership in the inorder traversal of a red-black tree](../../../part-03/red-black-tree/mem-inorder.md)
 
 ## Sources
 

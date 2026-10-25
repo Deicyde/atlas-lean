@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_eq_none_of_not_stored
 ---
 
-# Lookup eq none of not stored
+# Lookup of an absent key fails
 
-A key stored in no slot looks up to `none`, with no validity assumption.
+**Lookup of an absent key fails.** Let $T$ be an open-addressing table and $k$ a key such that
+no slot of $T$ stores a binding $k \mapsto v$ for any value $v$. Then looking up $k$ in $T$ returns
+no value. No validity assumption on $T$ is needed.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Stored](stored.md)
-- [Lookup](lookup.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Stored binding in an open-addressing table](stored.md)
+- [Lookup in an open-addressing table](lookup.md)
 
 ## Proof depends on
 
-- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
+- [Open-addressing lookup returns only stored bindings](stored-of-lookup-eq-some.md)
 
 ## Sources
 

@@ -7,28 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.ordered_delete
 ---
 
-# Ordered delete
+# Red-black deletion yields an ordered tree
 
-Deletion always produces an ordered tree (unconditional; see
-`valid_delete`).
+**Red-black deletion yields an ordered tree.** For every linearly ordered key type, every key
+$x$ and every red-black tree $t$, the tree obtained by deleting $x$ from $t$ is ordered: at every
+node, all keys in the left subtree are strictly smaller than the node's key and all keys in the
+right subtree are strictly larger. No hypothesis on $t$ is needed.
 
 ## Depends on
 
-- [Ordered](../../../part-03/red-black-tree/ordered.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
-- [Delete](delete.md)
+- [Ordered red-black tree](../../../part-03/red-black-tree/ordered.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree deletion by rebuilding](delete.md)
 
 ## Proof depends on
 
-- [Balanced](../../../part-03/red-black-tree/balanced.md)
-- [Color](../../../part-03/red-black-tree/color.md)
-- [Red Ok](../../../part-03/red-black-tree/red-ok.md)
-- [Valid](../../../part-03/red-black-tree/valid.md)
-- [Color Of](../../../part-03/red-black-tree/color-of.md)
-- [Del](del.md)
-- [Inorder](../../../part-03/red-black-tree/inorder.md)
-- [Rebalance](rebalance.md)
-- [Valid from List](../../../part-03/red-black-tree/valid-from-list.md)
+- [Black-height balanced red-black tree](../../../part-03/red-black-tree/balanced.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
+- [Red property of red-black trees](../../../part-03/red-black-tree/red-ok.md)
+- [Valid red-black tree](../../../part-03/red-black-tree/valid.md)
+- [Root color](../../../part-03/red-black-tree/color-of.md)
+- [Unbalanced red-black tree deletion](del.md)
+- [Inorder traversal of a red-black tree](../../../part-03/red-black-tree/inorder.md)
+- [Rebuilding a red-black tree from its keys](rebalance.md)
+- [Red-black trees built from a list are valid](../../../part-03/red-black-tree/valid-from-list.md)
 
 ## Sources
 

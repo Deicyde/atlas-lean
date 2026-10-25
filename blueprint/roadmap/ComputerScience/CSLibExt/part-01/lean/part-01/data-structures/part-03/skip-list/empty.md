@@ -6,17 +6,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SkipList.empty
 ---
 
-# Empty
+# Empty skip list
 
-The empty skip list.
+**Empty skip list.** The empty skip list is the skip list with no nodes.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
+- [Skip list](skip-list.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

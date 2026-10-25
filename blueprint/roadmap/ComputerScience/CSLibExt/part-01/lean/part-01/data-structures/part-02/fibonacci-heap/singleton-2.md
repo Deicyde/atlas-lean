@@ -12,16 +12,16 @@ A one-element Fibonacci heap.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Min Root](min-root.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Singleton](singleton.md)
-- [Valid singleton](valid-singleton.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Minimum root of a forest](min-root.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [One-element Fibonacci heap](singleton.md)
+- [Singleton Fibonacci trees are valid](valid-singleton.md)
 
 ## Sources
 

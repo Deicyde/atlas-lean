@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.adjacent_graftAt
 ---
 
-# Adjacent graft At
+# Edges after grafting
 
-Grafting keeps every old edge and every edge of the new child, and adds
-exactly the edge from `y` to the root of `newChild`.
+**Edges after grafting.** Let $t$ and $u$ be rooted trees and $y$ a vertex, and suppose that
+grafting $u$ as a new child under $y$ in $t$ succeeds and yields the tree $t'$. Then for all
+vertices $a$ and $b$, the vertices $a$ and $b$ are adjacent in $t'$ if and only if they are
+adjacent in $t$, or adjacent in $u$, or $a = y$ and $b$ is the root of $u$, or $a$ is the root of
+$u$ and $b = y$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Root](../euler-tour-tree/root.md)
-- [Adjacent](adjacent.md)
-- [Graft At](graft-at.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root graft At](root-graft-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Grafting keeps the root](root-graft-at.md)
 
 ## Sources
 

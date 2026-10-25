@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.flattenAux_eq
 ---
 
-# Flatten Aux eq
+# The accumulated traversal appends the suffix
 
-`flattenAux` prepends the flattening of its tree to the suffix.
+**The accumulated traversal appends the suffix.** For every 2-3 tree $t$ (of any height)
+and every list $s$, the accumulated inorder traversal of $t$ onto $s$ equals the flattening of
+$t$ followed by $s$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
+- [Accumulated inorder traversal of a 2-3 tree](flatten-aux.md)
 
 ## Sources
 

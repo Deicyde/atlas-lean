@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.ordered_split
 ---
 
-# Ordered split
+# Treap split preserves search-tree order
 
-Splitting preserves strict BST ordering in both output trees.
+**Treap split preserves search-tree order.** Let the keys come from a linearly ordered
+type and let $t$ be an ordered treap tree. For every pivot key $k$, the lower tree and the
+upper tree produced by splitting $t$ at $k$ are both ordered.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Ordered](ordered.md)
-- [Split Result](split-result.md)
-- [Split](split.md)
+- [Treap trees](tree.md)
+- [Ordered treap tree](ordered.md)
+- [Result of a treap split](split-result.md)
+- [Treap split](split.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
+- [Treap predicate holding at every node](all-nodes.md)
 
 ## Sources
 

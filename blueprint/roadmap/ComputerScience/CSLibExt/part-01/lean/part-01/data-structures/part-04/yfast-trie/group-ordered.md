@@ -6,10 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.GroupOrdered
 ---
 
-# Group Ordered
+# Ordered list of groups
 
-Cross-group order: every key of an earlier group is smaller than every key of a
-later group.
+**Ordered list of groups.** A list of groups, each a list of $w$-bit keys, is group ordered
+when every key of an earlier group is smaller than every key of a later group.
 
 ## Depends on
 

@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.mem_merge
 ---
 
-# Mem merge
+# Keys of an order-statistic merge
 
-Membership in a merge is membership in one of the two trees.
+**Keys of an order-statistic merge.** For order-statistic trees $A$ and $B$ over a type $\alpha$
+and any $x \in \alpha$, $x$ is a key of the merge of $A$ and $B$ if and only if $x$ is a key of $A$
+or a key of $B$. No ordering between the keys of $A$ and $B$ is assumed.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
-- [Merge](merge.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
+- [Merging order-statistic trees](merge.md)
 
 ## Proof depends on
 
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [Mem inorder](../../../part-02/binary-search-tree/mem-inorder.md)
-- [Entry](../../../part-02/order-statistic-tree/entry.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Membership in the inorder traversal of a binary tree](../../../part-02/binary-search-tree/mem-inorder.md)
+- [Order-statistic tree node entry](../../../part-02/order-statistic-tree/entry.md)
 
 ## Sources
 

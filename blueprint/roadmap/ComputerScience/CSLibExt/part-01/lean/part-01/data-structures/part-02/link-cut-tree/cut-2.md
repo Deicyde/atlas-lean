@@ -7,31 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.Valid.cut
 ---
 
-# Cut
+# Cutting preserves validity
 
-Cutting preserves the state invariant: pruning partitions the cut
-tree's vertex list into remainder plus detached subtree up to permutation
-(`perm_vertices_pruneAt`), the rest of the forest is untouched, and the
-preferred edges are reset.
+**Cutting preserves validity.** If $s$ is a valid link-cut tree state, then for every vertex
+$x$ the state obtained from $s$ by cutting off the subtree rooted at $x$ is again valid.
+
+Pruning splits the vertices of the cut tree into those of the remainder and those of the
+detached subtree, the rest of the forest is untouched, and the preferred edges are reset.
 
 ## Depends on
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Cut](cut.md)
+- [Link-cut tree state](state.md)
+- [Valid link-cut tree states](valid.md)
+- [Cutting off the subtree at a vertex](cut.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Parent Child](parent-child.md)
-- [Valid of preferred nil](valid-of-preferred-nil.md)
-- [Find Subtree](find-subtree.md)
-- [Find Tree](find-tree.md)
-- [Perm flat Map remove Tree](perm-flat-map-remove-tree.md)
-- [Perm vertices prune At](perm-vertices-prune-at.md)
-- [Prune At](prune-at.md)
-- [Remove Tree](remove-tree.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
+- [Validity of states with no preferred edges](valid-of-preferred-nil.md)
+- [Subtree rooted at a vertex](find-subtree.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Removing the tree containing a vertex splits the forest's vertices](perm-flat-map-remove-tree.md)
+- [Pruning a subtree splits the vertex list](perm-vertices-prune-at.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
 
 ## Sources
 

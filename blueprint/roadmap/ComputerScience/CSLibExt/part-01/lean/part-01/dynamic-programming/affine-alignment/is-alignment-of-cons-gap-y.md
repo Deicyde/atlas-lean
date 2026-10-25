@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isAlignment_of_cons_gapY
 ---
 
-# Is Alignment of cons gap Y
+# Removing a leading column with a gap in the first sequence
 
-Stripping a gap-in-`xs` column preserves validity.
+**Removing a leading column with a gap in the first sequence.** Let $A$ be an alignment, $b$
+an element and $x$, $y$ sequences. If prepending to $A$ the column that pairs a gap with $b$ gives
+a valid alignment of $x$ and $b y$ (the sequence $y$ with $b$ prepended), then $A$ is a valid
+alignment of $x$ and $y$.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
 
 ## Sources
 

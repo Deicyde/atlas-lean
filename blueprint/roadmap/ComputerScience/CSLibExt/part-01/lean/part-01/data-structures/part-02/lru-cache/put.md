@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LruCache.put
 ---
 
-# Put
+# Insertion into an LRU cache
 
-Inserts or updates the binding for `k` at the front of the cache, evicting the least recently
-used entries if the cache would exceed its capacity.
+**Insertion into an LRU cache.** Putting the binding $(k, v)$ into an LRU cache of capacity $c$
+removes any entry with key $k$, places $(k, v)$ at the front as the most recently used entry,
+and then keeps only the first $c$ entries, so the least recently used entries beyond the
+capacity are evicted.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
+- [Least-recently-used cache](lru-cache.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

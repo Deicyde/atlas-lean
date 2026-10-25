@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.isBanded_length_diff
 ---
 
-# Is Banded length diff
+# Banded alignments force close lengths
 
-A banded alignment of `xs`, `ys` has its length difference within the band.
+**Banded alignments force close lengths.** Let $w \in \mathbb{N}$. If $A$ is a valid alignment
+of sequences $x$ and $y$ and $A$ is banded with width $w$, then the lengths of $x$ and $y$ differ
+by at most $w$, that is $\bigl| |x| - |y| \bigr| \le w$.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Is Banded](is-banded.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Banded alignments](is-banded.md)
 
 ## Proof depends on
 
-- [Banded From final](banded-from-final.md)
+- [A passing band check bounds the final offset](banded-from-final.md)
 
 ## Sources
 

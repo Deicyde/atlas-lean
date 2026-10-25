@@ -4,12 +4,12 @@ navigation: module
 
 # Script
 
-- [Edit Step](edit-step.md)
+- [Edit step](edit-step.md)
 - [Edit Script](edit-script.md)
-- [Cost](cost.md)
-- [Cost](cost-2.md)
-- [Apply?](apply.md)
-- [Transforms](transforms.md)
-- [Edit Distance Result](edit-distance-result.md)
-- [Edit Distance Cost](edit-distance-cost.md)
-- [Total](total.md)
+- [Unit cost of an edit step](cost.md)
+- [Cost of an edit script](cost-2.md)
+- [Running an edit script](apply.md)
+- [An edit script transforming one list into another](transforms.md)
+- [Edit-distance result record](edit-distance-result.md)
+- [Edit-distance cost counters](edit-distance-cost.md)
+- [Total edit-distance cost](total.md)

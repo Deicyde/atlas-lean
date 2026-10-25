@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_empty
 ---
 
-# Search With Cost empty
+# Instrumented search in the empty tree
 
-An empty search performs its terminal visit and no endpoint comparisons.
+**Instrumented search in the empty tree.** For every query interval $q$, the instrumented
+overlap search of $q$ in the empty interval tree returns no entry, and its cost record counts
+one node visit and zero for every other counter (key comparisons, endpoint comparisons,
+cached-maximum reads, cache writes, rotations and index operations).
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Tree](tree.md)
-- [Search With Cost](search-with-cost.md)
+- [Interval tree](tree.md)
+- [Instrumented overlap search](search-with-cost.md)
 
 ## Sources
 

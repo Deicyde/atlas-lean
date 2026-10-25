@@ -6,28 +6,28 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.rerootAt
 ---
 
-# Reroot At
+# Rerooting a tree at a vertex
 
-Reroot a tree at `x`, reversing the edges on the path from the old root
-to `x` and keeping every other edge: the undirected tree is unchanged, only
-the choice of root changes. Returns `none` when `x` does not occur. This is
-the tree surgery behind `State.makeRoot`.
+**Rerooting a tree at a vertex.** For a vertex $x$ and a rooted ordered tree $T$ with root $r$,
+rerooting $T$ at $x$ is defined recursively. If $r = x$, the result is $T$ itself. Otherwise let
+$C$ be the first child subtree of $r$ that contains $x$, let $p$ be the root of $C$, and let $C'$
+be $C$ rerooted at $x$. The result is $C'$ with the tree formed by $r$ and its remaining
+children (in their original order) attached as a new last child of the first node of $C'$, in
+preorder, labelled $p$. If no child subtree of $r$ contains $x$, rerooting is undefined; thus
+rerooting is defined exactly when $x$ is a vertex of $T$.
 
-The recursion reroots the child subtree `c` on the root-to-`x` path first,
-then grafts the remainder of the current node (the old root `r` together
-with the sibling subtrees off the path) back under the root of `c`, which
-is the next vertex on the reversed path. Attaching the remainder under
-that path vertex, rather than directly under `x`, is what keeps every
-path edge intact at depth greater than one.
+When the vertices of $T$ are distinct, this reverses the edges on the path from $r$ to $x$ and
+keeps every other edge, so the undirected tree is unchanged and only the root moves to $x$. This
+is the tree surgery behind making $x$ the root in a link-cut tree.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 
 ## Proof depends on
 
-- [Root](../euler-tour-tree/root.md)
-- [Graft At](graft-at.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Sources
 

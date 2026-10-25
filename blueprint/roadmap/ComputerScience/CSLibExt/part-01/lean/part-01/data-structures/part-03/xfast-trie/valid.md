@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.Valid
 ---
 
-# Valid
+# Valid x-fast trie
 
-Every level holds exactly the prefixes of the stored keys at that length.
+**Valid x-fast trie.** An x-fast trie $t$ over $w$-bit keys is valid when, for every level
+$l \in \{0, \dots, w\}$, the level-$l$ set of $t$ equals the set of $l$-bit prefixes (top $l$
+bits) of the stored keys of $t$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
+- [x-fast trie](xfast-trie.md)
 
 ## Proof depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

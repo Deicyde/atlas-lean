@@ -7,13 +7,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_zero
 ---
 
-# Lowbit zero
+# Lowbit of zero
 
-`lowbit 0` is `0`.
+**Lowbit of zero.** By convention, $\operatorname{lowbit}(0) = 0$.
 
 ## Depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

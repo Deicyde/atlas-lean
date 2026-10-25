@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.length_toList_of_valid
 ---
 
-# Length to List of valid
+# Size of a valid segment tree
 
-In a valid tree the cached size is the length of the leaf list.
+**Size of a valid segment tree.** If $t$ is a valid segment tree with values in an additive
+monoid, then the length of the list of leaf values of $t$, read from left to right, equals the
+size of $t$.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [Valid](valid.md)
-- [Size](size.md)
-- [To List](to-list.md)
+- [Valid segment trees](valid.md)
+- [Size of a segment tree](size.md)
+- [Leaf list of a segment tree](to-list.md)
 
 ## Proof depends on
 
-- [Agg](agg.md)
-- [To List node](to-list-node.md)
+- [Aggregate of a segment tree](agg.md)
+- [Leaf list of an internal node](to-list-node.md)
 
 ## Sources
 

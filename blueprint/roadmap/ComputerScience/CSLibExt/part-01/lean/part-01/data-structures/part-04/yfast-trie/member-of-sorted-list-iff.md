@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.member_ofSortedList_iff
 ---
 
-# Member of Sorted List iff
+# Membership in a trie built from a sorted list
 
-Membership in the trie built from a list is membership in the list.
+**Membership in a trie built from a sorted list.** Let $B > 0$ and let $l$ be a strictly
+increasing list of $w$-bit keys. Then for every key $x$, the membership query on the grouped
+y-fast trie built from $l$ with group bound $B$ returns true at $x$ if and only if $x$ belongs
+to $l$.
 
 ## Depends on
 
-- [Member](member.md)
-- [Of Sorted List](of-sorted-list.md)
+- [Membership query of a grouped y-fast trie](member.md)
+- [Grouped y-fast trie from a sorted list](of-sorted-list.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
-- [Contents of Sorted List](contents-of-sorted-list.md)
-- [Member iff](member-iff.md)
-- [Valid of Sorted List](valid-of-sorted-list.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Keys of the grouped y-fast trie built from a list](contents-of-sorted-list.md)
+- [Correctness of the y-fast trie membership query](member-iff.md)
+- [Building from a sorted list gives a valid grouped y-fast trie](valid-of-sorted-list.md)
 
 ## Sources
 

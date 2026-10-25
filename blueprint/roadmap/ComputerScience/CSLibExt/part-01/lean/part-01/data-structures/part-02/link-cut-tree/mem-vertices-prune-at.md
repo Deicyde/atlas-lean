@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_pruneAt
 ---
 
-# Mem vertices prune At
+# Vertices of a pruned tree
 
-Every vertex of the pruned tree was already a vertex of the original
-tree, and `x` itself is gone.
+**Vertices of a pruned tree.** Let $t$ be a rooted tree and $x$ a vertex. If pruning
+$t$ at $x$ leaves the tree $t'$, then every vertex of $t'$ is a vertex of $t$ and is
+different from $x$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Prune At](prune-at.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ $R$ if and only if $x$ occurs in $L$ or $x$ occurs in $R$.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
 - [Join of two binary trees](join.md)
 
 ## Sources

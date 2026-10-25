@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot_eq_none_iff
 ---
 
-# Min Root eq none iff
+# Only the empty forest has no minimum root
 
-A forest has no minimum root exactly when it is empty.
+**Only the empty forest has no minimum root.** A forest of Fibonacci trees over a linearly
+ordered type has no minimum root exactly when it is empty.
 
 ## Depends on
 
-- [Min Root](min-root.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Minimum root of a forest](min-root.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Root](root.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

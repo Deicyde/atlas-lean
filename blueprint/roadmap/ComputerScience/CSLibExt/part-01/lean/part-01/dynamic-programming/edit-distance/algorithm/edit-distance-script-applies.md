@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_script_applies
 ---
 
-# Edit Distance script applies
+# Correctness of the returned edit script
 
-The returned script executes on the source and produces the target.
+**Correctness of the returned edit script.** For lists $s$ and $t$ over a type whose Boolean
+equality test agrees with equality, the edit script returned by the edit distance algorithm on
+$s$ and $t$ transforms $s$ into $t$.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
 - [Edit Script](../script/edit-script.md)
-- [Transforms](../script/transforms.md)
-- [Edit Distance](edit-distance.md)
+- [An edit script transforming one list into another](../script/transforms.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Proof depends on
 
-- [Apply?](../script/apply.md)
-- [Cost](../script/cost-2.md)
-- [Edit Step](../script/edit-step.md)
-- [Cost](../script/cost.md)
+- [Running an edit script](../script/apply.md)
+- [Cost of an edit script](../script/cost-2.md)
+- [Edit step](../script/edit-step.md)
+- [Unit cost of an edit step](../script/cost.md)
 
 ## Sources
 

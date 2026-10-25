@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.card_elements_pos
 ---
 
-# Card elements pos
+# Fibonacci trees are nonempty
 
-Every Fibonacci tree represents at least one element.
+**Fibonacci trees are nonempty.** Every Fibonacci tree represents at least one element: the
+multiset of elements of any Fibonacci tree has positive size.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

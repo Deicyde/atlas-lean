@@ -7,19 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_time
 ---
 
-# Memoized Cut Rod time
+# Event count of memoized rod cutting
 
-Exact same-execution event count: one per cache probe, candidate, and actual write.
+**Event count of memoized rod cutting.** Let $\alpha$ be an additive commutative monoid with a
+linear order and let $p \in \alpha^n$ be a vector of prices. The memoized cut-rod procedure on $p$
+charges exactly $n^2 + 2n + 2$ events, where one event is charged per cache probe, per first-cut
+candidate, and per cache write.
+
+Allocation, initialization, arithmetic, comparisons and control are not charged.
 
 ## Depends on
 
-- [Memoized Cut Rod](memoized-cut-rod.md)
+- [The memoized cut-rod procedure (CLRS MEMOIZED-CUT-ROD)](memoized-cut-rod.md)
 
 ## Proof depends on
 
-- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
-- [Memoized Cut Rod Aux hit](memoized-cut-rod-aux-hit.md)
-- [Memoized Cut Rod Aux preserves](memoized-cut-rod-aux-preserves.md)
+- [Memoized rod-cutting auxiliary (CLRS MEMOIZED-CUT-ROD-AUX)](memoized-cut-rod-aux.md)
+- [A cache hit in memoized rod cutting returns at once](memoized-cut-rod-aux-hit.md)
+- [The memoized auxiliary preserves known and higher cache entries](memoized-cut-rod-aux-preserves.md)
 
 ## Sources
 

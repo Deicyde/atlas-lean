@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.rank_eq_count_inorder
 ---
 
-# Rank eq count inorder
+# Rank counts the smaller inorder entries
 
-`rank` counts the inorder keys that are strictly below the query.
+**Rank counts the smaller inorder entries.** For a linearly ordered type $\alpha$, a key
+$x \in \alpha$ and a binary tree $t$ with keys in $\alpha$, the rank of $x$ in $t$ equals the
+length of the list obtained from the inorder traversal of $t$ by keeping exactly the entries
+strictly less than $x$.
 
 ## Depends on
 
-- [Inorder](inorder.md)
-- [Rank](rank.md)
+- [Inorder traversal of a binary tree](inorder.md)
+- [Rank of a key in a binary tree](rank.md)
 
 ## Sources
 

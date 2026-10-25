@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mem
 ---
 
-# Valid Invariant mem
+# Stored intervals of a valid tree are valid
 
-Every stored entry of a validity-invariant tree is valid.
+**Stored intervals of a valid tree are valid.** If an interval tree $T$ satisfies the validity
+invariant, then every entry stored in $T$ has an interval $[a, b]$ with $a \le b$.
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Valid](valid.md)
-- [Tree](tree.md)
-- [Valid Invariant](valid-invariant.md)
+- [Valid interval](valid.md)
+- [Interval tree](tree.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
 
 ## Sources
 

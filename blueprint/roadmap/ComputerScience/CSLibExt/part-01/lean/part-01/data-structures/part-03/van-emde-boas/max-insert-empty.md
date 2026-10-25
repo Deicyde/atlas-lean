@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_insert_empty
 ---
 
-# Max? insert empty
+# Maximum query on a one-element van Emde Boas tree
 
-The greatest element of a singleton tree is its element.
+**Maximum query on a one-element van Emde Boas tree.** Let $m$ be a natural number and let
+$x$ be an element of the universe $\{0, 1, \dots, m^2 - 1\}$. The maximum query on the tree
+obtained by inserting $x$ into the empty van Emde Boas tree over this universe returns $x$.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Insert](insert.md)
-- [Max?](max.md)
+- [Empty van Emde Boas tree](empty.md)
+- [Insertion into a van Emde Boas tree](insert.md)
+- [Maximum query of a van Emde Boas tree](max.md)
 
 ## Proof depends on
 
-- [Max? eq some iff of valid](max-eq-some-iff-of-valid.md)
-- [Member](member.md)
-- [Member empty](member-empty.md)
-- [Member insert](member-insert.md)
-- [Member insert self](member-insert-self.md)
-- [Valid empty](valid-empty.md)
-- [Valid insert](valid-insert.md)
+- [Correctness of the van Emde Boas maximum query](max-eq-some-iff-of-valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [The empty van Emde Boas tree has no members](member-empty.md)
+- [Membership after insertion into a van Emde Boas tree](member-insert.md)
+- [An inserted element is a member of a van Emde Boas tree](member-insert-self.md)
+- [The empty van Emde Boas tree is valid](valid-empty.md)
+- [Insertion preserves validity of van Emde Boas trees](valid-insert.md)
 
 ## Sources
 

@@ -7,33 +7,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMin_trees
 ---
 
-# Delete Min trees
+# Binomial heap deletion agrees with forest deletion
 
-Projecting away the validity proof from deletion gives `deleteMinTrees`.
+**Binomial heap deletion agrees with forest deletion.** For every binomial heap $H$ over a
+linearly ordered type, deleting the minimum of $H$ and then replacing the remaining heap by its
+list of trees gives the same result as minimum deletion on the list of trees of $H$: both have no
+result, or both return the same minimum value and the same list of trees.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
-- [Delete Min](delete-min.md)
-- [Delete Min Trees](delete-min-trees.md)
-- [Binomial Tree](binomial-tree.md)
+- [Binomial heap](binomial-heap.md)
+- [Deleting the minimum of a binomial heap](delete-min.md)
+- [Minimum deletion on a binomial forest](delete-min-trees.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Ranks At Least](ranks-at-least.md)
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
+- [Rank lower bound for a forest](ranks-at-least.md)
+- [Valid binomial forest](valid-2.md)
+- [Validity of binomial forests passes to sublists](sublist.md)
 - [Elements](elements-2.md)
-- [Meld Trees](meld-trees.md)
-- [Meld Trees correct](meld-trees-correct.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid reverse children](valid-reverse-children.md)
-- [Valid](valid.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Melding binomial forests](meld-trees.md)
+- [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Removing a minimum-root tree](remove-min-tree-spec.md)
+- [Reversed children of a valid binomial tree form a valid forest](valid-reverse-children.md)
+- [Valid binomial tree](valid.md)
+- [Children of a binomial tree](children.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

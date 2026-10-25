@@ -7,29 +7,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost_entries_perm
 ---
 
-# Insert Key With Cost entries perm
+# Entries after keyed insertion
 
-Insertion permutes the entry list by consing the new entry onto the
-old entries with any same-key entry filtered out.
+**Entries after keyed insertion.** Let $t$ be a tree whose entries are strictly ordered by key,
+and let $x$ be an entry. The in-order list of entries of the tree obtained by inserting $x$ into $t$
+by key is a permutation of the list consisting of $x$ followed by those entries of $t$ whose key
+differs from the key of $x$.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Key](key.md)
-- [Tree](tree.md)
-- [Key Ordered](key-ordered.md)
-- [Insert Key With Cost](insert-key-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
+- [Interval tree](tree.md)
+- [Key-ordered interval tree](key-ordered.md)
+- [Keyed insertion with cost](insert-key-with-cost.md)
 
 ## Proof depends on
 
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
-- [Compare Key](compare-key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

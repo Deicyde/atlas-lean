@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMinTrees
 ---
 
-# Delete Min Trees
+# Minimum deletion on a binomial forest
 
-The computational forest projection of minimum deletion.
+**Minimum deletion on a binomial forest.** Given a list of binomial trees over a linearly
+ordered type, if the list is empty there is no result. Otherwise, remove the first tree whose root
+is minimal among the roots of the list; the result is the root of that tree together with the
+forest obtained by melding its children, in reversed order, with the remaining trees.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Meld Trees](meld-trees.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Children](children.md)
-- [Root](root.md)
+- [Melding binomial forests](meld-trees.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Children of a binomial tree](children.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

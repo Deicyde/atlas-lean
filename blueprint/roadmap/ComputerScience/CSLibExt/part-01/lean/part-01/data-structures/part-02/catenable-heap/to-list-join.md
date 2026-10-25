@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_join
 ---
 
-# To List join
+# Flattening a join of catenable heaps
 
-A join node flattens to the flattening of its left child followed by that of its right.
+**Flattening a join of catenable heaps.** For catenable heaps $l$ and $r$, the flattening of
+the join of $l$ and $r$ is the flattening of $l$ followed by the flattening of $r$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List](to-list.md)
+- [Catenable heap](catenable-heap.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Proof depends on
 
-- [To List Naive](to-list-naive.md)
-- [To List eq to List Naive](to-list-eq-to-list-naive.md)
+- [Naive flattening of a catenable heap](to-list-naive.md)
+- [Flattening of a catenable heap equals its naive flattening](to-list-eq-to-list-naive.md)
 
 ## Sources
 

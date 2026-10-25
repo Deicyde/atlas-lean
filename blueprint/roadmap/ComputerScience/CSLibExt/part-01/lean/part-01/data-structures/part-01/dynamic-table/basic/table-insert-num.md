@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_num
 ---
 
-# Table Insert num
+# Insertion increases the item count by one
 
-The actual insertion increases the saved item count by one.
+**Insertion increases the item count by one.** For every dynamic table $T$ with item count $n$
+and every item $x$, the table returned by inserting $x$ into $T$ with TABLE-INSERT has item count
+$n + 1$.
 
 ## Depends on
 
-- [Table](table.md)
-- [Table Insert](table-insert.md)
+- [Dynamic table](table.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Sources
 

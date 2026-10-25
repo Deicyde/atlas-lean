@@ -7,18 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.deleteAfter_payload
 ---
 
-# Delete After payload
+# Deleting a successor preserves payloads
 
-Deleting a successor preserves every payload.
+**Deleting a successor preserves payloads.** Fix a capacity $n$, let $s$ be a store assigning
+to each identity below $n$ either nothing or a singly linked list node, let $y$ be an identity
+such that $s(y)$ is a node, and let $s'$ be the store obtained from $s$ by deleting the successor
+of $y$. Then for every identity $z$, either $s(z)$ and $s'(z)$ are both nothing, or both are nodes
+with the same payload.
 
 ## Depends on
 
-- [Node](node.md)
-- [Delete After](delete-after.md)
+- [Singly linked list node](node.md)
+- [Deleting the successor in a singly linked list](delete-after.md)
 
 ## Proof depends on
 
-- [Delete After get](delete-after-get.md)
+- [Cells after deleting a successor](delete-after-get.md)
 
 ## Sources
 

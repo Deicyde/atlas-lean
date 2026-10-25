@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UniversalHashing.pairMap_fst_ne_snd
 ---
 
-# Pair Map fst ne snd
+# The two values of the pair map differ
 
-For distinct keys `x ≠ y` in the field `ZMod p`, the two components of `pairMap`
-differ: their difference is `a * (x - y)` with both factors nonzero.
+**The two values of the pair map differ.** Let $p$ be a prime and let $x \ne y$ be keys in the
+field $\mathbb{Z}/p\mathbb{Z}$. For every index $(a, b)$ of the mod-prime family, that is,
+$a, b \in \mathbb{Z}/p\mathbb{Z}$ with $a \ne 0$, we have $ax + b \ne ay + b$.
+
+Indeed, the difference $(ax + b) - (ay + b) = a(x - y)$ is a product of two nonzero factors.
 
 ## Depends on
 
-- [Mod Prime Index](mod-prime-index.md)
-- [Pair Map](pair-map.md)
+- [Mod-prime index set](mod-prime-index.md)
+- [The pair map of the mod-prime family](pair-map.md)
 
 ## Sources
 

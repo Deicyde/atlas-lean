@@ -7,28 +7,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.search_complete
 ---
 
-# Search complete
+# Completeness of interval-tree search
 
-Under the structural cache/order invariants, every overlap is found.
+**Completeness of interval-tree search.** Let $T$ be an interval tree whose cached height, size
+and maximum high endpoint are exact at every node, and whose low endpoints respect the search
+order (at every node, low endpoints in the left subtree are at most the node's, and those in the
+right subtree at least the node's). If some entry stored in $T$ has an interval that overlaps the
+query interval $Q$ (each interval's low endpoint is at most the other's high endpoint), then
+searching $T$ for $Q$ returns some entry.
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Overlaps](overlaps.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Low Ordered](low-ordered.md)
-- [Search](search.md)
+- [Overlapping closed intervals](overlaps.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Low-endpoint ordered interval tree](low-ordered.md)
+- [Interval-tree overlap search](search.md)
 
 ## Proof depends on
 
-- [Cost](cost.md)
-- [Overlaps](overlaps-2.md)
-- [Overlaps With Cost](overlaps-with-cost.md)
-- [Overlaps With Cost fst](overlaps-with-cost-fst.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Overlap test for closed intervals](overlaps-2.md)
+- [Overlap test with comparison count](overlaps-with-cost.md)
+- [The instrumented overlap test returns the plain result](overlaps-with-cost-fst.md)
 - [Cached Max?](cached-max.md)
-- [Search With Cost](search-with-cost.md)
+- [Instrumented overlap search](search-with-cost.md)
 
 ## Sources
 

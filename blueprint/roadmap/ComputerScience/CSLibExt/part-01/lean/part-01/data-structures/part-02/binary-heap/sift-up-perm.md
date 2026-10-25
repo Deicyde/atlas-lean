@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.siftUp_perm
 ---
 
-# Sift Up perm
+# Sift-up permutes the array
 
-Sifting up only permutes the input array.
+**Sift-up permutes the array.** For every array $a$ over a linearly ordered type and every
+index $i$, the array obtained by sifting up $a$ from $i$ is a permutation of $a$.
 
 ## Depends on
 
-- [Sift Up](sift-up.md)
+- [Sift-up](sift-up.md)
 
 ## Proof depends on
 
-- [Heap Parent](heap-parent.md)
-- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
+- [The parent of a valid nonroot index is valid](heap-parent-lt-size.md)
 
 ## Sources
 

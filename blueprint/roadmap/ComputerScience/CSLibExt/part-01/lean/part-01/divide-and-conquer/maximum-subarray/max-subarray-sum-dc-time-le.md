@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.maxSubarraySumDC_time_le
 ---
 
-# Max Subarray Sum DC time le
+# Running time of divide-and-conquer maximum subarray
 
-On a nonempty list of length `n` the divide-and-conquer algorithm uses at most
-`2 * n * ⌈log₂ n⌉ + 3 * (n - 1)` operations (stated with the `3` moved left).
+**Running time of divide-and-conquer maximum subarray.** Let $\alpha$ be an additive monoid
+with a linear order. On a nonempty list over $\alpha$ of length $n$, the cost $T$ of the
+divide-and-conquer maximum subarray algorithm satisfies
+$T + 3 \le 2n\lceil \log_2 n \rceil + 3n$, that is, $T \le 2n\lceil \log_2 n \rceil + 3(n - 1)$.
 
 ## Depends on
 
-- [Max Subarray Sum DC](max-subarray-sum-dc.md)
+- [Divide-and-conquer maximum subarray](max-subarray-sum-dc.md)
 
 ## Proof depends on
 
-- [Max Subarray DC](max-subarray-dc.md)
-- [Max Subarray DCCost](max-subarray-dccost.md)
-- [Prefix Scan](prefix-scan.md)
-- [Suffix Scan](suffix-scan.md)
+- [Divide-and-conquer core of maximum subarray](max-subarray-dc.md)
+- [Cost recurrence of divide-and-conquer maximum subarray](max-subarray-dccost.md)
+- [Prefix scan](prefix-scan.md)
+- [Right-to-left suffix scan](suffix-scan.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.root?_splay_of_mem
 ---
 
-# Root? splay of mem
+# Root key after splaying a present key
 
-The root after splaying a present key is that key.
+**Root key after splaying a present key.** Let $t$ be a binary search tree with keys in a
+linearly ordered type (at every node, every key of the left subtree is strictly smaller and every
+key of the right subtree strictly larger than the key of the node), and let $x$ be a key that
+occurs in $t$. Then the tree obtained by splaying $x$ in $t$ is nonempty and its root key is $x$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Root?](root.md)
-- [Splay](splay.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Root key of a binary tree](root.md)
+- [Splay operation](splay.md)
 
 ## Proof depends on
 
-- [Root splay of mem](root-splay-of-mem.md)
+- [Splaying a present key brings it to the root](root-splay-of-mem.md)
 
 ## Sources
 

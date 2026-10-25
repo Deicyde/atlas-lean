@@ -15,15 +15,15 @@ Each extracted priority is minimal in the heap from which it is removed.
 
 - [Huffman Priority](huffman-priority.md)
 - [Huffman Two Min](huffman-two-min.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
-- [Elements](../../data-structures/part-02/binary-heap/elements.md)
+- [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Elements of a binary min-heap](../../data-structures/part-02/binary-heap/elements.md)
 - [Extract Two Min?](extract-two-min.md)
 
 ## Proof depends on
 
-- [Extract Min](../../data-structures/part-02/binary-heap/extract-min.md)
-- [Extract Min cons elements](../../data-structures/part-02/binary-heap/extract-min-cons-elements.md)
-- [Extract Min le](../../data-structures/part-02/binary-heap/extract-min-le.md)
+- [Extracting the minimum of a binary min-heap](../../data-structures/part-02/binary-heap/extract-min.md)
+- [Binary heap extraction splits off the minimum](../../data-structures/part-02/binary-heap/extract-min-cons-elements.md)
+- [The value extracted from a binary min-heap is minimal](../../data-structures/part-02/binary-heap/extract-min-le.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.RedOkBB
 ---
 
-# Red Ok BB
+# Red invariant for trees with a possibly double-black root
 
-The red invariant for a `BBTree`: the parent module's `RedOk` for a
-genuine tree, and `RedOk` of both children for a double-black node.
+**Red invariant for trees with a possibly double-black root.** A tree whose root may be
+double black satisfies the red invariant in the following cases: a genuine red-black tree
+satisfies it when it satisfies the usual red invariant (no red node has a red child); the
+double-black empty tree always satisfies it; and a double-black node with left subtree $l$ and
+right subtree $r$ satisfies it when both $l$ and $r$ satisfy the usual red invariant.
 
 ## Depends on
 
-- [BBTree](bbtree.md)
+- [Trees with a possibly double-black root](bbtree.md)
 
 ## Proof depends on
 
-- [Red Ok](../../../part-03/red-black-tree/red-ok.md)
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red property of red-black trees](../../../part-03/red-black-tree/red-ok.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Sources
 

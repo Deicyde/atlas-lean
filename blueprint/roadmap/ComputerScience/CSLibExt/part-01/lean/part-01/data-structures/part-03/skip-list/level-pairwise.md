@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.level_pairwise
 ---
 
-# Level pairwise
+# Skip-list levels are sorted by key
 
-Every derived level remains strictly ordered by key.
+**Skip-list levels are sorted by key.** If a skip list is valid, then for every level index
+$i$ (levels are numbered from $0$ at the bottom), the keys in the list of key-value pairs visible
+at level $i$ are strictly increasing: every pair has a strictly smaller key than every pair after
+it.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Valid](valid.md)
-- [Level](level.md)
+- [Skip list](skip-list.md)
+- [Valid skip list](valid.md)
+- [Level of a skip list](level.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

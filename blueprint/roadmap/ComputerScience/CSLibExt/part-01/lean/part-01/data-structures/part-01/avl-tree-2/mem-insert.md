@@ -25,7 +25,7 @@ in $T$.
 - [Membership after AVL rebalancing](mem-balance.md)
 - [AVL node with computed height](mk-node.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Mem](../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

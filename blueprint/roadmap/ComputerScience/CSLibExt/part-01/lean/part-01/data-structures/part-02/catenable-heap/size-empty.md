@@ -6,14 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_empty
 ---
 
-# Size empty
+# The empty catenable heap has size zero
 
-The empty heap has size zero.
+**The empty catenable heap has size zero.** The empty catenable heap has size $0$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Size](size.md)
+- [Catenable heap](catenable-heap.md)
+- [Size of a catenable heap](size.md)
 
 ## Sources
 

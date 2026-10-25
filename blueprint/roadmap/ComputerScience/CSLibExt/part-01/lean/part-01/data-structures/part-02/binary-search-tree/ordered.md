@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.Ordered
 ---
 
-# Ordered
+# Ordered binary trees
 
-Every left key is smaller and every right key is larger, recursively.
+**Ordered binary trees.** Let $\alpha$ be a type with a relation $<$. The empty tree is
+ordered, and a binary tree with root key $k$, left subtree $L$ and right subtree $R$ is ordered
+when $L$ and $R$ are ordered, every key of $L$ is less than $k$, and $k$ is less than every key
+of $R$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [All](all.md)
+- [A predicate holding at every key of a binary tree](all.md)
 
 ## Sources
 

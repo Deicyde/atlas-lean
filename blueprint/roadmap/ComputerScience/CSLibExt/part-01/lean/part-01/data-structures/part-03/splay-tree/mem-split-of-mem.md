@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.mem_split_of_mem
 ---
 
-# Mem split of mem
+# Keys other than the split key survive a split
 
-Every key other than the split key survives into one of the parts.
+**Keys other than the split key survive a split.** Let $t$ be a binary tree with keys in a
+linearly ordered type, and let $x$ and $y$ be keys with $y \ne x$. If $y$ occurs as a key of $t$,
+then $y$ occurs as a key of the left part or of the right part of the split of $t$ at $x$.
+The tree $t$ need not be a binary search tree.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Split](split.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Search-path split at a key](split.md)
 
 ## Sources
 

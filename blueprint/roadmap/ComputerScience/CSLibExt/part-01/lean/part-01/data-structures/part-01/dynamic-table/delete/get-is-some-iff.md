@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.get?_isSome_iff
 ---
 
-# Get? is Some iff
+# Lookup succeeds exactly below the item count
 
-In a well-formed table, lookup returns a value exactly on the logical range.
+**Lookup succeeds exactly below the item count.** Let $T$ be a well-formed dynamic table
+holding $n$ items. For every natural number $i$, the lookup at logical position $i$ in $T$
+returns a value if and only if $i < n$.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Well Formed](../basic/well-formed.md)
-- [Get?](get.md)
+- [Dynamic table](../basic/table.md)
+- [Well-formed dynamic table](../basic/well-formed.md)
+- [Lookup in a dynamic table](get.md)
 
 ## Proof depends on
 
-- [Get? eq none of le](get-eq-none-of-le.md)
-- [Well Formed iff](../basic/well-formed-iff.md)
+- [Lookup beyond the item count returns nothing](get-eq-none-of-le.md)
+- [Characterization of well-formed dynamic tables](../basic/well-formed-iff.md)
 
 ## Sources
 

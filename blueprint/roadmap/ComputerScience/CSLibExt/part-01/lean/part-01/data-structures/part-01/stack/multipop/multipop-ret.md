@@ -13,7 +13,7 @@ The timed loop removes exactly the requested prefix, stopping at empty.
 
 ## Depends on
 
-- [Multipop](multipop.md)
+- [MULTIPOP](multipop.md)
 
 ## Sources
 

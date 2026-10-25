@@ -7,9 +7,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.isInfix_iff_exists_isPrefix_drop
 ---
 
-# Is Infix iff exists is Prefix drop
+# Infixes are prefixes of suffixes
 
-A pattern occurs in `s` as an infix exactly when it prefixes some suffix of `s`.
+**Infixes are prefixes of suffixes.** For lists $s$ and $p$, $p$ is an infix (a contiguous
+sublist) of $s$ if and only if there is a natural number $i$ such that $p$ is a prefix of the list
+obtained from $s$ by removing its first $i$ symbols.
 
 ## Depends on
 

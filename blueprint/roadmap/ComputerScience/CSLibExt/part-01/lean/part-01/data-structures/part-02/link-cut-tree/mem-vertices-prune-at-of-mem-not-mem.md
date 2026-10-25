@@ -7,27 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_pruneAt_of_mem_not_mem
 ---
 
-# Mem vertices prune At of mem not mem
+# Pruning keeps the vertices outside the detached subtree
 
-The vertices on the other side of a prune survive: in a duplicate-free
-(valid) tree, every vertex outside the detached subtree at `x` is a vertex
-of the pruned remainder. Together with `mem_vertices_pruneAt` this says
-pruning partitions the vertex set of a valid tree into the detached
-subtree and the remainder, keeping all remaining edges.
+**Pruning keeps the vertices outside the detached subtree.** Let $t$ be a rooted tree
+whose preorder vertex list has no repeated vertex, and let $x$ be a vertex. Suppose the
+subtree search finds the subtree $s$ of $t$ rooted at $x$, and pruning $t$ at $x$ leaves
+the tree $t'$. Then every vertex of $t$ that is not a vertex of $s$ is a vertex of $t'$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Find Subtree](find-subtree.md)
-- [Prune At](prune-at.md)
+- [Subtree rooted at a vertex](find-subtree.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Prune At eq self of not mem](prune-at-eq-self-of-not-mem.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Pruning at an absent vertex changes nothing](prune-at-eq-self-of-not-mem.md)
 
 ## Sources
 

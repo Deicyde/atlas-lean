@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.keys_node
 ---
 
-# Keys node
+# Inorder keys of a node
 
-Characteristic node equation for the inorder key list.
+**Inorder keys of a node.** For trees $l$ and $r$, a key $k$, a value $v$ and a priority
+$p$, the inorder key list of the node with left subtree $l$, entry $(k, v, p)$ and right
+subtree $r$ is the inorder key list of $l$, followed by $k$, followed by the inorder key list
+of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Keys](keys.md)
+- [Treap trees](tree.md)
+- [Inorder key list of a treap](keys.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
-- [Contents node](contents-node.md)
+- [Treap inorder contents](contents.md)
+- [Treap inorder contents of a node](contents-node.md)
 
 ## Sources
 

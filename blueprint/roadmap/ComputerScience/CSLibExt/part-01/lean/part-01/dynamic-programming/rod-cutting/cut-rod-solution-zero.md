@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.cutRodSolution_zero
 ---
 
-# Cut Rod Solution zero
+# Rod-cutting reconstruction on the empty rod
 
-The empty rod returns the empty canonical composition and charges no events.
+**Rod-cutting reconstruction on the empty rod.** For the empty price vector (rod length
+$0$) with entries in an additive commutative monoid carrying a linear order, the rod-cutting
+reconstruction returns the empty composition of $0$ and charges no events.
 
 ## Depends on
 
-- [Cut Rod Solution](cut-rod-solution.md)
+- [Rod cutting with reconstruction](cut-rod-solution.md)
 
 ## Proof depends on
 
-- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
-- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
+- [Extended bottom-up rod cutting](extended-bottom-up-cut-rod.md)
+- [The saved first cut attains the saved revenue](extended-bottom-up-cut-rod-first-cut.md)
 
 ## Sources
 

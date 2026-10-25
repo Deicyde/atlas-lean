@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.valid_fromList
 ---
 
-# Valid from List
+# Red-black trees built from a list are valid
 
-Building a tree by insertion always produces a valid tree.
+**Red-black trees built from a list are valid.** Let $\alpha$ be a linearly ordered type. For
+every list $l$ of elements of $\alpha$, the red-black tree obtained from the empty tree by
+inserting the elements of $l$ one at a time, from the last to the first, is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [From List](from-list.md)
+- [Valid red-black tree](valid.md)
+- [Red-black tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Valid empty](valid-empty.md)
-- [Valid insert](valid-insert.md)
+- [The empty red-black tree is valid](valid-empty.md)
+- [Red-black insertion preserves validity](valid-insert.md)
 
 ## Sources
 

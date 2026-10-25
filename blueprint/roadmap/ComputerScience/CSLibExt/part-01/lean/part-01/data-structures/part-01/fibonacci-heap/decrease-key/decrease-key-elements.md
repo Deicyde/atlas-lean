@@ -7,29 +7,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_elements
 ---
 
-# Decrease Key elements
+# Decrease-key replaces one key
 
-A successful decrease-key replaces exactly one occurrence of the old key (the
-addressed subtree's root) by the new key in the represented multiset.
+**Decrease-key replaces one key.** Let $H$ be a Fibonacci heap, $i$ a root index, $p$ a path
+of child indices and $k$ a key. Suppose that cutting the subtree at path $p$ out of the $i$-th
+tree of the root list of $H$ succeeds and extracts the subtree $S$, and that $k$ is at most the
+root of $S$. Then the multiset represented by the heap obtained from $H$ by decreasing the key at
+root index $i$ and path $p$ to $k$ is the multiset represented by $H$ with one occurrence of the
+root of $S$ removed and one occurrence of $k$ added.
 
 ## Depends on
 
-- [Cut Tree At](cut-tree-at.md)
-- [Fibonacci Heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
-- [Decrease Key](decrease-key.md)
+- [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
+- [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
+- [Decrease-key in a Fibonacci heap](decrease-key.md)
 - [Elements](../../../part-02/fibonacci-heap/elements-3.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Root](../../../part-02/fibonacci-heap/root.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 
 ## Proof depends on
 
-- [Cut Tree At elements](cut-tree-at-elements.md)
+- [Cutting a subtree splits the elements of a Fibonacci forest](cut-tree-at-elements.md)
 - [Elements](../../../part-02/fibonacci-heap/elements-2.md)
-- [Decrease Key trees of cut](decrease-key-trees-of-cut.md)
-- [Decrease Root](decrease-root.md)
-- [Elements](../../../part-02/fibonacci-heap/elements.md)
-- [Elements decrease Root](elements-decrease-root.md)
-- [Root mem elements](../../../part-02/fibonacci-heap/root-mem-elements.md)
+- [Root list after decrease-key](decrease-key-trees-of-cut.md)
+- [Replacing the root key of a Fibonacci tree](decrease-root.md)
+- [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
+- [Elements after replacing the root key](elements-decrease-root.md)
+- [The root of a Fibonacci tree is one of its elements](../../../part-02/fibonacci-heap/root-mem-elements.md)
 
 ## Sources
 

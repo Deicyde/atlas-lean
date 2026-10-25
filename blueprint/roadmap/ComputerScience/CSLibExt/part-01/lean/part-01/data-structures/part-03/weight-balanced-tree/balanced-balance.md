@@ -17,12 +17,12 @@ step maintains.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [Balance](balance.md)
+- [Weight-balanced trees](balanced.md)
+- [Weight-balanced rebalancing](balance.md)
 
 ## Proof depends on
 
-- [Balanced node](balanced-node.md)
+- [Building a weight-balanced node](balanced-node.md)
 
 ## Sources
 

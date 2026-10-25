@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.compositionRevenue_single
 ---
 
-# Composition Revenue single
+# Revenue of an uncut rod
 
-Selling the rod without a cut earns its supplied price.
+**Revenue of an uncut rod.** Let $p = (p_1, \dots, p_n)$ be prices in an additive commutative
+monoid, $p_i$ being the price of a piece of length $i$. For $0 < k \le n$, the revenue of the
+one-part composition $(k)$ of $k$ is $p_k$.
 
 ## Depends on
 
-- [Composition Revenue](composition-revenue.md)
+- [Revenue of a rod composition](composition-revenue.md)
 
 ## Sources
 

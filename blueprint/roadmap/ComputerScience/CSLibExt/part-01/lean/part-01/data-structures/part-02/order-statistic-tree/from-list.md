@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.fromList
 ---
 
-# From List
+# Order-statistic tree built from a list
 
-Build a tree by inserting keys from right to left.
+**Order-statistic tree built from a list.** For a linearly ordered key type, the
+order-statistic tree built from a list of keys is obtained by inserting the keys into the empty
+tree from right to left: the empty list gives the empty tree, and a list with head $k$ and
+tail $l$ gives the insertion of $k$ into the tree built from $l$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Insert](insert.md)
+- [Order-statistic tree node entry](entry.md)
+- [Insertion into an order-statistic tree](insert.md)
 
 ## Sources
 

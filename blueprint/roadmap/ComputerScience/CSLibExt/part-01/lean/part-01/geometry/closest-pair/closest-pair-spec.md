@@ -6,20 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.closestPair_spec
 ---
 
-# Closest Pair spec
+# Correctness of divide-and-conquer closest pair
 
-CLRS Section 33.4: on two or more points, the divide-and-conquer algorithm returns the least
-squared distance between two of them.
+**Correctness of divide-and-conquer closest pair.** Let $K$ be a linearly ordered field and let
+$ps$ be a list of at least two points in $K^2$. Then the divide-and-conquer closest-pair algorithm
+returns a value $\delta$, and $\delta$ is the least squared distance between two entries of $ps$
+at different positions: some two entries at different positions have squared distance $\delta$,
+and any two entries at different positions have squared distance at least $\delta$.
+
+This is the correctness of CLRS Section 33.4, with distances compared squared.
 
 ## Depends on
 
 - [Is Min Pair Dist2](is-min-pair-dist2.md)
-- [Closest Pair](closest-pair.md)
+- [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Proof depends on
 
 - [Is Answer](is-answer.md)
-- [Closest Pair is Answer](closest-pair-is-answer.md)
+- [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
 - [Dist2](dist2.md)
 
 ## Sources

@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.exists_nwScore_eq_fittingScore
 ---
 
-# Exists nw Score eq fitting Score
+# The fitting score is attained
 
-The fitting score is attained by some infix.
+**The fitting score is attained.** Let $\sigma$ be a substitution score and $g$ a gap
+score. For all sequences $x$ and $y$ there is an infix $l$ of $y$ such that the
+Needleman–Wunsch score of $x$ against $l$ (with $\sigma$ and $g$) equals the fitting score of
+$x$ against $y$.
 
 ## Depends on
 
-- [Fitting Score](fitting-score.md)
+- [Fitting score](fitting-score.md)
 - [Infixes](infixes.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

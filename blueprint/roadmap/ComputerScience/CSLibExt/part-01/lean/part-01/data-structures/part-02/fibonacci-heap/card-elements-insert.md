@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.card_elements_insert
 ---
 
-# Card elements insert
+# Insertion increases the size of a Fibonacci heap by one
 
-Insertion increments the element count.
+**Insertion increases the size of a Fibonacci heap by one.** For every Fibonacci heap $H$
+and every value $x$, the number of elements of the heap obtained by inserting $x$ into $H$,
+counted with multiplicity, is the number of elements of $H$ plus one.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 - [Elements](elements-3.md)
-- [Insert](insert.md)
+- [Insertion into a Fibonacci heap](insert.md)
 
 ## Proof depends on
 
-- [Elements insert](elements-insert.md)
+- [Insertion adds one occurrence](elements-insert.md)
 
 ## Sources
 

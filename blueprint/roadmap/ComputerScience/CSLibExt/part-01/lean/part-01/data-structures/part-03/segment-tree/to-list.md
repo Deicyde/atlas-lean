@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toList
 ---
 
-# To List
+# Leaf list of a segment tree
 
-The leaf values of a tree from left to right.
+**Leaf list of a segment tree.** The leaf list of a segment tree is the list of its leaf
+values from left to right: the empty list for the empty tree, $[x]$ for a leaf with value $x$,
+and the leaf list of the left child followed by the leaf list of the right child for an
+internal node.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ The leaf values of a tree from left to right.
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Accumulator traversal of a segment tree](to-list-aux.md)
 
 ## Sources
 

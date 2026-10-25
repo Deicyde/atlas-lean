@@ -6,30 +6,37 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.exists_meets_of_run_eq_none
 ---
 
-# Soundness
+# Soundness of the any-segments-intersect sweep
 
-**Soundness**: when the sweep reports an intersection, two distinct segments meet.
+**Soundness of the any-segments-intersect sweep.** Let $S$ be a family of $n$ segments in
+$K^2$, $K$ a linearly ordered field, and split the sorted list of their $2n$ endpoint events as
+$P$ followed by $Q$. If running the sweep over $P$ from the empty status list succeeds with status
+list $T$, and running it over $Q$ from $T$ reports an intersection, then there are two distinct
+indices $i \ne j$ such that segments $i$ and $j$ meet.
+
+In particular, when the sweep over all the events reports an intersection, two distinct segments
+meet.
 
 ## Depends on
 
-- [Event](event.md)
-- [Meets](meets.md)
-- [Events](events.md)
-- [Run](run.md)
+- [Sweep event](event.md)
+- [Meeting segments](meets.md)
+- [Sorted sweep events](events.md)
+- [Running the sweep over a list of events](run.md)
 
 ## Proof depends on
 
-- [Below](below.md)
-- [Key](key.md)
-- [Left](left.md)
+- [Segment strictly below a point](below.md)
+- [Sweep order on endpoint events](key.md)
+- [Left endpoint of a segment](left.md)
 - [Left mem of right mem](left-mem-of-right-mem.md)
-- [Right](right.md)
-- [Run mem iff](run-mem-iff.md)
-- [Step](step.md)
-- [Take While append cons tail drop While](take-while-append-cons-tail-drop-while.md)
-- [Test](test.md)
-- [Test Opt](test-opt.md)
-- [Test Pair](test-pair.md)
+- [Right endpoint of a segment](right.md)
+- [The sweep status holds the active segments](run-mem-iff.md)
+- [One step of the sweep](step.md)
+- [Splitting a list at the first occurrence of a member](take-while-append-cons-tail-drop-while.md)
+- [Intersection test for two input segments](test.md)
+- [Testing a segment against an optional neighbour](test-opt.md)
+- [Testing the neighbours of a deleted segment](test-pair.md)
 - [Segments Intersect ret eq true iff](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
 
 ## Sources

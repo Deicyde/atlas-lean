@@ -6,26 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.cut
 ---
 
-# Cut
+# Cutting off the subtree at a vertex
 
-Detach the subtree rooted at `x` from its represented tree (the rooted
-`cut`): the result contains the detached subtree itself, rooted at `x`,
-and the remainder of the old tree with that subtree pruned off
-(`pruneAt`), keeping every remaining edge. When `x` is the root of its
-tree the remainder is empty and only the detached tree remains. Preferred
-edges are reset.
+**Cutting off the subtree at a vertex.** Cutting at a vertex $x$ resets the preferred edges
+of the state to the empty list and changes its forest as follows. If no tree of the forest
+contains $x$, the forest is unchanged. Otherwise let $T$ be the first tree containing $x$ and
+$S$ the first subtree of $T$ rooted at $x$ in preorder. Every tree containing $x$ is removed from
+the forest, and two trees are appended at the end: first the remainder of $T$ with every subtree
+rooted at $x$ pruned off, then $S$. When $x$ is the root of $T$ nothing remains, and only $S$ is
+appended.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Find Subtree](find-subtree.md)
-- [Find Tree](find-tree.md)
-- [Prune At](prune-at.md)
-- [Remove Tree](remove-tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Subtree rooted at a vertex](find-subtree.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Pruning the subtrees rooted at a vertex](prune-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
 
 ## Sources
 

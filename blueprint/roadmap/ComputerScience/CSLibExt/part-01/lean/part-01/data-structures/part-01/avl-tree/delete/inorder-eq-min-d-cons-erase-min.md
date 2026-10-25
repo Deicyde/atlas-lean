@@ -28,8 +28,8 @@ identity holds for every choice of default.
 - [AVL rebalancing](../../avl-tree-2/balance.md)
 - [AVL rebalancing preserves the inorder traversal](../../avl-tree-2/inorder-balance.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

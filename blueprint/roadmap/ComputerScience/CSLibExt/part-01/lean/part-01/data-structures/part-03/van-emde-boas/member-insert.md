@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.member_insert
 ---
 
-# Member insert
+# Membership after insertion into a van Emde Boas tree
 
-Membership after insertion: the new element, or a previous member.
+**Membership after insertion into a van Emde Boas tree.** For every two-level van Emde Boas
+tree $t$ over the universe $\{0, 1, \dots, m^2 - 1\}$ and all $x, y$ in that universe, $y$ is a
+member of the tree obtained by inserting $x$ into $t$ if and only if $y = x$ or $y$ is a member
+of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Insert](insert.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Insertion into a van Emde Boas tree](insert.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Proof depends on
 
-- [Member insert of ne](member-insert-of-ne.md)
-- [Member insert self](member-insert-self.md)
+- [Insertion into a van Emde Boas tree leaves other elements unchanged](member-insert-of-ne.md)
+- [An inserted element is a member of a van Emde Boas tree](member-insert-self.md)
 
 ## Sources
 

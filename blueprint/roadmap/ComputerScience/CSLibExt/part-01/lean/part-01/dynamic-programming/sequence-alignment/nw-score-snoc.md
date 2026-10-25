@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.nwScore_snoc
 
 ## Depends on
 
-- [Nw Score](nw-score.md)
+- [Needleman–Wunsch score](nw-score.md)
 
 ## Proof depends on
 

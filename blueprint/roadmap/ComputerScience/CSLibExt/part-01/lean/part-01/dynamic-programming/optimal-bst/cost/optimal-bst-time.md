@@ -7,13 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OptimalBST.optimalBST_time
 ---
 
-# Optimal BST time
+# Exact running time of the optimal BST procedure
 
-The coupled execution charges exactly one tick for each candidate.
+**Exact running time of the optimal BST procedure.** Let $R$ be a linearly ordered additive
+commutative monoid in which addition is monotone. For every natural number $n$ and all
+$p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$, the running time of the optimal binary search tree
+procedure on these weights, which is the number of candidate roots it examines, equals
+$\binom{n+2}{3}$.
 
 ## Depends on
 
-- [Optimal BST](../basic/optimal-bst.md)
+- [Optimal binary search tree procedure](../basic/optimal-bst.md)
 
 ## Sources
 

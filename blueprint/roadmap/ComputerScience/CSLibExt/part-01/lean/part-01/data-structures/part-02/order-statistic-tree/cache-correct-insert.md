@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_insert
 ---
 
-# Cache Correct insert
+# Insertion preserves correct size caches
 
-Insertion preserves correct caches.
+**Insertion preserves correct size caches.** Let $\alpha$ be a linearly ordered type, let
+$k \in \alpha$, and let $T$ be an order-statistic tree over $\alpha$ whose cached subtree sizes
+are correct at every node. Then the tree obtained by inserting $k$ into $T$ also has correct
+cached subtree sizes at every node.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Correct size caches](cache-correct.md)
+- [Order-statistic tree](tree.md)
+- [Insertion into an order-statistic tree](insert.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Cache Correct node](cache-correct-node.md)
-- [Node](node.md)
+- [Order-statistic tree node entry](entry.md)
+- [The cache-computing node constructor preserves correct size caches](cache-correct-node.md)
+- [Order-statistic tree node with computed cache](node.md)
 
 ## Sources
 

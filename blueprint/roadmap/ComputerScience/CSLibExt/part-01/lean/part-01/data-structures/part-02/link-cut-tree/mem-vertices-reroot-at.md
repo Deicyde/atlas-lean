@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_rerootAt
 ---
 
-# Mem vertices reroot At
+# Rerooting preserves the vertex set
 
-Rerooting keeps exactly the same vertex set.
+**Rerooting preserves the vertex set.** Let $t$ be a rooted tree and $x$ a vertex. If
+rerooting $t$ at $x$ yields the tree $t'$, then a vertex lies in $t'$ if and only if it
+lies in $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Reroot At](reroot-at.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Graft At](graft-at.md)
-- [Mem vertices graft At](mem-vertices-graft-at.md)
-- [Reroot At eq none of not mem](reroot-at-eq-none-of-not-mem.md)
-- [Root graft At](root-graft-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Grafting a tree below a vertex](graft-at.md)
+- [Vertices after grafting](mem-vertices-graft-at.md)
+- [Rerooting fails at an absent vertex](reroot-at-eq-none-of-not-mem.md)
+- [Grafting keeps the root](root-graft-at.md)
 
 ## Sources
 

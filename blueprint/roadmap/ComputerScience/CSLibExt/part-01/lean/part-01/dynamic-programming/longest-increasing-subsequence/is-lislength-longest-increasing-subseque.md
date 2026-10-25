@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.isLISLength_longestIncreasingSubsequence
 ---
 
-# Is LISLength longest Increasing Subsequence
+# The quadratic LIS program attains the optimal length
 
-The length of the returned subsequence is the optimum.
+**The quadratic LIS program attains the optimal length.** For every list $xs$ over a preorder,
+the length of the list returned by the quadratic longest-increasing-subsequence program on $xs$ is
+the length of a longest strictly increasing subsequence of $xs$.
 
 ## Depends on
 
-- [Is LISLength](is-lislength.md)
-- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+- [Length of a longest increasing subsequence](is-lislength.md)
+- [Longest increasing subsequence by dynamic programming](longest-increasing-subsequence.md)
 
 ## Proof depends on
 
-- [Longest Increasing Subsequence spec](longest-increasing-subsequence-spec.md)
+- [Correctness of the quadratic LIS program](longest-increasing-subsequence-spec.md)
 
 ## Sources
 

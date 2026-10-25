@@ -6,18 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.member
 ---
 
-# Member
+# Membership query of a grouped y-fast trie
 
-Membership: locate the least representative at least `x`, then scan its group.
+**Membership query of a grouped y-fast trie.** Given a grouped y-fast trie $t$ over $w$-bit
+keys and a key $x$, the query first finds a representative $r$: $r = x$ if the membership probe of
+the representative x-fast trie accepts $x$, and otherwise $r$ is the successor of $x$ in the
+representative trie. If there is no such $r$, the query returns false. Otherwise it returns
+whether $x$ belongs to the group owned by $r$, namely the first group of $t$ whose last element is
+$r$ (the empty list if there is none).
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Proof depends on
 
-- [Find Group](find-group.md)
-- [Rep Ge](rep-ge.md)
+- [Group of a representative](find-group.md)
+- [Least representative at or above a key](rep-ge.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.stored_insert
 ---
 
-# Stored insert
+# Cuckoo insertion stores the inserted binding
 
-A successfully inserted binding is stored in the resulting table.
+**Cuckoo insertion stores the inserted binding.** Let $T$ be a cuckoo hash table with hash
+functions $h_1$ and $h_2$. If inserting (or replacing) the binding $k \mapsto v$ in $T$ with fuel
+$f$ succeeds and returns the table $T'$, then the binding $k \mapsto v$ is stored in some slot of
+either table of $T'$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Stored](stored.md)
-- [Insert](insert.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Cuckoo hash insertion](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
-- [Slot Has Key](slot-has-key.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

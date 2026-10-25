@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.karatsuba_middle
 ---
 
-# Karatsuba middle
+# Karatsuba's middle coefficient
 
-The middle coefficient: from the three products, the sign rule recovers `a * d + b * c`.
+**Karatsuba's middle coefficient.** For all natural numbers $a, b, c, d$, write
+$P = |a - b| \cdot |c - d|$. If $b \le a$ holds exactly when $d \le c$, then
+$ac + bd - P = ad + bc$, where the subtraction is truncated at $0$; otherwise
+$ac + bd + P = ad + bc$.
+
+So the cross term $ad + bc$ is recovered from the three products $ac$, $bd$ and $P$.
 
 ## Depends on
 

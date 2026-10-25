@@ -6,33 +6,35 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin
 ---
 
-# Delete Min
+# Deleting the minimum of a Fibonacci heap
 
-Remove and return the minimum value. The children of the minimum tree become roots
-and the root list is consolidated; the new cached minimum is the minimum root of the
-consolidated forest.
+**Deleting the minimum of a Fibonacci heap.** If the root list of the heap is empty, the result
+is nothing. Otherwise the first tree of the root list whose root is minimal is removed, and the
+result is its root value together with the heap whose root list is the consolidation of the
+removed tree's children followed by the remaining trees, and whose cached minimum is the minimum
+root of this consolidated forest.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
-- [Consolidate](consolidate.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Sublists of valid Fibonacci forests are valid](sublist.md)
+- [Consolidation of a forest](consolidate.md)
 - [Elements](elements-2.md)
-- [Min Root](min-root.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid append](valid-append.md)
-- [Valid consolidate](valid-consolidate.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Valid](valid.md)
-- [Child valid](child-valid.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Minimum root of a forest](min-root.md)
+- [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
+- [Minimum-tree removal in a Fibonacci forest](remove-min-tree-spec.md)
+- [Concatenation preserves validity of Fibonacci forests](valid-append.md)
+- [Consolidation preserves validity](valid-consolidate.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Valid Fibonacci trees](valid.md)
+- [Children of a valid Fibonacci tree are valid](child-valid.md)
+- [Children of a Fibonacci tree](children.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

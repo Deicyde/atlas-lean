@@ -7,18 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv.refl
 ---
 
-# Refl
+# Reflexivity of trie lookup equivalence
 
-Lookup equivalence is reflexive.
+**Reflexivity of trie lookup equivalence.** Every trie is lookup-equivalent to itself.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Lookup Equiv](lookup-equiv.md)
+- [Lookup equivalence of tries](lookup-equiv.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

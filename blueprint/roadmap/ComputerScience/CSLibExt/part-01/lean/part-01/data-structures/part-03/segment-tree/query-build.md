@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.query_build
 ---
 
-# Query build
+# Range queries on a built segment tree
 
-A range query on a tree built from a list is the sum of the list slice.
+**Range queries on a built segment tree.** Let $L = (x_0, \dots, x_{n-1})$ be a list with
+entries in an additive monoid and let $l, r$ be natural numbers. The range query over $[l, r)$ on
+the segment tree built from $L$ returns $\sum_{l \le k < \min(r, n)} x_k$, the sum taken in
+increasing order of $k$; it is $0$ when $\min(r, n) \le l$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Query](query.md)
+- [Building a segment tree from a list](build.md)
+- [Range query on a segment tree](query.md)
 
 ## Proof depends on
 
-- [Query eq](query-eq.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
-- [Valid build](valid-build.md)
+- [Correctness of range queries on a valid segment tree](query-eq.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Building a segment tree preserves the list](to-list-build.md)
+- [Built segment trees are valid](valid-build.md)
 
 ## Sources
 

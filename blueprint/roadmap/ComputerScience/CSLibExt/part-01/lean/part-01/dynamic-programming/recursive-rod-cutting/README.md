@@ -4,6 +4,6 @@ navigation: module
 
 # Recursive Rod Cutting
 
-- [Recursive Cut Rod](recursive-cut-rod.md)
-- [Recursive Cut Rod correct](recursive-cut-rod-correct.md)
-- [Recursive Cut Rod time](recursive-cut-rod-time.md)
+- [Recursive CUT-ROD](recursive-cut-rod.md)
+- [Correctness of recursive CUT-ROD](recursive-cut-rod-correct.md)
+- [Running time of recursive CUT-ROD](recursive-cut-rod-time.md)

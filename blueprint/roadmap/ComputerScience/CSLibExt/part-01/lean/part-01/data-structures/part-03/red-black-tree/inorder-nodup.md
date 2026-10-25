@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.inorder_nodup
 ---
 
-# Inorder nodup
+# Ordered red-black trees have duplicate-free inorder traversals
 
-The inorder traversal of an ordered tree has no duplicate keys.
+**Ordered red-black trees have duplicate-free inorder traversals.** For a red-black tree $t$
+over a linearly ordered type that is ordered (every left key is smaller and every right key
+larger, recursively), the inorder traversal of $t$ contains no key twice.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Inorder](inorder.md)
+- [Ordered red-black tree](ordered.md)
+- [Red-black tree data type](tree.md)
+- [Inorder traversal of a red-black tree](inorder.md)
 
 ## Proof depends on
 
-- [Ordered inorder](ordered-inorder.md)
+- [The inorder traversal of an ordered red-black tree is strictly increasing](ordered-inorder.md)
 
 ## Sources
 

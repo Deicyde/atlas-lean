@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_least
 ---
 
-# Min? least
+# The van Emde Boas minimum is a lower bound
 
-In a valid tree, the element returned by `min?` precedes every member.
+**The van Emde Boas minimum is a lower bound.** Let $t$ be a valid two-level van Emde Boas
+tree over the universe $\{0, \dots, m^2 - 1\}$. If the minimum query on $t$ returns $x$, then
+$x \le y$ for every $y$ stored in $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Min?](min.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Minimum query of a van Emde Boas tree](min.md)
 
 ## Sources
 

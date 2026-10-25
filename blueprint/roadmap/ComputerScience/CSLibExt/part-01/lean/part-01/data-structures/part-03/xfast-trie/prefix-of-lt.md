@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.prefixOf_lt
 ---
 
-# Prefix Of lt
+# A prefix fits in its length
 
-An `l`-bit prefix fits in `l` bits.
+**A prefix fits in its length.** For natural numbers $l \le w$ and a $w$-bit key
+$x < 2^w$, the length-$l$ prefix of $x$ is less than $2^l$.
 
 ## Depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

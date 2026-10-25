@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.Adjacent.symm
 ---
 
-# Symm
+# Adjacency in a tree is symmetric
 
-Adjacency is symmetric.
+**Adjacency in a tree is symmetric.** For every rooted ordered tree $T$ and vertices $a$ and
+$b$, if $a$ and $b$ are adjacent in $T$ (joined by a parent-child edge in either direction), then
+$b$ and $a$ are adjacent in $T$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
 
 ## Sources
 

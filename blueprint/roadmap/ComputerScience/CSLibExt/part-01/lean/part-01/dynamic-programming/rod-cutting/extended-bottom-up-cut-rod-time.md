@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_time
 ---
 
-# Extended Bottom Up Cut Rod time
+# Running time of extended bottom-up rod cutting
 
-The saved tables execute exactly the triangular number of candidate events.
+**Running time of extended bottom-up rod cutting.** Let $\alpha$ be an additive commutative
+monoid with a linear order. For every vector of $n$ prices in $\alpha$, the extended bottom-up
+rod-cutting algorithm has cost exactly $n(n+1)/2$, whatever the prices are.
 
 ## Depends on
 
-- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Extended bottom-up rod cutting](extended-bottom-up-cut-rod.md)
 
 ## Proof depends on
 
-- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
-- [Bottom Up Cut Rod time](bottom-up-cut-rod-time.md)
+- [Bottom-up rod cutting](bottom-up-cut-rod.md)
+- [Exact cost of bottom-up rod cutting](bottom-up-cut-rod-time.md)
 
 ## Sources
 

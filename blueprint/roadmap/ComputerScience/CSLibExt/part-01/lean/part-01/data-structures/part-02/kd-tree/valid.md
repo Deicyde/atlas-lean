@@ -6,15 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.Valid
 ---
 
-# Valid
+# Kd invariant
 
-The kd invariant: at a node with axis `a` and split value `s`, every point on
-the left has `a`-coordinate at most `s` and every point on the right has
-`a`-coordinate at least `s`.
+**Kd invariant.** A kd-tree satisfies the kd invariant when at every split node, with axis $a$
+and split value $s$, every point of the left subtree has $a$-coordinate at most $s$ and every
+point of the right subtree has $a$-coordinate at least $s$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Sources
 

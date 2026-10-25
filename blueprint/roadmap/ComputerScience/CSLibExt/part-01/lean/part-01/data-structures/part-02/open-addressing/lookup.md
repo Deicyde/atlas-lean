@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.lookup
 ---
 
-# Lookup
+# Lookup in an open-addressing table
 
-Looks up a key along its probe sequence, using at most `m` probes. Returns the value
-at the first probed slot holding the key, and `none` if an empty slot or the probe
-budget is reached first.
+**Lookup in an open-addressing table.** Let $T$ be an open-addressing hash table with $m$ slots
+and probe sequence $p$, and let $k$ be a key. The lookup of $k$ in $T$ inspects the slots
+$p(k, 0), p(k, 1), \dots, p(k, m - 1)$ in this order. It returns the value $v$ of the first
+inspected slot that holds a pair $(k, v)$, and returns nothing if an empty slot is inspected
+first or if none of the $m$ inspected slots holds the key $k$.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
+- [Open-addressing hash table](open-addressing.md)
 
 ## Proof depends on
 
-- [Lookup Aux](lookup-aux.md)
+- [Bounded lookup scan](lookup-aux.md)
 
 ## Sources
 

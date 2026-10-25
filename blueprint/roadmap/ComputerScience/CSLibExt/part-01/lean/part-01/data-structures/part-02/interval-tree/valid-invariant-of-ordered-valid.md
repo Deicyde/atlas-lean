@@ -7,24 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_of_orderedValid
 ---
 
-# Valid Invariant of ordered Valid
+# The ordering check implies interval validity
 
-The executable ordering check also validates every stored interval.
+**The ordering check implies interval validity.** Let $T$ be an interval tree and let
+$\ell$ and $u$ be optional lower and upper key bounds. If the executable check of $T$ with
+bounds $\ell$ and $u$, which tests that every key lies strictly between its bounds and that every
+stored interval passes the Boolean validity test, returns true, then every interval stored in
+$T$ is valid, that is, its low endpoint is at most its high endpoint.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid Invariant](valid-invariant.md)
-- [Ordered Valid](ordered-valid.md)
+- [Interval tree](tree.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
+- [Ordered-and-valid check for interval trees](ordered-valid.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
 - [Interval](interval.md)
-- [Valid](valid.md)
-- [Valid](valid-2.md)
-- [Key Between](key-between.md)
+- [Valid interval](valid.md)
+- [Boolean interval validity test](valid-2.md)
+- [Key between optional bounds](key-between.md)
 
 ## Sources
 

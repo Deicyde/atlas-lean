@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_make
 ---
 
-# Size make
+# A newly made catenable heap has size zero
 
-`make` has size zero.
+**A newly made catenable heap has size zero.** The heap returned by the operation that
+creates an empty catenable heap has size $0$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
-- [Size](size.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
+- [Size of a catenable heap](size.md)
 
 ## Sources
 

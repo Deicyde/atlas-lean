@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.not_valid_link_same_root
 ---
 
-# Not valid link same root
+# Linking two copies of a single vertex is not valid
 
-Without disjointness, `link` need not be valid: linking two singleton
-trees with the same root duplicates that vertex.
+**Linking two copies of a single vertex is not valid.** For every vertex $r$, the link of the
+single-vertex tree with root $r$ and another single-vertex tree with root $r$ is not valid, since
+the vertex $r$ occurs twice in it. Hence the link of two valid trees need not be valid when their
+vertex sets are not disjoint.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
-- [Link](link.md)
+- [Rooted ordered tree](tree.md)
+- [Valid Euler-tour tree](valid.md)
+- [Linking two rooted trees](link.md)
 
 ## Proof depends on
 
 - [Vertices](vertices.md)
-- [Vertices node](vertices-node.md)
+- [Preorder vertex list of a node](vertices-node.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.suffix_of_snoc
 ---
 
-# Suffix of snoc
+# Suffixes of a list with an element appended
 
-A suffix of `xs ++ [a]` is either empty or a suffix of `xs` with `a` appended.
+**Suffixes of a list with an element appended.** If $s$ is a suffix of the list obtained by
+appending an element $a$ at the end of a list $xs$, then either $s$ is empty, or there is a
+suffix $s'$ of $xs$ such that $s$ is $s'$ with $a$ appended at the end.
 
 ## Depends on
 

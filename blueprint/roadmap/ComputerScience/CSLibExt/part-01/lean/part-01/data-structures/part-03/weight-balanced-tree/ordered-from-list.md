@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.ordered_fromList
 ---
 
-# Ordered from List
+# Weight-balanced trees built from a list are ordered
 
-Building a tree by insertion always produces an ordered tree.
+**Weight-balanced trees built from a list are ordered.** Let the keys carry a linear order.
+For every list $xs$, the weight-balanced tree built from $xs$ by repeated insertion is ordered,
+that is, a strict binary search tree.
 
 ## Depends on
 
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [From List](from-list.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Weight-balanced tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Ordered insert](ordered-insert.md)
+- [Weight-balanced insertion preserves the search-tree order](ordered-insert.md)
 
 ## Sources
 

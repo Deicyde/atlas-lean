@@ -15,7 +15,7 @@ without strict sortedness it fails, e.g. `orderedInsert 2 [3, 2] = [2, 3, 2]`.
 
 ## Depends on
 
-- [Ordered Insert](ordered-insert.md)
+- [Ordered insertion into a list](ordered-insert.md)
 
 ## Sources
 

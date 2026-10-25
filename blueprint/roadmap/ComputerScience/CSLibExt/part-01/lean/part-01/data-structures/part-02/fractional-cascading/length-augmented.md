@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_augmented
 ---
 
-# Length augmented
+# Number of augmented catalogs
 
-There is one augmented catalog per catalog.
+**Number of augmented catalogs.** For every list $cs$ of catalogs over a linearly ordered
+type, the list of augmented catalogs built from $cs$ has the same length as $cs$: there is one
+augmented catalog per catalog.
 
 ## Depends on
 
-- [Augmented](augmented.md)
+- [Augmented catalogs](augmented.md)
 
 ## Sources
 

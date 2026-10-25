@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.valid_nil
 ---
 
-# Valid nil
+# The empty Fibonacci forest is valid
 
-The empty forest is valid.
+**The empty Fibonacci forest is valid.** Let $\alpha$ carry a relation $\le$. The empty
+forest, containing no Fibonacci trees with values in $\alpha$, is valid.
 
 ## Depends on
 
-- [Valid](valid-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
+- [Valid Fibonacci trees](valid.md)
 
 ## Sources
 

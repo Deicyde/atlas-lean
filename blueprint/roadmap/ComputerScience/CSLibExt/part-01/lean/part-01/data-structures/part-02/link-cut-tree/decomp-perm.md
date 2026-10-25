@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.decomp_perm
 ---
 
-# Decomp perm
+# Preferred paths permute the vertex list
 
-The decomposition of a tree partitions its vertices: the flattened
-paths are a permutation of the vertex list, for every preferred-edge list.
+**Preferred paths permute the vertex list.** For every list of preferred edges, the downward
+preferred path of a tree followed by the concatenation of the other paths of its preferred-path
+decomposition is a permutation of the vertex list of the tree.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Decomp](decomp.md)
+- [Preferred-path decomposition of a tree](decomp.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

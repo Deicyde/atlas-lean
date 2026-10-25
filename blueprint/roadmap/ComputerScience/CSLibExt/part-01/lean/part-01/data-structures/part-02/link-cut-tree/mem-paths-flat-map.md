@@ -7,23 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.mem_paths_flatMap
 ---
 
-# Mem paths flat Map
+# Preferred paths cover exactly the vertices of the forest
 
-The decomposition partitions the vertex set of the represented forest:
-a vertex lies on some preferred path exactly when it is in the forest. This
-holds for every state, with no validity hypothesis.
+**Preferred paths cover exactly the vertices of the forest.** For every link-cut tree state
+$s$ and every vertex $v$, $v$ lies on some path of the preferred-path decomposition of $s$ if
+and only if $v$ is a vertex of some tree of the represented forest of $s$. No validity
+hypothesis on $s$ is needed.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [State](state.md)
-- [Paths](paths.md)
+- [Link-cut tree state](state.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
 
 ## Proof depends on
 
-- [Perm tree Paths flat Map](perm-tree-paths-flat-map.md)
-- [Tree Paths](tree-paths.md)
+- [The preferred paths of a tree rearrange its vertex list](perm-tree-paths-flat-map.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Sources
 

@@ -7,24 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.contains_delete_self
 ---
 
-# Contains delete self
+# Search misses a key deleted from an order-statistic tree
 
-Comparison search does not find the deleted key in the result.
+**Search misses a key deleted from an order-statistic tree.** Let $\alpha$ be a linearly ordered
+type, $k \in \alpha$ and $T$ an ordered order-statistic tree over $\alpha$ (at every node, all keys
+of the left subtree are smaller and all keys of the right subtree are larger than the node's
+key). Comparison search for $k$ in the tree obtained by deleting $k$ from $T$ returns false.
 
 ## Depends on
 
-- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/tree.md)
-- [Contains](../../../part-02/order-statistic-tree/contains.md)
-- [Delete](delete.md)
+- [Ordered order-statistic tree](../../../part-02/order-statistic-tree/ordered.md)
+- [Order-statistic tree](../../../part-02/order-statistic-tree/tree.md)
+- [Search in an order-statistic tree](../../../part-02/order-statistic-tree/contains.md)
+- [Deletion from an order-statistic tree](delete.md)
 
 ## Proof depends on
 
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Contains eq true iff](../../../part-02/order-statistic-tree/contains-eq-true-iff.md)
-- [Erase](../../../part-02/order-statistic-tree/erase.md)
-- [Not mem delete](not-mem-delete.md)
-- [Ordered delete](ordered-delete.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Search in an ordered order-statistic tree is correct](../../../part-02/order-statistic-tree/contains-eq-true-iff.md)
+- [Erasing the size caches of an order-statistic tree](../../../part-02/order-statistic-tree/erase.md)
+- [Deleted key is absent from an order-statistic tree](not-mem-delete.md)
+- [Deletion preserves order in an order-statistic tree](ordered-delete.md)
 
 ## Sources
 

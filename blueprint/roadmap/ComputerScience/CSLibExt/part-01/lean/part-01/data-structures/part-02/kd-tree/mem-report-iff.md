@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.mem_report_iff
 ---
 
-# Mem report iff
+# Range report of a valid kd-tree
 
-Membership in the report of a valid tree, stated on its point list.
+**Range report of a valid kd-tree.** Let $t$ be a kd-tree over $\mathbb{Z}^d$ that
+satisfies the kd invariant, and let $lo, hi, p \in \mathbb{Z}^d$. Then $p$ occurs in the range
+report of $t$ for the box $[lo, hi]$ if and only if $p$ is one of the points stored in $t$ and
+$lo_i \le p_i \le hi_i$ for every coordinate $i$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
-- [Valid](valid.md)
-- [In Box](in-box.md)
-- [Report](report.md)
-- [To List](to-list.md)
+- [Kd-trees](kd-tree.md)
+- [Kd invariant](valid.md)
+- [Membership in an axis-aligned box](in-box.md)
+- [Orthogonal range report of a kd-tree](report.md)
+- [Point list of a kd-tree](to-list.md)
 
 ## Proof depends on
 
-- [Report eq filter](report-eq-filter.md)
+- [Correctness of the kd-tree range report](report-eq-filter.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.Stored
 ---
 
-# Stored
+# Bindings stored in a perfect hash table
 
-Whether some secondary slot, in any bucket, holds the binding `(key, value)`.
+**Bindings stored in a perfect hash table.** A key $k$ and a value $v$ are stored in a
+two-level perfect hash table $T$ when some secondary slot, in some bucket of $T$, holds the
+binding $(k, v)$.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
+- [Two-level perfect hash table](perfect-hashing.md)
 
 ## Sources
 

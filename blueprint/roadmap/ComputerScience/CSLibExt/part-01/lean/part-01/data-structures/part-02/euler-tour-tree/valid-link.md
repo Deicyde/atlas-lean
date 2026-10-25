@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.valid_link
 ---
 
-# Valid link
+# Linking valid trees with disjoint vertices gives a valid tree
 
-Linking two valid trees with disjoint vertex sets stays valid: the
-forest precondition for reading `link` as a dynamic-forest link.
+**Linking valid trees with disjoint vertices gives a valid tree.** Let $t_1$ and $t_2$ be
+valid trees such that no vertex of $t_1$ is a vertex of $t_2$. Then the link of $t_1$ and $t_2$,
+that is, $t_1$ with $t_2$ added as the last child subtree of its root, is valid.
+
+This is the forest precondition for reading the link as a link of two trees in a dynamic
+forest.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
-- [Link](link.md)
+- [Rooted ordered tree](tree.md)
+- [Valid Euler-tour tree](valid.md)
+- [Linking two rooted trees](link.md)
 - [Vertices](vertices.md)
 
 ## Proof depends on
 
-- [Vertices node](vertices-node.md)
+- [Preorder vertex list of a node](vertices-node.md)
 
 ## Sources
 

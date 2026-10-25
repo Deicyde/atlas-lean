@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.find_union_of_unrelated
 ---
 
-# Find union of unrelated
+# Union preserves the representatives of unrelated classes
 
-Every class outside the first selected class keeps its representative:
-if `z` is not equivalent to `x`, then `union` with any `y` preserves the
-representative of `z` (no hypothesis on `y` is needed).
+**Union preserves the representatives of unrelated classes.** Let $F$ be a parent forest and
+let $x, y, z$ be vertices of $F$. If $z$ is not equivalent to $x$ in $F$, then find returns the
+same root for $z$ in the forest obtained from $F$ by the union of $x$ and $y$ as in $F$.
+
+No hypothesis on $y$ is needed.
 
 ## Depends on
 
-- [Equivalent](equivalent.md)
-- [Forest](forest.md)
-- [Find](find.md)
-- [Union](union.md)
+- [Equivalent vertices of a parent forest](equivalent.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Root of a vertex in a parent forest](find.md)
+- [Union in a union-find forest](union.md)
 
 ## Proof depends on
 
-- [Find union](find-union.md)
+- [Representatives after a union](find-union.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.sum_le_of_maxSubarraySum
 ---
 
-# Sum le of max Subarray Sum
+# Kadane's algorithm bounds every nonempty run
 
-Every nonempty contiguous run sums to at most the returned value.
+**Kadane's algorithm bounds every nonempty run.** Let $\alpha$ be a linearly ordered type
+with an additive monoid structure in which $b \le c$ implies $b + a \le c + a$. If Kadane's
+algorithm returns the value $m$ on a list $L$ over $\alpha$, then every nonempty contiguous run
+of $L$ has sum at most $m$.
 
 ## Depends on
 
-- [Max Subarray Sum](max-subarray-sum.md)
+- [Kadane's algorithm](max-subarray-sum.md)
 
 ## Proof depends on
 
-- [Is Max Subarray Sum](is-max-subarray-sum.md)
-- [Max Subarray Sum ret eq some iff](max-subarray-sum-ret-eq-some-iff.md)
+- [Being the maximum subarray sum](is-max-subarray-sum.md)
+- [Correctness of Kadane's algorithm](max-subarray-sum-ret-eq-some-iff.md)
 
 ## Sources
 

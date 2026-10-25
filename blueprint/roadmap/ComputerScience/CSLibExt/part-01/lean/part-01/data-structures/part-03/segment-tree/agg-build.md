@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.agg_build
 ---
 
-# Agg build
+# Aggregate of a built segment tree
 
-The root aggregate of a tree built from a list is the sum of that list.
+**Aggregate of a built segment tree.** For every list $L$ with entries in an additive
+monoid, the aggregate of the segment tree built from $L$ equals the sum of the entries of $L$,
+taken from left to right.
 
 ## Depends on
 
-- [Agg](agg.md)
-- [Build](build.md)
+- [Aggregate of a segment tree](agg.md)
+- [Building a segment tree from a list](build.md)
 
 ## Proof depends on
 
-- [Agg eq sum to List](agg-eq-sum-to-list.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
-- [Valid build](valid-build.md)
+- [Aggregate of a valid segment tree](agg-eq-sum-to-list.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Building a segment tree preserves the list](to-list-build.md)
+- [Built segment trees are valid](valid-build.md)
 
 ## Sources
 

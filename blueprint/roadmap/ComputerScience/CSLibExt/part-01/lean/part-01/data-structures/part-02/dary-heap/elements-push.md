@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.elements_push
 ---
 
-# Elements push
+# Insertion into a d-ary heap adds one occurrence
 
-Insertion adds exactly one multiset occurrence.
+**Insertion into a d-ary heap adds one occurrence.** For a $d$-ary min-heap $h$ over a
+linearly ordered type and a value $x$, the multiset of elements of the heap obtained by inserting
+$x$ into $h$ is the multiset of elements of $h$ with one more occurrence of $x$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
-- [Push](push.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
+- [Insertion into a $d$-ary heap](push.md)
 
 ## Proof depends on
 
-- [Dary Sift Up](dary-sift-up.md)
-- [Dary Sift Up perm](dary-sift-up-perm.md)
+- [$d$-ary sift-up](dary-sift-up.md)
+- [Sifting up permutes the array](dary-sift-up-perm.md)
 
 ## Sources
 

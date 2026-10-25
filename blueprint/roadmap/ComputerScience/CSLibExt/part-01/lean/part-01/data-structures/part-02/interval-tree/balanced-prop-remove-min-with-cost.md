@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_removeMinWithCost
 ---
 
-# Balanced Prop remove Min With Cost
+# Removing the minimum preserves AVL balance in an interval tree
 
-Removing the minimum preserves AVL balance; the height drops by at
-most one.
+**Removing the minimum preserves AVL balance in an interval tree.** Let $T$ be an interval tree
+that is AVL balanced with exact stored heights. If removing the leftmost entry of $T$ succeeds and
+returns an entry $m$, a remaining tree $R$ and a cost $c$, then $R$ is AVL balanced with exact
+stored heights, and the height of $R$ is either the height of $T$ or one less.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
-- [Balanced Prop](balanced-prop.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
+- [AVL balance of an interval tree](balanced-prop.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
 
 ## Proof depends on
 
-- [Balanced Prop rebalance mk Node](balanced-prop-rebalance-mk-node.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
+- [Rebalancing a rebuilt interval-tree node restores AVL balance](balanced-prop-rebalance-mk-node.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
 
 ## Sources
 

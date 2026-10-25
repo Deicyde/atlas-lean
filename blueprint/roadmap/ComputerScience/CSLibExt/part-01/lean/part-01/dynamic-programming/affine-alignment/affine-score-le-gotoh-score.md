@@ -8,27 +8,30 @@ lean: Cslib.Algorithms.Lean.affineScore_le_gotohScore
 
 # Gotoh is optimal
 
-**Gotoh is optimal**: every valid alignment scores at most `gotohScore`.
+**Gotoh is optimal.** Let $\sigma$ be an integer substitution score, $o$ an integer gap-open
+cost and $e$ an integer gap-extend cost. For all sequences $x$ and $y$ and every valid alignment
+$A$ of $x$ and $y$, the affine-gap score of $A$ is at most the Gotoh score of $x$ and $y$, both
+taken with $\sigma$, $o$ and $e$.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Is Alignment](../sequence-alignment/is-alignment.md)
-- [Affine Score](affine-score.md)
-- [Gotoh Score](gotoh-score.md)
+- [Valid alignment of two sequences](../sequence-alignment/is-alignment.md)
+- [Affine-gap alignment score](affine-score.md)
+- [Gotoh score](gotoh-score.md)
 
 ## Proof depends on
 
-- [Gap State](gap-state.md)
-- [Affine Score Aux](affine-score-aux.md)
-- [Gap Cost](gap-cost.md)
-- [Gotoh Aux](gotoh-aux.md)
-- [Gotoh Cont Gap X](gotoh-cont-gap-x.md)
-- [Gotoh Cont Gap Y](gotoh-cont-gap-y.md)
-- [Gotoh Cont None](gotoh-cont-none.md)
-- [Is Alignment of cons gap X](is-alignment-of-cons-gap-x.md)
-- [Is Alignment of cons gap Y](is-alignment-of-cons-gap-y.md)
-- [Is Alignment of cons match](is-alignment-of-cons-match.md)
+- [Gap states](gap-state.md)
+- [Affine-gap score from a gap state](affine-score-aux.md)
+- [Gap cost](gap-cost.md)
+- [Fuel-bounded Gotoh recursion](gotoh-aux.md)
+- [Gotoh continuation value after a gap in the second sequence](gotoh-cont-gap-x.md)
+- [Gotoh continuation value after a gap in the first sequence](gotoh-cont-gap-y.md)
+- [Gotoh value with no open gap run](gotoh-cont-none.md)
+- [Removing a leading column with a gap in the second sequence](is-alignment-of-cons-gap-x.md)
+- [Removing a leading column with a gap in the first sequence](is-alignment-of-cons-gap-y.md)
+- [Removing a leading match column from a valid alignment](is-alignment-of-cons-match.md)
 
 ## Sources
 

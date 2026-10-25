@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.Valid.empty
 ---
 
-# Empty
+# The empty radix trie is valid
 
-The empty trie is valid.
+**The empty radix trie is valid.** For all types $\alpha$ and $\beta$, the empty radix trie whose
+keys are lists over $\alpha$ and whose values lie in $\beta$ is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Valid radix trie](valid.md)
+- [Empty radix trie](empty.md)
 
 ## Proof depends on
 
-- [Radix Trie](radix-trie.md)
-- [Root Compact](root-compact.md)
+- [Radix trie](radix-trie.md)
+- [Path-compressed root](root-compact.md)
 
 ## Sources
 

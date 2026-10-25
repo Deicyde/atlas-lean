@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.get?_eq_none_of_le
 ---
 
-# Get? eq none of le
+# Lookup beyond the item count returns nothing
 
-Lookup outside the logical range always returns `none`.
+**Lookup beyond the item count returns nothing.** Let $T$ be a dynamic table with item count
+$n$. For every natural number $i \ge n$, the lookup at logical position $i$ in $T$ returns no
+value.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Get?](get.md)
+- [Dynamic table](../basic/table.md)
+- [Lookup in a dynamic table](get.md)
 
 ## Sources
 

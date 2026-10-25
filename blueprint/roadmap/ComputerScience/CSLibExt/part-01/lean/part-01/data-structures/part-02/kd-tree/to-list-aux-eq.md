@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.toListAux_eq
 ---
 
-# To List Aux eq
+# Accumulator traversal of a kd-tree
 
-The accumulator traversal prepends exactly the tree's points.
+**Accumulator traversal of a kd-tree.** For every kd-tree $t$ over $\mathbb{Z}^d$ and
+every list $acc$ of points, the accumulator traversal of $t$ onto $acc$ equals the list of
+points of $t$ in left-to-right order followed by $acc$.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
-- [To List](to-list.md)
-- [To List Aux](to-list-aux.md)
+- [Kd-trees](kd-tree.md)
+- [Point list of a kd-tree](to-list.md)
+- [Kd-tree point traversal with an accumulator](to-list-aux.md)
 
 ## Sources
 

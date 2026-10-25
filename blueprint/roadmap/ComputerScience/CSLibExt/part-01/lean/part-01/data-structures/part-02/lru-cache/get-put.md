@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_put
 ---
 
-# Get put
+# Lookup after insertion
 
-Looking up a key immediately after putting it returns the stored value, provided the capacity
-is positive so the new entry is not itself evicted.
+**Lookup after insertion.** For every LRU cache of positive capacity, every key $k$ and
+every value $v$, looking up $k$ in the cache obtained by putting the binding $(k, v)$
+returns $v$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
-- [Put](put.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
+- [Insertion into an LRU cache](put.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
-- [Get hit](get-hit.md)
+- [Erasing a key from a list of entries](erase-key.md)
+- [A lookup of a stored key returns its value](get-hit.md)
 
 ## Sources
 

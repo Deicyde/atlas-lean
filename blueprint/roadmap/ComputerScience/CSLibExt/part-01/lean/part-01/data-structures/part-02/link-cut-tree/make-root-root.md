@@ -7,32 +7,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.makeRoot_root
 ---
 
-# Make Root root
+# Making a vertex the root installs a tree rooted there
 
-After `makeRoot x`, some represented tree is rooted at `x` and has `x`
-as a vertex: the rerooted old tree of `x`.
+**Making a vertex the root installs a tree rooted there.** Let $s$ be a link-cut tree state
+and $x$ a vertex of its represented forest. After making $x$ the root, some represented tree
+has root $x$ and contains $x$ as a vertex.
+
+That tree is the rerooted old tree of $x$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Root](../euler-tour-tree/root.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [State](state.md)
-- [Mem](mem.md)
-- [Make Root](make-root.md)
+- [Link-cut tree state](state.md)
+- [Vertex of a link-cut tree state](mem.md)
+- [Making a vertex the root in a link-cut tree state](make-root.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Find Tree](find-tree.md)
-- [Graft At](graft-at.md)
-- [Mem vertices graft At](mem-vertices-graft-at.md)
-- [Mem vertices reroot At](mem-vertices-reroot-at.md)
-- [Remove Tree](remove-tree.md)
-- [Reroot At](reroot-at.md)
-- [Reroot At eq none of not mem](reroot-at-eq-none-of-not-mem.md)
-- [Root graft At](root-graft-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Grafting a tree below a vertex](graft-at.md)
+- [Vertices after grafting](mem-vertices-graft-at.md)
+- [Rerooting preserves the vertex set](mem-vertices-reroot-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
+- [Rerooting fails at an absent vertex](reroot-at-eq-none-of-not-mem.md)
+- [Grafting keeps the root](root-graft-at.md)
 
 ## Sources
 

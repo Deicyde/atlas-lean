@@ -20,7 +20,7 @@ minimum degree $t$ equals the sorted insertion of $x$ into the inorder flattenin
 - [B-trees of a given minimum degree](is-btree.md)
 - [Inorder flattening of a B-tree](flatten.md)
 - [B-tree insertion](insert.md)
-- [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
+- [Ordered insertion into a list](../../part-03/ordered-insert/ordered-insert.md)
 
 ## Proof depends on
 

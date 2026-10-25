@@ -6,20 +6,26 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.repGe
 ---
 
-# Rep Ge
+# Least representative at or above a key
 
-The least representative at least `x`: `x` itself when the deepest-level probe
-finds it among the representatives, otherwise the representative successor.
+**Least representative at or above a key.** For a grouped y-fast trie $t$ and a key $x$,
+the result is $x$ itself if the membership test of the representative x-fast trie of $t$ (a
+single probe of its deepest level) reports $x$ as present. Otherwise it is the successor of $x$
+in the representative x-fast trie, that is, the least representative greater than $x$, or
+nothing if there is none.
+
+When $t$ is valid, the result is the least representative $r$ with $x \le r$, and nothing
+when there is no such representative.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Proof depends on
 
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
-- [Member](../../part-03/xfast-trie/member.md)
-- [Successor](../../part-03/xfast-trie/successor.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Membership query in an x-fast trie](../../part-03/xfast-trie/member.md)
+- [Successor in an x-fast trie](../../part-03/xfast-trie/successor.md)
 
 ## Sources
 

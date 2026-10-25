@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.pathLength
 ---
 
-# Path Length
+# Path length to the root
 
-The number of non-root parent edges traversed by `find`.
+**Path length to the root.** For a parent forest $F$ with parent map $p$ and a vertex $x$,
+the path length of $x$ is the number of parent edges followed from $x$ to its root: it is $0$ if
+$p(x) = x$, and otherwise one more than the path length of $p(x)$.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Parent forest with a depth certificate](forest.md)
 
 ## Sources
 

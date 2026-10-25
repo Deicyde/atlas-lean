@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_le
 ---
 
-# Lowbit le
+# The lowest set bit is at most the number
 
-`lowbit n` is at most `n`.
+**The lowest set bit is at most the number.** For every natural number $n$,
+$\operatorname{lowbit}(n) \le n$, where $\operatorname{lowbit}(n)$ is the value of the lowest
+set bit of $n$ in binary (with $\operatorname{lowbit}(0) = 0$).
 
 ## Depends on
 
-- [Lowbit](lowbit.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

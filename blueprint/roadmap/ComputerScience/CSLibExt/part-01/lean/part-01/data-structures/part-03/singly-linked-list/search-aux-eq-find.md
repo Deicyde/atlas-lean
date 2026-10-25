@@ -7,16 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.searchAux_eq_find?
 ---
 
-# Search Aux eq find?
+# Fuel-bounded search finds the first matching represented identity
 
-With at least as much fuel as the represented length, fuel-bounded search
-is `List.find?` over the represented identities.
+**Fuel-bounded search finds the first matching represented identity.** Suppose a node pool
+represents, from the head $h$, the list of distinct identities $\ell$. Then for every target
+payload $t$ and every fuel $f$ with $f \ge |\ell|$, fuel-bounded search for $t$ from $h$ with
+fuel $f$ returns the first identity in $\ell$ whose cell holds a node with payload $t$, and
+returns nothing if no identity in $\ell$ has this property.
 
 ## Depends on
 
-- [Node](node.md)
-- [Represents](represents.md)
-- [Search Aux](search-aux.md)
+- [Singly linked list node](node.md)
+- [Store representing a singly linked list](represents.md)
+- [Fuel-bounded search in a singly-linked list](search-aux.md)
 
 ## Sources
 

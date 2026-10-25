@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toList_update_build
 ---
 
-# To List update build
+# Point update of a built segment tree
 
-Updating a tree built from a list updates that list at the index.
+**Point update of a built segment tree.** For every list $xs$ with entries in an additive
+monoid, every index $i$ smaller than the length of $xs$ and every value $y$, the leaf list of the
+segment tree built from $xs$, after the point update at $i$ with $y$, is $xs$ with its entry at
+position $i$ (counting from $0$) replaced by $y$.
 
 ## Depends on
 
-- [Build](build.md)
-- [To List](to-list.md)
-- [Update](update.md)
+- [Building a segment tree from a list](build.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Point update of a segment tree](update.md)
 
 ## Proof depends on
 
-- [Size](size.md)
-- [Size build](size-build.md)
-- [To List build](to-list-build.md)
-- [To List update of lt](to-list-update-of-lt.md)
-- [Valid build](valid-build.md)
+- [Size of a segment tree](size.md)
+- [Size of a built segment tree](size-build.md)
+- [Building a segment tree preserves the list](to-list-build.md)
+- [Leaf list after an in-range point update](to-list-update-of-lt.md)
+- [Built segment trees are valid](valid-build.md)
 
 ## Sources
 

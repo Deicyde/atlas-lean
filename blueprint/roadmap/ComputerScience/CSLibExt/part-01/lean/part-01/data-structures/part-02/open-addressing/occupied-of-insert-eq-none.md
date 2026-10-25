@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.occupied_of_insert_eq_none
 ---
 
-# Occupied of insert eq none
+# Failed open-addressing insertion finds every probed slot taken
 
-When `insert` fails, every one of the first `m` probed slots is occupied by a key
-different from the inserted one. For probe sequences that are permutations of the
-slots, this says exactly that the table is full with other keys.
+**Failed open-addressing insertion finds every probed slot taken.** Let $T$ be an
+open-addressing hash table with $m$ slots and probe sequence $p$. If inserting a binding
+$k \mapsto v$ into $T$ fails, then for every $i < m$ the slot $p(k, i)$ holds a pair
+$(k', v')$ with $k' \neq k$.
+
+For probe sequences that are permutations of the slots, this says that every slot of the table
+holds a key other than $k$.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Insert](insert.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Insertion into an open-addressing table](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
+- [Bounded insertion scan](insert-aux.md)
 
 ## Sources
 

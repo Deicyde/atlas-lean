@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.sample_sublist
 ---
 
-# Sample sublist
+# The sample is a sublist
 
-The sample of a catalog is a sublist of that catalog.
+**The sample is a sublist.** For every list $\ell$, the sample of $\ell$ is a sublist of
+$\ell$: it is obtained from $\ell$ by deleting some elements and keeping the rest in order.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Sample Aux sublist](sample-aux-sublist.md)
+- [Alternating selection gives a sublist](sample-aux-sublist.md)
 
 ## Sources
 

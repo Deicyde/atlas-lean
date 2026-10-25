@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.valid_build
 ---
 
-# Valid build
+# Built segment trees are valid
 
-A tree built from a list is valid.
+**Built segment trees are valid.** For every list $xs$ over an additive monoid, the segment
+tree built from $xs$ is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Build](build.md)
+- [Valid segment trees](valid.md)
+- [Building a segment tree from a list](build.md)
 
 ## Proof depends on
 
 - [Segment Tree](segment-tree.md)
-- [Agg](agg.md)
-- [Size](size.md)
-- [To List](to-list.md)
-- [To List node](to-list-node.md)
+- [Aggregate of a segment tree](agg.md)
+- [Size of a segment tree](size.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Leaf list of an internal node](to-list-node.md)
 
 ## Sources
 

@@ -21,10 +21,10 @@ Every directed edge points strictly forward in a successful order.
 
 - [Has Edge](../directed-adjacency-2/has-edge.md)
 - [Has Edge eq true](../directed-adjacency-2/has-edge-eq-true.md)
-- [Contents](../../data-structures/part-01/queue/semantics/contents.md)
-- [Contents enqueue](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
-- [Contents eq cons of dequeue? eq some](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
-- [Dequeue? eq none iff](../../data-structures/part-01/queue/semantics/dequeue-eq-none-iff.md)
+- [Contents of a two-list queue](../../data-structures/part-01/queue/semantics/contents.md)
+- [Enqueueing appends to the contents](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
+- [A successful dequeue splits off the first element](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
+- [Dequeueing fails exactly on empty queues](../../data-structures/part-01/queue/semantics/dequeue-eq-none-iff.md)
 - [Indegree Within](indegree-within.md)
 
 ## Sources

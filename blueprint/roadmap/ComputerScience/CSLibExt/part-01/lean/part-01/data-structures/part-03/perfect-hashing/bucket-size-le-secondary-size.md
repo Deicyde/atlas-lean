@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.bucketSize_le_secondarySize
 ---
 
-# Bucket Size le secondary Size
+# Bucket occupancy is at most the secondary table size
 
-A bucket cannot hold more bindings than it has slots.
+**Bucket occupancy is at most the secondary table size.** For every two-level perfect
+hash table and every bucket $i$, the number $n_i$ of occupied slots of bucket $i$ is at most
+the number $m_i$ of slots of the secondary table of bucket $i$.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Bucket Size](bucket-size.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [Occupancy of a perfect-hashing bucket](bucket-size.md)
 
 ## Sources
 

@@ -7,10 +7,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.isPrefix_of_map_some_prefix_append_none
 ---
 
-# Is Prefix of map some prefix append none
+# A tagged pattern cannot reach past the terminator
 
-A tagged pattern can only prefix a terminated string inside the tagged part: the
-terminator `none` differs from every `some`, so the pattern cannot reach past it.
+**A tagged pattern cannot reach past the terminator.** For lists $p$ and $q$ over $\alpha$,
+view their symbols in $\alpha$ extended by a fresh terminator symbol. If $p$ is a prefix of $q$
+followed by the terminator, then $p$ is a prefix of $q$.
+
+The terminator differs from every symbol of $\alpha$, so the pattern cannot reach past it.
 
 ## Depends on
 

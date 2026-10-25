@@ -7,21 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_correct
 ---
 
-# Recursive Cut Rod correct
+# Correctness of recursive CUT-ROD
 
-Recursive CUT-ROD returns an attaining maximum over canonical whole-length
-compositions. Negative prices do not create a discard option.
+**Correctness of recursive CUT-ROD.** Let $\alpha$ be an additive commutative monoid with a
+linear order for which addition is monotone, and let $p_1, \dots, p_n \in \alpha$ be prices,
+$p_i$ being the price of a piece of length $i$. The value returned by recursive CUT-ROD on these
+prices is the greatest revenue of a composition of $n$: it equals the revenue
+$p_{i_1} + \dots + p_{i_k}$ of some composition $n = i_1 + \dots + i_k$ into positive parts,
+and it is at least the revenue of every such composition.
+
+Every piece is sold: negative prices do not create an option to discard part of the rod.
 
 ## Depends on
 
-- [Composition Revenue](../rod-cutting/composition-revenue.md)
-- [Recursive Cut Rod](recursive-cut-rod.md)
+- [Revenue of a rod composition](../rod-cutting/composition-revenue.md)
+- [Recursive CUT-ROD](recursive-cut-rod.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](../rod-cutting/composition-revenue-append.md)
-- [Composition Revenue single](../rod-cutting/composition-revenue-single.md)
-- [Composition Revenue zero](../rod-cutting/composition-revenue-zero.md)
+- [Revenue is additive under concatenation](../rod-cutting/composition-revenue-append.md)
+- [Revenue of an uncut rod](../rod-cutting/composition-revenue-single.md)
+- [The empty rod earns nothing](../rod-cutting/composition-revenue-zero.md)
 
 ## Sources
 

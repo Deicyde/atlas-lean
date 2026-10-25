@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.mem_splay
 ---
 
-# Mem splay
+# Splaying preserves membership
 
-Splaying preserves structural membership.
+**Splaying preserves membership.** For keys $x$ and $y$ and a binary tree $t$ over a linearly
+ordered type, $y$ is a key of the tree obtained by splaying $x$ in $t$ if and only if $y$ is a
+key of $t$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Splay](splay.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Splay operation](splay.md)
 
 ## Proof depends on
 
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Mem inorder](../../part-02/binary-search-tree/mem-inorder.md)
-- [Inorder splay](inorder-splay.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Membership in the inorder traversal of a binary tree](../../part-02/binary-search-tree/mem-inorder.md)
+- [Splaying preserves the inorder traversal](inorder-splay.md)
 
 ## Sources
 

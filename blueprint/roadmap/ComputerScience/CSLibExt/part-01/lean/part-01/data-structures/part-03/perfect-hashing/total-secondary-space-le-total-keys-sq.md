@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.PerfectHashing.totalSecondarySpace_le_totalKeys_sq
 ---
 
-# Total Secondary Space le total Keys sq
+# Quadratic space bound under square sizing
 
-Elementary space bound under the FKS sizing rule: the total secondary space
-`∑ i, nᵢ²` is at most `(∑ i, nᵢ)²`, the square of the total number of keys. The
-linear bound `∑ i, nᵢ² = O(n)` of FKS additionally requires a good primary hash
-function, whose existence is a probabilistic statement not proved here.
+**Quadratic space bound under square sizing.** If a two-level perfect hash table satisfies the
+FKS sizing rule, then its total secondary space is at most the square of its total number of
+keys.
+
+This is weaker than the linear space bound of Fredman, Komlós and Szemerédi, which also depends
+on the choice of a good primary hash function.
 
 ## Depends on
 
-- [Perfect Hashing](perfect-hashing.md)
-- [Square Sized](square-sized.md)
-- [Total Keys](total-keys.md)
-- [Total Secondary Space](total-secondary-space.md)
+- [Two-level perfect hash table](perfect-hashing.md)
+- [FKS square sizing rule](square-sized.md)
+- [Total number of keys of a perfect hash table](total-keys.md)
+- [Total secondary space of a perfect hash table](total-secondary-space.md)
 
 ## Proof depends on
 
-- [Bucket Size](bucket-size.md)
-- [Total Secondary Space eq sum sq](total-secondary-space-eq-sum-sq.md)
+- [Occupancy of a perfect-hashing bucket](bucket-size.md)
+- [Total secondary space under square sizing](total-secondary-space-eq-sum-sq.md)
 
 ## Sources
 

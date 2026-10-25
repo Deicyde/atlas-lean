@@ -7,29 +7,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_eraseKeyWithCost
 ---
 
-# Cache Invariant erase Key With Cost
+# Keyed deletion preserves the interval-tree cache invariant
 
-Key deletion preserves attained maximum caches, including absent keys.
+**Keyed deletion preserves the interval-tree cache invariant.** Let $T$ be an interval tree
+satisfying the cache invariant (every cached maximum high endpoint, height and size is exact), and
+let $k$ be a key (a pair of an integer low endpoint and a natural-number identifier). The tree
+returned by keyed deletion of $k$ from $T$ (the tree component of the result; the cost is
+ignored) also satisfies the cache invariant. This includes keys that do not occur in $T$.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Tree](tree.md)
-- [Cache Invariant](cache-invariant.md)
-- [Erase Key With Cost](erase-key-with-cost.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree](tree.md)
+- [Cache invariant of an interval tree](cache-invariant.md)
+- [Keyed erasure with cost](erase-key-with-cost.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Key](key.md)
+- [Interval tree entry](entry.md)
+- [Search key of an interval entry](key.md)
 - [Interval](interval.md)
-- [Cache Invariant mk Node](cache-invariant-mk-node.md)
-- [Cache Invariant rebalance With Cost](cache-invariant-rebalance-with-cost.md)
-- [Cache Invariant remove Min With Cost](cache-invariant-remove-min-with-cost.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Remove Min With Cost](remove-min-with-cost.md)
-- [Compare Key](compare-key.md)
+- [The interval-tree smart constructor preserves the cache invariant](cache-invariant-mk-node.md)
+- [Rebalancing preserves the interval-tree cache invariant](cache-invariant-rebalance-with-cost.md)
+- [Removing the minimum preserves the interval-tree cache invariant](cache-invariant-remove-min-with-cost.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Removing the leftmost entry, with its cost](remove-min-with-cost.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

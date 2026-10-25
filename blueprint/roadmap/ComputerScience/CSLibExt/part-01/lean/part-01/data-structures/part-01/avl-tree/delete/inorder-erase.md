@@ -34,10 +34,10 @@ if $x$ does not occur, the traversal is unchanged.
 - [Membership in the inorder traversal of an AVL tree](../../avl-tree-2/mem-inorder.md)
 - [Leftmost key of a tree](min-d.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

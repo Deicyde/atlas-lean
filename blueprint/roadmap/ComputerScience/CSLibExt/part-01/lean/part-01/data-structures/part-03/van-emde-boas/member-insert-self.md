@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.member_insert_self
 ---
 
-# Member insert self
+# An inserted element is a member of a van Emde Boas tree
 
-An inserted element is a member of the resulting tree.
+**An inserted element is a member of a van Emde Boas tree.** For every two-level van Emde Boas
+tree $t$ over the universe $\{0, 1, \dots, m^2 - 1\}$ and every $x$ in that universe, $x$ is a
+member of the tree obtained by inserting $x$ into $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Insert](insert.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Insertion into a van Emde Boas tree](insert.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

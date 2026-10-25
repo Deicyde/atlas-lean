@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.mem_augmentOne_iff
 ---
 
-# Mem augment One iff
+# Membership in an augmented catalog
 
-Membership in an augmented catalog is membership in one of its parts.
+**Membership in an augmented catalog.** For catalogs $c$ and $a$ over a linearly ordered type,
+a value $v$ is an entry of the augmented catalog of $c$ with $a$ (the sorted merge of $c$ with the
+sample of $a$) if and only if $v$ is an entry of $c$ or an entry of the sample of $a$.
 
 ## Depends on
 
-- [Augment One](augment-one.md)
-- [Sample](sample.md)
+- [Augmenting a catalog by the next one](augment-one.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Mem sorted Merge iff](mem-sorted-merge-iff.md)
+- [Elements of a sorted merge](mem-sorted-merge-iff.md)
 
 ## Sources
 

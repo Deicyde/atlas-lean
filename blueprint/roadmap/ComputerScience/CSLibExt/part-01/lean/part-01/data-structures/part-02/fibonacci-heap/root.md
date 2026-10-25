@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.root
 ---
 
-# Root
+# Root of a Fibonacci tree
 
-The root value of a Fibonacci tree.
+**Root of a Fibonacci tree.** The root of a Fibonacci tree is the value stored at its top
+node.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Sources
 

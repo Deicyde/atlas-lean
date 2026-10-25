@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.length_le_card_of_sorted
 ---
 
-# Length le card of sorted
+# Degree-sorted forests have at most as many trees as elements
 
-A valid forest with distinct degrees has at most as many roots as elements, since
-every degree is smaller than the total count.
+**Degree-sorted forests have at most as many trees as elements.** Let $F$ be a valid forest
+of Fibonacci trees whose degrees are strictly increasing along the list. Then the number of
+trees in $F$ is at most the number of elements, counted with multiplicity, that $F$ represents.
+
+Every degree is smaller than the total element count and the degrees are distinct.
 
 ## Depends on
 
 - [Sorted Degrees](sorted-degrees.md)
-- [Valid](valid-2.md)
+- [Valid Fibonacci forests](valid-2.md)
 - [Elements](elements-2.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Degree lt card](degree-lt-card.md)
-- [Degree](degree.md)
-- [Elements](elements.md)
+- [The degree of a valid Fibonacci tree is less than its size](degree-lt-card.md)
+- [Degree of a Fibonacci tree](degree.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

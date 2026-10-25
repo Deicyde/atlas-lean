@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.overlapScore_nonneg
 ---
 
-# Overlap Score nonneg
+# The overlap score is nonnegative
 
-The overlap score is nonnegative: the empty pair scores `0`.
+**The overlap score is nonnegative.** For every substitution score $\sigma$, gap
+score $g$ and sequences $s$ and $t$, the overlap score of $s$ and $t$ is at least $0$.
+
+The pair of two empty sequences is an overlap pair, and its score is $0$.
 
 ## Depends on
 
-- [Overlap Score](overlap-score.md)
+- [Overlap alignment score](overlap-score.md)
 
 ## Proof depends on
 
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Overlap Pairs](overlap-pairs.md)
-- [Zero le list Max](zero-le-list-max.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Overlap pairs](overlap-pairs.md)
+- [The floored list maximum is nonnegative](zero-le-list-max.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.cutTreeAt
 ---
 
-# Cut Tree At
+# Cutting a subtree out of a Fibonacci forest
 
-Cut the subtree at path `p` inside the `i`-th tree of a forest: returns the
-extracted subtree together with the forest in which that tree is replaced by the cut
-remainder (or removed when the whole tree was extracted).
+**Cutting a subtree out of a Fibonacci forest.** For a forest given as a list of Fibonacci
+trees, an index $i$ and a path $p$ of child indices, the cut is undefined if the list has no
+tree at position $i$ (counting from $0$) or if cutting that tree $t$ at $p$ is undefined.
+Otherwise, if cutting $t$ at $p$ extracts the subtree $s$, the result is $s$ together with the
+list in which the tree at position $i$ is removed (if the cut of $t$ left no remainder) or
+replaced by the remainder (otherwise).
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Cut At](cut-at.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
 
 ## Sources
 

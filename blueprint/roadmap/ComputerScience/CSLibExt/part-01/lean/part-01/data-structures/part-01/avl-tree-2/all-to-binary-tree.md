@@ -19,7 +19,7 @@ definition.
 - [Every key of an AVL tree satisfies a predicate](all.md)
 - [Binary trees with cached heights](tree.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [All](../../part-02/binary-search-tree/all.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
 
 ## Sources
 

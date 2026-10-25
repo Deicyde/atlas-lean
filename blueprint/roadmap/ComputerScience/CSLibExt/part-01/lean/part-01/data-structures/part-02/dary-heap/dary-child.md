@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.daryChild
 ---
 
-# Dary Child
+# Child index in a $d$-ary heap array
 
-The child index with zero-based offset `k` in a contiguous `d`-ary tree.
+**Child index in a $d$-ary heap array.** For natural numbers $d$, $i$ and $k$, the child of
+index $i$ with zero-based offset $k$ in a contiguous level-order $d$-ary tree is the index
+$d i + k + 1$.
 
 ## Depends on
 

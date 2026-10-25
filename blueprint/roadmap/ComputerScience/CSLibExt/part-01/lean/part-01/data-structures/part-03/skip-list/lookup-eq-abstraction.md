@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.lookup_eq_abstraction
 ---
 
-# Lookup eq abstraction
+# Skip-list search agrees with bottom-level lookup
 
-Top-down carried-window search agrees with canonical association-list lookup.
+**Skip-list search agrees with bottom-level lookup.** For every skip list and every key $k$,
+the top-down skip-list lookup of $k$ returns the same result as looking up $k$ in the
+bottom-level abstraction, the list of key-value pairs of all stored nodes in order: the value of
+the first pair with key $k$, or no value if there is none.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Abstraction](abstraction.md)
-- [Lookup](lookup.md)
+- [Skip list](skip-list.md)
+- [Bottom-level abstraction of a skip list](abstraction.md)
+- [Skip-list lookup](lookup.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Advance At Level](advance-at-level.md)
+- [Skip-list node](entry.md)
+- [One level of skip-list search](advance-at-level.md)
 
 ## Sources
 

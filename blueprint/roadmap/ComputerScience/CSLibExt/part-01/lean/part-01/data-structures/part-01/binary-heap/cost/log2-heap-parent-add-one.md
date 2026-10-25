@@ -16,7 +16,7 @@ binary tree the parent of a nonroot index lies one level above it.
 
 ## Depends on
 
-- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
+- [Parent index in a level-order binary tree](../../../part-02/binary-heap/heap-parent.md)
 
 ## Sources
 

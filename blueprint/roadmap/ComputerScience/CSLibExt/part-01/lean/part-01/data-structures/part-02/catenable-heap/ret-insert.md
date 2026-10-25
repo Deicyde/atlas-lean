@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.ret_insert
 ---
 
-# Ret insert
+# Result of insertion into a catenable heap
 
-The result of `insert x h` is the front node holding `x` and `h`.
+**Result of insertion into a catenable heap.** For every element $x$ and catenable heap $h$,
+the heap returned by inserting $x$ into $h$ is the heap with $x$ added in front of $h$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Insert](insert.md)
+- [Catenable heap](catenable-heap.md)
+- [Insertion into a catenable heap](insert.md)
 
 ## Sources
 

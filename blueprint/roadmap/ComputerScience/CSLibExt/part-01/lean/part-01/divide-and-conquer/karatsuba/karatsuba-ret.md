@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.karatsuba_ret
 ---
 
-# Karatsuba ret
+# Correctness of Karatsuba multiplication
 
-Karatsuba multiplication returns the product, for every base, digit count and input.
+**Correctness of Karatsuba multiplication.** For all natural numbers $B$, $n$, $x$ and $y$,
+Karatsuba multiplication of $x$ and $y$ as $n$-digit numbers in base $B$ returns $xy$.
+
+The inputs need not be below $B^n$: the digit count only steers the recursion.
 
 ## Depends on
 
-- [Karatsuba](karatsuba.md)
+- [Karatsuba multiplication](karatsuba.md)
 
 ## Proof depends on
 
-- [Karatsuba middle](karatsuba-middle.md)
+- [Karatsuba's middle coefficient](karatsuba-middle.md)
 
 ## Sources
 

@@ -6,20 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fft_time_add_one
 ---
 
-# Fft time add one
+# Exact cost of the radix-two FFT
 
-The actual recursive run has cost `(7*d + 1)*2^d - 1`, including charged split/output writes.
+**Exact cost of the radix-two FFT.** Let $R$ be a commutative ring. For every natural number
+$d$, every $\omega \in R$ and every vector $x \in R^{2^d}$, the radix-two FFT of $x$ with root
+$\omega$ costs $T$ charged operations, where $T + 1 = (7d + 1) \cdot 2^d$; that is,
+$T = (7d + 1) \cdot 2^d - 1$.
+
+The count includes the charged reads and writes of the even/odd splits and the writes that
+initialize each output vector.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
 
 ## Proof depends on
 
-- [Fft Butterflies](../../fft-2/fft-butterflies.md)
-- [Fft Butterflies time](fft-butterflies-time.md)
-- [Fft Split](../../fft-2/fft-split.md)
-- [Fft Split time](fft-split-time.md)
+- [FFT butterfly pass](../../fft-2/fft-butterflies.md)
+- [Cost of the FFT butterfly pass](fft-butterflies-time.md)
+- [Even–odd split for the FFT](../../fft-2/fft-split.md)
+- [Cost of the FFT even/odd split](fft-split-time.md)
 
 ## Sources
 

@@ -77,7 +77,7 @@ theorem IsAnswer.isMinPairDist2 {ps : List (𝕜 × 𝕜)} {δ : 𝕜} (h : IsAn
 
 ## Proof depends on
 
-- [Omin](../../data-structures/part-03/sparse-table/omin.md)
+- [Option minimum](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_correct
 ---
 
-# Extended Bottom Up Cut Rod correct
+# Saved revenues are optimal
 
-Every saved revenue is attained by a whole-rod composition and dominates all its competitors.
+**Saved revenues are optimal.** Let $p$ be a price vector of length $n$ with entries in a
+linearly ordered additive commutative monoid (addition is monotone), and let
+$r = (r_0, \dots, r_n)$ be the revenue table computed by the extended bottom-up rod-cutting
+algorithm. For every $j \le n$, $r_j$ is the greatest revenue of a composition of $j$: some
+composition of $j$ has revenue $r_j$, and every composition of $j$ has revenue at most $r_j$.
 
 ## Depends on
 
-- [Composition Revenue](composition-revenue.md)
-- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Revenue of a rod composition](composition-revenue.md)
+- [Extended bottom-up rod cutting](extended-bottom-up-cut-rod.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](composition-revenue-append.md)
-- [Composition Revenue single](composition-revenue-single.md)
-- [Composition Revenue zero](composition-revenue-zero.md)
+- [Revenue is additive under concatenation](composition-revenue-append.md)
+- [Revenue of an uncut rod](composition-revenue-single.md)
+- [The empty rod earns nothing](composition-revenue-zero.md)
 
 ## Sources
 

@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.lookup_insert
 ---
 
-# Lookup insert
+# Lookup after insertion
 
-Looking up an inserted key returns the newly supplied value.
+**Lookup after insertion.** For every hash table $T$, every key $k$ and every value $v$, looking
+up $k$ in the table obtained by inserting $k$ with value $v$ into $T$ returns $v$.
 
 ## Depends on
 
-- [Hash Table](hash-table.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Hash table with separate chaining](hash-table.md)
+- [Insertion into a hash table](insert.md)
+- [Hash table lookup](lookup.md)
 
 ## Sources
 

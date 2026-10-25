@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_eq_none_iff
 ---
 
-# Min? eq none iff
+# Empty minimum query in a van Emde Boas tree
 
-In a valid tree, `min?` returns `none` exactly when nothing is stored.
+**Empty minimum query in a van Emde Boas tree.** Let $t$ be a valid two-level van Emde Boas
+tree over the universe $\{0, \dots, m^2 - 1\}$. The minimum query on $t$ returns no element if and
+only if no element of the universe is stored in $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Min?](min.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Minimum query of a van Emde Boas tree](min.md)
 
 ## Sources
 

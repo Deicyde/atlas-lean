@@ -4,24 +4,24 @@ navigation: module
 
 # Longest Increasing Subsequence
 
-- [Is LISLength](is-lislength.md)
-- [Is LISCell](is-liscell.md)
-- [Max Above](max-above.md)
-- [Lis Table](lis-table.md)
-- [Max Entry](max-entry.md)
-- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+- [Length of a longest increasing subsequence](is-lislength.md)
+- [Table cell of the LIS dynamic program](is-liscell.md)
+- [Best table entry above a value](max-above.md)
+- [Table of the quadratic LIS program](lis-table.md)
+- [Table entry of largest length](max-entry.md)
+- [Longest increasing subsequence by dynamic programming](longest-increasing-subsequence.md)
 
 ## Cost
 
-- [Max Above time](max-above-time.md)
-- [Longest Increasing Subsequence time](longest-increasing-subsequence-time.md)
+- [Longest increasing subsequence by dynamic programming](max-above-time.md)
+- [Running time of the quadratic LIS program](longest-increasing-subsequence-time.md)
 
 ## Correctness
 
-- [Exists suffix of cons sublist](exists-suffix-of-cons-sublist.md)
-- [LISTable Spec](listable-spec.md)
-- [Is LISCell max Above](is-liscell-max-above.md)
-- [Longest Increasing Subsequence spec](longest-increasing-subsequence-spec.md)
-- [Is LISLength longest Increasing Subsequence](is-lislength-longest-increasing-subseque.md)
-- [Unique](unique.md)
-- [Length longest Increasing Subsequence eq iff](length-longest-increasing-subsequence-eq.md)
+- [A subsequence starting with $y$ starts at an occurrence of $y$](exists-suffix-of-cons-sublist.md)
+- [Invariant of the LIS table](listable-spec.md)
+- [The step of the LIS recurrence](is-liscell-max-above.md)
+- [Correctness of the quadratic LIS program](longest-increasing-subsequence-spec.md)
+- [The quadratic LIS program attains the optimal length](is-lislength-longest-increasing-subseque.md)
+- [Uniqueness of the longest increasing subsequence length](unique.md)
+- [Correctness of the quadratic LIS program, by length](length-longest-increasing-subsequence-eq.md)

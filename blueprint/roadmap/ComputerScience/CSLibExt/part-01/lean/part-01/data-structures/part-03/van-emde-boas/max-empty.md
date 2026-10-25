@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_empty
 ---
 
-# Max? empty
+# Maximum query on the empty van Emde Boas tree
 
-The empty tree has no greatest element.
+**Maximum query on the empty van Emde Boas tree.** For every natural number $m$, the
+maximum query on the empty van Emde Boas tree over the universe $\{0, 1, \dots, m^2 - 1\}$
+returns no element.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Max?](max.md)
+- [Empty van Emde Boas tree](empty.md)
+- [Maximum query of a van Emde Boas tree](max.md)
 
 ## Proof depends on
 
-- [Max? eq none iff](max-eq-none-iff.md)
-- [Member](member.md)
-- [Member empty](member-empty.md)
-- [Valid empty](valid-empty.md)
+- [When the van Emde Boas maximum query returns nothing](max-eq-none-iff.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [The empty van Emde Boas tree has no members](member-empty.md)
+- [The empty van Emde Boas tree is valid](valid-empty.md)
 
 ## Sources
 

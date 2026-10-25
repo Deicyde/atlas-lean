@@ -8,22 +8,25 @@ lean: Cslib.Algorithms.Lean.exists_alignmentScore_eq_nwScore
 
 # Needleman–Wunsch is attained
 
-**Needleman–Wunsch is attained**: some valid alignment achieves `nwScore`.
+**Needleman–Wunsch is attained.** Let $\sigma : \alpha \to \alpha \to \mathbb{Z}$ be a
+substitution score and $g \in \mathbb{Z}$ a gap score. For all sequences $x$ and $y$ over
+$\alpha$ there is a valid alignment $A$ of $x$ and $y$ whose score with respect to $\sigma$ and
+$g$ equals the Needleman–Wunsch score of $x$ and $y$.
 
 ## Depends on
 
 - [Alignment](alignment.md)
-- [Is Alignment](is-alignment.md)
+- [Valid alignment of two sequences](is-alignment.md)
 - [Alignment Score](alignment-score.md)
-- [Nw Score](nw-score.md)
+- [Needleman–Wunsch score](nw-score.md)
 
 ## Proof depends on
 
-- [Column Score](column-score.md)
-- [Nw Score Aux](nw-score-aux.md)
+- [Score of an alignment column](column-score.md)
+- [Fuel-bounded Needleman–Wunsch recursion](nw-score-aux.md)
 - [The Needleman–Wunsch recurrence](nw-score-eq.md)
-- [Nw Score nil left](nw-score-nil-left.md)
-- [Nw Score nil right](nw-score-nil-right.md)
+- [Aligning the empty sequence with a sequence](nw-score-nil-left.md)
+- [Aligning a sequence with the empty sequence](nw-score-nil-right.md)
 
 ## Sources
 

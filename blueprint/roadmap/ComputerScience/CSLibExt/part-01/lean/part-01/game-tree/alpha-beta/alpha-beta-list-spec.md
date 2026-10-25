@@ -6,22 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AlphaBeta.alphaBetaList_spec
 ---
 
-# Alpha Beta List spec
+# Correctness of the alpha-beta scan
 
-The scan over the children agrees with the best child value after clamping.
+**Correctness of the alpha-beta scan.** Let $p$ be the player to move, $ts$ a list of game
+trees with values in a bounded linear order, and $a \le b$. Let $r$ be the value returned by the
+alpha-beta scan of $ts$ for $p$ with window $[a, b]$, and let $m$ be the best value for $p$ among
+$ts$: the maximum of the minimax values of the trees in $ts$ for the minimizer ($\bot$ if $ts$ is
+empty) when $p$ is the maximizer, and the minimum of their minimax values for the maximizer
+($\top$ if $ts$ is empty) when $p$ is the minimizer. Then $\max(a, \min(b, r)) =
+\max(a, \min(b, m))$.
 
 ## Depends on
 
-- [Game Tree](game-tree.md)
-- [Alpha Beta List](alpha-beta-list.md)
-- [Minimax List](minimax-list.md)
+- [Game tree](game-tree.md)
+- [Alpha-beta scan of the children](alpha-beta-list.md)
+- [Minimax value of a list of positions](minimax-list.md)
 
 ## Proof depends on
 
-- [Alpha Beta](alpha-beta.md)
-- [Alpha Beta List false le](alpha-beta-list-false-le.md)
-- [Le alpha Beta List true](le-alpha-beta-list-true.md)
-- [Minimax](minimax.md)
+- [Alpha-beta pruning](alpha-beta.md)
+- [The minimizer's alpha-beta scan stays at or below its upper bound](alpha-beta-list-false-le.md)
+- [Lower bound for the maximizer's scan](le-alpha-beta-list-true.md)
+- [Minimax value](minimax.md)
 
 ## Sources
 

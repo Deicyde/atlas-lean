@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.maxSubarraySumDC_eq_maxSubarraySum
 ---
 
-# Max Subarray Sum DC eq max Subarray Sum
+# Divide and conquer agrees with Kadane's algorithm
 
-Divide and conquer and Kadane's scan return the same answer.
+**Divide and conquer agrees with Kadane's algorithm.** Let $\alpha$ be an additive monoid with
+a linear order such that $b \le c$ implies $a + b \le a + c$ and $b + a \le c + a$. For every list
+$xs$ over $\alpha$, the divide-and-conquer maximum subarray algorithm and Kadane's algorithm
+return the same result on $xs$.
 
 ## Depends on
 
-- [Max Subarray Sum](../../dynamic-programming/maximum-subarray/max-subarray-sum.md)
-- [Max Subarray Sum DC](max-subarray-sum-dc.md)
+- [Kadane's algorithm](../../dynamic-programming/maximum-subarray/max-subarray-sum.md)
+- [Divide-and-conquer maximum subarray](max-subarray-sum-dc.md)
 
 ## Proof depends on
 
-- [Is Max Subarray Sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
-- [Kadane Scan](../../dynamic-programming/maximum-subarray/kadane-scan.md)
-- [Max Subarray Sum DC ret eq some iff](max-subarray-sum-dc-ret-eq-some-iff.md)
-- [Max Subarray Sum ret eq some iff](../../dynamic-programming/maximum-subarray/max-subarray-sum-ret-eq-some-iff.md)
+- [Being the maximum subarray sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
+- [Kadane's scan](../../dynamic-programming/maximum-subarray/kadane-scan.md)
+- [Correctness of divide-and-conquer maximum subarray](max-subarray-sum-dc-ret-eq-some-iff.md)
+- [Correctness of Kadane's algorithm](../../dynamic-programming/maximum-subarray/max-subarray-sum-ret-eq-some-iff.md)
 
 ## Sources
 

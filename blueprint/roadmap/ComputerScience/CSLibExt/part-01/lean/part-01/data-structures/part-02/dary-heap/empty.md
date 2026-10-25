@@ -6,21 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.empty
 ---
 
-# Empty
+# Empty d-ary heap
 
-The empty heap, normalizing a requested arity below two to two.
+**Empty d-ary heap.** For a natural number $r$ (the requested arity), the empty heap is the
+$d$-ary min-heap over a linearly ordered type with arity $d = \max(2, r)$ and an empty storage
+array; a requested arity below two is thus normalized to two.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Proof depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Dary Parent](dary-parent.md)
-- [Dary Parent lt size](dary-parent-lt-size.md)
-- [Normalized Arity](normalized-arity.md)
-- [Normalized Arity valid](normalized-arity-valid.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [Parent index in a $d$-ary tree](dary-parent.md)
+- [The $d$-ary parent of a valid index is valid](dary-parent-lt-size.md)
+- [Normalized heap arity](normalized-arity.md)
+- [Normalized arities are at least two](normalized-arity-valid.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_eq_some_of_stored
 ---
 
-# Lookup eq some of stored
+# Cuckoo lookup finds every stored binding
 
-Under `Valid` and `KeyDet`, a stored binding is found by `lookup` with its value.
+**Cuckoo lookup finds every stored binding.** Let $T$ be a cuckoo hash table that satisfies
+the placement invariant and is key-deterministic. For every key $k$ and value $v$, if the
+binding $k \mapsto v$ is stored in $T$, then looking up $k$ in $T$ returns $v$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Key Det](key-det.md)
-- [Stored](stored.md)
-- [Valid](valid.md)
-- [Lookup](lookup.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Key determinism of a cuckoo hash table](key-det.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Placement invariant of a cuckoo hash table](valid.md)
+- [Cuckoo hash table lookup](lookup.md)
 
 ## Proof depends on
 
-- [Lookup eq some of table1](lookup-eq-some-of-table1.md)
-- [Lookup eq some of table2](lookup-eq-some-of-table2.md)
+- [Cuckoo lookup finds a key in its first-table slot](lookup-eq-some-of-table1.md)
+- [Cuckoo lookup finds a key in its second-table slot](lookup-eq-some-of-table2.md)
 
 ## Sources
 

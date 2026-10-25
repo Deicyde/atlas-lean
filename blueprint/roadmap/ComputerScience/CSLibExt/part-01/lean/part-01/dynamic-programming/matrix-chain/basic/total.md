@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.Cost.total
 ---
 
-# Total
+# Total matrix-chain cost
 
-Total charged events.
+**Total matrix-chain cost.** The total of a matrix-chain cost is its number of candidate
+evaluations plus its number of reconstruction nodes.
 
 ## Depends on
 
-- [Cost](cost.md)
+- [Matrix-chain cost](cost.md)
 
 ## Sources
 

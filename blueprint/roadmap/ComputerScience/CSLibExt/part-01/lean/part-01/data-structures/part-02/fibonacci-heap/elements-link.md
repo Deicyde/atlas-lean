@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.elements_link
 ---
 
-# Elements link
+# Linking adds the elements
 
-Linking preserves the disjoint multiset union of both input trees.
+**Linking adds the elements.** For any two Fibonacci trees $S$ and $T$ over a linearly ordered
+type, the tree obtained by linking $S$ and $T$ represents the sum of the multisets represented by
+$S$ and by $T$.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
-- [Link](link.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Linking two Fibonacci trees](link.md)
 
 ## Proof depends on
 
-- [Children](children.md)
-- [Degree](degree.md)
-- [Root](root.md)
+- [Children of a Fibonacci tree](children.md)
+- [Degree of a Fibonacci tree](degree.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

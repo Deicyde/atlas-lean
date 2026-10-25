@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.valid_singleton
 ---
 
-# Valid singleton
+# Singleton binomial trees are valid
 
-A singleton tree satisfies every binomial-tree invariant.
+**Singleton binomial trees are valid.** For a linearly ordered type $\alpha$ and any
+$a \in \alpha$, the singleton binomial tree with rank $0$, root $a$ and no children is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Singleton](singleton.md)
+- [Valid binomial tree](valid.md)
+- [Singleton binomial heap](singleton.md)
 
 ## Proof depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
+- [Binomial tree](binomial-tree.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

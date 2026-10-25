@@ -6,12 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.weight
 ---
 
-# Weight
+# Weight of a binary tree
 
-The Nievergelt-Reingold weight of a tree: external leaves count, so the
-empty tree has weight `1` and any tree has weight one more than its number
-of keys. The weight of a node is the sum of the weights of its children
-(`weight_node`).
+**Weight of a binary tree.** The Nievergelt–Reingold weight $w(t)$ of a binary tree $t$
+is its number of keys plus one. Equivalently, it counts the external leaves: the empty tree
+has weight $1$, and the weight of a node is the sum of the weights of its two children.
 
 ## Depends on
 

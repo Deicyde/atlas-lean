@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.isChain_of_mem_paths
 ---
 
-# Is Chain of mem paths
+# Preferred paths of a link-cut tree state follow represented edges
 
-Every preferred path is a genuine path of the represented forest:
-consecutive vertices are joined by a parent-child edge of one represented
-tree (`isChain_of_mem_treePaths`). This holds for every state, with no
-validity hypothesis.
+**Preferred paths of a link-cut tree state follow represented edges.** Let $s$ be a link-cut
+tree state. For every path $p = (p_0, \dots, p_k)$ in the preferred-path decomposition of $s$
+and every $i < k$, some represented tree of $s$ has $p_i$ and $p_{i+1}$ adjacent, that is,
+joined by a parent-child edge in one direction or the other.
+
+This holds for every state, with no validity hypothesis.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
-- [State](state.md)
-- [Paths](paths.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Link-cut tree state](state.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
 
 ## Proof depends on
 
-- [Is Chain of mem tree Paths](is-chain-of-mem-tree-paths.md)
-- [Tree Paths](tree-paths.md)
+- [Preferred paths of a tree follow tree edges](is-chain-of-mem-tree-paths.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Sources
 

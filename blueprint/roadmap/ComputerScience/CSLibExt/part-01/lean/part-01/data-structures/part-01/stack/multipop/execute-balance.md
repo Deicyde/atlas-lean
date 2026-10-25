@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Stack.execute_balance
 ---
 
-# Execute balance
+# Cost balance for stack operation sequences
 
-Actual successful cost and remaining size account for every pushed element.
+**Cost balance for stack operation sequences.** For every stack $S$ and every finite sequence
+$\sigma$ of stack operations, if running $\sigma$ on $S$ succeeds with final stack $F$, then the
+cost of the run plus the number of elements of $F$ equals the number of elements of $S$ plus
+twice the number of PUSH operations in $\sigma$.
 
 ## Depends on
 
-- [Operation](operation.md)
-- [Execute](execute.md)
+- [Stack operations for the MULTIPOP aggregate analysis](operation.md)
+- [Running a sequence of stack operations](execute.md)
 
 ## Proof depends on
 
-- [Multipop](multipop.md)
-- [Multipop Signed](multipop-signed.md)
+- [MULTIPOP](multipop.md)
+- [MULTIPOP with an integer count](multipop-signed.md)
 - [Multipop ret](multipop-ret.md)
-- [Multipop time](multipop-time.md)
+- [Cost of MULTIPOP](multipop-time.md)
 
 ## Sources
 

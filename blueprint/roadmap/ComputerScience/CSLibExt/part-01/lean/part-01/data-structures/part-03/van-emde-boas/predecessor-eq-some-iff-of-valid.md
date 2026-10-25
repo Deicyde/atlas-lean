@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor_eq_some_iff_of_valid
 ---
 
-# Predecessor eq some iff of valid
+# Characterization of the van Emde Boas predecessor
 
-In a valid tree, `predecessor` returns the greatest stored element
-below `x`.
+**Characterization of the van Emde Boas predecessor.** Let $t$ be a valid two-level van Emde
+Boas tree over the universe $\{0, \dots, m^2 - 1\}$, and let $x$ and $y$ be in the universe. The
+predecessor query for $x$ in $t$ returns $y$ if and only if $y$ is stored in $t$, $y < x$, and
+$z \le y$ for every $z$ stored in $t$ with $z < x$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Predecessor](predecessor.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Predecessor query in a two-level van Emde Boas tree](predecessor.md)
 
 ## Proof depends on
 
-- [Predecessor eq none iff](predecessor-eq-none-iff.md)
-- [Predecessor greatest](predecessor-greatest.md)
-- [Predecessor lt](predecessor-lt.md)
-- [Predecessor mem](predecessor-mem.md)
+- [Empty predecessor query in a van Emde Boas tree](predecessor-eq-none-iff.md)
+- [Maximality of the van Emde Boas predecessor](predecessor-greatest.md)
+- [The van Emde Boas predecessor is strictly smaller than its argument](predecessor-lt.md)
+- [The van Emde Boas predecessor is stored](predecessor-mem.md)
 
 ## Sources
 

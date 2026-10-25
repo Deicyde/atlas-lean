@@ -6,18 +6,24 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.ofList
 ---
 
-# Of List
+# Building a $d$-ary min-heap from a list
 
-Build a heap by genuine arity-dependent insertions.
+**Building a $d$-ary min-heap from a list.** Let $\alpha$ be a linearly ordered type, let
+$r \in \mathbb{N}$ be a requested arity, and let $d = \max(2, r)$. The min-heap built from the
+empty list is the empty min-heap of arity $d$, and the min-heap built from a list with head $x$
+and tail $xs$ of elements of $\alpha$ is obtained by inserting $x$ into the min-heap built from
+$xs$. Thus the min-heap built from $[x_1, \dots, x_n]$ starts from the empty min-heap of arity
+$d$ and inserts $x_n$, then $x_{n-1}$, and so on, ending with $x_1$, each by $d$-ary
+insertion.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
-- [Push](push.md)
+- [Empty d-ary heap](empty.md)
+- [Insertion into a $d$-ary heap](push.md)
 
 ## Sources
 

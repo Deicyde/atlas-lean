@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.valid_insert
 ---
 
-# Valid insert
+# Insertion preserves validity of an open-addressing table
 
-Insertion or replacement preserves the probe-closed invariant.
+**Insertion preserves validity of an open-addressing table.** Let $T$ be a valid table with $m$
+slots and probe sequence $p$, whose keys have decidable equality. If inserting the binding
+$k \mapsto v$ into $T$ (adding it, or replacing the binding already stored for $k$) succeeds and
+returns the table $T'$, then $T'$ is valid: it is probe-closed and no key is stored in two
+different slots.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Open-addressing hash table](open-addressing.md)
+- [Valid open-addressing tables](valid.md)
+- [Insertion into an open-addressing table](insert.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
+- [Bounded insertion scan](insert-aux.md)
 
 ## Sources
 

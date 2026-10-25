@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset
 ---
 
-# To Multiset
+# Multiset of elements of a catenable heap
 
-The multiset of the elements of a heap.
+**Multiset of elements of a catenable heap.** The multiset of elements of a catenable heap $h$
+is the multiset of the entries of the left-to-right list of elements of $h$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
+- [Catenable heap](catenable-heap.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Sources
 

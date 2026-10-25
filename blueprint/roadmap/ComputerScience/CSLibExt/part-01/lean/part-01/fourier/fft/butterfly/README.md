@@ -4,7 +4,7 @@ navigation: module
 
 # Butterfly
 
-- [Fft Butterfly ret low](fft-butterfly-ret-low.md)
-- [Fft Butterfly ret high](fft-butterfly-ret-high.md)
-- [Fft Butterfly ret other](fft-butterfly-ret-other.md)
-- [Fft Butterflies ret](fft-butterflies-ret.md)
+- [Lower write of a butterfly step](fft-butterfly-ret-low.md)
+- [Upper write of a butterfly step](fft-butterfly-ret-high.md)
+- [A butterfly step leaves other entries unchanged](fft-butterfly-ret-other.md)
+- [Result of the butterfly loop](fft-butterflies-ret.md)

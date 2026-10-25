@@ -12,11 +12,11 @@ The vertices of a tree in preorder.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 
 ## Proof depends on
 
-- [Vertices Aux](vertices-aux.md)
+- [Accumulator preorder traversal](vertices-aux.md)
 
 ## Sources
 

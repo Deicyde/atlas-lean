@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.buildFrom
 ---
 
-# Build From
+# Radix trie built from a list of key-value pairs
 
-The trie built from a list of key-value pairs by inserting the head pair last. Later
-pairs in the list are inserted first, so on duplicate keys the head-most value wins.
+**Radix trie built from a list of key-value pairs.** The trie built from the empty list is the
+empty trie, and the trie built from a list with head $(k, v)$ and tail $L$ is the trie built from
+$L$ with the value $v$ inserted at the key $k$. Later pairs in the list are thus inserted first,
+so on duplicate keys the head-most value wins.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
+- [Radix trie](radix-trie.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
-- [Insert](insert.md)
+- [Empty radix trie](empty.md)
+- [Insertion into a radix trie](insert.md)
 
 ## Sources
 

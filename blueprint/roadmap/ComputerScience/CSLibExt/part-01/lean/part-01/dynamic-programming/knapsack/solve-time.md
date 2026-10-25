@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.solve_time
 ---
 
-# Solve time
+# Exact cost of the knapsack algorithm
 
-The exact cost is one tick per table cell and one tick per reconstructed item row.
+**Exact cost of the knapsack algorithm.** For every list of $n$ knapsack items and every
+capacity $W \in \mathbb{N}$, the bottom-up knapsack algorithm costs exactly $n(W + 1) + n$ ticks:
+one for each of the $n(W + 1)$ table cells it computes and one for each of the $n$ item rows it
+inspects during reconstruction.
 
 ## Depends on
 
-- [Item](item.md)
-- [Result](result.md)
-- [Solve](solve.md)
+- [Knapsack item](item.md)
+- [Knapsack result](result.md)
+- [Bottom-up zero-one knapsack algorithm](solve.md)
 
 ## Sources
 

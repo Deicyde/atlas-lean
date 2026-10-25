@@ -6,31 +6,34 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMin
 ---
 
-# Delete Min
+# Deleting the minimum of a binomial heap
 
-Remove and return the minimum value.
+**Deleting the minimum of a binomial heap.** If the binomial heap $H$ has no trees, there is no
+result. Otherwise, remove from the list of trees of $H$ the first tree whose root is minimal; the
+result is that root together with the binomial heap whose list of trees is obtained by melding
+the children of the removed tree, in reversed order, with the remaining trees.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 
 ## Proof depends on
 
-- [Ranks At Least](ranks-at-least.md)
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
+- [Rank lower bound for a forest](ranks-at-least.md)
+- [Valid binomial forest](valid-2.md)
+- [Validity of binomial forests passes to sublists](sublist.md)
 - [Elements](elements-2.md)
-- [Meld Trees](meld-trees.md)
-- [Meld Trees correct](meld-trees-correct.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid reverse children](valid-reverse-children.md)
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Melding binomial forests](meld-trees.md)
+- [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Removing a minimum-root tree](remove-min-tree-spec.md)
+- [Reversed children of a valid binomial tree form a valid forest](valid-reverse-children.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Children of a binomial tree](children.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

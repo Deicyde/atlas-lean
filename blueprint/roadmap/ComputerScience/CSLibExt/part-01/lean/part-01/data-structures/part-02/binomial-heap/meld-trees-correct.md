@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.meldTrees_correct
 ---
 
-# Meld Trees correct
+# Melding preserves forest validity and rank lower bounds
 
-Melding valid forests preserves validity and their common rank lower bound.
+**Melding preserves forest validity and rank lower bounds.** Let $r$ be a natural number
+and let $F$ and $G$ be valid binomial forests in which every tree has rank at least $r$. Then
+the meld of $F$ and $G$ is a valid binomial forest in which every tree has rank at least $r$.
 
 ## Depends on
 
-- [Ranks At Least](ranks-at-least.md)
-- [Valid](valid-2.md)
-- [Meld Trees](meld-trees.md)
-- [Binomial Tree](binomial-tree.md)
+- [Rank lower bound for a forest](ranks-at-least.md)
+- [Valid binomial forest](valid-2.md)
+- [Melding binomial forests](meld-trees.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Carry](carry.md)
-- [Valid nil](valid-nil.md)
-- [Valid](valid.md)
-- [Link](link-2.md)
-- [Children](children.md)
-- [Link](link.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Carry insertion into a binomial forest](carry.md)
+- [The empty forest is valid](valid-nil.md)
+- [Valid binomial tree](valid.md)
+- [Linking preserves binomial-tree validity](link-2.md)
+- [Children of a binomial tree](children.md)
+- [Linking two binomial trees](link.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.YFastTrie.mem_contents_iff_exists_of_valid
 ---
 
-# Mem contents iff exists of valid
+# Keys of a valid y-fast trie are the keys in buckets
 
-Under validity, a key is stored exactly when it lies in some bucket
-(the bucket's owner is then necessarily a representative).
+**Keys of a valid y-fast trie are the keys in buckets.** If $t$ is a valid y-fast trie over
+$w$-bit keys, then a $w$-bit key $x$ is stored in $t$ if and only if $x$ lies in the bucket owned
+by some $w$-bit key $r$ (such an owner $r$ is then necessarily a representative).
 
 ## Depends on
 
-- [YFast Trie](yfast-trie.md)
+- [y-fast trie skeleton](yfast-trie.md)
 - [Valid](valid-2.md)
-- [Contents](contents.md)
+- [Keys of a y-fast trie](contents.md)
 
 ## Proof depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Valid](valid.md)
-- [Mem contents iff](mem-contents-iff.md)
+- [x-fast trie](xfast-trie.md)
+- [Valid x-fast trie](valid.md)
+- [Membership in a y-fast trie via representatives' buckets](mem-contents-iff.md)
 
 ## Sources
 

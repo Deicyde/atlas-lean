@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.Separated
 ---
 
-# Separated
+# Separated treap trees
 
-`Separated left right` states that every left key is below every right key.
+**Separated treap trees.** For keys equipped with a binary relation $<$, two trees $L$
+and $R$ are separated when $a < b$ for every key $a$ occurring at a node of $L$ and every
+key $b$ occurring at a node of $R$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [Mem Key](mem-key.md)
+- [Key membership in a treap tree](mem-key.md)
 
 ## Sources
 

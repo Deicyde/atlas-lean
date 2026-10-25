@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.lookup_eq_some_iff_mem_entries
 ---
 
-# Lookup eq some iff mem entries
+# Lookup agrees with the entries of a valid radix trie
 
-Lookup succeeds exactly when the pair occurs in `entries`, for valid tries.
+**Lookup agrees with the entries of a valid radix trie.** For a valid radix trie $T$, every
+key $k$ and every value $v$, looking up $k$ in $T$ returns $v$ if and only if the pair $(k, v)$
+occurs in the list of entries of $T$.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Valid](valid.md)
-- [Entries](entries.md)
-- [Lookup](lookup.md)
+- [Radix trie](radix-trie.md)
+- [Valid radix trie](valid.md)
+- [Entries of a radix trie](entries.md)
+- [Radix trie lookup](lookup.md)
 
 ## Proof depends on
 
-- [Root Compact](root-compact.md)
-- [Append of common Prefix eq](append-of-common-prefix-eq.md)
-- [Common Prefix](common-prefix.md)
-- [Common Prefix eq of append](common-prefix-eq-of-append.md)
-- [Find Edge](find-edge.md)
-- [Lookup node cons](lookup-node-cons.md)
+- [Path-compressed root](root-compact.md)
+- [When the common prefix is the second list, the first list extends it](append-of-common-prefix-eq.md)
+- [Longest common prefix](common-prefix.md)
+- [The longest common prefix of a list and its prefix](common-prefix-eq-of-append.md)
+- [Edge search by first symbol](find-edge.md)
+- [Radix trie lookup of a nonempty key at a node](lookup-node-cons.md)
 
 ## Sources
 

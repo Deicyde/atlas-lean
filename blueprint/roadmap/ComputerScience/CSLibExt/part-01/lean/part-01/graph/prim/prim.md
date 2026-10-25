@@ -19,14 +19,14 @@ Disconnected inputs still extract all vertices and return a parent forest.
 
 ## Proof depends on
 
-- [Indexed Min Queue](../../data-structures/part-01/indexed-min-queue/basic/indexed-min-queue.md)
-- [Decrease Key](../../data-structures/part-01/indexed-min-queue/basic/decrease-key.md)
-- [Empty](../../data-structures/part-01/indexed-min-queue/basic/empty.md)
-- [Extract Min](../../data-structures/part-01/indexed-min-queue/basic/extract-min.md)
-- [Insert](../../data-structures/part-01/indexed-min-queue/basic/insert.md)
-- [Member](../../data-structures/part-01/indexed-min-queue/basic/member.md)
-- [Position valid](../../data-structures/part-01/indexed-min-queue/correctness/position-valid.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/indexed-min-queue.md)
+- [Decrease-key in an indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/decrease-key.md)
+- [Empty indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/empty.md)
+- [Extract-min in an indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/extract-min.md)
+- [Insertion into an indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/insert.md)
+- [Membership test in an indexed minimum queue](../../data-structures/part-01/indexed-min-queue/basic/member.md)
+- [Recorded positions lie inside the heap](../../data-structures/part-01/indexed-min-queue/correctness/position-valid.md)
+- [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Sources
 

@@ -7,37 +7,39 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.connected_makeRoot
 ---
 
-# Connected make Root
+# Making a vertex the root keeps its connections
 
-`makeRoot x` keeps `x` connected to exactly the vertices it was
-connected to: rerooting spans the same vertex set as the old tree (and,
-by `rerootAt`, the same undirected edges). Vertex disjointness is the
-side condition that pins down which tree that is.
+**Making a vertex the root keeps its connections.** Let $s$ be a valid link-cut tree state
+and let $x$ and $y$ be connected in $s$. Then $x$ and $y$ are still connected in the state
+obtained from $s$ by making $x$ the root of its represented tree.
+
+Rerooting spans the same vertex set as the old tree and keeps every undirected edge; vertex
+disjointness of the represented trees pins down which tree contains $x$.
 
 ## Depends on
 
-- [State](state.md)
-- [Connected](connected.md)
-- [Valid](valid.md)
-- [Make Root](make-root.md)
+- [Link-cut tree state](state.md)
+- [Connectivity in a link-cut tree state](connected.md)
+- [Valid link-cut tree states](valid.md)
+- [Making a vertex the root in a link-cut tree state](make-root.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Parent Child](parent-child.md)
-- [Mem](mem.md)
-- [Find Tree](find-tree.md)
-- [Graft At](graft-at.md)
-- [Mem vertices graft At](mem-vertices-graft-at.md)
-- [Mem vertices reroot At](mem-vertices-reroot-at.md)
-- [Remove Tree](remove-tree.md)
-- [Reroot At](reroot-at.md)
-- [Reroot At eq none of not mem](reroot-at-eq-none-of-not-mem.md)
-- [Root graft At](root-graft-at.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
+- [Vertex of a link-cut tree state](mem.md)
+- [Tree of a forest containing a vertex](find-tree.md)
+- [Grafting a tree below a vertex](graft-at.md)
+- [Vertices after grafting](mem-vertices-graft-at.md)
+- [Rerooting preserves the vertex set](mem-vertices-reroot-at.md)
+- [Removing the trees that contain a vertex](remove-tree.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
+- [Rerooting fails at an absent vertex](reroot-at-eq-none-of-not-mem.md)
+- [Grafting keeps the root](root-graft-at.md)
 
 ## Sources
 

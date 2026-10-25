@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.Valid.keys_nodup
 ---
 
-# Keys nodup
+# Stored keys of a valid radix trie are distinct
 
-The stored keys of a valid radix trie are duplicate-free.
+**Stored keys of a valid radix trie are distinct.** If $t$ is a valid radix trie, then its
+list of stored keys has no duplicates.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
-- [Valid](valid.md)
-- [Keys](keys.md)
+- [Radix trie](radix-trie.md)
+- [Valid radix trie](valid.md)
+- [Stored keys of a radix trie](keys.md)
 
 ## Proof depends on
 
-- [Root Compact](root-compact.md)
-- [Entries](entries.md)
+- [Path-compressed root](root-compact.md)
+- [Entries of a radix trie](entries.md)
 
 ## Sources
 

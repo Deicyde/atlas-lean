@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.Result
 ---
 
-# Result
+# Matrix-chain result
 
-An optimum scalar cost and one parenthesization attaining it.
+**Matrix-chain result.** A matrix-chain result for $n$ matrices pairs a natural number, the
+reported optimal scalar multiplication count, with a parenthesization of $n$ matrices, the
+reported optimal parenthesization. The structure itself does not require the count to be minimal
+or to be attained by the parenthesization.
 
 ## Depends on
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.findMin_eq_none_iff
 ---
 
-# Find Min eq none iff
+# The minimum lookup fails exactly on the empty binomial heap
 
-Minimum inspection fails exactly for the empty heap.
+**The minimum lookup fails exactly on the empty binomial heap.** For a binomial heap $H$ over a
+linearly ordered type, the minimum lookup of $H$ returns no value if and only if the list of
+trees of $H$ is empty.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
-- [Find Min](find-min.md)
-- [Binomial Tree](binomial-tree.md)
+- [Binomial heap](binomial-heap.md)
+- [Minimum of a binomial heap](find-min.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Remove Min Tree](remove-min-tree.md)
-- [Root](root.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

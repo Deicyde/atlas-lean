@@ -4,6 +4,6 @@ navigation: module
 
 # Inverse
 
-- [Fft Conjugate](fft-conjugate.md)
-- [Fft Scale](fft-scale.md)
-- [Ifft](ifft.md)
+- [Charged entrywise conjugation](fft-conjugate.md)
+- [Charged entrywise scaling](fft-scale.md)
+- [Inverse FFT by conjugation](ifft.md)

@@ -6,18 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.consolidate
 ---
 
-# Consolidate
+# Consolidation of a forest
 
-Consolidate a forest by linking trees of equal degree until all root degrees are
-distinct, as in the `consolidate` step of CLRS. The result is sorted by degree.
+**Consolidation of a forest.** The consolidation of a list of Fibonacci trees is defined
+recursively: the consolidation of the empty list is the empty list, and the consolidation of a
+list with first tree $t$ and remaining list $L$ is the insertion of $t$ into the consolidation
+of $L$.
+
+Each insertion links trees of equal stored degree as in binary addition, so the result has
+strictly increasing, hence distinct, stored root degrees, as in the consolidate step of CLRS.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Add Tree](add-tree.md)
+- [Inserting a tree into a forest](add-tree.md)
 
 ## Sources
 

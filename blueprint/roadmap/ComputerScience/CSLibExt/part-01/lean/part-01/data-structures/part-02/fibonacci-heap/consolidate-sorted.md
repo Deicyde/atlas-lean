@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciForest.consolidate_sorted
 ---
 
-# Consolidate sorted
+# Consolidation sorts root degrees
 
-A consolidated forest has strictly increasing root degrees.
+**Consolidation sorts root degrees.** For every list of Fibonacci trees, the stored degrees
+of the trees in its consolidation are strictly increasing in list order.
 
 ## Depends on
 
 - [Sorted Degrees](sorted-degrees.md)
-- [Consolidate](consolidate.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Consolidation of a forest](consolidate.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Add Tree](add-tree.md)
-- [Degree](degree.md)
-- [Degree link of eq](degree-link-of-eq.md)
-- [Link](link.md)
+- [Inserting a tree into a forest](add-tree.md)
+- [Degree of a Fibonacci tree](degree.md)
+- [Degree of the link of two trees of equal degree](degree-link-of-eq.md)
+- [Linking two Fibonacci trees](link.md)
 
 ## Sources
 

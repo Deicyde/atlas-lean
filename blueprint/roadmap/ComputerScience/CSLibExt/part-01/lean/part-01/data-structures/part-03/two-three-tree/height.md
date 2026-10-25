@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.height
 ---
 
-# Height
+# Height of a 2-3 tree
 
-The height of a tree, computed from its leftmost spine.
+**Height of a 2-3 tree.** The height of a 2-3 tree is computed along its leftmost spine:
+a leaf has height $0$, and a 2-node or a 3-node has height one more than the height of its
+leftmost child.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Height-indexed 2-3 trees](tree.md)
 
 ## Sources
 

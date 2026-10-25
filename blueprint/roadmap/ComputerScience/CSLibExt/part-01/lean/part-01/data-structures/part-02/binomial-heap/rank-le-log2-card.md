@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialTree.Valid.rank_le_log2_card
 ---
 
-# Rank le log2 card
+# The rank of a valid binomial tree is logarithmic
 
-The rank of a valid tree is bounded by the binary logarithm of its cardinality.
+**The rank of a valid binomial tree is logarithmic.** A valid binomial tree of rank $r$
+holding $n$ elements, counted with multiplicity, satisfies $r \le \lfloor \log_2 n \rfloor$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Proof depends on
 
-- [Card elements](card-elements.md)
+- [Size of a valid binomial tree](card-elements.md)
 
 ## Sources
 

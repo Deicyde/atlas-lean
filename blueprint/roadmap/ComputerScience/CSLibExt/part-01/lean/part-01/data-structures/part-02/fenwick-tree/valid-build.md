@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.valid_build
 ---
 
-# Valid build
+# Building a Fenwick tree yields a valid representation
 
-`build` produces a tree representing its input.
+**Building a Fenwick tree yields a valid representation.** For every list $a$ over an
+additive commutative monoid, the Fenwick tree built from $a$ represents $a$.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Build](build.md)
+- [Fenwick tree representing a list](valid.md)
+- [Building a Fenwick tree from a list](build.md)
 
 ## Proof depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Block Sum](block-sum.md)
-- [Block Sum Array](block-sum-array.md)
-- [Lowbit](lowbit.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Fenwick-tree interval sum of a list](block-sum.md)
+- [Interval sum read from an array](block-sum-array.md)
+- [Lowest set bit](lowbit.md)
 
 ## Sources
 

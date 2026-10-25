@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.contents_erase
 ---
 
-# Contents erase
+# Treap inorder contents after erasure
 
-Erased contents are exactly the two non-pivot split sides.
+**Treap inorder contents after erasure.** Let the keys come from a linearly ordered type, let
+$t$ be a tree and $k$ a key, and let $L$ and $G$ be the lower and upper trees produced by
+splitting $t$ at $k$. Then the inorder list of key-value pairs of the tree obtained by erasing
+$k$ from $t$ is the inorder list of $L$ followed by the inorder list of $G$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Split Result](split-result.md)
-- [Contents](contents.md)
-- [Erase](erase.md)
-- [Split](split.md)
+- [Treap trees](tree.md)
+- [Result of a treap split](split-result.md)
+- [Treap inorder contents](contents.md)
+- [Treap deletion](erase.md)
+- [Treap split](split.md)
 
 ## Proof depends on
 
-- [Contents merge](contents-merge.md)
+- [Treap merge concatenates inorder contents](contents-merge.md)
 
 ## Sources
 

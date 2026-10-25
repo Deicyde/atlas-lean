@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.time_make
 ---
 
-# Time make
+# Creating an empty catenable heap costs nothing
 
-`make` costs 0.
+**Creating an empty catenable heap costs nothing.** The operation that creates an empty
+catenable heap has time cost $0$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
 
 ## Sources
 

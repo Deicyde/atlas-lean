@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.keyDet_empty
 ---
 
-# Key Det empty
+# The empty cuckoo hash table is key-deterministic
 
-No key is stored with two values in the empty table, vacuously.
+**The empty cuckoo hash table is key-deterministic.** No key is stored with two different
+values in the empty cuckoo hash table, vacuously.
 
 ## Depends on
 
-- [Key Det](key-det.md)
-- [Empty](empty.md)
+- [Key determinism of a cuckoo hash table](key-det.md)
+- [Empty cuckoo hash table](empty.md)
 
 ## Proof depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Stored](stored.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Binding stored in a cuckoo hash table](stored.md)
 
 ## Sources
 

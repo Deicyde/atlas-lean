@@ -18,10 +18,10 @@ A singleton heap represents a singleton multiset.
 
 ## Proof depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
-- [Singleton](singleton.md)
+- [Fibonacci heap](fibonacci-heap.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [One-element Fibonacci heap](singleton.md)
 
 ## Sources
 

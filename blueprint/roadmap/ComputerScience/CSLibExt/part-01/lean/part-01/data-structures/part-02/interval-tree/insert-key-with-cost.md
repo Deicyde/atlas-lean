@@ -6,22 +6,30 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost
 ---
 
-# Insert Key With Cost
+# Keyed insertion with cost
 
-Keyed insertion or replacement, instrumented on its real execution path.
+**Keyed insertion with cost.** Inserting an entry $x$ into a tree returns a new tree together
+with an operation cost; keys (low endpoint, then identifier) are compared lexicographically. Into
+the empty tree, $x$ is inserted as a single node, at a cost of one node visit and one cache write.
+At a node with entry $y$: if the key of $x$ equals the key of $y$, then $y$ is replaced by $x$, at a
+cost of one node visit, one key comparison and one cache write; if the key of $x$ is smaller
+(respectively larger), then $x$ is inserted recursively into the left (respectively right)
+subtree, the node is rebuilt with recomputed metadata and rebalanced, and the cost is the cost of
+the recursive insertion, plus one node visit, one key comparison and one cache write, plus the
+cost of rebalancing.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
-- [Tree](tree.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Key](key.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Compare Key](compare-key.md)
+- [Search key of an interval entry](key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

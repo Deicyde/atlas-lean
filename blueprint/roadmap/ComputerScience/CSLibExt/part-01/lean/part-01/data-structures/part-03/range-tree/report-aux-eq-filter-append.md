@@ -14,19 +14,19 @@ list on the accumulator.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [Bounds Ok](bounds-ok.md)
-- [Report Aux](report-aux.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Bounds-valid range trees](bounds-ok.md)
+- [Accumulator range report](report-aux.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [Bounds of mem](bounds-of-mem.md)
-- [Tmax](tmax.md)
-- [Tmin](tmin.md)
-- [To List Aux](to-list-aux.md)
-- [To List Aux eq](to-list-aux-eq.md)
-- [To List node](to-list-node.md)
+- [Leaf values of a bounds-valid tree lie between the cached bounds](bounds-of-mem.md)
+- [Cached upper bound of a range tree](tmax.md)
+- [Cached lower bound of a range tree](tmin.md)
+- [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
+- [Range-tree leaf traversal appends to its accumulator](to-list-aux-eq.md)
+- [Leaf list of a range-tree node](to-list-node.md)
 
 ## Sources
 

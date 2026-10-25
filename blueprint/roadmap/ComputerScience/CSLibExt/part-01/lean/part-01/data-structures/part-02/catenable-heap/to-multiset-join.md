@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_join
 ---
 
-# To Multiset join
+# Multiset of a join node
 
-The multiset of a join node is the sum of the multisets of its children.
+**Multiset of a join node.** For all catenable heaps $L$ and $R$, the multiset of elements of
+the join node with left child $L$ and right child $R$ is the multiset sum of the multisets of
+elements of $L$ and $R$ (multiplicities add).
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To Multiset](to-multiset.md)
+- [Catenable heap](catenable-heap.md)
+- [Multiset of elements of a catenable heap](to-multiset.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
-- [To List join](to-list-join.md)
+- [Flattening of a catenable heap](to-list.md)
+- [Flattening a join of catenable heaps](to-list-join.md)
 
 ## Sources
 

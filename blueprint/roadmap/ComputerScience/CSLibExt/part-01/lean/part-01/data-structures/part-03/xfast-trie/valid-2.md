@@ -18,12 +18,12 @@ at `r`) is deferred, so this is the y-fast skeleton only.
 
 ## Depends on
 
-- [YFast Trie](yfast-trie.md)
+- [y-fast trie skeleton](yfast-trie.md)
 
 ## Proof depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Valid](valid.md)
+- [x-fast trie](xfast-trie.md)
+- [Valid x-fast trie](valid.md)
 
 ## Sources
 

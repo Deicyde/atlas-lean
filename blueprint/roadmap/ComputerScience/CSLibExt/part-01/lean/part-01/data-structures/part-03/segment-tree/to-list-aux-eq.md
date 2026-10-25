@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.toListAux_eq
 ---
 
-# To List Aux eq
+# Accumulator traversal prepends the leaf list
 
-The accumulator traversal prepends exactly the tree's leaves.
+**Accumulator traversal prepends the leaf list.** For every segment tree $t$ and every list
+$acc$, the accumulator traversal of $t$ starting from $acc$ returns the leaf list of $t$ followed
+by $acc$.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [To List](to-list.md)
-- [To List Aux](to-list-aux.md)
+- [Leaf list of a segment tree](to-list.md)
+- [Accumulator traversal of a segment tree](to-list-aux.md)
 
 ## Sources
 

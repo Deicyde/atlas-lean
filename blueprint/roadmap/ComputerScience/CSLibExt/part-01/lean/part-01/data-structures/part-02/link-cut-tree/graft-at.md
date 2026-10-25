@@ -6,16 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.graftAt
 ---
 
-# Graft At
+# Grafting a tree below a vertex
 
-Attach `newChild` as a new last child of the node labelled `y`, keeping
-every existing node and edge. Returns `none` when `y` does not occur. This
-is the tree surgery behind `State.link`: it adds exactly the edge from `y`
-to the root of `newChild`.
+**Grafting a tree below a vertex.** For a vertex $y$ and trees $N$ and $T$, grafting $N$ at
+$y$ in $T$ attaches $N$ as a new last child of the first node of $T$ labelled $y$ in preorder,
+keeping every existing node and edge; it returns nothing when $y$ does not occur in $T$. This is
+the tree surgery behind linking two trees: it adds exactly the edge from $y$ to the root of $N$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 
 ## Sources
 

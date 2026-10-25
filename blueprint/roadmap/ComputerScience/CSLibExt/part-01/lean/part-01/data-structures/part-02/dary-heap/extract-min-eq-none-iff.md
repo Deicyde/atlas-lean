@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.extractMin_eq_none_iff
 ---
 
-# Extract Min eq none iff
+# Extracting the minimum of a d-ary heap fails exactly on the empty heap
 
-Extraction fails exactly for the empty representation.
+**Extracting the minimum of a d-ary heap fails exactly on the empty heap.** For a $d$-ary
+min-heap $h$ over a linearly ordered type, extracting the minimum from $h$ returns no result if
+and only if the storage array of $h$ is empty.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Extract Min](extract-min.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Extracting the minimum of a $d$-ary min-heap](extract-min.md)
 
 ## Proof depends on
 
-- [Extract Tail](extract-tail.md)
+- [Removing the root of a $d$-ary min-heap](extract-tail.md)
 
 ## Sources
 

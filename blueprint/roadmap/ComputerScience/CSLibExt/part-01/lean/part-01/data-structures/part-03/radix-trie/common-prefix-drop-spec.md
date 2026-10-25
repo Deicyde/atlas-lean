@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.commonPrefix_drop_spec
 ---
 
-# Common Prefix drop spec
+# Longest common prefix in terms of dropped remainders
 
-The longest-common-prefix decomposition, stated with the drop remainders.
+**Longest common prefix in terms of dropped remainders.** Let $s$ and $t$ be lists over a type
+with decidable equality, let $p$ be their longest common prefix, of length $n$, and let $s'$ and
+$t'$ be the lists obtained from $s$ and $t$ by dropping their first $n$ elements. Then $s$ is $p$
+followed by $s'$, $t$ is $p$ followed by $t'$, and either $s'$ is empty, or $t'$ is empty, or
+$s'$ and $t'$ are both nonempty with different first elements.
 
 ## Depends on
 
-- [Common Prefix](common-prefix.md)
+- [Longest common prefix](common-prefix.md)
 
 ## Proof depends on
 
-- [Common Prefix spec](common-prefix-spec.md)
+- [Characterization of the longest common prefix](common-prefix-spec.md)
 
 ## Sources
 

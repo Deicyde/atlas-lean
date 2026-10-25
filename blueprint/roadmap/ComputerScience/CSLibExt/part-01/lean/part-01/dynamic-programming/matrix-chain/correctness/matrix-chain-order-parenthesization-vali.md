@@ -7,25 +7,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_parenthesization_valid
 ---
 
-# Matrix Chain Order parenthesization valid
+# Matrix-chain ordering returns a valid parenthesization
 
-The returned parenthesization uses every matrix once in order and is dimension-valid.
+**Matrix-chain ordering returns a valid parenthesization.** For every $n \ge 1$ and all
+natural numbers $p_0, \dots, p_n$, the parenthesization returned by the matrix-chain ordering
+algorithm on the dimensions $p_0, \dots, p_n$ is valid: its leaves are the matrices
+$0, 1, \dots, n - 1$ in order, each exactly once, and at every multiplication node the column
+count of the left factor equals the row count of the right factor, where matrix $i$ has $p_i$
+rows and $p_{i+1}$ columns.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
+- [Matrix-chain cost](../basic/cost.md)
 - [Parenthesization](../basic/parenthesization.md)
-- [Is Valid](../basic/is-valid.md)
-- [Result](../basic/result.md)
-- [Matrix Chain Order](matrix-chain-order.md)
+- [Valid parenthesization](../basic/is-valid.md)
+- [Matrix-chain result](../basic/result.md)
+- [Matrix-chain ordering](matrix-chain-order.md)
 
 ## Proof depends on
 
-- [Dimension Compatible](../basic/dimension-compatible.md)
-- [Cols](../basic/cols.md)
-- [Matrix Indices](../basic/matrix-indices.md)
-- [Rows](../basic/rows.md)
-- [Scalar Multiplication Cost](../basic/scalar-multiplication-cost.md)
+- [Dimension-compatible parenthesization](../basic/dimension-compatible.md)
+- [Column count of a parenthesization](../basic/cols.md)
+- [Leaf indices of a parenthesization](../basic/matrix-indices.md)
+- [Row count of a parenthesization](../basic/rows.md)
+- [Scalar multiplication count of a parenthesization](../basic/scalar-multiplication-cost.md)
 
 ## Sources
 

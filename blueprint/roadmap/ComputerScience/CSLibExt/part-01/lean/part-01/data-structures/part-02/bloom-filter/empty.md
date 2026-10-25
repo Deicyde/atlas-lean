@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BloomFilter.empty
 ---
 
-# Empty
+# Empty Bloom filter
 
-The empty Bloom filter for the given hash functions: every bit is unset.
+**Empty Bloom filter.** Let $\alpha$ be a type and $m$ a natural number. Given a list of hash
+functions $\alpha \to \{0, \dots, m - 1\}$, the empty Bloom filter with these hash functions has
+all of its $m$ bits unset.
 
 ## Depends on
 
-- [Bloom Filter](bloom-filter.md)
+- [Bloom filter](bloom-filter.md)
 
 ## Sources
 

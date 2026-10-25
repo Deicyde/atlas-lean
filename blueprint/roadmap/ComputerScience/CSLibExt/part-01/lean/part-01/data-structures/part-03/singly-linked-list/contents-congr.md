@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.contents_congr
 ---
 
-# Contents congr
+# The payload list depends only on the listed cells
 
-Contents depend only on the cells at the listed identities.
+**The payload list depends only on the listed cells.** Fix a capacity $n$ and let $s$ and $s'$
+be stores assigning to each identity below $n$ either nothing or a singly linked list node. If $L$
+is a list of identities below $n$ and $s'(i) = s(i)$ for every $i$ in $L$, then the contents of
+$s'$ at $L$ equal the contents of $s$ at $L$.
 
 ## Depends on
 
-- [Node](node.md)
-- [Contents](contents.md)
+- [Singly linked list node](node.md)
+- [Payload list of a singly linked list store](contents.md)
 
 ## Sources
 

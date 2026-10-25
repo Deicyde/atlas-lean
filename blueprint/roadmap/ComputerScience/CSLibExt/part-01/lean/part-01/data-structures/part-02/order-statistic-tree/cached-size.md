@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OrderStatisticTree.cachedSize
 ---
 
-# Cached Size
+# Cached root size
 
-The cached size at the root, or zero for an empty tree.
+**Cached root size.** The cached root size of an order-statistic tree is the subtree size
+stored in the entry of its root node, and is $0$ for the empty tree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Order-statistic tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Order-statistic tree node entry](entry.md)
 
 ## Sources
 

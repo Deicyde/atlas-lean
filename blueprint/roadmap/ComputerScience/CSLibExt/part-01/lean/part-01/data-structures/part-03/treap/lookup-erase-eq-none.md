@@ -7,32 +7,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.lookup_erase_eq_none
 ---
 
-# Lookup erase eq none
+# Erased keys are not found
 
-Looking up an erased key returns no value.
+**Erased keys are not found.** Let $t$ be a valid treap with keys in a linearly ordered type,
+that is, $t$ is ordered as a binary search tree by key and as a min-heap by priority. For every
+key $k$, looking up $k$ in the tree obtained by erasing $k$ from $t$ returns no value.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
-- [Erase](erase.md)
-- [Lookup](lookup.md)
+- [Treap trees](tree.md)
+- [Valid treap](valid.md)
+- [Treap deletion](erase.md)
+- [Treap lookup](lookup.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
-- [Heap Ordered](heap-ordered.md)
-- [Mem Key](mem-key.md)
-- [Ordered](ordered.md)
-- [Split Result](split-result.md)
-- [All Nodes key iff](all-nodes-key-iff.md)
-- [Contents](contents.md)
-- [Contents erase](contents-erase.md)
-- [Key mem contents](key-mem-contents.md)
-- [Lookup contents](lookup-contents.md)
-- [Split](split.md)
-- [Split bounds](split-bounds.md)
-- [Valid erase](valid-erase.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Heap order of treap priorities](heap-ordered.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Ordered treap tree](ordered.md)
+- [Result of a treap split](split-result.md)
+- [Treap all-nodes predicate on keys via key membership](all-nodes-key-iff.md)
+- [Treap inorder contents](contents.md)
+- [Treap inorder contents after erasure](contents-erase.md)
+- [Keys occurring in the inorder contents](key-mem-contents.md)
+- [Treap lookup agrees with the inorder contents](lookup-contents.md)
+- [Treap split](split.md)
+- [Split bounds for an ordered treap](split-bounds.md)
+- [Erasing from a treap preserves validity](valid-erase.md)
 
 ## Sources
 

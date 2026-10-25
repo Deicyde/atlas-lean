@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.exists_mem_inter_of_cross
 ---
 
-# Crossing
+# Crossing of two non-vertical segments
 
-**Crossing**: if two non-vertical segments, both spanning `[x₀, x₁]`, are ordered one way at
-`x₀` and the other way (or tied) at `x₁`, they meet at some `x ∈ (x₀, x₁]`, strictly before `x₁`
-when the order at `x₁` is strict.
+**Crossing of two non-vertical segments.** Let $K$ be a linearly ordered field, write $z_1$ for
+the first coordinate of a point $z \in K^2$, and let $[p, q]$ and $[p', q']$ be segments in $K^2$
+with $p_1 < q_1$ and $p'_1 < q'_1$. For $t \in K$ let $y(t)$ be the height at $t$ of the line
+through $p$ and $q$, and $y'(t)$ that of the line through $p'$ and $q'$. Let $a < b$ with
+$p_1 \le a$, $p'_1 \le a$, $b \le q_1$ and $b \le q'_1$. If $y(a) < y'(a)$ and $y'(b) \le y(b)$,
+then some $z \in [p, q] \cap [p', q']$ has $a < z_1 \le b$, and $z_1 < b$ if moreover
+$y'(b) < y(b)$.
 
 ## Depends on
 
-- [Line Y](line-y.md)
+- [Height of a line at an abscissa](line-y.md)
 
 ## Proof depends on
 
-- [Mem segment iff line Y](mem-segment-iff-line-y.md)
+- [A non-vertical segment is the graph of its line](mem-segment-iff-line-y.md)
 
 ## Sources
 

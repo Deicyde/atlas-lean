@@ -16,7 +16,7 @@ Forgetting the instrumentation yields exactly the existing loop result.
 - [Huffman Priority](huffman-priority.md)
 - [Huffman Tree](huffman-tree.md)
 - [Huffman Work Item](huffman-work-item.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 - [Huffman Loop](huffman-loop.md)
 - [Huffman Loop With Lookup Count](huffman-loop-with-lookup-count.md)
 

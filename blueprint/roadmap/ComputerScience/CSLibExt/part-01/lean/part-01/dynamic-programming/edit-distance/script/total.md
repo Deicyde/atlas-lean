@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditDistanceCost.total
 ---
 
-# Total
+# Total edit-distance cost
 
-Total charged events in the edit-distance cost model.
+**Total edit-distance cost.** The total of an edit-distance cost record is the number of table
+cells initialized or transitioned plus the number of operations emitted during reconstruction.
 
 ## Depends on
 
-- [Edit Distance Cost](edit-distance-cost.md)
+- [Edit-distance cost counters](edit-distance-cost.md)
 
 ## Sources
 

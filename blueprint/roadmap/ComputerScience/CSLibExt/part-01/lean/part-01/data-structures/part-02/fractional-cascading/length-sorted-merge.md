@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.length_sortedMerge
 ---
 
-# Length sorted Merge
+# Length of a sorted merge
 
-The length of a sorted merge is the sum of the input lengths.
+**Length of a sorted merge.** For catalogs (finite lists) $L$ and $M$ over a linearly ordered
+type, the sorted merge of $L$ and $M$ has length equal to the length of $L$ plus the length of
+$M$.
 
 ## Depends on
 

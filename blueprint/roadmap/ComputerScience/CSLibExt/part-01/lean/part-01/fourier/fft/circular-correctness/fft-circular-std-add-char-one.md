@@ -6,23 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftCircular_stdAddChar_one
 ---
 
-# Fft Circular std Add Char one
+# FFT circular convolution with root $e^{2\pi i/n}$ computes the cyclic convolution
 
-Every actual MIT/CLRS-sign circular output is its cyclic convolution coefficient.
+**FFT circular convolution with root $e^{2\pi i/n}$ computes the cyclic convolution.** Let
+$n = 2^d$ and $x, y \in \mathbb{C}^n$. Run FFT circular convolution of $x$ and $y$ with root
+$\omega = e^{2\pi i/n}$, the value at $1$ of the standard additive character of
+$\mathbb{Z}/n\mathbb{Z}$. Then for every $k < n$, entry $k$ of the returned vector equals
+$\sum_{j \in \mathbb{Z}/n\mathbb{Z}} x_j \, y_{k - j}$, with indices taken modulo $n$.
+
+This root is the sign convention of the MIT and CLRS sources.
 
 ## Depends on
 
-- [Fft Circular](../convolution/fft-circular.md)
+- [FFT circular convolution](../convolution/fft-circular.md)
 
 ## Proof depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Fft Circular ret](fft-circular-ret.md)
-- [Fft Pointwise](../convolution/fft-pointwise.md)
-- [Fft Pointwise ret](../convolution-characteristic/fft-pointwise-ret.md)
-- [Fft std Add Char one normalized](../canonical-dft/fft-std-add-char-one-normalized.md)
-- [Ifft](../inverse/ifft.md)
-- [Ifft std Add Char one](../inverse-canonical-dft/ifft-std-add-char-one.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Output of FFT circular convolution](fft-circular-ret.md)
+- [Timed pointwise product](../convolution/fft-pointwise.md)
+- [Entries of the pointwise product](../convolution-characteristic/fft-pointwise-ret.md)
+- [The radix-two FFT with root $e^{2\pi i/n}$, divided by $n$, computes the inverse DFT](../canonical-dft/fft-std-add-char-one-normalized.md)
+- [Inverse FFT by conjugation](../inverse/ifft.md)
+- [Inverse FFT at the positive-sign root computes the normalized forward DFT](../inverse-canonical-dft/ifft-std-add-char-one.md)
 - [Convolution theorem for the discrete Fourier transform](../../../../../../../../Analysis/MathlibExt/part-01/fourier/inv-dft-mul-dft.md)
 
 ## Sources

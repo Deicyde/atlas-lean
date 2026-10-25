@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.mem_fromList
 ---
 
-# Mem from List
+# Membership in a weight-balanced tree built from a list
 
-A key is in a tree built from a list exactly when it is in the list.
+**Membership in a weight-balanced tree built from a list.** Let the keys carry a linear
+order. For every key $x$ and every list $xs$, $x$ occurs in the weight-balanced tree built from
+$xs$ by repeated insertion exactly when $x$ is an element of $xs$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [From List](from-list.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Weight-balanced tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
-- [Mem insert](mem-insert.md)
+- [Weight-balanced insertion](insert.md)
+- [Membership after weight-balanced insertion](mem-insert.md)
 
 ## Sources
 

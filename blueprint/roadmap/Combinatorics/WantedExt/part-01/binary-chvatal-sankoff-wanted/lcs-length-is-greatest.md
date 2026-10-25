@@ -23,8 +23,8 @@ $\mathrm{LCS}(x, y)$.
 
 ## Proof depends on
 
-- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
-- [Longest Common Subsequence correct](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence-correct.md)
+- [Longest common subsequence by dynamic programming](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
+- [Correctness of the longest common subsequence algorithm](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence-correct.md)
 - [Common subsequence](is-common-subsequence.md)
 
 ## Sources

@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.prefixSum_zero
 ---
 
-# Prefix Sum zero
+# The empty prefix sum is zero
 
-The empty prefix sums to zero.
+**The empty prefix sum is zero.** For every Fenwick tree $t$ over an additive commutative
+monoid, the prefix sum of length $0$ of $t$ is $0$.
 
 ## Depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Prefix Sum](prefix-sum.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Fenwick tree prefix sum](prefix-sum.md)
 
 ## Sources
 

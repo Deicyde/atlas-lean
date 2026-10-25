@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Deque.contents_eq_cons_of_popFront_eq_some
 ---
 
-# Contents eq cons of pop Front eq some
+# Popping the front of a deque
 
-A successful front pop returns the head and a deque representing the remaining tail.
+**Popping the front of a deque.** If popping the front of a deque $d$ succeeds and returns an
+element $x$ and a deque $d'$, then the sequence represented by $d$ is $x$ followed by the sequence
+represented by $d'$.
 
 ## Depends on
 
-- [Deque](deque.md)
-- [Contents](contents.md)
-- [Pop Front](pop-front.md)
+- [Two-list deque](deque.md)
+- [Represented sequence of a deque](contents.md)
+- [Pop the front of a deque](pop-front.md)
 
 ## Sources
 

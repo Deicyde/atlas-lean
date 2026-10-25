@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.valid_iff
 ---
 
-# Valid iff
+# Valid trees have distinct vertices
 
-Validity is exactly duplicate-freeness of the preorder vertex list.
+**Valid trees have distinct vertices.** A tree $t$ is valid if and only if its list of
+vertices in preorder has no repeated entries.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
+- [Rooted ordered tree](tree.md)
+- [Valid Euler-tour tree](valid.md)
 - [Vertices](vertices.md)
 
 ## Sources

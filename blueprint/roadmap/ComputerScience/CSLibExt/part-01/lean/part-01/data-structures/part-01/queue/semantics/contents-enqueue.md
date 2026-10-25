@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.contents_enqueue
 ---
 
-# Contents enqueue
+# Enqueueing appends to the contents
 
-Enqueueing places one element at the end of the FIFO contents.
+**Enqueueing appends to the contents.** For every queue $q$ and value $v$, the contents of
+the queue obtained by enqueueing $v$ onto $q$ are the contents of $q$ followed by $v$.
 
 ## Depends on
 
-- [Contents](contents.md)
+- [Contents of a two-list queue](contents.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SuffixTree.eq_drop_of_lookup_suffixTree
 ---
 
-# Eq drop of lookup suffix Tree
+# Lookup in the suffix tree returns starting indices
 
-Everything found by lookup in the suffix tree is a terminated suffix.
+**Lookup in the suffix tree returns starting indices.** Let $s$ be a list over $\alpha$, let
+$k$ be a list over $\alpha$ extended by a fresh terminator symbol, and let $i$ be a natural number.
+If looking up $k$ in the suffix tree of $s$ returns $i$, then $i \le |s|$ and $k$ is the
+terminated string of $s$ with its first $i$ symbols removed.
 
 ## Depends on
 
-- [Lookup](../radix-trie/lookup.md)
-- [Suffix Tree](suffix-tree.md)
-- [Terminated](terminated.md)
+- [Radix trie lookup](../radix-trie/lookup.md)
+- [Suffix tree](suffix-tree.md)
+- [Terminated string](terminated.md)
 
 ## Proof depends on
 
-- [Mem of lookup build From](../radix-trie/mem-of-lookup-build-from.md)
-- [Suffix Entries](suffix-entries.md)
+- [Lookups in a radix trie built from a list come from the list](../radix-trie/mem-of-lookup-build-from.md)
+- [Suffix entries of a string](suffix-entries.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.KdTree.size_build
 ---
 
-# Size build
+# Size of a built kd-tree
 
-The size of a built tree is the number of input points.
+**Size of a built kd-tree.** Let $d \ge 1$. For every starting axis $a$ and every list
+$P$ of points of $\mathbb{Z}^d$, the size of the kd-tree built from $P$ starting at axis $a$
+equals the length of $P$ (repeated points counted with multiplicity).
 
 ## Depends on
 
-- [Build](build.md)
-- [Size](size.md)
+- [Kd-tree construction by median splits](build.md)
+- [Size of a kd-tree](size.md)
 
 ## Proof depends on
 
-- [Length to List](length-to-list.md)
-- [To List](to-list.md)
-- [To List build perm](to-list-build-perm.md)
+- [Length of the point list of a kd-tree](length-to-list.md)
+- [Point list of a kd-tree](to-list.md)
+- [Building a kd-tree preserves its points](to-list-build-perm.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ifft_fft_stdAddChar_one
 ---
 
-# Ifft fft std Add Char one
+# Inverse FFT after FFT at the positive root is the identity
 
-Execute positive-sign forward and source inverse on every admitted vector.
+**Inverse FFT after FFT at the positive root is the identity.** Let $d$ be a natural number,
+$N = 2^d$ and $\omega = e^{2\pi i/N}$. For every vector $x \in \mathbb{C}^N$, running the
+radix-two FFT with root $\omega$ on $x$ and then the inverse FFT with root $\omega$ on its output
+returns $x$.
 
 ## Depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Ifft](../inverse/ifft.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Inverse FFT by conjugation](../inverse/ifft.md)
 
 ## Proof depends on
 
-- [Fft std Add Char one normalized](../canonical-dft/fft-std-add-char-one-normalized.md)
-- [Ifft std Add Char one](../inverse-canonical-dft/ifft-std-add-char-one.md)
+- [The radix-two FFT with root $e^{2\pi i/n}$, divided by $n$, computes the inverse DFT](../canonical-dft/fft-std-add-char-one-normalized.md)
+- [Inverse FFT at the positive-sign root computes the normalized forward DFT](../inverse-canonical-dft/ifft-std-add-char-one.md)
 
 ## Sources
 

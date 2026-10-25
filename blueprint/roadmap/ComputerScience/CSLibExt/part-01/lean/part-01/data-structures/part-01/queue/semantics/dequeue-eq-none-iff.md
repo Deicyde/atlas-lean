@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.dequeue?_eq_none_iff
 ---
 
-# Dequeue? eq none iff
+# Dequeueing fails exactly on empty queues
 
-Dequeueing fails exactly when the FIFO contents are empty.
+**Dequeueing fails exactly on empty queues.** For every queue $q$, dequeueing $q$ returns
+nothing if and only if the contents of $q$ are empty.
 
 ## Depends on
 
-- [Contents](contents.md)
+- [Contents of a two-list queue](contents.md)
 
 ## Sources
 

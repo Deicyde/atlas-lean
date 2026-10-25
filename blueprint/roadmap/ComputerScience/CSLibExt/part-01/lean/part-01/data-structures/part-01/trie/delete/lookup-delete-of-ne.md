@@ -7,25 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_delete_of_ne
 ---
 
-# Lookup delete of ne
+# Deletion does not affect other keys
 
-Deleting one key does not change the lookup result for a distinct
-key.
+**Deletion does not affect other keys.** For every trie $t$ and all keys $k \ne k'$, looking
+up $k$ in the trie obtained from $t$ by deleting $k'$ gives the same result as looking up $k$
+in $t$.
 
 ## Depends on
 
 - [Trie](../../../part-03/trie/trie.md)
-- [Delete](delete.md)
-- [Lookup](../../../part-03/trie/lookup.md)
+- [Deletion from a trie](delete.md)
+- [Trie lookup](../../../part-03/trie/lookup.md)
 
 ## Proof depends on
 
-- [Is Empty Node](is-empty-node.md)
-- [Is Empty Node eq true iff](is-empty-node-eq-true-iff.md)
-- [Lookup empty](../../../part-03/trie/lookup-empty.md)
-- [Lookup set Child of ne](lookup-set-child-of-ne.md)
-- [Lookup set Child self](lookup-set-child-self.md)
-- [Set Child](set-child.md)
+- [Empty trie nodes](is-empty-node.md)
+- [Characterization of empty nodes](is-empty-node-eq-true-iff.md)
+- [Lookup in the empty trie](../../../part-03/trie/lookup-empty.md)
+- [Setting a child leaves the other children unchanged](lookup-set-child-of-ne.md)
+- [Looking up a child just set](lookup-set-child-self.md)
+- [Setting a child in a trie's child list](set-child.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.Valid.length_eq_zero_of_card_eq_zero
 ---
 
-# Length eq zero of card eq zero
+# A valid binomial forest with no elements has no trees
 
-A valid forest with no represented elements has no roots.
+**A valid binomial forest with no elements has no trees.** Let $\alpha$ be a type with a
+relation $\le$. If a list of binomial trees over $\alpha$ is a valid binomial forest and its
+multiset of elements has cardinality $0$, then the list has length $0$.
 
 ## Depends on
 
-- [Valid](valid-2.md)
+- [Valid binomial forest](valid-2.md)
 - [Elements](elements-2.md)
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Card elements](card-elements.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
+- [Valid binomial tree](valid.md)
+- [Size of a valid binomial tree](card-elements.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

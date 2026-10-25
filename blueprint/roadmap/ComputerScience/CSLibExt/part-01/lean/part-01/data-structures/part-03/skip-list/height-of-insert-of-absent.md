@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.heightOf_insert_of_absent
 ---
 
-# Height Of insert of absent
+# Height of a newly inserted key
 
-Inserting an absent key stores the requested height, raised to at least one.
+**Height of a newly inserted key.** If a key $k$ does not occur in a skip list $S$, then
+after inserting $k$ into $S$ with any value and requested height $h$, the stored tower height
+of $k$ is $\max(1, h)$.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Height Of](height-of.md)
-- [Insert](insert.md)
+- [Skip list](skip-list.md)
+- [Stored tower height of a key](height-of.md)
+- [Skip-list insertion](insert.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

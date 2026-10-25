@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.mem_insert
 ---
 
-# Mem insert
+# Membership after weight-balanced insertion
 
-Inserting a key adds exactly that key to structural membership.
+**Membership after weight-balanced insertion.** Let the keys carry a linear order. For all
+keys $x$, $y$ and every binary tree $t$, $y$ occurs in the tree obtained from $t$ by
+weight-balanced insertion of $x$ exactly when $y = x$ or $y$ occurs in $t$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Insert](insert.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Weight-balanced insertion](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Mem balance](mem-balance.md)
+- [Weight-balanced rebalancing](balance.md)
+- [Membership after weight-balanced rebalancing](mem-balance.md)
 
 ## Sources
 

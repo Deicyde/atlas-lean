@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.decomp_isChain
 ---
 
-# Decomp is Chain
+# Decomposition paths are paths of the tree
 
-Every path in the decomposition of a tree is a genuine path of the
-tree: consecutive vertices are joined by a parent-child edge.
+**Decomposition paths are paths of the tree.** For every list of preferred edges, in the
+preferred-path decomposition of a tree $T$, the downward preferred path and every other path are
+paths of $T$: any two consecutive vertices are joined by a parent-child edge of $T$, in either
+direction.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Adjacent](adjacent.md)
-- [Decomp](decomp.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Adjacency in a rooted tree](adjacent.md)
+- [Preferred-path decomposition of a tree](decomp.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Decomp fst head?](decomp-fst-head.md)
-- [Tree Paths](tree-paths.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [The downward preferred path starts at the root](decomp-fst-head.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Sources
 

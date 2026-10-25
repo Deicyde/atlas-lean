@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.moveLastToRoot_siftDownReady
 ---
 
-# Move Last To Root sift Down Ready
+# Moving the last entry to the root prepares a sift-down
 
-Last-to-root replacement creates exactly an admissible sift-down
-violation at the root whenever at least two entries were present.
+**Moving the last entry to the root prepares a sift-down.** Let $a$ be a heap-ordered array
+over a linearly ordered type with at least two entries, and let $b$ be the array obtained from $a$
+by moving its last entry to the root. Then $b$ is ready for sifting down at index $0$: index $0$ is
+valid in $b$, and for every index $j > 0$ of $b$ whose parent index $\lfloor (j - 1)/2 \rfloor$ is
+not $0$, the entry of $b$ at the parent index is at most $b_j$.
 
 ## Depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Sift Down Ready](sift-down-ready.md)
-- [Move Last To Root](move-last-to-root.md)
+- [Heap order on a level-order array](heap-ordered.md)
+- [Sift-down precondition](sift-down-ready.md)
+- [Moving the last entry to the root](move-last-to-root.md)
 
 ## Proof depends on
 
-- [Heap Parent](heap-parent.md)
-- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
+- [The parent of a valid nonroot index is valid](heap-parent-lt-size.md)
 
 ## Sources
 

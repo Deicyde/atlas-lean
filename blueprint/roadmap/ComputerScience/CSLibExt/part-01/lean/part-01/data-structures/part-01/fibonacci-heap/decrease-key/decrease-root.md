@@ -6,14 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.decreaseRoot
 ---
 
-# Decrease Root
+# Replacing the root key of a Fibonacci tree
 
-Replace the root value of a tree, keeping its degree and children. Used on an
-extracted subtree with a key no larger than the old root.
+**Replacing the root key of a Fibonacci tree.** For a Fibonacci tree $t$ and a key $k$, this
+is the tree whose root value is $k$ and whose stored degree and list of children are those of $t$.
+
+It is used on an extracted subtree with a key no larger than the old root.
 
 ## Depends on
 
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
 
 ## Sources
 

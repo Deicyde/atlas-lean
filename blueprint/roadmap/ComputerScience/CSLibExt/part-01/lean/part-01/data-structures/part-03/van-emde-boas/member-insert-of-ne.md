@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.member_insert_of_ne
 ---
 
-# Member insert of ne
+# Insertion into a van Emde Boas tree leaves other elements unchanged
 
-Inserting `x` does not change membership of any other element.
+**Insertion into a van Emde Boas tree leaves other elements unchanged.** For every two-level
+van Emde Boas tree $t$ over the universe $\{0, 1, \dots, m^2 - 1\}$ and all $x \ne y$ in that
+universe, $y$ is a member of the tree obtained by inserting $x$ into $t$ if and only if $y$ is a
+member of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Insert](insert.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Insertion into a van Emde Boas tree](insert.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

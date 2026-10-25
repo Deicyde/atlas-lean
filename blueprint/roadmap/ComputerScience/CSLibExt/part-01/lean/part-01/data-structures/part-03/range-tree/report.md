@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.report
 ---
 
-# Report
+# Range report
 
-The range report for `[lo, hi]`; see `reportAux`.
+**Range report.** The range report of a range tree $t$ for integers $a$ and $b$ is the
+accumulator range report of $t$ for $[a, b]$ starting from the empty list.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
+- [Range tree](range-tree.md)
 
 ## Proof depends on
 
-- [Report Aux](report-aux.md)
+- [Accumulator range report](report-aux.md)
 
 ## Sources
 

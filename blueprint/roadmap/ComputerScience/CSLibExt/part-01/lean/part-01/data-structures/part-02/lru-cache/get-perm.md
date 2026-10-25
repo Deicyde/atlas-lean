@@ -7,19 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_perm
 ---
 
-# Get perm
+# A lookup permutes the entries
 
-The entries after `get` are a permutation of the entries before: the only effect of a
-lookup on the cache state is reordering by promotion.
+**A lookup permutes the entries.** For every LRU cache and every key $k$, the list of
+entries of the cache after looking up $k$ is a permutation of the list of entries before.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

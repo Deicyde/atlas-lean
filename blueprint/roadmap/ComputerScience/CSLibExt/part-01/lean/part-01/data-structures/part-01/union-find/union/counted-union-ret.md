@@ -7,21 +7,23 @@ proof: formalized
 lean: Batteries.UnionFind.LinkInternal.countedUnion_ret
 ---
 
-# Counted Union ret
+# Counted union returns the union's array
 
-Full array erasure is the direct canonical UNION result, not a detached class oracle.
+**Counted union returns the union's array.** For a union-find structure $S$ and indices
+$x, y$ of $S$, the array returned by the counted union of $x$ and $y$ in $S$ equals the node array
+of the Batteries union of $x$ and $y$ in $S$ (union by rank with path compression).
 
 ## Depends on
 
-- [Counted Union](counted-union.md)
+- [Union by rank with operation counts](counted-union.md)
 
 ## Proof depends on
 
-- [Counted Find](../find/counted-find.md)
-- [Counted Find ret](../find/counted-find-ret.md)
-- [Counted Link Aux](counted-link-aux.md)
-- [Counted Link Aux ret](counted-link-aux-ret.md)
-- [Union carried](union-carried.md)
+- [Cost-counted FIND](../find/counted-find.md)
+- [The cost-counted FIND returns the FIND result](../find/counted-find-ret.md)
+- [Linking by rank with operation counts](counted-link-aux.md)
+- [Counted linking returns the linked array](counted-link-aux-ret.md)
+- [Union unfolds to two finds and a link](union-carried.md)
 
 ## Sources
 

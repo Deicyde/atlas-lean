@@ -29,9 +29,9 @@ This node has no prerequisites.
 
 - [Timed child selection returns the smaller child](ret-timed-smaller-child.md)
 - [Timed smaller-child selection](timed-smaller-child.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

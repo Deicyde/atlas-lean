@@ -7,22 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_reconstructionNodes
 ---
 
-# Matrix Chain Order reconstruction Nodes
+# Reconstruction size in matrix-chain ordering
 
-Reconstruction emits and charges exactly the nodes of a full binary tree.
+**Reconstruction size in matrix-chain ordering.** For every $n \ge 1$ and all natural numbers
+$p_0, \dots, p_n$, the matrix-chain ordering algorithm run on the dimensions $p_0, \dots, p_n$
+charges exactly $2n - 1$ reconstruction events.
+
+This is the number of nodes of a full binary tree with $n$ leaves.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Result](../basic/result.md)
-- [Matrix Chain Order](matrix-chain-order.md)
+- [Matrix-chain cost](../basic/cost.md)
+- [Matrix-chain result](../basic/result.md)
+- [Matrix-chain ordering](matrix-chain-order.md)
 
 ## Proof depends on
 
 - [Parenthesization](../basic/parenthesization.md)
-- [Cols](../basic/cols.md)
-- [Rows](../basic/rows.md)
-- [Scalar Multiplication Cost](../basic/scalar-multiplication-cost.md)
+- [Column count of a parenthesization](../basic/cols.md)
+- [Row count of a parenthesization](../basic/rows.md)
+- [Scalar multiplication count of a parenthesization](../basic/scalar-multiplication-cost.md)
 
 ## Sources
 

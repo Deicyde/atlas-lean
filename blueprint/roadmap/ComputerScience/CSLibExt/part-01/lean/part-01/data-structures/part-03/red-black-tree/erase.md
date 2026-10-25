@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.erase
 ---
 
-# Erase
+# Color erasure
 
-Remove colors, yielding the underlying binary search tree.
+**Color erasure.** The color erasure of a red-black tree is the binary tree obtained by
+forgetting the node colors: the empty tree goes to the empty binary tree, and a node with key $k$
+and subtrees $l$ and $r$ goes to the binary-tree node with key $k$ whose subtrees are the color
+erasures of $l$ and $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Color](color.md)
+- [Red-black node colors](color.md)
 
 ## Sources
 

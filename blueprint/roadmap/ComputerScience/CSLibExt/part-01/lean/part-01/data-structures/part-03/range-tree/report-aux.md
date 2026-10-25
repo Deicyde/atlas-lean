@@ -6,21 +6,26 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.reportAux
 ---
 
-# Report Aux
+# Accumulator range report
 
-Accumulator range report for `[lo, hi]`: a node whose cached interval is
-disjoint from the query contributes nothing, a node contained in it
-contributes its whole leaf list onto the accumulator (the canonical-node
-case, via the linear `toListAux`), and otherwise both children are
-searched. The cached bounds make each pruning test constant-time.
+**Accumulator range report.** For integers $a$, $b$ and a list $\mathit{acc}$ of integers, the
+accumulator range report of a range tree for $[a, b]$ starting from $\mathit{acc}$ is defined by
+recursion on the tree. The empty tree returns $\mathit{acc}$. A leaf with value $x$ returns $x$
+followed by $\mathit{acc}$ if $a \le x \le b$, and $\mathit{acc}$ otherwise. A node with cached
+interval $[l, h]$ returns $\mathit{acc}$ if $h < a$ or $b < l$; otherwise, if $a \le l$ and
+$h \le b$, it returns the node's leaf values from left to right followed by $\mathit{acc}$;
+otherwise it returns the report of the left child starting from the report of the right child
+starting from $\mathit{acc}$.
+
+The cached bounds make each pruning test constant-time.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
+- [Range tree](range-tree.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
 
 ## Sources
 

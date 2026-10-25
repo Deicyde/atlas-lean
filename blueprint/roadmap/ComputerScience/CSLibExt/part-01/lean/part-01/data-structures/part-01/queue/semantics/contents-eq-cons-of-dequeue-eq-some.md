@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.contents_eq_cons_of_dequeue?_eq_some
 ---
 
-# Contents eq cons of dequeue? eq some
+# A successful dequeue splits off the first element
 
-A successful dequeue returns the FIFO head and a queue representing the remaining tail.
+**A successful dequeue splits off the first element.** If dequeueing a queue $q$ succeeds
+and returns an element $a$ and a queue $r$, then the contents of $q$ are $a$ followed by the
+contents of $r$.
 
 ## Depends on
 
-- [Contents](contents.md)
+- [Contents of a two-list queue](contents.md)
 
 ## Sources
 

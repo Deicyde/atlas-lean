@@ -20,7 +20,7 @@ time.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
 
 ## Sources
 

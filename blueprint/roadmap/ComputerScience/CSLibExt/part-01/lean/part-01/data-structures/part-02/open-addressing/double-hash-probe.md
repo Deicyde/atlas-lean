@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.doubleHashProbe
 ---
 
-# Double Hash Probe
+# Double-hashing probe sequence
 
-Double hashing: the `i`-th probe of `k` is `(hash1 k + i * hash2 k) % m`.
+**Double-hashing probe sequence.** Given hash functions $h_1, h_2 : K \to \mathbb{N}$ and a
+number of slots $m > 0$, the $i$-th probe of a key $k$ is the slot
+$(h_1(k) + i \cdot h_2(k)) \bmod m$ in $\{0, \dots, m - 1\}$.
 
 ## Depends on
 

@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.erase
 ---
 
-# Erase
+# Treap deletion
 
-Delete a key by splitting around it and merging the two remaining trees.
+**Treap deletion.** For a key $k$ of a linearly ordered key type and a tree $t$, deleting
+$k$ from $t$ splits $t$ at $k$ and returns the priority-guided merge of the part of the split
+below $k$ with the part above $k$; the entry the split finds at $k$, if any, is dropped.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [Split Result](split-result.md)
-- [Merge](merge.md)
-- [Split](split.md)
+- [Result of a treap split](split-result.md)
+- [Treap merge](merge.md)
+- [Treap split](split.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.editDistance_self
 ---
 
-# Edit Distance self
+# Edit distance of a list to itself
 
-Every list has distance zero from itself.
+**Edit distance of a list to itself.** For every list $s$ over a type whose Boolean equality
+test agrees with equality, the distance returned by the edit distance algorithm from $s$ to $s$
+is $0$.
 
 ## Depends on
 
-- [Edit Distance Cost](../script/edit-distance-cost.md)
-- [Edit Distance Result](../script/edit-distance-result.md)
-- [Edit Distance](edit-distance.md)
+- [Edit-distance cost counters](../script/edit-distance-cost.md)
+- [Edit-distance result record](../script/edit-distance-result.md)
+- [Edit distance algorithm](edit-distance.md)
 
 ## Sources
 

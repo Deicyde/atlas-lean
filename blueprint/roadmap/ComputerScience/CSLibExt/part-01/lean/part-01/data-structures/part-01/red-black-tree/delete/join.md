@@ -6,20 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.join
 ---
 
-# Join
+# Splicing two red-black trees
 
-Splice two trees end to end, keeping every key of the first tree before every
-key of the second in the inorder traversal and keeping the existing colors.
-`ordered_join` gives the side condition under which the splice of two ordered
-trees stays ordered.
+**Splicing two red-black trees.** The splice of a red-black tree $t$ with a red-black tree $s$ is
+defined by recursion on $t$. The splice of the empty tree with $s$ is $s$. The splice of the node
+with color $c$, left subtree $l$, key $k$ and right subtree $r$ with $s$ is the node with color
+$c$, left subtree $l$, key $k$ and right subtree the splice of $r$ with $s$.
+
+So $s$ becomes the right subtree of the rightmost node of $t$, and all existing colors are kept.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Color](../../../part-03/red-black-tree/color.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
 
 ## Sources
 

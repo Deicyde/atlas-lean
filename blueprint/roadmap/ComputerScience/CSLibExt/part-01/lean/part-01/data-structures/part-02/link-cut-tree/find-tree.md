@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.findTree
 ---
 
-# Find Tree
+# Tree of a forest containing a vertex
 
-The first tree of a forest whose vertices contain `x`, if any.
+**Tree of a forest containing a vertex.** For a vertex $x$ and a forest given as a list of
+trees, the first tree whose vertices contain $x$, or nothing when no tree contains $x$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 
 ## Proof depends on
 

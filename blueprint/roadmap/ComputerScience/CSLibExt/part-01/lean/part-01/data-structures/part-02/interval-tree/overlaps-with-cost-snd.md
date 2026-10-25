@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_snd
 ---
 
-# Overlaps With Cost snd
+# Comparison count of the overlap test
 
-Exactly one endpoint relation is skipped when the first relation is false.
+**Comparison count of the overlap test.** For intervals $I$ and $J$, the instrumented overlap
+test of $I$ against $J$ reports $2$ endpoint comparisons when the low endpoint of $I$ is at most
+the high endpoint of $J$, and $1$ comparison otherwise.
 
 ## Depends on
 
 - [Interval](interval.md)
-- [Overlaps With Cost](overlaps-with-cost.md)
+- [Overlap test with comparison count](overlaps-with-cost.md)
 
 ## Sources
 

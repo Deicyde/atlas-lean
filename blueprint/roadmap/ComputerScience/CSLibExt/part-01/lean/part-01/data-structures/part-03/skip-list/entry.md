@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SkipList.Entry
 ---
 
-# Entry
+# Skip-list node
 
-A key-value node together with the positive number of levels in its tower.
+**Skip-list node.** A skip-list node consists of a key, a value and a natural number, the
+height of its tower. The node itself does not require the height to be positive; positivity is
+part of the validity invariant of skip lists.
 
 ## Depends on
 

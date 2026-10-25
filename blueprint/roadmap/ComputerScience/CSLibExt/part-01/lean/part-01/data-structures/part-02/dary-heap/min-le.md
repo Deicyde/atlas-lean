@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.min?_le
 ---
 
-# Min? le
+# The minimum query on a $d$-ary heap returns a least element
 
-Inspection returns a value no greater than every represented value.
+**The minimum query on a $d$-ary heap returns a least element.** Let $h$ be a $d$-ary
+min-heap. If the minimum query on $h$ returns $x$, then $x \le y$ for every element $y$ of the
+multiset of elements of $h$.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
-- [Elements](elements.md)
-- [Min?](min.md)
+- [$d$-ary min-heap](dary-min-heap.md)
+- [Elements of a d-ary heap](elements.md)
+- [Minimum query on a $d$-ary min-heap](min.md)
 
 ## Proof depends on
 
-- [Dary Heap Ordered](dary-heap-ordered.md)
-- [Root le](root-le.md)
+- [$d$-ary heap order](dary-heap-ordered.md)
+- [The root of a $d$-ary heap-ordered array is a minimum](root-le.md)
 
 ## Sources
 

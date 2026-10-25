@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv.insert_comm
 ---
 
-# Insert comm
+# Insertions at distinct keys commute in a trie
 
-Inserting two distinct keys commutes up to lookup equivalence.
+**Insertions at distinct keys commute in a trie.** For every trie $T$, all keys $k_1 \ne k_2$
+and all values $v_1, v_2$, inserting $v_1$ at $k_1$ and then $v_2$ at $k_2$ gives a trie that is
+lookup-equivalent to the one obtained by inserting $v_2$ at $k_2$ and then $v_1$ at $k_1$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Lookup Equiv](lookup-equiv.md)
-- [Insert](insert.md)
+- [Lookup equivalence of tries](lookup-equiv.md)
+- [Trie insertion](insert.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Lookup insert of ne](lookup-insert-of-ne.md)
-- [Lookup insert same](lookup-insert-same.md)
+- [Trie lookup](lookup.md)
+- [Trie insertion leaves other keys unchanged](lookup-insert-of-ne.md)
+- [Lookup after insertion in a trie](lookup-insert-same.md)
 
 ## Sources
 

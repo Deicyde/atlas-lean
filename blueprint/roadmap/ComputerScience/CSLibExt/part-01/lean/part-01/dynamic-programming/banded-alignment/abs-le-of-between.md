@@ -6,11 +6,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.abs_le_of_between
 ---
 
-# Abs le of between
+# Bound at an intermediate point, difference form
 
-A helper: `|a - t| ≤ w` when `t` lies between `0` and `d` and both endpoints
-of the interval satisfy the bound. Used for the gap phases, where the offset
-difference interpolates between its start and end values.
+**Bound at an intermediate point, difference form.** For integers $a$, $d$, $t$ and $w$,
+if $|a| \le w$, $|a - d| \le w$ and $0 \le t \le d$, then $|a - t| \le w$.
+
+Used for the gap phases of an alignment, where the offset difference interpolates between its
+start and end values.
 
 ## Depends on
 

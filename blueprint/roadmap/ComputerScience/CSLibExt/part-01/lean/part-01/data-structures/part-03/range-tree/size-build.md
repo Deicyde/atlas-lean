@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.size_build
 ---
 
-# Size build
+# Size of a built range tree
 
-The size of a tree built from a list is the length of that list.
+**Size of a built range tree.** For every list $\mathit{xs}$ of integers, the range tree built
+from $\mathit{xs}$ has exactly as many leaves as $\mathit{xs}$ has elements.
 
 ## Depends on
 
-- [Build](build.md)
-- [Size](size.md)
+- [Building a range tree from a list](build.md)
+- [Number of leaves of a range tree](size.md)
 
 ## Proof depends on
 
-- [Length to List](length-to-list.md)
-- [To List](to-list.md)
-- [To List build](to-list-build.md)
+- [Length of the leaf list of a range tree](length-to-list.md)
+- [Leaf list of a range tree](to-list.md)
+- [Building a range tree preserves the list](to-list-build.md)
 
 ## Sources
 

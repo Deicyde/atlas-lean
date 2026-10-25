@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.keys
 ---
 
-# Keys
+# Stored keys of a radix trie
 
-The stored keys of a radix trie, in stored sibling order.
+**Stored keys of a radix trie.** The stored keys of a radix trie form the list of the keys of
+its entries, in the same order.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
+- [Radix trie](radix-trie.md)
 
 ## Proof depends on
 
-- [Entries](entries.md)
+- [Entries of a radix trie](entries.md)
 
 ## Sources
 

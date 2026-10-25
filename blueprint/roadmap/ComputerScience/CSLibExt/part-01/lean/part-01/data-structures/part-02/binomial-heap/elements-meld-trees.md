@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.elements_meldTrees
 ---
 
-# Elements meld Trees
+# Melding binomial forests adds their elements
 
-Forest meld preserves every occurrence from both inputs.
+**Melding binomial forests adds their elements.** For any two lists $L$ and $R$ of binomial
+trees over a linearly ordered type, the multiset of elements of the meld of $L$ and $R$ is the
+sum of the multisets of elements of $L$ and $R$.
 
 ## Depends on
 
 - [Elements](elements-2.md)
-- [Meld Trees](meld-trees.md)
-- [Binomial Tree](binomial-tree.md)
+- [Melding binomial forests](meld-trees.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Carry](carry.md)
-- [Elements](elements.md)
-- [Elements link](elements-link.md)
-- [Link](link.md)
-- [Rank](rank.md)
+- [Carry insertion into a binomial forest](carry.md)
+- [Elements of a binomial tree](elements.md)
+- [Linking binomial trees adds their elements](elements-link.md)
+- [Linking two binomial trees](link.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

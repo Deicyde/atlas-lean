@@ -13,11 +13,11 @@ invariant.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Red-black tree data type](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Color](../../../part-03/red-black-tree/color.md)
+- [Red-black node colors](../../../part-03/red-black-tree/color.md)
 
 ## Sources
 

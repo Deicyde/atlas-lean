@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.empty_position
 ---
 
-# Empty position
+# The empty indexed min queue has no present identity
 
-The empty queue marks every identity absent.
+**The empty indexed min queue has no present identity.** For every linear order $W$, every
+$n$ and every identity $v \in \{0, \dots, n-1\}$, the position vector of the empty indexed min
+queue over $W$ with identities in $\{0, \dots, n-1\}$ records no slot for $v$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Empty](../basic/empty.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Empty indexed minimum queue](../basic/empty.md)
 
 ## Sources
 

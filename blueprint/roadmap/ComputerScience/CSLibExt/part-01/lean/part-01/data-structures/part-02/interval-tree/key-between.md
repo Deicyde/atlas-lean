@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.keyBetween
 ---
 
-# Key Between
+# Key between optional bounds
 
-Check strict lower and upper key bounds when either bound is present.
+**Key between optional bounds.** Given an optional lower bound, an optional upper bound and a
+key $k$ (a pair of an integer and a natural number), this test returns true exactly when the lower
+bound is absent or strictly below $k$, and the upper bound is absent or strictly above $k$. Keys
+are compared lexicographically: first by the integer, then by the natural number.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Compare Key](compare-key.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

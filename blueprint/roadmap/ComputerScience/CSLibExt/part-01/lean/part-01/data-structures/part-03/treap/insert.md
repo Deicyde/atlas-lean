@@ -6,19 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.insert
 ---
 
-# Insert
+# Treap insertion
 
-Insert or replace a key with an explicit priority using split and merge.
+**Treap insertion.** For a key $k$ of a linearly ordered key type, a value $v$, a priority
+$p$ and a tree $t$, inserting $k$ with value $v$ and priority $p$ into $t$ splits $t$ at $k$,
+drops the entry the split finds at $k$ if any, merges the part below $k$ with the single node
+$(k, v, p)$, and then merges the result with the part above $k$; all merges are
+priority-guided.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [Split Result](split-result.md)
-- [Merge](merge.md)
-- [Split](split.md)
+- [Result of a treap split](split-result.md)
+- [Treap merge](merge.md)
+- [Treap split](split.md)
 
 ## Sources
 

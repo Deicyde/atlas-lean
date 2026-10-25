@@ -7,13 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Stack.top_eq
 ---
 
-# Top eq
+# Result and cost of reading the stack top
 
-TOP refinement and cost do not require an inhabitant of the element type.
+**Result and cost of reading the stack top.** Let $s$ be a stack over a type $\alpha$ (a list
+of elements of $\alpha$ whose first element is the top). If $s$ is empty, reading the top of $s$
+returns underflow (no value) at cost $0$. If $s$ has top $h$, reading the top of $s$ returns $h$
+at cost $1$.
+
+This holds for every type $\alpha$; no element of $\alpha$ is assumed to exist.
 
 ## Depends on
 
-- [Top](top.md)
+- [Stack top](top.md)
 
 ## Sources
 

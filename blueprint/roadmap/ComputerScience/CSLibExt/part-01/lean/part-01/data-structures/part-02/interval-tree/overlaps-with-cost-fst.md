@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_fst
 ---
 
-# Overlaps With Cost fst
+# The instrumented overlap test returns the plain result
 
-Instrumentation preserves the executable overlap result.
+**The instrumented overlap test returns the plain result.** For intervals $I$ and $J$, the
+Boolean component of the instrumented overlap test of $I$ against $J$ equals the overlap test of
+$I$ against $J$.
 
 ## Depends on
 
 - [Interval](interval.md)
-- [Overlaps](overlaps-2.md)
-- [Overlaps With Cost](overlaps-with-cost.md)
+- [Overlap test for closed intervals](overlaps-2.md)
+- [Overlap test with comparison count](overlaps-with-cost.md)
 
 ## Sources
 

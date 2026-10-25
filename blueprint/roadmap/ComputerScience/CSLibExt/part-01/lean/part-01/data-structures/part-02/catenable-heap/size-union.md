@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_union
 ---
 
-# Size union
+# Size of a catenable heap union
 
-The size of `union h₁ h₂` is the sum of the sizes of `h₁` and `h₂`.
+**Size of a catenable heap union.** For catenable heaps $h_1$ and $h_2$, the heap returned by
+the union of $h_1$ and $h_2$ has size equal to the size of $h_1$ plus the size of $h_2$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Size](size.md)
-- [Union](union.md)
+- [Catenable heap](catenable-heap.md)
+- [Size of a catenable heap](size.md)
+- [Union of catenable heaps](union.md)
 
 ## Proof depends on
 
-- [Size join](size-join.md)
+- [Size of a catenable heap join](size-join.md)
 
 ## Sources
 

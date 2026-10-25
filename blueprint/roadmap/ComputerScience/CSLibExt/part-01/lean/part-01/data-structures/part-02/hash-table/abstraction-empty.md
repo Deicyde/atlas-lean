@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HashTable.abstraction_empty
 ---
 
-# Abstraction empty
+# The empty hash table represents the empty map
 
-The empty table abstracts to the empty finite map.
+**The empty hash table represents the empty map.** For every hash function $h$ and every
+positive bucket count $m$, the finite map represented by the empty hash table with hash function
+$h$ and $m$ buckets is the empty finite map.
 
 ## Depends on
 
-- [Abstraction](abstraction.md)
-- [Empty](empty.md)
+- [Finite map represented by a hash table](abstraction.md)
+- [Empty hash table](empty.md)
 
 ## Sources
 

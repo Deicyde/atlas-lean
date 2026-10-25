@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_ofSortedList_eq_some_iff
 ---
 
-# Successor of Sorted List eq some iff
+# Successor in the trie built from a sorted list
 
-The successor in the trie built from a list is the least element of the list
-above the query.
+**Successor in the trie built from a sorted list.** Let $B > 0$, let $l$ be a strictly
+increasing list of $w$-bit keys, and let $x$, $y$ be keys. The successor query for $x$ in the
+grouped y-fast trie built from $l$ with group bound $B$ returns $y$ if and only if $y$ belongs
+to $l$, $x < y$, and $y \le z$ for every $z$ in $l$ with $x < z$.
 
 ## Depends on
 
-- [Of Sorted List](of-sorted-list.md)
-- [Successor](successor.md)
+- [Grouped y-fast trie from a sorted list](of-sorted-list.md)
+- [Successor query in a grouped y-fast trie](successor.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
-- [Contents of Sorted List](contents-of-sorted-list.md)
-- [Successor eq some iff](successor-eq-some-iff.md)
-- [Valid of Sorted List](valid-of-sorted-list.md)
+- [Keys of a grouped y-fast trie](contents.md)
+- [Keys of the grouped y-fast trie built from a list](contents-of-sorted-list.md)
+- [Successor query returns the least larger stored key](successor-eq-some-iff.md)
+- [Building from a sorted list gives a valid grouped y-fast trie](valid-of-sorted-list.md)
 
 ## Sources
 

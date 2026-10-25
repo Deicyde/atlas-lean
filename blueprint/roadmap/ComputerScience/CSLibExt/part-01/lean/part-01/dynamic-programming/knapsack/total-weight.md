@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.Knapsack.totalWeight
 ---
 
-# Total Weight
+# Total weight of a knapsack selection
 
-Total weight of the items at the selected indices.
+**Total weight of a knapsack selection.** For knapsack items $x_0, \dots, x_{n-1}$ with weights
+$w_i$ and a set $S \subseteq \{0, \dots, n - 1\}$ of item indices, the total weight of $S$ is
+$\sum_{i \in S} w_i$.
 
 ## Depends on
 
-- [Item](item.md)
+- [Knapsack item](item.md)
 
 ## Sources
 

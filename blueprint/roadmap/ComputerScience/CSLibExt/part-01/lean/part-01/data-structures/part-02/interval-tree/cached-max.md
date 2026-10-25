@@ -12,11 +12,11 @@ A constant-time read of the cached maximum high endpoint.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 
 ## Sources
 

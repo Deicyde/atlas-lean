@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.Ordered
 ---
 
-# Ordered
+# Ordered treap tree
 
-Every left key is smaller and every right key is larger, recursively.
+**Ordered treap tree.** For a key type equipped with a relation $<$, a treap tree is
+ordered when it is empty, or when it is a node with key $k$ whose left and right subtrees are
+both ordered, every key $x$ in the left subtree satisfies $x < k$, and every key $y$ in the
+right subtree satisfies $k < y$.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
+- [Treap predicate holding at every node](all-nodes.md)
 
 ## Sources
 

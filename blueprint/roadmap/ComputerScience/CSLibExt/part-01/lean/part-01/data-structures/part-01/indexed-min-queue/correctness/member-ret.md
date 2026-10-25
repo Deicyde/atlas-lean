@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IndexedMinQueue.member_ret
 ---
 
-# Member ret
+# Membership reads the position vector
 
-Membership returns the actual inverse-vector presence flag.
+**Membership reads the position vector.** Let $q$ be an indexed min queue over a linear
+order $W$ with identities in $\{0, \dots, n-1\}$ and let $v$ be an identity. The membership
+test for $v$ in $q$ returns true if and only if the position vector of $q$ records a slot for
+$v$.
 
 ## Depends on
 
-- [Indexed Min Queue](../basic/indexed-min-queue.md)
-- [Member](../basic/member.md)
+- [Indexed minimum queue](../basic/indexed-min-queue.md)
+- [Membership test in an indexed minimum queue](../basic/member.md)
 
 ## Sources
 

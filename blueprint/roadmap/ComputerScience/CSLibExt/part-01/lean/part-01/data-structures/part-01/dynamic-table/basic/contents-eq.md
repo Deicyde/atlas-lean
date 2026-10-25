@@ -16,7 +16,7 @@ keeping the items of the occupied ones, in order.
 
 ## Depends on
 
-- [Table](table.md)
+- [Dynamic table](table.md)
 - [Contents of a dynamic table](contents.md)
 
 ## Sources

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mkNode
 ---
 
-# Valid Invariant mk Node
+# Node construction preserves interval validity
 
-A node built by `mkNode` inherits stored-interval validity.
+**Node construction preserves interval validity.** If $L$ and $R$ are interval trees
+satisfying the validity invariant and $e$ is an entry whose interval $[a, b]$ satisfies
+$a \le b$, then the node with left subtree $L$, entry $e$ and right subtree $R$, built by the
+node constructor that recomputes the cached fields, satisfies the validity invariant.
 
 ## Depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Valid](valid.md)
-- [Tree](tree.md)
-- [Valid Invariant](valid-invariant.md)
-- [Mk Node](mk-node.md)
+- [Valid interval](valid.md)
+- [Interval tree](tree.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
+- [Node construction with repaired metadata](mk-node.md)
 
 ## Sources
 

@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.balanced_insert
 ---
 
-# Balanced insert
+# Red-black insertion preserves black-height balance
 
-Insertion preserves black-height balance.
+**Red-black insertion preserves black-height balance.** Let $\alpha$ be a linearly ordered type.
+If a red-black tree $t$ with keys in $\alpha$ is balanced (every root-to-leaf path contains the same
+number of black nodes), then for every $x \in \alpha$ the tree obtained by inserting $x$ into $t$ is
+balanced.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Black-height balanced red-black tree](balanced.md)
+- [Red-black tree data type](tree.md)
+- [Red-black tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Color](color.md)
-- [Balance](balance.md)
-- [Black Height](black-height.md)
-- [Ins](ins.md)
-- [Make Black](make-black.md)
+- [Red-black node colors](color.md)
+- [Okasaki's rebalancing](balance.md)
+- [Black height](black-height.md)
+- [Unchecked red-black insertion](ins.md)
+- [Blackening the root](make-black.md)
 
 ## Sources
 

@@ -7,8 +7,10 @@ lean: Cslib.Algorithms.Lean.Alignment
 
 # Alignment
 
-An alignment of two sequences is a list of columns, each pairing an optional element
-of the first sequence with an optional element of the second.
+**Alignment.** An alignment over an alphabet $\alpha$ is a finite list of columns, where
+each column is a pair $(u, v)$ and each of $u$ and $v$ is either a letter of $\alpha$ or a gap.
+
+Whether an alignment is valid for two given sequences is a separate condition.
 
 ## Depends on
 

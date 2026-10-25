@@ -35,9 +35,9 @@ tree obtained by deleting $x$ from $T$ with rebalancing is again ordered as a se
 - [Rebalancing an AVL node preserves the search-tree order](../../avl-tree-2/ordered-balance.md)
 - [Removing the leftmost key preserves search-tree order](ordered-erase-min.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [All](../../../part-02/binary-search-tree/all.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [A predicate holding at every key of a binary tree](../../../part-02/binary-search-tree/all.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

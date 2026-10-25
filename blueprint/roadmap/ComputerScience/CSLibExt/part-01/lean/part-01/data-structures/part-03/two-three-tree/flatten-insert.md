@@ -7,29 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.flatten_insert
 ---
 
-# Flatten insert
+# Insertion into a 2-3 tree is ordered insertion into its traversal
 
-The flattening after root insertion is `orderedInsert` of the flattening.
+**Insertion into a 2-3 tree is ordered insertion into its traversal.** Let the keys be
+linearly ordered, let $t$ be an ordered 2-3 tree root and let $x$ be a key. Then the flattening
+of the root obtained by inserting $x$ into $t$ equals the ordered insertion of $x$ into the
+flattening of $t$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Ordered](ordered-2.md)
-- [Flatten](flatten-2.md)
-- [Insert](insert.md)
-- [Ordered Insert](../ordered-insert/ordered-insert.md)
+- [2-3 trees of unspecified height](root.md)
+- [Ordering invariant for 2-3 trees of unspecified height](ordered-2.md)
+- [Inorder traversal of a 2-3 tree root](flatten-2.md)
+- [Insertion into a 2-3 tree root](insert.md)
+- [Ordered insertion into a list](../ordered-insert/ordered-insert.md)
 
 ## Proof depends on
 
-- [All](all.md)
-- [Ins Spec](ins-spec.md)
-- [Ordered](ordered.md)
-- [Overflow](overflow.md)
-- [Tree](tree.md)
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
-- [Ins](ins.md)
-- [Ins spec](ins-spec-2.md)
+- [Predicate on all keys of a 2-3 tree](all.md)
+- [Insertion specification for 2-3 trees](ins-spec.md)
+- [Ordering invariant for 2-3 trees](ordered.md)
+- [Insertion results for 2-3 trees](overflow.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Inorder traversal of a 2-3 tree](flatten.md)
+- [Accumulated inorder traversal of a 2-3 tree](flatten-aux.md)
+- [Insertion into a height-indexed 2-3 tree](ins.md)
+- [Correctness of 2-3 tree insertion](ins-spec-2.md)
 
 ## Sources
 

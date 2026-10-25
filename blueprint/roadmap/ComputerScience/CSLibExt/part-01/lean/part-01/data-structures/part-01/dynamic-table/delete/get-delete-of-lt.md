@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.get?_delete_of_lt
 ---
 
-# Get? delete of lt
+# Deletion preserves lookups below the last position
 
-Lookup below the deleted position is unchanged by deletion.
+**Deletion preserves lookups below the last position.** Let $T$ be a well-formed dynamic
+table holding $n$ items, and let $i$ be a natural number with $i < n - 1$. After applying
+deletion to $T$, the lookup at logical position $i$ returns the same result as the lookup at
+position $i$ in $T$.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Well Formed](../basic/well-formed.md)
-- [Get?](get.md)
-- [Table Delete](table-delete.md)
+- [Dynamic table](../basic/table.md)
+- [Well-formed dynamic table](../basic/well-formed.md)
+- [Lookup in a dynamic table](get.md)
+- [Deletion from a dynamic table](table-delete.md)
 
 ## Proof depends on
 
-- [Table Delete num](table-delete-num.md)
-- [Table Delete slots](table-delete-slots.md)
+- [Item count after deletion](table-delete-num.md)
+- [Slots after deletion](table-delete-slots.md)
 
 ## Sources
 

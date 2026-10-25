@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DaryMinHeap.min?
 ---
 
-# Min?
+# Minimum query on a $d$-ary min-heap
 
-Inspect the minimum without removing it.
+**Minimum query on a $d$-ary min-heap.** The minimum query on a $d$-ary min-heap $h$
+returns the entry at index $0$ (the root) of the storage array of $h$, or nothing if the array
+is empty.
 
 ## Depends on
 
-- [Dary Min Heap](dary-min-heap.md)
+- [$d$-ary min-heap](dary-min-heap.md)
 
 ## Sources
 

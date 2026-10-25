@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.prefixSum_build
 ---
 
-# Prefix Sum build
+# Prefix sums of a built Fenwick tree
 
-Prefix sums of a freshly built tree agree with the input array's prefix
-sums at every index.
+**Prefix sums of a built Fenwick tree.** For every list $a$ of elements of an additive
+commutative monoid and every natural number $k$, the prefix sum of length $k$ of the Fenwick tree
+built from $a$ equals the sum of the first $\min(k, |a|)$ entries of $a$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Prefix Sum](prefix-sum.md)
+- [Building a Fenwick tree from a list](build.md)
+- [Fenwick tree prefix sum](prefix-sum.md)
 
 ## Proof depends on
 
-- [Prefix Sum eq take sum](prefix-sum-eq-take-sum.md)
-- [Valid build](valid-build.md)
+- [Correctness of Fenwick tree prefix sums](prefix-sum-eq-take-sum.md)
+- [Building a Fenwick tree yields a valid representation](valid-build.md)
 
 ## Sources
 

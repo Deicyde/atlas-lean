@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.report
 ---
 
-# Report
+# Orthogonal range report of a kd-tree
 
-The orthogonal range report for the box `[lo, hi]`; see `reportAux`.
+**Orthogonal range report of a kd-tree.** For a kd-tree $t$ over $\mathbb{Z}^d$ and
+$lo, hi \in \mathbb{Z}^d$, the range report of $t$ for the box $[lo, hi]$ is the accumulator
+range report of $t$ for $[lo, hi]$ onto the empty list.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Proof depends on
 
-- [Report Aux](report-aux.md)
+- [Accumulator range report of a kd-tree](report-aux.md)
 
 ## Sources
 

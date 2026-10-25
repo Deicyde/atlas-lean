@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor_eq_none_iff
 ---
 
-# Predecessor eq none iff
+# Empty predecessor query in a van Emde Boas tree
 
-In a valid tree, `predecessor` returns `none` exactly when no stored
-element is below `x`.
+**Empty predecessor query in a van Emde Boas tree.** Let $t$ be a valid two-level van Emde Boas
+tree over the universe $\{0, \dots, m^2 - 1\}$, and let $x$ be in the universe. The predecessor
+query for $x$ in $t$ returns no element if and only if $x \le z$ for every $z$ stored in $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Valid](valid.md)
-- [Member](member.md)
-- [Predecessor](predecessor.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Summary invariant of a van Emde Boas tree](valid.md)
+- [Membership in a van Emde Boas tree](member.md)
+- [Predecessor query in a two-level van Emde Boas tree](predecessor.md)
 
 ## Proof depends on
 
-- [Predecessor lt](predecessor-lt.md)
-- [Predecessor mem](predecessor-mem.md)
+- [The van Emde Boas predecessor is strictly smaller than its argument](predecessor-lt.md)
+- [The van Emde Boas predecessor is stored](predecessor-mem.md)
 
 ## Sources
 

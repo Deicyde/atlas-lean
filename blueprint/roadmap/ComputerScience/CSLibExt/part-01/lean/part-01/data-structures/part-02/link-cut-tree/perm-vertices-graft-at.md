@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_graftAt
 ---
 
-# Perm vertices graft At
+# Grafting adds the new subtree's vertices
 
-The vertex list of a grafted tree is the old vertex list followed by
-the new child's, up to permutation.
+**Grafting adds the new subtree's vertices.** Let $t$ and $s$ be rooted ordered trees and $y$
+a vertex. If grafting $s$ as a new child at $y$ in $t$ succeeds and yields the tree $t'$, then the
+vertex list of $t'$ is a permutation of the vertex list of $t$ followed by the vertex list of
+$s$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Graft At](graft-at.md)
+- [Grafting a tree below a vertex](graft-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
 
 ## Sources
 

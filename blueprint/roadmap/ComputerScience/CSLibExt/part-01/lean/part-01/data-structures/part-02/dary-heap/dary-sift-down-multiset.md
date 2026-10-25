@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySiftDown_multiset
 ---
 
-# Dary Sift Down multiset
+# Sifting down in a $d$-ary heap preserves the multiset of entries
 
-Sifting down preserves the represented multiset.
+**Sifting down in a $d$-ary heap preserves the multiset of entries.** Let $\alpha$ be a
+linearly ordered type, let $a$ be an array over $\alpha$, and let $i$ and $d$ be natural numbers
+with $d \ge 2$. The array produced by $d$-ary sifting down from index $i$ in $a$ has the same
+multiset of entries as $a$.
 
 ## Depends on
 
-- [Dary Sift Down](dary-sift-down.md)
+- [$d$-ary sift-down](dary-sift-down.md)
 
 ## Proof depends on
 
-- [Dary Sift Down perm](dary-sift-down-perm.md)
+- [Sifting down in a $d$-ary heap permutes the array](dary-sift-down-perm.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.contains_eq_true_iff
 ---
 
-# Contains eq true iff
+# Correctness of the splay-tree membership test
 
-`contains` agrees with structural membership for an ordered tree.
+**Correctness of the splay-tree membership test.** For an ordered binary tree $t$ over a
+linearly ordered type and a key $x$, the splay-tree membership test of $x$ in $t$ returns true
+if and only if $x$ is a key of $t$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Contains](contains.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Splay-tree membership test](contains.md)
 
 ## Proof depends on
 
-- [Mem splay](mem-splay.md)
-- [Root?](root.md)
-- [Root? splay of mem](root-splay-of-mem-2.md)
-- [Splay](splay.md)
+- [Splaying preserves membership](mem-splay.md)
+- [Root key of a binary tree](root.md)
+- [Root key after splaying a present key](root-splay-of-mem-2.md)
+- [Splay operation](splay.md)
 
 ## Sources
 

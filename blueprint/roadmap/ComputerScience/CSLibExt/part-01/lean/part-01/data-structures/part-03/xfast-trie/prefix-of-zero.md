@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.prefixOf_zero
 ---
 
-# Prefix Of zero
+# The empty prefix is zero
 
-The empty prefix (the trie root) is `0`.
+**The empty prefix is zero.** For every $w$-bit key $x < 2^w$, the length-$0$ prefix
+of $x$ (the trie root) is $0$.
 
 ## Depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

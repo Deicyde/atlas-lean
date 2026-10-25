@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.numNodes_insert_of_not_mem
 ---
 
-# Num Nodes insert of not mem
+# Inserting an absent key into a binary search tree adds one node
 
-Inserting an absent key increases the canonical node count by one.
+**Inserting an absent key into a binary search tree adds one node.** Let the keys be
+linearly ordered. For every binary tree $T$ and every key $x$ that does not lie in $T$, the tree
+obtained by inserting $x$ into $T$ has one more node than $T$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Insert](insert.md)
+- [Membership in a binary tree](mem.md)
+- [Insertion into a binary search tree](insert.md)
 
 ## Sources
 

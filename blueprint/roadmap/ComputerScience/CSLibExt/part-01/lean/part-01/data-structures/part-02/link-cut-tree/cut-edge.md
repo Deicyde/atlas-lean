@@ -6,37 +6,32 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge
 ---
 
-# Cut Edge
+# Cutting an edge of a link-cut tree
 
-Undirected edge cut, the textbook composite: reroot at `x`
-(`makeRoot x`, which reverses only the root-to-`x` path and keeps every
-undirected edge), then detach the subtree rooted at `y`. When `x` and `y`
-are joined by an edge of a valid represented tree, the rerooting makes
-`y` the root of a child subtree of `x`, so the rooted `cut y` splits the
-component into the two sides of the edge `x`-`y`
-(`not_connected_cutEdge`), and every other edge is retained
-(`adjacent_cutEdge`); the branched-tree tests in `LinkCutTreeTests`
-exhibit this on concrete forests.
+**Cutting an edge of a link-cut tree.** For vertices $x$ and $y$ and a link-cut tree state
+$s$, cutting the edge between $x$ and $y$ works as follows. If $x$ and $y$ are adjacent in some
+tree of the represented forest of $s$, the result is obtained from $s$ by first making $x$ the
+root of its represented tree and then cutting off the subtree rooted at $y$. Otherwise the
+represented forest is left unchanged. In both cases the list of preferred edges becomes empty.
 
-The adjacency precondition is checked, not assumed: the composite runs
-only when some represented tree has `x` and `y` adjacent
-(`adjacentB_eq_true_iff`). Without that guard the bare composite would
-cut at `y` regardless of `x` (for instance `cutEdge 99 2` on the chain
-`1 → 2` would detach `2` although there is no `99`-`2` edge). When no
-represented tree has the edge, `cutEdge x y` leaves the forest unchanged
-(`cutEdge_eq_of_not_adjacent`); as with the other structural operations,
-the preferred edges are reset either way.
+When $x$ and $y$ are joined by an edge of a valid state, making $x$ the root turns $y$ into the
+root of a child subtree of $x$, so the cut separates the two sides of the edge between $x$ and
+$y$ and keeps every other edge.
+
+The adjacency test is necessary: without it the composite would cut at $y$ regardless of $x$.
+For instance, on the chain $1 \to 2$ it would detach $2$ when asked to cut the edge between
+$99$ and $2$, although there is no such edge.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Cut](cut.md)
-- [Make Root](make-root.md)
-- [Adjacent B](adjacent-b.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Cutting off the subtree at a vertex](cut.md)
+- [Making a vertex the root in a link-cut tree state](make-root.md)
+- [Adjacency test](adjacent-b.md)
 
 ## Sources
 

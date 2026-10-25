@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_empty
 ---
 
-# Elements empty
+# The empty Fibonacci heap has no elements
 
-The empty heap represents the empty multiset.
+**The empty Fibonacci heap has no elements.** The empty Fibonacci heap represents the empty
+multiset.
 
 ## Depends on
 
 - [Elements](elements-3.md)
-- [Empty](empty.md)
+- [Empty Fibonacci heap](empty.md)
 
 ## Proof depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Elements](elements.md)
+- [Fibonacci heap](fibonacci-heap.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Multiset of a Fibonacci tree](elements.md)
 
 ## Sources
 

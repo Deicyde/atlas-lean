@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_fromList
 ---
 
-# Mem from List
+# Members of the binary search tree built from a list
 
-A key is in a tree built from a list exactly when it is in the list.
+**Members of the binary search tree built from a list.** For a linearly ordered type $\alpha$,
+a key $x \in \alpha$ and a list $xs$ of elements of $\alpha$, $x$ is a member of the binary tree
+built from $xs$ by successive binary search tree insertion if and only if $x$ occurs in $xs$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [From List](from-list.md)
+- [Membership in a binary tree](mem.md)
+- [Binary search tree built from a list](from-list.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
-- [Mem insert](mem-insert.md)
+- [Insertion into a binary search tree](insert.md)
+- [Membership after insertion into a binary search tree](mem-insert.md)
 
 ## Sources
 

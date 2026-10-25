@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.height_tree
 ---
 
-# Height tree
+# The stored height of a 2-3 tree root is its computed height
 
-The computed height of a root's tree agrees with its stored height.
+**The stored height of a 2-3 tree root is its computed height.** For every root $t$, that
+is, a 2-3 tree together with its height index, the height of the underlying tree computed along
+its leftmost spine equals the stored height of $t$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Tree](tree.md)
-- [Height](height.md)
+- [2-3 trees of unspecified height](root.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Height of a 2-3 tree](height.md)
 
 ## Proof depends on
 
-- [Height eq](height-eq.md)
+- [Computed height equals the height index](height-eq.md)
 
 ## Sources
 

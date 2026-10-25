@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList_insert
 ---
 
-# To List insert
+# Flattening after insertion into a catenable heap
 
-`insert x h` flattens to `x` followed by the flattening of `h`.
+**Flattening after insertion into a catenable heap.** For an element $x$ and a catenable heap
+$h$, the flattening of the heap returned by inserting $x$ into $h$ is $x$ followed by the
+flattening of $h$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Insert](insert.md)
-- [To List](to-list.md)
+- [Catenable heap](catenable-heap.md)
+- [Insertion into a catenable heap](insert.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Proof depends on
 
-- [To List cons](to-list-cons.md)
+- [Flattening a front node of a catenable heap](to-list-cons.md)
 
 ## Sources
 

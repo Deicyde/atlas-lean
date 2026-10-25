@@ -21,7 +21,7 @@ and every default value $d$, the leftmost key of $T$ computed with default $d$ o
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

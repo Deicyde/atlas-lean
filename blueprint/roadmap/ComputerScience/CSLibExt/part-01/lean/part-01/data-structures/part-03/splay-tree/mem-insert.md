@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.mem_insert
 ---
 
-# Mem insert
+# Keys after splay-tree insertion
 
-Inserting a key adds exactly that key to structural membership.
+**Keys after splay-tree insertion.** For keys $x$ and $y$ and a binary tree $t$ over a
+linearly ordered type, $y$ is a key of the tree obtained by splay-tree insertion of $x$ into $t$
+if and only if $y = x$ or $y$ is a key of $t$.
 
 ## Depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Insert](insert.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Splay-tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Mem of mem split](mem-of-mem-split.md)
-- [Mem splay](mem-splay.md)
-- [Mem split of mem](mem-split-of-mem.md)
-- [Splay](splay.md)
-- [Split](split.md)
+- [Splay-tree split parts contain only original keys](mem-of-mem-split.md)
+- [Splaying preserves membership](mem-splay.md)
+- [Keys other than the split key survive a split](mem-split-of-mem.md)
+- [Splay operation](splay.md)
+- [Search-path split at a key](split.md)
 
 ## Sources
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.vertices_node
 ---
 
-# Vertices node
+# Preorder vertex list of a node
 
-Characteristic node equation for `vertices` (the former definition).
+**Preorder vertex list of a node.** For a vertex $r$ and rooted ordered trees
+$c_1, \dots, c_k$, the preorder vertex list of the tree with root $r$ and child subtrees
+$c_1, \dots, c_k$ (in order) is $r$ followed by the concatenation of the preorder vertex lists
+of $c_1, \dots, c_k$, in this order.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Rooted ordered tree](tree.md)
 - [Vertices](vertices.md)
 
 ## Proof depends on
 
-- [Vertices Aux](vertices-aux.md)
-- [Vertices Aux eq](vertices-aux-eq.md)
+- [Accumulator preorder traversal](vertices-aux.md)
+- [Accumulator preorder traversal is append](vertices-aux-eq.md)
 
 ## Sources
 

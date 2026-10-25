@@ -16,16 +16,16 @@ slot copied when a full table is doubled.
 
 ## Depends on
 
-- [Table](table.md)
+- [Dynamic table](table.md)
 - [Empty dynamic table](empty.md)
-- [Table Insert Many](table-insert-many.md)
+- [Inserting an array of items into a dynamic table](table-insert-many.md)
 
 ## Proof depends on
 
-- [Table Insert](table-insert.md)
-- [Table Insert num](table-insert-num.md)
-- [Table Insert size](table-insert-size.md)
-- [Table Insert time](table-insert-time.md)
+- [TABLE-INSERT](table-insert.md)
+- [Insertion increases the item count by one](table-insert-num.md)
+- [Capacity after an insertion](table-insert-size.md)
+- [Cost of an insertion](table-insert-time.md)
 
 ## Sources
 

@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.allNodes_iff_forall_mem
 ---
 
-# All Nodes iff forall mem
+# Treap all-nodes predicate via node membership
 
-`AllNodes` is universal quantification over complete structural membership.
+**Treap all-nodes predicate via node membership.** Let $p$ be a predicate on a key, a value
+and a natural-number priority, and let $t$ be a tree. Then $p$ holds at every node of $t$ if and
+only if $p(k, v, n)$ holds for every key $k$, value $v$ and priority $n$ such that the entry
+$(k, v, n)$ occurs as a node of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [All Nodes](all-nodes.md)
-- [Mem Node](mem-node.md)
+- [Treap trees](tree.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Entry membership in a treap tree](mem-node.md)
 
 ## Sources
 

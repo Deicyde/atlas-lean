@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.pairwise_sample
 ---
 
-# Pairwise sample
+# The sample of a sorted list is sorted
 
-The sample of a sorted catalog is sorted.
+**The sample of a sorted list is sorted.** If a list over a linear order is sorted in
+nondecreasing order, then so is its sample.
 
 ## Depends on
 
-- [Sample](sample.md)
+- [Sample of a catalog](sample.md)
 
 ## Proof depends on
 
-- [Sample sublist](sample-sublist.md)
+- [The sample is a sublist](sample-sublist.md)
 
 ## Sources
 

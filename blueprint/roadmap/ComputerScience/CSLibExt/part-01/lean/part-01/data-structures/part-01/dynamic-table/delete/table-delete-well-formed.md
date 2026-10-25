@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_wellFormed
 ---
 
-# Table Delete well Formed
+# Deletion preserves well-formedness
 
-Deletion preserves exact compact-prefix occupancy.
+**Deletion preserves well-formedness.** Let $T$ be a well-formed dynamic table, that is, its
+occupied slots are exactly its first $n$ slots, where $n$ is its item count. Then the table
+obtained by applying deletion to $T$ is again well-formed.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Well Formed](../basic/well-formed.md)
-- [Table Delete](table-delete.md)
+- [Dynamic table](../basic/table.md)
+- [Well-formed dynamic table](../basic/well-formed.md)
+- [Deletion from a dynamic table](table-delete.md)
 
 ## Proof depends on
 
-- [Table Delete num](table-delete-num.md)
-- [Table Delete slots](table-delete-slots.md)
-- [Well Formed iff](../basic/well-formed-iff.md)
+- [Item count after deletion](table-delete-num.md)
+- [Slots after deletion](table-delete-slots.md)
+- [Characterization of well-formed dynamic tables](../basic/well-formed-iff.md)
 
 ## Sources
 

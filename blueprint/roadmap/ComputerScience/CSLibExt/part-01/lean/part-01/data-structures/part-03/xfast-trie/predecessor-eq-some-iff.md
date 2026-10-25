@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.predecessor_eq_some_iff
 ---
 
-# Predecessor eq some iff
+# Characterization of the x-fast trie predecessor
 
-The predecessor is `some y` exactly when `y` is the greatest stored key below `x`.
+**Characterization of the x-fast trie predecessor.** For an x-fast trie $t$ over
+$w$-bit keys and keys $x, y < 2^w$, the predecessor query of $x$ in $t$ returns $y$ if and
+only if $y$ is stored in $t$, $y < x$, and every key $z$ stored in $t$ with $z < x$
+satisfies $z \le y$.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Predecessor](predecessor.md)
+- [x-fast trie](xfast-trie.md)
+- [Predecessor query in an x-fast trie](predecessor.md)
 
 ## Sources
 

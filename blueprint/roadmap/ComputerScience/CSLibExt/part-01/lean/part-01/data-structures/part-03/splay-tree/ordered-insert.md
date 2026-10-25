@@ -7,23 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.ordered_insert
 ---
 
-# Ordered insert
+# Splay-tree insertion preserves the search-tree property
 
-Insertion preserves the strict search-tree invariant.
+**Splay-tree insertion preserves the search-tree property.** Let $t$ be a binary tree with keys
+in a linearly ordered type and let $x$ be a key. If $t$ is a binary search tree (at every node,
+every key of the left subtree is strictly smaller and every key of the right subtree strictly
+larger than the key of the node), then the splay-tree insertion of $x$ into $t$ is again a binary
+search tree.
 
 ## Depends on
 
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
-- [Insert](insert.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
+- [Splay-tree insertion](insert.md)
 
 ## Proof depends on
 
-- [All](../../part-02/binary-search-tree/all.md)
-- [All split](all-split.md)
-- [Ordered splay](ordered-splay.md)
-- [Ordered split](ordered-split.md)
-- [Splay](splay.md)
-- [Split](split.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Splitting an ordered tree separates the keys around the split key](all-split.md)
+- [Splaying preserves the search-tree property](ordered-splay.md)
+- [Both parts of a split search tree are search trees](ordered-split.md)
+- [Splay operation](splay.md)
+- [Search-path split at a key](split.md)
 
 ## Sources
 

@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.contains_eq_true_iff
 ---
 
-# Contains eq true iff
+# Search in a rooted 2-3 tree is correct
 
-Search at the root succeeds exactly on keys of the flattening.
+**Search in a rooted 2-3 tree is correct.** Let the keys be linearly ordered and let $t$ be
+a root (a 2-3 tree packaged with its height) whose underlying tree satisfies the ordering
+invariant. Then searching $t$ for a key $x$ returns true if and only if $x$ occurs in the
+inorder flattening of $t$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Ordered](ordered-2.md)
-- [Contains](contains-2.md)
-- [Flatten](flatten-2.md)
+- [2-3 trees of unspecified height](root.md)
+- [Ordering invariant for 2-3 trees of unspecified height](ordered-2.md)
+- [Search in a rooted 2-3 tree](contains-2.md)
+- [Inorder traversal of a 2-3 tree root](flatten-2.md)
 
 ## Proof depends on
 
-- [Tree](tree.md)
-- [Contains eq true iff](contains-eq-true-iff.md)
+- [Height-indexed 2-3 trees](tree.md)
+- [Search in an ordered 2-3 tree is correct](contains-eq-true-iff.md)
 
 ## Sources
 

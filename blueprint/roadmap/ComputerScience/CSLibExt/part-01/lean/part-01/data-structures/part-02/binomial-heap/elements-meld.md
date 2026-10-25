@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.elements_meld
 ---
 
-# Elements meld
+# Melding binomial heaps adds their elements
 
-Meld preserves every occurrence from both heaps.
+**Melding binomial heaps adds their elements.** For any two binomial heaps $H_1$ and $H_2$ over
+a linearly ordered type, the multiset of elements of the meld of $H_1$ and $H_2$ is the sum of
+the multisets of elements of $H_1$ and $H_2$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Meld](meld.md)
+- [Melding binomial heaps](meld.md)
 
 ## Proof depends on
 
-- [Elements meld Trees](elements-meld-trees.md)
-- [Binomial Tree](binomial-tree.md)
+- [Melding binomial forests adds their elements](elements-meld-trees.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

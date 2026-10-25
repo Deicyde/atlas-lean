@@ -7,25 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_elements_of_subtreeAt
 ---
 
-# Decrease Key elements of subtree At
+# Decrease-key replaces one key, stated by address
 
-`decreaseKey_elements` stated through the addressing view: the caller names the
-root tree and the addressed subtree instead of the cut remainder.
+**Decrease-key replaces one key, stated by address.** Let $H$ be a Fibonacci heap, let $T$ be
+the $i$-th tree of its root list, and let $S$ be the subtree of $T$ at the path $p$ of child
+indices. If the key $k$ is at most the root of $S$, then the multiset represented by the heap
+obtained from $H$ by decreasing the key at root index $i$ and path $p$ to $k$ is the multiset
+represented by $H$ with one occurrence of the root of $S$ removed and one occurrence of $k$
+added.
 
 ## Depends on
 
-- [Fibonacci Heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
-- [Decrease Key](decrease-key.md)
+- [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
+- [Decrease-key in a Fibonacci heap](decrease-key.md)
 - [Elements](../../../part-02/fibonacci-heap/elements-3.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Root](../../../part-02/fibonacci-heap/root.md)
-- [Subtree At](subtree-at.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
+- [Subtree of a Fibonacci tree at a path](subtree-at.md)
 
 ## Proof depends on
 
-- [Cut Tree At](cut-tree-at.md)
-- [Cut Tree At of subtree At](cut-tree-at-of-subtree-at.md)
-- [Decrease Key elements](decrease-key-elements.md)
+- [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
+- [Every addressed subtree of a forest can be cut out](cut-tree-at-of-subtree-at.md)
+- [Decrease-key replaces one key](decrease-key-elements.md)
 
 ## Sources
 

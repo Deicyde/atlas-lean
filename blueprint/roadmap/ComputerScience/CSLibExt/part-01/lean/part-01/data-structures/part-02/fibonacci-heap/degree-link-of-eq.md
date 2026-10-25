@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciTree.degree_link_of_eq
 ---
 
-# Degree link of eq
+# Degree of the link of two trees of equal degree
 
-Linking trees of equal degree increments that degree.
+**Degree of the link of two trees of equal degree.** If two Fibonacci trees $s$ and $t$
+over a linearly ordered type have the same degree $d$, then their link has degree $d + 1$.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
-- [Degree](degree.md)
-- [Link](link.md)
+- [Fibonacci tree](fibonacci-tree.md)
+- [Degree of a Fibonacci tree](degree.md)
+- [Linking two Fibonacci trees](link.md)
 
 ## Proof depends on
 
-- [Children](children.md)
-- [Root](root.md)
+- [Children of a Fibonacci tree](children.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

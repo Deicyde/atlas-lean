@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_iff
 ---
 
-# May Contain iff
+# Membership query in terms of bits
 
-`mayContain` holds exactly when every hash-selected bit is set.
+**Membership query in terms of bits.** For a Bloom filter $F$ and an element $x$, $F$ reports
+that $x$ may be present if and only if bit $h(x)$ of $F$ is set for every hash function $h$ of
+$F$.
 
 ## Depends on
 
-- [Bloom Filter](bloom-filter.md)
-- [May Contain](may-contain.md)
+- [Bloom filter](bloom-filter.md)
+- [Bloom filter membership query](may-contain.md)
 
 ## Sources
 

@@ -7,39 +7,43 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_trees_of_cut
 ---
 
-# Decrease Key trees of cut
+# Root list after decrease-key
 
-On a successful cut with a genuine decrease, the new root list is the decreased
-subtree in front of the cut remainder forest.
+**Root list after decrease-key.** Let $H$ be a Fibonacci heap, $i$ a root index, $p$ a path of
+child indices and $k$ a key. Suppose that cutting the subtree at path $p$ out of the $i$-th tree
+of the root list of $H$ succeeds, extracting the subtree $S$ and leaving the forest $R$, and that
+$k$ is at most the root of $S$. Then the root list of the heap obtained from $H$ by decreasing
+the key at root index $i$ and path $p$ to $k$ consists of $S$ with its root replaced by $k$,
+followed by the trees of $R$ in order.
 
 ## Depends on
 
-- [Cut Tree At](cut-tree-at.md)
-- [Fibonacci Heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
-- [Decrease Key](decrease-key.md)
-- [Fibonacci Tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
-- [Decrease Root](decrease-root.md)
-- [Root](../../../part-02/fibonacci-heap/root.md)
+- [Cutting a subtree out of a Fibonacci forest](cut-tree-at.md)
+- [Fibonacci heap](../../../part-02/fibonacci-heap/fibonacci-heap.md)
+- [Decrease-key in a Fibonacci heap](decrease-key.md)
+- [Fibonacci tree](../../../part-02/fibonacci-heap/fibonacci-tree.md)
+- [Replacing the root key of a Fibonacci tree](decrease-root.md)
+- [Root of a Fibonacci tree](../../../part-02/fibonacci-heap/root.md)
 
 ## Proof depends on
 
-- [Valid](../../../part-02/fibonacci-heap/valid-2.md)
-- [Cut Tree At elements](cut-tree-at-elements.md)
-- [Cut Tree At valid](cut-tree-at-valid.md)
+- [Valid Fibonacci forests](../../../part-02/fibonacci-heap/valid-2.md)
+- [Cutting a subtree splits the elements of a Fibonacci forest](cut-tree-at-elements.md)
+- [Cutting a valid forest leaves valid parts](cut-tree-at-valid.md)
 - [Elements](../../../part-02/fibonacci-heap/elements-2.md)
-- [Min Root](../../../part-02/fibonacci-heap/min-root.md)
-- [Min Root eq none iff](../../../part-02/fibonacci-heap/min-root-eq-none-iff.md)
+- [Minimum root of a forest](../../../part-02/fibonacci-heap/min-root.md)
+- [Only the empty forest has no minimum root](../../../part-02/fibonacci-heap/min-root-eq-none-iff.md)
 - [Elements](../../../part-02/fibonacci-heap/elements-3.md)
-- [Find Min](../../../part-02/fibonacci-heap/find-min.md)
-- [Find Min eq none iff](../../../part-02/fibonacci-heap/find-min-eq-none-iff.md)
-- [Find Min le](../../../part-02/fibonacci-heap/find-min-le.md)
-- [Find Min mem](../../../part-02/fibonacci-heap/find-min-mem.md)
-- [Valid](../../../part-02/fibonacci-heap/valid.md)
-- [Decrease Root](decrease-root-2.md)
-- [Cut At](cut-at.md)
-- [Elements](../../../part-02/fibonacci-heap/elements.md)
-- [Elements decrease Root](elements-decrease-root.md)
-- [Root mem elements](../../../part-02/fibonacci-heap/root-mem-elements.md)
+- [Find-min for Fibonacci heaps](../../../part-02/fibonacci-heap/find-min.md)
+- [Find-min fails exactly on the empty Fibonacci heap](../../../part-02/fibonacci-heap/find-min-eq-none-iff.md)
+- [Find-min returns a lower bound of the Fibonacci heap](../../../part-02/fibonacci-heap/find-min-le.md)
+- [Find-min returns an element of the Fibonacci heap](../../../part-02/fibonacci-heap/find-min-mem.md)
+- [Valid Fibonacci trees](../../../part-02/fibonacci-heap/valid.md)
+- [Lowering the root keeps a Fibonacci tree valid](decrease-root-2.md)
+- [Cutting a subtree out of a Fibonacci tree](cut-at.md)
+- [Multiset of a Fibonacci tree](../../../part-02/fibonacci-heap/elements.md)
+- [Elements after replacing the root key](elements-decrease-root.md)
+- [The root of a Fibonacci tree is one of its elements](../../../part-02/fibonacci-heap/root-mem-elements.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.heapRight
 ---
 
-# Heap Right
+# Right child index in an array-backed binary tree
 
-The right-child index in a contiguous level-order binary tree.
+**Right child index in an array-backed binary tree.** In the level-order layout of a binary
+tree in an array indexed from $0$, the right child of the node at index $i$ is at index $2i + 2$.
 
 ## Depends on
 

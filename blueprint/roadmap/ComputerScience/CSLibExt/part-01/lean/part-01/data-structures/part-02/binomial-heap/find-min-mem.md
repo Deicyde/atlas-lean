@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.findMin_mem
 ---
 
-# Find Min mem
+# The minimum lookup of a binomial heap returns one of its elements
 
-Minimum inspection returns a represented element.
+**The minimum lookup of a binomial heap returns one of its elements.** Let $H$ be a binomial
+heap over a linearly ordered type. If the minimum lookup of $H$ returns $m$, then $m$ is an
+element of $H$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 - [Elements](elements-3.md)
-- [Find Min](find-min.md)
+- [Minimum of a binomial heap](find-min.md)
 
 ## Proof depends on
 
 - [Elements](elements-2.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Binomial Tree](binomial-tree.md)
-- [Elements](elements.md)
-- [Root](root.md)
-- [Root mem elements](root-mem-elements.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Removing a minimum-root tree](remove-min-tree-spec.md)
+- [Binomial tree](binomial-tree.md)
+- [Elements of a binomial tree](elements.md)
+- [Root of a binomial tree](root.md)
+- [The root of a binomial tree is one of its elements](root-mem-elements.md)
 
 ## Sources
 

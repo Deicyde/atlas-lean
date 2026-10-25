@@ -20,10 +20,10 @@ Distances attached to first-discovery order are nondecreasing.
 
 - [Edge](../directed-adjacency-2/edge.md)
 - [Walk](../directed-adjacency-2/walk.md)
-- [Contents](../../data-structures/part-01/queue/semantics/contents.md)
-- [Contents enqueue](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
-- [Contents eq cons of dequeue? eq some](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
-- [Dequeue? eq none iff](../../data-structures/part-01/queue/semantics/dequeue-eq-none-iff.md)
+- [Contents of a two-list queue](../../data-structures/part-01/queue/semantics/contents.md)
+- [Enqueueing appends to the contents](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
+- [A successful dequeue splits off the first element](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
+- [Dequeueing fails exactly on empty queues](../../data-structures/part-01/queue/semantics/dequeue-eq-none-iff.md)
 
 ## Sources
 

@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toListAux_eq
 ---
 
-# To List Aux eq
+# Accumulator flattening of a catenable heap
 
-The accumulator flattening prepends the naive flattening to the accumulator.
+**Accumulator flattening of a catenable heap.** For every catenable heap $h$ and list $a$,
+flattening $h$ from left to right in front of the accumulator $a$ gives the naive left-to-right
+flattening of $h$ followed by $a$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [To List Aux](to-list-aux.md)
-- [To List Naive](to-list-naive.md)
+- [Catenable heap](catenable-heap.md)
+- [Accumulating flattening of a catenable heap](to-list-aux.md)
+- [Naive flattening of a catenable heap](to-list-naive.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.insert
 ---
 
-# Insert
+# Red-black tree insertion
 
-Insert a key, leaving an existing equal key unchanged.
+**Red-black tree insertion.** For keys from a linearly ordered type, inserting $x$ into a
+red-black tree $t$ gives the unchecked insertion of $x$ into $t$ with its root recolored black.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Ins](ins.md)
-- [Make Black](make-black.md)
+- [Unchecked red-black insertion](ins.md)
+- [Blackening the root](make-black.md)
 
 ## Sources
 

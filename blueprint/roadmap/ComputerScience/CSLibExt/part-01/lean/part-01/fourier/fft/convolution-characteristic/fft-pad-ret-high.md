@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftPad_ret_high
 ---
 
-# Fft Pad ret high
+# Zero padding fills the second half with zeros
 
-Every entry in the materialized padding suffix is zero.
+**Zero padding fills the second half with zeros.** Let $R$ be a type with a zero, let $d$
+be a natural number and let $x$ be a vector of length $2^d$ over $R$. For every index $i$ with
+$2^d \le i < 2^{d+1}$, entry $i$ of the zero-padded vector of length $2^{d+1}$ produced from
+$x$ is $0$.
 
 ## Depends on
 
-- [Fft Pad](../convolution/fft-pad.md)
+- [Zero padding to twice the length](../convolution/fft-pad.md)
 
 ## Sources
 

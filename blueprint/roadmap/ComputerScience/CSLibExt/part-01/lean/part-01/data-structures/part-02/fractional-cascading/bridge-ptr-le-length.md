@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FractionalCascading.bridgePtr_le_length
 ---
 
-# Bridge Ptr le length
+# Bridge pointers are at most the catalog length
 
-A bridge pointer is a valid boundary index of the next catalog.
+**Bridge pointers are at most the catalog length.** For every catalog $L$ and value $v$, the
+bridge pointer of $v$ into $L$ is at most the length of $L$.
 
 ## Depends on
 
-- [Bridge Ptr](bridge-ptr.md)
+- [Bridge pointer](bridge-ptr.md)
 
 ## Sources
 

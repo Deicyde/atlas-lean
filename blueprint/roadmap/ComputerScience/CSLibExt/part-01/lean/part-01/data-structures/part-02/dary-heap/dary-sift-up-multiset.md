@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.darySiftUp_multiset
 ---
 
-# Dary Sift Up multiset
+# Sifting up preserves the multiset of entries
 
-Sifting up preserves the represented multiset.
+**Sifting up preserves the multiset of entries.** Let $d \ge 2$, let $a$ be an array over a
+linearly ordered type and let $i$ be a natural number. The array obtained from $a$ by $d$-ary
+sift-up from index $i$ has the same multiset of entries as $a$.
 
 ## Depends on
 
-- [Dary Sift Up](dary-sift-up.md)
+- [$d$-ary sift-up](dary-sift-up.md)
 
 ## Proof depends on
 
-- [Dary Sift Up perm](dary-sift-up-perm.md)
+- [Sifting up permutes the array](dary-sift-up-perm.md)
 
 ## Sources
 

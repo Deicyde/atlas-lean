@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.VanEmdeBoas.mem_contents
 ---
 
-# Mem contents
+# The contents of a van Emde Boas tree are its members
 
-The abstraction contains exactly the members of the tree.
+**The contents of a van Emde Boas tree are its members.** For every two-level van Emde Boas
+tree $t$ over the universe $\{0, 1, \dots, m^2 - 1\}$ and every $x$ in that universe, $x$ belongs
+to the finite set of stored elements of $t$ if and only if $x$ is a member of $t$.
 
 ## Depends on
 
-- [Van Emde Boas](van-emde-boas.md)
-- [Contents](contents.md)
-- [Member](member.md)
+- [Two-level van Emde Boas tree](van-emde-boas.md)
+- [Set of stored elements of a van Emde Boas tree](contents.md)
+- [Membership in a van Emde Boas tree](member.md)
 
 ## Sources
 

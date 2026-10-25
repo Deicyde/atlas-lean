@@ -6,18 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.keys
 ---
 
-# Keys
+# Inorder key list of a treap
 
-The inorder list of keys, used to state uniqueness independently of
-values. Derived from the linear `contents` traversal.
+**Inorder key list of a treap.** The inorder key list of a tree $t$ is the list of first
+components of the inorder list of key-value pairs of $t$, that is, the keys of $t$ in
+inorder.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Treap trees](tree.md)
 
 ## Proof depends on
 
-- [Contents](contents.md)
+- [Treap inorder contents](contents.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.heightOf_insert_of_present
 ---
 
-# Height Of insert of present
+# Reinsertion preserves tower height
 
-Replacing an existing key preserves the height of its tower.
+**Reinsertion preserves tower height.** Let $S$ be a valid skip list in which the key $k$
+has stored tower height $h_0$. Then after inserting $k$ into $S$ with any value and any
+requested height, the stored tower height of $k$ is still $h_0$.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Valid](valid.md)
-- [Height Of](height-of.md)
-- [Insert](insert.md)
+- [Skip list](skip-list.md)
+- [Valid skip list](valid.md)
+- [Stored tower height of a key](height-of.md)
+- [Skip-list insertion](insert.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Skip-list node](entry.md)
 
 ## Sources
 

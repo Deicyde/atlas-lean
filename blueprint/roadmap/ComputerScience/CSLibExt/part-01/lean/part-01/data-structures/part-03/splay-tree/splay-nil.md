@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SplayTree.splay_nil
 ---
 
-# Splay nil
+# Splaying the empty tree
 
-Splaying the empty tree is empty.
+**Splaying the empty tree.** For every key $x$ of a linearly ordered type, splaying $x$ in the
+empty binary tree gives the empty tree.
 
 ## Depends on
 
-- [Splay](splay.md)
+- [Splay operation](splay.md)
 
 ## Sources
 

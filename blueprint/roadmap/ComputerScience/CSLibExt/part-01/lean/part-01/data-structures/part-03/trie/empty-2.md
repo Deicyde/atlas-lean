@@ -7,14 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.Valid.empty
 ---
 
-# Empty
+# Validity of the empty trie
 
-The empty trie is valid.
+**Validity of the empty trie.** The empty trie is valid.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Empty](empty.md)
+- [Valid trie](valid.md)
+- [Empty trie](empty.md)
 
 ## Proof depends on
 

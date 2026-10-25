@@ -14,12 +14,12 @@ of $L$ and $R$ is the inorder traversal of $L$ followed by the inorder traversal
 
 ## Depends on
 
-- [Inorder](../../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree](../../../part-02/binary-search-tree/inorder.md)
 - [Join of two binary trees](join.md)
 
 ## Proof depends on
 
-- [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
+- [Inorder traversal of a binary tree with an accumulator](../../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

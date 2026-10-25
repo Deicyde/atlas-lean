@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_rerootAt
 ---
 
-# Perm vertices reroot At
+# Rerooting preserves the vertices
 
-Rerooting permutes the vertex list: same vertices, new preorder.
+**Rerooting preserves the vertices.** Let $t$ be a rooted ordered tree and $x$ a vertex. If
+rerooting $t$ at $x$ yields the tree $t'$, then the vertex list of $t'$ is a permutation of the
+vertex list of $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Reroot At](reroot-at.md)
+- [Rerooting a tree at a vertex](reroot-at.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
-- [Root](../euler-tour-tree/root.md)
-- [Vertices node](../euler-tour-tree/vertices-node.md)
-- [Graft At](graft-at.md)
-- [Perm vertices graft At](perm-vertices-graft-at.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
+- [Root of a rooted tree](../euler-tour-tree/root.md)
+- [Preorder vertex list of a node](../euler-tour-tree/vertices-node.md)
+- [Grafting a tree below a vertex](graft-at.md)
+- [Grafting adds the new subtree's vertices](perm-vertices-graft-at.md)
 
 ## Sources
 

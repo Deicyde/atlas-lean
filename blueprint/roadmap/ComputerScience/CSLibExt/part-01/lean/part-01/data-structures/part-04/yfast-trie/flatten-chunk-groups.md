@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.flatten_chunkGroups
 ---
 
-# Flatten chunk Groups
+# Chunking preserves the list
 
-Chunking partitions the list: flattening recovers it.
+**Chunking preserves the list.** For every bound $B$ (including $B = 0$) and every list $l$
+of $w$-bit keys, concatenating the chunks of the chunking of $l$ with bound $B$, in order,
+gives back $l$.
 
 ## Depends on
 
-- [Chunk Groups](chunk-groups.md)
+- [Chunking a list into groups](chunk-groups.md)
 
 ## Proof depends on
 
-- [Chunk Groups Aux](chunk-groups-aux.md)
+- [Fuel-bounded chunking](chunk-groups-aux.md)
 
 ## Sources
 

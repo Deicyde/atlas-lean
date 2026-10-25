@@ -6,21 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.ofSortedList
 ---
 
-# Of Sorted List
+# Grouped y-fast trie from a sorted list
 
-Build a grouped y-fast trie from a sorted list by cutting it into groups
-of at most `B` keys. The bound and validity require `0 < B`
-(`valid_ofSortedList`); at `B = 0` the groups degenerate to `[l]` and the
-result is invalid for nonempty `l` (`not_valid_ofSortedList_zero`).
+**Grouped y-fast trie from a sorted list.** For a group bound $B$ and a list $l$ of
+$w$-bit keys, this is the grouped y-fast trie whose groups, in order, are consecutive pieces of
+$l$ that together make up $l$, and whose representative x-fast trie is obtained from the empty
+x-fast trie by inserting the last element of each group, in order. If $B > 0$, the groups are
+obtained by repeatedly cutting off the first $B$ keys, so every group has exactly $B$ keys
+except possibly the last, which has between one and $B$ keys. If $B = 0$, the only group is $l$
+itself. In both cases there are no groups when $l$ is empty.
+
+The construction is intended for strictly increasing $l$. It yields a valid trie when $B > 0$
+and $l$ is strictly increasing, and an invalid one when $B = 0$ and $l$ is nonempty.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
 
 ## Proof depends on
 
-- [Chunk Groups](chunk-groups.md)
-- [Of Groups](of-groups.md)
+- [Chunking a list into groups](chunk-groups.md)
+- [Grouped y-fast trie from a list of groups](of-groups.md)
 
 ## Sources
 

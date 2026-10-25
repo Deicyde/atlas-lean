@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EditStep.cost
 ---
 
-# Cost
+# Unit cost of an edit step
 
-Unit cost of an edit step. Keeps are free and the three edits cost one.
+**Unit cost of an edit step.** The cost of an edit step is $0$ for a keep step and $1$ for a
+deletion, an insertion or a substitution.
 
 ## Depends on
 
-- [Edit Step](edit-step.md)
+- [Edit step](edit-step.md)
 
 ## Sources
 

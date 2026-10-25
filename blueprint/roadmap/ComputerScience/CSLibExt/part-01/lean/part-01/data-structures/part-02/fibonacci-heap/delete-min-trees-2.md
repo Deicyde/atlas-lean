@@ -7,33 +7,37 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_trees
 ---
 
-# Delete Min trees
+# Fibonacci heap minimum deletion agrees with its root-list version
 
-Projecting away the validity proofs from deletion gives `deleteMinTrees`.
+**Fibonacci heap minimum deletion agrees with its root-list version.** For every Fibonacci
+heap $H$, deleting the minimum of $H$ and keeping only the returned value and the root list
+of the resulting heap gives the same result as the root-list minimum deletion applied to the
+root list of $H$: either both fail, or both return the same value and the same list of
+trees.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
-- [Delete Min](delete-min.md)
-- [Delete Min Trees](delete-min-trees.md)
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci heap](fibonacci-heap.md)
+- [Deleting the minimum of a Fibonacci heap](delete-min.md)
+- [Minimum deletion on a forest](delete-min-trees.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
-- [Consolidate](consolidate.md)
+- [Valid Fibonacci forests](valid-2.md)
+- [Sublists of valid Fibonacci forests are valid](sublist.md)
+- [Consolidation of a forest](consolidate.md)
 - [Elements](elements-2.md)
-- [Min Root](min-root.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid append](valid-append.md)
-- [Valid consolidate](valid-consolidate.md)
-- [Valid](valid.md)
-- [Child valid](child-valid.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Root](root.md)
+- [Minimum root of a forest](min-root.md)
+- [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
+- [Minimum-tree removal in a Fibonacci forest](remove-min-tree-spec.md)
+- [Concatenation preserves validity of Fibonacci forests](valid-append.md)
+- [Consolidation preserves validity](valid-consolidate.md)
+- [Valid Fibonacci trees](valid.md)
+- [Children of a valid Fibonacci tree are valid](child-valid.md)
+- [Children of a Fibonacci tree](children.md)
+- [Multiset of a Fibonacci tree](elements.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

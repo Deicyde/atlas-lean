@@ -31,7 +31,7 @@ $T$ is assumed.
 - [Membership in the inorder traversal of an AVL tree](../../avl-tree-2/mem-inorder.md)
 - [Leftmost key of a tree](min-d.md)
 - [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
-- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Membership in a binary tree](../../../part-02/binary-search-tree/mem.md)
 
 ## Sources
 

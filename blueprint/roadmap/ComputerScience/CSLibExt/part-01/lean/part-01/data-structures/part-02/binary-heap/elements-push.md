@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.elements_push
 ---
 
-# Elements push
+# Elements after binary heap insertion
 
-Insertion adds exactly one occurrence.
+**Elements after binary heap insertion.** Let $h$ be a binary min-heap over a linearly ordered
+type and $x$ a value. The multiset of elements of the heap obtained by inserting $x$ into $h$ is
+the multiset of elements of $h$ with one more copy of $x$ added.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
-- [Elements](elements.md)
-- [Push](push.md)
+- [Binary min-heap](min-heap.md)
+- [Elements of a binary min-heap](elements.md)
+- [Insertion into a binary min-heap](push.md)
 
 ## Proof depends on
 
-- [Sift Up](sift-up.md)
-- [Sift Up perm](sift-up-perm.md)
+- [Sift-up](sift-up.md)
+- [Sift-up permutes the array](sift-up-perm.md)
 
 ## Sources
 

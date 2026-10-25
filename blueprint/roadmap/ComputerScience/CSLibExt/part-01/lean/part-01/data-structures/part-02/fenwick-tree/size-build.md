@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FenwickTree.size_build
 ---
 
-# Size build
+# Size of a built Fenwick tree
 
-The size of a built tree is the length of its input.
+**Size of a built Fenwick tree.** For every list $a$ over an additive commutative monoid,
+the Fenwick tree built from $a$ has size equal to the length of $a$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Size](size.md)
+- [Building a Fenwick tree from a list](build.md)
+- [Size of a Fenwick tree](size.md)
 
 ## Proof depends on
 
-- [Fenwick Tree](fenwick-tree.md)
-- [Block Sum Array](block-sum-array.md)
+- [Fenwick tree](fenwick-tree.md)
+- [Interval sum read from an array](block-sum-array.md)
 
 ## Sources
 

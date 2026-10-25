@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.LookupEquiv.trans
 ---
 
-# Trans
+# Transitivity of trie lookup equivalence
 
-Lookup equivalence is transitive.
+**Transitivity of trie lookup equivalence.** If a trie $T_1$ is lookup-equivalent to a trie
+$T_2$ and $T_2$ is lookup-equivalent to a trie $T_3$, then $T_1$ is lookup-equivalent to $T_3$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Lookup Equiv](lookup-equiv.md)
+- [Lookup equivalence of tries](lookup-equiv.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
+- [Trie lookup](lookup.md)
 
 ## Sources
 

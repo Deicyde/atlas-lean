@@ -7,27 +7,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_singleton
 ---
 
-# Search With Cost singleton
+# Instrumented search in a one-entry tree
 
-A singleton search records its short-circuit endpoint count and any empty visit.
+**Instrumented search in a one-entry tree.** Let $e$ be an entry whose interval is $[a, b]$,
+let $q = [c, d]$ be a query interval, and let $k = 2$ if $a \le d$ and $k = 1$ otherwise.
+Consider the single-node tree built from $e$ with empty subtrees and exact cached fields. If
+$[a, b]$ and $[c, d]$ overlap (that is, $a \le d$ and $c \le b$), the instrumented overlap search
+of $q$ in this tree returns $e$ with a cost record of one node visit and $k$ endpoint
+comparisons. Otherwise it returns no entry with a cost record of two node visits (the root and
+its empty right subtree) and $k$ endpoint comparisons. All other counters are zero in both
+cases.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Overlaps](overlaps-2.md)
-- [Tree](tree.md)
-- [Mk Node](mk-node.md)
-- [Search With Cost](search-with-cost.md)
+- [Overlap test for closed intervals](overlaps-2.md)
+- [Interval tree](tree.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [Instrumented overlap search](search-with-cost.md)
 
 ## Proof depends on
 
-- [Overlaps With Cost](overlaps-with-cost.md)
-- [Overlaps With Cost fst](overlaps-with-cost-fst.md)
-- [Overlaps With Cost snd](overlaps-with-cost-snd.md)
+- [Overlap test with comparison count](overlaps-with-cost.md)
+- [The instrumented overlap test returns the plain result](overlaps-with-cost-fst.md)
+- [Comparison count of the overlap test](overlaps-with-cost-snd.md)
 - [Cached Max?](cached-max.md)
-- [Node Max](node-max.md)
+- [Maximum high endpoint at a node](node-max.md)
 
 ## Sources
 

@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.ParentChild.mem_right
 ---
 
-# Mem right
+# The child endpoint of a tree edge is a vertex
 
-The child endpoint of a directed edge is a vertex of the tree.
+**The child endpoint of a tree edge is a vertex.** If $a$ is the parent of $b$ somewhere in
+a tree $t$, then $b$ is a vertex of $t$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Parent Child](parent-child.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
 
 ## Proof depends on
 
-- [Mem right](mem-right.md)
-- [Adjacent](adjacent-2.md)
+- [The second endpoint of a tree edge is a vertex](mem-right.md)
+- [Parent-child edges are edges](adjacent-2.md)
 
 ## Sources
 

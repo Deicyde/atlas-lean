@@ -29,8 +29,8 @@ inorder traversal of $l$, followed by $k$, followed by the inorder traversal of 
 - [Cached height of an AVL tree](height.md)
 - [AVL node with computed height](mk-node.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Inorder](../../part-02/binary-search-tree/inorder.md)
-- [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
+- [Inorder traversal of a binary tree](../../part-02/binary-search-tree/inorder.md)
+- [Inorder traversal of a binary tree with an accumulator](../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources
 

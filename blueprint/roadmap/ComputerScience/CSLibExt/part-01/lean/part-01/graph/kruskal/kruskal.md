@@ -21,7 +21,7 @@ Run stable Kruskal selection and return accepted edges in processing order.
 - [Initial Forest](initial-forest.md)
 - [Ordered Edges](ordered-edges.md)
 - [Scan](scan.md)
-- [Forest](../../data-structures/part-03/union-find/forest.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 
 ## Sources
 

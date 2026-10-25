@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OpenAddressing.Stored
 ---
 
-# Stored
+# Stored binding in an open-addressing table
 
-The binding `key ↦ value` is held in some slot of the table.
+**Stored binding in an open-addressing table.** An open-addressing hash table $T$ stores the
+binding $k \mapsto v$ when some slot of $T$ holds the pair $(k, v)$.
 
 ## Depends on
 
-- [Open Addressing](open-addressing.md)
+- [Open-addressing hash table](open-addressing.md)
 
 ## Sources
 

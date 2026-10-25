@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsMaxSubarraySum.unique
 ---
 
-# Unique
+# Uniqueness of the maximum subarray sum
 
-The maximum subarray sum is unique.
+**Uniqueness of the maximum subarray sum.** Let $\alpha$ be a linearly ordered type with an
+additive monoid structure, and let $L$ be a list over $\alpha$. If $m, m' \in \alpha$ are both
+maximum subarray sums of $L$, meaning that each is the sum of some nonempty contiguous run of $L$
+and bounds the sum of every nonempty contiguous run of $L$, then $m = m'$.
 
 ## Depends on
 
-- [Is Max Subarray Sum](is-max-subarray-sum.md)
+- [Being the maximum subarray sum](is-max-subarray-sum.md)
 
 ## Sources
 

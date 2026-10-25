@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.point
 ---
 
-# Point
+# Endpoint of an event
 
-The endpoint an event stands for.
+**Endpoint of an event.** The point of the sweep event $(i, b)$ is the left endpoint of
+segment $i$ when $b$ is true (a left-endpoint event) and the right endpoint of segment $i$ when
+$b$ is false.
 
 ## Depends on
 
-- [Event](event.md)
+- [Sweep event](event.md)
 
 ## Proof depends on
 
-- [Left](left.md)
-- [Right](right.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
 
 ## Sources
 

@@ -21,7 +21,7 @@ than $k$, and every key of the right subtree is greater than $k$.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

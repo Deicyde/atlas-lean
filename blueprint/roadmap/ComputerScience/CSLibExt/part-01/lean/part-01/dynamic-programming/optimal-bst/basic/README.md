@@ -4,5 +4,5 @@ navigation: module
 
 # Basic
 
-- [Expected Search Cost](expected-search-cost.md)
-- [Optimal BST](optimal-bst.md)
+- [Expected search cost of a binary search tree](expected-search-cost.md)
+- [Optimal binary search tree procedure](optimal-bst.md)

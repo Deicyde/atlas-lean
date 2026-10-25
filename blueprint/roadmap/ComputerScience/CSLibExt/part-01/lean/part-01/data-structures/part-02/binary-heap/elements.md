@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.elements
 ---
 
-# Elements
+# Elements of a binary min-heap
 
-The multiset represented by a heap.
+**Elements of a binary min-heap.** The multiset of elements of a binary min-heap is the
+multiset of the entries of its level-order storage array, counted with multiplicity.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
+- [Binary min-heap](min-heap.md)
 
 ## Sources
 

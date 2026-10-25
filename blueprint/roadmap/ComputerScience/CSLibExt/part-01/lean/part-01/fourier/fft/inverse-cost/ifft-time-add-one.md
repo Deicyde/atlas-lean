@@ -6,19 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ifft_time_add_one
 ---
 
-# Ifft time add one
+# Exact operation count of the inverse FFT
 
-The three materialized maps and shared normalization add `9*n + 1` operations.
+**Exact operation count of the inverse FFT.** Let $R$ be a field with a star ring structure,
+let $d$ be a natural number, $N = 2^d$, $\omega \in R$ arbitrary and $x \in R^N$. The number $T$ of
+operations charged by the inverse FFT procedure on $x$ with root $\omega$ satisfies
+$T + 1 = (7d + 10) \cdot 2^d + 1$, equivalently $T = (7d + 10) \cdot 2^d$.
+
+Beyond the FFT, the two conjugation passes and the scaling pass each charge $3N$ operations and
+computing $1/N$ charges one, for $9N + 1$ in total.
 
 ## Depends on
 
-- [Ifft](../inverse/ifft.md)
+- [Inverse FFT by conjugation](../inverse/ifft.md)
 
 ## Proof depends on
 
-- [Fft](../../fft-2/fft.md)
-- [Fft Conjugate](../inverse/fft-conjugate.md)
-- [Fft time add one](../cost/fft-time-add-one.md)
+- [Radix-two fast Fourier transform](../../fft-2/fft.md)
+- [Charged entrywise conjugation](../inverse/fft-conjugate.md)
+- [Exact cost of the radix-two FFT](../cost/fft-time-add-one.md)
 
 ## Sources
 

@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.valid_insert
 ---
 
-# Valid insert
+# Red-black insertion preserves validity
 
-Insertion preserves validity of a red-black tree.
+**Red-black insertion preserves validity.** Let $\alpha$ be a linearly ordered type and
+$x \in \alpha$. If $t$ is a valid red-black tree with keys in $\alpha$, then the tree obtained by
+inserting $x$ into $t$ is also valid.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [Red-black tree data type](tree.md)
+- [Valid red-black tree](valid.md)
+- [Red-black tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Balanced](balanced.md)
-- [Color](color.md)
-- [Ordered](ordered.md)
-- [Red Ok](red-ok.md)
-- [Color Of](color-of.md)
-- [Valid insert of invariants](valid-insert-of-invariants.md)
+- [Black-height balanced red-black tree](balanced.md)
+- [Red-black node colors](color.md)
+- [Ordered red-black tree](ordered.md)
+- [Red property of red-black trees](red-ok.md)
+- [Root color](color-of.md)
+- [Red-black insertion yields a valid tree from the invariants](valid-insert-of-invariants.md)
 
 ## Sources
 

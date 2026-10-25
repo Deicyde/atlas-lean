@@ -20,7 +20,7 @@ its cached heights.
 ## Proof depends on
 
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [All](../../part-02/binary-search-tree/all.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
 
 ## Sources
 

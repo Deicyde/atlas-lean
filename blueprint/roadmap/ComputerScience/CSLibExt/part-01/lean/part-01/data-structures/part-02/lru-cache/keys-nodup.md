@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.keys_nodup
 ---
 
-# Keys nodup
+# Keys of an LRU cache are distinct
 
-The keys of any cache are pairwise distinct.
+**Keys of an LRU cache are distinct.** The keys stored in any LRU cache are pairwise
+distinct.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Keys](keys.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Key list of an LRU cache](keys.md)
 
 ## Sources
 

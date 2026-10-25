@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.nwScore_le_fittingScore
 ---
 
-# Nw Score le fitting Score
+# Infix scores are at most the fitting score
 
-An infix's score is at most the fitting score.
+**Infix scores are at most the fitting score.** Let $\sigma$ be a substitution score and
+$g$ a gap score. If $l$ is an infix of a sequence $y$, then for every sequence $x$ the
+Needleman–Wunsch score of $x$ against $l$ is at most the fitting score of $x$ against $y$,
+both taken with $\sigma$ and $g$.
 
 ## Depends on
 
-- [Fitting Score](fitting-score.md)
+- [Fitting score](fitting-score.md)
 - [Infixes](infixes.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.agg_eq_sum_toList
 ---
 
-# Agg eq sum to List
+# Aggregate of a valid segment tree
 
-In a valid tree the cached root aggregate is the sum of the leaf list.
+**Aggregate of a valid segment tree.** If $t$ is a valid segment tree with values in an
+additive monoid, then the aggregate of $t$ equals the sum of the leaf values of $t$, taken from
+left to right.
 
 ## Depends on
 
 - [Segment Tree](segment-tree.md)
-- [Valid](valid.md)
-- [Agg](agg.md)
-- [To List](to-list.md)
+- [Valid segment trees](valid.md)
+- [Aggregate of a segment tree](agg.md)
+- [Leaf list of a segment tree](to-list.md)
 
 ## Proof depends on
 
-- [Size](size.md)
-- [To List node](to-list-node.md)
+- [Size of a segment tree](size.md)
+- [Leaf list of an internal node](to-list-node.md)
 
 ## Sources
 

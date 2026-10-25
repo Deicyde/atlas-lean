@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftCircularArray_size_of_eq_some
 ---
 
-# Fft Circular Array size of eq some
+# Output length of array circular FFT convolution
 
-Every successful raw circular output has exactly the source input length.
+**Output length of array circular FFT convolution.** Let $R$ be a field with a star-ring
+structure, let $\omega \in R$, and let $x, y$ be arrays over $R$. If array circular FFT
+convolution with root $\omega$ on $x$ and $y$ returns an array $z$, then $z$ has the same
+length as $x$.
 
 ## Depends on
 
-- [Fft Circular Array](../convolution/fft-circular-array.md)
+- [FFT circular convolution on arrays](../convolution/fft-circular-array.md)
 
 ## Proof depends on
 
-- [Fft Circular](../convolution/fft-circular.md)
+- [FFT circular convolution](../convolution/fft-circular.md)
 
 ## Sources
 

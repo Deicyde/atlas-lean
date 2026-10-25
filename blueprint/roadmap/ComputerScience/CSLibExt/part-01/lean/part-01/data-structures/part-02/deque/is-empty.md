@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Deque.isEmpty
 ---
 
-# Is Empty
+# Emptiness test for a deque
 
-A deque reports that it is empty when both of its lists are empty.
+**Emptiness test for a deque.** The emptiness test of a deque returns true exactly when both
+its front list and its back list are empty.
 
 ## Depends on
 
-- [Deque](deque.md)
+- [Two-list deque](deque.md)
 
 ## Sources
 

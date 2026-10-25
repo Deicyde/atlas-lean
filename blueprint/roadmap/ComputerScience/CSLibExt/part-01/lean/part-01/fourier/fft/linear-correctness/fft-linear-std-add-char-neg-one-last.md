@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftLinear_stdAddChar_neg_one_last
 ---
 
-# Fft Linear std Add Char neg one last
+# The last entry of FFT linear convolution is zero (Princeton sign)
 
-The final stored Princeton-sign linear coefficient is zero.
+**The last entry of FFT linear convolution is zero (Princeton sign).** Let $d$ be a natural
+number, $N = 2^{d+1}$ and $\omega = e^{-2\pi i/N}$. For vectors $x, y \in \mathbb{C}^{2^d}$, let
+$z \in \mathbb{C}^N$ be the output of the FFT linear convolution of $x$ and $y$ with root $\omega$,
+which pads both vectors with zeros to length $N$ and convolves them circularly by FFT. Then the
+last entry $z_{N-1}$ is $0$.
 
 ## Depends on
 
-- [Fft Linear](../convolution/fft-linear.md)
+- [FFT linear convolution](../convolution/fft-linear.md)
 
 ## Proof depends on
 
-- [Fft Linear std Add Char neg one coeff](fft-linear-std-add-char-neg-one-coeff.md)
-- [Fft Polynomial](../polynomial/fft-polynomial.md)
-- [Fft Polynomial mul last](../polynomial/fft-polynomial-mul-last.md)
+- [FFT linear convolution gives the product coefficients (Princeton sign)](fft-linear-std-add-char-neg-one-coeff.md)
+- [Polynomial of a coefficient vector](../polynomial/fft-polynomial.md)
+- [The last coefficient of a doubled-length product vanishes](../polynomial/fft-polynomial-mul-last.md)
 
 ## Sources
 

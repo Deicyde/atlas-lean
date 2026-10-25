@@ -6,13 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LruCache.size
 ---
 
-# Size
+# Size of an LRU cache
 
-The number of cached entries.
+**Size of an LRU cache.** The size of an LRU cache is the number of entries it stores.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
+- [Least-recently-used cache](lru-cache.md)
 
 ## Sources
 

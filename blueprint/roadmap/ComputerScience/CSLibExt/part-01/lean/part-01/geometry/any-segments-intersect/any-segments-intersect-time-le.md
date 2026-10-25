@@ -6,31 +6,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.anySegmentsIntersect_time_le
 ---
 
-# Cost
+# Running time of ANY-SEGMENTS-INTERSECT
 
-**Cost**: at most `n² + 24 n`, i.e. `O(n²)`: at most `n` `DIRECTION`s to place each segment
-in the list-based status and at most three `SEGMENTS-INTERSECT` tests per segment.
+**Running time of ANY-SEGMENTS-INTERSECT.** Let $\Bbbk$ be a field with a linear order. For
+every $n$ segments in $\Bbbk^2$, each given by its two endpoints, ANY-SEGMENTS-INTERSECT costs at
+most $n^2 + 24n$, so it runs in time $O(n^2)$. Cost counts one unit per evaluation of DIRECTION
+or ON-SEGMENT.
+
+The bound comes from at most $n$ DIRECTION evaluations to place each segment in the list-based
+status and at most three SEGMENTS-INTERSECT tests per segment.
 
 ## Depends on
 
-- [Any Segments Intersect](any-segments-intersect.md)
+- [ANY-SEGMENTS-INTERSECT](any-segments-intersect.md)
 
 ## Proof depends on
 
-- [Event](event.md)
-- [Below](below.md)
-- [Event Cost](event-cost.md)
-- [Events](events.md)
-- [Key](key.md)
-- [Left](left.md)
-- [Right](right.md)
-- [Run](run.md)
-- [Run mem iff](run-mem-iff.md)
-- [Step](step.md)
-- [Sweep](sweep.md)
-- [Test](test.md)
-- [Test Opt](test-opt.md)
-- [Test Pair](test-pair.md)
+- [Sweep event](event.md)
+- [Segment strictly below a point](below.md)
+- [Cost charged to a sweep event](event-cost.md)
+- [Sorted sweep events](events.md)
+- [Sweep order on endpoint events](key.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
+- [Running the sweep over a list of events](run.md)
+- [The sweep status holds the active segments](run-mem-iff.md)
+- [One step of the sweep](step.md)
+- [The any-segments-intersect sweep](sweep.md)
+- [Intersection test for two input segments](test.md)
+- [Testing a segment against an optional neighbour](test-opt.md)
+- [Testing the neighbours of a deleted segment](test-pair.md)
 - [Segments Intersect](../segment-intersection/segments-intersect.md)
 - [Segments Intersect time](../segment-intersection/segments-intersect-time.md)
 

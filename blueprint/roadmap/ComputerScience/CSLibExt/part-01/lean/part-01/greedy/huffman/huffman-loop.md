@@ -15,13 +15,13 @@ Run a bounded sequence of Huffman merges.
 - [Huffman Priority](huffman-priority.md)
 - [Huffman Tree](huffman-tree.md)
 - [Huffman Work Item](huffman-work-item.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Proof depends on
 
 - [Huffman Two Min](huffman-two-min.md)
-- [Extract Min](../../data-structures/part-02/binary-heap/extract-min.md)
-- [Push](../../data-structures/part-02/binary-heap/push.md)
+- [Extracting the minimum of a binary min-heap](../../data-structures/part-02/binary-heap/extract-min.md)
+- [Insertion into a binary min-heap](../../data-structures/part-02/binary-heap/push.md)
 - [Extract Two Min?](extract-two-min.md)
 - [Huffman Table Forest](huffman-table-forest.md)
 - [Take Serial?](take-serial.md)

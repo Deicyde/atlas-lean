@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.ordered_keys
 ---
 
-# Ordered keys
+# Inorder keys of an ordered treap are strictly increasing
 
-The inorder keys of an ordered tree are strictly increasing.
+**Inorder keys of an ordered treap are strictly increasing.** Let the keys come from a
+linearly ordered type. If a treap tree $t$ is ordered, then its inorder key list is strictly
+increasing: each key in the list is smaller than every key after it.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Ordered](ordered.md)
-- [Keys](keys.md)
+- [Treap trees](tree.md)
+- [Ordered treap tree](ordered.md)
+- [Inorder key list of a treap](keys.md)
 
 ## Proof depends on
 
-- [All Nodes](all-nodes.md)
-- [Mem Key](mem-key.md)
-- [All Nodes key iff](all-nodes-key-iff.md)
-- [Keys node](keys-node.md)
-- [Mem keys](mem-keys.md)
+- [Treap predicate holding at every node](all-nodes.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Treap all-nodes predicate on keys via key membership](all-nodes-key-iff.md)
+- [Inorder keys of a node](keys-node.md)
+- [The inorder key list lists exactly the keys of a treap](mem-keys.md)
 
 ## Sources
 

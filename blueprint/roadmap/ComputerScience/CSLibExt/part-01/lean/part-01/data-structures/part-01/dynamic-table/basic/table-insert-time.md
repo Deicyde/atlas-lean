@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_time
 ---
 
-# Table Insert time
+# Cost of an insertion
 
-Count the new payload write and exactly the old-item writes on a full resize.
+**Cost of an insertion.** Let $T$ be a dynamic table with item count $n$ and capacity $m$, and
+let $x$ be an item. Inserting $x$ into $T$ with TABLE-INSERT costs $1 + n$ if $m > 0$ and $n = m$,
+and costs $1$ otherwise.
 
 ## Depends on
 
-- [Table](table.md)
-- [Table Insert](table-insert.md)
+- [Dynamic table](table.md)
+- [TABLE-INSERT](table-insert.md)
 
 ## Sources
 

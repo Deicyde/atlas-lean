@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RadixTrie.lookup
 ---
 
-# Lookup
+# Radix trie lookup
 
-Looks up a list key in a radix trie.
+**Radix trie lookup.** Looking up a key, a list over $\alpha$, in a radix trie returns an
+optional value. At a node, the empty key returns the value stored at the node, if any. A
+nonempty key $k$ with first symbol $c$ goes to the first child edge whose label starts with $c$.
+If there is no such edge, or its label $\ell$ is not a prefix of $k$, the lookup returns no
+value; otherwise it continues in the subtree of that edge with $k$ minus its first $|\ell|$
+symbols.
 
 ## Depends on
 
-- [Radix Trie](radix-trie.md)
+- [Radix trie](radix-trie.md)
 
 ## Proof depends on
 
-- [Common Prefix](common-prefix.md)
+- [Longest common prefix](common-prefix.md)
 
 ## Sources
 

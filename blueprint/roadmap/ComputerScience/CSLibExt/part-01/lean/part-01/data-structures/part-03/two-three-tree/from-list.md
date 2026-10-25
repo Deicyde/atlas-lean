@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.fromList
 ---
 
-# From List
+# Building a 2-3 tree from a list
 
-Build a root by inserting the list from right to left.
+**Building a 2-3 tree from a list.** For linearly ordered keys, the 2-3 tree root built from
+a list is defined by recursion: the empty list gives the empty 2-3 tree, and a list with head $x$
+and tail $xs$ gives the result of inserting $x$ into the root built from $xs$. Thus the elements
+are inserted into the empty tree from the last to the first.
 
 ## Depends on
 
-- [Root](root.md)
+- [2-3 trees of unspecified height](root.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
-- [Insert](insert.md)
+- [Empty 2-3 tree](empty.md)
+- [Insertion into a 2-3 tree root](insert.md)
 
 ## Sources
 

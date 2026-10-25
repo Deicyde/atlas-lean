@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.bandedFrom_final
 ---
 
-# Banded From final
+# A passing band check bounds the final offset
 
-A banded alignment ends within the band: its final offset difference is
-bounded by `w`.
+**A passing band check bounds the final offset.** Let $w, i, j \in \mathbb{N}$ and let
+$A$ be an alignment. If the band check of $A$ with width $w$ from offset $(i, j)$ is true, then
+$|(i + p) - (j + q)| \le w$, where $p$ and $q$ are the numbers of columns of $A$ whose first,
+respectively second, entry is present.
 
 ## Depends on
 
 - [Alignment](../sequence-alignment/alignment.md)
-- [Banded From](banded-from.md)
+- [Band check from a starting offset](banded-from.md)
 
 ## Sources
 

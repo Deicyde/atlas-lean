@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.get_promotes
 ---
 
-# Get promotes
+# A successful lookup moves the entry to the front
 
-A successful lookup promotes the entry to the front of the cache.
+**A successful lookup moves the entry to the front.** If an LRU cache stores the pair
+$(k, v)$, then after looking up $k$ the most recently used (first) entry of the cache is
+$(k, v)$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Get](get.md)
+- [Least-recently-used cache](lru-cache.md)
+- [LRU cache lookup](get.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

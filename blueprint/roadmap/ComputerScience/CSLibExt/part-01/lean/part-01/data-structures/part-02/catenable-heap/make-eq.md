@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.make_eq
 ---
 
-# Make eq
+# Cost and result of creating a catenable heap
 
-`make` returns the empty heap at cost 0.
+**Cost and result of creating a catenable heap.** Creating a catenable heap returns the empty
+heap, at cost $0$.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Make](make.md)
+- [Catenable heap](catenable-heap.md)
+- [Creating an empty catenable heap](make.md)
 
 ## Sources
 

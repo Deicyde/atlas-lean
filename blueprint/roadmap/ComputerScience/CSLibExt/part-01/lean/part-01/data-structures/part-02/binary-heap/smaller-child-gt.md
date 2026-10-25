@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.smallerChild_gt
 ---
 
-# Smaller Child gt
+# The smaller child has a larger index
 
-A selected child has an index strictly below its parent in the tree.
+**The smaller child has a larger index.** For every array $a$ over a linearly ordered type
+and all indices $i$ and $c$, if $c$ is the smaller child of $i$ in $a$, then $i < c$.
 
 ## Depends on
 
-- [Smaller Child](smaller-child.md)
+- [Smaller child](smaller-child.md)
 
 ## Proof depends on
 
-- [Heap Left](heap-left.md)
-- [Heap Right](heap-right.md)
+- [Left child index in a level-order binary tree](heap-left.md)
+- [Right child index in an array-backed binary tree](heap-right.md)
 
 ## Sources
 

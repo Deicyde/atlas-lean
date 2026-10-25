@@ -7,31 +7,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_insertKeyWithCost
 ---
 
-# Valid Invariant insert Key With Cost
+# Keyed insertion preserves interval validity
 
-Insertion of a valid entry preserves stored-interval validity.
+**Keyed insertion preserves interval validity.** Let $T$ be an interval tree in which every
+stored interval $[a, b]$ satisfies $a \le b$, and let $e$ be an entry whose interval $[a, b]$
+satisfies $a \le b$. Then the tree returned by keyed insertion of $e$ into $T$ also has every
+stored interval $[a, b]$ satisfying $a \le b$.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Entry](entry.md)
+- [Operation cost counters for interval trees](cost.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
-- [Valid](valid.md)
-- [Tree](tree.md)
-- [Valid Invariant](valid-invariant.md)
-- [Insert Key With Cost](insert-key-with-cost.md)
+- [Valid interval](valid.md)
+- [Interval tree](tree.md)
+- [Validity invariant of an interval tree](valid-invariant.md)
+- [Keyed insertion with cost](insert-key-with-cost.md)
 
 ## Proof depends on
 
-- [Key](key.md)
-- [Mk Node](mk-node.md)
-- [Rebalance With Cost](rebalance-with-cost.md)
-- [Rotate Left](rotate-left.md)
-- [Rotate Left Right](rotate-left-right.md)
-- [Rotate Right](rotate-right.md)
-- [Rotate Right Left](rotate-right-left.md)
-- [Valid Invariant mk Node](valid-invariant-mk-node.md)
-- [Compare Key](compare-key.md)
+- [Search key of an interval entry](key.md)
+- [Node construction with repaired metadata](mk-node.md)
+- [AVL rebalancing step with cost](rebalance-with-cost.md)
+- [Left rotation](rotate-left.md)
+- [Left-right double rotation](rotate-left-right.md)
+- [Right rotation](rotate-right.md)
+- [Right-left double rotation](rotate-right-left.md)
+- [Node construction preserves interval validity](valid-invariant-mk-node.md)
+- [Lexicographic comparison of keys](compare-key.md)
 
 ## Sources
 

@@ -15,14 +15,14 @@ by decreasing the key at position $i$ to $x$ has the same length as $a$.
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Binary min-heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease-key in a binary min-heap](decrease-key.md)
 
 ## Proof depends on
 
 - [Array of a binary heap after decrease-key](decrease-key-data.md)
-- [Sift Up](../../../part-02/binary-heap/sift-up.md)
-- [Sift Up perm](../../../part-02/binary-heap/sift-up-perm.md)
+- [Sift-up](../../../part-02/binary-heap/sift-up.md)
+- [Sift-up permutes the array](../../../part-02/binary-heap/sift-up-perm.md)
 
 ## Sources
 

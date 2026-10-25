@@ -12,13 +12,13 @@ Every right endpoint processed has its left endpoint processed.
 
 ## Depends on
 
-- [Event](event.md)
-- [Events](events.md)
+- [Sweep event](event.md)
+- [Sorted sweep events](events.md)
 
 ## Proof depends on
 
-- [Key](key.md)
-- [Key left lt right](key-left-lt-right.md)
+- [Sweep order on endpoint events](key.md)
+- [Left endpoint events precede right endpoint events](key-left-lt-right.md)
 
 ## Sources
 

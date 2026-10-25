@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_sound
 ---
 
-# Lookup sound
+# Soundness of cuckoo lookup
 
-Lookup is sound: a found value is stored in one of the two tables.
+**Soundness of cuckoo lookup.** Let $T$ be a cuckoo hash table with hash functions $h_1$ and $h_2$,
+let $k$ be a key and $v$ a value. If looking up $k$ in $T$ returns $v$, then the binding
+$k \mapsto v$ is stored in some slot of the first or the second table of $T$.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
-- [Stored](stored.md)
-- [Lookup](lookup.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
+- [Binding stored in a cuckoo hash table](stored.md)
+- [Cuckoo hash table lookup](lookup.md)
 
 ## Sources
 

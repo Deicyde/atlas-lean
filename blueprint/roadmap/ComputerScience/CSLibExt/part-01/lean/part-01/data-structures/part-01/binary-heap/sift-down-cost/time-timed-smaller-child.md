@@ -17,11 +17,11 @@ cost $(0, 0)$ otherwise.
 ## Depends on
 
 - [Timed smaller-child selection](timed-smaller-child.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
 
 ## Proof depends on
 
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
 
 ## Sources
 

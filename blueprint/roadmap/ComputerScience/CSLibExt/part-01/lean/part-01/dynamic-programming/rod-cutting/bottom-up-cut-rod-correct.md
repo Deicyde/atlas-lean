@@ -7,21 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod_correct
 ---
 
-# Bottom Up Cut Rod correct
+# Correctness of bottom-up rod cutting
 
-The computed revenue is attained by a whole-rod composition and dominates every such revenue.
-This covers signed prices without offering an option to discard any material.
+**Correctness of bottom-up rod cutting.** Let $\alpha$ be an additive commutative monoid with a
+linear order in which addition is monotone, and let $p = (p_1, \dots, p_n)$ be prices in $\alpha$,
+$p_i$ being the price of a piece of length $i$. The value returned by bottom-up rod cutting on $p$
+is the greatest revenue of a composition of $n$: it equals $p_{b_1} + \dots + p_{b_m}$ for some
+composition $(b_1, \dots, b_m)$ of $n$ into positive parts, and it is at least this sum for every
+such composition.
+
+Prices may be negative; every piece of the rod must be sold, so there is no option to discard
+material.
 
 ## Depends on
 
-- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
-- [Composition Revenue](composition-revenue.md)
+- [Bottom-up rod cutting](bottom-up-cut-rod.md)
+- [Revenue of a rod composition](composition-revenue.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](composition-revenue-append.md)
-- [Composition Revenue single](composition-revenue-single.md)
-- [Composition Revenue zero](composition-revenue-zero.md)
+- [Revenue is additive under concatenation](composition-revenue-append.md)
+- [Revenue of an uncut rod](composition-revenue-single.md)
+- [The empty rod earns nothing](composition-revenue-zero.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size
 ---
 
-# Size
+# Size of a catenable heap
 
-The number of elements of a heap, counted with multiplicity.
+**Size of a catenable heap.** The size of a catenable heap is the length of its left-to-right
+list of elements, that is, the number of its elements counted with multiplicity.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
+- [Catenable heap](catenable-heap.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
+- [Flattening of a catenable heap](to-list.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.getLast?_rootPath
 ---
 
-# Get Last? root Path
+# A root path ends at its target
 
-The deepest vertex of a root path (its last entry) is the target vertex.
+**A root path ends at its target.** If $p$ is the path from the root of a tree $T$ down to a
+vertex $x$ of $T$, then $p$ is nonempty and its last (deepest) vertex is $x$.
 
 ## Depends on
 
-- [Tree](../euler-tour-tree/tree.md)
-- [Root Path](root-path.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
+- [Root-to-vertex path](root-path.md)
 
 ## Proof depends on
 
-- [Children ind](../euler-tour-tree/children-ind.md)
+- [Induction principle for rooted trees](../euler-tour-tree/children-ind.md)
 
 ## Sources
 

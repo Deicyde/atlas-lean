@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.WeightBalancedTree.numNodes_balance
 ---
 
-# Num Nodes balance
+# Weight-balanced rebalancing preserves the number of keys
 
-Rebalancing does not change the number of keys.
+**Weight-balanced rebalancing preserves the number of keys.** Write $|t|$ for the number of
+nodes of a binary tree $t$. For binary trees $l$ and $r$ and a key $k$, the weight-balanced
+rebalancing of $l$, $k$, $r$ has exactly $|l| + |r| + 1$ nodes.
 
 ## Depends on
 
-- [Balance](balance.md)
+- [Weight-balanced rebalancing](balance.md)
 
 ## Sources
 

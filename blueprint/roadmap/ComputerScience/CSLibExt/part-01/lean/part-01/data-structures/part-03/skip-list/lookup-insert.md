@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.lookup_insert
 ---
 
-# Lookup insert
+# Lookup after insertion returns the inserted value
 
-Looking up an inserted key returns the replacement value.
+**Lookup after insertion returns the inserted value.** For every skip list, key $k$, value
+$v$ and requested height $h$, looking up $k$ after inserting $k$ with value $v$ and requested
+height $h$ returns $v$.
 
 ## Depends on
 
-- [Skip List](skip-list.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Skip list](skip-list.md)
+- [Skip-list insertion](insert.md)
+- [Skip-list lookup](lookup.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Abstraction](abstraction.md)
-- [Lookup eq abstraction](lookup-eq-abstraction.md)
+- [Skip-list node](entry.md)
+- [Bottom-level abstraction of a skip list](abstraction.md)
+- [Skip-list search agrees with bottom-level lookup](lookup-eq-abstraction.md)
 
 ## Sources
 

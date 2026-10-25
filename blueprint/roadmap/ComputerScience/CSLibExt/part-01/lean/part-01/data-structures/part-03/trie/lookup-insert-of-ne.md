@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Trie.lookup_insert_of_ne
 ---
 
-# Lookup insert of ne
+# Trie insertion leaves other keys unchanged
 
-Inserting one key does not change the lookup result for a distinct key.
+**Trie insertion leaves other keys unchanged.** For every trie $T$, all keys $k \ne k'$ and
+every value $v$, looking up $k$ in the trie obtained by inserting $v$ at $k'$ in $T$ gives the
+same result as looking up $k$ in $T$.
 
 ## Depends on
 
 - [Trie](trie.md)
-- [Insert](insert.md)
-- [Lookup](lookup.md)
+- [Trie insertion](insert.md)
+- [Trie lookup](lookup.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
-- [Lookup empty](lookup-empty.md)
+- [Empty trie](empty.md)
+- [Lookup in the empty trie](lookup-empty.md)
 
 ## Sources
 

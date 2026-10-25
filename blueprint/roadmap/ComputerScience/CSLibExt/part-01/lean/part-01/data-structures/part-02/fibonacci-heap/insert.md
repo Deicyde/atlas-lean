@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.insert
 ---
 
-# Insert
+# Insertion into a Fibonacci heap
 
-Insert one value into a Fibonacci heap by melding with a one-element heap.
+**Insertion into a Fibonacci heap.** Inserting a value $x$ into a Fibonacci heap $H$ gives
+the meld of the one-element Fibonacci heap containing $x$ with $H$, the one-element heap coming
+first.
 
 ## Depends on
 
-- [Fibonacci Heap](fibonacci-heap.md)
+- [Fibonacci heap](fibonacci-heap.md)
 
 ## Proof depends on
 
-- [Meld](meld.md)
+- [Melding Fibonacci heaps](meld.md)
 - [Singleton](singleton-2.md)
 
 ## Sources

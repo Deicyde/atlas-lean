@@ -7,25 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.nodup_paths_flatMap
 ---
 
-# Nodup paths flat Map
+# Preferred paths cover each vertex at most once
 
-The flattened decomposition is duplicate-free: every vertex of a valid
-state lies on exactly one preferred path. With `mem_paths_flatMap`, the
-paths partition the vertex set.
+**Preferred paths cover each vertex at most once.** In a valid link-cut tree state, the
+concatenation of all preferred paths of the decomposition has no repeated vertex: no vertex
+occurs twice on one path or on two different paths.
+
+Together with the fact that every vertex of the represented forest lies on some preferred
+path, the preferred paths partition the vertex set.
 
 ## Depends on
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Paths](paths.md)
+- [Link-cut tree state](state.md)
+- [Valid link-cut tree states](valid.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
-- [Parent Child](parent-child.md)
-- [Perm tree Paths flat Map](perm-tree-paths-flat-map.md)
-- [Tree Paths](tree-paths.md)
+- [Parent-child relation in a rooted tree](parent-child.md)
+- [The preferred paths of a tree rearrange its vertex list](perm-tree-paths-flat-map.md)
+- [Preferred paths of a tree](tree-paths.md)
 
 ## Sources
 

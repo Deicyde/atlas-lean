@@ -7,25 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SparseTable.query_eq_of_valid
 ---
 
-# Query eq of valid
+# Correctness of queries on valid sparse tables
 
-A query on a valid table is `List.min?` of the corresponding list slice.
-Only the in-range premise `r ≤ t.data.toList.length` is needed: for reversed
-bounds `r ≤ l` both sides are `none`.
+**Correctness of queries on valid sparse tables.** Let $t$ be a valid sparse table over a
+linearly ordered type whose data is the list $(a_0, \dots, a_{n-1})$, and let $l, r$ be natural
+numbers with $r \le n$. Then the range-minimum query over $[l, r)$ on $t$ returns the minimum of
+the slice $(a_l, \dots, a_{r-1})$ (none when $r \le l$, where the slice is empty).
+
+Only the premise $r \le n$ is needed: for reversed bounds $r \le l$ both sides are none.
 
 ## Depends on
 
-- [Sparse Table](sparse-table.md)
-- [Valid](valid.md)
-- [Query](query.md)
+- [Sparse table](sparse-table.md)
+- [Valid sparse table](valid.md)
+- [Sparse table range-minimum query](query.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
-- [Entry eq of valid](entry-eq-of-valid.md)
-- [Level](level.md)
-- [Omin](omin.md)
-- [Omin self](omin-self.md)
+- [Sparse-table entries](entry.md)
+- [Rows of a valid sparse table are its levels](entry-eq-of-valid.md)
+- [Levels of a sparse table](level.md)
+- [Option minimum](omin.md)
+- [Idempotence of the option minimum](omin-self.md)
 
 ## Sources
 

@@ -6,18 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.RedBlackTree.Mem
 ---
 
-# Mem
+# Membership in a red-black tree
 
-Structural membership, inherited from `BinarySearchTree` through `erase`.
+**Membership in a red-black tree.** An element $x$ is a member of a red-black tree $t$ when $x$
+is a member of the binary tree obtained from $t$ by erasing its colors, that is, when $x$ equals
+the key of some node of $t$.
+
+Membership is structural: it does not use the search-tree ordering.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Red-black tree data type](tree.md)
 
 ## Proof depends on
 
-- [Mem](../../part-02/binary-search-tree/mem.md)
-- [Erase](erase.md)
+- [Membership in a binary tree](../../part-02/binary-search-tree/mem.md)
+- [Color erasure](erase.md)
 
 ## Sources
 

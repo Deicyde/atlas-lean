@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SinglyLinkedList.represents_nil
 ---
 
-# Represents nil
+# Representation of the empty singly linked list
 
-The empty identity list is represented by any pool with header NIL.
+**Representation of the empty singly linked list.** Fix a capacity $n$ and let $s$ be any store
+assigning to each identity below $n$ either nothing or a singly linked list node. Then $s$ with
+head NIL represents the empty list of identities.
 
 ## Depends on
 
-- [Node](node.md)
-- [Represents](represents.md)
+- [Singly linked list node](node.md)
+- [Store representing a singly linked list](represents.md)
 
 ## Sources
 

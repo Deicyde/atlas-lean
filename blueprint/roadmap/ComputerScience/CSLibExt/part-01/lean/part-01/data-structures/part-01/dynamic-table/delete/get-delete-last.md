@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.get?_delete_last
 ---
 
-# Get? delete last
+# Lookup at the vacated position after deletion
 
-Lookup at the deleted position finds nothing after deletion.
+**Lookup at the vacated position after deletion.** Let $T$ be a dynamic table with item count
+$n$, where $n - 1$ is read as $0$ when $n = 0$. After applying deletion to $T$, the lookup at
+logical position $n - 1$ returns no value.
 
 ## Depends on
 
-- [Table](../basic/table.md)
-- [Get?](get.md)
-- [Table Delete](table-delete.md)
+- [Dynamic table](../basic/table.md)
+- [Lookup in a dynamic table](get.md)
+- [Deletion from a dynamic table](table-delete.md)
 
 ## Proof depends on
 
-- [Get? eq none of le](get-eq-none-of-le.md)
-- [Table Delete num](table-delete-num.md)
+- [Lookup beyond the item count returns nothing](get-eq-none-of-le.md)
+- [Item count after deletion](table-delete-num.md)
 
 ## Sources
 

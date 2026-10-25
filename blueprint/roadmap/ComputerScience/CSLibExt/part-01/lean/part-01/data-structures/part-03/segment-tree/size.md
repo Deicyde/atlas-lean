@@ -6,11 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SegmentTree.size
 ---
 
-# Size
+# Size of a segment tree
 
-The number of leaves of a tree, i.e. the length of its segment. Internal
-nodes answer from the cached length, in constant time; `Valid` records that the
-cache is honest.
+**Size of a segment tree.** The size of a segment tree is $0$ for the empty tree, $1$ for a
+leaf, and, for an internal node, the segment length cached at that node.
+
+When every cached length is the sum of the sizes of the node's children, this is the number of
+leaves, and internal nodes answer in constant time.
 
 ## Depends on
 

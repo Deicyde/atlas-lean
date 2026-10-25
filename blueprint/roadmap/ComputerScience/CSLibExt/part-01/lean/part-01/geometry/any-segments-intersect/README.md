@@ -6,63 +6,63 @@ navigation: module
 
 ## Non-vertical segments as graphs
 
-- [Line Y](line-y.md)
-- [Mem segment iff line Y](mem-segment-iff-line-y.md)
-- [Direction eq line Y](direction-eq-line-y.md)
-- [Crossing](exists-mem-inter-of-cross.md)
-- [Exists leftmost mem inter](exists-leftmost-mem-inter.md)
+- [Height of a line at an abscissa](line-y.md)
+- [A non-vertical segment is the graph of its line](mem-segment-iff-line-y.md)
+- [DIRECTION as a scaled vertical offset](direction-eq-line-y.md)
+- [Crossing of two non-vertical segments](exists-mem-inter-of-cross.md)
+- [Leftmost point of the intersection of two segments](exists-leftmost-mem-inter.md)
 
 ## Sorted lists of graphs
 
-- [Pairwise take While append cons drop While lt](pairwise-take-while-append-cons-drop-whi.md)
-- [Pairwise take While append cons drop While le](pairwise-take-while-append-cons-drop-whi-2.md)
-- [Head? drop While eq of unique](head-drop-while-eq-of-unique.md)
-- [Exists append of mem of mem](exists-append-of-mem-of-mem.md)
+- [Inserting into a strictly sorted list](pairwise-take-while-append-cons-drop-whi.md)
+- [Inserting into a weakly sorted list](pairwise-take-while-append-cons-drop-whi-2.md)
+- [First element at or above a uniquely attained height](head-drop-while-eq-of-unique.md)
+- [Splitting a list at two distinct members](exists-append-of-mem-of-mem.md)
 
 ## The algorithm
 
-- [Left](left.md)
-- [Right](right.md)
-- [Event](event.md)
-- [Point](point.md)
-- [Key](key.md)
-- [Events](events.md)
-- [Below](below.md)
-- [Test](test.md)
-- [Test Opt](test-opt.md)
-- [Test Pair](test-pair.md)
-- [Sweep](sweep.md)
-- [Step](step.md)
-- [Run](run.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
+- [Sweep event](event.md)
+- [Endpoint of an event](point.md)
+- [Sweep order on endpoint events](key.md)
+- [Sorted sweep events](events.md)
+- [Segment strictly below a point](below.md)
+- [Intersection test for two input segments](test.md)
+- [Testing a segment against an optional neighbour](test-opt.md)
+- [Testing the neighbours of a deleted segment](test-pair.md)
+- [The any-segments-intersect sweep](sweep.md)
+- [One step of the sweep](step.md)
+- [Running the sweep over a list of events](run.md)
 
 ## Endpoints and events
 
-- [Key left lt right](key-left-lt-right.md)
+- [Left endpoint events precede right endpoint events](key-left-lt-right.md)
 - [Left mem of right mem](left-mem-of-right-mem.md)
 
 ## Invariants of the status list
 
-- [Take While append cons tail drop While](take-while-append-cons-tail-drop-while.md)
-- [Run mem iff](run-mem-iff.md)
-- [Meets](meets.md)
-- [Run is Chain](run-is-chain.md)
-- [Soundness](exists-meets-of-run-eq-none.md)
+- [Splitting a list at the first occurrence of a member](take-while-append-cons-tail-drop-while.md)
+- [The sweep status holds the active segments](run-mem-iff.md)
+- [Meeting segments](meets.md)
+- [Neighbours on the sweep status are disjoint](run-is-chain.md)
+- [Soundness of the any-segments-intersect sweep](exists-meets-of-run-eq-none.md)
 
 ## Completeness
 
-- [Pairwise lt of pairwise lt](pairwise-lt-of-pairwise-lt.md)
-- [Pairwise le of pairwise lt](pairwise-le-of-pairwise-lt.md)
-- [Phase one](run-pairwise-lt.md)
-- [Run pairwise le of lt](run-pairwise-le-of-lt.md)
-- [Phase two](run-pairwise-le.md)
-- [The leftmost intersection is inside both segments](run-eq-none-of-lt.md)
-- [The leftmost intersection is a left endpoint](run-eq-none-of-left.md)
-- [Exists leftmost meet](exists-leftmost-meet.md)
-- [Completeness](run-eq-none-of-meets.md)
+- [The sweep order persists before the leftmost intersection](pairwise-lt-of-pairwise-lt.md)
+- [The sweep order holds weakly at the leftmost intersection](pairwise-le-of-pairwise-lt.md)
+- [Phase one: the status list is strictly sorted between the processed and remaining events](run-pairwise-lt.md)
+- [The status list is weakly sorted after the events left of a vertical line](run-pairwise-le-of-lt.md)
+- [Phase two: inserting left endpoints on a vertical line keeps the status weakly sorted](run-pairwise-le.md)
+- [Sweep completeness when the leftmost intersection is inside both segments](run-eq-none-of-lt.md)
+- [Sweep completeness when the leftmost intersection is a left endpoint](run-eq-none-of-left.md)
+- [A leftmost intersection point](exists-leftmost-meet.md)
+- [Completeness of the segment-intersection sweep](run-eq-none-of-meets.md)
 
 ## Cost
 
-- [Event Cost](event-cost.md)
-- [Any Segments Intersect](any-segments-intersect.md)
-- [Correctness of `ANY-SEGMENTS-INTERSECT`](any-segments-intersect-ret-eq-true-iff.md)
-- [Cost](any-segments-intersect-time-le.md)
+- [Cost charged to a sweep event](event-cost.md)
+- [ANY-SEGMENTS-INTERSECT](any-segments-intersect.md)
+- [Correctness of ANY-SEGMENTS-INTERSECT](any-segments-intersect-ret-eq-true-iff.md)
+- [Running time of ANY-SEGMENTS-INTERSECT](any-segments-intersect-time-le.md)

@@ -6,22 +6,25 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CuckooHashing.insert
 ---
 
-# Insert
+# Cuckoo hash insertion
 
-Inserts a binding or replaces the existing binding for the key. An existing binding in
-either of the key's slots is overwritten in place; a replacement in the first table also
-clears a duplicate copy of the key in its second slot, so no stale competing value
-remains. Otherwise the eviction loop runs with the given fuel. Returns `none` when the
-loop exhausts its fuel, which models the rehash trigger of the classical algorithm.
+**Cuckoo hash insertion.** Inserting a key $k$ with value $v$ into a cuckoo hash table with hash
+functions $h_1$ and $h_2$, with fuel $n$, either returns a table or fails. If slot $h_1(k)$ of
+the first table holds a binding for $k$, that slot is overwritten with $(k, v)$, and slot
+$h_2(k)$ of the second table is cleared if it also holds a binding for $k$, so no stale
+competing value remains. Otherwise, if slot $h_2(k)$ of the second table holds a binding for
+$k$, that slot is overwritten with $(k, v)$. Otherwise the eviction loop runs on $(k, v)$,
+starting with the first table, with fuel $n$, and its result is returned. Failure, when the
+loop exhausts its fuel, models the rehash trigger of the classical algorithm.
 
 ## Depends on
 
-- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Cuckoo hash table](cuckoo-hashing.md)
 
 ## Proof depends on
 
-- [Insert Aux](insert-aux.md)
-- [Slot Has Key](slot-has-key.md)
+- [Cuckoo eviction loop](insert-aux.md)
+- [Slot holds a key](slot-has-key.md)
 
 ## Sources
 

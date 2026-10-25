@@ -4,7 +4,7 @@ navigation: module
 
 # Inverse Canonical DFT
 
-- [Ifft std Add Char neg one](ifft-std-add-char-neg-one.md)
-- [Ifft std Add Char one](ifft-std-add-char-one.md)
-- [Ifft fft std Add Char neg one](ifft-fft-std-add-char-neg-one.md)
-- [Fft ifft std Add Char neg one](fft-ifft-std-add-char-neg-one.md)
+- [Inverse FFT at the negative-sign root computes the inverse DFT](ifft-std-add-char-neg-one.md)
+- [Inverse FFT at the positive-sign root computes the normalized forward DFT](ifft-std-add-char-one.md)
+- [Inverse FFT after FFT is the identity at the negative-sign root](ifft-fft-std-add-char-neg-one.md)
+- [FFT after inverse FFT is the identity at the negative-sign root](fft-ifft-std-add-char-neg-one.md)

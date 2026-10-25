@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.zero_le_listMax
 ---
 
-# Zero le list Max
+# The floored list maximum is nonnegative
 
-The list maximum is nonnegative: the fold starts at `0`.
+**The floored list maximum is nonnegative.** For every list $L$ of integers, the maximum of
+$L$ with floor $0$ (which is $0$ for the empty list) is at least $0$.
 
 ## Depends on
 
-- [List Max](../sequence-alignment/list-max.md)
+- [Maximum of an integer list with floor zero](../sequence-alignment/list-max.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.valid_insert
 ---
 
-# Valid insert
+# Insertion preserves validity of an x-fast trie
 
-Insertion preserves the level invariant.
+**Insertion preserves validity of an x-fast trie.** If $t$ is a valid x-fast trie over
+$w$-bit keys and $x \in \{0, \dots, 2^w - 1\}$, then the x-fast trie obtained from $t$ by
+inserting $x$ is valid.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Valid](valid.md)
-- [Insert](insert.md)
+- [x-fast trie](xfast-trie.md)
+- [Valid x-fast trie](valid.md)
+- [Insertion into an x-fast trie](insert.md)
 
 ## Proof depends on
 
-- [Prefix Of](prefix-of.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

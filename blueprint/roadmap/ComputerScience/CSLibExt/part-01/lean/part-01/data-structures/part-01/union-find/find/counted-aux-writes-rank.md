@@ -7,18 +7,23 @@ proof: formalized
 lean: Batteries.UnionFind.Internal.countedAux_writes_rank
 ---
 
-# Counted Aux writes rank
+# Parent writes are bounded by the rank gap
 
-A finite per-call rank-gap bound, not a logarithmic or amortized alpha bound.
+**Parent writes are bounded by the rank gap.** Let $S$ be a union-find structure, let $R$
+be one more than the maximum rank of a node of $S$, and let $x < |S|$ be a node. The number of
+parent writes performed by the cost-counted FIND auxiliary on $x$ (the second coordinate of its
+cost) is at most $R - \operatorname{rank}(x)$.
+
+This is a per-call bound, not a logarithmic or amortized inverse-Ackermann bound.
 
 ## Depends on
 
-- [Counted Aux](counted-aux.md)
+- [Cost-counted FIND auxiliary](counted-aux.md)
 
 ## Proof depends on
 
-- [Counted Aux time root](counted-aux-time-root.md)
-- [Counted Aux time step](counted-aux-time-step.md)
+- [Cost of the FIND auxiliary at a root](counted-aux-time-root.md)
+- [Cost recurrence of the FIND auxiliary at a non-root](counted-aux-time-step.md)
 
 ## Sources
 

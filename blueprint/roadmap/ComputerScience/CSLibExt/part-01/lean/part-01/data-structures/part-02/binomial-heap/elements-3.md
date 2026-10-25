@@ -12,12 +12,12 @@ The multiset represented by a binomial heap.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
+- [Binomial heap](binomial-heap.md)
 
 ## Proof depends on
 
 - [Elements](elements-2.md)
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Sources
 

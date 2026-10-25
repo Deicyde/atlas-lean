@@ -25,9 +25,9 @@ Every source-to-target chain in the saved predecessor relation is simple.
 - [Predecessor edge](../../parents-2/predecessor-edge.md)
 - [Edge](../../../directed-adjacency-2/edge.md)
 - [Reachable](../../../directed-adjacency-2/reachable.md)
-- [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
-- [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
-- [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
+- [Contents of a two-list queue](../../../../data-structures/part-01/queue/semantics/contents.md)
+- [Enqueueing appends to the contents](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
+- [A successful dequeue splits off the first element](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
 
 ## Sources
 

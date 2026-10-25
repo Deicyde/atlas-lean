@@ -12,11 +12,11 @@ The multiset represented by a forest.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Elements](elements.md)
+- [Elements of a binomial tree](elements.md)
 
 ## Sources
 

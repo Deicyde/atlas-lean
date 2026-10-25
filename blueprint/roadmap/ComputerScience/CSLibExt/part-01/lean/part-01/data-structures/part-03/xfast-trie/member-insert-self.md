@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.XFastTrie.member_insert_self
 ---
 
-# Member insert self
+# An inserted key passes the membership test
 
-A key is a member immediately after its own insertion, with no
-validity assumption on `t`: insertion puts the full-length prefix of `x`
-directly into the deepest level that `member` probes.
+**An inserted key passes the membership test.** For every x-fast trie $t$ over $w$-bit keys
+and every $w$-bit key $x$, the membership test at $x$ of the trie obtained by inserting $x$ into
+$t$ returns true.
+
+No validity assumption on $t$ is needed: insertion puts the full-length prefix of $x$ directly
+into the deepest level, which is the level the membership test probes.
 
 ## Depends on
 
-- [XFast Trie](xfast-trie.md)
-- [Insert](insert.md)
-- [Member](member.md)
+- [x-fast trie](xfast-trie.md)
+- [Insertion into an x-fast trie](insert.md)
+- [Membership query in an x-fast trie](member.md)
 
 ## Proof depends on
 
-- [Has Prefix](has-prefix.md)
-- [Prefix Of](prefix-of.md)
+- [Level probe of an x-fast trie](has-prefix.md)
+- [Bit prefix of a key](prefix-of.md)
 
 ## Sources
 

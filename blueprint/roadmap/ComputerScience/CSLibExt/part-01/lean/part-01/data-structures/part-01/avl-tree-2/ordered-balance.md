@@ -34,8 +34,8 @@ subtree $R$ is ordered.
 - [Cached height of an AVL tree](height.md)
 - [AVL node with computed height](mk-node.md)
 - [Erasing the cached heights of an AVL tree](to-binary-tree.md)
-- [All](../../part-02/binary-search-tree/all.md)
-- [Ordered](../../part-02/binary-search-tree/ordered.md)
+- [A predicate holding at every key of a binary tree](../../part-02/binary-search-tree/all.md)
+- [Ordered binary trees](../../part-02/binary-search-tree/ordered.md)
 
 ## Sources
 

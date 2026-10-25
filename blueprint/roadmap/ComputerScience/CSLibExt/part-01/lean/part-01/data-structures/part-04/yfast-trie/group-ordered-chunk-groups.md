@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.groupOrdered_chunkGroups
 ---
 
-# Group Ordered chunk Groups
+# Chunks of a sorted list are ordered
 
-Chunks appear in increasing order when the original list is strictly sorted.
+**Chunks of a sorted list are ordered.** Let $B$ be a natural number and let $l$ be a
+strictly increasing list of $w$-bit keys. Then the chunk groups of $l$ with bound $B$ are group
+ordered: every key of an earlier chunk is smaller than every key of a later chunk.
 
 ## Depends on
 
-- [Group Ordered](group-ordered.md)
-- [Chunk Groups](chunk-groups.md)
+- [Ordered list of groups](group-ordered.md)
+- [Chunking a list into groups](chunk-groups.md)
 
 ## Proof depends on
 
-- [Flatten chunk Groups](flatten-chunk-groups.md)
+- [Chunking preserves the list](flatten-chunk-groups.md)
 
 ## Sources
 

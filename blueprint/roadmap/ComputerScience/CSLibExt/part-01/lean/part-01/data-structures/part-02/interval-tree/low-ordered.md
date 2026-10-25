@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.LowOrdered
 ---
 
-# Low Ordered
+# Low-endpoint ordered interval tree
 
-Low endpoints respect the BST split at every node.
+**Low-endpoint ordered interval tree.** The empty tree is low-endpoint ordered, and a node is
+low-endpoint ordered when both of its subtrees are low-endpoint ordered, every interval in the
+left subtree has low endpoint at most the low endpoint of the node's interval, and the node's
+low endpoint is at most the low endpoint of every interval in the right subtree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Interval tree entry](entry.md)
 - [Interval](interval.md)
 
 ## Sources

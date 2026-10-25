@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.min?
 ---
 
-# Min?
+# Minimum lookup in a binary heap
 
-Inspect the minimum without removing it.
+**Minimum lookup in a binary heap.** For a binary min-heap $h$, the minimum lookup returns the
+entry at index $0$ (the root) of the storage array of $h$ when that array is nonempty, and returns
+no value when it is empty.
 
 ## Depends on
 
-- [Min Heap](min-heap.md)
+- [Binary min-heap](min-heap.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.fftPad_ret_low
 ---
 
-# Fft Pad ret low
+# Zero padding keeps the input prefix
 
-Direct padding preserves every original input entry in its original order.
+**Zero padding keeps the input prefix.** Let $R$ be a type with a zero, let $d$ be a natural
+number and let $x$ be a vector of length $2^d$ over $R$. For every index $i < 2^d$, entry $i$
+of the zero-padded vector of length $2^{d+1}$ produced from $x$ equals $x_i$.
 
 ## Depends on
 
-- [Fft Pad](../convolution/fft-pad.md)
+- [Zero padding to twice the length](../convolution/fft-pad.md)
 
 ## Sources
 

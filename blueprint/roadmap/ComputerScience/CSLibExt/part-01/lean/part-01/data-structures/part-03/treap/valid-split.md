@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.valid_split
 ---
 
-# Valid split
+# Splitting a treap preserves validity
 
-Splitting a valid treap produces two valid treaps.
+**Splitting a treap preserves validity.** Let the keys come from a linear order. If a tree
+is a valid treap, then for every pivot $p$, both the lower tree and the upper tree obtained by
+splitting it at $p$ are valid treaps.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Split Result](split-result.md)
-- [Valid](valid.md)
-- [Split](split.md)
+- [Treap trees](tree.md)
+- [Result of a treap split](split-result.md)
+- [Valid treap](valid.md)
+- [Treap split](split.md)
 
 ## Proof depends on
 
-- [Heap Ordered](heap-ordered.md)
-- [Ordered](ordered.md)
+- [Heap order of treap priorities](heap-ordered.md)
+- [Ordered treap tree](ordered.md)
 - [Heap Ordered split](heap-ordered-split.md)
-- [Ordered split](ordered-split.md)
+- [Treap split preserves search-tree order](ordered-split.md)
 
 ## Sources
 

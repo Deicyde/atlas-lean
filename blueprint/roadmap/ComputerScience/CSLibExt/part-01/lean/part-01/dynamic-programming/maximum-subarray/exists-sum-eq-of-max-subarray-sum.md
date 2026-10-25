@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.exists_sum_eq_of_maxSubarraySum
 ---
 
-# Exists sum eq of max Subarray Sum
+# Kadane's algorithm returns an attained sum
 
-Some nonempty contiguous run attains the returned value.
+**Kadane's algorithm returns an attained sum.** Let $\alpha$ be an additive monoid with a
+linear order such that $a \le b$ implies $a + c \le b + c$. If Kadane's algorithm returns a value
+$m$ on a list $L$ over $\alpha$, then some nonempty contiguous sublist of $L$ has sum $m$.
 
 ## Depends on
 
-- [Max Subarray Sum](max-subarray-sum.md)
+- [Kadane's algorithm](max-subarray-sum.md)
 
 ## Proof depends on
 
-- [Is Max Subarray Sum](is-max-subarray-sum.md)
-- [Max Subarray Sum ret eq some iff](max-subarray-sum-ret-eq-some-iff.md)
+- [Being the maximum subarray sum](is-max-subarray-sum.md)
+- [Correctness of Kadane's algorithm](max-subarray-sum-ret-eq-some-iff.md)
 
 ## Sources
 

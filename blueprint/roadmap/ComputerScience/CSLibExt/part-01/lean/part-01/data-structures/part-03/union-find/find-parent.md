@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.UnionFind.find_parent
 ---
 
-# Find parent
+# Find is unchanged along a parent pointer
 
-Starting from a parent pointer reaches the same root.
+**Find is unchanged along a parent pointer.** For every vertex $x$ of a parent forest $F$,
+find returns the same root for the parent of $x$ in $F$ as for $x$.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Find](find.md)
+- [Parent forest with a depth certificate](forest.md)
+- [Root of a vertex in a parent forest](find.md)
 
 ## Sources
 

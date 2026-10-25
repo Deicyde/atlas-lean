@@ -29,12 +29,12 @@ Each accepted edge is a light edge for the cut induced by the current partition.
 - [Scan](scan.md)
 - [Sort Edges](sort-edges.md)
 - [Valid Edges](valid-edges.md)
-- [Equivalent](../../data-structures/part-03/union-find/equivalent.md)
-- [Forest](../../data-structures/part-03/union-find/forest.md)
-- [Equivalent union iff](../../data-structures/part-03/union-find/equivalent-union-iff.md)
-- [Find](../../data-structures/part-03/union-find/find.md)
-- [Union](../../data-structures/part-03/union-find/union.md)
-- [Union equivalent](../../data-structures/part-03/union-find/union-equivalent.md)
+- [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
+- [Equivalence after a union](../../data-structures/part-03/union-find/equivalent-union-iff.md)
+- [Root of a vertex in a parent forest](../../data-structures/part-03/union-find/find.md)
+- [Union in a union-find forest](../../data-structures/part-03/union-find/union.md)
+- [Union makes its arguments equivalent](../../data-structures/part-03/union-find/union-equivalent.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.dequeue_amortized
 ---
 
-# Dequeue amortized
+# Amortized cost of dequeueing
 
-Dequeueing has amortized charge one, including on an empty queue.
+**Amortized cost of dequeueing.** For every two-list queue $q$, the modeled cost of dequeueing
+from $q$ plus the potential of the resulting queue equals the potential of $q$ plus $1$. This
+includes the case where $q$ is empty.
 
 ## Depends on
 
-- [Dequeue](dequeue.md)
-- [Potential](potential.md)
+- [Timed dequeue](dequeue.md)
+- [Potential of a two-list queue](potential.md)
 
 ## Proof depends on
 
-- [Dequeue Cost](dequeue-cost.md)
+- [Modeled cost of a dequeue](dequeue-cost.md)
 
 ## Sources
 

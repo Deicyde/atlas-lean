@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RangeTree.Valid.pairwise_toList
 ---
 
-# Pairwise to List
+# Valid range trees have sorted leaves
 
-A valid tree has sorted leaf order.
+**Valid range trees have sorted leaves.** If a range tree $t$ is valid, then its list of leaf
+values, read from left to right, is sorted in nondecreasing order.
 
 ## Depends on
 
-- [Range Tree](range-tree.md)
-- [Valid](valid.md)
-- [To List](to-list.md)
+- [Range tree](range-tree.md)
+- [Valid range tree](valid.md)
+- [Leaf list of a range tree](to-list.md)
 
 ## Proof depends on
 
-- [Bounds Ok](bounds-ok.md)
+- [Bounds-valid range trees](bounds-ok.md)
 
 ## Sources
 

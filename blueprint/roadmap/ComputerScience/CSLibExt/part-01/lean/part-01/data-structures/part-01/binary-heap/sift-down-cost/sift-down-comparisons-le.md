@@ -24,12 +24,12 @@ comparisons counted by timed sift-down from $i$ is at most $2 \max(0, \ell(|a|) 
 - [Cost of child selection](time-timed-smaller-child.md)
 - [Child selection at a node without children costs nothing](time-timed-smaller-child-of-none.md)
 - [Timed smaller-child selection](timed-smaller-child.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
 - [The smaller child lies one level below its parent](log2-smaller-child-add-one.md)
 - [The smaller child's level is bounded by the array size](log2-smaller-child-le-size.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
+- [The smaller child has a larger index](../../../part-02/binary-heap/smaller-child-gt.md)
+- [The smaller child is a valid index](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

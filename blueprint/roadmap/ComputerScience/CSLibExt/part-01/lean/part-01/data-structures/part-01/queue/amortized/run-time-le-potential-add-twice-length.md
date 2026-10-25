@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.run_time_le_potential_add_twice_length
 ---
 
-# Run time le potential add twice length
+# Linear bound on the cost of queue operations
 
-Any sequence of `n` operations costs at most its initial potential plus `2 * n`.
+**Linear bound on the cost of queue operations.** For every list of $n$ queue operations and
+every two-list queue $q$, the modeled cost of running the operations from left to right starting
+at $q$ is at most the potential of $q$ plus $2n$.
 
 ## Depends on
 
-- [Operation](operation.md)
-- [Potential](potential.md)
-- [Run](run.md)
+- [Queue operation](operation.md)
+- [Potential of a two-list queue](potential.md)
+- [Running a sequence of queue operations](run.md)
 
 ## Proof depends on
 
-- [Charge](charge.md)
-- [Run amortized](run-amortized.md)
+- [Amortized charge of a queue operation](charge.md)
+- [Amortized cost of a sequence of queue operations](run-amortized.md)
 - [Total Charge](total-charge.md)
 
 ## Sources

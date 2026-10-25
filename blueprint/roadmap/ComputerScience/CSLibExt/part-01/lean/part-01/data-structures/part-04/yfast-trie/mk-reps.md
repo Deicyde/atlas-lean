@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.mkReps
 ---
 
-# Mk Reps
+# Representative trie of a list
 
-Build the representative x-fast trie by inserting a list of representatives.
+**Representative trie of a list.** For a list $rs$ of $w$-bit keys, the representative
+x-fast trie of $rs$ is obtained from the empty x-fast trie over $w$-bit keys by inserting the
+elements of $rs$ one at a time, from first to last.
 
 ## Depends on
 
-- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
+- [x-fast trie](../../part-03/xfast-trie/xfast-trie.md)
 
 ## Proof depends on
 
-- [Empty](../../part-03/xfast-trie/empty.md)
-- [Insert](../../part-03/xfast-trie/insert.md)
+- [The empty x-fast trie](../../part-03/xfast-trie/empty.md)
+- [Insertion into an x-fast trie](../../part-03/xfast-trie/insert.md)
 
 ## Sources
 

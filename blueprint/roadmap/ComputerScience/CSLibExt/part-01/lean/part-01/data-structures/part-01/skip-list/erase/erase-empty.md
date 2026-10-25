@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SkipList.erase_empty
 ---
 
-# Erase empty
+# Erasing from the empty skip list
 
-Erasing from the empty skip list is a no-op.
+**Erasing from the empty skip list.** For every key $k$, erasing $k$ from the empty skip list
+gives the empty skip list.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/skip-list.md)
-- [Empty](../../../part-03/skip-list/empty.md)
-- [Erase](erase.md)
+- [Skip list](../../../part-03/skip-list/skip-list.md)
+- [Empty skip list](../../../part-03/skip-list/empty.md)
+- [Skip-list erasure](erase.md)
 
 ## Sources
 

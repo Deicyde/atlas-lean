@@ -4,5 +4,5 @@ navigation: module
 
 # Positive Roundtrip
 
-- [Ifft fft std Add Char one](ifft-fft-std-add-char-one.md)
-- [Fft ifft std Add Char one](fft-ifft-std-add-char-one.md)
+- [Inverse FFT after FFT at the positive root is the identity](ifft-fft-std-add-char-one.md)
+- [FFT after inverse FFT at the positive root is the identity](fft-ifft-std-add-char-one.md)

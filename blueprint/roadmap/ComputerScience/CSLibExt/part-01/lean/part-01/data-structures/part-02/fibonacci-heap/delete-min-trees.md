@@ -6,21 +6,26 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMinTrees
 ---
 
-# Delete Min Trees
+# Minimum deletion on a forest
 
-The computational forest projection of minimum deletion: remove a minimum tree,
-promote its children, and consolidate.
+**Minimum deletion on a forest.** Given a list of Fibonacci trees over a linearly ordered type,
+the result is nothing if the list is empty. Otherwise the first tree whose root is minimal is
+removed, and the result is its root value together with the consolidation of the forest made of
+the removed tree's children followed by the remaining trees.
+
+This is the forest-level computation behind deleting the minimum of a Fibonacci heap, without the
+validity proofs.
 
 ## Depends on
 
-- [Fibonacci Tree](fibonacci-tree.md)
+- [Fibonacci tree](fibonacci-tree.md)
 
 ## Proof depends on
 
-- [Consolidate](consolidate.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Children](children.md)
-- [Root](root.md)
+- [Consolidation of a forest](consolidate.md)
+- [Removing a minimum tree from a Fibonacci forest](remove-min-tree.md)
+- [Children of a Fibonacci tree](children.md)
+- [Root of a Fibonacci tree](root.md)
 
 ## Sources
 

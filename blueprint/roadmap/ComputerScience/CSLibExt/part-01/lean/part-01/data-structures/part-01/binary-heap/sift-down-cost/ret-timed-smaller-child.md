@@ -17,12 +17,12 @@ valid child).
 ## Depends on
 
 - [Timed smaller-child selection](timed-smaller-child.md)
-- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
-- [Heap Left](../../../part-02/binary-heap/heap-left.md)
-- [Heap Right](../../../part-02/binary-heap/heap-right.md)
+- [Left child index in a level-order binary tree](../../../part-02/binary-heap/heap-left.md)
+- [Right child index in an array-backed binary tree](../../../part-02/binary-heap/heap-right.md)
 
 ## Sources
 

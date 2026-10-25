@@ -6,13 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.KdTree.size
 ---
 
-# Size
+# Size of a kd-tree
 
-The number of points stored in a tree.
+**Size of a kd-tree.** The size of a kd-tree is defined by recursion: the empty tree has
+size $0$, a leaf has size $1$, and a split node has the sum of the sizes of its two
+children. Since points are stored only at leaves, this is the number of points stored in the
+tree, counted with multiplicity.
 
 ## Depends on
 
-- [Kd Tree](kd-tree.md)
+- [Kd-trees](kd-tree.md)
 
 ## Sources
 

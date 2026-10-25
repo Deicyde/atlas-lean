@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.siftDown_perm
 ---
 
-# Sift Down perm
+# Binary-heap sift-down permutes the array
 
-Sifting down only permutes the input array.
+**Binary-heap sift-down permutes the array.** For every array $a$ over a linearly ordered
+type and every index $i$, the array obtained by sifting down $a$ from $i$ is a permutation of
+$a$.
 
 ## Depends on
 
-- [Sift Down](sift-down.md)
+- [Sift-down](sift-down.md)
 
 ## Proof depends on
 
-- [Smaller Child](smaller-child.md)
-- [Smaller Child gt](smaller-child-gt.md)
-- [Smaller Child valid](smaller-child-valid.md)
+- [Smaller child](smaller-child.md)
+- [The smaller child has a larger index](smaller-child-gt.md)
+- [The smaller child is a valid index](smaller-child-valid.md)
 
 ## Sources
 

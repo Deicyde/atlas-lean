@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.LruCache.mem_put_entries
 ---
 
-# Mem put entries
+# Entries after insertion
 
-Every entry stored by `put` is either the new binding or was already in the cache.
+**Entries after insertion.** For every LRU cache, key $k$ and value $v$, every
+key-value pair $p$ stored in the cache after putting the binding $(k, v)$ either equals
+$(k, v)$, or was stored before and has a key different from $k$.
 
 ## Depends on
 
-- [Lru Cache](lru-cache.md)
-- [Put](put.md)
+- [Least-recently-used cache](lru-cache.md)
+- [Insertion into an LRU cache](put.md)
 
 ## Proof depends on
 
-- [Erase Key](erase-key.md)
+- [Erasing a key from a list of entries](erase-key.md)
 
 ## Sources
 

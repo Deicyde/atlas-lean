@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GroupedYFastTrie.mem_contents_iff
 ---
 
-# Mem contents iff
+# Stored keys are the keys of the groups
 
-A key is stored exactly when it lies in some group.
+**Stored keys are the keys of the groups.** For every grouped y-fast trie $t$ over $w$-bit
+keys and every key $x$, $x$ lies in the contents of $t$ if and only if $x$ belongs to some group
+of $t$.
 
 ## Depends on
 
-- [Grouped YFast Trie](grouped-yfast-trie.md)
-- [Contents](contents.md)
+- [Grouped y-fast trie](grouped-yfast-trie.md)
+- [Keys of a grouped y-fast trie](contents.md)
 
 ## Sources
 

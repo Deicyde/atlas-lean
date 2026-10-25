@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.toList
 ---
 
-# To List
+# Flattening of a catenable heap
 
-The left-to-right list of the elements of a heap, computed with an accumulator.
+**Flattening of a catenable heap.** The flattening of a catenable heap $h$ is the list of its
+elements from left to right, computed as the accumulating flattening of $h$ onto the empty list.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
+- [Catenable heap](catenable-heap.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Accumulating flattening of a catenable heap](to-list-aux.md)
 
 ## Sources
 

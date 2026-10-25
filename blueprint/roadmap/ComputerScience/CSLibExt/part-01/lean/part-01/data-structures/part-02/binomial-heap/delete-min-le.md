@@ -7,34 +7,37 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMin_le
 ---
 
-# Delete Min le
+# The value deleted from a binomial heap is a lower bound for its elements
 
-Successful deletion returns a represented globally minimal value.
+**The value deleted from a binomial heap is a lower bound for its elements.** If deleting the
+minimum of a binomial heap $H$ over a linearly ordered type succeeds and returns a value $m$
+together with a remaining heap, then $m \le v$ for every value $v$ in the multiset of elements of
+$H$.
 
 ## Depends on
 
-- [Binomial Heap](binomial-heap.md)
-- [Delete Min](delete-min.md)
+- [Binomial heap](binomial-heap.md)
+- [Deleting the minimum of a binomial heap](delete-min.md)
 - [Elements](elements-3.md)
 
 ## Proof depends on
 
-- [Ranks At Least](ranks-at-least.md)
-- [Valid](valid-2.md)
-- [Sublist](sublist.md)
+- [Rank lower bound for a forest](ranks-at-least.md)
+- [Valid binomial forest](valid-2.md)
+- [Validity of binomial forests passes to sublists](sublist.md)
 - [Elements](elements-2.md)
-- [Meld Trees](meld-trees.md)
-- [Meld Trees correct](meld-trees-correct.md)
-- [Remove Min Tree](remove-min-tree.md)
-- [Remove Min Tree spec](remove-min-tree-spec.md)
-- [Valid reverse children](valid-reverse-children.md)
-- [Binomial Tree](binomial-tree.md)
-- [Valid](valid.md)
-- [Root le](root-le.md)
-- [Children](children.md)
-- [Elements](elements.md)
-- [Rank](rank.md)
-- [Root](root.md)
+- [Melding binomial forests](meld-trees.md)
+- [Melding preserves forest validity and rank lower bounds](meld-trees-correct.md)
+- [Removing a minimum-root tree from a forest](remove-min-tree.md)
+- [Removing a minimum-root tree](remove-min-tree-spec.md)
+- [Reversed children of a valid binomial tree form a valid forest](valid-reverse-children.md)
+- [Binomial tree](binomial-tree.md)
+- [Valid binomial tree](valid.md)
+- [The root of a valid binomial tree is a lower bound](root-le.md)
+- [Children of a binomial tree](children.md)
+- [Elements of a binomial tree](elements.md)
+- [Rank of a binomial tree](rank.md)
+- [Root of a binomial tree](root.md)
 
 ## Sources
 

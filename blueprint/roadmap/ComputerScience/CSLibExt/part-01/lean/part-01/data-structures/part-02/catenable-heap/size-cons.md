@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.CatenableHeap.size_cons
 ---
 
-# Size cons
+# Size of a heap with an element added in front
 
-A front node has one more element than its tail.
+**Size of a heap with an element added in front.** For every element $a$ and catenable heap
+$t$, the size of the heap obtained by adding $a$ in front of $t$ is the size of $t$ plus one.
 
 ## Depends on
 
-- [Catenable Heap](catenable-heap.md)
-- [Size](size.md)
+- [Catenable heap](catenable-heap.md)
+- [Size of a catenable heap](size.md)
 
 ## Proof depends on
 
-- [To List](to-list.md)
-- [To List cons](to-list-cons.md)
+- [Flattening of a catenable heap](to-list.md)
+- [Flattening a front node of a catenable heap](to-list-cons.md)
 
 ## Sources
 

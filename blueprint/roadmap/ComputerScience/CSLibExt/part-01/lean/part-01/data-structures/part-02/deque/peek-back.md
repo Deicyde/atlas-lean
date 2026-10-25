@@ -6,13 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Deque.peekBack
 ---
 
-# Peek Back
+# Peek at the back of a deque
 
-Observe the back element without removing it, or `none` when the deque is empty.
+**Peek at the back of a deque.** Let $d$ be a deque with front list $f$ and back list $b$,
+where $b$ is stored in reverse order. Peeking at the back of $d$ returns, without removing it,
+the first element of $b$ when $b$ is nonempty, and otherwise the last element of $f$; when both
+lists are empty it returns no element.
 
 ## Depends on
 
-- [Deque](deque.md)
+- [Two-list deque](deque.md)
 
 ## Sources
 

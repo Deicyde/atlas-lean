@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.bandedFrom_map_gapX
 ---
 
-# Banded From map gap X
+# Columns using only the first sequence stay in the band
 
-A gap-only tail in `xs` stays in the band when its endpoints do.
+**Columns using only the first sequence stay in the band.** Let $w, i, j \in \mathbb{N}$,
+let $x$ be a list of length $n$, and let $A$ be the alignment with one column for each element
+$a$ of $x$, in order, with first entry $a$ and empty second entry. If $|i - j| \le w$ and
+$|(i + n) - j| \le w$, then the band check of $A$ with width $w$ from offset
+$(i, j)$ is true.
 
 ## Depends on
 
-- [Banded From](banded-from.md)
+- [Band check from a starting offset](banded-from.md)
 
 ## Proof depends on
 
-- [Abs le of between add](abs-le-of-between-add.md)
+- [Bound at an intermediate point, sum form](abs-le-of-between-add.md)
 
 ## Sources
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.tour_node
 ---
 
-# Tour node
+# Recursive formula for the Euler tour
 
-Characteristic node equation for `tour` (the former definition).
+**Recursive formula for the Euler tour.** For a vertex $r$ and a list of trees
+$c_1, \dots, c_k$, the Euler tour of the tree with root $r$ and child subtrees $c_1, \dots, c_k$
+in order is $r$, followed, for each $i = 1, \dots, k$ in turn, by the Euler tour of $c_i$ and
+then $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Tour](tour.md)
+- [Rooted ordered tree](tree.md)
+- [Euler tour](tour.md)
 
 ## Proof depends on
 
-- [Tour Aux](tour-aux.md)
-- [Tour Aux eq](tour-aux-eq.md)
+- [Euler tour with an accumulator](tour-aux.md)
+- [Accumulator lemma for the Euler tour](tour-aux-eq.md)
 
 ## Sources
 

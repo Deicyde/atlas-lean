@@ -7,17 +7,21 @@ proof: formalized
 lean: Batteries.UnionFind.connectedComponents_equiv_iff_reachable
 ---
 
-# Connected Components equiv iff reachable
+# Connected components computes reachability
 
-The returned canonical partition is exactly undirected graph reachability.
+**Connected components computes reachability.** Let $n$ be a natural number and let $E$ be a
+list of pairs of vertices in $\{0, \dots, n-1\}$. For all vertices $a, b < n$, $a$ and $b$ are
+equivalent in the union-find structure returned by CONNECTED-COMPONENTS on $n$ and $E$ if and
+only if $a$ and $b$ are joined by a path in the simple graph on $\{0, \dots, n-1\}$ whose edges
+are the unordered pairs $\{u, v\}$ with $(u, v)$ in $E$ and $u \ne v$.
 
 ## Depends on
 
-- [Connected Components](connected-components.md)
+- [Connected components via union-find](connected-components.md)
 
 ## Proof depends on
 
-- [Check Equiv spec](check-equiv-spec.md)
+- [Correctness of the union-find equivalence query](check-equiv-spec.md)
 
 ## Sources
 

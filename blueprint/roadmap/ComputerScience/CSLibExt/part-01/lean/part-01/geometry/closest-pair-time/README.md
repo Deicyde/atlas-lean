@@ -4,20 +4,20 @@ navigation: module
 
 # Closest Pair Time
 
-- [Tagged](tagged.md)
-- [Same Side Far](same-side-far.md)
-- [In Strip](in-strip.md)
+- [Side-tagged points](tagged.md)
+- [Same-side points far apart](same-side-far.md)
+- [Strip points](in-strip.md)
 
 ## Packing
 
-- [Length le seven](length-le-seven.md)
+- [Packing bound for the strip](length-le-seven.md)
 
 ## The strip scan
 
-- [Scan From time](scan-from-time.md)
-- [Strip Scan time le](strip-scan-time-le.md)
+- [Packing bound for the strip](scan-from-time.md)
+- [Cost of the strip scan](strip-scan-time-le.md)
 
 ## The recursion
 
-- [Closest Rec time le](closest-rec-time-le.md)
-- [Closest Pair time le](closest-pair-time-le.md)
+- [Running time of the closest-pair recursion](closest-rec-time-le.md)
+- [Running time of the closest-pair algorithm](closest-pair-time-le.md)

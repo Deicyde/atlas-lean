@@ -13,13 +13,13 @@ Distinct preferred paths of a valid state are vertex-disjoint.
 
 ## Depends on
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Paths](paths.md)
+- [Link-cut tree state](state.md)
+- [Valid link-cut tree states](valid.md)
+- [Preferred-path decomposition of a link-cut tree state](paths.md)
 
 ## Proof depends on
 
-- [Nodup paths flat Map](nodup-paths-flat-map.md)
+- [Preferred paths cover each vertex at most once](nodup-paths-flat-map.md)
 
 ## Sources
 

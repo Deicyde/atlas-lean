@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.LinkCutTree.State.Mem
 ---
 
-# Mem
+# Vertex of a link-cut tree state
 
-`x` is a vertex of the represented forest.
+**Vertex of a link-cut tree state.** A vertex $x$ belongs to a link-cut tree state $s$
+when $x$ is a vertex of some tree of the represented forest of $s$.
 
 ## Depends on
 
-- [State](state.md)
+- [Link-cut tree state](state.md)
 
 ## Proof depends on
 
-- [Tree](../euler-tour-tree/tree.md)
+- [Rooted ordered tree](../euler-tour-tree/tree.md)
 - [Vertices](../euler-tour-tree/vertices.md)
 
 ## Sources

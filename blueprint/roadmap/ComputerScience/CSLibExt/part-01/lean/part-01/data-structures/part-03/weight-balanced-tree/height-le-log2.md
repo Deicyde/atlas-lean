@@ -16,11 +16,11 @@ base `4 / 3` to base `2`.
 
 ## Depends on
 
-- [Balanced](balanced.md)
+- [Weight-balanced trees](balanced.md)
 
 ## Proof depends on
 
-- [Pow height le](pow-height-le.md)
+- [Exponential weight lower bound for weight-balanced trees](pow-height-le.md)
 
 ## Sources
 

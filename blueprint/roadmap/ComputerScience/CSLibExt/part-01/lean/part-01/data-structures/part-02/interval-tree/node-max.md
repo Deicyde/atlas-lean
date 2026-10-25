@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.IntervalTree.Tree.nodeMax
 ---
 
-# Node Max
+# Maximum high endpoint at a node
 
-Combine both cached child maxima with the root interval's high endpoint.
+**Maximum high endpoint at a node.** For subtrees $L$ and $R$ and an entry $e$, the node
+maximum is the largest of the high endpoint of the interval of $e$, the cached maximum high
+endpoint stored at the root of $L$, and the one stored at the root of $R$, where an empty subtree
+stores no cached maximum and contributes nothing.
 
 ## Depends on
 
-- [Entry](entry.md)
-- [Tree](tree.md)
+- [Interval tree entry](entry.md)
+- [Interval tree](tree.md)
 
 ## Proof depends on
 
 - [Interval](interval.md)
 - [Cached Max?](cached-max.md)
-- [Max With](max-with.md)
+- [Maximum with an optional value](max-with.md)
 
 ## Sources
 

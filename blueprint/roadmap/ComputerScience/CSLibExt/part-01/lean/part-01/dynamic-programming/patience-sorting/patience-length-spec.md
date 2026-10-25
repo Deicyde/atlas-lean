@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.patienceLength_spec
 ---
 
-# Patience Length spec
+# Correctness of patience sorting
 
-Patience sorting computes the length of a longest strictly increasing subsequence.
+**Correctness of patience sorting.** For every list $xs$ over a linear order, the value
+returned by patience sorting on $xs$ is the length of a longest strictly increasing subsequence of
+$xs$: some strictly increasing subsequence of $xs$ has this length, and no strictly increasing
+subsequence of $xs$ is longer.
 
 ## Depends on
 
-- [Is LISLength](../longest-increasing-subsequence/is-lislength.md)
-- [Patience Length](patience-length.md)
+- [Length of a longest increasing subsequence](../longest-increasing-subsequence/is-lislength.md)
+- [Patience sorting](patience-length.md)
 
 ## Proof depends on
 
-- [Patience Inv](patience-inv.md)
-- [Scan](scan.md)
-- [Patience Scan](patience-scan.md)
+- [Patience sorting invariant](patience-inv.md)
+- [The patience scan preserves the invariant](scan.md)
+- [Patience scan](patience-scan.md)
 
 ## Sources
 

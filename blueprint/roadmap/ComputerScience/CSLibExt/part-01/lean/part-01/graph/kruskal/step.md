@@ -17,10 +17,10 @@ Process one edge, accepting it exactly when it joins two current classes.
 
 ## Proof depends on
 
-- [Equivalent](../../data-structures/part-03/union-find/equivalent.md)
-- [Forest](../../data-structures/part-03/union-find/forest.md)
-- [Find](../../data-structures/part-03/union-find/find.md)
-- [Union](../../data-structures/part-03/union-find/union.md)
+- [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
+- [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
+- [Root of a vertex in a parent forest](../../data-structures/part-03/union-find/find.md)
+- [Union in a union-find forest](../../data-structures/part-03/union-find/union.md)
 
 ## Sources
 

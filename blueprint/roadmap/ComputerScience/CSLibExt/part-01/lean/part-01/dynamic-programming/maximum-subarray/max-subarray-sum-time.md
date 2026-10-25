@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.maxSubarraySum_time
 ---
 
-# Max Subarray Sum time
+# Cost of Kadane's algorithm
 
-Kadane's scan performs exactly three operations per element after the first.
+**Cost of Kadane's algorithm.** Over an additive monoid $\alpha$ with a linear order, Kadane's
+algorithm on a list of length $n \ge 1$ costs exactly $3(n - 1)$ operations, and on the empty
+list it costs $0$.
 
 ## Depends on
 
-- [Max Subarray Sum](max-subarray-sum.md)
+- [Kadane's algorithm](max-subarray-sum.md)
 
 ## Proof depends on
 
-- [Kadane Scan time](kadane-scan-time.md)
+- [Kadane's algorithm](kadane-scan-time.md)
 
 ## Sources
 

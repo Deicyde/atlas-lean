@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.closestPair_eq_none_iff
 ---
 
-# Closest Pair eq none iff
+# The closest-pair algorithm returns no value exactly on fewer than two points
 
-Fewer than two points have no pair.
+**The closest-pair algorithm returns no value exactly on fewer than two points.** Let $K$ be a
+linearly ordered field. For every list of points in $K^2$, the divide-and-conquer closest-pair
+algorithm returns no value if and only if the list has fewer than two entries.
 
 ## Depends on
 
-- [Closest Pair](closest-pair.md)
+- [Divide-and-conquer closest pair](closest-pair.md)
 
 ## Proof depends on
 
 - [Is Answer](is-answer.md)
 - [Is Min Pair Dist2](is-min-pair-dist2.md)
-- [Closest Pair is Answer](closest-pair-is-answer.md)
-- [Closest Pair spec](closest-pair-spec.md)
+- [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
+- [Correctness of divide-and-conquer closest pair](closest-pair-spec.md)
 - [Dist2](dist2.md)
 
 ## Sources

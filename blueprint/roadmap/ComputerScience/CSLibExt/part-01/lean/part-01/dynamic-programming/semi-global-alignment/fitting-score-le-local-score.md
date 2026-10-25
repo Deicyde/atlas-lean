@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.fittingScore_le_localScore
 ---
 
-# Fitting Score le local Score
+# The fitting score is at most the local score
 
-The fitting score is at most the local score: every fitting candidate is an
-infix pair.
+**The fitting score is at most the local score.** Let $\sigma$ be a substitution score
+and $g$ a gap score. For all sequences $x$ and $y$, the fitting score of $x$ against $y$ is at
+most the local score of $x$ and $y$, both taken with $\sigma$ and $g$.
+
+Every fitting candidate, all of $x$ against an infix of $y$, is an infix pair.
 
 ## Depends on
 
-- [Fitting Score](fitting-score.md)
-- [Local Score](../sequence-alignment/local-score.md)
+- [Fitting score](fitting-score.md)
+- [Local alignment score](../sequence-alignment/local-score.md)
 
 ## Proof depends on
 
-- [Fitting Score le](fitting-score-le.md)
-- [Infix Pairs](../sequence-alignment/infix-pairs.md)
+- [Upper bounds on the fitting score](fitting-score-le.md)
+- [Infix pairs](../sequence-alignment/infix-pairs.md)
 - [Infixes](infixes.md)
-- [Nw Score](../sequence-alignment/nw-score.md)
-- [Nw Score le local Score](../sequence-alignment/nw-score-le-local-score.md)
-- [Prefix Pairs](../sequence-alignment/prefix-pairs.md)
+- [Needleman–Wunsch score](../sequence-alignment/nw-score.md)
+- [Infix pairs score at most the local score](../sequence-alignment/nw-score-le-local-score.md)
+- [Pairs of prefixes](../sequence-alignment/prefix-pairs.md)
 
 ## Sources
 

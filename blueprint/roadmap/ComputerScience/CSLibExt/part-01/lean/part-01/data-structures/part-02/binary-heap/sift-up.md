@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.siftUp
 ---
 
-# Sift Up
+# Sift-up
 
-Repeatedly swaps a value with its parent while it is smaller.
+**Sift-up.** Given an array $a$ of length $|a|$ over a linearly ordered type, indexed from $0$,
+and an index $i$, the sift-up of $a$ from $i$ is defined by recursion on $i$. If $i = 0$ or
+$i \ge |a|$, the result is $a$. Otherwise let $p = \lfloor (i - 1)/2 \rfloor$ be the parent of
+$i$; if $a_i < a_p$, the result is the sift-up from $p$ of the array obtained from $a$ by
+exchanging the entries at positions $i$ and $p$, and otherwise the result is $a$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Heap Parent](heap-parent.md)
-- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Parent index in a level-order binary tree](heap-parent.md)
+- [The parent of a valid nonroot index is valid](heap-parent-lt-size.md)
 
 ## Sources
 

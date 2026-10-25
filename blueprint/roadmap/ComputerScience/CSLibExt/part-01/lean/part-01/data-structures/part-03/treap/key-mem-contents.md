@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Treap.Tree.key_mem_contents
 ---
 
-# Key mem contents
+# Keys occurring in the inorder contents
 
-Inorder contents contain exactly the structurally present keys.
+**Keys occurring in the inorder contents.** For a key $k$ and a tree $t$, some pair
+$(k, v)$ occurs in the inorder list of key-value pairs of $t$ if and only if $k$ is the key
+of some node of $t$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Mem Key](mem-key.md)
-- [Contents](contents.md)
+- [Treap trees](tree.md)
+- [Key membership in a treap tree](mem-key.md)
+- [Treap inorder contents](contents.md)
 
 ## Proof depends on
 
-- [Contents node](contents-node.md)
+- [Treap inorder contents of a node](contents-node.md)
 
 ## Sources
 

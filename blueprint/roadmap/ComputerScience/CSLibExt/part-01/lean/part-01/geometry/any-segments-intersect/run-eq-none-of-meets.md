@@ -6,29 +6,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.AnySegments.run_eq_none_of_meets
 ---
 
-# Completeness
+# Completeness of the segment-intersection sweep
 
-**Completeness**: under CLRS's assumption that no three segments share a point, if two
-distinct segments meet, the sweep reports an intersection.
+**Completeness of the segment-intersection sweep.** Let $n$ segments in the plane over a
+linearly ordered field be given, none of them vertical (the left endpoint of each has strictly
+smaller abscissa than its right endpoint), and assume, as CLRS does, that no point lies on three
+distinct segments. If two distinct segments meet, then the sweep, run on the sorted list of
+endpoint events from the empty status list, reports an intersection.
 
 ## Depends on
 
-- [Meets](meets.md)
-- [Events](events.md)
-- [Left](left.md)
-- [Right](right.md)
-- [Run](run.md)
+- [Meeting segments](meets.md)
+- [Sorted sweep events](events.md)
+- [Left endpoint of a segment](left.md)
+- [Right endpoint of a segment](right.md)
+- [Running the sweep over a list of events](run.md)
 
 ## Proof depends on
 
-- [Event](event.md)
-- [Exists leftmost meet](exists-leftmost-meet.md)
-- [Key](key.md)
-- [Point](point.md)
-- [The leftmost intersection is a left endpoint](run-eq-none-of-left.md)
-- [The leftmost intersection is inside both segments](run-eq-none-of-lt.md)
-- [Line Y](line-y.md)
-- [Mem segment iff line Y](mem-segment-iff-line-y.md)
+- [Sweep event](event.md)
+- [A leftmost intersection point](exists-leftmost-meet.md)
+- [Sweep order on endpoint events](key.md)
+- [Endpoint of an event](point.md)
+- [Sweep completeness when the leftmost intersection is a left endpoint](run-eq-none-of-left.md)
+- [Sweep completeness when the leftmost intersection is inside both segments](run-eq-none-of-lt.md)
+- [Height of a line at an abscissa](line-y.md)
+- [A non-vertical segment is the graph of its line](mem-segment-iff-line-y.md)
 
 ## Sources
 

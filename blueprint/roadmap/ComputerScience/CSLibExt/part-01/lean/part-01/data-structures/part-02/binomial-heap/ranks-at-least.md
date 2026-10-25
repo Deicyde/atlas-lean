@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BinomialForest.RanksAtLeast
 ---
 
-# Ranks At Least
+# Rank lower bound for a forest
 
-Every tree in the forest has at least the given rank.
+**Rank lower bound for a forest.** For a natural number $r$, a list of binomial trees has
+ranks at least $r$ when every tree in it has rank at least $r$.
 
 ## Depends on
 
-- [Binomial Tree](binomial-tree.md)
+- [Binomial tree](binomial-tree.md)
 
 ## Proof depends on
 
-- [Rank](rank.md)
+- [Rank of a binomial tree](rank.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Queue.Amortized.Operation
 ---
 
-# Operation
+# Queue operation
 
-An enqueue or dequeue request, used to state aggregate cost bounds.
+**Queue operation.** A queue operation over a type $\alpha$ is either a request to enqueue a
+value $v \in \alpha$ or a request to dequeue. Sequences of such operations are used to state
+aggregate cost bounds.
 
 ## Depends on
 

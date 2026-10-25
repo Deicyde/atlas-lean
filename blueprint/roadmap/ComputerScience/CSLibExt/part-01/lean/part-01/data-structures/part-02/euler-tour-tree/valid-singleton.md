@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.valid_singleton
 ---
 
-# Valid singleton
+# A single-vertex tree is valid
 
-A single-vertex tree is valid.
+**A single-vertex tree is valid.** For every vertex $r$, the tree with root $r$ and no child
+subtrees is valid.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Valid](valid.md)
+- [Rooted ordered tree](tree.md)
+- [Valid Euler-tour tree](valid.md)
 
 ## Proof depends on
 
 - [Vertices](vertices.md)
-- [Vertices node](vertices-node.md)
+- [Preorder vertex list of a node](vertices-node.md)
 
 ## Sources
 

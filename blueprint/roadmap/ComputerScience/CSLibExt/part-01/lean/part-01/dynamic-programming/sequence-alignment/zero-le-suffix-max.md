@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.zero_le_suffixMax
 ---
 
-# Zero le suffix Max
+# The suffix maximum is nonnegative
 
-The suffix maximum is nonnegative: the empty pair scores `0`.
+**The suffix maximum is nonnegative.** For every scoring function
+$\sigma : \alpha \to \alpha \to \mathbb{Z}$, every gap score $g \in \mathbb{Z}$ and all lists
+$x$ and $y$ over $\alpha$, the suffix maximum of $x$ and $y$ (the largest Needleman–Wunsch score,
+under $\sigma$ and $g$, of a suffix of $x$ against a suffix of $y$) is at least $0$, since the
+pair of empty suffixes scores $0$.
 
 ## Depends on
 
-- [Suffix Max](suffix-max.md)
+- [Suffix maximum of Needleman–Wunsch scores](suffix-max.md)
 
 ## Proof depends on
 
-- [Nw Score le suffix Max](nw-score-le-suffix-max.md)
-- [Suffix Pairs](suffix-pairs.md)
+- [Suffix pairs score at most the suffix maximum](nw-score-le-suffix-max.md)
+- [Pairs of suffixes](suffix-pairs.md)
 
 ## Sources
 
