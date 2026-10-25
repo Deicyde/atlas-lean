@@ -8,10 +8,11 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Analysis.InnerProductSpace.JointEigenspace
-public import Mathlib.Analysis.InnerProductSpace.PiL2
-public import Mathlib.Analysis.InnerProductSpace.Spectrum
-public import Mathlib.Analysis.Matrix.Spectrum
+public import Mathlib.Data.Complex.Basic
+import Mathlib.Analysis.InnerProductSpace.JointEigenspace
+import Mathlib.Analysis.InnerProductSpace.PiL2
+import Mathlib.Analysis.InnerProductSpace.Spectrum
+import Mathlib.Analysis.Matrix.Spectrum
 public import Mathlib.LinearAlgebra.UnitaryGroup
 import Mathlib.Tactic.Abel
 import Mathlib.Tactic.Ring
@@ -28,6 +29,10 @@ This is the normal-matrix part of the spectral theorem in AlgebraNotes
 (Section: The Spectral Theorem, Subsection: The Spectral Theorem,
 Theorem (Spectral Theorem)). The Hermitian cases of that theorem are already in
 Mathlib (`Matrix.IsHermitian.spectral_theorem`), so they are not repeated here.
+
+Adapted from `SpectralTheorem.normal_complex_unitarily_diagonalizable` in
+`v1/Atlas/AlgebraNotes/code/SpectralTheorem.lean`, frozen at Git blob
+`393e4c75ddc778f12a3b02e3fb1ef19f653cd76a`.
 -/
 
 @[expose] public section
@@ -41,7 +46,11 @@ diagonalizable: there is a unitary `P` and a diagonal `d` with
 
 Source: AlgebraNotes, Section: The Spectral Theorem, Subsection: The Spectral
 Theorem, Theorem (Spectral Theorem) (normal-matrix case; the Hermitian cases are
-Mathlib's `Matrix.IsHermitian.spectral_theorem`). -/
+Mathlib's `Matrix.IsHermitian.spectral_theorem`).
+
+Adapted from `SpectralTheorem.normal_complex_unitarily_diagonalizable` in
+`v1/Atlas/AlgebraNotes/code/SpectralTheorem.lean`, frozen at Git blob
+`393e4c75ddc778f12a3b02e3fb1ef19f653cd76a`. -/
 public theorem exists_unitary_diagonal_of_isStarNormal
     {n : Type*} [Fintype n] [DecidableEq n]
     {M : Matrix n n ℂ} (hM : IsStarNormal M) :
