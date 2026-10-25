@@ -41,8 +41,8 @@ public theorem test_zero_double_root {R : Type*} [CommRing R] (a : R) :
   (sq_dvd_iff_eval_and_derivative_eval_eq_zero (0 : R[X]) a).mp
     ⟨0, by simp⟩
 
-/-- Definition 9.14: `X - C a` has a simple root at `a`, since its
-derivative is `1`. -/
+/-- The nonzero derivative of `X - C 3` excludes `(X - C 3) ^ 2`
+as a factor. -/
 public theorem test_simple_root :
     ¬ ((X - C (3 : ℤ)) ^ 2 : ℤ[X]) ∣ (X - C (3 : ℤ)) := by
   apply not_sq_dvd_of_derivative_eval_ne_zero

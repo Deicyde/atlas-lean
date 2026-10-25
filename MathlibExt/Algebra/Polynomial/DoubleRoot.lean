@@ -60,12 +60,9 @@ public theorem sq_dvd_iff_eval_and_derivative_eval_eq_zero (f : R[X])
     (X - C a) ^ 2 ∣ f ↔ f.eval a = 0 ∧ f.derivative.eval a = 0 := by
   rw [eval_and_derivative_eval_eq_zero_iff, dvd_iff_exists_eq_mul_right]
 
-/-- Definition 9.14 (simple root): if `f' (a) ≠ 0`, then `a` is not a
-double root of `f`; in particular `(X - C a) ^ 2` does not divide `f`.
-Combined with `f (a) = 0`, this is the book's statement that a root with
-nonzero derivative is simple. The hypothesis `f (a) = 0` is not needed
-for the non-divisibility, since divisibility would already force
-`f' (a) = 0`. -/
+/-- A nonzero derivative at `a` excludes `(X - C a) ^ 2` as a factor of
+`f`, as a consequence of Corollary 9.13. This holds at every point with
+nonzero derivative, including points where `f.eval a ≠ 0`. -/
 public theorem not_sq_dvd_of_derivative_eval_ne_zero
     (f : R[X]) (a : R) (hf' : f.derivative.eval a ≠ 0) :
     ¬ (X - C a) ^ 2 ∣ f := by
