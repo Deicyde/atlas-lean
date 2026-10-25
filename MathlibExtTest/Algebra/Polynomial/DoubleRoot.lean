@@ -12,9 +12,11 @@ public import MathlibExt.Algebra.Polynomial.DoubleRoot
 
 public import Mathlib.Data.ZMod.Basic
 
+namespace MathlibExtTest.Algebra.Polynomial.DoubleRoot
+
 @[expose] public section
 
-open Polynomial
+open _root_.Polynomial
 
 /-- The iff applies to a polynomial over a general commutative ring. -/
 public theorem test_iff {R : Type*} [CommRing R] (f : R[X]) (a : R) :
@@ -56,3 +58,5 @@ public theorem test_sq_double_root_zmod4 :
   rw [← sq_dvd_iff_eval_and_derivative_eval_eq_zero]
 
 end
+
+end MathlibExtTest.Algebra.Polynomial.DoubleRoot
