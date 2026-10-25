@@ -30,19 +30,19 @@ namespace MathlibExtTest.MeasureTheory.Function.VanishingEndpointsDenseLpTests
 
 /-- The cutoff factor vanishes at the left endpoint. -/
 example : vanishingCutoff 0 1 (1 / 4 : ℝ) 0 = 0 := by
-  norm_num [vanishingCutoff]
+  norm_num [vanishingCutoff, Real.intervalCutoff]
 
 /-- The cutoff factor vanishes at the right endpoint. -/
 example : vanishingCutoff 0 1 (1 / 4 : ℝ) 1 = 0 := by
-  norm_num [vanishingCutoff]
+  norm_num [vanishingCutoff, Real.intervalCutoff]
 
 /-- The cutoff factor equals `1` in the middle of the interval. -/
 example : vanishingCutoff 0 1 (1 / 4 : ℝ) (1 / 2 : ℝ) = 1 := by
-  norm_num [vanishingCutoff]
+  norm_num [vanishingCutoff, Real.intervalCutoff]
 
 /-- Zero width gives the zero factor, including interior points. -/
 example (a b x : ℝ) : vanishingCutoff a b 0 x = 0 := by
-  simp [vanishingCutoff]
+  simp [vanishingCutoff, Real.intervalCutoff]
 
 /-- The constant function `1` on `[0, 1]` is approximated in `L^2` by a
 continuous function vanishing at both endpoints. -/

@@ -13,6 +13,7 @@ public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
 public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 public import Mathlib.Topology.Algebra.Module.Basic
 public import Mathlib.Topology.Order.Basic
+public import MathlibExt.Topology.ContinuousFunction.IntervalCutoff
 
 @[expose] public section
 
@@ -44,55 +45,43 @@ from `ℝ`-valued functions to functions valued in a normed space over `ℝ`,
 and the `1 ≤ p` hypothesis is kept, matching the book.
 -/
 
-/-- The clipped piecewise-linear cutoff factor, zero at `a` and `b`.
+/-- The shared clipped piecewise-linear cutoff factor, zero at `a` and `b`.
 For `δ > 0`, it equals `1` on `[a + δ, b - δ]`; this plateau is nonempty
-when `2 * δ ≤ b - a`. At `δ = 0`, the factor is identically zero. -/
+when `2 * δ ≤ b - a`. At `δ = 0`, the factor is identically zero.
+This compatibility name retains the existing `L^p` API. -/
 noncomputable def vanishingCutoff (a b δ : ℝ) (x : ℝ) : ℝ :=
-  max 0 (min 1 (min ((x - a) / δ) ((b - x) / δ)))
+  Real.intervalCutoff a b δ x
 
 /-- The cutoff factor is nonnegative. -/
 theorem vanishingCutoff_nonneg (a b δ : ℝ) (x : ℝ) :
     0 ≤ vanishingCutoff a b δ x :=
-  le_max_left _ _
+  Real.intervalCutoff_nonneg a b δ x
 
 /-- The cutoff factor is at most `1`. -/
 theorem vanishingCutoff_le_one (a b δ : ℝ) (x : ℝ) :
     vanishingCutoff a b δ x ≤ 1 :=
-  max_le (by norm_num) (min_le_left _ _)
+  Real.intervalCutoff_le_one a b δ x
 
 /-- The cutoff factor is continuous. -/
 theorem vanishingCutoff_continuous (a b δ : ℝ) :
-    Continuous (vanishingCutoff a b δ) := by
-  unfold vanishingCutoff
-  exact continuous_const.max (continuous_const.min
-    ((continuous_id.sub continuous_const).div_const δ |>.min
-      ((continuous_const.sub continuous_id).div_const δ)))
+    Continuous (vanishingCutoff a b δ) :=
+  Real.intervalCutoff_continuous a b δ
 
 /-- The cutoff factor vanishes at the left endpoint. -/
 theorem vanishingCutoff_eq_zero_left (a b δ : ℝ) :
-    vanishingCutoff a b δ a = 0 := by
-  unfold vanishingCutoff
-  rw [sub_self, zero_div]
-  exact max_eq_left (le_trans (min_le_right _ _) (min_le_left _ _))
+    vanishingCutoff a b δ a = 0 :=
+  Real.intervalCutoff_eq_zero_left a b δ
 
 /-- The cutoff factor vanishes at the right endpoint. -/
 theorem vanishingCutoff_eq_zero_right (a b δ : ℝ) :
-    vanishingCutoff a b δ b = 0 := by
-  unfold vanishingCutoff
-  rw [sub_self, zero_div]
-  exact max_eq_left (le_trans (min_le_right _ _) (min_le_right _ _))
+    vanishingCutoff a b δ b = 0 :=
+  Real.intervalCutoff_eq_zero_right a b δ
 
 /-- The cutoff factor equals `1` away from the endpoints. -/
 theorem vanishingCutoff_eq_one (a b : ℝ) {δ : ℝ} (hδ : 0 < δ) {x : ℝ}
     (hx1 : a + δ ≤ x) (hx2 : x ≤ b - δ) :
-    vanishingCutoff a b δ x = 1 := by
-  have h1 : (1 : ℝ) ≤ (x - a) / δ := by
-    rw [le_div_iff₀ hδ, one_mul]; linarith
-  have h2 : (1 : ℝ) ≤ (b - x) / δ := by
-    rw [le_div_iff₀ hδ, one_mul]; linarith
-  have hmin : (1 : ℝ) ≤ min ((x - a) / δ) ((b - x) / δ) := le_min h1 h2
-  unfold vanishingCutoff
-  rw [min_eq_left hmin, max_eq_right (by norm_num : (0 : ℝ) ≤ 1)]
+    vanishingCutoff a b δ x = 1 :=
+  Real.intervalCutoff_eq_one a b δ x hδ hx1 hx2
 
 section CutoffApprox
 
