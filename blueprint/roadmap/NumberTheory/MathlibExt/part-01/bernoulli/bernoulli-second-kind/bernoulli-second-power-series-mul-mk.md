@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.bernoulliSecondPowerSeries_mul_mk
 ---
 
-# Bernoulli Second Power Series mul mk
+# Defining identity of the generating function of the Bernoulli numbers of the second kind
 
-The defining EGF identity: `bernoulliSecondPowerSeries` times the
-unit series `∑ₙ (-1) ^ n * t ^ n / (n + 1)` (which is `log (1 + t) / t`)
-equals `1`.
+**Defining identity of the generating function of the Bernoulli numbers of the second
+kind.** In the ring $\mathbb{Q}[[t]]$ of formal power series, the generating function $G(t)$ of
+the Bernoulli numbers of the second kind satisfies
+$G(t) \cdot \sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n = 1$.
+
+Analytically, $\sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n = \log(1 + t) / t$.
 
 ## Depends on
 
-- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+- [Generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series.md)
 
 ## Sources
 

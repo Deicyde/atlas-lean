@@ -6,9 +6,10 @@ proof: formalized
 lean: Nat.card_divisors_two_mul_of_odd
 ---
 
-# Card divisors two mul of odd
+# Divisor count of twice an odd number
 
-Doubling an odd number doubles its number of divisors.
+**Divisor count of twice an odd number.** If $u$ is an odd natural number, then $2u$ has
+exactly twice as many positive divisors as $u$.
 
 ## Depends on
 

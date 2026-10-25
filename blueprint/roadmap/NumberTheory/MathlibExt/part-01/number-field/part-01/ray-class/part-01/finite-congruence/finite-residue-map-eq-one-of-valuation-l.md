@@ -22,15 +22,15 @@ result.
 
 ## Depends on
 
-- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
-- [Finite Residue Map](finite-residue-map.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Exponent of a modulus at a prime](../../part-02/ray-group/finite-exponent.md)
+- [Finite residue map](finite-residue-map.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
-- [Finite Residue Map eq one iff](finite-residue-map-eq-one-iff.md)
+- [Multiplicative congruence to one at the finite part](../../part-02/ray-group/congruent-one-at-finite-part.md)
+- [Kernel criterion for the finite residue map](finite-residue-map-eq-one-iff.md)
 
 ## Sources
 

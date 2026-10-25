@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin1_attained
 ---
 
-# Jmin1 attained
+# The grid function reaches $1$ at $279$
 
-The level `G ≥ 1` is attained at `j = 279`.
+**The grid function reaches $1$ at $279$.** The Breusch grid function $G_9$ for $k = 9$
+satisfies $G_9(279) \ge 1$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Sources
 

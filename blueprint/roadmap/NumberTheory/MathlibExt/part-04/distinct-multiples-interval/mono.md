@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.HasDistinctMultiplesInInterval.mono
 ---
 
-# Mono
+# Lengthening the interval preserves distinct multiples
 
-Lengthening the interval preserves the property.
+**Lengthening the interval preserves distinct multiples.** For natural numbers $n$, $m$, $L$
+and $L'$ with $L \le L'$, if the interval $(m, m + L]$ contains distinct multiples of
+$1, \dots, n$, then so does the interval $(m, m + L']$.
 
 ## Depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

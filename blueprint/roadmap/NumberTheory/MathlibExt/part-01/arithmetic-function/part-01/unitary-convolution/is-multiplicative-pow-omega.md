@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.isMultiplicative_powOmega
 ---
 
-# Is Multiplicative pow Omega
+# Multiplicativity of $c^{\Omega}$
 
-`c ^ Ω` is multiplicative.
+**Multiplicativity of $c^{\Omega}$.** Let $R$ be a monoid with zero and $c \in R$. The
+arithmetic function $n \mapsto c^{\Omega(n)}$ for $n \ge 1$, where $\Omega(n)$ is the number of
+prime factors of $n$ counted with multiplicity, is multiplicative.
 
 ## Depends on
 
-- [Pow Omega](pow-omega.md)
+- [The arithmetic function $c^{\Omega}$](pow-omega.md)
 
 ## Proof depends on
 
-- [Is Multiplicative](../completely-multiplicative/is-multiplicative.md)
-- [Is Completely Multiplicative pow Omega](is-completely-multiplicative-pow-omega.md)
-- [Pow Omega one](pow-omega-one.md)
+- [Normalized completely multiplicative functions are multiplicative](../completely-multiplicative/is-multiplicative.md)
+- [Complete multiplicativity of $c^{\Omega}$](is-completely-multiplicative-pow-omega.md)
+- [Value of $c^{\Omega}$ at $1$](pow-omega-one.md)
 
 ## Sources
 

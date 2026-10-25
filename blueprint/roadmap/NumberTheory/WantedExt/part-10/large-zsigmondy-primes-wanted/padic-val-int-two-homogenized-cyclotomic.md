@@ -12,7 +12,7 @@ Let `a > b` be odd positive integers. Then for `n ≥ 1`, `v_2(Φ_n(a, b))` is `
 
 ## Depends on
 
-- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

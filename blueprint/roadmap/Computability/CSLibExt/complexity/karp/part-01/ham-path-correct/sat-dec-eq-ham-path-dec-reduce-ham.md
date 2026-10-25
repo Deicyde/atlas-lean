@@ -33,9 +33,9 @@ lean: Cslib.Complexity.Karp.satDec_eq_hamPathDec_reduceHam
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Sources
 

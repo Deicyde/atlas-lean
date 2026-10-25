@@ -13,23 +13,23 @@ Single-term lower bound for `logF9`.
 
 ## Depends on
 
-- [N10m](n10m.md)
-- [N1m](n1m.md)
-- [N9m](n9m.md)
-- [Fmain](fmain.md)
-- [W9](../grid/w9.md)
+- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Scaled factorial argument $N_1$](n1m.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [Main Stirling term](fmain.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
 
 ## Proof depends on
 
-- [N10 pos](n10-pos.md)
-- [N1 pos](n1-pos.md)
-- [N9 pos](n9-pos.md)
-- [Q9](../grid/q9.md)
-- [Log fact lower](log-fact-lower.md)
-- [Log fact upper](log-fact-upper.md)
-- [W9 dvd](../grid/w9-dvd.md)
-- [W9 mu sign](../grid/w9-mu-sign.md)
-- [W9 pos](../grid/w9-pos.md)
+- [Positivity of the scaled factorial argument $N_{10}$](n10-pos.md)
+- [Positivity of the scaled factorial argument $N_1$](n1-pos.md)
+- [Positivity of the scaled argument N₉](n9-pos.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Lower bound for $\log N!$](log-fact-lower.md)
+- [Upper bound for $\log N!$](log-fact-upper.md)
+- [Entries of the divisor table for $210$ divide $210$](../grid/w9-dvd.md)
+- [Signs in the divisor table for $210$](../grid/w9-mu-sign.md)
+- [Divisors in the table for $210$ are positive](../grid/w9-pos.md)
 
 ## Sources
 

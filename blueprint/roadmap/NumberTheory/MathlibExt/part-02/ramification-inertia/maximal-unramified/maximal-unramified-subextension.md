@@ -6,11 +6,14 @@ statement: formalized
 lean: IntermediateField.maximalUnramifiedSubextension
 ---
 
-# Maximal Unramified Subextension
+# Maximal unramified subextension
 
-The maximal unramified subextension, defined as the
-supremum of all finite unramified intermediate fields. The supremum need not itself be finite or
-formally unramified.
+**Maximal unramified subextension.** Let $A$ be a commutative ring and $L/K$ a field
+extension such that the map $A \to L$ factors as $A \to K \to L$. The maximal unramified
+subextension of $L/K$ relative to $A$ is the supremum, in the lattice of intermediate fields of
+$L/K$, of all intermediate fields of $L/K$ that are finite unramified relative to $A$.
+
+The supremum need not itself be finite or formally unramified.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Finite Unramified](is-finite-unramified.md)
+- [Finite unramified intermediate fields](is-finite-unramified.md)
 
 ## Sources
 

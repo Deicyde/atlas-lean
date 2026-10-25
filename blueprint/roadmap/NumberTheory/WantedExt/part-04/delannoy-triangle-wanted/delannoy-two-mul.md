@@ -15,7 +15,7 @@ lean: MathlibExt.NumberTheory.DelannoyTriangleWanted.delannoy_two_mul
 
 ## Depends on
 
-- [Fermat Quotient](../../../MathlibExt/part-05/fermat-quotient/fermat-quotient.md)
+- [Fermat quotient](../../../MathlibExt/part-05/fermat-quotient/fermat-quotient.md)
 - [Ordinary Riordan Pascal-like triangle](../../../../LinearAlgebra/MathlibExt/matrix/part-01/ordinary-riordan-pascal-like-matrix/ordinary-riordan-pascal-like-matrix.md)
 
 ## Sources

@@ -7,18 +7,20 @@ proof: formalized
 lean: isIntegralFactorialRatio_perm
 ---
 
-# Is Integral Factorial Ratio perm
+# Integral factorial ratios are invariant under permutation
 
-The predicate is invariant under permuting both tuples.
+**Integral factorial ratios are invariant under permutation.** Let $A$, $A'$, $B$ and $B'$ be
+lists of natural numbers such that $A'$ is a permutation of $A$ and $B'$ is a permutation of
+$B$. If $(A, B)$ is an integral factorial ratio, then so is $(A', B')$.
 
 ## Depends on
 
-- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Integral factorial ratio](is-integral-factorial-ratio.md)
 
 ## Proof depends on
 
-- [Is Integral Factorial Ratio perm left](is-integral-factorial-ratio-perm-left.md)
-- [Is Integral Factorial Ratio perm right](is-integral-factorial-ratio-perm-right.md)
+- [Permuting the numerator of an integral factorial ratio](is-integral-factorial-ratio-perm-left.md)
+- [Permuting the denominator of an integral factorial ratio](is-integral-factorial-ratio-perm-right.md)
 
 ## Sources
 

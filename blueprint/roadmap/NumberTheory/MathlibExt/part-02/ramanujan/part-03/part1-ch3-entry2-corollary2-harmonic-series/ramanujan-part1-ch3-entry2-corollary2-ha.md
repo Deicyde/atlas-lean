@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry2Corollary2HarmonicSeries.ramanujan_part1_ch3_entry2_corollary2_harmonic_series_mathlib
 ---
 
-# Ramanujan part1 ch3 entry2 corollary2 harmonic series mathlib
+# Ramanujan's series for the harmonic numbers, with Mathlib's harmonic numbers
 
-Canonical version of
-`ramanujan_part1_ch3_entry2_corollary2_harmonic_series` stated with
-Mathlib's `_root_.harmonic`, for direct use with the standard harmonic API.
+**Ramanujan's series for the harmonic numbers, with Mathlib's harmonic numbers.** Let
+$H_k = \sum_{i=0}^{k-1} (i+1)^{-1}$ be Mathlib's $k$-th harmonic number. For every complex number
+$x$, the series $\sum_{k \ge 1} \frac{H_k x^k}{k!}$ and
+$\sum_{k \ge 1} \frac{(-1)^{k-1} x^k}{k!\, k}$ converge absolutely, and
+$\sum_{k=1}^{\infty} \frac{H_k x^k}{k!} = e^x \sum_{k=1}^{\infty} \frac{(-1)^{k-1} x^k}{k!\, k}$.
 
 ## Depends on
 

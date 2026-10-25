@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsFrobeniusPseudoprime.composite
 ---
 
-# Composite
+# Frobenius pseudoprimes are not prime
 
-A Frobenius pseudoprime is composite, as `¬ n.Prime`.
+**Frobenius pseudoprimes are not prime.** If $n$ is a Frobenius pseudoprime with respect to
+a polynomial $f \in \mathbb{Z}[x]$, then $n$ is not prime.
 
 ## Depends on
 
-- [Is Frobenius Pseudoprime](is-frobenius-pseudoprime.md)
+- [Frobenius pseudoprime](is-frobenius-pseudoprime.md)
 
 ## Proof depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
 
 ## Sources
 

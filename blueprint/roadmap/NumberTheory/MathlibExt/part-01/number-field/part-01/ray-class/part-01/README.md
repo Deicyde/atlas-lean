@@ -14,7 +14,7 @@ navigation: transparent
 - [Exact Sequence](exact-sequence/README.md)
 - [Finite Congruence](finite-congruence/README.md)
 - [Frobenius Generators](frobenius-generators/README.md)
-- [Frobenius Restriction](restrict-normal-hom-frobenius-at-coprime.md)
+- [Restriction of Frobenius elements in a tower](restrict-normal-hom-frobenius-at-coprime.md)
 - [Group](group/README.md)
 - [Induced Character](induced-character/README.md)
 - [Infinite Sign](infinite-sign/README.md)

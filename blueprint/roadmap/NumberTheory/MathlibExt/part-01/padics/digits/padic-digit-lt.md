@@ -7,14 +7,14 @@ proof: formalized
 lean: PadicInt.padicDigit_lt
 ---
 
-# Padic Digit lt
+# p-adic digits are less than p
 
-Each `p`-adic digit is strictly below `p`, via `dvd_appr_sub_appr`,
-`appr_lt`, and primality, exactly as in ATLAS.
+**p-adic digits are less than p.** Let $p$ be a prime and $a \in \mathbb{Z}_p$. For every
+$n \ge 0$, the $n$-th $p$-adic digit of $a$ is strictly less than $p$.
 
 ## Depends on
 
-- [Padic Digit](padic-digit.md)
+- [Digits of a p-adic integer](padic-digit.md)
 
 ## Sources
 

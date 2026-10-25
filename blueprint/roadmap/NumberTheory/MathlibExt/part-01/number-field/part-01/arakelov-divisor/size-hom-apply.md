@@ -7,16 +7,18 @@ proof: formalized
 lean: NumberField.ArakelovDivisor.sizeHom_apply
 ---
 
-# Size Hom apply
+# Size as a quotient of homomorphisms
 
-The size homomorphism unfolds to the quotient of its two factors.
+**Size as a quotient of homomorphisms.** For every Arakelov divisor $D$ of a number field
+$K$, the size of $D$ equals the archimedean-factor homomorphism evaluated at $D$ divided by the
+ideal-norm homomorphism evaluated at $D$, the quotient taken in the group of positive reals.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Arch Hom](arch-hom.md)
-- [Ideal Hom](ideal-hom.md)
-- [Size Hom](size-hom.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Archimedean factor homomorphism](arch-hom.md)
+- [Ideal norm homomorphism](ideal-hom.md)
+- [Size of an Arakelov divisor](size-hom.md)
 
 ## Sources
 

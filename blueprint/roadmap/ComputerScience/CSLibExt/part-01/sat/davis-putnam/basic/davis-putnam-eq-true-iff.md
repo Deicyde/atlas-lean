@@ -13,9 +13,9 @@ Davis-Putnam procedure returns true on $\varphi$ if and only if $\varphi$ is sat
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [The Davis-Putnam procedure](davis-putnam.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -25,15 +25,15 @@ Davis-Putnam procedure returns true on $\varphi$ if and only if $\varphi$ is sat
 - [Successive elimination of a list of variables](eliminate-all.md)
 - [Resolvents do not mention the resolved variable](fst-ne-of-mem-resolvent.md)
 - [Clauses containing a variable only negatively](neg-clauses.md)
-- [Nil mem of vars eq empty](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/nil-mem-of-vars-eq-empty.md)
+- [Unsatisfiable formulas without variables contain the empty clause](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/nil-mem-of-vars-eq-empty.md)
 - [Clauses containing a variable only positively](pos-clauses.md)
 - [Variable list for Davis–Putnam elimination](var-list.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
-- [Cnf Sat iff exists satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
+- [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
+- [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

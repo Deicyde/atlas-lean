@@ -16,8 +16,8 @@ definite covariances `S`.
 ## Depends on
 
 - [Multivariate Gaussian PDFReal](../gaussian-density/multivariate-gaussian-pdfreal.md)
-- [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
-- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+- [Weighted mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
+- [Weighted scatter matrix](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Proof depends on
 

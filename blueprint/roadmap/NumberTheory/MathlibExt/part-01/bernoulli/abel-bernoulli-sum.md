@@ -7,12 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.abel_bernoulli_sum
 ---
 
-# Abel Bernoulli Sums
+# Abel–Bernoulli sum
 
-Abel-type identity relating a binomial sum with Bernoulli polynomials to a
-single Bernoulli polynomial value. This is the first of the source's two
-Abel-Bernoulli sums; the integer power `(↑l - 1 : ℤ)` renders `(x + l)^{l-1}`
-including the `l = 0` reciprocal case.
+**Abel–Bernoulli sum.** Let $B_k(t)$ denote the $k$-th Bernoulli polynomial. For every natural
+number $n$ and all complex numbers $x$ and $y$ with $x \neq 0$,
+
+$$\sum_{l=0}^{n} \binom{n}{l} (x + l)^{l-1} B_{n-l}(y + n - l) = \frac{1}{x} B_n(y + x + n),$$
+
+where $(x + l)^{l-1}$ is an integer power, so the term $l = 0$ contains the factor $x^{-1}$.
+
+This is the first of the source's two Abel–Bernoulli sums.
 
 ## Depends on
 

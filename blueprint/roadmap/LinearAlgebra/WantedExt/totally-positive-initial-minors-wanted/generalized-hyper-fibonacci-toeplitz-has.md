@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_toeplitz_hasPositiveMinors
 ---
 
-# Generalized Hyper Fibonacci toeplitz has Positive Minors
+# Eventual total positivity of hyper-Fibonacci Toeplitz matrices
 
-For `r ≥ 1` and `Δ = a² + pab - b²`: if `Δ > 0`, the Toeplitz matrix `T_{r+2,2n}^{(r)}` is
-totally positive for all large `n`; if `Δ < 0`, so is `T_{r+2,2n+1}^{(r)}`.
+**Eventual total positivity of hyper-Fibonacci Toeplitz matrices.** Let $p, a, b$ be integers
+with $p \ge 1$, $a \ge 0$ and $b > 0$, put $\Delta = a^2 + pab - b^2$, let $W^{(r)}_{p,n}$
+denote the generalized hyper-Fibonacci numbers, and let $r \ge 1$ be a natural number. For a
+natural number $s$ write $T_s$ for the real $(r+2) \times (r+2)$ Toeplitz matrix with entry
+$W^{(r)}_{p,s+i-j}$ in row $i$ and column $j$ ($0 \le i, j \le r+1$). If $\Delta > 0$, there is a
+natural number $N$ such that $T_{2n}$ has positive minors (is totally positive) for every
+$n \ge N$; if $\Delta < 0$, there is a natural number $N$ such that $T_{2n+1}$ has positive
+minors for every $n \ge N$.
 
 ## Depends on
 
 - [Matrices with positive minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

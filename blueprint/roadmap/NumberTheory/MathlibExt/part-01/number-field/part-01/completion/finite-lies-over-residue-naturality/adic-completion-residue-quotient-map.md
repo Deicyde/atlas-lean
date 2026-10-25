@@ -6,9 +6,14 @@ statement: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.adicCompletionResidueQuotientMap
 ---
 
-# Adic Completion Residue Quotient Map
+# Residue map of completed integer rings
 
-Completion residue-field quotient map along the adic integer map.
+**Residue map of completed integer rings.** Let $L/K$ be an extension of number fields, let
+$v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero prime ideal of $\mathcal{O}_L$
+lying over $v$. Let $\mathcal{O}_{K_v}$ and $\mathcal{O}_{L_w}$ be the rings of integers of the
+completions $K_v$ and $L_w$, with maximal ideals $\mathfrak{m}_v$ and $\mathfrak{m}_w$. This is
+the ring homomorphism $\mathcal{O}_{K_v}/\mathfrak{m}_v \to \mathcal{O}_{L_w}/\mathfrak{m}_w$
+induced by the canonical map $\mathcal{O}_{K_v} \to \mathcal{O}_{L_w}$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
-- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+- [Restriction of the completion map to the rings of integers](../finite-lies-over-valuation/adic-completion-integers-map.md)
+- [Maximal ideals of completed integer rings lie over each other](../comap-maximal-ideal-adic-completion-inte.md)
 
 ## Sources
 

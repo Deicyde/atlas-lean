@@ -6,13 +6,11 @@ statement: formalized
 lean: Int.fermatQuotient
 ---
 
-# Fermat Quotient
+# Fermat quotient
 
-Fermat quotient `q_p(a) = (a ^ (p - 1) - 1) / p` for prime `p` and `a`
-coprime to `p`. Integrality follows from `Int.prime_dvd_pow_sub_one`.
-Proof arguments `_hp` and `_ha` are retained to enforce the domain
-restriction to prime moduli and coprime integers, though the computed
-value is independent of witnesses.
+**Fermat quotient.** For a prime $p$ and an integer $a$ coprime to $p$, the Fermat quotient
+is the integer $q_p(a) = (a^{p-1} - 1)/p$, where $/$ is integer division rounding down. The
+division is exact, since $p$ divides $a^{p-1} - 1$ by Fermat's little theorem.
 
 ## Depends on
 

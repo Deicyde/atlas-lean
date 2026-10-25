@@ -7,17 +7,21 @@ proof: formalized
 lean: isBigO_abelSummatory_nhdsGT_zero
 ---
 
-# Is Big O abel Summatory nhds GT zero
+# The summatory step function is negligible near zero
 
-The summatory function is eventually zero near `0`, hence `O` of anything.
+**The summatory step function is negligible near zero.** Let $f : \mathbb{N} \to \mathbb{C}$
+have summatory step function $S(t) = \sum_{1 \le k \le t} f(k)$. For every real $b$,
+$S(t) = O(t^{-b})$ as $t \to 0^+$.
+
+This holds because $S$ vanishes on $(0, 1)$.
 
 ## Depends on
 
-- [Abel Summatory](abel-summatory.md)
+- [Summatory step function](abel-summatory.md)
 
 ## Proof depends on
 
-- [Abel Summatory eq zero of lt one](abel-summatory-eq-zero-of-lt-one.md)
+- [The summatory step function vanishes below one](abel-summatory-eq-zero-of-lt-one.md)
 
 ## Sources
 

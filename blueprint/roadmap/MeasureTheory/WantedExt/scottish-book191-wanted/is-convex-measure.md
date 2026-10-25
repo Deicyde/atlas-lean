@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ScottishBook191Wanted.IsConvexMeasure
 ---
 
-# Is Convex Measure
+# Convex measure
 
-A measure `μ` is convex (in Fréchet's sense, "sans singularités") if
-`μ X = 1` and every set of positive measure contains a subset of strictly
-smaller positive measure.
+**Convex measure.** A measure $\mu$ on a measurable space $X$ is convex (in Fréchet's sense,
+"sans singularités") if $\mu(X) = 1$ and every measurable set $A$ with $\mu(A) > 0$ contains a
+measurable subset $B$ with $0 < \mu(B) < \mu(A)$.
 
 ## Depends on
 

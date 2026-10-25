@@ -25,8 +25,8 @@ The last case does not record whether the detour comes from a positive or a nega
 - [Distinct variables of a formula](../ham-path/ham-vars.md)
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

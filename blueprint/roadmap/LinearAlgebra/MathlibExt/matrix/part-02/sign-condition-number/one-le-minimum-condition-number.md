@@ -18,7 +18,7 @@ condition number of the real $n \times n$ sign matrices is at least $1$.
 
 ## Proof depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 - [Condition number of a square real matrix](condition-number.md)
 - [Condition numbers are at least one](one-le-condition-number.md)

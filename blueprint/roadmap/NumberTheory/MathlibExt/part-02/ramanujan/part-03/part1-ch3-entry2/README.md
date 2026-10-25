@@ -7,8 +7,8 @@ navigation: module
 
 ## Entry2
 
-- [Ramanujan part1 ch3 entry2](ramanujan-part1-ch3-entry2.md)
+- [Ramanujan's exponential transformation of a factorial series (Chapter 3, Entry 2)](ramanujan-part1-ch3-entry2.md)
 
 ## Entry2 Leftsummable
 
-- [Ramanujan part1 ch3 entry2 leftsummable](ramanujan-part1-ch3-entry2-leftsummable.md)
+- [Convergence of the left side of Ramanujan's Chapter 3, Entry 2](ramanujan-part1-ch3-entry2-leftsummable.md)

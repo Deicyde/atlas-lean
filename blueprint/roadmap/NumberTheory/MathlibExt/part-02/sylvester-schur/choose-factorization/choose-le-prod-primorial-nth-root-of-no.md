@@ -7,10 +7,13 @@ proof: formalized
 lean: Nat.SylvesterSchur.choose_le_prod_primorial_nthRoot_of_no_large
 ---
 
-# Choose le prod primorial nth Root of no large
+# Erdős root-layer bound for binomial coefficients without large prime factors
 
-Full Erdős prime-power layer bound. Under the no-large-prime hypothesis, the binomial
-coefficient is bounded by the product of primorials at successive roots of `N`.
+**Erdős root-layer bound for binomial coefficients without large prime factors.** Let
+$0 < N$ and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at
+most $r$. Write $P(m)$ for the product of all primes $p \le m$ and let
+$L = \lfloor \log_2 N \rfloor$. Then
+$\binom{N}{r} \le \prod_{k=1}^{L} P(\lfloor N^{1/k} \rfloor)$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose eq prod small prime powers of no large](choose-eq-prod-small-prime-powers-of-no.md)
+- [Truncating the prime factorization of a binomial coefficient](choose-eq-prod-small-prime-powers-of-no.md)
 
 ## Sources
 

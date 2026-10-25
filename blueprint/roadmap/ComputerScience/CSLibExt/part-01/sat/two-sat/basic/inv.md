@@ -16,8 +16,8 @@ Every clause derivable from $\varphi$ by resolution satisfies this invariant.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

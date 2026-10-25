@@ -7,15 +7,19 @@ proof: formalized
 lean: extensionDiscriminant_eq
 ---
 
-# Extension Discriminant eq
+# The extension discriminant is a lattice discriminant
 
-The extension discriminant is the lattice discriminant of imageOfB.
+**The extension discriminant is a lattice discriminant.** Let $A$ and $B$ be commutative
+rings and $K$ and $L$ fields with $L$ finite-dimensional over $K$, with algebra maps forming
+scalar towers $A \to K \to L$ and $A \to B \to L$. The extension discriminant of the tower
+equals the lattice discriminant over $A$ and $K$ of the image of $B$ in $L$, regarded as an
+$A$-submodule of $L$.
 
 ## Depends on
 
-- [Extension Discriminant](extension-discriminant.md)
-- [Image Of B](image-of-b.md)
-- [Lattice Discriminant](../lattice-discriminant/lattice-discriminant.md)
+- [Extension discriminant](extension-discriminant.md)
+- [Image of $B$ in $L$](image-of-b.md)
+- [Discriminant of a lattice](../lattice-discriminant/lattice-discriminant.md)
 
 ## Sources
 

@@ -7,40 +7,48 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.logF9_lower
 ---
 
-# Log F9 lower
+# Lower bound for $\log F_9(n)$
 
-Lower bound for `logF9 n` with explicit error terms.
+**Lower bound for $\log F_9(n)$.** Let $w_9$ be the table of divisors $d$ of $Q_9 = 210$
+paired with their Möbius values $\varepsilon$, and for a natural number $n$ let
+
+$$\log F_9(n) = \sum_{(d, \varepsilon) \in w_9}
+\varepsilon \log \frac{(10 n k_d)!}{(9 n k_d)!\,(n k_d)!}, \qquad k_d = 210/d.$$
+
+Then for every natural number $n \ge 1$,
+
+$$48 n (10 \log 10 - 9 \log 9) - 16 - 48 \log(2100 n) \le \log F_9(n).$$
 
 ## Depends on
 
-- [Log F9](log-f9.md)
+- [Logarithm of Breusch's product $F_9(n)$](log-f9.md)
 
 ## Proof depends on
 
-- [N10 eq](n10-eq.md)
-- [N10 le](n10-le.md)
-- [N10 pos](n10-pos.md)
-- [N10m](n10m.md)
-- [N1 eq](n1-eq.md)
-- [N1 le](n1-le.md)
-- [N1 pos](n1-pos.md)
-- [N1m](n1m.md)
-- [N9 eq](n9-eq.md)
-- [N9 le](n9-le.md)
-- [N9 pos](n9-pos.md)
-- [N9m](n9m.md)
-- [Q9](../grid/q9.md)
-- [Q9 eq](q9-eq.md)
-- [Z9 combined](z9-combined.md)
-- [Fmain](fmain.md)
+- [Exact formula for the scaled factorial argument $N_{10}$](n10-eq.md)
+- [Upper bound for the scaled factorial argument $N_{10}$](n10-le.md)
+- [Positivity of the scaled factorial argument $N_{10}$](n10-pos.md)
+- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Exact formula for the scaled factorial argument $N_1$](n1-eq.md)
+- [Upper bound for the scaled factorial argument $N_1$](n1-le.md)
+- [Positivity of the scaled factorial argument $N_1$](n1-pos.md)
+- [Scaled factorial argument $N_1$](n1m.md)
+- [Exact formula for the scaled factorial argument $N_9$](n9-eq.md)
+- [Upper bound for the scaled factorial argument $N_9$](n9-le.md)
+- [Positivity of the scaled argument N₉](n9-pos.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Value of Q₉](q9-eq.md)
+- [Combined main term of the Möbius-weighted Stirling sums](z9-combined.md)
+- [Main Stirling term](fmain.md)
 - [Log F9 term lower](log-f9-term-lower.md)
-- [Log ratio9](log-ratio9.md)
-- [Ratio9](ratio9.md)
-- [W9](../grid/w9.md)
-- [W9 dvd](../grid/w9-dvd.md)
-- [W9 length](../grid/w9-length.md)
-- [W9 nodup](../grid/w9-nodup.md)
-- [W9 pos](../grid/w9-pos.md)
+- [Logarithm of the binomial factor](log-ratio9.md)
+- [Binomial factor ratio₉](ratio9.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
+- [Entries of the divisor table for $210$ divide $210$](../grid/w9-dvd.md)
+- [The divisor table for $210$ has 16 entries](../grid/w9-length.md)
+- [The divisor table for $210$ has no repeated entries](../grid/w9-nodup.md)
+- [Divisors in the table for $210$ are positive](../grid/w9-pos.md)
 
 ## Sources
 

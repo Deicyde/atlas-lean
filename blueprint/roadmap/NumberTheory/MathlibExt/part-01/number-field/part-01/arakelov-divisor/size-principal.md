@@ -7,24 +7,28 @@ proof: formalized
 lean: NumberField.size_principal
 ---
 
-# Size principal
+# Principal Arakelov divisors have size one
 
-Every principal divisor has size one. This is Mathlib's number-field product
-formula: the archimedean factor is `|Algebra.norm ℚ x|` by
-`NumberField.InfinitePlace.prod_eq_abs_norm`, and the ideal norm of the principal
-ideal is the same value by `FractionalIdeal.absNorm_span_singleton`.
+**Principal Arakelov divisors have size one.** Let $K$ be a number field with ring of
+integers $\mathcal{O}_K$. For every nonzero $x \in K$, the principal Arakelov divisor of $x$,
+formed by the principal fractional ideal $x\mathcal{O}_K$ and the values $w(x)$ at the infinite
+places $w$ of $K$, has size $1$.
+
+This is the product formula: with $m_w$ equal to $1$ at real and $2$ at complex places, the
+archimedean factor $\prod_w w(x)^{m_w}$ equals $|N_{K/\mathbb{Q}}(x)|$, where $N_{K/\mathbb{Q}}$
+is the field norm from $K$ to $\mathbb{Q}$, and so does the absolute norm of $x\mathcal{O}_K$.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Size Hom](size-hom.md)
-- [Principal Hom](principal-hom.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Size of an Arakelov divisor](size-hom.md)
+- [Principal divisor homomorphism](principal-hom.md)
 
 ## Proof depends on
 
-- [Size Hom coe](size-hom-coe.md)
-- [Coe principal Divisor fst](coe-principal-divisor-fst.md)
-- [Principal Divisor](principal-divisor.md)
+- [Explicit formula for the size of an Arakelov divisor](size-hom-coe.md)
+- [Finite component of a principal divisor](coe-principal-divisor-fst.md)
+- [Principal Arakelov divisor](principal-divisor.md)
 
 ## Sources
 

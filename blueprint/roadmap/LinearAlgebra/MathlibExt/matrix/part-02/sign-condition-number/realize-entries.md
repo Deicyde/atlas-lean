@@ -14,7 +14,7 @@ all indices $i, j$, the $(i, j)$ entry of the real realization of $A$ is $1$ or 
 
 ## Depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 
 ## Sources

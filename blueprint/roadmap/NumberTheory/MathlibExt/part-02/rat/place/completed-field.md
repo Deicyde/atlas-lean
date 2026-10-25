@@ -6,19 +6,23 @@ statement: formalized
 lean: Rat.Place.CompletedField
 ---
 
-# Completed Field
+# Completed field at a rational place
 
-The completed field `ℚ_v` attached to a place `v`. Coerced from the
-selected bundle.
+**Completed field at a rational place.** For a place $v$ of $\mathbb{Q}$, the completed field
+$\mathbb{Q}_v$ is the field $\mathbb{R}$ of real numbers when $v$ is the infinite place and, when
+$v$ is the finite place at a prime $p$, the field $\mathbb{Q}_p$ of $p$-adic numbers.
+
+It is a complete normed field, with the usual absolute value on $\mathbb{R}$ and the $p$-adic norm
+on $\mathbb{Q}_p$.
 
 ## Depends on
 
-- [Place](place.md)
+- [Places of $\mathbb{Q}$](place.md)
 
 ## Proof depends on
 
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Bundle](bundle.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Bundled completed field at a rational place](bundle.md)
 
 ## Sources
 

@@ -37,7 +37,7 @@ $P_1 Q_1 R_1 = \chi(-q) f_{18}^3 / (\chi(-q^3) f_6^3)$ with $\chi(-q) = (q;q^2)_
 ## Depends on
 
 - [Raw infinite q-Pochhammer product](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Ramanujan Theta Raw](../../../../../../../../NumberTheory/MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
+- [Raw Ramanujan theta sum](../../../../../../../../NumberTheory/MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources
 

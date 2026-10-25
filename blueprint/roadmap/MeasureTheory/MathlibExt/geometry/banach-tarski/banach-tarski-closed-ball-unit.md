@@ -7,19 +7,19 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.banach_tarski_closedBall_unit
 ---
 
-# Banach tarski closed Ball unit
+# Banach–Tarski paradox for the closed unit ball
 
-The closed unit ball at `0` in `EuclideanSpace ℝ (Fin 3)` is finitely equidecomposable by ambient
-bijective isometries with the disjoint union of two closed unit balls `closedBall c₁ 1 ∪
-closedBall c₂ 1` for some centres `c₁ c₂` with `Disjoint`. Source: S. Banach and A. Tarski, Fund.
-Math. 6 (1924) 244–277 original paradox; S. Wagon, The Banach–Tarski Paradox, Cambridge Univ.
-Press (1993); Lean states closed unit ball duplication specialization in ℝ³ with ambient `≃ᵢ`
-equidecomposability.
+**Banach–Tarski paradox for the closed unit ball.** In three-dimensional Euclidean space
+$\mathbb{R}^3$, write $\bar B(c, r)$ for the closed ball of radius $r$ about $c$. There are points
+$c_1, c_2 \in \mathbb{R}^3$ such that $\bar B(c_1, 1)$ and $\bar B(c_2, 1)$ are disjoint and the
+closed unit ball $\bar B(0, 1)$ is finitely equidecomposable by isometries with
+$\bar B(c_1, 1) \cup \bar B(c_2, 1)$.
 
 ## Depends on
 
-- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
+- [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Geometry.BanachTarski](../../../../../sources/v2/MathlibExt.md)
+- S. Banach and A. Tarski, Fund. Math. 6 (1924) 244–277 original paradox; S. Wagon, The Banach–Tarski Paradox, Cambridge Univ. Press (1993); Lean states closed unit ball duplication specialization in ℝ³ with ambient `≃ᵢ` equidecomposability.

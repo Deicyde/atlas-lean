@@ -7,13 +7,14 @@ proof: formalized
 lean: factorialProd_zero
 ---
 
-# Factorial Prod zero
+# Scaled factorial product at index zero
 
-Every scaled factorial at index `0` equals `1`, so the whole product is `1`.
+**Scaled factorial product at index zero.** For every list $L$ of natural numbers,
+$\prod_{a \in L} (a \cdot 0)! = 1$, since every factor equals $0! = 1$.
 
 ## Depends on
 
-- [Factorial Prod](factorial-prod.md)
+- [Product of scaled factorials](factorial-prod.md)
 
 ## Sources
 

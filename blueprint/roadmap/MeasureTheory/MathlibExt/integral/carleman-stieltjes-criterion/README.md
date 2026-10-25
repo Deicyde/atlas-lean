@@ -5,6 +5,6 @@ navigation: module
 
 # Carleman Stieltjes Criterion
 
-- [Summable geometric means](summable-geometric-means.md)
-- [Stieltjes Moment Determinate](stieltjes-moment-determinate.md)
-- [Carleman stieltjes criterion](carleman-stieltjes-criterion.md)
+- [Carleman's inequality, summability form](summable-geometric-means.md)
+- [Stieltjes moment determinacy](stieltjes-moment-determinate.md)
+- [Carleman's criterion for the Stieltjes moment problem](carleman-stieltjes-criterion.md)

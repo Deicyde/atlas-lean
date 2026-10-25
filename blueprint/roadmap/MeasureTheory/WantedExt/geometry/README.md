@@ -1,3 +1,3 @@
 # Geometry
 
-- [Spherical Coordinates Wanted](integral-comp-spherical-symm.md)
+- [Change of variables to spherical coordinates](integral-comp-spherical-symm.md)

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6.A
 ---
 
-# A
+# The tripling sequence of Ramanujan's Entry 6
 
-`A n k = 3 ^ k * n + (3 ^ k - 1) / 2`, the sequence with `A n 0 = n` and
-`A n (k + 1) = 3 * A n k + 1`.
+**The tripling sequence of Ramanujan's Entry 6.** For natural numbers $n$ and $k$, let
+$A(n, k) = 3^k n + (3^k - 1)/2$, a natural number. It is the sequence with $A(n, 0) = n$ and
+$A(n, k + 1) = 3A(n, k) + 1$.
 
 ## Depends on
 

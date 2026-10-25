@@ -6,9 +6,11 @@ statement: formalized
 lean: HilbertSymbol.unitZpToQp
 ---
 
-# Unit Zp To Qp
+# Inclusion of $p$-adic integer units
 
-Inclusion of p-adic integer units into p-adic field units.
+**Inclusion of $p$-adic integer units.** For a prime $p$, this is the map from the units of
+$\mathbb{Z}_p$ to the units of $\mathbb{Q}_p$ induced by the inclusion
+$\mathbb{Z}_p \subseteq \mathbb{Q}_p$.
 
 ## Depends on
 

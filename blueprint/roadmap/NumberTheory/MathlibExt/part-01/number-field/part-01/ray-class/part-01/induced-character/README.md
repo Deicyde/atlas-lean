@@ -5,12 +5,12 @@ navigation: module
 
 # Induced Character
 
-- [Finite Exponent le of dvd](finite-exponent-le-of-dvd.md)
-- [Coprime Inclusion](coprime-inclusion.md)
-- [Of dvd](of-dvd.md)
-- [Map Of Dvd](map-of-dvd.md)
-- [Map Of Dvd ray Class Map](map-of-dvd-ray-class-map.md)
-- [Is Induced By](is-induced-by.md)
-- [Is Induced By iff](is-induced-by-iff.md)
-- [Is Primitive](is-primitive.md)
-- [Is Primitive iff](is-primitive-iff.md)
+- [Exponents of a modulus grow under divisibility](finite-exponent-le-of-dvd.md)
+- [Inclusion of coprime ideal groups under divisibility of moduli](coprime-inclusion.md)
+- [Ray congruence to $1$ passes to divisors of the modulus](of-dvd.md)
+- [Level-change map on ray class groups](map-of-dvd.md)
+- [The level-change map on ray classes](map-of-dvd-ray-class-map.md)
+- [Induced ray class character](is-induced-by.md)
+- [Induced characters agree on coprime ideals](is-induced-by-iff.md)
+- [Primitive ray class character](is-primitive.md)
+- [Primitivity in terms of the level-change map](is-primitive-iff.md)

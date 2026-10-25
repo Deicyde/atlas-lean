@@ -6,11 +6,13 @@ statement: formalized
 lean: NumberField.Modulus.IsUnramifiedOutside
 ---
 
-# Is Unramified Outside
+# Extensions unramified outside a modulus
 
-A number-field extension `L / K` is unramified outside `m` when every finite
-prime of `K` outside the finite support of `m` is unramified in `𝓞 L`, in the
-sense of Mathlib's `Algebra.IsUnramifiedIn`.
+**Extensions unramified outside a modulus.** Let $m$ be a modulus of a number field $K$.
+An extension of number fields $L / K$ is unramified outside $m$ when every finite prime
+$\mathfrak p$ of $K$ not dividing the finite part of $m$ is unramified in $\mathcal O_L$,
+that is, every prime of $\mathcal O_L$ lying over $\mathfrak p$ is unramified over
+$\mathcal O_K$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ a Boolean $n \times n$ matrix whose realization as a real sign matrix equals $C 
 ## Depends on
 
 - [Symmetric conference matrices](is-symmetric-conference.md)
-- [Sign Matrix](../sign-condition-number/sign-matrix.md)
+- [Boolean encoding of sign matrices](../sign-condition-number/sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](../sign-condition-number/realize.md)
 
 ## Proof depends on

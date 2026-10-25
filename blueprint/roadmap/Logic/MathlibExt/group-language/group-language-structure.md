@@ -5,17 +5,20 @@ statement: formalized
 lean: FirstOrder.Language.groupLanguageStructure
 ---
 
-# Group Language Structure
+# The canonical structure on a group
 
-The canonical `groupLanguage`-structure on a group.
+**The canonical structure on a group.** For a group $G$, the canonical structure on $G$ for
+the first-order language of groups interprets the identity constant as the identity $1$ of $G$,
+inversion as $x \mapsto x^{-1}$ and multiplication as $(x, y) \mapsto xy$; there are no
+relation symbols to interpret.
 
 ## Depends on
 
-- [Group Language](group-language.md)
+- [The first-order language of groups](group-language.md)
 
 ## Proof depends on
 
-- [Group Function](group-function.md)
+- [Group function symbols](group-function.md)
 
 ## Sources
 

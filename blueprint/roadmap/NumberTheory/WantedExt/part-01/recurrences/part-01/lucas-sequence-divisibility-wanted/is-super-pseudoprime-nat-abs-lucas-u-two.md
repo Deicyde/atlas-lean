@@ -16,7 +16,7 @@ For nondegenerate `U(P, Q)` with `gcd(P, Q) = 1` and a prime `p ≥ 5` with
 ## Depends on
 
 - [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Is Super Pseudoprime](is-super-pseudoprime.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)

@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta
 ---
 
-# Ramanujan Theta
+# Ramanujan's general theta function
 
-Ramanujan's general theta function, restricted to summable parameters.
+**Ramanujan's general theta function.** For complex numbers $a$ and $b$ such that the series
+$\sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ is summable, Ramanujan's general theta
+function is its sum $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$.
 
 ## Depends on
 
-- [Ramanujan Theta Term](ramanujan-theta-term.md)
+- [Summand of Ramanujan's general theta function](ramanujan-theta-term.md)
 
 ## Proof depends on
 
-- [Ramanujan Theta Raw](ramanujan-theta-raw.md)
+- [Raw Ramanujan theta sum](ramanujan-theta-raw.md)
 
 ## Sources
 

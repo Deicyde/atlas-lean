@@ -6,24 +6,28 @@ proof: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.continuousMinimumOverlapConstant_le_half
 ---
 
-# Continuous Minimum Overlap Constant le half
+# The continuous minimum-overlap constant is at most $1/2$
 
-The half-height support indicator bounds the universal minimum-overlap constant.
+**The continuous minimum-overlap constant is at most $1/2$.** The continuous Erdős
+minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 1/2$.
+
+The bound is witnessed by the admissible pair $f = g$ with value $1/2$ on $[-1, 1]$ and $0$
+elsewhere.
 
 ## Depends on
 
-- [C₁ᵦ](c.md)
+- [Notation $C_{1b}$](c.md)
 
 ## Proof depends on
 
-- [Continuous Admissible](continuous-admissible.md)
-- [Continuous Universal Lower Bound](continuous-universal-lower-bound.md)
-- [Continuous Overlap](continuous-overlap.md)
-- [Continuous Overlap Integrand](continuous-overlap-integrand.md)
-- [Continuous Overlap Values](continuous-overlap-values.md)
-- [Continuous Pair Score](continuous-pair-score.md)
-- [Continuous Support Interval](continuous-support-interval.md)
-- [Continuous Translation Interval](continuous-translation-interval.md)
+- [Admissible pairs for the continuous minimum-overlap problem](continuous-admissible.md)
+- [Universal lower bound in the continuous overlap model](continuous-universal-lower-bound.md)
+- [Continuous overlap](continuous-overlap.md)
+- [Continuous overlap integrand](continuous-overlap-integrand.md)
+- [Continuous overlap values](continuous-overlap-values.md)
+- [Continuous pair score](continuous-pair-score.md)
+- [Continuous support interval](continuous-support-interval.md)
+- [Translation interval of the continuous overlap model](continuous-translation-interval.md)
 
 ## Sources
 

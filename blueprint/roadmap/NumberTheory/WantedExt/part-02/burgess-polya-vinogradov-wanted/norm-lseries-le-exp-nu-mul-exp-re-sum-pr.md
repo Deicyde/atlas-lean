@@ -14,7 +14,7 @@ here as its prime-series form `∑_p (-log(1 - 1/p) - 1/p)` (the identity used i
 
 ## Depends on
 
-- [Is Completely Multiplicative](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
+- [Completely multiplicative arithmetic function](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
 
 ## Sources
 

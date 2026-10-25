@@ -24,13 +24,13 @@ the clause marker followed by the items of $\varphi$, followed by the row bits o
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Walked items of a formula](items.md)
 - [Rows pushed for a clause's literals](lrows.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

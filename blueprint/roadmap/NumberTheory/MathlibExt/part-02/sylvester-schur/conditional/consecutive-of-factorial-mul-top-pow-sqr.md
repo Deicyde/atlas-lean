@@ -7,10 +7,12 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_top_pow_sqrt_mul_primorial_lt_start_pow
 ---
 
-# Consecutive of factorial mul top pow sqrt mul primorial lt start pow
+# Square-root and primorial criterion for a large prime in a consecutive block
 
-Conditional consecutive form using the split `sqrt/primorial` factorization estimate and
-the elementary lower bound `k ^ n / n! ≤ Nat.choose (k+n-1) n`.
+**Square-root and primorial criterion for a large prime in a consecutive block.** Let
+$1 \le n < k$ be natural numbers, write $N = k + n - 1$, and let $P(n)$ denote the product of all
+primes at most $n$. If $n! \cdot N^{\lfloor \sqrt{N} \rfloor + 1} \cdot P(n) < k^n$, then some prime
+$p > n$ divides one of the integers $k, k+1, \dots, k+n-1$.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
-- [Exists large prime dvd choose of factorial mul top pow sqrt mul primorial lt lower pow](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-3.md)
+- [From a large prime divisor of the binomial coefficient to one in the block](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+- [Large-prime criterion from the square-root split bound](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-3.md)
 
 ## Sources
 

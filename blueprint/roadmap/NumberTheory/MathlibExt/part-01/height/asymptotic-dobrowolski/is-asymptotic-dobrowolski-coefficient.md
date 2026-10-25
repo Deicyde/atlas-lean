@@ -6,9 +6,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.IsAsymptoticDobrowolskiCoefficient
 ---
 
-# Is Asymptotic Dobrowolski Coefficient
+# Asymptotic Dobrowolski coefficients
 
-The degree threshold depends on epsilon and is uniform over eligible algebraic numbers.
+**Asymptotic Dobrowolski coefficients.** A real number $c$ is an asymptotic Dobrowolski
+coefficient if for every $\varepsilon > 0$ there is a natural number $D \ge 3$ such that every
+nonzero algebraic number $\alpha \in \mathbb{C}$ that is not a root of unity and whose minimal
+polynomial over $\mathbb{Q}$ has degree $d \ge D$ satisfies
+
+$$1 + (c - \varepsilon) \left(\frac{\log \log d}{\log d}\right)^3 \le M(\alpha),$$
+
+where $M(\alpha)$ is the Mahler measure of $\alpha$.
+
+The degree threshold $D$ may depend on $\varepsilon$ but is uniform over all such $\alpha$.
 
 ## Depends on
 
@@ -16,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dobrowolski Scale](dobrowolski-scale.md)
-- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
+- [Dobrowolski scale](dobrowolski-scale.md)
+- [Algebraic Mahler measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

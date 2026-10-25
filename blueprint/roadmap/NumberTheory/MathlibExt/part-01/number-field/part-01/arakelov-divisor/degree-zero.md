@@ -6,17 +6,19 @@ statement: formalized
 lean: NumberField.degreeZero
 ---
 
-# Degree Zero
+# Degree-zero Arakelov divisors
 
-The degree-zero subgroup: the kernel of the size homomorphism.
+**Degree-zero Arakelov divisors.** For a number field $K$, the degree-zero subgroup of the
+group of Arakelov divisors on $K$ is the kernel of the size homomorphism, that is, the subgroup
+of Arakelov divisors of size $1$.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Proof depends on
 
-- [Size Hom](size-hom.md)
+- [Size of an Arakelov divisor](size-hom.md)
 
 ## Sources
 

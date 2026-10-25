@@ -7,10 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry1.ramanujan_part1_ch2_entry1_general
 ---
 
-# Ramanujan part1 ch2 entry1 general
+# Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$, including $n = 0$
 
-`ramanujan_part1_ch2_entry1` without the hypothesis `0 < n`; the statement also holds at `n =
- 0`.
+**Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$, including $n = 0$.** For every natural
+number $n$,
+
+$$\sum_{k=1}^{n} \frac{1}{n+k} = \frac{n}{2n+1} + \sum_{k=1}^{n} \frac{1}{(2k)^3 - 2k}.$$
+
+This is Ramanujan's Entry 1 of Chapter 2 without the hypothesis $n \ge 1$; at $n = 0$ both sides
+are $0$.
 
 ## Depends on
 

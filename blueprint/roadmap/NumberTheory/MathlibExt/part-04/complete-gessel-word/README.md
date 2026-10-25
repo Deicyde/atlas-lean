@@ -5,5 +5,5 @@ navigation: module
 
 # Complete Gessel Word
 
-- [Is Complete Gessel Word](is-complete-gessel-word.md)
-- [Is Complete Gessel Word iff balance eq zero](is-complete-gessel-word-iff-balance-eq-z.md)
+- [Complete Gessel words](is-complete-gessel-word.md)
+- [Complete Gessel words are the Gessel words of zero balance](is-complete-gessel-word-iff-balance-eq-z.md)

@@ -5,6 +5,6 @@ navigation: module
 
 # Finite Lies Over Residue Naturality
 
-- [Ring Of Integers Residue Quotient Map](ring-of-integers-residue-quotient-map.md)
-- [Adic Completion Residue Quotient Map](adic-completion-residue-quotient-map.md)
-- [Completion Residue Field Equiv naturality](completion-residue-field-equiv-naturalit.md)
+- [Residue map of rings of integers](ring-of-integers-residue-quotient-map.md)
+- [Residue map of completed integer rings](adic-completion-residue-quotient-map.md)
+- [Naturality of the residue field identifications](completion-residue-field-equiv-naturalit.md)

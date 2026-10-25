@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.DualFeasible
 ---
 
-# Dual Feasible
+# Dual feasible pair of potentials
 
-Dual feasibility: continuous `φ`, `ψ` with `φ x + ψ y ≤ c (x,y)`.
+**Dual feasible pair of potentials.** Let $X$ and $Y$ be topological spaces and let
+$c : X \times Y \to \mathbb{R}$. A pair of functions $\varphi : X \to \mathbb{R}$ and
+$\psi : Y \to \mathbb{R}$ is dual feasible for the cost $c$ when $\varphi$ and $\psi$ are
+continuous and $\varphi(x) + \psi(y) \le c(x, y)$ for all $x \in X$ and $y \in Y$.
 
 ## Depends on
 

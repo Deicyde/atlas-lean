@@ -7,14 +7,16 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_natDegree
 ---
 
-# Positive Primitive Int Minpoly nat Degree
+# Sign normalization preserves the degree
 
-Sign normalization preserves the canonical primitive polynomial's degree.
+**Sign normalization preserves the degree.** For every element $x$ of a field $K$ that is an
+algebra over $\mathbb{Q}$, the positive primitive integral minimal polynomial of $x$ has the same
+degree as the primitive integral minimal polynomial of $x$.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
-- [Absolute](../primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

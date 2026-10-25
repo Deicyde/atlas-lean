@@ -7,12 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14Cor1Catalanpowerseries.ramanujan_part1_ch3_entry14_cor1_catalanpowerseries
 ---
 
-# Part1 Ch3 Entry14 Cor1 Catalanpowerseries
+# Ramanujan's series for powers of the Catalan generating function
 
-Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 14, Corollary 1, printed p.
-    71; scan PDF p. 81.
+**Ramanujan's series for powers of the Catalan generating function.** Let $n$ and $a$ be real
+numbers with $|a| \le 1/4$. For a natural number $k$ put $t_k = 0$ if $k < 2$, and
 
-Proves `Wanted` entry `ramanujan_part1_ch3_entry14_cor1_catalanpowerseries`.
+$$t_k = \frac{a^k}{k!} \prod_{j=k+1}^{2k-1} (n + j)$$
+
+if $k \ge 2$. Then the series $\sum_k t_k$ is summable and
+
+$$\left(\frac{2}{1 + \sqrt{1 - 4a}}\right)^{n} = 1 + n a + n \sum_{k=0}^{\infty} t_k.$$
 
 ## Depends on
 
@@ -25,3 +29,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry14Cor1Catalanpowerseries](../../../../../../sources/v2/MathlibExt.md)
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 14, Corollary 1, printed p. 71; scan PDF p. 81.

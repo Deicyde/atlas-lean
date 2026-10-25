@@ -25,7 +25,7 @@ This node has no prerequisites.
 - [Clause check against an occurrence table](../sat-verifier-spec/check-spec.md)
 - [Occurrence table of a formula and a witness](../sat-verifier-spec/ents.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

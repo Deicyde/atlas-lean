@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.young_reverse_multiple_carry_path_iff
 ---
 
-# Young reverse multiple carry path iff
+# Carry equations for reverse multiples
 
-Carry recurrence for reverse multiples: a `(g, k)` reverse multiple in
-little-endian base-`g` digits holds exactly when there is a unique carry
-sequence `r` with `r 0 = 0`, `r n = 0`, every carry below `k`, and the column
-equations `k * a i + r i = a (n - 1 - i) + r (i + 1) * g`; `r (i + 1)` is the
-source's `r_i`. The Young graph `H(g, k)`, its paths and the even/odd pivot-node
-correspondence of Young's theorem (`thm:youngsthm`, lines 192–196) are not
-formalized here.
+**Carry equations for reverse multiples.** Let $g, k, n$ be natural numbers with
+$2 \le k < g$ and $n \ge 1$, and let $a_0, \dots, a_{n-1}$ be natural numbers with $a_i < g$ for
+every $i$, $a_{n-1} \ne 0$ and $a_0 \ne 0$. Then $k \sum_{i\lt n} a_i g^i = \sum_{i\lt n} a_{n-1-i} g^i$,
+that is, $k$ times the number with base-$g$ digits $a_{n-1}, \dots, a_0$ (most significant first)
+equals the number with these digits reversed, if and only if there is a unique sequence of natural
+numbers $r_0, \dots, r_n$ with $r_0 = 0$, $r_n = 0$ and, for every $i < n$, $r_{i+1} < k$ and
+$k a_i + r_i = a_{n-1-i} + r_{i+1} g$.
+
+The carry $r_{i+1}$ here is the source's $r_i$.
 
 ## Depends on
 
@@ -23,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Young reverse multiple carry path iff general](young-reverse-multiple-carry-path-iff-ge.md)
+- [Carry equations for reverse multiples, general form](young-reverse-multiple-carry-path-iff-ge.md)
 
 ## Sources
 

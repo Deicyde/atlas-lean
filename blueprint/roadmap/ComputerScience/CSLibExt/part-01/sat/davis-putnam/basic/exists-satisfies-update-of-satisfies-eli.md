@@ -15,7 +15,7 @@ $x$ to $b$ satisfies $\varphi$.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Davis-Putnam elimination of a variable](eliminate.md)
 
@@ -24,10 +24,10 @@ $x$ to $b$ satisfies $\varphi$.
 - [Resolvents do not mention the resolved variable](fst-ne-of-mem-resolvent.md)
 - [Clauses containing a variable only negatively](neg-clauses.md)
 - [Clauses containing a variable only positively](pos-clauses.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

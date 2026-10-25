@@ -25,7 +25,7 @@ directions and is omitted. For `(a, b) = (-10, -1)` only `s₀ = 1` is admissibl
 
 ## Depends on
 
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas Period Set](lucas-period-set.md)
 - [Lucas UPeriod](lucas-uperiod.md)

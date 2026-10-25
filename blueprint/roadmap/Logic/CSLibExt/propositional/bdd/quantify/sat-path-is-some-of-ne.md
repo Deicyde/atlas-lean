@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.satPath_isSome_of_ne
 ---
 
-# Sat Path is Some of ne
+# Reduced diagrams other than false have a satisfying path
 
-A reduced diagram other than `leaf false` has a satisfying path.
+**Reduced diagrams other than false have a satisfying path.** If a binary decision diagram
+$t$ is reduced and is not the leaf $\mathrm{false}$, then the search for a satisfying path in $t$
+succeeds: it returns a path from the root of $t$ to a leaf $\mathrm{true}$.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Reduced](../basic/reduced.md)
-- [Sat Path](sat-path.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Satisfying path of a binary decision diagram](sat-path.md)
 
 ## Sources
 

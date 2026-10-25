@@ -6,17 +6,17 @@ statement: formalized
 lean: Rat.Place.absoluteValue
 ---
 
-# Absolute Value
+# Absolute value at a rational place
 
-Normalised real-valued absolute value attached to a place.
-
-Reuses `Rat.AbsoluteValue.real` at infinity and `Rat.AbsoluteValue.padic`
-at a finite prime. `Rat.AbsoluteValue.padic` takes `[Fact p.Prime]`,
-so the proof in `prime` is turned into a local `Fact` dictionary.
+**Absolute value at a rational place.** For a place $v$ of $\mathbb{Q}$, the absolute value
+$|\cdot|_v : \mathbb{Q} \to \mathbb{R}$ sends $q \in \mathbb{Q}$ to the ordinary absolute value
+$|q|$ when $v$ is the infinite place. When $v$ is the finite place at a prime $p$, it sends $q$ to
+the normalised $p$-adic absolute value $|q|_p$, where $|0|_p = 0$ and $|q|_p = p^{-v_p(q)}$ for
+$q \neq 0$, with $v_p(q)$ the $p$-adic valuation of $q$.
 
 ## Depends on
 
-- [Place](place.md)
+- [Places of $\mathbb{Q}$](place.md)
 
 ## Sources
 

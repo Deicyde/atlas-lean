@@ -6,19 +6,22 @@ statement: formalized
 lean: NumberField.Modulus.residueSignMap
 ---
 
-# Residue Sign Map
+# Residue-sign map
 
-Combined residue-sign homomorphism on ray elements.
+**Residue-sign map.** Let $m$ be a modulus of a number field $K$. The residue-sign map of $m$
+is the group homomorphism from the ray elements of $m$ to the residue-sign target of $m$ that
+sends a ray element $x$ to the pair formed by the image of $x$ under the infinite sign map of $m$
+and the image of $x$ under the finite residue map of $m$.
 
 ## Depends on
 
-- [Residue Sign Target](residue-sign-target.md)
-- [Ray Elements](../ray-group/ray-elements.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
-- [Infinite Sign Map](../../part-01/infinite-sign/infinite-sign-map.md)
+- [Finite residue map](../../part-01/finite-congruence/finite-residue-map.md)
+- [Infinite sign map of a modulus](../../part-01/infinite-sign/infinite-sign-map.md)
 
 ## Sources
 

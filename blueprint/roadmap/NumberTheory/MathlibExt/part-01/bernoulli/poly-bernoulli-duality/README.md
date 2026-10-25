@@ -5,5 +5,5 @@ navigation: module
 
 # Poly Bernoulli Duality
 
-- [Poly Bernoulli](poly-bernoulli.md)
-- [Arakawa kaneko duality](arakawa-kaneko-duality.md)
+- [Poly-Bernoulli numbers](poly-bernoulli.md)
+- [Arakawa–Kaneko duality for poly-Bernoulli numbers](arakawa-kaneko-duality.md)

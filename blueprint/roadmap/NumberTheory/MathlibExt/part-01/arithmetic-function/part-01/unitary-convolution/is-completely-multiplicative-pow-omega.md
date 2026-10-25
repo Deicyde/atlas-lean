@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.isCompletelyMultiplicative_powOmega
 ---
 
-# Is Completely Multiplicative pow Omega
+# Complete multiplicativity of $c^{\Omega}$
 
-`c ^ Ω` is completely multiplicative.
+**Complete multiplicativity of $c^{\Omega}$.** Let $R$ be a monoid with zero and $c \in R$.
+Let $c^{\Omega}$ be the arithmetic function $n \mapsto c^{\Omega(n)}$ for $n \ge 1$, where
+$\Omega(n)$ is the number of prime factors of $n$ counted with multiplicity. Then $c^{\Omega}$ is
+completely multiplicative: for all natural numbers $m$ and $n$, its value at $mn$ is the product
+of its values at $m$ and at $n$.
 
 ## Depends on
 
-- [Is Completely Multiplicative](../completely-multiplicative/is-completely-multiplicative.md)
-- [Pow Omega](pow-omega.md)
+- [Completely multiplicative arithmetic function](../completely-multiplicative/is-completely-multiplicative.md)
+- [The arithmetic function $c^{\Omega}$](pow-omega.md)
 
 ## Proof depends on
 
-- [Pow Omega apply](pow-omega-apply.md)
+- [Value of $c^{\Omega}$ at a positive integer](pow-omega-apply.md)
 
 ## Sources
 

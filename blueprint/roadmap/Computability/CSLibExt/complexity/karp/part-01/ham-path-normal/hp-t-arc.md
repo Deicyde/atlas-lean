@@ -17,8 +17,8 @@ ends $r_{i,0}$ and $r_{i,3m}$ of the row of diamond $i$.
 - [Arcs of the HAMPATH construction](../ham-path/ham-edges.md)
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

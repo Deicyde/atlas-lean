@@ -7,9 +7,9 @@ navigation: module
 
 ## Algebraic reductions
 
-- [Sqrt le div fifteen of le four mul](sqrt-le-div-fifteen-of-le-four-mul.md)
-- [Nth Root three mul log le one fifth of le four mul](nth-root-three-mul-log-le-one-fifth-of-l.md)
+- [Square root bound on a linear range](sqrt-le-div-fifteen-of-le-four-mul.md)
+- [Cube root times logarithm on a linear range](nth-root-three-mul-log-le-one-fifth-of-l.md)
 
 ## Range dispatch
 
-- [First residual large scaled ternary bound](first-residual-large-scaled-ternary-boun.md)
+- [Scaled ternary bound for the first residual estimate](first-residual-large-scaled-ternary-boun.md)

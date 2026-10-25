@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Logic.PL.MaximalConsistent.mem_of_derivableIn
 ---
 
-# Mem of derivable In
+# Maximal consistent sets are deductively closed
 
-A maximal consistent set is closed under `T`-derivability from its finite subsets.
+**Maximal consistent sets are deductively closed.** Let $T$ be a theory and $M$ a maximal set
+of propositions consistent relative to $T$. If $\Gamma$ is a finite subset of $M$ and the sequent
+$\Gamma \vdash A$ is derivable in natural deduction from $T$, then $A \in M$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A maximal consistent set is closed under `T`-derivability from its finite subset
 
 ## Proof depends on
 
-- [Exists refutation](exists-refutation.md)
+- [Propositions outside a maximal consistent set are refuted by it](exists-refutation.md)
 
 ## Sources
 

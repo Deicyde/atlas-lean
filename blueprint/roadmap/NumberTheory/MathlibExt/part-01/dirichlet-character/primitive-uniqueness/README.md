@@ -5,6 +5,6 @@ navigation: module
 
 # Primitive Uniqueness
 
-- [Conductor eq of is Primitive change Level](conductor-eq-of-is-primitive-change-leve.md)
-- [Eq primitive Character of change Level eq](eq-primitive-character-of-change-level-e.md)
-- [Primitive Character is Primitive and unique](primitive-character-is-primitive-and-uni.md)
+- [The level of a primitive inducer is the conductor](conductor-eq-of-is-primitive-change-leve.md)
+- [An inducer at the conductor level is the primitive character](eq-primitive-character-of-change-level-e.md)
+- [Existence and uniqueness of the primitive character inducing a Dirichlet character](primitive-character-is-primitive-and-uni.md)

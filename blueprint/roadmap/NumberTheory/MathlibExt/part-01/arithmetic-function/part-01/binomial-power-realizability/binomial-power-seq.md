@@ -6,16 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.binomialPowerSeq
 ---
 
-# Binomial Power Seq
+# Binomial-power sequences
 
-Realizability of binomial-power sequences (Apéry, Delannoy, Franel).
+**Binomial-power sequences.** For natural numbers $r$, $s$ and $n$, the binomial-power number
+$A_{r,s}(n)$ is the natural number
 
-`binomialPowerSeq r s n = ∑_k C(n,k)^r C(n+k,k)^s` over `k ≤ n`, whose
-specializations include the Apéry numbers (`r = s = 2`), central Delannoy
-numbers (`r = s = 1`), and Franel numbers of order `r` (`s = 0`).
-`doldRealizable` is the Möbius criterion: `(μ*a)(n)` is non-negative and
-divisible by `n` for all `n ≥ 1`. The wanted theorem is realizability for
-every `s ≥ 0` and `r ≥ 1`.
+$$A_{r,s}(n) = \sum_{k=0}^{n} \binom{n}{k}^r \binom{n+k}{k}^s.$$
+
+Special cases include the central Delannoy numbers ($r = s = 1$), the Apéry numbers
+($r = s = 2$) and the Franel numbers of order $r$ ($s = 0$).
 
 ## Depends on
 

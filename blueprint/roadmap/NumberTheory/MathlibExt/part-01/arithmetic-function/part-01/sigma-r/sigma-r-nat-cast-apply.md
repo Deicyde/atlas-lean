@@ -7,18 +7,19 @@ proof: formalized
 lean: ArithmeticFunction.sigmaR_natCast_apply
 ---
 
-# Sigma R nat Cast apply
+# Natural exponents give the classical divisor function
 
-At a natural exponent, `sigmaR` agrees with Mathlib's divisor-power sum after coercion to
-`ℂ`.
+**Natural exponents give the classical divisor function.** For all natural numbers $k$ and
+$n$, the value at $n$ of the complex-exponent divisor sum $\sum_{d \mid n} d^s$ with $s = k$
+equals the natural number $\sigma_k(n) = \sum_{d \mid n} d^k$, viewed as a complex number.
 
 ## Depends on
 
-- [Sigma R](sigma-r.md)
+- [Divisor-power sum with complex exponent](sigma-r.md)
 
 ## Proof depends on
 
-- [Sigma R apply](sigma-r-apply.md)
+- [Divisor-sum formula for the complex-exponent divisor sum](sigma-r-apply.md)
 
 ## Sources
 

@@ -13,11 +13,11 @@ Truncated `G9r` values are at most `3`.
 
 ## Depends on
 
-- [G9r](g9r.md)
+- [Continuous Breusch function](g9r.md)
 
 ## Proof depends on
 
-- [G9r le3](g9r-le3.md)
+- [The continuous Breusch function is at most 3](g9r-le3.md)
 
 ## Sources
 

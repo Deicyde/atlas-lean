@@ -7,19 +7,21 @@ proof: formalized
 lean: analyticOn_abelContinuation
 ---
 
-# Analytic On abel Continuation
+# Analyticity of the Abel continuation
 
-The Abel continuation is analytic on the half-plane `σ < s.re`,
-for arbitrary real `σ`.
+**Analyticity of the Abel continuation.** Let $f : \mathbb{N} \to \mathbb{C}$ have partial sums
+$A(n) = \sum_{k=1}^{n} f(k)$, and let $\sigma$ be a real number with $A(n) = O(n^\sigma)$ as
+$n \to \infty$. Then the Abel continuation $F_f$ of $f$ is analytic on the half-plane
+$\{s \in \mathbb{C} : \operatorname{Re} s > \sigma\}$.
 
 ## Depends on
 
-- [Abel Continuation](abel-continuation.md)
-- [Abel Partial Sum](abel-partial-sum.md)
+- [Abel continuation of a Dirichlet series](abel-continuation.md)
+- [Partial sums of a coefficient sequence](abel-partial-sum.md)
 
 ## Proof depends on
 
-- [Differentiable At abel Continuation](differentiable-at-abel-continuation.md)
+- [Complex differentiability of the Abel continuation](differentiable-at-abel-continuation.md)
 
 ## Sources
 

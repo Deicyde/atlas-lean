@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.IsEvenPseudoprime.modeq
 ---
 
-# Modeq
+# Fermat congruence for even pseudoprimes
 
-An even pseudoprime satisfies the base-two Fermat congruence.
+**Fermat congruence for even pseudoprimes.** If $N$ is an even pseudoprime, then
+$2^N \equiv 2 \pmod{N}$.
 
 ## Depends on
 
-- [Is Even Pseudoprime](is-even-pseudoprime.md)
+- [Even pseudoprime](is-even-pseudoprime.md)
 
 ## Sources
 

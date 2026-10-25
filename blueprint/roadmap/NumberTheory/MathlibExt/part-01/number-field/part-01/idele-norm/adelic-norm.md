@@ -12,10 +12,10 @@ The adelic norm of an idele: archimedean factor times finite finprod factor.
 
 ## Depends on
 
-- [Finite Idele Group](../idele/finite-idele-group.md)
-- [Infinite Idele Group](../idele/infinite-idele-group.md)
-- [Topological Idele Group](../idele/topological-idele-group.md)
-- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
+- [Finite idele group](../idele/finite-idele-group.md)
+- [Infinite idele group](../idele/infinite-idele-group.md)
+- [Topological idele group](../idele/topological-idele-group.md)
+- [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 
 ## Sources
 

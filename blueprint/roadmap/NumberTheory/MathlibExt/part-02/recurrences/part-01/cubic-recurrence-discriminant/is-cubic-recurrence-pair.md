@@ -6,14 +6,18 @@ statement: formalized
 lean: MetaMathlibExt.IsCubicRecurrencePair
 ---
 
-# Is Cubic Recurrence Pair
+# Cubic recurrence pair
 
-A pair of integer sequences satisfying the source's explicit algebraic
-definitions. The witnesses `γ₁, γ₂, γ₃` are the distinct nonunit parameters
-whose product is one and whose associated `R * (γᵢ + γᵢ⁻¹)` values are the
-three roots of the source cubic. The equations then determine every value of
-`U` and `W`; the `U` equation is denominator-cleared and starts at `n = 1`,
-while `U 0 = 0` is specified separately.
+**Cubic recurrence pair.** Integer sequences $U$ and $W$ form a cubic recurrence pair for
+integers $S_1, S_2, R$ when there are pairwise distinct complex numbers $\gamma_1, \gamma_2,
+\gamma_3$, each different from $1$, with $\gamma_1\gamma_2\gamma_3 = 1$, such that each
+$\gamma_i$ satisfies the cubic recurrence root condition for $(S_1, S_2, R)$, $U_0 = 0$,
+$U_n(1 - \gamma_1)(1 - \gamma_2)(1 - \gamma_3) = R^{n-1}(1 - \gamma_1^n)(1 - \gamma_2^n)
+(1 - \gamma_3^n)$ for every $n \ge 1$, and
+$W_n = R^n\bigl((1 + \gamma_1^n)(1 + \gamma_2^n)(1 + \gamma_3^n) - 2\bigr)$ for every $n \ge 0$.
+
+These equations determine every value of $U$ and $W$; the equation for $U_n$ is the source's
+formula with its denominator $(1 - \gamma_1)(1 - \gamma_2)(1 - \gamma_3)$ cleared.
 
 ## Depends on
 
@@ -21,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cubic Recurrence Root Condition](cubic-recurrence-root-condition.md)
+- [Root condition for the Roettger–Williams cubic](cubic-recurrence-root-condition.md)
 
 ## Sources
 

@@ -13,16 +13,16 @@ equal.
 
 ## Depends on
 
-- [BDD](bdd.md)
-- [Ordered From](ordered-from.md)
-- [Reduced](reduced.md)
-- [Eval](eval.md)
+- [Binary decision diagram](bdd.md)
+- [Diagrams ordered from a variable](ordered-from.md)
+- [Reduced diagrams](reduced.md)
+- [Evaluation of a binary decision diagram](eval.md)
 
 ## Proof depends on
 
-- [Eval update node](eval-update-node.md)
-- [Eval update of lt](eval-update-of-lt.md)
-- [Size](size.md)
+- [Fixing the top variable of an ordered node](eval-update-node.md)
+- [Independence from variables below the order](eval-update-of-lt.md)
+- [Size of a diagram](size.md)
 
 ## Sources
 

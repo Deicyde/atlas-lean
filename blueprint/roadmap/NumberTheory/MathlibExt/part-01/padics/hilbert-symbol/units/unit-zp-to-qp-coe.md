@@ -7,13 +7,16 @@ proof: formalized
 lean: HilbertSymbol.unitZpToQp_coe
 ---
 
-# Unit Zp To Qp coe
+# Value of the inclusion of $p$-adic integer units
 
-Image of `unitZpToQp u` agrees with inclusion of `u`.
+**Value of the inclusion of $p$-adic integer units.** For a prime $p$ and a unit $u$ of
+$\mathbb{Z}_p$, the image of $u$ under the inclusion of the units of $\mathbb{Z}_p$ into the units
+of $\mathbb{Q}_p$, viewed as an element of $\mathbb{Q}_p$, equals $u$ viewed as an element of
+$\mathbb{Q}_p$.
 
 ## Depends on
 
-- [Unit Zp To Qp](unit-zp-to-qp.md)
+- [Inclusion of $p$-adic integer units](unit-zp-to-qp.md)
 
 ## Sources
 

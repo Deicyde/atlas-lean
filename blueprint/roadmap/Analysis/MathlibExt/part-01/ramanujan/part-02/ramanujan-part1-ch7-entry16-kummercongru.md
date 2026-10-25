@@ -25,11 +25,11 @@ $$\frac{\varphi_r(x-1) + \varphi_r(-x) - 2\zeta(-r)}{4\,\Gamma(r+1)}
 
 ## Proof depends on
 
-- [Abel Continuation](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-continuation.md)
+- [Abel continuation of a Dirichlet series](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-continuation.md)
 - [Abel Continuation eq LSeries](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-continuation-eq-lseries.md)
-- [Abel Partial Sum](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-partial-sum.md)
-- [Analytic On abel Continuation](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/analytic-on-abel-continuation.md)
-- [Tendsto abel Continuation Icc](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/tendsto-abel-continuation-icc.md)
+- [Partial sums of a coefficient sequence](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-partial-sum.md)
+- [Analyticity of the Abel continuation](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/analytic-on-abel-continuation.md)
+- [Abel continuation as the limit of Dirichlet partial sums](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/tendsto-abel-continuation-icc.md)
 
 ## Sources
 

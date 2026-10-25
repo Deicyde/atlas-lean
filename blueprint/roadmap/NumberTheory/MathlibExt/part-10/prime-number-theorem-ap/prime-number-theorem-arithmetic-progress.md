@@ -20,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Counting sub theta div log is Little O](../../part-02/prime-counting/part-01/chebyshev/prime-counting-sub-theta-div-log-is-litt.md)
-- [Psi Residue Class](../../part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
-- [Tendsto psi Residue Class div self](../../part-02/prime-counting/part-02/weak-pntarithmetic-progression/tendsto-psi-residue-class-div-self.md)
+- [Prime counting versus theta over log](../../part-02/prime-counting/part-01/chebyshev/prime-counting-sub-theta-div-log-is-litt.md)
+- [Chebyshev's function in a residue class](../../part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
+- [Prime number theorem for Chebyshev's function in a reduced residue class](../../part-02/prime-counting/part-02/weak-pntarithmetic-progression/tendsto-psi-residue-class-div-self.md)
 
 ## Sources
 

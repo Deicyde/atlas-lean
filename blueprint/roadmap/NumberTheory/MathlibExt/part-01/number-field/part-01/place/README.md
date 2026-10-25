@@ -6,13 +6,13 @@ navigation: module
 
 ## Number Field
 
-- [Place](place.md)
+- [Places of a number field](place.md)
 
 ## Place
 
-- [Infinite Place](infinite-place.md)
-- [Finite Place](finite-place.md)
+- [Infinite places as places](infinite-place.md)
+- [Finite places as places](finite-place.md)
 
 ## Finite Place
 
-- [Residue Norm](residue-norm.md)
+- [Residue norm of a finite place](residue-norm.md)

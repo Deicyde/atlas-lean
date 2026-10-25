@@ -7,21 +7,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_vanish
 ---
 
-# G9r vanish
+# The continuous Breusch function vanishes near zero
 
-`G9r` vanishes on `[0, 1 / 2100)`.
+**The continuous Breusch function vanishes near zero.** For every real $x$ with
+$0 \le x < 1/2100$, the continuous Breusch function $G$ satisfies $G(x) = 0$.
 
 ## Depends on
 
-- [G9r](g9r.md)
-- [Q9](../grid/q9.md)
+- [Continuous Breusch function](g9r.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [G9](../grid/g9.md)
-- [G9 zero9](g9-zero9.md)
-- [G9r eq grid](g9r-eq-grid.md)
-- [Q9 eq](../lower/q9-eq.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
+- [The Breusch grid function vanishes below 9](g9-zero9.md)
+- [The continuous Breusch function agrees with the grid function](g9r-eq-grid.md)
+- [Value of Q₉](../lower/q9-eq.md)
 
 ## Sources
 

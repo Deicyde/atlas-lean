@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.choose3_mul_choose2
 ---
 
-# Choose3 mul choose2
+# Binomial factorization of the factorial of a multiple of three
 
-Binomial-factor identity for `(3 * t)!`.
+**Binomial factorization of the factorial of a multiple of three.** For every natural
+number $t$, $\binom{3t}{t} \binom{2t}{t} (t!)^3 = (3t)!$.
 
 ## Depends on
 

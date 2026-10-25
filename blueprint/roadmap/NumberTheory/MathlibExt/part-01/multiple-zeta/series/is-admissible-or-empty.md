@@ -6,19 +6,21 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.IsAdmissibleOrEmpty
 ---
 
-# Is Admissible Or Empty
+# Admissible or empty index
 
-An index on which the ordinary strict multiple-zeta value is defined: either admissible or the
-empty index.
+**Admissible or empty index.** A multiple-zeta index is admissible or empty when it is
+admissible (nonempty with first entry at least two) or has depth zero, that is, has no entries.
+
+The strict multiple-zeta value and the multiple-zeta-star value are defined on these indices.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Proof depends on
 
-- [Is Admissible](../index/is-admissible.md)
-- [Depth](../index/depth.md)
+- [Admissible index](../index/is-admissible.md)
+- [Depth of an index](../index/depth.md)
 
 ## Sources
 

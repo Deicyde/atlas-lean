@@ -7,14 +7,15 @@ proof: formalized
 lean: Nat.isCarmichaelNumber_iff_zmod
 ---
 
-# Is Carmichael Number iff zmod
+# Carmichael numbers via the residue ring
 
-The universal congruence in the definition of a Carmichael number, expressed for every
-element of `ZMod n`.
+**Carmichael numbers via the residue ring.** A natural number $n$ is a Carmichael number if
+and only if $n > 1$, $n$ is not prime, and $x^n = x$ for every element $x$ of
+$\mathbb{Z}/n\mathbb{Z}$.
 
 ## Depends on
 
-- [Is Carmichael Number](is-carmichael-number.md)
+- [Carmichael numbers](is-carmichael-number.md)
 
 ## Sources
 

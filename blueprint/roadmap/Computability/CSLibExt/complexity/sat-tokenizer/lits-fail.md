@@ -25,7 +25,7 @@ $\mathsf{rej}$ within $2|r| + 3$ steps.
 - [Rejection within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
 - [Decoding a fixed number of literals](../../cook-levin/decode-lits.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

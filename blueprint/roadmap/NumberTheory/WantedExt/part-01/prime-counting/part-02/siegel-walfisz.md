@@ -15,7 +15,7 @@ The constants may depend on `N`, but not on `x`, `q`, or `a`.
 
 ## Depends on
 
-- [Psi Residue Class](../../../../MathlibExt/part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
+- [Chebyshev's function in a residue class](../../../../MathlibExt/part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
 
 ## Sources
 

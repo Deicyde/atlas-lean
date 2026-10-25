@@ -6,12 +6,13 @@ statement: formalized
 lean: Farey.fareyFinset
 ---
 
-# Farey Finset
+# Farey set
 
-Finite carrier of Farey fractions of order `n`. Enumerates all
-`a/d` with `1 ≤ d ≤ n`, `0 ≤ a ≤ d`. Every `q` with `0 ≤ q ≤ 1`
-and `q.den ≤ n` equals `q.num/q.den` with `0 ≤ q.num ≤ q.den`,
-hence appears.
+**Farey set.** For a natural number $n$, the Farey set $F_n$ of order $n$ is the finite set of
+rationals $a/d$ with $a$ and $d$ natural numbers, $1 \le d \le n$ and $0 \le a \le d$.
+
+Equivalently, $F_n$ consists of the rationals $q$ with $0 \le q \le 1$ whose denominator in lowest
+terms is at most $n$. In particular $F_0$ is empty.
 
 ## Depends on
 

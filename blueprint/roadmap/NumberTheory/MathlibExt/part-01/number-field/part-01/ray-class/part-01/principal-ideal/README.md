@@ -5,7 +5,7 @@ navigation: module
 
 # Principal Ideal
 
-- [Principal Ray Ideal Map](principal-ray-ideal-map.md)
-- [Principal Ray Ideal Map apply](principal-ray-ideal-map-apply.md)
-- [To Principal Ideal eq iff exists integral Unit mul](to-principal-ideal-eq-iff-exists-integra.md)
-- [Ray Group eq map ray One Elements](ray-group-eq-map-ray-one-elements.md)
+- [Principal ray ideal map](principal-ray-ideal-map.md)
+- [Value of the principal ray ideal map](principal-ray-ideal-map-apply.md)
+- [Principal ideals agree exactly up to an integral unit](to-principal-ideal-eq-iff-exists-integra.md)
+- [The ray group is the image of the ray-one elements](ray-group-eq-map-ray-one-elements.md)

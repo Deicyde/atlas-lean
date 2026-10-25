@@ -6,14 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.polyBernoulli
 ---
 
-# Poly Bernoulli
+# Poly-Bernoulli numbers
 
-Poly-Bernoulli number `Bₙ⁽ᵏ⁾` via Kaneko's explicit finite Stirling-number formula.
+**Poly-Bernoulli numbers.** Let $S(n, r)$ denote the Stirling numbers of the second kind. For
+a natural number $n$ and an integer $k$, the poly-Bernoulli number $B_n^{(k)}$ is the rational
+number given by Kaneko's explicit formula
 
-The source sums over `m = 1, …, n + 1` with denominator `(m : ℚ) ^ k`;
-here this is reindexed by `r = m - 1` over `Finset.range (n + 1)`, so the
-denominator is `(((r + 1 : ℕ) : ℚ) ^ k)`. The two sign factors
-`(-1 : ℚ) ^ n` and `(-1 : ℚ) ^ r` are kept in this source-direct form.
+$$B_n^{(k)} = (-1)^n \sum_{r=0}^{n} \frac{(-1)^r\, r!\, S(n, r)}{(r+1)^k}.$$
 
 Introduced by M. Kaneko, "Poly-Bernoulli numbers," Journal de Théorie des
 Nombres de Bordeaux 9 (1997), 221–228; see also T. Arakawa and M. Kaneko,

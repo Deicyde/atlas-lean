@@ -17,7 +17,7 @@ without repetition, in the order of the list of all literals over the variables 
 ## Depends on
 
 - [Literals over the variables of a formula](lit.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -25,7 +25,7 @@ without repetition, in the order of the list of all literals over the variables 
 - [List of the literals of a CNF formula](lit-list.md)
 - [Complement of a literal](neg.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

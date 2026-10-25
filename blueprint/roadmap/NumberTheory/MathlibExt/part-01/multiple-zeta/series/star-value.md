@@ -6,20 +6,28 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.starValue
 ---
 
-# Star Value
+# Multiple zeta-star value
 
-The multiple-zeta-star series over weakly decreasing tuples.
+**Multiple zeta-star value.** Let $\mathbf{k} = (k_0, \dots, k_{r-1})$ be an index of depth
+$r$ that is admissible ($r \ge 1$ and $k_0 \ge 2$) or empty. Its multiple zeta-star value is the
+real number
+
+$$\zeta^\star(\mathbf{k}) = \sum_{m_0 \ge \dots \ge m_{r-1} \ge 1} \prod_{i=0}^{r-1} m_i^{-k_i}$$
+
+where the sum runs over all weakly decreasing $r$-tuples $(m_0, \dots, m_{r-1})$ of positive
+integers. The sum is unconditional, with value $0$ by convention when the family is not
+summable.
 
 ## Depends on
 
-- [Index](../index/index.md)
-- [Is Admissible Or Empty](is-admissible-or-empty.md)
+- [Multiple-zeta index](../index/index.md)
+- [Admissible or empty index](is-admissible-or-empty.md)
 
 ## Proof depends on
 
-- [Depth](../index/depth.md)
-- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
-- [Star Summand](star-summand.md)
+- [Depth of an index](../index/depth.md)
+- [Weakly decreasing tuples](weakly-decreasing-tuple.md)
+- [Multiple-zeta-star summand](star-summand.md)
 
 ## Sources
 

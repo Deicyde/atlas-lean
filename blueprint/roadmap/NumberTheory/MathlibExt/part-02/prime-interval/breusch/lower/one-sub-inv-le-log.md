@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.one_sub_inv_le_log
 ---
 
-# One sub inv le log
+# Logarithm is at least 1 − 1/t
 
-Logarithm lower bound `1 - 1 / t ≤ log t` for `t ≥ 1`.
+**Logarithm is at least 1 − 1/t.** For every real number $t \ge 1$, $1 - 1/t \le \log t$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exp le inv one sub](exp-le-inv-one-sub.md)
+- [Exponential bound by the geometric series](exp-le-inv-one-sub.md)
 
 ## Sources
 

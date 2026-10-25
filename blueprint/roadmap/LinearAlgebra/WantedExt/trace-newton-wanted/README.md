@@ -5,5 +5,5 @@ navigation: module
 
 # Trace Newton
 
-- [Charpoly Descending Coeff](charpoly-descending-coeff.md)
-- [Trace cayley hamilton newton](trace-cayley-hamilton-newton.md)
+- [Characteristic-polynomial coefficients in descending order](charpoly-descending-coeff.md)
+- [Newton's trace identities for the characteristic polynomial](trace-cayley-hamilton-newton.md)

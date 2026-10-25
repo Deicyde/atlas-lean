@@ -5,6 +5,6 @@ navigation: module
 
 # Weak PNTArithmetic Progression
 
-- [Tendsto psi Residue Class div self](tendsto-psi-residue-class-div-self.md)
-- [Exists abs sum residue Class div sub log le](exists-abs-sum-residue-class-div-sub-log.md)
-- [Weak PNT arithmetic Progression](weak-pnt-arithmetic-progression.md)
+- [Prime number theorem for Chebyshev's function in a reduced residue class](tendsto-psi-residue-class-div-self.md)
+- [Mertens' theorem in arithmetic progressions](exists-abs-sum-residue-class-div-sub-log.md)
+- [Weak prime number theorem in arithmetic progressions](weak-pnt-arithmetic-progression.md)

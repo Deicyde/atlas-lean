@@ -6,18 +6,21 @@ statement: formalized
 lean: NumberField.ArakelovDivisor.idealHom
 ---
 
-# Ideal Hom
+# Ideal norm homomorphism
 
-The ideal norm as a bundled monoid homomorphism.
+**Ideal norm homomorphism.** For a number field $K$, the map sending an Arakelov divisor
+$(I, r)$ on $K$ to the absolute norm of $I$, viewed as a positive real number, is a monoid
+homomorphism from the Arakelov divisors on $K$, multiplied componentwise, to the positive real
+numbers under multiplication.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Proof depends on
 
-- [Ideal Norm](ideal-norm.md)
-- [Ideal Norm coe](ideal-norm-coe.md)
+- [Ideal norm of an Arakelov divisor](ideal-norm.md)
+- [Real value of the ideal norm](ideal-norm-coe.md)
 
 ## Sources
 

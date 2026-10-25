@@ -26,14 +26,14 @@ returned.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [First unit literal](first-unit.md)
 - [First variable of a CNF formula](first-variable.md)
 - [Restrict](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/restrict-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -6,11 +6,13 @@ statement: formalized
 lean: CoveringSystem
 ---
 
-# Covering System
+# Covering system
 
-A covering system of a semiring `R` is a finite set of cosets of non-zero ideals whose union
-covers the whole ring. In the case where `R = ℤ`, this corresponds to a choice of finitely many
-congruence relations such that every integer satisfies at least one of the relations.
+**Covering system.** A covering system of a commutative semiring $R$ is a finite family of cosets
+$r_i + I_i = \{r_i + a : a \in I_i\}$, where each $I_i$ is an ideal of $R$ different from both
+$\{0\}$ and $R$, whose union is all of $R$. In the case $R = \mathbb{Z}$, this corresponds to a
+choice of finitely many congruences $x \equiv r_i \pmod{n_i}$ with moduli $n_i \ge 2$ such that
+every integer satisfies at least one of them.
 
 ## Depends on
 

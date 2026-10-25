@@ -6,18 +6,20 @@ statement: formalized
 lean: NumberField.principalHom
 ---
 
-# Principal Hom
+# Principal divisor homomorphism
 
-The principal-divisor homomorphism from units of `K`.
+**Principal divisor homomorphism.** For a number field $K$, the map sending a nonzero element
+$x \in K$ to its principal Arakelov divisor is a group homomorphism from the multiplicative
+group $K^\times$ to the group of Arakelov divisors of $K$.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Proof depends on
 
-- [Principal Arch](principal-arch.md)
-- [Principal Divisor](principal-divisor.md)
+- [Archimedean part of a principal divisor](principal-arch.md)
+- [Principal Arakelov divisor](principal-divisor.md)
 
 ## Sources
 

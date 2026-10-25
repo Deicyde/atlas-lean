@@ -14,8 +14,8 @@ $z$, every clause of $\mathrm{chainTail}(C, z)$ has at most three literals.
 ## Depends on
 
 - [The tail of a clause chain](../three-sat/chain-tail.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

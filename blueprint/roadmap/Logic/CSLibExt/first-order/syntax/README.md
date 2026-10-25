@@ -6,21 +6,21 @@ navigation: module
 
 ## Instantiating the outermost bound variable
 
-- [Instantiate Term](instantiate-term.md)
-- [Instantiate](instantiate.md)
-- [Instantiate Term var zero](instantiate-term-var-zero.md)
-- [Instantiate Term var succ](instantiate-term-var-succ.md)
-- [Instantiate all](instantiate-all.md)
-- [Realize instantiate formula](realize-instantiate-formula.md)
-- [Realize all formula](realize-all-formula.md)
-- [Realize congr](realize-congr.md)
+- [Instantiating the outermost bound variable of a term](instantiate-term.md)
+- [Instantiating the outermost bound variable of a formula](instantiate.md)
+- [Instantiation at the outermost bound variable](instantiate-term-var-zero.md)
+- [Instantiation shifts the remaining bound variables down](instantiate-term-var-succ.md)
+- [Instantiation commutes with the universal quantifier](instantiate-all.md)
+- [Truth of an instance](realize-instantiate-formula.md)
+- [Truth of a universal formula](realize-all-formula.md)
+- [Truth depends only on the free variables](realize-congr.md)
 
 ## Renaming free variables
 
-- [Rename Term](rename-term.md)
-- [Rename](rename.md)
-- [Realize rename](realize-rename.md)
-- [Relabel inl comp eq cast LE rename](relabel-inl-comp-eq-cast-le-rename.md)
-- [Formula relabel eq rename](formula-relabel-eq-rename.md)
-- [Rename congr](rename-congr.md)
-- [Free Var Finset rename](free-var-finset-rename.md)
+- [Renaming free variables of a term](rename-term.md)
+- [Renaming free variables of a formula](rename.md)
+- [Truth of a renamed formula](realize-rename.md)
+- [Relabeling along $f$ agrees with renaming](relabel-inl-comp-eq-cast-le-rename.md)
+- [Relabelling a formula is renaming](formula-relabel-eq-rename.md)
+- [Renaming that fixes the free variables](rename-congr.md)
+- [Free variables of a renamed formula](free-var-finset-rename.md)

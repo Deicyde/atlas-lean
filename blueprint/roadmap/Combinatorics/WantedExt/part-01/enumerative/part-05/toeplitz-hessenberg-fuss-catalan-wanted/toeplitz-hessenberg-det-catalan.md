@@ -27,7 +27,7 @@ determinants in (1) form OEIS A066357.
 
 ## Depends on
 
-- [Toeplitz Hessenberg Det](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/toeplitz-hessenberg-det.md)
+- [Toeplitz–Hessenberg determinant](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/toeplitz-hessenberg-det.md)
 
 ## Sources
 

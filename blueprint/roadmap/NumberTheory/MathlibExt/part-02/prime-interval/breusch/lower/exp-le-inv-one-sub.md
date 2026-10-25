@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.exp_le_inv_one_sub
 ---
 
-# Exp le inv one sub
+# Exponential bound by the geometric series
 
-Exponential upper bound `exp u ≤ 1 / (1 - u)` on `[0, 1)`.
+**Exponential bound by the geometric series.** For every real number $u$ with $0 \le u < 1$,
+$e^u \le \frac{1}{1 - u}$.
 
 ## Depends on
 

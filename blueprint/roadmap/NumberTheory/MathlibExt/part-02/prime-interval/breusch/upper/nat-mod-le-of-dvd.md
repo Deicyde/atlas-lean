@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.nat_mod_le_of_dvd
 ---
 
-# Nat mod le of dvd
+# Remainder bound for common multiples
 
-Remainder bound for multiples of a divisor.
+**Remainder bound for common multiples.** Let $a$, $b$, $d$ be natural numbers with $b > 0$,
+$d > 0$, $d \mid b$ and $d \mid a$. Then the remainder of $a$ modulo $b$ is at most $b - d$.
 
 ## Depends on
 

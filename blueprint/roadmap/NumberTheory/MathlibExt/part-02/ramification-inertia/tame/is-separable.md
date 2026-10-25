@@ -7,13 +7,15 @@ proof: formalized
 lean: Algebra.IsTamelyRamifiedAt.isSeparable
 ---
 
-# Is Separable
+# Tame primes are residue separable
 
-The residue-separability part of tame ramification.
+**Tame primes are residue separable.** Let $R$ and $S$ be commutative rings with $S$ an
+$R$-algebra, and let $q$ be a prime ideal of $S$. If $q$ is tamely ramified over $R$, then $q$ is
+residue separable over $R$.
 
 ## Depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
 - [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources

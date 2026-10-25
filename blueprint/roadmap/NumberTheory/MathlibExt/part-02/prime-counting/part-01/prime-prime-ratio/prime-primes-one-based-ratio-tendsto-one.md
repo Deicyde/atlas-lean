@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.primePrimes_oneBased_ratio_tendsto_one
 ---
 
-# Prime Primes one Based ratio tendsto one
+# Ratio of consecutive prime-indexed primes tends to one
 
-Part (c) of the Broughan–Barnett corollary in the source's one-based indexing.
-With zero-based `Nat.nth`, the source's `q_n = p_{p_n}` (with `p_1 = 2`) is
-`Nat.nth Nat.Prime (Nat.nth Nat.Prime n - 1)`, and
-`primePrimes_ratio_tendsto_one` is the same limit for the shifted
-sequence `p_{p_n + 1}`.
+**Ratio of consecutive prime-indexed primes tends to one.** Let $p_1 = 2$, $p_2 = 3$, $p_3 = 5$,
+$\dots$ be the primes in increasing order and let $q_n = p_{p_n}$. Then $q_n / q_{n+1} \to 1$ as
+$n \to \infty$.
+
+This is part (c) of the Broughan–Barnett corollary, in the source's one-based indexing.
 
 ## Depends on
 

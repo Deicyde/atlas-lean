@@ -48,7 +48,10 @@ namespace NumberField
 
 variable {K : Type*} [Field K] [NumberField K]
 
-/-- Unit fractional ideal attached to a height-one prime of `𝓞 K`. -/
+/-- **A prime as an invertible fractional ideal.** For a number field $K$ with ring of integers
+$\mathcal O_K$ and a height-one prime $\mathfrak p$ of $\mathcal O_K$, this is $\mathfrak p$
+regarded as a fractional ideal of $K$; it is nonzero, hence a unit in the group of nonzero
+fractional ideals of $K$. -/
 noncomputable def primeUnitFractionalIdeal
     (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K)) :
     (FractionalIdeal (𝓞 K)⁰ K)ˣ :=
@@ -73,7 +76,12 @@ namespace Modulus
 
 variable (m : Modulus K) (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
 
-/-- A prime outside the finite support of `m` gives a unit in `m.coprimeFractionalIdeals`. -/
+/-- **Primes not dividing the modulus are coprime to it.** Let $\mathfrak m$ be a modulus of a
+number field $K$ and let $\mathfrak p$ be a height-one prime of the ring of integers
+$\mathcal O_K$ that does not contain the finite part of $\mathfrak m$. Then $\mathfrak p$, viewed
+as an invertible fractional ideal of $K$, lies in the group of fractional ideals coprime to
+$\mathfrak m$: its exponent at every height-one prime containing the finite part of
+$\mathfrak m$ is zero. -/
 theorem mem_coprimeFractionalIdeals_primeUnit (hvm : ¬ m.finiteSupported v) :
     primeUnitFractionalIdeal v ∈ m.coprimeFractionalIdeals := by
   rw [m.mem_coprimeFractionalIdeals_iff]
@@ -89,7 +97,11 @@ theorem mem_coprimeFractionalIdeals_primeUnit (hvm : ¬ m.finiteSupported v) :
     exact Finsupp.single_eq_of_ne hne
   rwa [FractionalIdeal.factorizationMulEquiv_apply] at hw0
 
-/-- The prime unit packaged as an element of `m.coprimeFractionalIdeals`. -/
+/-- **The prime as a coprime fractional ideal.** Let $\mathfrak m$ be a modulus of a number
+field $K$ and let $\mathfrak p$ be a height-one prime of the ring of integers $\mathcal O_K$ that
+does not contain the finite part of $\mathfrak m$. This is $\mathfrak p$, viewed as an invertible
+fractional ideal of $K$, regarded as an element of the group of fractional ideals coprime to
+$\mathfrak m$. -/
 noncomputable def primeCoprimeUnit (hvm : ¬ m.finiteSupported v) :
     m.coprimeFractionalIdeals :=
   ⟨primeUnitFractionalIdeal v, mem_coprimeFractionalIdeals_primeUnit m v hvm⟩

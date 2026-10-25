@@ -7,21 +7,22 @@ proof: formalized
 lean: NumberField.principalSubgroup_le_degreeZero
 ---
 
-# Principal Subgroup le degree Zero
+# Principal Arakelov divisors have degree zero
 
-The principal subgroup is contained in the degree-zero subgroup.
+**Principal Arakelov divisors have degree zero.** For a number field $K$, the subgroup of
+principal Arakelov divisors of $K$ is contained in the degree-zero subgroup.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Degree Zero](degree-zero.md)
-- [Principal Subgroup](principal-subgroup.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Degree-zero Arakelov divisors](degree-zero.md)
+- [Subgroup of principal Arakelov divisors](principal-subgroup.md)
 
 ## Proof depends on
 
-- [Size Hom](size-hom.md)
-- [Principal Hom](principal-hom.md)
-- [Size principal](size-principal.md)
+- [Size of an Arakelov divisor](size-hom.md)
+- [Principal divisor homomorphism](principal-hom.md)
+- [Principal Arakelov divisors have size one](size-principal.md)
 
 ## Sources
 

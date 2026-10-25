@@ -40,7 +40,7 @@ inverse-array equivalence from the Stieltjes production construction of the inve
 ## Depends on
 
 - [Formally orthogonal polynomial family](is-formally-orthogonal.md)
-- [Stieltjes Matrix](../../../LinearAlgebra/MathlibExt/matrix/part-02/stieltjes-matrix/stieltjes-matrix.md)
+- [Tridiagonal Stieltjes production matrix](../../../LinearAlgebra/MathlibExt/matrix/part-02/stieltjes-matrix/stieltjes-matrix.md)
 
 ## Proof depends on
 

@@ -22,8 +22,8 @@ written as $u$ ones, a zero, $v$ ones and a zero.
 - [Distinct variables of a formula](../ham-path/ham-vars.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
 - [Sipser's HAMPATH instance of a CNF formula](../ham-path/to-ham.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

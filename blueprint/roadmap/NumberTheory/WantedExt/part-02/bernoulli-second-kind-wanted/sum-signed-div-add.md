@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_signed_div_add
 
 ## Depends on
 
-- [Bernoulli Second](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
+- [Bernoulli numbers of the second kind](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
 - [Signed Stirling numbers of the first kind](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources

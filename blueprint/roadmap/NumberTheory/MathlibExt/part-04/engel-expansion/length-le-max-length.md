@@ -7,14 +7,16 @@ proof: formalized
 lean: EngelExpansion.length_le_maxLength
 ---
 
-# Length le max Length
+# Each Engel length is at most the maximal Engel length
 
-Each Engel length is bounded by the length function.
+**Each Engel length is at most the maximal Engel length.** Let $n$ and $a$ be natural numbers
+with $1 \le a \le n$. Then the Engel length $L(n, a)$ of $a$ with respect to $n$ is at most the
+maximal Engel length $M(n) = \max_{1 \le b \le n} L(n, b)$.
 
 ## Depends on
 
-- [Length](length.md)
-- [Max Length](max-length.md)
+- [Engel length](length.md)
+- [Maximal Engel length](max-length.md)
 
 ## Sources
 

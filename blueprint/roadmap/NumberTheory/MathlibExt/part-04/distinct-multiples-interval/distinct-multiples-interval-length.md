@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.distinctMultiplesIntervalLength
 ---
 
-# Distinct Multiples Interval Length
+# Least interval length containing distinct multiples
 
-`f(n, m)`, the least `L` such that `(m, m + L]` contains distinct multiples of
-`1, …, n`.
+**Least interval length containing distinct multiples.** For natural numbers $n$ and $m$,
+$f(n, m)$ is the least natural number $L$ such that the interval $(m, m + L]$ contains distinct
+multiples of $1, \dots, n$.
+
+Such an $L$ always exists, so the least one is well defined.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

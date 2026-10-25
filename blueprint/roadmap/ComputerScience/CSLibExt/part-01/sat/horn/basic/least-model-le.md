@@ -16,7 +16,7 @@ model candidate of $\varphi$ makes true is also true under $\sigma$.
 
 - [Horn formula](is-horn.md)
 - [Least model candidate](least-model.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Proof depends on
@@ -25,10 +25,10 @@ model candidate of $\varphi$ makes true is also true under $\sigma$.
 - [Forward-chaining closure](close.md)
 - [Forward-chaining step](derive.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
+- [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

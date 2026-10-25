@@ -6,15 +6,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.trace_im_eq_zero
 ---
 
-# Trace im eq zero
+# The trace of a totally positive algebraic integer is real
 
-The trace of a totally positive algebraic integer has zero imaginary
-part.
+**The trace of a totally positive algebraic integer is real.** If $\alpha \in \mathbb{C}$ is
+a totally positive algebraic integer, then the imaginary part of the trace of $\alpha$ is $0$.
 
 ## Depends on
 
-- [Is Totally Positive](is-totally-positive.md)
-- [Trace](trace.md)
+- [Totally positive algebraic integers](is-totally-positive.md)
+- [Trace as the sum of conjugates](trace.md)
 
 ## Proof depends on
 

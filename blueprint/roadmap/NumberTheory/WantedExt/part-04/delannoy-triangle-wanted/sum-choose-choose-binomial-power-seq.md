@@ -14,7 +14,7 @@ the multiplied-out form over `ℤ`).
 
 ## Depends on
 
-- [Binomial Power Seq](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/binomial-power-seq.md)
+- [Binomial-power sequences](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/binomial-power-seq.md)
 
 ## Sources
 

@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.sat_iff_restrict_of_unit
 ---
 
-# Sat iff restrict of unit
+# Unit propagation preserves satisfiability
 
-A unit clause forces its sole literal, so only that restriction is needed.
+**Unit propagation preserves satisfiability.** Let $F$ be a CNF formula that contains the
+unit clause whose only literal is $\ell$. Then $F$ is satisfiable if and only if the restriction
+of $F$ by $\ell$ is satisfiable.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](restrict-2.md)
-- [CNFClause](../basic/cnfclause.md)
-- [CNFSat](../basic/cnfsat.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
 - [Satisfies](../semantics/satisfies-3.md)
-- [Satisfies of satisfies restrict](satisfies-of-satisfies-restrict.md)
+- [Lifting a satisfying assignment from a restriction](satisfies-of-satisfies-restrict.md)
 - [Satisfies restrict iff](satisfies-restrict-iff-2.md)
 - [Satisfies](../semantics/satisfies-2.md)
-- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

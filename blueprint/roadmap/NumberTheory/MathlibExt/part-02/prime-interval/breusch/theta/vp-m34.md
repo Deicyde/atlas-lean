@@ -13,14 +13,14 @@ Every prime in `(t, 6 * t]` divides `M34 t`.
 
 ## Depends on
 
-- [M34](m34.md)
+- [The multinomial coefficient $M(t)$ for the 3.4 primorial bound](m34.md)
 
 ## Proof depends on
 
-- [M34 eq mul](m34-eq-mul.md)
-- [M34 pos](m34-pos.md)
-- [Div add div add div le](div-add-div-add-div-le.md)
-- [Vp term1](vp-term1.md)
+- [Cleared-denominator identity for the multinomial coefficient $M(t)$](m34-eq-mul.md)
+- [Positivity of the multinomial coefficient $M(t)$](m34-pos.md)
+- [Superadditivity of floor division for three terms](div-add-div-add-div-le.md)
+- [Floor-difference bound on the range t < p ≤ 6t](vp-term1.md)
 
 ## Sources
 

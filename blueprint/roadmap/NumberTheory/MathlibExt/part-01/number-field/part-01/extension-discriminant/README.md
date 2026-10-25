@@ -7,12 +7,12 @@ navigation: module
 
 ## Image Of B
 
-- [Image Of B](image-of-b.md)
-- [Mem image Of B](mem-image-of-b.md)
-- [Algebra Map mem image Of B](algebra-map-mem-image-of-b.md)
+- [Image of $B$ in $L$](image-of-b.md)
+- [Membership in the image of $B$](mem-image-of-b.md)
+- [Elements of $B$ lie in the image of $B$](algebra-map-mem-image-of-b.md)
 
 ## Extension Discriminant
 
-- [Extension Discriminant](extension-discriminant.md)
-- [Extension Discriminant eq](extension-discriminant-eq.md)
-- [Discr mem extension Discriminant](discr-mem-extension-discriminant.md)
+- [Extension discriminant](extension-discriminant.md)
+- [The extension discriminant is a lattice discriminant](extension-discriminant-eq.md)
+- [Discriminants of tuples from $B$ lie in the extension discriminant](discr-mem-extension-discriminant.md)

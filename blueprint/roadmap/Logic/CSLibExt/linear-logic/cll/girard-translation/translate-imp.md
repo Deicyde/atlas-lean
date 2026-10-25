@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Logic.CLL.Girard.translate_imp
 ---
 
-# Translate imp
+# Girard's translation of an implication
 
-The translation of an implication is a linear implication out of `!`.
+**Girard's translation of an implication.** For every map $f$ from propositional atoms to CLL
+propositions and all propositional formulas $A$ and $B$, $(A \to B)^\circ = {!A^\circ} \multimap
+B^\circ$, where $C^\circ$ denotes Girard's translation of a formula $C$ with atoms translated by
+$f$ and $\multimap$ is linear implication in CLL.
 
 ## Depends on
 

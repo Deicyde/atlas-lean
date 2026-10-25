@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.exceptionalGaps
 ---
 
-# Exceptional Gaps
+# Gap contributions of a subgroup of the modular group
 
-The set of gap contributions of `Γ`: `0` together with
-`√(1/4 - λ)` for every exceptional eigenvalue `λ ∈ (0, 1/4)`.
+**Gap contributions of a subgroup of the modular group.** For a subgroup $\Gamma$ of
+$\mathrm{SL}(2, \mathbb{Z})$, the set of gap contributions of $\Gamma$ is the set of real
+numbers consisting of $0$ together with $\sqrt{1/4 - \lambda}$ for every real eigenvalue
+$\lambda$ of the hyperbolic Laplacian for $\Gamma$ with $0 < \lambda < 1/4$ (an exceptional
+eigenvalue).
 
 ## Depends on
 

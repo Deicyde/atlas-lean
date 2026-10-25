@@ -13,7 +13,7 @@ Corollary 3.2: for nondegenerate `U(a, -1)` and `m ≥ 2`, `E_U(m) = π_U(m) / �
 
 ## Depends on
 
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas UPeriod](lucas-uperiod.md)
 - [Lucas URestricted Period](lucas-urestricted-period.md)

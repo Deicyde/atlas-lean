@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.inverse_eigenvalues
 ---
 
-# Inverse Eigenvalues Wanted
+# Eigenvalues of the inverse matrix
 
-Inverse eigenvalues theorem (stable source:
-https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix, statement `inveig-s1`):
-for an invertible square matrix `M` over a field, a nonzero scalar `μ` has eigenvector
-`x` for `M` if and only if `μ⁻¹` has the same eigenvector `x` for `M⁻¹`.
+**Eigenvalues of the inverse matrix.** Let $M$ be a square matrix over a field $K$, with rows
+and columns indexed by a finite type, whose determinant is a unit of $K$ (so $M$ is invertible),
+and let $\mu \in K$ be nonzero. Then a vector $x$ is an eigenvector of $M$ with eigenvalue $\mu$
+(that is, $x \ne 0$ and $Mx = \mu x$) if and only if $x$ is an eigenvector of $M^{-1}$ with
+eigenvalue $\mu^{-1}$.
 
 ## Depends on
 
@@ -19,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.LinearAlgebra.Matrix.InverseEigenvaluesWanted](../../../../sources/v2/WantedExt.md)
+- https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix, statement `inveig-s1`.

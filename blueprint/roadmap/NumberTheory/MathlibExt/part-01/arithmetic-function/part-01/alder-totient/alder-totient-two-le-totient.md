@@ -7,13 +7,15 @@ proof: formalized
 lean: ArithmeticFunction.alderTotientTwo_le_totient
 ---
 
-# Alder Totient Two le totient
+# Alder's totient with second argument $2$ is at most Euler's totient
 
-Alder's totient is bounded by Euler's totient, by inclusion of filters.
+**Alder's totient with second argument $2$ is at most Euler's totient.** For every natural
+number $k$, Alder's totient $g(k)$ with second argument $2$ is at most Euler's totient
+$\varphi(k)$.
 
 ## Depends on
 
-- [Alder Totient Two](alder-totient-two.md)
+- [Alder's totient with second argument 2](alder-totient-two.md)
 
 ## Sources
 

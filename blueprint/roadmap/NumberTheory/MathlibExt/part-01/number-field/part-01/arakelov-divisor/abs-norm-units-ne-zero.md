@@ -7,9 +7,12 @@ proof: formalized
 lean: FractionalIdeal.absNorm_units_ne_zero
 ---
 
-# Abs Norm units ne zero
+# Invertible fractional ideals have nonzero absolute norm
 
-The absolute norm of an invertible fractional ideal is nonzero.
+**Invertible fractional ideals have nonzero absolute norm.** Let $R$ be a Dedekind domain
+that is a free $\mathbb{Z}$-module of finite rank, and let $F$ be its field of fractions. For
+every invertible fractional ideal $I$ of $R$ in $F$, the absolute norm of $I$, a rational
+number, is nonzero.
 
 ## Depends on
 

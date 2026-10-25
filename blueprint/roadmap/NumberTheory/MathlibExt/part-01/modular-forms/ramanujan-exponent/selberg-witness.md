@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.SelbergWitness
 ---
 
-# Selberg Witness
+# Exceptional Selberg eigenvalue witnesses
 
-An exceptional-eigenvalue witness in the Selberg provider: a
-congruence subgroup and an eigenvalue in `(0, 1/4)`. Morally, these are
-archimedean local components over `ℚ`; the identification with genuine
-cuspidal automorphic local components is part of the Selberg provider's
-recorded model scope.
+**Exceptional Selberg eigenvalue witnesses.** The type of pairs $(\Gamma, \lambda)$ where
+$\Gamma$ is a congruence subgroup of $\mathrm{SL}_2(\mathbb{Z})$ and $\lambda$ is a real
+eigenvalue of the hyperbolic Laplacian on $L^2(\Gamma \backslash \mathbb{H})$ with
+$0 < \lambda < 1/4$.
+
+Morally, these pairs index archimedean local components over $\mathbb{Q}$; their
+identification with genuine cuspidal automorphic local components is a modelling assumption
+and is not formalized here.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Congruence Subgroup](../selberg-spectral-gap/is-congruence-subgroup.md)
+- [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
 - [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
 
 ## Sources

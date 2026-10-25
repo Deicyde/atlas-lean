@@ -8,17 +8,19 @@ lean: MetaMathlibExt.weightedScatter_posDef
 
 # Weighted scatter matrices of points in general position are positive definite
 
-**Weighted scatter matrices of points in general position are positive definite**: with
-positive weights, and points not all in an affine hyperplane (for every nonzero direction `v` the
-projections `⟪v, xᵢ⟫` are not all equal).
+**Weighted scatter matrices of points in general position are positive definite.** Let $I$
+and $J$ be finite sets and let $x_i \in \mathbb{R}^J$ ($i \in I$) be points with positive weights
+$w_i > 0$ that do not all lie in an affine hyperplane: for every nonzero $v \in \mathbb{R}^J$
+there are $i, j \in I$ with $\langle v, x_i \rangle \ne \langle v, x_j \rangle$. Then for every
+$\mu \in \mathbb{R}^J$ the weighted scatter matrix of the $x_i$ about $\mu$ is positive definite.
 
 ## Depends on
 
-- [Weighted Scatter](weighted-scatter.md)
+- [Weighted scatter matrix](weighted-scatter.md)
 
 ## Proof depends on
 
-- [Dot Product weighted Scatter mul Vec](dot-product-weighted-scatter-mul-vec.md)
+- [Quadratic form of a weighted scatter matrix](dot-product-weighted-scatter-mul-vec.md)
 
 ## Sources
 

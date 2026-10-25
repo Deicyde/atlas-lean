@@ -15,8 +15,8 @@ the Horn satisfiability test returns true on $\varphi$ if and only if $\varphi$ 
 
 - [Horn formula](is-horn.md)
 - [Horn satisfiability test](horn-sat.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -25,7 +25,7 @@ the Horn satisfiability test returns true on $\varphi$ if and only if $\varphi$ 
 - [Least model candidate](least-model.md)
 - [Horn satisfiability via the least model](satisfies-least-model-iff.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources

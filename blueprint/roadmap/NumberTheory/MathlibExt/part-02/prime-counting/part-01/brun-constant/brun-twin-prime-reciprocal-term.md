@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.brunTwinPrimeReciprocalTerm
 ---
 
-# Brun Twin Prime Reciprocal Term
+# Twin-prime reciprocal term
 
-The reciprocal contribution of the twin-prime pair whose smaller member is `p`.
+**Twin-prime reciprocal term.** For a natural number $p$, the twin-prime reciprocal term
+$t(p)$ is the real number $\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime,
+and $0$ otherwise.
 
 ## Depends on
 

@@ -7,10 +7,12 @@ proof: formalized
 lean: Nat.SylvesterSchur.choose_eq_prod_small_prime_powers_of_no_large
 ---
 
-# Choose eq prod small prime powers of no large
+# Truncating the prime factorization of a binomial coefficient
 
-If every prime divisor of `Nat.choose N r` is at most `r`, then the product formula for
-`Nat.choose N r` can be truncated from primes up to `N` to candidates up to `r`.
+**Truncating the prime factorization of a binomial coefficient.** Let $r \le N$ be natural
+numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$. Then
+$\prod_{p=0}^{r} p^{v_p(\binom{N}{r})} = \binom{N}{r}$, where $v_p(m)$ is the exponent of $p$ in
+the prime factorization of $m$ (zero when $p$ is not prime).
 
 ## Depends on
 

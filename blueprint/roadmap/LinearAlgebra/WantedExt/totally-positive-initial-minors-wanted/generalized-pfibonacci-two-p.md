@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.generalizedPFibonacci_two_p
 ---
 
-# Generalized PFibonacci two p
+# $p$-Lucas numbers as a companion Lucas sequence
 
-The `p`-Lucas numbers (`(a, b) = (2, p)`) are the companion Lucas sequence `V(p, -1)`.
+**$p$-Lucas numbers as a companion Lucas sequence.** For every integer $p$, the generalized
+Fibonacci sequence $W_{p,n}$ with initial values $a = 2$ and $b = p$ (the $p$-Lucas numbers
+$L_{p,n}$) is the companion Lucas sequence $V(p, -1)$: $W_{p,n} = V_n(p, -1)$ for every natural
+number $n$.
 
 ## Depends on
 
 - [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Generalized PFibonacci](generalized-pfibonacci.md)
+- [Generalized $p$-Fibonacci sequence](generalized-pfibonacci.md)
 - [Lucas V](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources

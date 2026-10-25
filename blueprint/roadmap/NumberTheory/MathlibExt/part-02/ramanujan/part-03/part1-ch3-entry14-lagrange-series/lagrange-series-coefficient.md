@@ -6,9 +6,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient
 ---
 
-# Lagrange Series Coefficient
+# Lagrange series coefficients
 
-The polynomial coefficient occurring in Ramanujan's Lagrange series.
+**Lagrange series coefficients.** For real numbers $p$, $q$, $n$ and a natural number $k$,
+the Lagrange series coefficient $C_{p,q}(n, k)$ is $1$ if $k = 0$, and for $k \ge 1$ it is
+
+$$C_{p,q}(n, k) = n \prod_{j=1}^{k-1} (n + k p - j q)$$
+
+(an empty product when $k = 1$).
 
 ## Depends on
 

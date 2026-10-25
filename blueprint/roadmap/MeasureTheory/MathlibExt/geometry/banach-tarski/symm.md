@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.symm
 ---
 
-# Symm
+# Finite equidecomposability by isometries is symmetric
 
-Finite equidecomposability is symmetric.
+**Finite equidecomposability by isometries is symmetric.** Let $A$ and $B$ be subsets of a
+metric space $X$. If $A$ is finitely equidecomposable by isometries with $B$, then $B$ is
+finitely equidecomposable by isometries with $A$.
 
 ## Depends on
 
-- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
+- [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

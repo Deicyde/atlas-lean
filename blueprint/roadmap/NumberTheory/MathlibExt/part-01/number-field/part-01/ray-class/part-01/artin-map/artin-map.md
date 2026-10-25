@@ -6,23 +6,31 @@ statement: formalized
 lean: NumberField.Modulus.artinMap
 ---
 
-# Artin Map
+# Artin map
 
-The Artin map on fractional ideals coprime to `m`, descended directly with
-Mathlib's quotient universal property `MonoidHom.liftOfSurjective`.
+**Artin map.** Let $L/K$ be an abelian Galois extension of number fields and $\mathfrak m$
+a modulus of $K$ with finite part $\mathfrak m_0$, such that every prime of $\mathcal O_K$ not
+dividing $\mathfrak m_0$ is unramified in $L$. Let $I^{\mathfrak m}$ be the group of fractional
+ideals of $K$ coprime to $\mathfrak m_0$ and $F$ the free group on the primes $\mathfrak p$ of
+$\mathcal O_K$ not dividing $\mathfrak m_0$. The homomorphism $F \to I^{\mathfrak m}$ sending
+each generator $\mathfrak p$ to the ideal $\mathfrak p$ is surjective, and its kernel lies in the
+kernel of the homomorphism $F \to \mathrm{Gal}(L/K)$ sending each generator $\mathfrak p$ to the
+arithmetic Frobenius at a chosen prime of $\mathcal O_L$ above $\mathfrak p$. The Artin map is
+the homomorphism $I^{\mathfrak m} \to \mathrm{Gal}(L/K)$ induced by the second map through the
+first.
 
 ## Depends on
 
-- [Is Unramified Outside](../frobenius-generators/is-unramified-outside.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Extensions unramified outside a modulus](../frobenius-generators/is-unramified-outside.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Proof depends on
 
-- [Coprime Primes](../prime-generation/coprime-primes.md)
-- [Free Group To Coprime](../prime-generation/free-group-to-coprime.md)
-- [Free Group To Coprime ker le free Group To Gal ker](free-group-to-coprime-ker-le-free-group.md)
-- [Free Group To Coprime surjective](../prime-generation/free-group-to-coprime-surjective.md)
-- [Free Group To Gal](../frobenius-generators/free-group-to-gal.md)
+- [Primes coprime to a modulus](../prime-generation/coprime-primes.md)
+- [The free group on the coprime primes maps to the coprime ideals](../prime-generation/free-group-to-coprime.md)
+- [Kernel containment for the free-group Frobenius map](free-group-to-coprime-ker-le-free-group.md)
+- [The free group on the coprime primes surjects onto the coprime ideals](../prime-generation/free-group-to-coprime-surjective.md)
+- [Frobenius homomorphism on the free group of coprime primes](../frobenius-generators/free-group-to-gal.md)
 
 ## Sources
 

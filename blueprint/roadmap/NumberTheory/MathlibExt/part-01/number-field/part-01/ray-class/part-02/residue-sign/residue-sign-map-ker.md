@@ -7,24 +7,25 @@ proof: formalized
 lean: NumberField.Modulus.residueSignMap_ker
 ---
 
-# Residue Sign Map ker
+# Kernel of the residue-sign map
 
-The kernel of the combined map is the ray-one subgroup.
+**Kernel of the residue-sign map.** Let $m$ be a modulus of a number field $K$. The kernel of
+the residue-sign map of $m$ is the ray-one subgroup of $m$.
 
 ## Depends on
 
-- [Residue Sign Target](residue-sign-target.md)
-- [Ray Elements](../ray-group/ray-elements.md)
-- [Ray One Elements](ray-one-elements.md)
-- [Residue Sign Map](residue-sign-map.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
+- [Ray-one subgroup](ray-one-elements.md)
+- [Residue-sign map](residue-sign-map.md)
 
 ## Proof depends on
 
-- [Finite Ray One Elements](../../part-01/finite-congruence/finite-ray-one-elements.md)
-- [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
-- [Finite Residue Map ker](../../part-01/finite-congruence/finite-residue-map-ker.md)
-- [Infinite Sign Map](../../part-01/infinite-sign/infinite-sign-map.md)
-- [Positive Ray Elements](../../part-01/infinite-sign/positive-ray-elements.md)
+- [The finite ray-one subgroup](../../part-01/finite-congruence/finite-ray-one-elements.md)
+- [Finite residue map](../../part-01/finite-congruence/finite-residue-map.md)
+- [Kernel of the finite residue map](../../part-01/finite-congruence/finite-residue-map-ker.md)
+- [Infinite sign map of a modulus](../../part-01/infinite-sign/infinite-sign-map.md)
+- [Ray elements positive at the infinite part](../../part-01/infinite-sign/positive-ray-elements.md)
 
 ## Sources
 

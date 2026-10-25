@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.hasSum_brunConstant
 ---
 
-# Has Sum brun Constant
+# Brun's constant is the sum of the twin-prime reciprocal series
 
-The defining twin-prime reciprocal series has Brun's constant as its sum.
+**Brun's constant is the sum of the twin-prime reciprocal series.** For a natural number $p$,
+let $t(p)$ be $\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime and $0$
+otherwise. Then the series $\sum_{p \ge 0} t(p)$ over the natural numbers converges
+unconditionally in $\mathbb{R}$, and its sum is Brun's constant.
 
 ## Depends on
 
-- [Brun Constant](brun-constant.md)
-- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
+- [Brun's constant](brun-constant.md)
+- [Twin-prime reciprocal term](brun-twin-prime-reciprocal-term.md)
 
 ## Proof depends on
 
-- [Summable brun Twin Prime Reciprocal Term](summable-brun-twin-prime-reciprocal-term.md)
+- [Summability of the twin-prime reciprocal terms](summable-brun-twin-prime-reciprocal-term.md)
 
 ## Sources
 

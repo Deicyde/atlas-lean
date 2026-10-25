@@ -16,7 +16,7 @@ of tokens of $C$ is at most the length of the binary code of $C$.
 - [Stack alphabet of the SAT verifier](sym.md)
 - [Tokens of a clause](clause-toks.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

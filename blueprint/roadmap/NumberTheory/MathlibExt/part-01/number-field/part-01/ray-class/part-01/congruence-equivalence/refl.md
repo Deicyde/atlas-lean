@@ -7,20 +7,21 @@ proof: formalized
 lean: NumberField.Modulus.CongruenceSubgroupPair.IsEquivalent.refl
 ---
 
-# Refl
+# Equivalence of congruence subgroup pairs is reflexive
 
-Equivalence of pairs is reflexive.
+**Equivalence of congruence subgroup pairs is reflexive.** Let $K$ be a number field. Every
+pair consisting of a modulus of $K$ and a congruence subgroup for it is equivalent to itself.
 
 ## Depends on
 
 - [Congruence Subgroup Pair](congruence-subgroup-pair.md)
-- [Is Equivalent](is-equivalent.md)
+- [Equivalence of congruence subgroup pairs](is-equivalent.md)
 
 ## Proof depends on
 
-- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
-- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Congruence subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [Congruence subgroup as a subgroup of all invertible fractional ideals](../congruence-subgroup/to-ambient-subgroup.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

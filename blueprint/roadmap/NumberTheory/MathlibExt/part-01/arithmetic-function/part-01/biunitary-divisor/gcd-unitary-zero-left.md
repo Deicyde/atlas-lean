@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gcdUnitary_zero_left
 ---
 
-# Gcd Unitary zero left
+# Greatest common unitary divisor with zero on the left
 
-`gcd₁(0, b) = 0`: `0` has no unitary divisors.
+**Greatest common unitary divisor with zero on the left.** For every natural number $b$, the
+greatest common unitary divisor satisfies $\gcd_1(0, b) = 0$, since $0$ has no unitary divisors.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Proof depends on
 

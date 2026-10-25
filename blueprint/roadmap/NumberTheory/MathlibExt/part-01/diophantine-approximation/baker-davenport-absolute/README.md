@@ -5,5 +5,5 @@ navigation: module
 
 # Baker Davenport Absolute
 
-- [Baker Davenport reduction absolute general](baker-davenport-reduction-absolute-gener.md)
-- [Baker Davenport reduction absolute](baker-davenport-reduction-absolute.md)
+- [Baker–Davenport reduction for an arbitrary denominator, absolute-value form](baker-davenport-reduction-absolute-gener.md)
+- [Baker–Davenport reduction lemma, absolute-value form](baker-davenport-reduction-absolute.md)

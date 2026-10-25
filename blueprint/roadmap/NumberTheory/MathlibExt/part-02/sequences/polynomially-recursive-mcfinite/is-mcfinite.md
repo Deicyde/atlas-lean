@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.IsMCFinite
 ---
 
-# Is MCFinite
+# MC-finite sequences
 
-An integer sequence `s` is MC-finite if for every modulus `m > 0` it eventually satisfies,
-modulo `m`, a linear recurrence with constant integer coefficients: there are `p, q > 0` and
-`c₀, …, c_{p-1}` with `s (n + p) ≡ ∑ i < p, cᵢ s (n + i) [ZMOD m]` for all `n ≥ q`.
+**MC-finite sequences.** An integer sequence $s$ is MC-finite if for every natural number
+$m > 0$ it eventually satisfies, modulo $m$, a linear recurrence with constant integer
+coefficients: there are natural numbers $p > 0$ and $q > 0$ and integers $c_0, \dots, c_{p-1}$
+such that $s(n + p) \equiv \sum_{i=0}^{p-1} c_i\, s(n + i) \pmod{m}$ for all $n \ge q$.
 
 ## Depends on
 

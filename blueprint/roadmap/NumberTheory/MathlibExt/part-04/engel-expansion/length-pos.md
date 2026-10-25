@@ -7,18 +7,19 @@ proof: formalized
 lean: EngelExpansion.length_pos
 ---
 
-# Length pos
+# The Engel length is positive
 
-The Engel length is positive.
+**The Engel length is positive.** For all natural numbers $n$ and $a$, the Engel length
+$L(n, a)$ of $a$ with respect to $n$ satisfies $L(n, a) \ge 1$.
 
 ## Depends on
 
-- [Length](length.md)
+- [Engel length](length.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
-- [Traj](traj.md)
+- [Engel trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Sources
 

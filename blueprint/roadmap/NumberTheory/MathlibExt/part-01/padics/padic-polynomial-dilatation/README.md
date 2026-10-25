@@ -5,6 +5,6 @@ navigation: module
 
 # Padic Polynomial Dilatation
 
-- [Padic Polynomial Dilatation](padic-polynomial-dilatation.md)
-- [Padic Polynomial Dilatation one zero](padic-polynomial-dilatation-one-zero.md)
-- [Padic Polynomial Dilatation exists](padic-polynomial-dilatation-exists.md)
+- [Dilatation of a p-adic polynomial at a point](padic-polynomial-dilatation.md)
+- [Dilatation of the constant polynomial one at zero](padic-polynomial-dilatation-one-zero.md)
+- [Existence of dilatations of p-adic polynomials](padic-polynomial-dilatation-exists.md)

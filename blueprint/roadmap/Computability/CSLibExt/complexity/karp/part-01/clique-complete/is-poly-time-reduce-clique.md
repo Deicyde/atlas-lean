@@ -41,7 +41,7 @@ $\varphi$. Then $f$ is computable in polynomial time.
 - [Karp's CLIQUE instance of a CNF formula](../clique/to-clique.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: SumSquares.solutions_zero_succ
 ---
 
-# Solutions zero succ
+# Zero squares never sum to a positive integer
 
-The `k = 0` level set at positive `n` is empty.
+**Zero squares never sum to a positive integer.** For every natural number $n \ge 1$, no
+vector $x \in \mathbb{Z}^0$ has sum of squares equal to $n$; that is, the solution set is empty.
 
 ## Depends on
 
-- [Solutions](solutions.md)
+- [Integer solutions of a sum of squares](solutions.md)
 
 ## Sources
 

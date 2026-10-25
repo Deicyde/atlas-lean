@@ -14,7 +14,7 @@ by one `y`.
 
 ## Depends on
 
-- [Hoffman Block](hoffman-block.md)
+- [Hoffman block](hoffman-block.md)
 
 ## Sources
 

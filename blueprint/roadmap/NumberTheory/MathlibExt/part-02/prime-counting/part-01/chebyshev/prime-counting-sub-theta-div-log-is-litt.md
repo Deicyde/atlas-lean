@@ -7,12 +7,16 @@ proof: formalized
 lean: Chebyshev.primeCounting_sub_theta_div_log_isLittleO
 ---
 
-# Prime Counting sub theta div log is Little O
+# Prime counting versus theta over log
 
-The error `π(x) - θ(x) / log x` is little-o of `x / log x`.
+**Prime counting versus theta over log.** Let $\pi(x)$ be the number of primes $p \le x$ and
+let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. As the real number $x$ tends
+to $+\infty$,
 
-This upgrades `Chebyshev.primeCounting_sub_theta_div_log_isBigO`, using that
-`x / log x ^ 2` is little-o of `x / log x`.
+$$\pi(x) - \frac{\theta(x)}{\log x} = o\left(\frac{x}{\log x}\right).$$
+
+The proof upgrades the bound $\pi(x) - \theta(x)/\log x = O(x/(\log x)^2)$, using that
+$x/(\log x)^2 = o(x/\log x)$.
 
 ## Depends on
 

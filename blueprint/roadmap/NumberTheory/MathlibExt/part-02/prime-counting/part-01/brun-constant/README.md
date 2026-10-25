@@ -5,7 +5,7 @@ navigation: module
 
 # Brun Constant
 
-- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
-- [Summable brun Twin Prime Reciprocal Term](summable-brun-twin-prime-reciprocal-term.md)
-- [Brun Constant](brun-constant.md)
-- [Has Sum brun Constant](has-sum-brun-constant.md)
+- [Twin-prime reciprocal term](brun-twin-prime-reciprocal-term.md)
+- [Summability of the twin-prime reciprocal terms](summable-brun-twin-prime-reciprocal-term.md)
+- [Brun's constant](brun-constant.md)
+- [Brun's constant is the sum of the twin-prime reciprocal series](has-sum-brun-constant.md)

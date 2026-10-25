@@ -16,7 +16,7 @@ In particular, the resolvents added when eliminating $x$ do not mention $x$.
 
 ## Depends on
 
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources

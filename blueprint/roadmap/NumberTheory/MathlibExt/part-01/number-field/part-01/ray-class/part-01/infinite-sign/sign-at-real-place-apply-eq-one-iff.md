@@ -7,13 +7,16 @@ proof: formalized
 lean: NumberField.Modulus.signAtRealPlace_apply_eq_one_iff
 ---
 
-# Sign At Real Place apply eq one iff
+# Trivial sign at a real place means positivity
 
-The sign at a real place is trivial iff the real embedding is positive.
+**Trivial sign at a real place means positivity.** Let $w$ be a real place of a number field
+$K$ with real embedding $\sigma_w \colon K \to \mathbb{R}$. For every $x \in K^\times$, the sign of
+$x$ at $w$, an element of $\mathbb{Z}/2\mathbb{Z}$ written multiplicatively, is the identity if
+and only if $\sigma_w(x) > 0$.
 
 ## Depends on
 
-- [Sign At Real Place](sign-at-real-place.md)
+- [Sign of a unit at a real place](sign-at-real-place.md)
 
 ## Sources
 

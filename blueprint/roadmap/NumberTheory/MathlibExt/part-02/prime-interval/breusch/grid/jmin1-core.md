@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin1_core
 ---
 
-# Jmin1 core
+# The grid function stays below $1$ on $(10, 279)$
 
-No index `10 ≤ j < 279` has `G j ≥ 1`.
+**The grid function stays below $1$ on $[10, 279)$.** For every natural number $j$ with
+$10 \le j < 279$, the Breusch grid function $G_9$ for $k = 9$ satisfies $G_9(j) < 1$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Dresden Du Simplified Binet
 
-- [Dresden du simplified binet of initial window](dresden-du-simplified-binet-of-initial-w.md)
-- [Dresden du simplified binet](dresden-du-simplified-binet.md)
+- [Simplified Binet formula for k-generalized Fibonacci numbers from an initial window](dresden-du-simplified-binet-of-initial-w.md)
+- [Dresden–Du simplified Binet formula](dresden-du-simplified-binet.md)

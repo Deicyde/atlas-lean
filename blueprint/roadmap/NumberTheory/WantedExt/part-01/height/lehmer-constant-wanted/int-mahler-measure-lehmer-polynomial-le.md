@@ -13,8 +13,8 @@ for the degree-ten example is formalized here.
 
 ## Depends on
 
-- [Int Mahler Measure](../../../../MathlibExt/part-01/height/lehmer-constant/int-mahler-measure.md)
-- [Lehmer Polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/lehmer-polynomial.md)
+- [Mahler measure of an integer polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/int-mahler-measure.md)
+- [Lehmer's polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/lehmer-polynomial.md)
 
 ## Sources
 

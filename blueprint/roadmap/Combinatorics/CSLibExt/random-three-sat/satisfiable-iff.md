@@ -19,7 +19,7 @@ clause true.
 - [Formulas of the random 3-SAT model](formula.md)
 - [Satisfiable](satisfiable.md)
 - [CNF formula of a random 3-SAT formula](to-cnf.md)
-- [CNFSat](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [Satisfiability of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -28,12 +28,12 @@ clause true.
 - [Satisfying a clause through a restricted assignment](clause-sat-restrict-iff.md)
 - [Extension of an assignment by false](extend-assign.md)
 - [CNF clause of a random 3-SAT clause](to-cnfclause.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
-- [Cnf Sat iff exists satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfaction of a literal](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Satisfiability means having a satisfying assignment](../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

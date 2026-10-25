@@ -7,17 +7,26 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Height.AbsoluteWanted.absLogHeight₁_eq_log_leadingCoeff_add_sum_log_roots_of_isAlgebraic
 ---
 
-# Abs Log Height₁ eq log leading Coeff add sum log roots of is Algebraic
+# Logarithmic height from the roots of the minimal polynomial, for an algebraic element
 
-Element-level version assuming `x` is algebraic over `ℚ`.
+**Logarithmic height from the roots of the minimal polynomial, for an algebraic element.** Let
+$K$ be a field of characteristic zero and let $x \in K$ be algebraic over $\mathbb{Q}$. Let $d$ be
+the degree of the minimal polynomial of $x$ over $\mathbb{Q}$, and let $P_x \in \mathbb{Z}[X]$ be
+the primitive integral minimal polynomial of $x$, with leading coefficient $a$. Then the absolute
+logarithmic height of $x$ is
+
+$$h(x) = \frac{1}{d}\Big(\log |a| + \sum_{z} \log^+ |z|\Big),$$
+
+where the sum runs over the complex roots $z$ of $P_x$, counted with multiplicity, and
+$\log^+ t = \max(0, \log t)$.
 
 ## Depends on
 
-- [Absolute](../primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Abs Log Height₁ eq log leading Coeff add sum log roots of is Integral](abs-log-height-eq-log-leading-coeff-add.md)
+- [Logarithmic height from the roots of the minimal polynomial, for an integral element](abs-log-height-eq-log-leading-coeff-add.md)
 
 ## Sources
 

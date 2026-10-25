@@ -11,7 +11,7 @@ For an odd prime `p` and `g ≥ 4`, `σ**(p^g)` has a prime factor `≥ 7`.
 
 ## Depends on
 
-- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
+- [Biunitary divisor sum](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

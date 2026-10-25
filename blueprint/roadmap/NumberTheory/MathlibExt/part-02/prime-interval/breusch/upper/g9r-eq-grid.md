@@ -7,25 +7,27 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_eq_grid
 ---
 
-# G9r eq grid
+# The continuous Breusch function agrees with the grid function
 
-The continuous `G9r` equals the grid `G9` at `⌊18900 * x⌋₊`.
+**The continuous Breusch function agrees with the grid function.** For every real
+$x \ge 0$, the continuous Breusch function $G$ and the Breusch grid function $G_9$ satisfy
+$G(x) = G_9(\lfloor 18900x \rfloor)$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
-- [G9r](g9r.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
+- [Continuous Breusch function](g9r.md)
 
 ## Proof depends on
 
-- [G9term](../grid/g9term.md)
-- [Q9](../grid/q9.md)
-- [Q9 eq](../lower/q9-eq.md)
-- [Floor grid match](floor-grid-match.md)
-- [Map sum to Finset](../grid/map-sum-to-finset.md)
-- [W9](../grid/w9.md)
-- [W9 dvd](../grid/w9-dvd.md)
-- [W9 nodup](../grid/w9-nodup.md)
+- [Summand of the Breusch grid function](../grid/g9term.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Value of Q₉](../lower/q9-eq.md)
+- [Real floors at divisors of 210 agree with grid floors](floor-grid-match.md)
+- [Sum over a duplicate-free list](../grid/map-sum-to-finset.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
+- [Entries of the divisor table for $210$ divide $210$](../grid/w9-dvd.md)
+- [The divisor table for $210$ has no repeated entries](../grid/w9-nodup.md)
 
 ## Sources
 

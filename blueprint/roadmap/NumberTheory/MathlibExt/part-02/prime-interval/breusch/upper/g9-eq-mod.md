@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_eq_mod
 ---
 
-# G9 eq mod
+# $G_9$ depends only on the residue modulo $18900$
 
-`G9 j` depends only on `j % 18900`.
+**$G_9$ depends only on the residue modulo $18900$.** For every natural number $j$, the grid
+$G$-function for $k = 9$ satisfies $G_9(j) = G_9(j \bmod 18900)$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
 
 ## Proof depends on
 
-- [G9 period iter](g9-period-iter.md)
+- [Periodicity of $G_9$ in multiples of $18900$](g9-period-iter.md)
 
 ## Sources
 

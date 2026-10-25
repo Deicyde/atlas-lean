@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.pi_third
 ---
 
-# Pi third
+# Prime-counting bound $\pi(x) \le x/3$ for real $x \ge 36$
 
-Real prime-counting bound `π(⌊x⌋₊) ≤ x / 3`.
+**Prime-counting bound $\pi(x) \le x/3$ for real $x \ge 36$.** Let $\pi(n)$ denote the
+number of primes $p \le n$. For every real number $x \ge 36$, $\pi(\lfloor x \rfloor) \le x/3$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pi third nat](pi-third-nat.md)
+- [Prime-counting bound $\pi(m) \le m/3$ for natural $m \ge 36$](pi-third-nat.md)
 
 ## Sources
 

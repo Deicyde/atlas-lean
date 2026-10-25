@@ -7,17 +7,19 @@ proof: formalized
 lean: isIntegralFactorialRatio_perm_left
 ---
 
-# Is Integral Factorial Ratio perm left
+# Permuting the numerator of an integral factorial ratio
 
-The predicate is invariant under permuting the numerator tuple.
+**Permuting the numerator of an integral factorial ratio.** Let $A$, $A'$ and $B$ be lists of
+natural numbers such that $A'$ is a permutation of $A$. If $(A, B)$ is an integral factorial
+ratio, then so is $(A', B)$.
 
 ## Depends on
 
-- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Integral factorial ratio](is-integral-factorial-ratio.md)
 
 ## Proof depends on
 
-- [Factorial Prod](factorial-prod.md)
+- [Product of scaled factorials](factorial-prod.md)
 
 ## Sources
 

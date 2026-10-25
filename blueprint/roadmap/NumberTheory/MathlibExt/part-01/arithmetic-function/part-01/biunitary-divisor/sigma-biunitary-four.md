@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_four
 ---
 
-# Sigma Biunitary four
+# The biunitary divisor sum of $4$
 
-`σ**(4) = 1 + 4 = 5`: the divisor `2` of `4` is not biunitary since `gcd₁(2, 2) = 2`.
+**The biunitary divisor sum of $4$.** The sum $\sigma^{**}(4)$ of the biunitary divisors of $4$
+equals $5$.
+
+The biunitary divisors of $4$ are $1$ and $4$: the divisor $2$ is not biunitary, since the greatest
+common unitary divisor of $2$ and $2$ is $2$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Sources
 

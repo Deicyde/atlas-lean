@@ -14,15 +14,15 @@ finite list is the truth table, on valuations with `⊥` false, of a proposition
 
 ## Depends on
 
-- [Is Imp Bot](is-imp-bot.md)
-- [Eval Bool](../semantics/eval-bool.md)
+- [Propositions built from $\to$ and $\bot$](is-imp-bot.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Eval Bool shannon](eval-bool-shannon.md)
-- [Eval Bool to Imp Bot](eval-bool-to-imp-bot.md)
-- [Shannon](shannon.md)
-- [To Imp Bot](to-imp-bot.md)
+- [Correctness of the Shannon expansion](eval-bool-shannon.md)
+- [The translation into $\to$ and $\bot$ preserves truth values](eval-bool-to-imp-bot.md)
+- [Shannon expansion](shannon.md)
+- [Translation into $\to$ and $\bot$](to-imp-bot.md)
 
 ## Sources
 

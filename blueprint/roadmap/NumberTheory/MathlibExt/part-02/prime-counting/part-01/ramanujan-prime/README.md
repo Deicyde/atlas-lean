@@ -5,5 +5,5 @@ navigation: module
 
 # Ramanujan Prime
 
-- [Is Ramanujan Prime](is-ramanujan-prime.md)
-- [Is Nth Ramanujan Prime](is-nth-ramanujan-prime.md)
+- [Primes satisfying the Ramanujan counting condition](is-ramanujan-prime.md)
+- [The $n$-th Ramanujan prime](is-nth-ramanujan-prime.md)

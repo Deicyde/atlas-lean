@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.isROBDD_restrict
 ---
 
-# Is ROBDD restrict
+# Restriction yields an ROBDD
 
-Restricting an ordered diagram gives a reduced ordered one.
+**Restriction yields an ROBDD.** If $t$ is an ordered binary decision diagram (tested
+variables strictly increase along every path), then for every variable $x$ and every Boolean
+$b$ the cofactor $t[x := b]$ is a reduced ordered binary decision diagram.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Is ROBDD](../basic/is-robdd.md)
-- [Ordered From](../basic/ordered-from.md)
-- [Restrict](restrict.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
+- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Restriction of a binary decision diagram](restrict.md)
 
 ## Proof depends on
 
-- [Reduced](../basic/reduced.md)
-- [Mk](../basic/mk.md)
-- [Reduced restrict](reduced-restrict.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Node constructor removing a redundant test](../basic/mk.md)
+- [Restriction yields a reduced diagram](reduced-restrict.md)
 
 ## Sources
 

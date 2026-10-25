@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciP_rec
 ---
 
-# Fibonacci P rec
+# Recurrence for Fibonacci p-numbers
 
-Fibonacci `p`-numbers satisfy their defining recurrence above index `p`.
+**Recurrence for Fibonacci p-numbers.** For all natural numbers $p$ and $r$ with $p < r$,
+the Fibonacci $p$-numbers satisfy $F_p(r) = F_p(r-1) + F_p(r-p-1)$.
 
 ## Depends on
 
-- [Fibonacci P](fibonacci-p.md)
+- [Fibonacci p-numbers](fibonacci-p.md)
 
 ## Sources
 

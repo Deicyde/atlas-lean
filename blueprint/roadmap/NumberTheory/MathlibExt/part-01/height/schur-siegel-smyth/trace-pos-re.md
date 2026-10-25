@@ -6,15 +6,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.trace_pos_re
 ---
 
-# Trace pos re
+# The trace of a totally positive algebraic integer has positive real part
 
-The trace of a totally positive algebraic integer is a strictly
-positive real number.
+**The trace of a totally positive algebraic integer has positive real part.** If
+$\alpha \in \mathbb{C}$ is a totally positive algebraic integer, then the real part of the trace
+of $\alpha$ is strictly positive.
 
 ## Depends on
 
-- [Is Totally Positive](is-totally-positive.md)
-- [Trace](trace.md)
+- [Totally positive algebraic integers](is-totally-positive.md)
+- [Trace as the sum of conjugates](trace.md)
 
 ## Proof depends on
 

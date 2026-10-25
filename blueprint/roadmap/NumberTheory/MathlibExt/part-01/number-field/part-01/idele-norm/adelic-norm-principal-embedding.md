@@ -7,24 +7,26 @@ proof: formalized
 lean: NumberField.TopologicalIdeleGroup.adelicNorm_principalEmbedding
 ---
 
-# Adelic Norm principal Embedding
+# Product formula for principal ideles
 
-The adelic norm of a principal idele is one (product formula).
+**Product formula for principal ideles.** Let $K$ be a number field. For every
+$x \in K^\times$, the principal idele of $x$ (its image under the diagonal embedding of $K^\times$
+into the topological idele group, with $R = \mathcal{O}_K$) has adelic norm $1$.
 
 ## Depends on
 
-- [Finite Idele Group](../idele/finite-idele-group.md)
-- [Infinite Idele Group](../idele/infinite-idele-group.md)
-- [Topological Idele Group](../idele/topological-idele-group.md)
+- [Finite idele group](../idele/finite-idele-group.md)
+- [Infinite idele group](../idele/infinite-idele-group.md)
+- [Topological idele group](../idele/topological-idele-group.md)
 - [Adelic Norm](adelic-norm.md)
-- [Principal Embedding](../idele/principal-embedding.md)
-- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
+- [Diagonal map into the ideles](../idele/principal-embedding.md)
+- [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 
 ## Proof depends on
 
-- [Adelic Norm apply](adelic-norm-apply.md)
-- [Finite Principal Embedding](../idele/finite-principal-embedding.md)
-- [Infinite Principal Embedding](../idele/infinite-principal-embedding.md)
+- [Formula for the adelic norm](adelic-norm-apply.md)
+- [Diagonal map into the finite ideles](../idele/finite-principal-embedding.md)
+- [Diagonal map into the infinite ideles](../idele/infinite-principal-embedding.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.isCompleteGesselWord_iff_balance_eq_zero
 ---
 
-# Is Complete Gessel Word iff balance eq zero
+# Complete Gessel words are the Gessel words of zero balance
 
-A word is complete exactly when it is a Gessel word and every letter has zero
-signed balance.
+**Complete Gessel words are the Gessel words of zero balance.** A word $w$ over the Gessel
+alphabet of $[n] = \{1, \dots, n\}$ is a complete Gessel word if and only if it is a Gessel word
+and, for every $m \in [n]$, the signed balance of $m$ in $w$ (the number of occurrences of the
+unbarred letter $m$ minus the number of occurrences of the barred letter $\bar m$) is zero.
 
 ## Depends on
 
 - [Gessel Alphabet](../../part-06/gessel-word/gessel-alphabet.md)
-- [Is Complete Gessel Word](is-complete-gessel-word.md)
+- [Complete Gessel words](is-complete-gessel-word.md)
 - [Is Gessel Word](../../part-06/gessel-word/is-gessel-word.md)
 - [Gessel Balance](../../part-06/gessel-word/gessel-balance.md)
 

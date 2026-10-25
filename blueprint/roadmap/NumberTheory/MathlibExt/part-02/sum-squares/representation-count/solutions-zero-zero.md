@@ -7,13 +7,14 @@ proof: formalized
 lean: SumSquares.solutions_zero_zero
 ---
 
-# Solutions zero zero
+# Solution set of the empty sum at zero
 
-The `k = 0` level set at `n = 0` is universal.
+**Solution set of the empty sum at zero.** The set of vectors $x \in \mathbb{Z}^0$
+whose sum of squares (an empty sum) equals $0$ is all of $\mathbb{Z}^0$.
 
 ## Depends on
 
-- [Solutions](solutions.md)
+- [Integer solutions of a sum of squares](solutions.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Theorem 1: for all large enough `n` there is a positive `m` with
 
 ## Depends on
 
-- [Distinct Multiples Interval Length](../../../MathlibExt/part-04/distinct-multiples-interval/distinct-multiples-interval-length.md)
+- [Least interval length containing distinct multiples](../../../MathlibExt/part-04/distinct-multiples-interval/distinct-multiples-interval-length.md)
 
 ## Sources
 

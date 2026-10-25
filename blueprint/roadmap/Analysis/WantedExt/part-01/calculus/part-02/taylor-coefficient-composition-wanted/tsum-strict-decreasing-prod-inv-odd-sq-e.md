@@ -19,7 +19,7 @@ The source states the identity for $k > 0$; the case $k = 0$ is included here.
 
 ## Depends on
 
-- [Strict Decreasing Tuple](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/strict-decreasing-tuple.md)
+- [Strictly decreasing tuples](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/strict-decreasing-tuple.md)
 
 ## Sources
 

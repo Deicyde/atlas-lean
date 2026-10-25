@@ -6,15 +6,28 @@ proof: formalized
 lean: MetaMathlibExt.trudiPartitionSum_eq_sum_compositions
 ---
 
-# Trudi Partition Sum eq sum compositions
+# Trudi's partition sum as a sum over compositions
 
-Trudi's partition sum equals the composition sum weighted by `s` per part:
-`∑_{α̃ = n} s^{|α|} m_n(α) a_1^{α₁} ⋯ a_n^{αₙ} = ∑_{c ⊨ n} s^{ℓ(c)} ∏ a_{c_i}`. The multinomial
-coefficient `m_n(α)` counts the compositions whose part multiplicities are `α`.
+**Trudi's partition sum as a sum over compositions.** Let $R$ be a commutative semiring, let
+$s \in R$, let $a_0, a_1, a_2, \dots$ be elements of $R$ and let $n \ge 0$. Trudi's partition sum
+
+$$\sum_\alpha s^{|\alpha|} m_n(\alpha) \, a_1^{\alpha_1} a_2^{\alpha_2} \cdots a_n^{\alpha_n},$$
+
+taken over the tuples $\alpha = (\alpha_1, \dots, \alpha_n)$ of nonnegative integers with
+$\alpha_1 + 2\alpha_2 + \dots + n\alpha_n = n$, where $|\alpha| = \alpha_1 + \dots + \alpha_n$ and
+$m_n(\alpha) = |\alpha|! / (\alpha_1! \cdots \alpha_n!)$, equals
+
+$$\sum_c s^{\ell(c)} \, a_{c_1} a_{c_2} \cdots a_{c_{\ell(c)}},$$
+
+where $c = (c_1, \dots, c_{\ell(c)})$ runs over the compositions of $n$, that is, the finite
+sequences of positive integers with sum $n$, and $\ell(c)$ is the number of parts of $c$.
+
+The multinomial coefficient $m_n(\alpha)$ counts the compositions of $n$ in which each part $i$
+occurs $\alpha_i$ times.
 
 ## Depends on
 
-- [Trudi Partition Sum](trudi-partition-sum.md)
+- [Trudi's partition sum](trudi-partition-sum.md)
 
 ## Proof depends on
 

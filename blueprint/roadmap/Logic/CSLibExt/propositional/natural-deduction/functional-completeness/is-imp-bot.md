@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Logic.PL.Proposition.IsImpBot
 ---
 
-# Is Imp Bot
+# Propositions built from $\to$ and $\bot$
 
-`A` uses no connective other than `→`.
+**Propositions built from $\to$ and $\bot$.** A proposition is built from $\to$ and $\bot$
+when it contains no conjunction and no disjunction: every atom (including $\bot$, which is an
+atom) is, and $A \to B$ is exactly when both $A$ and $B$ are.
 
 ## Depends on
 

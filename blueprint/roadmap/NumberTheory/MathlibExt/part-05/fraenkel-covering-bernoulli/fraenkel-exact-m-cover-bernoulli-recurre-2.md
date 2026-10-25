@@ -7,32 +7,31 @@ proof: formalized
 lean: MetaMathlibExt.fraenkel_exact_M_cover_bernoulli_recurrence
 ---
 
-# Fraenkel exact M cover bernoulli recurrence
+# Fraenkel's Bernoulli recurrence for exact covers
 
-Fraenkel exact `M`-cover Bernoulli recurrence (normalized indexed form).
+**Fraenkel's Bernoulli recurrence for exact covers.** Let $q \ge 2$, $m \ge 1$ and $M$ be
+natural numbers, and for $i = 1, \dots, q$ let $n_i$ be a positive integer and $a_i$ an integer
+with $0 \le a_i < n_i$. Suppose the residue classes $a_i \bmod n_i$, counted with repetition,
+form an exact $M$-cover of $\mathbb{Z}$: every integer $k$ satisfies $k \equiv a_i \pmod{n_i}$
+for exactly $M$ indices $i$. Then
 
-Uses the source convention `B₁ = -1/2`, matching Mathlib's `bernoulli : ℕ → ℚ`
-from `Mathlib.NumberTheory.Bernoulli`. The auxiliary polynomial
-`bhat_m(t) = ∑_{s=0}^{m-1} B_s * choose(m,s) * t^(m-s)` is inlined as the
-`Finset.range m` sum on the right-hand side.
+$$
+B_m \Big(M - \sum_{i=1}^{q} n_i^{m-1}\Big) =
+\sum_{i=1}^{q} n_i^{m-1} \sum_{s=0}^{m-1} \binom{m}{s} B_s \Big(\frac{a_i}{n_i}\Big)^{m-s},
+$$
 
-The normalized indexed exact `M`-cover hypotheses are `q ≥ 2`, `m ≥ 1`,
-`n i > 0`, `a i < n i`, with repeated residue classes preserved by indexing
-with `Fin q`. The exact-cover hypothesis is encoded with the repository API
-`Int.indexedCoverMultiplicity` (moduli `n`, residues `(a i : ℤ)`), asserting
-multiplicity `M` for every `k : ℤ`.
+where $B_s$ is the $s$-th Bernoulli number, with the convention $B_1 = -\frac{1}{2}$.
 
-Scope: this file states only equation (23) in the direction above. It does not
-add the iff converse, the Beebee `x`-parameter variant, or the Porubsky
-weighted variant.
+Only this direction of the source's equation (23) is stated; the converse, Beebee's variant with
+a parameter $x$, and Porubsky's weighted variant are not.
 
 ## Depends on
 
-- [Indexed Cover Multiplicity](../../part-01/covering-system/exact-cover/indexed-cover-multiplicity.md)
+- [Multiplicity of an indexed system of residue classes](../../part-01/covering-system/exact-cover/indexed-cover-multiplicity.md)
 
 ## Proof depends on
 
-- [Fraenkel exact M cover bernoulli recurrence general](fraenkel-exact-m-cover-bernoulli-recurre.md)
+- [Fraenkel's Bernoulli recurrence for exact covers by any number of classes](fraenkel-exact-m-cover-bernoulli-recurre.md)
 
 ## Sources
 

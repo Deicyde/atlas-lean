@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.image_isometryEquiv
 ---
 
-# Image isometry Equiv
+# Equidecomposability of a set with its isometric image
 
-An isometry maps a set to its image equidecomposably.
+**Equidecomposability of a set with its isometric image.** Let $g$ be an isometric bijection
+of a metric space $X$ onto itself. Then every subset $A$ of $X$ is finitely equidecomposable by
+isometries with its image $g(A)$.
 
 ## Depends on
 
-- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
+- [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

@@ -13,8 +13,8 @@ particular, if `n - x·b - f < 0` then `n` is not a comma-child of any positive 
 
 ## Depends on
 
-- [Is Comma Candidate](../../../../MathlibExt/part-04/comma-sequence/is-comma-candidate.md)
-- [Comma Msd](../../../../MathlibExt/part-04/comma-sequence/comma-msd.md)
+- [Comma candidate digits](../../../../MathlibExt/part-04/comma-sequence/is-comma-candidate.md)
+- [Most significant digit](../../../../MathlibExt/part-04/comma-sequence/comma-msd.md)
 
 ## Sources
 

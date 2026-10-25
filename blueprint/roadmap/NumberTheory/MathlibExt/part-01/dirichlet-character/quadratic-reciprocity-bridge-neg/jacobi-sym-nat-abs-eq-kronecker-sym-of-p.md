@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.jacobiSym_natAbs_eq_kroneckerSym_of_prime_ne_two_of_one_mod_four_neg
 ---
 
-# Jacobi Sym nat Abs eq kronecker Sym of prime ne two of one mod four neg
+# Kronecker symbol at odd primes for negative integers congruent to 1 mod 4
 
-Reciprocity bridge for negative `D` with `D % 4 = 1` at an odd prime `p`.
-Covers `D < 0`; the positive case is proved separately.
+**Kronecker symbol at odd primes for negative integers congruent to 1 mod 4.** Let $D$ be a
+negative integer with $D \equiv 1 \pmod 4$ and let $p$ be an odd prime. Then the Jacobi symbol
+$\left(\frac{p}{|D|}\right)$ equals the Kronecker symbol $\left(\frac{D}{p}\right)$.
 
 ## Depends on
 
-- [Kronecker Sym](../quadratic/kronecker-sym.md)
+- [Kronecker symbol](../quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Quadratic Character Aux](../kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
+- [Kronecker and Jacobi symbols agree at odd primes](../kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.LocalExponentFamily
 ---
 
-# Local Exponent Family
+# Family of local exponents
 
-A family of local Langlands exponents, indexed by an arbitrary type
-of local components. The two fields record the pointwise range
-`0 ≤ m ≤ 1/2`; the upper bound is the Jacquet--Shalika range for genuine
-cuspidal data. The index type is part of the data, so this is an
-exponent-of-a-family construction rather than a purported fixed `δ₂`.
+**Family of local exponents.** A local-exponent family indexed by a type $\iota$ is a function
+$m : \iota \to \mathbb{R}$, the local Langlands exponents, with $0 \le m(i) \le 1/2$ for every
+$i \in \iota$.
+
+The upper bound $1/2$ is the Jacquet--Shalika range for genuine cuspidal data. The index type is
+part of the data, so the exponent of such a family is a construction attached to the family, not
+a definition of the fixed Ramanujan exponent $\delta_2$ of $\mathrm{GL}_2$.
 
 ## Depends on
 

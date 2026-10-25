@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.primeCounting_le_sub_one
 ---
 
-# Prime Counting le sub one
+# At most $r - 1$ primes up to $r$
 
-A very elementary bound: there are at most `r - 1` primes up to `r`, since all such primes
-lie in `{2, ..., r}`.
+**At most $r - 1$ primes up to $r$.** For every natural number $r \ge 2$, the number
+$\pi(r)$ of primes $p \le r$ satisfies $\pi(r) \le r - 1$, since all such primes lie in
+$\{2, \dots, r\}$.
 
 ## Depends on
 

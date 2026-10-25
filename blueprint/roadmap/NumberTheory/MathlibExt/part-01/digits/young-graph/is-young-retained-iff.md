@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isYoungRetained_iff
 ---
 
-# Is Young Retained iff
+# Characterization of retained nodes
 
-Characteristic lemma for retention: a node is retained exactly when it is
-a pivot or precedes some pivot.
+**Characterization of retained nodes.** Let $V$ be a set, let $P$ be a predicate on $V$ and
+let $\prec$ be a binary relation on $V$. A node $v \in V$ is retained with respect to $P$ and
+$\prec$ if and only if $P(v)$ holds or there is a node $w \in V$ with $P(w)$ and $v \prec w$.
 
 ## Depends on
 
-- [Is Young Retained](is-young-retained.md)
+- [Retained node](is-young-retained.md)
 
 ## Sources
 

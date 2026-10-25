@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.Overlap
 ---
 
-# Overlap
+# Overlap count of two finite sets of integers
 
-The number of solutions to `a - b = k` with `a ∈ A` and `b ∈ B`.
+**Overlap count of two finite sets of integers.** For finite sets $A, B \subseteq \mathbb{Z}$
+and an integer $k$, the overlap of $A$ and $B$ at $k$ is the number of pairs
+$(a, b) \in A \times B$ with $a - b = k$.
 
 ## Depends on
 

@@ -19,8 +19,8 @@ variable $x$ in the construction for $\varphi$.
 - [Arcs of a variable diamond](../ham-path/diamond-edges.md)
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

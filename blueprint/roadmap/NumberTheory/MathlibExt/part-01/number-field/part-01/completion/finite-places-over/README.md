@@ -5,5 +5,5 @@ navigation: module
 
 # Finite Places Over
 
-- [Places Over](places-over.md)
-- [Places Over Equiv Primes Over](places-over-equiv-primes-over.md)
+- [Finite places lying over a finite place](places-over.md)
+- [Places over a finite place correspond to primes over it](places-over-equiv-primes-over.md)

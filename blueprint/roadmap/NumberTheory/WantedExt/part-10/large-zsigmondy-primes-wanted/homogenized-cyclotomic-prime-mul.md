@@ -13,7 +13,7 @@ if `p ∤ n`, for all integers `a`, `b`.
 
 ## Depends on
 
-- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

@@ -11,11 +11,11 @@ A clause is satisfied when at least one of its literals is satisfied.
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Satisfies](satisfies.md)
+- [Satisfaction of a literal](satisfies.md)
 
 ## Sources
 

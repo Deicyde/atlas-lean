@@ -5,7 +5,7 @@ navigation: module
 
 # Part1 Ch3 Entry3
 
-- [F Coeff eq generalized Bell Generating](f-coeff-eq-generalized-bell-generating.md)
-- [Psi eq entry9 P](psi-eq-entry9-p.md)
-- [Ramanujan part1 ch3 entry3 general](ramanujan-part1-ch3-entry3-general.md)
-- [Ramanujan part1 ch3 entry3](ramanujan-part1-ch3-entry3.md)
+- [Entry 3 coefficients as generalized Bell values](f-coeff-eq-generalized-bell-generating.md)
+- [Ramanujan's factorial series as the Entry 9 product series at $a = 0$, $b = 1$](psi-eq-entry9-p.md)
+- [Asymptotic expansion of Ramanujan's factorial series, for every $x$](ramanujan-part1-ch3-entry3-general.md)
+- [Ramanujan's asymptotic expansion of a factorial series](ramanujan-part1-ch3-entry3.md)

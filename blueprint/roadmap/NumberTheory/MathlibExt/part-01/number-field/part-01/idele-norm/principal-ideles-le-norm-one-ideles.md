@@ -7,25 +7,27 @@ proof: formalized
 lean: NumberField.TopologicalIdeleGroup.principalIdeles_le_normOneIdeles
 ---
 
-# Principal Ideles le norm One Ideles
+# Principal ideles have norm one
 
-Every principal idele has adelic norm one.
+**Principal ideles have norm one.** Let $K$ be a number field. The subgroup of principal
+ideles of $K$ (with $R = \mathcal{O}_K$) is contained in the subgroup of norm-one ideles; that
+is, every principal idele has adelic norm $1$.
 
 ## Depends on
 
-- [Finite Idele Group](../idele/finite-idele-group.md)
-- [Infinite Idele Group](../idele/infinite-idele-group.md)
-- [Topological Idele Group](../idele/topological-idele-group.md)
-- [Norm One Ideles](norm-one-ideles.md)
-- [Principal Ideles](../idele/principal-ideles.md)
-- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
+- [Finite idele group](../idele/finite-idele-group.md)
+- [Infinite idele group](../idele/infinite-idele-group.md)
+- [Topological idele group](../idele/topological-idele-group.md)
+- [Norm-one ideles](norm-one-ideles.md)
+- [Principal ideles](../idele/principal-ideles.md)
+- [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 
 ## Proof depends on
 
 - [Adelic Norm](adelic-norm.md)
-- [Adelic Norm principal Embedding](adelic-norm-principal-embedding.md)
-- [Mem norm One Ideles](mem-norm-one-ideles.md)
-- [Principal Embedding](../idele/principal-embedding.md)
+- [Product formula for principal ideles](adelic-norm-principal-embedding.md)
+- [Membership in the norm-one ideles](mem-norm-one-ideles.md)
+- [Diagonal map into the ideles](../idele/principal-embedding.md)
 
 ## Sources
 

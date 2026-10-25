@@ -12,7 +12,7 @@ Wieferich prime, `2^{p-1} ≡ 1 (mod p²)`; in particular `p ≥ 3511`.
 
 ## Depends on
 
-- [Is Even Pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
+- [Even pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
 
 ## Sources
 

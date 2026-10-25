@@ -7,18 +7,23 @@ proof: formalized
 lean: NumberField.one_le_algebraicMahlerMeasure
 ---
 
-# One le algebraic Mahler Measure
+# The algebraic Mahler measure is at least one
 
-A positive integral leading coefficient makes the actual Mahler measure at least one.
+**The algebraic Mahler measure is at least one.** For every element $x$ of a field $K$ that
+is an algebra over $\mathbb{Q}$, the algebraic Mahler measure $M(x)$ of $x$ satisfies
+$1 \le M(x)$.
+
+This holds because the positive primitive integral minimal polynomial of $x$ has a positive
+integer leading coefficient.
 
 ## Depends on
 
-- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
+- [Algebraic Mahler measure](algebraic-mahler-measure.md)
 
 ## Proof depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
-- [Positive Primitive Int Minpoly leading Coeff pos](positive-primitive-int-minpoly-leading-c.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
+- [The positive primitive integral minimal polynomial has positive leading coefficient](positive-primitive-int-minpoly-leading-c.md)
 
 ## Sources
 

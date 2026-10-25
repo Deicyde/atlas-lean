@@ -15,7 +15,7 @@ representational deviation.
 
 ## Depends on
 
-- [Poly Bernoulli](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
+- [Poly-Bernoulli numbers](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
 - [Poly Bernoulli Poly](poly-bernoulli-poly.md)
 
 ## Sources

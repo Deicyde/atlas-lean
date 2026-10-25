@@ -13,9 +13,9 @@ least that of `X^3 - X - 1` (the plastic number `1.324717...`).
 
 ## Depends on
 
-- [Is Reciprocal](../../../../MathlibExt/part-01/height/lehmer-constant/is-reciprocal.md)
-- [Int Mahler Measure](../../../../MathlibExt/part-01/height/lehmer-constant/int-mahler-measure.md)
-- [Smyth Polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/smyth-polynomial.md)
+- [Reciprocal polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/is-reciprocal.md)
+- [Mahler measure of an integer polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/int-mahler-measure.md)
+- [Smyth's polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/smyth-polynomial.md)
 
 ## Sources
 

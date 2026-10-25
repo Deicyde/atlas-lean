@@ -7,20 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.quadraticDirichletCharacter
 ---
 
-# Quadratic Dirichlet Character
+# Quadratic Dirichlet character of a fundamental discriminant
 
-Quadratic Dirichlet character attachment from the source contract.
+**Quadratic Dirichlet character of a fundamental discriminant.** Let $D$ be a fundamental
+discriminant. Then there is a unique integer-valued Dirichlet character $\chi$ modulo $|D|$ such
+that $\chi(n \bmod |D|) = \left(\frac{D}{n}\right)$ for every natural number $n$, where
+$\left(\frac{D}{n}\right)$ is the Kronecker symbol.
 
 ## Depends on
 
-- [Is Fundamental Discriminant](quadratic/is-fundamental-discriminant.md)
-- [Kronecker Sym](quadratic/kronecker-sym.md)
+- [Fundamental discriminant](quadratic/is-fundamental-discriminant.md)
+- [Kronecker symbol](quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
-- [Kronecker At Two](quadratic/kronecker-at-two.md)
-- [Quadratic Character Aux](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
+- [Kronecker symbol at a prime](quadratic/kronecker-at-prime.md)
+- [Kronecker symbol at two](quadratic/kronecker-at-two.md)
+- [Kronecker and Jacobi symbols agree at odd primes](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

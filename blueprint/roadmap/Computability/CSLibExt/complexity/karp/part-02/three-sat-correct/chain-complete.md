@@ -23,7 +23,7 @@ literals. Then $v'$ satisfies every clause of $\mathrm{chain}(C, u)$.
 - [Renaming of the original variables](../three-sat/ren.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
@@ -31,8 +31,8 @@ literals. Then $v'$ satisfies every clause of $\mathrm{chain}(C, u)$.
 - [The tail of a clause chain](../three-sat/chain-tail.md)
 - [Completeness of the tail of a chain](chain-tail-complete.md)
 - [Renaming a literal](../three-sat/ren-lit.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

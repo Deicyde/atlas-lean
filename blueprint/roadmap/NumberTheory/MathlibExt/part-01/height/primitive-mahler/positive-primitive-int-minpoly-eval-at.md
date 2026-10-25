@@ -7,17 +7,20 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_eval₂_at
 ---
 
-# Positive Primitive Int Minpoly eval₂ at
+# An algebraic element is a root of its positive primitive integral minimal polynomial
 
-The signed primitive polynomial vanishes at the actual algebraic input.
+**An algebraic element is a root of its positive primitive integral minimal polynomial.** Let
+$K$ be a field of characteristic zero that is an algebra over $\mathbb{Q}$, and let $x \in K$ be
+algebraic over $\mathbb{Q}$. Then the positive primitive integral minimal polynomial of $x$, with
+its integer coefficients mapped into $K$, vanishes at $x$.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Absolute](../primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

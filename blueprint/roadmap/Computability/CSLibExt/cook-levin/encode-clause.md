@@ -14,7 +14,7 @@ and polarity $b$ is coded by the prefix-free code of $x$ followed by the bit $b$
 
 ## Depends on
 
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

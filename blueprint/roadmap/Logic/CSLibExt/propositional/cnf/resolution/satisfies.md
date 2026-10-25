@@ -6,17 +6,17 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.ResolutionDerivable.satisfies
 ---
 
-# Soundness
+# Soundness of resolution
 
-**Soundness**: every clause derived by resolution holds under every assignment
-satisfying the formula.
+**Soundness of resolution.** Let $\varphi$ be a CNF formula. Every clause derivable by
+resolution from $\varphi$ is satisfied by every assignment that satisfies $\varphi$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
-- [Resolution Derivable](resolution-derivable.md)
+- [CNF formula](../basic/cnf.md)
+- [Resolution derivability](resolution-derivable.md)
 - [Satisfies](../semantics/satisfies-3.md)
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](../semantics/satisfies-2.md)
 
 ## Proof depends on

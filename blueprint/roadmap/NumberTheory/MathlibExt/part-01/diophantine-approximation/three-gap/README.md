@@ -5,6 +5,6 @@ navigation: module
 
 # Three Gap
 
-- [Is Three Gap Point](is-three-gap-point.md)
-- [Is Three Gap Length](is-three-gap-length.md)
-- [Three gap](three-gap.md)
+- [Points of the three-gap configuration](is-three-gap-point.md)
+- [Gap lengths of the three-gap configuration](is-three-gap-length.md)
+- [Three-gap theorem](three-gap.md)

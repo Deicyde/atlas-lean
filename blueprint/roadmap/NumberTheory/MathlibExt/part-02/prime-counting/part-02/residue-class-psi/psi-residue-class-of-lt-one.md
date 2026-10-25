@@ -7,13 +7,16 @@ proof: formalized
 lean: Chebyshev.psiResidueClass_of_lt_one
 ---
 
-# Psi Residue Class of lt one
+# The residue-class Chebyshev function vanishes below one
 
-The residue-class von Mangoldt sum vanishes below one.
+**The residue-class Chebyshev function vanishes below one.** For every natural number $q$,
+every residue class $a \in \mathbb{Z}/q\mathbb{Z}$ and every real number $x < 1$, we have
+$\psi(x; q, a) = 0$, where $\psi(x; q, a)$ is the sum of the von Mangoldt function $\Lambda(n)$
+over the positive integers $n \le x$ with $n \equiv a \pmod q$.
 
 ## Depends on
 
-- [Psi Residue Class](psi-residue-class.md)
+- [Chebyshev's function in a residue class](psi-residue-class.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`).
 
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

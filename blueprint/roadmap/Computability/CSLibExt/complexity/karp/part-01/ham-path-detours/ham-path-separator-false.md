@@ -22,8 +22,8 @@ $l' + 1 = l$. Then $R_{i,l'}$ comes immediately before or immediately after $R_{
 - [Distinct variables of a formula](../ham-path/ham-vars.md)
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

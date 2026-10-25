@@ -7,22 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.isIncreasingAdmissible_iff_reverse_isAdmissible
 ---
 
-# Is Increasing Admissible iff reverse is Admissible
+# Increasing admissibility is admissibility of the reverse
 
-Increasing admissibility is decreasing admissibility after reversing the index.
+**Increasing admissibility is admissibility of the reverse.** An index is admissible in the
+increasing convention (nonempty with last entry at least two) if and only if its reverse is
+admissible (nonempty with first entry at least two).
 
 ## Depends on
 
-- [Index](../index/index.md)
-- [Is Admissible](../index/is-admissible.md)
-- [Is Increasing Admissible](is-increasing-admissible.md)
-- [Reverse](reverse.md)
+- [Multiple-zeta index](../index/index.md)
+- [Admissible index](../index/is-admissible.md)
+- [Admissibility in the increasing convention](is-increasing-admissible.md)
+- [Reversed index](reverse.md)
 
 ## Proof depends on
 
-- [Entries](../index/entries.md)
-- [Is Admissible iff](../index/is-admissible-iff.md)
-- [Is Admissible](../index/is-admissible-2.md)
+- [Entries of an index](../index/entries.md)
+- [Admissibility of an index via its entries](../index/is-admissible-iff.md)
+- [Admissible list](../index/is-admissible-2.md)
 
 ## Sources
 

@@ -7,10 +7,13 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_prod_erdos_div_three_layers_lt_start_pow
 ---
 
-# Consecutive of factorial mul prod erdos div three layers lt start pow
+# Erdős layer criterion with a one-third first layer for a large prime in a consecutive block
 
-Conditional consecutive form using the `N / 3` first-layer Erdős product estimate.
-This criterion does not require a central-range assumption.
+**Erdős layer criterion with a one-third first layer for a large prime in a consecutive block.**
+Let $n < k$ be natural numbers, write $N = k + n - 1$ and $L = \lfloor \log_2 N \rfloor$, assume
+$N \ge 6$, and for a natural number $m$ let $P(m)$ denote the product of all primes at most $m$.
+If $n! \cdot P(\lfloor N/3 \rfloor) \cdot \prod_{i=2}^{L} P(\lfloor N^{1/i} \rfloor) < k^n$, then
+some prime $p > n$ divides one of the integers $k, k+1, \dots, k+n-1$.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
-- [Exists large prime dvd choose of factorial mul prod erdos div three layers lt lower pow](../erdos-layers/exists-large-prime-dvd-choose-of-factori.md)
+- [From a large prime divisor of the binomial coefficient to one in the block](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+- [Erdős layer criterion, factorial form](../erdos-layers/exists-large-prime-dvd-choose-of-factori.md)
 
 ## Sources
 

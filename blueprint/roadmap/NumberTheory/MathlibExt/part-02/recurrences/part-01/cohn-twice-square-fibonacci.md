@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.cohn_twice_square_fibonacci
 ---
 
-# Cohn Twice Square Fibonacci
+# Cohn's theorem on Fibonacci numbers of the form $2x^2$
 
-Cohn's twice-square-Fibonacci classification (Keskin–Yosma Theorem 2.1,
-second claim): for `0 < n`, `Fₙ = 2x²` forces `n ∈ {3, 6}`.
+**Cohn's theorem on Fibonacci numbers of the form $2x^2$.** Let $F_n$ denote the Fibonacci
+numbers, with $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$. If $n$ and $x$ are natural
+numbers with $n \ge 1$ and $F_n = 2x^2$, then $n \in \{3, 6\}$.
+
+This is the second claim of Theorem 2.1 of Keskin and Yosma.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Fibonacci Lucas](../part-02/cohn-square-lucas.md)
-- [Cohn Twice Square Lucas](cohn-twice-square-lucas.md)
+- [Cohn's theorem on square Lucas numbers](../part-02/cohn-square-lucas.md)
+- [Cohn's theorem on Lucas numbers of the form $2x^2$](cohn-twice-square-lucas.md)
 - [Lucas Number](../../../part-08/lucas-sequence/lucas-number.md)
 
 ## Sources

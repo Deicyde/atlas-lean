@@ -17,14 +17,14 @@ not complementary (the same variable with opposite polarities).
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Adjacency bits of Karp's clique graph](clique-bits.md)
 - [Encoding of a graph instance](encode-kg.md)
 - [Literal occurrences of a CNF formula](occs.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The unconditional upper bound on Brun's constant.
 
 ## Depends on
 
-- [Brun Constant](../../../../../MathlibExt/part-02/prime-counting/part-01/brun-constant/brun-constant.md)
+- [Brun's constant](../../../../../MathlibExt/part-02/prime-counting/part-01/brun-constant/brun-constant.md)
 
 ## Sources
 

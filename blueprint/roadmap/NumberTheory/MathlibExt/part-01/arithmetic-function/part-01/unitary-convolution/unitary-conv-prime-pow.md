@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.unitaryConv_prime_pow
 ---
 
-# Unitary Conv prime pow
+# Unitary convolution at prime powers
 
-`(f ⊔ g)(p ^ m) = f(1) g(p ^ m) + f(p ^ m) g(1)` for a prime `p` and `m ≥ 1`.
+**Unitary convolution at prime powers.** Let $R$ be a semiring and let $f$ and $g$ be
+arithmetic functions with values in $R$. For every prime $p$ and every natural number $m \ge 1$,
+their unitary convolution $f \sqcup g$ satisfies
+$(f \sqcup g)(p^m) = f(1)\, g(p^m) + f(p^m)\, g(1)$.
 
 ## Depends on
 
-- [Unitary Conv](unitary-conv.md)
+- [Unitary convolution](unitary-conv.md)
 
 ## Proof depends on
 
-- [Unitary Conv apply](unitary-conv-apply.md)
+- [Unitary convolution as a sum over unitary divisors](unitary-conv-apply.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
-- [Unitary Divisors prime pow](unitary-divisors-prime-pow.md)
+- [Unitary divisors of a prime power](unitary-divisors-prime-pow.md)
 
 ## Sources
 

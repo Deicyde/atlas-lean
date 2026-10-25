@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.powOmega
 ---
 
-# Pow Omega
+# The arithmetic function $c^{\Omega}$
 
-The completely multiplicative arithmetic function `c ^ Ω`, `n ↦ c ^ Ω(n)` for `n ≥ 1`
-(`Ω = ArithmeticFunction.cardFactors` counts prime factors with multiplicity).
+**The arithmetic function $c^{\Omega}$.** Let $R$ be a monoid with zero and let $c \in R$. This
+is the arithmetic function $c^{\Omega}$ with values in $R$ given by $c^{\Omega}(0) = 0$ and
+$c^{\Omega}(n) = c^{\Omega(n)}$ for $n \ge 1$, where $\Omega(n)$ is the number of prime factors of
+$n$ counted with multiplicity. It is completely multiplicative.
 
 ## Depends on
 

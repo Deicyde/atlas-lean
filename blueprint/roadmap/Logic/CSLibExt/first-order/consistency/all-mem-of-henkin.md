@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent.all_mem_of_henkin
 ---
 
-# All mem of henkin
+# Universal formulas from Henkin witnesses
 
-In a maximal consistent set containing a Henkin axiom for `∀' φ`, the formula `∀' φ` holds
-as soon as all its instances do.
+**Universal formulas from Henkin witnesses.** Let $\alpha$ be an infinite set of
+variables and let $\Delta$ be a maximal consistent set of formulas with free variables in
+$\alpha$. Let $\varphi(x)$ be a formula with one bound variable $x$ left open, let
+$c \in \alpha$, and write $\varphi(c)$ for the result of substituting $c$ for $x$. If
+$\Delta$ contains the Henkin axiom for $\forall x\, \varphi$ with witness $c$ and contains
+$\varphi(c)$, then $\Delta$ contains $\forall x\, \varphi$.
 
 ## Depends on
 
-- [Maximal Consistent](maximal-consistent.md)
-- [Henkin Axiom](henkin-axiom.md)
-- [Instantiate](../syntax/instantiate.md)
+- [Maximal consistent set](maximal-consistent.md)
+- [Henkin axiom](henkin-axiom.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Mem of provable](mem-of-provable.md)
-- [Not mem iff](not-mem-iff.md)
-- [Provable](../natural-deduction/provable.md)
-- [Mp](mp.md)
+- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets decide every formula](not-mem-iff.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
+- [Modus ponens for provability from sets](mp.md)
 
 ## Sources
 

@@ -13,11 +13,11 @@ The `p`-adic Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-- [Padic Hilbert Symbol](padic-hilbert-symbol.md)
+- [The $p$-adic Hilbert symbol](padic-hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Eq one or neg one](eq-one-or-neg-one.md)
+- [The Hilbert symbol of a field is $\pm 1$](eq-one-or-neg-one.md)
 
 ## Sources
 

@@ -6,15 +6,12 @@ statement: formalized
 lean: Rat.Place.CompletedFieldBundle
 ---
 
-# Completed Field Bundle
+# Bundled complete normed field
 
-Bundled carrier together with the `NormedField` / `CompleteSpace`
-instances needed for the completed field `ℚ_v`.
-
-Using a bundle avoids a direct dependent family `Place → Type` returning
-`Padic p`, which loses the local `Fact` dictionary and causes kernel
-declaration mismatches in projected instances. Instance-valued fields use
-bracket syntax so the bundle itself carries the instances.
+**Bundled complete normed field.** A complete normed field bundled with its structure: a type
+$K$ together with a normed field structure on $K$ for which $K$ is complete with respect to the
+metric induced by the norm. It is used to package the completed fields $\mathbb{Q}_v$ of
+$\mathbb{Q}$ at its places $v$.
 
 ## Depends on
 

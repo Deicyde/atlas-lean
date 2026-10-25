@@ -7,17 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.IsIntegerCFiniteSequence.exists_isSolution_tail
 ---
 
-# Exists is Solution tail
+# A tail of a C-finite sequence satisfies a linear recurrence
 
-A C-finite sequence has a tail that is a solution of a `LinearRecurrence`.
+**A tail of a C-finite sequence satisfies a linear recurrence.** If an integer sequence $s$
+is C-finite, then there are a shift $q \in \mathbb{N}$, an order $p \in \mathbb{N}$ and integers
+$c_0, \dots, c_{p-1}$ such that the shifted sequence $t(n) = s(n + q)$ satisfies
+$t(n + p) = \sum_{i=0}^{p-1} c_i \, t(n + i)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is Integer CFinite Sequence](is-integer-cfinite-sequence.md)
+- [C-finite integer sequences](is-integer-cfinite-sequence.md)
 
 ## Proof depends on
 
-- [Is Solution tail of c Finite Witness](is-solution-tail-of-c-finite-witness.md)
+- [Discarding the exceptional prefix of a C-finite recurrence](is-solution-tail-of-c-finite-witness.md)
 
 ## Sources
 

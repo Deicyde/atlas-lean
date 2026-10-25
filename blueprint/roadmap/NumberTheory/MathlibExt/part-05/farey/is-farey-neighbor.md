@@ -6,10 +6,11 @@ statement: formalized
 lean: Farey.IsFareyNeighbor
 ---
 
-# Is Farey Neighbor
+# Farey neighbors
 
-Ordered Farey neighbor: consecutive in `F_n` with no intermediate
-Farey fraction.
+**Farey neighbors.** For a natural number $n$, rationals $x$ and $y$ are Farey neighbors of
+order $n$ when both lie in the Farey set $F_n$, $x < y$, and no element $z$ of $F_n$ satisfies
+$x < z < y$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Farey Finset](farey-finset.md)
+- [Farey set](farey-finset.md)
 
 ## Sources
 

@@ -7,21 +7,27 @@ proof: formalized
 lean: Nat.Primes.logDirichlet_meromorphicContinuation
 ---
 
-# Log Dirichlet meromorphic Continuation
+# Meromorphic continuation of the prime logarithmic Dirichlet series
 
-NumberTheoryI Lemma 16.11: one continuation with all three properties.
+**Meromorphic continuation of the prime logarithmic Dirichlet series.** Let
+$\Phi(s) = \sum_p \frac{\log p}{p^s}$ be the prime logarithmic Dirichlet series. There is a
+function $g : \mathbb{C} \to \mathbb{C}$ that is meromorphic on the open half-plane
+$\operatorname{Re} s > 1/2$, analytic at every point of the closed half-plane
+$\operatorname{Re} s \ge 1$, and satisfies $g(s) = \Phi(s) - \frac{1}{s-1}$ whenever
+$\operatorname{Re} s > 1$.
 
 ## Depends on
 
-- [Log Dirichlet Series](log-dirichlet-series.md)
+- [Prime logarithmic Dirichlet series](log-dirichlet-series.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+- [The canonical prime logarithmic continuation](log-dirichlet-continuation.md)
 - [Log Dirichlet Continuation agree](log-dirichlet-continuation-agree.md)
-- [Log Dirichlet Continuation analytic On](log-dirichlet-continuation-analytic-on.md)
-- [Log Dirichlet Continuation meromorphic](log-dirichlet-continuation-meromorphic.md)
+- [Analyticity of the prime logarithmic continuation](log-dirichlet-continuation-analytic-on.md)
+- [Meromorphy of the prime logarithmic continuation](log-dirichlet-continuation-meromorphic.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.PrimeLog](../../../../../../sources/v2/MathlibExt.md)
+- NumberTheoryI Lemma 16.11.

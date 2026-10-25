@@ -7,23 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.CyclicSumFormula.rightIndex_isAdmissibleOrEmpty
 ---
 
-# Right Index is Admissible Or Empty
+# Right-hand indices of the cyclic sum formula are admissible or empty
 
-The right-hand index is always admissible or empty.
+**Right-hand indices of the cyclic sum formula are admissible or empty.** For every list
+$k = (k_1, \dots, k_l)$ of positive integers and every $1 \le j \le l$, the right-hand index of
+the cyclic sum formula of $k$ at $j$ is admissible or empty.
 
 ## Depends on
 
-- [Right Index](right-index.md)
-- [Is Admissible Or Empty](../series/is-admissible-or-empty.md)
+- [Right-hand indices of the cyclic sum formula](right-index.md)
+- [Admissible or empty index](../series/is-admissible-or-empty.md)
 
 ## Proof depends on
 
-- [To Index](to-index.md)
-- [Is Admissible](../index/is-admissible.md)
-- [Depth](../index/depth.md)
-- [Entries](../index/entries.md)
-- [Is Admissible iff](../index/is-admissible-iff.md)
-- [Is Admissible](../index/is-admissible-2.md)
+- [The index of a list of positive integers](to-index.md)
+- [Admissible index](../index/is-admissible.md)
+- [Depth of an index](../index/depth.md)
+- [Entries of an index](../index/entries.md)
+- [Admissibility of an index via its entries](../index/is-admissible-iff.md)
+- [Admissible list](../index/is-admissible-2.md)
 
 ## Sources
 

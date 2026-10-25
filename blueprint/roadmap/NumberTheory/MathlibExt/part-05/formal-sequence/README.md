@@ -5,6 +5,6 @@ navigation: module
 
 # Formal Sequence
 
-- [Formal Alpha](formal-alpha.md)
-- [Formal Beta](formal-beta.md)
-- [Is Formal Sequence](is-formal-sequence.md)
+- [Coefficient of the formal-sequence recurrence](formal-alpha.md)
+- [Constant term of the formal-sequence recurrence](formal-beta.md)
+- [Formal sequence from a seed triplet](is-formal-sequence.md)

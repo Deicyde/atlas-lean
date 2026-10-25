@@ -6,13 +6,14 @@ proof: formalized
 lean: FirstOrder.Language.groupLanguage_relations
 ---
 
-# Group Language relations
+# The language of groups has no relation symbols
 
-The group language has no relation symbols.
+**The language of groups has no relation symbols.** For every $n \in \mathbb{N}$, the
+first-order language of groups has no $n$-ary relation symbols.
 
 ## Depends on
 
-- [Group Language](group-language.md)
+- [The first-order language of groups](group-language.md)
 
 ## Sources
 

@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.eval_update_of_lt
 ---
 
-# Eval update of lt
+# Independence from variables below the order
 
-A diagram ordered from `n` does not depend on any variable below `n`.
+**Independence from variables below the order.** Let $t$ be a binary decision diagram
+ordered from $n \in \mathbb{N}$ and let $v < n$ be a variable. For every assignment $\sigma$ of
+Boolean values to the variables and every Boolean $b$, the value of $t$ under
+$\sigma[v \mapsto b]$ (the assignment $\sigma$ with $v$ set to $b$) equals the value of $t$ under
+$\sigma$.
 
 ## Depends on
 
-- [BDD](bdd.md)
-- [Ordered From](ordered-from.md)
-- [Eval](eval.md)
+- [Binary decision diagram](bdd.md)
+- [Diagrams ordered from a variable](ordered-from.md)
+- [Evaluation of a binary decision diagram](eval.md)
 
 ## Sources
 

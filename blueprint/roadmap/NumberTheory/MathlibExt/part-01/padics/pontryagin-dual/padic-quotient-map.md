@@ -6,13 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.padicQuotientMap
 ---
 
-# Padic Quotient Map
+# The quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$
 
-The canonical quotient map from `ℚ_p` to `ℚ_p / ℤ_p`.
+**The quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$.** For a prime $p$, this is
+the canonical projection $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$, $x \mapsto x + \mathbb{Z}_p$,
+as a $\mathbb{Z}_p$-linear map.
 
 ## Depends on
 
-- [Padic Quotient Int](padic-quotient-int.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
 
 ## Sources
 

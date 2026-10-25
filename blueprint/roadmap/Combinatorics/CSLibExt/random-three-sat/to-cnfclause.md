@@ -15,7 +15,7 @@ listed in some fixed order.
 ## Depends on
 
 - [3-clause](clause.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

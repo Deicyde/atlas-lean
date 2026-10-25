@@ -42,8 +42,8 @@ theorem cnfSat_iff_colorable (φ : CNF) :
 - [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Sources
 

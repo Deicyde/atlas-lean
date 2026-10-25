@@ -7,14 +7,17 @@ proof: formalized
 lean: EngelExpansion.maxLength_le_of_forall
 ---
 
-# Max Length le of forall
+# A uniform bound on Engel lengths bounds the maximal Engel length
 
-The length function is bounded by a uniform bound on all lengths.
+**A uniform bound on Engel lengths bounds the maximal Engel length.** Let $n$ and $B$ be
+natural numbers. If the Engel length $L(n, a)$ of $a$ with respect to $n$ satisfies
+$L(n, a) \le B$ for every $a$ with $1 \le a \le n$, then the maximal Engel length
+$M(n) = \max_{1 \le a \le n} L(n, a)$ (with $M(0) = 0$) satisfies $M(n) \le B$.
 
 ## Depends on
 
-- [Length](length.md)
-- [Max Length](max-length.md)
+- [Engel length](length.md)
+- [Maximal Engel length](max-length.md)
 
 ## Sources
 

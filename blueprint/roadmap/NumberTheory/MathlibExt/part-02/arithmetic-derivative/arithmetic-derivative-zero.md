@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.arithmeticDerivative_zero
 ---
 
-# Arithmetic Derivative zero
+# Arithmetic derivative of zero
 
-`D(0) = 0`.
+**Arithmetic derivative of zero.** The arithmetic derivative of $0$ is $0$: $D(0) = 0$.
 
 ## Depends on
 
-- [Arithmetic Derivative](arithmetic-derivative.md)
+- [Arithmetic derivative](arithmetic-derivative.md)
 
 ## Sources
 

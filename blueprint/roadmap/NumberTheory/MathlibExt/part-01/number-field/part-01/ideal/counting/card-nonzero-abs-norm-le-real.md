@@ -7,11 +7,16 @@ proof: formalized
 lean: NumberField.Ideal.card_nonzero_absNorm_le_real
 ---
 
-# Card nonzero abs Norm le real
+# Bound on the number of ideals of bounded norm, floor form
 
-Derived real-threshold floor bridge: the same bound with `⌊M⌋₊` in place of `M`.
-For `M < 1` the subtype is empty since every nonzero ideal has norm at
-least `1`; for `1 ≤ M` the real and integer subtypes coincide.
+**Bound on the number of ideals of bounded norm, floor form.** Let $K$ be a number field of
+degree $n = [K : \mathbb{Q}]$ with ring of integers $\mathcal{O}_K$, let $M$ be any real number,
+and let $m = \max(0, \lfloor M \rfloor)$. Let $k$ be the largest natural number with
+$2^k \le m$, and $k = 0$ if $m = 0$. Then the number of nonzero ideals $I$ of $\mathcal{O}_K$
+whose absolute norm $N(I) = |\mathcal{O}_K / I|$ satisfies $N(I) \le M$ is at most $(nm)^k$.
+
+For $M < 1$ there are no such ideals, since every nonzero ideal has norm at least $1$; for
+$M \ge 1$ the condition $N(I) \le M$ is equivalent to $N(I) \le m$.
 
 ## Depends on
 
@@ -19,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Card nonzero abs Norm le](card-nonzero-abs-norm-le.md)
+- [Bound on the number of ideals of bounded norm, integer threshold](card-nonzero-abs-norm-le.md)
 
 ## Sources
 

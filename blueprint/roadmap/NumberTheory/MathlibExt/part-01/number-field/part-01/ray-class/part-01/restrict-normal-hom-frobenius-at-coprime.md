@@ -7,22 +7,28 @@ proof: formalized
 lean: NumberField.Modulus.restrictNormalHom_frobeniusAtCoprimePrime
 ---
 
-# Frobenius Restriction
+# Restriction of Frobenius elements in a tower
 
-Restriction of the chosen Frobenius at `p` from `M` agrees with the chosen
-Frobenius at `p` on the abelian subextension `L`. The lower abelianity is used
-only to trivialize conjugation of the lower Frobenius value.
+**Restriction of Frobenius elements in a tower.** Let $K \subseteq L \subseteq M$ be a tower
+of number fields with $L/K$ abelian Galois and $M/K$ Galois, and let $\mathfrak m$ be a modulus
+of $K$ such that $L$ and $M$ are both unramified outside $\mathfrak m$. For every finite prime
+$\mathfrak p$ of $K$ not dividing the finite part of $\mathfrak m$, the restriction to $L$ of the
+chosen Frobenius element of $\mathfrak p$ in $\mathrm{Gal}(M/K)$ equals the chosen Frobenius
+element of $\mathfrak p$ in $\mathrm{Gal}(L/K)$.
+
+The abelianity of $L/K$ is used only to make conjugation of the Frobenius element in
+$\mathrm{Gal}(L/K)$ trivial.
 
 ## Depends on
 
-- [Coprime Primes](prime-generation/coprime-primes.md)
-- [Is Unramified Outside](frobenius-generators/is-unramified-outside.md)
-- [Frobenius At Coprime Prime](frobenius-generators/frobenius-at-coprime-prime.md)
+- [Primes coprime to a modulus](prime-generation/coprime-primes.md)
+- [Extensions unramified outside a modulus](frobenius-generators/is-unramified-outside.md)
+- [Chosen Frobenius element at a coprime prime](frobenius-generators/frobenius-at-coprime-prime.md)
 
 ## Proof depends on
 
-- [Finite Supported](../part-02/ray-group/finite-supported.md)
-- [Frobenius At Coprime Prime spec](frobenius-generators/frobenius-at-coprime-prime-spec.md)
+- [Primes dividing a modulus](../part-02/ray-group/finite-supported.md)
+- [The chosen Frobenius is an arithmetic Frobenius at an unramified prime](frobenius-generators/frobenius-at-coprime-prime-spec.md)
 - [Restriction](../../../../../../../RingTheory/MathlibExt/frobenius/restrict-normal-hom-eq-of-is-arith-frob.md)
 
 ## Sources

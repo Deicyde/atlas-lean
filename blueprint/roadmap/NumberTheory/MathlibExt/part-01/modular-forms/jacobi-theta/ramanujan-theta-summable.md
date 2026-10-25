@@ -7,17 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanTheta_summable
 ---
 
-# Ramanujan Summability
+# Absolute convergence of Ramanujan's general theta series
 
-Ramanujan's general theta series absolute convergence (arXiv:2607.26471,
-`Oliver_identities.tex` ll. 127-130): `f(a,b)=∑_{n:ℤ} a^{n(n+1)/2} b^{n(n-1)/2}`
-with `|a*b|<1`. The summand is `MetaMathlibExt.ramanujanThetaTerm` (triangular
-exponents via `Int.toNat`); this is the absolute-summability theorem over `ℝ`.
+**Absolute convergence of Ramanujan's general theta series.** For all complex numbers $a$
+and $b$ with $|ab| < 1$, the series $\sum_{n \in \mathbb{Z}} |a^{n(n+1)/2} b^{n(n-1)/2}|$ of
+the absolute values of the terms of Ramanujan's general theta function converges.
 
 ## Depends on
 
-- [Ramanujan Theta Term](ramanujan/ramanujan-theta-term.md)
+- [Summand of Ramanujan's general theta function](ramanujan/ramanujan-theta-term.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.JacobiTheta.RamanujanSummability](../../../../../../sources/v2/MathlibExt.md)
+- arXiv:2607.26471, `Oliver_identities.tex` ll. 127-130.

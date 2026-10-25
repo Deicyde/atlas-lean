@@ -26,7 +26,7 @@ $\Sigma_k' = 0$.
 
 - [Mean update of the full-covariance Gaussian mixture](new-mean.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+- [Weighted scatter matrix](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Sources
 

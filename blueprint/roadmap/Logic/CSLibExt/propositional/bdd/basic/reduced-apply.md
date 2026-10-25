@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.reduced_apply
 ---
 
-# Reduced apply
+# Apply returns reduced diagrams
 
-`apply` always returns a reduced diagram.
+**Apply returns reduced diagrams.** For every binary Boolean operation $\mathrm{op}$ and all
+diagrams $t_1$ and $t_2$, the result of apply with $\mathrm{op}$ on $t_1$ and $t_2$ is reduced.
 
 ## Depends on
 
-- [BDD](bdd.md)
-- [Reduced](reduced.md)
-- [Apply](apply.md)
+- [Binary decision diagram](bdd.md)
+- [Reduced diagrams](reduced.md)
+- [Bryant's apply operation](apply.md)
 
 ## Proof depends on
 
-- [Mk](mk.md)
+- [Node constructor removing a redundant test](mk.md)
 
 ## Sources
 

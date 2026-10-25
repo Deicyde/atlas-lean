@@ -6,18 +6,19 @@ statement: formalized
 lean: NumberField.IsUnramifiedIn.tensorProductLocalizationEquivIntegralClosure
 ---
 
-# Tensor Product Localization Equiv Integral Closure
+# Normalization commutes with base change along an unramified prime
 
-Global normalization base-change bridge above an unramified prime: for number
-fields `E` and `F` and `p` unramified in `𝓞 F`, tensoring the semilocal
-integral-closure identification of `E` with the semilocal ring of `F` identifies
-`S_F ⊗[R] S_E` with the integral closure of `S_F` in the base-changed fraction
-ring.
+**Normalization commutes with base change along an unramified prime.** Let $E$ and $F$ be
+number fields and let $\mathfrak p$ be a prime ideal of $\mathbb Z$ that is unramified in the ring
+of integers $\mathcal O_F$. Write $R = \mathbb Z_{\mathfrak p}$ for the localization of $\mathbb Z$
+at $\mathfrak p$, and for $K = E, F$ write $S_K$ for the localization of $\mathcal O_K$ at the
+image of $\mathbb Z \setminus \mathfrak p$. Let $K_E$ be the fraction field of $\mathcal O_E$ and
+let $\iota : S_E \to K_E$ be the canonical map. This is the isomorphism of $S_F$-algebras from
+$S_F \otimes_R S_E$ onto the integral closure of $S_F$ in $S_F \otimes_R K_E$ that, for
+$s \in S_F$ and $t \in S_E$, sends $s \otimes t$ to $s \otimes \iota(t)$.
 
-This is the normalization-under-étale-base-change route toward the compositum
-step `baseChange_ramificationIdx_eq_one` and `isUnramifiedAtPrime_sup` in the
-primary Lean source for ATLAS N390. The local-factor/compositum identification
-needed to recover those source theorems is not claimed here.
+It is obtained from the identification of $S_E$ with the integral closure of $R$ in $K_E$, using
+that $S_F$ is étale over $R$.
 
 ## Depends on
 
@@ -25,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Etale localization](etale-localization.md)
+- [Localizing the ring of integers at an unramified prime gives an étale algebra](etale-localization.md)
 
 ## Sources
 

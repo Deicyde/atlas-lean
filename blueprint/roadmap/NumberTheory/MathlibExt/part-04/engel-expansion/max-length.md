@@ -6,9 +6,11 @@ statement: formalized
 lean: EngelExpansion.maxLength
 ---
 
-# Max Length
+# Maximal Engel length
 
-Engel length function: `max_{1 ≤ a ≤ n} length n a`.
+**Maximal Engel length.** For a natural number $n$, the maximal Engel length is
+$M(n) = \max_{1 \le a \le n} L(n, a)$, where $L(n, a)$ is the Engel length of $a$ with respect
+to $n$; for $n = 0$ the maximum is over the empty set and $M(0) = 0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Length](length.md)
+- [Engel length](length.md)
 
 ## Sources
 

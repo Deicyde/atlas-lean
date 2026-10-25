@@ -6,13 +6,15 @@ statement: formalized
 lean: padicPolynomialDilatation_one_zero
 ---
 
-# Padic Polynomial Dilatation one zero
+# Dilatation of the constant polynomial one at zero
 
-Proved witness: dilatation data exists for the constant polynomial one at zero.
+**Dilatation of the constant polynomial one at zero.** For every prime $p$, the exponent
+$e = 0$ and the polynomial $g = 1$ form dilatation data for the constant polynomial
+$1 \in \mathbb{Z}_p[X]$ at the point $x_0 = 0$.
 
 ## Depends on
 
-- [Padic Polynomial Dilatation](padic-polynomial-dilatation.md)
+- [Dilatation of a p-adic polynomial at a point](padic-polynomial-dilatation.md)
 
 ## Sources
 

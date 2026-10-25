@@ -7,16 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.r3_legendre_recursion
 ---
 
-# Three Squares Legendre Recursion
+# Legendre-symbol recursion for three-square counts
 
-Legendre-symbol recursion for the sums-of-three-squares function (cf. Hsquare).
+**Legendre-symbol recursion for three-square counts.** For a natural number $m$, let $r_3(m)$
+denote the number of ordered triples of integers $(x, y, z)$ with $x^2 + y^2 + z^2 = m$. Let
+$p \ge 3$ be a prime and let $n \ge 1$ and $\alpha \ge 0$ be natural numbers. Then
+
+$$
+r_3(p^{2\alpha} n) = \left(\frac{p^{\alpha+1} - 1}{p - 1} - \left(\frac{-n}{p}\right)
+\frac{p^{\alpha} - 1}{p - 1}\right) r_3(n) - p \, \frac{p^{\alpha} - 1}{p - 1} \, r_3(n/p^2),
+$$
+
+where $\left(\frac{-n}{p}\right)$ is the Legendre symbol, both quotients by $p - 1$ are exact
+integer divisions, and the term $r_3(n/p^2)$ is read as $0$ when $p^2$ does not divide $n$.
 
 Proof: The route is an elementary p-neighbour double count using quaternionic descent and
 finite-field conic counts, followed by a two-step induction on the exponent.
 
 ## Depends on
 
-- [Three Square Representation Count](three-squares/three-square-representation-count.md)
+- [Number of representations as a sum of three squares](three-squares/three-square-representation-count.md)
 
 ## Sources
 

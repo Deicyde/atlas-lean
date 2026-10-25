@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.div_add_div_add_div_le
 ---
 
-# Div add div add div le
+# Superadditivity of floor division for three terms
 
-Sum of three floors bounded by the floor of the sum.
+**Superadditivity of floor division for three terms.** For natural numbers $a, b, c$ and
+$q > 0$, $\lfloor a/q \rfloor + \lfloor b/q \rfloor + \lfloor c/q \rfloor \le
+\lfloor (a+b+c)/q \rfloor$.
 
 ## Depends on
 

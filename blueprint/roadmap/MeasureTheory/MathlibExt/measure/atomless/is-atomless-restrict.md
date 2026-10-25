@@ -7,13 +7,14 @@ proof: formalized
 lean: MeasureTheory.isAtomless_restrict
 ---
 
-# Is Atomless restrict
+# Restriction of an atomless measure
 
-Restriction of an atomless measure to a measurable set is atomless.
+**Restriction of an atomless measure.** The restriction of an atomless measure to a
+measurable set is atomless.
 
 ## Depends on
 
-- [Is Atomless](is-atomless.md)
+- [Atomless measure](is-atomless.md)
 
 ## Sources
 

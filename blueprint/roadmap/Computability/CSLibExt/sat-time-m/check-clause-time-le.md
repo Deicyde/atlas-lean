@@ -18,7 +18,7 @@ Each literal examined costs one tick plus one lookup, and a lookup costs at most
 ## Depends on
 
 - [Clause check against a witness](check-clause.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

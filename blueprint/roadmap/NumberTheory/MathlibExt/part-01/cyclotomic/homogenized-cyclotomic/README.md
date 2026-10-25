@@ -4,8 +4,8 @@ navigation: module
 
 # Homogenized Cyclotomic
 
-- [Homogenized Cyclotomic](homogenized-cyclotomic.md)
-- [Homogenized Cyclotomic one](homogenized-cyclotomic-one.md)
-- [Homogenized Cyclotomic two](homogenized-cyclotomic-two.md)
-- [Homogenized Cyclotomic one right](homogenized-cyclotomic-one-right.md)
-- [Homogenized Cyclotomic cast](homogenized-cyclotomic-cast.md)
+- [Homogenized cyclotomic value](homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value of index one](homogenized-cyclotomic-one.md)
+- [Homogenized cyclotomic value of index two](homogenized-cyclotomic-two.md)
+- [Homogenized cyclotomic value with second argument one](homogenized-cyclotomic-one-right.md)
+- [Homogenized cyclotomic value in a field](homogenized-cyclotomic-cast.md)

@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.padicQuotientMap_mkQ_eq
 ---
 
-# Padic Quotient Map mk Q eq
+# The quotient map is the quotient projection
 
-The quotient map agrees with the quotient constructor.
+**The quotient map is the quotient projection.** For a prime $p$ and every
+$x \in \mathbb{Q}_p$, the quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$ sends $x$ to
+its class $x + \mathbb{Z}_p$ in the quotient module.
 
 ## Depends on
 
-- [Padic Quotient Int](padic-quotient-int.md)
-- [Padic Quotient Map](padic-quotient-map.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
+- [The quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-map.md)
 
 ## Sources
 

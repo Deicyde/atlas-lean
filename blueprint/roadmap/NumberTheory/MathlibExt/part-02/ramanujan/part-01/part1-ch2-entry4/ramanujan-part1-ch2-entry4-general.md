@@ -7,11 +7,17 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry4.ramanujan_part1_ch2_entry4_general
 ---
 
-# Ramanujan part1 ch2 entry4 general
+# Ramanujan's sum identity for $1/((4k)^3 - 4k)$, including $n = 0$
 
-Ramanujan's Entry 4 for every `n`: `∑ k ∈ [1, n], 1 / (n + k)` plus
-`∑ k ∈ [0, n], 1 / (2n + 2k + 1)` equals `1 + 2 ∑ k ∈ [1, n], 1 / ((4k)³ - 4k)`. At `n = 0` both
-sides are `1`. `ramanujan_part1_ch2_entry4` is the source-shaped form.
+**Ramanujan's sum identity for $1/((4k)^3 - 4k)$, including $n = 0$.** For every natural
+number $n$,
+
+$$
+\sum_{k=1}^{n} \frac{1}{n+k} + \sum_{k=0}^{n} \frac{1}{2n+2k+1} =
+1 + 2 \sum_{k=1}^{n} \frac{1}{(4k)^3 - 4k}.
+$$
+
+At $n = 0$ both sides equal $1$.
 
 ## Depends on
 

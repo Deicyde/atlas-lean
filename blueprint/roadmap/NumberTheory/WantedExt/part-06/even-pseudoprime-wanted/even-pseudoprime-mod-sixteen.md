@@ -11,7 +11,7 @@ lean: MetaMathlibExt.evenPseudoprime_mod_sixteen
 
 ## Depends on
 
-- [Is Even Pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
+- [Even pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
 
 ## Sources
 

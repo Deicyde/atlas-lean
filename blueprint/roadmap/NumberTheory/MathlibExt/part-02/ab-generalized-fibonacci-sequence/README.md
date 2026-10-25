@@ -5,5 +5,5 @@ navigation: module
 
 # Ab Generalized Fibonacci Sequence
 
-- [Ab Generalized Fibonacci Sequence](ab-generalized-fibonacci-sequence.md)
-- [Ext](ext.md)
+- [Kalman–Mena generalized Fibonacci sequence](ab-generalized-fibonacci-sequence.md)
+- [Extensionality for Kalman–Mena generalized Fibonacci sequences](ext.md)

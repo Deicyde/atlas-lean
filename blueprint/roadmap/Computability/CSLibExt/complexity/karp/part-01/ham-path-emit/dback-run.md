@@ -31,7 +31,7 @@ $P$ to $n + 1$, and setting $N$, $R$, $J$ and $D$ to $0$.
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
@@ -42,7 +42,7 @@ $P$ to $n + 1$, and setting $N$, $R$, $J$ and $D$ to $0$.
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)

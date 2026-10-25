@@ -4,13 +4,13 @@ navigation: module
 
 # Wilkies Conjecture
 
-- [Exp Func](exp-func.md)
-- [Exp](exp.md)
-- [Exp Ring](exp-ring.md)
-- [Is Semialgebraic](is-semialgebraic.md)
-- [Is RExp Definable](is-rexp-definable.md)
-- [Alg Part](alg-part.md)
-- [Trans Part](trans-part.md)
-- [Height](height.md)
-- [Degree Height LE](degree-height-le.md)
-- [Corollary 1](corollary-1.md)
+- [Function symbols of the language of exponentiation](exp-func.md)
+- [Language of exponentiation](exp.md)
+- [Language of rings with exponentiation](exp-ring.md)
+- [Semialgebraic set](is-semialgebraic.md)
+- [Definable sets of the real exponential field](is-rexp-definable.md)
+- [Algebraic part of a set](alg-part.md)
+- [Transcendental part of a set](trans-part.md)
+- [Height of a point](height.md)
+- [Points of bounded degree and height](degree-height-le.md)
+- [Wilkie's conjecture for the real exponential field](corollary-1.md)

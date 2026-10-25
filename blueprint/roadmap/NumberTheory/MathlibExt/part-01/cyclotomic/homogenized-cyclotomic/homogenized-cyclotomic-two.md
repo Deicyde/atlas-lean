@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic_two
 ---
 
-# Homogenized Cyclotomic two
+# Homogenized cyclotomic value of index two
 
-`Φ_2(a, b) = a + b`.
+**Homogenized cyclotomic value of index two.** For all integers $a$ and $b$, the
+homogenized cyclotomic value $\Phi_2(a, b)$ equals $a + b$.
 
 ## Depends on
 
-- [Homogenized Cyclotomic](homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](homogenized-cyclotomic.md)
 
 ## Sources
 

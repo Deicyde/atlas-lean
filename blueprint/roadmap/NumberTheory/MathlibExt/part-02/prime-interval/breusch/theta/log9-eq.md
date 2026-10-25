@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log9_eq
 ---
 
-# Log9 eq
+# Logarithm of 9
 
-`log 9 = 2 * log 3`.
+**Logarithm of 9.** The natural logarithm satisfies $\log 9 = 2 \log 3$.
 
 ## Depends on
 

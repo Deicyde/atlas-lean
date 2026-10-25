@@ -7,15 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.primitive_nondeficient_prime_power_bound
 ---
 
-# Primitive Nondeficient Bound
+# Prime-power bound for primitive non-deficient numbers
 
-A primitive non-deficient `n` (non-deficient, with all proper divisors
-deficient) has a prime factor `p` with `p ^ (v_p(n) + 1) < 2 * k * R`,
-where `k` is the number of distinct prime factors and `R` their product.
-
-Here `n.primeFactors.card` is the source's `k`, the product over
-`n.primeFactors` is the radical `R`, and `n.factorization p` is the
-exponent of `p` in `n`; non-deficiency is `σ(n) ≥ 2n` via `Nat.divisors`.
+**Prime-power bound for primitive non-deficient numbers.** Let $\sigma(m)$ denote the sum of the
+divisors of $m$. Let $n$ be a positive integer that is non-deficient, $\sigma(n) \ge 2n$, and
+primitive, meaning that every divisor $m$ of $n$ with $m < n$ is deficient, $\sigma(m) < 2m$.
+Let $k$ be the number of distinct prime factors of $n$ and $R$ their product. Then $n$ has a
+prime factor $p$ with $p^{v_p(n) + 1} < 2kR$, where $v_p(n)$ is the exponent of $p$ in $n$.
 
 ## Depends on
 

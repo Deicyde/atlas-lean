@@ -6,12 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsConsecutivePrimeBlock
 ---
 
-# Is Consecutive Prime Block
+# Block of consecutive primes
 
-A nonempty, strictly increasing list consisting of a contiguous block of primes.
-
-See the sources cited on `AreConsecutivePrimes` for occurrences of blocks
-`pₖ, pₖ₊₁, …, pₘ` of consecutive primes.
+**Block of consecutive primes.** A list $l$ of natural numbers is a block of consecutive
+primes when $l$ is nonempty, every entry of $l$ is prime, $l$ is strictly increasing, and every
+two adjacent entries of $l$ are consecutive primes.
 
 ## Depends on
 
@@ -19,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Are Consecutive Primes](are-consecutive-primes.md)
+- [Consecutive primes](are-consecutive-primes.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ConsecutivePrime](../../../../../sources/v2/MathlibExt.md)
+- see the sources cited on `AreConsecutivePrimes` for occurrences of blocks `pₖ, pₖ₊₁, …, pₘ` of consecutive primes.

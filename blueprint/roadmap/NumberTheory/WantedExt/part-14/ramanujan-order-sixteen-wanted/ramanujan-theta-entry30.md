@@ -15,7 +15,7 @@ of Lemma 1: for complex `a, b` with `‖a b‖ < 1`, `f(a, ab²) f(b, a²b) = f(
 
 ## Depends on
 
-- [Ramanujan Theta Raw](../../../MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
+- [Raw Ramanujan theta sum](../../../MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources
 

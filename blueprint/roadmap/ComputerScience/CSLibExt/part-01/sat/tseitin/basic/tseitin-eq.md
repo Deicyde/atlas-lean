@@ -15,8 +15,8 @@ followed by a list of clauses that is a permutation of the defining clauses of t
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Tseitin CNF](tseitin.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 

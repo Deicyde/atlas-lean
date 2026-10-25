@@ -7,8 +7,8 @@ navigation: module
 
 ## Nat
 
-- [Exists eq add add triangular](exists-eq-add-add-triangular.md)
-- [Exists sum four sq eq and sum eq of odd](exists-sum-four-sq-eq-and-sum-eq-of-odd.md)
+- [Gauss's Eureka theorem](exists-eq-add-add-triangular.md)
+- [Cauchy's lemma](exists-sum-four-sq-eq-and-sum-eq-of-odd.md)
 
 ## Meta Mathlib Ext
 

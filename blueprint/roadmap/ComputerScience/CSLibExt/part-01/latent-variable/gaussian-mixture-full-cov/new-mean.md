@@ -24,7 +24,7 @@ $\mu_k' = 0$.
 ## Proof depends on
 
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
+- [Weighted mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
 
 ## Sources
 

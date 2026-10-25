@@ -4,10 +4,10 @@ navigation: module
 
 # Bernoulli Second Kind
 
-- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
-- [Bernoulli Second](bernoulli-second.md)
-- [Bernoulli Second Power Series eq](bernoulli-second-power-series-eq.md)
-- [Bernoulli Second eq](bernoulli-second-eq.md)
-- [Bernoulli Second Power Series mul mk](bernoulli-second-power-series-mul-mk.md)
-- [Sum antidiagonal bernoulli Second Power Series coeff](sum-antidiagonal-bernoulli-second-power.md)
-- [Bernoulli Second div factorial eq](bernoulli-second-div-factorial-eq.md)
+- [Generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series.md)
+- [Bernoulli numbers of the second kind](bernoulli-second.md)
+- [Generating function of the Bernoulli numbers of the second kind as an inverse](bernoulli-second-power-series-eq.md)
+- [Bernoulli numbers of the second kind as scaled coefficients](bernoulli-second-eq.md)
+- [Defining identity of the generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series-mul-mk.md)
+- [Coefficient identity for the generating function of the Bernoulli numbers of the second kind](sum-antidiagonal-bernoulli-second-power.md)
+- [Recurrence for the Bernoulli numbers of the second kind](bernoulli-second-div-factorial-eq.md)

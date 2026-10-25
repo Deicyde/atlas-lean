@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanThetaRaw_one_one
 ---
 
-# Ramanujan Theta Raw one one
+# The raw Ramanujan theta sum vanishes at $a = b = 1$
 
-The raw `tsum` takes its fallback value at the divergent parameters `(1, 1)`.
+**The raw Ramanujan theta sum vanishes at $a = b = 1$.** The raw Ramanujan theta sum
+$\sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$, which is assigned the value $0$ whenever
+the series is not summable, equals $0$ at $a = b = 1$, because there every term equals $1$ and
+the series is not summable.
 
 ## Depends on
 
-- [Ramanujan Theta Raw](ramanujan-theta-raw.md)
+- [Raw Ramanujan theta sum](ramanujan-theta-raw.md)
 
 ## Proof depends on
 
-- [Not summable ramanujan Theta Term one one](not-summable-ramanujan-theta-term-one-on.md)
-- [Ramanujan Theta Term](ramanujan-theta-term.md)
+- [Ramanujan's theta series diverges at $a = b = 1$](not-summable-ramanujan-theta-term-one-on.md)
+- [Summand of Ramanujan's general theta function](ramanujan-theta-term.md)
 
 ## Sources
 

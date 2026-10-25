@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.evalBool_shannon
 ---
 
-# Eval Bool shannon
+# Correctness of the Shannon expansion
 
-The Shannon expansion of a function that depends only on the atoms of `xs` has that
-function as its truth table, for every valuation with `⊥` false.
+**Correctness of the Shannon expansion.** Let $x_1, \dots, x_n$ be a list of atoms and let
+$f$ assign a truth value to every valuation of the atoms, such that $f(v) = f(w)$ whenever $v$
+and $w$ agree on $x_1, \dots, x_n$. Then for every valuation $v$ that makes $\bot$ false, the
+Shannon expansion of $f$ over $x_1, \dots, x_n$ has truth value $f(v)$ under $v$.
 
 ## Depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
-- [Shannon](shannon.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
+- [Shannon expansion](shannon.md)
 
 ## Proof depends on
 
-- [Eval Bool neg](../semantics/eval-bool-neg.md)
+- [Truth value of a negation](../semantics/eval-bool-neg.md)
 
 ## Sources
 

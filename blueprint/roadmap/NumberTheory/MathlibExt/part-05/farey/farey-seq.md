@@ -6,9 +6,10 @@ statement: formalized
 lean: Farey.fareySeq
 ---
 
-# Farey Seq
+# Farey sequence
 
-The Farey sequence of order `n`, listed in increasing order.
+**Farey sequence.** For a natural number $n$, the Farey sequence of order $n$ is the list of the
+elements of the Farey set $F_n$ in increasing order.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Farey Finset](farey-finset.md)
+- [Farey set](farey-finset.md)
 
 ## Sources
 

@@ -7,10 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.self_le_four_pow_div_one_twenty_eight_add_one
 ---
 
-# Self le four pow div one twenty eight add one
+# A linear bound by a power of four
 
-A coarse exponential upper bound used to absorb a factor of `n` in large residual
-estimates.
+**A linear bound by a power of four.** For every natural number $n \ge 512$,
+$n \le 4^{\lfloor n/128 \rfloor + 1}$.
 
 ## Depends on
 

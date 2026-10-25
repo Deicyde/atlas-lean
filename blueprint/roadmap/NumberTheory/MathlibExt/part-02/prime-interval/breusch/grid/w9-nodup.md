@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_nodup
 ---
 
-# W9 nodup
+# The divisor table for $210$ has no repeated entries
 
-The table `w9` has no duplicate entries.
+**The divisor table for $210$ has no repeated entries.** No pair $(d, \varepsilon)$ occurs more
+than once in the list $W_9$, the Möbius divisor table for $210$.
 
 ## Depends on
 
-- [W9](w9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

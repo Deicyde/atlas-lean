@@ -5,5 +5,5 @@ navigation: module
 
 # Cobham Gap Theorem
 
-- [Cobham gap theorem general](cobham-gap-theorem-general.md)
-- [Cobham gap theorem](cobham-gap-theorem.md)
+- [Cobham's gap theorem without a separate base hypothesis](cobham-gap-theorem-general.md)
+- [Cobham's gap theorem](cobham-gap-theorem.md)

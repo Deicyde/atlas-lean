@@ -7,20 +7,23 @@ proof: formalized
 lean: NumberField.Modulus.integralUnitsToRayElements_injective
 ---
 
-# Integral Units To Ray Elements injective
+# Integral units embed injectively into the ray elements
 
-The integral-unit map into ray elements is injective.
+**Integral units embed injectively into the ray elements.** Let $K$ be a number field with
+ring of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$. The homomorphism
+from $\mathcal{O}_K^\times$ to the group of ray elements for $\mathfrak{m}$ that sends a unit to
+its image in $K^\times$ is injective.
 
 ## Depends on
 
-- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Integral units as ray elements](integral-units-to-ray-elements.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Integral Units To Field Units](integral-units-to-field-units.md)
-- [Integral Units To Field Units injective](integral-units-to-field-units-injective.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [Embedding of integral units into field units](integral-units-to-field-units.md)
+- [Integral units embed injectively into field units](integral-units-to-field-units-injective.md)
 - [Mem ray Elements of valuation eq one](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
 
 ## Sources

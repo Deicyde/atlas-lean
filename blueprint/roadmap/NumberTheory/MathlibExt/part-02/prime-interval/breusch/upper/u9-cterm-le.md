@@ -7,23 +7,27 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_Cterm_le
 ---
 
-# U9 Cterm le
+# Bound for one small-square prime term
 
-One small-square prime term bounded by `3 * log (2100 * n)`.
+**Bound for one small-square prime term.** Let $n \ge 1$ be a natural number and let $p$ be a
+prime with $p^2 \le 2100n$. For each divisor $m$ of $210$ put $N_m = 210n/m$, let $\mu$ be the
+Möbius function and $v_p$ the $p$-adic valuation, and put
+$\nu_9(p, n) = \sum_{m \mid 210} \mu(m) (v_p((10N_m)!) - v_p((9N_m)!) - v_p(N_m!))$. Then
+$\nu_9(p, n) \log p \le 3 \log(2100n)$.
 
 ## Depends on
 
-- [Nu9](nu9.md)
+- [The $p$-adic valuation of the weighted product](nu9.md)
 
 ## Proof depends on
 
-- [G9r](g9r.md)
-- [G9r le3](g9r-le3.md)
-- [G9r vanish of](g9r-vanish-of.md)
-- [Q9](../grid/q9.md)
-- [U9 10 Q9](u9-10-q9.md)
-- [U9 logp nonneg](u9-logp-nonneg.md)
-- [Nu9 eq sum G](nu9-eq-sum-g.md)
+- [Continuous Breusch function](g9r.md)
+- [The continuous Breusch function is at most 3](g9r-le3.md)
+- [The continuous Breusch function vanishes at small ratios](g9r-vanish-of.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Value of $10Qn$](u9-10-q9.md)
+- [Logarithms of primes are nonnegative](u9-logp-nonneg.md)
+- [Valuation identity for the weighted product](nu9-eq-sum-g.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsLucasSequenceFirstKind.recurrenceStep
 ---
 
-# Recurrence Step
+# Lucas sequence of the first kind: the recurrence
 
-Third clause of the defining recurrence: the two-step relation.
+**Lucas sequence of the first kind: the recurrence.** If $(u_n)_{n \ge 0}$ is the Lucas
+sequence of the first kind with integer parameters $P$ and $Q$, then
+$u_{n+2} = P u_{n+1} - Q u_n$ for every natural number $n$.
 
 ## Depends on
 
-- [Is Lucas Sequence First Kind](is-lucas-sequence-first-kind.md)
+- [Lucas sequence of the first kind](is-lucas-sequence-first-kind.md)
 
 ## Sources
 

@@ -7,10 +7,14 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_top_pow_half_add_one_lt_start_pow
 ---
 
-# Consecutive of factorial mul top pow half add one lt start pow
+# Half-exponent criterion for a large prime in a consecutive block
 
-Conditional consecutive form using the project prime-counting estimate
-`Nat.primeCounting n ≤ n / 2 + 1`.
+**Half-exponent criterion for a large prime in a consecutive block.** Let $1 \le n < k$ be
+natural numbers. If $n! \cdot (k+n-1)^{\lfloor n/2 \rfloor + 1} < k^n$, then some prime $p > n$
+divides one of the integers $k, k+1, \dots, k+n-1$.
+
+The exponent comes from the bound $\pi(n) \le \lfloor n/2 \rfloor + 1$ on the prime-counting
+function $\pi$.
 
 ## Depends on
 
@@ -18,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
-- [Exists large prime dvd choose of factorial mul top pow half add one lt lower pow](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-5.md)
+- [From a large prime divisor of the binomial coefficient to one in the block](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+- [Large-prime criterion from the half-plus-one exponent bound](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-5.md)
 
 ## Sources
 

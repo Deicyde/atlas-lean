@@ -38,12 +38,12 @@ satisfies $\Phi$ and gives $\ell$ the value $A[\sigma]$.
 - [Tseitin clauses for a disjunction](or-clauses.md)
 - [Satisfaction depends only on the occurring variables](satisfies-of-agree.md)
 - [One step of the Tseitin encoding](tseitin-step.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
-- [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
+- [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Truth-table evaluation](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
 
 ## Sources
 

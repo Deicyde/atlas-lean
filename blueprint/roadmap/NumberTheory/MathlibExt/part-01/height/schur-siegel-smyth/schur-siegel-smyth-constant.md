@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.schurSiegelSmythConstant
 ---
 
-# Schur Siegel Smyth Constant
+# Schur–Siegel–Smyth trace constant
 
-The **Schur--Siegel--Smyth trace constant** `C₈₆`: the supremum of
-the admissible bounds, as an extended real. The extended-real value
-supplies bottom for an empty admissible set and top for an unbounded
-one; finiteness is the content of the catalogue upper bounds, recorded
-in the wanted file.
+**Schur–Siegel–Smyth trace constant.** The Schur–Siegel–Smyth trace constant $C_{86}$ is
+the supremum, taken in the extended reals, of the admissible real bounds: the real numbers
+$\rho \ge 0$ such that only finitely many complex numbers that are totally positive algebraic
+integers have absolute trace less than $\rho$.
+
+The extended-real value is $-\infty$ for an empty admissible set and $+\infty$ for an unbounded
+one; finiteness is the content of the known upper bounds.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible trace bounds](is-admissible.md)
 
 ## Sources
 

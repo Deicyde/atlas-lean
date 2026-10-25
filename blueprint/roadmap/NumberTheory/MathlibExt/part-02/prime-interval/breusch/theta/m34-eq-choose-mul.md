@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_eq_choose_mul
 ---
 
-# M34 eq choose mul
+# The multinomial coefficient $M(t)$ as a product of binomial coefficients
 
-`M34` as a product of binomial coefficients.
+**The multinomial coefficient $M(t)$ as a product of binomial coefficients.** Let
+$M(t) = \frac{(6t)!}{(3t)!\,(2t)!\,t!}$. For every natural number $t$,
+$M(t) = \binom{6t}{3t} \binom{3t}{t}$.
 
 ## Depends on
 
-- [M34](m34.md)
+- [The multinomial coefficient $M(t)$ for the 3.4 primorial bound](m34.md)
 
 ## Proof depends on
 
-- [M34 eq mul](m34-eq-mul.md)
+- [Cleared-denominator identity for the multinomial coefficient $M(t)$](m34-eq-mul.md)
 
 ## Sources
 

@@ -6,26 +6,27 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.selbergConstant_eq_zero_iff
 ---
 
-# Selberg Constant eq zero iff
+# Selberg's constant vanishes exactly under Selberg's eigenvalue conjecture
 
-Selberg's constant vanishes exactly when no congruence subgroup has
-an exceptional eigenvalue; this is Selberg's eigenvalue conjecture in
-the model of this file.
+**Selberg's constant vanishes exactly under Selberg's eigenvalue conjecture.** Selberg's
+constant $C_{61}$ equals $0$ if and only if Selberg's eigenvalue conjecture holds, that is, if and
+only if no congruence subgroup of $\mathrm{SL}(2, \mathbb{Z})$ has an eigenvalue $\lambda$ with
+$0 < \lambda < 1/4$.
 
 ## Depends on
 
-- [Selberg Eigenvalue Conjecture](selberg-eigenvalue-conjecture.md)
-- [Selberg Constant](selberg-constant.md)
+- [Selberg's eigenvalue conjecture](selberg-eigenvalue-conjecture.md)
+- [Selberg's congruence spectral-gap constant](selberg-constant.md)
 
 ## Proof depends on
 
-- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Congruence subgroup of the modular group](is-congruence-subgroup.md)
 - [Is Eigenvalue](is-eigenvalue.md)
-- [Exceptional Gap](exceptional-gap.md)
-- [Exceptional Gap le selberg Constant](exceptional-gap-le-selberg-constant.md)
-- [Exceptional Gaps](exceptional-gaps.md)
-- [Is Congruence Subgroup top](is-congruence-subgroup-top.md)
-- [Sqrt le selberg Constant](sqrt-le-selberg-constant.md)
+- [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
+- [Congruence gaps are bounded by Selberg's constant](exceptional-gap-le-selberg-constant.md)
+- [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
+- [The modular group is a congruence subgroup](is-congruence-subgroup-top.md)
+- [Exceptional eigenvalues bound Selberg's constant](sqrt-le-selberg-constant.md)
 
 ## Sources
 

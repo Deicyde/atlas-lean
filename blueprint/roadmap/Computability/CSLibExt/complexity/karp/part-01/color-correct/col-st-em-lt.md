@@ -16,7 +16,7 @@ number of vertices the construction allocates (its next free vertex).
 
 - [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 - [The SAT-to-3-COLOR graph construction](../color/col-st-2.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ number of vertices the construction allocates (its next free vertex).
 - [Adding a literal occurrence in the 3-COLOR construction](../color/col-occ.md)
 - [OR gadget of the 3-COLOR construction](../color/col-or.md)
 - [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

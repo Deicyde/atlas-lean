@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_mu_sign
 ---
 
-# W9 mu sign
+# Signs in the divisor table for $210$
 
-Every Möbius value in `w9` is `1` or `-1`.
+**Signs in the divisor table for $210$.** For every pair $(d, \varepsilon)$ in the Möbius
+divisor table $W_9$ for $210$, $\varepsilon = 1$ or $\varepsilon = -1$.
 
 ## Depends on
 
-- [W9](w9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

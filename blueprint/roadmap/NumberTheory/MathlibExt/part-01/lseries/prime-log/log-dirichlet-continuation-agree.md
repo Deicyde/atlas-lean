@@ -13,14 +13,14 @@ The canonical continuation agrees with `Φ(s) - 1 / (s - 1)` on `Re s > 1`.
 
 ## Depends on
 
-- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
-- [Log Dirichlet Series](log-dirichlet-series.md)
+- [The canonical prime logarithmic continuation](log-dirichlet-continuation.md)
+- [Prime logarithmic Dirichlet series](log-dirichlet-series.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Correction](log-dirichlet-correction.md)
-- [Log Dirichlet Series eq](log-dirichlet-series-eq.md)
-- [Riemann Zeta₁ ne zero of one le re](riemann-zeta-ne-zero-of-one-le-re.md)
+- [Prime-power correction series](log-dirichlet-correction.md)
+- [Prime logarithmic series via the logarithmic derivative of zeta](log-dirichlet-series-eq.md)
+- [Nonvanishing of the Riemann zeta function times $s - 1$ on $\operatorname{Re} s \ge 1$](riemann-zeta-ne-zero-of-one-le-re.md)
 
 ## Sources
 

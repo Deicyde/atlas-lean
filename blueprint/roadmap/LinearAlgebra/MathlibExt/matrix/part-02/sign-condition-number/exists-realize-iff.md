@@ -16,7 +16,7 @@ is $1$ or $-1$.
 
 ## Depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 
 ## Proof depends on

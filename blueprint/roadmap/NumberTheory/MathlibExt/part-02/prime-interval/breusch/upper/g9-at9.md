@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_at9
 ---
 
-# G9 at9
+# Value of $G_9$ at $9$
 
-`G9 9 = 1`.
+**Value of $G_9$ at $9$.** The grid $G$-function for $k = 9$ satisfies $G_9(9) = 1$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
 
 ## Sources
 

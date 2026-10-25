@@ -7,18 +7,21 @@ proof: formalized
 lean: Farey.det_one_and_sum_gt_imp_neighbor
 ---
 
-# Det one and sum gt imp neighbor
+# Determinant one and large denominator sum give Farey neighbors
 
-Determinant one plus denominator sum exceeding `n` implies Farey neighbors.
+**Determinant one and large denominator sum give Farey neighbors.** Let $n$ be a natural
+number and let $x = a/b$ and $y = c/d$ be elements of the Farey set $F_n$, written in lowest
+terms with $b, d > 0$. If $bc = ad + 1$ and $n < b + d$, then $x$ and $y$ are Farey neighbors of
+order $n$.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
-- [Farey Finset](farey-finset.md)
+- [Farey neighbors](is-farey-neighbor.md)
+- [Farey set](farey-finset.md)
 
 ## Proof depends on
 
-- [Mem farey Finset iff](mem-farey-finset-iff.md)
+- [Membership in the Farey set](mem-farey-finset-iff.md)
 
 ## Sources
 

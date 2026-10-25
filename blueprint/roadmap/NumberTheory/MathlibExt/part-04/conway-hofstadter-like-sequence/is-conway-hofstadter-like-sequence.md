@@ -6,13 +6,18 @@ statement: formalized
 lean: MetaMathlibExt.IsConwayHofstadterLikeSequence
 ---
 
-# Is Conway Hofstadter Like Sequence
+# Conway–Hofstadter-like sequence
 
-A Conway–Hofstadter-like sequence of order `k`.
+**Conway–Hofstadter-like sequence.** Let $k$ be a natural number. A sequence
+$c : \mathbb{N} \to \mathbb{N}$ is a Conway–Hofstadter-like sequence of order $k$ when
+$c(1) = c(2) = 1$ and, for every $n \ge 3$,
 
-For `n ≥ 3`, the two recursive indices add to `n`. The helper
-`conwayHofstadterResidue` implements the source's explicit convention that residue zero modulo
-`n - 1` is written as `n - 1`, rather than as zero.
+$$c(n) = c(i_n) + c(n - i_n),$$
+
+where $i_n$ is the one-based residue of $k \, c(n-1)$ modulo $n - 1$: it equals
+$k \, c(n-1) \bmod (n-1)$ when this is nonzero, and $n - 1$ otherwise.
+
+The value $c(0)$ is not constrained.
 
 ## Depends on
 
@@ -20,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Conway Hofstadter Residue](conway-hofstadter-residue.md)
+- [One-based residue](conway-hofstadter-residue.md)
 
 ## Sources
 

@@ -16,8 +16,8 @@ $\varphi$ if and only if $\varphi$ is satisfiable.
 
 - [2-CNF formulas](is-two-cnf.md)
 - [SCC-based 2-SAT decision procedure](decide2-sat.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -33,7 +33,7 @@ $\varphi$ if and only if $\varphi$ is satisfiable.
 - [Reachability in the finite implication graph](implication-graph-reachable-iff.md)
 - [A positive literal reaching its complement lies over a variable of the formula](mem-vars-of-imp-reach-true-false.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -34,7 +34,7 @@ declared time cost) is polynomial-time computable under the canonical bitstring 
 - [Occurrence table of a formula and a witness](../sat-verifier-spec/ents.md)
 - [Sat Verifier ret eq](../sat-verifier-spec/sat-verifier-ret-eq.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

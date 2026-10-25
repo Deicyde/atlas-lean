@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.isMCFinite_of_mvPolynomial_recursion
 ---
 
-# Is MCFinite of mv Polynomial recursion
+# Polynomial recursions give MC-finite sequences
 
-The first coordinate of a polynomial recursion over `ℤ`,
-`uᵢ (n + 1) = Pᵢ (u₀ n, …, u_k n, n)`, is MC-finite.
+**Polynomial recursions give MC-finite sequences.** Let $u_0, \dots, u_k$ be integer sequences
+and let $P_0, \dots, P_k$ be polynomials with integer coefficients in $k + 2$ variables such that
+$u_i(n+1) = P_i(u_0(n), \dots, u_k(n), n)$ for every $i \le k$ and every $n \ge 0$. Then the
+sequence $u_0$ is MC-finite.
 
 ## Depends on
 
-- [Is MCFinite](is-mcfinite.md)
+- [MC-finite sequences](is-mcfinite.md)
 
 ## Proof depends on
 

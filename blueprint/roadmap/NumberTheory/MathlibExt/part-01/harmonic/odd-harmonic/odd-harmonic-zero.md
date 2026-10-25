@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.oddHarmonic_zero
 ---
 
-# Odd Harmonic zero
+# The zeroth odd harmonic number
 
-`O_0 = 0`.
+**The zeroth odd harmonic number.** The odd harmonic number $O_0$ equals $0$.
 
 ## Depends on
 
-- [Odd Harmonic](odd-harmonic.md)
+- [Odd harmonic numbers](odd-harmonic.md)
 
 ## Sources
 

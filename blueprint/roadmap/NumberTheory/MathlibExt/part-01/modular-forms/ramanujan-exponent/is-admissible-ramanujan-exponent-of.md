@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.isAdmissible_ramanujanExponentOf
 ---
 
-# Is Admissible ramanujan Exponent Of
+# The Ramanujan exponent is admissible
 
-The family's Ramanujan exponent is itself admissible.
+**The Ramanujan exponent is admissible.** For every local-exponent family $F$, $F$ is admissible
+at its Ramanujan exponent: every local exponent of $F$ is at most the Ramanujan exponent of $F$.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Local Exponent Family](local-exponent-family.md)
-- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+- [Admissibility of an exponent for a local-exponent family](is-admissible.md)
+- [Family of local exponents](local-exponent-family.md)
+- [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 
 ## Proof depends on
 
-- [Exponent le ramanujan Exponent Of](exponent-le-ramanujan-exponent-of.md)
+- [Local exponents are bounded by the Ramanujan exponent](exponent-le-ramanujan-exponent-of.md)
 
 ## Sources
 

@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.Q9_pos
 ---
 
-# Q9 pos
+# Q₉ is positive
 
-`Q9` is positive.
+**Q₉ is positive.** The truncation modulus $Q_9$ of the $k = 9$ case satisfies $0 < Q_9$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

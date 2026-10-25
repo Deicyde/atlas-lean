@@ -7,18 +7,21 @@ proof: formalized
 lean: Nat.Primes.shiftedLogDirichletContinuation_agree
 ---
 
-# Shifted Log Dirichlet Continuation agree
+# The shifted continuation agrees with the shifted series
 
-The shifted witness agrees with the series where 0 < re s.
+**The shifted continuation agrees with the shifted series.** Let
+$\Phi(s) = \sum_p \log p / p^s$ be the prime logarithmic Dirichlet series and $g_1$ the shifted
+continuation. For every $s \in \mathbb{C}$ with $\operatorname{Re} s > 0$,
+$g_1(s) = \Phi(s + 1) - 1/s$.
 
 ## Depends on
 
-- [Log Dirichlet Series](../../../../part-01/lseries/prime-log/log-dirichlet-series.md)
-- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+- [Prime logarithmic Dirichlet series](../../../../part-01/lseries/prime-log/log-dirichlet-series.md)
+- [The shifted log-Dirichlet continuation](shifted-log-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [The canonical prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
 - [Log Dirichlet Continuation agree](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-agree.md)
 
 ## Sources

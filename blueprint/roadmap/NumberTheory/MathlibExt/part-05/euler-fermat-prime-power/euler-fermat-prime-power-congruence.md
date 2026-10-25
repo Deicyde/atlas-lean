@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.euler_fermat_prime_power_congruence
 ---
 
-# Euler fermat prime power congruence
+# Euler–Fermat congruence modulo prime powers, for positive bases
 
-For a positive natural `a`, a prime `p`, and `1 ≤ r`,
-`a ^ (p ^ r)` is congruent to `a ^ (p ^ (r - 1))` modulo `p ^ r`.
+**Euler–Fermat congruence modulo prime powers, for positive bases.** For every positive natural
+number $a$, every prime $p$ and every natural number $r \ge 1$, we have
+$a^{p^r} \equiv a^{p^{r-1}} \pmod{p^r}$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Euler fermat prime power congruence general](euler-fermat-prime-power-congruence-gene.md)
+- [Euler–Fermat congruence modulo prime powers](euler-fermat-prime-power-congruence-gene.md)
 
 ## Sources
 

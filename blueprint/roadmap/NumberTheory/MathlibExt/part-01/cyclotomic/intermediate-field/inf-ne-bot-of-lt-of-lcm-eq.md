@@ -7,10 +7,14 @@ proof: formalized
 lean: CyclotomicField.inf_ne_bot_of_lt_of_lcm_eq
 ---
 
-# Inf ne bot of lt of lcm eq
+# A field strictly above one cyclotomic subfield meets the other
 
-If `E₀ < F`, then `F` meets `E₁` nontrivially, provided `E₀` and `E₁` are cyclotomic
-intermediate fields whose conductors have least common multiple `m`.
+**A field strictly above one cyclotomic subfield meets the other.** Let $n_0$, $n_1$ and $m$
+be natural numbers with $n_0, n_1 \neq 0$ and $\operatorname{lcm}(n_0, n_1) = m$. Let $E_0$ and
+$E_1$ be intermediate fields of the $m$-th cyclotomic field $\mathbb{Q}(\zeta_m)$ over
+$\mathbb{Q}$ such that $E_0$ is generated over $\mathbb{Q}$ by a primitive $n_0$-th root of unity
+and $E_1$ by a primitive $n_1$-th root of unity. If $F$ is an intermediate field of
+$\mathbb{Q}(\zeta_m)$ with $E_0 \subsetneq F$, then $F \cap E_1 \neq \mathbb{Q}$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sup eq top of lcm eq](sup-eq-top-of-lcm-eq.md)
+- [Two cyclotomic subfields whose levels have lcm $m$ generate the $m$-th cyclotomic field](sup-eq-top-of-lcm-eq.md)
 - [Intermediate fields of an abelian extension form a modular lattice](../../../../../FieldTheory/MathlibExt/galois/is-modular-lattice-intermediate-field.md)
 
 ## Sources

@@ -21,8 +21,8 @@ row-by-row pair bits of $O_\varphi$.
 - [Walked items of a formula](items.md)
 - [Rows pushed for a clause's literals](lrows.md)
 - [Literal occurrences of a CNF formula](../clique/occs.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

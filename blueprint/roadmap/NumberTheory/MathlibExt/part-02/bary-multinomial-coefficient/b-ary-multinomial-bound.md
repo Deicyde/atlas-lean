@@ -6,15 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.bAryMultinomialBound
 ---
 
-# B Ary Multinomial Bound
+# Digit-length bound for the $b$-ary multinomial coefficient
 
-Finite digit bound covering `n` and every entry of `ks`.
+**Digit-length bound for the $b$-ary multinomial coefficient.** For natural numbers $b$ and
+$n$ and a list $(k_1, \dots, k_m)$ of natural numbers, the bound is the largest of the numbers of
+base-$b$ digits of $n, k_1, \dots, k_m$ (with $0$ having no digits).
 
-Takes the maximum of the digit-list lengths, so every nonzero digit lies below
-the bound; beyond it all factors equal `1`, matching the source's sufficiently
-large `N`. Concept `jis_term_48a88a0d7fe1b70bcdb0254d`, semantic child
-`jis_sem_8f93866ba77d801d9ead13ca`, statements `jis_2dd3152b04bd3c701907ca5c`
-and `jis_40ae94aec46faf8f37032d00`.
+Every nonzero base-$b$ digit of $n$ and of each $k_i$ has rank below the bound, so at every higher
+rank the digitwise $b$-ary multinomial factor equals $1$; this plays the role of the source's
+sufficiently large $N$.
 
 ## Depends on
 
@@ -23,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BAryMultinomialCoefficient](../../../../../sources/v2/MathlibExt.md)
+- concept `jis_term_48a88a0d7fe1b70bcdb0254d`, semantic child `jis_sem_8f93866ba77d801d9ead13ca`, statements `jis_2dd3152b04bd3c701907ca5c` and `jis_40ae94aec46faf8f37032d00`.

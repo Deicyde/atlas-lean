@@ -12,7 +12,7 @@ For a prime `p`, the tetration `p^p` solves `D(C(n)) = C(D(n))` if and only if
 
 ## Depends on
 
-- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
 - [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources

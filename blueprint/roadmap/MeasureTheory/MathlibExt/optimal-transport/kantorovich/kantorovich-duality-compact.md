@@ -7,20 +7,24 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.kantorovich_duality_compact
 ---
 
-# Kantorovich duality compact
+# Kantorovich duality on compact metric spaces
 
-Strong duality on nonempty compact metric Borel spaces: for continuous `c : X × Y → ℝ`, `inf_π ∫ c
-dπ = sup_{φ,ψ} ∫ φ dμ + ∫ ψ dν` over couplings `π` and continuous potentials `φ, ψ` with `φ x + ψ y
-≤ c (x,y)`.
+**Kantorovich duality on compact metric spaces.** Let $X$ and $Y$ be nonempty compact metric
+spaces, each carrying its Borel $\sigma$-algebra, let $\mu$ and $\nu$ be probability measures on
+$X$ and $Y$, and let $c : X \times Y \to \mathbb{R}$ be continuous. Then the infimum of
+$\int c \, d\pi$ over all couplings $\pi$ of $\mu$ and $\nu$ equals the supremum of
+$\int \varphi \, d\mu + \int \psi \, d\nu$ over all pairs of continuous functions
+$\varphi : X \to \mathbb{R}$ and $\psi : Y \to \mathbb{R}$ such that
+$\varphi(x) + \psi(y) \le c(x, y)$ for all $x \in X$ and $y \in Y$.
 
 ## Depends on
 
-- [Dual Feasible](dual-feasible.md)
-- [Primal Values](primal-values.md)
+- [Dual feasible pair of potentials](dual-feasible.md)
+- [Values of the transport cost over couplings](primal-values.md)
 
 ## Proof depends on
 
-- [Is Coupling](is-coupling.md)
+- [Coupling of two probability measures](is-coupling.md)
 
 ## Sources
 

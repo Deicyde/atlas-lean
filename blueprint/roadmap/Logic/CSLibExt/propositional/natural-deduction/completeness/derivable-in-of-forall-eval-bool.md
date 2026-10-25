@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Logic.PL.Theory.derivableIn_of_forall_evalBool
 ---
 
-# Strong completeness
+# Strong completeness of classical propositional natural deduction
 
-**Strong completeness** of natural deduction for classical theories: a sequent true
-under every valuation that reads `⊥` as false and satisfies `T` is `T`-derivable.
+**Strong completeness of classical propositional natural deduction.** Let $T$ be a classical
+theory, that is, one that derives $\neg\neg B \to B$ for every proposition $B$, where $\neg B$
+abbreviates $B \to \bot$. Let $\Gamma$ be a finite set of propositions and $A$ a proposition. If
+every Boolean valuation $v$ of the atoms with $v(\bot) = \mathrm{false}$ that makes every member of
+$T$ and every member of $\Gamma$ true also makes $A$ true, then the sequent $\Gamma \vdash A$ is
+derivable from $T$.
 
 ## Depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Bool Satisfiable](bool-satisfiable.md)
-- [Eval Bool neg](../semantics/eval-bool-neg.md)
+- [Satisfiable sets of propositions](bool-satisfiable.md)
+- [Truth value of a negation](../semantics/eval-bool-neg.md)
 - [Consistent With](consistent-with.md)
-- [Model existence](bool-satisfiable-2.md)
+- [Model existence for propositional natural deduction](bool-satisfiable-2.md)
 
 ## Sources
 

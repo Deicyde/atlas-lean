@@ -7,17 +7,18 @@ proof: formalized
 lean: isIntegralFactorialRatio_refl
 ---
 
-# Is Integral Factorial Ratio refl
+# Equal tuples form an integral factorial ratio
 
-Equal tuples always satisfy the predicate.
+**Equal tuples form an integral factorial ratio.** If every entry of a list $L$ of natural
+numbers is positive, then $(L, L)$ is an integral factorial ratio.
 
 ## Depends on
 
-- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Integral factorial ratio](is-integral-factorial-ratio.md)
 
 ## Proof depends on
 
-- [Factorial Prod](factorial-prod.md)
+- [Product of scaled factorials](factorial-prod.md)
 
 ## Sources
 

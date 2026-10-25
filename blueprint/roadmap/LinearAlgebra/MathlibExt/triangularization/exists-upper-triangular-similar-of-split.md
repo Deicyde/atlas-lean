@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.TriangularizationWanted.exists_upperTriangular_similar_of_splits
 ---
 
-# Exists upper Triangular similar of splits
+# Triangularization of a matrix with split characteristic polynomial
 
-A square matrix whose characteristic polynomial splits is similar to an upper-triangular
-matrix.
+**Triangularization of a matrix with split characteristic polynomial.** Let $K$ be a field, let
+$n$ be a finite linearly ordered index set, and let $A$ be a square matrix over $K$ with rows and
+columns indexed by $n$ whose characteristic polynomial splits over $K$. Then there are an
+invertible matrix $P$ and a matrix $T$, both over $K$ and indexed by $n$, such that $T$ is upper
+triangular ($T_{ij} = 0$ whenever $j < i$) and $A = P T P^{-1}$.
 
-Proof: apply `exists_basis_upperTriangular_toMatrix` to `Matrix.toLin` of the matrix and
-conjugate by the change-of-basis matrix from the standard basis.
+Proof: triangularize the endomorphism of $K^n$ given by $A$ in the standard basis, and conjugate
+by the change-of-basis matrix from the standard basis to the triangularizing basis.
 
 ## Depends on
 
@@ -21,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists basis upper Triangular to Matrix](exists-basis-upper-triangular-to-matrix.md)
+- [Triangularization of an endomorphism with split characteristic polynomial](exists-basis-upper-triangular-to-matrix.md)
 
 ## Sources
 

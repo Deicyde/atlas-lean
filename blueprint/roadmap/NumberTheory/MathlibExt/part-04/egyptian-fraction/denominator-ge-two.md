@@ -13,11 +13,11 @@ Every denominator in a nondecreasing underapproximation is at least two.
 
 ## Depends on
 
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian-2.md)
+- [Nondecreasing underapproximations have Egyptian denominator tuples](is-nondecreasing-egyptian-2.md)
 
 ## Sources
 

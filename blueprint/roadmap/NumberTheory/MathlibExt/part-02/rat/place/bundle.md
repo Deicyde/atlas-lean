@@ -6,16 +6,17 @@ statement: formalized
 lean: Rat.Place.bundle
 ---
 
-# Bundle
+# Bundled completed field at a rational place
 
-Bundle selection by place. Exactly `ℝ` at infinity and `Padic p` at
-a prime. `noncomputable abbrev` so reduction exposes standard real and
-`p`-adic structures.
+**Bundled completed field at a rational place.** To each place $v$ of $\mathbb{Q}$ this assigns
+a complete normed field: the real numbers $\mathbb{R}$ with the usual absolute value when $v$ is the
+infinite place, and, when $v$ is the finite place at a prime $p$, the field $\mathbb{Q}_p$ of
+$p$-adic numbers with the $p$-adic norm.
 
 ## Depends on
 
-- [Place](place.md)
-- [Completed Field Bundle](completed-field-bundle.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Bundled complete normed field](completed-field-bundle.md)
 
 ## Sources
 

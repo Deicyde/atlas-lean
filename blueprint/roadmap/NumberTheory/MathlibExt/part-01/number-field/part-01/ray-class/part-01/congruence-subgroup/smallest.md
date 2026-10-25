@@ -6,18 +6,21 @@ statement: formalized
 lean: NumberField.Modulus.CongruenceSubgroup.smallest
 ---
 
-# Smallest
+# Smallest congruence subgroup
 
-Smallest congruence subgroup, given by the ray group.
+**Smallest congruence subgroup.** For a modulus $\mathfrak m$ of a number field $K$, the
+smallest congruence subgroup for $\mathfrak m$ is the ray group of $\mathfrak m$ itself, a
+subgroup of the group of invertible fractional ideals of $K$ coprime to the finite part of
+$\mathfrak m$.
 
 ## Depends on
 
-- [Congruence Subgroup](congruence-subgroup.md)
+- [Congruence subgroup](congruence-subgroup.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ statement: formalized
 lean: NumberField.Modulus.trivialCharacter
 ---
 
-# Trivial Character
+# Trivial character
 
-The trivial ray class character.
+**Trivial character.** The trivial ray class character of a modulus $m$ of a number field $K$
+is the ray class character sending every ray class of $m$ to $1$.
 
 ## Depends on
 
-- [Ray Class Character](ray-class-character.md)
+- [Ray class character](ray-class-character.md)
 
 ## Proof depends on
 
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

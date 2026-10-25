@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.sqrt_le_exceptionalGap
 ---
 
-# Sqrt le exceptional Gap
+# Exceptional eigenvalues bound the gap parameter
 
-An exceptional eigenvalue contributes its square-root gap.
+**Exceptional eigenvalues bound the gap parameter.** Let $\Gamma$ be a subgroup of
+$\mathrm{SL}(2, \mathbb{Z})$ and let $\lambda$ be a real eigenvalue of the hyperbolic
+Laplacian on $L^2(\Gamma \backslash \mathbb{H})$ with $0 < \lambda < 1/4$. Then
+$\sqrt{1/4 - \lambda}$ is at most the gap parameter $\theta(\Gamma)$ of $\Gamma$.
 
 ## Depends on
 
 - [Is Eigenvalue](is-eigenvalue.md)
-- [Exceptional Gap](exceptional-gap.md)
+- [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
 
 ## Proof depends on
 
-- [Exceptional Gaps](exceptional-gaps.md)
+- [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
 
 ## Sources
 

@@ -7,14 +7,17 @@ proof: formalized
 lean: IntermediateField.le_maximalUnramifiedSubextension
 ---
 
-# Le maximal Unramified Subextension
+# Finite unramified subfields lie in the maximal unramified subextension
 
-Each qualifying intermediate field lies below the maximal one.
+**Finite unramified subfields lie in the maximal unramified subextension.** Let $A$ be a
+commutative ring and $L/K$ a field extension such that the map $A \to L$ factors as
+$A \to K \to L$. Every intermediate field $E$ of $L/K$ that is finite unramified relative to $A$
+is contained in the maximal unramified subextension of $L/K$ relative to $A$.
 
 ## Depends on
 
-- [Is Finite Unramified](is-finite-unramified.md)
-- [Maximal Unramified Subextension](maximal-unramified-subextension.md)
+- [Finite unramified intermediate fields](is-finite-unramified.md)
+- [Maximal unramified subextension](maximal-unramified-subextension.md)
 
 ## Sources
 

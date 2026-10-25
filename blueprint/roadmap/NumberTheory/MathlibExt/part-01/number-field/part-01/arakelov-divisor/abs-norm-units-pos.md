@@ -7,9 +7,12 @@ proof: formalized
 lean: FractionalIdeal.absNorm_units_pos
 ---
 
-# Abs Norm units pos
+# Invertible fractional ideals have positive absolute norm
 
-The absolute norm of an invertible fractional ideal is positive.
+**Invertible fractional ideals have positive absolute norm.** Let $R$ be a Dedekind domain
+that is a free $\mathbb{Z}$-module of finite rank, and let $F$ be its field of fractions. For
+every invertible fractional ideal $I$ of $R$ in $F$, the absolute norm of $I$, a rational
+number, is positive.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Abs Norm units ne zero](abs-norm-units-ne-zero.md)
+- [Invertible fractional ideals have nonzero absolute norm](abs-norm-units-ne-zero.md)
 
 ## Sources
 

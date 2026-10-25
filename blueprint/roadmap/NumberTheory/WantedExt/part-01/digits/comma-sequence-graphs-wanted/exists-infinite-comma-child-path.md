@@ -12,7 +12,7 @@ each comma-child of `k`) contains an infinite path.
 
 ## Depends on
 
-- [Is Comma Candidate](../../../../MathlibExt/part-04/comma-sequence/is-comma-candidate.md)
+- [Comma candidate digits](../../../../MathlibExt/part-04/comma-sequence/is-comma-candidate.md)
 
 ## Sources
 

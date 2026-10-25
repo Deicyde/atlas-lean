@@ -15,7 +15,7 @@ Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`).
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Tokens of a clause](../sat-verifier-spec/clause-toks.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

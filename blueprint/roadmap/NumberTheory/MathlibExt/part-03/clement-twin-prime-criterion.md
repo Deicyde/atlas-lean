@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.clement_twin_prime_criterion
 ---
 
-# Clement Twin Primes
+# Clement's criterion for twin primes
 
-Clement's criterion for twin primes (source-faithful statement).
+**Clement's criterion for twin primes.** For every natural number $p \ge 2$, the numbers
+$p$ and $p + 2$ are both prime if and only if
 
-States that for a natural number `p` with `2 ≤ p`, `p` and `p + 2` are both
-prime if and only if `4 * ((p - 1)! + 1) + p` is `0` modulo `p * (p + 2)`.
+$$4\bigl((p-1)! + 1\bigr) + p \equiv 0 \pmod{p(p+2)}.$$
 
-The `2 ≤ p` hypothesis is a required correction: the unqualified JIS
-restatement is false at `p = 1`.
+The hypothesis $p \ge 2$ is needed: the unqualified restatement in the Journal of Integer
+Sequences is false at $p = 1$.
 
 Source provenance (grounded ID `jis_grounded_f61a8741bce6c20e6c61e08b`):
 * JIS restatement: `https://cs.uwaterloo.ca/journals/JIS/VOL13/Schmidt/multifact.tex`,

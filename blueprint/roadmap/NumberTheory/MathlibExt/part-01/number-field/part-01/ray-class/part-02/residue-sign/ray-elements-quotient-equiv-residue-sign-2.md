@@ -7,21 +7,24 @@ proof: formalized
 lean: NumberField.Modulus.rayElementsQuotientEquivResidueSign_mk
 ---
 
-# Ray Elements Quotient Equiv Residue Sign mk
+# The residue-sign isomorphism on classes
 
-The quotient equivalence evaluated on a class representative.
+**The residue-sign isomorphism on classes.** Let $m$ be a modulus of a number field $K$. For
+every ray element $x$ of $m$, the residue-sign isomorphism of $m$ sends the class of $x$ in the
+quotient of the ray elements of $m$ by the ray-one subgroup to the image of $x$ under the
+residue-sign map of $m$.
 
 ## Depends on
 
-- [Residue Sign Target](residue-sign-target.md)
-- [Ray Elements](../ray-group/ray-elements.md)
-- [Ray Elements Quotient Equiv Residue Sign](ray-elements-quotient-equiv-residue-sign.md)
-- [Ray One Elements](ray-one-elements.md)
-- [Residue Sign Map](residue-sign-map.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
+- [The residue-sign isomorphism](ray-elements-quotient-equiv-residue-sign.md)
+- [Ray-one subgroup](ray-one-elements.md)
+- [Residue-sign map](residue-sign-map.md)
 
 ## Proof depends on
 
-- [Residue Sign Map surjective](residue-sign-map-surjective.md)
+- [Surjectivity of the residue-sign map](residue-sign-map-surjective.md)
 
 ## Sources
 

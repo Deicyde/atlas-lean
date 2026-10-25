@@ -7,15 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.lehmer_cyclotomic_identity
 ---
 
-# Lehmer cyclotomic identity
+# Lehmer's identity for the real cyclotomic polynomial
 
-Denominator-cleared Laurent-polynomial form of `ψₙ(x + x⁻¹) = x^(-φ(n)/2) Φₙ(x)`:
-multiplying the evaluation of the real cyclotomic polynomial at `x + x⁻¹` by
-`x ^ (φ(n) / 2)` recovers the cyclotomic polynomial as a Laurent polynomial.
+**Lehmer's identity for the real cyclotomic polynomial.** Let $n > 2$ be a natural number, let
+$\psi_n$ be the real cyclotomic polynomial, let $\Phi_n \in \mathbb{Z}[X]$ be the $n$-th
+cyclotomic polynomial, and let $\varphi$ be Euler's totient function. Then in the ring
+$\mathbb{Z}[x, x^{-1}]$ of Laurent polynomials over $\mathbb{Z}$,
+$x^{\varphi(n)/2} \, \psi_n(x + x^{-1}) = \Phi_n(x)$, that is,
+$\psi_n(x + x^{-1}) = x^{-\varphi(n)/2} \, \Phi_n(x)$.
 
 ## Depends on
 
-- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
+- [Real cyclotomic polynomial](../real-cyclotomic-polynomial.md)
 
 ## Sources
 

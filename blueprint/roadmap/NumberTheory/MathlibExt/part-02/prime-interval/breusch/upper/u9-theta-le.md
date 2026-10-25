@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_theta_le
 ---
 
-# U9 theta le
+# Chebyshev-type bound for the sum of prime logarithms
 
-Prime-log sum bounded by the `3.4` primorial estimate.
+**Chebyshev-type bound for the sum of prime logarithms.** For every real number $Y \ge 0$,
+the sum of $\log p$ over all primes $p \le \lfloor Y \rfloor$ is at most $Y \log 3.4$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [U9 primorial eq](u9-primorial-eq.md)
-- [Theta34 real](../theta/theta34-real.md)
+- [The primorial as a product of primes](u9-primorial-eq.md)
+- [Primorial bound by powers of 3.4, real form](../theta/theta34-real.md)
 
 ## Sources
 

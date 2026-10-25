@@ -7,10 +7,17 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_smooth_count_bound
 ---
 
-# Exists prime dvd choose of smooth count bound
+# Large prime divisor of the block binomial coefficient from the smooth-number count
 
-The smooth-number count contradiction gives a large prime divisor of the block
-binomial coefficient.
+**Large prime divisor of the block binomial coefficient from the smooth-number count.**
+Let $n$ and $k$ be natural numbers, let $\pi(n)$ be the number of primes at most $n$, and let
+$\lfloor\sqrt{k+n-1}\rfloor$ be the integer square root. If
+$2^{\pi(n)} \lfloor\sqrt{k+n-1}\rfloor < n$, then some prime $p > n$ divides
+$\binom{k+n-1}{n}$.
+
+Otherwise all $n$ integers $k, \dots, k+n-1$ would be positive, at most $k+n-1$ and free of
+prime factors greater than $n$, and there are at most $2^{\pi(n)} \lfloor\sqrt{k+n-1}\rfloor$
+such integers.
 
 ## Depends on
 
@@ -18,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists prime dvd choose of large prime dvd block](exists-prime-dvd-choose-of-large-prime-d.md)
+- [Large prime divisors pass from a block to its binomial coefficient](exists-prime-dvd-choose-of-large-prime-d.md)
 
 ## Sources
 

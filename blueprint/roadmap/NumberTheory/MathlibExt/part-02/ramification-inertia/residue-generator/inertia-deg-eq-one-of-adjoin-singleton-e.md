@@ -7,12 +7,15 @@ proof: formalized
 lean: Ideal.inertiaDeg_eq_one_of_adjoin_singleton_eq_top
 ---
 
-# Inertia Deg eq one of adjoin singleton eq top
+# Inertia degree one for a singly generated algebra
 
-If `B` is generated over `A` by an element `π ∈ q`, then the inertia
-degree of a maximal `q` over a maximal `q.under A` is `1`: the residue
-algebras coincide via the surjective canonical map, so the extension has
-finite rank one.
+**Inertia degree one for a singly generated algebra.** Let $A$ and $B$ be commutative rings,
+$B$ an $A$-algebra, and $\mathfrak q$ a maximal ideal of $B$ whose preimage $\mathfrak p$ under
+$A \to B$ is maximal. If $B$ is generated as an $A$-algebra by a single element
+$\pi \in \mathfrak q$, then the inertia degree of $\mathfrak q$ over $\mathfrak p$ is $1$.
+
+The canonical map $A/\mathfrak p \to B/\mathfrak q$ is surjective, so the residue field
+extension has degree one.
 
 ## Depends on
 
@@ -20,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Quotient algebra Map surjective of adjoin singleton eq top](quotient-algebra-map-surjective-of-adjoi.md)
+- [Surjectivity of the residue map for a singly generated algebra](quotient-algebra-map-surjective-of-adjoi.md)
 
 ## Sources
 

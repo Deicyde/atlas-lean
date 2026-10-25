@@ -11,7 +11,7 @@ Every positive solution of `D(C(n)) = C(D(n))` is composite.
 
 ## Depends on
 
-- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
 - [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources

@@ -7,13 +7,15 @@ proof: formalized
 lean: ArithmeticFunction.IsCompletelyMultiplicative.map_mul
 ---
 
-# Map mul
+# Completely multiplicative functions preserve products
 
-Projection for `IsCompletelyMultiplicative`.
+**Completely multiplicative functions preserve products.** Let $R$ be a type with a
+multiplication and a zero, and let $f$ be a completely multiplicative arithmetic function with
+values in $R$. Then $f(mn) = f(m) f(n)$ for all $m, n \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is Completely Multiplicative](is-completely-multiplicative.md)
+- [Completely multiplicative arithmetic function](is-completely-multiplicative.md)
 
 ## Sources
 

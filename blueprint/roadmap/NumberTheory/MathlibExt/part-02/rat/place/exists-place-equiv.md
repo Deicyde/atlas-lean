@@ -7,20 +7,21 @@ proof: formalized
 lean: Rat.Place.exists_place_equiv
 ---
 
-# Exists place equiv
+# Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place
 
-Translation of `Rat.AbsoluteValue.equiv_real_or_padic` into the
-uniform place index.
+**Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place.** Let $f$
+be a real-valued absolute value on $\mathbb{Q}$ that is nontrivial, that is, $f(x) \ne 1$ for some
+$x \ne 0$. Then there is a place $v$ of $\mathbb{Q}$ such that $f$ is equivalent to the absolute
+value $|\cdot|_v$ attached to $v$ (the ordinary absolute value at the infinite place, the
+$p$-adic absolute value at the prime $p$).
 
-`Rat.AbsoluteValue.equiv_real_or_padic` takes `f.IsNontrivial` and
-concludes `f ≈ real ∨ ∃! p, ∃ (_ : Fact p.Prime), f ≈ padic p`;
-this is repackaged as `∃ v : Place, f ≈ v.absoluteValue`, matching the
-conclusion notation of Ostrowski directly.
+Here two absolute values $f$ and $g$ on $\mathbb{Q}$ are equivalent when $f(x) \le f(y)$ holds
+exactly when $g(x) \le g(y)$, for all $x, y \in \mathbb{Q}$.
 
 ## Depends on
 
-- [Place](place.md)
-- [Absolute Value](absolute-value.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Absolute value at a rational place](absolute-value.md)
 
 ## Sources
 

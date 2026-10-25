@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch3 Entry12 Summable Succ N
 
-- [Ramanujan part1 ch3 entry12 summable succ n general](ramanujan-part1-ch3-entry12-summable-suc.md)
-- [Ramanujan part1 ch3 entry12 summable succ n](ramanujan-part1-ch3-entry12-summable-suc-2.md)
+- [Absolute convergence of the shifted series in Entry 12 for every $n$](ramanujan-part1-ch3-entry12-summable-suc.md)
+- [Absolute convergence of the shifted series in Entry 12](ramanujan-part1-ch3-entry12-summable-suc-2.md)

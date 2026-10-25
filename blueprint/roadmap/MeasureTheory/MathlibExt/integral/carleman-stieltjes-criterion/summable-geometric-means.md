@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.summable_geometric_means
 ---
 
-# Summable geometric means
+# Carleman's inequality, summability form
 
-Summability form of Carleman's inequality: geometric means of the initial products of a
-summable nonnegative sequence again form a summable sequence.
+**Carleman's inequality, summability form.** If $(a_n)_{n \ge 0}$ is a summable sequence of
+nonnegative real numbers, then the sequence of geometric means $(a_0 a_1 \cdots a_n)^{1/(n+1)}$,
+$n \ge 0$, is summable.
 
 ## Depends on
 

@@ -6,12 +6,12 @@ statement: formalized
 lean: Rat.Place
 ---
 
-# Place
+# Places of $\mathbb{Q}$
 
-Index for `M_ℚ`: inequivalent normalised absolute values on `ℚ`.
-
-* `infinite` is the ordinary archimedean absolute value.
-* `finite prime` is the `p`-adic absolute value for `prime = ⟨p, hp⟩`.
+**Places of $\mathbb{Q}$.** The set $M_{\mathbb{Q}}$ of places of $\mathbb{Q}$, which indexes
+the inequivalent normalised absolute values on $\mathbb{Q}$. It consists of one infinite place,
+corresponding to the ordinary archimedean absolute value, and one finite place for each prime
+number $p$, corresponding to the $p$-adic absolute value.
 
 ## Depends on
 

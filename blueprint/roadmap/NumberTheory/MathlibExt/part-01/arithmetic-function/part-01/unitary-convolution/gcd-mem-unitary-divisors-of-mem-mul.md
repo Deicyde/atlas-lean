@@ -6,10 +6,10 @@ proof: formalized
 lean: Nat.gcd_mem_unitaryDivisors_of_mem_mul
 ---
 
-# Gcd mem unitary Divisors of mem mul
+# Gcd with a coprime factor preserves unitary divisors
 
-For coprime `m` and `n`, the `gcd` of a unitary divisor of `m * n` with `m` is a unitary
-divisor of `m`.
+**Gcd with a coprime factor preserves unitary divisors.** Let $m$ and $n$ be coprime natural
+numbers. If $d$ is a unitary divisor of $mn$, then $\gcd(d, m)$ is a unitary divisor of $m$.
 
 ## Depends on
 

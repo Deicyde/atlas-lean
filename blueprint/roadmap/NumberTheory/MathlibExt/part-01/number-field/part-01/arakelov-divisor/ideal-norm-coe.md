@@ -7,14 +7,16 @@ proof: formalized
 lean: NumberField.ArakelovDivisor.idealNorm_coe
 ---
 
-# Ideal Norm coe
+# Real value of the ideal norm
 
-Coercion of the ideal norm to the reals.
+**Real value of the ideal norm.** For every Arakelov divisor $D$ of a number field $K$ with
+fractional ideal $I$, the ideal norm of $D$, viewed as a real number, equals the absolute norm
+$N(I) \in \mathbb{Q}$ of $I$, viewed as a real number.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Ideal Norm](ideal-norm.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Ideal norm of an Arakelov divisor](ideal-norm.md)
 
 ## Sources
 

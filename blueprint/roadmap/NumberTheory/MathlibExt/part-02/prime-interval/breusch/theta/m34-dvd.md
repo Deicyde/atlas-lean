@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_dvd
 ---
 
-# M34 dvd
+# Factorial divisibility behind the multinomial coefficient
 
-The multinomial denominator divides `(6 * t)!`.
+**Factorial divisibility behind the multinomial coefficient.** For every natural number $t$,
+the product $(3t)!\,(2t)!\,t!$ divides $(6t)!$.
 
 ## Depends on
 

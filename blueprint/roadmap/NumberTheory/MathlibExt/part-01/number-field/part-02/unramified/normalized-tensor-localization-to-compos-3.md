@@ -7,21 +7,25 @@ proof: formalized
 lean: NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_mk'_spec
 ---
 
-# Normalized Tensor Localization To Compositum At Prime mk' spec
+# Value of the localization map on fractions
 
-Characteristic equation for the canonical localization map on a
-localization representative: the value at `IsLocalization.mk' _ x y` is
-characterized by cross multiplication against the base map. This is the stable
-`IsLocalization.lift_mk'`-style form; it avoids exposing the
-implementation-only unit proof inside
-`normalizedTensorLocalizationToCompositumAtPrime`.
+**Value of the localization map on fractions.** Let $L$ be a number field, let $E$ and $F$ be
+intermediate fields of $L/\mathbb{Q}$ with compositum $EF$, let $p$ be a prime ideal of
+$\mathbb{Z}$ that is unramified in $\mathcal{O}_F$, and let $Q$ be a prime ideal of
+$\mathcal{O}_{EF}$ lying over $p$. Write $R = \mathbb{Z}_{(p)}$, let $S_F$ be the localization of
+$\mathcal{O}_F$ at the image of $\mathbb{Z} \setminus p$, let $C$ be the integral closure of $S_F$
+in $S_F \otimes_R \operatorname{Frac}(\mathcal{O}_E)$, let $T = (\mathcal{O}_{EF})_Q$, let
+$g \colon C \to T$ be the normalized tensor map to the compositum at $Q$, let $\mathfrak{q}$ be the
+contracted maximal prime of $C$, and let $\varphi \colon C_{\mathfrak{q}} \to T$ be the
+localization map to the compositum at $Q$. Then for all $x \in C$, $s \in C \setminus \mathfrak{q}$
+and $v \in T$, we have $\varphi(x/s) = v$ if and only if $g(x) = g(s)\,v$.
 
 ## Depends on
 
-- [Normalized Tensor Compositum Prime](normalized-tensor-compositum-prime.md)
-- [Normalized Tensor Compositum Prime is Prime](normalized-tensor-compositum-prime-is-pr.md)
-- [Normalized Tensor Localization To Compositum At Prime](normalized-tensor-localization-to-compos.md)
-- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
+- [The contracted maximal prime of the normalized tensor algebra](normalized-tensor-compositum-prime.md)
+- [The contracted maximal prime is prime](normalized-tensor-compositum-prime-is-pr.md)
+- [The localization map to the compositum at a prime](normalized-tensor-localization-to-compos.md)
+- [Map from the normalized tensor algebra to the local ring of the compositum](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 

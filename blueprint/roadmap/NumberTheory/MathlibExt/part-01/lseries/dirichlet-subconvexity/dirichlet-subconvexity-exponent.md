@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DirichletSubconvexity.dirichletSubconvexityExponent
 ---
 
-# Dirichlet Subconvexity Exponent
+# The conductor-aspect Dirichlet subconvexity exponent
 
-The pointwise conductor-aspect Dirichlet subconvexity exponent.
+**The conductor-aspect Dirichlet subconvexity exponent.** The infimum, taken in the extended
+real numbers, of the set of all real $\theta$ that are admissible conductor-aspect exponents for
+primitive Dirichlet characters. If no real number is admissible, this infimum is $+\infty$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dirichlet Subconvexity Exponent](is-dirichlet-subconvexity-exponent.md)
+- [Admissible exponents for Dirichlet central values](is-dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

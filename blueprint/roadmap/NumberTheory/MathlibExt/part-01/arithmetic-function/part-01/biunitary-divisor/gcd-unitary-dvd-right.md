@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.gcdUnitary_dvd_right
 ---
 
-# Gcd Unitary dvd right
+# The greatest common unitary divisor divides its second argument
 
-For positive `a` and `b`, `gcd₁(a, b)` divides `b`.
+**The greatest common unitary divisor divides its second argument.** For positive natural
+numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ divides $b$.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Proof depends on
 
-- [Gcd Unitary mem unitary Divisors](gcd-unitary-mem-unitary-divisors.md)
+- [The greatest common unitary divisor is a common unitary divisor](gcd-unitary-mem-unitary-divisors.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources

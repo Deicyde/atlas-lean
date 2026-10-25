@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.HZeroIndex
 ---
 
-# HZero Index
+# The type of empty or admissible indices
 
-Indices whose Hoffman words belong to the `H^0` word subalgebra.
+**The type of empty or admissible indices.** The type whose elements are the indices that
+are admissible, that is, nonempty with first entry at least $2$, or that have no entries.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Index](../index/index.md)
-- [Is HZero Index](is-hzero-index.md)
+- [Multiple-zeta index](../index/index.md)
+- [Empty or admissible indices](is-hzero-index.md)
 
 ## Sources
 

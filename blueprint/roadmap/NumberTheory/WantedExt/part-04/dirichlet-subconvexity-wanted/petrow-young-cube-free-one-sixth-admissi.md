@@ -12,7 +12,7 @@ Petrow--Young's Weyl exponent for primitive characters of cube-free level.
 
 ## Depends on
 
-- [Is Central Value Exponent On](../../../MathlibExt/part-01/lseries/dirichlet-subconvexity/is-central-value-exponent-on.md)
+- [Central-value exponents on a set of levels](../../../MathlibExt/part-01/lseries/dirichlet-subconvexity/is-central-value-exponent-on.md)
 - [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources

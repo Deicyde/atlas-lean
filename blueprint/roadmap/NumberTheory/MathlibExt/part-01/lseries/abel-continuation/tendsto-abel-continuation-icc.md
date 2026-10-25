@@ -7,23 +7,24 @@ proof: formalized
 lean: tendsto_abelContinuation_Icc
 ---
 
-# Tendsto abel Continuation Icc
+# Abel continuation as the limit of Dirichlet partial sums
 
-Ordered Dirichlet partial sums converge to the Abel continuation under
-the growth hypothesis and `σ < s.re` alone, for arbitrary real `σ`: no
-summability is assumed. The proof applies public Abel summation
-(`tendsto_sum_mul_atTop_nhds_one_sub_integral₀`) to the zero-padded
-coefficients `c n = if n = 0 then 0 else f n`, whose partial sums agree
-with `abelPartialSum f`, with weight `x ↦ (x : ℂ) ^ (-s)`.
+**Abel continuation as the limit of Dirichlet partial sums.** Let
+$f : \mathbb{N} \to \mathbb{C}$ with partial sums $A(n) = \sum_{k=1}^{n} f(k)$, let $\sigma$ be a
+real number and let $s$ be a complex number with $\sigma < \operatorname{Re} s$. If
+$A(n) = O(n^\sigma)$ as $n \to \infty$, then the partial sums $\sum_{n=1}^{N} f(n) n^{-s}$ converge,
+as $N \to \infty$, to the Abel continuation $F_f(s)$ of $f$ at $s$.
+
+No summability of the Dirichlet series is assumed: the convergence may be conditional.
 
 ## Depends on
 
-- [Abel Continuation](abel-continuation.md)
-- [Abel Partial Sum](abel-partial-sum.md)
+- [Abel continuation of a Dirichlet series](abel-continuation.md)
+- [Partial sums of a coefficient sequence](abel-partial-sum.md)
 
 ## Proof depends on
 
-- [Abel Summatory](abel-summatory.md)
+- [Summatory step function](abel-summatory.md)
 
 ## Sources
 

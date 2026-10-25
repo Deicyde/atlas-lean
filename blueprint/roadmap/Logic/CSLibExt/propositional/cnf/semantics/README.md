@@ -6,7 +6,7 @@ navigation: module
 
 ## CNFLiteral
 
-- [Satisfies](satisfies.md)
+- [Satisfaction of a literal](satisfies.md)
 
 ## CNFClause
 
@@ -18,4 +18,4 @@ navigation: module
 
 ## PL
 
-- [Cnf Sat iff exists satisfies](cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](cnf-sat-iff-exists-satisfies.md)

@@ -6,19 +6,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.isTotallyPositive_one
 ---
 
-# Is Totally Positive one
+# One is a totally positive algebraic integer
 
-`1` is a totally positive algebraic integer, with absolute trace
-`1`.
+**One is a totally positive algebraic integer.** The complex number $1$ is a totally
+positive algebraic integer.
 
 ## Depends on
 
-- [Is Totally Positive](is-totally-positive.md)
+- [Totally positive algebraic integers](is-totally-positive.md)
 
 ## Proof depends on
 
 - [Conjugates](conjugates.md)
-- [Minpoly rat one eq](minpoly-rat-one-eq.md)
+- [Minimal polynomial of one](minpoly-rat-one-eq.md)
 
 ## Sources
 

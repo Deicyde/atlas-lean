@@ -7,18 +7,20 @@ proof: formalized
 lean: EngelExpansion.exists_traj_eq_zero_pos
 ---
 
-# Exists traj eq zero pos
+# Engel trajectories vanish at a positive step
 
-Every Engel trajectory hits `0` at some positive step.
+**Engel trajectories vanish at a positive step.** Let $n$ and $a$ be natural numbers and let
+$t_0 = a, t_1, t_2, \dots$ be the Engel trajectory of $a$ with respect to $n$. Then $t_j = 0$ for
+some $j \ge 1$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero](exists-traj-eq-zero.md)
-- [Neg Rem](neg-rem.md)
+- [An Engel trajectory started at $a$ vanishes within $a + 1$ steps](exists-traj-eq-zero.md)
+- [Negated remainder](neg-rem.md)
 
 ## Sources
 

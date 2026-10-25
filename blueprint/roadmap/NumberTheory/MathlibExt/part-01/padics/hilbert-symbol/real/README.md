@@ -5,8 +5,8 @@ navigation: module
 
 # Real
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
-- [Eq one iff](eq-one-iff.md)
-- [Eq neg one iff](eq-neg-one-iff.md)
-- [Eq neg one iff both neg](eq-neg-one-iff-both-neg.md)
-- [Eq one or neg one](eq-one-or-neg-one.md)
+- [Real Hilbert symbol](real-hilbert-symbol.md)
+- [Real Hilbert symbol equal to $1$](eq-one-iff.md)
+- [Real Hilbert symbol equal to $-1$](eq-neg-one-iff.md)
+- [Sign rule for the real Hilbert symbol](eq-neg-one-iff-both-neg.md)
+- [The real Hilbert symbol is $\pm 1$](eq-one-or-neg-one.md)

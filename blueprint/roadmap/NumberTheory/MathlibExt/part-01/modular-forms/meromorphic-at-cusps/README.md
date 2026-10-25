@@ -5,5 +5,5 @@ navigation: module
 
 # Meromorphic At Cusps
 
-- [Is Meromorphic At Infty](is-meromorphic-at-infty.md)
-- [Is Meromorphic At Cusps](is-meromorphic-at-cusps.md)
+- [Meromorphy at infinity](is-meromorphic-at-infty.md)
+- [Meromorphy at the cusps](is-meromorphic-at-cusps.md)

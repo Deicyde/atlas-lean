@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.IsAdmissible
 ---
 
-# Is Admissible
+# Admissibility of an exponent for a local-exponent family
 
-Hypothesis `H₂(δ)` for one explicit family: every local exponent is
-at most `δ`.
+**Admissibility of an exponent for a local-exponent family.** A local-exponent family $F$ is
+admissible at a real number $\delta$ (Hypothesis $H_2(\delta)$ for $F$) when every local exponent
+$m_i$ of $F$ ($i \in \iota$) is at most $\delta$.
 
 ## Depends on
 
-- [Local Exponent Family](local-exponent-family.md)
+- [Family of local exponents](local-exponent-family.md)
 
 ## Sources
 

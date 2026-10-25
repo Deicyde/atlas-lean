@@ -7,18 +7,19 @@ proof: formalized
 lean: Nat.Primes.logDirichletContinuation_meromorphic
 ---
 
-# Log Dirichlet Continuation meromorphic
+# Meromorphy of the prime logarithmic continuation
 
-The canonical continuation is meromorphic on `Re s > 1 / 2`.
+**Meromorphy of the prime logarithmic continuation.** The prime logarithmic continuation $G$
+is meromorphic on the open half-plane $\{s \in \mathbb{C} : \operatorname{Re} s > 1/2\}$.
 
 ## Depends on
 
-- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+- [The canonical prime logarithmic continuation](log-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Correction](log-dirichlet-correction.md)
-- [Log Dirichlet Correction analytic On](log-dirichlet-correction-analytic-on.md)
+- [Prime-power correction series](log-dirichlet-correction.md)
+- [Analyticity of the prime-power correction series](log-dirichlet-correction-analytic-on.md)
 
 ## Sources
 

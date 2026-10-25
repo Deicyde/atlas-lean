@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_one
 ---
 
-# Sigma Biunitary one
+# The biunitary divisor sum of $1$
 
-`σ**(1) = 1`.
+**The biunitary divisor sum of $1$.** The sum $\sigma^{**}(1)$ of the biunitary divisors of $1$
+equals $1$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Sources
 

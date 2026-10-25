@@ -7,11 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry7Corollary.ramanujan_part1_ch2_entry7_corollary
 ---
 
-# Part1 Ch2 Entry7 Corollary
+# Ramanujan's infinite arctangent series (corollary to Entry 7)
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2,
-    corollary to Entry 7, formula (7.3), printed p. 36 / PDF p. 46.
-Proves `Wanted` entry `ramanujan_part1_ch2_entry7_corollary`.
+**Ramanujan's infinite arctangent series (corollary to Entry 7).** For every real number
+$n > 0$, the series
+
+$$\sum_{k=0}^{\infty} \arctan \frac{2}{(n + 2k + 1)^2}$$
+
+converges absolutely and its sum is $\arctan(1/n)$.
 
 ## Depends on
 
@@ -19,8 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Part1 Ch2 Entry7](ramanujan-part1-ch2-entry7.md)
+- [Ramanujan's finite arctangent sum (Entry 7)](ramanujan-part1-ch2-entry7.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch2Entry7Corollary](../../../../../../sources/v2/MathlibExt.md)
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 7, formula (7.3), printed p. 36 / PDF p. 46. Proves `Wanted` entry `ramanujan_part1_ch2_entry7_corollary`.

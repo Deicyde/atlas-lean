@@ -7,18 +7,18 @@ proof: formalized
 lean: RiemannXi.riemannXi_ne_zero_of_one_le_re
 ---
 
-# Riemann Xi ne zero of one le re
+# The xi function has no zeros with real part at least one
 
-The Riemann xi function does not vanish on the closed half-plane
-`1 ≤ s.re`.
+**The xi function has no zeros with real part at least one.** Let $\xi$ be the Riemann xi
+function. For every complex number $s$ with $\operatorname{Re}(s) \ge 1$, $\xi(s) \ne 0$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Proof depends on
 
-- [Riemann Xi eq mul completed Riemann Zeta](riemann-xi-eq-mul-completed-riemann-zeta.md)
+- [The xi function in terms of the completed zeta function](riemann-xi-eq-mul-completed-riemann-zeta.md)
 
 ## Sources
 

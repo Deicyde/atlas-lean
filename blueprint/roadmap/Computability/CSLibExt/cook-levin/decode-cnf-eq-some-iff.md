@@ -16,7 +16,7 @@ is the length-prefixed binary code of $\varphi$.
 
 - [Decoding a complete length-prefixed CNF formula](decode-cnf.md)
 - [Length-prefixed binary code of a CNF formula](encode-cnf.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -31,7 +31,7 @@ is the length-prefixed binary code of $\varphi$.
 - [Prefix-free code of a natural number](encode-nat-prefix.md)
 - [Reading a unary length prefix](read-unary-length.md)
 - [Parsing a self-delimiting block](undelimit-eq-some-iff.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
 - [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
 

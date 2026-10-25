@@ -5,11 +5,12 @@ statement: formalized
 lean: NumberField.Place
 ---
 
-# Place
+# Places of a number field
 
-The places of a number field: infinite places together with finite
-places, using Mathlib's canonical `NumberField.FinitePlace K` API for
-the finite places.
+**Places of a number field.** For a number field $K$, the places of $K$ form the disjoint union
+of the infinite places of $K$ (the absolute values coming from complex embeddings of $K$) and the
+finite places of $K$ (the absolute values coming from nonzero prime ideals of the ring of
+integers $\mathcal{O}_K$).
 
 ## Depends on
 

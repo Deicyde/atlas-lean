@@ -7,14 +7,15 @@ proof: formalized
 lean: SumSquares.solutions_finite
 ---
 
-# Solutions finite
+# Finitely many representations as a sum of squares
 
-For fixed dimension and norm, there are finitely many ordered signed
-integer vectors having that squared norm.
+**Finitely many representations as a sum of squares.** For all natural numbers $k$ and $n$,
+there are only finitely many integer vectors $(x_1, \dots, x_k) \in \mathbb{Z}^k$ with
+$x_1^2 + \cdots + x_k^2 = n$.
 
 ## Depends on
 
-- [Solutions](solutions.md)
+- [Integer solutions of a sum of squares](solutions.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # Cobham Base Dependence
 
-- [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)
-- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
-- [Cobham base dependence](cobham-base-dependence.md)
-- [Is Ultimately Periodic Set iff is Ultimately Periodic](is-ultimately-periodic-set-iff-is-ultima.md)
-- [Cobham base dependence is Ultimately Periodic](cobham-base-dependence-is-ultimately-per.md)
+- [Multiplicatively independent bases](bases-multiplicatively-independent.md)
+- [Ultimately periodic sets of natural numbers](is-ultimately-periodic-set.md)
+- [Cobham's theorem](cobham-base-dependence.md)
+- [Ultimately periodic sets and their characteristic sequences](is-ultimately-periodic-set-iff-is-ultima.md)
+- [Cobham's theorem for characteristic sequences](cobham-base-dependence-is-ultimately-per.md)

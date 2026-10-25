@@ -6,23 +6,23 @@ navigation: module
 
 ## Truth-table evaluation
 
-- [Eval Bool](eval-bool.md)
-- [Eval Bool neg](eval-bool-neg.md)
+- [Truth-table evaluation](eval-bool.md)
+- [Truth value of a negation](eval-bool-neg.md)
 
 ## Semantic consequence
 
-- [Bool Entails](bool-entails.md)
+- [Truth-table consequence](bool-entails.md)
 
 ## Soundness
 
-- [Soundness](bool-sound.md)
-- [Bool Sound](bool-sound-2.md)
+- [Soundness of natural deduction for truth tables](bool-sound.md)
+- [Truth-table soundness of derivability](bool-sound-2.md)
 
 ## Intuitionistic and classical axioms
 
-- [Eval Bool of mem ipl](eval-bool-of-mem-ipl.md)
-- [Eval Bool of mem cpl](eval-bool-of-mem-cpl.md)
-- [Eval Bool of cpl](eval-bool-of-cpl.md)
-- [Eval Bool of ipl](eval-bool-of-ipl.md)
-- [Not derivable In cpl bot](not-derivable-in-cpl-bot.md)
-- [Not derivable In cpl atom](not-derivable-in-cpl-atom.md)
+- [Ex falso is true when falsum is false](eval-bool-of-mem-ipl.md)
+- [Double-negation elimination is true when falsum is false](eval-bool-of-mem-cpl.md)
+- [Classical derivability implies truth under valuations with false falsum](eval-bool-of-cpl.md)
+- [Intuitionistic derivability implies truth under valuations with false falsum](eval-bool-of-ipl.md)
+- [Consistency of classical propositional logic](not-derivable-in-cpl-bot.md)
+- [Classical logic proves no atom](not-derivable-in-cpl-atom.md)

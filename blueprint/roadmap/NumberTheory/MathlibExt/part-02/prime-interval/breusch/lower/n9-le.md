@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N9_le
 ---
 
-# N9 le
+# Upper bound for the scaled factorial argument $N_9$
 
-`N9m m n ≤ 10 * Q9 * n`.
+**Upper bound for the scaled factorial argument $N_9$.** Let $Q_9 = 210$ and, for natural
+numbers $m$ and $n$, let $N_9(m, n) = 9 n \lfloor Q_9 / m \rfloor$, where $\lfloor Q_9 / 0 \rfloor$
+is taken to be $0$. Then $N_9(m, n) \le 10 Q_9 n$ for all natural numbers $m$ and $n$.
 
 ## Depends on
 
-- [N9m](n9m.md)
-- [Q9](../grid/q9.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

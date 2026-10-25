@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.pi_third_nat
 ---
 
-# Pi third nat
+# Prime-counting bound $\pi(m) \le m/3$ for natural $m \ge 36$
 
-Prime-counting bound `3 * π(m) ≤ m` for `m ≥ 36`.
+**Prime-counting bound $\pi(m) \le m/3$ for natural $m \ge 36$.** Let $\pi(m)$ denote the
+number of primes $p \le m$. For every natural number $m \ge 36$, $3\pi(m) \le m$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pi third large](pi-third-large.md)
-- [Pi third small](pi-third-small.md)
+- [Prime-counting bound $\pi(m) \le m/3$ from $156$ on](pi-third-large.md)
+- [Prime-counting bound $\pi(m) \le m/3$ for $36 \le m < 156$](pi-third-small.md)
 
 ## Sources
 

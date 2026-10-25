@@ -7,21 +7,25 @@ proof: formalized
 lean: NumberField.Modulus.infiniteSignMap_eq_one_iff
 ---
 
-# Infinite Sign Map eq one iff
+# Trivial infinite sign means positivity at the modulus
 
-The joint sign map is trivial iff the element is positive at infinity.
+**Trivial infinite sign means positivity at the modulus.** Let $m$ be a modulus of a number
+field $K$ with finite set of real places $m_\infty$, and for a real place $w$ let $\sigma_w$ be
+the corresponding real embedding of $K$. For every ray element $x$ of $m$, the infinite sign map
+of $m$ sends $x$ to the identity if and only if $x$ is positive at the infinite part of $m$,
+that is, $\sigma_w(x) > 0$ for every $w \in m_\infty$.
 
 ## Depends on
 
-- [Positive At Infinite Part](../../part-02/ray-group/positive-at-infinite-part.md)
-- [Infinite Sign Map](infinite-sign-map.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Positivity at the infinite part of a modulus](../../part-02/ray-group/positive-at-infinite-part.md)
+- [Infinite sign map of a modulus](infinite-sign-map.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Infinite Sign Map apply](infinite-sign-map-apply.md)
-- [Sign At Real Place](sign-at-real-place.md)
-- [Sign At Real Place apply eq one iff](sign-at-real-place-apply-eq-one-iff.md)
+- [Coordinates of the infinite sign map](infinite-sign-map-apply.md)
+- [Sign of a unit at a real place](sign-at-real-place.md)
+- [Trivial sign at a real place means positivity](sign-at-real-place-apply-eq-one-iff.md)
 
 ## Sources
 

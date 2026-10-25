@@ -5,10 +5,10 @@ navigation: module
 
 # Infinite Sign
 
-- [Sign At Real Place](sign-at-real-place.md)
-- [Sign At Real Place apply eq one iff](sign-at-real-place-apply-eq-one-iff.md)
-- [Infinite Sign Map](infinite-sign-map.md)
-- [Infinite Sign Map apply](infinite-sign-map-apply.md)
-- [Infinite Sign Map eq one iff](infinite-sign-map-eq-one-iff.md)
-- [Positive Ray Elements](positive-ray-elements.md)
-- [Mem positive Ray Elements iff](mem-positive-ray-elements-iff.md)
+- [Sign of a unit at a real place](sign-at-real-place.md)
+- [Trivial sign at a real place means positivity](sign-at-real-place-apply-eq-one-iff.md)
+- [Infinite sign map of a modulus](infinite-sign-map.md)
+- [Coordinates of the infinite sign map](infinite-sign-map-apply.md)
+- [Trivial infinite sign means positivity at the modulus](infinite-sign-map-eq-one-iff.md)
+- [Ray elements positive at the infinite part](positive-ray-elements.md)
+- [Membership in the positive ray elements](mem-positive-ray-elements-iff.md)

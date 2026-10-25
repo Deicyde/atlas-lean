@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvariant
 ---
 
-# Is Congruence Invariant
+# Congruence-invariant set functions on the plane
 
-`μ` is equal on congruent sets.
+**Congruence-invariant set functions on the plane.** A function $\mu$ that assigns to every
+subset of the Euclidean plane $\mathbb{R}^2$ a value in $[0, \infty]$ is congruence invariant when
+$\mu(E) = \mu(F)$ for all congruent plane sets $E$ and $F$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Are Congruent](are-congruent.md)
+- [Congruent plane sets](are-congruent.md)
 
 ## Sources
 

@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.reduced_restrict
 ---
 
-# Reduced restrict
+# Restriction yields a reduced diagram
 
-`restrict` always returns a reduced diagram, whatever its input: kept nodes are rebuilt
-with `mk`.
+**Restriction yields a reduced diagram.** For every binary decision diagram $t$, every
+variable $x$ and every Boolean $b$, the cofactor $t[x := b]$ is reduced: no node has two equal
+children.
+
+Nodes that restriction keeps are rebuilt with the node constructor that removes redundant
+tests, so the input need not be reduced.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Reduced](../basic/reduced.md)
-- [Restrict](restrict.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Restriction of a binary decision diagram](restrict.md)
 
 ## Proof depends on
 
-- [Mk](../basic/mk.md)
+- [Node constructor removing a redundant test](../basic/mk.md)
 
 ## Sources
 

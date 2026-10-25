@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.unitaryConv_apply
 ---
 
-# Unitary Conv apply
+# Unitary convolution as a sum over unitary divisors
 
-Unfolding `unitaryConv`.
+**Unitary convolution as a sum over unitary divisors.** Let $R$ be a semiring and let $f$ and
+$g$ be arithmetic functions with values in $R$. For every natural number $n$, their unitary
+convolution $f \sqcup g$ satisfies $(f \sqcup g)(n) = \sum_{d \parallel n} f(d)\, g(n/d)$, where the
+sum runs over the unitary divisors $d$ of $n$: for $n \ge 1$ these are the divisors $d$ of $n$
+with $\gcd(d, n/d) = 1$, and for $n = 0$ there are none, so the sum is $0$.
 
 ## Depends on
 
-- [Unitary Conv](unitary-conv.md)
+- [Unitary convolution](unitary-conv.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources

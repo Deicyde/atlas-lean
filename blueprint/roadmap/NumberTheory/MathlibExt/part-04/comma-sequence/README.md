@@ -5,9 +5,9 @@ navigation: module
 
 # Comma Sequence
 
-- [Comma Msd](comma-msd.md)
-- [Is Comma Candidate](is-comma-candidate.md)
-- [Is Comma Succ](is-comma-succ.md)
-- [Is Comma Terminal](is-comma-terminal.md)
-- [Is Infinite Comma Seq](is-infinite-comma-seq.md)
-- [Is Comma Terminating](is-comma-terminating.md)
+- [Most significant digit](comma-msd.md)
+- [Comma candidate digits](is-comma-candidate.md)
+- [Comma successor](is-comma-succ.md)
+- [Comma-terminal numbers](is-comma-terminal.md)
+- [Infinite comma sequences](is-infinite-comma-seq.md)
+- [Terminating comma sequences](is-comma-terminating.md)

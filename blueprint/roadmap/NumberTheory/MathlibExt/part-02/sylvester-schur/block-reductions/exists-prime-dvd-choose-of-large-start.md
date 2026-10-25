@@ -7,10 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_large_start
 ---
 
-# Exists prime dvd choose of large start
+# Sylvester–Schur criterion for blocks with a large start
 
-A large-start consecutive-block estimate gives the corresponding binomial
-large-prime criterion.
+**Sylvester–Schur criterion for blocks with a large start.** Let $2 \le n < k$ be natural
+numbers with $n! \cdot 2^{n-1} < k$. Then some prime $p > n$ divides $\binom{k + n - 1}{n}$.
 
 ## Depends on
 
@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
-- [Consecutive of large start](../conditional/consecutive-of-large-start.md)
+- [Prime divisors above $n$ of a block term divide the binomial coefficient](prime-dvd-seq-implies-choose.md)
+- [Large starts give a large prime in a consecutive block](../conditional/consecutive-of-large-start.md)
 
 ## Sources
 

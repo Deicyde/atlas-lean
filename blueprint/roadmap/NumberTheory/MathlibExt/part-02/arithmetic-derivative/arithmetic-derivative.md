@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.arithmeticDerivative
 ---
 
-# Arithmetic Derivative
+# Arithmetic derivative
 
-The arithmetic derivative `D(n) = ∑_{p ∣ n} ν_p(n) · (n / p)` on `ℕ`, with
-`D(0) = D(1) = 0`.
+**Arithmetic derivative.** For a natural number $n$, the arithmetic derivative of $n$ is
+
+$$D(n) = \sum_{p} \nu_p(n) \cdot \frac{n}{p},$$
+
+where the sum runs over the prime factors $p$ of $n$ and $\nu_p(n)$ is the exponent of $p$ in
+the prime factorization of $n$. Since $0$ and $1$ have no prime factors, $D(0) = D(1) = 0$.
 
 ## Depends on
 

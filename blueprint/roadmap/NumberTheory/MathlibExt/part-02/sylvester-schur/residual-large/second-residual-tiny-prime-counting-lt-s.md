@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.second_residual_tiny_primeCounting_lt_start_pow
 ---
 
-# Tiny Prime Counting Bound
+# Tiny-range prime-counting bound
 
-The small residual range `7 ≤ n < 38` satisfies the prime-counting conditional
-estimate once `100 ≤ k`.
+**Tiny-range prime-counting bound.** Let $n$ and $k$ be natural numbers with $7 \le n < 38$
+and $k \ge 100$, and let $\pi(n)$ be the number of primes $p \le n$. Then
+$n! \cdot (k + n - 1)^{\pi(n)} < k^{n}$.
 
 ## Depends on
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: BinaryQuadraticForm.formGenerator_isIntegral
 ---
 
-# Form Generator is Integral
+# The form generator is an algebraic integer
 
-The second ideal generator is integral when the triple has discriminant `-D`.
+**The form generator is an algebraic integer.** Let $D$ be a natural number and let $a, b, c$
+be integers with $b^2 - 4ac = -D$. Then the element $(b + i\sqrt{D})/2$ of the field
+$\mathbb{Q}(i\sqrt{D}) \subseteq \mathbb{C}$ is integral over $\mathbb{Z}$.
 
 ## Depends on
 
-- [Imaginary Quadratic Field](imaginary-quadratic-field.md)
-- [Imaginary Root](imaginary-root.md)
+- [The imaginary quadratic field $\mathbb{Q}(\sqrt{-D})$](imaginary-quadratic-field.md)
+- [The imaginary square root of $-D$](imaginary-root.md)
 
 ## Proof depends on
 
-- [Imaginary Root sq](imaginary-root-sq.md)
+- [The imaginary root squares to $-D$](imaginary-root-sq.md)
 
 ## Sources
 

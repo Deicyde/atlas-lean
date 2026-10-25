@@ -7,12 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.euler_odd_perfect_form
 ---
 
-# Euler odd perfect form
+# Euler's theorem on odd perfect numbers
 
-Every odd perfect number has Euler's form: it is a prime power times a square,
-where the distinguished prime and its exponent are both congruent to one modulo
-four and the prime is coprime to the square root. Conditional; existence of odd
-perfect numbers remains open.
+**Euler's theorem on odd perfect numbers.** Every odd perfect number $n$ can be written as
+$n = q^s m^2$ with natural numbers $q$, $s$ and $m$, where $q$ is prime, $q \equiv 1 \pmod 4$,
+$s \equiv 1 \pmod 4$, and $q$ and $m$ are coprime.
+
+The statement is conditional: whether an odd perfect number exists remains open.
 
 ## Depends on
 

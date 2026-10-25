@@ -14,12 +14,12 @@ The weighted Gaussian log-likelihood in terms of the weighted scatter matrix `C(
 ## Depends on
 
 - [Multivariate Gaussian PDFReal](../gaussian-density/multivariate-gaussian-pdfreal.md)
-- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+- [Weighted scatter matrix](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Proof depends on
 
 - [Log multivariate Gaussian PDFReal](log-multivariate-gaussian-pdfreal.md)
-- [Sum mul quad eq trace](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/sum-mul-quad-eq-trace.md)
+- [Weighted quadratic forms as traces against the scatter matrix](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/sum-mul-quad-eq-trace.md)
 
 ## Sources
 

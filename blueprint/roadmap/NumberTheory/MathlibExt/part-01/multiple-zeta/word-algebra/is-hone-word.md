@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.IsHOneWord
 ---
 
-# Is HOne Word
+# Words of $\mathfrak{H}^1$
 
-Predicate for `H^1`: empty or ends in `y`.
+**Words of $\mathfrak{H}^1$.** A word $w$ in the two letters $x$ and $y$ is an
+$\mathfrak{H}^1$-word when $w$ is empty or $w = uy$ for some word $u$, that is, when $w$ is
+empty or ends in $y$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Y Word](y-word.md)
+- [The letter $y$ as a word](y-word.md)
 
 ## Sources
 

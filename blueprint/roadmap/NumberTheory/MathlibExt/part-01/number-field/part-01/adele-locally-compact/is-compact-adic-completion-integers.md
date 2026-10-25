@@ -7,9 +7,11 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.isCompact_adicCompletionIntegers
 ---
 
-# Is Compact adic Completion Integers
+# Compactness of the completed ring of integers
 
-The adic completion integers are compact as a subset of the completion.
+**Compactness of the completed ring of integers.** Let $K$ be a number field and $v$ a
+nonzero prime ideal of its ring of integers $\mathcal{O}_K$. The ring of integers $\mathcal{O}_v$
+of the $v$-adic completion $K_v$ of $K$ is a compact subset of $K_v$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite residue Field](finite-residue-field.md)
+- [Finite residue field of a completed number ring](finite-residue-field.md)
 
 ## Sources
 

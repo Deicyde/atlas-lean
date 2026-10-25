@@ -6,9 +6,12 @@ statement: formalized
 lean: Chebyshev.primeLogSeries
 ---
 
-# Prime Log Series
+# The prime logarithm series
 
-Prime log series `∑' p, log p * p ^ (-s)`, the numerator of Lemma 16.10.
+**The prime logarithm series.** For $s \in \mathbb{C}$, the prime logarithm series at $s$
+is the complex number $\sum_p \log p \cdot p^{-s}$, where the sum runs over all primes $p$ and
+$p^{-s}$ is the complex power. The sum is unconditional and is taken to be $0$ by convention
+when the family $(\log p \cdot p^{-s})_p$ is not summable.
 
 ## Depends on
 
@@ -17,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.LaplaceTheta](../../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Lemma 16.10.

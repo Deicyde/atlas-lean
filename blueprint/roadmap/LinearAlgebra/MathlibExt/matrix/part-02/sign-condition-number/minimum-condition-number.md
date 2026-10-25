@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 - [Condition number of a square real matrix](condition-number.md)
 

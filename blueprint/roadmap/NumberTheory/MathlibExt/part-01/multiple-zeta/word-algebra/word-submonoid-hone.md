@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.wordSubmonoidHOne
 ---
 
-# Word Submonoid HOne
+# The monoid of $\mathfrak{H}^1$-words
 
-Word submonoid for `H^1`.
+**The monoid of $\mathfrak{H}^1$-words.** This is the submonoid of the free monoid on the two
+letters $x$ and $y$ consisting of the words that are empty or end in $y$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is HOne Word](is-hone-word.md)
-- [Y Word](y-word.md)
+- [Words of $\mathfrak{H}^1$](is-hone-word.md)
+- [The letter $y$ as a word](y-word.md)
 
 ## Sources
 

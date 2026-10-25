@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.exists_hasDistinctMultiplesInInterval
 ---
 
-# Exists has Distinct Multiples In Interval
+# Some interval contains distinct multiples
 
-Some interval length works: `a_i = i (m + 1)` lies in `(m, m + n (m + 1)]`.
+**Some interval contains distinct multiples.** For all natural numbers $n$ and $m$ there is a
+natural number $L$ such that the interval $(m, m + L]$ contains distinct multiples of
+$1, \dots, n$.
+
+For example, $L = n(m + 1)$ works, with $a_i = i(m + 1)$ for $1 \le i \le n$.
 
 ## Depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsFrobeniusProbablePrime.one_lt
 ---
 
-# One lt
+# Frobenius probable primes exceed one
 
-A Frobenius probable prime candidate exceeds one.
+**Frobenius probable primes exceed one.** If $n$ is a Frobenius probable prime with respect to
+a polynomial $f \in \mathbb{Z}[x]$, then $n > 1$.
 
 ## Depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
 
 ## Proof depends on
 
-- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
+- [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: BinaryQuadraticForm.ofCoefficients
 ---
 
-# Of Coefficients
+# Real quadratic form of an integer coefficient triple
 
-The genuine real quadratic form determined by the integer coefficient triple.
+**Real quadratic form of an integer coefficient triple.** For integers $a, b, c$, this is the
+quadratic form on the real vector space $\mathbb{R}^2$ given by
+$(x, y) \mapsto a x^2 + b x y + c y^2$.
 
 ## Depends on
 

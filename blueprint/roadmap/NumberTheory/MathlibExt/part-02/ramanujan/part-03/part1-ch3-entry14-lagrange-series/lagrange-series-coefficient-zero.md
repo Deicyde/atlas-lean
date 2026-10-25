@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_zero
 ---
 
-# Lagrange Series Coefficient zero
+# Lagrange series coefficient of degree zero
 
-The zeroth Lagrange-series coefficient is one.
+**Lagrange series coefficient of degree zero.** For all real numbers $p$, $q$, $n$, the
+Lagrange series coefficient $C_{p,q}(n, 0)$ of degree $0$ equals $1$.
 
 ## Depends on
 
-- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
+- [Lagrange series coefficients](lagrange-series-coefficient.md)
 
 ## Sources
 

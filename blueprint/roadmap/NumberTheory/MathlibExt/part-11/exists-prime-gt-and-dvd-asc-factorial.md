@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Erdős key lemma](../part-02/sylvester-schur/erdos-choose-prime-factor-gt.md)
-- [Exists dvd consecutive of prime dvd choose](../part-02/sylvester-schur/bridge/exists-dvd-consecutive-of-prime-dvd-choo.md)
+- [Prime divisors of the block binomial coefficient divide a block term](../part-02/sylvester-schur/bridge/exists-dvd-consecutive-of-prime-dvd-choo.md)
 
 ## Sources
 

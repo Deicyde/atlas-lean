@@ -7,17 +7,20 @@ proof: formalized
 lean: isBigO_abelPartialSum_sub_const
 ---
 
-# Is Big O abel Partial Sum sub const
+# Growth bound for the partial sums of a shifted sequence
 
-The shifted partial sums inherit the `O(n ^ σ)` bound.
+**Growth bound for the partial sums of a shifted sequence.** Let
+$a : \mathbb{N} \to \mathbb{C}$, $\rho \in \mathbb{C}$ and $\sigma \in \mathbb{R}$. If the one-based
+partial sums $A(n) = \sum_{k=1}^{n} a(k)$ satisfy $A(n) - n\rho = O(n^{\sigma})$ as
+$n \to \infty$, then $\sum_{k=1}^{n} (a(k) - \rho) = O(n^{\sigma})$ as $n \to \infty$.
 
 ## Depends on
 
-- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
+- [Partial sums of a coefficient sequence](../abel-continuation/abel-partial-sum.md)
 
 ## Proof depends on
 
-- [Abel Partial Sum sub const](abel-partial-sum-sub-const.md)
+- [Partial sums after subtracting a constant](abel-partial-sum-sub-const.md)
 
 ## Sources
 

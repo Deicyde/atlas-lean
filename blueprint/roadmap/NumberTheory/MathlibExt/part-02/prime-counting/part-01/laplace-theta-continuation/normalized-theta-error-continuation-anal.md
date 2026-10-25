@@ -7,18 +7,20 @@ proof: formalized
 lean: Chebyshev.normalizedThetaErrorContinuation_analyticOn
 ---
 
-# Normalized Theta Error Continuation analytic On
+# Holomorphy of the normalized-error continuation on the closed half-plane
 
-Analyticity of the normalized-error continuation on 0 ≤ re s.
+**Holomorphy of the normalized-error continuation on the closed half-plane.** The
+normalized-error continuation $F$ is complex analytic at every point $s \in \mathbb{C}$ with
+$\operatorname{Re} s \ge 0$.
 
 ## Depends on
 
-- [Normalized Theta Error Continuation](normalized-theta-error-continuation.md)
+- [The normalized-error continuation](normalized-theta-error-continuation.md)
 
 ## Proof depends on
 
-- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
-- [Shifted Log Dirichlet Continuation analytic On](shifted-log-dirichlet-continuation-analy.md)
+- [The shifted log-Dirichlet continuation](shifted-log-dirichlet-continuation.md)
+- [Holomorphy of the shifted continuation on the closed half-plane](shifted-log-dirichlet-continuation-analy.md)
 
 ## Sources
 

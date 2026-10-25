@@ -6,21 +6,24 @@ statement: formalized
 lean: Representation.HasNonzeroArtinEulerProduct
 ---
 
-# Has Nonzero Artin Euler Product
+# Nonzero convergent Artin Euler product
 
-The raw local factors have a convergent, nonzero product at `s`.
+**Nonzero convergent Artin Euler product.** Let $\rho$ be a representation of a finite group
+$G$ on a finite-dimensional complex vector space $V$, let $d_p$ be an Artin local datum for $G$ for
+every prime $p$, and let $s, z \in \mathbb{C}$. The Artin Euler product of $\rho$ and $(d_p)$ has
+nonzero value $z$ at $s$ when it has value $z$ at $s$ and $z \ne 0$.
 
-Unlike `HasArtinEulerProduct`, this predicate rules out both a zero product and
-every totalized zero local factor, so it represents a genuine finite Euler-product
-value rather than a pole encoded by the raw definitions.
+In particular every local factor is then regular at $s$: a factor whose denominator vanishes has
+value $0$ and would force the product to be $0$, so this describes a genuine finite Euler-product
+value rather than a pole.
 
 ## Depends on
 
-- [Artin Local Datum](artin-local-datum.md)
+- [Artin local datum](artin-local-datum.md)
 
 ## Proof depends on
 
-- [Has Artin Euler Product](has-artin-euler-product.md)
+- [Convergent Artin Euler product](has-artin-euler-product.md)
 
 ## Sources
 

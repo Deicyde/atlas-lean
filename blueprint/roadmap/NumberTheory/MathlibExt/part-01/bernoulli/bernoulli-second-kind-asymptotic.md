@@ -7,14 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.bernoulli_second_kind_asymptotic
 ---
 
-# Bernoulli Second Kind Asymptotic
+# Asymptotic expansion of the Bernoulli numbers of the second kind
 
-Asymptotic expansion of the Bernoulli numbers of the second kind.
+**Asymptotic expansion of the Bernoulli numbers of the second kind.** For a natural number
+$n$ let $b_n = \frac{1}{n!} \int_0^1 x (x - 1) \cdots (x - n + 1) dx$, and for a natural
+number $k$ let $\beta_k$ be $(-1)^k$ times the $(k + 1)$-th derivative of $1 / \Gamma$ at $0$.
+Then for every natural number $m$, as $n \to \infty$,
 
-The complete expansion in powers of `1 / log n` is rendered order by
-order: for every `m`, the truncation error is little-o of
-`1 / (n * (log n)^(m+2))`. The main term is Steffensen's approximation,
-as noted in the source.
+$$b_n - \frac{(-1)^{n+1}}{n (\log n)^2} \sum_{k=0}^{m} \frac{\beta_k}{(\log n)^k} =
+o\left(\frac{1}{n (\log n)^{m+2}}\right).$$
+
+The main term $(-1)^{n+1} / (n (\log n)^2)$ is Steffensen's approximation, as noted in the
+source.
 
 ## Depends on
 

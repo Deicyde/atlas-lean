@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic
 ---
 
-# Homogenized Cyclotomic
+# Homogenized cyclotomic value
 
-The homogenized cyclotomic value `Φ_n(a, b) = ∑ᵢ cᵢ aⁱ b^(φ(n) - i)`, where `cᵢ` are the
-integer coefficients of the `n`-th cyclotomic polynomial; equal to `b ^ φ(n) Φ_n(a / b)` when
-`b ≠ 0`.
+**Homogenized cyclotomic value.** For a natural number $n$ and integers $a, b$, let
+$c_0, \dots, c_{\varphi(n)}$ be the integer coefficients of the $n$-th cyclotomic polynomial,
+whose degree is $\varphi(n)$, where $\varphi$ is Euler's totient function. The homogenized
+cyclotomic value is the integer
+
+$$\Phi_n(a, b) = \sum_{i=0}^{\varphi(n)} c_i \, a^i \, b^{\varphi(n) - i}.$$
+
+When $b \neq 0$ it equals $b^{\varphi(n)} \Phi_n(a/b)$, where $\Phi_n$ is the $n$-th cyclotomic
+polynomial.
 
 ## Depends on
 

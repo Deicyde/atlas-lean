@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_toeplitz_positiveMinors_le
 ---
 
-# Generalized Hyper Fibonacci toeplitz positive Minors le
+# Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices
 
-For `r ≥ 1`, `T_{r+2,n}^{(r)}` is `TP_{r+1}` (every minor of order at most `r + 1`
-positive) for all large `n`.
+**Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices.** Let
+$p, a, b$ be integers with $p \ge 1$, $a \ge 0$ and $b > 0$, let $W^{(r)}_{p,n}$ denote the
+generalized hyper-Fibonacci numbers, and let $r \ge 1$ be a natural number. For a natural number
+$n$ let $T_n$ be the real $(r+2) \times (r+2)$ Toeplitz matrix with entry $W^{(r)}_{p,n+i-j}$ in
+row $i$ and column $j$ ($0 \le i, j \le r+1$). Then there is a natural number $N$ such that for
+every $n \ge N$, every natural number $k \le r + 1$ and all strictly increasing maps
+$\rho, \gamma : \{0, \dots, k-1\} \to \{0, \dots, r+1\}$, the $k \times k$ submatrix
+$((T_n)_{\rho(u), \gamma(v)})_{0 \le u, v < k}$ has positive determinant; that is, every minor
+of $T_n$ of order at most $r + 1$ is positive.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

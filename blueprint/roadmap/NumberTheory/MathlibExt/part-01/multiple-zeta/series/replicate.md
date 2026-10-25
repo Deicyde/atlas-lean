@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.replicate
 ---
 
-# Replicate
+# Repeated index
 
-The index `{e}^k` of `k` entries all equal to the positive natural number `e`; for example
-`starValue` at `Index.replicate k 2` is the multiple-zeta-star value `ζ*({2}^k)`.
+**Repeated index.** For a natural number $k$ and a positive natural number $e$, the index
+$\{e\}^k = (e, \dots, e)$ consisting of $k$ entries all equal to $e$, so of weight $ke$.
+
+For $e = 2$ its multiple-zeta-star value is $\zeta^\star(\{2\}^k)$.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Sources
 

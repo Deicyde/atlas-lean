@@ -6,19 +6,23 @@ statement: formalized
 lean: NumberField.Modulus.primeCoprimeUnit
 ---
 
-# Prime Coprime Unit
+# The prime as a coprime fractional ideal
 
-The prime unit packaged as an element of `m.coprimeFractionalIdeals`.
+**The prime as a coprime fractional ideal.** Let $\mathfrak m$ be a modulus of a number
+field $K$ and let $\mathfrak p$ be a height-one prime of the ring of integers $\mathcal O_K$ that
+does not contain the finite part of $\mathfrak m$. This is $\mathfrak p$, viewed as an invertible
+fractional ideal of $K$, regarded as an element of the group of fractional ideals coprime to
+$\mathfrak m$.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Proof depends on
 
-- [Mem coprime Fractional Ideals prime Unit](mem-coprime-fractional-ideals-prime-unit.md)
-- [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
+- [Primes not dividing the modulus are coprime to it](mem-coprime-fractional-ideals-prime-unit.md)
+- [A prime as an invertible fractional ideal](prime-unit-fractional-ideal.md)
 
 ## Sources
 

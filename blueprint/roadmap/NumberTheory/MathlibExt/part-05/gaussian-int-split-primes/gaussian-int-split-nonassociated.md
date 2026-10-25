@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gaussian Int is Unit iff](../gaussian-int-prime-basics/gaussian-int-is-unit-iff.md)
+- [Units of the Gaussian integers](../gaussian-int-prime-basics/gaussian-int-is-unit-iff.md)
 
 ## Sources
 

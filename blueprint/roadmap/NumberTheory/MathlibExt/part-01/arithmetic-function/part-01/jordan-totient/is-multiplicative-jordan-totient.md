@@ -7,18 +7,20 @@ proof: formalized
 lean: ArithmeticFunction.isMultiplicative_jordanTotient
 ---
 
-# Is Multiplicative jordan Totient
+# Jordan's totient function is multiplicative
 
-Jordan totient is multiplicative.
+**Jordan's totient function is multiplicative.** For every natural number $k$, the Jordan
+totient function $J_k$ is multiplicative: $J_k(1) = 1$, and $J_k(mn) = J_k(m) J_k(n)$ for all
+coprime natural numbers $m$ and $n$.
 
 ## Depends on
 
-- [Jordan Totient](jordan-totient.md)
+- [Jordan's totient function](jordan-totient.md)
 
 ## Proof depends on
 
-- [Jordan Totient apply one](jordan-totient-apply-one.md)
-- [Jordan Totient eq prod factorization](jordan-totient-eq-prod-factorization.md)
+- [Jordan's totient at one](jordan-totient-apply-one.md)
+- [Prime-factorization formula for Jordan's totient](jordan-totient-eq-prod-factorization.md)
 
 ## Sources
 

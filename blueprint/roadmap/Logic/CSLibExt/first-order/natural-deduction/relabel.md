@@ -6,10 +6,15 @@ proof: formalized
 lean: Cslib.Logic.FOL.Derivable.relabel
 ---
 
-# Relabel
+# Injective relabeling preserves derivability
 
-Derivations survive an injective relabeling of free variables (Mathlib's
-`Formula.relabel`).
+**Injective relabeling preserves derivability.** Let $f \colon \alpha \to \beta$ be an
+injective map between types of variables. For a formula $\psi$ of a first-order language $L$
+with free variables in $\alpha$, write $f(\psi)$ for Mathlib's relabeling of $\psi$ by $f$,
+which replaces each free variable $x$ by $f(x)$, and for a finite list $\Gamma$ of such formulas
+write $f(\Gamma)$ for the list obtained by applying this to each member of $\Gamma$. If $\Gamma$
+is such a list, $\varphi$ is such a formula and $\Gamma \vdash \varphi$ in natural deduction,
+then $f(\Gamma) \vdash f(\varphi)$.
 
 ## Depends on
 
@@ -17,9 +22,9 @@ Derivations survive an injective relabeling of free variables (Mathlib's
 
 ## Proof depends on
 
-- [Rename](rename.md)
-- [Formula relabel eq rename](../syntax/formula-relabel-eq-rename.md)
-- [Rename](../syntax/rename.md)
+- [Injective renaming preserves derivability](rename.md)
+- [Relabelling a formula is renaming](../syntax/formula-relabel-eq-rename.md)
+- [Renaming free variables of a formula](../syntax/rename.md)
 
 ## Sources
 

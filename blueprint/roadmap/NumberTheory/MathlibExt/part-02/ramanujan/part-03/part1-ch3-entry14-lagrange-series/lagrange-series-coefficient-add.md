@@ -7,19 +7,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_add
 ---
 
-# Lagrange Series Coefficient add
+# Hagen–Rothe convolution for Lagrange series coefficients
 
-Hagen–Rothe convolution for the coefficients in Ramanujan's Lagrange series.
+**Hagen–Rothe convolution for Lagrange series coefficients.** For all real numbers $p$, $q$,
+$r$, $s$ and every natural number $m$, the Lagrange series coefficients $C_{p,q}$ satisfy
+
+$$C_{p,q}(r + s, m) = \sum_{k=0}^{m} \binom{m}{k} C_{p,q}(r, k) \, C_{p,q}(s, m - k).$$
 
 ## Depends on
 
-- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
+- [Lagrange series coefficients](lagrange-series-coefficient.md)
 
 ## Proof depends on
 
-- [Schroder abel binomial](../part1-ch3-entry13-corollary-schroder/schroder-abel-binomial.md)
-- [Lagrange Series Coefficient of ne zero](lagrange-series-coefficient-of-ne-zero.md)
-- [Lagrange Series Coefficient zero](lagrange-series-coefficient-zero.md)
+- [Abel's binomial identity](../part1-ch3-entry13-corollary-schroder/schroder-abel-binomial.md)
+- [Lagrange series coefficients of positive degree](lagrange-series-coefficient-of-ne-zero.md)
+- [Lagrange series coefficient of degree zero](lagrange-series-coefficient-zero.md)
 
 ## Sources
 

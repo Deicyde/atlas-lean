@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Logic.PL.CNF
 ---
 
-# CNF
+# CNF formula
 
-A CNF formula: a conjunction of clauses.
+**CNF formula.** A CNF formula is a finite list of CNF clauses, read as the conjunction of its
+clauses.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [CNFClause](cnfclause.md)
+- [CNF clause](cnfclause.md)
 
 ## Sources
 

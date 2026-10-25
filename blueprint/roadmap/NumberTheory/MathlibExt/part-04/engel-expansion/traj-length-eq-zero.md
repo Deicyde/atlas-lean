@@ -7,18 +7,20 @@ proof: formalized
 lean: EngelExpansion.traj_length_eq_zero
 ---
 
-# Traj length eq zero
+# Engel trajectory vanishes at the Engel length
 
-The Engel trajectory vanishes at the Engel length.
+**Engel trajectory vanishes at the Engel length.** For all natural numbers $n$ and $a$,
+let $L$ be the Engel length of $a$ with respect to $n$. Then the Engel remainder trajectory
+of $a$ with respect to $n$ is $0$ at step $L$.
 
 ## Depends on
 
-- [Length](length.md)
-- [Traj](traj.md)
+- [Engel length](length.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
+- [Engel trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
 
 ## Sources
 

@@ -5,7 +5,7 @@ navigation: module
 
 # Church Bicknell Fibonacci Convolution
 
-- [Sqrt5 ne](sqrt5-ne.md)
-- [Cb lucas binet](cb-lucas-binet.md)
-- [Cb key R](cb-key-r.md)
-- [Church bicknell fibonacci convolution](church-bicknell-fibonacci-convolution.md)
+- [The square root of 5 is nonzero](sqrt5-ne.md)
+- [Binet's formula for the Lucas numbers](cb-lucas-binet.md)
+- [Church–Bicknell convolution over the reals](cb-key-r.md)
+- [Church–Bicknell Fibonacci binomial convolution](church-bicknell-fibonacci-convolution.md)

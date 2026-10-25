@@ -7,9 +7,9 @@ proof: formalized
 lean: MeasureTheory.vitali_nonmeasurable
 ---
 
-# Vitali Nonmeasurable
+# Vitali's theorem
 
-Vitali's theorem: there exists a subset of `ℝ` that is not Lebesgue measurable.
+**Vitali's theorem.** There exists a subset of $\mathbb{R}$ that is not Lebesgue measurable.
 
 ## Depends on
 

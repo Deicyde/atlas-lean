@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.vars_restrict_ssubset
 ---
 
-# Vars restrict ssubset
+# Restricting by an occurring variable shrinks the variable set
 
-If the assigned variable occurred, restriction strictly decreases the variable set.
+**Restricting by an occurring variable shrinks the variable set.** Let $\varphi$ be a CNF
+formula and $(x, b)$ a literal. If $x$ is a variable of $\varphi$, then the set of variables of
+the restriction of $\varphi$ by $(x, b)$ is a proper subset of the set of variables of
+$\varphi$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](restrict-2.md)
 - [Vars](vars-2.md)
 
 ## Proof depends on
 
-- [Not mem vars restrict](not-mem-vars-restrict.md)
+- [The restricted variable no longer occurs](not-mem-vars-restrict.md)
 - [Vars restrict subset](vars-restrict-subset.md)
 
 ## Sources

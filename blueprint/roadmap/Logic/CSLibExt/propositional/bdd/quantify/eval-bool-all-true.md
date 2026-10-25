@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.evalBool_allTrue
 ---
 
-# Eval Bool all True
+# The all-true valuation satisfies every proposition
 
-Every proposition over atoms alone is true under the all-true valuation.
+**The all-true valuation satisfies every proposition.** Every proposition $A$ over atoms
+indexed by natural numbers, built from atoms with $\land$, $\lor$ and $\to$ only, evaluates to
+true under the valuation that makes every atom true.
 
 ## Depends on
 
-- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
 
 ## Sources
 

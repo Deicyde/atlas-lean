@@ -26,7 +26,7 @@ $b$ holds, then $S' = S$.
 - [Three-literal clause test](../three-sat/is3.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -44,7 +44,7 @@ $b$ holds, then $S' = S$.
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

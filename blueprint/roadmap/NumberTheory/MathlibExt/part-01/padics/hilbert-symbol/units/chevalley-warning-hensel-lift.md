@@ -7,10 +7,11 @@ proof: formalized
 lean: HilbertSymbol.chevalley_warning_hensel_lift
 ---
 
-# Chevalley warning hensel lift
+# For odd $p$, a binary unit form over $\mathbb{Z}_p$ represents a unit square
 
-Key step of Lemma 10.5: for odd prime p and units u v, there are
-x₀ y₀ and unit z₀ with z₀ ^ 2 = u * x₀ ^ 2 + v * y₀ ^ 2.
+**For odd $p$, a binary unit form over $\mathbb{Z}_p$ represents a unit square.** Let $p$ be an
+odd prime and let $u, v$ be units of $\mathbb{Z}_p$. Then there are $x_0, y_0 \in \mathbb{Z}_p$ and
+a unit $z_0$ of $\mathbb{Z}_p$ with $z_0^2 = u x_0^2 + v y_0^2$.
 
 ## Depends on
 
@@ -19,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.HilbertSymbol.Units](../../../../../../../sources/v2/MathlibExt.md)
+- Lemma 10.5, key step.

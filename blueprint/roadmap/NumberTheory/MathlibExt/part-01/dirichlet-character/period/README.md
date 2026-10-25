@@ -5,6 +5,6 @@ navigation: module
 
 # Period
 
-- [Is Dirichlet Character Modulus](is-dirichlet-character-modulus.md)
-- [Is Dirichlet Character Modulus iff](is-dirichlet-character-modulus-iff.md)
-- [Is Dirichlet Character Modulus self](is-dirichlet-character-modulus-self.md)
+- [Dirichlet character of a given modulus](is-dirichlet-character-modulus.md)
+- [Moduli of a character with a given least period](is-dirichlet-character-modulus-iff.md)
+- [A character is a Dirichlet character modulo its least period](is-dirichlet-character-modulus-self.md)

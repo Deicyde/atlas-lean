@@ -13,17 +13,17 @@ Level `G9r ≥ 3` forces `x ≥ 963 / 18900`.
 
 ## Depends on
 
-- [G9r](g9r.md)
-- [Q9](../grid/q9.md)
+- [Continuous Breusch function](g9r.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [G9](../grid/g9.md)
-- [G9 eq mod](g9-eq-mod.md)
-- [G9 small le1](g9-small-le1.md)
-- [G9r eq grid](g9r-eq-grid.md)
-- [Q9 eq](../lower/q9-eq.md)
-- [Jmin3](../grid/jmin3.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
+- [$G_9$ depends only on the residue modulo $18900$](g9-eq-mod.md)
+- [Bound $G_9 \le 1$ below $10$](g9-small-le1.md)
+- [The continuous Breusch function agrees with the grid function](g9r-eq-grid.md)
+- [Value of Q₉](../lower/q9-eq.md)
+- [First index from 10 on with grid value at least 3](../grid/jmin3.md)
 
 ## Sources
 

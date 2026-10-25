@@ -7,14 +7,17 @@ proof: formalized
 lean: NumberField.Modulus.integralRayOneUnitsInclusion_injective
 ---
 
-# Integral Ray One Units Inclusion injective
+# The inclusion of the ray-one integral units is injective
 
-The ray-one inclusion is injective.
+**The inclusion of the ray-one integral units is injective.** Let $K$ be a number field
+with ring of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$. The inclusion
+homomorphism from the subgroup of ray-one integral units for $\mathfrak{m}$ into the unit group
+$\mathcal{O}_K^\times$ is injective.
 
 ## Depends on
 
-- [Integral Ray One Units](integral-ray-one-units.md)
-- [Integral Ray One Units Inclusion](integral-ray-one-units-inclusion.md)
+- [Ray-one integral units](integral-ray-one-units.md)
+- [Inclusion of the ray-one integral units](integral-ray-one-units-inclusion.md)
 
 ## Sources
 

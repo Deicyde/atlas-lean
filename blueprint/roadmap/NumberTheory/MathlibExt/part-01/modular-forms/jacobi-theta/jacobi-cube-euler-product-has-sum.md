@@ -7,23 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.QPochhammer.jacobi_cube_euler_product_hasSum
 ---
 
-# Jacobi Cube Euler Product
+# Jacobi's identity for the cube of Euler's product
 
-Jacobi's identity for the cube of Euler's product (concept
-`jis_dep_557f7500b8f24447f106ea8c`): for `q : Complex` with `‖q‖ < 1`, the cube
-`(qPochhammerInf q q hq) ^ 3` is the value of the unilateral weighted q-series with
-`n`th term `(-1) ^ n * (2 * n + 1) * q ^ (n * (n + 1) / 2)`, stated as `HasSum`
-so both convergence and the value are recorded.
-
-Product side: the existing shared definition
-`MetaMathlibExt.QPochhammer.qPochhammerInf a q hq = tprod (fun n : Nat => 1 - a * q ^ n)`
-is used directly. Hence `qPochhammerInf q q hq = ∏ n : Nat, (1 - q ^ (n + 1))`,
-i.e. the source product `(q;q)_∞` (whose factors start at index zero as
-`1 - q ^ (n+1)`) indexed from the positive integers. The exponent
-`n * (n + 1) / 2` is exact natural-number division (the triangular numbers).
-Only the Jacobi equation is formalized here; the sibling Euler
-pentagonal-number equation in the following displayed equation in the same
-source lemma/alignment is a separate theorem.
+**Jacobi's identity for the cube of Euler's product.** For every complex number $q$ with
+$|q| < 1$, the series $\sum_{n=0}^{\infty} (-1)^n (2n+1) q^{n(n+1)/2}$ converges
+unconditionally to $(q;q)_\infty^3$, the cube of the infinite q-Pochhammer symbol
+$(q;q)_\infty = \prod_{n=0}^{\infty} (1 - q^{n+1})$.
 
 ## Depends on
 

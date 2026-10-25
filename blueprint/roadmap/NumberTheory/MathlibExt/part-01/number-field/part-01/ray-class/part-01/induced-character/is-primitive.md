@@ -6,17 +6,21 @@ statement: formalized
 lean: NumberField.Modulus.RayClassCharacter.IsPrimitive
 ---
 
-# Is Primitive
+# Primitive ray class character
 
-A character is primitive if induced only from the same modulus.
+**Primitive ray class character.** Let $m$ be a modulus of a number field $K$. A ray class
+character $\chi$ modulo $m$ is primitive when, for every modulus $m_0$ of $K$ with $m_0 \mid m$
+(the finite part of $m$ is contained in the finite part of $m_0$ and every real place of $m_0$
+is a real place of $m$) and every ray class character $\chi_0$ modulo $m_0$ by which $\chi$ is
+induced, $m_0 = m$.
 
 ## Depends on
 
-- [Ray Class Character](../character/ray-class-character.md)
+- [Ray class character](../character/ray-class-character.md)
 
 ## Proof depends on
 
-- [Is Induced By](is-induced-by.md)
+- [Induced ray class character](is-induced-by.md)
 
 ## Sources
 

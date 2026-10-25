@@ -34,8 +34,8 @@ of the binary encoding of $n$ in $es$ is $p$, and label no otherwise.
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

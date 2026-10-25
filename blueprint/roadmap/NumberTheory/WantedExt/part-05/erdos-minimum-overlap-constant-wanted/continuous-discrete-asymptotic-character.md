@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C₁ᵦ](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/c.md)
-- [Discrete Universal Lower Bound](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/discrete-universal-lower-bound.md)
+- [Notation $C_{1b}$](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/c.md)
+- [Universal asymptotic lower bound for discrete overlaps](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/discrete-universal-lower-bound.md)
 
 ## Sources
 

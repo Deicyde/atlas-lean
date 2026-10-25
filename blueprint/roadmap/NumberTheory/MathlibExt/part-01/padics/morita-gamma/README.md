@@ -5,5 +5,5 @@ navigation: module
 
 # Morita Gamma
 
-- [Morita Gamma Nat](morita-gamma-nat.md)
-- [Is Morita Padic Gamma](is-morita-padic-gamma.md)
+- [Morita's p-adic gamma values at natural numbers](morita-gamma-nat.md)
+- [Morita's p-adic gamma function](is-morita-padic-gamma.md)

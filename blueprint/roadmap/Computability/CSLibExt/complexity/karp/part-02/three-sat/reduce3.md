@@ -20,7 +20,7 @@ This node has no prerequisites.
 - [The SAT-to-3SAT translation](to3.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

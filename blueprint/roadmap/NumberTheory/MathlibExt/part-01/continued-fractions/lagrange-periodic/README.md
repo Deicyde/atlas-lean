@@ -5,6 +5,6 @@ navigation: module
 
 # Lagrange Periodic
 
-- [Continued Fraction Eventually Periodic](continued-fraction-eventually-periodic.md)
-- [Is Real Quadratic Irrational](is-real-quadratic-irrational.md)
-- [Continued Fraction Eventually Periodic of is Real Quadratic Irrational](continued-fraction-eventually-periodic-o.md)
+- [Eventually periodic continued fractions](continued-fraction-eventually-periodic.md)
+- [Real quadratic irrationals](is-real-quadratic-irrational.md)
+- [Lagrange's theorem on periodic continued fractions](continued-fraction-eventually-periodic-o.md)

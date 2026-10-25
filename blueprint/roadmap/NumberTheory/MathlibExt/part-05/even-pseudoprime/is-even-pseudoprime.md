@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.IsEvenPseudoprime
 ---
 
-# Is Even Pseudoprime
+# Even pseudoprime
 
-An even pseudoprime is an even natural number `N > 2` satisfying
-`2 ^ N ≡ 2 [MOD N]`.
+**Even pseudoprime.** A natural number $N$ is an even pseudoprime if $N$ is even, $N > 2$
+and $2^N \equiv 2 \pmod{N}$.
 
 ## Depends on
 

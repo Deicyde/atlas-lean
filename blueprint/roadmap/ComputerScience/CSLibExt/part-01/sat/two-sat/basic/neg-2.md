@@ -14,7 +14,7 @@ literal over the variables of $\varphi$.
 ## Depends on
 
 - [Literals over the variables of a formula](lit.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

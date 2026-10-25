@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.padicValNat_fib_mul
 ---
 
-# Padic Val Nat fib mul
+# Lifting the exponent for Fibonacci numbers
 
-Fibonacci lifting-the-exponent formula: for an odd prime p dividing F_m (m ≥ 1)
-and j ≥ 1, v_p(F_{m·j}) = v_p(F_m) + v_p(j).
+**Lifting the exponent for Fibonacci numbers.** Let $p$ be an odd prime and $m \ge 1$ an
+integer such that $p$ divides the Fibonacci number $F_m$, and write $v_p$ for the $p$-adic
+valuation. Then $v_p(F_{mj}) = v_p(F_m) + v_p(j)$ for every integer $j \ge 1$.
 
 ## Depends on
 

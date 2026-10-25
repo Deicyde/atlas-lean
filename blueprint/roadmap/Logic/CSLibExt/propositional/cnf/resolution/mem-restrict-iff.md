@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.mem_restrict_iff
 ---
 
-# Mem restrict iff
+# Clauses of a restricted formula
 
-The clauses of a restricted formula are the restrictions of the clauses not
-containing the literal.
+**Clauses of a restricted formula.** Let $\varphi$ be a CNF formula and $\ell$ a literal. A
+clause $C$ belongs to the restriction of $\varphi$ by $\ell$ if and only if there is a clause $C_0$
+of $\varphi$ that does not contain $\ell$ such that $C$ is the restriction of $C_0$ by $\ell$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](../restriction/restrict-2.md)
-- [CNFClause](../basic/cnfclause.md)
-- [Restrict](../restriction/restrict.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Restriction of a clause by a literal](../restriction/restrict.md)
 
 ## Sources
 

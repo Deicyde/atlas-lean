@@ -7,19 +7,20 @@ proof: formalized
 lean: realHilbertSymbol.eq_neg_one_iff
 ---
 
-# Eq neg one iff
+# Real Hilbert symbol equal to $-1$
 
-The real Hilbert symbol is negative one exactly when its defining equation is not
-solvable.
+**Real Hilbert symbol equal to $-1$.** For nonzero real numbers $a$ and $b$, the real Hilbert
+symbol of $a$ and $b$ equals $-1$ if and only if there are no real numbers $x, y$ with
+$a x^2 + b y^2 = 1$.
 
 ## Depends on
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
+- [Real Hilbert symbol](real-hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Is Solvable](../../hilbert-symbol-2/is-solvable.md)
-- [Hilbert Symbol](../../hilbert-symbol-2/hilbert-symbol.md)
+- [Solvability of $ax^2 + by^2 = 1$](../../hilbert-symbol-2/is-solvable.md)
+- [Hilbert symbol of a field](../../hilbert-symbol-2/hilbert-symbol.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Nat.Primes.logDirichletSeries_eq
 ---
 
-# Log Dirichlet Series eq
+# Prime logarithmic series via the logarithmic derivative of zeta
 
-The prime sum via the logarithmic derivative of zeta, up to the correction.
+**Prime logarithmic series via the logarithmic derivative of zeta.** For every complex number
+$s$ with $\operatorname{Re} s > 1$, $\Phi(s) = -\frac{\zeta'(s)}{\zeta(s)} - C(s)$, where $\Phi$
+is the prime logarithmic Dirichlet series, $\zeta$ is the Riemann zeta function and $C$ is the
+prime-power correction series.
 
 ## Depends on
 
-- [Log Dirichlet Correction](log-dirichlet-correction.md)
-- [Log Dirichlet Series](log-dirichlet-series.md)
+- [Prime-power correction series](log-dirichlet-correction.md)
+- [Prime logarithmic Dirichlet series](log-dirichlet-series.md)
 
 ## Proof depends on
 
-- [Log Dirichlet von Mangoldt split](log-dirichlet-von-mangoldt-split.md)
+- [Splitting the von Mangoldt L-series over prime powers](log-dirichlet-von-mangoldt-split.md)
 
 ## Sources
 

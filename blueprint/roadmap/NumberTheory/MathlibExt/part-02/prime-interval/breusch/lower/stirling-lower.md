@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.stirling_lower
 ---
 
-# Stirling lower
+# Weak Stirling lower bound for factorials
 
-Weak Stirling lower bound `n ^ n * exp (-n + 1) ≤ n!`.
+**Weak Stirling lower bound for factorials.** For every natural number $n \ge 1$,
+$n^n e^{1-n} \le n!$.
 
 ## Depends on
 

@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log34div10_eq
 ---
 
-# Log34div10 eq
+# Logarithm of 3.4
 
-`log (34 / 10) = log 17 - log 5`.
+**Logarithm of 3.4.** The natural logarithm satisfies $\log(34/10) = \log 17 - \log 5$.
 
 ## Depends on
 

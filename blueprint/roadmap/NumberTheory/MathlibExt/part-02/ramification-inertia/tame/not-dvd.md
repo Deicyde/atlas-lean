@@ -7,9 +7,12 @@ proof: formalized
 lean: Algebra.IsTamelyRamifiedAt.not_dvd
 ---
 
-# Not dvd
+# The residue characteristic of a tame prime does not divide its ramification index
 
-The characteristic/index part of tame ramification.
+**The residue characteristic of a tame prime does not divide its ramification index.** Let
+$R$ be a commutative ring, $S$ a commutative $R$-algebra and $q$ a prime ideal of $S$ with residue
+field $\kappa(q)$. If $q$ is tamely ramified over $R$, then the characteristic of $\kappa(q)$ does
+not divide the ramification index of $q$ over $R$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ The characteristic/index part of tame ramification.
 
 ## Proof depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.Overlap_le_MaxOverlap
 ---
 
-# Overlap le Max Overlap
+# Overlaps are bounded by the maximum overlap
 
-Every overlap count is bounded by the maximum overlap.
+**Overlaps are bounded by the maximum overlap.** For finite sets $A, B \subseteq \mathbb{Z}$
+and every integer $k$, the overlap $\#\{(a, b) \in A \times B : a - b = k\}$ is at most the
+maximum overlap of $A$ and $B$.
 
 ## Depends on
 
-- [Max Overlap](max-overlap.md)
-- [Overlap](overlap.md)
+- [Maximum overlap](max-overlap.md)
+- [Overlap count of two finite sets of integers](overlap.md)
 
 ## Sources
 

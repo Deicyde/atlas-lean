@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.ModelTheory.WilkiesConjectureWanted.WilkiesConjecture.Language.exp
 ---
 
-# Exp
+# Language of exponentiation
 
-The language consisting of a single symbol `exp`.
+**Language of exponentiation.** The first-order language with a single function symbol, the
+unary symbol $\exp$, and no relation symbols.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exp Func](exp-func.md)
+- [Function symbols of the language of exponentiation](exp-func.md)
 
 ## Sources
 

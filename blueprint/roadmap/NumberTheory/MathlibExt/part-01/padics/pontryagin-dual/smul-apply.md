@@ -7,16 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.smul_apply
 ---
 
-# Smul apply
+# Evaluating the contragredient action
 
-The contragredient action evaluates by precomposition with the inverse action.
+**Evaluating the contragredient action.** Let $p$ be a prime, $G$ a group and $A$ a
+$\mathbb{Z}_p$-module on which $G$ acts by additive maps commuting with the
+$\mathbb{Z}_p$-action. For $g \in G$, $\varphi$ in the algebraic $p$-adic Pontryagin dual of $A$
+and $a \in A$, the contragredient action satisfies $(g \cdot \varphi)(a) = \varphi(g^{-1} a)$.
 
 ## Depends on
 
-- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
-- [Padic Pontryagin Dual ext](padic-pontryagin-dual-ext.md)
-- [Padic Quotient Int](padic-quotient-int.md)
-- [Contragredient SMul](contragredient-smul.md)
+- [Algebraic $p$-adic Pontryagin dual](padic-pontryagin-dual.md)
+- [Extensionality for the $p$-adic Pontryagin dual](padic-pontryagin-dual-ext.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
+- [Contragredient action on the $p$-adic Pontryagin dual](contragredient-smul.md)
 
 ## Sources
 

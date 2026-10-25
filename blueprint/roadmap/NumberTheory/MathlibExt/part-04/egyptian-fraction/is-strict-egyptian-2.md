@@ -7,14 +7,16 @@ proof: formalized
 lean: EgyptianFraction.IsStrictUnderapproximation.isStrictEgyptian
 ---
 
-# Is Strict Egyptian
+# Strict underapproximations have strictly increasing Egyptian denominators
 
-The denominator tuple lies in `𝓔ₙ^<`.
+**Strict underapproximations have strictly increasing Egyptian denominators.** If
+$a = (a_1, \dots, a_n)$ is a strict underapproximation of a real number $\lambda$, then $a$ lies
+in $\mathcal{E}_n^{<}$, that is, $2 \le a_1 < \dots < a_n$.
 
 ## Depends on
 
-- [Is Strict Egyptian](is-strict-egyptian.md)
-- [Is Strict Underapproximation](is-strict-underapproximation.md)
+- [Strictly increasing Egyptian denominator tuples](is-strict-egyptian.md)
+- [Egyptian underapproximations with strictly increasing denominators](is-strict-underapproximation.md)
 
 ## Sources
 

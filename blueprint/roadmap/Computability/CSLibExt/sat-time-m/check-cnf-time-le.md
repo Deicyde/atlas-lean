@@ -16,13 +16,13 @@ most $L \cdot (|N| + 1)$, where $|N|$ is the length of $N$.
 ## Depends on
 
 - [Formula check against a witness](check-cnf.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Clause check against a witness](check-clause.md)
 - [Cost bound for the witness clause check](check-clause-time-le.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

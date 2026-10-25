@@ -12,15 +12,15 @@ Restriction can only remove variables.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](restrict-2.md)
 - [Vars](vars-2.md)
 
 ## Proof depends on
 
-- [CNFClause](../basic/cnfclause.md)
-- [Restrict](restrict.md)
-- [Vars](vars.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Restriction of a clause by a literal](restrict.md)
+- [Variables of a clause](vars.md)
 
 ## Sources
 

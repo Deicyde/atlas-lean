@@ -31,7 +31,7 @@ sides are $0$.
 ## Depends on
 
 - [Generalized Fuss Catalan Number](../../../../../../NumberTheory/MathlibExt/part-06/generalized-fuss-catalan-numbers-fmnk/generalized-fuss-catalan-number.md)
-- [Trudi Partition Sum](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/trudi-partition-sum.md)
+- [Trudi's partition sum](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/trudi-partition-sum.md)
 
 ## Sources
 

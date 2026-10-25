@@ -7,20 +7,26 @@ proof: formalized
 lean: tendsto_linearAsymptoticDirichletContinuation_Icc
 ---
 
-# Tendsto linear Asymptotic Dirichlet Continuation Icc
+# Convergence of the Dirichlet series to the linear asymptotic continuation
 
-Dirichlet partial sums converge to the linear asymptotic continuation for `1 < s.re`.
+**Convergence of the Dirichlet series to the linear asymptotic continuation.** Let
+$a : \mathbb{N} \to \mathbb{C}$, $\rho \in \mathbb{C}$ and $\sigma \in \mathbb{R}$ with
+$\sigma < 1$, and suppose that the one-based partial sums $A(n) = \sum_{k=1}^{n} a(k)$ satisfy
+$A(n) - n\rho = O(n^{\sigma})$ as $n \to \infty$. Then for every $s \in \mathbb{C}$ with
+$\operatorname{Re} s > 1$, the partial sums $\sum_{n=1}^{N} a(n)\, n^{-s}$ converge, as
+$N \to \infty$, to $L_{a,\rho}(s)$, where $L_{a,\rho}$ is the linear asymptotic Dirichlet
+continuation of $a$ with constant $\rho$.
 
 ## Depends on
 
-- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
-- [Linear Asymptotic Dirichlet Continuation](linear-asymptotic-dirichlet-continuation.md)
+- [Partial sums of a coefficient sequence](../abel-continuation/abel-partial-sum.md)
+- [Linear asymptotic Dirichlet continuation](linear-asymptotic-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Abel Continuation](../abel-continuation/abel-continuation.md)
-- [Is Big O abel Partial Sum sub const](is-big-o-abel-partial-sum-sub-const.md)
-- [Tendsto abel Continuation Icc](../abel-continuation/tendsto-abel-continuation-icc.md)
+- [Abel continuation of a Dirichlet series](../abel-continuation/abel-continuation.md)
+- [Growth bound for the partial sums of a shifted sequence](is-big-o-abel-partial-sum-sub-const.md)
+- [Abel continuation as the limit of Dirichlet partial sums](../abel-continuation/tendsto-abel-continuation-icc.md)
 
 ## Sources
 

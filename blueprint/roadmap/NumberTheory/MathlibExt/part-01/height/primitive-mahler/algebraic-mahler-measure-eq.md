@@ -7,14 +7,18 @@ proof: formalized
 lean: NumberField.algebraicMahlerMeasure_eq
 ---
 
-# Algebraic Mahler Measure eq
+# The sign normalization does not change the Mahler measure
 
-The source's sign convention does not change the canonical polynomial's Mahler measure.
+**The sign normalization does not change the Mahler measure.** For every element $x$ of a
+field $K$ that is an algebra over $\mathbb{Q}$, the algebraic Mahler measure of $x$, that is the
+Mahler measure of the positive primitive integral minimal polynomial of $x$, equals the Mahler
+measure of the primitive integral minimal polynomial of $x$, both polynomials being regarded as
+polynomials with complex coefficients.
 
 ## Depends on
 
-- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
-- [Absolute](../primitive-int-minpoly.md)
+- [Algebraic Mahler measure](algebraic-mahler-measure.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

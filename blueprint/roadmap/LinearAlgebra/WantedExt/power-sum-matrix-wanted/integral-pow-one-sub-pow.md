@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.LinearAlgebra.PowerSumMatrixWanted.integral_pow_one_sub_pow
 ---
 
-# Lemma 3
+# Integral of $x^r (1 - x)^r$ over $(0, 1)$
 
-**Lemma 3**: for every positive integer `r`
-(indeed every `r`, including `0`),
-`∫₀¹ x^r (1 - x)^r dx = 1 / ((2r + 1) * C(2r, r))`.
+**Integral of $x^r (1 - x)^r$ over $[0, 1]$.** For every natural number $r$ (including
+$r = 0$),
+
+$$\int_0^1 x^r (1 - x)^r \, dx = \frac{1}{(2r + 1) \binom{2r}{r}}.$$
 
 ## Depends on
 

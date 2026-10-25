@@ -7,19 +7,24 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.ramificationIdx_adicCompletionIntegersMap
 ---
 
-# Ramification Idx adic Completion Integers Map
+# Completion preserves the ramification index
 
-The canonical map on finite-place completion integer rings preserves ramification index.
+**Completion preserves the ramification index.** Let $L/K$ be an extension of number fields,
+let $v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero prime ideal of
+$\mathcal{O}_L$ lying over $v$. Let $\mathcal{O}_{K_v}$ and $\mathcal{O}_{L_w}$ be the rings of
+integers of the completions $K_v$ and $L_w$, with $\mathcal{O}_{L_w}$ an algebra over
+$\mathcal{O}_{K_v}$ via the canonical map. Then the ramification index of the maximal ideal of
+$\mathcal{O}_{L_w}$ over $\mathcal{O}_{K_v}$ equals the ramification index of $w$ over $v$.
 
 ## Depends on
 
-- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
+- [Restriction of the completion map to the rings of integers](../finite-lies-over-valuation/adic-completion-integers-map.md)
 
 ## Proof depends on
 
-- [Adic Completion Integers Map injective](adic-completion-integers-map-injective.md)
-- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
-- [Valuation adic Completion Map](../finite-lies-over-valuation/valuation-adic-completion-map.md)
+- [The map of completed integer rings is injective](adic-completion-integers-map-injective.md)
+- [Maximal ideals of completed integer rings lie over each other](../comap-maximal-ideal-adic-completion-inte.md)
+- [Valuation of the image under the completion map](../finite-lies-over-valuation/valuation-adic-completion-map.md)
 - [Add Val algebra Map eq ramification Idx mul](../../../../../../../RingTheory/MathlibExt/ramification-inertia/valuation/add-val-algebra-map-eq-ramification-idx.md)
 
 ## Sources

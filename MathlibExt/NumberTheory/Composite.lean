@@ -24,11 +24,11 @@ namespace Nat
 def IsComposite (n : ℕ) : Prop :=
   1 < n ∧ ¬ n.Prime
 
-/-- A composite natural number is greater than one. -/
+/-- **Composite numbers exceed one.** Every composite natural number $n$ satisfies $1 < n$. -/
 theorem IsComposite.one_lt {n : ℕ} (h : n.IsComposite) : 1 < n :=
   h.1
 
-/-- A composite natural number is not prime. -/
+/-- **Composite numbers are not prime.** A composite natural number is not prime. -/
 theorem IsComposite.not_prime {n : ℕ} (h : n.IsComposite) : ¬ n.Prime :=
   h.2
 

@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.sat_iff_restrict_true_or_false
 ---
 
-# Sat iff restrict true or false
+# Splitting on a variable
 
-Satisfiability splits into the two Boolean assignments of any variable.
+**Splitting on a variable.** For every CNF formula $F$ and every variable $x$, the formula
+$F$ is satisfiable if and only if the restriction of $F$ by the literal $(x, \mathrm{true})$ is
+satisfiable or the restriction of $F$ by the literal $(x, \mathrm{false})$ is satisfiable.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](restrict-2.md)
-- [CNFSat](../basic/cnfsat.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
 - [Satisfies](../semantics/satisfies-3.md)
-- [Satisfies of satisfies restrict](satisfies-of-satisfies-restrict.md)
+- [Lifting a satisfying assignment from a restriction](satisfies-of-satisfies-restrict.md)
 - [Satisfies restrict iff](satisfies-restrict-iff-2.md)
-- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ statement uses `ρ(p_i)`, as in Theorems 3.16 and 3.17.
 ## Depends on
 
 - [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)

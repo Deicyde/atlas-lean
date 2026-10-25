@@ -4,8 +4,8 @@ navigation: module
 
 # Sigma R
 
-- [Sigma R](sigma-r.md)
-- [Sigma R apply](sigma-r-apply.md)
-- [Sigma R apply one](sigma-r-apply-one.md)
-- [Sigma R zero apply](sigma-r-zero-apply.md)
-- [Sigma R nat Cast apply](sigma-r-nat-cast-apply.md)
+- [Divisor-power sum with complex exponent](sigma-r.md)
+- [Divisor-sum formula for the complex-exponent divisor sum](sigma-r-apply.md)
+- [The complex-exponent divisor sum at one](sigma-r-apply-one.md)
+- [The complex-exponent divisor sum at exponent zero counts divisors](sigma-r-zero-apply.md)
+- [Natural exponents give the classical divisor function](sigma-r-nat-cast-apply.md)

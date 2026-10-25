@@ -5,12 +5,12 @@ navigation: module
 
 # Lattice Discriminant
 
-- [Lattice Discriminant Set](lattice-discriminant-set.md)
-- [Lattice Discriminant](lattice-discriminant.md)
-- [Lattice Discriminant le span singleton](lattice-discriminant-le-span-singleton.md)
-- [Lattice Discriminant is Fractional](lattice-discriminant-is-fractional.md)
-- [Lattice Discriminant ne bot of basis](lattice-discriminant-ne-bot-of-basis.md)
-- [Lattice Discriminant is Fractional and ne bot](lattice-discriminant-is-fractional-and-n.md)
-- [Lattice Discriminant eq span singleton](lattice-discriminant-eq-span-singleton.md)
-- [Lattice Discriminant eq imp eq](lattice-discriminant-eq-imp-eq.md)
-- [Lattice Discriminant eq imp eq of is Fraction Ring](lattice-discriminant-eq-imp-eq-of-is-fra.md)
+- [Discriminants of tuples from a submodule](lattice-discriminant-set.md)
+- [Discriminant of a lattice](lattice-discriminant.md)
+- [The discriminant of a lattice inside a basis lattice](lattice-discriminant-le-span-singleton.md)
+- [The discriminant of a lattice inside a basis lattice is fractional](lattice-discriminant-is-fractional.md)
+- [The discriminant of a lattice containing a basis is nonzero](lattice-discriminant-ne-bot-of-basis.md)
+- [The discriminant of a sandwiched lattice is a nonzero fractional ideal](lattice-discriminant-is-fractional-and-n.md)
+- [The discriminant of a lattice spanned by a basis](lattice-discriminant-eq-span-singleton.md)
+- [Equal discriminants force equal lattices](lattice-discriminant-eq-imp-eq.md)
+- [Equal discriminants force equal lattices (fraction field version)](lattice-discriminant-eq-imp-eq-of-is-fra.md)

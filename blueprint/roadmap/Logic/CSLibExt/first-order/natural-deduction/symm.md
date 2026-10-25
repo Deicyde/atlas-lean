@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Logic.FOL.Derivable.symm
 ---
 
-# Symm
+# Symmetry of equality in natural deduction
 
-Symmetry of equality.
+**Symmetry of equality in natural deduction.** Let $\Gamma$ be a list of first-order formulas
+and let $s$ and $t$ be terms. If the equation $s = t$ is derivable from the hypotheses $\Gamma$,
+then the equation $t = s$ is derivable from $\Gamma$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ Symmetry of equality.
 
 ## Proof depends on
 
-- [Instantiate](../syntax/instantiate.md)
-- [Instantiate Term](../syntax/instantiate-term.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
+- [Instantiating the outermost bound variable of a term](../syntax/instantiate-term.md)
 
 ## Sources
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.every_nat_eq_sum_three_sq_div_eight
 ---
 
-# Three Floor Square Sums
+# Sums of three terms of the sequence ⌊n²/8⌋
 
-Every natural number is a sum of three values of the form `⌊n² / 8⌋`.
+**Sums of three terms of the sequence ⌊n²/8⌋.** For every natural number $m$ there are natural
+numbers $a$, $b$, $c$ with
+$m = \lfloor a^2/8 \rfloor + \lfloor b^2/8 \rfloor + \lfloor c^2/8 \rfloor$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Legendre Three Square](exists-three-squares-of-not-four-pow-mul.md)
+- [Legendre's three-square theorem](exists-three-squares-of-not-four-pow-mul.md)
 
 ## Sources
 

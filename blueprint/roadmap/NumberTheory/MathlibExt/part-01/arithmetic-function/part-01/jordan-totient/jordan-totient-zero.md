@@ -7,13 +7,14 @@ proof: formalized
 lean: ArithmeticFunction.jordanTotient_zero
 ---
 
-# Jordan Totient zero
+# Jordan's totient at zero
 
-Zero extension convention: `J_k(0) = 0`.
+**Jordan's totient at zero.** For every natural number $k$, the Jordan totient function
+satisfies $J_k(0) = 0$; this is the convention extending $J_k$ to $0$.
 
 ## Depends on
 
-- [Jordan Totient](jordan-totient.md)
+- [Jordan's totient function](jordan-totient.md)
 
 ## Sources
 

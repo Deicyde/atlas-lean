@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_length
 ---
 
-# W9 length
+# The divisor table for $210$ has 16 entries
 
-The table `w9` has 16 entries.
+**The divisor table for $210$ has 16 entries.** The Möbius divisor table $W_9$ for $210$ is a
+list of length $16$.
 
 ## Depends on
 
-- [W9](w9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

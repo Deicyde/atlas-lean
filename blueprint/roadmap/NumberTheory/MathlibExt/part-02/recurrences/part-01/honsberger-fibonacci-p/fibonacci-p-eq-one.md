@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciP_eq_one
 ---
 
-# Fibonacci P eq one
+# Initial Fibonacci p-numbers equal one
 
-Fibonacci `p`-numbers from index one through index `p` are one.
+**Initial Fibonacci p-numbers equal one.** For all natural numbers $p$ and $r$ with
+$1 \le r \le p$, the Fibonacci $p$-number $F_p(r)$ equals $1$.
 
 ## Depends on
 
-- [Fibonacci P](fibonacci-p.md)
+- [Fibonacci p-numbers](fibonacci-p.md)
 
 ## Sources
 

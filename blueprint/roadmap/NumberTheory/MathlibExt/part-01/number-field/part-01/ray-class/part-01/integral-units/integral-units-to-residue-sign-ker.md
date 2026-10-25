@@ -7,23 +7,26 @@ proof: formalized
 lean: NumberField.Modulus.integralUnitsToResidueSign_ker
 ---
 
-# Integral Units To Residue Sign ker
+# Kernel of the residue-sign map on integral units
 
-Kernel of the residue-sign endpoint is the ray-one unit subgroup.
+**Kernel of the residue-sign map on integral units.** Let $\mathfrak m$ be a modulus of a
+number field $K$. The kernel of the residue-sign map on the unit group $\mathcal O_K^\times$ of the
+ring of integers is the subgroup of ray-one integral units, the units of $\mathcal O_K$ whose image
+in the group of ray elements modulo $\mathfrak m$ lies in its ray-one subgroup.
 
 ## Depends on
 
-- [Residue Sign Target](../../part-02/residue-sign/residue-sign-target.md)
-- [Integral Ray One Units](integral-ray-one-units.md)
-- [Integral Units To Residue Sign](integral-units-to-residue-sign.md)
+- [Residue-sign target](../../part-02/residue-sign/residue-sign-target.md)
+- [Ray-one integral units](integral-ray-one-units.md)
+- [Residue-sign map on integral units](integral-units-to-residue-sign.md)
 
 ## Proof depends on
 
-- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
-- [Integral Units To Ray Quotient ker](integral-units-to-ray-quotient-ker.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
-- [Ray Elements Quotient Equiv Residue Sign](../../part-02/residue-sign/ray-elements-quotient-equiv-residue-sign.md)
-- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
+- [Map from integral units to the ray quotient](integral-units-to-ray-quotient.md)
+- [Kernel of the ray-quotient map on integral units](integral-units-to-ray-quotient-ker.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
+- [The residue-sign isomorphism](../../part-02/residue-sign/ray-elements-quotient-equiv-residue-sign.md)
+- [Ray-one subgroup](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Sources
 

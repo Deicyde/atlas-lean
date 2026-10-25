@@ -7,9 +7,15 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_erdos_div_three_layers_bound
 ---
 
-# Exists prime dvd choose of erdos div three layers bound
+# Sylvester–Schur criterion from the Erdős layer bound with a one-third first layer
 
-Erdős layer estimate with first layer `N / 3`, in binomial form.
+**Sylvester–Schur criterion from the Erdős layer bound with a one-third first layer.** Let
+$n < k$ be natural numbers, put $N = k + n - 1$ and $L = \lfloor \log_2 N \rfloor$, and assume
+$N \ge 6$. Write $m\#$ for the product of the primes at most $m$. If
+
+$$n! \cdot \lfloor N/3 \rfloor\# \cdot \prod_{i=2}^{L} \lfloor N^{1/i} \rfloor\# < k^n,$$
+
+then some prime $p > n$ divides $\binom{N}{n}$.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
-- [Consecutive of factorial mul prod erdos div three layers lt start pow](../conditional/consecutive-of-factorial-mul-prod-erdos-2.md)
+- [Prime divisors above $n$ of a block term divide the binomial coefficient](prime-dvd-seq-implies-choose.md)
+- [Erdős layer criterion with a one-third first layer for a large prime in a consecutive block](../conditional/consecutive-of-factorial-mul-prod-erdos-2.md)
 
 ## Sources
 

@@ -4,12 +4,12 @@ navigation: module
 
 # Gaussian Int Prime Basics
 
-- [Gaussian Int is Unit iff](gaussian-int-is-unit-iff.md)
-- [Gaussian Int prime of nat Abs norm prime](gaussian-int-prime-of-nat-abs-norm-prime.md)
-- [Gaussian Int prime one add I](gaussian-int-prime-one-add-i.md)
-- [Gaussian Int two eq](gaussian-int-two-eq.md)
+- [Units of the Gaussian integers](gaussian-int-is-unit-iff.md)
+- [Gaussian integers of prime norm are prime](gaussian-int-prime-of-nat-abs-norm-prime.md)
+- [1 + i is a Gaussian prime](gaussian-int-prime-one-add-i.md)
+- [Factorization of 2 in the Gaussian integers](gaussian-int-two-eq.md)
 - [Unit Val](unit-val.md)
-- [Unit Val inj](unit-val-inj.md)
-- [Unit Val complete](unit-val-complete.md)
-- [Unit Val Inv](unit-val-inv.md)
-- [Unit Val mul unit Val Inv](unit-val-mul-unit-val-inv.md)
+- [The four Gaussian units are distinct](unit-val-inj.md)
+- [The enumeration of the Gaussian units is complete](unit-val-complete.md)
+- [Inverses of the Gaussian units](unit-val-inv.md)
+- [Each Gaussian unit times its listed inverse is one](unit-val-mul-unit-val-inv.md)

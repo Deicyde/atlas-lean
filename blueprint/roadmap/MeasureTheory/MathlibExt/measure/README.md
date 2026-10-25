@@ -6,8 +6,8 @@ article_id: af_7fad17e48e1ca6f49133994d
 
 - [Lebesgue](lebesgue/README.md)
 - [Atomless](atomless/README.md)
-- [Coordinate Cross Polytope](volume-coordinate-cross-polytope.md)
-- [Coordinate Cube](volume-coordinate-cube.md)
-- [Image Null](measure-image-null-of-locally-null.md)
+- [Volume of the cross-polytope](volume-coordinate-cross-polytope.md)
+- [Volume of the coordinate cube](volume-coordinate-cube.md)
+- [Sets with locally null image have null image](measure-image-null-of-locally-null.md)
 - [Pi With Density](pi-with-density/README.md)
-- [Vitali Nonmeasurable](vitali-nonmeasurable.md)
+- [Vitali's theorem](vitali-nonmeasurable.md)

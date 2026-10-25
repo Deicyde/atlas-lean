@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.IsHZeroWord
 ---
 
-# Is HZero Word
+# Words of $\mathfrak{H}^0$
 
-Predicate for `H^0`: empty or begins in `x` and ends in `y`.
+**Words of $\mathfrak{H}^0$.** A word $w$ in the two letters $x$ and $y$ is an
+$\mathfrak{H}^0$-word when $w$ is empty or $w = xuy$ for some word $u$, that is, when $w$ is
+empty or begins with $x$ and ends in $y$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [X Word](x-word.md)
-- [Y Word](y-word.md)
+- [The letter $x$ as a word](x-word.md)
+- [The letter $y$ as a word](y-word.md)
 
 ## Sources
 

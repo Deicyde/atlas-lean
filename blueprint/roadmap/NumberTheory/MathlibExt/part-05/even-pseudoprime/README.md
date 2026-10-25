@@ -4,9 +4,9 @@ navigation: module
 
 # Even Pseudoprime
 
-- [Is Even Pseudoprime](is-even-pseudoprime.md)
+- [Even pseudoprime](is-even-pseudoprime.md)
 - [Even Pseudoprimes](even-pseudoprimes.md)
-- [Even](even.md)
-- [Two lt](two-lt.md)
-- [Modeq](modeq.md)
-- [Not prime](not-prime.md)
+- [Even pseudoprimes are even](even.md)
+- [Even pseudoprimes exceed two](two-lt.md)
+- [Fermat congruence for even pseudoprimes](modeq.md)
+- [Even pseudoprimes are not prime](not-prime.md)

@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.evalBool_toImpBot
 ---
 
-# Eval Bool to Imp Bot
+# The translation into $\to$ and $\bot$ preserves truth values
 
-The translation keeps every truth value when `⊥` is false.
+**The translation into $\to$ and $\bot$ preserves truth values.** For every proposition $A$
+and every valuation $v$ that makes $\bot$ false, the translation of $A$ into $\to$ and $\bot$
+has the same truth value under $v$ as $A$.
 
 ## Depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
-- [To Imp Bot](to-imp-bot.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
+- [Translation into $\to$ and $\bot$](to-imp-bot.md)
 
 ## Sources
 

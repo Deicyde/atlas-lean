@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_succ_succ
 ---
 
-# Generalized Hyper Fibonacci succ succ
+# Recurrence for generalized hyper-Fibonacci numbers
 
-For `r ≥ 1` and `n ≥ 1`, `W_{p,n}^{(r)} = p W_{p,n-1}^{(r)} + W_{p,n}^{(r-1)}`, stated for
-all integers `p`, `a`, `b`.
+**Recurrence for generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers and let
+$W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers. For all natural numbers $r \ge 1$
+and $n \ge 1$, $W^{(r)}_{p,n} = p W^{(r)}_{p,n-1} + W^{(r-1)}_{p,n}$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

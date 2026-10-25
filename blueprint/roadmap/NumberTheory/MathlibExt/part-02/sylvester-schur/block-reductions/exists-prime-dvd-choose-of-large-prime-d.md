@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_large_prime_dvd_block
 ---
 
-# Exists prime dvd choose of large prime dvd block
+# Large prime divisors pass from a block to its binomial coefficient
 
-A large prime divisor of any term in the block gives a large prime divisor of the
-corresponding binomial coefficient.
+**Large prime divisors pass from a block to its binomial coefficient.** Let $n$ and $k$ be
+natural numbers. If some prime $p > n$ divides $k + i$ for some $i < n$, then some prime $q > n$
+divides $\binom{k + n - 1}{n}$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
+- [Prime divisors above $n$ of a block term divide the binomial coefficient](prime-dvd-seq-implies-choose.md)
 
 ## Sources
 

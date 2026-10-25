@@ -7,15 +7,21 @@ proof: formalized
 lean: Chebyshev.laplace_theta_exp_eq_primeLogSeries_div
 ---
 
-# Laplace theta exp eq prime Log Series div
+# Laplace transform of $\theta(e^t)$
 
-Lemma 16.10 identity: the Laplace transform of `theta (exp ·)` at `s`.
+**Laplace transform of $\theta(e^t)$.** Let $\theta(x) = \sum_{p \le x} \log p$ be
+Chebyshev's function, the sum running over the primes $p \le x$. For every $s \in \mathbb{C}$
+with $\operatorname{Re} s > 1$, the Laplace transform
+$\int_{(0, \infty)} e^{-st}\,\theta(e^t)\,dt$ of $t \mapsto \theta(e^t)$ at $s$ equals
+$\frac{1}{s} \sum_p \log p \cdot p^{-s}$, the prime logarithm series at $s$ divided by $s$,
+where the sum runs over all primes $p$.
 
 ## Depends on
 
-- [Prime Log Series](prime-log-series.md)
+- [The prime logarithm series](prime-log-series.md)
 - [The one-sided Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.LaplaceTheta](../../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI Lemma 16.10.

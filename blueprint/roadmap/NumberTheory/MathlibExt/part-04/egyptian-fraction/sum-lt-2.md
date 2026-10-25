@@ -13,11 +13,11 @@ The reciprocal sum of a strict underapproximation is below its target.
 
 ## Depends on
 
-- [Is Strict Underapproximation](is-strict-underapproximation.md)
+- [Egyptian underapproximations with strictly increasing denominators](is-strict-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Strict Egyptian](is-strict-egyptian.md)
+- [Strictly increasing Egyptian denominator tuples](is-strict-egyptian.md)
 
 ## Sources
 

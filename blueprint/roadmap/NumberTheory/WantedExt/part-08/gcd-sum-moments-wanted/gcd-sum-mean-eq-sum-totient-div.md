@@ -17,7 +17,7 @@ definition.
 
 ## Proof depends on
 
-- [Gcd Sum Totient](../../../MathlibExt/part-01/arithmetic-function/part-01/gcd-sum-eq-totient-sum.md)
+- [The gcd-sum as a divisor sum of totients](../../../MathlibExt/part-01/arithmetic-function/part-01/gcd-sum-eq-totient-sum.md)
 
 ## Sources
 

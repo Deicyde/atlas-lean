@@ -7,24 +7,28 @@ proof: formalized
 lean: NumberField.Modulus.restrictNormalHom_artinMap_primeCoprimeUnit
 ---
 
-# Restrict Normal Hom artin Map prime Coprime Unit
+# Restriction of the Artin map at a prime
 
-Restriction of the `M`-Artin map at a prime generator agrees with the
-`L`-Artin map at the same generator.
+**Restriction of the Artin map at a prime.** Let $K \subseteq L \subseteq M$ be a tower of
+number fields with $L/K$ and $M/K$ abelian Galois, and let $\mathfrak m$ be a modulus of $K$ with
+finite part $\mathfrak m_0$ such that every prime of $\mathcal O_K$ not dividing $\mathfrak m_0$
+is unramified in $L$ and in $M$. For every prime $\mathfrak p$ of $\mathcal O_K$ not dividing
+$\mathfrak m_0$, restricting to $L$ the image of $\mathfrak p$ under the Artin map of $M/K$ gives
+the image of $\mathfrak p$ under the Artin map of $L/K$.
 
 ## Depends on
 
-- [Is Unramified Outside](../frobenius-generators/is-unramified-outside.md)
-- [Artin Map](../artin-map/artin-map.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
+- [Extensions unramified outside a modulus](../frobenius-generators/is-unramified-outside.md)
+- [Artin map](../artin-map/artin-map.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [The prime as a coprime fractional ideal](../prime-generators/prime-coprime-unit.md)
 
 ## Proof depends on
 
-- [Artin Map prime Coprime Unit](../artin-map/artin-map-prime-coprime-unit.md)
-- [Frobenius At Coprime Prime](../frobenius-generators/frobenius-at-coprime-prime.md)
-- [Frobenius Restriction](../restrict-normal-hom-frobenius-at-coprime.md)
+- [The Artin map at a prime](../artin-map/artin-map-prime-coprime-unit.md)
+- [Chosen Frobenius element at a coprime prime](../frobenius-generators/frobenius-at-coprime-prime.md)
+- [Restriction of Frobenius elements in a tower](../restrict-normal-hom-frobenius-at-coprime.md)
 
 ## Sources
 

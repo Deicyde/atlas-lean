@@ -13,11 +13,11 @@ Every denominator in a strict underapproximation is at least two.
 
 ## Depends on
 
-- [Is Strict Underapproximation](is-strict-underapproximation.md)
+- [Egyptian underapproximations with strictly increasing denominators](is-strict-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Strict Egyptian](is-strict-egyptian-2.md)
+- [Strict underapproximations have strictly increasing Egyptian denominators](is-strict-egyptian-2.md)
 
 ## Sources
 

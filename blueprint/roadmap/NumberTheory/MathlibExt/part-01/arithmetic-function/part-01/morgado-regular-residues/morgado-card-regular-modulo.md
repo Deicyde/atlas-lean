@@ -7,15 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.morgado_card_regular_modulo
 ---
 
-# Morgado card regular modulo
+# Morgado's formula for the number of regular residues
 
-Morgado's formula for the number of regular residues modulo `n`
-(equation `eq:2`).
+**Morgado's formula for the number of regular residues.** Let $n$ be a positive integer. Call
+a residue class $m \in \mathbb{Z}/n\mathbb{Z}$ regular if the equation $m^2 x = m$ has a solution
+$x \in \mathbb{Z}/n\mathbb{Z}$, and let $\varrho(n)$ be the number of regular residue classes. Let
+$U(n)$ be the set of positive divisors $d$ of $n$ with $\gcd(d, n/d) = 1$. Then
 
-For each `n`, an integer `m` is regular modulo `n` when the congruence
-`m ^ 2 * x = m` has a solution; `ϱ(n)` counts the residue classes with this
-property (OEIS `A055653`). A divisor `d ∣ n` is unitary iff
-`Nat.Coprime d (n / d)`; the sum is `∑ d udiv n, Nat.totient d`.
+$$\varrho(n) = \sum_{d \in U(n)} \varphi(d),$$
+
+where $\varphi$ is Euler's totient function.
+
+The sequence $\varrho(1), \varrho(2), \ldots$ is OEIS A055653.
 
 ## Depends on
 
@@ -23,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ncard regular eq sum totient unitary Divisors](ncard-regular-eq-sum-totient-unitary-div.md)
+- [Morgado's formula as a sum over unitary divisors](ncard-regular-eq-sum-totient-unitary-div.md)
 
 ## Sources
 

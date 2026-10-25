@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.isROBDD_existsVar
 ---
 
-# Is ROBDD exists Var
+# Existential quantification yields an ROBDD
 
-Quantifying an ordered diagram gives a reduced ordered one.
+**Existential quantification yields an ROBDD.** If $t$ is an ordered binary decision diagram
+(tested variables strictly increase along every path), then for every variable $x$ the
+existential quantification of $t$ over $x$ is a reduced ordered binary decision diagram.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Is ROBDD](../basic/is-robdd.md)
-- [Ordered From](../basic/ordered-from.md)
-- [Exists Var](exists-var.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
+- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Existential quantification of a diagram](exists-var.md)
 
 ## Proof depends on
 
-- [Reduced](../basic/reduced.md)
-- [Apply](../basic/apply.md)
-- [Is ROBDD restrict](is-robdd-restrict.md)
-- [Ordered From apply](../basic/ordered-from-apply.md)
-- [Reduced apply](../basic/reduced-apply.md)
-- [Restrict](restrict.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Bryant's apply operation](../basic/apply.md)
+- [Restriction yields an ROBDD](is-robdd-restrict.md)
+- [Apply preserves orderedness](../basic/ordered-from-apply.md)
+- [Apply returns reduced diagrams](../basic/reduced-apply.md)
+- [Restriction of a binary decision diagram](restrict.md)
 
 ## Sources
 

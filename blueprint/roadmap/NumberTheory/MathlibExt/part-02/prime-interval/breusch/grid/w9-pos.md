@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_pos
 ---
 
-# W9 pos
+# Divisors in the table for $210$ are positive
 
-Every first component of `w9` is positive.
+**Divisors in the table for $210$ are positive.** For every pair $(d, \varepsilon)$ in the
+Möbius divisor table $W_9$ for $210$, $d \ge 1$.
 
 ## Depends on
 
-- [W9](w9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

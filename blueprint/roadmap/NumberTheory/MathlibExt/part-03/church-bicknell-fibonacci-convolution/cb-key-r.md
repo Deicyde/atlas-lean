@@ -7,9 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.cb_keyR
 ---
 
-# Cb key R
+# Church–Bicknell convolution over the reals
 
-The real-valued binomial convolution identity, before descending to `ℚ`.
+**Church–Bicknell convolution over the reals.** For every natural number $n$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} F_k F_{n-k} = \frac{2^n L_n - 2}{5}$$
+
+holds as an identity of real numbers, where $F_k$ is the $k$-th Fibonacci number and $L_n$ is
+the $n$-th Lucas number.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ The real-valued binomial convolution identity, before descending to `ℚ`.
 
 ## Proof depends on
 
-- [Cb lucas binet](cb-lucas-binet.md)
-- [Sqrt5 ne](sqrt5-ne.md)
+- [Binet's formula for the Lucas numbers](cb-lucas-binet.md)
+- [The square root of 5 is nonzero](sqrt5-ne.md)
 
 ## Sources
 

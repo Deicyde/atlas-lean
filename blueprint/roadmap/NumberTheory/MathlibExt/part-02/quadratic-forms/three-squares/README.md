@@ -5,6 +5,6 @@ navigation: module
 
 # Three Squares
 
-- [Three Square Representation Count](three-square-representation-count.md)
-- [Three Square Representation Count eq zero of mod eight eq seven](three-square-representation-count-eq-zer.md)
-- [Three Square Representation Count eq three Square Representation Count div four](three-square-representation-count-eq-thr.md)
+- [Number of representations as a sum of three squares](three-square-representation-count.md)
+- [Numbers congruent to 7 modulo 8 are not sums of three squares](three-square-representation-count-eq-zer.md)
+- [Removing a factor of 4 preserves the three-square count](three-square-representation-count-eq-thr.md)

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.BrunTwinPrimeReciprocalsWanted.brun_twin_prime_reciprocal_series_summable
 ---
 
-# Brun Twin Prime Reciprocals
+# Brun's theorem on twin primes
 
-The sum of reciprocals over twin-prime pairs, indexed by the smaller prime
-`p` of each pair `(p, p + 2)`, converges over `ℝ`; a shared prime such as `5`
-is intentionally counted once in each of `(3, 5)` and `(5, 7)`, and a finite
-collection of twin-prime pairs is already covered because a finitely supported
-function is summable.
+**Brun's theorem on twin primes.** The series
+$\sum_{p} \left(\frac{1}{p} + \frac{1}{p + 2}\right)$, taken over all primes $p$ such that
+$p + 2$ is also prime, converges in $\mathbb{R}$.
+
+Each twin-prime pair $(p, p + 2)$ is indexed by its smaller member, so a prime lying in two
+pairs, such as $5$ in $(3, 5)$ and $(5, 7)$, is counted once for each pair. The statement holds
+trivially if there are only finitely many twin-prime pairs.
 
 ## Depends on
 

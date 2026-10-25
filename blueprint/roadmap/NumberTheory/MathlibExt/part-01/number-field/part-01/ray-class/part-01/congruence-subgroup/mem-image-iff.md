@@ -7,18 +7,22 @@ proof: formalized
 lean: NumberField.Modulus.CongruenceSubgroup.mem_image_iff
 ---
 
-# Mem image iff
+# Membership in the image of a congruence subgroup
 
-Membership in the image is existential over the subgroup.
+**Membership in the image of a congruence subgroup.** Let $H$ be a congruence subgroup for a
+modulus $\mathfrak m$ of a number field $K$, and let $\pi$ be the canonical projection from the
+group of invertible fractional ideals of $K$ coprime to the finite part of $\mathfrak m$ onto the
+ray class group of $\mathfrak m$. An element $x$ of the ray class group lies in the image $\pi(H)$
+if and only if $\pi(y) = x$ for some $y \in H$.
 
 ## Depends on
 
-- [Congruence Subgroup](congruence-subgroup.md)
-- [Image](image.md)
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Class Map](../group/ray-class-map.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Congruence subgroup](congruence-subgroup.md)
+- [Image of a congruence subgroup in the ray class group](image.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray class map](../group/ray-class-map.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.isMultiplicative_unitaryConv
 ---
 
-# Is Multiplicative unitary Conv
+# The unitary convolution of multiplicative functions is multiplicative
 
-The unitary convolution of two multiplicative functions is multiplicative.
+**The unitary convolution of multiplicative functions is multiplicative.** Let $R$ be a
+commutative semiring. If $f$ and $g$ are multiplicative arithmetic functions with values in $R$,
+then their unitary convolution $f \sqcup g$, given by $(f \sqcup g)(n) = \sum_{d} f(d)\, g(n/d)$
+with $d$ running over the unitary divisors of $n$, is multiplicative.
 
 ## Depends on
 
-- [Unitary Conv](unitary-conv.md)
+- [Unitary convolution](unitary-conv.md)
 
 ## Proof depends on
 
-- [Unitary Conv one](unitary-conv-one.md)
-- [Gcd mem unitary Divisors of mem mul](gcd-mem-unitary-divisors-of-mem-mul.md)
-- [Mul mem unitary Divisors mul](mul-mem-unitary-divisors-mul.md)
+- [Unitary convolution at $1$](unitary-conv-one.md)
+- [Gcd with a coprime factor preserves unitary divisors](gcd-mem-unitary-divisors-of-mem-mul.md)
+- [Products of unitary divisors of coprime numbers](mul-mem-unitary-divisors-mul.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources

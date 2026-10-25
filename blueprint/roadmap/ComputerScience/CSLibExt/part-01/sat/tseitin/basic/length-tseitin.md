@@ -15,13 +15,13 @@ connectives of $A$: three defining clauses per connective plus the unit clause a
 
 ## Depends on
 
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Connective Count](connective-count.md)
 - [Tseitin CNF](tseitin.md)
 
 ## Proof depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Tseitin CNF with $\bot$ false](length-tseitin-aux.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 - [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)

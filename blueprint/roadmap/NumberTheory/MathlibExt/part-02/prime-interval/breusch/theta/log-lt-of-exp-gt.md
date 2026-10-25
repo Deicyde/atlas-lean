@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log_lt_of_exp_gt
 ---
 
-# Log lt of exp gt
+# Bounding a logarithm above by the exponential
 
-Logarithm upper bound from an exponential lower bound.
+**Bounding a logarithm above by the exponential.** Let $a$ and $r$ be real numbers with
+$a > 0$. If $a < e^r$, then $\log a < r$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

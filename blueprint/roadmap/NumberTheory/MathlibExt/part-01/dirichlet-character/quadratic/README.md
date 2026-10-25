@@ -5,8 +5,8 @@ navigation: module
 
 # Quadratic
 
-- [Is Fundamental Discriminant](is-fundamental-discriminant.md)
-- [Kronecker At Two](kronecker-at-two.md)
-- [Kronecker At Prime](kronecker-at-prime.md)
-- [Kronecker Sym](kronecker-sym.md)
-- [Kronecker Sym prime](kronecker-sym-prime.md)
+- [Fundamental discriminant](is-fundamental-discriminant.md)
+- [Kronecker symbol at two](kronecker-at-two.md)
+- [Kronecker symbol at a prime](kronecker-at-prime.md)
+- [Kronecker symbol](kronecker-sym.md)
+- [Kronecker symbol with a prime denominator](kronecker-sym-prime.md)

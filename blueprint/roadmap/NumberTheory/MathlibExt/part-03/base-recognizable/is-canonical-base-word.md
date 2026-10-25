@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsCanonicalBaseWord
 ---
 
-# Is Canonical Base Word
+# Canonical base-k words
 
-A canonical base expansion is empty for zero and otherwise has no leading zero.
+**Canonical base-k words.** A word of base-$k$ digits is canonical when it is empty or its
+first (most significant) digit is nonzero.
 
 ## Depends on
 

@@ -20,7 +20,7 @@ list.
 - [Occurrence table of a formula and a witness](ents.md)
 - [Formula check against a witness](../../sat-time-m/check-cnf.md)
 - [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -29,7 +29,7 @@ list.
 - [Correctness of the witness formula check](../../sat-time-m/check-cnf-ret.md)
 - [Witness lookup](../../sat-time-m/lookup-var.md)
 - [Satisfies](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources

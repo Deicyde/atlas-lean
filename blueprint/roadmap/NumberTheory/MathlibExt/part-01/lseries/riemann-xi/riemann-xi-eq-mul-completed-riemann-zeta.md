@@ -7,14 +7,16 @@ proof: formalized
 lean: RiemannXi.riemannXi_eq_mul_completedRiemannZeta
 ---
 
-# Riemann Xi eq mul completed Riemann Zeta
+# The xi function in terms of the completed zeta function
 
-Away from `s = 0` and `s = 1`, `ξ` agrees with
-`s * (s - 1) / 2 * Λ(s)`.
+**The xi function in terms of the completed zeta function.** Let $\xi$ be the Riemann xi
+function and let $\Lambda$ be the completed Riemann zeta function, the meromorphic continuation
+of $\pi^{-s/2}\Gamma(s/2)\zeta(s)$, which has simple poles at $s = 0$ and $s = 1$. For every
+complex number $s$ with $s \ne 0$ and $s \ne 1$, $\xi(s) = \frac{s(s - 1)}{2}\Lambda(s)$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Sources
 

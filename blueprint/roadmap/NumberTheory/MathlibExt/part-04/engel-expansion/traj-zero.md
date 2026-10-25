@@ -7,13 +7,14 @@ proof: formalized
 lean: EngelExpansion.traj_zero
 ---
 
-# Traj zero
+# Initial term of the Engel trajectory
 
-Unfolding at step zero.
+**Initial term of the Engel trajectory.** For all natural numbers $n$ and $a$, the Engel
+remainder trajectory of $a$ with respect to $n$ has value $a$ at step $0$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Sources
 

@@ -7,16 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.lcm_product_identity
 ---
 
-# Lcm Product Identity
+# The LCM product identity
 
-The LCM product identity: `∏_p p^⌊n/(p-1)⌋` equals the lcm of all products
-`i_1 * ... * i_n` of positive integers with sum at most `2 * n`.
+**The LCM product identity.** For every natural number $n$, the product of
+$p^{\lfloor n/(p-1) \rfloor}$ over the primes $p \le n + 1$ equals the least common multiple of all
+products $i_1 i_2 \cdots i_n$ of $n$ positive integers with $i_1 + \cdots + i_n \le 2n$.
 
-The source's product ranges over all primes, but `⌊n/(p-1)⌋ = 0` for
-`p > n + 1`, so `Nat.primesBelow (n + 2)` captures every nontrivial factor.
-The tuple ranges over `Fin (2 * n + 1)` with the `1 ≤` filter selecting the
-positive entries; verified at `n = 0, 1, 2, 3` against directly computed lcms.
-Proves `Wanted` entry `lcm_product_identity`.
+Since $\lfloor n/(p-1) \rfloor = 0$ for $p > n + 1$, the left side is the product of
+$p^{\lfloor n/(p-1) \rfloor}$ over all primes $p$.
 
 ## Depends on
 

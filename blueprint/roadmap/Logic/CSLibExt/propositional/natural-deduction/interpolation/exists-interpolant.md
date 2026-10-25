@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Logic.PL.exists_interpolant
 ---
 
-# Craig interpolation
+# Craig interpolation, semantic form
 
-**Craig interpolation** (semantic form): if every valuation with `⊥` false that makes
-`A` true makes `B` true, there is `I` whose atoms are common to `A` and `B` (or `⊥`) with
-`A ⊨ I` and `I ⊨ B`.
+**Craig interpolation, semantic form.** Let $A$ and $B$ be propositions such that every
+Boolean valuation $v$ with $v(\bot)$ false that makes $A$ true also makes $B$ true. Then there is
+a proposition $I$ whose atoms all lie among the atoms common to $A$ and $B$ together with $\bot$,
+such that every valuation $v$ with $v(\bot)$ false that makes $A$ true makes $I$ true, and every
+valuation $v$ with $v(\bot)$ false that makes $I$ true makes $B$ true.
 
 ## Depends on
 
-- [Atoms](atoms.md)
-- [Eval Bool](../semantics/eval-bool.md)
+- [Atoms of a proposition](atoms.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Elim Atoms](elim-atoms.md)
-- [Eval Bool congr](eval-bool-congr.md)
-- [Eval Bool elim Atoms](eval-bool-elim-atoms.md)
-- [Fix Atom](fix-atom.md)
+- [Boolean quantification over a list of atoms](elim-atoms.md)
+- [The truth value depends only on the atoms](eval-bool-congr.md)
+- [Truth of a Boolean quantification over a list of atoms](eval-bool-elim-atoms.md)
+- [Substituting a truth value for an atom](fix-atom.md)
 
 ## Sources
 

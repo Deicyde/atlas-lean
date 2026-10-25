@@ -7,16 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.primePrimes_ratio_tendsto_one
 ---
 
-# Prime Primes ratio tendsto one
+# Broughan–Barnett ratio limit, zero-based form
 
-For the prime-primes `q n = Nat.nth Nat.Prime (Nat.nth Nat.Prime n)`
-(prime-indexed primes, `q_n ~ n * log^2 n`), consecutive ratios tend to one:
-`(q n : ℝ) / q (n + 1) → 1`.
+**Broughan–Barnett ratio limit, zero-based form.** Assume that there are infinitely many primes
+(which always holds). Let $p_0 = 2$, $p_1 = 3$, $p_2 = 5$, $\dots$ be the primes in increasing
+order, indexed from zero, and let $q_n = p_{p_n}$. Then $q_n / q_{n+1} \to 1$ as $n \to \infty$.
 
-The corollary follows from the Rosser–Schoenfeld bounds of the theorem;
-parts (a)–(b) give `q_n ~ n log^2 n`. This states only part (c), the
-consecutive-ratio limit. `Nat.nth Nat.Prime` needs the infinitude of primes,
-supplied as the `Infinite` instance hypothesis.
+In the source's one-based indexing $p'_1 = 2$, $p'_2 = 3$, $\dots$, this $q_n$ equals
+$p'_{p'_{n+1} + 1}$ rather than the source's prime-indexed prime $p'_{p'_{n+1}}$; the source
+states the same limit for its sequence.
 
 ## Depends on
 
@@ -24,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Primes ratio tendsto one'](prime-primes-ratio-tendsto-one.md)
+- [Ratio of consecutive zero-based prime-indexed primes tends to one](prime-primes-ratio-tendsto-one.md)
 
 ## Sources
 

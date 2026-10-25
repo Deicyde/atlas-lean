@@ -7,13 +7,15 @@ proof: formalized
 lean: abelSummatory_eq_zero_of_lt_one
 ---
 
-# Abel Summatory eq zero of lt one
+# The summatory step function vanishes below one
 
-The summatory function vanishes below `1`.
+**The summatory step function vanishes below one.** For $f : \mathbb{N} \to \mathbb{C}$, the
+summatory step function $S(t) = \sum_{1 \le k \le t} f(k)$ satisfies $S(t) = 0$ for every real
+$t < 1$.
 
 ## Depends on
 
-- [Abel Summatory](abel-summatory.md)
+- [Summatory step function](abel-summatory.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
+- [Truth-table evaluation](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
 
 ## Sources
 

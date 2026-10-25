@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_harmonic_two_pow_div
 
 ## Depends on
 
-- [Fermat Quotient](../../../MathlibExt/part-05/fermat-quotient/fermat-quotient.md)
+- [Fermat quotient](../../../MathlibExt/part-05/fermat-quotient/fermat-quotient.md)
 - [Harmonic Mod](harmonic-mod.md)
 
 ## Sources

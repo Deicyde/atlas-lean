@@ -7,17 +7,19 @@ proof: formalized
 lean: ArithmeticFunction.isMultiplicative_dedekindPsi
 ---
 
-# Is Multiplicative dedekind Psi
+# Multiplicativity of the Dedekind psi function
 
-The Dedekind psi function is multiplicative.
+**Multiplicativity of the Dedekind psi function.** The Dedekind psi function $\psi$ is
+multiplicative: $\psi(1) = 1$ and $\psi(mn) = \psi(m) \psi(n)$ for all coprime natural numbers
+$m$ and $n$.
 
 ## Depends on
 
-- [Dedekind Psi](dedekind-psi.md)
+- [Dedekind psi function](dedekind-psi.md)
 
 ## Proof depends on
 
-- [Dedekind Psi eq prod factorization](dedekind-psi-eq-prod-factorization.md)
+- [Dedekind psi function as a product over prime powers](dedekind-psi-eq-prod-factorization.md)
 
 ## Sources
 

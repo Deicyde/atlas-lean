@@ -6,17 +6,19 @@ statement: formalized
 lean: NumberField.ArakelovDivisor.idealNorm
 ---
 
-# Ideal Norm
+# Ideal norm of an Arakelov divisor
 
-The absolute norm of the finite (ideal) component, as a positive real.
+**Ideal norm of an Arakelov divisor.** For an Arakelov divisor $D$ of a number field $K$ with
+invertible fractional ideal $I$, the ideal norm of $D$ is the absolute norm $N(I)$ of $I$,
+regarded as a positive real number; it is positive because $I$ is invertible.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Proof depends on
 
-- [Abs Norm units pos](abs-norm-units-pos.md)
+- [Invertible fractional ideals have positive absolute norm](abs-norm-units-pos.md)
 
 ## Sources
 

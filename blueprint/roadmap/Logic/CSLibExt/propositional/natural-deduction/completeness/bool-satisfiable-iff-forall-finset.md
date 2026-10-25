@@ -13,14 +13,14 @@ finite subsets is.
 
 ## Depends on
 
-- [Bool Satisfiable](bool-satisfiable.md)
+- [Satisfiable sets of propositions](bool-satisfiable.md)
 
 ## Proof depends on
 
-- [Eval Bool of cpl](../semantics/eval-bool-of-cpl.md)
-- [Eval Bool](../semantics/eval-bool.md)
+- [Classical derivability implies truth under valuations with false falsum](../semantics/eval-bool-of-cpl.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 - [Consistent With](consistent-with.md)
-- [Model existence](bool-satisfiable-2.md)
+- [Model existence for propositional natural deduction](bool-satisfiable-2.md)
 
 ## Sources
 

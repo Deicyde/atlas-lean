@@ -7,13 +7,18 @@ proof: formalized
 lean: NumberField.log_algebraicMahlerMeasure_add_one_lt
 ---
 
-# Log algebraic Mahler Measure add one lt
+# One plus the logarithm of a Mahler measure above one is below it
 
-Voutier's elementary bridge from logarithmic to multiplicative lower bounds, for `M > 1`.
+**One plus the logarithm of a Mahler measure above one is below it.** Let $x$ be an element
+of a field $K$ that is an algebra over $\mathbb{Q}$, and let $M(x)$ be its algebraic Mahler
+measure. If $M(x) > 1$, then $1 + \log M(x) < M(x)$.
+
+Voutier uses this elementary inequality to pass from lower bounds for $\log M(x)$ to lower bounds
+for $M(x)$.
 
 ## Depends on
 
-- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
+- [Algebraic Mahler measure](algebraic-mahler-measure.md)
 
 ## Sources
 

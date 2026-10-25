@@ -6,11 +6,15 @@ proof: formalized
 lean: Cslib.Logic.FOL.exists_model_of_consistent
 ---
 
-# Model existence
+# Model existence for first-order logic
 
-**Model existence.** Every consistent set of formulas over `ℕ` is satisfiable.  The free
-variables are first doubled, which keeps the set consistent and leaves the odd variables free
-for Henkin witnesses.
+**Model existence for first-order logic.** Let $L$ be a language with countably many symbols.
+Every consistent set $S$ of first-order formulas with free variables in $\mathbb{N}$ is
+satisfiable: there are a nonempty $L$-structure $M$, in the universe of the function symbols of
+$L$, and an assignment $v : \mathbb{N} \to M$ under which every formula of $S$ holds.
+
+The free variables are first doubled, which keeps the set consistent and leaves the odd variables
+free for Henkin witnesses.
 
 ## Depends on
 
@@ -18,26 +22,26 @@ for Henkin witnesses.
 
 ## Proof depends on
 
-- [Relabel double](relabel-double.md)
+- [Doubling the variables preserves consistency](relabel-double.md)
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Symm](../natural-deduction/symm.md)
-- [Trans](../natural-deduction/trans.md)
-- [Maximal Consistent](../consistency/maximal-consistent.md)
-- [Func update](func-update.md)
-- [Mem of provable](../consistency/mem-of-provable.md)
-- [Rel update](rel-update.md)
-- [Provable](../natural-deduction/provable.md)
-- [Term Model](term-model.md)
-- [Exists maximal Consistent henkin](exists-maximal-consistent-henkin.md)
-- [Formula relabel eq rename](../syntax/formula-relabel-eq-rename.md)
-- [Free Var Finset rename](../syntax/free-var-finset-rename.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Truth lemma](realize-term-model-iff.md)
-- [Rename](../syntax/rename.md)
-- [Term Assignment](term-assignment.md)
-- [Term Setoid](term-setoid.md)
-- [Term Structure](term-structure.md)
-- [Update chain](update-chain.md)
+- [Symmetry of equality in natural deduction](../natural-deduction/symm.md)
+- [Transitivity of equality in natural deduction](../natural-deduction/trans.md)
+- [Maximal consistent set](../consistency/maximal-consistent.md)
+- [Congruence for function symbols in a maximal consistent set](func-update.md)
+- [Maximal consistent sets are deductively closed](../consistency/mem-of-provable.md)
+- [Replacing an argument of a relation symbol by an equal term](rel-update.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
+- [Term model of a maximal consistent set](term-model.md)
+- [Henkin extension of a consistent set](exists-maximal-consistent-henkin.md)
+- [Relabelling a formula is renaming](../syntax/formula-relabel-eq-rename.md)
+- [Free variables of a renamed formula](../syntax/free-var-finset-rename.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
+- [Truth lemma for the first-order term model](realize-term-model-iff.md)
+- [Renaming free variables of a formula](../syntax/rename.md)
+- [Canonical assignment of the term model](term-assignment.md)
+- [Provable equality of terms](term-setoid.md)
+- [Term structure of a set of formulas](term-structure.md)
+- [Replacing arguments one at a time](update-chain.md)
 
 ## Sources
 

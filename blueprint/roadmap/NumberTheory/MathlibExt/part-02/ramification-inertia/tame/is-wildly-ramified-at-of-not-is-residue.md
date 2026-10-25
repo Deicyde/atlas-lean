@@ -7,15 +7,17 @@ proof: formalized
 lean: Algebra.isWildlyRamifiedAt_of_not_isResidueSeparableAt
 ---
 
-# Is Wildly Ramified At of not is Residue Separable At
+# An inseparable residue field extension forces wild ramification
 
-Wild ramification follows from residue inseparability: inseparability alone
-contradicts the `.isSeparable` projection of any putative tame proof.
+**An inseparable residue field extension forces wild ramification.** Let $R$ be a
+commutative ring, $S$ a commutative $R$-algebra, $q$ a prime ideal of $S$ and $p$ the preimage
+of $q$ in $R$. If the residue field extension $\kappa(p) \to \kappa(q)$ is not separable, then
+$q$ is wildly ramified over $R$.
 
 ## Depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
-- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
+- [Wildly ramified prime](is-wildly-ramified-at.md)
 
 ## Proof depends on
 

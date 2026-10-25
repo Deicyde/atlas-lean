@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.SmithNormalFormWanted.smithNormalForm
 ---
 
-# Smith Normal Form
+# Smith normal form
 
-Any submodule of a finite free module over a PID has a Smith normal form with invariant-factor
-divisibility chain `a i ∣ a (i+1)`, the refinement beyond the existing Mathlib diagonal-basis
-Smith-form API.
+**Smith normal form.** Let $R$ be a principal ideal domain, let $M$ be a finitely generated free
+$R$-module and let $N$ be a submodule of $M$. Then there are natural numbers $n \le m$, a basis
+$e_0, \dots, e_{m-1}$ of $M$, a basis $f_0, \dots, f_{n-1}$ of $N$ and nonzero elements
+$a_0, \dots, a_{n-1}$ of $R$ such that $f_i = a_i e_i$ in $M$ for every $i < n$ and
+$a_i \mid a_{i+1}$ whenever $i + 1 < n$.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists smith normal form dvd chain](exists-smith-normal-form-dvd-chain.md)
+- [Smith normal form with a divisibility chain](exists-smith-normal-form-dvd-chain.md)
 
 ## Sources
 

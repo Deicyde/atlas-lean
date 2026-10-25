@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.brunConstant
 ---
 
-# Brun Constant
+# Brun's constant
 
-Brun's constant, with a shared prime such as `5` counted once for each twin-prime pair.
+**Brun's constant.** Brun's constant is the real number
+$B = \sum_{p} \left(\frac{1}{p} + \frac{1}{p + 2}\right)$, the sum over all primes $p$ such that
+$p + 2$ is also prime. A prime lying in two twin-prime pairs, such as $5$ in $(3, 5)$ and
+$(5, 7)$, is counted once for each pair.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
+- [Twin-prime reciprocal term](brun-twin-prime-reciprocal-term.md)
 
 ## Sources
 

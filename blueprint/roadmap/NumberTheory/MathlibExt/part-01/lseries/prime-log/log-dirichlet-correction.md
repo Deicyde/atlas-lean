@@ -6,9 +6,11 @@ statement: formalized
 lean: Nat.Primes.logDirichletCorrection
 ---
 
-# Log Dirichlet Correction
+# Prime-power correction series
 
-The higher-prime-power correction series `C(s) = ∑_{p, k} log p / p ^ ((k+2) s)`.
+**Prime-power correction series.** For a complex number $s$, the prime-power correction series
+is $C(s) = \sum_{(p, k)} \frac{\log p}{(p^{k+2})^s}$, summed over all pairs of a prime $p$ and a
+natural number $k \ge 0$ (the sum is taken to be $0$ where the family is not summable).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log Dirichlet Correction Term](log-dirichlet-correction-term.md)
+- [Summand of the prime-power correction series](log-dirichlet-correction-term.md)
 
 ## Sources
 

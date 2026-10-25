@@ -7,24 +7,27 @@ proof: formalized
 lean: NumberField.Modulus.residueSignMap_eq_one_iff
 ---
 
-# Residue Sign Map eq one iff
+# Kernel criterion for the residue-sign map
 
-The combined map is trivial exactly on ray-one elements.
+**Kernel criterion for the residue-sign map.** Let $m$ be a modulus of a number field $K$. A
+ray element $x$ of $m$ is sent to $1$ by the residue-sign map of $m$ if and only if $x$ is a ray
+element congruent to $1$ modulo $m$: $x$ is a ray element of $m$, $x$ is congruent to $1$ at the
+finite part of $m$, and $x$ is positive at every real place in the infinite part of $m$.
 
 ## Depends on
 
-- [Is Ray Element One](../ray-group/is-ray-element-one.md)
-- [Residue Sign Target](residue-sign-target.md)
-- [Ray Elements](../ray-group/ray-elements.md)
-- [Residue Sign Map](residue-sign-map.md)
+- [Elements congruent to one modulo a modulus](../ray-group/is-ray-element-one.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
+- [Residue-sign map](residue-sign-map.md)
 
 ## Proof depends on
 
-- [Congruent One At Finite Part](../ray-group/congruent-one-at-finite-part.md)
-- [Positive At Infinite Part](../ray-group/positive-at-infinite-part.md)
-- [Mem ray One Elements iff](mem-ray-one-elements-iff.md)
-- [Ray One Elements](ray-one-elements.md)
-- [Residue Sign Map ker](residue-sign-map-ker.md)
+- [Multiplicative congruence to one at the finite part](../ray-group/congruent-one-at-finite-part.md)
+- [Positivity at the infinite part of a modulus](../ray-group/positive-at-infinite-part.md)
+- [Membership in the ray-one subgroup](mem-ray-one-elements-iff.md)
+- [Ray-one subgroup](ray-one-elements.md)
+- [Kernel of the residue-sign map](residue-sign-map-ker.md)
 
 ## Sources
 

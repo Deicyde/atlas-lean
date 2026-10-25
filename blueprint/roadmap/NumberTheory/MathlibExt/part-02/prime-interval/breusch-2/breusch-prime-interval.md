@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.breusch_prime_interval
 ---
 
-# Breusch prime interval
+# Breusch's theorem on primes between $x$ and $9x/8$
 
-Every real `x ≥ 48` has a prime strictly between `x` and `(9 / 8) * x`.
+**Breusch's theorem on primes between $x$ and $9x/8$.** For every real number $x \ge 48$
+there is a prime $p$ with $x < p < \frac{9}{8}x$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Breusch prime interval of upper](breusch-prime-interval-of-upper.md)
-- [Log F9 upper](../breusch/upper/log-f9-upper.md)
+- [Breusch's theorem from the upper bound](breusch-prime-interval-of-upper.md)
+- [Upper bound for $\log F_9(n)$ when $(1890n, 2100n)$ has no prime](../breusch/upper/log-f9-upper.md)
 
 ## Sources
 

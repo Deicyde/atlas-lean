@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.four_pow_le
 ---
 
-# Four pow le
+# Four-power lower bound for the central binomial coefficient
 
-`4 ^ t ≤ (2 * t + 1) * C(2 * t, t)`.
+**Four-power lower bound for the central binomial coefficient.** For every natural number
+$t$, $4^t \le (2t+1)\binom{2t}{t}$.
 
 ## Depends on
 

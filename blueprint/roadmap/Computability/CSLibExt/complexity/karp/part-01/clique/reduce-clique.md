@@ -21,7 +21,7 @@ This node has no prerequisites.
 - [Fixed no-instance](no-kg.md)
 - [Karp's CLIQUE instance of a CNF formula](to-clique.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

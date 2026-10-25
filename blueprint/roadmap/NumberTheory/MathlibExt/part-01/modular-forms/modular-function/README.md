@@ -5,6 +5,6 @@ navigation: module
 
 # Modular Function
 
-- [Is Meromorphic On H](is-meromorphic-on-h.md)
-- [Is Invariant Under](is-invariant-under.md)
-- [Is Modular Function](is-modular-function.md)
+- [Meromorphy on the upper half-plane](is-meromorphic-on-h.md)
+- [Invariance under a subgroup of the modular group](is-invariant-under.md)
+- [Modular functions](is-modular-function.md)

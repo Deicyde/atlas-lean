@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch2 Entry5
 
-- [Ramanujan part1 ch2 entry5 general](ramanujan-part1-ch2-entry5-general.md)
-- [Ramanujan part1 ch2 entry5](ramanujan-part1-ch2-entry5.md)
+- [Ramanujan's sum identity for $1/((6k)^3 - 6k)$, including $n = 0$](ramanujan-part1-ch2-entry5-general.md)
+- [Ramanujan's sum identity for $1/((6k)^3 - 6k)$](ramanujan-part1-ch2-entry5.md)

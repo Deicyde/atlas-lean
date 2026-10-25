@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.cohn_twice_square_lucas
 ---
 
-# Cohn Twice Square Lucas
+# Cohn's theorem on Lucas numbers of the form $2x^2$
 
-Cohn's twice-square-Lucas classification (Keskin–Yosma Theorem 2.1,
-fourth claim): for `0 < n`, `Lₙ = 2x²` forces `n = 6`.
+**Cohn's theorem on Lucas numbers of the form $2x^2$.** Let $L_n$ denote the Lucas numbers,
+with $L_0 = 2$, $L_1 = 1$ and $L_{n+2} = L_{n+1} + L_n$. If $n$ and $x$ are natural numbers
+with $n \ge 1$ and $L_n = 2x^2$, then $n = 6$.
+
+This is the fourth claim of Theorem 2.1 of Keskin and Yosma.
 
 ## Depends on
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Completely Multiplicative
 
-- [Is Completely Multiplicative](is-completely-multiplicative.md)
-- [Map mul](map-mul.md)
-- [Is Multiplicative](is-multiplicative.md)
+- [Completely multiplicative arithmetic function](is-completely-multiplicative.md)
+- [Completely multiplicative functions preserve products](map-mul.md)
+- [Normalized completely multiplicative functions are multiplicative](is-multiplicative.md)

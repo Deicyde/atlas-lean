@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.isRealQuadraticIrrational_of_continuedFractionEventuallyPeriodic
 ---
 
-# Is Real Quadratic Irrational of continued Fraction Eventually Periodic
+# Euler's theorem on periodic continued fractions
 
-Euler direction of the Euler–Lagrange theorem: an eventually periodic
-continued fraction forces real quadratic irrationality.
+**Euler's theorem on periodic continued fractions.** If the continued fraction of a real
+number $x$ is eventually periodic, then $x$ is a real quadratic irrational.
 
 ## Depends on
 
-- [Continued Fraction Eventually Periodic](../lagrange-periodic/continued-fraction-eventually-periodic.md)
-- [Is Real Quadratic Irrational](../lagrange-periodic/is-real-quadratic-irrational.md)
+- [Eventually periodic continued fractions](../lagrange-periodic/continued-fraction-eventually-periodic.md)
+- [Real quadratic irrationals](../lagrange-periodic/is-real-quadratic-irrational.md)
 
 ## Proof depends on
 

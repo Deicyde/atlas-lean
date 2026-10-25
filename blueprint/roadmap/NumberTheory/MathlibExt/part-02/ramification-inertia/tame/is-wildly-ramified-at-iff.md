@@ -7,14 +7,16 @@ proof: formalized
 lean: Algebra.isWildlyRamifiedAt_iff
 ---
 
-# Is Wildly Ramified At iff
+# Wild ramification is the failure of tame ramification
 
-Unfolding of wild ramification as the negation of tame ramification.
+**Wild ramification is the failure of tame ramification.** Let $R$ be a commutative ring,
+$S$ a commutative $R$-algebra and $q$ a prime ideal of $S$. Then $q$ is wildly ramified over $R$
+if and only if $q$ is not tamely ramified over $R$.
 
 ## Depends on
 
 - [Is Tamely Ramified At](is-tamely-ramified-at.md)
-- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+- [Wildly ramified prime](is-wildly-ramified-at.md)
 
 ## Sources
 

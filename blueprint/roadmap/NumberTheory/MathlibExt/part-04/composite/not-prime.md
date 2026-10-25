@@ -7,9 +7,9 @@ proof: formalized
 lean: Nat.IsComposite.not_prime
 ---
 
-# Not prime
+# Composite numbers are not prime
 
-A composite natural number is not prime.
+**Composite numbers are not prime.** A composite natural number is not prime.
 
 ## Depends on
 

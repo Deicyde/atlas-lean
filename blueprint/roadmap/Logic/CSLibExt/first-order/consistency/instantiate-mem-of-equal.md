@@ -6,19 +6,24 @@ proof: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent.instantiate_mem_of_equal
 ---
 
-# Instantiate mem of equal
+# Substitution of equals in maximal consistent sets
 
-Substitution of equals inside a maximal consistent set.
+**Substitution of equals in maximal consistent sets.** Let $\alpha$ be an infinite set of
+variables and let $\Delta$ be a maximal consistent set of formulas with free variables in
+$\alpha$. Let $\varphi(x)$ be a formula with one bound variable $x$ left open, and for a term
+$u$ write $\varphi(u)$ for the result of substituting $u$ for $x$. If $s$ and $t$ are terms
+such that $\Delta$ contains the equation $s = t$ and the formula $\varphi(s)$, then $\Delta$
+contains $\varphi(t)$.
 
 ## Depends on
 
-- [Maximal Consistent](maximal-consistent.md)
-- [Instantiate](../syntax/instantiate.md)
+- [Maximal consistent set](maximal-consistent.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Mem of provable](mem-of-provable.md)
+- [Maximal consistent sets are deductively closed](mem-of-provable.md)
 
 ## Sources
 

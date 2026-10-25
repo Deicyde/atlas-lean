@@ -16,15 +16,15 @@ $\varphi$.
 ## Depends on
 
 - [Reachability in the implication graph](imp-reach.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Proof depends on
 
 - [Implication edge](imp-edge.md)
 - [Complement of a literal](neg.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 
 ## Sources
 

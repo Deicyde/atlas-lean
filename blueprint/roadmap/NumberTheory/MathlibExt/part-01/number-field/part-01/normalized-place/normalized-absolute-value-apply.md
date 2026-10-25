@@ -7,13 +7,16 @@ proof: formalized
 lean: NumberField.FinitePlace.normalizedAbsoluteValue_apply
 ---
 
-# Normalized Absolute Value apply
+# Value of the degree-normalized absolute value at a finite place
 
-Evaluation of the degree-normalized absolute value at a finite place.
+**Value of the degree-normalized absolute value at a finite place.** Let $K$ be a number field
+of degree $d = [K : \mathbb{Q}]$ and let $v$ be a finite place of $K$, with absolute value
+$|\cdot|_v$. For every $x \in K$, the degree-normalized absolute value of $x$ at $v$ equals
+$|x|_v^{1/d}$.
 
 ## Depends on
 
-- [Normalized Absolute Value](normalized-absolute-value.md)
+- [Degree-normalized absolute value at a finite place](normalized-absolute-value.md)
 
 ## Proof depends on
 

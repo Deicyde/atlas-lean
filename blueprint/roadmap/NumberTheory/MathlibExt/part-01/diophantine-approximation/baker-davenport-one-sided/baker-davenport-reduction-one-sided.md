@@ -7,21 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.bakerDavenport_reduction_oneSided
 ---
 
-# Baker Davenport reduction one Sided
+# Baker–Davenport reduction lemma, one-sided form
 
-One-sided Baker–Davenport reduction lemma.
+**Baker–Davenport reduction lemma, one-sided form.** For a real number $x$ write
+$\lVert x \rVert = |x - \operatorname{round}(x)|$ for the distance from $x$ to a nearest integer.
+Let $N$ be a positive integer and $\gamma$ an irrational real number, and let $q$ be the
+denominator of the $j$-th convergent of the continued fraction of $\gamma$ for some natural number
+$j$, with $q > 6N$. Let $A$, $B$, $\mu$ be real numbers with $A > 0$ and $B > 1$. Put
+$\xi = \lVert \mu q \rVert - N \lVert \gamma q \rVert$ and suppose that $\xi > 0$. Then there are
+no positive integers $u$, $v$, $w$ with $u \le N$, $w \ge \log(Aq/\xi) / \log B$ and
+$0 < u\gamma - v + \mu < A B^{-w}$.
+
+Of the hypothesis $q > 6N$ only $q > 0$ is used. The hypotheses that $N > 0$, that $\gamma$ is
+irrational and that $q$ is a convergent denominator, and the positivity of $u$, $v$ and $w$, are
+not needed: the statement follows from the version for an arbitrary positive denominator.
 
 Concept `jis_rank27_baker_davenport_one_sided`, semantic id
 `jis_grounded_3d649f47290c78b9a73677c9`.
-
-Here `|x - round x|` formalizes distance to the nearest integer, and this
-declaration is the one-sided form from the cited lemma: the final linear form
-`(u : ℝ) * γ - (v : ℝ) + μ` appears with one-sided strict inequalities and no
-absolute-value bars.
-It follows from `bakerDavenport_reduction_oneSided_general`. The hypotheses `hN`, `hγ`
-and `hq`, and the positivity conditions on `u`, `v` and `w`, are unused and keep the source's
-shape; `hqN` only supplies `0 < q`.
-Proves `Wanted` entry `bakerDavenport_reduction_oneSided`.
 
 ## Depends on
 
@@ -29,7 +31,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Baker Davenport reduction one Sided general](baker-davenport-reduction-one-sided-gene.md)
+- [Baker–Davenport reduction for an arbitrary denominator, one-sided form](baker-davenport-reduction-one-sided-gene.md)
 
 ## Sources
 

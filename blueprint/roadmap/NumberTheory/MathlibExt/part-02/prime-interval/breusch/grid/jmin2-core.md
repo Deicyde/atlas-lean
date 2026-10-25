@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin2_core
 ---
 
-# Jmin2 core
+# The grid function stays below $2$ on $(10, 657)$
 
-No index `10 ≤ j < 657` has `G j ≥ 2`.
+**The grid function stays below $2$ on $[10, 657)$.** For every natural number $j$ with
+$10 \le j < 657$, the Breusch grid function $G_9$ for $k = 9$ satisfies $G_9(j) < 2$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Sources
 

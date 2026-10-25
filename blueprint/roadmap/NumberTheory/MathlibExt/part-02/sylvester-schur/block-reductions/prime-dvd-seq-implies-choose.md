@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.prime_dvd_seq_implies_choose
 ---
 
-# Prime dvd seq implies choose
+# Prime divisors above $n$ of a block term divide the binomial coefficient
 
-If a prime `n < r` divides `k + j` for some `j < n`, then it divides
-`Nat.choose (k + n - 1) n`.
+**Prime divisors above $n$ of a block term divide the binomial coefficient.** Let $n$, $k$
+and $j$ be natural numbers with $j < n$, and let $r$ be a prime with $r > n$. If $r$ divides
+$k + j$, then $r$ divides $\binom{k+n-1}{n}$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime dvd choose of dvd consecutive](../bridge/prime-dvd-choose-of-dvd-consecutive.md)
+- [Large prime divisors of a block term divide the binomial coefficient](../bridge/prime-dvd-choose-of-dvd-consecutive.md)
 
 ## Sources
 

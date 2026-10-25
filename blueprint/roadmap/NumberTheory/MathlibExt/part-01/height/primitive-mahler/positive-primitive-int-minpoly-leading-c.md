@@ -7,17 +7,19 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_leadingCoeff_pos
 ---
 
-# Positive Primitive Int Minpoly leading Coeff pos
+# The positive primitive integral minimal polynomial has positive leading coefficient
 
-The sign choice gives a strictly positive integral leading coefficient.
+**The positive primitive integral minimal polynomial has positive leading coefficient.** For
+every element $x$ of a field $K$ that is an algebra over $\mathbb{Q}$, the leading coefficient of
+the positive primitive integral minimal polynomial of $x$ is a strictly positive integer.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Absolute](../primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

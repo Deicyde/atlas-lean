@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.ModelTheory.WilkiesConjectureWanted.WilkiesConjecture.IsSemialgebraic
 ---
 
-# Is Semialgebraic
+# Semialgebraic set
 
-A set `X ⊆ ℝⁿ` is called semialgebraic if it is definable in the language of rings over `ℝ`.
+**Semialgebraic set.** A set $X \subseteq \mathbb{R}^n$ is semialgebraic if it is definable,
+with parameters from $\mathbb{R}$, in the real numbers viewed as a structure for the language of
+rings.
 
 ## Depends on
 

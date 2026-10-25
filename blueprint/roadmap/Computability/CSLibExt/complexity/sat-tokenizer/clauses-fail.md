@@ -26,7 +26,7 @@ $\mathsf{rej}$ within $2|r| + n + 2$ steps.
 - [Rejection within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
 - [Decoding a fixed number of clauses](../../cook-levin/decode-clauses.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -47,7 +47,7 @@ $\mathsf{rej}$ within $2|r| + n + 2$ steps.
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [Parsing a self-delimiting block](../../cook-levin/undelimit-eq-some-iff.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
 - [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)

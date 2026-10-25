@@ -33,7 +33,7 @@ the binary clause encoding.
 - [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Length-prefixed binary code of a clause](../../../../cook-levin/encode-clause.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -48,7 +48,7 @@ the binary clause encoding.
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 

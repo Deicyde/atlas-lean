@@ -7,18 +7,19 @@ proof: formalized
 lean: isIntegralFactorialRatio_centralBinom
 ---
 
-# Is Integral Factorial Ratio central Binom
+# The central binomial factorial ratio is integral
 
-Central-binomial example: `[(2)] / [(1), (1)]` is integral, since
-`(n! * n!) ∣ (2 * n)!`.
+**The central binomial factorial ratio is integral.** The tuples $(2)$ and $(1, 1)$ form an
+integral factorial ratio: their entries are positive, their sums agree ($2 = 1 + 1$), and for
+every natural number $n$, $n! \cdot n!$ divides $(2n)!$.
 
 ## Depends on
 
-- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Integral factorial ratio](is-integral-factorial-ratio.md)
 
 ## Proof depends on
 
-- [Factorial Prod](factorial-prod.md)
+- [Product of scaled factorials](factorial-prod.md)
 
 ## Sources
 

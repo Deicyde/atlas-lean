@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.refl
 ---
 
-# Refl
+# Finite equidecomposability by isometries is reflexive
 
-Finite equidecomposability is reflexive.
+**Finite equidecomposability by isometries is reflexive.** Every subset $A$ of a metric
+space $X$ is finitely equidecomposable by isometries with itself.
 
 ## Depends on
 
-- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
+- [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

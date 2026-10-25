@@ -7,15 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.polyBernoulli_negative_symmetric_exponential_generating_function
 ---
 
-# Poly Bernoulli Symmetric Exponential Generating Function
+# Generating function of negative-index poly-Bernoulli numbers
 
-The symmetric bivariate exponential generating function for negative-index poly-Bernoulli
-numbers, identified by their closed formula in terms of Stirling numbers of the second kind.
+**Generating function of negative-index poly-Bernoulli numbers.** For natural numbers $n, k$
+let $B_{n,k} = \sum_{j=0}^{\min(n,k)} (j!)^2 \, S(n+1, j+1) \, S(k+1, j+1)$, where $S$ denotes
+the Stirling numbers of the second kind. Then for all real numbers $x, y$ with
+$(e^{|x|} - 1)(e^{|y|} - 1) < 1$,
 
-Math notes: `hB` is Kaneko's closed formula; `hxy` is the domain
-`(e^|x| - 1)(e^|y| - 1) < 1` of absolute convergence of the double series (all `B n k ≥ 0`).
-The weaker condition `|(e^x - 1)(e^y - 1)| < 1` does not suffice: at `x = -3`,
-`y = log 1.9` the outer series diverges.
+$$\sum_{n=0}^{\infty} \left( \sum_{k=0}^{\infty} B_{n,k} \frac{x^n}{n!} \frac{y^k}{k!} \right) =
+\frac{e^{x+y}}{e^x + e^y - e^{x+y}}.$$
+
+By Kaneko's closed formula, $B_{n,k}$ is the poly-Bernoulli number $B_n^{(-k)}$ of negative
+index. The condition $(e^{|x|} - 1)(e^{|y|} - 1) < 1$ is the domain of absolute convergence of
+the double series (all $B_{n,k} \ge 0$). The weaker condition $|(e^x - 1)(e^y - 1)| < 1$ does
+not suffice: at $x = -3$, $y = \log 1.9$ the outer series diverges.
 
 Proof: The Stirling EGF is derived from the finite-difference formula, then absolute convergence
 permits a Fubini rearrangement and a geometric-series sum, following Hamahata–Masubuchi,

@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.selbergConstant_le_half
 ---
 
-# Selberg Constant le half
+# Selberg's constant is at most one half
 
-Elementary upper bound from the definition: `C₆₁ ≤ 1/2`.
+**Selberg's constant is at most one half.** Selberg's constant $C_{61}$ satisfies
+$C_{61} \le 1/2$.
+
+This elementary bound follows directly from the definition.
 
 ## Depends on
 
-- [Selberg Constant](selberg-constant.md)
+- [Selberg's congruence spectral-gap constant](selberg-constant.md)
 
 ## Proof depends on
 
-- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Congruence subgroup of the modular group](is-congruence-subgroup.md)
 - [Is Eigenvalue](is-eigenvalue.md)
-- [Exceptional Gap](exceptional-gap.md)
-- [Exceptional Gaps](exceptional-gaps.md)
-- [Is Congruence Subgroup top](is-congruence-subgroup-top.md)
+- [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
+- [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
+- [The modular group is a congruence subgroup](is-congruence-subgroup-top.md)
 
 ## Sources
 

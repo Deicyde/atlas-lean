@@ -6,44 +6,44 @@ navigation: module
 
 ## Free variables and depth of instances
 
-- [Free Var Finset instantiate subset](free-var-finset-instantiate-subset.md)
-- [Depth](depth.md)
+- [Free variables of an instance](free-var-finset-instantiate-subset.md)
+- [Depth of a formula](depth.md)
 
 ## Renaming along arbitrary maps
 
-- [Rename congr of eq On](rename-congr-of-eq-on.md)
-- [Relabel of infinite](relabel-of-infinite.md)
-- [Relabel double](relabel-double.md)
+- [Renaming depends only on the free variables](rename-congr-of-eq-on.md)
+- [Renaming free variables along an arbitrary map preserves derivability](relabel-of-infinite.md)
+- [Doubling the variables preserves consistency](relabel-double.md)
 
 ## Congruence in a maximal consistent set
 
-- [Update chain](update-chain.md)
-- [Func update](func-update.md)
-- [Rel update](rel-update.md)
+- [Replacing arguments one at a time](update-chain.md)
+- [Congruence for function symbols in a maximal consistent set](func-update.md)
+- [Replacing an argument of a relation symbol by an equal term](rel-update.md)
 
 ## The term model
 
-- [Term Structure](term-structure.md)
-- [Term Setoid](term-setoid.md)
-- [Term Model](term-model.md)
-- [Term Assignment](term-assignment.md)
-- [Lower Term](lower-term.md)
-- [Truth lemma](realize-term-model-iff.md)
+- [Term structure of a set of formulas](term-structure.md)
+- [Provable equality of terms](term-setoid.md)
+- [Term model of a maximal consistent set](term-model.md)
+- [Canonical assignment of the term model](term-assignment.md)
+- [Lowering a term with no bound variables](lower-term.md)
+- [Truth lemma for the first-order term model](realize-term-model-iff.md)
 
 ## The Henkin extension
 
-- [Enum Body](enum-body.md)
-- [Var Bound](var-bound.md)
-- [Witness Base](witness-base.md)
-- [Witness](witness.md)
-- [Henkin Axiom At](henkin-axiom-at.md)
-- [Henkin Stage](henkin-stage.md)
-- [Henkin Set](henkin-set.md)
-- [Exists maximal Consistent henkin](exists-maximal-consistent-henkin.md)
+- [Enumeration of formulas with one bound variable](enum-body.md)
+- [Variable bound of a formula](var-bound.md)
+- [Witness bases](witness-base.md)
+- [Henkin witnesses](witness.md)
+- [The $k$-th Henkin axiom](henkin-axiom-at.md)
+- [Stages of the Henkin extension](henkin-stage.md)
+- [Henkin extension](henkin-set.md)
+- [Henkin extension of a consistent set](exists-maximal-consistent-henkin.md)
 
 ## Model existence and completeness
 
-- [Model existence](exists-model-of-consistent.md)
-- [Strong completeness](provable-of-entails.md)
-- [Completeness](provable-of-models.md)
-- [Soundness and completeness](provable-iff-models.md)
+- [Model existence for first-order logic](exists-model-of-consistent.md)
+- [Strong completeness of first-order natural deduction](provable-of-entails.md)
+- [Completeness of first-order natural deduction for theories](provable-of-models.md)
+- [Soundness and completeness of first-order natural deduction](provable-iff-models.md)

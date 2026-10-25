@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.theta34_nat
 ---
 
-# Theta34 nat
+# Primorial bound by powers of 3.4, integer form
 
-Integer primorial bound `10 ^ m * primorial m ≤ 34 ^ m`.
+**Primorial bound by powers of 3.4, integer form.** For every natural number $m$, the
+primorial $m\#$ (the product of all primes $p \le m$) satisfies $10^m \cdot m\# \le 34^m$.
 
 ## Depends on
 
@@ -17,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [M34](m34.md)
-- [M34 bound](m34-bound.md)
-- [Theta34 base](theta34-base.md)
-- [Theta le M34](theta-le-m34.md)
+- [The multinomial coefficient $M(t)$ for the 3.4 primorial bound](m34.md)
+- [Power bound for the multinomial coefficient $M(t)$](m34-bound.md)
+- [Primorial bound $3.4^m$ below $133$](theta34-base.md)
+- [Splitting the primorial with a multinomial coefficient](theta-le-m34.md)
 
 ## Sources
 

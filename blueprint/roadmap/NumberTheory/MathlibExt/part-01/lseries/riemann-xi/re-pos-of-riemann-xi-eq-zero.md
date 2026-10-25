@@ -7,18 +7,19 @@ proof: formalized
 lean: RiemannXi.re_pos_of_riemannXi_eq_zero
 ---
 
-# Re pos of riemann Xi eq zero
+# Zeros of the xi function have positive real part
 
-Every zero of `ξ` has strictly positive real part.
+**Zeros of the xi function have positive real part.** Let $\xi$ be the Riemann xi
+function. If $s$ is a complex number with $\xi(s) = 0$, then $\operatorname{Re}(s) > 0$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Proof depends on
 
-- [Riemann Xi ne zero of one le re](riemann-xi-ne-zero-of-one-le-re.md)
-- [Riemann Xi one sub](riemann-xi-one-sub.md)
+- [The xi function has no zeros with real part at least one](riemann-xi-ne-zero-of-one-le-re.md)
+- [Functional equation of the Riemann xi function](riemann-xi-one-sub.md)
 
 ## Sources
 

@@ -6,16 +6,18 @@ statement: formalized
 lean: NumberField.TopologicalIdeleGroup.normOneIdeles
 ---
 
-# Norm One Ideles
+# Norm-one ideles
 
-Norm-one ideles: kernel of the adelic norm.
+**Norm-one ideles.** Let $K$ be a number field. The norm-one ideles of $K$ form the kernel of
+the adelic norm, the subgroup of the topological idele group of $K$ (with $R = \mathcal{O}_K$)
+consisting of the ideles whose adelic norm is $1$.
 
 ## Depends on
 
-- [Finite Idele Group](../idele/finite-idele-group.md)
-- [Infinite Idele Group](../idele/infinite-idele-group.md)
-- [Topological Idele Group](../idele/topological-idele-group.md)
-- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
+- [Finite idele group](../idele/finite-idele-group.md)
+- [Infinite idele group](../idele/infinite-idele-group.md)
+- [Topological idele group](../idele/topological-idele-group.md)
+- [Local integral unit subgroup](../idele/local-integral-unit-subgroup.md)
 
 ## Proof depends on
 

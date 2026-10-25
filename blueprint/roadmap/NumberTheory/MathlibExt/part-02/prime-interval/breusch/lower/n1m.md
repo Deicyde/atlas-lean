@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N1m
 ---
 
-# N1m
+# Scaled factorial argument $N_1$
 
-Scaled factorial argument `n * (Q9 / m)`.
+**Scaled factorial argument $N_1$.** Let $Q_9 = 2 \cdot 3 \cdot 5 \cdot 7 = 210$. For natural
+numbers $m$ and $n$, $N_1(m, n)$ is the natural number $n \lfloor Q_9 / m \rfloor$, where
+$\lfloor Q_9 / 0 \rfloor$ is taken to be $0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q9](../grid/q9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

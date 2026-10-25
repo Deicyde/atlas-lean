@@ -7,22 +7,26 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.isAsymptoticDobrowolskiCoefficient_iff
 ---
 
-# Is Asymptotic Dobrowolski Coefficient iff
+# Coefficients are exactly the reals below the constant
 
-Epsilon slack closes the admissible set: a real coefficient is admissible exactly when
-it is below the extended-real supremum. This also covers an unbounded admissible set.
+**Coefficients are exactly the reals below the constant.** A real number $c$ is an asymptotic
+Dobrowolski coefficient if and only if $c$ is at most the asymptotic Dobrowolski constant, as
+extended real numbers.
+
+The $\varepsilon$ in the definition makes the set of coefficients closed, so a finite constant is
+itself a coefficient; this also covers the case where the coefficients are unbounded above.
 
 ## Depends on
 
-- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
-- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+- [Asymptotic Dobrowolski coefficients](is-asymptotic-dobrowolski-coefficient.md)
+- [Asymptotic Dobrowolski constant](asymptotic-dobrowolski-constant.md)
 
 ## Proof depends on
 
-- [Coe le asymptotic Dobrowolski Constant](coe-le-asymptotic-dobrowolski-constant.md)
-- [Dobrowolski Scale](dobrowolski-scale.md)
-- [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
-- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
+- [Coefficients are bounded by the asymptotic Dobrowolski constant](coe-le-asymptotic-dobrowolski-constant.md)
+- [Dobrowolski scale](dobrowolski-scale.md)
+- [Positivity of the Dobrowolski scale](dobrowolski-scale-pos.md)
+- [Algebraic Mahler measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

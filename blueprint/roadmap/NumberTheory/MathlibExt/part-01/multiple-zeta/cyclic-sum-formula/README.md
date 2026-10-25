@@ -7,13 +7,13 @@ navigation: module
 
 ## Cyclic Sum Formula
 
-- [To Index](to-index.md)
-- [Left Index](left-index.md)
-- [Right Index](right-index.md)
-- [Left Index is Admissible Or Empty](left-index-is-admissible-or-empty.md)
-- [Right Index is Admissible Or Empty](right-index-is-admissible-or-empty.md)
+- [The index of a list of positive integers](to-index.md)
+- [Left-hand indices of the cyclic sum formula](left-index.md)
+- [Right-hand indices of the cyclic sum formula](right-index.md)
+- [Left-hand indices of the cyclic sum formula are admissible or empty](left-index-is-admissible-or-empty.md)
+- [Right-hand indices of the cyclic sum formula are admissible or empty](right-index-is-admissible-or-empty.md)
 
 ## Meta Mathlib Ext
 
-- [Hoffman ohno cyclic sum formula strict](hoffman-ohno-cyclic-sum-formula-strict.md)
-- [Hoffman ohno cyclic sum formula](hoffman-ohno-cyclic-sum-formula.md)
+- [Cyclic sum formula for strict multiple zeta values of indices](hoffman-ohno-cyclic-sum-formula-strict.md)
+- [Cyclic sum formula (Hoffman–Ohno)](hoffman-ohno-cyclic-sum-formula.md)

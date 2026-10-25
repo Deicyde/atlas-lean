@@ -6,22 +6,27 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.satCountFrom_eq_countModels
 ---
 
-# Sat Count From eq count Models
+# The satisfy-count from a variable counts models
 
-Enumerating the variables `n, …, m - 1` counts what `satCountFrom` computes.
+**The satisfy-count from a variable counts models.** Let $m$ and $n$ be natural numbers and
+$t$ a diagram ordered from $n$ (every tested variable is at least $n$, and tested variables
+strictly increase along every path) in which every tested variable is below $m$. Then for every
+assignment $\sigma$, the one-pass satisfy-count $c_m(n, t)$ of $t$ from $n$ with bound $m$ equals
+the model count of the function $\tau \mapsto t(\tau)$ over the variables $n, n + 1, \dots, m - 1$
+from $\sigma$ (no variables when $m \le n$), where $t(\tau)$ is the value of $t$ under $\tau$.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Ordered From](../basic/ordered-from.md)
-- [Vars LT](vars-lt.md)
-- [Count Models](count-models.md)
-- [Eval](../basic/eval.md)
-- [Sat Count From](sat-count-from.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Variables below a bound](vars-lt.md)
+- [Model count by enumeration](count-models.md)
+- [Evaluation of a binary decision diagram](../basic/eval.md)
+- [One-pass satisfy-count from a variable](sat-count-from.md)
 
 ## Proof depends on
 
-- [Count Models congr](count-models-congr.md)
+- [Congruence for the model count](count-models-congr.md)
 
 ## Sources
 

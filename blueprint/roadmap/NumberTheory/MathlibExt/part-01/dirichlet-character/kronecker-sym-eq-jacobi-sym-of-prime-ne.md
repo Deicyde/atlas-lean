@@ -7,21 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.kroneckerSym_eq_jacobiSym_of_prime_ne_two
 ---
 
-# Quadratic Character Aux
+# Kronecker and Jacobi symbols agree at odd primes
 
-Unconditional step reused by every branch: at an odd prime `p`,
-the Kronecker symbol is the Jacobi symbol. Depends on neither `hpos`
-nor `h1`.
+**Kronecker and Jacobi symbols agree at odd primes.** For every integer $D$ and every prime
+$p \ne 2$, the Kronecker symbol $\left(\frac{D}{p}\right)$ equals the Jacobi symbol
+$\left(\frac{D}{p}\right)$.
 
 ## Depends on
 
-- [Kronecker Sym](quadratic/kronecker-sym.md)
+- [Kronecker symbol](quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
-- [Kronecker At Two](quadratic/kronecker-at-two.md)
-- [Kronecker Sym prime](quadratic/kronecker-sym-prime.md)
+- [Kronecker symbol at a prime](quadratic/kronecker-at-prime.md)
+- [Kronecker symbol at two](quadratic/kronecker-at-two.md)
+- [Kronecker symbol with a prime denominator](quadratic/kronecker-sym-prime.md)
 
 ## Sources
 

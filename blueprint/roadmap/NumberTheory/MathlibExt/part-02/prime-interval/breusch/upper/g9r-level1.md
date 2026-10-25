@@ -13,17 +13,17 @@ Level `G9r ≥ 1` forces `x ≥ 279 / 18900`.
 
 ## Depends on
 
-- [G9r](g9r.md)
-- [Q9](../grid/q9.md)
+- [Continuous Breusch function](g9r.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [G9](../grid/g9.md)
-- [G9 eq mod](g9-eq-mod.md)
-- [G9 zero9](g9-zero9.md)
-- [G9r eq grid](g9r-eq-grid.md)
-- [Q9 eq](../lower/q9-eq.md)
-- [Jmin1](../grid/jmin1.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
+- [$G_9$ depends only on the residue modulo $18900$](g9-eq-mod.md)
+- [The Breusch grid function vanishes below 9](g9-zero9.md)
+- [The continuous Breusch function agrees with the grid function](g9r-eq-grid.md)
+- [Value of Q₉](../lower/q9-eq.md)
+- [First index from $10$ where the grid function reaches $1$](../grid/jmin1.md)
 
 ## Sources
 

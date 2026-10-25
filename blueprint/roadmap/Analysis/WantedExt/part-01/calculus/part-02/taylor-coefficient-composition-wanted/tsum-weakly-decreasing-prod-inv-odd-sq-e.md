@@ -23,7 +23,7 @@ $(\pi/4)\,\beta(1) = \pi^2/16$, and at $k = 1$ it is $\pi^2/8$ but $(\pi/4)\,\be
 
 ## Depends on
 
-- [Weakly Decreasing Tuple](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/weakly-decreasing-tuple.md)
+- [Weakly decreasing tuples](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/weakly-decreasing-tuple.md)
 
 ## Sources
 

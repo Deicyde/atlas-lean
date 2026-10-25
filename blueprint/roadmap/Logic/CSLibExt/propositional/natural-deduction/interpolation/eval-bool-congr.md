@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.evalBool_congr
 ---
 
-# Eval Bool congr
+# The truth value depends only on the atoms
 
-The truth value of `A` depends only on the valuation of its atoms.
+**The truth value depends only on the atoms.** If two Boolean valuations $v$ and $w$ agree on
+every atom of a proposition $A$, then $A$ has the same truth-table value under $v$ as under
+$w$.
 
 ## Depends on
 
-- [Atoms](atoms.md)
-- [Eval Bool](../semantics/eval-bool.md)
+- [Atoms of a proposition](atoms.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Sources
 

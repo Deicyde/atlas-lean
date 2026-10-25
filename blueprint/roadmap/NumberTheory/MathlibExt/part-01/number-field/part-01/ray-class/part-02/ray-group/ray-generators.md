@@ -6,20 +6,23 @@ statement: formalized
 lean: NumberField.Modulus.rayGenerators
 ---
 
-# Ray Generators
+# Generators of the ray group
 
-Principal generators coming from elements congruent to `1` mod `m`.
+**Generators of the ray group.** Let $\mathfrak m$ be a modulus of a number field $K$. The ray
+generators of $\mathfrak m$ are the fractional ideals coprime to $\mathfrak m$ of the form $(x)$,
+the principal fractional ideal of an element $x \in K^\times$ that is congruent to $1$ modulo
+$\mathfrak m$.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](coprime-fractional-ideals.md)
 
 ## Proof depends on
 
-- [Congruent One At Finite Part](congruent-one-at-finite-part.md)
-- [Is Ray Element One](is-ray-element-one.md)
-- [Positive At Infinite Part](positive-at-infinite-part.md)
-- [Ray Elements](ray-elements.md)
+- [Multiplicative congruence to one at the finite part](congruent-one-at-finite-part.md)
+- [Elements congruent to one modulo a modulus](is-ray-element-one.md)
+- [Positivity at the infinite part of a modulus](positive-at-infinite-part.md)
+- [Elements coprime to a modulus](ray-elements.md)
 
 ## Sources
 

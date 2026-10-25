@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Logic.FOL.Derivable.rename
 ---
 
-# Rename
+# Injective renaming preserves derivability
 
-Derivations survive an injective renaming of free variables (stated with `FOL.rename`,
-which is Mathlib's `Formula.relabel` on formulas by `formula_relabel_eq_rename`; see
-`Derivable.relabel`).
+**Injective renaming preserves derivability.** Let $f \colon \alpha \to \beta$ be an
+injective map between types of variables. For a formula $\psi$ of a first-order language $L$
+with free variables in $\alpha$, write $f(\psi)$ for the renaming of the free variables of
+$\psi$ by $f$, and for a finite list $\Gamma$ of such formulas write $f(\Gamma)$ for the list
+obtained by renaming each member of $\Gamma$. If $\Gamma$ is such a list, $\varphi$ is such a
+formula and $\Gamma \vdash \varphi$ in natural deduction, then $f(\Gamma) \vdash f(\varphi)$.
+
+On formulas this renaming coincides with Mathlib's relabeling of free variables.
 
 ## Depends on
 
 - [Natural deduction](derivable.md)
-- [Rename](../syntax/rename.md)
+- [Renaming free variables of a formula](../syntax/rename.md)
 
 ## Proof depends on
 
-- [Free Var Finset rename](../syntax/free-var-finset-rename.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Instantiate Term](../syntax/instantiate-term.md)
-- [Rename Term](../syntax/rename-term.md)
+- [Free variables of a renamed formula](../syntax/free-var-finset-rename.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
+- [Instantiating the outermost bound variable of a term](../syntax/instantiate-term.md)
+- [Renaming free variables of a term](../syntax/rename-term.md)
 
 ## Sources
 

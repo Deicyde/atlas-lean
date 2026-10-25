@@ -5,8 +5,8 @@ navigation: module
 
 # Intermediate Field
 
-- [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)
-- [Intermediate Field Of Finrank](intermediate-field-of-finrank.md)
-- [Eq intermediate Field Of Finrank iff](eq-intermediate-field-of-finrank-iff.md)
-- [Sup eq top of lcm eq](sup-eq-top-of-lcm-eq.md)
-- [Inf ne bot of lt of lcm eq](inf-ne-bot-of-lt-of-lcm-eq.md)
+- [Unique subfield of each degree in the $p$-th cyclotomic field](exists-unique-intermediate-field-finrank.md)
+- [The degree-$s$ subfield of the $p$-th cyclotomic field](intermediate-field-of-finrank.md)
+- [Characterization of the degree-$s$ subfield of the $p$-th cyclotomic field](eq-intermediate-field-of-finrank-iff.md)
+- [Two cyclotomic subfields whose levels have lcm $m$ generate the $m$-th cyclotomic field](sup-eq-top-of-lcm-eq.md)
+- [A field strictly above one cyclotomic subfield meets the other](inf-ne-bot-of-lt-of-lcm-eq.md)

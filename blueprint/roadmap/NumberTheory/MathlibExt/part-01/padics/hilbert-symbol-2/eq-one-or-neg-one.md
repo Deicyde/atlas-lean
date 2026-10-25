@@ -7,17 +7,18 @@ proof: formalized
 lean: hilbertSymbol.eq_one_or_neg_one
 ---
 
-# Eq one or neg one
+# The Hilbert symbol of a field is $\pm 1$
 
-The Hilbert symbol takes only the values one and negative one.
+**The Hilbert symbol of a field is $\pm 1$.** For every field $F$ and all nonzero
+$a, b \in F$, the Hilbert symbol $(a, b)_F$ of $a$ and $b$ over $F$ equals $1$ or $-1$.
 
 ## Depends on
 
-- [Hilbert Symbol](hilbert-symbol.md)
+- [Hilbert symbol of a field](hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Is Solvable](is-solvable.md)
+- [Solvability of $ax^2 + by^2 = 1$](is-solvable.md)
 
 ## Sources
 

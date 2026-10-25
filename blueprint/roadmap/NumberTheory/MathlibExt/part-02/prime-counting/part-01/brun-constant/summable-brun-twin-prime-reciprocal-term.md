@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.summable_brunTwinPrimeReciprocalTerm
 ---
 
-# Summable brun Twin Prime Reciprocal Term
+# Summability of the twin-prime reciprocal terms
 
-The twin-prime reciprocal terms are summable.
+**Summability of the twin-prime reciprocal terms.** For a natural number $p$, let $t(p)$ be
+$\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime and $0$ otherwise. Then the
+series $\sum_{p \ge 0} t(p)$ converges unconditionally in $\mathbb{R}$.
 
 ## Depends on
 
-- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
+- [Twin-prime reciprocal term](brun-twin-prime-reciprocal-term.md)
 
 ## Proof depends on
 
-- [Brun Twin Prime Reciprocals](../brun-twin-prime-reciprocal-series-summab.md)
+- [Brun's theorem on twin primes](../brun-twin-prime-reciprocal-series-summab.md)
 
 ## Sources
 

@@ -6,21 +6,25 @@ statement: formalized
 lean: NumberField.TopologicalIdeleGroup.principalEmbedding
 ---
 
-# Principal Embedding
+# Diagonal map into the ideles
 
-The diagonal embedding of global units as principal ideles.
+**Diagonal map into the ideles.** Let $R$ be a Dedekind domain with fraction field $K$. This
+is the group homomorphism from $K^\times$ to the topological idele group of $R$ and $K$ whose
+infinite component sends $x$ to its images in the completions of $K$ at all infinite places of
+$K$, and whose finite component sends $x$ to its images in the $v$-adic completions $K_v$ of $K$
+at all height-one primes $v$ of $R$.
 
 ## Depends on
 
-- [Finite Idele Group](finite-idele-group.md)
-- [Infinite Idele Group](infinite-idele-group.md)
-- [Topological Idele Group](topological-idele-group.md)
-- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+- [Finite idele group](finite-idele-group.md)
+- [Infinite idele group](infinite-idele-group.md)
+- [Topological idele group](topological-idele-group.md)
+- [Local integral unit subgroup](local-integral-unit-subgroup.md)
 
 ## Proof depends on
 
-- [Finite Principal Embedding](finite-principal-embedding.md)
-- [Infinite Principal Embedding](infinite-principal-embedding.md)
+- [Diagonal map into the finite ideles](finite-principal-embedding.md)
+- [Diagonal map into the infinite ideles](infinite-principal-embedding.md)
 
 ## Sources
 

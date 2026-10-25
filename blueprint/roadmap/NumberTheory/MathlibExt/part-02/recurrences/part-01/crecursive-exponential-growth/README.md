@@ -5,5 +5,5 @@ navigation: module
 
 # CRecursive Exponential Growth
 
-- [Exists norm lt pow of is Solution](exists-norm-lt-pow-of-is-solution.md)
-- [C recursive exponential growth bound](c-recursive-exponential-growth-bound.md)
+- [Exponential growth bound for solutions of linear recurrences](exists-norm-lt-pow-of-is-solution.md)
+- [Exponential growth bound for C-recursive sequences](c-recursive-exponential-growth-bound.md)

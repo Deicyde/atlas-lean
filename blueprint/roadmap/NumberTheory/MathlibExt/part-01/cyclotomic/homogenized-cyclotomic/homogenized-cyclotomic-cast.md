@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic_cast
 ---
 
-# Homogenized Cyclotomic cast
+# Homogenized cyclotomic value in a field
 
-For `b ≠ 0` in a field, `Φ_n(a, b) = b ^ φ(n) Φ_n(a / b)`.
+**Homogenized cyclotomic value in a field.** Let $K$ be a field, $n$ a natural number and
+$a, b$ integers such that the image of $b$ in $K$ is nonzero. Then the image in $K$ of the
+homogenized cyclotomic value $\Phi_n(a, b)$ equals $b^{\varphi(n)} \Phi_n(a/b)$, where $\Phi_n$
+is the $n$-th cyclotomic polynomial over $K$, $\varphi$ is Euler's totient function, and $b$
+and $a/b$ are computed in $K$.
 
 ## Depends on
 
-- [Homogenized Cyclotomic](homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](homogenized-cyclotomic.md)
 
 ## Sources
 

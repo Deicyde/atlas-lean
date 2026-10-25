@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Logic.FOL.Provable
 ---
 
-# Provable
+# Provability from a set of formulas
 
-`T` proves `φ`: some finite list of members of `T` derives `φ`.
+**Provability from a set of formulas.** A set $T$ of formulas of a first-order language $L$
+with free variables in $\alpha$ proves such a formula $\varphi$ when there is a finite list
+$\Gamma$ of members of $T$ with $\Gamma \vdash \varphi$ in natural deduction.
 
 ## Depends on
 

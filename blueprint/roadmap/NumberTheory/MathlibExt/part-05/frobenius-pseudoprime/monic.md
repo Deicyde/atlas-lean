@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsFrobeniusProbablePrime.monic
 ---
 
-# Monic
+# Frobenius probable primes use monic polynomials
 
-A Frobenius probable prime uses a monic parameter polynomial.
+**Frobenius probable primes use monic polynomials.** If $n$ is a Frobenius probable prime
+with respect to a polynomial $f \in \mathbb{Z}[x]$, then $f$ is monic.
 
 ## Depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
 
 ## Proof depends on
 
-- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
+- [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

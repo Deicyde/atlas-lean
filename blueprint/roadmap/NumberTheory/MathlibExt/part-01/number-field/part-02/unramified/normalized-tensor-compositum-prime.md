@@ -6,25 +6,20 @@ statement: formalized
 lean: NumberField.IsUnramifiedIn.normalizedTensorCompositumPrime
 ---
 
-# Normalized Tensor Compositum Prime
+# The contracted maximal prime of the normalized tensor algebra
 
-Contracted maximal prime: the correct prime of the normalized tensor algebra
-at which to localize to obtain the local factor `Localization.AtPrime Q`.
+**The contracted maximal prime of the normalized tensor algebra.** Let $L$ be a number field,
+let $E$ and $F$ be intermediate fields of $L/\mathbb{Q}$ with compositum $EF$, let $p$ be a prime
+ideal of $\mathbb{Z}$ that is unramified in $\mathcal{O}_F$, and let $Q$ be a prime ideal of
+$\mathcal{O}_{EF}$ lying over $p$. Write $R = \mathbb{Z}_{(p)}$, let $S_F$ be the localization of
+$\mathcal{O}_F$ at the image of $\mathbb{Z} \setminus p$, let $C$ be the integral closure of $S_F$
+in $S_F \otimes_R \operatorname{Frac}(\mathcal{O}_E)$, let $T = (\mathcal{O}_{EF})_Q$ be the
+localization of $\mathcal{O}_{EF}$ at $Q$, and let $g \colon C \to T$ be the normalized tensor map
+to the compositum at $Q$. The contracted maximal prime is the ideal $g^{-1}(\mathfrak{m}_T)$ of
+$C$, where $\mathfrak{m}_T$ is the maximal ideal of the local ring $T$.
 
-Let `g := normalizedTensorToCompositumAtPrime E F p h Q` and
-`T := Localization.AtPrime Q`. This is the comap of the maximal ideal of the
-local ring `T` under `g`. It contains the prime kernel of `g` (see
-`normalizedTensorToCompositumAtPrime_ker_le`), but it is in general strictly
-larger: for a nonzero prime below `Q`, a nonzero uniformizer lies outside
-`RingHom.ker g` yet maps to a nonunit of `T`.
-
-This is a named alternative-normalization prerequisite stage for the missing
-`cyclotomic_ramIdx_eq_of_unramified` and
-[`baseChange_ramificationIdx_eq_one`, lines 1549--1586](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/AnalyticClassNumber.lean#L1549-L1586)
-in the primary Lean source for ATLAS `NumberTheoryI` target N390,
-Proposition 19.14. It does not prove
-compositum unramifiedness, any `IsLocalization` identification, or the final
-maximality theorem.
+It contains the kernel of $g$, and is in general strictly larger. It is intended as the prime of
+$C$ at which to localize in order to recover the local factor $T$.
 
 ## Depends on
 
@@ -32,8 +27,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
+- [Map from the normalized tensor algebra to the local ring of the compositum](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Unramified](../../../../../../../sources/v2/MathlibExt.md)
+- prerequisite stage for `cyclotomic_ramIdx_eq_of_unramified` and `baseChange_ramificationIdx_eq_one` in the primary Lean source for ATLAS `NumberTheoryI` target N390, Proposition 19.14; the identification of this localization with the local factor $T$, compositum unramifiedness and the maximality theorem are not proved here.

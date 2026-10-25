@@ -7,20 +7,19 @@ proof: formalized
 lean: Rat.Place.denseRange_embedding
 ---
 
-# Dense Range embedding
+# The rationals are dense in each completion
 
-The image of `ℚ` is dense in each completed field `ℚ_v`.
-
-Uses `Rat.denseRange_cast (𝕜 := ℝ)` at infinity and
-`Padic.denseRange_ratCast p` under the local `Fact` at finite primes.
+**The rationals are dense in each completion.** For every place $v$ of $\mathbb{Q}$, with
+completed field $\mathbb{Q}_v$, the image of $\mathbb{Q}$ under the canonical embedding
+$\mathbb{Q} \to \mathbb{Q}_v$ is dense in $\mathbb{Q}_v$.
 
 ## Depends on
 
-- [Place](place.md)
-- [Completed Field](completed-field.md)
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Bundle](bundle.md)
-- [Embedding](embedding.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Completed field at a rational place](completed-field.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Bundled completed field at a rational place](bundle.md)
+- [Embedding of the rationals into a completion](embedding.md)
 
 ## Sources
 

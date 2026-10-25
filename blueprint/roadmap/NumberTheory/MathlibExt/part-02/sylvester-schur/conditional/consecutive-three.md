@@ -7,9 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_three
 ---
 
-# Consecutive three
+# Sylvester–Schur theorem for three consecutive integers
 
-The consecutive theorem for blocks of length three.
+**Sylvester–Schur theorem for three consecutive integers.** For every natural number
+$k > 3$, one of the three integers $k$, $k + 1$, $k + 2$ is divisible by a prime $p > 3$.
 
 ## Depends on
 

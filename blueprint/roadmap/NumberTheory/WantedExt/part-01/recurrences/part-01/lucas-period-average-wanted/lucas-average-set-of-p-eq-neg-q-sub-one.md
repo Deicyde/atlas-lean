@@ -17,7 +17,7 @@ for all `W(b - 1, b)`. In the repository convention `a = b - 1` is `P = -Q - 1`;
 
 ## Depends on
 
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas All Averages Integral](lucas-all-averages-integral.md)
 - [Lucas Average Set](lucas-average-set.md)

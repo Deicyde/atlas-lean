@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.eisenstein_lemma_jacobi_symbol
 ---
 
-# Eisenstein lemma jacobi symbol
+# Eisenstein's lemma for Jacobi symbols
 
-Eisenstein's lemma for Jacobi symbols.
+**Eisenstein's lemma for Jacobi symbols.** Let $a$ and $b$ be positive odd natural numbers that
+are coprime. Then the Jacobi symbol $\left(\frac{a}{b}\right)$ equals $(-1)^{S}$, where
+$S = \sum_{i=1}^{(b-1)/2} \lfloor ia/b \rfloor$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eisenstein lemma jacobi symbol general](eisenstein-lemma-jacobi-symbol-general.md)
+- [Eisenstein's lemma for Jacobi symbols (odd coprime form)](eisenstein-lemma-jacobi-symbol-general.md)
 
 ## Sources
 

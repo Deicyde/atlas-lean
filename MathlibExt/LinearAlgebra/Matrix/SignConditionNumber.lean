@@ -20,7 +20,9 @@ public import Mathlib.Data.Finset.Lattice.Fold
 
 namespace Matrix.SignConditionNumber
 
-/-- Finite encoding of all square sign matrices of order `n`. -/
+/-- **Boolean encoding of sign matrices.** For a natural number $n$, a sign matrix of order $n$ is
+encoded as an $n \times n$ matrix with entries in the Booleans $\{\mathrm{true}, \mathrm{false}\}$,
+whose rows and columns are indexed by $\{0, \dots, n - 1\}$. -/
 abbrev SignMatrix (n : ℕ) := Matrix (Fin n) (Fin n) Bool
 
 /-- **Real sign matrix of a Boolean matrix.** The realization of a Boolean $n \times n$ matrix $A$

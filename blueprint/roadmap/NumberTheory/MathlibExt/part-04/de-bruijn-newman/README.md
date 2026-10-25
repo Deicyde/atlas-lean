@@ -5,8 +5,8 @@ navigation: module
 
 # De Bruijn Newman
 
-- [Phi Term](phi-term.md)
-- [Phi](phi.md)
-- [H](h.md)
-- [Zeros All Real](zeros-all-real.md)
-- [De Bruijn Newman Constant](de-bruijn-newman-constant.md)
+- [Summands of Newman's kernel](phi-term.md)
+- [Newman's kernel](phi.md)
+- [The de Bruijn–Newman deformation](h.md)
+- [Real-rootedness of the de Bruijn–Newman deformation](zeros-all-real.md)
+- [The de Bruijn–Newman constant](de-bruijn-newman-constant.md)

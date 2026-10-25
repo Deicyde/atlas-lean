@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.chain_cover
 ---
 
-# Chain cover
+# Primes in $(X, 9X/8)$ for $53 \le X < 9820997$
 
-The chain covers `[53, 9820997)` with ratio `9 / 8`.
+**Primes in $(X, 9X/8)$ for $53 \le X < 9820997$.** For every real number $X$ with
+$53 \le X < 9820997$ there is a prime $p$ with $X < p < \frac{9}{8}X$.
 
 ## Depends on
 
@@ -17,12 +18,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bracket](bracket.md)
-- [Chain](chain.md)
-- [Chain prime](chain-prime.md)
-- [Chain ratio](chain-ratio.md)
-- [Chain sorted](chain-sorted.md)
-- [Zip mem of consec](zip-mem-of-consec.md)
+- [Bracketing a real number in an increasing list](bracket.md)
+- [Breusch's prime chain](chain.md)
+- [Entries of Breusch's prime chain are prime](chain-prime.md)
+- [Consecutive entries of Breusch's prime chain are within a factor $9/8$](chain-ratio.md)
+- [Breusch's prime chain is strictly increasing](chain-sorted.md)
+- [Adjacent entries form a consecutive pair](zip-mem-of-consec.md)
 
 ## Sources
 

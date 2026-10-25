@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.exceptionalGap_le_selbergConstant
 ---
 
-# Exceptional Gap le selberg Constant
+# Congruence gaps are bounded by Selberg's constant
 
-The gap of any congruence subgroup is at most Selberg's constant.
+**Congruence gaps are bounded by Selberg's constant.** For every congruence subgroup
+$\Gamma$ of $\mathrm{SL}(2, \mathbb{Z})$, the gap parameter $\theta(\Gamma)$ is at most the
+Selberg constant $C_{61}$.
 
 ## Depends on
 
-- [Is Congruence Subgroup](is-congruence-subgroup.md)
-- [Exceptional Gap](exceptional-gap.md)
-- [Selberg Constant](selberg-constant.md)
+- [Congruence subgroup of the modular group](is-congruence-subgroup.md)
+- [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
+- [Selberg's congruence spectral-gap constant](selberg-constant.md)
 
 ## Proof depends on
 
 - [Is Eigenvalue](is-eigenvalue.md)
-- [Exceptional Gaps](exceptional-gaps.md)
+- [Gap contributions of a subgroup of the modular group](exceptional-gaps.md)
 
 ## Sources
 

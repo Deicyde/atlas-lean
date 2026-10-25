@@ -7,11 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.prime_gap_factorial_general
 ---
 
-# Prime gap factorial general
+# Prime gaps near $n!$, general form
 
-Prime gaps near `n!`, with only the hypotheses the argument uses: if every prime above `n`
-is at least `r`, any prime `p` with `n! + 1 < p < n! + r^2` has `p - n!` prime as well.
-`prime_gap_factorial` is the source-shaped form.
+**Prime gaps near $n!$, general form.** Let $n$, $p$ and $r$ be natural numbers such that
+every prime $q > n$ satisfies $q \ge r$. If $p$ is a prime with $n! + 1 < p < n! + r^2$, then
+$p - n!$ is prime.
 
 ## Depends on
 

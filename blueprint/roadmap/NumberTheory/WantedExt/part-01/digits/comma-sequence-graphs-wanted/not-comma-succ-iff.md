@@ -12,7 +12,7 @@ integer are exactly `c·bⁱ` with `i ≥ 2` and `2 ≤ c ≤ b - 1`.
 
 ## Depends on
 
-- [Is Comma Succ](../../../../MathlibExt/part-04/comma-sequence/is-comma-succ.md)
+- [Comma successor](../../../../MathlibExt/part-04/comma-sequence/is-comma-succ.md)
 
 ## Sources
 

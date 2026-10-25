@@ -5,6 +5,6 @@ navigation: module
 
 # Part1 Ch3 Entry10 Poisson Asymptotic
 
-- [Two Assoc Stirling Second](two-assoc-stirling-second.md)
-- [Two Assoc Stirling Second eq canonical](two-assoc-stirling-second-eq-canonical.md)
-- [Ramanujan part1 ch3 entry10 poisson asymptotic](ramanujan-part1-ch3-entry10-poisson-asym.md)
+- [2-associated Stirling numbers in Ramanujan's Entry 10](two-assoc-stirling-second.md)
+- [The Entry 10 Stirling numbers are the 2-associated Stirling numbers](two-assoc-stirling-second-eq-canonical.md)
+- [Ramanujan's asymptotic expansion of Poisson averages](ramanujan-part1-ch3-entry10-poisson-asym.md)

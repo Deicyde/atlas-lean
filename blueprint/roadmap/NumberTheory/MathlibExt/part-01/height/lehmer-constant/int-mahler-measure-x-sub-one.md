@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.LehmerConstant.intMahlerMeasure_X_sub_one
 ---
 
-# Int Mahler Measure X sub one
+# Mahler measure of $X - 1$
 
-The polynomial `X - 1` has Mahler measure `1`, on the boundary excluded
-from Lehmer's infimum.
+**Mahler measure of $X - 1$.** The integer polynomial $X - 1$ has Mahler measure $1$.
+
+Since $1$ is not strictly larger than $1$, this value is excluded from the set whose
+infimum is Lehmer's constant.
 
 ## Depends on
 
-- [Int Mahler Measure](int-mahler-measure.md)
+- [Mahler measure of an integer polynomial](int-mahler-measure.md)
 
 ## Proof depends on
 
-- [Int Mahler Measure X sub C](int-mahler-measure-x-sub-c.md)
+- [Mahler measure of a monic linear integer polynomial](int-mahler-measure-x-sub-c.md)
 
 ## Sources
 

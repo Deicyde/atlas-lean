@@ -5,9 +5,9 @@ navigation: module
 
 # Maximal Unramified
 
-- [Is Finite Unramified](is-finite-unramified.md)
-- [Maximal Unramified Subextension](maximal-unramified-subextension.md)
-- [Le maximal Unramified Subextension](le-maximal-unramified-subextension.md)
-- [Maximal Unramified Subextension le iff](maximal-unramified-subextension-le-iff.md)
-- [Map](map.md)
-- [Map maximal Unramified Subextension](map-maximal-unramified-subextension.md)
+- [Finite unramified intermediate fields](is-finite-unramified.md)
+- [Maximal unramified subextension](maximal-unramified-subextension.md)
+- [Finite unramified subfields lie in the maximal unramified subextension](le-maximal-unramified-subextension.md)
+- [Universal property of the maximal unramified subextension](maximal-unramified-subextension-le-iff.md)
+- [Automorphisms preserve finite unramified subfields](map.md)
+- [The maximal unramified subextension is stable under automorphisms](map-maximal-unramified-subextension.md)

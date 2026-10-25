@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.bonse_nth_strictMono
 ---
 
-# Bonse nth strict Mono
+# The enumeration of the primes is strictly increasing
 
-Strict monotonicity of prime indexing.
+**The enumeration of the primes is strictly increasing.** For $k \ge 1$ let $p_k$ be the
+$k$-th smallest prime number. If $i < j$, then $p_i < p_j$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bonse primes infinite](bonse-primes-infinite.md)
+- [Infinitely many primes](bonse-primes-infinite.md)
 
 ## Sources
 

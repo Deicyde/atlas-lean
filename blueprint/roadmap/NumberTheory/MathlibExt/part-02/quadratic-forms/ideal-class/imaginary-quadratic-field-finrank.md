@@ -6,20 +6,21 @@ proof: formalized
 lean: BinaryQuadraticForm.imaginaryQuadraticField_finrank
 ---
 
-# Imaginary Quadratic Field finrank
+# $\mathbb{Q}(\sqrt{-D})$ is a quadratic extension
 
-A positive radicand gives a degree-two extension of `ℚ`.
+**$\mathbb{Q}(\sqrt{-D})$ is a quadratic extension.** For every positive integer $D$, the
+subfield $\mathbb{Q}(i\sqrt{D})$ of $\mathbb{C}$ has degree $2$ over $\mathbb{Q}$.
 
 ## Depends on
 
-- [Imaginary Quadratic Field](imaginary-quadratic-field.md)
+- [The imaginary quadratic field $\mathbb{Q}(\sqrt{-D})$](imaginary-quadratic-field.md)
 
 ## Proof depends on
 
-- [Imaginary Root](imaginary-root.md)
-- [Imaginary Root is Integral](imaginary-root-is-integral.md)
-- [Imaginary Root not mem bot](imaginary-root-not-mem-bot.md)
-- [Imaginary Root sq](imaginary-root-sq.md)
+- [The imaginary square root of $-D$](imaginary-root.md)
+- [The imaginary root is integral over $\mathbb{Q}$](imaginary-root-is-integral.md)
+- [The imaginary root is not rational](imaginary-root-not-mem-bot.md)
+- [The imaginary root squares to $-D$](imaginary-root-sq.md)
 
 ## Sources
 

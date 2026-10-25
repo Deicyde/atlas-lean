@@ -7,13 +7,17 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.adicCompletionIntegersMap_injective
 ---
 
-# Adic Completion Integers Map injective
+# The map of completed integer rings is injective
 
-The restricted canonical map on completion integer rings is injective.
+**The map of completed integer rings is injective.** Let $L/K$ be an extension of number
+fields, let $v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero prime ideal of
+$\mathcal{O}_L$ lying over $v$. Then the canonical map $\mathcal{O}_{K_v} \to \mathcal{O}_{L_w}$
+from the ring of integers of the completion $K_v$ to the ring of integers of the completion $L_w$
+is injective.
 
 ## Depends on
 
-- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
+- [Restriction of the completion map to the rings of integers](../finite-lies-over-valuation/adic-completion-integers-map.md)
 
 ## Sources
 

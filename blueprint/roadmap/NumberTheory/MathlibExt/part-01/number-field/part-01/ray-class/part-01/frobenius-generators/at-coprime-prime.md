@@ -7,15 +7,18 @@ proof: formalized
 lean: NumberField.Modulus.IsUnramifiedOutside.at_coprimePrime
 ---
 
-# At coprime Prime
+# Unramified outside a modulus implies unramified at coprime primes
 
-Elimination of `IsUnramifiedOutside` at a prime coprime to `m`.
+**Unramified outside a modulus implies unramified at coprime primes.** Let $m$ be a
+modulus of a number field $K$ and let $L / K$ be an extension of number fields that is
+unramified outside $m$. Then every finite prime $\mathfrak p$ of $K$ not dividing the finite
+part of $m$ is unramified in $\mathcal O_L$.
 
 ## Depends on
 
-- [Coprime Primes](../prime-generation/coprime-primes.md)
-- [Is Unramified Outside](is-unramified-outside.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Primes coprime to a modulus](../prime-generation/coprime-primes.md)
+- [Extensions unramified outside a modulus](is-unramified-outside.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

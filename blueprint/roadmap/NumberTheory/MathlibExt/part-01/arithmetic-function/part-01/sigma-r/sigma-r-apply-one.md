@@ -7,17 +7,18 @@ proof: formalized
 lean: ArithmeticFunction.sigmaR_apply_one
 ---
 
-# Sigma R apply one
+# The complex-exponent divisor sum at one
 
-Every complex-exponent divisor sum takes the value one at one.
+**The complex-exponent divisor sum at one.** For every complex number $s$, the divisor-power
+sum $\sigma_s(n) = \sum_{d \mid n} d^s$ with complex exponent $s$ satisfies $\sigma_s(1) = 1$.
 
 ## Depends on
 
-- [Sigma R](sigma-r.md)
+- [Divisor-power sum with complex exponent](sigma-r.md)
 
 ## Proof depends on
 
-- [Sigma R apply](sigma-r-apply.md)
+- [Divisor-sum formula for the complex-exponent divisor sum](sigma-r-apply.md)
 
 ## Sources
 

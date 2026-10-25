@@ -15,7 +15,7 @@ is `0`, so no positivity hypothesis is imposed.
 
 ## Depends on
 
-- [Is Completely Multiplicative](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
+- [Completely multiplicative arithmetic function](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
 
 ## Sources
 

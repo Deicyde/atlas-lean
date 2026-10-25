@@ -7,10 +7,10 @@ navigation: module
 
 ## Number Field
 
-- [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
+- [A prime as an invertible fractional ideal](prime-unit-fractional-ideal.md)
 - [Factorization Mul Equiv prime Unit Fractional Ideal](factorization-mul-equiv-prime-unit-fract.md)
 
 ## Modulus
 
-- [Mem coprime Fractional Ideals prime Unit](mem-coprime-fractional-ideals-prime-unit.md)
-- [Prime Coprime Unit](prime-coprime-unit.md)
+- [Primes not dividing the modulus are coprime to it](mem-coprime-fractional-ideals-prime-unit.md)
+- [The prime as a coprime fractional ideal](prime-coprime-unit.md)

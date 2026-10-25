@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.lt_exp_of_pow_lt
 ---
 
-# Lt exp of pow lt
+# Exponential lower bound from a power comparison
 
-Exponential lower bound from a power comparison below `e`.
+**Exponential lower bound from a power comparison.** Let $a$ and $c$ be nonnegative real
+numbers and let $n$ and $m$ be positive integers. If $c < e$ and $a^n < c^m$, then
+$a < e^{m/n}$, where $m/n$ is real division.
 
 ## Depends on
 

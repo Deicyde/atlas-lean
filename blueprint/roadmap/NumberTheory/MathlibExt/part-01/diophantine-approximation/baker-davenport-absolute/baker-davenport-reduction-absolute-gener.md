@@ -7,11 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.bakerDavenport_reduction_absolute_general
 ---
 
-# Baker Davenport reduction absolute general
+# Baker–Davenport reduction for an arbitrary denominator, absolute-value form
 
-Baker–Davenport reduction, absolute-value form, with only the hypotheses the argument
-uses: if `ε = ‖μq‖ - M‖κq‖` is positive, no `r ≤ M` and `w ≥ log (Aq/ε) / log B` satisfy
-`|rκ - s + μ| < A B⁻ʷ`. `bakerDavenport_reduction_absolute` is the source-shaped form.
+**Baker–Davenport reduction for an arbitrary denominator, absolute-value form.** For a real
+number $x$ write $\lVert x \rVert = |x - \operatorname{round}(x)|$ for the distance from $x$ to a
+nearest integer. Let $M$ and $q$ be natural numbers with $q > 0$, and let $\kappa$, $\mu$, $A$, $B$
+be real numbers with $A > 0$ and $B > 1$. Put
+$\varepsilon = \lVert \mu q \rVert - M \lVert \kappa q \rVert$ and suppose that $\varepsilon > 0$.
+Then there are no natural numbers $r$, $s$, $w$ with $r \le M$,
+$w \ge \log(Aq/\varepsilon) / \log B$ and $|r\kappa - s + \mu| < A B^{-w}$.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Baker Davenport Nearest Integer Core](../nearest-integer-reduction-core.md)
+- [Nearest-integer estimate in the Baker–Davenport reduction](../nearest-integer-reduction-core.md)
 
 ## Sources
 

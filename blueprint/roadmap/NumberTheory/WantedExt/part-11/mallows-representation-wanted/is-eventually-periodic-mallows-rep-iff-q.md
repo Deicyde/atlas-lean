@@ -13,7 +13,7 @@ a quadratic irrational (degree-two algebraic over `ℚ`, `IsRealQuadraticIrratio
 ## Depends on
 
 - [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Is Real Quadratic Irrational](../../../MathlibExt/part-01/continued-fractions/lagrange-periodic/is-real-quadratic-irrational.md)
+- [Real quadratic irrationals](../../../MathlibExt/part-01/continued-fractions/lagrange-periodic/is-real-quadratic-irrational.md)
 - [Mallows Letter](mallows-letter.md)
 - [Mallows Rep](mallows-rep.md)
 

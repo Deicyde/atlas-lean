@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.generalizedPFibonacci
 ---
 
-# Generalized PFibonacci
+# Generalized $p$-Fibonacci sequence
 
-The generalized Fibonacci sequence `W_{p,n}`: `W_{p,0} = a`, `W_{p,1} = b`,
-`W_{p,n} = p W_{p,n-1} + W_{p,n-2}` for `n ≥ 2`.
+**Generalized $p$-Fibonacci sequence.** For integers $p$, $a$ and $b$, the generalized
+Fibonacci sequence $(W_{p,n})_{n \ge 0}$ of integers is defined by $W_{p,0} = a$, $W_{p,1} = b$
+and $W_{p,n} = p W_{p,n-1} + W_{p,n-2}$ for $n \ge 2$.
 
 ## Depends on
 

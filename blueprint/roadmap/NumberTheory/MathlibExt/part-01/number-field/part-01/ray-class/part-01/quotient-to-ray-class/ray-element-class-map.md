@@ -6,23 +6,27 @@ statement: formalized
 lean: NumberField.Modulus.rayElementClassMap
 ---
 
-# Ray Element Class Map
+# Ray-element class map
 
-Ray-element class map: principal ideal followed by the class projection
-(ATLAS `exactSeq_map3` before the quotient lift).
+**Ray-element class map.** For a modulus $\mathfrak m$ of a number field $K$, the ray-element
+class map is the group homomorphism from the group of ray elements of $\mathfrak m$ to the ray
+class group $\mathrm{Cl}_{\mathfrak m}$ that sends $x$ to the ray class of its principal
+fractional ideal $(x)$, which is coprime to $\mathfrak m$; that is, the principal-ideal map
+followed by the projection onto the ray class group.
 
 ## Depends on
 
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Proof depends on
 
-- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
-- [Ray Class Map](../group/ray-class-map.md)
+- [Principal ray ideal map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray class map](../group/ray-class-map.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.QuotientToRayClass](../../../../../../../../../sources/v2/MathlibExt.md)
+- ATLAS `exactSeq_map3`, before the quotient lift.

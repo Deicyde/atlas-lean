@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.asymptoticDobrowolskiConstant_le_top
 ---
 
-# Asymptotic Dobrowolski Constant le top
+# Trivial upper bound for the asymptotic Dobrowolski constant
 
-The catalogue's infinite upper row is just the top bound, not a finite estimate.
+**Trivial upper bound for the asymptotic Dobrowolski constant.** The asymptotic Dobrowolski
+constant is at most $+\infty$.
+
+This is only the trivial bound in the extended reals, not a finite estimate.
 
 ## Depends on
 
-- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+- [Asymptotic Dobrowolski constant](asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

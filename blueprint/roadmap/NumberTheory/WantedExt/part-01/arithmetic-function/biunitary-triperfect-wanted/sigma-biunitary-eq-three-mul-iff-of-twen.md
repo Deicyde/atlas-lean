@@ -12,7 +12,7 @@ for positive `N` with `27 ∣ N`, `σ**(N) = 3N` iff `N = 2160`.
 
 ## Depends on
 
-- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
+- [Biunitary divisor sum](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

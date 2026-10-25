@@ -6,9 +6,10 @@ proof: formalized
 lean: GaussianInt.unitVal_complete
 ---
 
-# Unit Val complete
+# The enumeration of the Gaussian units is complete
 
-Every unit is enumerated.
+**The enumeration of the Gaussian units is complete.** Let $u_0 = 1$, $u_1 = -1$, $u_2 = i$
+and $u_3 = -i$. Every unit $u$ of $\mathbb{Z}[i]$ equals $u_j$ for some $j \in \{0, 1, 2, 3\}$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ Every unit is enumerated.
 
 ## Proof depends on
 
-- [Gaussian Int is Unit iff](gaussian-int-is-unit-iff.md)
+- [Units of the Gaussian integers](gaussian-int-is-unit-iff.md)
 
 ## Sources
 

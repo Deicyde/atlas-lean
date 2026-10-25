@@ -5,11 +5,11 @@ navigation: module
 
 # Finite Places Over Tensor Product Equiv
 
-- [Sum finrank adic Completion places Over](sum-finrank-adic-completion-places-over.md)
-- [Finrank completion Tensor Product eq pi](finrank-completion-tensor-product-eq-pi.md)
-- [Completion Tensor Product Map injective](completion-tensor-product-map-injective.md)
-- [Completion Tensor Product Map bijective](completion-tensor-product-map-bijective.md)
-- [Completion Tensor Product Alg Equiv](completion-tensor-product-alg-equiv.md)
-- [Completion Tensor Product Right Alg Equiv](completion-tensor-product-right-alg-equi.md)
-- [Completion Tensor Product Right Alg Equiv tmul one](completion-tensor-product-right-alg-equi-2.md)
-- [Completion Tensor Product Right Alg Equiv K](completion-tensor-product-right-alg-equi-3.md)
+- [Local degrees sum to the global degree](sum-finrank-adic-completion-places-over.md)
+- [Dimension count for the base change to a finite completion](finrank-completion-tensor-product-eq-pi.md)
+- [The canonical map to the product of completions is injective](completion-tensor-product-map-injective.md)
+- [The canonical map to the product of completions is bijective](completion-tensor-product-map-bijective.md)
+- [Base change to a finite completion as a product of completions](completion-tensor-product-alg-equiv.md)
+- [Tensor product decomposition at a finite place](completion-tensor-product-right-alg-equi.md)
+- [Coordinate law for the tensor product decomposition](completion-tensor-product-right-alg-equi-2.md)
+- [Tensor product decomposition at a finite place over the base field](completion-tensor-product-right-alg-equi-3.md)

@@ -7,26 +7,26 @@ navigation: module
 
 ## Egyptian Fraction
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
-- [Is Strict Egyptian](is-strict-egyptian.md)
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
-- [Is Strict Underapproximation](is-strict-underapproximation.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
+- [Strictly increasing Egyptian denominator tuples](is-strict-egyptian.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
+- [Egyptian underapproximations with strictly increasing denominators](is-strict-underapproximation.md)
 
 ## Is Nondecreasing Underapproximation
 
-- [Nonempty](nonempty.md)
-- [Target pos](target-pos.md)
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian-2.md)
+- [Nondecreasing underapproximations have at least one term](nonempty.md)
+- [The target of a nondecreasing underapproximation is positive](target-pos.md)
+- [Nondecreasing underapproximations have Egyptian denominator tuples](is-nondecreasing-egyptian-2.md)
 - [Denominator ge two](denominator-ge-two.md)
 - [Monotone](monotone.md)
-- [Sum lt](sum-lt.md)
+- [A nondecreasing underapproximation stays below its target](sum-lt.md)
 
 ## Is Strict Underapproximation
 
 - [Nonempty](nonempty-2.md)
 - [Target pos](target-pos-2.md)
-- [Is Strict Egyptian](is-strict-egyptian-2.md)
+- [Strict underapproximations have strictly increasing Egyptian denominators](is-strict-egyptian-2.md)
 - [Denominator ge two](denominator-ge-two-2.md)
 - [Strict Mono](strict-mono.md)
 - [Sum lt](sum-lt-2.md)
-- [To Is Nondecreasing Underapproximation](to-is-nondecreasing-underapproximation.md)
+- [Strict underapproximations are nondecreasing underapproximations](to-is-nondecreasing-underapproximation.md)

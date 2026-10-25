@@ -7,10 +7,10 @@ proof: formalized
 lean: Nat.euler_fermat_prime_power_congruence_general
 ---
 
-# Euler fermat prime power congruence general
+# Euler–Fermat congruence modulo prime powers
 
-`a ^ p ^ r ≡ a ^ p ^ (r - 1) [MOD p ^ r]` for every `a : ℕ`, prime `p` and `1 ≤ r`;
-`euler_fermat_prime_power_congruence` is the source-shaped form.
+**Euler–Fermat congruence modulo prime powers.** For every natural number $a$, every prime $p$
+and every natural number $r \ge 1$, we have $a^{p^r} \equiv a^{p^{r-1}} \pmod{p^r}$.
 
 ## Depends on
 

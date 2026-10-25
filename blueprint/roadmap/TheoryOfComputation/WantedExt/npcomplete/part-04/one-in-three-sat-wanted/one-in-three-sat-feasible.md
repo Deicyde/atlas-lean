@@ -15,9 +15,9 @@ An assignment making exactly one literal true per clause.
 
 ## Proof depends on
 
-- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfaction of a literal](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

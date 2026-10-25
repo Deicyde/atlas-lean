@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.det_maxMatrix_sub_X_smul_minMatrix
 ---
 
-# Det max Matrix sub X smul min Matrix
+# Generalized eigenvalues of a MAX matrix to a MIN matrix
 
-Theorem 1: for `n > 2` positive reals `s_1 < ⋯ < s_n`, with MAX matrix
-`M_S = (max (s_i, s_j))` and MIN matrix `N_S = (min (s_i, s_j))`, the g-eigenvalues of `M_S` to
-`N_S` are `√(s_n / s_1)`, `-1` with multiplicity `n - 2`, and `-√(s_n / s_1)`. Stated as the
-factorization of `det (M_S - X N_S)`, whose leading coefficient is `det (-N_S)`.
+**Generalized eigenvalues of a MAX matrix to a MIN matrix.** Let $n > 2$ and let
+$0 < s_1 < s_2 < \dots < s_n$ be real numbers. Let $M$ be the $n \times n$ matrix with entries
+$M_{ij} = \max(s_i, s_j)$, let $N$ be the $n \times n$ matrix with entries
+$N_{ij} = \min(s_i, s_j)$, and put $\rho = \sqrt{s_n / s_1}$. Then, as polynomials in $X$ with
+real coefficients,
+
+$$\det(M - XN) = (-1)^n \det(N) \, (X - \rho)(X + 1)^{n-2}(X + \rho).$$
+
+The roots of $\det(M - XN)$ are the generalized eigenvalues of $M$ to $N$.
 
 ## Depends on
 

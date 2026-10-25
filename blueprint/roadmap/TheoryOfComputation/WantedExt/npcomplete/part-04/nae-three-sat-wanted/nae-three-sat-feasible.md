@@ -15,10 +15,10 @@ An assignment making every clause not-all-equal.
 
 ## Proof depends on
 
-- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Satisfaction of a literal](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

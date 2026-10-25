@@ -7,13 +7,15 @@ proof: formalized
 lean: Nat.primeCountingMod_eq_card_filter_range
 ---
 
-# Prime Counting Mod eq card filter range
+# Residue-class prime count as a filtered range
 
-The residue-class prime count as a range filtered by primality and congruence.
+**Residue-class prime count as a filtered range.** For all natural numbers $n$, $q$ and $a$,
+the number $\pi(n; q, a)$ of primes $p \le n$ with $p \equiv a \pmod q$ equals the number of
+integers $p$ with $0 \le p \le n$ such that $p$ is prime and $p \equiv a \pmod q$.
 
 ## Depends on
 
-- [Prime Counting Mod](prime-counting-mod.md)
+- [Prime counting in a residue class](prime-counting-mod.md)
 
 ## Sources
 

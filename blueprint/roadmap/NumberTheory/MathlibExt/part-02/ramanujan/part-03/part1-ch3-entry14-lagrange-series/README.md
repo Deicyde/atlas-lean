@@ -5,8 +5,8 @@ navigation: module
 
 # Part1 Ch3 Entry14 Lagrange Series
 
-- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
-- [Lagrange Series Coefficient zero](lagrange-series-coefficient-zero.md)
-- [Lagrange Series Coefficient of ne zero](lagrange-series-coefficient-of-ne-zero.md)
-- [Lagrange Series Coefficient add](lagrange-series-coefficient-add.md)
-- [Ramanujan part1 ch3 entry14 lagrange series](ramanujan-part1-ch3-entry14-lagrange-ser.md)
+- [Lagrange series coefficients](lagrange-series-coefficient.md)
+- [Lagrange series coefficient of degree zero](lagrange-series-coefficient-zero.md)
+- [Lagrange series coefficients of positive degree](lagrange-series-coefficient-of-ne-zero.md)
+- [Hagen–Rothe convolution for Lagrange series coefficients](lagrange-series-coefficient-add.md)
+- [Ramanujan's Lagrange series](ramanujan-part1-ch3-entry14-lagrange-ser.md)

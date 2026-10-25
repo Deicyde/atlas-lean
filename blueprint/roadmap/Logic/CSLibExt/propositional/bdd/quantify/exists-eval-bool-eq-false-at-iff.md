@@ -6,33 +6,36 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.exists_evalBool_eq_false_at_iff
 ---
 
-# Exists eval Bool eq false at iff
+# Satisfiability with one variable fixed to false
 
-Satisfiability with one variable `f` fixed to `false` (for instance a variable that
-plays the role of falsum): `A` has such a model iff the cofactor of its ROBDD at `f := false`
-is not the leaf `false`. Without such a constraint, every proposition over `Nat` atoms is
-satisfied by the all-true valuation.
+**Satisfiability with one variable fixed to false.** Let $A$ be a proposition over atoms
+indexed by natural numbers, let $t$ be its ROBDD, and let $f$ be a natural number. Then $A$
+evaluates to true under some valuation $\sigma$ with $\sigma(f) = \mathrm{false}$ if and only
+if the cofactor $t[f := \mathrm{false}]$ is not the leaf $\mathrm{false}$.
+
+The variable $f$ can, for instance, play the role of falsum. Without such a constraint, every
+proposition over atoms indexed by natural numbers is satisfied by the all-true valuation.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
-- [Of Proposition](../basic/of-proposition.md)
-- [Restrict](restrict.md)
-- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Diagram of a proposition](../basic/of-proposition.md)
+- [Restriction of a binary decision diagram](restrict.md)
+- [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Is ROBDD](../basic/is-robdd.md)
-- [Ordered From](../basic/ordered-from.md)
-- [Reduced](../basic/reduced.md)
-- [Apply](../basic/apply.md)
-- [Eq leaf false iff](../basic/eq-leaf-false-iff.md)
-- [Eval](../basic/eval.md)
-- [Eval apply](../basic/eval-apply.md)
-- [Is ROBDD restrict](is-robdd-restrict.md)
-- [Mk](../basic/mk.md)
-- [Ordered From apply](../basic/ordered-from-apply.md)
-- [Reduced apply](../basic/reduced-apply.md)
+- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
+- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Bryant's apply operation](../basic/apply.md)
+- [Unsatisfiable reduced ordered diagrams](../basic/eq-leaf-false-iff.md)
+- [Evaluation of a binary decision diagram](../basic/eval.md)
+- [Apply computes the operation pointwise](../basic/eval-apply.md)
+- [Restriction yields an ROBDD](is-robdd-restrict.md)
+- [Node constructor removing a redundant test](../basic/mk.md)
+- [Apply preserves orderedness](../basic/ordered-from-apply.md)
+- [Apply returns reduced diagrams](../basic/reduced-apply.md)
 
 ## Sources
 

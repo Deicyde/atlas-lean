@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch3 Entry1 Series Transformation
 
-- [Ramanujan part1 ch3 entry1 series transformation general](ramanujan-part1-ch3-entry1-series-transf.md)
-- [Ramanujan part1 ch3 entry1 series transformation](ramanujan-part1-ch3-entry1-series-transf-2.md)
+- [Ramanujan's series transformation without the radius hypothesis](ramanujan-part1-ch3-entry1-series-transf.md)
+- [Ramanujan's series transformation (Chapter 3, Entry 1)](ramanujan-part1-ch3-entry1-series-transf-2.md)

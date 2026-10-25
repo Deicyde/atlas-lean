@@ -7,17 +7,20 @@ proof: formalized
 lean: NumberField.InfinitePlace.normalizedAbsoluteValue_apply_of_isReal
 ---
 
-# Normalized Absolute Value apply of is Real
+# Degree-normalized absolute value at a real place
 
-At a real place, the degree-normalization exponent is `1 / [K : ℚ]`.
+**Degree-normalized absolute value at a real place.** Let $K$ be a number field of degree
+$d = [K : \mathbb{Q}]$ and let $v$ be a real infinite place of $K$, with absolute value
+$|\cdot|_v$. For every $x \in K$, the degree-normalized absolute value of $x$ at $v$ equals
+$|x|_v^{1/d}$.
 
 ## Depends on
 
-- [Normalized Absolute Value](normalized-absolute-value-2.md)
+- [Degree-normalized absolute value at an infinite place](normalized-absolute-value-2.md)
 
 ## Proof depends on
 
-- [Normalized Absolute Value apply](normalized-absolute-value-apply-2.md)
+- [Value of the degree-normalized absolute value at an infinite place](normalized-absolute-value-apply-2.md)
 
 ## Sources
 

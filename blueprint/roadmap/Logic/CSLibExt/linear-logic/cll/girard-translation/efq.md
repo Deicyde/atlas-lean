@@ -6,9 +6,15 @@ proof: formalized
 lean: Cslib.Logic.CLL.Girard.efq
 ---
 
-# Efq
+# Ex falso translates to a CLL theorem
 
-Ex falso `⊥ → B` translates to `ʔ⊤ ⅋ B°` when `⊥ ↦ 0`, which is provable by the `⊤` rule.
+**Ex falso translates to a CLL theorem.** Let $f$ map atoms to CLL propositions and send the
+atom $\bot$ to the additive unit $0$. Then for every propositional formula $B$, the one-formula
+CLL sequent $\vdash (\bot \to B)^\circ$ is provable, where $(\cdot)^\circ$ is Girard's
+translation with atoms translated by $f$.
+
+The translation $(\bot \to B)^\circ$ is the par of $?\top$ and $B^\circ$, which is provable by
+the $\top$ rule.
 
 ## Depends on
 

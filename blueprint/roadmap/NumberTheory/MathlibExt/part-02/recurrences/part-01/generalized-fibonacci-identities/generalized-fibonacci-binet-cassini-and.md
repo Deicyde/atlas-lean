@@ -25,10 +25,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Fibonacci binet](generalized-fibonacci-binet.md)
-- [Generalized Fibonacci cassini](generalized-fibonacci-cassini.md)
-- [Generalized Fibonacci mixed identity](generalized-fibonacci-mixed-identity.md)
-- [Generalized Fibonacci tendsto ratio](generalized-fibonacci-tendsto-ratio.md)
+- [Binet formula for generalized Fibonacci sequences](generalized-fibonacci-binet.md)
+- [Cassini identity for generalized Fibonacci sequences](generalized-fibonacci-cassini.md)
+- [Mixed identity for generalized Fibonacci sequences](generalized-fibonacci-mixed-identity.md)
+- [Ratio limit for generalized Fibonacci sequences](generalized-fibonacci-tendsto-ratio.md)
 
 ## Sources
 

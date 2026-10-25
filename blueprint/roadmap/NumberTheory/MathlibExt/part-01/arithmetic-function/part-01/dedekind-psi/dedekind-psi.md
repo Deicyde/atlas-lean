@@ -6,12 +6,17 @@ statement: formalized
 lean: ArithmeticFunction.dedekindPsi
 ---
 
-# Dedekind Psi
+# Dedekind psi function
 
-The Dedekind psi function as an arithmetic function taking values in `ℕ`.
+**Dedekind psi function.** The Dedekind psi function $\psi$ is the arithmetic function with
+values in $\mathbb{N}$ given by $\psi(0) = 0$ and, for $n > 0$,
 
-For `n = 0` the value is `0`, as required of an arithmetic function. For `n > 0`,
-`dedekindPsi n = ∏_{p ^ k ∥ n} p ^ (k - 1) * (p + 1)`.
+$$
+\psi(n) = \prod_{p^k \parallel n} p^{k-1} (p + 1),
+$$
+
+the product running over the primes $p$ dividing $n$, with $p^k$ the exact power of $p$ dividing
+$n$.
 
 ## Depends on
 

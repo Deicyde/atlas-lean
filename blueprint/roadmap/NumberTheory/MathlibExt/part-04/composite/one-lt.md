@@ -7,9 +7,9 @@ proof: formalized
 lean: Nat.IsComposite.one_lt
 ---
 
-# One lt
+# Composite numbers exceed one
 
-A composite natural number is greater than one.
+**Composite numbers exceed one.** Every composite natural number $n$ satisfies $1 < n$.
 
 ## Depends on
 

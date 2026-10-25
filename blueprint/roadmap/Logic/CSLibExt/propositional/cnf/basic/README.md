@@ -4,6 +4,6 @@ navigation: module
 
 # Basic
 
-- [CNFClause](cnfclause.md)
-- [CNF](cnf.md)
-- [CNFSat](cnfsat.md)
+- [CNF clause](cnfclause.md)
+- [CNF formula](cnf.md)
+- [Satisfiability of a CNF formula](cnfsat.md)

@@ -6,21 +6,25 @@ statement: formalized
 lean: NumberField.Modulus.rayElementsQuotientEquivResidueSign
 ---
 
-# Ray Elements Quotient Equiv Residue Sign
+# The residue-sign isomorphism
 
-Canonical quotient equivalence onto the residue-sign target.
+**The residue-sign isomorphism.** Let $m$ be a modulus of a number field $K$. The residue-sign
+isomorphism of $m$ is the group isomorphism from the quotient of the ray elements of $m$ by the
+ray-one subgroup of $m$ onto the residue-sign target of $m$ induced by the residue-sign map, which
+is surjective with kernel the ray-one subgroup; it sends the class of a ray element $x$ to the
+image of $x$ under the residue-sign map.
 
 ## Depends on
 
-- [Residue Sign Target](residue-sign-target.md)
-- [Ray Elements](../ray-group/ray-elements.md)
-- [Ray One Elements](ray-one-elements.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
+- [Ray-one subgroup](ray-one-elements.md)
 
 ## Proof depends on
 
-- [Residue Sign Map](residue-sign-map.md)
-- [Residue Sign Map ker](residue-sign-map-ker.md)
-- [Residue Sign Map surjective](residue-sign-map-surjective.md)
+- [Residue-sign map](residue-sign-map.md)
+- [Kernel of the residue-sign map](residue-sign-map-ker.md)
+- [Surjectivity of the residue-sign map](residue-sign-map-surjective.md)
 
 ## Sources
 

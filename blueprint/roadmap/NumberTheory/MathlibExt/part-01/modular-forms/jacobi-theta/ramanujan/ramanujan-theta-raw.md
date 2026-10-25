@@ -6,12 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanThetaRaw
 ---
 
-# Ramanujan Theta Raw
+# Raw Ramanujan theta sum
 
-Raw Ramanujan theta sum in multiplicative coordinates.
+**Raw Ramanujan theta sum.** For complex numbers $a$ and $b$, the raw Ramanujan theta sum is
+$\sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ when this series is summable, and $0$
+otherwise.
 
-This is Mathlib's total `tsum`; it equals `0` when the summand family is not summable.
-Use `ramanujanTheta`, which requires convergence evidence, unless that fallback is intended.
+The value $0$ for a non-summable series is a convention. Ramanujan's general theta function,
+which requires the series to be summable, is the intended object.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramanujan Theta Term](ramanujan-theta-term.md)
+- [Summand of Ramanujan's general theta function](ramanujan-theta-term.md)
 
 ## Sources
 

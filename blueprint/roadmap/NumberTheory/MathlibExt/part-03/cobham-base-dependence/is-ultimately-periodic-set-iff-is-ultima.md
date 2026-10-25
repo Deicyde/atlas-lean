@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.isUltimatelyPeriodicSet_iff_isUltimatelyPeriodic
 ---
 
-# Is Ultimately Periodic Set iff is Ultimately Periodic
+# Ultimately periodic sets and their characteristic sequences
 
-The set-level and sequence-level notions of ultimate periodicity coincide.
+**Ultimately periodic sets and their characteristic sequences.** A set $S$ of natural
+numbers is ultimately periodic if and only if its characteristic sequence $n \mapsto (n \in S)$,
+a sequence of truth values, is ultimately periodic.
 
 ## Depends on
 
 - [Ultimately periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
-- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
+- [Ultimately periodic sets of natural numbers](is-ultimately-periodic-set.md)
 
 ## Sources
 

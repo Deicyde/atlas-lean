@@ -7,19 +7,25 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshUniformWanted.brun_titchmarsh_uniform
 ---
 
-# Brun Titchmarsh Uniform
+# Uniform Brun–Titchmarsh bound
 
-For every exponent `β ∈ (0, 1)` there is a constant `ξ₁ > 0`, depending only
-on `β`, such that the inclusive residue-class prime count satisfies
-`π(X; k, ell) < ξ₁ X / (φ(k) log(X/k))` whenever `2 ≤ X`, `1 ≤ k`, and
-`k ≤ X ^ β`.
+**Uniform Brun–Titchmarsh bound.** Write $\pi(X; k, \ell)$ for the number of primes $p \le X$
+with $p \equiv \ell \pmod{k}$, and $\varphi$ for Euler's totient function. For every real $\beta$
+with $0 < \beta < 1$ there is a real constant $\xi_1 > 0$ such that for all natural numbers $X$,
+$k$ and $\ell$ with $X \ge 2$, $k \ge 1$ and $k \le X^{\beta}$,
 
-Proof: Selberg's `Λ²` upper-bound sieve on an arithmetic progression, with
+$$
+\pi(X; k, \ell) < \frac{\xi_1 X}{\varphi(k) \log(X/k)}.
+$$
+
+No coprimality of $k$ and $\ell$ is assumed.
+
+The proof applies Selberg's $\Lambda^2$ upper-bound sieve to the arithmetic progression, with
 optimized weights and a harmonic lower bound for the diagonal sum.
 
 ## Depends on
 
-- [Prime Counting Mod](../part-02/residue-class/prime-counting-mod.md)
+- [Prime counting in a residue class](../part-02/residue-class/prime-counting-mod.md)
 
 ## Proof depends on
 
@@ -29,7 +35,7 @@ optimized weights and a harmonic lower bound for the diagonal sum.
 - [Level Weights err Sum le](../../../part-11/selberg-sieve/level-weights-err-sum-le.md)
 - [Level Weights main Sum](../../../part-11/selberg-sieve/level-weights-main-sum.md)
 - [Level Weights one](../../../part-11/selberg-sieve/level-weights-one.md)
-- [Prime Counting Mod eq card filter range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
+- [Residue-class prime count as a filtered range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
 
 ## Sources
 

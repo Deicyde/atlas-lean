@@ -6,8 +6,8 @@ navigation: module
 
 ## Proposition
 
-- [Shannon](shannon.md)
-- [Eval Bool shannon](eval-bool-shannon.md)
+- [Shannon expansion](shannon.md)
+- [Correctness of the Shannon expansion](eval-bool-shannon.md)
 
 ## PL
 
@@ -15,11 +15,11 @@ navigation: module
 
 ## Proposition
 
-- [Is Imp Bot](is-imp-bot.md)
-- [To Imp Bot](to-imp-bot.md)
-- [Eval Bool to Imp Bot](eval-bool-to-imp-bot.md)
+- [Propositions built from $\to$ and $\bot$](is-imp-bot.md)
+- [Translation into $\to$ and $\bot$](to-imp-bot.md)
+- [The translation into $\to$ and $\bot$ preserves truth values](eval-bool-to-imp-bot.md)
 
 ## PL
 
 - [Functional completeness of `→` and `⊥`](exists-is-imp-bot-eval-bool-eq.md)
-- [Derivable In cpl to Imp Bot iff](derivable-in-cpl-to-imp-bot-iff.md)
+- [The translation into $\to$ and $\bot$ preserves and reflects classical derivability](derivable-in-cpl-to-imp-bot-iff.md)

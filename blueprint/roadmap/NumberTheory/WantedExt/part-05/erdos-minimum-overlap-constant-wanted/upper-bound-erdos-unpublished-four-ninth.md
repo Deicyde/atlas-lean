@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C₁ᵦ](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/c.md)
+- [Notation $C_{1b}$](../../../MathlibExt/part-04/erdos-minimum-overlap-constant/c.md)
 
 ## Sources
 

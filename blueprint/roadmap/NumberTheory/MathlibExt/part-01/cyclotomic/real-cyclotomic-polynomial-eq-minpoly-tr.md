@@ -7,16 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_trace
 ---
 
-# Lehmer Minpoly Trace
+# The real cyclotomic polynomial is the minimal polynomial of $\zeta + \zeta^{-1}$
 
-Abstract primitive-root trace characterization underlying the source's
-coprime-index cosine statement: for `n > 2`, the real cyclotomic polynomial equals
-the minimal polynomial over `ℤ` of the trace `ζ + ζ⁻¹` of any primitive `n`-th root
-of unity `ζ`.
+**The real cyclotomic polynomial is the minimal polynomial of $\zeta + \zeta^{-1}$.** Let $K$
+be a field of characteristic zero, let $n > 2$ be a natural number, and let $\zeta \in K$ be a
+primitive $n$-th root of unity. Then the real cyclotomic polynomial $\psi_n$ equals the minimal
+polynomial of $\zeta + \zeta^{-1}$ over $\mathbb{Z}$.
 
 ## Depends on
 
-- [Real Cyclotomic Polynomial](real-cyclotomic-polynomial.md)
+- [Real cyclotomic polynomial](real-cyclotomic-polynomial.md)
 
 ## Sources
 

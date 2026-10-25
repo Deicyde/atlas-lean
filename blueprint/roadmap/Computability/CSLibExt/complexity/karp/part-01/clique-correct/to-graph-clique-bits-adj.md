@@ -21,7 +21,7 @@ $o_i$ and $o_j$ are adjacent, that is, they lie in different clauses and are not
 - [Adjacency of literal occurrences in Karp's clique graph](../clique/occ-adj.md)
 - [Literal occurrences of a CNF formula](../clique/occs.md)
 - [The graph encoded by pair bits](../clique/to-graph.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

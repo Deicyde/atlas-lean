@@ -7,18 +7,21 @@ proof: formalized
 lean: Rat.Place.exists_unique_place_equiv
 ---
 
-# Exists unique place equiv
+# Ostrowski's theorem for $\mathbb{Q}$, indexed by places
 
-Uniqueness of the representing rational place.
+**Ostrowski's theorem for $\mathbb{Q}$, indexed by places.** Let $f$ be a real-valued absolute
+value on $\mathbb{Q}$ that is nontrivial, that is, $f(x) \ne 1$ for some $x \ne 0$. Then there is
+exactly one place $v$ of $\mathbb{Q}$ such that $f$ is equivalent to the absolute value
+$|\cdot|_v$ attached to $v$ (the ordinary absolute value at the infinite place, the $p$-adic
+absolute value at the prime $p$).
 
-Preserves the unique-prime payload of `Rat.AbsoluteValue.equiv_real_or_padic`;
-the opposite constructor is excluded via `Rat.AbsoluteValue.not_real_isEquiv_padic`
-and equivalence symmetry/transitivity.
+Here two absolute values $f$ and $g$ on $\mathbb{Q}$ are equivalent when $f(x) \le f(y)$ holds
+exactly when $g(x) \le g(y)$, for all $x, y \in \mathbb{Q}$.
 
 ## Depends on
 
-- [Place](place.md)
-- [Absolute Value](absolute-value.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Absolute value at a rational place](absolute-value.md)
 
 ## Sources
 

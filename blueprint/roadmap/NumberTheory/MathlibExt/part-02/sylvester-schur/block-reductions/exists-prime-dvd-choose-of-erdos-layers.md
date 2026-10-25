@@ -7,9 +7,15 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_erdos_layers_bound
 ---
 
-# Exists prime dvd choose of erdos layers bound
+# Sylvester–Schur criterion from the Erdős layer bound
 
-Full Erdős layer conditional estimate in binomial form.
+**Sylvester–Schur criterion from the Erdős layer bound.** Let $1 \le n < k$ be natural
+numbers, put $N = k + n - 1$ and $L = \lfloor \log_2 N \rfloor$, and write $m\#$ for the product
+of the primes at most $m$. If
+
+$$n! \cdot n\# \cdot \prod_{i=2}^{L} \lfloor N^{1/i} \rfloor\# < k^n,$$
+
+then some prime $p > n$ divides $\binom{N}{n}$.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
-- [Consecutive of factorial mul prod erdos layers lt start pow](../conditional/consecutive-of-factorial-mul-prod-erdos.md)
+- [Prime divisors above $n$ of a block term divide the binomial coefficient](prime-dvd-seq-implies-choose.md)
+- [Erdős layer criterion for a large prime in a consecutive block](../conditional/consecutive-of-factorial-mul-prod-erdos.md)
 
 ## Sources
 

@@ -7,15 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.cipolla_pseudoprime_construction
 ---
 
-# Cipolla Pseudoprime
+# Cipolla's pseudoprime construction
 
-Cipolla construction of a pseudoprime to base `a`: for prime `p` not
-dividing `a * (a^2 - 1)`, `n = n₁ * n₂` with `n₁ = (a^p - 1)/(a - 1)` and
-`n₂ = (a^p + 1)/(a + 1)` is composite with `a^(n-1) ≡ 1 [MOD n]`.
-
-Pinned Mathlib already contains this construction internally; this theorem
-exposes it publicly through `Nat.FermatPsp`.
-Proves `Wanted` entry `cipolla_pseudoprime_construction`.
+**Cipolla's pseudoprime construction.** Let $a > 1$ be a natural number and let $p$ be a
+prime that does not divide $a(a^2 - 1)$. Put $n_1 = (a^p - 1)/(a - 1)$,
+$n_2 = (a^p + 1)/(a + 1)$ and $n = n_1 n_2$. Then $n$ is a Fermat pseudoprime to base $a$:
+$n > 1$, $n$ is not prime, and $n$ divides $a^{n-1} - 1$.
 
 ## Depends on
 

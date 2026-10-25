@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6.A_zero
 ---
 
-# A zero
+# Starting value of the tripling sequence
 
-The starting value `A n 0 = n`.
+**Starting value of the tripling sequence.** For every natural number $n$, the tripling
+sequence $A(n, k)$ of Entry 6 satisfies $A(n, 0) = n$.
 
 ## Depends on
 
-- [A](a.md)
+- [The tripling sequence of Ramanujan's Entry 6](a.md)
 
 ## Sources
 

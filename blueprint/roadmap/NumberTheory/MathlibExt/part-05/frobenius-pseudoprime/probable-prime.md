@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.IsFrobeniusPseudoprime.probablePrime
 ---
 
-# Probable Prime
+# Frobenius pseudoprimes are Frobenius probable primes
 
-A Frobenius pseudoprime is a Frobenius probable prime.
+**Frobenius pseudoprimes are Frobenius probable primes.** If $n$ is a Frobenius pseudoprime
+with respect to a polynomial $f \in \mathbb{Z}[x]$, then $n$ is a Frobenius probable prime with
+respect to $f$.
 
 ## Depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
-- [Is Frobenius Pseudoprime](is-frobenius-pseudoprime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
+- [Frobenius pseudoprime](is-frobenius-pseudoprime.md)
 
 ## Sources
 

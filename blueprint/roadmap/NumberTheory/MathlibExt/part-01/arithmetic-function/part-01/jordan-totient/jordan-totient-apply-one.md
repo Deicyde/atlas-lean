@@ -7,13 +7,14 @@ proof: formalized
 lean: ArithmeticFunction.jordanTotient_apply_one
 ---
 
-# Jordan Totient apply one
+# Jordan's totient at one
 
-`J_k(1) = 1` since the product is empty.
+**Jordan's totient at one.** For every natural number $k$, the Jordan totient function
+satisfies $J_k(1) = 1$.
 
 ## Depends on
 
-- [Jordan Totient](jordan-totient.md)
+- [Jordan's totient function](jordan-totient.md)
 
 ## Sources
 

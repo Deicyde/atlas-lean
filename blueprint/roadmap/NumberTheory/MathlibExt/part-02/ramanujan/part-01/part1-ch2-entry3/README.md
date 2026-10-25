@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch2 Entry3
 
-- [Ramanujan part1 ch2 entry3 general](ramanujan-part1-ch2-entry3-general.md)
-- [Ramanujan part1 ch2 entry3](ramanujan-part1-ch2-entry3.md)
+- [Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$, $n \ge 0$](ramanujan-part1-ch2-entry3-general.md)
+- [Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$](ramanujan-part1-ch2-entry3.md)

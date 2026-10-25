@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.arithmeticDerivative_prime
 ---
 
-# Arithmetic Derivative prime
+# Arithmetic derivative of a prime
 
-`D(p) = 1` for every prime `p`.
+**Arithmetic derivative of a prime.** For every prime $p$, the arithmetic derivative of $p$
+is $1$: $D(p) = 1$.
 
 ## Depends on
 
-- [Arithmetic Derivative](arithmetic-derivative.md)
+- [Arithmetic derivative](arithmetic-derivative.md)
 
 ## Sources
 

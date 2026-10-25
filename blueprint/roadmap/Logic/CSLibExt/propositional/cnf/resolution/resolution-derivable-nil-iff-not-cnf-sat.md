@@ -13,13 +13,13 @@ iff it is unsatisfiable.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
-- [Resolution Derivable](resolution-derivable.md)
-- [CNFSat](../basic/cnfsat.md)
+- [CNF formula](../basic/cnf.md)
+- [Resolution derivability](resolution-derivable.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Not cnf Sat of resolution Derivable nil](not-cnf-sat-of-resolution-derivable-nil.md)
+- [Refutable formulas are unsatisfiable](not-cnf-sat-of-resolution-derivable-nil.md)
 - [Refutation completeness](resolution-derivable-nil-of-not-cnf-sat.md)
 
 ## Sources

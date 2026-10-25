@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Logic.PL.CNFClause.vars
 ---
 
-# Vars
+# Variables of a clause
 
-The finite set of variables occurring in a clause.
+**Variables of a clause.** The variables of a CNF clause $C$ form the finite set of natural
+numbers $x$ such that $C$ contains a literal $(x, b)$ for some polarity $b$.
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N1_pos
 ---
 
-# N1 pos
+# Positivity of the scaled factorial argument $N_1$
 
-`N1m` is positive for `n ≥ 1` and `m ∣ Q9`.
+**Positivity of the scaled factorial argument $N_1$.** Let $Q_9 = 210$ and, for natural
+numbers $m$ and $n$, let $N_1(m, n) = n \lfloor Q_9 / m \rfloor$. If $n \ge 1$, $m \ge 1$ and $m$
+divides $Q_9$, then $N_1(m, n) \ge 1$.
 
 ## Depends on
 
-- [N1m](n1m.md)
-- [Q9](../grid/q9.md)
+- [Scaled factorial argument $N_1$](n1m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [Q9div pos](q9div-pos.md)
+- [Quotients of Q₉ by its divisors are positive](q9div-pos.md)
 
 ## Sources
 

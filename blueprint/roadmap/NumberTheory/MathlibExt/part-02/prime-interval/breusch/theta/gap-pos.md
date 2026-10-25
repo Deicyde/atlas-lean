@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.gap_pos
 ---
 
-# Gap pos
+# Positivity of the gap in Breusch's prime interval argument
 
-The per-`n` margin dominates all error terms for `n ≥ 4762`.
+**Positivity of the gap in Breusch's prime interval argument.** For every natural number
+$n \ge 4762$, $13n - 16 - 48\log(2100n) - \sqrt{2100n}\,\log(2100n) > 0$, where $\log$ is the
+natural logarithm.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log le sqrt06](log-le-sqrt06.md)
+- [Logarithm bounded by a multiple of the square root](log-le-sqrt06.md)
 
 ## Sources
 

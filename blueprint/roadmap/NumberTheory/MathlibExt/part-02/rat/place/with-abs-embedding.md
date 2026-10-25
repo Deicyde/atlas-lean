@@ -6,25 +6,25 @@ statement: formalized
 lean: Rat.Place.withAbsEmbedding
 ---
 
-# With Abs Embedding
+# Embedding of $\mathbb{Q}$, normed by a place, into its completion
 
-Canonical ring hom from `WithAbs v.absoluteValue` into `v.CompletedField`.
-
-`WithAbs.equiv` identifies the elements of the source with `ℚ`, allowing
-`embedding v` to serve as the underlying hom and as the bridge for the norm
-identity.
+**Embedding of $\mathbb{Q}$, normed by a place, into its completion.** For a place $v$ of
+$\mathbb{Q}$, the ring homomorphism from $\mathbb{Q}$, equipped with the absolute value $|\cdot|_v$
+attached to $v$ as its norm, into the completed field $\mathbb{Q}_v$ given by the canonical
+embedding of $\mathbb{Q}$ ($\mathbb{Q}_v = \mathbb{R}$ at the infinite place and
+$\mathbb{Q}_v = \mathbb{Q}_p$ at a prime $p$).
 
 ## Depends on
 
-- [Place](place.md)
-- [Completed Field](completed-field.md)
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Absolute Value](absolute-value.md)
-- [Bundle](bundle.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Completed field at a rational place](completed-field.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Absolute value at a rational place](absolute-value.md)
+- [Bundled completed field at a rational place](bundle.md)
 
 ## Proof depends on
 
-- [Embedding](embedding.md)
+- [Embedding of the rationals into a completion](embedding.md)
 
 ## Sources
 

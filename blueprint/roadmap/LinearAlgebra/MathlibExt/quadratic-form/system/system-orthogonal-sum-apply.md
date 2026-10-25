@@ -7,13 +7,17 @@ proof: formalized
 lean: QuadraticForm.systemOrthogonalSum_apply
 ---
 
-# System Orthogonal Sum apply
+# Evaluating an orthogonal sum of systems of quadratic forms
 
-Evaluation of a pointwise orthogonal sum.
+**Evaluating an orthogonal sum of systems of quadratic forms.** Let $R$ be a commutative
+semiring, let $M$ and $N$ be $R$-modules, and let $(Q_i)_{i \in \iota}$ and
+$(Q'_i)_{i \in \iota}$ be families of quadratic forms on $M$ and on $N$ indexed by the same
+type $\iota$. For every index $i$ and every $(x, y) \in M \times N$, the $i$-th form of their
+pointwise orthogonal sum takes the value $Q_i(x) + Q'_i(y)$ at $(x, y)$.
 
 ## Depends on
 
-- [System Orthogonal Sum](system-orthogonal-sum.md)
+- [Orthogonal sum of systems of quadratic forms](system-orthogonal-sum.md)
 
 ## Sources
 

@@ -7,18 +7,22 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.finrank_completionTensorProduct_eq_pi
 ---
 
-# Finrank completion Tensor Product eq pi
+# Dimension count for the base change to a finite completion
 
-The source and target of the completion tensor-product map have equal dimension.
+**Dimension count for the base change to a finite completion.** Let $L/K$ be an extension of
+number fields, $v$ a finite place of $K$ and $K_v$ the completion of $K$ at $v$; for each finite
+place $w$ of $L$ lying over $v$, let $L_w$ be the completion of $L$ at $w$, a $K_v$-algebra via
+the canonical map $K_v \to L_w$. Then $K_v \otimes_K L$ and $\prod_{w \mid v} L_w$ have the same
+dimension as $K_v$-vector spaces.
 
 ## Depends on
 
-- [Places Over](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../finite-places-over/places-over.md)
 
 ## Proof depends on
 
-- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
-- [Sum finrank adic Completion places Over](sum-finrank-adic-completion-places-over.md)
+- [Places over a finite place correspond to primes over it](../finite-places-over/places-over-equiv-primes-over.md)
+- [Local degrees sum to the global degree](sum-finrank-adic-completion-places-over.md)
 
 ## Sources
 

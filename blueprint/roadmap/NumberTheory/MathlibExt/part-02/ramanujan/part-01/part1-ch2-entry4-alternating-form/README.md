@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch2 Entry4 Alternating Form
 
-- [Ramanujan part1 ch2 entry4 alternating form general](ramanujan-part1-ch2-entry4-alternating-f.md)
-- [Ramanujan part1 ch2 entry4 alternating form](ramanujan-part1-ch2-entry4-alternating-f-2.md)
+- [Alternating form of Ramanujan's identity for $1/((4k)^3 - 4k)$, including $n = 0$](ramanujan-part1-ch2-entry4-alternating-f.md)
+- [Alternating form of Ramanujan's sum identity for $1/((4k)^3 - 4k)$](ramanujan-part1-ch2-entry4-alternating-f-2.md)

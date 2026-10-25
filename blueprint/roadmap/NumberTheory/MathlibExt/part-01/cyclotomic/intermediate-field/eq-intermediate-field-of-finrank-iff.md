@@ -7,18 +7,20 @@ proof: formalized
 lean: CyclotomicField.eq_intermediateFieldOfFinrank_iff
 ---
 
-# Eq intermediate Field Of Finrank iff
+# Characterization of the degree-$s$ subfield of the $p$-th cyclotomic field
 
-An intermediate field is the canonical degree-`s` field exactly when it has degree `s` over
-`ℚ`.
+**Characterization of the degree-$s$ subfield of the $p$-th cyclotomic field.** Let $p$ be a
+prime, let $s$ be a natural number dividing $p - 1$, and let $K$ be an intermediate field of the
+$p$-th cyclotomic field $\mathbb{Q}(\zeta_p)$ over $\mathbb{Q}$. Then $K$ is the degree-$s$
+subfield of $\mathbb{Q}(\zeta_p)$ if and only if $[K : \mathbb{Q}] = s$.
 
 ## Depends on
 
-- [Intermediate Field Of Finrank](intermediate-field-of-finrank.md)
+- [The degree-$s$ subfield of the $p$-th cyclotomic field](intermediate-field-of-finrank.md)
 
 ## Proof depends on
 
-- [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)
+- [Unique subfield of each degree in the $p$-th cyclotomic field](exists-unique-intermediate-field-finrank.md)
 
 ## Sources
 

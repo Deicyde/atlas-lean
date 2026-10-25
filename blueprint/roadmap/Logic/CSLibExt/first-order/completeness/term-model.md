@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Logic.FOL.TermModel
 ---
 
-# Term Model
+# Term model of a maximal consistent set
 
-The term model of a maximal consistent set.
+**Term model of a maximal consistent set.** For a maximal consistent set $\Delta$ of formulas
+with free variables in $\mathbb{N}$, the term model of $\Delta$ is the set of terms with
+variables in $\mathbb{N}$ modulo the equivalence relation that identifies $s$ and $t$ when the
+formula $s = t$ belongs to $\Delta$.
 
 ## Depends on
 
-- [Maximal Consistent](../consistency/maximal-consistent.md)
+- [Maximal consistent set](../consistency/maximal-consistent.md)
 
 ## Proof depends on
 
-- [Term Setoid](term-setoid.md)
+- [Provable equality of terms](term-setoid.md)
 
 ## Sources
 

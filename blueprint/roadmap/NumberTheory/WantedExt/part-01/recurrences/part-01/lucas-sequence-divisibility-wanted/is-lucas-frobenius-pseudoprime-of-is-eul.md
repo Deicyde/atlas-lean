@@ -16,7 +16,7 @@ integer; the source's Definition 3.7 is stated for positive odd bases).
 - [Is Euler Lucas Pseudoprime](is-euler-lucas-pseudoprime.md)
 - [Is Euler Pseudoprime](is-euler-pseudoprime.md)
 - [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources

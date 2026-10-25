@@ -5,5 +5,5 @@ navigation: module
 
 # Generalized Bi Periodic Fibonacci Period
 
-- [Generalized Bi Periodic Fibonacci period dvd general](generalized-bi-periodic-fibonacci-period.md)
-- [Generalized Bi Periodic Fibonacci period dvd](generalized-bi-periodic-fibonacci-period-2.md)
+- [Period of a generalized bi-periodic Fibonacci sequence modulo a prime, given the roots](generalized-bi-periodic-fibonacci-period.md)
+- [Period of a generalized bi-periodic Fibonacci sequence modulo a prime](generalized-bi-periodic-fibonacci-period-2.md)

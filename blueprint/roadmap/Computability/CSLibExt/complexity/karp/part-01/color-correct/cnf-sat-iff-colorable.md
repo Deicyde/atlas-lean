@@ -19,8 +19,8 @@ construction emits an edge between them in either order.
 - [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 - [The SAT-to-3-COLOR graph construction](../color/col-st-2.md)
 - [Graph of an edge list](../color/edge-graph.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -38,7 +38,7 @@ construction emits an edge between them in either order.
 - [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 - [Coloring an OR gadget](or-gadget-colors.md)
 - [Sound col Or](sound-col-or.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.oddHarmonic_eq_harmonic
 ---
 
-# Odd Harmonic eq harmonic
+# Odd harmonic numbers in terms of harmonic numbers
 
-`O_n = H_{2n} - H_n / 2`.
+**Odd harmonic numbers in terms of harmonic numbers.** For every natural number $n$, the odd
+harmonic number $O_n$ and the harmonic numbers $H_k = \sum_{j=1}^{k} \frac{1}{j}$ satisfy
+$O_n = H_{2n} - \frac{H_n}{2}$.
 
 ## Depends on
 
-- [Odd Harmonic](odd-harmonic.md)
+- [Odd harmonic numbers](odd-harmonic.md)
 
 ## Proof depends on
 
-- [Odd Harmonic succ](odd-harmonic-succ.md)
-- [Odd Harmonic zero](odd-harmonic-zero.md)
+- [Recurrence for the odd harmonic numbers](odd-harmonic-succ.md)
+- [The zeroth odd harmonic number](odd-harmonic-zero.md)
 
 ## Sources
 

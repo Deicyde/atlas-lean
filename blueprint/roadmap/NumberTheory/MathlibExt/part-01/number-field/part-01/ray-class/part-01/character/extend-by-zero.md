@@ -6,20 +6,24 @@ statement: formalized
 lean: NumberField.Modulus.extendByZero
 ---
 
-# Extend By Zero
+# Extension by zero of a ray class character
 
-Extension by zero to all (unit) fractional ideals.
+**Extension by zero of a ray class character.** Let $\chi$ be a ray class character of a
+modulus $m$ of a number field $K$. Its extension by zero assigns to a nonzero fractional ideal
+$\mathfrak a$ of $K$ the complex number $\chi([\mathfrak a])$ if $\mathfrak a$ is coprime to the
+finite part of $m$, where $[\mathfrak a]$ is the ray class of $\mathfrak a$, and the value $0$
+otherwise.
 
 ## Depends on
 
-- [Ray Class Character](ray-class-character.md)
+- [Ray class character](ray-class-character.md)
 
 ## Proof depends on
 
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Class Map](../group/ray-class-map.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray class map](../group/ray-class-map.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

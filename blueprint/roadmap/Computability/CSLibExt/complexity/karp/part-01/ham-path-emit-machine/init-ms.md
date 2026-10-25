@@ -15,7 +15,7 @@ counters zero.
 ## Depends on
 
 - [Quiescent states of the HAMPATH emitter](ms.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

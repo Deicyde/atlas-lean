@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N9_eq
 ---
 
-# N9 eq
+# Exact formula for the scaled factorial argument $N_9$
 
-`N9m m n = 9 * Q9 * n / m` when `m ∣ Q9`.
+**Exact formula for the scaled factorial argument $N_9$.** Let $Q_9 = 210$ and, for natural
+numbers $m$ and $n$, let $N_9(m, n) = 9 n \lfloor Q_9 / m \rfloor$. If $m \ge 1$ and $m$ divides
+$Q_9$, then $N_9(m, n) = \lfloor 9 Q_9 n / m \rfloor$.
 
 ## Depends on
 
-- [N9m](n9m.md)
-- [Q9](../grid/q9.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

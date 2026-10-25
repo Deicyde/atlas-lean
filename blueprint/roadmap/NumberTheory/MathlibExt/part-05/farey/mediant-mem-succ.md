@@ -14,14 +14,14 @@ member of the next Farey sequence.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
-- [Farey Finset](farey-finset.md)
+- [Farey neighbors](is-farey-neighbor.md)
+- [Farey set](farey-finset.md)
 - [Mediant](mediant.md)
 
 ## Proof depends on
 
 - [Mediant not mem](mediant-not-mem.md)
-- [Mem farey Finset iff](mem-farey-finset-iff.md)
+- [Membership in the Farey set](mem-farey-finset-iff.md)
 
 ## Sources
 

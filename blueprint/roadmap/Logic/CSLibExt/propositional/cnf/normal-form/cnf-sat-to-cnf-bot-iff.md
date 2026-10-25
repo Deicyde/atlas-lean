@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.cnfSat_toCNF_bot_iff
 ---
 
-# Cnf Sat to CNF bot iff
+# Satisfiability of a CNF with falsum false
 
-With the atom `⊥` read as false: adding the unit clause `¬⊥` gives a CNF that is
-satisfiable iff `A` has a model with `⊥` false.
+**Satisfiability of a CNF with falsum false.** Let the atoms have a distinguished atom $\bot$
+and let $\iota$ be an injective numbering of the atoms by natural numbers. For every proposition
+$A$, the CNF consisting of the unit clause with the single negative literal on variable
+$\iota(\bot)$ followed by the clauses of the CNF of $A$ (atom $a$ read as variable $\iota(a)$) is
+satisfiable if and only if some valuation $v$ of the atoms with $v(\bot)$ false makes $A$ true.
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
-- [CNFSat](../basic/cnfsat.md)
-- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
-- [To CNF](to-cnf.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
+- [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
+- [CNF of a proposition](to-cnf.md)
 
 ## Proof depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Satisfies](../semantics/satisfies-3.md)
 - [Satisfies](../semantics/satisfies-2.md)
 - [Equivalent CNF](satisfies-to-cnf-iff.md)
-- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

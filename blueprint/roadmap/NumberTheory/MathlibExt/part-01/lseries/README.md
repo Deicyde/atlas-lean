@@ -10,4 +10,4 @@ article_id: af_530d28b56390d29087154788
 - [Dirichlet Subconvexity](dirichlet-subconvexity/README.md)
 - [Prime Log](prime-log/README.md)
 - [Riemann Xi](riemann-xi/README.md)
-- [Riemann Zeta](meromorphic-on-riemann-zeta.md)
+- [Meromorphy of the Riemann zeta function](meromorphic-on-riemann-zeta.md)

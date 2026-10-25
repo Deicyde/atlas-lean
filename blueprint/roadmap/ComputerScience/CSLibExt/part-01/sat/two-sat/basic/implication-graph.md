@@ -16,7 +16,7 @@ $\varphi$ with an implication edge from $l$ to $m$, read from the adjacency tabl
 
 - [Directed adjacency graph](../../../lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
 - [Literals over the variables of a formula](lit.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -24,8 +24,8 @@ $\varphi$ with an implication edge from $l$ to $m$, read from the adjacency tabl
 - [List of the literals of a CNF formula](lit-list.md)
 - [Duplicate-free list of the variables of a CNF formula](var-list.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Variables of a clause](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 
 ## Sources
 

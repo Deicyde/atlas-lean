@@ -6,9 +6,10 @@ proof: formalized
 lean: GaussianInt.gaussianInt_isUnit_iff
 ---
 
-# Gaussian Int is Unit iff
+# Units of the Gaussian integers
 
-The units of `ℤ[i]` are exactly `1`, `-1`, `i`, and `-i`.
+**Units of the Gaussian integers.** A Gaussian integer $x \in \mathbb{Z}[i]$ is a unit if
+and only if $x$ is one of $1$, $-1$, $i$ and $-i$.
 
 ## Depends on
 

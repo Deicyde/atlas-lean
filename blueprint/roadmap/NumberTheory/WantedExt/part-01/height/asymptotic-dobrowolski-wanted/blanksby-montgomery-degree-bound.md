@@ -12,7 +12,7 @@ Source: Blanksby--Montgomery, the strict degree-dependent bound quoted by Voutie
 
 ## Depends on
 
-- [Algebraic Mahler Measure](../../../../MathlibExt/part-01/height/primitive-mahler/algebraic-mahler-measure.md)
+- [Algebraic Mahler measure](../../../../MathlibExt/part-01/height/primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

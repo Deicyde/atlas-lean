@@ -7,9 +7,12 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_top_pow_primeCounting_lt_start_pow
 ---
 
-# Consecutive of factorial mul top pow prime Counting lt start pow
+# Prime-counting criterion for a large prime in a consecutive block
 
-Conditional consecutive form using the sharper `Nat.primeCounting n` exponent.
+**Prime-counting criterion for a large prime in a consecutive block.** Let $1 \le n < k$ be
+natural numbers and let $\pi(n)$ be the number of primes at most $n$. If
+$n! \cdot (k+n-1)^{\pi(n)} < k^n$, then some prime $p > n$ divides one of the integers
+$k, k+1, \dots, k+n-1$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
-- [Exists large prime dvd choose of factorial mul top pow prime Counting lt lower pow](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-4.md)
+- [From a large prime divisor of the binomial coefficient to one in the block](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+- [Large-prime criterion from the prime-counting bound](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-4.md)
 
 ## Sources
 

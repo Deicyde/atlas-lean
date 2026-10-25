@@ -7,23 +7,28 @@ proof: formalized
 lean: NumberField.Modulus.freeGroupToCoprime_surjective
 ---
 
-# Free Group To Coprime surjective
+# The free group on the coprime primes surjects onto the coprime ideals
 
-The free-group map surjects onto the coprime ideals.
+**The free group on the coprime primes surjects onto the coprime ideals.** Let
+$\mathfrak m$ be a modulus of a number field $K$, let $P$ be the set of nonzero prime ideals
+of the ring of integers $\mathcal O_K$ that do not divide the finite part of $\mathfrak m$, and
+let $I_K^{\mathfrak m}$ be the group of invertible fractional ideals of $K$ coprime to the
+finite part of $\mathfrak m$. The homomorphism $F(P) \to I_K^{\mathfrak m}$ from the free group
+on $P$ sending each generator $\mathfrak p$ to $\mathfrak p$ is surjective.
 
 ## Depends on
 
-- [Coprime Primes](coprime-primes.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Free Group To Coprime](free-group-to-coprime.md)
+- [Primes coprime to a modulus](coprime-primes.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The free group on the coprime primes maps to the coprime ideals](free-group-to-coprime.md)
 
 ## Proof depends on
 
-- [Closure coprime Prime Units eq top](closure-coprime-prime-units-eq-top.md)
-- [Coprime Prime Units](coprime-prime-units.md)
-- [Coprime Prime Units eq range](coprime-prime-units-eq-range.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
+- [The coprime primes generate the coprime ideals](closure-coprime-prime-units-eq-top.md)
+- [Prime coprime units](coprime-prime-units.md)
+- [The prime coprime units are the image of the coprime primes](coprime-prime-units-eq-range.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [The prime as a coprime fractional ideal](../prime-generators/prime-coprime-unit.md)
 
 ## Sources
 

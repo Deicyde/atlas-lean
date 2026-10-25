@@ -7,10 +7,13 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.second_residual_mid_has_large_prime_factor
 ---
 
-# Second residual mid has large prime factor
+# A block term with a large prime factor, middle range
 
-For `38 ≤ n < 945` and `k < 1291`, a prime-gap table supplies a block term
-with a prime divisor greater than `n`.
+**A block term with a large prime factor, middle range.** Let $n$ and $k$ be natural numbers
+with $38 \le n < 945$ and $n + 3 \le k < 1291$. Then there are a natural number $i < n$ and a
+prime $p > n$ such that $p$ divides $k + i$.
+
+The witness comes from a table of prime gaps.
 
 ## Depends on
 

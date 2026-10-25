@@ -16,7 +16,7 @@ The paper takes `r ≥ 1` and `x ≥ 1`; both sides vanish otherwise, so these h
 
 ## Depends on
 
-- [Is Completely Multiplicative](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
+- [Completely multiplicative arithmetic function](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
 
 ## Sources
 

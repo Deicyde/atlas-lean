@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_sixteen
 ---
 
-# Sigma Biunitary sixteen
+# The biunitary divisor sum of $16$
 
-`σ**(16) = 1 + 2 + 8 + 16 = 27`.
+**The biunitary divisor sum of $16$.** The sum $\sigma^{**}(16)$ of the biunitary divisors of
+$16$ equals $1 + 2 + 8 + 16 = 27$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Sources
 

@@ -7,20 +7,25 @@ proof: formalized
 lean: NumberField.Modulus.integralUnitsToRayQuotient_ker
 ---
 
-# Integral Units To Ray Quotient ker
+# Kernel of the ray-quotient map on integral units
 
-Kernel of the quotient endpoint is the ray-one unit subgroup.
+**Kernel of the ray-quotient map on integral units.** Let $\mathfrak m$ be a modulus of a
+number field $K$, let $K_{\mathfrak m} \le K^\times$ be the group of ray elements and
+$K_{\mathfrak m,1} \le K_{\mathfrak m}$ the ray-one subgroup. The kernel of the homomorphism
+$\mathcal O_K^\times \to K_{\mathfrak m}/K_{\mathfrak m,1}$ sending a unit of the ring of integers
+$\mathcal O_K$ to its coset is the subgroup of ray-one integral units, the units of $\mathcal O_K$
+that lie in $K_{\mathfrak m,1}$.
 
 ## Depends on
 
-- [Integral Ray One Units](integral-ray-one-units.md)
-- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
-- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
+- [Ray-one integral units](integral-ray-one-units.md)
+- [Map from integral units to the ray quotient](integral-units-to-ray-quotient.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
+- [Ray-one subgroup](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Proof depends on
 
-- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+- [Integral units as ray elements](integral-units-to-ray-elements.md)
 
 ## Sources
 

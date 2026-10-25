@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Logic.PL.MaximalConsistent.mem_or_neg_mem
 ---
 
-# Mem or neg mem
+# Each proposition or its negation lies in a maximal consistent set
 
-A maximal consistent set contains each proposition or its negation.
+**Each proposition or its negation lies in a maximal consistent set.** Let $T$ be a theory and
+$M$ a maximal set of propositions consistent relative to $T$. Then for every proposition $A$,
+either $A \in M$ or $\neg A \in M$, where $\neg A$ is the proposition $A \to \bot$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ A maximal consistent set contains each proposition or its negation.
 
 ## Proof depends on
 
-- [Exists refutation](exists-refutation.md)
-- [Mem of derivable In](mem-of-derivable-in.md)
+- [Propositions outside a maximal consistent set are refuted by it](exists-refutation.md)
+- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
 
 ## Sources
 

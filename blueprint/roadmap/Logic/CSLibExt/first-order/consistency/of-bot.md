@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Logic.FOL.Provable.of_bot
 ---
 
-# Of bot
+# Ex falso for provability from sets
 
-Ex falso: `⊥` proves everything.
+**Ex falso for provability from sets.** Let $L$ be a first-order language, let $\alpha$ be an
+infinite type of variables, and let $S$ be a set of formulas of $L$ with free variables in
+$\alpha$. If $S$ proves $\bot$, then $S$ proves every formula $\varphi$.
 
 ## Depends on
 
-- [Provable](../natural-deduction/provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Proof depends on
 

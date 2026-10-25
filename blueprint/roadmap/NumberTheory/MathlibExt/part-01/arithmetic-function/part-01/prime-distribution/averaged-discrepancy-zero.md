@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeDistribution.averagedDiscrepancy_zero
 ---
 
-# Averaged Discrepancy zero
+# The averaged discrepancy with cutoff zero vanishes
 
-There are no positive moduli below the cutoff zero.
+**The averaged discrepancy with cutoff zero vanishes.** For every finitely supported real
+sequence $\alpha$ indexed by $\mathbb{N}$, the averaged discrepancy of $\alpha$ with cutoff
+$Q = 0$ equals $0$, since there are no positive moduli $q \le 0$.
 
 ## Depends on
 
-- [Averaged Discrepancy](averaged-discrepancy.md)
+- [Averaged discrepancy](averaged-discrepancy.md)
 
 ## Proof depends on
 
-- [Primitive Discrepancy](primitive-discrepancy.md)
+- [Primitive discrepancy](primitive-discrepancy.md)
 
 ## Sources
 

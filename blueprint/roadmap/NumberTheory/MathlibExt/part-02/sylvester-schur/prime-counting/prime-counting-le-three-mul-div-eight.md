@@ -7,10 +7,13 @@ proof: formalized
 lean: Nat.SylvesterSchur.primeCounting_le_three_mul_div_eight
 ---
 
-# Prime Counting le three mul div eight
+# Erdős's $3r/8$ prime-counting bound
 
-Erdős's `3r/8` prime-counting estimate.  The infinite tail follows from the
-residue-class estimate modulo `30`; the range `38 ≤ r < 91` is checked directly.
+**Erdős's $3r/8$ prime-counting bound.** For every natural number $r \ge 38$, the number
+$\pi(r)$ of primes $p \le r$ satisfies $\pi(r) \le \lfloor 3r/8 \rfloor$.
+
+The infinite tail follows from the residue-class estimate modulo $30$; the range
+$38 \le r < 91$ is checked directly.
 
 ## Depends on
 

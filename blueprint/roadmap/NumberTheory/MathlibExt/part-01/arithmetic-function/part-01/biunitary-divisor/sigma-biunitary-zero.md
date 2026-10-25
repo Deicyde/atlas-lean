@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_zero
 ---
 
-# Sigma Biunitary zero
+# The biunitary divisor sum of $0$
 
-`σ**(0) = 0`.
+**The biunitary divisor sum of $0$.** The sum $\sigma^{**}(0)$ of the biunitary divisors of $0$
+equals $0$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Proof depends on
 
-- [Biunitary Divisors](biunitary-divisors.md)
-- [Biunitary Divisors zero](biunitary-divisors-zero.md)
+- [Biunitary divisors](biunitary-divisors.md)
+- [Zero has no biunitary divisors](biunitary-divisors-zero.md)
 
 ## Sources
 

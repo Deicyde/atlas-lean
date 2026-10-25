@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry14LagrangeSeries.lagrangeSeriesCoefficient_of_ne_zero
 ---
 
-# Lagrange Series Coefficient of ne zero
+# Lagrange series coefficients of positive degree
 
-The positive-degree Lagrange-series coefficient in product form.
+**Lagrange series coefficients of positive degree.** For all real numbers $p$, $q$, $n$ and
+every natural number $k \ne 0$, the Lagrange series coefficient of degree $k$ is
+
+$$C_{p,q}(n, k) = n \prod_{j=1}^{k-1} (n + k p - j q).$$
 
 ## Depends on
 
-- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
+- [Lagrange series coefficients](lagrange-series-coefficient.md)
 
 ## Sources
 

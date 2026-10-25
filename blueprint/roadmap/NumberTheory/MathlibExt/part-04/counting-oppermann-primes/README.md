@@ -5,6 +5,6 @@ navigation: module
 
 # Counting Oppermann Primes
 
-- [Oppermann Lower Prime Count](oppermann-lower-prime-count.md)
-- [Oppermann Upper Prime Count](oppermann-upper-prime-count.md)
-- [Oppermann Asymptotic](oppermann-asymptotic.md)
+- [Primes in the lower Oppermann interval](oppermann-lower-prime-count.md)
+- [Primes in the upper Oppermann interval](oppermann-upper-prime-count.md)
+- [Main term for the Oppermann prime counts](oppermann-asymptotic.md)

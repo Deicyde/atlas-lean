@@ -30,7 +30,7 @@ for every real $R$ there is a real $r > R$ with $M(r) \le \mu(r) (\log \mu(r))^{
 - [Majorant bound off an exceptional set](../wiman-majorant-bound-off-exceptional-set.md)
 - [The maximum modulus is at most the radial Taylor majorant](../wiman-maximum-modulus-le-wiman-majorant.md)
 - [Cauchy's inequality for the maximum term](../wiman-maximum-term-le-wiman-maximum-modu.md)
-- [Finite](../../../../../../../MeasureTheory/MathlibExt/measure/lebesgue/exists-gt-not-mem-of-volume-lt-top.md)
+- [Sets of finite Lebesgue measure contain no right half-line](../../../../../../../MeasureTheory/MathlibExt/measure/lebesgue/exists-gt-not-mem-of-volume-lt-top.md)
 
 ## Sources
 

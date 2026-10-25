@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Logic.FOL.provable_of_models
 ---
 
-# Completeness
+# Completeness of first-order natural deduction for theories
 
-**Completeness.** If a formula over `ℕ` holds in every model of a Mathlib theory `T` (in the
-universe `max u v`), it is provable from the sentences of `T`.
+**Completeness of first-order natural deduction for theories.** Let $L$ be a language with
+countably many function and relation symbols, whose function symbols live in universe $u$ and
+relation symbols in universe $v$. Let $T$ be a theory of $L$ and $\varphi$ a formula of $L$ with
+free variables in $\mathbb{N}$. If $\varphi$ holds under every assignment of the variables in
+every nonempty model of $T$ whose carrier lies in universe $\max(u, v)$, then $\varphi$ is
+provable from the sentences of $T$, viewed as formulas over $\mathbb{N}$.
 
 ## Depends on
 
-- [Provable](../natural-deduction/provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Proof depends on
 
-- [Strong completeness](provable-of-entails.md)
+- [Strong completeness of first-order natural deduction](provable-of-entails.md)
 
 ## Sources
 

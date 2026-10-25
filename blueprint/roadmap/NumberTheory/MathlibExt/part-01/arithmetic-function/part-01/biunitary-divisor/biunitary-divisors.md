@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.biunitaryDivisors
 ---
 
-# Biunitary Divisors
+# Biunitary divisors
 
-The biunitary divisors of `n`: the divisors `d` of `n` with `gcd₁(d, n / d) = 1`.
+**Biunitary divisors.** For a natural number $n$, the biunitary divisors of $n$ are the
+divisors $d$ of $n$ with $\gcd_1(d, n/d) = 1$, where $\gcd_1(a, b)$ denotes the greatest common
+unitary divisor of $a$ and $b$. For $n = 0$ the set is empty.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Sources
 

@@ -7,14 +7,16 @@ proof: formalized
 lean: Rat.Place.absoluteValue_infinite_apply
 ---
 
-# Absolute Value infinite apply
+# Absolute value at the infinite rational place
 
-Evaluation at infinity.
+**Absolute value at the infinite rational place.** For every $q \in \mathbb{Q}$, the absolute
+value attached to the infinite place of $\mathbb{Q}$, evaluated at $q$, equals the ordinary absolute
+value $|q|$ of $q$ viewed as a real number.
 
 ## Depends on
 
-- [Place](place.md)
-- [Absolute Value](absolute-value.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Absolute value at a rational place](absolute-value.md)
 
 ## Sources
 

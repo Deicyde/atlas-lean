@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.coe_le_asymptoticDobrowolskiConstant
 ---
 
-# Coe le asymptotic Dobrowolski Constant
+# Coefficients are bounded by the asymptotic Dobrowolski constant
 
-Every admissible real coefficient is below the extended-real supremum.
+**Coefficients are bounded by the asymptotic Dobrowolski constant.** Every real asymptotic
+Dobrowolski coefficient $c$ satisfies $c \le$ the asymptotic Dobrowolski constant, as extended
+real numbers.
 
 ## Depends on
 
-- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
-- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+- [Asymptotic Dobrowolski coefficients](is-asymptotic-dobrowolski-coefficient.md)
+- [Asymptotic Dobrowolski constant](asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

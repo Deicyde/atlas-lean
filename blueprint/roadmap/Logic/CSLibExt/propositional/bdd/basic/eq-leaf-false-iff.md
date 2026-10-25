@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.eq_leaf_false_iff
 ---
 
-# Eq leaf false iff
+# Unsatisfiable reduced ordered diagrams
 
-A reduced ordered diagram is unsatisfiable iff it is the leaf `false`.
+**Unsatisfiable reduced ordered diagrams.** A reduced ordered binary decision diagram $t$ is
+the leaf with value false if and only if $t$ has value false under every assignment of Boolean
+values to the variables.
 
 ## Depends on
 
-- [BDD](bdd.md)
-- [Is ROBDD](is-robdd.md)
-- [Eval](eval.md)
+- [Binary decision diagram](bdd.md)
+- [Reduced ordered binary decision diagram](is-robdd.md)
+- [Evaluation of a binary decision diagram](eval.md)
 
 ## Proof depends on
 
-- [Ordered From](ordered-from.md)
-- [Reduced](reduced.md)
-- [Eq iff eval eq](eq-iff-eval-eq.md)
+- [Diagrams ordered from a variable](ordered-from.md)
+- [Reduced diagrams](reduced.md)
+- [Reduced ordered diagrams are equal iff they have the same values](eq-iff-eval-eq.md)
 
 ## Sources
 

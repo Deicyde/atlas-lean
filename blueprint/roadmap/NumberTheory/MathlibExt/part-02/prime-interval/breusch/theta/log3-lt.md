@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log3_lt
 ---
 
-# Log3 lt
+# Upper bound for log 3
 
-Certified bound `log 3 < 1.0987`.
+**Upper bound for log 3.** The natural logarithm of $3$ satisfies $\log 3 < 1.0987$.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log lt of exp gt](log-lt-of-exp-gt.md)
-- [Lt exp of pow lt](lt-exp-of-pow-lt.md)
+- [Bounding a logarithm above by the exponential](log-lt-of-exp-gt.md)
+- [Exponential lower bound from a power comparison](lt-exp-of-pow-lt.md)
 
 ## Sources
 

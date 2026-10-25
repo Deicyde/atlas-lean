@@ -7,23 +7,26 @@ proof: formalized
 lean: EgyptianFraction.IsStrictUnderapproximation.toIsNondecreasingUnderapproximation
 ---
 
-# To Is Nondecreasing Underapproximation
+# Strict underapproximations are nondecreasing underapproximations
 
-Every nondecreasing denominator tuple containing a strictly increasing one
-is itself nondecreasing; hence a strict underapproximation is also a
-nondecreasing underapproximation (paper's `𝓔ₙ^< ⊆ 𝓔ₙ^≤` together with the
-same sum bound).
+**Strict underapproximations are nondecreasing underapproximations.** Let $n$ be a natural
+number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$
+is a strict underapproximation of $\lambda$, then it is also a nondecreasing
+underapproximation of $\lambda$.
+
+This is the inclusion of strictly increasing denominator tuples among nondecreasing ones,
+together with the same bound on the sum of reciprocals.
 
 ## Depends on
 
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
-- [Is Strict Underapproximation](is-strict-underapproximation.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
+- [Egyptian underapproximations with strictly increasing denominators](is-strict-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
-- [Is Strict Egyptian](is-strict-egyptian.md)
-- [Is Strict Egyptian](is-strict-egyptian-2.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
+- [Strictly increasing Egyptian denominator tuples](is-strict-egyptian.md)
+- [Strict underapproximations have strictly increasing Egyptian denominators](is-strict-egyptian-2.md)
 - [Nonempty](nonempty-2.md)
 - [Sum lt](sum-lt-2.md)
 - [Target pos](target-pos-2.md)

@@ -7,9 +7,13 @@ proof: formalized
 lean: LinearMap.IsPerfPair.existsUnique_dualBasis
 ---
 
-# Exists Unique dual Basis
+# Existence and uniqueness of the dual basis for a perfect pairing
 
-Unique existence of a basis of `M` dual to `b` with respect to `B`.
+**Existence and uniqueness of the dual basis for a perfect pairing.** Let $A$ be a
+commutative ring, let $M$ and $N$ be $A$-modules, let $B : M \times N \to A$ be a perfect
+pairing, and let $b = (b_i)_{i \in \iota}$ be a basis of $N$ indexed by a finite type $\iota$.
+Then there is exactly one basis $(b'_i)_{i \in \iota}$ of $M$ such that for all
+$i, j \in \iota$ the value $B(b'_i, b_j)$ equals $1$ if $j = i$ and $0$ otherwise.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dual Basis](dual-basis.md)
-- [Dual Basis apply](dual-basis-apply.md)
-- [Eq dual Basis of](eq-dual-basis-of.md)
+- [Dual basis with respect to a perfect pairing](dual-basis.md)
+- [Evaluation of the dual basis](dual-basis-apply.md)
+- [Uniqueness of the dual basis](eq-dual-basis-of.md)
 
 ## Sources
 

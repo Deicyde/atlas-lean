@@ -7,23 +7,24 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M9_le
 ---
 
-# M9 le
+# Grid bound $G_9 \le 3$
 
-Global grid upper bound: `G9 j ≤ 3` for all `j < 18900`.
+**Grid bound $G_9 \le 3$.** For every natural number $j < 18900$, the grid function satisfies
+$G_9(j) \le 3$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Proof depends on
 
-- [M9 block0](m9-block0.md)
-- [M9 block1](m9-block1.md)
-- [M9 block2](m9-block2.md)
-- [M9 block3](m9-block3.md)
-- [M9 block4](m9-block4.md)
-- [M9 block5](m9-block5.md)
-- [M9 block6](m9-block6.md)
+- [Grid bound $G_9 \le 3$ for $0 \le j < 2700$](m9-block0.md)
+- [Grid bound $G_9 \le 3$ for $2700 \le j < 5400$](m9-block1.md)
+- [Grid bound $G_9 \le 3$ for $5400 \le j < 8100$](m9-block2.md)
+- [Grid bound $G_9 \le 3$ for $8100 \le j < 10800$](m9-block3.md)
+- [Grid bound $G_9 \le 3$ for $10800 \le j < 13500$](m9-block4.md)
+- [Grid bound $G_9 \le 3$ for $13500 \le j < 16200$](m9-block5.md)
+- [Grid bound $G_9 \le 3$ for $16200 \le j < 18900$](m9-block6.md)
 
 ## Sources
 

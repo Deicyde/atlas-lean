@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Logic.PL.CNFClause
 ---
 
-# CNFClause
+# CNF clause
 
-A CNF clause: a list of literals `(variable index, polarity)`.
+**CNF clause.** A CNF clause is a finite list of literals, each a pair $(x, b)$ of a variable
+index $x \in \mathbb{N}$ and a polarity $b \in \{\mathrm{true}, \mathrm{false}\}$.
 
 ## Depends on
 

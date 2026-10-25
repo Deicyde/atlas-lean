@@ -6,15 +6,16 @@ statement: formalized
 lean: NumberField.Set.HasPolarDensity
 ---
 
-# Has Polar Density
+# Polar density
 
-Polar density of a set of height-one primes, via a meromorphic continuation.
+**Polar density.** Let $K$ be a number field, let $S$ be a set of height-one primes of the
+ring of integers of $K$, and let $\zeta_S$ be the partial Dedekind zeta function of $S$. A
+rational number $\rho$ is a polar density of $S$ when there exist a positive integer $n$, an
+integer $m$ and a function $F : \mathbb{C} \to \mathbb{C}$ such that $F$ is meromorphic at $1$,
+$F(s) = \zeta_S(s)^n$ for all $s$ with $\operatorname{Re} s > 1$ in some neighbourhood of $1$,
+the meromorphic order of $F$ at $1$ equals $-m$, and $\rho = m / n$.
 
-`HasPolarDensity S ρ` asserts the existence of a positive exponent `n : ℕ+`, a
-pole order `m : ℤ`, and an actual meromorphic continuation `F : ℂ → ℂ` such that
-`F` is meromorphic at `1`, agrees with the pointwise `n`-th power of the partial
-Dedekind zeta function on the right-half-plane germ at `1`, has
-`meromorphicOrderAt F 1 = -m`, and `ρ = m / n`.
+Meromorphy is required of the continuation $F$, not of the Euler product defining $\zeta_S$.
 
 ## Depends on
 
@@ -22,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partial Dedekind Zeta](../partial-dedekind-zeta.md)
+- [Partial Dedekind zeta function](../partial-dedekind-zeta.md)
 
 ## Sources
 

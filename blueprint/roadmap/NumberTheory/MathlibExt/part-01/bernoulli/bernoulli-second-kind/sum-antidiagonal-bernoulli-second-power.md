@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.sum_antidiagonal_bernoulliSecondPowerSeries_coeff
 ---
 
-# Sum antidiagonal bernoulli Second Power Series coeff
+# Coefficient identity for the generating function of the Bernoulli numbers of the second kind
 
-Characteristic coefficient identity for
-`bernoulliSecondPowerSeries`, from `bernoulliSecondPowerSeries_mul_mk`:
-the Cauchy product of its coefficients with `(-1) ^ n / (n + 1)` is the
-Kronecker delta at `0`.
+**Coefficient identity for the generating function of the Bernoulli numbers of the second
+kind.** Let $g_i$ be the coefficient of $t^i$ in the generating function $G(t) \in \mathbb{Q}[[t]]$
+of the Bernoulli numbers of the second kind. For every natural number $n$, the sum of
+$g_i \cdot (-1)^j / (j + 1)$ over all pairs $(i, j)$ of natural numbers with $i + j = n$ equals
+$1$ if $n = 0$ and $0$ if $n \ge 1$.
 
 ## Depends on
 
-- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+- [Generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series.md)
 
 ## Proof depends on
 
-- [Bernoulli Second Power Series mul mk](bernoulli-second-power-series-mul-mk.md)
+- [Defining identity of the generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series-mul-mk.md)
 
 ## Sources
 

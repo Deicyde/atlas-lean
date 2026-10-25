@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gcdUnitary_comm
 ---
 
-# Gcd Unitary comm
+# Symmetry of the greatest common unitary divisor
 
-`gcd₁` is symmetric.
+**Symmetry of the greatest common unitary divisor.** For all natural numbers $a$ and $b$, the
+greatest common unitary divisor satisfies $\gcd_1(a, b) = \gcd_1(b, a)$.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Proof depends on
 

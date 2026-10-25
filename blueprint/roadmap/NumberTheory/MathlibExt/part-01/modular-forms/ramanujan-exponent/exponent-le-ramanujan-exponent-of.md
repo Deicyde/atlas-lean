@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.exponent_le_ramanujanExponentOf
 ---
 
-# Exponent le ramanujan Exponent Of
+# Local exponents are bounded by the Ramanujan exponent
 
-Every local exponent is bounded by the family's Ramanujan exponent.
+**Local exponents are bounded by the Ramanujan exponent.** For every local-exponent family $F$
+and every index $i$, the local exponent $m_i$ of $F$ at $i$ is at most the Ramanujan exponent of
+$F$.
 
 ## Depends on
 
-- [Local Exponent Family](local-exponent-family.md)
-- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+- [Family of local exponents](local-exponent-family.md)
+- [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 
 ## Proof depends on
 

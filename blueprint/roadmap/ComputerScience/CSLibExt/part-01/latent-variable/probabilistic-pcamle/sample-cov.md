@@ -19,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Sample mean](sample-mean.md)
-- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+- [Weighted scatter matrix](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.reverse_entry
 ---
 
-# Reverse entry
+# Entries of the reversed index
 
-An entry in the reversed index is the corresponding entry counted from
-the other end.
+**Entries of the reversed index.** Let $k = (k_0, \dots, k_{d-1})$ be an index of depth $d$;
+its reverse also has depth $d$. For every $i < d$, the $i$-th entry of the reverse of $k$ is
+$k_{d-1-i}$.
 
 ## Depends on
 
-- [Index](../index/index.md)
-- [Depth](../index/depth.md)
-- [Entry](../series/entry.md)
-- [Reverse](reverse.md)
+- [Multiple-zeta index](../index/index.md)
+- [Depth of an index](../index/depth.md)
+- [Entry of a multiple-zeta index](../series/entry.md)
+- [Reversed index](reverse.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: BinaryQuadraticForm.imaginaryRoot_sq
 ---
 
-# Imaginary Root sq
+# The imaginary root squares to $-D$
 
-The concrete chosen root squares to the requested negative radicand.
+**The imaginary root squares to $-D$.** For every natural number $D$, the complex number
+$i\sqrt{D}$ satisfies $(i\sqrt{D})^2 = -D$.
 
 ## Depends on
 
-- [Imaginary Root](imaginary-root.md)
+- [The imaginary square root of $-D$](imaginary-root.md)
 
 ## Sources
 

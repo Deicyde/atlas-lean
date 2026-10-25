@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.DirichletSubconvexity.dirichletSubconvexityExponent_le_of_admissible
 ---
 
-# Dirichlet Subconvexity Exponent le of admissible
+# Admissible exponents bound the Dirichlet subconvexity exponent
 
-Every admitted real exponent bounds the infimal exponent from above.
+**Admissible exponents bound the Dirichlet subconvexity exponent.** If a real number $\theta$
+is an admissible conductor-aspect exponent for primitive Dirichlet characters, then the
+conductor-aspect Dirichlet subconvexity exponent is at most $\theta$, as extended real numbers.
 
 ## Depends on
 
-- [Is Dirichlet Subconvexity Exponent](is-dirichlet-subconvexity-exponent.md)
-- [Dirichlet Subconvexity Exponent](dirichlet-subconvexity-exponent.md)
+- [Admissible exponents for Dirichlet central values](is-dirichlet-subconvexity-exponent.md)
+- [The conductor-aspect Dirichlet subconvexity exponent](dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

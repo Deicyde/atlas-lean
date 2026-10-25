@@ -6,28 +6,31 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.ofProposition_eq_iff
 ---
 
-# Of Proposition eq iff
+# Equal BDDs iff equal truth tables
 
-Two propositions have the same truth table iff their ROBDDs are equal; this decides
-truth-table equivalence.
+**Equal BDDs iff equal truth tables.** For propositions $A$ and $B$ over natural-number
+atoms, the binary decision diagrams of $A$ and $B$ are equal if and only if $A$ and $B$ have the
+same truth value under every valuation $\sigma : \mathbb{N} \to \mathrm{Bool}$.
+
+Comparing the diagrams therefore decides truth-table equivalence.
 
 ## Depends on
 
-- [BDD](bdd.md)
-- [Of Proposition](of-proposition.md)
-- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [Binary decision diagram](bdd.md)
+- [Diagram of a proposition](of-proposition.md)
+- [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Is ROBDD](is-robdd.md)
-- [Ordered From](ordered-from.md)
-- [Reduced](reduced.md)
-- [Apply](apply.md)
-- [Eq iff eval eq](eq-iff-eval-eq.md)
-- [Eval](eval.md)
-- [Eval apply](eval-apply.md)
-- [Ordered From apply](ordered-from-apply.md)
-- [Reduced apply](reduced-apply.md)
+- [Reduced ordered binary decision diagram](is-robdd.md)
+- [Diagrams ordered from a variable](ordered-from.md)
+- [Reduced diagrams](reduced.md)
+- [Bryant's apply operation](apply.md)
+- [Reduced ordered diagrams are equal iff they have the same values](eq-iff-eval-eq.md)
+- [Evaluation of a binary decision diagram](eval.md)
+- [Apply computes the operation pointwise](eval-apply.md)
+- [Apply preserves orderedness](ordered-from-apply.md)
+- [Apply returns reduced diagrams](reduced-apply.md)
 
 ## Sources
 

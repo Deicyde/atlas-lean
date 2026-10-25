@@ -6,17 +6,20 @@ statement: formalized
 lean: NumberField.Modulus.CongruenceSubgroup.toAmbientSubgroup
 ---
 
-# To Ambient Subgroup
+# Congruence subgroup as a subgroup of all invertible fractional ideals
 
-Ambient subgroup of all units via the subtype inclusion.
+**Congruence subgroup as a subgroup of all invertible fractional ideals.** For a congruence
+subgroup $H$ for a modulus $\mathfrak m$ of a number field $K$, this is the image of $H$ under the
+inclusion of the group of invertible fractional ideals of $K$ coprime to the finite part of
+$\mathfrak m$ into the group of all invertible fractional ideals of $K$.
 
 ## Depends on
 
-- [Congruence Subgroup](congruence-subgroup.md)
+- [Congruence subgroup](congruence-subgroup.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

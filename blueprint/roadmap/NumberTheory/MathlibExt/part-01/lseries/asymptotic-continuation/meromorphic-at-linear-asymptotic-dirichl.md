@@ -7,21 +7,25 @@ proof: formalized
 lean: meromorphicAt_linearAsymptoticDirichletContinuation_one
 ---
 
-# Meromorphic At linear Asymptotic Dirichlet Continuation one
+# Meromorphy of the linear asymptotic continuation at $1$
 
-The continuation is meromorphic at `1`.
+**Meromorphy of the linear asymptotic continuation at $1$.** Let
+$a : \mathbb{N} \to \mathbb{C}$, $\rho \in \mathbb{C}$ and $\sigma \in \mathbb{R}$ with
+$\sigma < 1$, and suppose that the one-based partial sums $A(n) = \sum_{k=1}^{n} a(k)$ satisfy
+$A(n) - n\rho = O(n^{\sigma})$ as $n \to \infty$. Then the linear asymptotic Dirichlet
+continuation $L_{a,\rho}$ of $a$ with constant $\rho$ is meromorphic at $s = 1$.
 
 ## Depends on
 
-- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
-- [Linear Asymptotic Dirichlet Continuation](linear-asymptotic-dirichlet-continuation.md)
+- [Partial sums of a coefficient sequence](../abel-continuation/abel-partial-sum.md)
+- [Linear asymptotic Dirichlet continuation](linear-asymptotic-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Abel Continuation](../abel-continuation/abel-continuation.md)
-- [Analytic On abel Continuation](../abel-continuation/analytic-on-abel-continuation.md)
-- [Is Big O abel Partial Sum sub const](is-big-o-abel-partial-sum-sub-const.md)
-- [Linear Asymptotic Dirichlet Continuation eq inv sub mul](linear-asymptotic-dirichlet-continuation-2.md)
+- [Abel continuation of a Dirichlet series](../abel-continuation/abel-continuation.md)
+- [Analyticity of the Abel continuation](../abel-continuation/analytic-on-abel-continuation.md)
+- [Growth bound for the partial sums of a shifted sequence](is-big-o-abel-partial-sum-sub-const.md)
+- [Cleared-denominator form of the linear asymptotic continuation](linear-asymptotic-dirichlet-continuation-2.md)
 
 ## Sources
 

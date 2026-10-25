@@ -6,15 +6,18 @@ statement: formalized
 lean: NumberField.Modulus.rayClassMap
 ---
 
-# Ray Class Map
+# Ray class map
 
-Canonical projection onto the ray class group.
+**Ray class map.** For a modulus $\mathfrak m$ of a number field $K$, the ray class map is the
+canonical quotient homomorphism from the group of nonzero fractional ideals of $K$ coprime to the
+finite part of $\mathfrak m$ onto the ray class group of $\mathfrak m$, sending each such ideal to
+its class modulo the ray group of $\mathfrak m$.
 
 ## Depends on
 
-- [Ray Class Group](ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray class group](ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

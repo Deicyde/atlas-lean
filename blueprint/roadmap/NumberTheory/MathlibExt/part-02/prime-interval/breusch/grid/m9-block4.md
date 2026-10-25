@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M9_block4
 ---
 
-# M9 block4
+# Grid bound $G_9 \le 3$ for $10800 \le j < 13500$
 
-Grid upper bound `G9 ≤ 3` on the block `[10800, 13500)`.
+**Grid bound $G_9 \le 3$ for $10800 \le j < 13500$.** For every natural number $k < 2700$,
+the grid function satisfies $G_9(10800 + k) \le 3$; that is, $G_9(j) \le 3$ for all natural
+numbers $j$ with $10800 \le j < 13500$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Sources
 

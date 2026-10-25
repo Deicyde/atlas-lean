@@ -6,19 +6,20 @@ statement: formalized
 lean: Nat.IsFrobeniusProbablePrime
 ---
 
-# Is Frobenius Probable Prime
+# Frobenius probable prime
 
-Frobenius probable prime (pseudo1.tex lines 713-741).
-`f` is monic over the integers; degree and discriminant are `f.natDegree`
-and `f.discr`. `n` is odd, greater than one, and coprime to the natural
-absolute value of `f.eval 0 * f.discr`. All algorithm polynomials live over
-`ZMod n`: `fs 0` is the coefficientwise reduction of `f`; each `F i` is a
-greatest common monic divisor of `X ^ (n ^ i) - X` and `fs (i - 1)` with exact
-factorization `fs (i - 1) = F i * fs i`; the stage ends with `fs f.natDegree = 1`.
-The Frobenius step asks `F i ∣ (F i).comp (X ^ n)` for `2 ≤ i ≤ d`.
-With quotient witnesses `q`, each even `i` satisfies `natDegree (F i) = i * q i`,
-and the Jacobi step asks `(-1) ^ S = jacobiSym f.discr n` where `S` sums
-`q i` over the even indices, zero elsewhere.
+**Frobenius probable prime.** Let $f \in \mathbb{Z}[x]$ be a polynomial of degree $d$ with
+discriminant $\Delta$, and let $n$ be a natural number. Then $n$ is a Frobenius probable prime
+with respect to $f$ when $f$ is monic, $n$ is odd, $n > 1$, $n$ is coprime to $|f(0)\Delta|$,
+and there exist polynomials $F_i, f_i \in (\mathbb{Z}/n\mathbb{Z})[x]$ and natural numbers
+$q_i$, indexed by $i \in \mathbb{N}$, such that:
+- $f_0$ is the reduction of $f$ modulo $n$, and $f_d = 1$;
+- for each $i$ with $1 \le i \le d$, $F_i$ is a greatest common monic divisor of $x^{n^i} - x$
+  and $f_{i-1}$, and $f_{i-1} = F_i f_i$;
+- (Frobenius step) for each $i$ with $2 \le i \le d$, $F_i(x)$ divides $F_i(x^n)$;
+- for each even $i$ with $1 \le i \le d$, $\deg F_i = i q_i$;
+- (Jacobi step) $(-1)^S = \left(\frac{\Delta}{n}\right)$, the Jacobi symbol, where $S$ is the
+  sum of $q_i$ over the even $i$ with $1 \le i \le d$.
 
 ## Depends on
 
@@ -26,8 +27,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
+- [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FrobeniusPseudoprime](../../../../../sources/v2/MathlibExt.md)
+- pseudo1.tex lines 713-741.

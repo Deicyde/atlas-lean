@@ -7,14 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.binomial_harmonic_convolution
 ---
 
-# Binomial Harmonic Convolution
+# Binomial-harmonic convolution identity
 
-Binomial-harmonic convolution identity relating a weighted sum of harmonic
-numbers to a binomial multiple of a difference of harmonic numbers.
+**Binomial-harmonic convolution identity.** Let $H_m = \sum_{i=1}^{m} 1/i$ denote the $m$-th
+harmonic number. For natural numbers $k$ and $n$ with $1 \le k \le n$,
 
-The sum runs `ν = 1..n` via `Finset.Icc 1 n` under the source hypothesis
-`k ≤ n`.
-Proves `Wanted` entry `binomial_harmonic_convolution`.
+$$\sum_{\nu=1}^{n} \left(\binom{n+k-\nu-1}{n-1} - \binom{n+k-\nu-1}{k-1}\right) H_\nu =
+\binom{n+k}{k} (H_k - H_n).$$
 
 ## Depends on
 

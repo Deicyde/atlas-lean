@@ -7,14 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_dvd
 ---
 
-# W9 dvd
+# Entries of the divisor table for $210$ divide $210$
 
-Every first component of `w9` divides `Q9`.
+**Entries of the divisor table for $210$ divide $210$.** For every pair $(d, \varepsilon)$ in
+the Möbius divisor table $W_9$, $d$ divides $Q_9 = 210$.
 
 ## Depends on
 
-- [Q9](q9.md)
-- [W9](w9.md)
+- [The modulus $Q_9 = 210$](q9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

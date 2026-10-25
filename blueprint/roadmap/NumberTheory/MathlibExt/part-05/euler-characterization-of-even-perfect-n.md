@@ -7,17 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.euler_characterization_of_even_perfect_numbers
 ---
 
-# Even Perfect Numbers
+# Euler's theorem on even perfect numbers
 
-Euler's characterization of even perfect numbers: every even perfect
-number has the Euclid form `2 ^ (p - 1) * (2 ^ p - 1)` with `p` and
-`2 ^ p - 1` both prime.
-
-The paper re-proves Euler's theorem to set up its generalization to
-`α`-perfect numbers. The natural subtraction is safe since `p` prime
-gives `p ≥ 2`. The known even perfects below `10^5`
-(`6, 28, 496, 8128`) all match this form.
-Proves `Wanted` entry `euler_characterization_of_even_perfect_numbers`.
+**Euler's theorem on even perfect numbers.** Every even perfect number $N$ is of the form
+$N = 2^{p-1}(2^p - 1)$ for some natural number $p$ such that $p$ and $2^p - 1$ are both prime.
 
 ## Depends on
 

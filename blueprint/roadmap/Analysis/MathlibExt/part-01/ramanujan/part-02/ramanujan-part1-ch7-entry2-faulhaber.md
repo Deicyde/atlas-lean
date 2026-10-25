@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Riemann Zeta](../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
+- [Meromorphy of the Riemann zeta function](../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
 
 ## Sources
 

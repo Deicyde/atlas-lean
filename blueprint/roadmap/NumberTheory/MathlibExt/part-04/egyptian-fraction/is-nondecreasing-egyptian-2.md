@@ -7,14 +7,16 @@ proof: formalized
 lean: EgyptianFraction.IsNondecreasingUnderapproximation.isNondecreasingEgyptian
 ---
 
-# Is Nondecreasing Egyptian
+# Nondecreasing underapproximations have Egyptian denominator tuples
 
-The denominator tuple lies in `𝓔ₙ^≤`.
+**Nondecreasing underapproximations have Egyptian denominator tuples.** If
+$a = (a_1, \dots, a_n)$ is a nondecreasing underapproximation of a real number $\lambda$, then
+$a$ lies in $\mathcal{E}_n^{\le}$, that is, $2 \le a_1 \le \dots \le a_n$.
 
 ## Depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
 
 ## Sources
 

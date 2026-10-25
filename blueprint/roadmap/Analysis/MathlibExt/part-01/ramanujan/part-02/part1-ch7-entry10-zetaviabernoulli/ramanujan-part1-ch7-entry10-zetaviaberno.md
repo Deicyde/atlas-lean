@@ -31,7 +31,7 @@ $r \in \mathbb{C}$ with $L(r) \neq R(r)$ has no accumulation point in $\mathbb{C
 
 - [The points $-k/n$ are admissible](chapter7-admissible-neg-div.md)
 - [The corollary to Entry 10 in the half-plane $\operatorname{Re} r < -1$](chapter7-entry10-corollary-left-eq-right.md)
-- [Riemann Zeta](../../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
+- [Meromorphy of the Riemann zeta function](../../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
 
 ## Sources
 

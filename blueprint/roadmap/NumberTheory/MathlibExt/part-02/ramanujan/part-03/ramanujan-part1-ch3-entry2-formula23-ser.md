@@ -7,10 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry2Formula23SeriesPair.ramanujan_part1_ch3_entry2_formula23_series_pair
 ---
 
-# Part1 Ch3 Entry2 Formula23 Series Pair
+# Ramanujan's companion series transformation (Chapter 3, Entry 2, formula (2.3))
 
-Derived from the Entry 2 API at `(-x, z + 1)`: both Entry 2 summands are the
-negatives of the summands here, and `exp x * exp (-x) = 1` identifies the value.
+**Ramanujan's companion series transformation (Chapter 3, Entry 2, formula (2.3)).** Let $x$
+and $z$ be complex numbers with $z \ne -(n+1)$ for every natural number $n$. Then the series
+$\sum_{j \ge 0} \frac{(-1)^j x^{j+1}}{(z+j+1)\, j!}$ converges absolutely, say with sum $S$, and
+the series $\sum_{j \ge 0} \frac{x^{j+1}}{(z+1)(z+2)\cdots(z+j+1)}$ converges absolutely with sum
+$e^x S$.
+
+The identity follows from Entry 2 applied with $-x$ and $z + 1$ in place of $x$ and $z$, using
+$e^x e^{-x} = 1$.
 
 ## Depends on
 
@@ -18,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramanujan part1 ch3 entry2](part1-ch3-entry2/ramanujan-part1-ch3-entry2.md)
-- [Part1 Ch3 Entry2 Rightsummable](ramanujan-part1-ch3-entry2-rightsummable.md)
+- [Ramanujan's exponential transformation of a factorial series (Chapter 3, Entry 2)](part1-ch3-entry2/ramanujan-part1-ch3-entry2.md)
+- [Convergence of the right side of Ramanujan's Chapter 3, Entry 2](ramanujan-part1-ch3-entry2-rightsummable.md)
 
 ## Sources
 

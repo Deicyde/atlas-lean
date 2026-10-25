@@ -6,14 +6,14 @@ navigation: module
 
 ## CNF
 
-- [Disj](disj.md)
+- [Disjunction of two CNFs](disj.md)
 
 ## Proposition
 
-- [Cnf Acc](cnf-acc.md)
+- [Accumulating CNF builder](cnf-acc.md)
 - [Cnf Or](cnf-or.md)
-- [Cnf Of](cnf-of.md)
-- [To CNF](to-cnf.md)
-- [To Neg CNF](to-neg-cnf.md)
+- [CNF of a proposition at a polarity](cnf-of.md)
+- [CNF of a proposition](to-cnf.md)
+- [CNF of the complement of a proposition](to-neg-cnf.md)
 - [Equivalent CNF](satisfies-to-cnf-iff.md)
-- [Cnf Sat to CNF bot iff](cnf-sat-to-cnf-bot-iff.md)
+- [Satisfiability of a CNF with falsum false](cnf-sat-to-cnf-bot-iff.md)

@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.bNomialBase
 ---
 
-# B Nomial Base
+# Base polynomial of the $b$-nomial coefficients
 
-The polynomial `1 + X + ⋯ + X ^ (b - 1)` for a source-valid base `b ≥ 2`.
+**Base polynomial of the $b$-nomial coefficients.** For a natural number $b \ge 2$, this is
+the integer polynomial $1 + X + \dots + X^{b-1} = \sum_{i=0}^{b-1} X^i \in \mathbb{Z}[X]$.
 
 ## Depends on
 

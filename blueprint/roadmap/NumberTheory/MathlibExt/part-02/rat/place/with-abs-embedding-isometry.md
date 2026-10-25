@@ -17,17 +17,17 @@ and `AddMonoidHomClass.isometry_of_norm`.
 
 ## Depends on
 
-- [Place](place.md)
-- [Completed Field](completed-field.md)
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Absolute Value](absolute-value.md)
-- [Bundle](bundle.md)
-- [With Abs Embedding](with-abs-embedding.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Completed field at a rational place](completed-field.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Absolute value at a rational place](absolute-value.md)
+- [Bundled completed field at a rational place](bundle.md)
+- [Embedding of $\mathbb{Q}$, normed by a place, into its completion](with-abs-embedding.md)
 
 ## Proof depends on
 
-- [Embedding](embedding.md)
-- [Embedding norm eq absolute Value](embedding-norm-eq-absolute-value.md)
+- [Embedding of the rationals into a completion](embedding.md)
+- [Norm of a rational in a completion](embedding-norm-eq-absolute-value.md)
 
 ## Sources
 

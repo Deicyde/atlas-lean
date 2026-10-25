@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.kroneckerAtPrime
 ---
 
-# Kronecker At Prime
+# Kronecker symbol at a prime
 
-Kronecker symbol at a prime: mod-eight rule at two, Legendre elsewhere.
+**Kronecker symbol at a prime.** For an integer $D$ and a natural number $p$, the Kronecker
+symbol of $D$ at $p$ is the Kronecker symbol of $D$ at two if $p = 2$, the Legendre symbol
+$\left(\frac{D}{p}\right)$ if $p$ is an odd prime, and $0$ if $p$ is not prime.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Kronecker At Two](kronecker-at-two.md)
+- [Kronecker symbol at two](kronecker-at-two.md)
 
 ## Sources
 

@@ -14,8 +14,8 @@ translation $\mathrm{to3}(\varphi)$ is satisfiable if and only if $\varphi$ is s
 ## Depends on
 
 - [The SAT-to-3SAT translation](../three-sat/to3.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -27,7 +27,7 @@ translation $\mathrm{to3}(\varphi)$ is satisfiable if and only if $\varphi$ is s
 - [Completeness of the auxiliary 3SAT translation](to3-aux-complete.md)
 - [Soundness of the auxiliary 3SAT translation](to3-aux-sound.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [Cnf Sat iff exists satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

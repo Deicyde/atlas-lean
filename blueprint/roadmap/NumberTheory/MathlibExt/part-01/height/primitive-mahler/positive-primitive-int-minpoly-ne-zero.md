@@ -7,17 +7,19 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_ne_zero
 ---
 
-# Positive Primitive Int Minpoly ne zero
+# The positive primitive integral minimal polynomial is nonzero
 
-Sign normalization does not turn the canonical primitive polynomial into zero.
+**The positive primitive integral minimal polynomial is nonzero.** Let $K$ be a field
+that is a $\mathbb{Q}$-algebra. For every $x \in K$, the positive primitive integral minimal
+polynomial of $x$ is not the zero polynomial.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Absolute](../primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

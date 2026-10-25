@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.unitaryConv
 ---
 
-# Unitary Conv
+# Unitary convolution
 
-The unitary convolution `(f ⊔ g)(n) = ∑_{d ∥ n} f(d) g(n / d)`, summed over the unitary
-divisors `d` of `n` (`Nat.unitaryDivisors`: `d ∣ n` with `gcd(d, n / d) = 1`).
+**Unitary convolution.** Let $R$ be a semiring. The unitary convolution of two arithmetic
+functions $f$ and $g$ with values in $R$ is the arithmetic function $f \sqcup g$ given by
+$(f \sqcup g)(n) = \sum_{d \parallel n} f(d)\, g(n/d)$, where the sum runs over the unitary divisors
+$d$ of $n$: for $n \ge 1$ these are the divisors $d$ of $n$ with $\gcd(d, n/d) = 1$, and $0$ has
+no unitary divisors. In particular $(f \sqcup g)(0) = 0$.
 
 ## Depends on
 

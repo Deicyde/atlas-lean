@@ -7,13 +7,14 @@ proof: formalized
 lean: RiemannXi.differentiable_riemannXi
 ---
 
-# Differentiable riemann Xi
+# The Riemann xi function is entire
 
-The Riemann xi function is entire.
+**The Riemann xi function is entire.** The Riemann xi function $\xi$ is complex
+differentiable at every point of $\mathbb{C}$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Sources
 

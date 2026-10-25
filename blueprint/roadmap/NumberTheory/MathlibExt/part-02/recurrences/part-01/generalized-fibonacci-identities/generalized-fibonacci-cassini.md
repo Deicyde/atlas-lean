@@ -7,11 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFibonacci_cassini
 ---
 
-# Generalized Fibonacci cassini
+# Cassini identity for generalized Fibonacci sequences
 
-Cassini-type identity `W n W (n + 2) - W (n + 1) ^ 2 = (-1) ^ n Δ` with
-`Δ = W 0 ^ 2 + p W 0 W 1 - W 1 ^ 2`, a specialization of
-`horadam_generalized_catalan_identity`.
+**Cassini identity for generalized Fibonacci sequences.** Let $R$ be a commutative ring, let
+$p \in R$, and let $(W_k)_{k \ge 0}$ be a sequence in $R$ with $W_{k+2} = p W_{k+1} + W_k$ for
+all $k \ge 0$. Then for every $n \ge 0$,
+$W_n W_{n+2} - W_{n+1}^2 = (-1)^n (W_0^2 + p W_0 W_1 - W_1^2)$.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Horadam Generalized Catalan Identity](../horadam-generalized-catalan-identity.md)
+- [Generalized Catalan identity for Horadam sequences](../horadam-generalized-catalan-identity.md)
 
 ## Sources
 

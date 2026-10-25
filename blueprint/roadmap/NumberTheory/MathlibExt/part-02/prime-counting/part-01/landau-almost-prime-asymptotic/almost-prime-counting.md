@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.almostPrimeCounting
 ---
 
-# Almost Prime Counting
+# Counting almost primes
 
-Counting function for Landau's theorem on almost primes: the number of
-`n ∈ [1, x]` with exactly `k` prime factors counted with multiplicity.
+**Counting almost primes.** For natural numbers $k$ and $x$, $\pi_k(x)$ is the number of
+integers $n$ with $1 \le n \le x$ that have exactly $k$ prime factors, counted with multiplicity.
+This is the counting function in Landau's theorem on almost primes.
 
 ## Depends on
 

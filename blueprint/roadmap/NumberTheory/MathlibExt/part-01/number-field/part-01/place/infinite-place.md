@@ -5,13 +5,15 @@ statement: formalized
 lean: NumberField.Place.infinitePlace
 ---
 
-# Infinite Place
+# Infinite places as places
 
-An infinite place, viewed as a place.
+**Infinite places as places.** For a number field $K$, each infinite place $v$ of $K$ is
+regarded as a place of $K$ via the inclusion of the infinite places into the disjoint union of the
+infinite and finite places of $K$.
 
 ## Depends on
 
-- [Place](place.md)
+- [Places of a number field](place.md)
 
 ## Sources
 

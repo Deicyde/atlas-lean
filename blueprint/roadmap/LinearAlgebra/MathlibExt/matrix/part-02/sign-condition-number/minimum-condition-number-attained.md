@@ -15,7 +15,7 @@ false) has condition number equal to the minimum condition number of order $n$.
 
 ## Depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 - [Condition number of a square real matrix](condition-number.md)
 - [Minimum condition number of sign matrices](minimum-condition-number.md)

@@ -7,13 +7,16 @@ proof: formalized
 lean: FunctionFieldAdeleRing.ext
 ---
 
-# Ext
+# Extensionality for restricted-product adèles
 
-Two function-field adèles are equal when all their components are equal.
+**Extensionality for restricted-product adèles.** Let $F$ be a field, $P$ a type and, for
+each $p \in P$, let $O_p$ be a valuation subring of $F$. If two adèles $a$ and $b$ of the adèle
+ring of $F$ with respect to $(O_p)_{p \in P}$ satisfy $a_p = b_p$ for every $p \in P$, then
+$a = b$.
 
 ## Depends on
 
-- [Function Field Adele Ring](function-field-adele-ring.md)
+- [Adèle ring of a field with respect to valuation subrings](function-field-adele-ring.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Provable](../natural-deduction/provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_twentySeven
 ---
 
-# Sigma Biunitary twenty Seven
+# The biunitary divisor sum of $27$
 
-`σ**(27) = 1 + 3 + 9 + 27 = 40`.
+**The biunitary divisor sum of $27$.** The sum $\sigma^{**}(27)$ of the biunitary divisors of
+$27$ equals $1 + 3 + 9 + 27 = 40$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Sources
 

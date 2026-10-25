@@ -18,8 +18,8 @@ permutation of the defining clauses of the reference encoding.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Linear-time Tseitin builder](tseitin-acc.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 

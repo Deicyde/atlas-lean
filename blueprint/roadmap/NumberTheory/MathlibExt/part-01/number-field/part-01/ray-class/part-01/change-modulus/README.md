@@ -5,12 +5,12 @@ navigation: module
 
 # Change Modulus
 
-- [Ray Group Ambient](ray-group-ambient.md)
-- [Ray Group Ambient le coprime](ray-group-ambient-le-coprime.md)
-- [Ray Group Ambient le to Ambient Subgroup](ray-group-ambient-le-to-ambient-subgroup.md)
-- [Coprime Fractional Ideals le of dvd](coprime-fractional-ideals-le-of-dvd.md)
-- [Change Modulus](change-modulus.md)
-- [Change Modulus to Ambient Subgroup](change-modulus-to-ambient-subgroup.md)
-- [Change Modulus to Ambient Subgroup of dvd](change-modulus-to-ambient-subgroup-of-dv.md)
-- [Change Modulus is Equivalent](change-modulus-is-equivalent.md)
-- [Exists equivalent iff change Modulus](exists-equivalent-iff-change-modulus.md)
+- [Ray group among all fractional ideals](ray-group-ambient.md)
+- [The ray group consists of coprime ideals](ray-group-ambient-le-coprime.md)
+- [A congruence subgroup contains the ray group](ray-group-ambient-le-to-ambient-subgroup.md)
+- [Coprimality passes to divisors of a modulus](coprime-fractional-ideals-le-of-dvd.md)
+- [Change of modulus of a congruence subgroup](change-modulus.md)
+- [Ambient subgroup of a change of modulus](change-modulus-to-ambient-subgroup.md)
+- [Ambient subgroup of a change of modulus to a divisor](change-modulus-to-ambient-subgroup-of-dv.md)
+- [The change of modulus is equivalent to the original pair](change-modulus-is-equivalent.md)
+- [Criterion for an equivalent congruence subgroup at a divisor of the modulus](exists-equivalent-iff-change-modulus.md)

@@ -6,9 +6,11 @@ statement: formalized
 lean: NumberField.Modulus.RayClassCharacter
 ---
 
-# Ray Class Character
+# Ray class character
 
-A ray class character: homomorphism from the ray class group to `Circle`.
+**Ray class character.** A ray class character of a modulus $m$ of a number field $K$ is a
+group homomorphism from the ray class group of $m$ to the unit circle
+$\{z \in \mathbb C : |z| = 1\}$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

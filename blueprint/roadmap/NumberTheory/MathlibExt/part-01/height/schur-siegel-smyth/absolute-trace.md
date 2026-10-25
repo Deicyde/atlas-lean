@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Degree](degree.md)
-- [Trace](trace.md)
+- [Degree of a complex number](degree.md)
+- [Trace as the sum of conjugates](trace.md)
 
 ## Sources
 

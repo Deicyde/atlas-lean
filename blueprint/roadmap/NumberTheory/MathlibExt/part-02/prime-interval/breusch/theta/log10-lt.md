@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log10_lt
 ---
 
-# Log10 lt
+# Upper bound for log 10
 
-Certified bound `log 10 < 2.4`.
+**Upper bound for log 10.** The natural logarithm of $10$ satisfies $\log 10 < 2.4$.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log lt of exp gt](log-lt-of-exp-gt.md)
-- [Lt exp of pow lt](lt-exp-of-pow-lt.md)
+- [Bounding a logarithm above by the exponential](log-lt-of-exp-gt.md)
+- [Exponential lower bound from a power comparison](lt-exp-of-pow-lt.md)
 
 ## Sources
 

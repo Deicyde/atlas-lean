@@ -7,16 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.Nadd9
 ---
 
-# Nadd9
+# N₁₀ splits as N₉ + N₁
 
-`N10m = N9m + N1m` when `m ∣ Q9`.
+**N₁₀ splits as N₉ + N₁.** For natural numbers $m$ and $n$ with $m \ge 1$ and $m$ dividing
+$Q_9 = 210$, write $N_k(m, n) = kn \lfloor Q_9 / m \rfloor$ for $k = 1, 9, 10$. Then
+$N_{10}(m, n) = N_9(m, n) + N_1(m, n)$.
 
 ## Depends on
 
-- [N10m](n10m.md)
-- [N1m](n1m.md)
-- [N9m](n9m.md)
-- [Q9](../grid/q9.md)
+- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Scaled factorial argument $N_1$](n1m.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

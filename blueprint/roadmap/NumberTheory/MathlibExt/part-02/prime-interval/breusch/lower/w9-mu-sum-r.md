@@ -7,17 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_mu_sum_R
 ---
 
-# W9 mu sum R
+# Möbius reciprocal sum over the divisors of 210, in the reals
 
-Real form of the Möbius reciprocal sum.
+**Möbius reciprocal sum over the divisors of 210, in the reals.** Let $w_9$ be the
+table of pairs $(d, \mu(d))$, where $d$ runs over the divisors of $210$ and $\mu$ is the Möbius
+function. Then the sum of $\mu(d)/d$ over the pairs of $w_9$, computed in $\mathbb{R}$, is
+$8/35$; that is, $\sum_{d \mid 210} \mu(d)/d = 8/35$.
 
 ## Depends on
 
-- [W9](../grid/w9.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
 
 ## Proof depends on
 
-- [W9 mu sum Q](w9-mu-sum-q.md)
+- [Möbius reciprocal sum over the divisors of 210, in the rationals](w9-mu-sum-q.md)
 
 ## Sources
 

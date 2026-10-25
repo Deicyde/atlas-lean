@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log10_eq
 ---
 
-# Log10 eq
+# Logarithm of 10
 
-`log 10 = log 2 + log 5`.
+**Logarithm of 10.** The natural logarithm satisfies $\log 10 = \log 2 + \log 5$.
 
 ## Depends on
 

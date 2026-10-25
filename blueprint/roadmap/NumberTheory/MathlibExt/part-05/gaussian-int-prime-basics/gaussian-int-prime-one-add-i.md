@@ -6,9 +6,10 @@ proof: formalized
 lean: GaussianInt.gaussianInt_prime_one_add_I
 ---
 
-# Gaussian Int prime one add I
+# 1 + i is a Gaussian prime
 
-`1 + i` is prime in `ℤ[i]`, since its norm is `2`.
+**1 + i is a Gaussian prime.** The Gaussian integer $1 + i$ is a prime element of
+$\mathbb{Z}[i]$; its norm is $2$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gaussian Int prime of nat Abs norm prime](gaussian-int-prime-of-nat-abs-norm-prime.md)
+- [Gaussian integers of prime norm are prime](gaussian-int-prime-of-nat-abs-norm-prime.md)
 
 ## Sources
 

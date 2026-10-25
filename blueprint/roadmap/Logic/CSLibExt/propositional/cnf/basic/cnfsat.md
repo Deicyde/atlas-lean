@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Logic.PL.CNFSat
 ---
 
-# CNFSat
+# Satisfiability of a CNF formula
 
-Boolean satisfiability of a CNF formula: some assignment satisfies every clause.
+**Satisfiability of a CNF formula.** A CNF formula $\varphi$ is satisfiable when there is an
+assignment $v : \mathbb{N} \to \{\mathrm{true}, \mathrm{false}\}$ such that every clause $C$ of
+$\varphi$ contains a literal $(x, b)$ with $v(x) = b$.
 
 ## Depends on
 
-- [CNF](cnf.md)
+- [CNF formula](cnf.md)
 
 ## Proof depends on
 
-- [CNFClause](cnfclause.md)
+- [CNF clause](cnfclause.md)
 
 ## Sources
 

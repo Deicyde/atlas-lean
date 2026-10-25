@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reduced](../../../../MathlibExt/part-02/quadratic-forms/is-gauss-reduced.md)
+- [Gauss-reduced binary quadratic forms](../../../../MathlibExt/part-02/quadratic-forms/is-gauss-reduced.md)
 
 ## Sources
 

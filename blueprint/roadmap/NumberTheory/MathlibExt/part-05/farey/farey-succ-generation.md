@@ -14,16 +14,16 @@ denominators sum to `n + 1`.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
-- [Farey Finset](farey-finset.md)
+- [Farey neighbors](is-farey-neighbor.md)
+- [Farey set](farey-finset.md)
 - [Mediant](mediant.md)
 
 ## Proof depends on
 
-- [Det eq one](det-eq-one.md)
-- [Farey Finset mono](farey-finset-mono.md)
-- [Mem farey Finset iff](mem-farey-finset-iff.md)
-- [Neighbor den sum gt](neighbor-den-sum-gt.md)
+- [Consecutive Farey fractions have determinant one](det-eq-one.md)
+- [Farey sets grow with the order](farey-finset-mono.md)
+- [Membership in the Farey set](mem-farey-finset-iff.md)
+- [Farey neighbors have denominator sum exceeding the order](neighbor-den-sum-gt.md)
 
 ## Sources
 

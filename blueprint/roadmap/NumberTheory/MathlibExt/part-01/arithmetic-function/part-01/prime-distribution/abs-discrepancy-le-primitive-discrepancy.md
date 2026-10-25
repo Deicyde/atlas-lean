@@ -7,14 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeDistribution.abs_discrepancy_le_primitiveDiscrepancy
 ---
 
-# Abs discrepancy le primitive Discrepancy
+# Primitive residue-class discrepancies are bounded by the primitive discrepancy
 
-Each primitive-residue discrepancy is bounded by that finite maximum.
+**Primitive residue-class discrepancies are bounded by the primitive discrepancy.** Let
+$\alpha$ be a finitely supported real sequence indexed by $\mathbb{N}$, let $q$ be a positive
+integer, and let $a$ be a unit of $\mathbb{Z}/q\mathbb{Z}$, represented by its least nonnegative
+residue. Then the absolute value of the discrepancy of $\alpha$ at modulus $q$ and residue $a$ is
+at most the primitive discrepancy of $\alpha$ at modulus $q$.
 
 ## Depends on
 
-- [Discrepancy](discrepancy.md)
-- [Primitive Discrepancy](primitive-discrepancy.md)
+- [Discrepancy in a residue class](discrepancy.md)
+- [Primitive discrepancy](primitive-discrepancy.md)
 
 ## Sources
 

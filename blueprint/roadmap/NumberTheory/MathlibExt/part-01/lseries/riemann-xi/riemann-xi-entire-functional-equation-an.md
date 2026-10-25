@@ -7,20 +7,21 @@ proof: formalized
 lean: RiemannXi.riemannXi_entire_functional_equation_and_critical_strip
 ---
 
-# Riemann Xi entire functional equation and critical strip
+# Basic properties of the Riemann xi function
 
-Packaged corollary: `ξ` is entire, satisfies the functional equation, and
-all of its zeros lie in the open critical strip.
+**Basic properties of the Riemann xi function.** The Riemann xi function $\xi$ is
+entire, satisfies $\xi(1 - s) = \xi(s)$ for every complex number $s$, and every complex
+number $s$ with $\xi(s) = 0$ satisfies $0 < \operatorname{Re}(s) < 1$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Proof depends on
 
-- [Differentiable riemann Xi](differentiable-riemann-xi.md)
-- [Riemann Xi mem strip](riemann-xi-mem-strip.md)
-- [Riemann Xi one sub](riemann-xi-one-sub.md)
+- [The Riemann xi function is entire](differentiable-riemann-xi.md)
+- [Zeros of the xi function lie in the critical strip](riemann-xi-mem-strip.md)
+- [Functional equation of the Riemann xi function](riemann-xi-one-sub.md)
 
 ## Sources
 

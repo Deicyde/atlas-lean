@@ -6,10 +6,15 @@ statement: formalized
 lean: Nat.collatzStoppingTime
 ---
 
-# Collatz Stopping Time
+# Collatz stopping time
 
-The least number of Collatz steps needed to reach `1`, or `none` for zero
-and for values not known to reach `1`.
+**Collatz stopping time.** Let $T : \mathbb{N} \to \mathbb{N}$ be the Collatz map, which sends
+$n$ to $n / 2$ if $n$ is even and to $3n + 1$ if $n$ is odd, and let $T^k$ denote its $k$-fold
+iterate, with $T^0(n) = n$. For a natural number $n$, the Collatz stopping time of $n$ is
+undefined if $n = 0$ or if $T^k(n) \ne 1$ for every $k \in \mathbb{N}$; otherwise it is the least
+$k \in \mathbb{N}$ with $T^k(n) = 1$.
+
+In the Collatz literature this quantity is often called the total stopping time.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Collatz Iterate](collatz-iterate.md)
+- [Iterates of the Collatz map](collatz-iterate.md)
 
 ## Sources
 

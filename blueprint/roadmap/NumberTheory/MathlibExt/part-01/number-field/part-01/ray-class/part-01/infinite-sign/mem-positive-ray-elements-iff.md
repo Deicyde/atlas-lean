@@ -7,20 +7,23 @@ proof: formalized
 lean: NumberField.Modulus.mem_positiveRayElements_iff
 ---
 
-# Mem positive Ray Elements iff
+# Membership in the positive ray elements
 
-Membership in `positiveRayElements` is positivity at infinity.
+**Membership in the positive ray elements.** Let $m$ be a modulus of a number field $K$ with
+finite set of real places $m_\infty$, and for a real place $w$ let $\sigma_w$ be the real embedding
+of $K$ at $w$. A ray element $x$ of $m$ is a positive ray element of $m$ if and only if $x$ is
+positive at the infinite part of $m$, that is, $\sigma_w(x) > 0$ for every $w \in m_\infty$.
 
 ## Depends on
 
-- [Positive At Infinite Part](../../part-02/ray-group/positive-at-infinite-part.md)
-- [Positive Ray Elements](positive-ray-elements.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Positivity at the infinite part of a modulus](../../part-02/ray-group/positive-at-infinite-part.md)
+- [Ray elements positive at the infinite part](positive-ray-elements.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Infinite Sign Map](infinite-sign-map.md)
-- [Infinite Sign Map eq one iff](infinite-sign-map-eq-one-iff.md)
+- [Infinite sign map of a modulus](infinite-sign-map.md)
+- [Trivial infinite sign means positivity at the modulus](infinite-sign-map-eq-one-iff.md)
 
 ## Sources
 

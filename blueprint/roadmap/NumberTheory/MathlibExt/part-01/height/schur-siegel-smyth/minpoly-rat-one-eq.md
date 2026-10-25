@@ -6,9 +6,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.minpoly_rat_one_eq
 ---
 
-# Minpoly rat one eq
+# Minimal polynomial of one
 
-The minimal polynomial of `1` in `X - C 1` form.
+**Minimal polynomial of one.** The minimal polynomial of $1 \in \mathbb{C}$ over $\mathbb{Q}$
+is $X - 1$.
 
 ## Depends on
 

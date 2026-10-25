@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.main_contra
 ---
 
-# Main contra
+# Endgame contradiction in Breusch's theorem
 
-Contradiction at level `n ≥ 4762` from the two bounds.
+**Endgame contradiction in Breusch's theorem.** Let $n \ge 4762$ be a natural number. If
+there is no prime $p$ with $1890n < p \le 2100n$ and $n$ satisfies the endgame upper-bound
+inequality, then we have a contradiction.
 
 ## Depends on
 
@@ -17,10 +19,10 @@ Contradiction at level `n ≥ 4762` from the two bounds.
 
 ## Proof depends on
 
-- [T03c eqmain margin](../breusch/theta/t03c-eqmain-margin.md)
-- [Gap pos](../breusch/theta/gap-pos.md)
-- [Log F9](../breusch/lower/log-f9.md)
-- [Log F9 lower](../breusch/lower/log-f9-lower.md)
+- [Numerical margin of the main term](../breusch/theta/t03c-eqmain-margin.md)
+- [Positivity of the gap in Breusch's prime interval argument](../breusch/theta/gap-pos.md)
+- [Logarithm of Breusch's product $F_9(n)$](../breusch/lower/log-f9.md)
+- [Lower bound for $\log F_9(n)$](../breusch/lower/log-f9-lower.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: SumSquares.representationNumber_zero_succ
 ---
 
-# Representation Number zero succ
+# Positive integers have no representation as a sum of zero squares
 
-The representation number at `k = 0` and positive `n` is zero.
+**Positive integers have no representation as a sum of zero squares.** For every natural
+number $n \ge 1$, the representation number $r_0(n)$, the number of integer vectors
+$x \in \mathbb{Z}^0$ whose sum of squares (an empty sum) equals $n$, is $0$.
 
 ## Depends on
 
-- [Representation Number](representation-number.md)
+- [Representation numbers of sums of squares](representation-number.md)
 
 ## Proof depends on
 
-- [Solutions](solutions.md)
-- [Solutions zero succ](solutions-zero-succ.md)
+- [Integer solutions of a sum of squares](solutions.md)
+- [Zero squares never sum to a positive integer](solutions-zero-succ.md)
 
 ## Sources
 

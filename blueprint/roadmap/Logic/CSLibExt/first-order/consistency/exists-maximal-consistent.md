@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Logic.FOL.exists_maximalConsistent
 ---
 
-# Lindenbaum's lemma
+# Lindenbaum's lemma for first-order logic
 
-**Lindenbaum's lemma**: every consistent set extends to a maximal consistent set.
+**Lindenbaum's lemma for first-order logic.** Every consistent set $S$ of first-order
+formulas is contained in a maximal consistent set.
 
 ## Depends on
 
 - [Consistent](consistent.md)
-- [Maximal Consistent](maximal-consistent.md)
+- [Maximal consistent set](maximal-consistent.md)
 
 ## Proof depends on
 
-- [Consistent s Union of is Chain](consistent-s-union-of-is-chain.md)
+- [Unions of chains of consistent sets are consistent](consistent-s-union-of-is-chain.md)
 
 ## Sources
 

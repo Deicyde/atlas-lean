@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Logic.FOL.rename_congr
 ---
 
-# Rename congr
+# Renaming that fixes the free variables
 
-A renaming that fixes every free variable leaves the formula unchanged.
+**Renaming that fixes the free variables.** If a map $f : \alpha \to \alpha$ fixes every free
+variable of a bounded formula $\varphi$, then renaming the free variables of $\varphi$ along $f$
+leaves $\varphi$ unchanged.
 
 ## Depends on
 
-- [Rename](rename.md)
+- [Renaming free variables of a formula](rename.md)
 
 ## Proof depends on
 
-- [Rename Term](rename-term.md)
+- [Renaming free variables of a term](rename-term.md)
 
 ## Sources
 

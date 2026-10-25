@@ -23,7 +23,7 @@ finite-dimensional measure-zero form with `fderiv ℝ F` surjective hypothesis.
 ## Proof depends on
 
 - [Sard's theorem on open subsets of finite-dimensional spaces](../sard/sard-euclidean-open.md)
-- [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
+- [Sets with locally null image have null image](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources
 

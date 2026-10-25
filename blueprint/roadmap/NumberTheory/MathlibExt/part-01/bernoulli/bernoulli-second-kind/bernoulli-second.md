@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliSecond
 ---
 
-# Bernoulli Second
+# Bernoulli numbers of the second kind
 
-Bernoulli number of the second kind `Bₙ^*`: `n!` times coefficient
-`n` of `bernoulliSecondPowerSeries`, i.e. the
-exponential-generating-function normalization of
-`t / log (1 + t) = ∑ₙ Bₙ^* * t ^ n / n!` (Roman's normalization;
-`B₀^* = 1`, `B₁^* = 1 / 2`, `B₂^* = -1 / 6`).
+**Bernoulli numbers of the second kind.** For a natural number $n$, the Bernoulli number of
+the second kind $B_n^*$ is the rational number $n!$ times the coefficient of $t^n$ in
+$G(t) \in \mathbb{Q}[[t]]$, the inverse of the formal power series
+$\sum_{k \ge 0} \frac{(-1)^k}{k + 1} t^k$. Thus $G(t) = \sum_{n \ge 0} B_n^* t^n / n!$.
+
+Analytically $G(t) = t / \log(1 + t)$; this is Roman's normalization, with $B_0^* = 1$,
+$B_1^* = 1/2$ and $B_2^* = -1/6$.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+- [Generating function of the Bernoulli numbers of the second kind](bernoulli-second-power-series.md)
 
 ## Sources
 

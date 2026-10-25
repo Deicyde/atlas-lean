@@ -13,12 +13,12 @@ other clause.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 
 ## Proof depends on
 
-- [CNFClause](../basic/cnfclause.md)
-- [Restrict](restrict.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Restriction of a clause by a literal](restrict.md)
 
 ## Sources
 

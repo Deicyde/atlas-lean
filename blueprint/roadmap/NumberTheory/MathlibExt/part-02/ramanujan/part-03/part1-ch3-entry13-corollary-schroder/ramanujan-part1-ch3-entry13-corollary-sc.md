@@ -7,14 +7,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry13CorollarySchroder.ramanujan_part1_ch3_entry13_corollary_schroder
 ---
 
-# Ramanujan part1 ch3 entry13 corollary schroder
+# Schröder's exponential series
 
-`{w | ‖w‖ ≤ ‖exp (w - 1)‖}` has a bounded lobe containing `0` and an unbounded lobe, meeting
-    only at `w = 1`. `hw1` selects the bounded lobe (given `hw`, it is equivalent to `w.re ≤ 1`);
-    on the unbounded lobe the identity fails in general.
+**Schröder's exponential series.** Let $z$ and $w$ be complex numbers with
+$|w| \le |e^{w-1}|$ and $|w| \le 1$. Then the series
+
+$$1 + \sum_{k=1}^{\infty} \frac{z (z + k w)^{k-1} e^{-k w}}{k!}$$
+
+converges unconditionally, and its sum is $e^z$.
+
+The set of complex numbers $w$ with $|w| \le |e^{w-1}|$ has a bounded lobe containing $0$ and an
+unbounded lobe, which meet only at $w = 1$. The condition $|w| \le 1$ selects the bounded lobe
+(given the first condition, it is equivalent to $\operatorname{Re} w \le 1$); on the unbounded
+lobe the identity fails in general.
 
 Proof: Following Berndt's formula (13.8), we use Abel's binomial identity, a Cauchy product and a
-holomorphic ODE; radial continuity selects the unit-disk branch of `u ↦ u * exp (-u)`.
+holomorphic ODE; radial continuity selects the unit-disk branch of $u \mapsto u e^{-u}$.
 
 ## Depends on
 

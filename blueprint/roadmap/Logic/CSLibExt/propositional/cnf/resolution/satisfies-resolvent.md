@@ -8,18 +8,18 @@ lean: Cslib.Logic.PL.CNFClause.satisfies_resolvent
 
 # Resolution rule soundness
 
-**Resolution rule soundness**: an assignment satisfying both premises satisfies the
-resolvent.
+**Resolution rule soundness.** Let $x$ be a variable and $C$, $D$ clauses. Every assignment
+that satisfies both $C$ and $D$ satisfies the resolvent of $C$ and $D$ on $x$.
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](../semantics/satisfies-2.md)
 - [Resolvent](resolvent.md)
 
 ## Proof depends on
 
-- [Satisfies](../semantics/satisfies.md)
+- [Satisfaction of a literal](../semantics/satisfies.md)
 
 ## Sources
 

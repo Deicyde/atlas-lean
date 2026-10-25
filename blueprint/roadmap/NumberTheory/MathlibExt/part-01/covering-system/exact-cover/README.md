@@ -5,5 +5,5 @@ navigation: module
 
 # Exact Cover
 
-- [Indexed Cover Multiplicity](indexed-cover-multiplicity.md)
-- [Is Exact Cover Of](is-exact-cover-of.md)
+- [Multiplicity of an indexed system of residue classes](indexed-cover-multiplicity.md)
+- [Exact covers by residue classes](is-exact-cover-of.md)

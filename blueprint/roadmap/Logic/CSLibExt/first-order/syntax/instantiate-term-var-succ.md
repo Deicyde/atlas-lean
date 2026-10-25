@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Logic.FOL.instantiateTerm_var_succ
 ---
 
-# Instantiate Term var succ
+# Instantiation shifts the remaining bound variables down
 
-The other bound variables shift down by one.
+**Instantiation shifts the remaining bound variables down.** Let $L$ be a first-order language,
+$t$ an $L$-term with free variables in $\alpha$, and $i < m$. Instantiating $t$ in the term
+consisting of the bound variable $i + 1$ (a term with free variables in $\alpha$ and $m + 1$ bound
+variables) gives the term consisting of the bound variable $i$ (with $m$ bound variables).
 
 ## Depends on
 
-- [Instantiate Term](instantiate-term.md)
+- [Instantiating the outermost bound variable of a term](instantiate-term.md)
 
 ## Sources
 

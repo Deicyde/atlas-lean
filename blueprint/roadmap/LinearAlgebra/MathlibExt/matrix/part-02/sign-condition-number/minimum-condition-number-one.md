@@ -18,7 +18,7 @@ the least condition number of a $1 \times 1$ real sign matrix is $1$.
 
 ## Proof depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 - [Condition number of a square real matrix](condition-number.md)
 - [Condition number of the order-one identity](condition-number-one-order-one.md)

@@ -14,7 +14,7 @@ every integer `a` coprime to `n (n + 2)`, and also if and only if
 
 ## Depends on
 
-- [Is Carmichael Number](../../../MathlibExt/part-03/carmichael-number/is-carmichael-number.md)
+- [Carmichael numbers](../../../MathlibExt/part-03/carmichael-number/is-carmichael-number.md)
 
 ## Sources
 

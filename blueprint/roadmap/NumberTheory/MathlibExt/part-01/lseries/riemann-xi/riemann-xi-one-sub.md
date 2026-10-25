@@ -7,13 +7,14 @@ proof: formalized
 lean: RiemannXi.riemannXi_one_sub
 ---
 
-# Riemann Xi one sub
+# Functional equation of the Riemann xi function
 
-Functional equation for the Riemann xi function: `ξ(1 - s) = ξ(s)`.
+**Functional equation of the Riemann xi function.** Let $\xi$ be the Riemann xi function.
+For every complex number $s$, $\xi(1 - s) = \xi(s)$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Sources
 

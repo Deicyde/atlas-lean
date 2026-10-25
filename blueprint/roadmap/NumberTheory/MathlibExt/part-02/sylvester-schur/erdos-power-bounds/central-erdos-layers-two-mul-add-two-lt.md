@@ -7,9 +7,12 @@ proof: formalized
 lean: Nat.SylvesterSchur.central_erdos_layers_two_mul_add_two_lt_four_pow
 ---
 
-# Central erdos layers two mul add two lt four pow
+# Central Erdős layer estimate
 
-Explicit large-`n` estimate for the central Erdős layer product at `N = 2 * n + 2`.
+**Central Erdős layer estimate.** Let $n \ge 512$ be a natural number and $N = 2n + 2$. For a
+natural number $x$ write $x\#$ for the primorial of $x$, the product of all primes $p \le x$, and
+let $L = \lfloor \log_2 N \rfloor$. Then
+$n \cdot \lfloor N/3 \rfloor\# \cdot \prod_{m=2}^{L} \lfloor N^{1/m} \rfloor\# < 4^n$.
 
 ## Depends on
 

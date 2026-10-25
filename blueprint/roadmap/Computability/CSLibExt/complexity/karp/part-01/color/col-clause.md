@@ -18,7 +18,7 @@ process the remaining literals $ls$ with output $L$ from that state.
 ## Depends on
 
 - [State of the SAT-to-3-COLOR construction](col-st.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

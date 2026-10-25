@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Logic.FOL.freeVarFinset_rename
 ---
 
-# Free Var Finset rename
+# Free variables of a renamed formula
 
-Renaming maps the free variables.
+**Free variables of a renamed formula.** Let $L$ be a first-order language and
+$f : \alpha \to \beta$ a map. For every bounded $L$-formula $\varphi$ with free variables in
+$\alpha$ and $n$ bound variables, the set of free variables of the renaming of $\varphi$ along $f$
+is the image under $f$ of the set of free variables of $\varphi$.
 
 ## Depends on
 
-- [Rename](rename.md)
+- [Renaming free variables of a formula](rename.md)
 
 ## Proof depends on
 
-- [Rename Term](rename-term.md)
+- [Renaming free variables of a term](rename-term.md)
 
 ## Sources
 

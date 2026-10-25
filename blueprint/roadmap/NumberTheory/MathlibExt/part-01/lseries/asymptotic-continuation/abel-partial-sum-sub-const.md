@@ -7,13 +7,15 @@ proof: formalized
 lean: abelPartialSum_sub_const
 ---
 
-# Abel Partial Sum sub const
+# Partial sums after subtracting a constant
 
-Subtracting a constant shifts one-based partial sums by `n • ρ`.
+**Partial sums after subtracting a constant.** For $a : \mathbb{N} \to \mathbb{C}$,
+$\rho \in \mathbb{C}$ and $n \in \mathbb{N}$, the one-based partial sum
+$\sum_{k=1}^{n} (a(k) - \rho)$ equals $\sum_{k=1}^{n} a(k) - n\rho$.
 
 ## Depends on
 
-- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
+- [Partial sums of a coefficient sequence](../abel-continuation/abel-partial-sum.md)
 
 ## Sources
 

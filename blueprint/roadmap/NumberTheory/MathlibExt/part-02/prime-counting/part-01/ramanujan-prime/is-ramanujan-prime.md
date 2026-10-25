@@ -6,15 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.IsRamanujanPrime
 ---
 
-# Is Ramanujan Prime
+# Primes satisfying the Ramanujan counting condition
 
-A prime `R` satisfies the Ramanujan counting condition for `n`, i.e.
-`π(R) - π(R / 2) = n`, where `π` is the prime-counting function.
+**Primes satisfying the Ramanujan counting condition.** Let $\pi$ be the prime-counting
+function. For natural numbers $R$ and $n$, $R$ satisfies the Ramanujan counting condition for
+$n$ when $R$ is prime and $\pi(R) - \pi(R/2) = n$.
 
-For natural `R`, `π(R / 2)` (primes `p ≤ R / 2` over the reals) agrees with
-`Nat.primeCounting (R / 2)` under `Nat` division.
-Concept `jis_sem_2ce4a4483a6ae69670d63026`;
-statement `jis_b3eb662622ec0b548e5acec4`.
+Here $\pi(x)$ counts the primes $p \le x$, so $\pi(R/2) = \pi(\lfloor R/2 \rfloor)$.
 
 ## Depends on
 
@@ -23,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.RamanujanPrime](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_2ce4a4483a6ae69670d63026`; statement `jis_b3eb662622ec0b548e5acec4`.

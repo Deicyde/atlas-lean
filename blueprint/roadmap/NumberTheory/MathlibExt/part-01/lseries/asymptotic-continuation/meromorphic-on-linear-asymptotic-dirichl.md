@@ -7,19 +7,24 @@ proof: formalized
 lean: meromorphicOn_linearAsymptoticDirichletContinuation
 ---
 
-# Meromorphic On linear Asymptotic Dirichlet Continuation
+# Meromorphy of the linear asymptotic continuation on a half-plane
 
-Meromorphicity of the linear asymptotic continuation on its domain.
+**Meromorphy of the linear asymptotic continuation on a half-plane.** Let
+$a : \mathbb{N} \to \mathbb{C}$, $\rho \in \mathbb{C}$ and $\sigma \in \mathbb{R}$ with
+$\sigma < 1$, and suppose that the one-based partial sums $A(n) = \sum_{k=1}^{n} a(k)$ satisfy
+$A(n) - n\rho = O(n^{\sigma})$ as $n \to \infty$. Then the linear asymptotic Dirichlet
+continuation $L_{a,\rho}$ of $a$ with constant $\rho$ is meromorphic at every point of the
+half-plane $\{s \in \mathbb{C} : \operatorname{Re} s > \sigma\}$.
 
 ## Depends on
 
-- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
-- [Linear Asymptotic Dirichlet Continuation](linear-asymptotic-dirichlet-continuation.md)
+- [Partial sums of a coefficient sequence](../abel-continuation/abel-partial-sum.md)
+- [Linear asymptotic Dirichlet continuation](linear-asymptotic-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Analytic At linear Asymptotic Dirichlet Continuation of ne one](analytic-at-linear-asymptotic-dirichlet.md)
-- [Meromorphic At linear Asymptotic Dirichlet Continuation one](meromorphic-at-linear-asymptotic-dirichl.md)
+- [Analyticity of the linear asymptotic continuation away from $1$](analytic-at-linear-asymptotic-dirichlet.md)
+- [Meromorphy of the linear asymptotic continuation at $1$](meromorphic-at-linear-asymptotic-dirichl.md)
 
 ## Sources
 

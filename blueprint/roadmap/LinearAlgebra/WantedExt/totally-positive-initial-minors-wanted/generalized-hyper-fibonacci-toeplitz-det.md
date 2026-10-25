@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos
 ---
 
-# Generalized Hyper Fibonacci toeplitz det eventually pos
+# Eventual positivity of hyper-Fibonacci Toeplitz determinants
 
-For `m ≥ 1`, `det T_{m,n}^{(m-1)} > 0` for all sufficiently large `n`.
+**Eventual positivity of hyper-Fibonacci Toeplitz determinants.** Let $p, a, b$ be integers
+with $p \ge 1$, $a \ge 0$ and $b > 0$, and let $W^{(r)}_{p,n}$ denote the generalized
+hyper-Fibonacci numbers. For every natural number $m \ge 1$ there is a natural number $N$ such
+that for every $n \ge N$ the $m \times m$ Toeplitz matrix with entry $W^{(m-1)}_{p,n+i-j}$ in row
+$i$ and column $j$ ($0 \le i, j < m$) has positive determinant.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

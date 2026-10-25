@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.kroneckerSym_prime
 ---
 
-# Kronecker Sym prime
+# Kronecker symbol with a prime denominator
 
-Kronecker symbol at a prime lower argument reduces to the prime dispatcher.
+**Kronecker symbol with a prime denominator.** For every integer $D$ and every prime $p$,
+the Kronecker symbol $\left(\frac{D}{p}\right)$ equals the Kronecker symbol of $D$ at the
+prime $p$.
 
 ## Depends on
 
-- [Kronecker At Prime](kronecker-at-prime.md)
-- [Kronecker Sym](kronecker-sym.md)
+- [Kronecker symbol at a prime](kronecker-at-prime.md)
+- [Kronecker symbol](kronecker-sym.md)
 
 ## Sources
 

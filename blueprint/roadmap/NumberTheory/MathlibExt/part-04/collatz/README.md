@@ -4,6 +4,6 @@ navigation: module
 
 # Collatz
 
-- [Collatz Step](collatz-step.md)
-- [Collatz Iterate](collatz-iterate.md)
-- [Collatz Stopping Time](collatz-stopping-time.md)
+- [The Collatz map](collatz-step.md)
+- [Iterates of the Collatz map](collatz-iterate.md)
+- [Collatz stopping time](collatz-stopping-time.md)

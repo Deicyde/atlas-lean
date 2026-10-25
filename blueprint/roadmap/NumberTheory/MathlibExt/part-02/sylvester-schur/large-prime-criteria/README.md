@@ -5,12 +5,12 @@ navigation: module
 
 # Large Prime Criteria
 
-- [Exists large prime dvd choose of factorial mul prod erdos layers lt lower pow](exists-large-prime-dvd-choose-of-factori.md)
-- [Exists large prime dvd choose of factorial mul prod primorial nth Root lt lower pow](exists-large-prime-dvd-choose-of-factori-2.md)
-- [Exists large prime dvd choose of mul top pow sqrt mul primorial lt four pow](exists-large-prime-dvd-choose-of-mul-top.md)
-- [Exists large prime dvd choose of factorial mul top pow sqrt mul primorial lt lower pow](exists-large-prime-dvd-choose-of-factori-3.md)
-- [Exists large prime dvd choose of factorial mul top pow prime Counting lt lower pow](exists-large-prime-dvd-choose-of-factori-4.md)
-- [Exists large prime dvd choose of factorial mul top pow half add one lt lower pow](exists-large-prime-dvd-choose-of-factori-5.md)
-- [Exists large prime dvd choose of factorial mul top pow three mul div eight lt lower pow](exists-large-prime-dvd-choose-of-factori-6.md)
-- [Exists large prime dvd choose of self pow mul top pow three mul div eight lt lower pow](exists-large-prime-dvd-choose-of-self-po.md)
-- [Exists large prime dvd choose of factorial mul top pow sub one lt lower pow](exists-large-prime-dvd-choose-of-factori-7.md)
+- [Large-prime criterion from the Erdős layer bound](exists-large-prime-dvd-choose-of-factori.md)
+- [Large-prime criterion from the prime-power layer bound](exists-large-prime-dvd-choose-of-factori-2.md)
+- [Central-range large-prime criterion from the square-root split bound](exists-large-prime-dvd-choose-of-mul-top.md)
+- [Large-prime criterion from the square-root split bound](exists-large-prime-dvd-choose-of-factori-3.md)
+- [Large-prime criterion from the prime-counting bound](exists-large-prime-dvd-choose-of-factori-4.md)
+- [Large-prime criterion from the half-plus-one exponent bound](exists-large-prime-dvd-choose-of-factori-5.md)
+- [Large-prime criterion from the 3r/8 exponent bound](exists-large-prime-dvd-choose-of-factori-6.md)
+- [Power-only large-prime criterion from the 3r/8 exponent bound](exists-large-prime-dvd-choose-of-self-po.md)
+- [Large-prime criterion from the r − 1 exponent bound](exists-large-prime-dvd-choose-of-factori-7.md)

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.arithmeticDerivative_mul
 ---
 
-# Arithmetic Derivative mul
+# Leibniz rule for the arithmetic derivative
 
-The Leibniz rule `D(mn) = D(m) n + m D(n)`.
+**Leibniz rule for the arithmetic derivative.** For all natural numbers $m$ and $n$, the
+arithmetic derivative $D$ satisfies $D(mn) = D(m)\,n + m\,D(n)$.
 
 ## Depends on
 
-- [Arithmetic Derivative](arithmetic-derivative.md)
+- [Arithmetic derivative](arithmetic-derivative.md)
 
 ## Proof depends on
 
-- [Arithmetic Derivative eq sum of subset](arithmetic-derivative-eq-sum-of-subset.md)
-- [Arithmetic Derivative zero](arithmetic-derivative-zero.md)
+- [Arithmetic derivative over a superset of the prime factors](arithmetic-derivative-eq-sum-of-subset.md)
+- [Arithmetic derivative of zero](arithmetic-derivative-zero.md)
 
 ## Sources
 

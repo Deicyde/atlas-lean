@@ -6,11 +6,13 @@ proof: formalized
 lean: Cslib.Logic.FOL.consistent_sUnion_of_isChain
 ---
 
-# Consistent s Union of is Chain
+# Unions of chains of consistent sets are consistent
 
-The union of a nonempty chain of consistent sets is consistent: a refutation uses finitely
-many hypotheses, which lie in one member (Mathlib's
-`DirectedOn.exists_mem_subset_of_finite_of_subset_sUnion`).
+**Unions of chains of consistent sets are consistent.** If $C$ is a nonempty family of
+sets of formulas that is totally ordered by inclusion and every member of $C$ is consistent,
+then the union $\bigcup C$ is consistent.
+
+A refutation uses only finitely many hypotheses, and these all lie in a single member of $C$.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ many hypotheses, which lie in one member (Mathlib's
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Provable](../natural-deduction/provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Sources
 

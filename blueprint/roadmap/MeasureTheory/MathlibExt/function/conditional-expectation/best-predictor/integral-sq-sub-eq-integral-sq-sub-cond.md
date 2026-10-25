@@ -8,9 +8,14 @@ lean: MeasureTheory.integral_sq_sub_eq_integral_sq_sub_condExp_add
 
 # Pythagorean identity for the conditional mean
 
-**Pythagorean identity for the conditional mean**: for every square-integrable
-`m`-measurable prediction `g`,
-`E[(Y - g)²] = E[(Y - E[Y | m])²] + E[(E[Y | m] - g)²]`.
+**Pythagorean identity for the conditional mean.** Let $\mu$ be a finite measure on a
+measurable space $(\Omega, \mathcal{F})$, let $\mathcal{G} \subseteq \mathcal{F}$ be a
+sub-σ-algebra, and let $Y : \Omega \to \mathbb{R}$ be square-integrable with respect to $\mu$.
+Write $\mathbb{E}[Y \mid \mathcal{G}]$ for the conditional expectation of $Y$ with respect to
+$\mu$ given $\mathcal{G}$. Then for every strongly $\mathcal{G}$-measurable
+$g : \Omega \to \mathbb{R}$ that is square-integrable with respect to $\mu$,
+$\int (Y - g)^2 \, d\mu = \int (Y - \mathbb{E}[Y \mid \mathcal{G}])^2 \, d\mu +
+\int (\mathbb{E}[Y \mid \mathcal{G}] - g)^2 \, d\mu$.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integral sub cond Exp mul eq zero](integral-sub-cond-exp-mul-eq-zero.md)
+- [Orthogonality of the conditional-expectation residual](integral-sub-cond-exp-mul-eq-zero.md)
 
 ## Sources
 

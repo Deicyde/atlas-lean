@@ -7,22 +7,27 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.Z9_combined
 ---
 
-# Z9 combined
+# Combined main term of the Möbius-weighted Stirling sums
 
-Combined `10 - 9 - 1` main term `48 * n * (10 * log 10 - 9 * log 9)`.
+**Combined main term of the Möbius-weighted Stirling sums.** Let $w_9$ be the table of
+pairs $(d, \mu(d))$ for the divisors $d$ of $210$, and let $f(x) = x \log x - x$. For every
+natural number $n \ge 1$, writing $N = 210n$ (so that $N/d$ is an integer for each $d$ in
+$w_9$), we have
+$\sum_{(d, \mu(d)) \in w_9} \mu(d) \bigl(f(10N/d) - f(9N/d) - f(N/d)\bigr) =
+48 n (10 \log 10 - 9 \log 9)$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
-- [Fmain](fmain.md)
-- [W9](../grid/w9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Main Stirling term](fmain.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
 
 ## Proof depends on
 
-- [K9](k9.md)
-- [Q9 eq](q9-eq.md)
-- [Q9 pos](q9-pos.md)
-- [Z9 value](z9-value.md)
+- [The constant $K_9$](k9.md)
+- [Value of Q₉](q9-eq.md)
+- [Q₉ is positive](q9-pos.md)
+- [Closed form of the Möbius-weighted main-term sum](z9-value.md)
 
 ## Sources
 

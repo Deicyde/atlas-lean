@@ -14,7 +14,7 @@ Factorization characteristic of the prime unit: it is the basis vector at `v`.
 ## Depends on
 
 - [Factorization Mul Equiv](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
-- [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
+- [A prime as an invertible fractional ideal](prime-unit-fractional-ideal.md)
 
 ## Proof depends on
 

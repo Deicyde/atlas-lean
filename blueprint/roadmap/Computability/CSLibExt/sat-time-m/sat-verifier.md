@@ -25,7 +25,7 @@ This node has no prerequisites.
 - [Formula check against a witness](check-cnf.md)
 - [Decoding a complete length-prefixed CNF formula](../cook-levin/decode-cnf.md)
 - [Occurrence list of a CNF formula](vars-of.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

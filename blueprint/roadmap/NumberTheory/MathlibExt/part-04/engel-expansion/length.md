@@ -6,10 +6,13 @@ statement: formalized
 lean: EngelExpansion.length
 ---
 
-# Length
+# Engel length
 
-Engel length: least `j ≥ 1` with `traj j = 0`. This is the length of the Engel
-expansion of `a / n`.
+**Engel length.** For natural numbers $n$ and $a$, let $t_0 = a, t_1, t_2, \dots$ be the Engel
+trajectory of $a$ with respect to $n$. The Engel length $L(n, a)$ is the least $j \ge 1$ with
+$t_j = 0$.
+
+For $1 \le a \le n$ this is the number of terms of the Engel expansion of $a / n$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
-- [Traj](traj.md)
+- [Engel trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Sources
 

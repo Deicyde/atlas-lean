@@ -7,9 +7,17 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.arithmeticLargeSieve_progression
 ---
 
-# Arithmetic Large Sieve
+# Arithmetic large sieve for primes in a progression
 
-The arithmetic large sieve for primes in one progression.
+**Arithmetic large sieve for primes in a progression.** Let $N$, $z$, $q$ and $a$ be natural
+numbers with $z > 0$ and $q > 0$, and let $S$ be a finite set of natural numbers less than $N$
+such that for every $n \in S$ the number $qn + a$ is prime and greater than $z$. Write $\mu$ for
+the Möbius function and $\varphi$ for Euler's totient function. Then
+
+$$
+\left(\sum_{r=1}^{z} \frac{\mu(r)^2}{\varphi(r)\,(N + 3rz/2)}\right) |S|^2
+\le \frac{q}{\varphi(q)}\,|S|.
+$$
 
 ## Depends on
 
@@ -17,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weighted Large Sieve](../part-02/weighted-large-sieve.md)
+- [The Montgomery–Vaughan weighted large sieve](../part-02/weighted-large-sieve.md)
 
 ## Sources
 

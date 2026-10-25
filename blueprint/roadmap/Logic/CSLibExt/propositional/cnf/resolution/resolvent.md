@@ -12,7 +12,7 @@ The resolvent of `C` and `D` on the variable `x`: the literals of `C` other than
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 
 ## Sources
 

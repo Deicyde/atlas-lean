@@ -7,21 +7,25 @@ proof: formalized
 lean: NumberField.ArakelovDivisor.sectionSet_finite
 ---
 
-# Section Set finite
+# Finiteness of section sets
 
-Every section set of an Arakelov divisor is finite. Clearing denominators by a
-nonzero element of `𝓞 K` lands in the ring of integers, and the ordinary-radius
-archimedean bounds transfer to uniform bounds on all complex embeddings, so
-`NumberField.Embeddings.finite_of_norm_le` applies.
+**Finiteness of section sets.** For every Arakelov divisor $D$ of a number field $K$, the
+section set of $D$ is finite.
+
+Multiplying by a nonzero $d \in \mathcal{O}_K$ that clears the denominators of the fractional
+ideal of $D$ sends the section set into $\mathcal{O}_K$, and the bounds at the infinite places
+give a uniform bound $B$ on $|\sigma(dx)|$ for all $x$ in the section set and all complex
+embeddings $\sigma$ of $K$; only finitely many algebraic integers of $K$ have all conjugates of
+absolute value at most $B$.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Section Set](section-set.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Section set of an Arakelov divisor](section-set.md)
 
 ## Proof depends on
 
-- [Mem section Set](mem-section-set.md)
+- [Membership in the section set](mem-section-set.md)
 
 ## Sources
 

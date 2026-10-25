@@ -7,17 +7,20 @@ proof: formalized
 lean: NumberField.Modulus.residueSignMap_apply
 ---
 
-# Residue Sign Map apply
+# Components of the residue-sign map
 
-Pointwise evaluation of the combined residue-sign map.
+**Components of the residue-sign map.** Let $m$ be a modulus of a number field $K$. For every
+ray element $x$ of $m$, the image of $x$ under the residue-sign map of $m$ is the pair whose first
+component is the image of $x$ under the infinite sign map of $m$ and whose second component is the
+image of $x$ under the finite residue map of $m$.
 
 ## Depends on
 
-- [Residue Sign Target](residue-sign-target.md)
-- [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
-- [Infinite Sign Map](../../part-01/infinite-sign/infinite-sign-map.md)
-- [Ray Elements](../ray-group/ray-elements.md)
-- [Residue Sign Map](residue-sign-map.md)
+- [Residue-sign target](residue-sign-target.md)
+- [Finite residue map](../../part-01/finite-congruence/finite-residue-map.md)
+- [Infinite sign map of a modulus](../../part-01/infinite-sign/infinite-sign-map.md)
+- [Elements coprime to a modulus](../ray-group/ray-elements.md)
+- [Residue-sign map](residue-sign-map.md)
 
 ## Sources
 

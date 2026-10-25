@@ -6,13 +6,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.IsEvenPseudoprime.two_lt
 ---
 
-# Two lt
+# Even pseudoprimes exceed two
 
-An even pseudoprime is greater than `2`.
+**Even pseudoprimes exceed two.** Every even pseudoprime $N$ satisfies $N > 2$.
 
 ## Depends on
 
-- [Is Even Pseudoprime](is-even-pseudoprime.md)
+- [Even pseudoprime](is-even-pseudoprime.md)
 
 ## Sources
 

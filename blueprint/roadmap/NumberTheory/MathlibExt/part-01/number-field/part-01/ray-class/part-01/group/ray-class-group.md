@@ -6,9 +6,11 @@ statement: formalized
 lean: NumberField.Modulus.RayClassGroup
 ---
 
-# Ray Class Group
+# Ray class group
 
-Ray class group of a modulus: coprime ideals modulo the ray group.
+**Ray class group.** The ray class group of a modulus $\mathfrak m$ of a number field $K$ is
+the quotient of the group of nonzero fractional ideals of $K$ coprime to the finite part of
+$\mathfrak m$ by the ray group of $\mathfrak m$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

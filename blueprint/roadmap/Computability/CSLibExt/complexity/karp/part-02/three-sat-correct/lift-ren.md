@@ -17,7 +17,7 @@ $2n$ the value $v(n)$.
 
 - [Lifting an assignment to the 3SAT translation](lift.md)
 - [Renaming of the original variables](../three-sat/ren.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

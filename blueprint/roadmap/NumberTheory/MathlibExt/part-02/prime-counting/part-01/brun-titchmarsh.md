@@ -7,26 +7,29 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshWanted.brun_titchmarsh
 ---
 
-# Brun Titchmarsh
+# Brun–Titchmarsh inequality
 
-For coprime `a` and `q`, with `1 ≤ q < X`, the inclusive residue-class
-prime count satisfies
-`π(X; q, a) ≤ 2X / (φ(q) log(X/q))`.
+**Brun–Titchmarsh inequality.** Let $X$, $q$ and $a$ be natural numbers such that $a$ and $q$
+are coprime and $1 \le q < X$. Write $\pi(X; q, a)$ for the number of primes $p \le X$ with
+$p \equiv a \pmod{q}$, and $\varphi$ for Euler's totient function. Then
 
-Proof: An elementary Eratosthenes sieve handles `X ≤ 20000q`. Above that
-range, the weighted arithmetic large sieve is combined with explicit lower
-bounds for the squarefree-totient sum and the choice
-`z = ⌊√(2N/3)⌋`, where `N = ⌊X/q⌋ + 1`.
+$$
+\pi(X; q, a) \le \frac{2X}{\varphi(q) \log(X/q)}.
+$$
+
+The proof uses an elementary Eratosthenes sieve when $X \le 20000q$. For larger $X$ it combines
+the weighted arithmetic large sieve with explicit lower bounds for the squarefree-totient sum and
+the choice $z = \lfloor \sqrt{2N/3} \rfloor$, where $N = \lfloor X/q \rfloor + 1$.
 
 ## Depends on
 
-- [Prime Counting Mod](../part-02/residue-class/prime-counting-mod.md)
+- [Prime counting in a residue class](../part-02/residue-class/prime-counting-mod.md)
 
 ## Proof depends on
 
-- [Arithmetic Large Sieve](arithmetic-large-sieve-progression.md)
-- [Squarefree Totient Weighted](../part-02/squarefree-totient-weighted-lower.md)
-- [Prime Counting Mod eq card filter range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
+- [Arithmetic large sieve for primes in a progression](arithmetic-large-sieve-progression.md)
+- [Weighted lower bound for the squarefree totient sum](../part-02/squarefree-totient-weighted-lower.md)
+- [Residue-class prime count as a filtered range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-- [Godel Rosser Abstract Schema](godel-rosser-abstract-schema.md)
+- [Abstract Gödel–Rosser incompleteness theorem](godel-rosser-abstract-schema.md)
 - [Group Language](group-language/README.md)
-- [Hilbert Bernays Lob](hilbert-bernays-lob-second-incompletenes.md)
+- [Gödel's second incompleteness theorem, abstract Hilbert–Bernays–Löb form](hilbert-bernays-lob-second-incompletenes.md)

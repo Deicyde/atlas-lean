@@ -6,10 +6,15 @@ statement: formalized
 lean: abelContinuation
 ---
 
-# Abel Continuation
+# Abel continuation of a Dirichlet series
 
-The Abel continuation `F_f(s) = s * ∫ x in Ioi 1, A(⌊x⌋) * x^(-s-1)`,
-in the exact conventions of `LSeries_eq_mul_integral`.
+**Abel continuation of a Dirichlet series.** For $f : \mathbb{N} \to \mathbb{C}$ with partial
+sums $A(n) = \sum_{k=1}^{n} f(k)$, the Abel continuation of $f$ is the function
+$F_f : \mathbb{C} \to \mathbb{C}$ given by
+
+$$F_f(s) = s \int_1^\infty A(\lfloor t \rfloor)\, t^{-s-1}\, dt,$$
+
+where the integral is taken to be $0$ when the integrand is not integrable on $(1, \infty)$.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Abel Summatory](abel-summatory.md)
+- [Summatory step function](abel-summatory.md)
 
 ## Sources
 

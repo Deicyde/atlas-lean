@@ -11,11 +11,11 @@ A CNF formula is satisfied when each of its clauses is satisfied.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 
 ## Proof depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](satisfies-2.md)
 
 ## Sources

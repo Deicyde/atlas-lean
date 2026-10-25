@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry5.ramanujan_part1_ch3_entry5
 ---
 
-# Part1 Ch3 Entry5
+# Binomial recurrence for Ramanujan's Bell-type series (Entry 5)
 
-Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 5, printed p. 48 / PDF p.
-    58.
-Proves `Wanted` entry `ramanujan_part1_ch3_entry5`.
+**Binomial recurrence for Ramanujan's Bell-type series (Entry 5).** Let $F$ be Ramanujan's
+generalized Bell function. For every natural number $n$ and every complex number $x$, write
+$f(x, m) = F(0, 1, x; m)$ for natural numbers $m$, and set $f(x, -1) = 1$. Then
+$f(x, n) = x \sum_{k=0}^{n} \binom{n}{k} f(x, k-1)$.
 
 ## Depends on
 
-- [Generalized Bell Generating](part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+- [Ramanujan's generalized Bell function](part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
 
 ## Proof depends on
 
-- [Ramanujan part1 ch3 entry9 ii generalizedbellgenerating defining](part1-ch3-entry9-ii-generalizedbellgenerating-de/ramanujan-part1-ch3-entry9-ii-generalize.md)
+- [Convergence of the generalized Bell series](part1-ch3-entry9-ii-generalizedbellgenerating-de/ramanujan-part1-ch3-entry9-ii-generalize.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry5](../../../../../../sources/v2/MathlibExt.md)
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 5, printed p. 48 / PDF p. 58. Proves `Wanted` entry `ramanujan_part1_ch3_entry5`.

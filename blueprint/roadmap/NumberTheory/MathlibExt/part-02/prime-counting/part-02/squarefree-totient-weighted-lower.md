@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.squarefreeTotientWeightedLower
 ---
 
-# Squarefree Totient Weighted
+# Weighted lower bound for the squarefree totient sum
 
-The weighted explicit lower bound for the squarefree-totient sum.
+**Weighted lower bound for the squarefree totient sum.** For every natural number $z \ge 100$,
+$\log z + 36/100 < \sum_{q=1}^{z} (1 + q/z)^{-1} \, \mu(q)^2 / \varphi(q)$, where $\mu$ is the
+Möbius function and $\varphi$ is Euler's totient function.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Squarefree Totient](moebius-sq-div-totient-sum-gt-log.md)
+- [Lower bound for the squarefree totient sum](moebius-sq-div-totient-sum-gt-log.md)
 
 ## Sources
 

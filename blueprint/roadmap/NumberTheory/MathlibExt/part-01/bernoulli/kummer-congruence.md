@@ -7,15 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.kummer_congruence
 ---
 
-# Kummer Congruence
+# Kummer's congruence
 
-Kummer's congruence for Bernoulli numbers (statement `kummer-congruence-s1`):
-if `p` is prime and `m, n` are not divisible by `p - 1` with
-`m ≡ n [MOD (p - 1) * p ^ t]`, then the modified Bernoulli quotients
-`(1 - p ^ (m - 1)) * B m / m` and `(1 - p ^ (n - 1)) * B n / n` agree modulo
-`p ^ (t + 1)`, stated as a `padicValRat` bound. The disjunction guards the
-zero-difference case since `padicValRat p 0 = 0`.
-See https://en.wikipedia.org/wiki/Kummer%27s_congruence.
+**Kummer's congruence.** Let $p$ be a prime, let $B_j$ denote the $j$-th Bernoulli number,
+with $B_1 = -1/2$, and let $t$ be a natural number. Let $m$ and $n$ be natural numbers, neither
+divisible by $p - 1$, with $m \equiv n \pmod{(p-1)p^t}$. Then the rational numbers
+
+$$\frac{(1 - p^{m-1}) B_m}{m} \quad \text{and} \quad \frac{(1 - p^{n-1}) B_n}{n}$$
+
+are either equal, or their difference has $p$-adic valuation at least $t + 1$.
+
+In other words, the two numbers agree modulo $p^{t+1}$; equality is listed as a separate case
+because the $p$-adic valuation of $0$ is taken to be $0$.
 
 Proof: We use Voronoi's finite-sum congruence in p-adic norm form, following
 Ireland--Rosen, Ch. 15 §2, and Washington, Cor. 5.14, back to Kummer's 1851 paper.

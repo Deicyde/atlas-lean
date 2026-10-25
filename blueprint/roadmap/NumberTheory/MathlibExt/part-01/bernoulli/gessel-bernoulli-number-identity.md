@@ -7,16 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.gessel_bernoulli_number_identity
 ---
 
-# Gessel Identity
+# Gessel's Bernoulli-number identity
 
-Gessel's Bernoulli-number identity (Belbachir–Rahmani form of Gessel's identity).
+**Gessel's Bernoulli-number identity.** Let $B_j$ denote the $j$-th Bernoulli number, with
+$B_1 = -1/2$. For all natural numbers $n$, $r$ and $m$ with $r$ odd and $m \ge 1$,
 
-`bernoulli` is Mathlib's `bernoulli`, with `B₁ = -1/2`.
+$$\sum_{k=0}^{n+r} m^{n+r-k} \binom{n+r}{k} \binom{n+k+r}{r} B_{n+k} =
+\frac{r+1}{2} \sum_{k=1}^{m-1} \sum_{j=0}^{r+1} \binom{n+r}{j} \binom{n+r}{r+1-j}
+k^{j+n-1} (k-m)^{n+r-j}.$$
 
-The two right-hand exponents are stated with rational `zpow` and integer
-exponents `((j : ℤ) + (n : ℤ) - 1)` and `((n : ℤ) + (r : ℤ) - (j : ℤ))`
-rather than `ℕ` subtraction: at `n = 0` the endpoints `j = 0` and `j = r + 1`
-give exponent `-1`, which `ℕ` subtraction would silently truncate to `0`.
+The powers on the right have integer exponents and nonzero rational bases: for $n = 0$ the terms
+$j = 0$ and $j = r + 1$ have exponent $-1$.
 
 ## Depends on
 

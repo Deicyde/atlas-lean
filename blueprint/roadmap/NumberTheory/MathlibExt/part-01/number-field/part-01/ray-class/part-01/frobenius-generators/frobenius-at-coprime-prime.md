@@ -6,23 +6,26 @@ statement: formalized
 lean: NumberField.Modulus.frobeniusAtCoprimePrime
 ---
 
-# Frobenius At Coprime Prime
+# Chosen Frobenius element at a coprime prime
 
-Chosen Frobenius at a privately chosen unramified prime above `p`: the
-arithmetic Frobenius of `Gal (L / K)` acting on `𝓞 L` at the privately chosen
-prime above `p`. Takes the unramifiedness-outside-`m` witness so that the
-value is the chosen Frobenius at an unramified prime, not an arbitrary lift
-modulo inertia. Equality across different primes is deferred to the abelian
-choice-independence stage.
+**Chosen Frobenius element at a coprime prime.** Let $m$ be a modulus of a number field
+$K$, let $L / K$ be a Galois extension of number fields that is unramified outside $m$, and
+let $\mathfrak p$ be a finite prime of $K$ not dividing the finite part of $m$. Fix a prime
+$\mathfrak P$ of $\mathcal O_L$ lying over $\mathfrak p$. The chosen Frobenius element at
+$\mathfrak p$ is a fixed element $\sigma \in \mathrm{Gal}(L/K)$ that is an arithmetic
+Frobenius at $\mathfrak P$, that is, $\sigma(x) \equiv x^q \pmod{\mathfrak P}$ for all
+$x \in \mathcal O_L$, where $q$ is the number of elements of $\mathcal O_K / \mathfrak p$.
+
+The value may depend on the choice of $\mathfrak P$.
 
 ## Depends on
 
-- [Coprime Primes](../prime-generation/coprime-primes.md)
-- [Is Unramified Outside](is-unramified-outside.md)
+- [Primes coprime to a modulus](../prime-generation/coprime-primes.md)
+- [Extensions unramified outside a modulus](is-unramified-outside.md)
 
 ## Proof depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

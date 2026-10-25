@@ -20,12 +20,12 @@ The verifier's token stack holds this sequence in reverse order.
 ## Depends on
 
 - [Stack alphabet of the SAT verifier](sym.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Tokens of a clause](clause-toks.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

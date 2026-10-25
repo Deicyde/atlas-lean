@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.trans
 ---
 
-# Trans
+# Finite equidecomposability by isometries is transitive
 
-Finite equidecomposability is transitive.
+**Finite equidecomposability by isometries is transitive.** Let $A$, $B$ and $C$ be subsets
+of a metric space $X$. If $A$ is finitely equidecomposable by isometries with $B$ and $B$ is
+finitely equidecomposable by isometries with $C$, then $A$ is finitely equidecomposable by
+isometries with $C$.
 
 ## Depends on
 
-- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
+- [Finite equidecomposability by isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ not supplied here.
 
 ## Depends on
 
-- [Zeros All Real](../../../MathlibExt/part-04/de-bruijn-newman/zeros-all-real.md)
+- [Real-rootedness of the de Bruijn–Newman deformation](../../../MathlibExt/part-04/de-bruijn-newman/zeros-all-real.md)
 
 ## Sources
 

@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.Theory.ConsistentWith.boolSatisfiable
 ---
 
-# Model existence
+# Model existence for propositional natural deduction
 
-**Model existence**: for an intuitionistic theory `T`, a set consistent relative to `T`
-is satisfiable together with `T`, by a valuation with `⊥` false.
+**Model existence for propositional natural deduction.** Let $T$ be an intuitionistic theory,
+that is, one that derives $\bot \to B$ for every proposition $B$. If a set $S$ of propositions is
+consistent relative to $T$, then $T \cup S$ is satisfiable: some Boolean valuation $v$ of the atoms
+with $v(\bot) = \mathrm{false}$ makes every member of $T$ and every member of $S$ true.
 
 ## Depends on
 
-- [Bool Satisfiable](bool-satisfiable.md)
+- [Satisfiable sets of propositions](bool-satisfiable.md)
 - [Consistent With](consistent-with.md)
 
 ## Proof depends on
 
-- [Truth lemma](eval-bool-eq-true-iff.md)
-- [Subset theory](subset-theory.md)
-- [Eval Bool](../semantics/eval-bool.md)
-- [Lindenbaum's lemma](exists-maximal-consistent-with.md)
+- [Truth lemma for propositional natural deduction](eval-bool-eq-true-iff.md)
+- [A maximal consistent set contains its theory](subset-theory.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
+- [Lindenbaum's lemma for propositional natural deduction](exists-maximal-consistent-with.md)
 
 ## Sources
 

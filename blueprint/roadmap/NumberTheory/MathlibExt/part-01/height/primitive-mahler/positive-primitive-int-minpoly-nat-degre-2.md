@@ -7,18 +7,24 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_natDegree_eq
 ---
 
-# Positive Primitive Int Minpoly nat Degree eq
+# The positive primitive integral minimal polynomial has the degree of the minimal polynomial
 
-The signed integral polynomial has the degree of the rational minimal polynomial.
+**The positive primitive integral minimal polynomial has the degree of the minimal
+polynomial.** For every element $x$ of a field $K$ that is an algebra over $\mathbb{Q}$, the
+positive primitive integral minimal polynomial of $x$ has the same degree as the minimal
+polynomial of $x$ over $\mathbb{Q}$.
+
+Degrees are natural numbers, the zero polynomial having degree $0$; if $x$ is not algebraic over
+$\mathbb{Q}$, both degrees are $0$.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Positive Primitive Int Minpoly nat Degree](positive-primitive-int-minpoly-nat-degre.md)
-- [Absolute](../primitive-int-minpoly.md)
+- [Sign normalization preserves the degree](positive-primitive-int-minpoly-nat-degre.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

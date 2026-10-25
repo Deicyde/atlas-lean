@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.floor_grid_match
 ---
 
-# Floor grid match
+# Real floors at divisors of 210 agree with grid floors
 
-Floors at multiples match grid floors for `m ∣ 210`.
+**Real floors at divisors of 210 agree with grid floors.** Let $C$ and $L$ be positive natural
+numbers, let $m$ be a divisor of $210$ with $C \mid mL$, and let $x \ge 0$ be a real number. Then
+$\lfloor Cx/m \rfloor = \lfloor C \lfloor Lx \rfloor / (mL) \rfloor$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nat mod le of dvd](nat-mod-le-of-dvd.md)
+- [Remainder bound for common multiples](nat-mod-le-of-dvd.md)
 
 ## Sources
 

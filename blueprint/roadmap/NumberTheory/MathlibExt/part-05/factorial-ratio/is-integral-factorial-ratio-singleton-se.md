@@ -7,17 +7,18 @@ proof: formalized
 lean: isIntegralFactorialRatio_singleton_self
 ---
 
-# Is Integral Factorial Ratio singleton self
+# Equal singletons form an integral factorial ratio
 
-Equal singleton tuples satisfy the predicate.
+**Equal singletons form an integral factorial ratio.** For every positive natural number
+$c$, the one-entry tuples $(c)$ and $(c)$ form an integral factorial ratio.
 
 ## Depends on
 
-- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Integral factorial ratio](is-integral-factorial-ratio.md)
 
 ## Proof depends on
 
-- [Factorial Prod](factorial-prod.md)
+- [Product of scaled factorials](factorial-prod.md)
 
 ## Sources
 

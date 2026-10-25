@@ -16,7 +16,7 @@ declared time cost $0$.
 
 - [Decoding a complete length-prefixed CNF formula](../cook-levin/decode-cnf.md)
 - [The SAT verifier](sat-verifier.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

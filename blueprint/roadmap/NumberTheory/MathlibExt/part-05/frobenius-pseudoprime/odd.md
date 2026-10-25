@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsFrobeniusProbablePrime.odd
 ---
 
-# Odd
+# Frobenius probable primes are odd
 
-A Frobenius probable prime candidate is odd.
+**Frobenius probable primes are odd.** If $n$ is a Frobenius probable prime with respect to a
+polynomial $f \in \mathbb{Z}[x]$, then $n$ is odd.
 
 ## Depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
 
 ## Proof depends on
 
-- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
+- [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

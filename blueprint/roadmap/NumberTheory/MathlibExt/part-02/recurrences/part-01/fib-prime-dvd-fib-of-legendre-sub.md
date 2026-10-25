@@ -7,16 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.fib_prime_dvd_fib_of_legendre_sub
 ---
 
-# Fibonacci Prime Divisibility
+# Fibonacci prime divisibility
 
-For a prime `p ≠ 5` with `p > 2`, `p` divides the Fibonacci number
-`F_{p-(5/p)}`, where `(5/p)` is the Legendre symbol.
-
-`legendreSym p 5` is `(5/p)` (`p` is the modulus); since `p ≠ 5` it is
-`±1`, so the `if` selects `F_{p-1}` when `(5/p) = 1` and `F_{p+1}` when
-`(5/p) = -1`, matching the source. Verified for all primes `3 ≤ p < 250`
-with `p ≠ 5`.
-Proves `Wanted` entry `fib_prime_dvd_fib_of_legendre_sub`.
+**Fibonacci prime divisibility.** Let $p$ be a prime with $p > 2$ and $p \ne 5$, and let
+$\left(\frac{5}{p}\right)$ be the Legendre symbol of $5$ modulo $p$. Then $p$ divides the
+Fibonacci number $F_{p-1}$ if $\left(\frac{5}{p}\right) = 1$, and $p$ divides the Fibonacci
+number $F_{p+1}$ otherwise. Since $\left(\frac{5}{p}\right) = \pm 1$, this says that $p$ divides
+$F_{p - \left(\frac{5}{p}\right)}$.
 
 ## Depends on
 

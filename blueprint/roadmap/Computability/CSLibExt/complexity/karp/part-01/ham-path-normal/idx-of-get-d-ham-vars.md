@@ -31,7 +31,7 @@ end Contract
 ## Depends on
 
 - [Distinct variables of a formula](../ham-path/ham-vars.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

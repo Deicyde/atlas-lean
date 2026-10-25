@@ -7,15 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.c_recursive_exponential_growth_bound
 ---
 
-# C recursive exponential growth bound
+# Exponential growth bound for C-recursive sequences
 
-Every C-recursive complex sequence is exponentially bounded: there is an
-integer `g ≥ 1` with `‖t n‖ < g ^ (n + 1)` for all `n`.
-
-The hypothesis unfolds C-recursiveness: some order `k ≥ 1` with
-`t (n + k) = ∑ i, c i * t (n + i.val)` for all `n`. It follows from
-`exists_norm_lt_pow_of_isSolution`; the source's `1 ≤ k` is unused.
-Proves `Wanted` entry `c_recursive_exponential_growth_bound`.
+**Exponential growth bound for C-recursive sequences.** Let $t : \mathbb{N} \to \mathbb{C}$ be
+C-recursive: there are an order $k \ge 1$ and complex numbers $c_0, \dots, c_{k-1}$ with
+$t(n+k) = \sum_{i=0}^{k-1} c_i \, t(n+i)$ for all $n \in \mathbb{N}$. Then there is an integer
+$g \ge 1$ such that $|t(n)| < g^{n+1}$ for all $n \in \mathbb{N}$.
 
 ## Depends on
 
@@ -23,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists norm lt pow of is Solution](exists-norm-lt-pow-of-is-solution.md)
+- [Exponential growth bound for solutions of linear recurrences](exists-norm-lt-pow-of-is-solution.md)
 
 ## Sources
 

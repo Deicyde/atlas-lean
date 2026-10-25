@@ -6,9 +6,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.hyperbolicLaplacian_const
 ---
 
-# Hyperbolic Laplacian const
+# The hyperbolic Laplacian kills constants
 
-The hyperbolic Laplacian kills constant functions, as it should.
+**The hyperbolic Laplacian kills constants.** For every complex number $c$ and every
+point $z$ of the upper half plane, the hyperbolic Laplacian of the constant function with
+value $c$ at $z$ is $0$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ The hyperbolic Laplacian kills constant functions, as it should.
 
 ## Proof depends on
 
-- [Ext](ext.md)
-- [Partial Im](partial-im.md)
-- [Partial Re](partial-re.md)
+- [Zero extension from the upper half plane](ext.md)
+- [Partial derivative in the imaginary direction](partial-im.md)
+- [Partial derivative in the real direction](partial-re.md)
 
 ## Sources
 

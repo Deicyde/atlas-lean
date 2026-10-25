@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch3 Entry3 Psisummable
 
-- [Ramanujan part1 ch3 entry3 psisummable general](ramanujan-part1-ch3-entry3-psisummable-g.md)
-- [Ramanujan part1 ch3 entry3 psisummable](ramanujan-part1-ch3-entry3-psisummable.md)
+- [Summability of Ramanujan's factorial series in a sector, for every $x$](ramanujan-part1-ch3-entry3-psisummable-g.md)
+- [Summability of Ramanujan's factorial series in a sector](ramanujan-part1-ch3-entry3-psisummable.md)

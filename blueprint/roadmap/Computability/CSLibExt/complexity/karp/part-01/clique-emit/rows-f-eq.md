@@ -18,7 +18,7 @@ telling whether $o_i$ and $o_j$ lie in different clauses and are not complementa
 
 - [Row bits of a formula for the CLIQUE emitter](rows-f.md)
 - [Adjacency bits of Karp's clique graph](../clique/clique-bits.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -31,7 +31,7 @@ telling whether $o_i$ and $o_j$ lie in different clauses and are not complementa
 - [Pair bits of an occurrence list, row by row](pair-bits-eq.md)
 - [Adjacency of literal occurrences in Karp's clique graph](../clique/occ-adj.md)
 - [Literal occurrences of a CNF formula](../clique/occs.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

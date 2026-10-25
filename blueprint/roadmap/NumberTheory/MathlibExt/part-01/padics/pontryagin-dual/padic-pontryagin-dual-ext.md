@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.PadicPontryaginDual_ext
 ---
 
-# Padic Pontryagin Dual ext
+# Extensionality for the $p$-adic Pontryagin dual
 
-Two p-adic Pontryagin-dual elements are equal when they agree pointwise.
+**Extensionality for the $p$-adic Pontryagin dual.** Let $p$ be a prime and $A$ a
+$\mathbb{Z}_p$-module. If two elements $\varphi, \psi$ of the algebraic $p$-adic Pontryagin dual
+of $A$ satisfy $\varphi(a) = \psi(a)$ for every $a \in A$, then $\varphi = \psi$.
 
 ## Depends on
 
-- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
-- [Padic Quotient Int](padic-quotient-int.md)
+- [Algebraic $p$-adic Pontryagin dual](padic-pontryagin-dual.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ The zero sequence is almost realizable (by the self-map of the empty set, with `
 
 ## Proof depends on
 
-- [Dold Realizable](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
+- [Dold realizable sequences](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
 
 ## Sources
 

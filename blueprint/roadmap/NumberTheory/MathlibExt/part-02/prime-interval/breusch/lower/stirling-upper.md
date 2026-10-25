@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.stirling_upper
 ---
 
-# Stirling upper
+# Weak Stirling upper bound for factorials
 
-Weak Stirling upper bound `n! ≤ n ^ (n + 1) * exp (-n + 1)`.
+**Weak Stirling upper bound for factorials.** For every natural number $n \ge 1$,
+$n! \le n^{n+1} e^{1-n}$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [One sub inv le log](one-sub-inv-le-log.md)
+- [Logarithm is at least 1 − 1/t](one-sub-inv-le-log.md)
 
 ## Sources
 

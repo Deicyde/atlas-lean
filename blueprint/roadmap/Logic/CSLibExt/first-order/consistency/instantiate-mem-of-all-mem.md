@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent.instantiate_mem_of_all_mem
 ---
 
-# Instantiate mem of all mem
+# Universal instantiation in maximal consistent sets
 
-A universal formula in a maximal consistent set has all its instances there.
+**Universal instantiation in maximal consistent sets.** Let $\alpha$ be an infinite set of
+variables and let $\Delta$ be a maximal consistent set of formulas with free variables in
+$\alpha$. Let $\varphi(x)$ be a formula with one bound variable $x$ left open, and for a term
+$t$ write $\varphi(t)$ for the result of substituting $t$ for $x$. If $\Delta$ contains
+$\forall x\, \varphi$, then $\Delta$ contains $\varphi(t)$ for every term $t$.
 
 ## Depends on
 
-- [Maximal Consistent](maximal-consistent.md)
-- [Instantiate](../syntax/instantiate.md)
+- [Maximal consistent set](maximal-consistent.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Mem of provable](mem-of-provable.md)
+- [Maximal consistent sets are deductively closed](mem-of-provable.md)
 
 ## Sources
 

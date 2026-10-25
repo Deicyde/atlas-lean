@@ -7,17 +7,24 @@ proof: formalized
 lean: ArithmeticFunction.dedekindPsi_mul_prod_primeFactors
 ---
 
-# Dedekind Psi mul prod prime Factors
+# Cleared-denominator product formula for the Dedekind psi function
 
-Cleared-denominator formula for the Dedekind psi function.
+**Cleared-denominator product formula for the Dedekind psi function.** For every natural
+number $n \ne 0$, the Dedekind psi function $\psi$ satisfies
+
+$$
+\psi(n) \prod_{p \mid n} p = n \prod_{p \mid n} (p + 1),
+$$
+
+both products running over the prime divisors $p$ of $n$.
 
 ## Depends on
 
-- [Dedekind Psi](dedekind-psi.md)
+- [Dedekind psi function](dedekind-psi.md)
 
 ## Proof depends on
 
-- [Dedekind Psi eq prod factorization](dedekind-psi-eq-prod-factorization.md)
+- [Dedekind psi function as a product over prime powers](dedekind-psi-eq-prod-factorization.md)
 
 ## Sources
 

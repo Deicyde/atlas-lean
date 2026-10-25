@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ScottishBook169Wanted.AreCongruent
 ---
 
-# Are Congruent
+# Congruent plane sets
 
-Two plane sets are congruent when an isometry of the plane carries
-one onto the other.
+**Congruent plane sets.** Two sets $E$ and $F$ in the Euclidean plane $\mathbb{R}^2$ are
+congruent when some isometry of the plane onto itself maps $E$ onto $F$.
 
 ## Depends on
 

@@ -46,7 +46,7 @@ stacks, top first.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Renaming a literal](../three-sat/ren-lit.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

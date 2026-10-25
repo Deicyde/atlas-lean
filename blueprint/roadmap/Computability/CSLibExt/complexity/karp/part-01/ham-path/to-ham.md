@@ -20,7 +20,7 @@ arcs $R_{i,3j+2} \to j$ and $j \to R_{i,3j+1}$ if the literal $\neg x_i$ occurs 
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ arcs $R_{i,3j+2} \to j$ and $j \to R_{i,3j+1}$ if the literal $\neg x_i$ occurs 
 - [Distinct variables of a formula](ham-vars.md)
 - [Tops of the diamonds](hp-t.md)
 - [Encoding of a PATH instance](../../../path/encode-p.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

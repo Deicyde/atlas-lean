@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LehmerConstant.mahlerMeasuresAboveOne
 ---
 
-# Mahler Measures Above One
+# Mahler measures above one
 
-The set of Mahler measures of integer polynomials that are strictly
-larger than `1`.
+**Mahler measures above one.** This is the set of real numbers of the form $M(f)$, where
+$f \in \mathbb{Z}[X]$ is an integer polynomial whose Mahler measure $M(f)$ is strictly larger
+than $1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Int Mahler Measure](int-mahler-measure.md)
+- [Mahler measure of an integer polynomial](int-mahler-measure.md)
 
 ## Sources
 

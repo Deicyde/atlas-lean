@@ -13,7 +13,7 @@ members $a$ and $b$ are all of its members: every member $c$ of the clause equal
 
 ## Depends on
 
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

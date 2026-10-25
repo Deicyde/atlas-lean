@@ -16,13 +16,13 @@ are dropped.
 ## Depends on
 
 - [Dense CNF formula](../dense-sat/cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Dense clause](../dense-sat/clause.md)
 - [Binary-index translation of a dense clause](bin-clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

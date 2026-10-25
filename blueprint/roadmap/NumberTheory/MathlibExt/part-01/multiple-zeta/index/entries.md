@@ -6,15 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.entries
 ---
 
-# Entries
+# Entries of an index
 
-Entries of an index in source order. Source clause D2
-(`2608.10675:D01`, `2307.09867:D01`).
+**Entries of an index.** The entries of an index $(k_1, \ldots, k_r)$ form the list
+$[k_1, \ldots, k_r]$ of its terms, in order.
 
 ## Depends on
 
-- [Index](index.md)
+- [Multiple-zeta index](index.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.Index](../../../../../../sources/v2/MathlibExt.md)
+- clause D2 (`2608.10675:D01`, `2307.09867:D01`).

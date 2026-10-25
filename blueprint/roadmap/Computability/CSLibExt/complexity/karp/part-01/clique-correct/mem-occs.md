@@ -50,8 +50,8 @@ theorem indSetDec_eq_vertexCoverDec_isToVc (x : List Bool) :
 ## Depends on
 
 - [Literal occurrences of a CNF formula](../clique/occs.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

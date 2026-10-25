@@ -7,9 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.sqrt_le_div_fifteen_of_le_four_mul
 ---
 
-# Sqrt le div fifteen of le four mul
+# Square root bound on a linear range
 
-If `N ≤ 4 * n` and `n` is large enough, then `sqrt N` is at most `n / 15`.
+**Square root bound on a linear range.** Let $n$ and $N$ be natural numbers with
+$900 \le n$ and $N \le 4n$. Then $\lfloor \sqrt{N} \rfloor \le \lfloor n/15 \rfloor$.
 
 ## Depends on
 

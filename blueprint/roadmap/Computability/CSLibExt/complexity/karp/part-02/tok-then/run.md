@@ -50,7 +50,7 @@ output stack of $E$ then holds the output on $x$, written in the output symbols 
 - [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Agreement of host and sub-machine stacks](../../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 - [Embedding of a machine in a host](../../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 - [Frame condition for a stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/frame.md)

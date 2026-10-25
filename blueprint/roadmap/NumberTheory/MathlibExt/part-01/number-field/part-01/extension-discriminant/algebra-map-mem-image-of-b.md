@@ -7,17 +7,20 @@ proof: formalized
 lean: algebraMap_mem_imageOfB
 ---
 
-# Algebra Map mem image Of B
+# Elements of $B$ lie in the image of $B$
 
-Every element mapped from B belongs to imageOfB.
+**Elements of $B$ lie in the image of $B$.** Let $A$ and $B$ be commutative rings and $L$ a
+field, with algebra maps $A \to B$, $B \to L$ and $A \to L$ forming a scalar tower. For every
+$b \in B$, the image of $b$ under the algebra map $B \to L$ lies in the image of $B$ in $L$,
+regarded as an $A$-submodule of $L$.
 
 ## Depends on
 
-- [Image Of B](image-of-b.md)
+- [Image of $B$ in $L$](image-of-b.md)
 
 ## Proof depends on
 
-- [Mem image Of B](mem-image-of-b.md)
+- [Membership in the image of $B$](mem-image-of-b.md)
 
 ## Sources
 

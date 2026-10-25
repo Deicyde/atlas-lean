@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.multiplicativeOfPrimePowers_one
 ---
 
-# Multiplicative Of Prime Powers one
+# The function with prescribed prime-power values is $1$ at $1$
 
-`multiplicativeOfPrimePowers g 1 = 1`.
+**The function with prescribed prime-power values is $1$ at $1$.** Let $R$ be a commutative
+monoid with zero and $g : \mathbb{N} \to R$. The multiplicative function with prime-power values
+$g$, given by $n \mapsto \prod_{q \mid n} g(v_q(n))$ for $n \ge 1$ (with $q$ running over the
+primes dividing $n$ and $v_q(n)$ the exponent of $q$ in $n$), takes the value $1$ at $n = 1$,
+whatever $g(0)$ is.
 
 ## Depends on
 
-- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
+- [Multiplicative function with prescribed values at prime powers](multiplicative-of-prime-powers.md)
 
 ## Sources
 

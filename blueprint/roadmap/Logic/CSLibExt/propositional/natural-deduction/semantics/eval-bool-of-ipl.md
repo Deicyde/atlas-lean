@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Logic.PL.DerivableIn.evalBool_of_ipl
 ---
 
-# Eval Bool of ipl
+# Intuitionistic derivability implies truth under valuations with false falsum
 
-A sequent derivable in intuitionistic logic `IPL` is a tautology, reading `⊥` as false.
+**Intuitionistic derivability implies truth under valuations with false falsum.** Suppose the
+atoms include a distinguished atom $\bot$, and let $v$ be a Boolean valuation of the atoms with
+$v(\bot) = \mathrm{false}$. If the sequent $\Gamma \vdash A$ is derivable in intuitionistic
+propositional logic (natural deduction whose axioms are all instances $\bot \to B$ of ex falso)
+and every member of $\Gamma$ is true under $v$, then $A$ is true under $v$.
 
 ## Depends on
 
-- [Eval Bool](eval-bool.md)
+- [Truth-table evaluation](eval-bool.md)
 
 ## Proof depends on
 
-- [Bool Sound](bool-sound-2.md)
-- [Eval Bool of mem ipl](eval-bool-of-mem-ipl.md)
+- [Truth-table soundness of derivability](bool-sound-2.md)
+- [Ex falso is true when falsum is false](eval-bool-of-mem-ipl.md)
 
 ## Sources
 

@@ -6,9 +6,13 @@ statement: formalized
 lean: NumberField.Modulus.rayElements
 ---
 
-# Ray Elements
+# Elements coprime to a modulus
 
-Elements of `Kˣ` whose principal ideal is coprime to the modulus.
+**Elements coprime to a modulus.** Let $\mathfrak m$ be a modulus of a number field $K$, with
+finite part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$. The elements coprime to
+$\mathfrak m$ form the subgroup of $K^\times$ consisting of those $x$ whose principal fractional
+ideal $(x)$ is coprime to $\mathfrak m$, that is, has exponent $0$ at every nonzero prime ideal
+$\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](coprime-fractional-ideals.md)
 
 ## Sources
 

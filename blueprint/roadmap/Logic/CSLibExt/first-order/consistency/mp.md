@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Logic.FOL.Provable.mp
 ---
 
-# Mp
+# Modus ponens for provability from sets
 
-Modus ponens for provability from sets.
+**Modus ponens for provability from sets.** Let $L$ be a first-order language, let $\alpha$ be
+an infinite type of variables, and let $S$ be a set of formulas of $L$ with free variables in
+$\alpha$. For formulas $\varphi$ and $\psi$, if $S$ proves $\varphi \to \psi$ and $S$ proves
+$\varphi$, then $S$ proves $\psi$.
 
 ## Depends on
 
-- [Provable](../natural-deduction/provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
 
 ## Proof depends on
 

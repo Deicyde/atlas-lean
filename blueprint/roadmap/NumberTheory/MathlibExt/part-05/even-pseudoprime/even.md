@@ -6,13 +6,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.IsEvenPseudoprime.even
 ---
 
-# Even
+# Even pseudoprimes are even
 
-An even pseudoprime is even.
+**Even pseudoprimes are even.** Every even pseudoprime $N$ is an even natural number.
 
 ## Depends on
 
-- [Is Even Pseudoprime](is-even-pseudoprime.md)
+- [Even pseudoprime](is-even-pseudoprime.md)
 
 ## Sources
 

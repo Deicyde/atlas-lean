@@ -7,15 +7,19 @@ proof: formalized
 lean: NumberField.Modulus.integralUnitsToRayElements_coe
 ---
 
-# Integral Units To Ray Elements coe
+# Ray-element image of an integral unit as a field unit
 
-Coercion of the ray-element image back to field units.
+**Ray-element image of an integral unit as a field unit.** Let $K$ be a number field with
+ring of integers $\mathcal{O}_K$, let $\mathfrak{m}$ be a modulus of $K$, and let
+$u \in \mathcal{O}_K^\times$. The image of $u$ in the group of ray elements for $\mathfrak{m}$,
+regarded as an element of $K^\times$, equals the image of $u$ under the embedding
+$\mathcal{O}_K^\times \to K^\times$.
 
 ## Depends on
 
-- [Integral Units To Field Units](integral-units-to-field-units.md)
-- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Embedding of integral units into field units](integral-units-to-field-units.md)
+- [Integral units as ray elements](integral-units-to-ray-elements.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Sources
 

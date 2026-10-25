@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.Integral.ImproperIntegralAbsoluteConditionalWanted.dirichlet_integral_conditionally_convergent
 ---
 
-# Improper Integral Absolute Conditional Wanted
+# Conditional convergence of the Dirichlet integral on $(1, \infty)$
 
-The Dirichlet integral converges conditionally on `[1, ∞)`: every truncation of
-`sin x / x` is interval-integrable, the proper integrals over `[1, b]` converge as
-`b → ∞`, and `sin x / x` is not Lebesgue integrable on `(1, ∞)`.
+**Conditional convergence of the Dirichlet integral on $[1, \infty)$.** The function
+$x \mapsto \sin x / x$ is interval integrable on $[1, b]$ for every real $b \ge 1$, the integrals
+$\int_1^b \frac{\sin x}{x}\,dx$ converge to a real limit as $b \to \infty$, and $\sin x / x$ is
+not Lebesgue integrable on $(1, \infty)$.
 
 ## Depends on
 

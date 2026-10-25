@@ -7,23 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.jacobiSym_natAbs_eq_kroneckerSym_of_prime_ne_two_of_one_mod_four
 ---
 
-# Jacobi Sym nat Abs eq kronecker Sym of prime ne two of one mod four
+# Kronecker symbol at odd primes for integers congruent to 1 mod 4
 
-Combined reciprocity bridge for `D % 4 = 1` at an odd prime `p`.
-Covers every `D ≡ 1 (mod 4)`, of either sign: the `0 < D` case and
-the `D < 0` case (`D = 0` is impossible since `(0 : ℤ) % 4 = 0`).
-`h1` is a genuine truth condition, not a proof boundary: at
-`(D, p) = (3, 7)` the left side is `1` while the right side is `-1`.
-The `D = 4 * m` family remains uncovered.
+**Kronecker symbol at odd primes for integers congruent to 1 mod 4.** Let $D$ be an integer
+with $D \equiv 1 \pmod 4$ and let $p$ be an odd prime. Then the Jacobi symbol
+$\left(\frac{p}{|D|}\right)$ equals the Kronecker symbol $\left(\frac{D}{p}\right)$.
+
+This covers $D$ of either sign. The congruence condition cannot be dropped: for $D = 3$ and
+$p = 7$ the Jacobi symbol is $1$ while the Kronecker symbol is $-1$.
 
 ## Depends on
 
-- [Kronecker Sym](../quadratic/kronecker-sym.md)
+- [Kronecker symbol](../quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Jacobi Sym nat Abs eq kronecker Sym of prime ne two of one mod four neg](jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
-- [Quadratic Reciprocity Bridge](../jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
+- [Kronecker symbol at odd primes for negative integers congruent to 1 mod 4](jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
+- [Quadratic reciprocity for the Kronecker symbol, positive $D \equiv 1 \pmod 4$](../jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
 
 ## Sources
 

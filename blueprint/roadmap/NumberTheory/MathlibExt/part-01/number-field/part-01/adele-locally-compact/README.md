@@ -5,5 +5,5 @@ navigation: module
 
 # Adele Locally Compact
 
-- [Finite residue Field](finite-residue-field.md)
-- [Is Compact adic Completion Integers](is-compact-adic-completion-integers.md)
+- [Finite residue field of a completed number ring](finite-residue-field.md)
+- [Compactness of the completed ring of integers](is-compact-adic-completion-integers.md)

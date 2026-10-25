@@ -5,5 +5,5 @@ navigation: module
 
 # Young Reverse Multiple Carry Path
 
-- [Young reverse multiple carry path iff general](young-reverse-multiple-carry-path-iff-ge.md)
-- [Young reverse multiple carry path iff](young-reverse-multiple-carry-path-iff.md)
+- [Carry equations for reverse multiples, general form](young-reverse-multiple-carry-path-iff-ge.md)
+- [Carry equations for reverse multiples](young-reverse-multiple-carry-path-iff.md)

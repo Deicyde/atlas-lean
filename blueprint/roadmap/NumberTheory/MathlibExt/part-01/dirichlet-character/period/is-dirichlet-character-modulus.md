@@ -6,10 +6,13 @@ statement: formalized
 lean: MonoidHom.IsDirichletCharacterModulus
 ---
 
-# Is Dirichlet Character Modulus
+# Dirichlet character of a given modulus
 
-`χ` is a Dirichlet character of modulus `q`: it is `q`-periodic and its
-nonvanishing locus is exactly the set of integers coprime to `q`.
+**Dirichlet character of a given modulus.** Let $R$ be a monoid with zero, let
+$\chi \colon \mathbb{Z} \to R$ be a multiplicative map with $\chi(1) = 1$, and let $q$ be a
+natural number. Then $\chi$ is a Dirichlet character of modulus $q$ if $\chi(n + q) = \chi(n)$
+for every integer $n$, and, for every integer $n$, $\chi(n) \neq 0$ if and only if $q$ and $n$
+are coprime.
 
 ## Depends on
 

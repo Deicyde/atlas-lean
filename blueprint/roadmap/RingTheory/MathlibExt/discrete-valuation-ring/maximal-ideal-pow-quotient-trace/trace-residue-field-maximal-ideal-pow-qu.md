@@ -30,7 +30,7 @@ source theorem.
 - [Residue Field Mul Maximal Ideal Graded Piece](../maximal-ideal-graded-piece-mul/residue-field-mul-maximal-ideal-graded-p.md)
 - [Residue Field Mul Maximal Ideal Graded Piece residue mk](../maximal-ideal-graded-piece-mul/residue-field-mul-maximal-ideal-graded-p-2.md)
 - [Trace residue Field Mul Maximal Ideal Graded Piece](../maximal-ideal-graded-piece-mul/trace-residue-field-mul-maximal-ideal-gr.md)
-- [Trace eq trace restrict ker add of surjective](../../../../LinearAlgebra/MathlibExt/trace/invariant-submodule/trace-eq-trace-restrict-ker-add-of-surje.md)
+- [Trace splits along a surjective intertwining map](../../../../LinearAlgebra/MathlibExt/trace/invariant-submodule/trace-eq-trace-restrict-ker-add-of-surje.md)
 - [Factor Residue Field Maximal Ideal Pow Quotient](../maximal-ideal-pow-factor/factor-residue-field-maximal-ideal-pow-q.md)
 - [Factor Residue Field Maximal Ideal Pow Quotient surjective](../maximal-ideal-pow-factor/factor-residue-field-maximal-ideal-pow-q-2.md)
 - [Residue Field Linear Equiv Maximal Ideal Graded Piece Ker Factor](../maximal-ideal-pow-factor/residue-field-linear-equiv-maximal-ideal.md)

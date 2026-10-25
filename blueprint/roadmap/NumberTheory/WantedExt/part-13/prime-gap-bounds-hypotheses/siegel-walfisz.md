@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Discrepancy](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/discrepancy.md)
+- [Discrepancy in a residue class](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/discrepancy.md)
 
 ## Sources
 

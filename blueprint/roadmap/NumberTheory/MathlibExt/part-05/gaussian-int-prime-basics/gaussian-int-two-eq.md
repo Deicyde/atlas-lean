@@ -6,9 +6,10 @@ proof: formalized
 lean: GaussianInt.gaussianInt_two_eq
 ---
 
-# Gaussian Int two eq
+# Factorization of 2 in the Gaussian integers
 
-`2` factors in `ℤ[i]` as the unit `-i` times `(1 + i)^2`.
+**Factorization of 2 in the Gaussian integers.** In $\mathbb{Z}[i]$ we have
+$2 = -i \cdot (1 + i)^2$, where $-i$ is a unit with inverse $i$.
 
 ## Depends on
 

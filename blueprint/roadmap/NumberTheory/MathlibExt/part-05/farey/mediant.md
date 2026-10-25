@@ -8,7 +8,8 @@ lean: Farey.mediant
 
 # Mediant
 
-Canonical mediant `(a+c)/(b+d)` from reduced numerator/denominator data.
+**Mediant.** For rational numbers $x = a/b$ and $y = c/d$ written in lowest terms with
+$b, d > 0$, the mediant of $x$ and $y$ is the rational number $(a + c)/(b + d)$.
 
 ## Depends on
 

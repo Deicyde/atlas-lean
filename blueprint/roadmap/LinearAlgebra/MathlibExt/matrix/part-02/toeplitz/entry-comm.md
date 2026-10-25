@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsSymmetricToeplitzMatrix.entry_comm
 ---
 
-# Entry comm
+# Symmetric Toeplitz matrices are symmetric
 
-Entries of a symmetric Toeplitz matrix commute: `A i j = A j i`.
+**Symmetric Toeplitz matrices are symmetric.** If $A = (a_{ij})$ is a real
+$(n+1) \times (n+1)$ symmetric Toeplitz matrix, with rows and columns indexed by
+$\{0, \dots, n\}$, then $a_{ij} = a_{ji}$ for all $i, j$.
 
 ## Depends on
 
-- [Is Symmetric Toeplitz Matrix](is-symmetric-toeplitz-matrix.md)
+- [Symmetric Toeplitz matrix](is-symmetric-toeplitz-matrix.md)
 
 ## Sources
 

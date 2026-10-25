@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.bertrand_base
 ---
 
-# Bertrand base
+# Bertrand's postulate in block form
 
-In the block starting at `n + 1`, Bertrand's prime in `(n, 2 * n]` is itself
-one of the displayed terms.
+**Bertrand's postulate in block form.** For every natural number $n \ge 1$ there are $i < n$
+and a prime $p > n$ such that $p$ divides $n + 1 + i$. Thus one of the $n$ consecutive integers
+$n + 1, \dots, 2n$ has a prime divisor greater than $n$.
 
 ## Depends on
 

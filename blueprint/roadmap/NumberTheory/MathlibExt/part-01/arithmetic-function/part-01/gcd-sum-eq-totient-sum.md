@@ -7,14 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.gcd_sum_eq_totient_sum
 ---
 
-# Gcd Sum Totient
+# The gcd-sum as a divisor sum of totients
 
-The gcd-sum `∑_{j=1}^n (j, n)` equals `n` times the divisor sum of `φ(d)/d`.
+**The gcd-sum as a divisor sum of totients.** For every positive integer $n$,
+$\sum_{j=1}^{n} \gcd(j, n) = n \sum_{d \mid n} \varphi(d)/d$, where $\varphi$ is Euler's totient
+function and $d$ runs over the positive divisors of $n$.
 
-The source's proof groups the terms `(j, n) = e` by divisor: there are
-`φ(n/e)` such terms, giving `∑_{e|n} e·φ(n/e) = n·∑_{d|n} φ(d)/d`.
-Verified by exact rational arithmetic for `1 ≤ n ≤ 59`.
-Proves `Wanted` entry `gcd_sum_eq_totient_sum`.
+Grouping the terms with $\gcd(j, n) = e$, of which there are $\varphi(n/e)$, shows that the sum
+equals $\sum_{e \mid n} e \, \varphi(n/e)$.
 
 ## Depends on
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin3
 ---
 
-# Jmin3
+# First index from 10 on with grid value at least 3
 
-`963` is the first index `≥ 10` with `G ≥ 3`.
+**First index from 10 on with grid value at least 3.** The grid function $G_9$ satisfies
+$G_9(963) \ge 3$, and $G_9(j) < 3$ for every natural number $j$ with $10 \le j < 963$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Proof depends on
 
-- [Jmin3 attained](jmin3-attained.md)
-- [Jmin3 core](jmin3-core.md)
+- [The grid function reaches $3$ at $963$](jmin3-attained.md)
+- [The grid function stays below $3$ on $(10, 963)$](jmin3-core.md)
 
 ## Sources
 

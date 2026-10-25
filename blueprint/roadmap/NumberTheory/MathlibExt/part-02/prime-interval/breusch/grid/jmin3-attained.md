@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin3_attained
 ---
 
-# Jmin3 attained
+# The grid function reaches $3$ at $963$
 
-The level `G ≥ 3` is attained at `j = 963`.
+**The grid function reaches $3$ at $963$.** The Breusch grid function $G_9$ for $k = 9$
+satisfies $G_9(963) \ge 3$.
 
 ## Depends on
 
-- [G9](g9.md)
+- [Breusch grid function for $k = 9$](g9.md)
 
 ## Sources
 

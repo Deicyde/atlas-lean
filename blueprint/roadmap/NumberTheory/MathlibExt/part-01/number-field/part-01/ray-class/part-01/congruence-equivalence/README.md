@@ -11,7 +11,7 @@ navigation: module
 
 ## Congruence Subgroup Pair
 
-- [Is Equivalent](is-equivalent.md)
-- [Is Equivalent iff](is-equivalent-iff.md)
-- [Refl](refl.md)
-- [Symm](symm.md)
+- [Equivalence of congruence subgroup pairs](is-equivalent.md)
+- [Criterion for equivalence of congruence subgroup pairs](is-equivalent-iff.md)
+- [Equivalence of congruence subgroup pairs is reflexive](refl.md)
+- [Equivalence of congruence subgroup pairs is symmetric](symm.md)

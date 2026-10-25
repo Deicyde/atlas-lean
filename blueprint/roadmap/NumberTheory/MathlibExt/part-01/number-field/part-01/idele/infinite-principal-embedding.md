@@ -6,13 +6,15 @@ statement: formalized
 lean: NumberField.TopologicalIdeleGroup.infinitePrincipalEmbedding
 ---
 
-# Infinite Principal Embedding
+# Diagonal map into the infinite ideles
 
-The diagonal embedding of global units into the infinite ideles.
+**Diagonal map into the infinite ideles.** For a field $K$, this is the group homomorphism
+from $K^\times$ to the infinite idele group of $K$ that sends $x$ to the family of its images in the
+completions $K_v$ of $K$, one for each infinite place $v$ of $K$.
 
 ## Depends on
 
-- [Infinite Idele Group](infinite-idele-group.md)
+- [Infinite idele group](infinite-idele-group.md)
 
 ## Sources
 

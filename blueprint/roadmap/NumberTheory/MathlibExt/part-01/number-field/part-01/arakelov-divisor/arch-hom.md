@@ -6,18 +6,20 @@ statement: formalized
 lean: NumberField.ArakelovDivisor.archHom
 ---
 
-# Arch Hom
+# Archimedean factor homomorphism
 
-The archimedean factor as a bundled monoid homomorphism.
+**Archimedean factor homomorphism.** For a number field $K$, the map sending an Arakelov
+divisor on $K$ to its archimedean factor is a monoid homomorphism from the Arakelov divisors on
+$K$, multiplied componentwise, to the positive real numbers under multiplication.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Proof depends on
 
-- [Archimedean Factor](archimedean-factor.md)
-- [Archimedean Factor coe](archimedean-factor-coe.md)
+- [Archimedean factor](archimedean-factor.md)
+- [Archimedean factor as a real number](archimedean-factor-coe.md)
 
 ## Sources
 

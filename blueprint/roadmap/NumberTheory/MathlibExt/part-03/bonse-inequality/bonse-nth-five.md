@@ -7,9 +7,9 @@ proof: formalized
 lean: MetaMathlibExt.bonse_nth_five
 ---
 
-# Bonse nth five
+# The sixth prime is thirteen
 
-The sixth prime is thirteen, via prime counting.
+**The sixth prime is thirteen.** The sixth prime number, counting $2$ as the first, is $13$.
 
 ## Depends on
 

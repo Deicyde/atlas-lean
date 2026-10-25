@@ -6,22 +6,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.absoluteTrace_pos
 ---
 
-# Absolute Trace pos
+# Positivity of the absolute trace
 
-The absolute trace of a totally positive algebraic integer is
-strictly positive.
+**Positivity of the absolute trace.** If a complex number $\alpha$ is a totally positive
+algebraic integer, then the absolute trace of $\alpha$ is strictly positive.
 
 ## Depends on
 
-- [Is Totally Positive](is-totally-positive.md)
+- [Totally positive algebraic integers](is-totally-positive.md)
 - [Absolute Trace](absolute-trace.md)
 
 ## Proof depends on
 
 - [Conjugates](conjugates.md)
-- [Degree](degree.md)
-- [Trace](trace.md)
-- [Trace pos re](trace-pos-re.md)
+- [Degree of a complex number](degree.md)
+- [Trace as the sum of conjugates](trace.md)
+- [The trace of a totally positive algebraic integer has positive real part](trace-pos-re.md)
 
 ## Sources
 

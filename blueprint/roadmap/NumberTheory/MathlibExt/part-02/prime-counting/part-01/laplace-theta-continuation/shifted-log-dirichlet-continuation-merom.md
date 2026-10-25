@@ -7,18 +7,19 @@ proof: formalized
 lean: Nat.Primes.shiftedLogDirichletContinuation_meromorphic
 ---
 
-# Shifted Log Dirichlet Continuation meromorphic
+# Meromorphy of the shifted continuation
 
-The shifted witness is meromorphic for -(1 / 2) < re s.
+**Meromorphy of the shifted continuation.** The shifted continuation $g_1$ is meromorphic at
+every point $s \in \mathbb{C}$ with $\operatorname{Re} s > -1/2$.
 
 ## Depends on
 
-- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+- [The shifted log-Dirichlet continuation](shifted-log-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
-- [Log Dirichlet Continuation meromorphic](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-meromorphic.md)
+- [The canonical prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [Meromorphy of the prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-meromorphic.md)
 
 ## Sources
 

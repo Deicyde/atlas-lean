@@ -12,7 +12,7 @@ Bₖ^*` for `n ≥ 1`.
 
 ## Depends on
 
-- [Bernoulli Second](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
+- [Bernoulli numbers of the second kind](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
 
 ## Sources
 

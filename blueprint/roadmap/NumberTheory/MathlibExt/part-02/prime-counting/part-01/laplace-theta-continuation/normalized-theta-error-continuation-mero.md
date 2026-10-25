@@ -7,18 +7,19 @@ proof: formalized
 lean: Chebyshev.normalizedThetaErrorContinuation_meromorphic
 ---
 
-# Normalized Theta Error Continuation meromorphic
+# Meromorphy of the normalized-error continuation
 
-Meromorphicity of the normalized-error continuation.
+**Meromorphy of the normalized-error continuation.** The normalized-error continuation $F$
+is meromorphic at every point $s \in \mathbb{C}$ with $\operatorname{Re} s > -1/2$.
 
 ## Depends on
 
-- [Normalized Theta Error Continuation](normalized-theta-error-continuation.md)
+- [The normalized-error continuation](normalized-theta-error-continuation.md)
 
 ## Proof depends on
 
-- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
-- [Shifted Log Dirichlet Continuation meromorphic](shifted-log-dirichlet-continuation-merom.md)
+- [The shifted log-Dirichlet continuation](shifted-log-dirichlet-continuation.md)
+- [Meromorphy of the shifted continuation](shifted-log-dirichlet-continuation-merom.md)
 
 ## Sources
 

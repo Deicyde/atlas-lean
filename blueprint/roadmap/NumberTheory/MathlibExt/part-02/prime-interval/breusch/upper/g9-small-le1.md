@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_small_le1
 ---
 
-# G9 small le1
+# Bound $G_9 \le 1$ below $10$
 
-`G9 ≤ 1` below `10`.
+**Bound $G_9 \le 1$ below $10$.** For every natural number $j < 10$, the grid $G$-function for
+$k = 9$ satisfies $G_9(j) \le 1$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
 
 ## Sources
 

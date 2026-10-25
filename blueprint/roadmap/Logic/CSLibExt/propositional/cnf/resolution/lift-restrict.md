@@ -8,21 +8,23 @@ lean: Cslib.Logic.PL.CNF.ResolutionDerivable.lift_restrict
 
 # Lifting lemma
 
-**Lifting lemma**: a clause derived from `φ` restricted by `(x, b)` lifts to a clause
-derived from `φ` whose literals are among the original ones and `(x, !b)`.
+**Lifting lemma.** Let $\varphi$ be a CNF formula, $x$ a variable and $b$ a Boolean value. If a
+clause $D$ is derivable by resolution from the restriction of $\varphi$ by the literal $(x, b)$,
+then some clause $D_0$ is derivable by resolution from $\varphi$ such that every literal of $D_0$
+is either a literal of $D$ or the complementary literal $(x, \lnot b)$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
-- [Resolution Derivable](resolution-derivable.md)
+- [CNF formula](../basic/cnf.md)
+- [Resolution derivability](resolution-derivable.md)
 - [Restrict](../restriction/restrict-2.md)
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Mem restrict iff](mem-restrict-iff.md)
+- [Clauses of a restricted formula](mem-restrict-iff.md)
 - [Resolvent](resolvent.md)
-- [Restrict](../restriction/restrict.md)
+- [Restriction of a clause by a literal](../restriction/restrict.md)
 
 ## Sources
 

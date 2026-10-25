@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.Q9div_pos
 ---
 
-# Q9div pos
+# Quotients of Q₉ by its divisors are positive
 
-`Q9 / m ≥ 1` for `1 ≤ m` dividing `Q9`.
+**Quotients of Q₉ by its divisors are positive.** For every natural number $m \ge 1$ dividing
+$Q_9 = 210$, the quotient $Q_9 / m$ is at least $1$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [Q9 pos](q9-pos.md)
+- [Q₉ is positive](q9-pos.md)
 
 ## Sources
 

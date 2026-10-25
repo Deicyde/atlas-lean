@@ -7,13 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.fibonomial_prime_cube_congr
 ---
 
-# Kimball Webb Fibonomial Congruence
+# Kimball–Webb congruence for Fibonomial coefficients modulo $p^3$
 
-Kimball–Webb Fibonomial congruence modulo `p³` (Fibonacci case).
+**Kimball–Webb congruence for Fibonomial coefficients modulo $p^3$.** Let $F_n$ be the
+Fibonacci numbers, with $F_1 = F_2 = 1$, and write $F_n! = F_1 F_2 \cdots F_n$, with $F_0! = 1$.
+Let $p \ge 7$ be a prime and $\varepsilon \in \{1, -1\}$, and suppose that $\rho = p - \varepsilon$
+is the rank of appearance of $p$, that is, $p \mid F_\rho$ and $p \nmid F_m$ for $0 < m < \rho$.
+Then for every natural number $k$ the Fibonomial coefficient
 
-Fibonacci specialization only: the Fibonomial `{(k+1)ρ-1 choose ρ-1}_F` is
-`ε^k` mod `p³` where `ρ = p - ε` is the rank of appearance of `p`; this is
-not Ballot's general Lucasnomial theorem `thm:N`.
+$$\binom{(k+1)\rho - 1}{\rho - 1}_F = \frac{F_{(k+1)\rho - 1}!}{F_{\rho - 1}!\, F_{k\rho}!}$$
+
+is congruent to $\varepsilon^k$ modulo $p^3$.
+
+The quotient is taken in the natural numbers; it is exact because Fibonomial coefficients are
+integers. This is the Fibonacci case only, not Ballot's general theorem for Lucasnomial
+coefficients.
 
 ## Depends on
 

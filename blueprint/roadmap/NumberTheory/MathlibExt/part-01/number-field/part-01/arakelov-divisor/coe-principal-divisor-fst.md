@@ -7,13 +7,15 @@ proof: formalized
 lean: NumberField.coe_principalDivisor_fst
 ---
 
-# Coe principal Divisor fst
+# Finite component of a principal divisor
 
-The finite component of a principal divisor is the principal fractional ideal.
+**Finite component of a principal divisor.** Let $K$ be a number field with ring of integers
+$\mathcal{O}_K$. For every nonzero $x \in K$, the fractional ideal component of the principal
+Arakelov divisor of $x$ is the principal fractional ideal $x\mathcal{O}_K$.
 
 ## Depends on
 
-- [Principal Divisor](principal-divisor.md)
+- [Principal Arakelov divisor](principal-divisor.md)
 
 ## Sources
 

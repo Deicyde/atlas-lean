@@ -14,7 +14,7 @@ eliminating $x$.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Davis-Putnam elimination of a variable](eliminate.md)
 
@@ -22,7 +22,7 @@ eliminating $x$.
 
 - [Clauses containing a variable only negatively](neg-clauses.md)
 - [Clauses containing a variable only positively](pos-clauses.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 - [Resolution rule soundness](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/satisfies-resolvent.md)

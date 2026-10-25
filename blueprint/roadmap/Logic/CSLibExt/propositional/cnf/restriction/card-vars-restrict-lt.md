@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.card_vars_restrict_lt
 ---
 
-# Card vars restrict lt
+# Restriction reduces the number of variables
 
-Restricting an occurring variable strictly decreases the number of variables.
+**Restriction reduces the number of variables.** Let $F$ be a CNF formula and let
+$\ell = (x, b)$ be a literal whose variable $x$ occurs in $F$. Then the restriction of $F$
+by $\ell$ has strictly fewer distinct variables than $F$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Restrict](restrict-2.md)
 - [Vars](vars-2.md)
 
 ## Proof depends on
 
-- [Vars restrict ssubset](vars-restrict-ssubset.md)
+- [Restricting by an occurring variable shrinks the variable set](vars-restrict-ssubset.md)
 
 ## Sources
 

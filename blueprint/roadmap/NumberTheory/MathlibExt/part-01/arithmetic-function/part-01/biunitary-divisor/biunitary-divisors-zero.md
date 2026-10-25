@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.biunitaryDivisors_zero
 ---
 
-# Biunitary Divisors zero
+# Zero has no biunitary divisors
 
-`0` has no biunitary divisors.
+**Zero has no biunitary divisors.** The set of biunitary divisors of $0$ is empty.
 
 ## Depends on
 
-- [Biunitary Divisors](biunitary-divisors.md)
+- [Biunitary divisors](biunitary-divisors.md)
 
 ## Proof depends on
 
-- [Gcd Unitary](gcd-unitary.md)
-- [Gcd Unitary zero right](gcd-unitary-zero-right.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
+- [Greatest common unitary divisor with zero on the right](gcd-unitary-zero-right.md)
 
 ## Sources
 

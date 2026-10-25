@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Averaged Discrepancy](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/averaged-discrepancy.md)
-- [Convolution](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/convolution.md)
+- [Averaged discrepancy](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/averaged-discrepancy.md)
+- [Multiplicative convolution of finitely supported sequences](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/convolution.md)
 - [Divisor Log Bound](divisor-log-bound.md)
 - [Dyadic Support](dyadic-support.md)
 - [Siegel Walfisz](siegel-walfisz.md)

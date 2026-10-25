@@ -5,8 +5,8 @@ navigation: module
 
 # Absolute Log Height Roots
 
-- [Abs Log Height₁ eq log leading Coeff add sum log roots of is Integral](abs-log-height-eq-log-leading-coeff-add.md)
-- [Abs Log Height₁ eq log leading Coeff add sum log roots of is Algebraic](abs-log-height-eq-log-leading-coeff-add-2.md)
-- [Abs Log Height₁ eq log leading Coeff add sum log roots](abs-log-height-eq-log-leading-coeff-add-3.md)
-- [Abs Mul Height₁ eq map Mahler Measure of is Integral](abs-mul-height-eq-map-mahler-measure-of.md)
-- [Abs Mul Height₁ eq map Mahler Measure](abs-mul-height-eq-map-mahler-measure.md)
+- [Logarithmic height from the roots of the minimal polynomial, for an integral element](abs-log-height-eq-log-leading-coeff-add.md)
+- [Logarithmic height from the roots of the minimal polynomial, for an algebraic element](abs-log-height-eq-log-leading-coeff-add-2.md)
+- [Logarithmic height from the roots of the minimal polynomial](abs-log-height-eq-log-leading-coeff-add-3.md)
+- [Multiplicative height as a Mahler measure, for an integral element](abs-mul-height-eq-map-mahler-measure-of.md)
+- [Absolute multiplicative height as a Mahler measure](abs-mul-height-eq-map-mahler-measure.md)

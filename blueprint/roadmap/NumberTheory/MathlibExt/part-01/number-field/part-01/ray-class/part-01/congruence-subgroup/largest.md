@@ -6,18 +6,20 @@ statement: formalized
 lean: NumberField.Modulus.CongruenceSubgroup.largest
 ---
 
-# Largest
+# Largest congruence subgroup
 
-Largest congruence subgroup, given by the full group.
+**Largest congruence subgroup.** For a modulus $\mathfrak m$ of a number field $K$, the largest
+congruence subgroup for $\mathfrak m$ is the whole group of invertible fractional ideals of $K$
+coprime to the finite part of $\mathfrak m$, which contains the ray group of $\mathfrak m$.
 
 ## Depends on
 
-- [Congruence Subgroup](congruence-subgroup.md)
+- [Congruence subgroup](congruence-subgroup.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

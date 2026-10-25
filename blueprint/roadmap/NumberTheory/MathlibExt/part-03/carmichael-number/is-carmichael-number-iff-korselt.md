@@ -9,16 +9,17 @@ lean: Nat.isCarmichaelNumber_iff_korselt
 
 # Korselt's criterion
 
-**Korselt's criterion**: a positive composite natural number is a Carmichael number iff it is
-squarefree and `p - 1 ∣ n - 1` for every prime divisor `p` of `n`.
+**Korselt's criterion.** A natural number $n > 1$ is a Carmichael number if and only if
+$n$ is squarefree, $p - 1$ divides $n - 1$ for every prime divisor $p$ of $n$, and $n$ is not
+prime.
 
 ## Depends on
 
-- [Is Carmichael Number](is-carmichael-number.md)
+- [Carmichael numbers](is-carmichael-number.md)
 
 ## Proof depends on
 
-- [Is Carmichael Number iff zmod](is-carmichael-number-iff-zmod.md)
+- [Carmichael numbers via the residue ring](is-carmichael-number-iff-zmod.md)
 
 ## Sources
 

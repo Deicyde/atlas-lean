@@ -91,21 +91,22 @@ private theorem simulDiag_isSymm_orthogonal_diagonalization {M : Matrix n n ℝ}
   · simpa [Matrix.star_eq_conjTranspose] using Matrix.UnitaryGroup.star_mul_self W
 
 /--
-Simultaneous diagonalization of two real quadratic forms with one positive-definite: for a
-symmetric matrix `S` and a positive-definite matrix `P`, there is an invertible congruence
-diagonalizing `S` while normalizing `P` to the identity.
+**Simultaneous diagonalization by congruence.** Let $S$ and $P$ be real square matrices with rows
+and columns indexed by a finite set $n$, where $S$ is symmetric and $P$ is positive definite. Then
+there is an invertible real matrix $C$, indexed by $n$, such that $C^{\mathsf T} S C$ is diagonal
+and $C^{\mathsf T} P C$ is the identity matrix.
+
+Proof: Normalize $P$ to the identity by a congruence built from its orthonormal eigenbasis, scaled
+by the inverse square roots of its eigenvalues, then orthogonally diagonalize the transformed
+symmetric matrix. This is the argument of Wikipedia's "Definite matrix", section "Simultaneous
+diagonalization", with the eigenbasis scaling in place of a Cholesky factor.
+
+Proves `Wanted` entry `simultaneous_diagonalization_posDef`.
 
 Sources: Mathlib `docs/undergrad.yaml`, Bilinear and Quadratic Forms Over a Vector Space /
 Endomorphisms / simultaneous diagonalization of two real quadratic forms, with one
 positive-definite; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University
 Press (2013), Theorem 4.5.15.
-
-Proves `Wanted` entry `simultaneous_diagonalization_posDef`.
-
-Proof: Normalize `P` to the identity by a congruence built from its orthonormal eigenbasis, scaled
-by the inverse square roots of its eigenvalues, then orthogonally diagonalize the transformed
-symmetric matrix. This is the argument of Wikipedia's "Definite matrix", section "Simultaneous
-diagonalization", with the eigenbasis scaling in place of a Cholesky factor.
 -/
 theorem simultaneous_diagonalization_posDef
     (S P : Matrix n n ℝ) (hS : S.IsSymm) (hP : P.PosDef) :

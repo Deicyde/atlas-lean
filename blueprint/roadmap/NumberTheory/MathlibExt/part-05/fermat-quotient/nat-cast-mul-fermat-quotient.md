@@ -7,13 +7,14 @@ proof: formalized
 lean: Int.natCast_mul_fermatQuotient
 ---
 
-# Nat Cast mul fermat Quotient
+# Fermat quotient times the prime
 
-Exact recovery: `p * q_p(a) = a ^ (p - 1) - 1`.
+**Fermat quotient times the prime.** For a prime $p$ and an integer $a$ coprime to $p$, the
+Fermat quotient $q_p(a)$ satisfies $p \, q_p(a) = a^{p-1} - 1$.
 
 ## Depends on
 
-- [Fermat Quotient](fermat-quotient.md)
+- [Fermat quotient](fermat-quotient.md)
 
 ## Sources
 

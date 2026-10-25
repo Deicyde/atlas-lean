@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Averaged Discrepancy](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/averaged-discrepancy.md)
-- [Dyadic Von Mangoldt](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/dyadic-von-mangoldt.md)
+- [Averaged discrepancy](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/averaged-discrepancy.md)
+- [Von Mangoldt function on a dyadic interval](../../../MathlibExt/part-01/arithmetic-function/part-01/prime-distribution/dyadic-von-mangoldt.md)
 - [Subpower Bound](subpower-bound.md)
 
 ## Sources

@@ -7,14 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.arakawa_kaneko_duality
 ---
 
-# Arakawa kaneko duality
+# Arakawa–Kaneko duality for poly-Bernoulli numbers
 
-Arakawa–Kaneko duality for poly-Bernoulli numbers:
-`Bₙ⁽⁻ᵏ⁾ = Bₖ⁽⁻ⁿ⁾` for `n, k : ℕ`, with `polyBernoulli` as above.
+**Arakawa–Kaneko duality for poly-Bernoulli numbers.** Let $S(n, r)$ denote the Stirling
+numbers of the second kind. For a natural number $n$ and an integer $k$, let $B_n^{(k)}$ be the
+poly-Bernoulli number given by Kaneko's explicit formula
+
+$$B_n^{(k)} = (-1)^n \sum_{r=0}^{n} \frac{(-1)^r\, r!\, S(n, r)}{(r+1)^k}.$$
+
+Then for all natural numbers $n$ and $k$,
+
+$$B_n^{(-k)} = B_k^{(-n)}.$$
 
 ## Depends on
 
-- [Poly Bernoulli](poly-bernoulli.md)
+- [Poly-Bernoulli numbers](poly-bernoulli.md)
 
 ## Sources
 

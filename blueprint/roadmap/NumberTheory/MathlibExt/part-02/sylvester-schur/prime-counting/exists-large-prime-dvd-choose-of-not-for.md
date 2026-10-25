@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.exists_large_prime_dvd_choose_of_not_forall_prime_dvd_le
 ---
 
-# Exists large prime dvd choose of not forall prime dvd le
+# Negating the no-large-prime condition for $\binom{N}{r}$
 
-Failure of the no-large-prime hypothesis produces a prime divisor of `Nat.choose N r`
-strictly greater than `r`.
+**Negating the no-large-prime condition for $\binom{N}{r}$.** Let $N$ and $r$ be natural
+numbers. If it is not the case that every prime dividing $\binom{N}{r}$ is at most $r$, then some
+prime $p$ with $r < p$ divides $\binom{N}{r}$.
 
 ## Depends on
 

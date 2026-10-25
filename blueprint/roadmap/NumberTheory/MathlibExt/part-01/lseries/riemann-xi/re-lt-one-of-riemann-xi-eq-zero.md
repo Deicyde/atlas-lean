@@ -7,17 +7,18 @@ proof: formalized
 lean: RiemannXi.re_lt_one_of_riemannXi_eq_zero
 ---
 
-# Re lt one of riemann Xi eq zero
+# Zeros of the xi function have real part less than one
 
-Every zero of `ξ` has real part strictly less than one.
+**Zeros of the xi function have real part less than one.** Let $\xi$ be the Riemann xi
+function. If $s$ is a complex number with $\xi(s) = 0$, then $\operatorname{Re}(s) < 1$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Proof depends on
 
-- [Riemann Xi ne zero of one le re](riemann-xi-ne-zero-of-one-le-re.md)
+- [The xi function has no zeros with real part at least one](riemann-xi-ne-zero-of-one-le-re.md)
 
 ## Sources
 

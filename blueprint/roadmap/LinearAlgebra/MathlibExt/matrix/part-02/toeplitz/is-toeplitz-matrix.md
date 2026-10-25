@@ -6,14 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.IsToeplitzMatrix
 ---
 
-# Is Toeplitz Matrix
+# Toeplitz matrix
 
-Toeplitz matrix, JIS VOL18/Felsner `felsner2.tex`, lines 271-283, Definition
-(Toeplitz matrix): a real `(n + 1)` by `(n + 1)` matrix `A = (aᵢⱼ)` is Toeplitz
-iff there exist real coefficients `c₋ₙ, …, cₙ` such that `aᵢⱼ = cᵢ₋ⱼ` for all
-indices (equivalently, `A` is constant on every diagonal).
+**Toeplitz matrix.** A real $(n+1) \times (n+1)$ matrix $A = (a_{ij})$, with rows and columns
+indexed by $\{0, \dots, n\}$, is Toeplitz if there is a function $c : \mathbb{Z} \to \mathbb{R}$
+such that $a_{ij} = c(i - j)$ for all $i, j$. Equivalently, $A$ is constant along each of its
+diagonals.
 
-The witness `c` is total on `ℤ`; only the offsets in `[-n, n]` are observed.
+Only the values $c(k)$ with $-n \le k \le n$ enter the condition, so this is the same as asking
+for real coefficients $c_{-n}, \dots, c_n$.
 
 Concept id: `jis_term_af166143477154e55b2be88d`.
 

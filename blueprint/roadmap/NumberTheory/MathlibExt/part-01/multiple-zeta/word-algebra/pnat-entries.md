@@ -6,13 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.pnatEntries
 ---
 
-# Pnat Entries
+# Entries of an index as positive integers
 
-Positive entries of an index.
+**Entries of an index as positive integers.** For an index $(k_1, \dots, k_r)$, this is the
+list $(k_1, \dots, k_r)$ of its entries in order, each regarded as a positive integer.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Sources
 

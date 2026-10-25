@@ -19,7 +19,7 @@ $\varphi$.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Fresh Val](fresh-val.md)
 - [Lifting an assignment to the 3SAT translation](lift.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

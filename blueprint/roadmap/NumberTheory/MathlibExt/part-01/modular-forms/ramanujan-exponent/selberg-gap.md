@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.selbergGap
 ---
 
-# Selberg Gap
+# Selberg gap of an exceptional eigenvalue
 
-The archimedean local exponent forced by an exceptional eigenvalue:
-if `λ = 1/4 - θ²`, this is `θ = √(1/4 - λ)`.
+**Selberg gap of an exceptional eigenvalue.** For an exceptional-eigenvalue witness, a
+congruence subgroup $\Gamma$ of $\mathrm{SL}_2(\mathbb{Z})$ with a Laplace eigenvalue
+$\lambda \in (0, 1/4)$, the Selberg gap is $\sqrt{1/4 - \lambda}$: the archimedean local exponent
+$\theta$ forced by $\lambda$, written as $\lambda = 1/4 - \theta^2$.
 
 ## Depends on
 
-- [Selberg Witness](selberg-witness.md)
+- [Exceptional Selberg eigenvalue witnesses](selberg-witness.md)
 
 ## Proof depends on
 
-- [Is Congruence Subgroup](../selberg-spectral-gap/is-congruence-subgroup.md)
+- [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
 - [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
 
 ## Sources

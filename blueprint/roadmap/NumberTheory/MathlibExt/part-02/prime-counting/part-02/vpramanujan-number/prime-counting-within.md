@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.primeCountingWithin
 ---
 
-# Prime Counting Within
+# Counting members of a set up to a real bound
 
-The number of members of `P` not exceeding the real bound `x`.
-On the source domain, `P` is an infinite set consisting only of primes.
+**Counting members of a set up to a real bound.** For a set $P$ of natural numbers and a
+real number $x$, $\pi_P(x)$ is the number of members of $P$ that are at most $x$.
+
+In the intended application $P$ is an infinite set of primes.
 
 ## Depends on
 

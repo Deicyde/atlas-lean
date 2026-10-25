@@ -16,9 +16,9 @@ implication graph of $\varphi$.
 ## Depends on
 
 - [Reachability in the implication graph](imp-reach.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Resolution Derivable](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolution-derivable.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Resolution derivability](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolution-derivable.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

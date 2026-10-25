@@ -6,9 +6,11 @@ proof: formalized
 lean: Matrix.mem_center_specialUnitaryGroup_fin_two_iff
 ---
 
-# Mem center special Unitary Group fin two iff
+# The center of $\mathrm{SU}(2)$
 
-The center of the complex special unitary group of size two consists of the two scalar signs.
+**The center of $\mathrm{SU}(2)$.** An element $M$ of the special unitary group
+$\mathrm{SU}(2)$ of complex $2 \times 2$ matrices lies in the center of $\mathrm{SU}(2)$ if and
+only if $M$ is the identity matrix $I$ or $M = -I$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists eq of mem special Unitary Group fin two](exists-eq-of-mem-special-unitary-group-f.md)
+- [Matrix form of $\mathrm{SU}(2)$](exists-eq-of-mem-special-unitary-group-f.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ An assignment satisfying at most `K` clauses.
 
 ## Proof depends on
 
-- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources

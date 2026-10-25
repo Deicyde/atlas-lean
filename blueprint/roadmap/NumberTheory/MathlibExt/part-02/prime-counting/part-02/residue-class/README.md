@@ -5,6 +5,6 @@ navigation: module
 
 # Residue Class
 
-- [Prime Counting Mod](prime-counting-mod.md)
-- [Prime Counting Mod one](prime-counting-mod-one.md)
-- [Prime Counting Mod eq card filter range](prime-counting-mod-eq-card-filter-range.md)
+- [Prime counting in a residue class](prime-counting-mod.md)
+- [Prime counting modulo one](prime-counting-mod-one.md)
+- [Residue-class prime count as a filtered range](prime-counting-mod-eq-card-filter-range.md)

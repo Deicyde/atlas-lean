@@ -6,29 +6,29 @@ navigation: module
 
 ## Provability from sets
 
-- [Mp](mp.md)
-- [Of bot](of-bot.md)
-- [Imp of insert](imp-of-insert.md)
+- [Modus ponens for provability from sets](mp.md)
+- [Ex falso for provability from sets](of-bot.md)
+- [Deduction theorem](imp-of-insert.md)
 
 ## Consistency
 
 - [Consistent](consistent.md)
-- [Provable iff not consistent insert not](provable-iff-not-consistent-insert-not.md)
-- [Provable not iff not consistent insert](provable-not-iff-not-consistent-insert.md)
-- [Consistent s Union of is Chain](consistent-s-union-of-is-chain.md)
+- [Provability as inconsistency with the negation](provable-iff-not-consistent-insert-not.md)
+- [Refutability as inconsistency](provable-not-iff-not-consistent-insert.md)
+- [Unions of chains of consistent sets are consistent](consistent-s-union-of-is-chain.md)
 
 ## Maximal consistent sets
 
-- [Maximal Consistent](maximal-consistent.md)
-- [Mem of consistent insert](mem-of-consistent-insert.md)
-- [Lindenbaum's lemma](exists-maximal-consistent.md)
-- [Mem of provable](mem-of-provable.md)
-- [Not mem iff](not-mem-iff.md)
-- [Instantiate mem of all mem](instantiate-mem-of-all-mem.md)
-- [Instantiate mem of equal](instantiate-mem-of-equal.md)
+- [Maximal consistent set](maximal-consistent.md)
+- [Maximal consistent sets absorb consistent extensions](mem-of-consistent-insert.md)
+- [Lindenbaum's lemma for first-order logic](exists-maximal-consistent.md)
+- [Maximal consistent sets are deductively closed](mem-of-provable.md)
+- [Maximal consistent sets decide every formula](not-mem-iff.md)
+- [Universal instantiation in maximal consistent sets](instantiate-mem-of-all-mem.md)
+- [Substitution of equals in maximal consistent sets](instantiate-mem-of-equal.md)
 
 ## Henkin witnesses
 
-- [Henkin Axiom](henkin-axiom.md)
-- [Insert henkin Axiom](insert-henkin-axiom.md)
-- [All mem of henkin](all-mem-of-henkin.md)
+- [Henkin axiom](henkin-axiom.md)
+- [Adding a Henkin axiom preserves consistency](insert-henkin-axiom.md)
+- [Universal formulas from Henkin witnesses](all-mem-of-henkin.md)

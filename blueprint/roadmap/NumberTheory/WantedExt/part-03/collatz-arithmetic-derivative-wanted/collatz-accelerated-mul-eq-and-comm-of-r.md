@@ -13,7 +13,7 @@ with `t² = p² - 22pq + q² - 8`.
 
 ## Depends on
 
-- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
 - [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources

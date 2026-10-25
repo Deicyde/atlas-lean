@@ -7,35 +7,43 @@ proof: formalized
 lean: MathlibExt.NumberTheory.MultipleZeta.WordAlgebraWanted.hZero_basis
 ---
 
-# HZero Basis
+# Hoffman monomial basis of $\mathfrak{H}^0$
 
-Empty-or-admissible Hoffman monomials form a rational basis of `H^0`.
+**Hoffman monomial basis of $\mathfrak{H}^0$.** Let $\mathbb{Q}\langle x, y\rangle$ be the free
+associative $\mathbb{Q}$-algebra on two letters $x$ and $y$, and let $\mathfrak{H}^0$ be its
+subalgebra consisting of the $\mathbb{Q}$-linear combinations of the empty word and of words that
+begin with $x$ and end with $y$. For $k \ge 1$ put $z_k = x^{k-1} y$, and for an index
+$\mathbf{k} = (k_1, \dots, k_r)$ of positive integers (possibly empty) put
+$z_{\mathbf{k}} = z_{k_1} \cdots z_{k_r}$, with $z_{\mathbf{k}} = 1$ for the empty index. Call
+$\mathbf{k}$ admissible if $r \ge 1$ and $k_1 \ge 2$. Then there is a $\mathbb{Q}$-basis of
+$\mathfrak{H}^0$, indexed by the indices that are empty or admissible, whose element at each such
+index $\mathbf{k}$ is $z_{\mathbf{k}}$.
 
 ## Depends on
 
-- [HZero Index](word-algebra/hzero-index.md)
-- [Index](index/index.md)
-- [Is HZero Index](word-algebra/is-hzero-index.md)
-- [H Zero](word-algebra/h-zero.md)
-- [Z Monomial](word-algebra/z-monomial.md)
+- [The type of empty or admissible indices](word-algebra/hzero-index.md)
+- [Multiple-zeta index](index/index.md)
+- [Empty or admissible indices](word-algebra/is-hzero-index.md)
+- [The subalgebra $\mathfrak{H}^0$](word-algebra/h-zero.md)
+- [Hoffman monomial of an index](word-algebra/z-monomial.md)
 
 ## Proof depends on
 
-- [Is Admissible](index/is-admissible.md)
-- [Entries](index/entries.md)
-- [Is Admissible iff](index/is-admissible-iff.md)
-- [Pnat Entries](word-algebra/pnat-entries.md)
-- [Is Admissible](index/is-admissible-2.md)
-- [Is HOne Word](word-algebra/is-hone-word.md)
-- [Is HZero Word](word-algebra/is-hzero-word.md)
-- [Hoffman Block](index/hoffman-block.md)
+- [Admissible index](index/is-admissible.md)
+- [Entries of an index](index/entries.md)
+- [Admissibility of an index via its entries](index/is-admissible-iff.md)
+- [Entries of an index as positive integers](word-algebra/pnat-entries.md)
+- [Admissible list](index/is-admissible-2.md)
+- [Words of $\mathfrak{H}^1$](word-algebra/is-hone-word.md)
+- [Words of $\mathfrak{H}^0$](word-algebra/is-hzero-word.md)
+- [Hoffman block](index/hoffman-block.md)
 - [To List hoffman Block](index/to-list-hoffman-block.md)
-- [Word Submonoid HOne](word-algebra/word-submonoid-hone.md)
-- [Word Submonoid HZero](word-algebra/word-submonoid-hzero.md)
-- [X Word](word-algebra/x-word.md)
-- [Y Word](word-algebra/y-word.md)
-- [Z Word](word-algebra/z-word.md)
-- [Z Word PNat](word-algebra/z-word-pnat.md)
+- [The monoid of $\mathfrak{H}^1$-words](word-algebra/word-submonoid-hone.md)
+- [The monoid of $\mathfrak{H}^0$-words](word-algebra/word-submonoid-hzero.md)
+- [The letter $x$ as a word](word-algebra/x-word.md)
+- [The letter $y$ as a word](word-algebra/y-word.md)
+- [Hoffman word of an index](word-algebra/z-word.md)
+- [Hoffman word of a list of positive integers](word-algebra/z-word-pnat.md)
 
 ## Sources
 

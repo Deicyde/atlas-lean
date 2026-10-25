@@ -7,11 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry15Example1ExponentialSeries.ramanujan_part1_ch3_entry15_example1_exponential_series
 ---
 
-# Part1 Ch3 Entry15 Example1 Exponential Series
+# Ramanujan's exponential series for powers of two
+
+**Ramanujan's exponential series for powers of two.** Let $m$ and $n$ be real numbers with
+$0 < n \le 2$. Then the series
+
+$$1 + \sum_{k=1}^{\infty} \frac{m}{2^{k n} \, k!} \prod_{j=1}^{k-1} (m + k n - j)$$
+
+converges unconditionally to $2^m$.
 
 Proof: Following Berndt and the generalized binomial series of Graham, Knuth, and Patashnik,
-the series is realized as `B_n(z) ^ m` with `B_n = 1 + z * B_n ^ n`; root selection at
-`z = 2 ^ (-n)`, with the endpoint supplied by Entry 14's Catalan-power series, gives `B_n = 2`.
+the series is realized as $B_n(z)^m$, where $B_n = 1 + z B_n^n$; root selection at
+$z = 2^{-n}$, with the endpoint supplied by Entry 14's Catalan-power series, gives $B_n = 2$.
 
 ## Depends on
 
@@ -19,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Part1 Ch3 Entry14 Cor1 Catalanpowerseries](ramanujan-part1-ch3-entry14-cor1-catalan.md)
+- [Ramanujan's series for powers of the Catalan generating function](ramanujan-part1-ch3-entry14-cor1-catalan.md)
 
 ## Sources
 

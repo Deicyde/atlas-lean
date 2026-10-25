@@ -22,7 +22,7 @@ This node has no prerequisites.
 - [The complete graph on four vertices as a bit string](no-col.md)
 - [The 3-COLOR instance of a CNF formula](to-col.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

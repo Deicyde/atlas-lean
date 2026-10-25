@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.dominant_root_bounds_k_generalized_fibonacci
 ---
 
-# Dominant Root Bounds
+# Bounds on the dominant root of the k-generalized Fibonacci polynomial
 
-Bounds for the real root greater than one of the characteristic polynomial of the
-`k`-generalized Fibonacci sequence.
+**Bounds on the dominant root of the k-generalized Fibonacci polynomial.** Let $k$ be a natural
+number and let $\alpha > 1$ be a real number with $\alpha^k = \sum_{i=0}^{k-1} \alpha^i$. Then
+$2 - 1/k < \alpha < 2$, and if $k \ge 4$, moreover $2 - 1/(3k) < \alpha < 2$.
 
 ## Depends on
 

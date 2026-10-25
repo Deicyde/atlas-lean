@@ -6,20 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.IsHZeroIndex
 ---
 
-# Is HZero Index
+# Empty or admissible indices
 
-Empty-or-admissible predicate for indices used in the algebraic `H^0` API.
-This avoids importing the later analytic series layer solely for its analogous
-depth-based predicate.
+**Empty or admissible indices.** An index is empty-or-admissible when it is admissible, that
+is, nonempty with first entry at least $2$, or when it has no entries.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Proof depends on
 
-- [Is Admissible](../index/is-admissible.md)
-- [Entries](../index/entries.md)
+- [Admissible index](../index/is-admissible.md)
+- [Entries of an index](../index/entries.md)
 
 ## Sources
 

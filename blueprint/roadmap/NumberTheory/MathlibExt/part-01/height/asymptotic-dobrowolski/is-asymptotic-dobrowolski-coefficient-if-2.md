@@ -7,20 +7,28 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.isAsymptoticDobrowolskiCoefficient_iff_strict
 ---
 
-# Is Asymptotic Dobrowolski Coefficient iff strict
+# Strict form of asymptotic Dobrowolski coefficients
 
-Epsilon slack and the positive scale make the source's strict bounds equivalent to
-the non-strict convention in the coefficient definition.
+**Strict form of asymptotic Dobrowolski coefficients.** A real number $c$ is an asymptotic
+Dobrowolski coefficient if and only if for every $\varepsilon > 0$ there is a natural number
+$D \ge 3$ such that every nonzero algebraic number $\alpha \in \mathbb{C}$ that is not a root of
+unity and whose minimal polynomial over $\mathbb{Q}$ has degree $d \ge D$ satisfies
+
+$$1 + (c - \varepsilon) \left(\frac{\log \log d}{\log d}\right)^3 < M(\alpha),$$
+
+where $M(\alpha)$ is the Mahler measure of $\alpha$.
+
+So the strict bounds are equivalent to the non-strict bounds in the definition.
 
 ## Depends on
 
-- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
-- [Dobrowolski Scale](dobrowolski-scale.md)
-- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
+- [Asymptotic Dobrowolski coefficients](is-asymptotic-dobrowolski-coefficient.md)
+- [Dobrowolski scale](dobrowolski-scale.md)
+- [Algebraic Mahler measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Proof depends on
 
-- [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
+- [Positivity of the Dobrowolski scale](dobrowolski-scale-pos.md)
 
 ## Sources
 

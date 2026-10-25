@@ -6,9 +6,12 @@ proof: formalized
 lean: MathlibExt.NumberTheory.LehmerConstant.lehmerConstant_le_two
 ---
 
-# Lehmer Constant le two
+# Lehmer's constant is at most $2$
 
-Elementary upper bound from the witness `X - 2`: `C₄₀ₐ ≤ 2`.
+**Lehmer's constant is at most $2$.** Lehmer's constant $C_{40a}$ satisfies
+$C_{40a} \le 2$.
+
+The witness is the integer polynomial $X - 2$, whose Mahler measure is $2$.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ Elementary upper bound from the witness `X - 2`: `C₄₀ₐ ≤ 2`.
 
 ## Proof depends on
 
-- [Int Mahler Measure](int-mahler-measure.md)
-- [Int Mahler Measure X sub two](int-mahler-measure-x-sub-two.md)
-- [Lehmer Constant le int Mahler Measure](lehmer-constant-le-int-mahler-measure.md)
+- [Mahler measure of an integer polynomial](int-mahler-measure.md)
+- [Mahler measure of $X - 2$](int-mahler-measure-x-sub-two.md)
+- [Lehmer's constant bounds every Mahler measure above $1$](lehmer-constant-le-int-mahler-measure.md)
 
 ## Sources
 

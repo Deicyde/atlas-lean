@@ -5,9 +5,9 @@ navigation: module
 
 # Honsberger Fibonacci P
 
-- [Fibonacci P](fibonacci-p.md)
-- [Fibonacci P zero](fibonacci-p-zero.md)
-- [Fibonacci P eq one](fibonacci-p-eq-one.md)
-- [Fibonacci P rec](fibonacci-p-rec.md)
-- [Fibonacci P one](fibonacci-p-one.md)
-- [Honsberger fibonacci P](honsberger-fibonacci-p.md)
+- [Fibonacci p-numbers](fibonacci-p.md)
+- [Zeroth Fibonacci p-number](fibonacci-p-zero.md)
+- [Initial Fibonacci p-numbers equal one](fibonacci-p-eq-one.md)
+- [Recurrence for Fibonacci p-numbers](fibonacci-p-rec.md)
+- [Fibonacci 1-numbers are the Fibonacci numbers](fibonacci-p-one.md)
+- [Honsberger identity for Fibonacci p-numbers](honsberger-fibonacci-p.md)

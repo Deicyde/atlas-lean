@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.choose_middle_half
 ---
 
-# Choose middle half
+# Half-power bound for the central binomial coefficient
 
-Central binomial coefficient bounded by half a power of two.
+**Half-power bound for the central binomial coefficient.** For every natural number
+$m \ge 1$, $\binom{2m}{m} \le 2^{2m-1}$.
 
 ## Depends on
 

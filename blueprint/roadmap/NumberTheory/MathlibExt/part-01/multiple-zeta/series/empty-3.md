@@ -6,13 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.WeaklyDecreasingTuple.empty
 ---
 
-# Empty
+# Empty weakly decreasing tuple
 
-The unique weakly decreasing tuple of length zero.
+**Empty weakly decreasing tuple.** The unique weakly decreasing tuple of positive natural
+numbers of length zero, namely the empty tuple.
 
 ## Depends on
 
-- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
+- [Weakly decreasing tuples](weakly-decreasing-tuple.md)
 
 ## Sources
 

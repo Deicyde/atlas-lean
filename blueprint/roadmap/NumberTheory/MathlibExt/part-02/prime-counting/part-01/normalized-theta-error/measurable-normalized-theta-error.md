@@ -7,13 +7,15 @@ proof: formalized
 lean: Chebyshev.measurable_normalizedThetaError
 ---
 
-# Measurable normalized Theta Error
+# Measurability of the normalized theta error
 
-Global measurability of the normalized theta error.
+**Measurability of the normalized theta error.** Let $\theta(x) = \sum_{p \le x} \log p$ be
+Chebyshev's function, the sum running over primes $p$. The normalized theta error
+$H(t) = \theta(e^t)e^{-t} - 1$ is a Borel measurable function of $t \in \mathbb{R}$.
 
 ## Depends on
 
-- [Normalized Theta Error](../laplace-theta-continuation/normalized-theta-error.md)
+- [The normalized Chebyshev error](../laplace-theta-continuation/normalized-theta-error.md)
 
 ## Sources
 

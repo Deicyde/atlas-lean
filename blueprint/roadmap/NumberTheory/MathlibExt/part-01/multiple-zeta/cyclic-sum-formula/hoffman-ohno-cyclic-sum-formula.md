@@ -7,9 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.hoffman_ohno_cyclic_sum_formula
 ---
 
-# Hoffman ohno cyclic sum formula
+# Cyclic sum formula (Hoffman–Ohno)
 
-The Hoffman-Ohno cyclic sum formula for multiple zeta values.
+**Cyclic sum formula (Hoffman–Ohno).** For a finite list $(n_1, \dots, n_r)$ of natural numbers
+let $\zeta(n_1, \dots, n_r)$ be the sum of $(m_1^{n_1} \cdots m_r^{n_r})^{-1}$ over all integers
+$m_1 > m_2 > \cdots > m_r > 0$, taken to be $0$ when this family is not summable. Let
+$k = (k_1, \dots, k_l)$ be a nonempty list of positive integers, not all equal to $1$, with
+subscripts read modulo $l$. Then
+
+$$
+\sum_{j=1}^{l} \sum_{i=1}^{k_j - 1} \zeta(k_j - i + 1, k_{j+1}, \dots, k_{j+l-1}, i)
+= \sum_{j=1}^{l} \zeta(k_j + 1, k_{j+1}, \dots, k_{j+l-1}),
+$$
+
+where the inner sum is empty when $k_j = 1$ and the run $k_{j+1}, \dots, k_{j+l-1}$ is empty
+when $l = 1$.
 
 ## Depends on
 
@@ -17,19 +29,19 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Left Index](left-index.md)
-- [Left Index is Admissible Or Empty](left-index-is-admissible-or-empty.md)
-- [Right Index](right-index.md)
-- [Right Index is Admissible Or Empty](right-index-is-admissible-or-empty.md)
-- [To Index](to-index.md)
-- [Index](../index/index.md)
-- [Is Admissible Or Empty](../series/is-admissible-or-empty.md)
-- [Depth](../index/depth.md)
-- [Entry](../series/entry.md)
-- [Strict Decreasing Tuple](../series/strict-decreasing-tuple.md)
-- [Strict Summand](../series/strict-summand.md)
-- [Strict Value](../series/strict-value.md)
-- [Hoffman ohno cyclic sum formula strict](hoffman-ohno-cyclic-sum-formula-strict.md)
+- [Left-hand indices of the cyclic sum formula](left-index.md)
+- [Left-hand indices of the cyclic sum formula are admissible or empty](left-index-is-admissible-or-empty.md)
+- [Right-hand indices of the cyclic sum formula](right-index.md)
+- [Right-hand indices of the cyclic sum formula are admissible or empty](right-index-is-admissible-or-empty.md)
+- [The index of a list of positive integers](to-index.md)
+- [Multiple-zeta index](../index/index.md)
+- [Admissible or empty index](../series/is-admissible-or-empty.md)
+- [Depth of an index](../index/depth.md)
+- [Entry of a multiple-zeta index](../series/entry.md)
+- [Strictly decreasing tuples](../series/strict-decreasing-tuple.md)
+- [Multiple zeta summand](../series/strict-summand.md)
+- [Multiple zeta value](../series/strict-value.md)
+- [Cyclic sum formula for strict multiple zeta values of indices](hoffman-ohno-cyclic-sum-formula-strict.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # VPRamanujan Number
 
-- [Prime Counting Within](prime-counting-within.md)
-- [Is VPRamanujan Number](is-vpramanujan-number.md)
+- [Counting members of a set up to a real bound](prime-counting-within.md)
+- [Generalized Ramanujan numbers](is-vpramanujan-number.md)

@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.isSolution_tail_of_cFiniteWitness
 ---
 
-# Is Solution tail of c Finite Witness
+# Discarding the exceptional prefix of a C-finite recurrence
 
-An eventual C-finite recurrence becomes a `LinearRecurrence` solution after
-discarding the finite exceptional prefix.
+**Discarding the exceptional prefix of a C-finite recurrence.** Let $s$ be an integer
+sequence, let $p, q \in \mathbb{N}$ and let $c_0, \dots, c_{p-1}$ be integers. If
+$s(n + p) = \sum_{i=0}^{p-1} c_i \, s(n + i)$ for every $n \ge q$, then the shifted sequence
+$t(n) = s(n + q)$ satisfies $t(n + p) = \sum_{i=0}^{p-1} c_i \, t(n + i)$ for every
+$n \in \mathbb{N}$.
 
 ## Depends on
 

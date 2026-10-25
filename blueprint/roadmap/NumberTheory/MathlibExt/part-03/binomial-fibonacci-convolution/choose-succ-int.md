@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.choose_succ_int
 ---
 
-# Choose succ int
+# Pascal's rule for binomial coefficients
 
-Pascal's rule over `ℤ`, shifted form: for the successor index the
-binomial coefficient splits with no truncated subtraction.
+**Pascal's rule for binomial coefficients.** For all natural numbers $n$ and $i$,
+$\binom{n+1}{i+1} = \binom{n}{i} + \binom{n}{i+1}$, as an identity of integers.
 
 ## Depends on
 

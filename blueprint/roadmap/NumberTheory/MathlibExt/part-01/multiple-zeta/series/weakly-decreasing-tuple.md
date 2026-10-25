@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.WeaklyDecreasingTuple
 ---
 
-# Weakly Decreasing Tuple
+# Weakly decreasing tuples
 
-Weakly decreasing tuples `m₀ ≥ m₁ ≥ ⋯` of positive natural numbers.
+**Weakly decreasing tuples.** For a natural number $r$, a weakly decreasing $r$-tuple is a
+tuple $(m_0, \dots, m_{r-1})$ of positive integers with $m_0 \ge m_1 \ge \dots \ge m_{r-1}$.
 
 ## Depends on
 

@@ -7,13 +7,29 @@ proof: formalized
 lean: MetaMathlibExt.wintner_mean_value_multivariable
 ---
 
-# Wintner Mean Value Multivariable
+# Wintner's mean-value theorem in several variables
 
-Wintner's mean-value theorem for arithmetic functions of several variables.
+**Wintner's mean-value theorem in several variables.** Let $k \ge 1$ and let $f$ be a
+complex-valued function on $k$-tuples of natural numbers. For a $k$-tuple
+$n = (n_1, \dots, n_k)$ of positive integers put
 
-Math notes: `mobiusConvolution` is the Dirichlet convolution `μ * f` over divisor tuples;
-the hypothesis is absolute convergence of `Σ |(μ*f)(m)| / (m_1 ⋯ m_k)`, and the conclusion
-is convergence of the rectangular mean to the corresponding infinite sum.
+$$
+(\mu * f)(n) = \sum_{d_1 \mid n_1, \dots, d_k \mid n_k}
+\mu(d_1) \cdots \mu(d_k) \, f(n_1/d_1, \dots, n_k/d_k),
+$$
+
+where $\mu$ is the Möbius function and the $d_i$ run over positive divisors. If the series
+
+$$\sum_{m \in \mathbb{Z}_{\ge 1}^k} \frac{|(\mu * f)(m)|}{m_1 \cdots m_k}$$
+
+converges, then
+
+$$
+\frac{1}{x_1 \cdots x_k} \sum_{n_1 = 1}^{x_1} \cdots \sum_{n_k = 1}^{x_k} f(n_1, \dots, n_k)
+\to \sum_{m \in \mathbb{Z}_{\ge 1}^k} \frac{(\mu * f)(m)}{m_1 \cdots m_k}
+$$
+
+as the integers $x_1, \dots, x_k$ all tend to infinity.
 
 ## Depends on
 

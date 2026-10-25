@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.ModelTheory.WilkiesConjectureWanted.WilkiesConjecture.expRing
 ---
 
-# Exp Ring
+# Language of rings with exponentiation
 
-The language of rings plus exponentials contains function symbols `(+,*,-,0,1,exp)`.
+**Language of rings with exponentiation.** The first-order language whose function symbols
+are those of the language of rings, namely the binary symbols $+$ and $\cdot$, the unary symbol
+$-$ and the constants $0$ and $1$, together with the unary symbol $\exp$ of the language of
+exponentiation; it has no relation symbols.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exp](exp.md)
+- [Language of exponentiation](exp.md)
 
 ## Sources
 

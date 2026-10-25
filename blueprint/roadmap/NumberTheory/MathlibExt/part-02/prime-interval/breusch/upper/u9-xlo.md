@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_xlo
 ---
 
-# U9 xlo
+# Primes up to $1890n$ have $n/p \ge 1/1890$
 
-Primes `≤ 1890 * n` give `n / p ≥ 1 / 1890`.
+**Primes up to $1890n$ have $n/p \ge 1/1890$.** Let $Q = 210$ be the truncation modulus, let
+$n \ge 1$ be a natural number and let $p$ be a prime with $p \le 1890 n$. Then
+$1/(9Q) \le n/p$, where $9Q = 1890$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

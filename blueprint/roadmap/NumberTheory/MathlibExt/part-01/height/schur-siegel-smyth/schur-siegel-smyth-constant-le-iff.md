@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.schurSiegelSmythConstant_le_iff
 ---
 
-# Schur Siegel Smyth Constant le iff
+# Upper bounds for the Schur–Siegel–Smyth constant
 
-An upper bound on the supremum is exactly an upper bound on all
-admissible coefficients.
+**Upper bounds for the Schur–Siegel–Smyth constant.** For every extended real number $b$, the
+Schur–Siegel–Smyth trace constant is at most $b$ if and only if every admissible real number
+$c$ satisfies $c \le b$.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Schur Siegel Smyth Constant](schur-siegel-smyth-constant.md)
+- [Admissible trace bounds](is-admissible.md)
+- [Schur–Siegel–Smyth trace constant](schur-siegel-smyth-constant.md)
 
 ## Proof depends on
 
-- [Coe le schur Siegel Smyth Constant](coe-le-schur-siegel-smyth-constant.md)
+- [Admissible bounds lie below the Schur–Siegel–Smyth constant](coe-le-schur-siegel-smyth-constant.md)
 
 ## Sources
 

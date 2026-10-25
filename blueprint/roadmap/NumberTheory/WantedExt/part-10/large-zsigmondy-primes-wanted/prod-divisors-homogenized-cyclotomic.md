@@ -11,7 +11,7 @@ lean: MetaMathlibExt.prod_divisors_homogenizedCyclotomic
 
 ## Depends on
 
-- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

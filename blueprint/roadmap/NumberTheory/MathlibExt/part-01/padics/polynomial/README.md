@@ -5,7 +5,7 @@ navigation: module
 
 # Polynomial
 
-- [Padic Valuation](padic-valuation.md)
-- [Padic Valuation le coeff](padic-valuation-le-coeff.md)
-- [Le padic Valuation](le-padic-valuation.md)
-- [Padic Valuation C](padic-valuation-c.md)
+- [The $p$-adic valuation of an integer polynomial](padic-valuation.md)
+- [The valuation of a polynomial is at most that of each nonzero coefficient](padic-valuation-le-coeff.md)
+- [Lower bounds for the valuation of a polynomial](le-padic-valuation.md)
+- [The valuation of a nonzero constant polynomial](padic-valuation-c.md)

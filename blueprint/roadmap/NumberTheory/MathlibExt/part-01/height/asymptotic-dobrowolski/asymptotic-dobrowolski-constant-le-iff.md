@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.asymptoticDobrowolskiConstant_le_iff
 ---
 
-# Asymptotic Dobrowolski Constant le iff
+# Upper bounds for the asymptotic Dobrowolski constant
 
-An upper bound on the supremum is exactly an upper bound on all admissible coefficients.
+**Upper bounds for the asymptotic Dobrowolski constant.** For every extended real number $b$,
+the asymptotic Dobrowolski constant is at most $b$ if and only if every real asymptotic
+Dobrowolski coefficient $c$ satisfies $c \le b$.
 
 ## Depends on
 
-- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
-- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+- [Asymptotic Dobrowolski coefficients](is-asymptotic-dobrowolski-coefficient.md)
+- [Asymptotic Dobrowolski constant](asymptotic-dobrowolski-constant.md)
 
 ## Proof depends on
 
-- [Coe le asymptotic Dobrowolski Constant](coe-le-asymptotic-dobrowolski-constant.md)
+- [Coefficients are bounded by the asymptotic Dobrowolski constant](coe-le-asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

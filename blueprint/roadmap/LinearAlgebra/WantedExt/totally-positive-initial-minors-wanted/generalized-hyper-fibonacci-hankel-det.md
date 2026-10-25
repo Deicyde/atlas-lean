@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_hankel_det
 ---
 
-# Generalized Hyper Fibonacci hankel det
+# Hankel determinants of generalized hyper-Fibonacci numbers
 
-For `r, n ≥ 0`, the Hankel matrix `H_{r,n} = (W_{p,n+i+j}^{(r)})_{0 ≤ i, j ≤ r+1}` of order
-`r + 2` has `det H_{r,n} = (-1)^{n+1+⌊(r+3)/2⌋} p^{nr+r²} b^r Δ` with `Δ = a² + pab - b²`;
-stated for all integers `p`, `a`, `b`.
+**Hankel determinants of generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers, let
+$W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers and put $\Delta = a^2 + pab - b^2$.
+For all natural numbers $r$ and $n$, the $(r+2) \times (r+2)$ Hankel matrix
+$H_{r,n} = (W^{(r)}_{p,n+i+j})_{0 \le i, j \le r+1}$ has determinant
+$\det H_{r,n} = (-1)^{n+1+\lfloor (r+3)/2 \rfloor} p^{nr+r^2} b^r \Delta$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

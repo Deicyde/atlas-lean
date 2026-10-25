@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.GandhiNthPrimeFormulaWanted.gandhi_nthPrimeFormula
 ---
 
-# Gandhi Nth Prime Formula
+# Gandhi's formula for the $n$th prime
 
-Gandhi's formula for the `n`th prime.
+**Gandhi's formula for the $n$th prime.** For $i \ge 1$ let $p_i$ be the $i$th prime, so that
+$p_1 = 2$, and for $n \ge 1$ let $P_{n-1} = p_1 p_2 \cdots p_{n-1}$, the empty product $1$ when
+$n = 1$. Let $\mu$ be the Möbius function. Then for every $n \ge 1$,
 
-For one-indexed `n`, with `pᵢ` the `i`th prime and
-`Pₙ₋₁ = p₁ * p₂ * ⋯ * pₙ₋₁` (the empty product `1` when `n = 1`),
-`pₙ = ⌊1 - log₂(-1 / 2 + ∑_{d ∣ Pₙ₋₁} μ(d) / (2 ^ d - 1))⌋`.
+$$p_n = \left\lfloor 1 - \log_2 \left( -\frac{1}{2} + \sum_{d \mid P_{n-1}} \frac{\mu(d)}{2^d - 1}
+\right) \right\rfloor.$$
 
 ## Depends on
 

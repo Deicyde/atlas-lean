@@ -11,7 +11,7 @@ Theorem 4.2: for nondegenerate `U(a, b)` with `a = -b + 1`, `S(U) = T(U)`.
 
 ## Depends on
 
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas Index Divisible Set](lucas-index-divisible-set.md)
 - [Lucas Period Set](lucas-period-set.md)

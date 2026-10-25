@@ -7,24 +7,24 @@ navigation: module
 
 ## Number Field
 
-- [Is Unramified In mono](is-unramified-in-mono.md)
-- [Etale localization](etale-localization.md)
-- [Tensor Product Localization Equiv Integral Closure](tensor-product-localization-equiv-integr.md)
+- [Unramifiedness descends to smaller intermediate fields](is-unramified-in-mono.md)
+- [Localizing the ring of integers at an unramified prime gives an étale algebra](etale-localization.md)
+- [Normalization commutes with base change along an unramified prime](tensor-product-localization-equiv-integr.md)
 
 ## Localization
 
-- [Semilocalization To At Prime](semilocalization-to-at-prime.md)
-- [Semilocalization To At Prime mk' eq iff](semilocalization-to-at-prime-mk-eq-iff.md)
+- [Map from the localization away from a prime to the local ring at a prime above it](semilocalization-to-at-prime.md)
+- [Values of the localization-to-local-ring map on fractions](semilocalization-to-at-prime-mk-eq-iff.md)
 
 ## Is Unramified In
 
-- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
-- [Normalized Tensor To Compositum At Prime equiv tmul](normalized-tensor-to-compositum-at-prime-2.md)
-- [Normalized Tensor To Compositum At Prime ker is Prime](normalized-tensor-to-compositum-at-prime-3.md)
-- [Normalized Tensor Compositum Prime](normalized-tensor-compositum-prime.md)
-- [Normalized Tensor Compositum Prime is Prime](normalized-tensor-compositum-prime-is-pr.md)
-- [Normalized Tensor Compositum Prime mem iff](normalized-tensor-compositum-prime-mem-i.md)
-- [Normalized Tensor To Compositum At Prime ker le](normalized-tensor-to-compositum-at-prime-4.md)
-- [Normalized Tensor Localization To Compositum At Prime](normalized-tensor-localization-to-compos.md)
-- [Normalized Tensor Localization To Compositum At Prime algebra Map](normalized-tensor-localization-to-compos-2.md)
-- [Normalized Tensor Localization To Compositum At Prime mk' spec](normalized-tensor-localization-to-compos-3.md)
+- [Map from the normalized tensor algebra to the local ring of the compositum](normalized-tensor-to-compositum-at-prime.md)
+- [The normalized tensor map on simple tensors](normalized-tensor-to-compositum-at-prime-2.md)
+- [The kernel of the normalized tensor map is prime](normalized-tensor-to-compositum-at-prime-3.md)
+- [The contracted maximal prime of the normalized tensor algebra](normalized-tensor-compositum-prime.md)
+- [The contracted maximal prime is prime](normalized-tensor-compositum-prime-is-pr.md)
+- [Membership in the contracted maximal prime](normalized-tensor-compositum-prime-mem-i.md)
+- [The kernel lies in the contracted maximal ideal](normalized-tensor-to-compositum-at-prime-4.md)
+- [The localization map to the compositum at a prime](normalized-tensor-localization-to-compos.md)
+- [The localization map restricts to the normalized tensor map](normalized-tensor-localization-to-compos-2.md)
+- [Value of the localization map on fractions](normalized-tensor-localization-to-compos-3.md)

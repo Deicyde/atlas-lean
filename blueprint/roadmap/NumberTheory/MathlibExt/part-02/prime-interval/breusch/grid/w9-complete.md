@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_complete
 ---
 
-# W9 complete
+# The divisor table for $210$ lists every divisor
 
-The first components of `w9` are exactly the divisors of `Q9`.
+**The divisor table for $210$ lists every divisor.** The set of first components $d$ of the
+pairs $(d, \varepsilon)$ in the Möbius divisor table $W_9$ is exactly the set of divisors of
+$Q_9 = 210$.
 
 ## Depends on
 
-- [Q9](q9.md)
-- [W9](w9.md)
+- [The modulus $Q_9 = 210$](q9.md)
+- [The Möbius divisor table for $210$](w9.md)
 
 ## Sources
 

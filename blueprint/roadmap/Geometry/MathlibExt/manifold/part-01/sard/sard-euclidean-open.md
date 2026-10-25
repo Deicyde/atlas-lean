@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
+- [Sets with locally null image have null image](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources
 

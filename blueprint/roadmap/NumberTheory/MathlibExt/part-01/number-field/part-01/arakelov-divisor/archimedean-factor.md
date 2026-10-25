@@ -6,14 +6,15 @@ statement: formalized
 lean: NumberField.ArakelovDivisor.archimedeanFactor
 ---
 
-# Archimedean Factor
+# Archimedean factor
 
-The archimedean factor of an Arakelov divisor: the finite product over all infinite
-places of each value raised to that place's multiplicity.
+**Archimedean factor.** Let $D = (I, r)$ be an Arakelov divisor on a number field $K$. Its
+archimedean factor is the positive real number $\prod_w r_w^{m_w}$, where the product runs over
+all infinite places $w$ of $K$ and $m_w$ is $1$ if $w$ is real and $2$ if $w$ is complex.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
+- [Arakelov divisor](arakelov-divisor.md)
 
 ## Sources
 

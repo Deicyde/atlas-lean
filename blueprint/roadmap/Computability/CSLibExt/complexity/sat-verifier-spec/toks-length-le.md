@@ -16,14 +16,14 @@ number of tokens of $\varphi$ is at most the length of the binary encoding of $\
 - [Stack alphabet of the SAT verifier](sym.md)
 - [Token sequence of a CNF formula](toks.md)
 - [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Tokens of a clause](clause-toks.md)
 - [A clause has at most as many tokens as code bits](clause-toks-length-le.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -6,34 +6,37 @@ proof: formalized
 lean: Cslib.Logic.PL.BDD.ofProposition_satPath
 ---
 
-# Satisfy-one
+# Satisfy-one for propositions
 
-**Satisfy-one** for propositions: the ROBDD of every proposition over `Nat` atoms has a
-satisfying path, and its assignment satisfies the proposition. (Every such proposition is
-satisfiable, by the all-true valuation; the path is usually a different model.)
+**Satisfy-one for propositions.** For every proposition $A$ over atoms indexed by natural
+numbers, the satisfying-path search on the ROBDD of $A$ returns a path $p$, and $A$ evaluates to
+true under the assignment read off $p$.
+
+Every such proposition is satisfiable, by the all-true valuation; the path usually gives a
+different model.
 
 ## Depends on
 
-- [Of Path](of-path.md)
-- [Of Proposition](../basic/of-proposition.md)
-- [Sat Path](sat-path.md)
-- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [Assignment read off a path](of-path.md)
+- [Diagram of a proposition](../basic/of-proposition.md)
+- [Satisfying path of a binary decision diagram](sat-path.md)
+- [Truth-table evaluation](../../natural-deduction/semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [BDD](../basic/bdd.md)
-- [Is ROBDD](../basic/is-robdd.md)
-- [Ordered From](../basic/ordered-from.md)
-- [Reduced](../basic/reduced.md)
-- [Apply](../basic/apply.md)
-- [Eval](../basic/eval.md)
-- [Eval Bool all True](eval-bool-all-true.md)
-- [Eval apply](../basic/eval-apply.md)
-- [Eval of Path sat Path](eval-of-path-sat-path.md)
-- [Of Proposition ne leaf false iff](../basic/of-proposition-ne-leaf-false-iff.md)
-- [Ordered From apply](../basic/ordered-from-apply.md)
-- [Reduced apply](../basic/reduced-apply.md)
-- [Sat Path is Some of ne](sat-path-is-some-of-ne.md)
+- [Binary decision diagram](../basic/bdd.md)
+- [Reduced ordered binary decision diagram](../basic/is-robdd.md)
+- [Diagrams ordered from a variable](../basic/ordered-from.md)
+- [Reduced diagrams](../basic/reduced.md)
+- [Bryant's apply operation](../basic/apply.md)
+- [Evaluation of a binary decision diagram](../basic/eval.md)
+- [The all-true valuation satisfies every proposition](eval-bool-all-true.md)
+- [Apply computes the operation pointwise](../basic/eval-apply.md)
+- [The path assignment satisfies an ordered diagram](eval-of-path-sat-path.md)
+- [Satisfiable iff the BDD is not the false leaf](../basic/of-proposition-ne-leaf-false-iff.md)
+- [Apply preserves orderedness](../basic/ordered-from-apply.md)
+- [Apply returns reduced diagrams](../basic/reduced-apply.md)
+- [Reduced diagrams other than false have a satisfying path](sat-path-is-some-of-ne.md)
 
 ## Sources
 

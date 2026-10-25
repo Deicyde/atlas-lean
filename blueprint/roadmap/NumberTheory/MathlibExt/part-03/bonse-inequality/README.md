@@ -5,9 +5,9 @@ navigation: module
 
 # Bonse Inequality
 
-- [Bonse primes infinite](bonse-primes-infinite.md)
-- [Bonse nth strict Mono](bonse-nth-strict-mono.md)
-- [Bonse nth prime](bonse-nth-prime.md)
-- [Bonse nth five](bonse-nth-five.md)
-- [Bonse nth succ lt](bonse-nth-succ-lt.md)
-- [Bonse inequality](bonse-inequality.md)
+- [Infinitely many primes](bonse-primes-infinite.md)
+- [The enumeration of the primes is strictly increasing](bonse-nth-strict-mono.md)
+- [The enumeration of the primes takes prime values](bonse-nth-prime.md)
+- [The sixth prime is thirteen](bonse-nth-five.md)
+- [Bertrand's postulate for consecutive primes](bonse-nth-succ-lt.md)
+- [Bonse's inequality](bonse-inequality.md)

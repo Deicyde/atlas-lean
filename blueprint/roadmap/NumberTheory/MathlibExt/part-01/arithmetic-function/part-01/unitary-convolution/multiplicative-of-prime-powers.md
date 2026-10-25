@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.multiplicativeOfPrimePowers
 ---
 
-# Multiplicative Of Prime Powers
+# Multiplicative function with prescribed values at prime powers
 
-The multiplicative arithmetic function with value `g m` at every prime power `p ^ m` with
-`m ≥ 1`: `n ↦ ∏_{p ∣ n} g(v_p(n))` for `n ≥ 1`. Its value at `p ^ 0 = 1` is always `1`, so
-`g 0` is ignored (`multiplicativeOfPrimePowers_one`).
+**Multiplicative function with prescribed values at prime powers.** Let $R$ be a commutative
+monoid with zero and let $g : \mathbb{N} \to R$. This is the arithmetic function $f$ with values
+in $R$ given by $f(0) = 0$ and $f(n) = \prod_{p \mid n} g(v_p(n))$ for $n \ge 1$, where the product
+runs over the primes $p$ dividing $n$ and $v_p(n)$ is the exponent of $p$ in $n$. It is
+multiplicative, it takes the value $g(m)$ at every prime power $p^m$ with $m \ge 1$, and its value
+at $1$ is the empty product $1$, so $g(0)$ never enters.
 
 ## Depends on
 

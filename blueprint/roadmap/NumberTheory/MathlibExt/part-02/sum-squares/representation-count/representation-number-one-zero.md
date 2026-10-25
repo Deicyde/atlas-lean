@@ -7,18 +7,19 @@ proof: formalized
 lean: SumSquares.representationNumber_one_zero
 ---
 
-# Representation Number one zero
+# Zero as a sum of one square
 
-The representation number at `k = 1, n = 0` is one.
+**Zero as a sum of one square.** The representation number $r_1(0)$, the number of integer
+vectors $x \in \mathbb{Z}^1$ with $x_1^2 = 0$, equals $1$.
 
 ## Depends on
 
-- [Representation Number](representation-number.md)
+- [Representation numbers of sums of squares](representation-number.md)
 
 ## Proof depends on
 
-- [Solutions](solutions.md)
-- [Solutions one zero](solutions-one-zero.md)
+- [Integer solutions of a sum of squares](solutions.md)
+- [Solution set of one square equal to zero](solutions-one-zero.md)
 
 ## Sources
 

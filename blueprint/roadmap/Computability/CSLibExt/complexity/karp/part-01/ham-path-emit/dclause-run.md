@@ -37,7 +37,7 @@ of the detour arcs of clause $j$ (contents $C$) in diamond $i$ for variable $y$.
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

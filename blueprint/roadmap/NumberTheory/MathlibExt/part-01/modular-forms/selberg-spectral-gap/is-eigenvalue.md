@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is L2 Quotient](is-l2-quotient.md)
-- [Is Smooth](is-smooth.md)
+- [Square-integrable functions on a modular quotient](is-l2-quotient.md)
+- [Twice continuously differentiable functions on the upper half-plane](is-smooth.md)
 - [Hyperbolic Laplacian](hyperbolic-laplacian.md)
 
 ## Sources

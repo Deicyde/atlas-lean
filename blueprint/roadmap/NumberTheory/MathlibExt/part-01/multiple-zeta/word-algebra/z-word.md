@@ -6,18 +6,20 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.zWord
 ---
 
-# Z Word
+# Hoffman word of an index
 
-Hoffman word attached to an index, concatenation of blocks in source order.
+**Hoffman word of an index.** For an index $\mathbf{k} = (k_1, \dots, k_r)$ of positive
+integers, the Hoffman word of $\mathbf{k}$ is $z_{k_1} z_{k_2} \cdots z_{k_r}$ in the free monoid on
+the two letters $x$ and $y$, where $z_k = x^{k-1} y$. The empty index gives the empty word.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Proof depends on
 
-- [Pnat Entries](pnat-entries.md)
-- [Z Word PNat](z-word-pnat.md)
+- [Entries of an index as positive integers](pnat-entries.md)
+- [Hoffman word of a list of positive integers](z-word-pnat.md)
 
 ## Sources
 

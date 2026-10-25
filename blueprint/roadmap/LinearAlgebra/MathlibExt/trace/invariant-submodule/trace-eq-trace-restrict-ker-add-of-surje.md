@@ -7,10 +7,13 @@ proof: formalized
 lean: LinearMap.trace_eq_trace_restrict_ker_add_of_surjective
 ---
 
-# Trace eq trace restrict ker add of surjective
+# Trace splits along a surjective intertwining map
 
-Trace of an endomorphism along a surjective intertwiner: the trace splits
-as the trace of the restriction to the kernel plus the trace on the target.
+**Trace splits along a surjective intertwining map.** Let $V$ be a finite-dimensional vector
+space over a field $K$, let $W$ be a vector space over $K$, and let $q : V \to W$ be a surjective
+linear map. If $f$ is a linear endomorphism of $V$ and $g$ a linear endomorphism of $W$ with
+$q \circ f = g \circ q$, then $f$ maps $\ker q$ into itself, and the trace of $f$ equals the
+trace of the restriction $f|_{\ker q}$ of $f$ to $\ker q$ plus the trace of $g$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trace eq trace restrict add trace map Q](trace-eq-trace-restrict-add-trace-map-q.md)
+- [Trace is additive over an invariant subspace](trace-eq-trace-restrict-add-trace-map-q.md)
 
 ## Sources
 

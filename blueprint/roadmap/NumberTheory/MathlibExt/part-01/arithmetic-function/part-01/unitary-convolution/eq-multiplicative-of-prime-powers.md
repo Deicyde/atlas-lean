@@ -6,20 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.eq_multiplicativeOfPrimePowers
 ---
 
-# Eq multiplicative Of Prime Powers
+# A multiplicative function with prescribed prime-power values
 
-A multiplicative function agrees with `multiplicativeOfPrimePowers g` as soon as it takes
-the value `g m` at every prime power `p ^ m` with `m ≥ 1`.
+**A multiplicative function with prescribed prime-power values.** Let $R$ be a
+commutative monoid with zero, let $g : \mathbb{N} \to R$, and let $f$ be a multiplicative
+arithmetic function with values in $R$. If $f(p^m) = g(m)$ for every prime $p$ and every
+$m \ge 1$, then $f$ is the multiplicative function with prime-power values $g$, that is, the
+arithmetic function $n \mapsto \prod_{q \mid n} g(v_q(n))$ for $n \ge 1$, where $q$ runs over the
+primes dividing $n$ and $v_q(n)$ is the exponent of $q$ in $n$.
 
 ## Depends on
 
-- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
+- [Multiplicative function with prescribed values at prime powers](multiplicative-of-prime-powers.md)
 
 ## Proof depends on
 
-- [Is Multiplicative multiplicative Of Prime Powers](is-multiplicative-multiplicative-of-prim.md)
-- [Multiplicative Of Prime Powers one](multiplicative-of-prime-powers-one.md)
-- [Multiplicative Of Prime Powers prime pow](multiplicative-of-prime-powers-prime-pow.md)
+- [Multiplicativity of the function with prescribed prime-power values](is-multiplicative-multiplicative-of-prim.md)
+- [The function with prescribed prime-power values is $1$ at $1$](multiplicative-of-prime-powers-one.md)
+- [The function with prescribed prime-power values at a prime power](multiplicative-of-prime-powers-prime-pow.md)
 
 ## Sources
 

@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent.func_update
 ---
 
-# Func update
+# Congruence for function symbols in a maximal consistent set
 
-Replacing one argument of a function symbol by an equal term gives an equal term.
+**Congruence for function symbols in a maximal consistent set.** Let $\Delta$ be a maximal
+consistent set of first-order formulas with free variables in $\mathbb{N}$, let $f$ be an $n$-ary
+function symbol, let $x = (x_0, \dots, x_{n-1})$ be terms over $\mathbb{N}$ and let $i < n$. For a
+term $u$, write $x[i := u]$ for $x$ with its $i$-th entry replaced by $u$. If the equation
+$a = b$ lies in $\Delta$, then the equation $f(x[i := a]) = f(x[i := b])$ lies in $\Delta$.
 
 ## Depends on
 
-- [Maximal Consistent](../consistency/maximal-consistent.md)
+- [Maximal consistent set](../consistency/maximal-consistent.md)
 
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
-- [Instantiate mem of equal](../consistency/instantiate-mem-of-equal.md)
-- [Mem of provable](../consistency/mem-of-provable.md)
-- [Provable](../natural-deduction/provable.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Instantiate Term](../syntax/instantiate-term.md)
+- [Substitution of equals in maximal consistent sets](../consistency/instantiate-mem-of-equal.md)
+- [Maximal consistent sets are deductively closed](../consistency/mem-of-provable.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
+- [Instantiating the outermost bound variable of a term](../syntax/instantiate-term.md)
 
 ## Sources
 

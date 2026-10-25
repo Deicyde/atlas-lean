@@ -12,7 +12,7 @@ lean: MetaMathlibExt.superLeonardoP_zero_eq
 
 ## Depends on
 
-- [Fibonacci P](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
+- [Fibonacci p-numbers](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 - [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources

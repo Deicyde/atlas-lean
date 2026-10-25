@@ -6,19 +6,19 @@ statement: formalized
 lean: Rat.Place.embedding
 ---
 
-# Embedding
+# Embedding of the rationals into a completion
 
-Canonical ring embedding `ℚ →+* ℚ_v`.
-
-At infinity this is `Rat.castHom ℝ`; at a finite prime it is
-`Rat.castHom (Padic p)` under the local `Fact p.Prime` instance.
+**Embedding of the rationals into a completion.** For a place $v$ of $\mathbb{Q}$ with
+completed field $\mathbb{Q}_v$, the canonical ring homomorphism $\mathbb{Q} \to \mathbb{Q}_v$ sends
+each rational number to itself, viewed as a real number when $v$ is the infinite place and as a
+$p$-adic number when $v$ is the finite place at a prime $p$.
 
 ## Depends on
 
-- [Place](place.md)
-- [Completed Field](completed-field.md)
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Bundle](bundle.md)
+- [Places of $\mathbb{Q}$](place.md)
+- [Completed field at a rational place](completed-field.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Bundled completed field at a rational place](bundle.md)
 
 ## Sources
 

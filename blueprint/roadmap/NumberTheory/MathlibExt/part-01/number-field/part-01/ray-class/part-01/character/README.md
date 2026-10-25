@@ -5,10 +5,10 @@ navigation: module
 
 # Character
 
-- [Ray Class Character](ray-class-character.md)
-- [Trivial Character](trivial-character.md)
-- [Pullback](pullback.md)
-- [Pullback eq one of mem ray Group](pullback-eq-one-of-mem-ray-group.md)
-- [Eval Complex](eval-complex.md)
-- [Eval Complex ray Group](eval-complex-ray-group.md)
-- [Extend By Zero](extend-by-zero.md)
+- [Ray class character](ray-class-character.md)
+- [Trivial character](trivial-character.md)
+- [Pullback of a ray class character to ideals](pullback.md)
+- [Pulled-back ray class characters are trivial on the ray group](pullback-eq-one-of-mem-ray-group.md)
+- [Complex value of a ray class character](eval-complex.md)
+- [Ray class characters take the complex value $1$ on the ray group](eval-complex-ray-group.md)
+- [Extension by zero of a ray class character](extend-by-zero.md)

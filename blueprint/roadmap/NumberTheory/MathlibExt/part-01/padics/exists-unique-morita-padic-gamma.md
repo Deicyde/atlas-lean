@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.existsUnique_moritaPadicGamma
 ---
 
-# Morita Gamma Exists Unique
+# Existence and uniqueness of Morita's p-adic gamma function
 
-For every odd prime, Morita's finite p-adic gamma values have a unique continuous,
-unit-valued extension to the p-adic integers.
+**Existence and uniqueness of Morita's p-adic gamma function.** For every odd prime $p$
+there is exactly one continuous function $\Gamma : \mathbb{Z}_p \to \mathbb{Z}_p$ that is a Morita
+$p$-adic gamma function, that is, $\Gamma(0) = 1$,
+$\Gamma(n) = (-1)^n \prod_{0 < j < n,\ p \nmid j} j$ for every positive integer $n$, and
+$\Gamma(x)$ is a unit of $\mathbb{Z}_p$ for every $x \in \mathbb{Z}_p$.
 
 ## Depends on
 
-- [Is Morita Padic Gamma](morita-gamma/is-morita-padic-gamma.md)
+- [Morita's p-adic gamma function](morita-gamma/is-morita-padic-gamma.md)
 
 ## Proof depends on
 
-- [Morita Gamma Nat](morita-gamma/morita-gamma-nat.md)
+- [Morita's p-adic gamma values at natural numbers](morita-gamma/morita-gamma-nat.md)
 
 ## Sources
 

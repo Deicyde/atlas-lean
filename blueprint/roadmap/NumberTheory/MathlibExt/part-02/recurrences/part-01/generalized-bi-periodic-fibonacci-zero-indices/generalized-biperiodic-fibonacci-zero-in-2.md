@@ -27,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized biperiodic fibonacci zero indices general](generalized-biperiodic-fibonacci-zero-in.md)
+- [Zero indices of a generalized bi-periodic Fibonacci sequence with $c = d$](generalized-biperiodic-fibonacci-zero-in.md)
 
 ## Sources
 

@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.C₁ᵦ
 ---
 
-# C₁ᵦ
+# Notation $C_{1b}$
 
-Source notation `C₁ᵦ`.
+**Notation $C_{1b}$.** We write $C_{1b}$ for the continuous Erdős minimum-overlap constant.
 
 ## Depends on
 
@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Continuous Minimum Overlap Constant](continuous-minimum-overlap-constant.md)
+- [The continuous Erdős minimum-overlap constant](continuous-minimum-overlap-constant.md)
 
 ## Sources
 

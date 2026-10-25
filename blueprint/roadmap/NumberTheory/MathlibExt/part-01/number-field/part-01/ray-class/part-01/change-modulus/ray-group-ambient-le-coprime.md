@@ -7,18 +7,21 @@ proof: formalized
 lean: NumberField.Modulus.rayGroupAmbient_le_coprime
 ---
 
-# Ray Group Ambient le coprime
+# The ray group consists of coprime ideals
 
-The ambient ray group lies in the coprime fractional ideals.
+**The ray group consists of coprime ideals.** For every modulus $\mathfrak m$ of a number
+field $K$, the ray group of $\mathfrak m$, viewed as a subgroup of the group of nonzero
+fractional ideals of $K$, is contained in the group of nonzero fractional ideals coprime to the
+finite part of $\mathfrak m$.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group Ambient](ray-group-ambient.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray group among all fractional ideals](ray-group-ambient.md)
 
 ## Proof depends on
 
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

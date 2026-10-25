@@ -6,13 +6,14 @@ proof: formalized
 lean: BinaryQuadraticForm.imaginaryRoot_not_mem_bot
 ---
 
-# Imaginary Root not mem bot
+# The imaginary root is not rational
 
-A positive radicand gives a nonreal root, hence a root outside the rational subfield.
+**The imaginary root is not rational.** For every positive integer $D$, the complex number
+$i\sqrt{D}$ does not lie in the subfield $\mathbb{Q}$ of $\mathbb{C}$.
 
 ## Depends on
 
-- [Imaginary Root](imaginary-root.md)
+- [The imaginary square root of $-D$](imaginary-root.md)
 
 ## Sources
 

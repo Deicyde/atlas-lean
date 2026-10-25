@@ -4,8 +4,8 @@ navigation: module
 
 # Scottish Book191
 
-- [Is Convex Measure](is-convex-measure.md)
-- [Is Independent Class](is-independent-class.md)
-- [Is Base](is-base.md)
-- [Scottish Book Problem191 Claim](scottish-book-problem191-claim.md)
-- [Szpilrajn191 refuted](szpilrajn191-refuted.md)
+- [Convex measure](is-convex-measure.md)
+- [Stochastically independent class of sets](is-independent-class.md)
+- [Base of a measure](is-base.md)
+- [The claim of Szpilrajn's Problem 191](scottish-book-problem191-claim.md)
+- [Szpilrajn's Problem 191 has a negative answer](szpilrajn191-refuted.md)

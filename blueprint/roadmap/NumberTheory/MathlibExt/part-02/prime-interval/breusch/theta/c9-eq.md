@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.c9_eq
 ---
 
-# C9 eq
+# Evaluation of a three-term rational sum
 
-The constant `18900 / 279 + 18900 / 657 + 18900 / 963` in lowest terms.
+**Evaluation of a three-term rational sum.** In the real numbers,
+$\frac{18900}{279} + \frac{18900}{657} + \frac{18900}{963} = \frac{28121100}{242141}$.
+
+The right-hand side is the sum written in lowest terms.
 
 ## Depends on
 

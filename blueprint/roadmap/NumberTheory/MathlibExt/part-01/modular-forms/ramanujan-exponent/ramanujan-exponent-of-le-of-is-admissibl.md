@@ -6,16 +6,17 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.ramanujanExponentOf_le_of_isAdmissible
 ---
 
-# Ramanujan Exponent Of le of is Admissible
+# Admissible exponents bound the Ramanujan exponent
 
-Every admissible nonnegative exponent bounds the family's Ramanujan
-exponent.
+**Admissible exponents bound the Ramanujan exponent.** Let $F$ be a local-exponent family and
+let $\delta \ge 0$ be a real number. If $\delta$ is admissible for $F$, that is, every local
+exponent of $F$ is at most $\delta$, then the Ramanujan exponent of $F$ is at most $\delta$.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Local Exponent Family](local-exponent-family.md)
-- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+- [Admissibility of an exponent for a local-exponent family](is-admissible.md)
+- [Family of local exponents](local-exponent-family.md)
+- [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 
 ## Proof depends on
 

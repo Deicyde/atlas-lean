@@ -16,7 +16,7 @@ no literal.
 ## Depends on
 
 - [Dense clause](../dense-sat/clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent
 ---
 
-# Maximal Consistent
+# Maximal consistent set
 
-A maximal consistent set: Mathlib's `Maximal Consistent`, named so that its lemmas can be
-used with dot notation.
+**Maximal consistent set.** A set $\Delta$ of formulas is maximal consistent when it is
+consistent and every consistent set of formulas containing $\Delta$ is contained in
+$\Delta$, that is, equals $\Delta$.
 
 ## Depends on
 

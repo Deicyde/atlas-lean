@@ -7,19 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.landau_almostPrimeCounting_isEquivalent
 ---
 
-# Landau almost Prime Counting is Equivalent
+# Landau's theorem on almost primes
 
-Landau's theorem on `k`-almost primes: the counting function
-`almostPrimeCounting k x` is asymptotically equivalent to
-`x * (log log x) ^ (k - 1) / ((k - 1)! * log x)`.
+**Landau's theorem on almost primes.** Let $k \ge 1$ be a natural number and, for a natural
+number $x$, let $\pi_k(x)$ be the number of integers $n$ with $1 \le n \le x$ that have exactly
+$k$ prime factors, counted with multiplicity. Then, as the natural number $x$ tends to infinity,
+
+$$\pi_k(x) \sim \frac{x \, (\log \log x)^{k-1}}{(k-1)! \, \log x}.$$
 
 ## Depends on
 
-- [Almost Prime Counting](almost-prime-counting.md)
+- [Counting almost primes](almost-prime-counting.md)
 
 ## Proof depends on
 
-- [Theta is Equivalent of prime Counting is Equivalent](../chebyshev/theta-is-equivalent-of-prime-counting-is.md)
+- [Prime number theorem implies the theta asymptotic](../chebyshev/theta-is-equivalent-of-prime-counting-is.md)
 - [Prime Number Theorem](../../../../part-10/prime-number-theorem.md)
 
 ## Sources

@@ -22,7 +22,7 @@ $\mathsf{rej}$ within $2|x| + 2$ steps.
 - [The tokenizer program](prog.md)
 - [Start label of the SAT tokenizer](start.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -50,7 +50,7 @@ $\mathsf{rej}$ within $2|x| + 2$ steps.
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [Parsing a self-delimiting block](../../cook-levin/undelimit-eq-some-iff.md)
 - [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
 - [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)

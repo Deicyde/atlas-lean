@@ -15,4 +15,4 @@ article_id: af_118aa64830933f560d16713c
 - [Large Prime Criteria](large-prime-criteria/README.md)
 - [Prime Counting](prime-counting/README.md)
 - [Residual Finite](residual-finite/README.md)
-- [Residual Large Certificates](second-residual-mid-prime-counting-lt-st.md)
+- [Prime-counting estimate for Sylvester–Schur when $38 \le n < 945$](second-residual-mid-prime-counting-lt-st.md)

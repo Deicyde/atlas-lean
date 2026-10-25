@@ -31,8 +31,8 @@ the binary encoding of the binary-index translation of $\varphi$.
 - [Dense encoding of a clause](../dense-sat/encode-clause.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources

@@ -6,17 +6,19 @@ proof: formalized
 lean: BinaryQuadraticForm.ofCoefficients_posDef
 ---
 
-# Of Coefficients pos Def
+# Positive definiteness for negative discriminant
 
-A positive leading coefficient and negative discriminant give a positive definite form.
+**Positive definiteness for negative discriminant.** Let $D$ be a positive integer and let
+$a, b, c$ be integers with $a > 0$ and $b^2 - 4ac = -D$. Then the real quadratic form
+$(x, y) \mapsto a x^2 + b x y + c y^2$ on $\mathbb{R}^2$ is positive definite.
 
 ## Depends on
 
-- [Of Coefficients](of-coefficients.md)
+- [Real quadratic form of an integer coefficient triple](of-coefficients.md)
 
 ## Proof depends on
 
-- [Of Coefficients apply](of-coefficients-apply.md)
+- [Evaluation of the real quadratic form of a coefficient triple](of-coefficients-apply.md)
 
 ## Sources
 

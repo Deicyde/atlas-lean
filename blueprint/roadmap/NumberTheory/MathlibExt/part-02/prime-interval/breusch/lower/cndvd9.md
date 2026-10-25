@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.CNdvd9
 ---
 
-# CNdvd9
+# Divisors of 210 divide multiples of 210
 
-Divisors of `Q9` divide multiples of multiples of `Q9`.
+**Divisors of 210 divide multiples of 210.** Let $w_9$ be the table of divisors $d$ of
+$Q_9 = 210$ paired with their Möbius values. If $C$ is a natural number with $Q_9 \mid C$, then
+for every pair $(d, \varepsilon)$ in $w_9$ and every natural number $n$, $d \mid C n$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
-- [W9](../grid/w9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [The Möbius divisor table for $210$](../grid/w9.md)
 
 ## Proof depends on
 
-- [W9 dvd](../grid/w9-dvd.md)
+- [Entries of the divisor table for $210$ divide $210$](../grid/w9-dvd.md)
 
 ## Sources
 

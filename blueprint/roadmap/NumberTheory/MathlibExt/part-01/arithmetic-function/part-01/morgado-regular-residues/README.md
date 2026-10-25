@@ -4,5 +4,5 @@ navigation: module
 
 # Morgado Regular Residues
 
-- [Ncard regular eq sum totient unitary Divisors](ncard-regular-eq-sum-totient-unitary-div.md)
-- [Morgado card regular modulo](morgado-card-regular-modulo.md)
+- [Morgado's formula as a sum over unitary divisors](ncard-regular-eq-sum-totient-unitary-div.md)
+- [Morgado's formula for the number of regular residues](morgado-card-regular-modulo.md)

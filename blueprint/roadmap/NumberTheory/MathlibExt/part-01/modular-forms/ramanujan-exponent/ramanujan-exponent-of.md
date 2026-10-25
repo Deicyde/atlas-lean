@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.ramanujanExponentOf
 ---
 
-# Ramanujan Exponent Of
+# Ramanujan exponent of a local-exponent family
 
-The Ramanujan exponent of an explicitly supplied local-exponent
-family: the supremum of its local exponents. For the eventual genuine
-family of cuspidal local components this will be catalogue constant
-`δ₂`; for other families the name records the construction, not an
-identification.
+**Ramanujan exponent of a local-exponent family.** The Ramanujan exponent of a local-exponent
+family $F$ with local exponents $m(i)$, $i \in \iota$, is the supremum of the set
+$\{0\} \cup \{m(i) : i \in \iota\}$. It is the supremum of the local exponents when $\iota$ is
+nonempty, and $0$ when $\iota$ is empty.
+
+For the eventual genuine family of cuspidal local components of $\mathrm{GL}_2$ this will be the
+Ramanujan exponent $\delta_2$; for other families it is only the supremum of the given
+exponents.
 
 ## Depends on
 
-- [Local Exponent Family](local-exponent-family.md)
+- [Family of local exponents](local-exponent-family.md)
 
 ## Proof depends on
 

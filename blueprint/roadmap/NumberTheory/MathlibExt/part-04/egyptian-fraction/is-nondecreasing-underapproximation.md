@@ -6,12 +6,13 @@ statement: formalized
 lean: EgyptianFraction.IsNondecreasingUnderapproximation
 ---
 
-# Is Nondecreasing Underapproximation
+# Egyptian underapproximations with nondecreasing denominators
 
-A strict underapproximation by unit fractions whose denominators may repeat
-and are presented in nondecreasing order. This is the condition
-`(a₁,…,aₙ) ∈ 𝓔ₙ^≤` and `∑ 1/aᵢ < λ` from lines 113–120, together with
-`n ≥ 1` and `λ > 0` as in the paper's `ℕ = {1,2,…}` and `λ > 0` setup.
+**Egyptian underapproximations with nondecreasing denominators.** Let $\lambda$ be a real
+number and $a = (a_1, \dots, a_n)$ a tuple of natural numbers. Then $a$ is a nondecreasing
+underapproximation of $\lambda$ when $n \ge 1$, $\lambda > 0$, $a$ lies in
+$\mathcal{E}_n^{\le}$ (that is, $2 \le a_1 \le \dots \le a_n$), and
+$\sum_{i=1}^{n} 1/a_i < \lambda$, the sum taken in the real numbers.
 
 ## Depends on
 
@@ -19,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EgyptianFraction](../../../../../sources/v2/MathlibExt.md)
+- Kovač–Tang, arXiv:2607.28387v2, lines 113–120; $n \ge 1$ and $\lambda > 0$ follow the paper's conventions.

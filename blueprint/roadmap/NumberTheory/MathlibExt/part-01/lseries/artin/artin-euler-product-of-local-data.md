@@ -6,21 +6,25 @@ statement: formalized
 lean: Representation.artinEulerProductOfLocalData
 ---
 
-# Artin Euler Product Of Local Data
+# Euler product of Artin local factors
 
-The formal Euler product of raw factors attached to supplied local data.
+**Euler product of Artin local factors.** Let $\rho$ be a representation of a finite group
+$G$ on a finite-dimensional complex vector space $V$, and suppose that for every prime $p$ an Artin
+local datum $d_p$ for $G$ is given. For $s \in \mathbb{C}$, this is the product over all primes
+$p$ of the Artin local factors of $\rho$ at $p$, $d_p$ and $s$, taken as an unconditional infinite
+product (the limit of the products over finite sets of primes); when this product does not
+converge, the value is $1$ by convention.
 
-This is deliberately named as an Euler product *of local data*: the input need
-not arise from places of a number field, and no conjugacy-independence is asserted.
-When the family is not multipliable, `tprod` takes its conventional default value.
+The data need not come from the places of a number field, and no independence of the choice of
+place above $p$ is asserted.
 
 ## Depends on
 
-- [Artin Local Datum](artin-local-datum.md)
+- [Artin local datum](artin-local-datum.md)
 
 ## Proof depends on
 
-- [Artin Local Factor Raw](artin-local-factor-raw.md)
+- [Artin local factor](artin-local-factor-raw.md)
 
 ## Sources
 

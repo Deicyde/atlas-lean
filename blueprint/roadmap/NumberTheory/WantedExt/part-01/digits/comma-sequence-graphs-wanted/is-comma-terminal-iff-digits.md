@@ -15,7 +15,7 @@ first. "No comma-child" is `IsCommaTerminal b n` (no digit `y` with
 
 ## Depends on
 
-- [Is Comma Terminal](../../../../MathlibExt/part-04/comma-sequence/is-comma-terminal.md)
+- [Comma-terminal numbers](../../../../MathlibExt/part-04/comma-sequence/is-comma-terminal.md)
 
 ## Sources
 

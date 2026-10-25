@@ -7,11 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.eisenstein_lemma_jacobi_symbol_general
 ---
 
-# Eisenstein lemma jacobi symbol general
+# Eisenstein's lemma for Jacobi symbols (odd coprime form)
 
-Eisenstein's lemma for Jacobi symbols with only the hypotheses the argument uses: for
-coprime odd `a` and `b`, `J(a | b) = (-1) ^ ∑_{i = 1}^{(b - 1) / 2} ⌊i a / b⌋`.
-`eisenstein_lemma_jacobi_symbol` is the source-shaped form.
+**Eisenstein's lemma for Jacobi symbols (odd coprime form).** Let $a$ and $b$ be odd natural
+numbers that are coprime. Then the Jacobi symbol $\left(\frac{a}{b}\right)$ equals $(-1)^{S}$,
+where $S = \sum_{i=1}^{(b-1)/2} \lfloor ia/b \rfloor$.
 
 ## Depends on
 

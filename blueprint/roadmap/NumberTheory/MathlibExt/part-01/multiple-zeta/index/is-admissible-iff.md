@@ -7,16 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.isAdmissible_iff
 ---
 
-# Is Admissible iff
+# Admissibility of an index via its entries
 
-The bundled and list formulations of admissibility agree.
+**Admissibility of an index via its entries.** An index is admissible if and only if the
+list of its entries is an admissible list.
 
 ## Depends on
 
-- [Index](index.md)
-- [Is Admissible](is-admissible.md)
-- [Entries](entries.md)
-- [Is Admissible](is-admissible-2.md)
+- [Multiple-zeta index](index.md)
+- [Admissible index](is-admissible.md)
+- [Entries of an index](entries.md)
+- [Admissible list](is-admissible-2.md)
 
 ## Sources
 

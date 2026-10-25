@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.arithmeticDerivative_one
 ---
 
-# Arithmetic Derivative one
+# Arithmetic derivative of one
 
-`D(1) = 0`.
+**Arithmetic derivative of one.** The arithmetic derivative of $1$ is $0$: $D(1) = 0$.
 
 ## Depends on
 
-- [Arithmetic Derivative](arithmetic-derivative.md)
+- [Arithmetic derivative](arithmetic-derivative.md)
 
 ## Sources
 

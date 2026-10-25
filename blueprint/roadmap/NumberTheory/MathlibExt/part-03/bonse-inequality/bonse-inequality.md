@@ -7,14 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.bonse_inequality
 ---
 
-# Bonse inequality
+# Bonse's inequality
 
-Bonse's inequality: for `k > 4`, the square of the `(k+1)`-st prime is
-smaller than the product of the first `k` primes.
-
-`Nat.nth Prime` is zero-indexed, so `Nat.nth Prime k` is the source's
-one-indexed `p_{k+1}` and the product over `Finset.range k` is
-`p_1 * ... * p_k`.
+**Bonse's inequality.** Let $p_1 = 2, p_2 = 3, p_3 = 5, \dots$ be the prime numbers in
+increasing order. For every natural number $k > 4$, the square of the $(k+1)$-st prime is
+smaller than the product of the first $k$ primes: $p_{k+1}^2 < p_1 p_2 \cdots p_k$.
 
 ## Depends on
 
@@ -22,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bonse nth five](bonse-nth-five.md)
-- [Bonse nth strict Mono](bonse-nth-strict-mono.md)
-- [Bonse nth succ lt](bonse-nth-succ-lt.md)
+- [The sixth prime is thirteen](bonse-nth-five.md)
+- [The enumeration of the primes is strictly increasing](bonse-nth-strict-mono.md)
+- [Bertrand's postulate for consecutive primes](bonse-nth-succ-lt.md)
 
 ## Sources
 

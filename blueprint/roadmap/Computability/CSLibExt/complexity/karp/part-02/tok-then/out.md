@@ -16,7 +16,7 @@ The output on bit string `x`.
 ## Proof depends on
 
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

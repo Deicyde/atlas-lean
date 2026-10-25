@@ -31,7 +31,7 @@ the $i$-th bit of $w$, or with no value when $w$ has fewer than $i$ bits.
 - [Occurrence table of a list of variables](../sat-verifier-spec/ents-of.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

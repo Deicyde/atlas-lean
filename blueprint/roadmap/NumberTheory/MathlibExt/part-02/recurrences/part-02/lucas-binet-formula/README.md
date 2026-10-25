@@ -5,5 +5,5 @@ navigation: module
 
 # Lucas Binet Formula
 
-- [Lucas binet formulas of field](lucas-binet-formulas-of-field.md)
-- [Lucas binet formulas](lucas-binet-formulas.md)
+- [Binet formulas for Lucas sequences over any field](lucas-binet-formulas-of-field.md)
+- [Binet formulas for Lucas sequences](lucas-binet-formulas.md)

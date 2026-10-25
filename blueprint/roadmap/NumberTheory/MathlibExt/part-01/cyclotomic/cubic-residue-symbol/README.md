@@ -5,8 +5,8 @@ navigation: module
 
 # Cubic Residue Symbol
 
-- [Prime Ideal Cubic Symbol Factor Raw](prime-ideal-cubic-symbol-factor-raw.md)
-- [Cubic Residue Symbol Raw](cubic-residue-symbol-raw.md)
-- [Prime Ideal Cubic Symbol](prime-ideal-cubic-symbol.md)
-- [Is Cubic Residue Denominator](is-cubic-residue-denominator.md)
-- [Cubic Residue Symbol](cubic-residue-symbol.md)
+- [Totalized prime-ideal cubic symbol](prime-ideal-cubic-symbol-factor-raw.md)
+- [Totalized cubic residue symbol](cubic-residue-symbol-raw.md)
+- [Cubic residue symbol at a prime ideal](prime-ideal-cubic-symbol.md)
+- [Cubic residue denominators](is-cubic-residue-denominator.md)
+- [Cubic residue symbol modulo an element](cubic-residue-symbol.md)

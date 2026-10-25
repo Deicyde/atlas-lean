@@ -13,7 +13,7 @@ and for the tempered case.
 
 ## Depends on
 
-- [Local Exponent Family](local-exponent-family.md)
+- [Family of local exponents](local-exponent-family.md)
 
 ## Sources
 

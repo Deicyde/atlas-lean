@@ -16,7 +16,7 @@ for every atom $a$ satisfies the Tseitin CNF of $A$ with respect to $\iota$.
 ## Depends on
 
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
+- [Truth-table evaluation](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
 - [Tseitin CNF](tseitin.md)
 
 ## Proof depends on
@@ -26,10 +26,10 @@ for every atom $a$ satisfies the Tseitin CNF of $A$ with respect to $\iota$.
 - [Value of a proposition read off the atom variables](atom-val.md)
 - [Truth value of a literal](lit-val.md)
 - [Correctness invariant of the Tseitin encoding](spec-tseitin-aux.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
-- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [Satisfaction of a literal](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 - [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 - [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)
 

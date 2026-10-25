@@ -5,5 +5,5 @@ navigation: module
 
 # Group
 
-- [Ray Class Group](ray-class-group.md)
-- [Ray Class Map](ray-class-map.md)
+- [Ray class group](ray-class-group.md)
+- [Ray class map](ray-class-map.md)

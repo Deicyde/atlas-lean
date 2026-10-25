@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.charpolyDescendingCoeff
 ---
 
-# Charpoly Descending Coeff
+# Characteristic-polynomial coefficients in descending order
 
-The coefficient `c_k` in the usual monic characteristic-polynomial
-expansion `χ_A(X) = X^N + c₁ X^(N-1) + ... + c_N`.
+**Characteristic-polynomial coefficients in descending order.** Let $A$ be a square matrix
+over a commutative ring $R$ whose rows and columns are indexed by a finite set of size $N$, and
+write its characteristic polynomial as $\chi_A(X) = \det(X I - A) = X^N + c_1 X^{N-1} + \dots +
+c_N$. For a natural number $k$, the descending coefficient $c_k$ of $A$ is the coefficient of
+$X^{N-k}$ in $\chi_A$ when $k \le N$, and $0$ when $k > N$.
 
-Mathlib's `Matrix.charpoly` is the monic characteristic polynomial
-`det (X • 1 - A)`, so this is the coefficient of degree `N - k`.
-For `k > N`, the coefficient is `0`, which lets the trace recurrence be
-stated uniformly for all positive `k`.
+Setting $c_k = 0$ for $k > N$ lets the trace recurrence be stated uniformly for all positive $k$.
 
 ## Depends on
 

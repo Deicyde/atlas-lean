@@ -6,14 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.empty
 ---
 
-# Empty
+# Empty multiple-zeta index
 
-The empty multiple-zeta index. Source: arXiv:2307.09867, empty-index convention.
+**Empty multiple-zeta index.** The empty multiple-zeta index, which has no entries and weight
+zero.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.Series](../../../../../../sources/v2/MathlibExt.md)
+- arXiv:2307.09867, empty-index convention.

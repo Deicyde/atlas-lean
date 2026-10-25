@@ -6,9 +6,10 @@ proof: formalized
 lean: Nat.div_div_self_of_mem_divisors
 ---
 
-# Div div self of mem divisors
+# The complementary divisor of the complementary divisor
 
-`d ↦ n / d` is an involution on `Nat.divisors n`.
+**The complementary divisor of the complementary divisor.** If $n$ is a nonzero natural
+number and $d$ is a divisor of $n$, then $n/(n/d) = d$.
 
 ## Depends on
 

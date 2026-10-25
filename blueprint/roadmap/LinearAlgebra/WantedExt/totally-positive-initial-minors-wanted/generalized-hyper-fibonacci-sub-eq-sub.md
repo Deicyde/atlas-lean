@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_sub_eq_sub
 ---
 
-# Generalized Hyper Fibonacci sub eq sub
+# A binomial-sum formula for generalized hyper-Fibonacci numbers
 
-For `r ≥ 1` and `n ≥ r`, `W_{p,n-r}^{(r)} = W_{p,n+r} - S_r` with
-`S_r = p^n ∑_{k=0}^{r-1} C(n-k-1, r-k-1) W_{p,2k+1} / p^{r-1}`; stated over `ℚ` for all
-integers `a`, `b` and all `p ≠ 0`.
+**A binomial-sum formula for generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers
+with $p \ne 0$, let $W_{p,n}$ denote the generalized Fibonacci sequence and $W^{(r)}_{p,n}$ the
+generalized hyper-Fibonacci numbers. For all natural numbers $r$ and $n$ with $1 \le r \le n$, the
+following identity of rational numbers holds:
+
+$$
+W^{(r)}_{p,n-r} = W_{p,n+r} - \frac{p^n}{p^{r-1}} \sum_{k=0}^{r-1} \binom{n-k-1}{r-k-1} W_{p,2k+1}.
+$$
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
-- [Generalized PFibonacci](generalized-pfibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
+- [Generalized $p$-Fibonacci sequence](generalized-pfibonacci.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ the sequence is identically zero (`F_0(1) = F_0(0) + F_0(0) = 0`) while the sum 
 
 ## Depends on
 
-- [Fibonacci P](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
+- [Fibonacci p-numbers](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources
 

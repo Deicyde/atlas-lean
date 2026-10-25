@@ -12,7 +12,7 @@ Source: Dobrowolski (1979), as reported by Voutier, coefficient `1`.
 
 ## Depends on
 
-- [Asymptotic Dobrowolski Constant](../../../../MathlibExt/part-01/height/asymptotic-dobrowolski/asymptotic-dobrowolski-constant.md)
+- [Asymptotic Dobrowolski constant](../../../../MathlibExt/part-01/height/asymptotic-dobrowolski/asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

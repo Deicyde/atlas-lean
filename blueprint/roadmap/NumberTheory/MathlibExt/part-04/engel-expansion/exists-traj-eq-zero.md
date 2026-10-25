@@ -7,17 +7,19 @@ proof: formalized
 lean: EngelExpansion.exists_traj_eq_zero
 ---
 
-# Exists traj eq zero
+# An Engel trajectory started at $a$ vanishes within $a + 1$ steps
 
-Every Engel trajectory reaches `0` within `a + 1` steps.
+**An Engel trajectory started at $a$ vanishes within $a + 1$ steps.** Let $n$ and $a$ be
+natural numbers and let $t_0 = a, t_1, t_2, \dots$ be the Engel trajectory of $a$ with respect to
+$n$. Then $t_i = 0$ for some $i \le a + 1$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Neg Rem](neg-rem.md)
+- [Negated remainder](neg-rem.md)
 
 ## Sources
 

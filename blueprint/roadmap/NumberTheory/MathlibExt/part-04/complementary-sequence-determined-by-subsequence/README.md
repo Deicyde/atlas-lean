@@ -5,10 +5,10 @@ navigation: module
 
 # Complementary Sequence Determined By Subsequence Sum Equation
 
-- [Is Complementary Pair](is-complementary-pair.md)
-- [Satisfies Parametrized Sum Equation](satisfies-parametrized-sum-equation.md)
-- [Satisfies Base Sum Equation](satisfies-base-sum-equation.md)
-- [Satisfies Shifted Sum Equation](satisfies-shifted-sum-equation.md)
-- [Is Complementary Determined By Parametrized Sum Equation](is-complementary-determined-by-parametri.md)
-- [Is Complementary Determined By Base Sum Equation](is-complementary-determined-by-base-sum.md)
-- [Is Complementary Determined By Shifted Sum Equation](is-complementary-determined-by-shifted-s.md)
+- [Complementary pair of sequences](is-complementary-pair.md)
+- [The subsequence-sum equation $a_n = b_{hn} + b_{khn}$](satisfies-parametrized-sum-equation.md)
+- [The subsequence-sum equation $a_n = b_{2n} + b_{4n}$](satisfies-base-sum-equation.md)
+- [The subsequence-sum equation $a_n = b_{2n} + b_{4n} + 1$](satisfies-shifted-sum-equation.md)
+- [Complementary pair determined by $a_n = b_{hn} + b_{khn}$](is-complementary-determined-by-parametri.md)
+- [Complementary pair determined by $a_n = b_{2n} + b_{4n}$](is-complementary-determined-by-base-sum.md)
+- [Complementary pair determined by $a_n = b_{2n} + b_{4n} + 1$](is-complementary-determined-by-shifted-s.md)

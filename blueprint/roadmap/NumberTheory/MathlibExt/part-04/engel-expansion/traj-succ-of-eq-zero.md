@@ -7,17 +7,19 @@ proof: formalized
 lean: EngelExpansion.traj_succ_of_eq_zero
 ---
 
-# Traj succ of eq zero
+# Zero is absorbing for the Engel trajectory
 
-Unfolding after a vanishing step.
+**Zero is absorbing for the Engel trajectory.** Let $n$, $a$ and $j$ be natural numbers
+and let $t_0, t_1, \dots$ be the Engel remainder trajectory of $a$ with respect to $n$. If
+$t_j = 0$, then $t_{j+1} = 0$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Engel remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Neg Rem](neg-rem.md)
+- [Negated remainder](neg-rem.md)
 
 ## Sources
 

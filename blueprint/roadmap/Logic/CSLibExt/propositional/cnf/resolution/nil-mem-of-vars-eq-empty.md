@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.nil_mem_of_vars_eq_empty
 ---
 
-# Nil mem of vars eq empty
+# Unsatisfiable formulas without variables contain the empty clause
 
-A formula without variables is satisfiable unless it contains the empty clause.
+**Unsatisfiable formulas without variables contain the empty clause.** If a CNF formula
+$\varphi$ has no variables and is not satisfiable, then the empty clause is one of the clauses
+of $\varphi$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Vars](../restriction/vars-2.md)
-- [CNFClause](../basic/cnfclause.md)
-- [CNFSat](../basic/cnfsat.md)
+- [CNF clause](../basic/cnfclause.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Vars](../restriction/vars.md)
+- [Variables of a clause](../restriction/vars.md)
 
 ## Sources
 

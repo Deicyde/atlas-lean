@@ -5,5 +5,5 @@ navigation: module
 
 # Baker Davenport One Sided
 
-- [Baker Davenport reduction one Sided general](baker-davenport-reduction-one-sided-gene.md)
-- [Baker Davenport reduction one Sided](baker-davenport-reduction-one-sided.md)
+- [Baker–Davenport reduction for an arbitrary denominator, one-sided form](baker-davenport-reduction-one-sided-gene.md)
+- [Baker–Davenport reduction lemma, one-sided form](baker-davenport-reduction-one-sided.md)

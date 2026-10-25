@@ -6,12 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.EulerianForm
 ---
 
-# Eulerian Form
+# Eulerian form of an odd perfect number
 
-Full witnessed Eulerian form of an odd perfect number:
-perfectness, oddness, primality of `q`, the factorization
-`N = q ^ k * n ^ 2`, both congruences `q ≡ 1 (mod 4)`,
-`k ≡ 1 (mod 4)`, and coprimality of `q` and `n`.
+**Eulerian form of an odd perfect number.** For natural numbers $N$, $q$, $k$ and $n$, the
+quadruple $(N, q, k, n)$ is in Eulerian form when $N$ is an odd perfect number, $q$ is prime,
+$N = q^k n^2$, $q \equiv 1 \pmod 4$, $k \equiv 1 \pmod 4$, and $q$ and $n$ are coprime.
 
 ## Depends on
 

@@ -7,15 +7,18 @@ proof: formalized
 lean: NumberField.Modulus.principalRayIdealMap_apply
 ---
 
-# Principal Ray Ideal Map apply
+# Value of the principal ray ideal map
 
-Pointwise evaluation of the principal-ideal map on ray elements.
+**Value of the principal ray ideal map.** Let $\mathfrak m$ be a modulus of a number field
+$K$ with ring of integers $\mathcal O_K$. For every ray element $x \in K^\times$ for
+$\mathfrak m$, the image of $x$ under the principal ray ideal map, viewed as an invertible
+fractional ideal of $K$, is the principal fractional ideal $x\mathcal O_K$.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Principal Ray Ideal Map](principal-ray-ideal-map.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Principal ray ideal map](principal-ray-ideal-map.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Sources
 

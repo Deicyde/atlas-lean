@@ -7,20 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.chi4_mul_jacobiSym_natAbs_eq_kroneckerSym_of_odd_of_three_mod_four
 ---
 
-# Quadratic Reciprocity Three Odd
+# Kronecker symbol at odd numbers for integers congruent to 3 mod 4
 
-Reciprocity bridge for `D % 4 = 3` at odd `p`: the Jacobi symbol
-needs the `χ₄ p` factor. For `0 < D` the reciprocity sign equals `χ₄ p`;
-for `D < 0` the `(-1)` factor supplies it.
+**Kronecker symbol at odd numbers for integers congruent to 3 mod 4.** Let $\chi_4$ be the
+nontrivial Dirichlet character modulo $4$, so $\chi_4(n) = 1$ for $n \equiv 1 \pmod 4$ and
+$\chi_4(n) = -1$ for $n \equiv 3 \pmod 4$. Let $D$ be an integer with $D \equiv 3 \pmod 4$ and
+let $p$ be an odd natural number. Then $\chi_4(p) \cdot \left(\frac{p}{|D|}\right) =
+\left(\frac{D}{p}\right)$, where $\left(\frac{p}{|D|}\right)$ is the Jacobi symbol and
+$\left(\frac{D}{p}\right)$ is the Kronecker symbol.
+
+For $D > 0$ the factor $\chi_4(p)$ is the sign from quadratic reciprocity; for $D < 0$ it is
+the value $\left(\frac{-1}{p}\right) = \chi_4(p)$.
 
 ## Depends on
 
-- [Kronecker Sym](quadratic/kronecker-sym.md)
+- [Kronecker symbol](quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
-- [Quadratic Character Aux](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
+- [Kronecker symbol at a prime](quadratic/kronecker-at-prime.md)
+- [Kronecker and Jacobi symbols agree at odd primes](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

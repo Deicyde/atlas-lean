@@ -6,9 +6,11 @@ proof: formalized
 lean: GaussianInt.gaussianInt_prime_of_natAbs_norm_prime
 ---
 
-# Gaussian Int prime of nat Abs norm prime
+# Gaussian integers of prime norm are prime
 
-An element of `ℤ[i]` whose norm has prime `natAbs` is prime.
+**Gaussian integers of prime norm are prime.** Let $\pi = a + bi \in \mathbb{Z}[i]$ and
+let $N(\pi) = a^2 + b^2$ be its norm. If the absolute value of $N(\pi)$ is a prime number,
+then $\pi$ is a prime element of $\mathbb{Z}[i]$.
 
 ## Depends on
 

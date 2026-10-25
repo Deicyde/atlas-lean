@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.JacobiDetDerivativeWanted.jacobi_det_derivative
 ---
 
-# Jacobi Det Derivative Wanted
+# Jacobi's formula
 
-Jacobi's formula for the derivative of the determinant: the derivative of `t ↦ det (A t)`
-along a differentiable curve of square real matrices equals the trace of the adjugate times
-the derivative, `d/dt det A = tr (adj A * dA/dt)`.
+**Jacobi's formula.** Let $n$ be a finite type, and let $A$ be a curve
+$\mathbb{R} \to \mathbb{R}^{n \times n}$ of square real matrices with rows and columns indexed
+by $n$. Suppose $A$ is differentiable at $t \in \mathbb{R}$. Then the derivative of
+$s \mapsto \det A(s)$ at $t$ is $\operatorname{tr}\bigl(\operatorname{adj}(A(t))\, A'(t)\bigr)$,
+where $\operatorname{adj}$ denotes the adjugate matrix and $A'(t)$ the derivative of $A$ at $t$.
 
 ## Depends on
 

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example4Integrable.f
 ---
 
-# F
+# Generalized Bell function extended to $n = -1$
 
-`f n x = 1` for `n = -1`, and `f n x = exp (-x) * ∑' j, (j + 1) ^ n * x ^ (j + 1) / j!`,
-which is `generalizedBellGenerating 0 1 x n`, otherwise.
+**Generalized Bell function extended to $n = -1$.** For an integer $n \ge -1$ and a complex
+number $x$, $f(n, x) = 1$ if $n = -1$, and otherwise $f(n, x)$ is the generalized Bell function
+$F(0, 1, x; n) = e^{-x} \sum_{k \ge 0} (k + 1)^n x^{k + 1} / k!$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Bell Generating](../part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+- [Ramanujan's generalized Bell function](../part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
 
 ## Sources
 

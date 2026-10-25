@@ -5,6 +5,6 @@ navigation: module
 
 # PNeighbor
 
-- [Are PNeighbors](are-pneighbors.md)
-- [Are PNeighbors comm](are-pneighbors-comm.md)
-- [Not are PNeighbors one](not-are-pneighbors-one.md)
+- [$p$-neighbors of submodules](are-pneighbors.md)
+- [The $p$-neighbor relation is symmetric](are-pneighbors-comm.md)
+- [No submodules are $1$-neighbors](not-are-pneighbors-one.md)

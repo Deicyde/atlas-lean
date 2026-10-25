@@ -42,7 +42,7 @@ time.
 - [Sipser's HAMPATH instance of a CNF formula](../ham-path/to-ham.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

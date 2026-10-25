@@ -15,8 +15,8 @@ MONOTONE 3-SAT as a decision problem over bitstrings.
 
 ## Proof depends on
 
-- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Bitstring encodings](../../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 - [Decoding function of a bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode.md)
 - [Decoding inverts bitstring encoding](../../../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)

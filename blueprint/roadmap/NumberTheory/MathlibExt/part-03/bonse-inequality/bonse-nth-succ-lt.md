@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.bonse_nth_succ_lt
 ---
 
-# Bonse nth succ lt
+# Bertrand's postulate for consecutive primes
 
-Bertrand's postulate in `nth` form: successive primes grow by less
-than a factor of two.
+**Bertrand's postulate for consecutive primes.** Let $p_1 < p_2 < p_3 < \cdots$ be the prime
+numbers in increasing order. For every $k \ge 1$, $p_{k+1} < 2 p_k$.
 
 ## Depends on
 
@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bonse nth prime](bonse-nth-prime.md)
-- [Bonse nth strict Mono](bonse-nth-strict-mono.md)
+- [The enumeration of the primes takes prime values](bonse-nth-prime.md)
+- [The enumeration of the primes is strictly increasing](bonse-nth-strict-mono.md)
 
 ## Sources
 

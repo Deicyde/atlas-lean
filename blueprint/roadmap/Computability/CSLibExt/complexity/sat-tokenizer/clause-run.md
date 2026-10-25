@@ -32,7 +32,7 @@ table stack of the occurrence table of $N$ against $w$.
 - [Occurrence table of a list of variables](../sat-verifier-spec/ents-of.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

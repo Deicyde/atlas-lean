@@ -5,7 +5,7 @@ navigation: module
 
 # Base Recognizable
 
-- [Base Word Value](base-word-value.md)
-- [Is Canonical Base Word](is-canonical-base-word.md)
-- [Is Base Recognizable](is-base-recognizable.md)
-- [Base Digits](base-digits.md)
+- [Value of a base-k digit word](base-word-value.md)
+- [Canonical base-k words](is-canonical-base-word.md)
+- [Sets recognizable in base k](is-base-recognizable.md)
+- [Base-k expansion](base-digits.md)

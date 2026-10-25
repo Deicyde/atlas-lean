@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.gcdUnitary_pos
 ---
 
-# Gcd Unitary pos
+# Positivity of the greatest common unitary divisor
 
-For positive `a` and `b`, `gcd₁(a, b)` is positive.
+**Positivity of the greatest common unitary divisor.** For positive natural numbers $a$ and
+$b$, the greatest common unitary divisor $\gcd_1(a, b)$ is positive.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Proof depends on
 
-- [Gcd Unitary dvd left](gcd-unitary-dvd-left.md)
+- [The greatest common unitary divisor divides its first argument](gcd-unitary-dvd-left.md)
 
 ## Sources
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: Nat.exists_sum_four_sq_eq_and_sum_eq_of_odd
 ---
 
-# Exists sum four sq eq and sum eq of odd
+# Cauchy's lemma
 
-Cauchy's lemma producing four squares with a prescribed sum.
+**Cauchy's lemma.** Let $a$ and $b$ be odd natural numbers with $b^2 < 4a$ and
+$3a < b^2 + 2b + 4$. Then there are natural numbers $s, t, u, v$ with
+$a = s^2 + t^2 + u^2 + v^2$ and $b = s + t + u + v$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Legendre Three Square](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
+- [Legendre's three-square theorem](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
 
 ## Sources
 

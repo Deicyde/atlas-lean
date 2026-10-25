@@ -16,7 +16,7 @@ is the last one, and $z'$ is the counter after $l$.
 
 ## Depends on
 
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

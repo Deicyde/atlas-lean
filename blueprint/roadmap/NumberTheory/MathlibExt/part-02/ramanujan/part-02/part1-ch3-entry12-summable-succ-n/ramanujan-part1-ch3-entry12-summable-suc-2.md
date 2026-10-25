@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry12SummableSuccN.ramanujan_part1_ch3_entry12_summable_succ_n
 ---
 
-# Ramanujan part1 ch3 entry12 summable succ n
+# Absolute convergence of the shifted series in Entry 12
 
-Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12,
-    printed pp. 66-67 / PDF pp. 76-77.
-Proves `Wanted` entry `ramanujan_part1_ch3_entry12_summable_succ_n`.
+**Absolute convergence of the shifted series in Entry 12.** Let $r$ be an integer and let $n$
+and $a$ be complex numbers. Suppose that $|a| > e$, or that $a = e$ and $r \le -2$, and that
+$n + k \ne 0$ for every integer $k \ge 0$ with $r + k < 0$. Then
+
+$$\sum_{k=0}^{\infty} \left| \frac{(n+k)^{r+1+k}}{a^k\, k!} \right| < \infty.$$
 
 ## Depends on
 
@@ -19,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramanujan part1 ch3 entry12 summable succ n general](ramanujan-part1-ch3-entry12-summable-suc.md)
+- [Absolute convergence of the shifted series in Entry 12 for every $n$](ramanujan-part1-ch3-entry12-summable-suc.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry12SummableSuccN](../../../../../../../sources/v2/MathlibExt.md)
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77. Proves `Wanted` entry `ramanujan_part1_ch3_entry12_summable_succ_n`.

@@ -7,27 +7,27 @@ navigation: module
 
 ## Number Field
 
-- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
-- [Finite Idele Group](finite-idele-group.md)
+- [Local integral unit subgroup](local-integral-unit-subgroup.md)
+- [Finite idele group](finite-idele-group.md)
 
 ## Finite Idele Group
 
-- [Is Open local Integral Unit Subgroup](is-open-local-integral-unit-subgroup.md)
+- [The local integral units are open](is-open-local-integral-unit-subgroup.md)
 
 ## Number Field
 
-- [Infinite Idele Group](infinite-idele-group.md)
-- [Topological Idele Group](topological-idele-group.md)
+- [Infinite idele group](infinite-idele-group.md)
+- [Topological idele group](topological-idele-group.md)
 
 ## Topological Idele Group
 
-- [Infinite Principal Embedding](infinite-principal-embedding.md)
-- [Finite Principal Embedding](finite-principal-embedding.md)
-- [Principal Embedding](principal-embedding.md)
-- [Principal Ideles](principal-ideles.md)
-- [Units Equiv](units-equiv.md)
-- [Principal Embedding injective](principal-embedding-injective.md)
+- [Diagonal map into the infinite ideles](infinite-principal-embedding.md)
+- [Diagonal map into the finite ideles](finite-principal-embedding.md)
+- [Diagonal map into the ideles](principal-embedding.md)
+- [Principal ideles](principal-ideles.md)
+- [Ideles as units of the adele ring](units-equiv.md)
+- [The diagonal map into the ideles is injective](principal-embedding-injective.md)
 
 ## Number Field
 
-- [Topological Idele Class Group](topological-idele-class-group.md)
+- [Topological idele class group](topological-idele-class-group.md)

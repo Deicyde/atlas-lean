@@ -4,35 +4,35 @@ navigation: module
 
 # Basic
 
-- [BDD](bdd.md)
-- [Eval](eval.md)
-- [Size](size.md)
-- [Ordered From](ordered-from.md)
-- [Reduced](reduced.md)
-- [Is ROBDD](is-robdd.md)
+- [Binary decision diagram](bdd.md)
+- [Evaluation of a binary decision diagram](eval.md)
+- [Size of a diagram](size.md)
+- [Diagrams ordered from a variable](ordered-from.md)
+- [Reduced diagrams](reduced.md)
+- [Reduced ordered binary decision diagram](is-robdd.md)
 
 ## Independence from variables below the order
 
-- [Eval update of lt](eval-update-of-lt.md)
-- [Eval update node](eval-update-node.md)
+- [Independence from variables below the order](eval-update-of-lt.md)
+- [Fixing the top variable of an ordered node](eval-update-node.md)
 
 ## Canonicity
 
-- [Size pos](size-pos.md)
+- [Fixing the top variable of an ordered node](size-pos.md)
 - [Canonicity](eq-of-eval-eq.md)
-- [Eq iff eval eq](eq-iff-eval-eq.md)
-- [Eq leaf false iff](eq-leaf-false-iff.md)
+- [Reduced ordered diagrams are equal iff they have the same values](eq-iff-eval-eq.md)
+- [Unsatisfiable reduced ordered diagrams](eq-leaf-false-iff.md)
 
 ## Building reduced diagrams
 
-- [Mk](mk.md)
-- [Apply](apply.md)
-- [Eval apply](eval-apply.md)
-- [Ordered From apply](ordered-from-apply.md)
-- [Reduced apply](reduced-apply.md)
+- [Node constructor removing a redundant test](mk.md)
+- [Bryant's apply operation](apply.md)
+- [Apply computes the operation pointwise](eval-apply.md)
+- [Apply preserves orderedness](ordered-from-apply.md)
+- [Apply returns reduced diagrams](reduced-apply.md)
 
 ## ROBDDs of propositions
 
-- [Of Proposition](of-proposition.md)
-- [Of Proposition eq iff](of-proposition-eq-iff.md)
-- [Of Proposition ne leaf false iff](of-proposition-ne-leaf-false-iff.md)
+- [Diagram of a proposition](of-proposition.md)
+- [Equal BDDs iff equal truth tables](of-proposition-eq-iff.md)
+- [Satisfiable iff the BDD is not the false leaf](of-proposition-ne-leaf-false-iff.md)

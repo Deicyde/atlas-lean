@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.MeasureTheory.Geometry.BrunnMinkowskiWanted.brunn_minkowski
 ---
 
-# Brunn Minkowski
+# Brunn–Minkowski inequality
 
-Brunn–Minkowski: for `n > 0` and nonempty compact `vol(A+B)^(1/n) ≥ vol(A)^(1/n) + vol(B)^(1/n)`.
+**Brunn–Minkowski inequality.** Let $n \ge 1$, let $A$ and $B$ be nonempty compact subsets of
+$\mathbb{R}^n$, let $A + B = \{a + b : a \in A,\ b \in B\}$ be their Minkowski sum, and let
+$\mathrm{vol}$ denote Lebesgue measure on $\mathbb{R}^n$. Then
+
+$$\mathrm{vol}(A + B)^{1/n} \ge \mathrm{vol}(A)^{1/n} + \mathrm{vol}(B)^{1/n}.$$
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prekopa Leindler](../integral/prekopa-leindler.md)
+- [Prékopa–Leindler inequality](../integral/prekopa-leindler.md)
 
 ## Sources
 

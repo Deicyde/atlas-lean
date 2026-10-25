@@ -6,10 +6,11 @@ proof: formalized
 lean: Nat.mul_mem_unitaryDivisors_mul
 ---
 
-# Mul mem unitary Divisors mul
+# Products of unitary divisors of coprime numbers
 
-For coprime `m` and `n`, the product of a unitary divisor of `m` and a unitary divisor of
-`n` is a unitary divisor of `m * n`.
+**Products of unitary divisors of coprime numbers.** Let $m$ and $n$ be coprime natural
+numbers. If $a$ is a unitary divisor of $m$ and $b$ is a unitary divisor of $n$, then $ab$ is a
+unitary divisor of $mn$.
 
 ## Depends on
 

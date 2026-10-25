@@ -15,7 +15,7 @@ A satisfying assignment.
 
 ## Proof depends on
 
-- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Sources

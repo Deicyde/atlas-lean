@@ -16,7 +16,7 @@ ordered triples $(x, y, z)$ of integers with $x^2 + y^2 + z^2 = n$.
 ## Depends on
 
 - [Overpartition](../overpartition/overpartition.md)
-- [Three Square Representation Count](../../../../../../../NumberTheory/MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
+- [Number of representations as a sum of three squares](../../../../../../../NumberTheory/MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Proof depends on
 

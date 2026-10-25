@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.ModelTheory.WilkiesConjectureWanted.WilkiesConjecture.transPart
 ---
 
-# Trans Part
+# Transcendental part of a set
 
-If `X ⊆ ℝⁿ` then we denote `Xᵗʳᵃⁿˢ := X \ Xᵃˡᵍ`.
+**Transcendental part of a set.** For a set $X \subseteq \mathbb{R}^n$, the transcendental
+part of $X$ is $X^{\mathrm{trans}} := X \setminus X^{\mathrm{alg}}$, where $X^{\mathrm{alg}}$ is
+the algebraic part of $X$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Alg Part](alg-part.md)
+- [Algebraic part of a set](alg-part.md)
 
 ## Sources
 

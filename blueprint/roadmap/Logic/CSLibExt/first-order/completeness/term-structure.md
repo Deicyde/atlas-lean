@@ -5,9 +5,14 @@ statement: formalized
 lean: Cslib.Logic.FOL.termStructure
 ---
 
-# Term Structure
+# Term structure of a set of formulas
 
-Terms as a structure: function symbols build terms, `R(t⃗)` holds iff it is in `Δ`.
+**Term structure of a set of formulas.** Let $\Delta$ be a set of first-order formulas in a
+language $L$ with free variables in $\mathbb{N}$. The term structure of $\Delta$ is the
+$L$-structure whose domain is the set of $L$-terms with variables in $\mathbb{N}$, in which an
+$n$-ary function symbol $f$ sends terms $t_1, \dots, t_n$ to the term $f(t_1, \dots, t_n)$, and
+an $n$-ary relation symbol $R$ holds of $t_1, \dots, t_n$ exactly when the atomic formula
+$R(t_1, \dots, t_n)$ belongs to $\Delta$.
 
 ## Depends on
 

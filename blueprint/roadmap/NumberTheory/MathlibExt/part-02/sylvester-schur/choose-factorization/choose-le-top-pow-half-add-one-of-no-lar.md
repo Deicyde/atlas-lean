@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.choose_le_top_pow_half_add_one_of_no_large
 ---
 
-# Choose le top pow half add one of no large
+# Half-exponent bound for binomial coefficients without large prime factors
 
-Using the already-formalized prime-counting bound `π(r) ≤ r / 2 + 1` gives a sharper
-no-large-prime estimate.
+**Half-exponent bound for binomial coefficients without large prime factors.** Let $0 < N$
+and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$.
+Then $\binom{N}{r} \le N^{\lfloor r/2 \rfloor + 1}$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose le top pow prime Counting of no large](choose-le-top-pow-prime-counting-of-no-l.md)
-- [Prime Counting le half add one](../prime-counting/prime-counting-le-half-add-one.md)
+- [Prime-counting bound for binomial coefficients without large prime factors](choose-le-top-pow-prime-counting-of-no-l.md)
+- [At most $\lfloor r/2 \rfloor + 1$ primes up to $r$](../prime-counting/prime-counting-le-half-add-one.md)
 
 ## Sources
 

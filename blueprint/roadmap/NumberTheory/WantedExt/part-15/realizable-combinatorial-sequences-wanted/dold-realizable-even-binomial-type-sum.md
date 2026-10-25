@@ -15,7 +15,7 @@ realizable.
 
 ## Depends on
 
-- [Dold Realizable](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
+- [Dold realizable sequences](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
 
 ## Sources
 

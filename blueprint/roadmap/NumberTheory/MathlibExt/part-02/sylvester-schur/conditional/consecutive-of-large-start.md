@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_large_start
 ---
 
-# Consecutive of large start
+# Large starts give a large prime in a consecutive block
 
-A first unconditional-looking partial case of the consecutive form, valid for starts far
-enough to make the elementary estimate work.
+**Large starts give a large prime in a consecutive block.** Let $n \ge 2$ and $k > n$ be
+natural numbers with $n! \cdot 2^{n-1} < k$. Then some prime $p > n$ divides one of the integers
+$k, k+1, \dots, k+n-1$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
-- [Exists large prime dvd choose of factorial mul top pow sub one lt lower pow](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-7.md)
+- [From a large prime divisor of the binomial coefficient to one in the block](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+- [Large-prime criterion from the r − 1 exponent bound](../large-prime-criteria/exists-large-prime-dvd-choose-of-factori-7.md)
 
 ## Sources
 

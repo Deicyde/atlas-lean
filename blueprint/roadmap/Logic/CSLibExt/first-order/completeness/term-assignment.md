@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Logic.FOL.termAssignment
 ---
 
-# Term Assignment
+# Canonical assignment of the term model
 
-The canonical assignment `x ↦ [x]`.
+**Canonical assignment of the term model.** For a maximal consistent set $\Delta$ of formulas
+with free variables in $\mathbb{N}$, the canonical assignment sends each variable
+$x \in \mathbb{N}$ to $[x]$, the class of the variable term $x$ in the term model of $\Delta$.
 
 ## Depends on
 
-- [Maximal Consistent](../consistency/maximal-consistent.md)
-- [Term Model](term-model.md)
+- [Maximal consistent set](../consistency/maximal-consistent.md)
+- [Term model of a maximal consistent set](term-model.md)
 
 ## Proof depends on
 
-- [Term Setoid](term-setoid.md)
+- [Provable equality of terms](term-setoid.md)
 
 ## Sources
 

@@ -5,12 +5,12 @@ navigation: module
 
 # Ray Group
 
-- [Finite Supported](finite-supported.md)
-- [Finite Exponent](finite-exponent.md)
-- [Coprime Fractional Ideals](coprime-fractional-ideals.md)
-- [Ray Elements](ray-elements.md)
-- [Congruent One At Finite Part](congruent-one-at-finite-part.md)
-- [Positive At Infinite Part](positive-at-infinite-part.md)
-- [Is Ray Element One](is-ray-element-one.md)
-- [Ray Generators](ray-generators.md)
-- [Ray Group](ray-group.md)
+- [Primes dividing a modulus](finite-supported.md)
+- [Exponent of a modulus at a prime](finite-exponent.md)
+- [Fractional ideals coprime to a modulus](coprime-fractional-ideals.md)
+- [Elements coprime to a modulus](ray-elements.md)
+- [Multiplicative congruence to one at the finite part](congruent-one-at-finite-part.md)
+- [Positivity at the infinite part of a modulus](positive-at-infinite-part.md)
+- [Elements congruent to one modulo a modulus](is-ray-element-one.md)
+- [Generators of the ray group](ray-generators.md)
+- [The ray group of a modulus](ray-group.md)

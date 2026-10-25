@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.chain_ratio
 ---
 
-# Chain ratio
+# Consecutive entries of Breusch's prime chain are within a factor $9/8$
 
-Consecutive chain entries have ratio below `9 / 8`.
+**Consecutive entries of Breusch's prime chain are within a factor $9/8$.** If $b$ immediately
+follows $a$ in the chain, then $8b < 9a$.
 
 ## Depends on
 
-- [Chain](chain.md)
+- [Breusch's prime chain](chain.md)
 
 ## Sources
 

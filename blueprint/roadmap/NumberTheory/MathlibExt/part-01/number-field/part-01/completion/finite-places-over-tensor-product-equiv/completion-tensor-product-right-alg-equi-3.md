@@ -7,17 +7,25 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.completionTensorProductRightAlgEquiv_K
 ---
 
-# Completion Tensor Product Right Alg Equiv K
+# Tensor product decomposition at a finite place over the base field
 
-The source's `K`-algebra formulation, obtained by restriction of scalars.
+**Tensor product decomposition at a finite place over the base field.** Let $L/K$ be an
+extension of number fields, $v$ a finite place of $K$ and $K_v$ the completion of $K$ at $v$; for
+each finite place $w$ of $L$ lying over $v$, let $L_w$ be the completion of $L$ at $w$. There
+exists an isomorphism of $K$-algebras $L \otimes_K K_v \cong \prod_{w \mid v} L_w$.
+
+It is obtained by restricting scalars from $K_v$ to $K$ in the isomorphism of $K_v$-algebras
+$L \otimes_K K_v \cong \prod_{w \mid v} L_w$ sending $y \otimes x$ to $(y x)_w$, where $y \in L$
+and $x \in K_v$ are mapped into each $L_w$, $L_w$ is a $K_v$-algebra via the canonical map
+$K_v \to L_w$, and $L \otimes_K K_v$ is a $K_v$-algebra through its second factor.
 
 ## Depends on
 
-- [Places Over](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../finite-places-over/places-over.md)
 
 ## Proof depends on
 
-- [Completion Tensor Product Right Alg Equiv](completion-tensor-product-right-alg-equi.md)
+- [Tensor product decomposition at a finite place](completion-tensor-product-right-alg-equi.md)
 
 ## Sources
 

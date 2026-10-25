@@ -7,21 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.euler_bernoulli_convolution
 ---
 
-# Euler Bernoulli Convolution
+# Euler's convolution identity for Bernoulli numbers
 
-Euler convolution identity for Bernoulli numbers.
+**Euler's convolution identity for Bernoulli numbers.** Let $B_j$ denote the $j$-th
+Bernoulli number, with $B_1 = -1/2$. For every natural number $n \ge 1$,
 
-Stable concept id: `jis_grounded_d68f7d9a125a7c1b53cb901e`.
-Atomic task id: `jis_rank41_euler_bernoulli_general`.
-
-Uses the source convention `B₁ = -1/2`, matching Mathlib's `bernoulli : ℕ → ℚ`
-from `Mathlib.NumberTheory.Bernoulli`. The finite range `Finset.range (n + 1)`
-represents the inclusive source sum `i = 0, …, n`.
-
-Scope: this file states only the canonical general identity for `n ≥ 1`. It does
-not add the even-index specialization or any `bernoulli'` convention-transformed
-equivalent.
-Proves `Wanted` entry `euler_bernoulli_convolution`.
+$$\sum_{i=0}^{n} \binom{n}{i} B_i B_{n-i} = -n B_{n-1} - (n-1) B_n.$$
 
 ## Depends on
 

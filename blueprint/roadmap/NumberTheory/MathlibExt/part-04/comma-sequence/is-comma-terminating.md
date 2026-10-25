@@ -6,11 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsCommaTerminating
 ---
 
-# Is Comma Terminating
+# Terminating comma sequences
 
-Termination as absence of any infinite comma sequence, requiring valid base
-`2 ≤ b` and positive initial value `0 < v`
-(source lines 183-193, concept `jis_term_0c062437479f9d4e43de4e3f`).
+**Terminating comma sequences.** Let $b$ and $v$ be natural numbers. The comma sequence in
+base $b$ starting at $v$ terminates if $b \ge 2$, $v > 0$, and there is no infinite comma
+sequence in base $b$ starting at $v$.
 
 ## Depends on
 
@@ -18,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Infinite Comma Seq](is-infinite-comma-seq.md)
+- [Infinite comma sequences](is-infinite-comma-seq.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)
+- source lines 183-193, concept `jis_term_0c062437479f9d4e43de4e3f`.

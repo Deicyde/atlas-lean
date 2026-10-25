@@ -5,5 +5,5 @@ navigation: module
 
 # Hilbert Class Field
 
-- [Is Hilbert Class Field](is-hilbert-class-field.md)
-- [Apply maximal](apply-maximal.md)
+- [Hilbert class field of a number field](is-hilbert-class-field.md)
+- [Abelian unramified extensions embed in the Hilbert class field](apply-maximal.md)

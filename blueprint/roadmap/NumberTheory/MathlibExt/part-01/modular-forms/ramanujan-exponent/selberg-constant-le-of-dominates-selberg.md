@@ -6,28 +6,33 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.selbergConstant_le_of_dominatesSelberg
 ---
 
-# Selberg Constant le of dominates Selberg
+# Selberg's constant is at most every dominating family's exponent
 
-Selberg's constant is at most the exponent of every
-Selberg-dominating family. For the genuine cuspidal family this is the
-archimedean comparison `C₆₁ ≤ δ₂`; it is not an equality of constants.
+**Selberg's constant is at most every dominating family's exponent.** Let $F$ be a
+local-exponent family that dominates the Selberg archimedean slice, that is, for every
+congruence subgroup $\Gamma$ of $\mathrm{SL}_2(\mathbb{Z})$ and every Laplace eigenvalue
+$\lambda \in (0, 1/4)$ of $\Gamma$, the gap $\sqrt{1/4 - \lambda}$ is one of the local exponents
+of $F$. Then Selberg's constant is at most the Ramanujan exponent of $F$.
+
+For the genuine cuspidal family this is the archimedean comparison of Selberg's constant with the
+Ramanujan exponent $\delta_2$; it is not an equality of constants.
 
 ## Depends on
 
-- [Dominates Selberg](dominates-selberg.md)
-- [Local Exponent Family](local-exponent-family.md)
-- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
-- [Selberg Constant](../selberg-spectral-gap/selberg-constant.md)
+- [Families dominating the Selberg exceptional spectrum](dominates-selberg.md)
+- [Family of local exponents](local-exponent-family.md)
+- [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
+- [Selberg's congruence spectral-gap constant](../selberg-spectral-gap/selberg-constant.md)
 
 ## Proof depends on
 
 - [Exponent Set](exponent-set.md)
-- [Sqrt le ramanujan Exponent Of of dominates Selberg](sqrt-le-ramanujan-exponent-of-of-dominat.md)
-- [Is Congruence Subgroup](../selberg-spectral-gap/is-congruence-subgroup.md)
+- [Exceptional eigenvalues bound Selberg-dominating exponents from below](sqrt-le-ramanujan-exponent-of-of-dominat.md)
+- [Congruence subgroup of the modular group](../selberg-spectral-gap/is-congruence-subgroup.md)
 - [Is Eigenvalue](../selberg-spectral-gap/is-eigenvalue.md)
-- [Exceptional Gap](../selberg-spectral-gap/exceptional-gap.md)
-- [Exceptional Gaps](../selberg-spectral-gap/exceptional-gaps.md)
-- [Is Congruence Subgroup top](../selberg-spectral-gap/is-congruence-subgroup-top.md)
+- [Gap parameter of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gap.md)
+- [Gap contributions of a subgroup of the modular group](../selberg-spectral-gap/exceptional-gaps.md)
+- [The modular group is a congruence subgroup](../selberg-spectral-gap/is-congruence-subgroup-top.md)
 
 ## Sources
 

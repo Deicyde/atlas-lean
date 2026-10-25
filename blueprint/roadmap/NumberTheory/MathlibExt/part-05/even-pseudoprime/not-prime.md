@@ -6,19 +6,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.IsEvenPseudoprime.not_prime
 ---
 
-# Not prime
+# Even pseudoprimes are not prime
 
-An even pseudoprime is not prime: the only even prime is `2`, and an
-even pseudoprime is strictly greater than `2`.
+**Even pseudoprimes are not prime.** No even pseudoprime is a prime number: the only even
+prime is $2$, and every even pseudoprime is greater than $2$.
 
 ## Depends on
 
-- [Is Even Pseudoprime](is-even-pseudoprime.md)
+- [Even pseudoprime](is-even-pseudoprime.md)
 
 ## Proof depends on
 
-- [Even](even.md)
-- [Two lt](two-lt.md)
+- [Even pseudoprimes are even](even.md)
+- [Even pseudoprimes exceed two](two-lt.md)
 
 ## Sources
 

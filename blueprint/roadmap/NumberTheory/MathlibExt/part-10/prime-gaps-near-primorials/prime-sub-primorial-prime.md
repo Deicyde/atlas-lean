@@ -14,7 +14,7 @@ lean: MetaMathlibExt.AreConsecutivePrimes.prime_sub_primorial_prime
 
 ## Depends on
 
-- [Are Consecutive Primes](../../part-04/consecutive-prime/are-consecutive-primes.md)
+- [Consecutive primes](../../part-04/consecutive-prime/are-consecutive-primes.md)
 
 ## Proof depends on
 

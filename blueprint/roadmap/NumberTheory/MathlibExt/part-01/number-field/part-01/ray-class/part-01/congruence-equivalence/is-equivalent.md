@@ -6,10 +6,14 @@ statement: formalized
 lean: NumberField.Modulus.CongruenceSubgroupPair.IsEquivalent
 ---
 
-# Is Equivalent
+# Equivalence of congruence subgroup pairs
 
-Two pairs are equivalent when the two intersections agree in the
-common ambient group of all nonzero fractional ideals.
+**Equivalence of congruence subgroup pairs.** Let $K$ be a number field. For a modulus
+$\mathfrak m$ of $K$, write $I^{\mathfrak m}$ for the group of nonzero fractional ideals of $K$
+coprime to the finite part of $\mathfrak m$. Two pairs $(\mathfrak m, H)$ and $(\mathfrak n, H')$,
+each consisting of a modulus of $K$ and a congruence subgroup for it, are equivalent when
+$I^{\mathfrak m} \cap H' = I^{\mathfrak n} \cap H$, where both congruence subgroups are viewed as
+subgroups of the group of all nonzero fractional ideals of $K$.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ common ambient group of all nonzero fractional ideals.
 
 ## Proof depends on
 
-- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
-- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Congruence subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [Congruence subgroup as a subgroup of all invertible fractional ideals](../congruence-subgroup/to-ambient-subgroup.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_two_cos_of_coprime
 ---
 
-# Real Cyclotomic Polynomial eq minpoly two cos of coprime
+# Minimal polynomial of $2\cos(2\pi k/n)$ for $1 \le k \le n$ coprime to $n$
 
-Minimal polynomial of `2 cos (2πk/n)` for `1 ≤ k ≤ n` with `Nat.Coprime k n`:
-it equals the real cyclotomic polynomial at `n` (for `2 < n`). The range hypotheses are unused;
-see `realCyclotomicPolynomial_eq_minpoly_two_cos`.
+**Minimal polynomial of $2\cos(2\pi k/n)$ for $1 \le k \le n$ coprime to $n$.** Let $n$ and
+$k$ be natural numbers with $n > 2$, $1 \le k \le n$ and $\gcd(k, n) = 1$. Then the real
+cyclotomic polynomial $\psi_n$ equals the minimal polynomial over $\mathbb{Z}$ of the complex
+number $2\cos(2\pi k/n)$.
+
+The bounds $1 \le k \le n$ are not needed: the same holds for every $k$ coprime to $n$.
 
 ## Depends on
 
-- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
+- [Real cyclotomic polynomial](../real-cyclotomic-polynomial.md)
 
 ## Proof depends on
 
-- [Real Cyclotomic Polynomial eq minpoly two cos](real-cyclotomic-polynomial-eq-minpoly-tw.md)
+- [Minimal polynomial of $2\cos(2\pi k/n)$ for $k$ coprime to $n$](real-cyclotomic-polynomial-eq-minpoly-tw.md)
 
 ## Sources
 

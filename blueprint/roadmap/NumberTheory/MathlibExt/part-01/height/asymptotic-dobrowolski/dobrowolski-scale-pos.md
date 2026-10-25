@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.dobrowolskiScale_pos
 ---
 
-# Dobrowolski Scale pos
+# Positivity of the Dobrowolski scale
 
-The source's degree range makes the scale strictly positive.
+**Positivity of the Dobrowolski scale.** For every natural number $d \ge 3$, the Dobrowolski
+scale $\left(\frac{\log \log d}{\log d}\right)^3$ is strictly positive.
 
 ## Depends on
 
-- [Dobrowolski Scale](dobrowolski-scale.md)
+- [Dobrowolski scale](dobrowolski-scale.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.mem_biunitaryDivisors
 ---
 
-# Mem biunitary Divisors
+# Characterization of biunitary divisors
 
-Membership in the biunitary divisors: `d ∣ n`, `n ≠ 0` and `gcd₁(d, n / d) = 1`.
+**Characterization of biunitary divisors.** For natural numbers $n$ and $d$, $d$ is a biunitary
+divisor of $n$ if and only if $d$ divides $n$, $n \neq 0$ and $\gcd_1(d, n / d) = 1$, where
+$\gcd_1$ denotes the greatest common unitary divisor.
 
 ## Depends on
 
-- [Biunitary Divisors](biunitary-divisors.md)
-- [Gcd Unitary](gcd-unitary.md)
+- [Biunitary divisors](biunitary-divisors.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.dvd_of_mem_biunitaryDivisors
 ---
 
-# Dvd of mem biunitary Divisors
+# Biunitary divisors divide
 
-A biunitary divisor of `n` divides `n`.
+**Biunitary divisors divide.** For natural numbers $n$ and $d$, if $d$ is a biunitary
+divisor of $n$, then $d$ divides $n$.
 
 ## Depends on
 
-- [Biunitary Divisors](biunitary-divisors.md)
+- [Biunitary divisors](biunitary-divisors.md)
 
 ## Proof depends on
 
-- [Gcd Unitary](gcd-unitary.md)
-- [Mem biunitary Divisors](mem-biunitary-divisors.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
+- [Characterization of biunitary divisors](mem-biunitary-divisors.md)
 
 ## Sources
 

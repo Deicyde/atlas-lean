@@ -18,7 +18,7 @@ $\varphi$.
 - [Arcs of a variable diamond](../ham-path/diamond-edges.md)
 - [Arcs of the HAMPATH construction](../ham-path/ham-edges.md)
 - [Distinct variables of a formula](../ham-path/ham-vars.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

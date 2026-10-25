@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.le_gcdUnitary
 ---
 
-# Le gcd Unitary
+# Common unitary divisors are at most the greatest one
 
-Every common unitary divisor of `a` and `b` is at most `gcd₁(a, b)`.
+**Common unitary divisors are at most the greatest one.** For natural numbers $a$, $b$ and $d$,
+if $d$ is a unitary divisor of both $a$ and $b$, then $d \le \gcd_1(a, b)$, where $\gcd_1(a, b)$ is
+the greatest common unitary divisor of $a$ and $b$.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources

@@ -7,17 +7,19 @@ proof: formalized
 lean: EgyptianFraction.IsNondecreasingUnderapproximation.target_pos
 ---
 
-# Target pos
+# The target of a nondecreasing underapproximation is positive
 
-The target of a nondecreasing underapproximation is positive.
+**The target of a nondecreasing underapproximation is positive.** Let $n$ be a natural
+number, $\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$
+is a nondecreasing underapproximation of $\lambda$, then $\lambda > 0$.
 
 ## Depends on
 
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
 
 ## Sources
 

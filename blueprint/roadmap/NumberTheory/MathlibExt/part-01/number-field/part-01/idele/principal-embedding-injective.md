@@ -7,21 +7,24 @@ proof: formalized
 lean: NumberField.TopologicalIdeleGroup.principalEmbedding_injective
 ---
 
-# Principal Embedding injective
+# The diagonal map into the ideles is injective
 
-The diagonal map from the global multiplicative group into the ideles is injective.
+**The diagonal map into the ideles is injective.** Let $K$ be a number field and let $R$ be a
+Dedekind domain with fraction field $K$. The diagonal homomorphism from $K^\times$ to the
+topological idele group of $R$ and $K$, which sends $x$ to its images in the completions of $K$ at
+all infinite places of $K$ and at all height-one primes of $R$, is injective.
 
 ## Depends on
 
-- [Finite Idele Group](finite-idele-group.md)
-- [Infinite Idele Group](infinite-idele-group.md)
-- [Topological Idele Group](topological-idele-group.md)
-- [Principal Embedding](principal-embedding.md)
-- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+- [Finite idele group](finite-idele-group.md)
+- [Infinite idele group](infinite-idele-group.md)
+- [Topological idele group](topological-idele-group.md)
+- [Diagonal map into the ideles](principal-embedding.md)
+- [Local integral unit subgroup](local-integral-unit-subgroup.md)
 
 ## Proof depends on
 
-- [Units Equiv](units-equiv.md)
+- [Ideles as units of the adele ring](units-equiv.md)
 
 ## Sources
 

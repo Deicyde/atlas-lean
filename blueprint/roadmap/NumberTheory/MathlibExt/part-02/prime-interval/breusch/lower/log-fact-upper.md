@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log_fact_upper
 ---
 
-# Log fact upper
+# Upper bound for $\log N!$
 
-Log-factorial upper bound from Stirling.
+**Upper bound for $\log N!$.** For every natural number $N \ge 1$,
+$\log N! \le (N + 1) \log N - N + 1$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stirling upper](stirling-upper.md)
+- [Weak Stirling upper bound for factorials](stirling-upper.md)
 
 ## Sources
 

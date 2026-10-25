@@ -7,26 +7,31 @@ proof: formalized
 lean: NumberField.Modulus.restrictNormalHom_comp_artinMap
 ---
 
-# Restrict Normal Hom comp artin Map
+# The Artin map commutes with restriction
 
-Restriction of the `M`-Artin map agrees with the `L`-Artin map as bundled
-homomorphisms.
+**The Artin map commutes with restriction.** Let $K \subseteq L \subseteq M$ be a tower of
+number fields with $L/K$ and $M/K$ abelian Galois, and let $\mathfrak m$ be a modulus of $K$
+with finite part $\mathfrak m_0$ such that every prime of $\mathcal O_K$ not dividing
+$\mathfrak m_0$ is unramified in $L$ and in $M$. Then the Artin map of $M/K$ followed by
+restriction $\mathrm{Gal}(M/K) \to \mathrm{Gal}(L/K)$ equals the Artin map of $L/K$, as
+homomorphisms from the group of fractional ideals of $K$ coprime to $\mathfrak m_0$ to
+$\mathrm{Gal}(L/K)$.
 
 ## Depends on
 
-- [Is Unramified Outside](../frobenius-generators/is-unramified-outside.md)
-- [Artin Map](../artin-map/artin-map.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Extensions unramified outside a modulus](../frobenius-generators/is-unramified-outside.md)
+- [Artin map](../artin-map/artin-map.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Proof depends on
 
-- [Coprime Primes](../prime-generation/coprime-primes.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Free Group To Coprime](../prime-generation/free-group-to-coprime.md)
-- [Free Group To Coprime of](../prime-generation/free-group-to-coprime-of.md)
-- [Free Group To Coprime surjective](../prime-generation/free-group-to-coprime-surjective.md)
-- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
-- [Restrict Normal Hom artin Map prime Coprime Unit](restrict-normal-hom-artin-map-prime-copr.md)
+- [Primes coprime to a modulus](../prime-generation/coprime-primes.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [The free group on the coprime primes maps to the coprime ideals](../prime-generation/free-group-to-coprime.md)
+- [The free-group map on generators](../prime-generation/free-group-to-coprime-of.md)
+- [The free group on the coprime primes surjects onto the coprime ideals](../prime-generation/free-group-to-coprime-surjective.md)
+- [The prime as a coprime fractional ideal](../prime-generators/prime-coprime-unit.md)
+- [Restriction of the Artin map at a prime](restrict-normal-hom-artin-map-prime-copr.md)
 
 ## Sources
 

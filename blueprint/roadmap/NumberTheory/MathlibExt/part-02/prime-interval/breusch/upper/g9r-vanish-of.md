@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_vanish_of
 ---
 
-# G9r vanish of
+# The continuous Breusch function vanishes at small ratios
 
-`G9r (n / p ^ j)` vanishes for `p ^ j > 10 * Q9 * n`.
+**The continuous Breusch function vanishes at small ratios.** Let $p$ be a prime and let
+$n \ge 1$ and $j$ be natural numbers. If $p^j > 2100n$, then the continuous Breusch function
+$G$ satisfies $G(n/p^j) = 0$.
 
 ## Depends on
 
-- [G9r](g9r.md)
-- [Q9](../grid/q9.md)
+- [Continuous Breusch function](g9r.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [G9r vanish](g9r-vanish.md)
-- [Q9 pos](../lower/q9-pos.md)
+- [The continuous Breusch function vanishes near zero](g9r-vanish.md)
+- [Q₉ is positive](../lower/q9-pos.md)
 
 ## Sources
 

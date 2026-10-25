@@ -4,9 +4,9 @@ navigation: module
 
 # Dedekind Psi
 
-- [Dedekind Psi](dedekind-psi.md)
-- [Dedekind Psi eq prod factorization](dedekind-psi-eq-prod-factorization.md)
-- [Dedekind Psi prime pow](dedekind-psi-prime-pow.md)
-- [Is Multiplicative dedekind Psi](is-multiplicative-dedekind-psi.md)
-- [Dedekind Psi mul prod prime Factors](dedekind-psi-mul-prod-prime-factors.md)
-- [Dedekind Psi eq rational prod](dedekind-psi-eq-rational-prod.md)
+- [Dedekind psi function](dedekind-psi.md)
+- [Dedekind psi function as a product over prime powers](dedekind-psi-eq-prod-factorization.md)
+- [Dedekind psi function at prime powers](dedekind-psi-prime-pow.md)
+- [Multiplicativity of the Dedekind psi function](is-multiplicative-dedekind-psi.md)
+- [Cleared-denominator product formula for the Dedekind psi function](dedekind-psi-mul-prod-prime-factors.md)
+- [Product formula for the Dedekind psi function](dedekind-psi-eq-rational-prod.md)

@@ -7,18 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.entry9_P_closed
 ---
 
-# Entry9 P closed
+# Closed form of Ramanujan's product series off the poles
 
-Closed form of `entry9_P` off the poles: with `w = (z + a) / b` in the sector
-`|arg w| ≤ π - ε`, `‖w‖ > 0`, and no vanishing factor `w + (r + 1)`, the defining product
-series equals `Complex.exp (-x)` times the factorial-weighted series
-`∑' m, x^(m+1) / (m! * (z + (a + b * (m + 1))))`. The two exponential series multiplied in
-the proof are absolutely summable, so this is the source's value of the Entry 9(i)
-expression on this domain.
+**Closed form of Ramanujan's product series off the poles.** Let $a, b, x, z \in \mathbb{C}$
+with $b \neq 0$, let $0 < \varepsilon < \pi$, and put $w = (z + a)/b$. Suppose that $w \neq 0$,
+that $-\pi + \varepsilon \le \arg w \le \pi - \varepsilon$, and that $w + r + 1 \neq 0$ for every
+natural number $r$. Then Ramanujan's product series $P$ satisfies
+
+$$P(a, b, x; z) = e^{-x} \sum_{m=0}^{\infty} \frac{x^{m+1}}{m!\,(z + a + b(m + 1))}.$$
 
 ## Depends on
 
-- [Entry9 P](entry9-p.md)
+- [Ramanujan's product series](entry9-p.md)
 
 ## Sources
 

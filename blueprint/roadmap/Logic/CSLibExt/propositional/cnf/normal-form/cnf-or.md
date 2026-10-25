@@ -13,12 +13,12 @@ over the CNF built so far, whatever the nesting.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 
 ## Proof depends on
 
-- [Disj](disj.md)
-- [CNFClause](../basic/cnfclause.md)
+- [Disjunction of two CNFs](disj.md)
+- [CNF clause](../basic/cnfclause.md)
 
 ## Sources
 

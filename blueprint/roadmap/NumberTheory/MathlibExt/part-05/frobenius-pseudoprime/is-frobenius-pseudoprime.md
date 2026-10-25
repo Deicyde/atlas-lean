@@ -6,11 +6,13 @@ statement: formalized
 lean: Nat.IsFrobeniusPseudoprime
 ---
 
-# Is Frobenius Pseudoprime
+# Frobenius pseudoprime
 
-Frobenius pseudoprime (pseudo1.tex lines 763-768): a composite `n`
-that is a Frobenius probable prime with respect to the monic polynomial `f`.
-Composite is `¬ n.Prime` conjoined with the probable-prime `1 < n` clause.
+**Frobenius pseudoprime.** A natural number $n$ is a Frobenius pseudoprime with respect to a
+polynomial $f \in \mathbb{Z}[x]$ when $n$ is not prime and $n$ is a Frobenius probable prime with
+respect to $f$.
+
+Since a Frobenius probable prime exceeds $1$, such an $n$ is composite.
 
 ## Depends on
 
@@ -18,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FrobeniusPseudoprime](../../../../../sources/v2/MathlibExt.md)
+- pseudo1.tex lines 763-768.

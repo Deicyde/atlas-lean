@@ -6,11 +6,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimeDistribution.discrepancy
 ---
 
-# Discrepancy
+# Discrepancy in a residue class
 
-Signed residue discrepancy, normalized by the totient of a positive modulus over a
-characteristic-zero field, so the normalizing cast is nonzero. Only positive indices
-contribute. Modulus zero is unrepresentable: `q` ranges over `ℕ+`.
+**Discrepancy in a residue class.** Let $K$ be a field of characteristic zero, let
+$\alpha : \mathbb{N} \to K$ be finitely supported, let $q$ be a positive integer and let $a$ be a
+natural number. The discrepancy of $\alpha$ in the residue class of $a$ modulo $q$ is
+
+$$\Delta(\alpha; a \bmod q) = \sum_{\substack{n \ge 1 \\ n \equiv a \pmod{q}}} \alpha(n) -
+\frac{1}{\varphi(q)} \sum_{\substack{n \ge 1 \\ \gcd(n, q) = 1}} \alpha(n),$$
+
+where $\varphi$ is Euler's totient function. The value $\alpha(0)$ does not contribute.
 
 ## Depends on
 

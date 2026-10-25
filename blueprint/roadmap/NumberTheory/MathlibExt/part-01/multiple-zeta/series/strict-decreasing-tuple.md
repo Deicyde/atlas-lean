@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.StrictDecreasingTuple
 ---
 
-# Strict Decreasing Tuple
+# Strictly decreasing tuples
 
-Strictly decreasing tuples `m₀ > m₁ > ⋯` of positive natural numbers.
+**Strictly decreasing tuples.** For a natural number $r$, a strictly decreasing $r$-tuple is a
+tuple $(m_0, \dots, m_{r-1})$ of positive integers with $m_0 > m_1 > \dots > m_{r-1}$.
 
 ## Depends on
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Algebra.isTamelyRamifiedAt_iff
 ---
 
-# Is Tamely Ramified At iff
+# Characterization of tame ramification
 
-Unfolding of tame ramification into its two defining parts.
+**Characterization of tame ramification.** Let $R$ and $S$ be commutative rings with $S$ an
+$R$-algebra, and let $q$ be a prime ideal of $S$. Then $q$ is tamely ramified over $R$ if and only
+if $q$ is residue separable over $R$ and the characteristic of the residue field $\kappa(q)$ does
+not divide the ramification index of $q$ over $R$.
 
 ## Depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
 - [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources

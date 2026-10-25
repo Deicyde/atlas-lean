@@ -22,7 +22,7 @@ Lebesgue measure zero.
 ## Proof depends on
 
 - [Critical points of a map to Euclidean space](critical-set.md)
-- [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
+- [Sets with locally null image have null image](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources
 

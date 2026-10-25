@@ -5,6 +5,6 @@ navigation: module
 
 # Atomless
 
-- [Is Atomless](is-atomless.md)
-- [Is Atomless restrict](is-atomless-restrict.md)
-- [Is Atomless exists subset measure eq](is-atomless-exists-subset-measure-eq.md)
+- [Atomless measure](is-atomless.md)
+- [Restriction of an atomless measure](is-atomless-restrict.md)
+- [Sierpiński's theorem on atomless measures](is-atomless-exists-subset-measure-eq.md)

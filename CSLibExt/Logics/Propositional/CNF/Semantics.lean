@@ -28,7 +28,9 @@ namespace Cslib.Logic.PL
 
 namespace CNFLiteral
 
-/-- A literal is satisfied when the assignment gives its variable its recorded polarity. -/
+/-- **Satisfaction of a literal.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ satisfies a literal $(x, b)$, with variable $x \in \mathbb{N}$ and polarity
+$b \in \{\mathrm{true}, \mathrm{false}\}$, when $v(x) = b$. -/
 def Satisfies (assignment : Nat → Bool) (literal : Nat × Bool) : Prop :=
   assignment literal.1 = literal.2
 
@@ -94,7 +96,9 @@ theorem satisfies_append {assignment : Nat → Bool} {φ ψ : CNF} :
 
 end CNF
 
-/-- The named CNF semantics coincides with the pre-existing satisfiability predicate. -/
+/-- **Satisfiability means having a satisfying assignment.** A CNF formula $\varphi$ is
+satisfiable if and only if there is an assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ that satisfies $\varphi$. -/
 theorem cnfSat_iff_exists_satisfies {formula : CNF} :
     CNFSat formula ↔ ∃ assignment, formula.Satisfies assignment := by
   constructor

@@ -5,5 +5,5 @@ navigation: module
 
 # Weighted Fibonacci Binet
 
-- [Binet general](binet-general.md)
-- [Binet](binet.md)
+- [Binet asymptotics for weighted generalized Fibonacci sequences, positive-root form](binet-general.md)
+- [Binet asymptotics for weighted generalized Fibonacci sequences](binet.md)

@@ -8,23 +8,23 @@ navigation: module
 
 ## Soundness
 
-- [Soundness](sound.md)
+- [Soundness of first-order natural deduction](sound.md)
 
 ## Renaming and weakening
 
-- [Rename](rename.md)
-- [Relabel](relabel.md)
+- [Injective renaming preserves derivability](rename.md)
+- [Injective relabeling preserves derivability](relabel.md)
 - [Weakening](mono.md)
 
 ## Derived rules
 
 - [Cut](cut.md)
-- [Ex I](ex-i.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
+- [Existential introduction](ex-i.md)
+- [Symmetry of equality in natural deduction](symm.md)
+- [Transitivity of equality in natural deduction](trans.md)
 
 ## Theories
 
-- [Provable](provable.md)
+- [Provability from a set of formulas](provable.md)
 - [Soundness for theories](models.md)
 - [Consistency of the calculus](not-derivable-nil-bot.md)

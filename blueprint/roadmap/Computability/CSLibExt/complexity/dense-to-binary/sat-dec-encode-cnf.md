@@ -40,8 +40,8 @@ theorem conv_encodeCNF (φ : CNF) :
 
 - [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
 - [SAT as a decision problem](../../cook-levin/sat-dec.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
@@ -57,7 +57,7 @@ theorem conv_encodeCNF (φ : CNF) :
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
 - [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 

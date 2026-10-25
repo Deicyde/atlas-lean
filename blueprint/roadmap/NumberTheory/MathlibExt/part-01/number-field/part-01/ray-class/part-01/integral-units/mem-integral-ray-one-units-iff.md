@@ -7,23 +7,32 @@ proof: formalized
 lean: NumberField.Modulus.mem_integralRayOneUnits_iff
 ---
 
-# Mem integral Ray One Units iff
+# Membership in the ray-one integral units
 
-Membership in the ray-one unit subgroup is the ray-one property.
+**Membership in the ray-one integral units.** Let $\mathfrak m$ be a modulus of a number field
+$K$ with finite part $\mathfrak m_0$ and set of real places $\mathfrak m_\infty$, and for a nonzero
+prime $\mathfrak p$ of the ring of integers $\mathcal O_K$ write $v_{\mathfrak p}$ for the exponent
+of $\mathfrak p$ in a fractional ideal of $K$, applied to an element through its principal
+fractional ideal. A unit $u$ of $\mathcal O_K$ lies in the subgroup of ray-one integral units if
+and only if $u$, viewed as an element of $K^\times$, is a ray element congruent to $1$ modulo
+$\mathfrak m$: its principal fractional ideal is coprime to $\mathfrak m_0$, for every nonzero
+prime $\mathfrak p$ dividing $\mathfrak m_0$ either $u = 1$ or
+$v_{\mathfrak p}(u - 1) \ge v_{\mathfrak p}(\mathfrak m_0)$, and $u$ is positive under the real
+embedding of every place in $\mathfrak m_\infty$.
 
 ## Depends on
 
-- [Is Ray Element One](../../part-02/ray-group/is-ray-element-one.md)
-- [Integral Ray One Units](integral-ray-one-units.md)
-- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Elements congruent to one modulo a modulus](../../part-02/ray-group/is-ray-element-one.md)
+- [Ray-one integral units](integral-ray-one-units.md)
+- [Integral units as ray elements](integral-units-to-ray-elements.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
-- [Positive At Infinite Part](../../part-02/ray-group/positive-at-infinite-part.md)
-- [Mem ray One Elements iff](../../part-02/residue-sign/mem-ray-one-elements-iff.md)
-- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
+- [Multiplicative congruence to one at the finite part](../../part-02/ray-group/congruent-one-at-finite-part.md)
+- [Positivity at the infinite part of a modulus](../../part-02/ray-group/positive-at-infinite-part.md)
+- [Membership in the ray-one subgroup](../../part-02/residue-sign/mem-ray-one-elements-iff.md)
+- [Ray-one subgroup](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: CyclotomicField.intermediateFieldOfFinrank
 ---
 
-# Intermediate Field Of Finrank
+# The degree-$s$ subfield of the $p$-th cyclotomic field
 
-The unique degree-`s` intermediate field of the `p`-th cyclotomic field.
+**The degree-$s$ subfield of the $p$-th cyclotomic field.** For a prime $p$ and a natural
+number $s$ dividing $p - 1$, this is the unique intermediate field $K$ of the $p$-th cyclotomic
+field $\mathbb{Q}(\zeta_p)$ over $\mathbb{Q}$ with $[K : \mathbb{Q}] = s$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)
+- [Unique subfield of each degree in the $p$-th cyclotomic field](exists-unique-intermediate-field-finrank.md)
 
 ## Sources
 

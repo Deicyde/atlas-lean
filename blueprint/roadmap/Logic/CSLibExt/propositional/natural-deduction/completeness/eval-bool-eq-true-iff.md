@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.MaximalConsistent.evalBool_eq_true_iff
 ---
 
-# Truth lemma
+# Truth lemma for propositional natural deduction
 
-**Truth lemma**: the membership valuation of a maximal consistent set relative to an
-intuitionistic theory makes true exactly the members of the set.
+**Truth lemma for propositional natural deduction.** Let $T$ be an intuitionistic theory, that
+is, one that derives $\bot \to B$ for every proposition $B$. Let $M$ be a set of propositions that
+is consistent relative to $T$ and not properly contained in any other set consistent relative to
+$T$, and let $v_M$ be the valuation that makes an atom $x$ true exactly when the atomic
+proposition $x$ belongs to $M$. Then a proposition $A$ evaluates to true under $v_M$ iff
+$A \in M$.
 
 ## Depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 - [Consistent With](consistent-with.md)
 
 ## Proof depends on
 
-- [Mem of derivable In](mem-of-derivable-in.md)
-- [Mem or neg mem](mem-or-neg-mem.md)
+- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
+- [Each proposition or its negation lies in a maximal consistent set](mem-or-neg-mem.md)
 
 ## Sources
 

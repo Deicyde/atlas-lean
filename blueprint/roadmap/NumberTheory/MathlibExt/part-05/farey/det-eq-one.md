@@ -7,18 +7,20 @@ proof: formalized
 lean: Farey.IsFareyNeighbor.det_eq_one
 ---
 
-# Det eq one
+# Consecutive Farey fractions have determinant one
 
-Farey neighbors have determinant one.
+**Consecutive Farey fractions have determinant one.** Let $n$ be a natural number. If $x$ and
+$y$ are Farey neighbors of order $n$, written in lowest terms as $x = a/b$ and $y = c/d$ with
+$b, d > 0$, then $bc = ad + 1$.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
+- [Farey neighbors](is-farey-neighbor.md)
 
 ## Proof depends on
 
-- [Farey Finset](farey-finset.md)
-- [Mem farey Finset iff](mem-farey-finset-iff.md)
+- [Farey set](farey-finset.md)
+- [Membership in the Farey set](mem-farey-finset-iff.md)
 
 ## Sources
 

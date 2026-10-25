@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.generalizedPFibonacci_zero_one
 ---
 
-# Generalized PFibonacci zero one
+# $p$-Fibonacci numbers as a Lucas sequence
 
-The `p`-Fibonacci numbers (`(a, b) = (0, 1)`) are the Lucas sequence `U(p, -1)`.
+**$p$-Fibonacci numbers as a Lucas sequence.** For every integer $p$, the generalized
+Fibonacci sequence $W_{p,n}$ with initial values $a = 0$ and $b = 1$ (the $p$-Fibonacci numbers
+$F_{p,n}$) is the Lucas sequence $U(p, -1)$: $W_{p,n} = U_n(p, -1)$ for every natural number $n$.
 
 ## Depends on
 
 - [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Generalized PFibonacci](generalized-pfibonacci.md)
+- [Generalized $p$-Fibonacci sequence](generalized-pfibonacci.md)
 - [Lucas U](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources

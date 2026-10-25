@@ -21,7 +21,7 @@ This node has no prerequisites.
 - [A fixed HAMPATH no-instance](no-ham.md)
 - [Sipser's HAMPATH instance of a CNF formula](to-ham.md)
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

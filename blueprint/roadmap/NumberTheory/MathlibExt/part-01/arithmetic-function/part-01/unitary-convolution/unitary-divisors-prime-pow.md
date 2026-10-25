@@ -6,9 +6,11 @@ proof: formalized
 lean: Nat.unitaryDivisors_prime_pow
 ---
 
-# Unitary Divisors prime pow
+# Unitary divisors of a prime power
 
-The unitary divisors of a prime power `p ^ m` are `1` and `p ^ m`.
+**Unitary divisors of a prime power.** For every prime $p$ and every natural number $m$, the
+unitary divisors of $p^m$, that is, the divisors $d$ of $p^m$ with $\gcd(d, p^m/d) = 1$, are
+exactly $1$ and $p^m$.
 
 ## Depends on
 

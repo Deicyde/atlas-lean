@@ -16,8 +16,8 @@ nonsummable (there it is `0` by definition).
 
 ## Depends on
 
-- [Abel Continuation](abel-continuation.md)
-- [Abel Partial Sum](abel-partial-sum.md)
+- [Abel continuation of a Dirichlet series](abel-continuation.md)
+- [Partial sums of a coefficient sequence](abel-partial-sum.md)
 
 ## Sources
 

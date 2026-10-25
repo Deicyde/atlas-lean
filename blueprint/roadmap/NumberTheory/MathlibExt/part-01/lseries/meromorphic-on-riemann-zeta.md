@@ -7,9 +7,10 @@ proof: formalized
 lean: meromorphicOn_riemannZeta
 ---
 
-# Riemann Zeta
+# Meromorphy of the Riemann zeta function
 
-The Riemann zeta function is meromorphic on `ℂ`.
+**Meromorphy of the Riemann zeta function.** The Riemann zeta function $\zeta$ is
+meromorphic on all of $\mathbb{C}$.
 
 ## Depends on
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: RiemannXi.riemannXi_mem_strip
 ---
 
-# Riemann Xi mem strip
+# Zeros of the xi function lie in the critical strip
 
-Every zero of `ξ` lies in the open critical strip `0 < s.re < 1`.
+**Zeros of the xi function lie in the critical strip.** Let $\xi$ be the Riemann xi
+function. If $s$ is a complex number with $\xi(s) = 0$, then $0 < \operatorname{Re}(s) < 1$.
 
 ## Depends on
 
-- [Riemann Xi](riemann-xi.md)
+- [Riemann xi function](riemann-xi.md)
 
 ## Proof depends on
 
-- [Re lt one of riemann Xi eq zero](re-lt-one-of-riemann-xi-eq-zero.md)
-- [Re pos of riemann Xi eq zero](re-pos-of-riemann-xi-eq-zero.md)
+- [Zeros of the xi function have real part less than one](re-lt-one-of-riemann-xi-eq-zero.md)
+- [Zeros of the xi function have positive real part](re-pos-of-riemann-xi-eq-zero.md)
 
 ## Sources
 

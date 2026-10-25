@@ -7,22 +7,26 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_nu9term_eq
 ---
 
-# U9 nu9term eq
+# Valuation term of one binomial factor
 
-Single valuation term against the ratio factorization.
+**Valuation term of one binomial factor.** Let $Q = 210$, let $m \ge 1$ be a divisor of $Q$,
+let $w$ be an integer, and let $p$ and $n$ be natural numbers. Put $N = n \cdot (Q/m)$ and
+$R = (10N)!/((9N)!\,N!)$. For a natural number $a$, write $v_p(a)$ for the exponent of $p$ in
+the prime factorization of $a$ (zero when $p$ is not prime). Then
+$w \, (v_p((10N)!) - v_p((9N)!) - v_p(N!)) = w \, v_p(R)$.
 
 ## Depends on
 
-- [Q9](../grid/q9.md)
-- [Nu9term](nu9term.md)
-- [Ratio9](../lower/ratio9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [One divisor's contribution to the valuation](nu9term.md)
+- [Binomial factor ratio₉](../lower/ratio9.md)
 
 ## Proof depends on
 
-- [N10m](../lower/n10m.md)
-- [N1m](../lower/n1m.md)
-- [N9m](../lower/n9m.md)
-- [Vp ratio9](vp-ratio9.md)
+- [Scaled factorial argument $N_{10}$](../lower/n10m.md)
+- [Scaled factorial argument $N_1$](../lower/n1m.md)
+- [Scaled factorial argument N₉](../lower/n9m.md)
+- [Valuation of a factorial ratio as a difference of valuations](vp-ratio9.md)
 
 ## Sources
 

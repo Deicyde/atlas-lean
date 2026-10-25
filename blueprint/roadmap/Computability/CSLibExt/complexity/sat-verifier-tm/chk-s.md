@@ -17,7 +17,7 @@ empty.
 
 - [Stacks of the clause check](../sat-check/k.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

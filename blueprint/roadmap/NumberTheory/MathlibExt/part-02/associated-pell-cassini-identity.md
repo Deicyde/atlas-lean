@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.associated_pell_cassini_identity
 ---
 
-# Associated Pell Cassini
+# Cassini's identity for associated Pell numbers
 
-Cassini's identity for associated Pell numbers: for `Q` with `Q 0 = Q 1 = 1`
-and `Q (n + 2) = 2 * Q (n + 1) + Q n`, `Q (k-1) * Q (k+1)`
-equals `Q k ^ 2 + 2 * (-1) ^ (k-1)` for all `k ≥ 1`.
+**Cassini's identity for associated Pell numbers.** Let $(Q_n)_{n \ge 0}$ be a sequence of
+integers with $Q_0 = Q_1 = 1$ and $Q_{n+2} = 2Q_{n+1} + Q_n$ for every $n \ge 0$. Then for every
+natural number $k \ge 1$,
+
+$$Q_{k-1} Q_{k+1} = Q_k^2 + 2(-1)^{k-1}.$$
 
 ## Depends on
 

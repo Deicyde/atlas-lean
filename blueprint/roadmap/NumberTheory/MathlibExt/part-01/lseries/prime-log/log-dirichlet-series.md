@@ -6,9 +6,11 @@ statement: formalized
 lean: Nat.Primes.logDirichletSeries
 ---
 
-# Log Dirichlet Series
+# Prime logarithmic Dirichlet series
 
-The prime logarithmic Dirichlet series `Φ(s) = ∑_p log p / p ^ s`.
+**Prime logarithmic Dirichlet series.** For a complex number $s$, the prime logarithmic
+Dirichlet series is $\Phi(s) = \sum_{p} \frac{\log p}{p^s}$, summed over all primes $p$ (the sum
+is taken to be $0$ where the family is not summable).
 
 ## Depends on
 

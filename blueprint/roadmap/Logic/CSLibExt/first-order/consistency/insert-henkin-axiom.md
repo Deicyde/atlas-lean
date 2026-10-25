@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Logic.FOL.Consistent.insert_henkinAxiom
 ---
 
-# Insert henkin Axiom
+# Adding a Henkin axiom preserves consistency
 
-Adding a Henkin axiom with a fresh witness keeps a set consistent.
+**Adding a Henkin axiom preserves consistency.** Let $\alpha$ be an infinite set of
+variables and let $S$ be a consistent set of formulas with free variables in $\alpha$. Let
+$\varphi(x)$ be a formula with one bound variable $x$ left open, and let $c \in \alpha$ be a
+variable that occurs free neither in $\varphi$ nor in any formula of $S$. Then $S$ together
+with the Henkin axiom for $\forall x\, \varphi$ with witness $c$ is consistent.
 
 ## Depends on
 
 - [Consistent](consistent.md)
-- [Henkin Axiom](henkin-axiom.md)
+- [Henkin axiom](henkin-axiom.md)
 
 ## Proof depends on
 
 - [Natural deduction](../natural-deduction/derivable.md)
 - [Weakening](../natural-deduction/mono.md)
-- [Provable](../natural-deduction/provable.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Provable not iff not consistent insert](provable-not-iff-not-consistent-insert.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
+- [Refutability as inconsistency](provable-not-iff-not-consistent-insert.md)
 
 ## Sources
 

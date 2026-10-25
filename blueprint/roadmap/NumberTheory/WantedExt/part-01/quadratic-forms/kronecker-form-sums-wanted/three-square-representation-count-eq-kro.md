@@ -18,7 +18,7 @@ Gauss's formula for `r₃(n)` as reformulated by Aygin and Williams: writing
 - [Gauss Class Number](gauss-class-number.md)
 - [Kronecker Class Multiplier](kronecker-class-multiplier.md)
 - [Kronecker Discriminant](kronecker-discriminant.md)
-- [Three Square Representation Count](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
+- [Number of representations as a sum of three squares](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources
 

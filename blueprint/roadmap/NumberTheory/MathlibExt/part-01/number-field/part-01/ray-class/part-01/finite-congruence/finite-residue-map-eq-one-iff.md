@@ -7,24 +7,27 @@ proof: formalized
 lean: NumberField.Modulus.finiteResidueMap_eq_one_iff
 ---
 
-# Finite Residue Map eq one iff
+# Kernel criterion for the finite residue map
 
-The finite residue map is trivial exactly on the finite-part congruence.
+**Kernel criterion for the finite residue map.** Let $K$ be a number field and $\mathfrak m$ a
+modulus of $K$. A ray element $x$ of $\mathfrak m$ is sent to $1$ by the finite residue map of
+$\mathfrak m$ if and only if $x$ is congruent to $1$ at the finite part of $\mathfrak m$.
+
 Source (N406 §21.3): helper
 [`finitePartMapHom_ker_iff`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011).
 
 ## Depends on
 
-- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
-- [Finite Residue Map](finite-residue-map.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Multiplicative congruence to one at the finite part](../../part-02/ray-group/congruent-one-at-finite-part.md)
+- [Finite residue map](finite-residue-map.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Exists is Unit mod finite Part div eq](exists-is-unit-mod-finite-part-div-eq.md)
-- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
-- [Finite Residue Map apply of div eq](finite-residue-map-apply-of-div-eq.md)
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Coprime representation of ray elements](exists-is-unit-mod-finite-part-div-eq.md)
+- [Exponent of a modulus at a prime](../../part-02/ray-group/finite-exponent.md)
+- [Computing the finite residue map from a representation](finite-residue-map-apply-of-div-eq.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

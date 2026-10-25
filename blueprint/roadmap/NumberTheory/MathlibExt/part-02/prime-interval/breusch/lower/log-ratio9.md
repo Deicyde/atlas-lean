@@ -7,21 +7,24 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log_ratio9
 ---
 
-# Log ratio9
+# Logarithm of the binomial factor
 
-Logarithm of `ratio9` as a difference of log-factorials.
+**Logarithm of the binomial factor.** Let $m$ and $n$ be natural numbers with $n \ge 1$,
+$m \ge 1$ and $m \mid 210$, and put $k = 210/m$. Then
+
+$$\log \frac{(10nk)!}{(9nk)!\,(nk)!} = \log (10nk)! - \log (9nk)! - \log (nk)!.$$
 
 ## Depends on
 
-- [N10m](n10m.md)
-- [N1m](n1m.md)
-- [N9m](n9m.md)
-- [Q9](../grid/q9.md)
-- [Ratio9](ratio9.md)
+- [Scaled factorial argument $N_{10}$](n10m.md)
+- [Scaled factorial argument $N_1$](n1m.md)
+- [Scaled factorial argument N₉](n9m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
+- [Binomial factor ratio₉](ratio9.md)
 
 ## Proof depends on
 
-- [Ratio9 dvd](ratio9-dvd.md)
+- [Factorial divisibility behind ratio₉](ratio9-dvd.md)
 
 ## Sources
 

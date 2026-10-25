@@ -7,20 +7,23 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.sum_finrank_adicCompletion_placesOver
 ---
 
-# Sum finrank adic Completion places Over
+# Local degrees sum to the global degree
 
-The sum of local completion degrees over places above `v` is the global degree.
-This combines parts (4) and (5) of ATLAS N236, Theorem 11.23, for use in N265.
+**Local degrees sum to the global degree.** Let $L/K$ be an extension of number fields, $v$ a
+finite place of $K$ and $K_v$ the completion of $K$ at $v$; for each finite place $w$ of $L$ lying
+over $v$, let $L_w$ be the completion of $L$ at $w$, a $K_v$-algebra via the canonical map
+$K_v \to L_w$. Then $\sum_{w \mid v} [L_w : K_v] = [L : K]$.
 
 ## Depends on
 
-- [Places Over](../finite-places-over/places-over.md)
+- [Finite places lying over a finite place](../finite-places-over/places-over.md)
 
 ## Proof depends on
 
-- [Finite Lies Over Local Degree](../finrank-adic-completion-eq-ramification.md)
-- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
+- [The local degree is the product of ramification index and inertia degree](../finrank-adic-completion-eq-ramification.md)
+- [Places over a finite place correspond to primes over it](../finite-places-over/places-over-equiv-primes-over.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FinitePlacesOverTensorProductEquiv](../../../../../../../../sources/v2/MathlibExt.md)
+- ATLAS N236, Theorem 11.23, parts (4) and (5) combined; used in N265.

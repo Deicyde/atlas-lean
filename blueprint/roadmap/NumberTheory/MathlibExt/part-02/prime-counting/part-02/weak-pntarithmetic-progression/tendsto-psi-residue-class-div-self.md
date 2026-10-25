@@ -7,13 +7,17 @@ proof: formalized
 lean: Chebyshev.tendsto_psiResidueClass_div_self
 ---
 
-# Tendsto psi Residue Class div self
+# Prime number theorem for Chebyshev's function in a reduced residue class
 
-The real-variable prime number theorem in a residue class for `ψ`.
+**Prime number theorem for Chebyshev's function in a reduced residue class.** Let $q \ge 1$
+be an integer, let $b$ be a unit of $\mathbb{Z}/q\mathbb{Z}$, let $\Lambda$ be the von Mangoldt
+function and let $\varphi$ be Euler's totient function. For real $x$ let $\psi(x; q, b)$ be the
+sum of $\Lambda(n)$ over the integers $1 \le n \le x$ with $n \equiv b \pmod{q}$. Then
+$\psi(x; q, b)/x \to 1/\varphi(q)$ as the real number $x$ tends to infinity.
 
 ## Depends on
 
-- [Psi Residue Class](../residue-class-psi/psi-residue-class.md)
+- [Chebyshev's function in a residue class](../residue-class-psi/psi-residue-class.md)
 
 ## Proof depends on
 

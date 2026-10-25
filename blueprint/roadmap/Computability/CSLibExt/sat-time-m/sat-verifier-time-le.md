@@ -31,7 +31,7 @@ $n(n + 1) \le N(N + 1)$.
 - [The literal count is at most the code length](sum-length-le-encode-cnf-length.md)
 - [Occurrence list of a CNF formula](vars-of.md)
 - [Length of the occurrence list](vars-of-length.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Section 3 setting (`N` biunitary triperfect, `2^e ∥ N`, `3^f ∥ N`, `f ≥ 3`
 
 ## Depends on
 
-- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
+- [Biunitary divisor sum](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

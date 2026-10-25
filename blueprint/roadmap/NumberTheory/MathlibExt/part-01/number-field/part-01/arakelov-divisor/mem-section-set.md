@@ -7,15 +7,17 @@ proof: formalized
 lean: NumberField.ArakelovDivisor.mem_sectionSet
 ---
 
-# Mem section Set
+# Membership in the section set
 
-Membership in a section set unfolds to the ideal membership plus the
-archimedean bounds.
+**Membership in the section set.** Let $D$ be an Arakelov divisor of a number field $K$, with
+invertible fractional ideal $I$ and positive real number $r_w$ at each infinite place $w$ of $K$.
+An element $x \in K$ lies in the section set of $D$ if and only if $x \in I$ and
+$w(x) \le r_w$ for every infinite place $w$ of $K$.
 
 ## Depends on
 
-- [Arakelov Divisor](arakelov-divisor.md)
-- [Section Set](section-set.md)
+- [Arakelov divisor](arakelov-divisor.md)
+- [Section set of an Arakelov divisor](section-set.md)
 
 ## Sources
 

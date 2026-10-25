@@ -7,17 +7,18 @@ proof: formalized
 lean: realHilbertSymbol.eq_one_or_neg_one
 ---
 
-# Eq one or neg one
+# The real Hilbert symbol is $\pm 1$
 
-The real Hilbert symbol takes only the values one and negative one.
+**The real Hilbert symbol is $\pm 1$.** For nonzero real numbers $a$ and $b$, the real Hilbert
+symbol of $a$ and $b$ equals $1$ or $-1$.
 
 ## Depends on
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
+- [Real Hilbert symbol](real-hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Eq one or neg one](../../hilbert-symbol-2/eq-one-or-neg-one.md)
+- [The Hilbert symbol of a field is $\pm 1$](../../hilbert-symbol-2/eq-one-or-neg-one.md)
 
 ## Sources
 

@@ -7,11 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.primeCounting_le_half_add_one
 ---
 
-# Prime Counting le half add one
+# At most $\lfloor r/2 \rfloor + 1$ primes up to $r$
 
-A Mathlib-derived linear prime-counting bound.  This uses
-`Nat.primeCounting'_add_le` with modulus `2`, rather than reproving the odd-prime counting
-argument locally.
+**At most $\lfloor r/2 \rfloor + 1$ primes up to $r$.** For every natural number $r$, the
+number $\pi(r)$ of primes $p \le r$ satisfies $\pi(r) \le \lfloor r/2 \rfloor + 1$.
 
 ## Depends on
 

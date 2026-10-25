@@ -6,9 +6,11 @@ statement: formalized
 lean: NumberField.principalArch
 ---
 
-# Principal Arch
+# Archimedean part of a principal divisor
 
-The archimedean component of the principal divisor of a unit.
+**Archimedean part of a principal divisor.** For a nonzero element $x$ of a number field $K$,
+this is the family that assigns to each infinite place $w$ of $K$ the positive real
+number $w(x)$.
 
 ## Depends on
 

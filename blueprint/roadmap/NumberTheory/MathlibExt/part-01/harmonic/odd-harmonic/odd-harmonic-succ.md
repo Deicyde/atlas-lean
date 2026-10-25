@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.oddHarmonic_succ
 ---
 
-# Odd Harmonic succ
+# Recurrence for the odd harmonic numbers
 
-`O_{n+1} = O_n + 1/(2n+1)`.
+**Recurrence for the odd harmonic numbers.** For every natural number $n$, the odd harmonic
+numbers satisfy $O_{n+1} = O_n + \frac{1}{2n+1}$.
 
 ## Depends on
 
-- [Odd Harmonic](odd-harmonic.md)
+- [Odd harmonic numbers](odd-harmonic.md)
 
 ## Sources
 

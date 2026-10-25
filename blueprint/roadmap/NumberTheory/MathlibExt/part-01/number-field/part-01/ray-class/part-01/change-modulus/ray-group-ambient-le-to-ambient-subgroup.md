@@ -7,20 +7,22 @@ proof: formalized
 lean: NumberField.Modulus.CongruenceSubgroup.rayGroupAmbient_le_toAmbientSubgroup
 ---
 
-# Ray Group Ambient le to Ambient Subgroup
+# A congruence subgroup contains the ray group
 
-Ambient ray is contained in every congruence ambient subgroup.
+**A congruence subgroup contains the ray group.** Let $C$ be a congruence subgroup for a
+modulus $\mathfrak m$ of a number field $K$. Viewed as subgroups of the group of nonzero
+fractional ideals of $K$, the ray group of $\mathfrak m$ is contained in $C$.
 
 ## Depends on
 
-- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
-- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
-- [Ray Group Ambient](ray-group-ambient.md)
+- [Congruence subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [Congruence subgroup as a subgroup of all invertible fractional ideals](../congruence-subgroup/to-ambient-subgroup.md)
+- [Ray group among all fractional ideals](ray-group-ambient.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

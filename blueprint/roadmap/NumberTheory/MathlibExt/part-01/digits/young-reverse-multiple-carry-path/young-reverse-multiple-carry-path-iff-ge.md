@@ -7,13 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.young_reverse_multiple_carry_path_iff_general
 ---
 
-# Young reverse multiple carry path iff general
+# Carry equations for reverse multiples, general form
 
-Carry recurrence for reverse multiples, with only the hypotheses the
-argument uses: for `2 ≤ k < g` and little-endian base-`g` digits `a`, `k` times the number equals
-its digit reversal exactly when there is a unique carry sequence `r` with `r 0 = 0`, `r n = 0`,
-every carry below `k`, and the column equations. The digit length may be `0` and the end digits
-may vanish. `young_reverse_multiple_carry_path_iff` is the source-shaped form.
+**Carry equations for reverse multiples, general form.** Let $g, k, n$ be natural numbers
+with $2 \le k < g$, and let $a_0, \dots, a_{n-1}$ be natural numbers with $a_i < g$ for every $i$.
+Then $k \sum_{i\lt n} a_i g^i = \sum_{i\lt n} a_{n-1-i} g^i$ if and only if there is a unique sequence
+of natural numbers $r_0, \dots, r_n$ with $r_0 = 0$, $r_n = 0$ and, for every $i < n$,
+$r_{i+1} < k$ and $k a_i + r_i = a_{n-1-i} + r_{i+1} g$.
+
+No hypothesis is placed on $n$ or on the end digits $a_0$ and $a_{n-1}$; in particular $n$ may be
+$0$.
 
 ## Depends on
 

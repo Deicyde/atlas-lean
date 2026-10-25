@@ -5,5 +5,5 @@ navigation: module
 
 # Prime Gap Factorial
 
-- [Prime gap factorial general](prime-gap-factorial-general.md)
-- [Prime gap factorial](prime-gap-factorial.md)
+- [Prime gaps near $n!$, general form](prime-gap-factorial-general.md)
+- [Prime gaps near $n!$](prime-gap-factorial.md)

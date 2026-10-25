@@ -5,5 +5,5 @@ navigation: module
 
 # Stieltjes Matrix
 
-- [Stieltjes Matrix](stieltjes-matrix.md)
+- [Tridiagonal Stieltjes production matrix](stieltjes-matrix.md)
 - [Stieltjes Matrix Of](stieltjes-matrix-of.md)

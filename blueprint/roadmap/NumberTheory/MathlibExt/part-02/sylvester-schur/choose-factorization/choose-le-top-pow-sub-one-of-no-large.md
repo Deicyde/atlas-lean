@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.choose_le_top_pow_sub_one_of_no_large
 ---
 
-# Choose le top pow sub one of no large
+# Elementary power bound for binomial coefficients without large prime factors
 
-Replacing `Nat.primeCounting r` by the elementary bound `r - 1` gives a slightly coarser
-version of the preceding no-large-prime estimate.
+**Elementary power bound for binomial coefficients without large prime factors.** Let
+$0 < N$ and $2 \le r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$
+is at most $r$. Then $\binom{N}{r} \le N^{r-1}$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose le top pow prime Counting of no large](choose-le-top-pow-prime-counting-of-no-l.md)
-- [Prime Counting le sub one](../prime-counting/prime-counting-le-sub-one.md)
+- [Prime-counting bound for binomial coefficients without large prime factors](choose-le-top-pow-prime-counting-of-no-l.md)
+- [At most $r - 1$ primes up to $r$](../prime-counting/prime-counting-le-sub-one.md)
 
 ## Sources
 

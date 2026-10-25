@@ -7,18 +7,20 @@ proof: formalized
 lean: Nat.Primes.shiftedLogDirichletContinuation_analyticOn
 ---
 
-# Shifted Log Dirichlet Continuation analytic On
+# Holomorphy of the shifted continuation on the closed half-plane
 
-The shifted witness is analytic where 0 ≤ re s.
+**Holomorphy of the shifted continuation on the closed half-plane.** The shifted
+continuation $g_1$ is complex analytic at every point $s \in \mathbb{C}$ with
+$\operatorname{Re} s \ge 0$.
 
 ## Depends on
 
-- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+- [The shifted log-Dirichlet continuation](shifted-log-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
-- [Log Dirichlet Continuation analytic On](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-analytic-on.md)
+- [The canonical prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [Analyticity of the prime logarithmic continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-analytic-on.md)
 
 ## Sources
 

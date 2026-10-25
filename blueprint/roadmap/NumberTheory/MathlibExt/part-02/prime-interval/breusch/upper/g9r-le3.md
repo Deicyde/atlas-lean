@@ -7,20 +7,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_le3
 ---
 
-# G9r le3
+# The continuous Breusch function is at most 3
 
-Global bound `G9r x ≤ 3` for `x ≥ 0`.
+**The continuous Breusch function is at most 3.** For every real $x \ge 0$, the continuous
+Breusch function $G$ satisfies $G(x) \le 3$.
 
 ## Depends on
 
-- [G9r](g9r.md)
+- [Continuous Breusch function](g9r.md)
 
 ## Proof depends on
 
-- [G9](../grid/g9.md)
-- [G9 eq mod](g9-eq-mod.md)
-- [G9r eq grid](g9r-eq-grid.md)
-- [M9 le](../grid/m9-le.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
+- [$G_9$ depends only on the residue modulo $18900$](g9-eq-mod.md)
+- [The continuous Breusch function agrees with the grid function](g9r-eq-grid.md)
+- [Grid bound $G_9 \le 3$](../grid/m9-le.md)
 
 ## Sources
 

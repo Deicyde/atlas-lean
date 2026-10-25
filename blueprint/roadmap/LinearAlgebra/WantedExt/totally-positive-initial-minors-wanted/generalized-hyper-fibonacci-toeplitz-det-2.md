@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos_of_le
 ---
 
-# Generalized Hyper Fibonacci toeplitz det eventually pos of le
+# Eventual positivity of lower-order hyper-Fibonacci Toeplitz determinants
 
-For `r ≥ 1` and `1 ≤ m ≤ r + 1`, `det T_{m,n}^{(r)} > 0` for all sufficiently large `n`.
+**Eventual positivity of lower-order hyper-Fibonacci Toeplitz determinants.** Let $p, a, b$ be
+integers with $p \ge 1$, $a \ge 0$ and $b > 0$, and let $W^{(r)}_{p,n}$ denote the generalized
+hyper-Fibonacci numbers. For natural numbers $r$, $m$ and $n$ write $T^{(r)}_{m,n}$ for the
+$m \times m$ Toeplitz matrix with entry $W^{(r)}_{p,n+i-j}$ in row $i$ and column $j$
+($0 \le i, j < m$). If $r \ge 1$ and $1 \le m \le r + 1$, then there is a natural number $N$ such
+that $\det T^{(r)}_{m,n} > 0$ for every $n \ge N$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

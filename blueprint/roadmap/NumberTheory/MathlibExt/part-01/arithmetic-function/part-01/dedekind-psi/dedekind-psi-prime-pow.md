@@ -7,17 +7,18 @@ proof: formalized
 lean: ArithmeticFunction.dedekindPsi_prime_pow
 ---
 
-# Dedekind Psi prime pow
+# Dedekind psi function at prime powers
 
-For prime `p` and positive `k`, `ψ(p ^ k) = p ^ (k - 1) * (p + 1)`.
+**Dedekind psi function at prime powers.** For every prime $p$ and every natural number
+$k > 0$, the Dedekind psi function $\psi$ satisfies $\psi(p^k) = p^{k-1} (p + 1)$.
 
 ## Depends on
 
-- [Dedekind Psi](dedekind-psi.md)
+- [Dedekind psi function](dedekind-psi.md)
 
 ## Proof depends on
 
-- [Dedekind Psi eq prod factorization](dedekind-psi-eq-prod-factorization.md)
+- [Dedekind psi function as a product over prime powers](dedekind-psi-eq-prod-factorization.md)
 
 ## Sources
 

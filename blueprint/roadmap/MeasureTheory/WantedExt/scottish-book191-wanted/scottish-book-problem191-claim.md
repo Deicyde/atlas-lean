@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ScottishBook191Wanted.ScottishBookProblem191Claim
 ---
 
-# Scottish Book Problem191 Claim
+# The claim of Szpilrajn's Problem 191
 
-Szpilrajn's Problem 191 from the Scottish Book, in its original form:
-does every convex measure possess a base?
+**The claim of Szpilrajn's Problem 191.** The proposition, Szpilrajn's Problem 191 from the
+Scottish Book in its original form, that for every measurable space $X$, every convex measure
+$\mu$ on $X$ has a base, that is, some class $B$ of subsets of $X$ is a base of $\mu$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Base](is-base.md)
-- [Is Convex Measure](is-convex-measure.md)
+- [Base of a measure](is-base.md)
+- [Convex measure](is-convex-measure.md)
 
 ## Sources
 

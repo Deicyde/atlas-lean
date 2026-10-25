@@ -7,17 +7,18 @@ proof: formalized
 lean: realHilbertSymbol.eq_neg_one_iff_both_neg
 ---
 
-# Eq neg one iff both neg
+# Sign rule for the real Hilbert symbol
 
-The real Hilbert symbol is negative one exactly when both entries are negative.
+**Sign rule for the real Hilbert symbol.** For nonzero real numbers $a$ and $b$, the real
+Hilbert symbol of $a$ and $b$ equals $-1$ if and only if $a < 0$ and $b < 0$.
 
 ## Depends on
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
+- [Real Hilbert symbol](real-hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Eq neg one iff](eq-neg-one-iff.md)
+- [Real Hilbert symbol equal to $-1$](eq-neg-one-iff.md)
 
 ## Sources
 

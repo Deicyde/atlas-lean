@@ -6,12 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.IsRestrictedConsecutivePrimeBlock
 ---
 
-# Is Restricted Consecutive Prime Block
+# Restricted block of consecutive primes
 
-A contiguous block of primes whose entries all satisfy an additional predicate `P`.
+**Restricted block of consecutive primes.** Let $P$ be a predicate on natural numbers. A list
+$l$ of natural numbers is a block of consecutive primes restricted by $P$ when $l$ is a block of
+consecutive primes and every entry of $l$ satisfies $P$.
 
 This covers, for example, the factorial- and primorial-bounded blocks in the source papers by
-choosing the corresponding predicate `P`.
+choosing the corresponding predicate $P$.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Consecutive Prime Block](is-consecutive-prime-block.md)
+- [Block of consecutive primes](is-consecutive-prime-block.md)
 
 ## Sources
 

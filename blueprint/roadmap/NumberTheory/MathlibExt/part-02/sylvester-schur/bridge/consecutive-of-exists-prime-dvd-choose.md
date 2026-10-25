@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.consecutive_of_exists_prime_dvd_choose
 ---
 
-# Consecutive of exists prime dvd choose
+# From a large prime divisor of the binomial coefficient to one in the block
 
-A large prime divisor of the relevant binomial coefficient gives a large prime divisor in
-the consecutive block.
+**From a large prime divisor of the binomial coefficient to one in the block.** Let $n$ and
+$k$ be natural numbers. If some prime $p > n$ divides $\binom{k+n-1}{n}$, then some prime
+$p > n$ divides one of the integers $k + i$ with $0 \le i < n$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists dvd consecutive of prime dvd choose](exists-dvd-consecutive-of-prime-dvd-choo.md)
+- [Prime divisors of the block binomial coefficient divide a block term](exists-dvd-consecutive-of-prime-dvd-choo.md)
 
 ## Sources
 

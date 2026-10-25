@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.hasDistinctMultiplesInInterval_distinctMultiplesIntervalLength
 ---
 
-# Has Distinct Multiples In Interval distinct Multiples Interval Length
+# The least interval length is admissible
 
-`f(n, m)` is itself an admissible length.
+**The least interval length is admissible.** For natural numbers $n$ and $m$, let $f(n, m)$
+be the least natural number $L$ such that the interval $(m, m + L]$ contains distinct multiples
+of $1, \dots, n$. Then the interval $(m, m + f(n, m)]$ contains distinct multiples of
+$1, \dots, n$.
 
 ## Depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
-- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
+- [Least interval length containing distinct multiples](distinct-multiples-interval-length.md)
 
 ## Proof depends on
 
-- [Exists has Distinct Multiples In Interval](exists-has-distinct-multiples-in-interva.md)
+- [Some interval contains distinct multiples](exists-has-distinct-multiples-in-interva.md)
 
 ## Sources
 

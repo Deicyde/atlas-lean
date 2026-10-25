@@ -15,7 +15,7 @@ Gauss formula, residues 1,2,5,6 mod 8: `r₃(n) = 12 * H(4 * n)`.
 ## Depends on
 
 - [Hurwitz Class Number](hurwitz-class-number.md)
-- [Three Square Representation Count](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
+- [Number of representations as a sum of three squares](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources
 

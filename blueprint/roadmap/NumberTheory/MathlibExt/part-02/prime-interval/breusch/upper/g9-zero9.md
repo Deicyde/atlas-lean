@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_zero9
 ---
 
-# G9 zero9
+# The Breusch grid function vanishes below 9
 
-`G9` vanishes below `9`.
+**The Breusch grid function vanishes below 9.** For every natural number $j < 9$, the
+Breusch grid function $G_9$ satisfies $G_9(j) = 0$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
 
 ## Sources
 

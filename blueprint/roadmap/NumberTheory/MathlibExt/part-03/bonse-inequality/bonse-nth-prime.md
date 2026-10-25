@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.bonse_nth_prime
 ---
 
-# Bonse nth prime
+# The enumeration of the primes takes prime values
 
-Every indexed prime is prime and hence at least two.
+**The enumeration of the primes takes prime values.** For every $k \ge 1$, the $k$-th
+smallest prime number exists and is prime.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bonse primes infinite](bonse-primes-infinite.md)
+- [Infinitely many primes](bonse-primes-infinite.md)
 
 ## Sources
 

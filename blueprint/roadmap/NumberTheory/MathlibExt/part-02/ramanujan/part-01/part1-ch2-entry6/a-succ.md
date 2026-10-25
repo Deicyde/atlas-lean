@@ -13,7 +13,7 @@ The recurrence `A n (k + 1) = 3 * A n k + 1`.
 
 ## Depends on
 
-- [A](a.md)
+- [The tripling sequence of Ramanujan's Entry 6](a.md)
 
 ## Sources
 

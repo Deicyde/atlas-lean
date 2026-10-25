@@ -7,9 +7,12 @@ proof: formalized
 lean: Chebyshev.primeCounting_isEquivalent_of_theta_isEquivalent
 ---
 
-# Prime Counting is Equivalent of theta is Equivalent
+# Theta asymptotic implies the prime number theorem
 
-The prime number theorem follows from Chebyshev's estimate `θ(x) ~ x`.
+**Theta asymptotic implies the prime number theorem.** Let $\pi(x)$ be the number of primes
+$p \le x$ and let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. If
+$\theta(x) \sim x$ as the real number $x$ tends to $+\infty$, then $\pi(x) \sim x / \log x$ as
+$x \to +\infty$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Counting sub theta div log is Little O](prime-counting-sub-theta-div-log-is-litt.md)
+- [Prime counting versus theta over log](prime-counting-sub-theta-div-log-is-litt.md)
 
 ## Sources
 

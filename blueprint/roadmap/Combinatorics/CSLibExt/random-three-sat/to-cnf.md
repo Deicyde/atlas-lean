@@ -14,13 +14,13 @@ in this order.
 ## Depends on
 
 - [Formulas of the random 3-SAT model](formula.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [3-clause](clause.md)
 - [CNF clause of a random 3-SAT clause](to-cnfclause.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

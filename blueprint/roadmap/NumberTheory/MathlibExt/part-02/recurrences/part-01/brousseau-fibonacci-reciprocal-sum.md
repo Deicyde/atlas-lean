@@ -7,17 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.brousseau_fibonacci_reciprocal_sum
 ---
 
-# Brousseau Fibonacci Reciprocal
+# Brousseau's alternating series of reciprocal Fibonacci squares
 
-Brousseau's Formula (6): the `n = 1` specialization of equation `equ.l14z6cr`.
+**Brousseau's alternating series of reciprocal Fibonacci squares.** Let $F_n$ denote the
+Fibonacci numbers, with $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$. For every positive
+integer $q$, the real series
+$\sum_{k \ge 1} (-1)^{k-1} \frac{F_{2k+q}}{F_k^2 \, F_{k+q}^2}$ is unconditionally summable,
+with sum $\frac{1}{F_q} \sum_{k=1}^{q} \frac{(-1)^{k-1}}{F_k^2}$.
 
-Index translation: the source summation index `K ≥ 1` is represented by the Lean index
-`k = K - 1`, so the sign becomes `(-1)^k`, and `2K+q`, `F_K`, and `F_{K+q}` become
-`2 * (k + 1) + q`, `Nat.fib (k + 1)`, and `Nat.fib (k + 1 + q)` respectively. The finite
-sum remains over `1 ≤ k ≤ q`, so its natural subtraction `k - 1` is exact. At source
-parameter `n = 1`, the condition "`q` even or `nq` odd" is exhaustive for positive `q`,
-so no parity hypothesis remains.
-Proves `Wanted` entry `brousseau_fibonacci_reciprocal_sum`.
+Adegoke's generalization has a further integer parameter $n$ and assumes that $q$ is even or
+$nq$ is odd; this is its case $n = 1$, in which that assumption holds for every positive $q$.
 
 ## Depends on
 

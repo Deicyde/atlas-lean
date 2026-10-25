@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.IsSatakePair
 ---
 
-# Is Satake Pair
+# Satake pairs with a given local exponent
 
-A pair of complex numbers is in arithmetic Satake normalization with
-local exponent `t` at residue cardinality `N` when `|αβ| = 1` and the two
-magnitudes are `N^t` and `N^{-t}`.
+**Satake pairs with a given local exponent.** For real numbers $N$ and $t$, a pair
+$(\alpha, \beta)$ of complex numbers is in arithmetic Satake normalization with local exponent $t$
+at residue cardinality $N$ when $|\alpha\beta| = 1$, $|\alpha| = N^t$ and $|\beta| = N^{-t}$.
 
 ## Depends on
 

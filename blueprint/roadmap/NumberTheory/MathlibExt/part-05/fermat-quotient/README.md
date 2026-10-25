@@ -5,6 +5,6 @@ navigation: module
 
 # Fermat Quotient
 
-- [Fermat Quotient](fermat-quotient.md)
-- [Fermat Quotient eq](fermat-quotient-eq.md)
-- [Nat Cast mul fermat Quotient](nat-cast-mul-fermat-quotient.md)
+- [Fermat quotient](fermat-quotient.md)
+- [Formula for the Fermat quotient](fermat-quotient-eq.md)
+- [Fermat quotient times the prime](nat-cast-mul-fermat-quotient.md)

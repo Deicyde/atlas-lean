@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.isMultiplicative_multiplicativeOfPrimePowers
 ---
 
-# Is Multiplicative multiplicative Of Prime Powers
+# Multiplicativity of the function with prescribed prime-power values
 
-`multiplicativeOfPrimePowers g` is multiplicative.
+**Multiplicativity of the function with prescribed prime-power values.** Let $R$ be a
+commutative monoid with zero and $g : \mathbb{N} \to R$. The arithmetic function
+$n \mapsto \prod_{q \mid n} g(v_q(n))$ for $n \ge 1$, where $q$ runs over the primes dividing $n$
+and $v_q(n)$ is the exponent of $q$ in $n$, is multiplicative.
 
 ## Depends on
 
-- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
+- [Multiplicative function with prescribed values at prime powers](multiplicative-of-prime-powers.md)
 
 ## Proof depends on
 
-- [Multiplicative Of Prime Powers apply](multiplicative-of-prime-powers-apply.md)
-- [Multiplicative Of Prime Powers one](multiplicative-of-prime-powers-one.md)
+- [Value of the function with prescribed prime-power values](multiplicative-of-prime-powers-apply.md)
+- [The function with prescribed prime-power values is $1$ at $1$](multiplicative-of-prime-powers-one.md)
 
 ## Sources
 

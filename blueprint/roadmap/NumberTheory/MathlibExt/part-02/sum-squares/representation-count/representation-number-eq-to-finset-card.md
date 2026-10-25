@@ -7,15 +7,17 @@ proof: formalized
 lean: SumSquares.representationNumber_eq_toFinset_card
 ---
 
-# Representation Number eq to Finset card
+# The representation number counts a finite set
 
-The representation number is the cardinality of the finite solution set.
+**The representation number counts a finite set.** For all natural numbers $k$ and $n$, the
+representation number $r_k(n)$ equals the number of elements of the finite solution set of
+integer vectors $(x_1, \dots, x_k) \in \mathbb{Z}^k$ with $x_1^2 + \cdots + x_k^2 = n$.
 
 ## Depends on
 
-- [Representation Number](representation-number.md)
-- [Solutions](solutions.md)
-- [Solutions finite](solutions-finite.md)
+- [Representation numbers of sums of squares](representation-number.md)
+- [Integer solutions of a sum of squares](solutions.md)
+- [Finitely many representations as a sum of squares](solutions-finite.md)
 
 ## Sources
 

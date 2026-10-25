@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.starSummand_toWeaklyDecreasing
 ---
 
-# Star Summand to Weakly Decreasing
+# Star and strict summands agree on strictly decreasing tuples
 
-Passing a strict tuple to the star summand recovers the strict summand.
+**Star and strict summands agree on strictly decreasing tuples.** For a multiple-zeta index
+$k$ of depth $d$ and a strictly decreasing tuple $m$ of $d$ positive natural numbers, the star
+summand of $k$ at $m$, with $m$ regarded as a weakly decreasing tuple, equals the strict summand
+of $k$ at $m$.
 
 ## Depends on
 
-- [Index](../index/index.md)
-- [Depth](../index/depth.md)
-- [Strict Decreasing Tuple](strict-decreasing-tuple.md)
-- [To Weakly Decreasing](to-weakly-decreasing.md)
-- [Star Summand](star-summand.md)
-- [Strict Summand](strict-summand.md)
+- [Multiple-zeta index](../index/index.md)
+- [Depth of an index](../index/depth.md)
+- [Strictly decreasing tuples](strict-decreasing-tuple.md)
+- [Strictly decreasing tuples as weakly decreasing tuples](to-weakly-decreasing.md)
+- [Multiple-zeta-star summand](star-summand.md)
+- [Multiple zeta summand](strict-summand.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: Nat.odd_card_divisors_iff_isSquare
 ---
 
-# Odd card divisors iff is Square
+# Squares are exactly the numbers with an odd number of divisors
 
-A nonzero natural number has an odd number of divisors exactly when it is a square.
+**Squares are exactly the numbers with an odd number of divisors.** A nonzero natural number
+$u$ has an odd number of positive divisors if and only if $u$ is a perfect square.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Even card of involution](even-card-of-involution.md)
-- [Even card divisors of not is Square](even-card-divisors-of-not-is-square.md)
+- [A fixed-point-free involution forces even cardinality](even-card-of-involution.md)
+- [A nonsquare has an even number of divisors](even-card-divisors-of-not-is-square.md)
 
 ## Sources
 

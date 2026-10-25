@@ -13,11 +13,11 @@ empty interval `(m, m]` contains nothing.
 
 ## Depends on
 
-- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+- [Least interval length containing distinct multiples](distinct-multiples-interval-length.md)
 
 ## Proof depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

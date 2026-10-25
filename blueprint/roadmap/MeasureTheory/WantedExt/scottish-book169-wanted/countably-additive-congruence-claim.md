@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Congruence Invariant](is-congruence-invariant.md)
+- [Congruence-invariant set functions on the plane](is-congruence-invariant.md)
 - [Is Countably Additive](is-countably-additive.md)
 
 ## Sources

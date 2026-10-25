@@ -31,7 +31,7 @@ $n$ and has a value, or false if there is no such entry.
 - [Clause check against an occurrence table](../sat-verifier-spec/check-spec.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -42,7 +42,7 @@ $n$ and has a value, or false if there is no such entry.
 - [Tokens of a clause](../sat-verifier-spec/clause-toks.md)
 - [Tokens of a literal](../sat-verifier-spec/lit-toks.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

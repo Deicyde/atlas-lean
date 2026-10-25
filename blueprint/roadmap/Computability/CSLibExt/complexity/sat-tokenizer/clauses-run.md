@@ -33,8 +33,8 @@ the table stack of the occurrence table of $N$ against $w$.
 - [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

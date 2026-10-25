@@ -7,9 +7,12 @@ proof: formalized
 lean: Chebyshev.primeCounting_isEquivalent_iff_theta_isEquivalent
 ---
 
-# Prime Counting is Equivalent iff theta is Equivalent
+# Prime number theorem is equivalent to the theta asymptotic
 
-The prime number theorem `π(x) ~ x / log x` holds iff `θ(x) ~ x`.
+**Prime number theorem is equivalent to the theta asymptotic.** Let $\pi(x)$ be the number of
+primes $p \le x$ and let $\theta(x) = \sum_{p \le x} \log p$ be Chebyshev's theta function, the
+sum running over primes. Then, as the real number $x$ tends to $+\infty$, $\pi(x) \sim x / \log x$
+holds if and only if $\theta(x) \sim x$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Counting is Equivalent of theta is Equivalent](prime-counting-is-equivalent-of-theta-is.md)
-- [Theta is Equivalent of prime Counting is Equivalent](theta-is-equivalent-of-prime-counting-is.md)
+- [Theta asymptotic implies the prime number theorem](prime-counting-is-equivalent-of-theta-is.md)
+- [Prime number theorem implies the theta asymptotic](theta-is-equivalent-of-prime-counting-is.md)
 
 ## Sources
 

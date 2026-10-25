@@ -13,7 +13,7 @@ Successive entries of the prime enumeration are genuinely consecutive primes.
 
 ## Depends on
 
-- [Are Consecutive Primes](../../part-04/consecutive-prime/are-consecutive-primes.md)
+- [Consecutive primes](../../part-04/consecutive-prime/are-consecutive-primes.md)
 
 ## Sources
 

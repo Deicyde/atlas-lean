@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Logic.PL.MaximalConsistent.subset_theory
 ---
 
-# Subset theory
+# A maximal consistent set contains its theory
 
-Every axiom of `T` belongs to a maximal `T`-consistent set.
+**A maximal consistent set contains its theory.** Let $T$ be a theory and $M$ a maximal set of
+propositions consistent relative to $T$. Then every proposition of $T$ belongs to $M$, that is,
+$T \subseteq M$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ Every axiom of `T` belongs to a maximal `T`-consistent set.
 
 ## Proof depends on
 
-- [Mem of derivable In](mem-of-derivable-in.md)
+- [Maximal consistent sets are deductively closed](mem-of-derivable-in.md)
 
 ## Sources
 

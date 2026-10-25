@@ -7,19 +7,24 @@ proof: formalized
 lean: discr_mem_extensionDiscriminant
 ---
 
-# Discr mem extension Discriminant
+# Discriminants of tuples from $B$ lie in the extension discriminant
 
-The discriminant of a tuple from imageOfB belongs to the extension discriminant.
+**Discriminants of tuples from $B$ lie in the extension discriminant.** Let $A$ and $B$ be
+commutative rings and $K$ and $L$ fields with $L$ finite-dimensional over $K$, with algebra maps
+forming scalar towers $A \to K \to L$ and $A \to B \to L$, and let $n = [L : K]$. If
+$b_1, \dots, b_n \in L$ all lie in the image of $B$ in $L$, then their discriminant
+$\operatorname{disc}_{L/K}(b_1, \dots, b_n)$ lies in the extension discriminant of the tower,
+an $A$-submodule of $K$.
 
 ## Depends on
 
-- [Extension Discriminant](extension-discriminant.md)
-- [Image Of B](image-of-b.md)
+- [Extension discriminant](extension-discriminant.md)
+- [Image of $B$ in $L$](image-of-b.md)
 
 ## Proof depends on
 
-- [Lattice Discriminant](../lattice-discriminant/lattice-discriminant.md)
-- [Lattice Discriminant Set](../lattice-discriminant/lattice-discriminant-set.md)
+- [Discriminant of a lattice](../lattice-discriminant/lattice-discriminant.md)
+- [Discriminants of tuples from a submodule](../lattice-discriminant/lattice-discriminant-set.md)
 
 ## Sources
 

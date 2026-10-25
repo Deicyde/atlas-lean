@@ -6,19 +6,21 @@ statement: formalized
 lean: NumberField.Modulus.evalComplex
 ---
 
-# Eval Complex
+# Complex value of a ray class character
 
-Complex-valued evaluation of a ray class character.
+**Complex value of a ray class character.** For a ray class character $\chi$ of a modulus $m$
+and a ray class $x$ of $m$, the complex value of $\chi$ at $x$ is $\chi(x)$, a point of the unit
+circle, regarded as a complex number.
 
 ## Depends on
 
-- [Ray Class Character](ray-class-character.md)
-- [Ray Class Group](../group/ray-class-group.md)
+- [Ray class character](ray-class-character.md)
+- [Ray class group](../group/ray-class-group.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

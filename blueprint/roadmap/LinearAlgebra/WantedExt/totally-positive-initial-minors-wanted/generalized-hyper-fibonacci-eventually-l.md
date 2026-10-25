@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_eventually_logConcave
 ---
 
-# Generalized Hyper Fibonacci eventually log Concave
+# Eventual log-concavity of generalized hyper-Fibonacci numbers
 
-For `r ≥ 1`, `(W_{p,n}^{(r)})_n` is eventually log-concave: for all large `n` the terms
-are positive and `W_{p,n}^{(r)} W_{p,n+2}^{(r)} ≤ (W_{p,n+1}^{(r)})²`.
+**Eventual log-concavity of generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers
+with $p \ge 1$, $a \ge 0$ and $b > 0$, let $W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci
+numbers, and let $r \ge 1$ be a natural number. Then there is a natural number $N$ such that for
+every $n \ge N$ we have $W^{(r)}_{p,n} > 0$ and
+$W^{(r)}_{p,n} W^{(r)}_{p,n+2} \le (W^{(r)}_{p,n+1})^2$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

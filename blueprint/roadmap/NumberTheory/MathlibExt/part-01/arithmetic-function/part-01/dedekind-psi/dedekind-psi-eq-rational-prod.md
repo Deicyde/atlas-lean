@@ -7,17 +7,24 @@ proof: formalized
 lean: ArithmeticFunction.dedekindPsi_eq_rational_prod
 ---
 
-# Dedekind Psi eq rational prod
+# Product formula for the Dedekind psi function
 
-Rational product formula for the Dedekind psi function on nonzero inputs.
+**Product formula for the Dedekind psi function.** For every natural number $n \ne 0$, the
+Dedekind psi function $\psi$ satisfies, as an identity of rational numbers,
+
+$$
+\psi(n) = n \prod_{p \mid n} \Bigl(1 + \frac{1}{p}\Bigr),
+$$
+
+the product running over the prime divisors $p$ of $n$.
 
 ## Depends on
 
-- [Dedekind Psi](dedekind-psi.md)
+- [Dedekind psi function](dedekind-psi.md)
 
 ## Proof depends on
 
-- [Dedekind Psi mul prod prime Factors](dedekind-psi-mul-prod-prime-factors.md)
+- [Cleared-denominator product formula for the Dedekind psi function](dedekind-psi-mul-prod-prime-factors.md)
 
 ## Sources
 

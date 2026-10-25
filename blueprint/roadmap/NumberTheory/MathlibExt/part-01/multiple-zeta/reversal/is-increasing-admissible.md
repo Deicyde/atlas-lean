@@ -6,19 +6,24 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.IsIncreasingAdmissible
 ---
 
-# Is Increasing Admissible
+# Admissibility in the increasing convention
 
-Admissibility in the increasing convention: the last exponent is at least two.
+**Admissibility in the increasing convention.** An index $(k_0, \dots, k_{d-1})$ is
+admissible in the increasing convention when its list of entries read in reverse order,
+$(k_{d-1}, \dots, k_0)$, is admissible: it is nonempty, its first element $k_{d-1}$ is at least
+two, and its other elements are positive. Since the entries of an index are positive, this says
+that the index is nonempty and its last entry is at least two.
+
 This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Proof depends on
 
-- [Entries](../index/entries.md)
-- [Is Admissible](../index/is-admissible-2.md)
+- [Entries of an index](../index/entries.md)
+- [Admissible list](../index/is-admissible-2.md)
 
 ## Sources
 

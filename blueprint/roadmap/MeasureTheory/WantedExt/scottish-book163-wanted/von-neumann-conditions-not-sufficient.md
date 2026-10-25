@@ -5,19 +5,19 @@ statement: formalized
 lean: MathlibExt.MeasureTheory.ScottishBook163Wanted.vonNeumannConditionsNotSufficient
 ---
 
-# Von Neumann Conditions Not Sufficient
+# Von Neumann's conditions do not guarantee a measure
 
-Conditions (5) and (6) together are NOT sufficient for a measure to exist:
-there is a complete Boolean algebra satisfying the countable chain condition
-and the generalized distributivity law which carries no measure in von
-Neumann's sense. This decides the question of Problem 163 in the negative, in
-its stated form. The typescript's complement clause prints its two constants
-swapped relative to its own usage elsewhere; it is normalized here to the
-standard complement laws (bottom `⊥`, top `⊤`).
+**Von Neumann's conditions do not guarantee a measure.** There is a complete Boolean algebra that
+satisfies the countable chain condition and the generalized distributivity law but carries no
+measure in von Neumann's sense; that is, von Neumann's sufficiency claim is false. This answers
+Problem 163 of the Scottish Book in the negative, in its stated form.
+
+The typescript's complement clause prints its two constants swapped relative to its own usage
+elsewhere; it is read here as the standard complement laws, with bottom $\bot$ and top $\top$.
 
 ## Depends on
 
-- [Von Neumann Sufficiency Claim](von-neumann-sufficiency-claim.md)
+- [Von Neumann's sufficiency claim](von-neumann-sufficiency-claim.md)
 
 ## Sources
 

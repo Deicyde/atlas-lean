@@ -5,6 +5,6 @@ navigation: module
 
 # Power Bounds
 
-- [Self le four pow div one twenty eight add one](self-le-four-pow-div-one-twenty-eight-ad.md)
-- [Two pow nineteen mul div twelve le three pow](two-pow-nineteen-mul-div-twelve-le-three.md)
-- [Four pow mul two pow mul four pow lt three pow mul four pow](four-pow-mul-two-pow-mul-four-pow-lt-thr.md)
+- [A linear bound by a power of four](self-le-four-pow-div-one-twenty-eight-ad.md)
+- [Powers of two against powers of three](two-pow-nineteen-mul-div-twelve-le-three.md)
+- [A power comparison for the central-offset estimate](four-pow-mul-two-pow-mul-four-pow-lt-thr.md)

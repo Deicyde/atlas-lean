@@ -7,9 +7,12 @@ proof: formalized
 lean: Algebra.isTamelyRamifiedAt_of_isUnramifiedAt
 ---
 
-# Is Tamely Ramified At of is Unramified At
+# Unramified primes are tamely ramified
 
-An unramified prime is tamely ramified.
+**Unramified primes are tamely ramified.** Let $R$ and $S$ be commutative rings with $S$ an
+$R$-algebra that is essentially of finite type, and let $q$ be a prime ideal of $S$ at which $S$ is
+unramified over $R$, that is, the localization $S_q$ is formally unramified over $R$. Then $q$ is
+tamely ramified over $R$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ An unramified prime is tamely ramified.
 
 ## Proof depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
-- [Is Residue Separable At of is Unramified At](is-residue-separable-at-of-is-unramified.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
+- [Unramified primes are residue separable](is-residue-separable-at-of-is-unramified.md)
 
 ## Sources
 

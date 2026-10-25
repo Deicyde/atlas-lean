@@ -14,8 +14,8 @@ Walking a non-empty clause from its last literal produces `chain`.
 
 - [Output clauses of a walked list of literals](walk-f.md)
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

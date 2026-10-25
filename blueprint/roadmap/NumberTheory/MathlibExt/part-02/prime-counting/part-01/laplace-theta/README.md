@@ -5,7 +5,7 @@ navigation: module
 
 # Laplace Theta
 
-- [Prime Log Series](prime-log-series.md)
-- [Laplace theta exp eq prime Log Series div](laplace-theta-exp-eq-prime-log-series-di.md)
-- [Has Laplace theta exp](has-laplace-theta-exp.md)
-- [Differentiable On laplace theta exp](differentiable-on-laplace-theta-exp.md)
+- [The prime logarithm series](prime-log-series.md)
+- [Laplace transform of $\theta(e^t)$](laplace-theta-exp-eq-prime-log-series-di.md)
+- [Convergence of the Laplace transform of $\theta(e^t)$](has-laplace-theta-exp.md)
+- [Holomorphy of the Laplace transform of $\theta(e^t)$](differentiable-on-laplace-theta-exp.md)

@@ -7,13 +7,15 @@ proof: formalized
 lean: Int.fermatQuotient_eq
 ---
 
-# Fermat Quotient eq
+# Formula for the Fermat quotient
 
-Evaluation formula for the Fermat quotient.
+**Formula for the Fermat quotient.** For a prime $p$ and an integer $a$ coprime to $p$, the
+Fermat quotient satisfies $q_p(a) = (a^{p-1} - 1)/p$, where $/$ is integer division rounding
+down.
 
 ## Depends on
 
-- [Fermat Quotient](fermat-quotient.md)
+- [Fermat quotient](fermat-quotient.md)
 
 ## Sources
 

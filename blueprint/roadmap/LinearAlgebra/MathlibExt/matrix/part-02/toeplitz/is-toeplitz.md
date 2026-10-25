@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsSymmetricToeplitzMatrix.isToeplitz
 ---
 
-# Is Toeplitz
+# Symmetric Toeplitz matrices are Toeplitz
 
-Every symmetric Toeplitz matrix is Toeplitz (forget the symmetry).
+**Symmetric Toeplitz matrices are Toeplitz.** Every real $(n+1) \times (n+1)$ symmetric
+Toeplitz matrix is a Toeplitz matrix.
 
 ## Depends on
 
-- [Is Symmetric Toeplitz Matrix](is-symmetric-toeplitz-matrix.md)
-- [Is Toeplitz Matrix](is-toeplitz-matrix.md)
+- [Symmetric Toeplitz matrix](is-symmetric-toeplitz-matrix.md)
+- [Toeplitz matrix](is-toeplitz-matrix.md)
 
 ## Sources
 

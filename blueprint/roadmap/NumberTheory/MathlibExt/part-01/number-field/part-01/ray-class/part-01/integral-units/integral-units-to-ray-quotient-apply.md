@@ -7,16 +7,21 @@ proof: formalized
 lean: NumberField.Modulus.integralUnitsToRayQuotient_apply
 ---
 
-# Integral Units To Ray Quotient apply
+# Value of the ray-quotient map on integral units
 
-The quotient map evaluated on an integral unit.
+**Value of the ray-quotient map on integral units.** Let $\mathfrak m$ be a modulus of a
+number field $K$, let $K_{\mathfrak m} \le K^\times$ be the group of ray elements (elements whose
+principal fractional ideal is coprime to the finite part of $\mathfrak m$) and let
+$K_{\mathfrak m,1} \le K_{\mathfrak m}$ be the ray-one subgroup. For every unit $u$ of the ring of
+integers $\mathcal O_K$, the map $\mathcal O_K^\times \to K_{\mathfrak m}/K_{\mathfrak m,1}$ sends
+$u$ to the coset of $u$, viewed as an element of $K_{\mathfrak m}$.
 
 ## Depends on
 
-- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
-- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
-- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
+- [Integral units as ray elements](integral-units-to-ray-elements.md)
+- [Map from integral units to the ray quotient](integral-units-to-ray-quotient.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
+- [Ray-one subgroup](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Sources
 

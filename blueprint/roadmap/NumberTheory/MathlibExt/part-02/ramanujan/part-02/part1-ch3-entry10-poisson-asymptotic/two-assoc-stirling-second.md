@@ -6,12 +6,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry10PoissonAsymptotic.twoAssocStirlingSecond
 ---
 
-# Two Assoc Stirling Second
+# 2-associated Stirling numbers in Ramanujan's Entry 10
 
-The 2-associated Stirling number of the second kind: the number of partitions of an
-`n`-element set into `k` blocks, each containing at least two elements.
-It is kept as written because the Entry 10 statement refers to it, and it agrees with
-`MetaMathlibExt.twoAssocStirlingSecond` by `twoAssocStirlingSecond_eq_canonical`.
+**2-associated Stirling numbers in Ramanujan's Entry 10.** For natural numbers $n$ and $k$,
+$S_2(n, k)$ is the integer $\sum_{j=0}^{k} (-1)^j \binom{n}{j} S(n - j, k - j)$, where $S$
+denotes the Stirling numbers of the second kind.
+
+$S_2(n, k)$ is the number of partitions of an $n$-element set into $k$ blocks, each containing at
+least two elements.
 
 ## Depends on
 

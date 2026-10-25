@@ -7,17 +7,18 @@ proof: formalized
 lean: ArithmeticFunction.jordanTotient_prime
 ---
 
-# Jordan Totient prime
+# Jordan's totient at primes
 
-Value at primes: `J_k(p) = p^k - 1`.
+**Jordan's totient at primes.** For every natural number $k$ and every prime $p$, the Jordan
+totient function satisfies $J_k(p) = p^k - 1$.
 
 ## Depends on
 
-- [Jordan Totient](jordan-totient.md)
+- [Jordan's totient function](jordan-totient.md)
 
 ## Proof depends on
 
-- [Jordan Totient prime pow](jordan-totient-prime-pow.md)
+- [Jordan's totient at prime powers](jordan-totient-prime-pow.md)
 
 ## Sources
 

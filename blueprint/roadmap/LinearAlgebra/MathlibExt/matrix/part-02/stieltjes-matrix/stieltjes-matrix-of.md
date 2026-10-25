@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stieltjes Matrix](stieltjes-matrix.md)
+- [Tridiagonal Stieltjes production matrix](stieltjes-matrix.md)
 
 ## Sources
 

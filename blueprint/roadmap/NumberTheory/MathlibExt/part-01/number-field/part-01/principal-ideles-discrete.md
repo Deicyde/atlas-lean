@@ -7,24 +7,27 @@ proof: formalized
 lean: NumberField.TopologicalIdeleGroup.principalIdeles_discrete
 ---
 
-# Principal Idele
+# The principal ideles are discrete
 
-The principal ideles of a number field form a discrete subgroup of its idele group.
+**The principal ideles are discrete.** For a number field $K$, the subgroup of principal
+ideles is discrete in the idele group of $K$, where the idele group carries the product of the
+product topology at the infinite places and the restricted-product topology at the finite
+places.
 
 ## Depends on
 
-- [Finite Idele Group](idele/finite-idele-group.md)
-- [Infinite Idele Group](idele/infinite-idele-group.md)
-- [Topological Idele Group](idele/topological-idele-group.md)
-- [Principal Ideles](idele/principal-ideles.md)
-- [Local Integral Unit Subgroup](idele/local-integral-unit-subgroup.md)
+- [Finite idele group](idele/finite-idele-group.md)
+- [Infinite idele group](idele/infinite-idele-group.md)
+- [Topological idele group](idele/topological-idele-group.md)
+- [Principal ideles](idele/principal-ideles.md)
+- [Local integral unit subgroup](idele/local-integral-unit-subgroup.md)
 
 ## Proof depends on
 
-- [Is Open local Integral Unit Subgroup](idele/is-open-local-integral-unit-subgroup.md)
-- [Finite Principal Embedding](idele/finite-principal-embedding.md)
-- [Infinite Principal Embedding](idele/infinite-principal-embedding.md)
-- [Principal Embedding](idele/principal-embedding.md)
+- [The local integral units are open](idele/is-open-local-integral-unit-subgroup.md)
+- [Diagonal map into the finite ideles](idele/finite-principal-embedding.md)
+- [Diagonal map into the infinite ideles](idele/infinite-principal-embedding.md)
+- [Diagonal map into the ideles](idele/principal-embedding.md)
 
 ## Sources
 

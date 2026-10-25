@@ -5,7 +5,7 @@ navigation: module
 
 # Sign Condition Number
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 - [Real sign matrix of a Boolean matrix](realize.md)
 - [Realized sign matrices have entries $\pm 1$](realize-entries.md)
 - [Boolean matrices realize exactly the sign matrices](exists-realize-iff.md)

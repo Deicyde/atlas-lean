@@ -19,10 +19,10 @@ This node has no prerequisites.
 - [Gaussian Int split conj](gaussian-int-split-conj.md)
 - [Gaussian Int split nonassociated](gaussian-int-split-nonassociated.md)
 - [Unit Val](../gaussian-int-prime-basics/unit-val.md)
-- [Unit Val Inv](../gaussian-int-prime-basics/unit-val-inv.md)
-- [Unit Val complete](../gaussian-int-prime-basics/unit-val-complete.md)
-- [Unit Val inj](../gaussian-int-prime-basics/unit-val-inj.md)
-- [Unit Val mul unit Val Inv](../gaussian-int-prime-basics/unit-val-mul-unit-val-inv.md)
+- [Inverses of the Gaussian units](../gaussian-int-prime-basics/unit-val-inv.md)
+- [The enumeration of the Gaussian units is complete](../gaussian-int-prime-basics/unit-val-complete.md)
+- [The four Gaussian units are distinct](../gaussian-int-prime-basics/unit-val-inj.md)
+- [Each Gaussian unit times its listed inverse is one](../gaussian-int-prime-basics/unit-val-mul-unit-val-inv.md)
 - [Card norm split pow](../../part-12/zsqrtd-norm-factorization/card-norm-split-pow.md)
 
 ## Sources

@@ -18,8 +18,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Length-prefixed binary code of a CNF formula](encode-cnf.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFSat](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfiability of a CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Sources
 

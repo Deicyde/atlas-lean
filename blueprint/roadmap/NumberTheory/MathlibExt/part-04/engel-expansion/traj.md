@@ -6,10 +6,13 @@ statement: formalized
 lean: EngelExpansion.traj
 ---
 
-# Traj
+# Engel remainder trajectory
 
-Engel remainder trajectory: `traj 0 = a`, `traj (j+1) = negRem n (traj j)`,
-absorbing at `0`.
+**Engel remainder trajectory.** For natural numbers $n$ and $a$, the Engel remainder
+trajectory of $a$ with respect to $n$ is the sequence $t_0, t_1, t_2, \dots$ of natural
+numbers with $t_0 = a$ and, for every $j \ge 0$, $t_{j+1} = 0$ if $t_j = 0$, while if
+$t_j \ne 0$ then $t_{j+1}$ is the negated remainder of $n$ modulo $t_j$: the unique natural
+number $u < t_j$ with $u \equiv -n \pmod{t_j}$. Once the trajectory reaches $0$ it stays there.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Neg Rem](neg-rem.md)
+- [Negated remainder](neg-rem.md)
 
 ## Sources
 

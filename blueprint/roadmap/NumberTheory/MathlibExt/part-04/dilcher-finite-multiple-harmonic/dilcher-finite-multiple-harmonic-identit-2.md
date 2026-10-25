@@ -7,16 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.dilcher_finite_multiple_harmonic_identity
 ---
 
-# Dilcher finite multiple harmonic identity
+# Dilcher's finite multiple harmonic identity
 
-Dilcher's finite multiple harmonic identity (Boyadzhiev (2009), equation (26)).
+**Dilcher's finite multiple harmonic identity.** For all positive integers $m$ and $n$,
 
-The right side sums over weakly increasing index tuples `1 ≤ j₁ ≤ ⋯ ≤ j_m ≤ n`;
-these are represented as monotone functions `js : Fin m → Fin n`, where the shift
-`(js i).val + 1` encodes the source indices `1` through `n`.
-It follows from `dilcher_finite_multiple_harmonic_identity_general`; the hypothesis `hm` is
-unused and keeps the source's shape.
-Proves `Wanted` entry `dilcher_finite_multiple_harmonic_identity`.
+$$
+\sum_{k=1}^{n} \frac{(-1)^{k-1} \binom{n}{k}}{k^m}
+= \sum_{1 \le j_1 \le \cdots \le j_m \le n} \frac{1}{j_1 \cdots j_m},
+$$
+
+where the right side sums over all weakly increasing tuples $(j_1, \ldots, j_m)$ of integers
+between $1$ and $n$.
 
 ## Depends on
 
@@ -24,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dilcher finite multiple harmonic identity general](dilcher-finite-multiple-harmonic-identit.md)
+- [Dilcher's finite multiple harmonic identity for every exponent](dilcher-finite-multiple-harmonic-identit.md)
 
 ## Sources
 

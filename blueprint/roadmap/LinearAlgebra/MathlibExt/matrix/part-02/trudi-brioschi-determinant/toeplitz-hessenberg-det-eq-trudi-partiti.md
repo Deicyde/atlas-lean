@@ -6,19 +6,28 @@ proof: formalized
 lean: MetaMathlibExt.toeplitzHessenbergDet_eq_trudiPartitionSum_one
 ---
 
-# Toeplitz Hessenberg Det eq trudi Partition Sum one
+# Trudi's formula when $a_0 = -1$
 
-The case `a_0 = -1` of Trudi's formula: `det A_n = ∑_{α̃ = n} m_n(α) a_1^{α₁} ⋯ a_n^{αₙ}`.
+**Trudi's formula when $a_0 = -1$.** Let $R$ be a commutative ring and let
+$a_0, a_1, a_2, \dots$ be elements of $R$ with $a_0 = -1$. For every $n \ge 0$, the
+Toeplitz–Hessenberg determinant $\det A_n$ of size $n$ built from $a$ satisfies
+
+$$\det A_n = \sum_\alpha m_n(\alpha) \, a_1^{\alpha_1} a_2^{\alpha_2} \cdots a_n^{\alpha_n},$$
+
+where the sum, Trudi's partition sum with weight $1$ per part, runs over the tuples
+$\alpha = (\alpha_1, \dots, \alpha_n)$ of nonnegative integers with
+$\alpha_1 + 2\alpha_2 + \dots + n\alpha_n = n$, with $|\alpha| = \alpha_1 + \dots + \alpha_n$ and
+$m_n(\alpha) = |\alpha|! / (\alpha_1! \cdots \alpha_n!)$.
 
 ## Depends on
 
-- [Toeplitz Hessenberg Det](toeplitz-hessenberg-det.md)
-- [Trudi Partition Sum](trudi-partition-sum.md)
+- [Toeplitz–Hessenberg determinant](toeplitz-hessenberg-det.md)
+- [Trudi's partition sum](trudi-partition-sum.md)
 
 ## Proof depends on
 
-- [Toeplitz Hessenberg Det eq sum compositions](toeplitz-hessenberg-det-eq-sum-compositi.md)
-- [Trudi Partition Sum eq sum compositions](trudi-partition-sum-eq-sum-compositions.md)
+- [Trudi's formula in composition form](toeplitz-hessenberg-det-eq-sum-compositi.md)
+- [Trudi's partition sum as a sum over compositions](trudi-partition-sum-eq-sum-compositions.md)
 
 ## Sources
 

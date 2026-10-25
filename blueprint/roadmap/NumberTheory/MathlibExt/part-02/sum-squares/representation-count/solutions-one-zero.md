@@ -7,13 +7,14 @@ proof: formalized
 lean: SumSquares.solutions_one_zero
 ---
 
-# Solutions one zero
+# Solution set of one square equal to zero
 
-The `k = 1` level set at `n = 0` is the zero singleton.
+**Solution set of one square equal to zero.** The set of vectors $x \in \mathbb{Z}^1$
+with $x_1^2 = 0$ consists of the zero vector alone.
 
 ## Depends on
 
-- [Solutions](solutions.md)
+- [Integer solutions of a sum of squares](solutions.md)
 
 ## Sources
 

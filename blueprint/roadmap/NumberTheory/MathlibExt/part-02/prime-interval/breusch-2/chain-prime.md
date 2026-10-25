@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.chain_prime
 ---
 
-# Chain prime
+# Entries of Breusch's prime chain are prime
 
-Every chain entry is prime.
+**Entries of Breusch's prime chain are prime.** Every entry of the chain is a prime number.
 
 ## Depends on
 
-- [Chain](chain.md)
+- [Breusch's prime chain](chain.md)
 
 ## Sources
 

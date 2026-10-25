@@ -7,13 +7,17 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_G_toNat
 ---
 
-# U9 G to Nat
+# $G$ is at most its positive part
 
-Integer `G9r` values are bounded by their `toNat` cast.
+**$G$ is at most its positive part.** For real $y$ let
+$G(y) = \sum_{m \mid 210} \mu(m) (\lfloor 2100y/m \rfloor_+ - \lfloor 1890y/m \rfloor_+ -
+\lfloor 210y/m \rfloor_+)$, where $\mu$ is the Möbius function and
+$\lfloor t \rfloor_+ = \max(\lfloor t \rfloor, 0)$. For every real number $x$,
+$G(x) \le \max(G(x), 0)$.
 
 ## Depends on
 
-- [G9r](g9r.md)
+- [Continuous Breusch function](g9r.md)
 
 ## Sources
 

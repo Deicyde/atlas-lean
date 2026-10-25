@@ -7,13 +7,16 @@ proof: formalized
 lean: FunctionFieldAdeleRing.mem_valuationSubring_cofinitely
 ---
 
-# Mem valuation Subring cofinitely
+# Adèles are integral at almost all places
 
-Every adèle lies in the selected valuation subring at all but finitely many places.
+**Adèles are integral at almost all places.** Let $F$ be a field, $P$ a type and, for each
+$p \in P$, let $O_p$ be a valuation subring of $F$. For every adèle $a$ of the adèle ring of $F$
+with respect to $(O_p)_{p \in P}$, the component $a_p$ lies in $O_p$ for all but finitely many
+$p \in P$.
 
 ## Depends on
 
-- [Function Field Adele Ring](function-field-adele-ring.md)
+- [Adèle ring of a field with respect to valuation subrings](function-field-adele-ring.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ integers `k ≥ 1`, with an absolute implied constant.
 
 ## Depends on
 
-- [Almost Prime Counting](../../../MathlibExt/part-02/prime-counting/part-01/landau-almost-prime-asymptotic/almost-prime-counting.md)
+- [Counting almost primes](../../../MathlibExt/part-02/prime-counting/part-01/landau-almost-prime-asymptotic/almost-prime-counting.md)
 
 ## Sources
 

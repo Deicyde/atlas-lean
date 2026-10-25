@@ -6,14 +6,13 @@ statement: formalized
 lean: StrictCoveringSystem
 ---
 
-# Strict Covering System
+# Strict covering system
 
-We say a covering system is strict if all the congruence relations that define it are take modulo
-a different ideal (or number).
+**Strict covering system.** A covering system of a commutative semiring $R$, given by cosets
+$r_i + I_i$, is strict if the ideals $I_i$ are pairwise distinct. In the case $R = \mathbb{Z}$, this
+means that the congruences defining it have pairwise distinct moduli.
 
-Note: this corresponds to the notion of a covering system that Erdos was using in
-[ErGr80] Erdős, P. and Graham, R., Old and new problems and results in combinatorial number theory.
-Monographies de L'Enseignement Mathematique (1980).
+This corresponds to the notion of covering system that Erdős and Graham use.
 
 ## Depends on
 
@@ -22,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CoveringSystem](../../../../../sources/v2/MathlibExt.md)
+- [ErGr80] Erdős, P. and Graham, R., Old and new problems and results in combinatorial number theory. Monographies de L'Enseignement Mathematique (1980).

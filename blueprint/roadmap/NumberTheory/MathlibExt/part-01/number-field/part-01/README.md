@@ -3,7 +3,7 @@ article_id: af_55225835c36be3e7e6360cdf
 navigation: transparent
 ---
 
-# Completion to Principal Idele
+# Completion to The principal ideles are discrete
 
 - [Completion](completion/README.md)
 - [Cyclotomic](cyclotomic/README.md)
@@ -12,7 +12,7 @@ navigation: transparent
 - [Adele Locally Compact](adele-locally-compact/README.md)
 - [Arakelov Divisor](arakelov-divisor/README.md)
 - [Extension Discriminant](extension-discriminant/README.md)
-- [Extension Discriminant Localization](extension-discriminant-localization.md)
+- [Localization of the extension discriminant](extension-discriminant-localization.md)
 - [Finite Ramification](finite-ramified-primes.md)
 - [Hilbert Class Field](hilbert-class-field/README.md)
 - [Idele](idele/README.md)
@@ -21,7 +21,7 @@ navigation: transparent
 - [Norm One Idele Class Group](norm-one-idele-class-group/README.md)
 - [Normalized Place](normalized-place/README.md)
 - [Order](order/README.md)
-- [Partial Dedekind Zeta](partial-dedekind-zeta.md)
+- [Partial Dedekind zeta function](partial-dedekind-zeta.md)
 - [Place](place/README.md)
 - [Polar Density](polar-density/README.md)
-- [Principal Idele](principal-ideles-discrete.md)
+- [The principal ideles are discrete](principal-ideles-discrete.md)

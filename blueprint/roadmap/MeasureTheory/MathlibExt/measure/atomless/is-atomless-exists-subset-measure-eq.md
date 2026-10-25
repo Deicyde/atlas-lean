@@ -7,14 +7,15 @@ proof: formalized
 lean: MeasureTheory.isAtomless_exists_subset_measure_eq
 ---
 
-# Is Atomless exists subset measure eq
+# Sierpiński's theorem on atomless measures
 
-In a finite atomless measure, every measurable set contains measurable subsets of
-every smaller measure.
+**Sierpiński's theorem on atomless measures.** Let $\mu$ be a finite atomless measure. For
+every measurable set $s$ and every $t \in [0, \infty]$ with $t \le \mu(s)$, there is a measurable
+set $u \subseteq s$ with $\mu(u) = t$.
 
 ## Depends on
 
-- [Is Atomless](is-atomless.md)
+- [Atomless measure](is-atomless.md)
 
 ## Sources
 

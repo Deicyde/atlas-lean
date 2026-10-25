@@ -13,7 +13,7 @@ For `n ≥ 2` with least prime factor `p` and `Ω(n)` prime factors counted with
 
 ## Depends on
 
-- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
 
 ## Sources
 

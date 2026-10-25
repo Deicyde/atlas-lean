@@ -6,12 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.IsFundamentalDiscriminant
 ---
 
-# Is Fundamental Discriminant
+# Fundamental discriminant
 
-Fundamental discriminant predicate from the source contract:
-either `D` is squarefree and congruent to `1` modulo `4`,
-or `D = 4 * m` with `m` squarefree and congruent to `2` or `3` modulo `4`.
-Includes `D = 1`, excludes `D = 0`.
+**Fundamental discriminant.** An integer $D$ is a fundamental discriminant if either $D$ is
+squarefree and $D \equiv 1 \pmod 4$, or $D = 4m$ for some squarefree integer $m$ with
+$m \equiv 2 \pmod 4$ or $m \equiv 3 \pmod 4$.
+
+With this definition $D = 1$ is a fundamental discriminant and $D = 0$ is not.
 
 ## Depends on
 

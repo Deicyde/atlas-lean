@@ -7,13 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.zagier_matrix_inverse
 ---
 
-# Zagier matrix inverse
+# Zagier's matrix conjecture
 
-Zagier's matrix conjecture: the two Bernoulli-number formulas for `P`
-coincide, and `P` is the two-sided inverse of `A`. The three conjuncts are
-the equality of the two formulas for `P`, then `A * P = 1`, then `P * A = 1`.
-Source indices are 1-based; here rows and columns run over `Fin (K - 1)` with
-`i.val + 1` and `j.val + 1`.
+**Zagier's matrix conjecture.** Let $K \ge 2$ be a natural number, let $B_n$ be the $n$-th
+Bernoulli number with $B_1 = -\frac{1}{2}$, and let $\binom{m}{k} = 0$ for $k > m$. Let $A$,
+$P$ and $Q$ be the $(K - 1) \times (K - 1)$ rational matrices, with rows and columns indexed
+by $1 \le i, j \le K - 1$, whose entries are
+
+$$A_{ij} = \binom{2K - 2j}{2i - 1} + \binom{2K - 2j}{2K - 2i},$$
+
+
+
+$$P_{ij} = \frac{2}{2i-1} \sum_{n=0}^{2K-2i} \binom{2j-1}{2K-2i-n+1} \binom{n+2i-2}{n} B_n,$$
+
+
+
+$$Q_{ij} = -\frac{2}{2i-1} \sum_{n=0}^{2K-2i} \binom{2K-2j}{2K-2i-n+1} \binom{n+2i-2}{n} B_n.$$
+
+Then $P = Q$, $AP = I$ and $PA = I$, where $I$ is the identity matrix; that is, the two
+Bernoulli formulas agree and give the two-sided inverse of $A$.
 
 ## Depends on
 
@@ -21,12 +33,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zagier Inverse P](zagier-inverse-p.md)
-- [Zagier Inverse P eq zagier Inverse Q](zagier-inverse-p-eq-zagier-inverse-q.md)
-- [Zagier Inverse P mul zagier Matrix](zagier-inverse-p-mul-zagier-matrix.md)
-- [Zagier Inverse Q](zagier-inverse-q.md)
-- [Zagier Matrix](zagier-matrix.md)
-- [Zagier Matrix mul zagier Inverse P](zagier-matrix-mul-zagier-inverse-p.md)
+- [First Bernoulli formula for the inverse of Zagier's matrix](zagier-inverse-p.md)
+- [The two Bernoulli formulas for the inverse of Zagier's matrix agree](zagier-inverse-p-eq-zagier-inverse-q.md)
+- [Left inverse of Zagier's matrix](zagier-inverse-p-mul-zagier-matrix.md)
+- [Second Bernoulli formula for the inverse of Zagier's matrix](zagier-inverse-q.md)
+- [Zagier's matrix](zagier-matrix.md)
+- [Right inverse of Zagier's matrix](zagier-matrix-mul-zagier-inverse-p.md)
 
 ## Sources
 

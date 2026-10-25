@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.fCoeff_eq_generalizedBellGenerating
 ---
 
-# F Coeff eq generalized Bell Generating
+# Entry 3 coefficients as generalized Bell values
 
-`fCoeff` is the `a = 0, b = 1` case of Ramanujan's generalized Bell function.
+**Entry 3 coefficients as generalized Bell values.** Let $F$ be Ramanujan's generalized Bell
+function. For every complex number $x$ and every natural number $j$, let
+$f(x, j) = e^{-x} \sum_{k=0}^{\infty} \frac{(k+1)^j x^{k+1}}{k!}$. Then
+$f(x, j) = F(0, 1, x; j)$.
 
 ## Depends on
 
-- [Generalized Bell Generating](../../part-04/part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+- [Ramanujan's generalized Bell function](../../part-04/part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
 
 ## Sources
 

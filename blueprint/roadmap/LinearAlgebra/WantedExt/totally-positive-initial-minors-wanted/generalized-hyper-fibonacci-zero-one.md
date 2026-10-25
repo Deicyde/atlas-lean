@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHyperFibonacci_zero_one
 ---
 
-# Generalized Hyper Fibonacci zero one
+# Initial values of generalized hyper-Fibonacci numbers
 
-Initial values `W_{p,0}^{(r)} = a` and `W_{p,1}^{(r)} = par + b`, as listed in the
-definition.
+**Initial values of generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers and let
+$W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers. For every natural number $r$,
+$W^{(r)}_{p,0} = a$ and $W^{(r)}_{p,1} = p \cdot a \cdot r + b$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

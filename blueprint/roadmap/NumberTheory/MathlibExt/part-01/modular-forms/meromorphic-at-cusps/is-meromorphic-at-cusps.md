@@ -6,10 +6,12 @@ statement: formalized
 lean: ModularFunction.IsMeromorphicAtCusps
 ---
 
-# Is Meromorphic At Cusps
+# Meromorphy at the cusps
 
-A function is meromorphic at the cusps when every `SL(2, ℤ)`-translate is meromorphic at
-infinity.
+**Meromorphy at the cusps.** A function $f \colon \mathbb{H} \to \mathbb{C}$ on the upper
+half-plane is meromorphic at the cusps when, for every $\gamma \in \mathrm{SL}(2, \mathbb{Z})$,
+the function $\tau \mapsto f(\gamma \cdot \tau)$ is meromorphic at infinity, where $\gamma$ acts
+on $\mathbb{H}$ by Möbius transformations.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Meromorphic At Infty](is-meromorphic-at-infty.md)
+- [Meromorphy at infinity](is-meromorphic-at-infty.md)
 
 ## Sources
 

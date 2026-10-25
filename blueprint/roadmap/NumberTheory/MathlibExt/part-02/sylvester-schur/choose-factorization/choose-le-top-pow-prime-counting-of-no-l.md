@@ -7,11 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.choose_le_top_pow_primeCounting_of_no_large
 ---
 
-# Choose le top pow prime Counting of no large
+# Prime-counting bound for binomial coefficients without large prime factors
 
-The same no-large-prime hypothesis gives the sharper Erdős factorization bound with exponent
-`Nat.primeCounting r`. The remaining hard part of the classical proof is to contradict this bound
-using lower estimates for the relevant binomial coefficient.
+**Prime-counting bound for binomial coefficients without large prime factors.** Let $0 < N$
+and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$.
+Then $\binom{N}{r} \le N^{\pi(r)}$, where $\pi(r)$ is the number of primes $p \le r$.
 
 ## Depends on
 
@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose eq prod small prime powers of no large](choose-eq-prod-small-prime-powers-of-no.md)
+- [Truncating the prime factorization of a binomial coefficient](choose-eq-prod-small-prime-powers-of-no.md)
 
 ## Sources
 

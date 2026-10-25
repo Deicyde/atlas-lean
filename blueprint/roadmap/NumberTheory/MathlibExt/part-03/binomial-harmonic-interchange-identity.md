@@ -7,15 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.binomial_harmonic_interchange_identity
 ---
 
-# Binomial Harmonic Interchange Identity
+# Binomial interchange identity with harmonic weights
 
-Harmonic-weighted binomial interchange identity: the `1/k`-weighted partial
-binomial transforms sum to the full-length transform with `1/k` weights.
+**Binomial interchange identity with harmonic weights.** Let $K$ be a field of
+characteristic zero. For every natural number $n$ and every sequence $a : \mathbb{N} \to K$,
 
-The source notes a generalization in Boyadzhiev, attributed to 't Woord. The
-Lean statement generalizes the source's real-or-complex sequences to any
-field of characteristic zero.
-Proves `Wanted` entry `binomial_harmonic_interchange_identity`.
+$$\sum_{k=1}^{n} \frac{1}{k} \sum_{j=1}^{k} \binom{k}{j} a_j =
+\sum_{k=1}^{n} \binom{n}{k} \frac{a_k}{k}.$$
+
+The source notes a generalization in Boyadzhiev, attributed to 't Woord. The statement
+generalizes the source's real or complex sequences to any field of characteristic zero.
 
 ## Depends on
 

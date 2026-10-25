@@ -5,9 +5,9 @@ navigation: module
 
 # Almost Beatty Partition
 
-- [Beatty Term](beatty-term.md)
-- [Beatty Term eq floor](beatty-term-eq-floor.md)
-- [Is Almost Beatty Sequence](is-almost-beatty-sequence.md)
-- [Is Positive Nat Three Way Partition](is-positive-nat-three-way-partition.md)
-- [Is Almost Beatty Partition](is-almost-beatty-partition.md)
-- [Beatty Term is Almost Beatty Sequence](beatty-term-is-almost-beatty-sequence.md)
+- [Beatty term](beatty-term.md)
+- [Beatty term as a natural-number floor](beatty-term-eq-floor.md)
+- [Almost Beatty sequence](is-almost-beatty-sequence.md)
+- [Three-way partition of the positive integers](is-positive-nat-three-way-partition.md)
+- [Almost Beatty partition](is-almost-beatty-partition.md)
+- [Beatty sequences are almost Beatty](beatty-term-is-almost-beatty-sequence.md)

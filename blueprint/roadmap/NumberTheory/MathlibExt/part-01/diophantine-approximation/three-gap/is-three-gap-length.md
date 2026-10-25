@@ -6,9 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.IsThreeGapLength
 ---
 
-# Is Three Gap Length
+# Gap lengths of the three-gap configuration
 
-A length of one of the cyclic gaps between consecutive fractional multiples.
+**Gap lengths of the three-gap configuration.** Let $n$ be a natural number and $\alpha$ a real
+number. In this definition a point means a three-gap point of $n$ and $\alpha$, that is, a number
+$\operatorname{frac}(k\alpha) = k\alpha - \lfloor k\alpha \rfloor$ for a natural number $k < n$.
+A real number $d$ is a gap length of $n$ and $\alpha$ if either $d = y - x$ for points $x < y$
+with no point strictly between $x$ and $y$, or there are a least point $x_{\min}$ and a greatest
+point $x_{\max}$ and $d = 1 + x_{\min} - x_{\max}$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Three Gap Point](is-three-gap-point.md)
+- [Points of the three-gap configuration](is-three-gap-point.md)
 
 ## Sources
 

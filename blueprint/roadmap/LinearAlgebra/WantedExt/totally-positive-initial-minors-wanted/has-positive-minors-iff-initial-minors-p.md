@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hasPositiveMinors_iff_initial_minors_pos
 ---
 
-# Has Positive Minors iff initial minors pos
+# Gasca–Peña criterion for total positivity
 
-Gasca–Peña criterion: a real square matrix is totally positive if and only if all its
-initial minors are positive; an initial minor has rows `i₀, …, i₀ + k - 1` and columns
-`j₀, …, j₀ + k - 1` with `i₀ = 0` or `j₀ = 0`.
+**Gasca–Peña criterion for total positivity.** Let $A$ be a real $n \times n$ matrix whose
+rows and columns are indexed by $0, \dots, n - 1$. Then $A$ is totally positive (has positive
+minors) if and only if all its initial minors are positive: for all natural numbers $k$, $i_0$
+and $j_0$ with $i_0 + k \le n$, $j_0 + k \le n$ and $i_0 = 0$ or $j_0 = 0$, the $k \times k$
+submatrix of $A$ with rows $i_0, \dots, i_0 + k - 1$ and columns $j_0, \dots, j_0 + k - 1$ has
+positive determinant.
 
 ## Depends on
 

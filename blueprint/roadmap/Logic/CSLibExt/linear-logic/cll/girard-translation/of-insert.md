@@ -6,15 +6,22 @@ proof: formalized
 lean: Cslib.Logic.CLL.Girard.of_insert
 ---
 
-# Of insert
+# Separating a new hypothesis in the translation
 
-A context extended by `A`, in the translation: the hypotheses of `insert A Γ` are those of `Γ`
-plus `ʔ(A°⫠)`, up to weakening when `A` was already in `Γ`.
+**Separating a new hypothesis in the translation.** Let $f$ map propositional atoms to CLL
+propositions, let $\Gamma$ be a finite set of propositional formulas, $A$ a propositional formula
+and $c$ a CLL proposition. Write $B^\circ$ for Girard's translation of a formula $B$ with atoms
+translated by $f$, and $?\Delta^{\circ\perp}$ for the multiset of the propositions
+$?\big((B^\circ)^\perp\big)$ for $B \in \Delta$. If the CLL sequent
+$\vdash c, ?(\Gamma \cup \{A\})^{\circ\perp}$ is provable, then so is
+$\vdash ?\big((A^\circ)^\perp\big), c, ?\Gamma^{\circ\perp}$.
+
+When $A \in \Gamma$ the conclusion follows by weakening.
 
 ## Depends on
 
-- [Hyp](hyp.md)
-- [Hyps](hyps.md)
+- [Girard's translation of a reusable hypothesis](hyp.md)
+- [Translated hypotheses of a context](hyps.md)
 
 ## Proof depends on
 

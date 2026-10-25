@@ -7,17 +7,20 @@ proof: formalized
 lean: NumberField.Modulus.coprimeFractionalIdeals_le_of_dvd
 ---
 
-# Coprime Fractional Ideals le of dvd
+# Coprimality passes to divisors of a modulus
 
-Coprime fractional ideals are antitone under modulus divisibility.
+**Coprimality passes to divisors of a modulus.** Let $\mathfrak m_1$ and $\mathfrak m_2$ be
+moduli of a number field $K$ with $\mathfrak m_2 \mid \mathfrak m_1$. Then every nonzero
+fractional ideal of $K$ coprime to the finite part of $\mathfrak m_1$ is coprime to the finite
+part of $\mathfrak m_2$.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Proof depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

@@ -13,12 +13,12 @@ truth table, on valuations with `⊥` false, of some proposition.
 
 ## Depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Proof depends on
 
-- [Eval Bool shannon](eval-bool-shannon.md)
-- [Shannon](shannon.md)
+- [Correctness of the Shannon expansion](eval-bool-shannon.md)
+- [Shannon expansion](shannon.md)
 
 ## Sources
 

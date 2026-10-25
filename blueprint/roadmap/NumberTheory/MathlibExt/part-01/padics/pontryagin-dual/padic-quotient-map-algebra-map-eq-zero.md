@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.padicQuotientMap_algebraMap_eq_zero
 ---
 
-# Padic Quotient Map algebra Map eq zero
+# The quotient map vanishes on $\mathbb{Z}_p$
 
-The quotient map kills the canonical image of `ℤ_p` in `ℚ_p`.
+**The quotient map vanishes on $\mathbb{Z}_p$.** For a prime $p$ and every
+$z \in \mathbb{Z}_p$, the quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$ sends the
+image of $z$ in $\mathbb{Q}_p$ to $0$.
 
 ## Depends on
 
-- [Padic Quotient Int](padic-quotient-int.md)
-- [Padic Quotient Map](padic-quotient-map.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
+- [The quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-map.md)
 
 ## Sources
 

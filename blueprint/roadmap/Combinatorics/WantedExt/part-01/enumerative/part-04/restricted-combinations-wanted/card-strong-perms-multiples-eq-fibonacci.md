@@ -20,7 +20,7 @@ $(1,t)$-bonacci numbers $f^{(t)}_n$ satisfy $f^{(j+1)}_n = F_j(n+1)$.
 
 ## Depends on
 
-- [Fibonacci P](../../../../../../NumberTheory/MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
+- [Fibonacci p-numbers](../../../../../../NumberTheory/MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources
 

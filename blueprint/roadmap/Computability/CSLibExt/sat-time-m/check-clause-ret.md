@@ -17,7 +17,7 @@ looking up $x$ in $N$ and $w$.
 
 - [Clause check against a witness](check-clause.md)
 - [Witness lookup](lookup-var.md)
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources

@@ -5,5 +5,5 @@ navigation: module
 
 # BNomial Coefficient
 
-- [B Nomial Base](b-nomial-base.md)
-- [B Nomial Coefficient](b-nomial-coefficient.md)
+- [Base polynomial of the $b$-nomial coefficients](b-nomial-base.md)
+- [Type-1 $b$-nomial coefficients](b-nomial-coefficient.md)

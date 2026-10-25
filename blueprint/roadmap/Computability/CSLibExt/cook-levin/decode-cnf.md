@@ -14,7 +14,7 @@ if no formula can be read or if bits remain after it.
 
 ## Depends on
 
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

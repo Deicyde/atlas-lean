@@ -7,11 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.polynomially_recursive_MC_finite
 ---
 
-# Polynomially recursive MC finite
+# Polynomially recursive integer sequences are MC-finite
 
-Polynomially recursive integer sequences are MC-finite, including the holonomic
-special case: a sequence that is PRS over `ℤ` and `n` is MC-finite, and in
-particular a sequence that is holonomic over `ℤ` is MC-finite.
+**Polynomially recursive integer sequences are MC-finite.** Call an integer sequence $s$
+MC-finite if for every natural number $m > 0$ there are natural numbers $p > 0$ and $q > 0$ and
+integers $c_0, \dots, c_{p-1}$ such that $m$ divides $s(n + p) - \sum_{i=0}^{p-1} c_i\, s(n + i)$
+for all $n \ge q$. Every integer sequence $s$ has the following two properties.
+
+(1) If there are $k \ge 0$, integer sequences $u_0, \dots, u_k$ with $s = u_0$, and polynomials
+$P_0, \dots, P_k$ with integer coefficients in $k + 2$ variables such that
+$u_i(n+1) = P_i(u_0(n), \dots, u_k(n), n)$ for all $i \le k$ and all $n \ge 0$, then $s$ is
+MC-finite.
+
+(2) Holonomic case: if there are $k > 0$ and polynomials $P_1, \dots, P_k$ with integer
+coefficients such that $P_1 \ne 0$, $P_k \ne 0$ and $s(n) = \sum_{i=1}^{k} P_i(n)\, s(n - i)$ for
+all $n \ge k$, then $s$ is MC-finite.
 
 ## Depends on
 
@@ -19,8 +29,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is MCFinite](is-mcfinite-2.md)
-- [Is MCFinite of mv Polynomial recursion](is-mcfinite-of-mv-polynomial-recursion.md)
+- [P-recursive sequences with leading coefficient 1 are MC-finite](is-mcfinite-2.md)
+- [Polynomial recursions give MC-finite sequences](is-mcfinite-of-mv-polynomial-recursion.md)
 
 ## Sources
 

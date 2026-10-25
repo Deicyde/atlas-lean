@@ -7,15 +7,17 @@ proof: formalized
 lean: Algebra.isWildlyRamifiedAt_iff_char_dvd
 ---
 
-# Is Wildly Ramified At iff char dvd
+# Wild ramification under residue separability
 
-Under residue separability, wild ramification holds iff the residue
-characteristic divides the ramification index.
+**Wild ramification under residue separability.** Let $R$ and $S$ be commutative rings with $S$
+an $R$-algebra, and let $q$ be a prime ideal of $S$ that is residue separable over $R$. Then $q$ is
+wildly ramified over $R$ if and only if the characteristic of the residue field $\kappa(q)$ divides
+the ramification index of $q$ over $R$.
 
 ## Depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
-- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
+- [Wildly ramified prime](is-wildly-ramified-at.md)
 
 ## Proof depends on
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Logic.FOL.freeVarFinset_instantiate_subset
 ---
 
-# Free Var Finset instantiate subset
+# Free variables of an instance
 
-Instantiation adds at most the variables of the term.
+**Free variables of an instance.** Let $t$ be a term and $\varphi$ a first-order formula with
+$m + 1$ bound variables, and let $\varphi(t)$ be the instance obtained by substituting $t$ for the
+outermost bound variable. Every free variable of $\varphi(t)$ is a free variable of $\varphi$ or a
+variable of $t$.
 
 ## Depends on
 
-- [Instantiate](../syntax/instantiate.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 
 ## Proof depends on
 
-- [Instantiate Term](../syntax/instantiate-term.md)
+- [Instantiating the outermost bound variable of a term](../syntax/instantiate-term.md)
 
 ## Sources
 

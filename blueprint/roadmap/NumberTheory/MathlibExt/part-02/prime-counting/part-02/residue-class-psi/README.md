@@ -5,5 +5,5 @@ navigation: module
 
 # Residue Class Psi
 
-- [Psi Residue Class](psi-residue-class.md)
-- [Psi Residue Class of lt one](psi-residue-class-of-lt-one.md)
+- [Chebyshev's function in a residue class](psi-residue-class.md)
+- [The residue-class Chebyshev function vanishes below one](psi-residue-class-of-lt-one.md)

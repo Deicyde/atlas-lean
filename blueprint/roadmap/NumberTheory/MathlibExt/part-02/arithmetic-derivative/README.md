@@ -4,9 +4,9 @@ navigation: module
 
 # Arithmetic Derivative
 
-- [Arithmetic Derivative](arithmetic-derivative.md)
-- [Arithmetic Derivative zero](arithmetic-derivative-zero.md)
-- [Arithmetic Derivative one](arithmetic-derivative-one.md)
-- [Arithmetic Derivative prime](arithmetic-derivative-prime.md)
-- [Arithmetic Derivative eq sum of subset](arithmetic-derivative-eq-sum-of-subset.md)
-- [Arithmetic Derivative mul](arithmetic-derivative-mul.md)
+- [Arithmetic derivative](arithmetic-derivative.md)
+- [Arithmetic derivative of zero](arithmetic-derivative-zero.md)
+- [Arithmetic derivative of one](arithmetic-derivative-one.md)
+- [Arithmetic derivative of a prime](arithmetic-derivative-prime.md)
+- [Arithmetic derivative over a superset of the prime factors](arithmetic-derivative-eq-sum-of-subset.md)
+- [Leibniz rule for the arithmetic derivative](arithmetic-derivative-mul.md)

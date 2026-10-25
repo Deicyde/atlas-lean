@@ -7,13 +7,16 @@ proof: formalized
 lean: NumberField.InfinitePlace.normalizedAbsoluteValue_apply
 ---
 
-# Normalized Absolute Value apply
+# Value of the degree-normalized absolute value at an infinite place
 
-Evaluation of the degree-normalized absolute value at an infinite place.
+**Value of the degree-normalized absolute value at an infinite place.** Let $K$ be a number
+field of degree $d = [K : \mathbb{Q}]$ and let $v$ be an infinite place of $K$, with absolute
+value $|\cdot|_v$ and multiplicity $m_v$, equal to $1$ if $v$ is real and $2$ if $v$ is complex.
+For every $x \in K$, the degree-normalized absolute value of $x$ at $v$ equals $|x|_v^{m_v/d}$.
 
 ## Depends on
 
-- [Normalized Absolute Value](normalized-absolute-value-2.md)
+- [Degree-normalized absolute value at an infinite place](normalized-absolute-value-2.md)
 
 ## Proof depends on
 

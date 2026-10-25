@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.sigmaBiunitary_oneHundredTwenty
 ---
 
-# Sigma Biunitary one Hundred Twenty
+# $120$ is biunitary triperfect
 
-`120` is biunitary triperfect: `σ**(120) = 360`.
+**$120$ is biunitary triperfect.** The sum $\sigma^{**}(120)$ of the biunitary divisors of
+$120$ equals $3 \cdot 120 = 360$.
 
 ## Depends on
 
-- [Sigma Biunitary](sigma-biunitary.md)
+- [Biunitary divisor sum](sigma-biunitary.md)
 
 ## Sources
 

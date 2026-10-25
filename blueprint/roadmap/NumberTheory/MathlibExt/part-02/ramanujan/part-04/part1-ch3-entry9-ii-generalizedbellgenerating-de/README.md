@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch3 Entry9 Ii Generalizedbellgenerating Defining
 
-- [Generalized Bell Generating](generalized-bell-generating.md)
-- [Ramanujan part1 ch3 entry9 ii generalizedbellgenerating defining](ramanujan-part1-ch3-entry9-ii-generalize.md)
+- [Ramanujan's generalized Bell function](generalized-bell-generating.md)
+- [Convergence of the generalized Bell series](ramanujan-part1-ch3-entry9-ii-generalize.md)

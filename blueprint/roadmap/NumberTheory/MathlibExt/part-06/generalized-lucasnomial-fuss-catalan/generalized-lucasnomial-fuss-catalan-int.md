@@ -16,13 +16,13 @@ form.
 
 ## Depends on
 
-- [Is Lucas Sequence First Kind](../../part-02/recurrences/part-02/lucas-sequence-first-kind/is-lucas-sequence-first-kind.md)
+- [Lucas sequence of the first kind](../../part-02/recurrences/part-02/lucas-sequence-first-kind/is-lucas-sequence-first-kind.md)
 
 ## Proof depends on
 
-- [Initial One](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-one.md)
-- [Initial Zero](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-zero.md)
-- [Recurrence Step](../../part-02/recurrences/part-02/lucas-sequence-first-kind/recurrence-step.md)
+- [Lucas sequence of the first kind: value at one](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-one.md)
+- [Lucas sequence of the first kind: value at zero](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-zero.md)
+- [Lucas sequence of the first kind: the recurrence](../../part-02/recurrences/part-02/lucas-sequence-first-kind/recurrence-step.md)
 
 ## Sources
 

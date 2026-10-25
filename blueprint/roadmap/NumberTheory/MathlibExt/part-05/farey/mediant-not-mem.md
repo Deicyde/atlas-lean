@@ -13,8 +13,8 @@ The mediant of a Farey pair is not already present at the same order.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
-- [Farey Finset](farey-finset.md)
+- [Farey neighbors](is-farey-neighbor.md)
+- [Farey set](farey-finset.md)
 - [Mediant](mediant.md)
 
 ## Sources

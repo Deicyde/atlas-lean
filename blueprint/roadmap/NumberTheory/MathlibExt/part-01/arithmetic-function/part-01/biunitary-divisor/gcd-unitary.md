@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.gcdUnitary
 ---
 
-# Gcd Unitary
+# Greatest common unitary divisor
 
-The greatest common unitary divisor `gcd₁(a, b)`: the largest number that is a unitary
-divisor of both `a` and `b` (`0` when `a = 0` or `b = 0`, which have no unitary divisors).
+**Greatest common unitary divisor.** For natural numbers $a$ and $b$, $\gcd_1(a, b)$ is the
+largest natural number that is a unitary divisor of both $a$ and $b$, where a unitary divisor of
+$n$ is a divisor $d$ of $n \neq 0$ with $\gcd(d, n / d) = 1$. If $a = 0$ or $b = 0$, there is no
+common unitary divisor and $\gcd_1(a, b) = 0$.
 
 ## Depends on
 

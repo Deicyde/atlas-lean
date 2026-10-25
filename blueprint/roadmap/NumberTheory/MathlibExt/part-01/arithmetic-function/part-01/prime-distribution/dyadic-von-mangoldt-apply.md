@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeDistribution.dyadicVonMangoldt_apply
 ---
 
-# Dyadic Von Mangoldt apply
+# Values of the dyadic von Mangoldt function
 
-The finite cutoff gives exactly the source's two closed real endpoints.
+**Values of the dyadic von Mangoldt function.** For every real $x > 0$ and every natural
+number $n$, the von Mangoldt function on the dyadic interval for $x$ takes at $n$ the value
+$\Lambda(n)$ if $x \le n \le 2x$, and $0$ otherwise, where $\Lambda$ is the von Mangoldt function.
 
 ## Depends on
 
-- [Dyadic Von Mangoldt](dyadic-von-mangoldt.md)
+- [Von Mangoldt function on a dyadic interval](dyadic-von-mangoldt.md)
 
 ## Sources
 

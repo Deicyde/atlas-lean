@@ -13,7 +13,7 @@ followed by the clause-end symbol.
 ## Depends on
 
 - [Stack alphabet of the SAT verifier](sym.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

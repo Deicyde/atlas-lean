@@ -5,7 +5,7 @@ navigation: module
 
 # Kantorovich
 
-- [Is Coupling](is-coupling.md)
-- [Primal Values](primal-values.md)
-- [Dual Feasible](dual-feasible.md)
-- [Kantorovich duality compact](kantorovich-duality-compact.md)
+- [Coupling of two probability measures](is-coupling.md)
+- [Values of the transport cost over couplings](primal-values.md)
+- [Dual feasible pair of potentials](dual-feasible.md)
+- [Kantorovich duality on compact metric spaces](kantorovich-duality-compact.md)

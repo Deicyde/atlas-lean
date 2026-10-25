@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.chebyshev_theta_gt_one_third
 ---
 
-# Chebyshev Theta Lower Bound
+# Chebyshev's lower bound for the theta function
 
-Chebyshev's lower bound for the first Chebyshev function: `ϑ(x) > x/3`
-for `x ≥ 3`.
+**Chebyshev's lower bound for the theta function.** Let $\theta(x) = \sum_{p \le x} \log p$, the
+sum running over primes, be the first Chebyshev function. Then $\theta(x) > x/3$ for every real
+$x \ge 3$.
 
 ## Depends on
 

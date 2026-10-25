@@ -7,19 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.binomialPowerSeq_dold_congruences
 ---
 
-# Binomial Power Seq dold congruences
+# Dold congruences for binomial-power sequences
 
-Dold congruences for binomial-power sequences, factored out of
-`binomial_power_sequence_dold_realizable`.
+**Dold congruences for binomial-power sequences.** Let $r \ge 1$ and $s \ge 0$ be integers
+and let $A_{r,s}(m) = \sum_{k=0}^{m} \binom{m}{k}^r \binom{m+k}{k}^s$. Then for every integer
+$n \ge 1$, $n$ divides $\sum_{d \mid n} \mu(d)\, A_{r,s}(n/d)$, where $\mu$ is the Möbius
+function and $d$ runs over the positive divisors of $n$.
 
 ## Depends on
 
-- [Binomial Power Seq](binomial-power-seq.md)
+- [Binomial-power sequences](binomial-power-seq.md)
 
 ## Proof depends on
 
-- [Binomial power sequence dold realizable](binomial-power-sequence-dold-realizable.md)
-- [Dold Realizable dvd](dold-realizable-dvd.md)
+- [Binomial-power sequences are Dold realizable](binomial-power-sequence-dold-realizable.md)
+- [Dold realizable sequences satisfy the Dold congruences](dold-realizable-dvd.md)
 
 ## Sources
 

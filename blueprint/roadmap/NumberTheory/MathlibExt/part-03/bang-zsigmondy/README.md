@@ -5,5 +5,5 @@ navigation: module
 
 # Bang Zsigmondy
 
-- [Is Bang Zsigmondy Exceptional](is-bang-zsigmondy-exceptional.md)
-- [Bang Zsigmondy exists primitive Prime Divisor](bang-zsigmondy-exists-primitive-prime-di.md)
+- [Exceptional cases of Zsigmondy's theorem](is-bang-zsigmondy-exceptional.md)
+- [Zsigmondy's theorem](bang-zsigmondy-exists-primitive-prime-di.md)

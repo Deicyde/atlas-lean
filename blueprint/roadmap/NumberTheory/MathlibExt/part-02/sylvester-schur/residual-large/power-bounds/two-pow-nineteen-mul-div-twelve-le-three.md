@@ -7,9 +7,10 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.two_pow_nineteen_mul_div_twelve_le_three_pow
 ---
 
-# Two pow nineteen mul div twelve le three pow
+# Powers of two against powers of three
 
-A binary-to-ternary comparison used to convert powers of `2` into powers of `3`.
+**Powers of two against powers of three.** For every natural number $n$,
+$2^{19 \lfloor n/12 \rfloor} \le 3^{n}$.
 
 ## Depends on
 

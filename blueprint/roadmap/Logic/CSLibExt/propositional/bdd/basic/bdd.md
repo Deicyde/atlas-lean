@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Logic.PL.BDD
 ---
 
-# BDD
+# Binary decision diagram
 
-Binary decision diagrams in tree form: Boolean leaves and nodes testing a variable,
-with the `lo` child for `false` and the `hi` child for `true`.
+**Binary decision diagram.** A binary decision diagram, in tree form, is either a leaf
+carrying a Boolean value, or a node consisting of a variable $v \in \mathbb{N}$ and two
+diagrams: the low child, for $v$ false, and the high child, for $v$ true.
 
 ## Depends on
 

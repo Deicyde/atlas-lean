@@ -13,7 +13,7 @@ where the chain for $C_i$ uses fresh numbers from $u_i = \sum_{j > i} \max(|C_j|
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

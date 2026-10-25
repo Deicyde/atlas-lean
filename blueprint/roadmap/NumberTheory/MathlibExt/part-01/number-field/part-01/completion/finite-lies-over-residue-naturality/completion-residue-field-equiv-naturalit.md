@@ -7,21 +7,30 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.completionResidueFieldEquiv_naturality
 ---
 
-# Completion Residue Field Equiv naturality
+# Naturality of the residue field identifications
 
-Naturality of the residue-field equivalences with explicit quotient maps.
+**Naturality of the residue field identifications.** Let $L/K$ be an extension of number
+fields, let $v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero prime ideal of
+$\mathcal{O}_L$ lying over $v$. Let $\mathcal{O}_{K_v}$ and $\mathcal{O}_{L_w}$ be the rings of
+integers of the completions $K_v$ and $L_w$, with maximal ideals $\mathfrak{m}_v$ and
+$\mathfrak{m}_w$. Then the two maps $\mathcal{O}_{K_v}/\mathfrak{m}_v \to \mathcal{O}_L/w$ agree:
+the residue field isomorphism $\mathcal{O}_{K_v}/\mathfrak{m}_v \cong \mathcal{O}_K/v$ followed by
+the map $\mathcal{O}_K/v \to \mathcal{O}_L/w$ induced by $\mathcal{O}_K \to \mathcal{O}_L$, and
+the map $\mathcal{O}_{K_v}/\mathfrak{m}_v \to \mathcal{O}_{L_w}/\mathfrak{m}_w$ induced by the
+canonical map $\mathcal{O}_{K_v} \to \mathcal{O}_{L_w}$ followed by the residue field isomorphism
+$\mathcal{O}_{L_w}/\mathfrak{m}_w \cong \mathcal{O}_L/w$.
 
 ## Depends on
 
-- [Adic Completion Residue Quotient Map](adic-completion-residue-quotient-map.md)
+- [Residue map of completed integer rings](adic-completion-residue-quotient-map.md)
 - [Completion Residue Field Equiv](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
-- [Ring Of Integers Residue Quotient Map](ring-of-integers-residue-quotient-map.md)
+- [Residue map of rings of integers](ring-of-integers-residue-quotient-map.md)
 
 ## Proof depends on
 
-- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
-- [Finite Lies Over Residue Field](../adic-completion-integers-map-algebra-map.md)
-- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+- [Restriction of the completion map to the rings of integers](../finite-lies-over-valuation/adic-completion-integers-map.md)
+- [The completed integer map is compatible with the rings of integers](../adic-completion-integers-map-algebra-map.md)
+- [Maximal ideals of completed integer rings lie over each other](../comap-maximal-ideal-adic-completion-inte.md)
 - [Completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-map.md)
 - [Ker completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/ker-completion-residue-map.md)
 - [Surjective completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/surjective-completion-residue-map.md)

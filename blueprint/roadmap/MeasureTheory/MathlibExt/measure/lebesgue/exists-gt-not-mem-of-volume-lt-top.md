@@ -7,9 +7,11 @@ proof: formalized
 lean: MeasureTheory.exists_gt_not_mem_of_volume_lt_top
 ---
 
-# Finite
+# Sets of finite Lebesgue measure contain no right half-line
 
-A set of finite Lebesgue measure cannot contain a right half-line.
+**Sets of finite Lebesgue measure contain no right half-line.** Let $E \subseteq \mathbb{R}$
+have finite Lebesgue outer measure ($E$ need not be measurable). Then for every real $X$ there
+is a real $x > X$ with $x \notin E$; that is, $E$ contains no half-line $(X, \infty)$.
 
 ## Depends on
 

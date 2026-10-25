@@ -7,10 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.binomial_fibonacci_convolution
 ---
 
-# Binomial fibonacci convolution
+# Alternating binomial sum of Fibonacci numbers
 
-Binomial convolution of Fibonacci numbers: the `n`-th alternating
-binomial transform of `i ↦ fib (2n - i + k)` recovers `fib k`.
+**Alternating binomial sum of Fibonacci numbers.** Let $F_m$ denote the $m$-th Fibonacci
+number, with $F_0 = 0$ and $F_1 = 1$. For all natural numbers $n$ and $k$,
+
+$$\sum_{i=0}^{n} (-1)^i \binom{n}{i} F_{2n-i+k} = F_k.$$
 
 ## Depends on
 
@@ -18,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose succ int](choose-succ-int.md)
-- [Fib conv step](fib-conv-step.md)
+- [Pascal's rule for binomial coefficients](choose-succ-int.md)
+- [Fibonacci step in the alternating binomial sum](fib-conv-step.md)
 
 ## Sources
 

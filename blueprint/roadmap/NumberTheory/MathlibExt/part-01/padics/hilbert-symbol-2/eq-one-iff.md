@@ -13,12 +13,12 @@ The `p`-adic Hilbert symbol is one exactly when its defining equation is solvabl
 
 ## Depends on
 
-- [Padic Hilbert Symbol](padic-hilbert-symbol.md)
+- [The $p$-adic Hilbert symbol](padic-hilbert-symbol.md)
 
 ## Proof depends on
 
-- [Is Solvable](is-solvable.md)
-- [Hilbert Symbol](hilbert-symbol.md)
+- [Solvability of $ax^2 + by^2 = 1$](is-solvable.md)
+- [Hilbert symbol of a field](hilbert-symbol.md)
 
 ## Sources
 

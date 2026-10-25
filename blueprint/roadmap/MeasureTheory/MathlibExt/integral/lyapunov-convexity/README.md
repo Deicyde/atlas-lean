@@ -5,5 +5,5 @@ navigation: module
 
 # Lyapunov Convexity
 
-- [Lyapunov Range](lyapunov-range.md)
-- [Lyapunov convexity](lyapunov-convexity.md)
+- [Lyapunov range](lyapunov-range.md)
+- [Lyapunov convexity theorem](lyapunov-convexity.md)

@@ -7,21 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.fibonomial_primePower_padicVal_eq_zero
 ---
 
-# Fibonomial prime Power padic Val eq zero
+# Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers
 
-Zero-valued branch (first branch) of the JIS corrected Fibonacci
-specialization: for a prime `p ≠ 2, 5` and `0 < a ≤ b`, if `p ≡ ±1 (mod 5)`
-or `a, b` have equal parity, then the `p`-adic valuation of the Fibonomial
-`{p^b choose p^a}_F` is `0`.
+**Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers.** Let $p$ be a
+prime with $p \ne 2$ and $p \ne 5$, and let $a, b$ be integers with $0 < a \le b$ such that
+$p \equiv \pm 1 \pmod 5$ or $a \equiv b \pmod 2$. Write $F_n$ for the $n$-th Fibonacci number
+and $F_n! = F_1 F_2 \cdots F_n$ for the Fibonacci factorial, with $F_0! = 1$. Then the $p$-adic
+valuation of the Fibonomial coefficient
 
-This is the Fibonacci specialization only, not the unreproduced general
-Ballot (Lucasnomial) theorem. The source's separate odd-`a` branch needs a
-rank-of-appearance witness; that hypothesis is absent here because this
-zero-valued branch does not use it.
+$$\binom{p^b}{p^a}_F = \frac{F_{p^b}!}{F_{p^a}! \, F_{p^b - p^a}!},$$
 
-Each `∏ i ∈ Finset.range n, Nat.fib (i + 1)` runs over `i = 0, …, n - 1`,
-hence equals the Fibonacci-factorial product `F₁⋯Fₙ`; the Fibonomial is the
-quotient `F_{p^b}! / (F_{p^a}! * F_{p^b - p^a}!)` under `ℕ` division.
+where the quotient is taken by division of natural numbers, is $0$.
 
 ## Depends on
 
@@ -29,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fibonacci Prime Divisibility](../../../part-02/recurrences/part-01/fib-prime-dvd-fib-of-legendre-sub.md)
-- [Padic Val Nat fib mul](padic-val-nat-fib-mul.md)
+- [Fibonacci prime divisibility](../../../part-02/recurrences/part-01/fib-prime-dvd-fib-of-legendre-sub.md)
+- [Lifting the exponent for Fibonacci numbers](padic-val-nat-fib-mul.md)
 
 ## Sources
 

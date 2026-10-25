@@ -5,12 +5,12 @@ navigation: module
 
 # Digits
 
-- [Padic Digit](padic-digit.md)
-- [Padic Digit lt](padic-digit-lt.md)
-- [Padic Expansion](padic-expansion.md)
-- [Padic Expansion val](padic-expansion-val.md)
-- [Padic Digit mul pow](padic-digit-mul-pow.md)
-- [Appr succ eq](appr-succ-eq.md)
-- [Appr succ eq val](appr-succ-eq-val.md)
-- [Appr eq sum padic Digit](appr-eq-sum-padic-digit.md)
-- [Appr eq sum expansion val](appr-eq-sum-expansion-val.md)
+- [Digits of a p-adic integer](padic-digit.md)
+- [p-adic digits are less than p](padic-digit-lt.md)
+- [p-adic expansion](padic-expansion.md)
+- [Terms of the p-adic expansion are the digits](padic-expansion-val.md)
+- [p-adic digits measure the gaps between approximations](padic-digit-mul-pow.md)
+- [One-step reconstruction from p-adic digits](appr-succ-eq.md)
+- [One-step reconstruction from the p-adic expansion](appr-succ-eq-val.md)
+- [Approximations as sums of p-adic digits](appr-eq-sum-padic-digit.md)
+- [Approximations as truncations of the p-adic expansion](appr-eq-sum-expansion-val.md)

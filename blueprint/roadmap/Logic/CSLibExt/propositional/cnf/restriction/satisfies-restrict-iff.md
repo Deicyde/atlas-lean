@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Logic.PL.CNFClause.satisfies_restrict_iff
 ---
 
-# Satisfies restrict iff
+# Satisfaction of a restricted clause
 
-In a clause not already made true by `literal`, deleting the assigned
-variable preserves satisfaction by an assignment extending `literal`.
+**Satisfaction of a restricted clause.** Let $C$ be a clause, $\ell = (x, b)$ a literal that
+does not occur in $C$, and $v$ an assignment of Booleans to variables with $v(x) = b$. Then $v$
+satisfies the restriction of $C$ by $\ell$ if and only if $v$ satisfies $C$.
 
 ## Depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](../semantics/satisfies-2.md)
-- [Restrict](restrict.md)
+- [Restriction of a clause by a literal](restrict.md)
 
 ## Proof depends on
 
-- [Satisfies](../semantics/satisfies.md)
+- [Satisfaction of a literal](../semantics/satisfies.md)
 
 ## Sources
 

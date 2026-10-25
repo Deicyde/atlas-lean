@@ -6,23 +6,25 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanExponent.ramanujanExponentOf_eq_sInf_admissibleExponents
 ---
 
-# Ramanujan Exponent Of eq s Inf admissible Exponents
+# The Ramanujan exponent is the infimum of the admissible exponents
 
-The supremum definition agrees with the infimum-of-admissible
-exponents formulation of Hypothesis `H₂(δ)`.
+**The Ramanujan exponent is the infimum of the admissible exponents.** For every
+local-exponent family $F$, the Ramanujan exponent of $F$ equals the infimum of the admissible
+exponents of $F$, that is, of the set of real numbers $\delta \ge 0$ such that every local
+exponent of $F$ is at most $\delta$.
 
 ## Depends on
 
-- [Local Exponent Family](local-exponent-family.md)
-- [Admissible Exponents](admissible-exponents.md)
-- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+- [Family of local exponents](local-exponent-family.md)
+- [Admissible exponents of a local-exponent family](admissible-exponents.md)
+- [Ramanujan exponent of a local-exponent family](ramanujan-exponent-of.md)
 
 ## Proof depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissibility of an exponent for a local-exponent family](is-admissible.md)
 - [Exponent Set](exponent-set.md)
-- [Is Admissible ramanujan Exponent Of](is-admissible-ramanujan-exponent-of.md)
-- [Ramanujan Exponent Of le of is Admissible](ramanujan-exponent-of-le-of-is-admissibl.md)
+- [The Ramanujan exponent is admissible](is-admissible-ramanujan-exponent-of.md)
+- [Admissible exponents bound the Ramanujan exponent](ramanujan-exponent-of-le-of-is-admissibl.md)
 
 ## Sources
 

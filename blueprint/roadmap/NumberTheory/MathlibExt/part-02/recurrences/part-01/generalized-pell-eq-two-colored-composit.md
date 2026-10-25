@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.generalized_pell_eq_two_colored_compositions
 ---
 
-# Generalized Pell Numbers
+# Generalized Pell numbers count compositions with two-colored ones
 
-The number of compositions of `n` with parts at most `k`, where a part of size one has two
-colors, equals the `(n + 1)`-st generalized Pell number. Symbols `0` and `1` encode the two
-colors of part one, while symbol `i` encodes the uncolored part `i` for `2 ≤ i ≤ k`.
+**Generalized Pell numbers count compositions with two-colored ones.** Let $k \ge 2$ and
+$n \ge 1$ be natural numbers, and let $(P_m)_{m \in \mathbb{Z}}$ be natural numbers with $P_m = 0$
+for $2 - k \le m \le 0$, $P_1 = 1$, and $P_m = 2P_{m-1} + P_{m-2} + \dots + P_{m-k}$ for all
+$m \ge 2$. Then the number of compositions of $n$ into parts from $\{1, \dots, k\}$, where each
+part equal to $1$ carries one of two colors, equals $P_{n+1}$.
 
 ## Depends on
 

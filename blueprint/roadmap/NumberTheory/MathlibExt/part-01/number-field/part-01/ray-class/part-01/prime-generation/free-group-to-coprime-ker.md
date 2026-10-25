@@ -7,21 +7,27 @@ proof: formalized
 lean: NumberField.Modulus.freeGroupToCoprime_ker
 ---
 
-# Free Group To Coprime ker
+# The kernel of the free-group map is the commutator subgroup
 
-The kernel of the free-group presentation is exactly the commutator
-subgroup. The reverse inclusion is the generic
-`Abelianization.commutator_subset_ker`, since the coprime ideals commute.
+**The kernel of the free-group map is the commutator subgroup.** Let $\mathfrak m$ be a
+modulus of a number field $K$, let $P$ be the set of nonzero prime ideals of the ring of
+integers $\mathcal O_K$ that do not divide the finite part of $\mathfrak m$, and let
+$I_K^{\mathfrak m}$ be the group of invertible fractional ideals of $K$ coprime to the finite
+part of $\mathfrak m$. The kernel of the homomorphism $F(P) \to I_K^{\mathfrak m}$ from the free
+group on $P$ sending each generator $\mathfrak p$ to $\mathfrak p$ equals the commutator
+subgroup $[F(P), F(P)]$.
+
+The commutator subgroup lies in the kernel because $I_K^{\mathfrak m}$ is abelian.
 
 ## Depends on
 
-- [Coprime Primes](coprime-primes.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Free Group To Coprime](free-group-to-coprime.md)
+- [Primes coprime to a modulus](coprime-primes.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [The free group on the coprime primes maps to the coprime ideals](free-group-to-coprime.md)
 
 ## Proof depends on
 
-- [Free Group To Coprime ker le commutator](free-group-to-coprime-ker-le-commutator.md)
+- [The kernel of the free-group map lies in the commutator subgroup](free-group-to-coprime-ker-le-commutator.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ navigation: module
 
 # Reversal
 
-- [Reverse](reverse.md)
-- [Strict Increasing Tuple](strict-increasing-tuple.md)
-- [Is Increasing Admissible](is-increasing-admissible.md)
-- [Is Increasing Admissible iff reverse is Admissible](is-increasing-admissible-iff-reverse-is.md)
-- [Reverse entry](reverse-entry.md)
-- [Increasing Summand](increasing-summand.md)
-- [Increasing Value](increasing-value.md)
-- [Increasing Equiv Decreasing](increasing-equiv-decreasing.md)
-- [Increasing Summand eq strict Summand reverse](increasing-summand-eq-strict-summand-rev.md)
-- [Increasing Value eq strict Value reverse](increasing-value-eq-strict-value-reverse.md)
+- [Reversed index](reverse.md)
+- [Strictly increasing tuples](strict-increasing-tuple.md)
+- [Admissibility in the increasing convention](is-increasing-admissible.md)
+- [Increasing admissibility is admissibility of the reverse](is-increasing-admissible-iff-reverse-is.md)
+- [Entries of the reversed index](reverse-entry.md)
+- [Summand of the increasing multiple-zeta series](increasing-summand.md)
+- [Multiple zeta value in the increasing convention](increasing-value.md)
+- [Reversal of strictly increasing tuples](increasing-equiv-decreasing.md)
+- [Reversal preserves each summand](increasing-summand-eq-strict-summand-rev.md)
+- [Increasing values agree with strict values of the reverse](increasing-value-eq-strict-value-reverse.md)

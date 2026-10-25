@@ -7,19 +7,21 @@ proof: formalized
 lean: Nat.Primes.logDirichletContinuation_analyticOn
 ---
 
-# Log Dirichlet Continuation analytic On
+# Analyticity of the prime logarithmic continuation
 
-The canonical continuation is analytic on the closed half-plane `Re s ≥ 1`.
+**Analyticity of the prime logarithmic continuation.** The prime logarithmic continuation
+$G$ is analytic at every point of the closed half-plane
+$\{s \in \mathbb{C} : \operatorname{Re} s \ge 1\}$.
 
 ## Depends on
 
-- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+- [The canonical prime logarithmic continuation](log-dirichlet-continuation.md)
 
 ## Proof depends on
 
-- [Log Dirichlet Correction](log-dirichlet-correction.md)
-- [Log Dirichlet Correction analytic On](log-dirichlet-correction-analytic-on.md)
-- [Riemann Zeta₁ ne zero of one le re](riemann-zeta-ne-zero-of-one-le-re.md)
+- [Prime-power correction series](log-dirichlet-correction.md)
+- [Analyticity of the prime-power correction series](log-dirichlet-correction-analytic-on.md)
+- [Nonvanishing of the Riemann zeta function times $s - 1$ on $\operatorname{Re} s \ge 1$](riemann-zeta-ne-zero-of-one-le-re.md)
 
 ## Sources
 

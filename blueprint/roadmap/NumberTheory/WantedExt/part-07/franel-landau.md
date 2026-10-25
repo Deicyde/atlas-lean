@@ -15,7 +15,7 @@ holds iff for every
 
 ## Depends on
 
-- [Farey Seq](../../MathlibExt/part-05/farey/farey-seq.md)
+- [Farey sequence](../../MathlibExt/part-05/farey/farey-seq.md)
 
 ## Sources
 

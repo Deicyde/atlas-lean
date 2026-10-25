@@ -7,14 +7,15 @@ proof: formalized
 lean: ArithmeticFunction.alderTotientTwo_succ_Iic_apply
 ---
 
-# Alder Totient Two succ Iic apply
+# Alder's totient at a successor as a count over an inclusive range
 
-Inclusive `Iic` form of the shifted theorem, matching the source's
-`0 ≤ r ≤ k` range: `Finset.Iic k` with source-order predicates.
+**Alder's totient at a successor as a count over an inclusive range.** For every natural
+number $k$, Alder's totient $g$ with second argument $2$ satisfies that $g(k+1)$ is the number
+of natural numbers $r \le k$ with $\gcd(r, k+1) = 1$ and $\gcd(2r+1, k+1) = 1$.
 
 ## Depends on
 
-- [Alder Totient Two](alder-totient-two.md)
+- [Alder's totient with second argument 2](alder-totient-two.md)
 
 ## Sources
 

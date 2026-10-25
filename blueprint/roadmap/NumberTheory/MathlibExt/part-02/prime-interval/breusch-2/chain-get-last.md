@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.chain_getLast
 ---
 
-# Chain get Last
+# Last entry of Breusch's prime chain
 
-The chain ends at `9820997`.
+**Last entry of Breusch's prime chain.** The last entry of the chain is $9820997$.
 
 ## Depends on
 
-- [Chain](chain.md)
+- [Breusch's prime chain](chain.md)
 
 ## Sources
 

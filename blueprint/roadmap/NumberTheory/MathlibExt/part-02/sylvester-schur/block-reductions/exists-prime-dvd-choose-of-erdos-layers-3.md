@@ -7,9 +7,14 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_erdos_layers_three_layers_bound
 ---
 
-# Exists prime dvd choose of erdos layers three layers bound
+# Sylvester–Schur criterion from the three-layer power-of-four Erdős bound
 
-Three-layer power-of-four Erdős estimate in binomial form.
+**Sylvester–Schur criterion from the three-layer power-of-four Erdős bound.** Let
+$1 \le n < k$ be natural numbers and put $N = k + n - 1$. If
+
+$$n! \cdot 4^{n+\lfloor\sqrt N\rfloor+\lfloor N^{1/3}\rfloor\lfloor\log_2 N\rfloor} < k^n,$$
+
+then some prime $p > n$ divides $\binom{N}{n}$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists prime dvd choose of erdos layers bound](exists-prime-dvd-choose-of-erdos-layers.md)
-- [Erdos layers le four pow three layers](../erdos-power-bounds/erdos-layers-le-four-pow-three-layers.md)
+- [Sylvester–Schur criterion from the Erdős layer bound](exists-prime-dvd-choose-of-erdos-layers.md)
+- [Three-layer power-of-four bound for the Erdős layer product](../erdos-power-bounds/erdos-layers-le-four-pow-three-layers.md)
 
 ## Sources
 

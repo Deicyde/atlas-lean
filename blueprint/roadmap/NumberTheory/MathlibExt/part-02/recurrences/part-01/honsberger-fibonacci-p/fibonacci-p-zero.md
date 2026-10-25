@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciP_zero
 ---
 
-# Fibonacci P zero
+# Zeroth Fibonacci p-number
 
-The zeroth Fibonacci `p`-number is zero.
+**Zeroth Fibonacci p-number.** For every natural number $p$, the Fibonacci $p$-number
+$F_p(0)$ equals $0$.
 
 ## Depends on
 
-- [Fibonacci P](fibonacci-p.md)
+- [Fibonacci p-numbers](fibonacci-p.md)
 
 ## Sources
 

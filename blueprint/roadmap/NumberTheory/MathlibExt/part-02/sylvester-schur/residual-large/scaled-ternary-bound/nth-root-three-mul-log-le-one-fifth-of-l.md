@@ -7,10 +7,11 @@ proof: formalized
 lean: Nat.SylvesterSchur.Internal.nthRoot_three_mul_log_le_one_fifth_of_le_four_mul
 ---
 
-# Nth Root three mul log le one fifth of le four mul
+# Cube root times logarithm on a linear range
 
-In the range `N ≤ 4 * n`, the `Nat.nthRoot 3 N * Nat.log 2 N` contribution is at
-most `n / 5`.
+**Cube root times logarithm on a linear range.** Let $n$ and $N$ be natural numbers with
+$945 \le n$ and $N \le 4n$. Then $\lfloor N^{1/3} \rfloor \cdot \lfloor \log_2 N \rfloor \le
+\lfloor n/5 \rfloor$, where $\lfloor \log_2 N \rfloor$ is read as $0$ when $N = 0$.
 
 ## Depends on
 

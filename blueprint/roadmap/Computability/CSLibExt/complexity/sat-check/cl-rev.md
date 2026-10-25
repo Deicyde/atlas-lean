@@ -16,7 +16,7 @@ empty for $n = 0$) in reverse order.
 ## Depends on
 
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

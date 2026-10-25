@@ -7,13 +7,16 @@ proof: formalized
 lean: NumberField.FiniteIdeleGroup.isOpen_localIntegralUnitSubgroup
 ---
 
-# Is Open local Integral Unit Subgroup
+# The local integral units are open
 
-The integral unit subgroup at a finite place is open in the local multiplicative group.
+**The local integral units are open.** Let $R$ be a Dedekind domain with fraction field $K$,
+let $v$ be a height-one prime of $R$, and let $\mathcal{O}_v$ be the ring of integers of the
+$v$-adic completion $K_v$ of $K$. Then $\mathcal{O}_v^\times$ is an open subset of the unit group
+$K_v^\times$.
 
 ## Depends on
 
-- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+- [Local integral unit subgroup](local-integral-unit-subgroup.md)
 
 ## Sources
 

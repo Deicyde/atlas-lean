@@ -5,6 +5,6 @@ navigation: module
 
 # Consecutive Prime
 
-- [Are Consecutive Primes](are-consecutive-primes.md)
-- [Is Consecutive Prime Block](is-consecutive-prime-block.md)
-- [Is Restricted Consecutive Prime Block](is-restricted-consecutive-prime-block.md)
+- [Consecutive primes](are-consecutive-primes.md)
+- [Block of consecutive primes](is-consecutive-prime-block.md)
+- [Restricted block of consecutive primes](is-restricted-consecutive-prime-block.md)

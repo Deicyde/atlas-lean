@@ -7,22 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.summable_strictSummand
 ---
 
-# Convergence
+# Convergence of multiple zeta series
 
-The ordinary strict multiple-zeta series converges for every admissible index. Here summation
-variables are strictly decreasing, so admissibility requires the first exponent to be at least two.
+**Convergence of multiple zeta series.** Let $\mathbf{k} = (k_1, \dots, k_r)$ be an admissible
+index, that is, a nonempty index of positive integers with $k_1 \ge 2$. Then the strict
+multiple-zeta series of $\mathbf{k}$, the family of terms $(m_1^{k_1} \cdots m_r^{k_r})^{-1}$
+indexed by the strictly decreasing tuples $m_1 > \cdots > m_r$ of positive integers, is summable.
 
 ## Depends on
 
-- [Index](index/index.md)
-- [Is Admissible](index/is-admissible.md)
-- [Depth](index/depth.md)
-- [Strict Decreasing Tuple](series/strict-decreasing-tuple.md)
-- [Strict Summand](series/strict-summand.md)
+- [Multiple-zeta index](index/index.md)
+- [Admissible index](index/is-admissible.md)
+- [Depth of an index](index/depth.md)
+- [Strictly decreasing tuples](series/strict-decreasing-tuple.md)
+- [Multiple zeta summand](series/strict-summand.md)
 
 ## Proof depends on
 
-- [Entry](series/entry.md)
+- [Entry of a multiple-zeta index](series/entry.md)
 
 ## Sources
 

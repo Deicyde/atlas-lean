@@ -6,9 +6,11 @@ statement: formalized
 lean: PadicInt.padicExpansion
 ---
 
-# Padic Expansion
+# p-adic expansion
 
-The `n`-th digit bundled as an element of `Fin p`.
+**p-adic expansion.** Let $p$ be a prime and $a \in \mathbb{Z}_p$. The $p$-adic expansion of
+$a$ is the sequence whose $n$-th term is the $n$-th $p$-adic digit of $a$, viewed as an element of
+$\{0, 1, \dots, p - 1\}$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Padic Digit](padic-digit.md)
-- [Padic Digit lt](padic-digit-lt.md)
+- [Digits of a p-adic integer](padic-digit.md)
+- [p-adic digits are less than p](padic-digit-lt.md)
 
 ## Sources
 

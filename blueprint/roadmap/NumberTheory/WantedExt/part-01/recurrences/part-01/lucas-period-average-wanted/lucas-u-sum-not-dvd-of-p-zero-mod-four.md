@@ -13,7 +13,7 @@ Theorem 2.16: for nondegenerate `U(a, b)` with `a ≡ 0 (mod 4)` and `b ≡ 1 (m
 
 ## Depends on
 
-- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
 - [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas Average Set](lucas-average-set.md)
 - [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)

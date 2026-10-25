@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Logic.PL.BDD.size
 ---
 
-# Size
+# Size of a diagram
 
-The number of leaves and nodes.
+**Size of a diagram.** The size of a diagram is its number of leaves and nodes, counted in
+tree form: a leaf has size $1$, and a node with children $\ell$ and $h$ has size one more than the
+sum of the sizes of $\ell$ and $h$.
 
 ## Depends on
 
-- [BDD](bdd.md)
+- [Binary decision diagram](bdd.md)
 
 ## Sources
 

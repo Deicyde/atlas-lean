@@ -5,11 +5,11 @@ navigation: module
 
 # Pontryagin Dual
 
-- [Padic Quotient Int](padic-quotient-int.md)
-- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
-- [Padic Pontryagin Dual ext](padic-pontryagin-dual-ext.md)
-- [Padic Quotient Map](padic-quotient-map.md)
-- [Padic Quotient Map algebra Map eq zero](padic-quotient-map-algebra-map-eq-zero.md)
-- [Padic Quotient Map mk Q eq](padic-quotient-map-mk-q-eq.md)
-- [Contragredient SMul](contragredient-smul.md)
-- [Smul apply](smul-apply.md)
+- [The quotient $\mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-int.md)
+- [Algebraic $p$-adic Pontryagin dual](padic-pontryagin-dual.md)
+- [Extensionality for the $p$-adic Pontryagin dual](padic-pontryagin-dual-ext.md)
+- [The quotient map $\mathbb{Q}_p \to \mathbb{Q}_p/\mathbb{Z}_p$](padic-quotient-map.md)
+- [The quotient map vanishes on $\mathbb{Z}_p$](padic-quotient-map-algebra-map-eq-zero.md)
+- [The quotient map is the quotient projection](padic-quotient-map-mk-q-eq.md)
+- [Contragredient action on the $p$-adic Pontryagin dual](contragredient-smul.md)
+- [Evaluating the contragredient action](smul-apply.md)

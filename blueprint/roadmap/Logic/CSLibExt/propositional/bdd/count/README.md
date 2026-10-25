@@ -4,10 +4,10 @@ navigation: module
 
 # Count
 
-- [Vars LT](vars-lt.md)
-- [Sat Count From](sat-count-from.md)
-- [Sat Count](sat-count.md)
-- [Count Models](count-models.md)
-- [Count Models congr](count-models-congr.md)
-- [Sat Count From eq count Models](sat-count-from-eq-count-models.md)
-- [Satisfy-count](sat-count-eq-count-models.md)
+- [Variables below a bound](vars-lt.md)
+- [One-pass satisfy-count from a variable](sat-count-from.md)
+- [Satisfy-count](sat-count.md)
+- [Model count by enumeration](count-models.md)
+- [Congruence for the model count](count-models-congr.md)
+- [The satisfy-count from a variable counts models](sat-count-from-eq-count-models.md)
+- [Correctness of the satisfy-count](sat-count-eq-count-models.md)

@@ -19,7 +19,7 @@ list of $\varphi$: both the returned Boolean and the declared time cost are the 
 - [Decoding a complete length-prefixed CNF formula](../cook-levin/decode-cnf.md)
 - [The SAT verifier](sat-verifier.md)
 - [Occurrence list of a CNF formula](vars-of.md)
-- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

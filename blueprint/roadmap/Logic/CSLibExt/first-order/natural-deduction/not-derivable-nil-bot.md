@@ -16,7 +16,7 @@ lean: Cslib.Logic.FOL.not_derivable_nil_bot
 
 ## Proof depends on
 
-- [Soundness](sound.md)
+- [Soundness of first-order natural deduction](sound.md)
 
 ## Sources
 

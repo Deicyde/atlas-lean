@@ -5,5 +5,5 @@ navigation: module
 
 # Midy
 
-- [Midy theorem general](midy-theorem-general.md)
-- [Midy theorem](midy-theorem.md)
+- [Midy's theorem, general form](midy-theorem-general.md)
+- [Midy's theorem](midy-theorem.md)

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N9m
 ---
 
-# N9m
+# Scaled factorial argument N₉
 
-Scaled factorial argument `9 * n * (Q9 / m)`.
+**Scaled factorial argument N₉.** For natural numbers $m$ and $n$,
+$N_9(m, n) = 9n \lfloor Q_9 / m \rfloor$, where $Q_9 = 210$ and $\lfloor Q_9 / m \rfloor$ is the
+quotient of natural-number division, taken to be $0$ when $m = 0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q9](../grid/q9.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Sources
 

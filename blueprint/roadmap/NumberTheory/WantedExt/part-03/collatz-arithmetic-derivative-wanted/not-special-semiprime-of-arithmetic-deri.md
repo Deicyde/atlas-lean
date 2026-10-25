@@ -13,7 +13,7 @@ safe prime.
 
 ## Depends on
 
-- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
 - [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources

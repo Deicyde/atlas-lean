@@ -6,11 +6,11 @@ statement: formalized
 lean: NumberField.TopologicalIdeleClassGroup
 ---
 
-# Topological Idele Class Group
+# Topological idele class group
 
-The topological idele class group, namely the quotient of the topological idele
-group by principal ideles. Upstream `NumberField.IdeleClassGroup` (the quotient of
-`𝔸[R, K]ˣ`) is a distinct type.
+**Topological idele class group.** Let $R$ be a Dedekind domain with fraction field $K$. The
+topological idele class group is the quotient group of the topological idele group of $R$ and $K$
+by its subgroup of principal ideles, the image of the diagonal homomorphism from $K^\times$.
 
 ## Depends on
 
@@ -18,11 +18,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Idele Group](finite-idele-group.md)
-- [Infinite Idele Group](infinite-idele-group.md)
-- [Topological Idele Group](topological-idele-group.md)
-- [Principal Ideles](principal-ideles.md)
-- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+- [Finite idele group](finite-idele-group.md)
+- [Infinite idele group](infinite-idele-group.md)
+- [Topological idele group](topological-idele-group.md)
+- [Principal ideles](principal-ideles.md)
+- [Local integral unit subgroup](local-integral-unit-subgroup.md)
 
 ## Sources
 

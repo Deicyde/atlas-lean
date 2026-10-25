@@ -7,17 +7,17 @@ navigation: module
 
 ## Polynomial
 
-- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
-- [Unfold](unfold.md)
+- [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
+- [Unfolding the greatest common monic divisor](unfold.md)
 
 ## Nat
 
-- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
-- [Is Frobenius Pseudoprime](is-frobenius-pseudoprime.md)
-- [Unfold](unfold-2.md)
-- [Monic](monic.md)
-- [Odd](odd.md)
-- [One lt](one-lt.md)
-- [Unfold](unfold-3.md)
-- [Composite](composite.md)
-- [Probable Prime](probable-prime.md)
+- [Frobenius probable prime](is-frobenius-probable-prime.md)
+- [Frobenius pseudoprime](is-frobenius-pseudoprime.md)
+- [Characterization of Frobenius probable primes](unfold-2.md)
+- [Frobenius probable primes use monic polynomials](monic.md)
+- [Frobenius probable primes are odd](odd.md)
+- [Frobenius probable primes exceed one](one-lt.md)
+- [Characterization of Frobenius pseudoprimes](unfold-3.md)
+- [Frobenius pseudoprimes are not prime](composite.md)
+- [Frobenius pseudoprimes are Frobenius probable primes](probable-prime.md)

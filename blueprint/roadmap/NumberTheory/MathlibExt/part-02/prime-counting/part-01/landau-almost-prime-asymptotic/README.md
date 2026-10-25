@@ -5,5 +5,5 @@ navigation: module
 
 # Landau Almost Prime Asymptotic
 
-- [Almost Prime Counting](almost-prime-counting.md)
-- [Landau almost Prime Counting is Equivalent](landau-almost-prime-counting-is-equivale.md)
+- [Counting almost primes](almost-prime-counting.md)
+- [Landau's theorem on almost primes](landau-almost-prime-counting-is-equivale.md)

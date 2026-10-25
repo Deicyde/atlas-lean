@@ -7,23 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.three_gap
 ---
 
-# Three gap
+# Three-gap theorem
 
-Three-gap theorem (statement `three-gap-s1`): the fractional parts of the
-multiples `0, α, 2 * α, ..., (n - 1) * α` cut the circle into `n` arcs taking
-at most three distinct lengths. Irrationality ensures the indexed points are distinct.
-When exactly three lengths occur, the largest is the sum of the other two.
+**Three-gap theorem.** Let $n \ge 1$ be a natural number and $\alpha$ an irrational real
+number. Consider the points $\operatorname{frac}(k\alpha) = k\alpha - \lfloor k\alpha \rfloor$ for
+$0 \le k < n$ on the circle $[0, 1)$. The set of gap lengths of $n$ and $\alpha$, that is, the
+lengths of the gaps between cyclically consecutive points, including the gap that wraps around
+from the greatest point to the least, is finite and has at most three elements. If it has exactly
+three elements, the largest of them is the sum of the other two.
 
 Proof: We formalize the standard successor argument of Sós (1958) and Świerczkowski (1959),
 following Alessandri and Berthé, *Three distance theorems and combinatorics on words*, §2.
 
 ## Depends on
 
-- [Is Three Gap Length](is-three-gap-length.md)
+- [Gap lengths of the three-gap configuration](is-three-gap-length.md)
 
 ## Proof depends on
 
-- [Is Three Gap Point](is-three-gap-point.md)
+- [Points of the three-gap configuration](is-three-gap-point.md)
 
 ## Sources
 

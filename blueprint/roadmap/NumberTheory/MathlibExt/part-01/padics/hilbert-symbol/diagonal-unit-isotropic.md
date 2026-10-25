@@ -7,10 +7,12 @@ proof: formalized
 lean: HilbertSymbol.diagonal_unit_isotropic
 ---
 
-# Isotropic
+# Unit diagonal forms in at least three variables over $\mathbb{Q}_p$ are isotropic for odd $p$
 
-ArithmeticGeometry:75: a diagonal form in more than two variables over `ℚ_[p]`,
-with `p` odd and every coefficient a unit of `ℤ_[p]`, is isotropic.
+**Unit diagonal forms in at least three variables over $\mathbb{Q}_p$ are isotropic for odd
+$p$.** Let $p$ be an odd prime, let $n > 2$, and let $a_1, \dots, a_n$ be units of $\mathbb{Z}_p$.
+Then there is a nonzero vector $(x_1, \dots, x_n) \in \mathbb{Q}_p^n$ with
+$a_1 x_1^2 + \dots + a_n x_n^2 = 0$.
 
 ## Depends on
 
@@ -19,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.HilbertSymbol.Isotropic](../../../../../../sources/v2/MathlibExt.md)
+- ArithmeticGeometry:75.

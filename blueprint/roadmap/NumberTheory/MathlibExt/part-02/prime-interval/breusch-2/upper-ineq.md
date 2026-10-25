@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log F9](../breusch/lower/log-f9.md)
+- [Logarithm of Breusch's product $F_9(n)$](../breusch/lower/log-f9.md)
 
 ## Sources
 

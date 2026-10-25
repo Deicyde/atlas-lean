@@ -6,34 +6,38 @@ proof: formalized
 lean: Cslib.Logic.FOL.exists_maximalConsistent_henkin
 ---
 
-# Exists maximal Consistent henkin
+# Henkin extension of a consistent set
 
-A consistent set whose free variables are even extends to a maximal consistent set with a
-witness for every universal formula.
+**Henkin extension of a consistent set.** Let $L$ be a language with countably many symbols
+and let $S$ be a consistent set of first-order formulas with free variables in $\mathbb{N}$ such
+that every free variable of every formula in $S$ is even. Then $S$ is contained in a maximal
+consistent set $\Delta$ with the Henkin property: for every formula $\varphi$ with one bound
+variable, if every instance $\varphi(t)$, for $t$ a term over $\mathbb{N}$, lies in $\Delta$, then
+$\forall \varphi$ lies in $\Delta$.
 
 ## Depends on
 
 - [Consistent](../consistency/consistent.md)
-- [Maximal Consistent](../consistency/maximal-consistent.md)
-- [Instantiate](../syntax/instantiate.md)
+- [Maximal consistent set](../consistency/maximal-consistent.md)
+- [Instantiating the outermost bound variable of a formula](../syntax/instantiate.md)
 
 ## Proof depends on
 
-- [Insert henkin Axiom](../consistency/insert-henkin-axiom.md)
+- [Adding a Henkin axiom preserves consistency](../consistency/insert-henkin-axiom.md)
 - [Natural deduction](../natural-deduction/derivable.md)
-- [All mem of henkin](../consistency/all-mem-of-henkin.md)
-- [Provable](../natural-deduction/provable.md)
-- [Consistent s Union of is Chain](../consistency/consistent-s-union-of-is-chain.md)
-- [Enum Body](enum-body.md)
-- [Lindenbaum's lemma](../consistency/exists-maximal-consistent.md)
-- [Free Var Finset instantiate subset](free-var-finset-instantiate-subset.md)
-- [Henkin Axiom](../consistency/henkin-axiom.md)
-- [Henkin Axiom At](henkin-axiom-at.md)
-- [Henkin Set](henkin-set.md)
-- [Henkin Stage](henkin-stage.md)
-- [Var Bound](var-bound.md)
-- [Witness](witness.md)
-- [Witness Base](witness-base.md)
+- [Universal formulas from Henkin witnesses](../consistency/all-mem-of-henkin.md)
+- [Provability from a set of formulas](../natural-deduction/provable.md)
+- [Unions of chains of consistent sets are consistent](../consistency/consistent-s-union-of-is-chain.md)
+- [Enumeration of formulas with one bound variable](enum-body.md)
+- [Lindenbaum's lemma for first-order logic](../consistency/exists-maximal-consistent.md)
+- [Free variables of an instance](free-var-finset-instantiate-subset.md)
+- [Henkin axiom](../consistency/henkin-axiom.md)
+- [The $k$-th Henkin axiom](henkin-axiom-at.md)
+- [Henkin extension](henkin-set.md)
+- [Stages of the Henkin extension](henkin-stage.md)
+- [Variable bound of a formula](var-bound.md)
+- [Henkin witnesses](witness.md)
+- [Witness bases](witness-base.md)
 
 ## Sources
 

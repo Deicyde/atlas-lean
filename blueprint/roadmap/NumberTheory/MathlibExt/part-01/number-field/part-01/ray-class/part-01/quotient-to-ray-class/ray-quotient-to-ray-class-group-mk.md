@@ -7,24 +7,26 @@ proof: formalized
 lean: NumberField.Modulus.rayQuotientToRayClassGroup_mk
 ---
 
-# Ray Quotient To Ray Class Group mk
+# Quotient-to-ray-class map on representatives
 
-The quotient map evaluated on a class representative.
+**Quotient-to-ray-class map on representatives.** Let $\mathfrak m$ be a modulus of a number
+field $K$. For every ray element $x$ of $\mathfrak m$, the quotient-to-ray-class map sends the
+class of $x$ modulo the ray-one elements to the image of $x$ under the ray-element class map.
 
 ## Depends on
 
-- [Ray Class Group](../group/ray-class-group.md)
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Ray Element Class Map](ray-element-class-map.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
-- [Ray Group](../../part-02/ray-group/ray-group.md)
-- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
-- [Ray Quotient To Ray Class Group](ray-quotient-to-ray-class-group.md)
+- [Ray class group](../group/ray-class-group.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray-element class map](ray-element-class-map.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
+- [The ray group of a modulus](../../part-02/ray-group/ray-group.md)
+- [Ray-one subgroup](../../part-02/residue-sign/ray-one-elements.md)
+- [Quotient-to-ray-class map](ray-quotient-to-ray-class-group.md)
 
 ## Proof depends on
 
-- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
-- [Ray Class Map](../group/ray-class-map.md)
+- [Principal ray ideal map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray class map](../group/ray-class-map.md)
 
 ## Sources
 

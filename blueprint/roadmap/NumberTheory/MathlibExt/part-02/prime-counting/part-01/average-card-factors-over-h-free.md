@@ -7,13 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.average_cardFactors_over_h_free
 ---
 
-# Average Omega HFree
+# Average number of prime factors of h-free integers
 
-For every fixed integer `h ≥ 2`, the sum of the total numbers of prime factors
-of the `h`-free positive integers at most `x` is `x * log (log x) / ζ(h)` up
-to an error of order `x`. The `h`-free condition is rendered as
-`n.factorization p < h` for all `p ∈ n.primeFactors`, and the main-term
-constant is `(riemannZeta h).re⁻¹`.
+**Average number of prime factors of h-free integers.** Let $h \ge 2$ be an integer. Call a
+positive integer $n$ $h$-free if every prime occurs in the factorization of $n$ with exponent less
+than $h$, and write $\Omega(n)$ for the number of prime factors of $n$ counted with multiplicity
+and $\zeta$ for the Riemann zeta function. Then, as the real number $x$ tends to infinity,
+
+$$
+\sum_{\substack{1 \le n \le x \\ n \ h\text{-free}}} \Omega(n)
+= \frac{x \log\log x}{\zeta(h)} + O(x).
+$$
 
 ## Depends on
 

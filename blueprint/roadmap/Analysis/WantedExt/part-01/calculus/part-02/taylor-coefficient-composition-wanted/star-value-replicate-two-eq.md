@@ -24,13 +24,13 @@ at $k = 0$ all three expressions equal $1$, since $\zeta(0) = -1/2$.
 
 ## Depends on
 
-- [Replicate](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate.md)
-- [Replicate is Admissible Or Empty](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate-is-admissible-or-empty.md)
-- [Star Value](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/star-value.md)
+- [Repeated index](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate.md)
+- [Repeated indices with entry at least two are admissible or empty](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate-is-admissible-or-empty.md)
+- [Multiple zeta-star value](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/star-value.md)
 
 ## Proof depends on
 
-- [Is Admissible Or Empty](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/is-admissible-or-empty.md)
+- [Admissible or empty index](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/is-admissible-or-empty.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: Farey.fareyFinset_mono
 ---
 
-# Farey Finset mono
+# Farey sets grow with the order
 
-Farey carriers are monotone in their order.
+**Farey sets grow with the order.** If $m \le n$ are natural numbers, then every element of the
+Farey set $F_m$ belongs to $F_n$, that is, $F_m \subseteq F_n$.
 
 ## Depends on
 
-- [Farey Finset](farey-finset.md)
+- [Farey set](farey-finset.md)
 
 ## Proof depends on
 
-- [Mem farey Finset iff](mem-farey-finset-iff.md)
+- [Membership in the Farey set](mem-farey-finset-iff.md)
 
 ## Sources
 

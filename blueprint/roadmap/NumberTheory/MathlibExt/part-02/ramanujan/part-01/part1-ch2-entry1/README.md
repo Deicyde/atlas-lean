@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch2 Entry1
 
-- [Ramanujan part1 ch2 entry1 general](ramanujan-part1-ch2-entry1-general.md)
-- [Ramanujan part1 ch2 entry1](ramanujan-part1-ch2-entry1.md)
+- [Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$, including $n = 0$](ramanujan-part1-ch2-entry1-general.md)
+- [Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$](ramanujan-part1-ch2-entry1.md)

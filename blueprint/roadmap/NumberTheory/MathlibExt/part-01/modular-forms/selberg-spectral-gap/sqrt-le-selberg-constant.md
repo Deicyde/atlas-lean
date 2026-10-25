@@ -6,22 +6,24 @@ proof: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.sqrt_le_selbergConstant
 ---
 
-# Sqrt le selberg Constant
+# Exceptional eigenvalues bound Selberg's constant
 
-An exceptional eigenvalue for a congruence subgroup bounds Selberg's
-constant from below by its square-root gap.
+**Exceptional eigenvalues bound Selberg's constant.** Let $\Gamma$ be a congruence
+subgroup of $\mathrm{SL}(2, \mathbb{Z})$ and let $\lambda$ be a real eigenvalue of the
+hyperbolic Laplacian on $L^2(\Gamma \backslash \mathbb{H})$ with $0 < \lambda < 1/4$.
+Then $\sqrt{1/4 - \lambda}$ is at most Selberg's constant $C_{61}$.
 
 ## Depends on
 
-- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Congruence subgroup of the modular group](is-congruence-subgroup.md)
 - [Is Eigenvalue](is-eigenvalue.md)
-- [Selberg Constant](selberg-constant.md)
+- [Selberg's congruence spectral-gap constant](selberg-constant.md)
 
 ## Proof depends on
 
-- [Exceptional Gap](exceptional-gap.md)
-- [Exceptional Gap le selberg Constant](exceptional-gap-le-selberg-constant.md)
-- [Sqrt le exceptional Gap](sqrt-le-exceptional-gap.md)
+- [Gap parameter of a subgroup of the modular group](exceptional-gap.md)
+- [Congruence gaps are bounded by Selberg's constant](exceptional-gap-le-selberg-constant.md)
+- [Exceptional eigenvalues bound the gap parameter](sqrt-le-exceptional-gap.md)
 
 ## Sources
 

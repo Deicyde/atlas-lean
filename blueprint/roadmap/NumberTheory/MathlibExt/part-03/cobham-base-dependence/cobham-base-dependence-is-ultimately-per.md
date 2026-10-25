@@ -7,21 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.cobham_base_dependence_isUltimatelyPeriodic
 ---
 
-# Cobham base dependence is Ultimately Periodic
+# Cobham's theorem for characteristic sequences
 
-Cobham's theorem with aperiodicity stated for the characteristic sequence.
+**Cobham's theorem for characteristic sequences.** Let $k$ and $l$ be multiplicatively
+independent natural numbers with $l \ge 2$, and let $S$ be a set of natural numbers that is
+recognizable in base $k$ and whose characteristic sequence $n \mapsto (n \in S)$, a sequence of
+truth values, is not ultimately periodic. Then $S$ is not recognizable in base $l$.
 
 ## Depends on
 
-- [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)
-- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+- [Multiplicatively independent bases](bases-multiplicatively-independent.md)
+- [Sets recognizable in base k](../base-recognizable/is-base-recognizable.md)
 - [Ultimately periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
 
 ## Proof depends on
 
-- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
-- [Cobham base dependence](cobham-base-dependence.md)
-- [Is Ultimately Periodic Set iff is Ultimately Periodic](is-ultimately-periodic-set-iff-is-ultima.md)
+- [Ultimately periodic sets of natural numbers](is-ultimately-periodic-set.md)
+- [Cobham's theorem](cobham-base-dependence.md)
+- [Ultimately periodic sets and their characteristic sequences](is-ultimately-periodic-set-iff-is-ultima.md)
 
 ## Sources
 

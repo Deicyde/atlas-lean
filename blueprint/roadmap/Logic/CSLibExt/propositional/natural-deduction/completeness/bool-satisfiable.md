@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Logic.PL.BoolSatisfiable
 ---
 
-# Bool Satisfiable
+# Satisfiable sets of propositions
 
-`S` is satisfiable: some valuation with `⊥` false makes every member of `S` true.
+**Satisfiable sets of propositions.** A set $S$ of propositions is satisfiable when some
+Boolean valuation $v$ of the atoms with $v(\bot) = \mathrm{false}$ makes every member of $S$
+true.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval Bool](../semantics/eval-bool.md)
+- [Truth-table evaluation](../semantics/eval-bool.md)
 
 ## Sources
 

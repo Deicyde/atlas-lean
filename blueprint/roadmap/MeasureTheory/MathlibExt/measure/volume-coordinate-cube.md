@@ -6,10 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.volume_coordinateCube
 ---
 
-# Coordinate Cube
+# Volume of the coordinate cube
 
-The actual coordinate cube has Euclidean volume `2^n`.
-This is the cube-volume identity in optimizationproblems `constants/25a.md`, line 44.
+**Volume of the coordinate cube.** For every $n \in \mathbb{N}$, the coordinate cube
+$[-1, 1]^n$ in the Euclidean space $\mathbb{R}^n$ has volume $2^n$.
 
 ## Depends on
 
@@ -22,3 +22,4 @@ This is the cube-volume identity in optimizationproblems `constants/25a.md`, lin
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Measure.CoordinateCube](../../../../sources/v2/MathlibExt.md)
+- optimizationproblems `constants/25a.md`, line 44 (the cube-volume identity).

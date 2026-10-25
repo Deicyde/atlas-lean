@@ -7,10 +7,14 @@ proof: formalized
 lean: Nat.SylvesterSchur.exists_large_prime_dvd_choose_of_upper_lt_lower
 ---
 
-# Exists large prime dvd choose of upper lt lower
+# A prime divisor of $\binom{N}{r}$ above $r$ from an upper bound below the lower bound
 
-If a no-large-prime upper bound for `Nat.choose N r` is smaller than Mathlib's lower
-bound, then `Nat.choose N r` has a prime divisor greater than `r`.
+**A prime divisor of $\binom{N}{r}$ above $r$ from an upper bound below the lower bound.**
+Let $N$, $r$ and $U$ be natural numbers, and let $m = \max(N + 1 - r, 0)$. Suppose that
+$\binom{N}{r} \le U$ whenever every prime dividing $\binom{N}{r}$ is at most $r$, and that
+$U < m^r / r!$ as rational numbers. Then some prime $p$ with $r < p$ divides $\binom{N}{r}$.
+
+The quotient $m^r / r!$ is the standard lower bound for $\binom{N}{r}$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists large prime dvd choose of not forall prime dvd le](exists-large-prime-dvd-choose-of-not-for.md)
+- [Negating the no-large-prime condition for $\binom{N}{r}$](exists-large-prime-dvd-choose-of-not-for.md)
 
 ## Sources
 

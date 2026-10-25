@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log17_lt
 ---
 
-# Log17 lt
+# Upper bound for log 17
 
-Certified bound `log 17 < 2.8333`.
+**Upper bound for log 17.** The natural logarithm of $17$ satisfies $\log 17 < 2.8333$.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log lt of exp gt](log-lt-of-exp-gt.md)
-- [Lt exp of pow lt](lt-exp-of-pow-lt.md)
+- [Bounding a logarithm above by the exponential](log-lt-of-exp-gt.md)
+- [Exponential lower bound from a power comparison](lt-exp-of-pow-lt.md)
 
 ## Sources
 

@@ -40,9 +40,9 @@ which every clause has at most three literals).
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
 - [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfiability of a CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 - [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 - [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
 

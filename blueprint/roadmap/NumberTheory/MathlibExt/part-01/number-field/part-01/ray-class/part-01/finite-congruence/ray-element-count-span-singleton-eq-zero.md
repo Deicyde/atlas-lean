@@ -7,19 +7,21 @@ proof: formalized
 lean: NumberField.Modulus.rayElement_count_spanSingleton_eq_zero
 ---
 
-# Ray Element count span Singleton eq zero
+# Ray elements have order zero at the primes dividing the modulus
 
-A member of `rayElements m` has principal fractional-ideal count zero
-at every finite prime supported by `m`.
+**Ray elements have order zero at the primes dividing the modulus.** Let $m$ be a
+modulus of a number field $K$ and let $x \in K^\times$ be a ray element of $m$. Then for
+every finite prime $\mathfrak p$ of $K$ dividing the finite part of $m$, the exponent of
+$\mathfrak p$ in the principal fractional ideal $x \mathcal O_K$ is $0$.
 
 ## Depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.IsCarmichaelNumber
 ---
 
-# Is Carmichael Number
+# Carmichael numbers
 
-A composite natural number satisfying Fermat's congruence for every base.
+**Carmichael numbers.** A natural number $n$ is a Carmichael number if $n > 1$, $n$ is not
+prime, and $a^n \equiv a \pmod{n}$ for every natural number $a$.
 
 ## Depends on
 

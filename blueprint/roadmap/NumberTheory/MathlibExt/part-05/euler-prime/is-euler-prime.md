@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.IsEulerPrime
 ---
 
-# Is Euler Prime
+# Euler prime of an odd perfect number
 
-`q` is an Euler prime of `N` iff some `k, n` witness the full form.
-No choice function is defined since existence of odd perfect numbers is open.
+**Euler prime of an odd perfect number.** A natural number $q$ is an Euler prime of a natural
+number $N$ when there are natural numbers $k$ and $n$ such that $(N, q, k, n)$ is in Eulerian
+form: $N$ is an odd perfect number, $q$ is prime, $N = q^k n^2$, $q \equiv 1 \pmod 4$,
+$k \equiv 1 \pmod 4$, and $q$ and $n$ are coprime.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eulerian Form](eulerian-form.md)
+- [Eulerian form of an odd perfect number](eulerian-form.md)
 
 ## Sources
 

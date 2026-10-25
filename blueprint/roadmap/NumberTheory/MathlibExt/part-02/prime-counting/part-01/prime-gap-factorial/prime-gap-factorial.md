@@ -7,17 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.prime_gap_factorial
 ---
 
-# Prime gap factorial
+# Prime gaps near $n!$
 
-Prime gaps near `n!`: with `r` the smallest prime above `n`, any prime `p`
-with `n! + 1 < p < n! + r^2` has `p - n!` prime as well.
+**Prime gaps near $n!$.** Let $n$ be a natural number and let $r$ be the smallest prime greater
+than $n$. If $p$ is a prime with $n! + 1 < p < n! + r^2$, then $p - n!$ is prime.
 
-The source's proof: a prime divisor `m` of the difference `p - n!` is
-below `r`, hence at most `n`, so it divides `n!` and therefore `p`,
-contradicting `p > n! + 1`. Verified computationally for `n = 0..8`.
-It follows from `prime_gap_factorial_general`; the hypotheses `hr` and `hrn` are unused and
-keep the source's shape.
-Proves `Wanted` entry `prime_gap_factorial`.
+The source's proof: if $p - n!$ were composite, its least prime factor $m$ would satisfy
+$m^2 \le p - n! < r^2$, so $m < r$ and hence $m \le n$. Then $m$ divides $n!$ and therefore $p$,
+contradicting $p > n! + 1$.
 
 ## Depends on
 
@@ -25,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime gap factorial general](prime-gap-factorial-general.md)
+- [Prime gaps near $n!$, general form](prime-gap-factorial-general.md)
 
 ## Sources
 

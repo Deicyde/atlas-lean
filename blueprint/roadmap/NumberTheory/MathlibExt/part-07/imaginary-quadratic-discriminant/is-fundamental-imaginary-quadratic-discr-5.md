@@ -18,7 +18,7 @@ discriminant.
 
 ## Proof depends on
 
-- [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
+- [Fundamental discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gcdUnitary_mem_unitaryDivisors
 ---
 
-# Gcd Unitary mem unitary Divisors
+# The greatest common unitary divisor is a common unitary divisor
 
-For positive `a` and `b`, `gcd₁(a, b)` is a common unitary divisor of `a` and `b`.
+**The greatest common unitary divisor is a common unitary divisor.** For positive natural
+numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ is a unitary divisor of
+$a$ and a unitary divisor of $b$.
 
 ## Depends on
 
-- [Gcd Unitary](gcd-unitary.md)
+- [Greatest common unitary divisor](gcd-unitary.md)
 - [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources

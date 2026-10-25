@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.theta34_real
 ---
 
-# Theta34 real
+# Primorial bound by powers of 3.4, real form
 
-Real primorial bound `primorial ⌊x⌋₊ ≤ 3.4 ^ x`.
+**Primorial bound by powers of 3.4, real form.** For every real number $x \ge 0$, the
+primorial of $\lfloor x \rfloor$ (the product of all primes $p \le \lfloor x \rfloor$) is at
+most $3.4^x$, where $3.4^x$ is the real power.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Theta34 nat](theta34-nat.md)
+- [Primorial bound by powers of 3.4, integer form](theta34-nat.md)
 
 ## Sources
 

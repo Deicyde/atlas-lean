@@ -24,8 +24,8 @@ $A$ gives the variable of at least one of its literals that literal's polarity.
 
 ## Proof depends on
 
-- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
+- [CNF clause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfaction of a literal](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

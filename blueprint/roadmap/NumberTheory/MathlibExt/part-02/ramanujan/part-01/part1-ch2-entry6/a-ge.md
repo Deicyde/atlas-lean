@@ -13,12 +13,12 @@ lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6.A_ge
 
 ## Depends on
 
-- [A](a.md)
+- [The tripling sequence of Ramanujan's Entry 6](a.md)
 
 ## Proof depends on
 
 - [A succ](a-succ.md)
-- [A zero](a-zero.md)
+- [Starting value of the tripling sequence](a-zero.md)
 
 ## Sources
 

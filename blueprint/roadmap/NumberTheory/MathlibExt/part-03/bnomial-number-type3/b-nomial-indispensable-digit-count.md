@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.bNomialIndispensableDigitCount
 ---
 
-# B Nomial Indispensable Digit Count
+# Number of indispensable digits
 
-The number `ι(x)` of indispensable digits in a finite `b`-ary string.
+**Number of indispensable digits.** For a $b$-ary string $x$ of finite length, $\iota(x)$ is
+the number of positions of $x$ that are indispensable.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is BNomial Indispensable Digit](is-bnomial-indispensable-digit.md)
-- [B Nomial Digit At Or Zero](b-nomial-digit-at-or-zero.md)
+- [Indispensable digits](is-bnomial-indispensable-digit.md)
+- [Digits of a string extended by zero](b-nomial-digit-at-or-zero.md)
 
 ## Sources
 

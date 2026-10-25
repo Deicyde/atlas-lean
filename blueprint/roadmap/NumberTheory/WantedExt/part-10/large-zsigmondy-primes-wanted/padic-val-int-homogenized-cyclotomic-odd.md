@@ -13,7 +13,7 @@ the least positive integer with `p ∣ aᵏ - bᵏ`. Then for `n ≥ 1`, `v_p(Φ
 
 ## Depends on
 
-- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
+- [Homogenized cyclotomic value](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

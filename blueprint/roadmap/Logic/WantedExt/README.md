@@ -5,5 +5,5 @@ navigation: collection
 
 # WantedExt
 
-- [Morley Categoricity Wanted](morley-categoricity-theorem.md)
+- [Morley's categoricity theorem](morley-categoricity-theorem.md)
 - [Wilkies Conjecture](wilkies-conjecture-wanted/README.md)

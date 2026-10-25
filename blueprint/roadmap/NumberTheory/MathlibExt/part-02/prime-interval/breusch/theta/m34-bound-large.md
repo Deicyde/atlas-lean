@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_bound_large
 ---
 
-# M34 bound large
+# Power bound for the multinomial coefficient $M(t)$, large $t$
 
-`M34` bounded by `3.4 ^ (5 * t - 5)` in integer form for `t ≥ 230`.
+**Power bound for the multinomial coefficient $M(t)$, large $t$.** Let
+$M(t) = \frac{(6t)!}{(3t)!\,(2t)!\,t!}$. For every natural number $t \ge 230$,
+$10^{5t-5} \cdot M(t) \le 34^{5t-5}$, that is, $M(t) \le 3.4^{5t-5}$.
 
 ## Depends on
 
-- [M34](m34.md)
+- [The multinomial coefficient $M(t)$ for the 3.4 primorial bound](m34.md)
 
 ## Proof depends on
 
-- [M34 key](m34-key.md)
-- [P34](p34.md)
+- [Key estimate for the multinomial coefficient $M(t)$](m34-key.md)
+- [Threshold inequality for the multinomial bound](p34.md)
 
 ## Sources
 

@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hyperPFibonacci_hyperPLucas_eventually_logConcave
 ---
 
-# Hyper PFibonacci hyper PLucas eventually log Concave
+# Eventual log-concavity of hyper $p$-Fibonacci and hyper $p$-Lucas numbers
 
-For `r ≥ 1` and `p ≥ 1`, the hyper `p`-Fibonacci numbers `F_{p,n}^{(r)}` (`(a, b) = (0, 1)`)
-and the hyper `p`-Lucas numbers `L_{p,n}^{(r)}` (`(a, b) = (2, p)`) are eventually log-concave
-(eventually positive, with `x_n x_{n+2} ≤ x_{n+1}²`).
+**Eventual log-concavity of hyper $p$-Fibonacci and hyper $p$-Lucas numbers.** Let
+$p \ge 1$ be an integer and $r \ge 1$ a natural number, and let $F_{p,n}^{(r)}$ and
+$L_{p,n}^{(r)}$ be the generalized hyper-Fibonacci numbers $W_{p,n}^{(r)}$ with initial values
+$(a, b) = (0, 1)$ and $(a, b) = (2, p)$ respectively (the hyper $p$-Fibonacci and hyper
+$p$-Lucas numbers). Both sequences are eventually log-concave: there is $N$ such that for all
+$n \ge N$, $F_{p,n}^{(r)} > 0$ and $F_{p,n}^{(r)} F_{p,n+2}^{(r)} \le (F_{p,n+1}^{(r)})^2$, and
+there is $N'$ such that for all $n \ge N'$, $L_{p,n}^{(r)} > 0$ and
+$L_{p,n}^{(r)} L_{p,n+2}^{(r)} \le (L_{p,n+1}^{(r)})^2$.
 
 ## Depends on
 
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

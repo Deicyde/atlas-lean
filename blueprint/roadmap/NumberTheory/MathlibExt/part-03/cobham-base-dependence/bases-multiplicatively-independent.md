@@ -6,10 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.BasesMultiplicativelyIndependent
 ---
 
-# Bases Multiplicatively Independent
+# Multiplicatively independent bases
 
-Two natural-number bases are multiplicatively independent when no two
-positive powers of them coincide.
+**Multiplicatively independent bases.** Two natural numbers $k$ and $l$ are multiplicatively
+independent when $k^m \ne l^n$ for all positive natural numbers $m$ and $n$.
 
 ## Depends on
 

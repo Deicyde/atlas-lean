@@ -7,17 +7,19 @@ proof: formalized
 lean: EgyptianFraction.IsNondecreasingUnderapproximation.nonempty
 ---
 
-# Nonempty
+# Nondecreasing underapproximations have at least one term
 
-A nondecreasing underapproximation has at least one term (`n ≥ 1`).
+**Nondecreasing underapproximations have at least one term.** Let $n$ be a natural number,
+$\lambda$ a real number and $a_1, \dots, a_n$ natural numbers. If $(a_1, \dots, a_n)$ is a
+nondecreasing underapproximation of $\lambda$, then $n \ge 1$.
 
 ## Depends on
 
-- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+- [Egyptian underapproximations with nondecreasing denominators](is-nondecreasing-underapproximation.md)
 
 ## Proof depends on
 
-- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
+- [Nondecreasing Egyptian denominator tuples](is-nondecreasing-egyptian.md)
 
 ## Sources
 

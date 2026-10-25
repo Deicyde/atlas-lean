@@ -5,7 +5,7 @@ navigation: module
 
 # Order
 
-- [Le integral Closure](le-integral-closure.md)
-- [Is Fraction Ring](is-fraction-ring.md)
-- [Exists div eq](exists-div-eq.md)
-- [Is Order integral Closure](is-order-integral-closure.md)
+- [Orders lie in the ring of integers](le-integral-closure.md)
+- [The fraction field of an order](is-fraction-ring.md)
+- [Elements of a number field are quotients of elements of an order](exists-div-eq.md)
+- [The ring of integers is an order](is-order-integral-closure.md)

@@ -6,5 +6,5 @@ navigation: module
 # Composite
 
 - [Is Composite](is-composite.md)
-- [One lt](one-lt.md)
-- [Not prime](not-prime.md)
+- [Composite numbers exceed one](one-lt.md)
+- [Composite numbers are not prime](not-prime.md)

@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.primeCountingMod_one
 ---
 
-# Prime Counting Mod one
+# Prime counting modulo one
 
-Modulus one imposes no residue condition, so the count
-reduces to the ordinary prime-counting function.
+**Prime counting modulo one.** For all natural numbers $X$ and $a$, the number $\pi(X; 1, a)$
+of primes $p \le X$ with $p \equiv a \pmod 1$ equals $\pi(X)$, the number of primes $p \le X$.
+
+Modulus one imposes no residue condition.
 
 ## Depends on
 
-- [Prime Counting Mod](prime-counting-mod.md)
+- [Prime counting in a residue class](prime-counting-mod.md)
 
 ## Sources
 

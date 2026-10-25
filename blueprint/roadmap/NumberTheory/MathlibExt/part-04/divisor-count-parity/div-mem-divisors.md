@@ -6,9 +6,10 @@ proof: formalized
 lean: Nat.div_mem_divisors
 ---
 
-# Div mem divisors
+# Complementary divisor
 
-`n / d` is a divisor of `n` when `d` is.
+**Complementary divisor.** If $n$ is a nonzero natural number and $d$ is a divisor of $n$,
+then $n/d$ is also a divisor of $n$.
 
 ## Depends on
 

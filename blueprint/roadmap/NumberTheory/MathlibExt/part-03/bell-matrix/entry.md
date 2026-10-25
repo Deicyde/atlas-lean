@@ -6,13 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.BellMatrix.entry
 ---
 
-# Entry
+# Entries of a Bell matrix
 
-The entry in row `n` and column `k` of the Bell matrix represented by `M`.
+**Entries of a Bell matrix.** For a Bell matrix over a commutative ring $R$ given by the
+power series $g$, and natural numbers $n$ and $k$, the entry in row $n$ and column $k$ is the
+coefficient of $X^n$ in $g \cdot (Xg)^k$.
 
 ## Depends on
 
-- [Bell Matrix](bell-matrix.md)
+- [Bell matrix](bell-matrix.md)
 
 ## Sources
 

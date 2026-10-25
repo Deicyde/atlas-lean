@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_key
 ---
 
-# M34 key
+# Key estimate for the multinomial coefficient $M(t)$
 
-Key estimate `2 * M34 t ≤ 432 ^ t * (2 * t + 1)`.
+**Key estimate for the multinomial coefficient $M(t)$.** Let
+$M(t) = \frac{(6t)!}{(3t)!\,(2t)!\,t!}$. For every natural number $t \ge 1$,
+$2\,M(t) \le 432^t \, (2t + 1)$.
 
 ## Depends on
 
-- [M34](m34.md)
+- [The multinomial coefficient $M(t)$ for the 3.4 primorial bound](m34.md)
 
 ## Proof depends on
 
-- [M34 eq choose mul](m34-eq-choose-mul.md)
-- [Choose3 mul choose2](choose3-mul-choose2.md)
-- [Choose middle half](choose-middle-half.md)
-- [Four pow le](four-pow-le.md)
+- [The multinomial coefficient $M(t)$ as a product of binomial coefficients](m34-eq-choose-mul.md)
+- [Binomial factorization of the factorial of a multiple of three](choose3-mul-choose2.md)
+- [Half-power bound for the central binomial coefficient](choose-middle-half.md)
+- [Four-power lower bound for the central binomial coefficient](four-pow-le.md)
 - [Multinomial3 le](multinomial3-le.md)
 
 ## Sources

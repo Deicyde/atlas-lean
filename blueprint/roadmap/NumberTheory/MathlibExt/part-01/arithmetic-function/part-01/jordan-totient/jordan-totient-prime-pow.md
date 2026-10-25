@@ -7,17 +7,18 @@ proof: formalized
 lean: ArithmeticFunction.jordanTotient_prime_pow
 ---
 
-# Jordan Totient prime pow
+# Jordan's totient at prime powers
 
-Value at prime powers.
+**Jordan's totient at prime powers.** For every natural number $k$, every prime $p$ and every
+integer $e \ge 1$, the Jordan totient function satisfies $J_k(p^e) = p^{k(e-1)}(p^k - 1)$.
 
 ## Depends on
 
-- [Jordan Totient](jordan-totient.md)
+- [Jordan's totient function](jordan-totient.md)
 
 ## Proof depends on
 
-- [Jordan Totient eq prod factorization](jordan-totient-eq-prod-factorization.md)
+- [Prime-factorization formula for Jordan's totient](jordan-totient-eq-prod-factorization.md)
 
 ## Sources
 

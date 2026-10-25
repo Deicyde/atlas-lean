@@ -7,23 +7,26 @@ proof: formalized
 lean: NumberField.Modulus.coprimeIdealClassMap_surjective
 ---
 
-# Coprime Ideal Class Map surjective
+# Every ideal class contains a fractional ideal coprime to the modulus
 
-Surjectivity of the ideal-class map on coprime fractional ideals
-(ATLAS lines 1466--1476; Lemma 21.7 at lines 958--1010 reused via the stronger
-`ClassGroup.exists_mk0_eq_and_isCoprime`).
+**Every ideal class contains a fractional ideal coprime to the modulus.** Let $K$ be a
+number field and $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$. The homomorphism
+from the group of fractional ideals of $K$ coprime to $\mathfrak m_0$ (those whose exponent at
+every prime dividing $\mathfrak m_0$ is $0$) to the class group of $\mathcal O_K$, sending each
+such fractional ideal to its ideal class, is surjective.
 
 ## Depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
-- [Coprime Ideal Class Map](../ray-class-to-class-group/coprime-ideal-class-map.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ideal-class map on coprime fractional ideals](../ray-class-to-class-group/coprime-ideal-class-map.md)
 
 ## Proof depends on
 
 - [Exists mk0 eq and is Coprime](../../../../../../../../RingTheory/MathlibExt/class-group/coprime-representative/exists-mk0-eq-and-is-coprime.md)
-- [Coprime Ideal Class Map apply](../ray-class-to-class-group/coprime-ideal-class-map-apply.md)
-- [Fractional Ideal Mk0 mem coprime Fractional Ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
+- [Value of the ideal-class map on a coprime ideal](../ray-class-to-class-group/coprime-ideal-class-map-apply.md)
+- [Nonzero integral ideals coprime to the modulus are coprime fractional ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ExactSequence](../../../../../../../../../sources/v2/MathlibExt.md)
+- ATLAS lines 1466--1476; Lemma 21.7 at lines 958--1010 is reused via the stronger `ClassGroup.exists_mk0_eq_and_isCoprime`.

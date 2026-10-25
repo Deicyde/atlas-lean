@@ -7,13 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.doldRealizable_dvd
 ---
 
-# Dold Realizable dvd
+# Dold realizable sequences satisfy the Dold congruences
 
-Divisibility (Dold congruence) half of `doldRealizable`.
+**Dold realizable sequences satisfy the Dold congruences.** If an integer sequence
+$(a(n))_{n \ge 0}$ is Dold realizable, then for every integer $n \ge 1$, $n$ divides
+$\sum_{d \mid n} \mu(d)\, a(n/d)$, where $\mu$ is the Möbius function and $d$ runs over the
+positive divisors of $n$.
 
 ## Depends on
 
-- [Dold Realizable](dold-realizable.md)
+- [Dold realizable sequences](dold-realizable.md)
 
 ## Sources
 

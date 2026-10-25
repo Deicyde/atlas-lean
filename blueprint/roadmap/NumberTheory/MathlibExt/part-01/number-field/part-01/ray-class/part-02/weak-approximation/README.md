@@ -5,5 +5,5 @@ navigation: module
 
 # Weak Approximation
 
-- [Exists ne zero with target and sign](exists-ne-zero-with-target-and-sign.md)
-- [Exists ne zero with valuation one and sign](exists-ne-zero-with-valuation-one-and-si.md)
+- [Weak approximation with a finite target and prescribed signs](exists-ne-zero-with-target-and-sign.md)
+- [Weak approximation with prescribed signs at a modulus](exists-ne-zero-with-valuation-one-and-si.md)

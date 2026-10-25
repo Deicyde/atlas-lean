@@ -20,14 +20,14 @@ $\varphi$.
 - [Dense clause](../dense-sat/clause.md)
 - [Binary-index translation of a dense formula](bin-cnf.md)
 - [Satisfaction of a dense CNF formula](../dense-sat/cnf-sat.md)
-- [CNFSat](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+- [Satisfiability of a CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
 - [Binary-index translation of a dense clause](bin-clause.md)
 - [Satisfaction of a dense clause](../dense-sat/clause-sat.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

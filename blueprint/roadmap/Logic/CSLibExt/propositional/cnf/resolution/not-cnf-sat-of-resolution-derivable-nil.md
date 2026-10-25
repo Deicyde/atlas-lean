@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.not_cnfSat_of_resolutionDerivable_nil
 ---
 
-# Not cnf Sat of resolution Derivable nil
+# Refutable formulas are unsatisfiable
 
-A formula with a resolution refutation is unsatisfiable.
+**Refutable formulas are unsatisfiable.** If the empty clause is derivable by resolution
+from a CNF formula $\varphi$, then $\varphi$ is not satisfiable.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
-- [Resolution Derivable](resolution-derivable.md)
-- [CNFSat](../basic/cnfsat.md)
+- [CNF formula](../basic/cnf.md)
+- [Resolution derivability](resolution-derivable.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Soundness](satisfies.md)
+- [Soundness of resolution](satisfies.md)
 - [Satisfies](../semantics/satisfies-3.md)
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](../semantics/satisfies-2.md)
-- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
+- [Satisfiability means having a satisfying assignment](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

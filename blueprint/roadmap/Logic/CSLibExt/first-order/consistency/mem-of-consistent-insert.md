@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Logic.FOL.MaximalConsistent.mem_of_consistent_insert
 ---
 
-# Mem of consistent insert
+# Maximal consistent sets absorb consistent extensions
 
-The insertion characterization: a maximal consistent set contains every formula it can
-consistently be extended by.
+**Maximal consistent sets absorb consistent extensions.** Let $\Delta$ be a maximal consistent
+set of first-order formulas of a language $L$ with free variables in $\alpha$, and let $\varphi$ be
+a formula. If $\Delta \cup \{\varphi\}$ is consistent, then $\varphi \in \Delta$.
 
 ## Depends on
 
 - [Consistent](consistent.md)
-- [Maximal Consistent](maximal-consistent.md)
+- [Maximal consistent set](maximal-consistent.md)
 
 ## Sources
 

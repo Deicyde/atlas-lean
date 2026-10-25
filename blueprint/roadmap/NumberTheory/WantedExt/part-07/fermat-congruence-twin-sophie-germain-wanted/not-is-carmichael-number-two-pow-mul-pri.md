@@ -12,7 +12,7 @@ is not a Carmichael number.
 
 ## Depends on
 
-- [Is Carmichael Number](../../../MathlibExt/part-03/carmichael-number/is-carmichael-number.md)
+- [Carmichael numbers](../../../MathlibExt/part-03/carmichael-number/is-carmichael-number.md)
 
 ## Sources
 

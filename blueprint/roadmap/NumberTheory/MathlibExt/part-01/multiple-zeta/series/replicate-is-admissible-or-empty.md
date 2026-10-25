@@ -6,22 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.replicate_isAdmissibleOrEmpty
 ---
 
-# Replicate is Admissible Or Empty
+# Repeated indices with entry at least two are admissible or empty
 
-`{e}^k` with `e ≥ 2` is admissible (or empty when `k = 0`), so its multiple-zeta and
-multiple-zeta-star values are defined. Source: Iovleff, INTEGERS 26 (2026), Article A114,
-Section 1 (`ζ*({2}^k)`).
+**Repeated indices with entry at least two are admissible or empty.** For every natural
+number $k$ and every positive natural number $e \ge 2$, the index $\{e\}^k$ consisting of $k$
+entries all equal to $e$ is admissible or empty.
 
 ## Depends on
 
-- [Is Admissible Or Empty](is-admissible-or-empty.md)
-- [Replicate](replicate.md)
+- [Admissible or empty index](is-admissible-or-empty.md)
+- [Repeated index](replicate.md)
 
 ## Proof depends on
 
-- [Is Admissible](../index/is-admissible.md)
-- [Depth](../index/depth.md)
+- [Admissible index](../index/is-admissible.md)
+- [Depth of an index](../index/depth.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.Series](../../../../../../sources/v2/MathlibExt.md)
+- Iovleff, INTEGERS 26 (2026), Article A114, Section 1 (`ζ*({2}^k)`).

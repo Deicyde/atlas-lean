@@ -7,16 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.wintner_mean_value
 ---
 
-# Wintner Mean Value
+# Wintner's mean-value theorem
 
-Wintner mean-value theorem for arithmetic functions, one-variable case:
-under absolute convergence of `Σ |(μ * f) n| / n`, the Cesàro mean
-`x⁻¹ * Σ_{n ∈ [1, x]} f n` tends to `Σ' (μ * f) n / n`, where `μ * f` is the
-Dirichlet convolution of the Möbius function with `f`.
+**Wintner's mean-value theorem.** Let $f$ be a complex-valued arithmetic function, let $\mu$
+be the Möbius function, and let $\mu * f$ be their Dirichlet convolution,
+$(\mu * f)(n) = \sum_{d \mid n} \mu(d) f(n/d)$. If the series $\sum_{n \ge 1} |(\mu * f)(n)|/n$
+converges, then
 
-Math notes: no multiplicativity, Euler product, quantitative error term, or
-alternating mean is assumed or concluded.
-Proves `Wanted` entry `wintner_mean_value`.
+$$\frac{1}{x} \sum_{n=1}^{x} f(n) \to \sum_{n \ge 1} \frac{(\mu * f)(n)}{n}$$
+
+as the integer $x$ tends to infinity.
+
+No multiplicativity, Euler product, quantitative error term, or alternating mean is assumed or
+concluded.
 
 ## Depends on
 

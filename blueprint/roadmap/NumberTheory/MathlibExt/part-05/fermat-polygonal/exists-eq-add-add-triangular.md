@@ -7,9 +7,11 @@ proof: formalized
 lean: Nat.exists_eq_add_add_triangular
 ---
 
-# Exists eq add add triangular
+# Gauss's Eureka theorem
 
-Gauss's Eureka theorem: every natural number is a sum of three triangular numbers.
+**Gauss's Eureka theorem.** Every natural number $n$ is a sum of three triangular numbers:
+there are natural numbers $x, y, z$ with $n = T_x + T_y + T_z$, where $T_m = m(m + 1)/2$ is the
+$m$-th triangular ($3$-gonal) number, so that $T_0 = 0$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ Gauss's Eureka theorem: every natural number is a sum of three triangular number
 
 ## Proof depends on
 
-- [Legendre Three Square](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
+- [Legendre's three-square theorem](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
 - [Polygonal Number three](../../part-09/polygonal-number/polygonal-number-three.md)
 
 ## Sources

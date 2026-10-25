@@ -22,7 +22,7 @@ $\varphi$ in reading order, and the table stack of the occurrence table of $\var
 - [Table stack of an entry list](tbl-stk.md)
 - [Token sequence of a CNF formula](toks.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

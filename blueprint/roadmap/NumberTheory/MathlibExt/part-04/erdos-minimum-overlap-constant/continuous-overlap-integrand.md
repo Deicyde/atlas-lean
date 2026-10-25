@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.continuousOverlapIntegrand
 ---
 
-# Continuous Overlap Integrand
+# Continuous overlap integrand
 
-The overlap integrand `f(t) * g(x+t)`.
+**Continuous overlap integrand.** For functions $f, g : \mathbb{R} \to \mathbb{R}$ and real
+numbers $x$ and $t$, the overlap integrand is $f(t)\,g(x + t)$.
 
 ## Depends on
 

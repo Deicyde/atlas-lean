@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Logic.PL.cnfSat_iff_exists_satisfies
 ---
 
-# Cnf Sat iff exists satisfies
+# Satisfiability means having a satisfying assignment
 
-The named CNF semantics coincides with the pre-existing satisfiability predicate.
+**Satisfiability means having a satisfying assignment.** A CNF formula $\varphi$ is
+satisfiable if and only if there is an assignment $v : \mathbb{N} \to \{\mathrm{true},
+\mathrm{false}\}$ that satisfies $\varphi$.
 
 ## Depends on
 
-- [CNF](../basic/cnf.md)
+- [CNF formula](../basic/cnf.md)
 - [Satisfies](satisfies-3.md)
-- [CNFSat](../basic/cnfsat.md)
+- [Satisfiability of a CNF formula](../basic/cnfsat.md)
 
 ## Proof depends on
 
-- [CNFClause](../basic/cnfclause.md)
+- [CNF clause](../basic/cnfclause.md)
 - [Satisfies](satisfies-2.md)
-- [Satisfies](satisfies.md)
+- [Satisfaction of a literal](satisfies.md)
 
 ## Sources
 

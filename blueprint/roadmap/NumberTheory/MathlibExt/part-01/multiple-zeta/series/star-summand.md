@@ -6,19 +6,21 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.starSummand
 ---
 
-# Star Summand
+# Multiple-zeta-star summand
 
-The reciprocal product `(∏ i, mᵢ ^ kᵢ)⁻¹` attached to a weakly decreasing tuple `m`.
+**Multiple-zeta-star summand.** For a multiple-zeta index $k = (k_0, \dots, k_{d-1})$ of
+depth $d$ and a weakly decreasing tuple $m = (m_0, \dots, m_{d-1})$ of positive natural numbers,
+the star summand of $k$ at $m$ is the real number $\left(\prod_{i\lt d} m_i^{k_i}\right)^{-1}$.
 
 ## Depends on
 
-- [Index](../index/index.md)
-- [Depth](../index/depth.md)
-- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
+- [Multiple-zeta index](../index/index.md)
+- [Depth of an index](../index/depth.md)
+- [Weakly decreasing tuples](weakly-decreasing-tuple.md)
 
 ## Proof depends on
 
-- [Entry](entry.md)
+- [Entry of a multiple-zeta index](entry.md)
 
 ## Sources
 

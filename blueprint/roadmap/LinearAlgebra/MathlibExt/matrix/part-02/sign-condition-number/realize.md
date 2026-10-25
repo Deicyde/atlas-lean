@@ -14,7 +14,7 @@ $A_{ij}$ is false.
 
 ## Depends on
 
-- [Sign Matrix](sign-matrix.md)
+- [Boolean encoding of sign matrices](sign-matrix.md)
 
 ## Sources
 

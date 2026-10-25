@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.floor_N10
 ---
 
-# Floor N10
+# Legendre terms of $N_{10}$ as real floors
 
-`N10` Legendre terms as `G9r` floors.
+**Legendre terms of $N_{10}$ as real floors.** Let $m \ge 1$ divide $Q_9 = 210$, and let
+$p \ge 2$, $n$ and $j$ be natural numbers. Write $N_{10}(m, n) = 10n \cdot (Q_9/m)$.
+Then $\lfloor N_{10}(m, n)/p^j \rfloor$ equals the floor of the real number $10 Q_9 (n/p^j)/m$.
 
 ## Depends on
 
-- [N10m](../lower/n10m.md)
-- [Q9](../grid/q9.md)
+- [Scaled factorial argument $N_{10}$](../lower/n10m.md)
+- [The modulus $Q_9 = 210$](../grid/q9.md)
 
 ## Proof depends on
 
-- [N10 eq](../lower/n10-eq.md)
-- [Int Floor cast](int-floor-cast.md)
+- [Exact formula for the scaled factorial argument $N_{10}$](../lower/n10-eq.md)
+- [Floor of a quotient of natural numbers](int-floor-cast.md)
 
 ## Sources
 

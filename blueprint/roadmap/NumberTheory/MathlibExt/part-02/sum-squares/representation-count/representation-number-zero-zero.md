@@ -7,18 +7,19 @@ proof: formalized
 lean: SumSquares.representationNumber_zero_zero
 ---
 
-# Representation Number zero zero
+# Zero as a sum of zero squares
 
-The representation number at `k = 0, n = 0` is one.
+**Zero as a sum of zero squares.** The representation number $r_0(0)$, the number of integer
+vectors $x \in \mathbb{Z}^0$ whose sum of squares (an empty sum) equals $0$, is $1$.
 
 ## Depends on
 
-- [Representation Number](representation-number.md)
+- [Representation numbers of sums of squares](representation-number.md)
 
 ## Proof depends on
 
-- [Solutions](solutions.md)
-- [Solutions zero zero](solutions-zero-zero.md)
+- [Integer solutions of a sum of squares](solutions.md)
+- [Solution set of the empty sum at zero](solutions-zero-zero.md)
 
 ## Sources
 

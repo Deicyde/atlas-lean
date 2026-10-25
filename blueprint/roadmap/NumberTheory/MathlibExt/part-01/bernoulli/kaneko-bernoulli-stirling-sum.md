@@ -7,17 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.kaneko_bernoulli_stirling_sum
 ---
 
-# Kaneko Bernoulli Stirling
+# Kaneko's Stirling-number formula for the Bernoulli numbers
 
-Kaneko's explicit formula for poly-Bernoulli numbers in the case `k = 1`:
-the `n`-th Bernoulli number equals the Stirling-number sum
-`∑_{m=1}^{n+1} (-1)^{m-1} (m-1)! S(n,m-1) / m`.
+**Kaneko's Stirling-number formula for the Bernoulli numbers.** Let $B_n$ denote the $n$-th
+Bernoulli number, with $B_1 = -1/2$, and let $S(n, j)$ denote the Stirling numbers of the second
+kind. For every natural number $n$,
 
-Kaneko's formula carries a `(-1)^n` prefactor; at `k = 1` it cancels against
-`B_n^{(1)} = (-1)^n * B_n` (from the generating series `t/(1-e^{-t})`),
-leaving the stated sum for Mathlib's `bernoulli` (`B₁ = -1/2` convention).
-Verified computationally for `n = 0..10`.
-Proves `Wanted` entry `kaneko_bernoulli_stirling_sum`.
+$$B_n = \sum_{m=1}^{n+1} \frac{(-1)^{m-1} (m-1)!\, S(n, m-1)}{m}.$$
+
+This is Kaneko's explicit formula for the poly-Bernoulli numbers $B_n^{(k)}$ at $k = 1$. That
+formula carries a factor $(-1)^n$, which cancels against $B_n^{(1)} = (-1)^n B_n$ (the numbers
+$B_n^{(1)}$ come from the generating series $t/(1 - e^{-t})$).
 
 ## Depends on
 

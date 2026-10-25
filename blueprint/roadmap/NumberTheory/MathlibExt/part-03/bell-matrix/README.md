@@ -5,6 +5,6 @@ navigation: module
 
 # Bell Matrix
 
-- [Bell Matrix](bell-matrix.md)
-- [H](h.md)
-- [Entry](entry.md)
+- [Bell matrix](bell-matrix.md)
+- [Second component of a Bell matrix](h.md)
+- [Entries of a Bell matrix](entry.md)

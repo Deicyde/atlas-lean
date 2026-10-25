@@ -12,7 +12,7 @@ Source: G.H. Hardy and J.E. Littlewood, 'Contributions to the theory of the Riem
 ## Depends on
 
 - [Chebyshev Lead](chebyshev-lead.md)
-- [Prime Counting Mod](../../../MathlibExt/part-02/prime-counting/part-02/residue-class/prime-counting-mod.md)
+- [Prime counting in a residue class](../../../MathlibExt/part-02/prime-counting/part-02/residue-class/prime-counting-mod.md)
 
 ## Sources
 

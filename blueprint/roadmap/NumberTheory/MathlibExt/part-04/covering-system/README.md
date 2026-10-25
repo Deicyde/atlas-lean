@@ -5,5 +5,5 @@ navigation: module
 
 # Covering System
 
-- [Covering System](covering-system.md)
-- [Strict Covering System](strict-covering-system.md)
+- [Covering system](covering-system.md)
+- [Strict covering system](strict-covering-system.md)

@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.IsLucasSequenceFirstKind.initialZero
 ---
 
-# Initial Zero
+# Lucas sequence of the first kind: value at zero
 
-First clause of the defining recurrence: the value at `0`.
+**Lucas sequence of the first kind: value at zero.** If $(u_n)_{n \ge 0}$ is the Lucas sequence
+of the first kind with integer parameters $P$ and $Q$, then $u_0 = 0$.
 
 ## Depends on
 
-- [Is Lucas Sequence First Kind](is-lucas-sequence-first-kind.md)
+- [Lucas sequence of the first kind](is-lucas-sequence-first-kind.md)
 
 ## Sources
 

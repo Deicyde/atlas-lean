@@ -6,12 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSymmetricToeplitzMatrix
 ---
 
-# Is Symmetric Toeplitz Matrix
+# Symmetric Toeplitz matrix
 
-Symmetric Toeplitz matrix, same source (`felsner2.tex`, lines 271-283): a
-Toeplitz matrix whose witnessing coefficients satisfy `c₋ₖ = cₖ` for every
-integer `k`. The same witness `c` both satisfies the symmetry condition and
-represents the entries.
+**Symmetric Toeplitz matrix.** A real $(n+1) \times (n+1)$ matrix $A = (a_{ij})$, with rows
+and columns indexed by $\{0, \dots, n\}$, is symmetric Toeplitz if there is a function
+$c : \mathbb{Z} \to \mathbb{R}$ such that $c(-k) = c(k)$ for every integer $k$ and
+$a_{ij} = c(i - j)$ for all $i, j$.
 
 Concept id: `jis_term_af166143477154e55b2be88d`.
 

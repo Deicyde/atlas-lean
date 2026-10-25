@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.distinctMultiplesIntervalLength_le_iff
 ---
 
-# Distinct Multiples Interval Length le iff
+# Characterization of the least interval length
 
-`f(n, m)` is the least admissible length: `f(n, m) ≤ L` iff `(m, m + L]` contains
-distinct multiples of `1, …, n`.
+**Characterization of the least interval length.** For natural numbers $n$ and $m$, let
+$f(n, m)$ be the least natural number $K$ such that the interval $(m, m + K]$ contains distinct
+multiples of $1, \dots, n$. Then for every natural number $L$, $f(n, m) \le L$ if and only if
+the interval $(m, m + L]$ contains distinct multiples of $1, \dots, n$.
 
 ## Depends on
 
-- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
-- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+- [Distinct multiples of $1, \dots, n$ in an interval](has-distinct-multiples-in-interval.md)
+- [Least interval length containing distinct multiples](distinct-multiples-interval-length.md)
 
 ## Proof depends on
 
-- [Mono](mono.md)
-- [Has Distinct Multiples In Interval distinct Multiples Interval Length](has-distinct-multiples-in-interval-disti.md)
+- [Lengthening the interval preserves distinct multiples](mono.md)
+- [The least interval length is admissible](has-distinct-multiples-in-interval-disti.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Logic.PL.evalBool_of_mem_cpl
 ---
 
-# Eval Bool of mem cpl
+# Double-negation elimination is true when falsum is false
 
-Every instance of double-negation elimination is true when `⊥` is false.
+**Double-negation elimination is true when falsum is false.** Suppose the atoms include a
+distinguished atom $\bot$, and let $v$ be a Boolean valuation of the atoms with
+$v(\bot) = \mathrm{false}$. Then every instance $\neg\neg B \to B$ of double-negation elimination,
+that is every axiom of classical propositional logic, is true under $v$.
 
 ## Depends on
 
-- [Eval Bool](eval-bool.md)
+- [Truth-table evaluation](eval-bool.md)
 
 ## Sources
 

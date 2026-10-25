@@ -6,13 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.oppermannUpperPrimeCount
 ---
 
-# Oppermann Upper Prime Count
+# Primes in the upper Oppermann interval
 
-Number of primes in the closed interval `[n^2, n^2 + n]`.
-
-Concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes),
-source statement `jis_6984ebbf83b6eb73fb1b156d`: the count of primes in
-`[n^2, n^2 + n]`.
+**Primes in the upper Oppermann interval.** For a natural number $n$, this is the number of
+primes $p$ with $n^2 \le p \le n^2 + n$.
 
 ## Depends on
 
@@ -21,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CountingOppermannPrimes](../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes), source statement `jis_6984ebbf83b6eb73fb1b156d`.

@@ -4,6 +4,6 @@ navigation: module
 
 # Exponential Pascal Matrix
 
-- [Exponential Pascal Type Series](exponential-pascal-type-series.md)
-- [Exponential Pascal Type Pair](exponential-pascal-type-pair.md)
-- [Exponential Pascal Type Matrix](exponential-pascal-type-matrix.md)
+- [Second series of the exponential Pascal-type pair](exponential-pascal-type-series.md)
+- [Generating pair of the exponential Pascal-type matrix](exponential-pascal-type-pair.md)
+- [Exponential Pascal-type matrix](exponential-pascal-type-matrix.md)

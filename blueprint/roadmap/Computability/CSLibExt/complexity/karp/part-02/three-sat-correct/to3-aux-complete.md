@@ -21,7 +21,7 @@ the clause list produced by the auxiliary translation of $\varphi$.
 - [Fresh Val](fresh-val.md)
 - [Renaming of the original variables](../three-sat/ren.md)
 - [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Proof depends on
@@ -30,7 +30,7 @@ the clause list produced by the auxiliary translation of $\varphi$.
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [Completeness of the chain of one clause](chain-complete.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources

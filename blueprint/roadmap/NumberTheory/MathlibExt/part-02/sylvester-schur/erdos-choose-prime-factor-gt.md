@@ -9,11 +9,12 @@ lean: Nat.SylvesterSchur.Internal.erdos_choose_prime_factor_gt
 
 # Erdős key lemma
 
-**Erdős key lemma** (1934): for `1 ≤ n < k`, the binomial coefficient
-`Nat.choose (k + n - 1) n` has a prime factor strictly greater than `n`.
+**Erdős key lemma.** For all natural numbers $n$ and $k$ with $1 \le n < k$, the binomial
+coefficient $\binom{k + n - 1}{n}$ has a prime factor $p > n$.
 
-The cases `n = 1`, `k = n + 1`, and `k = n + 2` are direct Bertrand arguments.
-All later starts are handled by the consolidated hard-case estimate above.
+This is the binomial form of the Sylvester–Schur theorem, as in Erdős's 1934 proof. The case
+$n = 1$ is immediate, and the cases $k = n + 1$ and $k = n + 2$ follow directly from Bertrand's
+postulate.
 
 ## Depends on
 
@@ -21,36 +22,36 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists dvd block of succ succ prime not dvd pred](block-reductions/exists-dvd-block-of-succ-succ-prime-not.md)
-- [Exists prime dvd choose of central offset erdos div three layers bound](residual-finite/exists-prime-dvd-choose-of-central-offse.md)
-- [Exists prime dvd choose of erdos div three layers bound](block-reductions/exists-prime-dvd-choose-of-erdos-div-thr.md)
-- [Exists prime dvd choose of erdos layers bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers.md)
-- [Exists prime dvd choose of erdos layers four pow bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers-2.md)
-- [Exists prime dvd choose of erdos layers three layers bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers-3.md)
-- [Exists prime dvd choose of half bound](block-reductions/exists-prime-dvd-choose-of-half-bound.md)
-- [Exists prime dvd choose of large prime dvd block](block-reductions/exists-prime-dvd-choose-of-large-prime-d.md)
-- [Exists prime dvd choose of large start](block-reductions/exists-prime-dvd-choose-of-large-start.md)
-- [Exists prime dvd choose of prime Counting bound](block-reductions/exists-prime-dvd-choose-of-prime-countin.md)
-- [Exists prime dvd choose of scaled ternary erdos layers bound](residual-finite/exists-prime-dvd-choose-of-scaled-ternar.md)
-- [Exists prime dvd choose of smooth count bound](block-reductions/exists-prime-dvd-choose-of-smooth-count.md)
-- [Exists prime dvd choose of sqrt primorial bound](block-reductions/exists-prime-dvd-choose-of-sqrt-primoria.md)
-- [Exists prime dvd choose two mul add two small](residual-finite/exists-prime-dvd-choose-two-mul-add-two.md)
-- [First residual large scaled ternary bound](residual-large/scaled-ternary-bound/first-residual-large-scaled-ternary-boun.md)
-- [Prime dvd choose of mem interval](block-reductions/prime-dvd-choose-of-mem-interval.md)
-- [Prime dvd seq implies choose](block-reductions/prime-dvd-seq-implies-choose.md)
-- [Central Offset Bound](residual-large/second-residual-large-central-offset-bou.md)
-- [Second residual mid has large prime factor](residual-finite/second-residual-mid-has-large-prime-fact.md)
-- [Residual Large Certificates](second-residual-mid-prime-counting-lt-st.md)
-- [Second residual tiny has large prime factor](residual-finite/second-residual-tiny-has-large-prime-fac.md)
-- [Tiny Prime Counting Bound](residual-large/second-residual-tiny-prime-counting-lt-s.md)
-- [Start le quadratic of no large prime dvd block](block-reductions/start-le-quadratic-of-no-large-prime-dvd.md)
-- [Central erdos layers two mul add two lt four pow](erdos-power-bounds/central-erdos-layers-two-mul-add-two-lt.md)
-- [Consecutive five](conditional/consecutive-five.md)
-- [Consecutive four](conditional/consecutive-four.md)
-- [Consecutive six](conditional/consecutive-six.md)
-- [Consecutive three](conditional/consecutive-three.md)
-- [Consecutive two](conditional/consecutive-two.md)
-- [Exists large prime dvd choose of mul prod erdos div three layers lt four pow](erdos-layers/exists-large-prime-dvd-choose-of-mul-pro.md)
+- [A block term divisible by the block length plus two](block-reductions/exists-dvd-block-of-succ-succ-prime-not.md)
+- [A numerical criterion for a prime divisor of $\binom{N}{r}$ above $r$ when $N = 2r + i$](residual-finite/exists-prime-dvd-choose-of-central-offse.md)
+- [Sylvester–Schur criterion from the Erdős layer bound with a one-third first layer](block-reductions/exists-prime-dvd-choose-of-erdos-div-thr.md)
+- [Sylvester–Schur criterion from the Erdős layer bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers.md)
+- [Sylvester–Schur criterion from the coarse power-of-four Erdős bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers-2.md)
+- [Sylvester–Schur criterion from the three-layer power-of-four Erdős bound](block-reductions/exists-prime-dvd-choose-of-erdos-layers-3.md)
+- [Sylvester–Schur criterion from the half-exponent bound](block-reductions/exists-prime-dvd-choose-of-half-bound.md)
+- [Large prime divisors pass from a block to its binomial coefficient](block-reductions/exists-prime-dvd-choose-of-large-prime-d.md)
+- [Sylvester–Schur criterion for blocks with a large start](block-reductions/exists-prime-dvd-choose-of-large-start.md)
+- [Sylvester–Schur criterion from the prime-counting bound](block-reductions/exists-prime-dvd-choose-of-prime-countin.md)
+- [A numerical criterion for a prime divisor of $\binom{N}{r}$ above $r$ when $N \ge 3r$](residual-finite/exists-prime-dvd-choose-of-scaled-ternar.md)
+- [Large prime divisor of the block binomial coefficient from the smooth-number count](block-reductions/exists-prime-dvd-choose-of-smooth-count.md)
+- [Large prime divisor of the block binomial coefficient from the square-root primorial bound](block-reductions/exists-prime-dvd-choose-of-sqrt-primoria.md)
+- [A prime divisor of $\binom{2n+2}{n}$ above $n$ for small $n$](residual-finite/exists-prime-dvd-choose-two-mul-add-two.md)
+- [Scaled ternary bound for the first residual estimate](residual-large/scaled-ternary-bound/first-residual-large-scaled-ternary-boun.md)
+- [Primes above $n$ in the block divide the block binomial coefficient](block-reductions/prime-dvd-choose-of-mem-interval.md)
+- [Prime divisors above $n$ of a block term divide the binomial coefficient](block-reductions/prime-dvd-seq-implies-choose.md)
+- [Central-offset residual bound](residual-large/second-residual-large-central-offset-bou.md)
+- [A block term with a large prime factor, middle range](residual-finite/second-residual-mid-has-large-prime-fact.md)
+- [Prime-counting estimate for Sylvester–Schur when $38 \le n < 945$](second-residual-mid-prime-counting-lt-st.md)
+- [A block term with a large prime factor, small range](residual-finite/second-residual-tiny-has-large-prime-fac.md)
+- [Tiny-range prime-counting bound](residual-large/second-residual-tiny-prime-counting-lt-s.md)
+- [Blocks without large prime divisors start at most at $n^2$](block-reductions/start-le-quadratic-of-no-large-prime-dvd.md)
+- [Central Erdős layer estimate](erdos-power-bounds/central-erdos-layers-two-mul-add-two-lt.md)
+- [Five consecutive integers above five have a prime factor above five](conditional/consecutive-five.md)
+- [Four consecutive integers above four have a prime factor above four](conditional/consecutive-four.md)
+- [Six consecutive integers above six have a prime factor above six](conditional/consecutive-six.md)
+- [Sylvester–Schur theorem for three consecutive integers](conditional/consecutive-three.md)
+- [Sylvester–Schur theorem for two consecutive integers](conditional/consecutive-two.md)
+- [Erdős layer criterion, power-of-four form](erdos-layers/exists-large-prime-dvd-choose-of-mul-pro.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: ZMod.carlitz_sum_inv_block_Ico_eq_zero_of_five_le
 ---
 
-# Carlitz Block Harmonic
+# Carlitz's block harmonic congruence
 
-Block harmonic sum vanishing modulo `p ^ 2` for primes `p ≥ 5`.
+**Carlitz's block harmonic congruence.** Let $p \ge 5$ be a prime and let $k \in \mathbb{N}$.
+Then in $\mathbb{Z}/p^2\mathbb{Z}$
+
+$$\sum_{r=1}^{p-1} (kp + r)^{-1} = 0.$$
+
+Each $kp + r$ with $1 \le r \le p - 1$ is prime to $p$, so these inverses are genuine inverses
+modulo $p^2$.
 
 Cited original: L. Carlitz, "A note on Wolstenholme's theorem", American
 Mathematical Monthly 61 (1954), 174–176.
-
-Here `k : ℕ` follows the source application; the sum runs over `r = 1, …, p - 1`
-via `Finset.Ico 1 p`; under the hypotheses all denominators are units modulo
-`p ^ 2`.
-Proves `Wanted` entry `ZMod.carlitz_sum_inv_block_Ico_eq_zero_of_five_le`.
 
 ## Depends on
 

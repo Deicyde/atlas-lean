@@ -4,5 +4,5 @@ navigation: module
 
 # Power Sum Matrix
 
-- [Theorem 1](trace-pow-two.md)
-- [Lemma 3](integral-pow-one-sub-pow.md)
+- [Traces of powers of a $2 \times 2$ matrix](trace-pow-two.md)
+- [Integral of $x^r (1 - x)^r$ over $(0, 1)$](integral-pow-one-sub-pow.md)

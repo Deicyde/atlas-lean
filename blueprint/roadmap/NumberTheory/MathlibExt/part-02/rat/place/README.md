@@ -7,21 +7,21 @@ navigation: module
 
 ## Rat
 
-- [Place](place.md)
+- [Places of $\mathbb{Q}$](place.md)
 
 ## Place
 
-- [Absolute Value](absolute-value.md)
-- [Completed Field Bundle](completed-field-bundle.md)
-- [Bundle](bundle.md)
-- [Completed Field](completed-field.md)
-- [Embedding](embedding.md)
-- [Absolute Value infinite apply](absolute-value-infinite-apply.md)
-- [Absolute Value finite apply](absolute-value-finite-apply.md)
-- [Embedding norm eq absolute Value](embedding-norm-eq-absolute-value.md)
-- [Dense Range embedding](dense-range-embedding.md)
-- [Exists place equiv](exists-place-equiv.md)
-- [Exists unique place equiv](exists-unique-place-equiv.md)
-- [With Abs Embedding](with-abs-embedding.md)
+- [Absolute value at a rational place](absolute-value.md)
+- [Bundled complete normed field](completed-field-bundle.md)
+- [Bundled completed field at a rational place](bundle.md)
+- [Completed field at a rational place](completed-field.md)
+- [Embedding of the rationals into a completion](embedding.md)
+- [Absolute value at the infinite rational place](absolute-value-infinite-apply.md)
+- [Absolute value at a finite rational place](absolute-value-finite-apply.md)
+- [Norm of a rational in a completion](embedding-norm-eq-absolute-value.md)
+- [The rationals are dense in each completion](dense-range-embedding.md)
+- [Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place](exists-place-equiv.md)
+- [Ostrowski's theorem for $\mathbb{Q}$, indexed by places](exists-unique-place-equiv.md)
+- [Embedding of $\mathbb{Q}$, normed by a place, into its completion](with-abs-embedding.md)
 - [With Abs Embedding isometry](with-abs-embedding-isometry.md)
-- [Dense Range with Abs Embedding](dense-range-with-abs-embedding.md)
+- [Density of the rationals with a place's absolute value in the completion](dense-range-with-abs-embedding.md)

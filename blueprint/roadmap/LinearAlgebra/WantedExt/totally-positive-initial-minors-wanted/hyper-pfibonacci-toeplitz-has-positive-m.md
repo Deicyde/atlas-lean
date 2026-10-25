@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.hyperPFibonacci_toeplitz_hasPositiveMinors
 ---
 
-# Hyper PFibonacci toeplitz has Positive Minors
+# Total positivity of hyper $p$-Fibonacci Toeplitz matrices
 
-For `r ≥ 1` and `p ≥ 1`, with the hyper `p`-Fibonacci numbers `F_{p,n}^{(r)}`
-(`(a, b) = (0, 1)`): the Toeplitz matrix `(F_{p,2n+1+i-j}^{(r)})` of order `r + 2` is totally
-positive for all large `n`, and `(F_{p,n+i-j}^{(r)})` is `TP_{r+1}` for all large `n`.
+**Total positivity of hyper $p$-Fibonacci Toeplitz matrices.** Let $p \ge 1$ be an integer
+and $r \ge 1$ a natural number, and let $F_{p,n}^{(r)}$ be the hyper $p$-Fibonacci numbers, the
+generalized hyper-Fibonacci numbers $W_{p,n}^{(r)}$ with initial values $a = 0$ and $b = 1$.
+Consider real $(r + 2) \times (r + 2)$ matrices with rows and columns indexed by
+$0, \dots, r + 1$. For all sufficiently large $n$, the Toeplitz matrix with entry
+$F_{p,2n+1+i-j}^{(r)}$ in row $i$ and column $j$ is totally positive. Moreover, for all
+sufficiently large $n$, the Toeplitz matrix with entry $F_{p,n+i-j}^{(r)}$ in row $i$ and
+column $j$ is $\mathrm{TP}_{r+1}$: each of its minors of order at most $r + 1$ is positive.
 
 ## Depends on
 
 - [Matrices with positive minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
-- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
+- [Generalized hyper-Fibonacci numbers](generalized-hyper-fibonacci.md)
 
 ## Sources
 

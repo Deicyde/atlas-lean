@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_period_iter
 ---
 
-# G9 period iter
+# Periodicity of $G_9$ in multiples of $18900$
 
-Iterated form of grid periodicity.
+**Periodicity of $G_9$ in multiples of $18900$.** For all natural numbers $o$ and $r$, the
+grid $G$-function for $k = 9$ satisfies $G_9(18900\,o + r) = G_9(r)$.
 
 ## Depends on
 
-- [G9](../grid/g9.md)
+- [Breusch grid function for $k = 9$](../grid/g9.md)
 
 ## Proof depends on
 
-- [G9 shift](g9-shift.md)
+- [One-period shift of $G_9$](g9-shift.md)
 
 ## Sources
 

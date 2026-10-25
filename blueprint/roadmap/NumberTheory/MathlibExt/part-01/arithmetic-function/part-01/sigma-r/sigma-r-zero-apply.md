@@ -7,17 +7,20 @@ proof: formalized
 lean: ArithmeticFunction.sigmaR_zero_apply
 ---
 
-# Sigma R zero apply
+# The complex-exponent divisor sum at exponent zero counts divisors
 
-At exponent zero, `sigmaR` counts the divisors of its input.
+**The complex-exponent divisor sum at exponent zero counts divisors.** Let
+$\sigma_s(n) = \sum_{d \mid n} d^s$ be the divisor-power sum with complex exponent $s$. For
+every natural number $n$, $\sigma_0(n)$ equals the number of positive divisors of $n$, with the
+convention that $0$ has no divisors, so that $\sigma_0(0) = 0$.
 
 ## Depends on
 
-- [Sigma R](sigma-r.md)
+- [Divisor-power sum with complex exponent](sigma-r.md)
 
 ## Proof depends on
 
-- [Sigma R apply](sigma-r-apply.md)
+- [Divisor-sum formula for the complex-exponent divisor sum](sigma-r-apply.md)
 
 ## Sources
 

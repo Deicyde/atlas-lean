@@ -7,19 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.pellType_solution_mul_unit
 ---
 
-# Pell Type Solution Mul Unit
+# Composing a Pell-type solution with a norm-one unit
 
-Multiplying a solution `(T, U)` of `a * T ^ 2 - b * U ^ 2 = c` by a unit
-`(x, y)` of `x ^ 2 - a * b * y ^ 2 = 1` yields the solution
-`(T * x + b * U * y, a * T * y + U * x)`.
+**Composing a Pell-type solution with a norm-one unit.** Let $a, b, c, T, U, x, y$ be integers
+with $a T^2 - b U^2 = c$ and $x^2 - ab y^2 = 1$. Then the pair $(T x + b U y, a T y + U x)$ is
+again a solution: $a (T x + b U y)^2 - b (a T y + U x)^2 = c$.
 
-The source iterates this step under the assumption that `ab > 1` is not a
-square to obtain infinitely many solutions. That infinitude claim needs further
-nondegeneracy hypotheses (for `T = U = c = 0` every iterate is `(0, 0)`) and is
-not formalized here; the single-step identity is pure algebra
-(multiplicativity of the norm form) needing no hypotheses beyond the two
-equations.
-Proves `Wanted` entry `pellType_solution_mul_unit`.
+The source iterates this step, assuming that $ab > 1$ is not a square, to obtain infinitely many
+solutions. That conclusion needs further nondegeneracy hypotheses (for $T = U = c = 0$ every
+iterate is $(0, 0)$); the single step is the multiplicativity of the norm form and needs no
+hypotheses beyond the two equations.
 
 ## Depends on
 

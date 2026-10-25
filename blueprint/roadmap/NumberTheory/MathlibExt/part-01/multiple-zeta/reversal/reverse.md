@@ -6,13 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.MultipleZeta.Index.reverse
 ---
 
-# Reverse
+# Reversed index
 
-Reverse the exponent entries of a multiple-zeta index.
+**Reversed index.** The reverse of an index $(k_0, \dots, k_{d-1})$ is the index
+$(k_{d-1}, \dots, k_0)$ with the same entries in the opposite order.
 
 ## Depends on
 
-- [Index](../index/index.md)
+- [Multiple-zeta index](../index/index.md)
 
 ## Sources
 

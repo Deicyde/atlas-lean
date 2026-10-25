@@ -5,8 +5,8 @@ navigation: module
 
 # Exact Sequence
 
-- [Fractional Ideal Mk0 mem coprime Fractional Ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
-- [Coprime Ideal Class Map surjective](coprime-ideal-class-map-surjective.md)
-- [Ray Class To Class Group surjective](ray-class-to-class-group-surjective.md)
-- [Ray Class six term exact](ray-class-six-term-exact.md)
-- [Ray Class residue Sign six term exact](ray-class-residue-sign-six-term-exact.md)
+- [Nonzero integral ideals coprime to the modulus are coprime fractional ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
+- [Every ideal class contains a fractional ideal coprime to the modulus](coprime-ideal-class-map-surjective.md)
+- [The ray class group surjects onto the class group](ray-class-to-class-group-surjective.md)
+- [The ray class exact sequence](ray-class-six-term-exact.md)
+- [The ray class exact sequence, sign and residue form](ray-class-residue-sign-six-term-exact.md)

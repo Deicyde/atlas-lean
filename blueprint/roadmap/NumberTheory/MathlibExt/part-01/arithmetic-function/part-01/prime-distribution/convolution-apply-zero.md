@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.PrimeDistribution.convolution_apply_zero
 ---
 
-# Convolution apply zero
+# The multiplicative convolution vanishes at index zero
 
-A positive-index convolution has coefficient zero at index zero.
+**The multiplicative convolution vanishes at index zero.** Let $R$ be a semiring and let
+$\alpha, \beta \colon \mathbb{N} \to R$ be finitely supported. Then their convolution
+$\alpha \star \beta$ has value $0$ at index $0$.
 
 ## Depends on
 
-- [Convolution](convolution.md)
+- [Multiplicative convolution of finitely supported sequences](convolution.md)
 
 ## Proof depends on
 
-- [Convolution apply](convolution-apply.md)
+- [Coefficients of the multiplicative convolution](convolution-apply.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.cubicRecurrenceDiscriminant_dvd_mul
 ---
 
-# Cubic Recurrence Discriminant dvd mul
+# Divisibility of the cubic-recurrence discriminants
 
-For the source cubic-recurrence discriminant sequence, each positive-index
-term divides every positive multiple-index term.
+**Divisibility of the cubic-recurrence discriminants.** Let $S_1, S_2, R$ be integers, let $U$
+and $W$ be integer sequences forming a cubic recurrence pair for $(S_1, S_2, R)$, and let
+$D_n = \gcd(W_n - 6R^n, U_n)$ be their discriminant sequence. Then for all integers $n \ge 1$
+and $m \ge 1$, $D_n$ divides $D_{nm}$.
 
 ## Depends on
 
-- [Is Cubic Recurrence Pair](is-cubic-recurrence-pair.md)
-- [Cubic Recurrence Discriminant](cubic-recurrence-discriminant.md)
+- [Cubic recurrence pair](is-cubic-recurrence-pair.md)
+- [Cubic-recurrence discriminant sequence](cubic-recurrence-discriminant.md)
 
 ## Proof depends on
 
-- [Cubic Recurrence Root Condition](cubic-recurrence-root-condition.md)
+- [Root condition for the Roettger–Williams cubic](cubic-recurrence-root-condition.md)
 
 ## Sources
 

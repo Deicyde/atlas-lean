@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.not_summable_ramanujanThetaTerm_one_one
 ---
 
-# Not summable ramanujan Theta Term one one
+# Ramanujan's theta series diverges at $a = b = 1$
 
-At `(a, b) = (1, 1)`, every term is one, so the bilateral series diverges.
+**Ramanujan's theta series diverges at $a = b = 1$.** The series
+$\sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ of Ramanujan's general theta function is
+not summable at $a = b = 1$, since every one of its terms equals $1$.
 
 ## Depends on
 
-- [Ramanujan Theta Term](ramanujan-theta-term.md)
+- [Summand of Ramanujan's general theta function](ramanujan-theta-term.md)
 
 ## Sources
 

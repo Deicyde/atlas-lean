@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Logic.PL.BDD.existsVar
 ---
 
-# Exists Var
+# Existential quantification of a diagram
 
-Existential quantification over `x`: `t[x := false] ∨ t[x := true]`.
+**Existential quantification of a diagram.** For a variable $x$ and a binary decision diagram
+$t$, the existential quantification of $t$ over $x$ is the diagram obtained by combining the
+cofactors $t[x := \mathrm{false}]$ and $t[x := \mathrm{true}]$ with Bryant's apply under
+disjunction.
 
 ## Depends on
 
-- [BDD](../basic/bdd.md)
+- [Binary decision diagram](../basic/bdd.md)
 
 ## Proof depends on
 
-- [Apply](../basic/apply.md)
-- [Restrict](restrict.md)
+- [Bryant's apply operation](../basic/apply.md)
+- [Restriction of a binary decision diagram](restrict.md)
 
 ## Sources
 

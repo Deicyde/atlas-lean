@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.IsAdmissible
 ---
 
-# Is Admissible
+# Admissible trace bounds
 
-A real number `ρ` is admissible when it is nonnegative and all but
-finitely many totally positive algebraic integers have absolute trace at
-least `ρ`.
+**Admissible trace bounds.** A real number $\rho$ is admissible when $\rho \ge 0$ and only
+finitely many totally positive algebraic integers $\alpha \in \mathbb{C}$ have absolute trace
+less than $\rho$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Totally Positive](is-totally-positive.md)
+- [Totally positive algebraic integers](is-totally-positive.md)
 - [Absolute Trace](absolute-trace.md)
 
 ## Sources

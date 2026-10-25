@@ -17,11 +17,11 @@ Gaussian-norm fiber: expanding `dotProduct` over `Fin 2` and using
 ## Depends on
 
 - [Pair Equiv Gaussian Norm Fiber](pair-equiv-gaussian-norm-fiber.md)
-- [Representation Number](../../part-02/sum-squares/representation-count/representation-number.md)
+- [Representation numbers of sums of squares](../../part-02/sum-squares/representation-count/representation-number.md)
 
 ## Proof depends on
 
-- [Solutions](../../part-02/sum-squares/representation-count/solutions.md)
+- [Integer solutions of a sum of squares](../../part-02/sum-squares/representation-count/solutions.md)
 
 ## Sources
 

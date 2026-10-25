@@ -7,12 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry10Example2Summable.ramanujan_part1_ch3_entry10_example2_summable
 ---
 
-# Part1 Ch3 Entry10 Example2 Summable
+# Summability of the logarithmic Poisson series
 
-Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 2, printed p.
-    65 / PDF p. 75.
-
-Proves `Wanted` entry `ramanujan_part1_ch3_entry10_example2_summable`.
+**Summability of the logarithmic Poisson series.** For every real $x$, the series
+$\sum_{k=1}^{\infty} e^{-x} x^k \log(k + 1) / k!$ is summable.
 
 ## Depends on
 
@@ -21,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry10Example2Summable](../../../../../../sources/v2/MathlibExt.md)
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 2, printed p. 65 / PDF p. 75.

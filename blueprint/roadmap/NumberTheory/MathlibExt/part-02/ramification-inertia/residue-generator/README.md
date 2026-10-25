@@ -5,5 +5,5 @@ navigation: module
 
 # Residue Generator
 
-- [Quotient algebra Map surjective of adjoin singleton eq top](quotient-algebra-map-surjective-of-adjoi.md)
-- [Inertia Deg eq one of adjoin singleton eq top](inertia-deg-eq-one-of-adjoin-singleton-e.md)
+- [Surjectivity of the residue map for a singly generated algebra](quotient-algebra-map-surjective-of-adjoi.md)
+- [Inertia degree one for a singly generated algebra](inertia-deg-eq-one-of-adjoin-singleton-e.md)

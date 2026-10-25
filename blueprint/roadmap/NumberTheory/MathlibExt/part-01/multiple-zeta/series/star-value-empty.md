@@ -7,23 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.MultipleZeta.starValue_empty
 ---
 
-# Star Value empty
+# Multiple-zeta-star value of the empty index
 
-The multiple-zeta-star value of the empty index is one.
+**Multiple-zeta-star value of the empty index.** The multiple-zeta-star value of the empty
+index is $1$.
 
 ## Depends on
 
-- [Is Admissible Or Empty](is-admissible-or-empty.md)
-- [Empty](empty.md)
-- [Star Value](star-value.md)
+- [Admissible or empty index](is-admissible-or-empty.md)
+- [Empty multiple-zeta index](empty.md)
+- [Multiple zeta-star value](star-value.md)
 
 ## Proof depends on
 
-- [Depth](../index/depth.md)
-- [Entry](entry.md)
-- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
-- [Empty](empty-3.md)
-- [Star Summand](star-summand.md)
+- [Depth of an index](../index/depth.md)
+- [Entry of a multiple-zeta index](entry.md)
+- [Weakly decreasing tuples](weakly-decreasing-tuple.md)
+- [Empty weakly decreasing tuple](empty-3.md)
+- [Multiple-zeta-star summand](star-summand.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Counting Mod](../../../MathlibExt/part-02/prime-counting/part-02/residue-class/prime-counting-mod.md)
+- [Prime counting in a residue class](../../../MathlibExt/part-02/prime-counting/part-02/residue-class/prime-counting-mod.md)
 
 ## Sources
 

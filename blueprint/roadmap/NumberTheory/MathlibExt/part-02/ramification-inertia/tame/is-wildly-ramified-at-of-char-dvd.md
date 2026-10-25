@@ -7,19 +7,22 @@ proof: formalized
 lean: Algebra.isWildlyRamifiedAt_of_char_dvd
 ---
 
-# Is Wildly Ramified At of char dvd
+# Divisibility of the ramification index forces wild ramification
 
-Wild ramification follows from the residue characteristic dividing the
-ramification index, with no separability hypothesis: divisibility alone
-contradicts the `.not_dvd` projection of any putative tame proof.
+**Divisibility of the ramification index forces wild ramification.** Let $R$ be a
+commutative ring, $S$ a commutative $R$-algebra and $q$ a prime ideal of $S$ with residue field
+$\kappa(q)$. If the characteristic of $\kappa(q)$ divides the ramification index of $q$ over $R$,
+then $q$ is wildly ramified over $R$.
+
+No separability hypothesis on the residue field extension is needed.
 
 ## Depends on
 
-- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+- [Wildly ramified prime](is-wildly-ramified-at.md)
 
 ## Proof depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
 - [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources

@@ -21,7 +21,7 @@ that produces the same clauses in another order.
 
 ## Depends on
 
-- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNF formula](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -29,7 +29,7 @@ that produces the same clauses in another order.
 - [Tseitin clauses for an implication](imp-clauses.md)
 - [Tseitin clauses for a disjunction](or-clauses.md)
 - [One step of the Tseitin encoding](tseitin-step.md)
-- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNF clause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

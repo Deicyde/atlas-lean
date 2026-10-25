@@ -5,5 +5,5 @@ navigation: module
 
 # Modulus
 
-- [Infinite finite Part](infinite-finite-part.md)
-- [Infinite infinite Part](infinite-infinite-part.md)
+- [Finite part of the modulus of a real place](infinite-finite-part.md)
+- [Infinite part of the modulus of a real place](infinite-infinite-part.md)

@@ -7,14 +7,17 @@ proof: formalized
 lean: EngelExpansion.negRem_eq_iff
 ---
 
-# Neg Rem eq iff
+# Characterization of the negated remainder
 
-Characterization of the negated remainder: `negRem n k = u` iff `u < k` and
-`k ∣ n + u`. This is the `ℕ` form of `u ≡ -n (mod k)`.
+**Characterization of the negated remainder.** For natural numbers $n$, $k$ and $u$ with
+$k \ne 0$, the negated remainder of $n$ modulo $k$ equals $u$ if and only if $u < k$ and $k$
+divides $n + u$.
+
+This is the natural-number form of $u \equiv -n \pmod{k}$.
 
 ## Depends on
 
-- [Neg Rem](neg-rem.md)
+- [Negated remainder](neg-rem.md)
 
 ## Sources
 

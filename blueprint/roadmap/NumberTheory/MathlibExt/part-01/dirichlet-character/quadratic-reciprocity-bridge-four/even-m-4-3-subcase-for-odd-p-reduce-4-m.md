@@ -15,14 +15,14 @@ bridge to `m` itself. Covers prime and composite odd denominators alike.
 
 ## Depends on
 
-- [Kronecker Sym](../quadratic/kronecker-sym.md)
+- [Kronecker symbol](../quadratic/kronecker-sym.md)
 
 ## Proof depends on
 
-- [Quadratic Reciprocity Three Odd](../chi4-mul-jacobi-sym-nat-abs-eq-kronecker.md)
-- [Jacobi Sym four mul of odd](jacobi-sym-four-mul-of-odd.md)
-- [Kronecker At Prime](../quadratic/kronecker-at-prime.md)
-- [Quadratic Character Aux](../kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
+- [Kronecker symbol at odd numbers for integers congruent to 3 mod 4](../chi4-mul-jacobi-sym-nat-abs-eq-kronecker.md)
+- [Jacobi symbol of $4m$ at an odd denominator](jacobi-sym-four-mul-of-odd.md)
+- [Kronecker symbol at a prime](../quadratic/kronecker-at-prime.md)
+- [Kronecker and Jacobi symbols agree at odd primes](../kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

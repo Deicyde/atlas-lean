@@ -7,20 +7,23 @@ proof: formalized
 lean: Farey.isFareyNeighbor_iff_det_and_sum
 ---
 
-# Is Farey Neighbor iff det and sum
+# Arithmetic characterization of Farey neighbors
 
-Arithmetic characterization of consecutive Farey fractions.
+**Arithmetic characterization of Farey neighbors.** Let $n$ be a natural number and let
+$x = a/b$ and $y = c/d$ be elements of the Farey set $F_n$, written in lowest terms with
+$b, d > 0$. Then $x$ and $y$ are Farey neighbors of order $n$ if and only if $bc = ad + 1$ and
+$n < b + d$.
 
 ## Depends on
 
-- [Is Farey Neighbor](is-farey-neighbor.md)
-- [Farey Finset](farey-finset.md)
+- [Farey neighbors](is-farey-neighbor.md)
+- [Farey set](farey-finset.md)
 
 ## Proof depends on
 
-- [Det eq one](det-eq-one.md)
-- [Det one and sum gt imp neighbor](det-one-and-sum-gt-imp-neighbor.md)
-- [Neighbor den sum gt](neighbor-den-sum-gt.md)
+- [Consecutive Farey fractions have determinant one](det-eq-one.md)
+- [Determinant one and large denominator sum give Farey neighbors](det-one-and-sum-gt-imp-neighbor.md)
+- [Farey neighbors have denominator sum exceeding the order](neighbor-den-sum-gt.md)
 
 ## Sources
 

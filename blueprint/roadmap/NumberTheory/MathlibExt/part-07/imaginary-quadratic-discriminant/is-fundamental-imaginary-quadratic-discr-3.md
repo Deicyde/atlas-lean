@@ -13,7 +13,7 @@ Constructor for a fundamental imaginary quadratic discriminant.
 ## Depends on
 
 - [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
-- [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
+- [Fundamental discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources
 

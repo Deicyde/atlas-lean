@@ -7,14 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.tuenter_bernoulli_power_sum_identity
 ---
 
-# Tuenter Bernoulli Power Sum
+# Tuenter's power-sum identity for Bernoulli numbers
 
-Tuenter's power-sum identity for Bernoulli numbers (equation (23) at `c = 0`).
+**Tuenter's power-sum identity for Bernoulli numbers.** Let $a$ and $b$ be nonzero complex
+numbers and let $n \ge 1$ be a natural number with $b^n \ne a^n$. Let $\sigma_x(i) \in \mathbb{C}$,
+for $x \in \mathbb{C}$ and $i \in \mathbb{N}$, satisfy
+$(i+1)\,\sigma_x(i) = B_{i+1}(x+1) - B_{i+1}$ for all $x$ and $i$, where $B_m(t)$ denotes the
+Bernoulli polynomial and $B_m$ the Bernoulli number, with $B_1 = -\tfrac{1}{2}$. Then
 
-At `c = 0` the Bernoulli polynomial `B_0(n)` is the Bernoulli number `Bₙ` and
-the denominator is `b^n - a^n`. The power sums are pinned by
-`(i+1) * σ_x(i) = B_{i+1}(x+1) - B_{i+1}` from line 325. Integer exponents
-are used since `n - 1 - i` can be `-1`, guarded by the nonzero hypotheses.
+$$B_n = \frac{1}{b^n - a^n} \sum_{i=1}^{n} \binom{n}{i} B_{n-i}
+\left( a^{n-1-i} \, b^i \, \sigma_{a-1}(i) - a^i \, b^{n-1-i} \, \sigma_{b-1}(i) \right),$$
+
+where the exponents $n - 1 - i$ are integers, equal to $-1$ when $i = n$.
+
+For a natural number $x$ and $i \ge 1$ the relation gives $\sigma_x(i) = 1^i + 2^i + \dots + x^i$.
 
 ## Depends on
 

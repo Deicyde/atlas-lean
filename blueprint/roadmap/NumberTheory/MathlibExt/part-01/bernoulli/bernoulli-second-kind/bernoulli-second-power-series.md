@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliSecondPowerSeries
 ---
 
-# Bernoulli Second Power Series
+# Generating function of the Bernoulli numbers of the second kind
 
-Exponential generating function of the Bernoulli numbers of the
-second kind: `t / log (1 + t) = ∑ₙ Bₙ^* * t ^ n / n!`, written as the
-inverse of the unit series `log (1 + t) / t = ∑ₙ (-1) ^ n * t ^ n / (n + 1)`
-(the logarithm itself is not a unit, having zero constant coefficient).
+**Generating function of the Bernoulli numbers of the second kind.** Let $G(t)$ be the
+inverse, in the ring $\mathbb{Q}[[t]]$ of formal power series, of the series
+$\sum_{n \ge 0} \frac{(-1)^n}{n + 1} t^n$, which is invertible because its constant
+coefficient is $1$.
+
+Analytically this series is $\log(1 + t) / t$, so $G(t) = t / \log(1 + t)$; the logarithm
+itself is not invertible, having zero constant coefficient.
 
 ## Depends on
 

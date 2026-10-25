@@ -7,17 +7,19 @@ proof: formalized
 lean: NumberField.positivePrimitiveIntMinpoly_isPrimitive
 ---
 
-# Positive Primitive Int Minpoly is Primitive
+# The positive primitive integral minimal polynomial is primitive
 
-Sign normalization preserves the canonical polynomial's primitivity.
+**The positive primitive integral minimal polynomial is primitive.** For every element $x$ of
+a field $K$ that is an algebra over $\mathbb{Q}$, the positive primitive integral minimal
+polynomial of $x$ is primitive: the greatest common divisor of its integer coefficients is $1$.
 
 ## Depends on
 
-- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive primitive integral minimal polynomial](positive-primitive-int-minpoly.md)
 
 ## Proof depends on
 
-- [Absolute](../primitive-int-minpoly.md)
+- [Primitive integral minimal polynomial](../primitive-int-minpoly.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Binomial Fibonacci Convolution
 
-- [Choose succ int](choose-succ-int.md)
-- [Fib conv step](fib-conv-step.md)
-- [Binomial fibonacci convolution](binomial-fibonacci-convolution.md)
+- [Pascal's rule for binomial coefficients](choose-succ-int.md)
+- [Fibonacci step in the alternating binomial sum](fib-conv-step.md)
+- [Alternating binomial sum of Fibonacci numbers](binomial-fibonacci-convolution.md)

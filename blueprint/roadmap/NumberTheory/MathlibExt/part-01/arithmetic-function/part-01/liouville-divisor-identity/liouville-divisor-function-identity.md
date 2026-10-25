@@ -7,11 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.liouville_divisor_function_identity
 ---
 
-# Liouville divisor function identity
+# Liouville's divisor-function identity
 
-Liouville's divisor-function identity (source-shaped form): for `0 < n`, the square
-of the sum of divisor counts over the divisors of `n` equals the sum of the cubes
-of those divisor counts.
+**Liouville's divisor-function identity.** For every positive integer $n$, writing $\tau(d)$
+for the number of positive divisors of $d$,
+
+$$\left(\sum_{d \mid n} \tau(d)\right)^2 = \sum_{d \mid n} \tau(d)^3,$$
+
+where both sums run over the positive divisors $d$ of $n$.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Liouville divisor function identity general](liouville-divisor-function-identity-gene.md)
+- [Liouville's divisor-function identity for all natural numbers](liouville-divisor-function-identity-gene.md)
 
 ## Sources
 

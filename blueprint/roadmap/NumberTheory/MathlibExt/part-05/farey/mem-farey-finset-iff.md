@@ -7,13 +7,15 @@ proof: formalized
 lean: Farey.mem_fareyFinset_iff
 ---
 
-# Mem farey Finset iff
+# Membership in the Farey set
 
-Membership characterization: `q ∈ F_n` iff `0 ≤ q ≤ 1` and `q.den ≤ n`.
+**Membership in the Farey set.** For a natural number $n$ and a rational number $q$, $q$
+belongs to the Farey set $F_n$ of order $n$ if and only if $0 \le q \le 1$ and the denominator of
+$q$ in lowest terms is at most $n$.
 
 ## Depends on
 
-- [Farey Finset](farey-finset.md)
+- [Farey set](farey-finset.md)
 
 ## Sources
 

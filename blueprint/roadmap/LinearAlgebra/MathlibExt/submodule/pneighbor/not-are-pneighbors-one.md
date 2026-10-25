@@ -7,13 +7,14 @@ proof: formalized
 lean: Submodule.not_arePNeighbors_one
 ---
 
-# Not are PNeighbors one
+# No submodules are $1$-neighbors
 
-No two submodules are `1`-neighbors, since `1` is not prime.
+**No submodules are $1$-neighbors.** For any submodules $L_1$ and $L_2$ of a module $M$
+over a commutative ring $R$, $L_1$ and $L_2$ are not $1$-neighbors, since $1$ is not prime.
 
 ## Depends on
 
-- [Are PNeighbors](are-pneighbors.md)
+- [$p$-neighbors of submodules](are-pneighbors.md)
 
 ## Sources
 

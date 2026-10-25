@@ -19,12 +19,12 @@ It is a reusable bridge toward N406, not itself the full source theorem.
 
 ## Depends on
 
-- [Finite Supported](../../part-02/ray-group/finite-supported.md)
-- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
+- [Elements coprime to a modulus](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
-- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Fractional ideals coprime to a modulus](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

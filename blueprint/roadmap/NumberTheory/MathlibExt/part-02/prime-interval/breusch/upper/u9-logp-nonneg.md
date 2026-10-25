@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_logp_nonneg
 ---
 
-# U9 logp nonneg
+# Logarithms of primes are nonnegative
 
-Logarithms of primes are nonnegative.
+**Logarithms of primes are nonnegative.** For every prime $p$, $\log p \ge 0$.
 
 ## Depends on
 

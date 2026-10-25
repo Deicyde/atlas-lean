@@ -5,9 +5,9 @@ navigation: module
 
 # Frobenius Generators
 
-- [Is Unramified Outside](is-unramified-outside.md)
-- [At coprime Prime](at-coprime-prime.md)
-- [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)
-- [Frobenius At Coprime Prime spec](frobenius-at-coprime-prime-spec.md)
-- [Free Group To Gal](free-group-to-gal.md)
-- [Free Group To Gal of](free-group-to-gal-of.md)
+- [Extensions unramified outside a modulus](is-unramified-outside.md)
+- [Unramified outside a modulus implies unramified at coprime primes](at-coprime-prime.md)
+- [Chosen Frobenius element at a coprime prime](frobenius-at-coprime-prime.md)
+- [The chosen Frobenius is an arithmetic Frobenius at an unramified prime](frobenius-at-coprime-prime-spec.md)
+- [Frobenius homomorphism on the free group of coprime primes](free-group-to-gal.md)
+- [The Frobenius homomorphism on generators](free-group-to-gal-of.md)

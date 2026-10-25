@@ -1,5 +1,5 @@
 # Matrix
 
-- [Inverse Eigenvalues Wanted](inverse-eigenvalues.md)
-- [Jacobi Det Derivative Wanted](jacobi-det-derivative.md)
-- [Jacobi Iteration Wanted](jacobi-iteration-converges.md)
+- [Eigenvalues of the inverse matrix](inverse-eigenvalues.md)
+- [Jacobi's formula](jacobi-det-derivative.md)
+- [Convergence of the Jacobi method for strictly diagonally dominant matrices](jacobi-iteration-converges.md)

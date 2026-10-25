@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Logic.CLL.Girard.mpl
 ---
 
-# Mpl
+# Theorems of minimal logic translate to CLL theorems
 
-Theorems of minimal logic translate to CLL theorems.
+**Theorems of minimal logic translate to CLL theorems.** For every map $f$ from propositional
+atoms to CLL propositions, if a propositional formula $A$ is derivable in natural deduction from
+the empty context with no axioms (minimal logic), then the one-sided CLL sequent $\vdash A^\circ$
+is provable, where $A^\circ$ is Girard's translation of $A$ with atoms translated by $f$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ Theorems of minimal logic translate to CLL theorems.
 ## Proof depends on
 
 - [Girard's translation preserves provability](derivable-of-derivation.md)
-- [Hyps](hyps.md)
+- [Translated hypotheses of a context](hyps.md)
 
 ## Sources
 

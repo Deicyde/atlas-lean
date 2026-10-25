@@ -7,13 +7,17 @@ proof: formalized
 lean: Chebyshev.abs_normalizedThetaError_le
 ---
 
-# Abs normalized Theta Error le
+# Explicit bound for the normalized theta error
 
-Stronger explicit global bound; the source proof never uses `0 ≤ t`.
+**Explicit bound for the normalized theta error.** Let $\theta(x) = \sum_{p \le x} \log p$ be
+Chebyshev's function, the sum running over primes $p$, and let $H(t) = \theta(e^t)e^{-t} - 1$ be
+the normalized theta error. Then $|H(t)| \le \log 4 + 1$ for every real $t$.
+
+The bound holds for all real $t$, not only for $t \ge 0$.
 
 ## Depends on
 
-- [Normalized Theta Error](../laplace-theta-continuation/normalized-theta-error.md)
+- [The normalized Chebyshev error](../laplace-theta-continuation/normalized-theta-error.md)
 
 ## Sources
 

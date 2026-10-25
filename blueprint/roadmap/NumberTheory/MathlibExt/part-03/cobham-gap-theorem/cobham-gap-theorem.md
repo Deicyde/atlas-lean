@@ -7,20 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.cobham_gap_theorem
 ---
 
-# Cobham gap theorem
+# Cobham's gap theorem
 
-Cobham's gap theorem: for a strictly monotone enumeration `x` of a
-`k`-recognizable set of naturals, either the limsup of the consecutive ratios
-`x (i+1) / x i` (in `ENNReal`, so an unbounded limsup is `⊤`) exceeds `1`,
-or the consecutive gaps `x (i+1) - x i` are uniformly bounded.
+**Cobham's gap theorem.** Let $k \ge 2$ be a natural number and let $x_0 < x_1 < x_2 < \cdots$
+be a strictly increasing sequence of natural numbers whose set of values is recognizable in base
+$k$. Then either the limit superior, as $i \to \infty$, of the ratios $x_{i+1} / x_i$ computed in
+the extended nonnegative reals $[0, \infty]$ (so an unbounded limit superior is $\infty$, and a
+ratio with denominator $0$ is $\infty$) is greater than $1$, or there is a natural number $C$ with
+$x_{i+1} - x_i \le C$ for every $i$.
 
 ## Depends on
 
-- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+- [Sets recognizable in base k](../base-recognizable/is-base-recognizable.md)
 
 ## Proof depends on
 
-- [Cobham gap theorem general](cobham-gap-theorem-general.md)
+- [Cobham's gap theorem without a separate base hypothesis](cobham-gap-theorem-general.md)
 
 ## Sources
 

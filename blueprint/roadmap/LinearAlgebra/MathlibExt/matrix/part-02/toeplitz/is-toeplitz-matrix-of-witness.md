@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.isToeplitzMatrix_of_witness
 ---
 
-# Is Toeplitz Matrix of witness
+# Toeplitz matrices from coefficients
 
-Construction of a Toeplitz matrix from an explicit coefficient witness.
+**Toeplitz matrices from coefficients.** Let $A = (a_{ij})$ be a real $(n+1) \times (n+1)$
+matrix with rows and columns indexed by $\{0, \dots, n\}$. If $c : \mathbb{Z} \to \mathbb{R}$
+satisfies $a_{ij} = c(i - j)$ for all $i, j$, then $A$ is a Toeplitz matrix.
 
 ## Depends on
 
-- [Is Toeplitz Matrix](is-toeplitz-matrix.md)
+- [Toeplitz matrix](is-toeplitz-matrix.md)
 
 ## Sources
 

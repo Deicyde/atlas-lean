@@ -4,5 +4,5 @@ navigation: module
 
 # Max Min Generalized Eigenvalue
 
-- [Det max Matrix sub X smul min Matrix](det-max-matrix-sub-x-smul-min-matrix.md)
-- [Generalized Eigenvalue interlacing](generalized-eigenvalue-interlacing.md)
+- [Generalized eigenvalues of a MAX matrix to a MIN matrix](det-max-matrix-sub-x-smul-min-matrix.md)
+- [Cauchy interlacing for generalized eigenvalues](generalized-eigenvalue-interlacing.md)

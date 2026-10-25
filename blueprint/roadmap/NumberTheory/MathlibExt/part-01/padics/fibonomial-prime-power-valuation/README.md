@@ -5,5 +5,5 @@ navigation: module
 
 # Fibonomial Prime Power Valuation
 
-- [Padic Val Nat fib mul](padic-val-nat-fib-mul.md)
-- [Fibonomial prime Power padic Val eq zero](fibonomial-prime-power-padic-val-eq-zero.md)
+- [Lifting the exponent for Fibonacci numbers](padic-val-nat-fib-mul.md)
+- [Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers](fibonomial-prime-power-padic-val-eq-zero.md)

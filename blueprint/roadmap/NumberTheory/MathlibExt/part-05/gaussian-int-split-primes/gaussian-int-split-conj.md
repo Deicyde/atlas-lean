@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gaussian Int prime of nat Abs norm prime](../gaussian-int-prime-basics/gaussian-int-prime-of-nat-abs-norm-prime.md)
+- [Gaussian integers of prime norm are prime](../gaussian-int-prime-basics/gaussian-int-prime-of-nat-abs-norm-prime.md)
 
 ## Sources
 

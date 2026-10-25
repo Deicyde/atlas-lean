@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Residue Separable At](is-residue-separable-at.md)
+- [Residue separability at a prime](is-residue-separable-at.md)
 
 ## Sources
 
