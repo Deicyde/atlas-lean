@@ -17,8 +17,8 @@ computable with respect to the canonical bit-string encodings.
 ## Depends on
 
 - [The Cook–Levin reduction](red.md)
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 - [Bitstring Encoding](../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

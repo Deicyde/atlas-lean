@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_alphabetPreimage_equiv_iff
 ---
 
-# Finite syntactic Monoid alphabet Preimage equiv iff
+# Finiteness of the syntactic monoid is invariant under renaming letters
 
-Syntactic finiteness is invariant under renaming the alphabet by an equivalence.
+**Finiteness of the syntactic monoid is invariant under renaming letters.** Let
+$e \colon \Sigma \to \Gamma$ be a bijection between alphabets and $L$ a language over $\Gamma$.
+The syntactic monoid of the alphabet preimage $\{w \in \Sigma^* \mid e^*(w) \in L\}$, where
+$e^*(w)$ is the word obtained by applying $e$ to each letter of $w$, is finite if and only if
+the syntactic monoid of $L$ is finite.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet preimage](alphabet-preimage.md)
 
 ## Proof depends on
 
-- [Is Regular alphabet Preimage equiv iff](is-regular-alphabet-preimage-equiv-iff.md)
+- [Renaming letters by a bijection preserves and reflects regularity](is-regular-alphabet-preimage-equiv-iff.md)
 - [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources

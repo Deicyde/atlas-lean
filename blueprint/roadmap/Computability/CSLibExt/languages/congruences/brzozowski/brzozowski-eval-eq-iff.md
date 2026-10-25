@@ -6,26 +6,28 @@ proof: formalized
 lean: DFA.brzozowski_eval_eq_iff
 ---
 
-# Brzozowski eval eq iff
+# Brzozowski's automaton identifies exactly the Nerode equivalent words
 
-Two words reach the same state of Brzozowski's automaton exactly when they are Nerode
-equivalent for the language of `M`.
+**Brzozowski's automaton identifies exactly the Nerode equivalent words.** For a deterministic
+finite automaton $M$ over a finite alphabet with finitely many states and words $w$ and $w'$,
+Brzozowski's automaton of $M$ reaches the same state on $w$ as on $w'$ if and only if $w$ and $w'$
+are Nerode equivalent for the language of $M$, that is, have the same left quotient.
 
 ## Depends on
 
 - [Nerode Rel](../nerode/nerode-rel.md)
-- [Brzozowski State](brzozowski-state.md)
+- [States of Brzozowski's automaton](brzozowski-state.md)
 - [Brzozowski's automaton](brzozowski.md)
 
 ## Proof depends on
 
-- [Mid State](mid-state.md)
-- [Accessible Part Within](../../../decidability/part-02/regular/accessible-part-within.md)
-- [Brzozowski Mid](brzozowski-mid.md)
-- [Brzozowski Mid surjective](brzozowski-mid-surjective.md)
+- [States of the intermediate Brzozowski automaton](mid-state.md)
+- [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
+- [The intermediate Brzozowski automaton](brzozowski-mid.md)
+- [Every state of the intermediate Brzozowski automaton is reachable](brzozowski-mid-surjective.md)
 - [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
-- [Rev Det](rev-det.md)
-- [`revDet` accepts the reversal](rev-det-accepts.md)
+- [Determinized reversal of a DFA](rev-det.md)
+- [The determinized reversal accepts the reversed language](rev-det-accepts.md)
 - [Brzozowski's lemma](rev-det-eval-eq-iff.md)
 
 ## Sources

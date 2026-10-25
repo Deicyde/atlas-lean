@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.SSVerify.exists_pick
 ---
 
-# Exists pick
+# Every sublist is selected by a mask
 
-Every sublist is chosen by a mask as long as the list.
+**Every sublist is selected by a mask.** If $l$ is a sublist of a list $a$ of natural numbers,
+then there is a list $w$ of Booleans of the same length as $a$ such that the entries $a_i$ of $a$
+with $w_i$ true, taken in order, form exactly $l$.
 
 ## Depends on
 
-- [Pick](pick.md)
+- [Numbers chosen by a mask](pick.md)
 
 ## Sources
 

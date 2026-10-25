@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Path.length_reachMarks
 ---
 
-# Length reach Marks
+# The final marks have one entry per vertex
 
-The final marks are `n` long.
+**The final marks have one entry per vertex.** For natural numbers $n, s$ and a list $E$ of
+pairs of natural numbers, the marks after $n$ marking passes over $E$ for $n$ vertices, starting
+from the initial marks for source $s$, form a list of length $n$.
 
 ## Depends on
 
-- [Reach Marks](../path/reach-marks.md)
+- [Reach marks](../path/reach-marks.md)
 
 ## Proof depends on
 
-- [Init Marks](../path/init-marks.md)
-- [Length iterate mark Pass](length-iterate-mark-pass.md)
-- [Mark Pass](../path/mark-pass.md)
+- [Initial marks](../path/init-marks.md)
+- [Repeated marking passes preserve the length](length-iterate-mark-pass.md)
+- [One marking pass](../path/mark-pass.md)
 
 ## Sources
 

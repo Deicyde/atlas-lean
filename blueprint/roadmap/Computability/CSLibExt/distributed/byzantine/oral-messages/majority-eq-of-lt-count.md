@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.majority_eq_of_lt_count
 ---
 
-# Majority eq of lt count
+# A value filling more than half of a multiset is its majority
 
-A value that fills more than half of a multiset is its majority.
+**A value filling more than half of a multiset is its majority.** If more than half of the
+elements of a multiset $s$ of values are equal to $x$ (counted with multiplicity), then the
+majority of $s$ is $x$.
 
 ## Depends on
 
-- [Majority](majority.md)
+- [Majority of a multiset](majority.md)
 
 ## Sources
 

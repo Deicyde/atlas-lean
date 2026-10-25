@@ -31,7 +31,7 @@ This node has no prerequisites.
 - [Step count of the Horner rounds](horn-t.md)
 - [Total length bound](m-of.md)
 - [Step budget of the power loop](pow-b.md)
-- [Cap H](../situation/part-05/cap-h.md)
+- [Stack cap](../situation/part-05/cap-h.md)
 
 ## Sources
 

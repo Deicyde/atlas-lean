@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitClique.start
 ---
 
-# Start
+# Start label of the CLIQUE emitter
 
-The start label.
+**Start label of the CLIQUE emitter.** The start label of the CLIQUE emitter machine is its
+label $\mathsf{start}$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the SAT-to-CLIQUE emitter](lab.md)
 
 ## Sources
 

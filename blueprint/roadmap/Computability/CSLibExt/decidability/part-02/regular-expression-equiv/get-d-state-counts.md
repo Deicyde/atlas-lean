@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.getD_stateCounts
 ---
 
-# Get D state Counts
+# The pass computes the Thompson state count of every node
 
-The count of every node is the number of Thompson states of its expression (`0` past the
-end).
+**The pass computes the Thompson state count of every node.** For every list $l$ of nodes and
+every index $k$, the entry at index $k$ of the state counts of $l$ (read as $0$ past the end of the
+list) equals the Thompson state count of the regular expression at node $k$ of the encoding with
+nodes $l$ when $k$ is less than the length of $l$, and $0$ otherwise.
 
 ## Depends on
 
 - [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
-- [Encoded Regex](../regular-expression/encoded-regex.md)
-- [Regex At](../regular-expression/regex-at.md)
-- [State Counts](state-counts.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
+- [Regular expression at a node](../regular-expression/regex-at.md)
+- [Thompson state counts of a node list](state-counts.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Proof depends on
 
-- [Length state Counts](length-state-counts.md)
-- [Node](../regular-expression/node.md)
-- [Regex At append](../regular-expression/regex-at-append.md)
-- [State Counts append singleton](state-counts-append-singleton.md)
-- [Step States](step-states.md)
+- [One state count per node](length-state-counts.md)
+- [Node at an index](../regular-expression/node.md)
+- [Appending nodes does not change earlier expressions](../regular-expression/regex-at-append.md)
+- [Appending a node appends its count](state-counts-append-singleton.md)
+- [One step of the Thompson state count](step-states.md)
 
 ## Sources
 

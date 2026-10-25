@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.CookLevin.encodeCNF
 ---
 
-# Encode CNF
+# Length-prefixed binary code of a CNF formula
 
-Binary code of a CNF formula: its clause count followed by the encoded clauses.
+**Length-prefixed binary code of a CNF formula.** Writing $1$ for true and $0$ for false, the
+code of a CNF formula $\varphi = (C_1, \dots, C_m)$ is $1^m 0$ ($m$ ones followed by a zero)
+followed by the length-prefixed binary codes of the clauses $C_1, \dots, C_m$ in order.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ Binary code of a CNF formula: its clause count followed by the encoded clauses.
 
 ## Proof depends on
 
-- [Encode Clause](encode-clause.md)
+- [Length-prefixed binary code of a clause](encode-clause.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

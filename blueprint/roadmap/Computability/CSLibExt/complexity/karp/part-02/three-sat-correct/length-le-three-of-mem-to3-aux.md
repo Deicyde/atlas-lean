@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.length_le_three_of_mem_to3Aux
 ---
 
-# Length le three of mem to3 Aux
+# Clauses of the auxiliary 3SAT translation have at most three literals
 
-Every clause of `to3Aux` has at most three literals.
+**Clauses of the auxiliary 3SAT translation have at most three literals.** For every CNF
+formula $\varphi$, every clause of the clause list produced by the auxiliary SAT-to-3SAT
+translation of $\varphi$ (which replaces each clause by its chain of clauses with fresh
+variables) has at most three literals.
 
 ## Depends on
 
-- [To3 Aux](../three-sat/to3-aux.md)
+- [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Chain](../three-sat/chain.md)
-- [Length le three of mem chain](length-le-three-of-mem-chain.md)
+- [The chain of clauses replacing one clause](../three-sat/chain.md)
+- [Chain clauses have at most three literals](length-le-three-of-mem-chain.md)
 
 ## Sources
 

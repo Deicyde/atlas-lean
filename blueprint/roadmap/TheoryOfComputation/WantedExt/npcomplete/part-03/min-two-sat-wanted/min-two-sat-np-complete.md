@@ -14,7 +14,7 @@ satisfiability problem" (1994).
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Min Two Sat Dec](min-two-sat-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

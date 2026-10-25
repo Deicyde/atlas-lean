@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.TM2Decidable.exists_computable
 ---
 
-# Exists computable
+# Decidable languages have computable membership tests
 
-A decidable language is the set where a computable test is `true`.
+**Decidable languages have computable membership tests.** Let $L$ be a language over an
+alphabet $\sigma$ with a primitive recursive encoding. If membership in $L$ is decidable by a
+multi-stack machine, then there is a computable function $f$ from words over $\sigma$ to
+Booleans such that $L$ is the language of $f$, that is, the set of words $u$ with
+$f(u) = \mathrm{true}$.
 
 ## Depends on
 
-- [TM2 Decidable](../basic/tm2-decidable.md)
-- [Bool Lang](bool-lang.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
+- [Language of a Boolean test](bool-lang.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

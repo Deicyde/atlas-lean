@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.lts
 ---
 
-# Lts
+# Two-phase commit as a transition system
 
-Two-phase commit as a labelled transition system.
+**Two-phase commit as a transition system.** For a set $P$ of participants, the labelled
+transition system whose states are the global states of the protocol, whose labels are the
+protocol actions, and whose transitions are the protocol steps.
 
 ## Depends on
 
-- [Action](action.md)
-- [State](state.md)
+- [Two-phase commit actions](action.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Transitions of two-phase commit](step.md)
 
 ## Sources
 

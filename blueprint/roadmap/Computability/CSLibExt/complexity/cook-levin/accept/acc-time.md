@@ -30,7 +30,7 @@ family of $L$ for $n_1$, $a$, $k_1$, $e$ at $T$, $H$ followed by $o$.
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

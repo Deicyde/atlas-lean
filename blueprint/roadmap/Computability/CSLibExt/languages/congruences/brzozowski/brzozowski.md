@@ -7,19 +7,22 @@ lean: DFA.brzozowski
 
 # Brzozowski's automaton
 
-**Brzozowski's automaton**: reverse, determinize, keep the reachable subsets, twice.
+**Brzozowski's automaton.** For a deterministic finite automaton $M$ over a finite alphabet
+with finitely many states, the subset construction of the reversal of the intermediate Brzozowski
+automaton of $M$, restricted to the subsets reachable from its start state. Equivalently: reverse,
+determinize by the subset construction and keep the reachable subsets, twice.
 
 ## Depends on
 
-- [Brzozowski State](brzozowski-state.md)
+- [States of Brzozowski's automaton](brzozowski-state.md)
 
 ## Proof depends on
 
-- [Mid State](mid-state.md)
-- [Accessible Part Within](../../../decidability/part-02/regular/accessible-part-within.md)
-- [Brzozowski Mid](brzozowski-mid.md)
+- [States of the intermediate Brzozowski automaton](mid-state.md)
+- [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
+- [The intermediate Brzozowski automaton](brzozowski-mid.md)
 - [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
-- [Rev Det](rev-det.md)
+- [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources
 

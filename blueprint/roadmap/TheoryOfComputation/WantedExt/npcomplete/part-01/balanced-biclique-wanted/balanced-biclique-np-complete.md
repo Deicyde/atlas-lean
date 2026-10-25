@@ -13,7 +13,7 @@ completeness column" (1987).
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Balanced Biclique Dec](balanced-biclique-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

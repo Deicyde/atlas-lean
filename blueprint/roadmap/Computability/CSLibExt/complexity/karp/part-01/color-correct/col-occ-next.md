@@ -37,8 +37,8 @@ private theorem ft_ne_of_ne : ∀ x b b' : Bool, b' ≠ b →
 
 ## Depends on
 
-- [Col St](../color/col-st.md)
-- [Col Occ](../color/col-occ.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
+- [Adding a literal occurrence in the 3-COLOR construction](../color/col-occ.md)
 
 ## Sources
 

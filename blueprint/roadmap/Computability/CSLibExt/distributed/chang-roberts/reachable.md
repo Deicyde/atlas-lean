@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Distributed.ChangRoberts.Reachable
 ---
 
-# Reachable
+# Reachable states of Chang–Roberts
 
-The states reachable from the initial state, by upstream `LTS.CanReach`
-(a multistep transition `LTS.MTr` along some delivery schedule).
+**Reachable states of Chang–Roberts.** Given a natural-number identifier $\mathrm{id}(k)$ for
+each process $k$ of the ring of $n + 1$ processes, a global state $s$ is reachable when the
+Chang–Roberts transition system with these identifiers leads from the initial state to $s$ by a
+multistep transition along some finite list of labels, that is, of receiving processes.
 
 ## Depends on
 
-- [State](state.md)
+- [Chang–Roberts global states](state.md)
 
 ## Proof depends on
 
-- [Initial](initial.md)
-- [Lts](lts.md)
+- [Initial state of the Chang–Roberts ring](initial.md)
+- [The Chang–Roberts transition system](lts.md)
 
 ## Sources
 

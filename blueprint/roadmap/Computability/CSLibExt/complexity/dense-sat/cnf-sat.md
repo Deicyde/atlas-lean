@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.cnfSat
 ---
 
-# Cnf Sat
+# Satisfaction of a dense CNF formula
 
-`a` satisfies every clause of `φ`.
+**Satisfaction of a dense CNF formula.** A finite bit sequence $a$ satisfies a CNF formula
+$\varphi$ when $a$ satisfies every clause of $\varphi$.
 
 ## Depends on
 
-- [CNF](cnf.md)
+- [Dense CNF formula](cnf.md)
 
 ## Proof depends on
 
-- [Clause](clause.md)
-- [Clause Sat](clause-sat.md)
+- [Dense clause](clause.md)
+- [Satisfaction of a dense clause](clause-sat.md)
 
 ## Sources
 

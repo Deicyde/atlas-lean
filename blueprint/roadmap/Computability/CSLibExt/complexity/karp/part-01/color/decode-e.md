@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.decodeE
 ---
 
-# Decode E
+# Decoding a graph
 
-Parse a graph: `n` in unary, then the edge list.
+**Decoding a graph.** To decode a bit string $x$, read a unary number $n$ from the front of
+$x$ ($n$ copies of true ended by false); if there is none, decoding fails. Otherwise decode the
+rest of $x$ as an edge list $es$ (pairs of unary numbers until the input ends); if that fails,
+decoding fails, and otherwise the result is the pair $(n, es)$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decode Es](decode-es.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Edge-list decoder](decode-es.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

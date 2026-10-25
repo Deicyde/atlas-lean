@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.getLast?_hfPath
 ---
 
-# Get Last? hf Path
+# The forward path ends at the last top
 
-The path ends at the last top.
+**The forward path ends at the last top.** For $m$ clauses, $k$ diamonds, any
+clause-to-diamond map $c$ and any directions $d$, the forward path through the first $k$
+diamonds in directions $d$ with clause choice $c$ ends at the top $T_k = m + k(3m+2)$.
 
 ## Depends on
 
-- [Hf Path](hf-path.md)
-- [Hp T](../ham-path/hp-t.md)
+- [The forward path through the diamonds](hf-path.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
 
 ## Proof depends on
 
-- [Hf Diamond](hf-diamond.md)
+- [The visit of a diamond](hf-diamond.md)
 
 ## Sources
 

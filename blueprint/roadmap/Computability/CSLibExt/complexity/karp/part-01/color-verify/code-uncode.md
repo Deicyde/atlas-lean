@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.code_uncode
 ---
 
-# Code uncode
+# Re-encoding a decoded valid color
 
-`code` inverts `uncode` on valid codes.
+**Re-encoding a decoded valid color.** For every valid color code $c$ (a pair of bits other
+than $11$), the code of the color that $c$ decodes to is $c$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Ok Col](ok-col.md)
-- [Uncode](uncode.md)
+- [Two-bit code of a color](code.md)
+- [Valid color code](ok-col.md)
+- [Decoding a color code](uncode.md)
 
 ## Sources
 

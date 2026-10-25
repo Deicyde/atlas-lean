@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.hamPathDec_noHam
 ---
 
-# Ham Path Dec no Ham
+# HAMPATH rejects the fixed no-instance
 
-`noHam` is a no-instance: a path from `0` to `0` through two vertices repeats `0`.
+**HAMPATH rejects the fixed no-instance.** The HAMPATH decision problem rejects the PATH
+encoding of the digraph on the two vertices $0, 1$ with no arcs and $s = t = 0$: a path from $0$
+to $0$ that visits both vertices would repeat $0$.
 
 ## Depends on
 
-- [Ham Path Dec](../ham-path/ham-path-dec.md)
-- [No Ham](../ham-path/no-ham.md)
+- [The HAMPATH problem](../ham-path/ham-path-dec.md)
+- [A fixed HAMPATH no-instance](../ham-path/no-ham.md)
 
 ## Proof depends on
 
-- [Is Ham Path](../ham-path/is-ham-path.md)
-- [Ham Path Dec encode P](ham-path-dec-encode-p.md)
-- [Arc](../../../path/arc.md)
-- [Encode P](../../../path/encode-p.md)
+- [Hamiltonian paths](../ham-path/is-ham-path.md)
+- [HAMPATH on an encoded instance](ham-path-dec-encode-p.md)
+- [Arcs of the PATH digraph](../../../path/arc.md)
+- [Encoding of a PATH instance](../../../path/encode-p.md)
 
 ## Sources
 

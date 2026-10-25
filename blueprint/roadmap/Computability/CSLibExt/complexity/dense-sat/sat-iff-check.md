@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.sat_iff_check
 ---
 
-# Sat iff check
+# Certificate characterization of dense CNF-SAT
 
-`SAT` is exactly "there is a short certificate accepted by `check`".
+**Certificate characterization of dense CNF-SAT.** A bit string $w$ belongs to dense CNF-SAT
+if and only if there is a bit string $y$ with $|y| \le |w|$ that the certificate check accepts
+on formula bits $w$ and assignment bits $y$.
 
 ## Depends on
 
-- [CNF-SAT](sat.md)
-- [Check](check.md)
+- [Dense CNF-SAT](sat.md)
+- [Dense CNF-SAT certificate check](check.md)
 
 ## Proof depends on
 
-- [CNF](cnf.md)
-- [Clause](clause.md)
-- [Clause Sat](clause-sat.md)
-- [Cnf Sat](cnf-sat.md)
-- [Cnf Sat take](cnf-sat-take.md)
-- [Decode Aux](decode-aux.md)
-- [Decode CNF](decode-cnf.md)
-- [Eval CNF](eval-cnf.md)
-- [Eval Idx](eval-idx.md)
+- [Dense CNF formula](cnf.md)
+- [Dense clause](clause.md)
+- [Satisfaction of a dense clause](clause-sat.md)
+- [Satisfaction of a dense CNF formula](cnf-sat.md)
+- [Truncating a satisfying assignment](cnf-sat-take.md)
+- [Dense decoding with an accumulator](decode-aux.md)
+- [Dense decoding of CNF formulas](decode-cnf.md)
+- [Single-pass evaluation of a dense CNF encoding](eval-cnf.md)
+- [Indexed evaluation of a dense CNF encoding](eval-idx.md)
 
 ## Sources
 

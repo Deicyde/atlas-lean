@@ -8,11 +8,14 @@ lean: Cslib.Complexity.Karp.isPolyTime_reduceHam
 
 # SAT ≤ HAMPATH is polynomial-time
 
-**SAT ≤ HAMPATH is polynomial-time**.
+**SAT ≤ HAMPATH is polynomial-time.** The map on bit strings that sends a bit string decoding
+to a CNF formula $\varphi$ to Sipser's HAMPATH instance for $\varphi$, and every other bit string
+to the fixed no-instance with two vertices, no arcs and $s = t = 0$, is computable in polynomial
+time.
 
 ## Depends on
 
-- [Reduce Ham](../ham-path/reduce-ham.md)
+- [The SAT-to-HAMPATH reduction map](../ham-path/reduce-ham.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,20 +28,20 @@ lean: Cslib.Complexity.Karp.isPolyTime_reduceHam
 
 ## Proof depends on
 
-- [K](../ham-path-emit-machine/k.md)
-- [Lab](../ham-path-emit-machine/lab.md)
-- [Site](../ham-path-emit-machine/site.md)
-- [All](../ham-path-emit-machine/all.md)
-- [Bb](../ham-path-emit-machine/bb.md)
-- [Γ](../ham-path-emit-machine/untitled.md)
+- [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
+- [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
+- [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
+- [Copy sites of the HAMPATH emitter, listed](../ham-path-emit-machine/all.md)
+- [The four pairs of Booleans](../ham-path-emit-machine/bb.md)
+- [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Emitter](../../part-02/tok-then/emitter.md)
-- [Reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
+- [Emitter reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
 - [Out](../../part-02/tok-then/out.md)
 - [Emit Ham](emit-ham.md)
-- [No Ham](../ham-path/no-ham.md)
-- [To Ham](../ham-path/to-ham.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Decode CNF](../../../../cook-levin/decode-cnf.md)
+- [A fixed HAMPATH no-instance](../ham-path/no-ham.md)
+- [Sipser's HAMPATH instance of a CNF formula](../ham-path/to-ham.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources

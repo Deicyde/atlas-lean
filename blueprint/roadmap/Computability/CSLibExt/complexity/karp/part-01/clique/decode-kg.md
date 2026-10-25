@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.decodeKG
 ---
 
-# Decode KG
+# Decoding a graph instance
 
-Parse the two unary numbers; the rest is taken as the pair bits.
+**Decoding a graph instance.** Writing $1$ for true and $0$ for false, a bit string of the
+form $1^k\,0\,1^n\,0\,b$ with natural numbers $k$, $n$ and a list of bits $b$ decodes to the
+triple $(k, n, b)$. A bit string with fewer than two zeros does not decode.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

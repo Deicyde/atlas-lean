@@ -19,7 +19,7 @@ zero or more moves, each a transition on some letter or an ε-move.
 ## Proof depends on
 
 - [Reachable states of an encoded NFA](reachable.md)
-- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -13,15 +13,15 @@ shorter than `eqBound`.
 
 ## Depends on
 
-- [Encoded Regex](../regular-expression/encoded-regex.md)
-- [Eq Bound](eq-bound.md)
-- [To Regex](../regular-expression/to-regex.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
+- [Search bound for equivalence](eq-bound.md)
+- [The regular expression denoted by an encoding](../regular-expression/to-regex.md)
 
 ## Proof depends on
 
 - [Short distinguishing words](matches-eq-iff-forall-length-lt.md)
 - [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
-- [Num Thompson States](num-thompson-states.md)
+- [Thompson state count of an encoding](num-thompson-states.md)
 - [The pass counts the states of Thompson's automaton](num-thompson-states-eq.md)
 
 ## Sources

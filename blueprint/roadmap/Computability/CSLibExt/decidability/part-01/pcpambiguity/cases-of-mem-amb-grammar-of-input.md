@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.cases_of_mem_ambGrammar_of_input
 ---
 
-# Cases of mem amb Grammar of input
+# The productions of $A$ and $B$ in the ambiguity grammar
 
-The rules of `ambGrammar P` with input `A ∈ {1, 2}` are those of the side grammar.
+**The productions of $A$ and $B$ in the ambiguity grammar.** Let
+$P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, and let $A$, $B$ be the
+nonterminals of the ambiguity grammar of $P$ for its top and bottom words. Every production of
+that grammar with left-hand side $A$ is $A \to t_i\, A\, i$ or $A \to t_i\, i$ for some $i < m$,
+and every production with left-hand side $B$ is $B \to b_i\, B\, i$ or $B \to b_i\, i$ for some
+$i < m$.
 
 ## Depends on
 
-- [Amb Grammar](amb-grammar.md)
-- [Cont Rule](../cfgundecidable/cont-rule.md)
-- [Term Rule](../cfgundecidable/term-rule.md)
-- [Domino](../pcp/domino.md)
+- [The ambiguity grammar of a PCP instance](amb-grammar.md)
+- [The continuation production](../cfgundecidable/cont-rule.md)
+- [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
-- [Nt Sym](../cfgundecidable/nt-sym.md)
-- [Side Rules](../cfgundecidable/side-rules.md)
+- [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
+- [The productions of a side grammar](../cfgundecidable/side-rules.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources

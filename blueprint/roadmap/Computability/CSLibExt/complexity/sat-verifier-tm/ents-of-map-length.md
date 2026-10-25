@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.entsOf_map_length
 ---
 
-# Ents Of map length
+# Cleanup of the SAT host
 
-The cleanup empties every stack: with all stacks of length at most `m` and the output
-empty, it reaches `fin` within `m + 1` steps with every stack empty. -/
+**Cleanup of the SAT host.** Let $m$ be a natural number and let $S$ assign contents to the
+host stacks so that every stack has length at most $m$ and the output stack is empty. Then for
+every flag $c$, answer bit $a$ and internal state $v$, the host program with flag $c$ goes in at
+most $m + 1$ steps from the cleanup label with answer $a$, internal state $v$ and stacks $S$ to
+the final label with answer $a$, internal state false and every stack empty. -/
 theorem clean_host (ans : Bool) (m : ℕ) (v : Bool) (S : ∀ k, List (HΓ k))
     (hl : ∀ k, (S k).length ≤ m) (ho : S .out = []) :
     RunLe (hprog cap) (m + 1) ⟨some (.clean ans), v, S⟩ ⟨some (.fin ans), false, fun _ => []⟩ := by
@@ -32,8 +35,8 @@ theorem fin_run (ans v : Bool) :
 
 ## Depends on
 
-- [Ent](../sat-verifier-spec/ent.md)
-- [Ents Of](../sat-verifier-spec/ents-of.md)
+- [Table entries](../sat-verifier-spec/ent.md)
+- [Occurrence table of a list of variables](../sat-verifier-spec/ents-of.md)
 
 ## Sources
 

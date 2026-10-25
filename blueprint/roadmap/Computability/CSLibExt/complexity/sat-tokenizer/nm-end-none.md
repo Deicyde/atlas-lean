@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Tokenizer.nmEnd_none
 ---
 
-# Nm End none
+# Name-loop outcome from the start of a name
 
-From the start of a name, the loop ends at `pol` exactly for a canonical name.
+**Name-loop outcome from the start of a name.** For every bit string $u$, the name-loop
+outcome with no previous bit after $u$ is the label $\mathsf{pol}$ if $u$ is a canonical name,
+that is, encoding the natural number that $u$ decodes to gives back $u$, and the label
+$\mathsf{rej}$ otherwise.
 
 ## Depends on
 
-- [Lab](lab.md)
-- [Nm End](nm-end.md)
+- [Labels of the SAT tokenizer](lab.md)
+- [Name-loop outcome](nm-end.md)
 
 ## Proof depends on
 
-- [Encode Nat decode Nat eq iff](../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
+- [Canonical binary names](../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
 
 ## Sources
 

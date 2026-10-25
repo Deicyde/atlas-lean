@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Decidability.TMRewriting.manyOneReducible_tm0HaltsOn_eqvGen
 ---
 
-# Single-tape halting many-one reduces to the word problem of the fixed Thue system `rules M`
+# Single-tape halting many-one reduces to the word problem of a fixed Thue system
 
-**Single-tape halting many-one reduces to the word problem of the fixed Thue system
-`rules M`.**
+**Single-tape halting many-one reduces to the word problem of a fixed Thue system.** Let $M$
+be a single-tape Turing machine with finitely many states and tape symbols, and let $R_M$ be the
+rewriting system simulating $M$. Then the set of inputs on which $M$ halts is many-one reducible
+to the set of pairs $(x, y)$ of words over the symbols of $R_M$ that are equivalent under the
+reflexive, symmetric and transitive closure of one-step rewriting by $R_M$.
 
 ## Depends on
 
-- [Step](../../part-02/string-rewriting/step.md)
-- [TM0 Halts On](../../part-02/tm0-halting/tm0-halts-on.md)
-- [TMSym](tmsym.md)
-- [Rules](rules.md)
+- [One-step rewriting](../../part-02/string-rewriting/step.md)
+- [Halting of a single-tape machine](../../part-02/tm0-halting/tm0-halts-on.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
+- [The rewriting system simulating a Turing machine](rules.md)
 
 ## Proof depends on
 
-- [Halt Word](halt-word.md)
-- [Init Word](init-word.md)
+- [The halting word](halt-word.md)
+- [The start word](init-word.md)
 - [A single-tape machine halts iff its start word is equivalent to `⊢ H ⊣`](tm0-halts-on-iff-eqv-gen.md)
 
 ## Sources

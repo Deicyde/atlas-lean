@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.HamVerify.start
 ---
 
-# Start
+# Start label of the Hamiltonian-path verifier
 
-The start label.
+**Start label of the Hamiltonian-path verifier.** The verifier starts at the label
+$\mathsf{rdS}$, where it reads the first unary number of the input stack $X$ (the start vertex
+$s$) onto the counter stack $S$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.length_stateCounts
 ---
 
-# Length state Counts
+# One state count per node
 
-The pass computes one count per node.
+**One state count per node.** For every list $l$ of nodes of encoded regular expressions, the
+list of state counts of $l$ has the same length as $l$.
 
 ## Depends on
 
-- [State Counts](state-counts.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [Thompson state counts of a node list](state-counts.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Proof depends on
 
-- [Step States](step-states.md)
+- [One step of the Thompson state count](step-states.md)
 
 ## Sources
 

@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.cook_levin_SAT_np_complete
 ---
 
-# Cook-Levin
+# Cook–Levin theorem
 
-**Cook-Levin**: `satDec` is NP-complete for formal-math's canonical `NP`; this is the
-statement of the former `theorem_wanted` `MetaMathlibExt.cook_levin_SAT_np_complete`.
+**Cook–Levin theorem.** CNF satisfiability is NP-complete: the decision problem accepting
+exactly the bit strings that encode a satisfiable CNF formula is in NP, and every decision
+problem in NP has a polynomial-time many-one reduction to it.
 
 ## Depends on
 
-- [Poly Many One Red](../../cook-levin/poly-many-one-red.md)
-- [Sat Dec](../../cook-levin/sat-dec.md)
+- [Polynomial-time many-one reduction](../../cook-levin/poly-many-one-red.md)
+- [SAT as a decision problem](../../cook-levin/sat-dec.md)
 - [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../MathlibExt/complexity/np.md)
@@ -22,7 +23,7 @@ statement of the former `theorem_wanted` `MetaMathlibExt.cook_levin_SAT_np_compl
 ## Proof depends on
 
 - [Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier](../cook-levin/binary-hardness/cook-levin-sat-np-complete-of-is-poly-ti.md)
-- [`satVerifier` is polynomial-time](is-poly-time-sat-verifier.md)
+- [The SAT verifier is polynomial-time](is-poly-time-sat-verifier.md)
 
 ## Sources
 

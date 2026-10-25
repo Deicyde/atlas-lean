@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Complexity.Karp.hamEdges_from_hpR
 ---
 
-# Ham Edges from hp R
+# Out-neighbours of a row vertex in Sipser's graph
 
-The out-neighbours of the row vertex `hpR m i l`: its row neighbours, the next top
-`hpT m (i + 1)` if it is a row end, and clause `v` if it is a vertex of the pair of `v`.
+**Out-neighbours of a row vertex in Sipser's graph.** Let $\varphi$ be a CNF formula with $m$
+clauses, and write $T_i = m + i(3m + 2)$ and $R_{i,l} = T_i + 1 + l$. Let $i$ and $l \le 3m$ be
+natural numbers, and let $(R_{i,l}, v)$ be an arc of Sipser's construction for $\varphi$. Then
+$l < 3m$ and $v = R_{i,l+1}$; or $0 < l$ and $v = R_{i,l-1}$; or $l \in \{0, 3m\}$ and
+$v = T_{i+1}$; or $v < m$ and $l \in \{3v + 1, 3v + 2\}$.
 
 ## Depends on
 
-- [Ham Edges](../ham-path/ham-edges.md)
-- [Hp R](../ham-path/hp-r.md)
-- [Hp T](../ham-path/hp-t.md)
+- [Arcs of the HAMPATH construction](../ham-path/ham-edges.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Ham Edges cases](ham-edges-cases.md)
-- [Ham Vars](../ham-path/ham-vars.md)
-- [Hp T sep](hp-t-sep.md)
+- [Classification of the arcs of Sipser's graph](ham-edges-cases.md)
+- [Distinct variables of a formula](../ham-path/ham-vars.md)
+- [Tops of distinct diamonds are at least $3m + 2$ apart](hp-t-sep.md)
 
 ## Sources
 

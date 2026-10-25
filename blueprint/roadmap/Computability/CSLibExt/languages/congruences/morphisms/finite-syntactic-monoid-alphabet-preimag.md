@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_alphabetPreimage
 ---
 
-# Finite syntactic Monoid alphabet Preimage
+# Alphabet preimages preserve finiteness of the syntactic monoid
 
-Finiteness of the target syntactic monoid passes to every alphabet preimage.
+**Alphabet preimages preserve finiteness of the syntactic monoid.** Let
+$f \colon \Sigma \to \Gamma$ be a map between alphabets and $L$ a language over $\Gamma$ whose
+syntactic monoid is finite. Then the syntactic monoid of the alphabet preimage
+$\{w \in \Sigma^* \mid f^*(w) \in L\}$ is finite, where $f^*(w)$ is the word obtained by applying
+$f$ to each letter of $w$.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet preimage](alphabet-preimage.md)
 
 ## Proof depends on
 
-- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
+- [Alphabet preimage morphism](alphabet-preimage-morphism.md)
 - [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
-- [Recognizes alphabet Preimage Morphism](recognizes-alphabet-preimage-morphism.md)
+- [The alphabet preimage morphism recognizes the alphabet preimage](recognizes-alphabet-preimage-morphism.md)
 - [Syntactic Accept](../syntactic/syntactic-accept.md)
 - [Syntactic Con](../syntactic/syntactic-con.md)
 

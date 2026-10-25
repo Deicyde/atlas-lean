@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Kolmogorov.rePred_mem_U
 ---
 
-# Re Pred mem U
+# The description relation is recognizable
 
-Being described by `p` is recognizable.
+**The description relation is recognizable.** Let $U$ be the universal description method.
+The set of pairs $(x, p)$ of binary strings such that $U(p)$ is defined and equal to $x$ is
+recursively enumerable (recognizable).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ Being described by `p` is recognizable.
 
 ## Proof depends on
 
-- [Partrec U](../basic/partrec-u.md)
+- [The universal description method is partial recursive](../basic/partrec-u.md)
 
 ## Sources
 

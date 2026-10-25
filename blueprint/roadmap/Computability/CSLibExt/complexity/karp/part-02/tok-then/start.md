@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.start
 ---
 
-# Start
+# Start label of the tokenize-then-emit machine
 
-The start label.
+**Start label of the tokenize-then-emit machine.** For an emitter $E$, the combined machine
+starts at the start label of the SAT tokenizer.
 
 ## Depends on
 
 - [Emitter](emitter.md)
-- [L](l.md)
+- [Labels of the tokenize-then-emit machine](l.md)
 
 ## Proof depends on
 
-- [Lab](../../../sat-tokenizer/lab.md)
-- [Start](../../../sat-tokenizer/start.md)
+- [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
+- [Start label of the SAT tokenizer](../../../sat-tokenizer/start.md)
 
 ## Sources
 

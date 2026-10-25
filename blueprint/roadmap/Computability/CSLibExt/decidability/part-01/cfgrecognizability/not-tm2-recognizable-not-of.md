@@ -13,13 +13,13 @@ unrecognizable complement.
 
 ## Depends on
 
-- [TM2 Decidable](../basic/tm2-decidable.md)
-- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
+- [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [TM2 Co Recognizable](../basic/tm2-co-recognizable.md)
-- [Post's theorem](../basic/tm2-decidable-iff-tm2-recognizable-and-t.md)
+- [Co-recognizability by multi-stack machines](../basic/tm2-co-recognizable.md)
+- [Post's theorem for multi-stack machines](../basic/tm2-decidable-iff-tm2-recognizable-and-t.md)
 
 ## Sources
 

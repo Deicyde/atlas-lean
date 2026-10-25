@@ -138,7 +138,13 @@ def shFamily (N T H : ℕ) : CNF :=
   (List.range T).flatMap fun t => (List.range N).flatMap fun i =>
     (List.range L.KK).flatMap fun k => shBlk L sa pl cn pu T H t i k
 
-/-- Well-formedness: codes in range, shifts within the window, window within the height. -/
+/-- **Well-formed situation tables for the cell-shift family.** Given a layout with label/state
+block size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, a situation-offset table
+$\mathrm{sa}$, push-count and consumed-count tables $\mathrm{pl}$ and $\mathrm{cn}$ and a
+pushed-code table $\mathrm{pu}$, the tables are well formed for $N$ situations at height $H$ when
+$g > 0$, $d \le H$, $\mathrm{sa}(i) < A$ for every $i < N$, and for all $i < N$ and $k < K$:
+$\mathrm{pl}(i, k) \le d$, $\mathrm{cn}(i, k) \le d$, and $\mathrm{pu}(i, k, j) < g$ for every
+$j < \mathrm{pl}(i, k)$. -/
 structure WF (N H : ℕ) : Prop where
   g_pos : 0 < L.g
   d_le : L.d ≤ H
@@ -281,7 +287,15 @@ inductive LS
   | cp1 | cp2 | eo | dec | cmp | r (o : Ordering) | rB (o : Ordering) | emL | bad | slot | dq
   deriving DecidableEq, Fintype
 
-/-- Setup/loop stages of an `(i, k)` block. -/
+/-- **Setup and loop stages of a cell-shift block.** The finite type of stages of the setup and
+loops of an $(i, k)$ block of the cell-shift generator: the base stages $\mathrm{kbE}$,
+$\mathrm{kbC1}$, $\mathrm{kbC2}$, $\mathrm{kbK}$, $\mathrm{kbM}(s)$ for each stage $s$ of the
+multiplication routine, $\mathrm{kbD}$, $\mathrm{uC1}$ and $\mathrm{uC2}$; the overflow-loop
+stages $\mathrm{oE}$, $\mathrm{oHead}$, $\mathrm{oRest}$, $\mathrm{oC1}$, $\mathrm{oC2}$,
+$\mathrm{oR1}$, $\mathrm{oR2}$, $\mathrm{oM}(s)$ for each stage $s$ of the multiplication routine,
+and $\mathrm{oD}$; the in-range-loop and drain stages $\mathrm{sHead}$, $\mathrm{sRest}$,
+$\mathrm{dU}$, $\mathrm{dR}$ and $\mathrm{dKB}$; and the pushed-fill stages $\mathrm{fC1}$,
+$\mathrm{fC2}$, $\mathrm{fW1}$, $\mathrm{fW2}$ and $\mathrm{fD1}$. -/
 inductive ST
   | kbE | kbC1 | kbC2 | kbK | kbM (s : MS) | kbD | uC1 | uC2
   | oE | oHead | oRest | oC1 | oC2 | oR1 | oR2 | oM (s : MS) | oD
@@ -340,7 +354,13 @@ and the final label $\mathrm{done}$, at which the generator halts, otherwise. -/
 def after (i : Fin N) (k : Fin KK) (c : CL g d) (l : ℕ) : GL N KK g d :=
   if l = 0 then .b i k (.fin c) else litL i k c (l - 1)
 
-/-- In-range clauses `x < n` of the current cell pair, then the drains. -/
+/-- **Entry label of the in-range chain.** For a situation $i < N$, a stack $k < K$ and a number
+$n$, the label of the generator with $N$ situations, $K$ stacks, $g$ symbol codes and window
+depth $d$ from which the in-range shift clauses for the symbol codes $x < n$ of the current cell
+pair of block $(i, k)$ are emitted before the in-range drains: the in-range drain stage
+$\mathrm{dCB}$ of block $(i, k)$ if $n = 0$, the first stage of the routine emitting the in-range
+shift clause for symbol code $n - 1$ of block $(i, k)$ if $1 \le n \le g$, and the halting label
+$\mathrm{done}$ (unused) if $n > g$. -/
 def xFrom (i : Fin N) (k : Fin KK) (n : ℕ) : GL N KK g d :=
   if n = 0 then .b i k (.dCB true) else if h : n - 1 < g then .b i k (.e00 (.sh ⟨n - 1, h⟩))
   else .done
@@ -471,8 +491,27 @@ def litP (i : Fin N) (k : Fin L.KK) (c : CL L.g L.d) (l : Fin 3) :
   | .slot => emitR .out (encodeSlot (some (c.sg l))) (.b i k (.lit c l .dq))
   | .dq => xfer (.c .Q) [] (.b i k (.lit c l .dq)) (GL.after i k c l)
 
-/-- Stages of block `(i, k)`: `KB := TW + A + k·HG`, `U := H − m`, the pushed-fill chain
-(`CW := KB + W`), `R := c − p`, the overflow loop, the in-range loop, drains. -/
+/-- **Block stages of the cell-shift generator.** For a layout $L$ with label block size $A$ and
+$K$ stacks, push-count and consumed-count tables $\mathrm{pl}$ and $\mathrm{cn}$, a number $N$ of
+situations, a situation $i < N$ and a stack $k < K$, write $p = \mathrm{pl}(i, k)$ and
+$c = \mathrm{cn}(i, k)$.
+This assigns a statement of the generator to each setup or loop stage of block $(i, k)$; below,
+"add $X$ to $Y$" copies counter $X$ onto $Y$ through the scratch counter $\mathrm{tmp}$ in two
+stages, restoring $X$, and "drain $X$" empties $X$. The setup pushes $A$ units onto $\mathrm{KB}$,
+adds $\mathrm{TW}$ to $\mathrm{KB}$, pushes $k$ units onto $\mathrm{Ka}$, adds
+$\mathrm{Ka} \cdot \mathrm{HG}$ to $\mathrm{KB}$ by the multiplication routine (index
+$\mathrm{md}$, scratch $\mathrm{tmp}$), drains $\mathrm{Ka}$, adds $\mathrm{Hs}$ to $\mathrm{U}$,
+and goes to the label of the decrement chain for $\max(p, c)$. The pushed-fill stages add
+$\mathrm{KB}$ and then $\mathrm{Wc}$ to $\mathrm{CW}$ and go to the entry label of the pushed-fill
+chain for $p$; the fill drain drains $\mathrm{CW}$, and the next stage pushes $c - p$ units onto
+$\mathrm{R}$ (truncated subtraction). The overflow loop pops $\mathrm{R}$, pushing each unit on
+the index counter $\mathrm{Ri}$; for each popped unit it adds $\mathrm{U}$ and then $\mathrm{R}$ to
+$\mathrm{Ka}$, adds $\mathrm{Ka} \cdot \mathrm{Gc}$ to $\mathrm{CB}$ by the multiplication
+routine, drains $\mathrm{Ka}$ and runs the loop body with flag false; when $\mathrm{R}$ is empty it
+moves $\mathrm{Ri}$ back onto $\mathrm{R}$. The in-range loop likewise pops $\mathrm{U}$ onto
+$\mathrm{Ui}$ and runs the loop body with flag true for each popped unit, and when $\mathrm{U}$ is
+empty moves $\mathrm{Ui}$ back onto $\mathrm{U}$. Finally it drains $\mathrm{U}$, $\mathrm{R}$ and
+$\mathrm{KB}$ and goes to the entry label of the stack chain of situation $i$ for $k$. -/
 def stP (i : Fin N) (k : Fin L.KK) : ST → TM2.Stmt (SΓ CK) (Lab L N) Bool
   | .kbE => emitR (.c .KB) (List.replicate L.A ()) (.s i k .kbC1)
   | .kbC1 => xfer (.c .TW) [⟨.c .KB, ()⟩, ⟨.c .tmp, ()⟩] (.s i k .kbC1) (.s i k .kbC2)
@@ -576,7 +615,17 @@ def prog : Lab L N → TM2.Stmt (SΓ CK) (Lab L N) Bool
   | .bad => .halt
   | .done => .halt
 
-/-- **The generator as a genuine `FinTM2`** (finiteness check only). -/
+/-- **The cell-shift generator as a finite stack machine.** For a layout $L$, situation tables
+$\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ and $N$ situations, the cell-shift
+generator for these data, bundled as a multi-stack Turing machine with finitely many stacks,
+labels and states: its stacks are the Boolean output stack and one counter stack for each counter
+of the generator, its input stack is the counter $\mathrm{Tn}$ and its output stack is the Boolean
+output stack, its alphabets are the counter-machine alphabets (Booleans on the output stack, a
+unit symbol on each counter), its labels are the labels of the shift generator for $L$ and $N$,
+execution starts at the first precomputation stage, its internal state is a Boolean, initially
+false, and its transition function is the cell-shift generator.
+
+It serves only to check that the generator meets the finiteness conditions of a finite machine. -/
 def shTM : FinTM2 where
   K := SK CK
   k₀ := .c .Tn
@@ -856,7 +905,14 @@ $k \cdot (H g) + (t W + A)$, where $W = A + K H g$ is the number of variables pe
 It is the index of the variable for depth $0$ and symbol code $0$ of stack $k$ in row $t$. -/
 def kbv (L : Layout) (H t k : ℕ) : ℕ := k * (H * L.g) + (t * L.rowW H + L.A)
 
-/-- Positions of the in-range shift clause `(u, x)`. -/
+/-- **Literal positions of an in-range shift clause.** For a layout $L$ with label block size $A$,
+$K$ stacks and $g$ symbol codes, row width $W = A + K H g$, situation offsets $s_a$, push counts
+$p$, consumed counts $c$ and numbers $H, t, i, k, u, x, l$, the position of literal $l$ of the
+in-range shift clause $(t, i, k, u, x)$ is: if $l = 0$, the cell variable of row $t$, stack $k$,
+depth $u + c(i, k)$ and symbol code $x$, namely $t W + A + (k H + u + c(i, k)) g + x$; if
+$l = 1$, the situation variable $(t + 1) W + s_a(i)$; and if $l \ge 2$, the cell variable of row
+$t + 1$, stack $k$, depth $u + p(i, k)$ and symbol code $x$, namely
+$(t + 1) W + A + (k H + u + p(i, k)) g + x$. -/
 def shPos (L : Layout) (sa : ℕ → ℕ) (pl cn : ℕ → ℕ → ℕ) (H t i k u x l : ℕ) : ℕ :=
   if l = 0 then L.cIdx H t k (u + cn i k) x else if l = 1 then L.xIdx H (t + 1) (sa i)
   else L.cIdx H (t + 1) k (u + pl i k) x
@@ -983,7 +1039,25 @@ structure Body (L : Layout) (T H t : ℕ) (F : CK → ℕ) : Prop extends Rest F
   TW : F .TW = t * L.rowW H
   TW1 : F .TW1 = (t + 1) * L.rowW H
 
-/-- The in-range clauses `x < n` of cell pair `u`. -/
+/-- **The in-range chain of the cell-shift generator.** Let $L$ be a layout with label block size
+$A$, $K$ stacks, $g$ symbol codes and window depth $d$, let $H, T \in \mathbb{N}$, let
+$W = A + K H g$ be the row width and $V = (T + 1) W$ the number of variables, and let the tables
+$\mathrm{sa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu}$ be well formed for $N$ situations and height
+$H$: $g > 0$, $d \le H$, and for all $i < N$ and $k < K$, $\mathrm{sa}(i) < A$,
+$\mathrm{pl}(i, k) \le d$, $\mathrm{cn}(i, k) \le d$ and $\mathrm{pu}(i, k, j) < g$ for every
+$j < \mathrm{pl}(i, k)$. Let $t < T$, $i < N$, $k < K$ and $u \in \mathbb{N}$ with
+$u + \max(\mathrm{pl}(i, k), \mathrm{cn}(i, k)) < H$, let $b = k H g + t W + A$ be the first
+cell variable of stack $k$ in row $t$, and let $F$ be counter values in which $\mathrm{Q}$,
+$\mathrm{tmp}$, $\mathrm{md}$, $\mathrm{c1}$, $\mathrm{c2}$ and $\mathrm{P}$ are $0$,
+$F(\mathrm{Vc}) = V$, $F(\mathrm{Gc}) = g$, $F(\mathrm{Wc}) = W$, $F(\mathrm{TW}) = t W$,
+$F(\mathrm{TW1}) = (t + 1) W$, $F(\mathrm{CB}) = u g + b$ and $F(\mathrm{CW}) = u g + b + W$.
+Then for every $n \le g$, every output word $o$ and every flag $v$ there is a flag $v'$ such that
+the generator for these data, started at the entry label of the in-range chain for $n$ in block
+$(i, k)$ with flag $v$, counters $F$ and output $o$, reaches the in-range drain stage
+$\mathrm{dCB}$ of block $(i, k)$ with flag $v'$, counters $F$ and output $e_0 e_1 \cdots e_{n-1}$
+followed by $o$ in at most $n \cdot \mathrm{clauseB}(V)$ steps, where
+$\mathrm{clauseB}(V) = V(3V + 6) + 3(6V + 9) + 3V + 4$ and $e_x$ is the encoding of the dense
+clause over $V$ variables whose literals are the in-range shift literals for $(t, i, k, u, x)$. -/
 theorem xs_run {T H t : ℕ} {i : Fin N} {k : Fin L.KK} {u : ℕ} (ht : t < T)
     (hwf : WF L sa pl cn pu N H) (hu : u + max (pl i k) (cn i k) < H) (F : CK → ℕ)
     (hF : Body L T H t F) (hCB : F .CB = u * L.g + kbv L H t k)
@@ -1516,12 +1590,34 @@ theorem is_run {T H t : ℕ} (ht : t < T) (hwf : WF L sa pl cn pu N H) (F : CK �
       · rw [Nat.succ_mul]; omega
       · rw [List.range_succ, List.flatMap_append, List.flatMap_singleton, List.append_assoc]
 
-/-- Cost of one iteration of the time loop. -/
+/-- **Step budget for one time step of the shift generator.** Let $L$ be a layout with $K$
+stacks, $g$ symbol codes and window depth $d$, let $N, T, H \in \mathbb{N}$, let $V = (T + 1) W$
+be the number of variables, $W$ being the number of variables per time step at height $H$, and
+let $B$ be the step budget for one block of the shift generator for $g$, $K$, $H$, $d$ and $V$.
+The budget is
+
+$$
+\bigl(T(2V + 3) + T + 2\bigr) + (2V + 2) + (2V + 2) + N(K B) + (V + 1) + (V + 1).
+$$
+-/
 def tBodyB (L : Layout) (N T H : ℕ) : ℕ :=
   (T * (2 * L.numVars T H + 3) + T + 2) + (2 * L.numVars T H + 2) + (2 * L.numVars T H + 2) +
     N * (L.KK * ikB L.g L.KK H L.d (L.numVars T H)) + (L.numVars T H + 1) + (L.numVars T H + 1)
 
-/-- One iteration of the time loop: `TW := t·W`, `TW1 := TW + W`, the situation chain, drains. -/
+/-- **One iteration of the time loop of the shift generator.** Let $L$ be a layout with $g$ symbol
+codes, let $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables, let
+$N, T, H, t \in \mathbb{N}$ with $t < T$, and suppose the tables are well formed for $N$
+situations at height $H$. Write $W$ for the number of variables per time step at height $H$ and
+$V = (T + 1) W$ for the number of variables. Let $F$ be counter values of the cell-shift generator
+with empty scratch counters, with $\mathrm{Vc} = V$, $\mathrm{Gc} = g$, $\mathrm{Wc} = W$,
+$\mathrm{Tn} = t$, $\mathrm{HG} = H g$ and $\mathrm{Hs} = H$, and with $\mathrm{P}$,
+$\mathrm{TW}$, $\mathrm{TW1}$, $\mathrm{KB}$, $\mathrm{U}$, $\mathrm{Ui}$, $\mathrm{R}$,
+$\mathrm{Ri}$, $\mathrm{Ka}$, $\mathrm{CB}$ and $\mathrm{CW}$ all $0$. Then for every output list
+$o$ and every Boolean state $v$ there is a Boolean state $v'$ such that the generator, started at
+the label $\mathrm{tw}(\mathrm{head})$ (the first stage of the time-loop multiplication) in state
+$v$ with counters $F$ and output $o$, reaches the time-loop head $\mathrm{tHead}$ within at most
+the step budget for one time step of the shift generator for $L$, $N$, $T$, $H$, in state $v'$
+with counters $F$ and output the encoded blocks of time step $t$ followed by $o$. -/
 theorem tbody_run {T H t : ℕ} (ht : t < T) (hwf : WF L sa pl cn pu N H) (F : CK → ℕ)
     (hF : Rest F) (hP : F .P = 0) (hV : F .Vc = L.numVars T H) (hG : F .Gc = L.g)
     (hW : F .Wc = L.rowW H) (hTW : F .TW = 0) (hTW1 : F .TW1 = 0) (hTn : F .Tn = t)
@@ -1616,9 +1712,17 @@ theorem encodeCNF_shFamily (T H : ℕ) :
   simp [encodeCNF, shFamily, List.flatMap_assoc]
   rfl
 
-/-- **Correctness of the generator, with its explicit time bound.** Started on `T`, `H` (unary)
-with empty scratch counters, it reaches `done` within `shBound` steps with exactly the family's
-encoding prepended to the output. -/
+/-- **Correctness of the shift generator, with its explicit time bound.** Let $L$ be a layout, let
+$\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables and let
+$N, T, H \in \mathbb{N}$, and suppose the tables are well formed for $N$ situations at height
+$H$. Start the cell-shift generator for $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$,
+$\mathrm{pu}$ and $N$ at its first precomputation stage, in state false, with $T$ on the counter
+$\mathrm{Tn}$ and $H$ on the counter $\mathrm{Hs}$ in unary, all other counters empty, and an
+arbitrary list $o$ of bits on the output stack. Then within at most the explicit time bound of
+the shift generator for $L$, $N$, $T$, $H$ steps it reaches its final label $\mathrm{done}$, in
+some state, with stacks whose output stack holds the encoding of the cell-shift clause family for
+$L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$, $N$, $T$ and $H$, followed by
+$o$. -/
 theorem sh_run (T H : ℕ) (hwf : WF L sa pl cn pu N H) (o : List Bool) :
     ∃ (v : Bool) (S : ∀ k, List (SΓ CK k)),
       RunLe (prog L sa pl cn pu N) (shBound L N T H)
@@ -1739,14 +1843,31 @@ theorem shBound_le (L : Layout) (N T H : ℕ) : shBound L N T H ≤ shC L N * (T
   exact this.trans h2
 
 open Polynomial in
-/-- The bound as a `Polynomial ℕ` in `T + H`. -/
+/-- **The shift-generator time bound as a polynomial.** For a layout $L$ with label/state block
+size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, and a natural number $N$, let
+$c = 828\,(A + K + g + d + N + 1)^7$ be the constant of the shift-generator time bound; this is
+the polynomial $c\,(X + 1)^6$ with natural-number coefficients.
+
+For natural numbers $T$ and $H$, its value at $X = T + H$ is $c\,(T + H + 1)^6$, the bound on
+the number of steps of the shift generator started on $T$ and $H$. -/
 noncomputable def shPoly (L : Layout) (N : ℕ) : Polynomial ℕ := C (shC L N) * (X + 1) ^ 6
 
 theorem shPoly_eval (L : Layout) (N T H : ℕ) :
     (shPoly L N).eval (T + H) = shC L N * (T + H + 1) ^ 6 := by
   simp [shPoly]
 
-/-- **The time bound**: the generator emits the family within a polynomial number of steps. -/
+/-- **Polynomial time bound for the shift generator.** Let $L$ be a layout with label/state block
+size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, let $\mathrm{sa}$, $\mathrm{pl}$,
+$\mathrm{cn}$, $\mathrm{pu}$ be situation tables and let $N, T, H \in \mathbb{N}$, and suppose
+the tables are well formed for $N$ situations at height $H$. Start the cell-shift generator for
+$L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ and $N$ at its first
+precomputation stage, in state false, with $T$ on the counter $\mathrm{Tn}$ and $H$ on the counter
+$\mathrm{Hs}$ in unary, all other counters empty, and an arbitrary list $o$ of bits on the output
+stack. Then within at most $c\,(T + H + 1)^6$ steps, where $c = 828\,(A + K + g + d + N + 1)^7$
+is the constant of the shift-generator time bound for $L$ and $N$, it reaches its final label
+$\mathrm{done}$, in some state, with stacks whose output stack holds the encoding of the
+cell-shift clause family for $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$,
+$N$, $T$ and $H$, followed by $o$. -/
 theorem sh_time {L : Layout} {sa : ℕ → ℕ} {pl cn : ℕ → ℕ → ℕ} {pu : ℕ → ℕ → ℕ → ℕ} {N : ℕ}
     (T H : ℕ)
     (hwf : WF L sa pl cn pu N H) (o : List Bool) :

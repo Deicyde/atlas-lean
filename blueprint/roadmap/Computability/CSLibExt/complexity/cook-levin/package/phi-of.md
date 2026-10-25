@@ -17,14 +17,14 @@ the bit-string encoding of the assembled Cook–Levin formula $\Phi_E(x, Y, a, m
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
 - [The formula emitted by the host](../assembly/phi.md)
 - [The precomputed time bound](../precompute/tof.md)
 - [Total length bound](../precompute/m-of.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

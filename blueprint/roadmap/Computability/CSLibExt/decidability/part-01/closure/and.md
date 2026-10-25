@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.TM2Decidable.and
 ---
 
-# And
+# Decidable predicates are closed under conjunction
 
-Decidable predicates are closed under conjunction.
+**Decidable predicates are closed under conjunction.** Let $p$ and $q$ be predicates on a
+type $\alpha$ with a primitive recursive encoding. If $p$ and $q$ are both decidable by
+multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 
 ## Depends on
 
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
 - [And](../../../../MathlibExt/re/and.md)
 
 ## Sources

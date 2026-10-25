@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.rowSites
 ---
 
-# Row Sites
+# Row copy sites of the HAMPATH emitter
 
-The row sites.
+**Row copy sites of the HAMPATH emitter.** The list of the four copy sites of the two row arcs
+between consecutive row vertices of a diamond, in order: the source site and then the target site
+of the first and of the second row arc.
 
 ## Depends on
 
-- [Site](../ham-path-emit-machine/site.md)
+- [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
 
 ## Sources
 

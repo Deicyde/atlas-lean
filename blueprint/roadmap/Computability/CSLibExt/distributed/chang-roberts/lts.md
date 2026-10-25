@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Distributed.ChangRoberts.lts
 ---
 
-# Lts
+# The Chang–Roberts transition system
 
-The algorithm as a labelled transition system; the label is the receiving
-process.
+**The Chang–Roberts transition system.** For identifiers $\mathrm{id}$, the algorithm is the
+labelled transition system whose states are the global states and whose labels are processes:
+there is a transition from $s$ to $t$ labelled $k$ exactly when delivering the oldest message in
+the channel of process $k$ in state $s$ gives $t$.
 
 ## Depends on
 
-- [State](state.md)
+- [Chang–Roberts global states](state.md)
 
 ## Proof depends on
 
-- [Deliver](deliver.md)
+- [Delivering a message in the Chang–Roberts ring](deliver.md)
 
 ## Sources
 

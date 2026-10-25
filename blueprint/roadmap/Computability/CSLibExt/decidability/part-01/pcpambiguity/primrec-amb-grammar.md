@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.primrec_ambGrammar
 ---
 
-# `ambGrammar P` is ambiguous exactly when `P` has a solution
+# The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution
 
-**`ambGrammar P` is ambiguous exactly when `P` has a solution.** -/
+**The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution.** For every list
+$P$ of dominoes, the ambiguity grammar of $P$ is ambiguous, that is, some word has two different
+leftmost derivations from its start symbol, if and only if $P$ has a PCP solution. -/
 theorem isAmbiguous_iff_pcp (P : List (Domino α)) : IsAmbiguous (ambGrammar P).toCFG ↔ PCP P := by
   constructor
   · rintro ⟨w, rs₁, rs₂, hne, h₁, h₂⟩
@@ -47,20 +49,20 @@ end Derivations
 
 ## Depends on
 
-- [Amb Grammar](amb-grammar.md)
-- [Domino](../pcp/domino.md)
+- [The ambiguity grammar of a PCP instance](amb-grammar.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 
 ## Proof depends on
 
-- [Cont Rule](../cfgundecidable/cont-rule.md)
-- [Domino](../cfgundecidable/domino.md)
-- [Index Sym](../cfgundecidable/index-sym.md)
-- [Letter Sym](../cfgundecidable/letter-sym.md)
-- [Nt Sym](../cfgundecidable/nt-sym.md)
-- [Side Rules](../cfgundecidable/side-rules.md)
-- [Term Rule](../cfgundecidable/term-rule.md)
+- [The continuation production](../cfgundecidable/cont-rule.md)
+- [The $i$-th domino of a list](../cfgundecidable/domino.md)
+- [The encoded index terminal](../cfgundecidable/index-sym.md)
+- [The encoded letter terminal](../cfgundecidable/letter-sym.md)
+- [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
+- [The productions of a side grammar](../cfgundecidable/side-rules.md)
+- [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
 
 ## Sources
 

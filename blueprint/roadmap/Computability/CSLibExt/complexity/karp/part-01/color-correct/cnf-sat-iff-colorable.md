@@ -6,33 +6,37 @@ proof: formalized
 lean: Cslib.Complexity.Karp.cnfSat_iff_colorable
 ---
 
-# Cnf Sat iff colorable
+# Correctness of the reduction from SAT to 3-coloring
 
-SAT ≤ 3-COLOR on formulas: `φ` is satisfiable iff its graph is 3-colorable.
+**Correctness of the reduction from SAT to 3-coloring.** A CNF formula $\varphi$ is satisfiable
+if and only if the graph built from $\varphi$ by the Garey–Johnson–Stockmeyer construction is
+3-colorable. Here, writing $n$ for the number of vertices the construction allocates, the graph
+has vertex set $\{0, \dots, n - 1\}$, and two distinct vertices are adjacent when the
+construction emits an edge between them in either order.
 
 ## Depends on
 
-- [Col St](../color/col-st.md)
-- [Col St](../color/col-st-2.md)
-- [Edge Graph](../color/edge-graph.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
+- [The SAT-to-3-COLOR graph construction](../color/col-st-2.md)
+- [Graph of an edge list](../color/edge-graph.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Col Colored](col-colored.md)
-- [Col Good](col-good.md)
-- [Extend](extend.md)
-- [Col Grows](col-grows.md)
-- [Col Proper](col-proper.md)
-- [Col Clause](../color/col-clause.md)
-- [Col Grows extend](col-grows-extend.md)
-- [Col Lits](../color/col-lits.md)
-- [Col Occ](../color/col-occ.md)
-- [Col Or](../color/col-or.md)
-- [Colorable iff exists col Proper](colorable-iff-exists-col-proper.md)
-- [Cons Edges](../color/cons-edges.md)
-- [Or gadget colors](or-gadget-colors.md)
+- [Colorings that follow an assignment](col-colored.md)
+- [Well-formed construction states](col-good.md)
+- [Extending a well-formed state keeps it well formed](extend.md)
+- [Growth of construction states](col-grows.md)
+- [Proper 3-colorings of an edge list](col-proper.md)
+- [Processing one clause in the 3-COLOR construction](../color/col-clause.md)
+- [Extending a state makes it grow](col-grows-extend.md)
+- [Processing the remaining literals of a clause](../color/col-lits.md)
+- [Adding a literal occurrence in the 3-COLOR construction](../color/col-occ.md)
+- [OR gadget of the 3-COLOR construction](../color/col-or.md)
+- [3-colorability through colorings of the natural numbers](colorable-iff-exists-col-proper.md)
+- [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
+- [Coloring an OR gadget](or-gadget-colors.md)
 - [Sound col Or](sound-col-or.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 

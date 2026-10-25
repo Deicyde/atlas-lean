@@ -29,7 +29,7 @@ base $B$ over $V$ variables followed by $o$.
 - [Step bound for one cell](cell-b.md)
 - [One-hot clauses of a cell](cell-cnf.md)
 - [The one-hot generator](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -43,7 +43,7 @@ base $B$ over $V$ variables followed by $o$.
 - [Step budget for one one-hot clause](clause-b.md)
 - [At-most-one clauses of the first rows of a cell](rows-cnf.md)
 - [Generator run over the first rows and the at-least-one clause](rows-run.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

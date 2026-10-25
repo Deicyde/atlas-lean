@@ -11,7 +11,7 @@ Is the popped symbol the mark or pair bit `val true`?
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

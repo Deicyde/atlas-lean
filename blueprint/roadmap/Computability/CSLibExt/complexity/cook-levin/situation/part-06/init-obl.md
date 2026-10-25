@@ -7,19 +7,23 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.InitObl
 
 # Init obligation, input pinned
 
-**Init obligation, input pinned** (2026-10-01, replaces the placeholder `∃ s` form): the start
-stack is the fixed input `x` (instance and `#`) followed by a certificate `y` over the allowed
-symbols `Ys`, with `|x ++ y| ≤ m`. Proved from the init clauses by `init_obl`.
+**Init obligation, input pinned.** Let $E$ be an encoding of a machine $M$ with window depth
+$d$, let $a$ be an assignment, let $x$ and $Y$ be lists of symbols of the input stack of $M$, and
+let $m, T$ be natural numbers, and put $H = m + (T + 1)d + 1$. The init obligation for $a$, $x$,
+$Y$, $m$ and $T$ holds when there is a list $y$ of symbols of $Y$ with $|x| + |y| \le m$ such that
+the row-0 obligation holds for $a$ at height $H$ and the input $x$ followed by $y$: under $a$, the
+code literal of row $0$ and the cell literals of row $0$ at every depth below $H$ are true for the
+initial configuration of $M$ on that input.
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
 
 ## Proof depends on
 
 - [Row-0 obligation](row0.md)
-- [Cap H](../part-05/cap-h.md)
-- [Depth](../part-01/depth.md)
+- [Stack cap](../part-05/cap-h.md)
+- [Window depth of a machine](../part-01/depth.md)
 
 ## Sources
 

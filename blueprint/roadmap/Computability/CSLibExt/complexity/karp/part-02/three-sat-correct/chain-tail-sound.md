@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Complexity.Karp.chainTail_sound
 ---
 
-# Chain Tail sound
+# Soundness of the tail of a chain
 
-If an assignment satisfies `chainTail (l :: ls) z` and makes fresh variable `z` true, its
-restriction to even variables satisfies `l :: ls`.
+**Soundness of the tail of a chain.** Let $C$ be a nonempty clause and $z$ a natural number. If
+an assignment $v'$ satisfies every clause of $\mathrm{chainTail}(C, z)$ and gives the fresh
+variable $\mathrm{fresh}(z)$ the value true, then the assignment $n \mapsto v'(2n)$ satisfies
+$C$.
 
 ## Depends on
 
-- [Chain Tail](../three-sat/chain-tail.md)
-- [Fresh](../three-sat/fresh.md)
-- [Ren](../three-sat/ren.md)
+- [The tail of a clause chain](../three-sat/chain-tail.md)
+- [Fresh variable indices](../three-sat/fresh.md)
+- [Renaming of the original variables](../three-sat/ren.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 
-- [Ren Lit](../three-sat/ren-lit.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 

@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.exists_derives_of_mem_iterate
 ---
 
-# Soundness
+# Soundness of the productive-nonterminal iteration
 
-**Soundness**: every nonterminal found derives a terminal word.
+**Soundness of the productive-nonterminal iteration.** Let $g$ be an encoded context-free
+grammar. A round sends a list $H$ of nonterminals to the left-hand sides of those productions of
+$g$ in whose right-hand side every nonterminal belongs to $H$. For every $k \ge 0$, every
+nonterminal obtained after $k$ rounds starting from the empty list derives some terminal word in
+the context-free grammar that $g$ denotes.
 
 ## Depends on
 
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Gen Step](gen-step.md)
+- [One round of the generating-nonterminal computation](gen-step.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
-- [Mem B](../primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Exists derives of forall](exists-derives-of-forall.md)
-- [Rule Ok](rule-ok.md)
-- [Sym Ok](sym-ok.md)
+- [Sentential forms of productive nonterminals derive terminal words](exists-derives-of-forall.md)
+- [Acceptable productions](rule-ok.md)
+- [Acceptable symbols](sym-ok.md)
 
 ## Sources
 

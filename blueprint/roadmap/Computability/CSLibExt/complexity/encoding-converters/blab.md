@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.BLab
 ---
 
-# BLab
+# Labels of the bit-list converters
 
-Labels of the two bit-list converters.
+**Labels of the bit-list converters.** The two bit-list converters have two program labels,
+$\mathrm{read}$ and $\mathrm{emit}$.
 
 ## Depends on
 

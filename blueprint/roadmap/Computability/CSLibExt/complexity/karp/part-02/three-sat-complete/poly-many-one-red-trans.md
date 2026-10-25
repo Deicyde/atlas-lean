@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.polyManyOneRed_trans
 ---
 
-# Poly Many One Red trans
+# Transitivity of polynomial-time many-one reductions
 
-Polynomial-time many-one reductions compose.
+**Transitivity of polynomial-time many-one reductions.** For decision problems $L_1$, $L_2$
+and $L_3$, if $L_1$ has a polynomial-time many-one reduction to $L_2$ and $L_2$ has one to $L_3$,
+then $L_1$ has a polynomial-time many-one reduction to $L_3$.
 
 ## Depends on
 
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on

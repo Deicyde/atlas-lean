@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.encodeNat_two_pow_sub_one
 ---
 
-# Encode Nat two pow sub one
+# The binary code of $2^k - 1$
 
-The binary code of `2 ^ k - 1` is `k` ones.
+**The binary code of $2^k - 1$.** For every natural number $k$, the binary code of
+$2^k - 1$ (Mathlib's encoding of natural numbers as bit lists, least significant bit first) is
+the list of $k$ ones.
 
 ## Depends on
 

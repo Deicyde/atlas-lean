@@ -23,7 +23,7 @@ $n$, where $g_B$ is the step bound of the composed machine.
 ## Depends on
 
 - [F R](f-r.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -49,9 +49,9 @@ $n$, where $g_B$ is the step bound of the composed machine.
 - [Step count of the Horner rounds](../precompute/horn-t.md)
 - [Total length bound](../precompute/m-of.md)
 - [Constant of the shift-generator time bound](../shift/sh-c.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
-- [Depth](../situation/part-01/depth.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources

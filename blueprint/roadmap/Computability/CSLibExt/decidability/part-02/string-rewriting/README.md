@@ -4,44 +4,44 @@ navigation: module
 
 # String Rewriting
 
-- [Rule](rule.md)
-- [Step](step.md)
-- [Derives](derives.md)
-- [SR](sr.md)
-- [Nonempty Rules](nonempty-rules.md)
+- [Rewriting rules](rule.md)
+- [One-step rewriting](step.md)
+- [Derivations in a string rewriting system](derives.md)
+- [The reachability problem for string rewriting](sr.md)
+- [Rewriting systems with nonempty sides](nonempty-rules.md)
 
 ## The dominoes
 
-- [Lift](lift.md)
-- [Start Card](start-card.md)
-- [Final Card](final-card.md)
-- [Sep Card](sep-card.md)
-- [Rule Card](rule-card.md)
-- [Copy Card](copy-card.md)
-- [Symbols](symbols.md)
-- [To MPCP](to-mpcp.md)
+- [Lifting a word to the extended alphabet](lift.md)
+- [The start domino](start-card.md)
+- [Final domino](final-card.md)
+- [The separator domino](sep-card.md)
+- [The domino of a rewriting rule](rule-card.md)
+- [Copy domino](copy-card.md)
+- [Letters of a rewriting instance](symbols.md)
+- [The MPCP instance of a reachability instance](to-mpcp.md)
 
 ## Comparing words of letters with separators
 
-- [Letter ne star](letter-ne-star.md)
-- [Exists of lift append eq](exists-of-lift-append-eq.md)
+- [The MPCP instance of a reachability instance](letter-ne-star.md)
+- [Comparing words of letters before a separator](exists-of-lift-append-eq.md)
 
 ## From solutions to derivations
 
-- [The backward direction](derives-of-top-eq.md)
+- [The backward direction of the MPCP reduction](derives-of-top-eq.md)
 
 ## From derivations to solutions
 
-- [The backward direction](mem-symbols-of-step.md)
-- [The forward direction](exists-cards-of-derives.md)
+- [The backward direction of the MPCP reduction](mem-symbols-of-step.md)
+- [The forward direction of the MPCP reduction](exists-cards-of-derives.md)
 - [Reachability reduces to MPCP](sr-iff-mpcp-to-mpcp.md)
 
 ## The many-one reduction
 
-- [Reduce](reduce.md)
+- [The total reduction of reachability with nonempty sides to MPCP](reduce.md)
 - [Reachability many-one reduces to MPCP](many-one-reducible-sr-mpcp.md)
 - [Reachability many-one reduces to PCP](many-one-reducible-sr-pcp.md)
 
 ## Thue systems
 
-- [Thue WP](thue-wp.md)
+- [The word problem of a Thue system](thue-wp.md)

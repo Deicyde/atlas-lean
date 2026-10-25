@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.flatten
 ---
 
-# Flatten
+# Encoding of a regular expression
 
-The encoding of a regular expression.
+**Encoding of a regular expression.** The encoding of a regular expression $r$ is the list of
+nodes obtained by appending the nodes of $r$ in postorder after the empty list, so that the root
+of $r$ is the last node.
 
 ## Depends on
 
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
-- [Regex Node](regex-node.md)
+- [Postorder encoding after a prefix](flatten-aux.md)
+- [Regular-expression node](regex-node.md)
 
 ## Sources
 

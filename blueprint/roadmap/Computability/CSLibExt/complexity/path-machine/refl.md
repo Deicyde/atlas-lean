@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.Fr.refl
 ---
 
-# Refl
+# Frames are reflexive
 
-Nothing changes.
+**Frames are reflexive.** For every list $A$ of stacks of the marking machine and every
+assignment $S$ of contents to its stacks, $S$ agrees with itself off $A$.
 
 ## Depends on
 
-- [Fr](fr.md)
+- [Agreement off a set of stacks](fr.md)
 - [K](k.md)
-- [Γ](untitled.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources
 

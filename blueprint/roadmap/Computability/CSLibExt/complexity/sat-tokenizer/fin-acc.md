@@ -6,9 +6,17 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Tokenizer.fin_acc
 ---
 
-# Fin acc
+# Tokenizer rejects undecodable clauses
 
-Clauses that do not decode: rejected within `2 |r| + n + 2` steps. -/
+**Tokenizer rejects undecodable clauses.** A configuration
+$\langle \ell, v \mid x, w, t, b, i, j\rangle$ of the SAT tokenizer has label $\ell$, internal bit
+$v$, stacks $X$, $W$, $T$, $B$ holding $x$, $w$, $t$, $b$ (top first; a bit string stands for its
+list of bit symbols), and $i$ and $j$ marks on the clause and literal counters. Let
+$n \in \mathbb{N}$, let $r$ and $w$ be bit strings, $t$ and $b$ symbol lists and $v$ a bit, and
+suppose that decoding $n$ clauses (each a unary literal count followed by that many encoded
+literals) from the front of $r$ fails. Then from
+$\langle \mathsf{cls}, v \mid r, w, t, b, n, 0\rangle$ the tokenizer reaches the label
+$\mathsf{rej}$ within $2|r| + n + 2$ steps. -/
 theorem clauses_fail : ∀ (n : ℕ) (r w : List Bool) (t b : List Sym) (v : Bool),
     decodeClauses n r = none →
     Rej (2 * r.length + n + 2) ⟨some .cls, v, st (r.map .bit) (w.map .bit) t b n 0⟩
@@ -43,11 +51,11 @@ theorem clauses_fail : ∀ (n : ℕ) (r w : List Bool) (t b : List Sym) (v : Boo
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [St](st.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](k.md)
+- [Labels of the SAT tokenizer](lab.md)
+- [The tokenizer program](prog.md)
+- [Tokenizer stack contents](st.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on

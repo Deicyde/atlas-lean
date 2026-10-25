@@ -32,7 +32,7 @@ value of the bound at $k = y = 1$.
 - [Step budget of one overflow iteration of the cell-shift generator](o-body-b.md)
 - [Cost of the precomputation of the cell-shift generator](pre-b.md)
 - [Step bound for one in-range loop iteration](s-body-b.md)
-- [T Body B](t-body-b.md)
+- [Step budget for one time step of the shift generator](t-body-b.md)
 
 ## Sources
 

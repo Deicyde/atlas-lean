@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Converter.Γ
 ---
 
-# Γ
+# Stack alphabets of the pair-encoding converter
 
-Stack alphabets: the output holds the verifier's symbols, every other stack bits.
+**Stack alphabets of the pair-encoding converter.** The output stack of the converter has as
+its alphabet the verifier's work alphabet $G = \{0,1\} \sqcup (\{0,1\} \cup \{\#\})$; the input
+stack and the two stash stacks have the bits $\{0,1\}$ as their alphabet.
 
 ## Depends on
 
-- [Stk](stk.md)
+- [Stacks of the pair-encoding converter](stk.md)
 
 ## Proof depends on
 
-- [G](../dense-satverifier/g.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 
 ## Sources
 

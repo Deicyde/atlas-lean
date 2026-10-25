@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.Converter.bitEncode_pair_eq
 ---
 
-# Bit Encode pair eq
+# Canonical encoding of a pair of bit lists
 
-The canonical encoding of a pair of bit lists, spelled out.
+**Canonical encoding of a pair of bit lists.** For bit lists $x$ and $w$, the canonical
+bitstring encoding of the pair $(x, w)$ is the concatenation of three parts: every bit $b$ of $x$,
+in order, written as the six bits true, true, true, $b$, true, false; then a single false; then
+every bit $b$ of $w$, in order, written as the three bits true, $b$, false.
 
 ## Depends on
 
-- [Enc Fst](enc-fst.md)
-- [Enc Snd](enc-snd.md)
+- [Converter encoding of the first component](enc-fst.md)
+- [Converter encoding of the second component](enc-snd.md)
 - [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)

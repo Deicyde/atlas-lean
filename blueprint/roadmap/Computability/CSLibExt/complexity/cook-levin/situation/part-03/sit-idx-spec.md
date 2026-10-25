@@ -6,27 +6,32 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.sitIdx_spec
 ---
 
-# Sit Idx spec
+# The situation index matches the code and windows
 
-The situation of a good configuration is found: index in range, code and windows match.
+**The situation index matches the code and windows.** Fix an encoding $E$ of a finite TM2
+machine $M$, with $K$ stacks, $N$ situations and window depth $d$. If every symbol on every stack
+of a configuration $c$ lies in the effective alphabet of $E$, then the situation index $i$ of $c$
+satisfies $i < N$, the label/state code of situation $i$ equals the combined (label, state) code
+of $c$, and for all $k < K$ and $j < d$ the window symbol code of situation $i$ on stack $k$ at
+depth $j$ equals the cell code of $c$ on stack number $k$ at depth $j$.
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
-- [Good](good.md)
-- [N](../part-01/n.md)
-- [Cell](cell.md)
-- [Code](code.md)
-- [La](../part-01/la.md)
-- [Sit Idx](sit-idx.md)
-- [Wa](../part-01/wa.md)
-- [Depth](../part-01/depth.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [Good configurations](good.md)
+- [Number of situations](../part-01/n.md)
+- [Cell code of a configuration](cell.md)
+- [Label-and-state code of a configuration](code.md)
+- [Label/state code of a situation](../part-01/la.md)
+- [Situation index of a configuration](sit-idx.md)
+- [Window symbol code of a situation](../part-01/wa.md)
+- [Window depth of a machine](../part-01/depth.md)
 
 ## Proof depends on
 
-- [G](../part-01/g.md)
-- [G pos](../part-02/g-pos.md)
-- [Mix sit](../part-02/mix-sit.md)
+- [Symbol-code bound](../part-01/g.md)
+- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [Mixed-radix index of a situation](../part-02/mix-sit.md)
 
 ## Sources
 

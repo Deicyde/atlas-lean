@@ -22,7 +22,7 @@ the $V$ variables of $L$ for $T$ and $H$.
 - [Index of a cell variable in the transition-family layout](../family/c-idx.md)
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [One-hot clauses of a cell](cell-cnf.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

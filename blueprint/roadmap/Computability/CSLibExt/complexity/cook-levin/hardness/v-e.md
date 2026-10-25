@@ -14,9 +14,9 @@ effective output alphabet is enlarged by the accept symbol: the output symbol of
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 
 ## Proof depends on
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.tblStk
 ---
 
-# Tbl Stk
+# Table stack of an entry list
 
-The table stack of an entry list (head = top; the first entry is at the bottom).
+**Table stack of an entry list.** Write each table entry as one bit symbol per bit of its
+name followed by its closing marker (the value symbol for its value, or the dead symbol if it
+has no value), and concatenate these in the order of the list. The table stack is the reverse
+of this sequence, with the head as the top of the stack, so the first entry lies at the bottom.
 
 ## Depends on
 
-- [Ent](ent.md)
-- [Sym](sym.md)
+- [Table entries](ent.md)
+- [Stack alphabet of the SAT verifier](sym.md)
 
 ## Proof depends on
 
-- [Ent Toks](ent-toks.md)
+- [Symbols of a table entry](ent-toks.md)
 
 ## Sources
 

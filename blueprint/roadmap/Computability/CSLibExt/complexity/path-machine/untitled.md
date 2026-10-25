@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Path.Machine.Γ
 ---
 
-# Γ
+# Stack alphabets of the PATH marking machine
 
-Stack alphabets: the output stack holds `Bool`s, every other stack `Sym`s.
+**Stack alphabets of the PATH marking machine.** The output stack $O$ of the PATH marking
+machine holds Booleans, and every other stack holds symbols of the SAT verifier's symbol
+alphabet.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ Stack alphabets: the output stack holds `Bool`s, every other stack `Sym`s.
 
 ## Proof depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Intractability* (1979), STRIP PACKING (axis-aligned, no rotations).
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Strip Packing Dec](strip-packing-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

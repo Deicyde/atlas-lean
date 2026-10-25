@@ -13,21 +13,21 @@ moves them all back, so that `B` holds `tblStk (pre ++ post)`, and halts at `don
 
 ## Depends on
 
-- [Ent](../sat-verifier-spec/ent.md)
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Stk](stk.md)
-- [Sym](../sat-verifier-spec/sym.md)
-- [Ent Toks](../sat-verifier-spec/ent-toks.md)
-- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Table entries](../sat-verifier-spec/ent.md)
+- [Stacks of the lookup machine](k.md)
+- [Labels of the lookup machine](lab.md)
+- [The lookup program](prog.md)
+- [Stack contents of the lookup machine](stk.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
+- [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Mv Sym](mv-sym.md)
-- [Bit?](../sat-verifier-spec/bit.md)
-- [Mark Of](../sat-verifier-spec/mark-of.md)
+- [Moving a symbol between stacks](mv-sym.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
+- [Closing marker of a table entry](../sat-verifier-spec/mark-of.md)
 - [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)

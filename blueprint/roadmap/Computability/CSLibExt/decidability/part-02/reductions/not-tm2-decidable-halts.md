@@ -8,17 +8,18 @@ lean: Cslib.Decidability.not_tm2Decidable_halts
 
 # Halting is undecidable
 
-**Halting is undecidable** (on pairs).
+**Halting is undecidable.** No multi-stack Turing machine decides, for pairs $(c, n)$ of a
+partial recursive code and a natural number, whether $c$ halts on $n$.
 
 ## Depends on
 
-- [Halts](halts.md)
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Halting of a code on an input](halts.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
 - [The halting problem is undecidable by multi-stack machines](../undecidable/not-tm2-decidable-halting.md)
-- [Tm2 Decidable of many One Reducible](../undecidable/tm2-decidable-of-many-one-reducible.md)
+- [Decidability transfers along mapping reductions](../undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources
 

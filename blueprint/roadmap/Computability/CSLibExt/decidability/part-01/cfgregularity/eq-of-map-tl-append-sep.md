@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Decidability.Regularity.eq_of_map_tl_append_sep
 ---
 
-# Eq of map tl append sep
+# Unique decomposition at the separator
 
-A word `u # v` determines `u` and `v`.
+**Unique decomposition at the separator.** Over the alphabet consisting of the letters of
+$T$, a separator $\#$ and two bits $0$ and $1$, let $u, u'$ be words over $T$ and $v, v'$ words
+over the bits. If $u \# v = u' \# v'$, then $u = u'$ and $v = v'$.
 
 ## Depends on
 
-- [Letter](letter.md)
-- [Bl](bl.md)
-- [Sep](sep.md)
-- [Tl](tl.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
+- [Bits as letters](bl.md)
+- [The separator letter](sep.md)
+- [Alphabet letters in the extended alphabet](tl.md)
 
 ## Sources
 

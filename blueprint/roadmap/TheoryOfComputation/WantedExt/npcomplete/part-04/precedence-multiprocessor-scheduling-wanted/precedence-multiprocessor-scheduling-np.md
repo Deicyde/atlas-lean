@@ -13,7 +13,7 @@ MULTIPROCESSOR SCHEDULING; J. D. Ullman, "NP-complete scheduling problems" (1975
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Precedence Multiprocessor Scheduling Dec](precedence-multiprocessor-scheduling-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

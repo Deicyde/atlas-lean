@@ -6,27 +6,34 @@ proof: formalized
 lean: DFA.hopcroftLoop_spec
 ---
 
-# Termination
+# Termination of Hopcroft's loop
 
-**Termination**: from a state of the invariants with potential `|W| + |Σ| (|Q| - |P|)` at
-most `k`, `k` rounds empty the waiting list.
+**Termination of Hopcroft's loop.** Let $M$ be a DFA with finite state set $Q$ over a finite
+alphabet $\Sigma$, let $P$ be a partition of the states given as a list of blocks, let $W$ be a
+waiting list of splitters, and let $k$ be a natural number. If $P$ and $W$ satisfy the invariants
+of Hopcroft's loop and $|W| + |\Sigma| \cdot (|Q| - |P|) \le k$, where $|P|$ and $|W|$ are the
+lengths of the lists, then Hopcroft's loop run from $(P, W)$ with a budget of $k$ rounds ends with
+an empty waiting list, and the partition and waiting list it returns again satisfy the invariants.
+
+The invariants make $P$ a partition into nonempty blocks, so $|P| \le |Q|$ and the difference
+$|Q| - |P|$ is not truncated.
 
 ## Depends on
 
-- [Inv](inv.md)
-- [Hopcroft Loop](hopcroft-loop.md)
+- [Invariants of Hopcroft's loop](inv.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
 
 ## Proof depends on
 
 - [One round preserves the invariants](round.md)
-- [Is Partition](is-partition.md)
-- [Length le](length-le.md)
-- [Splits](splits.md)
-- [Length round P](length-round-p.md)
+- [Partitions of the states](is-partition.md)
+- [A partition has at most as many blocks as there are states](length-le.md)
+- [A set of states split by another](splits.md)
+- [Number of blocks after one round](length-round-p.md)
 - [Length round W le](length-round-w-le.md)
-- [Preimage](preimage.md)
-- [Round P](round-p.md)
-- [Round W](round-w.md)
+- [Preimage of a set under a letter](preimage.md)
+- [One refinement round of the partition](round-p.md)
+- [One update of the waiting list](round-w.md)
 
 ## Sources
 

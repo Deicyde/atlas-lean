@@ -11,7 +11,7 @@ A production of `g`, in `regGrammar g`.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 

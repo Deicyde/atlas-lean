@@ -6,55 +6,59 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitColor.run
 ---
 
-# The emitter
+# Correctness and step bound of the 3-COLOR emitter
 
-**The emitter.** From `start`, with the token stack `(toks φ).reverse`, the output stack `o`
-and every other stack empty, the machine reaches `done` within `500 (|toks φ| + 1)⁴` steps
-with the 3-COLOR instance `toCol φ` pushed on the output stack (read top-first).
+**Correctness and step bound of the 3-COLOR emitter.** Let $\varphi$ be a CNF formula
+with token list $t(\varphi)$, let $o$ be a bit list and $v$ a Boolean. Started at its start
+label with local state $v$, with the token stack holding $t(\varphi)$ reversed, the output
+stack holding $o$ and every other stack empty, the emitter machine reaches the label
+$\mathsf{done}$ within $500\,(|t(\varphi)| + 1)^4$ steps, in some local state and with some
+stacks whose output stack holds the 3-COLOR instance of $\varphi$ followed by $o$ (read
+top-first).
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Γ](untitled.md)
-- [To Col](../color/to-col.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Toks](../../../sat-verifier-spec/toks.md)
+- [Stacks of the 3-coloring emitter](k.md)
+- [Control labels of the 3-coloring emitter](lab.md)
+- [The 3-COLOR emitter machine](prog.md)
+- [Start label of the 3-coloring emitter](start.md)
+- [Stack alphabets of the 3-coloring emitter](untitled.md)
+- [The 3-COLOR instance of a CNF formula](../color/to-col.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Col St](../color/col-st.md)
-- [Inv](inv.md)
-- [Bump](bump.md)
-- [Occ](occ.md)
-- [MS](ms.md)
-- [Stk](stk.md)
-- [Val](val.md)
-- [Site](site.md)
-- [Nxt](nxt.md)
-- [Src](src-2.md)
-- [Atom](atom.md)
-- [Budget](budget.md)
-- [D Tok](d-tok.md)
-- [Enc](enc.md)
-- [Formula run](formula-run.md)
-- [Is Lit](is-lit.md)
-- [Out](out.md)
-- [Pal](pal.md)
-- [Site run](site-run.md)
-- [Col Clause](../color/col-clause.md)
-- [Col Lits](../color/col-lits.md)
-- [Col Occ](../color/col-occ.md)
-- [Col Or](../color/col-or.md)
-- [Col St](../color/col-st-2.md)
-- [Cl Rev](../../../sat-check/cl-rev.md)
-- [Lit Rev](../../../sat-check/lit-rev.md)
-- [Clause Toks](../../../sat-verifier-spec/clause-toks.md)
-- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
+- [Size invariant of the 3-coloring emitter](inv.md)
+- [One more token preserves the 3-COLOR emitter's size invariant](bump.md)
+- [The size invariant survives a new literal occurrence](occ.md)
+- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Stacks of a quiescent state](stk.md)
+- [Counter values of a quiescent state](val.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
+- [Successor label of a copy site](nxt.md)
+- [Counter copied by a copy site](src-2.md)
+- [Bit list of a copy site of the 3-COLOR emitter](atom.md)
+- [Per-token step budget of the 3-COLOR emitter](budget.md)
+- [Encoding of an earlier occurrence on stack $D$](d-tok.md)
+- [The emitter state of a construction state](enc.md)
+- [The emitter on a list of clauses](formula-run.md)
+- [Literal-marker test](is-lit.md)
+- [Bits pushed for a list of edges](out.md)
+- [Bits of the palette triangle](pal.md)
+- [Running a copy site of the 3-COLOR emitter](site-run.md)
+- [Processing one clause in the 3-COLOR construction](../color/col-clause.md)
+- [Processing the remaining literals of a clause](../color/col-lits.md)
+- [Adding a literal occurrence in the 3-COLOR construction](../color/col-occ.md)
+- [OR gadget of the 3-COLOR construction](../color/col-or.md)
+- [The SAT-to-3-COLOR graph construction](../color/col-st-2.md)
+- [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)
+- [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
+- [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
+- [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)

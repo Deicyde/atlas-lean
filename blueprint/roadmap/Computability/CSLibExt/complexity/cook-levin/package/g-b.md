@@ -17,7 +17,7 @@ bound of the composed machine is $B(n) + 1 + (L(n + B(n) D + 1) + 1)$.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -25,7 +25,7 @@ bound of the composed machine is $B(n) + 1 + (L(n + B(n) D + 1) + 1)$.
 - [Stacks of the full machine](../precompute/fk.md)
 - [Step bound of the full machine](../precompute/full-b.md)
 - [The full machine as a finite multi-stack Turing machine](../precompute/full-tm.md)
-- [Depth](../situation/part-01/depth.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 
 ## Sources
 

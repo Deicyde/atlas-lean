@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Decidability.Post.NonemptyWords
 ---
 
-# Nonempty Words
+# Instances with nonempty words
 
-Every domino has a nonempty top and a nonempty bottom.
+**Instances with nonempty words.** A list $P$ of dominoes has nonempty words when every
+domino of $P$ has a nonempty top word and a nonempty bottom word.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Sources
 

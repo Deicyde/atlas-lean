@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.encW_nil
 ---
 
-# Enc W nil
+# Witness encoding of the empty list
 
-The empty witness.
+**Witness encoding of the empty list.** The witness encoding of the empty list of vertices is
+the empty bit string.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Sources
 

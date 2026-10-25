@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.toGraph_map_not
 ---
 
-# To Graph map not
+# Complementing the pair bits complements the graph
 
-Complementing the bits of a valid instance complements its graph.
+**Complementing the pair bits complements the graph.** Let $n \in \mathbb{N}$ and let $b$ be a
+list of bits whose length is the number of pairs $(i, j)$ with $i < j < n$. Then the graph on
+$\{0, \dots, n-1\}$ read off the list obtained by negating every bit of $b$ is the complement of
+the graph on $\{0, \dots, n-1\}$ read off $b$.
 
 ## Depends on
 
-- [Pairs](../clique/pairs.md)
-- [To Graph](../clique/to-graph.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
+- [The graph encoded by pair bits](../clique/to-graph.md)
 
 ## Proof depends on
 
-- [Adj Bits](../clique/adj-bits.md)
-- [Adj Bits eq get Elem](adj-bits-eq-get-elem.md)
+- [Adjacency bit of a vertex pair](../clique/adj-bits.md)
+- [Pair bits are read off by position](adj-bits-eq-get-elem.md)
 - [Mem pairs](mem-pairs.md)
 
 ## Sources

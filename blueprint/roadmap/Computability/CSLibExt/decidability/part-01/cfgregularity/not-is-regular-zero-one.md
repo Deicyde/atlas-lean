@@ -13,7 +13,7 @@ congruence.
 
 ## Depends on
 
-- [Zero One](zero-one.md)
+- [The language $\{0^n 1^n\}$](zero-one.md)
 
 ## Sources
 

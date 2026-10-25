@@ -7,7 +7,9 @@ lean: Cslib.Kolmogorov.K
 
 # Kolmogorov complexity
 
-**Kolmogorov complexity**: the length of a shortest description of `x`.
+**Kolmogorov complexity.** The Kolmogorov complexity $K(x)$ of a binary string $x$ is the
+least length of a binary string $p$ such that $U(p)$ is defined and equals $x$, where $U$ is the
+universal description method.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [The universal description method](u.md)
-- [Describe](describe.md)
-- [Run](run.md)
+- [Description of a code running on an input](describe.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

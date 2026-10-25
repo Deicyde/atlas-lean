@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.rules
 ---
 
-# Rules
+# The rewriting system simulating a Turing machine
 
-The rewriting system simulating `M`.
+**The rewriting system simulating a Turing machine.** Let $M$ be a single-tape Turing
+machine with finitely many states and tape symbols, and write $H$ for the halting symbol. The
+rewriting system simulating $M$ is the finite list of rules consisting of the rules for every
+state $q$ reading every tape symbol $a$, followed by the erasing rules $c\,H \to H$ and
+$H\,c \to H$ for every tape symbol $c$.
 
 ## Depends on
 
-- [Rule](../../part-02/string-rewriting/rule.md)
-- [TMSym](tmsym.md)
+- [Rewriting rules](../../part-02/string-rewriting/rule.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Proof depends on
 
-- [Erase Rules](erase-rules.md)
-- [Rules For](rules-for.md)
+- [Erasing rules](erase-rules.md)
+- [The rules for one transition](rules-for.md)
 
 ## Sources
 

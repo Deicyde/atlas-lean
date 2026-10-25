@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.encodeNat_decodeNat_eq_iff
 ---
 
-# Encode Nat decode Nat eq iff
+# Canonical binary names
 
-Canonical names: a bit string is some `encodeNat n` iff it is empty or ends in `true`.
+**Canonical binary names.** For every list $l$ of bits, encoding the natural number that $l$
+decodes to (Mathlib's binary code of natural numbers, least significant bit first) gives back $l$
+if and only if $l$ is empty or its last bit is true.
 
 ## Depends on
 

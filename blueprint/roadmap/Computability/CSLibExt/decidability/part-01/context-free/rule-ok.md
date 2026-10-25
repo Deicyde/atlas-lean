@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.ruleOk
 ---
 
-# Rule Ok
+# Acceptable productions
 
-A production is acceptable when all symbols of its right-hand side are.
+**Acceptable productions.** Given a list $G$ of nonterminals (natural numbers), the test
+accepts an encoded production $(A, \rho)$ when every symbol of $\rho$ is acceptable: a
+terminal always is, and a nonterminal is when it belongs to $G$. So the production is accepted
+exactly when every nonterminal occurring in $\rho$ belongs to $G$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sym Ok](sym-ok.md)
+- [Acceptable symbols](sym-ok.md)
 
 ## Sources
 

@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Complexity.Karp.edgeBits_of_decodeEs
 ---
 
-# Edge Bits of decode Es
+# The edge-list decoder succeeds only on edge bits
 
-`decodeEs` succeeds only on edge lists.
+**The edge-list decoder succeeds only on edge bits.** For every bit string $x$ and every list
+$es$ of pairs of natural numbers, if the edge-list decoder returns $es$ on $x$, then $x$ is the
+edge bits of $es$.
 
 ## Depends on
 
-- [Decode Es](decode-es.md)
-- [Edge Bits](edge-bits.md)
+- [Edge-list decoder](decode-es.md)
+- [Bit encoding of an edge list](edge-bits.md)
 
 ## Proof depends on
 
-- [Decode Es nil](decode-es-nil.md)
-- [Decode Es of none](decode-es-of-none.md)
-- [Decode Es of some none](decode-es-of-some-none.md)
-- [Decode Es of some some](decode-es-of-some-some.md)
-- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Decoding the empty input](decode-es-nil.md)
+- [Decoding fails on a cut-off first number](decode-es-of-none.md)
+- [Decoding fails on a dangling half-pair](decode-es-of-some-none.md)
+- [Decoding one pair, then the rest](decode-es-of-some-some.md)
+- [Reading a unary number shortens the input](length-lt-of-read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

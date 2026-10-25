@@ -6,41 +6,41 @@ navigation: module
 
 ## The languages
 
-- [Letter](letter.md)
-- [Sep](sep.md)
-- [Tl](tl.md)
-- [Bl](bl.md)
-- [Zero One](zero-one.md)
-- [Reg Lang](reg-lang.md)
-- [Eq of map tl append sep](eq-of-map-tl-append-sep.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
+- [The separator letter](sep.md)
+- [Alphabet letters in the extended alphabet](tl.md)
+- [Bits as letters](bl.md)
+- [The language $\{0^n 1^n\}$](zero-one.md)
+- [The target language of the regularity reduction](reg-lang.md)
+- [Unique decomposition at the separator](eq-of-map-tl-append-sep.md)
 - [`{0ⁿ1ⁿ}` is not regular](not-is-regular-zero-one.md)
-- [Letter Words](letter-words.md)
-- [Bit Words](bit-words.md)
-- [Letter Set](letter-set.md)
-- [Bit Set](bit-set.md)
-- [Is Regular reg Lang top](is-regular-reg-lang-top.md)
-- [If `u ∉ L`, `regLang L` is not regular](not-is-regular-reg-lang.md)
-- [Is Regular reg Lang iff](is-regular-reg-lang-iff.md)
+- [Words over $T$ in the reduction alphabet](letter-words.md)
+- [Bit words](bit-words.md)
+- [One-letter words over $T$](letter-set.md)
+- [Single-bit words](bit-set.md)
+- [The reduction language of a universal language is regular](is-regular-reg-lang-top.md)
+- [Non-universality makes the reduction language non-regular](not-is-regular-reg-lang.md)
+- [Regularity of the reduction language characterises universality](is-regular-reg-lang-iff.md)
 
 ## The grammar
 
 - [Shift Sym](shift-sym.md)
 - [Shift Rule](shift-rule.md)
-- [Fixed Rules](fixed-rules.md)
-- [Reg Grammar](reg-grammar.md)
+- [The auxiliary productions of the regularity grammar](fixed-rules.md)
+- [Grammar of the reduction from universality to regularity](reg-grammar.md)
 - [Reg Val](reg-val.md)
-- [Mem eval Form shift](mem-eval-form-shift.md)
-- [Every production of `regGrammar g` is sound for `regVal g`](is-valuation-reg-val.md)
+- [Shifted right-hand sides denote images of words of $g$](mem-eval-form-shift.md)
+- [Every production of the regularity grammar is sound for its intended languages](is-valuation-reg-val.md)
 
 ## Completeness: the words of `regLang L(g)` are generated
 
-- [Every production of `regGrammar g` is sound for `regVal g`](mem-language-from-of-mem-rules.md)
-- [Mem eval Form shift of](mem-eval-form-shift-of.md)
-- [Shift mem](shift-mem.md)
-- [The language of `regGrammar g` is `regLang L(g)`](language-reg-grammar.md)
+- [Every production of the regularity grammar is sound for its intended languages](mem-language-from-of-mem-rules.md)
+- [Shifted right-hand sides generate the images of words](mem-eval-form-shift-of.md)
+- [Shifted derivations in the regularity grammar](shift-mem.md)
+- [The language of the regularity grammar](language-reg-grammar.md)
 
 ## The reduction
 
-- [A grammar generates every word iff `regGrammar g` generates a regular language](univ-iff-is-regular.md)
+- [A grammar is universal iff its regularity grammar generates a regular language](univ-iff-is-regular.md)
 - [Universality many-one reduces to regularity of context-free languages](many-one-reducible-univ-is-regular.md)
 - [Regularity of context-free languages is undecidable](exists-not-tm2-decidable-is-regular.md)

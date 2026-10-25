@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.init_run
 ---
 
-# Init run
+# Stack contents of the lookup machine
 
-The six stacks, by name. -/
+**Stack contents of the lookup machine.** For lists of symbols $t$, $b$, $s$, $a$, $c$, $v$,
+the assignment of contents to the six stacks of the lookup machine that gives $T$ the list $t$,
+$B$ the list $b$, $S$ the list $s$, $A$ the list $a$, $C$ the list $c$ and $V$ the list $v$. -/
 def stk (t b s a c v : List Sym) : ∀ _ : K, List Sym
   | .T => t
   | .B => b
@@ -90,11 +92,11 @@ theorem liveVal_val (n : List Bool) (b : Bool) (post : List Ent) (q : List Bool)
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Stk](stk.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stacks of the lookup machine](k.md)
+- [Labels of the lookup machine](lab.md)
+- [The lookup program](prog.md)
+- [Stack contents of the lookup machine](stk.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on

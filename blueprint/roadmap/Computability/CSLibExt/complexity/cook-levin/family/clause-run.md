@@ -36,7 +36,7 @@ and $H$, and $C$ is the step bound for one whole clause of $L$ for $T$ and $H$.
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
 - [Prog](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

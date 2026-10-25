@@ -5,10 +5,14 @@ statement: formalized
 lean: DFA.hopcroftLoop
 ---
 
-# Hopcroft Loop
+# Hopcroft's refinement loop
 
-Hopcroft's refinement loop, for at most `k` rounds: pop a splitter, refine, repeat until the
-waiting list is empty.
+**Hopcroft's refinement loop.** Let $M$ be a DFA. Given a round budget $k$, a partition $P$
+of the states of $M$ (a list of blocks) and a waiting list $W$ of splitters $(C, a)$, each a block
+$C$ with a letter $a$, the loop returns the pair $(P, W)$ unchanged if $k = 0$ or $W$ is empty.
+Otherwise it removes the first splitter $(C, a)$ from $W$, replaces $P$ by the partition after the
+splitter $(C, a)$ and the remaining waiting list by the waiting list after the splitter $(C, a)$,
+and continues with budget $k - 1$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Round P](round-p.md)
-- [Round W](round-w.md)
+- [One refinement round of the partition](round-p.md)
+- [One update of the waiting list](round-w.md)
 
 ## Sources
 

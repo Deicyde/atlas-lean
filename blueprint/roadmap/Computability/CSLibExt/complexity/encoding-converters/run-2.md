@@ -11,8 +11,8 @@ Exact `n`-step runs of this converter.
 
 ## Depends on
 
-- [BLab](blab.md)
-- [BStk](bstk.md)
+- [Labels of the bit-list converters](blab.md)
+- [Stacks of the bit-list converters](bstk.md)
 
 ## Proof depends on
 

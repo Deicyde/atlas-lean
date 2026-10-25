@@ -16,7 +16,7 @@ productions is copied to each mentioned nonterminal that reaches it.
 
 ## Proof depends on
 
-- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
 - [Nt List](nt-list.md)
 - [Unit Reach](unit-reach.md)
 - [Unit Target](unit-target.md)

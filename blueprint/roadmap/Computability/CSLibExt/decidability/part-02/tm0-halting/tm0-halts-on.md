@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.TM0HaltsOn
 ---
 
-# TM0 Halts On
+# Halting of a single-tape machine
 
-`TM0HaltsOn M l`: the single-tape machine `M` halts when started on the input word `l`.
+**Halting of a single-tape machine.** A single-tape Turing machine $M$ halts on an input word
+$l$ when its run, started in its start state with $l$ on the tape, reaches a halting
+configuration.
 
 ## Depends on
 

@@ -21,8 +21,8 @@ $t$ is among the states that the ε-NFA denoted by $N$ reaches on $w$ from its s
 
 ## Proof depends on
 
-- [Correctness of the search](../../../decidability/part-02/regular/mem-reach-n-iff.md)
-- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Correctness of the bounded reachability search](../../../decidability/part-02/regular/mem-reach-n-iff.md)
+- [Bounded reachability search on lists of states](../../../decidability/part-02/regular/reach-n.md)
 - [ε-move relation](eps-rel.md)
 - [ε-successors of a state](eps-next.md)
 - [The states reached on a word are closed under ε-moves](eval-eps-rel.md)

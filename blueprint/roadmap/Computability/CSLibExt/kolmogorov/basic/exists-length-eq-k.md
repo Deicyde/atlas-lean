@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Kolmogorov.exists_length_eq_K
 ---
 
-# Exists length eq K
+# Shortest descriptions exist
 
-A shortest description.
+**Shortest descriptions exist.** For every binary string $x$ there is a binary string $p$
+whose length is the Kolmogorov complexity $K(x)$ and such that $U(p)$ is defined and equals $x$,
+where $U$ is the universal description method.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ A shortest description.
 
 ## Proof depends on
 
-- [Describe](describe.md)
-- [Run](run.md)
+- [Description of a code running on an input](describe.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

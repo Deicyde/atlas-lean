@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Filter3.wl
 ---
 
-# Wl
+# Walking label for a literal count
 
-The walking label after `n` literals of the current clause.
+**Walking label for a literal count.** The walking label after $n$ literals of the current
+clause: $w_0$, $w_1$, $w_2$ for $n = 0, 1, 2$, and $w_3$ for every $n \ge 3$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the 3SAT clause-length filter](lab.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitSS.valOf
 ---
 
-# Val Of
+# Reading a pair bit or vertex mark
 
-Read a symbol as a pair bit or vertex mark.
+**Reading a pair bit or vertex mark.** The partial map from token symbols to bits that
+sends the symbol $\mathrm{val}(b)$ to $b$ and gives no value on every other symbol.
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

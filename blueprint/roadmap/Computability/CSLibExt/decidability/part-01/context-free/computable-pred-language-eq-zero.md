@@ -8,7 +8,10 @@ lean: Cslib.Language.EncodedCFG.computablePred_language_eq_zero
 
 # Emptiness of context-free grammars is computable
 
-**Emptiness of context-free grammars is computable.**
+**Emptiness of context-free grammars is computable.** Let $T$ be an alphabet with decidable
+equality and a primitive recursive encoding into the natural numbers. The predicate on encoded
+context-free grammars $g$ over $T$ that holds exactly when the language of $g$ is empty is a
+computable predicate.
 
 ## Depends on
 
@@ -18,12 +21,12 @@ lean: Cslib.Language.EncodedCFG.computablePred_language_eq_zero
 
 ## Proof depends on
 
-- [Mem B](../primrec-list/mem-b.md)
-- [Gen Step](gen-step.md)
-- [Generating](generating.md)
-- [The emptiness test](is-empty-b.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [One round of the generating-nonterminal computation](gen-step.md)
+- [Generating nonterminals](generating.md)
+- [The emptiness test for context-free grammars](is-empty-b.md)
 - [Correctness of the emptiness test](is-empty-b-iff.md)
-- [Rule Ok](rule-ok.md)
+- [Acceptable productions](rule-ok.md)
 
 ## Sources
 

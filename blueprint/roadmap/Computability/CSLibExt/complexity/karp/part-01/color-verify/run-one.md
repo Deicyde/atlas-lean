@@ -6,16 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.run_one
 ---
 
-# Run one
+# One step of the 3-COLOR verifier
 
-A step whose label is known: some state and stacks follow.
+**One step of the 3-COLOR verifier.** Let $l$ and $l'$ be labels, $v$ an internal state and
+$S$ an assignment of stacks. If executing the verifier's statement at $l$ from state $v$ and
+stacks $S$ ends at label $l'$, then for some internal state $v'$ and stacks $S'$ the verifier
+goes in one step from label $l$ with state $v$ and stacks $S$ to label $l'$ with state $v'$ and
+stacks $S'$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [The 3-COLOR verifier machine](prog.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on

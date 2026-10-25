@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Decidability.Rewriting.exists_of_lift_append_eq
 ---
 
-# Exists of lift append eq
+# Comparing words of letters before a separator
 
-If `uX` equals `v#Y` and `u`, `v` are words of letters, then `u` is a prefix of `v`.
+**Comparing words of letters before a separator.** Let $u, v$ be words over $\alpha$, read as
+words of letters, and let $X, Y$ be words over the extended alphabet of $\alpha$. If
+$u X = v \star Y$, where $\star$ is the row separator, then there is a word $w$ over $\alpha$
+with $v = u w$ and $X = w \star Y$.
 
 ## Depends on
 
-- [Sym](../../part-01/pcp/sym.md)
-- [Star](../../part-01/pcp/star.md)
-- [Lift](lift.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
+- [The star symbol](../../part-01/pcp/star.md)
+- [Lifting a word to the extended alphabet](lift.md)
 
 ## Proof depends on
 
-- [Letter](../../part-01/pcp/letter.md)
-- [Letter ne star](letter-ne-star.md)
+- [The alphabet inside the extended alphabet](../../part-01/pcp/letter.md)
+- [The MPCP instance of a reachability instance](letter-ne-star.md)
 
 ## Sources
 

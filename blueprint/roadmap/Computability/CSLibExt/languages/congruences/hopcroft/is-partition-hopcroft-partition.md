@@ -6,26 +6,27 @@ proof: formalized
 lean: DFA.isPartition_hopcroftPartition
 ---
 
-# Is Partition hopcroft Partition
+# Hopcroft's final partition is a partition
 
-Hopcroft's final partition is a partition of the states into nonempty blocks.
+**Hopcroft's final partition is a partition.** For a DFA $M$, Hopcroft's final partition of
+$M$ is a partition of the states of $M$ into nonempty blocks.
 
 ## Depends on
 
-- [Is Partition](is-partition.md)
-- [Hopcroft Partition](hopcroft-partition.md)
+- [Partitions of the states](is-partition.md)
+- [Hopcroft's partition](hopcroft-partition.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Acc Block](acc-block.md)
-- [Init P](init-p.md)
-- [Init W](init-w.md)
-- [Inv init](inv-init.md)
-- [Rej Block](rej-block.md)
-- [Smaller](smaller.md)
-- [Hopcroft Loop](hopcroft-loop.md)
-- [Termination](hopcroft-loop-spec.md)
+- [Invariants of Hopcroft's loop](inv.md)
+- [Block of accepting states](acc-block.md)
+- [Hopcroft's initial partition](init-p.md)
+- [Hopcroft's initial waiting list](init-w.md)
+- [The invariants hold initially](inv-init.md)
+- [Rejecting states](rej-block.md)
+- [Smaller of two finite sets of states](smaller.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
+- [Termination of Hopcroft's loop](hopcroft-loop-spec.md)
 
 ## Sources
 

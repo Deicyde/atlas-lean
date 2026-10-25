@@ -21,7 +21,7 @@ The deletions of nullable nonterminals are those of `nullableDeletions`.
 
 ## Proof depends on
 
-- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
 - [The nullable nonterminals are computed](mem-nullable-iff.md)
 - [Nullable](../reduced/nullable.md)
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.Γ
 ---
 
-# Γ
+# Stack alphabets of the 3-coloring emitter
 
-Stack alphabets: the output stack holds bits, the others token symbols (counters hold
-`Sym.cl`).
+**Stack alphabets of the 3-coloring emitter.** The output stack has the booleans (bits) as
+its alphabet; every other stack has the token symbols as its alphabet.
+
+The counter stacks hold only the clause-end symbol, used as a unary unit.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the 3-coloring emitter](k.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

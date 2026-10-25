@@ -5,9 +5,11 @@ statement: formalized
 lean: DFA.Hopcroft.splitBlock
 ---
 
-# Split Block
+# Splitting a block by a set
 
-A block, split by `pre` if it meets both `pre` and its complement.
+**Splitting a block by a set.** For sets $P$ and $D$ of states, splitting $D$ by $P$ gives
+the two-element list $[D \cap P,\ D \setminus P]$ if both of these sets are nonempty, and the
+one-element list $[D]$ otherwise.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Splits](splits.md)
+- [A set of states split by another](splits.md)
 
 ## Sources
 

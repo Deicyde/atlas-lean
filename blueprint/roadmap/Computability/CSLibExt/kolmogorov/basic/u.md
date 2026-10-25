@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

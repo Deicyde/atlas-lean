@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.K
 ---
 
-# K
+# Stacks of the tokenize-then-emit machine
 
-Stacks: the tokenizer's (its own `T` stays unused) and the emitter's.
+**Stacks of the tokenize-then-emit machine.** The stacks of the tokenize-then-emit machine for
+an emitter $E$ are the disjoint union of the SAT tokenizer's stacks and $E$'s stacks.
+
+The copy of the tokenizer's own token stack $T$ stays unused: the tokenizer writes its tokens on
+$E$'s token stack.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ Stacks: the tokenizer's (its own `T` stays unused) and the emitter's.
 
 ## Proof depends on
 
-- [K](../../../sat-tokenizer/k.md)
+- [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 
 ## Sources
 

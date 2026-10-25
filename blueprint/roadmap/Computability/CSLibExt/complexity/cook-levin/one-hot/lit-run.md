@@ -26,7 +26,7 @@ slot, leave `P = q` and the scratch counters empty.
 - [Stages of the one-hot literal routine](ls.md)
 - [Empty scratch counters of the one-hot generator](rest.md)
 - [The one-hot generator](prog.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 

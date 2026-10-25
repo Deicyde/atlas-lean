@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.coord_committed_imp_all_voted_yes
 ---
 
-# Validity
+# Validity for the coordinator
 
-**Validity** (AC3) for the coordinator: if it commits, every participant
-voted yes (it is prepared or committed).
+**Validity for the coordinator.** In every reachable state of the two-phase commit protocol,
+if the coordinator has decided commit, then every participant voted yes, that is, every
+participant is prepared or committed.
+
+This is the coordinator form of condition AC3 of Bernstein, Hadzilacos and Goodman.
 
 ## Depends on
 
-- [Coord State](coord-state.md)
-- [Part State](part-state.md)
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Coordinator states](coord-state.md)
+- [Participant states in two-phase commit](part-state.md)
+- [Reachable states of two-phase commit](reachable.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Inv reachable](inv-reachable.md)
+- [Two-phase commit invariant](inv.md)
+- [The two-phase commit invariant holds in reachable states](inv-reachable.md)
 
 ## Sources
 

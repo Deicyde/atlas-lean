@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.cout_an
 ---
 
-# Cout an
+# Outcome of the HAMPATH verifier's vertex-range comparison
 
-The comparison of `a` with `n`.
+**Outcome of the HAMPATH verifier's vertex-range comparison.** For all $m, n \in \mathbb{N}$,
+the label that the comparison of the current vertex with the vertex count picks on the ordering
+$\mathrm{compare}(m, n)$ of $m$ and $n$ is the head-or-edge dispatch label $\mathrm{hd}$ if
+$m < n$, and the reject label $\mathrm{no}$ otherwise.
 
 ## Depends on
 
-- [CI](ci.md)
-- [Lab](lab.md)
-- [Cout](cout.md)
+- [Counter comparisons of the HAMPATH verifier](ci.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
+- [Exit labels of the counter comparisons](cout.md)
 
 ## Sources
 

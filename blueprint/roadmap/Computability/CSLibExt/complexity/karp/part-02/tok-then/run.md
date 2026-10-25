@@ -8,43 +8,47 @@ lean: Cslib.Complexity.Karp.TokThen.run
 
 # Tokenize, then emit
 
-**Tokenize, then emit**.
+**Tokenize, then emit.** Let $E$ be an emitter with step bound $B$, and let $x$ be a bit
+string. The tokenize-then-emit machine for $E$, started at its start label with internal state
+false, with $x$ as bit symbols on the tokenizer's input stack and every other stack empty,
+reaches its exit label, with some internal state, in at most $2|x| + 3 + B(|x|)$ steps, and the
+output stack of $E$ then holds the output on $x$, written in the output symbols of $E$.
 
 ## Depends on
 
 - [Emitter](emitter.md)
-- [K](k.md)
-- [L](l.md)
-- [Fin](fin.md)
-- [Init](init.md)
+- [Stacks of the tokenize-then-emit machine](k.md)
+- [Labels of the tokenize-then-emit machine](l.md)
+- [Exit label of the tokenize-then-emit machine](fin.md)
+- [Initial stacks of the tokenize-then-emit machine](init.md)
 - [Out](out.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Γ](untitled.md)
-- [K](../../../sat-tokenizer/k.md)
+- [Program of the tokenize-then-emit machine](prog.md)
+- [Start label of the tokenize-then-emit machine](start.md)
+- [Alphabets of the tokenize-then-emit machine](untitled.md)
+- [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [E T](e-t.md)
-- [Emb E](emb-e.md)
-- [Emb T](emb-t.md)
-- [Tok S](tok-s.md)
-- [ΦE](e.md)
-- [ΦT](t.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Lab](../../../sat-tokenizer/lab.md)
-- [Prog](../../../sat-tokenizer/prog.md)
+- [Tokenizer stacks in the tokenize-then-emit machine](e-t.md)
+- [Embedding the emitter's stacks into tokenize-then-emit](emb-e.md)
+- [Embedding the tokenizer's stacks into tokenize-then-emit](emb-t.md)
+- [Initial stacks of the tokenizer](tok-s.md)
+- [Emitter labels in the tokenize-then-emit machine](e.md)
+- [Renaming the tokenizer's labels](t.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
+- [The tokenizer program](../../../sat-tokenizer/prog.md)
 - [Rejecting run](../../../sat-tokenizer/run-none.md)
-- [Accepting run](../../../sat-tokenizer/run-some.md)
-- [Start](../../../sat-tokenizer/start.md)
-- [Ents](../../../sat-verifier-spec/ents.md)
-- [Tbl Stk](../../../sat-verifier-spec/tbl-stk.md)
-- [Toks](../../../sat-verifier-spec/toks.md)
-- [Toks length le](../../../sat-verifier-spec/toks-length-le.md)
-- [Decode CNF](../../../../cook-levin/decode-cnf.md)
-- [Decode CNF eq some iff](../../../../cook-levin/decode-cnf-eq-some-iff.md)
-- [Encode CNF](../../../../cook-levin/encode-cnf.md)
+- [Accepting run of the SAT tokenizer](../../../sat-tokenizer/run-some.md)
+- [Start label of the SAT tokenizer](../../../sat-tokenizer/start.md)
+- [Occurrence table of a formula and a witness](../../../sat-verifier-spec/ents.md)
+- [Table stack of an entry list](../../../sat-verifier-spec/tbl-stk.md)
+- [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
+- [Token count is bounded by the encoding length](../../../sat-verifier-spec/toks-length-le.md)
+- [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
+- [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
+- [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [Vars Of](../../../../sat-time-m/vars-of.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Agree](../../../../../MathlibExt/turing-machine/stack-embedding/agree.md)

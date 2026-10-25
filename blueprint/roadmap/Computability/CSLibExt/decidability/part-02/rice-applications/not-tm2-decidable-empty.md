@@ -8,12 +8,15 @@ lean: Cslib.Decidability.not_tm2Decidable_empty
 
 # Emptiness is undecidable
 
-**Emptiness is undecidable** (Rice: the identity is defined, the empty function is not).
+**Emptiness is undecidable.** The set $E$ of codes of partial recursive functions on
+$\mathbb{N}$ that are defined on no input is not decidable by multi-stack machines.
+
+By Rice's theorem: the identity function is defined, the empty function is not.
 
 ## Depends on
 
-- [Empty Code](empty-code.md)
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Codes with empty domain](empty-code.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 

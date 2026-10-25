@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.isPolyTime_check
 ---
 
-# Is Poly Time check
+# The dense certificate check runs in polynomial time
 
-The certificate check is polynomial-time computable in formal-math's sense.
+**The dense certificate check runs in polynomial time.** The map sending a pair $(w, y)$ of bit
+strings to the result of the certificate check on formula bits $w$ and assignment bits $y$ is
+polynomial-time computable, where pairs of bit strings carry their canonical bitstring encoding.
 
 ## Depends on
 
-- [Check](../dense-sat/check.md)
+- [Dense CNF-SAT certificate check](../dense-sat/check.md)
 - [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,10 +27,10 @@ The certificate check is polynomial-time computable in formal-math's sense.
 
 ## Proof depends on
 
-- [Computable](../pair-encoding-converter/computable.md)
-- [G](../dense-satverifier/g.md)
-- [Pair Encode](../dense-satverifier/pair-encode.md)
-- [Verifier](../dense-satverifier/verifier.md)
+- [Polynomial-time conversion to the verifier's pair encoding](../pair-encoding-converter/computable.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
+- [Polynomial-time verifier for dense CNF-SAT](../dense-satverifier/verifier.md)
 - [Tm2 Computable In Poly Time comp](../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 
 ## Sources

@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.vertexCoverDec_iff
 ---
 
-# VERTEX-COVER is verified by `kgCheck .cover`
+# VERTEX-COVER is verified by the clique verifier in cover mode
 
-**VERTEX-COVER is verified by `kgCheck .cover`**, with witnesses no longer than the
-input.
+**VERTEX-COVER is verified by the clique verifier in cover mode.** A bit string $x$ is in
+VERTEX-COVER if and only if there is a bit string $w$, no longer than $x$, such that the
+clique-family verifier in vertex-cover mode accepts $x$ with witness $w$.
 
 ## Depends on
 
-- [Mode](mode.md)
-- [Kg Check](kg-check.md)
-- [Vertex Cover Dec](../clique/vertex-cover-dec.md)
+- [Modes of the clique verifier](mode.md)
+- [The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER](kg-check.md)
+- [The VERTEX-COVER problem](../clique/vertex-cover-dec.md)
 
 ## Proof depends on
 
-- [Cover iff](cover-iff.md)
-- [Kg Dec iff exists](kg-dec-iff-exists.md)
-- [Pairs](../clique/pairs.md)
+- [Vertex covers of the graph given by pair bits](cover-iff.md)
+- [Verifying a graph language defined by a vertex-set condition](kg-dec-iff-exists.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

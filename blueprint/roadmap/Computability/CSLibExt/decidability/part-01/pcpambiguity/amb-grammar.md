@@ -5,19 +5,25 @@ statement: formalized
 lean: Cslib.Decidability.Grammar.ambGrammar
 ---
 
-# Amb Grammar
+# The ambiguity grammar of a PCP instance
 
-The grammar `S → A | B`, `A → tᵢ A i | tᵢ i`, `B → bᵢ B i | bᵢ i`, with `S, A, B = 0, 1, 2`.
+**The ambiguity grammar of a PCP instance.** Let $P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$
+be a list of dominoes over an alphabet $\alpha$, with top words $t_i$ and bottom words $b_i$. The
+ambiguity grammar of $P$ is the encoded context-free grammar over the terminals
+$\alpha \sqcup \mathbb{N}$ (letters and indices) with nonterminals $S = 0$, $A = 1$, $B = 2$, start
+symbol $S$, and the productions $S \to A$ and $S \to B$ together with, for every $i < m$, the
+productions $A \to t_i\, A\, i$, $A \to t_i\, i$, $B \to b_i\, B\, i$ and $B \to b_i\, i$, in which
+the index $i$ is a terminal.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 
-- [Nt Sym](../cfgundecidable/nt-sym.md)
-- [Side Rules](../cfgundecidable/side-rules.md)
+- [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
+- [The productions of a side grammar](../cfgundecidable/side-rules.md)
 
 ## Sources
 

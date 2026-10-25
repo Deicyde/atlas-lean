@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.stk
 ---
 
-# Stk
+# Stack contents of the lookup machine
 
-The six stacks, by name.
+**Stack contents of the lookup machine.** For lists of symbols $t$, $b$, $s$, $a$, $c$, $v$,
+the assignment of contents to the six stacks of the lookup machine that gives $T$ the list $t$,
+$B$ the list $b$, $S$ the list $s$, $A$ the list $a$, $C$ the list $c$ and $V$ the list $v$.
 
 ## Depends on
 
-- [K](k.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stacks of the lookup machine](k.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ lean: Cslib.Turing.Universal.Diag.chkFrom_iff
 
 ## Proof depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Cell](../clocked/cell.md)
 - [Read Unary Length eq some iff cell](../diagonalization/read-unary-length-eq-some-iff-cell.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)

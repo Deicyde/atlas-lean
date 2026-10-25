@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.Mode.free
 ---
 
-# Free
+# Vertices that settle their pairs alone
 
-Vertex `i` alone settles every pair `{i, j}`: `i` unchosen (clique, independent set) or
-chosen (cover).
+**Vertices that settle their pairs alone.** For a mode and the Boolean saying whether a
+vertex $i$ is chosen, the result is true when $i$ alone settles the condition on every pair
+$\{i, j\}$: in the clique and independent-set modes it is true exactly when $i$ is not chosen,
+and in the vertex-cover mode exactly when $i$ is chosen.
 
 ## Depends on
 
-- [Mode](mode.md)
+- [Modes of the clique verifier](mode.md)
 
 ## Sources
 

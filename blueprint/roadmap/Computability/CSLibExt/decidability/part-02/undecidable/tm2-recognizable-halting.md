@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.tm2Recognizable_halting
 ---
 
-# Tm2 Recognizable halting
+# The halting problem is recognizable by multi-stack machines
 
-The halting set is recognizable.
+**The halting problem is recognizable by multi-stack machines.** For every
+$n \in \mathbb{N}$, the set of partial recursive codes whose program halts on input $n$ is
+recognizable by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../../part-01/basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable iff re Pred](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

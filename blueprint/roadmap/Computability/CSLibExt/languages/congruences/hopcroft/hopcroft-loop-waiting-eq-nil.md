@@ -6,24 +6,26 @@ proof: formalized
 lean: DFA.hopcroftLoop_waiting_eq_nil
 ---
 
-# The waiting list is exhausted
+# Hopcroft's waiting list is exhausted
 
-**The waiting list is exhausted** within `|Σ| (|Q| + 1)` rounds.
+**Hopcroft's waiting list is exhausted.** Let $M$ be a DFA with finite state set $Q$ over a
+finite alphabet $\Sigma$. Hopcroft's loop, run from the initial partition and the initial waiting
+list with a budget of $|\Sigma| \cdot (|Q| + 1)$ rounds, ends with an empty waiting list.
 
 ## Depends on
 
-- [Init P](init-p.md)
-- [Init W](init-w.md)
-- [Hopcroft Loop](hopcroft-loop.md)
+- [Hopcroft's initial partition](init-p.md)
+- [Hopcroft's initial waiting list](init-w.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Acc Block](acc-block.md)
-- [Inv init](inv-init.md)
-- [Rej Block](rej-block.md)
-- [Smaller](smaller.md)
-- [Termination](hopcroft-loop-spec.md)
+- [Invariants of Hopcroft's loop](inv.md)
+- [Block of accepting states](acc-block.md)
+- [The invariants hold initially](inv-init.md)
+- [Rejecting states](rej-block.md)
+- [Smaller of two finite sets of states](smaller.md)
+- [Termination of Hopcroft's loop](hopcroft-loop-spec.md)
 
 ## Sources
 

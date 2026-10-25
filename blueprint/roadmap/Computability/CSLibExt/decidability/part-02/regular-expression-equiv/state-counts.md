@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.stateCounts
 ---
 
-# State Counts
+# Thompson state counts of a node list
 
-The Thompson state counts of all nodes, in one left-to-right pass.
+**Thompson state counts of a node list.** For a list $l$ of regular-expression nodes, the
+list of Thompson state counts of $l$ is computed in one left-to-right pass: starting from the
+empty list, each node $n$ of $l$ in turn appends the count of $n$ computed from the list of
+counts built so far.
 
 ## Depends on
 
-- [Regex Node](../regular-expression/regex-node.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Proof depends on
 
-- [Step States](step-states.md)
+- [One step of the Thompson state count](step-states.md)
 
 ## Sources
 

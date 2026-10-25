@@ -13,8 +13,8 @@ decision problem in NP has a polynomial-time many-one reduction to dense CNF-SAT
 
 ## Depends on
 
-- [Dense Sat Dec](../../dense-satin-np/dense-sat-dec.md)
-- [Poly Many One Red](../../../cook-levin/poly-many-one-red.md)
+- [Dense CNF-SAT as a decision problem](../../dense-satin-np/dense-sat-dec.md)
+- [Polynomial-time many-one reduction](../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../MathlibExt/complexity/np.md)

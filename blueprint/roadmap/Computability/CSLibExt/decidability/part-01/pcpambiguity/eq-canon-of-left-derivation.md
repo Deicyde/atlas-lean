@@ -6,27 +6,35 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.eq_canon_of_leftDerivation
 ---
 
-# The leftmost derivation from `pre A suf` is determined by its word
+# Leftmost derivations from $A$ and $B$ follow an index sequence
 
-**The leftmost derivation from `pre A suf` is determined by its word.**
+**Leftmost derivations from $A$ and $B$ follow an index sequence.** Let
+$P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, let $A$, $B$ be the
+nonterminals of the ambiguity grammar of $P$ for its top and bottom words, and let $u$, $v$ be
+words of terminals. Every leftmost derivation of a word $w$ from the sentential form $u\,A\,v$ is
+the canonical rule sequence from $A$ for the words $t_i$ along some nonempty sequence
+$i_1, \dots, i_n$ of indices less than $m$, and
+$w = u\, t_{i_1} \cdots t_{i_n}\, i_n \cdots i_1\, v$. Likewise, every leftmost derivation of $w$
+from $u\,B\,v$ is the canonical rule sequence from $B$ for the words $b_i$ along such a sequence,
+and $w = u\, b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1\, v$.
 
 ## Depends on
 
-- [Amb Grammar](amb-grammar.md)
+- [The ambiguity grammar of a PCP instance](amb-grammar.md)
 - [Canon](canon.md)
-- [Side Word](../cfgundecidable/side-word.md)
-- [Domino](../pcp/domino.md)
+- [The side word of an index sequence](../cfgundecidable/side-word.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Proof depends on
 
-- [Cases of mem amb Grammar of input](cases-of-mem-amb-grammar-of-input.md)
-- [Cont Rule](../cfgundecidable/cont-rule.md)
-- [Domino](../cfgundecidable/domino.md)
-- [Flat](../cfgundecidable/flat.md)
-- [Letter Sym](../cfgundecidable/letter-sym.md)
-- [Term Rule](../cfgundecidable/term-rule.md)
+- [The productions of $A$ and $B$ in the ambiguity grammar](cases-of-mem-amb-grammar-of-input.md)
+- [The continuation production](../cfgundecidable/cont-rule.md)
+- [The $i$-th domino of a list](../cfgundecidable/domino.md)
+- [The letter part of an index sequence](../cfgundecidable/flat.md)
+- [The encoded letter terminal](../cfgundecidable/letter-sym.md)
+- [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Eq of terminal](../../../languages/context-free/part-01/ambiguity/eq-of-terminal.md)

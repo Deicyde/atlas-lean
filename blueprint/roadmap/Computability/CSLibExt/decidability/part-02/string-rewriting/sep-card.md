@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.sepCard
 ---
 
-# Sep Card
+# The separator domino
 
-The row separator `(#, #)`.
+**The separator domino.** Over the extended alphabet, that is, an alphabet $\alpha$ together
+with a star $\star$ and an end marker $\diamond$, the separator domino has top and bottom both
+equal to the one-letter word $\star$; the star separates the rows of a derivation.
 
 ## Depends on
 
-- [Domino](../../part-01/pcp/domino.md)
-- [Sym](../../part-01/pcp/sym.md)
+- [Domino (Post correspondence problem)](../../part-01/pcp/domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
 
 ## Proof depends on
 
-- [Star](../../part-01/pcp/star.md)
+- [The star symbol](../../part-01/pcp/star.md)
 
 ## Sources
 

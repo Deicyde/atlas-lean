@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.dfaStep
 ---
 
-# Dfa Step
+# One round of the item search against a DFA
 
-One round: the items `(A, p, q)` for productions `A → rhs` and states `p` from which `rhs`
-yields a word taking `D` to `q`.
+**One round of the item search against a DFA.** For an encoded grammar $g$, an encoded DFA
+$D$ and a list $R$ of natural numbers (the items found so far), one round produces the list of the
+codes $\langle A, \langle p, q \rangle \rangle$, where $\langle \cdot, \cdot \rangle$ is the
+natural-number pairing, for every production $A \to \beta$ of $g$, every state $q$ of $D$ and
+every start state $p$ of $\beta$ for $q$ given $R$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ yields a word taking `D` to `q`.
 ## Proof depends on
 
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
-- [Dfa Starts](dfa-starts.md)
+- [Start states of a right-hand side in a DFA](dfa-starts.md)
 
 ## Sources
 

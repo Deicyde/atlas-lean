@@ -19,8 +19,8 @@ The productions of `unitElim` are those of `unitGrammar`.
 
 ## Proof depends on
 
-- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
 - [Decode Rule](../encoded/decode-rule.md)
 - [Decode Symbol](../encoded/decode-symbol.md)
 - [Encode Symbol](../encoded/encode-symbol.md)

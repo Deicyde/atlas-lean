@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.flags
 ---
 
-# Flags
+# Flags of all nodes
 
-The flags of all nodes, in one left-to-right pass.
+**Flags of all nodes.** For a list of nodes $n_0, \dots, n_{m-1}$, the flags
+$f_0, \dots, f_{m-1}$ are computed in one left-to-right pass: $f_k$ is the step flags of node
+$n_k$ computed from the flags $f_0, \dots, f_{k-1}$ of the nodes before it.
 
 ## Depends on
 
-- [Regex Node](regex-node.md)
+- [Regular-expression node](regex-node.md)
 
 ## Proof depends on
 
-- [Step Flags](step-flags.md)
+- [Flags of the next node](step-flags.md)
 
 ## Sources
 

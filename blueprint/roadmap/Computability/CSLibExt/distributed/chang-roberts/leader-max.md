@@ -13,13 +13,13 @@ other process's.
 
 ## Depends on
 
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Reachable states of Chang–Roberts](reachable.md)
+- [Chang–Roberts global states](state.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Inv reachable](inv-reachable.md)
+- [The Chang–Roberts invariant](inv.md)
+- [The Chang–Roberts invariant holds in every reachable state](inv-reachable.md)
 
 ## Sources
 

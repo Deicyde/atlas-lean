@@ -11,12 +11,12 @@ The solution check, as a Boolean.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Proof depends on
 
-- [Bottom](bottom.md)
-- [Top](top.md)
+- [Bottom word of a domino sequence](bottom.md)
+- [Top word of a sequence of dominoes](top.md)
 
 ## Sources
 

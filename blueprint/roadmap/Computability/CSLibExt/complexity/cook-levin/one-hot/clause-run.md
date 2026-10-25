@@ -35,7 +35,7 @@ variables whose literals are those of $c$ in the cell with base $B$, followed by
 - [Step budget for one one-hot clause](clause-b.md)
 - [Literals of a one-hot clause kind](clits.md)
 - [The one-hot generator](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

@@ -12,7 +12,7 @@ Where the machine goes after moving the pair bits: output (`flip`) or subtract (
 ## Depends on
 
 - [Lab](lab.md)
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 
 ## Sources
 

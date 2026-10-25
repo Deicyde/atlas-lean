@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.not_mem_listLang_of_mismatch
 ---
 
-# Not mem list Lang of mismatch
+# Mismatched words are not in the list language
 
-A mismatched word is not in its side's list language.
+**Mismatched words are not in the list language.** Let $P$ be a list of dominoes and $s$ a map
+from dominoes to words (in use, the top or the bottom). No word of the mismatch language of $s$
+for $P$ belongs to the list language of $s$ for $P$.
 
 ## Depends on
 
-- [List Lang](list-lang.md)
-- [Mismatch Lang](mismatch-lang.md)
-- [Domino](../pcp/domino.md)
+- [List language of a PCP instance](list-lang.md)
+- [The mismatch language](mismatch-lang.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 
 ## Proof depends on
 
-- [Bit Codes](bit-codes.md)
-- [Bit Codes injective](bit-codes-injective.md)
-- [Eq of map inl append map inr](../cfgundecidable/eq-of-map-inl-append-map-inr.md)
-- [Flat](../cfgundecidable/flat.md)
-- [List Word](list-word.md)
+- [Concatenated code of an index sequence](bit-codes.md)
+- [Concatenated index codes are uniquely decodable](bit-codes-injective.md)
+- [Unique splitting of letters followed by markers](../cfgundecidable/eq-of-map-inl-append-map-inr.md)
+- [The letter part of an index sequence](../cfgundecidable/flat.md)
+- [List word of an index sequence](list-word.md)
 
 ## Sources
 

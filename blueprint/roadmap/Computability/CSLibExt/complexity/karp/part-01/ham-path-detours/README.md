@@ -6,25 +6,25 @@ navigation: module
 
 ## The vertex numbering
 
-- [Hp T sep](hp-t-sep.md)
+- [Tops of distinct diamonds are at least $3m + 2$ apart](hp-t-sep.md)
 
 ## The arcs
 
-- [Mem ham Edges](mem-ham-edges.md)
-- [Ham Edges cases](ham-edges-cases.md)
-- [Ham Edges to hp R](ham-edges-to-hp-r.md)
-- [Ham Edges from hp R](ham-edges-from-hp-r.md)
-- [Ham Edges to clause](ham-edges-to-clause.md)
-- [Ham Edges from clause](ham-edges-from-clause.md)
+- [Arcs of the Hamiltonian path construction](mem-ham-edges.md)
+- [Classification of the arcs of Sipser's graph](ham-edges-cases.md)
+- [In-neighbours of a row vertex in Sipser's graph](ham-edges-to-hp-r.md)
+- [Out-neighbours of a row vertex in Sipser's graph](ham-edges-from-hp-r.md)
+- [In-neighbours of a clause vertex in Sipser's graph](ham-edges-to-clause.md)
+- [Out-neighbours of a clause vertex in Sipser's graph](ham-edges-from-clause.md)
 
 ## Neighbours along a duplicate-free list
 
-- [Mem of is Ham Path](mem-of-is-ham-path.md)
+- [A Hamiltonian path visits every vertex](mem-of-is-ham-path.md)
 
 ## Sipser's separator argument
 
-- [Ham Edges of infix](ham-edges-of-infix.md)
-- [Ham Path row End false](ham-path-row-end-false.md)
-- [Ham Path separator false](ham-path-separator-false.md)
-- [Ham Path pair false](ham-path-pair-false.md)
-- [Detours Normal of is Ham Path](detours-normal-of-is-ham-path.md)
+- [Consecutive vertices of a Hamiltonian path of Sipser's graph form arcs](ham-edges-of-infix.md)
+- [A Hamiltonian path of Sipser's graph does not cross a diamond through one row end](ham-path-row-end-false.md)
+- [A separator is next to each of its row neighbours on a Hamiltonian path](ham-path-separator-false.md)
+- [A clause detour returns to its own pair (Sipser's separator argument)](ham-path-pair-false.md)
+- [Hamiltonian paths of Sipser's graph have normal detours](detours-normal-of-is-ham-path.md)

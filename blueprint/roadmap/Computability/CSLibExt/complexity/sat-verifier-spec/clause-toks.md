@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.clauseToks
 ---
 
-# Clause Toks
+# Tokens of a clause
 
-Tokens of a clause: its literals' tokens, then `cl`.
+**Tokens of a clause.** The tokens of a CNF clause are the tokens of its literals, in order,
+followed by the clause-end symbol.
 
 ## Depends on
 
-- [Sym](sym.md)
+- [Stack alphabet of the SAT verifier](sym.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Lit Toks](lit-toks.md)
+- [Tokens of a literal](lit-toks.md)
 
 ## Sources
 

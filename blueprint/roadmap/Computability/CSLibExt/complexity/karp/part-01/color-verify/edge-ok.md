@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColVerify.edgeOk
 ---
 
-# Edge Ok
+# Edge verdict
 
-The verdict on one edge `(u, v)` with vertex colors `cs`: both ends are vertices, and a
-non-loop's ends have different colors.
+**Edge verdict.** For a list $cs$ of color codes (pairs of bits), one per vertex, and
+$u, v \in \mathbb{N}$, the edge $(u, v)$ passes iff $u$ and $v$ are both less than the length of
+$cs$ and either $u = v$ or entries $u$ and $v$ of $cs$ differ.
 
 ## Depends on
 

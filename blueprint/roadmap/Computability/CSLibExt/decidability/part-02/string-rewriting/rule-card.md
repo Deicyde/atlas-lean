@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.ruleCard
 ---
 
-# Rule Card
+# The domino of a rewriting rule
 
-The domino `(l, r)` of a rule.
+**The domino of a rewriting rule.** For a rule $(l, r)$ over an alphabet $\alpha$, the domino
+of the rule has top $l$ and bottom $r$, read as words over the extended alphabet, that is, $\alpha$
+together with a star and an end marker.
 
 ## Depends on
 
-- [Domino](../../part-01/pcp/domino.md)
-- [Sym](../../part-01/pcp/sym.md)
-- [Rule](rule.md)
+- [Domino (Post correspondence problem)](../../part-01/pcp/domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
+- [Rewriting rules](rule.md)
 
 ## Proof depends on
 
-- [Lift](lift.md)
+- [Lifting a word to the extended alphabet](lift.md)
 
 ## Sources
 

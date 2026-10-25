@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.dX
 ---
 
-# D X
+# Reading a formula bit in the SAT host
 
-Read an `x` symbol of the input as a bit.
+**Reading a formula bit in the SAT host.** The input alphabet of the SAT host consists of
+the formula bits, the separator and the witness bits. This partial map sends a formula bit $b$
+to $b$ and is undefined on the separator and on witness bits.
 
 ## Depends on
 
-- [G](g.md)
+- [Input alphabet of the SAT verifier host](g.md)
 
 ## Sources
 

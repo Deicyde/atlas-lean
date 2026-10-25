@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Decidability.tm2HaltsOn_iff_eval_dom
 ---
 
-# Tm2 Halts On iff eval dom
+# Halting agrees with evaluation for multi-stack machines
 
-A bundled machine halts iff `TM2.eval` with its main label as default does.
+**Halting agrees with evaluation for multi-stack machines.** A multi-stack machine halts on a
+word $l$ over the alphabet of its input stack if and only if the evaluation of its transition
+function, started at its main label and initial internal state with $l$ on the input stack and
+all other stacks empty, is defined.
 
 ## Depends on
 

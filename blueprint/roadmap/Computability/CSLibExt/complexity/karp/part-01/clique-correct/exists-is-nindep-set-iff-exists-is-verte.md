@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.exists_isNIndepSet_iff_exists_isVertexCover
 ---
 
-# Exists is NIndep Set iff exists is Vertex Cover
+# Independent sets and vertex covers of complementary sizes
 
-`G` has an independent set of `k ≤ n` vertices iff it has a vertex cover of `n - k`.
+**Independent sets and vertex covers of complementary sizes.** Let $G$ be a simple graph whose
+vertices are $0, 1, \dots, n - 1$, and let $k \le n$. Then $G$ has an independent set of exactly
+$k$ vertices if and only if $G$ has a vertex cover of exactly $n - k$ vertices.
 
 ## Depends on
 

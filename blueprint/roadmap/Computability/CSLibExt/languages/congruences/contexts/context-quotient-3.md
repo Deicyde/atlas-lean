@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Language.IsRegular.contextQuotient
 ---
 
-# Context Quotient
+# Regular languages are closed under context quotients
 
-Regular languages are closed under fixed two-sided contexts.
+**Regular languages are closed under context quotients.** If $L$ is a regular language over
+an alphabet $A$, then for all words $u, v$ over $A$, the context quotient
+$u^{-1} L v^{-1} = \{x \mid uxv \in L\}$ is regular.
 
 ## Depends on
 
-- [Context Quotient](context-quotient.md)
+- [Context quotient](context-quotient.md)
 
 ## Proof depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Finite syntactic Monoid context Quotient](finite-syntactic-monoid-context-quotient.md)
+- [Context quotients preserve finiteness of the syntactic monoid](finite-syntactic-monoid-context-quotient.md)
 - [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources

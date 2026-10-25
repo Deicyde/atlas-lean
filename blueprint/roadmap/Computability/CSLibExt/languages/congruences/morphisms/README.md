@@ -4,13 +4,13 @@ navigation: module
 
 # Morphisms
 
-- [Alphabet Preimage](alphabet-preimage.md)
-- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
-- [Recognizes alphabet Preimage Morphism](recognizes-alphabet-preimage-morphism.md)
-- [Syntactic Rel alphabet Preimage of map](syntactic-rel-alphabet-preimage-of-map.md)
-- [Alphabet Preimage Morphism ker le](alphabet-preimage-morphism-ker-le.md)
-- [Alphabet Preimage To Syntactic](alphabet-preimage-to-syntactic.md)
-- [Finite syntactic Monoid alphabet Preimage](finite-syntactic-monoid-alphabet-preimag.md)
-- [Alphabet Preimage](alphabet-preimage-2.md)
-- [Is Regular alphabet Preimage equiv iff](is-regular-alphabet-preimage-equiv-iff.md)
-- [Finite syntactic Monoid alphabet Preimage equiv iff](finite-syntactic-monoid-alphabet-preimag-2.md)
+- [Alphabet preimage](alphabet-preimage.md)
+- [Alphabet preimage morphism](alphabet-preimage-morphism.md)
+- [The alphabet preimage morphism recognizes the alphabet preimage](recognizes-alphabet-preimage-morphism.md)
+- [Syntactic equivalence pulls back along an alphabet map](syntactic-rel-alphabet-preimage-of-map.md)
+- [The alphabet preimage morphism refines the preimage's syntactic congruence](alphabet-preimage-morphism-ker-le.md)
+- [Division map for the syntactic monoid of an alphabet preimage](alphabet-preimage-to-syntactic.md)
+- [Alphabet preimages preserve finiteness of the syntactic monoid](finite-syntactic-monoid-alphabet-preimag.md)
+- [Regular languages are closed under alphabet preimages](alphabet-preimage-2.md)
+- [Renaming letters by a bijection preserves and reflects regularity](is-regular-alphabet-preimage-equiv-iff.md)
+- [Finiteness of the syntactic monoid is invariant under renaming letters](finite-syntactic-monoid-alphabet-preimag-2.md)

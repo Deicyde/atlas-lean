@@ -22,7 +22,7 @@ and the halting label $\mathrm{done}$ (unused) if $n > d$.
 
 - [Loop-body stages of the cell-shift generator](bd.md)
 - [Clause kinds of the cell-shift family](cl.md)
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.hamCheck_of_decodeW
 ---
 
-# Ham Check of decode W
+# Witnesses that do not decode are rejected
 
-A witness that does not decode is rejected.
+**Witnesses that do not decode are rejected.** If the witness decoder fails on a bit string
+$w$, then for every bit string $x$ the HAMPATH verifier rejects $(x, w)$, that is, returns false.
 
 ## Depends on
 
-- [Decode W](decode-w.md)
-- [Ham Check](ham-check.md)
+- [Witness decoder](decode-w.md)
+- [The HAMPATH verifier](ham-check.md)
 
 ## Proof depends on
 
-- [Ham Ok](ham-ok.md)
-- [Decode P](../../../path/decode-p.md)
+- [The Hamiltonian path check](ham-ok.md)
+- [Decoding a PATH instance](../../../path/decode-p.md)
 
 ## Sources
 

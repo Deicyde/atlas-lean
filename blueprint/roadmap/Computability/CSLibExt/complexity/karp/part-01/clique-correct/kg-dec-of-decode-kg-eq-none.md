@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.Karp.kgDec_of_decodeKG_eq_none
 ---
 
-# Kg Dec of decode KG eq none
+# Unparsable input is rejected
 
-Input that does not parse as two unary numbers is rejected.
+**Unparsable input is rejected.** Let $P$ be any property of a triple $(n, k, G)$, where $n$ and
+$k$ are natural numbers and $G$ is a simple graph on the vertices $0, 1, \dots, n - 1$. A bit string
+that does not begin with two unary numbers (each a run of $1$s ended by a $0$) is rejected by the
+language of valid instances $(k, G)$ satisfying $P$.
 
 ## Depends on
 
-- [Decode KG](../clique/decode-kg.md)
-- [Kg Dec](../clique/kg-dec.md)
+- [Decoding a graph instance](../clique/decode-kg.md)
+- [Language of graph instances with a property](../clique/kg-dec.md)
 
 ## Proof depends on
 
-- [Encode KG](../clique/encode-kg.md)
-- [Pairs](../clique/pairs.md)
-- [To Graph](../clique/to-graph.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Encoding of a graph instance](../clique/encode-kg.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
+- [The graph encoded by pair bits](../clique/to-graph.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

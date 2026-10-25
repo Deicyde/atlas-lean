@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.edgesOk_of_some_some
 ---
 
-# Edges Ok of some some
+# Edge-loop verdict after one parsed edge
 
-A parsed edge, then the rest: the loop's verdict is the edge's and the rest's.
+**Edge-loop verdict after one parsed edge.** Let $cs$ be a list of color codes and $r$ a bit
+list. If $r$ begins with $u$ in unary ($u$ ones, then a zero) followed by the rest $r_1$, and
+$r_1$ begins with $v$ in unary followed by the rest $r_2$, then the edge-loop verdict on $r$ with
+vertex colors $cs$ holds iff the edge verdict for $(u, v)$ holds and the edge-loop verdict on
+$r_2$ holds.
 
 ## Depends on
 
-- [Edge Ok](edge-ok.md)
-- [Edges Ok](edges-ok.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Edge verdict](edge-ok.md)
+- [Edge-loop verdict](edges-ok.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Proof depends on
 
-- [Decode Es](../color/decode-es.md)
-- [Decode Es of some some](../color/decode-es-of-some-some.md)
+- [Edge-list decoder](../color/decode-es.md)
+- [Decoding one pair, then the rest](../color/decode-es-of-some-some.md)
 
 ## Sources
 

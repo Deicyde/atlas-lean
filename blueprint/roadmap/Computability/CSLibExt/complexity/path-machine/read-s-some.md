@@ -6,26 +6,34 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.readS_some
 ---
 
-# Read S some
+# Reading a unary number
 
-Reading a unary number `k`: `k + 1` steps, its bits on `d`, `k` pushes of `ps`.
+**Reading a unary number.** Let $d$ be a stack other than $X$, let $g$ encode bits as symbols
+of $d$, and let $ps$ be a list of stack–symbol pairs whose stacks are distinct and differ from $X$
+and $d$. Suppose the instruction of the marking machine at a label $\ell$ is the unary read off
+$X$ onto $d$ through $g$ that pushes $ps$ for each true bit, repeats at $\ell$ and continues at
+$\ell'$. If $X$ holds, as bit symbols, $k$ true bits, then a false bit, then a bit list $r$, then
+in exactly $k + 1$ steps the machine goes from $\ell$, with any flag, to $\ell'$; afterwards $X$
+holds $r$, $d$ has received $k$ copies of $g(\mathrm{true})$ and then $g(\mathrm{false})$ on top,
+each stack $q$ with a pair $(q, a)$ in $ps$ has received $k$ copies of $a$ on top, and every
+other stack is unchanged.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Stmt](stmt.md)
-- [Prog](prog.md)
-- [Read S](read-s.md)
-- [Γ](untitled.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Statements of the PATH marking machine](stmt.md)
+- [The marking machine for PATH](prog.md)
+- [The unary read instruction](read-s.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
 - [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Bit?](../sat-verifier-spec/bit.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 - [Push All](../../../MathlibExt/turing-machine/program/push-all.md)
 

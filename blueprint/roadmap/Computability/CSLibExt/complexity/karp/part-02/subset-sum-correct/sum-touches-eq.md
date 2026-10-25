@@ -12,8 +12,8 @@ The chosen vertices on pair `q` are its chosen endpoints if `q` is an edge, else
 
 ## Depends on
 
-- [Pairs](../../part-01/clique/pairs.md)
-- [Touches](../subset-sum/touches.md)
+- [Vertex pairs in encoding order](../../part-01/clique/pairs.md)
+- [Pairs touching a vertex](../subset-sum/touches.md)
 
 ## Proof depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.Letter
 ---
 
-# Letter
+# Alphabet of the reduction from universality to regularity
 
-The letters of the reduction: those of `T`, the separator `#` and two bits.
+**Alphabet of the reduction from universality to regularity.** For a type $T$, the alphabet
+$T \sqcup \{\#, 0, 1\}$ consists of the letters of $T$, a separator $\#$ and two bits $0$ and $1$,
+all distinct.
 
 ## Depends on
 

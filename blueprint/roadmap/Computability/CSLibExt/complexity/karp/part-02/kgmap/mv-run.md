@@ -6,24 +6,30 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGMap.mv_run
 ---
 
-# Mv run
+# Moving the pair bits onto stack $Y$
 
-Moving the pair bits: `X` is emptied onto `Y` as `Sym.val`s, reversed.
+**Moving the pair bits onto stack $Y$.** Fix a mode $m$ of the CLIQUE/VERTEX-COVER
+reduction machine, a list of bits $r$ and a list of symbols $y$. Start the machine for $m$ at the
+label for moving the pair bits, with any internal state and any stacks such that stack $X$ holds
+$r$ as the symbols $\mathrm{bit}(b)$ and stack $Y$ holds $y$. Then after exactly $|r| + 1$ steps
+it is at the label that follows moving the pair bits in mode $m$, with some internal state and
+stacks in which $Y$ holds the symbols $\mathrm{val}(b)$ for the bits $b$ of $r$, in reverse
+order, on top of $y$, and every stack other than $X$ and $Y$ is unchanged.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Next](next.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [The KG-map machine](prog.md)
+- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Is T](is-t.md)
+- [Test for the input bit true](is-t.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources

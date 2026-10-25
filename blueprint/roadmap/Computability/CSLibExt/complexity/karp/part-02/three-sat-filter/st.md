@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Filter3.st
 ---
 
-# St
+# Filter stacks from two lists
 
-The stacks, given the token stack and the side stack.
+**Filter stacks from two lists.** For lists of symbols $t$ and $u$, the stack contents that
+put $t$ on the token stack $T$ and $u$ on the side stack $U$.
 
 ## Depends on
 
-- [K](k.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3SAT clause-length filter](k.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

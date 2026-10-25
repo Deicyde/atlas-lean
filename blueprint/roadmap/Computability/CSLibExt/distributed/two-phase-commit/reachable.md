@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.Reachable
 ---
 
-# Reachable
+# Reachable states of two-phase commit
 
-The states reachable from the initial state, by upstream `LTS.CanReach`
-(a multistep transition `LTS.MTr` along some list of actions).
+**Reachable states of two-phase commit.** A global state $s$ is reachable when some finite
+sequence of protocol actions leads by protocol steps from the initial state, in which the
+coordinator is waiting and every participant is working, to $s$.
 
 ## Depends on
 
-- [State](state.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Action](action.md)
-- [Initial](initial.md)
-- [Lts](lts.md)
+- [Two-phase commit actions](action.md)
+- [Initial state of two-phase commit](initial.md)
+- [Two-phase commit as a transition system](lts.md)
 
 ## Sources
 

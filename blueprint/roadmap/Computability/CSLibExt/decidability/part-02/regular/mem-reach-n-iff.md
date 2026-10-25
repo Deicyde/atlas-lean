@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Automata.EncodedDFA.mem_reachN_iff
 ---
 
-# Correctness of the search
+# Correctness of the bounded reachability search
 
-**Correctness of the search**: when `B` contains `s₀` and is closed under `next`, the search
-finds exactly the states reachable from `s₀`.
+**Correctness of the bounded reachability search.** Let $s_0 \in \mathbb{N}$, let
+$\mathrm{next}$ assign to every natural number a list of natural numbers, its successors, and let
+$B$ be a list of natural numbers that contains $s_0$ and is closed under successors: whenever $s$
+is in $B$ and $t$ is a successor of $s$, then $t$ is in $B$. Then a natural number $t$ is in the
+list computed by the reachability search from $s_0$ through $\mathrm{next}$ within $B$ if and
+only if $t$ is reachable from $s_0$ in zero or more successor steps.
 
 ## Depends on
 
-- [Reach N](reach-n.md)
+- [Bounded reachability search on lists of states](reach-n.md)
 
 ## Proof depends on
 
-- [Reach Round](reach-round.md)
-- [Dedup B](../../part-01/primrec-list/dedup-b.md)
-- [Iterate closed](../../part-01/primrec-list/iterate-closed.md)
-- [Mem B](../../part-01/primrec-list/mem-b.md)
+- [One round of the list reachability search](reach-round.md)
+- [Duplicate removal for lists of natural numbers](../../part-01/primrec-list/dedup-b.md)
+- [Bounded monotone rounds on lists close off](../../part-01/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

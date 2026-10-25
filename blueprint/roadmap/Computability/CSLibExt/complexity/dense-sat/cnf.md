@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.CNF
 ---
 
-# CNF
+# Dense CNF formula
 
-A CNF formula: the conjunction of its clauses.
+**Dense CNF formula.** A CNF formula is a finite list of dense clauses, read as the conjunction
+of its clauses.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Clause](clause.md)
+- [Dense clause](clause.md)
 
 ## Sources
 

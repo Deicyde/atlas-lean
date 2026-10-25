@@ -6,13 +6,17 @@ proof: formalized
 lean: Cslib.Decidability.tm2Decidable_iff_computablePred
 ---
 
-# Tm2 Decidable iff computable Pred
+# Multi-stack decidable predicates are exactly the computable predicates
 
-Decidability by a multi-stack machine is Mathlib's `ComputablePred`.
+**Multi-stack decidable predicates are exactly the computable predicates.** Let $\alpha$ be a
+primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
+primitive recursive). A predicate $p$ on $\alpha$ is decidable by a multi-stack machine if and
+only if it is computable, that is, $p$ is decidable and its Boolean characteristic function
+$\alpha \to \mathrm{Bool}$ is computable.
 
 ## Depends on
 
-- [TM2 Decidable](tm2-decidable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
 
 ## Proof depends on
 

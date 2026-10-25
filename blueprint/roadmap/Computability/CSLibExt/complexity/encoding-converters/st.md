@@ -5,9 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.ToCanonical.St
 ---
 
-# St
+# States of the converter to the canonical pair encoding
 
-The machine state: the last symbol popped (bits stored as `inl b`).
+**States of the converter to the canonical pair encoding.** A state of the converter is
+either empty or one symbol of the verifier's input alphabet, that is, a left-tagged bit, a
+right-tagged bit or the separator.
+
+The state holds the last symbol popped; bits popped from the stashes are stored as left-tagged
+bits.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [G](../dense-satverifier/g.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 
 ## Sources
 

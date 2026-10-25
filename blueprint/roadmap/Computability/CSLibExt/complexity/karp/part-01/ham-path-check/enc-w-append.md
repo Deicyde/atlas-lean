@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.encW_append
 ---
 
-# Enc W append
+# The witness encoding respects concatenation
 
-The bits of a concatenation of vertex lists.
+**The witness encoding respects concatenation.** For lists $p$ and $p'$ of natural numbers,
+the witness encoding of the concatenation of $p$ and $p'$ is the witness encoding of $p$ followed
+by the witness encoding of $p'$.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Sources
 

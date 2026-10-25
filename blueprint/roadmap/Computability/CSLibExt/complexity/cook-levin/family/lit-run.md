@@ -40,7 +40,7 @@ polarity $\mathrm{sgn}(j)$.
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Prog](prog.md)
 - [Polarity of a transition-clause literal](sgn.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 

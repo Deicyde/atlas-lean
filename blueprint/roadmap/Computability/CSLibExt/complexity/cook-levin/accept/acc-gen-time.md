@@ -32,17 +32,17 @@ the accept family of $E$ for $\mathit{acc}$ at $T$, $H$ followed by $o$.
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 - [The accept family](../situation/part-07/acc-family.md)
-- [Acode](../situation/part-07/acode.md)
-- [Layout](../situation/part-01/layout.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Accepting code](../situation/part-07/acode.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Polynomial time bound of the accept generator](acc-time.md)
-- [N](../situation/part-01/n.md)
+- [Number of situations](../situation/part-01/n.md)
 
 ## Sources
 

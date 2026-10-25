@@ -6,30 +6,33 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.tm2Decidable_mem_language
 ---
 
-# Sipser, Theorem 4.7
+# Membership for context-free grammars is decidable
 
-**Sipser, Theorem 4.7**: membership for context-free grammars (A_CFG) is decidable by a
-multi-stack machine.
+**Membership for context-free grammars is decidable.** For every alphabet $T$ with decidable
+equality and a primitive recursive encoding, the property of a pair $(g, w)$, where $g$ is an
+encoded context-free grammar over $T$ and $w$ is a word over $T$, that $w$ is in the language of
+$g$ is decidable by a multi-stack machine. This is Sipser, Theorem 4.7: the problem
+$A_{\mathrm{CFG}}$ is decidable.
 
 ## Depends on
 
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
-- [Computable Pred of primrec bool](../primrec-list/computable-pred-of-primrec-bool.md)
-- [Mem B](../primrec-list/mem-b.md)
-- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
-- [Found](found.md)
-- [Items](items.md)
-- [Membership test](mem-language-b.md)
+- [Predicates with a primitive recursive decision procedure are computable](../primrec-list/computable-pred-of-primrec-bool.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
+- [Items found by the membership procedure](found.md)
+- [Candidate items for membership](items.md)
+- [The membership test for context-free grammars](mem-language-b.md)
 - [Correctness of the membership test](mem-language-b-iff.md)
-- [Mem Step](mem-step.md)
-- [Starts](starts.md)
-- [Sym Fits](sym-fits.md)
+- [One round of the membership procedure](mem-step.md)
+- [Start positions of a right-hand side](starts.md)
+- [Fitting a symbol at a position](sym-fits.md)
 
 ## Sources
 

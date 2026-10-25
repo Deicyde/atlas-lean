@@ -6,18 +6,20 @@ proof: formalized
 lean: DFA.isEmptyB_iff
 ---
 
-# Emptiness of DFAs is decided by `isEmptyB`
+# The emptiness test decides emptiness of DFAs
 
-**Emptiness of DFAs is decided by `isEmptyB`.**
+**The emptiness test decides emptiness of DFAs.** Let $M$ be a DFA over a finite alphabet
+with finitely many states. The emptiness test applied to $M$ returns true if and only if the
+language accepted by $M$ is empty.
 
 ## Depends on
 
-- [Is Empty B](is-empty-b.md)
+- [Emptiness test for DFAs](is-empty-b.md)
 
 ## Proof depends on
 
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
-- [Reachable](reachable.md)
+- [Reachable states of an encoded DFA](reachable.md)
 
 ## Sources
 

@@ -12,24 +12,24 @@ lean: Cslib.Complexity.Karp.col3Dec_mem_NP
 
 ## Depends on
 
-- [Col3 Dec](../color/col3-dec.md)
+- [3-COLOR](../color/col3-dec.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
-- [Comp](../../../host/comp.md)
+- [Component machine](../../../host/comp.md)
 - [Verifier host, canonical form](../../../host/is-poly-time-verifier.md)
-- [K](../color-verify/k.md)
-- [Lab](../color-verify/lab.md)
-- [3-COLOR is verified by `colCheck`](../color-verify/col3-dec-iff.md)
-- [Col Check](../color-verify/col-check.md)
-- [Prog](../color-verify/prog.md)
-- [The verifier machine](../color-verify/run.md)
-- [Start](../color-verify/start.md)
-- [Col Verify Comp](col-verify-comp.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3-COLOR verifier](../color-verify/k.md)
+- [Labels of the 3-COLOR verifier](../color-verify/lab.md)
+- [3-COLOR is verified by the witness check](../color-verify/col3-dec-iff.md)
+- [The 3-COLOR verifier](../color-verify/col-check.md)
+- [The 3-COLOR verifier machine](../color-verify/prog.md)
+- [Correctness and time bound of the 3-coloring verifier machine](../color-verify/run.md)
+- [Start label of the 3-coloring verifier](../color-verify/start.md)
+- [The 3-COLOR verifier as a host component](col-verify-comp.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

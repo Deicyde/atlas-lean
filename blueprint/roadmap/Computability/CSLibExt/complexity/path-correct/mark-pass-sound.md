@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Path.markPass_sound
 ---
 
-# Mark Pass sound
+# Soundness of a pass
 
-Soundness of a pass: if `P` is closed under the listed arcs below `n` and holds at every mark,
-it holds at every mark after the pass.
+**Soundness of a pass.** Let $n \in \mathbb{N}$, let $P$ be a property of natural numbers and
+let $E$ be a list of pairs of natural numbers such that $P(u)$ implies $P(v)$ whenever
+$(u, v) \in E$, $u < n$ and $v < n$. If $m$ is a list of booleans such that $P(v)$ holds for every
+$v < |m|$ whose entry in $m$ is true, then $P(v)$ holds for every $v$ whose entry is true in the
+result of the marking pass of $E$ with bound $n$ on $m$.
 
 ## Depends on
 
-- [Mark Pass](../path/mark-pass.md)
+- [One marking pass](../path/mark-pass.md)
 
 ## Proof depends on
 
-- [Get D set true](get-d-set-true.md)
+- [Setting an entry of a boolean list to true](get-d-set-true.md)
 
 ## Sources
 

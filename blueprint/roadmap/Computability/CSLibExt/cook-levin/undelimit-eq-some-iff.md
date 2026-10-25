@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.CookLevin.undelimit_eq_some_iff
 ---
 
-# Undelimit eq some iff
+# Parsing a self-delimiting block
 
-Soundness of the canonical block parser: a successful parse exhibits
-the input as a delimited block followed by the unconsumed suffix.
+**Parsing a self-delimiting block.** For all lists of Booleans $u$, $p$ and $r$, parsing one
+self-delimiting block from the front of $u$ succeeds with payload $p$ and remainder $r$ if and
+only if $u$ is the self-delimiting block of $p$ followed by $r$.
 
 ## Depends on
 

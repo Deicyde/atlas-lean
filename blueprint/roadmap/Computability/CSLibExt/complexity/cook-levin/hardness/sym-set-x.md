@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [B2's `Γfin k`](../situation/part-02/sym-set.md)
+- [Pushable and input symbols of a stack](../situation/part-02/sym-set.md)
 
 ## Sources
 

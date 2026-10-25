@@ -8,7 +8,9 @@ lean: Cslib.Kolmogorov.K_append_le
 
 # Concatenation costs at most twice the first part
 
-**Concatenation costs at most twice the first part**: `K (x ++ y) ≤ 2 K x + K y + c`.
+**Concatenation costs at most twice the first part.** There is a natural number $c$ such that
+for all binary strings $x$ and $y$, the Kolmogorov complexity of their concatenation $xy$
+satisfies $K(xy) \le 2K(x) + K(y) + c$.
 
 ## Depends on
 
@@ -17,11 +19,11 @@ lean: Cslib.Kolmogorov.K_append_le
 ## Proof depends on
 
 - [The universal description method](u.md)
-- [Optimality](exists-k-le-of-partrec.md)
-- [Exists length eq K](exists-length-eq-k.md)
-- [Pair Describe](pair-describe.md)
-- [Pair U](pair-u.md)
-- [Partrec U](partrec-u.md)
+- [Optimality (the invariance theorem)](exists-k-le-of-partrec.md)
+- [Shortest descriptions exist](exists-length-eq-k.md)
+- [Pair description](pair-describe.md)
+- [Reading pair descriptions](pair-u.md)
+- [The universal description method is partial recursive](partrec-u.md)
 
 ## Sources
 

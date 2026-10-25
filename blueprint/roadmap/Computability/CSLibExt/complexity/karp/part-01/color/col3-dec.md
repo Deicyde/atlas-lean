@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Karp.col3Dec
 ---
 
-# Col3 Dec
+# 3-COLOR
 
-3-COLOR: encodings of 3-colorable graphs.
+**3-COLOR.** The decision problem 3-COLOR accepts a bit string $x$ exactly when there are a
+natural number $n$ and a list $es$ of pairs of natural numbers such that $x$ is the encoding of
+$n$ and $es$ ($n$ in unary, then each edge $(u, v)$ as $u$ and $v$ in unary), every edge
+$(u, v)$ in $es$ has $u < n$ and $v < n$, and the graph on $\{0, \dots, n - 1\}$ with edge list
+$es$ (symmetrized, loops dropped) is $3$-colorable.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ lean: Cslib.Complexity.Karp.col3Dec
 
 ## Proof depends on
 
-- [Edge Graph](edge-graph.md)
-- [Encode E](encode-e.md)
+- [Graph of an edge list](edge-graph.md)
+- [Bit-string encoding of a graph](encode-e.md)
 
 ## Sources
 

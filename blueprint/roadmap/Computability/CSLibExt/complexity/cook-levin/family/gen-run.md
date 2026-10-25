@@ -35,7 +35,7 @@ $T$, $H$ and $N$, followed by $o$.
 - [Time bound of the generator](gen-bound.md)
 - [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -53,8 +53,8 @@ $T$, $H$ and $N$, followed by $o$.
 - [Generator output after part of the time loop](out-after.md)
 - [Step bound for the transition-clause generator's precomputation](pre-b.md)
 - [One iteration of the time loop](time-body.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

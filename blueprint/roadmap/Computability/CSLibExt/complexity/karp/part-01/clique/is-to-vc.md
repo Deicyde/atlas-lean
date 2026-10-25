@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.isToVc
 ---
 
-# Is To Vc
+# Map from INDEPENDENT-SET to VERTEX-COVER instances
 
-INDEPENDENT-SET ≤ VERTEX-COVER on bit strings: `k` becomes `n - k`.
+**Map from INDEPENDENT-SET to VERTEX-COVER instances.** Writing $1$ for true and $0$ for
+false, the map sends a bit string $1^k\,0\,1^n\,0\,b$ with $k \le n$ to $1^{n-k}\,0\,1^n\,0\,b$.
+Every other bit string, namely one of this form with $k > n$ or one with fewer than two zeros,
+goes to the fixed no-instance $1\,0\,0$.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decode KG](decode-kg.md)
-- [Encode KG](encode-kg.md)
-- [No KG](no-kg.md)
+- [Decoding a graph instance](decode-kg.md)
+- [Encoding of a graph instance](encode-kg.md)
+- [Fixed no-instance](no-kg.md)
 
 ## Sources
 

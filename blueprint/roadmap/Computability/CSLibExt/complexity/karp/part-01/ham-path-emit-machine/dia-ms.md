@@ -5,22 +5,29 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.diaMS
 ---
 
-# Dia MS
+# The emitter state before the diamonds
 
-The state after phase A and `b0`, `b1`: tokens on `F`, distinct variables on `V`, `C = m`,
-`M = 3 m`, `P = m`.
+**The emitter state before the diamonds.** For a CNF formula $\varphi$ with $m$ clauses and an
+output list $o$, this is the quiescent state whose output stack is $o$, whose stack $F$ holds the
+tokens of $\varphi$ in reading order, whose stack $V$ is the variable stack of the distinct
+variables of $\varphi$ (each kept at its last occurrence), whose clause count and diamond top are
+both $m$, whose count of three times the clauses is $3m$, and all of whose other stacks are empty
+and other counters zero.
+
+It is the state that phase A, followed by setting the diamond top, reaches from the initial
+state.
 
 ## Depends on
 
-- [MS](ms.md)
+- [Quiescent states of the HAMPATH emitter](ms.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Vstk](vstk.md)
-- [Ham Vars](../ham-path/ham-vars.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Toks](../../../sat-verifier-spec/toks.md)
+- [Variable stack of the HAMPATH emitter](vstk.md)
+- [Distinct variables of a formula](../ham-path/ham-vars.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

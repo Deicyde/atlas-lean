@@ -5,23 +5,27 @@ statement: formalized
 lean: Cslib.Complexity.Host.rtm
 ---
 
-# Rtm
+# Reduction host machine
 
-The reduction host as a `FinTM2`: input `inp` (raw bits), output the component's `cO`.
+**Reduction host machine.** The reduction host as a finite multi-stack Turing machine: its
+stacks are the host stacks with the host alphabets for bit input, its labels are the host labels,
+its state is a bit starting at false, its program is the reduction host program started at the
+first phase-0 label, its input stack is the input stack (raw bits) and its output stack is the
+host's copy of the component's stack $c_O$.
 
 ## Depends on
 
-- [Comp](comp.md)
+- [Component machine](comp.md)
 
 ## Proof depends on
 
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [Equiv](equiv.md)
-- [HΓ](h.md)
-- [P0](p0.md)
-- [All Ks](all-ks.md)
-- [Rprog](rprog.md)
+- [Stacks of the generic host](hk.md)
+- [Labels of the generic host](hlab.md)
+- [Labels of the generic host as a sum type](equiv.md)
+- [Alphabets of the generic host](h.md)
+- [Phase-0 labels of the generic host](p0.md)
+- [The list of host stacks](all-ks.md)
+- [Reduction host program](rprog.md)
 
 ## Sources
 

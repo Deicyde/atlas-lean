@@ -4,9 +4,9 @@ navigation: module
 
 # Minimal
 
-- [Desc Length](desc-length.md)
-- [Minimal Code](minimal-code.md)
-- [Exists code dom singleton](exists-code-dom-singleton.md)
-- [Exists minimal Code dom](exists-minimal-code-dom.md)
+- [Description length of a code](desc-length.md)
+- [Minimal codes](minimal-code.md)
+- [Codes with singleton domain](exists-code-dom-singleton.md)
+- [Every language of a code has a minimal code](exists-minimal-code-dom.md)
 - [Minimal codes are unbounded](exists-minimal-code-gt.md)
-- [`MIN` is not recognizable](not-tm2-recognizable-minimal-code.md)
+- [Minimal codes are not recognizable](not-tm2-recognizable-minimal-code.md)

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.edgeOk_cons_succ
 ---
 
-# Edge Ok cons succ
+# Shifting the edge verdict past the first color
 
-An edge whose ends are both past the first color, seen from the second one.
+**Shifting the edge verdict past the first color.** For a color code $c$, a list $cs$ of color
+codes and $u, v \in \mathbb{N}$, the edge verdict for $(u + 1, v + 1)$ with vertex colors $c$
+followed by $cs$ equals the edge verdict for $(u, v)$ with vertex colors $cs$.
 
 ## Depends on
 
-- [Edge Ok](edge-ok.md)
+- [Edge verdict](edge-ok.md)
 
 ## Sources
 

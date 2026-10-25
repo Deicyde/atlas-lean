@@ -29,7 +29,7 @@ the literal slot, drain `Q`.
 - [K A](k-a.md)
 - [Row offset of a literal in a transition clause](k-b.md)
 - [Polarity of a transition-clause literal](sgn.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decr](../../../../MathlibExt/turing-machine/program/decr.md)

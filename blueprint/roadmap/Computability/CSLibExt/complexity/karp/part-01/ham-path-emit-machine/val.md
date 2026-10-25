@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.MS.val
 ---
 
-# Val
+# Counter values of a quiescent emitter state
 
-The value of a counter.
+**Counter values of a quiescent emitter state.** For a quiescent state $s$, the value of the
+counters $p$, $n$, $r$, $j$, $d$ is respectively the diamond top, the row end, the row vertex,
+the clause index and the detour vertex recorded in $s$.
 
 ## Depends on
 
-- [MS](ms.md)
-- [Src](src.md)
+- [Quiescent states of the HAMPATH emitter](ms.md)
+- [Counters read by copy sites](src.md)
 
 ## Sources
 

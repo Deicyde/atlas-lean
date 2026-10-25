@@ -23,7 +23,7 @@ $(t, i)$, where $V$ is the number of variables of $L$ for $T$ and $H$.
 - [Number of variables of the transition-clause formula](num-vars.md)
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 
 ## Sources
 

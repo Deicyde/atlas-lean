@@ -17,14 +17,14 @@ code $0$.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
 - [Effective alphabets with an adjoined accept symbol](sym-set-x.md)
-- [Push Sym](../situation/part-01/push-sym.md)
-- [Push FS](../situation/part-02/push-fs.md)
-- [B2's `Γfin k`](../situation/part-02/sym-set.md)
+- [Symbols a statement tree can push](../situation/part-01/push-sym.md)
+- [Finite set of pushable symbols](../situation/part-02/push-fs.md)
+- [Pushable and input symbols of a stack](../situation/part-02/sym-set.md)
 
 ## Sources
 

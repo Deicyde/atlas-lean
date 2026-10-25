@@ -23,7 +23,7 @@ chaining steps.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -32,10 +32,10 @@ chaining steps.
 - [Constant of the init generator's time bound](../init-family/init-c.md)
 - [Sorted certificate code list](../init-family/ycs.md)
 - [Constant of the shift-generator time bound](../shift/sh-c.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
-- [Cap H](../situation/part-05/cap-h.md)
-- [Depth](../situation/part-01/depth.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Stack cap](../situation/part-05/cap-h.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 
 ## Sources
 

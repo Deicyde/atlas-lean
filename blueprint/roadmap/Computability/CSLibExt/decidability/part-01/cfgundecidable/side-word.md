@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.Decidability.Grammar.sideWord
 ---
 
-# Side Word
+# The side word of an index sequence
 
-The word `w_{i₁} ⋯ w_{iₙ} iₙ ⋯ i₁` of an index sequence.
+**The side word of an index sequence.** Let $P = (d_0, \dots, d_{k-1})$ be a list of dominoes
+over $\alpha$, set $d_i = (\varepsilon, \varepsilon)$ for $i \ge k$, let $\sigma$ assign a word
+over $\alpha$ to each domino, and write $w_i = \sigma(d_i)$. The side word of a sequence
+$i_1, \dots, i_n$ of natural numbers is the word $w_{i_1} \cdots w_{i_n} \, i_n \cdots i_1$ over
+the letters of $\alpha$ and the index terminals $0, 1, 2, \dots$: the letters of
+$w_{i_1}, \dots, w_{i_n}$ followed by the indices in reverse order.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 
 ## Proof depends on
 
-- [Flat](flat.md)
+- [The letter part of an index sequence](flat.md)
 
 ## Sources
 

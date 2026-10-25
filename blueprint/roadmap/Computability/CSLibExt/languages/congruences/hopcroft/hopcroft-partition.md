@@ -5,9 +5,12 @@ statement: formalized
 lean: DFA.hopcroftPartition
 ---
 
-# Hopcroft Partition
+# Hopcroft's partition
 
-Hopcroft's final partition: at most `|Σ| (|Q| + 1)` rounds from `{F, Q \ F}`.
+**Hopcroft's partition.** Let $M$ be a DFA with finite state set $Q$ over a finite alphabet
+$\Sigma$. Hopcroft's partition of $M$ is the partition returned by Hopcroft's loop run from the
+initial partition and the initial waiting list with a budget of $|\Sigma| \cdot (|Q| + 1)$
+rounds.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Init P](init-p.md)
-- [Init W](init-w.md)
-- [Hopcroft Loop](hopcroft-loop.md)
+- [Hopcroft's initial partition](init-p.md)
+- [Hopcroft's initial waiting list](init-w.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
 
 ## Sources
 

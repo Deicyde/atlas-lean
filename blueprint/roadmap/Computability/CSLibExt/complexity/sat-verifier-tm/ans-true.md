@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.ans_true
 ---
 
-# Cook-Levin
+# Cook–Levin theorem
 
-**Cook-Levin**: `satDec` is NP-complete for formal-math's canonical `NP`; this is the
-statement of the former `theorem_wanted` `MetaMathlibExt.cook_levin_SAT_np_complete`. -/
+**Cook–Levin theorem.** CNF satisfiability is NP-complete: the decision problem accepting
+exactly the bit strings that encode a satisfiable CNF formula is in NP, and every decision
+problem in NP has a polynomial-time many-one reduction to it. -/
 theorem cook_levin_SAT_np_complete :
     satDec ∈ ComplexityTheory.NP ∧
       ∀ L : ComplexityTheory.DecisionProblem,
@@ -21,16 +22,16 @@ theorem cook_levin_SAT_np_complete :
 
 ## Depends on
 
-- [Is3](../karp/part-02/three-sat/is3.md)
-- [Ans](ans.md)
-- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Three-literal clause test](../karp/part-02/three-sat/is3.md)
+- [Answer of the SAT host](ans.md)
+- [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
 - [Sat Verifier](../../sat-time-m/sat-verifier.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Check Spec](../sat-verifier-spec/check-spec.md)
-- [Ents](../sat-verifier-spec/ents.md)
+- [Clause check against an occurrence table](../sat-verifier-spec/check-spec.md)
+- [Occurrence table of a formula and a witness](../sat-verifier-spec/ents.md)
 - [Sat Verifier ret eq](../sat-verifier-spec/sat-verifier-ret-eq.md)
 
 ## Sources

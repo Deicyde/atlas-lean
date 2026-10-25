@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Path.markPass_reachMarks
 ---
 
-# Mark Pass reach Marks
+# Repeated passes reach a fixpoint
 
-`n` passes reach a fixpoint: each pass that changes the marks adds one, `initMarks n s` has
-one mark and there are at most `n`.
+**Repeated passes reach a fixpoint.** Let $n, s \in \mathbb{N}$ with $s < n$ and let $E$ be a
+list of pairs of natural numbers. Let $r$ be the list obtained from the initial marks (only $s$
+marked among $0, \dots, n - 1$) by $n$ marking passes of $E$ with bound $n$. Then one more
+marking pass of $E$ with bound $n$ leaves $r$ unchanged.
+
+Each pass that changes the marks adds at least one mark, the initial marks contain one mark, and
+there are at most $n$ marks.
 
 ## Depends on
 
-- [Mark Pass](../path/mark-pass.md)
-- [Reach Marks](../path/reach-marks.md)
+- [One marking pass](../path/mark-pass.md)
+- [Reach marks](../path/reach-marks.md)
 
 ## Proof depends on
 
-- [Init Marks](../path/init-marks.md)
-- [Length iterate mark Pass](length-iterate-mark-pass.md)
-- [Mark Pass eq or count lt](mark-pass-eq-or-count-lt.md)
+- [Initial marks](../path/init-marks.md)
+- [Repeated marking passes preserve the length](length-iterate-mark-pass.md)
+- [A pass either changes nothing or adds a mark](mark-pass-eq-or-count-lt.md)
 
 ## Sources
 

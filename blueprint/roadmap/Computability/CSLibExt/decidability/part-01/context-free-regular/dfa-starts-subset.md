@@ -6,25 +6,21 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.dfaStarts_subset
 ---
 
-# The emptiness test
+# Start states of a right-hand side are states of the DFA
 
-**The emptiness test** for the intersection: no accepting state `f` has the item
-`(start, D.start, f)`. -/
-def interEmptyB (g : EncodedCFG T) (D : EncodedDFA T) : Bool :=
-  !(D.accept.any fun f => Decidability.memB D.states f &&
-    Decidability.memB (dfaFound g D) (Nat.pair g.start (Nat.pair D.start f)))
-
-/-! ## Stabilization
+**Start states of a right-hand side are states of the DFA.** Let $D$ be an encoded DFA, $R$ a
+list of natural numbers and $q$ one of the states of $D$. Then for every right-hand side $\beta$,
+every start state of $\beta$ for $q$ given $R$ is one of the states of $D$.
 
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
-- [Dfa Starts](dfa-starts.md)
+- [Start states of a right-hand side in a DFA](dfa-starts.md)
 
 ## Proof depends on
 
-- [Dfa Sym Fits](dfa-sym-fits.md)
+- [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
 
 ## Sources
 

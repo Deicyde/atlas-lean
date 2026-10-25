@@ -36,13 +36,13 @@ $(t, i, k, r)$.
 - [Counters of the cell-shift generator](ck.md)
 - [Labels of the cell-shift generator](gl.md)
 - [Labels of the shift generator](lab.md)
-- [ST](st.md)
-- [WF](wf.md)
+- [Setup and loop stages of a cell-shift block](st.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
 - [First cell variable of a block](kbv.md)
 - [Step budget of one overflow iteration of the cell-shift generator](o-body-b.md)
 - [Literals of an overflow clause](ov-lits.md)
 - [The cell-shift generator](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

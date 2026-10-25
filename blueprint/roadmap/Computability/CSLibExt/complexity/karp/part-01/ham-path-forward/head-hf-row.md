@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Complexity.Karp.head?_hfRow
 ---
 
-# Head? hf Row
+# A row starts at its left end
 
-The row starts at its left end.
+**A row starts at its left end.** For $m$ clauses, a diamond $i$ and any clause-to-diamond
+map $c$, the row of diamond $i$ read left to right, with the clauses sent to $i$ by $c$
+inserted, starts at its left end, the row vertex $T_i + 1$, where $T_i = m + i(3m+2)$ is the
+top of diamond $i$.
 
 ## Depends on
 
-- [Hf Row](hf-row.md)
-- [Hp R](../ham-path/hp-r.md)
+- [The row of a diamond with its clauses inserted](hf-row.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
 
 ## Sources
 

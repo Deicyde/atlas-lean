@@ -5,9 +5,9 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGMap.start
 ---
 
-# Start
+# Start label of the KG-map machine
 
-The start label.
+**Start label of the KG-map machine.** The KG-map machine starts at the label read $k$.
 
 ## Depends on
 

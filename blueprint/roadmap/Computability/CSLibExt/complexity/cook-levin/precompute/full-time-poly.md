@@ -32,10 +32,10 @@ machine's constants) bounds the step count on every raw input.
 - [The full program on the real generators](full-prog.md)
 - [Total length bound](m-of.md)
 - [Counters of the cell-shift generator](../shift/ck.md)
-- [Enc](../situation/part-01/enc.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -51,7 +51,7 @@ machine's constants) bounds the step count on every raw input.
 - [The composed machine, raw input to formula](full-run.md)
 - [Step count of the Horner rounds](horn-t.md)
 - [Constant of the shift-generator time bound](../shift/sh-c.md)
-- [Depth](../situation/part-01/depth.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

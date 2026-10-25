@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitSS.U
 ---
 
-# U
+# Counter unit of the subset-sum emitter
 
-The unit symbol of the counters.
+**Counter unit of the subset-sum emitter.** The unit symbol of the counters of the
+VERTEX-COVER to SUBSET-SUM machine is the token symbol $\mathrm{cl}$; a counter with value $n$
+holds exactly $n$ copies of it.
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

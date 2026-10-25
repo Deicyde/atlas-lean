@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.decodeEs_of_some_none
 ---
 
-# Decode Es of some none
+# Decoding fails on a dangling half-pair
 
-A dangling half-pair.
+**Decoding fails on a dangling half-pair.** If reading a unary length prefix from a bit string
+$x$ returns a number $u$ and the remaining suffix $r$, and reading a unary length prefix from $r$
+fails, then the edge-list decoder fails on $x$.
 
 ## Depends on
 
-- [Decode Es](decode-es.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Edge-list decoder](decode-es.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Proof depends on
 
-- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
+- [Reading a unary number shortens the input](length-lt-of-read-unary-length.md)
 
 ## Sources
 

@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Host.agree_emb
 ---
 
-# Agree emb
+# Agreement with the embedded component
 
-A host agrees with the component when its `comp k` stacks are the component's stacks.
+**Agreement with the embedded component.** Let $c$ be a component machine and $\alpha$ an
+input alphabet. For stack contents $S$ of $c$ and stack contents $T$ of the host over $\alpha$,
+$T$ agrees with $S$ under the embedding of the component's stacks into the host if and only if,
+for every stack $k$ of $c$, the host's copy of $k$ holds exactly $S(k)$.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HK](hk.md)
-- [HΓ](h.md)
-- [Emb](emb.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Alphabets of the generic host](h.md)
+- [The component's stacks inside a host](emb.md)
 - [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 
 ## Proof depends on

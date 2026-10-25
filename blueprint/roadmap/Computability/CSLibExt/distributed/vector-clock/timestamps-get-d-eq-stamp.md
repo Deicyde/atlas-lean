@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Distributed.VectorClock.timestamps_getD_eq_stamp
 ---
 
-# Timestamps get D eq stamp
+# Timestamps are stamps from the preceding state
 
-The timestamp of the event at position `j` is the stamp computed from the
-state before it.
+**Timestamps are stamps from the preceding state.** For every execution and every position
+$j$ of an event $e$ of it, the vector timestamp of $j$ equals the stamp of $e$ computed from the
+state of the vector clock algorithm after the first $j$ events of the execution.
 
 ## Depends on
 
 - [Event](../lamport-clock/event.md)
-- [Run](run.md)
-- [Stamp](stamp.md)
-- [Timestamps](timestamps.md)
+- [Running the vector clock algorithm](run.md)
+- [Vector clock stamp of an event](stamp.md)
+- [Vector timestamps of an execution](timestamps.md)
 
 ## Proof depends on
 
-- [Clock Step](clock-step.md)
+- [One step of the vector clock algorithm](clock-step.md)
 
 ## Sources
 

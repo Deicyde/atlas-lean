@@ -6,13 +6,16 @@ proof: formalized
 lean: DFA.step_mem_reachable
 ---
 
-# Step mem reachable
+# Reachable states are closed under transitions
 
-The reachable states are closed under transitions.
+**Reachable states are closed under transitions.** Let $M$ be a DFA over a finite alphabet whose
+set of states is finite and has decidable equality. If a state $s$ of $M$ is reachable from the
+start state, then for every letter $a$ the state to which $M$ moves from $s$ on $a$ is also
+reachable from the start state.
 
 ## Depends on
 
-- [Reachable](reachable.md)
+- [Reachable states of an encoded DFA](reachable.md)
 
 ## Proof depends on
 

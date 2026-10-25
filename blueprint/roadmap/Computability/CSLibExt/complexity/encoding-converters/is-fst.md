@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.ToCanonical.isFst
 ---
 
-# Is Fst
+# Left-tagged state test
 
-Is the state a left-tagged bit?
+**Left-tagged state test.** For a state $s$ of the pair-to-canonical converter (either empty
+or a symbol of the verifier alphabet), the test is true exactly when $s$ is a left-tagged bit
+$\mathrm{inl}\,b$ for some bit $b$, and false when $s$ is empty, the separator
+$\mathrm{inr}(\mathrm{none})$ or a right-tagged bit.
 
 ## Depends on
 
-- [St](st.md)
+- [States of the converter to the canonical pair encoding](st.md)
 
 ## Proof depends on
 
-- [G](../dense-satverifier/g.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 
 ## Sources
 

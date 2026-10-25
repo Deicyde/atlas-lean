@@ -48,7 +48,7 @@ $\mathrm{pos}$.
 - [Literals of a clause kind at given positions](clits.md)
 - [Constant offset of a literal in a block](csv.md)
 - [The cell-shift generator](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

@@ -8,25 +8,34 @@ lean: Cslib.Decidability.Grammar.eq_sideWord_of_derives
 
 # The analysis of derivations
 
-**The analysis of derivations.** A derivation from `pre S suf` to a word of terminals applies
-`S → wᵢ S i` for each index but the last and then `S → wᵢ i`.
+**The analysis of derivations.** Let $P$ be a list of dominoes, $\sigma$ a map assigning a word
+over $\alpha$ to each domino, and $G$ the context-free grammar of the side grammar of $P$ for
+$\sigma$, with start nonterminal $S$ and terminals $\alpha \oplus \mathbb{N}$ (letters and
+indices). Let $u, v, x$ be words over $\alpha \oplus \mathbb{N}$. If $G$ derives the terminal word
+$x$ from the sentential form $u\, S\, v$, then there is a nonempty sequence $i_1, \dots, i_n$ of
+indices, each less than the length of $P$, such that
+$x = u\, w_{i_1} \cdots w_{i_n}\, i_n \cdots i_1\, v$, where $w_i$ is $\sigma$ applied to the
+$i$-th domino of $P$.
+
+Such a derivation applies $S \to w_i\, S\, i$ for each index but the last and then
+$S \to w_i\, i$.
 
 ## Depends on
 
-- [Side Grammar](side-grammar.md)
-- [Side Word](side-word.md)
-- [Domino](../pcp/domino.md)
+- [The side grammar of a PCP instance](side-grammar.md)
+- [The side word of an index sequence](side-word.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
-- [Cont Rule](cont-rule.md)
-- [Domino](domino.md)
-- [Eq of derives terminal](eq-of-derives-terminal.md)
-- [Eq of terminal append nonterminal](eq-of-terminal-append-nonterminal.md)
-- [Flat](flat.md)
-- [Letter Sym](letter-sym.md)
-- [Term Rule](term-rule.md)
+- [The continuation production](cont-rule.md)
+- [The $i$-th domino of a list](domino.md)
+- [A terminal word derives only itself](eq-of-derives-terminal.md)
+- [Splitting a sentential form at its single nonterminal](eq-of-terminal-append-nonterminal.md)
+- [The letter part of an index sequence](flat.md)
+- [The encoded letter terminal](letter-sym.md)
+- [The terminating production of a side grammar](term-rule.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

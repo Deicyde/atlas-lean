@@ -15,21 +15,21 @@ or every pair condition holds (and `c` does).
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mode](mode.md)
-- [Free](free.md)
-- [Sat](sat.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Modes of the clique verifier](mode.md)
+- [Vertices that settle their pairs alone](free.md)
+- [The pair condition left to the later vertex](sat.md)
 - [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Stmt](stmt.md)
-- [Run one](run-one.md)
-- [Walk Z](walk-z.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Statements of the clique verifier](stmt.md)
+- [One step of a clique-verifier program to a known label](run-one.md)
+- [Rest of a walk step of the clique verifier](walk-z.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)

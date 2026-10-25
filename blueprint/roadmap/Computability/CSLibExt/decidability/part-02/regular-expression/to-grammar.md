@@ -5,21 +5,28 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.toGrammar
 ---
 
-# To Grammar
+# The grammar of an encoded regular expression
 
-The grammar of an encoded regular expression: one nonterminal per node, the root as start
-symbol.
+**The grammar of an encoded regular expression.** For an encoded regular expression $e$ with
+$n$ nodes, its grammar is the encoded context-free grammar with start nonterminal $n - 1$
+(truncated subtraction, so $0$ when $n = 0$), in which nonterminal $k$ stands for node $k$. Its
+productions are, for each node $k < n$: none if node $k$ is $0$; $k \to \varepsilon$ if it is
+$\varepsilon$; if it is the letter $a$, the production $k \to a$; if it is the sum of nodes $i$
+and $j$, the productions $k \to i$ (when $i < k$) and $k \to j$ (when $j < k$); if it is the
+product of nodes $i$ and $j$, the production $k \to i\,j$ (when $i < k$ and $j < k$); and if it
+is the star of node $i$, the productions $k \to \varepsilon$ and $k \to i\,k$ (when $i < k$).
+There are no other productions.
 
 ## Depends on
 
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Node](node.md)
-- [Node Rules](node-rules.md)
-- [Regex Node](regex-node.md)
+- [Node at an index](node.md)
+- [Productions of a node](node-rules.md)
+- [Regular-expression node](regex-node.md)
 
 ## Sources
 

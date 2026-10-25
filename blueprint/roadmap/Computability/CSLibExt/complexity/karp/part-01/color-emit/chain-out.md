@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.chainOut
 ---
 
-# Chain Out
+# Bits pushed by a sequence of copy sites of the 3-COLOR emitter
 
-The bits a run of sites pushes, the last site's on top.
+**Bits pushed by a sequence of copy sites of the 3-COLOR emitter.** For a quiescent state $m$
+of the 3-COLOR emitter and copy sites $j_1, \dots, j_k$, the bits of the sequence at $m$ are the
+bit lists at $m$ of $j_k, j_{k-1}, \dots, j_1$, concatenated in that order. Read top-first, the
+bits of the last site lie on top.
 
 ## Depends on
 
-- [MS](ms.md)
-- [Site](site.md)
+- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
 
 ## Proof depends on
 
-- [Atom](atom.md)
+- [Bit list of a copy site of the 3-COLOR emitter](atom.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.K
 ---
 
-# K
+# Stacks of the 3SAT emitter
 
-Stacks: tokens, output, the fresh counter, two scratch counters, the output clause count.
+**Stacks of the 3SAT emitter.** The 3SAT emitter machine has six stacks: the token stack
+$T$, the output stack $O$, the fresh counter $U$, two scratch counters $Z$ and $W$, and the
+output clause count $C$.
 
 ## Depends on
 

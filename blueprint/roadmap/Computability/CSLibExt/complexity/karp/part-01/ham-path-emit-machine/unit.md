@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.Src.unit
 ---
 
-# Unit
+# Unit symbol of an emitter counter
 
-The unit symbol of a counter.
+**Unit symbol of an emitter counter.** For every counter $s$ read by copy sites, the unit
+symbol of $s$ is the token symbol $\mathrm{cl}$, as a letter of the alphabet of the stack that
+holds $s$.
 
 ## Depends on
 
-- [Src](src.md)
-- [K](k-2.md)
-- [Γ](untitled.md)
+- [Counters read by copy sites](src.md)
+- [Stack of a HAMPATH copy-site counter](k-2.md)
+- [Stack alphabets of the HAMPATH emitter](untitled.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

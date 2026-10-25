@@ -6,22 +6,24 @@ proof: formalized
 lean: DFA.Hopcroft.rel_roundP_iff
 ---
 
-# Rel round P iff
+# Effect of one splitter on the common-block relation
 
-After the splitter `(C, a)`, two states share a block exactly when they shared one and agree
-on whether their `a`-successor is in `C`.
+**Effect of one splitter on the common-block relation.** Let $M$ be a DFA with transition
+function $\delta$, $P$ a list of blocks of states, $C$ a set of states and $a$ a letter. Two states
+$p$ and $q$ lie in a common block after the splitter $(C, a)$ is applied to $P$ if and only if
+they lie in a common block of $P$ and $\delta(p, a) \in C \iff \delta(q, a) \in C$.
 
 ## Depends on
 
-- [Rel](rel.md)
-- [Preimage](preimage.md)
-- [Round P](round-p.md)
+- [Lying in a common block](rel.md)
+- [Preimage of a set under a letter](preimage.md)
+- [One refinement round of the partition](round-p.md)
 
 ## Proof depends on
 
-- [Splits](splits.md)
-- [Side of mem split Block](side-of-mem-split-block.md)
-- [Split Block](split-block.md)
+- [A set of states split by another](splits.md)
+- [Pieces of a split block lie on one side](side-of-mem-split-block.md)
+- [Splitting a block by a set](split-block.md)
 
 ## Sources
 

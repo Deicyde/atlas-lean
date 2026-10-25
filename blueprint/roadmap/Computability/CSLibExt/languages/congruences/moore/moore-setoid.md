@@ -5,18 +5,20 @@ statement: formalized
 lean: DFA.mooreSetoid
 ---
 
-# Moore Setoid
+# Moore equivalence on reachable states
 
-Moore's relation on reachable states, as a setoid.
+**Moore equivalence on reachable states.** For a DFA $M$, two reachable states $p$ and $q$
+of $M$ are related when the pair $(p, q)$ lies in Moore's relation of $M$; this relation is an
+equivalence relation on the reachable states of $M$.
 
 ## Depends on
 
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 
-- [Correctness of the refinement](mem-moore-rel-iff.md)
-- [Moore Rel](moore-rel.md)
+- [Correctness of Moore's refinement](mem-moore-rel-iff.md)
+- [Moore's relation](moore-rel.md)
 
 ## Sources
 

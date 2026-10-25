@@ -29,7 +29,7 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Step bound for one clause (initial-row generator)](clause-b.md)
 - [Literals of a clause kind](clits.md)
 - [Prog](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

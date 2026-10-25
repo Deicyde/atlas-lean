@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.Step
 ---
 
-# Step
+# One-step rewriting
 
-One rewriting step of the system `R`: replace one occurrence of a left side by its right
-side.
+**One-step rewriting.** Let $R$ be a string rewriting system, given as a list of rules. A word
+$w$ rewrites to a word $w'$ in one step of $R$ when there are a rule $(l, r)$ of $R$ and words
+$u$ and $v$ with $w = u l v$ and $w' = u r v$.
 
 ## Depends on
 
-- [Rule](rule.md)
+- [Rewriting rules](rule.md)
 
 ## Sources
 

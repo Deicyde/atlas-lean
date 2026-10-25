@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.mem_occs
 ---
 
-# Mem occs
+# Independent sets and vertex covers of complementary sizes
 
-`G` has an independent set of `k ≤ n` vertices iff it has a vertex cover of `n - k`. -/
+**Independent sets and vertex covers of complementary sizes.** Let $G$ be a simple graph whose
+vertices are $0, 1, \dots, n - 1$, and let $k \le n$. Then $G$ has an independent set of exactly
+$k$ vertices if and only if $G$ has a vertex cover of exactly $n - k$ vertices. -/
 theorem exists_isNIndepSet_iff_exists_isVertexCover {n k : ℕ} (G : SimpleGraph (Fin n))
     (hk : k ≤ n) : (∃ s, G.IsNIndepSet k s) ↔
       ∃ s : Finset (Fin n), s.card = n - k ∧ G.IsVertexCover (s : Set (Fin n)) := by
@@ -47,7 +49,7 @@ theorem indSetDec_eq_vertexCoverDec_isToVc (x : List Bool) :
 
 ## Depends on
 
-- [Occs](../clique/occs.md)
+- [Literal occurrences of a CNF formula](../clique/occs.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 

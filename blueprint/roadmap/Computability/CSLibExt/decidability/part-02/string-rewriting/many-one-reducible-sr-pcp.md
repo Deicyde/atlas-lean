@@ -12,17 +12,17 @@ lean: Cslib.Decidability.Rewriting.manyOneReducible_sr_pcp
 
 ## Depends on
 
-- [Domino](../../part-01/pcp/domino.md)
-- [PCP](../../part-01/pcp/pcp.md)
-- [Sym](../../part-01/pcp/sym.md)
-- [Nonempty Rules](nonempty-rules.md)
-- [Rule](rule.md)
-- [SR](sr.md)
+- [Domino (Post correspondence problem)](../../part-01/pcp/domino.md)
+- [The Post correspondence problem](../../part-01/pcp/pcp.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
+- [Rewriting systems with nonempty sides](nonempty-rules.md)
+- [Rewriting rules](rule.md)
+- [The reachability problem for string rewriting](sr.md)
 
 ## Proof depends on
 
-- [MPCP](../../part-01/pcp/mpcp.md)
-- [Nonempty Words](../../part-01/pcp/nonempty-words.md)
+- [The modified Post correspondence problem](../../part-01/pcp/mpcp.md)
+- [Instances with nonempty words](../../part-01/pcp/nonempty-words.md)
 - [MPCP many-one reduces to PCP](../../part-01/pcp/many-one-reducible-mpcp-pcp.md)
 - [Reachability many-one reduces to MPCP](many-one-reducible-sr-mpcp.md)
 

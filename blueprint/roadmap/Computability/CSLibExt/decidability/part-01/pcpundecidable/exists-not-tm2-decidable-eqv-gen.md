@@ -8,24 +8,27 @@ lean: Cslib.Decidability.exists_not_tm2Decidable_eqvGen
 
 # Some finite Thue system has an undecidable word problem
 
-**Some finite Thue system has an undecidable word problem** (Post, Markov): over a finite
-alphabet, a fixed finite list of rules `R` whose equivalence `x ~ y` is undecidable.
+**Some finite Thue system has an undecidable word problem.** (Post, Markov) There are a
+finite alphabet $\alpha$, with a primitive recursive coding of its letters by natural numbers,
+and a finite list $R$ of rewriting rules over $\alpha$ such that no multi-stack Turing machine
+decides, for words $x$ and $y$ over $\alpha$, whether $x$ and $y$ are equivalent under the
+reflexive, symmetric and transitive closure of one-step rewriting by $R$.
 
 ## Depends on
 
-- [Rule](../../part-02/string-rewriting/rule.md)
-- [Step](../../part-02/string-rewriting/step.md)
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Rewriting rules](../../part-02/string-rewriting/rule.md)
+- [One-step rewriting](../../part-02/string-rewriting/step.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [TM0 Halts On](../../part-02/tm0-halting/tm0-halts-on.md)
-- [TMSym](tmsym.md)
-- [Single-tape halting many-one reduces to the word problem of the fixed Thue system `rules M`](many-one-reducible-tm0-halts-on-eqv-gen.md)
-- [Rules](rules.md)
+- [Halting of a single-tape machine](../../part-02/tm0-halting/tm0-halts-on.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
+- [Single-tape halting many-one reduces to the word problem of a fixed Thue system](many-one-reducible-tm0-halts-on-eqv-gen.md)
+- [The rewriting system simulating a Turing machine](rules.md)
 - [The halting problem for single-tape machines is undecidable](../../part-02/tm0-halting/exists-not-tm2-decidable-tm0-halts-on.md)
-- [Primcodable Of Fintype](../../part-02/tm0-halting/primcodable-of-fintype.md)
-- [Tm2 Decidable of many One Reducible](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
+- [Primitive recursive coding of a finite type](../../part-02/tm0-halting/primcodable-of-fintype.md)
+- [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 - [The restricted machine evaluates like `M`](../../../../MathlibExt/turing-machine/translation/tm0-restrict/eval-restrict.md)
 - [Restrict](../../../../MathlibExt/turing-machine/translation/tm0-restrict/restrict.md)
 

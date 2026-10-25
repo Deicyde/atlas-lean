@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.map_getD_range
 ---
 
-# Map get D range
+# Reading a list at every index
 
-Reading a list at every index in turn gives it back.
+**Reading a list at every index.** For every list $s$ of Booleans of length $\ell$,
+reading $s$ at the indices $0, 1, \dots, \ell - 1$ in turn (with default value false) gives
+back $s$.
 
 ## Depends on
 

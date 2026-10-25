@@ -11,11 +11,11 @@ A symbol of `g`, in `regGrammar g`: nonterminals are shifted by `4`, letters map
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 
-- [Tl](tl.md)
+- [Alphabet letters in the extended alphabet](tl.md)
 
 ## Sources
 

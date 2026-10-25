@@ -16,8 +16,8 @@ reduction to it.
 
 ## Depends on
 
-- [Poly Many One Red](../../../cook-levin/poly-many-one-red.md)
-- [Sat Dec](../../../cook-levin/sat-dec.md)
+- [Polynomial-time many-one reduction](../../../cook-levin/poly-many-one-red.md)
+- [SAT as a decision problem](../../../cook-levin/sat-dec.md)
 - [Sat Verifier](../../../sat-time-m/sat-verifier.md)
 - [Bitstring Encoding](../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../MathlibExt/complexity/bit-decode.md)

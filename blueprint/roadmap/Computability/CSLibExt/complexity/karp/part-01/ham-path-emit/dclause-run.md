@@ -6,43 +6,54 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.dclause_run
 ---
 
-# Dclause run
+# One clause of the detour walk
 
-One clause of the detour walk: its detours are pushed, its tokens go to `T`.
+**One clause of the detour walk.** Let $B, m, i, y, j \in \mathbb{N}$, let $C$ be a clause
+with token list $\mathrm{toks}(C)$, let $\rho$ and $\nu$ be lists of symbols and $b$ a state bit,
+and let $s$ be a quiescent state of the emitter such that $F$ holds $\mathrm{toks}(C)$ followed by
+$\rho$, $V$ holds the name of $y$, then a clause separator, then $\nu$, the scratch stack $X$ is
+empty, the counter $J$ equals $j$, the counter $D$ equals row vertex $3j + 1$ of diamond $i$ for
+$m$ clauses, each of the counters $P, N, R, J, D$ is at most $B$, and the binary encoding of $y$
+has length at most $B$. Then for some state bit $b'$ the emitter goes in at most
+$|\mathrm{toks}(C)|(3B + 6) + 16B + 26$ steps from the detour-walk label with both clause flags
+false, state bit $b$ and the stacks of $s$ back to the same label with state bit $b'$ and the
+stacks of $s$ changed as follows: $F$ becomes $\rho$, $\mathrm{toks}(C)$ reversed is prepended to
+$T$, $J$ becomes $j + 1$, $D$ increases by $3$, and the edge-bit list $q$ is extended by the bits
+of the detour arcs of clause $j$ (contents $C$) in diamond $i$ for variable $y$.
 
 ## Depends on
 
-- [K](../ham-path-emit-machine/k.md)
-- [Lab](../ham-path-emit-machine/lab.md)
-- [MS](../ham-path-emit-machine/ms.md)
-- [Stk](../ham-path-emit-machine/stk.md)
-- [Val](../ham-path-emit-machine/val.md)
-- [Src](../ham-path-emit-machine/src.md)
-- [Det E](../ham-path-emit-spec/det-e.md)
-- [Name](../ham-path-emit-machine/name.md)
-- [Prog](../ham-path-emit-machine/prog.md)
-- [Γ](../ham-path-emit-machine/untitled.md)
-- [Edge Bits](../color/edge-bits.md)
-- [Hp R](../ham-path/hp-r.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Clause Toks](../../../sat-verifier-spec/clause-toks.md)
+- [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
+- [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
+- [Quiescent states of the HAMPATH emitter](../ham-path-emit-machine/ms.md)
+- [Stacks of a quiescent emitter state](../ham-path-emit-machine/stk.md)
+- [Counter values of a quiescent emitter state](../ham-path-emit-machine/val.md)
+- [Counters read by copy sites](../ham-path-emit-machine/src.md)
+- [Clause detours in a diamond](../ham-path-emit-spec/det-e.md)
+- [Name of a variable in the HAMPATH emitter](../ham-path-emit-machine/name.md)
+- [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
+- [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Chain](../ham-path-emit-machine/chain.md)
-- [Site](../ham-path-emit-machine/site.md)
-- [Ext](../ham-path-emit-machine/ext.md)
-- [Src](../ham-path-emit-machine/src-2.md)
-- [Atom](../ham-path-emit-machine/atom.md)
-- [Chain Cost](../ham-path-emit-machine/chain-cost.md)
-- [Chain run](../ham-path-emit-machine/chain-run.md)
-- [Cl End](../ham-path-emit-machine/cl-end.md)
-- [Dlits run](dlits-run.md)
-- [Hp R succ](../ham-path-emit-spec/hp-r-succ.md)
-- [Edge Bits append](../ham-path-check/edge-bits-append.md)
-- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
+- [Copy sites chained in the HAMPATH emitter](../ham-path-emit-machine/chain.md)
+- [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
+- [Extra ones of a copy site](../ham-path-emit-machine/ext.md)
+- [Counter read by a copy site](../ham-path-emit-machine/src-2.md)
+- [Bits pushed by a copy site of the HAMPATH emitter](../ham-path-emit-machine/atom.md)
+- [Step count of a list of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-cost.md)
+- [Running a chain of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-run.md)
+- [End of a clause in the detour walk](../ham-path-emit-machine/cl-end.md)
+- [The literals of a clause in the detour walk](dlits-run.md)
+- [Removing duplicates by insertion](../ham-path-emit-spec/hp-r-succ.md)
+- [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)
+- [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)

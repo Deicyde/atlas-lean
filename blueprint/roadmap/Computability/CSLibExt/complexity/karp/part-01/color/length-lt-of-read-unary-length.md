@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.length_lt_of_readUnaryLength
 ---
 
-# Length lt of read Unary Length
+# Reading a unary number shortens the input
 
-A unary read strictly shortens the input.
+**Reading a unary number shortens the input.** If reading a unary length prefix from a bit
+string $x$ succeeds with value $u$ and unconsumed suffix $r$, then $r$ is strictly shorter
+than $x$.
 
 ## Depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

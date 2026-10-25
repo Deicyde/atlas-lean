@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.length_flat
 ---
 
-# Length flat
+# Length of a flattening
 
-Two bits per pair.
+**Length of a flattening.** For every list $cs$ of pairs of bits, the flattening of $cs$ has
+length $2|cs|$, two bits per pair.
 
 ## Depends on
 
-- [Flat](flat.md)
+- [Flattening pairs of bits](flat.md)
 
 ## Sources
 

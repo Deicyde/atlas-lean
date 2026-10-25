@@ -8,12 +8,13 @@ lean: Cslib.Complexity.Karp.cliqueDec_npComplete
 
 # CLIQUE is NP-complete
 
-**CLIQUE is NP-complete**.
+**CLIQUE is NP-complete.** CLIQUE lies in NP, and every decision problem in NP has a
+polynomial-time many-one reduction to CLIQUE.
 
 ## Depends on
 
-- [Clique Dec](../clique/clique-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [CLIQUE](../clique/clique-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)

@@ -6,11 +6,25 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.accept_complete
 ---
 
-# C5 (completeness), Sit level
+# Completeness of the five clause families
 
-**C5 (completeness), Sit level.** If some certificate `y` over `Ys` with `|x ++ y| ≤ m` makes
-the real run accept at row `T`, the exact one-hot image of that run (`runAsg`, on `numVars`
-variables) satisfies all five families at the corrected cap. No `|x| ≤ m` or `hacc` needed.
+**Completeness of the five clause families.** Let $E$ be an encoding of the machine $M$, let
+$x$, $y$ and $Y$ be words over the input alphabet such that every letter of $y$ occurs in $Y$, and
+let $m$ and $T$ be natural numbers with $|xy| \le m$, where $xy$ is the concatenation. Let $d$ be
+the window depth of $M$, let $H = m + (T + 1)d + 1$ be the stack cap, and let $a$ be the
+assignment of the real run's literals of $xy$ for $T$ steps at height $H$. Suppose that the
+configuration reached after $T$ steps of the idle-extended run of $M$ from the initial
+configuration on $xy$ is accepting for the output symbol $\mathrm{acc}$: it is halted, its state
+is the initial state of $M$, and $\mathrm{acc}$ is on top of its output stack. Then the length of
+$a$ is the number of variables of the transition-clause formula for $T$ and $H$, and $a$
+satisfies each of the following, all for $T$ steps at height $H$: the update family (the
+transition clause family with tables $\mathrm{la}$, $\mathrm{na}$, $\mathrm{wa}$ and $N$
+situations), the S-definition family (the transition clause family with tables $\mathrm{la}$,
+$\mathrm{sa}$, $\mathrm{wa}$ and $N$ situations), the cell-shift family with tables
+$\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ and $N$ situations, the init family for
+$x$, $Y$ and $m$, and the accept family for $\mathrm{acc}$.
+
+No bound $|x| \le m$ and no encodability of $\mathrm{acc}$ is needed in this direction.
 
 ## Depends on
 
@@ -18,33 +32,33 @@ variables) satisfies all five families at the corrected cap. No `|x| ≤ m` or `
 - [The transition clause family](../../family/family.md)
 - [The cell-shift clause family](../../shift/sh-family.md)
 - [Accepting configuration](../part-07/accepts.md)
-- [Enc](../part-01/enc.md)
-- [N](../part-01/n.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [Number of situations](../part-01/n.md)
 - [The accept family](../part-07/acc-family.md)
-- [Cn](../part-02/cn.md)
-- [The init family](../part-06/init-family.md)
-- [La](../part-01/la.md)
-- [Layout](../part-01/layout.md)
-- [Na](../part-01/na.md)
-- [Pl](../part-02/pl.md)
-- [Pu](../part-02/pu.md)
-- [The C5 assignment](run-asg.md)
-- [Sa](../part-01/sa.md)
-- [Wa](../part-01/wa.md)
-- [Cap H](../part-05/cap-h.md)
-- [Depth](../part-01/depth.md)
-- [Run I](../part-03/run-i.md)
-- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+- [Consumption table of a situation](../part-02/cn.md)
+- [The row-0 init family of an encoding](../part-06/init-family.md)
+- [Label/state code of a situation](../part-01/la.md)
+- [Clause layout of a machine encoding](../part-01/layout.md)
+- [Next label/state code of a situation](../part-01/na.md)
+- [Push-count table of a situation](../part-02/pl.md)
+- [Pushed-symbol table of a situation](../part-02/pu.md)
+- [The assignment of the real run's literals](run-asg.md)
+- [Position of a situation's variable](../part-01/sa.md)
+- [Window symbol code of a situation](../part-01/wa.md)
+- [Stack cap](../part-05/cap-h.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [Idle-extended run](../part-03/run-i.md)
+- [Satisfaction of a dense CNF formula](../../../dense-sat/cnf-sat.md)
 
 ## Proof depends on
 
 - [The real run's literals](run-lit.md)
-- [Accept family, completeness](acc-complete.md)
-- [Init family, completeness](init-complete.md)
-- [Sdef complete](sdef-complete.md)
-- [Shift / overflow / pushed fill, completeness](shift-complete.md)
-- [Upd complete](upd-complete.md)
-- [Constraint 1, as the C6 run lemmas consume it](../part-05/cap-h-height.md)
+- [Completeness of the accept family](acc-complete.md)
+- [Completeness of the init family](init-complete.md)
+- [The run assignment satisfies the situation-definition family](sdef-complete.md)
+- [The run assignment satisfies the cell-shift family](shift-complete.md)
+- [The run assignment satisfies the update family](upd-complete.md)
+- [Stack heights are at most the cap minus the window depth](../part-05/cap-h-height.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.starRules
 ---
 
-# Star Rules
+# Productions of a star node
 
-The productions of a `star` node: `k → ε`, and `k → i k` when the argument is an earlier
-node.
+**Productions of a star node.** For natural numbers $k$ and $i$, the productions of a star
+node $k$ with argument $i$ are $k \to \varepsilon$, followed by $k \to i\,k$ if $i < k$ (and
+nothing else). Nonterminals are node indices.
 
 ## Depends on
 

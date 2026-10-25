@@ -6,13 +6,15 @@ proof: formalized
 lean: DFA.Hopcroft.IsPartition.length_le
 ---
 
-# Length le
+# A partition has at most as many blocks as there are states
 
-A partition into nonempty blocks has at most `|Q|` blocks.
+**A partition has at most as many blocks as there are states.** If a list $P$ of sets of
+states is a partition into nonempty blocks, then the length of $P$ is at most the number $|Q|$ of
+states.
 
 ## Depends on
 
-- [Is Partition](is-partition.md)
+- [Partitions of the states](is-partition.md)
 
 ## Sources
 

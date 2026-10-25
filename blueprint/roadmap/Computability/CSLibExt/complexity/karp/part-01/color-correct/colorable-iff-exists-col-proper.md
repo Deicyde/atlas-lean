@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Complexity.Karp.colorable_iff_exists_colProper
 ---
 
-# Colorable iff exists col Proper
+# 3-colorability through colorings of the natural numbers
 
-On a loopless edge list with endpoints below `n`, 3-colorability of the graph is the
-existence of a proper coloring of the edges by a function on `ℕ`.
+**3-colorability through colorings of the natural numbers.** Let $n$ be a natural number and
+$E$ a list of pairs $(a, b)$ of natural numbers with $a < n$, $b < n$ and $a \ne b$. The graph on
+$\{0, \dots, n - 1\}$ with edge list $E$ is 3-colorable if and only if some map
+$c : \mathbb{N} \to \{0, 1, 2\}$ satisfies $c(a) \ne c(b)$ for every pair $(a, b)$ in $E$.
 
 ## Depends on
 
-- [Col Proper](col-proper.md)
-- [Edge Graph](../color/edge-graph.md)
+- [Proper 3-colorings of an edge list](col-proper.md)
+- [Graph of an edge list](../color/edge-graph.md)
 
 ## Sources
 

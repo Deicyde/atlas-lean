@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.eval_ne_of_distinguishable
 ---
 
-# Eval ne of distinguishable
+# Distinguishable words reach different DFA states
 
-Distinguishable words must reach different states in every DFA recognizing the language.
+**Distinguishable words reach different DFA states.** Let $L$ be a language and let $M$ be
+a DFA that accepts exactly $L$. If two words $x$ and $y$ are distinguishable by $L$, then the
+states that $M$ reaches from its start state on reading $x$ and on reading $y$ are different.
 
 ## Depends on
 
-- [Distinguishable](distinguishable.md)
+- [Distinguishable words](distinguishable.md)
 
 ## Proof depends on
 
 - [Nerode Rel](../nerode/nerode-rel.md)
 - [Nerode Rel iff](../nerode/nerode-rel-iff.md)
-- [Nerode Rel of eval eq](nerode-rel-of-eval-eq.md)
+- [Words reaching the same DFA state are Nerode equivalent](nerode-rel-of-eval-eq.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ symbol of $V$'s input alphabet that corresponds to the left-tagged bit $\mathrm{
 
 ## Depends on
 
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 
 ## Proof depends on
 

@@ -21,7 +21,7 @@ the DFA is state-separated.
 ## Proof depends on
 
 - [Reachable State](../minimality/reachable-state.md)
-- [State Equivalent](../minimality/state-equivalent.md)
+- [Equivalent states of a DFA](../minimality/state-equivalent.md)
 
 ## Sources
 

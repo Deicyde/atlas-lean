@@ -6,48 +6,48 @@ navigation: module
 
 ## Codes of renamed and fresh names
 
-- [Encode Nat fresh](encode-nat-fresh.md)
-- [Encode Lit fresh](encode-lit-fresh.md)
-- [Encode Lit ren Lit](encode-lit-ren-lit.md)
+- [Binary representation of a fresh name](encode-nat-fresh.md)
+- [Code of a fresh literal](encode-lit-fresh.md)
+- [Code of a renamed literal](encode-lit-ren-lit.md)
 
 ## The machine
 
-- [K](k.md)
-- [Γ](untitled.md)
-- [Lab](lab.md)
-- [Is Lit](is-lit.md)
-- [Pre](pre.md)
-- [Ret](ret.md)
-- [Prog](prog.md)
-- [Start](start.md)
+- [Stacks of the 3SAT emitter](k.md)
+- [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
+- [Control labels of the SAT-to-3SAT emitter](lab.md)
+- [Literal-marker test of the 3SAT emitter](is-lit.md)
+- [Entry label of a literal](pre.md)
+- [Return label of the fresh-literal subroutine](ret.md)
+- [The SAT-to-3SAT emitter machine](prog.md)
+- [Start label of the SAT-to-3SAT emitter](start.md)
 
 ## Machine states
 
-- [St](st.md)
+- [Stack contents of the SAT-to-3SAT emitter](st.md)
 
 ## Phases of a literal
 
-- [Fresh run](fresh-run.md)
-- [Cp run](cp-run.md)
-- [Name run](name-run.md)
-- [Head run](head-run.md)
-- [Tail run](tail-run.md)
+- [Fresh-literal subroutine of the 3SAT emitter](fresh-run.md)
+- [Name copy loop of the 3SAT emitter](cp-run.md)
+- [Copying a renamed name](name-run.md)
+- [The 3SAT emitter reads a literal marker](head-run.md)
+- [Closing an output clause in the SAT-to-3SAT emitter](tail-run.md)
 
 ## Output clauses
 
-- [Lit Cl](lit-cl.md)
-- [Nz](nz.md)
-- [Walk F](walk-f.md)
+- [Output clause of one literal](lit-cl.md)
+- [Fresh numbers used by a run of literals](nz.md)
+- [Output clauses of a walked list of literals](walk-f.md)
 - [Walk F chain](walk-f-chain.md)
 
 ## Literals, clauses, formulas
 
-- [Lit run](lit-run.md)
-- [Lits run](lits-run.md)
-- [Clause run](clause-run.md)
-- [Formula run](formula-run.md)
+- [One literal of the emitter](lit-run.md)
+- [The literals of a clause in the emitter](lits-run.md)
+- [The 3SAT emitter processes one clause](clause-run.md)
+- [The 3SAT emitter processes a whole formula](formula-run.md)
 
 ## The emitter
 
-- [Rep single](rep-single.md)
-- [The emitter](run.md)
+- [The 3SAT emitter processes a whole formula](rep-single.md)
+- [The SAT-to-3SAT emitter writes the encoded translation in quadratic time](run.md)

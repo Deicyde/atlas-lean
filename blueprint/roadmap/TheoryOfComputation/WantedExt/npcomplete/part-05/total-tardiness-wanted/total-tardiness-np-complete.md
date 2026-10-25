@@ -13,7 +13,7 @@ Intractability* (1979), TOTAL TARDINESS (1||sum T_j); J. Du and J. Y.-T. Leung,
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Total Tardiness Dec](total-tardiness-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

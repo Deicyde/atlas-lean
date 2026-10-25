@@ -11,7 +11,7 @@ The checking machine as a host component.
 
 ## Depends on
 
-- [Comp](../../../../complexity/host/comp.md)
+- [Component machine](../../../../complexity/host/comp.md)
 
 ## Proof depends on
 

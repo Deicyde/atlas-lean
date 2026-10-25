@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.encW_cons
 ---
 
-# Enc W cons
+# Witness encoding of a nonempty list
 
-The first vertex comes first.
+**Witness encoding of a nonempty list.** For a natural number $v$ and a list $p$ of natural
+numbers, the witness encoding of the list with first entry $v$ followed by $p$ is the bit string
+made of $v$ copies of true, then one false, then the witness encoding of $p$.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Sources
 

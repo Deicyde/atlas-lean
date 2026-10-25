@@ -12,7 +12,7 @@ The reversal component turns `x` into `x.reverse.tail` in `|x| + 2` steps.
 
 ## Depends on
 
-- [Comp](../../../../complexity/host/comp.md)
+- [Component machine](../../../../complexity/host/comp.md)
 - [K](k.md)
 - [L](l.md)
 - [Comp](comp.md)

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.hpT
 ---
 
-# Hp T
+# Tops of the diamonds
 
-The top of diamond `i` (the bottom of diamond `i - 1`), for `m` clauses.
+**Tops of the diamonds.** In the HAMPATH construction with $m$ clauses, the top of
+diamond $i$ is the vertex $m + i(3m + 2)$; it is also the bottom of diamond $i - 1$.
 
 ## Depends on
 

@@ -21,8 +21,8 @@ allowed before, between and after the letters.
 
 ## Proof depends on
 
-- [Correctness of the search](../../../decidability/part-02/regular/mem-reach-n-iff.md)
-- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Correctness of the bounded reachability search](../../../decidability/part-02/regular/mem-reach-n-iff.md)
+- [Bounded reachability search on lists of states](../../../decidability/part-02/regular/reach-n.md)
 - [ε-move relation](eps-rel.md)
 - [ε-closure of a list of states](closure.md)
 - [ε-successors of a state](eps-next.md)
@@ -30,7 +30,7 @@ allowed before, between and after the letters.
 - [The ε-closure is reachability along ε-moves](mem-closure-iff.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 - [One step of an encoded NFA on a list of states](step-list.md)
-- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

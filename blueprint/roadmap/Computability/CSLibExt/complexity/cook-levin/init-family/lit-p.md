@@ -34,7 +34,7 @@ the output and repeats.
 - [Literal signs of an init-family clause kind](sg.md)
 - [Labels of the initial-row generator](gl.md)
 - [Label after a literal routine (initial-row generator)](after.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decr](../../../../MathlibExt/turing-machine/program/decr.md)

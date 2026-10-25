@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.TM2Decidable.tm2Recognizable
 ---
 
-# Tm2 Recognizable
+# Decidable predicates are recognizable by multi-stack machines
 
-A decidable predicate is recognizable.
+**Decidable predicates are recognizable by multi-stack machines.** Let $\alpha$ be a
+primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
+primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-stack machine, then
+$p$ is recognizable by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Decidable](tm2-decidable.md)
-- [TM2 Recognizable](tm2-recognizable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
+- [Recognizability by multi-stack machines](tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](tm2-decidable-iff-computable-pred.md)
-- [Tm2 Recognizable iff re Pred](tm2-recognizable-iff-re-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](tm2-decidable-iff-computable-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.take_append_setHead
 ---
 
-# Take append set Head
+# Setting an entry by splitting the list
 
-Setting the mark of vertex `j`: keep `j` marks, set the next one (if any).
+**Setting an entry by splitting the list.** For every list $m$ of booleans and every natural
+number $j$, the first $j$ entries of $m$ followed by the remaining entries with their first entry
+set to true (the empty list stays empty) equal $m$ with entry $j$ set to true (which is $m$
+itself when $j \ge |m|$).
 
 ## Depends on
 
-- [Set Head](set-head.md)
+- [Setting the first mark](set-head.md)
 
 ## Sources
 

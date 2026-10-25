@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.set_replicate
 ---
 
-# Set replicate
+# Initial marks by setting one entry
 
-The initial marks: `n` cleared marks, then the mark of `s` set.
+**Initial marks by setting one entry.** For all natural numbers $n$ and $s$, setting entry $s$
+of the list of $n$ copies of false to true (which changes nothing when $s \ge n$) gives the
+initial marks of $n$ vertices from $s$: the list of length $n$ whose entry $i$ is true exactly
+when $i = s$.
 
 ## Depends on
 
-- [Init Marks](../path/init-marks.md)
+- [Initial marks](../path/init-marks.md)
 
 ## Sources
 

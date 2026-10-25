@@ -5,18 +5,21 @@ statement: formalized
 lean: DFA.mooreClass
 ---
 
-# Moore Class
+# Moore class of a reachable state
 
-The class of a reachable state.
+**Moore class of a reachable state.** Let $M$ be a DFA over a finite alphabet with finitely
+many states. For a reachable state $s$ of $M$, its Moore class is the equivalence class of $s$
+among the reachable states of $M$ under Moore's relation; it is a state of Moore's minimal
+automaton of $M$.
 
 ## Depends on
 
-- [Moore State](moore-state.md)
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [States of Moore's automaton](moore-state.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 
-- [Moore Setoid](moore-setoid.md)
+- [Moore equivalence on reachable states](moore-setoid.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The tokens of a walked occurrence on `D`: its polarity marker above its name bit
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

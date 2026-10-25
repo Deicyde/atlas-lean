@@ -4,55 +4,55 @@ navigation: module
 
 # Regular Expression
 
-- [Regex Node](regex-node.md)
-- [Encoded Regex](encoded-regex.md)
+- [Regular-expression node](regex-node.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Semantics
 
-- [Node](node.md)
-- [Regex At](regex-at.md)
-- [To Regex](to-regex.md)
-- [Regex At append](regex-at-append.md)
+- [Node at an index](node.md)
+- [Regular expression at a node](regex-at.md)
+- [The regular expression denoted by an encoding](to-regex.md)
+- [Appending nodes does not change earlier expressions](regex-at-append.md)
 
 ## Every regular expression has an encoding
 
-- [Flatten Aux](flatten-aux.md)
-- [Flatten](flatten.md)
+- [Postorder encoding after a prefix](flatten-aux.md)
+- [Encoding of a regular expression](flatten.md)
 - [Every regular expression has an encoding](to-regex-flatten.md)
 
 ## Infiniteness by a structural pass
 
-- [Zero Flags](zero-flags.md)
-- [Plus Flags](plus-flags.md)
-- [Comp Flags](comp-flags.md)
-- [Star Flags](star-flags.md)
-- [Step Flags](step-flags.md)
-- [Flags](flags.md)
-- [Flags OK](flags-ok.md)
-- [Flags OK flags](flags-ok-flags.md)
+- [Flags of the empty language](zero-flags.md)
+- [Flags of a sum](plus-flags.md)
+- [Flags of a concatenation](comp-flags.md)
+- [Flags of a star](star-flags.md)
+- [Flags of the next node](step-flags.md)
+- [Flags of all nodes](flags.md)
+- [Flags of a language](flags-ok.md)
+- [Correctness of the flag pass](flags-ok-flags.md)
 - [Infiniteness test](infinite-b.md)
 
 ## The grammar of an encoded regular expression
 
-- [Plus Rules](plus-rules.md)
-- [Comp Rules](comp-rules.md)
-- [Star Rules](star-rules.md)
-- [Node Rules](node-rules.md)
-- [To Grammar](to-grammar.md)
-- [Form Lang](form-lang.md)
-- [Mem matches of mem node Rules](mem-matches-of-mem-node-rules.md)
-- [Mem form Lang of yields](mem-form-lang-of-yields.md)
-- [Yields of mem matches](yields-of-mem-matches.md)
+- [Productions of a sum node](plus-rules.md)
+- [Productions of a concatenation node](comp-rules.md)
+- [Productions of a star node](star-rules.md)
+- [Productions of a node](node-rules.md)
+- [The grammar of an encoded regular expression](to-grammar.md)
+- [Language of a sentential form](form-lang.md)
+- [A production of a node only produces words of its language](mem-matches-of-mem-node-rules.md)
+- [Soundness of the grammar of a regular expression](mem-form-lang-of-yields.md)
+- [Completeness of the grammar of an encoded regular expression](yields-of-mem-matches.md)
 - [The grammar generates the language of the expression](language-to-grammar.md)
-- [Membership test](mem-b.md)
-- [Emptiness test](is-empty-b.md)
+- [Membership test for regular expressions](mem-b.md)
+- [Emptiness test for regular expressions](is-empty-b.md)
 - [Inclusion test](subset-b.md)
 
 ## Computability
 
-- [Node Equiv](node-equiv.md)
-- [Equiv List](equiv-list.md)
-- [Sipser, Theorem 4.3](tm2-decidable-mem-matches.md)
-- [Tm2 Decidable matches eq zero](tm2-decidable-matches-eq-zero.md)
-- [Tm2 Decidable matches infinite](tm2-decidable-matches-infinite.md)
-- [Tm2 Decidable matches le](tm2-decidable-matches-le.md)
+- [Regex nodes as a sum type](node-equiv.md)
+- [Encodings are lists of nodes](equiv-list.md)
+- [Membership for regular expressions is decidable](tm2-decidable-mem-matches.md)
+- [Emptiness of regular expressions is decidable](tm2-decidable-matches-eq-zero.md)
+- [Infiniteness of regular expressions is decidable](tm2-decidable-matches-infinite.md)
+- [Inclusion of a regular language in a DFA language is decidable](tm2-decidable-matches-le.md)

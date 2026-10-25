@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Language.nerodeRel_of_eval_eq
 ---
 
-# Nerode Rel of eval eq
+# Words reaching the same DFA state are Nerode equivalent
 
-If two words reach the same state of a DFA, then the accepted language cannot distinguish
-them.
+**Words reaching the same DFA state are Nerode equivalent.** Let $M$ be a DFA and let $L$ be
+the language it accepts. If $M$ reaches the same state from its start state on reading the words
+$x$ and $y$, then $x$ and $y$ are Nerode equivalent for $L$.
 
 ## Depends on
 

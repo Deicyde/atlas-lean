@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.start
 ---
 
-# Start
+# Start label of the clique verifier
 
-The start label.
+**Start label of the clique verifier.** The verifier for CLIQUE, INDEPENDENT-SET and
+VERTEX-COVER starts at the label that reads the instance's size parameter $k$ (the number of
+vertices to choose) in unary off the input stack $X$ onto the counter $C$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the CLIQUE verifier](lab.md)
 
 ## Sources
 

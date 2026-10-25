@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.uncode_code
 ---
 
-# Uncode code
+# Decoding a color code recovers the color
 
-`uncode` inverts `code`.
+**Decoding a color code recovers the color.** For every color $c \in \{0, 1, 2\}$, decoding
+the two-bit code of $c$ (where $0 \mapsto 00$, $1 \mapsto 01$, $2 \mapsto 10$) gives back $c$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Uncode](uncode.md)
+- [Two-bit code of a color](code.md)
+- [Decoding a color code](uncode.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.Post.PCP
 ---
 
-# PCP
+# The Post correspondence problem
 
-`P` has a PCP solution.
+**The Post correspondence problem.** A list $P$ of dominoes is a solvable instance of the
+Post correspondence problem when it has a PCP solution: a nonempty sequence of dominoes from $P$,
+repetitions allowed, whose top words and bottom words concatenate to the same word.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Proof depends on
 
-- [Is Solution](is-solution.md)
+- [PCP solution](is-solution.md)
 
 ## Sources
 

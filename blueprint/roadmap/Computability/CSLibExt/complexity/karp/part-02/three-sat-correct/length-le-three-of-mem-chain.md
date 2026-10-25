@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.length_le_three_of_mem_chain
 ---
 
-# Length le three of mem chain
+# Chain clauses have at most three literals
 
-Every clause of `chain` has at most three literals.
+**Chain clauses have at most three literals.** For every clause $C$ and natural number $u$,
+every clause of $\mathrm{chain}(C, u)$ has at most three literals.
 
 ## Depends on
 
-- [Chain](../three-sat/chain.md)
+- [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Chain Tail](../three-sat/chain-tail.md)
-- [Fresh](../three-sat/fresh.md)
-- [Length le three of mem chain Tail](length-le-three-of-mem-chain-tail.md)
-- [Ren Lit](../three-sat/ren-lit.md)
+- [The tail of a clause chain](../three-sat/chain-tail.md)
+- [Fresh variable indices](../three-sat/fresh.md)
+- [Chain-tail clauses have at most three literals](length-le-three-of-mem-chain-tail.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
 
 ## Sources
 

@@ -26,7 +26,7 @@ flag $v'$, the counters $F$ with $U$ set to $h$, and the same output $o$.
 - [Labels of the cell-shift generator](gl.md)
 - [Label of the decrement chain](sb-l.md)
 - [Labels of the shift generator](lab.md)
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 - [The cell-shift generator](prog.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 

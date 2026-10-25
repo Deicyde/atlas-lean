@@ -8,12 +8,16 @@ lean: Cslib.Decidability.not_isRegular_unaryLang_squares
 
 # The unary squares are not regular
 
-**The unary squares are not regular**, by the pumping lemma: pumping `1^(N²)` by a block of
-length at most `N` lands strictly between two consecutive squares.
+**The unary squares are not regular.** The unary language of the perfect squares, the set of
+words over a one-letter alphabet whose length is $m^2$ for some $m \in \mathbb{N}$, is not regular.
+
+The proof uses the pumping lemma: if a DFA with $N$ states accepted this language, pumping the word
+of length $N^2$ by a block of length between $1$ and $N$ would give a length strictly between $N^2$
+and $(N + 1)^2$.
 
 ## Depends on
 
-- [Unary Lang](unary-lang.md)
+- [Unary language of a set of naturals](unary-lang.md)
 
 ## Sources
 

@@ -41,7 +41,7 @@ $\mathrm{dq}$. At $\mathrm{dq}$ it empties $Q$, then goes to $\mathrm{fin}(c)$.
 - [Base counter of an accept clause](bc.md)
 - [Offset of a clause's literal](off.md)
 - [Polarity of an accept clause's literal](sg.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decr](../../../../MathlibExt/turing-machine/program/decr.md)

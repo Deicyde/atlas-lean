@@ -26,9 +26,9 @@ for $Y$ and $a$, and the host starts at the start label of its initial-row gener
 - [Labels of the full machine](fl.md)
 - [Alphabets of the full machine](f.md)
 - [Coefficient list of a polynomial](coeffs.md)
-- [Enc](../situation/part-01/enc.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
 
 ## Proof depends on
 
@@ -37,7 +37,7 @@ for $Y$ and $a$, and the host starts at the start label of its initial-row gener
 - [Labels of the first precomputation part](../init-family/ps1.md)
 - [Codes of input symbols](../init-family/enc-f.md)
 - [The full program](fprog.md)
-- [Depth](../situation/part-01/depth.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.length_le_length_encW
 ---
 
-# Length le length enc W
+# A witness is at least as long as its vertex list
 
-Each vertex costs at least one bit.
+**A witness is at least as long as its vertex list.** For every list $p$ of natural numbers,
+the witness encoding of $p$ has length at least $|p|$.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Proof depends on
 
-- [Length enc W](length-enc-w.md)
+- [Witness length](length-enc-w.md)
 
 ## Sources
 

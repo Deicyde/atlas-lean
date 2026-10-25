@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitColor.consEdges_same
 ---
 
-# Cons Edges same
+# Copy sites of the empty clause
 
-The empty clause: the vertex `N` joined to the palette. -/
+**Copy sites of the empty clause.** The list of copy sites $z_1, z_2, z_3$, which push the
+edges joining the next free vertex $N$ to the palette vertices $0$, $1$ and $2$. -/
 def empSites : List Site := [.z1, .z2, .z3]
 
 theorem out_cons (e : ℕ × ℕ) (es : List (ℕ × ℕ)) : out (e :: es) = out es ++ eB e := by
@@ -39,7 +40,7 @@ theorem emp_out (m : MS) : chainOut m empSites = out [(m.n, 0), (m.n, 1), (m.n, 
 
 ## Depends on
 
-- [Cons Edges](../color/cons-edges.md)
+- [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 
 ## Sources
 

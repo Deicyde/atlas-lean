@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.L
 ---
 
-# L
+# Labels of the tokenize-then-emit machine
 
-Labels: the tokenizer's, the emitter's, `inr (inr false)` writes `noOut`, `inr (inr true)`
-is the exit.
+**Labels of the tokenize-then-emit machine.** For an emitter $E$, the labels of the combined
+machine form the disjoint union of the SAT tokenizer's labels, the labels of $E$, and the two
+booleans: false labels the step that writes the output $E$ fixes for undecodable input, and true
+is the exit label.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ is the exit.
 
 ## Proof depends on
 
-- [Lab](../../../sat-tokenizer/lab.md)
+- [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
 
 ## Sources
 

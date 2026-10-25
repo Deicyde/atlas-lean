@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.edgeNum
 ---
 
-# Edge Num
+# Edge numbers of the SUBSET-SUM reduction
 
-The number of pair `q`: its digit if it is an edge, else `0`.
+**Edge numbers of the SUBSET-SUM reduction.** Given a list $b$ of pair bits and a pair index
+$q$, the number of pair $q$ is $4^q$ if bit $b_q$ is set and $0$ otherwise; an index past the end
+of $b$ counts as an unset bit.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pair Digit](pair-digit.md)
+- [Place value of a vertex pair in the SUBSET-SUM reduction](pair-digit.md)
 
 ## Sources
 

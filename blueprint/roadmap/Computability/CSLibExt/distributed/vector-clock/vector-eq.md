@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Distributed.VectorClock.vector_eq
 ---
 
-# Vector eq
+# A process's final vector is zero or one of its timestamps
 
-Each process's vector is `0` or the timestamp of one of its events.
+**A process's final vector is zero or one of its timestamps.** Run the vector clock
+algorithm over an execution, starting from all vectors $0$. For every process $p$, the vector
+held by $p$ at the end is either the zero vector or the vector timestamp of some event of $p$
+in the execution.
 
 ## Depends on
 
 - [Event](../lamport-clock/event.md)
-- [Run](run.md)
-- [Timestamps](timestamps.md)
+- [Running the vector clock algorithm](run.md)
+- [Vector timestamps of an execution](timestamps.md)
 
 ## Proof depends on
 
-- [Clock Step](clock-step.md)
-- [Stamp](stamp.md)
+- [One step of the vector clock algorithm](clock-step.md)
+- [Vector clock stamp of an event](stamp.md)
 
 ## Sources
 

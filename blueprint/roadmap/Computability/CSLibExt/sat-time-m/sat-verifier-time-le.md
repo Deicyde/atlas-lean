@@ -20,9 +20,9 @@ check costs at most `n * (n + 1) ≤ N * (N + 1)`.
 
 - [Check CNF](check-cnf.md)
 - [Check CNF time le](check-cnf-time-le.md)
-- [Decode CNF](../cook-levin/decode-cnf.md)
-- [Decode CNF eq some iff](../cook-levin/decode-cnf-eq-some-iff.md)
-- [Encode CNF](../cook-levin/encode-cnf.md)
+- [Decoding a complete length-prefixed CNF formula](../cook-levin/decode-cnf.md)
+- [The CNF decoder inverts the length-prefixed CNF code](../cook-levin/decode-cnf-eq-some-iff.md)
+- [Length-prefixed binary code of a CNF formula](../cook-levin/encode-cnf.md)
 - [Sat Verifier none](sat-verifier-none.md)
 - [Sat Verifier some](sat-verifier-some.md)
 - [Sum length le encode CNF length](sum-length-le-encode-cnf-length.md)

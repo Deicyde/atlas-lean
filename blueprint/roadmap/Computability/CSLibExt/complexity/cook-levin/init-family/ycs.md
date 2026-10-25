@@ -16,7 +16,7 @@ Besides the empty cell, these are the codes allowed in the certificate cells of 
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Sources
 

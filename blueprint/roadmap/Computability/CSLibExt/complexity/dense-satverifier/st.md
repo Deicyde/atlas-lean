@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Verifier.St
 ---
 
-# St
+# Machine states of the verifier
 
-Machine state: the last popped symbol.
+**Machine states of the verifier.** The machine state of the dense CNF-SAT verifier is an
+element of $\mathrm{Option}\,G$: either nothing or a work symbol in $G$.
+
+The program uses it to hold the last popped symbol.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [G](g.md)
+- [Work alphabet of the dense-SAT verifier](g.md)
 
 ## Sources
 

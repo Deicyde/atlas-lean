@@ -6,31 +6,37 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.load_run
 ---
 
-# Load run
+# Run of the load phase of the 3-COLOR verifier
 
-The load phase: from `n` units on `N`, the witness `w` on `W` and `acc` on `T`, it reaches
-`mkP` if `w` has at least `2 n` bits and the first `n` color codes are valid, and `no`
-otherwise; on success those codes sit on `T`, reversed.
+**Run of the load phase of the 3-COLOR verifier.** Let $n$ be a natural number and $w$, $a$
+lists of bits. Start the verifier at its load label, in any internal state, with stacks in which
+the counter $N$ holds exactly $n$ units, the witness stack $W$ holds $w$ and the scratch stack $T$
+holds $a$. Then within at most $n + 1$ steps the verifier reaches the label that moves the codes
+onto the color stack $P$ if $w$ has at least $2n$ bits and the color codes of the vertices
+$0, \dots, n - 1$ (vertex $i$ has the code $w_{2i} w_{2i+1}$) are all valid, that is, none is
+$11$; otherwise it reaches the rejecting label. In the first case $T$ then holds the first $2n$
+bits of $w$ in reverse order on top of $a$, and every stack other than $N$, $W$ and $T$ is as at
+the start.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Cols](cols.md)
-- [Flat](flat.md)
-- [Ok Col](ok-col.md)
-- [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [Witness colors of the first $n$ vertices](cols.md)
+- [Flattening pairs of bits](flat.md)
+- [Valid color code](ok-col.md)
+- [The 3-COLOR verifier machine](prog.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Col](col.md)
-- [Cols cons cons](cols-cons-cons.md)
-- [Run one](run-one.md)
-- [Update update update update](update-update-update-update.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Color code of a vertex in a witness](col.md)
+- [Peeling a vertex off the witness colors](cols-cons-cons.md)
+- [One step of the 3-COLOR verifier](run-one.md)
+- [Interleaved updates of two stacks of the 3-COLOR verifier](update-update-update-update.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)

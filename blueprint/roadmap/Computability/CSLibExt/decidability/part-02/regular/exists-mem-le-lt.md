@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.Automata.EncodedDFA.exists_mem_le_lt
 ---
 
-# Exists mem le lt
+# Accepted words of length between the number of listed states and twice it
 
-An accepted word of length at least the number of listed states can be shortened, keeping
-it accepted and at least that long, until it is shorter than twice that number.
+**Accepted words of length between the number of listed states and twice it.** Let $D$ be an
+encoded DFA over an alphabet $\alpha$ with decidable equality, and let $N$ be the length of its
+list of states. For every natural number $n$ and every word $w$ of length $n$ in the language of
+$D$ with $N \le n$, the language of $D$ contains a word $v$ whose length $|v|$ satisfies
+$N \le |v| < 2N$.
 
 ## Depends on
 
@@ -20,7 +23,7 @@ it accepted and at least that long, until it is shorter than twice that number.
 ## Proof depends on
 
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [To Fin DFA](to-fin-dfa.md)
+- [An encoded DFA on its listed states](to-fin-dfa.md)
 
 ## Sources
 

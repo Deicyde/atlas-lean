@@ -18,8 +18,8 @@ when `v` satisfies a literal of `C` past position `u + used C - w`.
 ## Proof depends on
 
 - [Clause Satisfied](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
-- [To3 Aux](../three-sat/to3-aux.md)
-- [Used](../three-sat/used.md)
+- [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
+- [Fresh variables reserved for a clause](../three-sat/used.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Check.clRev
 ---
 
-# Cl Rev
+# A clause's tokens on the token stack
 
-A clause's tokens as they lie on the token stack: `cl`, then its literals last-first.
+**A clause's tokens on the token stack.** For a clause with literals $l_1, \dots, l_k$, the
+list of symbols consisting of the clause marker followed by the stack tokens of $l_k$, then of
+$l_{k-1}$, down to $l_1$, where the stack tokens of a literal $(n, p)$ are the literal marker of
+polarity $p$ followed by the bits of the binary encoding of $n$ (least significant bit first,
+empty for $n = 0$) in reverse order.
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Lit Rev](lit-rev.md)
+- [A literal's tokens on the token stack](lit-rev.md)
 
 ## Sources
 

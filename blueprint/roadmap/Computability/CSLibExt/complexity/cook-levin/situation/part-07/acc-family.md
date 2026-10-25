@@ -7,19 +7,21 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.accFamily
 
 # The accept family
 
-**The accept family**: at-least-one and at-most-one (as negated units) on the two places where
-acceptance is read, row `T` only.
+**The accept family.** Let $E$ be an encoding of a finite stack machine $M$, let $\alpha$ be a
+symbol of the output stack of $M$, and let $T, H \in \mathbb{N}$. The accept family for $\alpha$ at
+bounds $T$ and $H$ is the CNF formula formed by the accept-code clauses at $T$ and $H$ followed by
+the accept-cell clauses for $\alpha$ at $T$ and $H$.
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
-- [CNF](../../../dense-sat/cnf.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [Dense CNF formula](../../../dense-sat/cnf.md)
 
 ## Proof depends on
 
-- [Acc Cell](acc-cell.md)
-- [Acc Code](acc-code.md)
-- [Clause](../../../dense-sat/clause.md)
+- [Accept-cell clauses](acc-cell.md)
+- [Accept-code clauses](acc-code.md)
+- [Dense clause](../../../dense-sat/clause.md)
 
 ## Sources
 

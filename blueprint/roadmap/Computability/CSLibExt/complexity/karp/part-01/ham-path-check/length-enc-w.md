@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.length_encW
 ---
 
-# Length enc W
+# Witness length
 
-A vertex `v` costs `v + 1` bits.
+**Witness length.** For every list $p = (v_1, \dots, v_k)$ of natural numbers, the witness
+encoding of $p$ has length $\sum_{i=1}^{k} (v_i + 1)$.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Proof depends on
 
-- [Enc W cons](enc-w-cons.md)
+- [Witness encoding of a nonempty list](enc-w-cons.md)
 
 ## Sources
 

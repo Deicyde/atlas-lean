@@ -8,12 +8,15 @@ lean: Cslib.Complexity.Karp.vertexCoverDec_npComplete
 
 # VERTEX-COVER (exact size `k`) is NP-complete
 
-**VERTEX-COVER (exact size `k`) is NP-complete**.
+**VERTEX-COVER (exact size `k`) is NP-complete.** The decision problem VERTEX-COVER, which
+accepts exactly the valid encodings of a number $k$ and a graph $G$ such that $G$ has a vertex
+cover of exactly $k$ vertices, is in NP, and every decision problem in NP reduces to it by a
+polynomial-time many-one reduction.
 
 ## Depends on
 
-- [Vertex Cover Dec](../clique/vertex-cover-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [The VERTEX-COVER problem](../clique/vertex-cover-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)

@@ -18,12 +18,12 @@ followed by the clause terminator $00$.
 - [Increasing literal positions](inc.md)
 - [Dense clause from a list of literals](dense-clause.md)
 - [Gap encoding of a dense clause](gap-enc.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 
 ## Proof depends on
 
-- [Clause](../../dense-sat/clause.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources

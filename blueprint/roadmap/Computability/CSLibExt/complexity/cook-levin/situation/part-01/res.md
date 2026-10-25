@@ -5,19 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.res
 ---
 
-# Res
+# Effect of a situation
 
-The effect of situation `i`.
+**Effect of a situation.** Let $E$ be an encoding of a finite multi-stack Turing machine $M$
+and $i$ a natural number. Let $(l, v)$, an optional label and a state, be the result of decoding
+the label/state code of situation $i$ with the inverse (label, state) numbering of $E$, and let
+$W$ be the decoded windows of situation $i$. The effect of situation $i$ is the situation step of
+$M$ from $l$, $v$ and $W$: a new optional label, a new state, the symbols left pushed on each
+stack, and the number of original symbols consumed from each stack.
 
 ## Depends on
 
-- [Enc](enc.md)
+- [Encoding data for a finite TM2 machine](enc.md)
 
 ## Proof depends on
 
-- [La](la.md)
-- [Win](win.md)
-- [The step on `Option Λ`](sit-step.md)
+- [Label/state code of a situation](la.md)
+- [Decoded windows of a situation](win.md)
+- [The situation step](sit-step.md)
 
 ## Sources
 

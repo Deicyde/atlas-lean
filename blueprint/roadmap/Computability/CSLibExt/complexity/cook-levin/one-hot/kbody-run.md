@@ -51,7 +51,7 @@ state false, the same counters $F$, and output $w_0 w_1 \cdots w_{H-1}$ followed
 - [Step bound for one cell](cell-b.md)
 - [One-hot clauses of a cell](cell-cnf.md)
 - [Generator run for one cell](cell-run.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

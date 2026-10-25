@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.tm2Decidable_of_manyOneReducible
 ---
 
-# Tm2 Decidable of many One Reducible
+# Decidability transfers along mapping reductions
 
-A predicate that mapping-reduces to a decidable one is decidable.
+**Decidability transfers along mapping reductions.** Let $p$ and $q$ be predicates on
+primitive recursively encodable types $\alpha$ and $\beta$. If $p$ is many-one reducible to $q$
+and $q$ is decidable by a multi-stack machine, then $p$ is decidable by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

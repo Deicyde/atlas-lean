@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.mem_starts_of_yields
 ---
 
-# Mem starts of yields
+# Sound items
 
-An item is sound when it codes `(A, i, j)` with `i ≤ j ≤ |w|` and `A` yielding the factor. -/
+**Sound items.** Write $\langle s, t \rangle$ for the pairing bijection
+$\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ given by $\langle s, t \rangle = t^2 + s$ if $s < t$
+and $\langle s, t \rangle = s^2 + s + t$ otherwise. Given an encoded grammar $g$ and a word $w$,
+a natural number $x$ is a sound item when $x = \langle A, \langle i, j \rangle \rangle$ for some
+$A$, $i$, $j$ with $i \le j \le |w|$ such that the nonterminal $A$ yields, in the decoded
+grammar of $g$, the factor of $w$ from position $i$ to position $j$. -/
 def SoundItem (g : EncodedCFG T) (w : List T) (x : ℕ) : Prop :=
   ∃ A i j, x = Nat.pair A (Nat.pair i j) ∧ i ≤ j ∧ j ≤ w.length ∧
     Yields g.toCFG [.nonterminal A] (factor w i j)
@@ -81,21 +86,21 @@ theorem found_sound (g : EncodedCFG T) (w : List T) : ∀ x ∈ found g w, Sound
 
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Factor](factor.md)
-- [Found](found.md)
-- [Starts](starts.md)
+- [Factor of a word](factor.md)
+- [Items found by the membership procedure](found.md)
+- [Start positions of a right-hand side](starts.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Yields](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [Iterate closed](../primrec-list/iterate-closed.md)
-- [Mem B](../primrec-list/mem-b.md)
+- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Factor eq append](factor-eq-append.md)
-- [Items](items.md)
-- [Mem Step](mem-step.md)
-- [Sym Fits](sym-fits.md)
+- [Splitting a factor](factor-eq-append.md)
+- [Candidate items for membership](items.md)
+- [One round of the membership procedure](mem-step.md)
+- [Fitting a symbol at a position](sym-fits.md)
 
 ## Sources
 

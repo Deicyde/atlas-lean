@@ -6,26 +6,22 @@ navigation: module
 
 ## The procedure
 
-- [Dfa Sym Fits](dfa-sym-fits.md)
-- [Dfa Starts](dfa-starts.md)
-- [Dfa Step](dfa-step.md)
-- [Dfa Items](dfa-items.md)
-- [Dfa Found](dfa-found.md)
-- [The emptiness test](inter-empty-b.md)
-
-## Stabilization
-
-- [The emptiness test](dfa-starts-subset.md)
+- [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
+- [Start states of a right-hand side in a DFA](dfa-starts.md)
+- [One round of the item search against a DFA](dfa-step.md)
+- [Candidate items for a grammar and a DFA](dfa-items.md)
+- [Items found for a grammar and a DFA](dfa-found.md)
+- [Start states of a right-hand side are states of the DFA](dfa-starts-subset.md)
 
 ## Soundness
 
-- [Dfa Sound Item](dfa-sound-item.md)
+- [Sound items for a grammar and a DFA](dfa-sound-item.md)
 
 ## Completeness
 
-- [Mem dfa Starts of yields](mem-dfa-starts-of-yields.md)
+- [Sound items for a grammar and a DFA](mem-dfa-starts-of-yields.md)
 - [Correctness of the intersection-emptiness test](inter-empty-b-iff.md)
-- [Subset B](subset-b.md)
+- [The inclusion test for a grammar and a DFA](subset-b.md)
 - [Correctness of the inclusion test](subset-b-iff.md)
 
 ## Computability

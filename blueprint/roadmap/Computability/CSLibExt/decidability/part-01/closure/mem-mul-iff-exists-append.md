@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.mem_mul_iff_exists_append
 ---
 
-# Mem mul iff exists append
+# Membership in a concatenation of languages
 
-Membership in a concatenation `L₁ * L₂`, as a split `w = u ++ v`.
+**Membership in a concatenation of languages.** For languages $L_1$ and $L_2$ over an
+alphabet $\sigma$ and a word $w$ over $\sigma$, $w$ lies in the concatenation $L_1 L_2$ if and
+only if there are words $u$ and $v$ with $w = uv$, $u \in L_1$ and $v \in L_2$.
 
 ## Depends on
 

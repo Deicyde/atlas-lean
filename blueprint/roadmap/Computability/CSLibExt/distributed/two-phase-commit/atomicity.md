@@ -13,15 +13,15 @@ participant committed and another aborted.
 
 ## Depends on
 
-- [Part State](part-state.md)
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Participant states in two-phase commit](part-state.md)
+- [Reachable states of two-phase commit](reachable.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Coord State](coord-state.md)
-- [Inv](inv.md)
-- [Inv reachable](inv-reachable.md)
+- [Coordinator states](coord-state.md)
+- [Two-phase commit invariant](inv.md)
+- [The two-phase commit invariant holds in reachable states](inv-reachable.md)
 
 ## Sources
 

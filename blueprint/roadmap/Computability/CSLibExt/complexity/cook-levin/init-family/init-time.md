@@ -36,7 +36,7 @@ by $o$.
 - [Initial counters of the init generator](init-f.md)
 - [The init family](init-fam.md)
 - [The generator](iprog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

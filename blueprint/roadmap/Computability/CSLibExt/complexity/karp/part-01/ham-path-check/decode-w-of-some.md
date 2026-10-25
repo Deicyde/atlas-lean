@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.decodeW_of_some
 ---
 
-# Decode W of some
+# Decoding peels off the first number
 
-A first number, then the rest.
+**Decoding peels off the first number.** If reading a unary number from the front of a list
+$w$ of bits returns $v$ with remaining bits $r$, that is, $w$ is $v$ copies of true, then false,
+then $r$, then the witness decoder succeeds on $w$ exactly when it succeeds on $r$, and its
+result on $w$ is $v$ followed by its result on $r$.
 
 ## Depends on
 
-- [Decode W](decode-w.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Witness decoder](decode-w.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Proof depends on
 
-- [Length lt of read Unary Length](../color/length-lt-of-read-unary-length.md)
+- [Reading a unary number shortens the input](../color/length-lt-of-read-unary-length.md)
 
 ## Sources
 

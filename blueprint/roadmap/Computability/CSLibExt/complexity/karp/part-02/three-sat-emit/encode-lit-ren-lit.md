@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.Emit3.encodeLit_renLit
 ---
 
-# Encode Lit ren Lit
+# Code of a renamed literal
 
-The code of a renamed literal: the name bits as pairs `true, b`, with a low `false` added
-for a non-empty name.
+**Code of a renamed literal.** For every literal $(n, p)$, the binary code of the renamed
+literal $(2n, p)$ is: the pair $\mathrm{true}, \mathrm{false}$ if $n \neq 0$ and nothing if
+$n = 0$, then the pair $\mathrm{true}, b$ for each bit $b$ of the binary representation of $n$
+(least significant bit first, no bits for $n = 0$), then $\mathrm{false}, p$.
 
 ## Depends on
 
-- [Ren Lit](../three-sat/ren-lit.md)
-- [Encode Lit](../../../../cook-levin/encode-lit.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
+- [Binary code of a literal](../../../../cook-levin/encode-lit.md)
 
 ## Proof depends on
 
-- [Encode Nat Prefix](../../../../cook-levin/encode-nat-prefix.md)
+- [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
 - [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources

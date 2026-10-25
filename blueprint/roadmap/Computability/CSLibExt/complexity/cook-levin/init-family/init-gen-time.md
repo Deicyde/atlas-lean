@@ -37,10 +37,10 @@ is the bit encoding of the init family of $E$ for $x, Y, m, T, H$ followed by $o
 - [Initial counters of the init generator](init-f.md)
 - [The generator](iprog.md)
 - [Sorted certificate code list](ycs.md)
-- [Enc](../situation/part-01/enc.md)
-- [The init family](../situation/part-06/init-family.md)
-- [Layout](../situation/part-01/layout.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [The row-0 init family of an encoding](../situation/part-06/init-family.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -48,9 +48,9 @@ is the bit encoding of the init family of $E$ for $x, Y, m, T, H$ followed by $o
 - [The init family](init-fam.md)
 - [The init family of an encoding is a layout-level init family](init-family-eq.md)
 - [Polynomial time bound for the init generator](init-time.md)
-- [N](../situation/part-01/n.md)
-- [G](../situation/part-01/g.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Symbol-code bound](../situation/part-01/g.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Sources
 

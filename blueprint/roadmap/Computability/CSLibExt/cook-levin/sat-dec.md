@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.CookLevin.satDec
 ---
 
-# Sat Dec
+# SAT as a decision problem
 
-SAT as a decision problem over the canonical complexity API: accept exactly
-the bitstrings encoding a satisfiable CNF formula.
+**SAT as a decision problem.** The SAT decision problem returns true on a list $x$ of Booleans
+when $x$ lies in the SAT language, that is, when $x$ encodes a satisfiable CNF formula, and
+false otherwise.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ the bitstrings encoding a satisfiable CNF formula.
 
 ## Proof depends on
 
-- [SATLang](satlang.md)
+- [The SAT language](satlang.md)
 
 ## Sources
 

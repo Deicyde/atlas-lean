@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.tokKs
 ---
 
-# Tok Ks
+# List of the tokenizer's stacks
 
-The tokenizer's stacks, listed.
+**List of the tokenizer's stacks.** The list of the SAT tokenizer's six stacks in the order:
+the formula-bit stack $X$, the witness-bit stack $W$, the token stack $T$, the table stack $B$,
+the clause counter $CC$ and the literal counter $LC$.
 
 ## Depends on
 
-- [K](../../../sat-tokenizer/k.md)
+- [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 
 ## Sources
 

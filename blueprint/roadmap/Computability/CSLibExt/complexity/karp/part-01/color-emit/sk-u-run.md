@@ -6,20 +6,25 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitColor.skU_run
 ---
 
-# Sk U run
+# Skipping an earlier literal vertex
 
-Move an earlier literal vertex from `D` to `E`.
+**Skipping an earlier literal vertex.** Let $m$ be a quiescent state of the 3-COLOR emitter
+whose occurrence stack consists of $j$ units above a stack $R$ that is empty or does not have
+a unit on top. From the label $\mathsf{skU}$, with any local state, the machine runs in
+exactly $j + 1$ steps to the label $\mathsf{walk}$, in some local state and in the quiescent
+state obtained from $m$ by replacing the occurrence stack with $R$ and pushing $j$ units onto
+the other side of the walk.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [MS](ms.md)
-- [Stk](stk.md)
-- [Prog](prog.md)
-- [Unit Of](unit-of.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3-coloring emitter](k.md)
+- [Control labels of the 3-coloring emitter](lab.md)
+- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Stacks of a quiescent state](stk.md)
+- [The 3-COLOR emitter machine](prog.md)
+- [Reading unary units](unit-of.md)
+- [Stack alphabets of the 3-coloring emitter](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 

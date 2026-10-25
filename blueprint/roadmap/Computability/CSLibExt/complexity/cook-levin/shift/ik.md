@@ -21,7 +21,7 @@ of situations $< i$.
 ## Proof depends on
 
 - [Entry label of the situation chain](i-from.md)
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 
 ## Sources
 

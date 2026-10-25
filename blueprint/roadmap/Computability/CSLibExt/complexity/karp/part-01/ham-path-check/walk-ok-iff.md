@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.walkOk_iff
 ---
 
-# Walk Ok iff
+# The walk check after the first vertex
 
-The walk past the first vertex: the rest stays below `n`, follows listed edges from `b`,
-has no repeats, brings the count to `n` and ends at `t`.
+**The walk check after the first vertex.** Let $s, t, n$ be natural numbers and $E$ a list of
+pairs of natural numbers. For every list $q = (q_1, \dots, q_k)$ of natural numbers and all
+natural numbers $c \neq 0$ and $b$, the walk check for $s, t, n, E$ accepts $q$ after $c$ vertices
+the last of which was $b$ if and only if every $q_i$ is less than $n$, every pair $(u, v)$ of
+consecutive entries of the list $(b, q_1, \dots, q_k)$ is an entry of $E$, the entries of $q$ are
+pairwise distinct, $c + k = n$, and the last entry of $(b, q_1, \dots, q_k)$ is $t$.
 
 ## Depends on
 
-- [Walk Ok](walk-ok.md)
+- [The walk check of the HAMPATH verifier](walk-ok.md)
 
 ## Proof depends on
 
-- [Step Ok](step-ok.md)
+- [One step of the HAMPATH walk](step-ok.md)
 
 ## Sources
 

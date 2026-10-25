@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.isV_val
 ---
 
-# Is V val
+# Start label of the subset-sum emitter
 
-The start label. -/
+**Start label of the subset-sum emitter.** The VERTEX-COVER to SUBSET-SUM machine starts at
+the label $\mathsf{rdK}$, which begins parsing the input by reading its leading unary number. -/
 def start : Lab := .rdK
 
 /-! ### One-step lemmas
@@ -16,7 +17,7 @@ def start : Lab := .rdK
 ## Depends on
 
 - [Is V](is-v.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

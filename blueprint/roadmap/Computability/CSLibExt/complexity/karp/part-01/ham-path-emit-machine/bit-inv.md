@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.bit_inv
 ---
 
-# Bit inv
+# Running a chain of copy sites in the HAMPATH emitter
 
-A run of sites appends the atoms of its sites. -/
+**Running a chain of copy sites in the HAMPATH emitter.** Let $j_1, \dots, j_n$ be copy sites
+chained from label $l_0$ to label $l$ with passed bit $b$. Then for every quiescent state $s$ and
+every flag $v$ there is a flag $v'$ such that the emitter machine goes, in exactly as many steps as
+the step count of $j_1, \dots, j_n$ at $s$, from label $l_0$ with flag $v$ and the stacks of $s$ to
+label $l$ with flag $v'$ and the stacks of the state that differs from $s$ only in that the atoms
+of $j_1, \dots, j_n$ at $s$, concatenated in this order, are appended to its edge bits. -/
 theorem chain_run (js : List Site) : ∀ (s : MS) (b : Bool) (l₀ l : Lab),
     Chain js b l₀ l = true → ∀ v : Bool, ∃ v', Run prog (chainCost s js) ⟨some l₀, v, s.stk⟩
       ⟨some l, v', {s with q := s.q ++ (js.map (atom s)).flatten}.stk⟩ := by
@@ -36,8 +41,8 @@ theorem chain_run (js : List Site) : ∀ (s : MS) (b : Bool) (l₀ l : Lab),
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

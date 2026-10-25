@@ -7,18 +7,20 @@ lean: Cslib.Language.EncodedRegex.eqB
 
 # Equivalence test
 
-**Equivalence test**: the A_REX decider gives the same answer for both expressions on every
-word shorter than `eqBound`, enumerated by length.
+**Equivalence test.** Over a finite alphabet with decidable equality and a fixed enumeration of
+its letters, the equivalence test of two encoded regular expressions $e_1$ and $e_2$ returns true
+exactly when, for every length $n$ less than the search bound of $e_1$ and $e_2$ and every word $w$
+of length $n$, the membership test gives the same answer for $e_1$ on $w$ as for $e_2$ on $w$.
 
 ## Depends on
 
-- [Encoded Regex](../regular-expression/encoded-regex.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
 
 ## Proof depends on
 
-- [Words Of Length](../regular/words-of-length.md)
-- [Eq Bound](eq-bound.md)
-- [Membership test](../regular-expression/mem-b.md)
+- [Words of a given length](../regular/words-of-length.md)
+- [Search bound for equivalence](eq-bound.md)
+- [Membership test for regular expressions](../regular-expression/mem-b.md)
 
 ## Sources
 

@@ -12,13 +12,13 @@ nodes.
 
 ## Depends on
 
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Flags](flags.md)
-- [Zero Flags](zero-flags.md)
-- [Regex Node](regex-node.md)
+- [Flags of all nodes](flags.md)
+- [Flags of the empty language](zero-flags.md)
+- [Regular-expression node](regex-node.md)
 
 ## Sources
 

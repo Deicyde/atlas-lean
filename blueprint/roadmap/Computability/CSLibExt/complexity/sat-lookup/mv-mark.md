@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.mvMark
 ---
 
-# Mv Mark
+# Moving a table marker between stacks
 
-Move a table marker (`dead` or `val b`) from the top of `a` to `b` and go to `f` of it; on an
-empty stack (or another symbol, which the invariants rule out) go to `e`.
+**Moving a table marker between stacks.** For stacks $a$ and $b$, a label $e$ and a map $f$
+from symbols to labels, this machine instruction does the following: if the top of $a$ is a table
+marker $y$ (that is, $\mathsf{dead}$ or $\mathsf{val}(c)$ for a bit $c$), it pops $y$ from $a$,
+pushes it onto $b$ and goes to $f(y)$; if $a$ is empty or has another symbol on top, it goes to
+$e$ and leaves the stacks unchanged.
+
+The invariants of the lookup machine rule out another symbol on top of $a$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stacks of the lookup machine](k.md)
+- [Labels of the lookup machine](lab.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Proof depends on
 
-- [Mv Sym](mv-sym.md)
+- [Moving a symbol between stacks](mv-sym.md)
 
 ## Sources
 

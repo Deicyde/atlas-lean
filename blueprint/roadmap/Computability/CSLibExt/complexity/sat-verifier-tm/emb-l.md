@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.embL
 ---
 
-# Emb L
+# Stack embedding of the lookup into the clause-check driver
 
-The lookup's stack embedding into the driver.
+**Stack embedding of the lookup into the clause-check driver.** Every stack of the lookup and
+of the clause-check driver has alphabet $\mathrm{Sym}$. The lookup is embedded in the driver by
+sending each of its stacks $T$, $B$, $S$, $A$, $C$, $V$ to the driver stack of the same name (an
+injective map) and identifying the alphabets by the identity of $\mathrm{Sym}$.
 
 ## Depends on
 
-- [K](../sat-check/k.md)
-- [K](../sat-lookup/k.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stacks of the clause check](../sat-check/k.md)
+- [Stacks of the lookup machine](../sat-lookup/k.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 
-- [E L](e-l.md)
+- [Placement of the lookup's stacks in the clause-check driver](e-l.md)
 
 ## Sources
 

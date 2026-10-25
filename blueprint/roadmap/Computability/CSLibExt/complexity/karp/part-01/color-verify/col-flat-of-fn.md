@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.col_flat_ofFn
 ---
 
-# Col flat of Fn
+# Color codes of a flattened coloring
 
-The color code of vertex `i` in the flattened codes `f`.
+**Color codes of a flattened coloring.** For every $n$, every map $f$ from $\{0, \dots, n - 1\}$
+to pairs of bits and every $i < n$, the color code of vertex $i$ in the flattening of the list
+$f(0), \dots, f(n - 1)$ is $f(i)$.
 
 ## Depends on
 
-- [Col](col.md)
-- [Flat](flat.md)
+- [Color code of a vertex in a witness](col.md)
+- [Flattening pairs of bits](flat.md)
 
 ## Proof depends on
 
-- [Col flat](col-flat.md)
+- [Color codes of flattened pairs](col-flat.md)
 
 ## Sources
 

@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Decidability.tm2Decidable_iff_tm2Recognizable_and_tm2CoRecognizable
 ---
 
-# Post's theorem
+# Post's theorem for multi-stack machines
 
-**Post's theorem** for multi-stack machines: a predicate is decidable iff it is recognizable
-and co-recognizable.
+**Post's theorem for multi-stack machines.** Let $\alpha$ be a primcodable type (it has an
+encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive recursive). A
+predicate $p$ on $\alpha$ is decidable by a multi-stack machine if and only if it is both
+recognizable and co-recognizable by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Co Recognizable](tm2-co-recognizable.md)
-- [TM2 Decidable](tm2-decidable.md)
-- [TM2 Recognizable](tm2-recognizable.md)
+- [Co-recognizability by multi-stack machines](tm2-co-recognizable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
+- [Recognizability by multi-stack machines](tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Co Recognizable iff re Pred not](tm2-co-recognizable-iff-re-pred-not.md)
-- [Tm2 Decidable iff computable Pred](tm2-decidable-iff-computable-pred.md)
-- [Tm2 Recognizable iff re Pred](tm2-recognizable-iff-re-pred.md)
+- [Multi-stack co-recognizable predicates are exactly the co-r.e. predicates](tm2-co-recognizable-iff-re-pred-not.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](tm2-decidable-iff-computable-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

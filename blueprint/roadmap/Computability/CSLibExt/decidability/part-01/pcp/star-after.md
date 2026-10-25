@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Decidability.Post.starAfter
 ---
 
-# Star After
+# A star after every letter
 
-`u⋆`: a star after every letter.
+**A star after every letter.** Let $\star$ be the star of the extended alphabet. For a word
+$u = a_1 a_2 \cdots a_n$ over $\alpha$, the word $u\star$ over the extended alphabet is
+$a_1 \star a_2 \star \cdots a_n \star$, obtained by putting a star after every letter of $u$; the
+empty word gives the empty word.
 
 ## Depends on
 
-- [Sym](sym.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 
 ## Proof depends on
 
-- [Letter](letter.md)
-- [Star](star.md)
+- [The alphabet inside the extended alphabet](letter.md)
+- [The star symbol](star.md)
 
 ## Sources
 

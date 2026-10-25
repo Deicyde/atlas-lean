@@ -5,12 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.K
 ---
 
-# K
+# Stacks of the HAMPATH emitter
 
-Stacks: tokens, output, tokens in reading order, distinct variables, the variable walk's
-other side, the edges in progress, garbage, comparison scratch (`X`, `Y`), the clause count, three
-times it, the diamond top, the row end, the row vertex, the row loop index, the clause index, the
-detour vertex, copy scratch.
+**Stacks of the HAMPATH emitter.** The emitter has eighteen distinct stacks: $T$ (the tokens),
+$O$ (the output), $F$ (the tokens in reading order), $V$ (the distinct variables), $W$ (the other
+side of the walk over $V$), $Q$ (the edges in progress), $G$ (garbage), $X$ and $Y$ (comparison
+scratch), $C$ (the clause count), $M$ (three times the clause count), $P$ (the diamond top), $N$
+(the row end), $R$ (the row vertex), $L$ (the row loop index), $J$ (the clause index), $D$ (the
+detour vertex) and $Z$ (copy scratch).
 
 ## Depends on
 

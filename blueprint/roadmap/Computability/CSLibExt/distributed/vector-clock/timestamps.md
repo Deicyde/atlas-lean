@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Distributed.VectorClock.timestamps
 ---
 
-# Timestamps
+# Vector timestamps of an execution
 
-The vector timestamps of the events of an execution.
+**Vector timestamps of an execution.** The vector timestamps of an execution are the list of
+vectors that the vector clock algorithm, run over the execution, assigns to its events, in
+order.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ The vector timestamps of the events of an execution.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Running the vector clock algorithm](run.md)
 
 ## Sources
 

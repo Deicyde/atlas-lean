@@ -5,25 +5,29 @@ statement: formalized
 lean: DFA.brzozowskiEquiv
 ---
 
-# Brzozowski Equiv
+# States of Brzozowski's automaton as residual languages
 
-The states of Brzozowski's automaton correspond to the continuation languages.
+**States of Brzozowski's automaton as residual languages.** For a deterministic finite
+automaton $M$ over a finite alphabet with finitely many states, the bijection from the states of
+Brzozowski's automaton of $M$ to the residual languages of the reachable states of $M$ that sends
+each state $p$ to the language accepted by $M$ from the state that $M$ reaches on $w$, where $w$
+is a chosen word leading Brzozowski's automaton from its start state to $p$.
 
 ## Depends on
 
-- [Reachable Residuals](../minimality/reachable-residuals.md)
-- [Brzozowski State](brzozowski-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
+- [States of Brzozowski's automaton](brzozowski-state.md)
 
 ## Proof depends on
 
-- [State Equivalent](../minimality/state-equivalent.md)
-- [Minimized State](../minimization/minimized-state.md)
+- [Equivalent states of a DFA](../minimality/state-equivalent.md)
+- [Residual reached by a word](../minimization/minimized-state.md)
 - [Nerode Rel](../nerode/nerode-rel.md)
-- [Nerode Rel iff state Equivalent](../minimality/nerode-rel-iff-state-equivalent.md)
+- [Nerode equivalence is equivalence of the reached states](../minimality/nerode-rel-iff-state-equivalent.md)
 - [Brzozowski's automaton](brzozowski.md)
-- [Brzozowski Residual](brzozowski-residual.md)
-- [Brzozowski eval eq iff](brzozowski-eval-eq-iff.md)
-- [Brzozowski surjective](brzozowski-surjective.md)
+- [Residual language of a state of Brzozowski's automaton](brzozowski-residual.md)
+- [Brzozowski's automaton identifies exactly the Nerode equivalent words](brzozowski-eval-eq-iff.md)
+- [Every state of Brzozowski's automaton is reachable](brzozowski-surjective.md)
 
 ## Sources
 

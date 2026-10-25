@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.bit?_bit
 ---
 
-# Bit? bit
+# Stack contents of the lookup machine
 
-The six stacks, by name. -/
+**Stack contents of the lookup machine.** For lists of symbols $t$, $b$, $s$, $a$, $c$, $v$,
+the assignment of contents to the six stacks of the lookup machine that gives $T$ the list $t$,
+$B$ the list $b$, $S$ the list $s$, $A$ the list $a$, $C$ the list $c$ and $V$ the list $v$. -/
 def stk (t b s a c v : List Sym) : ∀ _ : K, List Sym
   | .T => t
   | .B => b
@@ -52,8 +54,8 @@ theorem stk_ext {St : ∀ _ : K, List Sym} {t b s a c v : List Sym} (hT : St .T 
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [Bit?](../sat-verifier-spec/bit.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 
 ## Sources
 

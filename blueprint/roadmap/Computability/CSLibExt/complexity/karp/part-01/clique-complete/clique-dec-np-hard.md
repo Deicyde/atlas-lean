@@ -8,12 +8,14 @@ lean: Cslib.Complexity.Karp.cliqueDec_npHard
 
 # CLIQUE is NP-hard
 
-**CLIQUE is NP-hard**.
+**CLIQUE is NP-hard.** Every decision problem $L$ in NP has a polynomial-time many-one
+reduction to CLIQUE: a polynomial-time computable map $f$ on bit strings such that, for every
+bit string $x$, $L$ accepts $x$ exactly when CLIQUE accepts $f(x)$.
 
 ## Depends on
 
-- [Clique Dec](../clique/clique-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [CLIQUE](../clique/clique-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)
@@ -22,26 +24,26 @@ lean: Cslib.Complexity.Karp.cliqueDec_npHard
 
 - [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
 - [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
-- [Sat Dec of decode CNF eq none](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
-- [Clique Bits](../clique/clique-bits.md)
-- [Cnf Sat iff exists is NClique](../clique-correct/cnf-sat-iff-exists-is-nclique.md)
-- [Decode KG](../clique/decode-kg.md)
-- [Encode KG](../clique/encode-kg.md)
+- [Unparsable input is not in SAT](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
+- [Adjacency bits of Karp's clique graph](../clique/clique-bits.md)
+- [Karp's reduction from SAT to CLIQUE is correct](../clique-correct/cnf-sat-iff-exists-is-nclique.md)
+- [Decoding a graph instance](../clique/decode-kg.md)
+- [Encoding of a graph instance](../clique/encode-kg.md)
 - [SAT ≤ CLIQUE is polynomial-time](is-poly-time-reduce-clique.md)
-- [Kg Dec](../clique/kg-dec.md)
-- [No KG](../clique/no-kg.md)
-- [Np Hard of poly Many One Red](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
-- [Occ Adj](../clique/occ-adj.md)
-- [Occs](../clique/occs.md)
-- [Pairs](../clique/pairs.md)
-- [Reduce Clique](../clique/reduce-clique.md)
-- [To Clique](../clique/to-clique.md)
-- [To Graph](../clique/to-graph.md)
-- [Decode CNF](../../../../cook-levin/decode-cnf.md)
-- [Decode CNF eq some iff](../../../../cook-levin/decode-cnf-eq-some-iff.md)
-- [Encode CNF](../../../../cook-levin/encode-cnf.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
-- [Sat Dec](../../../../cook-levin/sat-dec.md)
+- [Language of graph instances with a property](../clique/kg-dec.md)
+- [Fixed no-instance](../clique/no-kg.md)
+- [NP-hardness transfers along reductions](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
+- [Adjacency of literal occurrences in Karp's clique graph](../clique/occ-adj.md)
+- [Literal occurrences of a CNF formula](../clique/occs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
+- [Karp's SAT-to-CLIQUE map on bit strings](../clique/reduce-clique.md)
+- [Karp's CLIQUE instance of a CNF formula](../clique/to-clique.md)
+- [The graph encoded by pair bits](../clique/to-graph.md)
+- [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
+- [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
+- [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
+- [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)

@@ -6,9 +6,13 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.runI_succ'
 ---
 
-# Run I succ'
+# The all-true assignment violates the accept family
 
-...and the all-true assignment does **not** satisfy the accept family. -/
+**The all-true assignment violates the accept family.** Let $E$ be an encoding of a finite
+stack machine $M$, let $\alpha$ be a symbol of the output stack of $M$, and let
+$T, H \in \mathbb{N}$. The assignment that sets all $V$ variables to true, where $V$ is the number
+of variables of the layout of $E$ at bounds $T$ and $H$, does not satisfy the accept family for
+$\alpha$ at bounds $T$ and $H$. -/
 theorem accFamily_allTrue (acc : M.Γ M.k₁) (T H : ℕ) :
     ¬ cnfSat (E.accFamily acc T H) (List.replicate (E.layout.numVars T H) true) := by
   intro h
@@ -26,8 +30,8 @@ end Enc
 
 ## Depends on
 
-- [Run I](../part-03/run-i.md)
-- [Step I](../part-03/step-i.md)
+- [Idle-extended run](../part-03/run-i.md)
+- [Idle-extended step](../part-03/step-i.md)
 
 ## Sources
 

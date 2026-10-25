@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.Karp.kgVerifyComp
 ---
 
-# Kg Verify Comp
+# The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component
 
-`KGVerify` in mode `m` as a host component.
+**The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component.** For a mode $m$
+(clique, independent set or vertex cover), this is the host component whose stacks are
+$X, W, C, N, V, T$, each over the symbol alphabet of the SAT verifier, and whose labels and
+program are those of the verifier machine of mode $m$.
 
 ## Depends on
 
-- [Comp](../../../host/comp.md)
-- [Mode](../clique-verify/mode.md)
+- [Component machine](../../../host/comp.md)
+- [Modes of the clique verifier](../clique-verify/mode.md)
 
 ## Proof depends on
 
-- [K](../clique-verify/k.md)
-- [Lab](../clique-verify/lab.md)
+- [Stacks of the CLIQUE verifier](../clique-verify/k.md)
+- [Labels of the CLIQUE verifier](../clique-verify/lab.md)
 - [Prog](../clique-verify/prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

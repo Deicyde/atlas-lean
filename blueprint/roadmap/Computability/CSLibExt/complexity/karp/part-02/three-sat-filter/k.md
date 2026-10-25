@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Filter3.K
 ---
 
-# K
+# Stacks of the 3SAT clause-length filter
 
-Stacks: the token stack `T` and the side stack `U`.
+**Stacks of the 3SAT clause-length filter.** The filter has exactly two stacks: the token
+stack $T$ and the side stack $U$.
 
 ## Depends on
 

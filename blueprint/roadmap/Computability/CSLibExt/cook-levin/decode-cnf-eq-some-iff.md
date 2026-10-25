@@ -6,29 +6,31 @@ proof: formalized
 lean: Cslib.CookLevin.decodeCNF_eq_some_iff
 ---
 
-# Decode CNF eq some iff
+# The CNF decoder inverts the length-prefixed CNF code
 
-A complete CNF decoder succeeds exactly on the canonical encoding of its result.
+**The CNF decoder inverts the length-prefixed CNF code.** For every bit string $w$ and every
+CNF formula $\varphi$, the complete CNF decoder returns $\varphi$ on input $w$ if and only if $w$
+is the length-prefixed binary code of $\varphi$.
 
 ## Depends on
 
-- [Decode CNF](decode-cnf.md)
-- [Encode CNF](encode-cnf.md)
+- [Decoding a complete length-prefixed CNF formula](decode-cnf.md)
+- [Length-prefixed binary code of a CNF formula](encode-cnf.md)
 - [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Decode CNFAux](decode-cnfaux.md)
-- [Decode Clause](decode-clause.md)
-- [Decode Clauses](decode-clauses.md)
-- [Decode Lit](decode-lit.md)
-- [Decode Lits](decode-lits.md)
-- [Decode Nat Prefix](decode-nat-prefix.md)
-- [Encode Clause](encode-clause.md)
-- [Encode Lit](encode-lit.md)
-- [Encode Nat Prefix](encode-nat-prefix.md)
-- [Read Unary Length](read-unary-length.md)
-- [Undelimit eq some iff](undelimit-eq-some-iff.md)
+- [Decoding a length-prefixed CNF formula](decode-cnfaux.md)
+- [Decoding a length-prefixed clause](decode-clause.md)
+- [Decoding a fixed number of clauses](decode-clauses.md)
+- [Decoding a literal](decode-lit.md)
+- [Decoding a fixed number of literals](decode-lits.md)
+- [Decoding a prefix-coded natural number](decode-nat-prefix.md)
+- [Length-prefixed binary code of a clause](encode-clause.md)
+- [Binary code of a literal](encode-lit.md)
+- [Prefix-free code of a natural number](encode-nat-prefix.md)
+- [Reading a unary length prefix](read-unary-length.md)
+- [Parsing a self-delimiting block](undelimit-eq-some-iff.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Delimit](../../MathlibExt/complexity/delimit.md)
 - [Undelimit](../../MathlibExt/complexity/undelimit.md)

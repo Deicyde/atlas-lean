@@ -5,22 +5,26 @@ statement: formalized
 lean: DFA.mooreResidual
 ---
 
-# Moore Residual
+# Continuation language of a Moore class
 
-A class of reachable states determines a reachable continuation language.
+**Continuation language of a Moore class.** Let $M$ be a DFA over a finite alphabet with
+finitely many states. Each state of Moore's minimal automaton of $M$, a class of reachable states
+of $M$, is sent to the continuation language of any member $s$, the set of words that $M$
+accepts when started at $s$; this is a reachable residual language of $M$. It does not depend on
+the choice of $s$, because Moore-related states have the same continuation language.
 
 ## Depends on
 
-- [Reachable Residuals](../minimality/reachable-residuals.md)
-- [Moore State](moore-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
+- [States of Moore's automaton](moore-state.md)
 
 ## Proof depends on
 
-- [Correctness of the refinement](mem-moore-rel-iff.md)
+- [Correctness of Moore's refinement](mem-moore-rel-iff.md)
 - [A state is reachable exactly when some word leads to it](../../../decidability/part-02/regular/mem-reachable-iff.md)
-- [Moore Rel](moore-rel.md)
-- [Moore Setoid](moore-setoid.md)
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [Moore's relation](moore-rel.md)
+- [Moore equivalence on reachable states](moore-setoid.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Sources
 

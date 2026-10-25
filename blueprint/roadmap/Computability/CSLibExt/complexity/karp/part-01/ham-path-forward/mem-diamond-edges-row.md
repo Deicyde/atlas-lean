@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.mem_diamondEdges_row
 ---
 
-# Mem diamond Edges row
+# Row arcs of a diamond
 
-The row arcs of a diamond, in both directions.
+**Row arcs of a diamond.** Let $\varphi$ be a CNF formula with $m$ clauses, let $i$ and $x$ be
+natural numbers, and write $r_i(l)$ for row vertex $l$ of diamond $i$. For every $l < 3m$, the arcs
+of diamond $i$ for variable $x$ include both the arc from $r_i(l)$ to $r_i(l+1)$ and the arc from
+$r_i(l+1)$ to $r_i(l)$.
 
 ## Depends on
 
-- [Diamond Edges](../ham-path/diamond-edges.md)
-- [Hp R](../ham-path/hp-r.md)
+- [Arcs of a variable diamond](../ham-path/diamond-edges.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Hp T](../ham-path/hp-t.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
 
 ## Sources
 

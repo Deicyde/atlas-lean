@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.Γ
 ---
 
-# Γ
+# Stack alphabets of the HAMPATH emitter
 
-Stack alphabets: the output stack holds bits, the others token symbols (counters hold
-`Sym.cl`).
+**Stack alphabets of the HAMPATH emitter.** The alphabet of the output stack $O$ is the set of
+bits (booleans); every other stack has the token symbols as its alphabet.
+
+The counter stacks only ever hold the symbol $\mathrm{cl}$.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the HAMPATH emitter](k.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

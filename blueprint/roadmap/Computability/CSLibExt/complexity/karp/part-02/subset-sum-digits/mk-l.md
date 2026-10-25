@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitSS.mkL
 ---
 
-# Mk L
+# Vertex marks for a vertex
 
-The marks of vertices `n - 1, …, 0` (top first) for vertex `v`.
+**Vertex marks for a vertex.** For natural numbers $n$ and $v$, the list of $n$ bits whose
+entries, from first to last, record for $i = n-1, n-2, \dots, 0$ whether $i = v$.
 
 ## Depends on
 

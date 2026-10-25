@@ -12,14 +12,14 @@ Moved to `SatVerifier.toks_length_le` (`SatVerifierSpec`).
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [Toks](../sat-verifier-spec/toks.md)
-- [Encode CNF](../../cook-levin/encode-cnf.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
+- [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Toks length le](../sat-verifier-spec/toks-length-le.md)
+- [Token count is bounded by the encoding length](../sat-verifier-spec/toks-length-le.md)
 
 ## Sources
 

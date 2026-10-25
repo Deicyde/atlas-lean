@@ -35,7 +35,7 @@ $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [Constant of the generator's time bound](gen-c.md)
 - [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

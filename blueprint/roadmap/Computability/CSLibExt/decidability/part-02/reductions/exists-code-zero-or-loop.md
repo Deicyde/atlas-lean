@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Decidability.exists_code_zero_or_loop
 ---
 
-# Exists code zero or loop
+# A code that halts only on zero
 
-The code of `x ↦ if x = 0 then 0 else ⊥`.
+**A code that halts only on zero.** There is a partial recursive code $z$ that on input $0$
+halts with output $0$ and on every input $x \ne 0$ does not halt.
 
 ## Depends on
 

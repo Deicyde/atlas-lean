@@ -6,26 +6,31 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.load_run
 ---
 
-# Load run
+# Run of the load phase
 
-The load phase: from counters `n` on `N` and `j` on `C`, the witness `w` on `W` and `acc` on
-`V`, it reaches `walk true` if `w` has at least `n` bits, `j` of the first `n` set, and `no`
-otherwise; on success the first `n` bits sit on `V`, last on top.
+**Run of the load phase.** Let $m$ be a mode, $n$ and $j$ natural numbers and $w$ and
+$\mathit{acc}$ bit lists. Start the verifier for mode $m$ at the load label, in any internal
+state, with $n$ in unary on the counter $N$, $j$ in unary on the counter $C$, $w$ on the witness
+stack $W$ and $\mathit{acc}$ on the vertex stack $V$. Then within at most $n + 1$ steps the
+machine reaches the walk label with its flag $c$ (the conjunction of the row's pair conditions
+so far) set to true if $w$ has at least $n$ bits and exactly $j$ of its first $n$ bits are set,
+and the reject label otherwise. In the first case $V$ then holds the first $n$ bits of $w$, bit
+$n - 1$ on top, above $\mathit{acc}$, and the stacks $X$ and $T$ are unchanged.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mode](mode.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Modes of the clique verifier](mode.md)
 - [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Run one](run-one.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [One step of a clique-verifier program to a known label](run-one.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)

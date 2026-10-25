@@ -6,29 +6,29 @@ navigation: module
 
 ## Clause lengths
 
-- [Length le three of mem chain Tail](length-le-three-of-mem-chain-tail.md)
-- [Length le three of mem chain](length-le-three-of-mem-chain.md)
-- [Length le three of mem to3 Aux](length-le-three-of-mem-to3-aux.md)
-- [Is3 to3](is3-to3.md)
+- [Chain-tail clauses have at most three literals](length-le-three-of-mem-chain-tail.md)
+- [Chain clauses have at most three literals](length-le-three-of-mem-chain.md)
+- [Clauses of the auxiliary 3SAT translation have at most three literals](length-le-three-of-mem-to3-aux.md)
+- [The SAT-to-3SAT translation yields clauses of length at most three](is3-to3.md)
 
 ## Soundness: an assignment for `to3 φ` gives one for `φ`
 
-- [Chain Tail sound](chain-tail-sound.md)
-- [Chain sound](chain-sound.md)
-- [To3 Aux sound](to3-aux-sound.md)
+- [Soundness of the tail of a chain](chain-tail-sound.md)
+- [Soundness of the chain of one clause](chain-sound.md)
+- [Soundness of the auxiliary 3SAT translation](to3-aux-sound.md)
 
 ## Completeness: an assignment for `φ` extends to one for `to3 φ`
 
-- [Chain Tail complete](chain-tail-complete.md)
-- [Chain complete](chain-complete.md)
+- [Completeness of the tail of a chain](chain-tail-complete.md)
+- [Completeness of the chain of one clause](chain-complete.md)
 - [Fresh Val](fresh-val.md)
-- [To3 Aux complete](to3-aux-complete.md)
-- [Lift](lift.md)
-- [Lift ren](lift-ren.md)
-- [Lift fresh](lift-fresh.md)
-- [Cnf Sat to3 iff](cnf-sat-to3-iff.md)
+- [Completeness of the auxiliary 3SAT translation](to3-aux-complete.md)
+- [Lifting an assignment to the 3SAT translation](lift.md)
+- [The lifted assignment on renamed variables](lift-ren.md)
+- [The lifted assignment on fresh variables](lift-fresh.md)
+- [The SAT-to-3SAT translation preserves satisfiability](cnf-sat-to3-iff.md)
 
 ## The reduction on bit strings
 
-- [Encode CNF ne nil](encode-cnf-ne-nil.md)
-- [Sat Dec eq sat3 Dec reduce3](sat-dec-eq-sat3-dec-reduce3.md)
+- [CNF encodings are nonempty](encode-cnf-ne-nil.md)
+- [Correctness of the SAT-to-3SAT reduction on bit strings](sat-dec-eq-sat3-dec-reduce3.md)

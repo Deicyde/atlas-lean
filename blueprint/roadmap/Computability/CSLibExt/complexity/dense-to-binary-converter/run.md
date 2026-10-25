@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.Run
 ---
 
-# Run
+# Exact runs of the dense-to-binary converter
 
-Exact `n`-step runs of the program.
+**Exact runs of the dense-to-binary converter.** For a natural number $n$ and configurations
+$c$ and $d$ of the converter program, $c$ leads to $d$ in exactly $n$ steps when the program,
+started at $c$, is at configuration $d$ after exactly $n$ steps.
 
 ## Depends on
 
 - [Lab](lab.md)
-- [Stk](stk.md)
+- [Stacks of the dense-to-binary machine](stk.md)
 
 ## Proof depends on
 
-- [Prog](prog.md)
+- [The dense-to-binary converter program](prog.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

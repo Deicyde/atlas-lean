@@ -29,7 +29,7 @@ cell family for $T$ and $H$ followed by $o$.
 - [Explicit time bound of the one-hot generator](oh-bound.md)
 - [The one-hot cell family](oh-family.md)
 - [The one-hot generator](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -47,8 +47,8 @@ cell family for $T$ and $H$ followed by $o$.
 - [Counter values after the one-hot precomputation](pre-f.md)
 - [Step budget for one time step of the one-hot generator](t-body-b.md)
 - [Generator run over one time step](tbody-run.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

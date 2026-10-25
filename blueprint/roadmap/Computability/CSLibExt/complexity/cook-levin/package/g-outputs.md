@@ -20,7 +20,7 @@ within $p(|s|)$ steps.
 
 - [The reduction machine](g-tm.md)
 - [The formula emitted on a raw input](phi-of.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -44,9 +44,9 @@ within $p(|s|)$ steps.
 - [Step count of the Horner rounds](../precompute/horn-t.md)
 - [Total length bound](../precompute/m-of.md)
 - [Constant of the shift-generator time bound](../shift/sh-c.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
-- [Depth](../situation/part-01/depth.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 

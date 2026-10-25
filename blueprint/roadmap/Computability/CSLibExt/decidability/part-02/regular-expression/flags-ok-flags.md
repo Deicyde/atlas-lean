@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.flagsOK_flags
 ---
 
-# Flags OK flags
+# Correctness of the flag pass
 
-The flags of every node describe the language of its expression.
+**Correctness of the flag pass.** For a list $l$ of nodes and a natural number $k$, let $f_k$
+be the entry at position $k$ of the flags of $l$, or the zero flags
+$(\mathrm{false}, \mathrm{false}, \mathrm{false})$ if $k$ is at least the length of $l$. Then
+$f_k$ describes the language of the regular expression at node $k$ of the encoding $l$ when $k$
+is less than the length of $l$, and describes the empty language otherwise.
 
 ## Depends on
 
-- [Encoded Regex](encoded-regex.md)
-- [Flags OK](flags-ok.md)
-- [Flags](flags.md)
-- [Regex At](regex-at.md)
-- [Zero Flags](zero-flags.md)
-- [Regex Node](regex-node.md)
+- [Encoded regular expressions](encoded-regex.md)
+- [Flags of a language](flags-ok.md)
+- [Flags of all nodes](flags.md)
+- [Regular expression at a node](regex-at.md)
+- [Flags of the empty language](zero-flags.md)
+- [Regular-expression node](regex-node.md)
 
 ## Proof depends on
 
-- [Comp Flags](comp-flags.md)
-- [Node](node.md)
-- [Plus Flags](plus-flags.md)
-- [Regex At append](regex-at-append.md)
-- [Star Flags](star-flags.md)
-- [Step Flags](step-flags.md)
+- [Flags of a concatenation](comp-flags.md)
+- [Node at an index](node.md)
+- [Flags of a sum](plus-flags.md)
+- [Appending nodes does not change earlier expressions](regex-at-append.md)
+- [Flags of a star](star-flags.md)
+- [Flags of the next node](step-flags.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.letterSet
 ---
 
-# Letter Set
+# One-letter words over $T$
 
-The one-letter words over the letters of `T`.
+**One-letter words over $T$.** This is the language over the alphabet $T \sqcup \{\#, 0, 1\}$
+of the reduction from universality to regularity consisting of the one-letter words $t$ with
+$t \in T$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 
-- [Tl](tl.md)
+- [Alphabet letters in the extended alphabet](tl.md)
 
 ## Sources
 

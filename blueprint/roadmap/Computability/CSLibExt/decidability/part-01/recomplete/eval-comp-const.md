@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Decidability.eval_comp_const
 ---
 
-# Eval comp const
+# Composing a code with a constant code ignores the input
 
-The code `comp c (const n)` ignores its input and runs `c` on `n`.
+**Composing a code with a constant code ignores the input.** Let $c$ be a code of a partial
+recursive function and let $n, m \in \mathbb{N}$. The code that first computes the constant
+function with value $n$ and then applies $c$, evaluated at $m$, gives the same partial value as
+$c$ evaluated at $n$: one is defined exactly when the other is, and then they are equal.
 
 ## Depends on
 

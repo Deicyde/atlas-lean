@@ -19,8 +19,8 @@ other than `0ᵐ`.
 ## Proof depends on
 
 - [The universal description method](../basic/u.md)
-- [Exists length eq K](../basic/exists-length-eq-k.md)
-- [Pad](pad.md)
+- [Shortest descriptions exist](../basic/exists-length-eq-k.md)
+- [Padding a string to a given length](pad.md)
 
 ## Sources
 

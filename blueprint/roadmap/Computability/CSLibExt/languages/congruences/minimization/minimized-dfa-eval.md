@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Language.minimizedDFA_eval
 ---
 
-# Minimized DFA eval
+# States reached in the minimized DFA
 
-Evaluating the minimized presentation reaches the source automaton's continuation language
-after the same word.
+**States reached in the minimized DFA.** For every DFA $M$ and every word $x$, the state that
+the minimized DFA of $M$ reaches on $x$ is the language accepted by $M$ from the state that $M$
+reaches on $x$.
 
 ## Depends on
 
 - [Minimized DFA](minimized-dfa.md)
-- [Minimized State](minimized-state.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual reached by a word](minimized-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on
 
-- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
-- [Minimized DFA eval equiv](minimized-dfa-eval-equiv.md)
-- [To DFA eval val](to-dfa-eval-val.md)
+- [Left quotients as reachable residuals](left-quotient-equiv-reachable-residuals.md)
+- [Evaluation in the minimized DFA agrees with the left-quotient automaton](minimized-dfa-eval-equiv.md)
+- [States reached in the residual-language DFA](to-dfa-eval-val.md)
 
 ## Sources
 

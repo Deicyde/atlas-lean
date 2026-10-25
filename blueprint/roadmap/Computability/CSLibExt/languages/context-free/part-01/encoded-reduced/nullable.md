@@ -16,7 +16,7 @@ terminals.
 
 ## Proof depends on
 
-- [Generating](../../../../decidability/part-01/context-free/generating.md)
+- [Generating nonterminals](../../../../decidability/part-01/context-free/generating.md)
 - [No Terminals](no-terminals.md)
 
 ## Sources

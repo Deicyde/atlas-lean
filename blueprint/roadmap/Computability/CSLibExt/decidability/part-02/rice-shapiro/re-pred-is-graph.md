@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Decidability.rePred_isGraph
 ---
 
-# Re Pred is Graph
+# Being a graph is recursively enumerable
 
-Being the graph of a function is recognizable (indeed decidable).
+**Being a graph is recursively enumerable.** The set of finite lists of pairs of natural
+numbers that are graphs is recursively enumerable.
+
+This set is in fact decidable.
 
 ## Depends on
 
-- [Is Graph](is-graph.md)
+- [Graphs of finite functions](is-graph.md)
 
 ## Proof depends on
 
-- [Fin Fun](fin-fun.md)
+- [Finite function of a list of pairs](fin-fun.md)
 - [Forall mem](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources

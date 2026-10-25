@@ -8,12 +8,14 @@ lean: Cslib.Complexity.Karp.sat3Dec_npComplete
 
 # 3SAT is NP-complete
 
-**3SAT is NP-complete** for formal-math's canonical `NP`.
+**3SAT is NP-complete.** The decision problem 3SAT, which accepts exactly the bit strings
+that encode a satisfiable CNF formula with at most three literals per clause, is in NP, and every
+decision problem in NP has a polynomial-time many-one reduction to 3SAT.
 
 ## Depends on
 
-- [Sat3 Dec](../three-sat/sat3-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [The 3SAT decision problem](../three-sat/sat3-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)

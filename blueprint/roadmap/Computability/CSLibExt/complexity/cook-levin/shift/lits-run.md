@@ -59,7 +59,7 @@ and $o$.
 - [Entry label of a literal routine of the cell-shift generator](lit-l.md)
 - [Stages of the cell-shift literal routine](ls.md)
 - [One literal routine of the cell-shift generator](lit-run.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)

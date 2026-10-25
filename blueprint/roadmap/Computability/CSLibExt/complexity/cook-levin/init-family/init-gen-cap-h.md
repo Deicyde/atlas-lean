@@ -38,12 +38,12 @@ followed by $o$.
 - [Initial counters of the init generator](init-f.md)
 - [The generator](iprog.md)
 - [Sorted certificate code list](ycs.md)
-- [Enc](../situation/part-01/enc.md)
-- [The init family](../situation/part-06/init-family.md)
-- [Layout](../situation/part-01/layout.md)
-- [Cap H](../situation/part-05/cap-h.md)
-- [Depth](../situation/part-01/depth.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [The row-0 init family of an encoding](../situation/part-06/init-family.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Stack cap](../situation/part-05/cap-h.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

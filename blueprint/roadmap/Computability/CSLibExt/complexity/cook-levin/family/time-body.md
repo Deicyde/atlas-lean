@@ -48,7 +48,7 @@ bound for $N$, $T$ and $H$.
 - [Run of the transition-family generator on one clause](clause-run.md)
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 - [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)

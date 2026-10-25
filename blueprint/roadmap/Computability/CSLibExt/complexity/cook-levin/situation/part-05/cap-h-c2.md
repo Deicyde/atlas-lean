@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.capH_c2
 ---
 
-# Cap H c2
+# Stack-cap constraint 2
 
-Constraint 2 (`2d ≤ H`) holds when `T ≥ 1` (it is not used; see `cells_step_run`).
+**Stack-cap constraint 2.** For natural numbers $m$, $T$ and $d$ with $T \ge 1$, the stack cap
+$H = m + (T + 1) d + 1$ for input bound $m$, run length $T$ and per-step growth $d$ satisfies
+$2d \le H$.
 
 ## Depends on
 
-- [Cap H](cap-h.md)
+- [Stack cap](cap-h.md)
 
 ## Sources
 

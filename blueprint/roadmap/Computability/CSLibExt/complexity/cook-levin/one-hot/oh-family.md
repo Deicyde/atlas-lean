@@ -19,14 +19,14 @@ listing these clauses, with the cells ordered by $t$, then $k$, then $j$.
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [Index of a cell variable in the transition-family layout](../family/c-idx.md)
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [One-hot clauses of a cell](cell-cnf.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

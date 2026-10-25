@@ -6,32 +6,37 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.readW_run
 ---
 
-# Read W run
+# Reading the mark of a vertex
 
-Walk to vertex `u`, read its mark (`false` past the last vertex), put the marks back.
+**Reading the mark of a vertex.** Let $u \in \mathbb{N}$ and let $m$ be a list of marks.
+Start the marking machine at the label `go1`, with any flag, from stacks on which $U$ holds $u$
+counter units, $M$ holds $m$ as bit symbols and $P$ is empty. Then within $2u + 2$ steps it
+reaches `go2` if the mark of vertex $u$ in $m$ is set and `drV` otherwise (a vertex past the end
+of $m$ counts as unmarked), with $U$ and $P$ empty, $M$ holding $m$ again, and every other
+stack unchanged.
 
 ## Depends on
 
-- [Fr](fr.md)
+- [Agreement off a set of stacks](fr.md)
 - [K](k.md)
 - [Lab](lab.md)
-- [One](one.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [The counter unit of the PATH marking machine](one.md)
+- [The marking machine for PATH](prog.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 - [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Trans](trans.md)
-- [Stmt](stmt.md)
-- [Bit Of drop](bit-of-drop.md)
-- [Restore run](restore-run.md)
-- [Step Aux walk S nil](step-aux-walk-s-nil.md)
-- [Walk S](walk-s.md)
-- [Walk run](walk-run.md)
-- [Bit?](../sat-verifier-spec/bit.md)
+- [Frames compose](trans.md)
+- [Statements of the PATH marking machine](stmt.md)
+- [Reading the mark of vertex $j$](bit-of-drop.md)
+- [Restoring the parked marks](restore-run.md)
+- [A walk step with an exhausted counter](step-aux-walk-s-nil.md)
+- [Walk step of the PATH marking machine](walk-s.md)
+- [Walking along the marks of the PATH marking machine](walk-run.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)

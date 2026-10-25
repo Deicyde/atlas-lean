@@ -13,7 +13,7 @@ morphism.
 
 ## Depends on
 
-- [Alphabet Preimage](../morphisms/alphabet-preimage.md)
+- [Alphabet preimage](../morphisms/alphabet-preimage.md)
 - [Word Morphism Preimage](word-morphism-preimage.md)
 
 ## Sources

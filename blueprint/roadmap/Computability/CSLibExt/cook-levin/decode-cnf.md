@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.CookLevin.decodeCNF
 ---
 
-# Decode CNF
+# Decoding a complete length-prefixed CNF formula
 
-Decode a complete CNF formula, rejecting missing or trailing bits.
+**Decoding a complete length-prefixed CNF formula.** Given a bit string $w$, the decoder reads
+one CNF formula $\varphi$ from the front of $w$ with the length-prefixed CNF decoder, which also
+returns the bits left after $\varphi$. The result is $\varphi$ if no bits are left; decoding fails
+if no formula can be read or if bits remain after it.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Decode a complete CNF formula, rejecting missing or trailing bits.
 
 ## Proof depends on
 
-- [Decode CNFAux](decode-cnfaux.md)
+- [Decoding a length-prefixed CNF formula](decode-cnfaux.md)
 
 ## Sources
 

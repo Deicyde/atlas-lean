@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.is3
 ---
 
-# Is3
+# Three-literal clause test
 
-Every clause has at most three literals.
+**Three-literal clause test.** For a CNF formula $\varphi$, this Boolean test holds exactly
+when every clause of $\varphi$ has at most three literals.
 
 ## Depends on
 

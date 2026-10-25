@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.isEmptyB
 ---
 
-# The emptiness test
+# The emptiness test for context-free grammars
 
-**The emptiness test**: the start nonterminal derives no terminal word.
+**The emptiness test for context-free grammars.** For an encoded grammar $g$, the test returns
+true exactly when the start nonterminal of $g$ is not among the generating nonterminals of $g$.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ lean: Cslib.Language.EncodedCFG.isEmptyB
 
 ## Proof depends on
 
-- [Mem B](../primrec-list/mem-b.md)
-- [Generating](generating.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Generating nonterminals](generating.md)
 
 ## Sources
 

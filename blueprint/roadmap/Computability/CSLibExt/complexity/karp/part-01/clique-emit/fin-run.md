@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitClique.fin_run
 ---
 
-# Fin run
+# Clique emitter: the instance prefix
 
-The prefix of the instance: `false`, `n` ones, `false`, `c` ones.
+**Clique emitter: the instance prefix.** Let $v$ be a Boolean, $d$ and $e$ stack-symbol lists,
+$o$ a list of bits and $c, n \in \mathbb{N}$. From label fin with flag $v$ and the state with
+empty token stack, output $o$, empty name stack, walked stack $d$, walk side $e$, clause count
+$c$, occurrence count $n$ and empty scratch stacks, the emitter machine reaches in exactly
+$n + c + 4$ steps label done with some flag and some state whose output, read top-down, is $c$
+ones, false, $n$ ones, false, then $o$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [St](st.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the SAT-to-CLIQUE emitter](k.md)
+- [Labels of the SAT-to-CLIQUE emitter](lab.md)
+- [The CLIQUE emitter machine](prog.md)
+- [Configuration stacks of the CLIQUE emitter](st.md)
+- [Stack alphabets of the CLIQUE emitter](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Rep single](../../part-02/three-sat-emit/rep-single.md)
+- [The 3SAT emitter processes a whole formula](../../part-02/three-sat-emit/rep-single.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)

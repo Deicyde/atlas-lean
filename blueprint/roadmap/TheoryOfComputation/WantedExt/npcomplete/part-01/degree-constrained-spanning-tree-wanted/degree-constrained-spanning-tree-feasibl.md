@@ -15,7 +15,7 @@ A spanning tree of maximum degree at most `K`.
 
 ## Proof depends on
 
-- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
+- [Graph of an edge list](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

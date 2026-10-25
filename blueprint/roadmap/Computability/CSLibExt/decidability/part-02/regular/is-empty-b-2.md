@@ -16,7 +16,7 @@ Emptiness test: no reachable state accepts.
 ## Proof depends on
 
 - [Reachable](reachable-2.md)
-- [Mem B](../../part-01/primrec-list/mem-b.md)
+- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGMap.Γ
 ---
 
-# Γ
+# Stack alphabets of the clique reduction machine
 
-Stack alphabets: the output stack holds `Bool`s, every other stack `Sym`s.
+**Stack alphabets of the clique reduction machine.** The alphabet $\Gamma(k)$ of a stack $k$
+is the Booleans if $k$ is the output stack $O$, and the token alphabet $\mathrm{Sym}$ for every
+other stack ($X$, $A$, $B$, $D$ and $Y$).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ Stack alphabets: the output stack holds `Bool`s, every other stack `Sym`s.
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

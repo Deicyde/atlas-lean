@@ -6,33 +6,35 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.tm2Decidable_matches_infinite
 ---
 
-# Tm2 Decidable matches infinite
+# Infiniteness of regular expressions is decidable
 
-Infiniteness for regular expressions is decidable by a multi-stack machine.
+**Infiniteness of regular expressions is decidable.** For an alphabet $\alpha$ with a
+primitive recursive encoding, the property of an encoded regular expression over $\alpha$ that
+the language it denotes is infinite is decidable by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
-- [Encoded Regex](encoded-regex.md)
-- [Equiv List](equiv-list.md)
-- [Node Equiv](node-equiv.md)
-- [To Regex](to-regex.md)
-- [Regex Node](regex-node.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
+- [Encoded regular expressions](encoded-regex.md)
+- [Encodings are lists of nodes](equiv-list.md)
+- [Regex nodes as a sum type](node-equiv.md)
+- [The regular expression denoted by an encoding](to-regex.md)
+- [Regular-expression node](regex-node.md)
 
 ## Proof depends on
 
-- [Computable Pred of primrec bool](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
-- [Comp Flags](comp-flags.md)
-- [Flags](flags.md)
-- [Flags OK flags](flags-ok-flags.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Flags of a concatenation](comp-flags.md)
+- [Flags of all nodes](flags.md)
+- [Correctness of the flag pass](flags-ok-flags.md)
 - [Infiniteness test](infinite-b.md)
-- [Node](node.md)
-- [Plus Flags](plus-flags.md)
-- [Regex At](regex-at.md)
-- [Star Flags](star-flags.md)
-- [Step Flags](step-flags.md)
-- [Zero Flags](zero-flags.md)
+- [Node at an index](node.md)
+- [Flags of a sum](plus-flags.md)
+- [Regular expression at a node](regex-at.md)
+- [Flags of a star](star-flags.md)
+- [Flags of the next node](step-flags.md)
+- [Flags of the empty language](zero-flags.md)
 
 ## Sources
 

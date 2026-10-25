@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.adjBits_map_pairs
 ---
 
-# Adj Bits map pairs
+# Pair bits computed by a function
 
-Bits computed pairwise by `f` give `f` back on each pair.
+**Pair bits computed by a function.** Let $n$ be a natural number, let $f$ be a function from
+pairs of natural numbers to bits, and let $b$ be the list obtained by applying $f$ to each entry of
+the pair list of $n$ (the pairs $(i, j)$ with $i < j < n$ in encoding order). Then for all
+$i < j < n$, the bit of the pair $(i, j)$ in $b$ is $f(i, j)$.
 
 ## Depends on
 
-- [Adj Bits](../clique/adj-bits.md)
-- [Pairs](../clique/pairs.md)
+- [Adjacency bit of a vertex pair](../clique/adj-bits.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Proof depends on
 
-- [Adj Bits eq get Elem](adj-bits-eq-get-elem.md)
+- [Pair bits are read off by position](adj-bits-eq-get-elem.md)
 - [Mem pairs](mem-pairs.md)
 
 ## Sources

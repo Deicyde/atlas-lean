@@ -4,7 +4,7 @@ navigation: module
 
 # Ham Path Complete
 
-- [Ham Verify Comp](ham-verify-comp.md)
+- [The HAMPATH verifier as a host component](ham-verify-comp.md)
 - [HAMPATH is in NP](ham-path-dec-mem-np.md)
 - [Emit Ham](emit-ham.md)
 - [SAT ≤ HAMPATH is polynomial-time](is-poly-time-reduce-ham.md)

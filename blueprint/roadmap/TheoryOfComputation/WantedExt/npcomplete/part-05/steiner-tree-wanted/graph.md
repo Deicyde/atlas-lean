@@ -15,7 +15,7 @@ The unweighted graph of a candidate edge set.
 
 ## Proof depends on
 
-- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
+- [Graph of an edge list](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

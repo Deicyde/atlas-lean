@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.startCard
 ---
 
-# Start Card
+# The start domino
 
-The first domino `($, $x#)`.
+**The start domino.** Let $x$ be a word over an alphabet $\alpha$, and extend $\alpha$ by a
+star $\star$ and an end marker $\diamond$. The start domino of $x$ has top the one-letter word
+$\diamond$ and bottom the word $\diamond x \star$, with the letters of $x$ read as letters of the
+extended alphabet.
 
 ## Depends on
 
-- [Domino](../../part-01/pcp/domino.md)
-- [Sym](../../part-01/pcp/sym.md)
+- [Domino (Post correspondence problem)](../../part-01/pcp/domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
 
 ## Proof depends on
 
-- [End Mark](../../part-01/pcp/end-mark.md)
-- [Star](../../part-01/pcp/star.md)
-- [Lift](lift.md)
+- [End marker](../../part-01/pcp/end-mark.md)
+- [The star symbol](../../part-01/pcp/star.md)
+- [Lifting a word to the extended alphabet](lift.md)
 
 ## Sources
 

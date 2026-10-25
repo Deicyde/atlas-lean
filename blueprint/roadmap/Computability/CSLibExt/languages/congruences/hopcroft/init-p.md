@@ -5,9 +5,11 @@ statement: formalized
 lean: DFA.Hopcroft.initP
 ---
 
-# Init P
+# Hopcroft's initial partition
 
-The initial partition `{F, Q \ F}`, without an empty block.
+**Hopcroft's initial partition.** For a DFA $M$ with finite state set $Q$ and set of accepting
+states $F$, the initial partition is the list of blocks $F$, $Q \setminus F$, in this order, with
+any empty block removed.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Acc Block](acc-block.md)
-- [Rej Block](rej-block.md)
+- [Block of accepting states](acc-block.md)
+- [Rejecting states](rej-block.md)
 
 ## Sources
 

@@ -38,7 +38,7 @@ $l - 1$, or to the end of the clause when $l = 0$.
 - [Labels of the cell-shift generator](gl.md)
 - [Label after a literal routine](after.md)
 - [Constant offset of a literal in a block](csv.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decr](../../../../MathlibExt/turing-machine/program/decr.md)

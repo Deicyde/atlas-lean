@@ -11,17 +11,17 @@ The verifier for mode `m`: parse `k` and `n`, load the witness, walk the rows.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mode](mode.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Modes of the clique verifier](mode.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Proof depends on
 
-- [Load S](load-s.md)
-- [Read U](read-u.md)
-- [Walk S](walk-s.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Load step of the CLIQUE verifier](load-s.md)
+- [The clique verifier's unary reader](read-u.md)
+- [Walk step of the clique verifier](walk-s.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 

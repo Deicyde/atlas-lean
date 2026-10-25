@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.CookLevin.SATLang
 ---
 
-# SATLang
+# The SAT language
 
-SAT as a language of encoded satisfiable CNF formulas.
+**The SAT language.** SAT is the set of lists of Booleans that encode a satisfiable CNF
+formula.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is SATEncoded](is-satencoded.md)
+- [Encodings of satisfiable CNF formulas](is-satencoded.md)
 
 ## Sources
 

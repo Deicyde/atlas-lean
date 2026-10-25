@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Language.nerodeClassEquivMinimizedState
 ---
 
-# Nerode Class Equiv Minimized State
+# Nerode classes and reachable residuals
 
-The states of the minimized presentation are exactly the Nerode classes of the accepted
-language.
+**Nerode classes and reachable residuals.** For a DFA $M$ accepting the language $L$, there is a
+bijection from the Nerode classes of $L$ to the reachable residuals of $M$; it sends the class of a
+word $x$ to the left quotient $x^{-1}L = \{z : xz \in L\}$.
 
 ## Depends on
 
 - [Nerode Class](../nerode/nerode-class.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on
 
-- [Nerode Class Equiv Reachable Residuals](../minimality/nerode-class-equiv-reachable-residuals.md)
+- [Nerode classes correspond to reachable residuals](../minimality/nerode-class-equiv-reachable-residuals.md)
 
 ## Sources
 

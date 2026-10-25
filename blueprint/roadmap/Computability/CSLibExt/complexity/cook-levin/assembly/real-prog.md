@@ -29,9 +29,9 @@ stack.
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Number of literals of a transition clause](../family/n-lits.md)
 - [Sorted certificate code list](../init-family/ycs.md)
-- [Enc](../situation/part-01/enc.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
 
 ## Proof depends on
 
@@ -40,14 +40,14 @@ stack.
 - [Prog](../family/prog.md)
 - [The generator](../init-family/iprog.md)
 - [The cell-shift generator](../shift/prog.md)
-- [Acode](../situation/part-07/acode.md)
-- [Cn](../situation/part-02/cn.md)
-- [La](../situation/part-01/la.md)
-- [Na](../situation/part-01/na.md)
-- [Pl](../situation/part-02/pl.md)
-- [Pu](../situation/part-02/pu.md)
-- [Sa](../situation/part-01/sa.md)
-- [Wa](../situation/part-01/wa.md)
+- [Accepting code](../situation/part-07/acode.md)
+- [Consumption table of a situation](../situation/part-02/cn.md)
+- [Label/state code of a situation](../situation/part-01/la.md)
+- [Next label/state code of a situation](../situation/part-01/na.md)
+- [Push-count table of a situation](../situation/part-02/pl.md)
+- [Pushed-symbol table of a situation](../situation/part-02/pu.md)
+- [Position of a situation's variable](../situation/part-01/sa.md)
+- [Window symbol code of a situation](../situation/part-01/wa.md)
 
 ## Sources
 

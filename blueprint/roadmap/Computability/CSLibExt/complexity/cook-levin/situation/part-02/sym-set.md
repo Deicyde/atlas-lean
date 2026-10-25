@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.symSet
 ---
 
-# B2's `Γfin k`
+# Pushable and input symbols of a stack
 
-**B2's `Γfin k`**: every symbol any statement tree can push on stack `k`, plus all of `Γ k₀`
-for the input stack.
+**Pushable and input symbols of a stack.** For a finite multi-stack Turing machine $M$ and a
+stack $k$ of $M$, this is the finite set of symbols of stack $k$ consisting of every symbol that
+some push node on stack $k$ in the statement of some label of $M$ pushes in some state, together
+with, when $k$ is the input stack $k_0$, every symbol of the alphabet of $k_0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Push FS](push-fs.md)
+- [Finite set of pushable symbols](push-fs.md)
 
 ## Sources
 

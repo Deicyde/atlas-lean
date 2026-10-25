@@ -12,14 +12,14 @@ lean: Cslib.Decidability.exists_not_tm2Recognizable_not_pcp
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
-- [PCP](../pcp/pcp.md)
-- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
+- [The Post correspondence problem](../pcp/pcp.md)
+- [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable pcp](../pcp/tm2-recognizable-pcp.md)
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [PCP is Turing-recognizable](../pcp/tm2-recognizable-pcp.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 - [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
 - [Post's theorem, contrapositive](not-tm2-recognizable-not-of.md)
 

@@ -6,26 +6,26 @@ navigation: module
 
 ## The instance codec
 
-- [Decode P encode P](decode-p-encode-p.md)
-- [Decode P eq some](decode-p-eq-some.md)
-- [Encode P inj](encode-p-inj.md)
+- [Decoding inverts the PATH instance encoding](decode-p-encode-p.md)
+- [The PATH instance parser succeeds exactly on encodings](decode-p-eq-some.md)
+- [The PATH instance encoding is injective](encode-p-inj.md)
 
 ## Marks
 
-- [Get D set true](get-d-set-true.md)
-- [Init Marks get D](init-marks-get-d.md)
-- [Length mark Pass](length-mark-pass.md)
-- [Mark Pass mono](mark-pass-mono.md)
-- [Mark Pass sound](mark-pass-sound.md)
-- [Mark Pass closed](mark-pass-closed.md)
-- [Count lt of get D imp](count-lt-of-get-d-imp.md)
-- [Mark Pass eq or count lt](mark-pass-eq-or-count-lt.md)
-- [Length iterate mark Pass](length-iterate-mark-pass.md)
-- [Iterate mark Pass mono](iterate-mark-pass-mono.md)
-- [Length reach Marks](length-reach-marks.md)
-- [Mark Pass reach Marks](mark-pass-reach-marks.md)
+- [Setting an entry of a boolean list to true](get-d-set-true.md)
+- [The initial marks mark exactly the source, if it is a vertex](init-marks-get-d.md)
+- [A marking pass preserves the length](length-mark-pass.md)
+- [Marks persist through a pass](mark-pass-mono.md)
+- [Soundness of a pass](mark-pass-sound.md)
+- [A pass marks the heads of arcs with marked tails](mark-pass-closed.md)
+- [Counting true entries of pointwise dominated boolean lists](count-lt-of-get-d-imp.md)
+- [A pass either changes nothing or adds a mark](mark-pass-eq-or-count-lt.md)
+- [Repeated marking passes preserve the length](length-iterate-mark-pass.md)
+- [Marks survive repeated passes](iterate-mark-pass-mono.md)
+- [The final marks have one entry per vertex](length-reach-marks.md)
+- [Repeated passes reach a fixpoint](mark-pass-reach-marks.md)
 
 ## Correctness
 
-- [Reach Marks get D iff](reach-marks-get-d-iff.md)
-- [Path Dec eq path Check](path-dec-eq-path-check.md)
+- [The final marks are exactly the reachable vertices](reach-marks-get-d-iff.md)
+- [The marking algorithm decides PATH](path-dec-eq-path-check.md)

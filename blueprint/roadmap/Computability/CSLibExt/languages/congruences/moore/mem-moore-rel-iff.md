@@ -6,20 +6,23 @@ proof: formalized
 lean: DFA.mem_mooreRel_iff
 ---
 
-# Correctness of the refinement
+# Correctness of Moore's refinement
 
-**Correctness of the refinement**: Moore's relation is equality of continuation languages.
+**Correctness of Moore's refinement.** For a DFA $M$ over a finite alphabet with finitely
+many states, two states $p$ and $q$ of $M$ are related by Moore's relation if and only if they
+have the same continuation language: for every word $w$, $M$ started at $p$ accepts $w$ exactly
+when $M$ started at $q$ accepts $w$.
 
 ## Depends on
 
-- [Moore Rel](moore-rel.md)
+- [Moore's relation](moore-rel.md)
 
 ## Proof depends on
 
-- [Moore Iter](moore-iter.md)
-- [Moore Iter spec](moore-iter-spec.md)
-- [Moore Step](moore-step.md)
-- [Subset moore Rel](subset-moore-rel.md)
+- [Stopping Moore iteration](moore-iter.md)
+- [Output of the stopping Moore iteration](moore-iter-spec.md)
+- [Moore refinement step](moore-step.md)
+- [Moore's relation contains every post-fixed point](subset-moore-rel.md)
 - [Gfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
 
 ## Sources

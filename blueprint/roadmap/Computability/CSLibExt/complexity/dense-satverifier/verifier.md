@@ -5,34 +5,39 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Verifier.verifier
 ---
 
-# Verifier
+# Polynomial-time verifier for dense CNF-SAT
 
-The verifier decides `check` on `w # y` in polynomial time.
+**Polynomial-time verifier for dense CNF-SAT.** The verifier machine computes, in polynomial
+time, the map sending a pair $(w, y)$ of bit lists to the Boolean $\mathrm{check}(w, y)$, which
+is true exactly when $y$ satisfies the CNF formula decoded from $w$. The pair is given as the
+input $w \# y$ (the bits of $w$, a separator $\#$, then the bits of $y$), the output is the
+single bit $\mathrm{check}(w, y)$, and the machine halts within $2(n + 5)^2$ steps on an input
+of length $n$.
 
 ## Depends on
 
-- [G](g.md)
-- [Pair Encode](pair-encode.md)
-- [Check](../dense-sat/check.md)
+- [Work alphabet of the dense-SAT verifier](g.md)
+- [Pair encoding $w \# y$](pair-encode.md)
+- [Dense CNF-SAT certificate check](../dense-sat/check.md)
 
 ## Proof depends on
 
-- [Lab](lab.md)
-- [St](st.md)
-- [T](t.md)
-- [W](w.md)
-- [Enc](enc.md)
-- [Enc R](enc-r.md)
-- [Mk V](mk-v.md)
-- [Prefix run](prefix-run.md)
-- [Prog](prog.md)
-- [Scan](scan.md)
-- [Stk](stk.md)
-- [Time](time.md)
-- [Tm](tm.md)
-- [Total Steps](total-steps.md)
-- [Γ](untitled.md)
-- [Eval CNF](../dense-sat/eval-cnf.md)
+- [Labels of the dense-SAT verifier](lab.md)
+- [Machine states of the verifier](st.md)
+- [Step count of the verifier's main scan](t.md)
+- [Work stacks of the dense CNF-SAT verifier](w.md)
+- [Left-tagged encoding of a bit list](enc.md)
+- [Right-tagged encoding of a certificate](enc-r.md)
+- [Work stacks from four lists](mk-v.md)
+- [Splitting the verifier input](prefix-run.md)
+- [The dense CNF-SAT verifier program](prog.md)
+- [The verifier's main scan](scan.md)
+- [All stacks of the verifier from work stacks and output](stk.md)
+- [Time bound of the dense CNF-SAT verifier](time.md)
+- [The dense CNF-SAT verifier machine](tm.md)
+- [Step count of the dense CNF-SAT verifier](total-steps.md)
+- [Stack alphabets of the dense CNF-SAT verifier](untitled.md)
+- [Single-pass evaluation of a dense CNF encoding](../dense-sat/eval-cnf.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

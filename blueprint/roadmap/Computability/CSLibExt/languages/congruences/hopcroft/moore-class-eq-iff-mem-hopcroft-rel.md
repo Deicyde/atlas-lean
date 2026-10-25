@@ -6,23 +6,25 @@ proof: formalized
 lean: DFA.mooreClass_eq_iff_mem_hopcroftRel
 ---
 
-# Moore Class eq iff mem hopcroft Rel
+# Moore classes are Hopcroft blocks
 
-The classes of Moore's minimal automaton `DFA.mooreDFA` are the blocks of Hopcroft's
-partition (restricted to reachable states).
+**Moore classes are Hopcroft blocks.** For a DFA $M$ and reachable states $p$ and $q$ of $M$,
+the classes of $p$ and $q$ under Moore's equivalence on reachable states (the states of Moore's
+minimal automaton) are equal if and only if $p$ and $q$ share a block of Hopcroft's final
+partition of $M$.
 
 ## Depends on
 
-- [Moore State](../moore/moore-state.md)
-- [Hopcroft Rel](hopcroft-rel.md)
-- [Moore Class](../moore/moore-class.md)
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [States of Moore's automaton](../moore/moore-state.md)
+- [Hopcroft's relation](hopcroft-rel.md)
+- [Moore class of a reachable state](../moore/moore-class.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Proof depends on
 
-- [Correctness](mem-hopcroft-rel-iff.md)
-- [Correctness of the refinement](../moore/mem-moore-rel-iff.md)
-- [Moore Setoid](../moore/moore-setoid.md)
+- [Correctness of Hopcroft's algorithm](mem-hopcroft-rel-iff.md)
+- [Correctness of Moore's refinement](../moore/mem-moore-rel-iff.md)
+- [Moore equivalence on reachable states](../moore/moore-setoid.md)
 
 ## Sources
 

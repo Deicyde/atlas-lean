@@ -8,33 +8,40 @@ lean: Cslib.Decidability.Grammar.mismatch_mem
 
 # Every mismatched word is derivable from the mismatch nonterminal
 
-**Every mismatched word is derivable from the mismatch nonterminal.**
+**Every mismatched word is derivable from the mismatch nonterminal.** Let $P$ be a list of
+dominoes over a finite alphabet, $s$ a map from dominoes to words (in use, the top or the bottom),
+$w_i = s(d_i)$ for the $i$-th domino $d_i$ of $P$, and $\mathrm{code}(i)$ the unary code of $i$ as
+bits. Let $A$ be a nonterminal such that every mismatch production of $A$ for $s$ and $P$ is a
+production of the universality grammar of $P$. Then for every nonempty sequence
+$i_1, \dots, i_n$ of indices below $|P|$ and every word $x$ of letters with
+$x \ne w_{i_1} \cdots w_{i_n}$, the word $x\,\mathrm{code}(i_n) \cdots \mathrm{code}(i_1)$ is
+derivable from $A$ in the universality grammar of $P$.
 
 ## Depends on
 
-- [Bit Codes](bit-codes.md)
-- [Flat](../cfgundecidable/flat.md)
-- [Mismatch Rules](mismatch-rules.md)
+- [Concatenated code of an index sequence](bit-codes.md)
+- [The letter part of an index sequence](../cfgundecidable/flat.md)
+- [The mismatch productions](mismatch-rules.md)
 - [The universality grammar](univ-grammar.md)
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Language From](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Proof depends on
 
-- [All Letters](all-letters.md)
-- [Base Rules](base-rules.md)
-- [Bit Code](bit-code.md)
-- [Domino](../cfgundecidable/domino.md)
-- [Exists mismatch of not prefix](exists-mismatch-of-not-prefix.md)
-- [Mem eval Form one](mem-eval-form-one.md)
-- [Mem eval Form two](mem-eval-form-two.md)
-- [Mem mismatch Rules](mem-mismatch-rules.md)
-- [Others](others.md)
-- [U Bit](u-bit.md)
-- [U Letter](u-letter.md)
-- [U Nt](u-nt.md)
+- [List of all letters](all-letters.md)
+- [Domino-independent productions of the universality grammar](base-rules.md)
+- [Unary code of an index](bit-code.md)
+- [The $i$-th domino of a list](../cfgundecidable/domino.md)
+- [A word that does not start with $w$ leaves $w$ at some position](exists-mismatch-of-not-prefix.md)
+- [Evaluating a form with one nonterminal](mem-eval-form-one.md)
+- [Evaluating a form with two nonterminals](mem-eval-form-two.md)
+- [The mismatch productions](mem-mismatch-rules.md)
+- [The letters other than a given letter](others.md)
+- [Encoded bit terminal](u-bit.md)
+- [Encoded letter terminal](u-letter.md)
+- [Encoded nonterminal](u-nt.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)

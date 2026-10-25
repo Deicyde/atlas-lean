@@ -38,7 +38,7 @@ $\beta = 3V^2 + 12V + (\ell + 2)(6V + 9) + (2g + 4)N_b + g + 10$.
 - [Step bound for one loop iteration (initial-row generator)](body-b.md)
 - [Stacks of a counter machine with an extra input stack](emb.md)
 - [The generator](iprog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

@@ -37,13 +37,13 @@ variables whose literals are those of the pushed-fill clause $(t, i, k, j)$.
 - [Labels of the cell-shift generator](gl.md)
 - [Entry label of the pushed-fill chain](pf-from.md)
 - [Labels of the shift generator](lab.md)
-- [ST](st.md)
-- [WF](wf.md)
+- [Setup and loop stages of a cell-shift block](st.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
 - [Step bound for one clause](clause-b.md)
 - [First cell variable of a block](kbv.md)
 - [Literals of a pushed-fill clause](pf-lits.md)
 - [The cell-shift generator](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

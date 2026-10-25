@@ -12,7 +12,7 @@ Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`).
 
 ## Depends on
 
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Proof depends on
 

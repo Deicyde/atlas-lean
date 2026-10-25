@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.ret
 ---
 
-# Ret
+# Return label of the fresh-literal subroutine
 
-Where the fresh-literal subroutine returns: to the name of the pending literal of polarity
-`p` after `(fresh z, true)` (`s = true`), or to closing the output clause after
-`(fresh z, false)`.
+**Return label of the fresh-literal subroutine.** For Booleans $s$ and $x$, the label where
+the emitter continues after prepending the fresh literal of polarity $s$ is
+$\mathrm{body}(\text{false}, x)$ if $s$ is true, which copies the name of the pending literal of
+polarity $x$, and $\mathrm{sfx}(x)$ if $s$ is false, which closes the output clause, $x$ being
+the first-literal flag.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Control labels of the SAT-to-3SAT emitter](lab.md)
 
 ## Sources
 

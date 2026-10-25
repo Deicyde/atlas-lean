@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.part_committed_coord_committed
 ---
 
-# Part committed coord committed
+# A committed participant has a committed coordinator
 
-AC1 between a participant and the coordinator: a committed participant
-has a committed coordinator.
+**A committed participant has a committed coordinator.** In every reachable state of the
+two-phase commit protocol, if some participant has committed, then the coordinator has
+committed.
+
+This is the atomicity condition AC1 of Bernstein, Hadzilacos and Goodman between a participant
+and the coordinator.
 
 ## Depends on
 
-- [Coord State](coord-state.md)
-- [Part State](part-state.md)
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Coordinator states](coord-state.md)
+- [Participant states in two-phase commit](part-state.md)
+- [Reachable states of two-phase commit](reachable.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Inv reachable](inv-reachable.md)
+- [Two-phase commit invariant](inv.md)
+- [The two-phase commit invariant holds in reachable states](inv-reachable.md)
 
 ## Sources
 

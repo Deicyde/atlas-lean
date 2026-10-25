@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.lenBound
 ---
 
-# Len Bound
+# Right-hand side length bound
 
-A bound on the lengths of the right-hand sides, at least `2`: the largest length, or `2`.
+**Right-hand side length bound.** For an encoded grammar $g$, the length bound is the maximum
+of $2$ and the lengths of the right-hand sides of the productions of $g$.
 
 ## Depends on
 

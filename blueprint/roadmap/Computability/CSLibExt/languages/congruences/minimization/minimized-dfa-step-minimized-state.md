@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Language.minimizedDFA_step_minimizedState
 ---
 
-# Minimized DFA step minimized State
+# Transitions of the minimized DFA on reached states
 
-The transition reached from a semantic state represented by `x` is the semantic state
-represented by appending the input letter.
+**Transitions of the minimized DFA on reached states.** Let $M$ be a DFA, and for a word $x$
+let $[x]$ be the language accepted by $M$ from the state that $M$ reaches on $x$. For every word
+$x$ and every letter $a$, the minimized DFA of $M$ moves from the state $[x]$ on input $a$ to the
+state $[xa]$.
 
 ## Depends on
 
 - [Minimized DFA](minimized-dfa.md)
-- [Minimized State](minimized-state.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual reached by a word](minimized-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on
 
-- [Left Quotient accepts From](left-quotient-accepts-from.md)
-- [Minimized DFA step val](minimized-dfa-step-val.md)
+- [Left quotients of continuation languages](left-quotient-accepts-from.md)
+- [Transitions of the minimized DFA](minimized-dfa-step-val.md)
 
 ## Sources
 

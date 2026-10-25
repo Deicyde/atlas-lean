@@ -6,9 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.sdef_time
 ---
 
-# Sdef time
+# Time bound of the situation-definition generator on the tables of a machine
 
-S-definition family of the real machine (`D3Fam` with `na := sa`).
+**Time bound of the situation-definition generator on the tables of a machine.** Let $M$ be a
+finite multi-stack Turing machine with window depth $d$, let $E$ be an encoding of $M$ with $A_0$
+label/state codes and $N$ situations, and let $H \ge d$ and $T \in \mathbb{N}$. Run the
+transition-clause generator for the layout of $E$, the current-code table $\mathrm{la}$ of $E$,
+the table $\mathrm{sa}(i) = A_0 + i$ (the position of the variable of situation $i$) in place of
+the next-code table, the window table $\mathrm{wa}$ of $E$ and $N$ situations, started at its
+first precomputation stage, in state false, with $T$ on the time counter and $H$ on the height
+counter in unary, all other counters empty, and an arbitrary list $o$ of bits on the output
+stack. Then within $c\,(T + H + 1)^5$ steps, where $c$ is the constant of the generator's time
+bound for this layout and $N$, it reaches its final label $\mathsf{done}$, in some state, with
+stacks whose output stack holds the encoding of the transition clause family for this layout,
+$\mathrm{la}$, $\mathrm{sa}$, $\mathrm{wa}$, $T$, $H$ and $N$, followed by $o$.
 
 ## Depends on
 
@@ -23,20 +34,20 @@ S-definition family of the real machine (`D3Fam` with `na := sa`).
 - [Constant of the generator's time bound](../../family/gen-c.md)
 - [Initial counters of the transition-clause generator](../../family/init-f.md)
 - [Prog](../../family/prog.md)
-- [Enc](../part-01/enc.md)
-- [N](../part-01/n.md)
-- [La](../part-01/la.md)
-- [Layout](../part-01/layout.md)
-- [Sa](../part-01/sa.md)
-- [Wa](../part-01/wa.md)
-- [Depth](../part-01/depth.md)
-- [Encode CNF](../../../dense-sat/encode-cnf.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [Number of situations](../part-01/n.md)
+- [Label/state code of a situation](../part-01/la.md)
+- [Clause layout of a machine encoding](../part-01/layout.md)
+- [Position of a situation's variable](../part-01/sa.md)
+- [Window symbol code of a situation](../part-01/wa.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [Dense encoding of a CNF formula](../../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Polynomial time bound for the clause-family generator](../../family/gen-time.md)
-- [Wf sdef](wf-sdef.md)
+- [The situation-definition tables of a machine are well formed](wf-sdef.md)
 
 ## Sources
 

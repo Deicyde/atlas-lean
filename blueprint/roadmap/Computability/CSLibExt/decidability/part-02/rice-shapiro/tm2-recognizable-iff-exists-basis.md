@@ -14,8 +14,8 @@ functions in some recognizable set of graphs.
 
 ## Depends on
 
-- [Is Graph](is-graph.md)
-- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Graphs of finite functions](is-graph.md)
+- [Recognizability by multi-stack machines](../../part-01/basic/tm2-recognizable.md)
 
 ## Proof depends on
 

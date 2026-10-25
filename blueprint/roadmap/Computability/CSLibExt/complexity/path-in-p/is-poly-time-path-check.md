@@ -8,11 +8,13 @@ lean: Cslib.Complexity.Path.isPolyTime_pathCheck
 
 # The marking algorithm is polynomial-time
 
-**The marking algorithm is polynomial-time.**
+**The marking algorithm is polynomial-time.** The marking algorithm for PATH, as a function
+from bit strings to booleans, is computable in polynomial time by a Turing machine with respect
+to the canonical bitstring encodings of lists of booleans and of booleans.
 
 ## Depends on
 
-- [Path Check](../path/path-check.md)
+- [The marking algorithm for PATH](../path/path-check.md)
 - [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,16 +27,16 @@ lean: Cslib.Complexity.Path.isPolyTime_pathCheck
 
 ## Proof depends on
 
-- [Comp](../host/comp.md)
+- [Component machine](../host/comp.md)
 - [Decider host](../host/is-poly-time-decider.md)
 - [K](../path-machine/k.md)
 - [Lab](../path-machine/lab.md)
-- [Prog](../path-machine/prog.md)
-- [The marking machine](../path-machine/run.md)
-- [Start](../path-machine/start.md)
-- [Γ](../path-machine/untitled.md)
-- [Path Comp](path-comp.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [The marking machine for PATH](../path-machine/prog.md)
+- [Running time and output of the marking machine](../path-machine/run.md)
+- [Start label of the PATH marking machine](../path-machine/start.md)
+- [Stack alphabets of the PATH marking machine](../path-machine/untitled.md)
+- [The marking machine as a host component](path-comp.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 

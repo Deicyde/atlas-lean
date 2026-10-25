@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.runI_haltList
 ---
 
-# Plumbing link
+# The idle-extended run stays at the halting configuration
 
-**Plumbing link.** If the machine outputs `l'` from `initList M s` within `p` steps (the repo's
-`TM2OutputsInTime`), then from row `p` on the idle-extended run *is* `haltList M l'`.
+**The idle-extended run stays at the halting configuration.** Let $M$ be a machine, $s$ a
+word over its input alphabet and $l'$ a list over its output alphabet. Suppose that $M$, started
+in the initial configuration on $s$, reaches the halting configuration with output $l'$ (halted,
+in the initial state, with $l'$ on the output stack and every other stack empty) in at most $p$
+steps. Then for every $T \ge p$, the configuration reached after $T$ steps of the idle-extended
+run of $M$ from the initial configuration on $s$ is that halting configuration.
 
 ## Depends on
 
-- [Run I](../part-03/run-i.md)
+- [Idle-extended run](../part-03/run-i.md)
 
 ## Proof depends on
 
-- [Run I halted](run-i-halted.md)
-- [Run I of iterate](run-i-of-iterate.md)
-- [Step I](../part-03/step-i.md)
+- [A halted configuration is fixed by the idle-extended run](run-i-halted.md)
+- [The idle-extended run follows the real run](run-i-of-iterate.md)
+- [Idle-extended step](../part-03/step-i.md)
 
 ## Sources
 

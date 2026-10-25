@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Host.φR
 ---
 
-# ΦR
+# Component labels in the reduction host
 
-Component labels in the reduction host: `done` starts the cleanup.
+**Component labels in the reduction host.** For a component with exit label $\mathit{done}$,
+the label $\mathit{done}$ is sent to the host's cleanup label with answer false, and every other
+component label $l$ to the host label that runs the component at $l$.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HLab](hlab.md)
+- [Component machine](comp.md)
+- [Labels of the generic host](hlab.md)
 
 ## Sources
 

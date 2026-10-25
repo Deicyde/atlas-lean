@@ -6,31 +6,34 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.forall_mem_language_univGrammar_iff
 ---
 
-# `univGrammar P` generates every word exactly when `P` has no solution
+# The universality grammar generates every word exactly when PCP has no solution
 
-**`univGrammar P` generates every word exactly when `P` has no solution.**
+**The universality grammar generates every word exactly when PCP has no solution.** Let
+$\alpha$ be a finite alphabet with decidable equality and let $P$ be a list of dominoes over
+$\alpha$. The universality grammar of $P$ generates every word over $\alpha \oplus \mathrm{Bool}$
+if and only if the Post correspondence problem $P$ has no solution.
 
 ## Depends on
 
 - [The universality grammar](univ-grammar.md)
-- [Domino](../pcp/domino.md)
-- [PCP](../pcp/pcp.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
+- [The Post correspondence problem](../pcp/pcp.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
-- [Bit Codes](bit-codes.md)
-- [Flat](../cfgundecidable/flat.md)
+- [Concatenated code of an index sequence](bit-codes.md)
+- [The letter part of an index sequence](../cfgundecidable/flat.md)
 - [The language of the universality grammar](language-univ-grammar.md)
-- [List Lang](list-lang.md)
-- [List Word](list-word.md)
-- [Malformed Lang](malformed-lang.md)
+- [List language of a PCP instance](list-lang.md)
+- [List word of an index sequence](list-word.md)
+- [Malformed words](malformed-lang.md)
 - [Every word is malformed or well formed](malformed-or-well-formed.md)
-- [Mismatch Lang](mismatch-lang.md)
+- [The mismatch language](mismatch-lang.md)
 - [Malformed words are in no list language](not-mem-list-lang-of-malformed.md)
-- [Not mem list Lang of mismatch](not-mem-list-lang-of-mismatch.md)
-- [PCP solutions are the common words of the top and bottom list languages](pcp-iff-exists-mem-list-lang.md)
-- [Univ Val](univ-val.md)
+- [Mismatched words are not in the list language](not-mem-list-lang-of-mismatch.md)
+- [A PCP instance is solvable exactly when its top and bottom list languages meet](pcp-iff-exists-mem-list-lang.md)
+- [Intended languages of the nonterminals of the universality grammar](univ-val.md)
 
 ## Sources
 

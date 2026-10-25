@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitColor.Src.k_ne_O
 ---
 
-# K ne O
+# Counter values of a quiescent state
 
-The value of a counter. -/
+**Counter values of a quiescent state.** For a quiescent state $m$ of the 3-coloring emitter,
+the value of the next-vertex counter is the next free vertex $n$ of $m$, that of the OR-output
+counter is the current OR output $r$ of $m$, and that of the earlier-literal counter is the
+earlier literal vertex $u$ of $m$. -/
 def MS.val (m : MS) : Src → ℕ
   | .n => m.n
   | .r => m.r
@@ -69,9 +72,9 @@ theorem runLe_cast {k k' : ℕ} {c d d' : TM2.Cfg Γ Lab Bool} (h : RunLe prog k
 
 ## Depends on
 
-- [K](k.md)
-- [Src](src.md)
-- [K](k-2.md)
+- [Stacks of the 3-coloring emitter](k.md)
+- [Counters read by copy sites](src.md)
+- [Stack of a counter](k-2.md)
 
 ## Sources
 

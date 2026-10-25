@@ -22,7 +22,7 @@ gap encoding of $\ell$ from slot $m'$ to $V$.
 
 ## Proof depends on
 
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 
 ## Sources
 

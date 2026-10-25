@@ -15,12 +15,12 @@ code is below $g$ because every input symbol is an effective symbol of the input
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [Enc](../situation/part-01/enc.md)
-- [Layout](../situation/part-01/layout.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
 
 ## Proof depends on
 
-- [G](../situation/part-01/g.md)
+- [Symbol-code bound](../situation/part-01/g.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.start
 ---
 
-# Start
+# Start label of the lookup machine
 
-The start label.
+**Start label of the lookup machine.** The lookup program starts at its initialization label
+$\mathsf{init}$.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Labels of the lookup machine](lab.md)
 
 ## Sources
 

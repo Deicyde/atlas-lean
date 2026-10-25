@@ -5,11 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Karp.DetoursNormal
 ---
 
-# Detours Normal
+# Normal clause detours
 
-Every clause vertex `j` of `p` is a detour inside one diamond row: `p` contains
-`a, j, b` where `{a, b}` is the pair `hpR m i (3 j + 1)`, `hpR m i (3 j + 2)` of some
-diamond `i`.
+**Normal clause detours.** Let $\varphi$ be a CNF formula with $m$ clauses and $k$ distinct
+variables, and write $R(i, l)$ for row vertex $l$ of diamond $i$ in the HAMPATH construction for
+$\varphi$. A list of vertices $p$ has normal detours when for every clause $j < m$ there is a
+diamond $i < k$ such that $p$ contains $R(i, 3j + 1), j, R(i, 3j + 2)$ or
+$R(i, 3j + 2), j, R(i, 3j + 1)$ as consecutive entries.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ diamond `i`.
 
 ## Proof depends on
 
-- [Ham Vars](ham-vars.md)
-- [Hp R](hp-r.md)
+- [Distinct variables of a formula](ham-vars.md)
+- [Row vertices of a diamond](hp-r.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

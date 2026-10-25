@@ -4,19 +4,19 @@ navigation: module
 
 # Impossibility
 
-- [Oral Protocol](oral-protocol.md)
-- [States eq of inbox eq](states-eq-of-inbox-eq.md)
-- [Init State](init-state.md)
-- [Init State self](init-state-self.md)
-- [Init State of ne](init-state-of-ne.md)
-- [State](state.md)
-- [Inbox](inbox.md)
-- [State zero](state-zero.md)
-- [State succ](state-succ.md)
-- [Decision](decision.md)
-- [Agreement](agreement.md)
-- [Validity](validity.md)
-- [Solves](solves.md)
+- [Oral-message protocol](oral-protocol.md)
+- [Local views determine states](states-eq-of-inbox-eq.md)
+- [Initial state of a general](init-state.md)
+- [Initial state of the commander](init-state-self.md)
+- [Initial state of a lieutenant](init-state-of-ne.md)
+- [Executions of an oral-message protocol](state.md)
+- [Messages received in a round](inbox.md)
+- [The start of an execution](state-zero.md)
+- [One round of an execution](state-succ.md)
+- [Decision of a general](decision.md)
+- [Agreement condition (IC1)](agreement.md)
+- [Validity in the Byzantine generals problem](validity.md)
+- [Solving the Byzantine generals problem](solves.md)
 
 ## The hexagon
 
@@ -25,7 +25,7 @@ navigation: module
 
 ## More generals: the simulation argument
 
-- [Simulate](simulate.md)
-- [State simulate](state-simulate.md)
-- [Solves simulate](solves-simulate.md)
-- [No protocol for `n` generals tolerates `m` traitors when `3 ≤ n ≤ 3 m`](not-solves-of-card-le-three-mul.md)
+- [Three generals simulating a protocol](simulate.md)
+- [The simulation is faithful](state-simulate.md)
+- [Simulation reduces many generals to three](solves-simulate.md)
+- [No protocol for $n$ generals tolerates $m$ traitors when $3 \le n \le 3m$](not-solves-of-card-le-three-mul.md)

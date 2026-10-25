@@ -21,7 +21,7 @@ numbers of entries whose keys strictly increase.
 
 ## Proof depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Cell](../clocked/cell.md)
 - [Cells Decode](cells-decode.md)
 - [Code Of Entries](code-of-entries.md)

@@ -8,20 +8,23 @@ lean: Cslib.Decidability.exists_not_tm2Recognizable_language_le
 
 # Inclusion of context-free languages is not recognizable
 
-**Inclusion of context-free languages is not recognizable**, over a finite alphabet.
+**Inclusion of context-free languages is not recognizable.** There is a finite alphabet $T$,
+with a primcodable encoding and decidable equality, such that the set of pairs $(g_1, g_2)$ of
+encoded context-free grammars over $T$ for which the language of $g_1$ is contained in the
+language of $g_2$ is not recognizable by a multi-stack Turing machine.
 
 ## Depends on
 
-- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
-- [All Words CFG](../pcpapplications/all-words-cfg.md)
-- [`ALL_CFG` is not recognizable](exists-not-tm2-recognizable-univ.md)
-- [Tm2 Recognizable of many One Reducible](../../part-02/undecidable/tm2-recognizable-of-many-one-reducible.md)
+- [Grammar of all words](../pcpapplications/all-words-cfg.md)
+- [Universality of context-free grammars is not recognizable](exists-not-tm2-recognizable-univ.md)
+- [Recognizability transfers along mapping reductions](../../part-02/undecidable/tm2-recognizable-of-many-one-reducible.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)

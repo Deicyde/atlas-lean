@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.State.setPart
 ---
 
-# Set Part
+# Updating one participant's state
 
-Set the state of one participant.
+**Updating one participant's state.** For a global state $s$, a participant $p$ and a
+participant state $x$, the updated state has the same coordinator state as $s$, gives
+participant $p$ the state $x$, and leaves the state of every other participant unchanged.
 
 ## Depends on
 
-- [Part State](part-state.md)
-- [State](state.md)
+- [Participant states in two-phase commit](part-state.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Coord State](coord-state.md)
+- [Coordinator states](coord-state.md)
 
 ## Sources
 

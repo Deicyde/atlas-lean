@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Karp.HamVerify.ifE
 ---
 
-# If E
+# Emptiness test
 
-Go to `e` if stack `k` is empty and to `ne` otherwise.
+**Emptiness test.** For a stack $k$ and labels $e$ and $ne$, the verifier instruction that
+looks at the top of stack $k$ without changing any stack, then goes to $e$ if $k$ is empty and
+to $ne$ otherwise.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Stmt](stmt.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
+- [Statements of the Hamiltonian-path verifier](stmt.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

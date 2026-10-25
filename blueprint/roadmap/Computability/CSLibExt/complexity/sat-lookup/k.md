@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.K
 ---
 
-# K
+# Stacks of the lookup machine
 
-Stacks: the query `T`, the table `B`, the stash `S`, the comparison scratch stacks `A`, `C`,
-and the value `V`.
+**Stacks of the lookup machine.** The lookup machine has six stacks: the query stack $T$, the
+table stack $B$, the stash $S$, the two scratch stacks $A$ and $C$ used for comparisons, and the
+value stack $V$.
 
 ## Depends on
 

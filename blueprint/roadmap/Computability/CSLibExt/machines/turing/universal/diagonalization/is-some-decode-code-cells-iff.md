@@ -19,7 +19,7 @@ code.
 
 ## Proof depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Cell](../clocked/cell.md)
 - [Cells](../clocked/cells.md)
 - [Entries](../clocked/entries.md)

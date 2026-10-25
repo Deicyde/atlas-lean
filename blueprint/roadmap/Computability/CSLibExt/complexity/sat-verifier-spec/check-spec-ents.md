@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.checkSpec_ents
 ---
 
-# Check Spec ents
+# The clause check on the occurrence table is the formula check
 
-Component 3's spec on the occurrence table is `checkCNF`.
+**The clause check on the occurrence table is the formula check.** For every CNF formula
+$\varphi$ and every list $w$ of bits, the clause check of $\varphi$ against the occurrence table
+of $\varphi$ and $w$ equals the value returned (ignoring the time count) by the formula check of
+$\varphi$ against $w$ that uses the variable occurrences of $\varphi$, in order, as its variable
+list.
 
 ## Depends on
 
-- [Check Spec](check-spec.md)
-- [Ents](ents.md)
+- [Clause check against an occurrence table](check-spec.md)
+- [Occurrence table of a formula and a witness](ents.md)
 - [Check CNF](../../sat-time-m/check-cnf.md)
 - [Vars Of](../../sat-time-m/vars-of.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Live Val](live-val.md)
-- [Live Val ents Of](live-val-ents-of.md)
+- [Live value of a name in a table](live-val.md)
+- [Table lookup agrees with the verifier's variable lookup](live-val-ents-of.md)
 - [Check CNF ret](../../sat-time-m/check-cnf-ret.md)
 - [Lookup Var](../../sat-time-m/lookup-var.md)
 - [Satisfies](../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)

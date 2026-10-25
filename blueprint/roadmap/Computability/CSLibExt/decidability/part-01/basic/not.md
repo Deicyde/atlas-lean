@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Decidability.TM2Decidable.not
 ---
 
-# Not
+# Decidability by multi-stack machines is closed under complement
 
-The complement of a decidable predicate is decidable.
+**Decidability by multi-stack machines is closed under complement.** Let $\alpha$ be a
+primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
+primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-stack machine, then
+so is its complement $\neg p$.
 
 ## Depends on
 
-- [TM2 Decidable](tm2-decidable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

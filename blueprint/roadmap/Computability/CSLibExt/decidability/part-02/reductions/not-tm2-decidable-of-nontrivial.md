@@ -8,12 +8,14 @@ lean: Cslib.Decidability.not_tm2Decidable_of_nontrivial
 
 # Rice's theorem
 
-**Rice's theorem** (Sipser's form): a nontrivial property of the computed partial function
-is undecidable.
+**Rice's theorem.** Let $C$ be a set of partial functions
+$\mathbb{N} \rightharpoonup \mathbb{N}$, and suppose there are partial recursive functions
+$f \in C$ and $g \notin C$. Then the property of a partial recursive code $c$ that the partial
+function computed by $c$ belongs to $C$ is not decidable by a multi-stack Turing machine.
 
 ## Depends on
 
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 

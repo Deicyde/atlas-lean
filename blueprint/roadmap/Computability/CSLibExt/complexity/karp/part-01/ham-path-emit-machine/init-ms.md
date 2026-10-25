@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.initMS
 ---
 
-# Init MS
+# Initial state of the HAMPATH emitter
 
-The initial state of the emitter: the token stack, the output stack `o`, the rest empty.
+**Initial state of the HAMPATH emitter.** For a CNF formula $\varphi$ and an output list $o$,
+the initial state is the quiescent state whose token stack holds the tokens of $\varphi$ in
+reverse reading order, whose output stack is $o$, and all of whose other stacks are empty and
+counters zero.
 
 ## Depends on
 
-- [MS](ms.md)
+- [Quiescent states of the HAMPATH emitter](ms.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Toks](../../../sat-verifier-spec/toks.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 
 ## Sources
 

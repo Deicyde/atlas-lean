@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.mv_run
 ---
 
-# Mv run
+# Exact runs of the dense-to-binary converter
 
-Exact `n`-step runs of the program. -/
+**Exact runs of the dense-to-binary converter.** For a natural number $n$ and configurations
+$c$ and $d$ of the converter program, $c$ leads to $d$ in exactly $n$ steps when the program,
+started at $c$, is at configuration $d$ after exactly $n$ steps. -/
 abbrev Run (n : ℕ) (c d : TM2.Cfg (fun _ : Stk => Bool) Lab (Option Bool)) : Prop :=
   TM2Program.Run prog n c d
 
@@ -17,13 +19,13 @@ abbrev Run (n : ℕ) (c d : TM2.Cfg (fun _ : Stk => Bool) Lab (Option Bool)) : P
 ## Depends on
 
 - [Lab](lab.md)
-- [Run](run.md)
-- [Stk](stk.md)
-- [Stk](stk-2.md)
+- [Exact runs of the dense-to-binary converter](run.md)
+- [Stacks of the dense-to-binary machine](stk.md)
+- [Stack contents of the converter](stk-2.md)
 
 ## Proof depends on
 
-- [Prog](prog.md)
+- [The dense-to-binary converter program](prog.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 

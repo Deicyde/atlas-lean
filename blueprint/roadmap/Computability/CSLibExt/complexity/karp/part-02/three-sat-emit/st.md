@@ -5,16 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.st
 ---
 
-# St
+# Stack contents of the SAT-to-3SAT emitter
 
-The state with token stack `t`, output `o`, fresh counter `z`, clause count `c`, and empty
-scratch counters.
+**Stack contents of the SAT-to-3SAT emitter.** For a list $t$ of tokens, a list $o$ of bits
+and $z, c \in \mathbb{N}$, $\mathrm{st}(t, o, z, c)$ is the stack contents of the emitter machine
+in which the token stack holds $t$, the output stack holds $o$, the fresh counter holds exactly
+$z$ copies of the clause token $\mathrm{cl}$, the output clause count holds exactly $c$ copies of
+$\mathrm{cl}$, and the two scratch counters are empty.
 
 ## Depends on
 
-- [K](k.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3SAT emitter](k.md)
+- [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Proof depends on
 

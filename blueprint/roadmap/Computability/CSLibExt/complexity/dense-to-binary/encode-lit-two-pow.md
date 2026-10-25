@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.encodeLit_two_pow
 ---
 
-# Encode Lit two pow
+# Binary codes of literals on variables one less than a power of two
 
-The binary literal code of `(2 ^ k - 1, b)`.
+**Binary codes of literals on variables one less than a power of two.** For every
+$k \in \mathbb{N}$ and every truth value $b$, the binary code of the literal of polarity $b$ on
+variable $2^k - 1$ is $k$ copies of $11$, followed by $0$, followed by the bit $b$.
 
 ## Depends on
 
-- [Encode Lit](../../cook-levin/encode-lit.md)
+- [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [Rep](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
-- [Delimit replicate](delimit-replicate.md)
-- [Encode Nat two pow sub one](encode-nat-two-pow-sub-one.md)
-- [Encode Nat Prefix](../../cook-levin/encode-nat-prefix.md)
+- [Self-delimiting code of a block of ones](delimit-replicate.md)
+- [The binary code of $2^k - 1$](encode-nat-two-pow-sub-one.md)
+- [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
 - [Delimit](../../../MathlibExt/complexity/delimit.md)
 
 ## Sources

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.isPolyTime_satVerifier
 ---
 
-# `satVerifier` is polynomial-time
+# The SAT verifier is polynomial-time
 
-**`satVerifier` is polynomial-time** in formal-math's canonical sense.
+**The SAT verifier is polynomial-time.** The function that maps a pair $(x, w)$ of bit
+strings to the Boolean answer of the SAT verifier on $(x, w)$ (its return value, ignoring its
+declared time cost) is polynomial-time computable under the canonical bitstring encodings.
 
 ## Depends on
 
@@ -25,13 +27,13 @@ lean: Cslib.Complexity.SatVerifier.Machine.isPolyTime_satVerifier
 
 ## Proof depends on
 
-- [Is3](../karp/part-02/three-sat/is3.md)
-- [Ans](ans.md)
-- [Is Poly Time ans](is-poly-time-ans.md)
-- [Check Spec](../sat-verifier-spec/check-spec.md)
-- [Ents](../sat-verifier-spec/ents.md)
+- [Three-literal clause test](../karp/part-02/three-sat/is3.md)
+- [Answer of the SAT host](ans.md)
+- [The SAT host's answer is polynomial-time](is-poly-time-ans.md)
+- [Clause check against an occurrence table](../sat-verifier-spec/check-spec.md)
+- [Occurrence table of a formula and a witness](../sat-verifier-spec/ents.md)
 - [Sat Verifier ret eq](../sat-verifier-spec/sat-verifier-ret-eq.md)
-- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources

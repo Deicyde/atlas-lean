@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Complexity.Karp.Filter3.back_run
 ---
 
-# Back run
+# The 3SAT filter's return phase moves the side stack back
 
-Moving every token back.
+**The 3SAT filter's return phase moves the side stack back.** For either value of the cap
+flag, all lists of symbols $M$ and $R$ such that every symbol of $M$ is a token symbol, and every
+value $v$ of the Boolean variable, there is a value $v'$ such that the 3SAT clause-length filter
+takes exactly $|M|$ steps from label $\mathsf{back}$ with variable $v$, token stack $R$ and side
+stack $M$ to label $\mathsf{back}$ with variable $v'$, token stack the reversal of $M$ on top of
+$R$, and empty side stack.
 
 ## Depends on
 
-- [Is Tok](is-tok.md)
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [St](st.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Token symbols of the 3SAT filter](is-tok.md)
+- [Stacks of the 3SAT clause-length filter](k.md)
+- [Labels of the 3SAT clause-length filter](lab.md)
+- [The clause-length filter program](prog.md)
+- [Filter stacks from two lists](st.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Stmt](stmt.md)
-- [Back step](back-step.md)
+- [Statements of the filter](stmt.md)
+- [One step of the 3SAT filter's return phase](back-step.md)
 
 ## Sources
 

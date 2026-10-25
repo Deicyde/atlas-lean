@@ -23,13 +23,13 @@ steps for an input of length `n`.
 
 ## Proof depends on
 
-- [BLab](blab.md)
-- [BStk](bstk.md)
-- [Enc Snd](../pair-encoding-converter/enc-snd.md)
+- [Labels of the bit-list converters](blab.md)
+- [Stacks of the bit-list converters](bstk.md)
+- [Converter encoding of the second component](../pair-encoding-converter/enc-snd.md)
 - [Run](run-2.md)
 - [Prog](prog-2.md)
 - [Tm](tm-2.md)
-- [Bstk](bstk-2.md)
+- [Stack contents of the bit-list converters](bstk-2.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 

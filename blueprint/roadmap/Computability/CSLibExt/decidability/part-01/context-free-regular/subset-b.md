@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.subsetB
 ---
 
-# Subset B
+# The inclusion test for a grammar and a DFA
 
-The inclusion test: the intersection with the complement is empty.
+**The inclusion test for a grammar and a DFA.** For an encoded context-free grammar $g$ and an
+encoded DFA $D$ over the same alphabet $T$, where $T$ has decidable equality, the inclusion test on
+$g$ and $D$ is the Boolean value of the emptiness test on $g$ and the complement of $D$.
 
 ## Depends on
 
@@ -17,7 +19,6 @@ The inclusion test: the intersection with the complement is empty.
 ## Proof depends on
 
 - [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
-- [The emptiness test](inter-empty-b.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.sat3Dec
 ---
 
-# Sat3 Dec
+# The 3SAT decision problem
 
-3SAT: the encodings of satisfiable CNF formulas with at most three literals per clause.
+**The 3SAT decision problem.** 3SAT accepts a bit string $x$ exactly when $x$ is the binary
+code of a satisfiable CNF formula in which every clause has at most three literals.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ lean: Cslib.Complexity.Karp.sat3Dec
 
 ## Proof depends on
 
-- [Is3](is3.md)
-- [Encode CNF](../../../../cook-levin/encode-cnf.md)
+- [Three-literal clause test](is3.md)
+- [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 

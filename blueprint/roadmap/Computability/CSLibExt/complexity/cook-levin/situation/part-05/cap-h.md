@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.capH
 ---
 
-# Cap H
+# Stack cap
 
-P2's stack cap (corrected): input bound `m`, run length `T`, per-step growth `d = depth M`.
+**Stack cap.** For natural numbers $m$, $T$ and $d$ (an input bound, a run length and a
+per-step growth), the stack cap is $H = m + (T + 1) d + 1$.
+
+It is used with $d$ the window depth of the machine.
 
 ## Depends on
 

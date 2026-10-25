@@ -6,20 +6,28 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGMap.tail_run
 ---
 
-# Tail run
+# Number output of the clique reduction machine
 
-The numbers: drain `B` as `true`s onto `O`, push `false`, drain `m.ctr` as `true`s.
+**Number output of the clique reduction machine.** Let $m$ be a mode of the machine and $C$
+its final counter stack ($A$ for the flip mode, $D$ for the vertex-cover mode). Let $n, c$ be
+natural numbers, $u$ a symbol of the alphabet of $C$, and $S$ stack contents in which the stack
+$B$ holds $U^n$ ($n$ copies of the unit symbol $U$) and $C$ holds $u^c$. Then for every Boolean
+local state $v$ there are a local state $v'$ and stack contents $S'$ such that the machine of
+mode $m$ runs in exactly $n + c + 3$ steps from label $\mathsf{outB}$ with local state $v$ and
+stacks $S$ to label $\mathsf{done}$ with local state $v'$ and stacks $S'$, and the output stack
+$O$ of $S'$ holds, from the top, $c$ copies of $\mathrm{true}$, then $\mathrm{false}$, then $n$
+copies of $\mathrm{true}$, then the contents of $O$ in $S$.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Ctr](ctr.md)
-- [U](u.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Counter unit symbol of the clique reduction machine](u.md)
+- [The KG-map machine](prog.md)
+- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 

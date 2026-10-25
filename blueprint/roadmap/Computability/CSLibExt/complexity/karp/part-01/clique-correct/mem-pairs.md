@@ -25,7 +25,7 @@ theorem vertexCoverDec_noKG : vertexCoverDec noKG = false :=
 
 ## Depends on
 
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

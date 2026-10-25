@@ -8,12 +8,14 @@ lean: Cslib.Decidability.not_turingReducible_halting
 
 # The halting set is not Turing reducible to a decidable set
 
-**The halting set is not Turing reducible to a decidable set.**
+**The halting set is not Turing reducible to a decidable set.** For every decidable set $q$ of
+natural numbers, the characteristic function of the halting set is not Turing reducible to the
+characteristic function of $q$.
 
 ## Depends on
 
-- [Char Fun](char-fun.md)
-- [Halting Set](halting-set.md)
+- [Characteristic function of a set of naturals](char-fun.md)
+- [Halting set](halting-set.md)
 
 ## Proof depends on
 

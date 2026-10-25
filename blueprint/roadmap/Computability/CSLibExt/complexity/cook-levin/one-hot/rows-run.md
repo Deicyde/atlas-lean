@@ -36,8 +36,8 @@ $CB$) with flag false, the same counters, and output stack $e_y \, o$ (concatena
 - [Step budget for one one-hot clause](clause-b.md)
 - [The one-hot generator](prog.md)
 - [At-most-one clauses of the first rows of a cell](rows-cnf.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -47,8 +47,8 @@ $CB$) with flag false, the same counters, and output stack $e_y \, o$ (concatena
 - [At-most-one literals for a pair](amo-lits.md)
 - [One clause of the one-hot generator](clause-run.md)
 - [Generator run over one row of at-most-one clauses](row-run.md)
-- [CNF](../../dense-sat/cnf.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.isPolyTime_ans
 ---
 
-# Is Poly Time ans
+# The SAT host's answer is polynomial-time
 
-The host's answer is polynomial-time, uncapped or capped.
+**The SAT host's answer is polynomial-time.** For each value of the flag $\mathit{cap}$
+(with or without the three-literal clause filter), the host's answer, as a function from pairs
+$(x, w)$ of bit strings to Booleans, is polynomial-time computable under the canonical bitstring
+encodings.
 
 ## Depends on
 
-- [Ans](ans.md)
+- [Answer of the SAT host](ans.md)
 - [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,9 +28,9 @@ The host's answer is polynomial-time, uncapped or capped.
 
 ## Proof depends on
 
-- [Computable](../pair-encoding-converter/computable.md)
-- [G](../dense-satverifier/g.md)
-- [Pair Encode](../dense-satverifier/pair-encode.md)
+- [Polynomial-time conversion to the verifier's pair encoding](../pair-encoding-converter/computable.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
 - [The `TM2` SAT verifier](verifier.md)
 - [Tm2 Computable In Poly Time comp](../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 

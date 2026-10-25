@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal
 ---
 
-# Encode Nat bits Val
+# A bit list without trailing false is the binary code of its value
 
-A bit list not ending in `false` is the binary code of its value.
+**A bit list without trailing false is the binary code of its value.** For every bit list $l$
+whose last entry is not false (the empty list included), the binary code, least significant bit
+first, of the value of $l$ read least significant bit first is $l$ itself.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A bit list not ending in `false` is the binary code of its value.
 
 ## Proof depends on
 
-- [Bits Val cons](bits-val-cons.md)
+- [Value of a bit list with a leading bit](bits-val-cons.md)
 - [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources

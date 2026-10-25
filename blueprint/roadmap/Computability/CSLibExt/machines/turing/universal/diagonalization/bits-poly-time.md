@@ -16,7 +16,7 @@ The readout machine on raw bits, in the reduction host.
 
 ## Proof depends on
 
-- [Comp](../../../../complexity/host/comp.md)
+- [Component machine](../../../../complexity/host/comp.md)
 - [Reduction host](../../../../complexity/host/reduction.md)
 - [K](k.md)
 - [Lab](lab.md)

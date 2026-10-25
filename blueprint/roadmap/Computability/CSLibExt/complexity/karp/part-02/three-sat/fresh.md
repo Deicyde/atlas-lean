@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.fresh
 ---
 
-# Fresh
+# Fresh variable indices
 
-Fresh variable number `u`: the odd number `2 ^ (u + 1) + 1`.
+**Fresh variable indices.** For $u \in \mathbb{N}$, the $u$-th fresh variable has index
+$2^{u+1} + 1$, an odd number.
 
 ## Depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.StateEquivalent
 ---
 
-# State Equivalent
+# Equivalent states of a DFA
 
-States are observationally equivalent when they accept the same continuation language.
+**Equivalent states of a DFA.** Two states $p$ and $q$ of a DFA $M$ are equivalent when
+they accept the same continuation language: for every word $z$, running $M$ from $p$ on $z$
+ends in an accepting state if and only if running $M$ from $q$ on $z$ does.
 
 ## Depends on
 

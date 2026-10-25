@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Check CNF](check-cnf.md)
-- [Decode CNF](../cook-levin/decode-cnf.md)
+- [Decoding a complete length-prefixed CNF formula](../cook-levin/decode-cnf.md)
 - [Vars Of](vars-of.md)
 - [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 

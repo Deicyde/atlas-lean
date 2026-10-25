@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Karp.HamVerify.mid
 ---
 
-# Mid
+# Stack layout during a vertex step
 
-The stacks during the step on vertex `a`: `lay`, with `a` on `A`.
+**Stack layout during a vertex step.** For an edge list $es$, numbers $s, t, n, c, b, a$ and
+a list $q$ of vertices, the stacks of the verifier during the step on vertex $a$: the layout
+between vertex steps for $es, s, t, n, c, b, q$, except that stack $A$ holds $a$ in unary.
 
 ## Depends on
 
-- [K](k.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Proof depends on
 
-- [Lay](lay.md)
+- [Stack layout between vertex steps](lay.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources

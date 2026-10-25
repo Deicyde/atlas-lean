@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.eB
 ---
 
-# E B
+# Bit encoding of an edge
 
-The bits of an edge `(u, v)` in `encodeE`: `u` ones, `false`, `v` ones, `false`.
+**Bit encoding of an edge.** The bits of an edge $(u, v)$ in the edge-list encoding of a
+graph: $u$ copies of true, then false, then $v$ copies of true, then false.
 
 ## Depends on
 

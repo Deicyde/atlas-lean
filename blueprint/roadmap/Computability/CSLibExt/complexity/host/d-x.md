@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Host.dX
 ---
 
-# D X
+# Reading a bit of $x$
 
-Read an `x` symbol of the `x # w` input as a bit.
+**Reading a bit of $x$.** On the pair alphabet of the $x \# w$ input, the symbol that
+encodes a bit $b$ of $x$ (the left injection of $b$) is read as the bit $b$; every other symbol,
+the separator $\#$ or a bit of $w$ (both right injections), is read as no bit.
 
 ## Depends on
 
-- [G](../dense-satverifier/g.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.foldr_insV
 ---
 
-# Foldr ins V
+# Removing duplicates by insertion
 
-The distinct variables are the right fold of `insV`.
+**Removing duplicates by insertion.** For every list $l$ of natural numbers, folding $l$ from
+the right into the empty list, prepending each element unless it is already present, gives
+$l$ with duplicates removed: each element is kept at its last occurrence in $l$, in order.
 
 ## Depends on
 
-- [Ins V](ins-v.md)
+- [Insert a variable if new](ins-v.md)
 
 ## Sources
 

@@ -6,39 +6,44 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGMap.run
 ---
 
-# The component
+# Correctness and running time of the KG-map machine
 
-**The component.** From `start` with `x` on `X` (as `Sym.bit`s) and the other stacks empty,
-`prog m` reaches `done` within `3 · (|x| + 1)` steps with `m.f x` on `O`, top first.
+**Correctness and running time of the KG-map machine.** Let $m$ be a mode and $x$ a list of
+bits, and let $F_m$ be the clique-to-independent-set map on bit strings for flip and the
+independent-set-to-vertex-cover map for vc. From any configuration of the KG-map machine $M_m$
+at its start label, with any internal bit, in which stack $X$ holds the input symbols
+$\mathrm{bit}(b)$ for the bits $b$ of $x$, top first, and every other stack is empty, $M_m$
+reaches the halting label in at most $3(|x| + 1)$ steps with the output stack $O$ equal to
+$F_m(x)$, top first.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Mode](mode.md)
-- [F](f.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
+- [Reduction computed in each mode](f.md)
+- [The KG-map machine](prog.md)
+- [Start label of the KG-map machine](start.md)
+- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Fb](fb.md)
+- [Pair-bit transform of each mode](fb.md)
 - [Next](next.md)
-- [U](u.md)
-- [Mv run](mv-run.md)
-- [Out run](out-run.md)
-- [Rd K none](rd-k-none.md)
-- [Rd K some](rd-k-some.md)
-- [Rd N none](rd-n-none.md)
-- [Rd N some](rd-n-some.md)
-- [Sub gt](sub-gt.md)
-- [Sub le](sub-le.md)
-- [Encode KG](../../part-01/clique/encode-kg.md)
-- [No KG](../../part-01/clique/no-kg.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Counter unit symbol of the clique reduction machine](u.md)
+- [Moving the pair bits onto stack $Y$](mv-run.md)
+- [Output phase of the KG-map machine](out-run.md)
+- [Unterminated first unary number in the KG-map machine](rd-k-none.md)
+- [Reading the first unary number in the KG-map machine](rd-k-some.md)
+- [Unterminated second unary number in the KG-map machine](rd-n-none.md)
+- [Reading the second unary number in the KG-map machine](rd-n-some.md)
+- [Failed subtraction in the KG-map machine](sub-gt.md)
+- [Subtraction loop of the clique reduction machine](sub-le.md)
+- [Encoding of a graph instance](../../part-01/clique/encode-kg.md)
+- [Fixed no-instance](../../part-01/clique/no-kg.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Language.minimizedState
 ---
 
-# Minimized State
+# Residual reached by a word
 
-The semantic state reached by a word in `M`.
+**Residual reached by a word.** For a DFA $M$ and a word $x$, the minimized state of $x$ is the
+language accepted by $M$ starting from the state that $M$ reaches on reading $x$ from its start
+state, viewed as an element of the reachable residuals of $M$.
 
 ## Depends on
 
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Sources
 

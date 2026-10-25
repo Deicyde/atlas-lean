@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.toks_length_le
 ---
 
-# Toks length le
+# Token count is bounded by the encoding length
 
-The token stack is no longer than the encoding.
+**Token count is bounded by the encoding length.** For every CNF formula $\varphi$, the
+number of tokens of $\varphi$ is at most the length of the binary encoding of $\varphi$.
 
 ## Depends on
 
-- [Sym](sym.md)
-- [Toks](toks.md)
-- [Encode CNF](../../cook-levin/encode-cnf.md)
+- [Stack alphabet of the SAT verifier](sym.md)
+- [Token sequence of a CNF formula](toks.md)
+- [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Clause Toks](clause-toks.md)
-- [Clause Toks length le](clause-toks-length-le.md)
-- [Encode Clause](../../cook-levin/encode-clause.md)
+- [Tokens of a clause](clause-toks.md)
+- [A clause has at most as many tokens as code bits](clause-toks-length-le.md)
+- [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

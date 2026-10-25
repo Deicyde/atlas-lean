@@ -68,7 +68,7 @@ $w_a w_h w_s w_u w_i o$.
 - [Loop-body stages of the cell-shift generator](../shift/bd.md)
 - [Clause kinds of the cell-shift family](../shift/cl.md)
 - [Stages of the cell-shift literal routine](../shift/ls.md)
-- [ST](../shift/st.md)
+- [Setup and loop stages of a cell-shift block](../shift/st.md)
 - [Agree](../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 - [Embeds](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 - [Frame](../../../../MathlibExt/turing-machine/stack-embedding/frame.md)

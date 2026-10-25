@@ -20,7 +20,7 @@ slot is empty (all slots are empty if the variable is at least $V$).
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ slot is empty (all slots are empty if the variable is at least $V$).
 - [Literals of an accept code clause](code-lits.md)
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

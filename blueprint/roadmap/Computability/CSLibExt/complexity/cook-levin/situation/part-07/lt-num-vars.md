@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.lt_numVars
 ---
 
-# Lt num Vars
+# The all-true assignment satisfies a faithful clause with a positive literal
 
-The all-true assignment satisfies a faithful clause with a positive literal. -/
+**The all-true assignment satisfies a faithful clause with a positive literal.** Let
+$V \in \mathbb{N}$ and let $\ell$ be a list of literals that is faithful for $V$ and contains a
+positive literal $(p, \mathrm{true})$. Then the all-true assignment of length $V$ satisfies the
+dense clause over $V$ variables built from $\ell$. -/
 theorem sat_allTrue {V : ℕ} {ls : List (ℕ × Bool)} (hf : Faithful V ls) (hp : ∃ p, (p, true) ∈ ls) :
     clauseSat (Family.denseClause V ls) (List.replicate V true) := by
   obtain ⟨p, hp⟩ := hp

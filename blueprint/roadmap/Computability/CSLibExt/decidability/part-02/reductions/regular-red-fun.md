@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.regularRedFun
 ---
 
-# Regular Red Fun
+# Partial function of the halting-to-regularity reduction
 
-The function behind the reduction: on code `(c, n)` and input `x`, halt with `0` if `x` is a
-square, and otherwise run `c` on `n` and then output `0`.
+**Partial function of the halting-to-regularity reduction.** For a partial recursive code
+$c$ and natural numbers $n$ and $x$, the value at $((c, n), x)$ is $0$ if $x$ is a perfect
+square; otherwise it is defined exactly when $c$ halts on input $n$, and then it is $0$.
 
 ## Depends on
 

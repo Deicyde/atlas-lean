@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitClique.flatMap_reverse_length
 ---
 
-# Flat Map reverse length
+# Clique emitter: the instance prefix
 
-The prefix of the instance: `false`, `n` ones, `false`, `c` ones. -/
+**Clique emitter: the instance prefix.** Let $v$ be a Boolean, $d$ and $e$ stack-symbol lists,
+$o$ a list of bits and $c, n \in \mathbb{N}$. From label fin with flag $v$ and the state with
+empty token stack, output $o$, empty name stack, walked stack $d$, walk side $e$, clause count
+$c$, occurrence count $n$ and empty scratch stacks, the emitter machine reaches in exactly
+$n + c + 4$ steps label done with some flag and some state whose output, read top-down, is $c$
+ones, false, $n$ ones, false, then $o$. -/
 theorem fin_run :
     ∃ v' S', Run prog (n + c + 4) ⟨some .fin, v, st [] o [] d e c n⟩ ⟨some .done, v', S'⟩ ∧
       S' .O = List.replicate c true ++ false :: (List.replicate n true ++ false :: o) := by

@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Decidability.Grammar.contRule
 ---
 
-# Cont Rule
+# The continuation production
 
-The production `A → wᵢ A i`, for `wᵢ` the chosen side of the `i`-th domino.
+**The continuation production.** For a list $P$ of dominoes, a map $\sigma$ assigning a word
+over $\alpha$ to each domino, a nonterminal $A \in \mathbb{N}$ and an index $i \in \mathbb{N}$,
+this is the production $A \to w_i\, A\, i$ in encoded form, where $w_i$ is $\sigma$ applied to the
+$i$-th domino of $P$ (the domino with both words empty when $i$ is past the end of $P$): its
+right-hand side is the letters of $w_i$ as terminals, then the nonterminal $A$, then the index
+terminal $i$.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 
 ## Proof depends on
 
-- [Domino](domino.md)
-- [Index Sym](index-sym.md)
-- [Letter Sym](letter-sym.md)
-- [Nt Sym](nt-sym.md)
+- [The $i$-th domino of a list](domino.md)
+- [The encoded index terminal](index-sym.md)
+- [The encoded letter terminal](letter-sym.md)
+- [Encoded nonterminal symbol](nt-sym.md)
 
 ## Sources
 

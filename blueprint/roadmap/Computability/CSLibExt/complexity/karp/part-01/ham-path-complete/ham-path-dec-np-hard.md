@@ -12,8 +12,8 @@ lean: Cslib.Complexity.Karp.hamPathDec_npHard
 
 ## Depends on
 
-- [Ham Path Dec](../ham-path/ham-path-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [The HAMPATH problem](../ham-path/ham-path-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)
@@ -22,10 +22,10 @@ lean: Cslib.Complexity.Karp.hamPathDec_npHard
 
 - [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
 - [SAT ≤ HAMPATH is polynomial-time](is-poly-time-reduce-ham.md)
-- [Np Hard of poly Many One Red](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
-- [Reduce Ham](../ham-path/reduce-ham.md)
+- [NP-hardness transfers along reductions](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
+- [The SAT-to-HAMPATH reduction map](../ham-path/reduce-ham.md)
 - [SAT ≤ HAMPATH preserves membership](../ham-path-correct/sat-dec-eq-ham-path-dec-reduce-ham.md)
-- [Sat Dec](../../../../cook-levin/sat-dec.md)
+- [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

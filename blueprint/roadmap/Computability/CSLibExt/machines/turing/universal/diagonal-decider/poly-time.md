@@ -15,7 +15,7 @@ lean: Cslib.Turing.Universal.Diag.Check.polyTime
 
 ## Proof depends on
 
-- [Comp](../../../../complexity/host/comp.md)
+- [Component machine](../../../../complexity/host/comp.md)
 - [Reduction host](../../../../complexity/host/reduction.md)
 - [K](k.md)
 - [Lab](lab.md)

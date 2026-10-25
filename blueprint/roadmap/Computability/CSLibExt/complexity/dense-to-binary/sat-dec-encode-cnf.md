@@ -8,7 +8,10 @@ lean: Cslib.Complexity.DenseSAT.ToBinary.satDec_encodeCNF
 
 # The translation computes the binary encoding
 
-**The translation computes the binary encoding** of `binCNF φ` from the dense encoding. -/
+**The translation computes the binary encoding.** Let $\varphi$ be a dense CNF formula. Run the
+reversed-string translation on the reversal of the dense encoding of $\varphi$, starting with no
+clause open, literal count $0$, slot count $0$, clause count $0$ and empty output. The result is
+the binary encoding of the binary-index translation of $\varphi$. -/
 theorem conv_encodeCNF (φ : CNF) :
     conv (encodeCNF φ).reverse false 0 0 0 [] = Cslib.CookLevin.encodeCNF (binCNF φ) := by
   rw [encodeCNF, List.reverse_flatMap]
@@ -35,25 +38,25 @@ theorem conv_encodeCNF (φ : CNF) :
 
 ## Depends on
 
-- [Encode CNF](../../cook-levin/encode-cnf.md)
-- [Sat Dec](../../cook-levin/sat-dec.md)
+- [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
+- [SAT as a decision problem](../../cook-levin/sat-dec.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [SATLang](../../cook-levin/satlang.md)
-- [Decode CNF](../../cook-levin/decode-cnf.md)
-- [Decode CNFAux](../../cook-levin/decode-cnfaux.md)
-- [Decode Clause](../../cook-levin/decode-clause.md)
-- [Decode Clauses](../../cook-levin/decode-clauses.md)
-- [Decode Lit](../../cook-levin/decode-lit.md)
-- [Decode Lits](../../cook-levin/decode-lits.md)
-- [Decode Nat Prefix](../../cook-levin/decode-nat-prefix.md)
-- [Encode Clause](../../cook-levin/encode-clause.md)
-- [Encode Lit](../../cook-levin/encode-lit.md)
-- [Encode Nat Prefix](../../cook-levin/encode-nat-prefix.md)
-- [Read Unary Length](../../cook-levin/read-unary-length.md)
+- [The SAT language](../../cook-levin/satlang.md)
+- [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
+- [Decoding a length-prefixed CNF formula](../../cook-levin/decode-cnfaux.md)
+- [Decoding a length-prefixed clause](../../cook-levin/decode-clause.md)
+- [Decoding a fixed number of clauses](../../cook-levin/decode-clauses.md)
+- [Decoding a literal](../../cook-levin/decode-lit.md)
+- [Decoding a fixed number of literals](../../cook-levin/decode-lits.md)
+- [Decoding a prefix-coded natural number](../../cook-levin/decode-nat-prefix.md)
+- [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
+- [Binary code of a literal](../../cook-levin/encode-lit.md)
+- [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
+- [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Delimit](../../../MathlibExt/complexity/delimit.md)
 - [Undelimit](../../../MathlibExt/complexity/undelimit.md)

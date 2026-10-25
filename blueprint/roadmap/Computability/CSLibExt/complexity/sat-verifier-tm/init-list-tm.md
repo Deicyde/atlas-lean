@@ -6,10 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.initList_tm
 ---
 
-# Init List tm
+# Explicit step bound of the SAT verifier machine
 
-The step bound in terms of the input length `N`: everything before the cleanup, then the
-cleanup itself (all stacks are at most `N` plus the pushes so far), then the output step. -/
+**Explicit step bound of the SAT verifier machine.** For a flag $\mathit{cap}$ and an input
+length $N$, let $s(N) = (2N + 5) + (2N + 2) + (2N + 2) + (N(8N + 9) + 1)$ be the number of
+steps allowed before the cleanup, and let $p$ be the per-step push budget of the host machine
+with that flag. The total step bound is $s(N) + (N + p \cdot s(N)) + 2$.
+
+When the cleanup starts, every stack has length at most $N + p \cdot s(N)$; the cleanup and the
+output step then take at most that many steps plus $2$. -/
 noncomputable def totalSteps (N : ℕ) : ℕ :=
   preSteps N + (N + TM2Composition.pushBound (tm cap) * preSteps N) + 2
 
@@ -165,15 +170,15 @@ theorem host_run (x w : List Bool) :
 
 ## Depends on
 
-- [G](g.md)
-- [HLab](hlab.md)
-- [P0](p0.md)
-- [Init S](init-s.md)
-- [Tm](tm.md)
+- [Input alphabet of the SAT verifier host](g.md)
+- [Labels of the SAT verifier host](hlab.md)
+- [Phase-0 labels of the SAT verifier host](p0.md)
+- [Initial stacks of the SAT verifier host](init-s.md)
+- [The SAT verifier machine](tm.md)
 
 ## Proof depends on
 
-- [HK](hk.md)
+- [Stacks of the SAT verifier host](hk.md)
 
 ## Sources
 

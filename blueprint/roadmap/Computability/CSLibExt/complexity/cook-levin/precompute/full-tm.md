@@ -19,7 +19,7 @@ stack is the host's output stack.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -60,9 +60,9 @@ stack is the host's output stack.
 - [Labels of the cell-shift generator](../shift/gl.md)
 - [Stages of the cell-shift literal routine](../shift/ls.md)
 - [Precomputation stages of the shift generator](../shift/ps.md)
-- [ST](../shift/st.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
+- [Setup and loop stages of a cell-shift block](../shift/st.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
 
 ## Sources
 

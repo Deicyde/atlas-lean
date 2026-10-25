@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.flat_nil
 ---
 
-# Flat nil
+# Flattening the empty list
 
-No pairs, no bits.
+**Flattening the empty list.** The flattening of the empty list of pairs of bits is the empty
+list of bits.
 
 ## Depends on
 
-- [Flat](flat.md)
+- [Flattening pairs of bits](flat.md)
 
 ## Sources
 

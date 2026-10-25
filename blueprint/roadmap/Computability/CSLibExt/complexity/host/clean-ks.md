@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Host.cleanKs
 ---
 
-# Clean Ks
+# Stacks emptied by the cleanup
 
-The stacks the cleanup empties: all but the output stack `o`.
+**Stacks emptied by the cleanup.** For a component machine $c$ and a host stack $o$, the
+cleanup stacks are the list of all host stacks with $o$ removed, in the order of the list of
+host stacks. The cleanup empties these stacks and leaves the output stack $o$.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HK](hk.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
 
 ## Proof depends on
 
-- [All Ks](all-ks.md)
+- [The list of host stacks](all-ks.md)
 
 ## Sources
 

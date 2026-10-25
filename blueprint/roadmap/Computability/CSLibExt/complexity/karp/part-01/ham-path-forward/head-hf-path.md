@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.head?_hfPath
 ---
 
-# Head? hf Path
+# The forward path starts at the first top
 
-The path starts at the first top.
+**The forward path starts at the first top.** For $m$ clauses, $k$ diamonds, any
+clause-to-diamond map $c$ and any directions $d$, the forward path through the first $k$
+diamonds in directions $d$ with clause choice $c$ starts at the top $T_0 = m$ of diamond $0$.
 
 ## Depends on
 
-- [Hf Path](hf-path.md)
-- [Hp T](../ham-path/hp-t.md)
+- [The forward path through the diamonds](hf-path.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
 
 ## Proof depends on
 
-- [Hf Diamond](hf-diamond.md)
-- [Hf Row](hf-row.md)
+- [The visit of a diamond](hf-diamond.md)
+- [The row of a diamond with its clauses inserted](hf-row.md)
 
 ## Sources
 

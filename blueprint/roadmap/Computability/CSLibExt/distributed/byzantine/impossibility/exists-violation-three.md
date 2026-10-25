@@ -8,27 +8,30 @@ lean: Cslib.Distributed.Byzantine.Impossibility.OralProtocol.exists_violation_th
 
 # No protocol for three generals tolerates one traitor
 
-**No protocol for three generals tolerates one traitor** (Pease, Shostak and Lamport;
-proved by a commander version of the hexagon argument of Fischer, Lynch and Merritt). For
-every protocol for the generals `Fin 3` with commander `0`, and every number of rounds `T`,
-there are an order, a single traitor and a behaviour of the traitor for which IC1 or IC2
-fails.
+**No protocol for three generals tolerates one traitor.** Suppose there are at least two
+possible orders. For every oral-message protocol for three generals $0$, $1$, $2$ with commander
+$0$ and every number of rounds $T$, there are an order $v$, a general $t$ and a behaviour of $t$
+such that, in the execution with order $v$ in which $t$ is the only traitor, the agreement
+condition (IC1) or the validity condition (IC2) fails after $T$ rounds.
+
+This is the theorem of Pease, Shostak and Lamport, proved here by a commander version of the
+hexagon argument of Fischer, Lynch and Merritt.
 
 ## Depends on
 
-- [Oral Protocol](oral-protocol.md)
-- [Agreement](agreement.md)
-- [Validity](validity.md)
+- [Oral-message protocol](oral-protocol.md)
+- [Agreement condition (IC1)](agreement.md)
+- [Validity in the Byzantine generals problem](validity.md)
 
 ## Proof depends on
 
-- [Decision](decision.md)
-- [Inbox](inbox.md)
-- [Init State](init-state.md)
-- [Init State of ne](init-state-of-ne.md)
-- [State](state.md)
-- [State succ](state-succ.md)
-- [States eq of inbox eq](states-eq-of-inbox-eq.md)
+- [Decision of a general](decision.md)
+- [Messages received in a round](inbox.md)
+- [Initial state of a general](init-state.md)
+- [Initial state of a lieutenant](init-state-of-ne.md)
+- [Executions of an oral-message protocol](state.md)
+- [One round of an execution](state-succ.md)
+- [Local views determine states](states-eq-of-inbox-eq.md)
 
 ## Sources
 

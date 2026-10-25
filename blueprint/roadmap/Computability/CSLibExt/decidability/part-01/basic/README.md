@@ -4,19 +4,19 @@ navigation: module
 
 # Basic
 
-- [TM2 Decidable](tm2-decidable.md)
-- [TM2 Recognizable](tm2-recognizable.md)
-- [TM2 Co Recognizable](tm2-co-recognizable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
+- [Recognizability by multi-stack machines](tm2-recognizable.md)
+- [Co-recognizability by multi-stack machines](tm2-co-recognizable.md)
 
 ## Bridges to Mathlib
 
-- [Tm2 Decidable iff computable Pred](tm2-decidable-iff-computable-pred.md)
-- [Tm2 Recognizable iff re Pred](tm2-recognizable-iff-re-pred.md)
-- [Tm2 Co Recognizable iff re Pred not](tm2-co-recognizable-iff-re-pred-not.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](tm2-decidable-iff-computable-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](tm2-recognizable-iff-re-pred.md)
+- [Multi-stack co-recognizable predicates are exactly the co-r.e. predicates](tm2-co-recognizable-iff-re-pred-not.md)
 
 ## Decidable predicates
 
-- [Tm2 Recognizable](tm2-recognizable-2.md)
-- [Not](not.md)
-- [Tm2 Co Recognizable](tm2-co-recognizable-2.md)
-- [Post's theorem](tm2-decidable-iff-tm2-recognizable-and-t.md)
+- [Decidable predicates are recognizable by multi-stack machines](tm2-recognizable-2.md)
+- [Decidability by multi-stack machines is closed under complement](not.md)
+- [Decidable predicates are co-recognizable by multi-stack machines](tm2-co-recognizable-2.md)
+- [Post's theorem for multi-stack machines](tm2-decidable-iff-tm2-recognizable-and-t.md)

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.renLit
 ---
 
-# Ren Lit
+# Renaming a literal
 
-A literal with its variable renamed.
+**Renaming a literal.** The literal with variable index $n$ and polarity $b$ is renamed to
+the literal with variable index $2n$ and the same polarity $b$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ren](ren.md)
+- [Renaming of the original variables](ren.md)
 
 ## Sources
 

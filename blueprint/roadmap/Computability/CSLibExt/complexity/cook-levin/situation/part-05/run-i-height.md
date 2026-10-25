@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.runI_height
 ---
 
-# Run I height
+# Stack heights along a run
 
-Iterated `stepI_height`: `t` steps add at most `t · depth M` to each stack.
+**Stack heights along a run.** Let $M$ be a finite TM2 machine with window depth $d$, let $c$
+be a configuration and $k$ a stack. For every $t \in \mathbb{N}$, stack $k$ of the configuration
+reached from $c$ after $t$ steps of the idle-extended run has length at most the length of stack
+$k$ of $c$ plus $t \cdot d$.
 
 ## Depends on
 
-- [Depth](../part-01/depth.md)
-- [Run I](../part-03/run-i.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [Idle-extended run](../part-03/run-i.md)
 
 ## Proof depends on
 
-- [Step I](../part-03/step-i.md)
-- [Step I height](../part-04/step-i-height.md)
+- [Idle-extended step](../part-03/step-i.md)
+- [Stack heights grow by at most the window depth per step](../part-04/step-i-height.md)
 
 ## Sources
 

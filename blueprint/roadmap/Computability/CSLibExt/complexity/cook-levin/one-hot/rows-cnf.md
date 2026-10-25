@@ -15,13 +15,13 @@ its slot $i < V$ holds the literal on $p_i$ if there is one and is empty otherwi
 
 ## Depends on
 
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [At-most-one literals for a pair](amo-lits.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

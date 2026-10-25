@@ -19,7 +19,7 @@ from which the generator emits the blocks of situations $i < n$ and then ends th
 
 ## Proof depends on
 
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 
 ## Sources
 

@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.Karp.SSVerify.subsetSumDec_iff
 ---
 
-# SUBSET-SUM is verified by `ssCheck`
+# SUBSET-SUM is characterized by its verifier
 
-**SUBSET-SUM is verified by `ssCheck`**, with witnesses no longer than the input.
+**SUBSET-SUM is characterized by its verifier.** A bit string $x$ is a yes-instance of
+SUBSET-SUM if and only if there is a bit string $w$ with $|w| \le |x|$ such that the SUBSET-SUM
+verifier accepts $(x, w)$.
 
 ## Depends on
 
-- [Ss Check](ss-check.md)
-- [Subset Sum Dec](../subset-sum/subset-sum-dec.md)
+- [The SUBSET-SUM verifier](ss-check.md)
+- [The SUBSET-SUM problem](../subset-sum/subset-sum-dec.md)
 
 ## Proof depends on
 
-- [Decode SS](decode-ss.md)
-- [`decodeSS` inverts `encodeSS`](decode-ss-eq-some.md)
-- [Exists pick](exists-pick.md)
-- [Pick](pick.md)
-- [Encode SS](../subset-sum/encode-ss.md)
+- [Decoding a SUBSET-SUM instance](decode-ss.md)
+- [Decoding a SUBSET-SUM instance inverts its encoding](decode-ss-eq-some.md)
+- [Every sublist is selected by a mask](exists-pick.md)
+- [Numbers chosen by a mask](pick.md)
+- [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
 - [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources

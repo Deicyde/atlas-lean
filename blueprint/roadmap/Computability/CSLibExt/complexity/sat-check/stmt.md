@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Check.Stmt
 ---
 
-# Stmt
+# Clause-check statements
 
-Statements on the driver's stacks and labels.
+**Clause-check statements.** For a label set $L$, the statements of a multi-stack Turing
+machine with the eight driver stacks, each over the symbols of the token and table stacks, with
+labels in $D \sqcup L$, where $D$ is the set of driver labels, and with a Boolean internal
+state.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [DLab](dlab.md)
-- [K](k.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Driver labels of the clause check](dlab.md)
+- [Stacks of the clause check](k.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ No assumption on the verifier data is needed.
 - [Step bound of the composed machine](g-b.md)
 - [The reduction machine](g-tm.md)
 - [The formula emitted on a raw input](phi-of.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -81,14 +81,14 @@ No assumption on the verifier data is needed.
 - [Labels of the cell-shift generator](../shift/gl.md)
 - [Stages of the cell-shift literal routine](../shift/ls.md)
 - [Precomputation stages of the shift generator](../shift/ps.md)
-- [ST](../shift/st.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
-- [Depth](../situation/part-01/depth.md)
-- [Run I](../situation/part-03/run-i.md)
-- [Run I height](../situation/part-05/run-i-height.md)
-- [Run I of iterate](../situation/part-08/run-i-of-iterate.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Setup and loop stages of a cell-shift block](../shift/st.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
+- [Idle-extended run](../situation/part-03/run-i.md)
+- [Stack heights along a run](../situation/part-05/run-i-height.md)
+- [The idle-extended run follows the real run](../situation/part-08/run-i-of-iterate.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources

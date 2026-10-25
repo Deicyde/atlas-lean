@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.K
 ---
 
-# K
+# Stacks of the CLIQUE verifier
 
-Stacks: the input `X` and the witness `W`, the counters `C` (for `k`) and `N` (for `n`), the
-vertex stack `V` and its scratch stack `T`.
+**Stacks of the CLIQUE verifier.** The verifier machine for CLIQUE, INDEPENDENT-SET and
+VERTEX-COVER, run on an instance with target size $k$ and $n$ vertices, has six stacks: the
+input $X$, the witness $W$, the counter $C$ (holding $k$), the counter $N$ (holding $n$), the
+vertex stack $V$ and its scratch stack $T$.
 
 ## Depends on
 

@@ -6,30 +6,37 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGMap.out_run
 ---
 
-# Out run
+# Output phase of the KG-map machine
 
-The output phase: from `outY` with the reversed pair bits on `Y`, `n` on `B`, `c` on
-`m.ctr` and `O` empty, reach `done` with `O = encodeKG c n (r.map m.fb)`.
+**Output phase of the KG-map machine.** Let $m$ be a mode, $r$ a list of bits and $n$ and
+$c$ natural numbers. Consider a configuration of the KG-map machine $M_m$ at the label output
+pair bits, with any internal bit, in which stack $Y$ holds the symbols $\mathrm{val}(b)$ for the
+bits $b$ of $r$ in reverse order (the last bit of $r$ on top), stack $B$ holds $n$ copies of the
+unit symbol, the counter of $m$ ($A$ for flip, $D$ for vc) holds $c$ copies of some symbol, and
+the output stack $O$ is empty. Then in exactly $|r| + n + c + 4$ steps $M_m$ reaches the halting
+label with $O$ equal, top first, to the encoding of the instance with numbers $c$ and $n$ and
+pair bits $\beta_m(r)$: $c$ trues, a false, $n$ trues, a false, then $\beta_m(r)$, where
+$\beta_m$ negates every bit for flip and leaves the bits unchanged for vc.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 - [Ctr](ctr.md)
-- [Fb](fb.md)
-- [U](u.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Encode KG](../../part-01/clique/encode-kg.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Pair-bit transform of each mode](fb.md)
+- [Counter unit symbol of the clique reduction machine](u.md)
+- [The KG-map machine](prog.md)
+- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Encoding of a graph instance](../../part-01/clique/encode-kg.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Out Y run](out-y-run.md)
-- [Tail run](tail-run.md)
+- [Output loop for the pair bits of the KG-map machine](out-y-run.md)
+- [Number output of the clique reduction machine](tail-run.md)
 
 ## Sources
 

@@ -6,26 +6,32 @@ proof: formalized
 lean: Cslib.Complexity.Host.cleanup_run
 ---
 
-# Cleanup
+# Cleanup in a host
 
-**Cleanup** in a host program whose label `clean ans` is `cleanS (cleanKs c o)`: with every
-stack of length at most `m`, `fin ans` is reached within `m + 1` steps with only `o` left.
+**Cleanup in a host.** Let $c$ be a component machine, $\alpha$ an input alphabet, $o$ a host
+stack, $a$ a bit, and $M$ a host program with Boolean state whose statement at the cleanup label
+for $a$ is the cleanup round on the list of all host stacks with $o$ removed, kept in the order
+of the list of host stacks, repeating at the cleanup label for $a$ and exiting to the output
+label for $a$. If $S$ assigns to every host stack at most $m$ symbols, then for every state $v$,
+$M$ runs from the cleanup label for $a$ with state $v$ and stacks $S$ to the output label for $a$
+in at most $m + 1$ steps, ending with state false, stack $o$ holding $S(o)$ and every other stack
+empty.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [HΓ](h.md)
-- [Clean Ks](clean-ks.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Labels of the generic host](hlab.md)
+- [Alphabets of the generic host](h.md)
+- [Stacks emptied by the cleanup](clean-ks.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 - [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
 
 ## Proof depends on
 
-- [All Ks](all-ks.md)
-- [Mem clean Ks](mem-clean-ks.md)
+- [The list of host stacks](all-ks.md)
+- [Stacks emptied by the cleanup](mem-clean-ks.md)
 - [Cleanup](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 
 ## Sources

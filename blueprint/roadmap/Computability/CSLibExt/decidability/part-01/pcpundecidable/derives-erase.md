@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Decidability.TMRewriting.derives_erase
 ---
 
-# Derives erase
+# The halting symbol erases the tape
 
-The halting symbol erases the tape.
+**The halting symbol erases the tape.** Let $M$ be a single-tape Turing machine with finitely
+many states and tape symbols, and let $\vdash$, $\dashv$ be the end markers and $H$ the halting
+symbol of the rewriting system simulating $M$. For all words $X$ and $Y$ of tape symbols, the word
+$\vdash X\,H\,Y \dashv$ rewrites in zero or more steps of this rewriting system to the halting
+word $\vdash H \dashv$.
 
 ## Depends on
 
-- [Derives](../../part-02/string-rewriting/derives.md)
-- [TMSym](tmsym.md)
-- [Halt Word](halt-word.md)
-- [Rules](rules.md)
+- [Derivations in a string rewriting system](../../part-02/string-rewriting/derives.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
+- [The halting word](halt-word.md)
+- [The rewriting system simulating a Turing machine](rules.md)
 
 ## Proof depends on
 
-- [Rule](../../part-02/string-rewriting/rule.md)
-- [Step](../../part-02/string-rewriting/step.md)
-- [Rules For](rules-for.md)
+- [Rewriting rules](../../part-02/string-rewriting/rule.md)
+- [One-step rewriting](../../part-02/string-rewriting/step.md)
+- [The rules for one transition](rules-for.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ over $V$ variables with literals $\ell'$: order and repetitions in the lists are
 ## Depends on
 
 - [Dense clause from a list of literals](../family/dense-clause.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Proof depends on
 

@@ -26,14 +26,14 @@ stack holds exactly the one output symbol for $f_v(a, y)$ and whose other stacks
 - [Bits as indices](veqv.md)
 - [Separator symbol of the verifier](vsep.md)
 - [Input-bit symbol of the verifier](v.md)
-- [Run I](../situation/part-03/run-i.md)
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Idle-extended run](../situation/part-03/run-i.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 
 ## Proof depends on
 
 - [V input](v-input.md)
-- [Plumbing link](../situation/part-08/run-i-halt-list.md)
+- [The idle-extended run stays at the halting configuration](../situation/part-08/run-i-halt-list.md)
 
 ## Sources
 

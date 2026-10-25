@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Kolmogorov.not_rePred_le_K
 ---
 
-# `K` is not lower semicomputable
+# Kolmogorov complexity is not lower semicomputable
 
-**`K` is not lower semicomputable**: the relation `n ≤ K x` is not recognizable.
+**Kolmogorov complexity is not lower semicomputable.** Let $K$ denote Kolmogorov complexity.
+The set of pairs $(x, n)$ of a binary string $x$ and a natural number $n$ with $n \le K(x)$ is not
+recursively enumerable (recognizable).
 
 ## Depends on
 

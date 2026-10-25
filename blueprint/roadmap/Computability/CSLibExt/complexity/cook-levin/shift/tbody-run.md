@@ -6,9 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Shift.tbody_run
 ---
 
-# Tbody run
+# One iteration of the time loop of the shift generator
 
-One iteration of the time loop: `TW := t·W`, `TW1 := TW + W`, the situation chain, drains.
+**One iteration of the time loop of the shift generator.** Let $L$ be a layout with $g$ symbol
+codes, let $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables, let
+$N, T, H, t \in \mathbb{N}$ with $t < T$, and suppose the tables are well formed for $N$
+situations at height $H$. Write $W$ for the number of variables per time step at height $H$ and
+$V = (T + 1) W$ for the number of variables. Let $F$ be counter values of the cell-shift generator
+with empty scratch counters, with $\mathrm{Vc} = V$, $\mathrm{Gc} = g$, $\mathrm{Wc} = W$,
+$\mathrm{Tn} = t$, $\mathrm{HG} = H g$ and $\mathrm{Hs} = H$, and with $\mathrm{P}$,
+$\mathrm{TW}$, $\mathrm{TW1}$, $\mathrm{KB}$, $\mathrm{U}$, $\mathrm{Ui}$, $\mathrm{R}$,
+$\mathrm{Ri}$, $\mathrm{Ka}$, $\mathrm{CB}$ and $\mathrm{CW}$ all $0$. Then for every output list
+$o$ and every Boolean state $v$ there is a Boolean state $v'$ such that the generator, started at
+the label $\mathrm{tw}(\mathrm{head})$ (the first stage of the time-loop multiplication) in state
+$v$ with counters $F$ and output $o$, reaches the time-loop head $\mathrm{tHead}$ within at most
+the step budget for one time step of the shift generator for $L$, $N$, $T$, $H$, in state $v'$
+with counters $F$ and output the encoded blocks of time step $t$ followed by $o$.
 
 ## Depends on
 
@@ -23,10 +36,10 @@ One iteration of the time loop: `TW := t·W`, `TW1 := TW + W`, the situation cha
 - [Labels of the cell-shift generator](gl.md)
 - [Labels of the shift generator](lab.md)
 - [Empty scratch counters of the shift generator](rest.md)
-- [WF](wf.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
 - [Encoded blocks of one time step](blk-t.md)
 - [The cell-shift generator](prog.md)
-- [T Body B](t-body-b.md)
+- [Step budget for one time step of the shift generator](t-body-b.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

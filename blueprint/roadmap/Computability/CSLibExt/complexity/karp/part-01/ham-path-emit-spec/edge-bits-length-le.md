@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.edgeBits_length_le
 ---
 
-# Edge Bits length le
+# Length bound for the bit encoding of an edge list
 
-The bits of an edge list whose ends are at most `B`: at most `2 B + 2` per edge.
+**Length bound for the bit encoding of an edge list.** Let $B$ be a natural number and $E$ a
+list of pairs of natural numbers such that every pair $(u, v)$ in $E$ has $u \le B$ and
+$v \le B$. Then the bit encoding of $E$, which writes each pair $(u, v)$ as $u$ ones, a zero,
+$v$ ones and a zero, has length at most $|E| \cdot (2B + 2)$, where $|E|$ is the length of $E$.
 
 ## Depends on
 
-- [Edge Bits](../color/edge-bits.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
 
 ## Proof depends on
 
-- [Edge Bits cons](../ham-path-check/edge-bits-cons.md)
+- [Bits of an edge list, first edge first](../ham-path-check/edge-bits-cons.md)
 
 ## Sources
 

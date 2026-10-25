@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.mem_dfaStarts_of_yields
 ---
 
-# Mem dfa Starts of yields
+# Sound items for a grammar and a DFA
 
-An item is sound when it codes `(A, p, q)` with `A` yielding a word that takes `D` from `p`
-to `q`. -/
+**Sound items for a grammar and a DFA.** For an encoded grammar $g$ and an encoded DFA $D$, a
+natural number $x$ is a sound item when there are natural numbers $A$, $p$, $q$ and a word $w$
+such that $x = \langle A, \langle p, q \rangle \rangle$, where $\langle \cdot, \cdot \rangle$ is the
+natural-number pairing, the nonterminal $A$ yields $w$ in the grammar denoted by $g$, and the
+automaton denoted by $D$, run on $w$ from state $p$, ends in state $q$. -/
 def DfaSoundItem (g : EncodedCFG T) (D : EncodedDFA T) (x : ℕ) : Prop :=
   ∃ A p q w, x = Nat.pair A (Nat.pair p q) ∧ Yields g.toCFG [.nonterminal A] w ∧
     D.toDFA.evalFrom p w = q
@@ -76,8 +79,8 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Dfa Found](dfa-found.md)
-- [Dfa Starts](dfa-starts.md)
+- [Items found for a grammar and a DFA](dfa-found.md)
+- [Start states of a right-hand side in a DFA](dfa-starts.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Yields](../../../languages/context-free/part-02/yields/yields.md)
 
@@ -85,13 +88,13 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
-- [Iterate closed](../primrec-list/iterate-closed.md)
-- [Mem B](../primrec-list/mem-b.md)
+- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Dfa Items](dfa-items.md)
-- [The emptiness test](dfa-starts-subset.md)
-- [Dfa Step](dfa-step.md)
-- [Dfa Sym Fits](dfa-sym-fits.md)
+- [Candidate items for a grammar and a DFA](dfa-items.md)
+- [Start states of a right-hand side are states of the DFA](dfa-starts-subset.md)
+- [One round of the item search against a DFA](dfa-step.md)
+- [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
 
 ## Sources
 

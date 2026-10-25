@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.decodeE_encodeE
 ---
 
-# Decode E encode E
+# Graph decoding inverts graph encoding
 
-`decodeE` inverts `encodeE`.
+**Graph decoding inverts graph encoding.** For every natural number $n$ and every list $es$
+of pairs of natural numbers, decoding the graph encoding of $n$ and $es$ succeeds and returns
+$(n, es)$.
 
 ## Depends on
 
-- [Decode E](decode-e.md)
-- [Encode E](encode-e.md)
+- [Decoding a graph](decode-e.md)
+- [Bit-string encoding of a graph](encode-e.md)
 
 ## Proof depends on
 
-- [Decode Es](decode-es.md)
-- [Decode Es edge Bits](decode-es-edge-bits.md)
-- [Edge Bits](edge-bits.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Edge-list decoder](decode-es.md)
+- [Decoding the bits of an edge list](decode-es-edge-bits.md)
+- [Bit encoding of an edge list](edge-bits.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

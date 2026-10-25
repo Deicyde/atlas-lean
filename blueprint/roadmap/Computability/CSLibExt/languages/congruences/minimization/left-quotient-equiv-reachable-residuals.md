@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Language.leftQuotientEquivReachableResiduals
 ---
 
-# Left Quotient Equiv Reachable Residuals
+# Left quotients as reachable residuals
 
-The range of left quotients and the reachable continuation languages are the same semantic
-state space.
+**Left quotients as reachable residuals.** Let $M$ be a DFA accepting the language $L$. The
+set of left quotients $\{z : xz \in L\}$ of $L$ by words $x$ equals the set of reachable
+residuals of $M$ (the languages accepted by $M$ from the states it reaches from its start
+state). The bijection from the first set to the second sends each language to itself.
 
 ## Depends on
 
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Sources
 

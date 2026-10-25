@@ -18,7 +18,7 @@ It bounds the number of steps of the full machine on a raw input of length $n$.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
@@ -26,7 +26,7 @@ It bounds the number of steps of the full machine on a raw input of length $n$.
 - [The precomputed time bound](tof.md)
 - [Step budget of the counter program](c-b.md)
 - [Total length bound](m-of.md)
-- [Depth](../situation/part-01/depth.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
 
 ## Sources
 

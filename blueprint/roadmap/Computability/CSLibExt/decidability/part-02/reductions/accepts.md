@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.Accepts
 ---
 
-# Accepts
+# Acceptance by a code
 
-`A`: the code `p.1` accepts `p.2`, meaning it halts with output `0`.
+**Acceptance by a code.** A partial recursive code $c$ accepts a natural number $n$ when $c$
+halts on input $n$ with output $0$. Acceptance is a predicate on pairs $(c, n)$; it is the analogue
+of Sipser's $A_{\mathrm{TM}}$, where a machine may halt without accepting.
 
 ## Depends on
 

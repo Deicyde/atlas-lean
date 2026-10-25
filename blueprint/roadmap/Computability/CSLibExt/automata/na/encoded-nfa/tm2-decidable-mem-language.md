@@ -18,12 +18,12 @@ multi-stack machine. This is Sipser, Theorem 4.2: the problem $A_{\mathrm{NFA}}$
 - [Encoded NFA](encoded-nfa.md)
 - [Encoded NFAs as tuples](equiv-prod.md)
 - [Language of an encoded NFA](language.md)
-- [TM2 Decidable](../../../decidability/part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../../decidability/part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Reach N](../../../decidability/part-02/regular/reach-n.md)
-- [Reach Round](../../../decidability/part-02/regular/reach-round.md)
+- [Bounded reachability search on lists of states](../../../decidability/part-02/regular/reach-n.md)
+- [One round of the list reachability search](../../../decidability/part-02/regular/reach-round.md)
 - [Membership test for encoded NFAs](accepts-b.md)
 - [Correctness of the NFA membership test](accepts-b-iff.md)
 - [ε-closure of a list of states](closure.md)
@@ -32,10 +32,10 @@ multi-stack machine. This is Sipser, Theorem 4.2: the problem $A_{\mathrm{NFA}}$
 - [Run of an encoded NFA](run.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 - [One step of an encoded NFA on a list of states](step-list.md)
-- [Computable Pred of primrec bool](../../../decidability/part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Dedup B](../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
-- [Tm2 Decidable iff computable Pred](../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../../decidability/part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Duplicate removal for lists of natural numbers](../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../decidability/part-01/primrec-list/mem-b.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.not_tm2Decidable_finite
 ---
 
-# Not tm2 Decidable finite
+# Finiteness is undecidable
 
-Finiteness is undecidable.
+**Finiteness is undecidable.** The set of codes of partial recursive functions with finite
+domain is not decidable by multi-stack Turing machines: there is no total function
+$f : \mathbb{N} \to \mathbb{N}$ computed by a finite multi-stack machine on binary encodings such
+that, for every code $c$ with number $n_c$, $f(n_c) = 1$ if and only if the partial function of
+$c$ has finite domain.
 
 ## Depends on
 
-- [Finite Code](finite-code.md)
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Codes with finite domain](finite-code.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable](../basic/tm2-recognizable-2.md)
+- [Decidable predicates are recognizable by multi-stack machines](../basic/tm2-recognizable-2.md)
 - [Finiteness is not recognizable](not-tm2-recognizable-finite.md)
 
 ## Sources

@@ -6,13 +6,14 @@ proof: formalized
 lean: DFA.start_mem_reachable
 ---
 
-# Start mem reachable
+# The start state is reachable
 
-The start state is reachable.
+**The start state is reachable.** For a DFA $M$ over a finite alphabet with finitely many
+states, the start state of $M$ belongs to the reachable states of $M$.
 
 ## Depends on
 
-- [Reachable](reachable.md)
+- [Reachable states of an encoded DFA](reachable.md)
 
 ## Proof depends on
 

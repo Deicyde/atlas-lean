@@ -19,9 +19,9 @@ $a$ under the reduction built from $V$ and $p$ is in CNF-SAT.
 ## Depends on
 
 - [The Cook–Levin reduction](red.md)
-- [CNF-SAT](../../dense-sat/sat.md)
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Dense CNF-SAT](../../dense-sat/sat.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 
 ## Proof depends on
 
@@ -41,13 +41,13 @@ $a$ under the reduction built from $V$ and $p$ is in CNF-SAT.
 - [The precomputed time bound](../precompute/tof.md)
 - [Total length bound](../precompute/m-of.md)
 - [Accepting configuration](../situation/part-07/accepts.md)
-- [Accepts halt List](../situation/part-08/accepts-halt-list.md)
-- [Run I](../situation/part-03/run-i.md)
-- [CNF](../../dense-sat/cnf.md)
-- [Cnf Sat](../../dense-sat/cnf-sat.md)
-- [Decode CNF](../../dense-sat/decode-cnf.md)
-- [Decode CNF encode CNF](../../dense-sat/decode-cnf-encode-cnf.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Acceptance of a halting configuration](../situation/part-08/accepts-halt-list.md)
+- [Idle-extended run](../situation/part-03/run-i.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
+- [Satisfaction of a dense CNF formula](../../dense-sat/cnf-sat.md)
+- [Dense decoding of CNF formulas](../../dense-sat/decode-cnf.md)
+- [Decoding inverts the dense encoding](../../dense-sat/decode-cnf-encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Eval mono](../../../../MathlibExt/turing-machine/composition/eval-mono.md)
 
 ## Sources

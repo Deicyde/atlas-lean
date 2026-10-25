@@ -12,7 +12,7 @@ The counter holding the output's first number: `A` (`k`, `flip`) or `D` (`n - k`
 ## Depends on
 
 - [K](k.md)
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 
 ## Sources
 

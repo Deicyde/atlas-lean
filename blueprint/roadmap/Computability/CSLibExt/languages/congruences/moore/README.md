@@ -6,24 +6,24 @@ navigation: module
 
 ## State equivalence by refinement
 
-- [Moore Step](moore-step.md)
-- [Moore Iter](moore-iter.md)
-- [Moore Iter spec](moore-iter-spec.md)
-- [Moore Rel](moore-rel.md)
-- [Subset moore Rel](subset-moore-rel.md)
-- [Correctness of the refinement](mem-moore-rel-iff.md)
+- [Moore refinement step](moore-step.md)
+- [Stopping Moore iteration](moore-iter.md)
+- [Output of the stopping Moore iteration](moore-iter-spec.md)
+- [Moore's relation](moore-rel.md)
+- [Moore's relation contains every post-fixed point](subset-moore-rel.md)
+- [Correctness of Moore's refinement](mem-moore-rel-iff.md)
 
 ## The quotient automaton
 
-- [Moore Setoid](moore-setoid.md)
-- [Moore State](moore-state.md)
-- [Moore Class](moore-class.md)
+- [Moore equivalence on reachable states](moore-setoid.md)
+- [States of Moore's automaton](moore-state.md)
+- [Moore class of a reachable state](moore-class.md)
 - [Moore's minimal automaton](moore-dfa.md)
-- [Moore DFA accepts](moore-dfa-accepts.md)
+- [Moore's automaton accepts the same language](moore-dfa-accepts.md)
 
 ## Agreement with the semantic minimal automaton
 
-- [Moore Residual](moore-residual.md)
-- [Moore Equiv](moore-equiv.md)
+- [Continuation language of a Moore class](moore-residual.md)
+- [Moore classes are the reachable residuals](moore-equiv.md)
 - [Moore's automaton is the minimal automaton](reindex-moore-dfa.md)
-- [Card moore State](card-moore-state.md)
+- [Moore's automaton has one state per Nerode class](card-moore-state.md)

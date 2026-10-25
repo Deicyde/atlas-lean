@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal_rev
 ---
 
-# Encode Nat bits Val rev
+# Binary code of the value of a bit list
 
-The binary code of the target: its digits with leading zeros dropped.
+**Binary code of the value of a bit list.** Read a bit list $l$ as a binary number, least
+significant bit first. The binary code of its value (least significant bit first, with no trailing
+false bits) is $l$ with all of its trailing false bits removed.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ The binary code of the target: its digits with leading zeros dropped.
 
 ## Proof depends on
 
-- [Bits Val cons](bits-val-cons.md)
-- [Encode Nat bits Val](encode-nat-bits-val.md)
+- [Value of a bit list with a leading bit](bits-val-cons.md)
+- [A bit list without trailing false is the binary code of its value](encode-nat-bits-val.md)
 
 ## Sources
 

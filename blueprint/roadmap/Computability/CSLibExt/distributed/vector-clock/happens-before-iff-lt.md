@@ -15,14 +15,14 @@ execution, `a` happened before `b` exactly when `a`'s timestamp is smaller than
 ## Depends on
 
 - [Event](../lamport-clock/event.md)
-- [Happens Before](../lamport-clock/happens-before.md)
-- [Timestamps](timestamps.md)
+- [Happened-before](../lamport-clock/happens-before.md)
+- [Vector timestamps of an execution](timestamps.md)
 
 ## Proof depends on
 
-- [Lt](../lamport-clock/lt.md)
-- [The converse direction](eq-or-happens-before-of-le.md)
-- [Vector Clock le of happens Before](vector-clock-le-of-happens-before.md)
+- [Happened-before goes forward in the execution](../lamport-clock/lt.md)
+- [Own-entry comparison detects happened-before](eq-or-happens-before-of-le.md)
+- [Vector timestamps are monotone along happened-before](vector-clock-le-of-happens-before.md)
 
 ## Sources
 

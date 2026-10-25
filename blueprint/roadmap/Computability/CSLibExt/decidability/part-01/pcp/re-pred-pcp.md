@@ -8,19 +8,23 @@ lean: Cslib.Decidability.Post.rePred_pcp
 
 # PCP is recursively enumerable
 
-**PCP is recursively enumerable**: search all candidate sequences.
+**PCP is recursively enumerable.** For an alphabet $\alpha$ with a primitive recursive
+coding, the set of lists of dominoes over $\alpha$ that have a PCP solution is recursively
+enumerable.
+
+The proof searches all candidate sequences.
 
 ## Depends on
 
-- [Domino](domino.md)
-- [PCP](pcp.md)
+- [Domino (Post correspondence problem)](domino.md)
+- [The Post correspondence problem](pcp.md)
 
 ## Proof depends on
 
-- [Is Solution](is-solution.md)
-- [Bottom](bottom.md)
+- [PCP solution](is-solution.md)
+- [Bottom word of a domino sequence](bottom.md)
 - [Is Solution B](is-solution-b.md)
-- [Top](top.md)
+- [Top word of a sequence of dominoes](top.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Kolmogorov.stringsOfLength
 ---
 
-# Strings Of Length
+# Binary strings of a given length
 
-The strings of length `n`, as a finset.
+**Binary strings of a given length.** For a natural number $n$, the finite set of all binary
+strings of length $n$.
 
 ## Depends on
 

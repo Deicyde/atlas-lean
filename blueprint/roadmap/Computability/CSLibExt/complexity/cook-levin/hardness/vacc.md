@@ -13,8 +13,8 @@ Booleans. The accept symbol is the output symbol of $V$ that corresponds to $\ma
 
 ## Depends on
 
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 
 ## Sources
 

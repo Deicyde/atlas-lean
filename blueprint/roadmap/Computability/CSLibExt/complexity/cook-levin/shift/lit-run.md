@@ -39,7 +39,7 @@ literal of $c$), followed by $m$ copies of $01$, followed by $o$.
 - [Empty scratch counters of the shift generator](rest.md)
 - [Constant offset of a literal in a block](csv.md)
 - [The cell-shift generator](prog.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 

@@ -6,22 +6,22 @@ navigation: module
 
 ## The canonical encoding of a pair of bit lists
 
-- [Enc Fst](enc-fst.md)
-- [Enc Snd](enc-snd.md)
-- [Bit Encode pair eq](bit-encode-pair-eq.md)
+- [Converter encoding of the first component](enc-fst.md)
+- [Converter encoding of the second component](enc-snd.md)
+- [Canonical encoding of a pair of bit lists](bit-encode-pair-eq.md)
 
 ## The machine
 
-- [Stk](stk.md)
-- [Γ](untitled.md)
-- [Lab](lab.md)
-- [St](st.md)
-- [Prog](prog.md)
-- [Tm](tm.md)
+- [Stacks of the pair-encoding converter](stk.md)
+- [Stack alphabets of the pair-encoding converter](untitled.md)
+- [Labels of the pair-encoding converter](lab.md)
+- [State of the pair-encoding converter](st.md)
+- [Program of the pair-encoding converter](prog.md)
+- [The pair-encoding converter machine](tm.md)
 
 ## Configurations and runs
 
-- [Stk](stk-2.md)
-- [Run](run.md)
-- [Convert run](convert-run.md)
-- [Computable](computable.md)
+- [Stack contents of the pair-encoding converter](stk-2.md)
+- [Runs of the pair-encoding converter](run.md)
+- [Full run of the pair-encoding converter](convert-run.md)
+- [Polynomial-time conversion to the verifier's pair encoding](computable.md)

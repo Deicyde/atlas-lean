@@ -20,9 +20,9 @@ from the states of $M$ reachable from its start state, gives exactly the minimiz
 
 - [Nerode classes are the residual languages](nerode-quotient-equiv-residual.md)
 - [CSLib automata as Mathlib DFAs](to-dfa.md)
-- [Left Quotient Equiv Reachable Residuals](../../../languages/congruences/minimization/left-quotient-equiv-reachable-residuals.md)
+- [Left quotients as reachable residuals](../../../languages/congruences/minimization/left-quotient-equiv-reachable-residuals.md)
 - [Minimized DFA](../../../languages/congruences/minimization/minimized-dfa.md)
-- [Reachable Residuals](../../../languages/congruences/minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../../../languages/congruences/minimality/reachable-residuals.md)
 
 ## Proof depends on
 

@@ -15,7 +15,7 @@ has no pair with index $v$. Pairs with index at least $V$ are ignored.
 
 ## Depends on
 
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

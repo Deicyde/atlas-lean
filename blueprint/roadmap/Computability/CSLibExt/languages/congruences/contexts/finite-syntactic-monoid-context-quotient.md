@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_contextQuotient
 ---
 
-# Finite syntactic Monoid context Quotient
+# Context quotients preserve finiteness of the syntactic monoid
 
-Finite syntactic monoids are closed under inserting words into fixed contexts.
+**Context quotients preserve finiteness of the syntactic monoid.** Let $L$ be a language over
+an alphabet $A$ whose syntactic monoid is finite. Then for all words $u, v$ over $A$, the
+syntactic monoid of the context quotient $u^{-1} L v^{-1} = \{x \mid uxv \in L\}$ is finite.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Context Quotient](context-quotient.md)
+- [Context quotient](context-quotient.md)
 
 ## Proof depends on
 
-- [Context Quotient](context-quotient-2.md)
-- [Context Accept](context-accept.md)
+- [Recognizers recognize context quotients](context-quotient-2.md)
+- [Accepting set for a context quotient](context-accept.md)
 - [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
 - [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
 - [Syntactic Accept](../syntactic/syntactic-accept.md)

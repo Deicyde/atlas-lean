@@ -5,10 +5,15 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.pumpBound
 ---
 
-# Pump Bound
+# Pumping bound of an encoded grammar
 
-The pumping bound of Ogden's lemma for the decoded grammar (`pumping_of_bound`):
-`lenBound ^ (K + 1)` for `K` the number of distinct left-hand sides.
+**Pumping bound of an encoded grammar.** For an encoded grammar $g$, let $L$ be the length
+bound of $g$, the larger of $2$ and the largest length of a right-hand side of a production of
+$g$, and let $K$ be the number of distinct left-hand sides of the productions of $g$. The
+pumping bound of $g$ is $L^{K+1}$.
+
+With this bound, Ogden's lemma with every letter marked gives the pumping lemma for the decoded
+grammar.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ The pumping bound of Ogden's lemma for the decoded grammar (`pumping_of_bound`):
 
 ## Proof depends on
 
-- [Dedup B](../primrec-list/dedup-b.md)
-- [Len Bound](len-bound.md)
+- [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
+- [Right-hand side length bound](len-bound.md)
 
 ## Sources
 

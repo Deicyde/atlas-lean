@@ -12,7 +12,7 @@ lean: Cslib.Turing.Universal.Diag.readUnaryLength_eq_some_iff_cell
 
 ## Depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Cell](../clocked/cell.md)
 
 ## Proof depends on

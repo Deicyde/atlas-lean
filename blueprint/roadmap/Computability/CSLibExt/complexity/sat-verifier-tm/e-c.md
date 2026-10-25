@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.eC
 ---
 
-# E C
+# Driver stacks in the SAT host
 
-Driver stacks in the host.
+**Driver stacks in the SAT host.** The map from the stacks of the clause-check driver into
+the host stacks sends each driver stack to the host stack of the same name.
 
 ## Depends on
 
-- [K](../sat-check/k.md)
-- [HK](hk.md)
+- [Stacks of the clause check](../sat-check/k.md)
+- [Stacks of the SAT verifier host](hk.md)
 
 ## Sources
 

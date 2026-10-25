@@ -8,11 +8,16 @@ lean: Cslib.Complexity.Karp.isPolyTime_reduceClique
 
 # SAT ≤ CLIQUE is polynomial-time
 
-**SAT ≤ CLIQUE is polynomial-time**.
+**SAT ≤ CLIQUE is polynomial-time.** Let $f$ be the map on bit strings that sends the
+binary code of a CNF formula $\varphi$ to the encoding of Karp's CLIQUE instance $(k, G)$ of
+$\varphi$, and sends every string that is not the code of a CNF formula to the string $100$.
+Here $G$ has one vertex per literal occurrence in $\varphi$, two occurrences are adjacent when
+they lie in different clauses and are not complementary, and $k$ is the number of clauses of
+$\varphi$. Then $f$ is computable in polynomial time.
 
 ## Depends on
 
-- [Reduce Clique](../clique/reduce-clique.md)
+- [Karp's SAT-to-CLIQUE map on bit strings](../clique/reduce-clique.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,17 +30,17 @@ lean: Cslib.Complexity.Karp.isPolyTime_reduceClique
 
 ## Proof depends on
 
-- [K](../clique-emit/k.md)
-- [Lab](../clique-emit/lab.md)
-- [Γ](../clique-emit/untitled.md)
+- [Stacks of the SAT-to-CLIQUE emitter](../clique-emit/k.md)
+- [Labels of the SAT-to-CLIQUE emitter](../clique-emit/lab.md)
+- [Stack alphabets of the CLIQUE emitter](../clique-emit/untitled.md)
 - [Emitter](../../part-02/tok-then/emitter.md)
-- [Reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
+- [Emitter reductions out of SAT are polynomial-time](../../part-02/tok-then/is-poly-time-out.md)
 - [Out](../../part-02/tok-then/out.md)
-- [Emit Clique](emit-clique.md)
-- [No KG](../clique/no-kg.md)
-- [To Clique](../clique/to-clique.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Decode CNF](../../../../cook-levin/decode-cnf.md)
+- [The CLIQUE emitter](emit-clique.md)
+- [Fixed no-instance](../clique/no-kg.md)
+- [Karp's CLIQUE instance of a CNF formula](../clique/to-clique.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources

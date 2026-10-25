@@ -15,7 +15,7 @@ bitstring encoding of bit lists.
 
 ## Depends on
 
-- [Bin Conv](../../dense-to-binary-converter/bin-conv.md)
+- [The dense-to-binary translation on bit strings](../../dense-to-binary-converter/bin-conv.md)
 - [Bitstring Encoding](../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

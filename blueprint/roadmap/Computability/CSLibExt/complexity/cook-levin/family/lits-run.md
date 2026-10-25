@@ -64,7 +64,7 @@ when $j = 0$.
 - [Position of a literal in a transition clause](lit-pos.md)
 - [Run of one literal routine (transition-clause generator)](lit-run.md)
 - [Polarity of a transition-clause literal](sgn.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)

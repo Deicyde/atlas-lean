@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.edgeBits_append
 ---
 
-# Edge Bits append
+# Bits of concatenated edge lists
 
-The bits of a concatenation of edge lists.
+**Bits of concatenated edge lists.** For all lists $E$ and $E'$ of pairs of natural numbers,
+the bit encoding of the concatenation of $E$ and $E'$ is the bit encoding of $E$ followed by the
+bit encoding of $E'$.
 
 ## Depends on
 
-- [Edge Bits](../color/edge-bits.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
 
 ## Sources
 

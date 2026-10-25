@@ -8,17 +8,18 @@ lean: Cslib.Decidability.rice_tm2
 
 # Rice's theorem for multi-stack machines
 
-**Rice's theorem for multi-stack machines.** If a `FinTM2` decides, for each code, whether
-the function it computes lies in `C`, then `C` contains every partial recursive function or
-none.
+**Rice's theorem for multi-stack machines.** Let $C$ be a set of partial functions
+$\mathbb{N} \to \mathbb{N}$. If a multi-stack machine decides, for each partial recursive code,
+whether the function the code computes lies in $C$, then for all partial recursive functions
+$f$ and $g$, $f \in C$ implies $g \in C$.
 
 ## Depends on
 
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

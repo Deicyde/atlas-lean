@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.tm2Decidable_matches_le
 ---
 
-# Tm2 Decidable matches le
+# Inclusion of a regular language in a DFA language is decidable
 
-Inclusion of a regular expression's language in an encoded DFA's language is decidable by a
-multi-stack machine.
+**Inclusion of a regular language in a DFA language is decidable.** Let $\alpha$ be an
+alphabet with decidable equality and a primitive recursive coding by natural numbers. The set of
+pairs $(e, D)$ of an encoded regular expression $e$ over $\alpha$ and an encoded DFA $D$ over
+$\alpha$ such that the language of the regular expression denoted by $e$ is contained in the
+language of $D$ is decidable by a multi-stack machine.
 
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [Encoded DFAs as triples](../../../automata/da/encoded-dfa/equiv-prod.md)
 - [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
-- [Encoded Regex](encoded-regex.md)
-- [Equiv List](equiv-list.md)
-- [Node Equiv](node-equiv.md)
-- [To Regex](to-regex.md)
-- [Regex Node](regex-node.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
+- [Encoded regular expressions](encoded-regex.md)
+- [Encodings are lists of nodes](equiv-list.md)
+- [Regex nodes as a sum type](node-equiv.md)
+- [The regular expression denoted by an encoding](to-regex.md)
+- [Regular-expression node](regex-node.md)
 
 ## Proof depends on
 
@@ -30,28 +33,27 @@ multi-stack machine.
 - [The transition function of encoded DFAs is primitive recursive](../../../automata/da/encoded-dfa/primrec-step.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
-- [Computable Pred of primrec bool](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Mem B](../../part-01/primrec-list/mem-b.md)
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Dfa Found](../../part-01/context-free-regular/dfa-found.md)
-- [Dfa Items](../../part-01/context-free-regular/dfa-items.md)
-- [Dfa Starts](../../part-01/context-free-regular/dfa-starts.md)
-- [Dfa Step](../../part-01/context-free-regular/dfa-step.md)
-- [Dfa Sym Fits](../../part-01/context-free-regular/dfa-sym-fits.md)
+- [Items found for a grammar and a DFA](../../part-01/context-free-regular/dfa-found.md)
+- [Candidate items for a grammar and a DFA](../../part-01/context-free-regular/dfa-items.md)
+- [Start states of a right-hand side in a DFA](../../part-01/context-free-regular/dfa-starts.md)
+- [One round of the item search against a DFA](../../part-01/context-free-regular/dfa-step.md)
+- [Whether a symbol fits at a DFA state](../../part-01/context-free-regular/dfa-sym-fits.md)
 - [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [The emptiness test](../../part-01/context-free-regular/inter-empty-b.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
-- [Subset B](../../part-01/context-free-regular/subset-b.md)
+- [The inclusion test for a grammar and a DFA](../../part-01/context-free-regular/subset-b.md)
 - [Correctness of the inclusion test](../../part-01/context-free-regular/subset-b-iff.md)
-- [Comp Rules](comp-rules.md)
+- [Productions of a concatenation node](comp-rules.md)
 - [The grammar generates the language of the expression](language-to-grammar.md)
-- [Node](node.md)
-- [Node Rules](node-rules.md)
-- [Plus Rules](plus-rules.md)
-- [Star Rules](star-rules.md)
+- [Node at an index](node.md)
+- [Productions of a node](node-rules.md)
+- [Productions of a sum node](plus-rules.md)
+- [Productions of a star node](star-rules.md)
 - [Inclusion test](subset-b.md)
-- [To Grammar](to-grammar.md)
+- [The grammar of an encoded regular expression](to-grammar.md)
 
 ## Sources
 

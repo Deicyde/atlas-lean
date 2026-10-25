@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.decodeW_of_none
 ---
 
-# Decode W of none
+# Decoding fails on a cut-off first number
 
-A nonempty input whose first number is cut off.
+**Decoding fails on a cut-off first number.** If a list $w$ of bits is nonempty and reading a
+unary number (a run of true ended by false) from the front of $w$ fails, that is, every bit of
+$w$ is true, then the witness decoder fails on $w$.
 
 ## Depends on
 
-- [Decode W](decode-w.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Witness decoder](decode-w.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Proof depends on
 
-- [Length lt of read Unary Length](../color/length-lt-of-read-unary-length.md)
+- [Reading a unary number shortens the input](../color/length-lt-of-read-unary-length.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: DFA.MidState
 ---
 
-# Mid State
+# States of the intermediate Brzozowski automaton
 
-The reachable subsets of the determinized reversal. The search runs at most
-`2 ^ Fintype.card σ` rounds, the number of subsets, and stops as soon as nothing changes.
+**States of the intermediate Brzozowski automaton.** For a deterministic finite automaton $M$
+over a finite alphabet with finite state set $Q$, the subsets of $Q$ reachable from the start state
+in the subset construction of the reversal of $M$.
+
+They are found by a reachability search of at most $2^{|Q|}$ rounds, the number of subsets, which
+stops as soon as a round adds nothing.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
-- [Rev Det](rev-det.md)
+- [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources
 

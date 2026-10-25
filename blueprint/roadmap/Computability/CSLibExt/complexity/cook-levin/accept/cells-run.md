@@ -35,7 +35,7 @@ $y = 0, \dots, x$, then $o$.
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

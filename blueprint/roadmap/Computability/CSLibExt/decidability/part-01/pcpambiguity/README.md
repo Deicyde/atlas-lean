@@ -4,14 +4,14 @@ navigation: module
 
 # PCPAmbiguity
 
-- [Amb Grammar](amb-grammar.md)
+- [The ambiguity grammar of a PCP instance](amb-grammar.md)
 - [Canon](canon.md)
-- [Cases of mem amb Grammar of input](cases-of-mem-amb-grammar-of-input.md)
-- [The leftmost derivation from `pre A suf` is determined by its word](eq-canon-of-left-derivation.md)
+- [The productions of $A$ and $B$ in the ambiguity grammar](cases-of-mem-amb-grammar-of-input.md)
+- [Leftmost derivations from $A$ and $B$ follow an index sequence](eq-canon-of-left-derivation.md)
 - [The leftmost derivation along an index sequence](left-derivation-canon.md)
 - [Start Rule](start-rule.md)
-- [Cases of left Derivation start](cases-of-left-derivation-start.md)
-- [Left Derivation start](left-derivation-start.md)
-- [`ambGrammar P` is ambiguous exactly when `P` has a solution](is-ambiguous-iff-pcp.md)
-- [`ambGrammar P` is ambiguous exactly when `P` has a solution](primrec-amb-grammar.md)
+- [Leftmost derivations in the ambiguity grammar](cases-of-left-derivation-start.md)
+- [Leftmost derivations from the start symbol along an index sequence](left-derivation-start.md)
+- [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](is-ambiguous-iff-pcp.md)
+- [The ambiguity grammar of $P$ is ambiguous exactly when $P$ has a solution](primrec-amb-grammar.md)
 - [PCP many-one reduces to ambiguity of context-free grammars](many-one-reducible-pcp-is-ambiguous.md)

@@ -40,7 +40,7 @@ All literals of clause `c`, from the one before `l` down to the first.
 - [Entry label of a one-hot literal routine](lit-l.md)
 - [Stages of the one-hot literal routine](ls.md)
 - [Lit run](lit-run.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)

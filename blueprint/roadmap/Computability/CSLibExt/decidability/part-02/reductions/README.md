@@ -11,9 +11,9 @@ navigation: module
 
 ## Acceptance and halting
 
-- [Accepts](accepts.md)
-- [Halts](halts.md)
-- [Exists code zero or loop](exists-code-zero-or-loop.md)
+- [Acceptance by a code](accepts.md)
+- [Halting of a code on an input](halts.md)
+- [A code that halts only on zero](exists-code-zero-or-loop.md)
 - [Acceptance reduces to halting](many-one-reducible-accepts-halts.md)
 - [Halting reduces to acceptance](many-one-reducible-halts-accepts.md)
 - [Halting is undecidable](not-tm2-decidable-halts.md)
@@ -21,10 +21,10 @@ navigation: module
 
 ## Regularity
 
-- [Unary Lang](unary-lang.md)
-- [Regular Domain Code](regular-domain-code.md)
+- [Unary language of a set of naturals](unary-lang.md)
+- [Codes with a regular halting set](regular-domain-code.md)
 - [The unary squares are not regular](not-is-regular-unary-lang-squares.md)
-- [Regular Red Fun](regular-red-fun.md)
-- [Exists code regular Red Fun](exists-code-regular-red-fun.md)
+- [Partial function of the halting-to-regularity reduction](regular-red-fun.md)
+- [A single code for the regularity reduction function](exists-code-regular-red-fun.md)
 - [Halting reduces to regularity of halting sets](many-one-reducible-halts-regular-domain.md)
 - [Regularity of halting sets is undecidable](not-tm2-decidable-regular-domain.md)

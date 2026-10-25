@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.isLit
 ---
 
-# Is Lit
+# Literal-marker test of the 3SAT emitter
 
-Is the top of a stack a literal marker?
+**Literal-marker test of the 3SAT emitter.** For an optional token $s$ (the top of a stack,
+absent when the stack is empty), the test is true exactly when $s$ is present and is a literal
+marker, of either polarity.
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

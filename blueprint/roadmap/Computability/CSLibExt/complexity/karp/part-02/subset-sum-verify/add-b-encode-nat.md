@@ -8,16 +8,20 @@ lean: Cslib.Complexity.Karp.SSVerify.addB_encodeNat
 
 # Addition is correct on canonical numbers
 
-**Addition is correct on canonical numbers**, and keeps them canonical.
+**Addition is correct on canonical numbers.** For every bit $c$ and all natural numbers $m$ and
+$n$, the ripple-carry sum, with carry-in $c$, of the canonical binary expansions of $m$ and $n$
+(least significant bit first, no trailing false bit) is the canonical binary expansion of
+$m + n + c$, where $c$ counts as $1$ if true and $0$ if false. In particular the sum stays
+canonical.
 
 ## Depends on
 
-- [Add B](add-b.md)
+- [Ripple-carry addition of bit lists](add-b.md)
 
 ## Proof depends on
 
-- [Carry](carry.md)
-- [Inc B](inc-b.md)
+- [Carry bit of a full adder](carry.md)
+- [Adding a carry bit](inc-b.md)
 - [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources

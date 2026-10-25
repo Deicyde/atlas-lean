@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.rowE
 ---
 
-# Row E
+# The row arcs of a diamond
 
-The two row arcs between row vertices `l` and `l + 1` of diamond `i`.
+**The row arcs of a diamond.** For natural numbers $m$ (the number of clauses), $i$ and $l$,
+let $r_{i,l} = m + i(3m + 2) + 1 + l$ be row vertex $l$ of diamond $i$. The row arcs between row
+vertices $l$ and $l + 1$ of diamond $i$ are the list of the two arcs $(r_{i,l}, r_{i,l+1})$ and
+$(r_{i,l+1}, r_{i,l})$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hp R](../ham-path/hp-r.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
 
 ## Sources
 

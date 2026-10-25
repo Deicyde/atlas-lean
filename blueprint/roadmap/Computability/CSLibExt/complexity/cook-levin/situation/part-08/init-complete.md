@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.init_complete
 ---
 
-# Init family, completeness
+# Completeness of the init family
 
-**Init family, completeness**: the start configuration on `x ++ y` (`y` over `Ys`,
-`|x ++ y| ≤ m < H`) satisfies I1–I6.
+**Completeness of the init family.** Let $E$ be an encoding of the machine $M$, let $x$, $y$
+and $Y$ be words over the input alphabet such that every letter of $y$ occurs in $Y$, and let
+$m$, $T$ and $H$ be natural numbers with $|xy| \le m < H$, where $xy$ is the concatenation. Then
+the assignment of the real run's literals of $xy$ for $T$ steps at height $H$ satisfies the init
+family (clauses I1 to I6) for $x$, $Y$, $m$, $T$ and $H$.
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
-- [The init family](../part-06/init-family.md)
-- [The C5 assignment](run-asg.md)
-- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
+- [The row-0 init family of an encoding](../part-06/init-family.md)
+- [The assignment of the real run's literals](run-asg.md)
+- [Satisfaction of a dense CNF formula](../../../dense-sat/cnf-sat.md)
 
 ## Proof depends on
 
@@ -27,40 +30,40 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.init_complete
 - [Variables per time step](../../family/row-w.md)
 - [Index of a label/state variable](../../family/x-idx.md)
 - [Dense clause from a list of literals](../../family/dense-clause.md)
-- [Good](../part-03/good.md)
-- [N](../part-01/n.md)
+- [Good configurations](../part-03/good.md)
+- [Number of situations](../part-01/n.md)
 - [The real run's literals](run-lit.md)
-- [Cell](../part-03/cell.md)
-- [Code](../part-03/code.md)
-- [G](../part-01/g.md)
-- [G pos](../part-02/g-pos.md)
-- [Good step](../part-03/good-step.md)
-- [Init Cert](../part-06/init-cert.md)
-- [Init Code](../part-06/init-code.md)
-- [Init In](../part-06/init-in.md)
-- [Init Other](../part-06/init-other.md)
-- [Init Pre](../part-06/init-pre.md)
-- [Init Tail](../part-06/init-tail.md)
-- [La](../part-01/la.md)
-- [Layout](../part-01/layout.md)
-- [Lit cell0](lit-cell0.md)
-- [Sa](../part-01/sa.md)
-- [C5 clause semantics](sa-lt.md)
-- [C5 clause semantics](sat-run.md)
-- [Sat unit](sat-unit.md)
-- [Sit Idx](../part-03/sit-idx.md)
-- [Sit Idx spec](../part-03/sit-idx-spec.md)
-- [Wa](../part-01/wa.md)
-- [Z Idx](../part-06/z-idx.md)
-- [Faithful](../part-07/faithful.md)
-- [Cnf Sat append](../part-06/cnf-sat-append.md)
-- [Depth](../part-01/depth.md)
-- [Lt num Vars](../part-07/lt-num-vars.md)
-- [Row pos inj](row-pos-inj.md)
-- [Run I](../part-03/run-i.md)
-- [CNF](../../../dense-sat/cnf.md)
-- [Clause](../../../dense-sat/clause.md)
-- [Clause Sat](../../../dense-sat/clause-sat.md)
+- [Cell code of a configuration](../part-03/cell.md)
+- [Label-and-state code of a configuration](../part-03/code.md)
+- [Symbol-code bound](../part-01/g.md)
+- [Pushed-symbol table of a situation](../part-02/g-pos.md)
+- [Reads of the in-range shift stay in the row](../part-03/good-step.md)
+- [Certificate clauses of the init family](../part-06/init-cert.md)
+- [Start-code clause of the init family](../part-06/init-code.md)
+- [Input clauses of the init family](../part-06/init-in.md)
+- [Empty-stack clauses of the init family](../part-06/init-other.md)
+- [Prefix clauses of the init family](../part-06/init-pre.md)
+- [Length-bound clauses of the init family](../part-06/init-tail.md)
+- [Label/state code of a situation](../part-01/la.md)
+- [Clause layout of a machine encoding](../part-01/layout.md)
+- [Row-0 cells of the start configuration are run literals](lit-cell0.md)
+- [Position of a situation's variable](../part-01/sa.md)
+- [Faithful clauses with a literal agreeing with the real run are satisfied](sa-lt.md)
+- [Faithful clauses with a literal agreeing with the real run are satisfied](sat-run.md)
+- [Unit clauses on run literals are satisfied](sat-unit.md)
+- [Situation index of a configuration](../part-03/sit-idx.md)
+- [The situation index matches the code and windows](../part-03/sit-idx-spec.md)
+- [Window symbol code of a situation](../part-01/wa.md)
+- [Index of the empty-cell variable of the input stack](../part-06/z-idx.md)
+- [Faithful literal list](../part-07/faithful.md)
+- [Run tracking from the init obligation](../part-06/cnf-sat-append.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [The all-true assignment satisfies a faithful clause with a positive literal](../part-07/lt-num-vars.md)
+- [Uniqueness of quotient and remainder](row-pos-inj.md)
+- [Idle-extended run](../part-03/run-i.md)
+- [Dense CNF formula](../../../dense-sat/cnf.md)
+- [Dense clause](../../../dense-sat/clause.md)
+- [Satisfaction of a dense clause](../../../dense-sat/clause-sat.md)
 
 ## Sources
 

@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Karp.chain_sound
 ---
 
-# Chain sound
+# Soundness of the chain of one clause
 
-An assignment satisfying `chain C u` satisfies `C` on the even variables.
+**Soundness of the chain of one clause.** Let $C$ be a clause and $u$ a natural number. If an
+assignment $v'$ satisfies every clause of $\mathrm{chain}(C, u)$, then the assignment
+$n \mapsto v'(2n)$ satisfies $C$.
 
 ## Depends on
 
-- [Chain](../three-sat/chain.md)
-- [Ren](../three-sat/ren.md)
+- [The chain of clauses replacing one clause](../three-sat/chain.md)
+- [Renaming of the original variables](../three-sat/ren.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 
-- [Chain Tail](../three-sat/chain-tail.md)
-- [Chain Tail sound](chain-tail-sound.md)
-- [Fresh](../three-sat/fresh.md)
-- [Ren Lit](../three-sat/ren-lit.md)
+- [The tail of a clause chain](../three-sat/chain-tail.md)
+- [Soundness of the tail of a chain](chain-tail-sound.md)
+- [Fresh variable indices](../three-sat/fresh.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 

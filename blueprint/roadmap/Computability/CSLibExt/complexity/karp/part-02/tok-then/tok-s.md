@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.tokS
 ---
 
-# Tok S
+# Initial stacks of the tokenizer
 
-The tokenizer's initial stacks.
+**Initial stacks of the tokenizer.** For a bit string $x$, the SAT tokenizer's initial stacks
+hold $x$, as bit symbols, on the formula-bit stack $X$ and leave every other stack empty.
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [K](../../../sat-tokenizer/k.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 
 ## Sources
 

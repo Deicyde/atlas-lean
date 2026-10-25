@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.eraseRules
 ---
 
-# Erase Rules
+# Erasing rules
 
-The rules by which the halting symbol erases the tape.
+**Erasing rules.** For a finite tape alphabet $\Gamma$, let $H$ be the halting symbol of the
+rewriting system simulating a single-tape machine with tape alphabet $\Gamma$. The erasing rules
+are the rewriting rules $c\,H \to H$ and $H\,c \to H$ for every tape symbol $c \in \Gamma$: the
+halting symbol deletes the tape symbol on either side of it.
 
 ## Depends on
 
-- [Rule](../../part-02/string-rewriting/rule.md)
-- [TMSym](tmsym.md)
+- [Rewriting rules](../../part-02/string-rewriting/rule.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.hpR_succ
 ---
 
-# Hp R succ
+# Removing duplicates by insertion
 
-The distinct variables are the right fold of `insV`. -/
+**Removing duplicates by insertion.** For every list $l$ of natural numbers, folding $l$ from
+the right into the empty list, prepending each element unless it is already present, gives
+$l$ with duplicates removed: each element is kept at its last occurrence in $l$, in order. -/
 theorem foldr_insV (l : List ℕ) : l.foldr insV [] = l.dedup := by
   induction l with
   | nil => rfl
@@ -27,11 +29,11 @@ theorem varsOf_cons (C : CNFClause) (φ : CNF) : varsOf (C :: φ) = C.map Prod.f
 
 ## Depends on
 
-- [Hp R](../ham-path/hp-r.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
 
 ## Proof depends on
 
-- [Hp T](../ham-path/hp-t.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.isTok
 ---
 
-# Is Tok
+# Walk tokens
 
-Symbols the walk moves between `D` and `E`.
+**Walk tokens.** A symbol is a walk token, one the walk moves between the stacks $D$ and $E$,
+when it is a name bit, a literal marker or the clause symbol (which also serves as the unary
+unit); the value symbols and the dead symbol are not walk tokens.
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

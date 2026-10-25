@@ -8,19 +8,20 @@ lean: Cslib.Distributed.LamportClock.clock_condition
 
 # The clock condition
 
-**The clock condition** (Lamport 1978): if `a` happened before `b`, the
-timestamp of `a` is smaller than the timestamp of `b`.
+**The clock condition.** In every execution, if the event at position $a$ happened before
+the event at position $b$, then the Lamport timestamp of $a$ is smaller than the Lamport
+timestamp of $b$ (Lamport 1978).
 
 ## Depends on
 
 - [Event](event.md)
-- [Happens Before](happens-before.md)
-- [Timestamps](timestamps.md)
+- [Happened-before](happens-before.md)
+- [Lamport timestamps](timestamps.md)
 
 ## Proof depends on
 
-- [Step](step.md)
-- [Step lt](step-lt.md)
+- [One step of happened-before](step.md)
+- [One step of happened-before raises the timestamp](step-lt.md)
 
 ## Sources
 

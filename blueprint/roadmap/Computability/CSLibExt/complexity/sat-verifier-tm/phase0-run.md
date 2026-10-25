@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.phase0_run
 ---
 
-# Phase0 run
+# The SAT verifier machine
 
-The host as a `FinTM2`: input `inp` (alphabet `G`), output `out` (alphabet `Bool`). -/
+**The SAT verifier machine.** For a flag $\mathit{cap}$, the host machine is the finite
+multi-stack Turing machine whose stacks are the host stacks, with the input stack as input (its
+alphabet is that of the pair encoding: tagged formula bits, a separator and tagged witness
+bits), the output stack (alphabet the booleans) as output, the host alphabets on all stacks, the
+host labels as labels, the first phase-0 label as start label, a boolean internal state
+initially false, and the host program with flag $\mathit{cap}$ as program. -/
 def tm (cap : Bool) : FinTM2 where
   K := HK
   k₀ := .inp
@@ -26,23 +31,23 @@ variable (cap : Bool)
 
 ## Depends on
 
-- [Pair Encode](../dense-satverifier/pair-encode.md)
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [HΓ](h.md)
-- [P0](p0.md)
-- [Hprog](hprog.md)
-- [Sym](../sat-verifier-spec/sym.md)
-- [Lab](../sat-tokenizer/lab.md)
-- [Start](../sat-tokenizer/start.md)
+- [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
+- [Stacks of the SAT verifier host](hk.md)
+- [Labels of the SAT verifier host](hlab.md)
+- [Stack alphabets of the SAT verifier host](h.md)
+- [Phase-0 labels of the SAT verifier host](p0.md)
+- [Program of the SAT verifier host](hprog.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Labels of the SAT tokenizer](../sat-tokenizer/lab.md)
+- [Start label of the SAT tokenizer](../sat-tokenizer/start.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [G](../dense-satverifier/g.md)
-- [D W](d-w.md)
-- [D X](d-x.md)
-- [Bit?](../sat-verifier-spec/bit.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
+- [Reading a witness bit in the SAT host](d-w.md)
+- [Reading a formula bit in the SAT host](d-x.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 - [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)

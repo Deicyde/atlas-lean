@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Decidability.allWordsCFG
 ---
 
-# All Words CFG
+# Grammar of all words
 
-The grammar `S → a S | ε` (for every letter `a`), generating every word.
+**Grammar of all words.** For a finite alphabet $T$, the encoded context-free grammar over $T$
+whose start nonterminal is $S = 0$ and whose productions are $S \to \varepsilon$ and $S \to a S$
+for every letter $a \in T$.
+
+It generates every word over $T$.
 
 ## Depends on
 

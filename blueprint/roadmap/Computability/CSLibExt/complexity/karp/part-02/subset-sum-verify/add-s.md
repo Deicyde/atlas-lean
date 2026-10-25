@@ -5,22 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.Karp.SSVerify.addS
 ---
 
-# Add S
+# Adding one payload bit to the sum
 
-Add the payload bit `b` with carry `c`: pop the sum bit `a` off `A` (`false` past its end),
-push `a ^^ b ^^ c` onto `B` and go on with the new carry.
+**Adding one payload bit to the sum.** The machine statement for adding the payload bit $b$
+with carry $c$: pop the top symbol of the sum stack $A$ and read it as a bit $a$ (false if $A$ is
+empty or the symbol is not a bit), push the bit $a \oplus b \oplus c$ onto $B$, and go to the label
+that adds a chosen number with carry the carry out of $a$, $b$ and $c$ and flag $\lnot b$ (the flag
+records whether the bits of the block read so far end in false).
 
 ## Depends on
 
-- [Stmt](stmt.md)
+- [Statements of the SUBSET-SUM verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Carry](carry.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stacks of the SUBSET-SUM verifier](k.md)
+- [Labels of the SUBSET-SUM verifier](lab.md)
+- [Carry bit of a full adder](carry.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

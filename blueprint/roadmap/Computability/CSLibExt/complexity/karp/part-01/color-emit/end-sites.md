@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.endSites
 ---
 
-# End Sites
+# Copy sites of the clause end
 
-The clause end: the output `R` joined to `F` and `B`.
+**Copy sites of the clause end.** The list of copy sites $e_1, e_2$, which push the edges
+joining the current OR output $R$ to the palette vertices $F = 1$ and $B = 2$.
 
 ## Depends on
 
-- [Site](site.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
 
 ## Sources
 

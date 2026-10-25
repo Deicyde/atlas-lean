@@ -16,12 +16,12 @@ $(t, i, k)$.
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [The shift block of a situation and a stack](sh-blk.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

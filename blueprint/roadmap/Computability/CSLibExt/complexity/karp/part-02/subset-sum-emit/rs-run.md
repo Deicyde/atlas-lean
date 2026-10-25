@@ -6,26 +6,33 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.rs_run
 ---
 
-# Rs run
+# Run of the mark-return loop of the subset-sum emitter
 
-Moving the marks back from `R` to `L`, the mark moves from vertex `w + 1` to `w`: when the
-marked vertex is popped, the vertex below it on `L` takes the mark.
+**Run of the mark-return loop of the subset-sum emitter.** Let $n, w \in \mathbb{N}$ with
+$w + 1 < n$. Start the VERTEX-COVER to SUBSET-SUM machine at label $\mathsf{rs}$ with any state
+bit and with stacks $S$ in which stack $\mathsf{L}$ is empty and stack $\mathsf{R}$ holds, top
+first, the symbols $\mathrm{val}(b_0), \dots, \mathrm{val}(b_{n-1})$, where $b_i$ is true exactly
+when $i = w + 1$. Then after exactly $n + 1$ steps the machine is at label $\mathsf{vtx}$ with
+some state bit and stacks $S'$ in which $\mathsf{R}$ is empty, $\mathsf{L}$ holds, top first, the
+symbols $\mathrm{val}(c_{n-1}), \dots, \mathrm{val}(c_0)$, where $c_i$ is true exactly when
+$i = w$, and every stack other than $\mathsf{R}$ and $\mathsf{L}$ is as in $S$. So the vertex
+mark moves from vertex $w + 1$ to vertex $w$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mk L](../subset-sum-digits/mk-l.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the SUBSET-SUM reduction machine](k.md)
+- [Labels of the subset-sum emitter](lab.md)
+- [Vertex marks for a vertex](../subset-sum-digits/mk-l.md)
+- [The subset-sum emitter machine](prog.md)
+- [Stack alphabets of the subset-sum emitter](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Is V](is-v.md)
-- [Is V val](is-v-val.md)
-- [Rs F run](rs-f-run.md)
+- [Start label of the subset-sum emitter](is-v-val.md)
+- [Subset-sum emitter: moving unmarked vertices back to L](rs-f-run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 

@@ -4,33 +4,33 @@ navigation: module
 
 # Regular
 
-- [Symm Diff](symm-diff.md)
-- [Reach Step](reach-step.md)
-- [Reachable](reachable.md)
+- [Symmetric difference of two DFAs](symm-diff.md)
+- [One round of the DFA reachability search](reach-step.md)
+- [Reachable states of an encoded DFA](reachable.md)
 - [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
-- [Start mem reachable](start-mem-reachable.md)
-- [Step mem reachable](step-mem-reachable.md)
+- [The start state is reachable](start-mem-reachable.md)
+- [Reachable states are closed under transitions](step-mem-reachable.md)
 - [Reachable Within](reachable-within.md)
-- [Reachable Within eq reachable](reachable-within-eq-reachable.md)
-- [Accessible Part Within](accessible-part-within.md)
-- [Accessible Part](accessible-part.md)
-- [Accessible Part Within surjective](accessible-part-within-surjective.md)
-- [Is Empty B](is-empty-b.md)
-- [Emptiness of DFAs is decided by `isEmptyB`](is-empty-b-iff.md)
-- [Is Univ B](is-univ-b.md)
-- [Universality of DFAs is decided by `isUnivB`](is-univ-b-iff.md)
-- [Equiv B](equiv-b.md)
-- [Equivalence of DFAs is decided by `equivB`](equiv-b-iff.md)
+- [The early-stopping search finds exactly the reachable states](reachable-within-eq-reachable.md)
+- [Accessible part of a DFA, by a bounded search](accessible-part-within.md)
+- [Accessible part of a DFA](accessible-part.md)
+- [Every state of the accessible part is reached](accessible-part-within-surjective.md)
+- [Emptiness test for DFAs](is-empty-b.md)
+- [The emptiness test decides emptiness of DFAs](is-empty-b-iff.md)
+- [Universality test for DFAs](is-univ-b.md)
+- [The universality test decides universality of DFAs](is-univ-b-iff.md)
+- [Equivalence test for DFAs](equiv-b.md)
+- [Correctness of the equivalence test for DFAs](equiv-b-iff.md)
 
 ## Acceptance
 
-- [Accepts B](accepts-b.md)
+- [Acceptance test for encoded DFAs](accepts-b.md)
 
 ## Reachability
 
-- [Reach Round](reach-round.md)
-- [Reach N](reach-n.md)
-- [Correctness of the search](mem-reach-n-iff.md)
+- [One round of the list reachability search](reach-round.md)
+- [Bounded reachability search on lists of states](reach-n.md)
+- [Correctness of the bounded reachability search](mem-reach-n-iff.md)
 - [Reachable](reachable-2.md)
 
 ## Emptiness
@@ -39,9 +39,9 @@ navigation: module
 
 ## Equivalence
 
-- [Pair States](pair-states.md)
-- [Pair Next](pair-next.md)
-- [Pair Reachable](pair-reachable.md)
+- [Coded pairs of states of two encoded DFAs](pair-states.md)
+- [Successors of a pair of states](pair-next.md)
+- [Reachable pairs of states of two encoded DFAs](pair-reachable.md)
 - [Equiv B](equiv-b-2.md)
 
 ## Universality
@@ -50,17 +50,17 @@ navigation: module
 
 ## Infiniteness
 
-- [To Fin DFA](to-fin-dfa.md)
-- [Infinite of mem of le](infinite-of-mem-of-le.md)
-- [Exists mem le lt](exists-mem-le-lt.md)
-- [Words Of Length](words-of-length.md)
-- [Infinite B](infinite-b.md)
-- [Infiniteness of DFA languages is decided by `infiniteB`](infinite-b-iff.md)
+- [An encoded DFA on its listed states](to-fin-dfa.md)
+- [A long accepted word makes the language of an encoded DFA infinite](infinite-of-mem-of-le.md)
+- [Accepted words of length between the number of listed states and twice it](exists-mem-le-lt.md)
+- [Words of a given length](words-of-length.md)
+- [Infiniteness test for encoded DFAs](infinite-b.md)
+- [Correctness of the infiniteness test for encoded DFAs](infinite-b-iff.md)
 
 ## Computability: Sipser's Theorems 4.1, 4.4 and 4.5
 
-- [Sipser, Theorem 4.1](tm2-decidable-mem-language.md)
-- [Sipser, Theorem 4.4](tm2-decidable-language-eq-zero.md)
-- [Sipser, Theorem 4.5](tm2-decidable-language-eq.md)
-- [Universality for DFAs (ALL_DFA) is decidable](tm2-decidable-language-eq-top.md)
-- [Infiniteness for DFAs (INFINITE_DFA) is decidable](tm2-decidable-language-infinite.md)
+- [Acceptance for DFAs is decidable](tm2-decidable-mem-language.md)
+- [Emptiness of DFAs is decidable](tm2-decidable-language-eq-zero.md)
+- [Equivalence of DFAs is decidable](tm2-decidable-language-eq.md)
+- [Universality of DFAs is decidable](tm2-decidable-language-eq-top.md)
+- [Infiniteness of DFAs is decidable](tm2-decidable-language-infinite.md)

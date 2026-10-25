@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.hamPathDec
 ---
 
-# Ham Path Dec
+# The HAMPATH problem
 
-HAMPATH: the digraph has a Hamiltonian path from `s` to `t`.
+**The HAMPATH problem.** The decision problem that accepts a bit string $x$ exactly when, for
+some $s$, $t$, $n$ and list of pairs $E$, $x$ is the PATH encoding of $s$, $t$ and the digraph on
+$0, \dots, n - 1$ with edge list $E$, and this digraph has a Hamiltonian path from $s$ to $t$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ HAMPATH: the digraph has a Hamiltonian path from `s` to `t`.
 
 ## Proof depends on
 
-- [Is Ham Path](is-ham-path.md)
-- [Encode P](../../../path/encode-p.md)
+- [Hamiltonian paths](is-ham-path.md)
+- [Encoding of a PATH instance](../../../path/encode-p.md)
 
 ## Sources
 

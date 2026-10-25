@@ -6,31 +6,33 @@ proof: formalized
 lean: Cslib.Decidability.Post.pcp_toPCP_of_mpcp
 ---
 
-# Pcp to PCP of mpcp
+# An MPCP solution gives a PCP solution of the reduced instance
 
-An MPCP solution of `P` gives a PCP solution of `toPCP P`.
+**An MPCP solution gives a PCP solution of the reduced instance.** If a list $P$ of dominoes
+has an MPCP solution, then the image of $P$ under the reduction from MPCP to PCP has a PCP
+solution.
 
 ## Depends on
 
-- [Domino](domino.md)
-- [MPCP](mpcp.md)
-- [PCP](pcp.md)
-- [Sym](sym.md)
+- [Domino (Post correspondence problem)](domino.md)
+- [The modified Post correspondence problem](mpcp.md)
+- [The Post correspondence problem](pcp.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 - [The reduction from MPCP to PCP](to-pcp.md)
 
 ## Proof depends on
 
-- [Is Solution](is-solution.md)
-- [Bottom](bottom.md)
-- [End Domino](end-domino.md)
-- [End Mark](end-mark.md)
-- [Letter](letter.md)
-- [Map Domino](map-domino.md)
-- [Star](star.md)
-- [Star After](star-after.md)
-- [Star Before](star-before.md)
-- [Start Domino](start-domino.md)
-- [Top](top.md)
+- [PCP solution](is-solution.md)
+- [Bottom word of a domino sequence](bottom.md)
+- [End domino of the MPCP-to-PCP reduction](end-domino.md)
+- [End marker](end-mark.md)
+- [The alphabet inside the extended alphabet](letter.md)
+- [Starred image of a domino](map-domino.md)
+- [The star symbol](star.md)
+- [A star after every letter](star-after.md)
+- [A star before every letter](star-before.md)
+- [The start domino](start-domino.md)
+- [Top word of a sequence of dominoes](top.md)
 
 ## Sources
 

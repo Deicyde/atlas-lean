@@ -8,7 +8,15 @@ lean: Cslib.Complexity.CookLevin.Situation.pf_force
 
 # Pushed-fill forcing
 
-**Pushed-fill forcing.** Only the situation literal is read.
+**Pushed-fill forcing.** Let $L$ be a layout with $A$ label/state variables, $K$ stacks and
+$g$ symbol codes, let $\mathrm{sa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu}$ be situation tables and
+$N, T, H \in \mathbb{N}$, and write $W = A + KHg$, $X[t, x] = tW + x$ and
+$C[t, k, j, x] = tW + A + (kH + j)g + x$. If the assignment $a$ satisfies the cell-shift family
+of these data, $t < T$, $i < N$, $k < K$, $j < \mathrm{pl}(i, k)$ and the variable
+$X[t + 1, \mathrm{sa}(i)]$ is true under $a$, then the variable
+$C[t + 1, k, j, \mathrm{pu}(i, k, j)]$ is true under $a$.
+
+Only the situation literal is read.
 
 ## Depends on
 
@@ -16,8 +24,8 @@ lean: Cslib.Complexity.CookLevin.Situation.pf_force
 - [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [Index of a label/state variable](../../family/x-idx.md)
 - [The cell-shift clause family](../../shift/sh-family.md)
-- [Tr](../part-04/tr.md)
-- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+- [Truth of a variable under an assignment](../part-04/tr.md)
+- [Satisfaction of a dense CNF formula](../../../dense-sat/cnf-sat.md)
 
 ## Proof depends on
 
@@ -27,9 +35,9 @@ lean: Cslib.Complexity.CookLevin.Situation.pf_force
 - [Literals of a pushed-fill clause](../../shift/pf-lits.md)
 - [The shift block of a situation and a stack](../../shift/sh-blk.md)
 - [Literals of an in-range shift clause](../../shift/sh-lits.md)
-- [L0](../part-04/clause-sat-dense.md)
-- [CNF](../../../dense-sat/cnf.md)
-- [Clause](../../../dense-sat/clause.md)
+- [L0 (a satisfied dense clause has a satisfied listed literal)](../part-04/clause-sat-dense.md)
+- [Dense CNF formula](../../../dense-sat/cnf.md)
+- [Dense clause](../../../dense-sat/clause.md)
 
 ## Sources
 

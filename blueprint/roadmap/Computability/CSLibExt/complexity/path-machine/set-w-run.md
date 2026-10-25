@@ -6,22 +6,32 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.setW_run
 ---
 
-# Set W run
+# Walking to a vertex and setting its mark
 
-Walk to vertex `j`, set its mark (if it exists), put the marks back.
+**Walking to a vertex and setting its mark.** Let $c$ be a stack other than the mark stack $M$
+and the parking stack $P$, and let $\mathit{self}$, $\mathit{back}$, $\mathit{next}$ be labels
+such that the marking machine at $\mathit{self}$ is the walk step counted by $c$ that loops at
+$\mathit{self}$ and finishes with the mark-setting step to $\mathit{back}$, and at
+$\mathit{back}$ it moves the bit block of $P$ onto $M$, looping at $\mathit{back}$ and then
+going to $\mathit{next}$. Let $S$ be stacks in which $c$ holds the counter value $j$ (for some
+unit symbol), $M$ holds the bits of a list $m$ of booleans, and $P$ is empty. Then from label
+$\mathit{self}$ with stacks $S$ and any internal state, the machine reaches label
+$\mathit{next}$ in at most $2j + 2$ steps, with some internal state and stacks $S'$ such that
+$c$ and $P$ are empty, $M$ holds the bits of $m$ with entry $j$ set to true (unchanged when
+$j \ge |m|$), and $S'$ agrees with $S$ on every stack other than $c$, $M$ and $P$.
 
 ## Depends on
 
-- [Fr](fr.md)
+- [Agreement off a set of stacks](fr.md)
 - [K](k.md)
 - [Lab](lab.md)
-- [Stmt](stmt.md)
-- [Prog](prog.md)
-- [Set S](set-s.md)
-- [Walk S](walk-s.md)
-- [Γ](untitled.md)
-- [Sym](../sat-verifier-spec/sym.md)
-- [Bit?](../sat-verifier-spec/bit.md)
+- [Statements of the PATH marking machine](stmt.md)
+- [The marking machine for PATH](prog.md)
+- [Mark-setting step](set-s.md)
+- [Walk step of the PATH marking machine](walk-s.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 - [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
@@ -29,14 +39,14 @@ Walk to vertex `j`, set its mark (if it exists), put the marks back.
 
 ## Proof depends on
 
-- [Trans](trans.md)
-- [Upd](upd.md)
-- [Restore run](restore-run.md)
-- [Set Head](set-head.md)
-- [Step Aux set S](step-aux-set-s.md)
-- [Step Aux walk S nil](step-aux-walk-s-nil.md)
-- [Take append set Head](take-append-set-head.md)
-- [Walk run](walk-run.md)
+- [Frames compose](trans.md)
+- [Updating a framed stack preserves the frame](upd.md)
+- [Restoring the parked marks](restore-run.md)
+- [Setting the first mark](set-head.md)
+- [Effect of the mark-setting step](step-aux-set-s.md)
+- [A walk step with an exhausted counter](step-aux-walk-s-nil.md)
+- [Setting an entry by splitting the list](take-append-set-head.md)
+- [Walking along the marks of the PATH marking machine](walk-run.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 

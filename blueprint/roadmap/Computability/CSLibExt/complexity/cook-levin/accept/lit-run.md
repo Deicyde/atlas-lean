@@ -36,7 +36,7 @@ encoding of $m$ empty slots).
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 

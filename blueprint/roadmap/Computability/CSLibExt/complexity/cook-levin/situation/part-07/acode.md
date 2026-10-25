@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.acode
 ---
 
-# Acode
+# Accepting code
 
-The code of the halted configuration `haltList` reads: label `none`, state `initialState`.
+**Accepting code.** For an encoding $E$ of a finite stack machine $M$, the accepting code is
+the (label, state) code that $E$ assigns to the pair of the halted label and the initial state of
+$M$, the label and state of a halted configuration as acceptance reads it.
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.edgeOk_zero_succ
 ---
 
-# Edge Ok zero succ
+# Edge verdict for an edge starting at vertex 0
 
-The walk-on result decides `edgeOk` when one endpoint is the first color.
+**Edge verdict for an edge starting at vertex 0.** For a color code $c$, a list $cs$ of color
+codes and $v \in \mathbb{N}$, the edge $(0, v + 1)$ passes the edge verdict with vertex colors $c$
+followed by $cs$ iff $v$ is less than the length of $cs$ and entry $v$ of $cs$ differs from $c$.
 
 ## Depends on
 
-- [Edge Ok](edge-ok.md)
+- [Edge verdict](edge-ok.md)
 
 ## Sources
 

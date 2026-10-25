@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Path.length_iterate_markPass
 ---
 
-# Length iterate mark Pass
+# Repeated marking passes preserve the length
 
-Repeated passes keep the length.
+**Repeated marking passes preserve the length.** Let $n$ be a natural number, $E$ a list of
+pairs of natural numbers and $m$ a list of booleans. For every natural number $k$, applying $k$
+marking passes over $E$ for $n$ vertices to $m$ gives a list of the same length as $m$.
 
 ## Depends on
 
-- [Mark Pass](../path/mark-pass.md)
+- [One marking pass](../path/mark-pass.md)
 
 ## Proof depends on
 
-- [Length mark Pass](length-mark-pass.md)
+- [A marking pass preserves the length](length-mark-pass.md)
 
 ## Sources
 

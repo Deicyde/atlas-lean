@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.CookLevin.PolyManyOneRed
 ---
 
-# Poly Many One Red
+# Polynomial-time many-one reduction
 
-Polynomial-time many-one reduction between decision problems, expressed
-through the canonical `ComplexityTheory.IsPolyTime` predicate.
+**Polynomial-time many-one reduction.** A decision problem $L_1$ reduces to a decision problem
+$L_2$ in polynomial time when there is a polynomial-time computable function $f$ from lists of
+Booleans to lists of Booleans such that $L_1(x) = L_2(f(x))$ for every list $x$ of Booleans.
 
 ## Depends on
 

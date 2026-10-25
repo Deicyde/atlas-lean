@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Decidability.tm2Recognizable_of_manyOneReducible
 ---
 
-# Tm2 Recognizable of many One Reducible
+# Recognizability transfers along mapping reductions
 
-A predicate that mapping-reduces to a recognizable one is recognizable.
+**Recognizability transfers along mapping reductions.** Let $p$ and $q$ be predicates on
+primitive recursively encodable types $\alpha$ and $\beta$. If $p$ is many-one reducible to $q$
+and $q$ is recognizable by a multi-stack machine, then $p$ is recognizable by a multi-stack
+machine.
 
 ## Depends on
 
-- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../../part-01/basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable iff re Pred](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

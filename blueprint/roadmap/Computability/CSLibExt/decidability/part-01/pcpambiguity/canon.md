@@ -12,12 +12,12 @@ last, then `A → wᵢ i`.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 
 ## Proof depends on
 
-- [Cont Rule](../cfgundecidable/cont-rule.md)
-- [Term Rule](../cfgundecidable/term-rule.md)
+- [The continuation production](../cfgundecidable/cont-rule.md)
+- [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 
 ## Sources

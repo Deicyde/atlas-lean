@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Kolmogorov.exists_K_le_of_partrec
 ---
 
-# Optimality
+# Optimality (the invariance theorem)
 
-**Optimality** (the invariance theorem): the universal description method is at most a
-constant worse than any partial recursive description method `D`.
+**Optimality (the invariance theorem).** Let $D$ be a partial recursive function from binary
+strings to binary strings, viewed as a description method. Then there is a natural number $c$
+such that for all binary strings $x$ and $p$ for which $D(p)$ is defined and equals $x$, the
+Kolmogorov complexity of $x$ satisfies $K(x) \le |p| + c$, where $|p|$ is the length of $p$.
 
 ## Depends on
 
@@ -17,11 +19,11 @@ constant worse than any partial recursive description method `D`.
 
 ## Proof depends on
 
-- [K le](k-le.md)
+- [A description bounds the complexity](k-le.md)
 - [The universal description method](u.md)
-- [Describe](describe.md)
-- [Exists run eq](exists-run-eq.md)
-- [Run](run.md)
+- [Description of a code running on an input](describe.md)
+- [Every partial recursive description method has a code](exists-run-eq.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

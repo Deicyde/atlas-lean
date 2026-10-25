@@ -18,7 +18,7 @@ least `n`.
 ## Proof depends on
 
 - [Few strings have small complexity](card-lt-two-pow.md)
-- [Strings Of Length](strings-of-length.md)
+- [Binary strings of a given length](strings-of-length.md)
 
 ## Sources
 

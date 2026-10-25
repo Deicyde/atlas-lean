@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.cnfSat_take
 ---
 
-# Cnf Sat take
+# Truncating a satisfying assignment
 
-Truncating a satisfying assignment to the input length keeps it satisfying.
+**Truncating a satisfying assignment.** Let $w$ be a bit string and $\varphi$ the CNF formula
+decoded from $w$. If a finite bit sequence $a$ satisfies $\varphi$, then so does the prefix of $a$
+of length $|w|$ (all of $a$ when $a$ has at most $|w|$ bits).
 
 ## Depends on
 
-- [Cnf Sat](cnf-sat.md)
-- [Decode CNF](decode-cnf.md)
+- [Satisfaction of a dense CNF formula](cnf-sat.md)
+- [Dense decoding of CNF formulas](decode-cnf.md)
 
 ## Proof depends on
 
-- [CNF](cnf.md)
-- [Clause](clause.md)
-- [Clause Sat](clause-sat.md)
-- [Length le of mem decode Aux](length-le-of-mem-decode-aux.md)
+- [Dense CNF formula](cnf.md)
+- [Dense clause](clause.md)
+- [Satisfaction of a dense clause](clause-sat.md)
+- [Decoded clauses are no longer than the input](length-le-of-mem-decode-aux.md)
 
 ## Sources
 

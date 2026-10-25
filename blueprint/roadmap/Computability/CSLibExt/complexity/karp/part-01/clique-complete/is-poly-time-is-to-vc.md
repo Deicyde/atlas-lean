@@ -8,11 +8,14 @@ lean: Cslib.Complexity.Karp.isPolyTime_isToVc
 
 # INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time
 
-**INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time**.
+**INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time.** The map on bit strings that sends
+$1^k 0 1^n 0 b$, for natural numbers $k \le n$ and a bit string $b$, to $1^{n-k} 0 1^n 0 b$, and
+sends every other string (including $1^k 0 1^n 0 b$ with $k > n$) to the string $100$, is
+computable in polynomial time.
 
 ## Depends on
 
-- [Is To Vc](../clique/is-to-vc.md)
+- [Map from INDEPENDENT-SET to VERTEX-COVER instances](../clique/is-to-vc.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
@@ -25,18 +28,18 @@ lean: Cslib.Complexity.Karp.isPolyTime_isToVc
 
 ## Proof depends on
 
-- [Comp](../../../host/comp.md)
+- [Component machine](../../../host/comp.md)
 - [Reduction host, canonical form](../../../host/is-poly-time-reduction.md)
 - [K](../../part-02/kgmap/k.md)
 - [Lab](../../part-02/kgmap/lab.md)
-- [Mode](../../part-02/kgmap/mode.md)
-- [F](../../part-02/kgmap/f.md)
-- [Prog](../../part-02/kgmap/prog.md)
-- [The component](../../part-02/kgmap/run.md)
-- [Start](../../part-02/kgmap/start.md)
-- [Γ](../../part-02/kgmap/untitled.md)
-- [Kg Map Comp](kg-map-comp.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](../../part-02/kgmap/mode.md)
+- [Reduction computed in each mode](../../part-02/kgmap/f.md)
+- [The KG-map machine](../../part-02/kgmap/prog.md)
+- [Correctness and running time of the KG-map machine](../../part-02/kgmap/run.md)
+- [Start label of the KG-map machine](../../part-02/kgmap/start.md)
+- [Stack alphabets of the clique reduction machine](../../part-02/kgmap/untitled.md)
+- [The CLIQUE-to-INDEPENDENT-SET and INDEPENDENT-SET-to-VERTEX-COVER map as a host component](kg-map-comp.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 

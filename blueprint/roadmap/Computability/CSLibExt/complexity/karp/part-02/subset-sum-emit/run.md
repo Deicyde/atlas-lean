@@ -6,57 +6,61 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitSS.run
 ---
 
-# The component
+# Run of the VERTEX-COVER to SUBSET-SUM machine
 
-**The component.** From `start` with `x` on `X` (as `Sym.bit`s) and the other stacks empty,
-`prog` reaches `done` within `40 · (|x| + 1)⁴` steps with `reduceSS x` on `O`, top first.
+**Run of the VERTEX-COVER to SUBSET-SUM machine.** Let $x$ be a bit string. Start the
+VERTEX-COVER to SUBSET-SUM machine at its start label with any state bit and with stacks in
+which the input stack $\mathsf{X}$ holds the bit symbols of $x$, first bit on top, and every other
+stack is empty. Then within at most $40(|x| + 1)^4$ steps the machine reaches the label
+$\mathsf{done}$ with some state bit and stacks in which the output stack $\mathsf{O}$ holds,
+top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to SUBSET-SUM.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Γ](untitled.md)
-- [Reduce SS](../subset-sum/reduce-ss.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the SUBSET-SUM reduction machine](k.md)
+- [Labels of the subset-sum emitter](lab.md)
+- [The subset-sum emitter machine](prog.md)
+- [Start label of the subset-sum emitter](start.md)
+- [Stack alphabets of the subset-sum emitter](untitled.md)
+- [Reduction from VERTEX-COVER to SUBSET-SUM](../subset-sum/reduce-ss.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [U](u.md)
-- [Bits Val cons](../subset-sum-digits/bits-val-cons.md)
-- [Bits Val flat Map2](../subset-sum-digits/bits-val-flat-map2.md)
-- [Cmp Out](cmp-out.md)
-- [Edge Enc](../subset-sum-digits/edge-enc.md)
-- [Edge Out](../subset-sum-digits/edge-out.md)
-- [Eg run](eg-run.md)
-- [Encode Nat bits Val](../subset-sum-digits/encode-nat-bits-val.md)
-- [Encode Nat bits Val rev](../subset-sum-digits/encode-nat-bits-val-rev.md)
-- [Hv run](hv-run.md)
-- [Is Bit Block val](is-bit-block-val.md)
-- [Mk L](../subset-sum-digits/mk-l.md)
-- [Mv run](mv-run.md)
-- [Rd K none](rd-k-none.md)
-- [Rd K some](rd-k-some.md)
-- [Rd N none](rd-n-none.md)
-- [Rd N some](rd-n-some.md)
-- [Tri](../subset-sum-digits/tri.md)
-- [Tri run](tri-run.md)
-- [Tsk run](tsk-run.md)
-- [Val Of](val-of.md)
-- [Vtx run](vtx-run.md)
-- [Walk M](../subset-sum-digits/walk-m.md)
-- [Walk M pairs](../subset-sum-digits/walk-m-pairs.md)
-- [Edge Num](../subset-sum/edge-num.md)
-- [Encode SS](../subset-sum/encode-ss.md)
-- [No SS](../subset-sum/no-ss.md)
-- [Pair Digit](../subset-sum/pair-digit.md)
-- [Pairs](../../part-01/clique/pairs.md)
-- [Ss Nums](../subset-sum/ss-nums.md)
-- [Ss Target](../subset-sum/ss-target.md)
-- [Vtx Num](../subset-sum/vtx-num.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Counter unit of the subset-sum emitter](u.md)
+- [Value of a bit list with a leading bit](../subset-sum-digits/bits-val-cons.md)
+- [Value of a list of two-bit digits](../subset-sum-digits/bits-val-flat-map2.md)
+- [Branch after the count comparison (SUBSET-SUM reduction machine)](cmp-out.md)
+- [Output block of an edge number](../subset-sum-digits/edge-enc.md)
+- [Output of all edge numbers](../subset-sum-digits/edge-out.md)
+- [Edge-number phase (SUBSET-SUM reduction machine)](eg-run.md)
+- [A bit list without trailing false is the binary code of its value](../subset-sum-digits/encode-nat-bits-val.md)
+- [Binary code of the value of a bit list](../subset-sum-digits/encode-nat-bits-val-rev.md)
+- [Binary conversion (SUBSET-SUM reduction machine)](hv-run.md)
+- [Start label of the subset-sum emitter](is-bit-block-val.md)
+- [Vertex marks for a vertex](../subset-sum-digits/mk-l.md)
+- [Subset-sum emitter: moving the pair bits](mv-run.md)
+- [Subset-sum emitter: unterminated unary prefix at rdK](rd-k-none.md)
+- [Subset-sum emitter: reading the unary k](rd-k-some.md)
+- [Subset-sum emitter: unterminated unary prefix at rdN](rd-n-none.md)
+- [Subset-sum emitter: reading the unary n](rd-n-some.md)
+- [Triangular numbers](../subset-sum-digits/tri.md)
+- [Run of the pair-counting loop of the subset-sum emitter](tri-run.md)
+- [Run of the target-output phase of the subset-sum emitter](tsk-run.md)
+- [Reading a pair bit or vertex mark](val-of.md)
+- [Run of the vertex-number phase of the subset-sum emitter](vtx-run.md)
+- [The pair walk over lists of marks](../subset-sum-digits/walk-m.md)
+- [The pair walk lists the vertex pairs in reverse](../subset-sum-digits/walk-m-pairs.md)
+- [Edge numbers of the SUBSET-SUM reduction](../subset-sum/edge-num.md)
+- [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
+- [Fixed no-instance of SUBSET-SUM](../subset-sum/no-ss.md)
+- [Place value of a vertex pair in the SUBSET-SUM reduction](../subset-sum/pair-digit.md)
+- [Vertex pairs in encoding order](../../part-01/clique/pairs.md)
+- [Numbers of the SUBSET-SUM reduction](../subset-sum/ss-nums.md)
+- [Target of the SUBSET-SUM reduction](../subset-sum/ss-target.md)
+- [Vertex numbers of the SUBSET-SUM reduction](../subset-sum/vtx-num.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)

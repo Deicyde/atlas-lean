@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Complexity.Karp.hpR_lt_hpT_succ
 ---
 
-# Hp R lt hp T succ
+# Row vertices lie below the next top
 
-Row vertices of diamond `i` lie below the next top.
+**Row vertices lie below the next top.** In the HAMPATH construction with $m$ clauses, for
+every diamond $i$ and every $l \le 3m$, row vertex $l$ of diamond $i$ is a smaller number than
+the top of diamond $i + 1$.
 
 ## Depends on
 
-- [Hp R](hp-r.md)
-- [Hp T](hp-t.md)
+- [Row vertices of a diamond](hp-r.md)
+- [Tops of the diamonds](hp-t.md)
 
 ## Sources
 

@@ -47,7 +47,9 @@ namespace Cslib.Kolmogorov
 
 open Encodable
 
-/-- Pad a string `p` with `|p| < n` to length `n` as `0…0 1 p`. -/
+/-- **Padding a string to a given length.** For a natural number $n$ and a binary string $p$, the
+padding of $p$ to length $n$ is the string $0^k 1 p$ with $k = \max(n - 1 - |p|, 0)$; when
+$|p| < n$ it has length $n$. -/
 def pad (n : ℕ) (p : List Bool) : List Bool := List.replicate (n - 1 - p.length) false ++ true :: p
 
 theorem length_pad {n : ℕ} {p : List Bool} (h : p.length < n) : (pad n p).length = n := by
@@ -100,7 +102,8 @@ theorem card_lt_two_pow {m : ℕ} (S : Finset (List Bool)) (hS : ∀ x ∈ S, K 
   have : 0 < 2 ^ m := Nat.two_pow_pos m
   omega
 
-/-- The strings of length `n`, as a finset. -/
+/-- **Binary strings of a given length.** For a natural number $n$, the finite set of all binary
+strings of length $n$. -/
 noncomputable def stringsOfLength (n : ℕ) : Finset (List Bool) :=
   (Finset.univ : Finset (List.Vector Bool n)).map
     ⟨List.Vector.toList, List.Vector.toList_injective⟩
@@ -116,9 +119,11 @@ theorem mem_stringsOfLength {n : ℕ} {x : List Bool} : x ∈ stringsOfLength n 
 theorem card_stringsOfLength (n : ℕ) : (stringsOfLength n).card = 2 ^ n := by
   simp [stringsOfLength, card_vector]
 
-/-- **Most strings are incompressible**: fewer than `2 ^ (n - c)` strings of length `n` have
-complexity below `n - c`, so at least `2 ^ n - 2 ^ (n - c) + 1` of them are incompressible by
-`c`. -/
+/-- **Most strings are incompressible.** For all natural numbers $n$ and $c$, fewer than
+$2^{n-c}$ binary strings of length $n$ have Kolmogorov complexity less than $n - c$, where
+$n - c$ is read as $0$ when $c > n$.
+
+Hence at least $2^n - 2^{n-c} + 1$ strings of length $n$ have complexity at least $n - c$. -/
 theorem card_compressible_lt (n c : ℕ) :
     ((stringsOfLength n).filter fun x ↦ K x < n - c).card < 2 ^ (n - c) :=
   card_lt_two_pow _ fun _ hx ↦ (Finset.mem_filter.mp hx).2

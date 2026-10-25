@@ -25,10 +25,10 @@ codes; the equality holds because order and repetitions do not change these clau
 - [Codes of input symbols](enc-f.md)
 - [The init family](init-fam.md)
 - [Sorted certificate code list](ycs.md)
-- [Enc](../situation/part-01/enc.md)
-- [The init family](../situation/part-06/init-family.md)
-- [Layout](../situation/part-01/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [The row-0 init family of an encoding](../situation/part-06/init-family.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
@@ -43,14 +43,14 @@ codes; the equality holds because order and repetitions do not change these clau
 - [Row-0 prefix clauses](i-pre.md)
 - [Row-0 tail clauses](i-tail.md)
 - [Empty-cell variable of the initial row](z-b.md)
-- [Init Cert](../situation/part-06/init-cert.md)
-- [Init Code](../situation/part-06/init-code.md)
-- [Init In](../situation/part-06/init-in.md)
-- [Init Other](../situation/part-06/init-other.md)
-- [Init Pre](../situation/part-06/init-pre.md)
-- [Init Tail](../situation/part-06/init-tail.md)
-- [Z Idx](../situation/part-06/z-idx.md)
-- [Clause](../../dense-sat/clause.md)
+- [Certificate clauses of the init family](../situation/part-06/init-cert.md)
+- [Start-code clause of the init family](../situation/part-06/init-code.md)
+- [Input clauses of the init family](../situation/part-06/init-in.md)
+- [Empty-stack clauses of the init family](../situation/part-06/init-other.md)
+- [Prefix clauses of the init family](../situation/part-06/init-pre.md)
+- [Length-bound clauses of the init family](../situation/part-06/init-tail.md)
+- [Index of the empty-cell variable of the input stack](../situation/part-06/z-idx.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

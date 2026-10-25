@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.exists_derives_of_forall
 ---
 
-# Exists derives of forall
+# Sentential forms of productive nonterminals derive terminal words
 
-A sentential form whose nonterminals each derive a terminal word derives a terminal word.
+**Sentential forms of productive nonterminals derive terminal words.** In a context-free
+grammar $G$, if every nonterminal occurring in a sentential form $u$ derives some terminal word,
+then $u$ derives some terminal word.
 
 ## Depends on
 

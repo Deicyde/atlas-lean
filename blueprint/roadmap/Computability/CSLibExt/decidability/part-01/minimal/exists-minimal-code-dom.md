@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.exists_minimalCode_dom
 ---
 
-# Exists minimal Code dom
+# Every language of a code has a minimal code
 
-Every language of a code has a minimal code: one with the least encoding, which in particular
-has the shortest description.
+**Every language of a code has a minimal code.** For every code $c$ of a partial recursive
+function there is a minimal code $D$ whose domain equals the domain of $c$, where the domain of a
+code is the set of inputs on which its evaluation is defined.
 
 ## Depends on
 
-- [Minimal Code](minimal-code.md)
+- [Minimal codes](minimal-code.md)
 
 ## Proof depends on
 
-- [Desc Length](desc-length.md)
+- [Description length of a code](desc-length.md)
 
 ## Sources
 

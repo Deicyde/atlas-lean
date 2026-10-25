@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Decidability.TMRewriting.split_site
 ---
 
-# Split site
+# Splitting a rewrite site at its control symbol
 
-Splitting at the marked symbol of a rewrite site `u (p x s) v`.
+**Splitting a rewrite site at its control symbol.** Let $A$, $B$, $u$, $v$, $p$, $s$ be words
+over the symbols of the rewriting system simulating a single-tape machine, and let $x$ and $y$ be
+symbols. If no symbol of $A$ or of $B$ is a control symbol (a state symbol or the halting symbol),
+$x$ is a control symbol, and $u\,p\,x\,s\,v = A\,y\,B$, then $u\,p = A$, $x = y$ and $s\,v = B$.
 
 ## Depends on
 
-- [Is Ctl](is-ctl.md)
-- [TMSym](tmsym.md)
+- [Control symbols](is-ctl.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Proof depends on
 
-- [Eq of append cons eq](eq-of-append-cons-eq.md)
+- [Unique splitting at a marked letter](eq-of-append-cons-eq.md)
 
 ## Sources
 

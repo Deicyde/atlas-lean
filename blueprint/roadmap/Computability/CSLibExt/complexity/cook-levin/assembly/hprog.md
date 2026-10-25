@@ -59,7 +59,7 @@ the final host label, where it halts.
 - [Clause kinds of the cell-shift family](../shift/cl.md)
 - [Stages of the cell-shift literal routine](../shift/ls.md)
 - [Precomputation stages of the shift generator](../shift/ps.md)
-- [ST](../shift/st.md)
+- [Setup and loop stages of a cell-shift block](../shift/st.md)
 - [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources

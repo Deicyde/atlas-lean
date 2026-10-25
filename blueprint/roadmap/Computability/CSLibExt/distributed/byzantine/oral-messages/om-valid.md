@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.om_valid
 ---
 
-# Validity
+# Validity under oral messages (IC2)
 
-**Validity** (IC2 of Theorem 1, Lamport–Shostak–Pease). With more than `3 m` generals and at
-most `m` traitors, if the commander is loyal, every loyal lieutenant decides its value under
-`OM(m)`.
+**Validity under oral messages (IC2).** Let a loyal commander $c$ run $\mathrm{OM}(m)$ with a
+value $v$ and any list of superiors, sending to a finite set $S$ of lieutenants. If
+$3m < |S| + 1$ (more than $3m$ generals when $c \notin S$) and at most $m$ of the generals in
+$S \cup \{c\}$ are traitors, then, whatever the traitors send, every loyal lieutenant $p \in S$
+decides $v$.
+
+This is condition IC2 of Theorem 1 of Lamport–Shostak–Pease.
 
 ## Depends on
 
-- [Om](om.md)
+- [The oral messages algorithm](om.md)
 
 ## Proof depends on
 
-- [Lemma 1](om-eq-of-loyal.md)
+- [A loyal commander is obeyed under oral messages](om-eq-of-loyal.md)
 
 ## Sources
 

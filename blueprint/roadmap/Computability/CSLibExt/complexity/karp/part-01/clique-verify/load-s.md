@@ -5,22 +5,29 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.loadS
 ---
 
-# Load S
+# Load step of the CLIQUE verifier
 
-Load one witness bit per unit of `N` from `W` onto `V` (bit `n - 1` ends on top), taking a
-unit off `C` per set bit. Rejects if `W` runs out or more than `k` bits are set; at the end `C`
-must be empty.
+**Load step of the CLIQUE verifier.** The statement run at the load label. If the counter
+$N$ is nonempty, it takes a unit off $N$, rejects if the witness stack $W$ is empty, and
+otherwise pops the top of $W$ and pushes its bit (false for a non-bit symbol) onto the vertex
+stack $V$; if that bit is set it also takes a unit off the counter $C$, rejecting if $C$ is
+empty; then it returns to the load label. If $N$ is empty, it goes to the walk label with its
+flag $c$ (the conjunction of the row's pair conditions so far) set to true when $C$ is empty,
+and rejects otherwise.
+
+Started from $n$ on $N$ and $k$ on $C$, it loads the first $n$ witness bits onto $V$, bit
+$n - 1$ on top, and rejects if $W$ runs out or the number of set bits among them is not $k$.
 
 ## Depends on
 
-- [Stmt](stmt.md)
+- [Statements of the clique verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

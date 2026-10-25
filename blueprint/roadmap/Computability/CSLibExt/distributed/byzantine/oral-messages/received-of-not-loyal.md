@@ -12,7 +12,7 @@ A traitorous commander sends what the adversary chooses for its path and the rec
 
 ## Depends on
 
-- [Received](received.md)
+- [Value received from a commander](received.md)
 
 ## Sources
 

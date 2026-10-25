@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Path.Machine.Stmt
 ---
 
-# Stmt
+# Statements of the PATH marking machine
 
-Statements of the machine.
+**Statements of the PATH marking machine.** The statements of the multi-stack Turing machine
+(TM2) model whose stacks carry the stack alphabets $\Gamma$ of the marking machine, whose labels
+are the labels of the marking machine, and whose internal state is a boolean.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Γ](untitled.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources
 

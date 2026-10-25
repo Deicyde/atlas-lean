@@ -4,22 +4,22 @@ navigation: module
 
 # Sat Check
 
-- [K](k.md)
-- [DLab](dlab.md)
-- [Stmt](stmt.md)
-- [Cfg](cfg.md)
-- [Call S](call-s.md)
-- [Drv](drv.md)
-- [Prog](prog.md)
-- [Lookup Spec](lookup-spec.md)
+- [Stacks of the clause check](k.md)
+- [Driver labels of the clause check](dlab.md)
+- [Clause-check statements](stmt.md)
+- [Configurations of the clause-check machine](cfg.md)
+- [Calling the lookup](call-s.md)
+- [The clause-check driver](drv.md)
+- [The clause-check driver with a lookup sub-program](prog.md)
+- [The lookup contract](lookup-spec.md)
 
 ## The token stack, clause by clause
 
-- [Lit Rev](lit-rev.md)
-- [Cl Rev](cl-rev.md)
+- [A literal's tokens on the token stack](lit-rev.md)
+- [A clause's tokens on the token stack](cl-rev.md)
 
 ## The literal loop and the clause loop
 
-- [Lits run](lits-run.md)
-- [Clauses run](clauses-run.md)
+- [Literal loop of the clause check](lits-run.md)
+- [Clause loop of the clause check](clauses-run.md)
 - [The clause check](run.md)

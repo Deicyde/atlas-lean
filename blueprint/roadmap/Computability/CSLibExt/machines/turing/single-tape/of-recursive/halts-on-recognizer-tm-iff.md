@@ -21,7 +21,7 @@ lean: Cslib.Turing.SingleTapeTM.OfTM2.haltsOn_recognizerTM_iff
 
 ## Proof depends on
 
-- [Tm2 Halts On iff eval dom](../../../../decidability/part-02/tm0-halting/tm2-halts-on-iff-eval-dom.md)
+- [Halting agrees with evaluation for multi-stack machines](../../../../decidability/part-02/tm0-halting/tm2-halts-on-iff-eval-dom.md)
 - [Bot Cell](bot-cell.md)
 - [Emu Support](emu-support.md)
 - [Emu TM](emu-tm.md)

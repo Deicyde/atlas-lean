@@ -6,60 +6,60 @@ navigation: module
 
 ## Parsing
 
-- [Last F](last-f.md)
-- [Encode Nat decode Nat iff](encode-nat-decode-nat-iff.md)
-- [Nums Aux](nums-aux.md)
-- [Decode SS](decode-ss.md)
-- [`decodeSS` inverts `encodeSS`](decode-ss-eq-some.md)
+- [Whether a bit string ends in false](last-f.md)
+- [Canonical binary strings are those not ending in zero](encode-nat-decode-nat-iff.md)
+- [Parsing number blocks, with fuel](nums-aux.md)
+- [Decoding a SUBSET-SUM instance](decode-ss.md)
+- [Decoding a SUBSET-SUM instance inverts its encoding](decode-ss-eq-some.md)
 
 ## The verifier as a pure function
 
-- [Pick](pick.md)
-- [Ss Check](ss-check.md)
-- [Exists pick](exists-pick.md)
-- [SUBSET-SUM is verified by `ssCheck`](subset-sum-dec-iff.md)
+- [Numbers chosen by a mask](pick.md)
+- [The SUBSET-SUM verifier](ss-check.md)
+- [Every sublist is selected by a mask](exists-pick.md)
+- [SUBSET-SUM is characterized by its verifier](subset-sum-dec-iff.md)
 
 ## Binary addition
 
-- [Carry](carry.md)
-- [Inc B](inc-b.md)
-- [Add B](add-b.md)
+- [Carry bit of a full adder](carry.md)
+- [Adding a carry bit](inc-b.md)
+- [Ripple-carry addition of bit lists](add-b.md)
 - [Addition is correct on canonical numbers](add-b-encode-nat.md)
 
 ## The machine
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Stmt](stmt.md)
-- [Rd S](rd-s.md)
-- [Add S](add-s.md)
-- [Fin S](fin-s.md)
-- [Next S](next-s.md)
-- [Prog](prog.md)
-- [Start](start.md)
+- [Stacks of the SUBSET-SUM verifier](k.md)
+- [Labels of the SUBSET-SUM verifier](lab.md)
+- [Statements of the SUBSET-SUM verifier](stmt.md)
+- [Reading one pair of a block](rd-s.md)
+- [Adding one payload bit to the sum](add-s.md)
+- [Carry step of the SUBSET-SUM verifier](fin-s.md)
+- [Starting the next number](next-s.md)
+- [The SUBSET-SUM verifier program](prog.md)
+- [Start state of the SUBSET-SUM verifier](start.md)
 
 ## Stacks
 
-- [St](st.md)
-- [Rej](rej.md)
-- [Rej one](rej-one.md)
+- [Stack contents of the SUBSET-SUM verifier](st.md)
+- [Rejection within a step bound](rej.md)
+- [Rejecting in one step](rej-one.md)
 
 ## Reading blocks
 
-- [Tgt run](tgt-run.md)
-- [Skip run](skip-run.md)
-- [Fin run](fin-run.md)
-- [Add run](add-run.md)
-- [Add rej](add-rej.md)
-- [Tgt fail](tgt-fail.md)
-- [Skip fail](skip-fail.md)
-- [Add fail](add-fail.md)
+- [Reading the target block](tgt-run.md)
+- [Skipping a number block](skip-run.md)
+- [Carry phase of the SUBSET-SUM verifier](fin-run.md)
+- [Adding a canonical chosen block](add-run.md)
+- [The verifier rejects a chosen block that ends in false](add-rej.md)
+- [The verifier rejects an unterminated target block](tgt-fail.md)
+- [The verifier rejects an unterminated skipped block](skip-fail.md)
+- [The verifier rejects an unterminated chosen block](add-fail.md)
 
 ## Moving and comparing sums
 
-- [Back run](back-run.md)
-- [Fmove run](fmove-run.md)
-- [Cmp run](cmp-run.md)
+- [Moving the new sum back](back-run.md)
+- [Moving the final sum for the comparison](fmove-run.md)
+- [Comparing the sum with the target](cmp-run.md)
 
 ## The summing loop
 
@@ -67,5 +67,5 @@ navigation: module
 
 ## The whole run
 
-- [Cost le](cost-le.md)
-- [The verifier machine](run.md)
+- [Cubic bound on the verifier's phase costs](cost-le.md)
+- [The SUBSET-SUM verifier machine](run.md)

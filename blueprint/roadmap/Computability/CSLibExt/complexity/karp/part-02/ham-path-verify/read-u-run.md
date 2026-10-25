@@ -6,26 +6,33 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.readU_run
 ---
 
-# Read U run
+# The unary reader of the Hamiltonian path verifier reads a terminated number
 
-`readU` on `k` in unary: `k + 1` steps to `next`, with `k` more units on the counter and
-the rest of `src` left.
+**The unary reader of the Hamiltonian path verifier reads a terminated number.** Let
+$\mathsf{src} \ne c$ be stacks and $\ell$, $m$ labels such that the verifier's statement at
+$\ell$ is the unary reader from $\mathsf{src}$ onto $c$ with own label $\ell$ and next label
+$m$. Let $k, j$ be natural numbers and $r$ a bit list, and suppose that $\mathsf{src}$ holds
+$k$ copies of `true`, then `false`, then $r$ (as bit symbols, first bit on top) and that $c$
+holds $j$ copies of the bit `true`. Then from label $\ell$, with either value of the Boolean
+variable, the verifier reaches label $m$ in exactly $k + 1$ steps, with $\mathsf{src}$ holding
+the bits of $r$, $c$ holding $k + j$ copies of the bit `true`, and every other stack
+unchanged.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
 - [Prog](prog.md)
-- [Read U](read-u.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [The unary reader of the Hamiltonian path verifier](read-u.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Step1](step1.md)
-- [Update update update update](update-update-update-update.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [A single step of the Hamiltonian-path verifier](step1.md)
+- [Interleaved stack updates in the Hamiltonian-path verifier](update-update-update-update.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

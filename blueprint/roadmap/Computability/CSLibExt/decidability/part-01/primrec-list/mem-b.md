@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.memB
 ---
 
-# Mem B
+# Boolean membership test for lists of natural numbers
 
-Whether `j` occurs in `G`.
+**Boolean membership test for lists of natural numbers.** For a list $G$ of natural numbers
+and a natural number $j$, the Boolean value that is true exactly when $j$ is an entry of $G$.
 
 ## Depends on
 

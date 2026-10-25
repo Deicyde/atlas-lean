@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.encodeCNF
 ---
 
-# Encode CNF
+# Dense encoding of a CNF formula
 
-Encode a CNF formula as a bit string.
+**Dense encoding of a CNF formula.** The dense encoding of a CNF formula $\varphi$ is the bit
+string obtained by concatenating, in order, the encodings of the clauses of $\varphi$, where a
+clause is encoded as the two-bit codes of its slots followed by the terminator $00$.
 
 ## Depends on
 
-- [CNF](cnf.md)
+- [Dense CNF formula](cnf.md)
 
 ## Proof depends on
 
-- [Clause](clause.md)
-- [Encode Clause](encode-clause.md)
+- [Dense clause](clause.md)
+- [Dense encoding of a clause](encode-clause.md)
 
 ## Sources
 

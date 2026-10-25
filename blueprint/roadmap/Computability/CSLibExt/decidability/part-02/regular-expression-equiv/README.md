@@ -10,14 +10,14 @@ navigation: module
 
 ## The bound for encoded regular expressions
 
-- [Step States](step-states.md)
-- [State Counts](state-counts.md)
-- [Num Thompson States](num-thompson-states.md)
-- [Length state Counts](length-state-counts.md)
-- [State Counts append singleton](state-counts-append-singleton.md)
-- [Get D state Counts](get-d-state-counts.md)
+- [One step of the Thompson state count](step-states.md)
+- [Thompson state counts of a node list](state-counts.md)
+- [Thompson state count of an encoding](num-thompson-states.md)
+- [One state count per node](length-state-counts.md)
+- [Appending a node appends its count](state-counts-append-singleton.md)
+- [The pass computes the Thompson state count of every node](get-d-state-counts.md)
 - [The pass counts the states of Thompson's automaton](num-thompson-states-eq.md)
-- [Eq Bound](eq-bound.md)
+- [Search bound for equivalence](eq-bound.md)
 - [Matches' eq iff forall length lt](matches-eq-iff-forall-length-lt-2.md)
 
 ## The decision procedure
@@ -27,9 +27,9 @@ navigation: module
 
 ## Computability
 
-- [Primrec step States](primrec-step-states.md)
-- [Primrec state Counts](primrec-state-counts.md)
-- [Primrec num Thompson States](primrec-num-thompson-states.md)
-- [Primrec eq Bound](primrec-eq-bound.md)
-- [Primrec eq B](primrec-eq-b.md)
+- [One step of the Thompson state count is primitive recursive](primrec-step-states.md)
+- [The pass of Thompson state counts is primitive recursive](primrec-state-counts.md)
+- [The Thompson state count of an encoding is primitive recursive](primrec-num-thompson-states.md)
+- [The equivalence search bound is primitive recursive](primrec-eq-bound.md)
+- [The equivalence test is primitive recursive](primrec-eq-b.md)
 - [EQ_REX is decidable](tm2-decidable-matches-eq.md)

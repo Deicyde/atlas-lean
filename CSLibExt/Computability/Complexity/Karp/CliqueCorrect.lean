@@ -73,7 +73,10 @@ theorem kgDec_encodeKG_eq_true {P : ∀ n : ℕ, ℕ → SimpleGraph (Fin n) →
   · rintro ⟨hlen, hP⟩
     exact ⟨k, n, bits, rfl, hlen, hP⟩
 
-/-- Input that does not parse as two unary numbers is rejected. -/
+/-- **Unparsable input is rejected.** Let $P$ be any property of a triple $(n, k, G)$, where $n$ and
+$k$ are natural numbers and $G$ is a simple graph on the vertices $0, 1, \dots, n - 1$. A bit string
+that does not begin with two unary numbers (each a run of $1$s ended by a $0$) is rejected by the
+language of valid instances $(k, G)$ satisfying $P$. -/
 theorem kgDec_of_decodeKG_eq_none {P : ∀ n : ℕ, ℕ → SimpleGraph (Fin n) → Prop}
     {x : List Bool} (h : decodeKG x = none) : kgDec P x = false := by
   simp only [kgDec, decide_eq_false_iff_not]
@@ -171,7 +174,10 @@ theorem adjBits_comm (n : ℕ) (bits : List Bool) (i j : ℕ) :
     adjBits n bits i j = adjBits n bits j i := by
   rw [adjBits, adjBits, min_comm, max_comm]
 
-/-- On a valid instance, the bit of a pair `i < j < n` is the bit at the pair's index. -/
+/-- **Pair bits are read off by position.** Let $n$ be a natural number, and let the pair list of
+$n$ be the list of pairs $(i, j)$ with $i < j < n$ in encoding order. Let $b$ be a list of bits
+whose length equals the length of the pair list of $n$. For all $i < j < n$, the bit of the pair
+$(i, j)$ in $b$ is the entry of $b$ at the position of $(i, j)$ in the pair list of $n$. -/
 theorem adjBits_eq_getElem {n : ℕ} {bits : List Bool} {i j : ℕ}
     (h : bits.length = (pairs n).length) (hij : i < j) (hj : j < n) :
     adjBits n bits i j = bits[(pairs n).idxOf (i, j)]'(by
@@ -189,12 +195,18 @@ theorem adjBits_map_not {n : ℕ} {bits : List Bool} {i j : ℕ}
   · rw [adjBits_comm, adjBits_comm n bits, adjBits_eq_getElem hm hgt hi,
       adjBits_eq_getElem h hgt hi, List.getElem_map]
 
-/-- Bits computed pairwise by `f` give `f` back on each pair. -/
+/-- **Pair bits computed by a function.** Let $n$ be a natural number, let $f$ be a function from
+pairs of natural numbers to bits, and let $b$ be the list obtained by applying $f$ to each entry of
+the pair list of $n$ (the pairs $(i, j)$ with $i < j < n$ in encoding order). Then for all
+$i < j < n$, the bit of the pair $(i, j)$ in $b$ is $f(i, j)$. -/
 theorem adjBits_map_pairs {n i j : ℕ} (f : ℕ × ℕ → Bool) (hij : i < j) (hj : j < n) :
     adjBits n ((pairs n).map f) i j = f (i, j) := by
   rw [adjBits_eq_getElem (by simp) hij hj, List.getElem_map, List.getElem_idxOf]
 
-/-- Complementing the bits of a valid instance complements its graph. -/
+/-- **Complementing the pair bits complements the graph.** Let $n \in \mathbb{N}$ and let $b$ be a
+list of bits whose length is the number of pairs $(i, j)$ with $i < j < n$. Then the graph on
+$\{0, \dots, n-1\}$ read off the list obtained by negating every bit of $b$ is the complement of
+the graph on $\{0, \dots, n-1\}$ read off $b$. -/
 theorem toGraph_map_not {n : ℕ} {bits : List Bool} (h : bits.length = (pairs n).length) :
     toGraph n (bits.map not) = (toGraph n bits)ᶜ := by
   ext i j
@@ -219,7 +231,9 @@ theorem cliqueDec_eq_indSetDec_flipKG (x : List Bool) : cliqueDec x = indSetDec 
 
 /-! ### INDEPENDENT-SET ≤ VERTEX-COVER -/
 
-/-- `G` has an independent set of `k ≤ n` vertices iff it has a vertex cover of `n - k`. -/
+/-- **Independent sets and vertex covers of complementary sizes.** Let $G$ be a simple graph whose
+vertices are $0, 1, \dots, n - 1$, and let $k \le n$. Then $G$ has an independent set of exactly
+$k$ vertices if and only if $G$ has a vertex cover of exactly $n - k$ vertices. -/
 theorem exists_isNIndepSet_iff_exists_isVertexCover {n k : ℕ} (G : SimpleGraph (Fin n))
     (hk : k ≤ n) : (∃ s, G.IsNIndepSet k s) ↔
       ∃ s : Finset (Fin n), s.card = n - k ∧ G.IsVertexCover (s : Set (Fin n)) := by
@@ -279,7 +293,12 @@ theorem occAdj_comm (o o' : ℕ × ℕ × Bool) : occAdj o o' = occAdj o' o := b
   rw [Bool.eq_iff_iff, occAdj_eq_true, occAdj_eq_true]
   constructor <;> rintro ⟨h1, h2⟩ <;> exact ⟨Ne.symm h1, fun h => (h2 h.symm).symm⟩
 
-/-- Adjacency in Karp's graph is `occAdj` on distinct occurrences. -/
+/-- **Adjacency in Karp's clique graph.** Let $\varphi$ be a CNF formula and let
+$o_0, \dots, o_{m-1}$ be its literal occurrences (clause index, variable, polarity) in formula
+order. In Karp's graph of $\varphi$, the graph on $\{0, \dots, m-1\}$ read off the clique pair
+bits of $\varphi$, vertices $i$ and $j$ are adjacent if and only if $i \ne j$ and the occurrences
+$o_i$ and $o_j$ are adjacent, that is, they lie in different clauses and are not complementary
+(they are not the same variable with opposite polarities). -/
 theorem toGraph_cliqueBits_adj {φ : CNF} {i j : Fin (occs φ).length} :
     (toGraph _ (cliqueBits φ)).Adj i j ↔ i ≠ j ∧ occAdj (occs φ)[i] (occs φ)[j] = true := by
   simp only [toGraph, cliqueBits, ne_eq, and_congr_right_iff]
@@ -290,7 +309,10 @@ theorem toGraph_cliqueBits_adj {φ : CNF} {i j : Fin (occs φ).length} :
   · rw [adjBits_comm, adjBits_map_pairs _ hgt i.2, occAdj_comm]
     simp
 
-/-- Karp's correctness: `φ` is satisfiable iff its graph has a clique of `φ.length` vertices. -/
+/-- **Karp's reduction from SAT to CLIQUE is correct.** A CNF formula $\varphi$ with $m$ clauses is
+satisfiable if and only if Karp's graph of $\varphi$ has a clique of exactly $m$ vertices. Karp's
+graph has one vertex for each literal occurrence of $\varphi$, and two occurrences are adjacent
+when they lie in different clauses and are not complementary. -/
 theorem cnfSat_iff_exists_isNClique (φ : CNF) :
     CNFSat φ ↔ ∃ s, (toGraph (occs φ).length (cliqueBits φ)).IsNClique φ.length s := by
   classical

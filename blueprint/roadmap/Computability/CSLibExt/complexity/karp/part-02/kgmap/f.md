@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGMap.Mode.f
 ---
 
-# F
+# Reduction computed in each mode
 
-The map a mode computes: `flipKG` (CLIQUE to INDEPENDENT-SET) or `isToVc`
-(INDEPENDENT-SET to VERTEX-COVER).
+**Reduction computed in each mode.** The map on bit strings that a mode of the
+CLIQUE/VERTEX-COVER reduction machine computes: in the flip mode it is the reduction from CLIQUE
+to INDEPENDENT-SET on bit strings, and in the vertex-cover mode it is the reduction from
+INDEPENDENT-SET to VERTEX-COVER on bit strings.
 
 ## Depends on
 
-- [Mode](mode.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
 
 ## Proof depends on
 
-- [Flip KG](../../part-01/clique/flip-kg.md)
-- [Is To Vc](../../part-01/clique/is-to-vc.md)
+- [Complementing map from CLIQUE to INDEPENDENT-SET instances](../../part-01/clique/flip-kg.md)
+- [Map from INDEPENDENT-SET to VERTEX-COVER instances](../../part-01/clique/is-to-vc.md)
 
 ## Sources
 

@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Decidability.Post.startDomino
 ---
 
-# Start Domino
+# The start domino
 
-The start domino `(⋆t₀, ⋆b₀⋆)`.
+**The start domino.** For a domino $(t, b)$ over $\alpha$, its start domino is the domino
+$(\star t, \star b \star)$ over the extended alphabet, where $\star t$ puts the star $\star$ before
+every letter of $t$ and $b \star$ puts a star after every letter of $b$, so that the bottom word
+gets one extra star in front.
 
 ## Depends on
 
-- [Domino](domino.md)
-- [Sym](sym.md)
+- [Domino (Post correspondence problem)](domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Star After](star-after.md)
-- [Star Before](star-before.md)
+- [The star symbol](star.md)
+- [A star after every letter](star-after.md)
+- [A star before every letter](star-before.md)
 
 ## Sources
 

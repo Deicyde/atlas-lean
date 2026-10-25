@@ -20,7 +20,7 @@ $(t, i, k, j)$. Subtraction is truncated at $0$.
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
@@ -29,7 +29,7 @@ $(t, i, k, j)$. Subtraction is truncated at $0$.
 - [Literals of an overflow clause](ov-lits.md)
 - [Literals of a pushed-fill clause](pf-lits.md)
 - [Literals of an in-range shift clause](sh-lits.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

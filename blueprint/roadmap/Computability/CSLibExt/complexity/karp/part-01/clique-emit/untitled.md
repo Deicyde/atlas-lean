@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitClique.Γ
 ---
 
-# Γ
+# Stack alphabets of the CLIQUE emitter
 
-Stack alphabets: the output stack holds bits, the others token symbols (counters hold
-`Sym.cl`).
+**Stack alphabets of the CLIQUE emitter.** In the CLIQUE emitter, the output stack $O$ has
+the Booleans as its alphabet, and every other stack has the token symbols as its alphabet.
+
+The counter stacks $C$ and $N$ hold copies of the clause marker.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the SAT-to-CLIQUE emitter](k.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

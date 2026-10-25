@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.exists_code_dom_singleton
 ---
 
-# Exists code dom singleton
+# Codes with singleton domain
 
-A code with domain `{n}`.
+**Codes with singleton domain.** For every natural number $n$ there is a code $c$ of a partial
+recursive function whose evaluation is defined exactly at $n$, that is, the domain of the partial
+function computed by $c$ is $\{n\}$.
 
 ## Depends on
 

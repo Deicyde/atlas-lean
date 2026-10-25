@@ -5,11 +5,13 @@ statement: formalized
 lean: Cslib.Decidability.Post.Sym
 ---
 
-# Sym
+# The extended alphabet of the MPCP-to-PCP reduction
 
-The alphabet of `toPCP P`: the letters of `α` (`some (some a)`), the star `⋆`
-(`some none`) and the end marker `◇` (`none`). An `Option (Option α)` keeps it
-`Primcodable` whenever `α` is.
+**The extended alphabet of the MPCP-to-PCP reduction.** For an alphabet $\alpha$, the extended
+alphabet consists of the letters of $\alpha$ together with two new symbols: the star $\star$ and
+the end marker $\diamond$.
+
+It is represented so that it has a primitive recursive encoding whenever $\alpha$ has one.
 
 ## Depends on
 

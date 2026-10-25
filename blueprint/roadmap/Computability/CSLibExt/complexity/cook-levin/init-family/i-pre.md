@@ -19,14 +19,14 @@ $n + i + 1$.
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [Empty-cell variable of the initial row](z-b.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

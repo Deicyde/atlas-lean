@@ -36,7 +36,7 @@ $s$ is the slot code of the sign of literal $l$.
 - [Labels of the initial-row generator](lb.md)
 - [Empty scratch counters](rest.md)
 - [Prog](prog.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 

@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.om_interactive_consistency
 ---
 
-# Theorem 1
+# Oral messages achieve interactive consistency
 
-**Theorem 1** (Lamport–Shostak–Pease). With more than `3 m` generals and at most `m`
-traitors, `OM(m)` satisfies the interactive consistency conditions: any two loyal lieutenants
-decide the same value (IC1), and if the commander is loyal, every loyal lieutenant decides the
-value it sent (IC2).
+**Oral messages achieve interactive consistency.** Let a commander $c$ run $\mathrm{OM}(m)$
+with a value $v$ and any list of superiors, sending to a finite set $S$ of lieutenants with
+$c \notin S$. If there are more than $3m$ generals, that is $3m < |S| + 1$, and at most $m$ of
+the generals in $S \cup \{c\}$ are traitors, then, whatever the traitors send, any two loyal
+lieutenants in $S$ decide the same value (IC1), and if $c$ is loyal, every loyal lieutenant in
+$S$ decides $v$ (IC2).
+
+This is Theorem 1 of Lamport–Shostak–Pease.
 
 ## Depends on
 
-- [Om](om.md)
+- [The oral messages algorithm](om.md)
 
 ## Proof depends on
 
-- [Agreement](om-agree.md)
-- [Validity](om-valid.md)
+- [Agreement under oral messages (IC1)](om-agree.md)
+- [Validity under oral messages (IC2)](om-valid.md)
 
 ## Sources
 

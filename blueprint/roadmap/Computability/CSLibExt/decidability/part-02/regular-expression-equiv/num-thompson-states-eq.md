@@ -8,23 +8,26 @@ lean: Cslib.Language.EncodedRegex.numThompsonStates_eq
 
 # The pass counts the states of Thompson's automaton
 
-**The pass counts the states of Thompson's automaton** of the expression, even when the
-expression tree is exponentially larger than the node list.
+**The pass counts the states of Thompson's automaton.** For every encoded regular expression
+$e$, the number of Thompson states of $e$ computed by the pass over its nodes equals the Thompson
+state count of the regular expression that $e$ denotes.
+
+This holds even when the expression tree is exponentially larger than the node list.
 
 ## Depends on
 
 - [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
-- [Encoded Regex](../regular-expression/encoded-regex.md)
-- [Num Thompson States](num-thompson-states.md)
-- [To Regex](../regular-expression/to-regex.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
+- [Thompson state count of an encoding](num-thompson-states.md)
+- [The regular expression denoted by an encoding](../regular-expression/to-regex.md)
 
 ## Proof depends on
 
-- [Get D state Counts](get-d-state-counts.md)
-- [Node](../regular-expression/node.md)
-- [Regex At](../regular-expression/regex-at.md)
-- [State Counts](state-counts.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [The pass computes the Thompson state count of every node](get-d-state-counts.md)
+- [Node at an index](../regular-expression/node.md)
+- [Regular expression at a node](../regular-expression/regex-at.md)
+- [Thompson state counts of a node list](state-counts.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Sources
 

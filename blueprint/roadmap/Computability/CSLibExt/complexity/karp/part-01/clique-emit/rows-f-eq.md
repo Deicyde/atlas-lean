@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitClique.rowsF_eq
 ---
 
-# Rows F eq
+# The CLIQUE emitter's row bits are Karp's pair bits
 
-The bits the machine pushes are Karp's pair bits.
+**The CLIQUE emitter's row bits are Karp's pair bits.** For every CNF formula $\varphi$, the
+row bits of $\varphi$ equal the pair bits of Karp's CLIQUE graph of $\varphi$: with
+$o_0, \dots, o_{m-1}$ the literal occurrences of $\varphi$, these are, for the pairs $(i, j)$ with
+$i < j < m$ in encoding order (rows $i$ ascending, and $j$ descending within a row), the bits
+telling whether $o_i$ and $o_j$ lie in different clauses and are not complementary.
 
 ## Depends on
 
-- [Rows F](rows-f.md)
-- [Clique Bits](../clique/clique-bits.md)
+- [Row bits of a formula for the CLIQUE emitter](rows-f.md)
+- [Adjacency bits of Karp's clique graph](../clique/clique-bits.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Bits Rec](bits-rec.md)
-- [Bits Rec clause](bits-rec-clause.md)
-- [Bits Rec map](bits-rec-map.md)
-- [Items](items.md)
-- [Lrows](lrows.md)
-- [Occs cons](occs-cons.md)
-- [Pair Bits eq](pair-bits-eq.md)
-- [Occ Adj](../clique/occ-adj.md)
-- [Occs](../clique/occs.md)
+- [Row-by-row pair bits of an occurrence list](bits-rec.md)
+- [Pair bits of a leading clause](bits-rec-clause.md)
+- [Row-by-row pair bits see only adjacency](bits-rec-map.md)
+- [Walked items of a formula](items.md)
+- [Rows pushed for a clause's literals](lrows.md)
+- [Occurrences of a formula with a first clause](occs-cons.md)
+- [Pair bits of an occurrence list, row by row](pair-bits-eq.md)
+- [Adjacency of literal occurrences in Karp's clique graph](../clique/occ-adj.md)
+- [Literal occurrences of a CNF formula](../clique/occs.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

@@ -18,7 +18,7 @@ language.
 ## Proof depends on
 
 - [Reachable State](../minimality/reachable-state.md)
-- [Left Quotient accepts From](../minimization/left-quotient-accepts-from.md)
+- [Left quotients of continuation languages](../minimization/left-quotient-accepts-from.md)
 
 ## Sources
 

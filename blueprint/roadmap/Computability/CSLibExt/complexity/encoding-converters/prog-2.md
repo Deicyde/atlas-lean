@@ -11,8 +11,8 @@ Read three-symbol blocks `[true, b, false]` onto the stash, then emit the stash.
 
 ## Depends on
 
-- [BLab](blab.md)
-- [BStk](bstk.md)
+- [Labels of the bit-list converters](blab.md)
+- [Stacks of the bit-list converters](bstk.md)
 
 ## Sources
 

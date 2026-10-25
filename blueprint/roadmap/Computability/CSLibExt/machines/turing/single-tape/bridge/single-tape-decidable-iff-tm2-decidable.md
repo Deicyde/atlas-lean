@@ -13,12 +13,12 @@ lean: Cslib.Decidability.singleTapeDecidable_iff_tm2Decidable
 ## Depends on
 
 - [Single Tape Decidable](../classes/single-tape-decidable.md)
-- [TM2 Decidable](../../../../decidability/part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../../../decidability/part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
 - [Single-tape decidability is Mathlib's `ComputablePred`](single-tape-decidable-iff-computable-pre.md)
-- [Tm2 Decidable iff computable Pred](../../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

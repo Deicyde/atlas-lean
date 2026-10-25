@@ -5,22 +5,26 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColVerify.walk1S
 ---
 
-# Walk1 S
+# One step of the walk towards the farther endpoint
 
-A step of the walk towards the farther endpoint (counter `k`), holding the nearer one's
-color `(a, b)`: pass a color per unit of `k`; at the end the color passed is the farther
-endpoint's, and the edge passes iff it differs from `(a, b)`.
+**One step of the walk towards the farther endpoint.** Given a stack $k$ of the 3-COLOR
+verifier (used as a counter), a label $\ell$ and a pair of bits $(a, b)$ (the color of the
+nearer endpoint), the statement pops the top symbol of $k$ and then moves the next color code
+$(a', b')$ from the color stack $P$ onto the scratch stack $T$, rejecting if $P$ is empty. If $k$
+was nonempty it continues at $\ell$. Otherwise $(a', b')$ is the color of the farther endpoint,
+and the statement rejects if $(a', b') = (a, b)$ and continues at the restoring label
+$\mathsf{back}$ if not.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Stmt](stmt.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [Statements of the 3-COLOR verifier](stmt.md)
 
 ## Proof depends on
 
-- [Mv P](mv-p.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Moving one color code in the 3-COLOR verifier](mv-p.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

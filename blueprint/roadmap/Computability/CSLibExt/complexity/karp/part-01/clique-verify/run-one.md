@@ -6,16 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.run_one
 ---
 
-# Run one
+# One step of a clique-verifier program to a known label
 
-A step whose label is known: some state and stacks follow.
+**One step of a clique-verifier program to a known label.** Let $M$ be a program that
+assigns a verifier statement to each label, $\ell$ and $\ell'$ labels, $v$ a state and $S$
+stack contents. If executing the statement $M(\ell)$ from state $v$ and stacks $S$ ends at
+label $\ell'$, then there are a state $v'$ and stack contents $S'$ such that $M$ runs in
+exactly one step from label $\ell$ with state $v$ and stacks $S$ to label $\ell'$ with
+state $v'$ and stacks $S'$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Stmt](stmt.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Statements of the clique verifier](stmt.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on

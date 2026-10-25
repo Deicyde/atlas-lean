@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.cols_cons_cons
 ---
 
-# Cols cons cons
+# Peeling a vertex off the witness colors
 
-Peeling the first two witness bits off.
+**Peeling a vertex off the witness colors.** For bits $a, b$, a bit list $w$ and
+$n \in \mathbb{N}$, the color codes of the vertices $0, \dots, n$ read from the bit list $a, b, w$
+(the list $w$ with $a$ and $b$ prepended) are $(a, b)$ followed by the color codes of the vertices
+$0, \dots, n-1$ read from $w$.
 
 ## Depends on
 
-- [Cols](cols.md)
+- [Witness colors of the first $n$ vertices](cols.md)
 
 ## Proof depends on
 
-- [Col](col.md)
+- [Color code of a vertex in a witness](col.md)
 
 ## Sources
 

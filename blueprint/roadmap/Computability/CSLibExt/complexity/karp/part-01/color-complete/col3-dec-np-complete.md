@@ -8,12 +8,13 @@ lean: Cslib.Complexity.Karp.col3Dec_npComplete
 
 # 3-COLOR is NP-complete
 
-**3-COLOR is NP-complete**.
+**3-COLOR is NP-complete.** 3-COLOR is in NP, and every decision problem in NP reduces to
+3-COLOR by a polynomial-time many-one reduction.
 
 ## Depends on
 
-- [Col3 Dec](../color/col3-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [3-COLOR](../color/col3-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)

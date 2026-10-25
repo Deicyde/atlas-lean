@@ -6,24 +6,30 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.ad3_run
 ---
 
-# Ad3 run
+# HAMPATH emitter, phase A: copying a reversed name onto two stacks
 
-Copy the reversed name on `X` onto `F` and `V`.
+**HAMPATH emitter, phase A: copying a reversed name onto two stacks.** Let $u$ be a list of
+bits and let $s$ be a quiescent state of the HAMPATH emitter whose stack $X$ holds $u$ as
+name-bit symbols. Then for every value $v$ of the machine's Boolean variable there is a value
+$v'$ such that the emitter goes in exactly $|u| + 1$ steps from label $\mathrm{ad3}$, variable
+$v$ and the stacks of $s$ to label $\mathrm{a0}$, variable $v'$ and the stacks of the state
+obtained from $s$ by emptying $X$ and replacing each of $F$ and $V$ by the reverse of $u$ (as
+name-bit symbols) followed by its old contents.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [MS](ms.md)
-- [Stk](stk.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the HAMPATH emitter](k.md)
+- [Labels of the HAMPATH emitter](lab.md)
+- [Quiescent states of the HAMPATH emitter](ms.md)
+- [Stacks of a quiescent emitter state](stk.md)
+- [The HAMPATH emitter machine](prog.md)
+- [Stack alphabets of the HAMPATH emitter](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 

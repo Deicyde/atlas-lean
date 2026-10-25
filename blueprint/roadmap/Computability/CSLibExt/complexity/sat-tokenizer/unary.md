@@ -12,13 +12,13 @@ at the end of `X`.
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [K](k.md)
-- [Lab](lab.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](k.md)
+- [Labels of the SAT tokenizer](lab.md)
 
 ## Proof depends on
 
-- [Top Is Bit](top-is-bit.md)
+- [Testing whether the top symbol is a given bit](top-is-bit.md)
 
 ## Sources
 

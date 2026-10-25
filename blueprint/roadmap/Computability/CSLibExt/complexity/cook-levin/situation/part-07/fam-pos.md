@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.FamPos
 ---
 
-# Fam Pos
+# Faithful dense clause family with positive literals
 
-`FamOK`, and every clause has a positive literal.
+**Faithful dense clause family with positive literals.** A CNF formula $\varphi$ is a faithful
+family with positive literals over $V$ variables when every clause of $\varphi$ is the dense clause
+over $V$ variables built from some list $\ell$ of literals that is faithful for $V$ and contains a
+positive literal $(p, \mathrm{true})$ for some $p$.
 
 ## Depends on
 
-- [CNF](../../../dense-sat/cnf.md)
+- [Dense CNF formula](../../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [Dense clause from a list of literals](../../family/dense-clause.md)
-- [Faithful](faithful.md)
-- [Clause](../../../dense-sat/clause.md)
+- [Faithful literal list](faithful.md)
+- [Dense clause](../../../dense-sat/clause.md)
 
 ## Sources
 

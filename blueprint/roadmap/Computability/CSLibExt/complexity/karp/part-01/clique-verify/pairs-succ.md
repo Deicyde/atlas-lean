@@ -12,7 +12,7 @@ Row `0` of `pairs (n + 1)`, then the pairs of `n` shifted by one.
 
 ## Depends on
 
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

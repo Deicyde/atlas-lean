@@ -12,7 +12,7 @@ definition, not an instance, so instance search sees one `Fintype Sym`.
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

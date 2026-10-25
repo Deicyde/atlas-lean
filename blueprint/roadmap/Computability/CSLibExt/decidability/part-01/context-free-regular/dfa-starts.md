@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.dfaStarts
 ---
 
-# Dfa Starts
+# Start states of a right-hand side in a DFA
 
-The states from which a right-hand side yields a word taking `D` to `q`, given the items `R`
-found so far.
+**Start states of a right-hand side in a DFA.** Let $D$ be an encoded DFA, $R$ a list of
+natural numbers (the items found so far) and $q \in \mathbb{N}$. The start states of a right-hand
+side $\beta$, a list of grammar symbols, for $q$ given $R$ are defined by recursion on $\beta$: for
+the empty right-hand side they are the one-element list $[q]$, and for a symbol $X$ followed by
+$\beta'$ they are the states of $D$, in order, at which $X$ fits given $R$ and the start states of
+$\beta'$ for $q$ given $R$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ found so far.
 ## Proof depends on
 
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
-- [Dfa Sym Fits](dfa-sym-fits.md)
+- [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
 
 ## Sources
 

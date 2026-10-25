@@ -6,35 +6,44 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.edges_run
 ---
 
-# Edges run
+# The edge loop of a pass
 
-The edge loop of a pass: from `edge` with the edges `es` on `X`, it scans them in order,
-moving their bits onto `E` and updating the marks as `markPass` does.
+**The edge loop of a pass.** Let $n$ be a natural number, $es$ a list of arcs $(u, w)$ of
+natural numbers and $m$ a list of $n$ Boolean marks. Encode an arc $(u, w)$ by $u$ ones, a zero,
+$w$ ones and a zero, and $es$ by the concatenation of the codes of its arcs; let $\ell$ be the
+length of this code. Suppose the marking machine is at the edge-loop label, in any internal state,
+with stacks $S$ such that the input stack $X$ holds the code of $es$ and the mark stack $M$ holds
+$m$ (vertex $0$ on top), as bit symbols, and the parked-mark stack $P$ and the arc counters $U$
+and $V$ are empty. Then within $4\ell + 1$ steps it reaches the pass-loop label with stacks $S'$
+in which $X$ is empty, the edge stack $E$ holds the code of $es$ in reverse order on top of its
+contents in $S$, $M$ holds the marks that one pass of the marking algorithm with $n$ vertices over
+$es$ (Mark Pass) produces from $m$, and $P$, $U$, $V$ are empty; every stack other than $X$, $E$,
+$M$, $U$, $V$ and $P$ holds the same list in $S'$ as in $S$.
 
 ## Depends on
 
-- [Edge Bits](../karp/part-01/color/edge-bits.md)
-- [Fr](fr.md)
+- [Bit encoding of an edge list](../karp/part-01/color/edge-bits.md)
+- [Agreement off a set of stacks](fr.md)
 - [K](k.md)
 - [Lab](lab.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Mark Pass](../path/mark-pass.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [The marking machine for PATH](prog.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [One marking pass](../path/mark-pass.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Refl](refl.md)
-- [Trans](trans.md)
-- [Upd](upd.md)
-- [Stmt](stmt.md)
-- [Arc eq](arc-eq.md)
-- [Fr add U](fr-add-u.md)
-- [One](one.md)
-- [Read S some](read-s-some.md)
-- [Read W run](read-w-run.md)
-- [Set W run](set-w-run.md)
+- [Frames are reflexive](refl.md)
+- [Frames compose](trans.md)
+- [Updating a framed stack preserves the frame](upd.md)
+- [Statements of the PATH marking machine](stmt.md)
+- [Out-of-range arcs need no guard](arc-eq.md)
+- [The frame of a read](fr-add-u.md)
+- [The counter unit of the PATH marking machine](one.md)
+- [Reading a unary number](read-s-some.md)
+- [Reading the mark of a vertex](read-w-run.md)
+- [Walking to a vertex and setting its mark](set-w-run.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)

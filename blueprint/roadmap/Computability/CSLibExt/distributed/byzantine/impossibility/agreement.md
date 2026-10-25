@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Agreement
 ---
 
-# Agreement
+# Agreement condition (IC1)
 
-Condition IC1 (agreement) after `T` rounds: all loyal lieutenants decide the same
-value.
+**Agreement condition (IC1).** Consider the execution of a protocol $P$ with commander $c$,
+order $v$, a set of traitors and a behaviour of the traitors. Condition IC1 holds after $T$
+rounds when any two generals $i$ and $j$, neither of which is the commander or a traitor, decide
+the same value after $T$ rounds of this execution.
 
 ## Depends on
 
-- [Oral Protocol](oral-protocol.md)
+- [Oral-message protocol](oral-protocol.md)
 
 ## Proof depends on
 
-- [Decision](decision.md)
+- [Decision of a general](decision.md)
 
 ## Sources
 

@@ -6,26 +6,33 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.tail_run
 ---
 
-# Tail run
+# The rest of a vertex step in the Hamiltonian-path verifier
 
-The rest of a vertex step: the repeat scan for `a`, then `a` is counted and becomes the
-previous vertex.
+**The rest of a vertex step in the Hamiltonian-path verifier.** Let $es$ be an edge list,
+$s, t, n, c, b, a$ natural numbers and $q$ a list of natural numbers. Start the verifier, with
+any flag value, at the label $\mathsf{nd}$ (the repeat scan) with its stacks in the mid-step
+layout: the between-steps layout for $es$, $s$, $t$, $n$, count $c$, previous vertex $b$ and
+remaining vertices $q$, with $a$ in unary on the stack $A$. Let $w$ be the unary encoding of $q$.
+Then within at most $4|w| + a + b + 6$ steps it reaches the label $\mathsf{no}$ if $a \in q$ and
+the label $\mathsf{loop}$ if $a \notin q$. In the second case ($a$ has been counted and become
+the previous vertex) the stacks end in the between-steps layout for $es$, $s$, $t$, $n$, count
+$c + 1$, previous vertex $a$ and remaining vertices $q$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Enc W](../../part-01/ham-path-check/enc-w.md)
-- [Lay](lay.md)
-- [Mid](mid.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
+- [Witness encoding](../../part-01/ham-path-check/enc-w.md)
+- [Stack layout between vertex steps](lay.md)
+- [Stack layout during a vertex step](mid.md)
 - [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Nd run](nd-run.md)
-- [Edge Bits](../../part-01/color/edge-bits.md)
+- [The repeat scan of the Hamiltonian path verifier](nd-run.md)
+- [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)

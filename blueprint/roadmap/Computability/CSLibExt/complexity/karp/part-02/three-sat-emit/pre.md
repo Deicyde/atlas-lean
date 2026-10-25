@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.pre
 ---
 
-# Pre
+# Entry label of a literal
 
-Where a literal's walk starts after its marker: directly at the name for the first literal
-walked, after the fresh literal `(fresh z, true)` otherwise.
+**Entry label of a literal.** For Booleans $f$ and $p$, the label where the emitter continues
+after popping the marker of a literal of polarity $p$ is $\mathrm{body}(\text{true}, p)$, which
+copies the name directly, if $f$ holds (the literal is the first walked in its clause), and
+$\mathrm{fa}(\text{true}, p)$, which first prepends the fresh literal of the current counter
+with polarity true, otherwise.
 
 ## Depends on
 
-- [Lab](lab.md)
+- [Control labels of the SAT-to-3SAT emitter](lab.md)
 
 ## Sources
 

@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.Path.count_lt_of_getD_imp
 ---
 
-# Count lt of get D imp
+# Counting true entries of pointwise dominated boolean lists
 
-Growing marks of equal length: the count of marks does not drop, and grows unless the lists
-are equal.
+**Counting true entries of pointwise dominated boolean lists.** Let $l_1$ and $l_2$ be lists
+of booleans of the same length such that every position holding $\mathrm{true}$ in $l_1$ also
+holds $\mathrm{true}$ in $l_2$. Then $l_1$ has at most as many $\mathrm{true}$ entries as $l_2$,
+and strictly fewer if $l_1 \ne l_2$.
 
 ## Depends on
 

@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.Karp.colSt
 ---
 
-# Col St
+# The SAT-to-3-COLOR graph construction
 
-The whole construction: palette triangle first, then the clauses from the last one.
+**The SAT-to-3-COLOR graph construction.** For a CNF formula $\varphi$, start from the state
+whose next free vertex is $3$, with no earlier occurrences and with emitted edges $(0, 1)$,
+$(0, 2)$, $(1, 2)$ (the palette triangle on the vertices $0$, $1$, $2$), and process the
+clauses of $\varphi$ one at a time, from the last clause to the first. The result is the final
+state.
 
 ## Depends on
 
-- [Col St](col-st.md)
+- [State of the SAT-to-3-COLOR construction](col-st.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Col Clause](col-clause.md)
+- [Processing one clause in the 3-COLOR construction](col-clause.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

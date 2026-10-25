@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Verifier.enc
 ---
 
-# Enc
+# Left-tagged encoding of a bit list
 
-Bits stored on a work stack.
+**Left-tagged encoding of a bit list.** For a list $l$ of bits, its encoding on a work stack
+of the dense-SAT verifier is the list of symbols of the work alphabet $G$ obtained by replacing
+each bit $b$ of $l$ with the left symbol $\mathrm{inl}(b)$.
 
 ## Depends on
 
-- [G](g.md)
+- [Work alphabet of the dense-SAT verifier](g.md)
 
 ## Sources
 

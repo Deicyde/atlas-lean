@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Language.Recognizes.contextQuotient
 ---
 
-# Context Quotient
+# Recognizers recognize context quotients
 
-Every algebraic recognizer recognizes all fixed two-sided context quotients without changing
-its carrier or morphism.
+**Recognizers recognize context quotients.** Let $\varphi \colon A^* \to M$ be a monoid
+morphism from the free monoid on an alphabet $A$ to a monoid $M$ that recognizes a language $L$
+over $A$ through $P \subseteq M$, that is, a word $x$ lies in $L$ exactly when $\varphi(x) \in P$.
+Then for all words $u, v$ over $A$, $\varphi$ recognizes the context quotient
+$\{x \mid uxv \in L\}$ through the set $\{m \in M \mid \varphi(u)\, m\, \varphi(v) \in P\}$.
 
 ## Depends on
 
 - [Recognizes](../recognition/recognizes.md)
-- [Context Accept](context-accept.md)
-- [Context Quotient](context-quotient.md)
+- [Accepting set for a context quotient](context-accept.md)
+- [Context quotient](context-quotient.md)
 
 ## Sources
 

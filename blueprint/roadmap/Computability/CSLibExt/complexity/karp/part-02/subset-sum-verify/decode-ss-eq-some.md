@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Karp.SSVerify.decodeSS_eq_some
 ---
 
-# `decodeSS` inverts `encodeSS`
+# Decoding a SUBSET-SUM instance inverts its encoding
 
-**`decodeSS` inverts `encodeSS`**, and succeeds only on its image.
+**Decoding a SUBSET-SUM instance inverts its encoding.** For every bit string $x$, every
+list $a$ of natural numbers and every natural number $t$, the SUBSET-SUM decoder returns the
+instance $(a, t)$ on $x$ if and only if $x$ is the encoding of the SUBSET-SUM instance with
+numbers $a$ and target $t$.
 
 ## Depends on
 
-- [Decode SS](decode-ss.md)
-- [Encode SS](../subset-sum/encode-ss.md)
+- [Decoding a SUBSET-SUM instance](decode-ss.md)
+- [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
 
 ## Proof depends on
 
-- [Encode Nat decode Nat iff](encode-nat-decode-nat-iff.md)
-- [Last F](last-f.md)
-- [Nums Aux](nums-aux.md)
-- [Decode Nat Prefix](../../../../cook-levin/decode-nat-prefix.md)
-- [Encode Nat Prefix](../../../../cook-levin/encode-nat-prefix.md)
-- [Undelimit eq some iff](../../../../cook-levin/undelimit-eq-some-iff.md)
+- [Canonical binary strings are those not ending in zero](encode-nat-decode-nat-iff.md)
+- [Whether a bit string ends in false](last-f.md)
+- [Parsing number blocks, with fuel](nums-aux.md)
+- [Decoding a prefix-coded natural number](../../../../cook-levin/decode-nat-prefix.md)
+- [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
+- [Parsing a self-delimiting block](../../../../cook-levin/undelimit-eq-some-iff.md)
 - [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 - [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
 

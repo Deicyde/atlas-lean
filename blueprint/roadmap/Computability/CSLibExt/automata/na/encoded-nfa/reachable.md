@@ -18,7 +18,7 @@ moves, each a transition of $N$ on some letter or an ε-move of $N$.
 
 ## Proof depends on
 
-- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Bounded reachability search on lists of states](../../../decidability/part-02/regular/reach-n.md)
 - [Successors of a state in an encoded NFA](next.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 

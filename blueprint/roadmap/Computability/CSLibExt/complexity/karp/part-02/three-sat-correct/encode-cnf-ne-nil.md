@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Karp.encodeCNF_ne_nil
 ---
 
-# Encode CNF ne nil
+# CNF encodings are nonempty
 
-No formula encodes to the empty string.
+**CNF encodings are nonempty.** For every CNF formula $\varphi$, the binary encoding of
+$\varphi$ is not the empty bit string.
 
 ## Depends on
 
-- [Encode CNF](../../../../cook-levin/encode-cnf.md)
+- [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Encode Clause](../../../../cook-levin/encode-clause.md)
+- [Length-prefixed binary code of a clause](../../../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.haltWord
 ---
 
-# Halt Word
+# The halting word
 
-The target word `⊢ H ⊣`.
+**The halting word.** The halting word is the word $\vdash H \dashv$ made of the left end
+marker, the halting symbol and the right end marker. It is the target word of the rewriting
+simulation of a single-tape machine.
 
 ## Depends on
 
-- [TMSym](tmsym.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Sources
 

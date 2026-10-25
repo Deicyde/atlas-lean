@@ -33,7 +33,7 @@ there is a top cell.
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -54,8 +54,8 @@ there is a top cell.
 - [Variables per time step](../family/row-w.md)
 - [Index of a label/state variable](../family/x-idx.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 

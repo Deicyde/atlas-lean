@@ -6,11 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Shift.sh_run
 ---
 
-# Correctness of the generator, with its explicit time bound
+# Correctness of the shift generator, with its explicit time bound
 
-**Correctness of the generator, with its explicit time bound.** Started on `T`, `H` (unary)
-with empty scratch counters, it reaches `done` within `shBound` steps with exactly the family's
-encoding prepended to the output.
+**Correctness of the shift generator, with its explicit time bound.** Let $L$ be a layout, let
+$\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables and let
+$N, T, H \in \mathbb{N}$, and suppose the tables are well formed for $N$ situations at height
+$H$. Start the cell-shift generator for $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$,
+$\mathrm{pu}$ and $N$ at its first precomputation stage, in state false, with $T$ on the counter
+$\mathrm{Tn}$ and $H$ on the counter $\mathrm{Hs}$ in unary, all other counters empty, and an
+arbitrary list $o$ of bits on the output stack. Then within at most the explicit time bound of
+the shift generator for $L$, $N$, $T$, $H$ steps it reaches its final label $\mathrm{done}$, in
+some state, with stacks whose output stack holds the encoding of the cell-shift clause family for
+$L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$, $N$, $T$ and $H$, followed by
+$o$.
 
 ## Depends on
 
@@ -22,12 +30,12 @@ encoding prepended to the output.
 - [Labels of the cell-shift generator](gl.md)
 - [Labels of the shift generator](lab.md)
 - [Precomputation stages of the shift generator](ps.md)
-- [WF](wf.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
 - [Initial counter values of the shift generator](init-f.md)
 - [The cell-shift generator](prog.md)
 - [Explicit time bound of the shift generator](sh-bound.md)
 - [The cell-shift clause family](sh-family.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -42,10 +50,10 @@ encoding prepended to the output.
 - [Encoded blocks of one time step](blk-t.md)
 - [Counters after the precomputation of the cell-shift generator](pre-f.md)
 - [The shift block of a situation and a stack](sh-blk.md)
-- [T Body B](t-body-b.md)
-- [Tbody run](tbody-run.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Step budget for one time step of the shift generator](t-body-b.md)
+- [One iteration of the time loop of the shift generator](tbody-run.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

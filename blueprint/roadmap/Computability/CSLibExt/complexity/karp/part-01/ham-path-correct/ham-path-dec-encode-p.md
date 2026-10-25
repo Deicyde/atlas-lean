@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.hamPathDec_encodeP
 ---
 
-# Ham Path Dec encode P
+# HAMPATH on an encoded instance
 
-`hamPathDec` on an encoded instance.
+**HAMPATH on an encoded instance.** For all natural numbers $s$, $t$, $n$ and every list $E$
+of pairs of natural numbers, the HAMPATH decision problem accepts the PATH encoding of
+$(s, t, n, E)$ if and only if the digraph on $0, \dots, n - 1$ with edge list $E$ has a
+Hamiltonian path from $s$ to $t$.
 
 ## Depends on
 
-- [Is Ham Path](../ham-path/is-ham-path.md)
-- [Ham Path Dec](../ham-path/ham-path-dec.md)
-- [Encode P](../../../path/encode-p.md)
+- [Hamiltonian paths](../ham-path/is-ham-path.md)
+- [The HAMPATH problem](../ham-path/ham-path-dec.md)
+- [Encoding of a PATH instance](../../../path/encode-p.md)
 
 ## Proof depends on
 
-- [Encode P inj](../../../path-correct/encode-p-inj.md)
+- [The PATH instance encoding is injective](../../../path-correct/encode-p-inj.md)
 
 ## Sources
 

@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Complexity.Karp.chain_complete
 ---
 
-# Chain complete
+# Completeness of the chain of one clause
 
-If `v` satisfies `C`, an assignment that agrees with `v` on even variables and gives the fresh
-variables `[u, u + used C)` their `clauseSatisfied` values satisfies `chain C u`.
+**Completeness of the chain of one clause.** Let $v$ and $v'$ be assignments with
+$v'(2n) = v(n)$ for every $n$, let $C$ be a clause and $u$ a natural number, and write
+$k = \mathrm{used}(C)$. Suppose that $v$ satisfies $C$, and that for every $w$ with
+$u \le w < u + k$, $v'$ gives the fresh variable $\mathrm{fresh}(w)$ the value true exactly when
+$v$ satisfies some literal of the clause obtained from $C$ by dropping its first $u + k - w$
+literals. Then $v'$ satisfies every clause of $\mathrm{chain}(C, u)$.
 
 ## Depends on
 
 - [Clause Satisfied](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
-- [Chain](../three-sat/chain.md)
-- [Fresh](../three-sat/fresh.md)
-- [Ren](../three-sat/ren.md)
-- [Used](../three-sat/used.md)
+- [The chain of clauses replacing one clause](../three-sat/chain.md)
+- [Fresh variable indices](../three-sat/fresh.md)
+- [Renaming of the original variables](../three-sat/ren.md)
+- [Fresh variables reserved for a clause](../three-sat/used.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Proof depends on
 
-- [Chain Tail](../three-sat/chain-tail.md)
-- [Chain Tail complete](chain-tail-complete.md)
-- [Ren Lit](../three-sat/ren-lit.md)
+- [The tail of a clause chain](../three-sat/chain-tail.md)
+- [Completeness of the tail of a chain](chain-tail-complete.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.SAT
 ---
 
-# CNF-SAT
+# Dense CNF-SAT
 
-**CNF-SAT** over binary strings: the decoded formula has a satisfying assignment.
+**Dense CNF-SAT.** A bit string $w$ belongs to dense CNF-SAT when the CNF formula obtained by
+decoding $w$ in the dense clause encoding is satisfiable, that is, some assignment (a list of
+booleans) satisfies every clause of the decoded formula.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cnf Sat](cnf-sat.md)
-- [Decode CNF](decode-cnf.md)
+- [Satisfaction of a dense CNF formula](cnf-sat.md)
+- [Dense decoding of CNF formulas](decode-cnf.md)
 
 ## Sources
 

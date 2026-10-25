@@ -4,7 +4,7 @@ navigation: module
 
 # REComplete
 
-- [Eval comp const](eval-comp-const.md)
+- [Composing a code with a constant code ignores the input](eval-comp-const.md)
 - [Recognizability transfers down many-one reductions](of-many-one-reducible.md)
 - [The halting set is recognizable](re-pred-halting-set.md)
 - [Every recognizable predicate one-one reduces to the halting set](one-one-reducible-halting-set.md)

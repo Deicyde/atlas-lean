@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Verifier.pairEncode
 ---
 
-# Pair Encode
+# Pair encoding $w \# y$
 
-The `w # y` input of the verifier: left-tagged formula bits `inl b`, the separator
-`inr none`, then right-tagged certificate bits `inr (some b)`.
+**Pair encoding $w \# y$.** For bit strings $w$ and $y$, the word over the pair alphabet
+$G = \mathrm{Bool} \oplus \mathrm{Option}\,\mathrm{Bool}$ consisting of the bits $b$ of $w$ in
+order, each tagged on the left as $\mathrm{inl}\,b$, then the separator
+$\# = \mathrm{inr}\,\mathrm{none}$, then the bits $b$ of $y$ in order, each tagged on the right as
+$\mathrm{inr}(\mathrm{some}\,b)$. This is the input of the dense CNF-SAT verifier.
 
 ## Depends on
 
-- [G](g.md)
+- [Work alphabet of the dense-SAT verifier](g.md)
 
 ## Sources
 

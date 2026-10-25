@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Distributed.LamportClock.HappensBefore.exists_events
 ---
 
-# Exists events
+# Happened-before relates positions of the execution
 
-The endpoints of happened-before are events of the execution.
+**Happened-before relates positions of the execution.** If position $a$ happened before
+position $b$ in an execution, then the execution has an event at position $a$ and an event at
+position $b$.
 
 ## Depends on
 
 - [Event](event.md)
-- [Happens Before](happens-before.md)
+- [Happened-before](happens-before.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One step of happened-before](step.md)
 
 ## Sources
 

@@ -6,16 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.drain_run
 ---
 
-# Drain run
+# Draining a counter
 
-Drain a counter.
+**Draining a counter.** Let $k$ be a stack of the emitter and $\ell, \ell'$ labels such that
+the instruction at $\ell$ is the transfer loop that pops stack $k$ until it is empty, pushing
+nothing, and then goes to $\ell'$. If $S$ is an assignment of stack contents in which stack $k$
+consists of $n$ copies of a symbol $u$, then for every state bit $b$ the emitter goes in exactly
+$n + 1$ steps from label $\ell$ with state bit $b$ and stacks $S$ to label $\ell'$ with state bit
+false and the stacks $S$ with stack $k$ emptied.
 
 ## Depends on
 
-- [K](../ham-path-emit-machine/k.md)
-- [Lab](../ham-path-emit-machine/lab.md)
-- [Prog](../ham-path-emit-machine/prog.md)
-- [Γ](../ham-path-emit-machine/untitled.md)
+- [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
+- [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
+- [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
+- [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
@@ -23,7 +28,7 @@ Drain a counter.
 
 ## Proof depends on
 
-- [Add U nil](add-u-nil.md)
+- [The row loop of a diamond in the HAMPATH emitter](add-u-nil.md)
 - [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
 - [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 

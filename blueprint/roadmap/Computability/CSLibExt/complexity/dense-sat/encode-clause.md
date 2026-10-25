@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.encodeClause
 ---
 
-# Encode Clause
+# Dense encoding of a clause
 
-A clause is its slots followed by the terminator `00`.
+**Dense encoding of a clause.** The bit string encoding a clause is the concatenation of the
+two-bit codes of its slots, in order (empty slot $01$, positive literal $10$, negative literal
+$11$), followed by the terminator $00$.
 
 ## Depends on
 
-- [Clause](clause.md)
+- [Dense clause](clause.md)
 
 ## Proof depends on
 
-- [Encode Slot](encode-slot.md)
+- [Two-bit code of a slot](encode-slot.md)
 
 ## Sources
 

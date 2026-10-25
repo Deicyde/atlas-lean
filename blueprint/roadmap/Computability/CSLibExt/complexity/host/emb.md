@@ -5,15 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Host.emb
 ---
 
-# Emb
+# The component's stacks inside a host
 
-The component's stacks inside a host with input alphabet `α`.
+**The component's stacks inside a host.** For a component machine $c$ and an input alphabet
+$\alpha$, the stack embedding of $c$ into the host over $\alpha$ sends each stack $k$ of $c$ to
+the host's copy of $k$, whose alphabet is the alphabet $\Gamma_k$ of $k$, and identifies the two
+alphabets by the identity. Distinct stacks have distinct copies, so the embedding is injective.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HK](hk.md)
-- [HΓ](h.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Alphabets of the generic host](h.md)
 - [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources

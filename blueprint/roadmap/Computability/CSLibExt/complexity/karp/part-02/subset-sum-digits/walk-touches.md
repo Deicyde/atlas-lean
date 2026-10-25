@@ -12,14 +12,14 @@ The touch bits a vertex walk computes are `touches`.
 
 ## Depends on
 
-- [Mk L](mk-l.md)
-- [Walk M](walk-m.md)
-- [Pairs](../../part-01/clique/pairs.md)
-- [Touches](../subset-sum/touches.md)
+- [Vertex marks for a vertex](mk-l.md)
+- [The pair walk over lists of marks](walk-m.md)
+- [Vertex pairs in encoding order](../../part-01/clique/pairs.md)
+- [Pairs touching a vertex](../subset-sum/touches.md)
 
 ## Proof depends on
 
-- [Walk M pairs](walk-m-pairs.md)
+- [The pair walk lists the vertex pairs in reverse](walk-m-pairs.md)
 
 ## Sources
 

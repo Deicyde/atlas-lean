@@ -23,7 +23,7 @@ when $j = 0$.
 
 - [Loop-body stages of the cell-shift generator](bd.md)
 - [Entry label of the pushed-fill chain](pf-from.md)
-- [X From](x-from.md)
+- [Entry label of the in-range chain](x-from.md)
 
 ## Sources
 

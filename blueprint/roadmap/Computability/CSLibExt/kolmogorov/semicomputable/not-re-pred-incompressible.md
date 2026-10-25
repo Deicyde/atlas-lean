@@ -8,7 +8,9 @@ lean: Cslib.Kolmogorov.not_rePred_incompressible
 
 # The incompressible strings are not recognizable
 
-**The incompressible strings are not recognizable.**
+**The incompressible strings are not recognizable.** Let $K$ denote Kolmogorov complexity
+and $|x|$ the length of a binary string $x$. The set of incompressible binary strings, that is,
+of binary strings $x$ with $|x| \le K(x)$, is not recursively enumerable (recognizable).
 
 ## Depends on
 

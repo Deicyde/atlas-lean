@@ -5,9 +5,11 @@ statement: formalized
 lean: DFA.MooreState
 ---
 
-# Moore State
+# States of Moore's automaton
 
-The states of Moore's minimal automaton: classes of reachable states.
+**States of Moore's automaton.** For a DFA $M$, these are the equivalence classes of the
+reachable states of $M$ under Moore equivalence, that is, under Moore's relation of $M$
+restricted to reachable states. They are the states of Moore's minimal automaton.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Moore Setoid](moore-setoid.md)
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [Moore equivalence on reachable states](moore-setoid.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 
 ## Sources
 

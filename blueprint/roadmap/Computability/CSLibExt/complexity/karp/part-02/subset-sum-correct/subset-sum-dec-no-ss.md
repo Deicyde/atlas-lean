@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Karp.subsetSumDec_noSS
 ---
 
-# Subset Sum Dec no SS
+# The fixed no-instance of SUBSET-SUM
 
-`noSS` (no numbers, target `1`) is a no-instance.
+**The fixed no-instance of SUBSET-SUM.** The encoded SUBSET-SUM instance with no numbers and
+target $1$ is a no-instance: the SUBSET-SUM decision problem returns false on it.
 
 ## Depends on
 
-- [No SS](../subset-sum/no-ss.md)
-- [Subset Sum Dec](../subset-sum/subset-sum-dec.md)
+- [Fixed no-instance of SUBSET-SUM](../subset-sum/no-ss.md)
+- [The SUBSET-SUM problem](../subset-sum/subset-sum-dec.md)
 
 ## Proof depends on
 
-- [Encode SS](../subset-sum/encode-ss.md)
+- [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
 - [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 - [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
 

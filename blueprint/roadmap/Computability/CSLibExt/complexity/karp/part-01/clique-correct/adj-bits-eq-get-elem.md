@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.adjBits_eq_getElem
 ---
 
-# Adj Bits eq get Elem
+# Pair bits are read off by position
 
-On a valid instance, the bit of a pair `i < j < n` is the bit at the pair's index.
+**Pair bits are read off by position.** Let $n$ be a natural number, and let the pair list of
+$n$ be the list of pairs $(i, j)$ with $i < j < n$ in encoding order. Let $b$ be a list of bits
+whose length equals the length of the pair list of $n$. For all $i < j < n$, the bit of the pair
+$(i, j)$ in $b$ is the entry of $b$ at the position of $(i, j)$ in the pair list of $n$.
 
 ## Depends on
 
-- [Adj Bits](../clique/adj-bits.md)
+- [Adjacency bit of a vertex pair](../clique/adj-bits.md)
 - [Mem pairs](mem-pairs.md)
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

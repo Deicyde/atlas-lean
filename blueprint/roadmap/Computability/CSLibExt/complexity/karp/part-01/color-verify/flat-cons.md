@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.flat_cons
 ---
 
-# Flat cons
+# Flattening a nonempty list
 
-The first pair comes first.
+**Flattening a nonempty list.** For a pair of bits $c = (a, b)$ and a list $cs$ of pairs of
+bits, the flattening of the list with head $c$ and tail $cs$ is the list with $a$ first, then $b$,
+then the flattening of $cs$.
 
 ## Depends on
 
-- [Flat](flat.md)
+- [Flattening pairs of bits](flat.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.Impossibility.OralProtocol.initState_self
 ---
 
-# Init State self
+# Initial state of the commander
 
-The commander starts from the state given by its order.
+**Initial state of the commander.** When the commander $c$ has order $v$, the initial state of
+$c$ is the initial state that the protocol assigns to a commander with order $v$.
 
 ## Depends on
 
-- [Oral Protocol](oral-protocol.md)
-- [Init State](init-state.md)
+- [Oral-message protocol](oral-protocol.md)
+- [Initial state of a general](init-state.md)
 
 ## Sources
 

@@ -6,23 +6,25 @@ proof: formalized
 lean: DFA.brzozowski_surjective
 ---
 
-# Brzozowski surjective
+# Every state of Brzozowski's automaton is reachable
 
-Every state of Brzozowski's automaton is reached.
+**Every state of Brzozowski's automaton is reachable.** For a deterministic finite automaton
+$M$ over a finite alphabet with finitely many states, every state of Brzozowski's automaton of $M$
+is reached from its start state by some word.
 
 ## Depends on
 
-- [Brzozowski State](brzozowski-state.md)
+- [States of Brzozowski's automaton](brzozowski-state.md)
 - [Brzozowski's automaton](brzozowski.md)
 
 ## Proof depends on
 
-- [Mid State](mid-state.md)
-- [Accessible Part Within](../../../decidability/part-02/regular/accessible-part-within.md)
-- [Accessible Part Within surjective](../../../decidability/part-02/regular/accessible-part-within-surjective.md)
-- [Brzozowski Mid](brzozowski-mid.md)
+- [States of the intermediate Brzozowski automaton](mid-state.md)
+- [Accessible part of a DFA, by a bounded search](../../../decidability/part-02/regular/accessible-part-within.md)
+- [Every state of the accessible part is reached](../../../decidability/part-02/regular/accessible-part-within-surjective.md)
+- [The intermediate Brzozowski automaton](brzozowski-mid.md)
 - [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
-- [Rev Det](rev-det.md)
+- [Determinized reversal of a DFA](rev-det.md)
 
 ## Sources
 

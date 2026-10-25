@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Language.minimizedDFA_card_eq_nerode
 ---
 
-# Minimized DFA card eq nerode
+# When finite, the minimized DFA has as many states as there are Nerode classes
 
-When finite, the semantic presentation attains the universal Nerode lower bound.
+**When finite, the minimized DFA has as many states as there are Nerode classes.** Let $M$
+be a DFA accepting the language $L$. If the set of reachable residuals of $M$ (the states of the
+minimized DFA of $M$) and the set of Nerode classes of $L$ are both finite, then they have the
+same number of elements.
 
 ## Depends on
 
 - [Nerode Class](../nerode/nerode-class.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on
 
-- [Nerode Class Equiv Minimized State](nerode-class-equiv-minimized-state.md)
+- [Nerode classes and reachable residuals](nerode-class-equiv-minimized-state.md)
 
 ## Sources
 

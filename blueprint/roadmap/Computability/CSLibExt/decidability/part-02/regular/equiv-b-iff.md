@@ -6,19 +6,22 @@ proof: formalized
 lean: DFA.equivB_iff
 ---
 
-# Equivalence of DFAs is decided by `equivB`
+# Correctness of the equivalence test for DFAs
 
-**Equivalence of DFAs is decided by `equivB`.**
+**Correctness of the equivalence test for DFAs.** Let $M$ and $N$ be DFAs over the same finite
+alphabet, with finite state sets with decidable equality and decidable sets of accepting states.
+The equivalence test of $M$ and $N$ returns true if and only if $M$ and $N$ accept the same
+language.
 
 ## Depends on
 
-- [Equiv B](equiv-b.md)
+- [Equivalence test for DFAs](equiv-b.md)
 
 ## Proof depends on
 
-- [Is Empty B](is-empty-b.md)
-- [Emptiness of DFAs is decided by `isEmptyB`](is-empty-b-iff.md)
-- [Symm Diff](symm-diff.md)
+- [Emptiness test for DFAs](is-empty-b.md)
+- [The emptiness test decides emptiness of DFAs](is-empty-b-iff.md)
+- [Symmetric difference of two DFAs](symm-diff.md)
 
 ## Sources
 

@@ -7,8 +7,9 @@ lean: Cslib.Language.EncodedCFG.infiniteB
 
 # The infiniteness test
 
-**The infiniteness test**: some word over the terminals whose length is between the pumping
-bound `N` and `2N` is generated.
+**The infiniteness test.** Let $g$ be an encoded grammar and $N$ its pumping bound. The test
+returns true exactly when some word $w$ whose letters all occur as terminals in the productions
+of $g$, with $N \le |w| < 2N$, is accepted by the membership test for $g$.
 
 ## Depends on
 
@@ -16,10 +17,10 @@ bound `N` and `2N` is generated.
 
 ## Proof depends on
 
-- [Membership test](mem-language-b.md)
-- [Pump Bound](pump-bound.md)
-- [Terminals](terminals.md)
-- [Words Over](words-over.md)
+- [The membership test for context-free grammars](mem-language-b.md)
+- [Pumping bound of an encoded grammar](pump-bound.md)
+- [The terminals of an encoded grammar](terminals.md)
+- [The words of a given length over a list of letters](words-over.md)
 
 ## Sources
 

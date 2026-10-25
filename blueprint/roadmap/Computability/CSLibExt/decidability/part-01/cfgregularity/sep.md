@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.sep
 ---
 
-# Sep
+# The separator letter
 
-The separator `#`.
+**The separator letter.** For an alphabet $T$, among the letters of the reduction (the letters
+of $T$, a separator and two bits), this is the separator, written $\#$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Sources
 

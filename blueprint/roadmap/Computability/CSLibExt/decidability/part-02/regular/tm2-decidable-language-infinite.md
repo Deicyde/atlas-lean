@@ -6,30 +6,32 @@ proof: formalized
 lean: Cslib.Automata.EncodedDFA.tm2Decidable_language_infinite
 ---
 
-# Infiniteness for DFAs (INFINITE_DFA) is decidable
+# Infiniteness of DFAs is decidable
 
-**Infiniteness for DFAs (INFINITE_DFA) is decidable** by a multi-stack machine, over a
-finite alphabet.
+**Infiniteness of DFAs is decidable.** For every finite alphabet $\alpha$, given with an
+enumeration of its letters, decidable equality and a primitive recursive encoding, the property
+of an encoded DFA over $\alpha$ that its language is infinite is decidable by a multi-stack
+machine. This is the problem $\mathrm{INFINITE}_{\mathrm{DFA}}$.
 
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [Encoded DFAs as triples](../../../automata/da/encoded-dfa/equiv-prod.md)
 - [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Accepts B](accepts-b.md)
-- [Infinite B](infinite-b.md)
-- [Infiniteness of DFA languages is decided by `infiniteB`](infinite-b-iff.md)
+- [Acceptance test for encoded DFAs](accepts-b.md)
+- [Infiniteness test for encoded DFAs](infinite-b.md)
+- [Correctness of the infiniteness test for encoded DFAs](infinite-b-iff.md)
 - [Running an encoded DFA is primitive recursive](../../../automata/da/encoded-dfa/primrec-eval.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [Words Of Length](words-of-length.md)
-- [Computable Pred of primrec bool](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
-- [Mem B](../../part-01/primrec-list/mem-b.md)
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Words of a given length](words-of-length.md)
+- [Predicates with a primitive recursive decision procedure are computable](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

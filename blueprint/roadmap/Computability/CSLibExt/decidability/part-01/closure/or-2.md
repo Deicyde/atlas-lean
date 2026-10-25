@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.TM2Recognizable.or
 ---
 
-# Or
+# Recognizable predicates are closed under disjunction
 
-Recognizable predicates are closed under disjunction.
+**Recognizable predicates are closed under disjunction.** Let $\alpha$ be a type with a
+primitive recursive encoding. If $p$ and $q$ are predicates on $\alpha$ that are recognizable by
+a multi-stack Turing machine, then so is the predicate $a \mapsto p(a) \lor q(a)$.
 
 ## Depends on
 
-- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable iff re Pred](../basic/tm2-recognizable-iff-re-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
 - [Or](../../../../MathlibExt/re/or-2.md)
 
 ## Sources

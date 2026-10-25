@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.Post.Domino
 ---
 
-# Domino
+# Domino (Post correspondence problem)
 
-A domino: a top word and a bottom word.
+**Domino (Post correspondence problem).** A domino over an alphabet $\alpha$ is a pair
+$(t, b)$ of words over $\alpha$: its top word $t$ and its bottom word $b$.
 
 ## Depends on
 

@@ -16,7 +16,7 @@ lean: Cslib.Kolmogorov.not_computable_K
 
 ## Proof depends on
 
-- [Optimality](../basic/exists-k-le-of-partrec.md)
+- [Optimality (the invariance theorem)](../basic/exists-k-le-of-partrec.md)
 - [Incompressible strings exist at every length](exists-incompressible.md)
 
 ## Sources

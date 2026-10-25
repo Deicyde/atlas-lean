@@ -20,14 +20,14 @@ $X[t + 1, \mathrm{na}(i)]$.
 ## Depends on
 
 - [Variable layout of the transition clauses](layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [Number of variables of the transition-clause formula](num-vars.md)
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

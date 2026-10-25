@@ -23,7 +23,7 @@ In particular the value at $i_F$ is $H - m$.
 
 - [The precomputed time bound](tof.md)
 - [Total length bound](m-of.md)
-- [Cap H](../situation/part-05/cap-h.md)
+- [Stack cap](../situation/part-05/cap-h.md)
 
 ## Sources
 

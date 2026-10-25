@@ -20,7 +20,7 @@ A separate result bounds it by a constant depending only on $L$ and $N$ times $(
 ## Proof depends on
 
 - [Cost of the precomputation of the cell-shift generator](pre-b.md)
-- [T Body B](t-body-b.md)
+- [Step budget for one time step of the shift generator](t-body-b.md)
 
 ## Sources
 

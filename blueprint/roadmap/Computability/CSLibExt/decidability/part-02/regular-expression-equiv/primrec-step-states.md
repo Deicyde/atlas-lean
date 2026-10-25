@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.primrec_stepStates
 ---
 
-# Primrec step States
+# One step of the Thompson state count is primitive recursive
 
-The count of one node is primitive recursive in the counts before it and the node.
+**One step of the Thompson state count is primitive recursive.** For an alphabet $\alpha$
+with a primitive recursive encoding, the map sending a list $c$ of natural numbers and a
+regular-expression node over $\alpha$ to the Thompson state count of the node computed from $c$
+is primitive recursive.
 
 ## Depends on
 
-- [Node Equiv](../regular-expression/node-equiv.md)
-- [Step States](step-states.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [Regex nodes as a sum type](../regular-expression/node-equiv.md)
+- [One step of the Thompson state count](step-states.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Sources
 

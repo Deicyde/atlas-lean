@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.regLang
 ---
 
-# Reg Lang
+# The target language of the regularity reduction
 
-The target language `L # {0,1}* ∪ T* # {0ⁿ1ⁿ}`.
+**The target language of the regularity reduction.** For a language $L$ over an alphabet
+$T$, this is the language over the letters of $T$, a separator $\#$ and the two bits $0, 1$
+consisting of the words $u \# v$ with $u \in T^*$ and $v \in \{0,1\}^*$ such that $u \in L$ or
+$v = 0^n 1^n$ for some $n \in \mathbb{N}$; that is,
+$L \# \{0,1\}^* \cup T^* \# \{0^n 1^n : n \in \mathbb{N}\}$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 
-- [Bl](bl.md)
-- [Sep](sep.md)
-- [Tl](tl.md)
-- [Zero One](zero-one.md)
+- [Bits as letters](bl.md)
+- [The separator letter](sep.md)
+- [Alphabet letters in the extended alphabet](tl.md)
+- [The language $\{0^n 1^n\}$](zero-one.md)
 
 ## Sources
 

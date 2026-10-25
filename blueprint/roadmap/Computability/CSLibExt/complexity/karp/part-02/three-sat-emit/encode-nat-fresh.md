@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.Emit3.encodeNat_fresh
 ---
 
-# Encode Nat fresh
+# Binary representation of a fresh name
 
-Fresh names have the code `true`, `z` times `false`, `true`.
+**Binary representation of a fresh name.** For every natural number $z$, the binary
+representation (least significant bit first) of $\mathrm{fresh}(z) = 2^{z+1} + 1$ is
+$\mathrm{true}$, then $z$ copies of $\mathrm{false}$, then $\mathrm{true}$.
 
 ## Depends on
 
-- [Fresh](../three-sat/fresh.md)
+- [Fresh variable indices](../three-sat/fresh.md)
 
 ## Sources
 

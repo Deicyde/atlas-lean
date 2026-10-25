@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Path.Machine.Fr
 ---
 
-# Fr
+# Agreement off a set of stacks
 
-`S'` agrees with `S` off the stacks `A`.
+**Agreement off a set of stacks.** For a list $A$ of stacks of the marking machine and two
+contents $S$, $S'$ of its stacks, $S'$ agrees with $S$ off $A$ when every stack not in $A$ holds
+the same list in $S'$ as in $S$.
 
 ## Depends on
 
 - [K](k.md)
-- [Γ](untitled.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources
 

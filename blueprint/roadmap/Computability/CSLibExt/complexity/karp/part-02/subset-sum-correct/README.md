@@ -6,27 +6,27 @@ navigation: module
 
 ## The instance codec
 
-- [Subset Sum Dec no SS](subset-sum-dec-no-ss.md)
+- [The fixed no-instance of SUBSET-SUM](subset-sum-dec-no-ss.md)
 
 ## Base 4 without carries
 
-- [Add sum digits eq iff](add-sum-digits-eq-iff.md)
+- [Base-4 expansions with digits below $4$ are unique](add-sum-digits-eq-iff.md)
 
 ## Sublists as sets of numbers
 
-- [Exists sublist ss Nums iff](exists-sublist-ss-nums-iff.md)
+- [Sublists of the reduction's numbers as vertex and pair sets](exists-sublist-ss-nums-iff.md)
 
 ## The numbers in base 4
 
-- [Vtx Num eq](vtx-num-eq.md)
-- [Ss Target eq](ss-target-eq.md)
-- [Sum vtx Num add sum edge Num](sum-vtx-num-add-sum-edge-num.md)
+- [A vertex number in base 4](vtx-num-eq.md)
+- [The target in base 4](ss-target-eq.md)
+- [A subset sum of the reduction's numbers in base 4](sum-vtx-num-add-sum-edge-num.md)
 - [Sum touches eq](sum-touches-eq.md)
 
 ## Vertex covers on valid instances
 
-- [Is Vertex Cover to Graph iff](is-vertex-cover-to-graph-iff.md)
+- [Vertex covers in terms of the pair bits](is-vertex-cover-to-graph-iff.md)
 
 ## Correctness
 
-- [Exists cover iff exists sublist](exists-cover-iff-exists-sublist.md)
+- [Vertex covers of size $k$ match subset sums hitting the target](exists-cover-iff-exists-sublist.md)

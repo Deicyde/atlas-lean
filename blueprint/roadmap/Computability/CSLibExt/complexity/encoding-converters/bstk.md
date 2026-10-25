@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.BStk
 ---
 
-# BStk
+# Stacks of the bit-list converters
 
-Stacks of the two bit-list converters: input, output, one stash.
+**Stacks of the bit-list converters.** The two bit-list converters use three stacks: the
+input stack, the output stack and one stash.
 
 ## Depends on
 

@@ -8,12 +8,13 @@ lean: Cslib.Complexity.Karp.indSetDec_npComplete
 
 # INDEPENDENT-SET is NP-complete
 
-**INDEPENDENT-SET is NP-complete**.
+**INDEPENDENT-SET is NP-complete.** INDEPENDENT-SET lies in NP, and every decision problem
+in NP has a polynomial-time many-one reduction to INDEPENDENT-SET.
 
 ## Depends on
 
-- [Ind Set Dec](../clique/ind-set-dec.md)
-- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [INDEPENDENT-SET](../clique/ind-set-dec.md)
+- [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)

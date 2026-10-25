@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.Path.Machine.setS
 ---
 
-# Set S
+# Mark-setting step
 
-Set the mark on top of `M` (if any), then go to `next`.
+**Mark-setting step.** For a label $\ell$, the statement of the marking machine that pops the
+top cell of the mark stack $M$ and, if there was one, pushes the set mark (the bit true) onto $M$
+in its place; in either case it then goes to $\ell$.
 
 ## Depends on
 
 - [Lab](lab.md)
-- [Stmt](stmt.md)
+- [Statements of the PATH marking machine](stmt.md)
 
 ## Proof depends on
 
 - [K](k.md)
-- [Γ](untitled.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

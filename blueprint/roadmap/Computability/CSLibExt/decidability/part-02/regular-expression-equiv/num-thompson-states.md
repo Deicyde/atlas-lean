@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.numThompsonStates
 ---
 
-# Num Thompson States
+# Thompson state count of an encoding
 
-The number of states of Thompson's automaton of the expression: the count of the root.
+**Thompson state count of an encoding.** The number of Thompson states of an encoded regular
+expression $e$ is the entry of the state counts of the nodes of $e$ at the last node, the root
+(read as $0$ when $e$ has no nodes).
+
+It equals the number of states of Thompson's automaton of the expression that $e$ denotes.
 
 ## Depends on
 
-- [Encoded Regex](../regular-expression/encoded-regex.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
 
 ## Proof depends on
 
-- [State Counts](state-counts.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [Thompson state counts of a node list](state-counts.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Sources
 

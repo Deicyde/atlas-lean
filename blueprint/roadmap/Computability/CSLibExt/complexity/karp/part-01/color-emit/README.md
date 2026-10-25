@@ -6,93 +6,93 @@ navigation: module
 
 ## The output, edge by edge
 
-- [E B](e-b.md)
-- [Out](out.md)
+- [Bit encoding of an edge](e-b.md)
+- [Bits pushed for a list of edges](out.md)
 
 ## The machine
 
-- [K](k.md)
-- [Γ](untitled.md)
-- [Src](src.md)
-- [K](k-2.md)
-- [Unit](unit.md)
-- [Site](site.md)
-- [All](all.md)
-- [Src](src-2.md)
-- [Top](top.md)
-- [Lab](lab.md)
-- [Nxt](nxt.md)
-- [Is Lit](is-lit.md)
-- [Unit Of](unit-of.md)
-- [Pal](pal.md)
-- [Prog](prog.md)
-- [Start](start.md)
+- [Stacks of the 3-coloring emitter](k.md)
+- [Stack alphabets of the 3-coloring emitter](untitled.md)
+- [Counters read by copy sites](src.md)
+- [Stack of a counter](k-2.md)
+- [Unit symbol of a counter](unit.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
+- [The copy sites of the 3-COLOR emitter, listed](all.md)
+- [Counter copied by a copy site](src-2.md)
+- [Constant block of a copy site](top.md)
+- [Control labels of the 3-coloring emitter](lab.md)
+- [Successor label of a copy site](nxt.md)
+- [Literal-marker test](is-lit.md)
+- [Reading unary units](unit-of.md)
+- [Bits of the palette triangle](pal.md)
+- [The 3-COLOR emitter machine](prog.md)
+- [Start label of the 3-coloring emitter](start.md)
 
 ## Quiescent states
 
-- [MS](ms.md)
-- [Stk](stk.md)
-- [Val](val.md)
+- [Quiescent states of the 3-COLOR emitter](ms.md)
+- [Stacks of a quiescent state](stk.md)
+- [Counter values of a quiescent state](val.md)
 
 ## Copy sites
 
-- [K ne O](k-ne-o.md)
-- [Dup run](dup-run.md)
-- [Atom](atom.md)
-- [Site run](site-run.md)
-- [Chain](chain.md)
-- [Chain Out](chain-out.md)
-- [Chain run](chain-run.md)
+- [Counter values of a quiescent state](k-ne-o.md)
+- [Copying a counter through $W$](dup-run.md)
+- [Bit list of a copy site of the 3-COLOR emitter](atom.md)
+- [Running a copy site of the 3-COLOR emitter](site-run.md)
+- [Copy sites of the 3-COLOR emitter running in sequence](chain.md)
+- [Bits pushed by a sequence of copy sites of the 3-COLOR emitter](chain-out.md)
+- [Running a sequence of copy sites of the 3-COLOR emitter](chain-run.md)
 
 ## One-step lemmas
 
-- [Is Tok](is-tok.md)
+- [Walk tokens](is-tok.md)
 
 ## Phases
 
-- [Name](name.md)
-- [D Tok](d-tok.md)
-- [Nm run](nm-run.md)
-- [Cmp run](cmp-run.md)
-- [Mv N run](mv-n-run.md)
-- [Sk U run](sk-u-run.md)
-- [Mv U run](mv-u-run.md)
-- [Dr run](dr-run.md)
-- [Clr run](clr-run.md)
-- [F AB run](f-ab-run.md)
+- [Name of a variable](name.md)
+- [Encoding of an earlier occurrence on stack $D$](d-tok.md)
+- [Moving the current name from $T$ to $A$](nm-run.md)
+- [Name comparison in the 3-COLOR emitter](cmp-run.md)
+- [Moving an earlier name from $D$ to $E$](mv-n-run.md)
+- [Skipping an earlier literal vertex](sk-u-run.md)
+- [Moving an earlier literal vertex from $D$ to $U$](mv-u-run.md)
+- [Moving $U$ onto $E$](dr-run.md)
+- [The 3-COLOR emitter clears its OR-output counter](clr-run.md)
+- [Adding the vertex counter to the OR output](f-ab-run.md)
 - [Back run](back-run.md)
-- [Put run](put-run.md)
+- [Recording the current occurrence](put-run.md)
 
 ## The edges of the site runs
 
-- [Occ Sites](occ-sites.md)
-- [Cons Sites](cons-sites.md)
-- [Or Sites](or-sites.md)
-- [End Sites](end-sites.md)
-- [Emp Sites](emp-sites.md)
+- [Copy sites of the occurrence triangle](occ-sites.md)
+- [Copy sites of the consistency edges](cons-sites.md)
+- [The OR-gadget copy sites](or-sites.md)
+- [Copy sites of the clause end](end-sites.md)
+- [Copy sites of the empty clause](emp-sites.md)
 
 ## The walk over earlier occurrences
 
-- [Cons Edges same](cons-edges-same.md)
-- [Ent run](ent-run.md)
-- [Walk run](walk-run.md)
-- [Occ run](occ-run.md)
+- [Copy sites of the empty clause](cons-edges-same.md)
+- [One step of the walk over earlier occurrences](ent-run.md)
+- [Walking the earlier occurrences](walk-run.md)
+- [Emitting one literal occurrence](occ-run.md)
 
 ## The size invariant
 
-- [Inv](inv.md)
-- [Bump](bump.md)
-- [Occ](occ.md)
+- [Size invariant of the 3-coloring emitter](inv.md)
+- [One more token preserves the 3-COLOR emitter's size invariant](bump.md)
+- [The size invariant survives a new literal occurrence](occ.md)
 
 ## Literals, clauses, the formula
 
-- [Budget](budget.md)
-- [Enc](enc.md)
-- [Lit cost](lit-cost.md)
-- [Lits run](lits-run.md)
-- [Clause run](clause-run.md)
-- [Formula run](formula-run.md)
+- [Per-token step budget of the 3-COLOR emitter](budget.md)
+- [The emitter state of a construction state](enc.md)
+- [Step budget for one literal](lit-cost.md)
+- [The emitter processes the remaining literals of a clause](lits-run.md)
+- [The 3-COLOR emitter processes one clause](clause-run.md)
+- [The emitter on a list of clauses](formula-run.md)
 
 ## The emitter
 
-- [The emitter](run.md)
+- [Correctness and step bound of the 3-COLOR emitter](run.md)

@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Language.EncodedRegex.primrec_eqBound
 ---
 
-# Primrec eq Bound
+# The equivalence search bound is primitive recursive
 
-The search bound is primitive recursive.
+**The equivalence search bound is primitive recursive.** For an alphabet $\alpha$ with a
+primitive recursive encoding, the search bound $2^{m+n}$ for equivalence of two encoded regular
+expressions over $\alpha$, where $m$ and $n$ are the numbers of states of Thompson's automata of
+the two expressions, is a primitive recursive function of the pair of encoded expressions.
 
 ## Depends on
 
-- [Encoded Regex](../regular-expression/encoded-regex.md)
-- [Eq Bound](eq-bound.md)
-- [Equiv List](../regular-expression/equiv-list.md)
-- [Node Equiv](../regular-expression/node-equiv.md)
-- [Regex Node](../regular-expression/regex-node.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
+- [Search bound for equivalence](eq-bound.md)
+- [Encodings are lists of nodes](../regular-expression/equiv-list.md)
+- [Regex nodes as a sum type](../regular-expression/node-equiv.md)
+- [Regular-expression node](../regular-expression/regex-node.md)
 
 ## Proof depends on
 
-- [Num Thompson States](num-thompson-states.md)
-- [Primrec num Thompson States](primrec-num-thompson-states.md)
+- [Thompson state count of an encoding](num-thompson-states.md)
+- [The Thompson state count of an encoding is primitive recursive](primrec-num-thompson-states.md)
 
 ## Sources
 

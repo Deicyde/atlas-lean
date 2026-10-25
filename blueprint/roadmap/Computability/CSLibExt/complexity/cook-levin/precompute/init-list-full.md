@@ -28,9 +28,9 @@ are empty.
 - [Coefficient list of a polynomial](coeffs.md)
 - [Stacks during the read loop](fst.md)
 - [The full machine as a finite multi-stack Turing machine](full-tm.md)
-- [Enc](../situation/part-01/enc.md)
-- [N](../situation/part-01/n.md)
-- [Layout](../situation/part-01/layout.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Number of situations](../situation/part-01/n.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
 
 ## Proof depends on
 

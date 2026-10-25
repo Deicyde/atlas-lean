@@ -8,28 +8,30 @@ lean: DFA.reindex_mooreDFA
 
 # Moore's automaton is the minimal automaton
 
-**Moore's automaton is the minimal automaton.** Renaming its classes to the continuation
-languages they determine gives exactly `Cslib.Language.minimizedDFA M`.
+**Moore's automaton is the minimal automaton.** Let $M$ be a DFA. Renaming each state of
+Moore's minimal automaton of $M$, a class of reachable states, to the continuation language
+accepted from its members turns Moore's automaton into exactly the minimized DFA of $M$, whose
+states are the reachable continuation languages of $M$.
 
 ## Depends on
 
 - [Minimized DFA](../minimization/minimized-dfa.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
-- [Moore State](moore-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
+- [States of Moore's automaton](moore-state.md)
 - [Moore's minimal automaton](moore-dfa.md)
-- [Moore Equiv](moore-equiv.md)
+- [Moore classes are the reachable residuals](moore-equiv.md)
 
 ## Proof depends on
 
-- [Left Quotient Equiv Reachable Residuals](../minimization/left-quotient-equiv-reachable-residuals.md)
-- [Left Quotient accepts From](../minimization/left-quotient-accepts-from.md)
-- [Minimized DFA eval](../minimization/minimized-dfa-eval.md)
-- [Minimized DFA step val](../minimization/minimized-dfa-step-val.md)
-- [Minimized State](../minimization/minimized-state.md)
-- [Moore Class](moore-class.md)
-- [Moore Setoid](moore-setoid.md)
-- [Reachable](../../../decidability/part-02/regular/reachable.md)
-- [Step mem reachable](../../../decidability/part-02/regular/step-mem-reachable.md)
+- [Left quotients as reachable residuals](../minimization/left-quotient-equiv-reachable-residuals.md)
+- [Left quotients of continuation languages](../minimization/left-quotient-accepts-from.md)
+- [States reached in the minimized DFA](../minimization/minimized-dfa-eval.md)
+- [Transitions of the minimized DFA](../minimization/minimized-dfa-step-val.md)
+- [Residual reached by a word](../minimization/minimized-state.md)
+- [Moore class of a reachable state](moore-class.md)
+- [Moore equivalence on reachable states](moore-setoid.md)
+- [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
+- [Reachable states are closed under transitions](../../../decidability/part-02/regular/step-mem-reachable.md)
 
 ## Sources
 

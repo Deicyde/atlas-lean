@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Situation.Enc.Good
 ---
 
-# Good
+# Good configurations
 
-Every stack symbol has a code (lies in the effective alphabet).
+**Good configurations.** For an encoding $E$ of a machine $M$, a configuration $c$ of $M$ is
+good when every symbol on every stack $k$ of $c$ is one of the effective symbols of stack $k$
+listed by $E$ (so that it has a code).
 
 ## Depends on
 
-- [Enc](../part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../part-01/enc.md)
 
 ## Sources
 

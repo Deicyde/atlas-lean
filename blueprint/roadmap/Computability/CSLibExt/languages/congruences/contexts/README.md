@@ -4,12 +4,12 @@ navigation: module
 
 # Contexts
 
-- [Context Quotient](context-quotient.md)
-- [Context Quotient context Quotient](context-quotient-context-quotient.md)
-- [Context Accept](context-accept.md)
-- [Context Quotient](context-quotient-2.md)
-- [Context Quotient To Syntactic](context-quotient-to-syntactic.md)
-- [Card syntactic Monoid context Quotient le mrange](card-syntactic-monoid-context-quotient-l.md)
-- [Finite syntactic Monoid context Quotient](finite-syntactic-monoid-context-quotient.md)
-- [Context Quotient](context-quotient-3.md)
-- [Syntactic Rel iff mem context Quotient](syntactic-rel-iff-mem-context-quotient.md)
+- [Context quotient](context-quotient.md)
+- [Composing context quotients](context-quotient-context-quotient.md)
+- [Accepting set for a context quotient](context-accept.md)
+- [Recognizers recognize context quotients](context-quotient-2.md)
+- [The canonical map to the syntactic monoid of a context quotient](context-quotient-to-syntactic.md)
+- [Size bound for the syntactic monoid of a context quotient](card-syntactic-monoid-context-quotient-l.md)
+- [Context quotients preserve finiteness of the syntactic monoid](finite-syntactic-monoid-context-quotient.md)
+- [Regular languages are closed under context quotients](context-quotient-3.md)
+- [Syntactic equivalence via context quotients](syntactic-rel-iff-mem-context-quotient.md)

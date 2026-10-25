@@ -183,13 +183,13 @@ theorem colorable_of_cnfSat {φ : CNF} (h : CNFSat φ) :
 
 ## Depends on
 
-- [Col Proper](col-proper.md)
-- [Col St](../color/col-st.md)
-- [Col Or](../color/col-or.md)
+- [Proper 3-colorings of an edge list](col-proper.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
+- [OR gadget of the 3-COLOR construction](../color/col-or.md)
 
 ## Proof depends on
 
-- [Or gadget sound](or-gadget-sound.md)
+- [Soundness of the OR gadget](or-gadget-sound.md)
 
 ## Sources
 

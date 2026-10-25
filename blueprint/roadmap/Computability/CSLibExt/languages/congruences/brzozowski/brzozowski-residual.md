@@ -5,20 +5,24 @@ statement: formalized
 lean: DFA.brzozowskiResidual
 ---
 
-# Brzozowski Residual
+# Residual language of a state of Brzozowski's automaton
 
-The continuation language of a state of Brzozowski's automaton, through a word reaching it.
+**Residual language of a state of Brzozowski's automaton.** For a deterministic finite
+automaton $M$ over a finite alphabet with finitely many states, the map that sends a state $p$ of
+Brzozowski's automaton of $M$ to the language accepted by $M$ from the state that $M$ reaches on
+$w$, where $w$ is a chosen word leading Brzozowski's automaton from its start state to $p$; this
+language is one of the residual languages of the reachable states of $M$.
 
 ## Depends on
 
-- [Reachable Residuals](../minimality/reachable-residuals.md)
-- [Brzozowski State](brzozowski-state.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
+- [States of Brzozowski's automaton](brzozowski-state.md)
 
 ## Proof depends on
 
-- [Minimized State](../minimization/minimized-state.md)
+- [Residual reached by a word](../minimization/minimized-state.md)
 - [Brzozowski's automaton](brzozowski.md)
-- [Brzozowski surjective](brzozowski-surjective.md)
+- [Every state of Brzozowski's automaton is reachable](brzozowski-surjective.md)
 
 ## Sources
 

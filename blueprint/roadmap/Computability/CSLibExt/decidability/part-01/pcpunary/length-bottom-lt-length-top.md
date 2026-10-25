@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.Post.length_bottom_lt_length_top
 ---
 
-# Length bottom lt length top
+# Total length of dominoes that are strictly longer on top
 
-If every domino of a nonempty `s` is strictly longer on top, so is `s`.
+**Total length of dominoes that are strictly longer on top.** Write $|w|$ for the length of a
+word $w$. Let $s$ be a nonempty finite sequence of dominoes over an alphabet. If every domino
+$(t, b)$ in $s$ satisfies $|b| < |t|$, then the concatenation of the bottom words of $s$ is strictly
+shorter than the concatenation of the top words of $s$.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
-- [Bottom](../pcp/bottom.md)
-- [Top](../pcp/top.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
+- [Bottom word of a domino sequence](../pcp/bottom.md)
+- [Top word of a sequence of dominoes](../pcp/top.md)
 
 ## Proof depends on
 
-- [Length bottom le length top](length-bottom-le-length-top.md)
+- [Total length of dominoes that are at least as long on top](length-bottom-le-length-top.md)
 
 ## Sources
 

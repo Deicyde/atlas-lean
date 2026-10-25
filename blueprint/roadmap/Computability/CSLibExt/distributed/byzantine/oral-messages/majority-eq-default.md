@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.majority_eq_default
 ---
 
-# Majority eq default
+# Majority falls back to the default value
 
-Without a value filling more than half of the multiset, the majority is `default`
-(retreat).
+**Majority falls back to the default value.** If, for every value $x$, at most half of the
+elements of a multiset $s$ of values are equal to $x$ (counted with multiplicity), then the
+majority of $s$ is the default value (retreat).
 
 ## Depends on
 
-- [Majority](majority.md)
+- [Majority of a multiset](majority.md)
 
 ## Sources
 

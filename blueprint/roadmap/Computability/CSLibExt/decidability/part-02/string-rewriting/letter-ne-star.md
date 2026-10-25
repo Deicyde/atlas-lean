@@ -6,9 +6,16 @@ proof: formalized
 lean: Cslib.Decidability.Rewriting.letter_ne_star
 ---
 
-# Letter ne star
+# The MPCP instance of a reachability instance
 
-The MPCP instance of a reachability problem. Its first domino is `startCard x`. -/
+**The MPCP instance of a reachability instance.** Let $(R, x, y)$ be an instance of the
+reachability problem over an alphabet $\alpha$, where $R = [(l_1, r_1), \dots, (l_k, r_k)]$, and
+write $\#$ for the separator and $\diamond$ for the end marker of the extended alphabet
+$\mathrm{Sym}(\alpha)$, in which letters of $\alpha$ are read as letters. Let $a_1 \cdots a_m$ be
+the word $l_1 r_1 l_2 r_2 \cdots l_k r_k \, x \, y$, the letters of the instance. The MPCP
+instance of $(R, x, y)$ is the list of dominoes (top word, bottom word)
+$(\diamond, \diamond x \#), (y \# \diamond, \diamond), (\#, \#), (l_1, r_1), \dots, (l_k, r_k),
+(a_1, a_1), \dots, (a_m, a_m)$, in this order. Its first domino is $(\diamond, \diamond x \#)$. -/
 def toMPCP (I : List (Rule α) × List α × List α) : List (Domino (Sym α)) :=
   startCard I.2.1 :: finalCard I.2.2 :: sepCard :: (I.1.map ruleCard ++ (symbols I).map copyCard)
 
@@ -44,9 +51,9 @@ theorem bottom_map_copyCard (u : List α) : bottom (u.map copyCard) = lift u := 
 
 ## Depends on
 
-- [Sym](../../part-01/pcp/sym.md)
-- [Letter](../../part-01/pcp/letter.md)
-- [Star](../../part-01/pcp/star.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
+- [The alphabet inside the extended alphabet](../../part-01/pcp/letter.md)
+- [The star symbol](../../part-01/pcp/star.md)
 
 ## Sources
 

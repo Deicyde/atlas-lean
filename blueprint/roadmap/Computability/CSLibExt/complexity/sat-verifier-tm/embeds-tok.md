@@ -6,9 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.embeds_tok
 ---
 
-# Embeds tok
+# The SAT verifier machine
 
-The host as a `FinTM2`: input `inp` (alphabet `G`), output `out` (alphabet `Bool`). -/
+**The SAT verifier machine.** For a flag $\mathit{cap}$, the host machine is the finite
+multi-stack Turing machine whose stacks are the host stacks, with the input stack as input (its
+alphabet is that of the pair encoding: tagged formula bits, a separator and tagged witness
+bits), the output stack (alphabet the booleans) as output, the host alphabets on all stacks, the
+host labels as labels, the first phase-0 label as start label, a boolean internal state
+initially false, and the host program with flag $\mathit{cap}$ as program. -/
 def tm (cap : Bool) : FinTM2 where
   K := HK
   k₀ := .inp
@@ -82,40 +87,40 @@ theorem phase0_run (x w : List Bool) (v : Bool) (S : ∀ k, List (HΓ k))
 
 ## Depends on
 
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [HΓ](h.md)
-- [Emb T](emb-t.md)
-- [Hprog](hprog.md)
-- [ΦT](t.md)
-- [Sym](../sat-verifier-spec/sym.md)
-- [K](../sat-tokenizer/k.md)
-- [Lab](../sat-tokenizer/lab.md)
-- [Prog](../sat-tokenizer/prog.md)
+- [Stacks of the SAT verifier host](hk.md)
+- [Labels of the SAT verifier host](hlab.md)
+- [Stack alphabets of the SAT verifier host](h.md)
+- [Stack embedding of the tokenizer into the host](emb-t.md)
+- [Program of the SAT verifier host](hprog.md)
+- [Tokenizer labels in the host machine](t.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](../sat-tokenizer/k.md)
+- [Labels of the SAT tokenizer](../sat-tokenizer/lab.md)
+- [The tokenizer program](../sat-tokenizer/prog.md)
 - [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 
 ## Proof depends on
 
-- [K](../karp/part-02/three-sat-filter/k.md)
-- [Lab](../karp/part-02/three-sat-filter/lab.md)
-- [Prog](../karp/part-02/three-sat-filter/prog.md)
-- [Start](../karp/part-02/three-sat-filter/start.md)
-- [DLab](../sat-check/dlab.md)
-- [K](../sat-check/k.md)
-- [Prog](../sat-check/prog.md)
-- [Lab](../sat-lookup/lab.md)
-- [Start](../sat-lookup/start.md)
-- [P0](p0.md)
-- [D W](d-w.md)
-- [D X](d-x.md)
-- [Emb C](emb-c.md)
-- [Emb F](emb-f.md)
-- [Lk H](lk-h.md)
-- [Work Ks](work-ks.md)
-- [ΦC](c.md)
-- [ΦF](f.md)
-- [Bit?](../sat-verifier-spec/bit.md)
-- [Start](../sat-tokenizer/start.md)
+- [Stacks of the 3SAT clause-length filter](../karp/part-02/three-sat-filter/k.md)
+- [Labels of the 3SAT clause-length filter](../karp/part-02/three-sat-filter/lab.md)
+- [The clause-length filter program](../karp/part-02/three-sat-filter/prog.md)
+- [Start label of the filter](../karp/part-02/three-sat-filter/start.md)
+- [Driver labels of the clause check](../sat-check/dlab.md)
+- [Stacks of the clause check](../sat-check/k.md)
+- [The clause-check driver with a lookup sub-program](../sat-check/prog.md)
+- [Labels of the lookup machine](../sat-lookup/lab.md)
+- [Start label of the lookup machine](../sat-lookup/start.md)
+- [Phase-0 labels of the SAT verifier host](p0.md)
+- [Reading a witness bit in the SAT host](d-w.md)
+- [Reading a formula bit in the SAT host](d-x.md)
+- [Stack embedding of the clause-check driver into the host](emb-c.md)
+- [Stack embedding of the clause-length filter into the host](emb-f.md)
+- [The embedded lookup program](lk-h.md)
+- [Stacks emptied by the cleanup](work-ks.md)
+- [Driver labels in the SAT host](c.md)
+- [Filter exits in the SAT verifier host](f.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
+- [Start label of the SAT tokenizer](../sat-tokenizer/start.md)
 - [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)

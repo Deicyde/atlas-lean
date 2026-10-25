@@ -33,7 +33,7 @@ $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by 
 - [The transition clause family](family.md)
 - [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Reach](../../../../MathlibExt/turing-machine/program/reach.md)
 
 ## Proof depends on

@@ -5,22 +5,26 @@ statement: formalized
 lean: Cslib.Complexity.Karp.SSVerify.rdS
 ---
 
-# Rd S
+# Reading one pair of a block
 
-Read the next pair of a block off `X`. At the end of `X` reject. On the end marker `false`,
-reject if `z` (the block ends in `false`) and run `done` otherwise. On `true`, pop the payload bit
-`b` (reject if `X` has ended) and run `body b`.
+**Reading one pair of a block.** For a flag $z$ (the bits read so far end in false), a
+statement $\mathit{done}$ and statements $\mathit{body}(b)$ for each bit $b$: if the input stack
+$X$ is empty, go to the label $\mathsf{no}$. Otherwise pop the top of $X$ as a bit, a symbol that
+is not a bit counting as false. If it is false (the end marker), go to $\mathsf{no}$ when $z$ is
+true and run $\mathit{done}$ otherwise. If it is true, go to $\mathsf{no}$ if $X$ is now empty,
+and otherwise pop the next symbol of $X$ as a payload bit $b$ (again a non-bit counts as false)
+and run $\mathit{body}(b)$.
 
 ## Depends on
 
-- [Stmt](stmt.md)
+- [Statements of the SUBSET-SUM verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stacks of the SUBSET-SUM verifier](k.md)
+- [Labels of the SUBSET-SUM verifier](lab.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

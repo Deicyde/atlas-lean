@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Lookup.mvSym
 ---
 
-# Mv Sym
+# Moving a symbol between stacks
 
-Pop the top of `a`, push the symbol `x` on `b`, go to `f x`.
+**Moving a symbol between stacks.** For stacks $a$ and $b$, a symbol $x$ and a map $f$ from
+symbols to labels, this machine instruction pops the top of $a$ (if any), pushes $x$ onto $b$ and
+goes to the label $f(x)$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [Stacks of the lookup machine](k.md)
+- [Labels of the lookup machine](lab.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 
 ## Sources
 

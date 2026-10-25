@@ -6,19 +6,21 @@ proof: formalized
 lean: DFA.subset_mooreRel
 ---
 
-# Subset moore Rel
+# Moore's relation contains every post-fixed point
 
-Every post-fixed point of the refinement is contained in Moore's relation.
+**Moore's relation contains every post-fixed point.** Let $M$ be a DFA. If a set $Z$ of
+pairs of states of $M$ is contained in its image under one round of Moore's refinement, then
+$Z$ is contained in Moore's relation of $M$.
 
 ## Depends on
 
-- [Moore Rel](moore-rel.md)
-- [Moore Step](moore-step.md)
+- [Moore's relation](moore-rel.md)
+- [Moore refinement step](moore-step.md)
 
 ## Proof depends on
 
-- [Moore Iter](moore-iter.md)
-- [Moore Iter spec](moore-iter-spec.md)
+- [Stopping Moore iteration](moore-iter.md)
+- [Output of the stopping Moore iteration](moore-iter-spec.md)
 
 ## Sources
 

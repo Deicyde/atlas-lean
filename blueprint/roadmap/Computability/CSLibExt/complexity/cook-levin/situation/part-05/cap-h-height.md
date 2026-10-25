@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.capH_height
 ---
 
-# Constraint 1, as the C6 run lemmas consume it
+# Stack heights are at most the cap minus the window depth
 
-**Constraint 1, as the C6 run lemmas consume it**: with the corrected cap, every row
-`t ≤ T` of the real run has heights `≤ H − depth M` (the `hh` hypothesis).
+**Stack heights are at most the cap minus the window depth.** Let $M$ be a finite
+multi-stack Turing machine with window depth $d$, let $m$, $T$ and $t$ be natural numbers with
+$t \le T$, and let $s$ be an input of length at most $m$. In the idle-extended run of $M$ from the
+initial configuration on input $s$, every stack of the configuration at step $t$ has length at
+most $H - d$, where $H = m + (T + 1) d + 1$ is the stack cap for input bound $m$, run length $T$
+and per-step growth $d$.
 
 ## Depends on
 
-- [Cap H](cap-h.md)
-- [Depth](../part-01/depth.md)
-- [Run I](../part-03/run-i.md)
+- [Stack cap](cap-h.md)
+- [Window depth of a machine](../part-01/depth.md)
+- [Idle-extended run](../part-03/run-i.md)
 
 ## Proof depends on
 
-- [Run I height](run-i-height.md)
+- [Stack heights along a run](run-i-height.md)
 
 ## Sources
 

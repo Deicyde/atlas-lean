@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.denseSatDec
 ---
 
-# Dense Sat Dec
+# Dense CNF-SAT as a decision problem
 
-Dense CNF-SAT as a decision problem: accept exactly the bit strings in `SAT`.
+**Dense CNF-SAT as a decision problem.** The decision problem of dense CNF-SAT accepts a bit
+string $w$ exactly when $w$ belongs to dense CNF-SAT, that is, when the formula decoded from $w$
+in the dense clause encoding has a satisfying assignment.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ Dense CNF-SAT as a decision problem: accept exactly the bit strings in `SAT`.
 
 ## Proof depends on
 
-- [CNF-SAT](../dense-sat/sat.md)
+- [Dense CNF-SAT](../dense-sat/sat.md)
 
 ## Sources
 

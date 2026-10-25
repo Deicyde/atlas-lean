@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Path.length_markPass
 ---
 
-# Length mark Pass
+# A marking pass preserves the length
 
-A pass keeps the length.
+**A marking pass preserves the length.** Let $n$ be a natural number, $E$ a list of pairs of
+natural numbers and $m$ a list of booleans. A marking pass over $E$ for $n$ vertices, applied to
+$m$, gives a list of the same length as $m$.
 
 ## Depends on
 
-- [Mark Pass](../path/mark-pass.md)
+- [One marking pass](../path/mark-pass.md)
 
 ## Sources
 

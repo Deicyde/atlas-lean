@@ -5,10 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.decodeEs
 ---
 
-# Decode Es
+# Edge-list decoder
 
-The edge list after `n`: pairs of unary numbers until the input ends; `none` on a dangling
-half-pair or a cut-off number.
+**Edge-list decoder.** The edge-list decoder reads a bit string as a list of pairs of natural
+numbers, each number written in unary as that many $1$s followed by a $0$. On the empty string
+it returns the empty list. Otherwise it reads a number $u$, then a number $v$, decodes the rest
+recursively, and returns $(u, v)$ followed by the result; it fails if the input ends inside a
+number or after an unpaired number, or if decoding the rest fails.
+
+In a graph encoding it parses what follows the vertex count.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary number shortens the input](length-lt-of-read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

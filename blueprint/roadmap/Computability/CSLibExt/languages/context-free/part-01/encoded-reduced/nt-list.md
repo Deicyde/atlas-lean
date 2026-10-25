@@ -16,7 +16,7 @@ right-hand-side nonterminals of the productions.
 
 ## Proof depends on
 
-- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
 
 ## Sources
 

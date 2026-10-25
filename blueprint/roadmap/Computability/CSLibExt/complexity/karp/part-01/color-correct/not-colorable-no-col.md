@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Complexity.Karp.not_colorable_noCol
 ---
 
-# Not colorable no Col
+# The complete graph on four vertices is not 3-colorable
 
-The complete graph on four vertices is not 3-colorable.
+**The complete graph on four vertices is not 3-colorable.** The graph on the vertices
+$0, 1, 2, 3$ with an edge between every two distinct vertices has no proper coloring with
+$3$ colors.
 
 ## Depends on
 
-- [Edge Graph](../color/edge-graph.md)
+- [Graph of an edge list](../color/edge-graph.md)
 
 ## Sources
 

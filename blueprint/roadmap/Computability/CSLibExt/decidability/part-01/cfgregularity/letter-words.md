@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.letterWords
 ---
 
-# Letter Words
+# Words over $T$ in the reduction alphabet
 
-The words over the letters of `T`.
+**Words over $T$ in the reduction alphabet.** This is the language $T^*$ over the alphabet
+$T \sqcup \{\#, 0, 1\}$ of the reduction from universality to regularity: the words, including the
+empty word, all of whose letters lie in $T$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 
-- [Tl](tl.md)
+- [Alphabet letters in the extended alphabet](tl.md)
 
 ## Sources
 

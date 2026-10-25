@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.genStep_generating_subset
 ---
 
-# The emptiness test
+# The emptiness test for context-free grammars
 
-**The emptiness test**: the start nonterminal derives no terminal word. -/
+**The emptiness test for context-free grammars.** For an encoded grammar $g$, the test returns
+true exactly when the start nonterminal of $g$ is not among the generating nonterminals of $g$. -/
 def isEmptyB (g : EncodedCFG T) : Bool :=
   !memB g.generating g.start
 
@@ -17,15 +18,15 @@ def isEmptyB (g : EncodedCFG T) : Bool :=
 ## Depends on
 
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Gen Step](gen-step.md)
-- [Generating](generating.md)
+- [One round of the generating-nonterminal computation](gen-step.md)
+- [Generating nonterminals](generating.md)
 
 ## Proof depends on
 
-- [Iterate closed](../primrec-list/iterate-closed.md)
-- [Mem B](../primrec-list/mem-b.md)
-- [Rule Ok](rule-ok.md)
-- [Sym Ok](sym-ok.md)
+- [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
+- [Acceptable productions](rule-ok.md)
+- [Acceptable symbols](sym-ok.md)
 
 ## Sources
 

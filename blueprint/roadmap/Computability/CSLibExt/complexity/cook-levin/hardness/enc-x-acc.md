@@ -18,12 +18,12 @@ the assembled formula.
 ## Depends on
 
 - [Tableau encoding with a chosen accept symbol](enc-x.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 
 - [Effective alphabets with an adjoined accept symbol](sym-set-x.md)
-- [B2's `Γfin k`](../situation/part-02/sym-set.md)
+- [Pushable and input symbols of a stack](../situation/part-02/sym-set.md)
 
 ## Sources
 

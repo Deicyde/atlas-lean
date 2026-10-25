@@ -5,15 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.φT
 ---
 
-# ΦT
+# Renaming the tokenizer's labels
 
-Tokenizer labels: accept starts the emitter, reject writes `noOut`.
+**Renaming the tokenizer's labels.** For an emitter $E$, the tokenizer's accepting label goes
+to the start label of $E$, its rejecting label goes to the label of the combined machine that
+writes the output $E$ fixes for undecodable input, and every other tokenizer label goes to its own
+copy among the combined machine's labels.
 
 ## Depends on
 
 - [Emitter](emitter.md)
-- [L](l.md)
-- [Lab](../../../sat-tokenizer/lab.md)
+- [Labels of the tokenize-then-emit machine](l.md)
+- [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
 
 ## Sources
 

@@ -29,7 +29,7 @@ encoding of the one-hot cell family for $T$ and $H$ followed by $o$.
 - [Constant of the one-hot time bound](oh-c.md)
 - [The one-hot cell family](oh-family.md)
 - [The one-hot generator](prog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on

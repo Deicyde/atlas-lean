@@ -17,27 +17,27 @@ stack cap $H$.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [The transition clause family](../family/family.md)
 - [The cell-shift clause family](../shift/sh-family.md)
-- [N](../situation/part-01/n.md)
+- [Number of situations](../situation/part-01/n.md)
 - [The accept family](../situation/part-07/acc-family.md)
-- [Cn](../situation/part-02/cn.md)
-- [The init family](../situation/part-06/init-family.md)
-- [La](../situation/part-01/la.md)
-- [Layout](../situation/part-01/layout.md)
-- [Na](../situation/part-01/na.md)
-- [Pl](../situation/part-02/pl.md)
-- [Pu](../situation/part-02/pu.md)
-- [Sa](../situation/part-01/sa.md)
-- [Wa](../situation/part-01/wa.md)
-- [Cap H](../situation/part-05/cap-h.md)
-- [Depth](../situation/part-01/depth.md)
-- [Clause](../../dense-sat/clause.md)
+- [Consumption table of a situation](../situation/part-02/cn.md)
+- [The row-0 init family of an encoding](../situation/part-06/init-family.md)
+- [Label/state code of a situation](../situation/part-01/la.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Next label/state code of a situation](../situation/part-01/na.md)
+- [Push-count table of a situation](../situation/part-02/pl.md)
+- [Pushed-symbol table of a situation](../situation/part-02/pu.md)
+- [Position of a situation's variable](../situation/part-01/sa.md)
+- [Window symbol code of a situation](../situation/part-01/wa.md)
+- [Stack cap](../situation/part-05/cap-h.md)
+- [Window depth of a machine](../situation/part-01/depth.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

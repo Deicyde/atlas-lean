@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitHam.frameSites
 ---
 
-# Frame Sites
+# Frame copy sites of the HAMPATH emitter
 
-The frame sites.
+**Frame copy sites of the HAMPATH emitter.** The list of the eight copy sites of a diamond's
+frame arcs, in order: the source site and then the target site of the first, second, third and
+fourth frame arc.
 
 ## Depends on
 
-- [Site](../ham-path-emit-machine/site.md)
+- [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
 
 ## Sources
 

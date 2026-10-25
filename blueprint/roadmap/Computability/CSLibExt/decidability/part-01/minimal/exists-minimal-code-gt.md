@@ -8,16 +8,17 @@ lean: Cslib.Decidability.exists_minimalCode_gt
 
 # Minimal codes are unbounded
 
-**Minimal codes are unbounded.**
+**Minimal codes are unbounded.** For every natural number $N$ there is a minimal code $D$ of a
+partial recursive function whose encoding as a natural number is greater than $N$.
 
 ## Depends on
 
-- [Minimal Code](minimal-code.md)
+- [Minimal codes](minimal-code.md)
 
 ## Proof depends on
 
-- [Exists code dom singleton](exists-code-dom-singleton.md)
-- [Exists minimal Code dom](exists-minimal-code-dom.md)
+- [Codes with singleton domain](exists-code-dom-singleton.md)
+- [Every language of a code has a minimal code](exists-minimal-code-dom.md)
 
 ## Sources
 

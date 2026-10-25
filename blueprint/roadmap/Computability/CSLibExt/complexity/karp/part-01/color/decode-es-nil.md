@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Karp.decodeEs_nil
 ---
 
-# Decode Es nil
+# Decoding the empty input
 
-The empty edge list.
+**Decoding the empty input.** The edge-list decoder, applied to the empty bit string,
+succeeds and returns the empty edge list.
 
 ## Depends on
 
-- [Decode Es](decode-es.md)
+- [Edge-list decoder](decode-es.md)
 
 ## Proof depends on
 
-- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary number shortens the input](length-lt-of-read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

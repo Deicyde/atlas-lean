@@ -6,50 +6,52 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.run
 ---
 
-# The marking machine
+# Running time and output of the marking machine
 
-**The marking machine.** From `start` with `x` on `X` (as `Sym.bit`s) and the other stacks
-empty, `prog` reaches `done` with `[pathCheck x]` on `O` within `8 (|x| + 1)⁴` steps.
+**Running time and output of the marking machine.** For every bit string $x$, the marking
+machine started at its start label, with any flag, with $x$ on the input stack $X$ as bit symbols
+and every other stack empty, reaches the label `done` within $8(|x| + 1)^4$ steps, with the
+output stack $O$ holding exactly one entry: the answer of the marking algorithm on $x$.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Γ](untitled.md)
-- [Path Check](../path/path-check.md)
-- [Sym](../sat-verifier-spec/sym.md)
+- [The marking machine for PATH](prog.md)
+- [Start label of the PATH marking machine](start.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
+- [The marking algorithm for PATH](../path/path-check.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Decode E](../karp/part-01/color/decode-e.md)
-- [Decode Es](../karp/part-01/color/decode-es.md)
-- [Decode Es edge Bits](../karp/part-01/color/decode-es-edge-bits.md)
-- [Edge Bits](../karp/part-01/color/edge-bits.md)
-- [Edge Bits of decode Es](../karp/part-01/color/edge-bits-of-decode-es.md)
-- [Fr](fr.md)
-- [Stmt](stmt.md)
-- [Bit Of drop](bit-of-drop.md)
-- [Fr add U](fr-add-u.md)
-- [One](one.md)
-- [Passes run](passes-run.md)
-- [Path Check eq](path-check-eq.md)
-- [Read S none](read-s-none.md)
-- [Read S some](read-s-some.md)
-- [Set W run](set-w-run.md)
-- [Set replicate](set-replicate.md)
-- [Step Aux walk S nil](step-aux-walk-s-nil.md)
-- [Val run](val-run.md)
-- [Walk S](walk-s.md)
-- [Walk run](walk-run.md)
-- [Decode P](../path/decode-p.md)
-- [Init Marks](../path/init-marks.md)
-- [Mark Pass](../path/mark-pass.md)
-- [Reach Marks](../path/reach-marks.md)
-- [Bit?](../sat-verifier-spec/bit.md)
-- [Read Unary Length](../../cook-levin/read-unary-length.md)
+- [Decoding a graph](../karp/part-01/color/decode-e.md)
+- [Edge-list decoder](../karp/part-01/color/decode-es.md)
+- [Decoding the bits of an edge list](../karp/part-01/color/decode-es-edge-bits.md)
+- [Bit encoding of an edge list](../karp/part-01/color/edge-bits.md)
+- [The edge-list decoder succeeds only on edge bits](../karp/part-01/color/edge-bits-of-decode-es.md)
+- [Agreement off a set of stacks](fr.md)
+- [Statements of the PATH marking machine](stmt.md)
+- [Reading the mark of vertex $j$](bit-of-drop.md)
+- [The frame of a read](fr-add-u.md)
+- [The counter unit of the PATH marking machine](one.md)
+- [The pass loop of the marking machine](passes-run.md)
+- [The marking algorithm reads the mark of the target](path-check-eq.md)
+- [Reading a cut-off unary number](read-s-none.md)
+- [Reading a unary number](read-s-some.md)
+- [Walking to a vertex and setting its mark](set-w-run.md)
+- [Initial marks by setting one entry](set-replicate.md)
+- [A walk step with an exhausted counter](step-aux-walk-s-nil.md)
+- [Validation phase of the PATH marking machine](val-run.md)
+- [Walk step of the PATH marking machine](walk-s.md)
+- [Walking along the marks of the PATH marking machine](walk-run.md)
+- [Decoding a PATH instance](../path/decode-p.md)
+- [Initial marks](../path/init-marks.md)
+- [One marking pass](../path/mark-pass.md)
+- [Reach marks](../path/reach-marks.md)
+- [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
+- [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [Run](../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../MathlibExt/turing-machine/program/single.md)
 - [Add U](../../../MathlibExt/turing-machine/program/add-u.md)

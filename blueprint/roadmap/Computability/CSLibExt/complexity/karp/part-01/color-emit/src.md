@@ -5,10 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.Src
 ---
 
-# Src
+# Counters read by copy sites
 
-The counters a copy site reads: the next vertex, the OR output, an earlier literal
-vertex.
+**Counters read by copy sites.** The three counters a copy site of the 3-coloring emitter
+can read: the next free vertex, the current OR output, and an earlier literal vertex.
 
 ## Depends on
 

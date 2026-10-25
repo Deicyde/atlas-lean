@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.om_agree
 ---
 
-# Agreement
+# Agreement under oral messages (IC1)
 
-**Agreement** (IC1 of Theorem 1, Lamport–Shostak–Pease). With more than `3 m` generals and
-at most `m` traitors, any two loyal lieutenants decide the same value under `OM(m)`.
+**Agreement under oral messages (IC1).** Let a commander $c$ run $\mathrm{OM}(m)$ with a value
+$v$ and any list of superiors, sending to a finite set $S$ of lieutenants with $c \notin S$. If
+there are more than $3m$ generals, that is $3m < |S| + 1$, and at most $m$ of the generals in
+$S \cup \{c\}$ are traitors, then, whatever the traitors send, any two loyal lieutenants
+$p, p' \in S$ decide the same value.
+
+This is condition IC1 of Theorem 1 of Lamport–Shostak–Pease.
 
 ## Depends on
 
-- [Om](om.md)
+- [The oral messages algorithm](om.md)
 
 ## Proof depends on
 
-- [Majority](majority.md)
-- [Lemma 1](om-eq-of-loyal.md)
-- [Validity](om-valid.md)
-- [Received](received.md)
+- [Majority of a multiset](majority.md)
+- [A loyal commander is obeyed under oral messages](om-eq-of-loyal.md)
+- [Validity under oral messages (IC2)](om-valid.md)
+- [Value received from a commander](received.md)
 
 ## Sources
 

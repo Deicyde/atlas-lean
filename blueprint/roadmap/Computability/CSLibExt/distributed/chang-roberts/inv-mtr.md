@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Distributed.ChangRoberts.inv_mtr
 ---
 
-# Inv mtr
+# The Chang–Roberts invariant is preserved along runs
 
-Multistep transitions preserve the invariant.
+**The Chang–Roberts invariant is preserved along runs.** For every assignment of identifiers,
+if the invariant holds in a state $s$ and the state $t$ is reached from $s$ by delivering messages
+along some schedule of receiving processes (a multistep transition of the algorithm's labelled
+transition system), then the invariant holds in $t$.
 
 ## Depends on
 
-- [Inv](inv.md)
-- [State](state.md)
-- [Lts](lts.md)
+- [The Chang–Roberts invariant](inv.md)
+- [Chang–Roberts global states](state.md)
+- [The Chang–Roberts transition system](lts.md)
 
 ## Proof depends on
 
-- [Deliver](deliver.md)
-- [Gap](gap.md)
-- [Succ](succ.md)
-- [Travelled](travelled.md)
-- [Travelled succ](travelled-succ.md)
+- [Delivering a message in the Chang–Roberts ring](deliver.md)
+- [Forward distance on the ring](gap.md)
+- [Successor on the Chang–Roberts ring](succ.md)
+- [Distance travelled by a message](travelled.md)
+- [Forwarding adds one link](travelled-succ.md)
 
 ## Sources
 

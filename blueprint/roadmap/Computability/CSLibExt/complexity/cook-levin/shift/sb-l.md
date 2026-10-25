@@ -20,7 +20,7 @@ pushed-fill setup.
 
 ## Proof depends on
 
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 
 ## Sources
 

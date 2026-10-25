@@ -6,9 +6,13 @@ proof: formalized
 lean: Cslib.Complexity.Karp.satDec_eq_col3Dec_reduceCol
 ---
 
-# Sat Dec eq col3 Dec reduce Col
+# Correctness of the reduction from SAT to 3-coloring
 
-SAT ≤ 3-COLOR on formulas: `φ` is satisfiable iff its graph is 3-colorable. -/
+**Correctness of the reduction from SAT to 3-coloring.** A CNF formula $\varphi$ is satisfiable
+if and only if the graph built from $\varphi$ by the Garey–Johnson–Stockmeyer construction is
+3-colorable. Here, writing $n$ for the number of vertices the construction allocates, the graph
+has vertex set $\{0, \dots, n - 1\}$, and two distinct vertices are adjacent when the
+construction emits an edge between them in either order. -/
 theorem cnfSat_iff_colorable (φ : CNF) :
     CNFSat φ ↔ (edgeGraph (colSt φ).next (colSt φ).em).Colorable 3 :=
   ⟨colorable_of_cnfSat, cnfSat_of_colorable⟩
@@ -17,27 +21,27 @@ theorem cnfSat_iff_colorable (φ : CNF) :
 
 ## Depends on
 
-- [Col3 Dec](../color/col3-dec.md)
-- [Reduce Col](../color/reduce-col.md)
-- [Sat Dec](../../../../cook-levin/sat-dec.md)
+- [3-COLOR](../color/col3-dec.md)
+- [The SAT to 3-COLOR reduction map on bit strings](../color/reduce-col.md)
+- [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
 
 ## Proof depends on
 
 - [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
-- [Sat Dec of decode CNF eq none](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
-- [Col St](../color/col-st.md)
-- [Cnf Sat iff colorable](cnf-sat-iff-colorable.md)
-- [Col St](../color/col-st-2.md)
-- [Col St em lt](col-st-em-lt.md)
-- [Edge Graph](../color/edge-graph.md)
-- [Encode E](../color/encode-e.md)
-- [No Col](../color/no-col.md)
-- [Not colorable no Col](not-colorable-no-col.md)
-- [To Col](../color/to-col.md)
-- [Decode CNF](../../../../cook-levin/decode-cnf.md)
-- [Decode CNF eq some iff](../../../../cook-levin/decode-cnf-eq-some-iff.md)
-- [Encode CNF](../../../../cook-levin/encode-cnf.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Unparsable input is not in SAT](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
+- [Correctness of the reduction from SAT to 3-coloring](cnf-sat-iff-colorable.md)
+- [The SAT-to-3-COLOR graph construction](../color/col-st-2.md)
+- [The construction's edges lie below its vertex count](col-st-em-lt.md)
+- [Graph of an edge list](../color/edge-graph.md)
+- [Bit-string encoding of a graph](../color/encode-e.md)
+- [The complete graph on four vertices as a bit string](../color/no-col.md)
+- [The complete graph on four vertices is not 3-colorable](not-colorable-no-col.md)
+- [The 3-COLOR instance of a CNF formula](../color/to-col.md)
+- [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
+- [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
+- [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 

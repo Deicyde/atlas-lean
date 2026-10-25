@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Kolmogorov.pad
 ---
 
-# Pad
+# Padding a string to a given length
 
-Pad a string `p` with `|p| < n` to length `n` as `0…0 1 p`.
+**Padding a string to a given length.** For a natural number $n$ and a binary string $p$, the
+padding of $p$ to length $n$ is the string $0^k 1 p$ with $k = \max(n - 1 - |p|, 0)$; when
+$|p| < n$ it has length $n$.
 
 ## Depends on
 

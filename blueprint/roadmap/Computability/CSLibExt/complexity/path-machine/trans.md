@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.Fr.trans
 ---
 
-# Trans
+# Frames compose
 
-Frames compose, within a common list of stacks.
+**Frames compose.** Let $A$, $B$, $C$ be lists of stacks such that every stack in $A$ or in
+$B$ is in $C$. If stacks $S_2$ agree with $S_1$ on every stack outside $A$, and $S_3$ agree with
+$S_2$ on every stack outside $B$, then $S_3$ agree with $S_1$ on every stack outside $C$.
 
 ## Depends on
 
-- [Fr](fr.md)
+- [Agreement off a set of stacks](fr.md)
 - [K](k.md)
-- [Γ](untitled.md)
+- [Stack alphabets of the PATH marking machine](untitled.md)
 
 ## Sources
 

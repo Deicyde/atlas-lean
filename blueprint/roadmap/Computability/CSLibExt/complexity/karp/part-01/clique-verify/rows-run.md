@@ -6,29 +6,35 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.rows_run
 ---
 
-# Rows run
+# All rows of the clique verifier's walk
 
-All rows: from `walk true` with the vertices `rs` on `V` (last on top), `T` empty and the
-pair bits `bs` on `X`, the walk reaches `yes` iff `rowsOk m rs bs`.
+**All rows of the clique verifier's walk.** Let $m$ be a mode, $r$ and $b$ lists of
+bits, $v$ a state and $S$ stack contents in which the vertex stack $V$ holds, from the top,
+the bits of the reverse of $r$ (so the last entry of $r$ is on top), the scratch stack $T$
+is empty, and the input stack $X$ holds the bits $b$. Then there are a state $v'$ and stack
+contents $S'$ such that within at most $|r|(2|r| + 2) + 1$ steps the verifier program of
+mode $m$ goes from label walk(true) with state $v$ and stacks $S$ to state $v'$ and stacks
+$S'$ at the accepting label if the row-by-row check of $r$ against $b$ holds for $m$, and
+at the rejecting label otherwise.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mode](mode.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Modes of the clique verifier](mode.md)
 - [Prog](prog.md)
-- [Rows Ok](rows-ok.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [The row-by-row check of the clique verifier](rows-ok.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Free](free.md)
-- [Sat](sat.md)
-- [Row run](row-run.md)
-- [Run one](run-one.md)
-- [Walk Z](walk-z.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Vertices that settle their pairs alone](free.md)
+- [The pair condition left to the later vertex](sat.md)
+- [One row of the clique verifier's walk](row-run.md)
+- [One step of a clique-verifier program to a known label](run-one.md)
+- [Rest of a walk step of the clique verifier](walk-z.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 

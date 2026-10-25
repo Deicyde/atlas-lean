@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.binCNF
 ---
 
-# Bin CNF
+# Binary-index translation of a dense formula
 
-The translated formula.
+**Binary-index translation of a dense formula.** The translation of a dense CNF formula
+$\varphi$ replaces each clause $c$ of $\varphi$, keeping their order, by its binary-index
+translation with offset $0$: if $c$ has length $L$, each slot $j$ of $c$ holding a literal of
+polarity $b$ becomes the literal of polarity $b$ on variable $2^{L - 1 - j} - 1$, and absent slots
+are dropped.
 
 ## Depends on
 
-- [CNF](../dense-sat/cnf.md)
+- [Dense CNF formula](../dense-sat/cnf.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Clause](../dense-sat/clause.md)
-- [Bin Clause](bin-clause.md)
+- [Dense clause](../dense-sat/clause.md)
+- [Binary-index translation of a dense clause](bin-clause.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

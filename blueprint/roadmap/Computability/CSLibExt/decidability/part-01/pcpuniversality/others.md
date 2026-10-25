@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.Grammar.others
 ---
 
-# Others
+# The letters other than a given letter
 
-The letters other than `a`.
+**The letters other than a given letter.** For a letter $a$ of a finite alphabet with decidable
+equality, the list of all letters $b$ of the alphabet with $b \ne a$, in the order of a fixed
+enumeration of the alphabet.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [All Letters](all-letters.md)
+- [List of all letters](all-letters.md)
 
 ## Sources
 

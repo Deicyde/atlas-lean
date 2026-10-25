@@ -35,7 +35,7 @@ counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).
 - [At-most-one literals for a pair](amo-lits.md)
 - [Step budget for one one-hot clause](clause-b.md)
 - [The one-hot generator](prog.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -45,7 +45,7 @@ counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).
 - [One-hot generator: the label after a clause](next-c.md)
 - [One clause of the one-hot generator](clause-run.md)
 - [Literals of a one-hot clause kind](clits.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 

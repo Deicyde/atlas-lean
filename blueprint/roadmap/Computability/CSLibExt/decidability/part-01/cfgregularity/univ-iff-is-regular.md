@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Decidability.Regularity.univ_iff_isRegular
 ---
 
-# A grammar generates every word iff `regGrammar g` generates a regular language
+# A grammar is universal iff its regularity grammar generates a regular language
 
-**A grammar generates every word iff `regGrammar g` generates a regular language.**
+**A grammar is universal iff its regularity grammar generates a regular language.** Let $g$
+be an encoded context-free grammar over a finite alphabet $T$. Then $g$ generates every word over
+$T$ if and only if the regularity grammar of $g$ generates a regular language.
 
 ## Depends on
 
-- [Letter](letter.md)
-- [Reg Grammar](reg-grammar.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
+- [Grammar of the reduction from universality to regularity](reg-grammar.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
-- [Is Regular reg Lang iff](is-regular-reg-lang-iff.md)
-- [The language of `regGrammar g` is `regLang L(g)`](language-reg-grammar.md)
-- [Reg Lang](reg-lang.md)
+- [Regularity of the reduction language characterises universality](is-regular-reg-lang-iff.md)
+- [The language of the regularity grammar](language-reg-grammar.md)
+- [The target language of the regularity reduction](reg-lang.md)
 
 ## Sources
 

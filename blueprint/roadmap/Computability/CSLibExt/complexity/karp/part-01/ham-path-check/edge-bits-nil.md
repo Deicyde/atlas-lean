@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.edgeBits_nil
 ---
 
-# Edge Bits nil
+# Edge bits of the empty edge list
 
-No edges, no bits.
+**Edge bits of the empty edge list.** The edge-list bit encoding of the empty list of edges
+is the empty bit string.
 
 ## Depends on
 
-- [Edge Bits](../color/edge-bits.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
 
 ## Sources
 

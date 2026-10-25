@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reach Step](reach-step.md)
+- [One round of the DFA reachability search](reach-step.md)
 
 ## Sources
 

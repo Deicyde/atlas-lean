@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Machine.φT
 ---
 
-# ΦT
+# Tokenizer labels in the host machine
 
-Tokenizer labels in the host: accept starts the filter, reject cleans up with `false`.
+**Tokenizer labels in the host machine.** The map from labels of the tokenizer to labels of
+the host SAT verifier sends the tokenizer's accepting label to the start label of the embedded
+clause-length filter, its rejecting label to the cleanup label with answer false, and every
+other label $l$ to the host label that runs the tokenizer at $l$.
 
 ## Depends on
 
-- [HLab](hlab.md)
-- [Lab](../sat-tokenizer/lab.md)
+- [Labels of the SAT verifier host](hlab.md)
+- [Labels of the SAT tokenizer](../sat-tokenizer/lab.md)
 
 ## Proof depends on
 
-- [Lab](../karp/part-02/three-sat-filter/lab.md)
-- [Start](../karp/part-02/three-sat-filter/start.md)
+- [Labels of the 3SAT clause-length filter](../karp/part-02/three-sat-filter/lab.md)
+- [Start label of the filter](../karp/part-02/three-sat-filter/start.md)
 
 ## Sources
 

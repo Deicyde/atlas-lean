@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.Path.Machine.markPass_replicate
 ---
 
-# Mark Pass replicate
+# A pass sets no mark when none is set
 
-No mark is ever set when none is.
+**A pass sets no mark when none is set.** For all natural numbers $n$ and $k$ and every list
+$es$ of arcs of natural numbers, one pass of the marking algorithm with $n$ vertices over $es$
+(Mark Pass) maps the list of $k$ cleared marks to itself.
 
 ## Depends on
 
-- [Mark Pass](../path/mark-pass.md)
+- [One marking pass](../path/mark-pass.md)
 
 ## Proof depends on
 
-- [Get D ite](get-d-ite.md)
+- [A cleared mark or nothing reads as cleared](get-d-ite.md)
 
 ## Sources
 

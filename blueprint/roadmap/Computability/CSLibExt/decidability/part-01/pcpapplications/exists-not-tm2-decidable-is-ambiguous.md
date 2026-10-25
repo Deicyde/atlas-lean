@@ -8,11 +8,17 @@ lean: Cslib.Decidability.exists_not_tm2Decidable_isAmbiguous
 
 # Whether a context-free grammar is ambiguous is undecidable
 
-**Whether a context-free grammar is ambiguous is undecidable** (`AMBIG_CFG`).
+**Whether a context-free grammar is ambiguous is undecidable.** There is an alphabet $T$,
+with decidable equality and a primitive recursive encoding into $\mathbb{N}$, such that no
+multi-stack machine decides (in the sense of TM2-decidability), for an encoded context-free
+grammar $G$ over $T$, whether $G$ is ambiguous, that is, whether some word has two different
+leftmost derivations from the start nonterminal of $G$.
+
+$T$ is not required to be finite. This is Sipser's problem $\mathit{AMBIG}_{\mathit{CFG}}$.
 
 ## Depends on
 
-- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../basic/tm2-decidable.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
@@ -21,10 +27,10 @@ lean: Cslib.Decidability.exists_not_tm2Decidable_isAmbiguous
 ## Proof depends on
 
 - [PCP many-one reduces to ambiguity of context-free grammars](../pcpambiguity/many-one-reducible-pcp-is-ambiguous.md)
-- [Domino](../pcp/domino.md)
-- [PCP](../pcp/pcp.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
+- [The Post correspondence problem](../pcp/pcp.md)
 - [The Post correspondence problem is undecidable](../pcpundecidable/exists-not-tm2-decidable-pcp.md)
-- [Tm2 Decidable of many One Reducible](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
+- [Decidability transfers along mapping reductions](../../part-02/undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources
 

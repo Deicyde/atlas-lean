@@ -6,28 +6,29 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.col3Dec_iff
 ---
 
-# 3-COLOR is verified by `colCheck`
+# 3-COLOR is verified by the witness check
 
-**3-COLOR is verified by `colCheck`**, with witnesses at most twice as long as the input.
+**3-COLOR is verified by the witness check.** A bit string $x$ is in 3-COLOR iff some bit
+string $w$ of length at most $2|x|$ is accepted together with $x$ by the 3-COLOR verifier.
 
 ## Depends on
 
-- [Col Check](col-check.md)
-- [Col3 Dec](../color/col3-dec.md)
+- [The 3-COLOR verifier](col-check.md)
+- [3-COLOR](../color/col3-dec.md)
 
 ## Proof depends on
 
-- [Col](col.md)
-- [Col Check iff](col-check-iff.md)
-- [Col flat](col-flat.md)
+- [Color code of a vertex in a witness](col.md)
+- [Acceptance condition of the 3-COLOR verifier](col-check-iff.md)
+- [Color codes of flattened pairs](col-flat.md)
 - [3-colorability by witness bits](colorable-iff.md)
-- [Flat](flat.md)
-- [Length flat](length-flat.md)
-- [Ok Col](ok-col.md)
-- [Edge Bits](../color/edge-bits.md)
-- [Edge Graph](../color/edge-graph.md)
-- [Encode E](../color/encode-e.md)
-- [Encode E eq](../color/encode-e-eq.md)
+- [Flattening pairs of bits](flat.md)
+- [Length of a flattening](length-flat.md)
+- [Valid color code](ok-col.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
+- [Graph of an edge list](../color/edge-graph.md)
+- [Bit-string encoding of a graph](../color/encode-e.md)
+- [Graph encoding as vertex count plus edge bits](../color/encode-e-eq.md)
 
 ## Sources
 

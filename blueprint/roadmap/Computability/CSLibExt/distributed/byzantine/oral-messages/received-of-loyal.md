@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.OralMessages.received_of_loyal
 ---
 
-# Received of loyal
+# A loyal commander sends its value
 
-A loyal commander sends its value.
+**A loyal commander sends its value.** If the commander $c$ is loyal, then for every value $v$,
+every list of superiors of $c$ and every general $p$, the value $p$ receives from $c$ is $v$.
 
 ## Depends on
 
-- [Received](received.md)
+- [Value received from a commander](received.md)
 
 ## Sources
 

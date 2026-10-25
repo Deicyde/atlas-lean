@@ -5,11 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Emit3.litCl
 ---
 
-# Lit Cl
+# Output clause of one literal
 
-The output clause of a literal `l` walked with counter `z`: `l` renamed, preceded by
-`(fresh z', false)` unless it is the last literal walked in its clause (`g`), and followed by
-`(fresh z, true)` unless it is the first walked (`f`); `z'` is the counter after `l`.
+**Output clause of one literal.** For Booleans $f$ and $g$, a counter $z$ and a literal
+$l = (n, b)$, let $z' = z$ if $f$ holds and $z' = z + 1$ otherwise. The output clause of $l$ is
+the clause consisting of, in this order: the literal $(2^{z'+1} + 1, \text{false})$ unless $g$
+holds, then the renamed literal $(2n, b)$, then the literal $(2^{z+1} + 1, \text{true})$ unless
+$f$ holds. Here $f$ tells whether $l$ is the first literal walked in its clause, $g$ whether it
+is the last one, and $z'$ is the counter after $l$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ The output clause of a literal `l` walked with counter `z`: `l` renamed, precede
 
 ## Proof depends on
 
-- [Fresh](../three-sat/fresh.md)
-- [Ren Lit](../three-sat/ren-lit.md)
+- [Fresh variable indices](../three-sat/fresh.md)
+- [Renaming a literal](../three-sat/ren-lit.md)
 
 ## Sources
 

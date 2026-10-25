@@ -18,16 +18,16 @@ lean: Cslib.Language.EncodedCFG.primrec_reduce
 
 ## Proof depends on
 
-- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
 - [Deletions](deletions.md)
 - [Eps Elim](eps-elim.md)
-- [Gen Step](../../../../decidability/part-01/context-free/gen-step.md)
-- [Generating](../../../../decidability/part-01/context-free/generating.md)
+- [One round of the generating-nonterminal computation](../../../../decidability/part-01/context-free/gen-step.md)
+- [Generating nonterminals](../../../../decidability/part-01/context-free/generating.md)
 - [No Terminals](no-terminals.md)
 - [Nt List](nt-list.md)
 - [Nullable](nullable.md)
-- [Rule Ok](../../../../decidability/part-01/context-free/rule-ok.md)
+- [Acceptable productions](../../../../decidability/part-01/context-free/rule-ok.md)
 - [Unit Elim](unit-elim.md)
 - [Unit Reach](unit-reach.md)
 - [Unit Step](unit-step.md)

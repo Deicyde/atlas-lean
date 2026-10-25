@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.row_pos_inj
 ---
 
-# Row pos inj
+# Uniqueness of quotient and remainder
 
-Positions `t·W + r` with `r < W` determine `(t, r)`.
+**Uniqueness of quotient and remainder.** Let $W$, $t$, $t'$, $r$ and $r'$ be natural
+numbers with $r < W$ and $r' < W$. If $tW + r = t'W + r'$, then $t = t'$ and $r = r'$.
 
 ## Depends on
 

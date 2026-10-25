@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.Karp.hamVerifyComp
 ---
 
-# Ham Verify Comp
+# The HAMPATH verifier as a host component
 
-`HamVerify` as a host component.
+**The HAMPATH verifier as a host component.** The component machine whose program and labels
+are those of the HAMPATH verifier machine, whose stacks are the twelve stacks of that machine (the
+input $X$, the witness $W$, the counters $S, T, N, C, A, B$, the save stacks $E, Z$ and the scratch
+stacks $R, Q$), each over the symbol alphabet of the SAT verifier.
 
 ## Depends on
 
-- [Comp](../../../host/comp.md)
+- [Component machine](../../../host/comp.md)
 
 ## Proof depends on
 
-- [CI](../../part-02/ham-path-verify/ci.md)
-- [K](../../part-02/ham-path-verify/k.md)
-- [Lab](../../part-02/ham-path-verify/lab.md)
+- [Counter comparisons of the HAMPATH verifier](../../part-02/ham-path-verify/ci.md)
+- [Stacks of the Hamiltonian path verifier](../../part-02/ham-path-verify/k.md)
+- [Labels of the Hamiltonian path verifier](../../part-02/ham-path-verify/lab.md)
 - [Prog](../../part-02/ham-path-verify/prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

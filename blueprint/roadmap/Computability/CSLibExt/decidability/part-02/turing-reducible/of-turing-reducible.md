@@ -8,11 +8,13 @@ lean: Cslib.Decidability.ComputablePred.of_turingReducible
 
 # Decidability transfers down Turing reducibility
 
-**Decidability transfers down Turing reducibility.**
+**Decidability transfers down Turing reducibility.** Let $p$ and $q$ be sets of natural numbers
+such that the characteristic function of $p$ is Turing reducible to the characteristic function of
+$q$. If $q$ is decidable, then $p$ is decidable.
 
 ## Depends on
 
-- [Char Fun](char-fun.md)
+- [Characteristic function of a set of naturals](char-fun.md)
 
 ## Proof depends on
 

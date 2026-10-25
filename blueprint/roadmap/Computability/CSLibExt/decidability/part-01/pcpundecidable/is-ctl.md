@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.IsCtl
 ---
 
-# Is Ctl
+# Control symbols
 
-The state and halting symbols.
+**Control symbols.** A symbol of the rewriting system simulating a single-tape Turing machine
+is a control symbol if it is a state symbol or the halting symbol $H$; tape symbols and the end
+markers $\vdash$ and $\dashv$ are not control symbols.
 
 ## Depends on
 
-- [TMSym](tmsym.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Sources
 

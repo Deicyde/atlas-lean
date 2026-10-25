@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.pairVals_cons
 ---
 
-# Pair Vals cons
+# Chosen-flag pairs of a list with a new head
 
-Row `0` of `a :: s` pairs `a` with the later vertices, last first.
+**Chosen-flag pairs of a list with a new head.** For a Boolean $a$ and a list
+$s = (s_0, \dots, s_{\ell - 1})$ of Booleans, the chosen-flag pairs of the list
+$(a, s_0, \dots, s_{\ell - 1})$ are $(a, s_{\ell - 1}), (a, s_{\ell - 2}), \dots, (a, s_0)$,
+followed by the chosen-flag pairs of $s$.
 
 ## Depends on
 
-- [Pair Vals](pair-vals.md)
+- [Chosen-flag pairs](pair-vals.md)
 
 ## Proof depends on
 
-- [Map get D range](map-get-d-range.md)
+- [Reading a list at every index](map-get-d-range.md)
 - [Pairs succ](pairs-succ.md)
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

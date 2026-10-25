@@ -12,7 +12,7 @@ lean: MetaMathlibExt.Complexity.NPComplete.ExactCoverBy3Sets.exactCoverBy3Sets_n
 
 ## Depends on
 
-- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Exact Cover By3 Sets Dec](exact-cover-by3-sets-dec.md)
 - [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)

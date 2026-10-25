@@ -12,14 +12,14 @@ Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`).
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [Clause Toks](../sat-verifier-spec/clause-toks.md)
-- [Encode Clause](../../cook-levin/encode-clause.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Tokens of a clause](../sat-verifier-spec/clause-toks.md)
+- [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Clause Toks length le](../sat-verifier-spec/clause-toks-length-le.md)
+- [A clause has at most as many tokens as code bits](../sat-verifier-spec/clause-toks-length-le.md)
 
 ## Sources
 

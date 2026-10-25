@@ -8,16 +8,16 @@ lean: Cslib.Decidability.not_tm2Decidable_halting
 
 # The halting problem is undecidable by multi-stack machines
 
-**The halting problem is undecidable by multi-stack machines**: no `FinTM2` decides whether
-a partial recursive code halts on input `n`.
+**The halting problem is undecidable by multi-stack machines.** For every $n \in \mathbb{N}$,
+no multi-stack machine decides whether a partial recursive code halts on input $n$.
 
 ## Depends on
 
-- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+- [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
 
 ## Proof depends on
 
-- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
+- [Multi-stack decidable predicates are exactly the computable predicates](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.Regularity.bitSet
 ---
 
-# Bit Set
+# Single-bit words
 
-The one-letter words over the bits.
+**Single-bit words.** Over the alphabet consisting of the letters of $T$, a separator $\#$
+and two bits $0$ and $1$, the single-bit words form the language $\{0, 1\}$ whose only words are
+the one-letter words $0$ and $1$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 
 ## Proof depends on
 
-- [Bl](bl.md)
+- [Bits as letters](bl.md)
 
 ## Sources
 

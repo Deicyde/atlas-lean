@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.toCol
 ---
 
-# To Col
+# The 3-COLOR instance of a CNF formula
 
-The 3-COLOR instance of a formula.
+**The 3-COLOR instance of a CNF formula.** Run the gadget construction on a CNF formula
+$\varphi$; it ends with a next free vertex $N$ and a list of emitted edges. The 3-COLOR instance
+of $\varphi$ is the graph encoding of the number $N$ and the emitted edges in reverse order.
 
 ## Depends on
 
@@ -15,9 +17,9 @@ The 3-COLOR instance of a formula.
 
 ## Proof depends on
 
-- [Col St](col-st.md)
-- [Col St](col-st-2.md)
-- [Encode E](encode-e.md)
+- [State of the SAT-to-3-COLOR construction](col-st.md)
+- [The SAT-to-3-COLOR graph construction](col-st-2.md)
+- [Bit-string encoding of a graph](encode-e.md)
 
 ## Sources
 

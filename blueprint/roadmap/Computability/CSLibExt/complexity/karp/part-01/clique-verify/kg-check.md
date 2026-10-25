@@ -5,19 +5,25 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.kgCheck
 ---
 
-# Kg Check
+# The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER
 
-The verifier: `w`'s first `n` bits choose the vertices.
+**The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER.** For a mode $m$, an input
+$x$ and a witness $w$ (bit lists), the verifier rejects if $x$ does not decode to a triple
+$(k, n, \mathit{bits})$. Otherwise it accepts if and only if $\mathit{bits}$ has one bit per
+pair $(i, j)$ with $i < j < n$, $w$ has at least $n$ bits, exactly $k$ of the first $n$ bits of
+$w$ are set, and for every pair $(i, j)$, matched with its bit $b$ in the encoding order of the
+pairs, the pair condition of $m$ holds for $b$, $w_i$ and $w_j$. So the first $n$ bits of $w$
+choose the vertices.
 
 ## Depends on
 
-- [Mode](mode.md)
+- [Modes of the clique verifier](mode.md)
 
 ## Proof depends on
 
-- [Ok](ok.md)
-- [Decode KG](../clique/decode-kg.md)
-- [Pairs](../clique/pairs.md)
+- [Pair condition of the clique verifier](ok.md)
+- [Decoding a graph instance](../clique/decode-kg.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

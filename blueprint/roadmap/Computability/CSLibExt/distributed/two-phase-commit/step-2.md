@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.Reachable.step
 ---
 
-# Step
+# Reachable states are closed under steps
 
-A step from a reachable state reaches a reachable state.
+**Reachable states are closed under steps.** If a global state $s$ of the two-phase commit
+protocol is reachable and some action takes $s$ to $t$ in one protocol step, then $t$ is
+reachable.
 
 ## Depends on
 
-- [Action](action.md)
-- [Reachable](reachable.md)
-- [State](state.md)
-- [Step](step.md)
+- [Two-phase commit actions](action.md)
+- [Reachable states of two-phase commit](reachable.md)
+- [Global states of two-phase commit](state.md)
+- [Transitions of two-phase commit](step.md)
 
 ## Proof depends on
 
-- [Initial](initial.md)
-- [Lts](lts.md)
+- [Initial state of two-phase commit](initial.md)
+- [Two-phase commit as a transition system](lts.md)
 
 ## Sources
 

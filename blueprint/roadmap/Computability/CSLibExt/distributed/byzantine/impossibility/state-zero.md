@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Distributed.Byzantine.Impossibility.OralProtocol.state_zero
 ---
 
-# State zero
+# The start of an execution
 
-Every general starts from its initial state.
+**The start of an execution.** In the execution of an oral-message protocol $P$ with
+commander $c$, order $v$, any set of traitors and any traitor behaviour, every general is in
+its initial state after $0$ rounds: the commander in the initial state given by the order $v$,
+and every other general in its order-independent initial state.
 
 ## Depends on
 
-- [Oral Protocol](oral-protocol.md)
-- [Init State](init-state.md)
-- [State](state.md)
+- [Oral-message protocol](oral-protocol.md)
+- [Initial state of a general](init-state.md)
+- [Executions of an oral-message protocol](state.md)
 
 ## Sources
 

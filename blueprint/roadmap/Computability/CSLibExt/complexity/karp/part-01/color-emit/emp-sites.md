@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.empSites
 ---
 
-# Emp Sites
+# Copy sites of the empty clause
 
-The empty clause: the vertex `N` joined to the palette.
+**Copy sites of the empty clause.** The list of copy sites $z_1, z_2, z_3$, which push the
+edges joining the next free vertex $N$ to the palette vertices $0$, $1$ and $2$.
 
 ## Depends on
 
-- [Site](site.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
 
 ## Sources
 

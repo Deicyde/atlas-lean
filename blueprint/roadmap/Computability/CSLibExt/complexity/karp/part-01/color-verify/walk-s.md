@@ -5,23 +5,27 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColVerify.walkS
 ---
 
-# Walk S
+# One step of the joint walk of the 3-COLOR verifier
 
-A step of the joint walk: take a unit off both `U` and `V` and pass a color. When one
-counter runs out first, its endpoint's color is the one passed, and the walk goes on towards
-the other endpoint; when both run out together the edge is a loop, which passes once its
-endpoint's color exists.
+**One step of the joint walk of the 3-COLOR verifier.** The statement pops the top symbol of
+each of the endpoint counters $U$ and $V$ (a pop from an empty counter leaves it empty) and then
+moves the next color code $(a, b)$ from the color stack $P$ onto the scratch stack $T$, rejecting
+if $P$ is empty. It continues at the joint walk again if both counters were nonempty; at the walk
+towards the endpoint of $U$, holding the color $(a, b)$, if only $U$ was nonempty (so $(a, b)$ is
+the color of the endpoint of $V$); at the walk towards the endpoint of $V$, holding $(a, b)$, if
+only $V$ was nonempty; and at the restoring label $\mathsf{back}$ if both were empty. In the last
+case the edge is a loop, which passes once its endpoint's color exists.
 
 ## Depends on
 
-- [Stmt](stmt.md)
+- [Statements of the 3-COLOR verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mv P](mv-p.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [Moving one color code in the 3-COLOR verifier](mv-p.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -8,35 +8,46 @@ lean: Cslib.Complexity.Host.vprog_run
 
 # The verifier host's run
 
-**The verifier host's run** on `x # w`: it halts with `[f x w]` on the output stack and every
-other stack empty.
+**The verifier host's run.** Let $c$ be a component machine with stacks $c_X \ne c_W$, maps
+$g_X$ and $g_W$ from bits to the alphabets of $c_X$ and $c_W$, and labels $\mathit{start}$,
+$\mathit{yes}$ and $\mathit{no}$ with $\mathit{yes} \ne \mathit{no}$, where the program halts at
+$\mathit{yes}$ and at $\mathit{no}$. Let $f$ assign a boolean to each pair of bit lists and let
+$p$ be a polynomial with natural number coefficients. Suppose that for all bit lists $x$ and $w$,
+the component started at $\mathit{start}$ with state false, the bits of $x$ mapped by $g_X$ on
+$c_X$, the bits of $w$ mapped by $g_W$ on $c_W$ and every other stack empty reaches the label
+$\mathit{yes}$ if $f(x, w)$ is true and $\mathit{no}$ otherwise within $p(|x| + |w|)$ steps. Then
+for all bit lists $x$ and $w$, with $n$ the length of the pair encoding of $(x, w)$, the verifier
+host program started at its first phase-0 label with state false, the pair encoding of $(x, w)$
+on the input stack and every other stack empty halts within $T(n)$ steps, where $T$ is the
+verifier host's step bound for $p$, with state false, the one-element list $[f(x, w)]$ on the
+output stack and every other stack empty.
 
 ## Depends on
 
-- [G](../dense-satverifier/g.md)
-- [Pair Encode](../dense-satverifier/pair-encode.md)
-- [Comp](comp.md)
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [HΓ](h.md)
-- [P0](p0.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Labels of the generic host](hlab.md)
+- [Alphabets of the generic host](h.md)
+- [Phase-0 labels of the generic host](p0.md)
 - [Vprog](vprog.md)
 - [Vtime](vtime.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Agree emb](agree-emb.md)
-- [Cleanup](cleanup-run.md)
-- [D W](d-w.md)
-- [D X](d-x.md)
-- [Emb](emb.md)
+- [Agreement with the embedded component](agree-emb.md)
+- [Cleanup in a host](cleanup-run.md)
+- [Reading a bit of $w$](d-w.md)
+- [Reading a bit of $x$](d-x.md)
+- [The component's stacks inside a host](emb.md)
 - [Embeds vprog](embeds-vprog.md)
-- [Two `moveB` passes](move2-run.md)
-- [Stk length le](stk-length-le.md)
-- [Update length le](update-length-le.md)
-- [Vtm](vtm.md)
-- [ΦV](v.md)
+- [Moving a bit block through a buffer](move2-run.md)
+- [Stack lengths grow by at most the push bound per step](stk-length-le.md)
+- [Stack lengths when only one stack is filled](update-length-le.md)
+- [The verifier host machine](vtm.md)
+- [Relabelling in the verifier host](v.md)
 - [Eval mono](../../../MathlibExt/turing-machine/composition/eval-mono.md)
 - [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
 - [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)

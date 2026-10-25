@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Automata.EncodedDFA.infiniteB
 ---
 
-# Infinite B
+# Infiniteness test for encoded DFAs
 
-Infiniteness test: some word with length between the number `N` of listed states and `2N`
-is accepted.
+**Infiniteness test for encoded DFAs.** Let $D$ be an encoded DFA over a finite alphabet and
+let $N$ be the length of its list of states. The infiniteness test is the Boolean that is true
+exactly when the language of $D$ contains a word $w$ with $N \le |w| < 2N$; it checks every word
+of each length $N + i$ with $0 \le i < N$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ is accepted.
 
 ## Proof depends on
 
-- [Accepts B](accepts-b.md)
+- [Acceptance test for encoded DFAs](accepts-b.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
-- [Words Of Length](words-of-length.md)
+- [Words of a given length](words-of-length.md)
 
 ## Sources
 

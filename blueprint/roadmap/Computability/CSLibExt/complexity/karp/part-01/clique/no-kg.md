@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.Karp.noKG
 ---
 
-# No KG
+# Fixed no-instance
 
-A fixed no-instance of all three (exact-size) languages: `k = 1` on the empty graph.
+**Fixed no-instance.** The bit string $1\,0\,0$ (writing $1$ for true and $0$ for false),
+which encodes $k = 1$ together with the graph with no vertices ($n = 0$ and no pair bits).
+
+A graph with no vertices has no clique, independent set or vertex cover of exactly one vertex,
+so this string lies in none of CLIQUE, INDEPENDENT-SET and VERTEX-COVER.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Encode KG](encode-kg.md)
+- [Encoding of a graph instance](encode-kg.md)
 
 ## Sources
 

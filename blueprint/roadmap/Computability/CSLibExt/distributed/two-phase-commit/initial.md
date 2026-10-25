@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.initial
 ---
 
-# Initial
+# Initial state of two-phase commit
 
-The initial state: the coordinator waits, every participant works.
+**Initial state of two-phase commit.** The initial state of the two-phase commit protocol:
+the coordinator is waiting and every participant is working.
 
 ## Depends on
 
-- [State](state.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Coord State](coord-state.md)
-- [Part State](part-state.md)
+- [Coordinator states](coord-state.md)
+- [Participant states in two-phase commit](part-state.md)
 
 ## Sources
 

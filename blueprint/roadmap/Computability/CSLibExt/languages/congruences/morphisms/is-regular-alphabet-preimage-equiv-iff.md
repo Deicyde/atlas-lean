@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Language.isRegular_alphabetPreimage_equiv_iff
 ---
 
-# Is Regular alphabet Preimage equiv iff
+# Renaming letters by a bijection preserves and reflects regularity
 
-A bijection of alphabets reflects regularity as well as preserving it.
+**Renaming letters by a bijection preserves and reflects regularity.** Let
+$e \colon \Sigma \to \Gamma$ be a bijection between alphabets and $L$ a language over $\Gamma$.
+The alphabet preimage $\{w \in \Sigma^* \mid e^*(w) \in L\}$, where $e^*(w)$ is the word
+obtained by applying $e$ to each letter of $w$, is regular if and only if $L$ is regular.
 
 ## Depends on
 
-- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet preimage](alphabet-preimage.md)
 
 ## Proof depends on
 
-- [Alphabet Preimage](alphabet-preimage-2.md)
+- [Regular languages are closed under alphabet preimages](alphabet-preimage-2.md)
 
 ## Sources
 

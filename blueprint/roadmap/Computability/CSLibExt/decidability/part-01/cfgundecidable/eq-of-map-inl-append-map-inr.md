@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.eq_of_map_inl_append_map_inr
 ---
 
-# Eq of map inl append map inr
+# Unique splitting of letters followed by markers
 
-A word of letters followed by a word of markers splits uniquely.
+**Unique splitting of letters followed by markers.** Let $A, C$ be words over $\alpha$ and
+$B, D$ words over $\beta$, all viewed as words over the disjoint union $\alpha \oplus \beta$. If
+$AB = CD$ as words over $\alpha \oplus \beta$, then $A = C$ and $B = D$.
 
 ## Depends on
 

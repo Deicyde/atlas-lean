@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.TMRewriting.not_step_haltWord
 ---
 
-# Not step halt Word
+# The halting word is irreducible
 
-The halting word `⊢ H ⊣` rewrites to nothing.
+**The halting word is irreducible.** Let $M$ be a single-tape Turing machine with finitely
+many states and tape symbols. There is no word $w$ such that the halting word $\vdash H \dashv$
+rewrites to $w$ in one step of the rewriting system simulating $M$.
 
 ## Depends on
 
-- [Step](../../part-02/string-rewriting/step.md)
-- [TMSym](tmsym.md)
-- [Halt Word](halt-word.md)
-- [Rules](rules.md)
+- [One-step rewriting](../../part-02/string-rewriting/step.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
+- [The halting word](halt-word.md)
+- [The rewriting system simulating a Turing machine](rules.md)
 
 ## Proof depends on
 
-- [Next State](next-state.md)
+- [Rewriting at a state symbol](next-state.md)
 - [A rewrite at the control symbol](step-result.md)
 
 ## Sources

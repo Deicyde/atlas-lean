@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.Rule
 ---
 
-# Rule
+# Rewriting rules
 
-A rewriting rule `(l, r)`: replace an occurrence of `l` by `r`.
+**Rewriting rules.** A rewriting rule over an alphabet $\alpha$ is a pair $(l, r)$ of words
+over $\alpha$; applying it replaces an occurrence of $l$ by $r$.
 
 ## Depends on
 

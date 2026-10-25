@@ -18,7 +18,7 @@ $S$.
 
 ## Proof depends on
 
-- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Bounded reachability search on lists of states](../../../decidability/part-02/regular/reach-n.md)
 - [ε-successors of a state](eps-next.md)
 - [States an encoded NFA mentions as start states or targets](states.md)
 

@@ -6,29 +6,30 @@ proof: formalized
 lean: Cslib.Distributed.VectorClock.eq_or_happensBefore_of_le
 ---
 
-# The converse direction
+# Own-entry comparison detects happened-before
 
-**The converse direction**: if the entry of `a`'s process in `a`'s
-timestamp is at most that entry in `b`'s timestamp, then `a = b` or `a`
-happened before `b`.
+**Own-entry comparison detects happened-before.** Let $a$ and $b$ be positions of events of
+an execution, and let $p$ be the process of the event at $a$. If the $p$-entry of the vector
+timestamp of $a$ is at most the $p$-entry of the vector timestamp of $b$, then $a = b$ or $a$
+happened before $b$.
 
 ## Depends on
 
 - [Event](../lamport-clock/event.md)
-- [Happens Before](../lamport-clock/happens-before.md)
-- [Timestamps](timestamps.md)
+- [Happened-before](../lamport-clock/happens-before.md)
+- [Vector timestamps of an execution](timestamps.md)
 
 ## Proof depends on
 
-- [Step](../lamport-clock/step.md)
-- [Clock Step](clock-step.md)
-- [One le own](one-le-own.md)
-- [Run](run.md)
-- [Run get D](run-get-d.md)
-- [Stamp](stamp.md)
-- [Timestamp le vector](timestamp-le-vector.md)
-- [Timestamps get D eq stamp](timestamps-get-d-eq-stamp.md)
-- [Vector eq](vector-eq.md)
+- [One step of happened-before](../lamport-clock/step.md)
+- [One step of the vector clock algorithm](clock-step.md)
+- [An event's own entry is positive](one-le-own.md)
+- [Running the vector clock algorithm](run.md)
+- [Array lookup agrees with the timestamp list](run-get-d.md)
+- [Vector clock stamp of an event](stamp.md)
+- [Each process's vector dominates its events' timestamps](timestamp-le-vector.md)
+- [Timestamps are stamps from the preceding state](timestamps-get-d-eq-stamp.md)
+- [A process's final vector is zero or one of its timestamps](vector-eq.md)
 
 ## Sources
 

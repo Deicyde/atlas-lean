@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Karp.SSVerify.encodeNat_decodeNat_iff
 ---
 
-# Encode Nat decode Nat iff
+# Canonical binary strings are those not ending in zero
 
-A block is canonical binary iff it does not end in `false`.
+**Canonical binary strings are those not ending in zero.** For every bit string $p$, encoding
+in binary (least significant bit first) the natural number that $p$ decodes to gives back $p$ if
+and only if the trailing-zero test, started with no trailing zero, reports that $p$ does not end
+in $0$; that is, $p$ is empty or its last bit is $1$.
 
 ## Depends on
 
-- [Last F](last-f.md)
+- [Whether a bit string ends in false](last-f.md)
 
 ## Proof depends on
 
-- [Encode Nat decode Nat eq iff](../../../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
+- [Canonical binary names](../../../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
 
 ## Sources
 

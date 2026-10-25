@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.Path.encodeP_inj
 ---
 
-# Encode P inj
+# The PATH instance encoding is injective
 
-`encodeP` is injective.
+**The PATH instance encoding is injective.** Let $s, t, n, s', t', n'$ be natural numbers and
+$E, E'$ lists of pairs of natural numbers. If the PATH instance encodings of $(s, t, n, E)$ and
+$(s', t', n', E')$ are equal, then $s = s'$, $t = t'$, $n = n'$ and $E = E'$.
 
 ## Depends on
 
-- [Encode P](../path/encode-p.md)
+- [Encoding of a PATH instance](../path/encode-p.md)
 
 ## Proof depends on
 
-- [Decode P](../path/decode-p.md)
-- [Decode P encode P](decode-p-encode-p.md)
+- [Decoding a PATH instance](../path/decode-p.md)
+- [Decoding inverts the PATH instance encoding](decode-p-encode-p.md)
 
 ## Sources
 

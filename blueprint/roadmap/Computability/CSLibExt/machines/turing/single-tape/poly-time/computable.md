@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp](../../../../complexity/host/comp.md)
+- [Component machine](../../../../complexity/host/comp.md)
 - [Reduction host](../../../../complexity/host/reduction.md)
 - [K](k.md)
 - [L](l.md)

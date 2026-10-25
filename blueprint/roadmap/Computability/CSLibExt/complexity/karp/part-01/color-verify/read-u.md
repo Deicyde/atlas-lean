@@ -5,21 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColVerify.readU
 ---
 
-# Read U
+# Unary reader of the 3-COLOR verifier
 
-Read a unary number off `X` onto the counter `c`: a `true` adds a unit, the `false`
-terminator moves on to `next`, an exhausted `X` rejects.
+**Unary reader of the 3-COLOR verifier.** Given a counter stack $c$ and labels $s$ (its own)
+and $t$ (the next): if the input stack $X$ is empty, reject; otherwise pop a bit off $X$; if it
+is $1$, push a unit onto $c$ and go back to $s$, and if it is $0$, go to $t$. A symbol of $X$
+that is not a bit is read as $0$.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Stmt](stmt.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [Statements of the 3-COLOR verifier](stmt.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

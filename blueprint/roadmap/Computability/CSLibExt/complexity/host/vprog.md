@@ -12,20 +12,20 @@ but the output, push the answer.
 
 ## Depends on
 
-- [G](../dense-satverifier/g.md)
-- [Comp](comp.md)
-- [HK](hk.md)
-- [HLab](hlab.md)
-- [HΓ](h.md)
+- [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Labels of the generic host](hlab.md)
+- [Alphabets of the generic host](h.md)
 
 ## Proof depends on
 
-- [P0](p0.md)
-- [Clean Ks](clean-ks.md)
-- [D W](d-w.md)
-- [D X](d-x.md)
-- [Emb](emb.md)
-- [ΦV](v.md)
+- [Phase-0 labels of the generic host](p0.md)
+- [Stacks emptied by the cleanup](clean-ks.md)
+- [Reading a bit of $w$](d-w.md)
+- [Reading a bit of $x$](d-x.md)
+- [The component's stacks inside a host](emb.md)
+- [Relabelling in the verifier host](v.md)
 - [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 - [Flag](../../../MathlibExt/turing-machine/program/flag.md)
 - [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)

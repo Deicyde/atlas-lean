@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Decidability.TM2Decidable.tm2CoRecognizable
 ---
 
-# Tm2 Co Recognizable
+# Decidable predicates are co-recognizable by multi-stack machines
 
-A decidable predicate is co-recognizable.
+**Decidable predicates are co-recognizable by multi-stack machines.** Let $\alpha$ be a
+primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
+primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a multi-stack machine, then
+$p$ is co-recognizable by a multi-stack machine, that is, its complement $\neg p$ is recognizable
+by a multi-stack machine.
 
 ## Depends on
 
-- [TM2 Co Recognizable](tm2-co-recognizable.md)
-- [TM2 Decidable](tm2-decidable.md)
+- [Co-recognizability by multi-stack machines](tm2-co-recognizable.md)
+- [Decidability by multi-stack machines](tm2-decidable.md)
 
 ## Proof depends on
 
-- [Not](not.md)
-- [Tm2 Recognizable](tm2-recognizable-2.md)
+- [Decidability by multi-stack machines is closed under complement](not.md)
+- [Decidable predicates are recognizable by multi-stack machines](tm2-recognizable-2.md)
 
 ## Sources
 

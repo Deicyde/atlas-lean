@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Karp.decodeEs_edgeBits
 ---
 
-# Decode Es edge Bits
+# Decoding the bits of an edge list
 
-`decodeEs` reads back an edge list.
+**Decoding the bits of an edge list.** For every list $es$ of pairs of natural numbers, the
+edge-list decoder applied to the edge bits of $es$ succeeds and returns $es$.
 
 ## Depends on
 
-- [Decode Es](decode-es.md)
-- [Edge Bits](edge-bits.md)
+- [Edge-list decoder](decode-es.md)
+- [Bit encoding of an edge list](edge-bits.md)
 
 ## Proof depends on
 
-- [Decode Es nil](decode-es-nil.md)
-- [Decode Es of some some](decode-es-of-some-some.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Decoding the empty input](decode-es-nil.md)
+- [Decoding one pair, then the rest](decode-es-of-some-some.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

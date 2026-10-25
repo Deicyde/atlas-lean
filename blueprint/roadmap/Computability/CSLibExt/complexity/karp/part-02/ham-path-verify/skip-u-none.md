@@ -6,24 +6,31 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.skipU_none
 ---
 
-# Skip U none
+# The unary mover of the Hamiltonian path verifier rejects an unterminated number
 
-`skipU` on an unterminated unary prefix rejects.
+**The unary mover of the Hamiltonian path verifier rejects an unterminated number.** Let
+$\mathsf{src} \ne \mathsf{dst}$ be stacks and $\ell$, $m$ labels such that the verifier's
+statement at $\ell$ is the unary mover from $\mathsf{src}$ to $\mathsf{dst}$ with own label
+$\ell$ and next label $m$. Let $l$ be a bit list from which no unary length can be read (that
+is, $l$ contains no `false`), and suppose that $\mathsf{src}$ holds the bits of $l$ (as bit
+symbols, first bit on top). Then from label $\ell$, with either value of the Boolean variable
+and any contents of the other stacks, the verifier reaches label $\mathrm{no}$ within
+$|l| + 1$ steps.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
 - [Prog](prog.md)
-- [Skip U](skip-u.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [The unary mover of the Hamiltonian path verifier](skip-u.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Step1](step1.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [A single step of the Hamiltonian-path verifier](step1.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)

@@ -5,21 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColVerify.mvP
 ---
 
-# Mv P
+# Moving one color code in the 3-COLOR verifier
 
-Move the next color code `(a, b)` from `P` to `T` and go to `f a b`; reject if `P` is
-empty (an endpoint past the last vertex).
+**Moving one color code in the 3-COLOR verifier.** Given a map $f$ from pairs of bits to
+labels: if the color stack $P$ is empty, reject (an endpoint lies past the last vertex);
+otherwise pop two bits $a$, $b$ off $P$, push them onto the scratch stack $T$ in that order (so
+$b$ ends on top), and go to the label $f(a, b)$. A missing or non-bit symbol is read as $0$.
 
 ## Depends on
 
-- [Lab](lab.md)
-- [Stmt](stmt.md)
+- [Labels of the 3-COLOR verifier](lab.md)
+- [Statements of the 3-COLOR verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stacks of the 3-COLOR verifier](k.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

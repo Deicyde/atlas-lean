@@ -6,25 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Karp.cnfSat_to3_iff
 ---
 
-# Cnf Sat to3 iff
+# The SAT-to-3SAT translation preserves satisfiability
 
-The translation preserves satisfiability.
+**The SAT-to-3SAT translation preserves satisfiability.** For every CNF formula $\varphi$, the
+translation $\mathrm{to3}(\varphi)$ is satisfiable if and only if $\varphi$ is satisfiable.
 
 ## Depends on
 
-- [To3](../three-sat/to3.md)
+- [The SAT-to-3SAT translation](../three-sat/to3.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Lift](lift.md)
-- [Lift fresh](lift-fresh.md)
-- [Lift ren](lift-ren.md)
-- [Ren](../three-sat/ren.md)
-- [To3 Aux](../three-sat/to3-aux.md)
-- [To3 Aux complete](to3-aux-complete.md)
-- [To3 Aux sound](to3-aux-sound.md)
+- [Lifting an assignment to the 3SAT translation](lift.md)
+- [The lifted assignment on fresh variables](lift-fresh.md)
+- [The lifted assignment on renamed variables](lift-ren.md)
+- [Renaming of the original variables](../three-sat/ren.md)
+- [Clause-by-clause translation with a fresh-number counter](../three-sat/to3-aux.md)
+- [Completeness of the auxiliary 3SAT translation](to3-aux-complete.md)
+- [Soundness of the auxiliary 3SAT translation](to3-aux-sound.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Cnf Sat iff exists satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 

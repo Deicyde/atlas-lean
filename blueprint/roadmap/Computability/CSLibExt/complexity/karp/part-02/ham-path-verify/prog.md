@@ -11,21 +11,21 @@ The verifier: parse and validate, then walk the vertices.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the Hamiltonian path verifier](k.md)
+- [Labels of the Hamiltonian path verifier](lab.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 
 ## Proof depends on
 
-- [CI](ci.md)
-- [Ca](ca.md)
-- [Cb](cb.md)
-- [Cb S](cb-s.md)
-- [Cout](cout.md)
-- [If E](if-e.md)
-- [Read U](read-u.md)
-- [Skip U](skip-u.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Counter comparisons of the HAMPATH verifier](ci.md)
+- [First counter of a HAMPATH-verifier comparison](ca.md)
+- [Second counter of a HAMPATH-verifier comparison](cb.md)
+- [Step of the HAMPATH verifier's unary comparison loop](cb-s.md)
+- [Exit labels of the counter comparisons](cout.md)
+- [Emptiness test](if-e.md)
+- [The unary reader of the Hamiltonian path verifier](read-u.md)
+- [The unary mover of the Hamiltonian path verifier](skip-u.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)

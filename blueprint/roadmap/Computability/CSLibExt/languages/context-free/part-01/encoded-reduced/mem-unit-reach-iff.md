@@ -19,9 +19,9 @@ lean: Cslib.Language.EncodedCFG.mem_unitReach_iff
 
 ## Proof depends on
 
-- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
-- [Iterate closed](../../../../decidability/part-01/primrec-list/iterate-closed.md)
-- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Duplicate removal for lists of natural numbers](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Bounded monotone rounds on lists close off](../../../../decidability/part-01/primrec-list/iterate-closed.md)
+- [Boolean membership test for lists of natural numbers](../../../../decidability/part-01/primrec-list/mem-b.md)
 - [Decode Rule](../encoded/decode-rule.md)
 - [Decode Symbol](../encoded/decode-symbol.md)
 - [Encode Rule](../encoded/encode-rule.md)

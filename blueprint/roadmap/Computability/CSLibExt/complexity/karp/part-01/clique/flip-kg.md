@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.flipKG
 ---
 
-# Flip KG
+# Complementing map from CLIQUE to INDEPENDENT-SET instances
 
-CLIQUE ≤ INDEPENDENT-SET on bit strings: complement every pair bit.
+**Complementing map from CLIQUE to INDEPENDENT-SET instances.** Writing $1$ for true and $0$
+for false, the map sends a bit string $1^k\,0\,1^n\,0\,b$ to $1^k\,0\,1^n\,0\,\bar b$, where
+$\bar b$ is $b$ with every bit complemented. A bit string with fewer than two zeros goes to the
+fixed no-instance $1\,0\,0$.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decode KG](decode-kg.md)
-- [Encode KG](encode-kg.md)
-- [No KG](no-kg.md)
+- [Decoding a graph instance](decode-kg.md)
+- [Encoding of a graph instance](encode-kg.md)
+- [Fixed no-instance](no-kg.md)
 
 ## Sources
 

@@ -8,7 +8,9 @@ lean: Cslib.Kolmogorov.K_le_length_add
 
 # Complexity is at most the length plus a constant
 
-**Complexity is at most the length plus a constant**: `K x ≤ |x| + c`.
+**Complexity is at most the length plus a constant.** There is a natural number $c$ such that
+every binary string $x$ satisfies $K(x) \le |x| + c$, where $K(x)$ is the Kolmogorov complexity
+of $x$ and $|x|$ is its length.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ lean: Cslib.Kolmogorov.K_le_length_add
 
 ## Proof depends on
 
-- [K le](k-le.md)
+- [A description bounds the complexity](k-le.md)
 - [The universal description method](u.md)
-- [Describe](describe.md)
-- [Run](run.md)
+- [Description of a code running on an input](describe.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

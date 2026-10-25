@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.litToks_head
 ---
 
-# Lit Toks head
+# Token symbols of the HAMPATH emitter
 
-Tokens moved between `T` and `F`. -/
+**Token symbols of the HAMPATH emitter.** A symbol is a token when it is a name bit, a
+polarity marker or the clause separator $\mathsf{cl}$; the value markers and the dead marker are
+not tokens. The emitter moves tokens between its stacks $T$ and $F$. -/
 def isTok : Sym → Bool
   | .bit _ | .lit _ | .cl => true
   | _ => false
@@ -120,8 +122,8 @@ theorem neg_bits (s : MS) (m i j : ℕ) (hd : s.d = hpR m i (3 * j + 1)) (hj : s
 
 ## Depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 
 ## Sources
 

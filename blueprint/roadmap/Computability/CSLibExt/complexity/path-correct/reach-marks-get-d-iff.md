@@ -6,25 +6,29 @@ proof: formalized
 lean: Cslib.Complexity.Path.reachMarks_getD_iff
 ---
 
-# Reach Marks get D iff
+# The final marks are exactly the reachable vertices
 
-After `n` passes, `t < n` is marked iff it is reachable from `s < n`.
+**The final marks are exactly the reachable vertices.** Let $n, s, t \in \mathbb{N}$ with
+$s < n$ and $t < n$, and let $E$ be a list of pairs of natural numbers. Start from the marks on
+$0, \dots, n - 1$ in which only $s$ is marked and apply $n$ marking passes of $E$ with bound $n$.
+Then $t$ is marked if and only if $t$ is reachable from $s$ in zero or more steps along the arcs
+of $E$ below $n$, the pairs $(u, v) \in E$ with $u < n$ and $v < n$.
 
 ## Depends on
 
-- [Arc](../path/arc.md)
-- [Reach Marks](../path/reach-marks.md)
+- [Arcs of the PATH digraph](../path/arc.md)
+- [Reach marks](../path/reach-marks.md)
 
 ## Proof depends on
 
-- [Init Marks](../path/init-marks.md)
-- [Init Marks get D](init-marks-get-d.md)
-- [Iterate mark Pass mono](iterate-mark-pass-mono.md)
-- [Length reach Marks](length-reach-marks.md)
-- [Mark Pass](../path/mark-pass.md)
-- [Mark Pass closed](mark-pass-closed.md)
-- [Mark Pass reach Marks](mark-pass-reach-marks.md)
-- [Mark Pass sound](mark-pass-sound.md)
+- [Initial marks](../path/init-marks.md)
+- [The initial marks mark exactly the source, if it is a vertex](init-marks-get-d.md)
+- [Marks survive repeated passes](iterate-mark-pass-mono.md)
+- [The final marks have one entry per vertex](length-reach-marks.md)
+- [One marking pass](../path/mark-pass.md)
+- [A pass marks the heads of arcs with marked tails](mark-pass-closed.md)
+- [Repeated passes reach a fixpoint](mark-pass-reach-marks.md)
+- [Soundness of a pass](mark-pass-sound.md)
 
 ## Sources
 

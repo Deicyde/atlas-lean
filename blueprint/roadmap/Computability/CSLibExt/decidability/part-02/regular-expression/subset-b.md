@@ -7,17 +7,19 @@ lean: Cslib.Language.EncodedRegex.subsetB
 
 # Inclusion test
 
-**Inclusion test**: run the CFG ⊆ DFA decider on the grammar of the expression.
+**Inclusion test.** For an encoded regular expression $e$ and an encoded DFA $D$, the
+inclusion test returns the Boolean computed by the CFG ⊆ DFA inclusion test on the grammar of
+$e$ and the automaton $D$.
 
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Subset B](../../part-01/context-free-regular/subset-b.md)
-- [To Grammar](to-grammar.md)
+- [The inclusion test for a grammar and a DFA](../../part-01/context-free-regular/subset-b.md)
+- [The grammar of an encoded regular expression](to-grammar.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Distributed.LamportClock.run
 ---
 
-# Run
+# Running the Lamport clock algorithm
 
-The clock algorithm over an execution, from all counters `0`.
+**Running the Lamport clock algorithm.** The clock algorithm over an execution applies one
+step of the algorithm to each event in order, starting from all process counters $0$ and no
+timestamps. The result is the final counters together with the timestamps assigned to the
+events, in order.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ The clock algorithm over an execution, from all counters `0`.
 
 ## Proof depends on
 
-- [Clock Step](clock-step.md)
+- [One step of the Lamport clock algorithm](clock-step.md)
 
 ## Sources
 

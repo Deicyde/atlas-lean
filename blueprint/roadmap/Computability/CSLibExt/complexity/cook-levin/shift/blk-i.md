@@ -19,7 +19,7 @@ time $t$.
 ## Proof depends on
 
 - [The shift block of a situation and a stack](sh-blk.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

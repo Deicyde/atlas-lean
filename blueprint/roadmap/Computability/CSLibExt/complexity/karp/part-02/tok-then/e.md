@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.φE
 ---
 
-# ΦE
+# Emitter labels in the tokenize-then-emit machine
 
-Emitter labels: its exit is `fin`.
+**Emitter labels in the tokenize-then-emit machine.** The map from the labels of an emitter
+$E$ to the labels of the tokenize-then-emit machine for $E$ that sends $E$'s exit label to the
+machine's exit label, and every other label of $E$ to its own copy among the emitter labels.
 
 ## Depends on
 
 - [Emitter](emitter.md)
-- [L](l.md)
+- [Labels of the tokenize-then-emit machine](l.md)
 
 ## Proof depends on
 
-- [Fin](fin.md)
-- [Lab](../../../sat-tokenizer/lab.md)
+- [Exit label of the tokenize-then-emit machine](fin.md)
+- [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
 
 ## Sources
 

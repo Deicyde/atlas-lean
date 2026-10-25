@@ -17,7 +17,7 @@ independently for the specific reduction; it does not follow from
 
 ## Depends on
 
-- [Poly Many One Red](../cook-levin/poly-many-one-red.md)
+- [Polynomial-time many-one reduction](../cook-levin/poly-many-one-red.md)
 - [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
 - [Bitstring Encoding](../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../MathlibExt/complexity/bit-decode.md)

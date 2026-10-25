@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.toRegex
 ---
 
-# To Regex
+# The regular expression denoted by an encoding
 
-The regular expression an encoding denotes: the one at the last node (`0` for the empty
-list, where `node` reads past the end).
+**The regular expression denoted by an encoding.** An encoded regular expression $e$ with $n$
+nodes denotes the regular expression at its node $n - 1$, the last node. For $n = 0$ this is the
+expression at node $0$, which lies past the end of the list and is the empty expression $0$.
 
 ## Depends on
 
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Regex At](regex-at.md)
-- [Regex Node](regex-node.md)
+- [Regular expression at a node](regex-at.md)
+- [Regular-expression node](regex-node.md)
 
 ## Sources
 

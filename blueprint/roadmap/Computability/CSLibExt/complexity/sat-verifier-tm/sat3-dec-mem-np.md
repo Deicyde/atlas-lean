@@ -8,11 +8,16 @@ lean: Cslib.Complexity.SatVerifier.Machine.sat3Dec_mem_NP
 
 # 3SAT is in NP
 
-**3SAT is in NP**: the capped host verifies it, with witnesses no longer than the input.
+**3SAT is in NP.** The decision problem 3SAT, which accepts exactly the bit strings that
+encode a satisfiable CNF formula in which every clause has at most three literals, belongs to the
+class NP.
+
+The verifier is the SAT verifier host with the three-literal clause filter switched on, and
+witnesses no longer than the input suffice.
 
 ## Depends on
 
-- [Sat3 Dec](../karp/part-02/three-sat/sat3-dec.md)
+- [The 3SAT decision problem](../karp/part-02/three-sat/sat3-dec.md)
 - [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../MathlibExt/complexity/np.md)
@@ -20,24 +25,24 @@ lean: Cslib.Complexity.SatVerifier.Machine.sat3Dec_mem_NP
 ## Proof depends on
 
 - [The translation computes the binary encoding](../dense-to-binary/sat-dec-encode-cnf.md)
-- [Is3](../karp/part-02/three-sat/is3.md)
-- [Ans](ans.md)
-- [Cook-Levin](ans-true.md)
-- [Is Poly Time ans](is-poly-time-ans.md)
-- [Decode CNF](../../cook-levin/decode-cnf.md)
-- [Decode CNFAux](../../cook-levin/decode-cnfaux.md)
-- [Decode CNF eq some iff](../../cook-levin/decode-cnf-eq-some-iff.md)
-- [Decode Clause](../../cook-levin/decode-clause.md)
-- [Decode Clauses](../../cook-levin/decode-clauses.md)
-- [Decode Lit](../../cook-levin/decode-lit.md)
-- [Decode Lits](../../cook-levin/decode-lits.md)
-- [Decode Nat Prefix](../../cook-levin/decode-nat-prefix.md)
-- [Encode CNF](../../cook-levin/encode-cnf.md)
-- [Encode Clause](../../cook-levin/encode-clause.md)
-- [Encode Lit](../../cook-levin/encode-lit.md)
-- [Encode Nat Prefix](../../cook-levin/encode-nat-prefix.md)
-- [Read Unary Length](../../cook-levin/read-unary-length.md)
-- [Sat Dec](../../cook-levin/sat-dec.md)
+- [Three-literal clause test](../karp/part-02/three-sat/is3.md)
+- [Answer of the SAT host](ans.md)
+- [Cook–Levin theorem](ans-true.md)
+- [The SAT host's answer is polynomial-time](is-poly-time-ans.md)
+- [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
+- [Decoding a length-prefixed CNF formula](../../cook-levin/decode-cnfaux.md)
+- [The CNF decoder inverts the length-prefixed CNF code](../../cook-levin/decode-cnf-eq-some-iff.md)
+- [Decoding a length-prefixed clause](../../cook-levin/decode-clause.md)
+- [Decoding a fixed number of clauses](../../cook-levin/decode-clauses.md)
+- [Decoding a literal](../../cook-levin/decode-lit.md)
+- [Decoding a fixed number of literals](../../cook-levin/decode-lits.md)
+- [Decoding a prefix-coded natural number](../../cook-levin/decode-nat-prefix.md)
+- [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
+- [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
+- [Binary code of a literal](../../cook-levin/encode-lit.md)
+- [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
+- [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
+- [SAT as a decision problem](../../cook-levin/sat-dec.md)
 - [Sat Verifier](../../sat-time-m/sat-verifier.md)
 - [Sat Verifier verifies](../../sat-time-m/sat-verifier-verifies.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)

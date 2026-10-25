@@ -36,7 +36,7 @@ by $o$.
 - [Initial counters of the init generator](init-f.md)
 - [The init family](init-fam.md)
 - [The generator](iprog.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -85,9 +85,9 @@ by $o$.
 - [Row-0 cells fit in the variable range](qpos.md)
 - [Run lifting](run-lift.md)
 - [Empty-cell variable of the initial row](z-b.md)
-- [CNF](../../dense-sat/cnf.md)
-- [Clause](../../dense-sat/clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
+- [Dense clause](../../dense-sat/clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Embeds](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 - [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)

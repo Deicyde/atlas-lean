@@ -5,25 +5,30 @@ statement: formalized
 lean: Cslib.Decidability.Grammar.mismatchRules
 ---
 
-# Mismatch Rules
+# The mismatch productions
 
-The productions of the mismatch nonterminal `A` for one side, by the outermost index `i`
-with `w = wᵢ`: `A → w A code(i)` and `A → w L⁺ code(i)` peel `w` off; `A → u codes code(i)` for a
-proper prefix `u` of `w`, and `A → u a L* codes code(i)` where the next letter of `w` is not `a`,
-stop matching.
+**The mismatch productions** of a nonterminal $A$ for one side of a list $P$ of dominoes over a
+finite alphabet. Let $s$ be a map from dominoes to words (in use, the top or the bottom). For each
+index $i < |P|$ write $w = s(d_i)$ for the $i$-th domino $d_i$ of $P$ and $\mathrm{code}(i)$ for
+the unary code of $i$ as bits. With letters and bits as terminals and $N_3$, $N_4$, $N_7$ the
+nonterminals $3$, $4$, $7$ (meant to generate words of letters, nonempty words of letters and
+codes of indices), the productions are $A \to w\,A\,\mathrm{code}(i)$ and
+$A \to w\,N_4\,\mathrm{code}(i)$, which peel $w$ off, and, for each proper prefix $u$ of $w$,
+$A \to u\,N_7\,\mathrm{code}(i)$ and $A \to u\,a\,N_3\,N_7\,\mathrm{code}(i)$ for every letter $a$
+other than the letter of $w$ following $u$, which stop matching.
 
 ## Depends on
 
-- [Domino](../pcp/domino.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 
 ## Proof depends on
 
-- [Bit Code](bit-code.md)
-- [Domino](../cfgundecidable/domino.md)
-- [Others](others.md)
-- [U Bit](u-bit.md)
-- [U Letter](u-letter.md)
-- [U Nt](u-nt.md)
+- [Unary code of an index](bit-code.md)
+- [The $i$-th domino of a list](../cfgundecidable/domino.md)
+- [The letters other than a given letter](others.md)
+- [Encoded bit terminal](u-bit.md)
+- [Encoded letter terminal](u-letter.md)
+- [Encoded nonterminal](u-nt.md)
 
 ## Sources
 

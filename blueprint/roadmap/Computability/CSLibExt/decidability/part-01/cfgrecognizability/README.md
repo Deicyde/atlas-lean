@@ -9,15 +9,15 @@ navigation: module
 
 ## Searching over words
 
-- [Computable Pred mem fst](computable-pred-mem-fst.md)
-- [`OVERLAP_CFG` is recognizable](tm2-recognizable-overlap.md)
-- [`ALL_CFG` is co-recognizable](tm2-co-recognizable-univ.md)
-- [`EQ_CFG` is co-recognizable](tm2-co-recognizable-language-eq.md)
+- [Membership in the first grammar of a pair is computable](computable-pred-mem-fst.md)
+- [The overlap problem for context-free grammars is recognizable](tm2-recognizable-overlap.md)
+- [Universality of context-free grammars is co-recognizable](tm2-co-recognizable-univ.md)
+- [Equivalence of context-free grammars is co-recognizable](tm2-co-recognizable-language-eq.md)
 - [Inclusion of context-free languages is co-recognizable](tm2-co-recognizable-language-le.md)
 
 ## Unrecognizable problems
 
 - [Disjointness of context-free languages is not recognizable](exists-not-tm2-recognizable-disjoint.md)
-- [`ALL_CFG` is not recognizable](exists-not-tm2-recognizable-univ.md)
-- [`EQ_CFG` is not recognizable](exists-not-tm2-recognizable-language-eq.md)
+- [Universality of context-free grammars is not recognizable](exists-not-tm2-recognizable-univ.md)
+- [Equivalence of context-free grammars is not recognizable](exists-not-tm2-recognizable-language-eq.md)
 - [Inclusion of context-free languages is not recognizable](exists-not-tm2-recognizable-language-le.md)

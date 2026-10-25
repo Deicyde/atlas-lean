@@ -6,20 +6,20 @@ navigation: module
 
 ## Bit lists and the numbers of the reduction
 
-- [Bits Val nil](bits-val-nil.md)
-- [Bits Val cons](bits-val-cons.md)
-- [Encode Nat bits Val](encode-nat-bits-val.md)
-- [Bits Val flat Map2](bits-val-flat-map2.md)
-- [Encode Nat bits Val rev](encode-nat-bits-val-rev.md)
-- [Delimit append true](delimit-append-true.md)
-- [Blk](blk.md)
-- [Edge Enc](edge-enc.md)
-- [Edge Out](edge-out.md)
+- [Value of the empty bit list](bits-val-nil.md)
+- [Value of a bit list with a leading bit](bits-val-cons.md)
+- [A bit list without trailing false is the binary code of its value](encode-nat-bits-val.md)
+- [Value of a list of two-bit digits](bits-val-flat-map2.md)
+- [Binary code of the value of a bit list](encode-nat-bits-val-rev.md)
+- [Delimiting a bit list that ends in true](delimit-append-true.md)
+- [Output block of a vertex-number digit](blk.md)
+- [Output block of an edge number](edge-enc.md)
+- [Output of all edge numbers](edge-out.md)
 
 ## The pair walk
 
-- [Walk M](walk-m.md)
-- [Tri](tri.md)
-- [Walk M pairs](walk-m-pairs.md)
-- [Mk L](mk-l.md)
+- [The pair walk over lists of marks](walk-m.md)
+- [Triangular numbers](tri.md)
+- [The pair walk lists the vertex pairs in reverse](walk-m-pairs.md)
+- [Vertex marks for a vertex](mk-l.md)
 - [Walk touches](walk-touches.md)

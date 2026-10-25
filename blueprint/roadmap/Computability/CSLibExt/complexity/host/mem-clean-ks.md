@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.Host.mem_cleanKs
 ---
 
-# Mem clean Ks
+# Stacks emptied by the cleanup
 
-The cleanup empties exactly the stacks other than the output.
+**Stacks emptied by the cleanup.** For a component machine $c$ and host stacks $o$ and $k$,
+the stack $k$ belongs to the list of stacks that the cleanup for the output stack $o$ empties if
+and only if $k \ne o$.
 
 ## Depends on
 
-- [Comp](comp.md)
-- [HK](hk.md)
-- [Clean Ks](clean-ks.md)
+- [Component machine](comp.md)
+- [Stacks of the generic host](hk.md)
+- [Stacks emptied by the cleanup](clean-ks.md)
 
 ## Proof depends on
 
-- [All Ks](all-ks.md)
+- [The list of host stacks](all-ks.md)
 
 ## Sources
 

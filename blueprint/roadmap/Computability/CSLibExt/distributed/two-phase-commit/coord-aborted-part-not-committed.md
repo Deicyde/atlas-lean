@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Distributed.TwoPhaseCommit.coord_aborted_part_not_committed
 ---
 
-# Coord aborted part not committed
+# An aborted coordinator has no committed participant
 
-AC1 between the coordinator and a participant: an aborted coordinator has
-no committed participant.
+**An aborted coordinator has no committed participant.** In every reachable state of the
+two-phase commit protocol, if the coordinator has decided abort, then no participant has
+committed.
+
+This is the coordinator–participant part of condition AC1 of Bernstein, Hadzilacos and
+Goodman.
 
 ## Depends on
 
-- [Coord State](coord-state.md)
-- [Part State](part-state.md)
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Coordinator states](coord-state.md)
+- [Participant states in two-phase commit](part-state.md)
+- [Reachable states of two-phase commit](reachable.md)
+- [Global states of two-phase commit](state.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Inv reachable](inv-reachable.md)
+- [Two-phase commit invariant](inv.md)
+- [The two-phase commit invariant holds in reachable states](inv-reachable.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Decidability.Post.nonemptyWordsB
 ---
 
-# Nonempty Words B
+# Boolean test for nonempty words
 
-Every domino has a nonempty top and bottom, as a Boolean test.
+**Boolean test for nonempty words.** For a list $P$ of dominoes, this Boolean test returns
+true exactly when every domino of $P$ has a nonempty top and a nonempty bottom.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Sources
 

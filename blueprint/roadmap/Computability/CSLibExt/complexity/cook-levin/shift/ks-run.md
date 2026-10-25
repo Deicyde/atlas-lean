@@ -31,17 +31,17 @@ $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 - [Entry label of the situation chain](i-from.md)
 - [Entry label of the stack chain of a situation](ik.md)
 - [Labels of the shift generator](lab.md)
-- [WF](wf.md)
+- [Well-formed situation tables for the cell-shift family](wf.md)
 - [Step budget for one block of the shift generator](ik-b.md)
 - [The cell-shift generator](prog.md)
 - [The shift block of a situation and a stack](sh-blk.md)
-- [Encode CNF](../../dense-sat/encode-cnf.md)
+- [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Labels of the cell-shift generator](gl.md)
-- [ST](st.md)
+- [Setup and loop stages of a cell-shift block](st.md)
 - [Correctness of the shift generator on one block](ik-run.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

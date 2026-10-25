@@ -22,7 +22,7 @@ lean: Cslib.Turing.Universal.Diag.Check.run
 
 ## Proof depends on
 
-- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
 - [Cell](../clocked/cell.md)
 - [D U](../clocked/d-u.md)
 - [Out A](out-a.md)

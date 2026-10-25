@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Decidability.TM2Recognizable.and
 ---
 
-# And
+# Recognizable predicates are closed under conjunction
 
-Recognizable predicates are closed under conjunction.
+**Recognizable predicates are closed under conjunction.** Let $p$ and $q$ be predicates
+on a type $\alpha$ with a primitive recursive encoding. If $p$ and $q$ are both recognizable
+by multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 
 ## Depends on
 
-- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Tm2 Recognizable iff re Pred](../basic/tm2-recognizable-iff-re-pred.md)
+- [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
 - [And](../../../../MathlibExt/re/and-2.md)
 
 ## Sources

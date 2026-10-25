@@ -12,25 +12,25 @@ lean: Cslib.Complexity.Karp.hamPathDec_mem_NP
 
 ## Depends on
 
-- [Ham Path Dec](../ham-path/ham-path-dec.md)
+- [The HAMPATH problem](../ham-path/ham-path-dec.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
-- [Comp](../../../host/comp.md)
+- [Component machine](../../../host/comp.md)
 - [Verifier host, canonical form](../../../host/is-poly-time-verifier.md)
-- [CI](../../part-02/ham-path-verify/ci.md)
-- [K](../../part-02/ham-path-verify/k.md)
-- [Lab](../../part-02/ham-path-verify/lab.md)
-- [Ham Check](../ham-path-check/ham-check.md)
-- [HAMPATH is verified by `hamCheck`](../ham-path-check/ham-path-dec-iff.md)
+- [Counter comparisons of the HAMPATH verifier](../../part-02/ham-path-verify/ci.md)
+- [Stacks of the Hamiltonian path verifier](../../part-02/ham-path-verify/k.md)
+- [Labels of the Hamiltonian path verifier](../../part-02/ham-path-verify/lab.md)
+- [The HAMPATH verifier](../ham-path-check/ham-check.md)
+- [HAMPATH is verified with quadratic-size witnesses](../ham-path-check/ham-path-dec-iff.md)
 - [Prog](../../part-02/ham-path-verify/prog.md)
-- [The verifier machine](../../part-02/ham-path-verify/run.md)
-- [Start](../../part-02/ham-path-verify/start.md)
-- [Ham Verify Comp](ham-verify-comp.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Correctness and running time of the Hamiltonian path verifier](../../part-02/ham-path-verify/run.md)
+- [Start label of the Hamiltonian-path verifier](../../part-02/ham-path-verify/start.md)
+- [The HAMPATH verifier as a host component](ham-verify-comp.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

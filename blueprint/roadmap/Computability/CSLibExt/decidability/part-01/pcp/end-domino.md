@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Decidability.Post.endDomino
 ---
 
-# End Domino
+# End domino of the MPCP-to-PCP reduction
 
-The end domino `(⋆◇, ◇)`.
+**End domino of the MPCP-to-PCP reduction.** Over the alphabet $\alpha$ extended with the
+star $\star$ and the end marker $\diamond$, the end domino is $(\star\diamond, \diamond)$: its top
+word is $\star$ followed by $\diamond$, and its bottom word is $\diamond$.
 
 ## Depends on
 
-- [Domino](domino.md)
-- [Sym](sym.md)
+- [Domino (Post correspondence problem)](domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 
 ## Proof depends on
 
-- [End Mark](end-mark.md)
-- [Star](star.md)
+- [End marker](end-mark.md)
+- [The star symbol](star.md)
 
 ## Sources
 

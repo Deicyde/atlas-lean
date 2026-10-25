@@ -8,12 +8,13 @@ lean: Cslib.Distributed.ChangRoberts.leader_unique
 
 # There is at most one leader
 
-**There is at most one leader.**
+**There is at most one leader.** In every state of the Chang–Roberts algorithm reachable from
+the initial state, any two processes that have declared themselves leader are equal.
 
 ## Depends on
 
-- [Reachable](reachable.md)
-- [State](state.md)
+- [Reachable states of Chang–Roberts](reachable.md)
+- [Chang–Roberts global states](state.md)
 
 ## Proof depends on
 

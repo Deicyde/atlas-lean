@@ -5,13 +5,18 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.Mode.sat
 ---
 
-# Sat
+# The pair condition left to the later vertex
 
-The pair condition when `i` does not settle it: bit `b`, whether `j` is chosen.
+**The pair condition left to the later vertex.** For a mode $m$, a pair bit $b$ and a
+flag $s_j$ saying whether vertex $j$ is chosen, $\mathrm{sat}_m(b, s_j)$ is
+$\lnot s_j \lor b$ for clique, $\lnot s_j \lor \lnot b$ for independent set, and
+$\lnot b \lor s_j$ for vertex cover.
+
+It is the pair condition on $\{i, j\}$ when vertex $i$ does not settle it.
 
 ## Depends on
 
-- [Mode](mode.md)
+- [Modes of the clique verifier](mode.md)
 
 ## Sources
 

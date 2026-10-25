@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.memB
 ---
 
-# Membership test
+# Membership test for regular expressions
 
-**Membership test**: run the A_CFG decider on the grammar of the expression.
+**Membership test for regular expressions.** For an encoded regular expression $e$ and a
+word $w$, the test returns the answer of the membership test for encoded context-free grammars
+on the word $w$ and the grammar of $e$, which has one nonterminal per node and the root as
+start symbol.
 
 ## Depends on
 
-- [Encoded Regex](encoded-regex.md)
+- [Encoded regular expressions](encoded-regex.md)
 
 ## Proof depends on
 
-- [Membership test](../../part-01/context-free/mem-language-b.md)
-- [To Grammar](to-grammar.md)
+- [The membership test for context-free grammars](../../part-01/context-free/mem-language-b.md)
+- [The grammar of an encoded regular expression](to-grammar.md)
 
 ## Sources
 

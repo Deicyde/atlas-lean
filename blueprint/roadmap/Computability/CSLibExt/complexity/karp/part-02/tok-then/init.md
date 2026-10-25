@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.Karp.TokThen.init
 ---
 
-# Init
+# Initial stacks of the tokenize-then-emit machine
 
-Initial stacks: `x` on the tokenizer's input stack.
+**Initial stacks of the tokenize-then-emit machine.** For a bit string $x$, the initial stack
+contents of the tokenize-then-emit machine for an emitter $E$: the tokenizer's input stack $X$
+holds the bits of $x$ in order, each written as a bit symbol, and every other stack is empty.
 
 ## Depends on
 
 - [Emitter](emitter.md)
-- [K](k.md)
-- [Γ](untitled.md)
+- [Stacks of the tokenize-then-emit machine](k.md)
+- [Alphabets of the tokenize-then-emit machine](untitled.md)
 
 ## Proof depends on
 
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [K](../../../sat-tokenizer/k.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 
 ## Sources
 

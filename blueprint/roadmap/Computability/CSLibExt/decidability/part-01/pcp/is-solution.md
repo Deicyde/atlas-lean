@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Decidability.Post.IsSolution
 ---
 
-# Is Solution
+# PCP solution
 
-A **PCP solution** of `P`: a nonempty sequence of dominoes of `P` whose tops and bottoms
-concatenate to the same word.
+**PCP solution.** Let $P$ be a finite list of dominoes. A solution of $P$ is a nonempty
+sequence $d_1, \dots, d_k$ of dominoes, each occurring in $P$ (repetitions allowed), such that the
+concatenation of the top words of $d_1, \dots, d_k$ equals the concatenation of their bottom
+words.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Proof depends on
 
-- [Bottom](bottom.md)
-- [Top](top.md)
+- [Bottom word of a domino sequence](bottom.md)
+- [Top word of a sequence of dominoes](top.md)
 
 ## Sources
 

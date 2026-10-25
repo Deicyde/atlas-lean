@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.haltingSet
 ---
 
-# Halting Set
+# Halting set
 
-The halting set: the numbers of codes that halt on `0`.
+**Halting set.** Fix the standard bijective numbering $n \mapsto c_n$ of the codes of partial
+recursive functions $\mathbb{N} \rightharpoonup \mathbb{N}$. The halting set is the set of natural
+numbers $n$ such that the partial recursive function with code $c_n$ is defined at $0$.
 
 ## Depends on
 

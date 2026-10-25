@@ -12,7 +12,7 @@ lean: Cslib.Complexity.CookLevin.InitFamily.initFam
 ## Depends on
 
 - [Variable layout of the transition clauses](../family/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
@@ -22,7 +22,7 @@ lean: Cslib.Complexity.CookLevin.InitFamily.initFam
 - [Row-0 clauses for the other stacks](i-other.md)
 - [Row-0 prefix clauses](i-pre.md)
 - [Row-0 tail clauses](i-tail.md)
-- [Clause](../../dense-sat/clause.md)
+- [Dense clause](../../dense-sat/clause.md)
 
 ## Sources
 

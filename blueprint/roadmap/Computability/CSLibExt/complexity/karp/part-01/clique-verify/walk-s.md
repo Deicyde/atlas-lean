@@ -5,23 +5,26 @@ statement: formalized
 lean: Cslib.Complexity.Karp.KGVerify.walkS
 ---
 
-# Walk S
+# Walk step of the clique verifier
 
-A walk step: with `V` empty every row is done, and the verifier accepts iff no pair bit is
-left on `X`; otherwise pop the top vertex bit and go on with `walkZ`.
+**Walk step of the clique verifier.** In mode $m$ with row flag $c$, the walk step looks at
+the vertex stack $V$. If $V$ is empty, it moves to the accept label if the input stack $X$ is
+empty and to the reject label otherwise. If $V$ is not empty, it pops the top symbol of $V$,
+reads it as a bit $z$ (a non-bit symbol reads as false), and continues with the rest of the walk
+step for $m$, $c$ and $z$.
 
 ## Depends on
 
-- [Mode](mode.md)
-- [Stmt](stmt.md)
+- [Modes of the clique verifier](mode.md)
+- [Statements of the clique verifier](stmt.md)
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Walk Z](walk-z.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Rest of a walk step of the clique verifier](walk-z.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources

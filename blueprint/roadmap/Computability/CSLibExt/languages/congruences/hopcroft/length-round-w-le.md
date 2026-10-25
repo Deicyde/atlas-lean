@@ -12,14 +12,14 @@ A round adds at most `|Σ|` waiting entries per split block.
 
 ## Depends on
 
-- [Splits](splits.md)
-- [Preimage](preimage.md)
-- [Round W](round-w.md)
+- [A set of states split by another](splits.md)
+- [Preimage of a set under a letter](preimage.md)
+- [One update of the waiting list](round-w.md)
 
 ## Proof depends on
 
-- [New Splitters](new-splitters.md)
-- [Smaller](smaller.md)
+- [New splitters for a split block](new-splitters.md)
+- [Smaller of two finite sets of states](smaller.md)
 
 ## Sources
 

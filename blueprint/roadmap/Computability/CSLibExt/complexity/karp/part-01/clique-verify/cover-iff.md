@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.cover_iff
 ---
 
-# Cover iff
+# Vertex covers of the graph given by pair bits
 
-A `k`-vertex cover is a `k`-set meeting the cover condition on every pair.
+**Vertex covers of the graph given by pair bits.** For natural numbers $n$ and $k$ and a list
+of bits $b$, the graph on the vertices $0, \dots, n-1$ read off $b$ has a vertex cover of
+exactly $k$ vertices if and only if there is a set $s$ of exactly $k$ of these vertices meeting
+the cover-mode pair condition on every pair $i < j$: whenever the bit of the pair $\{i, j\}$ in
+$b$ is set, $i$ or $j$ lies in $s$.
 
 ## Depends on
 
-- [Mode](mode.md)
-- [Set Ok](set-ok.md)
-- [To Graph](../clique/to-graph.md)
+- [Modes of the clique verifier](mode.md)
+- [Vertex sets meeting a mode's pair condition](set-ok.md)
+- [The graph encoded by pair bits](../clique/to-graph.md)
 
 ## Proof depends on
 
-- [Ok](ok.md)
-- [Forall ne iff lt](forall-ne-iff-lt.md)
-- [Adj Bits](../clique/adj-bits.md)
-- [Pairs](../clique/pairs.md)
+- [Pair condition of the clique verifier](ok.md)
+- [Symmetric relations on increasing pairs](forall-ne-iff-lt.md)
+- [Adjacency bit of a vertex pair](../clique/adj-bits.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

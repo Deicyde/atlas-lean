@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.HamVerify.length_encW_le
 ---
 
-# Length enc W le
+# Witness length bound
 
-Vertices below `n` cost at most `n` bits each.
+**Witness length bound.** For every natural number $n$ and every list $p$ of natural numbers
+all below $n$, the witness encoding of $p$ has length at most $|p| \cdot n$.
 
 ## Depends on
 
-- [Enc W](enc-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Proof depends on
 
-- [Enc W cons](enc-w-cons.md)
+- [Witness encoding of a nonempty list](enc-w-cons.md)
 
 ## Sources
 

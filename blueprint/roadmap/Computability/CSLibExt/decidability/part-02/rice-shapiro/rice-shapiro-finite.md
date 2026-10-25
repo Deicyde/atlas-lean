@@ -13,12 +13,12 @@ recognizable index set has a partial recursive finite subfunction in the class.
 
 ## Depends on
 
-- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Recognizability by multi-stack machines](../../part-01/basic/tm2-recognizable.md)
 
 ## Proof depends on
 
-- [Not tm2 Co Recognizable halting](../undecidable/not-tm2-co-recognizable-halting.md)
-- [Tm2 Recognizable of many One Reducible](../undecidable/tm2-recognizable-of-many-one-reducible.md)
+- [The halting problem is not co-recognizable by multi-stack machines](../undecidable/not-tm2-co-recognizable-halting.md)
+- [Recognizability transfers along mapping reductions](../undecidable/tm2-recognizable-of-many-one-reducible.md)
 - [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.Karp.ColGrows
 ---
 
-# Col Grows
+# Growth of construction states
 
-`s'` extends `s`: `next` does not decrease, and edges and occurrences accumulate.
+**Growth of construction states.** A construction state $s'$ extends a construction state $s$
+when the next free vertex of $s'$ is at least that of $s$, every edge emitted in $s$ is emitted in
+$s'$, and every occurrence recorded in $s$ is recorded in $s'$.
 
 ## Depends on
 
-- [Col St](../color/col-st.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 
 ## Sources
 

@@ -5,21 +5,23 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.reduce
 ---
 
-# Reduce
+# The total reduction of reachability with nonempty sides to MPCP
 
-The total reduction: `toMPCP` when the rules have nonempty sides, and the unsolvable empty
-instance otherwise.
+**The total reduction of reachability with nonempty sides to MPCP.** On an instance
+$(R, x, y)$ of the reachability problem, the reduction returns the MPCP instance of $(R, x, y)$
+when every rule of $R$ has a nonempty left side and a nonempty right side, and otherwise the empty
+list of dominoes, which has no solution.
 
 ## Depends on
 
-- [Domino](../../part-01/pcp/domino.md)
-- [Sym](../../part-01/pcp/sym.md)
-- [Rule](rule.md)
+- [Domino (Post correspondence problem)](../../part-01/pcp/domino.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
+- [Rewriting rules](rule.md)
 
 ## Proof depends on
 
-- [Nonempty Words B](../../part-01/pcp/nonempty-words-b.md)
-- [To MPCP](to-mpcp.md)
+- [Boolean test for nonempty words](../../part-01/pcp/nonempty-words-b.md)
+- [The MPCP instance of a reachability instance](to-mpcp.md)
 
 ## Sources
 

@@ -4,24 +4,24 @@ navigation: module
 
 # Dense To Binary Converter
 
-- [Bin Conv](bin-conv.md)
-- [Stk](stk.md)
+- [The dense-to-binary translation on bit strings](bin-conv.md)
+- [Stacks of the dense-to-binary machine](stk.md)
 - [Lab](lab.md)
-- [Stk](stk-2.md)
-- [Prog](prog.md)
-- [Run](run.md)
+- [Stack contents of the converter](stk-2.md)
+- [The dense-to-binary converter program](prog.md)
+- [Exact runs of the dense-to-binary converter](run.md)
 
 ## Loops
 
-- [Mv run](mv-run.md)
-- [Fin run](fin-run.md)
+- [Exact runs of the dense-to-binary converter](mv-run.md)
+- [The converter's final phase](fin-run.md)
 
 ## The main loop
 
-- [Conv T](conv-t.md)
+- [Step count of the main loop](conv-t.md)
 
 ## Time bound and the packaged machine
 
-- [Conv T le](conv-t-le.md)
-- [Tm](tm.md)
+- [Step bound for the main loop](conv-t-le.md)
+- [The dense-to-binary machine](tm.md)
 - [The dense-to-binary translation on raw bits is polynomial-time](computable.md)

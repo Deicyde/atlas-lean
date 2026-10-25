@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Distributed.LamportClock.timestamps_getD_take
 ---
 
-# Timestamps get D take
+# A timestamp depends only on a prefix containing its event
 
-Timestamps are determined by the prefix up to the event.
+**A timestamp depends only on a prefix containing its event.** Let $e_0, \dots, e_{n-1}$ be
+an execution and let $i < k \le n$. The Lamport timestamp of $e_i$ in the whole execution equals
+its Lamport timestamp in the prefix $e_0, \dots, e_{k-1}$.
 
 ## Depends on
 
 - [Event](event.md)
-- [Timestamps](timestamps.md)
+- [Lamport timestamps](timestamps.md)
 
 ## Proof depends on
 
-- [Timestamps append](timestamps-append.md)
+- [Appending events does not change earlier timestamps](timestamps-append.md)
 
 ## Sources
 

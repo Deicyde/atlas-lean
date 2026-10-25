@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Decidability.Post.endMark
 ---
 
-# End Mark
+# End marker
 
-The end marker `◇`.
+**End marker.** The end marker $\diamond$ is the symbol of the extended alphabet of the
+MPCP-to-PCP reduction that is neither a letter of $\alpha$ nor the star $\star$.
 
 ## Depends on
 
-- [Sym](sym.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 
 ## Sources
 

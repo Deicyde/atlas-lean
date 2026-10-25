@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.SatVerifier.Sym.bit?
 ---
 
-# Bit?
+# Reading a symbol as a name bit
 
-Read a symbol as a name bit; every other symbol ends a name block.
+**Reading a symbol as a name bit.** A symbol of the token and table stacks that is the name
+bit $b$ reads as the bit $b$; every other symbol reads as no bit, and so ends a name block.
 
 ## Depends on
 
-- [Sym](sym.md)
+- [Stack alphabet of the SAT verifier](sym.md)
 
 ## Sources
 

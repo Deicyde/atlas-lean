@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.budget
 ---
 
-# Budget
+# Per-token step budget of the 3-COLOR emitter
 
-The step budget per token, for formulas of at most `Lb` tokens.
+**Per-token step budget of the 3-COLOR emitter.** For a bound $L$ on the number of tokens of
+a formula, the step budget per token is $400 (L + 1)^2$.
 
 ## Depends on
 

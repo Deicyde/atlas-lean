@@ -27,7 +27,7 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
-- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Dense encoding of a clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
@@ -37,7 +37,7 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Increasing literal positions](../family/inc.md)
 - [Encoding a dense clause block by block](../family/encode-clause-dense-clause.md)
 - [Gap encoding of a dense clause](../family/gap-enc.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

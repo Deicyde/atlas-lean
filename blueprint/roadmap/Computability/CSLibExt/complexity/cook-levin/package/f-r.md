@@ -11,7 +11,7 @@ The reduction function on encoded inputs: decode the raw symbols, emit `Phi`.
 
 ## Depends on
 
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 
 ## Proof depends on
 

@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.mod_pow_eq_of_digits
 ---
 
-# Mod pow eq of digits
+# Equal low-order digits give equal residues
 
-A natural number below `b^n` is determined by its first `n` base-`b` digits.
+**Equal low-order digits give equal residues.** Let $b$, $i$, $i'$ and $n$ be natural
+numbers. If $\lfloor i / b^e \rfloor \bmod b = \lfloor i' / b^e \rfloor \bmod b$ for every
+$e < n$, that is, $i$ and $i'$ have the same first $n$ base-$b$ digits, then
+$i \bmod b^n = i' \bmod b^n$.
 
 ## Depends on
 

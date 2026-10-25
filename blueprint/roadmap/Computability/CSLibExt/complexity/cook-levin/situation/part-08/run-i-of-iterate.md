@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Situation.runI_of_iterate
 ---
 
-# Run I of iterate
+# The idle-extended run follows the real run
 
-If the real machine reaches `c'` in exactly `n` steps, the idle-extended run agrees at `n`.
+**The idle-extended run follows the real run.** Let $M$ be a finite stack machine, let
+$n \in \mathbb{N}$, and let $c, c'$ be configurations of $M$. If iterating the step function of
+$M$ $n$ times as a partial function, starting from $c$, yields $c'$, then the idle-extended run
+of $M$ from $c$ is at $c'$ after $n$ steps.
 
 ## Depends on
 
-- [Run I](../part-03/run-i.md)
+- [Idle-extended run](../part-03/run-i.md)
 
 ## Proof depends on
 
-- [Run I succ'](../part-07/run-i-succ.md)
-- [Step I](../part-03/step-i.md)
+- [The all-true assignment violates the accept family](../part-07/run-i-succ.md)
+- [Idle-extended step](../part-03/step-i.md)
 
 ## Sources
 

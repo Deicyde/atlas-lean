@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.noSS
 ---
 
-# No SS
+# Fixed no-instance of SUBSET-SUM
 
-A fixed no-instance: no numbers, target `1`.
+**Fixed no-instance of SUBSET-SUM.** The encoding of the SUBSET-SUM instance with no numbers
+and target $1$. It is a no-instance, because the only sublist of the empty list sums to $0$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Encode SS](encode-ss.md)
+- [Bit-string encoding of SUBSET-SUM instances](encode-ss.md)
 
 ## Sources
 

@@ -6,39 +6,46 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.dfront_run
 ---
 
-# Dfront run
+# Front of a diamond
 
-The head of a diamond: `N := P + M + 1`, then the frame.
+**Front of a diamond.** Let $B, m, i \in \mathbb{N}$, let $b$ be a state bit, and let $s$ be a
+quiescent state of the emitter whose stack $V$ is nonempty, whose counter $P$ equals the top of
+diamond $i$ for $m$ clauses, whose counter $M$ equals $3m$, whose counter $N$ is $0$, and whose
+counters $R$, $J$, $D$ are at most $B$, and suppose row vertex $3m$ of diamond $i$ is at most $B$.
+Then for some state bit $b'$ the emitter goes in at most $20B + 30$ steps from label $\mathrm{h0}$
+with state bit $b$ and the stacks of $s$ to label $\mathrm{r0}$ with state bit $b'$ and the stacks
+of $s$ with $N$ set to row vertex $3m$ of diamond $i$ and the edge-bit list $q$ extended by the
+bits of the frame arcs of diamond $i$.
 
 ## Depends on
 
-- [K](../ham-path-emit-machine/k.md)
-- [Lab](../ham-path-emit-machine/lab.md)
-- [MS](../ham-path-emit-machine/ms.md)
-- [Stk](../ham-path-emit-machine/stk.md)
-- [Frame E](../ham-path-emit-spec/frame-e.md)
-- [Prog](../ham-path-emit-machine/prog.md)
-- [Γ](../ham-path-emit-machine/untitled.md)
-- [Edge Bits](../color/edge-bits.md)
-- [Hp R](../ham-path/hp-r.md)
-- [Hp T](../ham-path/hp-t.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
+- [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
+- [Quiescent states of the HAMPATH emitter](../ham-path-emit-machine/ms.md)
+- [Stacks of a quiescent emitter state](../ham-path-emit-machine/stk.md)
+- [The frame of a diamond](../ham-path-emit-spec/frame-e.md)
+- [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
+- [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Chain](../ham-path-emit-machine/chain.md)
-- [Val](../ham-path-emit-machine/val.md)
-- [Site](../ham-path-emit-machine/site.md)
-- [Ext](../ham-path-emit-machine/ext.md)
-- [Src](../ham-path-emit-machine/src-2.md)
-- [Src](../ham-path-emit-machine/src.md)
-- [Atom](../ham-path-emit-machine/atom.md)
-- [Chain Cost](../ham-path-emit-machine/chain-cost.md)
-- [Chain run](../ham-path-emit-machine/chain-run.md)
-- [Cp run](../ham-path-emit-machine/cp-run.md)
-- [Frame Sites](frame-sites.md)
-- [Hp T succ eq hp R](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
+- [Copy sites chained in the HAMPATH emitter](../ham-path-emit-machine/chain.md)
+- [Counter values of a quiescent emitter state](../ham-path-emit-machine/val.md)
+- [Copy sites of the HAMPATH emitter](../ham-path-emit-machine/site.md)
+- [Extra ones of a copy site](../ham-path-emit-machine/ext.md)
+- [Counter read by a copy site](../ham-path-emit-machine/src-2.md)
+- [Counters read by copy sites](../ham-path-emit-machine/src.md)
+- [Bits pushed by a copy site of the HAMPATH emitter](../ham-path-emit-machine/atom.md)
+- [Step count of a list of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-cost.md)
+- [Running a chain of copy sites in the HAMPATH emitter](../ham-path-emit-machine/chain-run.md)
+- [Copying a counter in the HAMPATH emitter](../ham-path-emit-machine/cp-run.md)
+- [Frame copy sites of the HAMPATH emitter](frame-sites.md)
+- [The next diamond top follows the row](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)

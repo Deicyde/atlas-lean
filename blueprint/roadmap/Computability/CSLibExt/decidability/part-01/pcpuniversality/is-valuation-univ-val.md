@@ -6,35 +6,39 @@ proof: formalized
 lean: Cslib.Decidability.Grammar.isValuation_univVal
 ---
 
-# `univVal P` is a valuation of `univGrammar P`
+# The intended languages form a valuation of the universality grammar
 
-**`univVal P` is a valuation of `univGrammar P`.**
+**The intended languages form a valuation of the universality grammar.** Let $\alpha$ be a
+finite alphabet with decidable equality and let $P$ be a list of dominoes over $\alpha$. The
+assignment of intended languages to the nonterminals of the universality grammar of $P$ is a
+valuation of that grammar: for every production $A \to \gamma$, the language that $\gamma$ denotes
+under the assignment is contained in the language assigned to $A$.
 
 ## Depends on
 
 - [The universality grammar](univ-grammar.md)
-- [Univ Val](univ-val.md)
-- [Domino](../pcp/domino.md)
+- [Intended languages of the nonterminals of the universality grammar](univ-val.md)
+- [Domino (Post correspondence problem)](../pcp/domino.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Is Valuation](../../../languages/context-free/part-01/basic/is-valuation.md)
 
 ## Proof depends on
 
-- [All Letters](all-letters.md)
-- [Base Rules](base-rules.md)
-- [Bit Code](bit-code.md)
-- [Bit Codes](bit-codes.md)
-- [Domino](../cfgundecidable/domino.md)
-- [Flat](../cfgundecidable/flat.md)
-- [Malformed Lang](malformed-lang.md)
-- [Mem eval Form one](mem-eval-form-one.md)
-- [Mem eval Form two](mem-eval-form-two.md)
-- [Mismatch Lang](mismatch-lang.md)
-- [Mismatch Rules](mismatch-rules.md)
-- [Others](others.md)
-- [U Bit](u-bit.md)
-- [U Letter](u-letter.md)
-- [U Nt](u-nt.md)
+- [List of all letters](all-letters.md)
+- [Domino-independent productions of the universality grammar](base-rules.md)
+- [Unary code of an index](bit-code.md)
+- [Concatenated code of an index sequence](bit-codes.md)
+- [The $i$-th domino of a list](../cfgundecidable/domino.md)
+- [The letter part of an index sequence](../cfgundecidable/flat.md)
+- [Malformed words](malformed-lang.md)
+- [Evaluating a form with one nonterminal](mem-eval-form-one.md)
+- [Evaluating a form with two nonterminals](mem-eval-form-two.md)
+- [The mismatch language](mismatch-lang.md)
+- [The mismatch productions](mismatch-rules.md)
+- [The letters other than a given letter](others.md)
+- [Encoded bit terminal](u-bit.md)
+- [Encoded letter terminal](u-letter.md)
+- [Encoded nonterminal](u-nt.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)

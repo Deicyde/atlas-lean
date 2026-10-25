@@ -8,44 +8,47 @@ lean: Cslib.Complexity.SatVerifier.Tokenizer.run_none
 
 # Rejecting run
 
-**Rejecting run.** On an input that does not decode, the machine reaches `rej` within
-`2 |x| + 2` steps.
+**Rejecting run.** Let $x$ and $w$ be bit strings such that $x$ does not decode as a CNF
+formula. For every bit $v$ and stacks $S$ with the bits of $x$ on the formula stack $X$, the bits
+of $w$ on the witness stack $W$, and both counter stacks $CC$ and $LC$ empty, the tokenizer
+started at its start label with internal bit $v$ and stacks $S$ reaches a configuration with label
+$\mathsf{rej}$ within $2|x| + 2$ steps.
 
 ## Depends on
 
-- [Sym](../sat-verifier-spec/sym.md)
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Start](start.md)
-- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
+- [Stacks of the SAT tokenizer](k.md)
+- [Labels of the SAT tokenizer](lab.md)
+- [The tokenizer program](prog.md)
+- [Start label of the SAT tokenizer](start.md)
+- [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Rej](rej.md)
-- [Clauses fail](clauses-fail.md)
-- [Clauses run](clauses-run.md)
-- [Rej one](rej-one.md)
-- [St](st.md)
-- [Un fail](un-fail.md)
-- [Un run](un-run.md)
-- [Ents Of](../sat-verifier-spec/ents-of.md)
-- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
-- [Toks](../sat-verifier-spec/toks.md)
-- [Decode CNFAux](../../cook-levin/decode-cnfaux.md)
-- [Decode Clause](../../cook-levin/decode-clause.md)
-- [Decode Clauses](../../cook-levin/decode-clauses.md)
-- [Decode Lit](../../cook-levin/decode-lit.md)
-- [Decode Lits](../../cook-levin/decode-lits.md)
-- [Decode Nat Prefix](../../cook-levin/decode-nat-prefix.md)
-- [Encode CNF](../../cook-levin/encode-cnf.md)
-- [Encode Clause](../../cook-levin/encode-clause.md)
-- [Encode Lit](../../cook-levin/encode-lit.md)
-- [Encode Nat Prefix](../../cook-levin/encode-nat-prefix.md)
-- [Read Unary Length](../../cook-levin/read-unary-length.md)
-- [Undelimit eq some iff](../../cook-levin/undelimit-eq-some-iff.md)
+- [Rejection within a step bound](rej.md)
+- [Tokenizer rejects undecodable clauses](clauses-fail.md)
+- [Tokenizer run on all clauses](clauses-run.md)
+- [One step to rejection](rej-one.md)
+- [Tokenizer stack contents](st.md)
+- [An unterminated unary count is rejected](un-fail.md)
+- [Reading a unary count](un-run.md)
+- [Occurrence table of a list of variables](../sat-verifier-spec/ents-of.md)
+- [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
+- [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
+- [Decoding a length-prefixed CNF formula](../../cook-levin/decode-cnfaux.md)
+- [Decoding a length-prefixed clause](../../cook-levin/decode-clause.md)
+- [Decoding a fixed number of clauses](../../cook-levin/decode-clauses.md)
+- [Decoding a literal](../../cook-levin/decode-lit.md)
+- [Decoding a fixed number of literals](../../cook-levin/decode-lits.md)
+- [Decoding a prefix-coded natural number](../../cook-levin/decode-nat-prefix.md)
+- [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
+- [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
+- [Binary code of a literal](../../cook-levin/encode-lit.md)
+- [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
+- [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
+- [Parsing a self-delimiting block](../../cook-levin/undelimit-eq-some-iff.md)
 - [Vars Of](../../sat-time-m/vars-of.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Delimit](../../../MathlibExt/complexity/delimit.md)

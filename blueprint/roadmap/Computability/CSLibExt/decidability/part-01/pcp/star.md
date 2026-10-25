@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Decidability.Post.star
 ---
 
-# Star
+# The star symbol
 
-The star `⋆`.
+**The star symbol.** The star $\star$ is the new symbol of the extended alphabet that is
+neither a letter of $\alpha$ nor the end marker $\diamond$.
 
 ## Depends on
 
-- [Sym](sym.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](sym.md)
 
 ## Sources
 

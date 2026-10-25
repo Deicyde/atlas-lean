@@ -36,7 +36,7 @@ $l = 0$.
 - [Offset of a literal in a one-hot clause](off.md)
 - [Literal sign of a clause kind](sg.md)
 - [Label after a literal routine of the one-hot generator](after.md)
-- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Two-bit code of a slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
 - [Decr](../../../../MathlibExt/turing-machine/program/decr.md)

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Verifier.W
 ---
 
-# W
+# Work stacks of the dense CNF-SAT verifier
 
-Work stacks: the input stack, a stash for the formula, and two stacks for the assignment.
+**Work stacks of the dense CNF-SAT verifier.** The verifier has four work stacks: the input
+stack, a stack $F$ that stashes the formula, and two stacks $A$ and $B$ for the assignment.
 
 ## Depends on
 

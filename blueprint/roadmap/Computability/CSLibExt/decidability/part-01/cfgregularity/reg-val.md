@@ -11,17 +11,17 @@ The languages of the nonterminals of `regGrammar g`.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [Alphabet of the reduction from universality to regularity](letter.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 
-- [Bit Words](bit-words.md)
-- [Bl](bl.md)
-- [Letter Words](letter-words.md)
-- [Reg Lang](reg-lang.md)
-- [Tl](tl.md)
-- [Zero One](zero-one.md)
+- [Bit words](bit-words.md)
+- [Bits as letters](bl.md)
+- [Words over $T$ in the reduction alphabet](letter-words.md)
+- [The target language of the regularity reduction](reg-lang.md)
+- [Alphabet letters in the extended alphabet](tl.md)
+- [The language $\{0^n 1^n\}$](zero-one.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Language From](../../../languages/context-free/part-01/basic/language-from.md)

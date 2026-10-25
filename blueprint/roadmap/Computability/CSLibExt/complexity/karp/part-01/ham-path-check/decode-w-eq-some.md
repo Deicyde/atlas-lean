@@ -8,17 +8,19 @@ lean: Cslib.Complexity.Karp.HamVerify.decodeW_eq_some
 
 # The witness codec
 
-**The witness codec**: `decodeW` succeeds exactly on witnesses.
+**The witness codec.** For every list $w$ of bits and every list $p$ of natural numbers, the
+witness decoder returns $p$ on $w$ if and only if $w$ is the witness encoding of $p$, which
+writes each entry $v$ of $p$ as $v$ copies of true followed by false.
 
 ## Depends on
 
-- [Decode W](decode-w.md)
-- [Enc W](enc-w.md)
+- [Witness decoder](decode-w.md)
+- [Witness encoding](enc-w.md)
 
 ## Proof depends on
 
-- [Decode W enc W](decode-w-enc-w.md)
-- [Enc W of decode W](enc-w-of-decode-w.md)
+- [Decoding inverts the witness encoding](decode-w-enc-w.md)
+- [The witness decoder succeeds only on encodings](enc-w-of-decode-w.md)
 
 ## Sources
 

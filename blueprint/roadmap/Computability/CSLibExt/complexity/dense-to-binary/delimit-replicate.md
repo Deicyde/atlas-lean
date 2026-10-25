@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Complexity.DenseSAT.ToBinary.delimit_replicate
 ---
 
-# Delimit replicate
+# Self-delimiting code of a block of ones
 
-`rep [true, true] k ++ [false]` self-delimits `k` ones.
+**Self-delimiting code of a block of ones.** For every $k \in \mathbb{N}$, the self-delimiting
+form of the bit string of $k$ ones is $k$ copies of $11$ followed by a single $0$.
 
 ## Depends on
 

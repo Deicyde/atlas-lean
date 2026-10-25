@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.Karp.HamVerify.encW
 ---
 
-# Enc W
+# Witness encoding
 
-A witness: the vertices of a path in unary, each followed by `false`.
+**Witness encoding.** The witness encoding of a list $p$ of natural numbers (the vertices of a
+candidate path) is the bit string obtained by writing each entry $v$ of $p$, in order, as $v$
+copies of true followed by one false, and concatenating the results.
 
 ## Depends on
 

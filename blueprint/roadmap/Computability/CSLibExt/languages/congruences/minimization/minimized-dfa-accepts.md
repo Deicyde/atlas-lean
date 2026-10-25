@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.minimizedDFA_accepts
 ---
 
-# Minimized DFA accepts
+# The minimized DFA accepts the same language
 
-The reindexed minimized automaton recognizes exactly the original language.
+**The minimized DFA accepts the same language.** For every DFA $M$, the minimized DFA of $M$
+accepts exactly the language accepted by $M$.
 
 ## Depends on
 
 - [Minimized DFA](minimized-dfa.md)
-- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on
 
-- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
+- [Left quotients as reachable residuals](left-quotient-equiv-reachable-residuals.md)
 
 ## Sources
 

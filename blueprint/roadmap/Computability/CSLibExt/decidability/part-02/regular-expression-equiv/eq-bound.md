@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Language.EncodedRegex.eqBound
 ---
 
-# Eq Bound
+# Search bound for equivalence
 
-The search bound for equivalence: `2 ^ (m + n)` for expressions whose Thompson automata
-have `m` and `n` states.
+**Search bound for equivalence.** For encoded regular expressions $e_1$ and $e_2$, the search
+bound is $2^{m + n}$, where $m$ and $n$ are the numbers of Thompson states of $e_1$ and $e_2$, each
+computed by one pass over the nodes of the encoding.
 
 ## Depends on
 
-- [Encoded Regex](../regular-expression/encoded-regex.md)
+- [Encoded regular expressions](../regular-expression/encoded-regex.md)
 
 ## Proof depends on
 
-- [Num Thompson States](num-thompson-states.md)
+- [Thompson state count of an encoding](num-thompson-states.md)
 
 ## Sources
 

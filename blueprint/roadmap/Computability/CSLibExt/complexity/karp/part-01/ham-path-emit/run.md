@@ -6,49 +6,54 @@ proof: formalized
 lean: Cslib.Complexity.Karp.EmitHam.run
 ---
 
-# The emitter
+# Correctness and running time of the HAMPATH emitter
 
-**The emitter.** From `start`, with the token stack `(toks φ).reverse`, the output stack `o`
-and every other stack empty, the machine reaches `done` within `2000 (|toks φ| + 1)⁵` steps with
-Sipser's HAMPATH instance `toHam φ` pushed on the output stack (read top-first).
+**Correctness and running time of the HAMPATH emitter.** Let $\varphi$ be a CNF formula with
+token sequence $\mathrm{toks}(\varphi)$, let $o$ be a list of bits, and let $S$ be stacks in which
+the token stack $T$ holds $\mathrm{toks}(\varphi)$ reversed, the output stack $O$ holds $o$, and
+every other stack is empty. Then for every internal bit $v$ there are an internal bit $v'$ and
+stacks $S'$ such that the emitter goes, in at most $2000(|\mathrm{toks}(\varphi)| + 1)^5$ steps,
+from its start label with bit $v$ and stacks $S$ to label $\mathsf{done}$ with bit $v'$ and stacks
+$S'$, and the output stack of $S'$ is Sipser's HAMPATH instance for $\varphi$ followed by $o$
+(so the instance is read top-first).
 
 ## Depends on
 
-- [K](../ham-path-emit-machine/k.md)
-- [Lab](../ham-path-emit-machine/lab.md)
-- [Prog](../ham-path-emit-machine/prog.md)
-- [Start](../ham-path-emit-machine/start.md)
-- [Γ](../ham-path-emit-machine/untitled.md)
-- [To Ham](../ham-path/to-ham.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
-- [Toks](../../../sat-verifier-spec/toks.md)
+- [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
+- [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
+- [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
+- [Start label of the HAMPATH emitter](../ham-path-emit-machine/start.md)
+- [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
+- [Sipser's HAMPATH instance of a CNF formula](../ham-path/to-ham.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
+- [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../ham-path-emit-machine/ms.md)
-- [Stk](../ham-path-emit-machine/stk.md)
-- [Det E](../ham-path-emit-spec/det-e.md)
-- [Dia MS](../ham-path-emit-machine/dia-ms.md)
+- [Quiescent states of the HAMPATH emitter](../ham-path-emit-machine/ms.md)
+- [Stacks of a quiescent emitter state](../ham-path-emit-machine/stk.md)
+- [Clause detours in a diamond](../ham-path-emit-spec/det-e.md)
+- [The emitter state before the diamonds](../ham-path-emit-machine/dia-ms.md)
 - [The diamonds](diamonds-run.md)
-- [Edge Bits length le](../ham-path-emit-spec/edge-bits-length-le.md)
-- [The output](final-run.md)
-- [Frame E](../ham-path-emit-spec/frame-e.md)
-- [Hp T succ eq hp R](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
-- [Init MS](../ham-path-emit-machine/init-ms.md)
-- [Phase A](../ham-path-emit-machine/phase-a-run.md)
-- [Row E](../ham-path-emit-spec/row-e.md)
-- [To Ham eq](../ham-path-emit-spec/to-ham-eq.md)
-- [Diamond Edges](../ham-path/diamond-edges.md)
-- [Edge Bits](../color/edge-bits.md)
-- [Ham Edges](../ham-path/ham-edges.md)
-- [Ham Vars](../ham-path/ham-vars.md)
-- [Hp R](../ham-path/hp-r.md)
-- [Hp T](../ham-path/hp-t.md)
-- [Hp T mono](../ham-path/hp-t-mono.md)
-- [Clause Toks](../../../sat-verifier-spec/clause-toks.md)
-- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
+- [Length bound for the bit encoding of an edge list](../ham-path-emit-spec/edge-bits-length-le.md)
+- [The output phase of the HAMPATH emitter](final-run.md)
+- [The frame of a diamond](../ham-path-emit-spec/frame-e.md)
+- [The next diamond top follows the row](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
+- [Initial state of the HAMPATH emitter](../ham-path-emit-machine/init-ms.md)
+- [Phase A of the HAMPATH emitter](../ham-path-emit-machine/phase-a-run.md)
+- [The row arcs of a diamond](../ham-path-emit-spec/row-e.md)
+- [The HAMPATH instance as unary blocks and arc bits](../ham-path-emit-spec/to-ham-eq.md)
+- [Arcs of a variable diamond](../ham-path/diamond-edges.md)
+- [Bit encoding of an edge list](../color/edge-bits.md)
+- [Arcs of the HAMPATH construction](../ham-path/ham-edges.md)
+- [Distinct variables of a formula](../ham-path/ham-vars.md)
+- [Row vertices of a diamond](../ham-path/hp-r.md)
+- [Tops of the diamonds](../ham-path/hp-t.md)
+- [Tops are monotone in the diamond index](../ham-path/hp-t-mono.md)
+- [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
+- [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [Vars Of](../../../../sat-time-m/vars-of.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)

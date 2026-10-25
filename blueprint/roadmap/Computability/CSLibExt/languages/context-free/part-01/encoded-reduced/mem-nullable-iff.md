@@ -20,11 +20,11 @@ lean: Cslib.Language.EncodedCFG.mem_nullable_iff
 ## Proof depends on
 
 - [Eq nil of yields no Terminals](eq-nil-of-yields-no-terminals.md)
-- [Soundness](../../../../decidability/part-01/context-free/exists-derives-of-mem-iterate.md)
-- [Generating](../../../../decidability/part-01/context-free/generating.md)
+- [Soundness of the productive-nonterminal iteration](../../../../decidability/part-01/context-free/exists-derives-of-mem-iterate.md)
+- [Generating nonterminals](../../../../decidability/part-01/context-free/generating.md)
 - [Language](../encoded/language.md)
 - [No Terminals](no-terminals.md)
-- [Completeness](../../../../decidability/part-01/context-free/start-mem-generating-of-mem-language.md)
+- [Completeness of the generating-nonterminal computation](../../../../decidability/part-01/context-free/start-mem-generating-of-mem-language.md)
 - [Yields no Terminals](yields-no-terminals.md)
 - [Yields of yields no Terminals](yields-of-yields-no-terminals.md)
 - [Yields](../../part-02/yields/yields.md)

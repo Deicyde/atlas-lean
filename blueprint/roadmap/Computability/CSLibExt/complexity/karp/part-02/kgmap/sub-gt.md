@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGMap.sub_gt
 ---
 
-# Sub gt
+# Failed subtraction in the KG-map machine
 
-Subtraction for `k > n`: `bad` after `n + 1` steps.
+**Failed subtraction in the KG-map machine.** Let $m$ be a mode and $n < k$ natural numbers.
+From any configuration of the KG-map machine $M_m$ at the label subtract, with any internal bit,
+in which stack $A$ holds $k$ copies of the unit symbol and stack $D$ holds $n$ copies, $M_m$
+reaches the failure label in exactly $n + 1$ steps, with every stack other than $A$ and $D$
+unchanged.
 
 ## Depends on
 
 - [K](k.md)
 - [Lab](lab.md)
-- [Mode](mode.md)
-- [U](u.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Modes of the CLIQUE/VERTEX-COVER reduction machine](mode.md)
+- [Counter unit symbol of the clique reduction machine](u.md)
+- [The KG-map machine](prog.md)
+- [Stack alphabets of the clique reduction machine](untitled.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 

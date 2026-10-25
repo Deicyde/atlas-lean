@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.ctlCount
 ---
 
-# Ctl Count
+# Number of control symbols
 
-The number of state and halting symbols in a word.
+**Number of control symbols.** The number of control symbols of a word $w$ over the symbols of
+the rewriting system simulating a single-tape machine is the number of letters of $w$ that are
+states or the halting symbol $H$.
 
 ## Depends on
 
-- [TMSym](tmsym.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Proof depends on
 
-- [Is Ctl B](is-ctl-b.md)
+- [Boolean test for control symbols](is-ctl-b.md)
 
 ## Sources
 

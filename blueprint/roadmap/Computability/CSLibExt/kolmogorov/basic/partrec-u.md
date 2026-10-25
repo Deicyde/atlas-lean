@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Kolmogorov.partrec_U
 ---
 
-# Partrec U
+# The universal description method is partial recursive
 
-The universal description method is partial recursive.
+**The universal description method is partial recursive.** The universal description
+method, as a partial function from binary strings to binary strings, is partial recursive.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ The universal description method is partial recursive.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Running a program on a binary string](run.md)
 
 ## Sources
 

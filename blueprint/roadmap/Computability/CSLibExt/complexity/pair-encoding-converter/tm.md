@@ -5,9 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.DenseSAT.Converter.tm
 ---
 
-# Tm
+# The pair-encoding converter machine
 
-The converter as a `FinTM2`: input stack `inp` (alphabet `Bool`), output stack `out`.
+**The pair-encoding converter machine.** The converter is the finite multi-stack Turing
+machine whose stacks are the input stack, the output stack and the two stash stacks, with bits
+as the alphabet of every stack except the output stack, which holds the verifier's symbols. Its
+labels are the five phases (read the first component, read the second, emit the second, emit
+the separator, emit the first), and it starts in the phase that reads the first component. Its
+internal state is an optional bit (the last bit popped), initially empty, and it runs the
+converter program. Input is read from the input stack, which holds bits, and output is written
+to the output stack.
 
 ## Depends on
 
@@ -15,11 +22,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lab](lab.md)
-- [St](st.md)
-- [Stk](stk.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
+- [Labels of the pair-encoding converter](lab.md)
+- [State of the pair-encoding converter](st.md)
+- [Stacks of the pair-encoding converter](stk.md)
+- [Program of the pair-encoding converter](prog.md)
+- [Stack alphabets of the pair-encoding converter](untitled.md)
 
 ## Sources
 

@@ -19,11 +19,11 @@ $e$, the code of $\mathit{acc}$.
 ## Depends on
 
 - [The accept family of a layout](acc-fam.md)
-- [Enc](../situation/part-01/enc.md)
+- [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
 - [The accept family](../situation/part-07/acc-family.md)
-- [Acode](../situation/part-07/acode.md)
-- [Layout](../situation/part-01/layout.md)
-- [CNF](../../dense-sat/cnf.md)
+- [Accepting code](../situation/part-07/acode.md)
+- [Clause layout of a machine encoding](../situation/part-01/layout.md)
+- [Dense CNF formula](../../dense-sat/cnf.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ $f(x)$.
 
 ## Depends on
 
-- [Dense Sat Dec](../../dense-satin-np/dense-sat-dec.md)
-- [Poly Many One Red](../../../cook-levin/poly-many-one-red.md)
+- [Dense CNF-SAT as a decision problem](../../dense-satin-np/dense-sat-dec.md)
+- [Polynomial-time many-one reduction](../../../cook-levin/poly-many-one-red.md)
 - [Decision Complexity Class](../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../MathlibExt/complexity/np.md)
@@ -26,10 +26,10 @@ $f(x)$.
 - [The Cook–Levin reduction is polynomial-time](is-poly-time-red.md)
 - [The Cook–Levin reduction](red.md)
 - [Correctness of the reduction](v-correct.md)
-- [CNF-SAT](../../dense-sat/sat.md)
-- [Computable](../../encoding-converters/computable.md)
-- [G](../../dense-satverifier/g.md)
-- [Pair Encode](../../dense-satverifier/pair-encode.md)
+- [Dense CNF-SAT](../../dense-sat/sat.md)
+- [Canonical bit-list decoder](../../encoding-converters/computable.md)
+- [Work alphabet of the dense-SAT verifier](../../dense-satverifier/g.md)
+- [Pair encoding $w \# y$](../../dense-satverifier/pair-encode.md)
 - [Bitstring Encoding](../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

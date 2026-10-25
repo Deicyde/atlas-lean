@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.Karp.EmitColor.consSites
 ---
 
-# Cons Sites
+# Copy sites of the consistency edges
 
-The consistency edges with an earlier occurrence (`L'` on `U`): equal (`true`) or opposite
-polarity.
+**Copy sites of the consistency edges.** For a flag $b$, the list of copy sites that push the
+consistency edges with an earlier occurrence whose literal vertex $L'$ is on stack $U$: the
+sites $c_1, c_2, c_3, c_4$ (equal polarity) when $b$ is true, and the sites
+$d_1, d_2, d_3, d_4$ (opposite polarity) when $b$ is false.
 
 ## Depends on
 
-- [Site](site.md)
+- [Copy sites of the 3-COLOR emitter](site.md)
 
 ## Sources
 

@@ -6,25 +6,35 @@ proof: formalized
 lean: Cslib.Complexity.Karp.KGVerify.row_run
 ---
 
-# Row run
+# One row of the clique verifier's walk
 
-One row: the walk, then `back` restores the later vertices on `V`.
+**One row of the clique verifier's walk.** Let $m$ be a mode, $s_i$ a bit, $r$ and $b$
+lists of bits, $v$ a state and $S$ stack contents in which the vertex stack $V$ holds, from
+the top, the bits of the reverse $\rho$ of $r$ followed by $s_i$, the scratch stack $T$ is
+empty, and the input stack $X$ holds the bits $b$. Call the row condition: $|r| \le |b|$,
+and either $s_i$ is free for $m$ or $\mathrm{sat}_m(b_t, \rho_t)$ holds for every $t < |r|$
+(indices from $0$). Then there are a state $v'$ and stack contents $S'$ such that within at
+most $2|r| + 2$ steps the verifier program of mode $m$ goes from label walk(true) with
+state $v$ and stacks $S$ to state $v'$ and stacks $S'$ at label walk(true) if the row
+condition holds and at the rejecting label otherwise; and if the row condition holds, then
+in $S'$ the stack $V$ holds the bits of $\rho$, $T$ is empty, and $X$ holds $b$ with its
+first $|r|$ bits dropped.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Mode](mode.md)
-- [Free](free.md)
-- [Sat](sat.md)
+- [Stacks of the CLIQUE verifier](k.md)
+- [Labels of the CLIQUE verifier](lab.md)
+- [Modes of the clique verifier](mode.md)
+- [Vertices that settle their pairs alone](free.md)
+- [The pair condition left to the later vertex](sat.md)
 - [Prog](prog.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Walk Row run](walk-row-run.md)
-- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)

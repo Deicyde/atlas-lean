@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Decidability.Rewriting.lift
 ---
 
-# Lift
+# Lifting a word to the extended alphabet
 
-A word over `α` as a word of letters of `Sym α`.
+**Lifting a word to the extended alphabet.** A word $a_1 \cdots a_n$ over $\alpha$ is sent to
+the word $a_1 \cdots a_n$ over the extended alphabet of $\alpha$ in which each $a_i$ is read as a
+letter.
 
 ## Depends on
 
-- [Sym](../../part-01/pcp/sym.md)
+- [The extended alphabet of the MPCP-to-PCP reduction](../../part-01/pcp/sym.md)
 
 ## Proof depends on
 
-- [Letter](../../part-01/pcp/letter.md)
+- [The alphabet inside the extended alphabet](../../part-01/pcp/letter.md)
 
 ## Sources
 

@@ -6,29 +6,31 @@ proof: formalized
 lean: DFA.mem_block_iff
 ---
 
-# Mem block iff
+# Blocks of Hopcroft's partition are language classes
 
-Each block of Hopcroft's partition is the class of states with one continuation language.
+**Blocks of Hopcroft's partition are language classes.** Let $M$ be a DFA, $D$ a block of
+Hopcroft's final partition of $M$ and $p$ a state in $D$. Then a state $q$ lies in $D$ if and only
+if the language accepted by $M$ from $q$ equals the language accepted by $M$ from $p$.
 
 ## Depends on
 
-- [Hopcroft Partition](hopcroft-partition.md)
+- [Hopcroft's partition](hopcroft-partition.md)
 
 ## Proof depends on
 
-- [Inv](inv.md)
-- [Rel iff](rel-iff.md)
-- [Mem iff of rel](mem-iff-of-rel.md)
-- [Rel](rel.md)
-- [Acc Block](acc-block.md)
-- [Init P](init-p.md)
-- [Init W](init-w.md)
-- [Inv init](inv-init.md)
-- [Rej Block](rej-block.md)
-- [Smaller](smaller.md)
-- [Hopcroft Loop](hopcroft-loop.md)
-- [Termination](hopcroft-loop-spec.md)
-- [Is Partition hopcroft Partition](is-partition-hopcroft-partition.md)
+- [Invariants of Hopcroft's loop](inv.md)
+- [With an empty waiting list, blocks are the classes of equal continuation languages](rel-iff.md)
+- [A block contains both or neither of two related states](mem-iff-of-rel.md)
+- [Lying in a common block](rel.md)
+- [Block of accepting states](acc-block.md)
+- [Hopcroft's initial partition](init-p.md)
+- [Hopcroft's initial waiting list](init-w.md)
+- [The invariants hold initially](inv-init.md)
+- [Rejecting states](rej-block.md)
+- [Smaller of two finite sets of states](smaller.md)
+- [Hopcroft's refinement loop](hopcroft-loop.md)
+- [Termination of Hopcroft's loop](hopcroft-loop-spec.md)
+- [Hopcroft's final partition is a partition](is-partition-hopcroft-partition.md)
 
 ## Sources
 

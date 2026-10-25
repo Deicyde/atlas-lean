@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.terminals
 ---
 
-# Terminals
+# The terminals of an encoded grammar
 
-The terminals occurring in the productions, each listed once (repetitions would make
-`wordsOver` enumerate the same word many times).
+**The terminals of an encoded grammar.** For an encoded context-free grammar $g$ over an
+alphabet $T$ with decidable equality, the list of the terminals that occur in the right-hand
+sides of the productions of $g$, each listed once.
+
+Listing each terminal once keeps the enumeration of the words over these terminals free of
+repetitions.
 
 ## Depends on
 

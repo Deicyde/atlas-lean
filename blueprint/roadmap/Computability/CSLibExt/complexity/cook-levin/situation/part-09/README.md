@@ -4,4 +4,4 @@ navigation: transparent
 
 # Part 9 of 9
 
-- [Soundness + completeness of the five families (Sit level)](five-iff.md)
+- [The five Cook–Levin clause families are satisfiable iff some certificate is accepted](five-iff.md)

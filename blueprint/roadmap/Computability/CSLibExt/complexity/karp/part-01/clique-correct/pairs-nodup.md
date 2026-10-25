@@ -12,7 +12,7 @@ No pair is listed twice (rows have distinct first components).
 
 ## Depends on
 
-- [Pairs](../clique/pairs.md)
+- [Vertex pairs in encoding order](../clique/pairs.md)
 
 ## Sources
 

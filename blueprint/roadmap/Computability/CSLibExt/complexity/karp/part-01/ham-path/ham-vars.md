@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.Karp.hamVars
 ---
 
-# Ham Vars
+# Distinct variables of a formula
 
-The distinct variables of a formula (each kept at its last occurrence).
+**Distinct variables of a formula.** The list of the distinct variables of a CNF formula
+$\varphi$, in order of occurrence in $\varphi$, with each variable kept at its last occurrence.
 
 ## Depends on
 

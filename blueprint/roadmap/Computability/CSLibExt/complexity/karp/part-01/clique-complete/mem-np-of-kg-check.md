@@ -6,29 +6,32 @@ proof: formalized
 lean: Cslib.Complexity.Karp.mem_NP_of_kgCheck
 ---
 
-# Mem NP of kg Check
+# NP membership from the CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier
 
-An `NP` membership from a verifier with witnesses no longer than the input.
+**NP membership from the CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier.** Let $L$ be a
+decision problem, let $m$ be a mode (clique, independent set or vertex cover), and let $V_m$ be
+the verifier of mode $m$. If for every bit string $x$, $L$ accepts $x$ exactly when there is a
+bit string $w$ with $|w| \le |x|$ such that $V_m$ accepts $(x, w)$, then $L$ is in NP.
 
 ## Depends on
 
-- [Mode](../clique-verify/mode.md)
-- [Kg Check](../clique-verify/kg-check.md)
+- [Modes of the clique verifier](../clique-verify/mode.md)
+- [The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER](../clique-verify/kg-check.md)
 - [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 - [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 - [NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
-- [Comp](../../../host/comp.md)
+- [Component machine](../../../host/comp.md)
 - [Verifier host, canonical form](../../../host/is-poly-time-verifier.md)
-- [K](../clique-verify/k.md)
-- [Lab](../clique-verify/lab.md)
+- [Stacks of the CLIQUE verifier](../clique-verify/k.md)
+- [Labels of the CLIQUE verifier](../clique-verify/lab.md)
 - [Prog](../clique-verify/prog.md)
-- [The verifier machine](../clique-verify/run.md)
-- [Start](../clique-verify/start.md)
-- [Kg Verify Comp](kg-verify-comp.md)
-- [Sym](../../../sat-verifier-spec/sym.md)
+- [The verifier machine for clique, independent set and vertex cover](../clique-verify/run.md)
+- [Start label of the clique verifier](../clique-verify/start.md)
+- [The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component](kg-verify-comp.md)
+- [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
 - [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)

@@ -15,8 +15,8 @@ Equivalence test: every reachable pair of states agrees on acceptance.
 
 ## Proof depends on
 
-- [Pair Reachable](pair-reachable.md)
-- [Mem B](../../part-01/primrec-list/mem-b.md)
+- [Reachable pairs of states of two encoded DFAs](pair-reachable.md)
+- [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

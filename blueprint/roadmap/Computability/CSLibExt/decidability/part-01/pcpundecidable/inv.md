@@ -5,18 +5,24 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.Inv
 ---
 
-# Inv
+# Invariant of the rewriting simulation of a single-tape machine
 
-The invariant of words reachable from the start word `initWord l`.
+**Invariant of the rewriting simulation of a single-tape machine.** Let $M$ be a single-tape
+machine with finitely many tape symbols and states, and $l$ an input. A word $w$ satisfies the
+invariant for $l$ when either $w$ spells a configuration that $M$ reaches from its initial
+configuration on $l$, or $M$ halts on $l$ and $w = \vdash X\, H\, Y \dashv$ for some words $X$
+and $Y$ of tape symbols, where $\vdash$ and $\dashv$ are the left and right end markers and $H$
+is the halting symbol. It serves as the invariant of the words reachable from the start word
+of $l$.
 
 ## Depends on
 
-- [TMSym](tmsym.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Proof depends on
 
-- [TM0 Halts On](../../part-02/tm0-halting/tm0-halts-on.md)
-- [Spells](spells.md)
+- [Halting of a single-tape machine](../../part-02/tm0-halting/tm0-halts-on.md)
+- [Words spelling a configuration](spells.md)
 
 ## Sources
 

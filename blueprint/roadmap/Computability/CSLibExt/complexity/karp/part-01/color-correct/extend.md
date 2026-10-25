@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColGood.extend
 ---
 
-# Extend
+# Extending a well-formed state keeps it well formed
 
-Allocating vertices and appending edges between distinct allocated vertices keeps a state
-good.
+**Extending a well-formed state keeps it well formed.** Let $s$ be a well-formed
+construction state with next free vertex $m$, let $n \ge m$, and let $E$ be a list of pairs
+$(a, b)$ of natural numbers with $a < n$, $b < n$ and $a \ne b$. Then the state with next free
+vertex $n$, the same recorded occurrences as $s$, and emitted edges those of $s$ followed by $E$
+is well formed.
 
 ## Depends on
 
-- [Col Good](col-good.md)
-- [Col St](../color/col-st.md)
+- [Well-formed construction states](col-good.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 
 ## Proof depends on
 
-- [Cons Edges](../color/cons-edges.md)
+- [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 
 ## Sources
 

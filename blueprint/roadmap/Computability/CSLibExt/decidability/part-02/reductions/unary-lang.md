@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Decidability.unaryLang
 ---
 
-# Unary Lang
+# Unary language of a set of naturals
 
-The unary language of a set of naturals: the words over `Unit` whose length is in `S`.
+**Unary language of a set of naturals.** For a set $S \subseteq \mathbb{N}$, the unary
+language of $S$ is the language over the one-letter alphabet $\{\ast\}$ consisting of the words
+whose length lies in $S$.
 
 ## Depends on
 

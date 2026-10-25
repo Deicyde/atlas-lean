@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Decidability.TMRewriting.CtlStep
 ---
 
-# Ctl Step
+# Rewrites from words with one control symbol
 
-A rewrite from a word with exactly one control symbol.
+**Rewrites from words with one control symbol.** Let $M$ be a single-tape Turing machine with
+finitely many states and tape symbols, and call the states and the halting symbol $H$ control
+symbols. A word $w$ rewrites to $w'$ by a controlled step when $w$ contains exactly one control
+symbol and $w$ rewrites to $w'$ in one step of the rewriting system simulating $M$.
 
 ## Depends on
 
-- [TMSym](tmsym.md)
+- [Symbols of the rewriting system of a single-tape machine](tmsym.md)
 
 ## Proof depends on
 
-- [Step](../../part-02/string-rewriting/step.md)
-- [Ctl Count](ctl-count.md)
-- [Rules](rules.md)
+- [One-step rewriting](../../part-02/string-rewriting/step.md)
+- [Number of control symbols](ctl-count.md)
+- [The rewriting system simulating a Turing machine](rules.md)
 
 ## Sources
 

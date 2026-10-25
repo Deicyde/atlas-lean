@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.colGrows_extend
 ---
 
-# Col Grows extend
+# Extending a state makes it grow
 
-Allocating vertices and appending edges grows a state.
+**Extending a state makes it grow.** Let $s$ be a construction state with next free vertex
+$m$, let $n \ge m$, and let $E$ be a list of pairs of natural numbers. Then the state with next
+free vertex $n$, the same recorded occurrences as $s$, and emitted edges those of $s$ followed by
+$E$ extends $s$: its next free vertex is at least that of $s$, and its emitted edges and recorded
+occurrences include those of $s$.
 
 ## Depends on
 
-- [Col Grows](col-grows.md)
-- [Col St](../color/col-st.md)
+- [Growth of construction states](col-grows.md)
+- [State of the SAT-to-3-COLOR construction](../color/col-st.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.Karp.Filter3.Lab
 ---
 
-# Lab
+# Labels of the 3SAT clause-length filter
 
-Labels: `w0`-`w3` walk the token stack having seen that many literals of the current clause
-(`w3`: three or more); `back` moves the tokens back; `pass` and `fail` are the exits.
+**Labels of the 3SAT clause-length filter.** The filter has exactly seven labels: the walking
+labels $w_0, w_1, w_2, w_3$, at which it walks the token stack having seen that many literals of
+the current clause ($w_3$: three or more); the return label $\mathsf{back}$, at which it moves
+the tokens back; and the exits $\mathsf{pass}$ and $\mathsf{fail}$.
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Kolmogorov.run
 ---
 
-# Run
+# Running a program on a binary string
 
-Run a code on a binary string; the input and output strings go through their encodings as
-natural numbers.
+**Running a program on a binary string.** For a code $c$ of a partial recursive function on
+the natural numbers and a binary string $w$, running $c$ on $w$ evaluates $c$ at the number
+encoding $w$; if this halts with output $m$, the result is the binary string encoded by $m$. The
+result is undefined when the evaluation does not halt or $m$ encodes no binary string.
 
 ## Depends on
 

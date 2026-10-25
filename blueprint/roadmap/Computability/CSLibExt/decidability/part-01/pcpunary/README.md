@@ -4,10 +4,10 @@ navigation: module
 
 # PCPUnary
 
-- [Length bottom le length top](length-bottom-le-length-top.md)
-- [Length bottom lt length top](length-bottom-lt-length-top.md)
-- [Swap](swap.md)
+- [Total length of dominoes that are at least as long on top](length-bottom-le-length-top.md)
+- [Total length of dominoes that are strictly longer on top](length-bottom-lt-length-top.md)
+- [Swapping top and bottom](swap.md)
 - [The unary PCP criterion](pcp-iff-of-subsingleton.md)
-- [Unary Test](unary-test.md)
+- [The unary PCP test](unary-test.md)
 - [PCP over a one-letter alphabet is decidable](computable-pred-pcp-of-subsingleton.md)
-- [Tm2 Decidable pcp of subsingleton](tm2-decidable-pcp-of-subsingleton.md)
+- [Unary PCP is decidable by a multi-stack machine](tm2-decidable-pcp-of-subsingleton.md)

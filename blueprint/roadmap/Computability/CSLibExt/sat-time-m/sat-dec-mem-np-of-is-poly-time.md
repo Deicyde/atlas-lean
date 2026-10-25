@@ -18,7 +18,7 @@ trusted declared-time annotation.
 
 ## Depends on
 
-- [Sat Dec](../cook-levin/sat-dec.md)
+- [SAT as a decision problem](../cook-levin/sat-dec.md)
 - [Sat Verifier](sat-verifier.md)
 - [Bitstring Encoding](../../MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../MathlibExt/complexity/bit-decode.md)

@@ -6,11 +6,16 @@ proof: formalized
 lean: Cslib.Decidability.Rewriting.mem_symbols_of_step
 ---
 
-# The backward direction
+# The backward direction of the MPCP reduction
 
-**The backward direction.** Reading dominoes left to right, `s` is the part of the current
-row already matched, with bottoms `t` (so `s ⇒* t`), and `v` is the rest of the row still to be
-matched on top. Then `s v ⇒* y`. -/
+**The backward direction of the MPCP reduction.** Let $(R, x, y)$ be a reachability instance
+and read words over $\alpha$ as words of letters. Let $A$ be a sequence of dominoes of the MPCP
+instance of $(R, x, y)$. For all words $v, s, t$ over $\alpha$, if $s$ rewrites to $t$ under $R$
+in zero or more steps and the top of $A$ equals $v \star t$ followed by the bottom of $A$, where
+$\star$ is the row separator, then $s v$ rewrites to $y$ under $R$ in zero or more steps.
+
+Reading the dominoes left to right, $s$ is the part of the current row already matched, with
+bottoms $t$, and $v$ is the rest of the row still to be matched on top. -/
 theorem derives_of_top_eq : ∀ (A : List (Domino (Sym α))), (∀ c ∈ A, c ∈ toMPCP I) →
     ∀ (v s t : List α), Derives I.1 s t → top A = lift v ++ star :: (lift t ++ bottom A) →
       Derives I.1 (s ++ v) I.2.2
@@ -48,9 +53,9 @@ theorem derives_of_top_eq : ∀ (A : List (Domino (Sym α))), (∀ c ∈ A, c �
 
 ## Depends on
 
-- [Rule](rule.md)
-- [Step](step.md)
-- [Symbols](symbols.md)
+- [Rewriting rules](rule.md)
+- [One-step rewriting](step.md)
+- [Letters of a rewriting instance](symbols.md)
 
 ## Sources
 

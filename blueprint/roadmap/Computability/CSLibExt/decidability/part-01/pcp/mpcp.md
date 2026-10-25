@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Decidability.Post.MPCP
 ---
 
-# MPCP
+# The modified Post correspondence problem
 
-`P` has an **MPCP solution**: a PCP solution that starts with the first domino of `P`.
+**The modified Post correspondence problem.** A list $P$ of dominoes has an MPCP solution
+when $P$ is nonempty and some PCP solution of $P$ starts with the first domino of $P$.
 
 ## Depends on
 
-- [Domino](domino.md)
+- [Domino (Post correspondence problem)](domino.md)
 
 ## Proof depends on
 
-- [Is Solution](is-solution.md)
+- [PCP solution](is-solution.md)
 
 ## Sources
 

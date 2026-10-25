@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Complexity.Karp.ColVerify.length_cols
 ---
 
-# Length cols
+# Number of witness colors
 
-There are `n` witness colors.
+**Number of witness colors.** For every list of bits $w$ and every $n \in \mathbb{N}$, the
+list of the witness color codes of the vertices $0, \dots, n - 1$ read from $w$ has length $n$.
 
 ## Depends on
 
-- [Cols](cols.md)
+- [Witness colors of the first $n$ vertices](cols.md)
 
 ## Proof depends on
 
-- [Col](col.md)
+- [Color code of a vertex in a witness](col.md)
 
 ## Sources
 
