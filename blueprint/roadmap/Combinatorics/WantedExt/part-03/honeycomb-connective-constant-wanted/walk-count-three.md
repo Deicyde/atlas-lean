@@ -7,14 +7,14 @@ proof: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.walkCount_three
 ---
 
-# Walk Count three
+# Three-step self-avoiding walks on the honeycomb lattice
 
-A small computable check of the lattice encoding: there are twelve
-three-step self-avoiding walks from a fixed honeycomb vertex.
+**Three-step self-avoiding walks on the honeycomb lattice.** There are exactly $12$
+self-avoiding walks with $3$ steps on the honeycomb lattice starting at a fixed vertex.
 
 ## Depends on
 
-- [Walk Count](walk-count.md)
+- [Number of self-avoiding walks on the honeycomb lattice](walk-count.md)
 
 ## Sources
 

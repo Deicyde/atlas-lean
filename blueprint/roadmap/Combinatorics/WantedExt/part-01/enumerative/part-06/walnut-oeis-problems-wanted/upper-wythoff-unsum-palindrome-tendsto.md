@@ -14,7 +14,7 @@ position `k` for all large `i`.
 ## Depends on
 
 - [Infinite Fibonacci word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
-- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
+- [The words $W_i$ of the unsum gap sequence](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

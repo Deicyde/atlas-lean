@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.komakG_one
 ---
 
-# Komak G one
+# Value of the Komak sequence at 1
 
-`g(1) = 0`, since `⌊φ⌋ = 1 = ⌊0 · φ²⌋ + 1`.
+**Value of the Komak sequence at 1.** The sequence $g$ of Komak et al. satisfies
+$g(1) = 0$: with $\varphi$ the golden ratio, $\lfloor \varphi \rfloor = 1 =
+\lfloor 0 \cdot \varphi^2 \rfloor + 1$, so $g(1) = 1 - g(0) = 0$.
 
 ## Depends on
 
-- [Komak G](komak-g.md)
+- [The Komak sequence $g$](komak-g.md)
 
 ## Proof depends on
 
-- [Komak G zero](komak-g-zero.md)
+- [Value of the Komak sequence at 0](komak-g-zero.md)
 
 ## Sources
 

@@ -22,12 +22,12 @@ satisfies both the positive and the negated units.
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [Num Vars](../../family/num-vars.md)
-- [Row W](../../family/row-w.md)
-- [X Idx](../../family/x-idx.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Variables per time step](../../family/row-w.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Good](../part-03/good.md)
 - [N](../part-01/n.md)
 - [The real run's literals](run-lit.md)

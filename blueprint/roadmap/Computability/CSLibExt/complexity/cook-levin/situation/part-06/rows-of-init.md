@@ -13,8 +13,8 @@ families give a certificate `y` over `Ys` such that the assignment tracks the re
 
 ## Depends on
 
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](../part-05/code-holds.md)

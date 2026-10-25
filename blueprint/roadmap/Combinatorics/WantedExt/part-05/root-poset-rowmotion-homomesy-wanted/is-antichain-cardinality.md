@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainCardinality
 ---
 
-# Is Antichain Cardinality
+# Antichain cardinality statistic
 
-Antichain-cardinality statistic: `f A = |A|` as a rational.
+**Antichain cardinality statistic.** For a partially ordered set $P$, a function $f$ from the
+finite antichains of $P$ to $\mathbb{Q}$ is the antichain cardinality statistic when
+$f(A) = |A|$ for every finite antichain $A$ of $P$.
 
 ## Depends on
 
-- [Poset Antichain](poset-antichain.md)
+- [Finite antichains of a poset](poset-antichain.md)
 
 ## Sources
 

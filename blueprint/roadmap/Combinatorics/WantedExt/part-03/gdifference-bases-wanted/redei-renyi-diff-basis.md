@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.redeiRenyi_diffBasis
 ---
 
-# Redei Renyi diff Basis
+# Rédei–Rényi difference basis
 
-The Rédei–Rényi set: with `k = ⌈√n⌉`, the set
-`B_n = {1, …, k - 1} ∪ {k, 2k, …, k², (k + 1)k}` has `2k` elements and is a `1`-difference
-basis for `[n]` (`n ≥ 1`).
+**Rédei–Rényi difference basis.** Let $n \ge 1$ and $k = \lceil \sqrt{n} \rceil$. The set
+of integers $B_n = \{1, \dots, k - 1\} \cup \{k, 2k, \dots, k^2, (k + 1)k\}$ has $2k$ elements,
+and every $x \in \{1, \dots, n\}$ is a difference $b - b'$ of two elements of $B_n$.
 
 ## Depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

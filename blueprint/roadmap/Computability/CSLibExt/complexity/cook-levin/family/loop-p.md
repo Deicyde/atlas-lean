@@ -11,8 +11,8 @@ Counter values at rest inside the time loop (all but `Tn`, `Ti`).
 
 ## Depends on
 
-- [CK](ck.md)
-- [Layout](layout.md)
+- [Counters of the transition-family generator](ck.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Sources
 

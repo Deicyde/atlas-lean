@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.C4ModFourABACHat
 ---
 
-# C4 Mod Four ABACHat
+# The set $\hat Y_{abac}$ of $C_4$ positions
 
-`\hat Y_{abac}`: for some `i`, `a_i ≡ a_{i+2}` and `a_{i+1} ≡ a_{i-1} + 1 (mod 4)`.
+**The set $\hat Y_{abac}$ of $C_4$ positions.** A position $a = (a_0, a_1, a_2, a_3)$ of
+natural-number pebble counts on the vertices $v_0, v_1, v_2, v_3$ of $C_4$, with indices read
+modulo $4$, lies in $\hat Y_{abac}$ when there is an index $i$ with $a_i \equiv a_{i+2} \pmod 4$
+and $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$.
 
 ## Depends on
 

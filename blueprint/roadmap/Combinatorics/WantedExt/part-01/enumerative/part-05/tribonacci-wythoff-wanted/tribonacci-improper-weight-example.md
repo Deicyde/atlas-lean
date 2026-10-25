@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.tribonacciImproperWeight_example
 ---
 
-# Tribonacci Improper Weight example
+# Weight of the improper word $010113$
 
-The weight of `010113` is `1 + 1 + 3 = 5`.
+**Weight of the improper word $010113$.** The word $010113$, written most significant digit
+first, has weight $1 + 1 + 3 = 5$.
 
 ## Depends on
 
-- [Tribonacci Improper Weight](tribonacci-improper-weight.md)
+- [Weight of an improper word](tribonacci-improper-weight.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.CL.WF
 ---
 
-# WF
+# Well-formed clause kinds
 
-The pair of an `amo` clause is ordered.
+**Well-formed clause kinds.** A clause kind of a cell is well formed when it is the
+at-least-one clause, or an at-most-one clause $\mathrm{amo}(x, y)$ with $x < y$.
 
 ## Depends on
 
-- [CL](cl.md)
+- [Clause kinds of a one-hot cell](cl.md)
 
 ## Sources
 

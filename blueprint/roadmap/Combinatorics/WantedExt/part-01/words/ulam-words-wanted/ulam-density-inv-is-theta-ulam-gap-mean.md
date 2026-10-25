@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ulamDensity_inv_isTheta_ulamGapMean
 ---
 
-# Ulam Density inv is Theta ulam Gap Mean
+# The inverse Ulam density has the order of the mean gap
 
-`ρ(n)⁻¹ ≍ μ_g(n)`, where `ρ(n) = #U_n / 2ⁿ` and `μ_g(n)` is the mean gap of `π(U_n)`.
+**The inverse Ulam density has the order of the mean gap.** For $n \in \mathbb{N}$ let $U_n$
+be the set of Ulam words of length $n$, and let $\mu_g(n)$ be the mean gap of the binary values
+of the words in $U_n$. Then $2^n / |U_n|$ (the reciprocal of the density $|U_n| / 2^n$) and
+$\mu_g(n)$ have the same order of growth as $n \to \infty$: there are constants $c, C > 0$ such
+that $c \, \mu_g(n) \le 2^n / |U_n| \le C \, \mu_g(n)$ for all sufficiently large $n$.
 
 ## Depends on
 
-- [Ulam Gap Mean](ulam-gap-mean.md)
+- [Mean gap of the Ulam values](ulam-gap-mean.md)
 - [Ulam Word Count](ulam-word-count.md)
 
 ## Sources

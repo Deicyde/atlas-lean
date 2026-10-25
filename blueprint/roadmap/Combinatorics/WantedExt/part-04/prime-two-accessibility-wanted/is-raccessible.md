@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.IsRAccessible
 ---
 
-# Is RAccessible
+# $r$-accessible sets of natural numbers
 
-`r`-accessibility of a set `S ⊆ ℕ`.
+**$r$-accessible sets of natural numbers.** A set $S \subseteq \mathbb{N}$ is $r$-accessible
+when for every colouring $c : \mathbb{N} \to \{0, \dots, r - 1\}$ with $r$ colours and every
+length $k \ne 1$ there is a sequence $x_0, \dots, x_{k-1}$ of natural numbers that is
+monochromatic for $c$ and is an $S$-diffsequence: for each $i$ with $i + 1 < k$ there is
+$d \in S$ with $x_{i+1} = x_i + d$.
 
 Source `OPG-1797` (Open Problem Garden, node 1797,
 http://www.openproblemgarden.org/op/2_accessibility_of_primes):
@@ -20,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Monochromatic](is-monochromatic.md)
-- [Is SDiff Sequence](is-sdiff-sequence.md)
+- [Monochromatic finite sequences](is-monochromatic.md)
+- [Finite $S$-diffsequences](is-sdiff-sequence.md)
 
 ## Sources
 

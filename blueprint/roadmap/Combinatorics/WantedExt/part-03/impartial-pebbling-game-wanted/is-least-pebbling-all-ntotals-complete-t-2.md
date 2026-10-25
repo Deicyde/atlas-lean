@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree
 ---
 
-# Is Least pebbling All NTotals complete Three
+# All-N threshold of $(k+1:k)$-pebbling on $K_3$
 
-Theorem 2: for every positive integer `k`, `m^{(k+1:k)}(K_3) = 6k + 1`.
+**All-N threshold of $(k+1:k)$-pebbling on $K_3$.** For every positive integer $k$, the least
+number $m$ such that every $(k+1:k)$-pebbling game on the complete graph $K_3$ with $m$ pebbles in
+total is an N-game, written $m^{(k+1:k)}(K_3)$, exists and equals $6k + 1$.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

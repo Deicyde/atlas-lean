@@ -6,33 +6,43 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Accept.lit_run
 ---
 
-# Lit run
+# Run of the literal routine of the accept generator
 
-The literal: from `P = q + gap + 1`, compute `Q := q = base + off`, prepend the gap and the
-slot, leave `P = q` and the scratch counters empty.
+**Run of the literal routine of the accept generator.** Let $c$ be a clause kind with base
+counter $b(c)$, offset $\mathrm{off}(c)$ and polarity $\sigma(c)$, and let $F$ assign values to
+the counters of the accept generator (for layout $L$ and parameters $n_1$, $\mathrm{ac}$, $k_1$,
+$\mathrm{ea}$) such that the scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$
+are $0$. Let $q, m \in \mathbb{N}$ with $q = F(b(c)) + \mathrm{off}(c)$ and
+$F(P) = q + m + 1$. Then for every output word $o$ and every Boolean state $v$, the generator
+runs in at most $m(3q + 6) + 2F(b(c)) + 4q + 9$ steps from the label
+$\mathrm{lit}(c, \mathrm{cp1})$, with state $v$, counters $F$ and output $o$, to the label
+$\mathrm{fin}(c)$, with state false, the counters $F$ except that $P$ holds $q$, and output
+$s\,z\,o$. Here $s$ is the two bits true, $\lnot\sigma(c)$ (the encoding of a slot holding a
+literal of polarity $\sigma(c)$), and $z$ is $m$ copies of the two bits false, true (the
+encoding of $m$ empty slots).
 
 ## Depends on
 
-- [AK](ak.md)
-- [Bc](bc.md)
-- [Off](off.md)
-- [Sg](sg.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [LS](ls.md)
-- [Rest](rest.md)
-- [Prog](prog.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
+- [Clause kinds of the accept generator](ak.md)
+- [Base counter of an accept clause](bc.md)
+- [Offset of a clause's literal](off.md)
+- [Polarity of an accept clause's literal](sg.md)
+- [Counters of the accept generator](ck.md)
+- [Labels of the accept generator](gl.md)
+- [Stages of the literal routine](ls.md)
+- [Empty scratch counters of the accept generator](rest.md)
+- [Generator machine for the accept family](prog.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 - [Encode Slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
-- [Gap S](../counter-view/gap-s.md)
+- [Gap emission in the counter view](../counter-view/gap-s.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightedSimplexList
 ---
 
-# Weighted Simplex List
+# Weighted projective space simplex of a list of weights
 
-The simplex attached to a list of weights, using the list's canonical
-`Fin q.length` indexing.
+**Weighted projective space simplex of a list of weights.** For a list
+$q = (q_1, \dots, q_n)$ of natural numbers, with coordinates indexed by the positions of the
+list, this is the convex hull in $\mathbb{R}^n$ of the standard basis vectors
+$e_1, \dots, e_n$ and the vector $-(q_1 e_1 + \dots + q_n e_n)$, whose $i$th coordinate is
+$-q_i$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weighted Simplex](weighted-simplex.md)
+- [Weighted projective space simplex](weighted-simplex.md)
 
 ## Sources
 

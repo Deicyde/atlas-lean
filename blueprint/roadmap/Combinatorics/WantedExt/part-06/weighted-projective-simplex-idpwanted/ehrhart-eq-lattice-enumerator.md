@@ -6,25 +6,26 @@ proof: formalized
 lean: MetaMathlibExt.ehrhart_eq_latticeEnumerator
 ---
 
-# Ehrhart eq lattice Enumerator
+# The Ehrhart function agrees with the lattice-point enumerator
 
-On `Fin d → ℝ`, `ehrhart` is the canonical lattice-point enumerator
-`LatticePointEnumerator.latticeEnumerator` at the real dilate `(t : ℝ)`: the integer points
-of `polytopeDilate t P` correspond under the injective coercion `ℤ^d → ℝ^d` to
-`(t • P) ∩ ℤ^d`.
+**The Ehrhart function agrees with the lattice-point enumerator.** For every subset
+$P \subseteq \mathbb{R}^d$ and every natural number $t$, the Ehrhart function of $P$ at $t$,
+the number of integer vectors $x \in \mathbb{Z}^d$ lying in the dilate $tP$, equals the
+lattice-point enumerator of $P$ at the real dilate $t$, the number of points of
+$tP \cap \mathbb{Z}^d$. Both counts are taken to be $0$ when the set counted is infinite.
 
 ## Depends on
 
 - [Lattice Enumerator](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-enumerator.md)
-- [Ehrhart](ehrhart.md)
+- [Ehrhart function](ehrhart.md)
 
 ## Proof depends on
 
 - [Lattice Point Set](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-point-set.md)
 - [Mem std Lattice iff](../../../../Geometry/MathlibExt/lattice-point-enumerator/mem-std-lattice-iff.md)
 - [Std Lattice](../../../../Geometry/MathlibExt/lattice-point-enumerator/std-lattice.md)
-- [Is Lattice Point](is-lattice-point.md)
-- [Polytope Dilate](polytope-dilate.md)
+- [Lattice points of a set](is-lattice-point.md)
+- [Dilate of a set](polytope-dilate.md)
 
 ## Sources
 

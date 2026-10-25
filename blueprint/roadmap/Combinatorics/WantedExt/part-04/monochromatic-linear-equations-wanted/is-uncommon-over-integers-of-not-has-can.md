@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isUncommonOverIntegers_of_not_hasCancelingPartition
 ---
 
-# Is Uncommon Over Integers of not has Canceling Partition
+# Uncommonness of even-length equations without a canceling partition
 
-An equation with `2m ≥ 4` nonzero coefficients, not all of one sign, and no canceling
-partition is `r`-uncommon over the integers for every `r ≥ 2`. The sign condition is added
-as in Corollary 1 (`x₁ + x₂ + x₃ + x₄ = 0` has no canceling partition and no solutions in
-`[n]⁴`); the record's "linear equation" is read with nonzero coefficients.
+**Uncommonness of even-length equations without a canceling partition.** Let $m \ge 2$
+and let $a_1, \dots, a_{2m}$ be nonzero integers, at least one negative and at least one
+positive, such that the equation $a_1x_1 + \cdots + a_{2m}x_{2m} = 0$ has no canceling
+partition. Then this equation is $r$-uncommon over the integers for every $r \ge 2$.
+
+The sign condition excludes equations such as $x_1 + x_2 + x_3 + x_4 = 0$, which has no
+canceling partition and no solutions in positive integers.
 
 ## Depends on
 
-- [Has Canceling Partition](has-canceling-partition.md)
-- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
+- [Canceling partition](has-canceling-partition.md)
+- [Uncommon equations over the integers](is-uncommon-over-integers.md)
 
 ## Sources
 

@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pebblingAllNTotals
 ---
 
-# Pebbling All NTotals
+# Totals at which every pebbling game is an N-game
 
-The set of totals `m` for which every `(k+1:k)`-pebbling game on `G` with `m` pebbles is
-an N-game; the paper's `m^{(k+1:k)}(G)` is its least element when the set is nonempty, and
-"`m^{(k+1:k)}(G)` does not exist" means the set is empty. The paper takes `m` positive;
-`0` never lies in the set (`zero_not_mem_pebblingAllNTotals`).
+**Totals at which every pebbling game is an N-game.** Let $G$ be a simple graph on the
+vertices $0, \dots, n-1$ and let $k$ be a natural number. In the $(k+1:k)$-pebbling game on $G$,
+a move removes $k+1$ pebbles from a vertex and adds $k$ pebbles to an adjacent vertex. This is
+the set of natural numbers $m$ such that every position with $m$ pebbles in total (a number of
+pebbles on each vertex, summing to $m$) is an N-position, that is, not a P-position.
+
+The paper's $m^{(k+1:k)}(G)$ is the least element of this set when the set is nonempty, and
+"$m^{(k+1:k)}(G)$ does not exist" means the set is empty. The paper takes $m$ positive; $0$ never
+lies in the set, because the empty position is a P-position.
 
 ## Depends on
 
@@ -19,7 +24,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

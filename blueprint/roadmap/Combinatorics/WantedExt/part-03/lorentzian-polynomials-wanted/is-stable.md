@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsStable
 ---
 
-# Is Stable
+# Stable polynomials
 
-A polynomial `f` in `ℝ[w₁,...,wₙ]` is stable if it is nonvanishing on
-`ℍⁿ` or identically zero, where `ℍ` is the open upper half plane in `ℂ`.
+**Stable polynomials.** A polynomial $f \in \mathbb{R}[w_1, \dots, w_n]$ is stable if either
+$f$ is the zero polynomial or $f(z_1, \dots, z_n) \ne 0$ for all $z_1, \dots, z_n$ in the open upper
+half plane $\mathbb{H} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.antiTribonacciMex_pos
 ---
 
-# Anti Tribonacci Mex pos
+# The mex of a finite set is positive
 
-The `mex` value is positive.
+**The mex of a finite set is positive.** Write $\mathrm{mex}(s)$ for the least positive integer
+not in a finite set $s$ of natural numbers. For every such $s$, $\mathrm{mex}(s) > 0$.
 
 ## Depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

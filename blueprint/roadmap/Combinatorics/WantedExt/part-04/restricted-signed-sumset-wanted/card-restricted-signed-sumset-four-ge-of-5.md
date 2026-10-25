@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_four_ge_of_equal_outer_gaps_ne
 ---
 
-# Card restricted Signed Sumset four ge of equal outer gaps ne
+# Restricted signed fourfold sumsets when no gap equals twice the least element, the first and third gaps agree, and the last two gaps do not sum to twice the least element
 
-All successive gaps differ from `2*a₁`; additionally `a₄-a₃=a₂-a₁` and
-`a₅-a₃ ≠ 2*a₁`, with numerals interpreted through the zero-based `Fin 5` encoding.
-The conclusion is the paper's `26` lower bound.
+**Restricted signed fourfold sumsets when no gap equals twice the least element, the first and
+third gaps agree, and the last two gaps do not sum to twice the least element.** Let
+$a_1 < a_2 < a_3 < a_4 < a_5$ be integers with $a_1 > 0$, let $A = \{a_1, \ldots, a_5\}$ and let
+$4^{\wedge}_{\pm} A$ be the restricted signed sumset of $A$. If none of the four gaps
+$a_{i+1} - a_i$ ($1 \le i \le 4$) equals $2a_1$, $a_4 - a_3 = a_2 - a_1$ and
+$a_5 - a_3 \ne 2a_1$, then $|4^{\wedge}_{\pm} A| \ge 26$.
 
 ## Depends on
 
-- [Ordered Finset](ordered-finset.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

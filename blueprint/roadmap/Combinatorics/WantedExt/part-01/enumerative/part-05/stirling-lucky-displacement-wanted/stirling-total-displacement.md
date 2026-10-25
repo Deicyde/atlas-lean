@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stirlingTotalDisplacement
 ---
 
-# Stirling Total Displacement
+# Total displacement of a word
 
-The total displacement `d(w) = ∑_i d(i)`.
+**Total displacement of a word.** Let $w = w_1 \cdots w_{2n}$ be a word of natural numbers,
+and for $i \in \{1, \dots, 2n\}$ let $d(i)$ be the displacement of car $i$ in $w$. The total
+displacement of $w$ is $d(w) = \sum_{i=1}^{2n} d(i)$.
 
 ## Depends on
 

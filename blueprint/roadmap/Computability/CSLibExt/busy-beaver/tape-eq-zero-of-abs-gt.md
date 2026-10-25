@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.BusyBeaver.tape_eq_zero_of_abs_gt
 ---
 
-# Tape eq zero of abs gt
+# Cells far from the origin stay blank
 
-After `t` steps every cell at distance greater than `t` is blank.
+**Cells far from the origin stay blank.** Let $M$ be a machine with $n$ working states,
+started in cell $0$ on the blank tape. For every $t \in \mathbb{N}$ and every cell
+$i \in \mathbb{Z}$ with $|i| > t$, the symbol in cell $i$ after $t$ steps is $0$.
 
 ## Depends on
 
-- [Config](config.md)
-- [Machine](machine.md)
-- [Run](run.md)
+- [Busy Beaver machine configuration](config.md)
+- [Busy Beaver machine](machine.md)
+- [Configuration after $t$ steps](run.md)
 
 ## Proof depends on
 
-- [Move](move.md)
-- [Shift](shift.md)
-- [Abs head le](abs-head-le.md)
-- [Initial](initial.md)
-- [Step](step.md)
+- [Head movement](move.md)
+- [Head displacement](shift.md)
+- [Head displacement bound](abs-head-le.md)
+- [Initial configuration](initial.md)
+- [One step of a Busy Beaver machine](step.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.qpos
 ---
 
-# Qpos
+# Row-0 cells fit in the variable range
 
-Every row-0 cell base (as a flat index `q < KK·H`) is in range with room for `g` codes.
+**Row-0 cells fit in the variable range.** For a layout $L$ with $A$ label/state variables,
+$KK$ stacks and $g$ symbol codes, and all $T, H, q \in \mathbb{N}$ with $q < KK \cdot H$, we have
+$A + q g + g \le V$, where $V$ is the number of variables of $L$ for time bound $T$ and stack
+height $H$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
-- [Num Vars](../family/num-vars.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
 
 ## Proof depends on
 
-- [Row W](../family/row-w.md)
+- [Variables per time step](../family/row-w.md)
 
 ## Sources
 

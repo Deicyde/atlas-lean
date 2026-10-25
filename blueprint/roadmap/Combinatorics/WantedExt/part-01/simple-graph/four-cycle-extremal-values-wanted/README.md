@@ -4,5 +4,5 @@ navigation: module
 
 # Four Cycle Extremal Values
 
-- [Extremal Number cycle Graph four one to twenty](extremal-number-cycle-graph-four-one-to.md)
-- [Extremal Number cycle Graph four projective Plane order](extremal-number-cycle-graph-four-project.md)
+- [Extremal numbers of the four-cycle up to twenty vertices](extremal-number-cycle-graph-four-one-to.md)
+- [Füredi's theorem on four-cycle-free graphs](extremal-number-cycle-graph-four-project.md)

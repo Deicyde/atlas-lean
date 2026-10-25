@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.coeff_diag_trinomial_product_eq_franel
 ---
 
-# Coeff diag trinomial product eq franel
+# A diagonal coefficient equal to a signed Franel number
 
-The diagonal coefficient of `F_n(x, y, z) = (1 + x + y - z)^n (1 + x - y + z)^n (1 - x + y + z)^n`:
-`[x^n y^n z^n] F_n = (-1)^n ∑_{k=0}^{n} C(n,k)^3` (A000172), with `x, y, z` the variables
-`X 0, X 1, X 2` of `MvPolynomial (Fin 3) ℤ`.
+**A diagonal coefficient equal to a signed Franel number.** For every $n \ge 0$, the
+coefficient of $x^n y^n z^n$ in the integer polynomial
+$(1 + x + y - z)^n (1 + x - y + z)^n (1 - x + y + z)^n$ equals
+$(-1)^n \sum_{k=0}^{n} \binom{n}{k}^3$ (A000172).
 
 ## Depends on
 

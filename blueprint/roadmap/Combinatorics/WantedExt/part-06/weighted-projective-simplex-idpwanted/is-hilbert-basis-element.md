@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsHilbertBasisElement
 ---
 
-# Is Hilbert Basis Element
+# Hilbert basis elements of the cone over a polytope
 
-An irreducible nonzero cone lattice point: every decomposition into two
-cone lattice points has a zero summand.  The task permits this irreducible-
-elements presentation of the minimal monoid generating set called a Hilbert basis.
+**Hilbert basis elements of the cone over a polytope.** Let $P \subseteq \mathbb{R}^n$. A pair
+$a = (t, w)$ with $t \in \mathbb{N}$ and $w \in \mathbb{Z}^n$ is a Hilbert basis element of the
+cone over $P$ when $a$ is a lattice point of that cone (that is, $w$ is a lattice point of
+$tP = \{t y : y \in P\}$), $a \ne 0$, and $a$ is irreducible: whenever $a = b + c$ with $b$ and
+$c$ lattice points of the cone over $P$, we have $b = 0$ or $c = 0$.
+
+For a lattice polytope the cone is pointed, and its irreducible lattice points are exactly the
+minimal generating set, the Hilbert basis, of the monoid of lattice points of the cone.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Cone Lattice Point](is-cone-lattice-point.md)
+- [Lattice points of the cone over a polytope](is-cone-lattice-point.md)
 
 ## Sources
 

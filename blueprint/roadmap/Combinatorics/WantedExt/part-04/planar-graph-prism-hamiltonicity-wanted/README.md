@@ -4,5 +4,5 @@ navigation: module
 
 # Planar Graph Prism Hamiltonicity
 
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Prism-Hamiltonicity conjecture for 3-connected planar graphs](conjecture.md)
+- [Špacapan's counterexample to prism-Hamiltonicity](conjecture-refuted.md)

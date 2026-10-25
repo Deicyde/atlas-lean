@@ -5,23 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomas_numeration_leftPeriodic
 ---
 
-# Dumont Thomas numeration left Periodic
+# Dumont–Thomas numeration for left-infinite periodic points
 
-Dumont–Thomas numeration for left-infinite periodic points: let `η` be a substitution with
-growing letter `b`, `u ∈ Per_{ℤ<0}(η)` with `u₋₁ = b`, and `p ≥ 1` a period of `u`. For every
-`n ≤ -2` there is a unique `k` with `p ∣ k` and a unique sequence `(mᵢ, aᵢ)_{i = 0, …, k-1}`
-that is `b`-admissible with
-`η^{p-1}(m_{k-1}) ⋯ η⁰(m_{k-p}) a_{k-p} ≠ η^p(b)` and
-`u_{-|η^k(b)|} ⋯ u_{n-1} = η^{k-1}(m_{k-1}) ⋯ η⁰(m₀)`.
-Encoding: the left-infinite word is `v : ℕ → A` with `v j = u_{-1-j}`, periodicity says that
-`η^p(u_{-m} ⋯ u_{-1})` is a suffix of `u` for every `m`, and `n = -N` with `N ≥ 2`. The
-condition `N ≤ |η^k(b)|` makes explicit that the word `u_{-|η^k(b)|} ⋯ u_{n-1}` is defined
-(it excludes the vacuous `k = 0` reading under truncated subtraction).
+**Dumont–Thomas numeration for left-infinite periodic points.** Let $\eta$ be a
+substitution on an alphabet $A$, let $b \in A$ be a growing letter, i.e.
+$|\eta^k(b)| \to \infty$, and let $\cdots u_{-2} u_{-1}$ be a left-infinite word over $A$ with
+$u_{-1} = b$. Let $p \ge 1$ be such that for every $m$ the word $\eta^p(u_{-m} \cdots u_{-1})$
+is a suffix of $\cdots u_{-2} u_{-1}$. Then for every integer $N \ge 2$ there are a natural
+number $k$ and a $b$-admissible sequence $(m_i, a_i)_{0 \le i \le k-1}$ of pairs of a finite
+word and a letter such that $p$ divides $k$, $N \le |\eta^k(b)|$,
+$\eta^{p-1}(m_{k-1}) \cdots \eta^0(m_{k-p})\, a_{k-p} \ne \eta^p(b)$ and
+$u_{-|\eta^k(b)|} \cdots u_{-N-1} = \eta^{k-1}(m_{k-1}) \cdots \eta^0(m_0)$. Moreover, if $k'$
+and a $b$-admissible sequence $(m'_i, a'_i)_{0 \le i \le k'-1}$ have the same properties, then
+$k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i < k$.
 
 ## Depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Substitution](is-substitution.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount_varPerm_unate_le
 ---
 
-# Bool Fun Class Count var Perm unate le
+# Unate versus monotone permutation classes
 
-Proposition 12: with `[·]` counting classes under permutation of
-variables, `nd-[U]_n ≤ 2^n nd-[M]_n`, `nd-[BU]_n ≤ 2^n nd-[BM]_n`,
-`[U]_n ≤ 2^n [M]_n` and `[BU]_n ≤ 2^n [BM]_n`.
+**Unate versus monotone permutation classes.** Write $[Q]_n$ for the number of classes of
+$n$-variable Boolean functions with property $Q$ under permutation of the variables. Let $U$, $M$,
+$B$ and $\mathrm{nd}$ be the properties of being unate, monotone (nondecreasing for the
+coordinatewise order with $0 < 1$), balanced (true of a function $f$ when $2\,\mathrm{wt}(f) = 2^n$,
+where $\mathrm{wt}(f)$ is the weight of $f$) and non-degenerate, and write juxtaposition for
+conjunction, so that $BU$ is the property of being balanced and unate. Then for every $n$,
+$[\mathrm{nd}\,U]_n \le 2^n [\mathrm{nd}\,M]_n$, $[\mathrm{nd}\,BU]_n \le 2^n [\mathrm{nd}\,BM]_n$,
+$[U]_n \le 2^n [M]_n$ and $[BU]_n \le 2^n [BM]_n$.
 
 ## Depends on
 
-- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
 - [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
-- [Bool Fun Class Count](bool-fun-class-count.md)
-- [Bool Fun Weight](bool-fun-weight.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

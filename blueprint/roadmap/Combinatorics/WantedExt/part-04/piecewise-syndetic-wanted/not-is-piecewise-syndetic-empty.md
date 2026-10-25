@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.not_isPiecewiseSyndetic_empty
 ---
 
-# Not is Piecewise Syndetic empty
+# The empty set is not piecewise syndetic
 
-The empty set is not piecewise syndetic.
+**The empty set is not piecewise syndetic.** For every $t \in \mathbb{N}$, the empty
+subset of $\mathbb{N}^t$ is not piecewise syndetic.
 
 ## Depends on
 
-- [Is Piecewise Syndetic](is-piecewise-syndetic.md)
+- [Piecewise syndetic set](is-piecewise-syndetic.md)
 
 ## Proof depends on
 
-- [Lattice Cube](lattice-cube.md)
-- [Lattice Cube one](lattice-cube-one.md)
+- [Lattice cube](lattice-cube.md)
+- [Lattice cube of side one](lattice-cube-one.md)
 
 ## Sources
 

@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.partialPlacement_minimal_complete_blocks_iff_configurations
 ---
 
-# Partial Placement minimal complete blocks iff configurations
+# Minimal complete blocks of partial placements match configurations
 
-For an increasing sequence `X` of positive integers, minimal complete blocks of `P_n(X)`
-correspond bijectively to configurations of `x₀, …, x_n` in the sequences `τᵏ(X)`, `k ≥ 0`:
-the minimal complete block starting at position `k` (the shortest block containing every
-`x_i`, `i ≤ n`) determines and is determined by the positions of `x₀, …, x_n` in `τᵏ(X)`, and
-every minimal complete block (at any position in `ℤ`) is one starting at some `k ≥ 0`.
+**Minimal complete blocks of partial placements match configurations.** Let
+$X = (x_0, x_1, \dots)$ be a strictly increasing sequence of positive integers, let $\tau$ be
+the throwback, let $n \ge 0$, and write $P_n(X)_z$ for the entry, possibly empty, of the
+partial placement sequence $P_n(X)$ at position $z \in \mathbb{Z}$. The minimal complete block
+at $z$ is the word $P_n(X)_z, P_n(X)_{z+1}, \dots, P_n(X)_{z+L-1}$, empty positions included,
+where $L$ is the least length for which these positions contain every $x_i$ with $i \le n$
+($L = 0$ if there is no such length). Then for all natural numbers $k$ and $l$, the minimal
+complete blocks at $k$ and at $l$ are equal if and only if each of $x_0, \dots, x_n$ occupies
+the same positions in $\tau^k(X)$ as in $\tau^l(X)$. Moreover, for every $z \in \mathbb{Z}$ the
+minimal complete block at $z$ equals the minimal complete block at some natural number $k$.
+So minimal complete blocks of $P_n(X)$ correspond bijectively to the configurations of
+$x_0, \dots, x_n$ in the sequences $\tau^k(X)$ with $k \ge 0$.
 
 ## Depends on
 
-- [Partial Placement](partial-placement.md)
-- [Throwback](throwback.md)
+- [Partial placement sequences](partial-placement.md)
+- [Throwback operation](throwback.md)
 
 ## Sources
 

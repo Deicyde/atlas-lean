@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticOne_balanced
 ---
 
-# Meta Automatic One balanced
+# The meta-automatic sequence $\mathcal{M}_1$ is balanced
 
-Lemma 10: `ℳ₁` is balanced, `ℳ₁(2n) + ℳ₁(2n+1) = 1`. Well-definedness is the
-termination of the definition `metaAutomaticOne`.
+**The meta-automatic sequence $\mathcal{M}_1$ is balanced.** Reading the values of the
+meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, we have
+$\mathcal{M}_1(2n) + \mathcal{M}_1(2n+1) = 1$ for every $n \in \mathbb{N}$.
+
+The paper's lemma also asserts that $\mathcal{M}_1$ is well defined; here that is part of the
+definition of $\mathcal{M}_1$.
 
 ## Depends on
 
-- [Meta Automatic One](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
 
 ## Sources
 

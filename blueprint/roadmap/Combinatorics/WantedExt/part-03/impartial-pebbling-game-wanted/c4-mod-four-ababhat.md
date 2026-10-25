@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.C4ModFourABABHat
 ---
 
-# C4 Mod Four ABABHat
+# The set $\hat Y_{abab}$ of $C_4$ positions
 
-`\hat Y_{abab}`: `a₀ ≡ a₂` and `a₁ ≡ a₃ (mod 4)`.
+**The set $\hat Y_{abab}$ of $C_4$ positions.** A position $a = (a_0, a_1, a_2, a_3)$ of
+natural-number pebble counts on the vertices $v_0, v_1, v_2, v_3$ of $C_4$ lies in
+$\hat Y_{abab}$ when $a_0 \equiv a_2 \pmod 4$ and $a_1 \equiv a_3 \pmod 4$.
 
 ## Depends on
 

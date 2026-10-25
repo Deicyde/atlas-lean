@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.five_color_theorem
 ---
 
-# Five Color Theorem Wanted
+# Five color theorem
 
-Five color theorem: a finite planar simple graph is properly vertex-colorable with
-five colors.
+**Five color theorem.** Every straight-line planar simple graph $G$ on a finite vertex set
+has a proper vertex coloring with five colors.
 
 ## Depends on
 

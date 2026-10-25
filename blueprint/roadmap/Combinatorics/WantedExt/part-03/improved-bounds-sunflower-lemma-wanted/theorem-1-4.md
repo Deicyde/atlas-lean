@@ -5,21 +5,27 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.theorem_1_4
 ---
 
-# Theorem 1 4
+# Alweiss–Lovett–Wu–Zhang sunflower bound
 
-Statement of Theorem 1.4 (Main theorem, sunflowers):
+**Alweiss–Lovett–Wu–Zhang sunflower bound.** Let $C$ be the sunflower constant, a real number
+not depending on $r$ or $w$. Let $r \ge 3$ and $w \ge 2$ be natural numbers, let $X$ be a finite
+type, and let $\mathcal{F}$ be a $w$-set system of subsets of $X$, that is, every member of
+$\mathcal{F}$ has at most $w$ elements. If $\mathcal{F}$ has at least
 
-Let `r ≥ 3`. For some constant `C`, any `w`-set system `F` of size
-`|F| ≥ (C * r ^ 3 * log w * log log w) ^ w` contains an `r`-sunflower.
+$$\left(C\, r^3 \log_{1.9} w \, \log_{1.9}(\log_{1.9} w)\right)^w$$
 
-Note: We require `w ≥ 2`, as the paper assumes `log log w > 0`.
+members, then some subfamily $S \subseteq \mathcal{F}$ is an $r$-sunflower: $S$ has exactly $r$
+members and any two distinct members of $S$ intersect in $\bigcap S$.
+
+This is Theorem 1.4 (main theorem, sunflowers); logarithms are to base $1.9$, as in the paper.
+We require $w \ge 2$, as the paper assumes $\log \log w > 0$.
 
 ## Depends on
 
-- [C](c.md)
-- [Lower Bound](lower-bound.md)
-- [Is Sunflower](is-sunflower.md)
-- [Is System](is-system.md)
+- [Sunflower constant](c.md)
+- [Sunflower lower bound](lower-bound.md)
+- [Sunflower](is-sunflower.md)
+- [Bounded-size set systems](is-system.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.keywordGraph_adj
 ---
 
-# Keyword Graph adj
+# Adjacency in the keyword substitution graph
 
-Adjacency in `𝒢_n^(a)`.
+**Adjacency in the keyword substitution graph.** Let $a$ be a binary keyword and let $u$
+and $v$ be binary words of length $n$. Then $u$ and $v$ are adjacent in the graph
+$\mathcal{G}_n^{(a)}$ if and only if $u \ne v$ and some simple map $\varphi_i$ of $a$ sends $u$
+to $v$ or sends $v$ to $u$.
 
 ## Depends on
 
-- [Keyword Graph](keyword-graph.md)
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Substitution graph](keyword-graph.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

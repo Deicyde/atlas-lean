@@ -6,24 +6,24 @@ navigation: module
 
 ## Circuits
 
-- [Arith Gate](arith-gate.md)
-- [Arith Signature](arith-signature.md)
-- [Arith Interpretation](arith-interpretation.md)
-- [Bin Line](bin-line.md)
+- [Arithmetic gate symbols](arith-gate.md)
+- [Arithmetic basis](arith-signature.md)
+- [Boolean interpretation of the arithmetic gates](arith-interpretation.md)
+- [Binary gate line](bin-line.md)
 
 ## Ripple Carry
 
-- [Carry Wire](carry-wire.md)
+- [Carry wire](carry-wire.md)
 - [Line](line.md)
 
 ## Circuits
 
-- [Rca Program](rca-program.md)
-- [Ripple Carry Adder](ripple-carry-adder.md)
-- [Rca Input](rca-input.md)
-- [Rca Spec](rca-spec.md)
-- [Carry Wire value](carry-wire-value.md)
-- [Every gate's value](rca-program-eval.md)
-- [Sum bits](ripple-carry-adder-sum.md)
-- [Carry out](ripple-carry-adder-carry.md)
-- [Ripple Carry Adder size](ripple-carry-adder-size.md)
+- [Gate program of the ripple-carry adder](rca-program.md)
+- [Ripple-carry adder](ripple-carry-adder.md)
+- [Input of the ripple-carry adder](rca-input.md)
+- [Gate-value specification of the ripple-carry adder](rca-spec.md)
+- [Value of the carry wire](carry-wire-value.md)
+- [Gate values of the ripple-carry adder](rca-program-eval.md)
+- [Sum bits of the ripple-carry adder](ripple-carry-adder-sum.md)
+- [Carry out of the ripple-carry adder](ripple-carry-adder-carry.md)
+- [Size of the ripple-carry adder](ripple-carry-adder-size.md)

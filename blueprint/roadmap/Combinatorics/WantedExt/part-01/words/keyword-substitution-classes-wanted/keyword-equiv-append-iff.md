@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.keywordEquiv_append_iff
 ---
 
-# Keyword Equiv append iff
+# Keyword equivalence is stable under concatenation
 
-Equivalence is stable under appending or prepending a common word: for words
-`u, v` of length `n` and `w` of length `n'`, `u ∼_a v ↔ u ⊕ w ∼_a v ⊕ w` and
-`u ∼_a v ↔ w ⊕ u ∼_a w ⊕ v` (`⊕` is concatenation, `Fin.append`).
+**Keyword equivalence is stable under concatenation.** Let $a$ be a binary keyword, let $u$
+and $v$ be binary words of length $n$, and let $w$ be a binary word of length $n'$. Writing $xy$
+for the concatenation of words $x$ and $y$, we have $u \sim_a v$ if and only if
+$uw \sim_a vw$, and $u \sim_a v$ if and only if $wu \sim_a wv$.
 
 ## Depends on
 
-- [Keyword Equiv](keyword-equiv.md)
+- [Keyword equivalence of binary words](keyword-equiv.md)
 
 ## Sources
 

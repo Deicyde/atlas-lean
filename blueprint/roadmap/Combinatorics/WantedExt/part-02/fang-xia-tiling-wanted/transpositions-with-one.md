@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FangXiaTilingWanted.Combinatorics.FangXiaTilingProblem.transpositionsWithOne
 ---
 
-# Transpositions With One
+# The identity and the transpositions
 
-`T_n` — the identity plus all transpositions in `S_n`.
+**The identity and the transpositions.** $T_n$ is the set of permutations of
+$\{0, \dots, n-1\}$ consisting of the identity and all transpositions $(i\ j)$ with $i \ne j$.
 
 ## Depends on
 

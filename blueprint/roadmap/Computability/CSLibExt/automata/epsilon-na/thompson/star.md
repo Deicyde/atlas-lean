@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Automata.Thompson.star
 ---
 
-# Star
+# Kleene star of an ε-NFA
 
-The star automaton on `Option σ`: a new start and accepting state `none`, an ε-move from it
-to each start state of `M`, and an ε-move back to it from each accepting state of `M`.
+**Kleene star of an ε-NFA.** Given an ε-NFA $M$ with state set $\sigma$, its star automaton has
+the states of $M$ together with one new state $q_0$, which is its only start state and its only
+accepting state. Its moves are the moves of $M$, an ε-move from $q_0$ to every start state of $M$,
+and an ε-move from every accepting state of $M$ to $q_0$.
 
 ## Depends on
 

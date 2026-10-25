@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem923
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 923 on triangle-free subgraphs of large chromatic number](conjecture.md)
+- [Rödl's theorem on triangle-free subgraphs](conjecture-holds.md)

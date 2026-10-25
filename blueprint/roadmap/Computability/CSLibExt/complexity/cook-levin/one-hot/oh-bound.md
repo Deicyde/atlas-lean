@@ -5,18 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.ohBound
 ---
 
-# Oh Bound
+# Explicit time bound of the one-hot generator
 
-The explicit time bound (its polynomial form is `ohBound_le`).
+**Explicit time bound of the one-hot generator.** For a layout $L$ and natural numbers $T$ and
+$H$, the explicit time bound of the one-hot generator is $p + (T + 1)(b + 1) + (T + 1) + 2$,
+where $p$ is the cost of its precomputation and $b$ the cost of one iteration of its time loop,
+both for $L$, $T$ and $H$.
+
+This bound is at most $668\,(A + K + g + 1)^7 (T + H + 1)^6$, where $A$ is the label block size,
+$K$ the number of stacks and $g$ the number of symbol codes of $L$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [Pre B](pre-b.md)
-- [T Body B](t-body-b.md)
+- [Step budget of the one-hot precomputation](pre-b.md)
+- [Step budget for one time step of the one-hot generator](t-body-b.md)
 
 ## Sources
 

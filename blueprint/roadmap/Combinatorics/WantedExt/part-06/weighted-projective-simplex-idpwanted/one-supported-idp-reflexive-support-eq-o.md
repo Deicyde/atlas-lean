@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.one_supported_idp_reflexive_support_eq_one
 ---
 
-# One supported idp reflexive support eq one
+# One-supported IDP reflexive weighted simplices have all weights one
 
-Proposition 1: in a one-supported positive vector, IDP reflexivity forces
-the sole support value to be `1`; this is the journal version's conclusion
-`q=(1,…,1)` expressed at support level.
+**One-supported IDP reflexive weighted simplices have all weights one.** Let $r \ge 1$ and
+$x \ge 1$ be natural numbers, and let $q = (r, \dots, r)$ be the weight vector consisting of $x$
+copies of $r$. If the weighted projective simplex with weights $q$ is reflexive and has the
+integer decomposition property, then $r = 1$.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permAscents
 ---
 
-# Perm Ascents
+# Ascent number of a permutation
 
-`asc σ`: the number of ascents of `σ`, positions `i` with `i + 1 < n` and `σ i < σ (i + 1)`.
+**Ascent number of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
+$\operatorname{asc}(\sigma)$ is the number of positions $i$ with $i + 1 < n$ and
+$\sigma(i) < \sigma(i + 1)$.
 
 ## Depends on
 

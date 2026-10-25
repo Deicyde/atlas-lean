@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.almostIDPCoefficientVector
 ---
 
-# Almost IDPCoefficient Vector
+# Coefficient vector $(1, 7, 15, 14, \dots, 15, 7, 1)$
 
-The exact coefficient vector represented by the paper's ellipsis:
-`(1,7,15,14)`, followed by `n-2` copies of `(16,14)`, then `(15,7,1)`.
-For `n=2` the repeated middle block is empty.
+**Coefficient vector $(1, 7, 15, 14, \dots, 15, 7, 1)$.** For a natural number $n$, the list of
+integers $(1, 7, 15, 14)$, followed by $n - 2$ copies of the pair $(16, 14)$, followed by
+$(15, 7, 1)$. The middle block is empty when $n \le 2$.
+
+It makes exact the ellipsis in the coefficient vector displayed in Theorem 13.
 
 ## Depends on
 

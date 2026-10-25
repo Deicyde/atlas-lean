@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_three
 ---
 
-# Schur Number three
+# The third Schur number
 
-`S(3) = 13`.
+**The third Schur number.** The Schur number $S(3)$ equals $13$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

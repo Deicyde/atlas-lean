@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.GL.pr
 ---
 
-# Pr
+# Entry label of an at-most-one clause
 
-Clause `amo x y` (`done` if the pair is invalid; never used then).
+**Entry label of an at-most-one clause.** Fix a number $g$ of symbol codes. For natural
+numbers $x$ and $y$ with $x < y < g$, the generator label at which the emission of the
+at-most-one clause for the pair $(x, y)$ of the current cell begins; for any other pair it is the
+halting label, a case the generator never uses.
 
 ## Depends on
 
-- [GL](gl.md)
+- [Control labels of the one-hot generator](gl.md)
 
 ## Proof depends on
 
-- [CL](cl.md)
+- [Clause kinds of a one-hot cell](cl.md)
 
 ## Sources
 

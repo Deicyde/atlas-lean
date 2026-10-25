@@ -4,9 +4,9 @@ navigation: module
 
 # Greedy Bh Fourth
 
-- [Is Next Greedy Bh](is-next-greedy-bh.md)
-- [Is Fourth Greedy Bh](is-fourth-greedy-bh.md)
-- [Fourth Value](fourth-value.md)
-- [Is Fourth Greedy Bh fourth Value](is-fourth-greedy-bh-fourth-value.md)
-- [Fourth Value le of is Fourth Greedy Bh](fourth-value-le-of-is-fourth-greedy-bh.md)
-- [Is Fourth Greedy Bh le fourth Value](is-fourth-greedy-bh-le-fourth-value.md)
+- [Next term of a greedy $B_h$-set](is-next-greedy-bh.md)
+- [Fourth positive term of the greedy $B_h$-set](is-fourth-greedy-bh.md)
+- [Quasipolynomial for the fourth greedy $B_h$ term](fourth-value.md)
+- [Formula for the fourth greedy $B_h$ term](is-fourth-greedy-bh-fourth-value.md)
+- [Lower bound for the fourth greedy $B_h$ term](fourth-value-le-of-is-fourth-greedy-bh.md)
+- [Upper bound for the fourth greedy $B_h$ term](is-fourth-greedy-bh-le-fourth-value.md)

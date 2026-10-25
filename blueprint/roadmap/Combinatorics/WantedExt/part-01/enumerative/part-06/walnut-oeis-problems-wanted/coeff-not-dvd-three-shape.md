@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.coeff_not_dvd_three_shape
 ---
 
-# Coeff not dvd three shape
+# Hajdu–Tijdeman–Varga theorem on $(x-1)^c (x+1)^d$ modulo $3$
 
-Hajdu, Tijdeman, and Varga, as recalled by the source: if no coefficient of
-`(x-1)^c (x+1)^d` is divisible by `3`, then `c + d + 1` is `3^j`, `2·3^j`, `3^i + 3^j`,
-or `2·3^i + 3^j` for some `i > j ≥ 0`.
+**Hajdu–Tijdeman–Varga theorem on $(x-1)^c (x+1)^d$ modulo $3$.** Let $c$ and $d$ be natural
+numbers. If none of the coefficients of $x^0, x^1, \dots, x^{c+d}$ in the integer polynomial
+$(x-1)^c (x+1)^d$ is divisible by $3$, then there are natural numbers $i > j$ such that $c + d + 1$
+equals $3^j$, $2 \cdot 3^j$, $3^i + 3^j$ or $2 \cdot 3^i + 3^j$.
 
 ## Depends on
 

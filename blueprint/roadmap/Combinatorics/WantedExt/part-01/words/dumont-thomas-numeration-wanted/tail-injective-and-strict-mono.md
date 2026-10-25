@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tail_injective_and_strictMono
 ---
 
-# Tail injective and strict Mono
+# Tails are injective and order-preserving
 
-For `p ≥ 1` and positions `n, n' < |η^p(x)|`: `n = n'` iff
-`tail_{η,p,x}(n) = tail_{η,p,x}(n')`, and `n < n'` iff `tail_{η,p,x}(n)` is
-lexicographically smaller than `tail_{η,p,x}(n')`. As in Lemma 3.11, positions are given by
-their `x`-admissible sequences `s, s'`, with `n = ∑_{j<p} |η^j(m_j)|` and
-`tail = |m_{p-1}| ⊙ ⋯ ⊙ |m₀|`; the order on digit words is `List.lt` on `ℕ`.
+**Tails are injective and order-preserving.** Let $\eta$ be a substitution, let $x$ be a
+letter, let $p \ge 1$, and let $(m_j, a_j)_{j = 0, \dots, p-1}$ and
+$(m'_j, a'_j)_{j = 0, \dots, p-1}$ be $x$-admissible sequences. Put
+$n = \sum_{j\lt p} |\eta^j(m_j)|$ and $n' = \sum_{j\lt p} |\eta^j(m'_j)|$, and let $t$ and $t'$ be the
+digit words $|m_{p-1}| \cdots |m_0|$ and $|m'_{p-1}| \cdots |m'_0|$. Then $n = n'$ if and only if
+$t = t'$, and $n < n'$ if and only if $t$ is lexicographically smaller than $t'$, with digits
+compared as natural numbers.
 
 ## Depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Substitution](is-substitution.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

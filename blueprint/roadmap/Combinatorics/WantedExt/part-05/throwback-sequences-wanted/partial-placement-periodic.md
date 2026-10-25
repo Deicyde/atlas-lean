@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.partialPlacement_periodic
 ---
 
-# Partial Placement periodic
+# Partial placement sequences are periodic
 
-For an increasing sequence `X` of positive integers, every partial placement sequence
-`P_n(X)` is periodic.
+**Partial placement sequences are periodic.** Let $X = (x_0, x_1, \dots)$ be a strictly
+increasing sequence of positive integers and let $n \ge 0$. Then the partial placement sequence
+$P_n(X)$ is periodic: there is an integer $p > 0$ such that for every position
+$z \in \mathbb{Z}$, the positions $z + p$ and $z$ of $P_n(X)$ are either both empty or hold the
+same term.
 
 ## Depends on
 
-- [Partial Placement](partial-placement.md)
+- [Partial placement sequences](partial-placement.md)
 
 ## Sources
 

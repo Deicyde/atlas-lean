@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_four_five_ge
 ---
 
-# Card restricted Signed Sumset four five ge
+# Restricted signed fourfold sumsets of five positive integers
 
-For a five-element set `A` of positive integers, the conjunction states the lower
-bound `25` and the equality classification as an `↔` (the paper prints the inverse
-direction; `m*{1,3,5,7,9}` attains `25`). The existential `m` is explicitly the minimum
-of `A`; `{1,3,5,7,9}` is represented by `oddProgression 5`.
+**Restricted signed fourfold sumsets of five positive integers.** Let $A$ be a set of five
+positive integers and let $4^{\wedge}_{\pm} A$ be the restricted signed sumset of $A$. For an
+integer $m$ and a set $B$ of integers write $m \cdot B = \{mb : b \in B\}$. Then
+$|4^{\wedge}_{\pm} A| \ge 25$, and $|4^{\wedge}_{\pm} A| = 25$ if and only if
+$A = m \cdot \{1, 3, 5, 7, 9\}$ for $m = \min A$.
+
+The source states the equality case only in the direction that equality forces this form; the
+converse is included here.
 
 ## Depends on
 
-- [Odd Progression](odd-progression.md)
+- [The first $k$ odd positive integers](odd-progression.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
-- [Scale Finset](scale-finset.md)
+- [Dilation of a finite set of integers](scale-finset.md)
 
 ## Sources
 

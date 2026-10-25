@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.initialSegment
 ---
 
-# Initial Segment
+# Initial segment of a finite integer sequence
 
-`initialSegment a n` is the set of values whose zero-based indices are less than `n`;
-it formalizes the paper's sets of the first `n` elements of an ordered set.
+**Initial segment of a finite integer sequence.** For a sequence $a_0, \dots, a_{k-1}$ of
+integers and a natural number $n$, the initial segment of length $n$ is the set
+$\{a_i : 0 \le i < k,\ i < n\}$ of the values at indices below $n$; it is the set of all values
+of the sequence when $n \ge k$.
 
 ## Depends on
 

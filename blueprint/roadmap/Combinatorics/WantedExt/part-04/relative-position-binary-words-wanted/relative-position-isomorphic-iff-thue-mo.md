@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_isomorphic_iff_thueMorse
 ---
 
-# Corollary 71
+# Characterization of the Thue–Morse word among words starting with $abba$
 
-**Corollary 71.** The Thue–Morse word is the only word in `abba𝒲` isomorphic to
-`r(1) r(2) ⋯` (`r(n)` an injective coding of `ℓ_{n-1}`).
+**Characterization of the Thue–Morse word among words starting with $abba$.** Let
+$w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that begins with $abba$ and in
+which both letters occur infinitely often, and let $r$ be its relative position function. Then
+there is an injective map $\sigma \colon \{a, b\} \to \mathbb{Z}$ with $r(n) = \sigma(\ell_{n-1})$
+for all $n \ge 1$ if and only if $w$ is the Thue–Morse word $t = abbabaab\cdots$ (the Thue–Morse
+sequence with $0$ read as $a$ and $1$ as $b$).
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 - [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources

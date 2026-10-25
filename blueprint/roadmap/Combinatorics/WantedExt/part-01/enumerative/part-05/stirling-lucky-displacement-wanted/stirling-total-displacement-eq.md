@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.stirlingTotalDisplacement_eq
 ---
 
-# Stirling Total Displacement eq
+# Total displacement of a Stirling permutation
 
-For `w ∈ Q_n`, `d(w) = n²`.
+**Total displacement of a Stirling permutation.** Let $w = w_1 \cdots w_{2n}$ be a Stirling
+permutation of order $n$, read as a parking function of length $2n$. Then the total displacement
+of $w$, the sum $d(1) + \dots + d(2n)$ of the displacements of its cars, is $n^2$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Total Displacement](stirling-total-displacement.md)
+- [Total displacement of a word](stirling-total-displacement.md)
 
 ## Sources
 

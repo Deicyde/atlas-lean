@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.cubeGapSize_singleton
 ---
 
-# Cube Gap Size singleton
+# Gap size of a singleton
 
-A one-point set has gap size `1`.
+**Gap size of a singleton.** For every point $x \in \mathbb{N}^t$, the one-point set
+$\lbrace x \rbrace$ has gap size $\operatorname{gs}(\lbrace x \rbrace) = 1$.
 
 ## Depends on
 
-- [Cube Gap Size](cube-gap-size.md)
+- [Gap size](cube-gap-size.md)
 
 ## Proof depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Is Dense In Cubes one iff](is-dense-in-cubes-one-iff.md)
-- [Lattice Cube](lattice-cube.md)
-- [Lattice Cube one](lattice-cube-one.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Density one means containment](is-dense-in-cubes-one-iff.md)
+- [Lattice cube](lattice-cube.md)
+- [Lattice cube of side one](lattice-cube-one.md)
 
 ## Sources
 

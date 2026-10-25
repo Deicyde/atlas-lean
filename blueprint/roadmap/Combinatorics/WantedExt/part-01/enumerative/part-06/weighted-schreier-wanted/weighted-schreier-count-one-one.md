@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.weightedSchreierCount_one_one
 ---
 
-# Weighted Schreier Count one one
+# Weighted Schreier count $a_{1,1}$
 
-`a_{1,1} = 2` (first entry of Table 1).
+**Weighted Schreier count $a_{1,1}$.** The weighted Schreier count $a_{1,1}$ equals $2$.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

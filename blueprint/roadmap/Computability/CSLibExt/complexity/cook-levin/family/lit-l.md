@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.GL.litL
 ---
 
-# Lit L
+# Entry label of a literal routine (transition-clause generator)
 
-Literal routine `j` of situation `i` (`done` if `j` is out of range; never used then).
+**Entry label of a literal routine (transition-clause generator).** Among the labels of the
+generator with $N$ situations and $m$ literal numbers, the entry label of literal $j \in \mathbb{N}$
+of situation $i < N$ is the first stage of the routine for literal $j$ of situation $i$ when
+$j < m$, and the halting label $\mathrm{done}$ when $j \ge m$.
+
+The generator never uses it with $j \ge m$.
 
 ## Depends on
 
-- [GL](gl.md)
+- [Labels of the clause-family generator](gl.md)
 
 ## Proof depends on
 
-- [LS](ls.md)
+- [Stages of the transition-clause generator's literal routine](ls.md)
 
 ## Sources
 

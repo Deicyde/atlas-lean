@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.getD_gutkovskiyTable
 ---
 
-# Get D gutkovskiy Table
+# Entries of the Gutkovskiy table
 
-Entry `k ≤ n` of `gutkovskiyTable n` is `g_k`.
+**Entries of the Gutkovskiy table.** For natural numbers $k \le n$, the entry at index $k$
+(counting from $0$) of the Gutkovskiy table $T_n$ is the term $g_k$ of Gutkovskiy's sequence.
 
 ## Depends on
 
-- [Gutkovskiy](gutkovskiy.md)
-- [Gutkovskiy Table](gutkovskiy-table.md)
+- [Gutkovskiy's sequence](gutkovskiy.md)
+- [Table of Gutkovskiy's sequence](gutkovskiy-table.md)
 
 ## Proof depends on
 
-- [Size gutkovskiy Table](size-gutkovskiy-table.md)
+- [Number of entries of the Gutkovskiy table](size-gutkovskiy-table.md)
 
 ## Sources
 

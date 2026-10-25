@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isP_twoKSubOne
 ---
 
-# Pebbling complete Three is P two KSub One
+# Pebbling on the triangle: a two-parameter family of P-positions
 
-Lemma 5: for `0 ≤ ℓ ≤ k - 1` and `ℓ₁ ≤ ℓ₂` with `ℓ₁ + ℓ₂ = ℓ`, every game in
-`Γ{2k-1-ℓ, k-ℓ₁, k-ℓ₂}` on `K_3` is a P-game (`k` positive).
+**Pebbling on the triangle: a two-parameter family of P-positions.** Let $k$ be a positive
+integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a move removes
+$k+1$ pebbles from one vertex and adds $k$ pebbles to another. Let $\ell_1 \le \ell_2$ be
+natural numbers with $\ell_1 + \ell_2 \le k - 1$. Every position whose three piles are
+$2k - 1 - \ell_1 - \ell_2$, $k - \ell_1$ and $k - \ell_2$ in some order is a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

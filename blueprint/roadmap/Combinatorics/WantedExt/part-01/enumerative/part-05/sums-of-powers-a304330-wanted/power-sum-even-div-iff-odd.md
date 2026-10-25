@@ -5,18 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_div_iff_odd
 ---
 
-# Proposition 2 (Knuth, 1993)
+# Knuth's correspondence between even and odd power sums
 
-**Proposition 2 (Knuth, 1993)**: for real coefficients
-`a_m`, the identity
-`S_{2k}(n)/(2n + 1) = Σ_{m=1}^k a_m·C(n + m, 2m)` (for all `n`)
-holds if and only if
-`S_{2k-1}(n) = Σ_{m=1}^k ((2m + 1)/m)·a_m·C(n + m, 2m)`
-(for all `n`).
+**Knuth's correspondence between even and odd power sums.** Let $k \ge 1$ be a natural
+number, let $(a_m)_{m \ge 0}$ be a sequence of real numbers, and write
+$S_j(n) = 1^j + 2^j + \dots + n^j$. Then
+$\frac{S_{2k}(n)}{2n+1} = \sum_{m=1}^{k} a_m \binom{n+m}{2m}$ for every natural number $n$
+if and only if $S_{2k-1}(n) = \sum_{m=1}^{k} \frac{2m+1}{m}\, a_m \binom{n+m}{2m}$ for every
+natural number $n$.
 
 ## Depends on
 
-- [Power Sum](power-sum.md)
+- [Power sums](power-sum.md)
 
 ## Sources
 

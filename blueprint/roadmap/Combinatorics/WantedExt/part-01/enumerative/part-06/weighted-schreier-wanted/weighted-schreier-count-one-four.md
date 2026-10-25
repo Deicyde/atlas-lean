@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.weightedSchreierCount_one_four
 ---
 
-# Weighted Schreier Count one four
+# Weighted Schreier count $a_{1,4}$
 
-`a_{1,4} = 6` (Table 1).
+**Weighted Schreier count $a_{1,4}$.** The weighted Schreier count $a_{1,4}$ equals $6$.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

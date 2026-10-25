@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.greedySubsumfreeBelow_one_two_three
 ---
 
-# Greedy Subsumfree Below one two three
+# First members of $S_{1,2,3}$
 
-`S_{1,2,3}` starts `1, 2, 3, 4, 5, 13, 14, 15, 25`.
+**First members of $S_{1,2,3}$.** The members of the greedy $3$-subsumfree sequence
+$S_{1,2,3}$ below $26$ are exactly $1, 2, 3, 4, 5, 13, 14, 15, 25$.
 
 ## Depends on
 
-- [Greedy Subsumfree Below](greedy-subsumfree-below.md)
+- [Members of a greedy $3$-subsumfree sequence below a bound](greedy-subsumfree-below.md)
 
 ## Sources
 

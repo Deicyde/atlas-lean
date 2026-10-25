@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.balanced_dyadic_nested_eventually_periodic
 ---
 
-# Balanced dyadic nested eventually periodic
+# Balanced sequences with a nested doubling recurrence are eventually alternating
 
-Lemma 6: let `a : ℕ → {0, 1}` be balanced. (a) If `a(2n) = a(n + a(n))` for all `n`,
-then `a(0) = 0` and `a(2n) = 0`, `a(2n+1) = 1` for `n ≥ 2`; (b) if
-`a(2n) = a(n + 1 - a(n))` for all `n`, then `a(0) = 1` and `a(2n) = 1`, `a(2n+1) = 0`
-for `n ≥ 2`. The ultimate 2-periodicity is the displayed formula.
+**Balanced sequences with a nested doubling recurrence are eventually alternating.** Let
+$a : \mathbb{N} \to \{0, 1\}$ satisfy $a(2n) + a(2n+1) = 1$ for every $n \in \mathbb{N}$.
+(a) If $a(2n) = a(n + a(n))$ for every $n$, then $a(0) = 0$, and $a(2n) = 0$ and
+$a(2n+1) = 1$ for every $n \ge 2$. (b) If $a(2n) = a(n + 1 - a(n))$ for every $n$, then
+$a(0) = 1$, and $a(2n) = 1$ and $a(2n+1) = 0$ for every $n \ge 2$.
 
 ## Depends on
 

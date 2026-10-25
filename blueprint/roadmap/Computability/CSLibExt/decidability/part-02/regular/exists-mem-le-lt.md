@@ -14,12 +14,12 @@ it accepted and at least that long, until it is shorter than twice that number.
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Language](../../../automata/da/encoded-dfa/language.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 
 ## Proof depends on
 
-- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [To Fin DFA](to-fin-dfa.md)
 
 ## Sources

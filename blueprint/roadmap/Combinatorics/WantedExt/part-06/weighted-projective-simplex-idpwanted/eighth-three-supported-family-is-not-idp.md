@@ -5,21 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.eighth_three_supported_family_is_not_idp
 ---
 
-# Eighth three supported family is not idp
+# Case (viii) of the three-supported classification is reflexive but not IDP
 
-Theorem 9's final clause for case (viii): under its positive parameters,
-multiplicity equation, and the theorem's ambient necessary-condition premise,
-the resulting reflexive weighted simplex is not IDP.  Retaining that premise is
-essential because the displayed parameter equations alone need not imply it.
+**Case (viii) of the three-supported classification is reflexive but not IDP.** Let
+$x_1, x_2, x_3$ and $k, s$ be positive integers with $x_3 = skx_2 + s - k + 1$, and put
+$r_1 = 1 + kx_2$, $r_2 = (skx_2 + s + k)(1 + x_1(1 + kx_2))$ and
+$r_3 = (1 + x_1(1 + kx_2))(1 + x_2(skx_2 + s + k))$. Suppose that
+$1 + \sum_{i=1}^{3} x_i (r_i \bmod r_j) = r_j$ for $j = 1, 2, 3$. Let $q$ be the weight vector
+$(r_1^{x_1}, r_2^{x_2}, r_3^{x_3})$, consisting of $x_1$ copies of $r_1$, then $x_2$ copies of
+$r_2$, then $x_3$ copies of $r_3$. Then the weighted projective simplex $\Delta_{(1,q)}$ is
+reflexive and does not have the integer decomposition property.
+
+The hypothesis $1 + \sum_i x_i (r_i \bmod r_j) = r_j$ is kept because the equation for $x_3$
+alone need not imply it.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
-- [Expand Support](expand-support.md)
-- [Three Support Family](three-support-family.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Support form of the IDP necessary condition](satisfies-support-idpnecessary.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Support triples of the three-supported classification](three-support-family.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

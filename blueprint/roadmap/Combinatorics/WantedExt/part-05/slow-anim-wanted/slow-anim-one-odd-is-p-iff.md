@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_one_odd_isP_iff
 ---
 
-# Slow ANim one odd is P iff
+# P-positions of Slow A-Nim with A = {1, k}, k odd
 
-Theorem 2 (1): for `A = {1, k}` with `k` odd, the P-positions of `SN(n, A)` are the
-positions with an even number of tokens.
+**P-positions of Slow A-Nim with A = {1, k}, k odd.** Let $k$ be odd with $1 \le k \le n$
+and let $A = \{1, k\}$. A position $p = (p_1, \dots, p_n)$ of Slow$A$-Nim on $n$ stacks is a
+P-position if and only if its total number of tokens $p_1 + \dots + p_n$ is even.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources
 

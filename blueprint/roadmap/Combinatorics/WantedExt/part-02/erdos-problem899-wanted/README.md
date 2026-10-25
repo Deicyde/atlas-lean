@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem899
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 899 on difference sets of sparse sets](conjecture.md)
+- [Ruzsa's theorem on difference sets of sparse sets](conjecture-holds.md)

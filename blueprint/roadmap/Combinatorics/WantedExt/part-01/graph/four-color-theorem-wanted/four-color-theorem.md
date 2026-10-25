@@ -6,20 +6,22 @@ statement: formalized
 lean: MetaMathlibExt.fourColorTheorem
 ---
 
-# Four Color Theorem
+# Four color theorem
 
-Four color theorem: no more than four colors are required to color the regions of any
-planar map so that no two adjacent regions share a color, where adjacent regions share a
-common boundary segment of non-zero length (modeled by `boundaryLength`: adjacency holds
-iff the regions are distinct and their shared-boundary length is positive, so corner-only
-point contact, of length zero, is excluded). The graph is constrained to planar maps via
-`IsPlanar`; without planarity the conclusion is false (K₅ is a counterexample).
-Cites stable source https://en.wikipedia.org/wiki/Four_color_theorem (statement four-color-s1).
+**Four color theorem.** Let $G$ be a simple graph on a finite vertex set $V$ that has neither
+$K_5$ nor $K_{3,3}$ as a minor, and let $\ell$ assign a natural number $\ell(u, v)$ to every
+ordered pair of vertices $u, v$ such that $u$ and $v$ are adjacent in $G$ if and only if
+$u \ne v$ and $\ell(u, v) > 0$. Then $G$ has a proper vertex coloring with four colors.
+
+Here the vertices stand for the regions of a map and $\ell(u, v)$ for the length of their common
+boundary, so regions that meet only at a corner are not adjacent. Without the minor condition the
+conclusion fails: $K_5$ needs five colors.
 
 ## Depends on
 
-- [Is Planar](is-planar.md)
+- [Planarity by forbidden minors](is-planar.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Graph.FourColorTheoremWanted](../../../../../../sources/v2/WantedExt.md)
+- https://en.wikipedia.org/wiki/Four_color_theorem (statement four-color-s1).

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsSubstitution
 ---
 
-# Is Substitution
+# Substitutions in the sense of Labbé and Lepšová
 
-A substitution in the sense of Labbé and Lepšová: a letter map `η : A → A*` (extended to
-words by `morphExtend`) whose letter images are all nonempty and which has a growing letter
-`a`, i.e. `|ηᵏ(a)| → ∞`. Finiteness of the alphabet is not assumed.
+**Substitutions in the sense of Labbé and Lepšová.** A substitution is a map $\eta$ sending
+each letter of an alphabet $A$ to a finite word over $A$, extended to finite words by
+concatenation, such that $\eta$ is non-erasing (the word $\eta(a)$ is nonempty for every letter
+$a \in A$) and some letter $a \in A$ is growing, that is, $|\eta^k(a)| \to \infty$ as
+$k \to \infty$, where $\eta^k$ is the $k$-th iterate of $\eta$. The alphabet $A$ need not be
+finite.
 
 ## Depends on
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PseudorandomGrassmannWanted.PseudorandomGrassmann.Gr
 ---
 
-# Gr
+# Grassmann graph over $\mathbb{F}_2$
 
-The Grassmann graph `Grₖₗ`: vertices are `ℓ`-dimensional subspaces of `𝔽₂ᵏ`,
-and two subspaces are adjacent when their intersection has dimension `ℓ - 1`.
+**Grassmann graph over $\mathbb{F}_2$.** For natural numbers $k$ and $\ell$, the Grassmann
+graph $\mathrm{Gr}(k, \ell)$ has as vertices the $\ell$-dimensional linear subspaces of
+$\mathbb{F}_2^k$, and two distinct such subspaces $L$ and $L'$ are adjacent when
+$\dim(L \cap L') = \ell - 1$.
 
 ## Depends on
 
-- [Gr Vertex](gr-vertex.md)
+- [Vertices of the Grassmann graph](gr-vertex.md)
 
 ## Sources
 

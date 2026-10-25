@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Exact Slow Nim MRule Kept](exact-slow-nim-mrule-kept.md)
-- [Slow ANim After](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources
 

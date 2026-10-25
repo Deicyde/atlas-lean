@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_singleton_classes_eq_iff
 ---
 
-# Card singleton classes eq iff
+# Keywords with equally many singleton classes
 
-Equal numbers of singleton classes: for keywords `a, b` of length `m + 1`, the
-relations `∼_a` and `∼_b` have the same number of size-`1` classes on words of every
-length `n` if and only if, for every `1 ≤ i ≤ m + 1`, the length-`i` prefix of `a`
-equals the length-`i` suffix of `a` or its negation exactly when the same holds
-for `b`.
+**Keywords with equally many singleton classes.** Let $a$ and $b$ be binary keywords of
+length $m + 1$. The relations $\sim_a$ and $\sim_b$ have the same number of one-element
+equivalence classes on binary words of length $n$ for every $n \ge 0$ if and only if, for every
+$i$ with $1 \le i \le m + 1$, the following holds for $a$ exactly when it holds for $b$: the
+prefix of length $i$ of the keyword equals its suffix of length $i$ or the letterwise negation
+of that suffix.
 
 ## Depends on
 
-- [Keyword Equiv](keyword-equiv.md)
+- [Keyword equivalence of binary words](keyword-equiv.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pebblingAllNTotals_completeTwo_eq_empty
 ---
 
-# Pebbling All NTotals complete Two eq empty
+# No all-N threshold for $(2:1)$-pebbling on $K_2$
 
-Theorem 1(a), last sentence: `m^{(2:1)}(K_2)` does not exist.
+**No all-N threshold for $(2:1)$-pebbling on $K_2$.** For every natural number $m$, some
+$(2:1)$-pebbling game on the complete graph $K_2$ with $m$ pebbles in total is a P-game; that is,
+$m^{(2:1)}(K_2)$, the least total at which every game is an N-game, does not exist.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

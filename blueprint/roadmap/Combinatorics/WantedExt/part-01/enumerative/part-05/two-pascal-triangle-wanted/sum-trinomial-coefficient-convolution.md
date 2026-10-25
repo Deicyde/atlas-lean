@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_convolution
 ---
 
-# Theorem 20
+# Vandermonde convolution for trinomial coefficients
 
-**Theorem 20** (Vandermonde-type convolution). For `l ∈ ℤ`,
-`∑_{k=0}^{2m} binom(n, l+k)_2 binom(m, k)_2 = binom(n+m, 2m+l)_2`, a negative lower index
-giving `0`.
+**Vandermonde convolution for trinomial coefficients.** Write $\binom{n}{k}_2$ for the
+trinomial coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$, and put $\binom{n}{k}_2 = 0$
+for negative integers $k$. Then for all natural numbers $n$, $m$ and every integer $l$,
+
+$$\sum_{k=0}^{2m} \binom{n}{l + k}_2 \binom{m}{k}_2 = \binom{n + m}{2m + l}_2.$$
 
 ## Depends on
 

@@ -7,16 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.walkCount_six
 ---
 
-# Walk Count six
+# Six-step self-avoiding walks on the honeycomb lattice
 
-At six steps the first hexagonal cycle appears; the standard count is `90`.
-The `+kernel` evaluation keeps the enumeration of all `3 ^ 6` direction words in
-the kernel; reducing it in the elaborator costs several times the default
-heartbeat budget.
+**Six-step self-avoiding walks on the honeycomb lattice.** There are exactly $90$
+self-avoiding walks with $6$ steps on the honeycomb lattice starting at a fixed vertex.
+
+Six is the first length at which a walk can close a hexagon.
 
 ## Depends on
 
-- [Walk Count](walk-count.md)
+- [Number of self-avoiding walks on the honeycomb lattice](walk-count.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.evenGeometricFactor
 ---
 
-# Even Geometric Factor
+# Even geometric factor
 
-The even geometric factor `1+z²+⋯+z^(2n-2)` used in Theorem 13.
+**Even geometric factor.** For a natural number $n$, the even geometric factor is the
+polynomial $\sum_{k=0}^{n-1} z^{2k} = 1 + z^2 + \dots + z^{2n-2}$ with integer coefficients;
+for $n = 0$ it is the zero polynomial.
 
 ## Depends on
 

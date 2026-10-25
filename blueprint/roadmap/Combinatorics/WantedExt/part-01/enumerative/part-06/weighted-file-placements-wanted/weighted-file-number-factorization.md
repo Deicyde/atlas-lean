@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.weightedFileNumber_factorization
 ---
 
-# Weighted File Number factorization
+# Factorization theorem for weighted file placements
 
-Barrese, Loehr, Remmel and Sagan: for any Ferrers board and `m ≥ 1`,
-`Σ_k f_{k,m}(B) x↓_{n-k,m} = ∏_i (x + b_i - (i - 1)m)` (`0`-indexed columns).
+**Factorization theorem for weighted file placements.** Let $m \ge 1$ and let $B$ be a Ferrers
+board with $n$ columns of weakly increasing heights $b_0 \le b_1 \le \dots \le b_{n-1}$ (columns
+indexed from $0$). Then for every integer $x$,
+
+$$\sum_{k=0}^{n} f_{k,m}(B)\, x\downarrow_{n-k,m} = \prod_{i=0}^{n-1} (x + b_i - mi),$$
+
+where $f_{k,m}(B)$ is the $k$-th $m$-weighted file placement number of $B$ and
+$x\downarrow_{j,m} = \prod_{i\lt j} (x - mi)$ is the $m$-falling factorial.
 
 ## Depends on
 
-- [M Falling Factorial](m-falling-factorial.md)
-- [Weighted File Number](weighted-file-number.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
+- [Weighted file placement numbers](weighted-file-number.md)
 
 ## Sources
 

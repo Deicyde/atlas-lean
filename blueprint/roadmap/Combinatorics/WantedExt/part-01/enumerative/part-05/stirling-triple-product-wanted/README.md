@@ -4,7 +4,7 @@ navigation: module
 
 # Stirling Triple Product
 
-- [Stirling triple ratio bounds choose](stirling-triple-ratio-bounds-choose.md)
-- [Mul stirling Second sub gt](mul-stirling-second-sub-gt.md)
-- [Symm triple ratio of log Concave](symm-triple-ratio-of-log-concave.md)
-- [Symm triple ratio of log Convex](symm-triple-ratio-of-log-convex.md)
+- [Triple products of Stirling numbers bracket the binomial coefficient](stirling-triple-ratio-bounds-choose.md)
+- [Gy's inequality for Stirling numbers of the second kind](mul-stirling-second-sub-gt.md)
+- [Gy's triple-ratio inequalities for log-concave sequences](symm-triple-ratio-of-log-concave.md)
+- [Gy's triple-ratio inequalities for log-convex sequences](symm-triple-ratio-of-log-convex.md)

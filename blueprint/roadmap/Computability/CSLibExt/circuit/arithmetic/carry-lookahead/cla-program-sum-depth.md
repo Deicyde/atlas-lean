@@ -6,32 +6,35 @@ proof: formalized
 lean: Cslib.Circuits.CarryLookahead.claProgram_sum_depth
 ---
 
-# Cla Program sum depth
+# Depth of the sum gates
 
-The sum gates of the final level: depth `2` for bit `0`, one above the carry gates otherwise.
+**Depth of the sum gates.** For all natural numbers $n$, $K$ and $i < n$, in the gate program
+of the $n$-bit adder with $K$ Kogge–Stone levels, the sum gate of bit $i$ in the final level
+(gate $3i + 2$ of that level) has depth $2$ if $i = 0$ and depth $\max(2K + 1, K + 2) + 2$
+otherwise, where inputs have depth $0$ and each gate is one deeper than its deepest argument.
 
 ## Depends on
 
-- [Cla Program](cla-program.md)
-- [Level Base](level-base.md)
-- [Arith Signature](../ripple-carry/arith-signature.md)
-- [Depth Interpretation](depth-interpretation.md)
+- [Gates of the carry-lookahead adder](cla-program.md)
+- [Gate count of the first Kogge-Stone levels](level-base.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
+- [The depth interpretation](depth-interpretation.md)
 
 ## Proof depends on
 
-- [Arith Gate](../ripple-carry/arith-gate.md)
-- [Cla Program carry depth](cla-program-carry-depth.md)
-- [G Num](g-num.md)
-- [Levels](levels.md)
+- [Arithmetic gate symbols](../ripple-carry/arith-gate.md)
+- [Depth of the carry gates](cla-program-carry-depth.md)
+- [Index of the generate gate](g-num.md)
+- [The first Kogge-Stone levels](levels.md)
 - [Depths after each level](levels-depth.md)
-- [Levels eval base](levels-eval-base.md)
-- [Line F](line-f.md)
-- [P Num](p-num.md)
-- [Append Gates](append-gates.md)
-- [Append Gates eval ge](append-gates-eval-ge.md)
-- [Append Gates eval lt](append-gates-eval-lt.md)
-- [Bin Line](../ripple-carry/bin-line.md)
-- [Depth Interpretation arith](depth-interpretation-arith.md)
+- [Level-0 gates are unchanged by later levels](levels-eval-base.md)
+- [Gates of the final level](line-f.md)
+- [Propagate gate of a bit in the Kogge–Stone adder](p-num.md)
+- [Appending a block of gates](append-gates.md)
+- [Values of appended gates](append-gates-eval-ge.md)
+- [Appending gates keeps the old gate values](append-gates-eval-lt.md)
+- [Binary gate line](../ripple-carry/bin-line.md)
+- [Depth of an arithmetic gate](depth-interpretation-arith.md)
 
 ## Sources
 

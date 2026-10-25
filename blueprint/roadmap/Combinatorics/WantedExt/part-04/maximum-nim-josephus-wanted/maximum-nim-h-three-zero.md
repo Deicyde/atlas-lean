@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimH_three_zero
 ---
 
-# Maximum Nim H three zero
+# The value $h_3(0) = 1$ of the Maximum Nim map
 
-At `k = 3`, Definition 3.1 gives `h_3(0) = 1`; the Lean equality is the direct
-natural-number calculation and has no deviation.
+**The value $h_3(0) = 1$ of the Maximum Nim map.** For the map
+$h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers, we have $h_3(0) = 1$.
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

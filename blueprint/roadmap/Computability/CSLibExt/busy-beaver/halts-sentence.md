@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.BusyBeaver.haltsSentence
 ---
 
-# Halts Sentence
+# Halting sentence of a machine
 
-The sentence "the machine halts on the blank tape".
+**Halting sentence of a machine.** For an $n$-state machine $M$, the halting sentence
+of $M$ is the sentence code with tag $0$ and payload the code of $M$. It stands for
+"$M$ halts on the blank tape"; this meaning comes from soundness hypotheses on a
+theory, not from the code itself.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Machine Code](machine-code.md)
-- [Sentence Code](sentence-code.md)
+- [Machine code](machine-code.md)
+- [Sentence codes](sentence-code.md)
 
 ## Sources
 

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_ge_of_gap_conditions
 ---
 
-# Card restricted Signed Sumset ge of gap conditions
+# Restricted signed sumsets under gap conditions
 
-For `h ≥ 3`, the first gap hypothesis is `a₃-a₂ < 2a₁`. For every paper index
-`i=4,…,h+1`, represented by `Fin (h-2)`, the second hypothesis is written without
-division as `a₂-a₁ < 2*(a_i-a_{i-1})`, exactly the requested encoding. The conclusion is
-the paper's lower bound.
+**Restricted signed sumsets under gap conditions.** Let $h \ge 3$ and let
+$a_1 < a_2 < \dots < a_{h+1}$ be positive integers such that $a_3 - a_2 < 2a_1$ and
+$a_2 - a_1 < 2(a_i - a_{i-1})$ for every $i$ with $4 \le i \le h + 1$. Write
+$h^{\wedge}_{\pm} A$ for the restricted signed $h$-fold sumset of $A = \{a_1, \dots, a_{h+1}\}$.
+Then $|h^{\wedge}_{\pm} A| \ge (h+1)^2 + 1$.
 
 ## Depends on
 
-- [Ordered Finset](ordered-finset.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumGap_ne_one
 ---
 
-# Upper Wythoff Unsum Gap ne one
+# The last gap of size one between unsums
 
-The tenth gap between unsums is the last gap equal to `1`: with gaps counted from zero,
-gap `9` is `1` and no gap with index `≥ 10` is `1`.
+**The last gap of size one between unsums.** Let $a_1 < a_2 < \cdots$ be the unsums
+(OEIS A260317), and for $i \ge 0$ let $g_i = a_{i+2} - a_{i+1}$ be the $i$-th gap between
+consecutive unsums, counted from zero. Then $g_9 = 1$, and $g_i \ne 1$ for every $i \ge 10$.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+- [Gaps between unsums](upper-wythoff-unsum-gap.md)
 
 ## Sources
 

@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isSylverEnd_of_isGreatest
 ---
 
-# Is Sylver End of is Greatest
+# The largest legal move is an end
 
-The largest legal move `F(M)` of a finite position is always an end: naming it only removes
-numbers larger than `F(M)`. A position is an ender when `F(M)` is its only end.
+**The largest legal move is an end.** Let $M$ be a position of Sylver Coinage whose set of
+legal moves $L(M)$ has a greatest element $F$. Then $F$ is an end of $M$.
+
+Every other legal move $y$ is smaller than $F$, so a way of writing $y$ as a sum of elements of
+$M \cup \{F\}$ cannot use $F$; hence naming $F$ eliminates no legal move other than $F$ itself.
 
 ## Depends on
 
-- [Is Sylver End](is-sylver-end.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [Ends of a Sylver Coinage position](is-sylver-end.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

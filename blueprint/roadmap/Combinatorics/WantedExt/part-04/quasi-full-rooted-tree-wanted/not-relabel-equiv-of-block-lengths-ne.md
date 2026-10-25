@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.not_relabel_equiv_of_blockLengths_ne
 ---
 
-# Not relabel equiv of block Lengths ne
+# Direct sum criterion for relabeling inequivalence
 
-Theorem 11 (direct sum criterion, quoted from Mohammad et al. 2025): let `M` and `M'` be
-poset matrices of order `n ≥ 2` and `t ≥ 2`. Suppose `M` satisfies the block of `0`s property at
-the lengths `l₁ < ⋯ < l_{t-1}` (here `l : Fin (t+1) → ℕ` strictly increasing with `l 0 = 0`,
-`l t = n`) which are nondecreasing inter-distant (the gaps `l_{k+1} - l_k` are nondecreasing),
-and every direct term (the diagonal block on `[l_k, l_{k+1})`) satisfies the block of `1`s
-property of some length; likewise `M'` with `l'`. If `l ≠ l'` (some `l_k ≠ l'_k`), then `M` and
-`M'` are relabeling inequivalent. The record's hypothesis `M, M' ∈ 𝓝_{n,t}` (matrices
-representing quasi-full `t`-ary rooted forests) is dropped: the claim holds for all such poset
-matrices.
+**Direct sum criterion for relabeling inequivalence.** Let $n, t \ge 2$ and let
+$M$ and $M'$ be poset matrices of order $n$, Boolean matrices with rows and columns indexed by
+$0, \dots, n - 1$. Let $0 = l_0 < l_1 < \dots < l_t = n$ be such that the gaps $l_{k+1} - l_k$ are
+nondecreasing in $k$. Suppose that for every $k \le t$, $M_{ij}$ is false for all $i < l_k \le j$,
+and that for every $k < t$ there is $s \ge 1$ with $l_k + s < l_{k+1}$ such that $M_{ij}$ is true
+for all $i, j$ with $l_k \le i < l_k + s \le j < l_{k+1}$. Suppose the same of $M'$ with a sequence
+$0 = l'_0 < l'_1 < \dots < l'_t = n$ whose gaps are nondecreasing. If $l_k \ne l'_k$ for some $k$,
+then $M$ and $M'$ are not relabeling equivalent: there is no permutation $\sigma$ of
+$\{0, \dots, n - 1\}$ with $M'_{ij} = M_{\sigma(i) \sigma(j)}$ for all $i, j$.
+
+The source assumes in addition that $M$ and $M'$ represent quasi-full $t$-ary rooted forests; the
+statement holds without that assumption.
 
 ## Depends on
 

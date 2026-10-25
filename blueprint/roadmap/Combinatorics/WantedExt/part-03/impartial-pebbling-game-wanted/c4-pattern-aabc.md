@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.C4PatternAABC
 ---
 
-# C4 Pattern AABC
+# The set $X_{aabc}$ of $C_4$ positions
 
-`X_{aabc}`: for some `i`, `a_i ≡ a_{i+1} (mod 3)` and `a_i, a_{i+2}, a_{i-1}` are pairwise
-distinct mod `3`.
+**The set $X_{aabc}$ of $C_4$ positions.** A position $a = (a_0, a_1, a_2, a_3)$ of
+natural-number pebble counts on the vertices $v_0, v_1, v_2, v_3$ of $C_4$, with indices read
+modulo $4$, lies in $X_{aabc}$ when there is an index $i$ with $a_i \equiv a_{i+1} \pmod 3$ such
+that $a_i$, $a_{i+2}$ and $a_{i-1}$ are pairwise incongruent modulo $3$.
 
 ## Depends on
 

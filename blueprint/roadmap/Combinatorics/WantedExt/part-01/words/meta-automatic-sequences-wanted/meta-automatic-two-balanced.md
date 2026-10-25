@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_balanced
 ---
 
-# Meta Automatic Two balanced
+# $\mathcal{M}_2$ is balanced
 
-Theorem 18: `ℳ₂` is balanced, `ℳ₂(2n) + ℳ₂(2n+1) = 1`. Well-definedness is the
-termination of the definition `metaAutomaticTwo`.
+**$\mathcal{M}_2$ is balanced.** For every natural number $n$, the meta-automatic sequence
+$\mathcal{M}_2$, read as taking values in $\{0, 1\}$, satisfies
+$\mathcal{M}_2(2n) + \mathcal{M}_2(2n+1) = 1$.
+
+The well-definedness of $\mathcal{M}_2$, also part of the source theorem, holds because its
+defining recursion terminates.
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 
 ## Sources
 

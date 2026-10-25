@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.stepList
 ---
 
-# Step List
+# One step of an encoded NFA on a list of states
 
-One step on a list of states: the letter step, then the ε-closure.
+**One step of an encoded NFA on a list of states.** For an encoded NFA $N$, a list $S$ of
+states and a letter $a$, the list of states reached from $S$ on $a$: the ε-closure, computed as a
+list, of the list of states $t$ such that $((s, a), t)$ is a transition of $N$ for some $s$ in
+$S$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ One step on a list of states: the letter step, then the ε-closure.
 
 ## Proof depends on
 
-- [Closure](closure.md)
-- [Letter Step](letter-step.md)
+- [ε-closure of a list of states](closure.md)
+- [Letter step of an encoded NFA](letter-step.md)
 
 ## Sources
 

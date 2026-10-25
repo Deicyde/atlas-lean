@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Package.dlab
 ---
 
-# Dlab
+# Drain-stage label
 
-Drain stage `j` (clamped to `n`).
+**Drain-stage label.** For $n, j \in \mathbb{N}$, the label of the composed machine with
+drain stages $0, \dots, n$ that names drain stage $\min(j, n)$.
 
 ## Depends on
 
-- [DL](dl.md)
+- [Labels of the composed machine](dl.md)
 
 ## Sources
 

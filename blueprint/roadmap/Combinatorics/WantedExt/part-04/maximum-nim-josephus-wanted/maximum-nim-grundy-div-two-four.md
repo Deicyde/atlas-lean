@@ -6,20 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimGrundy_div_two_four
 ---
 
-# Maximum Nim Grundy div two four
+# Grundy number of a pile of four in halving Maximum Nim
 
-For the Section 3 rule `f(x) = ⌊x/2⌋`, a pile of four has Grundy number two.
-This is the paper's `k = 2`, `G(4) = 2` check, with natural division representing
-the floor; there is no deviation.
+**Grundy number of a pile of four in halving Maximum Nim.** In Maximum Nim with rule
+function $f(x) = \lfloor x/2 \rfloor$, a pile of $4$ stones has Grundy number $2$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Proof depends on
 
-- [Maximum Nim Mex](maximum-nim-mex.md)
-- [Maximum Nim Mex eq iff](maximum-nim-mex-eq-iff.md)
+- [Minimum excludant of a finite set](maximum-nim-mex.md)
+- [Characterization of the minimum excludant](maximum-nim-mex-eq-iff.md)
 
 ## Sources
 

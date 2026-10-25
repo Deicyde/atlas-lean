@@ -5,10 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.lambda
 ---
 
-# Lambda
+# The sum $\Lambda(\alpha, k_1, k_2)$
 
-The paper's `Λ(α, k₁, k₂) = ∑_{l=0}^{k₁-1} C(k₁-1, l)
-(l+k₂-k₁)!/(k₂-k₁)! α_{l+k₂-k₁}`.
+**The sum $\Lambda(\alpha, k_1, k_2)$.** For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$
+of rationals and natural numbers $k_1, k_2$,
+
+$$
+\Lambda(\alpha, k_1, k_2) = \sum_{l=0}^{k_1-1} \binom{k_1-1}{l}
+\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \, \alpha_{l+k_2-k_1},
+$$
+
+where differences of natural numbers are truncated at $0$ (this matters only when $k_2 < k_1$).
 
 ## Depends on
 

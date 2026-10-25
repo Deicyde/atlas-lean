@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.thmQ
 ---
 
-# Thm Q
+# The polynomials $Q_{k,m}$ of Theorem 10
 
-The polynomial values `Q_{k,m}(n)` of Theorem 10:
-`n^{2k-1}` for `m = 1`, and
-`2·Σ_{j=m}^k C(2k-1, 2j-2)·R(j-1, m-1)·n^{2k-2j+1}` for
-`m ≥ 2`, evaluated at `n`.
+**The polynomials $Q_{k,m}$ of Theorem 10.** For natural numbers $k$, $m$ and $n$, write
+$R(a, b) = \sum_{i=0}^{b} (-1)^i \binom{2b}{i} (b - i)^{2a}$ for the array of OEIS A304330.
+The rational number $Q_{k,m}(n)$ is $n^{2k-1}$ if $m = 1$, and otherwise
+
+$$Q_{k,m}(n) = 2 \sum_{j=m}^{k} \binom{2k-1}{2j-2} R(j-1, m-1) \, n^{2k-2j+1}.$$
+
+Differences of natural numbers such as $2k - 1$ and $m - 1$ are truncated at $0$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Array R](array-r.md)
+- [The array $R(k, m)$](array-r.md)
 
 ## Sources
 

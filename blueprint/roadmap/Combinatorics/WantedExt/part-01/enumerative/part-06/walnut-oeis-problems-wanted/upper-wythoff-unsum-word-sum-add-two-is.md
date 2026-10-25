@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumWord_sum_add_two_isFib
 ---
 
-# Upper Wythoff Unsum Word sum add two is Fib
+# Digit sums between markers are two less than Fibonacci numbers
 
-For every word `W` between two consecutive markers, the digit sum of `W` plus two is a
-Fibonacci number.
+**Digit sums between markers are two less than Fibonacci numbers.** For every $j$, the digit
+sum of the $j$-th word between markers of the unsum gap sequence, plus $2$, is a Fibonacci
+number: it equals $F_m$ for some natural number $m$.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
+- [Words between markers in the unsum gap sequence](upper-wythoff-unsum-word.md)
 
 ## Sources
 

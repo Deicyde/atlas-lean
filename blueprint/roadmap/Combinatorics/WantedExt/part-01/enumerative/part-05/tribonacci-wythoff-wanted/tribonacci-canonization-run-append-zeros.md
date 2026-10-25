@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciCanonizationRun_append_zeros
 ---
 
-# Tribonacci Canonization Run append zeros
+# Canonizing a word followed by zeros
 
-If the canonization procedure takes the improper word `w` to the canonical word `v`,
-the same steps take `w0^k` to `v0^k`.
+**Canonizing a word followed by zeros.** Words are written most significant digit first.
+Let $w$ be a word of natural numbers with some digit at least $2$, and suppose that running at
+most $n$ steps of the canonization procedure on $w$ yields a word $v$ whose digits are all $0$
+or $1$ and which has no three consecutive $1$s. Then for every $k$, running at most $n$ steps
+of the canonization procedure on $w 0^k$ ($w$ followed by $k$ zeros) yields $v 0^k$.
 
 ## Depends on
 
-- [Tribonacci Canonization Run](tribonacci-canonization-run.md)
+- [Canonization run](tribonacci-canonization-run.md)
 
 ## Sources
 

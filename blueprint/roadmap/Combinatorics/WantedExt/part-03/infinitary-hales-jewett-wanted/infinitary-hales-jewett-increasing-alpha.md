@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinitary_halesJewett_increasing_alphabets
 ---
 
-# Infinitary hales Jewett increasing alphabets
+# Karagiannis's infinitary Hales–Jewett theorem for increasing alphabets
 
-Karagiannis's infinitary Hales–Jewett theorem for an increasing sequence of finite alphabets
-`A_0 ⊆ A_1 ⊆ ⋯` with union `A`. For any finite coloring of the words over `A`, there is a
-sequence `(w_n)` of variable words over `A` such that all words
-`w_{m₁}(a₁) w_{m₂}(a₂) ⋯ w_{m_l}(a_l)` with `l ≥ 1`, `m₁ < ⋯ < m_l` and `a_i ∈ A_{m_i}` have the
-same color. The coloring is given on all lists over the ambient type; only words over `A` are
-evaluated.
+**Karagiannis's infinitary Hales–Jewett theorem for increasing alphabets.** Let $X$ be a set,
+let $A_0 \subseteq A_1 \subseteq \cdots$ be finite subsets of $X$ with union $A$, and color the
+finite words over $X$ with finitely many colors. A variable word over $A$ is a finite word over
+$A \cup \{v\}$, for a variable $v \notin X$, in which $v$ occurs, and $w(a)$ is the word obtained
+from $w$ by replacing every occurrence of $v$ by the letter $a$. Then there are a sequence
+$w_0, w_1, \dots$ of variable words over $A$ and a color $k$ such that the word
+$w_{m_1}(a_1) w_{m_2}(a_2) \cdots w_{m_l}(a_l)$ has color $k$ for all $l \ge 1$, all
+$m_1 < m_2 < \cdots < m_l$ in $\mathbb{N}$ and all $a_i \in A_{m_i}$, $i = 1, \dots, l$.
 
 ## Depends on
 

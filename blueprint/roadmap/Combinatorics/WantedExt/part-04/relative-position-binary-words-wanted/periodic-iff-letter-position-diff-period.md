@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.periodic_iff_letterPosition_diff_periodic
 ---
 
-# Lemma 16
+# Periodicity of a word and of the gaps between occurrences of its letters
 
-**Lemma 16.** For `w ∈ a𝒲`, the following are equivalent: `w` is periodic; `Δp_a` is
-periodic; `Δp_a` and `Δp_b` are periodic. Moreover, if `w = u^ω` and `u` contains `k` letters
-`a` and `j` letters `b`, then `Δp_a` is `k`-periodic and `Δp_b` is `j`-periodic.
-(Periodic sequences on `ℕ = {1, 2, …}` are periodic at `n ≥ 1`; a periodic word is purely
-periodic, `w = u^ω`.)
+**Periodicity of a word and of the gaps between occurrences of its letters.** Let
+$w = w_0 w_1 w_2 \cdots$ be an infinite binary word over $\{a, b\}$ that starts with $a$ and in
+which both letters occur infinitely often. Let $p_\alpha(n)$ be the position (counted from $0$)
+of the $n$-th occurrence of the letter $\alpha$ in $w$, and $\Delta p_\alpha(n) =
+p_\alpha(n+1) - p_\alpha(n)$. Call a sequence $s$ periodic if there is $q > 0$ with
+$s(n + q) = s(n)$ for all $n \ge 1$. The following are equivalent: $w$ is periodic, that is,
+$w_{i+q} = w_i$ for some $q > 0$ and all $i \ge 0$; $\Delta p_a$ is periodic; $\Delta p_a$ and
+$\Delta p_b$ are both periodic. Moreover, if $w = u^\omega$ for a nonempty finite word $u$ with
+$k$ letters $a$ and $j$ letters $b$, then $\Delta p_a(n + k) = \Delta p_a(n)$ and
+$\Delta p_b(n + j) = \Delta p_b(n)$ for all $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

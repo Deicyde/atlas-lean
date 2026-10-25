@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pisa_relativePosition_of_letterPosition_b
 ---
 
-# Corollary 58
+# Relative position of the extended Pisa fixed point via the positions of $b$
 
-**Corollary 58.** For `k, m ≥ 1`, `l ≥ 0` and `w` the one-sided fixed point of `σ_{k,l,m}`,
-`r(n) = ((m-1)/m) p_b(n) + ((k+l+1-m)/m) n + (m-l-1)/m` for `n ≥ 1`.
+**Relative position of the extended Pisa fixed point via the positions of $b$.** Let
+$k \ge 1$, $l \ge 0$ and $m \ge 1$ be natural numbers, let $\sigma$ be the substitution
+$a \mapsto a^k b a^l$, $b \mapsto a^m$, and let $w$ be a one-sided fixed point of $\sigma$ (so
+$\sigma(w) = w$) that begins with $a$. Let $p_a(n)$ and $p_b(n)$ be the positions (counted from
+$0$) of the $n$-th $a$ and the $n$-th $b$ in $w$, and let $r(n) = p_b(n) - p_a(n)$. Then for
+every $n \ge 1$,
+
+$$r(n) = \frac{m - 1}{m}\,p_b(n) + \frac{k + l + 1 - m}{m}\,n + \frac{m - l - 1}{m}.$$
 
 ## Depends on
 
-- [Is Substitution Image](is-substitution-image.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

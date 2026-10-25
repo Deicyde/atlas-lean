@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_diagonal_alternating
 ---
 
-# Corollary 35
+# Alternating weighted diagonal sum of trinomial coefficients
 
-**Corollary 35.** For `n > 0`, `∑_{k=0}^{⌊2n/3⌋} binom(n-k, k)_2 (n/(n-k)) (-1)^k` is
-`1` for `n ≡ ±1`, `-1` for `n ≡ 2`, and `3` for `n ≡ 0 (mod 4)`.
+**Alternating weighted diagonal sum of trinomial coefficients.** Write $\binom{n}{k}_2$ for
+the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For every integer $n > 0$
+let $S_n = \sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} (-1)^k$, a rational
+number. Then $S_n = 1$ if $n \equiv 1$ or $n \equiv 3 \pmod 4$, $S_n = -1$ if
+$n \equiv 2 \pmod 4$, and $S_n = 3$ if $n \equiv 0 \pmod 4$.
 
 ## Depends on
 

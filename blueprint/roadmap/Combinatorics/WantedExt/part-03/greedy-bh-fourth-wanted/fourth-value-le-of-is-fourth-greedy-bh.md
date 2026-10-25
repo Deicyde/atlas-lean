@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GreedyBhFourthWanted.fourthValue_le_of_isFourthGreedyBh
 ---
 
-# Fourth Value le of is Fourth Greedy Bh
+# Lower bound for the fourth greedy $B_h$ term
 
-Nathanson and O'Bryant's Lemma 2 (their TeX label
-`Bhlemma1`): the displayed lower bound for the fourth greedy term,
-for `h ≥ 2`.
+**Lower bound for the fourth greedy $B_h$ term.** Let $h$ and $a$ be natural numbers with
+$h \ge 2$. If $a$ is the fourth positive element $a_4(h)$ of the greedy $B_h$-set, then
+$a \ge v(h)$, where $v(h) = (h^3 + 3h^2 + 3h + 1)/2$ if $h$ is odd and
+$v(h) = (h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 ## Depends on
 
-- [Is Fourth Greedy Bh](is-fourth-greedy-bh.md)
-- [Fourth Value](fourth-value.md)
+- [Fourth positive term of the greedy $B_h$-set](is-fourth-greedy-bh.md)
+- [Quasipolynomial for the fourth greedy $B_h$ term](fourth-value.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.BusyBeaver.falseSentence
 ---
 
-# False Sentence
+# The false sentence
 
-The false sentence.
+**The false sentence.** The false sentence is the sentence code with tag $2$ and
+payload $0$, that is, the natural number $2$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sentence Code](sentence-code.md)
+- [Sentence codes](sentence-code.md)
 
 ## Sources
 

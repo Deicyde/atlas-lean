@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.halfEvenFibonacciSet
 ---
 
-# Half Even Fibonacci Set
+# Halves of even Fibonacci numbers
 
-The set `G = {1, 4, 17, 72, …} = {f / 2 : f ∈ F} ∩ ℤ` of halves of even Fibonacci numbers,
-`g_n = f_{3n} / 2` for `n ≥ 1`.
+**Halves of even Fibonacci numbers.** Let $F_m$ be the $m$-th Fibonacci number, with $F_0 = 0$
+and $F_1 = 1$. The set of halves of the positive even Fibonacci numbers is
+$G = \{F_{3n}/2 : n \ge 1\} = \{1, 4, 17, 72, \dots\}$; its elements are written
+$g_n = F_{3n}/2$ for $n \ge 1$.
 
 ## Depends on
 

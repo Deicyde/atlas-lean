@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.keywordListApply_nil
 ---
 
-# Keyword List Apply nil
+# The empty list of simple maps acts trivially
 
-The empty list acts as the identity.
+**The empty list of simple maps acts trivially.** For every keyword $a$ and every binary word
+$u$, applying the empty list of simple maps of $a$ to $u$ returns $u$.
 
 ## Depends on
 
-- [Keyword List Apply](keyword-list-apply.md)
+- [Action of a list of simple maps](keyword-list-apply.md)
 
 ## Sources
 

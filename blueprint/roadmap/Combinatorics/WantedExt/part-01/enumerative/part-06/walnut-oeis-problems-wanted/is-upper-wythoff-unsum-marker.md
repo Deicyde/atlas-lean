@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsUpperWythoffUnsumMarker
 ---
 
-# Is Upper Wythoff Unsum Marker
+# Markers among the unsum gaps
 
-A *marker* is a gap index `i ≥ 10` with gap `2`: the source marks the entries `2` of
-A260311 that follow the irregular prefix `1111122121` of length ten.
+**Markers among the unsum gaps.** A natural number $i$ is a *marker* if $i \ge 10$ and the
+$i$-th gap between consecutive unsums of upper Wythoff numbers (counted from zero) equals $2$.
+
+The source marks the entries $2$ of A260311 that follow the irregular prefix $1111122121$ of
+length ten.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+- [Gaps between unsums](upper-wythoff-unsum-gap.md)
 
 ## Sources
 

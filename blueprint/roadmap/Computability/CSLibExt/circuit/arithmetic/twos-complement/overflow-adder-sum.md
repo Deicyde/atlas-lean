@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Circuits.overflowAdder_sum
 ---
 
-# Overflow Adder sum
+# Sum bits of the overflow adder
 
-The sum bits of `overflowAdder` are those of `x + y` (carry in `0`).
+**Sum bits of the overflow adder.** Let $x$ and $y$ be $n$-bit words. Evaluate the $n$-bit
+overflow adder, with XOR, AND and OR gates, on the bits of $x$, the bits of $y$ and carry in $0$.
+Then for every $i < n$, output $i$ is bit $i$ (counting from the least significant bit $0$) of
+$x + y$ modulo $2^n$.
 
 ## Depends on
 
-- [Arith Interpretation](../ripple-carry/arith-interpretation.md)
-- [Arith Signature](../ripple-carry/arith-signature.md)
-- [Overflow Adder](overflow-adder.md)
-- [Rca Input](../ripple-carry/rca-input.md)
+- [Boolean interpretation of the arithmetic gates](../ripple-carry/arith-interpretation.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
+- [The overflow adder](overflow-adder.md)
+- [Input of the ripple-carry adder](../ripple-carry/rca-input.md)
 
 ## Proof depends on
 
-- [Overflow Adder eval of lt](overflow-adder-eval-of-lt.md)
-- [Ripple Carry Adder](../ripple-carry/ripple-carry-adder.md)
-- [Sum bits](../ripple-carry/ripple-carry-adder-sum.md)
+- [The overflow adder extends the ripple-carry adder](overflow-adder-eval-of-lt.md)
+- [Ripple-carry adder](../ripple-carry/ripple-carry-adder.md)
+- [Sum bits of the ripple-carry adder](../ripple-carry/ripple-carry-adder-sum.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.ohC
 ---
 
-# Oh C
+# Constant of the one-hot time bound
 
-The constant of the time bound: depends on `A, KK, g` only.
+**Constant of the one-hot time bound.** For a layout $L$ with label block size $A$, $K$ stacks
+and $g$ symbol codes, the constant of the one-hot generator's time bound is
+$668\,(A + K + g + 1)^7$; it does not depend on the window depth of $L$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.throwbackSequence
 ---
 
-# Throwback Sequence
+# Throwback sequence
 
-The throwback sequence `T(X)`: `t_n` is the leader of `τⁿ(X)`.
+**Throwback sequence.** For a sequence $X = (x_0, x_1, \dots)$ of natural numbers, the throwback
+sequence $T(X) = (t_0, t_1, \dots)$ records the successive leaders under the throwback operation:
+$t_n$ is the leader (the entry at index $0$) of $\tau^n(X)$, where $\tau$ is the throwback
+operation in which each entry's weight is its own value.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Throwback](throwback.md)
+- [Throwback operation](throwback.md)
 
 ## Sources
 

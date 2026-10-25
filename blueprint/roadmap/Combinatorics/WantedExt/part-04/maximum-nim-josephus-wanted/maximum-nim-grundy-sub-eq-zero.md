@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_sub_eq_zero
 ---
 
-# Maximum Nim Grundy sub eq zero
+# Floor-rule Maximum Nim: positions below k have Grundy number zero
 
-Lemma 3(iii): for `k ≥ 2` and each `j` from one through `k`, the position
-`k-j` has Grundy number zero for rule `f(y)=⌊y/k⌋`. The bounded hypotheses encode
-`j=1,...,k`; there is no deviation.
+**Floor-rule Maximum Nim: positions below k have Grundy number zero.** For every natural
+number $k \ge 2$ and every natural number $j$ with $1 \le j \le k$, a pile of $k - j$ stones has
+Grundy number $0$ in Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

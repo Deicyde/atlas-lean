@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.Letter
 ---
 
-# Letter
+# The alphabet $\{0, 1, 3, 4\}$
 
-The alphabet whose symbols carry the integer values `0`, `1`, `3`, and `4`.
+**The alphabet $\{0, 1, 3, 4\}$.** The alphabet with four distinct letters, written $0$, $1$,
+$3$ and $4$.
 
 ## Depends on
 

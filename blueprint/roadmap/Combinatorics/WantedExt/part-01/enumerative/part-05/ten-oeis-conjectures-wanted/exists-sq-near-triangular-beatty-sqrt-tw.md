@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_sq_near_triangular_beatty_sqrt_two
 ---
 
-# Exists sq near triangular beatty sqrt two
+# Triangular numbers near squares along $\lfloor n\sqrt{2} \rfloor$
 
-With `a_n = ⌊n√2⌋` (A001951) and `T_a = a(a+1)/2`, some square `k^2`, `k ∈ ℤ`, satisfies
-`|T_{a_n} - k^2| ≤ ⌊a_n / 2⌋`; that is, `min_{k ∈ ℤ} |T_{a_n} - k^2| ≤ ⌊a_n / 2⌋`.
+**Triangular numbers near squares along $\lfloor n\sqrt{2} \rfloor$.** For a natural number
+$n$ let $a = \lfloor n\sqrt{2} \rfloor$ (A001951) and $T_a = a(a+1)/2$. Then some integer $k$
+satisfies $|T_a - k^2| \le \lfloor a/2 \rfloor$; that is, the distance from $T_a$ to the nearest
+perfect square is at most $\lfloor a/2 \rfloor$.
 
 ## Depends on
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Circuits.CarryLookahead.carryLookaheadAdder_depth_claLevels
 ---
 
-# Carry Lookahead Adder depth cla Levels
+# Depth of the carry-lookahead adder with logarithmically many levels
 
-With `claLevels n` levels, the depth is `2 log₂ n + 5`.
+**Depth of the carry-lookahead adder with logarithmically many levels.** For every
+$n \ge 2$, the $n$-bit Kogge-Stone carry-lookahead adder with $\lfloor \log_2 n \rfloor + 1$
+levels has depth exactly $2 \lfloor \log_2 n \rfloor + 5$, the depth being the largest depth of
+an output with the inputs at depth $0$.
 
 ## Depends on
 
-- [Carry Lookahead Adder](carry-lookahead-adder.md)
-- [Cla Levels](cla-levels.md)
-- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Kogge–Stone carry-lookahead adder](carry-lookahead-adder.md)
+- [Number of carry-lookahead levels](cla-levels.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
 
 ## Proof depends on
 
-- [Logarithmic depth](carry-lookahead-adder-depth.md)
+- [Exact depth of the carry-lookahead adder](carry-lookahead-adder-depth.md)
 
 ## Sources
 

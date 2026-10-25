@@ -21,7 +21,7 @@ not change the Ehrhart polynomial.
 ## Depends on
 
 - [Polynomial counting the lattice points of dilates](ehrhart-counts.md)
-- [Is Reflexive](../../part-06/weighted-projective-simplex-idpwanted/is-reflexive.md)
+- [Reflexive polytopes](../../part-06/weighted-projective-simplex-idpwanted/is-reflexive.md)
 - [CL-span](clspan.md)
 - [Lattice polytopes](lattice-polytope.md)
 - [Vertices of the standard reflexive simplex](standard-reflexive-simplex-vertices.md)

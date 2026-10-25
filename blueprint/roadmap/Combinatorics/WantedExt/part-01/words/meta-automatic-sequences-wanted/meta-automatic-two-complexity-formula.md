@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_complexity_formula
 ---
 
-# Meta Automatic Two complexity formula
+# Factor complexity of $\mathcal{M}_2$
 
-Proposition 37: `p_{ℳ₂}(1) = 2`, and for `n ≥ 2` with `k = ⌊log₂ n⌋`, `r = k mod 3`:
-for `r = 0`, `p = 2n + 2^{k-1} - 2` (`n ≤ 2^k + 1`), `4n - (3 · 2^{k-1} + 4)`
-(`2^k + 1 ≤ n ≤ 7 · 2^{k-2} + 1`), `2n + 2^{k+1} - 2` (`7 · 2^{k-2} + 1 ≤ n`); for
-`r = 1`, `p = 2n + 2^k - 2` (`n ≤ 2^k + 1`), `4n - (2^k + 4)`
-(`2^k + 1 ≤ n ≤ 3 · 2^{k-1} + 1`), `2n + 2^{k+1} - 2` (`3 · 2^{k-1} + 1 ≤ n`); for
-`r = 2`, `p = 2n + 2^k - 2`. Arithmetic in `ℤ`; `2^k ≤ n < 2^{k+1}` is automatic.
+**Factor complexity of $\mathcal{M}_2$.** Let $p(n)$ be the factor complexity of the
+meta-automatic sequence $\mathcal{M}_2$. Then $p(1) = 2$, and for every $n \ge 2$, writing
+$k = \lfloor \log_2 n \rfloor$ (so that $2^k \le n < 2^{k+1}$), the following hold.
+If $k \equiv 0 \pmod 3$, then $p(n) = 2n + 2^{k-1} - 2$ when $n \le 2^k + 1$,
+$p(n) = 4n - (3 \cdot 2^{k-1} + 4)$ when $2^k + 1 \le n \le 7 \cdot 2^{k-2} + 1$, and
+$p(n) = 2n + 2^{k+1} - 2$ when $n \ge 7 \cdot 2^{k-2} + 1$.
+If $k \equiv 1 \pmod 3$, then $p(n) = 2n + 2^k - 2$ when $n \le 2^k + 1$,
+$p(n) = 4n - (2^k + 4)$ when $2^k + 1 \le n \le 3 \cdot 2^{k-1} + 1$, and
+$p(n) = 2n + 2^{k+1} - 2$ when $n \ge 3 \cdot 2^{k-1} + 1$.
+If $k \equiv 2 \pmod 3$, then $p(n) = 2n + 2^k - 2$.
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

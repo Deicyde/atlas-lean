@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.iCode
 ---
 
-# I Code
+# Start-code clause of the initial row (I1)
 
-(I1) The start code.
+**Start-code clause of the initial row (I1).** For a layout $L$, a label/state code $i_c$ and
+natural numbers $T$ and $H$, the start-code formula consists of a single clause: the dense clause
+over the variables of $L$ for $T$ time steps and depth $H$ whose only literal is the positive
+literal on the time-$0$ label/state variable with code $i_c$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 - [CNF](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
-- [Num Vars](../family/num-vars.md)
-- [X Idx](../family/x-idx.md)
-- [Dense Clause](../family/dense-clause.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Index of a label/state variable](../family/x-idx.md)
+- [Dense clause from a list of literals](../family/dense-clause.md)
 - [Clause](../../dense-sat/clause.md)
 
 ## Sources

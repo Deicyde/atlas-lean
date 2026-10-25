@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_ulam_zeros_one_zeros
 ---
 
-# Card ulam zeros one zeros
+# Ulam words with a single one
 
-For `n ≥ 1` there are `G(n - 1) = 2^{s₂(n-1)}` Ulam words of length `n` of the form
-`0^a 1 0^b` (`G` is Gould's sequence, `s₂` the binary digit sum).
+**Ulam words with a single one.** For every $n \ge 1$, the number of $a \in \{0, \dots, n - 1\}$
+for which the word $0^a 1 0^{n-1-a}$ ($a$ zeros, then a one, then $n - 1 - a$ zeros) is an Ulam
+word equals $2^{s_2(n-1)}$, where $s_2(m)$ is the sum of the binary digits of $m$. This number is
+the term $G(n - 1)$ of Gould's sequence.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Ulam words](is-ulam-word.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.symmetricValleyDepthSum
 ---
 
-# Symmetric Valley Depth Sum
+# Total depth of the symmetric valleys of a word
 
-The sum of the depths `a - b` of the symmetric valleys `a b a` (`b < a`) of a word.
+**Total depth of the symmetric valleys of a word.** For a word $w = w_1 w_2 \cdots w_\ell$ of
+natural numbers, a symmetric valley is a position $i$ with $1 < i < \ell$ such that
+$w_{i-1} = w_{i+1}$ and $w_i < w_{i-1}$; its depth is $w_{i-1} - w_i$. The symmetric valley depth
+sum of $w$ is the sum of the depths of all its symmetric valleys; in particular it is $0$ when
+$\ell < 3$.
 
 ## Depends on
 

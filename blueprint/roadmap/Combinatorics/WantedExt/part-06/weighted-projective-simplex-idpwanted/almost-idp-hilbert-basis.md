@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.almostIDP_hilbertBasis
 ---
 
-# Almost IDP hilbert Basis
+# Hilbert basis of $\Delta_{(1,q(n))}$
 
-Theorem 13's Hilbert-basis description: it is exactly the homogenized
-vertices together with the nine displayed exceptional columns.
+**Hilbert basis of $\Delta_{(1,q(n))}$.** Let $n \ge 1$ and let
+$q(n) = (1^{2n-1}, 3n, 10n, 15n)$, that is, $2n - 1$ ones followed by $3n$, $10n$, $15n$. Write
+lattice points of the cone over the weighted projective simplex
+$\Delta_{(1,q(n))} \subseteq \mathbb{R}^{2n+2}$ as pairs $(k, w)$ with height $k \in \mathbb{N}$
+and $w \in \mathbb{Z}^{2n+2}$. The Hilbert basis of this cone is exactly the set of homogenized
+vertices, namely $(1, e_i)$ for each standard basis vector $e_i$ and $(1, -q(n))$, together with
+nine further points $(k, w)$ in which $w$ vanishes outside its last three coordinates. Their last
+three coordinates are $(0,0,0)$, $(0,0,-1)$, $(0,-1,-1)$, $(0,-1,-2)$, $(0,-2,-3)$, $(0,-3,-5)$
+and $(-1,-4,-6)$ at height $k = 1$, and $(-2,-7,-10)$ and $(-3,-10,-15)$ at height $k = 2$.
 
 ## Depends on
 
-- [Almost IDPWeights](almost-idpweights.md)
-- [Exceptional Hilbert Column](exceptional-hilbert-column.md)
-- [Hilbert Basis](hilbert-basis.md)
-- [Homogenized Weighted Vertices](homogenized-weighted-vertices.md)
-- [Weighted Simplex](weighted-simplex.md)
+- [The almost-IDP weight vector](almost-idpweights.md)
+- [Exceptional Hilbert basis columns](exceptional-hilbert-column.md)
+- [Hilbert basis of the cone over a polytope](hilbert-basis.md)
+- [Homogenized vertices of a weighted simplex](homogenized-weighted-vertices.md)
+- [Weighted projective space simplex](weighted-simplex.md)
 
 ## Sources
 

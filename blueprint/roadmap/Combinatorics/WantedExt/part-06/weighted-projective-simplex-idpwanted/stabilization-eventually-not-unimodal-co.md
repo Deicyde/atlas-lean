@@ -18,9 +18,9 @@ unimodal).
 
 - [Is HStar Unimodal](is-hstar-unimodal.md)
 - [H Star Formula](h-star-formula.md)
-- [Reflexive Stabilization At](reflexive-stabilization-at.md)
-- [Weight Lcm](weight-lcm.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Higher reflexive stabilizations](reflexive-stabilization-at.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

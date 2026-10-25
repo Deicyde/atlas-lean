@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.PosetAntichain
 ---
 
-# Poset Antichain
+# Finite antichains of a poset
 
-Antichains of a poset as `Finset`s satisfying `IsAntichain`.
+**Finite antichains of a poset.** For a partially ordered set $P$, the finite antichains of
+$P$ are the finite subsets $A \subseteq P$ in which no element is below a different element.
 
 ## Depends on
 

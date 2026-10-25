@@ -6,14 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.P
 ---
 
-# P
+# Homogeneous polynomials with positive coefficients
 
-The set of degree `d` homogeneous polynomials in `ℝ[w₁,...,wₙ]` whose coefficients
-are positive.
+**Homogeneous polynomials with positive coefficients.** $P^d_n$ is the set of homogeneous
+polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ such that the coefficient in $f$ of
+every monomial of degree $d$ is strictly positive.
 
 ## Depends on
 
-- [H](h.md)
+- [Homogeneous polynomials of degree $d$](h.md)
 
 ## Sources
 

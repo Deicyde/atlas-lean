@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.mem_wythoffTerminalPSet_of_terminal
 ---
 
-# Mem wythoff Terminal PSet of terminal
+# Terminal positions lie in the predicted P-position set
 
-Terminal positions belong to `wythoffTerminalPSet ℓ`.
+**Terminal positions lie in the predicted P-position set.** Let $\ell$ be a natural number.
+Every position $(x, y) \in \mathbb{N} \times \mathbb{N}$ with $x + y \le \ell$ belongs to the
+predicted P-position set of the game $K^\ell$ (Wythoff's game in which the positions with
+$x + y \le \ell$ are terminal).
 
 ## Depends on
 
-- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
+- [Predicted P-positions of $K^\ell$](wythoff-terminal-pset.md)
 
 ## Proof depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Sources
 

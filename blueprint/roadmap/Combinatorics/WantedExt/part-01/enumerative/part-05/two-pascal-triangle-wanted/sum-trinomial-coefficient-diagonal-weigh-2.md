@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_diagonal_weighted_power_sum
 ---
 
-# Corollary 36
+# Power-sum formula for weighted diagonal sums of trinomial coefficients
 
-**Corollary 36.** Let `r₁, r₂, r₃` be the zeros of `t^3 - 2wt^2 + 2w^2 t - (z + w^3)`.
-For `n > 0`,
-`∑_{k ≤ 2n/3} binom(n-k, k)_2 (n/(n-k)) w^{2n-3k} z^k = ∑_i (w^2 - w r_i + r_i^2)^n`.
-The zeros (Cardano's `α_{z,w}, β_{z,w}, β̄_{z,w}` in the paper) are given by Vieta's relations.
+**Power-sum formula for weighted diagonal sums of trinomial coefficients.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. Let
+$z, w \in \mathbb{C}$ and let $r_1, r_2, r_3 \in \mathbb{C}$ satisfy $r_1 + r_2 + r_3 = 2w$,
+$r_1 r_2 + r_1 r_3 + r_2 r_3 = 2w^2$ and $r_1 r_2 r_3 = z + w^3$, that is, let $r_1, r_2, r_3$
+be the zeros, with multiplicity, of $t^3 - 2wt^2 + 2w^2 t - (z + w^3)$. Then for every integer
+$n > 0$
+
+$$\sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} w^{2n-3k} z^k =
+(w^2 - w r_1 + r_1^2)^n + (w^2 - w r_2 + r_2^2)^n + (w^2 - w r_3 + r_3^2)^n.$$
+
+The zeros (Cardano's $\alpha_{z,w}, \beta_{z,w}, \bar\beta_{z,w}$ in the paper) are given by
+Vieta's relations.
 
 ## Depends on
 

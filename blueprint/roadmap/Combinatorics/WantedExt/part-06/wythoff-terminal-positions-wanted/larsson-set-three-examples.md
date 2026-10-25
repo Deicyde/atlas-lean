@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.larssonSetThree_examples
 ---
 
-# Larsson Set Three examples
+# Sample positions in Larsson's set $R_3$
 
-`(0, 0)`, `(0, 2)` and `(3, 1)` lie in `R₃`.
+**Sample positions in Larsson's set $R_3$.** The positions $(0, 0)$, $(0, 2)$ and
+$(3, 1)$ belong to Larsson's set $R_3$.
 
 ## Depends on
 
-- [Larsson Set Three](larsson-set-three.md)
+- [Larsson's set $R_3$](larsson-set-three.md)
 
 ## Sources
 

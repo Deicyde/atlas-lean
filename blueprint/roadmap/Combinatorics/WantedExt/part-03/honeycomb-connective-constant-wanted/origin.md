@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.origin
 ---
 
-# Origin
+# Origin of the honeycomb lattice
 
-A fixed origin in the vertex-transitive honeycomb lattice.
+**Origin of the honeycomb lattice.** The origin is the vertex $(0, 0, \mathrm{false})$.
+
+The honeycomb lattice is vertex-transitive, so the choice of base vertex is arbitrary.
 
 ## Depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
 
 ## Sources
 

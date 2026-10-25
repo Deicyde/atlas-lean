@@ -12,19 +12,19 @@ lean: Cslib.Complexity.CookLevin.Precompute.pow_run
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [PW](pw.md)
-- [Pow B](pow-b.md)
-- [Pow S](pow-s.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Stages of the power loop](pw.md)
+- [Step budget of the power loop](pow-b.md)
+- [Power-loop program](pow-s.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Mul S](../counter-view/mul-s.md)
-- [Xf](xf.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Counters after a multi-target transfer](xf.md)
 - [Multi-target transfer](xfer-s.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.adjacent_sum_mem_sumsetTrivialElements
 ---
 
-# Adjacent sum mem sumset Trivial Elements
+# Adjacent sums are trivial elements
 
-Each listed sum `(h - i) • a j + i • a (j + 1)` with `j + 1 < k` and `i ≤ h` is a
-trivial element.
+**Adjacent sums are trivial elements.** Let $G$ be an additive commutative monoid,
+$a_0, a_1, \ldots$ a sequence in $G$, and $h, k, i, j$ natural numbers with $j + 1 < k$ and
+$i \le h$. Then $(h - i)a_j + i a_{j+1}$ is a trivial element of the $h$-fold sumset of
+$a_0, \ldots, a_{k-1}$.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

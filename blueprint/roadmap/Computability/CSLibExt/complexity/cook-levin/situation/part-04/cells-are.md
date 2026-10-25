@@ -15,7 +15,7 @@ Row `t`'s cell block is exactly the one-hot image of the array `w` (no decoding)
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [G](../part-01/g.md)
 - [Layout](../part-01/layout.md)
 - [Tr](tr.md)

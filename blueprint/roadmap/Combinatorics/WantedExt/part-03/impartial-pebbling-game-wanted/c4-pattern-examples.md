@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.c4Pattern_examples
 ---
 
-# C4 Pattern examples
+# Examples of the mod-$3$ pattern classes on $C_4$
 
-Small values of the mod-`3` patterns: `(0,0,0,0) ∈ \hat X_{aabb}`, `(1,0,0,0) ∈ X_{aaab}`,
-`(0,1,0,1) ∈ X_{abab}`, `(0,0,1,2) ∈ X_{aabc}`, `(0,1,0,2) ∈ X_{abac}`, and
-`(0,0,0,0) ∉ X_{aaab}`.
+**Examples of the mod-$3$ pattern classes on $C_4$.** Writing a distribution of pebbles on the
+vertices $v_0, v_1, v_2, v_3$ of $C_4$ as $(a_0, a_1, a_2, a_3)$, we have
+$(0,0,0,0) \in \hat X_{aabb}$, $(1,0,0,0) \in X_{aaab}$, $(0,1,0,1) \in X_{abab}$,
+$(0,0,1,2) \in X_{aabc}$, $(0,1,0,2) \in X_{abac}$, and $(0,0,0,0) \notin X_{aaab}$.
 
 ## Depends on
 
-- [C4 Pattern AAAB](c4-pattern-aaab.md)
-- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
-- [C4 Pattern AABC](c4-pattern-aabc.md)
-- [C4 Pattern ABAB](c4-pattern-abab.md)
-- [C4 Pattern ABAC](c4-pattern-abac.md)
+- [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
+- [The set $\hat X_{aabb}$ of $C_4$ positions](c4-pattern-aabbhat.md)
+- [The set $X_{aabc}$ of $C_4$ positions](c4-pattern-aabc.md)
+- [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)
+- [The set $X_{abac}$ of $C_4$ positions](c4-pattern-abac.md)
 
 ## Sources
 

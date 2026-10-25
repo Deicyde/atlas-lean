@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.keywordSimpleMap_apply_of_applicable
 ---
 
-# Keyword Simple Map apply of applicable
+# An applicable simple map negates its window
 
-An applicable simple map negates exactly the letters `i, …, i + m`.
+**An applicable simple map negates its window.** Let $a$ be a keyword of length $m + 1$ and $u$
+a binary word of length $n$, and suppose that $a$ is applicable to $u$ at letter $i$. Then the
+simple map $\varphi_i$ of $a$ negates the letters of $u$ at positions $i, \dots, i + m$ and leaves
+every other letter unchanged: for every position $j$, $\varphi_i(u)_j = \neg u_j$ if
+$i \le j \le i + m$, and $\varphi_i(u)_j = u_j$ otherwise.
 
 ## Depends on
 
-- [Keyword Applicable](keyword-applicable.md)
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Applicability of a keyword](keyword-applicable.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

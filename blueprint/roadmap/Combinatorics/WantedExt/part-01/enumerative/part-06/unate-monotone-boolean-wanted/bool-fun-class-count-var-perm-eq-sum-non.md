@@ -5,24 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount_varPerm_eq_sum_nondegenerate
 ---
 
-# Bool Fun Class Count var Perm eq sum nondegenerate
+# Permutation classes counted by non-degenerate ones
 
-Proposition 11: for a property `P` closed under renaming variables,
-`[P]_n = ∑_{i=0}^n nd-[P]_i`, where `[P]_n` is the number of classes of
-`n`-variable functions with `P` under permutation of variables and `nd-[P]_i`
-the same for non-degenerate functions.
+**Permutation classes counted by non-degenerate ones.** Let $(P_n)_{n \ge 0}$ be a family of
+properties, $P_n$ a property of $n$-variable Boolean functions, that is invariant under renaming
+variables: for all $m$ and $n$, every injection $e$ from $\{1, \dots, m\}$ to $\{1, \dots, n\}$
+and every $m$-variable function $g$, the $n$-variable function $x \mapsto g(x \circ e)$ has $P_n$
+if and only if $g$ has $P_m$. Write $[P]_n$ for the number of classes of $n$-variable functions
+with $P_n$ under permutation of the variables, and $\mathrm{nd}[P]_n$ for the same count over the
+non-degenerate $n$-variable functions with $P_n$. Then for every $n$,
 
-Deviation: the paper assumes only closure under permutations of variables;
-the counting argument also needs invariance under adding or removing dummy
-variables, so `hP` asks for invariance under renaming along any injection.
-Closure under permutations alone is not enough: if `P` holds exactly for the
-four `1`-variable functions, then `[P]_1 = 4` but the sum is `0 + 2 = 2`.
+$$[P]_n = \sum_{i=0}^{n} \mathrm{nd}[P]_i.$$
+
+The paper assumes only closure under permutations of the variables; the counting argument also
+needs invariance under adding or removing dummy variables. Closure under permutations alone is not
+enough: if $P_1$ holds for all four $1$-variable functions and $P_n$ holds for none when
+$n \ne 1$, then $[P]_1 = 4$ but $\mathrm{nd}[P]_0 + \mathrm{nd}[P]_1 = 0 + 2 = 2$.
 
 ## Depends on
 
-- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
 - [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
-- [Bool Fun Class Count](bool-fun-class-count.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
 
 ## Sources
 

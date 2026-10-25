@@ -6,10 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.toeplitzHessenberg_fussCatalan_examples
 ---
 
-# Toeplitz Hessenberg fuss Catalan examples
+# Small generalized Fuss–Catalan numbers
 
-Small values: `A_3(2, 1) = C_3 = 5`, `A_2(2, 3) = K_2 = C_4 - C_3 = 9`, `A_3(3, 1) = 12`,
-`A_2(3, 2) = 7`.
+**Small generalized Fuss–Catalan numbers.** For the generalized Fuss–Catalan numbers
+$A_n(p, r) = \frac{r}{pn + r} \binom{pn + r}{n}$, one has $A_3(2, 1) = 5$, $A_2(2, 3) = 9$,
+$A_3(3, 1) = 12$ and $A_2(3, 2) = 7$.
+
+With $C_n$ the $n$-th Catalan number, $A_3(2, 1) = C_3$ and $A_2(2, 3) = C_4 - C_3$.
 
 ## Depends on
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.wythoffGrundy_eq_zero_iff
 ---
 
-# Wythoff Grundy eq zero iff
+# Wythoff's theorem
 
-Wythoff's theorem: the positions of classical Wythoff's game with Grundy number `0`
-(the P-positions) are exactly `(⌊nφ⌋, ⌊nφ⌋ + n)` and `(⌊nφ⌋ + n, ⌊nφ⌋)` for `n ≥ 0`, where
-`φ = (1 + √5)/2`.
+**Wythoff's theorem.** Let $\mathcal{G}_1(x, y, 0)$ be the Grundy number of the position
+$(x, y, 0)$ of Wythoff's game with a pass, in which the pass has been used; this is the Grundy
+number of $(x, y)$ in classical Wythoff's game. Then $\mathcal{G}_1(x, y, 0) = 0$ (that is,
+$(x, y)$ is a P-position) if and only if there is $n \in \mathbb{N}$ with
+$(x, y) = (\lfloor n\varphi \rfloor, \lfloor n\varphi \rfloor + n)$ or
+$(x, y) = (\lfloor n\varphi \rfloor + n, \lfloor n\varphi \rfloor)$, where
+$\varphi = (1 + \sqrt{5})/2$ is the golden ratio.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
 
 ## Sources
 

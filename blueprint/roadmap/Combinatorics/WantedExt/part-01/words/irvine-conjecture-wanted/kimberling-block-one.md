@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingBlock_one
 ---
 
-# Kimberling Block one
+# The first Kimberling block
 
-`K₁ = 110`.
+**The first Kimberling block.** For Kimberling's morphism $h$ on $\{0, 1\}$, given by
+$h(1) = 110$ and $h(0) = 11$, the block $K_1 = h(1)$ is the word $110$.
 
 ## Depends on
 
-- [Kimberling Block](kimberling-block.md)
+- [Kimberling's blocks](kimberling-block.md)
 
 ## Sources
 

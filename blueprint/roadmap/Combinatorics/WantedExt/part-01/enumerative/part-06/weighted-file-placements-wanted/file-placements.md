@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.filePlacements
 ---
 
-# File Placements
+# File placements
 
-File placements on the board: sets of cells with no two in the same column.
+**File placements.** A file placement on the Ferrers board with column heights $b$ is a set of
+cells of the board no two of which lie in the same column.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ferrers Board Cells](ferrers-board-cells.md)
+- [Cells of a Ferrers board](ferrers-board-cells.md)
 
 ## Sources
 

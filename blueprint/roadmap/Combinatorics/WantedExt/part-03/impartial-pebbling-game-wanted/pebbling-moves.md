@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.pebblingMoves
 ---
 
-# Pebbling Moves
+# Moves of the $(k+1:k)$-pebbling game
 
-The finite set of positions reachable from `a` by one `(k+1:k)`-pebbling move on `G`.
+**Moves of the $(k+1:k)$-pebbling game.** Let $G$ be a simple graph on the vertices
+$0, \dots, n-1$, let $k$ be a natural number and let $a = (a_0, \dots, a_{n-1})$ be a distribution
+of pebbles on the vertices. This is the finite set of distributions reachable from $a$ by one
+$(k+1:k)$-pebbling move on $G$: for adjacent vertices $i$ and $j$ with $a_i \ge k + 1$, remove
+$k + 1$ pebbles from $i$ and add $k$ pebbles to $j$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pebbling Step](pebbling-step.md)
+- [A $(k+1:k)$-pebbling move](pebbling-step.md)
 
 ## Sources
 

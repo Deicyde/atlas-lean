@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy
 ---
 
-# Maximum Nim Grundy
+# Grundy numbers of Maximum Nim
 
-The Grundy number of a Maximum Nim pile with rule function `f`. For a pile `x`,
-`Finset.Icc 1 (min (f x) x)` is the set of legal removal counts, and the recursive
-values at `x - u` form the finite set whose mex is taken. The `min` makes the function
-total; under the paper's hypotheses and `f 0 = 0` it does not alter legal play.
+**Grundy numbers of Maximum Nim.** For a rule function $f : \mathbb{N} \to \mathbb{N}$, the
+Grundy number $G_f(x)$ of a pile of $x$ stones in Maximum Nim is defined by recursion on $x$ as the
+mex (least natural number not in the set) of $\{G_f(x - u) : 1 \le u \le \min(f(x), x)\}$, the
+Grundy numbers of the positions reachable from $x$ by removing $u$ stones.
+
+Taking $\min(f(x), x)$ makes the definition total; under the source's hypotheses on $f$, which
+include $f(0) = 0$, it does not change the legal moves.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maximum Nim Mex](maximum-nim-mex.md)
+- [Minimum excludant of a finite set](maximum-nim-mex.md)
 
 ## Sources
 

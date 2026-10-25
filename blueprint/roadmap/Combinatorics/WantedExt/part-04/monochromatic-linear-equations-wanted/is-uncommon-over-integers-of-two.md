@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isUncommonOverIntegers_of_two
 ---
 
-# Is Uncommon Over Integers of two
+# Two-colour uncommonness over the integers extends to more colours
 
-If an equation with `k ≥ 3` nonzero coefficients is `2`-uncommon over the integers, it is
-`r`-uncommon over the integers for every `r ≥ 3`.
+**Two-colour uncommonness over the integers extends to more colours.** Let
+$k \ge 3$ and let $a_1, \dots, a_k$ be nonzero integers. If the equation
+$a_1x_1 + \cdots + a_kx_k = 0$ is $2$-uncommon over the integers, then it is $r$-uncommon
+over the integers for every $r \ge 3$.
 
 ## Depends on
 
-- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
+- [Uncommon equations over the integers](is-uncommon-over-integers.md)
 
 ## Sources
 

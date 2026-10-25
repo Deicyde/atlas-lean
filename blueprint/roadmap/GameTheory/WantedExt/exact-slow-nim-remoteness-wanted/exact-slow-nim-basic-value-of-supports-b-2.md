@@ -15,7 +15,7 @@ lean: MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA0
 
 - [Is Exact Slow Nim Basic A0](is-exact-slow-nim-basic-a0.md)
 - [Exact Slow Nim Basic Value](exact-slow-nim-basic-value.md)
-- [Slow ANim After](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+- [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources
 

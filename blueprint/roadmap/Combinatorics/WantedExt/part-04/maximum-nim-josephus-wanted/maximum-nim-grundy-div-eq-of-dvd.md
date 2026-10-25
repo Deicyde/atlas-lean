@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_div_eq_of_dvd
 ---
 
-# Maximum Nim Grundy div eq of dvd
+# Maximum Nim Grundy numbers at multiples of the divisor
 
-Lemma 3(i): for `k ≥ 2`, every positive multiple `x` of `k` has Grundy number
-`x/k` under the rule `f(y)=⌊y/k⌋`. Divisibility formalizes “multiple” and natural
-division the floors; there is no deviation.
+**Maximum Nim Grundy numbers at multiples of the divisor.** Let $k \ge 2$ and let $G$ be
+the Grundy number of Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$. Every positive
+multiple $x$ of $k$ satisfies $G(x) = x/k$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

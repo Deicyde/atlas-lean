@@ -5,18 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Shift.ovPos
 ---
 
-# Ov Pos
+# Literal positions of an overflow clause
 
-Positions of the overflow clause `r`.
+**Literal positions of an overflow clause.** For a layout $L$ with label block size $A$, $K$
+stacks and $g$ symbol codes, row width $W = A + K H g$, situation offsets $s_a$, push counts $p$,
+consumed counts $c$ and numbers $H, t, i, k, r, l$, the position of literal $l$ of the overflow
+clause $(t, i, k, r)$ is the situation variable $(t + 1) W + s_a(i)$ if $l = 0$, and otherwise the
+cell variable of row $t + 1$, stack $k$, depth $H - c(i, k) + p(i, k) + r$ and symbol code $0$,
+namely $(t + 1) W + A + (k H + H - c(i, k) + p(i, k) + r) g$. Subtraction is truncated at $0$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [C Idx](../family/c-idx.md)
-- [X Idx](../family/x-idx.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
+- [Index of a label/state variable](../family/x-idx.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.weightLcm_example
 ---
 
-# Weight Lcm example
+# Least common multiple of the weights $(2, 2, 3)$
 
-Example: `lcm(2, 2, 3) = 6`.
+**Least common multiple of the weights $(2, 2, 3)$.** The least common multiple of the list
+$(2, 2, 3)$ is $\operatorname{lcm}(2, 2, 3) = 6$.
 
 ## Depends on
 
-- [Weight Lcm](weight-lcm.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.BusyBeaver.initial
 ---
 
-# Initial
+# Initial configuration
 
-The initial configuration on the blank tape.
+**Initial configuration.** The initial configuration of a machine with $n$ working states is
+in the initial state (state $0$, or the halt state when $n = 0$), with the head at position $0$
+and every tape cell blank, that is, holding the symbol $0$.
 
 ## Depends on
 
-- [Config](config.md)
+- [Busy Beaver machine configuration](config.md)
 
 ## Proof depends on
 
-- [Initial State](initial-state.md)
+- [Initial state](initial-state.md)
 
 ## Sources
 

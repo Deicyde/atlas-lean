@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.polytopeDilate
 ---
 
-# Polytope Dilate
+# Dilate of a set
 
-The scalar dilate `tP`.  The natural number is cast to `ℝ`, matching the
-paper's nonnegative integral dilations.
+**Dilate of a set.** For a natural number $t$ and a set $P \subseteq \mathbb{R}^\iota$ of real
+vectors indexed by a type $\iota$, the dilate of $P$ by $t$ is the set
+$tP = \{t y : y \in P\} \subseteq \mathbb{R}^\iota$.
+
+Only natural-number factors $t \ge 0$ are used, matching the paper's nonnegative integral
+dilations.
 
 ## Depends on
 

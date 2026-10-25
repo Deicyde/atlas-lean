@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.implicit_riordan_sum_inverse
 ---
 
-# Theorem 47
+# Inversion of an implicit Riordan array sum
 
-**Theorem 47** (inverse of an implicit Riordan array sum). Let `ψ(0) ≠ 0` and
-`h = t g(t)` with `g(0) = h'(0) ≠ 0`. If `a_m = [t^m] f(t) ψ(t)^m b(h(t))` for all `m`, then
-`b_n = ∑_{k=0}^{n} ([t^{n-k}] (ψ - tψ') h' / (f ψ^{k+1}) · t^{n+1} / h^{n+1}) a_k`. The
-hypothesis `f(0) ≠ 0`, needed for `1 / f`, is added; `t^{n+1} / h^{n+1}` is written
-`(g⁻¹)^{n+1}`.
+**Inversion of an implicit Riordan array sum.** Write $[t^m]F$ for the coefficient of $t^m$
+in a power series $F$ and $F'$ for its formal derivative. Let $K$ be a field and let $f$,
+$\psi$, $g$, $b$ be power series over $K$ with $f(0) \ne 0$, $\psi(0) \ne 0$ and $g(0) \ne 0$.
+Put $h(t) = t\,g(t)$ and, for $m \in \mathbb{N}$, $a_m = [t^m]\,f(t)\,\psi(t)^m\,b(h(t))$. Then
+for every $n \in \mathbb{N}$,
+
+$$[t^n]\,b = \sum_{k=0}^{n} \left([t^{n-k}]\,
+\frac{(\psi - t\psi')\,h'}{f\,\psi^{k+1}\,g^{n+1}}\right) a_k.$$
+
+The paper writes the factor $1/g^{n+1}$ as $t^{n+1}/h(t)^{n+1}$ and does not state the
+hypothesis $f(0) \ne 0$, which $1/f$ needs.
 
 ## Depends on
 

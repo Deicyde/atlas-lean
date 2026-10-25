@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.josephusEliminationOrder_two_three
 ---
 
-# Josephus Elimination Order two three
+# Josephus elimination order for three people and step two
 
-For `n = 3` and `k = 2`, the order is `2, 1, 3`, with survivor `3` last;
-this is the check used to relate elimination positions to Grundy values, with no deviation.
+**Josephus elimination order for three people and step two.** The Josephus elimination
+order with step $2$ on the circle $1, 2, 3$ is $2, 1, 3$: the entry $2$ is removed first, then
+the entry $1$, and the survivor $3$ comes last.
 
 ## Depends on
 
-- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Josephus elimination order](josephus-elimination-order.md)
 
 ## Sources
 

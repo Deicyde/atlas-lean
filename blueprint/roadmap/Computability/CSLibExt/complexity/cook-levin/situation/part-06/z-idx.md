@@ -15,7 +15,7 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.zIdx
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [Layout](../part-01/layout.md)
 
 ## Sources

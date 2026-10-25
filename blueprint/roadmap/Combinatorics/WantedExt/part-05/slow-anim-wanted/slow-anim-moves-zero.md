@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.slowANimMoves_zero
 ---
 
-# Slow ANim Moves zero
+# The empty position has no options
 
-The empty position has no options.
+**The empty position has no options.** For every finite set $A$ of natural numbers, the
+position of Slow$A$-Nim on $n$ stacks in which every stack is empty has no options.
 
 ## Depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
 
 ## Proof depends on
 
-- [Slow ANim After](slow-anim-after.md)
+- [Playing on a set of stacks](slow-anim-after.md)
 
 ## Sources
 

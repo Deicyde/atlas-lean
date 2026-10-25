@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciSucc_record_indices
 ---
 
-# Tribonacci Succ record indices
+# Indices used by records of the Tribonacci successor
 
-Records of `out(n) - α n`. Let `R n` be a Tribonacci representation of `n`, so that
-`out(n) = [R n 0]_T`, and let `P` (resp. `Q`) list the indices `i ≥ 1` with
-`T_{i+1} - α T_i > 0` (resp. `< 0`) in increasing order, so that the paper's `P(t)` and
-`Q(t)` are `Nat.nth P (t - 1)` and `Nat.nth Q (t - 1)` for `t ≥ 1`. A positive (negative)
-record is a positive `n` whose difference `out(n) - α n` exceeds (is below) that of every
-`m < n`. Part 1: every index `i + 3` used by a positive record lies in `P`, and every index
-used by a negative record lies in `Q`.
+**Indices used by records of the Tribonacci successor.** Let $T_n$ be the Tribonacci numbers
+($T_0 = T_1 = 0$, $T_2 = 1$, $T_{n+3} = T_{n+2} + T_{n+1} + T_n$) and let $\alpha$ be a real
+number with $\alpha^3 = \alpha^2 + \alpha + 1$. For each $n$ fix a Tribonacci representation
+$R(n) = (r_0, r_1, \dots, r_{\ell-1})$ of $n$: digits in $\{0, 1\}$ with no three consecutive
+ones and $n = \sum_i r_i T_{i+3}$. Let $\mathrm{out}(n) = \sum_i r_i T_{i+4}$ be the Tribonacci
+successor of $n$. Call $n$ a positive record if $n > 0$ and
+$\mathrm{out}(m) - \alpha m < \mathrm{out}(n) - \alpha n$ for every $m < n$, and a negative
+record if $n > 0$ and $\mathrm{out}(n) - \alpha n < \mathrm{out}(m) - \alpha m$ for every
+$m < n$. If the digit $r_i$ of $R(n)$ equals $1$, then $T_{i+4} - \alpha T_{i+3} > 0$ when $n$
+is a positive record, and $T_{i+4} - \alpha T_{i+3} < 0$ when $n$ is a negative record.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 - [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

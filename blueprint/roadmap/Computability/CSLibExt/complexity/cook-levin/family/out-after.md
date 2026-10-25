@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.outAfter
 ---
 
-# Out After
+# Generator output after part of the time loop
 
-Output after `ii` iterations of the time loop (time steps `T - ii, …, T - 1`).
+**Generator output after part of the time loop.** For a layout $L$, tables $la$, $na$, $wa$,
+sizes $N$, $T$, $H$, a number $m$ of iterations and a Boolean list $o$, the output after $m$
+iterations is the concatenation, over the $m$ consecutive time steps $s$ starting at $T - m$ in
+increasing order, of the encoded clauses of time step $s$, followed by $o$. Here $T - m$ is
+truncated subtraction, so for $m \le T$ these are the time steps $T - m, \dots, T - 1$.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [Blk](blk.md)
+- [Encoded transition clauses of one time step](blk.md)
 
 ## Sources
 

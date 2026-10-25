@@ -13,9 +13,9 @@ supported one-state pushdown automaton, the standard finite model.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
-- [Finitely Supported](../../../../automata/pda/basic/finitely-supported.md)
-- [Accepts](../../../../automata/pda/basic/accepts.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
+- [Finitely supported pushdown automata](../../../../automata/pda/basic/finitely-supported.md)
+- [Language accepted by a pushdown automaton](../../../../automata/pda/basic/accepts.md)
 
 ## Proof depends on
 

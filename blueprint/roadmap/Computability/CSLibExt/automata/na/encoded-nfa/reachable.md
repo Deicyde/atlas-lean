@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.reachable
 ---
 
-# Reachable
+# Reachable states of an encoded NFA
 
-The states reachable from some start state.
+**Reachable states of an encoded NFA.** For an encoded NFA $N$, this is the list, found by a
+search from each start state of $N$ in turn through the start states of $N$ and the targets of
+its transitions and ε-moves, of the states reachable from a start state of $N$ by zero or more
+moves, each a transition of $N$ on some letter or an ε-move of $N$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ The states reachable from some start state.
 ## Proof depends on
 
 - [Reach N](../../../decidability/part-02/regular/reach-n.md)
-- [Next](next.md)
-- [States](states.md)
+- [Successors of a state in an encoded NFA](next.md)
+- [States an encoded NFA mentions as start states or targets](states.md)
 
 ## Sources
 

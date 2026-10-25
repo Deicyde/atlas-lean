@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isFibonacciAutomatic_const
 ---
 
-# Is Fibonacci Automatic const
+# Constant sequences are Fibonacci-automatic
 
-Constant sequences are Fibonacci-automatic.
+**Constant sequences are Fibonacci-automatic.** For every $c \in \mathbb{N}$, the constant
+sequence $n \mapsto c$ is Fibonacci-automatic.
 
 ## Depends on
 
-- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
+- [Fibonacci-automatic sequences](is-fibonacci-automatic.md)
 
 ## Proof depends on
 
-- [Fib Rep](fib-rep.md)
+- [Greedy Fibonacci representation](fib-rep.md)
 
 ## Sources
 

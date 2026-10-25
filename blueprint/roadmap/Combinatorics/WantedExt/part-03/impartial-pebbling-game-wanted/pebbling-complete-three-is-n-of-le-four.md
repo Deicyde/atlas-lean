@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isN_of_le_fourK
 ---
 
-# Pebbling complete Three is N of le four K
+# Pebbling on the triangle: total 6k-1 with every pile at most 4k
 
-Corollary 10: a `K_3` game with `6k - 1` pebbles and every pile at most `4k` is an
-N-game (`k` positive).
+**Pebbling on the triangle: total 6k-1 with every pile at most 4k.** Let $k$ be a positive
+integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a move removes
+$k+1$ pebbles from one vertex and adds $k$ pebbles to another. Every position with $6k - 1$
+pebbles in total in which every pile is at most $4k$ is an N-position, that is, not a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

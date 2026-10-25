@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_powerSum_odd_eq_sum
 ---
 
-# Theorem 10
+# Odd power sums in terms of $\binom{n+m}{2m-1}$
 
-**Theorem 10**: `2^{2k-1} S_{2k-1}(n) =
-Σ_{m=1}^k Q_{k,m}(n)·C(n + m, 2m - 1)` for `k ≥ 1`, with
-`Q_{k,m}` as in `thmQ`.
+**Odd power sums in terms of $\binom{n+m}{2m-1}$.** For natural numbers $k \ge 1$ and $n$,
+write $S_{2k-1}(n) = 1^{2k-1} + 2^{2k-1} + \dots + n^{2k-1}$, let
+$R(p, q) = \sum_{j=0}^{q} (-1)^j \binom{2q}{j} (q - j)^{2p}$, and let $Q_{k,1}(n) = n^{2k-1}$ and
+$Q_{k,m}(n) = 2 \sum_{j=m}^{k} \binom{2k-1}{2j-2} R(j-1, m-1)\, n^{2k-2j+1}$ for $m \ge 2$. Then
+$2^{2k-1} S_{2k-1}(n) = \sum_{m=1}^{k} Q_{k,m}(n) \binom{n+m}{2m-1}$.
 
 ## Depends on
 
-- [Power Sum](power-sum.md)
-- [Thm Q](thm-q.md)
+- [Power sums](power-sum.md)
+- [The polynomials $Q_{k,m}$ of Theorem 10](thm-q.md)
 
 ## Sources
 

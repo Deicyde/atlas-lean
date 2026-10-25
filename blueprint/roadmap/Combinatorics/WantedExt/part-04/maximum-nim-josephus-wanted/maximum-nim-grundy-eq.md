@@ -6,16 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimGrundy_eq
 ---
 
-# Maximum Nim Grundy eq
+# Recursive formula for Maximum Nim Grundy numbers
 
-Unfolding `maximumNimGrundy f x` gives the mex of the Grundy numbers at exactly
-the positions `x - u` for `1 ≤ u ≤ min (f x) x`; `attach` only carries the proof that
-each removal count is legal, so there is no mathematical deviation.
+**Recursive formula for Maximum Nim Grundy numbers.** For every rule function
+$f : \mathbb{N} \to \mathbb{N}$ and every pile size $x \in \mathbb{N}$, the Grundy number $G_f(x)$
+of a pile of $x$ stones in Maximum Nim with rule function $f$ equals the mex (least natural number
+not in the set) of $\{G_f(x - u) : 1 \le u \le \min(f(x), x)\}$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
-- [Maximum Nim Mex](maximum-nim-mex.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
+- [Minimum excludant of a finite set](maximum-nim-mex.md)
 
 ## Sources
 

@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.stirlingSecondShiftMatrix_eq_mul_pow
 ---
 
-# Stirling Second Shift Matrix eq mul pow
+# Factorization and determinant of shifted Stirling matrices
 
-Theorem 2: `S^[m](n) = S(n) V(n)^m`, and
-`det S^[m](n) = det_{1 ≤ i, j ≤ n} [S(i + m, j)] = ∏_{i=1}^{n} i^m = n!^m`. The paper takes
-`m, n ≥ 1`; `m = 0` and `n = 0` also hold and are included.
+**Factorization and determinant of shifted Stirling matrices.** For natural numbers $m$ and
+$n$, let $S(n)$ and $S^{[m]}(n)$ be the $n \times n$ rational matrices with entries $S(i, j)$ and
+$S(i + m, j)$, where $S(i, j)$ denotes the Stirling numbers of the second kind, and let $V(n)$ be
+the upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and all other entries $0$,
+all indices running over $1, \dots, n$. Then $S^{[m]}(n) = S(n)\, V(n)^m$ and
+$\det S^{[m]}(n) = (n!)^m$.
+
+The paper assumes $m, n \ge 1$; the cases $m = 0$ and $n = 0$ hold as well.
 
 ## Depends on
 
-- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
-- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
-- [Stirling VMatrix](stirling-vmatrix.md)
+- [Stirling matrix of the second kind](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Shifted Stirling matrix of the second kind](stirling-second-shift-matrix.md)
+- [Upper bidiagonal matrix V(n)](stirling-vmatrix.md)
 
 ## Sources
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weaklyPartitionRegular_iff_exists_ultrafilter
 ---
 
-# Weakly Partition Regular iff exists ultrafilter
+# Partition regular families and ultrafilters
 
-A family `𝓕` of subsets of `S` is weakly partition regular (every finite coloring of `S`
-has a monochromatic member of `𝓕`) if and only if some ultrafilter `U` on `S` is a PR-witness of
-`𝓕`: every `A ∈ U` contains some member of `𝓕`.
+**Partition regular families and ultrafilters.** Let $\mathcal{F}$ be a family of subsets of a
+set $S$. Every finite coloring of $S$ has a monochromatic member of $\mathcal{F}$ (that is,
+$\mathcal{F}$ is weakly partition regular) if and only if there is an ultrafilter $U$ on $S$ such
+that every $A \in U$ contains some member of $\mathcal{F}$ ($U$ is a PR-witness of $\mathcal{F}$).
 
 ## Depends on
 

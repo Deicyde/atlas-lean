@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.groupDiffBasisNumber
 ---
 
-# Group Diff Basis Number
+# Difference basis number of an abelian group
 
-`η_g(G)`: the least size of a `g`-difference basis of a finite abelian group `G`, i.e. of a
-set `A ⊆ G` with `r_{A-A}(x) ≥ g` for every `x ∈ G` (the paper's `η_g(S)` with `S = G`).
-Whenever no such finite set exists the value is the junk value `0` (`sInf ∅`): for an infinite
-group with `g ≥ 1`, and for a finite group with `g > Nat.card G`, since
-`r_{A-A}(x) ≤ |A| ≤ Nat.card G`. For a finite group with `g ≤ Nat.card G` the set `A = G` is a
-basis, so the value is the true minimum. The statements below use `g = 1` on finite groups, or
-a limit along groups whose order tends to infinity, so they never read the junk value.
+**Difference basis number of an abelian group.** For an abelian group $G$ and
+$g \in \mathbb{N}$, a $g$-difference basis of $G$ is a finite set $A \subseteq G$ such that every
+$x \in G$ equals $a - a'$ for at least $g$ ordered pairs $(a, a') \in A \times A$. The difference
+basis number $\eta_g(G)$ is the least size of a $g$-difference basis of $G$, and $0$ if $G$ has
+none.
+
+There is no $g$-difference basis when $G$ is infinite and $g \ge 1$, or when $G$ is finite and
+$g > |G|$, since each element is $a - a'$ for at most $|A| \le |G|$ pairs; in these cases the
+value $0$ is a convention. When $G$ is finite and $g \le |G|$, the set $A = G$ is a
+$g$-difference basis, so $\eta_g(G)$ is a true minimum. This is the paper's $\eta_g(S)$ with
+$S = G$.
 
 ## Depends on
 
@@ -21,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

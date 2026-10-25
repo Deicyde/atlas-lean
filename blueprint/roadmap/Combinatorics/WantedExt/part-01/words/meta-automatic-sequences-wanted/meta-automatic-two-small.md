@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_small
 ---
 
-# Meta Automatic Two small
+# First sixteen terms of $\mathcal{M}_2$
 
-First sixteen values of `ℳ₂`: `0110011010011001`.
+**First sixteen terms of $\mathcal{M}_2$.** The first sixteen terms
+$\mathcal{M}_2(0), \mathcal{M}_2(1), \ldots, \mathcal{M}_2(15)$ of the meta-automatic sequence
+$\mathcal{M}_2$ are $0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1$.
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 
 ## Sources
 

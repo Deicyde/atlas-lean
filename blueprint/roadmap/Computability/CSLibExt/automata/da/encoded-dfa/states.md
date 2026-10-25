@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Automata.EncodedDFA.states
 ---
 
-# States
+# States of an encoded DFA
 
-The start state and the targets of the listed transitions.
+**States of an encoded DFA.** The states of an encoded DFA $D$ form the list consisting of its
+start state followed by the targets of its listed transitions, in the order they are listed.
 
 ## Depends on
 

@@ -5,19 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_cycleFour_isP_of_modFourABACHat
 ---
 
-# Pebbling cycle Four is P of mod Four ABACHat
+# Positions in $(X_{abab} \cup X_{aabc} \cup X_{aaab}) \cap \hat Y_{abac}$ are P-positions of $(2:1)$-pebbling on $C_4$
 
-Theorem 18: every `C_4` `(2:1)`-pebbling game in
-`(X_{abab} ∪ X_{aabc} ∪ X_{aaab}) ∩ \hat Y_{abac}` is a P-game.
+**Positions in $(X_{abab} \cup X_{aabc} \cup X_{aaab}) \cap \hat Y_{abac}$ are P-positions
+of $(2:1)$-pebbling on $C_4$.** Consider the
+$(2:1)$-pebbling game on the cycle $C_4$ with vertices $v_0, v_1, v_2, v_3$, where $v_i$ is
+adjacent to $v_{i \pm 1}$ (indices mod $4$), and let $a = (a_0, a_1, a_2, a_3)$ be a position
+with $a_i$ pebbles on $v_i$. Suppose that $a$ lies in $X_{abab} \cup X_{aabc} \cup X_{aaab}$,
+where $X_{abab}$ means $a_0 \equiv a_2$, $a_1 \equiv a_3$ and $a_0 \not\equiv a_1 \pmod 3$;
+$X_{aabc}$ means that for some $i$, $a_i \equiv a_{i+1} \pmod 3$ and $a_i$, $a_{i+2}$, $a_{i-1}$
+are pairwise incongruent mod $3$; and $X_{aaab}$ means that for some $i$,
+$a_i \equiv a_{i+1} \equiv a_{i+2} \not\equiv a_{i-1} \pmod 3$. Suppose also that $a$ lies in
+$\hat Y_{abac}$: for some $i$, $a_i \equiv a_{i+2}$ and $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$.
+Then $a$ is a P-position.
 
 ## Depends on
 
-- [C4 Mod Four ABACHat](c4-mod-four-abachat.md)
-- [C4 Pattern AAAB](c4-pattern-aaab.md)
-- [C4 Pattern AABC](c4-pattern-aabc.md)
-- [C4 Pattern ABAB](c4-pattern-abab.md)
+- [The set $\hat Y_{abac}$ of $C_4$ positions](c4-mod-four-abachat.md)
+- [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
+- [The set $X_{aabc}$ of $C_4$ positions](c4-pattern-aabc.md)
+- [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.cubeGapSize
 ---
 
-# Cube Gap Size
+# Gap size
 
-The gap size `gs(S)` of a set `S ⊆ ℕ^t` (Definition 5): the least `d ≥ 1` such that `S`
-is `d`-dense in some subcube containing `S`, i.e. the minimum over subcubes `M ⊇ S` of the
-least `d` with `S` `d`-dense in `M` (for `t = 1` this is the largest gap of `S`, and `1` for a
-singleton, Definition 1). The paper defines `gs` for finite sets; on a set contained in no
-subcube (an unbounded set) the defining set is empty and the value is `0`, while every finite
-set has positive gap size when `t ≥ 1` (`cubeGapSize_pos`).
+**Gap size.** For a set $S \subseteq \mathbb{N}^t$, the gap size $\operatorname{gs}(S)$ is the
+least $d \ge 1$ such that $S$ is $d$-dense in some subcube of $\mathbb{N}^t$ that contains $S$. If
+no such $d$ exists (for instance when $S$ is unbounded, so that no subcube contains it), the value
+is $0$.
+
+For $t = 1$, the gap size of a finite set with at least two points is the largest difference
+between consecutive elements, and a one-point set has gap size $1$ (Definition 1). The paper
+defines $\operatorname{gs}$ only for finite sets; when $t \ge 1$, every finite set has positive gap
+size.
 
 ## Depends on
 
@@ -20,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Lattice Cube](lattice-cube.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

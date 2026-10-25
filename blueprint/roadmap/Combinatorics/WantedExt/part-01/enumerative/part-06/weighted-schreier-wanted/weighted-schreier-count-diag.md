@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_diag
 ---
 
-# Weighted Schreier Count diag
+# Diagonal weighted Schreier counts
 
-For `n ≥ 1`, `a_{n,n} = 2 F_n`.
+**Diagonal weighted Schreier counts.** For every natural number $n \ge 1$, the weighted
+Schreier count satisfies $a_{n,n} = 2F_n$, where $F_n$ is the $n$-th Fibonacci number
+($F_0 = 0$, $F_1 = 1$).
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

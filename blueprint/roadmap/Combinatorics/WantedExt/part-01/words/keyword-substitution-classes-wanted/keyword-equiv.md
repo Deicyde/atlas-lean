@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.KeywordEquiv
 ---
 
-# Keyword Equiv
+# Keyword equivalence of binary words
 
-The equivalence relation `∼_a` on words of length `n`: `u ∼_a v` when some finite
-composition of simple maps sends `u` to `v` (the empty composition included).
+**Keyword equivalence of binary words.** Let $a$ be a binary keyword of length $m + 1$.
+Two binary words $u$ and $v$ of length $n$ satisfy $u \sim_a v$ when some finite composition
+of simple maps of $a$, possibly the empty composition, sends $u$ to $v$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

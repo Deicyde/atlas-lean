@@ -5,22 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_four_ge
 ---
 
-# Card restricted Signed Sumset four ge
+# Lower bound for restricted signed 4-fold sumsets of positive integers
 
-For a `k`-element set of positive integers with `k ≥ 5`, the conjunction states the
-`8k-15` lower bound and its equality case as an `↔`: the paper prints the inverse
-direction, and the converse (every `m*{1,3,…,2k-1}` attains `8k-15`) is included. The existential `m` is explicitly required to
-belong to `A` and be no larger than every member, so it is exactly `min(A)` without a
-proof-valued `min'` argument; the conclusion is `m*{1,3,…,2k-1}`. The hypothesis
-`5 ≤ k` is the paper's own: Theorem 9 is stated for `k ≥ 5`, and the paper proves it from
-its five-element base case Theorem 10 via Lemma 1 and Theorem 5, so Theorem 10 below is
-the `k = 5` specialization of this statement rather than a separate case.
+**Lower bound for restricted signed 4-fold sumsets of positive integers.** Let $k \ge 5$,
+let $A$ be a set of $k$ positive integers, and write $4^{\wedge}_{\pm} A$ for the restricted
+signed 4-fold sumset of $A$. Then $|4^{\wedge}_{\pm} A| \ge 8k - 15$. Moreover,
+$|4^{\wedge}_{\pm} A| = 8k - 15$ if and only if $A = m \cdot \{1, 3, \dots, 2k - 1\}$, where
+$m = \min A$ and $m \cdot B = \{mb : b \in B\}$.
+
+The source states only that equality forces this form; the converse is included here.
 
 ## Depends on
 
-- [Odd Progression](odd-progression.md)
+- [The first $k$ odd positive integers](odd-progression.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
-- [Scale Finset](scale-finset.md)
+- [Dilation of a finite set of integers](scale-finset.md)
 
 ## Sources
 

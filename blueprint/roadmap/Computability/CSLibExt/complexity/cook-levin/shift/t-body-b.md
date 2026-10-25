@@ -11,12 +11,12 @@ Cost of one iteration of the time loop.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [Num Vars](../family/num-vars.md)
-- [Ik B](ik-b.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Step budget for one block of the shift generator](ik-b.md)
 
 ## Sources
 

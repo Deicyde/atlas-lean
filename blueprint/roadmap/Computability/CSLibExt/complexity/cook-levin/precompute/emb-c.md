@@ -5,30 +5,34 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.embC
 ---
 
-# Emb C
+# Embedding of the counter program's stacks
 
-The counter program's stacks inside the full machine.
+**Embedding of the counter program's stacks.** For natural numbers $g, r$, the stack embedding
+of the counter program into the full machine with $g$ input codes and $r$ raw input symbols
+renames stacks by the stack renaming of the counter program and identifies the alphabet of each
+stack with that of its image by the identity (Booleans on the output stack, the one-point type
+on each counter).
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CC](cc.md)
-- [FK](fk.md)
-- [FΓ](f.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Counters of the counter program](cc.md)
+- [Stacks of the full machine](fk.md)
+- [Alphabets of the full machine](f.md)
 - [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 
-- [CK](../accept/ck.md)
-- [HK](../assembly/hk.md)
-- [CK](../family/ck.md)
-- [CK](../init-family/ck.md)
-- [PS](ps.md)
-- [PT](pt.md)
-- [E C](e-c.md)
-- [Tgt](tgt.md)
-- [CK](../shift/ck.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Stacks of the Cook–Levin host machine](../assembly/hk.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
+- [Scratch counters of the counter program](ps.md)
+- [Target counters of the counter program](pt.md)
+- [Stack renaming of the counter program](e-c.md)
+- [Host counter of each target](tgt.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isSylverPPosition_two_three
 ---
 
-# Is Sylver PPosition two three
+# The position $\{2, 3\}$ is a P-position
 
-`{2, 3}` is a P-position: its only legal move is `1`.
+**The position $\{2, 3\}$ is a P-position.** In Sylver Coinage, the position
+$\{2, 3\}$ is a P-position: its only legal move is $1$.
 
 ## Depends on
 
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Proof depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

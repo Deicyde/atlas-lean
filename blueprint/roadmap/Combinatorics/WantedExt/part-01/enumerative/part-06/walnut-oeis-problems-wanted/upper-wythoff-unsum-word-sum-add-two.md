@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumWord_sum_add_two
 ---
 
-# Upper Wythoff Unsum Word sum add two
+# Digit sums of the words between markers
 
-The sums of the palindromes, each counted with its preceding marker `2` as in the source's
-remark that adding the preceding digit `2` gives the Fibonacci numbers, are
-`F_5, F_5, F_6, F_6, …`: the `j`-th word between markers has digit sum `F_(j/2 + 5) - 2`
-(integer division). The bare digit sums are `3, 3, 6, 6, 11, …`, so the literal reading
-without the marker fails at the first word (`3 ≠ F_5 = 5`).
+**Digit sums of the words between markers.** Let $F_n$ be the Fibonacci numbers, with
+$F_0 = 0$ and $F_1 = 1$. For every $j$ (words counted from zero), the digit sum of the $j$-th
+word between markers of the unsum gap sequence, plus $2$, equals $F_{\lfloor j/2 \rfloor + 5}$.
+
+So the digit sums are $3, 3, 6, 6, 11, \ldots$; adding the preceding marker digit $2$ gives
+$F_5, F_5, F_6, F_6, F_7, \ldots$, which is how the source's Lemma 3 must be read, since the
+bare digit sum of the first word is $3 \ne F_5 = 5$.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
+- [Words between markers in the unsum gap sequence](upper-wythoff-unsum-word.md)
 
 ## Sources
 

@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_prepend_equilibrious
 ---
 
-# Lemma 22
+# Prepending an equilibrious word shifts the position functions
 
-**Lemma 22.** For an equilibrious word `u` of length `2k` and `w ∈ 𝒲`,
-`p_{a, uw}(n+k) = p_{a,w}(n) + 2k`, `p_{b, uw}(n+k) = p_{b,w}(n) + 2k`, hence
-`r_{uw}(n+k) = r_w(n)`, for all `n ≥ 1`.
+**Prepending an equilibrious word shifts the position functions.** Let $u$ be a finite word
+over $\{a, b\}$ of length $2k$ that is equilibrious (it contains as many letters $a$ as letters
+$b$), and let $w$ be an infinite binary word in which both letters occur infinitely often. For a
+word $v$, write $p_{\alpha,v}(n)$ for the position (counted from $0$) of the $n$-th occurrence of
+the letter $\alpha$ in $v$, and $r_v(n) = p_{b,v}(n) - p_{a,v}(n)$. Then for every $n \ge 1$ the
+concatenation $uw$ satisfies $p_{a,uw}(n+k) = p_{a,w}(n) + 2k$, $p_{b,uw}(n+k) = p_{b,w}(n) + 2k$
+and $r_{uw}(n+k) = r_w(n)$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
 - [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

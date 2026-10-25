@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isUnateBoolFun_of_monotone
 ---
 
-# Is Unate Bool Fun of monotone
+# Monotone Boolean functions are unate
 
-Every monotone Boolean function is unate (increasing in every variable).
+**Monotone Boolean functions are unate.** Every Boolean function $f$ on $n$ variables that
+is monotone, for the coordinatewise order on $\{0,1\}^n$ with $0 \le 1$, is unate.
 
 ## Depends on
 
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
 
 ## Proof depends on
 
-- [Is Bool Fun Decreasing In](is-bool-fun-decreasing-in.md)
-- [Is Bool Fun Increasing In](is-bool-fun-increasing-in.md)
+- [Boolean functions decreasing in a variable](is-bool-fun-decreasing-in.md)
+- [Boolean functions increasing in a variable](is-bool-fun-increasing-in.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_gridLRamseyProperty
 ---
 
-# Exists grid LRamsey Property
+# Grid Ramsey theorem for Ls
 
-Grid Ramsey theorem for Ls: for every positive integer `k` there is a positive
-integer `n` such that every `k`-coloring of `[n] × [n]` contains a monochromatic L
-`(x, y), (x + d, y), (x + d, y + d)` with `x, y, d` positive.
+**Grid Ramsey theorem for Ls.** Write $[n] = \{1, \dots, n\}$. For every positive integer
+$k$ there is a positive integer $n$ such that every coloring of the grid $[n] \times [n]$ with
+$k$ colors contains a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le n$ and
+$y + d \le n$ such that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ all have the
+same color.
 
 ## Depends on
 
-- [Grid LRamsey Property](grid-lramsey-property.md)
+- [Grid Ramsey property for Ls](grid-lramsey-property.md)
 
 ## Sources
 

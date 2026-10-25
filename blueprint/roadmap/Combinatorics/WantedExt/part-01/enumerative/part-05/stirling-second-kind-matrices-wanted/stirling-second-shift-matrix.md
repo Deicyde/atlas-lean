@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stirlingSecondShiftMatrix
 ---
 
-# Stirling Second Shift Matrix
+# Shifted Stirling matrix of the second kind
 
-The shifted Stirling matrix `S^[m](n)` with entries `S(i + m, j)`,
-`1 ≤ i, j ≤ n`.
+**Shifted Stirling matrix of the second kind.** For natural numbers $m$ and $n$, the shifted
+Stirling matrix $S^{[m]}(n)$ is the $n \times n$ matrix over $\mathbb{Q}$ whose $(i, j)$ entry is
+the Stirling number of the second kind $S(i + m, j)$, for $1 \le i, j \le n$.
 
 ## Depends on
 

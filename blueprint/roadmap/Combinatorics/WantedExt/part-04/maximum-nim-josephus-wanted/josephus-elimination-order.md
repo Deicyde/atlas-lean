@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.josephusEliminationOrder
 ---
 
-# Josephus Elimination Order
+# Josephus elimination order
 
-The complete Josephus elimination order on the one-based circle `1, ..., n`,
-with every `k`-th entry removed and the survivor placed last. `List.range' 1 n`
-formalizes that circle and fuel `n` records all `n` eliminations; there is no deviation.
+**Josephus elimination order.** For natural numbers $k$ and $n$, place $1, \dots, n$ in
+order on a circle and repeatedly remove one entry. When $L$ entries remain and the current
+position is $s$ (zero-based, initially $s = 0$), the entry at zero-based position
+$i = (s + k - 1) \bmod L$ is removed, where the subtraction is truncated at $0$, and $i$ becomes
+the current position, so the next count starts at the entry after the removed one. The
+Josephus elimination order with step $k$ on the circle $1, \dots, n$ is the list of all $n$
+entries in the order of their removal.
+
+For $k \ge 1$ this is the classical process that removes every $k$-th remaining entry; the last
+entry of the list is the survivor.
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
+- [Fuel-bounded Josephus simulation](josephus-elimination-order-aux.md)
 
 ## Sources
 

@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.periodDoublingWord
 ---
 
-# Period Doubling Word
+# Iterates of the period-doubling substitution
 
-The period-doubling word, the fixed point of `a ↦ ab`, `b ↦ aa`, as Walnut's `PD`: here
-`a` is `1` and `b` is `0`. The source's prose says `a` is `0` and `b` is `1`, but its Walnut
-definition `antifib` (`PD[k]=@1` gives `9 + 10k`) and its displayed anti-Fibonacci numbers
-`0, 3, 9, 13, …` need `PD[0] = 1`. Entry `n` is the `n`-th iterate from `a`.
+**Iterates of the period-doubling substitution.** Write the period-doubling substitution
+$a \mapsto ab$, $b \mapsto aa$ over the letters $a = 1$ and $b = 0$, so that it sends $1$ to $10$
+and $0$ to $11$. The $n$-th period-doubling iterate is the word obtained by applying this
+substitution $n$ times to the one-letter word $1$; the iterates begin $1$, $10$, $1011$,
+$10111010$, and their limit is the period-doubling word (Walnut's PD).
+
+The source's prose takes $a = 0$ and $b = 1$, but its Walnut definition `antifib`
+(`PD[k]=@1` gives $9 + 10k$) and its displayed anti-Fibonacci numbers $0, 3, 9, 13, \ldots$ need
+the first letter of PD to be $1$.
 
 ## Depends on
 

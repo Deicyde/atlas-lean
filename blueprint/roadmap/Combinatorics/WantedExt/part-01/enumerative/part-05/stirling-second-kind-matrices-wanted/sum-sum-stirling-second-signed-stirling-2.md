@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_sum_stirlingSecond_signedStirlingFirst_stirlingSecond
 ---
 
-# Sum sum stirling Second signed Stirling First stirling Second
+# Double-sum shift identity for Stirling numbers
 
-Theorem 8: for `n ≥ max {i, j}` and `m₁, m₂ ≥ 0`,
-`∑_{k₁=1}^{n} ∑_{k₂=1}^{k₁} S(i + m₁, k₁) s(k₁, k₂) S(k₂ + m₂, j) = S(i + m₁ + m₂, j)`.
-The shifts `m₁, m₂` are those of Corollary 3 (the statement leaves them
-unquantified); `i ≥ 1` is kept, `j ≥ 1` is not needed.
+**Double-sum shift identity for Stirling numbers.** Write $S(n, k)$ for the Stirling numbers
+of the second kind and $s(n, k)$ for the signed Stirling numbers of the first kind. For all
+natural numbers $i, j, n, m_1, m_2$ with $i \ge 1$, $n \ge i$ and $n \ge j$,
+
+$$\sum_{k_1=1}^{n} \sum_{k_2=1}^{k_1} S(i+m_1, k_1)\, s(k_1, k_2)\, S(k_2+m_2, j) =
+S(i+m_1+m_2, j).$$
+
+The source leaves the shifts $m_1, m_2$ unquantified; here they are arbitrary natural numbers,
+as in Corollary 3 of the source, and the source's hypothesis $j \ge 1$ is not needed.
 
 ## Depends on
 

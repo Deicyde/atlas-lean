@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciImproperWeight
 ---
 
-# Tribonacci Improper Weight
+# Weight of an improper word
 
-The weight of an improper word (padded with a `0` on the left): the sum of the digits to
-the right of the last `0` preceding the improper boundary, the leftmost digit `≥ 2`.
+**Weight of an improper word.** Let $w$ be a word of natural-number digits, written most
+significant digit first, and let $v = 0w$ be $w$ padded with a $0$ on the left, with positions
+numbered from $0$. Let $p$ be the position of the leftmost digit $\ge 2$ of $v$ (the improper
+boundary), or the length of $v$ if there is no such digit. The weight of $w$ is the sum of the
+digits of $v$ that come after the last $0$ of $v$ before position $p$.
 
 ## Depends on
 

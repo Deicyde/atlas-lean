@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_zeros_four_ones_zeros_iff
 ---
 
-# Is Ulam Word zeros four ones zeros iff
+# Ulam words with a block of four ones
 
-For `a + b ≥ 1`, `0^a 1⁴ 0^b` is Ulam iff `a + b ≡ 1 (mod 4)`.
+**Ulam words with a block of four ones.** For natural numbers $a$ and $b$ with $a + b \ge 1$,
+the binary word $0^a 1111 0^b$ ($a$ zeros, then four ones, then $b$ zeros) is an Ulam word if
+and only if $a + b \equiv 1 \pmod 4$.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
+- [Ulam words](is-ulam-word.md)
 
 ## Sources
 

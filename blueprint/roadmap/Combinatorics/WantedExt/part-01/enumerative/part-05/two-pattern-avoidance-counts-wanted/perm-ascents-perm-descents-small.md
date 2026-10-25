@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.permAscents_permDescents_small
 ---
 
-# Perm Ascents perm Descents small
+# Ascents and descents of $123$ and $132$
 
-The identity of length `3` (`123`) has two ascents and no descents; `132` has one of each.
+**Ascents and descents of $123$ and $132$.** Writing permutations of $\{0, 1, 2\}$ in
+one-based one-line notation, the identity $123$ has two ascents and no descents,
+$\operatorname{asc}(123) = 2$ and $\operatorname{des}(123) = 0$, and $132$ has one of each,
+$\operatorname{asc}(132) = \operatorname{des}(132) = 1$.
 
 ## Depends on
 
-- [Pattern3](pattern3.md)
-- [Perm Ascents](perm-ascents.md)
-- [Perm Descents](perm-descents.md)
+- [Length-three pattern from one-line values](pattern3.md)
+- [Ascent number of a permutation](perm-ascents.md)
+- [Descent number of a permutation](perm-descents.md)
 
 ## Sources
 

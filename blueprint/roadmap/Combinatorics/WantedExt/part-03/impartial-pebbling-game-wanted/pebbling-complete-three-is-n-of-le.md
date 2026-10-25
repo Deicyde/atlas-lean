@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isN_of_le
 ---
 
-# Pebbling complete Three is N of le
+# Pebbling on the triangle: N-positions with total 6k-2ℓ+1 and a small pile
 
-Lemma 9: for `1 ≤ ℓ ≤ 2k - 1`, a `K_3` game with `6k - 2ℓ + 1` pebbles, largest pile at
-most `4k - ℓ + 1` and smallest pile at most `2k - ℓ` is an N-game (`k` positive).
+**Pebbling on the triangle: N-positions with total 6k-2ℓ+1 and a small pile.** Let $k$ be a
+positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
+move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Let $\ell$ be an
+integer with $1 \le \ell \le 2k - 1$. Every position with $6k - 2\ell + 1$ pebbles in total in
+which every pile is at most $4k - \ell + 1$ and some pile is at most $2k - \ell$ is an
+N-position, that is, not a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

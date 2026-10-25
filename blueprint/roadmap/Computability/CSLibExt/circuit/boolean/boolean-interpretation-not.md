@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Circuits.booleanInterpretation_not
 ---
 
-# Boolean Interpretation not
+# Boolean NOT
 
-NOT negates its sole input.
+**Boolean NOT.** Under the Boolean interpretation, the NOT gate applied to a truth value $x$
+returns its negation $\lnot x$.
 
 ## Depends on
 
-- [Boolean Gate](boolean-gate.md)
-- [Boolean Interpretation](boolean-interpretation.md)
+- [Boolean gates](boolean-gate.md)
+- [Boolean interpretation](boolean-interpretation.md)
 
 ## Sources
 

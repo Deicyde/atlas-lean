@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.josephusEliminationOrder_perm
 ---
 
-# Josephus Elimination Order perm
+# The Josephus elimination order is a permutation of the circle
 
-The Josephus elimination order on `n` people is a permutation of the circle
-`1, ..., n`, so each person appears exactly once. This holds for every `k`, with no
-deviation.
+**The Josephus elimination order is a permutation of the circle.** For all natural numbers
+$k$ and $n$, the Josephus elimination order with step $k$ on the circle $1, \dots, n$ is a
+permutation of the list $1, 2, \dots, n$; in particular, each of $1, \dots, n$ occurs in it
+exactly once.
 
 ## Depends on
 
-- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Josephus elimination order](josephus-elimination-order.md)
 
 ## Proof depends on
 
-- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
+- [Fuel-bounded Josephus simulation](josephus-elimination-order-aux.md)
 
 ## Sources
 

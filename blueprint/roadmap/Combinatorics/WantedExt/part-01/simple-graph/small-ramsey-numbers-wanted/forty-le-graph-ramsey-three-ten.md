@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.forty_le_graphRamsey_three_ten
 ---
 
-# Forty le graph Ramsey three ten
+# Exoo's lower bound for $R(3, 10)$
 
-`R(3,10) ≥ 40`.
+**Exoo's lower bound for $R(3, 10)$.** The classical Ramsey number $R(3, 10)$ is at
+least $40$.
 
 ## Depends on
 

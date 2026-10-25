@@ -18,8 +18,8 @@ The empty position is `0`-critical.
 
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
 - [Smith Remoteness of moves eq empty](../../MathlibExt/smith-remoteness/smith-remoteness-of-moves-eq-empty.md)
-- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
-- [Slow ANim Moves zero](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves-zero.md)
+- [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+- [The empty position has no options](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves-zero.md)
 
 ## Sources
 

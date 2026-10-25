@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.stirlingFirstMatrix
 ---
 
-# Stirling First Matrix
+# Stirling matrix of the first kind
 
-The Stirling matrix of the first kind `s(n)` with entries `s(i, j)`
-(zero above the diagonal).
+**Stirling matrix of the first kind.** For a natural number $n$, the Stirling matrix of the
+first kind $s(n)$ is the $n \times n$ matrix with rational entries $s(n)_{i,j} = s(i, j)$ for
+$1 \le i, j \le n$, where $s(i, j)$ is the signed Stirling number of the first kind. Its
+entries above the diagonal are zero, since $s(i, j) = 0$ for $j > i$.
 
 ## Depends on
 

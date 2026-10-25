@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.S
 ---
 
-# S
+# Stable homogeneous polynomials with nonnegative coefficients
 
-Let `S n d` be the set of degree `d` homogeneous stable polynomials in `n` variables
-with nonnegative coefficients.
+**Stable homogeneous polynomials with nonnegative coefficients.** $S^d_n$ is the set of
+homogeneous polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ whose coefficients are
+all nonnegative and that are stable: either $f$ is the zero polynomial or $f$ has no zero in
+$\mathbb{H}^n$, where $\mathbb{H}$ is the open upper half plane in $\mathbb{C}$.
 
 ## Depends on
 
-- [H](h.md)
+- [Homogeneous polynomials of degree $d$](h.md)
 
 ## Proof depends on
 
-- [Is Stable](is-stable.md)
+- [Stable polynomials](is-stable.md)
 
 ## Sources
 

@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumWord
 ---
 
-# Upper Wythoff Unsum Word
+# Words between markers in the unsum gap sequence
 
-The word of gaps strictly between the `j`-th and `(j + 1)`-th markers (both counted from
-zero); the source writes the gap sequence after the prefix as
-`2 W_1 2 W_1 2 W_2 2 W_2 2 W_3 2 ⋯`, so these words are `W_1, W_1, W_2, W_2, …`.
+**Words between markers in the unsum gap sequence.** Let $g_0, g_1, g_2, \ldots$ be the
+gaps between consecutive unsums, and call an index $i \ge 10$ with $g_i = 2$ a marker. Let
+$m_0 < m_1 < m_2 < \cdots$ be the markers in increasing order. For each $j$, the $j$-th word
+between markers is $g_{m_j + 1} g_{m_j + 2} \cdots g_{m_{j+1} - 1}$, the word of the gaps
+strictly between the $j$-th and the $(j+1)$-th marker.
+
+The source writes the gap sequence after its prefix as $2 W_1 2 W_1 2 W_2 2 W_2 2 W_3 2 \cdots$,
+so these words are $W_1, W_1, W_2, W_2, \ldots$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
-- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
+- [Gaps between unsums](upper-wythoff-unsum-gap.md)
+- [Markers in the gaps between unsums](upper-wythoff-unsum-marker.md)
 
 ## Sources
 

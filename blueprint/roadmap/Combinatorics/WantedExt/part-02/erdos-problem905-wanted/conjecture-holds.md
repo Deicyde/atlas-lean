@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem905Wanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Edwards–Khadzhiivanov–Nikiforov theorem on edges in many triangles
 
-Resolved true: Resolved externally, independently by Edwards and by Khadzhiivanov–Nikiforov.
-This repository records the statement, not an internal proof; a pinned external Lean proof is
-cited below. Source: External Lean proof of Erdős Problem 905,
-https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos905.lean.
-Moved from `OpenConjectures/Combinatorics/ErdosProblem905`.
+**Edwards–Khadzhiivanov–Nikiforov theorem on edges in many triangles.** For every natural number
+$n$, every simple graph $G$ on $n$ vertices with more than $n^2/4$ edges has an edge that lies in
+at least $n/6$ triangles of $G$.
+
+This was proved independently by Edwards and by Khadzhiivanov and Nikiforov, and answers Erdős
+Problem 905 affirmatively.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Erdős Problem 905 on edges in many triangles](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem905Wanted](../../../../../sources/v2/WantedExt.md)
+- External Lean proof of Erdős Problem 905, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos905.lean. Moved from `OpenConjectures/Combinatorics/ErdosProblem905`.

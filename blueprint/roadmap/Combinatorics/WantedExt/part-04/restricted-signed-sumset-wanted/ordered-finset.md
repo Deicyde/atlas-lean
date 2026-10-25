@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.orderedFinset
 ---
 
-# Ordered Finset
+# Set of values of a finite integer sequence
 
-`orderedFinset a` is the finite set enumerated by the indexed sequence `a`; order and
-injectivity requirements are supplied separately by the statements that use it.
+**Set of values of a finite integer sequence.** For a sequence $a_0, \dots, a_{k-1}$ of
+integers, this is the finite set $\{a_i : 0 \le i < k\}$ of its values.
+
+No order or injectivity is assumed; the statements that use it assume what they need.
 
 ## Depends on
 

@@ -6,10 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_three_four
 ---
 
-# Card restricted Signed Sumset three four
+# The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$
 
-The restricted signed three-fold sumset of `{1,2,3,4}` has cardinality `19`; the
-numeral is the computed value requested as a small executable check.
+**The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$.** The restricted signed 3-fold
+sumset $3^{\wedge}_{\pm} \{1, 2, 3, 4\}$ has exactly $19$ elements.
 
 ## Depends on
 

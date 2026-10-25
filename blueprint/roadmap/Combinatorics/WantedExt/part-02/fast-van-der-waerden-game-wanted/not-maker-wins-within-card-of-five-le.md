@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.not_makerWinsWithin_card_of_five_le
 ---
 
-# Not maker Wins Within card of five le
+# Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$
 
-If `|S| ≥ 5`, Maker does not have an `|S|`-move strategy.
+**Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$.** If $S$ is a finite
+set of natural numbers with $|S| \ge 5$, then, starting from the position where no number has
+been claimed, Maker does not win the $S$-game within $|S|$ moves.
 
 ## Depends on
 
-- [Maker Wins Within](maker-wins-within.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

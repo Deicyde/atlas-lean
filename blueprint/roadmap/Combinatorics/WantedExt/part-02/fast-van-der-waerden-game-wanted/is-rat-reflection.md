@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.IsRatReflection
 ---
 
-# Is Rat Reflection
+# Reflections of finite sets of rationals
 
-`B` is a reflection of `A`: `B = aA + b` for rationals `a < 0` and `b`.
+**Reflections of finite sets of rationals.** Let $A$ and $B$ be finite sets of rational
+numbers. $B$ is a reflection of $A$ if there are rationals $a < 0$ and $b$ such that
+$B = aA + b = \{ax + b : x \in A\}$.
 
 ## Depends on
 

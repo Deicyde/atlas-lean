@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.distanceFrom
 ---
 
-# Distance From
+# Distance from a word to a binary code
 
-The distance from a word `f` to a binary code `C` is the Hamming distance from `f` to the
-closest codeword in `C`.
+**Distance from a word to a binary code.** For a binary code $C \subseteq \mathbb{F}_2^n$
+and a word $f \in \mathbb{F}_2^n$, the distance from $f$ to $C$ is the minimum, over all
+codewords $c \in C$, of the Hamming distance between $f$ and $c$, that is, the number of
+coordinates in which $f$ and $c$ differ.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Sources
 

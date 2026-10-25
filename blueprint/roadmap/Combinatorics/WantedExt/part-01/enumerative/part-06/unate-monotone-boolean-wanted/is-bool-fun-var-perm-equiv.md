@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsBoolFunVarPermEquiv
 ---
 
-# Is Bool Fun Var Perm Equiv
+# Permutation equivalence of Boolean functions
 
-Equivalence of `n`-variable Boolean functions: `g` is obtained from `f`
-by a permutation of the variables.
+**Permutation equivalence of Boolean functions.** An $n$-variable Boolean function $f$ is
+permutation-equivalent to $g$ when $g$ is obtained from $f$ by permuting the variables: there
+is a permutation $\sigma$ of $\{1, \ldots, n\}$ such that
+$g(x_1, \ldots, x_n) = f(x_{\sigma(1)}, \ldots, x_{\sigma(n)})$ for every $x \in \{0,1\}^n$.
 
 ## Depends on
 

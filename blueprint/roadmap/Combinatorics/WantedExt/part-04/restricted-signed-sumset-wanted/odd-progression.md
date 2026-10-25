@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddProgression
 ---
 
-# Odd Progression
+# The first $k$ odd positive integers
 
-`oddProgression k` is `{1, 3, ..., 2k-1}`, encoded by zero-based indices.
+**The first $k$ odd positive integers.** For a natural number $k$, this is the set of integers
+$\{1, 3, \dots, 2k - 1\} = \{2i + 1 : 0 \le i < k\}$; it is empty when $k = 0$.
 
 ## Depends on
 

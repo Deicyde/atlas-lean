@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.ascDesGF_132_321
 ---
 
-# Asc Des GF 132 321
+# Ascents and descents over permutations avoiding $132$ and $321$
 
-Corollary 2, equation (13): over `S_n(132, 321)`,
-`∑ xⁿ p^{asc} q^{des} = (1 + x - 3px - 2px² + 3p²x² + qx² + p²x³ - p³x³) / (1 - px)³`, stated after
-clearing the denominator; only the `(asc, des)` identity is stated.
+**Ascents and descents over permutations avoiding $132$ and $321$.** Let
+
+$$G = \sum_{n \ge 0} \sum_{\sigma} x^n p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)},$$
+
+where $\sigma$ runs over the permutations of $\{0, 1, \dots, n-1\}$ that avoid both patterns
+$132$ and $321$, and $\mathrm{asc}(\sigma)$ and $\mathrm{des}(\sigma)$ are the numbers of ascents
+and descents of $\sigma$; $G$ is a formal power series in $x$ with coefficients in
+$\mathbb{Q}[p, q]$. Then
+
+$$(1 - px)^3\, G = 1 + x - 3px - 2px^2 + 3p^2x^2 + qx^2 + p^2x^3 - p^3x^3.$$
 
 ## Depends on
 
-- [Asc Des GF](asc-des-gf.md)
-- [Pattern3](pattern3.md)
+- [Ascent–descent generating function of a pair of patterns](asc-des-gf.md)
+- [Length-three pattern from one-line values](pattern3.md)
 
 ## Sources
 

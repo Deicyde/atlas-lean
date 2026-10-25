@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.reflection_image_and_relativePosition
 ---
 
-# Proposition 11
+# Reflection of binary words and relative position
 
-**Proposition 11.** (a) The reflection `w ↦ w̄` maps `a𝒲` onto `b𝒲` and `b𝒲` onto `a𝒲`.
-(b) For `w, w' ∈ 𝒲`, `w̄ = w'` iff `r_w = -r_{w'}`.
+**Reflection of binary words and relative position.** Let $\mathcal{W}$ be the set of
+infinite words over $\{a, b\}$ in which both letters occur infinitely often, and let
+$a\mathcal{W}$ and $b\mathcal{W}$ be its words that begin with $a$ and with $b$. For a word $w$
+let $\bar w$ be its reflection, obtained by exchanging $a$ and $b$ at every position, and let
+$r_w(n) = p_b(n) - p_a(n)$ be its relative position function, where $p_a(n)$ and $p_b(n)$ are
+the positions of the $n$-th $a$ and the $n$-th $b$ in $w$. Then (a) the map $w \mapsto \bar w$
+sends $a\mathcal{W}$ onto $b\mathcal{W}$ and $b\mathcal{W}$ onto $a\mathcal{W}$; and (b) for all
+$w, w' \in \mathcal{W}$, $\bar w = w'$ if and only if $r_w(n) = -r_{w'}(n)$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

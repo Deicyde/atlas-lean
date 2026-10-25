@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_clone
 ---
 
-# Lemma 24
+# Position functions of a cloned word
 
-**Lemma 24.** For `w ∈ 𝒲` and the cloning substitution `φ_k(w) = fun i => w (i / k)`
-(`a ↦ a^k`, `b ↦ b^k`), for all `m ≥ 0` and `1 ≤ j ≤ k`:
-`p_{a,φ_k(w)}(mk+j) = k p_{a,w}(m+1) + j - 1`, `p_{b,φ_k(w)}(mk+j) = k p_{b,w}(m+1) + j - 1`,
-`r_{φ_k(w)}(mk+j) = k r_w(m+1)`. The paper takes `k ≥ 2`; the identities hold for `k = 1`
-(`φ_1` is the identity) and are vacuous for `k = 0`, so no bound on `k` is assumed.
+**Position functions of a cloned word.** Let $w$ be an infinite binary word over the
+letters $a$ and $b$ in which both letters occur infinitely often, let $k$ be a natural number,
+and let $\varphi_k(w)$ be the word whose letter at position $i$ is the letter of $w$ at position
+$\lfloor i/k \rfloor$ (for $k \ge 1$, the word obtained from $w$ by repeating each letter $k$
+times). For a word $v$ and a letter $\alpha$, let $p_{\alpha,v}(n)$ be the position (counting
+from $0$) of the $n$-th occurrence of $\alpha$ in $v$, and let $r_v(n) = p_{b,v}(n) - p_{a,v}(n)$.
+Then for all natural numbers $m$ and $j$ with $1 \le j \le k$,
+$p_{a,\varphi_k(w)}(mk+j) = k\,p_{a,w}(m+1) + j - 1$,
+$p_{b,\varphi_k(w)}(mk+j) = k\,p_{b,w}(m+1) + j - 1$ and
+$r_{\varphi_k(w)}(mk+j) = k\,r_w(m+1)$.
+
+The paper takes $k \ge 2$; the identities hold for $k = 1$ ($\varphi_1$ is the identity) and are
+vacuous for $k = 0$, so no bound on $k$ is assumed.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.even_count_min_of_keywordActsCompletely
 ---
 
-# Even count min of keyword Acts Completely
+# Parity of the smallest index in a non-commuting list
 
-Parity of the smallest index: fix a letter `i` and a list `l = [j_1, …, j_r]` of
-simple-map indices with (i) every `j_q > i`, (ii) `φ_i ∘ l ≠ l ∘ φ_i` as maps, and
-(iii) some word on which `(φ_i, l, φ_i)` acts completely.  Then the smallest index
-`j` of `l` occurs an even number of times in `l`.
+**Parity of the smallest index in a non-commuting list.** Let $a$ be a binary keyword of
+length $m + 1$, let $n$ and $i$ be natural numbers with $i < n$, and for each index $k$ let
+$\varphi_k$ be the simple map of $a$ at letter $k$ on binary words of length $n$. Let
+$l = [j_1, \dots, j_r]$ be a list of indices that are all greater than $i$, and let
+$\varphi_l = \varphi_{j_r} \circ \dots \circ \varphi_{j_1}$ be the map that applies
+$\varphi_{j_1}$ first. Suppose that $\varphi_i \circ \varphi_l \ne \varphi_l \circ \varphi_i$
+as maps on words of length $n$, and that the list $[i, j_1, \dots, j_r, i]$, applied from left
+to right, acts completely on some word of length $n$ (each map in turn changes the word). Then
+every entry $j$ of $l$ with $j \le j'$ for all entries $j'$ of $l$ occurs an even number of
+times in $l$.
 
 ## Depends on
 
-- [Keyword Acts Completely](keyword-acts-completely.md)
-- [Keyword List Apply](keyword-list-apply.md)
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Lists of simple maps acting completely](keyword-acts-completely.md)
+- [Action of a list of simple maps](keyword-list-apply.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

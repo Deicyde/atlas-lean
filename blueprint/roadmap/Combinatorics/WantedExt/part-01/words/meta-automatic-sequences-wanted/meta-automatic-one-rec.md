@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.metaAutomaticOne_rec
 ---
 
-# Meta Automatic One rec
+# Recurrences of the meta-automatic sequence $\mathcal{M}_1$
 
-The recurrences of `ℳ₁` in the paper's form, with `ℳ₁(n)` read as `0` or `1`.
+**Recurrences of the meta-automatic sequence $\mathcal{M}_1$.** Reading the values of the
+meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, for every $n \ge 1$ we have
+$\mathcal{M}_1(4n) = \mathcal{M}_1(n)$ and $\mathcal{M}_1(4n+1) = 1 - \mathcal{M}_1(n)$, and for
+every $n \in \mathbb{N}$ we have $\mathcal{M}_1(4n+2) = \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$
+and $\mathcal{M}_1(4n+3) = 1 - \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$.
 
 ## Depends on
 
-- [Meta Automatic One](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_six_le
 ---
 
-# Schur Number six le
+# Upper bound for the sixth Schur number
 
-`S(6) ≤ 1836`.
+**Upper bound for the sixth Schur number.** The Schur number $S(6)$ is at most $1836$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

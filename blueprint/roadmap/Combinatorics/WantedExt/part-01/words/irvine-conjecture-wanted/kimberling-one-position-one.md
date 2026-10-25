@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingOnePosition_one
 ---
 
-# Kimberling One Position one
+# Position of the first one in Kimberling's word
 
-`A₁ = 1`.
+**Position of the first one in Kimberling's word.** The position $A_1$ of the first $1$ in
+Kimberling's word $k = k_1 k_2 k_3 \cdots$, counted from $1$, is $A_1 = 1$.
 
 ## Depends on
 
-- [Kimberling One Position](kimberling-one-position.md)
+- [Positions of the ones in Kimberling's word](kimberling-one-position.md)
 
 ## Proof depends on
 
-- [Kimberling Word](kimberling-word.md)
-- [Kimberling Word initial](kimberling-word-initial.md)
+- [Kimberling's word](kimberling-word.md)
+- [The first letters of Kimberling's word](kimberling-word-initial.md)
 
 ## Sources
 

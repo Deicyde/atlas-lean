@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_of_pos_of_lt
 ---
 
-# Weighted Schreier Count of pos of lt
+# Weighted Schreier counts for $0 < m < k$
 
-Third case of Theorem 1.2, reindexed by `m = k + ℓ`: for `k ≥ 2` and `-k < ℓ < 0`,
-i.e. `0 < m < k`, `a_{k,m} = F_{m+1}`.
+**Weighted Schreier counts for $0 < m < k$.** For natural numbers $k \ge 2$ and $m$ with
+$0 < m < k$, the weighted Schreier count satisfies $a_{k,m} = F_{m+1}$, where $F_j$ is the
+$j$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

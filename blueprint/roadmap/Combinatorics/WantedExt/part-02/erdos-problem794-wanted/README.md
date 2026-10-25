@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem794
 
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Erdős Problem 794 on dense 3-uniform hypergraphs](conjecture.md)
+- [Refutation of Erdős Problem 794](conjecture-refuted.md)

@@ -20,7 +20,7 @@ theorem sat_run {s : List (M.Γ M.k₀)} {T H : ℕ} {ls : List (ℕ × Bool)}
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
 - [Layout](../part-01/layout.md)

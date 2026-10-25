@@ -27,7 +27,7 @@ $F_k(x) = SP_k(x, 1)$ and the left side is the derivative of $SP_k(x, q)$ in $q$
 ## Depends on
 
 - [Surjective restricted-growth strings](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
-- [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
+- [Number of symmetric peaks](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources
 

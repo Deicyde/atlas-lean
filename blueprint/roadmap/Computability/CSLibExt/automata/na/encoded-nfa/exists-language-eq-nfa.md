@@ -14,11 +14,11 @@ states has an encoded NFA with the same language.
 ## Depends on
 
 - [Encoded NFA](encoded-nfa.md)
-- [Language](language.md)
+- [Language of an encoded NFA](language.md)
 
 ## Proof depends on
 
-- [ToεNFA](to-nfa.md)
+- [The ε-NFA of an encoded NFA](to-nfa.md)
 
 ## Sources
 

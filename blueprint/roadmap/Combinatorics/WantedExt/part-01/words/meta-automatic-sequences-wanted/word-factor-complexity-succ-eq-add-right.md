@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.wordFactorComplexity_succ_eq_add_rightSpecial
 ---
 
-# Word Factor Complexity succ eq add right Special
+# First difference of the factor complexity of a binary word
 
-Lemma 27: for every infinite binary word `a` and `n ≥ 1`,
-`p_a(n+1) - p_a(n) = #RS_a(n)`, stated additively in `ℕ`.
+**First difference of the factor complexity of a binary word.** Let $a$ be an infinite word
+over $\{0, 1\}$, let $p_a$ be its factor complexity, and let $\mathrm{RS}_a(n)$ be the set of
+right-special factors of $a$ of length $n$. Then for every $n \ge 1$,
+$p_a(n+1) = p_a(n) + \#\mathrm{RS}_a(n)$.
 
 ## Depends on
 
-- [Right Special Factors](right-special-factors.md)
+- [Right-special factors](right-special-factors.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

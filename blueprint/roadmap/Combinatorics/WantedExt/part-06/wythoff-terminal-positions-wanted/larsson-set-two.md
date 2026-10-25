@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.larssonSetTwo
 ---
 
-# Larsson Set Two
+# Larsson's set $R_2$
 
-Larsson's set `R₂ = {(0,0)} ∪ {{n, 2n+1}} ∪ {{2⌊nφ⌋ + 2, 2⌊nφ²⌋ + 2}}` (unordered pairs,
-`n ≥ 0`).
+**Larsson's set $R_2$.** Let $\varphi = (1 + \sqrt{5})/2$ be the golden ratio. The set
+$R_2 \subseteq \mathbb{N} \times \mathbb{N}$ consists of $(0, 0)$ together with, for every natural
+number $n$, the pairs $(n, 2n + 1)$ and $(2n + 1, n)$ and the pairs
+$(2\lfloor n\varphi \rfloor + 2, 2\lfloor n\varphi^2 \rfloor + 2)$ and
+$(2\lfloor n\varphi^2 \rfloor + 2, 2\lfloor n\varphi \rfloor + 2)$.
 
 ## Depends on
 

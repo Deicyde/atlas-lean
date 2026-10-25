@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_self_coding_iff_thueMorse
 ---
 
-# Theorem 70
+# Characterization of the Thue–Morse word by its relative positions
 
-**Theorem 70.** The Thue–Morse word `t` is the only word `w ∈ a𝒲` with `w = r(1) r(2) ⋯` on
-the letters `a = 1`, `b = -1`, i.e. with `r(n) = 1` if `ℓ_{n-1} = a` and `r(n) = -1` otherwise.
+**Characterization of the Thue–Morse word by its relative positions.** Let
+$w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that starts with $a$ and in
+which both letters occur infinitely often, and let $r$ be its relative position function. Then
+$r(n) = 1$ when $\ell_{n-1} = a$ and $r(n) = -1$ when $\ell_{n-1} = b$, for all $n \ge 1$, if and
+only if $w$ is the Thue–Morse word $t = abbabaab\cdots$ (the Thue–Morse sequence with $0$ read as
+$a$ and $1$ as $b$).
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 - [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources

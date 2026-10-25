@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_eq_F_of_not_dvd
 ---
 
-# Maximum Nim Grundy eq F of not dvd
+# Maximum Nim Grundy numbers at non-multiples of the divisor
 
-Lemma 3(ii): for `k ≥ 2`, every positive nonmultiple `x` has the same Grundy
-number as `F(x)=⌊(k-1)x/k⌋`. The expression `(k-1)*x/k` is `F`; there is no deviation.
+**Maximum Nim Grundy numbers at non-multiples of the divisor.** Let $k \ge 2$ and let $G$
+be the Grundy number of Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$. If $x$ is a
+natural number not divisible by $k$, then $G(x) = G(\lfloor (k-1)x/k \rfloor)$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

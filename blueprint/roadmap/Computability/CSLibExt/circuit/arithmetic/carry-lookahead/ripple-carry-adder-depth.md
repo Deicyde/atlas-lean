@@ -8,23 +8,23 @@ lean: Cslib.Circuits.rippleCarryAdder_depth
 
 # The ripple-carry adder has linear depth
 
-**The ripple-carry adder has linear depth**: `2 n + 1` for `n ≥ 1`, the length of the carry
-chain.
+**The ripple-carry adder has linear depth.** For every $n \ge 1$, the $n$-bit ripple-carry
+adder has depth $2n + 1$, the length of its carry chain.
 
 ## Depends on
 
-- [Arith Signature](../ripple-carry/arith-signature.md)
-- [Ripple Carry Adder](../ripple-carry/ripple-carry-adder.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
+- [Ripple-carry adder](../ripple-carry/ripple-carry-adder.md)
 
 ## Proof depends on
 
-- [Depths eq eval](depths-eq-eval.md)
-- [Carry Depth](carry-depth.md)
-- [Carry Wire](../ripple-carry/carry-wire.md)
-- [Gate Depth](gate-depth.md)
-- [Rca Program depth](rca-program-depth.md)
-- [Depth Interpretation](depth-interpretation.md)
-- [Rca Program](../ripple-carry/rca-program.md)
+- [Gate depths are evaluation in the depth interpretation](depths-eq-eval.md)
+- [Carry depth in the ripple-carry adder](carry-depth.md)
+- [Carry wire](../ripple-carry/carry-wire.md)
+- [Gate depths of the ripple-carry adder](gate-depth.md)
+- [Gate depths of the ripple-carry adder](rca-program-depth.md)
+- [The depth interpretation](depth-interpretation.md)
+- [Gate program of the ripple-carry adder](../ripple-carry/rca-program.md)
 
 ## Sources
 

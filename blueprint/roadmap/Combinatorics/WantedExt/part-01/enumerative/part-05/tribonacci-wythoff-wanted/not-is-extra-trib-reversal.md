@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.not_isExtraTrib_reversal
 ---
 
-# Not is Extra Trib reversal
+# The reversal of an extraTrib is not an extraTrib
 
-The reversal `n ↦ |S (-n)|` of an extraTrib is not an extraTrib.
+**The reversal of an extraTrib is not an extraTrib.** If $S : \mathbb{Z} \to \mathbb{Z}$
+is an extraTrib, then the sequence $n \mapsto |S(-n)|$ is not an extraTrib.
 
 ## Depends on
 
-- [Is Extra Trib](is-extra-trib.md)
+- [ExtraTribs](is-extra-trib.md)
 
 ## Sources
 

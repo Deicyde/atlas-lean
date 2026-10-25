@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Circuits.arithSignature
 ---
 
-# Arith Signature
+# Arithmetic basis
 
-The arithmetic basis: three binary gates.
+**Arithmetic basis.** The circuit signature whose operation symbols are the three arithmetic
+gate symbols XOR, AND and OR, each of arity $2$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arith Gate](arith-gate.md)
+- [Arithmetic gate symbols](arith-gate.md)
 
 ## Sources
 

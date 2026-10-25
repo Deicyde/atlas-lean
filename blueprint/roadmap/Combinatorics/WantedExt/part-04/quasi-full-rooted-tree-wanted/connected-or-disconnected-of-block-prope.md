@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.connected_or_disconnected_of_block_property
 ---
 
-# Connected or disconnected of block property
+# Block properties decide connectedness of the represented poset
 
-Theorem 5 (quoted from Mohammad et al. 2025): let a poset matrix `M` of order `n` represent
-a poset `P`. If `M` satisfies the block of `1`s property of some length `r`, `1 ≤ r < n`, then
-`P` is connected; if it satisfies the block of `0`s property of some length, then `P` is
-disconnected. Connected means that every subset of `P` closed under comparability is empty or
-everything; disconnected (two or more direct terms) means that some nonempty proper subset is
-closed under comparability. "`M` can be relabeled" is covered because a relabeling of `M` again
-represents `P`. The hypothesis `P ≇ 1` follows from `1 ≤ r < n`.
+**Block properties decide connectedness of the represented poset.** Let $M$ be a poset matrix
+of order $n$, a Boolean matrix with rows and columns indexed by $0, \dots, n - 1$, that
+represents a partial order $P$: there is a bijection $e$ from $\{0, \dots, n - 1\}$ to $P$ such
+that $e(i) \le e(j)$ if and only if $M_{ij}$ is true. Let $1 \le r < n$. If $M_{ij}$ is true for
+all $i < r \le j$ (the block of $1$s property of length $r$), then $P$ is connected: every subset
+$S$ of $P$ such that $x \in S \iff y \in S$ whenever $x \le y$ is empty or all of $P$. If
+$M_{ij}$ is false for all $i < r \le j$ (the block of $0$s property of length $r$), then $P$ is
+disconnected: some nonempty subset $S$ of $P$ with nonempty complement satisfies
+$x \in S \iff y \in S$ whenever $x \le y$.
+
+Since a relabeling of $M$ represents the same poset, this also covers matrices that satisfy a
+block property after relabeling.
 
 ## Depends on
 

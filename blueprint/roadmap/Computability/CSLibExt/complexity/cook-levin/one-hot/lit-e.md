@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.litE
 ---
 
-# Lit E
+# Per-literal step cost of the one-hot generator
 
-Per-literal cost apart from the gap loop.
+**Per-literal step cost of the one-hot generator.** For a natural number $V$, the cost of
+emitting one literal, apart from the gap loop, is $6V + 9$.
 
 ## Depends on
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPassGrundy_eq_zero_iff_plusStone
 ---
 
-# Wythoff Pass Grundy eq zero iff plus Stone
+# Pass versus a pile of one stone in Wythoff's game
 
-For `x ≥ 9` or `y ≥ 9`, `𝒢₁(x, y, 1) = 0` if and only if `𝒢₂(x, y, 1) = 0`: away from
-the `9 × 9` corner, Wythoff's game with an available pass has the same P-positions as
-Wythoff's game plus a pile of one stone.
+**Pass versus a pile of one stone in Wythoff's game.** Let $\mathcal{G}_1(x, y, p)$ be the
+Grundy numbers of Wythoff's game with a pass, where $p = 1$ means the pass is still available,
+and let $\mathcal{G}_2(x, y, p)$ be the Grundy numbers of the sum of Wythoff's game and a pile of
+$p \in \{0, 1\}$ stones. If $x \ge 9$ or $y \ge 9$, then $\mathcal{G}_1(x, y, 1) = 0$ if and only
+if $\mathcal{G}_2(x, y, 1) = 0$: away from the $9 \times 9$ corner, Wythoff's game with an
+available pass has the same P-positions as Wythoff's game plus a pile of one stone.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
-- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game plus one stone](wythoff-plus-stone-grundy.md)
 
 ## Sources
 

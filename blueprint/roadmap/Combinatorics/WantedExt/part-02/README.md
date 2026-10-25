@@ -3,9 +3,9 @@ article_id: af_2cd49ff5cf2d6e57ba8ae0a0
 navigation: transparent
 ---
 
-# Proposition 4 to Fast Van Der Waerden Game
+# Bounded representations with one scaled part to Fast Van Der Waerden Game
 
-- [Proposition 4](exists-bounded-rep.md)
+- [Bounded representations with one scaled part](exists-bounded-rep.md)
 - [Epsilon Light Subset](epsilon-light-subset-wanted/README.md)
 - [Equiangular Lines Fixed Angle](equiangular-lines-fixed-angle-wanted/README.md)
 - [Erdos Faber Lovasz Conjecture](erdos-faber-lovasz-conjecture-wanted/README.md)

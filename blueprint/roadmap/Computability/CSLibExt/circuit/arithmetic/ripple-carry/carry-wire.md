@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Circuits.RippleCarry.carryWire
 ---
 
-# Carry Wire
+# Carry wire
 
-The carry into bit `i`, as a wire at gate count `g ≥ 5 i`: the carry-in input for bit `0`,
-otherwise the carry-out gate `5 i - 1` of bit `i - 1`.
+**Carry wire.** For natural numbers $n$, $g$ and $i$ with $5i \le g$, the wire carrying the
+carry into bit $i$ of the $n$-bit adder, in a circuit with $2n + 1$ inputs and $g$ gates: for
+$i = 0$ it is the carry-in input (input $2n$), and for $i \ne 0$ it is gate $5i - 1$, the
+carry-out gate of bit $i - 1$.
 
 ## Depends on
 

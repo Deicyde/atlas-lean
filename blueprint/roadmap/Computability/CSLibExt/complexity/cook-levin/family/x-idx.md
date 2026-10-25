@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.Layout.xIdx
 ---
 
-# X Idx
+# Index of a label/state variable
 
-Label/state variable `a < A` at time `t`.
+**Index of a label/state variable.** For height $H$, time $t$ and $a \in \mathbb{N}$, the
+index of label/state variable $a$ at time $t$ is $t \cdot W + a$, where $W$ is the row width
+(variables per time step) at height $H$. It is used for $a < A$, the size of the label/state
+block.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [Row W](row-w.md)
+- [Variables per time step](row-w.md)
 
 ## Sources
 

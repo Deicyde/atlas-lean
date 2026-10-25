@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.wythoffExtraMoveGrundy
 ---
 
-# Wythoff Extra Move Grundy
+# Grundy numbers of Wythoff's game with an extra move
 
-Grundy numbers of Wythoff's game (a Queen moving left, down, or diagonally down-left on the
-quarter plane, positions `(x, y)`) augmented by a third coordinate `p` and one extra move from
-`(x, y, true)` to `(x, y, false)`. With `strict = true` the extra move is the one-time pass of
-Wythoff's game with a pass, unavailable at the terminal position `x + y = 0`; with
-`strict = false` it is the move in an added pile of one stone (always available while
-`p = true`). The value is the mex (least natural number not attained) of the Grundy numbers of
-the positions reachable in one move. With `p = false` both games are classical Wythoff's game.
+**Grundy numbers of Wythoff's game with an extra move.** Positions are triples $(x, y, p)$
+with $x, y \in \mathbb{N}$ and $p \in \{0, 1\}$. A move from $(x, y, p)$ goes to $(u, y, p)$ with
+$u < x$, to $(x, v, p)$ with $v < y$, or to $(x - t, y - t, p)$ with $1 \le t \le \min(x, y)$
+(the moves of a Queen in Wythoff's game), or, when $p = 1$, it is an extra move to $(x, y, 0)$.
+There are two variants. In the strict variant the extra move is the one-time pass of Wythoff's
+game with a pass and is not allowed at the terminal position, that is, it requires $x + y > 0$;
+in the non-strict variant it is the move in an added pile of one stone and is always allowed
+when $p = 1$. In each variant, the Grundy number of $(x, y, p)$ is the mex (least natural number
+not attained) of the Grundy numbers of the positions reachable in one move. With $p = 0$ both
+variants are classical Wythoff's game.
 
 ## Depends on
 

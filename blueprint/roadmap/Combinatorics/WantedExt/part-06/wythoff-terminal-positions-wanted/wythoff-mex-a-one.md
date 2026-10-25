@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.wythoffMexA_one
 ---
 
-# Wythoff Mex A one
+# The term $a_1$ of the mex sequence
 
-`a₁ = ℓ + 2` for `ℓ ≥ 1` (the least integer above `ℓ` other than `a₀ = ℓ + 1` and
-`b₀ = 2ℓ + 2`).
+**The term $a_1$ of the mex sequence.** Let $\ell \ge 1$, let $K^\ell$ be Wythoff's game in
+which the positions $(x, y)$ with $x + y \le \ell$ are terminal, and let $(a_n)$ be the mex
+sequence of $K^\ell$. Then $a_1 = \ell + 2$.
+
+This is the least integer greater than $\ell$ other than $a_0 = \ell + 1$ and
+$a_0 + \ell + 1 = 2\ell + 2$.
 
 ## Depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
 
 ## Proof depends on
 
-- [Wythoff Mex A zero](wythoff-mex-a-zero.md)
+- [The term $a_0$ of the mex sequence](wythoff-mex-a-zero.md)
 
 ## Sources
 

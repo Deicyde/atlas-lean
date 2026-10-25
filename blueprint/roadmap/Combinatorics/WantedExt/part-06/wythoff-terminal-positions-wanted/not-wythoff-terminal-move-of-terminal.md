@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_wythoffTerminalMove_of_terminal
 ---
 
-# Not wythoff Terminal Move of terminal
+# No moves from terminal positions
 
-No move leaves a terminal position of `K^ℓ`.
+**No moves from terminal positions.** Let $\ell$ be a natural number. In the game $K^\ell$
+(Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are terminal), there is no
+move from a position $(x, y)$ with $x + y \le \ell$ to any position.
 
 ## Depends on
 
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_five_of_card_eq_four
 ---
 
-# Maker Wins Within five of card eq four
+# Maker wins the $S$-game in five moves when $|S| = 4$
 
-For `|S| = 4`, Maker always has a 5-move strategy.
+**Maker wins the $S$-game in five moves when $|S| = 4$.** If $S$ is a set of four natural
+numbers, then, starting from the position where no number has been claimed, Maker wins the
+$S$-game within $5$ moves.
 
 ## Depends on
 
-- [Maker Wins Within](maker-wins-within.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exists_subcube_isDenseInCubes_colorClass
 ---
 
-# Lemma 1
+# A color class is dense in a subcube (Brown, Lemma 1)
 
-**Lemma 1.** Let `1 = m 0 < m 1 < m 2 < ⋯`. If a subcube `M` of size `(m r)^t`
-is colored with colors `1, …, r`, then for some color `i` there is a subcube
-`M' ⊆ M` of size `(m i)^t` in which the color class of `i` is `m (i - 1)`-dense.
+**A color class is dense in a subcube (Brown, Lemma 1).** Let $t, r \in \mathbb{N}$ and let
+$1 = m_0 < m_1 < m_2 < \cdots$ be a strictly increasing sequence of natural numbers. Let $M$ be a
+subcube of $\mathbb{N}^t$ of side $m_r$, and let $c$ be a coloring of $\mathbb{N}^t$ by natural
+numbers with $1 \le c(x) \le r$ for every $x \in M$. Then for some color $i$ with $1 \le i \le r$
+there is a subcube $M' \subseteq M$ of side $m_i$ in which the class of color $i$ is
+$m_{i-1}$-dense.
 
-The paper fixes `t ≥ 1` and `r ≥ 1`; both are dropped, since `t = 0` holds
-trivially and `r = 0` admits no coloring of the nonempty cube.
+The paper fixes $t \ge 1$ and $r \ge 1$; both are dropped, since $t = 0$ holds trivially and
+$r = 0$ admits no coloring of the nonempty cube $M$.
 
 ## Depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Lattice Cube](lattice-cube.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

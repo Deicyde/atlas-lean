@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_arith_prog
 ---
 
-# Theorem 9
+# Roots-of-unity filter for trinomial coefficients
 
-**Theorem 9.** For `0 ≤ x < b` and `z ≠ 0`, with `w_b = exp(2πi/b)`,
-`∑_{k=0}^{⌊(2n-x)/b⌋} binom(n, x+bk)_2 z^{x+bk} = z^n (1/b) ∑_{j=1}^{b} w_b^{j(n-x)} (1 + z w_b^j + (z w_b^j)⁻¹)^n`.
-The hypothesis `z ≠ 0` is implicit in the paper's `(z w_b^j)⁻¹`.
+**Roots-of-unity filter for trinomial coefficients.** Write $\binom{n}{k}_2$ for the trinomial
+coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$. Let $n$, $x$, $b$ be natural
+numbers with $x < b$, let $z \ne 0$ be a complex number, and let $w = e^{2\pi i/b}$. Then
+
+$$\sum_{k=0}^{\lfloor (2n - x)/b \rfloor} \binom{n}{x + bk}_2 z^{x + bk} =
+\frac{z^n}{b} \sum_{j=1}^{b} w^{j(n - x)} \left(1 + z w^j + \frac{1}{z w^j}\right)^n,$$
+
+where for $x > 2n$ the left side is $0$. The hypothesis $z \ne 0$ is implicit in the
+paper's $(z w^j)^{-1}$.
 
 ## Depends on
 

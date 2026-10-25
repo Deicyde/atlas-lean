@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.BusyBeaver.busyBeaverSteps
 ---
 
-# Busy Beaver Steps
+# Busy Beaver shift function
 
-Rado's shift function `S(n)`: the largest halting time of an `n`-state
-two-symbol machine started on the blank tape.
+**Busy Beaver shift function.** For $n \in \mathbb{N}$, Rado's shift function $S(n)$ is the
+largest halting time of an $n$-state two-symbol machine that halts when started on the blank
+tape; machines that do not halt contribute $0$.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Machine](machine.md)
-- [Move](move.md)
-- [Steps Of](steps-of.md)
+- [Busy Beaver machine](machine.md)
+- [Head movement](move.md)
+- [Runtime of a Busy Beaver machine](steps-of.md)
 
 ## Sources
 

@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.p_c
 ---
 
-# P c
+# The threshold $p_c(\mathcal F)$
 
-Given an increasing collection `𝓕` of subsets of `X` such that `𝓕 ≠ ∅` and  `𝓕 ≠ 𝓟 X`, we
-define the `threshold`, `p_c(𝓕)` of `𝓕` as the (unique) `p` such that the Bernoulli `p` product
-measure of `𝓕` equals `1 / 2`.
+**The threshold $p_c(\mathcal F)$.** For a set $X$ and $p \in [0, 1]$, let $\mu_p$ be the
+$p$-biased product measure on subsets of $X$, under which each element of $X$ lies in the
+random subset independently with probability $p$. For a family $\mathcal F$ of subsets of $X$,
+$p_c(\mathcal F)$ is some $p \in [0, 1]$ with $\mu_p(\mathcal F) = 1/2$ if such a $p$ exists,
+and $0$ otherwise.
+
+When $X$ is finite and $\mathcal F$ is increasing, nonempty and not the family of all subsets
+of $X$, such a $p$ exists and is unique; it is the threshold of $\mathcal F$.
 
 ## Depends on
 

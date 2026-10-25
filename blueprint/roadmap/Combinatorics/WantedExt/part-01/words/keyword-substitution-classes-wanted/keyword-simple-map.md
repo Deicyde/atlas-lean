@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.keywordSimpleMap
 ---
 
-# Keyword Simple Map
+# Simple map
 
-The simple map `φ_i`: if the keyword `a` is applicable to `u` at letter `i`, negate
-the letters `i, …, i + m` of `u` (replacing `a` by `!a` or vice versa); otherwise
-return `u` unchanged.
+**Simple map.** Let $a$ be a keyword, a binary word of length $m + 1$, and let
+$i \in \mathbb{N}$. The simple map $\varphi_i$ sends a binary word $u$ of length $n$ to the word
+obtained by negating the letters of $u$ at positions $i, \dots, i + m$ (positions counted from
+$0$) if $a$ is applicable to $u$ at letter $i$, that is, if $i + m < n$ and the subword of $u$ at
+positions $i, \dots, i + m$ equals $a$ or its letterwise negation $\neg a$; otherwise
+$\varphi_i(u) = u$.
+
+The paper counts letters from $1$, so its simple map $\varphi_i$ is $\varphi_{i-1}$ in this
+numbering.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Keyword Applicable](keyword-applicable.md)
+- [Applicability of a keyword](keyword-applicable.md)
 
 ## Sources
 

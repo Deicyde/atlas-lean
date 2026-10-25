@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.josephus_position_complement_eq_maximumNimGrundy
 ---
 
-# Josephus position complement eq maximum Nim Grundy
+# Josephus elimination positions as Maximum Nim Grundy numbers
 
-Theorem 2: for `k ≥ 2` and positive `m ≤ n`, `n-o_n(m)` equals `G(nk-m)`.
-Here `o_n(m)` is formalized exactly as the zero-based `idxOf m` in the full
-Josephus order plus one, including the survivor last; there is no deviation.
+**Josephus elimination positions as Maximum Nim Grundy numbers.** Let $k \ge 2$ and
+$1 \le m \le n$. Write $o_n(m)$ for the position, counting from $1$, at which $m$ appears in the
+Josephus elimination order of the circle $1, \dots, n$ in which every $k$-th person is removed
+and the survivor is listed last, and write $G$ for the Grundy number of Maximum Nim with rule
+function $f(y) = \lfloor y/k \rfloor$. Then $n - o_n(m) = G(nk - m)$.
 
 ## Depends on
 
-- [Josephus Elimination Order](josephus-elimination-order.md)
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Josephus elimination order](josephus-elimination-order.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

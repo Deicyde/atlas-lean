@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.wordPairs_sameLength_overlap_sum
 ---
 
-# Word Pairs same Length overlap sum
+# Overlap statistic on pairs of words of equal length
 
-Corollary 3: for `n ≥ 1` and every `q`, the sum of `q^{overlap}` over pairs of words of equal
-length `n` over `[k]` (the coefficient of `x^{2n}` in `P(x, q; k)`) is
-`∑_{j=1}^{k} C(k, j) j! S_{n,j} (qj + k - j)^n`.
+**Overlap statistic on pairs of words of equal length.** Fix natural numbers $k$ and $n \ge 1$
+and a rational number $q$. For words $u$ and $v$ over an alphabet of $k$ letters, the overlap of
+$(u, v)$ is the number of positions of $v$ whose letter occurs in $u$. Let $S(n, j)$ denote the
+Stirling numbers of the second kind. Then the sum of $q^{\text{overlap}}$ over all pairs $(u, v)$
+of words of length $n$ equals $\sum_{j=1}^{k} \binom{k}{j} \, j! \, S(n, j) \, (qj + k - j)^n$.
 
 ## Depends on
 

@@ -6,22 +6,27 @@ proof: formalized
 lean: MetaMathlibExt.pebblingGame_isP_of_forall_le
 ---
 
-# Pebbling Game is P of forall le
+# Positions with at most $k$ pebbles on every vertex are P-positions
 
-A position with at most `k` pebbles on every vertex is terminating, hence a P-game.
+**Positions with at most $k$ pebbles on every vertex are P-positions.** Let $G$ be a simple
+graph on the vertices $0, \dots, n-1$ and let $k$ be a natural number. In the
+$(k+1:k)$-pebbling game on $G$, every position with at most $k$ pebbles on each vertex is a
+P-position.
+
+Such a position is terminating: no move is possible from it.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Proof depends on
 
 - [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
 - [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
-- [Mem pebbling Moves](mem-pebbling-moves.md)
-- [Pebbling Moves](pebbling-moves.md)
-- [Pebbling Step](pebbling-step.md)
+- [Successors of a pebbling position](mem-pebbling-moves.md)
+- [Moves of the $(k+1:k)$-pebbling game](pebbling-moves.md)
+- [A $(k+1:k)$-pebbling move](pebbling-step.md)
 
 ## Sources
 

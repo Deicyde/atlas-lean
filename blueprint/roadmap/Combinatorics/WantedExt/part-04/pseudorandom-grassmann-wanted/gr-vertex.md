@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PseudorandomGrassmannWanted.PseudorandomGrassmann.GrVertex
 ---
 
-# Gr Vertex
+# Vertices of the Grassmann graph
 
-The vertex type of the Grassmann graph `Grₖₗ`: the `ℓ`-dimensional subspaces of `𝔽₂ᵏ`.
+**Vertices of the Grassmann graph.** For natural numbers $k$ and $\ell$, the vertices of the
+Grassmann graph $\mathrm{Gr}(k, \ell)$ are the $\ell$-dimensional linear subspaces of
+$\mathbb{F}_2^k$.
 
 ## Depends on
 

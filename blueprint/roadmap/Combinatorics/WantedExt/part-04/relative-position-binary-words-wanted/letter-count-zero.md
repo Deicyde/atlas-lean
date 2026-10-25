@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.letterCount_zero
 ---
 
-# Letter Count zero
+# The letter-counting function at zero
 
-`#_α(0) = 0`.
+**The letter-counting function at zero.** For every infinite binary word $w$ and every
+letter $\alpha$, $\#_\alpha(0) = 0$, where $\#_\alpha(m)$ is the number of letters $\alpha$ among
+the first $m$ letters of $w$.
 
 ## Depends on
 
-- [Letter Count](letter-count.md)
+- [Letter-counting function](letter-count.md)
 
 ## Sources
 

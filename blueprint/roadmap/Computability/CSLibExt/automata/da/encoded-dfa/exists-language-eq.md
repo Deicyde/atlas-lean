@@ -14,13 +14,13 @@ has an encoded DFA with the same language.
 ## Depends on
 
 - [Encoded DFA](encoded-dfa.md)
-- [Language](language.md)
+- [Language of an encoded DFA](language.md)
 
 ## Proof depends on
 
-- [Step](step.md)
-- [Step eq of forall](step-eq-of-forall.md)
-- [To DFA](to-dfa.md)
+- [Transition function of an encoded DFA](step.md)
+- [A step determined by its listed transitions](step-eq-of-forall.md)
+- [The automaton denoted by an encoded DFA](to-dfa.md)
 
 ## Sources
 

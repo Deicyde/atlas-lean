@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isPiecewiseSyndetic_univ
 ---
 
-# Is Piecewise Syndetic univ
+# The whole space is piecewise syndetic
 
-The whole space is piecewise syndetic.
+**The whole space is piecewise syndetic.** For every $t \in \mathbb{N}$, the whole space
+$\mathbb{N}^t$ is piecewise syndetic.
 
 ## Depends on
 
-- [Is Piecewise Syndetic](is-piecewise-syndetic.md)
+- [Piecewise syndetic set](is-piecewise-syndetic.md)
 
 ## Proof depends on
 
-- [Lattice Cube](lattice-cube.md)
-- [Lattice Cube one](lattice-cube-one.md)
+- [Lattice cube](lattice-cube.md)
+- [Lattice cube of side one](lattice-cube-one.md)
 
 ## Sources
 

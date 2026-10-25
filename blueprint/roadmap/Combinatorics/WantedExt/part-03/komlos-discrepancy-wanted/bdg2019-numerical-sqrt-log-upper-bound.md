@@ -5,9 +5,14 @@ statement: formalized
 lean: KomlosDiscrepancyWanted.bdg2019NumericalSqrtLogUpperBound
 ---
 
-# Bdg2019 Numerical Sqrt Log Upper Bound
+# Statement of the Bansal–Dadush–Garg Komlós bound
 
-Only the numerical consequence, not an encoded polynomial-time algorithm.
+**Statement of the Bansal–Dadush–Garg Komlós bound.** The proposition that there are a real
+constant $c > 0$ and a natural number $N \ge 3$ such that for every natural number $n \ge N$, the
+Komlós constant in dimension $n$ is at most $c \sqrt{\log n}$, where $\log$ is the natural
+logarithm.
+
+Only this numerical bound is stated, not the polynomial-time algorithm of the source.
 
 ## Depends on
 

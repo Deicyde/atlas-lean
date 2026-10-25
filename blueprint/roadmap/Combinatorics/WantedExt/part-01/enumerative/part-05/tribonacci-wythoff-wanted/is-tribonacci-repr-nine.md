@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isTribonacciRepr_nine
 ---
 
-# Is Tribonacci Repr nine
+# A Tribonacci representation of nine
 
-The paper's example `(9)_T = 1010`, i.e. `9 = 7 + 2`.
+**A Tribonacci representation of nine.** The digit list $(0, 1, 0, 1)$, read least
+significant digit first (the word $1010$ written most significant digit first), is a
+Tribonacci representation of $9$.
+
+With $T_n$ the Tribonacci numbers ($T_0 = T_1 = 0$, $T_2 = 1$), this is
+$9 = T_6 + T_4 = 7 + 2$, the paper's example $(9)_T = 1010$.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 
 ## Proof depends on
 

@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.substitutionAutomaton_cons
 ---
 
-# Substitution Automaton cons
+# Reading a nonempty digit word
 
-Reading `i ⊙ w` first moves to `η(b)[i]`, then reads `w`.
+**Reading a nonempty digit word.** Let $\eta$ be a letter map, $b$ a letter, $i$ a digit and
+$w$ a digit word. If $i < |\eta(b)|$, then the value of the substitution automaton started at $b$
+on the word $iw$ (the digit $i$ followed by $w$) equals its value started at $\eta(b)_i$ on $w$,
+where $\eta(b)_i$ is the letter of $\eta(b)$ at position $i$, counting from $0$. If
+$i \ge |\eta(b)|$, the run on $iw$ is undefined.
 
 ## Depends on
 

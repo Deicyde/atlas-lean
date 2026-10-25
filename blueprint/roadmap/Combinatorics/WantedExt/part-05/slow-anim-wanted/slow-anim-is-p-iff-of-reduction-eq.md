@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_isP_iff_of_reduction_eq
 ---
 
-# Slow ANim is P iff of reduction eq
+# Positions with the same reduction have the same outcome
 
-Corollary 1: positions with the same reduction are in the same outcome class.
+**Positions with the same reduction have the same outcome.** Let
+$A \subseteq \{1, \dots, n\}$. If two positions $p$ and $q$ of Slow$A$-Nim $\mathrm{SN}(n, A)$
+have the same reduction, $r(p) = r(q)$, then $p$ is a P-position if and only if $q$ is a
+P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Slow$A$-Nim](slow-anim-game.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

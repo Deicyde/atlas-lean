@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsPiecewiseSyndetic.exists_of_eq_iUnion
 ---
 
-# Theorem 1
+# Piecewise syndeticity is partition regular
 
-**Theorem 1.** If a piecewise syndetic set `A ⊆ ℕ^t` is the union
-`A₁ ∪ ⋯ ∪ A_r`, then some `Aᵢ` is piecewise syndetic.
+**Piecewise syndeticity is partition regular.** Let $A \subseteq \mathbb{N}^t$ be piecewise
+syndetic and let $A_1, \dots, A_r \subseteq \mathbb{N}^t$ with $A = A_1 \cup \dots \cup A_r$. Then
+some $A_i$ is piecewise syndetic.
 
 ## Depends on
 
-- [Is Piecewise Syndetic](is-piecewise-syndetic.md)
+- [Piecewise syndetic set](is-piecewise-syndetic.md)
 
 ## Sources
 

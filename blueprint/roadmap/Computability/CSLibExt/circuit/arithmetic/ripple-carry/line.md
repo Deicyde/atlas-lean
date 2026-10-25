@@ -11,13 +11,13 @@ Gate `g` of the adder: role `g % 5` of the full adder for bit `g / 5`.
 
 ## Depends on
 
-- [Arith Signature](arith-signature.md)
+- [Arithmetic basis](arith-signature.md)
 
 ## Proof depends on
 
-- [Arith Gate](arith-gate.md)
-- [Carry Wire](carry-wire.md)
-- [Bin Line](bin-line.md)
+- [Arithmetic gate symbols](arith-gate.md)
+- [Carry wire](carry-wire.md)
+- [Binary gate line](bin-line.md)
 
 ## Sources
 

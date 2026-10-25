@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.BinaryCode
 ---
 
-# Binary Code
+# Binary code
 
-A binary code of length `n` is a subspace of `(𝔽₂)ⁿ`.
+**Binary code.** A binary code of length $n$ is a linear subspace of $\mathbb{F}_2^n$,
+the vector space of words of length $n$ over the two-element field $\mathbb{F}_2$.
 
 ## Depends on
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.complementRadixLT_examples
 ---
 
-# Complement Radix LT examples
+# Examples of the complement radix order
 
-Small cases from the paper's chain `⋯ ≺ 111 ≺ 10 ≺ 1 ≺ 0 ≺ 00 ≺ 01 ≺ 000`.
+**Examples of the complement radix order.** In the complement radix order $\prec$ on
+finite words over $\mathbb{N}$, $111 \prec 10$, $10 \prec 1$, $1 \prec 0$, $0 \prec 00$,
+$00 \prec 01$ and $01 \prec 000$. These are the consecutive comparisons in the chain
+$\cdots \prec 111 \prec 10 \prec 1 \prec 0 \prec 00 \prec 01 \prec 000$ given in the paper.
 
 ## Depends on
 
-- [Complement Radix LT](complement-radix-lt.md)
+- [The complement radix order](complement-radix-lt.md)
 
 ## Sources
 

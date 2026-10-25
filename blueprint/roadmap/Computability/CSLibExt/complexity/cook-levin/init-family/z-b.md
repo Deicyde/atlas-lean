@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.zB
 ---
 
-# Z B
+# Empty-cell variable of the initial row
 
-`⊥` at depth `j` of stack `k0`, row 0.
+**Empty-cell variable of the initial row.** For a variable layout $L$, a stack number $k_0$, a
+number $H$ of tracked depths per stack and a depth $j$, this is the index of the cell variable
+of $L$ at time $0$ for stack $k_0$, depth $j$ and symbol code $0$ (the empty cell $\bot$), namely
+$A + (k_0 H + j)\,g$, where $A$ is the size of the label/state block of $L$ and $g$ is its number
+of symbol codes.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [C Idx](../family/c-idx.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
 
 ## Sources
 

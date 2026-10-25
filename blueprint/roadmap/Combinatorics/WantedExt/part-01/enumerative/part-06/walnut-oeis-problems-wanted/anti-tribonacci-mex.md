@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.antiTribonacciMex
 ---
 
-# Anti Tribonacci Mex
+# Least positive integer missing from a finite set
 
-The least positive integer not in `s` (the source's `mex` over the positive integers, used
-to build the anti-Tribonacci sequence), found among `1, …, |s| + 1`, where it must lie; see
-`antiTribonacciMex_pos`, `antiTribonacciMex_notMem` and `antiTribonacciMex_le_of_notMem`.
+**Least positive integer missing from a finite set.** For a finite set $s$ of natural numbers,
+this is the least positive integer not in $s$ (the source's $\mathrm{mex}$ over the positive
+integers, used to build the anti-Tribonacci sequence). It always lies among $1, \dots, |s| + 1$.
 
 ## Depends on
 

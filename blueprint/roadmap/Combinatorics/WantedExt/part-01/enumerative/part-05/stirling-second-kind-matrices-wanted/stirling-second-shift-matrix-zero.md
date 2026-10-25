@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.stirlingSecondShiftMatrix_zero
 ---
 
-# Stirling Second Shift Matrix zero
+# Shift zero gives the Stirling matrix of the second kind
 
-`S^[0](n) = S(n)`.
+**Shift zero gives the Stirling matrix of the second kind.** For every natural number $n$, the
+shifted Stirling matrix $S^{[0]}(n)$, the $n \times n$ rational matrix with entries $S(i + 0, j)$
+for $1 \le i, j \le n$, equals the Stirling matrix of the second kind $S(n)$, the $n \times n$
+rational matrix with entries $S(i, j)$; here $S(i, j)$ denotes the Stirling numbers of the
+second kind.
 
 ## Depends on
 
-- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
-- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
+- [Stirling matrix of the second kind](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Shifted Stirling matrix of the second kind](stirling-second-shift-matrix.md)
 
 ## Sources
 

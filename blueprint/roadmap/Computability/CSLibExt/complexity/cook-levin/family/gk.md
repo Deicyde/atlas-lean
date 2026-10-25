@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.GK
 ---
 
-# GK
+# Stacks of the clause-family generator
 
-All stacks: the Bool output and the counters.
+**Stacks of the clause-family generator.** The stacks of the counter machine over the
+generator's counters: one stack of Booleans for the output and one unit counter for each of the
+generator's fifteen counters.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [SK](../counter-view/sk.md)
-- [CK](ck.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Counters of the transition-family generator](ck.md)
 
 ## Sources
 

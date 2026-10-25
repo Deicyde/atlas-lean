@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PerfectGraphNPWanted.PerfectGraphInstance.toSimpleGraph
 ---
 
-# To Simple Graph
+# Graph of a valid instance
 
-A valid instance determines a finite simple undirected loopless graph
-(`SimpleGraph`), on which the repository's `IsPerfect` is evaluated.
+**Graph of a valid instance.** A valid instance with $n$ vertices and adjacency matrix $A$
+determines the simple graph on the vertex set $\{0, \dots, n-1\}$ in which vertices $x$ and $y$
+are adjacent exactly when $A_{xy}$ is true.
 
 ## Depends on
 
-- [Perfect Graph Instance](perfect-graph-instance.md)
-- [Valid](valid.md)
+- [Adjacency-matrix graph instance](perfect-graph-instance.md)
+- [Valid adjacency-matrix instance](valid.md)
 
 ## Sources
 

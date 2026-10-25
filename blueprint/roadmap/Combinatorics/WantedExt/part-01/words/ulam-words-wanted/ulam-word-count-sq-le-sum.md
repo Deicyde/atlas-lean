@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.ulamWordCount_sq_le_sum
 ---
 
-# Ulam Word Count sq le sum
+# Square of the Ulam word count is at most a block sum
 
-`#U_n² ≤ #U_n + #U_{n+1} + ⋯ + #U_{2n}`.
+**Square of the Ulam word count is at most a block sum.** For every natural number $n$,
+$(\#U_n)^2 \le \sum_{i=n}^{2n} \#U_i$, where $\#U_i$ is the number of Ulam words of length $i$.
 
 ## Depends on
 

@@ -14,15 +14,15 @@ transitions consume letters from a finite set.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
-- [Accepts](../../../../automata/pda/basic/accepts.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
+- [Language accepted by a pushdown automaton](../../../../automata/pda/basic/accepts.md)
 
 ## Proof depends on
 
-- [Closed Under](../../../../automata/pda/basic/closed-under.md)
-- [Accepts restrict](../../../../automata/pda/basic/accepts-restrict.md)
-- [Mem restrict step](../../../../automata/pda/basic/mem-restrict-step.md)
-- [Restrict](../../../../automata/pda/basic/restrict.md)
+- [Closed sets of stack symbols](../../../../automata/pda/basic/closed-under.md)
+- [Restricting the stack alphabet preserves the accepted language](../../../../automata/pda/basic/accepts-restrict.md)
+- [Transitions of the restricted pushdown automaton](../../../../automata/pda/basic/mem-restrict-step.md)
+- [Restricting the stack alphabet of a pushdown automaton](../../../../automata/pda/basic/restrict.md)
 - [Cfg PDA accepts](../pda/cfg-pda-accepts.md)
 - [Is Context Free accepts](is-context-free-accepts.md)
 - [Cfg PDA](../pda/cfg-pda.md)

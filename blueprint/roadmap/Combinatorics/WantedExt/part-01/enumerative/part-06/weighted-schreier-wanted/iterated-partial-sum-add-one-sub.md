@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.iteratedPartialSum_add_one_sub
 ---
 
-# Iterated Partial Sum add one sub
+# Adding one to a sequence shifts its iterated partial sums by a binomial coefficient
 
-Shifting a sequence by `1` shifts its `k`-fold partial sums by binomial coefficients:
-`P^{(k)}((a_n + 1))(m) - P^{(k)}((a_n))(m) = C(m,k)` for all `m ≥ 0`.
+**Adding one to a sequence shifts its iterated partial sums by a binomial coefficient.**
+Let $R$ be a commutative ring, let $(a_n)_{n \ge 0}$ be a sequence in $R$, and let $k, m \ge 0$.
+Writing $P^{(k)}(x)(m)$ for the $k$-fold iterated partial sum of a sequence $x$ at $m$, we have
+$P^{(k)}((a_n + 1)_{n \ge 0})(m) - P^{(k)}((a_n)_{n \ge 0})(m) = \binom{m}{k}$, where
+$\binom{m}{k}$ is read as an element of $R$.
 
 ## Depends on
 
-- [Iterated Partial Sum](iterated-partial-sum.md)
+- [Iterated partial sums](iterated-partial-sum.md)
 
 ## Sources
 

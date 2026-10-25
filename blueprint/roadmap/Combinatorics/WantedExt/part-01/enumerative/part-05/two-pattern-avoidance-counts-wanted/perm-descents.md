@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permDescents
 ---
 
-# Perm Descents
+# Descent number of a permutation
 
-`des σ`: the number of descents of `σ`, positions `i` with `i + 1 < n` and
-`σ (i + 1) < σ i`.
+**Descent number of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
+$\operatorname{des}(\sigma)$ is the number of positions $i$ with $i + 1 < n$ and
+$\sigma(i + 1) < \sigma(i)$.
 
 ## Depends on
 

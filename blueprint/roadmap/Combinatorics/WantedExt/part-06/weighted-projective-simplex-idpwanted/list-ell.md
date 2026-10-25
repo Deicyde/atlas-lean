@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.listEll
 ---
 
-# List Ell
+# The number $\ell(q)$ of a weight list
 
-The list version `ℓ(q)=(1+∑qᵢ)/lcm(q)`, used for stabilized vectors in
-Theorem 12.  Natural division is exact when that vector is reflexive.
+**The number $\ell(q)$ of a weight list.** For a list $q = (q_1, \dots, q_n)$ of natural
+numbers, $\ell(q) = \lfloor (1 + q_1 + \dots + q_n) / \operatorname{lcm}(q_1, \dots, q_n) \rfloor$,
+where the least common multiple of the empty list is $1$, and $\ell(q) = 0$ when some $q_i = 0$
+(so that the least common multiple is $0$).
+
+When the weights are positive and the weighted simplex of $q$ is reflexive, this division is exact.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weight Lcm](weight-lcm.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
 
 ## Sources
 

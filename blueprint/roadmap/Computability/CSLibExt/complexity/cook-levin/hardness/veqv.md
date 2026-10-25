@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Hardness.veqv
 ---
 
-# Veqv
+# Bits as indices
 
-Raw input bits as symbols `Fin 2`.
+**Bits as indices.** The bijection from $\{0, 1\}$, the indices below the number $2$ of
+Booleans, onto the Booleans that is inverse to the fixed enumeration of the Booleans.
 
 ## Depends on
 

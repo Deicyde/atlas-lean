@@ -13,21 +13,21 @@ and `C[t,k,u+c,x]` force `C[t+1,k,u+p,x]`.
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
-- [The family](../../shift/sh-family.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Tr](tr.md)
 - [Cnf Sat](../../../dense-sat/cnf-sat.md)
 
 ## Proof depends on
 
-- [Num Vars](../../family/num-vars.md)
-- [Dense Clause](../../family/dense-clause.md)
-- [Ov Lits](../../shift/ov-lits.md)
-- [Pf Lits](../../shift/pf-lits.md)
-- [Sh Blk](../../shift/sh-blk.md)
-- [Sh Lits](../../shift/sh-lits.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
+- [Literals of an overflow clause](../../shift/ov-lits.md)
+- [Literals of a pushed-fill clause](../../shift/pf-lits.md)
+- [The shift block of a situation and a stack](../../shift/sh-blk.md)
+- [Literals of an in-range shift clause](../../shift/sh-lits.md)
 - [L0](clause-sat-dense.md)
 - [CNF](../../../dense-sat/cnf.md)
 - [Clause](../../../dense-sat/clause.md)

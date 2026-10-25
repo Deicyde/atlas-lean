@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nonIntersectingWordPairs_sameLength_card
 ---
 
-# Non Intersecting Word Pairs same Length card
+# Non-intersecting pairs of words of equal length
 
-Corollary 2: for `n ≥ 1`, the number of non-intersecting pairs of words of length `n` over
-`[k]` is `h_k(n) = ∑_{j=1}^{k-1} C(k, j) j! S_{n,j} (k-j)^n`.
+**Non-intersecting pairs of words of equal length.** Let $S(n, j)$ denote the Stirling numbers
+of the second kind. For natural numbers $k$ and $n \ge 1$, the number of pairs $(u, v)$ of words
+of length $n$ over an alphabet of $k$ letters such that no letter occurs in both $u$ and $v$ is
+$\sum_{j=1}^{k-1} \binom{k}{j} \, j! \, S(n, j) \, (k-j)^n$.
 
 ## Depends on
 

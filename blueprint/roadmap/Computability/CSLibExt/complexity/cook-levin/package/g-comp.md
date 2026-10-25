@@ -5,10 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Package.gComp
 ---
 
-# The packaged reduction machine
+# The reduction machine as a polynomial-time computation
 
-**The packaged reduction machine**: `TM2ComputableInPolyTime` from `ea` to the identity
-encoding of `List Bool`, computing `fR`. Still parametric in the verifier data.
+**The reduction machine as a polynomial-time computation.** Fix $r \in \mathbb{N}$, a finite
+TM2 machine $M$ with an encoding $E$, a list $Y$ of input symbols of $M$, an output symbol $a$, a
+map $\iota$ from $\{0, \dots, r-1\}$ to input symbols, an input symbol $\mathit{sep}$, a
+polynomial $k$ with coefficients in $\mathbb{N}$ and $c, e \in \mathbb{N}$. Let $\mathit{ea}$
+encode the elements of a type $\alpha$ as lists over an alphabet $\Sigma$, and let $\mathit{eqv}$
+be a bijection from $\{0, \dots, r-1\}$ to $\Sigma$. This is a polynomial-time TM2 computation of
+the reduction function $f_R$, which sends $u \in \alpha$ to the emitted formula for the raw input
+obtained by applying $\mathit{eqv}^{-1}$ to each symbol of $\mathit{ea}(u)$, from the encoding
+$\mathit{ea}$ to the identity encoding of bit strings: the machine is the reduction machine, its
+input alphabet is identified with $\Sigma$ by $\mathit{eqv}$, its output alphabet with the
+Booleans by the identity, and its time bound is a polynomial $p$ with $p(n) = g_B(n)$ for all
+$n$, where $g_B$ is the step bound of the composed machine.
 
 ## Depends on
 
@@ -17,28 +27,28 @@ encoding of `List Bool`, computing `fR`. Still parametric in the verifier data.
 
 ## Proof depends on
 
-- [Acc C](../accept/acc-c.md)
-- [Real B](../assembly/real-b.md)
-- [Gen C](../family/gen-c.md)
-- [Init C](../init-family/init-c.md)
-- [Ycs](../init-family/ycs.md)
-- [Dks](dks.md)
-- [G B](g-b.md)
-- [The reduction machine as a `FinTM2`](g-tm.md)
-- [The composed machine, raw input to `haltList`](g-run.md)
-- [Outputs Of Run Le'](outputs-of-run-le-2.md)
-- [Phi Of](phi-of.md)
-- [FK](../precompute/fk.md)
-- [Is Poly](../precompute/is-poly.md)
+- [Constant of the accept generator's time bound](../accept/acc-c.md)
+- [Step bound of the host](../assembly/real-b.md)
+- [Constant of the generator's time bound](../family/gen-c.md)
+- [Constant of the init generator's time bound](../init-family/init-c.md)
+- [Sorted certificate code list](../init-family/ycs.md)
+- [Stacks to drain](dks.md)
+- [Step bound of the composed machine](g-b.md)
+- [The reduction machine](g-tm.md)
+- [The reduction machine halts with the emitted formula](g-run.md)
+- [A bounded halting run certifies the output, up to an equal output](outputs-of-run-le-2.md)
+- [The formula emitted on a raw input](phi-of.md)
+- [Stacks of the full machine](../precompute/fk.md)
+- [Polynomial functions on the naturals](../precompute/is-poly.md)
 - [Horn T](../precompute/horn-t-2.md)
-- [TOf](../precompute/tof.md)
-- [C B](../precompute/c-b.md)
-- [Coeffs](../precompute/coeffs.md)
-- [Full B](../precompute/full-b.md)
-- [The full machine as a genuine `FinTM2`](../precompute/full-tm.md)
-- [Horn T](../precompute/horn-t.md)
-- [M Of](../precompute/m-of.md)
-- [Sh C](../shift/sh-c.md)
+- [The precomputed time bound](../precompute/tof.md)
+- [Step budget of the counter program](../precompute/c-b.md)
+- [Coefficient list of a polynomial](../precompute/coeffs.md)
+- [Step bound of the full machine](../precompute/full-b.md)
+- [The full machine as a finite multi-stack Turing machine](../precompute/full-tm.md)
+- [Step count of the Horner rounds](../precompute/horn-t.md)
+- [Total length bound](../precompute/m-of.md)
+- [Constant of the shift-generator time bound](../shift/sh-c.md)
 - [N](../situation/part-01/n.md)
 - [Layout](../situation/part-01/layout.md)
 - [Depth](../situation/part-01/depth.md)

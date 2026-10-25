@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_tribbinary_and_tribternary_multiple
 ---
 
-# Exists tribbinary and tribternary multiple
+# Tribbinary and Tribternary multiples
 
-Every positive integer has a positive Tribbinary multiple (binary digits with no three
-consecutive ones) and a positive Tribternary multiple (base-`3` digits in `{0, 1}`, no three
-consecutive ones).
+**Tribbinary and Tribternary multiples.** Every positive integer $n$ has a positive
+multiple whose binary digits contain no three consecutive $1$s (a Tribbinary number), and a
+positive multiple whose base-$3$ digits are all $0$ or $1$ with no three consecutive $1$s (a
+Tribternary number).
 
 ## Depends on
 

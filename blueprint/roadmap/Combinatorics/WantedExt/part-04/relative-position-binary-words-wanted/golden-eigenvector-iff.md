@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.golden_eigenvector_iff
 ---
 
-# Lemma 39
+# Integer matrices with the golden eigenvector
 
-**Lemma 39.** For `M ∈ M₂(ℤ)`, `[τ 1]ᵀ` (`τ` the golden ratio) is a right eigenvector of `M`
-iff `M = [[m+n, m], [m, n]]` for some integers `m, n`; in that case the eigenvalues of `M` are
-`n + mτ` and `n + mτ'` (`τ' = (1 - √5)/2`), i.e. the characteristic polynomial factors as
-`(X - (n + mτ))(X - (n + mτ'))`.
+**Integer matrices with the golden eigenvector.** Let $\tau = (1 + \sqrt 5)/2$ be the golden
+ratio and $\tau' = (1 - \sqrt 5)/2$ its conjugate, and let $M$ be a $2 \times 2$ integer matrix.
+Then $(\tau, 1)^T$ is a right eigenvector of $M$, that is, $M (\tau, 1)^T = c\,(\tau, 1)^T$ for
+some real number $c$, if and only if
+
+$$M = \begin{pmatrix} m + n & m \\ m & n \end{pmatrix}$$
+
+for some integers $m$ and $n$. In that case the characteristic polynomial of $M$ is
+$(X - (n + m\tau))(X - (n + m\tau'))$, so the eigenvalues of $M$ are $n + m\tau$ and
+$n + m\tau'$.
 
 ## Depends on
 

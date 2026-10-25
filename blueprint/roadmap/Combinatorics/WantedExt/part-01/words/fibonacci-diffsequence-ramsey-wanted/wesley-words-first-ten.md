@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.wesleyWords_first_ten
 ---
 
-# Wesley Words first ten
+# The first ten letters of Wesley's words $S$ and $T$
 
-The first ten letters: `S = 1001101001…` and `T = 1001100100…`.
+**The first ten letters of Wesley's words $S$ and $T$.** Indexing letters from $0$, the
+letters of $S$ at indices $0, 1, \dots, 9$ are $1, 0, 0, 1, 1, 0, 1, 0, 0, 1$ and the letters of
+$T$ at indices $0, 1, \dots, 9$ are $1, 0, 0, 1, 1, 0, 0, 1, 0, 0$; that is, $S$ begins with
+$1001101001$ and $T$ begins with $1001100100$.
 
 ## Depends on
 
-- [Wesley Word S](wesley-word-s.md)
-- [Wesley Word T](wesley-word-t.md)
+- [Wesley's word $S$](wesley-word-s.md)
+- [Wesley's word $T$](wesley-word-t.md)
 
 ## Sources
 

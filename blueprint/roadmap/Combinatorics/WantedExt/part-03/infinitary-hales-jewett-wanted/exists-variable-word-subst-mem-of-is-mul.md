@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_variableWord_subst_mem_of_isMulPiecewiseSyndetic
 ---
 
-# Exists variable Word subst mem of is Mul Piecewise Syndetic
+# Piecewise syndetic sets contain Hales–Jewett configurations
 
-A version of the Hales–Jewett theorem. Let `A_0 ⊆ A_1 ⊆ ⋯` be finite alphabets with union
-`A`, and let `D ⊆ S_0` be piecewise syndetic in the semigroup `S_0` of words over `A`. For all
-`m, n` there is an `n`-variable word `w` over `A` with `w(a⃗) ∈ D` for every `a⃗ ∈ A_m^n`. The
-paper's family `F = {h_a⃗}` of substitution homomorphisms carries no extra hypothesis and is
-omitted; `n = 0` is admitted (then the claim is `D ≠ ∅`).
+**Piecewise syndetic sets contain Hales–Jewett configurations.** Let
+$A_0 \subseteq A_1 \subseteq \cdots$ be finite sets with union $A$, and let $S_0$ be the semigroup
+of nonempty finite words over $A$ under concatenation. For $n \in \mathbb{N}$, an $n$-variable
+word over $A$ is a nonempty finite word over $A \cup \{v_0, \dots, v_{n-1}\}$, for distinct
+variables $v_i \notin A$, in which every $v_i$ occurs; for $\vec a = (a_0, \dots, a_{n-1})$ in
+$A^n$, the word $w(\vec a) \in S_0$ is obtained from $w$ by replacing each $v_i$ by $a_i$. If
+$D \subseteq S_0$ is piecewise syndetic, then for all $m, n \in \mathbb{N}$ there is an
+$n$-variable word $w$ over $A$ with $w(\vec a) \in D$ for every $\vec a \in A_m^n$.
+
+For $n = 0$ the claim is that $D$ is nonempty.
 
 ## Depends on
 

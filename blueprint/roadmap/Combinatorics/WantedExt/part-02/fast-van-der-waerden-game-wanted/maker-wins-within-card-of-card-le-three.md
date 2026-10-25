@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_card_of_card_le_three
 ---
 
-# Maker Wins Within card of card le three
+# Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$
 
-If `|S| ≤ 3`, Maker has an `|S|`-move strategy.
+**Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$.** If $S$ is a finite set of
+natural numbers with $|S| \le 3$, then, starting from the position where no number has been
+claimed, Maker wins the $S$-game within $|S|$ moves.
 
 ## Depends on
 
-- [Maker Wins Within](maker-wins-within.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

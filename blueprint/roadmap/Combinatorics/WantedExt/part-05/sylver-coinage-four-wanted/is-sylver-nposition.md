@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSylverNPosition
 ---
 
-# Is Sylver NPosition
+# N-positions of Sylver Coinage
 
-`M` is an N-position of Sylver Coinage: either `1` has already been named (the previous
-player lost), or some legal move leads to a P-position.
+**N-positions of Sylver Coinage.** A position $M$ of Sylver Coinage is an N-position (the
+player to move wins) when either $1 \in M$, so that the previous player named $1$ and lost, or
+some legal move $q$ of $M$ leads to a P-position $M \cup \{q\}$. N-positions and P-positions are
+defined together inductively by these rules.
 
 ## Depends on
 

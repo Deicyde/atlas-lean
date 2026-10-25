@@ -5,23 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.eq_scaled_zeroInterval_of_extremal
 ---
 
-# Eq scaled zero Interval of extremal
+# Inverse theorem for the extremal restricted signed sumset of sets containing zero
 
-`a` encodes `A={a₀<⋯<a_{k-1}}`, with nonnegative terms and `a₀=0`;
-`initialSegment a (h+1)` is the paper's `A_h` (indices `0,…,h`) and `tailFinset a` is
-`A'`. The extremal equality and five disjuncts are cases (a)–(e). The conclusion encodes
-`a₁*[0,k-1]` using `zeroInterval`; no condition is added or omitted.
+**Inverse theorem for the extremal restricted signed sumset of sets containing zero.** Let
+$h$ and $k$ be natural numbers with $4 \le h \le k - 1$, and let
+$A = \{a_0 < a_1 < \cdots < a_{k-1}\}$ be a set of $k$ nonnegative integers with $a_0 = 0$.
+Write $A_h = \{a_0, \dots, a_h\}$, $A' = \{a_1, \dots, a_{k-1}\}$ and
+$-A' = \{-x : x \in A'\}$. Suppose that the restricted signed sumset $h^{\wedge}_{\pm} A$ has
+exactly $2hk - h(h+1) + 1$ elements and that at least one of the following holds:
+(a) there is $d > 0$ with $a_{i+1} = a_i + d$ for all $0 \le i < k - 1$;
+(b) $A_h = \{b + nd : 0 \le n \le h\}$ for some integers $b$ and $d > 0$;
+(c) $h^{\wedge}_{\pm} A_h$ has at least $h(h+1) + 1$ elements and $4 \le h \le k - 3$;
+(d) $h^{\wedge}_{\pm} A = h^{\wedge}(-A') \cup h^{\wedge}_{\pm} A_h \cup h^{\wedge} A'$, where
+$h^{\wedge}$ is the restricted sumset, and $A' = \{b + nd : 0 \le n < k - 1\}$ for some
+integers $b$ and $d > 0$;
+(e) $h^{\wedge}_{\pm} A_h$ has at least $h(h+1) + 1$ elements and
+$A' = \{b + nd : 0 \le n < k - 1\}$ for some integers $b$ and $d > 0$.
+Then $A = a_1 \cdot \{0, 1, \dots, k - 1\} = \{i a_1 : 0 \le i < k\}$.
 
 ## Depends on
 
-- [Is Indexed AP](is-indexed-ap.md)
-- [Initial Segment](initial-segment.md)
-- [Ordered Finset](ordered-finset.md)
+- [Finite integer sequences in arithmetic progression](is-indexed-ap.md)
+- [Initial segment of a finite integer sequence](initial-segment.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 - [Restricted sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
-- [Scale Finset](scale-finset.md)
-- [Tail Finset](tail-finset.md)
-- [Zero Interval](zero-interval.md)
+- [Dilation of a finite set of integers](scale-finset.md)
+- [Values of a finite integer sequence after its first term](tail-finset.md)
+- [Zero-based integer interval](zero-interval.md)
 - [Set arithmetic progressions with given first term and difference](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources

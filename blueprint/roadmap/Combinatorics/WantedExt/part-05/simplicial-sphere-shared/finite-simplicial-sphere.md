@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimplicialSphereShared.FiniteSimplicialSphere
 ---
 
-# Finite Simplicial Sphere
+# Finite simplicial sphere
 
-A finite geometric simplicial complex homeomorphic to the `(d-1)`-sphere.
+**Finite simplicial sphere.** For a natural number $d$, a finite simplicial $(d-1)$-sphere
+is a geometric simplicial complex $K$ in the Euclidean space $\mathbb{R}^d$ with finitely many
+faces whose underlying space is homeomorphic to the unit sphere
+$S^{d-1} = \{x \in \mathbb{R}^d : \|x\| = 1\}$.
 
 ## Depends on
 

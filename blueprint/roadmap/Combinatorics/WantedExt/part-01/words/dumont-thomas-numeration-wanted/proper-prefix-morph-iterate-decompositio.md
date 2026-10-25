@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.properPrefix_morphIterate_decomposition
 ---
 
-# Proper Prefix morph Iterate decomposition
+# Decomposition of a proper prefix of an iterated image
 
-If `ℓ ≥ 1` and `m` is a proper prefix of `η^ℓ(a)`, then there are `(m', a') ∈ A* × A`
-and `m'' ∈ A*` with `m'a'` a prefix of `η(a)`, `m''` a proper prefix of `η^{ℓ-1}(a')`, and
-`m = η^{ℓ-1}(m') m''`.
+**Decomposition of a proper prefix of an iterated image.** Let $\eta$ be a substitution on
+an alphabet $A$, let $\ell \ge 1$ and $a \in A$, and let $m$ be a proper prefix of
+$\eta^\ell(a)$, that is, a prefix of strictly smaller length. Then there are words $m'$ and
+$m''$ over $A$ and a letter $a' \in A$ such that $m'a'$ is a prefix of $\eta(a)$, $m''$ is a
+proper prefix of $\eta^{\ell-1}(a')$, and $m = \eta^{\ell-1}(m')\,m''$.
 
 ## Depends on
 
-- [Is Substitution](is-substitution.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

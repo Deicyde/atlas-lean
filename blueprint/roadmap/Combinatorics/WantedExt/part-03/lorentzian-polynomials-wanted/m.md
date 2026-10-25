@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.M
 ---
 
-# M
+# Homogeneous polynomials with M-convex support
 
-We write `M n d` for the set of all degree `d` homogeneous polynomials with non-negative
-coefficients in `ℝ[w₁,...,wₙ]` whose supports are M-convex.
+**Homogeneous polynomials with M-convex support.** $M^d_n$ is the set of homogeneous
+polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ whose coefficients are all
+nonnegative and whose support, the set of exponent vectors $\alpha \in \mathbb{N}^n$ of the
+monomials with nonzero coefficient in $f$, is M-convex.
 
 ## Depends on
 
-- [H](h.md)
+- [Homogeneous polynomials of degree $d$](h.md)
 
 ## Proof depends on
 
-- [Is MConvex](is-mconvex.md)
+- [M-convex sets](is-mconvex.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSubstitutionImage_id
 ---
 
-# Is Substitution Image id
+# Every word is fixed by the identity substitution
 
-Every word is its own image under the identity substitution.
+**Every word is fixed by the identity substitution.** Every infinite binary word $w$ is
+its own image under the identity substitution $a \mapsto a$, $b \mapsto b$.
 
 ## Depends on
 
-- [Is Substitution Image](is-substitution-image.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
 
 ## Sources
 

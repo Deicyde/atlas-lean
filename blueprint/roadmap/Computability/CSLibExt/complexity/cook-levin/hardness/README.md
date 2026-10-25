@@ -6,26 +6,26 @@ navigation: module
 
 ## [ENC] An encoding whose output alphabet contains a chosen accept symbol
 
-- [Sym Set X](sym-set-x.md)
-- [Enc X](enc-x.md)
-- [Enc X acc](enc-x-acc.md)
+- [Effective alphabets with an adjoined accept symbol](sym-set-x.md)
+- [Tableau encoding with a chosen accept symbol](enc-x.md)
+- [The chosen accept symbol is encodable](enc-x-acc.md)
 
 ## The verifier's machine and the reduction's parameters
 
-- [Vacc](vacc.md)
-- [V E](v-e.md)
-- [Veqv](veqv.md)
-- [Vι](v.md)
-- [Vsep](vsep.md)
-- [V Y](v-y.md)
-- [V Ys](v-ys.md)
-- [Vc](vc.md)
-- [Ve](ve.md)
+- [Accept symbol of the verifier](vacc.md)
+- [Tableau encoding of the verifier](v-e.md)
+- [Bits as indices](veqv.md)
+- [Input-bit symbol of the verifier](v.md)
+- [Separator symbol of the verifier](vsep.md)
+- [Certificate symbol of the verifier](v-y.md)
+- [Certificate symbols of the verifier](v-ys.md)
+- [Offset of the verifier's time bound](vc.md)
+- [Exponent of the verifier's time bound](ve.md)
 - [V input](v-input.md)
-- [V run](v-run.md)
-- [Red](red.md)
+- [The verifier's run settles on its output](v-run.md)
+- [The Cook–Levin reduction](red.md)
 - [Correctness of the reduction](v-correct.md)
-- [Is Poly Time red](is-poly-time-red.md)
+- [The Cook–Levin reduction is polynomial-time](is-poly-time-red.md)
 
 ## Hardness and completeness
 

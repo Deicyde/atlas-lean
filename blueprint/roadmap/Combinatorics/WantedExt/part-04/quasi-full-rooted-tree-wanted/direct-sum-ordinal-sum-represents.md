@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.directSum_ordinalSum_represents
 ---
 
-# Direct Sum ordinal Sum represents
+# Direct and ordinal sums of poset matrices represent sums of posets
 
-Theorem 4 (quoted from Mohammad and Talukder 2020), for two terms: if poset matrices `A` and
-`B` represent posets `P` and `Q`, then the direct sum `A ⊕ B` is a poset matrix representing the
-direct (disjoint) sum `P + Q` (`P ⊕ Q` with `Sum.instLE`), and the ordinal sum `A ⊞ B` is a poset
-matrix representing the ordinal sum `P ⊕ₗ Q`. Partial: the record's `r`-term version is the
-iterate of this one and is not stated separately; the record's `P₁ + P₁ + ⋯ + P_r` is read as
-`P₁ + P₂ + ⋯ + P_r`.
+**Direct and ordinal sums of poset matrices represent sums of posets.** A poset matrix $M$ of
+order $n$, a Boolean matrix with rows and columns indexed by $0, \dots, n - 1$, represents a
+partial order $P$ when there is a bijection $e$ from $\{0, \dots, n - 1\}$ to $P$ such that
+$e(i) \le e(j)$ if and only if $M_{ij}$ is true. Let $A$ and $B$ be poset matrices of orders $m$
+and $k$ representing partial orders $P$ and $Q$. Let $A \oplus B$ and $A \boxplus B$ be the
+matrices $N$ of order $m + k$ with $N_{ij} = A_{ij}$ for $i, j < m$, $N_{m+i, m+j} = B_{ij}$ for
+$i, j < k$, and $N_{ij}$ false for all $j < m \le i$, where $N_{ij}$ for $i < m \le j$ is false
+in $A \oplus B$ and true in $A \boxplus B$. Then $A \oplus B$ is a poset matrix representing the
+disjoint sum $P + Q$, in which no element of $P$ is comparable with an element of $Q$, and
+$A \boxplus B$ is a poset matrix representing the ordinal sum $P \oplus Q$, in which every
+element of $P$ lies below every element of $Q$.
+
+Only sums of two terms are stated; sums of $r$ terms follow by iterating.
 
 ## Depends on
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.trinomialCoefficient_eq_coeff
 ---
 
-# Theorem 3
+# Trinomial coefficients as coefficients of a rational series
 
-**Theorem 3.** `binom(n, k)_2 = [t^{2n}] (1 - t + t^2)^n (1 - t)⁻¹ (t / (1 - t))^k`,
-for `k ∈ ℕ` (the record allows `k ∈ ℤ`; negative `k` is omitted).
+**Trinomial coefficients as coefficients of a rational series.** Write $\binom{n}{k}_2$ for
+the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and $[t^m]\,F$ for the
+coefficient of $t^m$ in a formal power series $F$ over $\mathbb{Q}$. For all natural numbers
+$n$ and $k$, $\binom{n}{k}_2 = [t^{2n}]\,(1 - t + t^2)^n (1 - t)^{-1} \left(t/(1-t)\right)^k$.
+
+The paper also allows negative integers $k$; that case is not included here.
 
 ## Depends on
 

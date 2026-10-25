@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsMConvex
 ---
 
-# Is MConvex
+# M-convex sets
 
-A subset `J ⊆ ℕⁿ` is said to be M-convex, if for any `α, β ∈ J` and any index `i`
-satisfying `αᵢ > βᵢ`, there is an index `j` satisfying `αⱼ < βⱼ` and `α - eᵢ + eⱼ ∈ J`.
+**M-convex sets.** A subset $J \subseteq \mathbb{N}^n$ is M-convex if for all
+$\alpha, \beta \in J$ and every index $i$ with $\alpha_i > \beta_i$ there is an index $j$ with
+$\alpha_j < \beta_j$ and $\alpha - e_i + e_j \in J$, where $e_1, \dots, e_n$ are the standard unit
+vectors of $\mathbb{N}^n$.
 
 ## Depends on
 

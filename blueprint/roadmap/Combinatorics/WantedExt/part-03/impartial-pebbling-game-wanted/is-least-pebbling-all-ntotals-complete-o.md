@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_pebblingAllNTotals_complete_odd
 ---
 
-# Is Least pebbling All NTotals complete odd
+# All-N threshold of $(2:1)$-pebbling on $K_n$ for odd $n$
 
-Theorem 1(d): for odd `n ≥ 5`, `m^{(2:1)}(K_n) = n + 2`.
+**All-N threshold of $(2:1)$-pebbling on $K_n$ for odd $n$.** For every odd $n \ge 5$, the
+least number $m$ such that every $(2:1)$-pebbling game on the complete graph $K_n$ with $m$
+pebbles in total is an N-game, written $m^{(2:1)}(K_n)$, exists and equals $n + 2$.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

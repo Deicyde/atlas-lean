@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stirling Park Spot](stirling-park-spot.md)
+- [Parking spot of a car](stirling-park-spot.md)
 
 ## Sources
 

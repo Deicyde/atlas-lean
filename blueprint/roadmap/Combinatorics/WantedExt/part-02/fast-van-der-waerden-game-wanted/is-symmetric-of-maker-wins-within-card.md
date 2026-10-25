@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.isSymmetric_of_makerWinsWithin_card
 ---
 
-# Is Symmetric of maker Wins Within card
+# A fast Maker win forces symmetry
 
-For `|S| ≥ 2`, if Maker has an `|S|`-move strategy then `S` is symmetric.
+**A fast Maker win forces symmetry.** Let $S$ be a finite set of natural numbers with at
+least two elements. If Maker, moving first with no numbers claimed, can force a win in the
+game on $S$ within $|S|$ selections, then $S$, viewed as a set of rational numbers, is
+symmetric.
 
 ## Depends on
 
-- [Is Symmetric](is-symmetric.md)
-- [Maker Wins Within](maker-wins-within.md)
+- [Symmetric sets of rationals](is-symmetric.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

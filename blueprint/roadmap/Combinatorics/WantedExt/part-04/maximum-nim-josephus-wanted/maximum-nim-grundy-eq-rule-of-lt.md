@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_eq_rule_of_lt
 ---
 
-# Maximum Nim Grundy eq rule of lt
+# Grundy number where the rule function increases
 
-Lemma 1(i): for a positive `x`, if an admissible rule function increases from
-`x-1` to `x`, then `G(x) = f(x)`. The hypotheses `hf0` and `hf` formalize the same
-rule-function assumptions as Theorem 1; there is no deviation.
+**Grundy number where the rule function increases.** Let $f : \mathbb{N} \to \mathbb{N}$
+satisfy $f(0) = 0$ and $f(m-1) \le f(m) \le f(m-1) + 1$ for every $m \ge 1$, and let $G$ be the
+Grundy number of Maximum Nim with rule function $f$. If $x \ge 1$ and $f(x-1) < f(x)$, then
+$G(x) = f(x)$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

@@ -8,8 +8,8 @@ lean: MathlibExt.Combinatorics.ErdosFaberLovaszConjectureWanted.ErdosFaberLovasz
 
 # Hypergraph
 
-We define a `Hypergraph` on a type of vertices `V` to be a set of sets of `V`
-(an edge of a `Hypergraph` is a subset of `V`).
+**Hypergraph.** A hypergraph on a type $V$ of vertices is a set of subsets of $V$; its elements
+are the edges of the hypergraph. Edges may be empty, and no finiteness condition is imposed.
 
 ## Depends on
 

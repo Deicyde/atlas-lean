@@ -23,7 +23,7 @@ where the differences $k - 1$, $n - 1$ and $n - k$ of natural numbers are trunca
 ## Depends on
 
 - [Surjective restricted-growth strings](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
-- [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
+- [Number of symmetric peaks](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources
 

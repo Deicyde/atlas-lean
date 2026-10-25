@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_accessible_four_of_halfEvenFibonacci
 ---
 
-# Not accessible four of half Even Fibonacci
+# Halved even Fibonacci numbers and $4$-accessibility of the Fibonacci numbers
 
-If `G` is not `2`-accessible (`Δ(G, k; 2) = ∞` for some `k`), then `F` is not
-`4`-accessible.
+**Halved even Fibonacci numbers and $4$-accessibility of the Fibonacci numbers.** Write $f_n$
+for the $n$-th Fibonacci number ($f_0 = 0$, $f_1 = 1$). Let $F = \{1, 2, 3, 5, 8, \dots\}$ be the
+set of positive Fibonacci numbers and $G = \{f_{3n}/2 : n \ge 1\} = \{1, 4, 17, 72, \dots\}$ the set
+of halves of the even Fibonacci numbers. If $G$ is not $2$-accessible, then $F$ is not
+$4$-accessible.
 
 ## Depends on
 
 - [$r$-accessibility for colorings of the positive integers](../../accessible-sets-wanted/is-raccessible.md)
-- [Half Even Fibonacci Set](half-even-fibonacci-set.md)
+- [Halves of even Fibonacci numbers](half-even-fibonacci-set.md)
 - [Positive Fibonacci set](../../accessible-sets-wanted/positive-fibonacci-set.md)
 
 ## Sources

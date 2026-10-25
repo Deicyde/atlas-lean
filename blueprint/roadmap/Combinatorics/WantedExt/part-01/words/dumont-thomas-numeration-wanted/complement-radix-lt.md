@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ComplementRadixLT
 ---
 
-# Complement Radix LT
+# The complement radix order
 
-The total order `≺` on `{0, 1} ⊙ 𝒟*`: every word starting with `1` precedes every word
-starting with `0`; two words starting with `0` are compared in radix order (shorter first,
-then lexicographically); two words starting with `1` are compared in reversed-radix order
-(longer first, then lexicographically). Words of `ℕ*` not starting with `0` or `1` are never
-related.
+**The complement radix order.** For finite words $w$ and $w'$ over $\mathbb{N}$, write
+$|w|$ for the length of $w$. Then $w \prec w'$ holds exactly in the following three cases:
+$w$ starts with $1$ and $w'$ starts with $0$; both words start with $0$, and either
+$|w| < |w'|$, or $|w| = |w'|$ and $w$ is lexicographically smaller than $w'$ (radix order);
+both words start with $1$, and either $|w| > |w'|$, or $|w| = |w'|$ and $w$ is
+lexicographically smaller than $w'$ (reversed radix order). In particular, a word that does
+not start with $0$ or $1$ is never related to any word.
+
+On the words starting with $0$ or $1$ this is the order $\prec$ of the paper.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayU
 ---
 
-# Array U
+# The array $U(k, m)$
 
-`U(k, m) = (2/(2m)!) Σ_{j=0}^m (-1)^j C(2m, j) (m - j)^{2k}`.
+**The array $U(k, m)$.** For natural numbers $k$ and $m$, $U(k, m)$ is the rational number
+$\frac{2}{(2m)!} \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$.
 
 ## Depends on
 

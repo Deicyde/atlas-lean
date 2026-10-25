@@ -6,10 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.not_isReducedMagicSquare_zero_one_two_three
 ---
 
-# Not is Reduced Magic Square zero one two three
+# A 2×2 square that is not a reduced magic square
 
-The square `[[0, 1], [2, 3]]` has all entries `0, …, 3` once but is not magic (row sums
-`1` and `5`).
+**A 2×2 square that is not a reduced magic square.** The $2 \times 2$ square with rows
+$(0, 1)$ and $(2, 3)$ is not a reduced magic square.
+
+Its entries are $0, 1, 2, 3$, each once, but its row sums are $1$ and $5$, so it is not magic.
 
 ## Depends on
 

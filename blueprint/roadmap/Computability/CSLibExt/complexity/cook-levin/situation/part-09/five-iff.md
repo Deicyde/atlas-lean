@@ -14,8 +14,8 @@ iff some certificate `y` over `Ys` with `|x ++ y| ≤ m` makes the real run acce
 
 ## Depends on
 
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Accepting configuration](../part-07/accepts.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
@@ -36,7 +36,7 @@ iff some certificate `y` over `Ys` with `|x ++ y| ≤ m` makes the real run acce
 
 ## Proof depends on
 
-- [Num Vars](../../family/num-vars.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
 - [C5 (completeness), Sit level](../part-08/accept-complete.md)
 - [Soundness up to plumbing](../part-07/accept-sound.md)
 - [The C5 assignment](../part-08/run-asg.md)

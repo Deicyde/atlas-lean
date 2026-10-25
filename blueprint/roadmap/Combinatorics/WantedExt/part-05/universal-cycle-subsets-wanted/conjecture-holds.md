@@ -6,21 +6,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.UniversalCycleSubsetsWanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Existence of universal cycles for $k$-subsets
 
-Resolved true: Resolved affirmatively: Glock, Joos, Kuehn and Osthus, Euler tours in
-hypergraphs, Combinatorica 40 (2020), Theorem 1.1 proves that for each fixed k >= 2 and all
-sufficiently large n satisfying k | C(n-1,k-1), the complete k-uniform hypergraph has a tight
-Euler tour, exactly the universal cycle encoded here; the k = 1 case is elementary and the k = 0
-branch is vacuous. Source: Stefan Glock, Felix Joos, Daniela Kühn, Deryk Osthus, Euler tours in
-hypergraphs, Combinatorica 40 (2020), 679-690; arXiv:1808.07720,
-https://arxiv.org/abs/1808.07720. Moved from
-`OpenConjectures/Combinatorics/UniversalCycleSubsets`.
+**Existence of universal cycles for $k$-subsets.** For every natural number $k$ there is a
+natural number $N$ such that for every $n \ge N$ for which $k$ divides $\binom{n-1}{k-1}$, there
+is a universal cycle for the $k$-subsets of $\{0, \dots, n-1\}$. Here $n - 1$ and $k - 1$ are
+truncated at $0$, so for $k = 0$ the divisibility condition reads $0 \mid 1$ and never holds.
+
+This is the Chung–Diaconis–Graham conjecture. Glock, Joos, Kühn and Osthus (Theorem 1.1)
+proved it for every $k \ge 2$ in the language of tight Euler tours of the complete
+$k$-uniform hypergraph; the case $k = 1$ is elementary.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Chung–Diaconis–Graham universal cycle conjecture](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.UniversalCycleSubsetsWanted](../../../../../sources/v2/WantedExt.md)
+- Stefan Glock, Felix Joos, Daniela Kühn, Deryk Osthus, Euler tours in hypergraphs, Combinatorica 40 (2020), 679-690; arXiv:1808.07720, https://arxiv.org/abs/1808.07720. Moved from `OpenConjectures/Combinatorics/UniversalCycleSubsets`.

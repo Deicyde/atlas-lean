@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.toeplitzHessenbergDet_ternary
 ---
 
-# Toeplitz Hessenberg Det ternary
+# Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers
 
-With `H_n = A_n(3, 1)` and `J_n = A_n(3, 2)`:
-`D_+(H_2, H_3, …, H_{n+1}) = 2(-1)^{n-1}/n · C(3n - 3, n - 1)` for `n ≥ 2`, and
-`D_-(J_0, J_1, …, J_{n-1}) = H_n` for `n ≥ 1`. The formulas for `D_+(H_0, …, H_{n-1})`,
-`D_-(H_0, …, H_{n-1})`, `D_-(H_1, …, H_n)` and `D_+(J_0, …, J_{n-1})` are omitted: their values
-are the OEIS entries A023053, A098746, A047099, A121545, which the paper does not define.
+**Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers.** Write
+$\det(a_0; a_1, \dots, a_n)$ for the determinant of the $n \times n$ Toeplitz–Hessenberg matrix
+whose entry in row $i$ and column $j$ is $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the
+superdiagonal, and let $H_n = \frac{1}{3n + 1} \binom{3n + 1}{n}$ and
+$J_n = \frac{2}{3n + 2} \binom{3n + 2}{n}$. Then, in $\mathbb{Q}$,
+$\det(1; H_2, H_3, \dots, H_{n+1}) = \frac{2 (-1)^{n-1}}{n} \binom{3n - 3}{n - 1}$ for every
+$n \ge 2$, and $\det(-1; J_0, J_1, \dots, J_{n-1}) = H_n$ for every $n \ge 1$.
 
 ## Depends on
 

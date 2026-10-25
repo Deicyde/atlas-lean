@@ -12,17 +12,17 @@ The simulating PDA accepts exactly the grammar's language.
 
 ## Depends on
 
-- [Accepts](../../../../automata/pda/basic/accepts.md)
+- [Language accepted by a pushdown automaton](../../../../automata/pda/basic/accepts.md)
 - [Cfg PDA](cfg-pda.md)
 
 ## Proof depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
-- [Config](../../../../automata/pda/basic/config.md)
-- [Derives](../../../../automata/pda/basic/derives.md)
-- [Append input stack](../../../../automata/pda/basic/append-input-stack.md)
-- [Step](../../../../automata/pda/basic/step.md)
-- [Init Config](../../../../automata/pda/basic/init-config.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
+- [Pushdown automaton configuration](../../../../automata/pda/basic/config.md)
+- [Multi-step computation of a pushdown automaton](../../../../automata/pda/basic/derives.md)
+- [Computations extend by unread input and stack bottom](../../../../automata/pda/basic/append-input-stack.md)
+- [One step of a pushdown automaton](../../../../automata/pda/basic/step.md)
+- [Initial configuration](../../../../automata/pda/basic/init-config.md)
 - [Yields](../../part-02/yields/yields.md)
 - [Append inv](../../part-02/yields/append-inv.md)
 - [Cfg Step](cfg-step.md)

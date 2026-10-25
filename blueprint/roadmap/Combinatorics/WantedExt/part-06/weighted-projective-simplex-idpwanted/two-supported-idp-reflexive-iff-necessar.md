@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.two_supported_idp_reflexive_iff_necessary
 ---
 
-# Two supported idp reflexive iff necessary
+# IDP reflexive two-supported weighted simplices
 
-Theorem 8's iff: for two distinct increasing positive support entries and
-positive multiplicities, IDP reflexivity is equivalent to the necessary condition.
+**IDP reflexive two-supported weighted simplices.** Let $r = (r_1, r_2)$ and
+$x = (x_1, x_2)$ be pairs of positive integers with $r_1 < r_2$, and let
+$q = (r_1^{x_1}, r_2^{x_2})$ be the weight vector consisting of $r_1$ repeated $x_1$ times
+followed by $r_2$ repeated $x_2$ times. The weighted projective space simplex $\Delta_{(1,q)}$ is
+reflexive and has the integer decomposition property if and only if
+$1 + \sum_{i=1}^{2} x_i (r_i \bmod r_j) = r_j$ for $j = 1, 2$.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
-- [Expand Support](expand-support.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Support form of the IDP necessary condition](satisfies-support-idpnecessary.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

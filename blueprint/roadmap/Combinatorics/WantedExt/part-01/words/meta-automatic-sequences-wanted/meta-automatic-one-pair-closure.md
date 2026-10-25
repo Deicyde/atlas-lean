@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticOne_pair_closure
 ---
 
-# Meta Automatic One pair closure
+# Joint recurrence for $\mathcal{M}_1$ and its nested companion
 
-Lemma 12: with `b(n) = ℳ₁(2n + 1 - ℳ₁(n))`, `s(n) = (ℳ₁(n), b(n))`, `x = ℳ₁(n)`,
-`y = b(n)` and `n ≥ 1`: `s(4n) = (x, y)`, `s(4n+1) = (1 ⊕ x, x ⊕ y)`,
-`s(4n+2) = (y, 1 ⊕ x)`, `s(4n+3) = (1 ⊕ y, x ⊕ y ⊕ 1)`.
+**Joint recurrence for $\mathcal{M}_1$ and its nested companion.** Read the values of the
+meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, write $\oplus$ for addition modulo $2$,
+and let $b(m) = \mathcal{M}_1(2m + 1 - \mathcal{M}_1(m))$ for every $m \in \mathbb{N}$. Then for
+every $n \ge 1$, with $x = \mathcal{M}_1(n)$ and $y = b(n)$, the pairs
+$s(k) = (\mathcal{M}_1(k), b(k))$ satisfy $s(4n) = (x, y)$, $s(4n+1) = (1 \oplus x, x \oplus y)$,
+$s(4n+2) = (y, 1 \oplus x)$ and $s(4n+3) = (1 \oplus y, 1 \oplus x \oplus y)$.
 
 ## Depends on
 
-- [Meta Automatic One](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
 
 ## Sources
 

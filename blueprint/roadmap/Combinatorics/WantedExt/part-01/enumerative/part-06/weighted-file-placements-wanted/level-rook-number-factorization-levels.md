@@ -5,19 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.levelRookNumber_factorization_levels
 ---
 
-# Level Rook Number factorization levels
+# Level-number factorization of the $m$-level rook polynomial
 
-Barrese, Loehr, Remmel and Sagan, level-number form: for a Ferrers board with `n` columns in
-`Sq_{n,m}` (all heights at most `mn`) and `m ≥ 1`, `p_m(B, x) = ∏_j (x + l_j - m(j - 1))`, where
-`l_j` is the number of cells in the `j`-th level from the top (`0`-indexed `j`: level index
-`n - 1 - j` from the bottom). Hypothesis `b_i ≤ mn` makes the board lie in `n` levels, as in the
-paper's setting; without it the formula fails (`m = 1`, `B = (2)`).
+**Level-number factorization of the $m$-level rook polynomial.** Let $m \ge 1$ and let
+$B = (b_1, \dots, b_n)$ be a Ferrers board, that is $b_1 \le \dots \le b_n$, with $b_i \le mn$ for
+every $i$. Number the rows from $0$ at the bottom, so that column $i$ has the cells in rows
+$0, \dots, b_i - 1$, and for $1 \le j \le n$ let $l_j$ be the number of cells of $B$ whose row $r$
+satisfies $\lfloor r/m \rfloor = n - j$ (the $j$-th level from the top). Then for every integer $x$,
+
+$$
+\sum_{k=0}^{n} r_{k,m}(B)\, x\downarrow_{n-k,m} = \prod_{j=1}^{n} \bigl(x + l_j - m(j-1)\bigr),
+$$
+
+where $r_{k,m}(B)$ is the $k$-th $m$-level rook number of $B$ and
+$x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
+
+The bound $b_i \le mn$ makes $B$ lie in $n$ levels, as in the paper's setting; without it the
+formula fails ($m = 1$, $B = (2)$).
 
 ## Depends on
 
-- [Ferrers Board Cells](ferrers-board-cells.md)
-- [Level Rook Number](level-rook-number.md)
-- [M Falling Factorial](m-falling-factorial.md)
+- [Cells of a Ferrers board](ferrers-board-cells.md)
+- [Level rook number](level-rook-number.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_upper_half
 ---
 
-# Corollary 40
+# Generating sum of the upper half of a trinomial row
 
-**Corollary 40.** For complex `w`,
-`∑_{k=0}^{n} binom(n, n-k)_2 w^{n+k} = (1+w+w^2)^n/2 + binom(n, n)_2 w^n/2 + ((w^2-1)/2) ∑_{k=0}^{n-1} binom(k, k)_2 (1+w+w^2)^{n-1-k} w^k`.
+**Generating sum of the upper half of a trinomial row.** Write $\binom{n}{k}_2$ for the
+trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For every natural number $n$
+and every complex number $w$,
+
+$$\sum_{k=0}^{n} \binom{n}{n-k}_2 w^{n+k} = \frac{(1+w+w^2)^n}{2} + \frac{\binom{n}{n}_2 w^n}{2} +
+\frac{w^2-1}{2} \sum_{k=0}^{n-1} \binom{k}{k}_2 (1+w+w^2)^{n-1-k} w^k.$$
 
 ## Depends on
 

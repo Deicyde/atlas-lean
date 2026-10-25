@@ -12,7 +12,7 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.accFamily_allTrue
 
 ## Depends on
 
-- [Num Vars](../../family/num-vars.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
 - [Enc](../part-01/enc.md)
 - [The accept family](acc-family.md)
 - [Layout](../part-01/layout.md)
@@ -20,9 +20,9 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.accFamily_allTrue
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
-- [Row W](../../family/row-w.md)
-- [X Idx](../../family/x-idx.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Variables per time step](../../family/row-w.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [N](../part-01/n.md)
 - [Acc code](acc-code-2.md)
 - [Acode](acode.md)

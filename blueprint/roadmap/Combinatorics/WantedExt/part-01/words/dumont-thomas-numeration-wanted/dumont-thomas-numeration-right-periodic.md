@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomas_numeration_rightPeriodic
 ---
 
-# Dumont Thomas numeration right Periodic
+# Dumont–Thomas numeration for right-infinite periodic points
 
-Dumont–Thomas numeration for right-infinite periodic points: let `η` be a substitution
-with growing letter `a`, `u ∈ Per_{ℤ≥0}(η)` with `u₀ = a`, and `p ≥ 1` a period of `u`. For
-every `n ≥ 1` there is a unique `k` with `p ∣ k` and a unique sequence
-`(mᵢ, aᵢ)_{i = 0, …, k-1}` that is `a`-admissible with `m_{k-1} ⋯ m_{k-p} ≠ ε` and
-`u₀ ⋯ u_{n-1} = η^{k-1}(m_{k-1}) ⋯ η⁰(m₀)`. The periodicity `η^p(u) = u` is stated prefixwise;
-sequence uniqueness is equality at the indices `0, …, k-1`.
+**Dumont–Thomas numeration for right-infinite periodic points.** Let $\eta$ be a
+substitution on an alphabet $A$, let $a \in A$ be a growing letter, i.e.
+$|\eta^k(a)| \to \infty$, and let $u_0 u_1 u_2 \cdots$ be a right-infinite word over $A$ with
+$u_0 = a$. Let $p \ge 1$ be such that for every $n$ the word $\eta^p(u_0 \cdots u_{n-1})$ is a
+prefix of $u_0 u_1 u_2 \cdots$. Then for every $n \ge 1$ there are a natural number $k$ and an
+$a$-admissible sequence $(m_i, a_i)_{0 \le i \le k-1}$ of pairs of a finite word and a letter
+such that $p$ divides $k$, the word $m_{k-1} \cdots m_{k-p}$ is nonempty, and
+$u_0 \cdots u_{n-1} = \eta^{k-1}(m_{k-1}) \cdots \eta^0(m_0)$. Moreover, if $k'$ and an
+$a$-admissible sequence $(m'_i, a'_i)_{0 \le i \le k'-1}$ have the same properties, then
+$k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i < k$.
 
 ## Depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Substitution](is-substitution.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

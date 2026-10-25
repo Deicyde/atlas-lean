@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.seedAutomaton_nil
 ---
 
-# Seed Automaton nil
+# The seed automaton rejects the empty word
 
-The empty word is not accepted by `𝒜_{η,s}`.
+**The seed automaton rejects the empty word.** Let $\eta$ send each letter of an alphabet
+$A$ to a finite word over $A$, and let $a, b \in A$. The automaton $\mathcal{A}_{\eta,s}$ of
+the seed $s = b|a$ does not accept the empty word.
 
 ## Depends on
 
-- [Seed Automaton](seed-automaton.md)
+- [Seed automaton](seed-automaton.md)
 
 ## Sources
 

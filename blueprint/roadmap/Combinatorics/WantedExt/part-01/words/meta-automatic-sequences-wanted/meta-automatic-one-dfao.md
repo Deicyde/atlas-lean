@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticOne_dfao
 ---
 
-# Meta Automatic One dfao
+# An automaton for the meta-automatic sequence $\mathcal{M}_1$
 
-Theorem 13: `ℳ₁` is `4`-automatic and is computed MSB-first in base `4` by the
-DFAO with states `{0, 1, 2, 3}`, initial state `0`, output `τ(q) = q mod 2`, and
-transitions `δ(0, ·) = 0112`, `δ(1, ·) = 1230`, `δ(2, ·) = 2301`, `δ(3, ·) = 3023`.
-The run reads `(Nat.digits 4 n).reverse` (most significant digit first).
+**An automaton for the meta-automatic sequence $\mathcal{M}_1$.** The meta-automatic sequence
+$\mathcal{M}_1$ is $4$-automatic. Moreover, let $\delta$ be the transition map on the states
+$\{0, 1, 2, 3\}$ and the digits $\{0, 1, 2, 3\}$ given by $\delta(0, \cdot) = 0112$,
+$\delta(1, \cdot) = 1230$, $\delta(2, \cdot) = 2301$ and $\delta(3, \cdot) = 3023$, where the
+symbol at position $d$ (counted from $0$) of the word listed for $q$ is $\delta(q, d)$. For every
+$n \in \mathbb{N}$, let $q_n$ be the state reached by starting in state $0$ and reading the
+base-$4$ digits of $n$ with $\delta$, most significant digit first (no digits when $n = 0$).
+Then, reading the values of $\mathcal{M}_1$ as $0$ and $1$, $\mathcal{M}_1(n) = q_n \bmod 2$.
 
 ## Depends on
 
 - [Automatic sequences via finite automata](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
-- [Meta Automatic One](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
 
 ## Sources
 

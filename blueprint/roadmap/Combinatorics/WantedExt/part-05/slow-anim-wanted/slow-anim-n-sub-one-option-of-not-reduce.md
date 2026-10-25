@@ -5,23 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_n_sub_one_option_of_not_reduced
 ---
 
-# Slow ANim n sub one option of not reduced
+# Options with reduction in Slow {n - 1}-Nim
 
-Options with reduction in `SN(n, n - 1)` (`n ≥ 2`, `k = n - 1`). Let `p` be reduced with
-`s = Σ(p) mod 2k`, `o` odd stacks, maximum `M` attained by `α` stacks, and let `p'` (a move on
-`k` stacks) need reduction. Then `M` is even if `s < k` and odd otherwise, and:
-if `s ≢ 0 (mod k)`, `r(p') = p - 1` (every stack lowered by one), `o' = n - o` and
-`s' = s + k - 1` for `s < k`, `s' = s - (k + 1)` for `s > k`; if `s ≡ 0 (mod k)`, `r(p')` lowers
-the maximal stacks by two and the others by one, and for `s = 0`, `α ≤ min(n - o, n - 2)` and
-`(s', o') = (k - 1 - α, n - o - α)`, while for `s = k`, `α ≤ min(o, n - 2)` and
-`(s', o') = (2k - 1 - α, n - o + α)`. Stacks are labelled, so the paper's canonical-form display
-of `r(p')` is written stackwise.
+**Options with reduction in Slow {n - 1}-Nim.** Let $n \ge 2$, $k = n - 1$ and $A = \{k\}$.
+Let $p$ be a reduced position of Slow$A$-Nim on $n$ stacks, with $s = (p_1 + \dots + p_n) \bmod 2k$,
+$o$ odd stacks, and maximum $M = \max_i p_i$ attained by $\alpha$ stacks. Let $p'$ be obtained
+from $p$ by playing on a set $S$ of $k$ stacks, each holding at least one token in $p$, and
+suppose that $p'$ is not reduced. Write $r = r(p')$ for its reduction,
+$s' = (r_1 + \dots + r_n) \bmod 2k$ and $o'$ for the number of odd stacks of $r$. Then $M$ is
+even if $s < k$ and odd if $s \ge k$. If $s \not\equiv 0 \pmod k$, then $r_i = \max(p_i - 1, 0)$
+for every stack $i$, $o' = n - o$, and $s' = s + k - 1$ if $s < k$, $s' = s - (k + 1)$ if
+$s > k$. If $s \equiv 0 \pmod k$, then $r_i = \max(p_i - 2, 0)$ for the stacks with $p_i = M$
+and $r_i = \max(p_i - 1, 0)$ for the others; moreover, if $s = 0$ then
+$\alpha \le \min(n - o, n - 2)$, $s' = k - 1 - \alpha$ and $o' = n - o - \alpha$, and if $s = k$
+then $\alpha \le \min(o, n - 2)$, $s' = 2k - 1 - \alpha$ and $o' = n - o + \alpha$.
+
+Stacks are labelled, so the paper's canonical-form display of $r(p')$ is written stackwise.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
-- [Slow ANim After](slow-anim-after.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
+- [Playing on a set of stacks](slow-anim-after.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_seven
 ---
 
-# Graph Ramsey three seven
+# The value of $R(3, 7)$
 
-`R(3,7) = 23`.
+**The value of $R(3, 7)$.** The classical Ramsey number $R(3, 7)$ equals $23$.
 
 ## Depends on
 

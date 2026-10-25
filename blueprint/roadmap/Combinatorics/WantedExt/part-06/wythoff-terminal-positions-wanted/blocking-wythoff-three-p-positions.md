@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.blockingWythoff_three_pPositions
 ---
 
-# Blocking Wythoff three p Positions
+# Larsson's P-positions of Blocking Wythoff Nim with two blocked options
 
-Theorem 28 (Larsson): the P-positions of `W³` (the previous player may forbid two options)
-are `R₃`: every position of `R₃` has at most two Wythoff options in `R₃`, and every position
-outside `R₃` has at least three.
+**Larsson's P-positions of Blocking Wythoff Nim with two blocked options.** Let $R_3$
+consist of $(0, 0)$ and, for every $n \ge 0$, the positions $(n, 2n + 1)$, $(2n + 1, n)$,
+$(n, 2n + 2)$ and $(2n + 2, n)$. A Wythoff move from a position of two piles removes a positive
+number of tokens from one pile, or the same positive number from both. Then every position in
+$R_3$ has at most two Wythoff moves to positions in $R_3$, and every position outside $R_3$ has
+at least three Wythoff moves to positions in $R_3$.
+
+Hence $R_3$ is the set of P-positions of $W^3$, Wythoff's game in which the previous player may
+forbid two options.
 
 ## Depends on
 
-- [Larsson Set Three](larsson-set-three.md)
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Larsson's set $R_3$](larsson-set-three.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
 
 ## Sources
 

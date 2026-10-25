@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.maximumNim_sub_div_sub_one_eq
 ---
 
-# Maximum Nim sub div sub one eq
+# Floor identity for non-multiples in Maximum Nim
 
-Lemma 2: when `k ≥ 2`, positive `x` is not divisible by `k`, subtracting
-`⌊x/k⌋` and one from `x` equals `⌊(k-1)x/k⌋`. Natural division is the indicated
-floor and `¬ k ∣ x` is “not a multiple”; there is no deviation.
+**Floor identity for non-multiples in Maximum Nim.** Let $k \ge 2$ and $x$ be natural numbers
+such that $x$ is not a multiple of $k$. Then
+$x - \lfloor x/k \rfloor - 1 = \lfloor (k-1)x/k \rfloor$.
 
 ## Depends on
 

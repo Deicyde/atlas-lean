@@ -5,20 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciSucc_record_eventually_contains
 ---
 
-# Tribonacci Succ record eventually contains
+# Late records use $T_{P(t)}$ and $T_{Q(t)}$
 
-Records of `out(n) - α n` (notation as in `tribonacciSucc_record_indices`). Part 3: for
-every `t > 1` all sufficiently late positive records use `T_{P(t)}` in their Tribonacci
-representation, and all sufficiently late negative records use `T_{Q(t)}` (the record's
-"(negative) ... contains `P(t)`" is read as `Q(t)` for negative records, following the
-paper's "similar statements are true for negative differences": by part 1 a negative record
-uses only indices in `Q`).
+**Late records use $T_{P(t)}$ and $T_{Q(t)}$.** Let $T_n$ be the Tribonacci numbers
+($T_0 = T_1 = 0$, $T_2 = 1$, $T_{n+3} = T_{n+2} + T_{n+1} + T_n$) and let $\alpha$ be a real
+number with $\alpha^3 = \alpha^2 + \alpha + 1$. For each $n$ fix a Tribonacci representation
+$R(n) = (r_0, r_1, \dots, r_{\ell-1})$ of $n$: digits in $\{0, 1\}$ with no three consecutive
+ones and $n = \sum_i r_i T_{i+3}$. Let $\mathrm{out}(n) = \sum_i r_i T_{i+4}$ be the Tribonacci
+successor of $n$. Call $n$ a positive record if $n > 0$ and
+$\mathrm{out}(m) - \alpha m < \mathrm{out}(n) - \alpha n$ for every $m < n$, and a negative
+record if $n > 0$ and $\mathrm{out}(n) - \alpha n < \mathrm{out}(m) - \alpha m$ for every
+$m < n$. Let $P(1) < P(2) < \cdots$ list the indices $i$ with $T_{i+1} - \alpha T_i > 0$, and
+$Q(1) < Q(2) < \cdots$ those with $T_{i+1} - \alpha T_i < 0$. Let $t > 1$. If
+$n_0 < n_1 < \cdots$ are the positive records, there is $N_0$ such that for every $N > N_0$ the
+representation $R(n_N)$ has digit $1$ at index $P(t) - 3$, that is, it uses $T_{P(t)}$. If
+$n'_0 < n'_1 < \cdots$ are the negative records, there is $N_0$ such that for every $N > N_0$
+the representation $R(n'_N)$ has digit $1$ at index $Q(t) - 3$, that is, it uses $T_{Q(t)}$.
+
+The paper states part 3 for negative records with $P(t)$; following its remark that similar
+statements hold for negative differences, it is read with $Q(t)$, since a negative record uses
+only indices $i$ with $T_{i+1} - \alpha T_i < 0$ (Proposition 4, part 1).
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 - [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

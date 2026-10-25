@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.BusyBeaver.machineCode
 ---
 
-# Machine Code
+# Machine code
 
-A code for a machine, as a natural number: the pair of its state
-count and its index in an enumeration of all machines with that many
-states.
+**Machine code.** The code of a machine $M$ with $n$ working states is the natural number that
+encodes the pair $(n, i)$ under a fixed pairing bijection
+$\mathbb{N} \times \mathbb{N} \to \mathbb{N}$, where $i$ is the index of $M$ in a fixed enumeration
+of the finitely many machines with $n$ working states.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Move](move.md)
+- [Head movement](move.md)
 
 ## Sources
 

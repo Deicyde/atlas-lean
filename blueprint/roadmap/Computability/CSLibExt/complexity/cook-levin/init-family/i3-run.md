@@ -8,48 +8,58 @@ lean: Cslib.Complexity.CookLevin.InitFamily.i3_run
 
 # The I3 loop
 
-**The I3 loop.** With `Xn = r` and the first `r` input codes (reversed) on the input stack, it
-emits the I3 unit clauses for depths `j < r` (ascending) and exits to the I2 loops with the input
-stack empty.
+**The I3 loop.** Let $L$ be a layout with $g$ symbol codes, consider the init generator for a
+start code, a stack $k_0$ and a list of $\ell$ certificate codes, and let
+$x = (x_0, \dots, x_{s-1})$ be a list of codes $x_j < g$. Suppose its counters $F$ have $Q$,
+$\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$, $\mathrm{CB}$ and $P$ equal to $0$,
+$\mathrm{Vc} = V$, $\mathrm{Gc} = g$ and $\mathrm{ZA} = Z$, that $jg + Z + g \le V$ for every
+$j < s$, and that $s \le N_b$. Then for every $r \le s$, every output $o$ and every flag $v$, the
+generator, started at the head of the I3 loop with flag $v$, the counters of $F$ except
+$\mathrm{Xn} = r$, output $o$, and $x_{r-1}, \dots, x_1, x_0$ on its input stack (top first),
+reaches in at most $r\beta + 1$ steps the head of the I2 loop over the stacks above $k_0$, with
+flag false, the counters of $F$ except $\mathrm{Xn} = 0$, an empty input stack, and output
+$e_0 e_1 \cdots e_{r-1}$ followed by $o$. Here $e_j$ is the encoding of the dense clause over
+$V$ variables whose only literal is the positive literal of variable $jg + Z + x_j$, and
+$\beta = 3V^2 + 12V + (\ell + 2)(6V + 9) + (2g + 4)N_b + g + 10$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
-- [Dense Clause](../family/dense-clause.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [IK](ik.md)
-- [IΓ](i.md)
-- [Lb](lb.md)
-- [PH](ph.md)
-- [Rest](rest.md)
-- [Body B](body-b.md)
-- [Emb](emb.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Dense clause from a list of literals](../family/dense-clause.md)
+- [Counters of the initial-row generator](ck.md)
+- [Labels of the initial-row generator](gl.md)
+- [Stacks of a counter machine with an input stack](ik.md)
+- [Alphabets of a counter machine with an input stack](i.md)
+- [Labels of the initial-row generator](lb.md)
+- [Loop phases of the initial-row generator](ph.md)
+- [Empty scratch counters](rest.md)
+- [Step bound for one loop iteration (initial-row generator)](body-b.md)
+- [Stacks of a counter machine with an extra input stack](emb.md)
 - [The generator](iprog.md)
 - [Encode Clause](../../dense-sat/encode-clause.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SΓ](../counter-view/s.md)
-- [CL](cl.md)
-- [Bc](bc.md)
-- [Nl](nl.md)
-- [Off](off.md)
-- [Miss](miss.md)
-- [Next C](next-c.md)
-- [Rd0](rd0.md)
-- [LS](ls.md)
-- [PS1](ps1.md)
-- [PS2](ps2.md)
-- [Clause B](clause-b.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Base counter of a clause kind (initial-row generator)](bc.md)
+- [Number of literals of a clause kind](nl.md)
+- [Literal offsets](off.md)
+- [Label after a failed read test](miss.md)
+- [Label after a clause](next-c.md)
+- [The first read test](rd0.md)
+- [Stages of the literal routine](ls.md)
+- [Labels of the first precomputation part](ps1.md)
+- [Labels of the second precomputation part](ps2.md)
+- [Step bound for one clause (initial-row generator)](clause-b.md)
 - [Clause run](clause-run.md)
-- [Clits](clits.md)
-- [I3pre run](i3pre-run.md)
-- [Lift E](lift-e.md)
+- [Literals of a clause kind](clits.md)
+- [Counter part of one I3 iteration](i3pre-run.md)
+- [The counter stacks inside the generator's stacks](lift-e.md)
 - [Prog](prog.md)
 - [The read chain](read-run.md)
 - [Run lifting](run-lift.md)

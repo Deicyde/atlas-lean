@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.subword_run_iff_letterPosition_diff
 ---
 
-# Lemma 13
+# Runs of one letter and gaps between letter positions
 
-**Lemma 13.** For `w ∈ a𝒲` and `k ≥ 1`: `b^k` is a subword of `w` iff
-`sup Δp_a > k` iff `Δp_b` takes the value one at least `k - 1` times in a row; and `a^k` is a
-subword iff `Δp_a` takes the value one at least `k - 1` times in a row.
+**Runs of one letter and gaps between letter positions.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$
+be an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often and
+$\ell_0 = a$. For a letter $\alpha$ and $n \ge 1$, let $p_\alpha(n)$ be the position of the $n$-th
+occurrence of $\alpha$ in $w$, counting positions from $0$. Let $k \ge 1$. Then the following are
+equivalent: there is $i$ with $\ell_{i+j} = b$ for all $0 \le j < k$ (the block $b^k$ occurs in
+$w$); there is $n \ge 1$ with $p_a(n+1) - p_a(n) > k$; and there is $n \ge 1$ with
+$p_b(n+j+1) - p_b(n+j) = 1$ for all $0 \le j < k - 1$. Moreover, there is $i$ with
+$\ell_{i+j} = a$ for all $0 \le j < k$ (the block $a^k$ occurs in $w$) if and only if there is
+$n \ge 1$ with $p_a(n+j+1) - p_a(n+j) = 1$ for all $0 \le j < k - 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

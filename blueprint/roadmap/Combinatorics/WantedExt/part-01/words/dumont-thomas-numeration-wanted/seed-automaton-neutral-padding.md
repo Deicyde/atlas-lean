@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.seedAutomaton_neutral_padding
 ---
 
-# Seed Automaton neutral padding
+# Neutral words of the seed automaton
 
-`W_min` and `W_max` are neutral words: for `w ∈ ℒ(𝒜_{η,s})` and every `i ≥ 0`,
-`𝒜_{η,s}(0 v) = 𝒜_{η,s}(0 (W_min)^i v)` and `𝒜_{η,s}(1 v) = 𝒜_{η,s}(1 (W_max)^i v)`, where
-`W_min = 0^p` and `W_max = tail_{η,p,u₋₁}(|η^p(u₋₁)| - 1)` (`lastLetterDigits`).
+**Neutral words of the seed automaton.** Let $\eta$ be a substitution on an alphabet $A$,
+and let $u : \mathbb{Z} \to A$ be a two-sided periodic point of $\eta$ whose least period is
+$p$ and whose seed letters $u_{-1}$ and $u_0$ are growing ($|\eta^k(u_{-1})| \to \infty$ and
+$|\eta^k(u_0)| \to \infty$ as $k \to \infty$). Let $\mathcal{A}_{\eta,s}$ be the automaton of
+the seed $s = u_{-1}|u_0$, let $W_{\min} = 0^p$, and let
+$W_{\max} = \mathrm{last}_{\eta,p}(u_{-1})$ be the digit word along last letters with $p$ steps
+starting from $u_{-1}$. Then for every word $v$ of natural numbers and every $i \in \mathbb{N}$:
+if $\mathcal{A}_{\eta,s}$ accepts $0v$, then it accepts $0\,W_{\min}^i\,v$ with the same output;
+and if $\mathcal{A}_{\eta,s}$ accepts $1v$, then it accepts $1\,W_{\max}^i\,v$ with the same
+output.
 
 ## Depends on
 
-- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
-- [Last Letter Digits](last-letter-digits.md)
-- [Seed Automaton](seed-automaton.md)
+- [Two-sided periodic points with growing seed](is-periodic-point-with-growing-seed.md)
+- [Digit word along last letters](last-letter-digits.md)
+- [Seed automaton](seed-automaton.md)
 
 ## Sources
 

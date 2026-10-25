@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomasLanguage
 ---
 
-# Dumont Thomas Language
+# The Dumont–Thomas image language
 
-The image language `⋃_{ℓ ∈ ℕ} ℒ_{ℓp+1}(𝒜_{η,s}) \ {0 W_min, 1 W_max} 𝒟*`: digit words
-accepted by `𝒜_{η,s}` (`s = u₋₁|u₀`) whose length is `ℓp + 1`, which do not start with
-`0 ⊙ 0^p` and do not start with `1 ⊙ W_max`.
+**The Dumont–Thomas image language.** Let $\eta$ send each letter of an alphabet $A$ to a
+finite word over $A$, let $u : \mathbb{Z} \to A$ and let $p \in \mathbb{N}$. Write
+$\mathcal{A}_{\eta,s}$ for the seed automaton of $\eta$ with seed $s = u_{-1} | u_0$, and
+$W_{\max}$ for the digit word obtained by following the last letter from $u_{-1}$ for at most
+$p$ steps: at a letter $c$ it records $|\eta(c)| - 1$ and moves to the last letter of
+$\eta(c)$, stopping early if $\eta(c)$ is empty. The language is the set of finite words $w$
+over $\mathbb{N}$ such that $|w| = \ell p + 1$ for some $\ell \in \mathbb{N}$, $w$ is accepted
+by $\mathcal{A}_{\eta,s}$, $w$ does not start with the word $0 0^p$, and $w$ does not start
+with the word $1 W_{\max}$.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Last Letter Digits](last-letter-digits.md)
-- [Seed Automaton](seed-automaton.md)
+- [Digit word along last letters](last-letter-digits.md)
+- [Seed automaton](seed-automaton.md)
 
 ## Sources
 

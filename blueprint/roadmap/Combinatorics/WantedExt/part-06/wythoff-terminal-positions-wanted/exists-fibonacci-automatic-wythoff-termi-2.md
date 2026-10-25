@@ -15,9 +15,9 @@ for a Fibonacci-automatic `g₄ : ℕ → {0, 1, 2}`. The paper's `g₄` is the 
 
 ## Depends on
 
-- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [Fibonacci-automatic sequences](is-fibonacci-automatic.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Sources
 

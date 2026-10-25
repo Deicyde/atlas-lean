@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.stirling_second_lucky_pref
 ---
 
-# Stirling second lucky pref
+# Preference of the second lucky car
 
-Let `w ∈ Q_n` with `lucky(w) ≥ 2` and `x` the second-smallest element of
-`Lucky(w)`. If `w(1) = 1`, then `x ≤ w(x) ≤ n`.
+**Preference of the second lucky car.** Let $w = w_1 \cdots w_{2n}$ be a Stirling permutation
+of order $n$, read as a parking function of length $2n$, and let $x$ be a lucky car of $w$ such
+that exactly one lucky car of $w$ is smaller than $x$, so that $x$ is the second-smallest element
+of the lucky set $\mathrm{Lucky}(w)$. If $w_1 = 1$, then $x \le w_x \le n$.
 
 ## Depends on
 

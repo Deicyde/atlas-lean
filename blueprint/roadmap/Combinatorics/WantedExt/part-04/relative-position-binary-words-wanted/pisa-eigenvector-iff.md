@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.pisa_eigenvector_iff
 ---
 
-# Theorem 63
+# Integer matrices with a Pisa eigenvector
 
-**Theorem 63.** Let `j, m ≥ 1`, `τ_{j,m} = (j + √(j² + 4m))/2` and `M ∈ M₂(ℤ)`.
-(a) If `j² + 4m` is not a perfect square, `[τ_{j,m} 1]ᵀ` is a right eigenvector of `M` iff
-`M = [[t + sj, ms], [s, t]]` for some integers `s, t`. (b) If `j² + 4m = r²`, it is a right
-eigenvector iff `M = [[s, t], [u, v]]` with `u(j+r)² + 2(v-s)(j+r) - 4t = 0`.
-Corrected reading in (b): `r` is the nonnegative root, `r = √(j² + 4m)`, as the paper's proof
-uses `τ_{j,m} = (j + r)/2`. For the negative root the printed statement fails: `j = 1`, `m = 2`,
-`r = -3`, `M = [[0, 0], [1, 1]]` satisfies `u(j+r)² + 2(v-s)(j+r) - 4t = 4 - 4 - 0 = 0`, but
-`τ_{1,2} = 2` and `M [2, 1]ᵀ = [0, 3]ᵀ` is not a multiple of `[2, 1]ᵀ`.
+**Integer matrices with a Pisa eigenvector.** Let $j, m \ge 1$ be integers, let
+$\tau_{j,m} = (j + \sqrt{j^2 + 4m})/2$, and let $M$ be a $2 \times 2$ integer matrix.
+(a) If $j^2 + 4m$ is not a perfect square, then $(\tau_{j,m}, 1)^T$ is a right eigenvector of $M$
+over $\mathbb{R}$ if and only if $M$ has rows $(t + sj, ms)$ and $(s, t)$ for some integers $s, t$.
+(b) If $j^2 + 4m = r^2$ with $r$ a natural number, then $(\tau_{j,m}, 1)^T$ is a right
+eigenvector of $M$ over $\mathbb{R}$ if and only if $M$ has rows $(s, t)$ and $(u, v)$ with
+$u(j+r)^2 + 2(v-s)(j+r) - 4t = 0$.
+
+In (b) $r$ is the nonnegative root, as the paper's proof uses $\tau_{j,m} = (j + r)/2$. For the
+negative root the printed statement fails: for $j = 1$, $m = 2$, $r = -3$, the matrix $M$ with
+rows $(0, 0)$ and $(1, 1)$ satisfies $u(j+r)^2 + 2(v-s)(j+r) - 4t = 4 - 4 - 0 = 0$, but
+$\tau_{1,2} = 2$ and $M (2, 1)^T = (0, 3)^T$ is not a multiple of $(2, 1)^T$.
 
 ## Depends on
 

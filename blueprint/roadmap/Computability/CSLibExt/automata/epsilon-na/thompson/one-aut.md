@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Automata.Thompson.oneAut
 ---
 
-# One Aut
+# One-state automaton
 
-One state, start and accepting, and no moves.
+**One-state automaton.** The ε-NFA over the alphabet $\alpha$ with a single state, which is both
+its start state and its accepting state, and no moves at all (neither letter moves nor
+ε-moves).
 
 ## Depends on
 

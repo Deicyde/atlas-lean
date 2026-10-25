@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kimberlingWord
 ---
 
-# Kimberling Word
+# Kimberling's word
 
-Kimberling's word `k = k₁k₂k₃⋯ = 1101101111⋯` (OEIS A285431), the common extension of the
-blocks `K_n`, indexed from `0`: `kimberlingWord i = k_{i+1}`. The letter is read from
-`K_{⌊log₂ i⌋ + 1}`, which has length at least `2^(⌊log₂ i⌋ + 1) > i`; by
-`kimberlingWord_eq_getD` every block of length `> i` gives the same letter.
+**Kimberling's word.** Let $K_n$ be the $n$-th Kimberling block, a finite word over
+$\{0, 1\}$. Kimberling's word $k = k_1 k_2 k_3 \cdots = 1101101111\cdots$ (OEIS A285431) is the
+infinite word over $\{0, 1\}$ whose letter $k_{i+1}$, for $i \ge 0$, is the $(i+1)$-th letter of
+$K_m$, where $m = \lfloor \log_2 i \rfloor + 1$ for $i \ge 1$ and $m = 1$ for $i = 0$. The block
+$K_m$ has length at least $2^m > i$, so this letter exists.
+
+Every block $K_n$ is a prefix of $k$, so $k$ is the common extension of the blocks.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Kimberling Block](kimberling-block.md)
+- [Kimberling's blocks](kimberling-block.md)
 
 ## Sources
 

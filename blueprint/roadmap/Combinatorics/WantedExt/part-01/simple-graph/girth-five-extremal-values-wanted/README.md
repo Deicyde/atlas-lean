@@ -4,6 +4,6 @@ navigation: module
 
 # Girth Five Extremal Values
 
-- [Girth Five Extremal Number](girth-five-extremal-number.md)
-- [Girth Five Extremal Number one to twenty](girth-five-extremal-number-one-to-twenty.md)
-- [Girth Five Extremal Number fifty](girth-five-extremal-number-fifty.md)
+- [Girth-five extremal number](girth-five-extremal-number.md)
+- [Girth-five extremal numbers up to twenty vertices](girth-five-extremal-number-one-to-twenty.md)
+- [Girth-five extremal number on fifty vertices](girth-five-extremal-number-fifty.md)

@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.BusyBeaver.DecidesHalting
 ---
 
-# Decides Halting
+# Theories deciding halting at a state count
 
-The theory decides halting for every `n`-state machine: for each
-machine it proves its halting sentence or its non-halting sentence.
+**Theories deciding halting at a state count.** A formal theory $T$ decides halting for
+$n$-state machines when, for every $n$-state machine $M$, $T$ proves the halting sentence of $M$
+or $T$ proves the non-halting sentence of $M$.
 
 ## Depends on
 
-- [Formal Theory](formal-theory.md)
+- [Formal theory](formal-theory.md)
 
 ## Proof depends on
 
-- [Machine](machine.md)
-- [Halts Sentence](halts-sentence.md)
-- [Not Halts Sentence](not-halts-sentence.md)
+- [Busy Beaver machine](machine.md)
+- [Halting sentence of a machine](halts-sentence.md)
+- [Non-halting sentence of a machine](not-halts-sentence.md)
 
 ## Sources
 

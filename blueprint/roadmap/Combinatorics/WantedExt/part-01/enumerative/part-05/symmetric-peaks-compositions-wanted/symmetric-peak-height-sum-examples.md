@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.symmetricPeakHeightSum_examples
 ---
 
-# Symmetric Peak Height Sum examples
+# Symmetric peak examples among the compositions of 5
 
-The paper's examples for `n = 5`: `131`, `1211` and `1121` have symmetric peak
-heights `2`, `1`, `1`, and `11111` has none.
+**Symmetric peak examples among the compositions of 5.** The symmetric peak height sums of
+the words $1\,3\,1$, $1\,2\,1\,1$, $1\,1\,2\,1$ and $1\,1\,1\,1\,1$ are $2$, $1$, $1$ and $0$
+respectively, and the word $1\,3\,1$ has exactly one symmetric peak.
 
 ## Depends on
 
-- [Symmetric Peak Count](symmetric-peak-count.md)
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Number of symmetric peaks](symmetric-peak-count.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
 
 ## Sources
 

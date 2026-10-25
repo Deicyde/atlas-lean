@@ -5,25 +5,28 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.theorem_1_1
 ---
 
-# Theorem 1 1
+# Thresholds versus fractional expectation-thresholds
 
-Statement of Theorem 1.1:
+**Thresholds versus fractional expectation-thresholds.** Let $K$ be the universal real
+constant still to be supplied. For every finite set $X$ and every increasing family $\mathcal F$
+of subsets of $X$ (closed under taking supersets) with $\ell(\mathcal F) \ge 2$, where
+$\ell(\mathcal F)$ is the size of a largest minimal element of $\mathcal F$,
 
-There exists a universal constant `K` such that for any finite set `X` and any increasing
-collection of sets `𝓕` such that `l(𝓕)` is at least `2`,
+$$p_c(\mathcal F) \le K \, q_f(\mathcal F) \log \ell(\mathcal F),$$
 
-`p_c(𝓕) ≤ K * q_f(𝓕) * log l(𝓕)`.
+where $p_c$ is the threshold, $q_f$ the fractional expectation-threshold and $\log$ the
+natural logarithm.
 
-Note: The assumption that `l(𝓕)` is at least `2` is not explicitly in the paper but is needed
-because if `l(𝓕) = 1` then `Real.log (l 𝓕) = 0`, but `p_c 𝓕 ∈ (0,1)` (so the inequality clearly
-cannot hold).
+The hypothesis $\ell(\mathcal F) \ge 2$ is not explicit in the paper but is needed: if
+$\ell(\mathcal F) = 1$ then $\log \ell(\mathcal F) = 0$, while $p_c(\mathcal F) \in (0, 1)$,
+so the inequality cannot hold.
 
 ## Depends on
 
-- [K](k.md)
-- [L](l.md)
-- [P c](p-c.md)
-- [Q f](q-f.md)
+- [The constant of the Frankston–Kahn–Narayanan–Park theorem](k.md)
+- [Size of a largest minimal element, $\ell(\mathcal F)$](l.md)
+- [The threshold $p_c(\mathcal F)$](p-c.md)
+- [The fractional expectation-threshold $q_f(\mathcal F)$](q-f.md)
 
 ## Sources
 

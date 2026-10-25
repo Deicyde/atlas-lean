@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.wythoffTerminal_pPositions
 ---
 
-# Wythoff Terminal p Positions
+# P-positions of Wythoff's game with terminal positions
 
-Theorem 17: for `ℓ ≥ 1`, the non-terminal P-positions of `K^ℓ` are exactly the `(a_n, b_n)`
-and `(b_n, a_n)` of the mex recursion; stated as: terminal positions plus these pairs form a
-stable (no move inside) and absorbing (a move into it from outside) set of the move relation, which determines the P-positions
-(`MetaMathlibExt.pPositions_unique`).
+**P-positions of Wythoff's game with terminal positions.** Let $\ell \ge 1$. Let $a_n$ be the
+least natural number $m > \ell$ with $m \ne a_i$ and $m \ne b_i$ for all $i < n$, where
+$b_i = a_i + i + \ell + 1$. Let $P$ be the set of positions $(x, y)$ with $x + y \le \ell$,
+together with the pairs $(a_n, b_n)$ and $(b_n, a_n)$ for $n \ge 0$. Then $P$ is stable, meaning
+no move of $K^\ell$ leads from a position of $P$ to a position of $P$, and absorbing, meaning
+from every position outside $P$ some move of $K^\ell$ leads into $P$.
+
+Since the move relation is well founded, a stable and absorbing set is the set of P-positions,
+so the non-terminal P-positions of $K^\ell$ are exactly the pairs $(a_n, b_n)$ and $(b_n, a_n)$.
 
 ## Depends on
 
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
-- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
+- [Predicted P-positions of $K^\ell$](wythoff-terminal-pset.md)
 
 ## Sources
 

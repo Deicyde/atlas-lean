@@ -12,7 +12,7 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.init_pos
 
 ## Depends on
 
-- [Num Vars](../../family/num-vars.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
 - [Enc](../part-01/enc.md)
 - [The init family](../part-06/init-family.md)
 - [Layout](../part-01/layout.md)
@@ -20,12 +20,12 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.init_pos
 
 ## Proof depends on
 
-- [Inc](../../family/inc.md)
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [Row W](../../family/row-w.md)
-- [X Idx](../../family/x-idx.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Increasing literal positions](../../family/inc.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Variables per time step](../../family/row-w.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [N](../part-01/n.md)
 - [G](../part-01/g.md)
 - [G pos](../part-02/g-pos.md)

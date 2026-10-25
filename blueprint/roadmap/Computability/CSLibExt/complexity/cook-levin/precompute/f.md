@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.FΓ
 ---
 
-# FΓ
+# Alphabets of the full machine
 
-Alphabets of the full machine: raw input `Fin r`, host alphabets, unit counters.
+**Alphabets of the full machine.** For natural numbers $g, r$, the alphabet of a stack of the
+full machine is the host's alphabet with $g$ input codes on each host stack,
+$\{0, 1, \dots, r - 1\}$ on the raw input stack, and the one-point type on each private
+counter.
 
 ## Depends on
 
-- [FK](fk.md)
+- [Stacks of the full machine](fk.md)
 
 ## Proof depends on
 
-- [HK](../assembly/hk.md)
-- [HΓ](../assembly/h.md)
-- [PS](ps.md)
+- [Stacks of the Cook–Levin host machine](../assembly/hk.md)
+- [Alphabets of the Cook–Levin host machine](../assembly/h.md)
+- [Scratch counters of the counter program](ps.md)
 
 ## Sources
 

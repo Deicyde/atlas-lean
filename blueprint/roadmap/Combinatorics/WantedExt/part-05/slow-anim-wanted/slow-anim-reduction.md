@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.slowANimReduction
 ---
 
-# Slow ANim Reduction
+# Reduction of a Slow$A$-Nim position
 
-The reduction `r(p) = p - u(p)`, where `u_i(p)` is the least height of stack `i` over the
-terminal positions reachable from `p`.
+**Reduction of a Slow$A$-Nim position.** Let $A$ be a finite set of natural numbers and let $p$
+be a position of Slow$A$-Nim on $n$ stacks. For each stack $i$, let $u_i(p)$ be the least height
+of stack $i$ over all terminal positions (positions with no moves) reachable from $p$ by a sequence
+of zero or more moves. The reduction of $p$ is the position $r(p)$ with $r(p)_i = p_i - u_i(p)$
+for every stack $i$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
 
 ## Sources
 

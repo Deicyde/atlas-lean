@@ -12,7 +12,7 @@ Update family (`D3Fam` with `na`) is well-formed for every situation.
 
 ## Depends on
 
-- [WF](../../family/wf.md)
+- [Well-formed situation tables for the transition clauses](../../family/wf.md)
 - [Enc](../part-01/enc.md)
 - [La](../part-01/la.md)
 - [Layout](../part-01/layout.md)
@@ -22,7 +22,7 @@ Update family (`D3Fam` with `na`) is well-formed for every situation.
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
 - [G](../part-01/g-2.md)
 - [N](../part-01/n.md)
 - [G](../part-01/g.md)

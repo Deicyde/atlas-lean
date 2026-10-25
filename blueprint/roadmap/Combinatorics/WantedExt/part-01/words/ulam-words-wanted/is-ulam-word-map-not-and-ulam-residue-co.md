@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_map_not_and_ulamResidueCount_eq
 ---
 
-# Is Ulam Word map not and ulam Residue Count eq
+# Complement symmetry of Ulam words
 
-Complement symmetry (corrected reading): if `w ∈ U_n` then its complement `ŵ` is in
-`U_n` with `π(ŵ) = 2ⁿ - 1 - π(w)`; consequently `ρ_{a,N}(n) = ρ_{2ⁿ-1-a,N}(n)`, stated
-with the common denominator `#U_n` cleared.
+**Complement symmetry of Ulam words.** For a word $w$ over $\{0, 1\}$, let $\bar w$ be its
+complement (every letter swapped) and let $\pi(w)$ be the integer whose binary expansion is $w$,
+most significant letter first. If $w$ is an Ulam word of length $n$, then $\bar w$ is an Ulam
+word and $\pi(\bar w) + \pi(w) = 2^n - 1$. Moreover, for all natural numbers $N$ and $n$ and every
+$a \in \mathbb{Z}/N\mathbb{Z}$, the number of Ulam words $w$ of length $n$ with
+$\pi(w) \equiv a \pmod N$ equals the number of Ulam words $w$ of length $n$ with
+$\pi(w) \equiv 2^n - 1 - a \pmod N$.
+
+For $n \ge 1$, writing $\rho_{a,N}(n)$ for the proportion of Ulam words $w$ of length $n$ with
+$\pi(w) \equiv a \pmod N$ among all Ulam words of length $n$, the second statement says
+$\rho_{a,N}(n) = \rho_{2^n-1-a,N}(n)$.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Ulam Residue Count](ulam-residue-count.md)
+- [Ulam words](is-ulam-word.md)
+- [Ulam words in a residue class](ulam-residue-count.md)
 
 ## Sources
 

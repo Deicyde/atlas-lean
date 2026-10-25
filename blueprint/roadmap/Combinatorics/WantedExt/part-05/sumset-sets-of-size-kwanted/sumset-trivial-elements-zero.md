@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.sumsetTrivialElements_zero
 ---
 
-# Sumset Trivial Elements zero
+# No trivial elements for $k = 0$
 
-The empty set (`k = 0`) has no trivial elements.
+**No trivial elements for $k = 0$.** Let $G$ be an additive commutative monoid, $h$ a natural
+number and $a \colon \mathbb{N} \to G$. For $k = 0$, when $\{a_0, \dots, a_{k-1}\}$ is the empty
+set, the set of trivial elements of its $h$-fold sumset is empty.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

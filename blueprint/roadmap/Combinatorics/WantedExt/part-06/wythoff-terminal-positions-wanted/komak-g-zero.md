@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.komakG_zero
 ---
 
-# Komak G zero
+# Value of the Komak sequence at 0
 
-`g(0) = 1`.
+**Value of the Komak sequence at 0.** The sequence $g$ of Komak et al. satisfies
+$g(0) = 1$.
 
 ## Depends on
 
-- [Komak G](komak-g.md)
+- [The Komak sequence $g$](komak-g.md)
 
 ## Sources
 

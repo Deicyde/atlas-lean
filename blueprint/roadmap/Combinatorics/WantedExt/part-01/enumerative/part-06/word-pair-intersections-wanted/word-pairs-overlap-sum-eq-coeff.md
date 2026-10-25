@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.wordPairs_overlap_sum_eq_coeff
 ---
 
-# Word Pairs overlap sum eq coeff
+# Overlap statistic on pairs of words
 
-Theorem 2: for `n, r ≥ 1` and every `q`, the sum of `q^{overlap}` over all pairs of words of
-lengths `n` and `r` over `[k]` is `[x^n y^r] P(x, y, q; k)` with
-`P = ∑_{j=1}^{k} C(k, j) (qj + k - j)y / (1 - (qj + k - j)y) ∑_{n ≥ 1} j! S_{n,j} x^n`.
+**Overlap statistic on pairs of words.** Fix natural numbers $k$, $n \ge 1$, $r \ge 1$ and a
+rational number $q$. For words $u$ and $v$ over an alphabet of $k$ letters, the overlap of
+$(u, v)$ is the number of positions of $v$ whose letter occurs in $u$. Write $[x^m] F$ for the
+coefficient of $x^m$ in a formal power series $F$ over $\mathbb{Q}$, $S(m, j)$ for the Stirling
+numbers of the second kind, and $c_j = qj + k - j$. Then the sum of $q^{\text{overlap}}$ over all
+pairs $(u, v)$ with $u$ of length $n$ and $v$ of length $r$ equals
+$\sum_{j=1}^{k} \binom{k}{j} \, [x^r]\bigl(c_j x \, (1 - c_j x)^{-1}\bigr) \, j! \, S(n, j)$.
 
 ## Depends on
 

@@ -7,51 +7,58 @@ lean: Cslib.Complexity.CookLevin.Assembly.hprog
 
 # The host program
 
-**The host program**: init, update, S-def, shift, accept, each run embedded on its own counter
-block; at each generator's `done` the host chains to the next one.
+**The host program.** Given the five generator programs (update, situation definition, shift,
+accept and init), the host program runs init, then update, then situation definition, then shift,
+then accept. At each label of a generator other than its final label, the host executes that
+generator's statement with the generator's stacks embedded into the host stacks (output onto the
+shared output stack, counters onto the generator's own private counter block, and for init the
+input stack onto the host's input-code stack) and its labels renamed into the host's copy of
+them. At a generator's final label the host performs one chaining step: it resets the Boolean
+state to false and jumps to the start label of the next generator, and after accept it jumps to
+the final host label, where it halts.
 
 ## Depends on
 
-- [CK](../accept/ck.md)
-- [GL](../accept/gl.md)
-- [HK](hk.md)
-- [HL](hl.md)
-- [HΓ](h.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CK](../family/ck.md)
-- [GL](../family/gl.md)
-- [GΓ](../family/g.md)
-- [CK](../init-family/ck.md)
-- [GL](../init-family/gl.md)
-- [IK](../init-family/ik.md)
-- [IΓ](../init-family/i.md)
-- [CK](../shift/ck.md)
-- [GL](../shift/gl.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Labels of the accept generator](../accept/gl.md)
+- [Stacks of the Cook–Levin host machine](hk.md)
+- [Labels of the Cook–Levin host machine](hl.md)
+- [Alphabets of the Cook–Levin host machine](h.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Labels of the clause-family generator](../family/gl.md)
+- [Stack alphabets of the generator](../family/g.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
+- [Labels of the initial-row generator](../init-family/gl.md)
+- [Stacks of a counter machine with an input stack](../init-family/ik.md)
+- [Alphabets of a counter machine with an input stack](../init-family/i.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
+- [Labels of the cell-shift generator](../shift/gl.md)
 
 ## Proof depends on
 
-- [AK](../accept/ak.md)
-- [LS](../accept/ls.md)
-- [PS](../accept/ps.md)
-- [Chain](chain.md)
-- [Emb A](emb-a.md)
-- [Emb H](emb-h.md)
-- [Emb I](emb-i.md)
-- [Emb S](emb-s.md)
-- [Emb U](emb-u.md)
-- [MS](../counter-view/ms.md)
-- [LS](../family/ls.md)
-- [PS](../family/ps.md)
-- [CL](../init-family/cl.md)
-- [LS](../init-family/ls.md)
-- [PH](../init-family/ph.md)
-- [PS1](../init-family/ps1.md)
-- [PS2](../init-family/ps2.md)
-- [BD](../shift/bd.md)
-- [CL](../shift/cl.md)
-- [LS](../shift/ls.md)
-- [PS](../shift/ps.md)
+- [Clause kinds of the accept generator](../accept/ak.md)
+- [Stages of the literal routine](../accept/ls.md)
+- [Precomputation stages of the accept generator](../accept/ps.md)
+- [Chaining step of the host program](chain.md)
+- [Embedding of the accept generator into the host](emb-a.md)
+- [Embedding of the shift generator into the host](emb-h.md)
+- [Embedding of the init generator into the host](emb-i.md)
+- [Embedding of the situation-definition generator into the host](emb-s.md)
+- [Embedding of the update generator's stacks into the host](emb-u.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stages of the transition-clause generator's literal routine](../family/ls.md)
+- [Stages of the transition-clause generator's precomputation](../family/ps.md)
+- [Clause kinds of the initial-row generator](../init-family/cl.md)
+- [Stages of the literal routine](../init-family/ls.md)
+- [Loop phases of the initial-row generator](../init-family/ph.md)
+- [Labels of the first precomputation part](../init-family/ps1.md)
+- [Labels of the second precomputation part](../init-family/ps2.md)
+- [Loop-body stages of the cell-shift generator](../shift/bd.md)
+- [Clause kinds of the cell-shift family](../shift/cl.md)
+- [Stages of the cell-shift literal routine](../shift/ls.md)
+- [Precomputation stages of the shift generator](../shift/ps.md)
 - [ST](../shift/st.md)
 - [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 

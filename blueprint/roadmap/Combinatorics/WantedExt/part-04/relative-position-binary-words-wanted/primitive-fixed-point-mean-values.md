@@ -5,22 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.primitive_fixed_point_mean_values
 ---
 
-# Lemma 32
+# Letter frequencies and mean positions of primitive fixed points
 
-**Lemma 32.** Let `ϱ` be a primitive substitution (some power of its substitution matrix is
-positive), `[u 1]ᵀ` a right Perron–Frobenius eigenvector of the substitution matrix (eigenvalue
-`λ`), and `w ∈ 𝒲` a fixed point of `ϱ`. Then `Freq(a) = u/(u+1)`, `Freq(b) = 1/(u+1)`,
-`p_a(n)/n → 1 + 1/u`, `p_b(n)/n → u + 1`, `r(n)/n → u - 1/u`, and all these limits lie in
-`ℚ(λ)`. The Perron–Frobenius condition is stated as `u > 0` and `[u 1]ᵀ` an eigenvector: a
-positive eigenvector of a primitive matrix belongs to the Perron–Frobenius eigenvalue.
+**Letter frequencies and mean positions of primitive fixed points.** Let $\varrho$ be a
+substitution on the letters $a, b$ with substitution matrix $M$, where $M_{11} = |\varrho(a)|_a$,
+$M_{12} = |\varrho(b)|_a$, $M_{21} = |\varrho(a)|_b$ and $M_{22} = |\varrho(b)|_b$ ($|v|_x$ is
+the number of letters $x$ in $v$). Suppose $\varrho$ is primitive (some power of $M$ has all
+entries positive), and let $u > 0$ and $\lambda$ be real numbers with
+$M (u, 1)^T = \lambda (u, 1)^T$. Let $w$ be a one-sided fixed point of $\varrho$ (so
+$\varrho(w) = w$) in which both letters occur infinitely often. Let $N_a(n)$ and $N_b(n)$ be the
+numbers of letters $a$ and $b$ among the first $n$ letters of $w$, let $p_a(n)$ and $p_b(n)$ be
+the positions of the $n$-th $a$ and the $n$-th $b$ in $w$, and let $r(n) = p_b(n) - p_a(n)$.
+Then, as $n \to \infty$, $N_a(n)/n \to u/(u + 1)$, $N_b(n)/n \to 1/(u + 1)$,
+$p_a(n)/n \to 1 + 1/u$, $p_b(n)/n \to u + 1$ and $r(n)/n \to u - 1/u$, and each of these five
+limits lies in the subfield $\mathbb{Q}(\lambda)$ of $\mathbb{R}$.
+
+A positive eigenvector of a primitive matrix belongs to its Perron–Frobenius eigenvalue, so
+$(u, 1)^T$ is a right Perron–Frobenius eigenvector of $M$ and $\lambda$ is its eigenvalue.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Is Substitution Image](is-substitution-image.md)
-- [Letter Count](letter-count.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [Letter-counting function](letter-count.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

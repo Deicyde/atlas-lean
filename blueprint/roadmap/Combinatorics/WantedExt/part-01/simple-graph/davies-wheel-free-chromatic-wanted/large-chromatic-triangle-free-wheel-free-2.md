@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree_holds
 ---
 
-# Large Chromatic Triangle Free Wheel Free holds
+# Davies's theorem on triangle-free wheel-free graphs
 
-Known in the cited paper; the general Lean construction and proof are
-requested here. This theorem request does not supply or assume that proof.
+**Davies's theorem on triangle-free wheel-free graphs.** For every positive integer $k$
+there are a natural number $n$ and a simple graph $G$ on the vertex set $\{0, \dots, n - 1\}$
+such that $G$ contains no triangle, $G$ is wheel-free (it has no induced wheel) and the
+chromatic number of $G$ is at least $k$.
 
 ## Depends on
 
-- [Large Chromatic Triangle Free Wheel Free](large-chromatic-triangle-free-wheel-free.md)
+- [Triangle-free wheel-free graphs of large chromatic number (proposition)](large-chromatic-triangle-free-wheel-free.md)
 
 ## Sources
 

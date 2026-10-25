@@ -13,19 +13,19 @@ coefficients sum to `initBound (uni 1) 1 1 1 1 1 1 1 = 18928`.
 
 ## Depends on
 
-- [Uni](../family/uni.md)
-- [Init Bound](init-bound.md)
+- [Uniform layout](../family/uni.md)
+- [Time bound of the init generator](init-bound.md)
 
 ## Proof depends on
 
-- [Layout](../family/layout.md)
-- [Num Vars](../family/num-vars.md)
-- [Row W](../family/row-w.md)
-- [Body B](body-b.md)
-- [Clause B](clause-b.md)
-- [Lit E](lit-e.md)
-- [Loop B](loop-b.md)
-- [Pre B](pre-b.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Variables per time step](../family/row-w.md)
+- [Step bound for one loop iteration (initial-row generator)](body-b.md)
+- [Step bound for one clause (initial-row generator)](clause-b.md)
+- [Per-literal step cost of the initial-row generator](lit-e.md)
+- [Step bound of one phase loop (initial-row generator)](loop-b.md)
+- [Step bound for the precomputation](pre-b.md)
 
 ## Sources
 

@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_cube_bound_isDenseInCubes
 ---
 
-# Lemma 2
+# A color class is dense in a large subcube (Brown, Lemma 2)
 
-**Lemma 2.** Given `r, t` and `f : ℕ → ℕ`, there is `A` such that every
-`r`-coloring of `[1, A]^t` has a color class `C`, positive integers `d, m` with
-`m > f d`, and a subcube `M ⊆ [1, A]^t` of size `m^t` in which `C` is `d`-dense.
+**A color class is dense in a large subcube (Brown, Lemma 2).** Let $r, t \in \mathbb{N}$ and
+let $f : \mathbb{N} \to \mathbb{N}$. There is $A \in \mathbb{N}$ such that for every coloring of
+$\mathbb{N}^t$ with $r$ colors there are natural numbers $d \ge 1$ and $m > f(d)$, a color $j$, and
+a subcube $M$ of side $m$ with $M \subseteq [1, A]^t$ in which the class of color $j$ is
+$d$-dense. Here $[1, A]^t$ is the set of points $x$ with $1 \le x_i \le A$ for every coordinate $i$.
 
-The paper's "(a smallest)" is omitted: it follows from existence. Colorings are of
-all of `ℕ^t`; only their restriction to `[1, A]^t` matters.
+The paper's "(a smallest)" is omitted: it follows from existence. Only the restriction of the
+coloring to $[1, A]^t$ matters.
 
 ## Depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Lattice Cube](lattice-cube.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

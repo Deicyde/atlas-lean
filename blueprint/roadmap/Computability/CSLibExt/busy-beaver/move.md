@@ -5,9 +5,9 @@ statement: formalized
 lean: Cslib.BusyBeaver.Move
 ---
 
-# Move
+# Head movement
 
-Head movement direction.
+**Head movement.** A head movement is one of exactly two directions: left or right.
 
 ## Depends on
 

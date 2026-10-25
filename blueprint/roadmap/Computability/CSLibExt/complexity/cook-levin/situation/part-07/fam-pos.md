@@ -15,7 +15,7 @@ lean: Cslib.Complexity.CookLevin.Situation.FamPos
 
 ## Proof depends on
 
-- [Dense Clause](../../family/dense-clause.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Faithful](faithful.md)
 - [Clause](../../../dense-sat/clause.md)
 

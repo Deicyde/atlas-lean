@@ -19,7 +19,7 @@ def interEmptyB (g : EncodedCFG T) (D : EncodedDFA T) : Bool :=
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Dfa Starts](dfa-starts.md)
 
 ## Proof depends on

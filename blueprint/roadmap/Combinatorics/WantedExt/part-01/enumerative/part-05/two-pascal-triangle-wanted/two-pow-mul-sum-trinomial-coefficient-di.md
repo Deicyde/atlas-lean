@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_mul_sum_trinomialCoefficient_diagonal_weighted
 ---
 
-# Corollary 33
+# Weighted diagonal sums of trinomial coefficients and the sequence A075115
 
-**Corollary 33.** For `n > 0`,
-`K_n = ∑_{k ≤ 2n/3} binom(n-k, k)_2 n/(n-k) = λ_{3n} / 2^n`, with `λ` the sequence A075115,
-`λ_n = 2λ_{n-1} - 2λ_{n-2} + 2λ_{n-3}`, `λ_0 = 3`, `λ_1 = 2`, `λ_2 = 0` (given by its
-recurrence).
+**Weighted diagonal sums of trinomial coefficients and the sequence A075115.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. Let
+$(\lambda_m)$ be the integer sequence with $\lambda_0 = 3$, $\lambda_1 = 2$, $\lambda_2 = 0$ and
+$\lambda_{m+3} = 2\lambda_{m+2} - 2\lambda_{m+1} + 2\lambda_m$ (OEIS A075115). For every natural
+number $n \ge 1$,
+$2^n \sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} = \lambda_{3n}$.
 
 ## Depends on
 

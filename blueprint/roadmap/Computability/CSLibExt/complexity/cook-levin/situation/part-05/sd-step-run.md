@@ -12,8 +12,8 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.sd_step_run
 
 ## Depends on
 
-- [X Idx](../../family/x-idx.md)
-- [Family](../../family/family.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The transition clause family](../../family/family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](code-holds.md)

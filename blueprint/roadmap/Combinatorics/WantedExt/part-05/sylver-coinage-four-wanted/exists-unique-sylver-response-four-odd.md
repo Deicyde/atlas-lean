@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_sylver_response_four_odd
 ---
 
-# Exists Unique sylver response four odd
+# Sicherman's claim on replies to 4 and an odd number
 
-Sicherman's claim: for odd `x ≥ 5` there is exactly one legal move `q` with `{4, x, q}` a
-P-position, and every such `q` satisfies `q ≡ x - 2 (mod 4)`.
+**Sicherman's claim on replies to 4 and an odd number.** For every odd natural number
+$x \ge 5$ there is exactly one legal move $q$ of the position $\{4, x\}$ such that $\{4, x, q\}$
+is a P-position, and every legal move $q$ of $\{4, x\}$ with $\{4, x, q\}$ a P-position
+satisfies $q \equiv x - 2 \pmod 4$.
 
 ## Depends on
 
-- [Is Sylver PPosition](is-sylver-pposition.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

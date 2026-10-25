@@ -11,21 +11,21 @@ The generator. Input: `T` on `Tn`, `H` on `Hs`, everything else empty.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [GΓ](g.md)
-- [Layout](layout.md)
-- [N Lits](n-lits.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Counters of the transition-family generator](ck.md)
+- [Labels of the clause-family generator](gl.md)
+- [Stack alphabets of the generator](g.md)
+- [Variable layout of the transition clauses](layout.md)
+- [Number of literals of a transition clause](n-lits.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Mul S](../counter-view/mul-s.md)
-- [After S](after-s.md)
-- [Lit L](lit-l.md)
-- [LS](ls.md)
-- [PS](ps.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Label after a situation clause in the transition-family generator](after-s.md)
+- [Entry label of a literal routine (transition-clause generator)](lit-l.md)
+- [Stages of the transition-clause generator's literal routine](ls.md)
+- [Stages of the transition-clause generator's precomputation](ps.md)
 - [Lit P](lit-p.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)

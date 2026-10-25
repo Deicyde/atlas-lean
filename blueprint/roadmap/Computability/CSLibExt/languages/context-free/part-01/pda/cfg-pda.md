@@ -11,7 +11,7 @@ The one-state PDA simulating derivations of `g` on its stack.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
 
 ## Proof depends on
 

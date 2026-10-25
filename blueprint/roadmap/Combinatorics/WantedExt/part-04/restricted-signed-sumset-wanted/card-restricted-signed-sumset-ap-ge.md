@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_ap_ge
 ---
 
-# Card restricted Signed Sumset ap ge
+# Lower bound for restricted signed sumsets of arithmetic progressions
 
-Here `a : Fin k → ℤ` formalizes `A={a₁<⋯<aₖ}`, `h+1 ≤ k` is the length
-condition, and `IsIndexedAP a d` supplies the common difference. The conditional lower
-bound and equality iff clause are exactly the corollary's two conclusions; `a 0` is
-`min(A)`. No clause is omitted.
+**Lower bound for restricted signed sumsets of arithmetic progressions.** Let $h \ge 3$ and
+$k \ge h + 1$ be natural numbers, and let $a_1 < a_2 < \cdots < a_k$ be integers with $a_1 > 0$
+that form an arithmetic progression with common difference $d > 0$, that is,
+$a_{i+1} = a_i + d$ for $1 \le i < k$. Let $A = \{a_1, \ldots, a_k\}$ and let $h^{\wedge}_{\pm} A$
+be the restricted signed sumset of $A$. Then $|h^{\wedge}_{\pm} A| \ge 2hk - h^2 + 1$ if
+$d = 2a_1$, and $|h^{\wedge}_{\pm} A| \ge 2hk - h^2 + 2$ otherwise. Moreover,
+$|h^{\wedge}_{\pm} A| = 2hk - h^2 + 1$ if and only if $d = 2a_1$.
 
 ## Depends on
 
-- [Is Indexed AP](is-indexed-ap.md)
-- [Ordered Finset](ordered-finset.md)
+- [Finite integer sequences in arithmetic progression](is-indexed-ap.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

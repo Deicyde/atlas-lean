@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.trinomialCoefficient_absorption
 ---
 
-# Lemma 31
+# Absorption identity for trinomial coefficients
 
-**Lemma 31.** For `n > 0`, `(k/n) binom(n, k)_2 = binom(n-1, k-1)_2 + 2 binom(n-1, k-2)_2`,
-negative lower indices giving `0`.
+**Absorption identity for trinomial coefficients.** Write $\binom{n}{k}_2$ for the
+trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For natural numbers $n \ge 1$
+and $k$, $\frac{k}{n} \binom{n}{k}_2 = \binom{n-1}{k-1}_2 + 2 \binom{n-1}{k-2}_2$, where a term
+whose lower index is negative is read as $0$.
 
 ## Depends on
 

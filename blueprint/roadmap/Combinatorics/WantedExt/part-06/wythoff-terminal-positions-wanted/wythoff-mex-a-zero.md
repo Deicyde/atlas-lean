@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.wythoffMexA_zero
 ---
 
-# Wythoff Mex A zero
+# The term $a_0$ of the mex sequence
 
-`a₀ = ℓ + 1`.
+**The term $a_0$ of the mex sequence.** For every natural number $\ell$, the mex sequence
+$(a_n)$ of $K^\ell$ (Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are
+terminal) satisfies $a_0 = \ell + 1$.
 
 ## Depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
 
 ## Sources
 

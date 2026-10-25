@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.planeRegionCount
 ---
 
-# Plane Region Count
+# Number of regions cut out of the plane
 
-The number of regions into which a set `K ⊆ ℝ²` of cuts divides the plane: the number of
-connected components of `ℝ² \ K` (`0` if there are infinitely many).
+**Number of regions cut out of the plane.** For a set $K \subseteq \mathbb{R}^2$ of cuts, the
+number of regions into which $K$ divides the plane is the number of connected components of the
+complement $\mathbb{R}^2 \setminus K$, or $0$ if there are infinitely many components.
 
 ## Depends on
 

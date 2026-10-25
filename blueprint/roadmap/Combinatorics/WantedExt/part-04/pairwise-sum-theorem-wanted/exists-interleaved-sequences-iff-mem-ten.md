@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_interleaved_sequences_iff_mem_tensor
 ---
 
-# Exists interleaved sequences iff mem tensor
+# Interleaved sequences and tensor products of ultrafilters
 
-For `X ⊆ ℕ × ℕ` the following are equivalent: (1) there are disjoint strictly increasing
-sequences `(a_n)`, `(b_n)` with `(a_i, b_j) ∈ X` for `i ≤ j` and `(b_j, a_i) ∈ X` for `j < i`;
-(2) there are non-principal ultrafilters `V₁`, `V₂` on `ℕ` with `X ∈ (V₁ ⊗ V₂) ∩ (V₂ ⊗ V₁)`.
+**Interleaved sequences and tensor products of ultrafilters.** For ultrafilters $U$, $V$ on
+$\mathbb{N} = \{0, 1, 2, \dots\}$ and $X \subseteq \mathbb{N} \times \mathbb{N}$, write
+$X \in U \otimes V$ when $\{n : \{m : (n, m) \in X\} \in V\} \in U$. For every
+$X \subseteq \mathbb{N} \times \mathbb{N}$ the following are equivalent: (1) there are strictly
+increasing sequences $(a_i)_{i \in \mathbb{N}}$, $(b_j)_{j \in \mathbb{N}}$ in $\mathbb{N}$ with
+disjoint ranges such that $(a_i, b_j) \in X$ whenever $i \le j$ and $(b_j, a_i) \in X$ whenever
+$j < i$; (2) there are non-principal ultrafilters $V_1$, $V_2$ on $\mathbb{N}$ with
+$X \in V_1 \otimes V_2$ and $X \in V_2 \otimes V_1$.
 
 ## Depends on
 

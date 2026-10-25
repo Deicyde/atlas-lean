@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_letterCount_div_iff_tendsto_letterPosition_div
 ---
 
-# Lemma 28
+# Letter frequency and growth of letter positions
 
-**Lemma 28.** For `w ∈ 𝒲` and a letter `α`: (a) for `d ∈ (0, 1]`, `#_α(m)/m → d` iff
-`p_α(n)/n → 1/d`; (b) `#_α(m)/m → 0` iff `p_α(n)/n → ∞`.
+**Letter frequency and growth of letter positions.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be
+an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often, and
+let $\alpha$ be a letter. Write $\#_\alpha(m)$ for the number of occurrences of $\alpha$ among
+$\ell_0, \ldots, \ell_{m-1}$, and for $n \ge 1$ write $p_\alpha(n)$ for the position of the
+$n$-th occurrence of $\alpha$ in $w$, counting positions from $0$. Then (a) for every real $d$
+with $0 < d \le 1$, $\#_\alpha(m)/m \to d$ as $m \to \infty$ if and only if
+$p_\alpha(n)/n \to 1/d$ as $n \to \infty$; and (b) $\#_\alpha(m)/m \to 0$ as $m \to \infty$ if and
+only if $p_\alpha(n)/n \to \infty$ as $n \to \infty$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Count](letter-count.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Letter-counting function](letter-count.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

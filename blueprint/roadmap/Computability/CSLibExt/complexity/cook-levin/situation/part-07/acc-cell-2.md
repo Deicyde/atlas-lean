@@ -12,7 +12,7 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.acc_cell
 
 ## Depends on
 
-- [C Idx](../../family/c-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [Enc](../part-01/enc.md)
 - [The accept family](acc-family.md)
 - [G](../part-01/g.md)
@@ -22,8 +22,8 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.acc_cell
 
 ## Proof depends on
 
-- [Num Vars](../../family/num-vars.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Acc Cell](acc-cell.md)
 - [Acc Code](acc-code.md)
 - [L0](../part-04/clause-sat-dense.md)

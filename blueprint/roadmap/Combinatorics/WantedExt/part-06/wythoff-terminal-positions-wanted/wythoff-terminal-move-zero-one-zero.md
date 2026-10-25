@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.wythoffTerminalMove_zero_one_zero
 ---
 
-# Wythoff Terminal Move zero one zero
+# A move to the origin in $K^0$
 
-From `(1, 0)` one may move to `(0, 0)` in `K^0`.
+**A move to the origin in $K^0$.** In the game $K^0$ (Wythoff's game in which only $(0, 0)$ is
+terminal), there is a move from the position $(1, 0)$ to the position $(0, 0)$.
 
 ## Depends on
 
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
 
 ## Sources
 

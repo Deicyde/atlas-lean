@@ -16,7 +16,7 @@ at most $w_1$, and every lucky car parks in one of the spots $1, \dots, w_1$.
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [The lucky set of a word](stirling-lucky-set.md)
-- [Stirling Park Spot](stirling-park-spot.md)
+- [Parking spot of a car](stirling-park-spot.md)
 
 ## Sources
 

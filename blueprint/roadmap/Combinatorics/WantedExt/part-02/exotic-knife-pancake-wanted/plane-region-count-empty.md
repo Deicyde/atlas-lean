@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.planeRegionCount_empty
 ---
 
-# Plane Region Count empty
+# No cuts, one region
 
-With no cuts the plane is a single region.
+**No cuts, one region.** The empty set of cuts divides the plane into exactly one region.
 
 ## Depends on
 
-- [Plane Region Count](plane-region-count.md)
+- [Number of regions cut out of the plane](plane-region-count.md)
 
 ## Sources
 

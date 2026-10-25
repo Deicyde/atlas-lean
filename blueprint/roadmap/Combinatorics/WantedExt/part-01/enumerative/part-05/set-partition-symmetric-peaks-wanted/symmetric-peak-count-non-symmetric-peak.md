@@ -15,7 +15,7 @@ non-symmetric peaks, the factors $132$ and $251$.
 ## Depends on
 
 - [Non-symmetric peaks of a word](non-symmetric-peak-count.md)
-- [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
+- [Number of symmetric peaks](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources
 

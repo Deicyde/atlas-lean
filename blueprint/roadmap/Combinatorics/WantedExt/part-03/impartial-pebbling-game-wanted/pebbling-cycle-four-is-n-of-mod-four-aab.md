@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_cycleFour_isN_of_modFourAABC
 ---
 
-# Pebbling cycle Four is N of mod Four AABC
+# Positions in $Y_{aabc}$ are N-positions of $(2:1)$-pebbling on $C_4$
 
-Theorem 19: every `C_4` `(2:1)`-pebbling game in `Y_{aabc}` is an N-game.
+**Positions in $Y_{aabc}$ are N-positions of $(2:1)$-pebbling on $C_4$.** Consider the
+$(2:1)$-pebbling game on the cycle $C_4$ with vertices $v_0, v_1, v_2, v_3$, where $v_i$ is
+adjacent to $v_{i \pm 1}$ (indices mod $4$). Let $a = (a_0, a_1, a_2, a_3)$ be a position, with
+$a_i$ pebbles on $v_i$, that lies in $Y_{aabc}$: for some $i$, $a_{i+2} \equiv a_i + 2$ and
+$a_{i+1} \equiv a_{i-1} + 1 \pmod 4$. Then $a$ is an N-position, that is, not a P-position.
 
 ## Depends on
 
-- [C4 Mod Four AABC](c4-mod-four-aabc.md)
+- [The set $Y_{aabc}$ of $C_4$ positions](c4-mod-four-aabc.md)
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

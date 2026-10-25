@@ -16,7 +16,7 @@ found so far.
 
 ## Proof depends on
 
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Dfa Sym Fits](dfa-sym-fits.md)
 
 ## Sources

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_two_mul_sub
 ---
 
-# Theorem 19
+# Alternating binomial sum of trinomial coefficients over even rows
 
-**Theorem 19.** `∑_{k=0}^{n} binom(2n-2k, n)_2 binom(n, k) (-1)^k = 2^n`.
+**Alternating binomial sum of trinomial coefficients over even rows.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For
+every natural number $n$, $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2n-2k}{n}_2 = 2^n$.
 
 ## Depends on
 

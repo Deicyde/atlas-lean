@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomas_numeration
 ---
 
-# Dumont Thomas numeration
+# Dumont–Thomas numeration
 
-Dumont–Thomas numeration for `ℕ`: let `u = η(u)` be a right-infinite fixed point of a
-substitution `η` with growing seed `u₀ = a`. For every `n ≥ 1` there is a unique `k` and a
-unique sequence `(mᵢ, aᵢ)_{i = 0, …, k}` that is `a`-admissible with `m_k ≠ ε` and
-`u₀ ⋯ u_{n-1} = η^k(m_k) ⋯ η⁰(m₀)`. The fixed-point equation is stated prefixwise:
-`η(u₀ ⋯ u_{n-1})` is a prefix of `u` for every `n`. Uniqueness of the sequence is equality at
-the indices `0, …, k`.
+**Dumont–Thomas numeration.** Let $\eta$ be a substitution on an alphabet $A$, extended
+to finite words by concatenation, and let $u_0 u_1 u_2 \cdots$ be a right-infinite word over
+$A$ that is a fixed point of $\eta$ in the sense that $\eta(u_0 \cdots u_{n-1})$ is a prefix of
+$u_0 u_1 u_2 \cdots$ for every $n$. Suppose that $a = u_0$ is a growing letter, i.e.
+$|\eta^k(a)| \to \infty$. Then for every $n \ge 1$ there are a natural number $k$ and an
+$a$-admissible sequence $(m_i, a_i)_{0 \le i \le k}$ of pairs of a finite word and a letter
+such that $m_k$ is nonempty and $u_0 \cdots u_{n-1} = \eta^k(m_k) \cdots \eta^0(m_0)$.
+Moreover, if $k'$ and an $a$-admissible sequence $(m'_i, a'_i)_{0 \le i \le k'}$ have the
+same properties, then $k' = k$ and $(m'_i, a'_i) = (m_i, a_i)$ for every $i \le k$.
 
 ## Depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Substitution](is-substitution.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Extension of a letter map to finite words](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 

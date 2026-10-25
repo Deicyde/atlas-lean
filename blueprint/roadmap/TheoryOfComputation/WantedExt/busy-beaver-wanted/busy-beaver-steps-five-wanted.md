@@ -12,7 +12,7 @@ Source: Busy Beaver Challenge (2025), determination of
 
 ## Depends on
 
-- [Busy Beaver Steps](../../../Computability/CSLibExt/busy-beaver/busy-beaver-steps.md)
+- [Busy Beaver shift function](../../../Computability/CSLibExt/busy-beaver/busy-beaver-steps.md)
 
 ## Sources
 

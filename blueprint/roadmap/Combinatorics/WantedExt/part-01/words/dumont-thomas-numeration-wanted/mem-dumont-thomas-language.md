@@ -6,15 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.mem_dumontThomasLanguage
 ---
 
-# Mem dumont Thomas Language
+# Membership in the Dumont–Thomas image language
 
-Membership in the image language unfolds to its four conditions.
+**Membership in the Dumont–Thomas image language.** Let $\eta$ send each letter of an
+alphabet $A$ to a finite word over $A$, let $u : \mathbb{Z} \to A$ and $p \in \mathbb{N}$, and
+let $\mathcal{A}_{\eta,s}$ be the automaton of the seed $s = u_{-1}|u_0$. A word $w$ of natural
+numbers lies in the image language of $\eta$, $u$ and $p$ if and only if the length of $w$ is
+$\ell p + 1$ for some $\ell \in \mathbb{N}$, $\mathcal{A}_{\eta,s}$ accepts $w$, $w$ does not
+start with $0\,0^p$, and $w$ does not start with $1\,\mathrm{last}_{\eta,p}(u_{-1})$, where
+$\mathrm{last}_{\eta,p}(u_{-1})$ is the digit word along last letters with $p$ steps starting
+from $u_{-1}$.
 
 ## Depends on
 
-- [Dumont Thomas Language](dumont-thomas-language.md)
-- [Last Letter Digits](last-letter-digits.md)
-- [Seed Automaton](seed-automaton.md)
+- [The Dumont–Thomas image language](dumont-thomas-language.md)
+- [Digit word along last letters](last-letter-digits.md)
+- [Seed automaton](seed-automaton.md)
 
 ## Sources
 

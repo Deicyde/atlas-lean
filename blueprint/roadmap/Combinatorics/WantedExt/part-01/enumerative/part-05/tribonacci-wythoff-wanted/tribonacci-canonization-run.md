@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciCanonizationRun
 ---
 
-# Tribonacci Canonization Run
+# Canonization run
 
-Run at most `n` canonization steps, stopping at a canonical word (digits `0`/`1`, no
-three consecutive ones); `none` if a step is undefined.
+**Canonization run.** Words are written most significant digit first. The run of at most
+$n$ canonization steps on a word $w$ of natural numbers is defined by recursion on $n$: it
+returns $w$ if $n = 0$ or if $w$ is canonical (every digit is $0$ or $1$ and there are no
+three consecutive $1$s); otherwise it applies one canonization step to $w$ and returns the
+run of at most $n - 1$ steps on the result, and it is undefined when that step is undefined.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tribonacci Canonization Step](tribonacci-canonization-step.md)
+- [One step of Tribonacci canonization](tribonacci-canonization-step.md)
 
 ## Sources
 

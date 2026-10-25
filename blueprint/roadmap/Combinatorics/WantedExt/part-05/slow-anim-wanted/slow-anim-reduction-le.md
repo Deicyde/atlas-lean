@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.slowANimReduction_le
 ---
 
-# Slow ANim Reduction le
+# The reduction never adds tokens
 
-The reduction never adds tokens: `r(p)_i ≤ p_i`.
+**The reduction never adds tokens.** For every finite set $A$ of natural numbers, every
+position $p$ of Slow$A$-Nim on $n$ stacks and every stack $i$, the reduction $r(p)$ of $p$
+satisfies $r(p)_i \le p_i$.
 
 ## Depends on
 
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
 
 ## Sources
 

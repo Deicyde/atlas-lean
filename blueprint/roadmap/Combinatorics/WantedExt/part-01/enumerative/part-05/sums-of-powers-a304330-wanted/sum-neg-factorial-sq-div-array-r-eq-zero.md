@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_neg_factorial_sq_div_arrayR_eq_zero
 ---
 
-# Proposition 15
+# Vanishing alternating sum of the A304330 array
 
-**Proposition 15**:
-`Σ_{m=1}^k (-1)^m·((m-1)!)^2/(2m)!·R(k, m) = 0` for `k ≥ 2`.
+**Vanishing alternating sum of the A304330 array.** For every natural number $k \ge 2$,
+
+$$\sum_{m=1}^{k} (-1)^m \frac{((m-1)!)^2}{(2m)!} R(k, m) = 0,$$
+
+where $R(k, m) = \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$ is the array of OEIS A304330.
 
 ## Depends on
 
-- [Array R](array-r.md)
+- [The array $R(k, m)$](array-r.md)
 
 ## Sources
 

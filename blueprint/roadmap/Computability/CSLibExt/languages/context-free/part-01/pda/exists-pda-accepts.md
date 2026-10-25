@@ -13,8 +13,8 @@ pushdown automaton whose stack alphabet is the grammar's symbols.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
-- [Accepts](../../../../automata/pda/basic/accepts.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
+- [Language accepted by a pushdown automaton](../../../../automata/pda/basic/accepts.md)
 
 ## Proof depends on
 

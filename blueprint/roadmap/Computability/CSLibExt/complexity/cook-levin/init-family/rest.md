@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.Rest
 ---
 
-# Rest
+# Empty scratch counters
 
-Scratch counters that are empty whenever a clause starts.
+**Empty scratch counters.** An assignment $F$ of natural numbers to the generator's counters
+has empty scratch counters when $F(Q) = F(\mathrm{tmp}) = F(\mathrm{md}) = F(c_1) = F(c_2) = 0$.
 
 ## Depends on
 
-- [CK](ck.md)
+- [Counters of the initial-row generator](ck.md)
 
 ## Sources
 

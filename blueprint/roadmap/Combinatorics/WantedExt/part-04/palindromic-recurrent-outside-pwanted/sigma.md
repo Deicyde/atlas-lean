@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.Sigma
 ---
 
-# Sigma
+# The ternary alphabet
 
-Ternary alphabet (Labbé's counterexample is ternary).
+**The ternary alphabet.** The alphabet is the three-letter set $\{0, 1, 2\}$.
+
+Labbé's counterexample is over a ternary alphabet.
 
 ## Depends on
 

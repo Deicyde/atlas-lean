@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciSet_degreeOfAccessibility_le_three
 ---
 
-# Fibonacci Set degree Of Accessibility le three
+# The Fibonacci numbers have degree of accessibility at most $3$
 
-Degree of accessibility of the Fibonacci numbers is at most three: `F` is not
-`r`-accessible for any `r ≥ 4`; in particular some `4`-coloring of `ℤ⁺` has no monochromatic
-`4`-term `F`-diffsequence.
+**The Fibonacci numbers have degree of accessibility at most $3$.** The positive Fibonacci set
+$\{1, 2, 3, 5, 8, \dots\}$ is not $r$-accessible for any natural number $r \ge 4$. Moreover, some
+coloring of the positive integers with four colors admits no monochromatic $4$-term
+diffsequence with differences in the positive Fibonacci set: there are no positive integers
+$x_0, x_1, x_2, x_3$ of one color such that $x_{i+1} - x_i$ is a positive Fibonacci number for
+$i = 0, 1, 2$.
 
 ## Depends on
 

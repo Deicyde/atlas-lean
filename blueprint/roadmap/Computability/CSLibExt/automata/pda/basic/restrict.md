@@ -5,21 +5,29 @@ statement: formalized
 lean: Cslib.Automata.PDA.restrict
 ---
 
-# Restrict
+# Restricting the stack alphabet of a pushdown automaton
 
-Restrict the stack alphabet to a finite closed set `Γ₀` containing the
-initial stack symbol. The restricted PDA is over the subtype, hence has a
-`Fintype` stack alphabet, and accepts the same language
-(`PDA.accepts_restrict`).
+**Restricting the stack alphabet of a pushdown automaton.** Let $M$ be a pushdown
+automaton with stack alphabet $\Gamma$, and let $\Gamma_0 \subseteq \Gamma$ be a finite set
+of stack symbols that contains the initial stack symbol of $M$ and is closed for $M$.
+The restriction of $M$ to $\Gamma_0$ is the pushdown automaton with the same input
+alphabet, states and start state as $M$, stack alphabet $\Gamma_0$, and the initial stack
+symbol of $M$ as its initial stack symbol. Its transitions from a state $q$ on an input
+option $o$ with top symbol $\gamma \in \Gamma_0$ are the transitions $(q', u)$ of $M$ from
+$q$ on $o$ with top symbol $\gamma$, with the pushed list $u$ read as a list over
+$\Gamma_0$; closedness guarantees that every symbol of $u$ lies in $\Gamma_0$.
+
+The restricted automaton has a finite stack alphabet and accepts the same language as
+$M$.
 
 ## Depends on
 
-- [PDA](pda.md)
-- [Closed Under](closed-under.md)
+- [Pushdown automaton](pda.md)
+- [Closed sets of stack symbols](closed-under.md)
 
 ## Proof depends on
 
-- [Lift Stack](lift-stack.md)
+- [Lifting a stack to a set of stack symbols](lift-stack.md)
 
 ## Sources
 

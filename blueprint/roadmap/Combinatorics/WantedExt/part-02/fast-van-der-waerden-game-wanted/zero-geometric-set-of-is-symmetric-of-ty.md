@@ -12,10 +12,10 @@ If `S` is symmetric of (one-based) type `(2, n)` (resp. `(1, n - 1)`), then
 
 ## Depends on
 
-- [Is Rat Copy](is-rat-copy.md)
-- [Is Rat Reflection](is-rat-reflection.md)
-- [Is Symmetric Of Type](is-symmetric-of-type.md)
-- [Zero Geometric Set](zero-geometric-set.md)
+- [Copies of finite sets of rationals](is-rat-copy.md)
+- [Reflections of finite sets of rationals](is-rat-reflection.md)
+- [Symmetric sets of a given type](is-symmetric-of-type.md)
+- [The zero-geometric set $S_2(n, k)$](zero-geometric-set.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsFixedPoint
 ---
 
-# Is Fixed Point
+# Fixed point of a morphism
 
-Fixed points: limits of iterated images of a prolongable letter.
+**Fixed point of a morphism.** An infinite word $u$ is a fixed point of a morphism $\varphi$
+when it is the limit of the iterates of a prolongable letter: there is a letter $a$ such that
+$\varphi(a)$ begins with $a$, the words $\varphi^m(a)$ ($m \ge 0$) are arbitrarily long, and every
+$\varphi^m(a)$ is a prefix of $u$.
 
 ## Depends on
 
-- [Inf Word](inf-word.md)
-- [Morphism](morphism.md)
+- [Infinite words](inf-word.md)
+- [Morphisms of the ternary alphabet](morphism.md)
 
 ## Proof depends on
 
-- [Sigma](sigma.md)
+- [The ternary alphabet](sigma.md)
 - [Extend Iter](extend-iter.md)
 
 ## Sources

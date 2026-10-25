@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimH_iterate_floor_le_mul_le_iterate_ceil
 ---
 
-# Maximum Nim H iterate floor le mul le iterate ceil
+# Logarithmic bounds on the iterates of h_k
 
-Lemma 8: for positive `n` and `k ≥ 2`, let the real numbers `v` and `w` be
-the two displayed logarithmic quotients. Iterating from `k-1` by the natural floor
-of `w` and natural ceiling of `v` gives the lower and upper bounds on `n(k-1)`.
-`Nat.floor` and `Nat.ceil` encode the indicated integer bounds; there is no deviation.
+**Logarithmic bounds on the iterates of h_k.** Let $k \ge 2$ and $n \ge 1$ be natural numbers,
+let $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on natural numbers, write $h_k^p$ for its $p$-fold
+iterate, and let
+
+$$v = \frac{\log n}{\log k - \log(k-1)}, \qquad w = \frac{\log(n+1) - \log 2}{\log k - \log(k-1)},$$
+
+where $\log$ is the natural logarithm. Then
+
+$$h_k^{\lfloor w \rfloor}(k-1) \le n(k-1) \le h_k^{\lceil v \rceil}(k-1).$$
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

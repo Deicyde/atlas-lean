@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.latticeCube_one
 ---
 
-# Lattice Cube one
+# Lattice cube of side one
 
-A lattice cube of side `1` is a single point.
+**Lattice cube of side one.** For $t \in \mathbb{N}$ and $a \in \mathbb{N}^t$, the lattice
+cube with least corner $a$ and side $1$ is the singleton $\{a\}$.
 
 ## Depends on
 
-- [Lattice Cube](lattice-cube.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Proof depends on
 
-- [Mem lattice Cube](mem-lattice-cube.md)
+- [Membership in a lattice cube](mem-lattice-cube.md)
 
 ## Sources
 

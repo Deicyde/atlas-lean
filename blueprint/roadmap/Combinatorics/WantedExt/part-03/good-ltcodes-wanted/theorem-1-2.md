@@ -6,18 +6,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.theorem_1_2
 ---
 
-# Theorem 1 2
+# Good locally testable codes of every rate below one
 
-Statement of Theorem 1.2:
+**Good locally testable codes of every rate below one.** For every real number $\rho$ with
+$0 \le \rho < 1$ there exist a natural number $q$, a real number $\kappa > 0$, lengths
+$n_i \in \mathbb{N}$ and binary codes $C_i$ of length $n_i$ for $i \in \mathbb{N}$ such that the
+family $(C_i)_{i \in \mathbb{N}}$ is good and, for every $i$, the code $C_i$ is $\kappa$-locally
+testable with $q$ queries and has rate at least $\rho$.
 
-There exist good locally testable codes (the source's explicitness is not formalized) (for every rate `ρ < 1`).
+The source's theorem also asserts that the codes are explicit; explicitness is not formalized.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
-- [Is Good](is-good.md)
-- [LTC](ltc.md)
-- [Rate](rate.md)
+- [Binary code](binary-code.md)
+- [Good family of codes](is-good.md)
+- [Locally testable code](ltc.md)
+- [Rate of a binary code](rate.md)
 
 ## Sources
 

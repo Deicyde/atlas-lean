@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.metallic_eigenvector_iff
 ---
 
-# Lemma 66
+# Integer matrices with a metallic-mean eigenvector
 
-**Lemma 66.** For `k ≥ 1`, `τ_k = (k + √(k² + 4))/2` and `M ∈ M₂(ℤ)`, `[τ_k 1]ᵀ` is a right
-eigenvector of `M` iff `M = [[km + n, m], [m, n]]` for some integers `m, n`; then the eigenvalues
-are `n + mτ_k` and `n + mτ_k'` with `τ_k' = (k - √(k² + 4))/2`.
+**Integer matrices with a metallic-mean eigenvector.** Let $k \ge 1$ be an integer, let
+$\tau_k = (k + \sqrt{k^2 + 4})/2$ and $\tau_k' = (k - \sqrt{k^2 + 4})/2$, and let $M$ be a
+$2 \times 2$ integer matrix. Then $(\tau_k, 1)^T$ is a right eigenvector of $M$ over $\mathbb{R}$
+if and only if $M$ has rows $(km + n, m)$ and $(m, n)$ for some integers $m, n$. For such $M$ the
+characteristic polynomial of $M$ is $(X - (n + m\tau_k))(X - (n + m\tau_k'))$, so the eigenvalues
+of $M$ are $n + m\tau_k$ and $n + m\tau_k'$.
 
 ## Depends on
 

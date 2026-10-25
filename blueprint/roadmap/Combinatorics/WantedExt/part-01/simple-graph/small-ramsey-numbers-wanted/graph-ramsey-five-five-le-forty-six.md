@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_five_five_le_forty_six
 ---
 
-# Graph Ramsey five five le forty six
+# The Angeltveit–McKay upper bound for $R(5, 5)$
 
-`R(5,5) ≤ 46`.
+**The Angeltveit–McKay upper bound for $R(5, 5)$.** The classical Ramsey number
+$R(5, 5)$ is at most $46$.
 
 ## Depends on
 

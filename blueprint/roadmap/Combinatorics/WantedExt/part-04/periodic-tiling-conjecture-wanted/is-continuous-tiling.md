@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.IsContinuousTiling
 ---
 
-# Is Continuous Tiling
+# Continuous tiling of Euclidean space
 
-We say that `σ ⊆ ℝᵈ` is a continuous tiling of `ℝᵈ` with tiling set `Λ` if the translates of
-`σ` by elements `v ∈ Λ` partition `ℝᵈ` up to null sets. In other words for almost all `x ∈ ℝᵈ`,
-there exists a unique `v ∈ Λ` such that `x ∈ (v + σ)`.
+**Continuous tiling of Euclidean space.** For $d \in \mathbb{N}$, a set
+$\sigma \subseteq \mathbb{R}^d$ continuously tiles $\mathbb{R}^d$ with tiling set
+$\Lambda \subseteq \mathbb{R}^d$ if for almost every $x \in \mathbb{R}^d$ (with respect to
+Lebesgue measure) there is exactly one $v \in \Lambda$ with $x \in v + \sigma$.
 
 ## Depends on
 

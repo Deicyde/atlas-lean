@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.ascDesGF_123_132
 ---
 
-# Asc Des GF 123 132
+# Ascents and descents over permutations avoiding $123$ and $132$
 
-Corollary 1, equation (5): over `S_n(123, 132)`,
-`∑ xⁿ p^{asc} q^{des} = (1 + x - 2qx + px² - qx² - pqx² + q²x²) / (1 - 2qx - pqx² + q²x²)`,
-stated after clearing the denominator. Only the `(asc, des)` identity of the corollary is
-stated (its `(dasc, ddes)` and `(pk, vl)` identities use statistics defined in the paper body).
+**Ascents and descents over permutations avoiding $123$ and $132$.** Let
+
+$$G = \sum_{n \ge 0} \sum_{\sigma} x^n p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)},$$
+
+where $\sigma$ runs over the permutations of $\{0, 1, \dots, n-1\}$ that avoid both patterns
+$123$ and $132$, and $\mathrm{asc}(\sigma)$ and $\mathrm{des}(\sigma)$ are the numbers of ascents
+and descents of $\sigma$; $G$ is a formal power series in $x$ with coefficients in
+$\mathbb{Q}[p, q]$. Then
+
+$$(1 - 2qx - pqx^2 + q^2x^2)\, G = 1 + x - 2qx + px^2 - qx^2 - pqx^2 + q^2x^2.$$
 
 ## Depends on
 
-- [Asc Des GF](asc-des-gf.md)
-- [Pattern3](pattern3.md)
+- [Ascent–descent generating function of a pair of patterns](asc-des-gf.md)
+- [Length-three pattern from one-line values](pattern3.md)
 
 ## Sources
 

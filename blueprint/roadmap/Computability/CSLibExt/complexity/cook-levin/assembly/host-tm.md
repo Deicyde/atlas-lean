@@ -5,48 +5,57 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Assembly.hostTM
 ---
 
-# The host as a genuine `FinTM2`
+# The host as a finite multi-stack Turing machine
 
-**The host as a genuine `FinTM2`** (finiteness check only; input/output stacks provisional
-until the precomputation is attached).
+**The host as a finite multi-stack Turing machine.** Given the five generator programs (update
+and situation-definition programs over the family generator's stacks, a shift program, an accept
+program, and an init program whose input alphabet has $g$ codes), the host machine is the finite
+multi-stack Turing machine whose stacks are the host stacks, with the input-code stack as input
+stack and the shared output stack as output stack, whose alphabets are the host alphabets, whose
+labels are the host labels, whose start label is the init generator's start label, whose
+internal state is a Boolean with initial value false, and whose program is the host program built
+from the five generator programs.
+
+This is a finiteness check only: the input and output stacks are provisional until the
+precomputation is attached.
 
 ## Depends on
 
-- [CK](../accept/ck.md)
-- [GL](../accept/gl.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CK](../family/ck.md)
-- [GL](../family/gl.md)
-- [GΓ](../family/g.md)
-- [CK](../init-family/ck.md)
-- [GL](../init-family/gl.md)
-- [IK](../init-family/ik.md)
-- [IΓ](../init-family/i.md)
-- [CK](../shift/ck.md)
-- [GL](../shift/gl.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Labels of the accept generator](../accept/gl.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Labels of the clause-family generator](../family/gl.md)
+- [Stack alphabets of the generator](../family/g.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
+- [Labels of the initial-row generator](../init-family/gl.md)
+- [Stacks of a counter machine with an input stack](../init-family/ik.md)
+- [Alphabets of a counter machine with an input stack](../init-family/i.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
+- [Labels of the cell-shift generator](../shift/gl.md)
 
 ## Proof depends on
 
-- [AK](../accept/ak.md)
-- [LS](../accept/ls.md)
-- [PS](../accept/ps.md)
-- [HK](hk.md)
-- [HL](hl.md)
-- [HΓ](h.md)
+- [Clause kinds of the accept generator](../accept/ak.md)
+- [Stages of the literal routine](../accept/ls.md)
+- [Precomputation stages of the accept generator](../accept/ps.md)
+- [Stacks of the Cook–Levin host machine](hk.md)
+- [Labels of the Cook–Levin host machine](hl.md)
+- [Alphabets of the Cook–Levin host machine](h.md)
 - [The host program](hprog.md)
-- [MS](../counter-view/ms.md)
-- [LS](../family/ls.md)
-- [PS](../family/ps.md)
-- [CL](../init-family/cl.md)
-- [LS](../init-family/ls.md)
-- [PH](../init-family/ph.md)
-- [PS1](../init-family/ps1.md)
-- [PS2](../init-family/ps2.md)
-- [BD](../shift/bd.md)
-- [CL](../shift/cl.md)
-- [LS](../shift/ls.md)
-- [PS](../shift/ps.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stages of the transition-clause generator's literal routine](../family/ls.md)
+- [Stages of the transition-clause generator's precomputation](../family/ps.md)
+- [Clause kinds of the initial-row generator](../init-family/cl.md)
+- [Stages of the literal routine](../init-family/ls.md)
+- [Loop phases of the initial-row generator](../init-family/ph.md)
+- [Labels of the first precomputation part](../init-family/ps1.md)
+- [Labels of the second precomputation part](../init-family/ps2.md)
+- [Loop-body stages of the cell-shift generator](../shift/bd.md)
+- [Clause kinds of the cell-shift family](../shift/cl.md)
+- [Stages of the cell-shift literal routine](../shift/ls.md)
+- [Precomputation stages of the shift generator](../shift/ps.md)
 - [ST](../shift/st.md)
 
 ## Sources

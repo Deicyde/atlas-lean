@@ -12,17 +12,17 @@ The triple grammar generates exactly the language accepted by `M`.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
-- [Accepts](../../../../automata/pda/basic/accepts.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
+- [Language accepted by a pushdown automaton](../../../../automata/pda/basic/accepts.md)
 - [Pda Grammar](pda-grammar.md)
 
 ## Proof depends on
 
-- [Config](../../../../automata/pda/basic/config.md)
-- [Derives](../../../../automata/pda/basic/derives.md)
-- [Append input stack](../../../../automata/pda/basic/append-input-stack.md)
-- [Step](../../../../automata/pda/basic/step.md)
-- [Init Config](../../../../automata/pda/basic/init-config.md)
+- [Pushdown automaton configuration](../../../../automata/pda/basic/config.md)
+- [Multi-step computation of a pushdown automaton](../../../../automata/pda/basic/derives.md)
+- [Computations extend by unread input and stack bottom](../../../../automata/pda/basic/append-input-stack.md)
+- [One step of a pushdown automaton](../../../../automata/pda/basic/step.md)
+- [Initial configuration](../../../../automata/pda/basic/init-config.md)
 - [Yields](../../part-02/yields/yields.md)
 - [Append](../../part-02/yields/append.md)
 - [Append inv](../../part-02/yields/append-inv.md)

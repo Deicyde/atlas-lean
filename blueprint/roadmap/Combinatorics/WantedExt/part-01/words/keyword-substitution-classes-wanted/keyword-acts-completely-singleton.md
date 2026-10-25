@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.keywordActsCompletely_singleton
 ---
 
-# Keyword Acts Completely singleton
+# Complete action of a one-element list
 
-A one-element list acts completely exactly when its map performs a substitution.
+**Complete action of a one-element list.** For a binary keyword $a$, an index $j$ and a
+binary word $u$, the one-element list $[j]$ acts completely on $u$ if and only if the simple map
+$\varphi_j$ of $a$ changes $u$, that is, $\varphi_j(u) \ne u$.
 
 ## Depends on
 
-- [Keyword Acts Completely](keyword-acts-completely.md)
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Lists of simple maps acting completely](keyword-acts-completely.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

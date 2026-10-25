@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.length_periodDoublingWord
 ---
 
-# Length period Doubling Word
+# Length of the period-doubling iterates
 
-The `n`-th iterate of the period-doubling substitution has length `2 ^ n`.
+**Length of the period-doubling iterates.** For every natural number $n$, the word obtained by
+applying the period-doubling substitution $1 \mapsto 10$, $0 \mapsto 11$ to the one-letter word
+$1$ a total of $n$ times has length $2^n$.
 
 ## Depends on
 
-- [Period Doubling Word](period-doubling-word.md)
+- [Iterates of the period-doubling substitution](period-doubling-word.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.discreteSierpinskiStage_one
 ---
 
-# Discrete Sierpinski Stage one
+# The first stage of the discrete Sierpiński triangle
 
-`S₁ = {(2, 1), (3, 1), (3, 2)}`.
+**The first stage of the discrete Sierpiński triangle.** The stage $S_1$ of the discrete
+Sierpiński triangle is $\{(2, 1), (3, 1), (3, 2)\}$.
 
 ## Depends on
 
-- [Discrete Sierpinski Stage](discrete-sierpinski-stage.md)
+- [Stages of the discrete Sierpiński triangle](discrete-sierpinski-stage.md)
 
 ## Sources
 

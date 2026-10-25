@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.rate
 ---
 
-# Rate
+# Rate of a binary code
 
-The rate of a binary code is its dimension divided by its length.
+**Rate of a binary code.** The rate of a binary code $C \subseteq \mathbb{F}_2^n$ is its
+dimension over $\mathbb{F}_2$ divided by its length $n$, as a real number; it is $0$ when
+$n = 0$.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Proof depends on
 
-- [Dim](dim.md)
+- [Dimension of a binary code](dim.md)
 
 ## Sources
 

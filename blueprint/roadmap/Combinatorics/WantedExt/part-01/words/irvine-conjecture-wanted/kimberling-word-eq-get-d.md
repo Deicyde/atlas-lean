@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingWord_eq_getD
 ---
 
-# Kimberling Word eq get D
+# Every Kimberling block is a prefix of Kimberling's word
 
-Every block `K_n` with `i < |K_n|` has `kimberlingWord i` at position `i`.
+**Every Kimberling block is a prefix of Kimberling's word.** Let $k = k_1 k_2 k_3 \cdots$ be
+Kimberling's word and $K_n$ the $n$-th Kimberling block. For all natural numbers $i$ and $n$ with
+$i < |K_n|$, the letter $k_{i+1}$ equals the $(i+1)$-th letter of $K_n$.
 
 ## Depends on
 
-- [Kimberling Block](kimberling-block.md)
-- [Kimberling Word](kimberling-word.md)
+- [Kimberling's blocks](kimberling-block.md)
+- [Kimberling's word](kimberling-word.md)
 
 ## Proof depends on
 
-- [Kimberling Block prefix](kimberling-block-prefix.md)
-- [Two pow le length kimberling Block](two-pow-le-length-kimberling-block.md)
+- [Kimberling's blocks form a prefix chain](kimberling-block-prefix.md)
+- [Lower bound on the length of the Kimberling blocks](two-pow-le-length-kimberling-block.md)
 
 ## Sources
 

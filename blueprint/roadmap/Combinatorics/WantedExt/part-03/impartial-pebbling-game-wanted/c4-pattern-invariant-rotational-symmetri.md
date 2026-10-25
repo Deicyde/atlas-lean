@@ -14,12 +14,12 @@ opponent's rotational symmetric move (from `v_{j+2}` to `v_{j-ε}`) or reflectio
 
 ## Depends on
 
-- [C4 Pattern AAAB](c4-pattern-aaab.md)
-- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
-- [C4 Pattern AABC](c4-pattern-aabc.md)
-- [C4 Pattern ABAB](c4-pattern-abab.md)
-- [C4 Pattern ABAC](c4-pattern-abac.md)
-- [Pebbling Step](pebbling-step.md)
+- [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
+- [The set $\hat X_{aabb}$ of $C_4$ positions](c4-pattern-aabbhat.md)
+- [The set $X_{aabc}$ of $C_4$ positions](c4-pattern-aabc.md)
+- [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)
+- [The set $X_{abac}$ of $C_4$ positions](c4-pattern-abac.md)
+- [A $(k+1:k)$-pebbling move](pebbling-step.md)
 
 ## Sources
 

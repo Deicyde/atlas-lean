@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPassSetC
 ---
 
-# Wythoff Pass Set C
+# The set $C$
 
-The set `C` of the positions `(x, y, 1)` listed in the paper (third coordinate dropped).
+**The set $C$.** $C$ is the finite set of pairs of natural numbers
+$C = \{(0, 1), (1, 0), (2, 2), (3, 6), (6, 3), (4, 8), (8, 4), (5, 7), (7, 5)\}$. These are the
+positions $(x, y, 1)$ of the set $C$ in the source, with the third coordinate dropped.
 
 ## Depends on
 

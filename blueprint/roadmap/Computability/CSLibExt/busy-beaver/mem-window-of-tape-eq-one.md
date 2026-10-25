@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.BusyBeaver.mem_window_of_tape_eq_one
 ---
 
-# Mem window of tape eq one
+# After $t$ steps, every one lies within distance $t$ of the origin
 
-Every one on the tape after `t` steps lies in the counting window.
+**After $t$ steps, every one lies within distance $t$ of the origin.** For every Busy Beaver
+machine $M$, every $t \in \mathbb{N}$ and every cell $i \in \mathbb{Z}$, if cell $i$ holds the
+symbol $1$ after $M$ runs for $t$ steps from the initial blank-tape configuration, then
+$-t \le i \le t$.
 
 ## Depends on
 
-- [Config](config.md)
-- [Machine](machine.md)
-- [Run](run.md)
+- [Busy Beaver machine configuration](config.md)
+- [Busy Beaver machine](machine.md)
+- [Configuration after $t$ steps](run.md)
 
 ## Proof depends on
 
-- [Tape eq zero of abs gt](tape-eq-zero-of-abs-gt.md)
+- [Cells far from the origin stay blank](tape-eq-zero-of-abs-gt.md)
 
 ## Sources
 

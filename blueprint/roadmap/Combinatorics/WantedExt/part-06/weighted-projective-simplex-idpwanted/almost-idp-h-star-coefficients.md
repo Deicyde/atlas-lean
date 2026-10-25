@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.almostIDP_hStar_coefficients
 ---
 
-# Almost IDP h Star coefficients
+# Coefficients of $(1 + z^2 + \dots + z^{2n-2})(1 + 7z + 14z^2 + 7z^3 + z^4)$
 
-Theorem 13's coefficient-vector clause for the product above, with the ellipsis made
-exact by `almostIDPCoefficientVector`.  `List.ofFn` lists coefficients from degree `0`
-through degree `2n+2`, the full displayed vector.
+**Coefficients of $(1 + z^2 + \dots + z^{2n-2})(1 + 7z + 14z^2 + 7z^3 + z^4)$.** Let $n \ge 2$.
+The coefficients of $z^0, z^1, \dots, z^{2n+2}$ in the integer polynomial
+$(1 + z^2 + \dots + z^{2n-2})(1 + 7z + 14z^2 + 7z^3 + z^4)$ are, in order, $1, 7, 15, 14$, then
+$n - 2$ repetitions of $16, 14$, then $15, 7, 1$.
 
 ## Depends on
 
-- [Almost IDPCoefficient Vector](almost-idpcoefficient-vector.md)
-- [Almost IDPQuartic](almost-idpquartic.md)
-- [Even Geometric Factor](even-geometric-factor.md)
+- [Coefficient vector $(1, 7, 15, 14, \dots, 15, 7, 1)$](almost-idpcoefficient-vector.md)
+- [The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$](almost-idpquartic.md)
+- [Even geometric factor](even-geometric-factor.md)
 
 ## Sources
 

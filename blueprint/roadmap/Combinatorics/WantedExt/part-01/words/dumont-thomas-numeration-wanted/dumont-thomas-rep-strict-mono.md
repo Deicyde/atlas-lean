@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomasRep_strictMono
 ---
 
-# Dumont Thomas Rep strict Mono
+# The Dumont–Thomas representation is increasing
 
-`rep_u` is increasing for `≺`: if `n < n'` then `rep_u(n) ≺ rep_u(n')`.
+**The Dumont–Thomas representation is increasing.** Let $\eta$ be a substitution and let $u$
+be a two-sided periodic point of $\eta$ with least period $p$ whose seed letters $u_{-1}$ and
+$u_0$ are growing, that is, $|\eta^j(u_{-1})|$ and $|\eta^j(u_0)|$ tend to infinity with $j$.
+Let $n < n'$ be integers, and let $w$ and $w'$ be the Dumont–Thomas complement representations
+$\operatorname{rep}_u(n)$ and $\operatorname{rep}_u(n')$ of $n$ and $n'$ for $\eta$, $u$ and $p$.
+Then $w \prec w'$ in the complement radix order $\prec$.
 
 ## Depends on
 
-- [Complement Radix LT](complement-radix-lt.md)
-- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
-- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [The complement radix order](complement-radix-lt.md)
+- [Dumont–Thomas complement representations](is-dumont-thomas-rep.md)
+- [Two-sided periodic points with growing seed](is-periodic-point-with-growing-seed.md)
 
 ## Sources
 

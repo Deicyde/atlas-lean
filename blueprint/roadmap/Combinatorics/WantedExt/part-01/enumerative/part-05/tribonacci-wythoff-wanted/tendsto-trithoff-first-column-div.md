@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_trithoff_first_column_div
 ---
 
-# Tendsto trithoff first column div
+# Growth of the first column of the Trithoff array
 
-The first column of the Trithoff array (OEIS A003265, the positive integers whose
-Tribonacci representation ends in `1`, in increasing order) grows like
-`α / (α - 1) = (α² + 1) / 2` times its index: its `r`-th term (index `r + 1`) divided by
-`r + 1` tends to `α / (α - 1)`.
+**Growth of the first column of the Trithoff array.** Let $\alpha$ be a real number with
+$\alpha^3 = \alpha^2 + \alpha + 1$, and let $a_0 < a_1 < a_2 < \cdots$ be the positive integers
+that have a Tribonacci representation with least significant digit $1$, in increasing order
+(the first column of the Trithoff array, OEIS A003265). Then $a_r / (r + 1)$ tends to
+$\alpha / (\alpha - 1)$ as $r \to \infty$.
+
+The limit equals $(\alpha^2 + 1) / 2$.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 
 ## Sources
 

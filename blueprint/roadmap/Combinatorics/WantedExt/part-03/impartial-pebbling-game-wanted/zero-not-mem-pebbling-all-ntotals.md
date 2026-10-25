@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.zero_not_mem_pebblingAllNTotals
 ---
 
-# Zero not mem pebbling All NTotals
+# The total zero is never an all-N total
 
-The empty position is a P-game, so `0` is never a total at which every game is an
-N-game.
+**The total zero is never an all-N total.** For every simple graph $G$ on the vertex set
+$\{0, \dots, n-1\}$ and every $k \in \mathbb{N}$, the number $0$ does not belong to the set of
+totals $m$ such that every $(k+1:k)$-pebbling game on $G$ with $m$ pebbles is an N-game. Indeed,
+the empty position admits no move, so it is a P-game.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Proof depends on
 
-- [Pebbling Game is P of forall le](pebbling-game-is-p-of-forall-le.md)
+- [Positions with at most $k$ pebbles on every vertex are P-positions](pebbling-game-is-p-of-forall-le.md)
 
 ## Sources
 

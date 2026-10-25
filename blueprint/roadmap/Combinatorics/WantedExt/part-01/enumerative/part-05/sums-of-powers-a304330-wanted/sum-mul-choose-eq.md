@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_mul_choose_eq
 ---
 
-# Lemma 7
+# Sum of $i \binom{i+k-1}{2k-1}$
 
-**Lemma 7**: `Σ_{i=1}^n i·C(i + k - 1, 2k - 1) =
-(k(2n + 1)/(2k + 1))·C(n + k, 2k)` for `n ≥ 1` and fixed
-positive `k`.
+**Sum of $i \binom{i+k-1}{2k-1}$.** For all natural numbers $k \ge 1$ and $n \ge 1$,
+
+$$\sum_{i=1}^{n} i \binom{i + k - 1}{2k - 1} = \frac{k(2n + 1)}{2k + 1} \binom{n + k}{2k}.$$
 
 ## Depends on
 

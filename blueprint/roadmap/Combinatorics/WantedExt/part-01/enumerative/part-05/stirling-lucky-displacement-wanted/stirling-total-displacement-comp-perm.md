@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.stirlingTotalDisplacement_comp_perm
 ---
 
-# Stirling Total Displacement comp perm
+# Total displacement of a Stirling permutation is invariant under rearrangement
 
-The total displacement of `w ∈ Q_n` is invariant under permuting the entries
-of `w`: `d(w ∘ σ) = d(w)` for every permutation `σ` of the positions (the
-permuted word need not be a Stirling permutation).
+**Total displacement of a Stirling permutation is invariant under rearrangement.** Let
+$w = w_1 \cdots w_{2n}$ be a Stirling permutation of order $n$ and let $\sigma$ be a permutation
+of $\{1, \dots, 2n\}$. Read words of length $2n$ as parking functions, and let $d(v)$ denote the
+total displacement of a word $v$, the sum of the displacements of its cars. Then the rearranged
+word $w \circ \sigma = w_{\sigma(1)} \cdots w_{\sigma(2n)}$ satisfies $d(w \circ \sigma) = d(w)$.
+
+The rearranged word $w \circ \sigma$ need not be a Stirling permutation.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Total Displacement](stirling-total-displacement.md)
+- [Total displacement of a word](stirling-total-displacement.md)
 
 ## Sources
 

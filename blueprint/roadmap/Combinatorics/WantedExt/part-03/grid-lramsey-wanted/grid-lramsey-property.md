@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.GridLRamseyProperty
 ---
 
-# Grid LRamsey Property
+# Grid Ramsey property for Ls
 
-`GridLRamseyProperty k n`: every `k`-coloring of the integer grid `[n] × [n]`,
-`[n] = {1, …, n}`, contains a monochromatic L, i.e. positive integers `x`, `y`, `d`
-such that the points `(x, y)`, `(x + d, y)`, `(x + d, y + d)` all lie in `[n] × [n]`
-and have the same color. A coloring is a map `ℕ × ℕ → Fin k`; its values off the
-grid are irrelevant. The grid Ramsey number `R_k(L)` is the least `n` with this
-property, so `R_k(L) ≤ N` is `GridLRamseyProperty k N` (the property is monotone in
-`n`, see `GridLRamseyProperty.mono`).
+**Grid Ramsey property for Ls.** Let $k$ and $n$ be natural numbers and write
+$[n] = \{1, \dots, n\}$. An L in the grid $[n] \times [n]$ is a triple of points $(x, y)$,
+$(x + d, y)$, $(x + d, y + d)$ with $x$, $y$, $d$ positive integers, $x + d \le n$ and
+$y + d \le n$. The pair $(k, n)$ has the grid Ramsey property for Ls when every coloring of
+$\mathbb{N} \times \mathbb{N}$ with $k$ colors gives the three points of some L in
+$[n] \times [n]$ the same color, that is, contains a monochromatic L. Only the colors on
+$[n] \times [n]$ matter.
+
+The grid Ramsey number $R_k(L)$ is the least $n$ with this property. The property is monotone
+in $n$, so $R_k(L) \le N$ says exactly that $(k, N)$ has it.
 
 ## Depends on
 

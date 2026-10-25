@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.tribonacciLeftmostCarry_zero_one_one_one
 ---
 
-# Tribonacci Leftmost Carry zero one one one
+# Leftmost carrying of $0111$
 
-Carrying `0111 ↦ 1000`.
+**Leftmost carrying of $0111$.** Leftmost carrying takes the word $0111$, written most
+significant digit first, to $1000$.
 
 ## Depends on
 
-- [Tribonacci Leftmost Carry](tribonacci-leftmost-carry.md)
+- [Leftmost carrying](tribonacci-leftmost-carry.md)
 
 ## Sources
 

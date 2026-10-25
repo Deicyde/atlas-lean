@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.antiTribonacciD_small
 ---
 
-# Anti Tribonacci D small
+# First anti-Tribonacci numbers
 
-The first anti-Tribonacci numbers are `6, 16, 27, 36`.
+**First anti-Tribonacci numbers.** Writing $D_n$ for the $n$-th anti-Tribonacci number,
+the first four anti-Tribonacci numbers are $D_1 = 6$, $D_2 = 16$, $D_3 = 27$ and $D_4 = 36$.
 
 ## Depends on
 
-- [Anti Tribonacci D](anti-tribonacci-d.md)
+- [Anti-Tribonacci numbers](anti-tribonacci-d.md)
 
 ## Sources
 

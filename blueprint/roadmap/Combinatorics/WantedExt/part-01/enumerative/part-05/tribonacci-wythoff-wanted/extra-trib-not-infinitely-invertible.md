@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.extraTrib_not_infinitely_invertible
 ---
 
-# Extra Trib not infinitely invertible
+# ExtraTribs cannot be inverted forever
 
-Repeated inversion of an extraTrib stops: there is no infinite chain of extraTribs, each
-the difference-inverse of the previous one.
+**ExtraTribs cannot be inverted forever.** Let $S$ be an extraTrib. There is no sequence
+$S_0, S_1, S_2, \dots$ of functions $\mathbb{Z} \to \mathbb{Z}$ with $S_0 = S$ such that for
+every $k \ge 0$ the function $S_{k+1}$ is an extraTrib and a difference-inverse of $S_k$, that
+is, $S_{k+1}(n+1) - S_{k+1}(n) = S_k(n)$ for all $n \in \mathbb{Z}$.
 
 ## Depends on
 
-- [Is Extra Trib](is-extra-trib.md)
+- [ExtraTribs](is-extra-trib.md)
 
 ## Sources
 

@@ -5,19 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimH_iterate_bounds
 ---
 
-# Maximum Nim H iterate bounds
+# Linear bounds on h_k and their iterates
 
-Lemma 7: for `k ≥ 2` and the maps `h_k⁻(x) = x + x/(k-1)` and `h_k⁺(x) = x + x/(k-1) + 1`
-of Definition 3.2, (i) `(h_k⁻)^p(x) = (k/(k-1))^p x`, (ii)
-`(h_k⁺)^p(x) = (k/(k-1))^p (x + k - 1) - (k - 1)`, and (iii) `h_k⁻(x) ≤ h_k(x) ≤ h_k⁺(x)` for
-every nonnegative integer `x`.
-
-`h_k⁻` and `h_k⁺` are real-valued (their iterates leave the integers), `h_k` is `maximumNimH`
-cast to `ℝ`, and `Nat.iterate` is the functional power; there is no deviation.
+**Linear bounds on h_k and their iterates.** Let $k \ge 2$ be a natural number, let
+$h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on natural numbers, and define the real maps
+$h_k^-(x) = x + \frac{x}{k-1}$ and $h_k^+(x) = x + \frac{x}{k-1} + 1$. Writing $g^p$ for the
+$p$-fold iterate of a map $g$, for all natural numbers $p$ and $x$: (i)
+$(h_k^-)^p(x) = \left(\frac{k}{k-1}\right)^p x$, (ii)
+$(h_k^+)^p(x) = \left(\frac{k}{k-1}\right)^p (x + k - 1) - (k - 1)$, and (iii)
+$h_k^-(x) \le h_k(x) \le h_k^+(x)$.
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

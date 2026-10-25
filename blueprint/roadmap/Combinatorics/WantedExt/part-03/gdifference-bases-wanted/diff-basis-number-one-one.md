@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.diffBasisNumber_one_one
 ---
 
-# Diff Basis Number one one
+# The value $\eta_1(1) = 2$
 
-`η_1(1) = 2`: a difference basis for `[1]` needs two elements, and `{0, 1}` is one.
+**The value $\eta_1(1) = 2$.** Let $\eta_1(1)$ be the least size of a finite set
+$A \subseteq \mathbb{Z}$ containing elements $a, a'$ with $a - a' = 1$. Then $\eta_1(1) = 2$: such a
+set needs two elements, and $\{0, 1\}$ is one.
 
 ## Depends on
 
-- [Diff Basis Number](diff-basis-number.md)
+- [The $g$-difference basis number](diff-basis-number.md)
 
 ## Proof depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

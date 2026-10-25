@@ -6,14 +6,20 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Hardness.Phi_length
 ---
 
-# Phi length
+# Every clause of the Cook–Levin formula has one slot per variable
 
-Every clause of the Cook-Levin formula is dense over the same variables.
+**Every clause of the Cook–Levin formula has one slot per variable.** Let $E$ be an encoding
+of a machine $M$, let $x$ and $Y$ be lists of input symbols of $M$, let $a$ be a symbol of its
+output stack, and let $m, T \in \mathbb{N}$. Put $H = m + (T + 1)d + 1$, where $d$ is the window
+depth of $M$. Then every clause of the Cook–Levin formula $\Phi(E, x, Y, a, m, T)$ is a dense
+clause of length $(T + 1)(A + K H g)$, the number of variables of the layout of $E$ at time bound
+$T$ and height $H$, where $A$, $K$ and $g$ are the label/state block size, the number of stacks
+and the number of symbol codes of that layout.
 
 ## Depends on
 
-- [Phi](../assembly/phi.md)
-- [Num Vars](../family/num-vars.md)
+- [The formula emitted by the host](../assembly/phi.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [Enc](../situation/part-01/enc.md)
 - [Layout](../situation/part-01/layout.md)
 - [Cap H](../situation/part-05/cap-h.md)
@@ -23,17 +29,17 @@ Every clause of the Cook-Levin formula is dense over the same variables.
 
 ## Proof depends on
 
-- [Layout](../family/layout.md)
-- [C Idx](../family/c-idx.md)
-- [X Idx](../family/x-idx.md)
-- [Dense Clause](../family/dense-clause.md)
-- [Family](../family/family.md)
-- [Lits](../family/lits.md)
-- [Ov Lits](../shift/ov-lits.md)
-- [Pf Lits](../shift/pf-lits.md)
-- [Sh Blk](../shift/sh-blk.md)
-- [The family](../shift/sh-family.md)
-- [Sh Lits](../shift/sh-lits.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
+- [Index of a label/state variable](../family/x-idx.md)
+- [Dense clause from a list of literals](../family/dense-clause.md)
+- [The transition clause family](../family/family.md)
+- [Literals of a transition clause](../family/lits.md)
+- [Literals of an overflow clause](../shift/ov-lits.md)
+- [Literals of a pushed-fill clause](../shift/pf-lits.md)
+- [The shift block of a situation and a stack](../shift/sh-blk.md)
+- [The cell-shift clause family](../shift/sh-family.md)
+- [Literals of an in-range shift clause](../shift/sh-lits.md)
 - [N](../situation/part-01/n.md)
 - [Acode](../situation/part-07/acode.md)
 - [Cn](../situation/part-02/cn.md)

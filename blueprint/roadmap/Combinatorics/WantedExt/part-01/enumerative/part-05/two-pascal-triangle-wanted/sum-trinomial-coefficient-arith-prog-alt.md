@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_arith_prog_alternating
 ---
 
-# Corollary 11
+# Alternating sums of trinomial coefficients in an arithmetic progression
 
-**Corollary 11.** For even `b` and `x < b`,
-`∑_{k≥0} binom(n, x+bk)_2 (-1)^k = (1/b) ∑_{j=1}^{b} cos(π(n-x)(1+2j)/b) (1 + 2cos(π(2j+1)/b))^n`.
-The hypothesis `x < b` (from Theorem 9) is added: for `n = 3`, `b = x = 2` the left side is
-`1` and the right side is `0`.
+**Alternating sums of trinomial coefficients in an arithmetic progression.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$.
+For natural numbers $n$, $x$, $b$ with $b$ even and $x < b$,
+
+$$\sum_{k=0}^{2n} (-1)^k \binom{n}{x + bk}_2 = \frac{1}{b} \sum_{j=1}^{b}
+\cos\frac{\pi(n - x)(1 + 2j)}{b} \left(1 + 2\cos\frac{\pi(2j + 1)}{b}\right)^n.$$
+
+The paper sums over all $k \ge 0$ (the terms with $k > 2n$ vanish) and does not state
+$x < b$; without it the identity fails: for $n = 3$ and $b = x = 2$ the left side is $1$ and
+the right side is $0$.
 
 ## Depends on
 

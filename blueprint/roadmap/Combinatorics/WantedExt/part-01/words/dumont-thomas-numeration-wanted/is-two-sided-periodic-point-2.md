@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.IsPeriodicPointWithGrowingSeed.isTwoSidedPeriodicPoint
 ---
 
-# Is Two Sided Periodic Point
+# Periodic points with growing seed are two-sided periodic points
 
-Under the standing hypothesis, `u` is a two-sided periodic point with period `p`.
+**Periodic points with growing seed are two-sided periodic points.** Let $\eta$ map each
+letter of an alphabet $A$ to a finite word over $A$, let $u = (u_i)_{i \in \mathbb{Z}}$ be a
+two-sided word over $A$ and let $p$ be a natural number. If $u$ is a two-sided periodic point
+of $\eta$ with growing seed and least period $p$, then $u$ is a two-sided periodic point of
+$\eta$ with period $p$.
 
 ## Depends on
 
-- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
-- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+- [Two-sided periodic points with growing seed](is-periodic-point-with-growing-seed.md)
+- [Two-sided periodic points](is-two-sided-periodic-point.md)
 
 ## Proof depends on
 
-- [Is Substitution](is-substitution.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

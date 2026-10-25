@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_cycleFour_isP_iff_even
 ---
 
-# Pebbling cycle Four is P iff even
+# Parity decides $(2:1)$-pebbling on $C_4$ in $\hat X_{aabb} \cup X_{abac}$
 
-Theorem 16: a `C_4` `(2:1)`-pebbling game in `\hat X_{aabb} ∪ X_{abac}` is a P-game iff its
-total number of pebbles is even.
+**Parity decides $(2:1)$-pebbling on $C_4$ in $\hat X_{aabb} \cup X_{abac}$.** Consider the
+$(2:1)$-pebbling game on the cycle $C_4$ with vertices $v_0, v_1, v_2, v_3$, where $v_i$ is
+adjacent to $v_{i \pm 1}$ (indices mod $4$), and let $a = (a_0, a_1, a_2, a_3)$ be a position
+with $a_i$ pebbles on $v_i$. Suppose that $a$ lies in $\hat X_{aabb} \cup X_{abac}$, where
+$\hat X_{aabb}$ means that for some $i \in \{0, 1\}$, $a_i \equiv a_{i+1}$ and
+$a_{i+2} \equiv a_{i-1} \pmod 3$, and $X_{abac}$ means that for some $i \in \{0, 1\}$,
+$a_i \equiv a_{i+2} \pmod 3$ and $a_i$, $a_{i+1}$, $a_{i-1}$ are pairwise incongruent mod $3$.
+Then $a$ is a P-position if and only if $a_0 + a_1 + a_2 + a_3$ is even.
 
 ## Depends on
 
-- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
-- [C4 Pattern ABAC](c4-pattern-abac.md)
+- [The set $\hat X_{aabb}$ of $C_4$ positions](c4-pattern-aabbhat.md)
+- [The set $X_{abac}$ of $C_4$ positions](c4-pattern-abac.md)
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

@@ -6,19 +6,24 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.L
 ---
 
-# L
+# The set of Lorentzian polynomials
 
-We set `L n 0 := S n 0`, `L n 1 := S n 1`, and `L n 2 := S n 2`.
-For `d` larger than 2, we define `L n d := { f ∈ M n d | ∂ᵢf ∈ L n (d−1) for all i ∈ [n] }`.
+**The set of Lorentzian polynomials.** For natural numbers $n$ and $d$, the set $L^d_n$ of
+Lorentzian polynomials is a set of homogeneous polynomials of degree $d$ in
+$\mathbb{R}[w_1, \dots, w_n]$, defined by recursion on $d$. For $d \le 2$, $L^d_n = S^d_n$, the set
+of homogeneous stable polynomials of degree $d$ with nonnegative coefficients. For $d \ge 3$,
+$L^d_n$ is the set of $f \in M^d_n$ (the homogeneous polynomials of degree $d$ with nonnegative
+coefficients and M-convex support) such that $\partial_i f \in L^{d-1}_n$ for every
+$i \in \{1, \dots, n\}$, where $\partial_i$ is the partial derivative with respect to $w_i$.
 
 ## Depends on
 
-- [H](h.md)
+- [Homogeneous polynomials of degree $d$](h.md)
 
 ## Proof depends on
 
-- [M](m.md)
-- [S](s.md)
+- [Homogeneous polynomials with M-convex support](m.md)
+- [Stable homogeneous polynomials with nonnegative coefficients](s.md)
 
 ## Sources
 

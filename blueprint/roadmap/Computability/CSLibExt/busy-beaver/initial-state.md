@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.BusyBeaver.initialState
 ---
 
-# Initial State
+# Initial state
 
-The initial state: state `0` if it exists, halted for `n = 0`.
+**Initial state.** For a machine with $n$ working states, the initial state is state $0$ when
+$n > 0$, and the halt state when $n = 0$.
 
 ## Depends on
 

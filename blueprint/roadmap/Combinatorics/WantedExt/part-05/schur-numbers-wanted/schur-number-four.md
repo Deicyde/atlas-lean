@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_four
 ---
 
-# Schur Number four
+# The fourth Schur number
 
-`S(4) = 44`.
+**The fourth Schur number.** The Schur number $S(4)$ equals $44$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

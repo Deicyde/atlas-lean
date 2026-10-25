@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingWord_hundred
 ---
 
-# Kimberling Word hundred
+# The 101st letter of Kimberling's word
 
-Evaluation check: `k₁₀₁ = 0` (OEIS A285431), read from `K₇`.
+**The 101st letter of Kimberling's word.** The letter $k_{101}$ of Kimberling's word
+$k = k_1 k_2 k_3 \cdots$ is $0$ (OEIS A285431).
 
 ## Depends on
 
-- [Kimberling Word](kimberling-word.md)
+- [Kimberling's word](kimberling-word.md)
 
 ## Sources
 

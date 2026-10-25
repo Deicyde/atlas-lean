@@ -6,14 +6,14 @@ proof: formalized
 lean: Cslib.Circuits.rippleCarryAdder_size
 ---
 
-# Ripple Carry Adder size
+# Size of the ripple-carry adder
 
-The `n`-bit adder has `5 n` gates.
+**Size of the ripple-carry adder.** The $n$-bit ripple-carry adder has exactly $5n$ gates.
 
 ## Depends on
 
-- [Arith Signature](arith-signature.md)
-- [Ripple Carry Adder](ripple-carry-adder.md)
+- [Arithmetic basis](arith-signature.md)
+- [Ripple-carry adder](ripple-carry-adder.md)
 
 ## Sources
 

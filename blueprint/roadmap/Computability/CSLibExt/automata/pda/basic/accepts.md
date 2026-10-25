@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Automata.PDA.accepts
 ---
 
-# Accepts
+# Language accepted by a pushdown automaton
 
-The language accepted by empty stack: some computation from the initial
-configuration consumes the whole input and empties the stack.
+**Language accepted by a pushdown automaton.** The language accepted by a pushdown
+automaton $M$, by empty stack, consists of the words $w$ for which some computation of $M$
+leads from the initial configuration on input $w$ to a configuration, in some state, with no
+remaining input and an empty stack.
 
 ## Depends on
 
-- [PDA](pda.md)
+- [Pushdown automaton](pda.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Derives](derives.md)
-- [Init Config](init-config.md)
+- [Pushdown automaton configuration](config.md)
+- [Multi-step computation of a pushdown automaton](derives.md)
+- [Initial configuration](init-config.md)
 
 ## Sources
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.periodDoublingWord_getD
 ---
 
-# Period Doubling Word get D
+# Letters of the period-doubling iterates
 
-`periodDoubling k` is letter `k` of every iterate of the period-doubling substitution
-long enough to contain it.
+**Letters of the period-doubling iterates.** Let $w_m$ be the word obtained by applying the
+period-doubling substitution $1 \mapsto 10$, $0 \mapsto 11$ to the one-letter word $1$ a total of
+$m$ times. For all natural numbers $m$ and $k$ with $k < 2^m$, the letter of $w_m$ at index $k$
+(indices start at $0$) equals the letter of the period-doubling word at index $k$.
 
 ## Depends on
 
-- [Period Doubling](period-doubling.md)
-- [Period Doubling Word](period-doubling-word.md)
+- [The period-doubling word](period-doubling.md)
+- [Iterates of the period-doubling substitution](period-doubling-word.md)
 
 ## Proof depends on
 
-- [Length period Doubling Word](length-period-doubling-word.md)
+- [Length of the period-doubling iterates](length-period-doubling-word.md)
 
 ## Sources
 

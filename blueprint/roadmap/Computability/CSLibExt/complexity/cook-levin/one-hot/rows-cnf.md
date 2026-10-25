@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.rowsCNF
 ---
 
-# Rows CNF
+# At-most-one clauses of the first rows of a cell
 
-Pairwise at-most-one clauses of rows `y' < y` (row `y'` = the pairs `x < y'`).
+**At-most-one clauses of the first rows of a cell.** For natural numbers $V$, $B$ and $y$,
+write $p_i$ for the variable with index $i$. This is the CNF formula listing, for
+$y' = 0, 1, \dots, y - 1$ in turn and within each for $x = 0, 1, \dots, y' - 1$ in turn, the
+dense clause over $V$ variables built from the literals $\lnot p_{B + x}$ and $\lnot p_{B + y'}$:
+its slot $i < V$ holds the literal on $p_i$ if there is one and is empty otherwise.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ Pairwise at-most-one clauses of rows `y' < y` (row `y'` = the pairs `x < y'`).
 
 ## Proof depends on
 
-- [Dense Clause](../family/dense-clause.md)
-- [Amo Lits](amo-lits.md)
+- [Dense clause from a list of literals](../family/dense-clause.md)
+- [At-most-one literals for a pair](amo-lits.md)
 - [Clause](../../dense-sat/clause.md)
 
 ## Sources

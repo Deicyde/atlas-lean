@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.isRatCopy_refl
 ---
 
-# Is Rat Copy refl
+# Every finite set of rationals is a copy of itself
 
-Every finite set of rationals is a copy of itself.
+**Every finite set of rationals is a copy of itself.** For every finite set $A$ of rational
+numbers, $A$ is a copy of $A$.
 
 ## Depends on
 
-- [Is Rat Copy](is-rat-copy.md)
+- [Copies of finite sets of rationals](is-rat-copy.md)
 
 ## Sources
 

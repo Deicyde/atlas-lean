@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.greedySubsumfreeBelow
 ---
 
-# Greedy Subsumfree Below
+# Members of a greedy $3$-subsumfree sequence below a bound
 
-The members below `m` of the greedy `3`-subsumfree sequence `S_{x,y,z}`: the start
-values `x < y < z`, and every later number that is not a sum of three different
-earlier members.
+**Members of a greedy $3$-subsumfree sequence below a bound.** For natural numbers $x$, $y$
+and $z$ (the source takes $x < y < z$), let $S_{x,y,z}$ consist of $x$, $y$, $z$ and every natural
+number $n > z$ that is not a sum $a + b + c$ of members $a < b < c$ of $S_{x,y,z}$ smaller than
+$n$. This definition gives, for each natural number $m$, the finite set of members of $S_{x,y,z}$
+below $m$.
 
 ## Depends on
 

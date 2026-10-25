@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isUncommonOverIntegers_one_two_neg_one_neg_two
 ---
 
-# Is Uncommon Over Integers one two neg one neg two
+# Uncommonness of $x + 2y - z - 2w = 0$ over the integers
 
-The equation `x + 2y - z - 2w = 0` is `r`-uncommon over the integers for every
-`r ≥ 2`.
+**Uncommonness of $x + 2y - z - 2w = 0$ over the integers.** For every $r \ge 2$,
+the equation $x + 2y - z - 2w = 0$ is $r$-uncommon over the integers.
 
 ## Depends on
 
-- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
+- [Uncommon equations over the integers](is-uncommon-over-integers.md)
 
 ## Sources
 

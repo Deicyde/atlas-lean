@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_general_lower_bounds
 ---
 
-# Card restricted Signed Sumset general lower bounds
+# Lower bounds for restricted signed sumsets of nonnegative integers
 
-For positive `h ≤ k` and a `k`-element finset `A` of nonnegative integers, the two
-implications formalize respectively the cases `0 ∉ A` and `0 ∈ A`. Both paper bounds are
-multiplied by `2` to avoid integer division. The trailing optimality remark for `h=1,2,k`
-is omitted as requested.
+**Lower bounds for restricted signed sumsets of nonnegative integers.** Let $h$ and $k$ be
+integers with $1 \le h \le k$, let $A$ be a set of $k$ nonnegative integers, and write
+$h^{\wedge}_{\pm} A$ for the restricted signed $h$-fold sumset of $A$. If $0 \notin A$, then
+$2|h^{\wedge}_{\pm} A| \ge 4(hk - h^2) + h(h+1) + 2$; if $0 \in A$, then
+$2|h^{\wedge}_{\pm} A| \ge 4(hk - h^2) + h(h-1) + 2$.
+
+The source states these bounds divided by $2$. Its remark that they are optimal for
+$h = 1$, $h = 2$ and $h = k$ is not formalized.
 
 ## Depends on
 

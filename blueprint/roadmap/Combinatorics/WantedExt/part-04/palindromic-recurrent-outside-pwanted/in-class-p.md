@@ -6,20 +6,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.InClassP
 ---
 
-# In Class P
+# Class P
 
-Class P (Hof–Knill–Simon): `φ a = p ++ q` for a fixed palindrome `p`
-and letter palindromes `q` (Labbé 2014, Section 2).
+**Class P.** A morphism $\varphi$ is in class P (Hof–Knill–Simon) when there is a palindrome $p$
+such that for every letter $a$, $\varphi(a) = p q_a$ for some palindrome $q_a$. The palindromes
+$p$ and $q_a$ may be empty.
 
 ## Depends on
 
-- [Morphism](morphism.md)
+- [Morphisms of the ternary alphabet](morphism.md)
 
 ## Proof depends on
 
-- [Is Palindrome](is-palindrome.md)
-- [Sigma](sigma.md)
+- [Palindromes](is-palindrome.md)
+- [The ternary alphabet](sigma.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PalindromicRecurrentOutsidePWanted](../../../../../sources/v2/WantedExt.md)
+- Labbé 2014, Section 2.

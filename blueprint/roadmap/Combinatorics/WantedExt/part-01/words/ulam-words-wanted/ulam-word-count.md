@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Ulam words](is-ulam-word.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

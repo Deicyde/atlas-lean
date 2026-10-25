@@ -5,9 +5,11 @@ statement: formalized
 lean: KomlosDiscrepancyWanted.kuniskyInfinitelyManyDimensionsLowerBound
 ---
 
-# Kunisky Infinitely Many Dimensions Lower Bound
+# Infinitely many dimensions with Komlós constant at least $1 + \sqrt{2}$ (statement)
 
-The catalogue's literal infinite-dimension endpoint assertion is unverified.
+**Infinitely many dimensions with Komlós constant at least $1 + \sqrt{2}$ (statement).** The
+statement that there are infinitely many natural numbers $n \ge 1$ such that the Komlós constant
+in dimension $n$ is at least $1 + \sqrt{2}$.
 
 ## Depends on
 

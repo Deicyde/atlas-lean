@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.weighted_free_sum_reflexive
 ---
 
-# Weighted free sum reflexive
+# Reflexivity of the weighted free sum
 
-Theorem 2's first sentence, the direction that holds for the weight vector alone:
-if `Δ_(1,p)` and `Δ_(1,w)` are reflexive and `q = (p, (1+∑pᵢ)w)`, then `Δ_(1,q)` is
-reflexive.  The geometric clause “arises as a free sum `Δ_(1,p) *_0 Δ_(1,w)`” is not
-formalized, and the converse is not stated: without that clause it is false, e.g.
-`p = (2)`, `w = (1)`, `q = (2,3)` has `Δ_(1,q)` reflexive (`2, 3 ∣ 6`) while `Δ_(1,p)` is
-not (`2 ∤ 3`).
+**Reflexivity of the weighted free sum.** Let $p = (p_1, \dots, p_m)$ and
+$w = (w_1, \dots, w_k)$ be lists of positive integers such that the weighted projective space
+simplices $\Delta_{(1,p)}$ and $\Delta_{(1,w)}$ are reflexive, and let
+$q = (p_1, \dots, p_m, (1 + \sum_i p_i) w_1, \dots, (1 + \sum_i p_i) w_k)$. Then $\Delta_{(1,q)}$
+is reflexive.
+
+Only this direction is stated, and the source's clause that $\Delta_{(1,q)}$ arises as the free
+sum $\Delta_{(1,p)} *_0 \Delta_{(1,w)}$ is not formalized. Without that clause the converse is
+false: $p = (2)$ and $w = (1)$ give $q = (2, 3)$, and $\Delta_{(1,q)}$ is reflexive since $2$ and
+$3$ divide $6$, while $\Delta_{(1,p)}$ is not since $2$ does not divide $3$.
 
 ## Depends on
 
-- [Is Reflexive](is-reflexive.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

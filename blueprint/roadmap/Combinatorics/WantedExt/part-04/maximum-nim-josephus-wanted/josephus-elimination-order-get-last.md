@@ -6,21 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.josephusEliminationOrder_getLast?
 ---
 
-# Josephus Elimination Order get Last?
+# The survivor is the last entry of the Josephus elimination order
 
-For `k ≥ 1` and `n ≥ 1`, the last entry of the elimination order (the survivor) is
-the one-based Josephus number `josephus k n`, connecting the simulation to the
-recurrence `J(n+1) = ((J(n) + k - 1) mod (n+1)) + 1`. The paper's range `k ≥ 2` is
-relaxed to `k ≥ 1`; there is no other deviation.
+**The survivor is the last entry of the Josephus elimination order.** For natural numbers
+$k \ge 1$ and $n \ge 1$, the Josephus elimination order with step $k$ on the circle
+$1, \dots, n$ is nonempty and its last entry is $J_k(n)$, the value at $n$ of the Josephus
+function for elimination step $k$.
 
 ## Depends on
 
 - [Josephus survivor function](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
-- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Josephus elimination order](josephus-elimination-order.md)
 
 ## Proof depends on
 
-- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
+- [Fuel-bounded Josephus simulation](josephus-elimination-order-aux.md)
 
 ## Sources
 

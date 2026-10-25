@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture
 ---
 
-# Conjecture
+# Palindromic uniformly recurrent fixed point outside class P
 
-[OWR-4425-004] Labbé's counterexample (EJC 2014, Theorem 1): a primitive
-ternary morphism has a palindromic, uniformly recurrent fixed point `u`
-such that no morphism fixing `u`, other than the identity, has a
-conjugate in class P. Fixing is the entry's fixed-point notion
-(`IsFixedPoint ψ u`: `u` is the prolongable-letter limit, hence fixed
-by `ψ`).
+**Palindromic uniformly recurrent fixed point outside class P.** The proposition that there
+exist a primitive morphism $\varphi$ on the alphabet $\{0, 1, 2\}$ and an infinite word $u$ such
+that $u$ is a fixed point of $\varphi$, $u$ is palindromic and uniformly recurrent, and no morphism
+$\psi$ that has $u$ as a fixed point and is not the identity is conjugate to a morphism in class P.
+
+Here a fixed point of a morphism $\psi$ is an infinite word $u$ for which there is a letter $a$ such
+that $\psi(a)$ begins with $a$, the words $\psi^m(a)$ are arbitrarily long, and every $\psi^m(a)$ is
+a prefix of $u$.
 
 ## Depends on
 
@@ -21,16 +23,17 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [In Class P](in-class-p.md)
-- [Inf Word](inf-word.md)
-- [Is Fixed Point](is-fixed-point.md)
-- [Is Identity Morphism](is-identity-morphism.md)
-- [Is Palindromic](is-palindromic.md)
-- [Is Primitive](is-primitive.md)
-- [Is Uniformly Recurrent](is-uniformly-recurrent.md)
-- [Morph Conjugate](morph-conjugate.md)
-- [Morphism](morphism.md)
+- [Class P](in-class-p.md)
+- [Infinite words](inf-word.md)
+- [Fixed point of a morphism](is-fixed-point.md)
+- [Identity morphism](is-identity-morphism.md)
+- [Palindromic infinite words](is-palindromic.md)
+- [Primitive morphisms](is-primitive.md)
+- [Uniformly recurrent infinite words](is-uniformly-recurrent.md)
+- [Conjugate morphisms](morph-conjugate.md)
+- [Morphisms of the ternary alphabet](morphism.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PalindromicRecurrentOutsidePWanted](../../../../../sources/v2/WantedExt.md)
+- [OWR-4425-004] Labbé, A counterexample to a question of Hof, Knill and Simon, EJC 21 (2014) #P3.11, Theorem 1.

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.wythoffGrundy_one_near_zero
 ---
 
-# Wythoff Grundy one near zero
+# Grundy-one positions of Wythoff's game lie near P-positions
 
-Every position with Grundy number `1` in classical Wythoff's game lies within Euclidean
-distance `√20` of a position with Grundy number `0` (a P-position).
+**Grundy-one positions of Wythoff's game lie near P-positions.** Let
+$\mathcal{G}_1(x, y, 0)$ be the Grundy number of the position $(x, y, 0)$ of Wythoff's game with
+a pass, in which the pass has been used; this is the Grundy number of $(x, y)$ in classical
+Wythoff's game. If $\mathcal{G}_1(x, y, 0) = 1$, then there are $v, w \in \mathbb{N}$ with
+$\mathcal{G}_1(v, w, 0) = 0$ and $(x - v)^2 + (y - w)^2 \le 20$: every position with Grundy
+number $1$ lies within Euclidean distance $\sqrt{20}$ of a P-position.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
 
 ## Sources
 

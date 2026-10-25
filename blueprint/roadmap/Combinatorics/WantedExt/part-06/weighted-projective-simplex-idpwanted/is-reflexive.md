@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsReflexive
 ---
 
-# Is Reflexive
+# Reflexive polytopes
 
-Reflexivity in the height-by-height form allowed in the task: an interior
-lattice point `c` translates the lattice points of `(t-1)P` bijectively onto
-the interior lattice points of `tP`, for every positive height `t`.  This is
-the paper's cone/interior condition, not its later divisibility criterion.
+**Reflexive polytopes.** Let $P \subseteq \mathbb{R}^n$, with coordinates indexed by a finite
+set of size $n$, and write $tP = \{t y : y \in P\}$. Then $P$ is reflexive when there is a lattice
+point $c$ in the interior of $P$ such that, for every integer $t \ge 1$, the lattice points in the
+interior of $tP$ are exactly the points $c + y$ with $y$ a lattice point of $(t-1)P$.
+
+This is the interior-point characterisation of reflexivity, stated height by height; it is not
+the divisibility criterion for weighted simplices.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lattice Point](is-lattice-point.md)
-- [Polytope Dilate](polytope-dilate.md)
+- [Lattice points of a set](is-lattice-point.md)
+- [Dilate of a set](polytope-dilate.md)
 
 ## Sources
 

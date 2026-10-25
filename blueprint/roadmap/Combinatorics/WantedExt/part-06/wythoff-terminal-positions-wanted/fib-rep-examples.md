@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.fibRep_examples
 ---
 
-# Fib Rep examples
+# Greedy Fibonacci representations of 0, 2, 4, 7 and 12
 
-`rep_F(0) = ε`, `rep_F(2) = 10`, `rep_F(4) = 101`, `rep_F(7) = 1010`,
-`rep_F(12) = 10101` (Table `tab:K1`).
+**Greedy Fibonacci representations of 0, 2, 4, 7 and 12.** With $F_0 = 1$, $F_1 = 2$ and
+$F_{i+2} = F_{i+1} + F_i$, the greedy Fibonacci representations are
+$\mathrm{rep}_F(0) = \varepsilon$ (the empty word), $\mathrm{rep}_F(2) = 10$,
+$\mathrm{rep}_F(4) = 101$, $\mathrm{rep}_F(7) = 1010$ and $\mathrm{rep}_F(12) = 10101$.
 
 ## Depends on
 
-- [Fib Rep](fib-rep.md)
+- [Greedy Fibonacci representation](fib-rep.md)
 
 ## Sources
 

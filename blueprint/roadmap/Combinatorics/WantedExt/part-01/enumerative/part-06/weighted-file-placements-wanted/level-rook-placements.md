@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.levelRookPlacements
 ---
 
-# Level Rook Placements
+# Level rook placements
 
-`m`-level rook placements: file placements with no two cells in the same level (rows
-`r` with the same `r / m`).
+**Level rook placements.** Let $m$ be a natural number and let $B$ be the board with column
+heights $b_1, \dots, b_n$, rows numbered from $0$, where row $r$ lies in level $\lfloor r/m \rfloor$
+(every row lies in level $0$ when $m = 0$). An $m$-level rook placement on $B$ is a file placement
+on $B$, that is a set of cells of $B$ with no two in the same column, that has no two cells in the
+same level.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [File Placements](file-placements.md)
+- [File placements](file-placements.md)
 
 ## Sources
 

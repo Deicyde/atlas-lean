@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.affineFreeSum
 ---
 
-# Affine Free Sum
+# Affine free sum
 
-The affine free sum `P *_v Q`, embedded as
-`conv((P×0) ∪ (0×(Q-v)))`.  Sum-indexed coordinates are canonically
-`ℝ^(n+m)` and avoid choosing an explicit equivalence with `Fin (n+m) → ℝ`.
+**Affine free sum.** For sets $P \subseteq \mathbb{R}^n$ and $Q \subseteq \mathbb{R}^m$ and a
+point $v \in \mathbb{R}^m$, the affine free sum $P *_v Q \subseteq \mathbb{R}^n \times \mathbb{R}^m$
+is the convex hull of $(P \times \{0\}) \cup (\{0\} \times (Q - v))$, where
+$Q - v = \{y - v : y \in Q\}$.
 
 ## Depends on
 

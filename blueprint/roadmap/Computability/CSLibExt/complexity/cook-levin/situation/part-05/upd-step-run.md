@@ -13,7 +13,7 @@ configuration.
 
 ## Depends on
 
-- [Family](../../family/family.md)
+- [The transition clause family](../../family/family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](code-holds.md)
@@ -29,7 +29,7 @@ configuration.
 
 ## Proof depends on
 
-- [X Idx](../../family/x-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [Good](../part-03/good.md)
 - [Code](../part-03/code.md)
 - [Good step](../part-03/good-step.md)

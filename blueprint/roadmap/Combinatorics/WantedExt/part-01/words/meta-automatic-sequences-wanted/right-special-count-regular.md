@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.rightSpecial_count_regular
 ---
 
-# Right Special count regular
+# Right-special factor counts of automatic sequences are regular
 
-Lemma 28: if `a` is `k`-automatic then `n ↦ #RS_a(n)` is `k`-regular, and if it is
-bounded (by `C`) then it is `k`-automatic (as a `Fin (C + 1)`-valued sequence). The
-clause "effectively computable from any DFAO for `a`" is an algorithmic claim and is
-omitted.
+**Right-special factor counts of automatic sequences are regular.** Let $k$ be a natural
+number and $a$ an infinite binary word that is $k$-automatic, and for each $n$ let
+$\mathrm{RS}_a(n)$ be the set of right-special factors of $a$ of length $n$. Then the integer
+sequence $n \mapsto \#\mathrm{RS}_a(n)$ is $k$-regular. Moreover, for every natural number $C$
+with $\#\mathrm{RS}_a(n) \le C$ for all $n$, the sequence $n \mapsto \#\mathrm{RS}_a(n)$, taken
+with values in $\{0, 1, \ldots, C\}$, is $k$-automatic.
+
+The source also states that this sequence is effectively computable from any automaton for
+$a$; that algorithmic claim is not part of this statement.
 
 ## Depends on
 
 - [Automatic sequences via finite automata](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
 - [$k$-regular sequence](../../../../MathlibExt/part-02/words/regular-sequence/is-kregular-sequence.md)
-- [Right Special Factors](right-special-factors.md)
+- [Right-special factors](right-special-factors.md)
 
 ## Sources
 

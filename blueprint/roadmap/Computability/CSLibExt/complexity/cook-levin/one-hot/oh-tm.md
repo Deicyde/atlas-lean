@@ -5,25 +5,33 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.ohTM
 ---
 
-# The generator as a genuine `FinTM2`
+# The one-hot generator as a finite multi-stack machine
 
-**The generator as a genuine `FinTM2`** (finiteness check only).
+**The one-hot generator as a finite multi-stack machine.** The one-hot generator for a layout,
+bundled as a Mathlib multi-stack Turing machine with finitely many stacks, labels and internal
+states: its stacks are the output bit stack and one unary counter for each counter of the
+generator, its input stack is the time counter and its output stack is the output stack, it
+starts at its first precomputation label with internal state false, and it runs the generator's
+program.
+
+This bundling only checks the finiteness conditions; the generator also reads the height bound
+from the height counter, which a bundled machine with a single input stack does not record.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CK](ck.md)
-- [CL](cl.md)
-- [GL](gl.md)
-- [LS](ls.md)
-- [PS](ps.md)
-- [Prog](prog.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Counters of the one-hot generator](ck.md)
+- [Clause kinds of a one-hot cell](cl.md)
+- [Control labels of the one-hot generator](gl.md)
+- [Stages of the one-hot literal routine](ls.md)
+- [Stages of the one-hot precomputation](ps.md)
+- [The one-hot generator](prog.md)
 
 ## Sources
 

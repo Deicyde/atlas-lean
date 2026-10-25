@@ -16,7 +16,7 @@ All items `(A, p, q)` with `A` a left-hand side and `p, q` listed states.
 
 ## Proof depends on
 
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 
 ## Sources
 

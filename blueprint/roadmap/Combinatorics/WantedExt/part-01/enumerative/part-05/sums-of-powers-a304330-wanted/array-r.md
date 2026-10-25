@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayR
 ---
 
-# Array R
+# The array $R(k, m)$
 
-`R(k, m) = Σ_{j=0}^m (-1)^j C(2m, j) (m - j)^{2k}`.
+**The array $R(k, m)$.** For natural numbers $k$ and $m$, $R(k, m)$ is the integer
+$\sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$.
 
 ## Depends on
 

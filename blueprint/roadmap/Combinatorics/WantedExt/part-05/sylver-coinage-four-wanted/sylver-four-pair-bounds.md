@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sylver_four_pair_bounds
 ---
 
-# Sylver four pair bounds
+# Conway's bounds for 4-pairs
 
-4-pairs with `7 < q < x_q` satisfy Conway's bounds `2q < x_q < 3q`. The 4-pair is given
-by the characterization of Proposition 7: `x_q` odd, `{4, x_q}` an N-position and
-`{4, x_q, q}` a P-position.
+**Conway's bounds for 4-pairs.** Let $q$ and $x$ be odd natural numbers with $7 < q < x$ such
+that $\{4, x\}$ is an N-position and $\{4, x, q\}$ is a P-position of Sylver Coinage. Then
+$2q < x < 3q$.
+
+By the characterization of Proposition 7, such pairs $(q, x)$ are the 4-pairs of the source.
 
 ## Depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Sources
 

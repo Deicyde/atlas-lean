@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.partialPlacement_zero_examples
 ---
 
-# Partial Placement zero examples
+# First partial placement sequence of the integers from 3 on
 
-Characteristic values: for `X = (3, 4, 5, …)`, `P_0(X)` has `3` at positions `0`, `4` and
-`-4` and is empty at positions `1, 2, 3` (Table 4).
+**First partial placement sequence of the integers from 3 on.** Let $X = (3, 4, 5, \dots)$,
+that is, $x_i = i + 3$. The partial placement sequence $P_0(X)$ holds the term $3$ at
+positions $0$, $4$ and $-4$, and its positions $1$, $2$ and $3$ are empty.
 
 ## Depends on
 
-- [Partial Placement](partial-placement.md)
+- [Partial placement sequences](partial-placement.md)
 
 ## Sources
 

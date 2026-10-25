@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.slowANimLegalSeq_reduction_iff
 ---
 
-# Slow ANim Legal Seq reduction iff
+# Legal move sequences depend only on the reduction
 
-Lemma 1: a sequence of moves is legal from `p` iff it is legal from its reduction `r(p)`.
+**Legal move sequences depend only on the reduction.** Let $A \subseteq \{1, \dots, n\}$ and
+let $p$ be a position of Slow$A$-Nim on $n$ stacks, with reduction $r(p)$. A finite sequence of
+moves, each given by its set of stacks, is legal from $r(p)$ if and only if it is legal from $p$.
 
 ## Depends on
 
-- [Slow ANim Legal Seq](slow-anim-legal-seq.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Legal move sequences in Slow A-Nim](slow-anim-legal-seq.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

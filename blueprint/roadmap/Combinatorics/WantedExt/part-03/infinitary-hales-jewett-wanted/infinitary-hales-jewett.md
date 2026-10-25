@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.infinitary_halesJewett
 ---
 
-# Infinitary hales Jewett
+# Infinitary Hales–Jewett theorem
 
-Infinitary Hales–Jewett theorem. For a finite alphabet `A` and any finite coloring of the
-words over `A`, there is a sequence `(w_n)` of variable words over `A` such that all words
-`w_{m₁}(a₁) w_{m₂}(a₂) ⋯ w_{m_l}(a_l)` with `l ≥ 1`, `m₁ < ⋯ < m_l` and `a_i ∈ A` have the same
-color.
+**Infinitary Hales–Jewett theorem.** Let $A$ be a finite alphabet, and color the finite words
+over $A$ with finitely many colors. A variable word over $A$ is a finite word over $A \cup \{v\}$,
+for a variable $v \notin A$, in which $v$ occurs, and $w(a)$ is the word obtained from $w$ by
+replacing every occurrence of $v$ by the letter $a$. Then there are a sequence $w_0, w_1, \dots$ of
+variable words over $A$ and a color $k$ such that the word
+$w_{m_1}(a_1) w_{m_2}(a_2) \cdots w_{m_l}(a_l)$ has color $k$ for all $l \ge 1$, all
+$m_1 < m_2 < \cdots < m_l$ in $\mathbb{N}$ and all $a_1, \dots, a_l \in A$.
 
 ## Depends on
 

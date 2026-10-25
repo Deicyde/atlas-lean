@@ -5,22 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_reconstruction
 ---
 
-# Lemma 6 (reconstruction algorithm)
+# Reconstruction of a binary word from its relative position function
 
-**Lemma 6 (reconstruction algorithm).** For `w ∈ 𝒲` with relative position function `r`:
-if `r(1) > 0` then `p_a(1) = 0`, `p_b(1) = r(1)`, otherwise `p_a(1) = -r(1)`, `p_b(1) = 0`; and
-for `n ≥ 1`, with `k_{n+1}` the least position not among `p_a(1), …, p_a(n), p_b(1), …, p_b(n)`,
-`r(n+1) > 0` gives `p_a(n+1) = k_{n+1}`, `p_b(n+1) = k_{n+1} + r(n+1)`, and `r(n+1) < 0` gives
-`p_a(n+1) = k_{n+1} - r(n+1)`, `p_b(n+1) = k_{n+1}`. (The algorithm's output is stated as the
-equality of the computed values with the true positions; `r(1) ≠ 0`, so "otherwise" is
-`r(1) < 0`. Positions start at `0`, which always lies in `A_n ∪ B_n`, so taking the minimum over
-`ℕ = {1, 2, …}` or over `ℤ_{≥0}` gives the same `k_{n+1}`.)
+**Reconstruction of a binary word from its relative position function.** Let $w$ be an
+infinite binary word over $\{a, b\}$ in which both letters occur infinitely often, let $p_a(n)$
+and $p_b(n)$ be the positions (counted from $0$) of the $n$-th $a$ and the $n$-th $b$ in $w$, and
+let $r(n) = p_b(n) - p_a(n)$. If $r(1) > 0$ then $p_a(1) = 0$ and $p_b(1) = r(1)$; if $r(1) < 0$
+then $p_a(1) = -r(1)$ and $p_b(1) = 0$. For every $n \ge 1$, let $k_{n+1}$ be the least natural
+number different from all of $p_a(1), \dots, p_a(n), p_b(1), \dots, p_b(n)$. If $r(n+1) > 0$ then
+$p_a(n+1) = k_{n+1}$ and $p_b(n+1) = k_{n+1} + r(n+1)$; if $r(n+1) < 0$ then
+$p_a(n+1) = k_{n+1} - r(n+1)$ and $p_b(n+1) = k_{n+1}$.
+
+The paper states this as an algorithm; here its output is stated as equalities with the true
+positions. Since $r(1) \ne 0$, the paper's "otherwise" in the first step is the case $r(1) < 0$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

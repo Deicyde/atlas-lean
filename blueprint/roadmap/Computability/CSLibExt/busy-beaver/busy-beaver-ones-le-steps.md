@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.BusyBeaver.busyBeaverOnes_le_steps
 ---
 
-# Busy Beaver Ones le steps
+# The Busy Beaver score is at most the shift
 
-The score never exceeds the runtime, at the level of the maxima.
+**The Busy Beaver score is at most the shift.** For every $n \in \mathbb{N}$, Rado's score
+function $\Sigma$ and Rado's shift function $S$ satisfy $\Sigma(n) \le S(n)$: the largest number
+of ones left on the tape by a halting $n$-state two-symbol machine started on the blank tape is
+at most the largest halting time of such a machine.
 
 ## Depends on
 
-- [Busy Beaver Ones](busy-beaver-ones.md)
-- [Busy Beaver Steps](busy-beaver-steps.md)
+- [Busy Beaver score function](busy-beaver-ones.md)
+- [Busy Beaver shift function](busy-beaver-steps.md)
 
 ## Proof depends on
 
-- [Halts](halts.md)
-- [Machine](machine.md)
-- [Move](move.md)
-- [Halt Time](halt-time.md)
-- [Ones At](ones-at.md)
-- [Ones At le steps](ones-at-le-steps.md)
-- [Score Of](score-of.md)
-- [Steps Of](steps-of.md)
+- [Halting on the blank tape](halts.md)
+- [Busy Beaver machine](machine.md)
+- [Head movement](move.md)
+- [Halting time](halt-time.md)
+- [Number of ones after $t$ steps](ones-at.md)
+- [At most $t$ ones after $t$ steps](ones-at-le-steps.md)
+- [Score of a machine](score-of.md)
+- [Runtime of a Busy Beaver machine](steps-of.md)
 
 ## Sources
 

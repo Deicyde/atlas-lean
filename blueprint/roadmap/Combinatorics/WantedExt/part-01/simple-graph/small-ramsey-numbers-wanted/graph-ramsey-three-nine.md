@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_nine
 ---
 
-# Graph Ramsey three nine
+# The value of $R(3, 9)$
 
-`R(3,9) = 36`.
+**The value of $R(3, 9)$.** The classical Ramsey number $R(3, 9)$ equals $36$.
 
 ## Depends on
 

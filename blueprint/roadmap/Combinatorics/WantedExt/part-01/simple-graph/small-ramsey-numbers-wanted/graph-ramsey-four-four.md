@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_four_four
 ---
 
-# Graph Ramsey four four
+# The value of $R(4, 4)$
 
-`R(4,4) = 18`.
+**The value of $R(4, 4)$.** The classical Ramsey number $R(4, 4)$ equals $18$.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoAbRed
 ---
 
-# Rho Ab Red
+# Reduced abelian complexity
 
-The paper's reduced abelian complexity `ρ^{ab,red}_x(n)`:
-reductions counted up to rearrangement, i.e. by length and
-number of `0`s.
+**Reduced abelian complexity.** For a binary sequence $x = x_0 x_1 x_2 \cdots$ and
+$n \in \mathbb{N}$, the reduced abelian complexity $\rho^{\mathrm{ab,red}}_x(n)$ is the number of
+distinct pairs $(|\mathrm{red}(v)|, |\mathrm{red}(v)|_0)$, where $v$ ranges over the length-$n$
+factors of $x$, $\mathrm{red}(v)$ is the reduction of $v$ (each run of equal letters collapsed to
+a single letter) and $|w|_0$ is the number of letters $0$ in $w$. Equivalently, it counts the
+reductions of length-$n$ factors of $x$ up to rearrangement of their letters.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Set of factors of a given length](../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
-- [Red Word](red-word.md)
+- [Reduction of a binary word](red-word.md)
 
 ## Sources
 

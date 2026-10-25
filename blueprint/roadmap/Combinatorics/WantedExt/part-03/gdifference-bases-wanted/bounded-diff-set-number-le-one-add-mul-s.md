@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.boundedDiffSetNumber_le_one_add_mul_sqrt
 ---
 
-# Bounded Diff Set Number le one add mul sqrt
+# Upper bound for sets with bounded difference multiplicities
 
-Upper bound: for fixed `g ≥ 1`, `α_g(n) ≤ (1 + o(1)) √(gn)`.
+**Upper bound for sets with bounded difference multiplicities.** For natural numbers $g$ and
+$n$, let $\alpha_g(n)$ be the largest size of a set $A \subseteq \{1, \dots, n\}$ such that every
+nonzero integer $x$ is the difference $a - a'$ of at most $g$ ordered pairs
+$(a, a') \in A \times A$. If $g \ge 1$, then for every real $\varepsilon > 0$ we have
+$\alpha_g(n) \le (1 + \varepsilon)\sqrt{gn}$ for all sufficiently large $n$; that is,
+$\alpha_g(n) \le (1 + o(1))\sqrt{gn}$.
 
 ## Depends on
 
-- [Bounded Diff Set Number](bounded-diff-set-number.md)
+- [Maximal sets with bounded difference multiplicities](bounded-diff-set-number.md)
 
 ## Sources
 

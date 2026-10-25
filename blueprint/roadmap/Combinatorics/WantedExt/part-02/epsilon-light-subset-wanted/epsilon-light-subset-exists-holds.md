@@ -6,14 +6,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.EpsilonLightSubsetWanted.epsilonLightSubsetExists_holds
 ---
 
-# Epsilon Light Subset Exists holds
+# Every graph has a large ε-light vertex set
 
-Resolved true: Question 6 of arXiv:2602.05192 is proved: v2 (16 Mar 2026), Appendix B.6 proves
-Lemma B.1 (an epsilon-light subset of size at least eps*n/42 exists in every weighted graph).
+**Every graph has a large ε-light vertex set.** There is a real constant $c > 0$ such that for
+every natural number $n$, every simple graph $G$ on the vertex set $\{0, \dots, n-1\}$ and every
+real number $\varepsilon$ with $0 < \varepsilon < 1$, there is a set $S$ of vertices with at least
+$c \varepsilon n$ elements that is $\varepsilon$-light in $G$: the matrix $\varepsilon L - L_S$ is
+positive semidefinite, where $L$ is the real Laplacian matrix of $G$ and $L_S$ is the real
+Laplacian matrix of the graph on all $n$ vertices whose edges are the edges of $G$ with both
+endpoints in $S$.
+
+Appendix B.6 of the source proves this, with $c = 1/42$, as Lemma B.1 (stated for weighted graphs).
 
 ## Depends on
 
-- [Epsilon Light Subset Exists](epsilon-light-subset-exists.md)
+- [The large ε-light subset property](epsilon-light-subset-exists.md)
 
 ## Sources
 

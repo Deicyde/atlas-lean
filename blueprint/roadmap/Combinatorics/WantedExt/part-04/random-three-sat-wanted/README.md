@@ -4,5 +4,5 @@ navigation: module
 
 # Random Three Sat
 
-- [Diaz Kirousis Mitsche Perez Upper Bound wanted](diaz-kirousis-mitsche-perez-upper-bound.md)
-- [Hajiaghayi Sorkin Lower Bound wanted](hajiaghayi-sorkin-lower-bound-wanted.md)
+- [Díaz–Kirousis–Mitsche–Pérez-Giménez upper bound for random 3-SAT](diaz-kirousis-mitsche-perez-upper-bound.md)
+- [Hajiaghayi–Sorkin lower bound for random 3-SAT](hajiaghayi-sorkin-lower-bound-wanted.md)

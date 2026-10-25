@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimplicialSphereShared.faceCount
 ---
 
-# Face Count
+# Face numbers of a simplicial sphere
 
-Number of `k`-dimensional faces (faces with `k+1` vertices).
+**Face numbers of a simplicial sphere.** For a finite simplicial $(d-1)$-sphere $X$ and a
+natural number $k$, $f_k(X)$ is the number of $k$-dimensional faces of $X$, that is, of faces
+with exactly $k+1$ vertices.
 
 ## Depends on
 
-- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
+- [Finite simplicial sphere](finite-simplicial-sphere.md)
 
 ## Sources
 

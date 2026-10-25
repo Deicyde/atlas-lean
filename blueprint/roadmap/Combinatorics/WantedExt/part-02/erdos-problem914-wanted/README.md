@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem914
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 914 on clique factors and equitable colourings](conjecture.md)
+- [Hajnal–Szemerédi theorem in clique-factor and equitable-colouring form](conjecture-holds.md)

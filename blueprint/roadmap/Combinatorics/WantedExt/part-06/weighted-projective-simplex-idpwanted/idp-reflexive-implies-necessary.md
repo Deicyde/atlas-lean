@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.idp_reflexive_implies_necessary
 ---
 
-# Idp reflexive implies necessary
+# A necessary condition for IDP reflexive weighted simplices
 
-Corollary 1, coordinate form: an IDP reflexive weighted simplex satisfies
-`1+∑ᵢ(qᵢ mod qⱼ)=qⱼ` for every coordinate, exactly `SatisfiesIDPNecessary`.
+**A necessary condition for IDP reflexive weighted simplices.** Let $q = (q_1, \dots, q_n)$
+be natural numbers. If the weighted simplex
+$\Delta_{(1,q)} = \operatorname{conv}(e_1, \dots, e_n, -\sum_i q_i e_i) \subseteq \mathbb{R}^n$ is
+reflexive and has the integer decomposition property, then
+$1 + \sum_{i=1}^n (q_i \bmod q_j) = q_j$ for every $j$.
+
+Here $a \bmod b$ is the remainder of $a$ on division by $b$, with the convention $a \bmod 0 = a$.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Satisfies IDPNecessary](satisfies-idpnecessary.md)
-- [Weighted Simplex](weighted-simplex.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [IDP-necessary condition](satisfies-idpnecessary.md)
+- [Weighted projective space simplex](weighted-simplex.md)
 
 ## Sources
 

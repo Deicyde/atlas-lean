@@ -13,7 +13,7 @@ end).
 
 ## Depends on
 
-- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
 - [Encoded Regex](../regular-expression/encoded-regex.md)
 - [Regex At](../regular-expression/regex-at.md)
 - [State Counts](state-counts.md)

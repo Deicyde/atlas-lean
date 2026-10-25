@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciNuMorphism
 ---
 
-# Fibonacci Nu Morphism
+# The morphism $\nu$
 
-The morphism `ν : 0 ↦ 1, 1 ↦ 00` on letters (`false` is `0`).
+**The morphism $\nu$.** The morphism $\nu$ is given on the letters $0$ and $1$ by
+$\nu(0) = 1$ and $\nu(1) = 00$.
 
 ## Depends on
 

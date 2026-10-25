@@ -12,7 +12,7 @@ S-definition family (`D3Fam` with `na := sa`) is well-formed for every `i < N`.
 
 ## Depends on
 
-- [WF](../../family/wf.md)
+- [Well-formed situation tables for the transition clauses](../../family/wf.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
 - [La](../part-01/la.md)
@@ -23,7 +23,7 @@ S-definition family (`D3Fam` with `na := sa`) is well-formed for every `i < N`.
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
 - [G](../part-01/g-2.md)
 - [G](../part-01/g.md)
 - [G pos](g-pos.md)

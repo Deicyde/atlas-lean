@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.isEquilibriousWord_iff_deletion_iterate_prepend
 ---
 
-# Lemma 21
+# Prepending an equilibrious word is undone by deletion
 
-**Lemma 21.** A finite word `u` of length `2k` is equilibrious (as many `a`'s as `b`'s) iff
-`D^k ∘ Pre_u` is the identity on `𝒲`. (`IsEquilibriousWord` is stated on `List (Fin 2)`; the
-letter `a = true` is sent to `0` and `b = false` to `1`.)
+**Prepending an equilibrious word is undone by deletion.** Let $u$ be a finite word in the
+letters $a$ and $b$ of length $2k$. Then $u$ is equilibrious, that is, $a$ and $b$ occur equally
+often in $u$, if and only if $D^k(uw) = w$ for every infinite binary word $w$ in which both
+letters occur infinitely often, where $D$ deletes the first $b$ and the first $a$ of a word.
+
+Here $a$ and $b$ play the roles of the letters $0$ and $1$ in the definition of equilibrious
+words.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
 - [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
-- [Deletion](deletion.md)
+- [The deletion operator](deletion.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_monotone_boolFun_weight_symm
 ---
 
-# Card monotone bool Fun weight symm
+# Weight symmetry of monotone Boolean functions
 
-Proposition 8: `M_{n,w} = M_{n,2^n-w}` for `0 ≤ w ≤ 2^n`, where `M_{n,w}`
-counts monotone `n`-variable functions of weight `w`. The paper assumes
-`n ≥ 1`; the statement also holds for `n = 0` and is stated for all `n`.
+**Weight symmetry of monotone Boolean functions.** For all $n \ge 0$ and all $w$ with
+$0 \le w \le 2^n$, the number of monotone $n$-variable Boolean functions of weight $w$ equals
+the number of monotone $n$-variable Boolean functions of weight $2^n - w$.
+
+The source assumes $n \ge 1$; the case $n = 0$ is included here.
 
 ## Depends on
 
-- [Bool Fun Weight](bool-fun-weight.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

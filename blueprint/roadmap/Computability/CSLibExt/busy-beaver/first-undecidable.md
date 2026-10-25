@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.BusyBeaver.firstUndecidable
 ---
 
-# First Undecidable
+# First undecidable number of states
 
-The first number of states at which the theory fails to decide
-halting for all machines, or `0` when there is no such number of states.
-For ZFC this is catalogue constant 14a; the `0` junk case corresponds to
-a theory deciding halting at every size.
+**First undecidable number of states.** For a formal theory $T$, the first
+undecidable number of states is the least $n$ such that $T$ does not decide halting for
+all $n$-state machines, that is, there is an $n$-state machine $M$ for which $T$ proves
+neither the halting sentence nor the non-halting sentence of $M$. It is $0$ when there
+is no such $n$.
+
+For ZFC this is catalogue constant 14a; the junk value $0$ covers a theory that decides
+halting at every number of states.
 
 ## Depends on
 
-- [Formal Theory](formal-theory.md)
+- [Formal theory](formal-theory.md)
 
 ## Proof depends on
 
-- [Decides Halting](decides-halting.md)
+- [Theories deciding halting at a state count](decides-halting.md)
 
 ## Sources
 

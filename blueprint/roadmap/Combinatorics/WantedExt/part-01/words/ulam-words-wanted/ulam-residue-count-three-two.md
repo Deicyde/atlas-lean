@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.ulamResidueCount_three_two
 ---
 
-# Ulam Residue Count three two
+# Residues of the Ulam words of length 2 modulo 3
 
-Residues of `π(U₂) = {1, 2}` modulo `3`: one word in each of the classes `1`, `2`.
+**Residues of the Ulam words of length 2 modulo 3.** Read the Ulam words of length $2$ as
+binary numerals, most significant letter first. None of their values is congruent to $0$ modulo
+$3$, exactly one is congruent to $1$, and exactly one is congruent to $2$.
 
 ## Depends on
 
-- [Ulam Residue Count](ulam-residue-count.md)
+- [Ulam words in a residue class](ulam-residue-count.md)
 
 ## Sources
 

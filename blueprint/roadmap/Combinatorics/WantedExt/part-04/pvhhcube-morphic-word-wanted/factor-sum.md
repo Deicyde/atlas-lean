@@ -6,17 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.factorSum
 ---
 
-# Factor Sum
+# Sum of a factor
 
-The sum of the values in a factor of `w`.
+**Sum of a factor.** For an infinite word $w = w_0 w_1 w_2 \cdots$ over the alphabet
+$\{0, 1, 3, 4\}$ and natural numbers $s$ and $\ell$, the sum of the factor of length $\ell$
+starting at position $s$ is the integer $\sum_{i=0}^{\ell-1} w_{s+i}$, where each letter counts
+as its value.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [The alphabet $\{0, 1, 3, 4\}$](letter.md)
 
 ## Proof depends on
 
-- [Letter Value](letter-value.md)
+- [Value of a letter](letter-value.md)
 
 ## Sources
 

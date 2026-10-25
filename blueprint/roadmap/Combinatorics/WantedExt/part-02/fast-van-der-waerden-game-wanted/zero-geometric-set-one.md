@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_one
 ---
 
-# Zero Geometric Set one
+# The zero-geometric set $S_2(1, k)$ is $\{0\}$
 
-`S₂(1, k) = {0}`.
+**The zero-geometric set $S_2(1, k)$ is $\{0\}$.** For every rational number $k$, the
+zero-geometric set $S_2(1, k)$ equals $\{0\}$.
 
 ## Depends on
 
-- [Zero Geometric Set](zero-geometric-set.md)
+- [The zero-geometric set $S_2(n, k)$](zero-geometric-set.md)
 
 ## Sources
 

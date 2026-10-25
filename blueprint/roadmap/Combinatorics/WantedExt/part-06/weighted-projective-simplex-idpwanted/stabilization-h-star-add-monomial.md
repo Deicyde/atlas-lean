@@ -7,15 +7,20 @@ lean: MetaMathlibExt.stabilization_hStar_add_monomial
 
 # Stabilization h Star add monomial
 
-Theorem 12's consequence for `h*`: the first stabilization adds precisely
-the monomial `z^(n+1)`, where `n=q.length`.
+**The first reflexive stabilization adds one monomial to the $h^*$-formula.** Let
+$q = (q_1, \dots, q_n)$ be a vector of natural numbers whose reflexive stabilization number is
+$1$, so that its first reflexive stabilization is $\operatorname{rs}(q) = (1, q_1, \dots, q_n)$.
+Suppose that $\ell(\operatorname{rs}(q)) = 1$, where for a vector $p$ we write
+$\ell(p) = \lfloor (1 + \sum_i p_i) / \operatorname{lcm}(p) \rfloor$. For a vector $p$, write
+$w(p, b)$ for its weight statistic and $h_p(z) = \sum_{b=0}^{\sum_i p_i} z^{w(p, b)}$ for its
+explicit $h^*$-formula. Then $h_{\operatorname{rs}(q)}(z) = h_q(z) + z^{n+1}$.
 
 ## Depends on
 
 - [H Star Formula](h-star-formula.md)
-- [List Ell](list-ell.md)
-- [Reflexive Stabilization](reflexive-stabilization.md)
-- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
+- [The number $\ell(q)$ of a weight list](list-ell.md)
+- [Reflexive stabilization](reflexive-stabilization.md)
+- [Reflexive stabilization number](reflexive-stabilization-number.md)
 
 ## Sources
 

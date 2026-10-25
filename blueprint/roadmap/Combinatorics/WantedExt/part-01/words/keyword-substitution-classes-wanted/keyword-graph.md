@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.keywordGraph
 ---
 
-# Keyword Graph
+# Substitution graph
 
-The graph `𝒢_n^(a)` on words of length `n`: `u` and `v` are adjacent when one is
-obtained from the other by a single actual substitution `a ↦ !a` or `!a ↦ a`.
+**Substitution graph.** Let $a$ be a keyword, a binary word of length $m + 1$, and let
+$n \ge 0$. The substitution graph $\mathcal{G}_n^{(a)}$ is the simple graph on the binary words of
+length $n$ in which distinct words $u$ and $v$ are adjacent when $\varphi_i(u) = v$ or
+$\varphi_i(v) = u$ for some $i \in \mathbb{N}$, where $\varphi_i$ is the simple map of $a$ at
+letter $i$. Equivalently, $u$ and $v$ are adjacent when one is obtained from the other by
+replacing an occurrence of $a$ by $\neg a$ or an occurrence of $\neg a$ by $a$, where $\neg a$ is
+the letterwise negation of $a$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_diff_periodic_of_periodic
 ---
 
-# Corollary 17
+# Periodicity of the relative position differences
 
-**Corollary 17.** If `w ∈ 𝒲` is periodic, so is `Δr`; if `w = u^ω` and `u` contains `k`
-letters `a` and `j` letters `b`, then `lcm(k, j)` is a period of `Δr`.
+**Periodicity of the relative position differences.** Let $w = w_0 w_1 w_2 \cdots$ be an
+infinite word over $\{a, b\}$ in which both letters occur infinitely often, let $p_a(n)$ and
+$p_b(n)$ be the positions of the $n$-th $a$ and the $n$-th $b$ in $w$, let
+$r(n) = p_b(n) - p_a(n)$, and let $\Delta r(n) = r(n + 1) - r(n)$. If $w$ is purely periodic
+(there is $q > 0$ with $w_{i + q} = w_i$ for all $i \ge 0$), then there is $q > 0$ with
+$\Delta r(n + q) = \Delta r(n)$ for all $n \ge 1$. Moreover, if $w = uuu\cdots$ for a nonempty
+finite word $u$ containing $k$ letters $a$ and $j$ letters $b$, then
+$\Delta r(n + \operatorname{lcm}(k, j)) = \Delta r(n)$ for all $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

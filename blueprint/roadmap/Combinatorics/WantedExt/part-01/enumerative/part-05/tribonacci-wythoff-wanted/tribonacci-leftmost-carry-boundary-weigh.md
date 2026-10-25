@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciLeftmostCarry_boundary_weight
 ---
 
-# Tribonacci Leftmost Carry boundary weight
+# Leftmost carrying does not move the improper boundary left or raise the weight
 
-Leftmost carrying on an improper word does not move the improper boundary to the left
-and does not increase the weight (read for a result that is still improper; the carry acts
-on the padded word `0 :: w`, of the same length as the result).
+**Leftmost carrying does not move the improper boundary left or raise the weight.** Let $w$ be
+a word of natural-number digits, written most significant digit first, with some digit $\ge 2$.
+Suppose leftmost carrying applied to the padded word $0w$ gives a word $u$ (of the same length as
+$0w$) that still has a digit $\ge 2$. Then the position of the leftmost digit $\ge 2$ in $u$ is at
+least its position in $0w$, and the weight of $u$ is at most the weight of $w$.
 
 ## Depends on
 
-- [Tribonacci Improper Weight](tribonacci-improper-weight.md)
-- [Tribonacci Leftmost Carry](tribonacci-leftmost-carry.md)
+- [Weight of an improper word](tribonacci-improper-weight.md)
+- [Leftmost carrying](tribonacci-leftmost-carry.md)
 
 ## Sources
 

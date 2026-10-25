@@ -17,7 +17,7 @@ to `q`.
 
 ## Proof depends on
 
-- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Yields](../../../languages/context-free/part-02/yields/yields.md)
 

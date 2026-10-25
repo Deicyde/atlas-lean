@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosProblem570Wanted.conjecture
 ---
 
-# Conjecture
+# Erdős Problem 570 (cycle versus graph Ramsey bound)
 
-`R(Cₖ,H) ≤ 2m + ⌊(k-1)/2⌋` for large `m` and all `k ≥ 3`.
+**Erdős Problem 570 (cycle versus graph Ramsey bound).** The statement that for every natural
+number $k \ge 3$ there is an $M$ such that for every $m \ge M$ and every finite simple graph $H$
+with exactly $m$ edges and no isolated vertices, the Ramsey number $R(C_k, H)$ of the cycle $C_k$
+on $k$ vertices and $H$ is at most $2m + \lfloor (k-1)/2 \rfloor$.
 
 ## Depends on
 

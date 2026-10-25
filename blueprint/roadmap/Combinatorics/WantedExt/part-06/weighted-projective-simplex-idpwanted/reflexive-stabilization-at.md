@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.reflexiveStabilizationAt
 ---
 
-# Reflexive Stabilization At
+# Higher reflexive stabilizations
 
-The `m`th reflexive stabilization
-`rs(q,m)=(1^{rsn(q)+(m-1)lcm(q)},q)`, with natural subtraction matching `m≥1`.
+**Higher reflexive stabilizations.** For a list of natural-number weights
+$q = (q_1, \dots, q_n)$ and a natural number $m$, the $m$th reflexive stabilization of $q$ is the
+list $\mathrm{rs}(q, m) = (1^k, q_1, \dots, q_n)$ obtained by prepending $k$ entries equal to $1$,
+where $k = \mathrm{rsn}(q) + (m - 1) \operatorname{lcm}(q)$. Here $\mathrm{rsn}(q)$ is the
+reflexive stabilization number of $q$, $\operatorname{lcm}(q)$ is the least common multiple of
+the weights (equal to $1$ for the empty list), and the subtraction $m - 1$ is truncated at $0$,
+so $\mathrm{rs}(q, 0) = \mathrm{rs}(q, 1)$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
-- [Weight Lcm](weight-lcm.md)
+- [Reflexive stabilization number](reflexive-stabilization-number.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
 
 ## Sources
 

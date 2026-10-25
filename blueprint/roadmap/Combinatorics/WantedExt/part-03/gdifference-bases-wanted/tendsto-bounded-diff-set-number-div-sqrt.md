@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_boundedDiffSetNumber_div_sqrt
 ---
 
-# Tendsto bounded Diff Set Number div sqrt
+# Asymptotics of the largest sets with bounded difference counts
 
-For every `g ≥ 1`, `α_g(n) = (1 + o_g(1)) √(gn)` as `n → ∞`.
+**Asymptotics of the largest sets with bounded difference counts.** For a finite set $A$ of
+integers and an integer $x$, write $r_{A-A}(x)$ for the number of ordered pairs
+$(a, a') \in A \times A$ with $a - a' = x$. For every integer $g \ge 1$, let $\alpha_g(n)$ be the
+largest size of a set $A$ of integers in the interval $[1, n]$ with $r_{A-A}(x) \le g$ for every
+nonzero integer $x$. Then $\alpha_g(n) / \sqrt{gn} \to 1$ as $n \to \infty$, that is,
+$\alpha_g(n) = (1 + o_g(1)) \sqrt{gn}$.
 
 ## Depends on
 
-- [Bounded Diff Set Number](bounded-diff-set-number.md)
+- [Maximal sets with bounded difference multiplicities](bounded-diff-set-number.md)
 
 ## Sources
 

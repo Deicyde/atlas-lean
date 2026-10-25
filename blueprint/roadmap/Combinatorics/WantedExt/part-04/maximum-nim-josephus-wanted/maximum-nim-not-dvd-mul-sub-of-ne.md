@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_ne
 ---
 
-# Maximum Nim not dvd mul sub of ne
+# A Maximum Nim non-divisibility lemma for $i \ne h$
 
-Lemma 4(ii): if positive `n,t,h` satisfy `k = n*t+h` and `h ≤ n`, then for
-`1 ≤ i ≤ n` with `i ≠ h`, `n*(k-t)-i` is not divisible by `k`. The hypotheses map
-the paper's positive-integer clauses directly; there is no deviation.
+**A Maximum Nim non-divisibility lemma for $i \ne h$.** Let $k, n, t, h, i$ be natural numbers
+with $t \ge 1$, $h \ge 1$, $k = nt + h$ and $h \le n$. If $1 \le i \le n$ and $i \ne h$, then $k$
+does not divide $n(k - t) - i$.
+
+The hypotheses force $n \ge 1$, $t \le k$ and $i \le n(k - t)$, so both subtractions are ordinary
+differences of natural numbers.
 
 ## Depends on
 

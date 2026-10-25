@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.tribonacciValue_nil
 ---
 
-# Tribonacci Value nil
+# The empty digit word has Tribonacci value zero
 
-The empty word has value `0`.
+**The empty digit word has Tribonacci value zero.** The Tribonacci value of the empty
+digit word is $0$.
 
 ## Depends on
 
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Proof depends on
 

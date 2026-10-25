@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_one_n_even_isP_iff
 ---
 
-# Slow ANim one n even is P iff
+# P-positions of Slow A-Nim with A = {1, n}, n even
 
-Theorem 2 (2): for `A = {1, n}` with `n` even, the P-positions of `SN(n, A)` are the
-positions whose token count and minimal stack are both even.
+**P-positions of Slow A-Nim with A = {1, n}, n even.** Let $n \ge 1$ be even and let
+$A = \{1, n\}$. A position $p = (p_1, \dots, p_n)$ of Slow$A$-Nim on $n$ stacks is a P-position
+if and only if its total number of tokens $p_1 + \dots + p_n$ and its smallest stack
+$\min_i p_i$ are both even.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources
 

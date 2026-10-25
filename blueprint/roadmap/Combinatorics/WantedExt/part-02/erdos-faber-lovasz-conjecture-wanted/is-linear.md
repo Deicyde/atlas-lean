@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosFaberLovaszConjectureWanted.ErdosFaberLovaszConjecture.Hypergraph.IsLinear
 ---
 
-# Is Linear
+# Linear hypergraph
 
-We say that a hypergraph `𝓗` is linear if any two distinct edges share at most one vertex.
+**Linear hypergraph.** A hypergraph $\mathcal{H}$ is linear if any two distinct edges of
+$\mathcal{H}$ have at most one vertex in common.
 
 ## Depends on
 

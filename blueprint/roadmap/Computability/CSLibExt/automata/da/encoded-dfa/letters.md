@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Automata.EncodedDFA.letters
 ---
 
-# Letters
+# Letters of an encoded DFA
 
-The letters with a listed transition.
+**Letters of an encoded DFA.** The letters of an encoded DFA $D$ form the list of the letters
+$a$ of its listed transitions $((s, a), t)$, in the order the transitions are listed.
 
 ## Depends on
 

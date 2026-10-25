@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_six
 ---
 
-# Graph Ramsey three six
+# The value of $R(3, 6)$
 
-`R(3,6) = 18`.
+**The value of $R(3, 6)$.** The classical Ramsey number $R(3, 6)$ equals $18$.
 
 ## Depends on
 

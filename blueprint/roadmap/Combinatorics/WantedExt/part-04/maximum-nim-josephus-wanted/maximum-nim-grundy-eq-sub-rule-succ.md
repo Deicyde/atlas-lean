@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_eq_sub_rule_succ
 ---
 
-# Maximum Nim Grundy eq sub rule succ
+# Grundy number where the rule function is flat
 
-Lemma 1(ii): for positive `x`, if an admissible rule function is unchanged from
-`x-1` to `x`, then `G(x) = G(x-f(x)-1)`. Natural subtraction matches the paper under
-the stated rule-function hypotheses, so there is no deviation.
+**Grundy number where the rule function is flat.** Let $f : \mathbb{N} \to \mathbb{N}$
+satisfy $f(0) = 0$ and $f(m-1) \le f(m) \le f(m-1) + 1$ for every $m \ge 1$, and let $G$ be the
+Grundy number of Maximum Nim with rule function $f$. If $x \ge 1$ and $f(x) = f(x-1)$, then
+$G(x) = G(x - f(x) - 1)$.
+
+Here $x - f(x) - 1 \ge 0$, since the hypotheses give $f(x) = f(x-1) \le x - 1$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

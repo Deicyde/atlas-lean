@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_isUncommonOverFiniteGroup_one
 ---
 
-# Not is Uncommon Over Finite Group one
+# No equation is 1-uncommon over a finite abelian group
 
-With one colour nothing is uncommon.
+**No equation is 1-uncommon over a finite abelian group.** For every finite abelian group
+$G$, every $k \ge 0$ and all integers $a_1, \dots, a_k$, the equation
+$a_1 x_1 + \dots + a_k x_k = 0$ is not $1$-uncommon over $G$.
 
 ## Depends on
 
-- [Is Uncommon Over Finite Group](is-uncommon-over-finite-group.md)
+- [Uncommon equations over a finite abelian group](is-uncommon-over-finite-group.md)
 
 ## Sources
 

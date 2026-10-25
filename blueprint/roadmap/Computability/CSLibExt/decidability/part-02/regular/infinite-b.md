@@ -17,7 +17,7 @@ is accepted.
 ## Proof depends on
 
 - [Accepts B](accepts-b.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Words Of Length](words-of-length.md)
 
 ## Sources

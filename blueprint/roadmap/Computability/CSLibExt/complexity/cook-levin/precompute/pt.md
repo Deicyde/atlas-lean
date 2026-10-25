@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.PT
 ---
 
-# PT
+# Target counters of the counter program
 
-Target counters (the twelve preloads of `Assembly.real_run`).
+**Target counters of the counter program.** The type of the twelve counters that the
+precomputation's counter program loads for the host, with constructors $uT$, $uH$, $sT$, $sH$,
+$hT$, $hH$, $aT$, $aH$, $iT$, $iX$, $iE$, $iF$.
+
+They hold the twelve preloads of the assembled generator's run.
 
 ## Depends on
 

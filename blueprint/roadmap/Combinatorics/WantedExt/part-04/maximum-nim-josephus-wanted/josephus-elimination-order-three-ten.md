@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.josephusEliminationOrder_three_ten
 ---
 
-# Josephus Elimination Order three ten
+# Josephus elimination order for ten people and step three
 
-For `n = 10` and `k = 3`, the simulator removes
-`3, 6, 9, 2, 7, 1, 8, 5, 10` and records survivor `4` last, exactly as in the paper;
-there is no deviation.
+**Josephus elimination order for ten people and step three.** The Josephus elimination order
+with step $3$ on the circle $1, \dots, 10$ is $3, 6, 9, 2, 7, 1, 8, 5, 10, 4$: the entries are
+removed in the order $3, 6, 9, 2, 7, 1, 8, 5, 10$, and the survivor $4$ comes last.
 
 ## Depends on
 
-- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Josephus elimination order](josephus-elimination-order.md)
 
 ## Sources
 

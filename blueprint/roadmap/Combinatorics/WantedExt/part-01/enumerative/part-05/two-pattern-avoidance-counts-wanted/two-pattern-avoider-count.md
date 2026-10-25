@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.twoPatternAvoiderCount
 ---
 
-# Two Pattern Avoider Count
+# Number of permutations avoiding two patterns of length three
 
-`A_n(τ, ρ)`: the number of permutations of length `n` avoiding both classical
-patterns `τ` and `ρ` (containment is
-`MathlibExt.Combinatorics.Enumerative.OddFibonacciWanted.HasPattern`).
+**Number of permutations avoiding two patterns of length three.** For a natural number $n$
+and permutations $\tau$ and $\rho$ of $\{0, 1, 2\}$, $A_n(\tau, \rho)$ is the number of
+permutations of $\{0, 1, \dots, n - 1\}$ that contain neither $\tau$ nor $\rho$ as a classical
+pattern.
 
 ## Depends on
 

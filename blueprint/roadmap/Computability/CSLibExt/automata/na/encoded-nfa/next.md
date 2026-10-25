@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.next
 ---
 
-# Next
+# Successors of a state in an encoded NFA
 
-The successors of `s` along transitions on any letter and along ε-moves.
+**Successors of a state in an encoded NFA.** For an encoded NFA $N$ and a state $s$, this is the
+list of the targets $t$ of the transitions $((s, a), t)$ of $N$ on any letter $a$, followed by the
+targets $t$ of the ε-moves $(s, t)$ of $N$, each in the order of the corresponding list of $N$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ The successors of `s` along transitions on any letter and along ε-moves.
 
 ## Proof depends on
 
-- [Eps Next](eps-next.md)
+- [ε-successors of a state](eps-next.md)
 
 ## Sources
 

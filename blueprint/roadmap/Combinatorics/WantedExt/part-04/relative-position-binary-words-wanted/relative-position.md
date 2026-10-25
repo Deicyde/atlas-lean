@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition
 ---
 
-# Relative Position
+# Relative position function
 
-The relative position function `r(n) = p_b(n) - p_a(n)`.
+**Relative position function.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over
+$\{a, b\}$, and for a letter $\alpha$ and $n \ge 1$ let $p_\alpha(n)$ be the position (counting
+from $0$) of the $n$-th occurrence of $\alpha$ in $w$, or $0$ if $\alpha$ occurs fewer than $n$
+times. The relative position function of $w$ is the integer-valued function
+$r(n) = p_b(n) - p_a(n)$, $n \ge 1$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Letter Position](letter-position.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

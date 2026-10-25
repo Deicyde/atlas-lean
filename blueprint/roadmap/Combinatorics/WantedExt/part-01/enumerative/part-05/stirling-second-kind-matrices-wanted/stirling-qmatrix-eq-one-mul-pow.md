@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.stirlingQMatrix_eq_one_mul_pow
 ---
 
-# Stirling QMatrix eq one mul pow
+# Factorization of $Q^{(N)}(n)$ through $Q^{(1)}(n)$
 
-Corollary 1: `Q^[N](n) = Q^[1](n) (V(n) - I_n)^{N-1}` for `N ≥ 1`.
+**Factorization of $Q^{[N]}(n)$ through $Q^{[1]}(n)$.** For natural numbers $n$ and $N$ with
+$N \ge 1$, let $V(n)$ be the $n \times n$ upper bidiagonal matrix with $V(n)_{i,i} = i$,
+$V(n)_{i,i+1} = 1$ and all other entries $0$, let $I_n$ be the $n \times n$ identity matrix,
+and for $M \ge 1$ let $Q^{[M]}(n)$ be the $n \times n$ matrix with
+$Q^{[M]}(n)_{i,j} = (-1)^{j-i+1} i^{M-1} / ((i-1)!\,(j-i-1)!)$ for $j \ge i + 1$ and $0$
+otherwise. Then, as matrices over $\mathbb{Q}$,
+
+$$Q^{[N]}(n) = Q^{[1]}(n)\,(V(n) - I_n)^{N-1}.$$
 
 ## Depends on
 
-- [Stirling QMatrix](stirling-qmatrix.md)
-- [Stirling VMatrix](stirling-vmatrix.md)
+- [Strictly upper triangular matrix $Q^{(N)}(n)$](stirling-qmatrix.md)
+- [Upper bidiagonal matrix V(n)](stirling-vmatrix.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.IsPPositionSet.eq
 ---
 
-# Eq
+# Uniqueness of the set of P-positions
 
-For a terminating game, the set of P-positions is unique.
+**Uniqueness of the set of P-positions.** Let $R$ be a move relation on a type of positions,
+where $R\,x\,y$ means that $y$ is an option of $x$, and suppose that there is no infinite
+sequence of moves (the relation "$y$ is an option of $x$" is well-founded). If $P$ and $Q$ are
+both sets of P-positions for $R$, then $P = Q$.
 
 ## Depends on
 
-- [Is PPosition Set](is-pposition-set.md)
+- [Set of P-positions](is-pposition-set.md)
 
 ## Proof depends on
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Hardness.satDec_npHard
 ---
 
-# Every NP problem reduces to `satDec`
+# Every NP problem reduces to binary-index CNF-SAT
 
-**Every NP problem reduces to `satDec`** (binary-index CNF-SAT).
+**Every NP problem reduces to binary-index CNF-SAT.** Every decision problem $L$ in NP has a
+polynomial-time many-one reduction to the language of bit strings that encode a satisfiable CNF
+formula in the binary-index encoding.
 
 ## Depends on
 
@@ -20,24 +22,24 @@ lean: Cslib.Complexity.CookLevin.Hardness.satDec_npHard
 
 ## Proof depends on
 
-- [Phi](../assembly/phi.md)
-- [Num Vars](../family/num-vars.md)
-- [Phi length](phi-length.md)
-- [Is Poly Time bin Conv](is-poly-time-bin-conv.md)
-- [Is Poly Time red](../hardness/is-poly-time-red.md)
-- [Red](../hardness/red.md)
-- [V E](../hardness/v-e.md)
-- [V Ys](../hardness/v-ys.md)
+- [The formula emitted by the host](../assembly/phi.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Every clause of the Cook–Levin formula has one slot per variable](phi-length.md)
+- [The dense-to-binary translation is polynomial-time in the canonical encoding](is-poly-time-bin-conv.md)
+- [The Cook–Levin reduction is polynomial-time](../hardness/is-poly-time-red.md)
+- [The Cook–Levin reduction](../hardness/red.md)
+- [Tableau encoding of the verifier](../hardness/v-e.md)
+- [Certificate symbols of the verifier](../hardness/v-ys.md)
 - [Correctness of the reduction](../hardness/v-correct.md)
-- [Vacc](../hardness/vacc.md)
-- [Vc](../hardness/vc.md)
-- [Ve](../hardness/ve.md)
-- [Veqv](../hardness/veqv.md)
-- [Vsep](../hardness/vsep.md)
-- [Vι](../hardness/v.md)
+- [Accept symbol of the verifier](../hardness/vacc.md)
+- [Offset of the verifier's time bound](../hardness/vc.md)
+- [Exponent of the verifier's time bound](../hardness/ve.md)
+- [Bits as indices](../hardness/veqv.md)
+- [Separator symbol of the verifier](../hardness/vsep.md)
+- [Input-bit symbol of the verifier](../hardness/v.md)
 - [F R](../package/f-r.md)
-- [TOf](../precompute/tof.md)
-- [M Of](../precompute/m-of.md)
+- [The precomputed time bound](../precompute/tof.md)
+- [Total length bound](../precompute/m-of.md)
 - [Layout](../situation/part-01/layout.md)
 - [Cap H](../situation/part-05/cap-h.md)
 - [Depth](../situation/part-01/depth.md)

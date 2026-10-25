@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.bala_somos_partition_parity
 ---
 
-# Bala somos partition parity
+# The Bala–Somos parity conjectures
 
-The Bala-Somos conjectures. Let `p(n)` be the number of partitions of `n`, let
-`b_m(n) = ∑_{k=1}^{n} k^{2m+1} p(k) p(n-k)`, and let `a(n)` (A305123) have generating function
-`(∑_{k ≥ 1} x^{2k-1}/(1 + x^{2k-1})) ∏_{k ≥ 1} 1/(1 - x^k)`, i.e.
-`a(n) = ∑_{j=0}^{n} c(j) p(n-j)` with `c(j) = ∑_{d ∣ j, d odd} (-1)^{j/d - 1}` the `x^j`
-coefficient of the first factor. Then for `m, n ≥ 1`: (a) if `n` is odd then `n ∣ b_m(n)`;
-(b) `n ∣ b_m(2n)`, and `b_m(2n)/n` is odd iff `n` and `p(n)` are odd; (c) `a(n)` is odd iff `n`
-and `p(n)` are odd; (d) `2(b_1(n)/n - ⌊b_1(n)/n⌋) = 1` iff `n` is even and `n/2` and
-`p(n/2)` are odd (the paper calls the left side `c(n)`, a different sequence from the
-coefficient `c(j)` above).
+**The Bala–Somos parity conjectures.** For a natural number $k$ let $p(k)$ be the number of
+partitions of $k$. For natural numbers $m$ and $N$ let
+$b_m(N) = \sum_{k=1}^{N} k^{2m+1} p(k) p(N-k)$ and $a(N) = \sum_{j=0}^{N} c(j)\, p(N-j)$, where
+$c(0) = 0$ and $c(j) = \sum_{d \mid j,\ d \text{ odd}} (-1)^{j/d - 1}$ for $j \ge 1$. Then for all
+$m \ge 1$ and $n \ge 1$: (a) if $n$ is odd, then $n$ divides $b_m(n)$; (b) $n$ divides $b_m(2n)$,
+and $b_m(2n)/n$ is odd if and only if $n$ and $p(n)$ are both odd; (c) $a(n)$ is odd if and only
+if $n$ and $p(n)$ are both odd; (d) twice the fractional part of the rational number $b_1(n)/n$
+equals $1$ if and only if $n$ is even and $n/2$ and $p(n/2)$ are both odd.
+
+Here $c(j)$ is the coefficient of $x^j$ in $\sum_{k \ge 1} x^{2k-1}/(1 + x^{2k-1})$, so $a(N)$ is
+the coefficient of $x^N$ in $\bigl(\sum_{k \ge 1} x^{2k-1}/(1 + x^{2k-1})\bigr)
+\prod_{k \ge 1} 1/(1 - x^k)$ (A305123). The paper calls the left side of (d) $c(n)$, a different
+sequence from the coefficients $c(j)$ above.
 
 ## Depends on
 

@@ -11,27 +11,27 @@ lean: Cslib.Complexity.CookLevin.InitFamily.iprog
 
 ## Depends on
 
-- [Layout](../family/layout.md)
-- [CK](ck.md)
-- [IK](ik.md)
-- [IΓ](i.md)
-- [Lb](lb.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Counters of the initial-row generator](ck.md)
+- [Stacks of a counter machine with an input stack](ik.md)
+- [Alphabets of a counter machine with an input stack](i.md)
+- [Labels of the initial-row generator](lb.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CL](cl.md)
-- [GL](gl.md)
-- [Miss](miss.md)
-- [LS](ls.md)
-- [PH](ph.md)
-- [PS1](ps1.md)
-- [PS2](ps2.md)
-- [Lift E](lift-e.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Labels of the initial-row generator](gl.md)
+- [Label after a failed read test](miss.md)
+- [Stages of the literal routine](ls.md)
+- [Loop phases of the initial-row generator](ph.md)
+- [Labels of the first precomputation part](ps1.md)
+- [Labels of the second precomputation part](ps2.md)
+- [The counter stacks inside the generator's stacks](lift-e.md)
 - [Prog](prog.md)
-- [Rd S](rd-s.md)
+- [Read test for one code](rd-s.md)
 - [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources

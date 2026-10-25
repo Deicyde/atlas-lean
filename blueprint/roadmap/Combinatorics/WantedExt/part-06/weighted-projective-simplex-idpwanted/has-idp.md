@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.HasIDP
 ---
 
-# Has IDP
+# Integer decomposition property
 
-The integer decomposition property: every lattice point of every positive
-`m`th dilate is a coordinatewise sum of exactly `m` lattice points of `P`.
-This is the height-by-height version of the paper's cone definition; for a
-convex lattice polytope, the height-`m` slice of the cone is `m • P`.  It also
-implements the paper's intended `(m,w)`, correcting its displayed `(k,w)` typo.
+**Integer decomposition property.** A set $P \subseteq \mathbb{R}^\iota$, for a finite index
+set $\iota$, has the integer decomposition property (IDP) if for every integer $m \ge 1$, every
+lattice point $w \in \mathbb{Z}^\iota$ of the dilate $mP = \{m y : y \in P\}$ is a sum
+$w = x_1 + \dots + x_m$ of $m$ lattice points $x_1, \dots, x_m \in \mathbb{Z}^\iota$ of $P$.
+
+This is the height-by-height version of the paper's cone definition; for a convex lattice
+polytope, the height-$m$ slice of the cone is $mP$. It also implements the paper's intended
+$(m,w)$, correcting its displayed $(k,w)$ typo.
 
 ## Depends on
 
@@ -19,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lattice Point](is-lattice-point.md)
-- [Polytope Dilate](polytope-dilate.md)
+- [Lattice points of a set](is-lattice-point.md)
+- [Dilate of a set](polytope-dilate.md)
 
 ## Sources
 

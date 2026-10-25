@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.symmetricValleyDepthSum_compositions_closed_form
 ---
 
-# Symmetric Valley Depth Sum compositions closed form
+# Closed form for the total depth of symmetric valleys over compositions
 
-Closed form of `dsv(n)`, with `ω± = 1 ± i√3`:
-`dsv(n) = (-6n + 7)(-1)ⁿ / 108 + 2ⁿ (21n - 79) / 1323
-+ (-33 - 15√3 i)(-2)ⁿ / (441 ω₊^{n+1}) + (-33 + 15√3 i)(-2)ⁿ / (441 ω₋^{n+1}) + 1/12`
-for all `n ≥ 0`.
+**Closed form for the total depth of symmetric valleys over compositions.** For $n \ge 0$,
+let $\operatorname{dsv}(n)$ be the sum, over all compositions $c$ of $n$, of the total depth of
+the symmetric valleys of the sequence of parts of $c$, and write $\omega_\pm = 1 \pm i\sqrt{3}$.
+Then, as complex numbers,
+
+$$\operatorname{dsv}(n) = \frac{(-6n+7)(-1)^n}{108} + \frac{2^n(21n-79)}{1323} +
+\frac{(-33-15\sqrt{3}\,i)(-2)^n}{441\,\omega_+^{n+1}} +
+\frac{(-33+15\sqrt{3}\,i)(-2)^n}{441\,\omega_-^{n+1}} + \frac{1}{12}.$$
 
 ## Depends on
 
-- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
+- [Total depth of the symmetric valleys of a word](symmetric-valley-depth-sum.md)
 
 ## Sources
 

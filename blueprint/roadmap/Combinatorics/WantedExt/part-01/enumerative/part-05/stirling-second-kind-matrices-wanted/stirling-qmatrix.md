@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.stirlingQMatrix
 ---
 
-# Stirling QMatrix
+# Strictly upper triangular matrix $Q^{(N)}(n)$
 
-The strictly upper triangular matrix `Q^[N](n)` with
-`Q^[N]_{i,j} = (-1)^{j-i+1} i^{N-1} / ((i-1)! (j-i-1)!)` for `j ≥ i + 1`, zero
-otherwise.
+**Strictly upper triangular matrix $Q^{[N]}(n)$.** For natural numbers $N$ and $n$,
+$Q^{[N]}(n)$ is the $n \times n$ matrix with rational entries
+
+$$Q^{[N]}(n)_{i,j} = \frac{(-1)^{j-i+1}\, i^{N-1}}{(i-1)!\,(j-i-1)!} \quad (1 \le i < j \le n)$$
+
+and $Q^{[N]}(n)_{i,j} = 0$ for $1 \le j \le i \le n$. Here $N - 1$ is truncated subtraction,
+so $Q^{[0]}(n) = Q^{[1]}(n)$.
 
 ## Depends on
 

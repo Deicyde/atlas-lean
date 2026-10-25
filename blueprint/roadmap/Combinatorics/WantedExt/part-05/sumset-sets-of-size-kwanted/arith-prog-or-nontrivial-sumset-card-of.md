@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.arithProg_or_nontrivial_sumset_card_of_last_gaps_eq
 ---
 
-# Arith Prog or nontrivial sumset card of last gaps eq
+# Equal last two gaps: an arithmetic progression or many nontrivial sums
 
-Equal last two gaps: let `k ≥ 4` and `0 = a 0 < a 1 < ⋯ < a (k - 1)` in a linearly
-ordered additive abelian group with `a (k - 1) - a (k - 2) = a (k - 2) - a (k - 3)`
-(the paper's `b_{k-2} = b_{k-3}` for `A = {0, a, a + b₁, …, a + b₁ + ⋯ + b_{k-2}}`).
-Then either `A = {a 0, …, a (k - 1)}` is the arithmetic progression
-`a i = i • a 1`, or `h • B`, for `B = {a 0, …, a (k - 2)}`, has at least `h - 1`
-nontrivial elements.  The paper takes `h > 1`; the second alternative is vacuous for
-`h ≤ 1`.
+**Equal last two gaps: an arithmetic progression or many nontrivial sums.** Let $G$ be a
+linearly ordered additive commutative group, let $h$ and $k \ge 4$ be natural numbers, and let
+$a_0, a_1, \ldots$ be a sequence in $G$ with $0 = a_0 < a_1 < \cdots < a_{k-1}$ and
+$a_{k-1} - a_{k-2} = a_{k-2} - a_{k-3}$. Then either $a_i = i a_1$ for every $i < k$, or at
+least $h - 1$ elements of the $h$-fold sumset $hB$ of $B = \{a_0, \ldots, a_{k-2}\}$ (the set
+of sums of $h$ elements of $B$) are not trivial elements of the $h$-fold sumset of
+$a_0, \ldots, a_{k-2}$.
+
+The gap hypothesis is the paper's $b_{k-2} = b_{k-3}$, where $b_j = a_{j+1} - a_j$ for
+$j \ge 1$. The paper takes $h > 1$; the second alternative is vacuous for $h \le 1$.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ A fixed fan-in bound gives a linear selected-event bound, including rejects.
 ## Depends on
 
 - [Verify Boolean Certificate](verify-boolean-certificate.md)
-- [Boolean Signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+- [Boolean signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 
 ## Proof depends on
 

@@ -6,19 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.theorem_1_2
 ---
 
-# Theorem 1 2
+# Equiangular lines with a fixed angle
 
-Statement of Theorem 1.2 (Main theorem):
-
-Fix `α ∈ (0, 1)`. Let `λ = (1 − α)/(2α)` and `k = k(λ)` be its spectral radius order.
-The maximum number `N_α(d)` of equiangular lines in `ℝᵈ` with common angle `arccos α` satisfies
-(a) `N_α(d) = ⌊k(d − 1)/(k − 1)⌋` for all sufficiently large `d > d₀(α)` if `k < ∞`;
-(b) `N_α(d) = d + o(d)` as `d → ∞` if `k = ∞`.
+**Equiangular lines with a fixed angle.** Fix a real number $\alpha$ with $0 < \alpha < 1$, let
+$\lambda = (1 - \alpha)/(2\alpha)$ and let $k = k(\lambda)$ be the spectral radius order of
+$\lambda$. Let $N_\alpha(d)$ be the maximum number of equiangular lines in $\mathbb{R}^d$ with
+common angle $\arccos \alpha$. Then:
+(a) if $k < \infty$, then $N_\alpha(d) = \lfloor k(d - 1)/(k - 1) \rfloor$ for all sufficiently
+large $d$;
+(b) if $k = \infty$, then $N_\alpha(d) = d + o(d)$ as $d \to \infty$.
 
 ## Depends on
 
-- [N](n.md)
-- [Spectral Radius Order](spectral-radius-order.md)
+- [Maximum number of equiangular lines](n.md)
+- [Spectral radius order](spectral-radius-order.md)
 
 ## Sources
 

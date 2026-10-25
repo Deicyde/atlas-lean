@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.corollary_1_6
 ---
 
-# Corollary 1 6
+# Aperiodic tiling equations in high-dimensional integer lattices
 
-Statement of Corollary 1.6 (Counterexample to Conjecture 1.2, II):
-
-For all sufficiently large `d`, there exists a finite non-empty `F ⊆ ℤᵈ` such that
-`F` forms an aperiodic tiling equation.
+**Aperiodic tiling equations in high-dimensional integer lattices.** There is a natural number
+$d_0$ such that for every natural number $d \ge d_0$ there exists a finite non-empty set
+$F \subseteq \mathbb{Z}^d$ that forms an aperiodic tiling equation in $\mathbb{Z}^d$.
 
 ## Depends on
 
-- [Is Aperiodic Tiling Equation](is-aperiodic-tiling-equation.md)
+- [Aperiodic tiling equation](is-aperiodic-tiling-equation.md)
 
 ## Sources
 

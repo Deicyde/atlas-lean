@@ -6,54 +6,54 @@ navigation: module
 
 ## [FAM] The family (pure specification)
 
-- [Code Lits](code-lits.md)
-- [Cell Lits](cell-lits.md)
-- [The accept family](acc-fam.md)
+- [Literals of an accept code clause](code-lits.md)
+- [Literals of an accept cell clause](cell-lits.md)
+- [The accept family of a layout](acc-fam.md)
 
 ## [FAM] The generator machine
 
-- [CK](ck.md)
-- [AK](ak.md)
-- [Bc](bc.md)
-- [Off](off.md)
-- [Sg](sg.md)
-- [PS](ps.md)
-- [LS](ls.md)
-- [GL](gl.md)
-- [Code From](code-from.md)
-- [Code Start](code-start.md)
-- [Cell From](cell-from.md)
-- [Start](start.md)
-- [Next C](next-c.md)
-- [Lit P](lit-p.md)
-- [Prog](prog.md)
-- [The generator as a genuine `FinTM2`](acc-tm.md)
+- [Counters of the accept generator](ck.md)
+- [Clause kinds of the accept generator](ak.md)
+- [Base counter of an accept clause](bc.md)
+- [Offset of a clause's literal](off.md)
+- [Polarity of an accept clause's literal](sg.md)
+- [Precomputation stages of the accept generator](ps.md)
+- [Stages of the literal routine](ls.md)
+- [Labels of the accept generator](gl.md)
+- [Entry label of an accept code clause](code-from.md)
+- [Start of the accept code chain](code-start.md)
+- [Entry label of an accept cell clause](cell-from.md)
+- [First clause label of the accept generator](start.md)
+- [Next label after a clause of the accept generator](next-c.md)
+- [Literal routine of the accept generator](lit-p.md)
+- [Generator machine for the accept family](prog.md)
+- [The accept generator as a finite multi-stack machine](acc-tm.md)
 
 ## [FAM] Correctness: one clause
 
-- [Rest](rest.md)
-- [Lit run](lit-run.md)
-- [Clause B](clause-b.md)
+- [Empty scratch counters of the accept generator](rest.md)
+- [Run of the literal routine of the accept generator](lit-run.md)
+- [Step bound for one accept clause](clause-b.md)
 - [Clause run](clause-run.md)
 
 ## [FAM] Correctness: the two label chains and the whole generator
 
-- [Codes run](codes-run.md)
-- [Cells run](cells-run.md)
-- [Init F](init-f.md)
-- [Pre F](pre-f.md)
-- [Pre B](pre-b.md)
-- [Acc Bound](acc-bound.md)
-- [Pre run](pre-run.md)
-- [Correctness of the generator, with its explicit time bound](acc-run.md)
+- [Run of the code-clause chain of the accept generator](codes-run.md)
+- [Run of the accept cell chain](cells-run.md)
+- [Initial counters of the accept generator](init-f.md)
+- [Counters after the precomputation of the accept generator](pre-f.md)
+- [Cost of the precomputation of the accept generator](pre-b.md)
+- [Explicit time bound of the accept generator](acc-bound.md)
+- [Run of the accept generator's precomputation](pre-run.md)
+- [Correctness of the accept generator, with its explicit time bound](acc-run.md)
 
 ## [BOUND] The time bound is polynomial: `accBound ≤ accC · (T + H + 1)^4`
 
-- [Acc Bound uni](acc-bound-uni.md)
-- [Acc C](acc-c.md)
-- [The time-bound target](acc-time.md)
+- [The accept generator's time bound on the uniform layout](acc-bound-uni.md)
+- [Constant of the accept generator's time bound](acc-c.md)
+- [Polynomial time bound of the accept generator](acc-time.md)
 
 ## [FAM] Link to the semantic family `Situation.Enc.accFamily`
 
-- [Acc Family eq](acc-family-eq.md)
-- [The accept generator for a real machine](acc-gen-time.md)
+- [The concrete accept family is a layout-level accept family](acc-family-eq.md)
+- [Time bound of the accept generator for a concrete machine](acc-gen-time.md)

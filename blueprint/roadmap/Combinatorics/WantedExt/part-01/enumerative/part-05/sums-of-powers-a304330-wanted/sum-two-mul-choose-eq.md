@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_two_mul_choose_eq
 ---
 
-# Lemma 4
+# Sum of $2i \binom{2i+k-1}{2k-1}$
 
-**Lemma 4**: `Σ_{i=1}^n (2i)·C(2i + k - 1, 2k - 1) =
-k·C(2n + k + 1, 2k + 1)` for `n ≥ 1` and fixed positive `k`.
+**Sum of $2i \binom{2i+k-1}{2k-1}$.** For all natural numbers $k \ge 1$ and $n \ge 1$,
+
+$$\sum_{i=1}^{n} 2i \binom{2i + k - 1}{2k - 1} = k \binom{2n + k + 1}{2k + 1}.$$
 
 ## Depends on
 

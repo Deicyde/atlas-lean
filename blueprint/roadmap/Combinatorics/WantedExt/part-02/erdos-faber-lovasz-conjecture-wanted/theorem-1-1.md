@@ -6,18 +6,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosFaberLovaszConjectureWanted.ErdosFaberLovaszConjecture.theorem_1_1
 ---
 
-# Theorem 1 1
+# Erdős–Faber–Lovász conjecture for sufficiently many vertices
 
-Statement of Theorem 1.1:
-
-For sufficiently large `n : ℕ`, every linear hypergraph on `n` vertices has chromatic index
-at most `n`.
+**Erdős–Faber–Lovász conjecture for sufficiently many vertices.** For every sufficiently large
+natural number $n$, every linear hypergraph on the vertex set $\{0, 1, \dots, n-1\}$ has chromatic
+index at most $n$.
 
 ## Depends on
 
 - [Hypergraph](hypergraph.md)
-- [Is Linear](is-linear.md)
-- [Chromatic Index](chromatic-index.md)
+- [Linear hypergraph](is-linear.md)
+- [Chromatic index of a hypergraph](chromatic-index.md)
 
 ## Sources
 

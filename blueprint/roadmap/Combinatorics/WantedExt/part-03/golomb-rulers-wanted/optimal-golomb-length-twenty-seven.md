@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GolombRulersWanted.optimalGolombLength_twentySeven
 ---
 
-# Optimal Golomb Length twenty Seven
+# Optimal 27-mark Golomb ruler
 
-The optimal 27-mark Golomb ruler has length `553`.
+**Optimal 27-mark Golomb ruler.** The optimal Golomb ruler length with $27$ marks is $553$.
 
 ## Depends on
 
-- [Optimal Golomb Length](optimal-golomb-length.md)
+- [Optimal Golomb ruler length](optimal-golomb-length.md)
 
 ## Sources
 

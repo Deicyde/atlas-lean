@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.basisVectorsLowerBound1
 ---
 
-# Basis Vectors Lower Bound1
+# Statement of the basis-vector lower bound
 
-The basis-vector obstruction: every admissible exponent is at least one.
+**Statement of the basis-vector lower bound.** The proposition that every admissible
+asymptotic coset-cover exponent $C$ satisfies $C \ge 1$.
+
+The obstruction comes from sets of basis vectors.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Asymptotic Coset Cover Exponent](is-asymptotic-coset-cover-exponent.md)
+- [Admissible asymptotic coset-cover exponents](is-asymptotic-coset-cover-exponent.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_switch
 ---
 
-# Theorem 45 (the Fibonacci switch)
+# The Fibonacci switch
 
-**Theorem 45 (the Fibonacci switch).** For `μ(a) = aab`, `μ(b) = ab`, the word obtained
-from `f` by replacing each level-2 supertile `aba` by `aab` and keeping each `ab` is `μ(f)`
-(the level-2 supertiles of `f` follow `f` itself), and `μ(f) = D(f)`. Stated as
-`IsSubstitutionImage μ f (D f)`.
+**The Fibonacci switch.** Let $f = abaab\cdots$ be the Fibonacci word, the infinite
+Fibonacci word with each $0$ written as $a$ and each $1$ as $b$, and let $\mu$ be the
+substitution $a \mapsto aab$, $b \mapsto ab$. Then $D(f)$ is the image $\mu(f)$ of $f$ under
+$\mu$, where $D$ deletes the first $b$ and the first $a$ of a word.
+
+In the paper's description, $\mu(f)$ is the word obtained from $f$ by replacing each level-2
+supertile $aba$ by $aab$ and keeping each $ab$.
 
 ## Depends on
 
-- [Is Substitution Image](is-substitution-image.md)
-- [Deletion](deletion.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [The deletion operator](deletion.md)
 - [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 
 ## Sources

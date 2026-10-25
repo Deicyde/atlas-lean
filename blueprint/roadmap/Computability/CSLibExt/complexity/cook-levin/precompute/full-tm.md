@@ -5,9 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.fullTM
 ---
 
-# The full machine as a genuine `FinTM2`
+# The full machine as a finite multi-stack Turing machine
 
-**The full machine as a genuine `FinTM2`**: input stack `raw`, output stack `h out`.
+**The full machine as a finite multi-stack Turing machine.** Given $r \in \mathbb{N}$, an
+encoding $E$ of the machine $M$, a list $Y_s$ of input symbols of $M$, an output symbol $a$ of
+$M$, a map $\iota$ from $\{0, \dots, r - 1\}$ to input symbols of $M$, an input symbol $\sigma$ of
+$M$ (the separator), a polynomial $k$ with natural coefficients and $c, e \in \mathbb{N}$: the
+finite multi-stack machine whose stacks are the full stacks (the host's stacks, the raw input
+stack and the scratch counters) with the full alphabets, whose labels are the full labels, with
+start label the read label, internal states the booleans with initial state false, and program
+the full program built from these data. Its input stack is the raw input stack and its output
+stack is the host's output stack.
 
 ## Depends on
 
@@ -15,43 +23,43 @@ lean: Cslib.Complexity.CookLevin.Precompute.fullTM
 
 ## Proof depends on
 
-- [AK](../accept/ak.md)
-- [CK](../accept/ck.md)
-- [GL](../accept/gl.md)
-- [LS](../accept/ls.md)
-- [PS](../accept/ps.md)
-- [HK](../assembly/hk.md)
-- [HL](../assembly/hl.md)
-- [MS](../counter-view/ms.md)
-- [CK](../family/ck.md)
-- [GL](../family/gl.md)
-- [LS](../family/ls.md)
-- [Layout](../family/layout.md)
-- [N Lits](../family/n-lits.md)
-- [PS](../family/ps.md)
-- [CK](../init-family/ck.md)
-- [CL](../init-family/cl.md)
-- [GL](../init-family/gl.md)
-- [LS](../init-family/ls.md)
-- [PH](../init-family/ph.md)
-- [PS1](../init-family/ps1.md)
-- [PS2](../init-family/ps2.md)
-- [Ycs](../init-family/ycs.md)
-- [FK](fk.md)
-- [FL](fl.md)
-- [FΓ](f.md)
-- [HW](hw.md)
-- [PL](pl.md)
-- [PS](ps.md)
-- [PW](pw.md)
-- [Coeffs](coeffs.md)
-- [Full Prog](full-prog.md)
-- [BD](../shift/bd.md)
-- [CK](../shift/ck.md)
-- [CL](../shift/cl.md)
-- [GL](../shift/gl.md)
-- [LS](../shift/ls.md)
-- [PS](../shift/ps.md)
+- [Clause kinds of the accept generator](../accept/ak.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Labels of the accept generator](../accept/gl.md)
+- [Stages of the literal routine](../accept/ls.md)
+- [Precomputation stages of the accept generator](../accept/ps.md)
+- [Stacks of the Cook–Levin host machine](../assembly/hk.md)
+- [Labels of the Cook–Levin host machine](../assembly/hl.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Labels of the clause-family generator](../family/gl.md)
+- [Stages of the transition-clause generator's literal routine](../family/ls.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Number of literals of a transition clause](../family/n-lits.md)
+- [Stages of the transition-clause generator's precomputation](../family/ps.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
+- [Clause kinds of the initial-row generator](../init-family/cl.md)
+- [Labels of the initial-row generator](../init-family/gl.md)
+- [Stages of the literal routine](../init-family/ls.md)
+- [Loop phases of the initial-row generator](../init-family/ph.md)
+- [Labels of the first precomputation part](../init-family/ps1.md)
+- [Labels of the second precomputation part](../init-family/ps2.md)
+- [Sorted certificate code list](../init-family/ycs.md)
+- [Stacks of the full machine](fk.md)
+- [Labels of the full machine](fl.md)
+- [Alphabets of the full machine](f.md)
+- [Stages of a Horner round](hw.md)
+- [Labels of the counter program](pl.md)
+- [Scratch counters of the counter program](ps.md)
+- [Stages of the power loop](pw.md)
+- [Coefficient list of a polynomial](coeffs.md)
+- [The full program on the real generators](full-prog.md)
+- [Loop-body stages of the cell-shift generator](../shift/bd.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
+- [Clause kinds of the cell-shift family](../shift/cl.md)
+- [Labels of the cell-shift generator](../shift/gl.md)
+- [Stages of the cell-shift literal routine](../shift/ls.md)
+- [Precomputation stages of the shift generator](../shift/ps.md)
 - [ST](../shift/st.md)
 - [N](../situation/part-01/n.md)
 - [Layout](../situation/part-01/layout.md)

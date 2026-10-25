@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.rookNumber_factorization
 ---
 
-# Rook Number factorization
+# Goldman–Joichi–White factorization theorem
 
-Goldman, Joichi and White: for a Ferrers board `B = (b_1, …, b_n)`,
-`Σ_k r_k(B) x↓_{n-k} = ∏_i (x + b_i - (i - 1))`; here `r_k = r_{k,1}` and `x↓_k = x↓_{k,1}`, with
-`0`-indexed columns.
+**Goldman–Joichi–White factorization theorem.** Let $B = (b_1, \dots, b_n)$ be a Ferrers
+board, that is $b_1 \le \dots \le b_n$, and let $r_k(B) = r_{k,1}(B)$ be the number of placements
+of $k$ non-attacking rooks on $B$ (no two in the same row or column). Then for every integer $x$,
+
+$$
+\sum_{k=0}^{n} r_k(B)\, x\downarrow_{n-k} = \prod_{i=1}^{n} \bigl(x + b_i - (i-1)\bigr),
+$$
+
+where $x\downarrow_j = x(x-1)\cdots(x-j+1)$ is the falling factorial, the $m$-falling factorial
+for $m = 1$.
 
 ## Depends on
 
-- [Level Rook Number](level-rook-number.md)
-- [M Falling Factorial](m-falling-factorial.md)
+- [Level rook number](level-rook-number.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
 
 ## Sources
 

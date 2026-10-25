@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimH_iterate_tendsto_atTop
 ---
 
-# Maximum Nim H iterate tendsto at Top
+# Iterates of the Maximum Nim map $h_k$ tend to infinity
 
-Lemma 6(iii): for `k ≥ 2`, the iterates `h_k^p(x₀)` tend to infinity as
-`p` tends to infinity. `Filter.Tendsto ... Filter.atTop Filter.atTop` is precisely
-that divergence statement and `Nat.iterate` is superscript iteration; no deviation.
+**Iterates of the Maximum Nim map $h_k$ tend to infinity.** Let $k \ge 2$ be a natural
+number and let $h_k$ be the map $x \mapsto x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers.
+For every natural number $x_0$, the iterates $h_k^p(x_0)$ tend to infinity as $p \to \infty$.
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

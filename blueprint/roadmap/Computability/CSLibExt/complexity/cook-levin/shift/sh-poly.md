@@ -11,11 +11,11 @@ The bound as a `Polynomial ℕ` in `T + H`.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [Sh C](sh-c.md)
+- [Constant of the shift-generator time bound](sh-c.md)
 
 ## Sources
 

@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Shift.GL.litL
 ---
 
-# Lit L
+# Entry label of a literal routine of the cell-shift generator
 
-Literal routine `l` of clause `c` (`done` if out of range; never used then).
+**Entry label of a literal routine of the cell-shift generator.** For a situation $i < N$, a
+stack $k < K$, a clause kind $c$ and $l \in \mathbb{N}$, the entry label of literal $l$ is the
+first stage of the routine emitting literal $l$ of a clause of kind $c$ in block $(i, k)$ when
+$l < 3$, and the generator's final label when $l \ge 3$ (that case is never used).
 
 ## Depends on
 
-- [CL](cl.md)
-- [GL](gl.md)
+- [Clause kinds of the cell-shift family](cl.md)
+- [Labels of the cell-shift generator](gl.md)
 
 ## Proof depends on
 
-- [BD](bd.md)
-- [LS](ls.md)
+- [Loop-body stages of the cell-shift generator](bd.md)
+- [Stages of the cell-shift literal routine](ls.md)
 
 ## Sources
 

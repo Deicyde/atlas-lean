@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.seededPartialSums
 ---
 
-# Seeded Partial Sums
+# Seeded partial sums
 
-The sequences `t^s_{k,n}` of Section 3: for a seed sequence `s = (b_n)` and a sequence
-`(a_n)`, `t^s_{0,n} = a_n` and `t^s_{k+1,n} = b_k + ∑_{i<n} t^s_{k,i}`, i.e. the partial sum
-operator `P_{b_k}` applied to `(t^s_{k,n})_n`.
+**Seeded partial sums.** Let $M$ be an additive commutative monoid, and let
+$s = (s_n)_{n \ge 0}$ (the seed sequence) and $a = (a_n)_{n \ge 0}$ be sequences in $M$. The
+seeded partial sums $t^s_{k,n}$, for $k, n \ge 0$, are defined by recursion on $k$:
+$t^s_{0,n} = a_n$ and $t^s_{k+1,n} = s_k + \sum_{i\lt n} t^s_{k,i}$.
 
 ## Depends on
 

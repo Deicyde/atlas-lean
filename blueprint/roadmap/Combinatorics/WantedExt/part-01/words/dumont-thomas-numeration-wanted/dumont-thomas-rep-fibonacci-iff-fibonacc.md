@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomasRep_fibonacci_iff_fibonacciComplement
 ---
 
-# Dumont Thomas Rep fibonacci iff fibonacci Complement
+# Fibonacci complement numeration
 
-For the Fibonacci substitution `φ : a ↦ ab, b ↦ a` (`a = 0`, `b = 1`) and its two-sided
-periodic point `γ` of period `2` with seed `b|a`, `rep_γ = rep_{𝓕c}`: `w = rep_γ(n)` iff `w`
-lies in `L = 𝒟(𝒟𝒟)* \ (𝒟*11𝒟* ∪ 000𝒟* ∪ 101𝒟*)` over `𝒟 = {0, 1}` and
-`val_{𝓕c}(w) = n`. Period `2` is automatically the least period here, since `φ(b) = a` does
-not end in `b`.
+**Fibonacci complement numeration.** Let $\varphi$ be the Fibonacci substitution on
+$\{0, 1\}$, given by $\varphi(0) = 01$ and $\varphi(1) = 0$, and let
+$\gamma : \mathbb{Z} \to \{0, 1\}$ be a two-sided periodic point of $\varphi$ with period $2$
+such that $\gamma_{-1} = 1$ and $\gamma_0 = 0$. Then for every integer $n$ and every finite
+word $w$ over $\mathbb{N}$, $w$ is the Dumont–Thomas complement representation of $n$ for
+$\varphi$, $\gamma$ and period $2$ if and only if $w$ has odd length, every digit of $w$ is
+$0$ or $1$, the word $11$ does not occur in $w$, $w$ starts neither with $000$ nor with $101$,
+and the Fibonacci complement value of $w$ is $n$.
+
+Period $2$ is automatically the least period here, since $\varphi(1) = 0$ does not end in $1$.
 
 ## Depends on
 
-- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
-- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
-- [Fibonacci Complement Value](fibonacci-complement-value.md)
+- [Dumont–Thomas complement representations](is-dumont-thomas-rep.md)
+- [Two-sided periodic points](is-two-sided-periodic-point.md)
+- [Fibonacci complement value](fibonacci-complement-value.md)
 
 ## Sources
 

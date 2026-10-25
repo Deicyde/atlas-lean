@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isN_of_ge_fourKAddOne
 ---
 
-# Pebbling complete Three is N of ge four KAdd One
+# Pebbling on the triangle: total 6k-1 with a pile of at least 4k+1
 
-Lemma 12: a `K_3` game with `6k - 1` pebbles and a pile of at least `4k + 1` pebbles that
-is not in `Γ{4k+1, k-1, k-1}` is an N-game (`k` positive).
+**Pebbling on the triangle: total 6k-1 with a pile of at least 4k+1.** Let $k$ be a positive
+integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a move removes
+$k+1$ pebbles from one vertex and adds $k$ pebbles to another. Every position with $6k - 1$
+pebbles in total in which some pile is at least $4k + 1$, other than the positions whose three
+piles are $4k + 1$, $k - 1$ and $k - 1$ in some order, is an N-position, that is, not a
+P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

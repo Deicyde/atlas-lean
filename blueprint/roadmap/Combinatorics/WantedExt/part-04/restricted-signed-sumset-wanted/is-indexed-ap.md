@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsIndexedAP
 ---
 
-# Is Indexed AP
+# Finite integer sequences in arithmetic progression
 
-`IsIndexedAP a d` says that `a` is an arithmetic progression with positive common
-difference `d`: every pair of adjacent zero-based terms differs by `d`. This adjacent-term
-form avoids adding a nonemptiness assumption merely to name a first term.
+**Finite integer sequences in arithmetic progression.** A sequence $a_0, \dots, a_{k-1}$ of
+integers is an arithmetic progression with common difference $d$ if $d > 0$ and
+$a_{i+1} = a_i + d$ for every $i$ with $i + 1 < k$.
+
+The condition is stated on adjacent terms, so no nonemptiness assumption is needed to name a
+first term.
 
 ## Depends on
 

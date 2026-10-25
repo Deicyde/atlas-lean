@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_eight
 ---
 
-# Graph Ramsey three eight
+# The value of $R(3, 8)$
 
-`R(3,8) = 28`.
+**The value of $R(3, 8)$.** The classical Ramsey number $R(3, 8)$ equals $28$.
 
 ## Depends on
 

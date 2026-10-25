@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_one
 ---
 
-# Weighted Schreier Count one
+# Weighted Schreier counts for $k = 1$
 
-First case of Theorem 1.2: `a_{1,1+ℓ} = F_{ℓ+2} + 1` for `ℓ ≥ 0`.
+**Weighted Schreier counts for $k = 1$.** For every natural number $\ell$, the weighted
+Schreier count satisfies $a_{1,1+\ell} = F_{\ell+2} + 1$, where $F_j$ is the $j$-th Fibonacci
+number ($F_0 = 0$, $F_1 = 1$).
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

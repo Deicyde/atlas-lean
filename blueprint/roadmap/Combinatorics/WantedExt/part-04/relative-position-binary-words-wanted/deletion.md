@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.deletion
 ---
 
-# Deletion
+# The deletion operator
 
-The deletion operator `D = D_a ∘ D_b`: delete the first `b` and the first `a`.
+**The deletion operator.** For an infinite word $w$ over the letters $a$ and $b$, the word
+$D(w)$ is $D_a(D_b(w))$, where $D_\alpha$ deletes the first occurrence of the letter $\alpha$
+(and deletes the first letter of a word in which $\alpha$ does not occur): first apply $D_b$,
+then $D_a$. When both letters occur in $w$, $D(w)$ is $w$ with its first $b$ and its first $a$
+deleted.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Delete First](delete-first.md)
+- [Deleting the first occurrence of a letter](delete-first.md)
 
 ## Sources
 

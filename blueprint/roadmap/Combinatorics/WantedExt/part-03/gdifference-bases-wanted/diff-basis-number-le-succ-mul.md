@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.diffBasisNumber_le_succ_mul
 ---
 
-# Diff Basis Number le succ mul
+# Scaling bound for the $g$-difference basis number
 
-If `q` is prime and `√(n/v) ≤ q`, then `η_g(n) ≤ (q + 1) η_g(v)`. Corrected reading: the
-paper prints the factor `q`, obtained from the misprinted Lemma 4; its proof gives `q + 1`.
+**Scaling bound for the $g$-difference basis number.** For natural numbers $g$ and $m$, let
+$\eta_g(m)$ be the least size of a finite set $A \subseteq \mathbb{Z}$ such that every
+$x \in \{1, \dots, m\}$ is the difference $a - a'$ of at least $g$ ordered pairs
+$(a, a') \in A \times A$. If $q$ is a prime and $n$ and $v$ are natural numbers with
+$n \le q^2 v$, then $\eta_g(n) \le (q + 1)\,\eta_g(v)$.
+
+For $v \ge 1$ the hypothesis $n \le q^2 v$ says $\sqrt{n/v} \le q$. Corrected reading: the paper
+prints the factor $q$, obtained from the misprinted Lemma 4; its proof gives $q + 1$.
 
 ## Depends on
 
-- [Diff Basis Number](diff-basis-number.md)
+- [The $g$-difference basis number](diff-basis-number.md)
 
 ## Sources
 

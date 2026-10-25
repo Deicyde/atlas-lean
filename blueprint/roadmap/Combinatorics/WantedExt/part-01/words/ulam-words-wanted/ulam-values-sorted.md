@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ulamValuesSorted
 ---
 
-# Ulam Values Sorted
+# Sorted binary values of Ulam words
 
-The sorted list `u₁ < ⋯ < u_k` of the integers `π(U_n)`.
+**Sorted binary values of Ulam words.** For a natural number $n$, this is the list
+$u_1 < u_2 < \dots < u_k$ of the distinct binary values $\pi(w)$, read with the most significant
+letter first, of the Ulam words $w$ of length $n$, in increasing order.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Ulam words](is-ulam-word.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

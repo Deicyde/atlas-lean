@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_ones_zeros_iff_mem_discreteSierpinski
 ---
 
-# Is Ulam Word ones zeros iff mem discrete Sierpinski
+# Ulam words made of ones followed by zeros
 
-For `1 ≤ y ≤ x`, `1^y 0^{x-y}` is Ulam iff `(x, y) = (1, 1)` or `(x, y)` lies in the
-discrete Sierpiński triangle `𝒮`.
+**Ulam words made of ones followed by zeros.** For natural numbers $x$ and $y$ with
+$1 \le y \le x$, the word $1^y 0^{x-y}$ ($y$ ones followed by $x - y$ zeros) is an Ulam word if
+and only if $(x, y) = (1, 1)$ or $(x, y)$ belongs to the discrete Sierpiński triangle
+$\mathcal{S}$.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Discrete Sierpinski](discrete-sierpinski.md)
+- [Ulam words](is-ulam-word.md)
+- [The discrete Sierpiński triangle](discrete-sierpinski.md)
 
 ## Sources
 

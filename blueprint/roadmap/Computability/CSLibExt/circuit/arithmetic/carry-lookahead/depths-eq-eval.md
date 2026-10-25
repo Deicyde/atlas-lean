@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Circuits.Program.depths_eq_eval
 ---
 
-# Depths eq eval
+# Gate depths are evaluation in the depth interpretation
 
-Gate depths are evaluation under `depthInterpretation` with inputs at depth `0`.
+**Gate depths are evaluation in the depth interpretation.** For every program $p$ over a
+signature $\sigma$, the depth of each gate of $p$ equals the value of that gate when $p$ is
+evaluated under the depth interpretation of $\sigma$ with every input set to $0$.
 
 ## Depends on
 
-- [Depth Interpretation](depth-interpretation.md)
+- [The depth interpretation](depth-interpretation.md)
 
 ## Sources
 

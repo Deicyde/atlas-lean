@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.antiTribonacciMex_example
 ---
 
-# Anti Tribonacci Mex example
+# Mex of $\{1, 2, 3, 6\}$
 
-`antiTribonacciMex {1, 2, 3, 6} = 4`.
+**Mex of $\{1, 2, 3, 6\}$.** The least positive integer not in $\{1, 2, 3, 6\}$ is $4$.
 
 ## Depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

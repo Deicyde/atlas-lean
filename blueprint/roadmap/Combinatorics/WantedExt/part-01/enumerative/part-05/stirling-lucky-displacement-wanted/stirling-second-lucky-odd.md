@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.stirling_second_lucky_odd
 ---
 
-# Stirling second lucky odd
+# A second lucky car beyond $n$ is odd
 
-Let `w ∈ Q_n` with `lucky(w) ≥ 2` and `x` the second-smallest element of
-`Lucky(w)`. If `x > n`, then `x` is odd.
+**A second lucky car beyond $n$ is odd.** Let $w = w_1 \cdots w_{2n}$ be a Stirling
+permutation of order $n$, read as a parking function of length $2n$, and let $x$ be a lucky car
+of $w$ such that exactly one lucky car of $w$ is smaller than $x$, so that $x$ is the
+second-smallest element of the lucky set $\mathrm{Lucky}(w)$. If $x > n$, then $x$ is odd.
 
 ## Depends on
 

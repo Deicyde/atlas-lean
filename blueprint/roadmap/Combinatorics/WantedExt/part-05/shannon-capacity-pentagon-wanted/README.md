@@ -4,6 +4,6 @@ navigation: module
 
 # Shannon Capacity Pentagon
 
-- [Strong Power](strong-power.md)
-- [Has Shannon Capacity](has-shannon-capacity.md)
-- [Shannon capacity pentagon](shannon-capacity-pentagon.md)
+- [Strong power of a graph](strong-power.md)
+- [Shannon capacity of a graph](has-shannon-capacity.md)
+- [Lovász's theorem: the Shannon capacity of the pentagon](shannon-capacity-pentagon.md)

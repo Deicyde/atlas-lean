@@ -4,10 +4,10 @@ navigation: module
 
 # Root Poset Rowmotion Homomesy
 
-- [Is Homomesic](is-homomesic.md)
-- [Poset Antichain](poset-antichain.md)
-- [Is Antichain Cardinality](is-antichain-cardinality.md)
-- [Is Antichain Rowmotion](is-antichain-rowmotion.md)
-- [Is Type ARoot Poset](is-type-aroot-poset.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Homomesy](is-homomesic.md)
+- [Finite antichains of a poset](poset-antichain.md)
+- [Antichain cardinality statistic](is-antichain-cardinality.md)
+- [Rowmotion on antichains](is-antichain-rowmotion.md)
+- [Type-A root poset](is-type-aroot-poset.md)
+- [Type-A rowmotion homomesy conjecture](conjecture.md)
+- [Antichain size is homomesic under type-A rowmotion](conjecture-holds.md)

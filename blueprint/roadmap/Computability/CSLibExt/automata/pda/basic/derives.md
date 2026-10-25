@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Automata.PDA.Derives
 ---
 
-# Derives
+# Multi-step computation of a pushdown automaton
 
-Many-step computation, the reflexive transitive closure of `Step`.
+**Multi-step computation of a pushdown automaton.** For a pushdown automaton $M$, a
+configuration $c$ derives a configuration $c'$ when $M$ can reach $c'$ from $c$ in zero or more
+computation steps; that is, derivation is the reflexive transitive closure of the one-step
+computation relation of $M$.
 
 ## Depends on
 
-- [PDA](pda.md)
-- [Config](config.md)
+- [Pushdown automaton](pda.md)
+- [Pushdown automaton configuration](config.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One step of a pushdown automaton](step.md)
 
 ## Sources
 

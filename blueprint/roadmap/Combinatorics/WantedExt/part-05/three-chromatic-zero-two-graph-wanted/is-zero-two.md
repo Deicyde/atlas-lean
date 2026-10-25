@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ThreeChromaticZeroTwoGraphWanted.IsZeroTwo
 ---
 
-# Is Zero Two
+# $(0,2)$-graphs
 
-Every pair of distinct vertices has either zero or two common neighbors.
+**$(0,2)$-graphs.** For a natural number $n$, a simple graph $G$ on the vertex set
+$\{0, \dots, n-1\}$ is a $(0,2)$-graph when every two distinct vertices of $G$ have either
+exactly zero or exactly two common neighbors.
 
 ## Depends on
 

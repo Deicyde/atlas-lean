@@ -5,11 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.coeff_two_mul_eq_inverse_trinomial_transform
 ---
 
-# Corollary 49
+# Recovering even coefficients from the 2-Pascal transform
 
-**Corollary 49.** With `α`, `β` as in Theorem 6 and `g(t) = α(t) f(β(t))`,
-`f_{2n} = [t^{2n}] (2-t)(1-t)^{2n} / (2(1-t+t^2)) · g(t / √(1-t+t^2))`. The square roots are
-the power series `S`, `Q` of Theorem 6 and `R` with `R^2 = 1 - t + t^2`, `R(0) = 1`.
+**Recovering even coefficients from the 2-Pascal transform.** Write $[t^m]F$ for the
+coefficient of $t^m$ in a power series $F$. Let $S$, $Q$, $R$ be power series over $\mathbb{Q}$
+with $S^2 = 4 - 3t^2$, $S(0) = 2$, $2Q^2 = 2 - t^2 - tS$, $Q(0) = 1$, $R^2 = 1 - t + t^2$ and
+$R(0) = 1$, and put
+
+$$\alpha = \frac{-2(2Q + t^2 S - t)}{Q(3t^4 + 2tS - t^2 - 4)}, \qquad
+\beta = \frac{t(t + S)}{2(1 - t^2)}.$$
+
+For a power series $f$ over $\mathbb{Q}$ let $g(t) = \alpha(t)\,f(\beta(t))$. Then for every
+$n \in \mathbb{N}$,
+
+$$[t^{2n}]\,f = [t^{2n}]\,\frac{(2 - t)(1 - t)^{2n}}{2(1 - t + t^2)}\,g\!\left(\frac{t}{R}\right).$$
+
+Here $S$, $Q$, $R$ are the square roots $\sqrt{4 - 3t^2}$, $\sqrt{(2 - t^2 - tS)/2}$ and
+$\sqrt{1 - t + t^2}$, and $\alpha$, $\beta$ are the series of the paper's Theorem 6.
 
 ## Depends on
 

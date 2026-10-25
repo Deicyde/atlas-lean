@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Assembly.eS
 ---
 
-# E S
+# Host stack renaming for the situation-definition generator
 
-Stack renaming of the situation-definition generator.
+**Host stack renaming for the situation-definition generator.** The map from the stacks of
+the clause-family generator, used as the situation-definition generator, to the host stacks that
+sends the output stack to the shared output stack and the counter stack of each counter $x$ to
+the counter $x$ of the host's situation-definition block.
 
 ## Depends on
 
-- [HK](hk.md)
-- [GK](../family/gk.md)
+- [Stacks of the Cook–Levin host machine](hk.md)
+- [Stacks of the clause-family generator](../family/gk.md)
 
 ## Proof depends on
 
-- [SK](../counter-view/sk.md)
-- [CK](../family/ck.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Counters of the transition-family generator](../family/ck.md)
 
 ## Sources
 

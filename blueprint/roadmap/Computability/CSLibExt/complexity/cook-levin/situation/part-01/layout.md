@@ -11,7 +11,7 @@ The layout of the D3 families: `A = A0 + N` (one-hot block `[0, A0)`, situation 
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
 - [Enc](enc.md)
 
 ## Proof depends on

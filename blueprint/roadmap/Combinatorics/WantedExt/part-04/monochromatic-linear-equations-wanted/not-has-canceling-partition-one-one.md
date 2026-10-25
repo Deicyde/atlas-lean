@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_hasCancelingPartition_one_one
 ---
 
-# Not has Canceling Partition one one
+# The equation $x_1 + x_2 = 0$ has no canceling partition
 
-`x₁ + x₂ = 0` has no canceling partition.
+**The equation $x_1 + x_2 = 0$ has no canceling partition.** The equation
+$x_1 + x_2 = 0$, with coefficient vector $(1, 1)$, has no canceling partition.
 
 ## Depends on
 
-- [Has Canceling Partition](has-canceling-partition.md)
+- [Canceling partition](has-canceling-partition.md)
 
 ## Sources
 

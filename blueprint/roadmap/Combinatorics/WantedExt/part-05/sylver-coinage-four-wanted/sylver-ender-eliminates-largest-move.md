@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sylverEnder_eliminates_largest_move
 ---
 
-# Sylver Ender eliminates largest move
+# In an ender, every smaller move eliminates the largest legal move
 
-In an ender `M` (a finite position whose only end is its largest legal move `F(M)`) with
-`F(M) > 1`, every legal move below `F(M)` eliminates `F(M)`. `F(M)` is given as the greatest
-element `F` of `L(M)`.
+**In an ender, every smaller move eliminates the largest legal move.** Let $M$ be a set of
+natural numbers whose set of legal moves $L(M)$ has a greatest element $F > 1$, and suppose that
+$F$ is the only end of $M$ (so $M$ is an ender). Then for every legal move $x$ of $M$ with
+$x < F$, the number $F$ is not a legal move of $M \cup \{x\}$.
 
 ## Depends on
 
-- [Is Sylver End](is-sylver-end.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [Ends of a Sylver Coinage position](is-sylver-end.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

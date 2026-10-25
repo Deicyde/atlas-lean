@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tribonacci_succ_sub_mul_sign_changes
 ---
 
-# Tribonacci succ sub mul sign changes
+# Tribonacci differences do not keep one strict sign for three steps
 
-With `α` the real root of `x³ = x² + x + 1`, the value `T_{n+1} - α T_n` does not have
-the same strict sign at three consecutive `n`.
+**Tribonacci differences do not keep one strict sign for three steps.** Let $T_n$ be the
+Tribonacci numbers ($T_0 = T_1 = 0$, $T_2 = 1$, $T_{n+3} = T_{n+2} + T_{n+1} + T_n$) and let
+$\alpha$ be a real number with $\alpha^3 = \alpha^2 + \alpha + 1$. Then for every $n \ge 0$ the
+three numbers $T_{k+1} - \alpha T_k$ for $k = n, n + 1, n + 2$ are neither all positive nor all
+negative.
 
 ## Depends on
 

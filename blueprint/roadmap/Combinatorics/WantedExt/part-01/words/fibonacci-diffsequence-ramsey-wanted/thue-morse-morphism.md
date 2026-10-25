@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.thueMorseMorphism
 ---
 
-# Thue Morse Morphism
+# The Thue–Morse morphism $\mu$
 
-The Thue–Morse morphism `μ : 0 ↦ 10, 1 ↦ 01` on letters (`false` is `0`).
+**The Thue–Morse morphism $\mu$.** The morphism $\mu$ on binary words sends the letter $0$ to
+the word $10$ and the letter $1$ to the word $01$.
 
 ## Depends on
 

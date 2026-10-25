@@ -5,17 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.almostIDPWeights_eq_reflexiveStabilization
 ---
 
-# Almost IDPWeights eq reflexive Stabilization
+# $(1^{2n-1}, 3n, 10n, 15n)$ is a reflexive stabilization
 
-The opening clause of Theorem 13: for `n≥1`, the vector
-`(1^{2n-1},3n,10n,15n)` is exactly the first reflexive stabilization of
-`(3n,10n,15n)`.  `List.ofFn` converts the direct finite-index presentation to
-the list presentation used by `reflexiveStabilization`.
+**$(1^{2n-1}, 3n, 10n, 15n)$ is a reflexive stabilization.** For every $n \ge 1$, the weight
+vector $(1^{2n-1}, 3n, 10n, 15n)$, consisting of $2n - 1$ ones followed by $3n$, $10n$, $15n$, is
+the first reflexive stabilization of $(3n, 10n, 15n)$.
 
 ## Depends on
 
-- [Almost IDPWeights](almost-idpweights.md)
-- [Reflexive Stabilization](reflexive-stabilization.md)
+- [The almost-IDP weight vector](almost-idpweights.md)
+- [Reflexive stabilization](reflexive-stabilization.md)
 
 ## Sources
 

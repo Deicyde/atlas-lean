@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.symmetricValleyDepthSum_compositions_genFun
 ---
 
-# Symmetric Valley Depth Sum compositions gen Fun
+# Generating function for the total depth of symmetric valleys over compositions
 
-Generating function of `dsv(n)`:
-`∑ dsv(n) xⁿ = (x⁵ - 2x⁶ + x⁷) / ((1 - 2x)² (1 - x³)(1 - x²)²)`, stated after clearing
-denominators.
+**Generating function for the total depth of symmetric valleys over compositions.** For
+$n \ge 0$, let $\operatorname{dsv}(n)$ be the sum, over all compositions $c$ of $n$, of the total
+depth of the symmetric valleys of the sequence of parts of $c$. Then in the ring $\mathbb{Z}[[x]]$
+of formal power series,
+
+$$\Big(\sum_{n \ge 0} \operatorname{dsv}(n)\, x^n\Big)(1-2x)^2(1-x^3)(1-x^2)^2 = x^5 - 2x^6 + x^7,$$
+
+that is, $\sum_{n \ge 0} \operatorname{dsv}(n)\, x^n$ equals
+$(x^5 - 2x^6 + x^7)/((1-2x)^2(1-x^3)(1-x^2)^2)$.
 
 ## Depends on
 
-- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
+- [Total depth of the symmetric valleys of a word](symmetric-valley-depth-sum.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.iteratedPartialSum
 ---
 
-# Iterated Partial Sum
+# Iterated partial sums
 
-`P^{(k)}((a_n)_{n ≥ 0})(m)`, the `k`-fold partial sum of `(a_n)`: the sequence
-`t^s_{k,m}` for the zero seed sequence `s`.
+**Iterated partial sums.** Let $M$ be an additive commutative monoid and let
+$a = (a_n)_{n \ge 0}$ be a sequence in $M$. For $k, m \ge 0$, the $k$-fold iterated partial sum
+$P^{(k)}(a)(m)$ is the seeded partial sum $t^s_{k,m}$ of $a$ for the zero seed sequence $s = 0$.
+Thus $P^{(0)}(a)(m) = a_m$ and $P^{(k+1)}(a)(m) = \sum_{i\lt m} P^{(k)}(a)(i)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Seeded Partial Sums](seeded-partial-sums.md)
+- [Seeded partial sums](seeded-partial-sums.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.monotone_boolFunConcat_iff
 ---
 
-# Monotone bool Fun Concat iff
+# Monotone concatenations of Boolean functions (Bakoev)
 
-Proposition 4 (Bakoev): `g || h` is monotone if and only if `g` and `h`
-are monotone and `g ≤ h` pointwise.
+**Monotone concatenations of Boolean functions (Bakoev).** Let $g$ and $h$ be Boolean
+functions on $n$ variables, and let $g \parallel h$ be their concatenation, the function on
+$n + 1$ variables that equals $g$ of the remaining variables when its first variable is $0$ and
+$h$ of them when it is $1$. Then $g \parallel h$ is monotone if and only if $g$ and $h$ are both
+monotone and $g(x) \le h(x)$ for every $x \in \{0,1\}^n$.
 
 ## Depends on
 
-- [Bool Fun Concat](bool-fun-concat.md)
+- [Concatenation of Boolean functions](bool-fun-concat.md)
 
 ## Sources
 

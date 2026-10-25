@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_mul_sub_eq_iterate_F
 ---
 
-# Maximum Nim Grundy mul sub eq iterate F
+# Floor-rule Maximum Nim: t-step Grundy reduction when k = nt + h
 
-Lemma 5(ii.2): with `k=n*t+h` for positive `n,t,h`, `h ≤ n`, and
-`1 ≤ i ≤ n`, `G(nk-i)` equals `G(F^t(nk-i))`, which equals `G(n(k-t)-i)`.
-`Nat.iterate` is the paper's superscript iteration; there is no deviation.
+**Floor-rule Maximum Nim: t-step Grundy reduction when k = nt + h.** Let $n$, $t$, $h$ be
+natural numbers with $t \ge 1$ and $1 \le h \le n$, and let $k = nt + h$. Write $G(x)$ for the
+Grundy number of a pile of $x$ stones in Maximum Nim with rule function
+$f(y) = \lfloor y/k \rfloor$, let $F(x) = \lfloor (k-1)x/k \rfloor$, and let $F^t$ be the $t$-fold
+iterate of $F$. Then for every natural number $i$ with $1 \le i \le n$,
+
+$$G(nk - i) = G(F^t(nk - i)) = G(n(k - t) - i).$$
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

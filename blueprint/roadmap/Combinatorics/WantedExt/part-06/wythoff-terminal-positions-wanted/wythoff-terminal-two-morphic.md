@@ -5,19 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.wythoffTerminal_two_morphic
 ---
 
-# Wythoff Terminal two morphic
+# Morphic coding of the Wythoff mex pairs at level two
 
-Proposition 23: the non-terminal P-positions `(a_n, b_n)` of `K²` are coded by
-`g₂(f₂^ω(0))` with letters indexed from `3` (`a`, encoded `true`, at `a_n`; `b`, encoded
-`false`, at `b_n`), for the 16-letter morphism `f₂` and coding `g₂` of the statement.
-`(a_n, b_n)` is the mex pair of Theorem 17. The infinite word is an `IsOmegaLimit` of the
-iterates `morphIterate f n [0]`; its existence is part of the statement.
+**Morphic coding of the Wythoff mex pairs at level two.** Let $a_n$ be the least integer
+$m > 2$ that differs from $a_i$ and $b_i$ for every $i < n$, and let $b_n = a_n + n + 3$, so that
+$(a_0, b_0) = (3, 6)$. Let $f_2$ be the morphism on the alphabet $\{0, 1, \dots, 15\}$ given by
+$0 \mapsto 0\,1$, $1 \mapsto 2$, $2 \mapsto 3\,4$, $3 \mapsto 5\,6$, $4 \mapsto 7$,
+$5 \mapsto 8\,9$, $6 \mapsto 10$, $7 \mapsto 11\,12$, $8 \mapsto 10\,13$, $9 \mapsto 14$,
+$10 \mapsto 10\,13$, $11 \mapsto 5\,6$, $12 \mapsto 15$, $13 \mapsto 5$, $14 \mapsto 8\,9$,
+$15 \mapsto 11\,12$ and extended to finite words by concatenation, and let $g_2$ send the
+letters $3, 5, 7, 10$ to $b$ and every other letter to $a$. Then there is an infinite word
+$w = w(0)\,w(1)\,w(2) \cdots$ over this alphabet that is the limit of the iterates $f_2^k(0)$
+(each $f_2^k(0)$ is a prefix of $w$, and their lengths are unbounded), and for every such $w$
+and every $n \ge 0$, $g_2(w(a_n - 3)) = a$ and $g_2(w(b_n - 3)) = b$.
+
+By Theorem 17 of the source, the pairs $(a_n, b_n)$ and $(b_n, a_n)$ are the non-terminal
+P-positions of $K^2$, Wythoff's game in which no move is allowed from a position $(x, y)$ with
+$x + y \le 2$; indexing the letters of $w$ from $3$, the letter at $a_n$ is coded $a$ and the
+letter at $b_n$ is coded $b$.
 
 ## Depends on
 
 - [Infinite word as the limit of iterates](../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Sources
 

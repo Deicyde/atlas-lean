@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_latticeCube
 ---
 
-# Mem lattice Cube
+# Membership in a lattice cube
 
-Membership in a lattice cube, coordinatewise.
+**Membership in a lattice cube.** For $t, m \in \mathbb{N}$ and $a, x \in \mathbb{N}^t$,
+the point $x$ lies in the lattice cube with least corner $a$ and side $m$ if and only if
+$a_i \le x_i < a_i + m$ for every coordinate $i$.
 
 ## Depends on
 
-- [Lattice Cube](lattice-cube.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

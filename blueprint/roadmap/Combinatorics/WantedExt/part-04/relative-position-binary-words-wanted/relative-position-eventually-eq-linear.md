@@ -5,29 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_eventually_eq_linear
 ---
 
-# Proposition 65
+# Eventually linear relative position functions with positive slope
 
-**Proposition 65**, corrected substitution. Let `k ≥ 1`, `j ∈ ℤ`, `j = qk - r` with
-`0 ≤ r ≤ k - 1`, and let `w` be the one-sided fixed point of the Pisa substitution
-`σ_{k-r,r,1}` (`a ↦ a^{k-r} b a^r`, `b ↦ a`). (a) If `q ≥ 0`, then `r_{D^q(w)}(n) = kn + j` for
-all large `n`. (b) If `q < 0`, then for every equilibrious word `s` of length `-2q`,
-`r_{sw}(n) = kn + j` for all large `n`.
-Correction: the paper takes `w` to be the fixed point of `σ_{1,k-1,1}` for every `r`, which is
-false unless `r = k - 1`: for `k = 2`, `j = 2` (`q = 1`, `r = 0`) that fixed point has
-`r_{D(w)}(n) = 2n + 1` (Theorem 64(c)), not `2n + 2`. The substitution `σ_{k-r,r,1}` is the one
-Theorem 64(b) provides (`r(n) = kn - r`), from which `D` (Section 2:
-`r_{D(w)}(n) = r_w(n+1)` on `ab𝒲 ∪ ba𝒲`) and equilibrious prefixes (Lemma 22) shift the index by
-`q`, giving every progression `kn + j` as the paper's
-preceding sentence ("This can always be achieved") intends; for `r = k - 1` it is the paper's
-`σ_{1,k-1,1}`. Domain restriction: `k ≥ 1` (the paper writes `k ≥ 0`, but `0 ≤ r ≤ k - 1` is then
-empty). The instance `s = (ab)^{-q}` of (b) is omitted, being a special case.
+**Eventually linear relative position functions with positive slope.** Let $k \ge 1$, $q$
+and $c$ be integers with $0 \le c \le k - 1$, and put $j = qk - c$. Let $w$ be an infinite word
+over $\{a, b\}$ that starts with $a$ and is a fixed point of the Pisa substitution
+$\sigma_{k-c,c,1}$, given by $a \mapsto a^{k-c} b a^c$ and $b \mapsto a$. For an infinite word $v$
+write $r_v$ for its relative position function, and let $D$ be the deletion operator, which
+deletes the first $b$ and then the first $a$ of a word. (a) If $q \ge 0$, then
+$r_{D^q(w)}(n) = kn + j$ for all sufficiently large $n$. (b) If $q < 0$, then for every finite
+word $u$ over $\{a, b\}$ of length $-2q$ in which $a$ and $b$ occur equally often (an
+equilibrious word), $r_{uw}(n) = kn + j$ for all sufficiently large $n$.
+
+The paper takes $w$ to be the fixed point of $\sigma_{1,k-1,1}$ for every $c$, which is false
+unless $c = k - 1$: for $k = 2$ and $j = 2$ ($q = 1$, $c = 0$) that fixed point has
+$r_{D(w)}(n) = 2n + 1$ (Theorem 64(c)), not $2n + 2$. The substitution $\sigma_{k-c,c,1}$ is the
+one Theorem 64(b) provides ($r_w(n) = kn - c$), from which $D$ (with $r_{D(w)}(n) = r_w(n+1)$
+for words that start with $ab$ or $ba$ and contain both letters infinitely often) and
+equilibrious prefixes (Lemma 22) shift the index by $q$, giving every progression $kn + j$ with
+$k \ge 1$; for $c = k - 1$ it is the paper's $\sigma_{1,k-1,1}$. The paper writes $k \ge 0$, but
+the range $0 \le c \le k - 1$ is then empty.
 
 ## Depends on
 
 - [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
-- [Is Substitution Image](is-substitution-image.md)
-- [Deletion](deletion.md)
-- [Relative Position](relative-position.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [The deletion operator](deletion.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

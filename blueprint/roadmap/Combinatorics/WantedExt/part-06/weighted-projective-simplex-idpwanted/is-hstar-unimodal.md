@@ -7,9 +7,17 @@ lean: MetaMathlibExt.IsHStarUnimodal
 
 # Is HStar Unimodal
 
-A polytope is `h*`-unimodal when a polynomial satisfying the defining
-Ehrhart-series identity is unimodal.  Thus this does not build `h*` from the
-explicit weighted-simplex formula.
+**$h^*$-unimodal polytopes.** Let $P \subseteq \mathbb{R}^n$, with coordinates indexed by a
+finite set of size $n$, and let $L_P(t)$ be the number of lattice points of the dilate
+$tP = \{t y : y \in P\}$ (taken to be $0$ if there are infinitely many). Then $P$ is
+$h^*$-unimodal when there is a unimodal polynomial $h \in \mathbb{Z}[z]$ with
+
+$$\Big(\sum_{t \ge 0} L_P(t)\, z^t\Big) (1 - z)^{n+1} = h(z)$$
+
+as formal power series, that is, an $h^*$-polynomial of $P$ that is unimodal.
+
+The identity determines $h$, so this says that the $h^*$-polynomial of $P$ exists and is unimodal;
+it is not built from the explicit formula for weighted simplices.
 
 ## Depends on
 
@@ -18,7 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is HStar Polynomial](is-hstar-polynomial.md)
-- [Is Unimodal](is-unimodal.md)
+- [Unimodal polynomials](is-unimodal.md)
 
 ## Sources
 

@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.thueMorseQuarto_complexity_formula
 ---
 
-# Thue Morse Quarto complexity formula
+# Factor complexity and right-special factors of the Thue–Morse Quarto word
 
-Proposition 33: for `n ≥ 16`, `k = ⌊log₂ n⌋`, `n = 2^k + i`: `p_𝒬(n)` equals
-`13 · 2^{k-2} - 2` (`i = 0`), `4n - 3 · 2^{k-2} - 4` (`1 ≤ i ≤ 2^{k-1}`),
-`3n + 3 · 2^{k-2} - 3` (`2^{k-1} < i ≤ 3 · 2^{k-2}`), `2n + 5 · 2^{k-1} - 2`
-(`3 · 2^{k-2} < i`); moreover `#RS_𝒬(n) = p_𝒬(n+1) - p_𝒬(n)`, which is `4` for
-`n ∈ (2^k, 3 · 2^{k-1}]`, `3` for `n ∈ (3 · 2^{k-1}, 7 · 2^{k-2}]`, and `2` for
-`n ∈ (7 · 2^{k-2}, 2^{k+1})`. Arithmetic in `ℤ`.
+**Factor complexity and right-special factors of the Thue–Morse Quarto word.** Let
+$\mathcal{Q}$ be the Thue–Morse Quarto sequence, $p_{\mathcal{Q}}$ its factor complexity and
+$\mathrm{RS}_{\mathcal{Q}}(n)$ its set of right-special factors of length $n$. Let $n \ge 16$ and
+$k = \lfloor \log_2 n \rfloor$, so that $2^k \le n < 2^{k+1}$. Then
+$p_{\mathcal{Q}}(n) = 13 \cdot 2^{k-2} - 2$ if $n = 2^k$,
+$p_{\mathcal{Q}}(n) = 4n - 3 \cdot 2^{k-2} - 4$ if $2^k < n \le 2^k + 2^{k-1}$,
+$p_{\mathcal{Q}}(n) = 3n + 3 \cdot 2^{k-2} - 3$ if $2^k + 2^{k-1} < n \le 2^k + 3 \cdot 2^{k-2}$,
+and $p_{\mathcal{Q}}(n) = 2n + 5 \cdot 2^{k-1} - 2$ if $2^k + 3 \cdot 2^{k-2} < n$. Moreover
+$\#\mathrm{RS}_{\mathcal{Q}}(n) = p_{\mathcal{Q}}(n+1) - p_{\mathcal{Q}}(n)$, and
+$\#\mathrm{RS}_{\mathcal{Q}}(n)$ equals $4$ if $2^k < n \le 3 \cdot 2^{k-1}$, $3$ if
+$3 \cdot 2^{k-1} < n \le 7 \cdot 2^{k-2}$, and $2$ if $7 \cdot 2^{k-2} < n$.
 
 ## Depends on
 
-- [Right Special Factors](right-special-factors.md)
-- [Thue Morse Quarto](thue-morse-quarto.md)
+- [Right-special factors](right-special-factors.md)
+- [Thue–Morse quarto sequence](thue-morse-quarto.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

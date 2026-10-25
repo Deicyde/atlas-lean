@@ -15,7 +15,7 @@ Pairs of listed states, coded by `Nat.pair`.
 
 ## Proof depends on
 
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 
 ## Sources
 

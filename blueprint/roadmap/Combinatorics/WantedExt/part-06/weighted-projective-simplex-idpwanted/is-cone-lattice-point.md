@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsConeLatticePoint
 ---
 
-# Is Cone Lattice Point
+# Lattice points of the cone over a polytope
 
-A homogenized lattice point `(height,w)` belongs to the cone over `P` when
-`w` is a lattice point of the corresponding height dilate.  This is exactly
-the height-slice encoding used earlier for IDP.
+**Lattice points of the cone over a polytope.** For a set $P \subseteq \mathbb{R}^n$, a pair
+$(t, w)$ with $t \in \mathbb{N}$ and $w \in \mathbb{Z}^n$ is a lattice point of the cone over $P$
+when $w$ is a lattice point of the dilate $tP = \{t y : y \in P\}$.
+
+For a convex polytope $P$ the slice of the cone over $P$ at height $t$ is $tP$, so this describes
+the lattice points of the cone height by height, as in the definition of the integer
+decomposition property.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lattice Point](is-lattice-point.md)
-- [Polytope Dilate](polytope-dilate.md)
+- [Lattice points of a set](is-lattice-point.md)
+- [Dilate of a set](polytope-dilate.md)
 
 ## Sources
 

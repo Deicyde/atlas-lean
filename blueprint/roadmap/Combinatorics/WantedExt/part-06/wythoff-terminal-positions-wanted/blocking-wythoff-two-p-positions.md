@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.blockingWythoff_two_pPositions
 ---
 
-# Blocking Wythoff two p Positions
+# Larsson's P-positions of Blocking Wythoff Nim with one blocked option
 
-Theorem 26 (Larsson): the P-positions of `W²` (Wythoff's game in which the previous player
-may forbid one option) are `R₂`: every position of `R₂` has at most one Wythoff option in
-`R₂`, and every position outside `R₂` has at least two.
+**Larsson's P-positions of Blocking Wythoff Nim with one blocked option.** Let $\varphi$ be
+the golden ratio, and let $R_2$ consist of $(0, 0)$ and, for every $n \ge 0$, the positions
+$(n, 2n + 1)$, $(2n + 1, n)$, $(2\lfloor n\varphi \rfloor + 2, 2\lfloor n\varphi^2 \rfloor + 2)$
+and $(2\lfloor n\varphi^2 \rfloor + 2, 2\lfloor n\varphi \rfloor + 2)$. A Wythoff move from a
+position of two piles removes a positive number of tokens from one pile, or the same positive
+number from both. Then every position in $R_2$ has at most one Wythoff move to a position in
+$R_2$, and every position outside $R_2$ has at least two Wythoff moves to positions in $R_2$.
+
+Hence $R_2$ is the set of P-positions of $W^2$, Wythoff's game in which the previous player may
+forbid one option.
 
 ## Depends on
 
-- [Larsson Set Two](larsson-set-two.md)
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Larsson's set $R_2$](larsson-set-two.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
 
 ## Sources
 

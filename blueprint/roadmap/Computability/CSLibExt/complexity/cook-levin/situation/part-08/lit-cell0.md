@@ -12,7 +12,7 @@ Row-0 cell literals of the real start configuration are run literals.
 
 ## Depends on
 
-- [C Idx](../../family/c-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [Enc](../part-01/enc.md)
 - [The real run's literals](run-lit.md)
 - [Cell](../part-03/cell.md)
@@ -20,7 +20,7 @@ Row-0 cell literals of the real start configuration are run literals.
 
 ## Proof depends on
 
-- [X Idx](../../family/x-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [Code](../part-03/code.md)
 - [Sa](../part-01/sa.md)
 - [Sit Idx](../part-03/sit-idx.md)

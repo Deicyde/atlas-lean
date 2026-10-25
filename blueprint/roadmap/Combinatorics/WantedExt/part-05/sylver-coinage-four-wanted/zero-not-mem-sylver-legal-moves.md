@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zero_notMem_sylverLegalMoves
 ---
 
-# Zero not Mem sylver Legal Moves
+# Zero is never a legal move
 
-`0` is never a legal move.
+**Zero is never a legal move.** For every set $M$ of natural numbers, $0$ is not a legal move
+of the Sylver Coinage position $M$.
 
 ## Depends on
 
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

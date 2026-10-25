@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.evenFibonacciSet_degreeOfAccessibility_eq_one
 ---
 
-# Even Fibonacci Set degree Of Accessibility eq one
+# The even Fibonacci numbers have degree of accessibility $1$
 
-The even Fibonacci numbers have degree of accessibility `1`: `F_E` is `1`-accessible and
-not `r`-accessible for any `r ≥ 2`.
+**The even Fibonacci numbers have degree of accessibility $1$.** The even Fibonacci set
+$\{2, 8, 34, \dots\}$ is $1$-accessible, and it is not $r$-accessible for any natural number
+$r \ge 2$.
 
 ## Depends on
 

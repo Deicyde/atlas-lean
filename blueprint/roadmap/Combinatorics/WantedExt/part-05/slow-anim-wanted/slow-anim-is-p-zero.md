@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.slowANim_isP_zero
 ---
 
-# Slow ANim is P zero
+# The empty position is a P-position
 
-The empty position is a P-position (it has no options).
+**The empty position is a P-position.** For every $n$ and every finite set $A$ of natural
+numbers, the position of Slow$A$-Nim $\mathrm{SN}(n, A)$ with all $n$ stacks empty is a
+P-position, since it has no options.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Proof depends on
 
 - [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
 - [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
-- [Slow ANim Moves zero](slow-anim-moves-zero.md)
+- [The empty position has no options](slow-anim-moves-zero.md)
 
 ## Sources
 

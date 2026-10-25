@@ -20,7 +20,7 @@ lean: Cslib.Complexity.Karp.cliqueDec_npHard
 
 ## Proof depends on
 
-- [Every NP problem reduces to `satDec`](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
 - [The translation computes the binary encoding](../../../dense-to-binary/sat-dec-encode-cnf.md)
 - [Sat Dec of decode CNF eq none](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
 - [Clique Bits](../clique/clique-bits.md)

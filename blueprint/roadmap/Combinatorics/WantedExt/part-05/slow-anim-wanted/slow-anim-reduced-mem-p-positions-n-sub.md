@@ -5,20 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.slowANimReduced_mem_pPositions_n_sub_one_iff
 ---
 
-# Slow ANim Reduced mem p Positions n sub one iff
+# P-positions of the reduced game of Slow $\{n-1\}$-Nim
 
-P-positions of the reduced game `SNG̃(n, k)`, `k = n - 1` (`n ≥ 2`). For a reduced position
-`p` with `s = Σ(p) mod 2k` and `o` odd stacks, `s` and `o` have the same parity, and `p` is a
-P-position of the playable game graph exactly when `(s, o)` lies in
-`S₁ = {0 ≤ s < k - 1, o ≤ s}`, `S₂ = {s = n - 2, o ≡ n (mod 2)}` or
-`S₃ = {k - 1 < s < 2k - 1, o ≤ 2(k - 1) - s}`; the paper's "same parity" clauses in `S₁` and
-`S₃` follow from the first assertion and are not repeated.
+**P-positions of the reduced game of Slow $\{n-1\}$-Nim.** Let $n \ge 2$ and $A = \{n - 1\}$,
+and let $\tilde P$ be a set of P-positions of the playable game graph of Slow $A$-Nim on $n$
+stacks: no move of that graph joins two elements of $\tilde P$, and every reduced position
+outside $\tilde P$ has a move into $\tilde P$. For a reduced position $q$, let $s$ be the
+remainder of $\sum_i q_i$ modulo $2(n - 1)$ and let $o$ be the number of stacks of $q$ of odd
+height. Then $s$ and $o$ have the same parity, and $q \in \tilde P$ if and only if $s < n - 2$
+and $o \le s$, or $s = n - 2$ and $o \equiv n \pmod 2$, or $n - 2 < s < 2n - 3$ and
+$o \le 2(n - 2) - s$.
 
 ## Depends on
 
-- [Is PPosition Set](is-pposition-set.md)
-- [Slow ANim Reduced](slow-anim-reduced.md)
-- [Slow ANim Reduced Graph Move](slow-anim-reduced-graph-move.md)
+- [Set of P-positions](is-pposition-set.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
+- [Moves of the playable game graph of Slow $A$-Nim](slow-anim-reduced-graph-move.md)
 
 ## Sources
 

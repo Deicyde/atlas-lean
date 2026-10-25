@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount_varPerm_nondegenerate_eq_sub
 ---
 
-# Bool Fun Class Count var Perm nondegenerate eq sub
+# Non-degenerate permutation classes as a difference
 
-Proposition 11, difference form: `nd-[P]_{n+1} = [P]_{n+1} - [P]_n` (the
-paper's `nd-[P]_n = [P]_n - [P]_{n-1}` for `n ≥ 1`), under the same hypothesis
-as `boolFunClassCount_varPerm_eq_sum_nondegenerate`.
+**Non-degenerate permutation classes as a difference.** Let $(P_n)_{n \ge 0}$ be a family of
+properties, $P_n$ a property of $n$-variable Boolean functions, that is invariant under renaming
+variables: for all $m$ and $n$, every injection $e$ from $\{1, \dots, m\}$ to $\{1, \dots, n\}$
+and every $m$-variable function $g$, the $n$-variable function $x \mapsto g(x \circ e)$ has $P_n$
+if and only if $g$ has $P_m$. Write $[P]_n$ for the number of classes of $n$-variable functions
+with $P_n$ under permutation of the variables, and $\mathrm{nd}[P]_n$ for the same count over the
+non-degenerate $n$-variable functions with $P_n$. Then for every $n$,
+
+$$\mathrm{nd}[P]_{n+1} = [P]_{n+1} - [P]_n,$$
+
+where the subtraction is truncated at $0$; this is the paper's
+$\mathrm{nd}[P]_n = [P]_n - [P]_{n-1}$ for $n \ge 1$.
+
+The paper assumes only closure under permutations of the variables, which is not enough; see the
+summation form of Proposition 11.
 
 ## Depends on
 
-- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
 - [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
-- [Bool Fun Class Count](bool-fun-class-count.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
 
 ## Sources
 

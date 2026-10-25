@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.inversion_uU
 ---
 
-# Lemma 5 (Butzer et al., Proposition 2.3)
+# Inversion formula for the arrays $u(k, m)$ and $U(k, m)$ (Butzer et al.)
 
-**Lemma 5 (Butzer et al., Proposition 2.3)**: the inversion
-formula `a_k = Σ_{m=1}^k u(k, m)·b_m ⟺
-b_k = Σ_{m=1}^k U(k, m)·a_m` for real sequences.
+**Inversion formula for the arrays $u(k, m)$ and $U(k, m)$ (Butzer et al.).** For natural
+numbers $k$ and $m$, let $u(k, m)$ be the first-kind Jacobi–Stirling number $J(k, m; 0)$, the
+coefficient of $x^m$ in $\prod_{i=0}^{k-1} (x - i^2)$, and let
+$U(k, m) = \frac{2}{(2m)!} \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$. For all sequences
+$(a_k)_{k \ge 0}$ and $(b_k)_{k \ge 0}$ of real numbers, $a_k = \sum_{m=1}^{k} u(k, m)\, b_m$
+holds for every $k \ge 1$ if and only if $b_k = \sum_{m=1}^{k} U(k, m)\, a_m$ holds for every
+$k \ge 1$.
 
 ## Depends on
 
-- [Array U](array-u.md)
+- [The array $U(k, m)$](array-u.md)
 - [First-kind Jacobi–Stirling numbers](../../../../../MathlibExt/part-01/enumerative/part-04/jacobi-stirling-first-kind/jacobi-stirling-first.md)
 
 ## Sources

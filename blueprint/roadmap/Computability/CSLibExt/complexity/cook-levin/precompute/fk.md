@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.FK
 ---
 
-# FK
+# Stacks of the full machine
 
-Full stacks: the host's, the raw input, the private scratch counters.
+**Stacks of the full machine.** The full machine has one stack for each host stack, one
+stack for the raw input, and one stack for each scratch counter of the counter program.
 
 ## Depends on
 

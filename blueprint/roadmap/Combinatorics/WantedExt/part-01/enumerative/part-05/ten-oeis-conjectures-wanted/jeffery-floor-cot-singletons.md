@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.jeffery_floor_cot_singletons
 ---
 
-# Jeffery floor cot singletons
+# Jeffery's conjecture on singletons of $\lfloor \cot(\pi/(2m)) \rfloor$
 
-Jeffery's conjecture (A223577, A223578). Let `f(m) = ⌊cot (π / (2m))⌋` for integers `m ≠ 0`,
-let `a(n)` list increasingly the `k ≥ 1` for which exactly one `m ≥ 2` has `-k = f(-m)`, and let
-`b(n)` list increasingly the `k ≥ 2` with `f(-k-1) < f(-k) < f(-k+1)`. Then for `n ≥ 1`,
-`a(n) = (b(n) + n - 1) / 2`, stated as `2 a(n) = b(n) + n - 1`, with `a(n)`, `b(n)` as
-`Nat.nth _ (n - 1)`.
+**Jeffery's conjecture on singletons of $\lfloor \cot(\pi/(2m)) \rfloor$.** Let
+$f(m) = \lfloor \cot(\pi / (2m)) \rfloor$ for nonzero integers $m$. Let $a_1 < a_2 < \cdots$ list
+the integers $k \ge 1$ for which exactly one integer $m \ge 2$ satisfies $f(-m) = -k$, and let
+$b_1 < b_2 < \cdots$ list the integers $k \ge 2$ with $f(-k-1) < f(-k) < f(-k+1)$. Then for every
+integer $n \ge 1$, $2a_n = b_n + n - 1$ (A223577, A223578).
+
+If either list has fewer than $n$ terms, its $n$-th term is taken to be $0$.
 
 ## Depends on
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.substitutionAutomaton_admissibleSequence
 ---
 
-# Substitution Automaton admissible Sequence
+# The automaton reads off the letters of an admissible sequence
 
-If `(mᵢ, aᵢ)_{i = 0, …, k-1}` is `x`-admissible (`k ≥ 1`), then for every `i < k` the
-automaton `𝒜_{η,x}` reading `|m_{k-1}| ⊙ ⋯ ⊙ |mᵢ|` from `x` outputs `aᵢ`.
+**The automaton reads off the letters of an admissible sequence.** Let $\eta$ be a
+substitution, let $x$ be a letter, let $k \ge 1$, and let $(m_i, a_i)_{i = 0, \dots, k-1}$ be an
+$x$-admissible sequence. Then for every $i < k$, the substitution automaton started at $x$ ends in
+the state $a_i$ after reading the digit word $|m_{k-1}|\,|m_{k-2}| \cdots |m_i|$, whose digits are
+the lengths of $m_{k-1}, \dots, m_i$ in this order.
 
 ## Depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Substitution](is-substitution.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 - [Substitution Automaton](substitution-automaton.md)
 
 ## Sources

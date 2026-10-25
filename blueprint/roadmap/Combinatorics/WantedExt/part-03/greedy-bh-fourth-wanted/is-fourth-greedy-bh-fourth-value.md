@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GreedyBhFourthWanted.isFourthGreedyBh_fourthValue
 ---
 
-# Is Fourth Greedy Bh fourth Value
+# Formula for the fourth greedy $B_h$ term
 
-Nathanson and O'Bryant's Theorem 1: the fourth positive greedy
-`B_h` term is the displayed quasipolynomial.
+**Formula for the fourth greedy $B_h$ term.** For every integer $h \ge 1$, the fourth positive
+element $a_4(h)$ of the greedy $B_h$-set is $(h^3 + 3h^2 + 3h + 1)/2$ if $h$ is odd and
+$(h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 ## Depends on
 
-- [Is Fourth Greedy Bh](is-fourth-greedy-bh.md)
-- [Fourth Value](fourth-value.md)
+- [Fourth positive term of the greedy $B_h$-set](is-fourth-greedy-bh.md)
+- [Quasipolynomial for the fourth greedy $B_h$ term](fourth-value.md)
 
 ## Sources
 

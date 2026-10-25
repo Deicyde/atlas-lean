@@ -6,12 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GreenProblem1LargeSumFreeWanted.conjecture
 ---
 
-# Conjecture
+# Green's Problem 1 on large sum-free subsets
 
-Large sum-free subset question from [GREEN-001] (Ben Green, Problem 1):
-there exists an unbounded function `ω`, with `ω(n) → ∞` as `n → ∞`, such that
-every finite set `A` of positive integers contains a sum-free subset `B ⊆ A`
-of size at least `|A| / 3 + ω(|A|)`.
+**Green's Problem 1 on large sum-free subsets.** The statement that there is a function
+$\omega$ from the natural numbers to the real numbers with $\omega(n) \to \infty$ as
+$n \to \infty$ such that every finite set $A$ of positive integers contains a sum-free subset
+$B \subseteq A$ with $|B| \ge |A|/3 + \omega(|A|)$.
 
 ## Depends on
 
@@ -19,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sum Free](is-sum-free.md)
+- [Sum-free sets of natural numbers](is-sum-free.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GreenProblem1LargeSumFreeWanted](../../../../../sources/v2/WantedExt.md)
+- Ben Green, Problem 1 [GREEN-001].

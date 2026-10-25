@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stirlingVMatrix
 ---
 
-# Stirling VMatrix
+# Upper bidiagonal matrix V(n)
 
-The upper bidiagonal matrix `V(n)`: `V_{i,i} = i`, `V_{i,i+1} = 1`, zero
-elsewhere.
+**Upper bidiagonal matrix V(n).** For a natural number $n$, $V(n)$ is the $n \times n$
+matrix over $\mathbb{Q}$, with rows and columns indexed by $1, \dots, n$, whose entries are
+$V_{i,i} = i$ on the diagonal, $V_{i,i+1} = 1$ just above the diagonal, and $0$ elsewhere.
 
 ## Depends on
 

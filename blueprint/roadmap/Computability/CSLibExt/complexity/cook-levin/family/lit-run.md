@@ -6,36 +6,48 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Family.lit_run
 ---
 
-# Lit run
+# Run of one literal routine (transition-clause generator)
 
-One literal: from `P = q + gap + 1` (the previous boundary), compute `Q := q`, prepend the gap
-and the literal slot, and leave `P = q`, all scratch counters empty again.
+**Run of one literal routine (transition-clause generator).** Let $i < N$ be a situation, $j$
+less than the number of literals, and $F$ a counter assignment whose scratch counters $Q$,
+$\mathrm{Ka}$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let
+$q = F(\mathrm{TW}) + k_A(j) F(\mathrm{HG}) + k_B(j) F(\mathrm{Wc}) + c_i(j)$, where $k_A$, $k_B$
+and $c_i(j)$ are the stack index, the row offset and the constant part of the position of literal
+$j$, and suppose $F(P) = q + m + 1$ for a natural number $m$. Let $K$ be the number of stacks of
+the layout. Then for every output $o$ and every state $v$, the generator runs in at most
+
+$$m(3q + 6) + 2F(\mathrm{TW}) + K(2F(\mathrm{HG}) + 3) + 2K + 2F(\mathrm{Wc}) + 4q + 22$$
+
+steps from the first stage of the routine for literal $j$ of situation $i$, with state $v$,
+counters $F$ and output $o$, to the label that follows literal $j$, with state false, counters $F$
+except that $P = q$, and output $s\,(01)^m\,o$, where $s$ is the slot code of a literal with
+polarity $\mathrm{sgn}(j)$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [St](../counter-view/st.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [After](after.md)
-- [GΓ](g.md)
-- [LS](ls.md)
-- [Layout](layout.md)
-- [N Lits](n-lits.md)
-- [Rest](rest.md)
-- [Cst](cst.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Counters of the transition-family generator](ck.md)
+- [Labels of the clause-family generator](gl.md)
+- [Label after a literal routine in the transition-family generator](after.md)
+- [Stack alphabets of the generator](g.md)
+- [Stages of the transition-clause generator's literal routine](ls.md)
+- [Variable layout of the transition clauses](layout.md)
+- [Number of literals of a transition clause](n-lits.md)
+- [Scratch counters at rest in the clause-family generator](rest.md)
+- [Constant offset of a literal position](cst.md)
 - [K A](k-a.md)
-- [K B](k-b.md)
+- [Row offset of a literal in a transition clause](k-b.md)
 - [Prog](prog.md)
-- [Sgn](sgn.md)
+- [Polarity of a transition-clause literal](sgn.md)
 - [Encode Slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SΓ](../counter-view/s.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

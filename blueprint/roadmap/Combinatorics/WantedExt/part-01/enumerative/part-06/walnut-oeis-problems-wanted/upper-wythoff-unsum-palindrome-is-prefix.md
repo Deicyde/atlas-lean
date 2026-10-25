@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumPalindrome_isPrefix_succ_iff
 ---
 
-# Upper Wythoff Unsum Palindrome is Prefix succ iff
+# When one palindrome is a prefix of the next
 
-`W_i` is a prefix of `W_(i+1)` iff `i` is odd (for `i ≥ 1`).
+**When one palindrome is a prefix of the next.** Let $g_k$ be the $k$-th gap between
+consecutive unsums (OEIS A260317), counted from zero, and let $m_0 < m_1 < \cdots$ be the
+markers, the indices $k \ge 10$ with $g_k = 2$, in increasing order. For $i \ge 1$ let $W_i$
+be the word of the gaps $g_k$ with $m_{2i-2} < k < m_{2i-1}$, in increasing order of $k$. Then
+for every $i \ge 1$, the word $W_i$ is a prefix of $W_{i+1}$ if and only if $i$ is odd.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
+- [The words $W_i$ of the unsum gap sequence](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

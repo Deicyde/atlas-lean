@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond_add
 ---
 
-# Sum signed Stirling First mul stirling Second add
+# Shifted orthogonality of Stirling numbers
 
-Theorem 4: for `i ≥ j ≥ 1`, `∑_{l=1}^{i} s(i, l) S(l + m, j)` is `i^m` if
-`i = j` and `0` if `i > j`. The paper takes `m ≥ 1`; `m = 0` also holds and is
-included.
+**Shifted orthogonality of Stirling numbers.** Write $s(n, k)$ for the signed Stirling
+numbers of the first kind and $S(n, k)$ for the Stirling numbers of the second kind. For all
+natural numbers $i$, $j$, $m$ with $1 \le j \le i$, the integer
+$\sum_{l=1}^{i} s(i, l)\, S(l + m, j)$ equals $i^m$ if $i = j$ and $0$ if $i > j$.
+
+The case $m = 0$ is included, although the source assumes $m \ge 1$.
 
 ## Depends on
 

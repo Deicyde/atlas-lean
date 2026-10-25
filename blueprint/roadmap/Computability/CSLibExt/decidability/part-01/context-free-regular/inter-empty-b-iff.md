@@ -13,17 +13,17 @@ lean: Cslib.Language.EncodedCFG.interEmptyB_iff
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Language](../../../automata/da/encoded-dfa/language.md)
+- [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [The emptiness test](inter-empty-b.md)
 - [Language](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
-- [States](../../../automata/da/encoded-dfa/states.md)
-- [Step](../../../automata/da/encoded-dfa/step.md)
-- [Step mem states](../../../automata/da/encoded-dfa/step-mem-states.md)
-- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
+- [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
+- [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [Mem B](../primrec-list/mem-b.md)
 - [Dfa Sound Item](dfa-sound-item.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)

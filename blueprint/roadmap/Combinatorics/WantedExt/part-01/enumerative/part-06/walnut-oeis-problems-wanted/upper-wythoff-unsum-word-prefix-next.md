@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumWord_prefix_next
 ---
 
-# Upper Wythoff Unsum Word prefix next
+# A word $3V3$ between markers is followed by a word starting with $3V$
 
-If a word between markers has the form `3V3`, then `3V` is a prefix of the next word
-between markers; in particular the next word equals it if their digit sums agree.
+**A word $3V3$ between markers is followed by a word starting with $3V$.** Let $V$ be a
+finite word of natural numbers, and suppose that the $j$-th word between markers of the unsum
+gap sequence is $3V3$. Then $3V$ is a prefix of the $(j+1)$-th word between markers, and if the
+$(j+1)$-th word has the same digit sum as the $j$-th word, then the two words are equal.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
+- [Words between markers in the unsum gap sequence](upper-wythoff-unsum-word.md)
 
 ## Sources
 

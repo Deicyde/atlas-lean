@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_diffBasisNumber_div_sqrt
 ---
 
-# Tendsto diff Basis Number div sqrt
+# Kravitz's question: the normalized difference basis numbers converge
 
-Kravitz's question answered: for every `g ≥ 1` the limit of `η_g(n)/√n` exists and is a
-positive real number.
+**Kravitz's question: the normalized difference basis numbers converge.** For a finite set
+$A$ of integers and an integer $x$, write $r_{A-A}(x)$ for the number of ordered pairs
+$(a, a') \in A \times A$ with $a - a' = x$. For every integer $g \ge 1$, let $\eta_g(n)$ be the
+least size of a finite set $A$ of integers with $r_{A-A}(x) \ge g$ for every integer
+$x \in [1, n]$. Then there is a real number $c > 0$ with $\eta_g(n) / \sqrt{n} \to c$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Diff Basis Number](diff-basis-number.md)
+- [The $g$-difference basis number](diff-basis-number.md)
 
 ## Sources
 

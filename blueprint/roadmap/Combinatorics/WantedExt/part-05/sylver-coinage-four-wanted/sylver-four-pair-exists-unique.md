@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sylver_four_pair_existsUnique
 ---
 
-# Sylver four pair exists Unique
+# Unique odd partner after 4
 
-For odd `q > 3`, `{4, q}` is an N-position and there is a unique odd `x_q` such that
-`{4, x_q}` is an N-position and `{4, q, x_q}` is a P-position (when `q < x_q`, `(q, x_q)` is a
-4-pair).
+**Unique odd partner after 4.** Let $q > 3$ be an odd natural number. Then $\{4, q\}$ is an
+N-position of Sylver Coinage, and there is a unique odd natural number $x_q$ such that
+$\{4, x_q\}$ is an N-position and $\{4, q, x_q\}$ is a P-position.
+
+When $q < x_q$, the pair $(q, x_q)$ is a 4-pair.
 
 ## Depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Sources
 

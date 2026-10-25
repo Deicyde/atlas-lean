@@ -12,16 +12,16 @@ Update family of the real machine: the `D3Fam` generator runs on the real tables
 
 ## Depends on
 
-- [SK](../../counter-view/sk.md)
-- [St](../../counter-view/st.md)
-- [CK](../../family/ck.md)
-- [GL](../../family/gl.md)
-- [GΓ](../../family/g.md)
-- [N Lits](../../family/n-lits.md)
-- [PS](../../family/ps.md)
-- [Family](../../family/family.md)
-- [Gen C](../../family/gen-c.md)
-- [Init F](../../family/init-f.md)
+- [Stacks of a counter machine](../../counter-view/sk.md)
+- [Stacks holding given counter values](../../counter-view/st.md)
+- [Counters of the transition-family generator](../../family/ck.md)
+- [Labels of the clause-family generator](../../family/gl.md)
+- [Stack alphabets of the generator](../../family/g.md)
+- [Number of literals of a transition clause](../../family/n-lits.md)
+- [Stages of the transition-clause generator's precomputation](../../family/ps.md)
+- [The transition clause family](../../family/family.md)
+- [Constant of the generator's time bound](../../family/gen-c.md)
+- [Initial counters of the transition-clause generator](../../family/init-f.md)
 - [Prog](../../family/prog.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
@@ -35,7 +35,7 @@ Update family of the real machine: the `D3Fam` generator runs on the real tables
 
 ## Proof depends on
 
-- [The time bound](../../family/gen-time.md)
+- [Polynomial time bound for the clause-family generator](../../family/gen-time.md)
 - [Wf upd](wf-upd.md)
 
 ## Sources

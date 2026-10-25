@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.BusyBeaver.haltsWithin_one_of_halts
 ---
 
-# Halts Within one of halts
+# One-state machines halt within one step
 
-Every halting one-state machine halts within one step.
+**One-state machines halt within one step.** Every halting one-state machine halts
+within one step.
 
 ## Depends on
 
-- [Halts](halts.md)
-- [Halts Within](halts-within.md)
-- [Machine](machine.md)
+- [Halting on the blank tape](halts.md)
+- [Halting within $t$ steps](halts-within.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Move](move.md)
-- [Shift](shift.md)
-- [Initial](initial.md)
-- [Initial State](initial-state.md)
-- [Not halts of one state march](not-halts-of-one-state-march.md)
-- [Run](run.md)
-- [Step](step.md)
+- [Busy Beaver machine configuration](config.md)
+- [Head movement](move.md)
+- [Head displacement](shift.md)
+- [Initial configuration](initial.md)
+- [Initial state](initial-state.md)
+- [A one-state machine that stays in its state on a blank never halts](not-halts-of-one-state-march.md)
+- [Configuration after $t$ steps](run.md)
+- [One step of a Busy Beaver machine](step.md)
 
 ## Sources
 

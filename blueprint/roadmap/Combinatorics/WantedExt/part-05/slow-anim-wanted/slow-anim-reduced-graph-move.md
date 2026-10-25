@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.SlowANimReducedGraphMove
 ---
 
-# Slow ANim Reduced Graph Move
+# Moves of the playable game graph of Slow $A$-Nim
 
-The move relation of the playable (reduced) game graph `G̃` of `SN(n, A)`: its positions are
-the reduced positions, and a move from `p` goes to the reduction `r(p')` of an option `p'` of `p`
-in `SN(n, A)` (the paper's adjusted move `m̃ = m + Δu(p')`).
+**Moves of the playable game graph of Slow $A$-Nim.** The playable (reduced) game graph of
+Slow $A$-Nim on $n$ stacks has the reduced positions as its positions. For reduced positions
+$x$ and $y$, there is a move from $x$ to $y$ when $y$ is the reduction $r(q)$ of some option
+$q$ of $x$ in Slow $A$-Nim, that is, of some position reached from $x$ by one legal move.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_boolFun_eq_sum_choose_card_nondegenerate
 ---
 
-# Card bool Fun eq sum choose card nondegenerate
+# Counting Boolean functions by their non-degenerate restrictions
 
-Proposition 1: for a property `P` of Boolean functions,
-`P_n = ∑_{i=0}^n binom(n, i) nd-P_i`, where `nd-P_i` counts the non-degenerate
-`i`-variable functions with `P`.
+**Counting Boolean functions by their non-degenerate restrictions.** Let $P$ be a property
+of Boolean functions on any number of variables that is invariant under renaming variables
+along injections: for all $m, n$, every injective map $e$ from $\{1, \dots, m\}$ to
+$\{1, \dots, n\}$ and every $m$-variable function $g$, the $n$-variable function
+$x \mapsto g(x_{e(1)}, \dots, x_{e(m)})$ has $P$ if and only if $g$ has $P$. Write $P_n$ for the
+number of $n$-variable Boolean functions with $P$ and $\mathrm{nd}\text{-}P_i$ for the number of
+non-degenerate $i$-variable Boolean functions with $P$. Then for every $n \ge 0$,
 
-Deviation: the paper says "every property"; that is false for properties
-that depend on the number of variables (if `P` holds exactly for the four
-`1`-variable functions, then `P_1 = 4` but the sum is `0 + 2 = 2`). The
-hypothesis `hP` (the paper's counting argument, which identifies a function
-with its restriction to the variables it depends on) requires `P` to be
-invariant under renaming variables along an injection; balanced, monotone,
-unate and their intersections satisfy it.
+$$P_n = \sum_{i=0}^{n} \binom{n}{i} \, \mathrm{nd}\text{-}P_i.$$
+
+The invariance hypothesis cannot be dropped: if $P$ holds exactly for the four $1$-variable
+functions, then $P_1 = 4$ but the right-hand side is $0 + 2 = 2$.
 
 ## Depends on
 

@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cos_sub_neg_of_lollipop_good_pair
 ---
 
-# Lemma 3
+# Stem–circle intersections of two lollipops
 
-**Lemma 3** (lollipops). A lollipop with center `c`, radius `r > 0` and stem direction
-`(cos θ, sin θ)` is the circle of radius `r` about `c` together with the part of the ray from `c`
-in that direction outside the open disc. If two lollipops have three or four stem-circle
-intersections in total (stem of each with circle of the other), then `cos(θ₁ - θ₂) < 0`.
+**Stem–circle intersections of two lollipops.** For a point $c = (a, b) \in \mathbb{R}^2$, a
+radius $r > 0$ and an angle $\theta \in \mathbb{R}$, the lollipop with center $c$, radius $r$ and
+stem direction $(\cos\theta, \sin\theta)$ consists of the circle
+$\{(x, y) \in \mathbb{R}^2 : (x - a)^2 + (y - b)^2 = r^2\}$ and the stem
+$\{c + s(\cos\theta, \sin\theta) : s \ge r\}$, the part of the ray from $c$ in that direction
+outside the open disc. For all $c_1, c_2 \in \mathbb{R}^2$, $r_1, r_2 > 0$ and
+$\theta_1, \theta_2 \in \mathbb{R}$, consider the lollipops with centers $c_i$, radii $r_i$ and
+stem directions $(\cos\theta_i, \sin\theta_i)$. If the number of points where the stem of the
+first meets the circle of the second plus the number of points where the stem of the second meets
+the circle of the first is $3$ or $4$, then $\cos(\theta_1 - \theta_2) < 0$.
 
 ## Depends on
 

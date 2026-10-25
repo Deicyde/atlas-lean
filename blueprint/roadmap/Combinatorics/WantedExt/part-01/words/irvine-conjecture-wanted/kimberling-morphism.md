@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.kimberlingMorphism
 ---
 
-# Kimberling Morphism
+# Kimberling's morphism
 
-Kimberling's morphism `h` on `{0, 1}` (`false = 0`, `true = 1`): `h(1) = 110`, `h(0) = 11`.
+**Kimberling's morphism.** Kimberling's morphism $h$ sends each letter of the alphabet
+$\{0, 1\}$ to a finite word over $\{0, 1\}$, by $h(1) = 110$ and $h(0) = 11$.
+
+The letters $0$ and $1$ are represented by the Boolean values false and true.
 
 ## Depends on
 

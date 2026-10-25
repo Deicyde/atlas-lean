@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.twosComplementValue_examples
 ---
 
-# Twos Complement Value examples
+# Two's complement values of small words
 
-`val_{2c}(1) = -1`, `val_{2c}(10) = -2`, `val_{2c}(101) = -3`, `val_{2c}(011) = 3`.
+**Two's complement values of small words.** The two's complement values $\mathrm{val}_{2c}$
+of the binary words $1$, $10$, $101$ and $011$ (most significant digit first) are $-1$, $-2$, $-3$
+and $3$ respectively.
 
 ## Depends on
 
-- [Twos Complement Value](twos-complement-value.md)
+- [Two's complement value](twos-complement-value.md)
 
 ## Sources
 

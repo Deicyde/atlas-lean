@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.CL.sg
 ---
 
-# Sg
+# Literal sign of a clause kind
 
-Sign of every literal.
+**Literal sign of a clause kind.** For a clause kind $c$ of a cell, $\mathrm{sg}(c)$ is the
+sign shared by all literals of $c$: true (positive) for the at-least-one clause and false
+(negative) for every at-most-one clause $\mathrm{amo}(x, y)$.
 
 ## Depends on
 
-- [CL](cl.md)
+- [Clause kinds of a one-hot cell](cl.md)
 
 ## Sources
 

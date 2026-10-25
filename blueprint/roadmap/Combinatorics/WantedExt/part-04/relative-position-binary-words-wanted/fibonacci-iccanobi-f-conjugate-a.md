@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_iccanobiF_conjugate_a
 ---
 
-# Proposition 51
+# Fibonacci and iccanobiF iterates of a
 
-**Proposition 51.** For the iccanobiF substitution `ϱ_F'` (`a ↦ ba`, `b ↦ a`) and `n ≥ 1`:
-`ab ϱ_F^{2n}(a) = (ϱ_F')^{2n}(a) ba` and `ba ϱ_F^{2n-1}(a) = (ϱ_F')^{2n-1}(a) ab`.
+**Fibonacci and iccanobiF iterates of a.** Let $\varrho_F$ be the Fibonacci substitution
+$a \mapsto ab$, $b \mapsto a$ and let $\varrho_F'$ be the iccanobiF substitution $a \mapsto ba$,
+$b \mapsto a$, acting on finite words over the letters $a$ and $b$; thus $\varrho_F^m(a)$ is the
+finite Fibonacci word $f_m$ with each $0$ written as $a$ and each $1$ as $b$. Then for every
+$n \ge 1$, $ab\,\varrho_F^{2n}(a) = (\varrho_F')^{2n}(a)\,ba$ and
+$ba\,\varrho_F^{2n-1}(a) = (\varrho_F')^{2n-1}(a)\,ab$.
 
 ## Depends on
 

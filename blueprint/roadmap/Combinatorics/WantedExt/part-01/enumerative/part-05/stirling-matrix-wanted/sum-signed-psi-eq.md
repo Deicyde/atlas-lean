@@ -5,17 +5,23 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_eq
 ---
 
-# Proposition 9
+# First-kind Stirling formula for $\Lambda(\alpha, i, j)$
 
-**Proposition 9**: for `i, j ≥ 1`,
-`∑_{k₁=1}^i ∑_{k₂=1}^j s(i,k₁) k₂^{k₁-1}
-(-1)^{j-k₂}/(j-k₂)! Ψ_α(k₂)` equals `Λ(α,i,j)` if
-`i ≤ j` and `0` if `i > j`.
+**First-kind Stirling formula for $\Lambda(\alpha, i, j)$.** Let
+$\alpha \colon \mathbb{N} \to \mathbb{Q}$, let $s(i, k)$ denote the signed Stirling numbers of
+the first kind, let $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \alpha_l / (k-1-l)!$, and for
+$k_1 \le k_2$ let $\Lambda(\alpha, k_1, k_2) = \sum_{l=0}^{k_1-1} \binom{k_1-1}{l}
+\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \, \alpha_{l+k_2-k_1}$. Then for all $i, j \ge 1$ the sum
+
+$$\sum_{k_1=1}^{i} \sum_{k_2=1}^{j} s(i,k_1) \, k_2^{k_1-1} \, \frac{(-1)^{j-k_2}}{(j-k_2)!} \,
+\Psi_\alpha(k_2)$$
+
+equals $\Lambda(\alpha, i, j)$ if $i \le j$ and $0$ if $i > j$.
 
 ## Depends on
 
-- [Lambda](lambda.md)
-- [Psi](psi.md)
+- [The sum $\Lambda(\alpha, k_1, k_2)$](lambda.md)
+- [The sum $\Psi_\alpha(k)$](psi.md)
 - [Signed Stirling numbers of the first kind](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources

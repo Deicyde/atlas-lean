@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_le_of_run_le'
 ---
 
-# Corollary 27
+# Linear bounds for words with bounded runs
 
-**Corollary 27.** For `w ∈ 𝒲` all of whose single-letter runs have length at most `c`,
-`p_a(n), p_b(n) ≤ (c+1)n - 1` and `-cn ≤ r(n) ≤ cn`.
+**Linear bounds for words with bounded runs.** Let $w$ be an infinite binary word over the
+letters $a$ and $b$ in which both letters occur infinitely often, and let $c$ be a natural number
+such that every block of consecutive equal letters of $w$ has length at most $c$. Let $p_a(n)$
+and $p_b(n)$ be the positions (counting from $0$) of the $n$-th $a$ and the $n$-th $b$ in $w$, and
+let $r(n) = p_b(n) - p_a(n)$. Then for every $n \ge 1$, $p_a(n) \le (c+1)n - 1$,
+$p_b(n) \le (c+1)n - 1$ and $-cn \le r(n) \le cn$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

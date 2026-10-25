@@ -14,8 +14,8 @@ all-true one).
 
 ## Depends on
 
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Accepting configuration](accepts.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)

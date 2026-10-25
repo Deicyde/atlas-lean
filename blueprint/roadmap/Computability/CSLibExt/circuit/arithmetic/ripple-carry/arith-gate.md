@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Circuits.ArithGate
 ---
 
-# Arith Gate
+# Arithmetic gate symbols
 
-Binary gates for arithmetic circuits: XOR, AND and OR.
+**Arithmetic gate symbols.** The gate symbols of arithmetic circuits are exactly three:
+XOR, AND and OR.
 
 ## Depends on
 

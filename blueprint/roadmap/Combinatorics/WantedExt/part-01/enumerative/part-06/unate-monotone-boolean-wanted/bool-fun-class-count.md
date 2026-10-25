@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount
 ---
 
-# Bool Fun Class Count
+# Number of classes of Boolean functions
 
-The number of `R`-inequivalent `n`-variable functions with property `P`:
-the number of distinct classes `{g | P g ∧ R f g}` over `f` with `P f`
-(for an equivalence relation `R`, the number of equivalence classes of the
-set `P`). The paper's `[P]_n` is this count for `IsBoolFunVarPermEquiv`.
+**Number of classes of Boolean functions.** Given a relation $R$ and a property $P$ of
+$n$-variable Boolean functions, the number of $R$-inequivalent $n$-variable functions with $P$ is
+the number of distinct sets $\{g : P(g) \text{ and } R(f, g)\}$ as $f$ ranges over the functions
+with $P$. When $R$ is an equivalence relation, this is the number of equivalence classes of $R$
+restricted to the functions with $P$. The paper's $[P]_n$ is this count when $R$ is equivalence
+under permutation of the variables.
 
 ## Depends on
 

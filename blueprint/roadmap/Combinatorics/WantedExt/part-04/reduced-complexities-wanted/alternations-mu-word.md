@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.alternations_muWord
 ---
 
-# Lemma 1
+# Alternations of the Thue–Morse image of a word
 
-**Lemma 1**: if the nonempty word `w` contains `α`
-alternations, then `μ(w)` contains `2|w| - 1 - α`
-alternations.
+**Alternations of the Thue–Morse image of a word.** Let $\mu$ be the morphism on binary words
+with $\mu(0) = 01$ and $\mu(1) = 10$. If $w$ is a nonempty binary word of length $|w|$ with
+$\alpha$ alternations (positions where two adjacent letters differ), then $\mu(w)$ has exactly
+$2|w| - 1 - \alpha$ alternations.
 
 ## Depends on
 
-- [Alternations](alternations.md)
-- [Mu Word](mu-word.md)
+- [Alternations of a binary word](alternations.md)
+- [Extension of the Thue–Morse substitution to binary words](mu-word.md)
 
 ## Sources
 

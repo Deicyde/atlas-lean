@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isUlamWord_small
 ---
 
-# Is Ulam Word small
+# Ulam words of length at most three
 
-The paper's lists `U₂ = {01, 10}` and `U₃ = {001, 011, 100, 110}`, checked on all words
-of length `2` and `3`.
+**Ulam words of length at most three.** The empty word is not an Ulam word, and both words
+$0$ and $1$ of length one are Ulam words. The Ulam words of length two are exactly $01$ and $10$,
+and the Ulam words of length three are exactly $001$, $011$, $100$ and $110$.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
+- [Ulam words](is-ulam-word.md)
 
 ## Proof depends on
 
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

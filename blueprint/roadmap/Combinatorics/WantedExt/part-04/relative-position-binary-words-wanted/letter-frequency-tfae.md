@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.letter_frequency_tfae
 ---
 
-# Theorem 30
+# Letter frequencies and the growth of the position functions
 
-**Theorem 30.** For `w ∈ 𝒲` and `d ∈ (0, 1)` the following are equivalent:
-`Freq(b) = d`; `Freq(a) = 1 - d`; `p_b(n)/n → 1/d`; `p_a(n)/n → 1/(1-d)`.
+**Letter frequencies and the growth of the position functions.** Let $w$ be an infinite
+binary word over the letters $a$ and $b$ in which both letters occur infinitely often, and let
+$0 < d < 1$. For a letter $\alpha$, let $\#_\alpha(m)$ be the number of letters $\alpha$ among the
+first $m$ letters of $w$, and let $p_\alpha(n)$ be the position (counting from $0$) of the $n$-th
+occurrence of $\alpha$ in $w$. Then the following are equivalent: $\#_b(m)/m \to d$ as
+$m \to \infty$; $\#_a(m)/m \to 1 - d$; $p_b(n)/n \to 1/d$ as $n \to \infty$;
+$p_a(n)/n \to 1/(1 - d)$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Count](letter-count.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Letter-counting function](letter-count.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.limsup_liminf_wordFactorComplexity_kimberlingWord
 ---
 
-# Limsup liminf word Factor Complexity kimberling Word
+# Factor complexity of Kimberling's word
 
-The subword complexity `ρ(n)` of `k` satisfies `limsup ρ(n)/n = (30 + √3)/23` and
-`liminf ρ(n)/n = (3 + √3)/4`.
+**Factor complexity of Kimberling's word.** Let $\rho(n)$ be the factor complexity of
+Kimberling's word $k$, the number of distinct factors of $k$ of length $n$. Then, as $n \to \infty$
+over the natural numbers, $\limsup \rho(n)/n = (30 + \sqrt{3})/23$ and
+$\liminf \rho(n)/n = (3 + \sqrt{3})/4$.
 
 ## Depends on
 
-- [Kimberling Word](kimberling-word.md)
+- [Kimberling's word](kimberling-word.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

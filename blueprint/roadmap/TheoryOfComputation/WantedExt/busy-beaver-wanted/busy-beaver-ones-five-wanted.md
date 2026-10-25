@@ -12,7 +12,7 @@ Source: Busy Beaver Challenge (2025), determination of
 
 ## Depends on
 
-- [Busy Beaver Ones](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
+- [Busy Beaver score function](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
 
 ## Sources
 

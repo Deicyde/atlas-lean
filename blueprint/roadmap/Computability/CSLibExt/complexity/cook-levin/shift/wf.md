@@ -11,7 +11,7 @@ Well-formedness: codes in range, shifts within the window, window within the hei
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.walkCount
 ---
 
-# Walk Count
+# Number of self-avoiding walks on the honeycomb lattice
 
-The number of `n`-step self-avoiding walks on the honeycomb lattice
-starting at the origin.
+**Number of self-avoiding walks on the honeycomb lattice.** For a natural number $n$, this
+is the number of self-avoiding walks with $n$ steps on the honeycomb lattice starting at the
+origin.
 
 ## Depends on
 
@@ -17,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
-- [Is Self Avoiding](is-self-avoiding.md)
-- [Visited Vertices](visited-vertices.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
+- [Self-avoiding direction words](is-self-avoiding.md)
+- [Vertices visited by a direction word](visited-vertices.md)
 
 ## Sources
 

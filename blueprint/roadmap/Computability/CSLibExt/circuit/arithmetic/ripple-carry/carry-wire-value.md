@@ -6,15 +6,20 @@ proof: formalized
 lean: Cslib.Circuits.carryWire_value
 ---
 
-# Carry Wire value
+# Value of the carry wire
 
-The carry wire carries the carry.
+**Value of the carry wire.** Let $x$ and $y$ be $n$-bit vectors, $c$ a bit, and $i$ and $g$
+natural numbers with $5i \le g$. Suppose the first $g$ gates are given values $v_0, \dots, v_{g-1}$
+with each $v_j$ equal to the specified value of gate $j$ of the adder on $x$, $y$, $c$. Then, on
+the adder input for $x$, $y$, $c$ and with these gate values, the carry wire into bit $i$ carries
+the carry into bit $i$ of $x + y + c$: it is true exactly when
+$(x \bmod 2^i) + (y \bmod 2^i) + c \ge 2^i$, reading $x$, $y$ and $c$ as natural numbers.
 
 ## Depends on
 
-- [Carry Wire](carry-wire.md)
-- [Rca Input](rca-input.md)
-- [Rca Spec](rca-spec.md)
+- [Carry wire](carry-wire.md)
+- [Input of the ripple-carry adder](rca-input.md)
+- [Gate-value specification of the ripple-carry adder](rca-spec.md)
 
 ## Sources
 

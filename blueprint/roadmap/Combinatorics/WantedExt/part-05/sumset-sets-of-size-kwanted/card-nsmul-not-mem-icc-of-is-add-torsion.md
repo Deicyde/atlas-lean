@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_nsmul_notMem_Icc_of_isAddTorsionFree
 ---
 
-# Card nsmul not Mem Icc of is Add Torsion Free
+# A gap in the possible sumset sizes
 
-A missing interval of sumset sizes: in a torsion-free additive abelian group, for
-`k ≥ 4` no `k`-element set `A` has `hk - h + 2 ≤ |h • A| ≤ hk - 1`, i.e.
-`R_G(h, k) ∩ [hk - h + 2, hk - 1] = ∅`.  Stated for every `h : ℕ` (the interval is
-empty for `h ≤ 1`).
+**A gap in the possible sumset sizes.** Let $G$ be a torsion-free additive commutative
+group and let $h$ and $k \ge 4$ be natural numbers. For every $k$-element set $A \subseteq G$,
+the $h$-fold sumset $hA$ (the set of sums of $h$ elements of $A$) does not satisfy
+$hk - h + 2 \le |hA| \le hk - 1$.
+
+Equivalently, writing $R_G(h, k)$ for the set of sizes $|hA|$ of $k$-element sets
+$A \subseteq G$, $R_G(h, k) \cap [hk - h + 2, hk - 1] = \emptyset$. The interval is empty for
+$h \le 1$.
 
 ## Depends on
 

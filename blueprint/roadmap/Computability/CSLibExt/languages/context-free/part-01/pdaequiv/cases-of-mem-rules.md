@@ -13,7 +13,7 @@ from a transition.
 
 ## Depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
 - [Pda Grammar](pda-grammar.md)
 - [Step Rule](step-rule.md)
 

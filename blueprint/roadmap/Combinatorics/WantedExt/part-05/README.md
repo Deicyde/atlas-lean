@@ -6,8 +6,8 @@ navigation: transparent
 
 - [Root Poset Rowmotion Homomesy](root-poset-rowmotion-homomesy-wanted/README.md)
 - [Schur Numbers](schur-numbers-wanted/README.md)
-- [Scottish Book179 Wanted](littlewood-offord-sharp-bound.md)
-- [Scottish Book9 Wanted](finite-sets-common-element.md)
+- [Sharp Littlewood–Offord bound](littlewood-offord-sharp-bound.md)
+- [Scottish Book Problem 9 (a common element of small finite sets)](finite-sets-common-element.md)
 - [Shannon Capacity Pentagon](shannon-capacity-pentagon-wanted/README.md)
 - [Simplicial Sphere Shared](simplicial-sphere-shared/README.md)
 - [Single Set Sum Difference Exponent](single-set-sum-difference-exponent-wanted/README.md)

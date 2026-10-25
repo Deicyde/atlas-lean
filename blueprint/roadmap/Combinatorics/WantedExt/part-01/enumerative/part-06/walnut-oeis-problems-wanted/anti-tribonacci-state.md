@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.antiTribonacciState
 ---
 
-# Anti Tribonacci State
+# Anti-Tribonacci construction
 
-The anti-Tribonacci construction: entry `n` is `((A_{n+1}, B_{n+1}, C_{n+1},
-D_{n+1}), U)` where `A_1, B_1, C_1, D_1 = 1, 2, 3, 6`, `U` is the set of all values
-used so far, `A_{n+1}, B_{n+1}, C_{n+1}` are successive `mex` values and
-`D_{n+1} = A_{n+1} + B_{n+1} + C_{n+1}`.
+**Anti-Tribonacci construction.** Write $\mathrm{mex}(U)$ for the least positive integer not in
+a finite set $U$ of natural numbers. Set $(A_1, B_1, C_1, D_1) = (1, 2, 3, 6)$ and
+$U_1 = \{1, 2, 3, 6\}$. For $k \ge 1$ let $A_{k+1} = \mathrm{mex}(U_k)$,
+$B_{k+1} = \mathrm{mex}(U_k \cup \{A_{k+1}\})$,
+$C_{k+1} = \mathrm{mex}(U_k \cup \{A_{k+1}, B_{k+1}\})$, $D_{k+1} = A_{k+1} + B_{k+1} + C_{k+1}$
+and $U_{k+1} = U_k \cup \{A_{k+1}, B_{k+1}, C_{k+1}, D_{k+1}\}$. Entry $n$ of the construction is
+the pair $((A_{n+1}, B_{n+1}, C_{n+1}, D_{n+1}), U_{n+1})$, where $U_{n+1}$ is the set of all
+values used so far.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

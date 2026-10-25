@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_sq_alternating
 ---
 
-# Theorem 24
+# Alternating sum of squared trinomial coefficients
 
-**Theorem 24.** `∑_{k=0}^{2n} binom(n, k)_2^2 (-1)^k = binom(n, n)_2`.
+**Alternating sum of squared trinomial coefficients.** Write $\binom{n}{k}_2$ for the
+trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For every natural number $n$,
+$\sum_{k=0}^{2n} (-1)^k \binom{n}{k}_2^2 = \binom{n}{n}_2$.
 
 ## Depends on
 

@@ -6,45 +6,53 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Family.gen_run
 ---
 
-# Correctness of the generator, with its explicit time bound
+# Correctness of the clause-family generator, with its explicit time bound
 
-**Correctness of the generator, with its explicit time bound**: started on `T`, `H` (in
-unary) with empty scratch stacks, it halts at `done` within `genBound` steps, with exactly the
-family's encoding prepended to the output stack.
+**Correctness of the clause-family generator, with its explicit time bound.** Let $L$ be a
+layout, $\mathit{la}, \mathit{na} : \mathbb{N} \to \mathbb{N}$ and
+$\mathit{wa} : \mathbb{N}^3 \to \mathbb{N}$ tables, and $N, T, H \in \mathbb{N}$, and suppose the
+tables are well formed at height $H$ for every situation $i < N$. Start the generator for $L$,
+$\mathit{la}$, $\mathit{na}$, $\mathit{wa}$ and $N$ at its first precomputation stage, in state
+false, with $T$ on the time counter and $H$ on the height counter in unary, all other counters
+empty, and an arbitrary list $o$ of bits on the output stack. Then within $B(L, N, T, H)$ steps,
+where $B$ is the generator's explicit time bound, it reaches its final label $\mathsf{done}$ (not
+the error stage of the literal routine, which also halts), in some state, with stacks whose output
+stack holds the encoding of the clause family for $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$,
+$T$, $H$ and $N$, followed by $o$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [St](../counter-view/st.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [GΓ](g.md)
-- [Layout](layout.md)
-- [N Lits](n-lits.md)
-- [PS](ps.md)
-- [WF](wf.md)
-- [Family](family.md)
-- [Gen Bound](gen-bound.md)
-- [Init F](init-f.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Counters of the transition-family generator](ck.md)
+- [Labels of the clause-family generator](gl.md)
+- [Stack alphabets of the generator](g.md)
+- [Variable layout of the transition clauses](layout.md)
+- [Number of literals of a transition clause](n-lits.md)
+- [Stages of the transition-clause generator's precomputation](ps.md)
+- [Well-formed situation tables for the transition clauses](wf.md)
+- [The transition clause family](family.md)
+- [Time bound of the generator](gen-bound.md)
+- [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
 - [Encode CNF](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SΓ](../counter-view/s.md)
-- [Num Vars](num-vars.md)
-- [Row W](row-w.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Number of variables of the transition-clause formula](num-vars.md)
+- [Variables per time step](row-w.md)
 - [Loop P](loop-p.md)
-- [Rest](rest.md)
-- [Blk](blk.md)
-- [Body B](body-b.md)
-- [Dense Clause](dense-clause.md)
-- [Lits](lits.md)
-- [Out After](out-after.md)
-- [Pre B](pre-b.md)
-- [Time body](time-body.md)
+- [Scratch counters at rest in the clause-family generator](rest.md)
+- [Encoded transition clauses of one time step](blk.md)
+- [Step bound for one time-loop iteration of the transition-family generator](body-b.md)
+- [Dense clause from a list of literals](dense-clause.md)
+- [Literals of a transition clause](lits.md)
+- [Generator output after part of the time loop](out-after.md)
+- [Step bound for the transition-clause generator's precomputation](pre-b.md)
+- [One iteration of the time loop](time-body.md)
 - [Clause](../../dense-sat/clause.md)
 - [Encode Clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)

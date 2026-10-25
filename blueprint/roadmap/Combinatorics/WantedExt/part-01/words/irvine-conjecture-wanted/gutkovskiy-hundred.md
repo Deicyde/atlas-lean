@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gutkovskiy_hundred
 ---
 
-# Gutkovskiy hundred
+# Gutkovskiy's sequence at $100$
 
-Evaluation check: `g₁₀₀ = 74` (OEIS A286389).
+**Gutkovskiy's sequence at $100$.** The term $g_{100}$ of Gutkovskiy's sequence is $74$, in
+agreement with OEIS A286389.
 
 ## Depends on
 
-- [Gutkovskiy](gutkovskiy.md)
+- [Gutkovskiy's sequence](gutkovskiy.md)
 
 ## Sources
 

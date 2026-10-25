@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciSucc_record_of_partial_sum
 ---
 
-# Tribonacci Succ record of partial sum
+# Partial sums along the positive and negative indices are records
 
-Records of `out(n) - α n` (notation as in `tribonacciSucc_record_indices`). Part 2: for
-every `k ≥ 2` the number `T_{P(2)} + ⋯ + T_{P(k)}` is a positive record, and
-`T_{Q(2)} + ⋯ + T_{Q(k)}` is a negative record (`j = k - 1 ≥ 1` summands).
+**Partial sums along the positive and negative indices are records.** Let $T_n$ be the
+Tribonacci numbers ($T_0 = T_1 = 0$, $T_2 = 1$, $T_{n+3} = T_{n+2} + T_{n+1} + T_n$) and let
+$\alpha$ be a real number with $\alpha^3 = \alpha^2 + \alpha + 1$. For each $n$ fix a Tribonacci
+representation $R(n) = (r_0, r_1, \dots, r_{\ell-1})$ of $n$: digits in $\{0, 1\}$ with no three
+consecutive ones and $n = \sum_i r_i T_{i+3}$. Let $\mathrm{out}(n) = \sum_i r_i T_{i+4}$ be the
+Tribonacci successor of $n$. Call $n$ a positive record if $n > 0$ and
+$\mathrm{out}(m) - \alpha m < \mathrm{out}(n) - \alpha n$ for every $m < n$, and a negative
+record if $n > 0$ and $\mathrm{out}(n) - \alpha n < \mathrm{out}(m) - \alpha m$ for every
+$m < n$. Let $P(1) < P(2) < \cdots$ list the indices $i$ with $T_{i+1} - \alpha T_i > 0$, and
+$Q(1) < Q(2) < \cdots$ those with $T_{i+1} - \alpha T_i < 0$. Then for every $k \ge 2$ the
+number $T_{P(2)} + \cdots + T_{P(k)}$ is a positive record and $T_{Q(2)} + \cdots + T_{Q(k)}$ is
+a negative record.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 - [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

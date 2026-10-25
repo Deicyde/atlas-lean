@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.twoPatternAvoiderCount_four_132_321
 ---
 
-# Two Pattern Avoider Count four 132 321
+# Permutations of length four avoiding $132$ and $321$
 
-`A_4(132, 321) = 7 = 1 + binom(4, 2)`.
+**Permutations of length four avoiding $132$ and $321$.** Exactly $7$ permutations of
+$\{0, 1, 2, 3\}$ avoid both patterns $132$ and $321$, that is,
+$A_4(132, 321) = 7 = 1 + \binom{4}{2}$.
 
 ## Depends on
 
-- [Pattern3](pattern3.md)
-- [Two Pattern Avoider Count](two-pattern-avoider-count.md)
+- [Length-three pattern from one-line values](pattern3.md)
+- [Number of permutations avoiding two patterns of length three](two-pattern-avoider-count.md)
 
 ## Sources
 

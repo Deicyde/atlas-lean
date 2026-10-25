@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSylverEnd
 ---
 
-# Is Sylver End
+# Ends of a Sylver Coinage position
 
-`x` is an end of the position `M`: a legal move whose choice eliminates no other legal move,
-i.e. every other element of `L(M)` stays legal after `x` is named.
+**Ends of a Sylver Coinage position.** Let $M$ be a position of Sylver Coinage with set of
+legal moves $L(M)$. A natural number $x$ is an end of $M$ if $x \in L(M)$ and every
+$y \in L(M)$ with $y \ne x$ is still a legal move of the position $M \cup \{x\}$; that is,
+naming $x$ eliminates no other legal move.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

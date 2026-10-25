@@ -5,21 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.primitive_asymptotically_linear_classification
 ---
 
-# Theorem 67
+# Primitive substitutions with asymptotically linear relative position
 
-**Theorem 67.** Let `ϱ` be a primitive binary substitution with substitution matrix `M` and
-one-sided fixed point `w ∈ 𝒲`, `k ≥ 1` and `τ_k = (k + √(k² + 4))/2`. (a) `r(n)/n → k` iff
-`[τ_k 1]ᵀ` is a right Perron–Frobenius eigenvector of `M` iff `M = [[km + n, m], [m, n]]` with
-`m ≥ 1`, `n ≥ 0`. (b) `r(n)/n → -k` iff `[1 τ_k]ᵀ` is one iff `M = [[n, m], [m, km + n]]` with
-`m ≥ 1`, `n ≥ 0`. (c) `r(n)/n → 0` iff `[1 1]ᵀ` is one iff the row sums `a + b`, `c + d` of
-`M = [[a, b], [c, d]]` agree. The Perron–Frobenius conditions are stated as eigenvector
-conditions (the vectors are positive, so the eigenvalue is the Perron–Frobenius one).
+**Primitive substitutions with asymptotically linear relative position.** Let $\varrho$ be a
+substitution on the letters $a, b$ with substitution matrix $M$, where $M_{11} = |\varrho(a)|_a$,
+$M_{12} = |\varrho(b)|_a$, $M_{21} = |\varrho(a)|_b$ and $M_{22} = |\varrho(b)|_b$ ($|v|_x$ is
+the number of letters $x$ in $v$). Suppose $\varrho$ is primitive (some power of $M$ has all
+entries positive), and let $w$ be a one-sided fixed point of $\varrho$ (so $\varrho(w) = w$) in
+which both letters occur infinitely often. Let $p_a(n)$ and $p_b(n)$ be the positions of the
+$n$-th $a$ and the $n$-th $b$ in $w$, let $r(n) = p_b(n) - p_a(n)$, let $k \ge 1$ be a natural
+number and let $\tau = (k + \sqrt{k^2 + 4})/2$. With all limits taken as $n \to \infty$:
+(a) the following are equivalent: $r(n)/n \to k$; $(\tau, 1)^T$ is an eigenvector of $M$;
+$M$ has rows $(km + t, m)$ and $(m, t)$ for some natural numbers $m \ge 1$ and $t \ge 0$.
+(b) the following are equivalent: $r(n)/n \to -k$; $(1, \tau)^T$ is an eigenvector of $M$;
+$M$ has rows $(t, m)$ and $(m, km + t)$ for some natural numbers $m \ge 1$ and $t \ge 0$.
+(c) the following are equivalent: $r(n)/n \to 0$; $(1, 1)^T$ is an eigenvector of $M$;
+$M_{11} + M_{12} = M_{21} + M_{22}$.
+
+These vectors are positive, so being an eigenvector of the primitive matrix $M$ is the same as
+being its right Perron–Frobenius eigenvector.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Is Substitution Image](is-substitution-image.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

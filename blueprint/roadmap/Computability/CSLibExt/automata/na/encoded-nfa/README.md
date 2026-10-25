@@ -8,27 +8,27 @@ navigation: module
 
 ## Semantics
 
-- [ToεNFA](to-nfa.md)
-- [Language](language.md)
-- [States](states.md)
-- [Eps Rel](eps-rel.md)
+- [The ε-NFA of an encoded NFA](to-nfa.md)
+- [Language of an encoded NFA](language.md)
+- [States an encoded NFA mentions as start states or targets](states.md)
+- [ε-move relation](eps-rel.md)
 - [The ε-closure is reachability along ε-moves](mem-closure-iff.md)
-- [Eps Next](eps-next.md)
-- [Closure](closure.md)
-- [Letter Step](letter-step.md)
-- [Step List](step-list.md)
-- [Run](run.md)
-- [Membership test](accepts-b.md)
-- [The states reached are those of Mathlib's `εNFA.eval`](mem-run-iff.md)
-- [Correctness of the membership test](accepts-b-iff.md)
+- [ε-successors of a state](eps-next.md)
+- [ε-closure of a list of states](closure.md)
+- [Letter step of an encoded NFA](letter-step.md)
+- [One step of an encoded NFA on a list of states](step-list.md)
+- [Run of an encoded NFA](run.md)
+- [Membership test for encoded NFAs](accepts-b.md)
+- [The run of an encoded NFA agrees with ε-NFA evaluation](mem-run-iff.md)
+- [Correctness of the NFA membership test](accepts-b-iff.md)
 
 ## Emptiness
 
-- [Eval eps Rel](eval-eps-rel.md)
-- [Next](next.md)
-- [Reachable](reachable.md)
+- [The states reached on a word are closed under ε-moves](eval-eps-rel.md)
+- [Successors of a state in an encoded NFA](next.md)
+- [Reachable states of an encoded NFA](reachable.md)
 - [The reachable states are those some word can lead to](mem-reachable-iff.md)
-- [Emptiness test](is-empty-b.md)
+- [Emptiness test for encoded NFAs](is-empty-b.md)
 
 ## Every finite automaton has an encoding
 
@@ -37,6 +37,6 @@ navigation: module
 
 ## Computability
 
-- [Equiv Prod](equiv-prod.md)
-- [Sipser, Theorem 4.2](tm2-decidable-mem-language.md)
-- [Tm2 Decidable language eq zero](tm2-decidable-language-eq-zero.md)
+- [Encoded NFAs as tuples](equiv-prod.md)
+- [Membership for NFAs is decidable](tm2-decidable-mem-language.md)
+- [Emptiness of NFAs is decidable](tm2-decidable-language-eq-zero.md)

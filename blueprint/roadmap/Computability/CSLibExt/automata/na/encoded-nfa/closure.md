@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.closure
 ---
 
-# Closure
+# ε-closure of a list of states
 
-The ε-closure of a list of states, by a search from each of them.
+**ε-closure of a list of states.** For an encoded NFA $N$ and a list $S$ of states, the
+ε-closure of $S$ is a list whose members are exactly the states reachable from some state of $S$
+by finitely many ε-moves of $N$ (zero moves included), computed by a search from each state of
+$S$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ The ε-closure of a list of states, by a search from each of them.
 ## Proof depends on
 
 - [Reach N](../../../decidability/part-02/regular/reach-n.md)
-- [Eps Next](eps-next.md)
-- [States](states.md)
+- [ε-successors of a state](eps-next.md)
+- [States an encoded NFA mentions as start states or targets](states.md)
 
 ## Sources
 

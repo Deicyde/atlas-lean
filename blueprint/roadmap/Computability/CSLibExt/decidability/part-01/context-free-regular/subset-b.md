@@ -16,7 +16,7 @@ The inclusion test: the intersection with the complement is empty.
 
 ## Proof depends on
 
-- [Compl](../../../automata/da/encoded-dfa/compl.md)
+- [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
 - [The emptiness test](inter-empty-b.md)
 
 ## Sources

@@ -5,22 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.pisa_frequency_tfae
 ---
 
-# Proposition 62
+# Frequency and position criteria for an eigenvector of a primitive substitution
 
-**Proposition 62.** Let `j, m ≥ 1`, `τ = τ_{j,m} = (j + √(j² + 4m))/2`, `ϱ` a primitive binary
-substitution and `w` a fixed point of `ϱ`. The following are equivalent: (i) `Freq(a) =
-(τ - m)/(j + 1 - m)`; (ii) `Freq(b) = (j + 1 - τ)/(j + 1 - m)`; (iii) `p_a(n)/n → 1 + (τ - j)/m`;
-(iv) `p_b(n)/n → τ + 1`; (v) `r(n)/n → ((m-1)τ + j)/m`; (vi) `p_a(n)/n` has a limit `q` and
-`r(n)/n → (m-1) q + (j + 1 - m)`; (vii) `[τ 1]ᵀ` is a right eigenvector of the substitution
-matrix. Added hypothesis `m ≠ j + 1`: for `m = j + 1`, `τ_{j,j+1} = j + 1 = m`, so (i) and (ii)
-read `0/0` and the printed equivalence is meaningless.
+**Frequency and position criteria for an eigenvector of a primitive substitution.** Let
+$j \ge 1$ and $m \ge 1$ be natural numbers with $m \ne j + 1$, and let
+$\tau = (j + \sqrt{j^2 + 4m})/2$. Let
+$\varrho$ be a substitution on the letters $a, b$ with substitution matrix $M$, where
+$M_{11} = |\varrho(a)|_a$, $M_{12} = |\varrho(b)|_a$, $M_{21} = |\varrho(a)|_b$ and
+$M_{22} = |\varrho(b)|_b$ ($|v|_x$ is the number of letters $x$ in $v$). Suppose $\varrho$ is
+primitive (some power of $M$ has all entries positive), and let $w$ be a one-sided fixed point
+of $\varrho$ (so $\varrho(w) = w$). Let $N_a(n)$ and $N_b(n)$ be the numbers of letters $a$ and
+$b$ among the first $n$ letters of $w$, let $p_a(n)$ and $p_b(n)$ be the positions (counted from
+$0$) of the $n$-th $a$ and the $n$-th $b$ in $w$, and let $r(n) = p_b(n) - p_a(n)$. Then the
+following are equivalent, all limits taken as $n \to \infty$:
+(i) $N_a(n)/n \to (\tau - m)/(j + 1 - m)$;
+(ii) $N_b(n)/n \to (j + 1 - \tau)/(j + 1 - m)$;
+(iii) $p_a(n)/n \to 1 + (\tau - j)/m$;
+(iv) $p_b(n)/n \to \tau + 1$;
+(v) $r(n)/n \to ((m - 1)\tau + j)/m$;
+(vi) $p_a(n)/n$ converges to some real number $q$ and $r(n)/n \to (m - 1)q + j + 1 - m$;
+(vii) $(\tau, 1)^T$ is an eigenvector of $M$.
+
+The hypothesis $m \ne j + 1$ is added to the paper's statement: for $m = j + 1$ one has
+$\tau = j + 1 = m$, so (i) and (ii) read $0/0$.
 
 ## Depends on
 
-- [Is Substitution Image](is-substitution-image.md)
-- [Letter Count](letter-count.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [Letter-counting function](letter-count.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

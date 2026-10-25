@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.stirlingFirstMatrix_apply_self
 ---
 
-# Stirling First Matrix apply self
+# Diagonal of the Stirling matrix of the first kind
 
-The diagonal of `s(n)` is all ones.
+**Diagonal of the Stirling matrix of the first kind.** For every natural number $n$, every
+diagonal entry of the Stirling matrix of the first kind $s(n)$ equals $1$, that is,
+$s(n)_{i,i} = 1$ for $1 \le i \le n$.
 
 ## Depends on
 
-- [Stirling First Matrix](stirling-first-matrix.md)
+- [Stirling matrix of the first kind](stirling-first-matrix.md)
 
 ## Proof depends on
 

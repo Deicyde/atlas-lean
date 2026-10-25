@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_one_two_five_isP_iff
 ---
 
-# Slow ANim one two five is P iff
+# P-positions of Slow A-Nim with A = {1, 2} on five stacks
 
-Theorem 3 (3): for `A = {1, 2}` and `n = 5`, a position in canonical form is a
-P-position iff its parity pattern is `(e,e,e,e,e)`, `(e,e,o,o,o)`, `(o,o,e,e,o)` or
-`(o,o,o,o,e)`.
+**P-positions of Slow A-Nim with A = {1, 2} on five stacks.** Let $A = \{1, 2\}$ and let
+$p = (p_1, \dots, p_5)$ be a position of Slow$A$-Nim on five stacks in canonical form, that is,
+$p_1 \le p_2 \le \dots \le p_5$. Then $p$ is a P-position if and only if all five stacks are
+even, or $p_1, p_2$ are even and $p_3, p_4, p_5$ are odd, or $p_1, p_2, p_5$ are odd and
+$p_3, p_4$ are even, or $p_1, p_2, p_3, p_4$ are odd and $p_5$ is even.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources
 

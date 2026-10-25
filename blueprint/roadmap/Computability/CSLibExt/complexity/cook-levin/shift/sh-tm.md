@@ -11,22 +11,22 @@ lean: Cslib.Complexity.CookLevin.Shift.shTM
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [BD](bd.md)
-- [CK](ck.md)
-- [CL](cl.md)
-- [GL](gl.md)
-- [LS](ls.md)
-- [Lab](lab.md)
-- [PS](ps.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Loop-body stages of the cell-shift generator](bd.md)
+- [Counters of the cell-shift generator](ck.md)
+- [Clause kinds of the cell-shift family](cl.md)
+- [Labels of the cell-shift generator](gl.md)
+- [Stages of the cell-shift literal routine](ls.md)
+- [Labels of the shift generator](lab.md)
+- [Precomputation stages of the shift generator](ps.md)
 - [ST](st.md)
-- [Prog](prog.md)
+- [The cell-shift generator](prog.md)
 
 ## Sources
 

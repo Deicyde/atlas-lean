@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_nsmul_notMem_Icc_add_mul_of_isAddTorsionFree
 ---
 
-# Card nsmul not Mem Icc add mul of is Add Torsion Free
+# Rajagopal's family of missing sumset sizes
 
-Rajagopal's family of missing intervals: in a torsion-free additive abelian group, for
-`0 ≤ ℓ ≤ min(h, k) - 3` no `k`-element set `A` has
-`hk - h + 1 + ℓh + 1 ≤ |h • A| ≤ hk - h + 1 + ℓh + (h - 2 - ℓ)`, i.e.
-`R_G(h, k) ∩ ⋃_{ℓ=0}^{min(h,k)-3} [hk - h + 2 + ℓh, hk - h + 1 + ℓh + (h - 2 - ℓ)] = ∅`, stated
-one `ℓ` at a time.  The journal statement does not repeat the group; torsion-freeness is the
-setting of Theorem 4 and Corollary 1, of which this is the stated generalization (`ℓ = 0` is
-Theorem 4, here also for `k = 3`).
+**Rajagopal's family of missing sumset sizes.** Let $G$ be a torsion-free additive
+commutative group and let $h$, $k$ and $\ell$ be natural numbers with $\ell + 3 \le \min(h, k)$.
+For every $k$-element set $A \subseteq G$, the $h$-fold sumset $hA$ (the set of sums of $h$
+elements of $A$) does not satisfy
+$hk - h + 2 + \ell h \le |hA| \le hk - h + 1 + \ell h + (h - 2 - \ell)$.
+
+Equivalently, writing $R_G(h, k)$ for the set of sizes $|hA|$ of $k$-element sets
+$A \subseteq G$, $R_G(h, k)$ misses the interval
+$[hk - h + 2 + \ell h, hk - h + 1 + \ell h + (h - 2 - \ell)]$ for each
+$0 \le \ell \le \min(h, k) - 3$, stated here one $\ell$ at a time. The journal statement does
+not name the group; torsion-freeness is the setting of Theorem 4 and Corollary 1, which this
+generalizes ($\ell = 0$ is Theorem 4, here also for $k = 3$).
 
 ## Depends on
 

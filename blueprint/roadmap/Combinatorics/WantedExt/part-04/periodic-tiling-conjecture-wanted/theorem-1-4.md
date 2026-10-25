@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.theorem_1_4
 ---
 
-# Theorem 1 4
+# Greenfeld–Tao counterexample to the periodic tiling conjecture
 
-Statement of Theorem 1.4 (Counterexample to Conjecture 1.2, I):
-
-There exists a finite abelian group `G₀` and a finite non-empty `F ⊆ ℤ² × G₀` such that
-`F` forms an aperiodic tiling equation.
+**Greenfeld–Tao counterexample to the periodic tiling conjecture.** There exist a finite abelian
+group $G_0$ and a finite non-empty set $F \subseteq \mathbb{Z}^2 \times G_0$ that forms an
+aperiodic tiling equation in the group $\mathbb{Z}^2 \times G_0$.
 
 ## Depends on
 
-- [Is Aperiodic Tiling Equation](is-aperiodic-tiling-equation.md)
+- [Aperiodic tiling equation](is-aperiodic-tiling-equation.md)
 
 ## Sources
 

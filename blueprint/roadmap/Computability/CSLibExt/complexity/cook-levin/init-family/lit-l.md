@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.GL.litL
 ---
 
-# Lit L
+# Entry label of a literal routine (initial-row generator)
 
-Literal routine `l` of clause `c` (`done` if out of range; never used then).
+**Entry label of a literal routine (initial-row generator).** For a clause kind $c$ and
+$l \in \mathbb{N}$, among the generator labels with parameters $g$ and $n$: the first stage of the
+routine for literal $l$ of $c$ if $l < n + 2$, and the label $\mathrm{done}$ otherwise (that
+case is never used).
 
 ## Depends on
 
-- [CL](cl.md)
-- [GL](gl.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Labels of the initial-row generator](gl.md)
 
 ## Proof depends on
 
-- [LS](ls.md)
+- [Stages of the literal routine](ls.md)
 
 ## Sources
 

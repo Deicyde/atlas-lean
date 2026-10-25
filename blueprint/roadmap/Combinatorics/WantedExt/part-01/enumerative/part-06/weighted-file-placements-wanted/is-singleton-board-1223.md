@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSingletonBoard_1223
 ---
 
-# Is Singleton Board 1223
+# A singleton board for $2$ but not for $3$
 
-`B = (1, 2, 2, 3)` is a singleton board for `m = 2` but not for `m = 3`.
+**A singleton board for $2$ but not for $3$.** The Ferrers board with column heights
+$(1, 2, 2, 3)$ is a singleton board for $m = 2$ and is not a singleton board for $m = 3$.
 
 ## Depends on
 
-- [Is Singleton Board](is-singleton-board.md)
+- [Singleton boards](is-singleton-board.md)
 
 ## Sources
 

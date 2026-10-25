@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.throwback_leader_time_le
 ---
 
-# Throwback leader time le
+# Recursive bound on the time to become leader
 
-For a sequence `X` of distinct positive integers and `n ≥ 1`,
-`M(n) ≤ M(n - 1) + M(N(n)) + 1`, where `M(n)` is the maximal number of throwbacks needed for
-the term at position `n` of any `τᵐ(X)` to become leader and `N(n)` is the number of terms of
-`X` below `n`. Stated for upper bounds: if every term at position `n - 1` (of any `τᵐ(X)`)
-becomes leader within `a` steps and every term at position `N(n)` within `b` steps, then every
-term at position `n` becomes leader within `a + b + 1` steps.
+**Recursive bound on the time to become leader.** Let $X = (x_0, x_1, \dots)$ be a sequence
+of pairwise distinct positive integers, with positions numbered from $0$, the leader being at
+position $0$. Let $\tau$ be the throwback and $T(X) = (t_0, t_1, \dots)$ the throwback
+sequence, so $t_k$ is the leader of $\tau^k(X)$. Let $n \ge 1$, and let $N$ be the number of
+indices $i$ with $x_i < n$. Suppose $a$ and $b$ are natural numbers such that for every
+$m \ge 0$, the term at position $n - 1$ of $\tau^m(X)$ equals $t_{m+k}$ for some $k \le a$, and
+the term at position $N$ of $\tau^m(X)$ equals $t_{m+k}$ for some $k \le b$. Then for every
+$m \ge 0$, the term at position $n$ of $\tau^m(X)$ equals $t_{m+k}$ for some $k \le a + b + 1$.
+
+This is the bound $M(n) \le M(n - 1) + M(N) + 1$ of the source, stated for upper bounds, where
+$M(n)$ is the largest number of throwbacks the term at position $n$ of any $\tau^m(X)$ needs to
+become leader.
 
 ## Depends on
 
-- [Throwback](throwback.md)
-- [Throwback Sequence](throwback-sequence.md)
+- [Throwback operation](throwback.md)
+- [Throwback sequence](throwback-sequence.md)
 
 ## Sources
 

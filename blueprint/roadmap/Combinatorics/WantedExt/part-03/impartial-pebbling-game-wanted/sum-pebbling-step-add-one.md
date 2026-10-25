@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.sum_pebblingStep_add_one
 ---
 
-# Sum pebbling Step add one
+# A pebbling move removes exactly one pebble
 
-A legal `(k+1:k)`-pebbling move (`i ≠ j`, `k + 1 ≤ a i`) lowers the total number of
-pebbles by exactly one.
+**A pebbling move removes exactly one pebble.** Let $n, k \in \mathbb{N}$, let $a$ assign
+$a(x) \in \mathbb{N}$ pebbles to each vertex $x \in \{0, \dots, n-1\}$, and let $i \ne j$ be
+vertices with $a(i) \ge k + 1$. Then the pebbling step from $i$ to $j$, which removes $k + 1$
+pebbles from $i$ and adds $k$ pebbles to $j$, gives a position $b$ with
+$\sum_x b(x) + 1 = \sum_x a(x)$.
 
 ## Depends on
 
-- [Pebbling Step](pebbling-step.md)
+- [A $(k+1:k)$-pebbling move](pebbling-step.md)
 
 ## Sources
 

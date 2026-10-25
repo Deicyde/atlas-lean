@@ -5,25 +5,28 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Assembly.embH
 ---
 
-# Emb H
+# Embedding of the shift generator into the host
 
-Shift generator's stacks: `out ↦ out`, counters into block `sh`.
+**Embedding of the shift generator into the host.** For $g$ input codes, the stack embedding
+of the shift generator's stacks into the host stacks that sends the output stack to the shared
+output stack and the counter stack of each shift counter $x$ to the counter $x$ of the host's
+shift block, identifying each stack's alphabet with itself.
 
 ## Depends on
 
-- [HK](hk.md)
-- [HΓ](h.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [CK](../shift/ck.md)
+- [Stacks of the Cook–Levin host machine](hk.md)
+- [Alphabets of the Cook–Levin host machine](h.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
 - [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 
-- [CK](../accept/ck.md)
-- [E H](e-h.md)
-- [CK](../family/ck.md)
-- [CK](../init-family/ck.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Host stack renaming for the shift generator](e-h.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
 
 ## Sources
 

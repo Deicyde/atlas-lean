@@ -13,19 +13,19 @@ lean: Cslib.Complexity.CookLevin.Precompute.horner_run
 
 ## Depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [HW](hw.md)
-- [Horn S](horn-s.md)
-- [Horn T](horn-t.md)
-- [Horn Val](horn-val.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Stages of a Horner round](hw.md)
+- [The statements of one Horner round](horn-s.md)
+- [Step count of the Horner rounds](horn-t.md)
+- [Horner value](horn-val.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Horn Step](horn-step.md)
+- [Step count of one Horner round](horn-step.md)
 - [One Horner round](horn-round.md)
 
 ## Sources

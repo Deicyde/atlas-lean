@@ -6,19 +6,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.IsGood
 ---
 
-# Is Good
+# Good family of codes
 
-A family of codes `{Cᵢ}_{i ∈ ℕ}` of lengths `nᵢ → ∞` is called good if there exists `ε > 0`
-such that the rate and normalised distance of each `Cᵢ` are bounded from below by `ε`.
+**Good family of codes.** Let $(n_i)_{i \in \mathbb{N}}$ be natural numbers and, for each $i$,
+let $C_i \subseteq \mathbb{F}_2^{n_i}$ be a binary code of length $n_i$. The family $(C_i)$ is
+good if $n_i \to \infty$ as $i \to \infty$ and there is a real number $\varepsilon > 0$ such
+that for every $i$ both the rate and the normalised distance of $C_i$ are at least
+$\varepsilon$.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Proof depends on
 
-- [Normalised Distance](normalised-distance.md)
-- [Rate](rate.md)
+- [Normalised distance of a binary code](normalised-distance.md)
+- [Rate of a binary code](rate.md)
 
 ## Sources
 

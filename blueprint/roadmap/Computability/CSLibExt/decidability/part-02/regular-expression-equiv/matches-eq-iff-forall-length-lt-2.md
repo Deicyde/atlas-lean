@@ -20,7 +20,7 @@ shorter than `eqBound`.
 ## Proof depends on
 
 - [Short distinguishing words](matches-eq-iff-forall-length-lt.md)
-- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
 - [Num Thompson States](num-thompson-states.md)
 - [The pass counts the states of Thompson's automaton](num-thompson-states-eq.md)
 

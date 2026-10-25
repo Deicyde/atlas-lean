@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_ap_zero
 ---
 
-# Card restricted Signed Sumset ap zero
+# Restricted signed sumsets of arithmetic progressions containing zero
 
-For `4 ≤ h ≤ k-1`, `a` increasingly enumerates the nonnegative progression,
-`a 0 = 0` encodes `0 ∈ A`, and `IsIndexedAP a d` records its common difference. The
-displayed integer equality is the paper's exact cardinality formula without deviation.
+**Restricted signed sumsets of arithmetic progressions containing zero.** Let $h$ and $k$ be
+natural numbers with $4 \le h \le k - 1$, and let $0 = a_1 < a_2 < \cdots < a_k$ be nonnegative
+integers that form an arithmetic progression with common difference $d > 0$, that is,
+$a_{i+1} = a_i + d$ for $1 \le i < k$. Let $A = \{a_1, \ldots, a_k\}$ and let $h^{\wedge}_{\pm} A$
+be the restricted signed sumset of $A$. Then $|h^{\wedge}_{\pm} A| = 2hk - h(h+1) + 1$.
 
 ## Depends on
 
-- [Is Indexed AP](is-indexed-ap.md)
-- [Ordered Finset](ordered-finset.md)
+- [Finite integer sequences in arithmetic progression](is-indexed-ap.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

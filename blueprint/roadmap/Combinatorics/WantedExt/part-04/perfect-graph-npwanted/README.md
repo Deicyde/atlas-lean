@@ -4,9 +4,9 @@ navigation: module
 
 # Perfect Graph NP
 
-- [Perfect Graph Instance](perfect-graph-instance.md)
-- [Valid](valid.md)
-- [To Simple Graph](to-simple-graph.md)
-- [Perfect Graph Problem](perfect-graph-problem.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Adjacency-matrix graph instance](perfect-graph-instance.md)
+- [Valid adjacency-matrix instance](valid.md)
+- [Graph of a valid instance](to-simple-graph.md)
+- [The perfect-graph decision problem](perfect-graph-problem.md)
+- [Edmonds's question: an NP description of perfect graphs](conjecture.md)
+- [Perfect graphs have an NP description](conjecture-holds.md)

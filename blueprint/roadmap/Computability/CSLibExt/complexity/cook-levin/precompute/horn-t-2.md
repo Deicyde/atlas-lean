@@ -12,12 +12,12 @@ The Horner step count is polynomial in the base.
 
 ## Depends on
 
-- [Is Poly](is-poly.md)
-- [Horn T](horn-t.md)
+- [Polynomial functions on the naturals](is-poly.md)
+- [Step count of the Horner rounds](horn-t.md)
 
 ## Proof depends on
 
-- [Horn Step](horn-step.md)
+- [Step count of one Horner round](horn-step.md)
 
 ## Sources
 

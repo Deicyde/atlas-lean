@@ -15,8 +15,8 @@ Acceptance is exactly the full gate equations and true designated output.
 
 - [Verify Boolean Certificate](verify-boolean-certificate.md)
 - [To Fin](to-fin.md)
-- [Boolean Interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
-- [Boolean Signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+- [Boolean interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
+- [Boolean signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 
 ## Sources
 

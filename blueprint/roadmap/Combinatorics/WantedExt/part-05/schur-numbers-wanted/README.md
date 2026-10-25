@@ -4,11 +4,11 @@ navigation: module
 
 # Schur Numbers
 
-- [Schur Forces](schur-forces.md)
-- [Schur Number](schur-number.md)
-- [Schur Number two](schur-number-two.md)
-- [Schur Number three](schur-number-three.md)
-- [Schur Number four](schur-number-four.md)
-- [Schur Number five](schur-number-five.md)
-- [Le schur Number six](le-schur-number-six.md)
-- [Schur Number six le](schur-number-six-le.md)
+- [Schur forcing property](schur-forces.md)
+- [Schur number](schur-number.md)
+- [The second Schur number](schur-number-two.md)
+- [The third Schur number](schur-number-three.md)
+- [The fourth Schur number](schur-number-four.md)
+- [The fifth Schur number](schur-number-five.md)
+- [Lower bound for the sixth Schur number](le-schur-number-six.md)
+- [Upper bound for the sixth Schur number](schur-number-six-le.md)

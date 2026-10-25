@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.support_gcd_and_complementary_lcm
 ---
 
-# Support gcd and complementary lcm
+# Support gcd and complementary lcm of reflexive support data
 
-Lemma 1's two conclusions in Setup 1: reflexivity forces the support gcd
-to be `1`, and the LCM of the complementary factors `sᵢ` equals the support
-LCM.  `Finset.univ.gcd/lcm` encode the multiargument gcd and lcm.
+**Support gcd and complementary lcm of reflexive support data.** Let $r = (r_1, \dots, r_d)$
+and $x = (x_1, \dots, x_d)$ be valid support data: $d \ge 1$, the $r_i$ are pairwise distinct
+positive integers, and the $x_i$ are positive integers. Let $q = (r_1^{x_1}, \dots, r_d^{x_d})$
+be the weight vector in which each $r_i$ is repeated $x_i$ times, and suppose that the weighted
+projective space simplex $\Delta_{(1, q)}$ is reflexive. Then $\gcd(r_1, \dots, r_d) = 1$ and
+$\operatorname{lcm}(s_1, \dots, s_d) = \operatorname{lcm}(r_1, \dots, r_d)$, where
+$s_i = \operatorname{lcm}(r_1, \dots, r_d) / r_i$ are the complementary factors.
 
 ## Depends on
 
-- [Is Reflexive](is-reflexive.md)
-- [Valid Support](valid-support.md)
-- [Expand Support](expand-support.md)
-- [Setup S](setup-s.md)
-- [Weight Lcm](weight-lcm.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Valid support data](valid-support.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Complementary factors of support data](setup-s.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.nontrivial_sumset_card_of_last_gap_eq_nsmul
 ---
 
-# Nontrivial sumset card of last gap eq nsmul
+# Many nontrivial sums when the last gap is a proper multiple of the previous one
 
-Many nontrivial sums when the last gap is a proper multiple of the one before: let
-`k ≥ 4` and `0 = a 0 < a 1 < ⋯ < a (k - 3)` in a linearly ordered additive abelian
-group, and let `a (k - 2) = a (k - 3) + b`, `a (k - 1) = a (k - 3) + b + d • b` with
-`b > 0` and `d > 1`.  Then `h • {a 0, …, a (k - 1)}` has at least `h - 1` nontrivial
-elements.  The paper's `c` is written as `d • b` (its positivity follows).  The paper
-takes `h > 1`; the bound is vacuous for `h ≤ 1`.
+**Many nontrivial sums when the last gap is a proper multiple of the previous one.** Let $G$
+be a linearly ordered additive commutative group, let $h$ and $k \ge 4$ be natural numbers, and
+let $a_0, a_1, \ldots$ be a sequence in $G$ with $0 = a_0 < a_1 < \cdots < a_{k-3}$. Suppose
+that $a_{k-2} = a_{k-3} + b$ and $a_{k-1} = a_{k-3} + b + db$, where $b \in G$ satisfies
+$b > 0$ and $d > 1$ is an integer. Then at least $h - 1$ elements of the $h$-fold sumset
+$h\{a_0, \ldots, a_{k-1}\}$ (the set of sums of $h$ elements of $\{a_0, \ldots, a_{k-1}\}$)
+are not trivial elements of the $h$-fold sumset of $a_0, \ldots, a_{k-1}$.
+
+The paper's last gap $c$ is written as $db$ (its positivity follows). The paper takes $h > 1$;
+the bound is vacuous for $h \le 1$.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

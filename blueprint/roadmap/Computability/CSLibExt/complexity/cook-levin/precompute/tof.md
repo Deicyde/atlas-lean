@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.TOf
 ---
 
-# TOf
+# The precomputed time bound
 
-`T = (m + c)^e`.
+**The precomputed time bound.** For a polynomial $k$ with natural coefficients and
+$c, e, n \in \mathbb{N}$, the time bound is $T = (m + c)^e$, where $m = n + 1 + k(n)$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [M Of](m-of.md)
+- [Total length bound](m-of.md)
 
 ## Sources
 

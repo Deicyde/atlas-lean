@@ -6,14 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GreenProblem1LargeSumFreeWanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Bedert's theorem on large sum-free subsets
 
-Resolved true: Resolved affirmatively by Bedert, who proves that every n-element set of integers
-contains a sum-free subset of size at least n/3 + c log log n for an absolute constant c > 0.
+**Bedert's theorem on large sum-free subsets.** There is a function $\omega$ from the natural
+numbers to the real numbers with $\omega(n) \to \infty$ as $n \to \infty$ such that every finite
+set $A$ of positive integers contains a subset $B \subseteq A$ with $x + y \notin B$ for all
+$x, y \in B$ (a sum-free subset) and $|B| \ge |A|/3 + \omega(|A|)$.
+
+Bedert proves more: every $n$-element set of integers contains a sum-free subset of size at least
+$n/3 + c \log \log n$ for an absolute constant $c > 0$. This answers Green's Problem 1.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Green's Problem 1 on large sum-free subsets](conjecture.md)
 
 ## Sources
 

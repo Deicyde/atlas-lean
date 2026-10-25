@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomasRep_uniform_two_iff_twosComplement
 ---
 
-# Dumont Thomas Rep uniform two iff twos Complement
+# Two's complement as a Dumont–Thomas numeration system
 
-For a `2`-uniform substitution `ψ` and a two-sided fixed point `β` of `ψ` (period `1`),
-`rep_β = rep_{2c}`: `w = rep_β(n)` iff `w` is the two's complement representation of `n`,
-i.e. `w ∈ 𝒟⁺ \ (00𝒟* ∪ 11𝒟*)` over `𝒟 = {0, 1}` and `val_{2c}(w) = n`. The substitution and
-growing-seed hypotheses are implied by `2`-uniformity, and period `1` is automatically the
-least period.
+**Two's complement as a Dumont–Thomas numeration system.** Let $\psi$ send each letter of an
+alphabet $A$ to a word of length $2$ over $A$, and let $\beta$ be a two-sided infinite word over
+$A$ that is a periodic point of $\psi$ with period $1$, that is, $\psi(\beta) = \beta$. For a
+finite word $w = w_{k-1} \cdots w_1 w_0$ of natural numbers (most significant digit first), let
+$\operatorname{val}_{2c}(w) = \sum_{i=0}^{k-1} w_i 2^i - w_{k-1} 2^k$ be its two's complement
+value. Then for every integer $n$ and every such word $w$, $w$ is the Dumont–Thomas complement
+representation $\operatorname{rep}_\beta(n)$ of $n$ for $\psi$, $\beta$ and period $1$ if and
+only if $w$ is the two's complement representation of $n$: $w$ is nonempty, every digit of $w$
+is $0$ or $1$, $w$ does not begin with $00$ or with $11$, and $\operatorname{val}_{2c}(w) = n$.
+
+The hypotheses that $\psi$ is a substitution with a growing seed are implied by this
+$2$-uniformity, and period $1$ is automatically the least period.
 
 ## Depends on
 
-- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
-- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
-- [Twos Complement Value](twos-complement-value.md)
+- [Dumont–Thomas complement representations](is-dumont-thomas-rep.md)
+- [Two-sided periodic points](is-two-sided-periodic-point.md)
+- [Two's complement value](twos-complement-value.md)
 
 ## Sources
 

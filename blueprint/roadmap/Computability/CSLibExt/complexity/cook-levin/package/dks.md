@@ -5,22 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Package.dks
 ---
 
-# Dks
+# Stacks to drain
 
-Stacks emptied by the drain: every stack except the output.
+**Stacks to drain.** The list of all stacks of the full machine other than its output
+stack, each appearing exactly once, in an unspecified order. These are the stacks that the drain
+empties before the composed machine halts.
 
 ## Depends on
 
-- [FK](../precompute/fk.md)
+- [Stacks of the full machine](../precompute/fk.md)
 
 ## Proof depends on
 
-- [CK](../accept/ck.md)
-- [HK](../assembly/hk.md)
-- [CK](../family/ck.md)
-- [CK](../init-family/ck.md)
-- [PS](../precompute/ps.md)
-- [CK](../shift/ck.md)
+- [Counters of the accept generator](../accept/ck.md)
+- [Stacks of the Cook–Levin host machine](../assembly/hk.md)
+- [Counters of the transition-family generator](../family/ck.md)
+- [Counters of the initial-row generator](../init-family/ck.md)
+- [Scratch counters of the counter program](../precompute/ps.md)
+- [Counters of the cell-shift generator](../shift/ck.md)
 
 ## Sources
 

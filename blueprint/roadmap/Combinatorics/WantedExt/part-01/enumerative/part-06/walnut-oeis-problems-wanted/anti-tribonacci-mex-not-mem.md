@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.antiTribonacciMex_notMem
 ---
 
-# Anti Tribonacci Mex not Mem
+# The mex of a finite set lies outside the set
 
-The `mex` value is not in `s`.
+**The mex of a finite set lies outside the set.** Write $\mathrm{mex}(s)$ for the least positive
+integer not in a finite set $s$ of natural numbers. For every such $s$, $\mathrm{mex}(s) \notin s$.
 
 ## Depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

@@ -6,29 +6,35 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.i3pre_run
 ---
 
-# I3pre run
+# Counter part of one I3 iteration
 
-The I3 iteration's counter part before the read: `Xn -= 1`, `CB := ZA + Xn·g`.
+**Counter part of one I3 iteration.** Let $L$ be a layout with $g$ symbol codes. Suppose the
+counters $F$ of the init generator's counter part have $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$,
+$c_2$ and $\mathrm{CB}$ equal to $0$, $\mathrm{Gc} = g$, $\mathrm{ZA} = Z$ and
+$\mathrm{Xn} = r + 1$. Then for every output $o$ and flag $v$, the counter part, started at the
+head of the I3 loop with flag $v$, counters $F$ and output $o$, reaches the first read test (the
+halting label if $g = 0$) in at most $1 + (2Z + 2) + (r(2g + 3) + r + 2)$ steps, with flag false,
+output $o$, and the counters of $F$ except that $\mathrm{Xn} = r$ and $\mathrm{CB} = rg + Z$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [Rd0](rd0.md)
-- [Lb](lb.md)
-- [Rest](rest.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Counters of the initial-row generator](ck.md)
+- [Labels of the initial-row generator](gl.md)
+- [The first read test](rd0.md)
+- [Labels of the initial-row generator](lb.md)
+- [Empty scratch counters](rest.md)
 - [Prog](prog.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Mul S](../counter-view/mul-s.md)
-- [PH](ph.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Loop phases of the initial-row generator](ph.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

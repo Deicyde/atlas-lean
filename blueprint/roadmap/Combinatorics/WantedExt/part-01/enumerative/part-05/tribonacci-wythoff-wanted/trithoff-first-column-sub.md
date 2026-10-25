@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.trithoff_first_column_sub
 ---
 
-# Trithoff first column sub
+# Gaps in the first column of the Trithoff array
 
-Consecutive first-column entries of the Trithoff array differ by `2` or `3`, and the
-difference between rows `i + 1` and `i + 2` is `3` exactly when `i + 1` is in A305373, which
-the paper identifies as A003144 + A003145: the sum of the `k`-th positions (1-indexed) of the
-letters `a` and `b` in the Tribonacci word.
+**Gaps in the first column of the Trithoff array.** Let $f_1 < f_2 < \cdots$ be the positive
+integers whose Tribonacci representation ends in the digit $1$ (OEIS A003265, the first column
+of the Trithoff array). For every $j \ge 1$ the difference $f_{j+1} - f_j$ is $2$ or $3$, and
+$f_{j+1} - f_j = 3$ exactly when $j = p_a(k) + p_b(k)$ for some $k \ge 1$, where $p_a(k)$ and
+$p_b(k)$ are the positions, counted from $1$, of the $k$-th occurrences of the letters $a$ and
+$b$ in the infinite Tribonacci word.
+
+The paper identifies these sums $p_a(k) + p_b(k)$, that is A003144 + A003145, with A305373.
 
 ## Depends on
 
 - [The Tribonacci alphabet](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-letter.md)
 - [The infinite Tribonacci word](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-word.md)
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 
 ## Sources
 

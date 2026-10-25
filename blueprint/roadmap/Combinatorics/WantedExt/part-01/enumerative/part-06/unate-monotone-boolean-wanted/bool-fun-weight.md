@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.boolFunWeight
 ---
 
-# Bool Fun Weight
+# Weight of a Boolean function
 
-The weight `wt(f)` of an `n`-variable Boolean function: the size of its
-support `{x | f x = true}`.
+**Weight of a Boolean function.** The weight $\mathrm{wt}(f)$ of an $n$-variable Boolean
+function $f \colon \{0,1\}^n \to \{0,1\}$ is the number of inputs $x \in \{0,1\}^n$ with
+$f(x) = 1$.
 
 ## Depends on
 

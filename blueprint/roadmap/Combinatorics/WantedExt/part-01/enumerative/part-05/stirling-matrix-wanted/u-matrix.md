@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [U Entry](u-entry.md)
+- [Entries of the matrix $U_\alpha$](u-entry.md)
 
 ## Sources
 

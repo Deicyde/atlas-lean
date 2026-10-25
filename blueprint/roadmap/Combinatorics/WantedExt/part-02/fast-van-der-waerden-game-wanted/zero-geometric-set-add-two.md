@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_add_two
 ---
 
-# Zero Geometric Set add two
+# The zero-geometric set $S_2(n + 2, k)$
 
-`S₂(n + 2, k) = {0, 1, k, …, k^n}`.
+**The zero-geometric set $S_2(n + 2, k)$.** For every natural number $n$ and every rational
+$k$, $S_2(n + 2, k) = \{0\} \cup \{k^i : 0 \le i \le n\} = \{0, 1, k, \dots, k^n\}$.
 
 ## Depends on
 
-- [Zero Geometric Set](zero-geometric-set.md)
+- [The zero-geometric set $S_2(n, k)$](zero-geometric-set.md)
 
 ## Sources
 

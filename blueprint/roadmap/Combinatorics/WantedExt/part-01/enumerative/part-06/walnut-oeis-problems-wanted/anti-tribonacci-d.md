@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.antiTribonacciD
 ---
 
-# Anti Tribonacci D
+# Anti-Tribonacci numbers
 
-The anti-Tribonacci numbers `D_n` (for `n ≥ 1`), OEIS A265389.
+**Anti-Tribonacci numbers.** For $n \ge 1$, the anti-Tribonacci number $D_n$ (OEIS A265389) is
+the fourth entry of the $n$-th quadruple $(A_n, B_n, C_n, D_n)$ of the anti-Tribonacci
+construction, so $D_n = A_n + B_n + C_n$ and $D_1 = 6$. At $n = 0$ the definition gives
+$D_0 = D_1 = 6$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anti Tribonacci State](anti-tribonacci-state.md)
+- [Anti-Tribonacci construction](anti-tribonacci-state.md)
 
 ## Sources
 

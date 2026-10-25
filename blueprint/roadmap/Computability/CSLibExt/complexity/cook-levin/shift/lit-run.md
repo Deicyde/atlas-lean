@@ -6,38 +6,47 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Shift.lit_run
 ---
 
-# Lit run
+# One literal routine of the cell-shift generator
 
-One literal: from `P = q + gap + 1`, compute `Q := q = base + const`, prepend the gap and the
-slot, leave `P = q` and the scratch counters empty.
+**One literal routine of the cell-shift generator.** Let $i < N$ be a situation, $k < K$ a
+stack, $c$ a clause kind and $l < 3$ a literal index. Let $F$ be counter values whose scratch
+counters ($Q$, the copy buffer, the multiplication buffer and the two comparison buffers) are
+$0$, let $b$ be the value under $F$ of the base counter of literal $l$, and let $a$ be the
+constant offset of literal $l$ of $c$ in block $(i, k)$. Let $q, m \in \mathbb{N}$ satisfy
+$q = b + a$ and $F(P) = q + m + 1$. Then for every output $o$ and internal state $v$, the
+generator goes in at most $m(3q + 6) + 2b + 4q + 9$ steps from the start of the routine of
+literal $l$, with state $v$, counters $F$ and output $o$, to the start of the routine of literal
+$l - 1$ (the end-of-clause label of $c$ when $l = 0$), with state false, counters $F$ except
+that $P = q$, and output the slot code of literal $l$ (sign positive exactly when $l$ is the last
+literal of $c$), followed by $m$ copies of $01$, followed by $o$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
-- [BD](bd.md)
-- [K](k.md)
-- [CK](ck.md)
-- [CL](cl.md)
-- [Bs](bs-2.md)
-- [Sg](sg.md)
-- [GL](gl.md)
-- [After](after.md)
-- [LS](ls.md)
-- [Lab](lab.md)
-- [Rest](rest.md)
-- [Csv](csv.md)
-- [Prog](prog.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Loop-body stages of the cell-shift generator](bd.md)
+- [Counter holding a literal base](k.md)
+- [Counters of the cell-shift generator](ck.md)
+- [Clause kinds of the cell-shift family](cl.md)
+- [Base counter of a literal](bs-2.md)
+- [Literal signs of a shift clause kind](sg.md)
+- [Labels of the cell-shift generator](gl.md)
+- [Label after a literal routine](after.md)
+- [Stages of the cell-shift literal routine](ls.md)
+- [Labels of the shift generator](lab.md)
+- [Empty scratch counters of the shift generator](rest.md)
+- [Constant offset of a literal in a block](csv.md)
+- [The cell-shift generator](prog.md)
 - [Encode Slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 - [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
-- [Gap S](../counter-view/gap-s.md)
-- [BS](bs.md)
+- [Gap emission in the counter view](../counter-view/gap-s.md)
+- [Base counters of literal positions](bs.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

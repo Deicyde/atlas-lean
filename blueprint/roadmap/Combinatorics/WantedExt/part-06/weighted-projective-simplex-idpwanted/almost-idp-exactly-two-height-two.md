@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.almostIDP_exactly_two_height_two
 ---
 
-# Almost IDP exactly two height two
+# Exactly two Hilbert basis elements of height two
 
-Theorem 13's height consequence: among the Hilbert basis, exactly two
-elements have height greater than `1`, and both have height exactly `2`.
+**Exactly two Hilbert basis elements of height two.** Let $n \ge 1$ and let
+$q(n) = (1^{2n-1}, 3n, 10n, 15n)$, that is, $2n - 1$ ones followed by $3n$, $10n$, $15n$. Write the
+elements of the Hilbert basis of the cone over the weighted projective simplex $\Delta_{(1,q(n))}$
+as pairs $(k, w)$ with height $k \in \mathbb{N}$ and $w \in \mathbb{Z}^{2n+2}$. Exactly two elements
+of this Hilbert basis have height $k > 1$, and every element of height $k > 1$ has height $k = 2$.
 
 ## Depends on
 
-- [Almost IDPWeights](almost-idpweights.md)
-- [Hilbert Basis](hilbert-basis.md)
-- [Weighted Simplex](weighted-simplex.md)
+- [The almost-IDP weight vector](almost-idpweights.md)
+- [Hilbert basis of the cone over a polytope](hilbert-basis.md)
+- [Weighted projective space simplex](weighted-simplex.md)
 
 ## Sources
 

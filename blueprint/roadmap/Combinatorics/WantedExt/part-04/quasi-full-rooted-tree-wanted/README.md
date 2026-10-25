@@ -4,8 +4,8 @@ navigation: module
 
 # Quasi Full Rooted Tree
 
-- [Is Poset Matrix block iff direct Sum ordinal Sum](is-poset-matrix-block-iff-direct-sum-ord.md)
-- [Direct Sum ordinal Sum represents](direct-sum-ordinal-sum-represents.md)
-- [Connected or disconnected of block property](connected-or-disconnected-of-block-prope.md)
-- [Quasi Full Tree arity](quasi-full-tree-arity.md)
-- [Not relabel equiv of block Lengths ne](not-relabel-equiv-of-block-lengths-ne.md)
+- [Block decomposition of a poset matrix](is-poset-matrix-block-iff-direct-sum-ord.md)
+- [Direct and ordinal sums of poset matrices represent sums of posets](direct-sum-ordinal-sum-represents.md)
+- [Block properties decide connectedness of the represented poset](connected-or-disconnected-of-block-prope.md)
+- [Arity of quasi-full rooted trees](quasi-full-tree-arity.md)
+- [Direct sum criterion for relabeling inequivalence](not-relabel-equiv-of-block-lengths-ne.md)

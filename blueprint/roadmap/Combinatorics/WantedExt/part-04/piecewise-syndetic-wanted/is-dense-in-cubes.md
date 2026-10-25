@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDenseInCubes
 ---
 
-# Is Dense In Cubes
+# Density in subcubes
 
-`C` is `d`-dense in `M`: every subcube of size `d^t` contained in `M` meets `C`.
+**Density in subcubes.** Let $d \in \mathbb{N}$ and let $C, M \subseteq \mathbb{N}^t$. The set
+$C$ is $d$-dense in $M$ when every subcube of $\mathbb{N}^t$ of side $d$ that is contained in $M$
+meets $C$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Cube](lattice-cube.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

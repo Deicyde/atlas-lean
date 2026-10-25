@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.normalisedDistance
 ---
 
-# Normalised Distance
+# Normalised distance of a binary code
 
-The normalised distance of a binary code `C` is its distance divided by its length.
+**Normalised distance of a binary code.** The normalised distance of a binary code
+$C \subseteq \mathbb{F}_2^n$ is its distance divided by its length $n$, as a real number; it is
+$0$ when $n = 0$.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Proof depends on
 
-- [Distance](distance.md)
+- [Minimum distance of a binary code](distance.md)
 
 ## Sources
 

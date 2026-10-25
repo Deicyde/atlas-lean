@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.slowANimMoves
 ---
 
-# Slow ANim Moves
+# Options in Slow A-Nim
 
-The options of `p` in Slow`A`-Nim: play on a nonempty set `S` of `|S| ∈ A` stacks, each
-holding at least one token.
+**Options in Slow A-Nim.** Let $A$ be a finite set of natural numbers and $p$ a position on
+$n$ stacks. The options of $p$ in Slow$A$-Nim are the positions obtained from $p$ by choosing a
+nonempty set $S$ of stacks with $|S| \in A$, each holding at least one token, and removing one
+token from each stack of $S$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Slow ANim After](slow-anim-after.md)
+- [Playing on a set of stacks](slow-anim-after.md)
 
 ## Sources
 

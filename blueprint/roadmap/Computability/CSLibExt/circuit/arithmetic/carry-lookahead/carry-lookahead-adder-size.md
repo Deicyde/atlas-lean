@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Circuits.CarryLookahead.carryLookaheadAdder_size
 ---
 
-# Carry Lookahead Adder size
+# Gate count of the carry-lookahead adder
 
-The gate count: `2 n` for level `0`, `3 n` per Kogge-Stone level, `3 n` for the final level.
+**Gate count of the carry-lookahead adder.** For all $n, K \in \mathbb{N}$, the $n$-bit
+Kogge-Stone carry-lookahead adder with $K$ levels has exactly $5n + 3nK$ gates: $2n$ in the
+first level, $3n$ in each of the $K$ Kogge-Stone levels, and $3n$ in the final level.
 
 ## Depends on
 
-- [Carry Lookahead Adder](carry-lookahead-adder.md)
-- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Kogge–Stone carry-lookahead adder](carry-lookahead-adder.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
 
 ## Proof depends on
 
-- [Level Base](level-base.md)
+- [Gate count of the first Kogge-Stone levels](level-base.md)
 
 ## Sources
 

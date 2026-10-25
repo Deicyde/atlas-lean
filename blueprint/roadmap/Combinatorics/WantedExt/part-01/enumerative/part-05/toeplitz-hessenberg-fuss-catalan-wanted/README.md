@@ -4,11 +4,11 @@ navigation: module
 
 # Toeplitz Hessenberg Fuss Catalan
 
-- [Toeplitz Hessenberg fuss Catalan examples](toeplitz-hessenberg-fuss-catalan-example.md)
-- [Toeplitz Hessenberg Det gen Fun](toeplitz-hessenberg-det-gen-fun.md)
-- [Toeplitz Hessenberg Det fuss Catalan](toeplitz-hessenberg-det-fuss-catalan.md)
-- [Toeplitz Hessenberg Det fuss Catalan special](toeplitz-hessenberg-det-fuss-catalan-spe.md)
-- [Toeplitz Hessenberg Det catalan](toeplitz-hessenberg-det-catalan.md)
-- [Toeplitz Hessenberg Det ternary](toeplitz-hessenberg-det-ternary.md)
-- [Trudi Partition Sum fuss Catalan](trudi-partition-sum-fuss-catalan.md)
-- [Nonempty equiv even Noncrossing even Descent Dyck](nonempty-equiv-even-noncrossing-even-des.md)
+- [Small generalized Fuss–Catalan numbers](toeplitz-hessenberg-fuss-catalan-example.md)
+- [Generating function of Toeplitz–Hessenberg determinants](toeplitz-hessenberg-det-gen-fun.md)
+- [Toeplitz–Hessenberg determinants of Fuss–Catalan numbers](toeplitz-hessenberg-det-fuss-catalan.md)
+- [Special Toeplitz–Hessenberg determinants of Fuss–Catalan numbers](toeplitz-hessenberg-det-fuss-catalan-spe.md)
+- [Toeplitz–Hessenberg determinants with Catalan entries](toeplitz-hessenberg-det-catalan.md)
+- [Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers](toeplitz-hessenberg-det-ternary.md)
+- [Trudi multi-sums of Fuss–Catalan numbers](trudi-partition-sum-fuss-catalan.md)
+- [Even noncrossing partitions and Dyck paths with even descents](nonempty-equiv-even-noncrossing-even-des.md)

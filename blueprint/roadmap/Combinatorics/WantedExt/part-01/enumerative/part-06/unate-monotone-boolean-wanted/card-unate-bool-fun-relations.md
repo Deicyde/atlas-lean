@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_unate_boolFun_relations
 ---
 
-# Card unate bool Fun relations
+# Unate versus monotone Boolean function counts
 
-Proposition 3: `nd-U_n = 2^n nd-M_n`, `nd-BU_n = 2^n nd-BM_n`,
-`U_n ≤ 2^n M_n` and `BU_n ≤ 2^n BM_n`, where `U`, `M` count unate and
-monotone functions, `B` adds balancedness (`2 wt(f) = 2^n`) and `nd-`
-restricts to non-degenerate functions.
+**Unate versus monotone Boolean function counts.** For $n \ge 0$, write $U_n$ and $M_n$ for
+the numbers of unate and of monotone $n$-variable Boolean functions, $BU_n$ and $BM_n$ for the
+numbers of those that are moreover balanced, that is, twice their weight equals $2^n$, and write
+the prefix $\mathrm{nd}\text{-}$ for the same counts restricted to non-degenerate functions.
+Then $\mathrm{nd}\text{-}U_n = 2^n \, \mathrm{nd}\text{-}M_n$,
+$\mathrm{nd}\text{-}BU_n = 2^n \, \mathrm{nd}\text{-}BM_n$, $U_n \le 2^n M_n$ and
+$BU_n \le 2^n BM_n$.
 
 ## Depends on
 
 - [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
-- [Bool Fun Weight](bool-fun-weight.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_unate_boolFun_weight_symm
 ---
 
-# Card unate bool Fun weight symm
+# Weight symmetry of unate Boolean functions
 
-Proposition 9: `U_{n,w} = U_{n,2^n-w}` for `0 ≤ w ≤ 2^n`, where `U_{n,w}`
-counts unate `n`-variable functions of weight `w`. The paper assumes
-`n ≥ 1`; the statement also holds for `n = 0` and is stated for all `n`.
+**Weight symmetry of unate Boolean functions.** For all $n \ge 0$ and all $w$ with
+$0 \le w \le 2^n$, the number of unate $n$-variable Boolean functions of weight $w$ equals the
+number of unate $n$-variable Boolean functions of weight $2^n - w$.
+
+The source assumes $n \ge 1$; the case $n = 0$ is included here.
 
 ## Depends on
 
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
-- [Bool Fun Weight](bool-fun-weight.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

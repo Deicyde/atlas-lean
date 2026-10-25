@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.filePlacementBlock_card
 ---
 
-# File Placement Block card
+# Size of the block $P(F_0)$
 
-On a singleton board for `m ≥ 2`, if `F₀` is a file placement that is not an `m`-level rook
-placement and its chosen level `l` contains `n` rooks, then `P(F₀)` has `m^{n-1}` members.
+**Size of the block $P(F_0)$.** Let $m \ge 2$, let $B$ be a singleton board for $m$, and call
+the rows $r$ with $\lfloor r/m \rfloor = l$ level $l$. Let $F_0$ be a file placement on $B$ that is
+not an $m$-level rook placement, let $l$ and $c_0$ be its chosen level and the leftmost cell of
+$F_0$ in that level, and suppose level $l$ contains $n$ cells of $F_0$. Then the block $P(F_0)$
+determined by $l$ and $c_0$ has exactly $m^{n-1}$ members.
 
 ## Depends on
 
-- [Is Chosen Level And Leftmost](is-chosen-level-and-leftmost.md)
-- [Is Singleton Board](is-singleton-board.md)
-- [File Placement Block](file-placement-block.md)
-- [File Placements](file-placements.md)
-- [Level Rook Placements](level-rook-placements.md)
+- [The chosen level and its leftmost cell](is-chosen-level-and-leftmost.md)
+- [Singleton boards](is-singleton-board.md)
+- [The block $P(F_0)$](file-placement-block.md)
+- [File placements](file-placements.md)
+- [Level rook placements](level-rook-placements.md)
 
 ## Sources
 

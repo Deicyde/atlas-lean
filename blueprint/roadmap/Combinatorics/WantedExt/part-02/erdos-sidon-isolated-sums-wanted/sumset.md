@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosSidonIsolatedSumsWanted.Sumset
 ---
 
-# Sumset
+# Sumset of a finite set of natural numbers
 
-The sumset `A + A` as a finset: all values `x + y` with `x, y ∈ A`.
+**Sumset of a finite set of natural numbers.** For a finite set $A$ of natural numbers, the
+sumset $A + A$ is the finite set of all sums $x + y$ with $x, y \in A$.
 
 ## Depends on
 

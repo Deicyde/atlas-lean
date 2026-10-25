@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.substitutionAutomaton_nil
 ---
 
-# Substitution Automaton nil
+# The substitution automaton on the empty word
 
-Reading the empty digit word stays at the starting state.
+**The substitution automaton on the empty word.** For every letter map $\eta$ and every
+letter $b$, the substitution automaton $\mathcal{A}_{\eta,\cdot}$ started at $b$ ends in the
+state $b$ after reading the empty digit word.
 
 ## Depends on
 

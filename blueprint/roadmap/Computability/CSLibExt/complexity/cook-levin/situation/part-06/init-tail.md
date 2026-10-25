@@ -16,8 +16,8 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.initTail
 
 ## Proof depends on
 
-- [Num Vars](../../family/num-vars.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Layout](../part-01/layout.md)
 - [Z Idx](z-idx.md)
 - [Clause](../../../dense-sat/clause.md)

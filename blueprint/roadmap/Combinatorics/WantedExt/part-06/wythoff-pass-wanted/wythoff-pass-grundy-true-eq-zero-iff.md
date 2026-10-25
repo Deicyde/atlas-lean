@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPassGrundy_true_eq_zero_iff
 ---
 
-# Wythoff Pass Grundy true eq zero iff
+# Away from the corner, P-positions with a pass are Wythoff's Grundy-one positions
 
-For `x ≥ 9` or `y ≥ 9`, `𝒢₁(x, y, 1) = 0` if and only if `𝒢₁(x, y, 0) = 1`.
+**Away from the corner, P-positions with a pass are Wythoff's Grundy-one positions.** Let
+$\mathcal{G}_1(x, y, p)$ be the Grundy numbers of Wythoff's game with a pass, where $p = 1$ means
+the pass is still available and $p = 0$ means it has been used, so that $\mathcal{G}_1(x, y, 0)$
+is the Grundy number of $(x, y)$ in classical Wythoff's game. If $x \ge 9$ or $y \ge 9$, then
+$\mathcal{G}_1(x, y, 1) = 0$ if and only if $\mathcal{G}_1(x, y, 0) = 1$.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
 
 ## Sources
 

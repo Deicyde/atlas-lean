@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FraserKakeyaWanted.Combinatorics.FraserKakeyaProblem.dot
 ---
 
-# Dot
+# Dot product
 
-Standard dot product on `F_q^d`.
+**Dot product.** Let $F$ be a finite field and $d$ a natural number. For $x, y \in F^d$, the
+dot product is $x \cdot y = \sum_{i} x_i y_i \in F$, the sum running over the $d$ coordinates.
 
 ## Depends on
 
-- [Space](space.md)
+- [Coordinate space](space.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Valid Ordering
 
-- [Theorem 2](exists-distinct-partial-sums-ordering.md)
-- [Theorem 3](exists-freiman-iso-to-int.md)
+- [Valid orderings of finite sets of nonzero integers](exists-distinct-partial-sums-ordering.md)
+- [Lev's rectification principle](exists-freiman-iso-to-int.md)

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stirling_penultimate_lucky_iff
 ---
 
-# Stirling penultimate lucky iff
+# When the penultimate car is lucky
 
-For `w ∈ Q_n`, car `2n - 1` is lucky if and only if `w(2n - 1) = 1`.
+**When the penultimate car is lucky.** Let $n \ge 1$ and let $w = w_1 \cdots w_{2n}$ be a
+Stirling permutation of order $n$, read as a parking function of length $2n$. Then car $2n - 1$
+is lucky, that is, belongs to the lucky set $\mathrm{Lucky}(w)$, if and only if $w_{2n-1} = 1$.
 
 ## Depends on
 

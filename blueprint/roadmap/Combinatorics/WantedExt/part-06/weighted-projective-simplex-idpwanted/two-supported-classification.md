@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.two_supported_classification
 ---
 
-# Two supported classification
+# Classification of two-supported vectors satisfying the necessary condition
 
-Theorem 8's classification: the necessary two-supported data are exactly
-`(1,1+x₁)` or `(1+x₂,1+(1+x₂)x₁)`, with subscripts represented by `Fin 2`.
+**Classification of two-supported vectors satisfying the necessary condition.** Let
+$r = (r_1, r_2)$ and $x = (x_1, x_2)$ be pairs of positive integers with $r_1 < r_2$. Then
+$1 + \sum_{i=1}^{2} x_i (r_i \bmod r_j) = r_j$ holds for $j = 1, 2$ (the support form of the IDP
+necessary condition) if and only if either $r = (1, 1 + x_1)$ or
+$r = (1 + x_2, 1 + (1 + x_2)x_1)$.
 
 ## Depends on
 
-- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
+- [Support form of the IDP necessary condition](satisfies-support-idpnecessary.md)
 
 ## Sources
 

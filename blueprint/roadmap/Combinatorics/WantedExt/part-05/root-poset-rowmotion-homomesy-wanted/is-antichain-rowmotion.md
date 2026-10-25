@@ -6,13 +6,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainRowmotion
 ---
 
-# Is Antichain Rowmotion
+# Rowmotion on antichains
 
-Antichain rowmotion: bijective map sending `A` to minima of complement of its down-set.
+**Rowmotion on antichains.** For a partially ordered set $P$, a map $\rho$ from the finite
+antichains of $P$ to themselves is antichain rowmotion when $\rho$ is bijective and, for every
+finite antichain $A$, $\rho(A)$ is the set of minimal elements of the complement of the down-set
+of $A$: an element $x \in P$ lies in $\rho(A)$ exactly when $x \not\le a$ for all $a \in A$ and
+every $y \le x$ with $y \not\le a$ for all $a \in A$ equals $x$.
 
 ## Depends on
 
-- [Poset Antichain](poset-antichain.md)
+- [Finite antichains of a poset](poset-antichain.md)
 
 ## Sources
 

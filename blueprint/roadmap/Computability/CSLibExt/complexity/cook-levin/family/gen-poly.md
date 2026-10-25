@@ -11,11 +11,11 @@ The bound as a `Polynomial ℕ` in `T + H` (the form `TM2ComputableInPolyTime` u
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [Gen C](gen-c.md)
+- [Constant of the generator's time bound](gen-c.md)
 
 ## Sources
 

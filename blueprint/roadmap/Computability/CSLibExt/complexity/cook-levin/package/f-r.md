@@ -15,7 +15,7 @@ The reduction function on encoded inputs: decode the raw symbols, emit `Phi`.
 
 ## Proof depends on
 
-- [Phi Of](phi-of.md)
+- [The formula emitted on a raw input](phi-of.md)
 
 ## Sources
 

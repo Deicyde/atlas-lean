@@ -14,9 +14,9 @@ variables) satisfies all five families at the corrected cap. No `|x| ≤ m` or `
 
 ## Depends on
 
-- [Num Vars](../../family/num-vars.md)
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Accepting configuration](../part-07/accepts.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)

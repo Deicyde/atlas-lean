@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.symmetricPeakHeightSum_compositions_genFun
 ---
 
-# Symmetric Peak Height Sum compositions gen Fun
+# Generating function of the total symmetric peak height over compositions
 
-Generating function of `hsp(n)`: `∑ hsp(n) xⁿ = x⁴ / ((1 - 2x)² (1 - x³))`, stated
-after clearing denominators.
+**Generating function of the total symmetric peak height over compositions.** For
+$n \ge 0$ let $\mathrm{hsp}(n)$ be the sum, over all compositions $c$ of $n$, of the symmetric
+peak height sum of the sequence of parts of $c$. Then in $\mathbb{Z}[[x]]$
+
+$$
+\left(\sum_{n \ge 0} \mathrm{hsp}(n)\, x^n\right)(1 - 2x)^2 (1 - x^3) = x^4,
+$$
+
+that is, $\sum_{n \ge 0} \mathrm{hsp}(n)\, x^n = x^4 / ((1 - 2x)^2 (1 - x^3))$.
 
 ## Depends on
 
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
 
 ## Sources
 

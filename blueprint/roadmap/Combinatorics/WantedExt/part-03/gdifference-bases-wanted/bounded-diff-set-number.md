@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.boundedDiffSetNumber
 ---
 
-# Bounded Diff Set Number
+# Maximal sets with bounded difference multiplicities
 
-`α_g(n)`: the largest size of a set `A ⊆ [n]` with `r_{A-A}(x) ≤ g` for every nonzero `x`.
+**Maximal sets with bounded difference multiplicities.** For a finite set
+$A \subseteq \mathbb{Z}$ and $x \in \mathbb{Z}$, write $r_{A-A}(x)$ for the number of ordered
+pairs $(a, a') \in A \times A$ with $a - a' = x$. For natural numbers $g$ and $n$, $\alpha_g(n)$
+is the largest size of a set $A \subseteq [n] = \{1, \dots, n\}$ with $r_{A-A}(x) \le g$ for
+every nonzero integer $x$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

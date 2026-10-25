@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.wythoffPassSetB_card_wythoffPassSetC_card
 ---
 
-# Wythoff Pass Set B card wythoff Pass Set C card
+# The sets $B$ and $C$ have nine elements each
 
-`B` and `C` have nine elements each.
+**The sets $B$ and $C$ have nine elements each.** The sets
+$B = \{(0, 0), (1, 3), (3, 1), (2, 5), (5, 2), (4, 8), (8, 4), (6, 7), (7, 6)\}$ and
+$C = \{(0, 1), (1, 0), (2, 2), (3, 6), (6, 3), (4, 8), (8, 4), (5, 7), (7, 5)\}$ of pairs of
+natural numbers each have exactly $9$ elements.
 
 ## Depends on
 
-- [Wythoff Pass Set B](wythoff-pass-set-b.md)
-- [Wythoff Pass Set C](wythoff-pass-set-c.md)
+- [The set $B$](wythoff-pass-set-b.md)
+- [The set $C$](wythoff-pass-set-c.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem760
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 760: subgraphs of large cochromatic number](conjecture.md)
+- [Alon–Krivelevich–Sudakov theorem on subgraphs of large cochromatic number](conjecture-holds.md)

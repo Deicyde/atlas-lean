@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.BusyBeaver.Move.shift
 ---
 
-# Shift
+# Head displacement
 
-The displacement of a head movement.
+**Head displacement.** The displacement of a head movement is $-1$ for a move to the left
+and $1$ for a move to the right.
 
 ## Depends on
 
-- [Move](move.md)
+- [Head movement](move.md)
 
 ## Sources
 

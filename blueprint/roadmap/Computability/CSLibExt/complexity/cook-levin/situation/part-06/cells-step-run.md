@@ -14,8 +14,8 @@ Only `hh` and `depth M ≤ H` are assumed about `H`.
 
 ## Depends on
 
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](../part-05/code-holds.md)
@@ -34,8 +34,8 @@ Only `hh` and `depth M ≤ H` are assumed about `H`.
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [Ov step run](../part-05/ov-step-run.md)
 - [Pf step run](../part-05/pf-step-run.md)
 - [L3 (S-definition, real run)](../part-05/sd-step-run.md)

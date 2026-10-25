@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsFibonacciAutomatic
 ---
 
-# Is Fibonacci Automatic
+# Fibonacci-automatic sequences
 
-A sequence `u : ℕ → ℕ` is Fibonacci-automatic if some deterministic finite automaton with
-output reads `rep_F(n)` (most significant digit first) and outputs `u n`.
+**Fibonacci-automatic sequences.** A sequence $u : \mathbb{N} \to \mathbb{N}$ is
+Fibonacci-automatic if there are a finite set $Q$ of states, a transition function
+$\delta : Q \times \{0, 1\} \to Q$, an initial state $q_0 \in Q$ and an output map
+$\tau : Q \to \mathbb{N}$ such that for every $n$, $u(n) = \tau(q)$, where $q$ is the state
+reached from $q_0$ by reading the digits of the greedy Fibonacci representation
+$\mathrm{rep}_F(n)$ with $\delta$, most significant digit first.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Rep](fib-rep.md)
+- [Greedy Fibonacci representation](fib-rep.md)
 
 ## Sources
 

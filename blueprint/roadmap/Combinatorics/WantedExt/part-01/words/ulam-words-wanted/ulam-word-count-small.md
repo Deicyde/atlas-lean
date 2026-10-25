@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.ulamWordCount_small
 ---
 
-# Ulam Word Count small
+# Numbers of short Ulam words
 
-`#U₁, …, #U₄ = 2, 2, 4, 8`.
+**Numbers of short Ulam words.** There are $2$, $2$, $4$ and $8$ Ulam words of length $1$,
+$2$, $3$ and $4$ respectively: $\#U_1 = 2$, $\#U_2 = 2$, $\#U_3 = 4$ and $\#U_4 = 8$, where
+$\#U_n$ is the number of Ulam words of length $n$.
 
 ## Depends on
 

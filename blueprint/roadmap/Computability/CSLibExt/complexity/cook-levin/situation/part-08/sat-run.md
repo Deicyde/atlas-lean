@@ -13,8 +13,8 @@ literals agrees with `RunLit`.
 
 ## Depends on
 
-- [Num Vars](../../family/num-vars.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Enc](../part-01/enc.md)
 - [The real run's literals](run-lit.md)
 - [Layout](../part-01/layout.md)

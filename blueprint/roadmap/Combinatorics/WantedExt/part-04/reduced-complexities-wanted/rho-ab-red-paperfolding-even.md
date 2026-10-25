@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoAbRed_paperfolding_even
 ---
 
-# Theorem 3
+# Reduced abelian complexity of the paperfolding word at even lengths
 
-**Theorem 3**, even case: `ρ^{ab,red}_f(n) = 3` for even
-positive `n`.
+**Reduced abelian complexity of the paperfolding word at even lengths.** Let $f$ be the
+regular paperfolding sequence and let $\rho^{\mathrm{ab,red}}_f(n)$ be the number of reductions
+of length-$n$ factors of $f$, counted up to rearrangement of their letters. For every even
+$n > 0$, $\rho^{\mathrm{ab,red}}_f(n) = 3$.
 
 ## Depends on
 
-- [Paperfolding Seq](paperfolding-seq.md)
-- [Rho Ab Red](rho-ab-red.md)
+- [Regular paperfolding sequence](paperfolding-seq.md)
+- [Reduced abelian complexity](rho-ab-red.md)
 
 ## Sources
 

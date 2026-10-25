@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.wythoffMexB
 ---
 
-# Wythoff Mex B
+# The companion of the mex sequence
 
-The companion sequence `b_n = a_n + n + ℓ + 1` of `K^ℓ`.
+**The companion of the mex sequence.** Fix a natural number $\ell$ and let $(a_n)$ be the mex
+sequence of $K^\ell$ (Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are
+terminal). Its companion sequence is $b_n = a_n + n + \ell + 1$ for every natural number $n$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
 
 ## Sources
 

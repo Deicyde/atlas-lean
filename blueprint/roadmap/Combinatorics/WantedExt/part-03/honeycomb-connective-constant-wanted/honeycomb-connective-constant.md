@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.honeycomb_connective_constant
 ---
 
-# Honeycomb connective constant
+# The connective constant of the honeycomb lattice
 
-Source: H. Duminil-Copin and S. Smirnov, 'The connective constant of the honeycomb lattice equals sqrt(2 + sqrt 2)', Ann. of Math. 175 (2012), 1653-1665, https://doi.org/10.4007/annals.2012.175.3.14. Via leanprover/lean-eval@38361be, problem `honeycomb_connective_constant`.
+**The connective constant of the honeycomb lattice.** Let $c_n$ be the number of $n$-step
+self-avoiding walks on the honeycomb lattice starting at the origin. Then
+$c_n^{1/n} \to \sqrt{2 + \sqrt{2}}$ as $n \to \infty$.
 
 ## Depends on
 
-- [Walk Count](walk-count.md)
+- [Number of self-avoiding walks on the honeycomb lattice](walk-count.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.HoneycombConnectiveConstantWanted](../../../../../sources/v2/WantedExt.md)
+- H. Duminil-Copin and S. Smirnov, 'The connective constant of the honeycomb lattice equals sqrt(2 + sqrt 2)', Ann. of Math. 175 (2012), 1653-1665, https://doi.org/10.4007/annals.2012.175.3.14. Via leanprover/lean-eval@38361be, problem `honeycomb_connective_constant`.

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_four_iff_isSymmetric
 ---
 
-# Maker Wins Within four iff is Symmetric
+# Four-element sets with a four-move win are the symmetric ones
 
-For `|S| = 4`, Maker has a 4-move strategy if and only if `S` is
-symmetric.
+**Four-element sets with a four-move win are the symmetric ones.** If $S$ is a set of four
+natural numbers, then, starting from the position where no number has been claimed, Maker wins
+the $S$-game within $4$ moves if and only if $S$, viewed as a set of rationals, is symmetric.
 
 ## Depends on
 
-- [Is Symmetric](is-symmetric.md)
-- [Maker Wins Within](maker-wins-within.md)
+- [Symmetric sets of rationals](is-symmetric.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

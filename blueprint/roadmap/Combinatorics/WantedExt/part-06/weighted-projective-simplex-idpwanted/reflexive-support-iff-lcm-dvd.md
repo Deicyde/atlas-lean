@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.reflexive_support_iff_lcm_dvd
 ---
 
-# Reflexive support iff lcm dvd
+# Reflexivity criterion in support form
 
-Theorem 1, `(r,x)` form: for valid support data, reflexivity is equivalent
-to the support LCM dividing `1+∑xᵢrᵢ`.  Expansion by `expandSupport` implements
-the paper's repeated-entry vector.
+**Reflexivity criterion in support form.** Let $d \ge 1$, let $r_1, \dots, r_d$ be pairwise
+distinct natural numbers with $r_i \ge 1$, and let $x_1, \dots, x_d$ be natural numbers with
+$x_i \ge 1$. Let $q = (r_1^{x_1}, \dots, r_d^{x_d})$ be the weight vector in which each $r_i$ is
+repeated $x_i$ times, in this order. The weighted projective simplex with weights $q$ is
+reflexive if and only if $\operatorname{lcm}(r_1, \dots, r_d)$ divides
+$1 + \sum_{i=1}^d x_i r_i$.
 
 ## Depends on
 
-- [Is Reflexive](is-reflexive.md)
-- [Valid Support](valid-support.md)
-- [Expand Support](expand-support.md)
-- [Weight Lcm](weight-lcm.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Valid support data](valid-support.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Least common multiple of a list of weights](weight-lcm.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

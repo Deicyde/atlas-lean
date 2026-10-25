@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.periodDoubling
 ---
 
-# Period Doubling
+# The period-doubling word
 
-Letter `k` (counted from zero) of the period-doubling word, read from iterate
-`Nat.log 2 k + 1`, which is guaranteed to contain index `k` and has length
-`2 ^ (Nat.log 2 k + 1) ≤ 2k + 2`.
+**The period-doubling word.** For a natural number $k$, the letter at index $k$ (indices start
+at $0$) of the period-doubling word is the letter at index $k$ of the word obtained by applying
+the period-doubling substitution $1 \mapsto 10$, $0 \mapsto 11$ to the one-letter word $1$ a total
+of $\lfloor \log_2 k \rfloor + 1$ times, where $\lfloor \log_2 0 \rfloor$ is taken to be $0$.
+That word has length $2^{\lfloor \log_2 k \rfloor + 1} \le 2k + 2$, so it contains index $k$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Period Doubling Word](period-doubling-word.md)
+- [Iterates of the period-doubling substitution](period-doubling-word.md)
 
 ## Sources
 

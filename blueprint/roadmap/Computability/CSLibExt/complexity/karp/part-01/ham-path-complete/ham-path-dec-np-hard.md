@@ -20,7 +20,7 @@ lean: Cslib.Complexity.Karp.hamPathDec_npHard
 
 ## Proof depends on
 
-- [Every NP problem reduces to `satDec`](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
 - [SAT ≤ HAMPATH is polynomial-time](is-poly-time-reduce-ham.md)
 - [Np Hard of poly Many One Red](../../part-02/three-sat-complete/np-hard-of-poly-many-one-red.md)
 - [Reduce Ham](../ham-path/reduce-ham.md)

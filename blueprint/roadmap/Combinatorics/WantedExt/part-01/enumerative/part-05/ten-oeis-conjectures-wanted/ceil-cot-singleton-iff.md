@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ceil_cot_singleton_iff
 ---
 
-# Ceil cot singleton iff
+# Values taken once by the ceiling of $\cot(\pi/(2m))$
 
-With `g(m) = ⌈cot (π / (2m))⌉`, for `r ≥ 1` and `m ≥ 2`: `m` is the only `m' ≥ 1` with
-`g(m') = r` (so `r` is a singleton) if and only if `g(m-1) = r-1`, `g(m) = r` and
-`g(m+1) = r+1`.
+**Values taken once by the ceiling of $\cot(\pi/(2m))$.** For $m \ge 1$ let
+$g(m) = \lceil \cot(\pi/(2m)) \rceil$. Let $r \ge 1$ and $m \ge 2$ be integers. Then $m$ is the
+only integer $m' \ge 1$ with $g(m') = r$ if and only if $g(m-1) = r - 1$, $g(m) = r$ and
+$g(m+1) = r + 1$.
 
 ## Depends on
 

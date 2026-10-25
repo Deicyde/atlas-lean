@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isSylverPPosition_prime_opening
 ---
 
-# Is Sylver PPosition prime opening
+# Hutchings' theorem
 
-Hutchings' theorem: if the first player opens with a prime `p > 3`, the position `{p}` is
-a P-position.
+**Hutchings' theorem.** For every prime $p > 3$, the position $\{p\}$ of Sylver Coinage is a
+P-position: a first player who opens with $p$ wins.
 
 ## Depends on
 
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Sources
 

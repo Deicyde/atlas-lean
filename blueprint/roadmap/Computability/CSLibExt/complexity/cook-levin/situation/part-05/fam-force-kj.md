@@ -12,10 +12,10 @@ lean: Cslib.Complexity.CookLevin.Situation.fam_force_kj
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
-- [Family](../../family/family.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The transition clause family](../../family/family.md)
 - [Tr](../part-04/tr.md)
 - [Cnf Sat](../../../dense-sat/cnf-sat.md)
 

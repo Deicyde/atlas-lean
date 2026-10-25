@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimH_strictMono
 ---
 
-# Maximum Nim H strict Mono
+# The Maximum Nim map $h_k$ is strictly increasing
 
-Lemma 6(i): for `k ≥ 2`, `h_k` is strictly increasing: `x<x'` implies
-`h_k(x)<h_k(x')`. The function is `maximumNimH`; there is no deviation.
+**The Maximum Nim map $h_k$ is strictly increasing.** Let $k \ge 2$ be a natural number and
+let $h_k$ be the map $x \mapsto x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers. For all
+natural numbers $x$ and $x'$ with $x < x'$, we have $h_k(x) < h_k(x')$.
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

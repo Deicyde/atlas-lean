@@ -13,7 +13,7 @@ move to a game whose largest pile is at most `3k - ℓ - 1` (`k` positive).
 
 ## Depends on
 
-- [Pebbling Moves](pebbling-moves.md)
+- [Moves of the $(k+1:k)$-pebbling game](pebbling-moves.md)
 
 ## Sources
 

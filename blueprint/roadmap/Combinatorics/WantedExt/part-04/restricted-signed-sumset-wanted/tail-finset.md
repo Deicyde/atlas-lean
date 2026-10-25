@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.tailFinset
 ---
 
-# Tail Finset
+# Values of a finite integer sequence after its first term
 
-`tailFinset a` removes the first, zero-indexed term from the finite set enumerated by
-`a`; under `StrictMono a` this is the paper's `A'`.
+**Values of a finite integer sequence after its first term.** For a sequence
+$a_0, \dots, a_{k-1}$ of integers, this is the set $\{a_i : 1 \le i < k\}$. When the sequence is
+strictly increasing, it is the set $A' = A \setminus \{a_0\}$ obtained from
+$A = \{a_0, \dots, a_{k-1}\}$ by removing its least element.
 
 ## Depends on
 

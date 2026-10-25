@@ -20,10 +20,10 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.init_row0
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
-- [Num Vars](../../family/num-vars.md)
-- [X Idx](../../family/x-idx.md)
-- [Dense Clause](../../family/dense-clause.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](../part-05/code-holds.md)
 - [Cell](../part-03/cell.md)

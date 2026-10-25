@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.bala_binomial_sum_odd_imp_mod_four
 ---
 
-# Bala binomial sum odd imp mod four
+# Odd values of Bala's binomial sum are $1$ modulo $4$
 
-Let `a(n) = ∑_{k=0}^{n} C(2n+1, n+k+1) (-2)^k`. If `a(n)` is odd then `a(n) ≡ 1 (mod 4)`.
-The paper's `a(n)` is A026641 (the number of even-outdegree nodes in all ordered trees with
-`n` edges); its proof works with this binomial sum (Bala's formula, display (13)), which is
-taken as the definition here.
+**Odd values of Bala's binomial sum are $1$ modulo $4$.** For a natural number $n$, let
+$a(n) = \sum_{k=0}^{n} \binom{2n+1}{n+k+1} (-2)^k$. If $a(n)$ is odd, then $a(n) \equiv 1 \pmod 4$.
+
+The paper's $a(n)$ is A026641 (the number of even-outdegree nodes in all ordered trees with $n$
+edges); its proof works with this binomial sum (Bala's formula, display (13)), which is taken as
+the definition here.
 
 ## Depends on
 

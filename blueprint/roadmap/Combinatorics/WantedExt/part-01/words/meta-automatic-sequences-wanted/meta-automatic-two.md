@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticTwo
 ---
 
-# Meta Automatic Two
+# The meta-automatic sequence $\mathcal{M}_2$
 
-The meta-automatic sequence `ℳ₂` (OEIS A391614), valued in `Bool`: `ℳ₂(0) = 0`,
-`ℳ₂(1) = 1`, `ℳ₂(4n) = ℳ₂(2n + ℳ₂(n))` and `ℳ₂(4n+1) = 1 - ℳ₂(4n)` for `n ≥ 1`, and
-`ℳ₂(4n+2) = ℳ₂(2n + 1 - ℳ₂(n))`, `ℳ₂(4n+3) = 1 - ℳ₂(4n+2)` for `n ≥ 0`. The nested
-indices are written as case splits on `ℳ₂(n)`; the paper's recurrences are
-`metaAutomaticTwo_rec` below.
+**The meta-automatic sequence $\mathcal{M}_2$.** The meta-automatic sequence
+$\mathcal{M}_2 : \mathbb{N} \to \{0, 1\}$ (OEIS A391614) is defined by $\mathcal{M}_2(0) = 0$,
+$\mathcal{M}_2(1) = 1$, $\mathcal{M}_2(4n) = \mathcal{M}_2(2n + \mathcal{M}_2(n))$ and
+$\mathcal{M}_2(4n+1) = 1 - \mathcal{M}_2(4n)$ for $n \ge 1$, and
+$\mathcal{M}_2(4n+2) = \mathcal{M}_2(2n + 1 - \mathcal{M}_2(n))$ and
+$\mathcal{M}_2(4n+3) = 1 - \mathcal{M}_2(4n+2)$ for $n \ge 0$.
 
 ## Depends on
 

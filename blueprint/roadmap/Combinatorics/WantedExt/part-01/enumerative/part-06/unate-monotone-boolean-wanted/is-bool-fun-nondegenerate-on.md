@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsBoolFunNondegenerateOn
 ---
 
-# Is Bool Fun Nondegenerate On
+# Non-degeneracy in a variable
 
-`f` is non-degenerate on the variable `i`: flipping `x i` changes the
-value of `f` at some input `x`.
+**Non-degeneracy in a variable.** An $n$-variable Boolean function $f$ is non-degenerate
+on the variable $x_i$ when flipping $x_i$ changes the value of $f$ at some input: there is
+$x \in \{0,1\}^n$ with $f(x) \ne f(x')$, where $x'$ is $x$ with its $i$-th coordinate negated.
 
 ## Depends on
 

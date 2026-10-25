@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Asymptotic Coset Cover Exponent](is-asymptotic-coset-cover-exponent.md)
+- [Admissible asymptotic coset-cover exponents](is-asymptotic-coset-cover-exponent.md)
 
 ## Sources
 

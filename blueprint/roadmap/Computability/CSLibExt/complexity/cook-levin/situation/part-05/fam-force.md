@@ -13,20 +13,20 @@ lean: Cslib.Complexity.CookLevin.Situation.fam_force
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
-- [Family](../../family/family.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The transition clause family](../../family/family.md)
 - [Tr](../part-04/tr.md)
 - [Cnf Sat](../../../dense-sat/cnf-sat.md)
 
 ## Proof depends on
 
-- [N Lits](../../family/n-lits.md)
-- [Num Vars](../../family/num-vars.md)
-- [Dense Clause](../../family/dense-clause.md)
-- [Lit Pos](../../family/lit-pos.md)
-- [Lits](../../family/lits.md)
+- [Number of literals of a transition clause](../../family/n-lits.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
+- [Position of a literal in a transition clause](../../family/lit-pos.md)
+- [Literals of a transition clause](../../family/lits.md)
 - [L0](../part-04/clause-sat-dense.md)
 - [CNF](../../../dense-sat/cnf.md)
 - [Clause](../../../dense-sat/clause.md)

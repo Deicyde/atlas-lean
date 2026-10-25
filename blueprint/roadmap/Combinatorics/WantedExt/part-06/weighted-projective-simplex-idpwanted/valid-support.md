@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ValidSupport
 ---
 
-# Valid Support
+# Valid support data
 
-Valid support data means a nonempty support (`0 < d`, as `q` has at least one
-entry in the paper), positive pairwise-distinct support entries and positive
-multiplicities, spelling out the hypotheses implicit in `(r,x)`.
+**Valid support data.** For $d \in \mathbb{N}$, a pair of tuples $r = (r_1, \dots, r_d)$ and
+$x = (x_1, \dots, x_d)$ of natural numbers is valid support data when $d \ge 1$, the support
+entries $r_1, \dots, r_d$ are positive and pairwise distinct, and the multiplicities
+$x_1, \dots, x_d$ are positive.
+
+These are the hypotheses implicit in the source's notation $(r_1^{x_1}, \dots, r_d^{x_d})$ for the
+weight vector in which each $r_i$ is repeated $x_i$ times.
 
 ## Depends on
 

@@ -13,17 +13,17 @@ regular expression matches.
 
 ## Depends on
 
-- [State](state.md)
+- [States of Thompson's automaton](state.md)
 - [Thompson's construction](to-nfa.md)
 
 ## Proof depends on
 
-- [Char Aut](char-aut.md)
-- [Concat](concat.md)
-- [One Aut](one-aut.md)
-- [Star](star.md)
-- [Union](union.md)
-- [Zero Aut](zero-aut.md)
+- [Single-letter automaton](char-aut.md)
+- [Concatenation of ε-NFAs](concat.md)
+- [One-state automaton](one-aut.md)
+- [Kleene star of an ε-NFA](star.md)
+- [Union of ε-NFAs](union.md)
+- [The ε-NFA with no states](zero-aut.md)
 
 ## Sources
 

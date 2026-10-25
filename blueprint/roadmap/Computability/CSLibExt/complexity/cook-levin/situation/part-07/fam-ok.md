@@ -15,7 +15,7 @@ Every clause of `φ` is a dense clause over `V` variables with faithful literals
 
 ## Proof depends on
 
-- [Dense Clause](../../family/dense-clause.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Faithful](faithful.md)
 - [Clause](../../../dense-sat/clause.md)
 

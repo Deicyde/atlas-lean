@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_pebblingAllNTotals_completeThree_one
 ---
 
-# Is Least pebbling All NTotals complete Three one
+# All-N threshold of $(2:1)$-pebbling on $K_3$
 
-Theorem 1(b): `m^{(2:1)}(K_3) = 7`.
+**All-N threshold of $(2:1)$-pebbling on $K_3$.** The least number $m$ such that every
+$(2:1)$-pebbling game on the complete graph $K_3$ with $m$ pebbles in total is an N-game, written
+$m^{(2:1)}(K_3)$, exists and equals $7$.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

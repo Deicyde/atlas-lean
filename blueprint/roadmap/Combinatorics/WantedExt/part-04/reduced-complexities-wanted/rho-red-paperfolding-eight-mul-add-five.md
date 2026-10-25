@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoRed_paperfolding_eight_mul_add_five
 ---
 
-# Lemma 8
+# Reduced complexity of the paperfolding word at lengths 8n + 5
 
-**Lemma 8**: `ρ^red_f(8n+5) = 6` for nonnegative `n`.
+**Reduced complexity of the paperfolding word at lengths 8n + 5.** Let $f$ be the regular
+paperfolding sequence and let $\rho^{\mathrm{red}}_f(n)$ be the number of distinct reductions of
+length-$n$ factors of $f$. For every natural number $n$, $\rho^{\mathrm{red}}_f(8n+5) = 6$.
 
 ## Depends on
 
-- [Paperfolding Seq](paperfolding-seq.md)
-- [Rho Red](rho-red.md)
+- [Regular paperfolding sequence](paperfolding-seq.md)
+- [Reduced factor complexity](rho-red.md)
 
 ## Sources
 

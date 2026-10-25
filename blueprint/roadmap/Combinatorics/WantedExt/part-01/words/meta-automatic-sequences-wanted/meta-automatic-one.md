@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticOne
 ---
 
-# Meta Automatic One
+# The meta-automatic sequence $\mathcal{M}_1$
 
-The meta-automatic sequence `ℳ₁` (OEIS A392736), valued in `Bool`: `ℳ₁(0) = 0`,
-`ℳ₁(1) = 1`, `ℳ₁(4n) = ℳ₁(n)` and `ℳ₁(4n+1) = 1 - ℳ₁(n)` for `n ≥ 1`, and
-`ℳ₁(4n+2) = ℳ₁(2n + 1 - ℳ₁(n))`, `ℳ₁(4n+3) = 1 - ℳ₁(2n + 1 - ℳ₁(n))` for `n ≥ 0`.
-The nested index is written as a case split on `ℳ₁(n)`; the paper's recurrences are
-`metaAutomaticOne_rec` below.
+**The meta-automatic sequence $\mathcal{M}_1$.** The sequence
+$\mathcal{M}_1 : \mathbb{N} \to \{0, 1\}$ (OEIS A392736) is defined by $\mathcal{M}_1(0) = 0$,
+$\mathcal{M}_1(1) = 1$, the recurrences $\mathcal{M}_1(4n) = \mathcal{M}_1(n)$ and
+$\mathcal{M}_1(4n+1) = 1 - \mathcal{M}_1(n)$ for every $n \ge 1$, and the recurrences
+$\mathcal{M}_1(4n+2) = \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$ and
+$\mathcal{M}_1(4n+3) = 1 - \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$ for every $n \ge 0$.
 
 ## Depends on
 

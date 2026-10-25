@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.symmetricValleyDepthSum_examples
 ---
 
-# Symmetric Valley Depth Sum examples
+# Symmetric valleys in three compositions of eight
 
-Examples from the paper's list for `n = 8`: `21212` has two symmetric valleys of depth
-`1`, `3131` one of depth `2`, and `323` one of depth `1`.
+**Symmetric valleys in three compositions of eight.** The word $2\,1\,2\,1\,2$ has two
+symmetric valleys and total symmetric valley depth $2$, the word $3\,1\,3\,1$ has total symmetric
+valley depth $2$, and the word $3\,2\,3$ has total symmetric valley depth $1$.
 
 ## Depends on
 
-- [Symmetric Valley Count](symmetric-valley-count.md)
-- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
+- [Number of symmetric valleys of a word](symmetric-valley-count.md)
+- [Total depth of the symmetric valleys of a word](symmetric-valley-depth-sum.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.slowANimReduced_zero
 ---
 
-# Slow ANim Reduced zero
+# The empty position is reduced
 
-The empty position is reduced.
+**The empty position is reduced.** For every finite set $A$ of natural numbers and every
+$n$, the position of Slow $A$-Nim on $n$ stacks in which every stack is empty is reduced.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
-- [Slow ANim Moves zero](slow-anim-moves-zero.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
+- [The empty position has no options](slow-anim-moves-zero.md)
 
 ## Sources
 

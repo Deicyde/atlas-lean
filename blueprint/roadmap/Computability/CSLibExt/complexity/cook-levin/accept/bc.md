@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Accept.AK.bc
 ---
 
-# Bc
+# Base counter of an accept clause
 
-Base counter of the single literal.
+**Base counter of an accept clause.** For a clause kind $c$ of the accept generator, the
+base counter of its single literal is the counter $\mathsf{TW}$ when $c$ is a code clause and
+the counter $\mathsf{CB}$ when $c$ is a cell clause.
 
 ## Depends on
 
-- [AK](ak.md)
-- [CK](ck.md)
+- [Clause kinds of the accept generator](ak.md)
+- [Counters of the accept generator](ck.md)
 
 ## Sources
 

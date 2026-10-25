@@ -7,9 +7,17 @@ lean: MetaMathlibExt.IsHStarPolynomial
 
 # Is HStar Polynomial
 
-A polynomial `h` is an Ehrhart `h*`-polynomial of `P` when multiplication
-of the Ehrhart power series by `(1-X)^(n+1)` gives the coerced polynomial.
-This relation is used instead of defining `h*` by the formula in Theorem 5.
+**The $h^*$-polynomial.** Let $P \subseteq \mathbb{R}^n$, with coordinates indexed by a finite
+set of size $n$, and let $L_P(t)$ be the number of lattice points of the dilate
+$tP = \{t y : y \in P\}$ (taken to be $0$ if there are infinitely many). A polynomial
+$h \in \mathbb{Z}[z]$ is an $h^*$-polynomial of $P$ when
+
+$$\Big(\sum_{t \ge 0} L_P(t)\, z^t\Big) (1 - z)^{n+1} = h(z)$$
+
+as formal power series with integer coefficients.
+
+The exponent uses the ambient dimension $n$, which is $\dim P$ when $P$ is full dimensional, and
+$h^*$ is characterised by this identity rather than by the explicit formula for weighted simplices.
 
 ## Depends on
 
@@ -17,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ehrhart](ehrhart.md)
+- [Ehrhart function](ehrhart.md)
 
 ## Sources
 

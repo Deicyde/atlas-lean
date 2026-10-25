@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.weightedSchreierCount_three_three
 ---
 
-# Weighted Schreier Count three three
+# Weighted Schreier count $a_{3,3}$
 
-`a_{3,3} = 4` (Table 1).
+**Weighted Schreier count $a_{3,3}$.** The weighted Schreier count $a_{3,3}$ equals $4$.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

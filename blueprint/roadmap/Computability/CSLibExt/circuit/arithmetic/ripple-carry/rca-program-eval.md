@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Circuits.rcaProgram_eval
 ---
 
-# Every gate's value
+# Gate values of the ripple-carry adder
 
-**Every gate's value**: gate `j` of the adder computes `rcaSpec x y c j`.
+**Gate values of the ripple-carry adder.** Let $x$ and $y$ be $n$-bit vectors and $c$ a bit.
+For every $g \le 5n$ and every $j < g$, evaluating the first $g$ gates of the $n$-bit adder with
+the Boolean interpretation of the arithmetic gates on the adder input for $x$, $y$, $c$ gives
+gate $j$ its specified value on $x$, $y$, $c$.
 
 ## Depends on
 
-- [Arith Interpretation](arith-interpretation.md)
-- [Arith Signature](arith-signature.md)
-- [Rca Input](rca-input.md)
-- [Rca Program](rca-program.md)
-- [Rca Spec](rca-spec.md)
+- [Boolean interpretation of the arithmetic gates](arith-interpretation.md)
+- [Arithmetic basis](arith-signature.md)
+- [Input of the ripple-carry adder](rca-input.md)
+- [Gate program of the ripple-carry adder](rca-program.md)
+- [Gate-value specification of the ripple-carry adder](rca-spec.md)
 
 ## Proof depends on
 
-- [Arith Gate](arith-gate.md)
-- [Carry Wire](carry-wire.md)
+- [Arithmetic gate symbols](arith-gate.md)
+- [Carry wire](carry-wire.md)
 - [Line](line.md)
-- [Bin Line](bin-line.md)
-- [Carry Wire value](carry-wire-value.md)
+- [Binary gate line](bin-line.md)
+- [Value of the carry wire](carry-wire-value.md)
 
 ## Sources
 

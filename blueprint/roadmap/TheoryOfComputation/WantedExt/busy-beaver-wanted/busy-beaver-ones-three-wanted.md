@@ -11,7 +11,7 @@ Source: Lin--Radó (1965), determination of `Σ(3) = 6`.
 
 ## Depends on
 
-- [Busy Beaver Ones](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
+- [Busy Beaver score function](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
 
 ## Sources
 

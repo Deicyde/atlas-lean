@@ -5,7 +5,7 @@ navigation: module
 
 # Four Color Theorem
 
-- [Has K5 Minor](has-k5-minor.md)
-- [Has K33 Minor](has-k33-minor.md)
-- [Is Planar](is-planar.md)
-- [Four Color Theorem](four-color-theorem.md)
+- [Graphs with a $K_5$ minor](has-k5-minor.md)
+- [Graphs with a $K_{3,3}$ minor](has-k33-minor.md)
+- [Planarity by forbidden minors](is-planar.md)
+- [Four color theorem](four-color-theorem.md)

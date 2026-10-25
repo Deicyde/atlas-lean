@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimH_succ_le
 ---
 
-# Maximum Nim H succ le
+# The Maximum Nim map $h_k$ exceeds its argument
 
-Lemma 6(ii): for `k ≥ 2`, every `x` satisfies `x < x+1 ≤ h_k(x)`.
-The two inequalities are represented as a conjunction; there is no deviation.
+**The Maximum Nim map $h_k$ exceeds its argument.** Let $k \ge 2$ be a natural number and let
+$h_k$ be the map $x \mapsto x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers. Every natural
+number $x$ satisfies $x < x + 1 \le h_k(x)$.
 
 ## Depends on
 
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.upperWythoffUnsumMarker_zero_one
 ---
 
-# Upper Wythoff Unsum Marker zero one
+# The first two markers
 
-The first marker is gap index `10` and the second is `12`.
+**The first two markers.** Call a gap index $i$ a marker if $i \ge 10$ and the $i$-th gap
+between consecutive unsums (counted from zero) equals $2$. The smallest marker is $10$ and
+the second smallest is $12$.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
+- [Markers in the gaps between unsums](upper-wythoff-unsum-marker.md)
 
 ## Proof depends on
 
-- [Is Upper Wythoff Unsum Marker](is-upper-wythoff-unsum-marker.md)
-- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
-- [Upper Wythoff Unsum Gap small](upper-wythoff-unsum-gap-small.md)
+- [Markers among the unsum gaps](is-upper-wythoff-unsum-marker.md)
+- [Gaps between unsums](upper-wythoff-unsum-gap.md)
+- [The first thirteen gaps between unsums](upper-wythoff-unsum-gap-small.md)
 
 ## Sources
 

@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.iIn
 ---
 
-# I In
+# Input clauses of the initial row (I3)
 
-(I3) The input codes `xs`, pinned cell by cell.
+**Input clauses of the initial row (I3).** For a layout $L$ with $g$ symbol codes, a stack
+number $k_0$, a list $x = (x_0, \dots, x_{\ell - 1})$ of codes below $g$ and natural numbers $T$
+and $H$, the input formula has, for each $j = 0, 1, \dots, \ell - 1$ in order, one dense clause
+over the variables of $L$ for $T$ time steps and depth $H$, whose only literal is the positive
+literal on the time-$0$ cell variable of stack $k_0$ at depth $j$ with code $x_j$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 - [CNF](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
-- [C Idx](../family/c-idx.md)
-- [Num Vars](../family/num-vars.md)
-- [Dense Clause](../family/dense-clause.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Dense clause from a list of literals](../family/dense-clause.md)
 - [Clause](../../dense-sat/clause.md)
 
 ## Sources

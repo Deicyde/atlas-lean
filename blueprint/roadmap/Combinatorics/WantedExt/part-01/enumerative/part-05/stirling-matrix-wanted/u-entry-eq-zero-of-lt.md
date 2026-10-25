@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_zero_of_lt
 ---
 
-# Lemma 1
+# The matrix $U_\alpha$ is upper triangular
 
-**Lemma 1**, triangularity: `U_α` is upper
-triangular: `U_{i,j} = 0` for `j < i`.
+**The matrix $U_\alpha$ is upper triangular.** Let $\alpha \colon \mathbb{N} \to \mathbb{Q}$
+and let $U_\alpha = (U_{i,j})_{i \ge 1, j \ge 0}$ be given by $U_{i,0} = 0$,
+$U_{1,j} = \alpha_{j-1}$ for $j \ge 1$, $U_{i,1} = 0$ for $i \ge 2$, and
+$U_{i,j} = U_{i-1,j-1} + (j-i+1) \, U_{i-1,j}$ for $i, j \ge 2$. Then $U_{i,j} = 0$ for all
+natural numbers $j < i$.
 
 ## Depends on
 
-- [U Entry](u-entry.md)
+- [Entries of the matrix $U_\alpha$](u-entry.md)
 
 ## Sources
 

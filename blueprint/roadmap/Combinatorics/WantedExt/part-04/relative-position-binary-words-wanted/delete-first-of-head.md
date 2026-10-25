@@ -6,18 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.deleteFirst_of_head
 ---
 
-# Delete First of head
+# Deleting a leading letter
 
-If `w` starts with `α`, deleting the first `α` shifts `w` by one.
+**Deleting a leading letter.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word
+over the letters $a$ and $b$, let $\alpha$ be a letter, and let $D_\alpha$ be the operator that
+deletes the first occurrence of $\alpha$ from a word (and deletes the first letter of a word in
+which $\alpha$ does not occur). If $\ell_0 = \alpha$, then $D_\alpha$ shifts $w$ by one:
+$D_\alpha(w) = \ell_1 \ell_2 \ell_3 \cdots$, that is, the letter of $D_\alpha(w)$ at each
+position $i$ is $\ell_{i+1}$.
 
 ## Depends on
 
-- [Delete First](delete-first.md)
+- [Deleting the first occurrence of a letter](delete-first.md)
 
 ## Proof depends on
 
-- [Letter Position](letter-position.md)
-- [Letter Position one of head](letter-position-one-of-head.md)
+- [Position function of a letter](letter-position.md)
+- [Position of the first occurrence of the initial letter](letter-position-one-of-head.md)
 
 ## Sources
 

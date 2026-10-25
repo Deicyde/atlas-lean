@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isTribonacciRepr_nil
 ---
 
-# Is Tribonacci Repr nil
+# The empty word represents zero
 
-The empty digit list represents `0`.
+**The empty word represents zero.** The empty digit list is a Tribonacci representation
+of $0$.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 
 ## Proof depends on
 

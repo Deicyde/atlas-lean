@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount_balanced_unate_eq_monotone
 ---
 
-# Bool Fun Class Count balanced unate eq monotone
+# Balanced unate and balanced monotone functions have equally many NN- and NPN-classes
 
-Proposition 14(b): the numbers of NN-inequivalent (resp. NPN-inequivalent)
-`n`-variable balanced unate and balanced monotone functions are equal.
+**Balanced unate and balanced monotone functions have equally many NN- and NPN-classes.**
+For every $n$, call an $n$-variable Boolean function $f$ balanced when $2\,\mathrm{wt}(f) = 2^n$,
+where $\mathrm{wt}(f)$ is the weight of $f$. The number of NN-inequivalent balanced unate
+$n$-variable Boolean functions equals the number of NN-inequivalent balanced monotone ones, and
+the number of NPN-inequivalent balanced unate $n$-variable Boolean functions equals the number of
+NPN-inequivalent balanced monotone ones. Here monotone means nondecreasing for the coordinatewise
+order with $0 < 1$.
 
 ## Depends on
 
-- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
-- [Is Bool Fun NPNEquiv](is-bool-fun-npnequiv.md)
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
-- [Bool Fun Class Count](bool-fun-class-count.md)
-- [Bool Fun Weight](bool-fun-weight.md)
+- [NN-equivalence of Boolean functions](is-bool-fun-nnequiv.md)
+- [NPN-equivalence of Boolean functions](is-bool-fun-npnequiv.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

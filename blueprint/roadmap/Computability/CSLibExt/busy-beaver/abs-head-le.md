@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.BusyBeaver.abs_head_le
 ---
 
-# Abs head le
+# Head displacement bound
 
-After `t` steps the head is within distance `t` of the origin.
+**Head displacement bound.** For every $n$-state Busy Beaver machine $M$ and every
+$t \in \mathbb{N}$, if $h \in \mathbb{Z}$ is the head position after $M$ has run for $t$ steps
+from the initial configuration on the blank tape, then $|h| \le t$.
 
 ## Depends on
 
-- [Config](config.md)
-- [Machine](machine.md)
-- [Run](run.md)
+- [Busy Beaver machine configuration](config.md)
+- [Busy Beaver machine](machine.md)
+- [Configuration after $t$ steps](run.md)
 
 ## Proof depends on
 
-- [Move](move.md)
-- [Shift](shift.md)
-- [Initial](initial.md)
-- [Step](step.md)
+- [Head movement](move.md)
+- [Head displacement](shift.md)
+- [Initial configuration](initial.md)
+- [One step of a Busy Beaver machine](step.md)
 
 ## Sources
 

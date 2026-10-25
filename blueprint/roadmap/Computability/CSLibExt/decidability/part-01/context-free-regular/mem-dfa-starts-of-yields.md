@@ -72,8 +72,8 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
-- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
+- [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Dfa Found](dfa-found.md)
@@ -83,8 +83,8 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 
 ## Proof depends on
 
-- [Step](../../../automata/da/encoded-dfa/step.md)
-- [Step mem states](../../../automata/da/encoded-dfa/step-mem-states.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
+- [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
 - [Iterate closed](../primrec-list/iterate-closed.md)
 - [Mem B](../primrec-list/mem-b.md)
 - [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)

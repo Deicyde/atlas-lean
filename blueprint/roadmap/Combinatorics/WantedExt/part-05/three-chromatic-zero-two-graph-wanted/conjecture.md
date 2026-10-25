@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ThreeChromaticZeroTwoGraphWanted.conjecture
 ---
 
-# Conjecture
+# The three-chromatic $(0,2)$-graph conjecture
 
-There exists a finite `(0,2)`-graph with chromatic number exactly three.
+**The three-chromatic $(0,2)$-graph conjecture.** It asserts that there are a natural number
+$n$ and a simple graph $G$ on the vertex set $\{0, \dots, n-1\}$ in which every two distinct
+vertices have either zero or two common neighbors, such that the chromatic number of $G$ is $3$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Zero Two](is-zero-two.md)
+- [$(0,2)$-graphs](is-zero-two.md)
 
 ## Sources
 

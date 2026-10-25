@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_monotonicity_runs
 ---
 
-# Lemma 14
+# Monotonicity of the relative position function and runs of letters
 
-**Lemma 14.** For `w ∈ a𝒲`: (a) if `r` is strictly increasing then `bb` is not a subword;
-(b) if `bb` is not a subword then `r` is non-decreasing; (c) if `b^k` is a subword, then
-`Δr(n+j) ≤ 0` for `1 ≤ j ≤ k-1` and some `n`; (d) if `a^k` is a subword, then
-`Δr(n+j) ≥ 0` for `1 ≤ j ≤ k-1` and some `n`.
+**Monotonicity of the relative position function and runs of letters.** Let $w$ be an
+infinite word over $\{a, b\}$ that starts with $a$ and in which both letters occur infinitely
+often, let $r$ be its relative position function, and write $\Delta r(n) = r(n+1) - r(n)$. A
+factor of $w$ is a block of consecutive letters. (a) If $r(n) < r(n+1)$ for all $n \ge 1$, then
+$bb$ is not a factor of $w$. (b) If $bb$ is not a factor of $w$, then $r(n) \le r(n+1)$ for all
+$n \ge 1$. (c) For every $k \ge 0$, if $b^k$ is a factor of $w$, then there is $n \ge 0$ with
+$\Delta r(n+j) \le 0$ for all $1 \le j \le k - 1$. (d) For every $k \ge 0$, if $a^k$ is a factor
+of $w$, then there is $n \ge 0$ with $\Delta r(n+j) \ge 0$ for all $1 \le j \le k - 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

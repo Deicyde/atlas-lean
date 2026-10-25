@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.slowANimReduced_iff_nirb
 ---
 
-# Slow ANim Reduced iff nirb
+# NIRB criterion for reduced positions
 
-Theorem 4 (NIRB condition): for `a = min A`, a position `p` of `SN(n, A)` is
-reduced iff `a · max(p) ≤ Σ(p)`. The paper assumes `n ≥ 3`; the statement is kept for all `n`
-(exhaustive checks for `n = 1, 2` agree).
+**NIRB criterion for reduced positions.** Let $A \subseteq \{1, \dots, n\}$ be nonempty with
+least element $a$, and let $p$ be a position of Slow $A$-Nim on $n$ stacks. Then $p$ is reduced
+if and only if $a \cdot M \le \sum_i p_i$, where $M$ is the largest stack height of $p$ (taken
+to be $0$ when $n = 0$).
+
+The source assumes $n \ge 3$; the statement here is made for every $n$.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
 
 ## Sources
 

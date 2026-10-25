@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.wesleyWordT
 ---
 
-# Wesley Word T
+# Wesley's word $T$
 
-The word `T = ν(F∞) = 1001100100…`, zero-based.
+**Wesley's word $T$.** Let $\nu$ be the morphism of binary words with $0 \mapsto 1$ and
+$1 \mapsto 00$, and let $f_0 = 0$, $f_1 = 01$, $f_2 = 010$, $\dots$ be the finite Fibonacci words.
+The word $T$ is the infinite binary word, indexed from $0$, whose letter at index $n$ is the
+letter at index $n$ of $\nu(f_{n+2})$.
+
+Since each $f_k$ is a prefix of $f_{k+1}$, $T = \nu(F_\infty) = 1001100100\dots$, where
+$F_\infty = 010010100\dots$ is the infinite Fibonacci word.
 
 ## Depends on
 
@@ -16,7 +22,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Finite Fibonacci words](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
-- [Fibonacci Nu Morphism](fibonacci-nu-morphism.md)
+- [The morphism $\nu$](fibonacci-nu-morphism.md)
 
 ## Sources
 

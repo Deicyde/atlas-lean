@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_even
 ---
 
-# Corollary 13
+# Generating polynomial of trinomial coefficients with even index
 
-**Corollary 13.** `∑_{k≥0} binom(n, 2k)_2 z^k = ((1 + √z + z)^n + (1 - √z + z)^n)/2`,
-stated for complex `z` and any `s` with `s^2 = z` in place of the indeterminate `z` and `√z`.
+**Generating polynomial of trinomial coefficients with even index.** Write $\binom{n}{k}_2$
+for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For every
+$n \in \mathbb{N}$ and all complex numbers $z$ and $s$ with $s^2 = z$
+
+$$\sum_{k=0}^{n} \binom{n}{2k}_2 z^k = \frac{(1 + s + z)^n + (1 - s + z)^n}{2}.$$
+
+The paper states this for an indeterminate $z$, with $\sqrt{z}$ in place of $s$.
 
 ## Depends on
 

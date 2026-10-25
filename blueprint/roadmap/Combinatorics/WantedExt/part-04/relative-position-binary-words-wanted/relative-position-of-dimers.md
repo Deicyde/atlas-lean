@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_of_dimers
 ---
 
-# Proposition 69
+# Relative positions of a word made of $ab$ and $ba$ blocks
 
-**Proposition 69.** If every dimer `X_n = ℓ_{2n} ℓ_{2n+1}` of `w` is `ab` or `ba`, then
-`r(n) = 1` if `X_{n-1} = ab` and `r(n) = -1` if `X_{n-1} = ba`, for `n ≥ 1`. (The dimer condition
-forces both letters to occur infinitely often, so no separate `w ∈ 𝒲` hypothesis is needed.)
+**Relative positions of a word made of $ab$ and $ba$ blocks.** Let
+$w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ such that every block
+$\ell_{2i} \ell_{2i+1}$ ($i \ge 0$) is $ab$ or $ba$, and let $r$ be its relative position
+function. Then for every $n \ge 1$, $r(n) = 1$ if $\ell_{2n-2} = a$ and $r(n) = -1$ if
+$\ell_{2n-2} = b$.
+
+The block condition forces both letters to occur infinitely often, so no separate hypothesis on
+$w$ is needed.
 
 ## Depends on
 
-- [Relative Position](relative-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosFaberLovaszConjectureWanted.ErdosFaberLovaszConjecture.Hypergraph.chromaticIndex
 ---
 
-# Chromatic Index
+# Chromatic index of a hypergraph
 
-We define the chromatic index of a hypergraph `𝓗` to be the smallest natural number `n` such
-that there exists a `(Fin n)`-coloring of `𝓗` (a coloring using `n` colors).
+**Chromatic index of a hypergraph.** The chromatic index of a hypergraph $\mathcal{H}$ is the
+least natural number $n$ such that $\mathcal{H}$ has a coloring with colors in
+$\{0, 1, \dots, n-1\}$, and $0$ if there is no such $n$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ that there exists a `(Fin n)`-coloring of `𝓗` (a coloring using `n` colors).
 
 ## Proof depends on
 
-- [Coloring](coloring.md)
+- [Edge coloring of a hypergraph](coloring.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingBlock_two
 ---
 
-# Kimberling Block two
+# The second Kimberling block
 
-`K₂ = 11011011`.
+**The second Kimberling block.** For Kimberling's morphism $h$ on $\{0, 1\}$, given by
+$h(1) = 110$ and $h(0) = 11$, the block $K_2 = h^2(1)$ is the word $11011011$.
 
 ## Depends on
 
-- [Kimberling Block](kimberling-block.md)
+- [Kimberling's blocks](kimberling-block.md)
 
 ## Sources
 

@@ -5,10 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ascDesGF
 ---
 
-# Asc Des GF
+# Ascent–descent generating function of a pair of patterns
 
-The joint generating function `∑_{n ≥ 0} ∑_{σ ∈ S_n(τ, ρ)} xⁿ p^{asc σ} q^{des σ}` in
-`(MvPolynomial (Fin 2) ℚ)⟦x⟧`, with `p = X 0`, `q = X 1` (the empty permutation contributes `1`).
+**Ascent–descent generating function of a pair of patterns.** For permutations $\tau$ and
+$\rho$ of $\{0, 1, 2\}$, let $S_n(\tau, \rho)$ be the set of permutations of
+$\{0, 1, \dots, n-1\}$ that contain neither $\tau$ nor $\rho$ as a classical pattern. The
+ascent–descent generating function of $(\tau, \rho)$ is the formal power series
+
+$$\sum_{n \ge 0} \sum_{\sigma \in S_n(\tau, \rho)}
+x^n p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)}$$
+
+in $x$ with coefficients in the polynomial ring $\mathbb{Q}[p, q]$, where $\mathrm{asc}(\sigma)$
+and $\mathrm{des}(\sigma)$ are the numbers of ascents and descents of $\sigma$. The empty
+permutation ($n = 0$) contributes the constant term $1$.
 
 ## Depends on
 
@@ -17,8 +26,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Classical pattern containment in a permutation](../../part-04/odd-fibonacci-wanted/has-pattern.md)
-- [Perm Ascents](perm-ascents.md)
-- [Perm Descents](perm-descents.md)
+- [Ascent number of a permutation](perm-ascents.md)
+- [Descent number of a permutation](perm-descents.md)
 
 ## Sources
 

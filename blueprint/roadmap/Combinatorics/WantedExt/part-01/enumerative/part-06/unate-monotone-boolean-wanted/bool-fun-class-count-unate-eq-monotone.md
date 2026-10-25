@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.boolFunClassCount_unate_eq_monotone
 ---
 
-# Bool Fun Class Count unate eq monotone
+# Unate and monotone functions have equally many NN- and NPN-classes
 
-Proposition 14(a): the numbers of NN-inequivalent (resp. NPN-inequivalent)
-`n`-variable unate and monotone functions are equal.
+**Unate and monotone functions have equally many NN- and NPN-classes.** For every $n$, the
+number of NN-inequivalent unate $n$-variable Boolean functions equals the number of
+NN-inequivalent monotone ones, and the number of NPN-inequivalent unate $n$-variable Boolean
+functions equals the number of NPN-inequivalent monotone ones. Here monotone means nondecreasing
+for the coordinatewise order with $0 < 1$.
 
 ## Depends on
 
-- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
-- [Is Bool Fun NPNEquiv](is-bool-fun-npnequiv.md)
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
-- [Bool Fun Class Count](bool-fun-class-count.md)
+- [NN-equivalence of Boolean functions](is-bool-fun-nnequiv.md)
+- [NPN-equivalence of Boolean functions](is-bool-fun-npnequiv.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
 
 ## Sources
 

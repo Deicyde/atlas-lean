@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.larssonSetTwo_examples
 ---
 
-# Larsson Set Two examples
+# Sample positions in Larsson's set $R_2$
 
-`(0, 0)`, `(0, 1)` and `(2, 2)` lie in `R₂`.
+**Sample positions in Larsson's set $R_2$.** The positions $(0, 0)$, $(0, 1)$ and
+$(2, 2)$ belong to Larsson's set $R_2$.
 
 ## Depends on
 
-- [Larsson Set Two](larsson-set-two.md)
+- [Larsson's set $R_2$](larsson-set-two.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mem_sumsetTrivialElements_iff
 ---
 
-# Mem sumset Trivial Elements iff
+# Characterization of the trivial elements
 
-Membership in the trivial elements: `x` is trivial exactly when `k > 0` and
-`x = h • a 0`, or `x = (h - i) • a j + i • a (j + 1)` for some `j + 1 < k` and `i ≤ h`.
+**Characterization of the trivial elements.** Let $G$ be an additive commutative monoid,
+$a_0, a_1, \ldots$ a sequence in $G$, and $h, k$ natural numbers. An element $x \in G$ is a
+trivial element of the $h$-fold sumset of $a_0, \ldots, a_{k-1}$ if and only if either $k > 0$
+and $x = h a_0$, or $x = (h - i)a_j + i a_{j+1}$ for some natural numbers $j$ and $i$ with
+$j + 1 < k$ and $i \le h$.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isFibonacciAutomatic_komakG
 ---
 
-# Is Fibonacci Automatic komak G
+# The Komak sequence $g$ is Fibonacci-automatic
 
-Proposition 6 (first part): the sequence `g` is Fibonacci-automatic. The explicit DFA of
-Figure `fig:automG` is given only as an image and is not stated.
+**The Komak sequence $g$ is Fibonacci-automatic.** The sequence $g$ of Komak et al. is
+Fibonacci-automatic.
+
+Only the existence of an automaton is asserted; the explicit automaton that the source draws
+for $g$ is not part of the statement.
 
 ## Depends on
 
-- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
-- [Komak G](komak-g.md)
+- [Fibonacci-automatic sequences](is-fibonacci-automatic.md)
+- [The Komak sequence $g$](komak-g.md)
 
 ## Sources
 

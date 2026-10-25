@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_ge_of_fibonacci_growth
 ---
 
-# Card restricted Signed Sumset ge of fibonacci growth
+# Restricted signed sumsets of sets with Fibonacci-type growth
 
-For `h ≥ 3`, `a` is a strictly increasing positive sequence of `h+1` terms. The
-quantification over `i : Fin (h-2)` represents paper indices `4,…,h+1`, and the displayed
-inequality is `a_i ≥ a_{i-1}+a_{i-2}` after converting to zero-based indices. The
-conclusion is the stated `(h+1)^2+1` lower bound.
+**Restricted signed sumsets of sets with Fibonacci-type growth.** Let $h \ge 3$ and let
+$a_1 < a_2 < \dots < a_{h+1}$ be positive integers such that $a_i \ge a_{i-1} + a_{i-2}$ for
+every $i$ with $4 \le i \le h + 1$. Write $h^{\wedge}_{\pm} A$ for the restricted signed
+$h$-fold sumset of $A = \{a_1, \dots, a_{h+1}\}$. Then $|h^{\wedge}_{\pm} A| \ge (h+1)^2 + 1$.
 
 ## Depends on
 
-- [Ordered Finset](ordered-finset.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

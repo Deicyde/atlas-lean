@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.exists_cube_bound_monochromatic_card_gt_gapSize
 ---
 
-# Theorem 2
+# Monochromatic sets that are large relative to their gap size
 
-**Theorem 2.** For `t ≥ 1`, `r`, and a nondecreasing `f : ℕ → ℕ`, there is `B` such that
-every `r`-coloring of `[1, B]^t` has a finite monochromatic set `S ⊆ [1, B]^t` with
-`|S| > f(gs(S))`.
+**Monochromatic sets that are large relative to their gap size.** Let $r, t \in \mathbb{N}$ with
+$t \ge 1$, and let $f : \mathbb{N} \to \mathbb{N}$ be nondecreasing. There is $B \in \mathbb{N}$
+such that for every coloring of $\mathbb{N}^t$ with $r$ colors there is a finite monochromatic set
+$S \subseteq [1, B]^t$ with $|S| > f(\operatorname{gs}(S))$, where $\operatorname{gs}(S)$ is the gap
+size of $S$ and $[1, B]^t$ is the set of points $x$ with $1 \le x_i \le B$ for every coordinate $i$.
 
-The paper's "(a smallest)" is omitted: it follows from existence. Colorings are of all of
-`ℕ^t`; only their restriction to `[1, B]^t` matters. `t ≥ 1` is the paper's hypothesis
-(`t = 0` fails when `f 1 ≥ 1`: the only point gives `|S| = 1 = gs(S)`). The paper's `r ≥ 1` is
-dropped: for `r = 0` there is no coloring and the statement holds vacuously.
+The paper's "(a smallest)" is omitted: it follows from existence. Only the restriction of the
+coloring to $[1, B]^t$ matters. The hypothesis $t \ge 1$ is the paper's; for $t = 0$ and $r \ge 1$
+the statement fails when $f(1) \ge 1$, since the only point gives $|S| = 1 = \operatorname{gs}(S)$.
+The paper's hypothesis $r \ge 1$ is dropped: for $r = 0$ there is no coloring and the statement
+holds vacuously.
 
 ## Depends on
 
-- [Cube Gap Size](cube-gap-size.md)
-- [Lattice Cube](lattice-cube.md)
+- [Gap size](cube-gap-size.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

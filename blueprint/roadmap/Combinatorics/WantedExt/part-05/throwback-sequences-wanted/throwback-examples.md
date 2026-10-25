@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.throwback_examples
 ---
 
-# Throwback examples
+# Throwback of the integers from 3 on
 
-Characteristic values: `τ(3, 4, 5, …) = (4, 5, 6, 3, 7, …)`, and the throwback sequence of
-`(3, 4, 5, …)` begins `3, 4, 5, 6, 3, 7` (Table 1, OEIS A357081).
+**Throwback of the integers from 3 on.** Let $X = (3, 4, 5, \dots)$, that is, $x_i = i + 3$.
+The first five terms of its throwback $\tau(X)$ are $4, 5, 6, 3, 7$, and the first six terms of
+its throwback sequence $T(X)$ are $3, 4, 5, 6, 3, 7$ (OEIS A357081).
 
 ## Depends on
 
-- [Throwback](throwback.md)
-- [Throwback Sequence](throwback-sequence.md)
+- [Throwback operation](throwback.md)
+- [Throwback sequence](throwback-sequence.md)
 
 ## Sources
 

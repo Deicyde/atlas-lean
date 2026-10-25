@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsSubstitution.isNonErasing
 ---
 
-# Is Non Erasing
+# Substitutions are non-erasing
 
-A substitution is non-erasing.
+**Substitutions are non-erasing.** Every substitution $\eta$ in the sense of Labbé and
+Lepšová is non-erasing: $\eta(a)$ is a nonempty word for every letter $a$.
 
 ## Depends on
 
 - [Non-erasing letter maps](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
-- [Is Substitution](is-substitution.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
 
 ## Proof depends on
 

@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.groupDiffBasisNumber_zmod_le
 ---
 
-# Group Diff Basis Number zmod le
+# Difference bases of the integers modulo a prime
 
-For a prime `p`, `η_1(𝔽_p) ≤ 2⌈√p⌉` (reduce the Rédei–Rényi set modulo `p`).
+**Difference bases of the integers modulo a prime.** For every prime $p$, the least size
+$\eta_1(\mathbb{Z}/p\mathbb{Z})$ of a set $A \subseteq \mathbb{Z}/p\mathbb{Z}$ such that every
+residue modulo $p$ is a difference $a - a'$ of two elements of $A$ satisfies
+$\eta_1(\mathbb{Z}/p\mathbb{Z}) \le 2 \lceil \sqrt{p} \rceil$.
+
+The bound comes from reducing the Rédei–Rényi set modulo $p$.
 
 ## Depends on
 
-- [Group Diff Basis Number](group-diff-basis-number.md)
+- [Difference basis number of an abelian group](group-diff-basis-number.md)
 
 ## Sources
 

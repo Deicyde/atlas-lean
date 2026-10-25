@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsAdmissibleSequence
 ---
 
-# Is Admissible Sequence
+# Admissible sequence
 
-A finite sequence `(mᵢ, aᵢ)_{i = 0, …, k}` in `A* × A`, encoded as `s : ℕ → List A × A`
-read only at indices `0, …, k`, is admissible with respect to `η` when `m_{i-1} a_{i-1}` is a
-prefix of `η(aᵢ)` for `1 ≤ i ≤ k` (here reindexed as `i < k`).
+**Admissible sequence.** Let $\eta$ send each letter of an alphabet $A$ to a finite word
+over $A$, and let $k \ge 0$. A finite sequence $(m_i, a_i)_{0 \le i \le k}$ of pairs, each made
+of a finite word $m_i$ over $A$ and a letter $a_i \in A$, is admissible with respect to $\eta$
+when the word $m_i a_i$ is a prefix of $\eta(a_{i+1})$ for every $i < k$.
 
 ## Depends on
 

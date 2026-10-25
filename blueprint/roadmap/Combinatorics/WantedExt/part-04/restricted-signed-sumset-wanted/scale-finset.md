@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.scaleFinset
 ---
 
-# Scale Finset
+# Dilation of a finite set of integers
 
-`scaleFinset d B` is the dilation `d * B`, with membership values `d*b` for `b ∈ B`.
+**Dilation of a finite set of integers.** For an integer $d$ and a finite set $B$ of
+integers, the dilation $d \cdot B$ is the set $\{db : b \in B\}$.
 
 ## Depends on
 

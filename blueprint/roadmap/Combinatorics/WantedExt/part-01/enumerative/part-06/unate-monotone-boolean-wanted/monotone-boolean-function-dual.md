@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.monotone_booleanFunctionDual
 ---
 
-# Monotone boolean Function Dual
+# The dual of a monotone Boolean function is monotone
 
-Proposition 5 (OEIS A003183): if `f` is monotone then so is
-`\overline{f^r}`, i.e. `x ↦ ¬ f(x̄)`, the existing `booleanFunctionDual`.
+**The dual of a monotone Boolean function is monotone.** If a Boolean function $f$ on $n$
+variables is monotone, then so is its dual $f^\star$, defined by $f^\star(x) = \neg f(\bar{x})$,
+where $\bar{x}$ is the coordinatewise complement of $x \in \{0,1\}^n$.
+
+In the notation of the source, $f^\star$ is $\overline{f^r}$, where $f^r(x) = f(\bar{x})$ is
+the function whose truth table is that of $f$ reversed.
 
 ## Depends on
 

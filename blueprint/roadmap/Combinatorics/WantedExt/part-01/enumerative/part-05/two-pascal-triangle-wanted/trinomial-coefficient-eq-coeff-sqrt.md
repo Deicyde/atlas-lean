@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.trinomialCoefficient_eq_coeff_sqrt
 ---
 
-# Theorem 38
+# Trinomial coefficients along lines from a square-root series
 
-**Theorem 38.** For `b ≥ 2a`, `binom(n + ak, n + bk)_2 = [t^n] S⁻¹ ((1 - t - S)^{b-a} / (2^{b-a} t^b))^k`,
-where `S = √(1 - 2t - 3t^2)` is the square root with constant term `1`; the factor `t^{-bk}`
-is moved into the coefficient index and `2^{(b-a)k}` to the left side. Stated for natural
-`a, b, k` (the record has integers `a, b` and leaves `k` free).
+**Trinomial coefficients along lines from a square-root series.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and
+$[t^m]\,F$ for the coefficient of $t^m$ in a formal power series $F$ over $\mathbb{Q}$. Let $S$
+be a power series over $\mathbb{Q}$ with $S^2 = 1 - 2t - 3t^2$ and $S(0) = 1$. For natural
+numbers $n, a, b, k$ with $2a \le b$,
+$2^{(b-a)k} \binom{n+ak}{n+bk}_2 = [t^{n+bk}]\, S^{-1} (1 - t - S)^{(b-a)k}$.
+
+Equivalently $\binom{n+ak}{n+bk}_2 = [t^n]\, S^{-1}
+\left((1 - t - S)^{b-a} / (2^{b-a} t^b)\right)^k$, the paper's form, which allows integers
+$a$ and $b$.
 
 ## Depends on
 

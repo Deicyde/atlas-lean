@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.KnuthOldSumWanted.card_evenACount_words
 ---
 
-# Lemma 1
+# Counting words with an even number of $a$'s
 
-**Lemma 1**: the number of words of length `n` over the
-alphabet `{a, b, c, d}` (here `Fin 4`, with `0` playing the role
-of `a`) containing an even number of `a`'s is `(4^n + 2^n)/2`.
+**Counting words with an even number of $a$'s.** For every natural number $n$, the number of
+words of length $n$ over the four-letter alphabet $\{a, b, c, d\}$ in which the letter $a$ occurs
+an even number of times is $(4^n + 2^n)/2$.
 
 ## Depends on
 

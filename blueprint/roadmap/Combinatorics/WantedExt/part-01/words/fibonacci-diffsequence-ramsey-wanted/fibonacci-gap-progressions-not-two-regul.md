@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_gap_progressions_not_two_regular
 ---
 
-# Fibonacci gap progressions not two regular
+# Arithmetic progressions with Fibonacci gaps are not $2$-regular
 
-The family of arithmetic progressions with common difference in `F` is not `2`-regular:
-some `2`-coloring of `ℤ⁺` has no monochromatic `5`-term progression with difference in `F`;
-hence `dor(AP_F) = 1`: `F` is `1`-large and not `r`-large for `r ≥ 2` (`IsRLarge`, the
-paper's `r`-regularity of `AP_F`).
+**Arithmetic progressions with Fibonacci gaps are not $2$-regular.** There is a coloring of the
+positive integers with two colors that admits no monochromatic $5$-term arithmetic progression
+with gap in the positive Fibonacci set $\{1, 2, 3, 5, 8, \dots\}$, that is, no positive integers
+$x_0, \dots, x_4$ of one color with $x_i = a + i d$ for all $i < 5$, for a positive integer $a$ and
+a positive Fibonacci number $d$. Moreover, the positive Fibonacci set is $1$-large, and it is not
+$r$-large for any natural number $r \ge 2$.
 
 ## Depends on
 

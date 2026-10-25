@@ -5,7 +5,7 @@ navigation: module
 
 # Davies Wheel Free Chromatic
 
-- [Has Induced Wheel](has-induced-wheel.md)
-- [Wheel Free](wheel-free.md)
-- [Large Chromatic Triangle Free Wheel Free](large-chromatic-triangle-free-wheel-free.md)
-- [Large Chromatic Triangle Free Wheel Free holds](large-chromatic-triangle-free-wheel-free-2.md)
+- [Induced wheels](has-induced-wheel.md)
+- [Wheel-free graphs](wheel-free.md)
+- [Triangle-free wheel-free graphs of large chromatic number (proposition)](large-chromatic-triangle-free-wheel-free.md)
+- [Davies's theorem on triangle-free wheel-free graphs](large-chromatic-triangle-free-wheel-free-2.md)

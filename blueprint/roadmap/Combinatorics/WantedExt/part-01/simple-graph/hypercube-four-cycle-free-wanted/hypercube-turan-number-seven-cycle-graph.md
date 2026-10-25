@@ -5,10 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.HypercubeFourCycleFreeWanted.hypercubeTuranNumber_seven_cycleGraph_four_le
 ---
 
-# Hypercube Turan Number seven cycle Graph four le
+# Upper bound for four-cycle-free subgraphs of the seven-dimensional hypercube
 
-`ex(Q₇, C₄) ≤ 308`: averaging over the fourteen facets of `Q₇`, each edge
-lies in six of them, so `ex(Q₇, C₄) ≤ 14 · ex(Q₆, C₄) / 6 = 308`.
+**Upper bound for four-cycle-free subgraphs of the seven-dimensional hypercube.** Let $Q_7$
+be the $7$-dimensional hypercube and $C_4$ the cycle on four vertices. The largest number
+$\mathrm{ex}(Q_7, C_4)$ of edges of a subgraph of $Q_7$ that contains no copy of $C_4$ is at
+most $308$.
+
+The bound comes from averaging over the fourteen facets of $Q_7$: each is a copy of $Q_6$ and
+each edge lies in six of them, so $\mathrm{ex}(Q_7, C_4) \le 14 \cdot \mathrm{ex}(Q_6, C_4) / 6 =
+14 \cdot 132 / 6 = 308$.
 
 ## Depends on
 

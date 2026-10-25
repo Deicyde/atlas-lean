@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.groupDiffBasisNumber_one_zmod_three
 ---
 
-# Group Diff Basis Number one zmod three
+# Difference basis number of $\mathbb{Z}/3\mathbb{Z}$
 
-`η_1(ℤ/3ℤ) = 2`: `{0, 1}` has differences `0, 1, 2`, and one element is not enough.
+**Difference basis number of $\mathbb{Z}/3\mathbb{Z}$.** The least size
+$\eta_1(\mathbb{Z}/3\mathbb{Z})$ of a set $A \subseteq \mathbb{Z}/3\mathbb{Z}$ such that every
+element of $\mathbb{Z}/3\mathbb{Z}$ is a difference $a - a'$ of two elements of $A$ equals $2$:
+the set $\{0, 1\}$ has differences $0, 1, 2$, and one element is not enough.
 
 ## Depends on
 
-- [Group Diff Basis Number](group-diff-basis-number.md)
+- [Difference basis number of an abelian group](group-diff-basis-number.md)
 
 ## Proof depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

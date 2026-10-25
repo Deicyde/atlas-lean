@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.seedAutomaton_zero_cons
 ---
 
-# Seed Automaton zero cons
+# Seed automaton after reading the digit 0
 
-`𝒜_{η,s}(0 ⊙ w) = 𝒜_{η,a}(w)`.
+**Seed automaton after reading the digit 0.** Let $\eta$ be a letter map, let $a$ and $b$ be
+letters, and let $\mathcal{A}_{\eta,s}$ be the seed automaton for the seed $s = b|a$. For every
+digit word $w$, the value of $\mathcal{A}_{\eta,s}$ on the word $0w$ (the digit $0$ followed by
+$w$) equals the value $\mathcal{A}_{\eta,a}(w)$ of the substitution automaton started at $a$ on
+$w$: either both are undefined, or both are the same state.
 
 ## Depends on
 
-- [Seed Automaton](seed-automaton.md)
+- [Seed automaton](seed-automaton.md)
 - [Substitution Automaton](substitution-automaton.md)
 
 ## Sources

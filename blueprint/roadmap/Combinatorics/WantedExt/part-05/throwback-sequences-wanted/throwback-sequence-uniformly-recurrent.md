@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.throwbackSequence_uniformly_recurrent
 ---
 
-# Throwback Sequence uniformly recurrent
+# Throwback sequences of increasing sequences are uniformly recurrent
 
-For an increasing sequence `X` of positive integers, the throwback sequence `T(X)` is
-uniformly recurrent: every block of consecutive terms recurs with bounded gaps.
+**Throwback sequences of increasing sequences are uniformly recurrent.** Let
+$X = (x_0, x_1, \dots)$ be a strictly increasing sequence of positive integers with throwback
+sequence $T(X) = (t_0, t_1, \dots)$. Then every block of consecutive terms of $T(X)$ recurs with
+bounded gaps: for all natural numbers $i$ and $L$ there is a natural number $G$ such that for
+every natural number $m$ there is an index $j$ with $m \le j \le m + G$ and $t_{j+s} = t_{i+s}$
+for all $s < L$.
 
 ## Depends on
 
-- [Throwback Sequence](throwback-sequence.md)
+- [Throwback sequence](throwback-sequence.md)
 
 ## Sources
 

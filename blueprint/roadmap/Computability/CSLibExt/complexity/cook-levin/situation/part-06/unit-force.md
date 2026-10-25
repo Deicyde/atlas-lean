@@ -12,7 +12,7 @@ A satisfied dense unit clause forces its literal.
 
 ## Depends on
 
-- [Dense Clause](../../family/dense-clause.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Tr](../part-04/tr.md)
 - [CNF](../../../dense-sat/cnf.md)
 - [Clause](../../../dense-sat/clause.md)

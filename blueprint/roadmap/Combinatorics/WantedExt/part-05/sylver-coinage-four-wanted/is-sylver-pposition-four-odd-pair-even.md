@@ -5,20 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isSylverPPosition_four_odd_pair_even
 ---
 
-# Is Sylver PPosition four odd pair even
+# Four-element P-positions containing 4
 
-Proposition 8, parts 1 to 4: for `x > 1`,
-1. if `x ≡ 1 (mod 4)` then `{4, x, x + 2, 6}` is a P-position;
-2. if `x ≡ 7 (mod 8)` then `{4, x, x + 2, 10}` is a P-position;
-3. if `x ≡ 5 (mod 8)` then `{4, x, x + 6, 10}` is a P-position;
-4. if `x ≡ 1 (mod 8)` then `{4, x, x + 6, 14}` is a P-position.
-The paper's hypothesis that `xy` is odd follows from the congruences. Part 5 (`x ≡ 5 (mod 8)`,
-`y = x - 2`, `{4, x, y, 14}` a P-position) is omitted: it fails at `x = 13`, where
-`{4, 11, 13, 14}` is an N-position (naming `5` wins).
+**Four-element P-positions containing 4.** Let $x > 1$ be a natural number. If
+$x \equiv 1 \pmod 4$, then $\{4, x, x + 2, 6\}$ is a P-position; if $x \equiv 7 \pmod 8$, then
+$\{4, x, x + 2, 10\}$ is a P-position; if $x \equiv 5 \pmod 8$, then $\{4, x, x + 6, 10\}$ is
+a P-position; and if $x \equiv 1 \pmod 8$, then $\{4, x, x + 6, 14\}$ is a P-position.
+
+In each case $x$ is odd. The analogous claim that $\{4, x, x - 2, 14\}$ is a P-position for
+$x \equiv 5 \pmod 8$ is false: for $x = 13$, $\{4, 11, 13, 14\}$ is an N-position, since naming
+$5$ wins.
 
 ## Depends on
 
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Sources
 

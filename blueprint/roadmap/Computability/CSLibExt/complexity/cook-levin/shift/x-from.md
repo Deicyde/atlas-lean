@@ -11,12 +11,12 @@ In-range clauses `x < n` of the current cell pair, then the drains.
 
 ## Depends on
 
-- [GL](gl.md)
+- [Labels of the cell-shift generator](gl.md)
 
 ## Proof depends on
 
-- [BD](bd.md)
-- [CL](cl.md)
+- [Loop-body stages of the cell-shift generator](bd.md)
+- [Clause kinds of the cell-shift family](cl.md)
 
 ## Sources
 

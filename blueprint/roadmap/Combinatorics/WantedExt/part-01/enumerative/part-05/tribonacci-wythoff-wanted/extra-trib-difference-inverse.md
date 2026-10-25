@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.extraTrib_difference_inverse
 ---
 
-# Extra Trib difference inverse
+# Difference-inverses of extraTribs
 
-Every extraTrib `S` has a unique rational Tribonacci-like difference-inverse `Q`
-(`Q (n + 1) - Q n = S n`), and some extraTrib is a difference-inverse of `S` exactly when `S`
-is not of Type EEOO (parities repeating even, even, odd, odd).
+**Difference-inverses of extraTribs.** Let $S$ be an extraTrib. There is exactly one
+sequence $Q \colon \mathbb{Z} \to \mathbb{Q}$ that follows the Tribonacci rule
+$Q(n+3) = Q(n+2) + Q(n+1) + Q(n)$ for all $n \in \mathbb{Z}$ and satisfies
+$Q(n+1) - Q(n) = S(n)$ for all $n \in \mathbb{Z}$. Moreover, there is an extraTrib $Q$ with
+$Q(n+1) - Q(n) = S(n)$ for all $n \in \mathbb{Z}$ if and only if $S$ is not of Type EEOO
+(parities repeating even, even, odd, odd), that is, there is no integer $k$ such that for
+every $n \in \mathbb{Z}$, $S(n)$ is even exactly when $(n - k) \bmod 4$ is $0$ or $1$.
 
 ## Depends on
 
-- [Is Extra Trib](is-extra-trib.md)
+- [ExtraTribs](is-extra-trib.md)
 
 ## Sources
 

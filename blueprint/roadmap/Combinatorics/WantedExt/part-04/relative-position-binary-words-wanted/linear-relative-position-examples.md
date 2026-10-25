@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.linear_relativePosition_examples
 ---
 
-# Theorem 64
+# Words with linear relative position function
 
-**Theorem 64.** (a) For `j ≥ 1`, `w = (a^j b^j)^ω` has `r(n) = j`. (b) For `0 ≤ j ≤ k - 1` and
-`w` the one-sided fixed point of `σ_{k-j,j,1}`, `r(n) = kn - j`. (c) For `w` the one-sided fixed
-point of `σ_{1,k-1,1}`, `r_{D(w)}(n) = kn + 1`. Domain restriction in (c): `k ≥ 1`; the paper
-writes `k ≥ 0`, but `σ_{1,k-1,1}` needs `k - 1 ≥ 0`.
+**Words with linear relative position function.** For integers $k, l, m \ge 0$ write
+$\sigma_{k,l,m}$ for the substitution $a \mapsto a^k b a^l$, $b \mapsto a^m$, and for a binary
+word $v$ let $r_v(n) = p_{b,v}(n) - p_{a,v}(n)$, where $p_{\alpha,v}(n)$ is the position (counted
+from $0$) of the $n$-th occurrence of the letter $\alpha$ in $v$.
+(a) For every $j \ge 1$, the word $v = (a^j b^j)^\omega$ has $r_v(n) = j$ for all $n \ge 1$.
+(b) For integers $0 \le j < k$, every fixed point $w$ of $\sigma_{k-j,j,1}$ that starts with $a$
+has $r_w(n) = kn - j$ for all $n \ge 1$.
+(c) For every $k \ge 1$, if $w$ is a fixed point of $\sigma_{1,k-1,1}$ that starts with $a$ and
+$D(w)$ is the word $w$ with its first $a$ and its first $b$ deleted, then $r_{D(w)}(n) = kn + 1$
+for all $n \ge 1$.
+
+The paper writes $k \ge 0$ in (c), but $\sigma_{1,k-1,1}$ needs $k \ge 1$.
 
 ## Depends on
 
-- [Is Substitution Image](is-substitution-image.md)
-- [Deletion](deletion.md)
-- [Relative Position](relative-position.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [The deletion operator](deletion.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

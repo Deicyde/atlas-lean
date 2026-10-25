@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polytopeDilate_one
 ---
 
-# Polytope Dilate one
+# Dilation by one
 
-The dilate by `1` is the polytope itself.
+**Dilation by one.** For every index type $\iota$ and every set $P \subseteq \mathbb{R}^\iota$,
+the dilate $1P = \{1 \cdot y : y \in P\}$ equals $P$.
 
 ## Depends on
 
-- [Polytope Dilate](polytope-dilate.md)
+- [Dilate of a set](polytope-dilate.md)
 
 ## Sources
 

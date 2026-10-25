@@ -4,5 +4,5 @@ navigation: module
 
 # Unit Distance Conjecture False
 
-- [Unit Dist](unit-dist.md)
-- [Erdos unit distance conjecture false](erdos-unit-distance-conjecture-false.md)
+- [Unit distance count of a planar point set](unit-dist.md)
+- [Erdős's unit distance conjecture is false](erdos-unit-distance-conjecture-false.md)

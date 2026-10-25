@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_stirlingSecond_eq
 ---
 
-# Sum choose stirling Second eq
+# Alternating binomial sums of shifted Stirling numbers of the second kind
 
-Theorem 5: for `i, j, N ≥ 1`,
-`∑_{l=0}^{N} (-1)^{N-l} C(N, l) S(i + l, j) =
-∑_{k=1}^{j-1} (-1)^{j-k+1} k^{N-1} (k + 1)^{i-1} / ((k - 1)! (j - k - 1)!)`.
+**Alternating binomial sums of shifted Stirling numbers of the second kind.** Write
+$S(n, k)$ for the Stirling numbers of the second kind. For all natural numbers $i, j, N \ge 1$,
+the following identity holds in the rational numbers:
+
+$$\sum_{l=0}^{N} (-1)^{N-l} \binom{N}{l} S(i+l, j) =
+\sum_{k=1}^{j-1} \frac{(-1)^{j-k+1} k^{N-1} (k+1)^{i-1}}{(k-1)!\,(j-k-1)!}.$$
 
 ## Depends on
 

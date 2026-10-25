@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.slowANimAfter
 ---
 
-# Slow ANim After
+# Playing on a set of stacks
 
-The position after playing on the stacks in `S`: one token is removed from each stack of
-`S`.
+**Playing on a set of stacks.** Let $p$ be a position of Slow$A$-Nim on $n$ stacks, with
+$p_i$ tokens on stack $i$, and let $S$ be a set of stacks. The position after playing on $S$ is
+obtained by removing one token from each stack of $S$: its stack $i$ holds $p_i - 1$ if
+$i \in S$ and $p_i$ otherwise, where an empty stack of $S$ stays empty.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fibDigitCount
 ---
 
-# Fib Digit Count
+# Fibonacci digit count
 
-The number of digits of `rep_F(n)`: the least `k ≥ k₀` with `n < F_k = fib (k + 2)`,
-searched upward from `k₀` with at most `fuel` steps, so the work is proportional to the
-representation length. Called with `k₀ = 0` and `fuel = n + 1` (enough, as `n < fib (n + 2)`).
+**Fibonacci digit count.** Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$. For
+$n, s, k_0 \in \mathbb{N}$, the digit count of $n$ searched from $k_0$ in at most $s$ steps is
+the least $k$ with $k_0 \le k < k_0 + s$ and $n < F_k$ if there is one, and $k_0 + s$
+otherwise.
+
+With $k_0 = 0$ and $s = n + 1$ it is the number of digits of the greedy Fibonacci
+representation of $n$, the least $k$ with $n < F_k$, which exists since $n < F_n$.
 
 ## Depends on
 

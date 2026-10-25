@@ -4,6 +4,6 @@ navigation: module
 
 # Epsilon Light Subset
 
-- [Is Epsilon Light](is-epsilon-light.md)
-- [Epsilon Light Subset Exists](epsilon-light-subset-exists.md)
-- [Epsilon Light Subset Exists holds](epsilon-light-subset-exists-holds.md)
+- [ε-light vertex sets](is-epsilon-light.md)
+- [The large ε-light subset property](epsilon-light-subset-exists.md)
+- [Every graph has a large ε-light vertex set](epsilon-light-subset-exists-holds.md)

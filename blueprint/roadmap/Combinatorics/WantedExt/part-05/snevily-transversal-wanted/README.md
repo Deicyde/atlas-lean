@@ -4,5 +4,5 @@ navigation: module
 
 # Snevily Transversal
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Snevily's conjecture](conjecture.md)
+- [Snevily's conjecture is true](conjecture-holds.md)

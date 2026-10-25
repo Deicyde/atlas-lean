@@ -14,7 +14,7 @@ particular `|W_(i+1)| = |W_i| + |W_(i-1)|` with `|W_1| = 1`, `|W_2| = 2`, and
 
 ## Depends on
 
-- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
+- [The words $W_i$ of the unsum gap sequence](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

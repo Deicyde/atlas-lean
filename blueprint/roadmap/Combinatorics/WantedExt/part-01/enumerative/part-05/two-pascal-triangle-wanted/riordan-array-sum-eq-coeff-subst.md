@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.riordan_array_sum_eq_coeff_subst
 ---
 
-# Theorem 1
+# Fundamental theorem of Riordan arrays
 
-**Theorem 1** (Sprugnoli, fundamental theorem of Riordan arrays). For the Riordan
-array `d_{n,k} = [t^n] d(t) h(t)^k` with `h(0) = 0` and any series `f`,
-`∑_{k=0}^{n} d_{n,k} f_k = [t^n] d(t) f(h(t))`.
+**Fundamental theorem of Riordan arrays.** Write $[t^m]F$ for the coefficient of $t^m$ in a
+power series $F$. Let $R$ be a commutative ring and let $d$, $h$, $f$ be power series over
+$R$ with $h(0) = 0$. Then for every $n \in \mathbb{N}$,
+
+$$\sum_{k=0}^{n} \left([t^n]\,d(t)\,h(t)^k\right) [t^k]\,f = [t^n]\,d(t)\,f(h(t)).$$
 
 ## Depends on
 

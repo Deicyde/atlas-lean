@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.mul_stirlingSecond_sub_gt
 ---
 
-# Mul stirling Second sub gt
+# Gy's inequality for Stirling numbers of the second kind
 
-Lemma 2.1: for integers `0 < k ≤ n`, `n {n, n-k} > (n - 2k) {n+1, n+1-k}`.
+**Gy's inequality for Stirling numbers of the second kind.** Let $n$ and $k$ be natural
+numbers with $0 < k \le n$, and write $S(m, i)$ for the Stirling number of the second kind, the
+number of partitions of an $m$-element set into $i$ nonempty blocks. Then
+$(n - 2k)\,S(n + 1, n + 1 - k) < n\,S(n, n - k)$, where the left side is computed in the
+integers, so that $n - 2k$ may be negative.
 
 ## Depends on
 

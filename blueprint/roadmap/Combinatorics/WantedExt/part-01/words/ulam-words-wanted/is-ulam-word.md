@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsUlamWord
 ---
 
-# Is Ulam Word
+# Ulam words
 
-`w` is an Ulam word.
+**Ulam words.** Ulam words are finite words over the alphabet $\{0, 1\}$, defined by
+recursion on the length. The empty word is not an Ulam word, and the two words $0$ and $1$ of
+length $1$ are Ulam words. A word $w$ of length at least $2$ is an Ulam word if and only if there
+is exactly one way to write $w = uv$ with $u$ and $v$ nonempty, distinct Ulam words.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

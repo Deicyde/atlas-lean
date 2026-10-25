@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.containsCopy_empty
 ---
 
-# Contains Copy empty
+# Every finite set contains a copy of the empty set
 
-The empty set is contained in every claimed set.
+**Every finite set contains a copy of the empty set.** Every finite set $M$ of natural
+numbers contains a homothetic copy of the empty set.
 
 ## Depends on
 
-- [Contains Copy](contains-copy.md)
+- [Containing a homothetic copy](contains-copy.md)
 
 ## Sources
 

@@ -5,18 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.levelRookNumber_factorization_zones
 ---
 
-# Level Rook Number factorization zones
+# Zone factorization of the $m$-level rook polynomial
 
-Barrese, Loehr, Remmel and Sagan, zone form: for any Ferrers board and `m ≥ 1`,
-`p_m(B, x) = ∏_i (x + ⌊b_i⌋_m - (i - 1)m + [i last in its zone z] ρ_z)`, where a zone is a maximal
-run of columns with equal `⌊b_i⌋_m`, `ρ_i = b_i - ⌊b_i⌋_m` and `ρ_z = Σ_{k ∈ z} ρ_k`. Column `i` is
-last in its zone when it is the last column or `⌊b_{i+1}⌋_m ≠ ⌊b_i⌋_m`; since the heights are
-weakly increasing, the zone of `i` is the set of columns `k` with `⌊b_k⌋_m = ⌊b_i⌋_m`.
+**Zone factorization of the $m$-level rook polynomial.** Let $m \ge 1$ and let
+$B = (b_1, \dots, b_n)$ be a Ferrers board, that is $b_1 \le \dots \le b_n$. Write
+$\lfloor b \rfloor_m = m \lfloor b/m \rfloor$ for the largest multiple of $m$ that is at most $b$,
+and $\rho_i = b_i - \lfloor b_i \rfloor_m$. The zone of column $i$ is the set $z$ of columns $k$
+with $\lfloor b_k \rfloor_m = \lfloor b_i \rfloor_m$ (a maximal run of consecutive columns, since
+the heights increase weakly), and $\rho_z = \sum_{k \in z} \rho_k$. Column $i$ is last in its zone
+when $i = n$ or $\lfloor b_{i+1} \rfloor_m \ne \lfloor b_i \rfloor_m$. Let $\varepsilon_i = \rho_z$,
+for $z$ the zone of $i$, if column $i$ is last in its zone, and $\varepsilon_i = 0$ otherwise.
+Then for every integer $x$,
+
+$$
+\sum_{k=0}^{n} r_{k,m}(B)\, x\downarrow_{n-k,m} =
+\prod_{i=1}^{n} \bigl(x + \lfloor b_i \rfloor_m - m(i-1) + \varepsilon_i\bigr),
+$$
+
+where $r_{k,m}(B)$ is the $k$-th $m$-level rook number of $B$ and
+$x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
 
 ## Depends on
 
-- [Level Rook Number](level-rook-number.md)
-- [M Falling Factorial](m-falling-factorial.md)
+- [Level rook number](level-rook-number.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
 
 ## Sources
 

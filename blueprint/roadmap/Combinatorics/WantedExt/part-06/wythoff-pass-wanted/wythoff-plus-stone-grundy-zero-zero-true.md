@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.wythoffPlusStoneGrundy_zero_zero_true
 ---
 
-# Wythoff Plus Stone Grundy zero zero true
+# Wythoff's game plus one stone at $(0, 0, 1)$
 
-With a pile of one stone added, `(0, 0, 1)` has Grundy number `1`: its only move is to the
-terminal position `(0, 0, 0)`.
+**Wythoff's game plus one stone at $(0, 0, 1)$.** In the sum of Wythoff's game and a pile of
+one stone, the position $(0, 0, 1)$ (no Wythoff moves left, the stone present) has Grundy number
+$\mathcal{G}_2(0, 0, 1) = 1$: its only move is to the terminal position $(0, 0, 0)$.
 
 ## Depends on
 
-- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
+- [Grundy numbers of Wythoff's game plus one stone](wythoff-plus-stone-grundy.md)
 
 ## Proof depends on
 
-- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
-- [Wythoff Extra Move Grundy eq](wythoff-extra-move-grundy-eq.md)
+- [Grundy numbers of Wythoff's game with an extra move](wythoff-extra-move-grundy.md)
+- [Mex recursion for the Grundy numbers of Wythoff's game with an extra move](wythoff-extra-move-grundy-eq.md)
 
 ## Sources
 

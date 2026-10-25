@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_sameLength_card
 ---
 
-# Weakly Decreasing Non Intersecting Pairs same Length card
+# Non-intersecting pairs of weakly decreasing words of equal length
 
-Corollary 5: for `n ≥ 1`, the number of non-intersecting pairs of weakly decreasing words of
-length `n` over `[k]` is `∑_{j=1}^{k-1} C(k, j) C(n-1, j-1) C(n+k-j-1, n)` (the `z^n` coefficient
-of the paper's generating function).
+**Non-intersecting pairs of weakly decreasing words of equal length.** For natural numbers $k$
+and $n \ge 1$, the number of pairs $(u, v)$ of weakly decreasing words of length $n$ over an
+ordered alphabet of $k$ letters such that no letter occurs in both is
+$\sum_{j=1}^{k-1} \binom{k}{j} \binom{n-1}{j-1} \binom{n+k-j-1}{n}$.
 
 ## Depends on
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciValue_cons_zero_of_noncanonical
 ---
 
-# Tribonacci Value cons zero of noncanonical
+# Appending a zero to a non-canonical Tribonacci representation
 
-Appending a `0` to a non-canonical representation (digits `0`/`1`, three consecutive
-ones allowed) of `n` gives a non-canonical representation of `out(n)`: if `w` has `0/1`
-digits and value `n`, and `v` is the Tribonacci representation of `n`, then
-`[w0]_T = [v0]_T = out(n)`.
+**Appending a zero to a non-canonical Tribonacci representation.** Let $T_0 = T_1 = 0$,
+$T_2 = 1$ and $T_{k+3} = T_{k+2} + T_{k+1} + T_k$ be the Tribonacci numbers, and for a digit
+word $u$, written most significant digit first, let $[u]_T$ be its Tribonacci value, in which
+the $i$-th digit from the right (counting from $0$) weighs $T_{i+3}$. Let $w$ be a digit word
+with all digits in $\{0, 1\}$ (three consecutive ones are allowed) and $[w]_T = n$, and let $v$
+be a Tribonacci representation of $n$. Then $[w0]_T = [v0]_T$, where $w0$ and $v0$ are $w$ and
+$v$ followed by the digit $0$; that is, $w0$ evaluates to the Tribonacci successor
+$\mathrm{out}(n) = [v0]_T$ of $n$.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

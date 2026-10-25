@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_det
 ---
 
-# Theorem 4
+# Determinant of the Stirling-like matrix
 
-**Theorem 4**: `det S_α(n) = ∏_{i=0}^{n-1} Ω(α, i+1)`.
+**Determinant of the Stirling-like matrix.** For a sequence
+$\alpha \colon \mathbb{N} \to \mathbb{Q}$ and $j \ge 1$ let
+$\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$, where
+$m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ is the falling factorial. Then for every
+$n \in \mathbb{N}$ the determinant of the $n \times n$ Stirling-like matrix $S_\alpha(n)$ is
+$\det S_\alpha(n) = \prod_{j=1}^{n} \Omega(\alpha, j)$.
 
 ## Depends on
 
-- [Omega](omega.md)
-- [Stirling Like Matrix](stirling-like-matrix.md)
+- [The sum $\Omega(\alpha, j)$](omega.md)
+- [Stirling-like matrix](stirling-like-matrix.md)
 
 ## Sources
 

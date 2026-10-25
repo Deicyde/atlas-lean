@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exists_word_letterPosition_eq_iff
 ---
 
-# Lemma 4
+# Characterization of the position functions
 
-**Lemma 4.** A function `p : ℕ → ℤ_{≥0}` is `p_a` of some `w ∈ a𝒲` iff it is strictly
-increasing, `p(1) = 0` and `Δp > 1` infinitely often; it is `p_b` of some `w ∈ a𝒲` iff it is
-strictly increasing, `p(1) > 0` and `Δp > 1` infinitely often.
+**Characterization of the position functions.** Let $p$ be a function from the natural
+numbers to the natural numbers. There is an infinite word $w$ over the letters $a$ and $b$ that
+starts with $a$, in which both letters occur infinitely often, and whose position function for
+$a$ satisfies $p_a(n) = p(n)$ for all $n \ge 1$, if and only if $p(n) < p(n+1)$ for all $n \ge 1$,
+$p(1) = 0$, and $p(n+1) - p(n) > 1$ for infinitely many $n \ge 1$. Likewise, there is an infinite
+word over $a$ and $b$ that starts with $a$, in which both letters occur infinitely often, and
+whose position function for $b$ satisfies $p_b(n) = p(n)$ for all $n \ge 1$, if and only if
+$p(n) < p(n+1)$ for all $n \ge 1$, $p(1) > 0$, and $p(n+1) - p(n) > 1$ for infinitely many
+$n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

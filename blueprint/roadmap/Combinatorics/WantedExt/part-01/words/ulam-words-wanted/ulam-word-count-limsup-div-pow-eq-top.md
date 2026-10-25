@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ulamWordCount_limsup_div_pow_eq_top
 ---
 
-# Ulam Word Count limsup div pow eq top
+# Exponential lower bound for Ulam word counts along a subsequence
 
-`limsup #U_n / αⁿ = ∞` for every `1 < α < α₀`, where `α₀ = (#U₃₀ / (2 · 31))^{1/30}` is
-the constant of the paper's proof (`n₁ = 30`); stated as: for every `C` and `N` some
-`n ≥ N` has `C αⁿ ≤ #U_n`.
+**Exponential lower bound for Ulam word counts along a subsequence.** Let $\#U_n$ be the
+number of Ulam words of length $n$ and $\alpha_0 = (\#U_{30} / (2 \cdot 31))^{1/30}$. For every
+real $\alpha$ with $1 < \alpha < \alpha_0$, every real $C$ and every natural number $N$, there
+is some $n \ge N$ with $C \alpha^n \le \#U_n$; that is,
+$\limsup_{n \to \infty} \#U_n / \alpha^n = \infty$.
+
+Here $\alpha_0$ is the constant from the paper's proof, with $n_1 = 30$.
 
 ## Depends on
 

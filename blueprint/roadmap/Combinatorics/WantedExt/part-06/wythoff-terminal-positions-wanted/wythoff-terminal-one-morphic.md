@@ -17,8 +17,8 @@ iterates `morphIterate f n [0]`; its existence is part of the statement.
 ## Depends on
 
 - [Infinite word as the limit of iterates](../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Sources
 

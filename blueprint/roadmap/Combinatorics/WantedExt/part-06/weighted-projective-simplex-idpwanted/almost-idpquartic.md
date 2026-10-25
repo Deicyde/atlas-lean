@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.almostIDPQuartic
 ---
 
-# Almost IDPQuartic
+# The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$
 
-The quartic factor `1+7z+14z²+7z³+z⁴` from Theorem 13.
+**The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$.** The polynomial $1 + 7z + 14z^2 + 7z^3 + z^4$ with
+integer coefficients, the quartic factor from Theorem 13.
 
 ## Depends on
 

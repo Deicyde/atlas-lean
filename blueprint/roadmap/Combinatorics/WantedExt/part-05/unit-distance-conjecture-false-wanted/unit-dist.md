@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.UnitDistanceConjectureFalseWanted.Combinatorics.unitDist
 ---
 
-# Unit Dist
+# Unit distance count of a planar point set
 
-For a finite planar set `P ⊆ ℝ²`, `unitDist P` is the number of
-unordered pairs `{x, y} ⊆ P` at Euclidean distance exactly `1`.
+**Unit distance count of a planar point set.** For a finite set $P$ of points in the Euclidean
+plane $\mathbb{R}^2$, the unit distance count of $P$ is the number of unordered pairs of points of
+$P$ at distance exactly $1$.
 
-Points are modelled as `EuclideanSpace ℝ (Fin 2)` rather than `ℝ × ℝ`
-so that `dist x y = √((x₀ - y₀)² + (x₁ - y₁)²)`; the product space
-`ℝ × ℝ` carries the sup-norm and would give the wrong notion of
-unit-distance pair.
+The distance is the Euclidean one, $\sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2}$ for $x = (x_1, x_2)$ and
+$y = (y_1, y_2)$, not the largest coordinate difference used by the product metric on
+$\mathbb{R} \times \mathbb{R}$.
 
 ## Depends on
 

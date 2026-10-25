@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fibGreedyDigits
 ---
 
-# Fib Greedy Digits
+# Greedy Fibonacci digits
 
-Greedy digits of `n` for the Fibonacci numeration `F_i = fib (i + 2)` (`F_0 = 1`,
-`F_1 = 2`) at the positions `k - 1, …, 0`, most significant first.
+**Greedy Fibonacci digits.** Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$. For
+$k, n \in \mathbb{N}$, the greedy digits of $n$ at positions $k - 1, \dots, 0$ are the list of
+$k$ digits, most significant first, computed with a remainder $r$ that starts at $n$: for
+$j = k - 1, \dots, 0$ in turn, the digit at position $j$ is $1$ if $F_j \le r$, in which case
+$F_j$ is subtracted from $r$, and $0$ otherwise. The digits $1$ and $0$ are encoded as the
+booleans true and false.
 
 ## Depends on
 

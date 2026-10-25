@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightStatistic
 ---
 
-# Weight Statistic
+# The weight statistic
 
-The paper's weight statistic `w(q,b)`.  Floors of nonnegative rational
-numbers are natural divisions; subtraction is natural subtraction, which is
-nontruncating on the stated range by the mathematical estimate behind the formula.
+**The weight statistic.** For a list $q = (q_1, \dots, q_n)$ of natural numbers and
+$b \in \mathbb{N}$, the weight statistic is
+$w(q, b) = b - \sum_{i=1}^{n} \left\lfloor \frac{q_i b}{1 + q_1 + \cdots + q_n} \right\rfloor$.
+
+The sum of the floors never exceeds $b$, so the difference is a natural number.
 
 ## Depends on
 

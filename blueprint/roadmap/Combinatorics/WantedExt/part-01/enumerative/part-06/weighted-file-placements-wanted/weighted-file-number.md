@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weightedFileNumber
 ---
 
-# Weighted File Number
+# Weighted file placement numbers
 
-The `k`-th `m`-weighted file placement number `f_{k,m}(B) = Σ_{F ∈ 𝓕_k} wt_m(F)`.
+**Weighted file placement numbers.** For a board $B$ given by a list of column heights and for
+$m, k \in \mathbb{N}$, the $k$-th $m$-weighted file placement number of $B$ is the integer
+$f_{k,m}(B) = \sum_F \mathrm{wt}_m(F)$, where $F$ runs over the file placements on $B$ with exactly
+$k$ cells and $\mathrm{wt}_m(F)$ is the $m$-weight of $F$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [File Placement Weight](file-placement-weight.md)
-- [File Placements](file-placements.md)
+- [The $m$-weight of a file placement](file-placement-weight.md)
+- [File placements](file-placements.md)
 
 ## Sources
 

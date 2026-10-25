@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.boundedDiffSetNumber_le
 ---
 
-# Bounded Diff Set Number le
+# Trivial upper bound for sets with bounded difference multiplicities
 
-`α_g(n) ≤ n`, since the sets are subsets of `[n]`.
+**Trivial upper bound for sets with bounded difference multiplicities.** For natural numbers
+$g$ and $n$, let $\alpha_g(n)$ be the largest size of a set $A \subseteq [n] = \{1, \dots, n\}$
+such that every nonzero integer $x$ is the difference $a - a'$ of at most $g$ ordered pairs
+$(a, a') \in A \times A$. Then $\alpha_g(n) \le n$, since these sets are subsets of $[n]$.
 
 ## Depends on
 
-- [Bounded Diff Set Number](bounded-diff-set-number.md)
+- [Maximal sets with bounded difference multiplicities](bounded-diff-set-number.md)
 
 ## Proof depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

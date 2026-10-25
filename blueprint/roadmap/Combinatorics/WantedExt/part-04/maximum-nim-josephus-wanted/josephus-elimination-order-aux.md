@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.josephusEliminationOrderAux
 ---
 
-# Josephus Elimination Order Aux
+# Fuel-bounded Josephus simulation
 
-A fuel-bounded Josephus simulation on a current circle. The removed zero-based
-index is `(start + k - 1) % circle.length`, and that index is the next starting index;
-the public definition supplies exactly one unit of fuel per initial entry. The default
-zero is unreachable there and only totalizes `getD`, so it is not a paper deviation.
+**Fuel-bounded Josephus simulation.** For natural numbers $k$ and $s$ (the starting
+position), a fuel $f$ and a list $c$ of natural numbers (the current circle), the simulation
+returns the empty list when $f = 0$ or $c$ is empty. Otherwise, with $L$ the length of $c$ and
+$i = (s + k - 1) \bmod L$, where the subtraction is truncated at $0$, it returns the entry of
+$c$ at zero-based position $i$ followed by the result of the simulation with the same $k$,
+starting position $i$ and fuel $f - 1$ on the list obtained from $c$ by deleting the entry at
+position $i$.
 
 ## Depends on
 

@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsPeriodicPointWithGrowingSeed
 ---
 
-# Is Periodic Point With Growing Seed
+# Two-sided periodic points with growing seed
 
-The standing hypothesis of Sections 4–9: `η` is a substitution, `u ∈ Per(η)` is a
-two-sided periodic point whose seed letters `u₋₁` and `u₀` are both growing, and `p` is *the*
-period of `u` (the least `p ≥ 1` with `η^p(u) = u`).
+**Two-sided periodic points with growing seed.** Let $\eta$ map each letter of an alphabet
+$A$ to a finite word over $A$, extended to finite words by concatenation, with iterates
+$\eta^k$; let $u = (u_i)_{i \in \mathbb{Z}}$ be a two-sided word over $A$ and let $p$ be a
+natural number. Then $u$ is a periodic point of $\eta$ with growing seed and least period $p$
+when $\eta$ is a substitution, $p$ is the least natural number $q$ such that $u$ is a two-sided
+periodic point of $\eta$ with period $q$, and both seed letters $u_{-1}$ and $u_0$ are growing,
+that is, $|\eta^k(u_{-1})| \to \infty$ and $|\eta^k(u_0)| \to \infty$ as $k \to \infty$.
+
+This is the standing hypothesis of Sections 4 to 9 of the source.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Substitution](is-substitution.md)
-- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+- [Substitutions in the sense of Labbé and Lepšová](is-substitution.md)
+- [Two-sided periodic points](is-two-sided-periodic-point.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

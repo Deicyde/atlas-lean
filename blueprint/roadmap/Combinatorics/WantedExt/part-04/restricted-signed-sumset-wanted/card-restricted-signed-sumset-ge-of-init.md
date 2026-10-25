@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_ge_of_initialSegment
 ---
 
-# Card restricted Signed Sumset ge of initial Segment
+# Extending a restricted signed sumset bound from the first $h+1$ elements
 
-`a` increasingly enumerates the positive `k`-element set and
-`initialSegment a (h+1)` is `A_{h+1}`. From its lower bound by `(h+1)^2+t`, with
-integer `t ≥ 0`, the conclusion gives the paper's bound for all of `A`. The paper leaves
-the type of `t` implicit; it is represented as an integer to match cardinality arithmetic.
+**Extending a restricted signed sumset bound from the first $h+1$ elements.** Let $h \ge 3$
+and $k \ge h + 1$, let $a_1 < a_2 < \dots < a_k$ be positive integers, and let $t \ge 0$ be an
+integer. Put $A = \{a_1, \dots, a_k\}$ and $A_{h+1} = \{a_1, \dots, a_{h+1}\}$, and write
+$h^{\wedge}_{\pm} B$ for the restricted signed $h$-fold sumset of a finite set $B$. If
+$|h^{\wedge}_{\pm} A_{h+1}| \ge (h+1)^2 + t$, then $|h^{\wedge}_{\pm} A| \ge 2hk - h^2 + 1 + t$.
 
 ## Depends on
 
-- [Initial Segment](initial-segment.md)
-- [Ordered Finset](ordered-finset.md)
+- [Initial segment of a finite integer sequence](initial-segment.md)
+- [Set of values of a finite integer sequence](ordered-finset.md)
 - [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources

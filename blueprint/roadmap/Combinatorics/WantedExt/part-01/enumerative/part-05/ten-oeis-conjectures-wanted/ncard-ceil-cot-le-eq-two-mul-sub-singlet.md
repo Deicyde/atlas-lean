@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ncard_ceil_cot_le_eq_two_mul_sub_singletons
 ---
 
-# Ncard ceil cot le eq two mul sub singletons
+# Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$
 
-With `g(m) = ⌈cot (π / (2m))⌉`, `mult(j) = #{m ≥ 1 : g(m) = j}`, and `s(r)` the number of
-`j ∈ [r]` with `mult(j) = 1` (singletons), for `r ≥ 1`: `#{m ≥ 2 : g(m) ≤ r} = 2r - s(r)`.
+**Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$.** Let
+$g(m) = \lceil \cot(\pi / (2m)) \rceil$ for integers $m \ge 1$, and call an integer $j$ a
+singleton if exactly one integer $m \ge 1$ satisfies $g(m) = j$. For an integer $r \ge 1$, let
+$s(r)$ be the number of singletons in $\{1, \dots, r\}$. Then the number of integers $m \ge 2$
+with $g(m) \le r$ equals $2r - s(r)$.
 
 ## Depends on
 

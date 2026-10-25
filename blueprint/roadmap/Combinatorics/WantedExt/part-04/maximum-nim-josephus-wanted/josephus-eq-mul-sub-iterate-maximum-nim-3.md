@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_between_log_bounds
 ---
 
-# Josephus eq mul sub iterate maximum Nim H between log bounds
+# Logarithmic bounds for the Josephus iteration count
 
-Theorem 4: with the real `v,w` of Lemma 8, for `k ≥ 2` and `n ≥ 2` there is
-a positive natural `p` between `⌊w⌋` and `⌈v⌉` for which `nk-h_k^p(k-1)` is the
-one-based Josephus survivor. We require `n ≥ 2`: at `n=1`, `⌈v⌉=0`, contradicting
-the required `p ≥ 1`.
+**Logarithmic bounds for the Josephus iteration count.** Let $k \ge 2$ and $n \ge 2$ be
+natural numbers, let $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ for natural numbers $x$, write
+$h_k^p$ for the $p$-th iterate of $h_k$, and define the real numbers
+$v = \log n / (\log k - \log(k-1))$ and $w = (\log(n+1) - \log 2) / (\log k - \log(k-1))$,
+where $\log$ is the natural logarithm. Then there is a natural number $p \ge 1$ with
+$\lfloor w \rfloor \le p \le \lceil v \rceil$ and $J_k(n) = nk - h_k^p(k-1)$, where $J_k$ is the
+Josephus function for elimination step $k$.
+
+The hypothesis $n \ge 2$ is needed: for $n = 1$ we have $v = 0$, so $\lceil v \rceil = 0$ and no
+$p \ge 1$ satisfies $p \le \lceil v \rceil$.
 
 ## Depends on
 
 - [Josephus survivor function](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

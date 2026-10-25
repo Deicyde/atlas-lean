@@ -18,7 +18,7 @@ navigation: transparent
 - [Polynomial Freiman Ruzsa Binary](polynomial-freiman-ruzsa-binary-wanted/README.md)
 - [Prime Two Accessibility](prime-two-accessibility-wanted/README.md)
 - [Pseudorandom Grassmann](pseudorandom-grassmann-wanted/README.md)
-- [QTSPPWanted](q-tspp.md)
+- [The $q$-TSPP theorem](q-tspp.md)
 - [Quasi Full Rooted Tree](quasi-full-rooted-tree-wanted/README.md)
 - [Random Three Sat](random-three-sat-wanted/README.md)
 - [Reduced Complexities](reduced-complexities-wanted/README.md)

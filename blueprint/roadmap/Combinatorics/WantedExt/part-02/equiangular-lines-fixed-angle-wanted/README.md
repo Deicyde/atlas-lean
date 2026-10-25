@@ -4,7 +4,7 @@ navigation: module
 
 # Equiangular Lines Fixed Angle
 
-- [Equiangular Lines](equiangular-lines.md)
-- [N](n.md)
-- [Spectral Radius Order](spectral-radius-order.md)
-- [Theorem 1 2](theorem-1-2.md)
+- [Equiangular systems of unit vectors](equiangular-lines.md)
+- [Maximum number of equiangular lines](n.md)
+- [Spectral radius order](spectral-radius-order.md)
+- [Equiangular lines with a fixed angle](theorem-1-2.md)

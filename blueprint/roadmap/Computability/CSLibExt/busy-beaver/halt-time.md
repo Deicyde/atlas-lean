@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.BusyBeaver.haltTime
 ---
 
-# Halt Time
+# Halting time
 
-The halting time of a halting machine.
+**Halting time.** For an $n$-state machine $M$ that halts on the blank tape, its
+halting time is the least $t$ such that $M$, started on the blank tape, is in the halt
+state after $t$ steps.
 
 ## Depends on
 
-- [Halts](halts.md)
-- [Machine](machine.md)
+- [Halting on the blank tape](halts.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Halts Within](halts-within.md)
+- [Halting within $t$ steps](halts-within.md)
 
 ## Sources
 

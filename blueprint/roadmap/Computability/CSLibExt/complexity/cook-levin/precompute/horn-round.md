@@ -8,23 +8,31 @@ lean: Cslib.Complexity.CookLevin.Precompute.horn_round
 
 # One Horner round
 
-**One Horner round.** From `q = ad = t = 0`: `acc ← acc · b + a`, everything else kept.
+**One Horner round.** Let $b, \mathit{acc}, q, d, t$ be pairwise distinct counters of a
+counter machine $M$, let $a \in \mathbb{N}$, let $\mu$ assign a label to each Horner-round stage
+and let $\nu$ be a label. Suppose that for every Horner-round stage $s$ the label $\mu(s)$ runs
+the Horner-round statement for $b, \mathit{acc}, q, d, t, a$ with stage labels $\mu$ and exit
+label $\nu$ at stage $s$. Let $F$ be counter values with $F(q) = F(d) = F(t) = 0$, let $v$ be a
+flag and $o$ an output, and let $h$ be the step count of one Horner round. Then $M$ runs from the
+first multiplication stage $\mu(\mathrm{mul\ head})$ with flag $v$, counters $F$ and output $o$
+in exactly $h(F(\mathit{acc}), F(b))$ steps to the label $\nu$ with flag false, output $o$, and
+counters $F$ except that $\mathit{acc}$ holds $F(\mathit{acc}) \cdot F(b) + a$.
 
 ## Depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [HW](hw.md)
-- [Horn S](horn-s.md)
-- [Horn Step](horn-step.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Stages of a Horner round](hw.md)
+- [The statements of one Horner round](horn-s.md)
+- [Step count of one Horner round](horn-step.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Mul S](../counter-view/mul-s.md)
-- [Xf](xf.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Counters after a multi-target transfer](xf.md)
 - [Multi-target transfer](xfer-s.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Single](../../../../MathlibExt/turing-machine/program/single.md)

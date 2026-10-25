@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.BinaryAmbientSpace
 ---
 
-# Binary Ambient Space
+# The binary vector space $\mathbb{F}_2^n$
 
-The ambient binary vector space `𝔽₂ⁿ`.
+**The binary vector space $\mathbb{F}_2^n$.** For a natural number $n$, the ambient space
+$\mathbb{F}_2^n$ of all functions from $\{0, 1, \dots, n - 1\}$ to the two-element field
+$\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$.
 
 ## Depends on
 

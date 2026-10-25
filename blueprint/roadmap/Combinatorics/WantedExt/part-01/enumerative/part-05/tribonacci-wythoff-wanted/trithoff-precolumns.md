@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.trithoff_precolumns
 ---
 
-# Trithoff precolumns
+# Precolumns of the Trithoff array
 
-Precolumns of the Trithoff array. If a first-column entry `n` has Tribonacci
-representation `abc1` (here `1 :: c :: b :: a`, least significant digit first), extend its
-row `n, out(n), out²(n), …` to the left by the Tribonacci rule: the wall is
-`out²(n) - out(n) - n = [abc]_T + 1`, the seed `out(n) - n - wall = [ab]_T + c`, and the
-pre-seed `n - wall - seed = [a]_T + b`.
+**Precolumns of the Trithoff array.** Write $[u]_T$ for the Tribonacci value of a digit
+word $u$, written most significant digit first. Let $n$ have Tribonacci representation $abc1$,
+where $a$ is a digit word and $b$, $c$ are digits. Let $\mathrm{out}(n) = [abc10]_T$ and
+$\mathrm{out}^2(n) = [abc100]_T$ be the next two entries of the Trithoff row of $n$, and extend
+the row to the left by the Tribonacci rule: in the integers, the wall is
+$W = \mathrm{out}^2(n) - \mathrm{out}(n) - n$ and the seed is $S = \mathrm{out}(n) - n - W$.
+Then $W = [abc]_T + 1$, $S = [ab]_T + c$, and the pre-seed $n - W - S$ equals $[a]_T + b$.
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

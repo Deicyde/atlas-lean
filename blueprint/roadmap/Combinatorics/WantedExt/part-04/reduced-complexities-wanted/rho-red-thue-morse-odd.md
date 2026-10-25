@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoRed_thueMorse_odd
 ---
 
-# Theorem 1
+# Reduced complexity of the Thue–Morse word at odd lengths
 
-**Theorem 1**, odd case: for odd `n`,
-`ρ^red_t(n) = ρ^red_t((n+1)/2)`.
+**Reduced complexity of the Thue–Morse word at odd lengths.** Let $t$ be the Thue–Morse
+sequence and $\rho^{\mathrm{red}}_t$ its reduced factor complexity. For every odd natural
+number $n$, $\rho^{\mathrm{red}}_t(n) = \rho^{\mathrm{red}}_t((n+1)/2)$.
 
 ## Depends on
 
-- [Rho Red](rho-red.md)
+- [Reduced factor complexity](rho-red.md)
 - [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources

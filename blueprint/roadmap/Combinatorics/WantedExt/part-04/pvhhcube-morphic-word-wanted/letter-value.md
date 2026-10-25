@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.letterValue
 ---
 
-# Letter Value
+# Value of a letter
 
-The integer represented by a letter.
+**Value of a letter.** Each letter of the alphabet $\{0, 1, 3, 4\}$ has as its value the
+integer it names: the letters $0$, $1$, $3$ and $4$ have values $0$, $1$, $3$ and $4$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [The alphabet $\{0, 1, 3, 4\}$](letter.md)
 
 ## Sources
 

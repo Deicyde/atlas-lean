@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_relativePosition_div_of_frequency
 ---
 
-# Corollary 31
+# Relative position of a word with given letter frequency
 
-**Corollary 31.** If `Freq(b) = d ∈ (0, 1)` then `r(n)/n → 1/d - 1/(1-d)`. (Such a word has
-both letters infinitely often, so no separate `w ∈ 𝒲` hypothesis is needed.)
+**Relative position of a word with given letter frequency.** Let
+$w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over the letters $a$ and $b$. Let $\#_b(m)$
+be the number of letters $b$ among $\ell_0, \ldots, \ell_{m-1}$, and for $n \ge 1$ let
+$r(n) = p_b(n) - p_a(n)$, where $p_\alpha(n)$ is the position of the $n$-th occurrence of the
+letter $\alpha$ in $w$, counting positions from $0$. If $0 < d < 1$ and $\#_b(m)/m \to d$ as
+$m \to \infty$, then $r(n)/n \to 1/d - 1/(1-d)$ as $n \to \infty$.
+
+Such a word contains both letters infinitely often, so no separate hypothesis that both letters
+occur infinitely often is needed.
 
 ## Depends on
 
-- [Letter Count](letter-count.md)
-- [Relative Position](relative-position.md)
+- [Letter-counting function](letter-count.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

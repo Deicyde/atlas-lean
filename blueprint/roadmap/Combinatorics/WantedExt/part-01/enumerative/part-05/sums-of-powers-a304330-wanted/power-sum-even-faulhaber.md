@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_faulhaber
 ---
 
-# Proposition 12, even case
+# Faulhaber form of the even power sums
 
-**Proposition 12, even case**: the Faulhaber form
-`S_{2k}(n) = S_2(n)·Σ_{r=1}^k b_{k,r}·S_1(n)^{r-1}` with
-`b_{k,r}` as in `faulhaberB`, for `k ≥ 1`.
+**Faulhaber form of the even power sums.** For all natural numbers $k \ge 1$ and $n$,
+writing $S_j(n) = 1^j + 2^j + \cdots + n^j$ for the power sums and $b_{k,r}$ for the Faulhaber
+coefficients of Proposition 12, the rational numbers satisfy
+$S_{2k}(n) = S_2(n) \sum_{r=1}^{k} b_{k,r} \, S_1(n)^{r-1}$.
 
 ## Depends on
 
-- [Faulhaber B](faulhaber-b.md)
-- [Power Sum](power-sum.md)
+- [The Faulhaber coefficients $b_{k,r}$](faulhaber-b.md)
+- [Power sums](power-sum.md)
 
 ## Sources
 

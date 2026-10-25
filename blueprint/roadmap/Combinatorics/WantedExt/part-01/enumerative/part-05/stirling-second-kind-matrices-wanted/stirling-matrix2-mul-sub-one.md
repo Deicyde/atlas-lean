@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.stirlingMatrix2_mul_sub_one
 ---
 
-# Stirling Matrix2 mul sub one
+# Stirling matrix of the second kind times $V(n) - I_n$
 
-Lemma 3: `S(n) (V(n) - I_n) = E(n) Q^[1](n)`.
+**Stirling matrix of the second kind times $V(n) - I_n$.** Let $n$ be a natural number. Let
+$S(n)$ be the $n \times n$ Stirling matrix of the second kind, with entries the Stirling numbers
+of the second kind $S(i, j)$ for $1 \le i, j \le n$; let $V(n)$ be the $n \times n$ upper
+bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and all other entries $0$; let
+$I_n$ be the identity matrix, $E(n)$ the shifted Vandermonde matrix with
+$E(n)_{i,j} = (j + 1)^{i-1}$, and $Q^{[1]}(n)$ the matrix with
+$Q^{[1]}(n)_{i,j} = (-1)^{j-i+1} / ((i-1)!\,(j-i-1)!)$ for $j \ge i + 1$ and $0$ otherwise.
+Then, as matrices over $\mathbb{Q}$,
+
+$$S(n)\,(V(n) - I_n) = E(n)\,Q^{[1]}(n).$$
 
 ## Depends on
 
-- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
-- [Shifted Vandermonde Matrix](shifted-vandermonde-matrix.md)
-- [Stirling QMatrix](stirling-qmatrix.md)
-- [Stirling VMatrix](stirling-vmatrix.md)
+- [Stirling matrix of the second kind](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Shifted Vandermonde matrix](shifted-vandermonde-matrix.md)
+- [Strictly upper triangular matrix $Q^{(N)}(n)$](stirling-qmatrix.md)
+- [Upper bidiagonal matrix V(n)](stirling-vmatrix.md)
 
 ## Sources
 

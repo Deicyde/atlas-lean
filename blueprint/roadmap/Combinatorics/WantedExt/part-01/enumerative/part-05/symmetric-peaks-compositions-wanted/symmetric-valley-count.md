@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.symmetricValleyCount
 ---
 
-# Symmetric Valley Count
+# Number of symmetric valleys of a word
 
-The number of symmetric valleys `a b a` (`b < a`) in a word.
+**Number of symmetric valleys of a word.** For a word $w = w_1 w_2 \cdots w_\ell$ of natural
+numbers, a symmetric valley is a position $i$ with $1 < i < \ell$ such that $w_{i-1} = w_{i+1}$
+and $w_i < w_{i-1}$, that is, a factor $a\,b\,a$ with $b < a$. The symmetric valley count of $w$
+is the number of such positions; in particular it is $0$ when $\ell < 3$.
 
 ## Depends on
 

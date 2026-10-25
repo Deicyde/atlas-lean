@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.eq_iff_relativePosition_eq
 ---
 
-# Lemma 5
+# The relative position function determines the word
 
-**Lemma 5.** Two words of `𝒲` coincide iff their relative position functions coincide.
+**The relative position function determines the word.** Let $w$ and $w'$ be infinite words
+over the letters $a$ and $b$ in each of which both letters occur infinitely often, and let $r_w$
+and $r_{w'}$ be their relative position functions. Then $w = w'$ if and only if
+$r_w(n) = r_{w'}(n)$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

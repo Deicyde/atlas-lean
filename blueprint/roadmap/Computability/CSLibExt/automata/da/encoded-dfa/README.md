@@ -8,23 +8,23 @@ navigation: module
 
 ## Semantics
 
-- [Step](step.md)
-- [To DFA](to-dfa.md)
-- [Language](language.md)
-- [Letters](letters.md)
-- [States](states.md)
-- [Step eq self](step-eq-self.md)
-- [Step eq of forall](step-eq-of-forall.md)
-- [Step of not mem letters](step-of-not-mem-letters.md)
-- [Step mem or eq](step-mem-or-eq.md)
-- [Step mem states](step-mem-states.md)
-- [Compl](compl.md)
+- [Transition function of an encoded DFA](step.md)
+- [The automaton denoted by an encoded DFA](to-dfa.md)
+- [Language of an encoded DFA](language.md)
+- [Letters of an encoded DFA](letters.md)
+- [States of an encoded DFA](states.md)
+- [Unlisted transitions fix the state](step-eq-self.md)
+- [A step determined by its listed transitions](step-eq-of-forall.md)
+- [Letters without listed transitions fix every state](step-of-not-mem-letters.md)
+- [Where a step can lead](step-mem-or-eq.md)
+- [The listed states are closed under transitions](step-mem-states.md)
+- [Complement of an encoded DFA](compl.md)
 - [The complement DFA accepts the complement language](mem-language-compl.md)
 - [Every finite DFA has an encoding](exists-language-eq.md)
 
 ## Computability
 
-- [Equiv Prod](equiv-prod.md)
+- [Encoded DFAs as triples](equiv-prod.md)
 - [Primrec mk](primrec-mk.md)
-- [Primrec step](primrec-step.md)
-- [Primrec₂ eval](primrec-eval.md)
+- [The transition function of encoded DFAs is primitive recursive](primrec-step.md)
+- [Running an encoded DFA is primitive recursive](primrec-eval.md)

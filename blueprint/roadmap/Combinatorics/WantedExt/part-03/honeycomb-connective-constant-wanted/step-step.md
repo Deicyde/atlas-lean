@@ -7,15 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.step_step
 ---
 
-# Step step
+# Steps are involutions
 
-Traversing the same locally labelled edge twice returns to the starting
-vertex. In particular, the coordinate model defines an undirected graph.
+**Steps are involutions.** For every vertex $v$ of the honeycomb lattice and every
+direction label $d \in \{0, 1, 2\}$, taking the step in direction $d$ from $v$ and then the
+step in direction $d$ again returns to $v$.
+
+In particular, the coordinate model defines an undirected graph.
 
 ## Depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
-- [Step](step.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
+- [Steps in the honeycomb lattice](step.md)
 
 ## Sources
 

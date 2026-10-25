@@ -13,9 +13,9 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.sdsh_step_run_pos
 
 ## Depends on
 
-- [C Idx](../../family/c-idx.md)
-- [Family](../../family/family.md)
-- [The family](../../shift/sh-family.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [The transition clause family](../../family/family.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](code-holds.md)

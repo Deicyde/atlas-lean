@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPass_pPosition_near_wythoff_pPosition
 ---
 
-# Wythoff Pass p Position near wythoff p Position
+# P-positions with the pass available lie near Wythoff P-positions
 
-Every position `(x, y, 1)` with `𝒢₁(x, y, 1) = 0` lies within Euclidean distance `√20` of
-some `(v, w)` with `𝒢₁(v, w, 0) = 0`.
+**P-positions with the pass available lie near Wythoff P-positions.** Let
+$\mathcal{G}_1(x, y, p)$ be the Grundy number of Wythoff's game with a one-time pass, where $p = 1$
+means the pass is still available and $p = 0$ gives classical Wythoff's game. For all natural
+numbers $x, y$ with $\mathcal{G}_1(x, y, 1) = 0$ there exist natural numbers $v, w$ with
+$\mathcal{G}_1(v, w, 0) = 0$ and $(x - v)^2 + (y - w)^2 \le 20$, that is, $(v, w)$ lies within
+Euclidean distance $\sqrt{20}$ of $(x, y)$.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
 
 ## Sources
 

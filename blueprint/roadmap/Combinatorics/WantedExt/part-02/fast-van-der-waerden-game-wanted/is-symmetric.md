@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetric
 ---
 
-# Is Symmetric
+# Symmetric sets of rationals
 
-`S` is symmetric: it is symmetric of some type.
+**Symmetric sets of rationals.** A finite set $S$ of rational numbers is symmetric if it is
+symmetric of some type $(i, j)$ with $i, j < |S|$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Symmetric Of Type](is-symmetric-of-type.md)
+- [Symmetric sets of a given type](is-symmetric-of-type.md)
 
 ## Sources
 

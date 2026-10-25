@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_ten_le_forty_one
 ---
 
-# Graph Ramsey three ten le forty one
+# Angeltveit's upper bound for $R(3, 10)$
 
-`R(3,10) ≤ 41`.
+**Angeltveit's upper bound for $R(3, 10)$.** The classical Ramsey number $R(3, 10)$
+is at most $41$.
 
 ## Depends on
 

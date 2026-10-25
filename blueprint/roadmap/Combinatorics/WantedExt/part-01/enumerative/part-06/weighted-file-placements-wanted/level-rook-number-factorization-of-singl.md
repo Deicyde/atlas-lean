@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.levelRookNumber_factorization_of_singleton
 ---
 
-# Level Rook Number factorization of singleton
+# Briggs–Remmel factorization on singleton boards
 
-Briggs and Remmel: for a singleton board `B = (b_1, …, b_n)` for `m ≥ 1`,
-`p_m(B, x) = Σ_k r_{k,m}(B) x↓_{n-k,m} = ∏_i (x + b_i - m(i - 1))` (`0`-indexed columns).
+**Briggs–Remmel factorization on singleton boards.** Let $m \ge 1$ and let
+$B = (b_1, \dots, b_n)$ be a singleton board for $m$. Then for every integer $x$,
+
+$$
+\sum_{k=0}^{n} r_{k,m}(B)\, x\downarrow_{n-k,m} = \prod_{i=1}^{n} \bigl(x + b_i - m(i-1)\bigr),
+$$
+
+where $r_{k,m}(B)$ is the $k$-th $m$-level rook number of $B$ and
+$x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
 
 ## Depends on
 
-- [Is Singleton Board](is-singleton-board.md)
-- [Level Rook Number](level-rook-number.md)
-- [M Falling Factorial](m-falling-factorial.md)
+- [Singleton boards](is-singleton-board.md)
+- [Level rook number](level-rook-number.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
 
 ## Sources
 

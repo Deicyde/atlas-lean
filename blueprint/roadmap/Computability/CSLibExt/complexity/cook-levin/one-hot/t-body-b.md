@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.tBodyB
 ---
 
-# T Body B
+# Step budget for one time step of the one-hot generator
 
-Cost of one iteration of the time loop.
+**Step budget for one time step of the one-hot generator.** Let $L$ be a layout with $A$
+label/state variables per row, $K$ stacks and $g$ symbol codes, let $T$ and $H$ be natural
+numbers, $W = A + K H g$ the row width and $V = (T + 1) W$ the number of variables, and let
+$\kappa$ be the step budget of one iteration of the $k$ loop for $g$, $K$, $H$ and $V$. The
+budget is $T(2W + 3) + T + 2 + \bigl(K(\kappa + 1) + K + 2\bigr) + V + 1$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [Num Vars](../family/num-vars.md)
-- [Row W](../family/row-w.md)
-- [K Body B](k-body-b.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Variables per time step](../family/row-w.md)
+- [Step budget for one stack iteration of the one-hot generator](k-body-b.md)
 
 ## Sources
 

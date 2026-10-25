@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.rightSpecialFactors
 ---
 
-# Right Special Factors
+# Right-special factors
 
-The right-special factors of length `n` of an infinite binary word `a`: the
-length-`n` blocks `u` such that both `u0` and `u1` are factors of `a`.
+**Right-special factors.** Let $a$ be an infinite binary word and $n$ a natural number. The
+right-special factors of $a$ of length $n$ are the binary words $u$ of length $n$ such that both
+$u0$ and $u1$ are factors of $a$.
 
 ## Depends on
 

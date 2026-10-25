@@ -8,19 +8,22 @@ lean: Cslib.Circuits.CarryLookahead.gpSpec_succ
 
 # The Kogge-Stone step
 
-**The Kogge-Stone step**: level `k + 1` combines bit `i` with bit `i - 2 ^ k` when it exists,
-and keeps bit `i` otherwise.
+**The Kogge-Stone step.** Fix bit vectors $x, y$ of the same width and write $S_k(i)$ for the
+generate–propagate pair of the block of the $\min(i + 1, 2^k)$ bits ending at bit $i$, the pair
+bit $i$ holds after $k$ Kogge-Stone levels. For all $k, i \in \mathbb{N}$: if $2^k \le i$, then
+$S_{k+1}(i) = S_k(i) \circ S_k(i - 2^k)$, where $\circ$ is the block operator with its left
+argument placed above its right; otherwise $S_{k+1}(i) = S_k(i)$.
 
 ## Depends on
 
-- [Combine](combine.md)
-- [Gp Spec](gp-spec.md)
+- [Combining generate–propagate pairs](combine.md)
+- [The block held after Kogge-Stone levels](gp-spec.md)
 
 ## Proof depends on
 
-- [Gp Range](gp-range.md)
-- [Gp Range add](gp-range-add.md)
-- [Low Bit](low-bit.md)
+- [Generate and propagate signals of a block](gp-range.md)
+- [Adjacent blocks compose](gp-range-add.md)
+- [Lowest bit of a Kogge-Stone block](low-bit.md)
 
 ## Sources
 

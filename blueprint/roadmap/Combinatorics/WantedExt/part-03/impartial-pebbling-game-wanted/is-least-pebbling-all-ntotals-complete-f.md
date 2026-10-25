@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_pebblingAllNTotals_completeFour_one
 ---
 
-# Is Least pebbling All NTotals complete Four one
+# All-N threshold of $(2:1)$-pebbling on $K_4$
 
-Theorem 1(c): `m^{(2:1)}(K_4) = 23`.
+**All-N threshold of $(2:1)$-pebbling on $K_4$.** The least number $m$ such that every
+$(2:1)$-pebbling game on the complete graph $K_4$ with $m$ pebbles in total is an N-game, written
+$m^{(2:1)}(K_4)$, exists and equals $23$.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

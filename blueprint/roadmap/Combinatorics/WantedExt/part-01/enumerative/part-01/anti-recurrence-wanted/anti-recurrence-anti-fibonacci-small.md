@@ -15,7 +15,7 @@ anti-Fibonacci numbers $C_1, C_2, C_3, C_4$ of the Walnut anti-Fibonacci constru
 
 ## Depends on
 
-- [Anti Fibonacci C](../../part-06/walnut-oeis-problems-wanted/anti-fibonacci-c.md)
+- [Anti-Fibonacci numbers](../../part-06/walnut-oeis-problems-wanted/anti-fibonacci-c.md)
 - [Anti-recurrence numbers](anti-recurrence.md)
 
 ## Sources

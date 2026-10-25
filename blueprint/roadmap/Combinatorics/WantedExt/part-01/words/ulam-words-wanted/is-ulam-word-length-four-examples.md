@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isUlamWord_length_four_examples
 ---
 
-# Is Ulam Word length four examples
+# Ulam words of length four: examples
 
-The defining recursion for a word of length `4`: `0001` is Ulam (only the split
-`0 · 001` has distinct Ulam halves) and `0011` is not (no split does).
+**Ulam words of length four: examples.** The words $0001$ and $1011$ are Ulam words, while
+$0011$ and $0110$ are not.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
+- [Ulam words](is-ulam-word.md)
 
 ## Proof depends on
 
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

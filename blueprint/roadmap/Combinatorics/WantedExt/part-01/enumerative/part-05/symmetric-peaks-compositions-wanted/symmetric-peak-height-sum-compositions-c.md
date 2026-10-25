@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.symmetricPeakHeightSum_compositions_closed_form
 ---
 
-# Symmetric Peak Height Sum compositions closed form
+# Closed form for the total symmetric peak height over compositions
 
-Closed form of `hsp(n)`, with `ω± = 1 ± i√3`:
-`hsp(n) = 2^{n-1} (7n - 24) / 49 + (-33 - 15i√3)(-2)ⁿ / (441 ω₊^{n+1})
-+ (-33 + 15i√3)(-2)ⁿ / (441 ω₋^{n+1}) + 1/3` for all `n ≥ 0` (`2^{n-1}` written `2ⁿ / 2`).
+**Closed form for the total symmetric peak height over compositions.** For $n \ge 0$ let
+$\mathrm{hsp}(n)$ be the sum, over all compositions $c$ of $n$, of the symmetric peak height
+sum of the sequence of parts of $c$, and let $\omega_\pm = 1 \pm i\sqrt{3}$. Then for every
+$n \ge 0$, as complex numbers,
+
+$$
+\mathrm{hsp}(n) = \frac{2^n}{2} \cdot \frac{7n - 24}{49} +
+\frac{(-33 - 15 i \sqrt{3})(-2)^n}{441\, \omega_+^{n+1}} +
+\frac{(-33 + 15 i \sqrt{3})(-2)^n}{441\, \omega_-^{n+1}} + \frac{1}{3}.
+$$
 
 ## Depends on
 
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
 
 ## Sources
 

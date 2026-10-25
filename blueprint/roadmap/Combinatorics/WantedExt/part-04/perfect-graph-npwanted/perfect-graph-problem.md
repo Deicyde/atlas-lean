@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PerfectGraphNPWanted.perfectGraphProblem
 ---
 
-# Perfect Graph Problem
+# The perfect-graph decision problem
 
-The perfect-graph decision problem as a bitstring decision problem:
-decode an instance, and accept exactly the valid instances whose graph
-is perfect in the repository's `IsPerfect` sense.
-Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.
+**The perfect-graph decision problem.** The decision problem on bitstrings that accepts a
+bitstring $x$ exactly when $x$ decodes, under the bitstring encoding of adjacency-matrix
+instances, to a valid instance whose graph is perfect. Bitstrings that do not decode to an
+instance, or decode to an invalid one, are rejected.
 
 ## Depends on
 
@@ -18,9 +18,9 @@ Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.
 
 ## Proof depends on
 
-- [Perfect Graph Instance](perfect-graph-instance.md)
-- [Valid](valid.md)
-- [To Simple Graph](to-simple-graph.md)
+- [Adjacency-matrix graph instance](perfect-graph-instance.md)
+- [Valid adjacency-matrix instance](valid.md)
+- [Graph of a valid instance](to-simple-graph.md)
 - [Perfect graph](../../../MathlibExt/part-01/simple-graph/part-03/perfect-graph/is-perfect.md)
 - [Bitstring Encoding](../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 - [Bit Decode](../../../../Computability/MathlibExt/complexity/bit-decode.md)
@@ -34,3 +34,4 @@ Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PerfectGraphNPWanted](../../../../../sources/v2/WantedExt.md)
+- [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_of_lt
 ---
 
-# Weighted Schreier Count of lt
+# Weighted Schreier counts for $n < k$
 
-For `k > n`, `a_{k,n} = F_{n+1}`. Stated for all `n < k`, including `n = 0`
-(`a_{k,0} = 1 = F_1`), where the paper takes `n ∈ ℕ` positive.
+**Weighted Schreier counts for $n < k$.** For all natural numbers $n < k$, the weighted
+Schreier count satisfies $a_{k,n} = F_{n+1}$, where $F_j$ is the $j$-th Fibonacci number
+($F_0 = 0$, $F_1 = 1$).
+
+This includes $n = 0$, where $a_{k,0} = 1 = F_1$; the source takes $n$ positive.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

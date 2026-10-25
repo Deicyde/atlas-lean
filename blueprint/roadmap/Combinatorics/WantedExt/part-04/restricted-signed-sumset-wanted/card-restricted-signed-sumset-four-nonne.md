@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSignedSumset_four_nonnegative_ge
 ---
 
-# Card restricted Signed Sumset four nonnegative ge
+# Lower bound for restricted signed 4-fold sumsets of nonnegative sets containing zero
 
-For a `k`-element set of nonnegative integers containing zero, this states only the
-paper's lower bound `8k-19`. The inverse sentence is deliberately omitted: at `k=5`,
-`A={0,1,2,4,6}` has cardinality `21=8*5-19` but is not a dilated interval, as witnessed
-by `card_restrictedSignedSumset_four_counterexample` and `ne_scaleFinset_zeroInterval_five`
-above.
+**Lower bound for restricted signed 4-fold sumsets of nonnegative sets containing zero.**
+Let $k \ge 5$, let $A$ be a set of $k$ nonnegative integers with $0 \in A$, and write
+$4^{\wedge}_{\pm} A$ for the restricted signed 4-fold sumset of $A$. Then
+$|4^{\wedge}_{\pm} A| \ge 8k - 19$.
+
+The inverse statement of the source, that equality forces $A = d \cdot \{0, 1, \dots, k - 1\}$
+for some integer $d$ (where $d \cdot B = \{db : b \in B\}$), is omitted: $A = \{0, 1, 2, 4, 6\}$
+has $|4^{\wedge}_{\pm} A| = 21 = 8 \cdot 5 - 19$ but is not of that form.
 
 ## Depends on
 

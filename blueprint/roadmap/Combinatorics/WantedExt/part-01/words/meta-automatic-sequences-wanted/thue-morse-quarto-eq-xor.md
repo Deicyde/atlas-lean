@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.thueMorseQuarto_eq_xor
 ---
 
-# Thue Morse Quarto eq xor
+# Thue–Morse quarto sequence from the Thue–Morse sequence
 
-Proposition 8: `𝒬(n) = t(n) ⊕ d(n)` where `t` is the Thue–Morse sequence and
-`d(0) = 0`, `d(n) = ⌊log₂ n⌋ mod 2` (here `Nat.log 2 0 = 0` gives `d(0) = 0`).
+**Thue–Morse quarto sequence from the Thue–Morse sequence.** Let $\mathcal{Q}$ be the
+Thue–Morse quarto sequence and $t$ the Thue–Morse sequence, and let $d(0) = 0$ and
+$d(n) = \lfloor \log_2 n \rfloor \bmod 2$ for $n \ge 1$. Then for every $n \ge 0$,
+$\mathcal{Q}(n) = t(n) \oplus d(n)$, where $\oplus$ is addition modulo $2$.
 
 ## Depends on
 
 - [Thue–Morse sequence](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
-- [Thue Morse Quarto](thue-morse-quarto.md)
+- [Thue–Morse quarto sequence](thue-morse-quarto.md)
 
 ## Sources
 

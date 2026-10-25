@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciComplementValue_examples
 ---
 
-# Fibonacci Complement Value examples
+# Values of small Fibonacci complement words
 
-`val_{𝓕c}(1) = -1`, `val_{𝓕c}(100) = -2`, `val_{𝓕c}(001) = 1`, `val_{𝓕c}(010) = 2`.
+**Values of small Fibonacci complement words.** The Fibonacci complement values of the
+digit words $1$, $100$, $001$ and $010$ (most significant digit first) are $-1$, $-2$, $1$ and
+$2$, respectively.
 
 ## Depends on
 
-- [Fibonacci Complement Value](fibonacci-complement-value.md)
+- [Fibonacci complement value](fibonacci-complement-value.md)
 
 ## Sources
 

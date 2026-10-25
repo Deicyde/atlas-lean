@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.ascDesGF_213_231
 ---
 
-# Asc Des GF 213 231
+# Ascents and descents over permutations avoiding $213$ and $231$
 
-Corollary 4, equation (30): over `S_n(213, 231)`,
-`∑ xⁿ p^{asc} q^{des} = (1 + x - px - qx) / (1 - px - qx)`, stated after clearing the
-denominator; only the `(asc, des)` identity is stated. (The record's lead-in names
-`S_n(213, 312)`, the sums `S_n(213, 231)`; both classes have this distribution.)
+**Ascents and descents over permutations avoiding $213$ and $231$.** Let
+
+$$G = \sum_{n \ge 0} \sum_{\sigma} x^n p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)},$$
+
+where $\sigma$ runs over the permutations of $\{0, 1, \dots, n-1\}$ that avoid both patterns
+$213$ and $231$, and $\mathrm{asc}(\sigma)$ and $\mathrm{des}(\sigma)$ are the numbers of ascents
+and descents of $\sigma$; $G$ is a formal power series in $x$ with coefficients in
+$\mathbb{Q}[p, q]$. Then
+
+$$(1 - px - qx)\, G = 1 + x - px - qx.$$
+
+The lead-in of the source's Corollary 4 names the permutations avoiding $213$ and $312$ instead;
+both classes have this distribution of ascents and descents.
 
 ## Depends on
 
-- [Asc Des GF](asc-des-gf.md)
-- [Pattern3](pattern3.md)
+- [Ascent–descent generating function of a pair of patterns](asc-des-gf.md)
+- [Length-three pattern from one-line values](pattern3.md)
 
 ## Sources
 

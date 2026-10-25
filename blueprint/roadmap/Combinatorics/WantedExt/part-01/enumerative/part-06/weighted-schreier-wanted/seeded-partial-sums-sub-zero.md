@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.seededPartialSums_sub_zero
 ---
 
-# Seeded Partial Sums sub zero
+# Effect of the seed on seeded partial sums
 
-Comparison of seeded and unseeded iterated partial sums: for a seed sequence
-`s = (b_n)`, `t^s_{k,n} - t^0_{k,n} = ∑_{i=0}^{k-1} C(n,i) b_{k-1-i}` for all `n ≥ 0`.
+**Effect of the seed on seeded partial sums.** Let $R$ be a commutative ring, let
+$a = (a_n)_{n \ge 0}$ and $b = (b_n)_{n \ge 0}$ be sequences in $R$, and write $t^b_{k,n}$ for
+the seeded partial sums of $a$ with seed sequence $b$ and $t^0_{k,n}$ for those with the zero
+seed sequence. Then for all $k, n \ge 0$,
+$t^b_{k,n} - t^0_{k,n} = \sum_{i\lt k} \binom{n}{i} b_{k-1-i}$, where the binomial coefficients
+are read as elements of $R$.
 
 ## Depends on
 
-- [Seeded Partial Sums](seeded-partial-sums.md)
+- [Seeded partial sums](seeded-partial-sums.md)
 
 ## Sources
 

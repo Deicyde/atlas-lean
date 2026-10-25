@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.cos_sub_neg_of_tbar_inter_ncard_four
 ---
 
-# Lemma 2
+# Four-point intersections of constrained T's
 
-**Lemma 2** (constrained T's). A constrained long-legged `T̄` with center `c` and stem
-direction `(cos θ, sin θ)` is the line through `c` perpendicular to the stem (the crossbar)
-together with the stem ray from `c`. If two `T̄`'s meet in exactly four points, then
-`cos(θ₁ - θ₂) < 0`: their stem directions are more than `π/2` apart.
+**Four-point intersections of constrained T's.** For a point $c \in \mathbb{R}^2$ and an angle
+$\theta \in \mathbb{R}$, the constrained long-legged T $\bar T(c, \theta)$ is the union of the
+crossbar, the line $\{c + s(-\sin\theta, \cos\theta) : s \in \mathbb{R}\}$, and the stem, the ray
+$\{c + s(\cos\theta, \sin\theta) : s \ge 0\}$. For all $c_1, c_2 \in \mathbb{R}^2$ and
+$\theta_1, \theta_2 \in \mathbb{R}$, if $\bar T(c_1, \theta_1) \cap \bar T(c_2, \theta_2)$ has
+exactly four points, then $\cos(\theta_1 - \theta_2) < 0$, that is, the two stem directions make
+an angle greater than $\pi/2$.
 
 ## Depends on
 

@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_add_sub_eq_tribonacci
 ---
 
-# Corollary 42
+# Tribonacci formula for a diagonal sum of trinomial coefficients
 
-**Corollary 42.** `∑_k binom(n+k, n-k)_2 = T_{2(n+1)}/2 + binom(n, n)_2/2 +
-(1/2) ∑_{k=0}^{n-1} binom(k, k)_2 (T_{2(n-k)} + T_{2(n-1-k)})`, with `T` the Tribonacci
-numbers (`T_0 = T_1 = 0`, `T_2 = 1`), so `T_{2n}` is the bisection A099463.
+**Tribonacci formula for a diagonal sum of trinomial coefficients.**
+Write $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in
+$(1 + t + t^2)^n$, and $T_n$ for the Tribonacci numbers, $T_0 = T_1 = 0$, $T_2 = 1$ and
+$T_{n+3} = T_{n+2} + T_{n+1} + T_n$. Then for every $n \in \mathbb{N}$,
+
+$$\sum_{k=0}^{n} \binom{n + k}{n - k}_2 = \frac{T_{2(n+1)}}{2} + \frac{1}{2}\binom{n}{n}_2 +
+\frac{1}{2} \sum_{k=0}^{n-1} \binom{k}{k}_2 \left(T_{2(n-k)} + T_{2(n-1-k)}\right).$$
+
+The sequence $(T_{2n})$ is the bisection A099463.
 
 ## Depends on
 

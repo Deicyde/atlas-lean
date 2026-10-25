@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_zero
 ---
 
-# Josephus eq mul sub iterate maximum Nim H zero
+# Josephus survivor via iteration from zero
 
-Theorem 3: for `k ≥ 2` and positive `n`, some positive `p` brackets
-`n(k-1)` strictly above `h_k^(p-1)(0)` and weakly below `h_k^p(0)`, and the
-one-based survivor `josephus k n` is `nk-h_k^p(0)`. There is no deviation.
+**Josephus survivor via iteration from zero.** Let $k \ge 2$ and $n \ge 1$ be natural
+numbers, let $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ for natural numbers $x$, and write
+$h_k^p$ for the $p$-th iterate of $h_k$. Then there is a natural number $p \ge 1$ with
+$h_k^{p-1}(0) < n(k-1) \le h_k^p(0)$ and $J_k(n) = nk - h_k^p(0)$, where $J_k$ is the Josephus
+function for elimination step $k$.
 
 ## Depends on
 
 - [Josephus survivor function](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
-- [Maximum Nim H](maximum-nim-h.md)
+- [The Maximum Nim map $h_k$](maximum-nim-h.md)
 
 ## Sources
 

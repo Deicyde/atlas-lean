@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.groupDiffBasisNumber_le_hundred_sqrt
 ---
 
-# Group Diff Basis Number le hundred sqrt
+# Square-root bound for difference bases of finite fields
 
-For every finite field `K` of order `q`, `η_1(K) ≤ 100 √q`.
+**Square-root bound for difference bases of finite fields.** For every finite field $K$ with
+$q$ elements, the least size $\eta_1(K)$ of a set $A \subseteq K$ such that every element of $K$
+is a difference $a - a'$ of two elements of $A$ satisfies $\eta_1(K) \le 100 \sqrt{q}$.
 
 ## Depends on
 
-- [Group Diff Basis Number](group-diff-basis-number.md)
+- [Difference basis number of an abelian group](group-diff-basis-number.md)
 
 ## Sources
 

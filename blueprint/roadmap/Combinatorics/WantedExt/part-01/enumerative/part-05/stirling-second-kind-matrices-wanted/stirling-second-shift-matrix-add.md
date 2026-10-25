@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.stirlingSecondShiftMatrix_add
 ---
 
-# Stirling Second Shift Matrix add
+# Composition of shifted Stirling matrices
 
-Corollary 3: `S^[m₁+m₂](n) = S^[m₁](n) s(n) S^[m₂](n)`.
+**Composition of shifted Stirling matrices.** For natural numbers $m$ and $n$, let $S^{[m]}(n)$
+be the $n \times n$ rational matrix with entries $S(i + m, j)$ for $1 \le i, j \le n$, where
+$S(i, j)$ denotes the Stirling numbers of the second kind, and let $s(n)$ be the $n \times n$
+rational matrix with entries the signed Stirling numbers of the first kind $s(i, j)$ for
+$1 \le i, j \le n$. Then for all natural numbers $m_1$, $m_2$ and $n$,
+$S^{[m_1 + m_2]}(n) = S^{[m_1]}(n)\, s(n)\, S^{[m_2]}(n)$.
 
 ## Depends on
 
-- [Stirling First Matrix](stirling-first-matrix.md)
-- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
+- [Stirling matrix of the first kind](stirling-first-matrix.md)
+- [Shifted Stirling matrix of the second kind](stirling-second-shift-matrix.md)
 
 ## Sources
 

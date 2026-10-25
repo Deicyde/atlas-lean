@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.permDoubleAscents_peaks_small
 ---
 
-# Perm Double Ascents peaks small
+# Double ascents, double descents, peaks and valleys in length three
 
-Double ascents, double descents, peaks and valleys on length `3`: `123` has one double
-ascent, `321` one double descent, `132` one peak and no valley, `213` one valley and no peak, and
-`132` has no double ascent or double descent.
+**Double ascents, double descents, peaks and valleys in length three.** Writing permutations
+of $\{0, 1, 2\}$ in one-based one-line notation, and $\operatorname{dasc}$,
+$\operatorname{ddes}$, $\operatorname{pk}$ and $\operatorname{vl}$ for the numbers of double
+ascents, double descents, peaks and valleys, $\operatorname{dasc}(123) = 1$,
+$\operatorname{ddes}(321) = 1$, $\operatorname{dasc}(132) = \operatorname{ddes}(132) = 0$,
+$\operatorname{pk}(132) = 1$, $\operatorname{vl}(132) = 0$, $\operatorname{pk}(213) = 0$ and
+$\operatorname{vl}(213) = 1$.
 
 ## Depends on
 
-- [Pattern3](pattern3.md)
+- [Length-three pattern from one-line values](pattern3.md)
 - [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
 - [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
 - [Number of peaks of a permutation](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_mul_choose_alternating
 ---
 
-# Theorem 16
+# Alternating binomial transform of a row of trinomial coefficients
 
-**Theorem 16.** `∑_{k=m}^{2n} binom(n, k)_2 binom(k, m) (-1)^k = binom(n, m)_2`.
+**Alternating binomial transform of a row of trinomial coefficients.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For all
+$n, m \in \mathbb{N}$
+
+$$\sum_{k=m}^{2n} \binom{n}{k}_2 \binom{k}{m} (-1)^k = \binom{n}{m}_2.$$
 
 ## Depends on
 

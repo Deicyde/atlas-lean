@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.boolFunWeight_const_true
 ---
 
-# Bool Fun Weight const true
+# Weight of the constant one function
 
-The constant function `1` on `n` variables has weight `2 ^ n`.
+**Weight of the constant one function.** For every $n$, the constant function $1$ on $n$
+variables has weight $2^n$.
 
 ## Depends on
 
-- [Bool Fun Weight](bool-fun-weight.md)
+- [Weight of a Boolean function](bool-fun-weight.md)
 
 ## Sources
 

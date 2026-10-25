@@ -8,12 +8,13 @@ lean: Cslib.Automata.EncodedNFA.exists_language_eq
 
 # Every finite NFA has an encoding
 
-**Every finite NFA has an encoding** (with no ε-moves needed).
+**Every finite NFA has an encoding.** An NFA over a finite alphabet with finitely many states
+has an encoded NFA with the same language.
 
 ## Depends on
 
 - [Encoded NFA](encoded-nfa.md)
-- [Language](language.md)
+- [Language of an encoded NFA](language.md)
 
 ## Proof depends on
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_eq_zero_iff_isP
 ---
 
-# Maximum Nim Grundy eq zero iff is P
+# Grundy value zero characterizes P-positions in Maximum Nim
 
-Theorem 1: under `f 0 = 0` and the unit-step monotonicity condition expressed by
-`f (m-1) ≤ f m ≤ f (m-1)+1` for positive `m`, a position has Grundy number zero
-exactly when it is a P-position (previous-player win) of `maximumNimGame f`. There is no deviation.
+**Grundy value zero characterizes P-positions in Maximum Nim.** Let $f : \mathbb{N} \to
+\mathbb{N}$ satisfy $f(0) = 0$ and $f(m-1) \le f(m) \le f(m-1) + 1$ for every $m \ge 1$. Then for
+every pile size $x \in \mathbb{N}$, the Grundy number of $x$ in Maximum Nim with rule function $f$
+is $0$ if and only if $x$ is a P-position (a previous-player win under normal play) of that game.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Maximum Nim Game](maximum-nim-game.md)
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [The Maximum Nim game](maximum-nim-game.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

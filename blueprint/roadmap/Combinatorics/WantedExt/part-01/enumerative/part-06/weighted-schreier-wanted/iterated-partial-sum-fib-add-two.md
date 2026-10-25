@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.iteratedPartialSum_fib_add_two
 ---
 
-# Iterated Partial Sum fib add two
+# Iterated partial sums of shifted Fibonacci numbers
 
-For all `k, ℓ ≥ 0`,
-`P^{(k)}((F_{n+2}))(ℓ) = P^{(k)}((F_n))(ℓ) + P^{(k)}((F_n))(ℓ+1)`.
+**Iterated partial sums of shifted Fibonacci numbers.** Let $F_n$ denote the Fibonacci
+numbers, with $F_0 = 0$ and $F_1 = 1$, and write $P^{(k)}(x)(m)$ for the $k$-fold iterated
+partial sum of a sequence $x$ of natural numbers at $m$. Then for all $k, \ell \ge 0$,
+$P^{(k)}((F_{n+2})_{n \ge 0})(\ell) = P^{(k)}((F_n)_{n \ge 0})(\ell) +
+P^{(k)}((F_n)_{n \ge 0})(\ell + 1)$.
 
 ## Depends on
 
-- [Iterated Partial Sum](iterated-partial-sum.md)
+- [Iterated partial sums](iterated-partial-sum.md)
 
 ## Sources
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.IsTiling
 ---
 
-# Is Tiling
+# Tiling of an abelian group by translates
 
-Given an abelian group `G`, we say that `F ⊆ G` is a tiling of `G` with tiling set `A ⊆ G` if
-the translates of `F` by elements `a ∈ A` form a partition of `G`. In other words the map
-`A × F → G` defined by `fun (a,f) ↦ a + f` is a bijection.
+**Tiling of an abelian group by translates.** Let $G$ be an abelian group and let
+$F, A \subseteq G$. Then $F$ tiles $G$ with tiling set $A$ if the map $A \times F \to G$,
+$(a, f) \mapsto a + f$, is a bijection; equivalently, every element of $G$ lies in $a + F$ for
+exactly one $a \in A$.
 
 ## Depends on
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.leastCoverExponentClaim
 ---
 
-# Least Cover Exponent Claim
+# Statement that the Marton coset-cover exponent is attained
 
-The source's literal least-exponent clause, separated from totalized `sInf`.
+**Statement that the Marton coset-cover exponent is attained.** The proposition that the
+Marton coset-cover exponent $C^*$, the infimum of the admissible asymptotic coset-cover exponents,
+is the least admissible exponent: $C^*$ is itself an admissible asymptotic coset-cover exponent,
+and $C^* \le C$ for every admissible asymptotic coset-cover exponent $C$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Asymptotic Coset Cover Exponents](asymptotic-coset-cover-exponents.md)
-- [Marton PFRCover Exponent](marton-pfrcover-exponent.md)
+- [The Marton coset-cover exponent](marton-pfrcover-exponent.md)
 
 ## Sources
 

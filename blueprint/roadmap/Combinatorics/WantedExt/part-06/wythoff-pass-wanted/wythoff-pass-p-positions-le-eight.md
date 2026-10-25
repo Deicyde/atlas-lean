@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.wythoffPass_pPositions_le_eight
 ---
 
-# Wythoff Pass p Positions le eight
+# P-positions of Wythoff's game with a pass for $x, y \le 8$
 
-The P-positions (Grundy number `0`) with `x, y ≤ 8`: (i) without the pass they are the set
-`A`; (ii) with the pass available they are the set `B`; (iii) in the sum of Wythoff's game and a
-pile of one stone, with the stone present, they are the set `C`.
+**P-positions of Wythoff's game with a pass for $x, y \le 8$.** Let $\mathcal{G}_1(x, y, p)$ be
+the Grundy number of Wythoff's game with a one-time pass ($p = 1$: the pass is still available;
+$p = 0$: classical Wythoff's game), and $\mathcal{G}_2(x, y, p)$ the Grundy number of the sum of
+Wythoff's game and a pile of $p$ stones. Let
+$A = \{(0, 0), (1, 2), (2, 1), (3, 5), (5, 3), (4, 7), (7, 4)\}$,
+$B = \{(0, 0), (1, 3), (3, 1), (2, 5), (5, 2), (4, 8), (8, 4), (6, 7), (7, 6)\}$ and
+$C = \{(0, 1), (1, 0), (2, 2), (3, 6), (6, 3), (4, 8), (8, 4), (5, 7), (7, 5)\}$. Then for all
+natural numbers $x \le 8$ and $y \le 8$: $\mathcal{G}_1(x, y, 0) = 0$ if and only if
+$(x, y) \in A$; $\mathcal{G}_1(x, y, 1) = 0$ if and only if $(x, y) \in B$; and
+$\mathcal{G}_2(x, y, 1) = 0$ if and only if $(x, y) \in C$.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
-- [Wythoff Pass Set A](wythoff-pass-set-a.md)
-- [Wythoff Pass Set B](wythoff-pass-set-b.md)
-- [Wythoff Pass Set C](wythoff-pass-set-c.md)
-- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
+- [The set $A$](wythoff-pass-set-a.md)
+- [The set $B$](wythoff-pass-set-b.md)
+- [The set $C$](wythoff-pass-set-c.md)
+- [Grundy numbers of Wythoff's game plus one stone](wythoff-plus-stone-grundy.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bool Fun Nondegenerate On](is-bool-fun-nondegenerate-on.md)
+- [Non-degeneracy in a variable](is-bool-fun-nondegenerate-on.md)
 
 ## Sources
 

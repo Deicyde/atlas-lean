@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.BusyBeaver.scoreOf
 ---
 
-# Score Of
+# Score of a machine
 
-The ones score contributed by a machine: the ones on its final tape
-if it halts, and `0` otherwise.
+**Score of a machine.** For a Busy Beaver machine $M$: if $M$ halts on the blank tape,
+with halting time $T$, its score is the number of ones of $M$ after $T$ steps; if $M$ does not
+halt, its score is $0$.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Halts](halts.md)
-- [Halt Time](halt-time.md)
-- [Ones At](ones-at.md)
+- [Halting on the blank tape](halts.md)
+- [Halting time](halt-time.md)
+- [Number of ones after $t$ steps](ones-at.md)
 
 ## Sources
 

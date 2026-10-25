@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.symmetricPeakHeightSum_compositions_bivariate_genFun
 ---
 
-# Symmetric Peak Height Sum compositions bivariate gen Fun
+# Bivariate generating function of the total symmetric peak height over compositions
 
-Bivariate generating function of `hsp(n, k)` (`k` = number of parts):
-`∑ hsp(n, k) xⁿ yᵏ = y³ x⁴ / ((1 - x³)(1 - x - yx)²)`, stated in `ℤ[y]⟦x⟧` after
-clearing denominators.
+**Bivariate generating function of the total symmetric peak height over compositions.**
+For $n, k \ge 0$ let $\mathrm{hsp}(n, k)$ be the sum, over all compositions $c$ of $n$ with
+exactly $k$ parts, of the symmetric peak height sum of the sequence of parts of $c$. Then in
+the ring $\mathbb{Z}[y][[x]]$ of formal power series in $x$ over $\mathbb{Z}[y]$,
+
+$$
+\left(\sum_{n \ge 0} \sum_{k \ge 0} \mathrm{hsp}(n, k)\, y^k x^n\right)
+(1 - x^3)(1 - x - yx)^2 = y^3 x^4,
+$$
+
+that is, $\sum_{n, k \ge 0} \mathrm{hsp}(n, k)\, x^n y^k = y^3 x^4 / ((1 - x^3)(1 - x - yx)^2)$.
 
 ## Depends on
 
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
 
 ## Sources
 

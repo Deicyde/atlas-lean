@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.BusyBeaver.Halts
 ---
 
-# Halts
+# Halting on the blank tape
 
-The machine halts on the blank tape.
+**Halting on the blank tape.** A Busy Beaver machine $M$ halts when there is a number of steps
+$t$ such that $M$ halts within $t$ steps, that is, when $M$ started from the initial
+blank-tape configuration eventually reaches the halt state.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Halts Within](halts-within.md)
+- [Halting within $t$ steps](halts-within.md)
 
 ## Sources
 

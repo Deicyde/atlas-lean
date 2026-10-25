@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Automata.EncodedDFA.compl
 ---
 
-# Compl
+# Complement of an encoded DFA
 
-The complement: the same transitions, accepting exactly the listed states that `D` does not
-accept.
+**Complement of an encoded DFA.** The complement of an encoded DFA $D$ has the same start
+state and the same transitions as $D$, and its accepting states are those states of $D$ (its
+start state and the targets of its listed transitions) that $D$ does not accept.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ accept.
 
 ## Proof depends on
 
-- [States](states.md)
+- [States of an encoded DFA](states.md)
 
 ## Sources
 

@@ -5,10 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.dascDdesGF
 ---
 
-# Dasc Ddes GF
+# Double ascent–double descent generating function of a pair of patterns
 
-The joint generating function `∑_{n ≥ 0} ∑_{σ ∈ S_n(τ, ρ)} xⁿ y^{dasc σ} z^{ddes σ}` in
-`(MvPolynomial (Fin 2) ℚ)⟦x⟧`, with `y = X 0`, `z = X 1` (the empty permutation contributes `1`).
+**Double ascent–double descent generating function of a pair of patterns.** For
+permutations $\tau$ and $\rho$ of $\{0, 1, 2\}$, let $S_n(\tau, \rho)$ be the set of permutations
+of $\{0, 1, \dots, n-1\}$ that contain neither $\tau$ nor $\rho$ as a classical pattern. The
+double ascent–double descent generating function of $(\tau, \rho)$ is the formal power series
+
+$$\sum_{n \ge 0} \sum_{\sigma \in S_n(\tau, \rho)}
+x^n y^{\mathrm{dasc}(\sigma)} z^{\mathrm{ddes}(\sigma)}$$
+
+in $x$ with coefficients in the polynomial ring $\mathbb{Q}[y, z]$, where $\mathrm{dasc}(\sigma)$
+and $\mathrm{ddes}(\sigma)$ are the numbers of double ascents and double descents of $\sigma$.
+The empty permutation ($n = 0$) contributes the constant term $1$.
 
 ## Depends on
 

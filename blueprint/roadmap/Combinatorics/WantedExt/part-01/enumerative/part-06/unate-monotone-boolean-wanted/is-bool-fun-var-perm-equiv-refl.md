@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isBoolFunVarPermEquiv_refl
 ---
 
-# Is Bool Fun Var Perm Equiv refl
+# Permutation equivalence is reflexive
 
-Every Boolean function is permutation-equivalent to itself.
+**Permutation equivalence is reflexive.** Every $n$-variable Boolean function is
+permutation-equivalent to itself.
 
 ## Depends on
 
-- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Permutation equivalence of Boolean functions](is-bool-fun-var-perm-equiv.md)
 
 ## Sources
 

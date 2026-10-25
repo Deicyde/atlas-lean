@@ -20,7 +20,7 @@ lean: Cslib.Complexity.Karp.sat3Dec_npHard
 
 ## Proof depends on
 
-- [Every NP problem reduces to `satDec`](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](../../../cook-levin/binary-hardness/sat-dec-np-hard.md)
 - [Np Hard of poly Many One Red](np-hard-of-poly-many-one-red.md)
 - [Sat Dec poly Many One Red sat3 Dec](sat-dec-poly-many-one-red-sat3-dec.md)
 - [Sat Dec](../../../../cook-levin/sat-dec.md)

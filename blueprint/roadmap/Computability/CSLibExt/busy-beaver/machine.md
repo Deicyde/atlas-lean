@@ -5,12 +5,15 @@ statement: formalized
 lean: Cslib.BusyBeaver.Machine
 ---
 
-# Machine
+# Busy Beaver machine
 
-A Busy Beaver machine with `n` working states: for each state and read
-symbol, the symbol to write, the head movement, and the next state, where
-`none` is the halt state. The write and move of a halting transition are
-still performed, and the halting step counts toward the runtime.
+**Busy Beaver machine.** A Busy Beaver machine with $n$ working states is a transition table
+that assigns to each of the $n$ working states and each read symbol in $\{0, 1\}$ a symbol in
+$\{0, 1\}$ to write, a head movement (left or right), and a next state, which is either one of
+the $n$ working states or the halt state.
+
+The write and move of a halting transition are still performed, and the halting step counts
+toward the runtime.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Move](move.md)
+- [Head movement](move.md)
 
 ## Sources
 

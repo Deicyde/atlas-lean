@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSumset_ge_and_eq_iff_ap
 ---
 
-# Card restricted Sumset ge and eq iff ap
+# Nathanson's bound for restricted sumsets and its inverse
 
-The first conjunct is Nathanson's lower bound for every nonempty finite integer set
-with `1 ≤ h ≤ |A|`. The second is the inverse clause: under `|A| ≥ 5`,
-`2 ≤ h ≤ |A|-2`, equality holds if and only if `A` is an arithmetic progression, expressed
-by `0 < d ∧ (A : Set ℤ).IsAPOfLengthWith A.card a d`.
+**Nathanson's bound for restricted sumsets and its inverse.** Let $A$ be a nonempty finite
+set of $k$ integers and let $h$ be a natural number with $1 \le h \le k$. Then the restricted
+sumset $h^{\wedge} A$ has at least $hk - h^2 + 1$ elements. Moreover, if $k \ge 5$ and
+$2 \le h \le k - 2$, then $h^{\wedge} A$ has exactly $hk - h^2 + 1$ elements if and only if there
+are integers $a$ and $d > 0$ such that $A$ is the arithmetic progression of length $k$ with
+first term $a$ and difference $d$, that is, $A = \{a + nd : 0 \le n < k\}$.
 
 ## Depends on
 

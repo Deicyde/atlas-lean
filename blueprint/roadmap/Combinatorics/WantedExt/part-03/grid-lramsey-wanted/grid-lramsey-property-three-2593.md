@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gridLRamseyProperty_three_2593
 ---
 
-# Grid LRamsey Property three 2593
+# Three-coloring the 2593 × 2593 grid forces a monochromatic L
 
-`R_3(L) ≤ 2593`: every 3-coloring of `[2593] × [2593]` contains a monochromatic L.
+**Three-coloring the 2593 × 2593 grid forces a monochromatic L.** Write
+$[n] = \{1, \dots, n\}$. Every coloring of the grid $[2593] \times [2593]$ with $3$ colors contains
+a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le 2593$ and $y + d \le 2593$ such
+that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ have the same color. Equivalently,
+the grid Ramsey number $R_3(L)$, the least $n$ for which every coloring of $[n] \times [n]$ with
+$3$ colors contains a monochromatic L, is at most $2593$.
 
 ## Depends on
 
-- [Grid LRamsey Property](grid-lramsey-property.md)
+- [Grid Ramsey property for Ls](grid-lramsey-property.md)
 
 ## Sources
 

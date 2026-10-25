@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.corollary_1_7
 ---
 
-# Corollary 1 7
+# Aperiodic continuous tiling equations in high-dimensional Euclidean space
 
-Statement of Corollary 1.7 (Counterexample to Conjecture 1.3):
-
-For all sufficiently large `d`, there exists a bounded measurable set `σ ⊆ ℝᵈ` of positive
-measure such that `σ` forms an aperiodic continuous tiling equation.
+**Aperiodic continuous tiling equations in high-dimensional Euclidean space.** There is a natural
+number $d_0$ such that for every natural number $d \ge d_0$ there exists a bounded measurable set
+$\sigma \subseteq \mathbb{R}^d$ of positive Lebesgue measure that forms an aperiodic continuous
+tiling equation.
 
 ## Depends on
 
-- [Is Aperiodic Continuous Tiling Equation](is-aperiodic-continuous-tiling-equation.md)
+- [Aperiodic continuous tiling equation](is-aperiodic-continuous-tiling-equation.md)
 
 ## Sources
 

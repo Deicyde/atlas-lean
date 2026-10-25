@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isDenseInCubes_one_iff
 ---
 
-# Is Dense In Cubes one iff
+# Density one means containment
 
-Being `1`-dense in `M` means containing `M`.
+**Density one means containment.** For sets $C, M \subseteq \mathbb{N}^t$, the set $C$ is
+$1$-dense in $M$ if and only if $M \subseteq C$.
 
 ## Depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Density in subcubes](is-dense-in-cubes.md)
 
 ## Proof depends on
 
-- [Lattice Cube](lattice-cube.md)
-- [Lattice Cube one](lattice-cube-one.md)
+- [Lattice cube](lattice-cube.md)
+- [Lattice cube of side one](lattice-cube-one.md)
 
 ## Sources
 

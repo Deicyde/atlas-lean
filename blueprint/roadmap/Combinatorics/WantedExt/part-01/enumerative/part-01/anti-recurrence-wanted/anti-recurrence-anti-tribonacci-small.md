@@ -16,7 +16,7 @@ anti-Tribonacci numbers $D_1, D_2, D_3, D_4$ of the Walnut anti-Tribonacci const
 ## Depends on
 
 - [Anti-recurrence numbers](anti-recurrence.md)
-- [Anti Tribonacci D](../../part-06/walnut-oeis-problems-wanted/anti-tribonacci-d.md)
+- [Anti-Tribonacci numbers](../../part-06/walnut-oeis-problems-wanted/anti-tribonacci-d.md)
 
 ## Sources
 

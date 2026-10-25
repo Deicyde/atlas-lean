@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount
 ---
 
-# Weighted Schreier Count
+# Weighted Schreier-type sets
 
-`a_{k,n}`, the number of sets `E ⊆ {1, …, n}` that are empty or satisfy
-`ω_k(E) < min E`, where `ω_k(E)` is the number of elements of `E` different from `k`.
+**Weighted Schreier-type sets.** For natural numbers $k$ and $n$, let $\omega_k(E)$ denote the
+number of elements of a finite set $E$ that are different from $k$. The weighted Schreier count
+$a_{k,n}$ is the number of subsets $E \subseteq \{1, \dots, n\}$ that are empty or satisfy
+$\omega_k(E) < \min E$.
 
 ## Depends on
 

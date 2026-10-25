@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.BusyBeaver.stepsOf
 ---
 
-# Steps Of
+# Runtime of a Busy Beaver machine
 
-The runtime contributed by a machine to the Busy Beaver maximum:
-its halting time if it halts, and `0` otherwise.
+**Runtime of a Busy Beaver machine.** For a machine $M$ with $n$ working states, the runtime
+of $M$ is its halting time on the blank tape if $M$ halts, and $0$ if $M$ does not halt. This is
+the quantity whose maximum over all $n$-state machines is the shift function $S(n)$.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Halts](halts.md)
-- [Halt Time](halt-time.md)
+- [Halting on the blank tape](halts.md)
+- [Halting time](halt-time.md)
 
 ## Sources
 

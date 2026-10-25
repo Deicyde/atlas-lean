@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.HypercubeFourCycleFreeWanted.hypercubeTuranNumber_cycleGraph_four_one_to_six
 ---
 
-# Hypercube Turan Number cycle Graph four one to six
+# Four-cycle-free subgraphs of the hypercubes of dimensions one to six
 
-`ex(Qₙ, C₄)` for `1 ≤ n ≤ 6`: `1, 3, 9, 24, 56, 132`.
+**Four-cycle-free subgraphs of the hypercubes of dimensions one to six.** For a natural
+number $n$, let $Q_n$ be the $n$-dimensional hypercube, let $C_4$ be the cycle on four vertices,
+and let $\mathrm{ex}(Q_n, C_4)$ be the largest number of edges of a subgraph of $Q_n$ that
+contains no copy of $C_4$. Then for $n = 1, 2, 3, 4, 5, 6$ the value of $\mathrm{ex}(Q_n, C_4)$
+is $1$, $3$, $9$, $24$, $56$ and $132$ respectively.
 
 ## Depends on
 

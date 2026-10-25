@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.throwbackSequence_limiting_frequency
 ---
 
-# Throwback Sequence limiting frequency
+# Limiting frequencies in throwback sequences
 
-For a sequence `X` of distinct positive integers and a term `x = X j`, the limiting
-frequency of `x` in `T(X)` is
-`f(x) = 1 / (x - σ(x) + 1) · ∏_{w < x, w ∈ X} (w - σ(w)) / (w - σ(w) + 1)`,
-where `σ(w) = #{i : X i < w}` is the index of `w` in the sorted sequence `S(X)`.
+**Limiting frequencies in throwback sequences.** Let $X = (x_0, x_1, \dots)$ be a sequence of
+pairwise distinct positive integers with throwback sequence $T(X) = (t_0, t_1, \dots)$, and for a
+natural number $w$ let $\sigma(w)$ be the number of indices $i$ with $x_i < w$. Then for every
+index $j$, writing $x = x_j$, the number of $k < N$ with $t_k = x$, divided by $N$, converges as
+$N \to \infty$ to
+
+$$f(x) = \frac{1}{x - \sigma(x) + 1} \prod_{w} \frac{w - \sigma(w)}{w - \sigma(w) + 1},$$
+
+where the product runs over the values $w < x$ taken by $X$.
+
+For a term $w$ of $X$, $\sigma(w)$ is the index of $w$ in the increasing rearrangement of $X$.
 
 ## Depends on
 
-- [Throwback Sequence](throwback-sequence.md)
+- [Throwback sequence](throwback-sequence.md)
 
 ## Sources
 

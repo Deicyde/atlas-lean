@@ -11,11 +11,11 @@ The theory is consistent: it does not prove the false sentence.
 
 ## Depends on
 
-- [Formal Theory](formal-theory.md)
+- [Formal theory](formal-theory.md)
 
 ## Proof depends on
 
-- [False Sentence](false-sentence.md)
+- [The false sentence](false-sentence.md)
 
 ## Sources
 

@@ -8,7 +8,9 @@ lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.outdegree
 
 # Outdegree
 
-The outdegree of a vertex in the chosen orientation.
+**Outdegree.** In a multigraph with finitely many edges and a chosen orientation, the
+outdegree of a vertex $v$ is the number of edges whose tail is $v$, parallel edges counted
+separately.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Oriented Tail](oriented-tail.md)
+- [Tail of an oriented edge](oriented-tail.md)
 
 ## Sources
 

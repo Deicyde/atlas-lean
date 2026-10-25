@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SnevilyTransversalWanted.conjecture
 ---
 
-# Conjecture
+# Snevily's conjecture
 
-[OPG-655] Snevily's conjecture: in an abelian group of odd order, any
-two equally sized finite subsets can be paired so the sums are distinct.
+**Snevily's conjecture.** The statement that for every finite abelian group $G$ of odd order,
+written additively, and all subsets $A, B \subseteq G$ with $|A| = |B|$, there is a bijection
+$f \colon A \to B$ such that the sums $a + f(a)$, for $a \in A$, are pairwise distinct.
 
-The orderings `aᵢ`, `bᵢ` with pairwise distinct sums `aᵢ + bᵢ` are rendered
-as a bijection `f : A → B` such that `a ↦ a + f a` is injective: given the
-orderings, `f` maps the `i`-th element of `A` to the `i`-th element of `B`,
-and conversely any bijection `f` yields orderings by enumerating `A` and
-transporting along `f`.
+Equivalently, $A$ and $B$ can be enumerated as $a_1, \dots, a_k$ and $b_1, \dots, b_k$ so that
+the sums $a_i + b_i$ are pairwise distinct: given such enumerations, send $a_i$ to $b_i$;
+conversely, enumerate $A$ and transport the enumeration along $f$.
 
 ## Depends on
 
@@ -24,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SnevilyTransversalWanted](../../../../../sources/v2/WantedExt.md)
+- OPG-655.

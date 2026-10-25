@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.basisVectorsLowerBound1_holds
 ---
 
-# Basis Vectors Lower Bound1 holds
+# Basis-vector lower bound for coset-cover exponents
 
-Basis vectors force the asymptotic exponent to be at least one.
+**Basis-vector lower bound for coset-cover exponents.** Every admissible asymptotic
+coset-cover exponent $C$ satisfies $C \ge 1$.
+
+The obstruction comes from sets of basis vectors.
 
 ## Depends on
 
-- [Basis Vectors Lower Bound1](basis-vectors-lower-bound1.md)
+- [Statement of the basis-vector lower bound](basis-vectors-lower-bound1.md)
 
 ## Sources
 

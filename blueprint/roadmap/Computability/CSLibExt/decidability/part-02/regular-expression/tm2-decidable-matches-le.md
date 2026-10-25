@@ -14,8 +14,8 @@ multi-stack machine.
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Equiv Prod](../../../automata/da/encoded-dfa/equiv-prod.md)
-- [Language](../../../automata/da/encoded-dfa/language.md)
+- [Encoded DFAs as triples](../../../automata/da/encoded-dfa/equiv-prod.md)
+- [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
 - [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
 - [Encoded Regex](encoded-regex.md)
 - [Equiv List](equiv-list.md)
@@ -25,11 +25,11 @@ multi-stack machine.
 
 ## Proof depends on
 
-- [Compl](../../../automata/da/encoded-dfa/compl.md)
+- [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
 - [Primrec mk](../../../automata/da/encoded-dfa/primrec-mk.md)
-- [Primrec step](../../../automata/da/encoded-dfa/primrec-step.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
-- [Step](../../../automata/da/encoded-dfa/step.md)
+- [The transition function of encoded DFAs is primitive recursive](../../../automata/da/encoded-dfa/primrec-step.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [Computable Pred of primrec bool](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
 - [Mem B](../../part-01/primrec-list/mem-b.md)
 - [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)

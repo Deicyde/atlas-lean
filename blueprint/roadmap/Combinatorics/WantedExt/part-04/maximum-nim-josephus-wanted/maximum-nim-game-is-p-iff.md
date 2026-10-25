@@ -6,17 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimGame_isP_iff
 ---
 
-# Maximum Nim Game is P iff
+# P-positions of Maximum Nim
 
-A pile `x` is a P-position of `maximumNimGame f` exactly when no legal successor
-`x - u`, for `1 ≤ u ≤ min (f x) x`, is a P-position. This is the normal-play recursion,
-derived from `SpragueGrundy.isP_iff`; the totalizing `min` is the only representational
-deviation.
+**P-positions of Maximum Nim.** Let $f : \mathbb{N} \to \mathbb{N}$ be a rule function and let
+$x$ be a pile size. The position $x$ of the Maximum Nim game with rule $f$ is a P-position
+if and only if, for every $u$ with $1 \le u \le \min(f(x), x)$, the position $x - u$ is not
+a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Maximum Nim Game](maximum-nim-game.md)
+- [The Maximum Nim game](maximum-nim-game.md)
 
 ## Proof depends on
 

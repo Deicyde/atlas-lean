@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stirlingVTildeMatrix
 ---
 
-# Stirling VTilde Matrix
+# Upper triangular matrix Ṽ(n)
 
-The upper triangular matrix `Ṽ(n)` with `Ṽ_{i,j} = (-1)^{j-i} (i-1)! / j!`
-for `j ≥ i`, zero otherwise.
+**Upper triangular matrix Ṽ(n).** For a natural number $n$, $\tilde V(n)$ is the
+$n \times n$ matrix over $\mathbb{Q}$, with rows and columns indexed by $1, \dots, n$, whose
+$(i, j)$ entry is $(-1)^{j-i} (i-1)!/j!$ if $i \le j$ and $0$ if $i > j$.
 
 ## Depends on
 

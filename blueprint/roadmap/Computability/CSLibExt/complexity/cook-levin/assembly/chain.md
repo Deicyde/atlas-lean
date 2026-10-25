@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Assembly.chain
 ---
 
-# Chain
+# Chaining step of the host program
 
-Chaining step: reset the state bit (every generator starts with `false`) and jump.
+**Chaining step of the host program.** For a host label $l$, the chaining step is the host
+statement that sets the Boolean internal state to false (the state in which every generator
+starts) and then jumps to $l$.
 
 ## Depends on
 
-- [HK](hk.md)
-- [HL](hl.md)
-- [HΓ](h.md)
+- [Stacks of the Cook–Levin host machine](hk.md)
+- [Labels of the Cook–Levin host machine](hl.md)
+- [Alphabets of the Cook–Levin host machine](h.md)
 
 ## Sources
 

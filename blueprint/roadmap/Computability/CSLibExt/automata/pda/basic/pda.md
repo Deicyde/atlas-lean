@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Automata.PDA
 ---
 
-# PDA
+# Pushdown automaton
 
-A pushdown automaton over input alphabet `T`, with states in `σ` and
-stack alphabet `Γ`. From state `q`, on optional input (`none` is an
-`ε`-transition) and popped stack symbol `γ`, a transition chooses finitely
-many pairs of a next state and a list of symbols to push.
+**Pushdown automaton.** A pushdown automaton over an input alphabet $T$, with
+states in $\sigma$ and stack alphabet $\Gamma$, consists of a transition function, a start
+state in $\sigma$ and an initial stack symbol in $\Gamma$. The transition function assigns
+to each state $q$, each input option (a letter of $T$, or none for an
+$\varepsilon$-transition) and each popped stack symbol $\gamma$ a finite set of pairs
+$(q', u)$ of a next state $q'$ and a list $u$ of stack symbols to push.
 
-This is the generalized model: the state and stack types themselves are
-unrestricted, and only each transition is finitely branching. A standard
-(textbook) pushdown automaton additionally has finite support in the sense
-of `PDA.FinitelySupported`; without it, `PDA.accepts` can be an arbitrary
-language, so the reverse PDA-to-CFG direction needs finiteness hypotheses.
+This is the generalized model: the state and stack types themselves are unrestricted,
+and only each transition is finitely branching. A standard (textbook) pushdown
+automaton is additionally finitely supported; without that, the language it accepts can
+be an arbitrary language, so the conversion from pushdown automata back to context-free
+grammars needs finiteness hypotheses.
 
 ## Depends on
 

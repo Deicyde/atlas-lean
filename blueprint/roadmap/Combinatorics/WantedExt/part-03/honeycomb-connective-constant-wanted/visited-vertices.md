@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.visitedVertices
 ---
 
-# Visited Vertices
+# Vertices visited by a direction word
 
-The finite set of vertices visited by a direction word, including the origin.
+**Vertices visited by a direction word.** For a word $(d_1, \ldots, d_n)$ of direction
+labels in $\{0, 1, 2\}$, the set of visited vertices is the finite set of its $i$-th vertices for
+$0 \le i \le n$; it contains the origin (for $i = 0$) and the endpoint of the word.
 
 ## Depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
 
 ## Proof depends on
 
-- [Vertex At](vertex-at.md)
+- [Vertices along a direction word](vertex-at.md)
 
 ## Sources
 

@@ -5,20 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.integral_symmetricPeakValley_geometric
 ---
 
-# Integral symmetric Peak Valley geometric
+# Expected symmetric peaks and valleys in geometric words
 
-Expected values over `n ≥ 2` independent geometric variables with parameter
-`p ∈ (0, 1)`, `q = 1 - p`: the number of symmetric peaks has mean `p² q (n - 2) / (1 - q³)`,
-the number of symmetric valleys `p² (1/(1 - q²) - 1/(1 - q³)) (n - 2)`, the sum of peak
-heights `p q (n - 2) / (1 - q³)`, and the sum of valley depths
-`q (p/(1 - q³) - 1/(1 + q)²) (n - 2)`.
+**Expected symmetric peaks and valleys in geometric words.** Let $n \ge 2$, let
+$0 < p < 1$ and $q = 1 - p$, and let $X_1, \dots, X_n$ be independent random variables, each
+geometric on $\{0, 1, 2, \dots\}$ with $\Pr(X_i = k) = q^k p$, and consider the word
+$X_1 X_2 \cdots X_n$. The expected number of its symmetric peaks is
+$p^2 q (n - 2)/(1 - q^3)$, the expected number of its symmetric valleys is
+$p^2 \left(\frac{1}{1 - q^2} - \frac{1}{1 - q^3}\right)(n - 2)$, the expected sum of the
+heights of its symmetric peaks is $p q (n - 2)/(1 - q^3)$, and the expected sum of the depths
+of its symmetric valleys is $q \left(\frac{p}{1 - q^3} - \frac{1}{(1 + q)^2}\right)(n - 2)$.
 
 ## Depends on
 
-- [Symmetric Peak Count](symmetric-peak-count.md)
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
-- [Symmetric Valley Count](symmetric-valley-count.md)
-- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
+- [Number of symmetric peaks](symmetric-peak-count.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
+- [Number of symmetric valleys of a word](symmetric-valley-count.md)
+- [Total depth of the symmetric valleys of a word](symmetric-valley-depth-sum.md)
 
 ## Sources
 

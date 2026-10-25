@@ -7,7 +7,7 @@ status: adopted
 
 Reusable, fully proved computer-science developments built on MathlibExt. Source: <https://github.com/facebookresearch/atlas-lean/tree/main/CSLibExt>.
 
-609 modules declare 12430 public declarations. Leaving
+609 modules declare 12431 public declarations. Leaving
 out 202 instances, the 8874 with a docstring are
 roadmap articles whose statement is that docstring, with its citations moved
 to the article's sources. Theorems are proved and definitions defined unless

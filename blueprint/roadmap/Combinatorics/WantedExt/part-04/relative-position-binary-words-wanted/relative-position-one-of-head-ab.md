@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.relativePosition_one_of_head_ab
 ---
 
-# Relative Position one of head ab
+# Relative position of a word starting with $ab$
 
-If `w` starts with `ab`, then `r(1) = 1`.
+**Relative position of a word starting with $ab$.** If an infinite word $w$ over $\{a, b\}$
+starts with $ab$, then its relative position function satisfies $r(1) = 1$.
 
 ## Depends on
 
-- [Relative Position](relative-position.md)
+- [Relative position function](relative-position.md)
 
 ## Proof depends on
 
-- [Letter Position](letter-position.md)
-- [Letter Position one of head](letter-position-one-of-head.md)
+- [Position function of a letter](letter-position.md)
+- [Position of the first occurrence of the initial letter](letter-position-one-of-head.md)
 
 ## Sources
 

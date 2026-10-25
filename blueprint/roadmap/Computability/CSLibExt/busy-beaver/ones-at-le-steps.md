@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.BusyBeaver.onesAt_le_steps
 ---
 
-# Ones At le steps
+# At most $t$ ones after $t$ steps
 
-Ones are created one per step.
+**At most $t$ ones after $t$ steps.** For every Busy Beaver machine $M$ and every
+$t \in \mathbb{N}$, the number of ones of $M$ after $t$ steps is at most $t$.
 
 ## Depends on
 
-- [Machine](machine.md)
-- [Ones At](ones-at.md)
+- [Busy Beaver machine](machine.md)
+- [Number of ones after $t$ steps](ones-at.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Ones At succ le](ones-at-succ-le.md)
-- [Run](run.md)
+- [Busy Beaver machine configuration](config.md)
+- [The number of ones grows by at most one per step](ones-at-succ-le.md)
+- [Configuration after $t$ steps](run.md)
 
 ## Sources
 

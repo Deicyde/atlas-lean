@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_filePlacementWeight_block
 ---
 
-# Sum file Placement Weight block
+# Cancellation of the weights over a block
 
-On a singleton board for `m ≥ 2`, for every file placement `F₀` that is not an `m`-level rook
-placement, the `m`-weights over its block `P(F₀)` sum to `0`.
+**Cancellation of the weights over a block.** Let $m \ge 2$ and let $B$ be a singleton board
+for $m$. Let $F_0$ be a file placement on $B$ that is not an $m$-level rook placement. Let $l$ be a
+level and $c_0$ a cell such that $l$ holds at least two cells of $F_0$ and holds the fewest cells
+of $F_0$ among all such levels (the lowest such level on ties), and $c_0$ is the leftmost cell of
+$F_0$ in level $l$. Then the $m$-weights of the file placements in the block $P(F_0)$ determined
+by $l$ and $c_0$ sum to $0$: $\sum_{F \in P(F_0)} \mathrm{wt}_m(F) = 0$.
 
 ## Depends on
 
-- [Is Chosen Level And Leftmost](is-chosen-level-and-leftmost.md)
-- [Is Singleton Board](is-singleton-board.md)
-- [File Placement Block](file-placement-block.md)
-- [File Placement Weight](file-placement-weight.md)
-- [File Placements](file-placements.md)
-- [Level Rook Placements](level-rook-placements.md)
+- [The chosen level and its leftmost cell](is-chosen-level-and-leftmost.md)
+- [Singleton boards](is-singleton-board.md)
+- [The block $P(F_0)$](file-placement-block.md)
+- [The $m$-weight of a file placement](file-placement-weight.md)
+- [File placements](file-placements.md)
+- [Level rook placements](level-rook-placements.md)
 
 ## Sources
 

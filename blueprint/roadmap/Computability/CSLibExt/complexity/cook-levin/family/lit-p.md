@@ -12,23 +12,23 @@ the literal slot, drain `Q`.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [GΓ](g.md)
-- [LS](ls.md)
-- [Layout](layout.md)
-- [N Lits](n-lits.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Counters of the transition-family generator](ck.md)
+- [Labels of the clause-family generator](gl.md)
+- [Stack alphabets of the generator](g.md)
+- [Stages of the transition-clause generator's literal routine](ls.md)
+- [Variable layout of the transition clauses](layout.md)
+- [Number of literals of a transition clause](n-lits.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Mul S](../counter-view/mul-s.md)
-- [After](after.md)
-- [Cst](cst.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Label after a literal routine in the transition-family generator](after.md)
+- [Constant offset of a literal position](cst.md)
 - [K A](k-a.md)
-- [K B](k-b.md)
-- [Sgn](sgn.md)
+- [Row offset of a literal in a transition clause](k-b.md)
+- [Polarity of a transition-clause literal](sgn.md)
 - [Encode Slot](../../dense-sat/encode-slot.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)

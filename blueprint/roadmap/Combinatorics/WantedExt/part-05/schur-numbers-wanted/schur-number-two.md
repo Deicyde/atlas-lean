@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_two
 ---
 
-# Schur Number two
+# The second Schur number
 
-`S(2) = 4`.
+**The second Schur number.** The Schur number $S(2)$ equals $4$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.letterCount_succ
 ---
 
-# Letter Count succ
+# Recursion for the letter-counting function
 
-`#_α(m+1) = #_α(m) + [ℓ_m = α]`.
+**Recursion for the letter-counting function.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an
+infinite binary word, $\alpha$ a letter and $m$ a natural number, and let $\#_\alpha(m)$ be the
+number of letters $\alpha$ among $\ell_0, \dots, \ell_{m-1}$. Then $\#_\alpha(m+1)$ equals
+$\#_\alpha(m) + 1$ if $\ell_m = \alpha$, and $\#_\alpha(m)$ otherwise.
 
 ## Depends on
 
-- [Letter Count](letter-count.md)
+- [Letter-counting function](letter-count.md)
 
 ## Sources
 

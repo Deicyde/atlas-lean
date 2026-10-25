@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isBoolFunNPNEquiv_refl
 ---
 
-# Is Bool Fun NPNEquiv refl
+# NPN-equivalence is reflexive
 
-Every Boolean function is NPN-equivalent to itself.
+**NPN-equivalence is reflexive.** Every $n$-variable Boolean function is NPN-equivalent to
+itself.
 
 ## Depends on
 
-- [Is Bool Fun NPNEquiv](is-bool-fun-npnequiv.md)
+- [NPN-equivalence of Boolean functions](is-bool-fun-npnequiv.md)
 
 ## Sources
 

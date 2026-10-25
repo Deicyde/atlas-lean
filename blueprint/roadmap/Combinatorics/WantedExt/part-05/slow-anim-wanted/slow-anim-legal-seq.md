@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.SlowANimLegalSeq
 ---
 
-# Slow ANim Legal Seq
+# Legal move sequences in Slow A-Nim
 
-Legality of a sequence of Slow`A`-Nim moves (each move given by its set of stacks) from a
-position.
+**Legal move sequences in Slow A-Nim.** Let $A$ be a finite set of natural numbers and $p$ a
+position of Slow$A$-Nim on $n$ stacks. A finite sequence $S_1, \dots, S_m$ of sets of stacks is
+legal from $p$ when it is empty, or when $S_1$ is nonempty, $|S_1| \in A$, every stack in $S_1$
+holds at least one token in $p$, and $S_2, \dots, S_m$ is legal from the position obtained from
+$p$ by removing one token from each stack of $S_1$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Slow ANim After](slow-anim-after.md)
+- [Playing on a set of stacks](slow-anim-after.md)
 
 ## Sources
 

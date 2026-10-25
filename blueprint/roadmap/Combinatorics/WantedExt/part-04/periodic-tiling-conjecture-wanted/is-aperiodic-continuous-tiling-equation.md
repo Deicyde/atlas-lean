@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.IsAperiodicContinuousTilingEquation
 ---
 
-# Is Aperiodic Continuous Tiling Equation
+# Aperiodic continuous tiling equation
 
-We say that a set `σ ⊆ ℝᵈ` forms an aperiodic continuous tiling equation if there exists
-`Λ ⊆ ℝᵈ` such that `σ` (continuously) tiles `ℝᵈ` with tiling set `Λ` but all such `Λ` are not
-periodic.
+**Aperiodic continuous tiling equation.** For $d \in \mathbb{N}$, a set
+$\sigma \subseteq \mathbb{R}^d$ forms an aperiodic continuous tiling equation if $\sigma$
+continuously tiles $\mathbb{R}^d$ with some tiling set $\Lambda \subseteq \mathbb{R}^d$, and no
+tiling set $\Lambda$ with which $\sigma$ continuously tiles $\mathbb{R}^d$ is periodic.
 
 ## Depends on
 

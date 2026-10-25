@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.dumontThomasRep_quotient_remainder_neg
 ---
 
-# Dumont Thomas Rep quotient remainder neg
+# Quotient and remainder for negative positions
 
-`u`-quotient and `u`-remainder, case `n ≤ -2`: let `n = -N` (`N ≥ 2`) with the
-`u₋₁`-admissible sequence `(mᵢ, aᵢ)_{i < k}` of `rep_u(n)` (Theorem 4.2 with the period
-`p`), and let `q = |η^{k-p-1}(m_{k-1}) ⋯ η⁰(m_p)| - |η^{k-p}(u₋₁)| < 0` and
-`r = |η^{p-1}(m_{p-1}) ⋯ η⁰(m₀)|`. Then `u_n = η^p(u_q)[r]`,
-`rep_u(q) = 1 ⊙ |m_{k-1}| ⊙ ⋯ ⊙ |m_p|`, and `(mᵢ, aᵢ)_{i < p}` is `u_q`-admissible, i.e.
-`rep_u(n) = rep_u(q) ⊙ tail_{η,p,u_q}(r)`.
+**Quotient and remainder for negative positions.** Let $\eta$ be a substitution on an
+alphabet $A$ and let $u : \mathbb{Z} \to A$ be a two-sided periodic point of $\eta$ with least
+period $p$ whose seed letters $u_{-1}$ and $u_0$ are both growing. Let $N \ge 2$ and $k$ be
+natural numbers with $p \mid k$ and $N \le |\eta^k(u_{-1})|$, and let
+$(m_i, a_i)_{0 \le i \le k-1}$ be a $u_{-1}$-admissible sequence with
+$\eta^{p-1}(m_{k-1}) \cdots \eta^0(m_{k-p})\, a_{k-p} \ne \eta^p(u_{-1})$ and
+$u_{-|\eta^k(u_{-1})|} \cdots u_{-N-1} = \eta^{k-1}(m_{k-1}) \cdots \eta^0(m_0)$. Let
+$q = |\eta^{k-p-1}(m_{k-1}) \cdots \eta^0(m_p)| - |\eta^{k-p}(u_{-1})| \in \mathbb{Z}$ and
+$r = |\eta^{p-1}(m_{p-1}) \cdots \eta^0(m_0)|$. Then $r < |\eta^p(u_q)|$ and the letter of
+$\eta^p(u_q)$ at position $r$, counting from $0$, is $u_{-N}$; the word
+$1\, |m_{k-1}| \cdots |m_p|$ is the Dumont–Thomas complement representation of $q$ for $\eta$,
+$u$ and $p$; and $(m_i, a_i)_{0 \le i \le p-1}$ is $u_q$-admissible.
 
 ## Depends on
 
-- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
-- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Dumont–Thomas complement representations](is-dumont-thomas-rep.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
+- [Two-sided periodic points with growing seed](is-periodic-point-with-growing-seed.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kimberlingWord_initial
 ---
 
-# Kimberling Word initial
+# The first letters of Kimberling's word
 
-The first letters of `k` are `k₁k₂k₃k₄ = 1101`.
+**The first letters of Kimberling's word.** The first four letters of Kimberling's word
+$k = k_1 k_2 k_3 \cdots$ are $k_1 k_2 k_3 k_4 = 1101$.
 
 ## Depends on
 
-- [Kimberling Word](kimberling-word.md)
+- [Kimberling's word](kimberling-word.md)
 
 ## Sources
 

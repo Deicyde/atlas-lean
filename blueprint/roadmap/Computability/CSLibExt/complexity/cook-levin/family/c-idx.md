@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.Layout.cIdx
 ---
 
-# C Idx
+# Index of a cell variable in the transition-family layout
 
-Cell variable: stack `k`, depth `j < H` from the top, symbol code `x < g`, time `t`.
+**Index of a cell variable in the transition-family layout.** For a layout $L$ with
+label/state block size $A$, $K$ stacks and $g$ symbol codes, and natural numbers $H$, $t$, $k$,
+$j$, $x$, the variable for stack $k$, depth $j$ from the top and symbol code $x$ at time $t$ has
+index $tW + A + (kH + j)g + x$, where $W = A + KHg$ is the number of variables per time step. It is
+meant for $k < K$, $j < H$ and $x < g$ but is defined for all values.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [Row W](row-w.md)
+- [Variables per time step](row-w.md)
 
 ## Sources
 

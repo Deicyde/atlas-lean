@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.idp_reflexive_multiplicity_bounds
 ---
 
-# Idp reflexive multiplicity bounds
+# Multiplicity bounds for IDP reflexive weighted simplices
 
-Theorem 7's two bounds: every nonfinal multiplicity is at most
-`rᵢ₊₁/rᵢ`, and if `rⱼ∤r_last`, then `x_last≤rⱼ/(r_last mod rⱼ)`.
-The explicit `j.val+1<d` evidence safely names the final `Fin d` coordinate.
+**Multiplicity bounds for IDP reflexive weighted simplices.** Let $r_1 < r_2 < \dots < r_d$
+be positive integers, let $x_1, \dots, x_d$ be positive integers, and let
+$q = (r_1^{x_1}, \dots, r_d^{x_d})$ be the weight vector in which each $r_i$ is repeated $x_i$
+times. Suppose the weighted projective space simplex $\Delta_{(1,q)}$ is reflexive and has the
+integer decomposition property. Then $x_i \le \lfloor r_{i+1} / r_i \rfloor$ for every $i < d$,
+and for every $j < d$ with $r_j \nmid r_d$ we have $x_d \le \lfloor r_j / (r_d \bmod r_j) \rfloor$.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Expand Support](expand-support.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

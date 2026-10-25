@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_five
 ---
 
-# Schur Number five
+# The fifth Schur number
 
-`S(5) = 160`.
+**The fifth Schur number.** The Schur number $S(5)$ equals $160$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

@@ -8,7 +8,9 @@ lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.indegree
 
 # Indegree
 
-The indegree of a vertex in the chosen orientation.
+**Indegree.** In a multigraph with finitely many edges and a chosen orientation, the
+indegree of a vertex $v$ is the number of edges whose head is $v$, parallel edges counted
+separately.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Oriented Head](oriented-head.md)
+- [Head of an oriented edge](oriented-head.md)
 
 ## Sources
 

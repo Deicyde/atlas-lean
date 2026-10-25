@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SchurNumbersWanted.le_schurNumber_six
 ---
 
-# Le schur Number six
+# Lower bound for the sixth Schur number
 
-`S(6) ≥ 536`.
+**Lower bound for the sixth Schur number.** The Schur number $S(6)$ is at least $536$.
 
 ## Depends on
 
-- [Schur Number](schur-number.md)
+- [Schur number](schur-number.md)
 
 ## Sources
 

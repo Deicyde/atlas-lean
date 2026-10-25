@@ -5,11 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimMex
 ---
 
-# Maximum Nim Mex
+# Minimum excludant of a finite set
 
-The least natural number outside a finite set, used to express the paper's mex.
-The witness passed to `Nat.find` is one larger than the maximum of the set with zero
-adjoined; this is an implementation detail and not a mathematical deviation.
+**Minimum excludant of a finite set.** For a finite set $s$ of natural numbers,
+$\operatorname{mex}(s)$ is the least natural number that does not belong to $s$.
 
 ## Depends on
 

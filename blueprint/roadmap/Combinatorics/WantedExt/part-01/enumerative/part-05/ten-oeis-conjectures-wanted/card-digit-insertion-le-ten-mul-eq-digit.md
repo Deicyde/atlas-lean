@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_digitInsertion_le_ten_mul_eq_digitSum
 ---
 
-# Card digit Insertion le ten mul eq digit Sum
+# Inserting a digit and the digit sum
 
-For `n ≥ 1`, let `S(n)` be the set of numbers obtained by inserting one decimal digit
-`x ∈ {0, …, 9}` at any position of the decimal expansion of `n` (before, between or after its
-digits), a leading `0` being prohibited. The position of `10n` in `S(n)` listed increasingly
-(1-based), i.e. the number of elements of `S(n)` that are `≤ 10n`, equals the digit sum of `n`
-(A007953). Digits are Mathlib's little-endian `Nat.digits 10 n`; inserting `x` at index `i`
-gives it weight `10^i`, and index `(Nat.digits 10 n).length` with `x = 0` is the excluded leading
-zero.
+**Inserting a digit and the digit sum.** Let $n \ge 1$ have the $\ell$ decimal digits
+$d_{\ell-1} \dots d_1 d_0$, so that $n = \sum_{j\lt \ell} d_j 10^j$. Let $S(n)$ be the set of the
+numbers $\sum_{j\lt i} d_j 10^j + x \cdot 10^i + \sum_{i \le j < \ell} d_j 10^{j+1}$ with
+$0 \le i \le \ell$ and $x \in \{0, \dots, 9\}$, excluding $i = \ell$ with $x = 0$: these are the
+numbers obtained by inserting one decimal digit $x$ anywhere in the decimal expansion of $n$,
+without creating a leading zero. Then the number of elements of $S(n)$ that are at most $10n$,
+that is, the position of $10n$ when $S(n)$ is listed in increasing order, equals the digit sum
+$d_0 + d_1 + \dots + d_{\ell-1}$ of $n$ (A007953).
 
 ## Depends on
 

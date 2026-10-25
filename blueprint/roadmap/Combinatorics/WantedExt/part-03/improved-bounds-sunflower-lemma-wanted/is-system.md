@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.Set.IsSystem
 ---
 
-# Is System
+# Bounded-size set systems
 
-The condition that `ℱ` is a `w`-set system, namely that each element has size at most `w`
-(see second sentence of the introduction).
+**Bounded-size set systems.** Let $w \in \mathbb{N}$ and let $\mathcal{F}$ be a family of
+subsets of a type $X$. Then $\mathcal{F}$ is a $w$-set system if every member $A \in \mathcal{F}$
+has at most $w$ elements, where the size of an infinite set is taken to be $0$.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted](../../../../../sources/v2/WantedExt.md)
+- R. Alweiss, S. Lovett, K. Wu, and J. Zhang, *Improved bounds for the sunflower lemma*, Annals of Math 194 (3), 2021, second sentence of the introduction.

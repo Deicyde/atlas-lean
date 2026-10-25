@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsUnimodal
 ---
 
-# Is Unimodal
+# Unimodal polynomials
 
-Polynomial unimodality: there is a coefficient index `t` up to the natural
-degree such that coefficients are weakly increasing through `t` and weakly
-decreasing thereafter.  The paper assumes nonnegative coefficients; the order
-condition itself is stated over `ℤ`.
+**Unimodal polynomials.** A polynomial $p = \sum_k a_k z^k \in \mathbb{Z}[z]$ of degree $n$
+(with $n = 0$ for $p = 0$) is unimodal when there is an index $t \le n$ such that
+$a_0 \le a_1 \le \dots \le a_t$ and $a_t \ge a_{t+1} \ge \dots \ge a_n$.
+
+The paper considers polynomials with nonnegative coefficients; the order condition itself is
+stated over $\mathbb{Z}$.
 
 ## Depends on
 

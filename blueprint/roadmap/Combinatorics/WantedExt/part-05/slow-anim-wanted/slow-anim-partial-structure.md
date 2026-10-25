@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_partialStructure
 ---
 
-# Slow ANim partial Structure
+# Partial structure of the P-positions of Slow $A$-Nim
 
-Proposition 1 (Partial Structure Result): in `SN(n, A)`, a position with no odd stack is
-a P-position, and a position whose number of odd stacks lies in `A` is an N-position.
+**Partial structure of the P-positions of Slow $A$-Nim.** Let $A \subseteq \{1, \dots, n\}$
+and let $p$ be a position of Slow $A$-Nim on $n$ stacks. If every stack height of $p$ is even,
+then $p$ is a P-position. If the number of stacks of $p$ with odd height lies in $A$, then $p$
+is not a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources
 

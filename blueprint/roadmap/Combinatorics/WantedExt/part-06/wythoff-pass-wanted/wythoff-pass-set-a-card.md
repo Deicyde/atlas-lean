@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.wythoffPassSetA_card
 ---
 
-# Wythoff Pass Set A card
+# The set $A$ has seven elements
 
-`A` has seven elements.
+**The set $A$ has seven elements.** The set
+$A = \{(0, 0), (1, 2), (2, 1), (3, 5), (4, 7), (5, 3), (7, 4)\}$ of pairs of natural numbers has
+exactly $7$ elements.
 
 ## Depends on
 
-- [Wythoff Pass Set A](wythoff-pass-set-a.md)
+- [The set $A$](wythoff-pass-set-a.md)
 
 ## Sources
 

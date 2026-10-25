@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.quasiFullTree_arity
 ---
 
-# Quasi Full Tree arity
+# Arity of quasi-full rooted trees
 
-Theorem 10, for the trees represented: a finite poset `P` with `n ≥ 3` elements that is a
-rooted tree (a least element, the root, and every `Set.Iic x` a chain) is a quasi-full `t`-ary
-rooted tree when every `x` has exactly `min(|Ici x| - 1, t)` children (elements covering `x`),
-`Ici x` being the subtree rooted at `x`. Then (i) a quasi-full `(n-1)`-ary tree is quasi-full
-`t`-ary for every `t ≥ n`, and (ii) a quasi-full `t`-ary tree with `t ≤ n - 2` is not quasi-full
-`t'`-ary for any `t' ≥ n`. The record's `M ∈ 𝓜_{n,t}` (a poset matrix in a set of pairwise
-nonequivalent matrices representing the quasi-full `t`-ary trees on `n` elements) is read as
-"`M` represents a quasi-full `t`-ary rooted tree with `n` elements"; both parts depend only on
-the represented poset, so they are stated for `P`.
+**Arity of quasi-full rooted trees.** Let $P$ be a finite partial order with $n \ge 3$
+elements that is a rooted tree: $P$ has a least element and, for every $x \in P$, the elements
+below $x$ form a chain. For a natural number $t$, call $P$ quasi-full $t$-ary when every $x \in P$
+is covered by exactly $\min(|U_x| - 1, t)$ elements of $P$, where $U_x = \{y \in P : x \le y\}$.
+Then (i) if $P$ is quasi-full $(n - 1)$-ary, it is quasi-full $t$-ary for every $t \ge n$; and
+(ii) if $P$ is quasi-full $t$-ary for some $t \le n - 2$, it is not quasi-full $t'$-ary for any
+$t' \ge n$.
+
+The source states this for poset matrices representing quasi-full $t$-ary rooted trees; both
+parts depend only on the represented poset.
 
 ## Depends on
 

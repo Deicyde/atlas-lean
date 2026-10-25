@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.gutkovskiy_le
 ---
 
-# Gutkovskiy le
+# Gutkovskiy's sequence is bounded by the index
 
-`gₙ ≤ n`.
+**Gutkovskiy's sequence is bounded by the index.** For every natural number $n$, the term
+$g_n$ of Gutkovskiy's sequence satisfies $g_n \le n$.
 
 ## Depends on
 
-- [Gutkovskiy](gutkovskiy.md)
+- [Gutkovskiy's sequence](gutkovskiy.md)
 
 ## Proof depends on
 
-- [Gutkovskiy Table](gutkovskiy-table.md)
-- [Size gutkovskiy Table](size-gutkovskiy-table.md)
+- [Table of Gutkovskiy's sequence](gutkovskiy-table.md)
+- [Number of entries of the Gutkovskiy table](size-gutkovskiy-table.md)
 
 ## Sources
 

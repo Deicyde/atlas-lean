@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.boolFunClassCount_false
 ---
 
-# Bool Fun Class Count false
+# The empty property has no classes
 
-An empty property has no classes.
+**The empty property has no classes.** For every relation $R$ on $n$-variable Boolean
+functions, the number of $R$-inequivalent $n$-variable Boolean functions with the property that
+holds for no function is $0$.
 
 ## Depends on
 
-- [Bool Fun Class Count](bool-fun-class-count.md)
+- [Number of classes of Boolean functions](bool-fun-class-count.md)
 
 ## Sources
 

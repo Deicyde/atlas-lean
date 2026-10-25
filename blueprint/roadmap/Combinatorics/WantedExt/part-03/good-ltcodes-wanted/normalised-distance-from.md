@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.normalisedDistanceFrom
 ---
 
-# Normalised Distance From
+# Normalised distance from a word to a binary code
 
-The normalised distance from a word `f` to a binary code `C` is the Hamming distance from `f`
-to the closest codeword in `C` divided by its length.
+**Normalised distance from a word to a binary code.** For a binary code
+$C \subseteq \mathbb{F}_2^n$ and a word $f \in \mathbb{F}_2^n$, the normalised distance from $f$
+to $C$ is the distance from $f$ to $C$ (the Hamming distance from $f$ to a closest codeword)
+divided by the length $n$, as a nonnegative real number; it is $0$ when $n = 0$.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Proof depends on
 
-- [Distance From](distance-from.md)
+- [Distance from a word to a binary code](distance-from.md)
 
 ## Sources
 

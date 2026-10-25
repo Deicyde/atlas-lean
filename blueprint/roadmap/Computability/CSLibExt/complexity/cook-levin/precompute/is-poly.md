@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.IsPoly
 ---
 
-# Is Poly
+# Polynomial functions on the naturals
 
-`f` is (pointwise) the evaluation of a polynomial with natural coefficients.
+**Polynomial functions on the naturals.** A function $f : \mathbb{N} \to \mathbb{N}$ is
+polynomial when there is a polynomial $p$ with natural-number coefficients such that
+$f(n) = p(n)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isP_of_le
 ---
 
-# Pebbling complete Three is P of le
+# Pebbling on the triangle: total 6k-2ℓ with no pile above half is a P-position
 
-Lemma 8: for `0 ≤ ℓ ≤ 2k - 1`, a `K_3` game with `6k - 2ℓ` pebbles and every pile at most
-`3k - ℓ` is a P-game (`k` positive).
+**Pebbling on the triangle: total 6k-2ℓ with no pile above half is a P-position.** Let $k$ be
+a positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
+move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Let $\ell$ be a
+natural number with $\ell \le 2k - 1$. Every position with $6k - 2\ell$ pebbles in total in which
+every pile is at most $3k - \ell$ is a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

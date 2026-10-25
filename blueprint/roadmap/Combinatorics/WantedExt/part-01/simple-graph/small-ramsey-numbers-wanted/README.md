@@ -4,13 +4,13 @@ navigation: module
 
 # Small Ramsey Numbers
 
-- [Graph Ramsey four four](graph-ramsey-four-four.md)
-- [Forty three le graph Ramsey five five](forty-three-le-graph-ramsey-five-five.md)
-- [Graph Ramsey five five le forty six](graph-ramsey-five-five-le-forty-six.md)
-- [Graph Ramsey three five](graph-ramsey-three-five.md)
-- [Graph Ramsey three six](graph-ramsey-three-six.md)
-- [Graph Ramsey three seven](graph-ramsey-three-seven.md)
-- [Graph Ramsey three eight](graph-ramsey-three-eight.md)
-- [Graph Ramsey three nine](graph-ramsey-three-nine.md)
-- [Forty le graph Ramsey three ten](forty-le-graph-ramsey-three-ten.md)
-- [Graph Ramsey three ten le forty one](graph-ramsey-three-ten-le-forty-one.md)
+- [The value of $R(4, 4)$](graph-ramsey-four-four.md)
+- [Exoo's lower bound for $R(5, 5)$](forty-three-le-graph-ramsey-five-five.md)
+- [The Angeltveit–McKay upper bound for $R(5, 5)$](graph-ramsey-five-five-le-forty-six.md)
+- [The value of $R(3, 5)$](graph-ramsey-three-five.md)
+- [The value of $R(3, 6)$](graph-ramsey-three-six.md)
+- [The value of $R(3, 7)$](graph-ramsey-three-seven.md)
+- [The value of $R(3, 8)$](graph-ramsey-three-eight.md)
+- [The value of $R(3, 9)$](graph-ramsey-three-nine.md)
+- [Exoo's lower bound for $R(3, 10)$](forty-le-graph-ramsey-three-ten.md)
+- [Angeltveit's upper bound for $R(3, 10)$](graph-ramsey-three-ten-le-forty-one.md)

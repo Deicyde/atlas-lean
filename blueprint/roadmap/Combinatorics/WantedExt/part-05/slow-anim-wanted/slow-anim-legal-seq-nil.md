@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.slowANimLegalSeq_nil
 ---
 
-# Slow ANim Legal Seq nil
+# The empty move sequence is legal
 
-The empty move sequence is legal from every position.
+**The empty move sequence is legal.** For every finite set $A$ of natural numbers and every
+position $p$ of Slow$A$-Nim on $n$ stacks, the empty sequence of moves is legal from $p$.
 
 ## Depends on
 
-- [Slow ANim Legal Seq](slow-anim-legal-seq.md)
+- [Legal move sequences in Slow A-Nim](slow-anim-legal-seq.md)
 
 ## Sources
 

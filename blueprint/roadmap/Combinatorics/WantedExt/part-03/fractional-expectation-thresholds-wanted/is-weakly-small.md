@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.IsWeaklySmall
 ---
 
-# Is Weakly Small
+# Weakly $p$-small families
 
-We say that a collection `𝓕` of subsets of `X` is `weakly p-small` if there exists
-`g : Set X → ℝ≥0` such that `∀ T ∈ 𝓕, ∑ S ⊆ T, g(S) ≥ 1` and `∑ S ⊆ X, g(S) p^|S| ≤ 1/2`.
+**Weakly $p$-small families.** Let $X$ be a finite set, $p \in [0, 1]$, and $\mathcal F$ a
+family of subsets of $X$. Then $\mathcal F$ is weakly $p$-small if there is a function $g$ from
+subsets of $X$ to the nonnegative reals such that $\sum_{S \subseteq T} g(S) \ge 1$ for every
+$T \in \mathcal F$ and $\sum_{S \subseteq X} g(S)\, p^{|S|} \le 1/2$.
 
 ## Depends on
 

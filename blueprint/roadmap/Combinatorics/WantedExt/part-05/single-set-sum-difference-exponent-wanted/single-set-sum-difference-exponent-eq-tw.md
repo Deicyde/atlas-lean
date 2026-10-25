@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent_eq_two
 ---
 
-# Single Set Sum Difference Exponent eq two
+# The proposition that the single-set sum-difference exponent equals 2
 
-The resolved exact value `C₃d = 2` stated in the frozen source.
+**The proposition that the single-set sum-difference exponent equals 2.** This is the
+statement that the single-set sum-difference exponent $C_{3d}$ is equal to $2$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Single Set Sum Difference Exponent](single-set-sum-difference-exponent.md)
+- [The single-set sum-difference exponent](single-set-sum-difference-exponent.md)
 
 ## Sources
 

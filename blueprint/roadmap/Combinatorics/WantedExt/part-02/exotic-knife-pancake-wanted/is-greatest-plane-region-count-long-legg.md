@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isGreatest_planeRegionCount_longLeggedA
 ---
 
-# Theorem 1
+# Maximum region count for long-legged A's
 
-**Theorem 1** (long-legged A's). The maximum number of regions formed in the plane by `n`
-long-legged A's (a tip `c` with two rays `c + s u₁`, `c + s u₂` and a crossbar segment from
-`c + a u₁` to `c + b u₂`, `a, b > 0`) is `(9n² - 5n + 2)/2`.
+**Maximum region count for long-legged A's.** For a tip $c \in \mathbb{R}^2$, nonzero vectors
+$u_1, u_2 \in \mathbb{R}^2$ and reals $a, b > 0$, the long-legged A is the union of the rays
+$\{c + s u_1 : s \ge 0\}$ and $\{c + s u_2 : s \ge 0\}$ and the crossbar segment
+$[c + a u_1, c + b u_2]$. For every natural number $n$, the largest number of regions into which
+the union of $n$ long-legged A's can divide the plane is $(9n^2 - 5n + 2)/2$.
 
 ## Depends on
 
-- [Plane Region Count](plane-region-count.md)
+- [Number of regions cut out of the plane](plane-region-count.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.wheelFree
 ---
 
-# Wheel Free
+# Wheel-free graphs
 
-The graph contains no induced wheel in Davies's three-neighbour sense.
+**Wheel-free graphs.** A simple graph $G$ is wheel-free if it has no induced wheel, that
+is, no induced cycle of length at least four together with a vertex outside the cycle that is
+adjacent to at least three vertices of the cycle.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Induced Wheel](has-induced-wheel.md)
+- [Induced wheels](has-induced-wheel.md)
 
 ## Sources
 

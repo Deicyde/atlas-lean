@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FraserKakeyaWanted.Combinatorics.FraserKakeyaProblem.IsProbabilityMeasureOn
 ---
 
-# Is Probability Measure On
+# Probability measure supported on a set
 
-A real-valued probability measure on the finite vector space
-whose support is contained in `K`.
+**Probability measure supported on a set.** Let $F$ be a finite field, $d$ a natural number
+and $K \subseteq F^d$. A function $\mu : F^d \to \mathbb{R}$ is a probability measure on $K$ if
+$\mu(x) \ge 0$ for every $x \in F^d$, $\sum_{x \in F^d} \mu(x) = 1$, and $\mu(x) \ne 0$ implies
+$x \in K$.
 
 ## Depends on
 
-- [Space](space.md)
+- [Coordinate space](space.md)
 
 ## Sources
 

@@ -17,10 +17,10 @@ for all sufficiently large integers `k`, the following holds. Let `S ⊆ Grₖ�
 
 ## Depends on
 
-- [Gr](gr.md)
-- [Gr Vertex](gr-vertex.md)
-- [Sub Gr](sub-gr.md)
-- [Φ](untitled.md)
+- [Grassmann graph over $\mathbb{F}_2$](gr.md)
+- [Vertices of the Grassmann graph](gr-vertex.md)
+- [Grassmann vertices between two subspaces](sub-gr.md)
+- [Edge expansion of a vertex set](untitled.md)
 
 ## Sources
 

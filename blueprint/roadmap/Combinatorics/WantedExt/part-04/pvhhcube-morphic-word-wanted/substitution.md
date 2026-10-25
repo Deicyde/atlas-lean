@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.substitution
 ---
 
-# Substitution
+# The substitution $0 \mapsto 03$, $1 \mapsto 43$, $3 \mapsto 1$, $4 \mapsto 01$
 
-The substitution `0 ↦ 03`, `1 ↦ 43`, `3 ↦ 1`, `4 ↦ 01`.
+**The substitution $0 \mapsto 03$, $1 \mapsto 43$, $3 \mapsto 1$, $4 \mapsto 01$.** The map
+sending each letter of the alphabet $\{0, 1, 3, 4\}$ to a word: $0$ to $03$, $1$ to $43$, $3$ to
+$1$ and $4$ to $01$.
 
 ## Depends on
 
-- [Letter](letter.md)
+- [The alphabet $\{0, 1, 3, 4\}$](letter.md)
 
 ## Sources
 

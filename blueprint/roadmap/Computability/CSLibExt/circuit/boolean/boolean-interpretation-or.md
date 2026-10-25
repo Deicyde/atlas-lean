@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Circuits.booleanInterpretation_or
 ---
 
-# Boolean Interpretation or
+# Boolean OR as a left fold
 
-OR visits the nonempty argument vector from left to right.
+**Boolean OR as a left fold.** For every natural number $a$ and truth values
+$x_0, \dots, x_a$, the Boolean interpretation of the OR gate with $a + 1$ inputs, applied to
+$x_0, \dots, x_a$, returns $(\cdots((\mathrm{false} \lor x_0) \lor x_1) \cdots) \lor x_a$,
+folding disjunction over the inputs from left to right starting from false.
 
 ## Depends on
 
-- [Boolean Gate](boolean-gate.md)
-- [Boolean Interpretation](boolean-interpretation.md)
+- [Boolean gates](boolean-gate.md)
+- [Boolean interpretation](boolean-interpretation.md)
 
 ## Sources
 

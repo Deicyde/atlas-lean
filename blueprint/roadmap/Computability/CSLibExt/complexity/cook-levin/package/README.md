@@ -6,33 +6,33 @@ navigation: module
 
 ## [DRAIN] A generic drain phase
 
-- [Xfer drain](xfer-drain.md)
-- [Drain S](drain-s.md)
-- [Drain B](drain-b.md)
+- [Draining a stack with the transfer loop](xfer-drain.md)
+- [The drain program](drain-s.md)
+- [Drain step count](drain-b.md)
 - [The drain](drain-run.md)
 
 ## [GLUE] The composed machine: full machine, then the drain
 
-- [DL](dl.md)
-- [Dlab](dlab.md)
-- [Id E](id-e.md)
-- [Dks](dks.md)
-- [Drained](drained.md)
+- [Labels of the composed machine](dl.md)
+- [Drain-stage label](dlab.md)
+- [The identity stack embedding](id-e.md)
+- [Stacks to drain](dks.md)
+- [Only the output stack survives the drain](drained.md)
 - [The composed program](gprog.md)
-- [G run gen](g-run-gen.md)
-- [Drain B le](drain-b-le.md)
+- [Running a program, then the drain](g-run-gen.md)
+- [Step bound for draining bounded stacks](drain-b-le.md)
 
 ## [REAL] The composed machine on the real generators
 
-- [The reduction machine as a `FinTM2`](g-tm.md)
-- [Phi Of](phi-of.md)
-- [G B](g-b.md)
-- [The composed machine, raw input to `haltList`](g-run.md)
+- [The reduction machine](g-tm.md)
+- [The formula emitted on a raw input](phi-of.md)
+- [Step bound of the composed machine](g-b.md)
+- [The reduction machine halts with the emitted formula](g-run.md)
 
 ## [PKG] `TM2OutputsInTime` and `TM2ComputableInPolyTime`
 
-- [Outputs Of Run Le](outputs-of-run-le.md)
-- [Outputs Of Run Le'](outputs-of-run-le-2.md)
-- [One polynomial](g-outputs.md)
+- [A bounded halting run certifies the output](outputs-of-run-le.md)
+- [A bounded halting run certifies the output, up to an equal output](outputs-of-run-le-2.md)
+- [One polynomial bounds the reduction machine](g-outputs.md)
 - [F R](f-r.md)
-- [The packaged reduction machine](g-comp.md)
+- [The reduction machine as a polynomial-time computation](g-comp.md)

@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.cubeGapSize_le_of_isDenseInCubes
 ---
 
-# Cube Gap Size le of is Dense In Cubes
+# Density bounds the gap size
 
-If `S` is `d`-dense (`d ≥ 1`) in a subcube containing `S`, then `gs(S) ≤ d`.
+**Density bounds the gap size.** Let $S \subseteq \mathbb{N}^t$, let $d \ge 1$, and let $M$ be a
+subcube of $\mathbb{N}^t$ with $S \subseteq M$. If $S$ is $d$-dense in $M$, then the gap size of $S$
+satisfies $\operatorname{gs}(S) \le d$.
 
 ## Depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Cube Gap Size](cube-gap-size.md)
-- [Lattice Cube](lattice-cube.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Gap size](cube-gap-size.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

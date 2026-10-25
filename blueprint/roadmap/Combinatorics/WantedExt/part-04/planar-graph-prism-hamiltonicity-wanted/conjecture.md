@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture
 ---
 
-# Conjecture
+# Prism-Hamiltonicity conjecture for 3-connected planar graphs
 
-The prism over every finite 3-connected planar graph has a Hamilton cycle.
+**Prism-Hamiltonicity conjecture for 3-connected planar graphs.** For every finite simple
+graph $G$ that is $3$-vertex-connected and straight-line planar, the prism
+$G \mathbin{\square} K_2$, the Cartesian product of $G$ with the complete graph on two
+vertices, is Hamiltonian.
 
 ## Depends on
 

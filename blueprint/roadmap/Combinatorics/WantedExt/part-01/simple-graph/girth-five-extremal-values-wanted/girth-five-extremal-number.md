@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.GirthFiveExtremalValuesWanted.girthFiveExtremalNumber
 ---
 
-# Girth Five Extremal Number
+# Girth-five extremal number
 
-`ex(n; {C₃, C₄})`: the largest number of edges of a graph on `Fin n` whose
-extended girth is at least `5`, that is, with no triangle and no four-cycle
-(OEIS A006856). The extended girth `egirth` is `⊤` on acyclic graphs, so the
-empty graph always qualifies.
+**Girth-five extremal number.** For a natural number $n$, $\mathrm{ex}(n; \{C_3, C_4\})$
+is the largest number of edges of a simple graph on $n$ vertices whose girth is at least $5$,
+that is, which contains no triangle and no four-cycle (OEIS A006856). An acyclic graph has
+infinite girth, so the empty graph always qualifies.
 
 ## Depends on
 

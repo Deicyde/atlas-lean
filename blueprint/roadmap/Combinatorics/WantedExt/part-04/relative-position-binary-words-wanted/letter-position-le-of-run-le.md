@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_le_of_run_le
 ---
 
-# Lemma 25
+# Bounds on position functions for words with bounded runs
 
-**Lemma 25.** For `w ∈ a𝒲` all of whose single-letter runs have length at most `c`,
-`p_a(n) ≤ (c+1)(n-1)`, `p_b(n) ≤ (c+1)n - 1` and `c(1-n) + 1 ≤ r(n) ≤ cn`.
-The printed lower bound `(1-c)n + 1 ≤ r(n)` is false (for `w = (abb)^ω`, `c = 2`,
-`r(4) = 5 - 9 = -4 < -3`); the bound `c(1-n) + 1` is the one derived in the paper's proof.
-Stating the result for every bound `c` of the runs is equivalent to stating it for the
+**Bounds on position functions for words with bounded runs.** Let $w$ be an infinite binary
+word over $\{a, b\}$ that starts with $a$ and in which both letters occur infinitely often, and
+let $c \ge 0$ be an integer such that every block of consecutive equal letters of $w$ has length
+at most $c$. Write $p_\alpha(n)$ for the position (counted from $0$) of the $n$-th occurrence of
+the letter $\alpha$ in $w$, and $r(n) = p_b(n) - p_a(n)$. Then for every $n \ge 1$,
+$p_a(n) \le (c+1)(n-1)$, $p_b(n) \le (c+1)n - 1$ and $c(1-n) + 1 \le r(n) \le cn$.
+
+The paper prints the lower bound $(1-c)n + 1 \le r(n)$, which is false: for $w = (abb)^\omega$
+and $c = 2$, $r(4) = 5 - 9 = -4 < -3$. The bound $c(1-n) + 1$ is the one derived in the paper's
+proof. Stating the result for every bound $c$ of the runs is equivalent to stating it for the
 longest run.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

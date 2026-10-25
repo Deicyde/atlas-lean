@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.fract_goldenRatio_differences
 ---
 
-# Fract golden Ratio differences
+# Differences of fractional parts of multiples of the golden ratio
 
-Fractional-part bounds, with `g_i = f_{3i} / 2` (`i ≥ 1`) and integers `x₁, x₂, m₁, m₂`:
-(i) if `g_i` is even, `x₂ - x₁ = g_i / 2`, `x₁ = ⌊m₁φ⌋`, `x₂ = ⌊m₂φ⌋`, then
-`{m₂φ} - {m₁φ} ≤ (φ^{-3i+1} - φ)/4 < -0.38`; (ii) if `g_i` is odd, `x₂ - x₁ = (g_i + 1)/2`,
-`x₁ = ⌊m₁φ⌋`, `x₂ + 1 = ⌊m₂φ⌋`, then `{m₂φ} - {m₁φ} < (3φ - 6)/4 < -0.28`; (iii) if `g_i` is
-odd, `i > 1`, `x₂ - x₁ = (g_i - 1)/2`, `x₁ + 1 = ⌊m₁φ⌋`, `x₂ = ⌊m₂φ⌋`, then
-`{m₂φ} - {m₁φ} < (-5φ + 6)/4 < -0.52`. Halved gaps are written as `2(x₂ - x₁) = …`.
-CORRECTED READING of (i): `≤` for the printed `<`. The proof derives the equality
-`{m₂φ} - {m₁φ} = (φ^{-3i+1} - φ)/4`; e.g. `m₁ = 1`, `m₂ = 2` (`x₁ = 1`, `x₂ = 3`, `i = 2`)
-gives `{2φ} - {φ} = (φ^{-5} - φ)/4`.
+**Differences of fractional parts of multiples of the golden ratio.** Let $F_m$ be the $m$-th
+Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, let $\varphi = (1 + \sqrt{5})/2$ be the golden
+ratio, and write $\{y\} = y - \lfloor y \rfloor$ for the fractional part. Let $i \ge 1$ be a
+natural number, put $g_i = F_{3i}/2$ (an integer, since $F_{3i}$ is even), and let
+$x_1, x_2, m_1, m_2$ be integers. Then:
+(i) if $g_i$ is even, $2(x_2 - x_1) = g_i$, $x_1 = \lfloor m_1\varphi \rfloor$ and
+$x_2 = \lfloor m_2\varphi \rfloor$, then
+$\{m_2\varphi\} - \{m_1\varphi\} \le (\varphi^{-3i+1} - \varphi)/4 < -0.38$;
+(ii) if $g_i$ is odd, $2(x_2 - x_1) = g_i + 1$, $x_1 = \lfloor m_1\varphi \rfloor$ and
+$x_2 + 1 = \lfloor m_2\varphi \rfloor$, then
+$\{m_2\varphi\} - \{m_1\varphi\} < (3\varphi - 6)/4 < -0.28$;
+(iii) if $g_i$ is odd, $i > 1$, $2(x_2 - x_1) = g_i - 1$, $x_1 + 1 = \lfloor m_1\varphi \rfloor$
+and $x_2 = \lfloor m_2\varphi \rfloor$, then
+$\{m_2\varphi\} - \{m_1\varphi\} < (-5\varphi + 6)/4 < -0.52$.
+
+The paper states (i) with a strict inequality, but equality occurs: $i = 2$, $m_1 = 1$, $m_2 = 2$,
+$x_1 = 1$, $x_2 = 3$ give $\{2\varphi\} - \{\varphi\} = (\varphi^{-5} - \varphi)/4$.
 
 ## Depends on
 

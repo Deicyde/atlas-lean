@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_rec
 ---
 
-# Meta Automatic Two rec
+# Recurrences of $\mathcal{M}_2$
 
-The recurrences of `ℳ₂` in the paper's form, with `ℳ₂(n)` read as `0` or `1`.
+**Recurrences of $\mathcal{M}_2$.** The meta-automatic sequence $\mathcal{M}_2$, read as
+taking values in $\{0, 1\}$, satisfies $\mathcal{M}_2(4n) = \mathcal{M}_2(2n + \mathcal{M}_2(n))$
+and $\mathcal{M}_2(4n+1) = 1 - \mathcal{M}_2(4n)$ for every $n \ge 1$, and
+$\mathcal{M}_2(4n+2) = \mathcal{M}_2(2n + 1 - \mathcal{M}_2(n))$ and
+$\mathcal{M}_2(4n+3) = 1 - \mathcal{M}_2(4n+2)$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 
 ## Sources
 

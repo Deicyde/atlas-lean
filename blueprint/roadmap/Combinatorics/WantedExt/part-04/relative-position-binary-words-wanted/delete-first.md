@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.deleteFirst
 ---
 
-# Delete First
+# Deleting the first occurrence of a letter
 
-The deletion operator `D_α` on `𝒲`: delete the first occurrence of the letter `α`.
+**Deleting the first occurrence of a letter.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an
+infinite word over the letters $a$ and $b$, let $\alpha$ be a letter, and let $p$ be the position
+(counted from $0$) of the first occurrence of $\alpha$ in $w$, with $p = 0$ if $\alpha$ does not
+occur in $w$. The word $D_\alpha(w)$ has letter $\ell_i$ at each position $i < p$ and letter
+$\ell_{i+1}$ at each position $i \ge p$. So $D_\alpha(w)$ is $w$ with its first $\alpha$ deleted,
+and, when $\alpha$ does not occur in $w$, it is $w$ with its first letter deleted.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Letter Position](letter-position.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

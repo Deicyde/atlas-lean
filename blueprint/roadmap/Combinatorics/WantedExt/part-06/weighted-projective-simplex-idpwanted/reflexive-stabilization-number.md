@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.reflexiveStabilizationNumber
 ---
 
-# Reflexive Stabilization Number
+# Reflexive stabilization number
 
-The reflexive stabilization number is the least number of leading `1`s
-that makes the resulting weighted simplex reflexive.  `sInf` directly encodes
-the paper's minimum; Theorem 1 ensures the defining set is nonempty for positive
-weights, rather than baking its divisibility criterion into reflexivity.
+**Reflexive stabilization number.** For a list of natural-number weights
+$q = (q_1, \dots, q_n)$, the reflexive stabilization number $\mathrm{rsn}(q)$ is the least natural
+number $k$ such that the weighted projective simplex with weights $(1^k, q_1, \dots, q_n)$, that
+is, $k$ entries equal to $1$ followed by $q$, is reflexive. If no such $k$ exists, then
+$\mathrm{rsn}(q) = 0$.
+
+For positive weights such a $k$ always exists by the reflexivity criterion of Theorem 1.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Reflexive](is-reflexive.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 

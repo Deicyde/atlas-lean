@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ulamGapMean
 ---
 
-# Ulam Gap Mean
+# Mean gap of the Ulam values
 
-The mean gap `μ_g(n) = (∑ᵢ (u_{i+1} - u_i)) / (k - 1)` of the sorted list
-`u₁ < ⋯ < u_k` of `π(U_n)`.
+**Mean gap of the Ulam values.** For $n \in \mathbb{N}$, read each Ulam word of length $n$
+as a binary numeral, most significant letter first, and list the resulting values in increasing
+order as $u_1 < u_2 < \dots < u_k$. The mean gap of these values is the rational number
+
+$$\mu_g(n) = \frac{1}{k - 1} \sum_{i=1}^{k-1} (u_{i+1} - u_i),$$
+
+where a quotient by $0$ is read as $0$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ulam Values Sorted](ulam-values-sorted.md)
+- [Sorted binary values of Ulam words](ulam-values-sorted.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_variableWords_subst_mem_sum_count_mem_finiteSums_of_isMulJSet
 ---
 
-# Exists variable Words subst mem sum count mem finite Sums of is Mul JSet
+# Variable-count sums of variable words in J-sets
 
-Variable-count sums in `J`-sets. With `A_0 ⊆ A_1 ⊆ ⋯` and `S_0` as in Lemma 3.3, let `D ⊆ S_0`
-be a `J`-set and `(x_j)` a sequence of positive integers. There is a sequence `(w_k)` of variable
-words over `A` (the variable is `Sum.inr 0`) with `w_k(a) ∈ D` for all `k` and `a ∈ A_k`, and with
-`∑_{k ∈ G} τ(w_k) ∈ FS(⟨x_j⟩)` for every nonempty finite `G`, where `τ(w) = |w|_v` counts the
-occurrences of the variable and `FS(⟨x_j⟩)` is the set of sums of `x_j` over nonempty finite index
-sets.
+**Variable-count sums of variable words in J-sets.** Let $A_0 \subseteq A_1 \subseteq \cdots$
+be finite sets with union $A$, and let $S_0$ be the semigroup of nonempty finite words over $A$
+under concatenation. A variable word over $A$ is a nonempty finite word over $A \cup \{v\}$, for a
+variable $v \notin A$, in which $v$ occurs; for $a \in A$, the word $w(a) \in S_0$ is obtained from
+$w$ by replacing each occurrence of $v$ by $a$, and $|w|_v$ is the number of occurrences of $v$ in
+$w$. If $D \subseteq S_0$ is a $J$-set and $x_0, x_1, \dots$ are positive integers, then there is
+a sequence $w_0, w_1, \dots$ of variable words over $A$ such that $w_k(a) \in D$ for all
+$k \in \mathbb{N}$ and $a \in A_k$, and such that for every nonempty finite $G \subseteq \mathbb{N}$
+there is a nonempty finite $H \subseteq \mathbb{N}$ with
+$\sum_{k \in G} |w_k|_v = \sum_{j \in H} x_j$.
 
 ## Depends on
 

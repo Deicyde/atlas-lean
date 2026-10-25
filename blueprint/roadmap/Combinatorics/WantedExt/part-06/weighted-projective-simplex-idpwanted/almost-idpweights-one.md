@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.almostIDPWeights_one
 ---
 
-# Almost IDPWeights one
+# The almost-IDP weight vector for $n = 1$
 
-For `n = 1` the weights of Theorem 13 are `(1, 3, 10, 15)`.
+**The almost-IDP weight vector for $n = 1$.** The weight vector
+$q(n) = (1^{2n-1}, 3n, 10n, 15n)$ of Theorem 13, where $1^{2n-1}$ denotes $2n-1$ entries
+equal to $1$, taken at $n = 1$ and listed in coordinate order, is $(1, 3, 10, 15)$.
 
 ## Depends on
 
-- [Almost IDPWeights](almost-idpweights.md)
+- [The almost-IDP weight vector](almost-idpweights.md)
 
 ## Sources
 

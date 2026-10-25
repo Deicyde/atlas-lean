@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.epsNext
 ---
 
-# Eps Next
+# ε-successors of a state
 
-The targets of the ε-moves from `s`.
+**ε-successors of a state.** For an encoded NFA $N$ and a state $s$, the ε-successors of $s$
+are the list of the targets $t$ of the ε-moves $(s, t)$ of $N$, in the order in which these
+ε-moves are listed.
 
 ## Depends on
 

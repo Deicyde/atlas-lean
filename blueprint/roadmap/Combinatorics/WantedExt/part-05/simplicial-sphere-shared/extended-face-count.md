@@ -6,17 +6,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimplicialSphereShared.extendedFaceCount
 ---
 
-# Extended Face Count
+# Extended face numbers
 
-Extended f-vector entry: `f_{-1} = 1`, then `f_{i-1}`.
+**Extended face numbers.** For a finite simplicial $(d-1)$-sphere $X$ and a natural number
+$i$, the $i$-th extended face number of $X$ is $1$ if $i = 0$, and is the number $f_{i-1}(X)$ of
+$(i-1)$-dimensional faces of $X$ if $i \ge 1$. Thus it equals $f_{i-1}(X)$ under the convention
+$f_{-1}(X) = 1$.
 
 ## Depends on
 
-- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
+- [Finite simplicial sphere](finite-simplicial-sphere.md)
 
 ## Proof depends on
 
-- [Face Count](face-count.md)
+- [Face numbers of a simplicial sphere](face-count.md)
 
 ## Sources
 

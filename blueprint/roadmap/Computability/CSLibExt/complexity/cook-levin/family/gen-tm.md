@@ -5,26 +5,32 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.genTM
 ---
 
-# The generator as a genuine `FinTM2`
+# The clause-family generator as a finite stack machine
 
-**The generator as a genuine `FinTM2`** (finite stacks, labels, states; input stack `Tn`).
-Only checks that the finiteness requirements are met; the run lemmas are about `prog`.
+**The clause-family generator as a finite stack machine.** For a layout $L$, tables
+$\mathit{la}$, $\mathit{na}$, $\mathit{wa}$ and $N$ situations, the generator program for these
+data, bundled as a multi-stack Turing machine with finitely many stacks, labels and states: its
+stacks are the generator's stacks (the Boolean output stack and the counters), its input stack is
+the time counter and its output stack is the Boolean output stack, its alphabets are the
+generator's alphabets, its labels are the generator's labels for $N$ situations and literal
+numbers below the number of literals of a clause, execution starts at the first precomputation
+stage, and its internal state is a Boolean, initially false.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [SK](../counter-view/sk.md)
-- [CK](ck.md)
-- [GK](gk.md)
-- [GL](gl.md)
-- [GΓ](g.md)
-- [LS](ls.md)
-- [N Lits](n-lits.md)
-- [PS](ps.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Counters of the transition-family generator](ck.md)
+- [Stacks of the clause-family generator](gk.md)
+- [Labels of the clause-family generator](gl.md)
+- [Stack alphabets of the generator](g.md)
+- [Stages of the transition-clause generator's literal routine](ls.md)
+- [Number of literals of a transition clause](n-lits.md)
+- [Stages of the transition-clause generator's precomputation](ps.md)
 - [Prog](prog.md)
 
 ## Sources

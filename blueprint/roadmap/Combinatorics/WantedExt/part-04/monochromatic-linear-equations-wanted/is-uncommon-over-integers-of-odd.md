@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isUncommonOverIntegers_of_odd
 ---
 
-# Is Uncommon Over Integers of odd
+# Uncommonness of odd-length equations over the integers
 
-An equation with `2m + 1 ≥ 3` nonzero coefficients, not all of one sign, is
-`r`-uncommon over the integers for every `r ≥ 3`. The sign condition is added: without it
-there are no solutions in `[n]^{2m+1}` (e.g. `x₁ + x₂ + x₃ = 0`) and the paper's proportion
-`μ_E([n])` is undefined.
+**Uncommonness of odd-length equations over the integers.** Let $m \ge 1$ and let
+$a_1, \dots, a_{2m+1}$ be nonzero integers, at least one negative and at least one positive.
+Then for every $r \ge 3$ the equation $a_1x_1 + \cdots + a_{2m+1}x_{2m+1} = 0$ is
+$r$-uncommon over the integers.
+
+The sign condition excludes equations such as $x_1 + x_2 + x_3 = 0$, which have no solutions
+in positive integers and for which the proportion of monochromatic solutions is undefined.
 
 ## Depends on
 
-- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
+- [Uncommon equations over the integers](is-uncommon-over-integers.md)
 
 ## Sources
 

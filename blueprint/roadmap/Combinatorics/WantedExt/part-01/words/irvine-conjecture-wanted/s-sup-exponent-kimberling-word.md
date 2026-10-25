@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sSup_exponent_kimberlingWord
 ---
 
-# S Sup exponent kimberling Word
+# Critical exponent of Kimberling's word
 
-The critical exponent of `k`, the supremum of `m / p` over the nonempty factors of `k` of
-length `m` with period `p ≥ 1`, is `(2√3 + 12)/3`. (Allowing every period, not only the
-shortest one, does not change the supremum.)
+**Critical exponent of Kimberling's word.** Let $k = k_1 k_2 k_3 \cdots$ be Kimberling's
+word. The supremum of the ratios $m/p$, over all integers $m \ge 1$ and $p \ge 1$ for which some
+factor $k_{i+1} k_{i+2} \cdots k_{i+m}$ of $k$ ($i \ge 0$) has period $p$, that is,
+$k_{i+1+j} = k_{i+1+j+p}$ for every $j \ge 0$ with $j + p < m$, is $(2\sqrt{3} + 12)/3$.
+
+Allowing every period, not only the shortest one, does not change the supremum.
 
 ## Depends on
 
-- [Kimberling Word](kimberling-word.md)
+- [Kimberling's word](kimberling-word.md)
 
 ## Sources
 

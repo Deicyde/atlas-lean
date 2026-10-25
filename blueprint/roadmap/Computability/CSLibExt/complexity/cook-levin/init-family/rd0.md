@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.GL.rd0
 ---
 
-# Rd0
+# The first read test
 
-The first read test.
+**The first read test.** For $g, n \in \mathbb{N}$, the generator label that tests for input
+code $0$ when $g > 0$, and the error label when $g = 0$.
 
 ## Depends on
 
-- [GL](gl.md)
+- [Labels of the initial-row generator](gl.md)
 
 ## Sources
 

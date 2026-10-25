@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mFallingFactorial_one_three_two
 ---
 
-# M Falling Factorial one three two
+# The value $1\downarrow_{3,2} = 3$
 
-`1↓_{3,2} = 1 · (-1) · (-3) = 3`.
+**The value $1\downarrow_{3,2} = 3$.** The $2$-falling factorial of $1$ with three factors is
+$1\downarrow_{3,2} = 1 \cdot (1 - 2) \cdot (1 - 4) = 3$.
 
 ## Depends on
 
-- [M Falling Factorial](m-falling-factorial.md)
+- [The $m$-falling factorial](m-falling-factorial.md)
 
 ## Sources
 

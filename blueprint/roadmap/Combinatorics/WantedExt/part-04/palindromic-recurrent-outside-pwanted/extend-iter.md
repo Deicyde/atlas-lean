@@ -12,12 +12,12 @@ Iterate the word extension.
 
 ## Depends on
 
-- [Morphism](morphism.md)
-- [Sigma](sigma.md)
+- [Morphisms of the ternary alphabet](morphism.md)
+- [The ternary alphabet](sigma.md)
 
 ## Proof depends on
 
-- [Extend](extend.md)
+- [Image of a word under a morphism](extend.md)
 
 ## Sources
 

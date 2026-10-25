@@ -15,7 +15,7 @@ Acceptance test: run the encoded DFA and check the final state.
 
 ## Proof depends on
 
-- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
 - [Mem B](../../part-01/primrec-list/mem-b.md)
 
 ## Sources

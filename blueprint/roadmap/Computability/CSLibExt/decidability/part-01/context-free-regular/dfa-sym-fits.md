@@ -16,7 +16,7 @@ the items `R` found so far.
 
 ## Proof depends on
 
-- [Step](../../../automata/da/encoded-dfa/step.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 - [Mem B](../primrec-list/mem-b.md)
 
 ## Sources

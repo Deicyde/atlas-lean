@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.graphRamsey_three_five
 ---
 
-# Graph Ramsey three five
+# The value of $R(3, 5)$
 
-`R(3,5) = 14`.
+**The value of $R(3, 5)$.** The classical Ramsey number $R(3, 5)$ equals $14$.
 
 ## Depends on
 

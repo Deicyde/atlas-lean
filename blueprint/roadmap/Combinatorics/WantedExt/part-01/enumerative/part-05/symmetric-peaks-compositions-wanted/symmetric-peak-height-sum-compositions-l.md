@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.symmetricPeakHeightSum_compositions_length
 ---
 
-# Symmetric Peak Height Sum compositions length
+# Total symmetric peak height over compositions with a fixed number of parts
 
-For `k > 3`,
-`hsp(n, k) = (k - 2) ∑_{m=2}^{n-k+1} ∑_{b=1}^{min(m-1, t)} C(n - 2b - m - 1, k - 4) (m - b)`
-with `t = ⌊(n - m - k + 3) / 2⌋`.
+**Total symmetric peak height over compositions with a fixed number of parts.** For
+$n, k \ge 0$ let $\mathrm{hsp}(n, k)$ be the sum, over all compositions $c$ of $n$ with exactly
+$k$ parts, of the symmetric peak height sum of the sequence of parts of $c$. If $k > 3$, then
+for every $n \ge 0$
+
+$$
+\mathrm{hsp}(n, k) = (k - 2) \sum_{m=2}^{n-k+1} \sum_{b=1}^{\min(m-1,\, t_m)}
+\binom{n - 2b - m - 1}{k - 4} (m - b),
+\qquad t_m = \left\lfloor \frac{n - m - k + 3}{2} \right\rfloor,
+$$
+
+where an empty sum is $0$.
 
 ## Depends on
 
-- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Sum of the heights of symmetric peaks](symmetric-peak-height-sum.md)
 
 ## Sources
 

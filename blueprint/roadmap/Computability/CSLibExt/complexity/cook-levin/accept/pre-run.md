@@ -6,32 +6,41 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Accept.pre_run
 ---
 
-# Pre run
+# Run of the accept generator's precomputation
 
-The precomputation: from the input counters to `preF`, at the first clause label.
+**Run of the accept generator's precomputation.** Fix a layout $L$ with label/state block
+size $A$, $K$ stacks and $g$ symbol codes, and naturals $n_1$, $a$, $k_1$, $e$. For all
+$T, H \in \mathbb{N}$ and every list $o$ of Booleans, write $W = A + K H g$ for the row width.
+The accept generator, started at its first precomputation label with internal state false,
+output $o$, $T$ units on counter $\mathsf{Tn}$, $H$ units on $\mathsf{Hs}$ and every other
+counter empty, reaches in at most $\mathrm{preB}(L, k_1, T, H)$ steps the first clause label
+with internal state false, output still $o$, and counters $\mathsf{Tn} = T + 1$,
+$\mathsf{Hs} = H$, $\mathsf{Gc} = g$, $\mathsf{HG} = H g$, $\mathsf{Wc} = W$, $\mathsf{Kc} = K$,
+$\mathsf{K1} = k_1$, $\mathsf{Vc} = (T + 1) W$, $\mathsf{TW} = T W$,
+$\mathsf{CB} = T W + A + k_1 H g$, and every other counter empty.
 
 ## Depends on
 
-- [CK](ck.md)
-- [GL](gl.md)
-- [Start](start.md)
-- [PS](ps.md)
-- [Init F](init-f.md)
-- [Pre B](pre-b.md)
-- [Pre F](pre-f.md)
-- [Prog](prog.md)
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
+- [Counters of the accept generator](ck.md)
+- [Labels of the accept generator](gl.md)
+- [First clause label of the accept generator](start.md)
+- [Precomputation stages of the accept generator](ps.md)
+- [Initial counters of the accept generator](init-f.md)
+- [Cost of the precomputation of the accept generator](pre-b.md)
+- [Counters after the precomputation of the accept generator](pre-f.md)
+- [Generator machine for the accept family](prog.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Bud st](../counter-view/bud-st.md)
-- [Mul S](../counter-view/mul-s.md)
-- [Row W](../family/row-w.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Budgeted runs transport along equal counter values](../counter-view/bud-st.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
+- [Variables per time step](../family/row-w.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

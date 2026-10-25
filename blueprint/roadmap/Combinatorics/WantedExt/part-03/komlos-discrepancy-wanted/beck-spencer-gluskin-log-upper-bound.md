@@ -5,9 +5,11 @@ statement: formalized
 lean: KomlosDiscrepancyWanted.beckSpencerGluskinLogUpperBound
 ---
 
-# Beck Spencer Gluskin Log Upper Bound
+# Beck–Spencer–Gluskin logarithmic upper bound (statement)
 
-One positive universal multiplier gives the logarithmic upper bound.
+**Beck–Spencer–Gluskin logarithmic upper bound (statement).** The statement that there are a
+real number $c > 0$ and a natural number $N \ge 3$ such that for every natural number $n \ge N$,
+the Komlós constant in dimension $n$ is at most $c \log n$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

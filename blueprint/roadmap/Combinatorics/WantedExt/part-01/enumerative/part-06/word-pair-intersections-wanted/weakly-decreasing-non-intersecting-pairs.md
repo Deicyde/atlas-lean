@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.weaklyDecreasingNonIntersectingPairs_card_eq_coeff
 ---
 
-# Weakly Decreasing Non Intersecting Pairs card eq coeff
+# Non-intersecting pairs of weakly decreasing words
 
-Theorem 3: for `n, r ≥ 1`, the number of non-intersecting pairs of weakly decreasing words of
-lengths `n` and `r` over `[k]` is `[x^n y^r] f_{w,k}(x, y)` with
-`f_{w,k} = ∑_{j=1}^{k-1} C(k, j) x^j (1-x)^{-j} ((1-y)^{-(k-j)} - 1)`.
+**Non-intersecting pairs of weakly decreasing words.** Fix natural numbers $k$, $n \ge 1$ and
+$r \ge 1$, and order an alphabet of $k$ letters. Write $[x^m] F$ for the coefficient of $x^m$ in a
+formal power series $F$ over $\mathbb{Q}$. The number of pairs $(u, v)$ of weakly decreasing words
+over this alphabet, $u$ of length $n$ and $v$ of length $r$, such that no letter occurs in both is
+$\sum_{j=1}^{k-1} \binom{k}{j} \, [x^n]\bigl(x^j (1-x)^{-j}\bigr) \,
+[x^r]\bigl((1-x)^{-(k-j)} - 1\bigr)$.
 
 ## Depends on
 

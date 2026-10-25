@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_generalReduction
 ---
 
-# Slow ANim general Reduction
+# General reduction lemma
 
-Lemma 4 (General Reduction Lemma): if a move on a set `S` of `ℓ = |S| ∈ A` stacks from a
-reduced position `p` leads to a position that is not reduced, then, with `a = min A`,
-`M = max(p)` and `Σ(p) = a M + r`, either (R1) `ℓ > a`, all maximal stacks are played on and
-`0 ≤ r < ℓ - a`, or (R2) some maximal stack is omitted and `0 ≤ r < ℓ`. The hypothesis that
-`p` is reduced is implicit in the paper (its proof uses `r ≥ 0`, the NIRB condition for `p`).
+**General reduction lemma.** Let $A \subseteq \{1, \dots, n\}$ be nonempty with least element
+$a$, and let $p$ be a reduced position of Slow$A$-Nim $\mathrm{SN}(n, A)$ with largest stack
+height $M$ and total $\Sigma(p) = \sum_i p_i$. Let $S$ be a set of $\ell \in A$ stacks, each
+holding at least one token, and suppose that the position obtained from $p$ by removing one token
+from each stack of $S$ is not reduced. Then $a M \le \Sigma(p)$ and, writing
+$r = \Sigma(p) - a M$, either (R1) $\ell > a$, every stack of height $M$ lies in $S$, and
+$r < \ell - a$; or (R2) some stack of height $M$ is not in $S$, and $r < \ell$.
+
+The hypothesis that $p$ is reduced is implicit in the source, whose proof uses $r \ge 0$.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
-- [Slow ANim After](slow-anim-after.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
+- [Playing on a set of stacks](slow-anim-after.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGrundy_mul_sub_eq_F_eq_pred
 ---
 
-# Maximum Nim Grundy mul sub eq F eq pred
+# Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h
 
-Lemma 5(ii.1): under `k=n*t+h` for positive `n,t,h` with `h ≤ n`, every
-`1 ≤ i ≤ n` gives `G(nk-i)=G(F(nk-i))=G(n(k-1)-i)`, where `F(x)=(k-1)x/k`.
-The conjunction spells out the paper's two equalities; there is no deviation.
+**Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h.** Let $n$, $t$, $h$ be
+natural numbers with $t \ge 1$ and $1 \le h \le n$, and let $k = nt + h$. Write $G(x)$ for the
+Grundy number of a pile of $x$ stones in Maximum Nim with rule function
+$f(y) = \lfloor y/k \rfloor$, and let $F(x) = \lfloor (k-1)x/k \rfloor$. Then for every natural
+number $i$ with $1 \le i \le n$,
+
+$$G(nk - i) = G(F(nk - i)) = G(n(k - 1) - i).$$
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Sources
 

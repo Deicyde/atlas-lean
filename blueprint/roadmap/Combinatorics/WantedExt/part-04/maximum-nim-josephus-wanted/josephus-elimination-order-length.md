@@ -6,19 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.josephusEliminationOrder_length
 ---
 
-# Josephus Elimination Order length
+# Length of the Josephus elimination order
 
-The Josephus elimination order on `n` people has exactly `n` entries: every person
-is eliminated once, with the survivor recorded last. This holds for every `k`, with no
-deviation.
+**Length of the Josephus elimination order.** For all natural numbers $k$ and $n$, the
+Josephus elimination order with step $k$ on the circle $1, \dots, n$ has exactly $n$ entries.
 
 ## Depends on
 
-- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Josephus elimination order](josephus-elimination-order.md)
 
 ## Proof depends on
 
-- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
+- [Fuel-bounded Josephus simulation](josephus-elimination-order-aux.md)
 
 ## Sources
 

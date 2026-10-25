@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.stirlingParkSpot_before_second_lucky
 ---
 
-# Stirling Park Spot before second lucky
+# Parking before the second lucky car
 
-Let `w ∈ Q_n` with `lucky(w) ≥ 2` and let `x` be the second-smallest element
-of `Lucky(w)` (written: `x ∈ Lucky(w)` with exactly one smaller lucky car). Then
-cars `2, …, x - 1` park, in order, in spots `w(1) + 1, …, w(1) + x - 2`: car
-`c = i + 1` parks in spot `w(1) + c - 1 = w(1) + i`.
+**Parking before the second lucky car.** Let $w = w_1 \cdots w_{2n}$ be a Stirling permutation
+of order $n$, read as a parking function of length $2n$, and let $x$ be a lucky car of $w$ such
+that exactly one lucky car of $w$ is smaller than $x$, so that $x$ is the second-smallest element
+of the lucky set $\mathrm{Lucky}(w)$. Then every car $c$ with $2 \le c \le x - 1$ parks in spot
+$w_1 + c - 1$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [The lucky set of a word](stirling-lucky-set.md)
-- [Stirling Park Spot](stirling-park-spot.md)
+- [Parking spot of a car](stirling-park-spot.md)
 
 ## Sources
 

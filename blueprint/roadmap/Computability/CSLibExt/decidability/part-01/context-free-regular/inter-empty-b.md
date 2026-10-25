@@ -17,7 +17,7 @@ lean: Cslib.Language.EncodedCFG.interEmptyB
 
 ## Proof depends on
 
-- [States](../../../automata/da/encoded-dfa/states.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [Mem B](../primrec-list/mem-b.md)
 - [Dfa Found](dfa-found.md)
 

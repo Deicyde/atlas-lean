@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.c4Pattern_closed_under_moves
 ---
 
-# C4 Pattern closed under moves
+# Closure of the mod-$3$ pattern classes under moves on $C_4$
 
-Lemma 15: `\hat X_{aabb} ∪ X_{abac}` and `X_{aaab} ∪ X_{abab} ∪ X_{aabc}` are each closed
-under `(2:1)`-pebbling moves on `C_4`.
+**Closure of the mod-$3$ pattern classes under moves on $C_4$.** Let $a$ and $b$ be
+distributions of pebbles on the vertices of the $4$-cycle $C_4$ such that $b$ is obtained from $a$
+by one $(2:1)$-pebbling move, that is, by removing two pebbles from a vertex holding at least two
+pebbles and adding one pebble to an adjacent vertex. If $a \in \hat X_{aabb} \cup X_{abac}$, then
+$b \in \hat X_{aabb} \cup X_{abac}$; and if $a \in X_{aaab} \cup X_{abab} \cup X_{aabc}$, then
+$b \in X_{aaab} \cup X_{abab} \cup X_{aabc}$.
 
 ## Depends on
 
-- [C4 Pattern AAAB](c4-pattern-aaab.md)
-- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
-- [C4 Pattern AABC](c4-pattern-aabc.md)
-- [C4 Pattern ABAB](c4-pattern-abab.md)
-- [C4 Pattern ABAC](c4-pattern-abac.md)
-- [Pebbling Moves](pebbling-moves.md)
+- [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
+- [The set $\hat X_{aabb}$ of $C_4$ positions](c4-pattern-aabbhat.md)
+- [The set $X_{aabc}$ of $C_4$ positions](c4-pattern-aabc.md)
+- [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)
+- [The set $X_{abac}$ of $C_4$ positions](c4-pattern-abac.md)
+- [Moves of the $(k+1:k)$-pebbling game](pebbling-moves.md)
 
 ## Sources
 

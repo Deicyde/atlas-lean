@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticOne_morphism_coding
 ---
 
-# Meta Automatic One morphism coding
+# $\mathcal{M}_1$ as a coding of a uniform morphism fixed point
 
-Corollary 16: `ℳ₁` is the coding `0, 2 ↦ 0`, `1, 3 ↦ 1` of the fixed point
-starting from `0` of the `4`-uniform morphism `0 ↦ 0112`, `1 ↦ 1230`, `2 ↦ 2301`,
-`3 ↦ 3023`. The fixed point is a word `w` with `w(0) = 0` and
-`w(4n + r) = σ(w(n))_r`.
+**$\mathcal{M}_1$ as a coding of a uniform morphism fixed point.** Let $\sigma$ be the
+$4$-uniform morphism on $\{0, 1, 2, 3\}$ with $\sigma(0) = 0112$, $\sigma(1) = 1230$,
+$\sigma(2) = 2301$ and $\sigma(3) = 3023$, and write $\sigma(c)_r$ for the letter of $\sigma(c)$
+at position $r$, counted from $0$. There is a sequence $w : \mathbb{N} \to \mathbb{N}$ with
+$w(0) = 0$ and $w(4n + r) = \sigma(w(n))_r$ for all $n \in \mathbb{N}$ and $r < 4$, such that,
+reading the values of the meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$,
+$\mathcal{M}_1(n) = w(n) \bmod 2$ for every $n \in \mathbb{N}$. In other words, $\mathcal{M}_1$
+is the image of the fixed point of $\sigma$ starting with $0$ under the coding $0, 2 \mapsto 0$,
+$1, 3 \mapsto 1$.
 
 ## Depends on
 
-- [Meta Automatic One](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
 
 ## Sources
 

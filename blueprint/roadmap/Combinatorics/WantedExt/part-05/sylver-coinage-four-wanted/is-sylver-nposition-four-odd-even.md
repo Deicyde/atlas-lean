@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isSylverNPosition_four_odd_even
 ---
 
-# Is Sylver NPosition four odd even
+# Even replies to 4 and an odd number at least 5 lose
 
-After `{4, x}` with `x ≥ 5` odd, every even legal move `b` leaves an N-position
-`{4, x, b}`.
+**Even replies to 4 and an odd number at least 5 lose.** Let $x \ge 5$ be an odd natural
+number. For every even legal move $b$ of the position $\{4, x\}$, the position $\{4, x, b\}$ is
+an N-position.
 
 ## Depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

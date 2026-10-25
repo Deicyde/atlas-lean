@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PseudorandomGrassmannWanted.PseudorandomGrassmann.Φ
 ---
 
-# Φ
+# Edge expansion of a vertex set
 
-Definition 1.8 from the paper: Let `G = (V,E)` be an `n`-vertex, `d`-regular graph.
-For a non-empty set of vertices `S ⊆ V` with `|S| ≤ n/2`, its (edge-)expansion is defined
-as `Φ(S) = |E(S,S̄)| / (d·|S|)`, where `E(S,S̄)` denotes the set of edges with one endpoint
-in S and the other in `S̄ = V\S`.
-In Lean, we don't require the conditions `d`-regular and `|S| ≤ n/2` for this definition.
-However, we need `S` nonempty to define the degree `d` as the degree of an arbitrary element
-of `S`. Note that this only gives the correct definition for regular graphs.
+**Edge expansion of a vertex set.** Let $G$ be a simple graph on a finite vertex set $V$ and
+let $S \subseteq V$ be nonempty. Let $d$ be the degree in $G$ of a fixed vertex of $S$, chosen
+once for each $S$. The expansion of $S$ is the rational number
+$\Phi_G(S) = |E(S, V \setminus S)| / (d \cdot |S|)$, where $E(S, V \setminus S)$ is the set of
+edges of $G$ with one endpoint in $S$ and the other in $V \setminus S$; it is $0$ when $d = 0$.
+
+For a $d$-regular graph, $d$ is the common degree and this is Definition 1.8 of Khot, Minzer and
+Safra, which also asks that $|S| \le |V|/2$; neither regularity nor that bound is assumed here.
 
 ## Depends on
 

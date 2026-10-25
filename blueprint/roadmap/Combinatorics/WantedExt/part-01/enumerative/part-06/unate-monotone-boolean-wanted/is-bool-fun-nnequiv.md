@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsBoolFunNNEquiv
 ---
 
-# Is Bool Fun NNEquiv
+# NN-equivalence of Boolean functions
 
-NN-equivalence: `g` is obtained from `f` by negating a subset of the
-inputs (the positions where `a i = true`) and possibly the output (`c`).
+**NN-equivalence of Boolean functions.** An $n$-variable Boolean function $f$ is
+NN-equivalent to $g$ when $g$ is obtained from $f$ by negating some of the inputs and
+possibly the output: there are $a \in \{0,1\}^n$ and $c \in \{0,1\}$ such that
+$g(x) = f(x \oplus a) \oplus c$ for every $x \in \{0,1\}^n$, where $\oplus$ is exclusive or
+(coordinatewise on vectors).
 
 ## Depends on
 

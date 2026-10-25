@@ -12,8 +12,8 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.upd_hold
 
 ## Depends on
 
-- [X Idx](../../family/x-idx.md)
-- [Family](../../family/family.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The transition clause family](../../family/family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](../part-04/cells-hold.md)
 - [Code Holds](code-holds.md)
@@ -31,8 +31,8 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.upd_hold
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
 - [Code](../part-03/code.md)
 - [Sit Idx spec](../part-03/sit-idx-spec.md)
 - [L1, `(k, j)` form](fam-force-kj.md)

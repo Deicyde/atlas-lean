@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.c4ModFour_examples
 ---
 
-# C4 Mod Four examples
+# Examples of positions in the sets $Y$ for $C_4$
 
-Small values of the mod-`4` patterns: `(2,0,0,1) ∈ Y_{aabc}`, `(0,1,0,0) ∈ \hat Y_{abac}`,
-`(0,0,0,0) ∈ \hat Y_{abab}`, and `(1,1,0,0) ∈ (\hat Y_{abab})^c`.
+**Examples of positions in the sets $Y$ for $C_4$.** Writing $(a_0, a_1, a_2, a_3)$ for the
+position with $a_j$ pebbles on vertex $v_j$ of $C_4$: the position $(2, 0, 0, 1)$ lies in
+$Y_{aabc}$, the position $(0, 1, 0, 0)$ lies in $\hat Y_{abac}$, the position $(0, 0, 0, 0)$ lies
+in $\hat Y_{abab}$, and the position $(1, 1, 0, 0)$ lies in $(\hat Y_{abab})^c$.
 
 ## Depends on
 
-- [C4 Mod Four AABC](c4-mod-four-aabc.md)
-- [C4 Mod Four ABABHat](c4-mod-four-ababhat.md)
-- [C4 Mod Four ABABHat Compl](c4-mod-four-ababhat-compl.md)
-- [C4 Mod Four ABACHat](c4-mod-four-abachat.md)
+- [The set $Y_{aabc}$ of $C_4$ positions](c4-mod-four-aabc.md)
+- [The set $\hat Y_{abab}$ of $C_4$ positions](c4-mod-four-ababhat.md)
+- [The complement set $(\hat Y_{abab})^c$ of $C_4$ positions](c4-mod-four-ababhat-compl.md)
+- [The set $\hat Y_{abac}$ of $C_4$ positions](c4-mod-four-abachat.md)
 
 ## Sources
 

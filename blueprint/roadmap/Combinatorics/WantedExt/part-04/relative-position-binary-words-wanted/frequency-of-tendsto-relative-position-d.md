@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.frequency_of_tendsto_relativePosition_div
 ---
 
-# Proposition 33
+# The frequency of $b$ from the growth of the relative position
 
-**Proposition 33.** For `w ∈ 𝒲` with `r(n)/n → L` in the extended reals, `Freq(b)` exists
-and equals `0` if `L = ∞`, `1` if `L = -∞`, `1/2` if `L = 0`, and
-`(2 + L - √(4 + L²)) / (2L)` otherwise.
+**The frequency of $b$ from the growth of the relative position.** Let $w$ be an infinite
+binary word in which both letters $a$ and $b$ occur infinitely often, let $r$ be its relative
+position function, and suppose that $r(n)/n$ converges to $L$ in the extended real line
+$[-\infty, \infty]$. Let $\#_b(m)$ be the number of letters $b$ among the first $m$ letters of
+$w$. Then $\#_b(m)/m$ converges, and its limit, the frequency of $b$ in $w$, is $0$ if
+$L = \infty$, $1$ if $L = -\infty$, $1/2$ if $L = 0$, and
+$(2 + L - \sqrt{4 + L^2})/(2L)$ if $L$ is a nonzero real number.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Count](letter-count.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Letter-counting function](letter-count.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeTwo_isN_iff
 ---
 
-# Pebbling complete Two is N iff
+# Winning positions of $(2:1)$-pebbling on $K_2$
 
-Theorem 1(a) (quoting Fiorini, Lind, Woldar, and Wong): on `K_2` with `(2:1)`-moves, a game
-`Γ(a₁, a₂)` with an even total is an N-game iff `a₁ ≢ a₂ (mod 3)`, and with an odd total iff
-`a₁ ≡ a₂ (mod 3)`.
+**Winning positions of $(2:1)$-pebbling on $K_2$.** Let $a = (a_0, a_1)$ be a position of the
+$(2:1)$-pebbling game on the complete graph $K_2$, with $a_0$ and $a_1$ pebbles on its two
+vertices. If $a_0 + a_1$ is even, then $a$ is an N-position (that is, not a P-position) if and
+only if $a_0 \not\equiv a_1 \pmod 3$. If $a_0 + a_1$ is odd, then $a$ is an N-position if and
+only if $a_0 \equiv a_1 \pmod 3$.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

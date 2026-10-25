@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Circuits.booleanSignature
 ---
 
-# Boolean Signature
+# Boolean signature
 
-The Boolean signature, with no zero-input AND or OR gate.
+**Boolean signature.** The Boolean signature has the Boolean gates as its operation symbols,
+where NOT has arity $1$ and, for each natural number $a$, the AND gate and the OR gate indexed by
+$a$ have arity $a + 1$. In particular, no AND or OR gate takes zero inputs.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Boolean Gate](boolean-gate.md)
+- [Boolean gates](boolean-gate.md)
 
 ## Sources
 

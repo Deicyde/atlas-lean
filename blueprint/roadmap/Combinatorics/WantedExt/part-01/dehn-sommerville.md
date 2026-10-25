@@ -15,8 +15,8 @@ where $f_{-1} = 1$ and $f_k$ is the number of $k$-dimensional faces of $X$.
 
 ## Depends on
 
-- [Finite Simplicial Sphere](../part-05/simplicial-sphere-shared/finite-simplicial-sphere.md)
-- [H Vector](../part-05/simplicial-sphere-shared/h-vector.md)
+- [Finite simplicial sphere](../part-05/simplicial-sphere-shared/finite-simplicial-sphere.md)
+- [The h-vector of a simplicial sphere](../part-05/simplicial-sphere-shared/h-vector.md)
 
 ## Sources
 

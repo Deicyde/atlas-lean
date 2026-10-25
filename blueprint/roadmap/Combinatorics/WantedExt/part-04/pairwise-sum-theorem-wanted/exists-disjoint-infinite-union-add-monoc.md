@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_disjoint_infinite_union_add_monochromatic
 ---
 
-# Exists disjoint infinite union add monochromatic
+# Disjoint infinite sets with monochromatic union and sumset
 
-For every finite coloring of `ℕ` there are infinite disjoint sets `A`, `B` such that
-`A ∪ B ∪ (A + B)` is monochromatic.
+**Disjoint infinite sets with monochromatic union and sumset.** For every finite coloring of
+$\mathbb{N} = \{0, 1, 2, \dots\}$ there are disjoint infinite sets $A, B \subseteq \mathbb{N}$ such
+that $A \cup B \cup (A + B)$ is monochromatic, where $A + B = \{a + b : a \in A, b \in B\}$.
 
 ## Depends on
 

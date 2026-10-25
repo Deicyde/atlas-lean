@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartialListColoringProportionalBoundWanted.conjecture
 ---
 
-# Conjecture
+# Albertson–Grossman–Haas partial list coloring conjecture
 
-Albertson–Grossman–Haas partial list coloring conjecture: for a finite simple
-graph with list chromatic number `q`, every exact `t`-list assignment with
-`t ≤ q` permits a proper coloring of a vertex subset `S` with
-`t * n ≤ q * S.card`, i.e. `S.card ≥ t * n / q` over the rationals. The
-positivity hypothesis records the denominator convention and, together with
-`IsChoiceNumber`, excludes the empty-graph degeneracy.
+**Albertson–Grossman–Haas partial list coloring conjecture.** Let $G$ be a finite simple graph
+on $n$ vertices whose choice number $q$ is positive, let $t \le q$ be a natural number, and assign
+to each vertex $v$ a list $L(v)$ of exactly $t$ colors. Then there is a set $S$ of vertices of $G$
+that is partially list-colorable from $L$ (the subgraph of $G$ induced by $S$ has a proper
+coloring giving each vertex a color from its list) and satisfies $tn \le q|S|$, that is,
+$|S| \ge tn/q$.
 
 ## Depends on
 
@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Partial List Coloring](is-partial-list-coloring.md)
+- [Partial list colorability](is-partial-list-coloring.md)
 - [Choice number](../../../MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
 
 ## Sources

@@ -6,21 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.not_slowANimReducedGraphMove_zero
 ---
 
-# Not slow ANim Reduced Graph Move zero
+# The empty position is terminal in the playable game graph
 
-The empty position has no moves in the playable game graph.
+**The empty position is terminal in the playable game graph.** For every $n$ and every finite
+set $A$ of natural numbers, the position of Slow$A$-Nim $\mathrm{SN}(n, A)$ with all $n$ stacks
+empty has no move to any position in the playable game graph of $\mathrm{SN}(n, A)$.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
-- [Slow ANim Reduced Graph Move](slow-anim-reduced-graph-move.md)
-- [Slow ANim Reduced zero](slow-anim-reduced-zero.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
+- [Moves of the playable game graph of Slow $A$-Nim](slow-anim-reduced-graph-move.md)
+- [The empty position is reduced](slow-anim-reduced-zero.md)
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
-- [Slow ANim Moves zero](slow-anim-moves-zero.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
+- [The empty position has no options](slow-anim-moves-zero.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

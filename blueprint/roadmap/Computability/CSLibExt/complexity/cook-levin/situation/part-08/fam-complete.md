@@ -14,9 +14,9 @@ otherwise by a false body literal (situation injectivity).
 
 ## Depends on
 
-- [X Idx](../../family/x-idx.md)
-- [WF](../../family/wf.md)
-- [Family](../../family/family.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [Well-formed situation tables for the transition clauses](../../family/wf.md)
+- [The transition clause family](../../family/family.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
 - [The real run's literals](run-lit.md)
@@ -31,17 +31,17 @@ otherwise by a false body literal (situation injectivity).
 
 ## Proof depends on
 
-- [Inc](../../family/inc.md)
-- [Layout](../../family/layout.md)
-- [C Idx](../../family/c-idx.md)
-- [N Lits](../../family/n-lits.md)
-- [Num Vars](../../family/num-vars.md)
-- [Row W](../../family/row-w.md)
-- [Dense Clause](../../family/dense-clause.md)
-- [Div mod succ of lt](../../family/div-mod-succ-of-lt.md)
-- [Inc of mono](../../family/inc-of-mono.md)
-- [Lit Pos](../../family/lit-pos.md)
-- [Lits](../../family/lits.md)
+- [Increasing literal positions](../../family/inc.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Number of literals of a transition clause](../../family/n-lits.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Variables per time step](../../family/row-w.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
+- [Shifting the start of a gap encoding](../../family/div-mod-succ-of-lt.md)
+- [Increasing literal sequences](../../family/inc-of-mono.md)
+- [Position of a literal in a transition clause](../../family/lit-pos.md)
+- [Literals of a transition clause](../../family/lits.md)
 - [G](../part-01/g-2.md)
 - [Good](../part-03/good.md)
 - [Cell](../part-03/cell.md)

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.keywordSimpleMap_of_not_applicable
 ---
 
-# Keyword Simple Map of not applicable
+# A simple map that is not applicable is the identity
 
-A simple map whose keyword is not applicable leaves the word unchanged.
+**A simple map that is not applicable is the identity.** Let $a$ be a keyword and $u$ a binary
+word. If $a$ is not applicable to $u$ at letter $i$, then the simple map $\varphi_i$ of $a$ leaves
+$u$ unchanged: $\varphi_i(u) = u$.
 
 ## Depends on
 
-- [Keyword Applicable](keyword-applicable.md)
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Applicability of a keyword](keyword-applicable.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

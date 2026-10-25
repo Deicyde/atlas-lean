@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_zeros_two_ones_zeros_iff
 ---
 
-# Is Ulam Word zeros two ones zeros iff
+# Ulam words with a block of two ones
 
-`0^a 1² 0^b` is Ulam iff `a + b` is odd.
+**Ulam words with a block of two ones.** For natural numbers $a$ and $b$, the binary word
+$0^a 11 0^b$ ($a$ zeros, then two ones, then $b$ zeros) is an Ulam word if and only if $a + b$ is
+odd.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
+- [Ulam words](is-ulam-word.md)
 
 ## Sources
 

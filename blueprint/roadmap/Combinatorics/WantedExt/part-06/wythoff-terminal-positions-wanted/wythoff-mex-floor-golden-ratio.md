@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.wythoffMex_floor_goldenRatio
 ---
 
-# Wythoff Mex floor golden Ratio
+# Golden-ratio formula for the mex sequences
 
-Corollary 19: for `ℓ ≥ 1` there is a bounded `λ_ℓ : ℕ → ℤ` with
-`a_n = ⌊(n + ℓ)φ⌋ + λ_ℓ(n)` and `b_n = ⌊(n + ℓ)φ²⌋ + λ_ℓ(n) + 1` for all `n`.
+**Golden-ratio formula for the mex sequences.** Let $\ell \ge 1$, let $\varphi$ be the golden
+ratio, let $K^\ell$ be Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are
+terminal, and let $(a_n)$ be the mex sequence of $K^\ell$ and $(b_n)$ its companion sequence.
+Then there are integers $\lambda_n$ for $n \ge 0$ and an integer $C$ with $|\lambda_n| \le C$
+for all $n$ such that, for every natural number $n$,
+$a_n = \lfloor (n + \ell)\varphi \rfloor + \lambda_n$ and
+$b_n = \lfloor (n + \ell)\varphi^2 \rfloor + \lambda_n + 1$.
 
 ## Depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Sources
 

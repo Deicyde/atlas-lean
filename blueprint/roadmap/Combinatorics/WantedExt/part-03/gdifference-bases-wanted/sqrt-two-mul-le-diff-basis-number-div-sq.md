@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sqrt_two_mul_le_diffBasisNumber_div_sqrt
 ---
 
-# Sqrt two mul le diff Basis Number div sqrt
+# Trivial lower bound for difference bases of an interval
 
-The trivial lower bound `η_g(n)/√n ≥ √(2g)` for `n > 1`.
+**Trivial lower bound for difference bases of an interval.** Let $g, n \in \mathbb{N}$ with
+$n > 1$, and let $\eta_g(n)$ be the least size of a finite set $A \subseteq \mathbb{Z}$ such that
+every $x \in \{1, \dots, n\}$ equals $a - a'$ for at least $g$ ordered pairs
+$(a, a') \in A \times A$. Then $\eta_g(n) / \sqrt{n} \ge \sqrt{2g}$.
 
 ## Depends on
 
-- [Diff Basis Number](diff-basis-number.md)
+- [The $g$-difference basis number](diff-basis-number.md)
 
 ## Sources
 

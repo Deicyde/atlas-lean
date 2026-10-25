@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.toeplitzHessenbergDet_fussCatalan_special
 ---
 
-# Toeplitz Hessenberg Det fuss Catalan special
+# Special Toeplitz–Hessenberg determinants of Fuss–Catalan numbers
 
-Special cases of Theorem 3:
-`(-1)^{n-1} D_+(A_1(2,3), …, A_n(2,3)) = C_{n-1} - C_{n-2}` for `n ≥ 2`,
-`(-1)^{n-1} D_+(A_1(2,4), …, A_n(2,4)) = C_{n-1} - 2C_{n-2}` for `n ≥ 3`,
-`(-1)^{n-1} D_+(A_1(3,1), …, A_n(3,1)) = (1/n) C(3n-2, n-1)` and
-`(-1)^{n-1} D_+(A_1(3,2), …, A_n(3,2)) = (2/n) C(3n-3, n-1)` for `n ≥ 1`. The OEIS
-identifications (A000245, A115143, A006013, A007226) are omitted.
+**Special Toeplitz–Hessenberg determinants of Fuss–Catalan numbers.** Write
+$\det(a_0; a_1, \dots, a_n)$ for the determinant of the $n \times n$ Toeplitz–Hessenberg matrix
+whose entry in row $i$ and column $j$ is $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the
+superdiagonal. For natural numbers $p, r \ge 1$ let $A_n(p, r) = \frac{r}{pn + r} \binom{pn + r}{n}$
+be the generalized Fuss–Catalan number, put
+$D_n(p, r) = (-1)^{n-1} \det(1; A_1(p, r), \dots, A_n(p, r))$, and let $C_n$ be the $n$-th
+Catalan number. Then, in $\mathbb{Q}$: $D_n(2, 3) = C_{n-1} - C_{n-2}$ for every $n \ge 2$;
+$D_n(2, 4) = C_{n-1} - 2 C_{n-2}$ for every $n \ge 3$;
+$D_n(3, 1) = \frac{1}{n} \binom{3n - 2}{n - 1}$ for every $n \ge 1$; and
+$D_n(3, 2) = \frac{2}{n} \binom{3n - 3}{n - 1}$ for every $n \ge 1$.
 
 ## Depends on
 

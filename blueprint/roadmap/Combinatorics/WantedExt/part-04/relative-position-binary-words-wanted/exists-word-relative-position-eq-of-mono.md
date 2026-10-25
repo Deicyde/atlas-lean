@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_word_relativePosition_eq_of_monotone
 ---
 
-# Lemma 8
+# Non-decreasing functions as relative position functions
 
-**Lemma 8.** Every non-decreasing `r : ℕ → ℕ` (positive values) is the relative position
-function of some `w ∈ a𝒲`.
+**Non-decreasing functions as relative position functions.** Let $r$ be a function from the
+natural numbers to the natural numbers with $r(n) \ge 1$ and $r(n) \le r(n+1)$ for every
+$n \ge 1$. Then there is an infinite word $w$ over the letters $a$ and $b$ that starts with $a$,
+in which both letters occur infinitely often, and whose relative position function satisfies
+$r_w(n) = r(n)$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

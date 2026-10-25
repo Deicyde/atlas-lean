@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isUnateBoolFun_not
 ---
 
-# Is Unate Bool Fun not
+# The negation of a unate function is unate
 
-Proposition 7: the negation of a unate function is unate.
+**The negation of a unate function is unate.** If an $n$-variable Boolean function $f$ is
+unate, then so is its negation $x \mapsto \lnot f(x)$.
 
 ## Depends on
 
-- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Unate Boolean function](is-unate-bool-fun.md)
 
 ## Sources
 

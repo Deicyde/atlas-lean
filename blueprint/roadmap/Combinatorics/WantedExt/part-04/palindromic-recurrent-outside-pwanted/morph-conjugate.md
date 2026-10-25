@@ -6,20 +6,23 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.MorphConjugate
 ---
 
-# Morph Conjugate
+# Conjugate morphisms
 
-Conjugate morphisms (Labbé 2014, Section 2; Lothaire): `ψ` and `θ` are
-conjugate when `ψ a ++ w = w ++ θ a` for every letter `a` (or the
-symmetric condition) for some word `w`.
+**Conjugate morphisms.** Let $\psi$ and $\theta$ be morphisms of the ternary alphabet
+$\{0, 1, 2\}$, each sending every letter to a finite word, and write $xy$ for the concatenation of
+words $x$ and $y$. Then $\psi$ and $\theta$ are conjugate when there is a finite word $w$ such that
+$\psi(a) w = w \theta(a)$ for every letter $a$, or there is a finite word $w$ such that
+$\theta(a) w = w \psi(a)$ for every letter $a$.
 
 ## Depends on
 
-- [Morphism](morphism.md)
+- [Morphisms of the ternary alphabet](morphism.md)
 
 ## Proof depends on
 
-- [Sigma](sigma.md)
+- [The ternary alphabet](sigma.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PalindromicRecurrentOutsidePWanted](../../../../../sources/v2/WantedExt.md)
+- Labbé 2014, Section 2; Lothaire.

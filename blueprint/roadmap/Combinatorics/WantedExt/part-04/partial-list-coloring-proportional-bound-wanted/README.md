@@ -4,6 +4,6 @@ navigation: module
 
 # Partial List Coloring Proportional Bound
 
-- [Is Partial List Coloring](is-partial-list-coloring.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Partial list colorability](is-partial-list-coloring.md)
+- [Albertson–Grossman–Haas partial list coloring conjecture](conjecture.md)
+- [The partial list coloring conjecture is false](conjecture-refuted.md)

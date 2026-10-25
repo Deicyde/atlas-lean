@@ -6,27 +6,29 @@ proof: formalized
 lean: Cslib.Automata.PDA.accepts_restrict
 ---
 
-# Accepts restrict
+# Restricting the stack alphabet preserves the accepted language
 
-Restricting the stack alphabet to a finite closed set does not change
-the accepted language.
+**Restricting the stack alphabet preserves the accepted language.** Let $M$ be a pushdown
+automaton and let $\Gamma_0$ be a finite set of stack symbols of $M$ that contains the initial
+stack symbol of $M$ and is closed for $M$. Then the restriction of $M$ to the stack alphabet
+$\Gamma_0$ accepts, by empty stack, exactly the same language as $M$.
 
 ## Depends on
 
-- [PDA](pda.md)
-- [Closed Under](closed-under.md)
-- [Accepts](accepts.md)
-- [Restrict](restrict.md)
+- [Pushdown automaton](pda.md)
+- [Closed sets of stack symbols](closed-under.md)
+- [Language accepted by a pushdown automaton](accepts.md)
+- [Restricting the stack alphabet of a pushdown automaton](restrict.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Derives](derives.md)
-- [Derives restrict of derives](derives-restrict-of-derives.md)
-- [Derives val of derives restrict](derives-val-of-derives-restrict.md)
-- [Init Config](init-config.md)
-- [Lift Stack](lift-stack.md)
-- [Stack subset of derives](stack-subset-of-derives.md)
+- [Pushdown automaton configuration](config.md)
+- [Multi-step computation of a pushdown automaton](derives.md)
+- [Computations inside a closed set lift to the restriction](derives-restrict-of-derives.md)
+- [Computations of the restriction are computations of the automaton](derives-val-of-derives-restrict.md)
+- [Initial configuration](init-config.md)
+- [Lifting a stack to a set of stack symbols](lift-stack.md)
+- [Computations stay inside a closed set of stack symbols](stack-subset-of-derives.md)
 
 ## Sources
 

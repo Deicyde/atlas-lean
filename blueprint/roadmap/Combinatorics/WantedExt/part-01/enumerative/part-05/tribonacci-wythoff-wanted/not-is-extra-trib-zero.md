@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isExtraTrib_zero
 ---
 
-# Not is Extra Trib zero
+# The zero sequence is not an extraTrib
 
-The zero sequence is not an extraTrib.
+**The zero sequence is not an extraTrib.** The constant sequence $n \mapsto 0$ on
+$\mathbb{Z}$ is not an extraTrib.
 
 ## Depends on
 
-- [Is Extra Trib](is-extra-trib.md)
+- [ExtraTribs](is-extra-trib.md)
 
 ## Sources
 

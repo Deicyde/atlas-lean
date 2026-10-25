@@ -6,20 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimGrundy_div_two_five
 ---
 
-# Maximum Nim Grundy div two five
+# Grundy number of a pile of five in halving Maximum Nim
 
-For the Section 3 rule `f(x) = ⌊x/2⌋`, a pile of five has Grundy number one.
-This is the paper's `k = 2`, `G(5) = 1` check, with natural division representing
-the floor; there is no deviation.
+**Grundy number of a pile of five in halving Maximum Nim.** In Maximum Nim with rule
+function $f(x) = \lfloor x/2 \rfloor$, a pile of $5$ stones has Grundy number $1$.
 
 ## Depends on
 
-- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 
 ## Proof depends on
 
-- [Maximum Nim Mex](maximum-nim-mex.md)
-- [Maximum Nim Mex eq iff](maximum-nim-mex-eq-iff.md)
+- [Minimum excludant of a finite set](maximum-nim-mex.md)
+- [Characterization of the minimum excludant](maximum-nim-mex-eq-iff.md)
 
 ## Sources
 

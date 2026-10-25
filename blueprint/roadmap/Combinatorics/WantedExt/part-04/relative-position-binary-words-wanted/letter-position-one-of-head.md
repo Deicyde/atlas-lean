@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.letterPosition_one_of_head
 ---
 
-# Letter Position one of head
+# Position of the first occurrence of the initial letter
 
-If `w` starts with `α`, then `p_α(1) = 0`.
+**Position of the first occurrence of the initial letter.** If an infinite binary word $w$
+starts with the letter $\alpha$, then the first occurrence of $\alpha$ in $w$ is at position $0$,
+that is, $p_\alpha(1) = 0$.
 
 ## Depends on
 
-- [Letter Position](letter-position.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

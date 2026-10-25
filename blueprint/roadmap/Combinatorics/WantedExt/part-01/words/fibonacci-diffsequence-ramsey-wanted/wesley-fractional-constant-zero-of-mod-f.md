@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.wesleyFractionalConstant_zero_of_mod_four_eq_zero
 ---
 
-# Wesley Fractional Constant zero of mod four eq zero
+# Wesley's constant $c_{n,0}$ for $n \equiv 0 \pmod 4$
 
-`c_{n,0} = 2/5` for `n ≡ 0 (mod 4)`.
+**Wesley's constant $c_{n,0}$ for $n \equiv 0 \pmod 4$.** For every natural number $n$ with
+$n \equiv 0 \pmod 4$, Wesley's constant satisfies $c_{n,0} = 2/5$.
 
 ## Depends on
 
-- [Wesley Fractional Constant](wesley-fractional-constant.md)
+- [Wesley's constants $c_{n,\varepsilon}$](wesley-fractional-constant.md)
 
 ## Sources
 

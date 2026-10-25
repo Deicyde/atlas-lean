@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.maximumNimMex_eq_iff
 ---
 
-# Maximum Nim Mex eq iff
+# Characterization of the minimum excludant
 
-The finite mex is `m` exactly when `m` is absent and every smaller natural is
-present. This is the characteristic property of the paper's mex, with no deviation.
+**Characterization of the minimum excludant.** Let $s$ be a finite set of natural numbers and
+$m$ a natural number. Then $\operatorname{mex}(s)$, the least natural number not in $s$, equals $m$
+if and only if $m \notin s$ and every natural number $n < m$ lies in $s$.
 
 ## Depends on
 
-- [Maximum Nim Mex](maximum-nim-mex.md)
+- [Minimum excludant of a finite set](maximum-nim-mex.md)
 
 ## Sources
 

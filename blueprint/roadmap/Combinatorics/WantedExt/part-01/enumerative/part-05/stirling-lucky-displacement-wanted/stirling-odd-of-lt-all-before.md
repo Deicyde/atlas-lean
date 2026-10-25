@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.stirling_odd_of_lt_all_before
 ---
 
-# Stirling odd of lt all before
+# Left-to-right minima of a Stirling permutation sit at odd positions
 
-Let `w ∈ Q_n` and let `j` be the first car preferring spot `k = w(j)`. If
-`w(i) > w(j)` for all `i < j`, then `j` is odd (one-based). The hypothesis
-`w(i) > w(j)` for `i < j` already makes `j` the first car preferring `w(j)`, and
-`k ∈ [1, n]` holds automatically, so neither is restated.
+**Left-to-right minima of a Stirling permutation sit at odd positions.** Let
+$w = w_1 \cdots w_{2n}$ be a Stirling permutation of order $n$ and let $j \in \{1, \dots, 2n\}$.
+If $w_j < w_i$ for every $i < j$, then $j$ is odd.
+
+In the paper, $j$ is the first car preferring spot $w_j$; the hypothesis $w_j < w_i$ for all
+$i < j$ already implies this, and $w_j \in \{1, \dots, n\}$ holds for every Stirling permutation.
 
 ## Depends on
 

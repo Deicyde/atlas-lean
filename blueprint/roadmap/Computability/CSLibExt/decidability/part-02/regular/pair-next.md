@@ -15,8 +15,8 @@ Successors of a coded pair of states: both automata read the same letter.
 
 ## Proof depends on
 
-- [Letters](../../../automata/da/encoded-dfa/letters.md)
-- [Step](../../../automata/da/encoded-dfa/step.md)
+- [Letters of an encoded DFA](../../../automata/da/encoded-dfa/letters.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.cubeGapSize_pos
 ---
 
-# Cube Gap Size pos
+# Finite sets in positive dimension have positive gap size
 
-For `t ≥ 1`, every finite set has positive gap size: it lies in some subcube `[0, m)^t`,
-and it is vacuously `(m + 1)`-dense there, since no subcube of side `m + 1` fits inside.
+**Finite sets in positive dimension have positive gap size.** Let $t \ge 1$. Every finite set
+$S \subseteq \mathbb{N}^t$ has gap size $\operatorname{gs}(S) > 0$.
+
+Indeed, $S$ lies in some subcube $[0, m)^t$, and it is vacuously $(m + 1)$-dense there, since no
+subcube of side $m + 1$ fits inside.
 
 ## Depends on
 
-- [Cube Gap Size](cube-gap-size.md)
+- [Gap size](cube-gap-size.md)
 
 ## Proof depends on
 
-- [Is Dense In Cubes](is-dense-in-cubes.md)
-- [Lattice Cube](lattice-cube.md)
+- [Density in subcubes](is-dense-in-cubes.md)
+- [Lattice cube](lattice-cube.md)
 
 ## Sources
 

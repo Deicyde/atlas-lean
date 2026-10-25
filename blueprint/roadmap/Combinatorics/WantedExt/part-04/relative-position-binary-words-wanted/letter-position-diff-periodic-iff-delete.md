@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.letterPosition_diff_periodic_iff_deleteFirst_periodic
 ---
 
-# Lemma 19
+# Periodicity of the gaps between the $b$'s
 
-**Lemma 19.** For `w ∈ 𝒲`, `Δp_b` is periodic iff `D_a^{p_b(1)}(w)` (the word `w` with its
-initial run of `a`'s deleted) is periodic. (Same conventions as Lemma 16: periodic sequences on
-`ℕ = {1, 2, …}` are periodic at `n ≥ 1`, and a periodic word is purely periodic.)
+**Periodicity of the gaps between the $b$'s.** Let $w$ be an infinite binary word over the
+letters $a$ and $b$ in which both letters occur infinitely often, let $p_b(n)$ be the position
+(counting from $0$) of the $n$-th $b$ in $w$, and let $\Delta p_b(n) = p_b(n+1) - p_b(n)$. Let
+$D_a$ delete the first $a$ of a word, and let $v = D_a^{p_b(1)}(w)$, the word $w$ with its initial
+run of $a$'s deleted. Then there is $q > 0$ with $\Delta p_b(n + q) = \Delta p_b(n)$ for all
+$n \ge 1$ if and only if there is $q > 0$ such that, for every $i \ge 0$, the letters of $v$ at
+positions $i + q$ and $i$ are equal.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Delete First](delete-first.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Deleting the first occurrence of a letter](delete-first.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ulamResidueCount
 ---
 
-# Ulam Residue Count
+# Ulam words in a residue class
 
-The number of Ulam words `w` of length `n` with `π(w) = a` in `ZMod N`; the paper's
-relative density is `ρ_{a,N}(n) = ulamResidueCount N n a / #U_n`.
+**Ulam words in a residue class.** For natural numbers $N$ and $n$ and a residue class
+$a \in \mathbb{Z}/N\mathbb{Z}$, this is the number of Ulam words $w$ of length $n$ in the letters
+$0$ and $1$ whose binary value $\pi(w)$, read with the most significant letter first, lies in the
+class $a$ modulo $N$. For $N = 0$, $\mathbb{Z}/0\mathbb{Z}$ is $\mathbb{Z}$ and the condition is
+$\pi(w) = a$.
+
+The paper's relative density $\rho_{a,N}(n)$ is this number divided by the number $\#U_n$ of
+Ulam words of length $n$.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Ulam Word](is-ulam-word.md)
-- [Ulam Word Aux](ulam-word-aux.md)
+- [Ulam words](is-ulam-word.md)
+- [Fuel-bounded Ulam test](ulam-word-aux.md)
 
 ## Sources
 

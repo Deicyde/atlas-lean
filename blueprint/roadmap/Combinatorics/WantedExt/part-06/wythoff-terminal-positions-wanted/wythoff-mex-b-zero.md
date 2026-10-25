@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.wythoffMexB_zero
 ---
 
-# Wythoff Mex B zero
+# The term $b_0$ of the companion sequence
 
-`b₀ = 2ℓ + 2`.
+**The term $b_0$ of the companion sequence.** For every natural number $\ell$, the companion
+sequence $(b_n)$ of the mex sequence of $K^\ell$ (Wythoff's game in which the positions $(x, y)$
+with $x + y \le \ell$ are terminal) satisfies $b_0 = 2\ell + 2$.
 
 ## Depends on
 
-- [Wythoff Mex B](wythoff-mex-b.md)
+- [The companion of the mex sequence](wythoff-mex-b.md)
 
 ## Proof depends on
 
-- [Wythoff Mex A](wythoff-mex-a.md)
-- [Wythoff Mex A zero](wythoff-mex-a-zero.md)
+- [The mex sequence of Wythoff's game with terminal positions](wythoff-mex-a.md)
+- [The term $a_0$ of the mex sequence](wythoff-mex-a-zero.md)
 
 ## Sources
 

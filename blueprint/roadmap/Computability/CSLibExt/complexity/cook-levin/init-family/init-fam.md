@@ -11,17 +11,17 @@ lean: Cslib.Complexity.CookLevin.InitFamily.initFam
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 - [CNF](../../dense-sat/cnf.md)
 
 ## Proof depends on
 
 - [I Cert](i-cert.md)
-- [I Code](i-code.md)
-- [I In](i-in.md)
-- [I Other](i-other.md)
-- [I Pre](i-pre.md)
-- [I Tail](i-tail.md)
+- [Start-code clause of the initial row (I1)](i-code.md)
+- [Input clauses of the initial row (I3)](i-in.md)
+- [Row-0 clauses for the other stacks](i-other.md)
+- [Row-0 prefix clauses](i-pre.md)
+- [Row-0 tail clauses](i-tail.md)
 - [Clause](../../dense-sat/clause.md)
 
 ## Sources

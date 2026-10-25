@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_stirlingSecond_succ_eq_ite
 ---
 
-# Sum stirling Second succ eq ite
+# Stirling numbers of the second kind from the next row
 
-Theorem 7: for `i ≥ 1`,
-`∑_{k=1}^{min {i+1, j}} (-1)^{j-k} (k - 1)! / j! · S(i + 1, k)` is `S(i, j)` if
-`i ≥ j` and `0` otherwise. The paper also assumes `j ≥ 1`; the case `j = 0`
-holds (both sides vanish) and is included.
+**Stirling numbers of the second kind from the next row.** Write $S(n, k)$ for the Stirling
+numbers of the second kind. For all natural numbers $i \ge 1$ and $j$, the rational number
+
+$$\sum_{k=1}^{\min(i+1, j)} (-1)^{j-k} \frac{(k-1)!}{j!} S(i+1, k)$$
+
+equals $S(i, j)$ if $j \le i$ and $0$ if $j > i$.
+
+The case $j = 0$, where both sides vanish, is included although the source assumes $j \ge 1$.
 
 ## Depends on
 

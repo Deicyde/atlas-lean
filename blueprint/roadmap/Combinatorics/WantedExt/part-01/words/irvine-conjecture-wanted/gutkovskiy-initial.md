@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.gutkovskiy_initial
 ---
 
-# Gutkovskiy initial
+# First terms of Gutkovskiy's sequence
 
-The first values `g₀, …, g₃ = 0, 1, 2, 2`.
+**First terms of Gutkovskiy's sequence.** The first four terms of Gutkovskiy's sequence are
+$g_0 = 0$, $g_1 = 1$, $g_2 = 2$ and $g_3 = 2$.
 
 ## Depends on
 
-- [Gutkovskiy](gutkovskiy.md)
+- [Gutkovskiy's sequence](gutkovskiy.md)
 
 ## Proof depends on
 
-- [Gutkovskiy succ](gutkovskiy-succ.md)
+- [Recurrence for Gutkovskiy's sequence](gutkovskiy-succ.md)
 
 ## Sources
 

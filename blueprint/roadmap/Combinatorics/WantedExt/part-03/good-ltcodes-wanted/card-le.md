@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.cardLE
 ---
 
-# Card LE
+# Subsets with at most $q$ elements
 
-The type of all `q`-element (or less) subsets `S ⊆ Fin n`.
+**Subsets with at most $q$ elements.** For natural numbers $n$ and $q$, this is the
+collection of all subsets $S \subseteq \{0, 1, \dots, n - 1\}$ with at most $q$ elements.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_fibternary_multiple
 ---
 
-# Exists fibternary multiple
+# Fibternary multiples
 
-Every positive integer has a positive Fibternary multiple (base-`3` digits in `{0, 1}`,
-no two consecutive ones).
+**Fibternary multiples.** Every positive integer $n$ has a positive multiple $m$ that is
+Fibternary: the base-$3$ digits of $m$ are all $0$ or $1$, and no two consecutive digits
+of $m$ are both $1$.
 
 ## Depends on
 

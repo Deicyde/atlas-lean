@@ -12,7 +12,7 @@ The all-true assignment satisfies a faithful clause with a positive literal.
 
 ## Depends on
 
-- [Dense Clause](../../family/dense-clause.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Faithful](faithful.md)
 - [Clause Sat](../../../dense-sat/clause-sat.md)
 

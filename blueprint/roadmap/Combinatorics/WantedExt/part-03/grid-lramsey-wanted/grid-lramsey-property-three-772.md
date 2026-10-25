@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gridLRamseyProperty_three_772
 ---
 
-# Grid LRamsey Property three 772
+# Three-coloring the 772 × 772 grid forces a monochromatic L
 
-`R_3(L) ≤ 772`: every 3-coloring of `[772] × [772]` contains a monochromatic L.
+**Three-coloring the 772 × 772 grid forces a monochromatic L.** Write
+$[n] = \{1, \dots, n\}$. Every coloring of the grid $[772] \times [772]$ with $3$ colors contains
+a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le 772$ and $y + d \le 772$ such
+that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ have the same color. Equivalently,
+the grid Ramsey number $R_3(L)$, the least $n$ for which every coloring of $[n] \times [n]$ with
+$3$ colors contains a monochromatic L, is at most $772$.
 
 ## Depends on
 
-- [Grid LRamsey Property](grid-lramsey-property.md)
+- [Grid Ramsey property for Ls](grid-lramsey-property.md)
 
 ## Sources
 

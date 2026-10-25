@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.thueMorseQuarto_small
 ---
 
-# Thue Morse Quarto small
+# First sixteen terms of the Thue–Morse quarto sequence
 
-First sixteen values of `𝒬`: `0101100101101001`.
+**First sixteen terms of the Thue–Morse quarto sequence.** The values
+$\mathcal{Q}(0), \mathcal{Q}(1), \ldots, \mathcal{Q}(15)$ of the Thue–Morse quarto sequence
+$\mathcal{Q}$ are $0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1$, in this order.
 
 ## Depends on
 
-- [Thue Morse Quarto](thue-morse-quarto.md)
+- [Thue–Morse quarto sequence](thue-morse-quarto.md)
 
 ## Sources
 

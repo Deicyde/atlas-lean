@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoAbRed_paperfolding_mod_four_three
 ---
 
-# Theorem 3
+# Reduced abelian complexity of the paperfolding word at lengths 3 mod 4
 
-**Theorem 3**, case `n ≡ 3 (mod 4)`: `ρ^{ab,red}_f(n) = 5`.
+**Reduced abelian complexity of the paperfolding word at lengths 3 mod 4.** Let $f$ be the
+regular paperfolding sequence and let $\rho^{\mathrm{ab,red}}_f(n)$ be the number of reductions
+of length-$n$ factors of $f$, counted up to rearrangement of their letters. For every natural
+number $n \equiv 3 \pmod 4$, $\rho^{\mathrm{ab,red}}_f(n) = 5$.
 
 ## Depends on
 
-- [Paperfolding Seq](paperfolding-seq.md)
-- [Rho Ab Red](rho-ab-red.md)
+- [Regular paperfolding sequence](paperfolding-seq.md)
+- [Reduced abelian complexity](rho-ab-red.md)
 
 ## Sources
 

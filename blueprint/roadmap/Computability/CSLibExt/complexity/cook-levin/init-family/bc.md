@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.CL.bc
 ---
 
-# Bc
+# Base counter of a clause kind (initial-row generator)
 
-Base counter.
+**Base counter of a clause kind (initial-row generator).** For a clause kind $c$, the
+generator counter whose value is added to the literal offsets of $c$ to give the literal
+positions: the counter Zr for the start-code clause (I1), and the counter CB for every other
+clause kind.
 
 ## Depends on
 
-- [CK](ck.md)
-- [CL](cl.md)
+- [Counters of the initial-row generator](ck.md)
+- [Clause kinds of the initial-row generator](cl.md)
 
 ## Proof depends on
 
-- [PH](ph.md)
+- [Loop phases of the initial-row generator](ph.md)
 
 ## Sources
 

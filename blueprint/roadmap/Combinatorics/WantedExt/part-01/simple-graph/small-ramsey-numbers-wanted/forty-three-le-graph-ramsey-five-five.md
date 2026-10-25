@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.forty_three_le_graphRamsey_five_five
 ---
 
-# Forty three le graph Ramsey five five
+# Exoo's lower bound for $R(5, 5)$
 
-`R(5,5) ≥ 43`: some graph on `42` vertices has no `K_5` and no
-independent set of size `5`.
+**Exoo's lower bound for $R(5, 5)$.** The classical Ramsey number $R(5, 5)$ is at
+least $43$.
+
+Thus some simple graph on $42$ vertices contains no $K_5$ and no independent set of size $5$.
 
 ## Depends on
 

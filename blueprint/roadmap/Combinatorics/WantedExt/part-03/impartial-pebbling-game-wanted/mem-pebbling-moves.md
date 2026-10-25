@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.mem_pebblingMoves
 ---
 
-# Mem pebbling Moves
+# Successors of a pebbling position
 
-Membership in `pebblingMoves`: `b` is a successor of `a` iff it arises from a pebbling
-move along an edge from a vertex holding at least `k + 1` pebbles.
+**Successors of a pebbling position.** Let $G$ be a simple graph on the vertices
+$0, \dots, n-1$, let $k$ be a natural number, and let $a$ and $b$ be distributions of pebbles on
+the vertices of $G$. Then $b$ is reachable from $a$ by one $(k+1:k)$-pebbling move on $G$ if and
+only if there are adjacent vertices $i$ and $j$ of $G$ such that $i$ holds at least $k + 1$
+pebbles in $a$ and $b$ is obtained from $a$ by removing $k + 1$ pebbles from $i$ and adding $k$
+pebbles to $j$.
 
 ## Depends on
 
-- [Pebbling Moves](pebbling-moves.md)
-- [Pebbling Step](pebbling-step.md)
+- [Moves of the $(k+1:k)$-pebbling game](pebbling-moves.md)
+- [A $(k+1:k)$-pebbling move](pebbling-step.md)
 
 ## Sources
 

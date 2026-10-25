@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Accept.GL.cellFrom
 ---
 
-# Cell From
+# Entry label of an accept cell clause
 
-Cell clause `x` (the code chain past the end).
+**Entry label of an accept cell clause.** For a generator with $n_1$ code clauses and $g$ cell
+clauses and $x \in \mathbb{N}$, the cell-chain label at $x$ is the entry label of cell clause $x$
+when $x < g$, and the start of the code chain when $x \ge g$.
 
 ## Depends on
 
-- [GL](gl.md)
+- [Labels of the accept generator](gl.md)
 
 ## Proof depends on
 
-- [AK](ak.md)
-- [Code Start](code-start.md)
+- [Clause kinds of the accept generator](ak.md)
+- [Start of the accept code chain](code-start.md)
 
 ## Sources
 

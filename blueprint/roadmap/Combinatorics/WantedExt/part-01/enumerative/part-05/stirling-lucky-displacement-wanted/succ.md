@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsAdmissibleLuckySet.succ
 ---
 
-# Succ
+# Extending admissible lucky sets
 
-If `S` is `n`-admissible (`n ≥ 1`), then `S` and `S ∪ {2n + 1}` are both
-`(n + 1)`-admissible. (`n ≥ 1` is added: the empty set is `0`-admissible but not
-`1`-admissible.)
+**Extending admissible lucky sets.** Let $n \ge 1$. If $S$ is an $n$-admissible lucky set,
+then both $S$ and $S \cup \{2n + 1\}$ are $(n + 1)$-admissible lucky sets.
+
+The hypothesis $n \ge 1$ is added: the empty set is $0$-admissible but not $1$-admissible.
 
 ## Depends on
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Shift.shBound
 ---
 
-# Sh Bound
+# Explicit time bound of the shift generator
 
-The explicit time bound (its polynomial form is `shBound_le`).
+**Explicit time bound of the shift generator.** For a layout $L$ and $N, T, H \in \mathbb{N}$,
+the bound is $P + (T(B + 1) + T + 2)$, where $P$ is the cost of the precomputation for $L$, $T$,
+$H$ and $B$ is the cost of one iteration of the time loop for $L$, $N$, $T$, $H$.
+
+A separate result bounds it by a constant depending only on $L$ and $N$ times $(T + H + 1)^6$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [Pre B](pre-b.md)
+- [Cost of the precomputation of the cell-shift generator](pre-b.md)
 - [T Body B](t-body-b.md)
 
 ## Sources

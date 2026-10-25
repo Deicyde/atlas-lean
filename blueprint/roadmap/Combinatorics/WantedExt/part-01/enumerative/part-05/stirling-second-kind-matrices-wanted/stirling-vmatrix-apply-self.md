@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.stirlingVMatrix_apply_self
 ---
 
-# Stirling VMatrix apply self
+# Diagonal entries of the bidiagonal matrix V(n)
 
-`V(n)_{i,i} = i`.
+**Diagonal entries of the bidiagonal matrix V(n).** For every natural number $n$, let $V(n)$ be
+the $n \times n$ rational upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and
+all other entries $0$, indices running over $1, \dots, n$. Then $V(n)_{i,i} = i$ for every
+$1 \le i \le n$.
 
 ## Depends on
 
-- [Stirling VMatrix](stirling-vmatrix.md)
+- [Upper bidiagonal matrix V(n)](stirling-vmatrix.md)
 
 ## Sources
 

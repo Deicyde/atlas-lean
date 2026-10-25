@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.size_gutkovskiyTable
 ---
 
-# Size gutkovskiy Table
+# Number of entries of the Gutkovskiy table
 
-`gutkovskiyTable n` has `n + 1` entries.
+**Number of entries of the Gutkovskiy table.** For every natural number $n$, the Gutkovskiy
+table up to index $n$, the array of the values $g_0, \dots, g_n$ of Gutkovskiy's sequence, has
+exactly $n + 1$ entries.
 
 ## Depends on
 
-- [Gutkovskiy Table](gutkovskiy-table.md)
+- [Table of Gutkovskiy's sequence](gutkovskiy-table.md)
 
 ## Sources
 

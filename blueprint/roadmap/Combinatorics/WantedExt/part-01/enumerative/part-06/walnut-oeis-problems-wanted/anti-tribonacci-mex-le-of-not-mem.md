@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.antiTribonacciMex_le_of_notMem
 ---
 
-# Anti Tribonacci Mex le of not Mem
+# The mex is at most every missing positive integer
 
-The `mex` value is at most every positive integer not in `s`.
+**The mex is at most every missing positive integer.** Write $\mathrm{mex}(s)$ for the least
+positive integer not in a finite set $s$ of natural numbers. If $m$ is a positive integer with
+$m \notin s$, then $\mathrm{mex}(s) \le m$.
 
 ## Depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

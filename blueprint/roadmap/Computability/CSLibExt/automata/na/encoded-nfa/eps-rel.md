@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Automata.EncodedNFA.EpsRel
 ---
 
-# Eps Rel
+# ε-move relation
 
-The ε-move relation.
+**ε-move relation.** For an encoded NFA $N$, the ε-move relation holds between states $s$ and
+$t$ exactly when $(s, t)$ is one of the ε-moves of $N$.
 
 ## Depends on
 

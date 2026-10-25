@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tribonacciWord_eq_of_isTribonacciRepr
 ---
 
-# Tribonacci Word eq of is Tribonacci Repr
+# Duchêne–Rigo: letters of the Tribonacci word from Tribonacci representations
 
-Duchêne and Rigo: the symbol of the Tribonacci word at (0-indexed) position `m` is
-`a`, `b` or `c` according as the Tribonacci representation of `m` ends in `0`, `01` or `11`
-(the paper's `n`-th symbol with `m = n - 1`; the representation of `0` is empty and ends
-in `0`).
+**Duchêne–Rigo: letters of the Tribonacci word from Tribonacci representations.** Let $w$
+be a Tribonacci representation of a natural number $m$, written most significant digit first,
+with missing digits read as $0$. The letter of the infinite Tribonacci word at position $m$
+(positions counted from $0$) is $a$ if $w$ ends in $0$, $b$ if $w$ ends in $01$, and $c$ if $w$
+ends in $11$. In particular the empty representation of $0$ ends in $0$, and the
+representation $1$ of $1$ ends in $01$.
+
+This is the paper's statement about the $n$-th letter, with $m = n - 1$.
 
 ## Depends on
 
 - [The Tribonacci alphabet](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-letter.md)
 - [The infinite Tribonacci word](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-word.md)
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
 
 ## Sources
 

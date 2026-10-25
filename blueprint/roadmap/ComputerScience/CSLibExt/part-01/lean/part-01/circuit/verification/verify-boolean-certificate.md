@@ -12,12 +12,12 @@ Check a full supplied Boolean valuation, visiting every gate and argument.
 
 ## Depends on
 
-- [Boolean Signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+- [Boolean signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 
 ## Proof depends on
 
 - [To Fin](to-fin.md)
-- [Boolean Interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
+- [Boolean interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
 
 ## Sources
 

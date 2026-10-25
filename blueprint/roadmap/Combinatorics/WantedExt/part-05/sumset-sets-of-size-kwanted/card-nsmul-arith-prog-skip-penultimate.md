@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_nsmul_arithProg_skip_penultimate
 ---
 
-# Card nsmul arith Prog skip penultimate
+# An arithmetic progression with its second-to-last term moved
 
-An arithmetic progression with its second-to-last term moved: in a linearly
-ordered additive abelian group, for `a > 0`, `k ≥ 3` and `h ≥ 1`, the set
-`A = {0, a, 2a, …, (k - 2)a, ka}` has `|hA| = hk`, where `hA` is the `h`-fold sumset
-`h • A`.  The paper leaves `h` unquantified; `h ≥ 1` is needed (`|0 • A| = 1`).
+**An arithmetic progression with its second-to-last term moved.** Let $G$ be a linearly
+ordered additive commutative group, let $a \in G$ with $a > 0$, and let $k \ge 3$ and $h \ge 1$
+be natural numbers. The set $A = \{0, a, 2a, \ldots, (k - 2)a, ka\}$ has $|hA| = hk$, where
+$hA$ is the $h$-fold sumset of $A$, the set of sums of $h$ elements of $A$.
+
+The paper leaves $h$ unquantified; $h \ge 1$ is needed, since $|0A| = 1$.
 
 ## Depends on
 

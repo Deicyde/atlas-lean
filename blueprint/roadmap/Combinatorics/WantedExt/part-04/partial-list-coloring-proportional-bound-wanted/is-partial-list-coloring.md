@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartialListColoringProportionalBoundWanted.IsPartialListColoring
 ---
 
-# Is Partial List Coloring
+# Partial list colorability
 
-A vertex subset `S` is partially list-colorable from `lists` when the induced
-subgraph on `S` admits a proper coloring choosing each vertex color from its list.
-The coloring is defined only on the subtype `S`, so no colors are required
-outside `S`.
+**Partial list colorability.** Let $G$ be a simple graph and assign to each vertex $v$ a finite
+list $L(v)$ of colors. A finite set $S$ of vertices is partially list-colorable from $L$ when the
+subgraph of $G$ induced by $S$ has a proper coloring $c$ with $c(v) \in L(v)$ for every
+$v \in S$. No colors are assigned to vertices outside $S$.
 
 ## Depends on
 

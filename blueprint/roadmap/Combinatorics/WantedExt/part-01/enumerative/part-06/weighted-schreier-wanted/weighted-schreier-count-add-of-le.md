@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_add_of_le
 ---
 
-# Weighted Schreier Count add of le
+# Weighted Schreier counts equal twice a Fibonacci number for small offsets
 
-For `ℓ ≥ 0` and `k ≥ ℓ + 2`, `a_{k,k+ℓ} = 2 F_{k+ℓ}`.
+**Weighted Schreier counts equal twice a Fibonacci number for small offsets.** Let
+$a_{k,n}$ be the weighted Schreier count and let $F_n$ denote the Fibonacci numbers, with
+$F_0 = 0$ and $F_1 = 1$. For all $k, \ell \ge 0$ with $k \ge \ell + 2$, we have
+$a_{k,k+\ell} = 2F_{k+\ell}$.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

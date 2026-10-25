@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.isReducedMagicSquare_loShu
 ---
 
-# Is Reduced Magic Square lo Shu
+# The reduced Lo Shu square
 
-The reduced Lo Shu square is a reduced magic square of order `3` (magic sum `12`).
+**The reduced Lo Shu square.** The $3 \times 3$ square with rows $(7, 0, 5)$, $(2, 4, 6)$ and
+$(3, 8, 1)$, a form of the Lo Shu square with every entry reduced by $1$, is a reduced magic
+square of order $3$; its magic sum is $12$.
 
 ## Depends on
 

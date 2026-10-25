@@ -5,9 +5,11 @@ statement: formalized
 lean: KomlosDiscrepancyWanted.banaszczyk1998SqrtLogUpperBound
 ---
 
-# Banaszczyk1998 Sqrt Log Upper Bound
+# Statement of Banaszczyk's Komlós bound
 
-Banaszczyk's square-root-logarithmic bound with one universal multiplier.
+**Statement of Banaszczyk's Komlós bound.** The proposition that there are a real constant
+$c > 0$ and a natural number $N \ge 3$ such that for every natural number $n \ge N$, the Komlós
+constant in dimension $n$ is at most $c \sqrt{\log n}$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

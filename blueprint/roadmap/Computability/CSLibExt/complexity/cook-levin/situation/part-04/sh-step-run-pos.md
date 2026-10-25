@@ -13,9 +13,9 @@ at-most-one: the literal of the real cell holds at every in-range depth of row `
 
 ## Depends on
 
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
-- [The family](../../shift/sh-family.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
+- [The cell-shift clause family](../../shift/sh-family.md)
 - [Enc](../part-01/enc.md)
 - [Cells Hold](cells-hold.md)
 - [N](../part-01/n.md)

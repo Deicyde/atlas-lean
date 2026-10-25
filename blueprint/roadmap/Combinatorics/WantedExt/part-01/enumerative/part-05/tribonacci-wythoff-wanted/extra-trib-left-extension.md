@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.extraTrib_left_extension
 ---
 
-# Extra Trib left extension
+# Signs of an extraTrib to the left
 
-Extending an extraTrib to the left reaches a negative term, and no three consecutive
-terms to the left of a negative term have the same strict sign.
+**Signs of an extraTrib to the left.** Let $S$ be an extraTrib. Then $S(k) < 0$ for some
+integer $k$, and whenever $S(k) < 0$, for every integer $n$ with $n + 2 < k$ the three terms
+$S(n)$, $S(n+1)$, $S(n+2)$ are neither all positive nor all negative.
 
 ## Depends on
 
-- [Is Extra Trib](is-extra-trib.md)
+- [ExtraTribs](is-extra-trib.md)
 
 ## Sources
 

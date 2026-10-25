@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PerfectGraphNPWanted.PerfectGraphInstance
 ---
 
-# Perfect Graph Instance
+# Adjacency-matrix graph instance
 
-Perfect-graph instance presented by explicit adjacency data (no proof
-fields, so instances admit bitstring encodings): vertex count `n` and a
-Boolean adjacency matrix. Validity (symmetry, no loops) is recorded
-separately by `PerfectGraphInstance.Valid`.
-Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.
+**Adjacency-matrix graph instance.** An instance consists of a natural number $n$ and a
+Boolean $n \times n$ matrix $A$ with rows and columns indexed by $\{0, \dots, n-1\}$, read as the
+adjacency matrix of a graph on the vertices $0, \dots, n-1$. The matrix is arbitrary; symmetry
+and the absence of loops are imposed separately by the validity condition.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PerfectGraphNPWanted](../../../../../sources/v2/WantedExt.md)
+- [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.

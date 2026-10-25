@@ -12,7 +12,7 @@ S-def family: the head is the real situation literal, by definition of `RunLit`.
 
 ## Depends on
 
-- [Family](../../family/family.md)
+- [The transition clause family](../../family/family.md)
 - [Enc](../part-01/enc.md)
 - [N](../part-01/n.md)
 - [La](../part-01/la.md)
@@ -25,8 +25,8 @@ S-def family: the head is the real situation literal, by definition of `RunLit`.
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [Cell](../part-03/cell.md)
 - [Code](../part-03/code.md)
 - [D3Fam families (update, S-def), completeness](fam-complete.md)

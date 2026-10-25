@@ -6,22 +6,23 @@ statement: formalized
 lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.theorem_2_25
 ---
 
-# Theorem 2 25
+# Lorentzian polynomials as the closure of strictly Lorentzian polynomials
 
-Statement of Theorem 2.25:
+**Lorentzian polynomials as the closure of strictly Lorentzian polynomials.** For all natural
+numbers $n \ge 1$ and $d$, the closure of the set $\mathring{L}^d_n$ of strictly Lorentzian
+polynomials of degree $d$ in $n$ variables, taken in the space $H^d_n$ of homogeneous polynomials
+of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ with the Euclidean topology on coefficients, is the
+set $L^d_n$ of Lorentzian polynomials of degree $d$ in $n$ variables.
 
-The closure of `Ŀ n d` in `H n d` is `L n d`.
-
-The paper allows `n` and `d` to be nonnegative, but the theorem is false for `n = 0` and `d = 2`
-where `Ŀ 0 2 = {f ∈ P 0 2 | ℋ_f is nonsingular and has exactly one positive eigenvalue } = ∅`
-since the `0×0` Hessian matrix of `f` cannot have a positive eigenvalue, but `L 0 2 = S 0 2`
-contains the zero polynomial since the zero polynomial is homogeneous of degree `2`.
+The paper (Theorem 2.25) allows $n = 0$, but the statement fails for $n = 0$ and $d = 2$: the
+$0 \times 0$ Hessian of a polynomial cannot have a positive eigenvalue, so $\mathring{L}^2_0$ is
+empty, while $L^2_0 = S^2_0$ contains the zero polynomial, which is homogeneous of degree $2$.
 
 ## Depends on
 
-- [H](h.md)
-- [L](l.md)
-- [Ŀ](untitled.md)
+- [Homogeneous polynomials of degree $d$](h.md)
+- [The set of Lorentzian polynomials](l.md)
+- [Strictly Lorentzian polynomials](untitled.md)
 
 ## Sources
 

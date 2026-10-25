@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.HasCancelingPartition
 ---
 
-# Has Canceling Partition
+# Canceling partition
 
-The equation `a₁x₁ + ⋯ + aₖxₖ = 0` has a canceling partition: its coefficients split
-into pairs `{aᵢ, aⱼ}` with `aᵢ + aⱼ = 0`, encoded as a fixed-point-free involution `σ` of the
-indices with `aᵢ + a_{σ i} = 0`.
+**Canceling partition.** Let $a_1, \dots, a_k$ be integers, the coefficients of the
+linear equation $a_1x_1 + \cdots + a_kx_k = 0$. The equation has a canceling partition when
+its indices split into pairs of distinct indices $i, j$ with $a_i + a_j = 0$; precisely,
+when there is a permutation $\sigma$ of the indices $1, \dots, k$ such that for every $i$
+we have $\sigma(\sigma(i)) = i$, $\sigma(i) \ne i$ and $a_i + a_{\sigma(i)} = 0$.
 
 ## Depends on
 

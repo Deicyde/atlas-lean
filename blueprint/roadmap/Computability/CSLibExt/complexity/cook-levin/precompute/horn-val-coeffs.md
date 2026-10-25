@@ -8,16 +8,18 @@ lean: Cslib.Complexity.CookLevin.Precompute.hornVal_coeffs
 
 # Horner's rule
 
-**Horner's rule** for `Polynomial ℕ`.
+**Horner's rule.** For every polynomial $p$ with natural coefficients and every
+$b \in \mathbb{N}$, running Horner rounds with base $b$ on the coefficients of $p$ (highest degree
+first), starting from accumulator $0$, yields $p(b)$.
 
 ## Depends on
 
-- [Coeffs](coeffs.md)
-- [Horn Val](horn-val.md)
+- [Coefficient list of a polynomial](coeffs.md)
+- [Horner value](horn-val.md)
 
 ## Proof depends on
 
-- [Horn Val eq](horn-val-eq.md)
+- [Splitting off the starting accumulator in Horner evaluation](horn-val-eq.md)
 
 ## Sources
 

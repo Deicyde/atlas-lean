@@ -13,8 +13,8 @@ from `[a]_T` rightwards are `[0^k a]_T`; the witness difference is taken among t
 
 ## Depends on
 
-- [Is Tribonacci Repr](is-tribonacci-repr.md)
-- [Tribonacci Value](tribonacci-value.md)
+- [Tribonacci representation](is-tribonacci-repr.md)
+- [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources
 

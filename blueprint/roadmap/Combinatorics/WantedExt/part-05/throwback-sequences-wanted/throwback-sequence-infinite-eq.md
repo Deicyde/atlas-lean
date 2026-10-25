@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.throwbackSequence_infinite_eq
 ---
 
-# Throwback Sequence infinite eq
+# Every term recurs in the throwback sequence
 
-For a sequence `X` of distinct positive integers, every term of `X` appears infinitely
-often in the throwback sequence `T(X)`.
+**Every term recurs in the throwback sequence.** Let $X = (x_0, x_1, \dots)$ be a sequence of
+pairwise distinct positive integers, and let $T(X) = (t_0, t_1, \dots)$ be its throwback
+sequence. Then every term $x_j$ of $X$ appears infinitely often in $T(X)$: there are infinitely
+many $k$ with $t_k = x_j$.
 
 ## Depends on
 
-- [Throwback Sequence](throwback-sequence.md)
+- [Throwback sequence](throwback-sequence.md)
 
 ## Sources
 

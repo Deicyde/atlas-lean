@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.thueMorseQuarto_rec
 ---
 
-# Thue Morse Quarto rec
+# Recurrences of the Thue–Morse quarto sequence
 
-The recurrences of `𝒬`: `𝒬(4n) = 𝒬(n)` and `𝒬(4n+1) = 1 - 𝒬(n)` for `n ≥ 1`,
-`𝒬(4n+2) = 𝒬(2n)` and `𝒬(4n+3) = 1 - 𝒬(2n)` for `n ≥ 0`.
+**Recurrences of the Thue–Morse quarto sequence.** The Thue–Morse quarto sequence
+$\mathcal{Q}$ satisfies $\mathcal{Q}(4n) = \mathcal{Q}(n)$ and
+$\mathcal{Q}(4n+1) = 1 - \mathcal{Q}(n)$ for every $n \ge 1$, and
+$\mathcal{Q}(4n+2) = \mathcal{Q}(2n)$ and $\mathcal{Q}(4n+3) = 1 - \mathcal{Q}(2n)$ for every
+$n \ge 0$.
 
 ## Depends on
 
-- [Thue Morse Quarto](thue-morse-quarto.md)
+- [Thue–Morse quarto sequence](thue-morse-quarto.md)
 
 ## Sources
 

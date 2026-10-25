@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_isUncommonOverIntegers_one
 ---
 
-# Not is Uncommon Over Integers one
+# No equation is 1-uncommon over the integers
 
-With one colour nothing is uncommon over the integers.
+**No equation is 1-uncommon over the integers.** For every $k \ge 0$ and all integers
+$a_1, \dots, a_k$, the equation $a_1 x_1 + \dots + a_k x_k = 0$ is not $1$-uncommon over the
+integers.
 
 ## Depends on
 
-- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
+- [Uncommon equations over the integers](is-uncommon-over-integers.md)
 
 ## Sources
 

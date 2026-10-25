@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isBoolFunNondegenerateOn_proj
 ---
 
-# Is Bool Fun Nondegenerate On proj
+# A projection is non-degenerate on its own variable
 
-The projection `x ↦ x i` is non-degenerate on `i`.
+**A projection is non-degenerate on its own variable.** For every $n$ and every index
+$i \in \{1, \ldots, n\}$, the projection $x \mapsto x_i$ on $\{0,1\}^n$ is non-degenerate on
+the variable $x_i$.
 
 ## Depends on
 
-- [Is Bool Fun Nondegenerate On](is-bool-fun-nondegenerate-on.md)
+- [Non-degeneracy in a variable](is-bool-fun-nondegenerate-on.md)
 
 ## Sources
 

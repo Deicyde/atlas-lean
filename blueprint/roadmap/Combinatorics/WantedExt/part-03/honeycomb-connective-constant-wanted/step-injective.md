@@ -7,14 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.step_injective
 ---
 
-# Step injective
+# Distinct labels give distinct neighbors
 
-The three direction labels at a vertex select three distinct neighbors.
+**Distinct labels give distinct neighbors.** For every vertex $v$ of the honeycomb
+lattice, the steps from $v$ in the directions $0$, $1$ and $2$ are three distinct vertices.
 
 ## Depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
-- [Step](step.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
+- [Steps in the honeycomb lattice](step.md)
 
 ## Sources
 

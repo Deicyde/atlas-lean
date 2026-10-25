@@ -6,11 +6,13 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Hardness.cook_levin_SAT_np_complete_of_isPolyTime
 ---
 
-# Cook-Levin for `satDec`, given a polynomial-time verifier
+# Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier
 
-**Cook-Levin for `satDec`, given a polynomial-time verifier**: with `satDec_npHard`, it reduces
-to polynomial-time computability of the verifier `satVerifier` of
-`CSLibExt/Computability/SatTimeM.lean` (proved in `SatVerifier.Machine.isPolyTime_satVerifier`).
+**Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier.** If the Boolean
+result of the SAT verifier, as a function of pairs (formula code, assignment), is computable in
+polynomial time, then the language of bit strings that encode a satisfiable CNF formula in the
+binary-index encoding is in NP, and every decision problem in NP has a polynomial-time many-one
+reduction to it.
 
 ## Depends on
 
@@ -32,7 +34,7 @@ to polynomial-time computability of the verifier `satVerifier` of
 
 ## Proof depends on
 
-- [Every NP problem reduces to `satDec`](sat-dec-np-hard.md)
+- [Every NP problem reduces to binary-index CNF-SAT](sat-dec-np-hard.md)
 - [Sat Dec mem NP of is Poly Time](../../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
 
 ## Sources

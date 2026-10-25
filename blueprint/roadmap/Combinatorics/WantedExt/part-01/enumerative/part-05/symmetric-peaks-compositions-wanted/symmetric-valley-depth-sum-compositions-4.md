@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.symmetricValleyDepthSum_compositions_length_three
 ---
 
-# Symmetric Valley Depth Sum compositions length three
+# Total depth of symmetric valleys over compositions with three parts
 
-`dsv(n, 3) = ∑_{m=1}^{⌊(n-2)/3⌋} d_m` with `d_m = (n - 3m) / 2` if `n - m` is even and
-`d_m = 0` otherwise.
+**Total depth of symmetric valleys over compositions with three parts.** For every natural
+number $n$, the sum, over all compositions $c$ of $n$ with exactly three parts, of the total
+depth of the symmetric valleys of the sequence of parts of $c$ equals
+$\sum_{m=1}^{\lfloor (n-2)/3 \rfloor} d_m$, where $d_m = (n-3m)/2$ if $n - m$ is even and
+$d_m = 0$ otherwise.
 
 ## Depends on
 
-- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
+- [Total depth of the symmetric valleys of a word](symmetric-valley-depth-sum.md)
 
 ## Sources
 

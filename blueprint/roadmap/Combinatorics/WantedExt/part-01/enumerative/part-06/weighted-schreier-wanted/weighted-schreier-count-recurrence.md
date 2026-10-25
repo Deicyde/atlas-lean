@@ -12,7 +12,7 @@ term `a_{0,n-2}` is the same count with `ω_0(E) = |E|`.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

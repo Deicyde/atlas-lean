@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.litE
 ---
 
-# Lit E
+# Per-literal step cost of the initial-row generator
 
-Per-literal cost apart from the gap loop.
+**Per-literal step cost of the initial-row generator.** For $V \in \mathbb{N}$, the
+per-literal cost is $6V + 9$.
+
+It bounds the steps the generator spends on one literal apart from the gap loop.
 
 ## Depends on
 

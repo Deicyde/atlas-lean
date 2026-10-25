@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.initF
 ---
 
-# Init F
+# Initial counters of the one-hot generator
 
-Initial counters: `T` on `Tn`, `H` on `Hs`.
+**Initial counters of the one-hot generator.** For natural numbers $T$ and $H$, the initial
+counter values are $T$ on the counter $\mathrm{Tn}$, $H$ on the counter $\mathrm{Hs}$, and $0$
+on every other counter.
 
 ## Depends on
 
-- [CK](ck.md)
+- [Counters of the one-hot generator](ck.md)
 
 ## Sources
 

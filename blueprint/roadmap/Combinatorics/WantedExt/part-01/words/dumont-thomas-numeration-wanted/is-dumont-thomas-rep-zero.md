@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isDumontThomasRep_zero
 ---
 
-# Is Dumont Thomas Rep zero
+# A Dumont–Thomas representation of zero
 
-`rep_u(0) = 0`.
+**A Dumont–Thomas representation of zero.** For every map $\eta$ sending each letter of an
+alphabet $A$ to a finite word over $A$, every two-sided word $u = (u_i)_{i \in \mathbb{Z}}$ over
+$A$ and every natural number $p$, the one-digit word $0$ is a Dumont–Thomas complement
+representation of the integer $0$ with respect to $\eta$, $u$ and $p$.
 
 ## Depends on
 
-- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Dumont–Thomas complement representations](is-dumont-thomas-rep.md)
 
 ## Proof depends on
 
-- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Admissible sequences starting from a letter](is-letter-admissible-sequence.md)
 - [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources

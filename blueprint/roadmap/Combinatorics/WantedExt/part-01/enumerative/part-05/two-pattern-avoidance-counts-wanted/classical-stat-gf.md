@@ -5,12 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.classicalStatGF
 ---
 
-# Classical Stat GF
+# Generating function of ten classical statistics over a pair of patterns
 
-The joint generating function `F_(τ,ρ)(x, p, q, u, v, s, t, y, z, ℓ, m) = ∑_{n ≥ 0}
-∑_{σ ∈ S_n(τ, ρ)} xⁿ p^{asc} q^{des} u^{lrmax} v^{rlmax} s^{lrmin} t^{rlmin} y^{dasc}
-z^{ddes} ℓ^{pk} m^{vl}` in `(MvPolynomial (Fin 10) ℚ)⟦x⟧`, with `p, q, u, v, s, t, y, z, ℓ, m`
-the variables `X 0, …, X 9` in that order (the empty permutation contributes `1`).
+**Generating function of ten classical statistics over a pair of patterns.** For
+permutations $\tau$ and $\rho$ of $\{0, 1, 2\}$, let $S_n(\tau, \rho)$ be the set of permutations
+of $\{0, 1, \dots, n-1\}$ that contain neither $\tau$ nor $\rho$ as a classical pattern. The
+generating function $F_{(\tau, \rho)}$ is the formal power series
+
+$$F_{(\tau, \rho)} = \sum_{n \ge 0} \sum_{\sigma \in S_n(\tau, \rho)} x^n
+p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)} u^{\mathrm{lrmax}(\sigma)}
+v^{\mathrm{rlmax}(\sigma)} s^{\mathrm{lrmin}(\sigma)} t^{\mathrm{rlmin}(\sigma)}
+y^{\mathrm{dasc}(\sigma)} z^{\mathrm{ddes}(\sigma)} \ell^{\mathrm{pk}(\sigma)}
+m^{\mathrm{vl}(\sigma)}$$
+
+in $x$ with coefficients in the polynomial ring $\mathbb{Q}[p, q, u, v, s, t, y, z, \ell, m]$.
+Here $\mathrm{asc}$ and $\mathrm{des}$ count ascents and descents, $\mathrm{lrmax}$ and
+$\mathrm{rlmax}$ left-to-right and right-to-left maxima, $\mathrm{lrmin}$ and $\mathrm{rlmin}$
+left-to-right and right-to-left minima, $\mathrm{dasc}$ and $\mathrm{ddes}$ double ascents and
+double descents, and $\mathrm{pk}$ and $\mathrm{vl}$ peaks and valleys. The empty permutation
+($n = 0$) contributes the constant term $1$.
 
 ## Depends on
 
@@ -19,8 +32,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Classical pattern containment in a permutation](../../part-04/odd-fibonacci-wanted/has-pattern.md)
-- [Perm Ascents](perm-ascents.md)
-- [Perm Descents](perm-descents.md)
+- [Ascent number of a permutation](perm-ascents.md)
+- [Descent number of a permutation](perm-descents.md)
 - [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
 - [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
 - [Number of left-to-right maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)

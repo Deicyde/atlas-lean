@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_trinomialCoefficient_mul_choose_eq
 ---
 
-# Theorem 17
+# Two binomial transforms of a row of trinomial coefficients agree
 
-**Theorem 17.** `∑_{k=0}^{m} binom(n, k)_2 binom(m, k) = ∑_{k=0}^{2n} binom(n, k)_2 binom(m+k, k) (-1)^k`.
+**Two binomial transforms of a row of trinomial coefficients agree.** Write
+$\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For all
+$n, m \in \mathbb{N}$
+
+$$\sum_{k=0}^{m} \binom{n}{k}_2 \binom{m}{k} =
+\sum_{k=0}^{2n} \binom{n}{k}_2 \binom{m+k}{k} (-1)^k.$$
 
 ## Depends on
 

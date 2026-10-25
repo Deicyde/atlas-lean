@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isUlamWord_three_ones_zeros_iff
 ---
 
-# Is Ulam Word three ones zeros iff
+# Ulam words with three leading ones
 
-For `n ≥ 3`, `1³ 0^{n-3}` is Ulam iff `n ≡ 0` or `1 (mod 4)`.
+**Ulam words with three leading ones.** For every $n \ge 3$, the word $1^3 0^{n-3}$ (three
+ones followed by $n - 3$ zeros) is an Ulam word if and only if $n \equiv 0 \pmod 4$ or
+$n \equiv 1 \pmod 4$.
 
 ## Depends on
 
-- [Is Ulam Word](is-ulam-word.md)
+- [Ulam words](is-ulam-word.md)
 
 ## Sources
 

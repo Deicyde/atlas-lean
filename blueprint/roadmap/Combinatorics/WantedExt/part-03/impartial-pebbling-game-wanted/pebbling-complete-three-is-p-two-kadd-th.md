@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pebbling_completeThree_isP_twoKAddThree
 ---
 
-# Pebbling complete Three is P two KAdd Three
+# Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position
 
-Lemma 4: every game in `Γ{2k+3, 0, 0}` on `K_3` is a P-game (`k` positive).
+**Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position.** Let $k$ be a
+positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
+move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Every position with
+$2k + 3$ pebbles on one vertex and none on the other two is a P-position.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Pebbling Game](pebbling-game.md)
+- [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources
 

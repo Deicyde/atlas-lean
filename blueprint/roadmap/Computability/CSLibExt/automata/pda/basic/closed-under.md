@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Automata.PDA.ClosedUnder
 ---
 
-# Closed Under
+# Closed sets of stack symbols
 
-A set of stack symbols is closed for `M` when pushing from a symbol in
-the set only ever pushes symbols in the set. Computations starting inside
-a closed set stay inside it.
+**Closed sets of stack symbols.** A finite set $\Gamma_0$ of stack symbols is closed for a
+pushdown automaton $M$ when every transition of $M$ that pops a symbol in $\Gamma_0$, from any
+state and on any input letter or on $\varepsilon$, pushes only symbols in $\Gamma_0$.
+Computations starting with a stack inside a closed set keep their stack inside it.
 
 ## Depends on
 
-- [PDA](pda.md)
+- [Pushdown automaton](pda.md)
 
 ## Sources
 

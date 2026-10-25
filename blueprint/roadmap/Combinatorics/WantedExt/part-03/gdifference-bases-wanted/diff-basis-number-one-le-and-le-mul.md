@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.diffBasisNumber_one_le_and_le_mul
 ---
 
-# Diff Basis Number one le and le mul
+# Comparing $g$-difference bases with difference bases
 
-`η_1(n) ≤ η_g(n) ≤ g η_1(n)` for `n > 1` and `g ≥ 1`.
+**Comparing $g$-difference bases with difference bases.** For natural numbers $g$ and $n$,
+let $\eta_g(n)$ be the least size of a finite set $A \subseteq \mathbb{Z}$ such that every
+$x \in \{1, \dots, n\}$ is the difference $a - a'$ of at least $g$ ordered pairs
+$(a, a') \in A \times A$. If $n > 1$ and $g \ge 1$, then
+$\eta_1(n) \le \eta_g(n) \le g\,\eta_1(n)$.
 
 ## Depends on
 
-- [Diff Basis Number](diff-basis-number.md)
+- [The $g$-difference basis number](diff-basis-number.md)
 
 ## Sources
 

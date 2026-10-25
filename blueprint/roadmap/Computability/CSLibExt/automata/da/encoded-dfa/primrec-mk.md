@@ -13,7 +13,7 @@ Building an encoded DFA from its three components is primitive recursive.
 ## Depends on
 
 - [Encoded DFA](encoded-dfa.md)
-- [Equiv Prod](equiv-prod.md)
+- [Encoded DFAs as triples](equiv-prod.md)
 
 ## Sources
 

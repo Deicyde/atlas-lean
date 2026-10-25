@@ -6,22 +6,24 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.LTC
 ---
 
-# LTC
+# Locally testable code
 
-A binary code `C ⊆ (𝔽₂)ⁿ` is `κ`-locally testable with `q` queries if there is a distribution
-over a collection of `q`-element (or less) subsets `S ⊆ Fin n` such that each subset `S` is
-associated with a set `V_S ⊆ 𝔽₂^S` of allowed local views, and such that the following hold:
-* If `f ∈ C` then for every `S`, `f|_S ∈ V_S`.
-* For every `f ∈ (𝔽₂)ⁿ`, `ℙ_S[f|_S ∉ V_S] ≥ κ * dist(f, C)`.
+**Locally testable code.** Let $C \subseteq \mathbb{F}_2^n$ be a binary code, let $q$ be a
+natural number and let $\kappa \ge 0$ be a real number. A $\kappa$-local tester for $C$ with
+$q$ queries consists of a probability distribution on the subsets
+$S \subseteq \{0, 1, \dots, n - 1\}$ with at most $q$ elements, together with, for each such
+$S$, a set $V_S \subseteq \mathbb{F}_2^S$ of allowed local views, such that:
+* if $f \in C$, then $f|_S \in V_S$ for every such $S$;
+* for every $f \in \mathbb{F}_2^n$, the probability that $f|_S \notin V_S$ for a random $S$ is
+  at least $\kappa$ times the normalised distance from $f$ to $C$.
 
-This is Definition 2.3 in `Locally Testable Codes with constant rate, distance, and locality` by
-the same authors. This probability distribution formulation is also mentioned immediately after
-Definition 1.1 in the original paper `Good Locally Testable Codes`.
+The code $C$ is $\kappa$-locally testable with $q$ queries exactly when such a tester exists.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GoodLTCodesWanted](../../../../../sources/v2/WantedExt.md)
+- Definition 2.3 in `Locally Testable Codes with constant rate, distance, and locality` by I. Dinur, S. Evra, R. Livne, A. Lubotzky and S. Mozes. This probability distribution formulation is also mentioned immediately after Definition 1.1 in the original paper `Good Locally Testable Codes`.

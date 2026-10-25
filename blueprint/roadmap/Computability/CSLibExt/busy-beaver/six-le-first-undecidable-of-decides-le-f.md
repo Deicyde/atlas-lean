@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.BusyBeaver.six_le_firstUndecidable_of_decides_le_five
 ---
 
-# Six le first Undecidable of decides le five
+# Decidability through five states and the first undecidable size
 
-If a theory decides halting for all machines with at most five
-states but fails somewhere, its first undecidable size is at least six.
-This is the shape of the catalogue lower bound from the determination of
-`BB(5)`.
+**Decidability through five states and the first undecidable size.** If a formal theory
+$T$ decides halting for $n$-state machines for every $n \le 5$, and fails to decide halting for
+$n$-state machines for some $n$, then the first undecidable size of $T$ is at least $6$.
+
+This is the shape of the catalogue lower bound from the determination of the five-state Busy
+Beaver value.
 
 ## Depends on
 
-- [Decides Halting](decides-halting.md)
-- [Formal Theory](formal-theory.md)
-- [First Undecidable](first-undecidable.md)
+- [Theories deciding halting at a state count](decides-halting.md)
+- [Formal theory](formal-theory.md)
+- [First undecidable number of states](first-undecidable.md)
 
 ## Sources
 

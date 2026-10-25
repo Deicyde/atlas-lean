@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.IsSelfAvoiding
 ---
 
-# Is Self Avoiding
+# Self-avoiding direction words
 
-A direction word is self-avoiding when its `n + 1` visited vertices are distinct.
+**Self-avoiding direction words.** A word $(d_1, \ldots, d_n)$ of direction labels in
+$\{0, 1, 2\}$ is self-avoiding when its set of visited vertices has exactly $n + 1$ elements,
+that is, when its $n + 1$ vertices, the $i$-th vertices for $0 \le i \le n$, are pairwise
+distinct.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
-- [Visited Vertices](visited-vertices.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
+- [Vertices visited by a direction word](visited-vertices.md)
 
 ## Sources
 

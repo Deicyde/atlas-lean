@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.reflexive_iff_weight_dvd
 ---
 
-# Reflexive iff weight dvd
+# Reflexivity criterion for weighted projective simplices
 
-Theorem 1, coordinate form: for positive weights, geometric reflexivity is
-equivalent to every `q i` dividing `1+∑q`.  The left side uses the independent
-height-wise definition of reflexivity, so the statement is nontrivial.
+**Reflexivity criterion for weighted projective simplices.** Let $q = (q_1, \dots, q_n)$ be
+natural-number weights with $q_i \ge 1$ for every $i$. The weighted projective simplex with
+weights $q$ is reflexive if and only if $q_i$ divides $1 + \sum_{j=1}^n q_j$ for every $i$.
+
+Reflexivity here is the geometric, height-by-height notion rather than a divisibility condition,
+so the statement relates two independently defined properties.
 
 ## Depends on
 
-- [Is Reflexive](is-reflexive.md)
-- [Weighted Simplex](weighted-simplex.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Weighted projective space simplex](weighted-simplex.md)
 
 ## Sources
 

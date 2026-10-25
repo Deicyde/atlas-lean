@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.ggmt2025UpperBound7Sqrt17_holds
 ---
 
-# Ggmt2025 Upper Bound7 Sqrt17 holds
+# Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$
 
-GGMT's quantitative coset-cover theorem gives exponent `7 + √17`.
+**Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$.** The number $7 + \sqrt{17}$ is an
+admissible asymptotic coset-cover exponent.
 
 ## Depends on
 
-- [Ggmt2025 Upper Bound7 Sqrt17](ggmt2025-upper-bound7-sqrt17.md)
+- [Statement of the Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$](ggmt2025-upper-bound7-sqrt17.md)
 
 ## Sources
 

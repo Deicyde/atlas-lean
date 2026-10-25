@@ -11,12 +11,12 @@ Positions of the in-range shift clause `(u, x)`.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [C Idx](../family/c-idx.md)
-- [X Idx](../family/x-idx.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
+- [Index of a label/state variable](../family/x-idx.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_infinite_pairwiseSums_monochromatic
 ---
 
-# Exists infinite pairwise Sums monochromatic
+# Pairwise sum theorem
 
-(Pairwise sum theorem) For every finite coloring of `ℕ` there is an infinite set `A` such
-that `A ∪ {a + a' | a, a' ∈ A, a ≠ a'}` is monochromatic.
+**Pairwise sum theorem.** For every finite coloring of $\mathbb{N} = \{0, 1, 2, \dots\}$ there
+is an infinite set $A \subseteq \mathbb{N}$ such that $A \cup \{a + a' : a, a' \in A, a \ne a'\}$
+is monochromatic.
 
 ## Depends on
 

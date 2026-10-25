@@ -6,17 +6,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsIdentityMorphism
 ---
 
-# Is Identity Morphism
+# Identity morphism
 
-Identity morphism.
+**Identity morphism.** A morphism $\psi$ is the identity morphism when $\psi(a)$ is the
+one-letter word $a$ for every letter $a$.
 
 ## Depends on
 
-- [Morphism](morphism.md)
+- [Morphisms of the ternary alphabet](morphism.md)
 
 ## Proof depends on
 
-- [Sigma](sigma.md)
+- [The ternary alphabet](sigma.md)
 
 ## Sources
 

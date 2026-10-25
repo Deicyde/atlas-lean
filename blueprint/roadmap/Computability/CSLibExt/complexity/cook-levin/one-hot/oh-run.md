@@ -6,43 +6,47 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.OneHot.oh_run
 ---
 
-# Correctness of the generator, with its explicit time bound
+# Correctness of the one-hot generator, with its explicit time bound
 
-**Correctness of the generator, with its explicit time bound.** Started on `T`, `H` (unary)
-with empty scratch counters, it reaches `done` within `ohBound` steps with exactly the family's
-encoding prepended to the output.
+**Correctness of the one-hot generator, with its explicit time bound.** Fix a layout, natural
+numbers $T$ and $H$, and a bit string $o$. Start the one-hot generator at its first
+precomputation label, with internal state false, the output stack holding $o$, the time counter
+holding $T$ and the height counter holding $H$ in unary, and every other counter empty. Then
+within $\beta(T, H)$ steps, where $\beta$ is the generator's explicit step bound, it reaches its
+halting label, in some internal state, with the output stack holding the encoding of the one-hot
+cell family for $T$ and $H$ followed by $o$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
-- [CK](ck.md)
-- [GL](gl.md)
-- [PS](ps.md)
-- [Init F](init-f.md)
-- [Oh Bound](oh-bound.md)
-- [The family](oh-family.md)
-- [Prog](prog.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Counters of the one-hot generator](ck.md)
+- [Control labels of the one-hot generator](gl.md)
+- [Stages of the one-hot precomputation](ps.md)
+- [Initial counters of the one-hot generator](init-f.md)
+- [Explicit time bound of the one-hot generator](oh-bound.md)
+- [The one-hot cell family](oh-family.md)
+- [The one-hot generator](prog.md)
 - [Encode CNF](../../dense-sat/encode-cnf.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [MS](../counter-view/ms.md)
-- [Bud st](../counter-view/bud-st.md)
-- [Mul S](../counter-view/mul-s.md)
+- [Stages of the multiplication routine](../counter-view/ms.md)
+- [Budgeted runs transport along equal counter values](../counter-view/bud-st.md)
+- [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [A runtime `for` loop in the counter view](../counter-view/st-loop.md)
-- [C Idx](../family/c-idx.md)
-- [Num Vars](../family/num-vars.md)
-- [Row W](../family/row-w.md)
-- [Rest](rest.md)
-- [Blk T](blk-t.md)
-- [Cell CNF](cell-cnf.md)
-- [Pre F](pre-f.md)
-- [T Body B](t-body-b.md)
-- [Tbody run](tbody-run.md)
+- [Index of a cell variable in the transition-family layout](../family/c-idx.md)
+- [Number of variables of the transition-clause formula](../family/num-vars.md)
+- [Variables per time step](../family/row-w.md)
+- [Empty scratch counters of the one-hot generator](rest.md)
+- [Encoded one-hot clauses of one time step](blk-t.md)
+- [One-hot clauses of a cell](cell-cnf.md)
+- [Counter values after the one-hot precomputation](pre-f.md)
+- [Step budget for one time step of the one-hot generator](t-body-b.md)
+- [Generator run over one time step](tbody-run.md)
 - [Clause](../../dense-sat/clause.md)
 - [Encode Clause](../../dense-sat/encode-clause.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)

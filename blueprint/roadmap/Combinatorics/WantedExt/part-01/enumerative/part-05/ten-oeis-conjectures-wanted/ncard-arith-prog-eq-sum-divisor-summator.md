@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithProg_eq_sum_divisorSummatory
 ---
 
-# Ncard arith Prog eq sum divisor Summatory
+# Counting arithmetic progressions in $\{1, \dots, n\}$
 
-For `n ≥ 1`, the number of arithmetic progressions in `[n] = {1, …, n}` of length at least `2`
-(A078567), counted as subsets `S ⊆ [n]` with `#S ≥ 2` of the form `{a, a + d, …, a + (#S - 1)d}`
-with `d ≥ 1` (`Set.IsAPOfLengthWith`), equals `∑_{m=0}^{n-1} D(m)` with
-`D(m) = ∑_{k=1}^{m} ⌊m/k⌋` (A006218).
+**Counting arithmetic progressions in $\{1, \dots, n\}$.** For every integer $n \ge 1$, the
+number of subsets $S \subseteq \{1, \dots, n\}$ with $|S| \ge 2$ that are arithmetic progressions,
+that is, $S = \{a, a + d, \dots, a + (|S| - 1)d\}$ for some natural numbers $a$ and $d \ge 1$,
+equals $\sum_{m=0}^{n-1} D(m)$, where $D(m) = \sum_{k=1}^{m} \lfloor m/k \rfloor$ (A078567,
+A006218).
 
 ## Depends on
 

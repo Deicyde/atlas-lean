@@ -15,12 +15,12 @@ supported stack symbol are terminals occurring in production outputs.
 
 ## Depends on
 
-- [Finitely Supported](../../../../automata/pda/basic/finitely-supported.md)
+- [Finitely supported pushdown automata](../../../../automata/pda/basic/finitely-supported.md)
 - [Cfg PDA](cfg-pda.md)
 
 ## Proof depends on
 
-- [PDA](../../../../automata/pda/basic/pda.md)
+- [Pushdown automaton](../../../../automata/pda/basic/pda.md)
 - [Cfg Step](cfg-step.md)
 
 ## Sources

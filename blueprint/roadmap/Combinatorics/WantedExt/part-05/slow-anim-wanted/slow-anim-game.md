@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.slowANimGame
 ---
 
-# Slow ANim Game
+# Slow$A$-Nim
 
-Slow`A`-Nim `SN(n, A)` as an `ImpartialGame` (ranked by the token count; the `start`
-field is unused here and set to the empty position).
+**Slow$A$-Nim.** For $n \in \mathbb{N}$ and a finite set $A$ of natural numbers, Slow$A$-Nim
+$\mathrm{SN}(n, A)$ is the impartial game whose positions assign a number $p_i$ of tokens to
+each of $n$ labelled stacks $i$, and whose options from $p$ are obtained by choosing a nonempty
+set $S$ of stacks with $|S| \in A$, each holding at least one token, and removing one token from
+each stack of $S$. Its rank is the total number of tokens $\sum_i p_i$, which every move lowers,
+and its start position is the empty position.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ field is unused here and set to the empty position).
 
 ## Proof depends on
 
-- [Slow ANim Moves](slow-anim-moves.md)
-- [Sum lt of mem slow ANim Moves](sum-lt-of-mem-slow-anim-moves.md)
+- [Options in Slow A-Nim](slow-anim-moves.md)
+- [Moves in Slow$A$-Nim decrease the token count](sum-lt-of-mem-slow-anim-moves.md)
 
 ## Sources
 

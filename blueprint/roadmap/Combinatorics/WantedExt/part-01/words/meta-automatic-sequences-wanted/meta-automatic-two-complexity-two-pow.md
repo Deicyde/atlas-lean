@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_complexity_two_pow
 ---
 
-# Meta Automatic Two complexity two pow
+# Factor complexity of $\mathcal{M}_2$ at powers of two
 
-Proposition 36: for `k ≥ 3`, `p_{ℳ₂}(2^k) = (5/2) · 2^k - 2` (written `5 · 2^{k-1} - 2`)
-if `3 ∣ k` and `3 · 2^k - 2` otherwise; and `p_{ℳ₂}(2^{k+3}) = 8 p_{ℳ₂}(2^k) + 14`.
+**Factor complexity of $\mathcal{M}_2$ at powers of two.** Let $p(n)$ be the factor
+complexity of the meta-automatic sequence $\mathcal{M}_2$, and let $k \ge 3$. If $3 \mid k$, then
+$p(2^k) = 5 \cdot 2^{k-1} - 2$; if $3 \nmid k$, then $p(2^k) = 3 \cdot 2^k - 2$. Moreover,
+$p(2^{k+3}) = 8\, p(2^k) + 14$.
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

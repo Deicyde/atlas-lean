@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Automata.EncodedDFA.step_eq_self
 ---
 
-# Step eq self
+# Unlisted transitions fix the state
 
-Without a listed transition for `(s, a)`, state `s` stays put.
+**Unlisted transitions fix the state.** Let $D$ be an encoded DFA, $s \in \mathbb{N}$ a state
+and $a$ a letter. If $D$ lists no transition from $s$ on $a$, then the transition function of $D$
+takes $s$ on $a$ to $s$.
 
 ## Depends on
 
 - [Encoded DFA](encoded-dfa.md)
-- [Step](step.md)
+- [Transition function of an encoded DFA](step.md)
 
 ## Sources
 

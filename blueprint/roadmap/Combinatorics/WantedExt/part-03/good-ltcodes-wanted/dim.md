@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.dim
 ---
 
-# Dim
+# Dimension of a binary code
 
-The dimension of a binary code is its dimension as an `𝔽₂` subspace.
+**Dimension of a binary code.** The dimension of a binary code
+$C \subseteq \mathbb{F}_2^n$ is its dimension as a vector space over $\mathbb{F}_2$.
 
 ## Depends on
 
-- [Binary Code](binary-code.md)
+- [Binary code](binary-code.md)
 
 ## Sources
 

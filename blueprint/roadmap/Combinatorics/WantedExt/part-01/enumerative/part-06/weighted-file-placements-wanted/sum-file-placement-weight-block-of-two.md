@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_filePlacementWeight_block_of_two
 ---
 
-# Sum file Placement Weight block of two
+# Weights cancel on a block with two rooks in the chosen level
 
-On a singleton board for `m ≥ 2`, if the chosen level `l` of `F₀` contains exactly two rooks,
-the `m`-weights over `P(F₀)` (the rightmost rook of level `l` moving within its column and level)
-sum to `0`.
+**Weights cancel on a block with two rooks in the chosen level.** Let $m \ge 2$, let $B$ be a
+singleton board for $m$, with rows numbered from $0$ and row $r$ in level $\lfloor r/m \rfloor$,
+and let $F_0$ be a file placement on $B$. Let $l$ be the chosen level of $F_0$ (among the levels
+holding at least two cells of $F_0$, one holding the fewest, the lowest on ties) and $c_0$ the
+leftmost cell of $F_0$ in level $l$, and suppose that level $l$ holds exactly two cells of $F_0$.
+Then the $m$-weights $\operatorname{wt}_m(F)$ of the file placements $F$ in the block $P(F_0)$
+sum to $0$, where $P(F_0)$ consists of the file placements on $B$ that agree with $F_0$ outside
+level $l$, use the same columns as $F_0$ inside level $l$, and contain $c_0$.
 
 ## Depends on
 
-- [Is Chosen Level And Leftmost](is-chosen-level-and-leftmost.md)
-- [Is Singleton Board](is-singleton-board.md)
-- [File Placement Block](file-placement-block.md)
-- [File Placement Weight](file-placement-weight.md)
-- [File Placements](file-placements.md)
+- [The chosen level and its leftmost cell](is-chosen-level-and-leftmost.md)
+- [Singleton boards](is-singleton-board.md)
+- [The block $P(F_0)$](file-placement-block.md)
+- [The $m$-weight of a file placement](file-placement-weight.md)
+- [File placements](file-placements.md)
 
 ## Sources
 

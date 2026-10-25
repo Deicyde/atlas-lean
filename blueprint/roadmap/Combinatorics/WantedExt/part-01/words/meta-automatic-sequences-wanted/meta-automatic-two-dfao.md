@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomaticTwo_dfao
 ---
 
-# Meta Automatic Two dfao
+# A four-state automaton computing $\mathcal{M}_2$
 
-Theorem 22: `ℳ₂` is computed MSB-first in base `4` by the DFAO with states
-`{0, 1, 2, 3}` (encoding `0 = (0,0)`, `1 = (1,0)`, `2 = (0,1)`, `3 = (1,1)`), initial
-state `0`, output `τ(q) = q mod 2`, and transitions `δ(0, ·) = 0132`,
-`δ(1, ·) = 2310`, `δ(2, ·) = 3201`, `δ(3, ·) = 1023`.
+**A four-state automaton computing $\mathcal{M}_2$.** Let
+$\delta : \{0, 1, 2, 3\} \times \{0, 1, 2, 3\} \to \{0, 1, 2, 3\}$ be the map for which the word
+$\delta(q, 0)\,\delta(q, 1)\,\delta(q, 2)\,\delta(q, 3)$ is $0132$ for $q = 0$, $2310$ for $q = 1$,
+$3201$ for $q = 2$ and $1023$ for $q = 3$. For every natural number $n$, the meta-automatic
+sequence $\mathcal{M}_2$, read as taking values in $\{0, 1\}$, satisfies
+$\mathcal{M}_2(n) = q \bmod 2$, where $q$ is the state reached from the state $0$ by reading the
+base-$4$ digits of $n$ with $\delta$, most significant digit first (for $n = 0$ no digit is read,
+so $q = 0$).
 
 ## Depends on
 
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 
 ## Sources
 

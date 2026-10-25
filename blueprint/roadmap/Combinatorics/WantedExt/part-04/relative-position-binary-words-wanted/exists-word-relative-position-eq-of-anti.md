@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_word_relativePosition_eq_of_antitone
 ---
 
-# Corollary 9
+# Non-increasing functions as relative position functions
 
-**Corollary 9.** Every non-increasing `r : ℕ → ℤ` with `r(1) < 0` is the relative position
-function of some `w ∈ b𝒲`.
+**Non-increasing functions as relative position functions.** Let $r$ be a function from the
+natural numbers to the integers with $r(1) < 0$ and $r(n+1) \le r(n)$ for every $n \ge 1$. Then
+there is an infinite word $w$ over the letters $a$ and $b$ that starts with $b$, in which both
+letters occur infinitely often, and whose relative position function satisfies $r_w(n) = r(n)$
+for every $n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

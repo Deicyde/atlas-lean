@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lucasSet_not_four_accessible
 ---
 
-# Lucas Set not four accessible
+# The Lucas numbers are not $4$-accessible
 
-`Δ(L, 3; 4) = ∞` for the Lucas numbers `L = {2, 1, 3, 4, 7, …}` (some `4`-coloring of `ℤ⁺`
-has no monochromatic `3`-term `L`-diffsequence); in particular `L` is not
-`r`-accessible for any `r ≥ 4`, i.e. `doa(L) ≤ 3`.
+**The Lucas numbers are not $4$-accessible.** Let $L = \{2, 1, 3, 4, 7, \dots\}$ be the set of
+Lucas numbers $L_0 = 2$, $L_1 = 1$, $L_{n+2} = L_{n+1} + L_n$. There is a coloring of the positive
+integers with the colors $0, 1, 2, 3$ for which no sequence $x_0, x_1, x_2$ of positive integers is
+both monochromatic and an $L$-diffsequence; and $L$ is not $r$-accessible for any $r \ge 4$.
 
 ## Depends on
 

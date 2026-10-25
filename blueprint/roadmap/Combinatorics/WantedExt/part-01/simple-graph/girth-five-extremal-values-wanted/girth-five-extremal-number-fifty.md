@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.GirthFiveExtremalValuesWanted.girthFiveExtremalNumber_fifty
 ---
 
-# Girth Five Extremal Number fifty
+# Girth-five extremal number on fifty vertices
 
-`ex(50; {C₃, C₄}) = 175`: the Hoffman–Singleton graph attains the Moore-type
-bound `(n / 2) √(n - 1)` for graphs of girth at least `5`.
+**Girth-five extremal number on fifty vertices.** The girth-five extremal number
+$\mathrm{ex}(50; \{C_3, C_4\})$, the largest number of edges of a simple graph on $50$
+vertices that contains no triangle and no four-cycle, equals $175$.
+
+For graphs on $n$ vertices of girth at least $5$, the Hoffman–Singleton graph attains the
+Moore-type bound $\frac{n}{2} \sqrt{n - 1}$ on the number of edges, with $n = 50$.
 
 ## Depends on
 
-- [Girth Five Extremal Number](girth-five-extremal-number.md)
+- [Girth-five extremal number](girth-five-extremal-number.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ramseyWitness_iff_mem_closure_tensor_squares
 ---
 
-# Ramsey Witness iff mem closure tensor squares
+# Ramsey's witnesses are the closure of tensor squares
 
-(Ramsey's witnesses are the closure of tensor squares) An ultrafilter `W` on `ℕ × ℕ` is a
-Ramsey's witness (Definition 3.4: every `X ∈ W` contains `[H]^2 = {(h, h') ∈ H × H | h < h'}` for
-some infinite `H ⊆ ℕ`) if and only if `W` lies in the closure, in `β(ℕ × ℕ)`, of the tensor
-squares `U ⊗ U` of non-principal ultrafilters `U` on `ℕ`. The tensor square is
-`U.bind fun n => U.map (Prod.mk n)`, whose members are the `X` with
-`{n | {m | (n, m) ∈ X} ∈ U} ∈ U`.
+**Ramsey's witnesses are the closure of tensor squares.** For an ultrafilter $U$ on
+$\mathbb{N} = \{0, 1, 2, \dots\}$, the tensor square $U \otimes U$ is the ultrafilter on
+$\mathbb{N} \times \mathbb{N}$ whose members are the sets $X$ with
+$\{n : \{m : (n, m) \in X\} \in U\} \in U$. An ultrafilter $W$ on $\mathbb{N} \times \mathbb{N}$ is
+a Ramsey's witness when every $X \in W$ contains $[H]^2 = \{(h, h') \in H \times H : h < h'\}$ for
+some infinite $H \subseteq \mathbb{N}$. An ultrafilter $W$ on $\mathbb{N} \times \mathbb{N}$ is a
+Ramsey's witness if and only if $W$ lies in the closure, in the Stone–Čech space
+$\beta(\mathbb{N} \times \mathbb{N})$, of the set of tensor squares $U \otimes U$ of non-principal
+ultrafilters $U$ on $\mathbb{N}$.
 
 ## Depends on
 

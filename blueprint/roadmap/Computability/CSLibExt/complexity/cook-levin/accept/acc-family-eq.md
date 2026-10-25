@@ -6,14 +6,19 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.Accept.accFamily_eq
 ---
 
-# Acc Family eq
+# The concrete accept family is a layout-level accept family
 
-`Sit`'s accept family *is* this family with `n1 = A0`, `ac = acode`, `k1 = kc k₁`,
-`ea = enc k₁ acc`.
+**The concrete accept family is a layout-level accept family.** Let $M$ be a finite
+multi-stack Turing machine with encoding $E$, let $\mathit{acc}$ be a symbol of the output stack
+of $M$, and let $T$, $H$ be natural numbers. The accept family of $E$ for $\mathit{acc}$ at $T$,
+$H$ equals, by definition, the accept family of the layout of $E$ at $T$, $H$ with parameters
+$n_1 = A_0$, the number of (label, state) codes of $E$; $a$, the (label, state) code of the
+halted configuration (no label, initial state); $k_1$, the number $E$ gives the output stack; and
+$e$, the code of $\mathit{acc}$.
 
 ## Depends on
 
-- [The accept family](acc-fam.md)
+- [The accept family of a layout](acc-fam.md)
 - [Enc](../situation/part-01/enc.md)
 - [The accept family](../situation/part-07/acc-family.md)
 - [Acode](../situation/part-07/acode.md)

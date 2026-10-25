@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsLetterAdmissibleSequence
 ---
 
-# Is Letter Admissible Sequence
+# Admissible sequences starting from a letter
 
-An admissible sequence `(mᵢ, aᵢ)_{i = 0, …, k}` is `a`-admissible when moreover
-`m_k a_k` is a prefix of `η(a)`.
+**Admissible sequences starting from a letter.** Let $\eta$ map each letter of an alphabet
+$A$ to a finite word over $A$, and let $a \in A$. A finite sequence $(m_i, a_i)_{0 \le i \le k}$
+of pairs, each made of a finite word $m_i$ over $A$ and a letter $a_i \in A$, is
+$a$-admissible when it is admissible with respect to $\eta$ and moreover the word $m_k a_k$ is a
+prefix of $\eta(a)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Admissible Sequence](is-admissible-sequence.md)
+- [Admissible sequence](is-admissible-sequence.md)
 
 ## Sources
 

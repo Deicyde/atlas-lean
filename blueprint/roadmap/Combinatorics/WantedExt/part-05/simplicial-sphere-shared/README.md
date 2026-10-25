@@ -4,7 +4,7 @@ navigation: module
 
 # Simplicial Sphere Shared
 
-- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
-- [Face Count](face-count.md)
-- [Extended Face Count](extended-face-count.md)
-- [H Vector](h-vector.md)
+- [Finite simplicial sphere](finite-simplicial-sphere.md)
+- [Face numbers of a simplicial sphere](face-count.md)
+- [Extended face numbers](extended-face-count.md)
+- [The h-vector of a simplicial sphere](h-vector.md)

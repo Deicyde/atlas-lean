@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Circuits.CarryLookahead.gpSpec
 ---
 
-# Gp Spec
+# The block held after Kogge-Stone levels
 
-After `k` levels, bit `i` holds the block of the (at most) `2 ^ k` bits ending at `i`.
+**The block held after Kogge-Stone levels.** Fix bit vectors $x, y$ of the same width. For
+$k, i \in \mathbb{N}$, the pair $S_k(i)$ that bit $i$ holds after $k$ Kogge-Stone levels is the
+generate–propagate pair of the block of the $\min(i + 1, 2^k)$ bits ending at bit $i$, that is,
+of the bits $i + 1 - \min(i + 1, 2^k), \dots, i$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gp Range](gp-range.md)
-- [Low Bit](low-bit.md)
+- [Generate and propagate signals of a block](gp-range.md)
+- [Lowest bit of a Kogge-Stone block](low-bit.md)
 
 ## Sources
 

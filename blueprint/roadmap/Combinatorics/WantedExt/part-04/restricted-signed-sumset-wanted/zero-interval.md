@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.zeroInterval
 ---
 
-# Zero Interval
+# Zero-based integer interval
 
-`zeroInterval k` is the integer set `{0,1,...,k-1}`, the paper's interval `[0,k-1]`.
-The zero-based range encoding avoids any ambiguity from integer interval endpoints.
+**Zero-based integer interval.** For a natural number $k$, the integer interval $[0, k-1]$ is
+the set $\{0, 1, \dots, k-1\}$ of integers $i$ with $0 \le i < k$; it is empty when $k = 0$.
 
 ## Depends on
 

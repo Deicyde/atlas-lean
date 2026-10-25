@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.BusyBeaver.onesAt_succ_le
 ---
 
-# Ones At succ le
+# The number of ones grows by at most one per step
 
-A step writes at most one additional one.
+**The number of ones grows by at most one per step.** For every Busy Beaver machine $M$
+and every $t \in \mathbb{N}$, the number of ones of $M$ after $t + 1$ steps is at most the
+number of ones of $M$ after $t$ steps plus $1$.
 
 ## Depends on
 
-- [Machine](machine.md)
-- [Ones At](ones-at.md)
+- [Busy Beaver machine](machine.md)
+- [Number of ones after $t$ steps](ones-at.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Move](move.md)
-- [Shift](shift.md)
-- [Initial](initial.md)
-- [Mem window of tape eq one](mem-window-of-tape-eq-one.md)
-- [Run](run.md)
-- [Step](step.md)
+- [Busy Beaver machine configuration](config.md)
+- [Head movement](move.md)
+- [Head displacement](shift.md)
+- [Initial configuration](initial.md)
+- [After $t$ steps, every one lies within distance $t$ of the origin](mem-window-of-tape-eq-one.md)
+- [Configuration after $t$ steps](run.md)
+- [One step of a Busy Beaver machine](step.md)
 
 ## Sources
 

@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.slowANimReduction_eq_min
 ---
 
-# Slow ANim Reduction eq min
+# The reduction chops at the largest reduced height
 
-Lemma 3: `r(p) = ctt(p, m)` for the largest `m ≤ max(p)` with `ctt(p, m)` reduced.
+**The reduction chops at the largest reduced height.** Let $A \subseteq \{1, \dots, n\}$ and
+let $p$ be a position of Slow$A$-Nim on $n$ stacks, with largest stack height $M = \max_i p_i$
+($M = 0$ when $n = 0$). For $m \in \mathbb{N}$ write $\mathrm{ctt}(p, m)$ for the position whose
+stack $i$ has height $\min(p_i, m)$. If $m \le M$, the position $\mathrm{ctt}(p, m)$ is reduced,
+and $\mathrm{ctt}(p, m')$ is not reduced for any $m'$ with $m < m' \le M$, then the reduction of
+$p$ is $r(p) = \mathrm{ctt}(p, m)$.
 
 ## Depends on
 
-- [Slow ANim Reduced](slow-anim-reduced.md)
-- [Slow ANim Reduction](slow-anim-reduction.md)
+- [Reduced positions of Slow $A$-Nim](slow-anim-reduced.md)
+- [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 
 ## Sources
 

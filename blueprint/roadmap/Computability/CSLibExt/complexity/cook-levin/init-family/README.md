@@ -6,77 +6,77 @@ navigation: module
 
 ## [PRIM] An input stack beside a counter machine
 
-- [IK](ik.md)
-- [IΓ](i.md)
-- [Emb](emb.md)
-- [Lift E](lift-e.md)
+- [Stacks of a counter machine with an input stack](ik.md)
+- [Alphabets of a counter machine with an input stack](i.md)
+- [Stacks of a counter machine with an extra input stack](emb.md)
+- [The counter stacks inside the generator's stacks](lift-e.md)
 - [Run lifting](run-lift.md)
 
 ## [PRIM] Reading one input symbol into the label
 
-- [Rd S](rd-s.md)
+- [Read test for one code](rd-s.md)
 - [The read chain](read-run.md)
 
 ## [FAM] The family (pure specification)
 
-- [Z B](z-b.md)
-- [I Code](i-code.md)
-- [I Other](i-other.md)
-- [I In](i-in.md)
+- [Empty-cell variable of the initial row](z-b.md)
+- [Start-code clause of the initial row (I1)](i-code.md)
+- [Row-0 clauses for the other stacks](i-other.md)
+- [Input clauses of the initial row (I3)](i-in.md)
 - [I Cert](i-cert.md)
-- [I Pre](i-pre.md)
-- [I Tail](i-tail.md)
+- [Row-0 prefix clauses](i-pre.md)
+- [Row-0 tail clauses](i-tail.md)
 - [The init family](init-fam.md)
 
 ## [FAM] The generator machine
 
-- [CK](ck.md)
-- [PH](ph.md)
-- [C N](c-n.md)
-- [C Z](c-z.md)
-- [CL](cl.md)
-- [Nl](nl.md)
-- [Off](off.md)
-- [Sg](sg.md)
-- [Bc](bc.md)
-- [PS1](ps1.md)
-- [PS2](ps2.md)
-- [LS](ls.md)
-- [GL](gl.md)
-- [Lit L](lit-l.md)
-- [After](after.md)
-- [Next](next.md)
-- [Next C](next-c.md)
-- [Rd0](rd0.md)
-- [Miss](miss.md)
-- [Lb](lb.md)
-- [Lit P](lit-p.md)
+- [Counters of the initial-row generator](ck.md)
+- [Loop phases of the initial-row generator](ph.md)
+- [Loop-count counter of a phase (initial-row generator)](c-n.md)
+- [Base counter of a phase (initial-row generator)](c-z.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Number of literals of a clause kind](nl.md)
+- [Literal offsets](off.md)
+- [Literal signs of an init-family clause kind](sg.md)
+- [Base counter of a clause kind (initial-row generator)](bc.md)
+- [Labels of the first precomputation part](ps1.md)
+- [Labels of the second precomputation part](ps2.md)
+- [Stages of the literal routine](ls.md)
+- [Labels of the initial-row generator](gl.md)
+- [Entry label of a literal routine (initial-row generator)](lit-l.md)
+- [Label after a literal routine (initial-row generator)](after.md)
+- [Label after a phase loop](next.md)
+- [Label after a clause](next-c.md)
+- [The first read test](rd0.md)
+- [Label after a failed read test](miss.md)
+- [Labels of the initial-row generator](lb.md)
+- [The literal routine of the initial-row generator](lit-p.md)
 - [Prog](prog.md)
 - [The generator](iprog.md)
-- [The generator as a genuine `FinTM2`](init-tm.md)
+- [The init generator as a finite multi-stack machine](init-tm.md)
 
 ## [FAM] Clause kinds: literal positions
 
-- [Clits](clits.md)
-- [WF](wf.md)
-- [Bnd](bnd.md)
-- [In R](in-r.md)
+- [Literals of a clause kind](clits.md)
+- [Well-formed init-family clause kinds](wf.md)
+- [Boundary before a literal (initial-row generator)](bnd.md)
+- [Literals of a clause kind in range](in-r.md)
 
 ## [FAM] Correctness: one literal, one clause (in the counter part)
 
-- [Rest](rest.md)
-- [Lit run](lit-run.md)
-- [Lit E](lit-e.md)
-- [Clause B](clause-b.md)
-- [Lits run](lits-run.md)
+- [Empty scratch counters](rest.md)
+- [Run of one literal routine (initial-row generator)](lit-run.md)
+- [Per-literal step cost of the initial-row generator](lit-e.md)
+- [Step bound for one clause (initial-row generator)](clause-b.md)
+- [Run of the literal routines of a clause (initial-row generator)](lits-run.md)
 - [Clause run](clause-run.md)
 
 ## [FAM] Correctness: the five phase loops (counter part)
 
-- [Body B](body-b.md)
-- [Body run](body-run.md)
+- [Step bound for one loop iteration (initial-row generator)](body-b.md)
+- [One phase-loop iteration of the initial-row generator](body-run.md)
 - [One phase loop](phase-run.md)
-- [I3pre run](i3pre-run.md)
+- [Counter part of one I3 iteration](i3pre-run.md)
 
 ## [FAM] Correctness: the I3 loop (reads the input; in the extended machine)
 
@@ -84,35 +84,35 @@ navigation: module
 
 ## [FAM] Positions, and the machine's blocks are the family's clauses
 
-- [Qpos](qpos.md)
-- [Flat blocks](flat-blocks.md)
+- [Row-0 cells fit in the variable range](qpos.md)
+- [Concatenating consecutive blocks of indices](flat-blocks.md)
 
 ## [FAM] Precomputation and the whole generator
 
-- [Init F](init-f.md)
-- [Pre F](pre-f.md)
-- [Pre B](pre-b.md)
+- [Initial counters of the init generator](init-f.md)
+- [Counters after the precomputation](pre-f.md)
+- [Step bound for the precomputation](pre-b.md)
 - [Pre run](pre-run.md)
-- [I3 full](i3-full.md)
+- [The I3 loop on the whole input](i3-full.md)
 
 ## [FAM] The whole generator
 
-- [Loop B](loop-b.md)
-- [Init Bound](init-bound.md)
+- [Step bound of one phase loop (initial-row generator)](loop-b.md)
+- [Time bound of the init generator](init-bound.md)
 - [Correctness of the init generator, with its explicit time bound](init-run.md)
 
 ## [BOUND] The time bound is polynomial: `initBound ≤ initC · (T + H + 1)^5`
 
 - [Init Bound uni](init-bound-uni.md)
-- [Init C](init-c.md)
-- [The time-bound target](init-time.md)
+- [Constant of the init generator's time bound](init-c.md)
+- [Polynomial time bound for the init generator](init-time.md)
 
 ## [FAM] Link to the semantic family `Situation.Enc.initFamily` (I4 sorted and deduplicated)
 
-- [Lookup pos](lookup-pos.md)
-- [`denseClause` congruence](dense-clause-congr.md)
-- [Ycs](ycs.md)
-- [Enc F](enc-f.md)
-- [The C5 carry-over equality](init-family-eq.md)
-- [The init generator for a real machine](init-gen-time.md)
-- [At the cap `five_iff` uses](init-gen-cap-h.md)
+- [Lookup in an all-positive literal list](lookup-pos.md)
+- [Dense clauses of positive literals depend only on their positions](dense-clause-congr.md)
+- [Sorted certificate code list](ycs.md)
+- [Codes of input symbols](enc-f.md)
+- [The init family of an encoding is a layout-level init family](init-family-eq.md)
+- [Time and output of the init generator for an encoding](init-gen-time.md)
+- [The init generator at the stack cap](init-gen-cap-h.md)

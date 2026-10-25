@@ -5,9 +5,16 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Precompute.fullB
 ---
 
-# Full B
+# Step bound of the full machine
 
-Step bound of the full machine on an input of length `n`.
+**Step bound of the full machine.** For an encoding $E$ of a machine $M$, a list $Y$ of
+symbols of the input stack alphabet of $M$, a polynomial $k$ with natural-number coefficients and
+$c, e, n \in \mathbb{N}$, write $m = n + 1 + k(n)$ and $T = (m + c)^e$. The bound is
+$n + 1 + C + 1 + R$, where $C$ is the step budget of the counter program for $k$, $c$, $e$,
+$d = \operatorname{depth} M$ and $n$, and $R$ is the host's step bound for $E$ and $Y$ at $m$
+and $T$.
+
+It bounds the number of steps of the full machine on a raw input of length $n$.
 
 ## Depends on
 
@@ -15,10 +22,10 @@ Step bound of the full machine on an input of length `n`.
 
 ## Proof depends on
 
-- [Real B](../assembly/real-b.md)
-- [TOf](tof.md)
-- [C B](c-b.md)
-- [M Of](m-of.md)
+- [Step bound of the host](../assembly/real-b.md)
+- [The precomputed time bound](tof.md)
+- [Step budget of the counter program](c-b.md)
+- [Total length bound](m-of.md)
 - [Depth](../situation/part-01/depth.md)
 
 ## Sources

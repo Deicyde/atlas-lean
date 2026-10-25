@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isSylverNPosition_two
 ---
 
-# Is Sylver NPosition two
+# Opening with 2 loses
 
-`{2}` is an N-position: naming `3` leaves the P-position `{2, 3}`.
+**Opening with 2 loses.** The position $\{2\}$ of Sylver Coinage is an N-position: the player
+to move wins by naming $3$, which leaves the P-position $\{2, 3\}$.
 
 ## Depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
 
 ## Proof depends on
 
-- [Is Sylver PPosition](is-sylver-pposition.md)
-- [Is Sylver PPosition two three](is-sylver-pposition-two-three.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
+- [The position $\{2, 3\}$ is a P-position](is-sylver-pposition-two-three.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

@@ -6,30 +6,33 @@ proof: formalized
 lean: Cslib.Circuits.CarryLookahead.claProgram_carry_depth
 ---
 
-# Cla Program carry depth
+# Depth of the carry gates
 
-The carry gates of the final level sit at depth `max (2 K + 1) (K + 2) + 1`.
+**Depth of the carry gates.** For all natural numbers $n$, $K$ and $i < n$, in the gate program
+of the $n$-bit adder with $K$ Kogge–Stone levels, the carry gate of bit $i$ in the final level
+(gate $3i + 1$ of that level) has depth $\max(2K + 1, K + 2) + 1$, where inputs have depth $0$
+and each gate is one deeper than its deepest argument.
 
 ## Depends on
 
-- [Cla Program](cla-program.md)
-- [Level Base](level-base.md)
-- [Arith Signature](../ripple-carry/arith-signature.md)
-- [Depth Interpretation](depth-interpretation.md)
+- [Gates of the carry-lookahead adder](cla-program.md)
+- [Gate count of the first Kogge-Stone levels](level-base.md)
+- [Arithmetic basis](../ripple-carry/arith-signature.md)
+- [The depth interpretation](depth-interpretation.md)
 
 ## Proof depends on
 
-- [Arith Gate](../ripple-carry/arith-gate.md)
-- [G Num](g-num.md)
-- [Levels](levels.md)
+- [Arithmetic gate symbols](../ripple-carry/arith-gate.md)
+- [Index of the generate gate](g-num.md)
+- [The first Kogge-Stone levels](levels.md)
 - [Depths after each level](levels-depth.md)
-- [Line F](line-f.md)
-- [P Num](p-num.md)
-- [Append Gates](append-gates.md)
-- [Append Gates eval ge](append-gates-eval-ge.md)
-- [Append Gates eval lt](append-gates-eval-lt.md)
-- [Bin Line](../ripple-carry/bin-line.md)
-- [Depth Interpretation arith](depth-interpretation-arith.md)
+- [Gates of the final level](line-f.md)
+- [Propagate gate of a bit in the Kogge–Stone adder](p-num.md)
+- [Appending a block of gates](append-gates.md)
+- [Values of appended gates](append-gates-eval-ge.md)
+- [Appending gates keeps the old gate values](append-gates-eval-lt.md)
+- [Binary gate line](../ripple-carry/bin-line.md)
+- [Depth of an arithmetic gate](depth-interpretation-arith.md)
 
 ## Sources
 

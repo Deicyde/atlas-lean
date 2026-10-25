@@ -15,10 +15,10 @@ The reachable states of an encoded DFA.
 
 ## Proof depends on
 
-- [Letters](../../../automata/da/encoded-dfa/letters.md)
+- [Letters of an encoded DFA](../../../automata/da/encoded-dfa/letters.md)
 - [Reach N](reach-n.md)
-- [States](../../../automata/da/encoded-dfa/states.md)
-- [Step](../../../automata/da/encoded-dfa/step.md)
+- [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
+- [Transition function of an encoded DFA](../../../automata/da/encoded-dfa/step.md)
 
 ## Sources
 

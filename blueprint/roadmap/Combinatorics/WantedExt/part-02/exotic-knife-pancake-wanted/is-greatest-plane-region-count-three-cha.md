@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isGreatest_planeRegionCount_threeChain
 ---
 
-# Theorem 1
+# Maximum region count for 3-chains
 
-**Theorem 1** (3-chains). The maximum number of regions formed in the plane by `n` 3-chains
-(a finite segment `[p, q]` with a ray attached at each end, arbitrary directions,
-self-intersections allowed) is `(9n² - 5n + 2)/2`.
+**Maximum region count for 3-chains.** For points $p, q \in \mathbb{R}^2$ and nonzero vectors
+$u, v \in \mathbb{R}^2$, the 3-chain is the union of the ray $\{p + s u : s \ge 0\}$, the segment
+$[p, q]$ and the ray $\{q + s v : s \ge 0\}$; the directions are arbitrary and the 3-chain may
+intersect itself. For every natural number $n$, the largest number of regions into which the
+union of $n$ 3-chains can divide the plane is $(9n^2 - 5n + 2)/2$.
 
 ## Depends on
 
-- [Plane Region Count](plane-region-count.md)
+- [Number of regions cut out of the plane](plane-region-count.md)
 
 ## Sources
 

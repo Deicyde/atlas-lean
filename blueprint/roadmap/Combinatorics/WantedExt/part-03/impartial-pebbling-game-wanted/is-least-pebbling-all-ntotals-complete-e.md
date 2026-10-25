@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_pebblingAllNTotals_complete_even
 ---
 
-# Is Least pebbling All NTotals complete even
+# All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$
 
-Theorem 1(e): for even `n ≥ 6`, `m^{(2:1)}(K_n) = n + 7`.
+**All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$.** For every even $n \ge 6$, the
+least number $m$ such that every $(2:1)$-pebbling game on the complete graph $K_n$ with $m$
+pebbles in total is an N-game, written $m^{(2:1)}(K_n)$, exists and equals $n + 7$.
 
 ## Depends on
 
-- [Pebbling All NTotals](pebbling-all-ntotals.md)
+- [Totals at which every pebbling game is an N-game](pebbling-all-ntotals.md)
 
 ## Sources
 

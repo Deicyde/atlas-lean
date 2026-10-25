@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.antiFibonacciState
 ---
 
-# Anti Fibonacci State
+# The anti-Fibonacci construction
 
-The anti-Fibonacci construction: entry `n` is `((A_(n+1), B_(n+1), C_(n+1)), U)` where
-`A_1, B_1, C_1 = 1, 2, 3`, `U` is the set of values used so far, `A_(n+1), B_(n+1)` are the
-next two missing positive integers, and `C_(n+1) = A_(n+1) + B_(n+1)`. The `C_n` are the
-anti-Fibonacci numbers (OEIS A075326 without its initial `0`) and the missing numbers
-`A_1, B_1, A_2, B_2, …` are the non-anti-Fibonacci numbers `Y_1, Y_2, …` (OEIS A249031).
+**The anti-Fibonacci construction.** For each $n \ge 0$, entry $n$ of the construction is the
+triple $(A_{n+1}, B_{n+1}, C_{n+1})$ of natural numbers together with the finite set $U_{n+1}$ of
+values used so far. Entry $0$ is $(1, 2, 3)$ with $U_1 = \{1, 2, 3\}$. For $n \ge 1$, $A_{n+1}$ is
+the least positive integer not in $U_n$, $B_{n+1}$ is the least positive integer not in
+$U_n \cup \{A_{n+1}\}$, $C_{n+1} = A_{n+1} + B_{n+1}$, and
+$U_{n+1} = U_n \cup \{A_{n+1}, B_{n+1}, C_{n+1}\}$.
+
+The $C_n$ are the anti-Fibonacci numbers (OEIS A075326 without its initial $0$) and the missing
+numbers $A_1, B_1, A_2, B_2, \dots$ are the non-anti-Fibonacci numbers $Y_1, Y_2, \dots$
+(OEIS A249031).
 
 ## Depends on
 
@@ -19,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+- [Least positive integer missing from a finite set](anti-tribonacci-mex.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ expression tree is exponentially larger than the node list.
 
 ## Depends on
 
-- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
 - [Encoded Regex](../regular-expression/encoded-regex.md)
 - [Num Thompson States](num-thompson-states.md)
 - [To Regex](../regular-expression/to-regex.md)

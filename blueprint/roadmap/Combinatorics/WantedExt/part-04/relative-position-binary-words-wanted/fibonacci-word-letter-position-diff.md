@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciWord_letterPosition_diff
 ---
 
-# Theorem 38
+# Position differences in the Fibonacci word
 
-**Theorem 38.** For the Fibonacci word `f`: (a) `Δp_a(n)` is the coding of `f` at `n - 1`
-under `(a, b) ↦ (2, 1)`; (b) `Δp_b(n)` is its coding under `(a, b) ↦ (3, 2)`; (c) `r(n) = n` (so
-`Δr = 1`). Corrected reading: the record prints the codings `(1, 2)` and `(2, 3)`, which are false
-(`f = abaab⋯` has `p_a = 0, 2, 3, 5, …`, so `Δp_a(1) = 2` while `f` starts with `a`); the codings
-`(2, 1)` and `(3, 2)` are the ones derived in the paper's proof. A sequence `x₁x₂⋯` is read as
-the word with `x₁` at position `0`, as in the paper's conventions.
+**Position differences in the Fibonacci word.** Let $f = \ell_0 \ell_1 \ell_2 \cdots =
+abaab\cdots$ be the Fibonacci word, the infinite Fibonacci word with each $0$ written as $a$
+and each $1$ as $b$. Let $p_a(n)$ and $p_b(n)$ be the positions (counted from $0$) of the
+$n$-th $a$ and the $n$-th $b$ in $f$, and let $r(n) = p_b(n) - p_a(n)$. Then for every $n \ge 1$:
+$p_a(n+1) - p_a(n)$ is $2$ if $\ell_{n-1} = a$ and $1$ if $\ell_{n-1} = b$;
+$p_b(n+1) - p_b(n)$ is $3$ if $\ell_{n-1} = a$ and $2$ if $\ell_{n-1} = b$; and $r(n) = n$.
+
+The printed statement gives the codings $(1, 2)$ and $(2, 3)$ instead, which are false:
+$p_a$ takes the values $0, 2, 3, 5, \ldots$, so $p_a(2) - p_a(1) = 2$ while $f$ starts with
+$a$. The codings above are the ones derived in the paper's proof.
 
 ## Depends on
 
 - [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

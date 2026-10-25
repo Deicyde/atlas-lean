@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.keywordEquiv_refl
 ---
 
-# Keyword Equiv refl
+# Reflexivity of keyword equivalence
 
-Every word is equivalent to itself (the empty composition).
+**Reflexivity of keyword equivalence.** For every binary keyword $a$ and every binary word
+$u$, we have $u \sim_a u$: the empty composition of simple maps sends $u$ to itself.
 
 ## Depends on
 
-- [Keyword Equiv](keyword-equiv.md)
+- [Keyword equivalence of binary words](keyword-equiv.md)
 
 ## Proof depends on
 
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

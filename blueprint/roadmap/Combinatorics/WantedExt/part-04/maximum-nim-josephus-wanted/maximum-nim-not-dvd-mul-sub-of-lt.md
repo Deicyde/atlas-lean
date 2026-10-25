@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_lt
 ---
 
-# Maximum Nim not dvd mul sub of lt
+# A Maximum Nim non-divisibility lemma for $s < t$
 
-Lemma 4(i): if positive `n,t,h` satisfy `k = n*t+h`, `h ≤ n`, and `s<t`,
-then for every `1 ≤ i ≤ n`, `n*(k-s)-i` is not divisible by `k`. Naturals already
-encode `s ≥ 0`; there is no deviation.
+**A Maximum Nim non-divisibility lemma for $s < t$.** Let $k, n, t, h, s, i$ be natural
+numbers with $h \ge 1$, $k = nt + h$, $h \le n$ and $s < t$. If $1 \le i \le n$, then $k$ does
+not divide $n(k - s) - i$.
+
+The hypotheses force $n \ge 1$, $s < k$ and $i \le n(k - s)$, so both subtractions are ordinary
+differences of natural numbers.
 
 ## Depends on
 

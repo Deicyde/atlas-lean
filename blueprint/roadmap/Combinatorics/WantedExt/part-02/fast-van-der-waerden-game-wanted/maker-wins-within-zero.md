@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_zero
 ---
 
-# Maker Wins Within zero
+# Winning within zero moves
 
-With no moves left Maker has won exactly when he already holds a copy.
+**Winning within zero moves.** Let $S$ be a finite set of natural numbers, and let $M$ and
+$B$ be finite sets of natural numbers. Maker wins the $S$-game within $0$ moves from the position
+where Maker has claimed $M$ and Breaker has claimed $B$ if and only if $M$ contains a copy
+$aS + b = \{as + b : s \in S\}$ of $S$, where $a$ is a positive integer and $b$ is an integer.
 
 ## Depends on
 
-- [Contains Copy](contains-copy.md)
-- [Maker Wins Within](maker-wins-within.md)
+- [Containing a homothetic copy](contains-copy.md)
+- [Maker wins within $p$ moves](maker-wins-within.md)
 
 ## Sources
 

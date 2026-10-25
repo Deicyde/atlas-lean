@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.isBoolFunNNEquiv_refl
 ---
 
-# Is Bool Fun NNEquiv refl
+# NN-equivalence is reflexive
 
-Every Boolean function is NN-equivalent to itself.
+**NN-equivalence is reflexive.** Every Boolean function is NN-equivalent to itself.
 
 ## Depends on
 
-- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
+- [NN-equivalence of Boolean functions](is-bool-fun-nnequiv.md)
 
 ## Sources
 

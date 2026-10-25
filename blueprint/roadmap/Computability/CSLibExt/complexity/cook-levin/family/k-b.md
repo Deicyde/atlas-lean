@@ -5,13 +5,17 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.kB
 ---
 
-# K B
+# Row offset of a literal in a transition clause
 
-Row offset (in rows `W`) of literal `j`: `1` for the next-code literal, else `0`.
+**Row offset of a literal in a transition clause.** For a layout with $K$ stacks and window
+depth $d$, the row offset $k_B(j)$ of literal $j$ is $0$ when $j \le Kd$ and $1$ when $j > Kd$.
+
+Among the literals $0, \dots, Kd + 1$ of a transition clause it is $1$ only for the last one,
+the next-label literal, which refers to the following time step.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Sources
 

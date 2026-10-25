@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsBoolFunDecreasingIn
 ---
 
-# Is Bool Fun Decreasing In
+# Boolean functions decreasing in a variable
 
-`f` is monotone decreasing in the variable `i`: setting `x i` from
-`false` to `true` never increases the value.
+**Boolean functions decreasing in a variable.** An $n$-variable Boolean function $f$ is
+monotone decreasing in the variable $x_i$ if for every input $x$ with $x_i = 0$, changing $x_i$
+to $1$ does not increase the value: $f(x') \le f(x)$, where $x'$ agrees with $x$ except that
+$x'_i = 1$.
 
 ## Depends on
 

@@ -11,7 +11,7 @@ Literal `j`'s position is `t·W + kA j · (H·g) + kB j · W + cst i j`.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Sources
 

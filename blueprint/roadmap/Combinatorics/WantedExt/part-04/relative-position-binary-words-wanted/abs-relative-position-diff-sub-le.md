@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.abs_relativePosition_diff_sub_le
 ---
 
-# Lemma 15
+# Relative position increments without long runs of b
 
-**Lemma 15.** For `w ∈ a𝒲` not containing `b^k`, `|Δr - Δp_b| ≤ k`; in particular `Δr` is
-bounded iff `Δp_b` is bounded.
+**Relative position increments without long runs of b.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$
+be an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often and
+whose first letter $\ell_0$ is $a$. Let $p_b$ be its position function for the letter $b$, let $r$
+be its relative position function, and write $\Delta s(n) = s(n+1) - s(n)$. Let $k$ be a natural
+number such that $w$ contains no $k$ consecutive letters $b$, that is, there is no $i$ with
+$\ell_{i+j} = b$ for all $j < k$. Then $|\Delta r(n) - \Delta p_b(n)| \le k$ for every $n \ge 1$.
+Moreover, $|\Delta r(n)|$ is bounded over $n \ge 1$ if and only if $\Delta p_b(n)$ is bounded over
+$n \ge 1$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

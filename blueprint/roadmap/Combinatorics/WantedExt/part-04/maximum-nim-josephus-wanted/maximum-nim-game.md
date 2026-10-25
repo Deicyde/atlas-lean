@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.maximumNimGame
 ---
 
-# Maximum Nim Game
+# The Maximum Nim game
 
-Maximum Nim with rule function `f` as an impartial game in the repository's
-Sprague-Grundy API: positions are pile sizes, and from `x` one may move to `x - u` for
-`1 ≤ u ≤ min (f x) x`; the rank is the pile size and the start is the empty pile. The `min`
-is the same totality convention as for `maximumNimGrundy`, and is the only representational
-deviation.
+**The Maximum Nim game.** For a rule function $f : \mathbb{N} \to \mathbb{N}$, the Maximum Nim
+game with rule $f$ is the impartial game whose positions are the pile sizes $x \in \mathbb{N}$, in
+which the moves from $x$ go to $x - u$ for each $u$ with $1 \le u \le \min(f(x), x)$. The rank of
+a position is the pile size itself, and the starting position is the empty pile $0$.
 
 ## Depends on
 

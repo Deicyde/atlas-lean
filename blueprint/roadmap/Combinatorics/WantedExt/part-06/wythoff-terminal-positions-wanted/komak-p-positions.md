@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.komak_pPositions
 ---
 
-# Komak p Positions
+# Komak's description of the P-positions of $K^2$
 
-Theorem 2 (Komak et al.): the P-positions of `K²` are the terminal positions together
-with `(⌊nφ⌋ + g(n) - 1, ⌊nφ²⌋ + g(n))` and `(⌊nφ²⌋ + g(n), ⌊nφ⌋ + g(n) - 1)`, `n ≥ 0`;
-stated as stability and absorption (`MetaMathlibExt.pPositions_unique`). The printed set
-omits the terminal positions `(0, 0)` and `(1, 1)`, which are P-positions (no move leaves
-them); they are added here.
+**Komak's description of the P-positions of $K^2$.** Let $\varphi$ be the golden ratio
+and $g$ the sequence of Komak et al. Let $S$ be the set of pairs $(x, y)$ of natural numbers
+with $x + y \le 2$, together with the pairs
+$(\lfloor n\varphi \rfloor + g(n) - 1, \lfloor n\varphi^2 \rfloor + g(n))$ and
+$(\lfloor n\varphi^2 \rfloor + g(n), \lfloor n\varphi \rfloor + g(n) - 1)$ for all $n \ge 0$.
+In the game $K^2$ (Wythoff's game in which the positions with $x + y \le 2$ are terminal),
+no move leads from a position in $S$ to a position in $S$, and from every position outside
+$S$ some move leads to a position in $S$.
+
+These two properties determine the set of P-positions, so the P-positions of $K^2$ are
+exactly the positions in $S$. The source omits the terminal positions $(0, 0)$ and $(1, 1)$,
+which are P-positions since no move leaves them; they are included here.
 
 ## Depends on
 
-- [Komak G](komak-g.md)
-- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [The Komak sequence $g$](komak-g.md)
+- [Moves of Wythoff's game with terminal positions](wythoff-terminal-move.md)
 
 ## Sources
 

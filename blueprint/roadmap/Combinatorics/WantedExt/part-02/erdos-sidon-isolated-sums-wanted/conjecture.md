@@ -6,10 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ErdosSidonIsolatedSumsWanted.conjecture
 ---
 
-# Conjecture
+# Erdős Problem 152 on isolated sums of Sidon sets
 
-[EP-152] For any `M ≥ 1`, every sufficiently large finite Sidon set has at
-least `M` isolated sums in its sumset.
+**Erdős Problem 152 on isolated sums of Sidon sets.** A finite set $A$ of natural numbers is
+a Sidon set when $a + b = c + d$ with $a, b, c, d \in A$ implies $\{a, b\} = \{c, d\}$, and its
+sumset is $A + A = \{x + y : x, y \in A\}$. An element $s$ of a finite set $S$ of natural numbers
+is isolated in $S$ when $s + 1 \notin S$ and either $s = 0$ or $s - 1 \notin S$. The proposition
+asserts that for every natural number $M \ge 1$ there is a natural number $K$ such that every
+finite Sidon set $A$ of natural numbers with at least $K$ elements has at least $M$ isolated
+elements in $A + A$.
 
 ## Depends on
 
@@ -17,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sidon](is-sidon.md)
-- [Isolated Count](isolated-count.md)
-- [Sumset](sumset.md)
+- [Finite Sidon sets of natural numbers](is-sidon.md)
+- [Number of isolated elements](isolated-count.md)
+- [Sumset of a finite set of natural numbers](sumset.md)
 
 ## Sources
 

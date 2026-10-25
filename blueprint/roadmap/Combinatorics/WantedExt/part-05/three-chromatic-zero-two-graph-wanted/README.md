@@ -4,6 +4,6 @@ navigation: module
 
 # Three Chromatic Zero Two Graph
 
-- [Is Zero Two](is-zero-two.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [$(0,2)$-graphs](is-zero-two.md)
+- [The three-chromatic $(0,2)$-graph conjecture](conjecture.md)
+- [No finite $(0,2)$-graph has chromatic number three](conjecture-refuted.md)

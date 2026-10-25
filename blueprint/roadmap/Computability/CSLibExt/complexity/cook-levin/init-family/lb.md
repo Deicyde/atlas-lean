@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.Lb
 ---
 
-# Lb
+# Labels of the initial-row generator
 
-Abbreviation for the label type.
+**Labels of the initial-row generator.** For a layout $L$ and a list $y$ of certificate
+codes, the label type of the generator is the finite label type with parameters $g$, the number
+of symbol codes of $L$, and $n$, the length of $y$.
 
 ## Depends on
 
-- [Layout](../family/layout.md)
+- [Variable layout of the transition clauses](../family/layout.md)
 
 ## Proof depends on
 
-- [GL](gl.md)
+- [Labels of the initial-row generator](gl.md)
 
 ## Sources
 

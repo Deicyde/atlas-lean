@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Shift.initF
 ---
 
-# Init F
+# Initial counter values of the shift generator
 
-Initial counters: `T` on `Tn`, `H` on `Hs`.
+**Initial counter values of the shift generator.** For natural numbers $T$ and $H$, the
+assignment of counter values that puts $T$ on the time-bound input counter, $H$ on the
+stack-height input counter, and $0$ on every other counter of the generator.
 
 ## Depends on
 
-- [CK](ck.md)
+- [Counters of the cell-shift generator](ck.md)
 
 ## Sources
 

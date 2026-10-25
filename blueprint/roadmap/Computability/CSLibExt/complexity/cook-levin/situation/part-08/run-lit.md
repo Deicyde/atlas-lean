@@ -16,8 +16,8 @@ included), and `S[t, sitIdx (row t)]` (stored in row `t+1`). Row 0's situation b
 
 ## Proof depends on
 
-- [C Idx](../../family/c-idx.md)
-- [X Idx](../../family/x-idx.md)
+- [Index of a cell variable in the transition-family layout](../../family/c-idx.md)
+- [Index of a label/state variable](../../family/x-idx.md)
 - [Cell](../part-03/cell.md)
 - [Code](../part-03/code.md)
 - [Layout](../part-01/layout.md)

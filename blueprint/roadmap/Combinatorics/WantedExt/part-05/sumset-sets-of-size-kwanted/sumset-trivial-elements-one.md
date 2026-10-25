@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.sumsetTrivialElements_one
 ---
 
-# Sumset Trivial Elements one
+# Trivial elements of a one-element set
 
-A one-element set has its single `h`-fold sum as its only trivial element.
+**Trivial elements of a one-element set.** Let $G$ be an additive commutative monoid, $h$ a
+natural number and $a \colon \mathbb{N} \to G$. For $k = 1$, when $\{a_0, \dots, a_{k-1}\}$ is
+the one-element set $\{a_0\}$, the set of trivial elements of its $h$-fold sumset is exactly
+$\{h a_0\}$, where $h a_0 = a_0 + \dots + a_0$ is the $h$-fold sum of $a_0$.
 
 ## Depends on
 
-- [Sumset Trivial Elements](sumset-trivial-elements.md)
+- [Trivial elements of an $h$-fold sumset](sumset-trivial-elements.md)
 
 ## Sources
 

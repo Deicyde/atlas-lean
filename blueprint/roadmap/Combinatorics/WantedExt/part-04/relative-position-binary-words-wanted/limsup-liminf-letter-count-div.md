@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.limsup_liminf_letterCount_div
 ---
 
-# Corollary 29
+# Upper and lower densities of a letter from its position function
 
-**Corollary 29.** For `w ∈ 𝒲` and a letter `α`,
-`limsup #_α(m)/m = limsup n/p_α(n)` and `liminf #_α(m)/m = liminf n/p_α(n)` (both sequences are
-bounded, so the real `limsup`/`liminf` are the classical ones).
+**Upper and lower densities of a letter from its position function.** Let $w$ be an infinite
+binary word in which both letters occur infinitely often and let $\alpha$ be a letter. Write
+$\#_\alpha(m)$ for the number of occurrences of $\alpha$ among the first $m$ letters of $w$, and
+$p_\alpha(n)$ for the position (counted from $0$) of the $n$-th occurrence of $\alpha$. Then
+$\limsup_{m \to \infty} \#_\alpha(m)/m = \limsup_{n \to \infty} n/p_\alpha(n)$ and
+$\liminf_{m \to \infty} \#_\alpha(m)/m = \liminf_{n \to \infty} n/p_\alpha(n)$.
+
+Both sequences are bounded, so these are the classical upper and lower limits in $\mathbb{R}$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Letter Count](letter-count.md)
-- [Letter Position](letter-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Letter-counting function](letter-count.md)
+- [Position function of a letter](letter-position.md)
 
 ## Sources
 

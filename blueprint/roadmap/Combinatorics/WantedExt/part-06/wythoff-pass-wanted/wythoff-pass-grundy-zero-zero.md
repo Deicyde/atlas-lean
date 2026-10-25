@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.wythoffPassGrundy_zero_zero
 ---
 
-# Wythoff Pass Grundy zero zero
+# The terminal position of Wythoff's game with a pass
 
-The terminal position `(0, 0)` has Grundy number `0` in Wythoff's game with a pass, with or
-without the pass available (the pass is not allowed from a terminal position).
+**The terminal position of Wythoff's game with a pass.** Let $\mathcal{G}_1(x, y, p)$ be the
+Grundy numbers of Wythoff's game with a pass, where $p = 1$ means the pass is still available.
+Then $\mathcal{G}_1(0, 0, p) = 0$ for both $p = 0$ and $p = 1$: the terminal position $(0, 0)$
+has Grundy number $0$ with or without the pass available, since the pass is not allowed from a
+terminal position.
 
 ## Depends on
 
-- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Grundy numbers of Wythoff's game with a pass](wythoff-pass-grundy.md)
 
 ## Proof depends on
 
-- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
-- [Wythoff Extra Move Grundy eq](wythoff-extra-move-grundy-eq.md)
+- [Grundy numbers of Wythoff's game with an extra move](wythoff-extra-move-grundy.md)
+- [Mex recursion for the Grundy numbers of Wythoff's game with an extra move](wythoff-extra-move-grundy-eq.md)
 
 ## Sources
 

@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.relativePosition_self_coding_iff_clone_thueMorse
 ---
 
-# Theorem 72
+# Characterization of the cloned Thue–Morse words by their relative positions
 
-**Theorem 72.** For `k > 1`, `φ_k(t)` is the only word `w ∈ a𝒲` with `w = r(1) r(2) ⋯` on the
-letters `a = k`, `b = -k`.
+**Characterization of the cloned Thue–Morse words by their relative positions.** Let $k > 1$
+be an integer, let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that starts
+with $a$ and in which both letters occur infinitely often, and let $r$ be its relative position
+function. Then $r(n) = k$ when $\ell_{n-1} = a$ and $r(n) = -k$ when $\ell_{n-1} = b$, for all
+$n \ge 1$, if and only if $w = \varphi_k(t)$, the word whose letter at position $i$ is
+$t_{\lfloor i/k \rfloor}$, where $t = abbabaab\cdots$ is the Thue–Morse word (the Thue–Morse
+sequence with $0$ read as $a$ and $1$ as $b$).
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Relative position function](relative-position.md)
 - [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources

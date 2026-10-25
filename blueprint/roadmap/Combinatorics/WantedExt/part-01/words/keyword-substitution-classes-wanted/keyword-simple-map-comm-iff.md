@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.keywordSimpleMap_comm_iff
 ---
 
-# Keyword Simple Map comm iff
+# When two simple maps commute
 
-Commutation of simple maps: for letters `i < j` with `j + m < n` (the paper's
-`i < j ≤ n - m`, `1`-indexed) and `Δ = j - i`, `φ_i ∘ φ_j = φ_j ∘ φ_i` if and only if
-the length-`(m + 1 - Δ)` prefix of `a` is neither the length-`(m + 1 - Δ)` suffix of `a`
-nor its negation, or the lines of action are disjoint (`Δ ≥ m + 1`).
+**When two simple maps commute.** Let $a$ be a keyword of length $m + 1$ and let $n$ be a
+natural number. Let $i < j$ be natural numbers with $j + m < n$, and put $\Delta = j - i$. The
+simple maps $\varphi_i$ and $\varphi_j$ of $a$ on binary words of length $n$ satisfy
+$\varphi_i \circ \varphi_j = \varphi_j \circ \varphi_i$ if and only if $\Delta \ge m + 1$, or the
+prefix of $a$ of length $m + 1 - \Delta$ differs both from the suffix of $a$ of length
+$m + 1 - \Delta$ and from the letterwise negation of that suffix.
+
+In the paper's numbering, which counts letters from $1$, the hypothesis reads $i < j \le n - m$.
 
 ## Depends on
 
-- [Keyword Simple Map](keyword-simple-map.md)
+- [Simple map](keyword-simple-map.md)
 
 ## Sources
 

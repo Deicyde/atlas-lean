@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.genC
 ---
 
-# Gen C
+# Constant of the generator's time bound
 
-The constant of the time bound: depends on the layout and `N` only.
+**Constant of the generator's time bound.** For a layout $L$ with label/state block size $A$,
+$K$ stacks, $g$ symbol codes and window depth $d$, and for $N$ situations, the constant is
+$323\,(A + K + g + d + N + 1)^5$.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Sources
 

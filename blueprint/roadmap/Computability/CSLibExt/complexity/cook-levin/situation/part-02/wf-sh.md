@@ -24,7 +24,7 @@ Shift / overflow / pushed-fill family is well-formed.
 
 ## Proof depends on
 
-- [Layout](../../family/layout.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
 - [Dec O](../part-01/dec-o.md)
 - [G](../part-01/g.md)
 - [G pos](g-pos.md)

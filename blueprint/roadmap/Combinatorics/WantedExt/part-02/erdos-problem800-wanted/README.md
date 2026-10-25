@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem800
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 800 on linear Ramsey numbers](conjecture.md)
+- [Alon's theorem on linear Ramsey numbers](conjecture-holds.md)

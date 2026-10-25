@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.boolFunConcat
 ---
 
-# Bool Fun Concat
+# Concatenation of Boolean functions
 
-The concatenation `f = g || h` of two `n`-variable functions: the
-`(n+1)`-variable function whose truth table is that of `g` followed by that
-of `h`, i.e. `f(x₁, …, x_{n+1}) = x̄₁ g(x₂, …) ⊕ x₁ h(x₂, …)`; here `x₁` is
-the coordinate `0`.
+**Concatenation of Boolean functions.** The concatenation $g \,\|\, h$ of two $n$-variable
+Boolean functions $g$ and $h$ is the $(n+1)$-variable function whose truth table is that of $g$
+followed by that of $h$: its value at $(x_1, x_2, \dots, x_{n+1})$ is $g(x_2, \dots, x_{n+1})$ if
+$x_1 = 0$ and $h(x_2, \dots, x_{n+1})$ if $x_1 = 1$. Equivalently,
+$(g \,\|\, h)(x) = \bar{x}_1 g(x_2, \dots, x_{n+1}) \oplus x_1 h(x_2, \dots, x_{n+1})$.
 
 ## Depends on
 

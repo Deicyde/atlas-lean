@@ -6,12 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree
 ---
 
-# Large Chromatic Triangle Free Wheel Free
+# Triangle-free wheel-free graphs of large chromatic number (proposition)
 
-The complete finite-graph existence assertion in Davies's Corollary 2.
-The witnesses are finite simple graphs, enumerated by `Fin n`. Triangle-freeness
-is Mathlib's `CliqueFree 3`; its extended-natural chromatic number is finite
-for these vertex types. The threshold is any positive integer.
+**Triangle-free wheel-free graphs of large chromatic number (proposition).** This is the
+proposition that for every positive integer $k$ there are a natural number $n$ and a simple
+graph $G$ on the vertex set $\{0, \dots, n - 1\}$ such that $G$ contains no triangle, $G$ is
+wheel-free (it has no induced wheel) and the chromatic number of $G$ is at least $k$.
+
+Since $G$ is finite, its chromatic number is finite.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wheel Free](wheel-free.md)
+- [Wheel-free graphs](wheel-free.md)
 
 ## Sources
 

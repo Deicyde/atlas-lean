@@ -6,27 +6,30 @@ proof: formalized
 lean: Cslib.BusyBeaver.ZFCPresentation.decidesHalting_le_five
 ---
 
-# Decides Halting le five
+# ZFC-like theories decide halting through five states
 
-A ZFC-like presentation decides halting for machines with at most
-five states: run each machine for the proved Busy Beaver bound; if it
-has halted, the computation verifies, and if it has not, the bound
-derives its non-halting sentence.
+**ZFC-like theories decide halting through five states.** For every ZFC-like presentation
+$Z$ and every $n \le 5$, the theory presented by $Z$ decides halting for $n$-state machines: for
+every $n$-state machine it proves the machine's halting sentence or its non-halting sentence.
+
+Proof idea: let $S$ be Rado's shift function; $Z$ proves the runtime bound $S(n)$ for
+halting $n$-state machines. Run each machine for $S(n)$ steps; if it has halted, the
+computation verifies, and if it has not, the bound derives its non-halting sentence.
 
 ## Depends on
 
-- [Decides Halting](decides-halting.md)
-- [Formal Theory](formal-theory.md)
-- [ZFCPresentation](zfcpresentation.md)
+- [Theories deciding halting at a state count](decides-halting.md)
+- [Formal theory](formal-theory.md)
+- [Proof-checker presentation of a ZFC-like theory](zfcpresentation.md)
 
 ## Proof depends on
 
-- [Halts Within](halts-within.md)
-- [Machine](machine.md)
-- [Bound Sentence](bound-sentence.md)
-- [Busy Beaver Steps](busy-beaver-steps.md)
-- [Halts Sentence](halts-sentence.md)
-- [Not Halts Sentence](not-halts-sentence.md)
+- [Halting within $t$ steps](halts-within.md)
+- [Busy Beaver machine](machine.md)
+- [Runtime-bound sentence](bound-sentence.md)
+- [Busy Beaver shift function](busy-beaver-steps.md)
+- [Halting sentence of a machine](halts-sentence.md)
+- [Non-halting sentence of a machine](not-halts-sentence.md)
 
 ## Sources
 

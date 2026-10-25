@@ -5,9 +5,15 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Assembly.Phi
 ---
 
-# Phi
+# The formula emitted by the host
 
-The formula the host emits: the five families of `five_iff`, at `H = capH m T (depth M)`.
+**The formula emitted by the host.** Let $M$ be a finite multi-stack Turing machine with
+encoding data $E$, let $x$ and $Y$ be lists of input symbols, let $\mathit{acc}$ be an output
+symbol, and let $m, T \in \mathbb{N}$. Let $H = m + (T + 1) d + 1$ be the stack cap, where $d$ is
+the window depth of $M$. The CNF formula $\Phi(x, Y, \mathit{acc}, m, T)$ is the concatenation, in
+this order, of the accept family for $\mathit{acc}$, the shift family, the situation-definition
+family, the update family, and the init family for $x$, $Y$ and $m$, all at run length $T$ and
+stack cap $H$.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ The formula the host emits: the five families of `five_iff`, at `H = capH m T (d
 
 ## Proof depends on
 
-- [Family](../family/family.md)
-- [The family](../shift/sh-family.md)
+- [The transition clause family](../family/family.md)
+- [The cell-shift clause family](../shift/sh-family.md)
 - [N](../situation/part-01/n.md)
 - [The accept family](../situation/part-07/acc-family.md)
 - [Cn](../situation/part-02/cn.md)

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isSylverNPosition_of_ender
 ---
 
-# Is Sylver NPosition of ender
+# Enders with largest legal move above 1 are N-positions
 
-An ender `M` with `F(M) > 1` is an N-position. `F(M)` is given as the greatest element `F`
-of `L(M)`.
+**Enders with largest legal move above 1 are N-positions.** Let $M$ be a position of Sylver
+Coinage whose set of legal moves $L(M)$ has a greatest element $F$ with $F > 1$. If every end of
+$M$ equals $F$ (that is, $M$ is an ender), then $M$ is an N-position.
 
 ## Depends on
 
-- [Is Sylver End](is-sylver-end.md)
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Sylver Legal Moves](sylver-legal-moves.md)
+- [Ends of a Sylver Coinage position](is-sylver-end.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [Legal moves in Sylver Coinage](sylver-legal-moves.md)
 
 ## Sources
 

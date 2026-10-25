@@ -6,20 +6,23 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FangXiaTilingWanted.Combinatorics.FangXiaTilingProblem.IsPartitionTransitive
 ---
 
-# Is Partition Transitive
+# λ-transitive sets of permutations
 
-λ-transitivity in the Martin–Sagan sense: every pair of ordered
-set partitions of shape `λ` is connected by exactly a fixed positive
-number of elements of `Y`.
+**λ-transitive sets of permutations.** Let $\lambda$ be a partition of $n$ with row lengths
+$\lambda_0 \ge \dots \ge \lambda_{k-1}$. A set $Y$ of permutations of $\{0, \dots, n-1\}$ is
+$\lambda$-transitive, in the sense of Martin and Sagan, if there is a positive integer $r$ such
+that for any two ordered set partitions $P = (P_0, \dots, P_{k-1})$ and
+$Q = (Q_0, \dots, Q_{k-1})$ of $\{0, \dots, n-1\}$ of shape $\lambda$, exactly $r$ permutations
+$\sigma \in Y$ satisfy $\sigma(P_i) = Q_i$ for every $i$.
 
 ## Depends on
 
-- [Partition Shape](partition-shape.md)
+- [Integer partition as a list of row lengths](partition-shape.md)
 
 ## Proof depends on
 
-- [Ordered Set Partition](ordered-set-partition.md)
-- [Sends Partition](sends-partition.md)
+- [Ordered set partition of shape λ](ordered-set-partition.md)
+- [Permutation sending one ordered set partition to another](sends-partition.md)
 
 ## Sources
 

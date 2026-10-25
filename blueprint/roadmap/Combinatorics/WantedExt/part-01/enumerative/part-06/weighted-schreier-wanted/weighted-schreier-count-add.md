@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedSchreierCount_add
 ---
 
-# Weighted Schreier Count add
+# Weighted Schreier counts on and above the diagonal
 
-Second case of Theorem 1.2: for `k ≥ 2` and `ℓ ≥ 0`,
-`a_{k,k+ℓ} = 2 ∑_{i=0}^{k-2} C(ℓ,i) F_{k-i} + 2 C(ℓ,k-1) + ∑_{j=1}^{ℓ} C(j, ℓ-j+k)`.
+**Weighted Schreier counts on and above the diagonal.** Let $a_{k,n}$ be the weighted
+Schreier count and let $F_n$ denote the Fibonacci numbers, with $F_0 = 0$ and $F_1 = 1$. For all
+$k \ge 2$ and $\ell \ge 0$,
+$a_{k,k+\ell} = 2\sum_{i=0}^{k-2} \binom{\ell}{i} F_{k-i} + 2\binom{\ell}{k-1} +
+\sum_{j=1}^{\ell} \binom{j}{\ell-j+k}$.
 
 ## Depends on
 
-- [Weighted Schreier Count](weighted-schreier-count.md)
+- [Weighted Schreier-type sets](weighted-schreier-count.md)
 
 ## Sources
 

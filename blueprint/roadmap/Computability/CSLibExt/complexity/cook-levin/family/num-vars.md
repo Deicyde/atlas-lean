@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.Layout.numVars
 ---
 
-# Num Vars
+# Number of variables of the transition-clause formula
 
-Number of variables `V = (T + 1) · W`.
+**Number of variables of the transition-clause formula.** For a layout $L$ and bounds $T$
+and $H$, the number of variables is $V = (T + 1) \cdot W$, where $W$ is the number of variables
+per time step at height $H$.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Proof depends on
 
-- [Row W](row-w.md)
+- [Variables per time step](row-w.md)
 
 ## Sources
 

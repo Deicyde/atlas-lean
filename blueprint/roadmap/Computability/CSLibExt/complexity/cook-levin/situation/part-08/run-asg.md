@@ -15,7 +15,7 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.runAsg
 
 ## Proof depends on
 
-- [Num Vars](../../family/num-vars.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
 - [The real run's literals](run-lit.md)
 - [Layout](../part-01/layout.md)
 

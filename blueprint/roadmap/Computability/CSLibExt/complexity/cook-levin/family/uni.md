@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Complexity.CookLevin.Family.Layout.uni
 ---
 
-# Uni
+# Uniform layout
 
-Layout with every constant equal to `k`.
+**Uniform layout.** For $k \in \mathbb{N}$, the layout whose label/state block size, number of
+stacks, number of symbol codes and window depth are all equal to $k$.
 
 ## Depends on
 
-- [Layout](layout.md)
+- [Variable layout of the transition clauses](layout.md)
 
 ## Sources
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.orientedHead
 ---
 
-# Oriented Head
+# Head of an oriented edge
 
-The head of an edge after applying the chosen reorientation.
+**Head of an oriented edge.** Each edge $e$ of the multigraph has a reference direction from
+its first endpoint to its second endpoint, and an orientation chooses for each edge whether to
+reverse it. The head of $e$ is its second endpoint if $e$ is not reversed and its first endpoint
+if $e$ is reversed.
 
 ## Depends on
 

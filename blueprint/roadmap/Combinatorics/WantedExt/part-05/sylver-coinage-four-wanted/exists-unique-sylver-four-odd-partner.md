@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_sylver_four_odd_partner
 ---
 
-# Exists Unique sylver four odd partner
+# Odd numbers above 3 have a unique odd partner after 4
 
-Every odd `q > 3` is the winning reply to exactly one N-position `{4, x}` with `x` odd.
+**Odd numbers above 3 have a unique odd partner after 4.** For every odd natural number
+$q > 3$ there is exactly one odd natural number $x$ such that $\{4, x\}$ is an N-position and
+$\{4, x, q\}$ is a P-position.
 
 ## Depends on
 
-- [Is Sylver NPosition](is-sylver-nposition.md)
-- [Is Sylver PPosition](is-sylver-pposition.md)
+- [N-positions of Sylver Coinage](is-sylver-nposition.md)
+- [P-positions of Sylver Coinage](is-sylver-pposition.md)
 
 ## Sources
 

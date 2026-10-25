@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Automata.PDA.initConfig
 ---
 
-# Init Config
+# Initial configuration
 
-The initial configuration for input `w`.
+**Initial configuration.** The initial configuration of a pushdown automaton $M$ on an input
+word $w$ has the start state of $M$ as its state, all of $w$ as its remaining input, and the
+stack consisting of the initial stack symbol of $M$ alone.
 
 ## Depends on
 
-- [PDA](pda.md)
-- [Config](config.md)
+- [Pushdown automaton](pda.md)
+- [Pushdown automaton configuration](config.md)
 
 ## Sources
 

@@ -6,26 +6,26 @@ navigation: module
 
 ## Basic automata
 
-- [Zero Aut](zero-aut.md)
-- [One Aut](one-aut.md)
-- [Char Aut](char-aut.md)
+- [The ε-NFA with no states](zero-aut.md)
+- [One-state automaton](one-aut.md)
+- [Single-letter automaton](char-aut.md)
 
 ## Union
 
-- [Union](union.md)
+- [Union of ε-NFAs](union.md)
 
 ## Concatenation
 
-- [Concat](concat.md)
+- [Concatenation of ε-NFAs](concat.md)
 
 ## Kleene star
 
-- [Star](star.md)
+- [Kleene star of an ε-NFA](star.md)
 
 ## The construction
 
-- [State](state.md)
+- [States of Thompson's automaton](state.md)
 - [Thompson's construction](to-nfa.md)
 - [Correctness of Thompson's construction](accepts-to-nfa.md)
-- [Num States](num-states.md)
-- [Card state](card-state.md)
+- [Thompson state count](num-states.md)
+- [Number of states of Thompson's automaton](card-state.md)

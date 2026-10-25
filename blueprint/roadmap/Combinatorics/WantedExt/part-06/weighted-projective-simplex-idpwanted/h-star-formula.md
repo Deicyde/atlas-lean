@@ -7,9 +7,13 @@ lean: MetaMathlibExt.hStarFormula
 
 # H Star Formula
 
-The explicit polynomial `∑_{b=0}^{∑qᵢ} z^{w(q,b)}` from Theorem 5.
-It is named a formula, not defined to be `h*`; Theorem 5 relates it to the
-independently defined Ehrhart-series condition.
+**The $h^*$ formula of a weight vector.** For a list $q = (q_1, \dots, q_n)$ of natural
+numbers, put $|q| = q_1 + \dots + q_n$ and define the weight statistic
+$w(q,b) = b - \sum_{i=1}^n \lfloor q_i b / (1 + |q|) \rfloor$. The $h^*$ formula of $q$ is the
+integer polynomial $\sum_{b=0}^{|q|} z^{w(q,b)}$.
+
+It is named a formula, not defined to be $h^*$; Theorem 5 relates it to the independently
+defined Ehrhart-series condition.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Weight Statistic](weight-statistic.md)
+- [The weight statistic](weight-statistic.md)
 
 ## Sources
 

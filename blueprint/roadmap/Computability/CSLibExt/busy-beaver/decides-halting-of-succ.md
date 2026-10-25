@@ -18,12 +18,12 @@ one sentence code does not formally imply provability of another.
 
 ## Depends on
 
-- [Decides Halting](decides-halting.md)
-- [Formal Theory](formal-theory.md)
-- [Machine](machine.md)
-- [Embed Machine](embed-machine.md)
-- [Halts Sentence](halts-sentence.md)
-- [Not Halts Sentence](not-halts-sentence.md)
+- [Theories deciding halting at a state count](decides-halting.md)
+- [Formal theory](formal-theory.md)
+- [Busy Beaver machine](machine.md)
+- [Embedding a machine into one more state](embed-machine.md)
+- [Halting sentence of a machine](halts-sentence.md)
+- [Non-halting sentence of a machine](not-halts-sentence.md)
 
 ## Sources
 

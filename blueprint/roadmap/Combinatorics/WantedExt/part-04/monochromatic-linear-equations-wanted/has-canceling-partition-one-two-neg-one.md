@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.hasCancelingPartition_one_two_neg_one_neg_two
 ---
 
-# Has Canceling Partition one two neg one neg two
+# A canceling partition for $x_1 + 2x_2 - x_3 - 2x_4 = 0$
 
-`x₁ + 2x₂ - x₃ - 2x₄ = 0` has a canceling partition.
+**A canceling partition for $x_1 + 2x_2 - x_3 - 2x_4 = 0$.** The equation
+$x_1 + 2x_2 - x_3 - 2x_4 = 0$, with coefficient vector $(1, 2, -1, -2)$, has a canceling
+partition.
 
 ## Depends on
 
-- [Has Canceling Partition](has-canceling-partition.md)
+- [Canceling partition](has-canceling-partition.md)
 
 ## Sources
 

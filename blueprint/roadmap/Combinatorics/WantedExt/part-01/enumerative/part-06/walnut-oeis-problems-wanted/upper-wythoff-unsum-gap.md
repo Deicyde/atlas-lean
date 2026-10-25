@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.upperWythoffUnsumGap
 ---
 
-# Upper Wythoff Unsum Gap
+# Gaps between unsums
 
-The `i`-th gap between consecutive unsums (counted from zero), `a(i + 2) - a(i + 1)` for the
-unsums `a(1) < a(2) < ⋯` of OEIS A260317; this is OEIS A260311 shifted by one.
+**Gaps between unsums.** Let $a_1 < a_2 < \cdots$ be the unsums (OEIS A260317): the
+positive integers that are not a sum $p + q$ of upper Wythoff numbers $p < q$. For $i \ge 0$,
+the $i$-th gap between consecutive unsums (counted from zero) is $a_{i+2} - a_{i+1}$; this
+is OEIS A260311 shifted by one.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Upper Wythoff Unsum](is-upper-wythoff-unsum.md)
+- [Unsums of upper Wythoff numbers](is-upper-wythoff-unsum.md)
 
 ## Sources
 

@@ -14,13 +14,13 @@ states of the product of the subset-construction DFAs of the Thompson automata.
 
 ## Depends on
 
-- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Thompson state count](../../../automata/epsilon-na/thompson/num-states.md)
 
 ## Proof depends on
 
-- [State](../../../automata/epsilon-na/thompson/state.md)
+- [States of Thompson's automaton](../../../automata/epsilon-na/thompson/state.md)
 - [Correctness of Thompson's construction](../../../automata/epsilon-na/thompson/accepts-to-nfa.md)
-- [Card state](../../../automata/epsilon-na/thompson/card-state.md)
+- [Number of states of Thompson's automaton](../../../automata/epsilon-na/thompson/card-state.md)
 - [Thompson's construction](../../../automata/epsilon-na/thompson/to-nfa.md)
 - [Symm Diff](../regular/symm-diff.md)
 

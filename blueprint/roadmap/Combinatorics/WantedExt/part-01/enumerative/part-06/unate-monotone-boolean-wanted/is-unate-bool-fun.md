@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsUnateBoolFun
 ---
 
-# Is Unate Bool Fun
+# Unate Boolean function
 
-A unate Boolean function: monotone increasing or monotone decreasing in
-each variable.
+**Unate Boolean function.** A Boolean function $f$ on $n$ variables, with Boolean values
+$0 < 1$, is unate when for each variable $i$ either $f$ is increasing in $x_i$ (changing $x_i$
+from $0$ to $1$, with the other variables fixed, never decreases the value of $f$) or $f$ is
+decreasing in $x_i$ (that change never increases the value of $f$).
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bool Fun Decreasing In](is-bool-fun-decreasing-in.md)
-- [Is Bool Fun Increasing In](is-bool-fun-increasing-in.md)
+- [Boolean functions decreasing in a variable](is-bool-fun-decreasing-in.md)
+- [Boolean functions increasing in a variable](is-bool-fun-increasing-in.md)
 
 ## Sources
 

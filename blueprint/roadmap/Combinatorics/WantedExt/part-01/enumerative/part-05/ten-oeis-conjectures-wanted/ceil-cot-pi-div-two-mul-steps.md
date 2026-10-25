@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ceil_cot_pi_div_two_mul_steps
 ---
 
-# Ceil cot pi div two mul steps
+# The ceiling of $\cot(\pi/(2m))$ rises in steps of $0$ or $1$
 
-Let `g(m) = ⌈cot (π / (2m))⌉` for `m ≥ 1`. Then `g` is nondecreasing on `m ≥ 1`, each step
-`g(m+1) - g(m)` is `0` or `1`, and every `n ≥ 1` is attained `g(m) = n` by one or two `m ≥ 1`.
+**The ceiling of $\cot(\pi/(2m))$ rises in steps of $0$ or $1$.** For $m \ge 1$ let
+$g(m) = \lceil \cot(\pi/(2m)) \rceil$. Then for every $m \ge 1$, $g(m) \le g(m+1)$ and
+$g(m+1) - g(m) \in \{0, 1\}$; and for every integer $n \ge 1$, the number of $m \ge 1$ with
+$g(m) = n$ is $1$ or $2$.
 
 ## Depends on
 

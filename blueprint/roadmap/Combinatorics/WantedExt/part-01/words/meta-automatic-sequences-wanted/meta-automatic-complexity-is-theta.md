@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.metaAutomatic_complexity_isTheta
 ---
 
-# Meta Automatic complexity is Theta
+# The meta-automatic sequences have linear factor complexity
 
-Proposition 34: `p_{ℳ₁}(n) = Θ(n)` and `p_{ℳ₂}(n) = Θ(n)`.
+**The meta-automatic sequences have linear factor complexity.** Let $p_{\mathcal{M}_1}$ and
+$p_{\mathcal{M}_2}$ be the factor complexities of the meta-automatic sequences $\mathcal{M}_1$
+and $\mathcal{M}_2$. Then $p_{\mathcal{M}_1}(n) = \Theta(n)$ and $p_{\mathcal{M}_2}(n) = \Theta(n)$
+as $n \to \infty$: for each $i \in \{1, 2\}$ there are real constants $c, C > 0$ with
+$c n \le p_{\mathcal{M}_i}(n) \le C n$ for all sufficiently large $n$.
 
 ## Depends on
 
-- [Meta Automatic One](meta-automatic-one.md)
-- [Meta Automatic Two](meta-automatic-two.md)
+- [The meta-automatic sequence $\mathcal{M}_1$](meta-automatic-one.md)
+- [The meta-automatic sequence $\mathcal{M}_2$](meta-automatic-two.md)
 - [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

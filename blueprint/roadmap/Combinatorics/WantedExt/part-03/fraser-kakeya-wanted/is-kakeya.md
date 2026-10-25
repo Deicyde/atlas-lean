@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.FraserKakeyaWanted.Combinatorics.FraserKakeyaProblem.IsKakeya
 ---
 
-# Is Kakeya
+# Kakeya set
 
-A **Kakeya set**: it contains a line in every direction.
+**Kakeya set.** Let $F$ be a finite field and $d$ a natural number. A set $K \subseteq F^d$ is a
+Kakeya set if for every $x \in F^d$ there is $y \in F^d$ such that the affine line
+$\{y + a x : a \in F\}$ is contained in $K$; that is, $K$ contains a line in every direction.
 
 ## Depends on
 
-- [Space](space.md)
+- [Coordinate space](space.md)
 
 ## Proof depends on
 
-- [Affine Line](affine-line.md)
+- [Affine line](affine-line.md)
 
 ## Sources
 

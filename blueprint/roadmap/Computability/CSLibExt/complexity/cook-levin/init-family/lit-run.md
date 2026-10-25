@@ -6,27 +6,35 @@ proof: formalized
 lean: Cslib.Complexity.CookLevin.InitFamily.lit_run
 ---
 
-# Lit run
+# Run of one literal routine (initial-row generator)
 
-One literal: from `P = q + gap + 1`, compute `Q := q = base + off`, prepend the gap and the
-slot, leave `P = q` and the scratch counters empty.
+**Run of one literal routine (initial-row generator).** For a layout and a list of $n$
+certificate codes, let $c$ be a clause kind with base counter $b$, let $l < n + 2$ be a literal
+index with offset $\mathrm{off}(l)$, and let $F$ be counter values whose scratch counters $Q$,
+$\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let $\gamma \in \mathbb{N}$, let
+$q = F(b) + \mathrm{off}(l)$ and suppose $F(P) = q + \gamma + 1$. Then for every output $o$ and
+flag $v$, the counter program runs in at most $\gamma(3q + 6) + 2F(b) + 4q + 9$ steps from the
+first stage of the routine for literal $l$ of $c$, with flag $v$, counters $F$ and output $o$, to
+the label before literal $l$ (the routine for literal $l - 1$, or the leading gap if $l = 0$),
+with flag false, counters $F$ except $P = q$, and output $s \cdot (01)^{\gamma} \cdot o$, where
+$s$ is the slot code of the sign of literal $l$.
 
 ## Depends on
 
-- [SK](../counter-view/sk.md)
-- [SΓ](../counter-view/s.md)
-- [St](../counter-view/st.md)
-- [Layout](../family/layout.md)
-- [CK](ck.md)
-- [CL](cl.md)
-- [Bc](bc.md)
-- [Off](off.md)
-- [Sg](sg.md)
-- [GL](gl.md)
-- [After](after.md)
-- [LS](ls.md)
-- [Lb](lb.md)
-- [Rest](rest.md)
+- [Stacks of a counter machine](../counter-view/sk.md)
+- [Alphabets of a counter machine](../counter-view/s.md)
+- [Stacks holding given counter values](../counter-view/st.md)
+- [Variable layout of the transition clauses](../family/layout.md)
+- [Counters of the initial-row generator](ck.md)
+- [Clause kinds of the initial-row generator](cl.md)
+- [Base counter of a clause kind (initial-row generator)](bc.md)
+- [Literal offsets](off.md)
+- [Literal signs of an init-family clause kind](sg.md)
+- [Labels of the initial-row generator](gl.md)
+- [Label after a literal routine (initial-row generator)](after.md)
+- [Stages of the literal routine](ls.md)
+- [Labels of the initial-row generator](lb.md)
+- [Empty scratch counters](rest.md)
 - [Prog](prog.md)
 - [Encode Slot](../../dense-sat/encode-slot.md)
 - [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
@@ -34,8 +42,8 @@ slot, leave `P = q` and the scratch counters empty.
 
 ## Proof depends on
 
-- [Gap S](../counter-view/gap-s.md)
-- [PH](ph.md)
+- [Gap emission in the counter view](../counter-view/gap-s.md)
+- [Loop phases of the initial-row generator](ph.md)
 - [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 - [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 - [Run](../../../../MathlibExt/turing-machine/program/run.md)

@@ -12,7 +12,7 @@ lean: Cslib.Complexity.CookLevin.Situation.clauseSat_dense
 
 ## Depends on
 
-- [Dense Clause](../../family/dense-clause.md)
+- [Dense clause from a list of literals](../../family/dense-clause.md)
 - [Clause Sat](../../../dense-sat/clause-sat.md)
 
 ## Proof depends on

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_quot_keywordEquiv_eq_sum_mStepFibonacci
 ---
 
-# Card quot keyword Equiv eq sum m Step Fibonacci
+# Keyword classes are counted by partial sums of $m$-step Fibonacci numbers
 
-Main theorem: for `n, m ≥ 1` and every keyword `a` of length `m + 1`, the number of
-`∼_a`-classes of binary words of length `n` is `F_0^(m) + F_1^(m) + ⋯ + F_n^(m)`.
+**Keyword classes are counted by partial sums of $m$-step Fibonacci numbers.** Let
+$m, n \ge 1$ and let $F_0, F_1, F_2, \dots$ be the $m$-step Fibonacci numbers: $F_0 = 1$,
+$F_k = 2^{k-1}$ for $1 \le k \le m - 1$, and $F_k = F_{k-1} + F_{k-2} + \dots + F_{k-m}$ for
+$k \ge m$. Then for every binary keyword $a$ of length $m + 1$, the number of equivalence
+classes of the relation $\sim_a$ on binary words of length $n$ is $F_0 + F_1 + \dots + F_n$.
 
 ## Depends on
 
-- [Keyword Equiv](keyword-equiv.md)
+- [Keyword equivalence of binary words](keyword-equiv.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.BusyBeaver.HaltsWithin
 ---
 
-# Halts Within
+# Halting within $t$ steps
 
-The machine has halted within `t` steps.
+**Halting within $t$ steps.** A Busy Beaver machine $M$ with $n$ working states halts within
+$t$ steps when the configuration reached after running $M$ for $t$ steps from the initial
+blank-tape configuration is in the halt state.
 
 ## Depends on
 
-- [Machine](machine.md)
+- [Busy Beaver machine](machine.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Run](run.md)
+- [Busy Beaver machine configuration](config.md)
+- [Configuration after $t$ steps](run.md)
 
 ## Sources
 

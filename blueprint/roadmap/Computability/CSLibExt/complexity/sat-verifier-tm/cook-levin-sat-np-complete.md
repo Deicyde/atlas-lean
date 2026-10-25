@@ -21,7 +21,7 @@ statement of the former `theorem_wanted` `MetaMathlibExt.cook_levin_SAT_np_compl
 
 ## Proof depends on
 
-- [Cook-Levin for `satDec`, given a polynomial-time verifier](../cook-levin/binary-hardness/cook-levin-sat-np-complete-of-is-poly-ti.md)
+- [Cook–Levin for binary-index CNF-SAT, given a polynomial-time verifier](../cook-levin/binary-hardness/cook-levin-sat-np-complete-of-is-poly-ti.md)
 - [`satVerifier` is polynomial-time](is-poly-time-sat-verifier.md)
 
 ## Sources

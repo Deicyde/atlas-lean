@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Omega](omega.md)
+- [The sum $\Omega(\alpha, j)$](omega.md)
 
 ## Sources
 

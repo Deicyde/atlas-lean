@@ -5,20 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.pisa_letterPosition_identity
 ---
 
-# Theorem 57
+# Position identities for the extended Pisa substitution
 
-**Theorem 57.** For `k, m ≥ 1`, `l ≥ 0` and `w` the one-sided fixed point of the extended Pisa
-substitution `σ_{k,l,m}` (`a ↦ a^k b a^l`, `b ↦ a^m`):
-`p_b(n) = m p_a(n) + (k+l+1-m) n + m - l - 1` and `r(n) = (m-1) p_a(n) + (k+l+1-m) n + m - l - 1`
-for `n ≥ 1`; and `w` is the unique word of `𝒲` whose relative position function satisfies the
-second identity.
+**Position identities for the extended Pisa substitution.** Let $k \ge 1$, $l \ge 0$ and
+$m \ge 1$ be natural numbers, let $\sigma$ be the substitution $a \mapsto a^k b a^l$,
+$b \mapsto a^m$, and let $w$ be a one-sided fixed point of $\sigma$ (so $\sigma(w) = w$) that
+begins with $a$. For an infinite word $v$ over $\{a, b\}$ and $n \ge 1$, let $p_a(n)$ and
+$p_b(n)$ be the positions (counted from $0$) of the $n$-th $a$ and the $n$-th $b$ in $v$, and let
+$r(n) = p_b(n) - p_a(n)$. Then for $v = w$ and every $n \ge 1$,
+
+$$p_b(n) = m\,p_a(n) + (k + l + 1 - m)n + m - l - 1$$
+
+and
+
+$$r(n) = (m - 1)p_a(n) + (k + l + 1 - m)n + m - l - 1.$$
+
+Moreover, every infinite word $v$ over $\{a, b\}$ in which both letters occur infinitely often
+and whose functions $r$ and $p_a$ satisfy the second identity for all $n \ge 1$ equals $w$.
 
 ## Depends on
 
-- [Both Letters Infinite](both-letters-infinite.md)
-- [Is Substitution Image](is-substitution-image.md)
-- [Letter Position](letter-position.md)
-- [Relative Position](relative-position.md)
+- [Binary words in which both letters occur infinitely often](both-letters-infinite.md)
+- [Image of an infinite word under a substitution](is-substitution-image.md)
+- [Position function of a letter](letter-position.md)
+- [Relative position function](relative-position.md)
 
 ## Sources
 

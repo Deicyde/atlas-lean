@@ -24,9 +24,9 @@ theorem FamPos.allTrue {V : ℕ} {φ : CNF} (h : FamPos V φ) : cnfSat φ (List.
 
 ## Depends on
 
-- [Layout](../../family/layout.md)
-- [Num Vars](../../family/num-vars.md)
-- [Row W](../../family/row-w.md)
+- [Variable layout of the transition clauses](../../family/layout.md)
+- [Number of variables of the transition-clause formula](../../family/num-vars.md)
+- [Variables per time step](../../family/row-w.md)
 
 ## Sources
 

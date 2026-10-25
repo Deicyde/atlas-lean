@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_boundedDiffSet_card_div_sqrt_tendsto
 ---
 
-# Exists bounded Diff Set card div sqrt tendsto
+# Lower-bound construction for sets with bounded difference multiplicities
 
-Lower bound construction: for fixed `g ≥ 1` there are sets `A_n ⊆ [n]` with
-`r_{A_n - A_n}(x) ≤ g` for all nonzero `x` and `|A_n| = (1 - o(1)) √(gn)`.
+**Lower-bound construction for sets with bounded difference multiplicities.** For every
+integer $g \ge 1$ there are finite sets $A_n \subseteq \{1, \dots, n\}$ of integers, one for each
+$n \in \mathbb{N}$, such that for every $n$ each nonzero integer $x$ equals $a - a'$ for at most
+$g$ ordered pairs $(a, a') \in A_n \times A_n$, and $|A_n| / \sqrt{gn} \to 1$ as $n \to \infty$.
 
 ## Depends on
 
-- [Sub Rep Count](sub-rep-count.md)
+- [Difference representation function](sub-rep-count.md)
 
 ## Sources
 

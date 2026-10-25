@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.rightSpecialFactors_const_false
 ---
 
-# Right Special Factors const false
+# The all-zero word has no right-special factors
 
-A constant word has no right-special factors.
+**The all-zero word has no right-special factors.** For every natural number $n$, the
+infinite binary word $000\cdots$ has no right-special factors of length $n$.
 
 ## Depends on
 
-- [Right Special Factors](right-special-factors.md)
+- [Right-special factors](right-special-factors.md)
 
 ## Proof depends on
 

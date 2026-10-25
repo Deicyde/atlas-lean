@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.pattern3
 ---
 
-# Pattern3
+# Length-three pattern from one-line values
 
-A length-`3` pattern from its zero-based one-line values, e.g.
-`pattern3 ![0, 2, 1]` is the pattern `132`; bijectivity is checked by `decide`.
+**Length-three pattern from one-line values.** Given a bijection $v$ from $\{0, 1, 2\}$ to
+itself, this is the permutation of $\{0, 1, 2\}$ that sends $i$ to $v(i)$. The values are listed
+zero-based, so $v = (0, 2, 1)$ gives the pattern $132$ in the usual one-based one-line notation.
 
 ## Depends on
 

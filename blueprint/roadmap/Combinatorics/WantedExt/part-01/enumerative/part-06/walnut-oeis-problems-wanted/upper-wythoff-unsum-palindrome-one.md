@@ -6,20 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.upperWythoffUnsumPalindrome_one
 ---
 
-# Upper Wythoff Unsum Palindrome one
+# The first palindrome
 
-The first palindrome is `W_1 = 3`.
+**The first palindrome.** Let $g_k$ be the $k$-th gap between consecutive unsums
+(OEIS A260317), counted from zero, and let $m_0 < m_1 < \cdots$ be the markers, the indices
+$k \ge 10$ with $g_k = 2$, in increasing order. The word $W_1$ of the gaps $g_k$ with
+$m_0 < k < m_1$, in increasing order of $k$, consists of the single digit $3$.
 
 ## Depends on
 
-- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
+- [The words $W_i$ of the unsum gap sequence](upper-wythoff-unsum-palindrome.md)
 
 ## Proof depends on
 
-- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
-- [Upper Wythoff Unsum Gap small](upper-wythoff-unsum-gap-small.md)
-- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
-- [Upper Wythoff Unsum Marker zero one](upper-wythoff-unsum-marker-zero-one.md)
+- [Gaps between unsums](upper-wythoff-unsum-gap.md)
+- [The first thirteen gaps between unsums](upper-wythoff-unsum-gap-small.md)
+- [Markers in the gaps between unsums](upper-wythoff-unsum-marker.md)
+- [The first two markers](upper-wythoff-unsum-marker-zero-one.md)
 
 ## Sources
 

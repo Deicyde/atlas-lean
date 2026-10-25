@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.endpoint
 ---
 
-# Endpoint
+# Endpoint of a direction word
 
-The endpoint reached by following a finite word of directions from the origin.
+**Endpoint of a direction word.** For a finite word $d_1 d_2 \cdots d_k$ of direction labels
+in $\{0, 1, 2\}$, its endpoint is the vertex reached from the origin by taking the step in
+direction $d_1$, then the step in direction $d_2$, and so on through $d_k$. The endpoint of the
+empty word is the origin.
 
 ## Depends on
 
-- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Vertices of the honeycomb lattice](honeycomb-vertex.md)
 
 ## Proof depends on
 
-- [Origin](origin.md)
-- [Step](step.md)
+- [Origin of the honeycomb lattice](origin.md)
+- [Steps in the honeycomb lattice](step.md)
 
 ## Sources
 

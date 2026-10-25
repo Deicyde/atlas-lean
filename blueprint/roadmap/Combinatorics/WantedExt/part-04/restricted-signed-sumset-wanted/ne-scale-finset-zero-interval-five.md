@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.ne_scaleFinset_zeroInterval_five
 ---
 
-# Ne scale Finset zero Interval five
+# $\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$
 
-`{0,1,2,4,6}` is not a dilated interval `d * [0,4]`: `1` forces `d = ±1`, and then `6` is
-out of reach.
+**$\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$.** For every integer $d$, the
+set $\{0, 1, 2, 4, 6\}$ differs from the dilation
+$d \cdot \{0, 1, 2, 3, 4\} = \{0, d, 2d, 3d, 4d\}$.
+
+Indeed, $1 = di$ with $0 \le i \le 4$ forces $d = \pm 1$, and then $6$ is not of the form $di$.
 
 ## Depends on
 
-- [Scale Finset](scale-finset.md)
-- [Zero Interval](zero-interval.md)
+- [Dilation of a finite set of integers](scale-finset.md)
+- [Zero-based integer interval](zero-interval.md)
 
 ## Sources
 

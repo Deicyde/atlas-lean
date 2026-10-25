@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.stirlingVMatrix_inv
 ---
 
-# Stirling VMatrix inv
+# Explicit inverse of the bidiagonal matrix V(n)
 
-Lemma 1: `V(n)⁻¹ = Ṽ(n)`.
+**Explicit inverse of the bidiagonal matrix V(n).** For every natural number $n$, let $V(n)$ be
+the $n \times n$ rational upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and
+all other entries $0$, and let $\tilde V(n)$ be the upper triangular matrix with
+$\tilde V(n)_{i,j} = (-1)^{j-i} (i-1)!/j!$ for $j \ge i$ and $\tilde V(n)_{i,j} = 0$ for $j < i$,
+all indices running over $1, \dots, n$. Then $V(n)^{-1} = \tilde V(n)$.
 
 ## Depends on
 
-- [Stirling VMatrix](stirling-vmatrix.md)
-- [Stirling VTilde Matrix](stirling-vtilde-matrix.md)
+- [Upper bidiagonal matrix V(n)](stirling-vmatrix.md)
+- [Upper triangular matrix Ṽ(n)](stirling-vtilde-matrix.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.slowANim_one_two_four_isP_iff
 ---
 
-# Slow ANim one two four is P iff
+# P-positions of Slow $\{1,2\}$-Nim on four stacks
 
-Theorem 3 (2): for `A = {1, 2}` and `n = 4`, a position in canonical form is a
-P-position iff its parity pattern is `(e,e,e,e)` or `(e,o,o,o)`.
+**P-positions of Slow $\{1,2\}$-Nim on four stacks.** In Slow $A$-Nim with $A = \{1, 2\}$
+on four stacks, let $p = (p_0, p_1, p_2, p_3)$ be a position with
+$p_0 \le p_1 \le p_2 \le p_3$. Then $p$ is a P-position if and only if either all four stack
+heights are even, or $p_0$ is even and $p_1$, $p_2$, $p_3$ are odd.
 
 ## Depends on
 
 - [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
-- [Slow ANim Game](slow-anim-game.md)
+- [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources
 

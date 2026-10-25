@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.stirlingQMatrix_apply_of_le
 ---
 
-# Stirling QMatrix apply of le
+# Vanishing of $Q^{(N)}(n)$ on and below the diagonal
 
-`Q^[N](n)` vanishes on and below the diagonal.
+**Vanishing of $Q^{[N]}(n)$ on and below the diagonal.** For natural numbers $N$ and $n$, let
+$Q^{[N]}(n)$ be the $n \times n$ rational matrix with
+$Q^{[N]}(n)_{i,j} = (-1)^{j-i+1} i^{N-1} / ((i-1)!\,(j-i-1)!)$ for $1 \le i < j \le n$ and $0$
+otherwise, where $N - 1$ is truncated subtraction. Then $Q^{[N]}(n)_{i,j} = 0$ for all indices
+$1 \le j \le i \le n$.
 
 ## Depends on
 
-- [Stirling QMatrix](stirling-qmatrix.md)
+- [Strictly upper triangular matrix $Q^{(N)}(n)$](stirling-qmatrix.md)
 
 ## Sources
 

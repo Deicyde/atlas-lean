@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.finite_idp_reflexive_multiplicities
 ---
 
-# Finite idp reflexive multiplicities
+# Finitely many reflexive IDP multiplicity vectors
 
-Theorem 3: for a fixed increasing positive support with some earlier entry
-not dividing the last, the set of positive multiplicity vectors producing
-reflexive IDP simplices is finite.
+**Finitely many reflexive IDP multiplicity vectors.** Let $r_1 < r_2 < \dots < r_d$ be
+positive integers such that $r_j \nmid r_d$ for some $j < d$. Then there are only finitely
+many vectors $x = (x_1, \dots, x_d)$ of positive integers for which the weighted projective
+simplex $\Delta_{(1,q)}$ is reflexive and has the integer decomposition property, where
+$q = (r_1^{x_1}, \dots, r_d^{x_d})$ consists of $x_1$ copies of $r_1$, then $x_2$ copies of
+$r_2$, and so on, ending with $x_d$ copies of $r_d$.
 
 ## Depends on
 
-- [Has IDP](has-idp.md)
-- [Is Reflexive](is-reflexive.md)
-- [Expand Support](expand-support.md)
-- [Weighted Simplex List](weighted-simplex-list.md)
+- [Integer decomposition property](has-idp.md)
+- [Reflexive polytopes](is-reflexive.md)
+- [Expansion of support values with multiplicities](expand-support.md)
+- [Weighted projective space simplex of a list of weights](weighted-simplex-list.md)
 
 ## Sources
 
