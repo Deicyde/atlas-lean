@@ -33,9 +33,11 @@ and so vanishes on `[0, 1]`.
 
 Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
 `SpectralTheory.sturm_liouville_uniqueness`
-(Theorem, Section on solving the Dirichlet problem). The v1 existence
-statement `SpectralTheory.sturm_liouville_existence` is not proved in v1
-and is not ported here; only the fully proved uniqueness part is.
+(Theorem, Section on solving the Dirichlet problem).
+This module ports the fully proved v1 uniqueness theorem. The v1 existence
+statement `SpectralTheory.sturm_liouville_existence` is left unproved; an
+independent proof is formalized in
+`MathlibExt/Analysis/ODE/SturmLiouvilleExistence.lean`.
 -/
 
 /-- **Uniqueness for the Sturm–Liouville Dirichlet problem on `[0, 1]`:**
