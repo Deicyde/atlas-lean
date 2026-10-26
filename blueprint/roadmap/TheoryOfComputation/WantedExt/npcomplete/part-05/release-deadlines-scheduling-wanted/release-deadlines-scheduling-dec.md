@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ReleaseDeadlinesScheduling.releaseDeadlinesSchedulingDec
 ---
 
-# Release Deadlines Scheduling Dec
+# Single-machine scheduling with release times and deadlines as a decision problem
 
-SINGLE-MACHINE SCHEDULING WITH RELEASE TIMES AND DEADLINES as a decision problem over
-bitstrings.
+**Single-machine scheduling with release times and deadlines as a decision problem.**
+SINGLE-MACHINE SCHEDULING WITH RELEASE TIMES AND DEADLINES is the decision problem that accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
+release-deadlines instances, to a feasible instance. Bitstrings that do not decode to an instance
+are rejected.
 
 ## Depends on
 
@@ -24,8 +27,8 @@ bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Release Deadlines Scheduling Feasible](release-deadlines-scheduling-feasible.md)
-- [Release Deadlines Scheduling Instance](release-deadlines-scheduling-instance.md)
+- [Feasible single-machine schedules with release times and deadlines](release-deadlines-scheduling-feasible.md)
+- [Instances of single-machine scheduling with release times and deadlines](release-deadlines-scheduling-instance.md)
 
 ## Sources
 

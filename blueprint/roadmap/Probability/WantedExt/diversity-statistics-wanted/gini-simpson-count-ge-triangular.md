@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge_triangular
 ---
 
-# Proposition 5
+# Triangular-number lower bound on the number of Gini–Simpson values
 
-**Proposition 5**: `γ(N)` is bounded below by
-`(1 / 3) m (m^2 + 3r - 1) + 1`, where `N = C(m + 1, 2) + r`
-with `0 ≤ r ≤ m`.
+**Triangular-number lower bound on the number of Gini–Simpson values.** Let $\gamma(N)$ be the
+number of distinct values of $a_1^2 + \dots + a_k^2$ over all finite sequences $(a_1, \dots, a_k)$
+of natural numbers with $a_1 + \dots + a_k = N$ (for $N \ge 1$, the number of possible values of the
+Gini–Simpson index across samples of size $N$). Let $m$ and $r$ be natural numbers with $r \le m$,
+and let $N = \binom{m+1}{2} + r$. Then
+
+$$\tfrac{1}{3} m (m^2 + 3r - 1) + 1 \le \gamma(N).$$
 
 ## Depends on
 
-- [Gini Simpson Count](gini-simpson-count.md)
+- [Number of values of the Gini–Simpson index](gini-simpson-count.md)
 
 ## Sources
 

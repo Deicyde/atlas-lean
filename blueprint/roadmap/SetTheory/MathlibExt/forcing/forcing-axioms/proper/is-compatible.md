@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatible
 ---
 
-# Is Compatible
+# Compatible conditions
 
-Two conditions p,q∈ ℙ are compatible if there is a condition r∈ ℙ such that r≤ p and r≤ q
+**Compatible conditions.** Two elements $p$ and $q$ of a partial order $\mathbb{P}$ are
+compatible if there is $r \in \mathbb{P}$ with $r \le p$ and $r \le q$.
 
 ## Depends on
 

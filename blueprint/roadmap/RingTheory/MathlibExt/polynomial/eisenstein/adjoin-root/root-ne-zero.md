@@ -7,9 +7,12 @@ proof: formalized
 lean: AdjoinRoot.root_ne_zero
 ---
 
-# Root ne zero
+# The adjoined root of an Eisenstein polynomial is nonzero
 
-The root of a monic Eisenstein polynomial of positive degree is nonzero.
+**The adjoined root of an Eisenstein polynomial is nonzero.** Let $A$ be a local integral
+domain with maximal ideal $\mathfrak m$, let $f \in A[X]$ be a monic polynomial of positive degree
+that is Eisenstein with respect to $\mathfrak m$, and let $\alpha$ be the image of $X$ in
+$A[X]/(f)$. Then $\alpha \neq 0$.
 
 ## Depends on
 

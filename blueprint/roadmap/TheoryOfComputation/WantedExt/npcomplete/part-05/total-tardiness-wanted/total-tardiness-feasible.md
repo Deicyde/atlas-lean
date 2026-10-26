@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.TotalTardiness.TotalTardinessFeasible
 ---
 
-# Total Tardiness Feasible
+# Feasible TOTAL TARDINESS instances
 
-An ordering of total tardiness at most `K`.
+**Feasible TOTAL TARDINESS instances.** An instance $(J, K)$ of TOTAL TARDINESS with $n$ jobs
+is feasible when some ordering of its jobs, that is, some permutation $(j_1, \dots, j_n)$ of
+$(0, 1, \dots, n - 1)$, has total tardiness at most $K$.
 
 ## Depends on
 
-- [Total Tardiness Instance](total-tardiness-instance.md)
+- [Instances of TOTAL TARDINESS](total-tardiness-instance.md)
 
 ## Proof depends on
 
-- [Total Tardiness Value](total-tardiness-value.md)
+- [Total tardiness of a job order](total-tardiness-value.md)
 
 ## Sources
 

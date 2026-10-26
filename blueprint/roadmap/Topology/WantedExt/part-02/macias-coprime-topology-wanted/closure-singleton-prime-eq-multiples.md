@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.closure_singleton_prime_eq_multiples
 ---
 
-# Lemma 1
+# Closure of a prime in Macías's coprime topology
 
-**Lemma 1**: if `p` is a prime number, then the closure of
-`{p}` in `X` is `pℕ`, the set of multiples of `p`.
+**Closure of a prime in Macías's coprime topology.** If $p$ is a prime number, then the
+closure of $\{p\}$ in the positive integers with Macías's coprime topology is the set of
+positive integers divisible by $p$.
 
 ## Depends on
 
-- [Macias Topology](macias-topology.md)
+- [Macías's coprime topology](macias-topology.md)
 
 ## Sources
 

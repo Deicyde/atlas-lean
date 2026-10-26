@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumFillIn.WellFormed
 ---
 
-# Well Formed
+# Well-formed MINIMUM FILL-IN instances
 
-Well-formedness of an instance.
+**Well-formed MINIMUM FILL-IN instances.** An instance $(n, E, K)$ of MINIMUM FILL-IN is well
+formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ satisfies
+$u < n$, $v < n$ and $u \ne v$, and its reverse $(v, u)$ does not belong to $E$.
 
 ## Depends on
 
-- [Minimum Fill In Instance](minimum-fill-in-instance.md)
+- [Instances of MINIMUM FILL-IN](minimum-fill-in-instance.md)
 
 ## Sources
 

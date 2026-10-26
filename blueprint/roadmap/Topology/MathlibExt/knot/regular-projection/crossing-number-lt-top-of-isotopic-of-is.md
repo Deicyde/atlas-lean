@@ -6,22 +6,23 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.crossingNumber_lt_top_of_isotopic_of_isRegularProjection
 ---
 
-# Crossing Number lt top of isotopic of is Regular Projection
+# Finiteness of the crossing number
 
-If some isotopic representative admits a regular projection, the
-crossing number of the type is finite.
+**Finiteness of the crossing number.** Let $L$ and $L'$ be oriented labeled parametrized links
+with $n$ components. If $L'$ is ambient isotopic to $L$ and the standard projection of $L'$ to
+the plane is regular, then the crossing number of $L$ is finite.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Isotopic](../euclidean-link/isotopic-2.md)
-- [Crossing Number](crossing-number.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Regular projections](is-regular-projection.md)
+- [Isotopy of parametrized links](../euclidean-link/isotopic-2.md)
+- [Crossing number of a link](crossing-number.md)
 
 ## Proof depends on
 
-- [Crossing Count](crossing-count-2.md)
-- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
+- [Crossing count of a regular projection](crossing-count-2.md)
+- [Regular projections of isotopic links bound the crossing number](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

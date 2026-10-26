@@ -6,9 +6,13 @@ proof: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparison.one_le_of_isAdmissibleConstant
 ---
 
-# One le of is Admissible Constant
+# Admissible comparison constants are at least one
 
-The standard Gaussian's quadratic test forces every comparator to be at least one.
+**Admissible comparison constants are at least one.** Every admissible comparison constant
+$C$ satisfies $C \ge 1$.
+
+The proof applies the comparison to a standard Gaussian variable and the convex test function
+$x \mapsto x^2$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ The standard Gaussian's quadratic test forces every comparator to be at least on
 
 ## Proof depends on
 
-- [Convex Dominated](convex-dominated.md)
-- [Is One Sub Gaussian Tail](is-one-sub-gaussian-tail.md)
+- [Convex domination](convex-dominated.md)
+- [Random variables with a 1-sub-Gaussian tail](is-one-sub-gaussian-tail.md)
 
 ## Sources
 

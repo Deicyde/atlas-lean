@@ -5,13 +5,13 @@ navigation: module
 
 # Prime To
 
-- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
-- [Is Prime To](is-prime-to.md)
-- [Is Prime To one](is-prime-to-one.md)
-- [Mul](mul.md)
-- [Inv unit](inv-unit.md)
-- [Units Prime To](units-prime-to.md)
-- [Mem units Prime To iff](mem-units-prime-to-iff.md)
-- [Mono](mono.md)
-- [Units Prime To mono](units-prime-to-mono.md)
-- [Units Prime To top](units-prime-to-top.md)
+- [Non-zero-divisors stay non-zero-divisors in a localization at a prime](non-zero-divisors-le-comap-algebra-map-a.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
+- [The unit fractional ideal is prime to every ideal](is-prime-to-one.md)
+- [Products of fractional ideals prime to an ideal](mul.md)
+- [Inverses of invertible fractional ideals prime to an ideal](inv-unit.md)
+- [Invertible fractional ideals prime to an ideal](units-prime-to.md)
+- [Membership in the subgroup of units prime to an ideal](mem-units-prime-to-iff.md)
+- [Prime to an ideal implies prime to every larger ideal](mono.md)
+- [Monotonicity of the subgroups of units prime to an ideal](units-prime-to-mono.md)
+- [Every invertible fractional ideal is prime to the unit ideal](units-prime-to-top.md)

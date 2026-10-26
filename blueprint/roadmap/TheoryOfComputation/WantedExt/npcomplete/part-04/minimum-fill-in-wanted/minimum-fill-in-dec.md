@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumFillIn.minimumFillInDec
 ---
 
-# Minimum Fill In Dec
+# The MINIMUM FILL-IN (CHORDAL COMPLETION) problem
 
-MINIMUM FILL-IN (CHORDAL COMPLETION) as a decision problem over bitstrings.
+**The MINIMUM FILL-IN (CHORDAL COMPLETION) problem.** The decision problem MINIMUM FILL-IN
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to an
+instance $(n, E, K)$ of MINIMUM FILL-IN that is well formed and feasible.
 
 ## Depends on
 
@@ -23,9 +25,9 @@ MINIMUM FILL-IN (CHORDAL COMPLETION) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Minimum Fill In Feasible](minimum-fill-in-feasible.md)
-- [Minimum Fill In Instance](minimum-fill-in-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MINIMUM FILL-IN instances](minimum-fill-in-feasible.md)
+- [Instances of MINIMUM FILL-IN](minimum-fill-in-instance.md)
+- [Well-formed MINIMUM FILL-IN instances](well-formed.md)
 
 ## Sources
 

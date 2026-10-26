@@ -4,9 +4,9 @@ navigation: module
 
 # Proper
 
-- [Model Conds](model-conds.md)
-- [Model Sets](model-sets.md)
-- [Is Compatible](is-compatible.md)
-- [Is Predense Below](is-predense-below.md)
-- [Is Generic For](is-generic-for.md)
-- [Is Proper Forcing](is-proper-forcing.md)
+- [Conditions in a model](model-conds.md)
+- [Sets of conditions in a model](model-sets.md)
+- [Compatible conditions](is-compatible.md)
+- [Predense below a condition](is-predense-below.md)
+- [(M, ℙ)-generic conditions](is-generic-for.md)
+- [Proper partial orders](is-proper-forcing.md)

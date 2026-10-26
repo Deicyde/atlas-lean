@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.β₂
 ---
 
-# Β₂
+# The notation $\beta_2$
 
-The source notation `β_2`, definitionally equal to the real BHH constant.
+**The notation $\beta_2$.** We write $\beta_2$ for the real-valued Beardwood–Halton–Hammersley
+constant of the unit square.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Beardwood Halton Hammersley Constant](beardwood-halton-hammersley-constant.md)
+- [Beardwood–Halton–Hammersley constant](beardwood-halton-hammersley-constant.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_subset
 ---
 
-# Conductor Ideal subset
+# The conductor ideal lies in the subalgebra
 
-The conductor ideal is contained in the subalgebra.
+**The conductor ideal lies in the subalgebra.** Let $R$ be a commutative semiring, $S$ a
+commutative $R$-algebra and $A$ an $R$-subalgebra of $S$. Then the conductor ideal of $A$ is
+contained in $A$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Le conductor Ideal iff](le-conductor-ideal-iff.md)
+- [Universal property of the conductor ideal](le-conductor-ideal-iff.md)
 
 ## Sources
 

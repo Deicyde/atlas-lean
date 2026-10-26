@@ -6,20 +6,22 @@ statement: formalized
 lean: MathlibExt.Topology.AnnulusShared.LocallyFlat
 ---
 
-# Locally Flat
+# Locally flat maps of the sphere
 
-An embedding `c : Sⁿ⁻¹ → ℝⁿ` is **locally flat** if near every image point
-there is an ambient partial homeomorphism of `ℝⁿ` carrying the image of the
-sphere locally onto the model hyperplane.
+**Locally flat maps of the sphere.** Let $n \ge 1$, let $S^{n-1} \subseteq \mathbb{R}^n$ be the
+unit sphere and let $H = \{x \in \mathbb{R}^n : x_0 = 0\}$ be the model hyperplane. A map
+$c : S^{n-1} \to \mathbb{R}^n$ is locally flat if for every point $p \in S^{n-1}$ there are open
+sets $U, V \subseteq \mathbb{R}^n$ with $c(p) \in U$ and a homeomorphism $h : U \to V$ such that
+$h(U \cap c(S^{n-1})) = V \cap H$.
 
 ## Depends on
 
-- [Amb](amb.md)
-- [Sph](sph.md)
+- [Ambient Euclidean space](amb.md)
+- [Unit sphere in Euclidean space](sph.md)
 
 ## Proof depends on
 
-- [Model Hyperplane](model-hyperplane.md)
+- [Model hyperplane](model-hyperplane.md)
 
 ## Sources
 

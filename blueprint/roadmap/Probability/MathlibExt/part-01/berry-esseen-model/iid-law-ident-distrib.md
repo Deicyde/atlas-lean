@@ -7,18 +7,21 @@ proof: formalized
 lean: BerryEsseenModel.iidLaw_identDistrib
 ---
 
-# Iid Law ident Distrib
+# Coordinates of the i.i.d. product are distributed like the original law
 
-Each coordinate is identically distributed with the identity on its real law.
+**Coordinates of the i.i.d. product are distributed like the original law.** Let $\mu$ be a
+standardized law on $\mathbb{R}$ and let $i$ be a natural number. The coordinate map
+$\omega \mapsto \omega_i$ on $\mathbb{R}^{\mathbb{N}}$ under the i.i.d. product law of $\mu$ and
+the identity map of $\mathbb{R}$ under $\mu$ are identically distributed.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Iid Law](iid-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [I.i.d. product law](iid-law.md)
 
 ## Proof depends on
 
-- [Iid Law map eval](iid-law-map-eval.md)
+- [Coordinate laws of the i.i.d. product](iid-law-map-eval.md)
 
 ## Sources
 

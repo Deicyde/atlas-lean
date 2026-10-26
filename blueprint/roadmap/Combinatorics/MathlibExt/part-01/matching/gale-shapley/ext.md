@@ -20,7 +20,7 @@ $x, y \in \alpha$, then $T = T'$.
 
 ## Proof depends on
 
-- [Ext](../../../../../Order/MathlibExt/strict-total-order/ext.md)
+- [Strict total orders are determined by their relation](../../../../../Order/MathlibExt/strict-total-order/ext.md)
 
 ## Sources
 

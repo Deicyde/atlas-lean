@@ -7,13 +7,14 @@ lean: MetaMathlibExt.Complexity.NPComplete.FeedbackVertexSet.feedbackVertexSet_n
 
 # FEEDBACK VERTEX SET is NP-complete
 
-**FEEDBACK VERTEX SET is NP-complete.** Source: M. R. Garey and D. S. Johnson, *Computers
-and Intractability* (1979), FEEDBACK VERTEX SET.
+**FEEDBACK VERTEX SET is NP-complete.** The decision problem FEEDBACK VERTEX SET belongs to
+NP, and every decision problem in NP reduces to FEEDBACK VERTEX SET by a polynomial-time
+many-one reduction.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Feedback Vertex Set Dec](feedback-vertex-set-dec.md)
+- [FEEDBACK VERTEX SET as a decision problem](feedback-vertex-set-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +22,4 @@ and Intractability* (1979), FEEDBACK VERTEX SET.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.FeedbackVertexSetWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), FEEDBACK VERTEX SET.

@@ -5,20 +5,21 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.ropelength
 ---
 
-# Ropelength
+# Ropelength of a parametrized link
 
-The ropelength of an oriented labeled ambient-isotopy type,
-represented by `L`: the infimum of ropelength ratios over all isotopic
-parametrized representatives.
+**Ropelength of a parametrized link.** For a parametrized link $L$ with $n$ components, the
+ropelength of $L$ is the infimum, in $[0, \infty]$, of the ropelength ratios of all parametrized
+links $L'$ with $n$ components that are isotopic to $L$. It is the ropelength of the oriented,
+labeled ambient-isotopy type of $L$.
 
 ## Depends on
 
-- [Parametrized Link](parametrized-link.md)
+- [Parametrized link](parametrized-link.md)
 
 ## Proof depends on
 
-- [Isotopic](isotopic-2.md)
-- [Ropelength Ratio](ropelength-ratio.md)
+- [Isotopy of parametrized links](isotopic-2.md)
+- [Ropelength ratio of a parametrized link](ropelength-ratio.md)
 
 ## Sources
 

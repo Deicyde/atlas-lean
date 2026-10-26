@@ -7,13 +7,14 @@ proof: formalized
 lean: IsThreeManifold.locallyCompactSpace
 ---
 
-# Locally Compact Space
+# Topological 3-manifolds are locally compact
 
-A topological 3-manifold is locally compact, since `ℝ³` is.
+**Topological 3-manifolds are locally compact.** Every topological 3-manifold $M$ is locally
+compact, since $\mathbb{R}^3$ is.
 
 ## Depends on
 
-- [Is Three Manifold](is-three-manifold.md)
+- [Topological 3-manifold](is-three-manifold.md)
 
 ## Sources
 

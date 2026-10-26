@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Minesweeper.minesweeperDec
 ---
 
-# Minesweeper Dec
+# Minesweeper consistency as a decision problem
 
-MINESWEEPER CONSISTENCY as a decision problem over bitstrings.
+**Minesweeper consistency as a decision problem.** The Minesweeper consistency decision
+problem accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding,
+to a Minesweeper instance that is well formed and feasible, that is, admits a mine placement
+consistent with all of its clues. It rejects every bitstring that does not decode to a Minesweeper
+instance.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ MINESWEEPER CONSISTENCY as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Minesweeper Feasible](minesweeper-feasible.md)
-- [Minesweeper Instance](minesweeper-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible Minesweeper instances](minesweeper-feasible.md)
+- [Minesweeper instances](minesweeper-instance.md)
+- [Well-formed Minesweeper instances](well-formed.md)
 
 ## Sources
 

@@ -7,14 +7,16 @@ proof: formalized
 lean: BerryEsseenModel.iidLaw_probability
 ---
 
-# Iid Law probability
+# The i.i.d. product of a standardized law is a probability measure
 
-The canonical product is a probability measure on admissible laws.
+**The i.i.d. product of a standardized law is a probability measure.** If $\mu$ is a
+standardized law on $\mathbb{R}$, then the i.i.d. product law of $\mu$ on $\mathbb{R}^{\mathbb{N}}$
+is a probability measure.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Iid Law](iid-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [I.i.d. product law](iid-law.md)
 
 ## Sources
 

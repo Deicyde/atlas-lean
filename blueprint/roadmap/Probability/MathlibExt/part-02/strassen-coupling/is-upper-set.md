@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.StrassenCouplingWanted.IsUpperSet
 ---
 
-# Is Upper Set
+# Finite upper sets
 
-`U` is upward-closed / an upper set: `x ∈ U` and `x ≤ y` implies `y ∈ U`.
+**Finite upper sets.** A finite subset $U$ of a preordered set $\alpha$ is an upper set (is
+upward closed) if for all $x, y \in \alpha$ with $x \in U$ and $x \le y$, also $y \in U$.
 
 ## Depends on
 

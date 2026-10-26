@@ -7,25 +7,31 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.bodyLogConcaveLaw_isotropicConstant
 ---
 
-# Body Log Concave Law isotropic Constant
+# The entropy and volume isotropic constants of a convex body agree
 
-The body and entropy conventions agree on the actual uniform body law.
+**The entropy and volume isotropic constants of a convex body agree.** Let $n \ge 1$ and let
+$K \subseteq \mathbb{R}^n$ be a full-dimensional convex body of Lebesgue measure
+$\mathrm{Vol}(K)$, with uniform probability measure $\lambda_K$, uniform density $f_K$, and
+covariance matrix $C_K$ of the coordinates under $\lambda_K$. Then the entropy isotropic constant
+of the uniform law of $K$ equals the isotropic constant of $K$, that is,
+$\exp\big(\frac{1}{n} \int_{\mathbb{R}^n} f_K(x) \log f_K(x) \, dx\big) (\det C_K)^{1/(2n)} =
+\big(\det C_K / \mathrm{Vol}(K)^2\big)^{1/(2n)}$.
 
 ## Depends on
 
-- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
-- [Body Isotropic Constant](../isotropic-constant/body-isotropic-constant.md)
-- [Body Log Concave Law](body-log-concave-law.md)
-- [Law Isotropic Constant](../isotropic-constant/law-isotropic-constant.md)
+- [Full-dimensional convex body](../isotropic-constant/full-dimensional-body.md)
+- [Isotropic constant of a convex body](../isotropic-constant/body-isotropic-constant.md)
+- [Uniform law of a convex body](body-log-concave-law.md)
+- [Isotropic constant of a log-concave law](../isotropic-constant/law-isotropic-constant.md)
 
 ## Proof depends on
 
-- [Log Concave Law](../isotropic-constant/log-concave-law.md)
-- [Body Density entropy](body-density-entropy.md)
-- [Body Law](../isotropic-constant/body-law.md)
-- [Covariance Matrix](../isotropic-constant/covariance-matrix.md)
-- [Covariance Matrix pos Semidef](../isotropic-constant/covariance-matrix-pos-semidef.md)
-- [Differential Entropy](../isotropic-constant/differential-entropy.md)
+- [Log-concave law](../isotropic-constant/log-concave-law.md)
+- [Entropy of the uniform density of a convex body](body-density-entropy.md)
+- [Uniform distribution on a convex body](../isotropic-constant/body-law.md)
+- [Covariance matrix](../isotropic-constant/covariance-matrix.md)
+- [Covariance matrices of log-concave laws are positive semidefinite](../isotropic-constant/covariance-matrix-pos-semidef.md)
+- [Differential entropy](../isotropic-constant/differential-entropy.md)
 
 ## Sources
 

@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.PrecedenceWeightedCompletion.precedenceWeightedCompletionDec
 ---
 
-# Precedence Weighted Completion Dec
+# SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE as a decision problem
 
-SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE as a decision problem over bitstrings.
+**SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE as a decision problem.** The decision
+problem accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding,
+to an instance $(J, P, K)$ that is well formed and feasible: every precedence pair in $P$ consists
+of two distinct job indices of $J$, and some ordering of all the jobs that puts the first job of
+every precedence pair before the second has total weighted completion time at most $K$.
+Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +28,9 @@ SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE as a decision problem over bi
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Precedence Weighted Completion Feasible](precedence-weighted-completion-feasible.md)
-- [Precedence Weighted Completion Instance](precedence-weighted-completion-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible weighted completion instances](precedence-weighted-completion-feasible.md)
+- [Instances of single-machine weighted completion with precedence](precedence-weighted-completion-instance.md)
+- [Well-formed weighted completion instances](well-formed.md)
 
 ## Sources
 

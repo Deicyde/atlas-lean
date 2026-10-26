@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.AmbientIsotopy.comp
 ---
 
-# Comp
+# Composition of ambient isotopies
 
-Composition of ambient isotopies: first `Φ`, then `Ψ`, at the same
-time parameter.
+**Composition of ambient isotopies.** If $\Phi$ and $\Psi$ are smooth ambient isotopies of
+$\mathbb{R}^3$ with forward families $H_t, H'_t$ and inverse families $G_t, G'_t$, their
+composition (first $\Phi$, then $\Psi$, at the same time parameter) is the ambient isotopy
+with forward family $H'_t \circ H_t$ and inverse family $G_t \circ G'_t$.
 
 ## Depends on
 
-- [Ambient Isotopy](ambient-isotopy.md)
+- [Smooth ambient isotopy of Euclidean 3-space](ambient-isotopy.md)
 
 ## Proof depends on
 

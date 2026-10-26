@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BoundedOccurrenceThreeSat.boundedOccurrenceThreeSatDec
 ---
 
-# Bounded Occurrence Three Sat Dec
+# 3-SAT with bounded occurrences as a decision problem
 
-3-SAT WITH BOUNDED OCCURRENCES as a decision problem over bitstrings.
+**3-SAT with bounded occurrences as a decision problem.** The decision problem 3-SAT WITH
+BOUNDED OCCURRENCES accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding of bounded-occurrence 3-SAT instances, to an instance that is well formed and
+satisfiable; it rejects every other bitstring, including every bitstring that does not decode.
 
 ## Depends on
 
@@ -25,9 +28,9 @@ lean: MetaMathlibExt.Complexity.NPComplete.BoundedOccurrenceThreeSat.boundedOccu
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Bounded Occurrence Three Sat Feasible](bounded-occurrence-three-sat-feasible.md)
-- [Bounded Occurrence Three Sat Instance](bounded-occurrence-three-sat-instance.md)
-- [Well Formed](well-formed.md)
+- [Satisfiable bounded-occurrence 3-SAT instances](bounded-occurrence-three-sat-feasible.md)
+- [Bounded-occurrence 3-SAT instances](bounded-occurrence-three-sat-instance.md)
+- [Well-formed bounded-occurrence 3-SAT instances](well-formed.md)
 
 ## Sources
 

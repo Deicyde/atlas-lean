@@ -7,10 +7,14 @@ proof: formalized
 lean: PiFieldQuotient.exists_algEquiv_restrict
 ---
 
-# Exists alg Equiv restrict
+# Surjections from a finite product of fields are coordinate restrictions up to isomorphism
 
-A surjective algebra map out of a finite product of fields exhibits its target as
-coordinate restriction to a subfamily, up to `K`-algebra equivalence.
+**Surjections from a finite product of fields are coordinate restrictions up to isomorphism.**
+Let $K$ be a field, $\iota$ a finite type, $(F_i)_{i \in \iota}$ a family of fields that are
+$K$-algebras, and $B$ a commutative $K$-algebra. For every surjective $K$-algebra homomorphism
+$\varphi : \prod_{i \in \iota} F_i \to B$ there are a finite subset $S \subseteq \iota$ and a
+$K$-algebra isomorphism $e : B \to \prod_{i \in S} F_i$ such that $e \circ \varphi$ is the
+coordinate restriction $(x_i)_{i \in \iota} \mapsto (x_i)_{i \in S}$.
 
 ## Depends on
 
@@ -18,12 +22,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mem ker iff](mem-ker-iff.md)
-- [Mem ker restrict iff](mem-ker-restrict-iff.md)
-- [Mem selected](mem-selected.md)
-- [Restrict](restrict.md)
-- [Restrict surjective](restrict-surjective.md)
-- [Selected](selected.md)
+- [Kernel membership in a finite product of fields is componentwise](mem-ker-iff.md)
+- [Kernel of coordinate restriction](mem-ker-restrict-iff.md)
+- [Membership in the selected indices](mem-selected.md)
+- [Coordinate restriction](restrict.md)
+- [Coordinate restriction is surjective](restrict-surjective.md)
+- [Selected indices of a homomorphism](selected.md)
 
 ## Sources
 

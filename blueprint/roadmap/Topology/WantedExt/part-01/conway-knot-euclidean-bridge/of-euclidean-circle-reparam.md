@@ -5,13 +5,18 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotEuclideanBridge.ofEuclideanCircleReparam
 ---
 
-# Of Euclidean Circle Reparam
+# Euclidean circle reparametrizations as Conway-knot ones
 
-A canonical circle reparametrization as a trusted lean-eval one.
+**Euclidean circle reparametrizations as Conway-knot ones.** A circle reparametrization in
+the sense of parametrized links, given by a smooth strictly increasing map
+$f : \mathbb{R} \to \mathbb{R}$ with smooth two-sided inverse $g$ such that
+$f(t + 2\pi) = f(t) + 2\pi$ and $g(t + 2\pi) = g(t) + 2\pi$ for all $t$, is sent to the
+orientation-preserving smooth reparametrization of the circle in the sense of the Conway knot
+statements with the same lift $f$ and inverse lift $g$.
 
 ## Depends on
 
-- [Circle Reparam](../../../MathlibExt/knot/euclidean-link/circle-reparam.md)
+- [Orientation-preserving reparametrization of the circle](../../../MathlibExt/knot/euclidean-link/circle-reparam.md)
 
 ## Sources
 

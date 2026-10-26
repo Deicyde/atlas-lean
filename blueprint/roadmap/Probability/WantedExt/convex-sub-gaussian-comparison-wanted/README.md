@@ -6,21 +6,21 @@ navigation: module
 
 ## Convex Sub Gaussian Comparison Wanted Davis
 
-- [Standard Normal Tail](standard-normal-tail.md)
-- [Davis Power T0](davis-power-t0.md)
-- [Davis Power A](davis-power-a.md)
-- [Davis Power B](davis-power-b.md)
-- [Davis Power H](davis-power-h.md)
-- [Davis Power Solution](davis-power-solution.md)
-- [Is Valid](is-valid.md)
-- [Davis Power C0 Values](davis-power-c0-values.md)
-- [Davis Power C0](davis-power-c0.md)
+- [Standard Gaussian upper tail](standard-normal-tail.md)
+- [The Davis–Power transition threshold](davis-power-t0.md)
+- [The envelope integral $A$](davis-power-a.md)
+- [Half the envelope integral, $B$](davis-power-b.md)
+- [The function $h$ of Davis–Power](davis-power-h.md)
+- [Parameter quadruples of the Davis–Power system](davis-power-solution.md)
+- [Valid solutions of the Davis–Power system](is-valid.md)
+- [Values of $c_0$ solving the Davis–Power system](davis-power-c0-values.md)
+- [The Davis–Power constant $c_0$](davis-power-c0.md)
 
 ## Convex Sub Gaussian Comparison Wanted
 
-- [Davis Power System exists Unique](davis-power-system-exists-unique.md)
-- [Historical Finiteness Upper Bound](historical-finiteness-upper-bound.md)
-- [Davis Power Sharp Upper](davis-power-sharp-upper.md)
-- [Davis Power Sharp Lower](davis-power-sharp-lower.md)
-- [Comparison Constant eq davis Power C0 sq](comparison-constant-eq-davis-power-c0-sq.md)
-- [Davis Power Extremal Attainment](davis-power-extremal-attainment.md)
+- [Existence and uniqueness for the Davis–Power system](davis-power-system-exists-unique.md)
+- [Finiteness of the convex sub-Gaussian comparison constant](historical-finiteness-upper-bound.md)
+- [Davis–Power upper bound: $c_0^2$ is an admissible variance factor](davis-power-sharp-upper.md)
+- [Davis–Power lower bound for admissible variance factors](davis-power-sharp-lower.md)
+- [Davis–Power value of the convex sub-Gaussian comparison constant](comparison-constant-eq-davis-power-c0-sq.md)
+- [Davis–Power extremal variable](davis-power-extremal-attainment.md)

@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.leeVempala2017_width_bound
 ---
 
-# Lee Vempala2017 width bound
+# Lee–Vempala thin-shell bound
 
-Lee--Vempala's thin-shell exponent `1/4`.
+**Lee–Vempala thin-shell bound.** There are a constant $C > 0$ and an integer $N \ge 3$
+such that for every dimension $n \ge N$ the thin-shell width $\sigma_n \in [0, \infty]$ satisfies
+$\sigma_n \le C n^{1/4}$. Here $\sigma_n$ is the square root of the supremum of
+$\mathbb{E}\,(|X| - \sqrt{n})^2$ over isotropic log-concave random vectors $X$ in $\mathbb{R}^n$.
 
 ## Depends on
 
-- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
+- [Thin-shell width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

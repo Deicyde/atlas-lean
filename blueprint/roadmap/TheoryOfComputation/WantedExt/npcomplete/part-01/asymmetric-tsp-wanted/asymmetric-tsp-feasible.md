@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.AsymmetricTsp.AsymmetricTspFeasible
 ---
 
-# Asymmetric Tsp Feasible
+# Feasible asymmetric TSP instances
 
-A directed tour of total weight at most `B`.
+**Feasible asymmetric TSP instances.** An asymmetric TSP instance $(n, w, B)$ is feasible when
+there is a list $t$ of natural numbers with no repeated entries, of length $n$ and containing
+every $v < n$ (so $t$ lists the cities $0, \dots, n - 1$ in some order), whose tour length under
+$w$ is at most $B$.
 
 ## Depends on
 
-- [Asymmetric Tsp Instance](asymmetric-tsp-instance.md)
+- [Asymmetric TSP instances](asymmetric-tsp-instance.md)
 
 ## Proof depends on
 
-- [Tour Length](tour-length.md)
+- [Length of a tour in the asymmetric TSP](tour-length.md)
 
 ## Sources
 

@@ -7,11 +7,15 @@ proof: formalized
 lean: ProbabilityTheory.mgf_sq_stdGaussian
 ---
 
-# Mgf sq std Gaussian
+# Moment generating function of the square of a standard normal
 
-MGF of the square of a standard normal variable. Promoted from the private
-Johnson–Lindenstrauss development; the formula holds for all `t` with the
-convention that both sides vanish for `t ≥ 1/2`.
+**Moment generating function of the square of a standard normal.** Let $\gamma$ be the
+standard Gaussian measure on $\mathbb{R}$ (mean $0$, variance $1$). For every real $t$,
+$\int_{\mathbb{R}} e^{t x^2} \, d\gamma(x) = 1/\sqrt{1 - 2t}$.
+
+For $t \ge 1/2$ the integral diverges; the identity still holds there with the conventions that the
+integral of a non-integrable function is $0$, that $\sqrt{s} = 0$ for $s \le 0$ and that $1/0 = 0$,
+which make both sides $0$.
 
 ## Depends on
 

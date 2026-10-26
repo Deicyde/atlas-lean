@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumEquivalentDigraph.minimumEquivalentDigraphDec
 ---
 
-# Minimum Equivalent Digraph Dec
+# MINIMUM EQUIVALENT DIGRAPH as a decision problem
 
-MINIMUM EQUIVALENT DIGRAPH as a decision problem over bitstrings.
+**MINIMUM EQUIVALENT DIGRAPH as a decision problem.** The decision problem MINIMUM
+EQUIVALENT DIGRAPH accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding, to an instance of MINIMUM EQUIVALENT DIGRAPH that is well formed and
+feasible. Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ MINIMUM EQUIVALENT DIGRAPH as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Minimum Equivalent Digraph Feasible](minimum-equivalent-digraph-feasible.md)
-- [Minimum Equivalent Digraph Instance](minimum-equivalent-digraph-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MINIMUM EQUIVALENT DIGRAPH instances](minimum-equivalent-digraph-feasible.md)
+- [Instances of MINIMUM EQUIVALENT DIGRAPH](minimum-equivalent-digraph-instance.md)
+- [Well-formed MINIMUM EQUIVALENT DIGRAPH instances](well-formed.md)
 
 ## Sources
 

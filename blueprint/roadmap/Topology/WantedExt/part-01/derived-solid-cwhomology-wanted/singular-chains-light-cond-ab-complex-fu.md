@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.singularChainsLightCondAbComplexFunctor
 ---
 
-# Singular Chains Light Cond Ab Complex Functor
+# The singular chain complex as a complex of light condensed abelian groups
 
-The integral singular chain complex of a topological space, viewed as a cochain complex of
-light condensed abelian groups by applying the discrete functor degreewise and placing homological
-chain degree `n` in cohomological degree `-n`.
+**The singular chain complex as a complex of light condensed abelian groups.** This is the
+functor from topological spaces to cochain complexes of light condensed abelian groups sending a
+space $X$ to the complex whose term in degree $-n$, for $n \ge 0$, is the discrete light condensed
+abelian group on the integral singular $n$-chains $C_n(X; \mathbb{Z})$, with the singular boundary
+maps as differentials and zero in positive degrees.
 
 ## Depends on
 

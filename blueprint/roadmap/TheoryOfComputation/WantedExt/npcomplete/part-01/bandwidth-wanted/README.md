@@ -4,8 +4,8 @@ navigation: module
 
 # Bandwidth
 
-- [Bandwidth Instance](bandwidth-instance.md)
-- [Well Formed](well-formed.md)
-- [Bandwidth Feasible](bandwidth-feasible.md)
-- [Bandwidth Dec](bandwidth-dec.md)
+- [BANDWIDTH instances](bandwidth-instance.md)
+- [Well-formed BANDWIDTH instances](well-formed.md)
+- [BANDWIDTH feasibility](bandwidth-feasible.md)
+- [The BANDWIDTH decision problem](bandwidth-dec.md)
 - [BANDWIDTH is NP-complete](bandwidth-np-complete.md)

@@ -16,7 +16,7 @@ This is the paper's $g_\lambda \in \Lambda_{\mathbb{Z}_{(p)}}$, in finitely many
 
 ## Depends on
 
-- [P Equiv Class Sum](p-equiv-class-sum.md)
+- [The $p$-equivalence class sum](p-equiv-class-sum.md)
 
 ## Sources
 

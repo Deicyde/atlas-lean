@@ -4,7 +4,7 @@ navigation: module
 
 # Strong Completeness
 
-- [Is Strongly Complete](is-strongly-complete.md)
-- [Is Closed to Subgroup of surjective eta Fn](is-closed-to-subgroup-of-surjective-eta.md)
-- [Is Open to Subgroup of surjective eta Fn](is-open-to-subgroup-of-surjective-eta-fn.md)
-- [Is Strongly Complete iff bijective eta Fn](is-strongly-complete-iff-bijective-eta-f.md)
+- [Strongly complete group](is-strongly-complete.md)
+- [Finite-index normal subgroups are closed when the completion map is onto](is-closed-to-subgroup-of-surjective-eta.md)
+- [Finite-index normal subgroups are open when the completion map is onto](is-open-to-subgroup-of-surjective-eta-fn.md)
+- [Strongly complete profinite groups via the profinite completion](is-strongly-complete-iff-bijective-eta-f.md)

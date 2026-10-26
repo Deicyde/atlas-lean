@@ -21,12 +21,12 @@ finite box.
 ## Depends on
 
 - [Integer cube set](integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 
 - [Membership in the integer cube set](mem-integer-cube-set-iff.md)
-- [Unit Cube zero mem](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube-zero-mem.md)
+- [The origin lies in the unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube-zero-mem.md)
 
 ## Sources
 

@@ -41,7 +41,9 @@ theorem inversion_single (g : G) (r : R) :
     inversion R G (MonoidAlgebra.single g r) = MonoidAlgebra.single g⁻¹ r := by
   simp [inversion]
 
-/-- Applying the group-ring inversion twice is the identity. -/
+/-- **Group-ring inversion is an involution.** Let $R$ be a commutative ring, $G$ a commutative
+group and $\iota$ the inversion of the group ring $R[G]$. For every $x \in R[G]$,
+$\iota(\iota(x)) = x$. -/
 @[simp]
 theorem inversion_involution (x : MonoidAlgebra R G) : inversion R G (inversion R G x) = x := by
   ext g

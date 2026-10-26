@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ConnectedDominatingSet.ConnectedDominatingSetFeasible
 ---
 
-# Connected Dominating Set Feasible
+# Feasible CONNECTED DOMINATING SET instances
 
-A connected dominating set of at most `K` vertices.
+**Feasible CONNECTED DOMINATING SET instances.** An instance $(n, E, K)$ of CONNECTED
+DOMINATING SET is feasible when there is a set $S$ of vertices of its graph $G$ with at most $K$
+elements such that every vertex of $G$ lies in $S$ or is adjacent in $G$ to a vertex of $S$, and
+the subgraph of $G$ induced by $S$ is connected (in particular, $S$ is nonempty).
 
 ## Depends on
 
-- [Connected Dominating Set Instance](connected-dominating-set-instance.md)
+- [Instances of CONNECTED DOMINATING SET](connected-dominating-set-instance.md)
 
 ## Proof depends on
 
-- [Graph](graph.md)
+- [Graph of a CONNECTED DOMINATING SET instance](graph.md)
 
 ## Sources
 

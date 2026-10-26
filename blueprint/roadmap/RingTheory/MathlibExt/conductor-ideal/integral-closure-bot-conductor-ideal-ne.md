@@ -7,18 +7,21 @@ proof: formalized
 lean: Subalgebra.integralClosure_bot_conductorIdeal_ne_bot_iff
 ---
 
-# Integral Closure bot conductor Ideal ne bot iff
+# Finiteness of the integral closure via the conductor
 
-The finiteness characterization for the integral closure in the same
-fraction field.
+**Finiteness of the integral closure via the conductor.** Let $R$ be a Noetherian integral
+domain with fraction field $K$, and let $\overline{R}$ be the integral closure of $R$ in $K$,
+viewed as an $R$-algebra. The conductor ideal of the smallest $R$-subalgebra of $\overline{R}$
+(the image of $R$) is a nonzero ideal of $\overline{R}$ if and only if $\overline{R}$ is finitely
+generated as an $R$-module.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Bot conductor Ideal ne bot iff](bot-conductor-ideal-ne-bot-iff.md)
+- [Finiteness of an overring via its conductor](bot-conductor-ideal-ne-bot-iff.md)
 
 ## Sources
 

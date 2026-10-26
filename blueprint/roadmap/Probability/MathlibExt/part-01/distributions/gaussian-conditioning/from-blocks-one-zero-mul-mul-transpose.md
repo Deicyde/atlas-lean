@@ -6,10 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.fromBlocks_one_zero_mul_mul_transpose
 ---
 
-# From Blocks one zero mul mul transpose
+# Block-triangular congruence of a block-diagonal matrix
 
-The joint covariance `[[S, S Hᵀ], [H S, H S Hᵀ + R]]` of `(x, H x + v)` is
-`[[1, 0], [H, 1]] diag(S, R) [[1, 0], [H, 1]]ᵀ`.
+**Block-triangular congruence of a block-diagonal matrix.** Let $n$ and $p$ be finite index
+sets and let $S$, $R$ and $H$ be real matrices of sizes $n \times n$, $p \times p$ and
+$p \times n$. Let $M$ be the block matrix with block rows $(I_n, 0)$ and $(H, I_p)$, and let $D$
+be the block-diagonal matrix with diagonal blocks $S$ and $R$. Then $M D M^\top$ is the block
+matrix with block rows $(S, S H^\top)$ and $(H S, H S H^\top + R)$.
+
+When $x$ and $v$ are independent random vectors with covariances $S$ and $R$, this is the joint
+covariance of $(x, H x + v)$.
 
 ## Depends on
 

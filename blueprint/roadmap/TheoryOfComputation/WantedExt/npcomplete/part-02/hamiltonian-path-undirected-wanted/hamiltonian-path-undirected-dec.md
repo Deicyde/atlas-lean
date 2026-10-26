@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianPathUndirected.hamiltonianPathUndirectedDec
 ---
 
-# Hamiltonian Path Undirected Dec
+# HAMILTONIAN PATH (UNDIRECTED) as a decision problem
 
-HAMILTONIAN PATH (UNDIRECTED) as a decision problem over bitstrings.
+**HAMILTONIAN PATH (UNDIRECTED) as a decision problem.** The decision problem HAMILTONIAN PATH
+(UNDIRECTED) accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to an instance $(n, E)$ of undirected Hamiltonian path that is well formed and feasible;
+bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ HAMILTONIAN PATH (UNDIRECTED) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Hamiltonian Path Undirected Feasible](hamiltonian-path-undirected-feasible.md)
-- [Hamiltonian Path Undirected Instance](hamiltonian-path-undirected-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible undirected Hamiltonian path instances](hamiltonian-path-undirected-feasible.md)
+- [Instances of undirected Hamiltonian path](hamiltonian-path-undirected-instance.md)
+- [Well-formed undirected Hamiltonian path instances](well-formed.md)
 
 ## Sources
 

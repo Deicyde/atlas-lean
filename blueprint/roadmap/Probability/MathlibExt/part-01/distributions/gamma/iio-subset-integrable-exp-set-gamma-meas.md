@@ -7,10 +7,12 @@ proof: formalized
 lean: ProbabilityTheory.Iio_subset_integrableExpSet_gammaMeasure
 ---
 
-# Iio subset integrable Exp Set gamma Measure
+# Half-line of exponential integrability for the gamma distribution
 
-Below the rate, exponential moments exist; hence `Iio r` lies in the
-integrability set for MGF uniqueness.
+**Half-line of exponential integrability for the gamma distribution.** Let $a > 0$ and
+$r > 0$, and let $S$ be the set of real $t$ such that $x \mapsto e^{tx}$ is integrable with respect
+to the gamma distribution with shape $a$ and rate $r$. Then the half-line $(-\infty, r)$ is
+contained in $S$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrable exp mul gamma Measure](integrable-exp-mul-gamma-measure.md)
+- [Exponential moments of the gamma distribution](integrable-exp-mul-gamma-measure.md)
 
 ## Sources
 

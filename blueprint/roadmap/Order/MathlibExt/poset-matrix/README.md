@@ -5,10 +5,10 @@ navigation: module
 
 # Poset Matrix
 
-- [Is Poset Matrix](is-poset-matrix.md)
-- [Rel](rel.md)
-- [Upper](upper.md)
-- [Diagonal](diagonal.md)
-- [Transitive](transitive.md)
-- [Rel refl](rel-refl.md)
-- [Rel trans](rel-trans.md)
+- [Poset matrix](is-poset-matrix.md)
+- [Relation represented by a Boolean matrix](rel.md)
+- [Poset matrices are upper triangular](upper.md)
+- [Diagonal entries of a poset matrix](diagonal.md)
+- [Transitivity of the true entries of a poset matrix](transitive.md)
+- [The relation of a poset matrix is reflexive](rel-refl.md)
+- [The relation of a poset matrix is transitive](rel-trans.md)

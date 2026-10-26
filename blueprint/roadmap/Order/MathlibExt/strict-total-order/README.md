@@ -5,5 +5,5 @@ navigation: module
 
 # Strict Total Order
 
-- [Strict Total Order](strict-total-order.md)
-- [Ext](ext.md)
+- [Strict total order](strict-total-order.md)
+- [Strict total orders are determined by their relation](ext.md)

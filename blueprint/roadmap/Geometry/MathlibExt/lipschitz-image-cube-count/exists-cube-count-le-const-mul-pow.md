@@ -21,7 +21,7 @@ through $K$, and on $n$ and $d$, but not on $t$; it uses $\lceil t \rceil \le 2t
 ## Depends on
 
 - [Integer cube set](integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

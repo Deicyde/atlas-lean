@@ -13,12 +13,12 @@ does not vanish there clears the function.
 
 ## Depends on
 
-- [Affine Coordinate Ring](affine-coordinate-ring.md)
+- [Affine coordinate ring](affine-coordinate-ring.md)
 
 ## Proof depends on
 
-- [Is Regular At](is-regular-at.md)
-- [Eval At](eval-at.md)
+- [Regularity of a fraction at an evaluation](is-regular-at.md)
+- [Evaluation at a point of an affine set](eval-at.md)
 
 ## Sources
 

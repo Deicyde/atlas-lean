@@ -21,7 +21,7 @@ $R[G]$-linear isomorphism.
 
 ## Proof depends on
 
-- [Inversion involution](inversion-involution.md)
+- [Group-ring inversion is an involution](inversion-involution.md)
 
 ## Sources
 

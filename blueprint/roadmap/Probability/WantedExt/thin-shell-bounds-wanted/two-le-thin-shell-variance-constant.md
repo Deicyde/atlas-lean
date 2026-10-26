@@ -6,13 +6,19 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.two_le_thinShellVarianceConstant
 ---
 
-# Two le thin Shell Variance Constant
+# The thin-shell variance constant is at least 2
 
-The Gaussian's exact lower bound for the universal variance constant.
+**The thin-shell variance constant is at least 2.** The thin-shell variance constant, the
+supremum in $[0, \infty]$ of the normalized radius variances
+$\frac{1}{n} \int (|x|^2 - n)^2 \, d\mu(x)$ over all dimensions $n \ge 1$ and all isotropic
+log-concave probability measures $\mu$ on $\mathbb{R}^n$, is at least $2$.
+
+The lower bound comes from the standard Gaussian, whose normalized radius variance is $2$ in
+every dimension.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
+- [Thin-shell variance constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources
 

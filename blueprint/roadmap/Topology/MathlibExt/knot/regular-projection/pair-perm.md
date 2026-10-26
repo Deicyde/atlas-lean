@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.pairPerm
 ---
 
-# Pair Perm
+# Edge-pairing permutation
 
-The edge-pairing involution as a permutation of darts.
+**Edge-pairing permutation.** For a dart diagram $D$, the edge-pairing permutation is the
+edge-pairing involution of $D$ regarded as a permutation of the darts of $D$; it is its own
+inverse.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Dart](dart.md)
+- [Dart diagram](dart-diagram.md)
+- [Darts of a dart diagram](dart.md)
 
 ## Sources
 

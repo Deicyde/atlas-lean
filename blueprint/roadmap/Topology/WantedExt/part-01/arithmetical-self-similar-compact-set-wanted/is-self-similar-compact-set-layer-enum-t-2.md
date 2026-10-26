@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isSelfSimilarCompactSet_layer_enum_tendsto_last
 ---
 
-# Is Self Similar Compact Set layer enum tendsto last
+# Limits across the last layer of a self-similar compact set
 
-Proposition 4, second part: with the enumerations of the first part,
-`lim_{n → ∞} T_{μ-1}[ω α + n] = T_0[α] / ρ`. (The enumeration hypotheses force
-`μ ≥ 1`, so `μ - 1` is the paper's index.)
+**Limits across the last layer of a self-similar compact set.** Let $K$ be a self-similar
+compact set of module $\mu$ and ratio $\rho$, with layers $T_u = K^{(u)} \setminus K^{(u+1)}$
+for $u \ge 0$, where $K^{(u)}$ is the $u$-th derived set of $K$. Suppose that for every $u$,
+$\alpha \mapsto T_u[\alpha]$ is a strictly decreasing map from the ordinals $\alpha < \omega^\omega$
+onto $T_u$. Then for every ordinal $\alpha < \omega^\omega$,
+$T_{\mu-1}[\omega \alpha + n] \to T_0[\alpha] / \rho$ as $n \to \infty$ through the natural numbers
+(ordinal arithmetic in the index).
+
+These hypotheses force $\mu \ge 1$, so $\mu - 1$ is a genuine index.
 
 ## Depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
-- [Self Similar Layer](self-similar-layer.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

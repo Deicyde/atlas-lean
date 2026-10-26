@@ -24,7 +24,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Partial sums of the Rademacher multiplicative function](partial-sum.md)
-- [Is Rademacher Family](../../../../Probability/MathlibExt/part-01/number-theory/random-multiplicative-function/is-rademacher-family.md)
+- [Rademacher family](../../../../Probability/MathlibExt/part-01/number-theory/random-multiplicative-function/is-rademacher-family.md)
 
 ## Sources
 

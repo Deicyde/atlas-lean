@@ -7,19 +7,24 @@ proof: formalized
 lean: MathlibExt.Probability.StrassenCouplingWanted.strassen_coupling_finite_poset
 ---
 
-# Strassen coupling finite poset
+# Strassen's theorem on a finite poset
 
-For nonnegative pmfs `p, q : α → ℝ` summing to 1, `p(U) ≤ q(U)` for every upward-closed `U` iff
-there exists a nonnegative `π : α → α → ℝ` with row marginal `p`, column marginal `q`, and `π x y =
-0` whenever `¬(x ≤ y)`.
+**Strassen's theorem on a finite poset.** Let $\alpha$ be a finite partially ordered set and let
+$p, q : \alpha \to \mathbb{R}$ be probability mass functions, that is, nonnegative functions with
+$\sum_{x \in \alpha} p(x) = 1$ and $\sum_{x \in \alpha} q(x) = 1$. Then
+$\sum_{x \in U} p(x) \le \sum_{x \in U} q(x)$ for every upper set $U \subseteq \alpha$ if and only
+if there is a function $\pi : \alpha \times \alpha \to \mathbb{R}$ such that $\pi(x, y) \ge 0$
+for all $x, y \in \alpha$, $\sum_{y \in \alpha} \pi(x, y) = p(x)$ for every $x \in \alpha$,
+$\sum_{x \in \alpha} \pi(x, y) = q(y)$ for every $y \in \alpha$, and $\pi(x, y) = 0$ whenever
+$x \not\le y$.
 
 ## Depends on
 
-- [Is Upper Set](is-upper-set.md)
+- [Finite upper sets](is-upper-set.md)
 
 ## Proof depends on
 
-- [Forall is Upper Set sum le iff exists coupling](forall-is-upper-set-sum-le-iff-exists-co.md)
+- [Strassen's theorem on a finite poset, equal-mass form](forall-is-upper-set-sum-le-iff-exists-co.md)
 
 ## Sources
 

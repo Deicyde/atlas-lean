@@ -5,30 +5,27 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook180Wanted.scottishBook180_refuted
 ---
 
-# Scottish Book180 refuted
+# Scottish Book Problem 180 fails
 
-Scottish Book Problem 180 is false as stated. Counterexample: take
-`Ω = ℝ` (Borel), `μ = volume.restrict (Set.Icc 0 1)`, and the
-constant-in-time process `v t ω = ω - 1 / 2` for all `t`. It is
-stationary with `c = 1 / 12`, `R ≡ 1 / 12`, by genuine finite
-integrals (`∫₀¹ (ω - 1/2) dω = 0`, `∫₀¹ (ω - 1/2)² dω = 1 / 12`), and
-the uniform-variable hypothesis holds with `U = id`. The process is
-bounded, hence integrable with finite moments, so the totalization
-loophole for Bochner integrals plays no role here. If witnesses
-`A, φ` existed, then `A (φ α) = α` for `α ∈ [0,1]` would make `φ`
-injective on `[0,1]`. But for `t₁ ≠ t₂` both `α`-functions are the
-same function `f α = φ α - 1 / 2`, so the conclusion demands
-`IndepFun f f` under Lebesgue measure on `[0,1]`; Mathlib's
-characterisation (`indepFun_iff_measure_inter_preimage_eq_mul`, no
-measurability hypothesis) then gives, for every Borel `S`,
-`μ (f ⁻¹' S) ∈ {0, 1}`, and a dyadic-interval argument gives a `c`
-with `f` a.e. constant, contradicting injectivity of `φ`, hence of
-`f`. No non-degeneracy hypothesis is added: the source asks for none,
-and such a hypothesis would be a new problem, not a transcription fix.
+**Scottish Book Problem 180 fails.** The claim of Scottish Book Problem 180 is false: there are a
+probability space $(\Omega, \mu)$ carrying a measurable random variable uniformly distributed on
+$[0, 1]$ and a stationary random function $v$ on $\Omega$ with every $v_t$ measurable, such that
+no measurable random variable $A : \Omega \to \mathbb{R}$ uniformly distributed on $[0, 1]$ and no
+map $\varphi : \mathbb{R} \to \Omega$ satisfy both $A(\varphi(\alpha)) = \alpha$ for every
+$\alpha \in [0, 1]$ and, for all real $t_1 \ne t_2$, the independence of
+$\alpha \mapsto v_{t_1}(\varphi(\alpha))$ and $\alpha \mapsto v_{t_2}(\varphi(\alpha))$ with
+respect to Lebesgue measure on $[0, 1]$.
+
+A counterexample is $\Omega = \mathbb{R}$ with $\mu$ Lebesgue measure restricted to $[0, 1]$, the
+identity as uniform variable, and $v_t(\omega) = \omega - 1/2$ for every $t$, which is stationary
+with $c = R(h) = 1/12$. If $A$ and $\varphi$ existed, $\varphi$ would be injective on $[0, 1]$,
+while both functions in the independence condition equal $f(\alpha) = \varphi(\alpha) - 1/2$. A
+function independent of itself is almost everywhere constant, and an injective function on
+$[0, 1]$ is not. No non-degeneracy hypothesis is added, since the source asks for none.
 
 ## Depends on
 
-- [Scottish Book Problem180 Claim](scottish-book-problem180-claim.md)
+- [Scottish Book Problem 180 (Kampé de Fériet's claim)](scottish-book-problem180-claim.md)
 
 ## Sources
 

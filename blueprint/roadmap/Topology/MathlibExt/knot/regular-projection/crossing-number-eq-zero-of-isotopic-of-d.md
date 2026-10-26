@@ -6,25 +6,26 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.crossingNumber_eq_zero_of_isotopic_of_doublePointSet_eq_empty
 ---
 
-# Crossing Number eq zero of isotopic of double Point Set eq empty
+# Crossing number zero from a crossing-free representative
 
-If some isotopic representative has a regular projection with no
-double points, the crossing number of the type is zero.
+**Crossing number zero from a crossing-free representative.** Let $L$ and $L'$ be parametrized
+links with $n$ components such that $L'$ is isotopic to $L$. If the standard projection of $L'$ is
+regular and its double-point set is empty, then the crossing number of $L$ is $0$.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Isotopic](../euclidean-link/isotopic-2.md)
-- [Crossing Number](crossing-number.md)
-- [Double Point Set](double-point-set.md)
-- [R2](r2.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Regular projections](is-regular-projection.md)
+- [Isotopy of parametrized links](../euclidean-link/isotopic-2.md)
+- [Crossing number of a link](crossing-number.md)
+- [Double points of a link projection](double-point-set.md)
+- [Euclidean plane](r2.md)
 
 ## Proof depends on
 
-- [Crossing Count](crossing-count-2.md)
-- [Crossing Count eq zero of double Point Set eq empty](crossing-count-eq-zero-of-double-point-s.md)
-- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
+- [Crossing count of a regular projection](crossing-count-2.md)
+- [A crossing-free regular projection has crossing count zero](crossing-count-eq-zero-of-double-point-s.md)
+- [Regular projections of isotopic links bound the crossing number](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

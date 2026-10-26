@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.crossingCount
 ---
 
-# Crossing Count
+# Number of crossings of a dart diagram
 
-Number of crossings.
+**Number of crossings of a dart diagram.** The crossing count of a dart diagram $D$ is the
+number of vertices of $D$, each vertex being one crossing.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
+- [Dart diagram](dart-diagram.md)
 
 ## Sources
 

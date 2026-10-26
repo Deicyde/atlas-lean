@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.exists_crossingNumber_eq_natCast_of_admitsAlternatingDiagram
 ---
 
-# Exists crossing Number eq nat Cast of admits Alternating Diagram
+# Alternating link types have a natural-number crossing number
 
-A link type admitting an alternating diagram has a natural-number
-crossing number.
+**Alternating link types have a natural-number crossing number.**
+If an oriented labeled link type with $n$ components admits an
+alternating diagram, then its crossing number equals some natural
+number $k$.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Admits Alternating Diagram](../regular-projection/admits-alternating-diagram.md)
-- [Crossing Number](../regular-projection/crossing-number.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Links admitting an alternating diagram](../regular-projection/admits-alternating-diagram.md)
+- [Crossing number of a link](../regular-projection/crossing-number.md)
 
 ## Proof depends on
 
-- [Crossing Number lt top of admits Alternating Diagram](crossing-number-lt-top-of-admits-alterna.md)
+- [Alternating link types have finite crossing number](crossing-number-lt-top-of-admits-alterna.md)
 
 ## Sources
 

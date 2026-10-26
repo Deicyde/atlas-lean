@@ -28,7 +28,7 @@ This node has no prerequisites.
 - [Finite residue field of a completed number ring](../adele-locally-compact/finite-residue-field.md)
 - [Completion preserves the inertia degree](inertia-deg-adic-completion-integers-map.md)
 - [Completion preserves the ramification index](finite-lies-over-ramification-index/ramification-idx-adic-completion-integer.md)
-- [Module finite integer of is Adic Complete](../../../../../../RingTheory/MathlibExt/discrete-valuation-ring/integral-closure-complete/module-finite-integer-of-is-adic-complet.md)
+- [Valuation rings dominating a complete DVR are finite over it](../../../../../../RingTheory/MathlibExt/discrete-valuation-ring/integral-closure-complete/module-finite-integer-of-is-adic-complet.md)
 
 ## Sources
 

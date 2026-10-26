@@ -6,9 +6,11 @@ proof: formalized
 lean: ProbabilityTheory.integrable_abs_sub_iff
 ---
 
-# Integrable abs sub iff
+# Absolute deviations are integrable exactly when the mean exists
 
-On a finite measure, `θ ↦ |θ - c|` is integrable exactly when `ν` has a first moment.
+**Absolute deviations are integrable exactly when the mean exists.** Let $\nu$ be a finite
+measure on $\mathbb{R}$ and let $c \in \mathbb{R}$. Then $\theta \mapsto |\theta - c|$ is
+$\nu$-integrable if and only if $\theta \mapsto \theta$ is $\nu$-integrable.
 
 ## Depends on
 

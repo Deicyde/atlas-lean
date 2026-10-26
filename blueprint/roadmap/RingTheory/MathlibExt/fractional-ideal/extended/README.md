@@ -7,10 +7,10 @@ navigation: module
 
 ## Submodule
 
-- [Localized' div of fg](localized-div-of-fg.md)
+- [Localization commutes with division by a finitely generated submodule](localized-div-of-fg.md)
 
 ## Fractional Ideal
 
-- [Coe extended Hom eq localized'](coe-extended-hom-eq-localized.md)
-- [Extended Hom div of fg](extended-hom-div-of-fg.md)
-- [Extended Hom div](extended-hom-div.md)
+- [Extension to a localization is localization](coe-extended-hom-eq-localized.md)
+- [Extension to a localization commutes with division by a finitely generated ideal](extended-hom-div-of-fg.md)
+- [Over a Noetherian domain, extension to a localization commutes with division](extended-hom-div.md)

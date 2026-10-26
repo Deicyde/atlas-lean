@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedKnot.toLink
 ---
 
-# To Link
+# Parametrized knot as a one-component link
 
-A parametrized knot as a one-component parametrized link.
+**Parametrized knot as a one-component link.** A parametrized knot $K$ determines the
+parametrized link with one component, whose single component is $K$; the pairwise disjointness
+condition holds trivially.
 
 ## Depends on
 
-- [Parametrized Knot](parametrized-knot.md)
-- [Parametrized Link](parametrized-link.md)
+- [Parametrized knot](parametrized-knot.md)
+- [Parametrized link](parametrized-link.md)
 
 ## Proof depends on
 

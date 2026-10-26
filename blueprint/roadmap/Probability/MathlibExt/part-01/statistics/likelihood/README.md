@@ -6,15 +6,15 @@ navigation: module
 
 ## Probability Theory
 
-- [Normalized Density Family](normalized-density-family.md)
+- [Normalized density family](normalized-density-family.md)
 
 ## Normalized Density Family
 
-- [Ext](ext.md)
-- [Law](law.md)
-- [Is Probability Measure law](is-probability-measure-law.md)
-- [Iid Likelihood](iid-likelihood.md)
-- [Iid Likelihood nil](iid-likelihood-nil.md)
-- [Is Maximum Likelihood Estimator](is-maximum-likelihood-estimator.md)
-- [Is Maximum Likelihood Estimator iff](is-maximum-likelihood-estimator-iff.md)
-- [Induced Likelihood](induced-likelihood.md)
+- [Normalized density families are determined by their densities](ext.md)
+- [Population law](law.md)
+- [Population laws are probability measures](is-probability-measure-law.md)
+- [Likelihood of an iid sample](iid-likelihood.md)
+- [Likelihood of the empty sample](iid-likelihood-nil.md)
+- [Maximum likelihood estimator](is-maximum-likelihood-estimator.md)
+- [Characterization of maximum likelihood estimators](is-maximum-likelihood-estimator-iff.md)
+- [Induced likelihood](induced-likelihood.md)

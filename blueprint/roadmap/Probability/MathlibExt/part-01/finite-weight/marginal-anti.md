@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.FiniteWeight.marginal_anti
 ---
 
-# Marginal anti
+# Monotonicity of marginals in the fixed variables
 
-For a nonnegative weight, fixing more variables decreases the marginal.
+**Monotonicity of marginals in the fixed variables.** Let $V$ and $\alpha$ be finite types, let
+$p$ be a real-valued weight on the configurations $x : V \to \alpha$ with $p(x) \ge 0$ for every
+$x$, and let $U \subseteq U' \subseteq V$. Then for every configuration $x$, the marginal of $p$
+on $U'$ at $x$ is at most the marginal of $p$ on $U$ at $x$.
 
 ## Depends on
 
-- [Marginal](marginal.md)
+- [Marginal of a weight](marginal.md)
 
 ## Sources
 

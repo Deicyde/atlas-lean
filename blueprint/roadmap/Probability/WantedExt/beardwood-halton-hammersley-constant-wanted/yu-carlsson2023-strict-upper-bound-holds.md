@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.yuCarlsson2023StrictUpperBound_holds
 ---
 
-# Yu Carlsson2023 Strict Upper Bound holds
+# Yu–Carlsson upper bound on the BHH constant
 
-Source: Yu and Carlsson (2023), strict upper-bound row in the frozen catalogue.
+**Yu–Carlsson upper bound on the BHH constant.** The real-valued Beardwood–Halton–Hammersley
+constant $\beta_2$ of the unit square satisfies $\beta_2 < 0.90304$.
 
 ## Depends on
 
-- [Yu Carlsson2023 Strict Upper Bound](yu-carlsson2023-strict-upper-bound.md)
+- [Statement of the Yu–Carlsson upper bound](yu-carlsson2023-strict-upper-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Yu and Carlsson (2023), strict upper-bound row in the frozen catalogue.

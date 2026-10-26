@@ -6,11 +6,12 @@ statement: formalized
 lean: MathlibExt.Probability.ProductBondPercolation.prodGraph
 ---
 
-# Prod Graph
+# The product graph $G \times \mathbb{Z}$
 
-The product graph `G × ℤ` is the box product of `G` with the
-integer line: `G`-edges within a level together with vertical
-line edges (see `SimpleGraph.boxProd_adj`).
+**The product graph $G \times \mathbb{Z}$.** For a simple graph $G$ on $V$, the graph
+$G \times \mathbb{Z}$ is the box product of $G$ with the integer line: its vertex set is
+$V \times \mathbb{Z}$, and $(v, m)$ and $(w, n)$ are adjacent exactly when either $v$ and $w$
+are adjacent in $G$ and $m = n$, or $v = w$ and $|m - n| = 1$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Int Line](int-line.md)
+- [The integer line graph](int-line.md)
 
 ## Sources
 

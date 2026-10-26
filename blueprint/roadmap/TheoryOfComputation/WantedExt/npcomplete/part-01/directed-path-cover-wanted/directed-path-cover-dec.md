@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.directedPathCoverDec
 ---
 
-# Directed Path Cover Dec
+# DIRECTED PATH COVER as a decision problem
 
-DIRECTED PATH COVER as a decision problem over bitstrings.
+**DIRECTED PATH COVER as a decision problem.** DIRECTED PATH COVER is the decision problem
+that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding,
+to an instance $(n, E, K)$ of DIRECTED PATH COVER that is well formed and feasible; bitstrings
+that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ DIRECTED PATH COVER as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Directed Path Cover Feasible](directed-path-cover-feasible.md)
-- [Directed Path Cover Instance](directed-path-cover-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible DIRECTED PATH COVER instances](directed-path-cover-feasible.md)
+- [Instances of DIRECTED PATH COVER](directed-path-cover-instance.md)
+- [Well-formed DIRECTED PATH COVER instances](well-formed.md)
 
 ## Sources
 

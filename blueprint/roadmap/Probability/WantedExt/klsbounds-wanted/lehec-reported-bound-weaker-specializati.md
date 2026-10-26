@@ -6,16 +6,18 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.lehec_reported_bound_weaker_specialization
 ---
 
-# Lehec reported bound weaker specialization
+# Lehec's reported polylogarithmic bound on the KLS constant, weakened
 
-An explicitly weaker specialization of Lehec's reported `3.082...` estimate.
+**Lehec's reported polylogarithmic bound on the KLS constant, weakened.** There are a real
+$C > 0$ and an integer $N \ge 3$ such that for every $n \ge N$ the dimensional KLS constant
+$\psi_n \in [0, \infty]$ satisfies $\psi_n \le C (\log n)^{3.083}$.
 
-The primary gives only decimal-prefix precision; `3.083` is not claimed to be
-its exact exponent, and this request does not exhaust that historical row.
+The exponent $3.083$ lies just above Lehec's reported exponent $3.082\ldots$, which the primary
+gives only to this decimal precision; $3.083$ is not claimed to be the exact exponent.
 
 ## Depends on
 
-- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
+- [Dimensional KLS constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
 
 ## Sources
 

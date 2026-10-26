@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CardinalitySubsetSum.CardinalitySubsetSumInstance
 ---
 
-# Cardinality Subset Sum Instance
+# Exact-cardinality subset-sum instances
 
-A cardinality-constrained subset-sum instance: numbers, cardinality K, target.
+**Exact-cardinality subset-sum instances.** An exact-cardinality subset-sum instance is a
+triple $(a, K, T)$ consisting of a list $a$ of natural numbers, a natural number $K$ (the
+cardinality) and a natural number $T$ (the target).
 
 ## Depends on
 

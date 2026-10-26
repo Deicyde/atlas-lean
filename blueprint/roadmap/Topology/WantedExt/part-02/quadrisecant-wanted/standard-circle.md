@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Topology.QuadrisecantWanted.KnotTheory.Quadrisecant.standardCircle
 ---
 
-# Standard Circle
+# Standard circle
 
-The standard round unknot curve in the `xy`-plane.
+**Standard circle.** The standard circle is the curve $\mathbb{R} \to \mathbb{R}^3$ given by
+$t \mapsto (\cos t, \sin t, 0)$, the unit circle in the $xy$-plane.
 
 ## Depends on
 
-- [R3](../../part-01/conway-knot-shared/r3.md)
+- [Euclidean space $\mathbb{R}^3$](../../part-01/conway-knot-shared/r3.md)
 
 ## Sources
 

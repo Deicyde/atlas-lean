@@ -6,10 +6,14 @@ statement: formalized
 lean: MathlibExt.Probability.ProductBondPercolation.configGraph
 ---
 
-# Config Graph
+# Open subgraph of the product graph
 
-The open subgraph of `prodGraph G` determined by an edge-opening
-pattern `ω`: keep exactly the product edges with `ω e = true`.
+**Open subgraph of the product graph.** Let $G$ be a simple graph on $V$, let
+$G \times \mathbb{Z}$ denote the box product of $G$ with the integer line, and let $\omega$
+assign true or false to every unordered pair of points of $V \times \mathbb{Z}$. The open
+subgraph of $G \times \mathbb{Z}$ determined by $\omega$ is the simple graph on
+$V \times \mathbb{Z}$ in which $a$ and $b$ are adjacent exactly when they are adjacent in
+$G \times \mathbb{Z}$ and $\omega(\{a, b\})$ is true.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prod Graph](prod-graph.md)
+- [The product graph $G \times \mathbb{Z}$](prod-graph.md)
 
 ## Sources
 

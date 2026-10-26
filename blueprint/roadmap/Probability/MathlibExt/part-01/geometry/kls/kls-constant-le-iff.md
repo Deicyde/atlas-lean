@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.klsConstant_le_iff
 ---
 
-# Kls Constant le iff
+# Bounding the KLS constant dimension by dimension
 
-The global constant is exactly the least bound for all positive dimensions.
+**Bounding the KLS constant dimension by dimension.** For every $C \in [0, \infty]$, the KLS
+constant is at most $C$ if and only if, for every positive integer $n$, the dimensional KLS
+constant in dimension $n$ is at most $C$.
 
 ## Depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
-- [Kls Constant](kls-constant.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
+- [KLS constant](kls-constant.md)
 
 ## Proof depends on
 
-- [Dimensional Kls Constant le constant](dimensional-kls-constant-le-constant.md)
+- [Dimensional KLS constants are bounded by the KLS constant](dimensional-kls-constant-le-constant.md)
 
 ## Sources
 

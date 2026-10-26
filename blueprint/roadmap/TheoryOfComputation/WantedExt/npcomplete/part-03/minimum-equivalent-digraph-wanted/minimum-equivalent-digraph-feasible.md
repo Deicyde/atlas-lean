@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumEquivalentDigraph.MinimumEquivalentDigraphFeasible
 ---
 
-# Minimum Equivalent Digraph Feasible
+# Feasible MINIMUM EQUIVALENT DIGRAPH instances
 
-A spanning subdigraph with at most `K` arcs and the same reachability.
+**Feasible MINIMUM EQUIVALENT DIGRAPH instances.** An instance $(n, E, K)$ of MINIMUM
+EQUIVALENT DIGRAPH is feasible when some sublist $F$ of $E$ (obtained by deleting entries of
+$E$) has at most $K$ entries and, for all vertices $u < n$ and $v < n$, $v$ is reachable from $u$
+within $n$ steps along $E$ if and only if $v$ is reachable from $u$ within $n$ steps along
+$F$.
 
 ## Depends on
 
-- [Minimum Equivalent Digraph Instance](minimum-equivalent-digraph-instance.md)
+- [Instances of MINIMUM EQUIVALENT DIGRAPH](minimum-equivalent-digraph-instance.md)
 
 ## Proof depends on
 
-- [Reachable](reachable.md)
+- [Bounded reachability in a digraph](reachable.md)
 
 ## Sources
 

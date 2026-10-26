@@ -16,7 +16,7 @@ The component term of `Q`: `∑ n, r n k log N(xₙ | μ, S)`.
 ## Proof depends on
 
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

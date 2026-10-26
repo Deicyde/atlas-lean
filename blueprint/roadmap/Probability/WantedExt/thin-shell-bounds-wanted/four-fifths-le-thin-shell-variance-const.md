@@ -6,13 +6,17 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.fourFifths_le_thinShellVarianceConstant
 ---
 
-# Four Fifths le thin Shell Variance Constant
+# Cube lower bound for the thin-shell variance constant
 
-The cube's exact lower bound for the universal variance constant.
+**Cube lower bound for the thin-shell variance constant.** The thin-shell variance constant,
+an element of $[0, \infty]$, is at least $4/5$.
+
+The value $4/5$ is the exact normalized radius variance of the uniform law on a cube scaled to
+identity covariance.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
+- [Thin-shell variance constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources
 

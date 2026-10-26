@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.klsConstant
 ---
 
-# Kls Constant
+# KLS constant
 
-The KLS constant is the supremum over every positive dimension.
+**KLS constant.** The KLS constant is the supremum in $[0, \infty]$ of the dimensional KLS
+constants in dimension $n$, taken over all positive integers $n$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
 
 ## Sources
 

@@ -4,9 +4,9 @@ navigation: module
 
 # Roman Domination
 
-- [Roman Domination Instance](roman-domination-instance.md)
-- [Graph](graph.md)
-- [Well Formed](well-formed.md)
-- [Roman Domination Feasible](roman-domination-feasible.md)
-- [Roman Domination Dec](roman-domination-dec.md)
+- [Roman domination instances](roman-domination-instance.md)
+- [Graph of a Roman domination instance](graph.md)
+- [Well-formed Roman domination instances](well-formed.md)
+- [Feasible Roman domination instances](roman-domination-feasible.md)
+- [ROMAN DOMINATION as a decision problem](roman-domination-dec.md)
 - [ROMAN DOMINATION is NP-complete](roman-domination-np-complete.md)

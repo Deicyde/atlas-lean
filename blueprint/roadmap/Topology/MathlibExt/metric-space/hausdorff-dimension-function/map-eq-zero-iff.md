@@ -7,18 +7,19 @@ proof: formalized
 lean: HausdorffDimensionFunction.map_eq_zero_iff
 ---
 
-# Map eq zero iff
+# A Hausdorff dimension function vanishes only at zero
 
-Vanishing exactly at zero: `ψ r = 0 ↔ r = 0`.
+**A Hausdorff dimension function vanishes only at zero.** If $\psi$ is a Hausdorff dimension
+function and $r \ge 0$, then $\psi(r) = 0$ if and only if $r = 0$.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Proof depends on
 
-- [Map pos](map-pos.md)
-- [Map zero](map-zero.md)
+- [A Hausdorff dimension function is positive at positive radii](map-pos.md)
+- [A Hausdorff dimension function vanishes at zero](map-zero.md)
 
 ## Sources
 

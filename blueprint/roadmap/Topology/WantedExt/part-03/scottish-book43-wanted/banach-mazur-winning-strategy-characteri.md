@@ -5,24 +5,24 @@ statement: formalized
 lean: MathlibExt.Topology.ScottishBook43Wanted.banach_mazur_winning_strategy_characterization
 ---
 
-# Banach mazur winning strategy characterization
+# Banach–Mazur game theorem
 
-Mazur, Problem 43 of the Scottish Book. Given a set `E` of real numbers, A
-picks an interval `d₁`, B picks a subinterval `d₂` of `d₁`, A picks a
-subinterval `d₃` of `d₂`, and so on. A wins if the intersection of all the
-chosen intervals meets `E`; otherwise A loses. The problem asks whether A
-has a winning method only for those `E` whose complement is of first
-category in some interval, and whether B has a winning method when `E` is
-of first category. The answer to both is affirmative, in the full
-characterization form: A has a winning strategy exactly when `E` is
-comeagre in some interval (its complement is meagre in that interval), and
-B has a winning strategy exactly when `E` is meagre. This is the
-Banach-Mazur game theorem (Oxtoby).
+**Banach–Mazur game theorem.** For every set $E \subseteq \mathbb{R}$, player A has a winning
+strategy in the Banach–Mazur game for $E$ if and only if there are reals $a < b$ such that
+$(a, b) \setminus E$ is meagre, and player B has a winning strategy in the Banach–Mazur game for
+$E$ if and only if $E$ is meagre.
+
+This answers Mazur's Problem 43 of the Scottish Book. Given $E$, A picks an interval $d_1$,
+B picks a subinterval $d_2$ of $d_1$, A picks a subinterval $d_3$ of $d_2$, and so on; A wins if
+the intersection of all the chosen intervals meets $E$. Mazur asked whether A has a winning
+method only when the complement of $E$ is of first category in some interval, and whether B has
+one when $E$ is of first category. Both answers are affirmative, in the characterization form
+above (Oxtoby).
 
 ## Depends on
 
-- [Banach Mazur AHas Winning Strategy](banach-mazur-ahas-winning-strategy.md)
-- [Banach Mazur BHas Winning Strategy](banach-mazur-bhas-winning-strategy.md)
+- [Winning strategy for the first player in the Banach–Mazur game](banach-mazur-ahas-winning-strategy.md)
+- [Winning strategy for the second player in the Banach–Mazur game](banach-mazur-bhas-winning-strategy.md)
 
 ## Sources
 

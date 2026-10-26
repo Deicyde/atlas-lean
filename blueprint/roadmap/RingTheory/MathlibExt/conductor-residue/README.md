@@ -5,7 +5,7 @@ navigation: module
 
 # Conductor Residue
 
-- [Quotient coprime residue equiv](quotient-coprime-residue-equiv.md)
-- [Quotient coprime residue equiv apply mk](quotient-coprime-residue-equiv-apply-mk.md)
-- [Nat card quotient coprime residue eq](nat-card-quotient-coprime-residue-eq.md)
-- [Card Quot coprime residue eq](card-quot-coprime-residue-eq.md)
+- [Residue-ring isomorphism away from a denominator-clearing ideal](quotient-coprime-residue-equiv.md)
+- [The residue-ring isomorphism on residue classes](quotient-coprime-residue-equiv-apply-mk.md)
+- [Equal cardinality of residue rings away from a denominator-clearing ideal](nat-card-quotient-coprime-residue-eq.md)
+- [Equal ideal indices away from a denominator-clearing ideal](card-quot-coprime-residue-eq.md)

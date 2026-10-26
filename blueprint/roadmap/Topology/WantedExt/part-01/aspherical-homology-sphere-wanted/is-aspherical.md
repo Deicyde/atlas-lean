@@ -6,14 +6,14 @@ statement: formalized
 lean: MathlibExt.Topology.AsphericalHomologySphereWanted.Topology.Closed4Manifold.IsAspherical
 ---
 
-# Is Aspherical
+# Aspherical closed 4-manifold
 
-`M` is **aspherical**: every higher homotopy group vanishes at every
-basepoint.
+**Aspherical closed 4-manifold.** A closed topological 4-manifold $M$ is aspherical if for
+every $k \ge 2$ and every point $x \in M$ the homotopy group $\pi_k(M, x)$ is trivial.
 
 ## Depends on
 
-- [Closed4 Manifold](closed4-manifold.md)
+- [Closed topological 4-manifold](closed4-manifold.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.isCWTopCat
 ---
 
-# Is CWTop Cat
+# Spaces admitting a CW complex structure
 
-The property of topological spaces admitting a classical CW complex structure.
+**Spaces admitting a CW complex structure.** A topological space $X$ has this property when
+it admits a classical CW complex structure whose underlying set is all of $X$.
 
 ## Depends on
 

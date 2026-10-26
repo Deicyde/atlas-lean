@@ -6,9 +6,11 @@ statement: formalized
 lean: FractionalIdeal.unitsPrimeTo
 ---
 
-# Units Prime To
+# Invertible fractional ideals prime to an ideal
 
-The subgroup of invertible fractional ideals prime to J.
+**Invertible fractional ideals prime to an ideal.** Let $A$ be an integral domain with fraction
+field $K$ and let $J$ be an ideal of $A$. The invertible fractional ideals of $A$ in $K$ that are
+prime to $J$ form a subgroup of the group of invertible fractional ideals of $A$ in $K$.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime To](is-prime-to.md)
-- [Inv unit](inv-unit.md)
-- [Mul](mul.md)
-- [Is Prime To one](is-prime-to-one.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
+- [Inverses of invertible fractional ideals prime to an ideal](inv-unit.md)
+- [Products of fractional ideals prime to an ideal](mul.md)
+- [The unit fractional ideal is prime to every ideal](is-prime-to-one.md)
 
 ## Sources
 

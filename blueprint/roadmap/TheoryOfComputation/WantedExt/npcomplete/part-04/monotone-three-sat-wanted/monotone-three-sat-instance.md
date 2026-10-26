@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatInstance
 ---
 
-# Monotone Three Sat Instance
+# Monotone 3-SAT instances
 
-A monotone 3-SAT instance: number of variables, monotone 3-CNF formula.
+**Monotone 3-SAT instances.** A monotone 3-SAT instance is a pair $(n, \varphi)$ of a
+natural number $n$, the number of variables, and a CNF formula $\varphi$.
 
 ## Depends on
 

@@ -7,22 +7,25 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.uniformInterval_sqrt_three_isIsotropicLogConcave
 ---
 
-# Uniform Interval sqrt three is Isotropic Log Concave
+# The uniform law on (−√3, √3) is isotropic log-concave
 
-A proved actual positive-dimensional member of the shared admissible family.
+**The uniform law on [−√3, √3] is isotropic log-concave.** The uniform distribution on the
+symmetric interval $[-\sqrt{3}, \sqrt{3}]$ of one-dimensional Euclidean space $\mathbb{R}^1$ is
+an isotropic log-concave probability measure: it has a log-concave density with respect to
+Lebesgue measure, mean zero and identity covariance.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
-- [Uniform Interval](uniform-interval.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
+- [Uniform distribution on a symmetric interval](uniform-interval.md)
 
 ## Proof depends on
 
-- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
-- [Cond eq with Density indicator](../log-concave-uniform/cond-eq-with-density-indicator.md)
-- [Is Log Concave Density indicator const](../log-concave-uniform/is-log-concave-density-indicator-const.md)
-- [Line Isometry](line-isometry.md)
-- [Symmetric Interval](symmetric-interval.md)
+- [Log-concave densities](../thin-shell/is-log-concave-density.md)
+- [Conditioning on a set is the normalized indicator density](../log-concave-uniform/cond-eq-with-density-indicator.md)
+- [Constant densities on convex sets are log-concave](../log-concave-uniform/is-log-concave-density-indicator-const.md)
+- [Identification of the line with one-dimensional Euclidean space](line-isometry.md)
+- [Symmetric interval in one-dimensional Euclidean space](symmetric-interval.md)
 
 ## Sources
 

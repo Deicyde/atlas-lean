@@ -6,15 +6,17 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.le_tightAlternatingKnotConstant
 ---
 
-# Le tight Alternating Knot Constant
+# Admissible constants are at most the tight alternating knot constant
 
-Every admissible alternating constant is at most the tight
-alternating knot constant.
+**Admissible constants are at most the tight alternating knot
+constant.** Every real number $c$ that is admissible for the tight
+alternating knot inequality is at most the tight alternating knot
+constant.
 
 ## Depends on
 
-- [Is Admissible Alternating](is-admissible-alternating.md)
-- [Tight Alternating Knot Constant](tight-alternating-knot-constant.md)
+- [Admissible constants for the tight alternating knot inequality](is-admissible-alternating.md)
+- [Tight alternating knot constant](tight-alternating-knot-constant.md)
 
 ## Sources
 

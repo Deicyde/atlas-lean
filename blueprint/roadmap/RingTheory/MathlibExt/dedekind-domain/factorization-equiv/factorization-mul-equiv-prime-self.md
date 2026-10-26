@@ -7,13 +7,16 @@ proof: formalized
 lean: FractionalIdeal.factorizationMulEquiv_prime_self
 ---
 
-# Factorization Mul Equiv prime self
+# Exponent function of a prime ideal
 
-The image of a prime ideal is the corresponding basis exponent function.
+**Exponent function of a prime ideal.** Let $R$ be a Dedekind domain with fraction field
+$K$ and let $w$ be a height-one prime of $R$. The factorization isomorphism sends the fractional
+ideal $w$, as a unit fractional ideal of $R$ in $K$, to the function on height-one primes of $R$
+that is $1$ at $w$ and $0$ elsewhere.
 
 ## Depends on
 
-- [Factorization Mul Equiv](factorization-mul-equiv.md)
+- [Prime factorization isomorphism for fractional ideals](factorization-mul-equiv.md)
 
 ## Sources
 

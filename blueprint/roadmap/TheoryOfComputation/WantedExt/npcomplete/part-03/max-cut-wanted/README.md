@@ -4,8 +4,8 @@ navigation: module
 
 # Max Cut
 
-- [Max Cut Instance](max-cut-instance.md)
-- [Well Formed](well-formed.md)
-- [Max Cut Feasible](max-cut-feasible.md)
-- [Max Cut Dec](max-cut-dec.md)
+- [Instances of MAXIMUM CUT](max-cut-instance.md)
+- [Well-formed MAXIMUM CUT instances](well-formed.md)
+- [Feasible MAXIMUM CUT instances](max-cut-feasible.md)
+- [MAXIMUM CUT as a decision problem](max-cut-dec.md)
 - [MAXIMUM CUT is NP-complete](max-cut-np-complete.md)

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.SubsetModFinite
 ---
 
-# Subset Mod Finite
+# Inclusion modulo finite
 
-a⊆_* b if a/ b is finite
+**Inclusion modulo finite.** For subsets $a$ and $b$ of a set $\alpha$, $a \subseteq^* b$
+($a$ is almost contained in $b$) if the difference $a \setminus b$ is finite.
 
 ## Depends on
 

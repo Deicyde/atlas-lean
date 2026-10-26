@@ -7,10 +7,12 @@ proof: formalized
 lean: AdjoinRoot.isMaximal_span_root
 ---
 
-# Is Maximal span root
+# The adjoined root of an Eisenstein polynomial generates a maximal ideal
 
-The span of the root of a monic Eisenstein polynomial of positive degree
-over a DVR is a maximal ideal.
+**The adjoined root of an Eisenstein polynomial generates a maximal ideal.** Let $A$ be a
+discrete valuation ring with maximal ideal $\mathfrak m$, let $f \in A[X]$ be a monic polynomial
+of positive degree that is Eisenstein with respect to $\mathfrak m$, and let $\alpha$ be the image
+of $X$ in $A[X]/(f)$. Then the principal ideal $(\alpha)$ of $A[X]/(f)$ is a maximal ideal.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is maximal of irreducible factor](../../../adjoin-root/local-maximal/is-maximal-of-irreducible-factor.md)
-- [Map maximal Ideal le span root](map-maximal-ideal-le-span-root.md)
+- [Residual irreducible factors give maximal ideals of a monogenic algebra](../../../adjoin-root/local-maximal/is-maximal-of-irreducible-factor.md)
+- [The maximal ideal of a DVR maps into the ideal of an Eisenstein root](map-maximal-ideal-le-span-root.md)
 
 ## Sources
 

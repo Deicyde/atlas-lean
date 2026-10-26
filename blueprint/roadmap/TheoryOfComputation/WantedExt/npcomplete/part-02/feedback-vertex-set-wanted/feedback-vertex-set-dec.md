@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FeedbackVertexSet.feedbackVertexSetDec
 ---
 
-# Feedback Vertex Set Dec
+# FEEDBACK VERTEX SET as a decision problem
 
-FEEDBACK VERTEX SET as a decision problem over bitstrings.
+**FEEDBACK VERTEX SET as a decision problem.** The decision problem FEEDBACK VERTEX SET
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
+instances, to an instance of FEEDBACK VERTEX SET that is well formed and feasible. Bitstrings
+that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ FEEDBACK VERTEX SET as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Feedback Vertex Set Feasible](feedback-vertex-set-feasible.md)
-- [Feedback Vertex Set Instance](feedback-vertex-set-instance.md)
-- [Well Formed](well-formed.md)
+- [Feedback vertex sets within the bound](feedback-vertex-set-feasible.md)
+- [Instances of FEEDBACK VERTEX SET](feedback-vertex-set-instance.md)
+- [Well-formed FEEDBACK VERTEX SET instances](well-formed.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Probability.pgf_add_of_indepFun
 ---
 
-# Pgf add of indep Fun
+# Generating function of a sum of independent variables
 
-The generating function of a sum of independent variables is the product of their
-generating functions on the convergence domain `|s| ≤ 1`.
+**Generating function of a sum of independent variables.** Let $\mu$ be a finite measure on
+$\Omega$, and for $Z : \Omega \to \mathbb{N}$ write
+$G_Z(s) = \int_\Omega s^{Z(\omega)} \, d\mu(\omega)$ for the probability generating function of
+$Z$ under $\mu$. If $X, Y : \Omega \to \mathbb{N}$ are measurable and independent under $\mu$,
+then $G_{X+Y}(s) = G_X(s) \, G_Y(s)$ for every real $s$ with $|s| \le 1$.
 
 ## Depends on
 
-- [Pgf](pgf.md)
+- [Probability generating function](pgf.md)
 
 ## Proof depends on
 
-- [Integrable pow of abs le one](integrable-pow-of-abs-le-one.md)
+- [Integrability of $s^X$ for $|s| \le 1$](integrable-pow-of-abs-le-one.md)
 
 ## Sources
 

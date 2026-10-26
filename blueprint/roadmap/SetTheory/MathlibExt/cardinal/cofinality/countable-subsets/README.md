@@ -5,8 +5,8 @@ navigation: module
 # Countable Subsets
 
 - [(α)^ω or P_{ω₁}(α) is the set of countable subsets of α](or-p-is-the-set-of-countable-subsets-of.md)
-- [Is Club Omega](is-club-omega.md)
-- [Is Stationary Omega](is-stationary-omega.md)
-- [Closure Points](closure-points.md)
-- [Closure Points Seq](closure-points-seq.md)
+- [Club families of countable sets](is-club-omega.md)
+- [Stationary families of countable sets](is-stationary-omega.md)
+- [Closure points of a finitary function](closure-points.md)
+- [Closure points of a sequence of finitary functions](closure-points-seq.md)
 - [1](1.md)

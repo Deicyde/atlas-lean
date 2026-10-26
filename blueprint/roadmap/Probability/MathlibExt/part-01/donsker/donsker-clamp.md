@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.DonskerWanted.donskerClamp
 ---
 
-# Donsker Clamp
+# Clamping to the unit interval
 
-Clamps a real to `[0,1]`.
+**Clamping to the unit interval.** For a real number $x$, its clamp to $[0,1]$ is
+$\min(\max(x, 0), 1)$.
 
 ## Depends on
 

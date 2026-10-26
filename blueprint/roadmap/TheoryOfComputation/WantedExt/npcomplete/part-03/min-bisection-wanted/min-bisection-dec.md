@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinBisection.minBisectionDec
 ---
 
-# Min Bisection Dec
+# The decision problem MINIMUM BISECTION
 
-MINIMUM BISECTION as a decision problem over bitstrings.
+**The decision problem MINIMUM BISECTION.** The decision problem MINIMUM BISECTION accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of instances, to an
+instance $(n, es, K)$ of MINIMUM BISECTION that is well formed and feasible (its vertices split
+into two sets of $n / 2$ vertices with at most $K$ entries of $es$ between them). Bitstrings that
+do not decode are rejected.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ MINIMUM BISECTION as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Min Bisection Feasible](min-bisection-feasible.md)
-- [Min Bisection Instance](min-bisection-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MINIMUM BISECTION instances](min-bisection-feasible.md)
+- [Instances of MINIMUM BISECTION](min-bisection-instance.md)
+- [Well-formed MINIMUM BISECTION instances](well-formed.md)
 
 ## Sources
 

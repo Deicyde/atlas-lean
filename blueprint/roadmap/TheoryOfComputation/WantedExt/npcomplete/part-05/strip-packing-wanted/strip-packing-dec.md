@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.StripPacking.stripPackingDec
 ---
 
-# Strip Packing Dec
+# The STRIP PACKING decision problem
 
-STRIP PACKING as a decision problem over bitstrings.
+**The STRIP PACKING decision problem.** STRIP PACKING is the decision problem that accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of strip packing
+instances, to a strip packing instance that is well formed and feasible. Bitstrings that do not
+decode to a strip packing instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ STRIP PACKING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Strip Packing Feasible](strip-packing-feasible.md)
-- [Strip Packing Instance](strip-packing-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible strip packings](strip-packing-feasible.md)
+- [Strip packing instances](strip-packing-instance.md)
+- [Well-formed strip packing instances](well-formed.md)
 
 ## Sources
 

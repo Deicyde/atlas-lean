@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparisonWantedDavis.davisPowerB
 ---
 
-# Davis Power B
+# Half the envelope integral, $B$
 
-Equation (3): half the envelope integral.
+**Half the envelope integral, $B$.** Let $B = A/2$, where
+$A = \int_0^\infty \min(1, 2e^{-t^2/2})\,dt$ is the integral over $[0, \infty)$ of the capped
+Gaussian tail envelope.
+
+This constant appears in equation (3) of Davis–Power (2026).
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Davis Power A](davis-power-a.md)
+- [The envelope integral $A$](davis-power-a.md)
 
 ## Sources
 

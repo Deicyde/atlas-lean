@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.dimensionBodySupremum
 ---
 
-# Dimension Body Supremum
+# Supremum of isotropic constants in a fixed dimension
 
-The supremum over actual full-dimensional convex bodies in dimension n.
+**Supremum of isotropic constants in a fixed dimension.** For $n \in \mathbb{N}$, this is
+$\sup_K L_K \in [0, \infty]$, the supremum of the isotropic constants $L_K$ over all
+full-dimensional convex bodies $K$ in $\mathbb{R}^n$. Full-dimensional convex bodies are taken
+only in dimension $n \ge 1$, so for $n = 0$ the supremum is over the empty family and is $0$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Full Dimensional Body](full-dimensional-body.md)
-- [Body Isotropic Constant](body-isotropic-constant.md)
+- [Full-dimensional convex body](full-dimensional-body.md)
+- [Isotropic constant of a convex body](body-isotropic-constant.md)
 
 ## Sources
 

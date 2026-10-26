@@ -5,5 +5,5 @@ navigation: module
 
 # Coprime Representative
 
-- [Exists is Coprime mul is Principal](exists-is-coprime-mul-is-principal.md)
-- [Exists mk0 eq and is Coprime](exists-mk0-eq-and-is-coprime.md)
+- [Making an ideal principal with a factor coprime to a given ideal](exists-is-coprime-mul-is-principal.md)
+- [Ideal classes have representatives coprime to a given ideal](exists-mk0-eq-and-is-coprime.md)

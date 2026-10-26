@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.singularChainsLightCondAbDerived
 ---
 
-# Singular Chains Light Cond Ab Derived
+# The singular chains of a space in the derived category
 
-The integral singular chain complex of a topological space as a derived object.
+**The singular chains of a space in the derived category.** For a topological space $X$, this
+is the integral singular chain complex of $X$, regarded as a cochain complex of discrete light
+condensed abelian groups with the $n$-chains in degree $-n$, as an object of the derived category
+of light condensed abelian groups.
 
 ## Depends on
 
-- [DLight Cond Ab](dlight-cond-ab.md)
+- [Derived category of light condensed abelian groups](dlight-cond-ab.md)
 
 ## Proof depends on
 
-- [Singular Chains Light Cond Ab Derived Functor](singular-chains-light-cond-ab-derived-fu.md)
+- [The singular chain functor into the derived category](singular-chains-light-cond-ab-derived-fu.md)
 
 ## Sources
 

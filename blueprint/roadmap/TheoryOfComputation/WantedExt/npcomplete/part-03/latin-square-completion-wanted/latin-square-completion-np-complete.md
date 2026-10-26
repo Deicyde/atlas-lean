@@ -7,13 +7,14 @@ lean: MetaMathlibExt.Complexity.NPComplete.LatinSquareCompletion.latinSquareComp
 
 # LATIN SQUARE COMPLETION is NP-complete
 
-**LATIN SQUARE COMPLETION is NP-complete.** Source: C. J. Colbourn, "The complexity of
-completing partial Latin squares" (1984).
+**LATIN SQUARE COMPLETION is NP-complete.** The decision problem LATIN SQUARE COMPLETION on
+bitstrings lies in NP, and every decision problem in NP reduces to it by a polynomial-time
+many-one reduction.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Latin Square Completion Dec](latin-square-completion-dec.md)
+- [LATIN SQUARE COMPLETION as a decision problem](latin-square-completion-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +22,4 @@ completing partial Latin squares" (1984).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.LatinSquareCompletionWanted](../../../../../../sources/v2/WantedExt.md)
+- C. J. Colbourn, "The complexity of completing partial Latin squares" (1984).

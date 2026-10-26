@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.AchromaticNumber.achromaticNumberDec
 ---
 
-# Achromatic Number Dec
+# ACHROMATIC NUMBER as a decision problem
 
-ACHROMATIC NUMBER as a decision problem over bitstrings.
+**ACHROMATIC NUMBER as a decision problem.** The ACHROMATIC NUMBER decision problem accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of instances
+$(n, E, K)$, to an instance of ACHROMATIC NUMBER that is well-formed and feasible; it rejects
+every bitstring that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ ACHROMATIC NUMBER as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Achromatic Number Feasible](achromatic-number-feasible.md)
-- [Achromatic Number Instance](achromatic-number-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible ACHROMATIC NUMBER instances](achromatic-number-feasible.md)
+- [Instances of ACHROMATIC NUMBER](achromatic-number-instance.md)
+- [Well-formed ACHROMATIC NUMBER instances](well-formed.md)
 
 ## Sources
 

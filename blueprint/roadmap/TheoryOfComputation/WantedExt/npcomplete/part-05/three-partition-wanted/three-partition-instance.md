@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ThreePartition.ThreePartitionInstance
 ---
 
-# Three Partition Instance
+# 3-partition instances
 
-A 3-partition instance: numbers (a multiple of 3 of them), target.
+**3-partition instances.** An instance of 3-PARTITION is a pair $(a, B)$ of a finite list $a$
+of natural numbers and a natural number $B$, the target sum.
 
 ## Depends on
 

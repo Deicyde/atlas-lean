@@ -4,5 +4,5 @@ navigation: module
 
 # Macias Arithmetic Progressions
 
-- [Infinite iff dense macias Topology of subset primes](infinite-iff-dense-macias-topology-of-su.md)
-- [Dense macias Topology arithmetic Progression](dense-macias-topology-arithmetic-progres.md)
+- [A nonempty set of primes is dense in the comaximal space iff it is infinite](infinite-iff-dense-macias-topology-of-su.md)
+- [Coprime arithmetic progressions are dense in the comaximal space](dense-macias-topology-arithmetic-progres.md)

@@ -6,14 +6,15 @@ statement: formalized
 lean: IsContinuousSemilinearRepresentation
 ---
 
-# Continuous Semilinear Representation
+# Continuous semilinear representation
 
-A finite free `R`-module whose topology is transported from `R`, equipped with a continuous
-semilinear action of the topological group `G`.
-
-This is the object-level content of Definition `defsemilinrep` in arXiv:2608.00845, lines
-1947–1950. The inherited `SMulDistribClass G R M` is the semilinearity identity
-`g • (r • x) = (g • r) • (g • x)`.
+**Continuous semilinear representation.** Let $G$ be a topological group, $R$ a topological
+ring and $M$ a topological abelian group that is a finite free $R$-module. Suppose that $G$ acts
+on $R$ by ring automorphisms and on $M$ by additive automorphisms, and that the actions of $G$ on
+$R$, of $G$ on $M$ and of $R$ on $M$ are jointly continuous. This is a continuous semilinear
+representation of $G$ on $M$ when $g \cdot (r x) = (g \cdot r)(g \cdot x)$ for all $g \in G$,
+$r \in R$ and $x \in M$, and the coordinate map $M \to R^n$ of a fixed basis of $M$ over $R$,
+where $n$ is the size of the basis, is a homeomorphism onto $R^n$ with the product topology.
 
 ## Depends on
 
@@ -22,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Algebra.ContinuousSemilinearRepresentation](../../../../sources/v2/MathlibExt.md)
+- arXiv:2608.00845, Definition `defsemilinrep` (lines 1947–1950); this class records its object-level content.

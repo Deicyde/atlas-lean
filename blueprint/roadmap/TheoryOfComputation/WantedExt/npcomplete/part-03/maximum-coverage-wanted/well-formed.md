@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumCoverage.WellFormed
 ---
 
-# Well Formed
+# Well-formed maximum-coverage instances
 
-Well-formedness of an instance.
+**Well-formed maximum-coverage instances.** A maximum-coverage instance $(n, S, K, M)$ is
+well formed when every subset in the list $S$ has no repeated elements and all of its elements
+are less than $n$.
 
 ## Depends on
 
-- [Maximum Coverage Instance](maximum-coverage-instance.md)
+- [Maximum-coverage instances](maximum-coverage-instance.md)
 
 ## Sources
 

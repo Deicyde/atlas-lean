@@ -7,4 +7,4 @@ navigation: module
 
 - [Prime two-sided ideal](is-prime-ideal.md)
 - [m-system](is-msystem.md)
-- [Jacobson commutativity](jacobson-commutativity.md)
+- [Jacobson's commutativity theorem](jacobson-commutativity.md)

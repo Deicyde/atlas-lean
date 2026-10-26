@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.radius_deviation_sq_le
 ---
 
-# Radius deviation sq le
+# Elementary radius deviation bound
 
-The pointwise radius fluctuation is bounded by the normalized squared-radius fluctuation.
+**Elementary radius deviation bound.** For all real numbers $r \ge 0$ and $d > 0$,
+$(r - \sqrt{d})^2 \le (r^2 - d)^2 / d$.
 
 ## Depends on
 

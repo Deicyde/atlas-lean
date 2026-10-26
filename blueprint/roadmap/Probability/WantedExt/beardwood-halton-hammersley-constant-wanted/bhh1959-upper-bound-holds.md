@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhh1959UpperBound_holds
 ---
 
-# Bhh1959 Upper Bound holds
+# Beardwood–Halton–Hammersley upper bound
 
-Source: Beardwood, Halton and Hammersley (1959), catalogue upper-bound row.
+**Beardwood–Halton–Hammersley upper bound.** The Beardwood–Halton–Hammersley constant $\beta_2$
+for uniform points in the unit square satisfies $\beta_2 \le 0.92117$.
 
 ## Depends on
 
-- [Bhh1959 Upper Bound](bhh1959-upper-bound.md)
+- [Statement of the Beardwood–Halton–Hammersley upper bound](bhh1959-upper-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Beardwood, Halton and Hammersley (1959), catalogue upper-bound row.

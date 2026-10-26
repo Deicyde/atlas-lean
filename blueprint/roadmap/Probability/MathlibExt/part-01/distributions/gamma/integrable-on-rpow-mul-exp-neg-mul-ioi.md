@@ -7,10 +7,13 @@ proof: formalized
 lean: ProbabilityTheory.integrableOn_rpow_mul_exp_neg_mul_Ioi
 ---
 
-# Integrable On rpow mul exp neg mul Ioi
+# Integrability of the scaled gamma integrand
 
-Scaled gamma integrand is integrable on `Ioi 0`. This generalizes
-`Real.GammaIntegral_convergent` (rate `1`) to any positive rate `s`.
+**Integrability of the scaled gamma integrand.** For real numbers $a > 0$ and $s > 0$, the
+function $x \mapsto x^{a-1} e^{-sx}$ is Lebesgue integrable on the open half-line $(0, \infty)$.
+
+This generalizes the convergence of the integral $\int_0^\infty x^{a-1} e^{-x} \, dx$ defining
+$\Gamma(a)$, which is the case $s = 1$.
 
 ## Depends on
 

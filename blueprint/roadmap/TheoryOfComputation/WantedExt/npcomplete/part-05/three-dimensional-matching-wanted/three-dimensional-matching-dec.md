@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ThreeDimensionalMatching.threeDimensionalMatchingDec
 ---
 
-# Three Dimensional Matching Dec
+# 3-DIMENSIONAL MATCHING as a decision problem
 
-3-DIMENSIONAL MATCHING as a decision problem over bitstrings.
+**3-DIMENSIONAL MATCHING as a decision problem.** The decision problem 3-DIMENSIONAL MATCHING
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+3-dimensional matching instance $(n, T)$ that is well formed (every coordinate of every triple in
+$T$ is less than $n$) and feasible (it has a perfect matching). Bitstrings that do not decode to
+an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ lean: MetaMathlibExt.Complexity.NPComplete.ThreeDimensionalMatching.threeDimensi
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Three Dimensional Matching Feasible](three-dimensional-matching-feasible.md)
-- [Three Dimensional Matching Instance](three-dimensional-matching-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible 3-dimensional matching instances](three-dimensional-matching-feasible.md)
+- [3-dimensional matching instances](three-dimensional-matching-instance.md)
+- [Well-formed 3-dimensional matching instances](well-formed.md)
 
 ## Sources
 

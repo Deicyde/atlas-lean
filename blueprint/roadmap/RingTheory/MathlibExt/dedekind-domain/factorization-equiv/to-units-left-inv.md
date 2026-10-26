@@ -7,18 +7,22 @@ proof: formalized
 lean: FractionalIdeal.toUnits_left_inv
 ---
 
-# To Units left inv
+# Reconstructing a fractional ideal from its prime exponents
 
-Reconstruction after taking exponents is the identity.
+**Reconstructing a fractional ideal from its prime exponents.** Let $R$ be a Dedekind domain
+with fraction field $K$, and for a unit fractional ideal $I$ of $R$ in $K$ and a height-one prime
+$v$ of $R$ write $\operatorname{val}_v(I)$ for the $v$-adic valuation of $I$. Every unit
+fractional ideal $I$ of $R$ in $K$ equals $\prod_v v^{\operatorname{val}_v(I)}$, the product over
+the height-one primes $v$ of $R$ with $\operatorname{val}_v(I) \neq 0$.
 
 ## Depends on
 
-- [Finsupp To Units](finsupp-to-units.md)
-- [Units To Finsupp](units-to-finsupp.md)
+- [Fractional ideal with prescribed prime exponents](finsupp-to-units.md)
+- [Prime exponents of an invertible fractional ideal](units-to-finsupp.md)
 
 ## Proof depends on
 
-- [Units Support Finset](units-support-finset.md)
+- [Support of the prime exponents of a fractional ideal](units-support-finset.md)
 
 ## Sources
 

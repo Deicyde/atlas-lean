@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.stabilityGauge_one
 ---
 
-# Stability Gauge one
+# The stability gauge vanishes at one
 
-Characteristic value: the displacement normalizes the gauge so that `‖1‖_K = 0`.
+**The stability gauge vanishes at one.** For every set $K \subseteq \mathbb{R}$ and all
+natural numbers $\mu$ and $\rho$, the stability gauge $n \mapsto \lVert n \rVert_K$ of $K$ with
+module $\mu$ and ratio $\rho$ takes the value $0$ at $n = 1$, that is, $\lVert 1 \rVert_K = 0$.
 
 ## Depends on
 
-- [Stability Gauge](stability-gauge.md)
+- [Stability gauge](stability-gauge.md)
 
 ## Proof depends on
 
-- [Stability Gauge Index](stability-gauge-index.md)
+- [Un-normalized stability gauge](stability-gauge-index.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ is Lebesgue (outer) measure.
 
 - [Lattice-point count of a real dilate](../lattice-point-enumerator/lattice-enumerator.md)
 - [Integer cube set](../lipschitz-image-cube-count/integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

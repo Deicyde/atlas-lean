@@ -18,7 +18,7 @@ a type $\alpha$ and $a, b \in \alpha$ are distinct, then $a < b$ or $b < a$.
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

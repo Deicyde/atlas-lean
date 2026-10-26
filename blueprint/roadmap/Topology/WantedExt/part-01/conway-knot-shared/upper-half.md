@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.upperHalf
 ---
 
-# Upper Half
+# Closed upper half-space
 
-The closed upper half-space `ℝ³ × [0, ∞)` in `ℝ³ × ℝ`. We identify
-`ℝ³ × [0, ∞)` with `B⁴ ∖ {pt}`, so slice disks live here.
+**Closed upper half-space.** The closed upper half-space in $\mathbb{R}^3 \times \mathbb{R}$
+is the set $\mathbb{R}^3 \times [0, \infty)$ of points $(x, s)$ with $s \ge 0$.
+
+We identify $\mathbb{R}^3 \times [0, \infty)$ with $B^4 \setminus \{\mathrm{pt}\}$, so slice
+disks live here.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ClosestString.closestStringDec
 ---
 
-# Closest String Dec
+# The CLOSEST STRING decision problem
 
-CLOSEST STRING as a decision problem over bitstrings.
+**The CLOSEST STRING decision problem.** The decision problem CLOSEST STRING accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
+closest-string instances, to an instance that is well formed and feasible. Bitstrings that do
+not decode to a closest-string instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ CLOSEST STRING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Closest String Feasible](closest-string-feasible.md)
-- [Closest String Instance](closest-string-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible closest-string instances](closest-string-feasible.md)
+- [Closest-string instances](closest-string-instance.md)
+- [Well-formed closest-string instances](well-formed.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MultiwayPartition.MultiwayPartitionInstance
 ---
 
-# Multiway Partition Instance
+# Multiway number partition instances
 
-A multiway-partition instance: numbers, number of parts K.
+**Multiway number partition instances.** A multiway number partition instance is a pair
+$(a, K)$ consisting of a list $a$ of natural numbers and a natural number $K$ (the number of
+parts).
 
 ## Depends on
 

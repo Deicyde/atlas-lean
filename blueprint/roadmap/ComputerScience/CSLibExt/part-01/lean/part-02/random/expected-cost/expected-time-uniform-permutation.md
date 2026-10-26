@@ -25,10 +25,10 @@ $[0, \infty]$.
 
 ## Proof depends on
 
-- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
-- [Expect ENN map](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-map.md)
-- [Expect ENN uniform Of Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-uniform-of-fintype.md)
-- [Uniform Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/uniform/uniform-fintype.md)
+- [Extended expectation](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+- [Change of variables for extended expectation](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-map.md)
+- [Extended expectation under the uniform distribution](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-uniform-of-fintype.md)
+- [Uniform distribution on a finite type](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/uniform/uniform-fintype.md)
 
 ## Sources
 

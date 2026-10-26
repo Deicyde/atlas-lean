@@ -5,8 +5,8 @@ navigation: module
 
 # Uniform Body
 
-- [Body Density](body-density.md)
-- [Body Log Concave Law](body-log-concave-law.md)
-- [Body Density entropy](body-density-entropy.md)
-- [Body Log Concave Law isotropic Constant](body-log-concave-law-isotropic-constant.md)
-- [Dimension Body Supremum le law Supremum](dimension-body-supremum-le-law-supremum.md)
+- [Uniform density of a convex body](body-density.md)
+- [Uniform law of a convex body](body-log-concave-law.md)
+- [Entropy of the uniform density of a convex body](body-density-entropy.md)
+- [The entropy and volume isotropic constants of a convex body agree](body-log-concave-law-isotropic-constant.md)
+- [Body isotropic constants are bounded by the law supremum](dimension-body-supremum-le-law-supremum.md)

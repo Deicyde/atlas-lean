@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.minOnesThreeSatDec
 ---
 
-# Min Ones Three Sat Dec
+# The MINIMUM ONES 3-SAT decision problem
 
-MINIMUM ONES 3-SAT as a decision problem over bitstrings.
+**The MINIMUM ONES 3-SAT decision problem.** MINIMUM ONES 3-SAT is the decision problem that
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+triple $(n, \varphi, K)$ of a natural number $n$, a CNF formula $\varphi$ and a natural number $K$
+such that every clause of $\varphi$ is a list of exactly three literals whose variables are all
+less than $n$, and some assignment of truth values to the variables $0, \dots, n-1$ satisfies
+$\varphi$ and sets at most $K$ of them to true. Every other bitstring is rejected.
 
 ## Depends on
 
@@ -25,9 +30,9 @@ MINIMUM ONES 3-SAT as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Min Ones Three Sat Feasible](min-ones-three-sat-feasible.md)
-- [Min Ones Three Sat Instance](min-ones-three-sat-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MINIMUM ONES 3-SAT instances](min-ones-three-sat-feasible.md)
+- [MINIMUM ONES 3-SAT instances](min-ones-three-sat-instance.md)
+- [Well-formed MINIMUM ONES 3-SAT instances](well-formed.md)
 
 ## Sources
 

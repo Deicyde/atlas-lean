@@ -7,11 +7,17 @@ proof: formalized
 lean: MathlibExt.Probability.LawIteratedLogarithmWanted.law_of_the_iterated_logarithm_of_memLp
 ---
 
-# Law of the iterated logarithm of mem Lp
+# Law of the iterated logarithm, square-integrable form
 
-For an i.i.d. family of real random variables in `MemLp 2` with mean zero and variance one, the
-normalized partial sums have limsup `1` and liminf `-1` almost surely. The hypothesis
-`Integrable (X 0) μ` is omitted because it follows from `MemLp (X 0) 2 μ` on a probability space.
+**Law of the iterated logarithm, square-integrable form.** Let $X_0, X_1, \dots$ be independent,
+identically distributed, measurable real random variables on a probability space with
+$\mathbb{E}[X_0^2] < \infty$, $\mathbb{E}[X_0] = 0$ and $\operatorname{Var}(X_0) = 1$, and let
+$S_n = X_0 + \dots + X_{n-1}$. Then almost surely
+$\limsup_{n \to \infty} S_n / \sqrt{2 n \log \log n} = 1$ and
+$\liminf_{n \to \infty} S_n / \sqrt{2 n \log \log n} = -1$.
+
+Integrability of $X_0$ is not assumed separately, since it follows from square integrability on a
+probability space.
 
 ## Depends on
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CardinalitySubsetSum.CardinalitySubsetSumFeasible
 ---
 
-# Cardinality Subset Sum Feasible
+# Feasibility of an exact-cardinality subset-sum instance
 
-A sublist of exactly `K` numbers summing to the target.
+**Feasibility of an exact-cardinality subset-sum instance.** An exact-cardinality subset-sum
+instance $(a, K, T)$ is feasible when some subsequence of the list $a$ (entries kept in order, not
+necessarily contiguous) has exactly $K$ entries and sum $T$.
 
 ## Depends on
 
-- [Cardinality Subset Sum Instance](cardinality-subset-sum-instance.md)
+- [Exact-cardinality subset-sum instances](cardinality-subset-sum-instance.md)
 
 ## Sources
 

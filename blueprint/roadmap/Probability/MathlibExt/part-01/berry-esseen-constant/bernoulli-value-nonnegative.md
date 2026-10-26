@@ -7,19 +7,20 @@ proof: formalized
 lean: BerryEsseenConstant.bernoulliValue_nonnegative
 ---
 
-# Bernoulli Value nonnegative
+# The Bernoulli Berry–Esseen constant is nonnegative
 
-The subclass infimum is nonnegative.
+**The Bernoulli Berry–Esseen constant is nonnegative.** The infimum of the real numbers that
+are admissible Berry–Esseen coefficients for the Bernoulli subclass is nonnegative.
 
 ## Depends on
 
-- [Bernoulli Value](bernoulli-value.md)
+- [Bernoulli Berry–Esseen constant](bernoulli-value.md)
 
 ## Proof depends on
 
-- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
-- [Bernoulli Admissible nonempty](bernoulli-admissible-nonempty.md)
-- [Is Bernoulli Admissible nonnegative](is-bernoulli-admissible-nonnegative.md)
+- [Admissible Berry–Esseen coefficient for two-point laws](is-bernoulli-admissible.md)
+- [Bernoulli-admissible coefficients exist](bernoulli-admissible-nonempty.md)
+- [Bernoulli-admissible coefficients are nonnegative](is-bernoulli-admissible-nonnegative.md)
 
 ## Sources
 

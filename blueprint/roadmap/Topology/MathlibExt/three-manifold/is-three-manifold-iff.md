@@ -7,14 +7,16 @@ proof: formalized
 lean: isThreeManifold_iff
 ---
 
-# Is Three Manifold iff
+# Characterization of topological 3-manifolds
 
-`M` is a topological 3-manifold iff it is Hausdorff and second-countable, given that it is
-locally homeomorphic to `ℝ³`.
+**Characterization of topological 3-manifolds.** Let $M$ be a topological space equipped
+with an atlas of charts modelled on $\mathbb{R}^3$, so that $M$ is locally homeomorphic to
+$\mathbb{R}^3$. Then $M$ is a topological 3-manifold if and only if $M$ is Hausdorff and
+second-countable.
 
 ## Depends on
 
-- [Is Three Manifold](is-three-manifold.md)
+- [Topological 3-manifold](is-three-manifold.md)
 
 ## Sources
 

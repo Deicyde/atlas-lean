@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.OneInThreeSat.WellFormed
 ---
 
-# Well Formed
+# Well-formed 1-in-3-SAT instances
 
-Well-formedness of an instance.
+**Well-formed 1-in-3-SAT instances.** A 1-in-3-SAT instance $(n, \varphi)$ is well formed
+when every clause of $\varphi$ has exactly three literals and every literal $(x, b)$ in it has
+variable index $x < n$.
 
 ## Depends on
 
-- [One In Three Sat Instance](one-in-three-sat-instance.md)
+- [1-in-3-SAT instances](one-in-three-sat-instance.md)
 
 ## Proof depends on
 

@@ -7,10 +7,12 @@ proof: formalized
 lean: IsIntegralClosure.existsUnique_primesOver_maximalIdeal_of_isAdicComplete
 ---
 
-# Exists Unique primes Over maximal Ideal of is Adic Complete
+# Exactly one prime lies over the maximal ideal of a complete DVR
 
-There is a unique prime of the integral closure above the maximal ideal of
-an adically complete DVR.
+**Exactly one prime lies over the maximal ideal of a complete DVR.** Let $A$ be a discrete
+valuation ring that is complete with respect to its maximal ideal $\mathfrak m$, $K$ its fraction
+field, $L$ a finite separable extension of $K$, and $B$ the integral closure of $A$ in $L$. Then
+there is exactly one prime ideal of $B$ whose preimage under $A \to B$ is $\mathfrak m$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Local Ring of is Adic Complete](is-local-ring-of-is-adic-complete.md)
+- [The integral closure of a complete DVR is local](is-local-ring-of-is-adic-complete.md)
 
 ## Sources
 

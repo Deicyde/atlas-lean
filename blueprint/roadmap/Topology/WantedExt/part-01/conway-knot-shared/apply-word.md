@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.applyWord
 ---
 
-# Apply Word
+# Tracing a strand through a braid word
 
-Apply all braid generators in `word` starting from crossing index `k`,
-accumulating vertices in `state`.
+**Tracing a strand through a braid word.** Given a traversal state $s$, a braid word
+$w_0 w_1 \cdots w_{m-1}$ (a list of integers) and a starting index $k \in \mathbb{N}$, the
+one-crossing step is applied to the state for each generator in turn, starting from $s$: the
+generator $w_j$ is applied with top height $-(k + j)$ and bottom height $-(k + j + 1)$. The
+result is the final state; for the empty word it is $s$.
 
 ## Depends on
 
-- [State](state.md)
+- [Braid closure traversal state](state.md)
 
 ## Proof depends on
 
-- [Apply Crossing](apply-crossing.md)
+- [Tracing a strand through one crossing](apply-crossing.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ mass interpretation.)
 
 ## Depends on
 
-- [Pgf](pgf.md)
+- [Probability generating function](pgf.md)
 
 ## Sources
 

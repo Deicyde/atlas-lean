@@ -1,3 +1,3 @@
 # Manifold
 
-- [Scottish Book29 Wanted](identity-component-of-sphere-homeomorphi.md)
+- [Normal subgroups of the identity component of the homeomorphism group of a sphere](identity-component-of-sphere-homeomorphi.md)

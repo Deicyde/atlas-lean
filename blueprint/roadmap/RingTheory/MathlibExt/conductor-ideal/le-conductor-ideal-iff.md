@@ -7,18 +7,19 @@ proof: formalized
 lean: Subalgebra.le_conductorIdeal_iff
 ---
 
-# Le conductor Ideal iff
+# Universal property of the conductor ideal
 
-Universal property: an ideal lies in the conductor ideal of `A` if and only
-if it lies in `A`.
+**Universal property of the conductor ideal.** Let $R$ and $S$ be commutative semirings with
+$S$ an $R$-algebra, let $A$ be an $R$-subalgebra of $S$, and let $I$ be an ideal of $S$. Then $I$
+is contained in the conductor ideal of $A$ if and only if $I$ is contained in $A$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Mem conductor Ideal](mem-conductor-ideal.md)
+- [Membership in the conductor ideal](mem-conductor-ideal.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: BerryEsseenModel.normalizedLaw_probability
 ---
 
-# Normalized Law probability
+# The normalized law is a probability measure
 
-The normalized law is a probability measure.
+**The normalized law is a probability measure.** For every standardized law $\mu$ on
+$\mathbb{R}$ (a probability measure with mean $0$, variance $1$ and finite third absolute
+moment) and every positive integer $n$, the normalized law of $\mu$ at $n$ is a probability
+measure.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Normalized Law](normalized-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [Law of the normalized sum](normalized-law.md)
 
 ## Proof depends on
 
-- [Iid Law](iid-law.md)
-- [Iid Law probability](iid-law-probability.md)
-- [Normalized Sum](normalized-sum.md)
+- [I.i.d. product law](iid-law.md)
+- [The i.i.d. product of a standardized law is a probability measure](iid-law-probability.md)
+- [Normalized sum](normalized-sum.md)
 
 ## Sources
 

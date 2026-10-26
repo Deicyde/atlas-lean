@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.rademacherMeasure
 ---
 
-# Rademacher Measure
+# Rademacher measure on the real line
 
-We define the Rademacher measure as the probability measure on `ℝ`, which assigns
-`1/2` mass to `1` and `1/2` mass to `-1`.
+**Rademacher measure on the real line.** The Rademacher measure is the probability measure on
+$\mathbb{R}$ that assigns mass $1/2$ to $1$ and mass $1/2$ to $-1$.
 
 ## Depends on
 

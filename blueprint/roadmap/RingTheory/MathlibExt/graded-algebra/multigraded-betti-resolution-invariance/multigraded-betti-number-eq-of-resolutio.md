@@ -7,19 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.multigradedBettiNumber_eq_of_resolutionComparison
 ---
 
-# Multigraded Betti Number eq of resolution Comparison
+# Betti numbers agree across comparable resolutions
 
-Conditional resolution invariance of multigraded Betti numbers: a
-`MultigradedResolutionComparison` forces the two `multigradedBettiNumber`
-families to agree in every multidegree `α` and homological index `i`.
+**Betti numbers agree across comparable resolutions.** Let $K$ be a field, let
+$R = K[x_1, \dots, x_n]$, and let $M$ be a $\mathbb{Z}^n$-graded $R$-module with two
+multigraded free resolutions, each equipped with multigraded base change data, whose
+degree-$\alpha$ component complexes are $C^\alpha$ and $D^\alpha$ for $\alpha \in \mathbb{Z}^n$.
+If the two are related by a multigraded resolution comparison, that is, for every $\alpha$
+a chain-homotopy equivalence between $C^\alpha$ and $D^\alpha$, then the multigraded Betti
+numbers defined by the two base change data agree in every multidegree
+$\alpha \in \mathbb{Z}^n$ and every homological index $i \in \mathbb{N}$.
 
 ## Depends on
 
-- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
-- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
-- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
-- [Multigraded Resolution Comparison](multigraded-resolution-comparison.md)
-- [Multigraded Betti Number](../multigraded-betti/multigraded-betti-number.md)
+- [Multigraded base change data](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded free resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded modules over a polynomial ring](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Multigraded resolution comparison](multigraded-resolution-comparison.md)
+- [Multigraded Betti number](../multigraded-betti/multigraded-betti-number.md)
 
 ## Sources
 

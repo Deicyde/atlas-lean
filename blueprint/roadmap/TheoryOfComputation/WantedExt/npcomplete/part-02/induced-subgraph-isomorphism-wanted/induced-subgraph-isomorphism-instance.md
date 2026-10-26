@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.InducedSubgraphIsomorphism.InducedSubgraphIsomorphismInstance
 ---
 
-# Induced Subgraph Isomorphism Instance
+# Induced-subgraph-isomorphism instance
 
-An induced-subgraph-isomorphism instance: host vertex count, host edges, pattern vertex
-count, pattern edges.
+**Induced-subgraph-isomorphism instance.** An instance of INDUCED SUBGRAPH ISOMORPHISM is a
+quadruple $(n, E, k, F)$ consisting of a natural number $n$ (the number of host vertices), a list
+$E$ of pairs of natural numbers (the host edges), a natural number $k$ (the number of pattern
+vertices) and a list $F$ of pairs of natural numbers (the pattern edges).
 
 ## Depends on
 

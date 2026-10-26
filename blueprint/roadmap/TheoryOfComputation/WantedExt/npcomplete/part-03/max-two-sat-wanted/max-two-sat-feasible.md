@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaxTwoSat.MaxTwoSatFeasible
 ---
 
-# Max Two Sat Feasible
+# Feasible MAX-2SAT instances
 
-An assignment satisfying at least `K` clauses.
+**Feasible MAX-2SAT instances.** A MAX-2SAT instance $(n, \varphi, K)$ is feasible when there
+are truth values $a_0, \dots, a_{n-1}$ such that at least $K$ of the clauses in the list $\varphi$,
+counted with multiplicity, are satisfied by the assignment $v$ with $v(x) = a_x$ for $x < n$ and
+$v(x) = \mathrm{false}$ for $x \ge n$.
 
 ## Depends on
 
-- [Max Two Sat Instance](max-two-sat-instance.md)
+- [MAX-2SAT instances](max-two-sat-instance.md)
 
 ## Proof depends on
 

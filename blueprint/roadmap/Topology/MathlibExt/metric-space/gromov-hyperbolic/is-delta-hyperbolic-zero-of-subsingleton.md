@@ -7,9 +7,10 @@ proof: formalized
 lean: Metric.isDeltaHyperbolic_zero_of_subsingleton
 ---
 
-# Is Delta Hyperbolic zero of subsingleton
+# A space with at most one point is $0$-hyperbolic
 
-A subsingleton space (in particular a single point) is `0`-hyperbolic: it is an `ℝ`-tree.
+**A space with at most one point is $0$-hyperbolic.** Every pseudometric space $X$ with at
+most one point is $0$-hyperbolic.
 
 ## Depends on
 

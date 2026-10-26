@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.thinShellWidth_le_sqrt_constant
 ---
 
-# Thin Shell Width le sqrt constant
+# Thin-shell width is at most the square root of the variance constant
 
-A variance bound gives a simultaneous dimension-independent bound on shell width.
+**Thin-shell width is at most the square root of the variance constant.** For every
+dimension $n \ge 1$, the thin-shell width in dimension $n$ is at most the square root of the
+thin-shell variance constant, computed in $[0, \infty]$ with $\sqrt{\infty} = \infty$.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
-- [Thin Shell Width](thin-shell-width.md)
+- [Thin-shell variance constant](thin-shell-variance-constant.md)
+- [Thin-shell width](thin-shell-width.md)
 
 ## Proof depends on
 
-- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
-- [Radius fluctuation le constant](radius-fluctuation-le-constant.md)
+- [Isotropic log-concave probability measures](is-isotropic-log-concave.md)
+- [The thin-shell variance constant bounds the radius fluctuation](radius-fluctuation-le-constant.md)
 
 ## Sources
 

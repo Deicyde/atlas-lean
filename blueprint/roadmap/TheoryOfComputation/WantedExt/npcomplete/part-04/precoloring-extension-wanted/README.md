@@ -4,8 +4,8 @@ navigation: module
 
 # Precoloring Extension
 
-- [Precoloring Extension Instance](precoloring-extension-instance.md)
-- [Well Formed](well-formed.md)
-- [Precoloring Extension Feasible](precoloring-extension-feasible.md)
-- [Precoloring Extension Dec](precoloring-extension-dec.md)
+- [Instances of PRECOLORING EXTENSION](precoloring-extension-instance.md)
+- [Well-formed precoloring extension instances](well-formed.md)
+- [Feasible precoloring extension instances](precoloring-extension-feasible.md)
+- [PRECOLORING EXTENSION as a decision problem](precoloring-extension-dec.md)
 - [PRECOLORING EXTENSION is NP-complete](precoloring-extension-np-complete.md)

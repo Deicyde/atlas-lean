@@ -7,10 +7,12 @@ proof: formalized
 lean: Ideal.exists_isCoprime_mul_isPrincipal
 ---
 
-# Exists is Coprime mul is Principal
+# Making an ideal principal with a factor coprime to a given ideal
 
-A nonzero ideal can be multiplied by an ideal coprime to a prescribed nonzero ideal so that
-the product is principal.
+**Making an ideal principal with a factor coprime to a given ideal.** Let $A$ be a
+Dedekind domain and let $I$ and $\mathfrak{a}$ be nonzero ideals of $A$. Then there is an
+ideal $J$ of $A$ with $J + \mathfrak{a} = A$ such that the product $IJ$ is a principal
+ideal.
 
 ## Depends on
 

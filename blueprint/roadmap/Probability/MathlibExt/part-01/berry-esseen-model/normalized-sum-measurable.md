@@ -7,13 +7,15 @@ proof: formalized
 lean: BerryEsseenModel.normalizedSum_measurable
 ---
 
-# Normalized Sum measurable
+# Measurability of the normalized sum
 
-The sample map is measurable, so its pushforward is not a fallback measure.
+**Measurability of the normalized sum.** For every positive integer $n$, the map sending a real
+sequence $\omega = (\omega_0, \omega_1, \dots)$ to $(\omega_0 + \dots + \omega_{n-1})/\sqrt{n}$ is
+measurable with respect to the product $\sigma$-algebra on $\mathbb{R}^{\mathbb{N}}$.
 
 ## Depends on
 
-- [Normalized Sum](normalized-sum.md)
+- [Normalized sum](normalized-sum.md)
 
 ## Sources
 

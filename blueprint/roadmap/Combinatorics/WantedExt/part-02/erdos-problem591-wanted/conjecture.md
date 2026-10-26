@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Simple Graph](../../../../SetTheory/MathlibExt/cardinal/ordinal-cardinal-ramsey.md)
+- [Ordinal–cardinal Ramsey property](../../../../SetTheory/MathlibExt/cardinal/ordinal-cardinal-ramsey.md)
 
 ## Sources
 

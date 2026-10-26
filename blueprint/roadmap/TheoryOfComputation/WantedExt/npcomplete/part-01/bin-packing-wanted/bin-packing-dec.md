@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BinPacking.binPackingDec
 ---
 
-# Bin Packing Dec
+# The bin packing decision problem
 
-BIN PACKING as a decision problem over bitstrings.
+**The bin packing decision problem.** BIN PACKING is the decision problem that accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of bin packing
+instances, to a feasible instance; it rejects every bitstring that fails to decode.
 
 ## Depends on
 
@@ -23,8 +25,8 @@ BIN PACKING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Bin Packing Feasible](bin-packing-feasible.md)
-- [Bin Packing Instance](bin-packing-instance.md)
+- [Feasible bin packing instances](bin-packing-feasible.md)
+- [Bin packing instances](bin-packing-instance.md)
 
 ## Sources
 

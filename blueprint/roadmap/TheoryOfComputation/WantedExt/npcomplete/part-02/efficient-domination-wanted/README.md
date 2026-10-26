@@ -4,9 +4,9 @@ navigation: module
 
 # Efficient Domination
 
-- [Efficient Domination Instance](efficient-domination-instance.md)
-- [Graph](graph.md)
-- [Well Formed](well-formed.md)
-- [Efficient Domination Feasible](efficient-domination-feasible.md)
-- [Efficient Domination Dec](efficient-domination-dec.md)
+- [Efficient Domination instances](efficient-domination-instance.md)
+- [Graph of an Efficient Domination instance](graph.md)
+- [Well-formed Efficient Domination instances](well-formed.md)
+- [Instances with an efficient dominating set](efficient-domination-feasible.md)
+- [EFFICIENT DOMINATION (PERFECT CODE) as a decision problem](efficient-domination-dec.md)
 - [EFFICIENT DOMINATION (PERFECT CODE) is NP-complete](efficient-domination-np-complete.md)

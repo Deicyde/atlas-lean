@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.RomanDomination.WellFormed
 ---
 
-# Well Formed
+# Well-formed Roman domination instances
 
-Well-formedness of an instance.
+**Well-formed Roman domination instances.** An instance $(n, E, K)$ of ROMAN DOMINATION is
+well formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ has
+$u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$.
 
 ## Depends on
 
-- [Roman Domination Instance](roman-domination-instance.md)
+- [Roman domination instances](roman-domination-instance.md)
 
 ## Sources
 

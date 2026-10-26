@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.maciasTopology₁
 ---
 
-# Macias Topology₁
+# Macías's coprime topology without 1
 
-The paper's subspace topology `τ₁` on `ℕ ∖ {1}`.
+**Macías's coprime topology without 1.** The topology $\tau_1$ on the set of positive integers
+different from $1$ is the subspace topology induced by Macías's coprime topology $\tau$ on the
+positive integers.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Macias Topology](macias-topology.md)
+- [Macías's coprime topology](macias-topology.md)
 
 ## Sources
 

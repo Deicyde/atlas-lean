@@ -4,6 +4,6 @@ navigation: module
 
 # Manolescu Triangulation
 
-- [Closed Top Manifold](closed-top-manifold.md)
-- [Triangulable](triangulable.md)
-- [Manolescu triangulation disproof](manolescu-triangulation-disproof.md)
+- [Closed topological manifold](closed-top-manifold.md)
+- [Triangulable closed manifold](triangulable.md)
+- [Manolescu's disproof of the triangulation conjecture](manolescu-triangulation-disproof.md)

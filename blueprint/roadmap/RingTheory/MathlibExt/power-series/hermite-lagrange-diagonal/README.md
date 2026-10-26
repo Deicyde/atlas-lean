@@ -5,5 +5,5 @@ navigation: module
 
 # Hermite Lagrange Diagonal
 
-- [Coeff mul pow eq coeff of eq X mul subst](coeff-mul-pow-eq-coeff-of-eq-x-mul-subst.md)
-- [Hermite lagrange diagonal formula](hermite-lagrange-diagonal-formula.md)
+- [Hermite's diagonal form of Lagrange inversion without side conditions](coeff-mul-pow-eq-coeff-of-eq-x-mul-subst.md)
+- [Hermite's diagonal form of Lagrange inversion](hermite-lagrange-diagonal-formula.md)

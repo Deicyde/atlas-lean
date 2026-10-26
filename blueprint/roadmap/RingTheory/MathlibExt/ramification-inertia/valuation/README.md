@@ -5,6 +5,6 @@ navigation: module
 
 # Valuation
 
-- [Emultiplicity maximal Ideal span eq add Val](emultiplicity-maximal-ideal-span-eq-add.md)
-- [Add Val algebra Map eq ramification Idx mul](add-val-algebra-map-eq-ramification-idx.md)
-- [Is Unit nat Cast iff ring Char not dvd](is-unit-nat-cast-iff-ring-char-not-dvd.md)
+- [Multiplicity of the maximal ideal equals the additive valuation](emultiplicity-maximal-ideal-span-eq-add.md)
+- [Additive valuations scale by the ramification index](add-val-algebra-map-eq-ramification-idx.md)
+- [Natural numbers that are units in a local ring](is-unit-nat-cast-iff-ring-char-not-dvd.md)

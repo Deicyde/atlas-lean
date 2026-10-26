@@ -7,10 +7,14 @@ proof: formalized
 lean: IsDiscreteValuationRing.addVal_algebraMap_eq_ramificationIdx_mul
 ---
 
-# Add Val algebra Map eq ramification Idx mul
+# Additive valuations scale by the ramification index
 
-Scaling of `addVal` along a torsion-free local DVR extension by the
-current unprimed ramification index.
+**Additive valuations scale by the ramification index.** Let $A$ and $B$ be discrete
+valuation rings, and let $B$ be an $A$-algebra that is torsion-free as an $A$-module and whose
+structure map $\varphi \colon A \to B$ is a local homomorphism. Let $v_A$ and $v_B$ be the
+normalized additive valuations of $A$ and $B$, with values in $\mathbb{N} \cup \{\infty\}$, and
+let $e$ be the ramification index of the maximal ideal of $B$ over $A$. Then
+$v_B(\varphi(x)) = e \cdot v_A(x)$ for every $x \in A$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Emultiplicity maximal Ideal span eq add Val](emultiplicity-maximal-ideal-span-eq-add.md)
+- [Multiplicity of the maximal ideal equals the additive valuation](emultiplicity-maximal-ideal-span-eq-add.md)
 
 ## Sources
 

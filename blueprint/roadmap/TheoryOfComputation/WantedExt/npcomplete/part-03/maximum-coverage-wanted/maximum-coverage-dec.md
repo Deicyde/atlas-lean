@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumCoverage.maximumCoverageDec
 ---
 
-# Maximum Coverage Dec
+# The MAXIMUM COVERAGE decision problem
 
-MAXIMUM COVERAGE as a decision problem over bitstrings.
+**The MAXIMUM COVERAGE decision problem.** MAXIMUM COVERAGE is the decision problem that
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+maximum-coverage instance $(n, S, K, M)$ that is well formed and feasible: every subset in the
+list $S$ has no repeated elements and only elements less than $n$, and some sublist of $S$ with
+at most $K$ entries covers at least $M$ distinct elements less than $n$. Bitstrings that do not
+decode are rejected.
 
 ## Depends on
 
@@ -23,9 +28,9 @@ MAXIMUM COVERAGE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Maximum Coverage Feasible](maximum-coverage-feasible.md)
-- [Maximum Coverage Instance](maximum-coverage-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible maximum-coverage instances](maximum-coverage-feasible.md)
+- [Maximum-coverage instances](maximum-coverage-instance.md)
+- [Well-formed maximum-coverage instances](well-formed.md)
 
 ## Sources
 

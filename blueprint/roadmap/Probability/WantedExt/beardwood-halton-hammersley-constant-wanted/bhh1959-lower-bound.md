@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhh1959LowerBound
 ---
 
-# Bhh1959 Lower Bound
+# Statement of the Beardwood–Halton–Hammersley lower bound
 
-[BHH1959] reported lower bound `0.625 ≤ β_2`.
+**Statement of the Beardwood–Halton–Hammersley lower bound.** This is the proposition that the
+Beardwood–Halton–Hammersley constant $\beta_2$ for uniform points in the unit square satisfies
+$\beta_2 \ge 5/8 = 0.625$, the lower bound reported by Beardwood, Halton and Hammersley (1959).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

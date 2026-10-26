@@ -6,23 +6,26 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.HasSmoothRepresentative
 ---
 
-# Has Smooth Representative
+# Smooth representative of a PL knot
 
-A smooth knot `J` is a *smooth representative* of the PL knot `K` if
-their images are unoriented topologically ambient isotopic in `ℝ³`. For
-tame curves (which both sides are by construction) this is equivalent to
-the usual smooth/PL knot type relation.
+**Smooth representative of a PL knot.** A smooth knot $J$ is a smooth representative of
+the piecewise-linear knot $K$ if the image of $J$ and the image of $K$ are unoriented
+topologically ambient isotopic in $\mathbb{R}^3$: some topological ambient isotopy $(H_t)$ of
+$\mathbb{R}^3$ satisfies $H_1(\operatorname{im} J) = \operatorname{im} K$.
+
+When the polyline $K$ is simple, both curves are tame, and this agrees with the usual relation
+of having the same smooth/PL knot type.
 
 ## Depends on
 
-- [Knot](knot.md)
-- [PLKnot](plknot.md)
+- [Oriented smooth knot](knot.md)
+- [PL knot (closed polyline)](plknot.md)
 
 ## Proof depends on
 
-- [Image](image.md)
-- [R3](r3.md)
-- [Unoriented Top Amb Isotopic](unoriented-top-amb-isotopic.md)
+- [Image of a PL knot](image.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
+- [Topological ambient isotopy of subsets](unoriented-top-amb-isotopic.md)
 
 ## Sources
 

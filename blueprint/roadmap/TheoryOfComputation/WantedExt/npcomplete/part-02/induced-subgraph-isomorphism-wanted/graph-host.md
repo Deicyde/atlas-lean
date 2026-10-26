@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.InducedSubgraphIsomorphism.GraphHost
 ---
 
-# Graph Host
+# Host graph of an induced-subgraph-isomorphism instance
 
-The host graph.
+**Host graph of an induced-subgraph-isomorphism instance.** For an instance $(n, E, k, F)$,
+the host graph is the graph of the edge list $E$ on $n$ vertices: the simple graph on
+$\{0, \dots, n - 1\}$ in which distinct vertices $i$ and $j$ are adjacent when $(i, j)$ or
+$(j, i)$ belongs to $E$.
 
 ## Depends on
 
-- [Induced Subgraph Isomorphism Instance](induced-subgraph-isomorphism-instance.md)
+- [Induced-subgraph-isomorphism instance](induced-subgraph-isomorphism-instance.md)
 
 ## Proof depends on
 

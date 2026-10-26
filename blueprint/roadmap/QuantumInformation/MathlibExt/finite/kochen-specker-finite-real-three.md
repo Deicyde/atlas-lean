@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three
 ---
 
-# Kochen Specker
+# Kochen–Specker theorem in $\mathbb{R}^3$
 
-Finite Kochen-Specker in real dimension 3: there exists a finite set of unit vectors in `ℝ³` with no
-`{0,1}`-valuation satisfying both orthogonal non-contextuality and completeness on triples from the
-set.
+**Kochen–Specker theorem in $\mathbb{R}^3$.** There exist a natural number $N$ and unit vectors
+$v_1, \dots, v_N \in \mathbb{R}^3$ such that no function $c : \{1, \dots, N\} \to \{0, 1\}$
+satisfies both of the following: $c(i) + c(j) \le 1$ whenever $v_i$ and $v_j$ are orthogonal, and
+$c(i) + c(j) + c(k) = 1$ whenever $(v_i, v_j, v_k)$ is an orthonormal triple.
 
 ## Depends on
 

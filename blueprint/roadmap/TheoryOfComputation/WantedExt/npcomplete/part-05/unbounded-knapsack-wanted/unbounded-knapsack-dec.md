@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.unboundedKnapsackDec
 ---
 
-# Unbounded Knapsack Dec
+# Unbounded knapsack as a decision problem
 
-UNBOUNDED KNAPSACK as a decision problem over bitstrings.
+**Unbounded knapsack as a decision problem.** The unbounded knapsack problem is the decision
+problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding of unbounded knapsack instances, to a feasible instance. Bitstrings that fail to decode
+are rejected.
 
 ## Depends on
 
@@ -23,8 +26,8 @@ UNBOUNDED KNAPSACK as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Unbounded Knapsack Feasible](unbounded-knapsack-feasible.md)
-- [Unbounded Knapsack Instance](unbounded-knapsack-instance.md)
+- [Feasible unbounded knapsack instances](unbounded-knapsack-feasible.md)
+- [Unbounded knapsack instances](unbounded-knapsack-instance.md)
 
 ## Sources
 

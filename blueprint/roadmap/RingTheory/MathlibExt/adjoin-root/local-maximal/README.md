@@ -7,11 +7,11 @@ navigation: module
 
 ## Polynomial
 
-- [Comap map Ring Hom bot eq map C ker](comap-map-ring-hom-bot-eq-map-c-ker.md)
+- [Kernel of reducing polynomial coefficients modulo an ideal](comap-map-ring-hom-bot-eq-map-c-ker.md)
 
 ## Adjoin Root
 
-- [Exists irreducible factor of is maximal](exists-irreducible-factor-of-is-maximal.md)
-- [Is maximal of irreducible factor](is-maximal-of-irreducible-factor.md)
-- [Is maximal iff irreducible factor](is-maximal-iff-irreducible-factor.md)
-- [Is maximal iff irreducible factor of monic](is-maximal-iff-irreducible-factor-of-mon.md)
+- [Maximal ideals of a monogenic algebra over a local ring come from residual irreducible factors](exists-irreducible-factor-of-is-maximal.md)
+- [Residual irreducible factors give maximal ideals of a monogenic algebra](is-maximal-of-irreducible-factor.md)
+- [Maximal ideals of a monogenic algebra over a local ring](is-maximal-iff-irreducible-factor.md)
+- [Maximal ideals of a monogenic algebra over a local ring, monic case](is-maximal-iff-irreducible-factor-of-mon.md)

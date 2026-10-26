@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhhConstantFor
 ---
 
-# Bhh Constant For
+# BHH constant of a sampling law
 
-A real-valued BHH constant for an explicit law, canonically constructed as the infimum of all
-real values satisfying the BHH limit characterization. The source theorem below asserts that the
-unit-square value satisfies that characterization and is unique. No existence theorem is assumed.
+**BHH constant of a sampling law.** For a measure $\mu$ on the plane, the BHH constant of $\mu$
+is the infimum of the set of real numbers $\beta$ that are BHH limits for $\mu$. The infimum of a
+set of reals that is empty or not bounded below is taken to be $0$.
+
+No existence theorem is assumed: the definition does not presuppose that a BHH limit exists.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ unit-square value satisfies that characterization and is unique. No existence th
 
 ## Proof depends on
 
-- [Bhh Limit Values](bhh-limit-values.md)
+- [BHH limit values of a sampling law](bhh-limit-values.md)
 
 ## Sources
 

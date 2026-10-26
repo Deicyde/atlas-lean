@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.isolated_le_componentCount
 ---
 
-# Isolated le component Count
+# Isolated components are counted in the component count
 
-Isolated crossingless components are counted in the total.
+**Isolated components are counted in the component count.** For every dart diagram $D$,
+the number of isolated crossingless components recorded in $D$ is at most the number of
+components of $D$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Component Count](component-count.md)
+- [Dart diagram](dart-diagram.md)
+- [Number of components of a dart diagram](component-count.md)
 
 ## Proof depends on
 
-- [Dart](dart.md)
-- [Component Setoid](component-setoid.md)
+- [Darts of a dart diagram](dart.md)
+- [Strand-connectivity relation on darts](component-setoid.md)
 
 ## Sources
 

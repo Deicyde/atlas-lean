@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SetCover.setCoverDec
 ---
 
-# Set Cover Dec
+# The SET COVER decision problem
 
-SET COVER as a decision problem over bitstrings.
+**The SET COVER decision problem.** SET COVER is the decision problem that accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a set-cover instance
+$(n, C, K)$ that is both well formed and feasible: every list in $C$ has no repeated entries and
+only entries less than $n$, and some sublist of $C$ with at most $K$ entries contains every natural
+number $y < n$ in one of its lists. Bitstrings that do not decode to a set-cover instance are
+rejected.
 
 ## Depends on
 
@@ -23,9 +28,9 @@ SET COVER as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Set Cover Feasible](set-cover-feasible.md)
-- [Set Cover Instance](set-cover-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible set-cover instances](set-cover-feasible.md)
+- [Set-cover instances](set-cover-instance.md)
+- [Well-formed set-cover instances](well-formed.md)
 
 ## Sources
 

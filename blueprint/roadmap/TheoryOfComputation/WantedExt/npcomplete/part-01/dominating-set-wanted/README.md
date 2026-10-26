@@ -4,9 +4,9 @@ navigation: module
 
 # Dominating Set
 
-- [Dominating Set Instance](dominating-set-instance.md)
-- [Graph](graph.md)
-- [Well Formed](well-formed.md)
-- [Dominating Set Feasible](dominating-set-feasible.md)
-- [Dominating Set Dec](dominating-set-dec.md)
+- [Instances of DOMINATING SET](dominating-set-instance.md)
+- [Graph of a DOMINATING SET instance](graph.md)
+- [Well-formed DOMINATING SET instances](well-formed.md)
+- [Feasibility of a DOMINATING SET instance](dominating-set-feasible.md)
+- [DOMINATING SET as a decision problem](dominating-set-dec.md)
 - [DOMINATING SET is NP-complete](dominating-set-np-complete.md)

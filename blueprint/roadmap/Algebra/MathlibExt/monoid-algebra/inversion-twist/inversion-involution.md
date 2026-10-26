@@ -7,9 +7,11 @@ proof: formalized
 lean: GroupRing.inversion_involution
 ---
 
-# Inversion involution
+# Group-ring inversion is an involution
 
-Applying the group-ring inversion twice is the identity.
+**Group-ring inversion is an involution.** Let $R$ be a commutative ring, $G$ a commutative
+group and $\iota$ the inversion of the group ring $R[G]$. For every $x \in R[G]$,
+$\iota(\iota(x)) = x$.
 
 ## Depends on
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.lineIsometry
 ---
 
-# Line Isometry
+# Identification of the line with one-dimensional Euclidean space
 
-The volume-preserving orthonormal identification of ℝ with EuclideanSpace ℝ (Fin 1).
+**Identification of the line with one-dimensional Euclidean space.** The linear isometric
+isomorphism from $\mathbb{R}$ onto one-dimensional Euclidean space $\mathbb{R}^1$ that sends a
+real number $x$ to the vector whose only coordinate is $x$.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.kannanLovaszSimonovits1995_bound
 ---
 
-# Kannan Lovasz Simonovits1995 bound
+# Kannan–Lovász–Simonovits bound on the KLS constant
 
-The first polynomial bound, with one multiplier for every sufficiently large dimension.
+**Kannan–Lovász–Simonovits bound on the KLS constant.** There are a real $C > 0$ and an
+integer $N \ge 3$ such that for every $n \ge N$ the dimensional KLS constant
+$\psi_n \in [0, \infty]$ satisfies $\psi_n \le C \sqrt{n}$.
 
 ## Depends on
 
-- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
+- [Dimensional KLS constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ statement: formalized
 lean: IsDiscreteValuationRing.residueFieldLinearEquivMaximalIdealGradedPiece
 ---
 
-# Residue Field Linear Equiv Maximal Ideal Graded Piece
+# Graded pieces of a DVR as copies of the residue field
 
-The `i`-th maximal-ideal graded piece is `κ`-linearly a copy of the residue
-field. The underlying function and inverse come from
-`Ideal.quotEquivPowQuotPowSucc`; only the residue-scalar compatibility is proved
-here, by quotient induction: a residue scalar `mk r` acts on both sides as the
-representative `r` acts over `R` (the maximal ideal annihilates the graded
-piece, so this is well defined).
+**Graded pieces of a DVR as copies of the residue field.** Let $R$ be a discrete valuation
+ring with maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$, and let
+$\varpi$ be a generator of $\mathfrak{m}$ chosen once and for all. For $i \in \mathbb{N}$, the
+map $\kappa \to \mathfrak{m}^i/\mathfrak{m}^{i+1}$ sending the class of $r \in R$ to the class
+of $r \varpi^i$ is a $\kappa$-linear isomorphism.
+
+Here $\kappa$ acts on $\mathfrak{m}^i/\mathfrak{m}^{i+1}$ through $R$, which is well defined
+because $\mathfrak{m}$ annihilates the graded piece.
 
 ## Depends on
 
-- [Maximal Ideal Graded Piece](maximal-ideal-graded-piece.md)
+- [Graded pieces of the maximal-ideal filtration](maximal-ideal-graded-piece.md)
 
 ## Sources
 

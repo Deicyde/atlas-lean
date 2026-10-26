@@ -6,21 +6,23 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.IsAdmissibleAlternating.of_le
 ---
 
-# Of le
+# Admissible alternating constants are downward closed among nonnegative reals
 
-Admissible alternating constants are downward closed above
-zero.
+**Admissible alternating constants are downward closed among
+nonnegative reals.** If a real number $c$ is admissible for the tight
+alternating knot inequality and $c'$ is a real number with
+$0 \le c' \le c$, then $c'$ is admissible as well.
 
 ## Depends on
 
-- [Is Admissible Alternating](is-admissible-alternating.md)
+- [Admissible constants for the tight alternating knot inequality](is-admissible-alternating.md)
 
 ## Proof depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Admits Alternating Diagram](../regular-projection/admits-alternating-diagram.md)
-- [Crossing Number](../regular-projection/crossing-number.md)
-- [Ropelength](../euclidean-link/ropelength.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Links admitting an alternating diagram](../regular-projection/admits-alternating-diagram.md)
+- [Crossing number of a link](../regular-projection/crossing-number.md)
+- [Ropelength of a parametrized link](../euclidean-link/ropelength.md)
 
 ## Sources
 

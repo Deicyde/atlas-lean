@@ -5,5 +5,5 @@ navigation: module
 
 # Different Localization
 
-- [Extended Hom dual one eq dual one of Field](extended-hom-dual-one-eq-dual-one-of-fie.md)
-- [Map different Ideal eq localization of Field](map-different-ideal-eq-localization-of-f.md)
+- [The trace dual commutes with localization](extended-hom-dual-one-eq-dual-one-of-fie.md)
+- [The different commutes with localization](map-different-ideal-eq-localization-of-f.md)

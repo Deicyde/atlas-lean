@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianCycleUndirected.Graph
 ---
 
-# Graph
+# Graph of a HAMILTONIAN CYCLE (UNDIRECTED) instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a HAMILTONIAN CYCLE (UNDIRECTED) instance.** For an instance $(n, E)$, its graph
+is the simple graph on the vertices $\{0, \dots, n-1\}$ in which distinct vertices $i$ and $j$
+are adjacent when $(i, j)$ or $(j, i)$ belongs to $E$.
 
 ## Depends on
 
-- [Hamiltonian Cycle Undirected Instance](hamiltonian-cycle-undirected-instance.md)
+- [Instances of HAMILTONIAN CYCLE (UNDIRECTED)](hamiltonian-cycle-undirected-instance.md)
 
 ## Proof depends on
 

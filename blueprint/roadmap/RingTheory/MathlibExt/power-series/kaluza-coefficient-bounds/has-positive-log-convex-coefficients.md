@@ -6,11 +6,12 @@ statement: formalized
 lean: MathlibExt.Algebra.PowerSeries.KaluzaCoefficientBoundsWanted.HasPositiveLogConvexCoefficients
 ---
 
-# Has Positive Log Convex Coefficients
+# Positive log-convex coefficients
 
-Positive log-convex coefficients hypothesis for Kaluza's inverse-coefficient
-bounds: every coefficient of `f` is strictly positive and
-`(coeff (n+1) f)^2 ≤ coeff n f * coeff (n+2) f` for every `n`.
+**Positive log-convex coefficients.** A real formal power series $f = \sum_n a_n X^n$ has
+positive log-convex coefficients if $a_n > 0$ for every natural number $n$ and
+$a_{n+1}^2 \le a_n a_{n+2}$ for every natural number $n$. This is the hypothesis of Kaluza's
+bounds for the coefficients of the reciprocal series.
 
 ## Depends on
 

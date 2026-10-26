@@ -31,7 +31,7 @@ stable matchings.
 - [The Gale-Shapley matching is stable](is-stable-gs-matching.md)
 - [Preference order of a ranking](to-order.md)
 - [Strict preference order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/strict-total-order.md)
-- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

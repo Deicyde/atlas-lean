@@ -7,13 +7,12 @@ proof: formalized
 lean: IsIntegralClosure.isAdicComplete_of_isAdicComplete
 ---
 
-# Is Adic Complete of is Adic Complete
+# The integral closure of a complete DVR is complete
 
-The integral closure of an adically complete DVR in a finite separable
-extension of its fraction field is adically complete at its own maximal ideal.
-This factors the ATLAS `Atlas/NumberTheoryI/code/LocalExtensions.lean` source
-`integral_closure_isAdicComplete` (lines 1184--1259) through the existing generic
-finite-local-extension completeness theorem.
+**The integral closure of a complete DVR is complete.** Let $A$ be a discrete valuation ring
+that is complete with respect to its maximal ideal, $K$ its fraction field, $L$ a finite separable
+extension of $K$, and $B$ the integral closure of $A$ in $L$. If $B$ is local (as it always is
+here), then $B$ is complete with respect to its maximal ideal.
 
 ## Depends on
 
@@ -21,9 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Extension Complete](../is-adic-complete-of-finite-local-extensi.md)
-- [Is Discrete Valuation Ring of is Adic Complete](is-discrete-valuation-ring-of-is-adic-co.md)
+- [Completeness passes to finite extensions of discrete valuation rings](../is-adic-complete-of-finite-local-extensi.md)
+- [The integral closure of a complete DVR is a DVR](is-discrete-valuation-ring-of-is-adic-co.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)
+- ATLAS `Atlas/NumberTheoryI/code/LocalExtensions.lean`, `integral_closure_isAdicComplete` (lines 1184--1259), obtained here from the general completeness theorem for finite local extensions.

@@ -7,17 +7,20 @@ proof: formalized
 lean: BerryEsseenConstant.bernoulliAdmissible_bddBelow
 ---
 
-# Bernoulli Admissible bdd Below
+# The Bernoulli-admissible coefficients are bounded below
 
-A lower bound on the real family defining the subclass optimum.
+**The Bernoulli-admissible coefficients are bounded below.** The set of real numbers $C$ that
+are admissible Berry–Esseen coefficients for the Bernoulli subclass (common Berry–Esseen
+coefficients for all standardized laws concentrated on two points and all positive sample sizes)
+is bounded below.
 
 ## Depends on
 
-- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+- [Admissible Berry–Esseen coefficient for two-point laws](is-bernoulli-admissible.md)
 
 ## Proof depends on
 
-- [Is Bernoulli Admissible nonnegative](is-bernoulli-admissible-nonnegative.md)
+- [Bernoulli-admissible coefficients are nonnegative](is-bernoulli-admissible-nonnegative.md)
 
 ## Sources
 

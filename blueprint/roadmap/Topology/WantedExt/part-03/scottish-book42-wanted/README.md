@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book42
 
-- [Hausdorff Continuous On Convex Compacts](hausdorff-continuous-on-convex-compacts.md)
-- [Fixed point for convex hyperspace map](fixed-point-for-convex-hyperspace-map.md)
+- [Hausdorff continuity on compact convex sets](hausdorff-continuous-on-convex-compacts.md)
+- [Fixed point theorem for maps of compact convex sets](fixed-point-for-convex-hyperspace-map.md)

@@ -7,10 +7,11 @@ proof: formalized
 lean: IsIntegralClosure.isLocalRing_of_isAdicComplete
 ---
 
-# Is Local Ring of is Adic Complete
+# The integral closure of a complete DVR is local
 
-The integral closure of an adically complete DVR in a finite separable
-extension of its fraction field is local.
+**The integral closure of a complete DVR is local.** Let $A$ be a discrete valuation ring
+that is complete with respect to its maximal ideal, $K$ its fraction field and $L$ a finite
+separable extension of $K$. Then the integral closure of $A$ in $L$ is a local ring.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Local Ring of is Integral of is Adic Complete maximal](is-local-ring-of-is-integral-of-is-adic.md)
+- [Domains integral over a complete local domain are local](is-local-ring-of-is-integral-of-is-adic.md)
 
 ## Sources
 

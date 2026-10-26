@@ -5,9 +5,11 @@ statement: formalized
 lean: PMF.uniformFintype
 ---
 
-# Uniform Fintype
+# Uniform distribution on a finite type
 
-Equal mass on every element of a nonempty finite type.
+**Uniform distribution on a finite type.** For a nonempty finite type $\alpha$, the uniform
+distribution on $\alpha$ is the probability mass function on $\alpha$ that gives mass $1/|\alpha|$
+to every element of $\alpha$.
 
 ## Depends on
 

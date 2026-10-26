@@ -7,22 +7,26 @@ proof: formalized
 lean: BerryEsseenConstant.isBernoulliAdmissible_nonnegative
 ---
 
-# Is Bernoulli Admissible nonnegative
+# Bernoulli-admissible coefficients are nonnegative
 
-The subclass is nonvacuous, so its common coefficients are nonnegative.
+**Bernoulli-admissible coefficients are nonnegative.** Every real number $C$ that is an
+admissible Berry–Esseen coefficient for standardized two-point laws satisfies $C \ge 0$.
+
+The class of standardized two-point laws is nonempty: it contains the law with mass $1/2$ at each
+of $-1$ and $1$.
 
 ## Depends on
 
-- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+- [Admissible Berry–Esseen coefficient for two-point laws](is-bernoulli-admissible.md)
 
 ## Proof depends on
 
-- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
-- [Symmetric Bernoulli is Bernoulli](symmetric-bernoulli-is-bernoulli.md)
-- [Symmetric Bernoulli third Moment](symmetric-bernoulli-third-moment.md)
-- [Kolmogorov Error](../berry-esseen-model/kolmogorov-error.md)
-- [Kolmogorov Error nonnegative](../berry-esseen-model/kolmogorov-error-nonnegative.md)
-- [Third Moment](../berry-esseen-model/third-moment.md)
+- [Symmetric Bernoulli law](symmetric-bernoulli-law.md)
+- [The symmetric Bernoulli law is a standardized two-point law](symmetric-bernoulli-is-bernoulli.md)
+- [Third absolute moment of the symmetric Bernoulli law](symmetric-bernoulli-third-moment.md)
+- [Kolmogorov error](../berry-esseen-model/kolmogorov-error.md)
+- [The Kolmogorov error is nonnegative](../berry-esseen-model/kolmogorov-error-nonnegative.md)
+- [Third absolute moment](../berry-esseen-model/third-moment.md)
 
 ## Sources
 

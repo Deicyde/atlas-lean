@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.oppositePerm
 ---
 
-# Opposite Perm
+# Opposite-dart permutation
 
-Straight-through motion at a crossing as a permutation.
+**Opposite-dart permutation.** For a dart diagram $D$, the opposite-dart permutation of the
+darts of $D$ is the square of the quarter-turn rotation permutation: it sends the dart $(v, i)$
+at crossing $v$ to the dart $(v, i + 2)$, with labels taken modulo $4$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Dart](dart.md)
+- [Dart diagram](dart-diagram.md)
+- [Darts of a dart diagram](dart.md)
 
 ## Proof depends on
 
-- [Rot Perm](rot-perm.md)
+- [Rotation permutation of darts](rot-perm.md)
 
 ## Sources
 

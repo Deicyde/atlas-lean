@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ExactCover.exactCoverDec
 ---
 
-# Exact Cover Dec
+# EXACT COVER as a decision problem
 
-EXACT COVER as a decision problem over bitstrings.
+**EXACT COVER as a decision problem.** The decision problem EXACT COVER accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding of pairs of a natural number
+and a list of lists of natural numbers, to an instance of EXACT COVER that is well formed and
+feasible; bitstrings that do not decode are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ EXACT COVER as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Exact Cover Feasible](exact-cover-feasible.md)
-- [Exact Cover Instance](exact-cover-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible EXACT COVER instances](exact-cover-feasible.md)
+- [Instances of EXACT COVER](exact-cover-instance.md)
+- [Well-formed EXACT COVER instances](well-formed.md)
 
 ## Sources
 

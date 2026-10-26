@@ -7,18 +7,19 @@ proof: formalized
 lean: BerryEsseenConstant.value_isAdmissible
 ---
 
-# Value is Admissible
+# The optimal Berry–Esseen coefficient is admissible
 
-The optimizer is admissible, not just an unattained real projection.
+**The optimal Berry–Esseen coefficient is admissible.** The infimum $C^*$ of all admissible
+Berry–Esseen coefficients is itself an admissible coefficient.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Value](value.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Value bound](value-bound.md)
+- [The optimal Berry–Esseen coefficient satisfies the Berry–Esseen bound](value-bound.md)
 
 ## Sources
 

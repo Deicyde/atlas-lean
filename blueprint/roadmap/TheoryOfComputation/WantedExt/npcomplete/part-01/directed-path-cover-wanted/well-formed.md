@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.WellFormed
 ---
 
-# Well Formed
+# Well-formed DIRECTED PATH COVER instances
 
-Well-formedness of an instance.
+**Well-formed DIRECTED PATH COVER instances.** An instance $(n, E, K)$ of
+DIRECTED PATH COVER is well formed when the edge list $E$ has no repeated entries and every
+edge $(a, b)$ in $E$ satisfies $a < n$, $b < n$ and $a \ne b$.
 
 ## Depends on
 
-- [Directed Path Cover Instance](directed-path-cover-instance.md)
+- [Instances of DIRECTED PATH COVER](directed-path-cover-instance.md)
 
 ## Sources
 

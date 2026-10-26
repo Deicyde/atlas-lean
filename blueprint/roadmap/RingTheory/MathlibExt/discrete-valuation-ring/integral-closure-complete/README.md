@@ -5,17 +5,17 @@ navigation: module
 
 # Integral Closure Complete
 
-- [Comap eq base maximal of is Adic Complete of is Integral](comap-eq-base-maximal-of-is-adic-complet.md)
-- [Is Local Ring of is Integral of is Adic Complete maximal](is-local-ring-of-is-integral-of-is-adic.md)
+- [Maximal ideals contract to the maximal ideal of a complete base](comap-eq-base-maximal-of-is-adic-complet.md)
+- [Domains integral over a complete local domain are local](is-local-ring-of-is-integral-of-is-adic.md)
 
 ## Is Integral Closure
 
-- [Is Local Ring of is Adic Complete](is-local-ring-of-is-adic-complete.md)
-- [Is Discrete Valuation Ring of is Adic Complete](is-discrete-valuation-ring-of-is-adic-co.md)
-- [Is Adic Complete of is Adic Complete](is-adic-complete-of-is-adic-complete.md)
-- [Exists Unique primes Over maximal Ideal of is Adic Complete](exists-unique-primes-over-maximal-ideal.md)
+- [The integral closure of a complete DVR is local](is-local-ring-of-is-adic-complete.md)
+- [The integral closure of a complete DVR is a DVR](is-discrete-valuation-ring-of-is-adic-co.md)
+- [The integral closure of a complete DVR is complete](is-adic-complete-of-is-adic-complete.md)
+- [Exactly one prime lies over the maximal ideal of a complete DVR](exists-unique-primes-over-maximal-ideal.md)
 
 ## Valuation
 
-- [Integer is Integral Closure of is Adic Complete](integer-is-integral-closure-of-is-adic-c.md)
-- [Module finite integer of is Adic Complete](module-finite-integer-of-is-adic-complet.md)
+- [Valuation rings dominating a complete DVR are integral closures](integer-is-integral-closure-of-is-adic-c.md)
+- [Valuation rings dominating a complete DVR are finite over it](module-finite-integer-of-is-adic-complet.md)

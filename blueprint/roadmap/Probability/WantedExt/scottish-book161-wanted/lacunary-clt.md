@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook161Wanted.LacunaryCLT
 ---
 
-# Lacunary CLT
+# Central limit theorem for lacunary sine sums
 
-The central limit theorem conclusion for a frequency sequence `r`: for
-any `a < b`, the Lebesgue measure in `[0, 1]` of the set of `x` with
-`a < (sin(2π r₁ x) + ... + sin(2π rₙ x)) / √n < b` tends to
-`(1 / √π) * ∫_a^b exp(-y²) dy`.
+**Central limit theorem for lacunary sine sums.** A sequence of integers $(r_k)_{k \ge 0}$
+satisfies the central limit theorem for lacunary sine sums if for all real numbers $a < b$, the
+Lebesgue measure of the set of $x \in [0, 1]$ with
+$a < \frac{1}{\sqrt{n}} \sum_{k=0}^{n-1} \sin(2 \pi r_k x) < b$ tends to
+$\frac{1}{\sqrt{\pi}} \int_a^b e^{-y^2} \, dy$ as $n \to \infty$.
 
 ## Depends on
 

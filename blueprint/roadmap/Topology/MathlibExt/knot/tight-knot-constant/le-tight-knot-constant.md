@@ -12,8 +12,8 @@ Every admissible constant is at most the tight knot constant.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Tight Knot Constant](tight-knot-constant.md)
+- [Admissible constants for the tight-knot inequality](is-admissible.md)
+- [Tight knot constant](tight-knot-constant.md)
 
 ## Sources
 

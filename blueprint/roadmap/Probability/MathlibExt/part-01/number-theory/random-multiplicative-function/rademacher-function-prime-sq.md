@@ -7,17 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherFunction_prime_sq
 ---
 
-# Rademacher Function prime sq
+# The Rademacher random multiplicative function vanishes at prime squares
 
-Evaluation at the square of a prime is zero.
+**The Rademacher random multiplicative function vanishes at prime squares.** Let
+$X = (X_p)$ be a family, indexed by the primes $p$, of maps $X_p \colon \Omega \to \{-1, 1\}$,
+let $\omega \in \Omega$, and let $f$ be the Rademacher random multiplicative function of $X$ at
+$\omega$. Then $f(p^2) = 0$ for every prime $p$.
 
 ## Depends on
 
-- [Rademacher Function](rademacher-function.md)
+- [Rademacher random multiplicative function](rademacher-function.md)
 
 ## Proof depends on
 
-- [Rademacher Function eq zero of not squarefree](rademacher-function-eq-zero-of-not-squar.md)
+- [The Rademacher random multiplicative function vanishes off squarefree numbers](rademacher-function-eq-zero-of-not-squar.md)
 
 ## Sources
 

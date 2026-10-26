@@ -7,19 +7,21 @@ proof: formalized
 lean: BerryEsseenConstant.value_isLeast
 ---
 
-# Value is Least
+# The Berry–Esseen constant is the least admissible coefficient
 
-The source word "smallest" is an implemented leastness theorem.
+**The Berry–Esseen constant is the least admissible coefficient.** The infimum $C^*$ of all
+admissible Berry–Esseen coefficients is the least element of the set of admissible
+coefficients: $C^*$ is admissible, and $C^* \le C$ for every admissible coefficient $C$.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Value](value.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Value is Admissible](value-is-admissible.md)
-- [Value le of is Admissible](value-le-of-is-admissible.md)
+- [The optimal Berry–Esseen coefficient is admissible](value-is-admissible.md)
+- [The optimal Berry–Esseen coefficient is at most every admissible one](value-le-of-is-admissible.md)
 
 ## Sources
 

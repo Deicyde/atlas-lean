@@ -7,18 +7,21 @@ proof: formalized
 lean: BerryEsseenModel.errorRange_bddAbove
 ---
 
-# Error Range bdd Above
+# The CDF errors are bounded above
 
-The ordinary real supremum is taken over a nonempty bounded range.
+**The CDF errors are bounded above.** Let $\mu$ be a measure on $\mathbb{R}$, let $n$ be a
+positive integer, let $F$ be the cumulative distribution function of the normalized law of $\mu$
+at $n$, and let $\Phi$ be the standard normal cumulative distribution function. Then the set
+$\{|F(x) - \Phi(x)| : x \in \mathbb{R}\}$ is bounded above.
 
 ## Depends on
 
-- [Normal CDF](normal-cdf.md)
-- [Normalized Law](normalized-law.md)
+- [Standard normal CDF](normal-cdf.md)
+- [Law of the normalized sum](normalized-law.md)
 
 ## Proof depends on
 
-- [Pointwise error le one](pointwise-error-le-one.md)
+- [The CDF error is at most one](pointwise-error-le-one.md)
 
 ## Sources
 

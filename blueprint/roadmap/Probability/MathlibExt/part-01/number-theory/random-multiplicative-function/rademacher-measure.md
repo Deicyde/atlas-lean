@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherMeasure
 ---
 
-# Rademacher Measure
+# Rademacher measure on the integer units
 
-The uniform probability measure on the two integer units `{-1, 1}`.
+**Rademacher measure on the integer units.** The Rademacher measure is the uniform probability
+measure on the two integer units $\{-1, 1\}$.
 
 ## Depends on
 

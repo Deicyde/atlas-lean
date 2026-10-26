@@ -22,8 +22,8 @@ $(\mu, W, \sigma^2)$ is at most its value at $(\bar{x}, W, \sigma^2)$.
 
 - [The log-likelihood of no data is zero](log-lik-of-n-eq-zero.md)
 - [Probabilistic PCA covariance](ppca-cov.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
-- [The mean MLE](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-2.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [The weighted mean is the Gaussian MLE of the mean](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-2.md)
 - [Weighted mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
 
 ## Sources

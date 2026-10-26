@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.NaeThreeSatInstance
 ---
 
-# Nae Three Sat Instance
+# NOT-ALL-EQUAL 3-SAT instances
 
-A not-all-equal 3-SAT instance: number of variables, 3-CNF formula.
+**NOT-ALL-EQUAL 3-SAT instances.** A NOT-ALL-EQUAL 3-SAT instance is a pair $(n, \varphi)$ of
+a natural number $n$, the number of variables, and a CNF formula $\varphi$. The formula is not
+required to have three literals per clause; that is part of well-formedness.
 
 ## Depends on
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianCycleUndirected.hamiltonianCycleUndirectedDec
 ---
 
-# Hamiltonian Cycle Undirected Dec
+# HAMILTONIAN CYCLE (UNDIRECTED) as a decision problem
 
-HAMILTONIAN CYCLE (UNDIRECTED) as a decision problem over bitstrings.
+**HAMILTONIAN CYCLE (UNDIRECTED) as a decision problem.** The decision problem HAMILTONIAN
+CYCLE (UNDIRECTED) accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to a well-formed instance $(n, E)$ with $n \ge 3$ whose graph has a Hamiltonian cycle.
+It rejects every bitstring that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ HAMILTONIAN CYCLE (UNDIRECTED) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Hamiltonian Cycle Undirected Feasible](hamiltonian-cycle-undirected-feasible.md)
-- [Hamiltonian Cycle Undirected Instance](hamiltonian-cycle-undirected-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible HAMILTONIAN CYCLE (UNDIRECTED) instances](hamiltonian-cycle-undirected-feasible.md)
+- [Instances of HAMILTONIAN CYCLE (UNDIRECTED)](hamiltonian-cycle-undirected-instance.md)
+- [Well-formed HAMILTONIAN CYCLE (UNDIRECTED) instances](well-formed.md)
 
 ## Sources
 

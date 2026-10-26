@@ -7,14 +7,18 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.covarianceMatrix_posSemidef
 ---
 
-# Covariance Matrix pos Semidef
+# Covariance matrices of log-concave laws are positive semidefinite
 
-Actual covariance is positive semidefinite, by integrating squared linear forms.
+**Covariance matrices of log-concave laws are positive semidefinite.** For every log-concave
+law $\mu$ on $\mathbb{R}^n$, the covariance matrix of $\mu$ is positive semidefinite.
+
+The proof writes the quadratic form of the covariance matrix as the integral of the square of a
+centered linear form.
 
 ## Depends on
 
-- [Log Concave Law](log-concave-law.md)
-- [Covariance Matrix](covariance-matrix.md)
+- [Log-concave law](log-concave-law.md)
+- [Covariance matrix](covariance-matrix.md)
 
 ## Sources
 

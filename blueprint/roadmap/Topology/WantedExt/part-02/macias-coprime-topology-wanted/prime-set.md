@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.primeSet
 ---
 
-# Prime Set
+# Primes among the positive integers
 
-The set of prime numbers, as a subset of `X`.
+**Primes among the positive integers.** The set of positive integers that are prime
+numbers.
 
 ## Depends on
 

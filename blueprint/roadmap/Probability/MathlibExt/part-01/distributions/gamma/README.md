@@ -5,8 +5,8 @@ navigation: module
 
 # Gamma
 
-- [Integrable On rpow mul exp neg mul Ioi](integrable-on-rpow-mul-exp-neg-mul-ioi.md)
-- [Integrable exp mul gamma Measure](integrable-exp-mul-gamma-measure.md)
-- [Mgf gamma Measure of lt](mgf-gamma-measure-of-lt.md)
-- [Iio subset integrable Exp Set gamma Measure](iio-subset-integrable-exp-set-gamma-meas.md)
-- [Ioo subset interior integrable Exp Set gamma Measure](ioo-subset-interior-integrable-exp-set-g.md)
+- [Integrability of the scaled gamma integrand](integrable-on-rpow-mul-exp-neg-mul-ioi.md)
+- [Exponential moments of the gamma distribution](integrable-exp-mul-gamma-measure.md)
+- [Moment generating function of the gamma distribution](mgf-gamma-measure-of-lt.md)
+- [Half-line of exponential integrability for the gamma distribution](iio-subset-integrable-exp-set-gamma-meas.md)
+- [A neighbourhood of zero of exponential integrability for the gamma distribution](ioo-subset-interior-integrable-exp-set-g.md)

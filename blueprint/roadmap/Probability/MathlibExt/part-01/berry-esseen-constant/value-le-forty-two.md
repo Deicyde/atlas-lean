@@ -7,18 +7,19 @@ proof: formalized
 lean: BerryEsseenConstant.value_le_fortyTwo
 ---
 
-# Value le forty Two
+# The optimal Berry–Esseen coefficient is at most 42
 
-A concrete finite bound for the optimizer.
+**The optimal Berry–Esseen coefficient is at most 42.** The infimum $C^*$ of all admissible
+Berry–Esseen coefficients satisfies $C^* \le 42$.
 
 ## Depends on
 
-- [Value](value.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Is Admissible forty Two](is-admissible-forty-two.md)
-- [Value le of is Admissible](value-le-of-is-admissible.md)
+- [The Berry–Esseen bound with coefficient 42](is-admissible-forty-two.md)
+- [The optimal Berry–Esseen coefficient is at most every admissible one](value-le-of-is-admissible.md)
 
 ## Sources
 

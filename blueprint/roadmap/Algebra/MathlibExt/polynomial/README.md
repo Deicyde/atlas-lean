@@ -9,7 +9,7 @@ article_id: af_74cd9464950bca3c6942edc1
 - [Coefficient Denominator](coefficient-denominator/README.md)
 - [Monic polynomials close in L1 norm have the same degree](nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 - [Favard's theorem, forward direction](favard-forward.md)
-- [Favard Iff](favard-iff.md)
+- [Favard's theorem](favard-iff.md)
 - [Formally orthogonal polynomial family](is-formally-orthogonal.md)
 - [Generalized Chebyshev Second Kind](generalized-chebyshev-second-kind/README.md)
 - [Interlacing](interlacing/README.md)

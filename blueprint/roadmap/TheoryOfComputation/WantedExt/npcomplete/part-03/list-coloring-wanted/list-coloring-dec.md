@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ListColoring.listColoringDec
 ---
 
-# List Coloring Dec
+# The LIST COLORING decision problem
 
-LIST COLORING as a decision problem over bitstrings.
+**The LIST COLORING decision problem.** LIST COLORING is the decision problem that
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+list-coloring instance that is well formed and feasible. Bitstrings that do not decode are
+rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ LIST COLORING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [List Coloring Feasible](list-coloring-feasible.md)
-- [List Coloring Instance](list-coloring-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible list-coloring instances](list-coloring-feasible.md)
+- [List-coloring instances](list-coloring-instance.md)
+- [Well-formed list-coloring instances](well-formed.md)
 
 ## Sources
 

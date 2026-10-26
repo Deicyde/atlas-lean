@@ -6,15 +6,19 @@ proof: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.familyBias_apply
 ---
 
-# Family Bias apply
+# Family bias as an integral
 
-Characteristic evaluation: family bias is the integral minus the target.
-Blueprint `af_723199a7ca6fb3e936a73618`.
+**Family bias as an integral.** Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an
+estimator, $(P_\theta)_{\theta \in \Theta}$ a family of probability measures on $S$ such that $W$
+is integrable for every $P_\theta$, and $\tau : \Theta \to \mathbb{R}$ a target function. Then for
+every $\theta \in \Theta$ the family bias of $W$ at $\theta$ equals
+$\int_S W \, dP_\theta - \tau(\theta)$.
 
 ## Depends on
 
-- [Family Bias](family-bias.md)
+- [Family bias of an estimator](family-bias.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- blueprint `af_723199a7ca6fb3e936a73618`.

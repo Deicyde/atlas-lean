@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.dimensionIntrinsicLawSupremum
 ---
 
-# Dimension Intrinsic Law Supremum
+# Supremum of intrinsic isotropic constants in a fixed ambient dimension
 
-The actual ambient-dimensional family, including proper positive-dimensional affine spans.
+**Supremum of intrinsic isotropic constants in a fixed ambient dimension.** For a natural
+number $N$, this is the supremum in $[0, \infty]$ of the isotropic constants $L_\mu$ over all
+intrinsic log-concave laws $\mu$ on $\mathbb{R}^N$.
+
+The family includes laws whose support spans a proper affine subspace of positive dimension.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
-- [Intrinsic Law Isotropic Constant](intrinsic-law-isotropic-constant.md)
+- [Log-concave law in intrinsic coordinates](intrinsic-log-concave-law.md)
+- [Isotropic constant of an intrinsic log-concave law](intrinsic-law-isotropic-constant.md)
 
 ## Sources
 

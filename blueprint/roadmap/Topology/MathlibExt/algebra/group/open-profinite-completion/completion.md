@@ -6,9 +6,14 @@ statement: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.completion
 ---
 
-# Completion
+# Open profinite completion of a group
 
-Open profinite completion as the limit of `diagram G`.
+**Open profinite completion of a group.** For a group $G$ with a topology, the open profinite
+completion of $G$ is the limit, in profinite groups, of the diagram of finite quotients $G/H$,
+where $H$ runs over the open finite-index normal subgroups of $G$ and the transition maps are the
+projections $G/H \to G/K$ for $H \subseteq K$. Concretely, it is the group of families
+$(x_H)_H$ with $x_H \in G/H$ that are compatible under these projections, with the topology of a
+subspace of the product of the discrete groups $G/H$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Index](index.md)
-- [Diagram](diagram.md)
+- [Open finite-index normal subgroups](index.md)
+- [Diagram of finite quotients as profinite groups](diagram.md)
 
 ## Sources
 

@@ -6,10 +6,16 @@ statement: formalized
 lean: FractionalIdeal.factorizationMulEquiv
 ---
 
-# Factorization Mul Equiv
+# Prime factorization isomorphism for fractional ideals
 
-The bundled multiplicative equivalence between unit fractional ideals and
-finitely supported prime-exponent functions.
+**Prime factorization isomorphism for fractional ideals.** Let $R$ be a Dedekind domain with
+fraction field $K$, and for a unit fractional ideal $I$ of $R$ in $K$ and a height-one prime $v$
+of $R$ write $\operatorname{val}_v(I)$ for the $v$-adic valuation of $I$. The factorization
+isomorphism is the group isomorphism from the unit group of the fractional ideals of $R$ in $K$
+to the additive group of finitely supported functions from the height-one primes of $R$ to
+$\mathbb{Z}$ (written multiplicatively) that sends $I$ to the function
+$v \mapsto \operatorname{val}_v(I)$. Its inverse sends $e$ to $\prod_v v^{e(v)}$, the product
+over the primes $v$ with $e(v) \neq 0$.
 
 ## Depends on
 
@@ -17,11 +23,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finsupp To Units](finsupp-to-units.md)
-- [To Units left inv](to-units-left-inv.md)
-- [To Units right inv](to-units-right-inv.md)
-- [Units To Finsupp](units-to-finsupp.md)
-- [Units To Finsupp mul](units-to-finsupp-mul.md)
+- [Fractional ideal with prescribed prime exponents](finsupp-to-units.md)
+- [Reconstructing a fractional ideal from its prime exponents](to-units-left-inv.md)
+- [Recovering prime exponents from a product of prime powers](to-units-right-inv.md)
+- [Prime exponents of an invertible fractional ideal](units-to-finsupp.md)
+- [Prime exponents are additive](units-to-finsupp-mul.md)
 
 ## Sources
 

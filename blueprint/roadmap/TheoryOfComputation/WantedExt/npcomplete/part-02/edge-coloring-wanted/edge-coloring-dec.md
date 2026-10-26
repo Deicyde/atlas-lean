@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.EdgeColoring.edgeColoringDec
 ---
 
-# Edge Coloring Dec
+# EDGE COLORING as a decision problem
 
-EDGE COLORING as a decision problem over bitstrings.
+**EDGE COLORING as a decision problem.** The EDGE COLORING decision problem accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of edge coloring
+instances, to an instance that is well formed and feasible. Bitstrings that do not decode are
+rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ EDGE COLORING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Edge Coloring Feasible](edge-coloring-feasible.md)
-- [Edge Coloring Instance](edge-coloring-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible edge coloring instances](edge-coloring-feasible.md)
+- [Edge coloring instances](edge-coloring-instance.md)
+- [Well-formed edge coloring instances](well-formed.md)
 
 ## Sources
 

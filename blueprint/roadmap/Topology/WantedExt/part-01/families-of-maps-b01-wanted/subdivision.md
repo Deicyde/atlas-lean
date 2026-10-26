@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.FamiliesOfMapsB01Wanted.FamiliesOfMapsB01.Subdivision
 ---
 
-# Subdivision
+# Polyhedral subdivisions
 
-A *polyhedral subdivision* of a polyhedron `P ⊆ ℝᵏ`: a finite geometric
-simplicial complex whose underlying space equals `P`.
+**Polyhedral subdivisions.** A polyhedral subdivision of a set $P \subseteq \mathbb{R}^k$ is a
+geometric simplicial complex in $\mathbb{R}^k$ with finitely many faces whose underlying space
+equals $P$.
 
 ## Depends on
 

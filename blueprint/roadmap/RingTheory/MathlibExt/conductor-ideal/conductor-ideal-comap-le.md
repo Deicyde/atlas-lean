@@ -7,18 +7,20 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_comap_le
 ---
 
-# Conductor Ideal comap le
+# Preimage of a conductor ideal
 
-Comapping the conductor ideal along an algebra map lands in the conductor
-ideal of the comapped subalgebra.
+**Preimage of a conductor ideal.** Let $R$ be a commutative semiring, $S$ and $T$ commutative
+$R$-algebras, $f \colon S \to T$ a homomorphism of $R$-algebras and $B$ an $R$-subalgebra of
+$T$. Then the preimage under $f$ of the conductor ideal of $B$ is contained in the conductor
+ideal of the subalgebra $f^{-1}(B)$ of $S$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Mem conductor Ideal](mem-conductor-ideal.md)
+- [Membership in the conductor ideal](mem-conductor-ideal.md)
 
 ## Sources
 

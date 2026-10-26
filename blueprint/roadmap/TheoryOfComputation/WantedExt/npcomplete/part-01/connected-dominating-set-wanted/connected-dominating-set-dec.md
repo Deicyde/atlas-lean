@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ConnectedDominatingSet.connectedDominatingSetDec
 ---
 
-# Connected Dominating Set Dec
+# The decision problem CONNECTED DOMINATING SET
 
-CONNECTED DOMINATING SET as a decision problem over bitstrings.
+**The decision problem CONNECTED DOMINATING SET.** CONNECTED DOMINATING SET accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding, to an instance of CONNECTED
+DOMINATING SET that is well formed and feasible. Bitstrings that do not decode to an instance are
+rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ CONNECTED DOMINATING SET as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Connected Dominating Set Feasible](connected-dominating-set-feasible.md)
-- [Connected Dominating Set Instance](connected-dominating-set-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible CONNECTED DOMINATING SET instances](connected-dominating-set-feasible.md)
+- [Instances of CONNECTED DOMINATING SET](connected-dominating-set-instance.md)
+- [Well-formed CONNECTED DOMINATING SET instances](well-formed.md)
 
 ## Sources
 

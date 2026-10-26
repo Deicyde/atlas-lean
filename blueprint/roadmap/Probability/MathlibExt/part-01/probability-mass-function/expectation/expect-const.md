@@ -6,17 +6,20 @@ proof: formalized
 lean: PMF.expect_const
 ---
 
-# Expect const
+# Expectation of a constant on a finite type
 
-The expectation of a constant function is that constant.
+**Expectation of a constant on a finite type.** Let $\alpha$ be a finite set with a
+$\sigma$-algebra in which singletons are measurable and let $p$ be a probability mass function on
+$\alpha$. For every $c \in \mathbb{R}$, the expectation of the constant function $a \mapsto c$
+under $p$ is $c$.
 
 ## Depends on
 
-- [Expect](expect.md)
+- [Expectation under a probability mass function](expect.md)
 
 ## Proof depends on
 
-- [Expect eq sum](expect-eq-sum.md)
+- [Expectation on a finite type](expect-eq-sum.md)
 
 ## Sources
 

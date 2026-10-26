@@ -6,18 +6,17 @@ statement: formalized
 lean: MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_2
 ---
 
-# Corollary 2
+# Singularity probability of Rademacher matrices
 
-This is the result stated in the paper's abstract:
-
-For any sequence `Mₙ` of `n × n` random matrices with mutually independent `Rademacher` entries
-we have that
-
-`P(Mₙ is singular) = (1/2 + oₙ(1))ⁿ`.
+**Singularity probability of Rademacher matrices.** For each $n$, let $M_n$ be a random
+$n \times n$ real matrix on a probability space $(\Omega_n, P_n)$ whose $n^2$ entries are mutually
+independent and each have the Rademacher law, with mass $1/2$ at each of $1$ and $-1$. Then there
+is a function $o : \mathbb{N} \to \mathbb{R}$ with $o(n) \to 0$ as $n \to \infty$ such that
+$P_n(\det M_n = 0) = (1/2 + o(n))^n$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Rademacher Measure](rademacher-measure.md)
+- [Rademacher measure on the real line](rademacher-measure.md)
 
 ## Sources
 

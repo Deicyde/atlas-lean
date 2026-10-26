@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CardinalitySubsetSum.cardinalitySubsetSumDec
 ---
 
-# Cardinality Subset Sum Dec
+# Exact-cardinality subset sum as a decision problem
 
-EXACT-CARDINALITY SUBSET SUM as a decision problem over bitstrings.
+**Exact-cardinality subset sum as a decision problem.** The decision problem
+EXACT-CARDINALITY SUBSET SUM accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding, to an exact-cardinality subset-sum instance that is feasible; it rejects every
+bitstring that does not decode.
 
 ## Depends on
 
@@ -23,8 +26,8 @@ EXACT-CARDINALITY SUBSET SUM as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Cardinality Subset Sum Feasible](cardinality-subset-sum-feasible.md)
-- [Cardinality Subset Sum Instance](cardinality-subset-sum-instance.md)
+- [Feasibility of an exact-cardinality subset-sum instance](cardinality-subset-sum-feasible.md)
+- [Exact-cardinality subset-sum instances](cardinality-subset-sum-instance.md)
 
 ## Sources
 

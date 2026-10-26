@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalCompactSet
 ---
 
-# Is Arithmetical Compact Set
+# Arithmetical compact sets
 
-An arithmetical compact set of module `μ` and ratio `ρ`: a quasi-arithmetical compact
-set such that, for every ordinal `α < ω^ω` and `u ≥ 0`, writing `T_{u+1}[α] = n / ρ^k`
-with `ρ ∤ n`, the sets `{T_u[ω α + r] : r ≥ 0}` and
-`{b (a ρ^r + 1) / ρ^{r+k} : n = a b, ‖n‖_K = ‖a‖_K + ‖b‖_K, r ≥ 0}` have finite
-symmetric difference. `T_u[·]` is the strictly decreasing enumeration of the layer `T_u`
-by `[0, ω^ω)` (such an enumeration is unique; Proposition 3 gives the order type `ω^ω`),
-taken here as a quantified family `t`.
+**Arithmetical compact sets.** Let $K \subseteq \mathbb{R}$ and let $\mu$ and $\rho$ be natural
+numbers. For each natural number $j$ let $K^{(j)}$ be the $j$-th iterated derived set (the set of
+accumulation points, iterated $j$ times) of $K$ and $T_j = K^{(j)} \setminus K^{(j+1)}$ its $j$-th
+layer, and for a natural number $m$ let $\lVert m \rVert_K$ be the stability gauge of $K$ with
+module $\mu$ and ratio $\rho$ at $m$. Then $K$ is an arithmetical compact set of module $\mu$ and
+ratio $\rho$ when $K$ is a quasi-arithmetical compact set of module $\mu$ and ratio $\rho$ and the
+following holds for every family of maps $\alpha \mapsto T_j[\alpha]$ ($j \in \mathbb{N}$), each
+strictly decreasing on the ordinals $\alpha < \omega^\omega$ and mapping them onto $T_j$: for every
+$j \in \mathbb{N}$, every ordinal $\alpha < \omega^\omega$ and all natural numbers $n$ and $k$ with
+$\rho \nmid n$ and $T_{j+1}[\alpha] = n / \rho^k$, the sets
+$\{T_j[\omega \alpha + r] : r \in \mathbb{N}\}$ and
+$\{b (a \rho^r + 1) / \rho^{r+k} : a, b, r \in \mathbb{N},\ n = ab,\
+\lVert n \rVert_K = \lVert a \rVert_K + \lVert b \rVert_K\}$ have finite symmetric difference.
+
+Such an enumeration of a layer is unique when it exists; by Proposition 3 each layer has order
+type $\omega^\omega$.
 
 ## Depends on
 
@@ -21,9 +30,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
-- [Self Similar Layer](self-similar-layer.md)
-- [Stability Gauge](stability-gauge.md)
+- [Quasi-arithmetical compact sets](is-quasi-arithmetical-compact-set.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
+- [Stability gauge](stability-gauge.md)
 
 ## Sources
 

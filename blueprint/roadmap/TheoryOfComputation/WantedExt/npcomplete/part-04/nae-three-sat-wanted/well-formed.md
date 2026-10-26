@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.WellFormed
 ---
 
-# Well Formed
+# Well-formed NOT-ALL-EQUAL 3-SAT instances
 
-Well-formedness of an instance.
+**Well-formed NOT-ALL-EQUAL 3-SAT instances.** A NOT-ALL-EQUAL 3-SAT instance $(n, \varphi)$
+is well-formed when every clause of $\varphi$ is a list of exactly three literals, repetitions
+allowed, and every literal $(x, b)$ in it has variable index $x < n$.
 
 ## Depends on
 
-- [Nae Three Sat Instance](nae-three-sat-instance.md)
+- [NOT-ALL-EQUAL 3-SAT instances](nae-three-sat-instance.md)
 
 ## Proof depends on
 

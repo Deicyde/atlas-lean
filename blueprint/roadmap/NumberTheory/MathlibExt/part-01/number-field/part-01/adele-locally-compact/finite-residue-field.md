@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Completion Residue Field Equiv](../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
+- [Residue field of the completion](../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
 
 ## Sources
 

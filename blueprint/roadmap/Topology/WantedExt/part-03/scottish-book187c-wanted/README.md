@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book187c
 
-- [Cube](cube.md)
-- [Scottish Book187c refuted](scottish-book187c-refuted.md)
+- [The p-dimensional cube](cube.md)
+- [Open maps can raise the dimension of a cube](scottish-book187c-refuted.md)

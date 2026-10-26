@@ -7,19 +7,22 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.uniformInterval_radiusFluctuation_le_thinShellConstant
 ---
 
-# Uniform Interval radius Fluctuation le thin Shell Constant
+# Radius fluctuation of the uniform law on (−√3, √3)
 
-The same actual law exercises the radius-fluctuation bridge.
+**Radius fluctuation of the uniform law on [−√3, √3].** Let $\mu$ be the uniform distribution
+on the symmetric interval $[-\sqrt{3}, \sqrt{3}]$ of one-dimensional Euclidean space
+$\mathbb{R}^1$. Then $\int (\|x\| - \sqrt{1})^2 \, d\mu(x)$, the mean squared deviation of the
+Euclidean norm from $\sqrt{1} = 1$, is at most the thin-shell variance constant.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](../thin-shell/thin-shell-variance-constant.md)
-- [Uniform Interval](uniform-interval.md)
+- [Thin-shell variance constant](../thin-shell/thin-shell-variance-constant.md)
+- [Uniform distribution on a symmetric interval](uniform-interval.md)
 
 ## Proof depends on
 
-- [Radius fluctuation le constant](../thin-shell/radius-fluctuation-le-constant.md)
-- [Uniform Interval sqrt three is Isotropic Log Concave](uniform-interval-sqrt-three-is-isotropic.md)
+- [The thin-shell variance constant bounds the radius fluctuation](../thin-shell/radius-fluctuation-le-constant.md)
+- [The uniform law on (−√3, √3) is isotropic log-concave](uniform-interval-sqrt-three-is-isotropic.md)
 
 ## Sources
 

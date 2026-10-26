@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unbounded Family](is-unbounded-family.md)
+- [Unbounded family](is-unbounded-family.md)
 
 ## Sources
 

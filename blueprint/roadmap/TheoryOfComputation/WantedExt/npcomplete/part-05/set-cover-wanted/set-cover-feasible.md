@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SetCover.SetCoverFeasible
 ---
 
-# Set Cover Feasible
+# Feasible set-cover instances
 
-At most `K` subsets covering the universe.
+**Feasible set-cover instances.** A set-cover instance $(n, C, K)$ is feasible when there is a
+sublist $D$ of $C$ (a list obtained from $C$ by deleting entries while keeping their order) with
+at most $K$ entries such that every natural number $x < n$ belongs to some list in $D$.
 
 ## Depends on
 
-- [Set Cover Instance](set-cover-instance.md)
+- [Set-cover instances](set-cover-instance.md)
 
 ## Sources
 

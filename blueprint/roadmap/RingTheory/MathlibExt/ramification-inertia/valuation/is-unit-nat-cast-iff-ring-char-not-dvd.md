@@ -7,10 +7,11 @@ proof: formalized
 lean: IsLocalRing.isUnit_natCast_iff_ringChar_not_dvd
 ---
 
-# Is Unit nat Cast iff ring Char not dvd
+# Natural numbers that are units in a local ring
 
-A natural number is a unit in a local ring iff the residue characteristic
-does not divide it.
+**Natural numbers that are units in a local ring.** Let $R$ be a commutative local ring and
+let $p$ be the characteristic of its residue field. For every natural number $n$, the image of
+$n$ in $R$ is a unit if and only if $p$ does not divide $n$.
 
 ## Depends on
 

@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isSelfSimilarCompactSet_layer_zero_enum
 ---
 
-# Is Self Similar Compact Set layer zero enum
+# Enumerating the isolated points of a self-similar compact set
 
-Proposition 3, second formula: if `α ↦ T_0[α]` is the strictly decreasing
-enumeration of the layer `T_0` by `[0, ω^ω)`, then `T_0[α] = K[α]` for `α < ω` and
-`T_0[α] = K[α + 1]` for `ω ≤ α`. The paper writes `0 ≤ α ≤ ω^ω`; the layer has order
-type `ω^ω` (its indices in `K` are `0` and the successor ordinals below `ω^ω`), so
-`T_0[ω^ω]` is undefined and the range here is `α < ω^ω`.
+**Enumerating the isolated points of a self-similar compact set.** Let $K$ be a self-similar
+compact set of module $\mu$ and ratio $\rho$, and let $T_0 = K \setminus K'$ be the set of
+isolated points of $K$, where $K'$ is the derived set of $K$. Let $\alpha \mapsto K[\alpha]$ be a
+strictly decreasing map from the ordinals $\alpha \le \omega^\omega$ onto $K$, and
+$\alpha \mapsto T_0[\alpha]$ a strictly decreasing map from the ordinals $\alpha < \omega^\omega$
+onto $T_0$. Then for every ordinal $\alpha < \omega^\omega$, $T_0[\alpha] = K[\alpha]$ if
+$\alpha < \omega$, and $T_0[\alpha] = K[\alpha + 1]$ if $\omega \le \alpha$.
+
+The paper writes $0 \le \alpha \le \omega^\omega$; the layer has order type $\omega^\omega$ (its
+indices in $K$ are $0$ and the successor ordinals below $\omega^\omega$), so $T_0[\omega^\omega]$
+is undefined and the range here is $\alpha < \omega^\omega$.
 
 ## Depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
-- [Self Similar Layer](self-similar-layer.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

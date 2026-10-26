@@ -7,17 +7,22 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.radius_fluctuation_le_normalized_variance
 ---
 
-# Radius fluctuation le normalized variance
+# Radius fluctuation is bounded by the normalized radius variance
 
-Integration preserves the radius-to-variance bound, even for infinite moments.
+**Radius fluctuation is bounded by the normalized radius variance.** For every $n > 0$ and
+every measure $\mu$ on $\mathbb{R}^n$, the integral $\int (\|x\| - \sqrt{n})^2 \, d\mu(x)$,
+taken in $[0, \infty]$ with $\|x\|$ the Euclidean norm, is at most the normalized radius
+variance of $\mu$.
+
+The bound holds even when the moments are infinite.
 
 ## Depends on
 
-- [Normalized Radius Variance](normalized-radius-variance.md)
+- [Normalized radius variance](normalized-radius-variance.md)
 
 ## Proof depends on
 
-- [Radius deviation sq le](radius-deviation-sq-le.md)
+- [Elementary radius deviation bound](radius-deviation-sq-le.md)
 
 ## Sources
 

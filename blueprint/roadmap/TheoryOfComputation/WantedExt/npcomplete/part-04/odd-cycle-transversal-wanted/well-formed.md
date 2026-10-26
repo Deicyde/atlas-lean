@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.OddCycleTransversal.WellFormed
 ---
 
-# Well Formed
+# Well-formed odd cycle transversal instances
 
-Well-formedness of an instance.
+**Well-formed odd cycle transversal instances.** An odd cycle transversal instance
+$(n, es, K)$ is well formed when the list $es$ has no repeated entries and every pair $(u, v)$ in
+$es$ satisfies $u < n$, $v < n$ and $u \ne v$, and $(v, u)$ does not belong to $es$.
 
 ## Depends on
 
-- [Odd Cycle Transversal Instance](odd-cycle-transversal-instance.md)
+- [Odd cycle transversal instances](odd-cycle-transversal-instance.md)
 
 ## Sources
 

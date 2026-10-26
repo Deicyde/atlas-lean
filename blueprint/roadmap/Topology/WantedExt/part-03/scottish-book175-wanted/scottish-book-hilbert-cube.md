@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.ScottishBook175Wanted.ScottishBookHilbertCube
 ---
 
-# Scottish Book Hilbert Cube
+# The Hilbert cube
 
-The Hilbert cube `Q`, as the countable product of closed unit intervals.
+**The Hilbert cube.** The Hilbert cube $Q = [0,1]^{\mathbb{N}}$ is the product of countably
+many copies of the closed unit interval $[0,1]$, with the product topology.
 
 ## Depends on
 

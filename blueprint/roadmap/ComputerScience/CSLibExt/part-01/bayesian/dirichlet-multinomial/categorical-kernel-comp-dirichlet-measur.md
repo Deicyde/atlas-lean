@@ -17,14 +17,14 @@ $\alpha_i / \sum_j \alpha_j$, which is the mean of $\theta_i$ under $\mathrm{Dir
 ## Depends on
 
 - [The categorical likelihood](categorical-kernel.md)
-- [Dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
+- [Dirichlet distribution](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
 
 ## Proof depends on
 
 - [The evidence is the integral of the likelihood](../basic/comp-apply-singleton.md)
 - [Probability vectors](prob-vectors.md)
-- [Ae dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
-- [Lintegral dirichlet Measure apply](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/lintegral-dirichlet-measure-apply.md)
+- [The Dirichlet distribution is concentrated on the open simplex](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
+- [Mean of the Dirichlet distribution](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/lintegral-dirichlet-measure-apply.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Latin Square Completion
 
-- [Latin Square Completion Instance](latin-square-completion-instance.md)
-- [Well Formed](well-formed.md)
-- [Latin Square Completion Feasible](latin-square-completion-feasible.md)
-- [Latin Square Completion Dec](latin-square-completion-dec.md)
+- [Latin square completion instances](latin-square-completion-instance.md)
+- [Well-formed Latin square completion instances](well-formed.md)
+- [Completable partial Latin squares](latin-square-completion-feasible.md)
+- [LATIN SQUARE COMPLETION as a decision problem](latin-square-completion-dec.md)
 - [LATIN SQUARE COMPLETION is NP-complete](latin-square-completion-np-complete.md)

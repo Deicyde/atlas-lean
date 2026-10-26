@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinTwoSat.MinTwoSatFeasible
 ---
 
-# Min Two Sat Feasible
+# Feasible MINIMUM 2-SATISFIABILITY instances
 
-An assignment satisfying at most `K` clauses.
+**Feasible MINIMUM 2-SATISFIABILITY instances.** A triple $(n, \varphi, K)$ of a natural number
+$n$, a CNF formula $\varphi$ with clauses $C_0, \dots, C_{m-1}$ and a natural number $K$ is
+feasible when there is an assignment of truth values to the variables $0, \dots, n-1$ that, with
+every variable $x \ge n$ set to false, satisfies $C_j$ for at most $K$ indices $j < m$.
 
 ## Depends on
 
-- [Min Two Sat Instance](min-two-sat-instance.md)
+- [MINIMUM 2-SATISFIABILITY instances](min-two-sat-instance.md)
 
 ## Proof depends on
 

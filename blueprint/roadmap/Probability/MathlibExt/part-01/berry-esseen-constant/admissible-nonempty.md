@@ -7,17 +7,19 @@ proof: formalized
 lean: BerryEsseenConstant.admissible_nonempty
 ---
 
-# Admissible nonempty
+# Admissible Berry–Esseen coefficients exist
 
-The optimized family is genuinely nonempty.
+**Admissible Berry–Esseen coefficients exist.** The set of real numbers $C$ that are
+admissible Berry–Esseen coefficients (common Berry–Esseen coefficients for all standardized laws
+and all positive sample sizes) is nonempty.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
 
 ## Proof depends on
 
-- [Is Admissible forty Two](is-admissible-forty-two.md)
+- [The Berry–Esseen bound with coefficient 42](is-admissible-forty-two.md)
 
 ## Sources
 

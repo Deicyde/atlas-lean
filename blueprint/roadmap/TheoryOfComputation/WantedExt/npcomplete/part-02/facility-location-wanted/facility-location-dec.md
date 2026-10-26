@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FacilityLocation.facilityLocationDec
 ---
 
-# Facility Location Dec
+# The FACILITY LOCATION decision problem
 
-FACILITY LOCATION as a decision problem over bitstrings.
+**The FACILITY LOCATION decision problem.** FACILITY LOCATION is the decision problem that
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+facility location instance that is well-formed and feasible; bitstrings that do not decode to an
+instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ FACILITY LOCATION as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Facility Location Feasible](facility-location-feasible.md)
-- [Facility Location Instance](facility-location-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible facility location instances](facility-location-feasible.md)
+- [Facility location instances](facility-location-instance.md)
+- [Well-formed facility location instances](well-formed.md)
 
 ## Sources
 

@@ -7,22 +7,27 @@ proof: formalized
 lean: IsDiscreteValuationRing.trace_residueFieldMulMaximalIdealGradedPiece
 ---
 
-# Trace residue Field Mul Maximal Ideal Graded Piece
+# Trace of multiplication on a graded piece
 
-Graded-piece trace: after restricting scalars to a base field `K`, the
-linear trace of the graded-piece multiplication endomorphism equals the
-algebra trace of the residue scalar. New prerequisite support for the
-corrected ATLAS N261 filtered-trace route, not a source theorem.
+**Trace of multiplication on a graded piece.** Let $R$ be a discrete valuation ring with
+maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$, let $i \in \mathbb{N}$,
+and let $K$ be a field, with a $K$-algebra structure on $\kappa$ and a $K$-module structure on
+$\mathfrak{m}^i/\mathfrak{m}^{i+1}$ such that $(c b) x = c (b x)$ for all $c \in K$,
+$b \in \kappa$ and $x \in \mathfrak{m}^i/\mathfrak{m}^{i+1}$. Then for every $a \in \kappa$, the
+trace of multiplication by $a$ on $\mathfrak{m}^i/\mathfrak{m}^{i+1}$, as a $K$-linear map,
+equals the trace $\operatorname{Tr}_{\kappa/K}(a)$.
+
+Each trace is taken to be $0$ when the corresponding space is not finite-dimensional over $K$.
 
 ## Depends on
 
-- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
-- [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)
+- [Graded pieces of the maximal-ideal filtration](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Multiplication by a residue class on a graded piece](residue-field-mul-maximal-ideal-graded-p.md)
 
 ## Proof depends on
 
-- [Residue Field Linear Equiv Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/residue-field-linear-equiv-maximal-ideal.md)
-- [Residue Field Linear Equiv Maximal Ideal Graded Piece conj lmul](residue-field-linear-equiv-maximal-ideal.md)
+- [Graded pieces of a DVR as copies of the residue field](../maximal-ideal-graded-piece/residue-field-linear-equiv-maximal-ideal.md)
+- [The residue-field isomorphism intertwines multiplication](residue-field-linear-equiv-maximal-ideal.md)
 
 ## Sources
 

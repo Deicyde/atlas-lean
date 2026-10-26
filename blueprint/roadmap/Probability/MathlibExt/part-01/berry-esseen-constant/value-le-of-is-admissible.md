@@ -7,18 +7,20 @@ proof: formalized
 lean: BerryEsseenConstant.value_le_of_isAdmissible
 ---
 
-# Value le of is Admissible
+# The optimal Berry–Esseen coefficient is at most every admissible one
 
-The optimal coefficient is no larger than any admissible coefficient.
+**The optimal Berry–Esseen coefficient is at most every admissible one.** If $C$ is an
+admissible Berry–Esseen coefficient, then the infimum $C^*$ of all admissible coefficients
+satisfies $C^* \le C$.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
-- [Value](value.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Admissible bdd Below](admissible-bdd-below.md)
+- [The admissible Berry–Esseen coefficients are bounded below](admissible-bdd-below.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # House With Two Rooms
 
-- [House With Two Rooms](house-with-two-rooms.md)
-- [Contractible Space house With Two Rooms](contractible-space-house-with-two-rooms.md)
+- [Bing's house with two rooms](house-with-two-rooms.md)
+- [Bing's house with two rooms is contractible](contractible-space-house-with-two-rooms.md)

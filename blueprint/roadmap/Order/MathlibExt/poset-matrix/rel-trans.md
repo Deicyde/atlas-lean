@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.IsPosetMatrix.rel_trans
 ---
 
-# Rel trans
+# The relation of a poset matrix is transitive
 
-The represented relation is transitive.
+**The relation of a poset matrix is transitive.** If $M$ is an $n \times n$ poset matrix
+and $i, j, k < n$ are indices such that the relation represented by $M$ relates $i$ to $j$
+and $j$ to $k$, then it relates $i$ to $k$.
 
 ## Depends on
 
-- [Is Poset Matrix](is-poset-matrix.md)
-- [Rel](rel.md)
+- [Poset matrix](is-poset-matrix.md)
+- [Relation represented by a Boolean matrix](rel.md)
 
 ## Sources
 

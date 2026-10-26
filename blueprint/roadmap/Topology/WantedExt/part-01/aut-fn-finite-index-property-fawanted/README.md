@@ -5,6 +5,6 @@ navigation: module
 
 # Aut Fn Finite Index Property FA
 
-- [Has Property FA](has-property-fa.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Serre's Property FA](has-property-fa.md)
+- [Farb's question on Property FA for finite-index subgroups of $\operatorname{Aut}(F_n)$](conjecture.md)
+- [Finite-index subgroups of $\operatorname{Aut}(F_n)$ have Property FA for $n \ge 4$](conjecture-holds.md)

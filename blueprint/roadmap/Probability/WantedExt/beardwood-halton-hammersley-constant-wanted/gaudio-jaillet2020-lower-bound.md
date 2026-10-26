@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.gaudioJaillet2020LowerBound
 ---
 
-# Gaudio Jaillet2020 Lower Bound
+# Statement of the Gaudio–Jaillet lower bound
 
-[GJ2020] rigorous lower bound `0.6277 ≤ β_2`.
+**Statement of the Gaudio–Jaillet lower bound.** The proposition that the
+Beardwood–Halton–Hammersley constant $\beta_2$ of the unit square is at least $0.6277$, that is,
+$0.6277 \le \beta_2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

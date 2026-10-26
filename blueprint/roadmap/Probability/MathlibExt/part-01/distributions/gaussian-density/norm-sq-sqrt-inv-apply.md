@@ -6,9 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.norm_sq_sqrt_inv_apply
 ---
 
-# Norm sq sqrt inv apply
+# Quadratic form of the inverse square root
 
-`‖√S⁻¹ u‖² = uᵀ S⁻¹ u` for positive definite `S`.
+**Quadratic form of the inverse square root.** Let $\iota$ be a finite type, $S$ a positive
+definite real $\iota \times \iota$ matrix and $S^{1/2}$ its positive semidefinite square root. Then
+for every $u$ in the Euclidean space $\mathbb{R}^\iota$,
+$\|(S^{1/2})^{-1} u\|^2 = u^\top S^{-1} u$.
 
 ## Depends on
 

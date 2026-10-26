@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.GraphColoring.Graph
 ---
 
-# Graph
+# Graph of a GRAPH COLORING instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a GRAPH COLORING instance.** The graph of an instance $(n, E, K)$ of GRAPH
+COLORING is the simple graph on $\{0, \dots, n - 1\}$ in which distinct vertices $i$ and $j$ are
+adjacent when $(i, j)$ or $(j, i)$ belongs to $E$.
 
 ## Depends on
 
-- [Graph Coloring Instance](graph-coloring-instance.md)
+- [Instances of GRAPH COLORING](graph-coloring-instance.md)
 
 ## Proof depends on
 

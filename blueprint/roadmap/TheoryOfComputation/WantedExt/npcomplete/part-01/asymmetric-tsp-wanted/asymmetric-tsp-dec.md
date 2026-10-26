@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.AsymmetricTsp.asymmetricTspDec
 ---
 
-# Asymmetric Tsp Dec
+# The asymmetric traveling salesperson decision problem
 
-TRAVELING SALESPERSON (ASYMMETRIC) as a decision problem over bitstrings.
+**The asymmetric traveling salesperson decision problem.** The asymmetric TSP decision problem
+accepts a bitstring $x$ when $x$ decodes, under the canonical bitstring encoding of asymmetric TSP
+instances, to an instance $(n, w, B)$ that is well formed and feasible, and rejects $x$
+otherwise; in particular it rejects every bitstring that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ TRAVELING SALESPERSON (ASYMMETRIC) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Asymmetric Tsp Feasible](asymmetric-tsp-feasible.md)
-- [Asymmetric Tsp Instance](asymmetric-tsp-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible asymmetric TSP instances](asymmetric-tsp-feasible.md)
+- [Asymmetric TSP instances](asymmetric-tsp-instance.md)
+- [Well-formed asymmetric TSP instances](well-formed.md)
 
 ## Sources
 

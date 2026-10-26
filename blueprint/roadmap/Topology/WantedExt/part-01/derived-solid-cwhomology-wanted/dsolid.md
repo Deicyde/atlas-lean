@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.DSolid
 ---
 
-# DSolid
+# Derived category of light solid abelian groups
 
-The derived category of light solid abelian groups.
+**Derived category of light solid abelian groups.** The derived category of the abelian
+category of light solid abelian groups.
 
 ## Depends on
 
@@ -15,11 +16,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [P](p.md)
-- [P retract](p-retract.md)
-- [Solid](solid.md)
-- [Is Solid](is-solid.md)
-- [One Minus Shift](one-minus-shift-2.md)
+- [The light condensed abelian group P](p.md)
+- [P is a retract of ℤ(ℕ ∪ {∞})](p-retract.md)
+- [The category of light solid abelian groups](solid.md)
+- [Solid light condensed abelian groups](is-solid.md)
+- [One minus shift on P](one-minus-shift-2.md)
 
 ## Sources
 

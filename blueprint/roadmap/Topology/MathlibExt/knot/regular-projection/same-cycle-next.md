@@ -6,23 +6,27 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.sameCycle_next
 ---
 
-# Same Cycle next
+# A traversal step stays in its strand cycle
 
-One traversal step stays in the same strand cycle, by definition of
-the cycle relation.
+**A traversal step stays in its strand cycle.** Let $D$ be a dart diagram, and for a dart
+$d$ of $D$ let $\operatorname{next}(d)$ be the dart reached from $d$ by crossing its edge
+segment and then going straight through the next crossing. Then for every dart $d$ of $D$, the
+darts $d$ and $\operatorname{next}(d)$ lie in the same cycle of the strand traversal
+permutation of $D$, the permutation of the darts of $D$ that sends each dart $e$ to
+$\operatorname{next}(e)$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Dart](dart.md)
-- [Next](next.md)
-- [Next Perm](next-perm.md)
+- [Dart diagram](dart-diagram.md)
+- [Darts of a dart diagram](dart.md)
+- [Strand traversal step](next.md)
+- [Strand traversal permutation](next-perm.md)
 
 ## Proof depends on
 
-- [Opposite Perm](opposite-perm.md)
-- [Pair Perm](pair-perm.md)
-- [Rot](rot.md)
+- [Opposite-dart permutation](opposite-perm.md)
+- [Edge-pairing permutation](pair-perm.md)
+- [Rotation of a dart](rot.md)
 
 ## Sources
 

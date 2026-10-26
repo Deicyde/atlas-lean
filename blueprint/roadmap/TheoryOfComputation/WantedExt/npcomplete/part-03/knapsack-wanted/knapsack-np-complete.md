@@ -7,13 +7,13 @@ lean: MetaMathlibExt.Complexity.NPComplete.Knapsack.knapsack_npComplete
 
 # KNAPSACK is NP-complete
 
-**KNAPSACK is NP-complete.** Source: M. R. Garey and D. S. Johnson, *Computers and
-Intractability: A Guide to the Theory of NP-Completeness* (1979), KNAPSACK (MP9).
+**KNAPSACK is NP-complete.** The KNAPSACK decision problem is in NP, and every decision
+problem in NP has a polynomial-time many-one reduction to it.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Knapsack Dec](knapsack-dec.md)
+- [The KNAPSACK decision problem](knapsack-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +21,4 @@ Intractability: A Guide to the Theory of NP-Completeness* (1979), KNAPSACK (MP9)
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.KnapsackWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), KNAPSACK (MP9).

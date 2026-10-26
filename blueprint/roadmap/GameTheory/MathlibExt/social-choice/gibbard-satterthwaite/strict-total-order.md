@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

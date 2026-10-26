@@ -6,24 +6,25 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.crossingNumber_lt_top_of_admitsAlternatingDiagram
 ---
 
-# Crossing Number lt top of admits Alternating Diagram
+# Alternating link types have finite crossing number
 
-A link type admitting an alternating diagram has finite crossing
-number: its alternating representative is itself a regular
-projection.
+**Alternating link types have finite crossing number.** If an
+oriented labeled link type with $n$ components admits an alternating
+diagram, then its crossing number is finite: the alternating
+representative is itself a regular projection.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Admits Alternating Diagram](../regular-projection/admits-alternating-diagram.md)
-- [Crossing Number](../regular-projection/crossing-number.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Links admitting an alternating diagram](../regular-projection/admits-alternating-diagram.md)
+- [Crossing number of a link](../regular-projection/crossing-number.md)
 
 ## Proof depends on
 
-- [Is Alternating Projection](../regular-projection/is-alternating-projection.md)
-- [Is Regular Projection](../regular-projection/is-regular-projection.md)
-- [Isotopic](../euclidean-link/isotopic-2.md)
-- [Crossing Number lt top of isotopic of is Regular Projection](../regular-projection/crossing-number-lt-top-of-isotopic-of-is.md)
+- [Alternating regular projections](../regular-projection/is-alternating-projection.md)
+- [Regular projections](../regular-projection/is-regular-projection.md)
+- [Isotopy of parametrized links](../euclidean-link/isotopic-2.md)
+- [Finiteness of the crossing number](../regular-projection/crossing-number-lt-top-of-isotopic-of-is.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FeedbackArcSet.DAdj
 ---
 
-# DAdj
+# Directed adjacency in an arc list
 
-Directed adjacency from an edge list (as a Bool, for use in filters).
+**Directed adjacency in an arc list.** For a list $E$ of ordered pairs of natural numbers and
+natural numbers $u$ and $v$, the directed adjacency test returns true when the pair $(u, v)$
+occurs in $E$, that is, when $E$ contains an arc from $u$ to $v$, and false otherwise.
 
 ## Depends on
 

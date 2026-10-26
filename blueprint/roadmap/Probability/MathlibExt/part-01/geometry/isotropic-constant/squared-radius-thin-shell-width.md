@@ -6,10 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.squaredRadiusThinShellWidth
 ---
 
-# Squared Radius Thin Shell Width
+# Squared-radius thin-shell width
 
-The squared-radius thin-shell convention in KL2022 and JLV2022.
-This is not the radius-fluctuation width used elsewhere in the catalogue.
+**Squared-radius thin-shell width.** For a natural number $n$, the squared-radius thin-shell
+width in dimension $n$ is the supremum, in $[0, \infty]$, of
+$\left(\int (|x|^2 - n)^2 \, d\mu(x) / n\right)^{1/2}$ (with $0/0 = 0$) over all isotropic
+log-concave probability measures $\mu$ on $\mathbb{R}^n$, that is, those with a log-concave
+Lebesgue density, mean zero and identity covariance.
+
+It measures the fluctuation of the squared radius $|x|^2$, not of the radius $|x|$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
-- [Normalized Radius Variance](../thin-shell/normalized-radius-variance.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
+- [Normalized radius variance](../thin-shell/normalized-radius-variance.md)
 
 ## Sources
 

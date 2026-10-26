@@ -6,11 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherFunction
 ---
 
-# Rademacher Function
+# Rademacher random multiplicative function
 
-The Rademacher random multiplicative function associated with a realization of the prime
-signs. It is the pointwise product of the square of the Möbius function and the product of the
-signs over the prime divisors.
+**Rademacher random multiplicative function.** Let $(X_p)_p$ be a family of maps
+$X_p : \Omega \to \{-1, 1\}$ indexed by the primes, and let $\omega \in \Omega$. The Rademacher
+random multiplicative function at $\omega$ is the arithmetic function
+$f : \mathbb{N} \to \mathbb{Z}$ with $f(0) = 0$ and
+
+$$f(n) = \mu(n)^2 \prod_{p \mid n} X_p(\omega)$$
+
+for $n \ge 1$, where $\mu$ is the Möbius function and the product runs over the distinct primes
+$p$ dividing $n$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Sign Nat](prime-sign-nat.md)
+- [Prime sign of a natural number](prime-sign-nat.md)
 
 ## Sources
 

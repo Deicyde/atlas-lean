@@ -5,9 +5,9 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Partition.PartitionInstance
 ---
 
-# Partition Instance
+# Instances of PARTITION
 
-A partition instance: a list of natural numbers.
+**Instances of PARTITION.** An instance of PARTITION is a finite list of natural numbers.
 
 ## Depends on
 

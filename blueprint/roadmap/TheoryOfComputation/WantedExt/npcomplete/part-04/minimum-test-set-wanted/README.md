@@ -4,8 +4,8 @@ navigation: module
 
 # Minimum Test Set
 
-- [Minimum Test Set Instance](minimum-test-set-instance.md)
-- [Well Formed](well-formed.md)
-- [Minimum Test Set Feasible](minimum-test-set-feasible.md)
-- [Minimum Test Set Dec](minimum-test-set-dec.md)
+- [Minimum test set instance](minimum-test-set-instance.md)
+- [Well-formed minimum test set instance](well-formed.md)
+- [Feasible minimum test set instance](minimum-test-set-feasible.md)
+- [The MINIMUM TEST SET decision problem](minimum-test-set-dec.md)
 - [MINIMUM TEST SET is NP-complete](minimum-test-set-np-complete.md)

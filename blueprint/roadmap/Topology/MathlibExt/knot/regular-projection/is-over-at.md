@@ -5,24 +5,26 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.isOverAt
 ---
 
-# Is Over At
+# Over/under status at a crossing preimage
 
-Whether the strand at a crossing preimage is the over-strand of
-its crossing, under a regular projection.
+**Over/under status at a crossing preimage.** Let $L$ be a parametrized link whose standard
+projection to the plane is regular, and let $a$ be a crossing preimage of $L$. The over/under
+status at $a$ is true when $a$ is the over-strand preimage of the crossing at the projection of
+$a$, that is, the preimage of that crossing of greatest height, and false otherwise.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Is Crossing Preimage](is-crossing-preimage.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Param Point](param-point.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Crossing preimages](is-crossing-preimage.md)
+- [Regular projections](is-regular-projection.md)
+- [Parameter point](param-point.md)
 
 ## Proof depends on
 
-- [Double Point Set](double-point-set.md)
-- [Over Point](over-point.md)
-- [Proj Point](proj-point.md)
-- [R2](r2.md)
+- [Double points of a link projection](double-point-set.md)
+- [Over-strand preimage of a crossing](over-point.md)
+- [Projected point of a link at a parameter point](proj-point.md)
+- [Euclidean plane](r2.md)
 
 ## Sources
 

@@ -5,7 +5,7 @@ navigation: module
 
 # Adic Completion Residue Field
 
-- [Completion Residue Map](completion-residue-map.md)
-- [Ker completion Residue Map](ker-completion-residue-map.md)
-- [Surjective completion Residue Map](surjective-completion-residue-map.md)
-- [Completion Residue Field Equiv](completion-residue-field-equiv.md)
+- [Residue map to the completed residue field](completion-residue-map.md)
+- [Kernel of the completed residue map](ker-completion-residue-map.md)
+- [Surjectivity of the completed residue map](surjective-completion-residue-map.md)
+- [Residue field of the completion](completion-residue-field-equiv.md)

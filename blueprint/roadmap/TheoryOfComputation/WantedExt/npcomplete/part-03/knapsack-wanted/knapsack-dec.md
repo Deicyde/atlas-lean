@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Knapsack.knapsackDec
 ---
 
-# Knapsack Dec
+# The KNAPSACK decision problem
 
-KNAPSACK as a decision problem over bitstrings.
+**The KNAPSACK decision problem.** KNAPSACK is the decision problem that accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a knapsack instance
+$(I, C, T)$ for which some subsequence of the item list $I$, possibly empty, has total weight at
+most $C$ and total value at least $T$. Bitstrings that do not decode are rejected.
 
 ## Depends on
 
@@ -23,8 +26,8 @@ KNAPSACK as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Knapsack Feasible](knapsack-feasible.md)
-- [Knapsack Instance](knapsack-instance.md)
+- [Feasible knapsack instances](knapsack-feasible.md)
+- [Knapsack instances](knapsack-instance.md)
 
 ## Sources
 

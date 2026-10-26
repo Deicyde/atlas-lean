@@ -7,18 +7,20 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_eq_top_iff
 ---
 
-# Conductor Ideal eq top iff
+# The conductor ideal is the unit ideal only for the whole algebra
 
-The conductor ideal is the top ideal if and only if the subalgebra is.
+**The conductor ideal is the unit ideal only for the whole algebra.** Let $R$ be a
+commutative semiring, $S$ a commutative $R$-algebra and $A$ an $R$-subalgebra of $S$. The
+conductor ideal of $A$ is all of $S$ if and only if $A = S$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Conductor Ideal top](conductor-ideal-top.md)
-- [Le conductor Ideal iff](le-conductor-ideal-iff.md)
+- [Conductor ideal of the whole algebra](conductor-ideal-top.md)
+- [Universal property of the conductor ideal](le-conductor-ideal-iff.md)
 
 ## Sources
 

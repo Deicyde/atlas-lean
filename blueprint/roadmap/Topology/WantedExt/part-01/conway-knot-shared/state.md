@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.State
 ---
 
-# State
+# Braid closure traversal state
 
-Traversal state: the current strand position and the accumulated
-vertex list of the polyline so far.
+**Braid closure traversal state.** A traversal state for tracing the closure of a braid
+consists of the current strand position, a natural number, and the list of points of
+$\mathbb{R}^3$ accumulated so far, in order, as vertices of the polyline.
 
 ## Depends on
 

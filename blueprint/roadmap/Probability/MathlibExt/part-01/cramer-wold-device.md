@@ -7,9 +7,17 @@ proof: formalized
 lean: MathlibExt.Probability.CramerWoldWanted.cramer_wold_device
 ---
 
-# Cramer Wold
+# Cramér–Wold device
 
-Cramér–Wold device: convergence of all linear projections implies vector convergence.
+**Cramér–Wold device.** Let $d$ be a natural number, let $(\Omega, \mu)$ and $(\Omega', \mu')$
+be probability spaces, and let $X_n : \Omega \to \mathbb{R}^d$ for $n \in \mathbb{N}$ and
+$Z : \Omega' \to \mathbb{R}^d$ be maps, where $\mathbb{R}^d$ carries the Euclidean inner product.
+If for every $t \in \mathbb{R}^d$ the real-valued maps $\langle t, X_n \rangle$ converge in
+distribution to $\langle t, Z \rangle$ as $n \to \infty$, then $X_n$ converges in distribution
+to $Z$ as $n \to \infty$.
+
+Here convergence in distribution means that every $X_n$ and the limit are almost everywhere
+measurable and their laws converge weakly as probability measures.
 
 ## Depends on
 

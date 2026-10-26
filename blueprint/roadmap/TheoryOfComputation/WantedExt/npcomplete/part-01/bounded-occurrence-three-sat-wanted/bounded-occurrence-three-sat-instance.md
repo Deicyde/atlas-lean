@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BoundedOccurrenceThreeSat.BoundedOccurrenceThreeSatInstance
 ---
 
-# Bounded Occurrence Three Sat Instance
+# Bounded-occurrence 3-SAT instances
 
-A bounded-occurrence 3-SAT instance: number of variables, 3-CNF formula.
+**Bounded-occurrence 3-SAT instances.** A bounded-occurrence 3-SAT instance is a pair
+$(n, \varphi)$ of a natural number $n$, the number of variables, and a CNF formula $\varphi$.
 
 ## Depends on
 

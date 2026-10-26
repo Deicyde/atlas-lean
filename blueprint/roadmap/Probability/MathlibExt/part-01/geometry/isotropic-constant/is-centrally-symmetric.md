@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.IsCentrallySymmetric
 ---
 
-# Is Centrally Symmetric
+# Centrally symmetric convex body
 
-The centered symmetry convention `K = -K` used by the sharp body conjecture.
+**Centrally symmetric convex body.** For a natural number $n$, a full-dimensional convex
+body $K \subseteq \mathbb{R}^n$ is centrally symmetric when $K = -K$, that is, for every
+$x \in \mathbb{R}^n$, $x \in K$ if and only if $-x \in K$.
 
 ## Depends on
 
-- [Full Dimensional Body](full-dimensional-body.md)
+- [Full-dimensional convex body](full-dimensional-body.md)
 
 ## Sources
 

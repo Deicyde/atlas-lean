@@ -7,13 +7,14 @@ proof: formalized
 lean: hasCountableNetwork_of_secondCountable
 ---
 
-# Has Countable Network of second Countable
+# Second-countable spaces have a countable network
 
-Every second-countable space has a countable network.
+**Second-countable spaces have a countable network.** Every second-countable topological
+space has a countable network.
 
 ## Depends on
 
-- [Has Countable Network](has-countable-network.md)
+- [Countable network](has-countable-network.md)
 
 ## Sources
 

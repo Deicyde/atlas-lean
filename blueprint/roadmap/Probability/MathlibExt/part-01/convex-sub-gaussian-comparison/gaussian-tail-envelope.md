@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparison.gaussianTailEnvelope
 ---
 
-# Gaussian Tail Envelope
+# The capped Gaussian tail envelope
 
-The capped tail envelope from the probability tail constraint.
+**The capped Gaussian tail envelope.** For a real number $t$, the capped Gaussian tail
+envelope at $t$ is $\min\{1, 2 e^{-t^2/2}\}$.
 
 ## Depends on
 

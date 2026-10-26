@@ -16,7 +16,7 @@ half-open unit cube $\prod_i [v_i, v_i + 1)$ meets the dilate $t \cdot f([0, 1]^
 
 ## Depends on
 
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

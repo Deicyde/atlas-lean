@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.ProductBondPercolation.intLine
 ---
 
-# Int Line
+# The integer line graph
 
-The integer line graph: nearest-neighbor graph on `ℤ`.
+**The integer line graph.** The integer line is the simple graph on $\mathbb{Z}$ in which
+$m$ and $n$ are adjacent exactly when $|m - n| = 1$.
 
 ## Depends on
 

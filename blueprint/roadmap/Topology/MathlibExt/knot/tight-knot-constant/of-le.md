@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightKnot.IsAdmissible.of_le
 ---
 
-# Of le
+# Admissibility passes to smaller nonnegative constants
 
-Admissible constants are downward closed above zero.
+**Admissibility passes to smaller nonnegative constants.** If a real number $c$ is admissible
+for the tight-knot inequality and $c'$ is a real number with $0 \le c' \le c$, then $c'$ is
+admissible for the tight-knot inequality as well.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible constants for the tight-knot inequality](is-admissible.md)
 
 ## Proof depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Crossing Number](../regular-projection/crossing-number.md)
-- [Ropelength](../euclidean-link/ropelength.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Crossing number of a link](../regular-projection/crossing-number.md)
+- [Ropelength of a parametrized link](../euclidean-link/ropelength.md)
 
 ## Sources
 

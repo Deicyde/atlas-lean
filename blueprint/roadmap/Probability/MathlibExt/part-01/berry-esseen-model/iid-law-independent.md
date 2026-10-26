@@ -7,14 +7,16 @@ proof: formalized
 lean: BerryEsseenModel.iidLaw_independent
 ---
 
-# Iid Law independent
+# Coordinates of the i.i.d. product are independent
 
-Canonical coordinates are genuinely independent.
+**Coordinates of the i.i.d. product are independent.** If $\mu$ is a standardized law on
+$\mathbb{R}$, then the coordinate maps $\omega \mapsto \omega_i$ on $\mathbb{R}^{\mathbb{N}}$, for
+$i \in \mathbb{N}$, are mutually independent under the i.i.d. product law of $\mu$.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Iid Law](iid-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [I.i.d. product law](iid-law.md)
 
 ## Sources
 

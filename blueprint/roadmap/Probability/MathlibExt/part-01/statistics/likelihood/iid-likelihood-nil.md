@@ -6,14 +6,16 @@ proof: formalized
 lean: ProbabilityTheory.NormalizedDensityFamily.iidLikelihood_nil
 ---
 
-# Iid Likelihood nil
+# Likelihood of the empty sample
 
-Empty sample gives the empty product `1`.
+**Likelihood of the empty sample.** For a normalized density family $F$, every parameter
+$\theta$ and the empty sample $x$ (sample size $n = 0$), the iid likelihood of $\theta$ at $x$
+equals $1$, the empty product.
 
 ## Depends on
 
-- [Normalized Density Family](normalized-density-family.md)
-- [Iid Likelihood](iid-likelihood.md)
+- [Normalized density family](normalized-density-family.md)
+- [Likelihood of an iid sample](iid-likelihood.md)
 
 ## Sources
 

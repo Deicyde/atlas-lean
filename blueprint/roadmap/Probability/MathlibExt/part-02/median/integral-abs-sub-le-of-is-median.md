@@ -8,17 +8,23 @@ lean: ProbabilityTheory.integral_abs_sub_le_of_isMedian
 
 # A median minimizes the expected absolute loss
 
-**A median minimizes the expected absolute loss**: for every median `m` of `ν` and every
-`y`, `∫ |θ - m| dν ≤ ∫ |θ - y| dν`. (Without a first moment both integrals are `0` by Lean's
-convention for non-integrable functions.)
+**A median minimizes the expected absolute loss.** Let $\nu$ be a probability measure on
+$\mathbb{R}$ and let $m$ be a median of $\nu$. Then for every $y \in \mathbb{R}$,
+
+$$
+\int |\theta - m| \, d\nu(\theta) \le \int |\theta - y| \, d\nu(\theta).
+$$
+
+When $\nu$ has no first moment, neither integrand is integrable and both integrals are $0$ by
+the convention for non-integrable functions.
 
 ## Depends on
 
-- [Is Median](is-median.md)
+- [Median of a measure on the real line](is-median.md)
 
 ## Proof depends on
 
-- [Integrable abs sub iff](integrable-abs-sub-iff.md)
+- [Absolute deviations are integrable exactly when the mean exists](integrable-abs-sub-iff.md)
 
 ## Sources
 

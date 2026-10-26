@@ -7,19 +7,21 @@ proof: formalized
 lean: Subalgebra.bot_conductorIdeal_ne_bot_iff
 ---
 
-# Bot conductor Ideal ne bot iff
+# Finiteness of an overring via its conductor
 
-Nonvanishing of the conductor of the bottom subalgebra characterizes
-finiteness of an overring in the fraction field.
+**Finiteness of an overring via its conductor.** Let $R$ be a Noetherian integral domain with
+fraction field $K$, and let $T$ be an $R$-subalgebra of $K$. Then the conductor ideal of the
+image of $R$ in $T$ (the smallest $R$-subalgebra of $T$) is nonzero if and only if $T$ is
+finitely generated as an $R$-module.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Conductor Ideal bot ne bot of finite](conductor-ideal-bot-ne-bot-of-finite.md)
-- [Finite of conductor Ideal bot ne bot](finite-of-conductor-ideal-bot-ne-bot.md)
+- [A finite overring has nonzero conductor](conductor-ideal-bot-ne-bot-of-finite.md)
+- [A subalgebra of a field with nonzero conductor is finite](finite-of-conductor-ideal-bot-ne-bot.md)
 
 ## Sources
 

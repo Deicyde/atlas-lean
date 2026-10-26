@@ -7,13 +7,14 @@ proof: formalized
 lean: BerryEsseenConstant.esseenConstant_positive
 ---
 
-# Esseen Constant positive
+# Esseen's lower-bound constant is positive
 
-The Esseen benchmark is positive; no decimal is identified with it.
+**Esseen's lower-bound constant is positive.** The number $(\sqrt{10} + 3)/(6\sqrt{2\pi})$ is
+positive.
 
 ## Depends on
 
-- [Esseen Constant](esseen-constant.md)
+- [Esseen's lower-bound constant](esseen-constant.md)
 
 ## Sources
 

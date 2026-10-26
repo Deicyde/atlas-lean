@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Tsp.tspDec
 ---
 
-# Tsp Dec
+# Symmetric TSP as a decision problem
 
-TRAVELING SALESPERSON (SYMMETRIC) as a decision problem over bitstrings.
+**Symmetric TSP as a decision problem.** The symmetric traveling salesperson problem is the
+decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding of symmetric TSP instances, to an instance $(n, w, B)$ that is well formed and
+feasible. Bitstrings that fail to decode, and bitstrings that decode to instances that are not
+well formed, are rejected.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ TRAVELING SALESPERSON (SYMMETRIC) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Tsp Feasible](tsp-feasible.md)
-- [Tsp Instance](tsp-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible symmetric TSP instances](tsp-feasible.md)
+- [Symmetric TSP instances](tsp-instance.md)
+- [Well-formed symmetric TSP instances](well-formed.md)
 
 ## Sources
 

@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Topology.Algebra.BirkhoffKakutani.birkhoff_kakutani_metrization
 ---
 
-# Birkhoff Kakutani
+# Birkhoff–Kakutani metrization theorem
 
-Every Hausdorff first-countable topological group is metrizable.
+**Birkhoff–Kakutani metrization theorem.** Every Hausdorff first-countable topological group is
+metrizable.
 
 ## Depends on
 

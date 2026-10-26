@@ -4,10 +4,10 @@ navigation: module
 
 # Minimum Equivalent Digraph
 
-- [Minimum Equivalent Digraph Instance](minimum-equivalent-digraph-instance.md)
-- [DAdj](dadj.md)
-- [Reachable](reachable.md)
-- [Well Formed](well-formed.md)
-- [Minimum Equivalent Digraph Feasible](minimum-equivalent-digraph-feasible.md)
-- [Minimum Equivalent Digraph Dec](minimum-equivalent-digraph-dec.md)
+- [Instances of MINIMUM EQUIVALENT DIGRAPH](minimum-equivalent-digraph-instance.md)
+- [Directed adjacency in an arc list](dadj.md)
+- [Bounded reachability in a digraph](reachable.md)
+- [Well-formed MINIMUM EQUIVALENT DIGRAPH instances](well-formed.md)
+- [Feasible MINIMUM EQUIVALENT DIGRAPH instances](minimum-equivalent-digraph-feasible.md)
+- [MINIMUM EQUIVALENT DIGRAPH as a decision problem](minimum-equivalent-digraph-dec.md)
 - [MINIMUM EQUIVALENT DIGRAPH is NP-complete](minimum-equivalent-digraph-np-complete.md)

@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Topology.DescriptiveSetTheory.BernsteinSet.bernstein_set_exists
 ---
 
-# Bernstein Set
+# Existence of a Bernstein set
 
-There is `B ⊆ ℝ` meeting every uncountable closed `F ⊆ ℝ` in both `B` and its complement.
+**Existence of a Bernstein set.** There is a set $B \subseteq \mathbb{R}$ such that every closed,
+uncountable set $F \subseteq \mathbb{R}$ meets both $B$ and its complement $\mathbb{R} \setminus B$.
 
 ## Depends on
 

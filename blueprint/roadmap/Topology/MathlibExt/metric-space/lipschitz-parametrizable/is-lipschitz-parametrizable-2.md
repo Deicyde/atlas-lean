@@ -7,17 +7,18 @@ proof: formalized
 lean: Set.Finite.isLipschitzParametrizable
 ---
 
-# Is Lipschitz Parametrizable
+# Finite sets are Lipschitz parametrizable
 
-A finite set is `d`-Lipschitz parametrizable.
+**Finite sets are Lipschitz parametrizable.** Let $X$ be a metric space. Every finite set
+$B \subseteq X$ is $d$-Lipschitz parametrizable for every natural number $d$.
 
 ## Depends on
 
-- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+- [Lipschitz parametrizable sets](is-lipschitz-parametrizable.md)
 
 ## Proof depends on
 
-- [Is Lipschitz Parametrizable coe](is-lipschitz-parametrizable-coe.md)
+- [Finsets are Lipschitz parametrizable](is-lipschitz-parametrizable-coe.md)
 
 ## Sources
 

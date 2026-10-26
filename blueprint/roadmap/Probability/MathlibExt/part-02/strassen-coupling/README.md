@@ -5,6 +5,6 @@ navigation: module
 
 # Strassen Coupling
 
-- [Is Upper Set](is-upper-set.md)
-- [Forall is Upper Set sum le iff exists coupling](forall-is-upper-set-sum-le-iff-exists-co.md)
-- [Strassen coupling finite poset](strassen-coupling-finite-poset.md)
+- [Finite upper sets](is-upper-set.md)
+- [Strassen's theorem on a finite poset, equal-mass form](forall-is-upper-set-sum-le-iff-exists-co.md)
+- [Strassen's theorem on a finite poset](strassen-coupling-finite-poset.md)

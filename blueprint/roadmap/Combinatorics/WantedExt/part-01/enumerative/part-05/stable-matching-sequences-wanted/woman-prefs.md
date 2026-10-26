@@ -18,7 +18,7 @@ women, each woman $j$ gets the strict total order on the men in which man $a$ co
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 - [A woman's rank of a man](woman-rank.md)
 
 ## Sources

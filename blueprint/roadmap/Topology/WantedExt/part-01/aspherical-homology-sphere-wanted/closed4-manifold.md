@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Topology.AsphericalHomologySphereWanted.Topology.Closed4Manifold
 ---
 
-# Closed4 Manifold
+# Closed topological 4-manifold
 
-A closed connected topological 4-manifold, bundled with its topological-space
-and chart instances so its existence can be quantified over. Charts model
-`carrier` on `EuclideanSpace ℝ (Fin 4)` (the whole space, not a half-space), so
-the space is locally Euclidean with no boundary; together with `CompactSpace`
-this is a closed manifold. This is the charted topological-manifold model — it
-carries `ChartedSpace`, not Mathlib's stronger bundled `IsManifold` class, which
-is exactly right for a topological (not necessarily smooth) manifold.
+**Closed topological 4-manifold.** A closed topological 4-manifold is a nonempty, compact,
+connected, Hausdorff, second-countable topological space $M$ together with an atlas of charts
+covering $M$, each a homeomorphism from an open subset of $M$ onto an open subset of
+$\mathbb{R}^4$ (charts are modelled on all of $\mathbb{R}^4$, not on a half-space, so $M$ has no
+boundary).
+
+No smoothness or compatibility between charts is required, so this is a topological, not
+necessarily smooth, manifold.
 
 ## Depends on
 

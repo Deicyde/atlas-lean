@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Topology.KirkNormalStructureWanted.Topology.KirkNormalStructure.kirk_normal_structure
 ---
 
-# Kirk normal structure
+# Kirk's fixed-point theorem for sets with normal structure
 
-Source: W. A. Kirk, A fixed point theorem for mappings which do not increase distances, Amer. Math. Monthly 72 (1965). Listed as §228 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §228. Via leanprover/lean-eval@38361be, problem `kirk_normal_structure`.
+**Kirk's fixed-point theorem for sets with normal structure.** Let $E$ be a reflexive real
+Banach space, meaning that the canonical embedding of $E$ into its double dual is surjective, and
+let $K \subseteq E$ be a nonempty, closed, bounded, convex set with normal structure. Then every
+nonexpansive self-map $T : K \to K$ has a fixed point.
 
 ## Depends on
 
-- [Has Normal Structure](has-normal-structure.md)
-- [Is Nonexpansive Self Map](is-nonexpansive-self-map.md)
+- [Normal structure](has-normal-structure.md)
+- [Nonexpansive self-map](is-nonexpansive-self-map.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Topology.KirkNormalStructureWanted](../../../../../sources/v2/WantedExt.md)
+- W. A. Kirk, A fixed point theorem for mappings which do not increase distances, Amer. Math. Monthly 72 (1965). Listed as §228 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §228. Via leanprover/lean-eval@38361be, problem `kirk_normal_structure`.

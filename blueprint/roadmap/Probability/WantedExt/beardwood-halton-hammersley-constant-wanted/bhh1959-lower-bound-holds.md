@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhh1959LowerBound_holds
 ---
 
-# Bhh1959 Lower Bound holds
+# Beardwood–Halton–Hammersley lower bound
 
-Source: Beardwood, Halton and Hammersley (1959), catalogue lower-bound row.
+**Beardwood–Halton–Hammersley lower bound.** The Beardwood–Halton–Hammersley constant $\beta_2$
+for uniform points in the unit square satisfies $\beta_2 \ge 5/8 = 0.625$.
 
 ## Depends on
 
-- [Bhh1959 Lower Bound](bhh1959-lower-bound.md)
+- [Statement of the Beardwood–Halton–Hammersley lower bound](bhh1959-lower-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Beardwood, Halton and Hammersley (1959), catalogue lower-bound row.

@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.steinerberger2015CorrectedSymbolicLowerBound
 ---
 
-# Steinerberger2015 Corrected Symbolic Lower Bound
+# Statement of the corrected Steinerberger lower bound
 
-[GJ2020]'s correction of the Steinerberger argument gives the exact symbolic lower bound
-`0.625 + 19 / 10368 ≤ β_2`. The nearby decimal in the catalogue is only approximate.
+**Statement of the corrected Steinerberger lower bound.** The proposition that the
+Beardwood–Halton–Hammersley constant $\beta_2$ satisfies
+$\frac{5}{8} + \frac{19}{10368} \le \beta_2$.
+
+The bound is the exact rational $\frac{5}{8} + \frac{19}{10368}$, not a decimal approximation of it.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

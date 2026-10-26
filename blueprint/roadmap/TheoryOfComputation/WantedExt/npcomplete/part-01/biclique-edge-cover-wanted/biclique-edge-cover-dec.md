@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BicliqueEdgeCover.bicliqueEdgeCoverDec
 ---
 
-# Biclique Edge Cover Dec
+# The biclique edge cover decision problem
 
-BICLIQUE EDGE COVER as a decision problem over bitstrings.
+**The biclique edge cover decision problem.** BICLIQUE EDGE COVER is the decision problem
+that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding
+of biclique edge cover instances, to an instance that is well formed and feasible; it rejects
+every bitstring that fails to decode.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ BICLIQUE EDGE COVER as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Biclique Edge Cover Feasible](biclique-edge-cover-feasible.md)
-- [Biclique Edge Cover Instance](biclique-edge-cover-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible biclique edge cover instances](biclique-edge-cover-feasible.md)
+- [Biclique edge cover instances](biclique-edge-cover-instance.md)
+- [Well-formed biclique edge cover instances](well-formed.md)
 
 ## Sources
 

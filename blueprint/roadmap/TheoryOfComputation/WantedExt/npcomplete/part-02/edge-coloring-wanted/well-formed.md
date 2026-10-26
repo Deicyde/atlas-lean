@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.EdgeColoring.WellFormed
 ---
 
-# Well Formed
+# Well-formed edge coloring instances
 
-Well-formedness of an instance.
+**Well-formed edge coloring instances.** An edge coloring instance $(n, E, K)$ is well formed
+when the list $E$ has no repeated entries and every pair $(a, b)$ in $E$ satisfies $a < n$,
+$b < n$ and $a \ne b$, and $(b, a)$ does not occur in $E$.
 
 ## Depends on
 
-- [Edge Coloring Instance](edge-coloring-instance.md)
+- [Edge coloring instances](edge-coloring-instance.md)
 
 ## Sources
 

@@ -7,29 +7,39 @@ proof: formalized
 lean: MetaMathlibExt.MultigradedFreeResolution.multigradedBaseChange_nonempty
 ---
 
-# Multigraded Base Change nonempty
+# Existence of multigraded base-change data
 
-Assembly of the repository's `MultigradedBaseChange` package: the
-base-changed resolution splits into the degree-`α` complexes above, and each
-of their homology groups is finite-dimensional because the degree pieces are.
+**Existence of multigraded base-change data.** Let $K$ be a field, let
+$R = K[x_1, \dots, x_n]$, let $M$ be a multigraded polynomial module over $R$, and let $F$ be a
+multigraded free resolution of $M$ whose term $F_i$ has the homogeneous basis
+$(e_j)_{j \in \iota_i}$, where every index set $\iota_i$ is finite. Write $K \otimes_R F$ for the
+chain complex of $K$-vector spaces obtained from $F$ by extending scalars along the evaluation
+$R \to K$ at $x = 0$, and for $\alpha \in \mathbb{Z}^n$ call the $K$-span of the vectors
+$1 \otimes e_j$ with $e_j$ of degree $\alpha$ the degree-$\alpha$ piece of $(K \otimes_R F)_i$.
+Then multigraded base-change data for $F$ exist: each $(K \otimes_R F)_i$ is the direct sum of
+its degree-$\alpha$ pieces over $\alpha \in \mathbb{Z}^n$, the differentials of $K \otimes_R F$
+preserve these pieces, and for every $\alpha$ there is a chain complex $C^\alpha$ of $K$-vector
+spaces with finite-dimensional homology in every degree, together with a chain map
+$C^\alpha \to K \otimes_R F$ that is injective in each homological degree $i$ with image the
+degree-$\alpha$ piece of $(K \otimes_R F)_i$.
 
 ## Depends on
 
-- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
-- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
-- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Multigraded base change data](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded free resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded modules over a polynomial ring](../multigraded-polynomial-module/multigraded-polynomial-module.md)
 
 ## Proof depends on
 
-- [Base Changed Degree Complex](base-changed-degree-complex.md)
-- [Multigraded Base Changed Term Decomposition](../base-changed-degree-decomposition.md)
-- [Base Changed Degree Inclusion](base-changed-degree-inclusion.md)
+- [Multidegree component complex of the base-changed resolution](base-changed-degree-complex.md)
+- [Multidegree decomposition of the base-changed resolution](../base-changed-degree-decomposition.md)
+- [Inclusion of a multidegree component complex](base-changed-degree-inclusion.md)
 - [Each component of the degree inclusion is injective](each-component-of-the-degree-inclusion-i.md)
 - [Each component of the degree inclusion has range exactly...](each-component-of-the-degree-inclusion-h.md)
-- [Multigraded Base Changed Degree Piece Finite](../base-changed-degree-piece-finite.md)
-- [Multigraded Base Changed Differential](../base-changed-differential-preserves-degr.md)
-- [Base Changed Complex](../multigraded-betti/base-changed-complex.md)
-- [Base Changed Degree Piece](../multigraded-betti/base-changed-degree-piece.md)
+- [Finite bases give finite-dimensional multidegree pieces](../base-changed-degree-piece-finite.md)
+- [The base-changed differential preserves multidegree](../base-changed-differential-preserves-degr.md)
+- [Base change of a resolution to the residue field](../multigraded-betti/base-changed-complex.md)
+- [Degree pieces of the base-changed resolution](../multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

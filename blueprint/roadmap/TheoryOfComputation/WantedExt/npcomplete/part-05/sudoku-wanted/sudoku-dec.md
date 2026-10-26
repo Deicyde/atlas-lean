@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Sudoku.sudokuDec
 ---
 
-# Sudoku Dec
+# SUDOKU as a decision problem
 
-SUDOKU as a decision problem over bitstrings.
+**SUDOKU as a decision problem.** The decision problem SUDOKU accepts a bitstring $x$ exactly
+when $x$ decodes, under the canonical bitstring encoding of pairs of a natural number and a finite
+list of finite lists of natural numbers, to a Sudoku instance that is well formed and feasible.
+It rejects every bitstring that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ SUDOKU as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Sudoku Feasible](sudoku-feasible.md)
-- [Sudoku Instance](sudoku-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible Sudoku instances](sudoku-feasible.md)
+- [Sudoku instances](sudoku-instance.md)
+- [Well-formed Sudoku instances](well-formed.md)
 
 ## Sources
 

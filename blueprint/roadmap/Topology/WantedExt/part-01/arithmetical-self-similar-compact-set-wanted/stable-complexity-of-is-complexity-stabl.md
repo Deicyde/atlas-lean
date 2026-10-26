@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.stableComplexity_of_isComplexityStable
 ---
 
-# Stable Complexity of is Complexity Stable
+# Stable complexity of a stable number
 
-Characteristic value: a stable number's stable complexity is its complexity.
+**Stable complexity of a stable number.** If $n$ is a stable natural number, then its
+stable complexity equals its integer complexity: $\lVert n \rVert_{\mathrm{st}} = \lVert n \rVert$.
 
 ## Depends on
 
 - [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
-- [Is Complexity Stable](is-complexity-stable.md)
-- [Stable Complexity](stable-complexity.md)
+- [Stable numbers for integer complexity](is-complexity-stable.md)
+- [Stable complexity](stable-complexity.md)
 
 ## Sources
 

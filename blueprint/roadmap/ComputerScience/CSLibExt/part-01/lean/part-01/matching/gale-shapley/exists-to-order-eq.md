@@ -17,12 +17,12 @@ Hence the Gale-Shapley algorithm on rankings applies to every preference on $\{0
 ## Depends on
 
 - [Preference order of a ranking](to-order.md)
-- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Proof depends on
 
 - [Rank under a strict total order](order-rank.md)
-- [Ext](../../../../../../../Order/MathlibExt/strict-total-order/ext.md)
+- [Strict total orders are determined by their relation](../../../../../../../Order/MathlibExt/strict-total-order/ext.md)
 
 ## Sources
 

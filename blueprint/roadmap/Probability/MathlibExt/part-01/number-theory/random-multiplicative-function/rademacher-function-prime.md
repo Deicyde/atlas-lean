@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherFunction_prime
 ---
 
-# Rademacher Function prime
+# Value of the Rademacher function at a prime
 
-Evaluation at a prime is its assigned sign.
+**Value of the Rademacher function at a prime.** Let $(X_p)_p$ be a family of maps
+$X_p : \Omega \to \{-1, 1\}$ indexed by the primes, let $\omega \in \Omega$, and let $f$ be the
+associated Rademacher random multiplicative function at $\omega$. For every prime $p$, the value
+$f(p)$ is the sign assigned to $p$, that is, $f(p) = X_p(\omega)$.
 
 ## Depends on
 
-- [Prime Sign Nat](prime-sign-nat.md)
-- [Rademacher Function](rademacher-function.md)
+- [Prime sign of a natural number](prime-sign-nat.md)
+- [Rademacher random multiplicative function](rademacher-function.md)
 
 ## Proof depends on
 
-- [Rademacher Function eq prod of squarefree](rademacher-function-eq-prod-of-squarefre.md)
+- [The Rademacher random multiplicative function on squarefree numbers](rademacher-function-eq-prod-of-squarefre.md)
 
 ## Sources
 

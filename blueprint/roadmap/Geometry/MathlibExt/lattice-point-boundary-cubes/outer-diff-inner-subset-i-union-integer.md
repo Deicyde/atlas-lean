@@ -22,11 +22,11 @@ scale $t$: there is $y \in [0,1]^d$ with $t f_i(y) \in Q_v$.
 - [Inner cube set](../lattice-point-cube-sandwich/inner-cube-set.md)
 - [Outer cube set](../lattice-point-cube-sandwich/outer-cube-set.md)
 - [Integer cube set](../lipschitz-image-cube-count/integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 
-- [Frontier](../../../Topology/MathlibExt/connected/inter-frontier-nonempty-of-inter-compl.md)
+- [A preconnected set meets the frontier of every set it crosses](../../../Topology/MathlibExt/connected/inter-frontier-nonempty-of-inter-compl.md)
 - [Integer unit cube](../lattice-point-cube-sandwich/integer-unit-cube.md)
 - [Membership in the inner cube set](../lattice-point-cube-sandwich/mem-inner-cube-set-iff.md)
 - [Membership in an integer unit cube](../lattice-point-cube-sandwich/mem-integer-unit-cube-iff.md)

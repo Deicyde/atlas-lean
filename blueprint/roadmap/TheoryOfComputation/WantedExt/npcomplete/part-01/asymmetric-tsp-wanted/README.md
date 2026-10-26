@@ -4,9 +4,9 @@ navigation: module
 
 # Asymmetric Tsp
 
-- [Asymmetric Tsp Instance](asymmetric-tsp-instance.md)
-- [Tour Length](tour-length.md)
-- [Well Formed](well-formed.md)
-- [Asymmetric Tsp Feasible](asymmetric-tsp-feasible.md)
-- [Asymmetric Tsp Dec](asymmetric-tsp-dec.md)
+- [Asymmetric TSP instances](asymmetric-tsp-instance.md)
+- [Length of a tour in the asymmetric TSP](tour-length.md)
+- [Well-formed asymmetric TSP instances](well-formed.md)
+- [Feasible asymmetric TSP instances](asymmetric-tsp-feasible.md)
+- [The asymmetric traveling salesperson decision problem](asymmetric-tsp-dec.md)
 - [TRAVELING SALESPERSON (ASYMMETRIC) is NP-complete](asymmetric-tsp-np-complete.md)

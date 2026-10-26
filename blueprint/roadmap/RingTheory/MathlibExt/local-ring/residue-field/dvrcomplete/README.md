@@ -5,5 +5,5 @@ navigation: module
 
 # DVRComplete
 
-- [Residue Field Map Alg Hom bijective of is Adic Complete](residue-field-map-alg-hom-bijective-of-i.md)
-- [Exists alg Equiv lift residue Field of is Adic Complete](exists-alg-equiv-lift-residue-field-of-i.md)
+- [Algebra maps from an étale DVR extension into a complete one match residue-field maps](residue-field-map-alg-hom-bijective-of-i.md)
+- [Lifting residue-field isomorphisms between complete étale DVR extensions](exists-alg-equiv-lift-residue-field-of-i.md)

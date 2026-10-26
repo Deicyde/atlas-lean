@@ -25,7 +25,7 @@ $\mathcal{O}_{L_w}$ over $\mathcal{O}_{K_v}$ equals the ramification index of $w
 - [The map of completed integer rings is injective](adic-completion-integers-map-injective.md)
 - [Maximal ideals of completed integer rings lie over each other](../comap-maximal-ideal-adic-completion-inte.md)
 - [Valuation of the image under the completion map](../finite-lies-over-valuation/valuation-adic-completion-map.md)
-- [Add Val algebra Map eq ramification Idx mul](../../../../../../../RingTheory/MathlibExt/ramification-inertia/valuation/add-val-algebra-map-eq-ramification-idx.md)
+- [Additive valuations scale by the ramification index](../../../../../../../RingTheory/MathlibExt/ramification-inertia/valuation/add-val-algebra-map-eq-ramification-idx.md)
 
 ## Sources
 

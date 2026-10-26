@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.DonskerWanted.iccToNNReal
 ---
 
-# Icc To NNReal
+# Inclusion of the unit interval into the nonnegative reals
 
-Inclusion of `Set.Icc 0 1` into `ℝ≥0`.
+**Inclusion of the unit interval into the nonnegative reals.** This map sends $t \in [0,1]$
+to $t$ regarded as a nonnegative real number.
 
 ## Depends on
 

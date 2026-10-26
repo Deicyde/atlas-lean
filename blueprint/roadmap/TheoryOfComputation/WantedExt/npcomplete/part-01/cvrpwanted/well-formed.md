@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CVRP.WellFormed
 ---
 
-# Well Formed
+# Well-formed capacitated vehicle routing instances
 
-Well-formedness of an instance.
+**Well-formed capacitated vehicle routing instances.** A capacitated vehicle routing instance
+$(n, d, D, m, C, K)$ is well formed when the demand list $d$ has length $n$, the distance matrix
+$D$ has $n + 1$ rows, and every row of $D$ has length $n + 1$.
 
 ## Depends on
 
-- [CVRPInstance](cvrpinstance.md)
+- [Capacitated vehicle routing instances](cvrpinstance.md)
 
 ## Sources
 

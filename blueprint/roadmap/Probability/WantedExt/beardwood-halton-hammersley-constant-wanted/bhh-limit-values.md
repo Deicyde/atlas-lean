@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhhLimitValues
 ---
 
-# Bhh Limit Values
+# BHH limit values of a sampling law
 
-The candidate BHH limit values for the explicit common law `law`.
+**BHH limit values of a sampling law.** For a measure $\mu$ on the plane, the BHH limit values
+of $\mu$ form the set of real numbers $\beta$ that are BHH limits for $\mu$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ The candidate BHH limit values for the explicit common law `law`.
 
 ## Proof depends on
 
-- [Is BHHConstant For](is-bhhconstant-for.md)
+- [BHH constant of a law](is-bhhconstant-for.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # Aspherical Homology Sphere
 
-- [Closed4 Manifold](closed4-manifold.md)
-- [Int Homology](int-homology.md)
-- [Is Aspherical](is-aspherical.md)
-- [Is Integer Homology Sphere](is-integer-homology-sphere.md)
-- [Aspherical integer homology four sphere](aspherical-integer-homology-four-sphere.md)
+- [Closed topological 4-manifold](closed4-manifold.md)
+- [Integral singular homology as a $\mathbb{Z}$-module](int-homology.md)
+- [Aspherical closed 4-manifold](is-aspherical.md)
+- [Integer homology 4-sphere](is-integer-homology-sphere.md)
+- [Existence of an aspherical integer homology 4-sphere](aspherical-integer-homology-four-sphere.md)

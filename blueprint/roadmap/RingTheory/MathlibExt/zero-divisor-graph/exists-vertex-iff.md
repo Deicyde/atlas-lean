@@ -7,13 +7,15 @@ proof: formalized
 lean: ZeroDivisorGraph.exists_vertex_iff
 ---
 
-# Exists vertex iff
+# Vertices are the nonzero zero divisors
 
-An element lifts to a vertex iff it is nonzero and a zero divisor.
+**Vertices are the nonzero zero divisors.** Let $R$ be a commutative ring. An element
+$r \in R$ is a vertex of the zero-divisor graph of $R$ if and only if $r \neq 0$ and $r$ is a
+zero divisor, that is, $sr = 0$ for some nonzero $s \in R$.
 
 ## Depends on
 
-- [Vertex](vertex.md)
+- [Nonzero zero divisors](vertex.md)
 
 ## Sources
 

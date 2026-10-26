@@ -1552,8 +1552,9 @@ private lemma herstein_of_torsion {D : Type*} [DivisionRing D] {p : ℕ}
     rw [commEnd_apply] at hdb
     exact sub_eq_zero.mp hdb
 
-/-- Jacobson's commutativity theorem: a ring in which every element
-satisfies `x ^ n = x` for some `n > 1` is commutative. -/
+/-- **Jacobson's commutativity theorem.** Let $R$ be a ring. If for every $x \in R$ there is a
+natural number $n > 1$ with $x^n = x$, then $R$ is commutative, that is, $xy = yx$ for all
+$x, y \in R$. -/
 public theorem jacobson_commutativity {R : Type*} [Ring R]
     (h : ∀ x : R, ∃ n : ℕ, 1 < n ∧ x ^ n = x) :
     ∀ x y : R, x * y = y * x := by

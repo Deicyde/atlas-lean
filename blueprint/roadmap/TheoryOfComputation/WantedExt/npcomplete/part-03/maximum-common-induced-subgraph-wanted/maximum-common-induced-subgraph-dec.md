@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumCommonInducedSubgraph.maximumCommonInducedSubgraphDec
 ---
 
-# Maximum Common Induced Subgraph Dec
+# MAXIMUM COMMON INDUCED SUBGRAPH as a decision problem
 
-MAXIMUM COMMON INDUCED SUBGRAPH as a decision problem over bitstrings.
+**MAXIMUM COMMON INDUCED SUBGRAPH as a decision problem.** The decision problem MAXIMUM
+COMMON INDUCED SUBGRAPH accepts a bitstring $x$ exactly when the canonical bitstring decoding of
+$x$ yields an instance of MAXIMUM COMMON INDUCED SUBGRAPH that is well formed and feasible.
+Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ MAXIMUM COMMON INDUCED SUBGRAPH as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Maximum Common Induced Subgraph Feasible](maximum-common-induced-subgraph-feasible.md)
-- [Maximum Common Induced Subgraph Instance](maximum-common-induced-subgraph-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible instances of MAXIMUM COMMON INDUCED SUBGRAPH](maximum-common-induced-subgraph-feasible.md)
+- [Instances of MAXIMUM COMMON INDUCED SUBGRAPH](maximum-common-induced-subgraph-instance.md)
+- [Well-formed instances of MAXIMUM COMMON INDUCED SUBGRAPH](well-formed.md)
 
 ## Sources
 

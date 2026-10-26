@@ -7,14 +7,15 @@ proof: formalized
 lean: ProbabilityTheory.cdfQuantile_mem
 ---
 
-# Cdf Quantile mem
+# The cdf at the quantile is at least the level
 
-A quantile at `u ∈ (0, 1)` belongs to the corresponding upper level set
-of the cdf.
+**The cdf at the quantile is at least the level.** Let $\mu$ be a measure on $\mathbb{R}$ with
+cumulative distribution function $F_\mu$ and quantile function $Q_\mu$. For every $u \in (0, 1)$,
+$u \le F_\mu(Q_\mu(u))$.
 
 ## Depends on
 
-- [Cdf Quantile](cdf-quantile.md)
+- [Quantile function of a real measure](cdf-quantile.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherMeasure_singleton
 ---
 
-# Rademacher Measure singleton
+# Each Rademacher sign has probability one half
 
-Every sign has probability `1 / 2` under `rademacherMeasure`.
+**Each Rademacher sign has probability one half.** For each integer unit $x \in \{-1, 1\}$,
+the Rademacher measure of the singleton $\{x\}$ is $1/2$.
 
 ## Depends on
 
-- [Rademacher Measure](rademacher-measure.md)
+- [Rademacher measure on the integer units](rademacher-measure.md)
 
 ## Sources
 

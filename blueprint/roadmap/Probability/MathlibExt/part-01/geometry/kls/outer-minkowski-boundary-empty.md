@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.outerMinkowskiBoundary_empty
 ---
 
-# Outer Minkowski Boundary empty
+# The empty set has zero outer Minkowski boundary
 
-The empty set has no outer Minkowski boundary.
+**The empty set has zero outer Minkowski boundary.** For every measure $\mu$ on a
+pseudometric space $E$, the outer Minkowski boundary measure of the empty set with respect to
+$\mu$ is $0$.
 
 ## Depends on
 
-- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
+- [Outer Minkowski boundary measure](outer-minkowski-boundary.md)
 
 ## Sources
 

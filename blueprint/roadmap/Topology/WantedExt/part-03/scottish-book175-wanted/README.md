@@ -4,6 +4,6 @@ navigation: module
 
 # Scottish Book175
 
-- [Scottish Book Hilbert Cube](scottish-book-hilbert-cube.md)
-- [Scottish Book Letter T](scottish-book-letter-t.md)
-- [Borsuk175 hilbert cube times letter T](borsuk175-hilbert-cube-times-letter-t.md)
+- [The Hilbert cube](scottish-book-hilbert-cube.md)
+- [The letter T](scottish-book-letter-t.md)
+- [The Hilbert cube absorbs the letter T (Borsuk's Problem 175)](borsuk175-hilbert-cube-times-letter-t.md)

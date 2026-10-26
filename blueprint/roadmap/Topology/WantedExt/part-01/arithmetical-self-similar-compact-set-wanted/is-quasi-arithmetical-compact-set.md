@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsQuasiArithmeticalCompactSet
 ---
 
-# Is Quasi Arithmetical Compact Set
+# Quasi-arithmetical compact sets
 
-A quasi-arithmetical compact set of module `μ` and ratio `ρ`: a self-similar compact
-set whose ratio is a natural number `ρ ≥ 2` and for which there is `κ` with
-`K \ {0} = {n / ρ^k : ρ ∤ n, k ≥ κ(n)}`. The paper's `κ` is defined on `ℕ \ ρℕ`; here it
-is a function on `ℕ` whose values off `ℕ \ ρℕ` are irrelevant.
+**Quasi-arithmetical compact sets.** Let $K \subseteq \mathbb{R}$ and let $\mu$ and $\rho$ be
+natural numbers. Then $K$ is a quasi-arithmetical compact set of module $\mu$ and ratio $\rho$
+when $\rho \ge 2$, $K$ is a self-similar compact set of module $\mu$ and ratio $\rho$, and there
+is a function $\kappa : \mathbb{N} \to \mathbb{N}$ such that
+$K \setminus \{0\} = \{n / \rho^k : n, k \in \mathbb{N},\ \rho \nmid n,\ k \ge \kappa(n)\}$.
+
+The paper's $\kappa$ is defined only on $\mathbb{N} \setminus \rho\mathbb{N}$; here its values at
+multiples of $\rho$ are irrelevant.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
 
 ## Sources
 

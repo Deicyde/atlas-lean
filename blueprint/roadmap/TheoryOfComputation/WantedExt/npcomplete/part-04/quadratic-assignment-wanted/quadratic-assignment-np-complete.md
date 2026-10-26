@@ -7,14 +7,13 @@ lean: MetaMathlibExt.Complexity.NPComplete.QuadraticAssignment.quadraticAssignme
 
 # QUADRATIC ASSIGNMENT is NP-complete
 
-**QUADRATIC ASSIGNMENT is NP-complete.** Source: M. R. Garey and D. S. Johnson, *Computers
-and Intractability* (1979), QUADRATIC ASSIGNMENT PROBLEM; S. Sahni and T. Gonzalez,
-"P-complete approximation problems" (1976).
+**QUADRATIC ASSIGNMENT is NP-complete.** The decision problem QUADRATIC ASSIGNMENT lies in NP,
+and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Quadratic Assignment Dec](quadratic-assignment-dec.md)
+- [QUADRATIC ASSIGNMENT as a decision problem](quadratic-assignment-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -22,3 +21,4 @@ and Intractability* (1979), QUADRATIC ASSIGNMENT PROBLEM; S. Sahni and T. Gonzal
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.QuadraticAssignmentWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), QUADRATIC ASSIGNMENT PROBLEM; S. Sahni and T. Gonzalez, "P-complete approximation problems" (1976).

@@ -7,15 +7,18 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.normalizedRadiusVariance_le_constant
 ---
 
-# Normalized Radius Variance le constant
+# The thin-shell variance constant bounds the normalized radius variance of isotropic log-concave measures
 
-Every admissible law contributes its actual variance to the universal supremum.
+**The thin-shell variance constant bounds the normalized radius variance of isotropic
+log-concave measures.** For every $n > 0$ and every isotropic log-concave probability measure
+$\mu$ on $\mathbb{R}^n$, the normalized radius variance of $\mu$ is at most the thin-shell
+variance constant.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
-- [Normalized Radius Variance](normalized-radius-variance.md)
-- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+- [Isotropic log-concave probability measures](is-isotropic-log-concave.md)
+- [Normalized radius variance](normalized-radius-variance.md)
+- [Thin-shell variance constant](thin-shell-variance-constant.md)
 
 ## Sources
 

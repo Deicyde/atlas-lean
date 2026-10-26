@@ -7,12 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.levy_Khintchin
 ---
 
-# Levy Khintchin
+# Lévy–Khintchin representation on the real line
 
-Lévy–Khintchin representation: a law `μ` on `ℝ` is infinitely divisible
-iff its characteristic function has the drift–Gaussian–jump form with a drift
-`γ`, a Gaussian coefficient `σ ≥ 0`, and a Lévy measure `ν` with `ν {0} = 0`
-and `∫⁻ x, min 1 (x ^ 2) ∂ν < ∞`.
+**Lévy–Khintchin representation on the real line.** A probability measure $\mu$ on
+$\mathbb{R}$ is infinitely divisible, meaning that for every integer $n \ge 1$ there is a
+probability measure $\rho$ on $\mathbb{R}$ whose $n$-fold convolution power $\rho^{\ast n}$
+equals $\mu$, if and only if there are real numbers $\gamma$ and $\sigma \ge 0$ and a measure
+$\nu$ on $\mathbb{R}$ with $\nu(\{0\}) = 0$ and
+$\int \min(1, x^2)\, d\nu(x) < \infty$ such that the characteristic function $\hat\mu$ of $\mu$
+satisfies, for every $t \in \mathbb{R}$,
+
+$$
+\hat\mu(t) = \exp\Big(i \gamma t - \frac{\sigma^2 t^2}{2} +
+\int_{\mathbb{R}} \big(e^{itx} - 1 - itx \, \mathbf{1}_{\{|x| \le 1\}}(x)\big) \, d\nu(x)\Big).
+$$
 
 Proof: The reverse implication uses compound Poisson approximation plus Lévy continuity; the
 forward implication uses a distinguished logarithm, canonical measures, and Prokhorov compactness.

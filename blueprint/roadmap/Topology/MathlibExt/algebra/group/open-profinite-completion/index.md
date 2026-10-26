@@ -6,9 +6,11 @@ statement: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.Index
 ---
 
-# Index
+# Open finite-index normal subgroups
 
-Open finite-index normal subgroups of `G`, the index category.
+**Open finite-index normal subgroups.** For a group $G$ with a topology, this is the set of
+normal subgroups $H$ of $G$ that have finite index and are open in $G$, ordered by inclusion and
+viewed as a category: there is a morphism $H \to K$ exactly when $H \subseteq K$.
 
 ## Depends on
 

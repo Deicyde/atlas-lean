@@ -7,13 +7,14 @@ proof: formalized
 lean: BerryEsseenModel.thirdMoment_integrable
 ---
 
-# Third Moment integrable
+# Standardized laws have an integrable third absolute moment
 
-The third absolute moment is integrable, not a totalized nonintegrable integral.
+**Standardized laws have an integrable third absolute moment.** If $\mu$ is a standardized law
+on $\mathbb{R}$, then the function $x \mapsto |x|^3$ is integrable with respect to $\mu$.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
 
 ## Sources
 

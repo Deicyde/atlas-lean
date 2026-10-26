@@ -6,29 +6,30 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.crossingNumber_eq_of_isotopic
 ---
 
-# Crossing Number eq of isotopic
+# The crossing number is an isotopy invariant
 
-Crossing number depends only on the ambient-isotopy type.
+**The crossing number is an isotopy invariant.** If two parametrized links $L_1$ and $L_2$ with
+$n$ components are isotopic, then $L_1$ and $L_2$ have the same crossing number.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Isotopic](../euclidean-link/isotopic-2.md)
-- [Crossing Number](crossing-number.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Isotopy of parametrized links](../euclidean-link/isotopic-2.md)
+- [Crossing number of a link](crossing-number.md)
 
 ## Proof depends on
 
 - [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Ambient Isotopy](../euclidean-link/ambient-isotopy.md)
-- [Comp](../euclidean-link/comp.md)
-- [Symm](../euclidean-link/symm.md)
-- [Circle Reparam](../euclidean-link/circle-reparam.md)
-- [Comp](../euclidean-link/comp-2.md)
-- [Symm](../euclidean-link/symm-2.md)
-- [Parametrized Knot](../euclidean-link/parametrized-knot.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Crossing Count](crossing-count-2.md)
-- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
+- [Smooth ambient isotopy of Euclidean 3-space](../euclidean-link/ambient-isotopy.md)
+- [Composition of ambient isotopies](../euclidean-link/comp.md)
+- [Inverse ambient isotopy](../euclidean-link/symm.md)
+- [Orientation-preserving reparametrization of the circle](../euclidean-link/circle-reparam.md)
+- [Composition of circle reparametrizations](../euclidean-link/comp-2.md)
+- [Inverse circle reparametrization](../euclidean-link/symm-2.md)
+- [Parametrized knot](../euclidean-link/parametrized-knot.md)
+- [Regular projections](is-regular-projection.md)
+- [Crossing count of a regular projection](crossing-count-2.md)
+- [Regular projections of isotopic links bound the crossing number](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

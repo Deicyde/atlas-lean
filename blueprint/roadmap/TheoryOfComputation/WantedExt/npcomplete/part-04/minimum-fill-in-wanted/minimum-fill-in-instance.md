@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumFillIn.MinimumFillInInstance
 ---
 
-# Minimum Fill In Instance
+# Instances of MINIMUM FILL-IN
 
-An instance: vertex count, edge list, bound.
+**Instances of MINIMUM FILL-IN.** An instance of MINIMUM FILL-IN is a triple $(n, E, K)$
+consisting of a natural number $n$ (the number of vertices), a list $E$ of pairs of natural
+numbers (the edge list) and a natural number $K$ (the bound).
 
 ## Depends on
 

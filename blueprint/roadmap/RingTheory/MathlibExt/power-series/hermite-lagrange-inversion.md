@@ -7,15 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.hermite_lagrange_inversion
 ---
 
-# Hermite Lagrange Series
+# Hermite's form of Lagrange inversion as a series identity
 
-Hermite's form of Lagrange inversion as formal power series, cleared of
-denominators: with `F = X / φ` (encoded by `F * φ = X`) and `ψ` its
-compositional inverse, `X * (g ∘ ψ)` equals the coefficient series of
-`g * φ^n` times `ψ * (F' ∘ ψ)`; i.e. `z (g∘ψ) / (ψ (F'∘ψ))` is the series
-`∑ z^n [z^n](g φ^n)`. Distinct from the landed diagonal coefficient form,
-which states a coefficient-level consequence rather than the series
-identity itself.
+**Hermite's form of Lagrange inversion as a series identity.** Let $\varphi$, $g$, $F$ and $\psi$
+be formal power series over $\mathbb{C}$, write $F'$ for the formal derivative of $F$, and write
+$h(k)$ for the substitution of a power series $k$ into a power series $h$. Suppose that $\varphi$
+has nonzero constant term, that $F\varphi = X$, and that $\psi$ is a two-sided compositional
+inverse of $F$, that is, $F(\psi) = X$ and $\psi(F) = X$. Let $H = \sum_{n \ge 0} c_n X^n$,
+where $c_n$ is the coefficient of $X^n$ in $g\varphi^n$. Then
+
+$$X\, g(\psi) = H\, \psi\, F'(\psi).$$
+
+The source states this, with $F = X/\varphi$, as $X\, g(\psi) / (\psi\, F'(\psi)) = H$; the
+form here is cleared of denominators.
 
 ## Depends on
 

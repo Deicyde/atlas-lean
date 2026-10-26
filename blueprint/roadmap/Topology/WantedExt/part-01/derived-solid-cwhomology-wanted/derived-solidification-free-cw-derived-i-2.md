@@ -5,33 +5,41 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.derivedSolidification_free_CW_derivedIso_eq
 ---
 
-# Derived Solidification free CW derived Iso eq
+# The pointwise derived comparison is the component of the natural one
 
-The isomorphism above is the pointwise component specified by the two natural
-isomorphisms, as in the original definition.
+**The pointwise derived comparison is the component of the natural one.** Let $X$ be a
+topological space with a CW complex structure on all of $X$, regarded as an object of the category
+of spaces admitting a CW structure, and let $\mathbb{Z}[X]$ be the free light condensed abelian
+group on $X$. Let $F$ be the derived solidification functor on spaces admitting a CW structure,
+let $\sigma$ be the natural isomorphism from $F$ to the functor sending $X$ to the derived
+inclusion of the derived solidification of $\mathbb{Z}[X]$ placed in degree $0$, and let $\nu$ be
+the natural isomorphism from $F$ to the integral singular chain complex functor with values in the
+derived category of light condensed abelian groups. Then the pointwise isomorphism $\phi_X$ from
+the derived inclusion of the derived solidification of $\mathbb{Z}[X]$ (placed in degree $0$) to
+the singular chain complex of $X$ equals $\nu_X \circ \sigma_X^{-1}$.
 
 ## Depends on
 
-- [P](p.md)
-- [P retract](p-retract.md)
-- [Solid](solid.md)
-- [CWTop Cat](cwtop-cat.md)
-- [To Top Cat](to-top-cat.md)
-- [DLight Cond Ab](dlight-cond-ab.md)
-- [DSolid](dsolid.md)
-- [Derived Inclusion](derived-inclusion.md)
-- [Derived Solidification](derived-solidification.md)
-- [Derived Solidification Free CWFunctor](derived-solidification-free-cwfunctor.md)
-- [Derived Solidification Free CWFunctor Spec](derived-solidification-free-cwfunctor-sp.md)
-- [Derived Solidification free CW derived Iso](derived-solidification-free-cw-derived-i.md)
-- [Derived Solidification free CW derived Nat Iso](derived-solidification-free-cw-derived-n.md)
-- [Free Light Cond Ab Of Top](free-light-cond-ab-of-top.md)
-- [Free Light Cond Ab Of Top Functor](free-light-cond-ab-of-top-functor.md)
-- [Is CWTop Cat](is-cwtop-cat.md)
-- [Singular Chains Light Cond Ab CWDerived Functor](singular-chains-light-cond-ab-cwderived.md)
-- [Singular Chains Light Cond Ab Derived](singular-chains-light-cond-ab-derived.md)
-- [Is Solid](is-solid.md)
-- [One Minus Shift](one-minus-shift-2.md)
+- [The light condensed abelian group P](p.md)
+- [P is a retract of ℤ(ℕ ∪ {∞})](p-retract.md)
+- [The category of light solid abelian groups](solid.md)
+- [The category of spaces admitting a CW structure](cwtop-cat.md)
+- [Inclusion of CW spaces into topological spaces](to-top-cat.md)
+- [Derived category of light condensed abelian groups](dlight-cond-ab.md)
+- [Derived category of light solid abelian groups](dsolid.md)
+- [Derived inclusion of solid abelian groups](derived-inclusion.md)
+- [Derived solidification](derived-solidification.md)
+- [Derived solidification on CW complexes](derived-solidification-free-cwfunctor.md)
+- [Natural isomorphism specifying derived solidification on CW complexes](derived-solidification-free-cwfunctor-sp.md)
+- [Pointwise derived comparison for CW complexes](derived-solidification-free-cw-derived-i.md)
+- [Derived solidification of free CW complexes computes singular chains](derived-solidification-free-cw-derived-n.md)
+- [Free light condensed abelian group on a topological space](free-light-cond-ab-of-top.md)
+- [Free light condensed abelian group functor on topological spaces](free-light-cond-ab-of-top-functor.md)
+- [Spaces admitting a CW complex structure](is-cwtop-cat.md)
+- [The singular chain functor on CW spaces](singular-chains-light-cond-ab-cwderived.md)
+- [The singular chains of a space in the derived category](singular-chains-light-cond-ab-derived.md)
+- [Solid light condensed abelian groups](is-solid.md)
+- [One minus shift on P](one-minus-shift-2.md)
 
 ## Sources
 

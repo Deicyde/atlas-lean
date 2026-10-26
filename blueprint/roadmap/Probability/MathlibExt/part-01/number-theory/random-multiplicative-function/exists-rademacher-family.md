@@ -7,17 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.RandomMultiplicativeFunction.exists_rademacherFamily
 ---
 
-# Exists rademacher Family
+# Existence of a Rademacher family
 
-There exists a Rademacher family on a probability space.
+**Existence of a Rademacher family.** There exist a measurable space $\Omega$, a probability
+measure $\mu$ on $\Omega$ and a family $(X_p)$, indexed by the primes $p$, of maps
+$X_p \colon \Omega \to \{-1, 1\}$ into the units of $\mathbb{Z}$ that is a Rademacher family
+for $\mu$.
 
 ## Depends on
 
-- [Is Rademacher Family](is-rademacher-family.md)
+- [Rademacher family](is-rademacher-family.md)
 
 ## Proof depends on
 
-- [Rademacher Measure](rademacher-measure.md)
+- [Rademacher measure on the integer units](rademacher-measure.md)
 
 ## Sources
 

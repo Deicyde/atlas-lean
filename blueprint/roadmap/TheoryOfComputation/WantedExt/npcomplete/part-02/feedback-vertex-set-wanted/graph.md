@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FeedbackVertexSet.Graph
 ---
 
-# Graph
+# Graph of a FEEDBACK VERTEX SET instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a FEEDBACK VERTEX SET instance.** For an instance $(n, es, K)$ of FEEDBACK VERTEX
+SET, its graph is the simple graph on $\{0, \dots, n-1\}$ in which distinct vertices $i$ and
+$j$ are adjacent when $(i, j)$ or $(j, i)$ belongs to $es$.
 
 ## Depends on
 
-- [Feedback Vertex Set Instance](feedback-vertex-set-instance.md)
+- [Instances of FEEDBACK VERTEX SET](feedback-vertex-set-instance.md)
 
 ## Proof depends on
 

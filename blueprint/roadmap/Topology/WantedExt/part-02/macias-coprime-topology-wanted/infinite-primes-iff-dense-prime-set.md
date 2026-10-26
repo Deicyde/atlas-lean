@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.infinite_primes_iff_dense_primeSet
 ---
 
-# Theorem 2
+# Infinitude of the primes as density
 
-**Theorem 2**: there are infinitely many prime numbers if and
-only if the set of primes is dense in `X`.
+**Infinitude of the primes as density.** There are infinitely many prime numbers if and only
+if the set of prime numbers is dense in the positive integers with Macías's coprime topology.
 
 ## Depends on
 
-- [Macias Topology](macias-topology.md)
-- [Prime Set](prime-set.md)
+- [Macías's coprime topology](macias-topology.md)
+- [Primes among the positive integers](prime-set.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: BerryEsseenModel.standardGaussian_error_one
 ---
 
-# Standard Gaussian error one
+# The Kolmogorov error vanishes for one standard Gaussian summand
 
-The actual one-summand standard Gaussian has zero comparison error.
+**The Kolmogorov error vanishes for one standard Gaussian summand.** Let $F$ be the distribution
+function of the normalized law of the standard normal law $N(0,1)$ at $n = 1$, and $\Phi$ the
+standard normal distribution function. Then the Kolmogorov error of $N(0,1)$ at $n = 1$,
+$\sup_{x \in \mathbb{R}} |F(x) - \Phi(x)|$, equals $0$.
 
 ## Depends on
 
-- [Kolmogorov Error](kolmogorov-error.md)
+- [Kolmogorov error](kolmogorov-error.md)
 
 ## Proof depends on
 
-- [Normal CDF](normal-cdf.md)
-- [Normalized Law](normalized-law.md)
-- [Normalized Law one](normalized-law-one.md)
-- [Standard Gaussian is Standardized](standard-gaussian-is-standardized.md)
+- [Standard normal CDF](normal-cdf.md)
+- [Law of the normalized sum](normalized-law.md)
+- [The normalized law with one summand](normalized-law-one.md)
+- [The standard Gaussian is a standardized law](standard-gaussian-is-standardized.md)
 
 ## Sources
 

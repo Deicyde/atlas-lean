@@ -7,17 +7,19 @@ proof: formalized
 lean: FractionalIdeal.IsPrimeTo.mul
 ---
 
-# Mul
+# Products of fractional ideals prime to an ideal
 
-A product of fractional ideals prime to J is prime to J.
+**Products of fractional ideals prime to an ideal.** Let $A$ be an integral domain with
+fraction field $K$ and let $J$ be an ideal of $A$. If fractional ideals $I$ and $I'$ of $A$ in $K$
+are both prime to $J$, then their product $I I'$ is prime to $J$.
 
 ## Depends on
 
-- [Is Prime To](is-prime-to.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
 
 ## Proof depends on
 
-- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
+- [Non-zero-divisors stay non-zero-divisors in a localization at a prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

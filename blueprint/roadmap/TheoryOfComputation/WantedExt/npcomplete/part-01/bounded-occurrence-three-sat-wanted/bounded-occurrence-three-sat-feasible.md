@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BoundedOccurrenceThreeSat.BoundedOccurrenceThreeSatFeasible
 ---
 
-# Bounded Occurrence Three Sat Feasible
+# Satisfiable bounded-occurrence 3-SAT instances
 
-A satisfying assignment.
+**Satisfiable bounded-occurrence 3-SAT instances.** A bounded-occurrence 3-SAT instance
+$(n, \varphi)$ is satisfiable when there is a list $(a_0, \dots, a_{n-1})$ of booleans such that
+$\varphi$ is satisfied by the assignment sending each variable $x < n$ to $a_x$ and every
+variable $x \ge n$ to false.
 
 ## Depends on
 
-- [Bounded Occurrence Three Sat Instance](bounded-occurrence-three-sat-instance.md)
+- [Bounded-occurrence 3-SAT instances](bounded-occurrence-three-sat-instance.md)
 
 ## Proof depends on
 

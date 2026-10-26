@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ZeroOneILP.WellFormed
 ---
 
-# Well Formed
+# Well-formed 0-1 integer programming instances
 
-Well-formedness of an instance.
+**Well-formed 0-1 integer programming instances.** A 0-1 integer programming instance
+$(n, A, b)$ is well formed when the right-hand side list $b$ has as many entries as there are
+rows of the coefficient matrix $A$, and every row of $A$ has exactly $n$ entries.
 
 ## Depends on
 
-- [Zero One ILPInstance](zero-one-ilpinstance.md)
+- [0-1 integer programming instances](zero-one-ilpinstance.md)
 
 ## Sources
 

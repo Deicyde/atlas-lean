@@ -19,15 +19,15 @@ where $B$ is the multivariate Beta function and $\alpha + n(s)$ has entries $\al
 
 - [The multinomial sampling model](categorical-seq-kernel.md)
 - [Label counts](counts.md)
-- [Dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
-- [Multi Beta](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
+- [Dirichlet distribution](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
+- [Multivariate Beta function](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
 
 ## Proof depends on
 
 - [Probability vectors](prob-vectors.md)
 - [Likelihood of a label sequence](seq-likelihood.md)
 - [The sequence likelihood depends only on the label counts](seq-likelihood-eq-prod-pow.md)
-- [Ae dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
+- [The Dirichlet distribution is concentrated on the open simplex](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
 - [Dirichlet–multinomial conjugacy](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/with-density-prod-pow-dirichlet-measure.md)
 
 ## Sources

@@ -4,6 +4,6 @@ navigation: module
 
 # Nonseparating Planar Continuum
 
-- [Has Fixed Point Property](has-fixed-point-property.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Fixed point property](has-fixed-point-property.md)
+- [Nonseparating planar continuum conjecture](conjecture.md)
+- [Path-connected nonseparating plane continua have the fixed point property](conjecture-holds.md)

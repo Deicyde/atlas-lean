@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Minesweeper.WellFormed
 ---
 
-# Well Formed
+# Well-formed Minesweeper instances
 
-Well-formedness of an instance.
+**Well-formed Minesweeper instances.** A Minesweeper instance with $R$ rows, $C$ columns and a
+list of clues is well formed when every clue $(r, c, k)$ in the list satisfies $r < R$, $c < C$
+and $k \le 8$.
 
 ## Depends on
 
-- [Minesweeper Instance](minesweeper-instance.md)
+- [Minesweeper instances](minesweeper-instance.md)
 
 ## Sources
 

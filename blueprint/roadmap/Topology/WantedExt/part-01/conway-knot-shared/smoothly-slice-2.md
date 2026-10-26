@@ -8,20 +8,22 @@ lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.SmoothlySlice
 
 # Smoothly slice (PL knot version)
 
-**Smoothly slice (PL knot version).** A PL knot is smoothly slice if
-some smooth knot of the same knot type is smoothly slice. This is
-Piccirillo's theorem about the Conway knot in the form most natural for
-a polyline witness.
+**Smoothly slice (PL knot version).** A PL knot $K$ is smoothly slice if there is a smooth
+knot $J$ that is smoothly slice and is a smooth representative of $K$: for some topological
+ambient isotopy $(H_t)$ of $\mathbb{R}^3$, the map $H_1$ carries the image of $J$ onto the image
+(trace) of the polyline $K$.
+
+Piccirillo's theorem that the Conway knot is not smoothly slice is stated with this notion.
 
 ## Depends on
 
-- [PLKnot](plknot.md)
+- [PL knot (closed polyline)](plknot.md)
 
 ## Proof depends on
 
-- [Knot](knot.md)
+- [Oriented smooth knot](knot.md)
 - [Smoothly slice (smooth knot version)](smoothly-slice.md)
-- [Has Smooth Representative](has-smooth-representative.md)
+- [Smooth representative of a PL knot](has-smooth-representative.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ and relates any two distinct elements in one direction or the other.
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

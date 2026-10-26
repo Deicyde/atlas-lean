@@ -28,7 +28,7 @@ where $\ell$ is the log-likelihood of the data under the mixture.
 - [Parameters of a full-covariance Gaussian mixture](params.md)
 - [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

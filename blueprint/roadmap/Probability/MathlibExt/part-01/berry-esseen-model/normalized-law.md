@@ -6,9 +6,13 @@ statement: formalized
 lean: BerryEsseenModel.normalizedLaw
 ---
 
-# Normalized Law
+# Law of the normalized sum
 
-The actual pushforward law of the normalized sum.
+**Law of the normalized sum.** For a measure $\mu$ on $\mathbb{R}$ and a positive integer
+$n$, the normalized law of $\mu$ at $n$ is the pushforward of the i.i.d. law of $\mu$ on
+$\mathbb{R}^{\mathbb{N}}$ (the product measure $\mu^{\otimes \mathbb{N}}$ when $\mu$ is a
+probability measure, and the zero measure otherwise) under the normalized sum
+$\omega \mapsto (\omega_0 + \dots + \omega_{n-1})/\sqrt{n}$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Iid Law](iid-law.md)
-- [Normalized Sum](normalized-sum.md)
+- [I.i.d. product law](iid-law.md)
+- [Normalized sum](normalized-sum.md)
 
 ## Sources
 

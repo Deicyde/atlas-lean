@@ -5,20 +5,24 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.projPoint
 ---
 
-# Proj Point
+# Projected point of a link at a parameter point
 
-The projected point represented by a parameter point.
+**Projected point of a link at a parameter point.** For a parametrized link $L$ with
+components $\gamma_0, \dots, \gamma_{n-1} \colon \mathbb{R} \to \mathbb{R}^3$ and a parameter point
+$a = (i, t)$, with $i < n$ and $t \in [0, 2\pi)$, the projected point of $L$ at $a$ is
+$\pi(\gamma_i(t)) \in \mathbb{R}^2$, where $\pi(x_0, x_1, x_2) = (x_0, x_1)$ forgets the third
+coordinate.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Param Point](param-point.md)
-- [R2](r2.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Parameter point](param-point.md)
+- [Euclidean plane](r2.md)
 
 ## Proof depends on
 
-- [Point](point.md)
-- [Plane](plane.md)
+- [Point of a link at a parameter point](point.md)
+- [Standard projection to the plane](plane.md)
 
 ## Sources
 

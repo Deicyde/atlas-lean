@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Probability.pgf_one
 ---
 
-# Pgf one
+# The generating function at $s = 1$
 
-Under a probability measure the generating function at `s = 1` is `1`.
+**The generating function at $s = 1$.** For every probability measure $\mu$ on $\Omega$ and
+every function $X : \Omega \to \mathbb{N}$, the probability generating function
+$G_X(s) = \int_\Omega s^{X(\omega)} \, d\mu(\omega)$ of $X$ under $\mu$ satisfies $G_X(1) = 1$.
 
 ## Depends on
 
-- [Pgf](pgf.md)
+- [Probability generating function](pgf.md)
 
 ## Sources
 

@@ -6,30 +6,32 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.underPoint_ne_overPoint
 ---
 
-# Under Point ne over Point
+# Over and under preimages differ
 
-The over and under preimages at a crossing are distinct.
+**Over and under preimages differ.** Let $L$ be a parametrized link whose standard projection
+is regular, and let $p$ be a crossing of this projection. Then the under-strand preimage of $p$
+and the over-strand preimage of $p$ are distinct parameter points of $L$.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
 - [Crossing](crossing.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Over Point](over-point.md)
-- [Under Point](under-point.md)
-- [Param Point](param-point.md)
+- [Regular projections](is-regular-projection.md)
+- [Over-strand preimage of a crossing](over-point.md)
+- [Under-strand preimage of a crossing](under-point.md)
+- [Parameter point](param-point.md)
 
 ## Proof depends on
 
-- [Is Over Point](is-over-point.md)
-- [Is Under Point](is-under-point.md)
-- [Double Point Set](double-point-set.md)
-- [Exists Unique is Over Point](exists-unique-is-over-point.md)
-- [Exists Unique is Under Point](exists-unique-is-under-point.md)
-- [Exists pair of mem double Point Set](exists-pair-of-mem-double-point-set.md)
-- [Height At](height-at.md)
-- [Proj Point](proj-point.md)
-- [R2](r2.md)
+- [Being the over-strand preimage of a crossing](is-over-point.md)
+- [Being the under-strand preimage of a crossing](is-under-point.md)
+- [Double points of a link projection](double-point-set.md)
+- [The over-strand preimage exists and is unique](exists-unique-is-over-point.md)
+- [The under-strand preimage exists and is unique](exists-unique-is-under-point.md)
+- [Double points have exactly two preimages](exists-pair-of-mem-double-point-set.md)
+- [Height of a parameter point](height-at.md)
+- [Projected point of a link at a parameter point](proj-point.md)
+- [Euclidean plane](r2.md)
 
 ## Sources
 

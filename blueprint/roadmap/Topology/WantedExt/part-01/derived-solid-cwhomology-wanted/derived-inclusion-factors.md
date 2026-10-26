@@ -5,20 +5,24 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.derivedInclusionFactors
 ---
 
-# Derived Inclusion Factors
+# The derived inclusion is computed degreewise
 
-The derived inclusion is induced by applying the inclusion degreewise to complexes.
+**The derived inclusion is computed degreewise.** Let $\iota$ be the inclusion of light solid
+abelian groups into light condensed abelian groups, $D(\iota)$ the induced derived inclusion, and
+$Q$ the localization functors from cochain complexes to derived categories. This is the natural
+isomorphism $D(\iota)(Q K) \cong Q(\iota K)$ for cochain complexes $K$ of light solid abelian
+groups, where $\iota K$ is $K$ with $\iota$ applied degreewise.
 
 ## Depends on
 
-- [P](p.md)
-- [P retract](p-retract.md)
-- [Solid](solid.md)
-- [DLight Cond Ab](dlight-cond-ab.md)
-- [Derived Inclusion](derived-inclusion.md)
-- [Inclusion Complexes](inclusion-complexes.md)
-- [Is Solid](is-solid.md)
-- [One Minus Shift](one-minus-shift-2.md)
+- [The light condensed abelian group P](p.md)
+- [P is a retract of ℤ(ℕ ∪ {∞})](p-retract.md)
+- [The category of light solid abelian groups](solid.md)
+- [Derived category of light condensed abelian groups](dlight-cond-ab.md)
+- [Derived inclusion of solid abelian groups](derived-inclusion.md)
+- [Degreewise inclusion of complexes of light solid abelian groups](inclusion-complexes.md)
+- [Solid light condensed abelian groups](is-solid.md)
+- [One minus shift on P](one-minus-shift-2.md)
 
 ## Sources
 

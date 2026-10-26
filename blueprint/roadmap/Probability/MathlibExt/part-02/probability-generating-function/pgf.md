@@ -5,12 +5,18 @@ statement: formalized
 lean: MathlibExt.Probability.pgf
 ---
 
-# Pgf
+# Probability generating function
 
-The probability generating function `G_X(s) = E[s ^ X]` of a random variable `X : Ω → ℕ`
-under the measure `μ`. For a finite measure `μ` the integral converges on `|s| ≤ 1` (see
-`integrable_pow_of_abs_le_one`); outside that domain, or for an infinite measure, the Bochner
-integral may take the junk value `0`.
+**Probability generating function.** For a measure $\mu$ on $\Omega$ and a function
+$X : \Omega \to \mathbb{N}$, the probability generating function of $X$ under $\mu$ is the function
+$G_X : \mathbb{R} \to \mathbb{R}$ given by
+
+$$G_X(s) = \int_\Omega s^{X(\omega)} \, d\mu(\omega),$$
+
+which is the expectation $\mathbb{E}[s^X]$ when $\mu$ is a probability measure.
+
+For a finite measure $\mu$ and measurable $X$ the integral converges whenever $|s| \le 1$. Where
+$s^X$ is not integrable, the integral is taken to be $0$.
 
 ## Depends on
 

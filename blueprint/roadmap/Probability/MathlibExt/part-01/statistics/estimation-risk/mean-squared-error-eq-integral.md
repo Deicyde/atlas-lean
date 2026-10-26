@@ -6,15 +6,18 @@ proof: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_integral
 ---
 
-# Mean Squared Error eq integral
+# Mean squared error as an integral
 
-Characteristic evaluation: finite MSE is the squared-error integral.
-Blueprint `af_fd40353442120bd19166139d`.
+**Mean squared error as an integral.** Let $\mu$ be a probability measure on a measurable
+space $S$, let $W : S \to \mathbb{R}$ and $\theta \in \mathbb{R}$, and suppose the squared error
+$x \mapsto (W(x) - \theta)^2$ is $\mu$-integrable. Then the mean squared error of $W$ at $\theta$
+under $\mu$ equals $\int_S (W(x) - \theta)^2 \, d\mu(x)$.
 
 ## Depends on
 
-- [Mean Squared Error](mean-squared-error.md)
+- [Mean squared error](mean-squared-error.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- blueprint `af_fd40353442120bd19166139d`.

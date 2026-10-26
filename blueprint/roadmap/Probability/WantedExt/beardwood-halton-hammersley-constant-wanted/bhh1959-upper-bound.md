@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhh1959UpperBound
 ---
 
-# Bhh1959 Upper Bound
+# Statement of the Beardwood–Halton–Hammersley upper bound
 
-[BHH1959] reported upper bound `β_2 ≤ 0.92117`.
+**Statement of the Beardwood–Halton–Hammersley upper bound.** This is the proposition that the
+Beardwood–Halton–Hammersley constant $\beta_2$ for uniform points in the unit square satisfies
+$\beta_2 \le 0.92117$, the upper bound reported by Beardwood, Halton and Hammersley (1959).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

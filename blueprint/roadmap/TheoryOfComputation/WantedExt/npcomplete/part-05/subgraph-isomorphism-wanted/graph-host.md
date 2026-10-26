@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SubgraphIsomorphism.GraphHost
 ---
 
-# Graph Host
+# Host graph of a subgraph-isomorphism instance
 
-The host graph.
+**Host graph of a subgraph-isomorphism instance.** For a subgraph-isomorphism instance
+$(n, E_G, m, E_H)$, the host graph is the graph of the edge list $E_G$ on $n$ vertices: the simple
+graph on $\{0, \dots, n - 1\}$ in which distinct vertices $i$ and $j$ are adjacent when $(i, j)$
+or $(j, i)$ belongs to $E_G$.
 
 ## Depends on
 
-- [Subgraph Isomorphism Instance](subgraph-isomorphism-instance.md)
+- [Subgraph-isomorphism instances](subgraph-isomorphism-instance.md)
 
 ## Proof depends on
 

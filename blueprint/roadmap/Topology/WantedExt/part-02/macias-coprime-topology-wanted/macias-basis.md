@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.maciasBasis
 ---
 
-# Macias Basis
+# Macías's coprime basis
 
-The paper's basis `β = {Ω_n : n ∈ ℕ}`.
+**Macías's coprime basis.** For a positive integer $n$ let $\Omega_n$ be the set of positive
+integers coprime to $n$. Macías's coprime basis is the family $\beta = \{\Omega_n : n \ge 1\}$ of
+subsets of the positive integers.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coprime Set](coprime-set.md)
+- [Positive integers coprime to a given integer](coprime-set.md)
 
 ## Sources
 

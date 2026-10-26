@@ -6,28 +6,29 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.crossingNumber_le_self_of_isRegularProjection
 ---
 
-# Crossing Number le self of is Regular Projection
+# A link's own regular projection bounds its crossing number
 
-A regular projection of the representative itself bounds the
-crossing number of its type.
+**A link's own regular projection bounds its crossing number.** If the standard projection of
+an oriented labeled parametrized link $L$ to the plane is regular, then the crossing number of
+$L$ is at most the number of crossings of this projection.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Crossing Count](crossing-count-2.md)
-- [Crossing Number](crossing-number.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Regular projections](is-regular-projection.md)
+- [Crossing count of a regular projection](crossing-count-2.md)
+- [Crossing number of a link](crossing-number.md)
 
 ## Proof depends on
 
 - [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Ambient Isotopy](../euclidean-link/ambient-isotopy.md)
-- [Id](../euclidean-link/id.md)
-- [Circle Reparam](../euclidean-link/circle-reparam.md)
-- [Id](../euclidean-link/id-2.md)
-- [Parametrized Knot](../euclidean-link/parametrized-knot.md)
-- [Isotopic](../euclidean-link/isotopic-2.md)
-- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
+- [Smooth ambient isotopy of Euclidean 3-space](../euclidean-link/ambient-isotopy.md)
+- [Identity ambient isotopy](../euclidean-link/id.md)
+- [Orientation-preserving reparametrization of the circle](../euclidean-link/circle-reparam.md)
+- [Identity reparametrization of the circle](../euclidean-link/id-2.md)
+- [Parametrized knot](../euclidean-link/parametrized-knot.md)
+- [Isotopy of parametrized links](../euclidean-link/isotopic-2.md)
+- [Regular projections of isotopic links bound the crossing number](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: TateCohomology.tateHomologyCard
 ---
 
-# Tate Homology Card
+# Cardinality of Tate homology
 
-Cardinality of degree-`n` Tate homology, via `H_hat_n = H_hat^(-n-1)`.
+**Cardinality of Tate homology.** Let $G$ be a finite group, $R$ a commutative ring
+and $M$ an $R$-linear representation of $G$. For an integer $n$, the cardinality $h_n(M)$
+of the degree-$n$ Tate homology of $M$ is defined as the cardinal number of the Tate
+cohomology group $\hat H^{-n-1}(G, M)$, following the convention $\hat H_n = \hat H^{-n-1}$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tate Cohomology Card](tate-cohomology-card.md)
+- [Cardinality of Tate cohomology](tate-cohomology-card.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.opposite
 ---
 
-# Opposite
+# Opposite dart
 
-The dart opposite `d` at the same crossing.
+**Opposite dart.** For a dart diagram $D$ and a dart $d = (v, i)$ of $D$, the opposite dart
+is obtained by rotating $d$ twice counterclockwise around its crossing $v$; it is the dart
+$(v, i + 2)$, with labels taken modulo $4$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Dart](dart.md)
+- [Dart diagram](dart-diagram.md)
+- [Darts of a dart diagram](dart.md)
 
 ## Proof depends on
 
-- [Rot](rot.md)
+- [Rotation of a dart](rot.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Topology.AnnulusShared.Sph
 ---
 
-# Sph
+# Unit sphere in Euclidean space
 
-The unit `(n-1)`-sphere `Sⁿ⁻¹ ⊂ ℝⁿ`.
+**Unit sphere in Euclidean space.** For a natural number $n$, the unit sphere
+$S^{n-1} \subseteq \mathbb{R}^n$ is the set of points of $\mathbb{R}^n$ at Euclidean distance $1$
+from the origin.
 
 ## Depends on
 
-- [Amb](amb.md)
+- [Ambient Euclidean space](amb.md)
 
 ## Sources
 

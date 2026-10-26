@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SubsetProduct.WellFormed
 ---
 
-# Well Formed
+# Well-formed SUBSET PRODUCT instances
 
-Well-formedness of an instance.
+**Well-formed SUBSET PRODUCT instances.** An instance $(a, T)$ of SUBSET PRODUCT, with $a$ a
+finite list of natural numbers and $T$ a natural number, is well formed when every entry of $a$
+is positive.
 
 ## Depends on
 
-- [Subset Product Instance](subset-product-instance.md)
+- [SUBSET PRODUCT instances](subset-product-instance.md)
 
 ## Sources
 

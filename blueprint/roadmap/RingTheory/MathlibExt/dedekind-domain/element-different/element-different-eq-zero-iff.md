@@ -7,14 +7,18 @@ proof: formalized
 lean: elementDifferent_eq_zero_iff
 ---
 
-# Element Different eq zero iff
+# Vanishing of the element different
 
-The element different vanishes iff either `α` is not primitive for `L / K`
-or the derivative of its minimal polynomial evaluates to zero at `α`.
+**Vanishing of the element different.** Let $A$ be a commutative ring, $B$ a commutative
+$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. Let
+$\alpha \in B$ and let $f$ be the minimal polynomial of $\alpha$ over $A$ (taken to be $0$ when
+$\alpha$ is not integral over $A$). Then the element different $\delta_{B/A}(\alpha)$ is $0$ if
+and only if the image of $\alpha$ in $L$ does not generate $L$ as a $K$-algebra or
+$f'(\alpha) = 0$.
 
 ## Depends on
 
-- [Element Different](element-different.md)
+- [Element different](element-different.md)
 
 ## Sources
 

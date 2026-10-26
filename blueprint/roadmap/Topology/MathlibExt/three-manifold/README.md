@@ -5,7 +5,7 @@ navigation: module
 
 # Three Manifold
 
-- [Is Three Manifold](is-three-manifold.md)
+- [Topological 3-manifold](is-three-manifold.md)
 - [Is Three Manifold With Boundary](is-three-manifold-with-boundary.md)
-- [Is Three Manifold iff](is-three-manifold-iff.md)
-- [Locally Compact Space](locally-compact-space.md)
+- [Characterization of topological 3-manifolds](is-three-manifold-iff.md)
+- [Topological 3-manifolds are locally compact](locally-compact-space.md)

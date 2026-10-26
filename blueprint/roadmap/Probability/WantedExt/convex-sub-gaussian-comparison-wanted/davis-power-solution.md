@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparisonWantedDavis.DavisPowerSolution
 ---
 
-# Davis Power Solution
+# Parameter quadruples of the Davis–Power system
 
-The four real parameters in the exact Davis–Power equation system.
+**Parameter quadruples of the Davis–Power system.** A parameter quadruple is a quadruple
+$(a, p_0, z, c_0)$ of real numbers, the unknowns of the Davis–Power equation system. Being a
+solution of the system is a separate condition.
 
 ## Depends on
 

@@ -7,14 +7,17 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.IsPOrdering.min_le
 ---
 
-# Min le
+# Minimality of a p-ordering
 
-Accessor: the minimum property at every stage.
+**Minimality of a p-ordering.** Let $R$ be a Dedekind domain, $\mathfrak p$ a nonzero prime
+ideal of $R$, $S \subseteq R$ and $(a_n)_{n \ge 0}$ a $\mathfrak p$-ordering of $S$, and write
+$v_n$ for the stage-$n$ prefix-product valuation with respect to $\mathfrak p$ and $(a_n)$.
+Then $v_n(a_n) \le v_n(x)$ for every $n$ and every $x \in S$.
 
 ## Depends on
 
-- [Is POrdering](is-pordering.md)
-- [P Ordering Valuation](p-ordering-valuation.md)
+- [Bhargava p-ordering](is-pordering.md)
+- [Prefix-product valuation](p-ordering-valuation.md)
 
 ## Sources
 

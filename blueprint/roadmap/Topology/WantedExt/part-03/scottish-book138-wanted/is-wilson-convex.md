@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Topology.ScottishBook138Wanted.IsWilsonConvex
 ---
 
-# Is Wilson Convex
+# Wilson convexity
 
-A set is convex in the sense of Wilson when, for every `x, y` in it and
-every `t ∈ [0, 1]`, there is exactly one `z` in it with
-`dist x z = t * dist x y` and `dist z y = (1 - t) * dist x y`.
+**Wilson convexity.** A subset $K$ of a pseudometric space $X$ with distance $d$ is convex in
+the sense of Wilson when for all $x, y \in K$ and every real $t$ with $0 \le t \le 1$ there is
+exactly one $z \in K$ with $d(x, z) = t \, d(x, y)$ and $d(z, y) = (1 - t) \, d(x, y)$.
 
 ## Depends on
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.IsHalfspace
 ---
 
-# Is Halfspace
+# Half-spaces
 
-A genuine closed affine half-space with a nonzero normal vector.
+**Half-spaces.** A set $A \subseteq \mathbb{R}^n$ is a half-space if there are a nonzero
+vector $v \in \mathbb{R}^n$ and a real number $a$ such that
+$A = \{x \in \mathbb{R}^n : \langle v, x \rangle \le a\}$.
 
 ## Depends on
 

@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.bodyLaw
 ---
 
-# Body Law
+# Uniform distribution on a convex body
 
-Actual normalized Lebesgue volume on a full-dimensional convex body.
+**Uniform distribution on a convex body.** For a full-dimensional convex body $K$ in
+$\mathbb{R}^n$, the uniform law on $K$ is the probability measure obtained by restricting
+Lebesgue measure to $K$ and dividing by the volume of $K$; it gives a set $A$ the mass
+$\operatorname{vol}(A \cap K) / \operatorname{vol}(K)$.
 
 ## Depends on
 
-- [Full Dimensional Body](full-dimensional-body.md)
+- [Full-dimensional convex body](full-dimensional-body.md)
 
 ## Sources
 

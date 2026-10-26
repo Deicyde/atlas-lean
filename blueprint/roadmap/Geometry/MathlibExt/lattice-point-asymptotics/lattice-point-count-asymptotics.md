@@ -19,7 +19,7 @@ $\operatorname{vol}$ is Lebesgue (outer) measure.
 
 ## Depends on
 
-- [Is Lipschitz Parametrizable](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/is-lipschitz-parametrizable.md)
+- [Lipschitz parametrizable sets](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/is-lipschitz-parametrizable.md)
 - [Lattice-point count of a real dilate](../lattice-point-enumerator/lattice-enumerator.md)
 
 ## Proof depends on
@@ -28,7 +28,7 @@ $\operatorname{vol}$ is Lebesgue (outer) measure.
 - [Dilated Lipschitz images meet $O(t^d)$ integer cubes](../lipschitz-image-cube-count/exists-cube-count-le-const-mul-pow.md)
 - [Dilated Lipschitz images meet finitely many integer cubes](../lipschitz-image-cube-count/finite-integer-cube-set.md)
 - [Integer cube set](../lipschitz-image-cube-count/integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

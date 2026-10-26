@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.reflectZ
 ---
 
-# Reflect Z
+# Reflection in the $xy$-plane
 
-Reflection through the `xy`-plane in `ℝ³`: `(x, y, z) ↦ (x, y, -z)`.
+**Reflection in the $xy$-plane.** The reflection of $\mathbb{R}^3$ through the $xy$-plane is
+the map $(x, y, z) \mapsto (x, y, -z)$.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

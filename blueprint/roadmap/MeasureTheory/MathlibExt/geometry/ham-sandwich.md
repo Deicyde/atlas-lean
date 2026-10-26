@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Borsuk Ulam](../../../Topology/MathlibExt/homotopy/borsuk-ulam.md)
+- [Borsuk–Ulam theorem](../../../Topology/MathlibExt/homotopy/borsuk-ulam.md)
 
 ## Sources
 

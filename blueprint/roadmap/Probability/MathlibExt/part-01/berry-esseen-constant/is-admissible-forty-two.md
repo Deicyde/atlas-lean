@@ -7,28 +7,34 @@ proof: formalized
 lean: BerryEsseenConstant.isAdmissible_fortyTwo
 ---
 
-# Is Admissible forty Two
+# The Berry–Esseen bound with coefficient 42
 
-The existing implemented Berry--Esseen API supplies the coefficient 42.
+**The Berry–Esseen bound with coefficient 42.** The number $42$ is an admissible
+Berry–Esseen coefficient: for every probability measure $\mu$ on $\mathbb{R}$ with mean $0$,
+variance $1$ and finite third absolute moment $\rho = \int |x|^3 \, d\mu(x)$, and every positive
+integer $n$, the Kolmogorov error $\sup_{x \in \mathbb{R}} |F_n(x) - \Phi(x)|$ is at most
+$42 \rho / \sqrt{n}$, where $F_n$ is the distribution function of $(X_1 + \dots + X_n)/\sqrt{n}$
+for independent random variables $X_1, X_2, \dots$ with law $\mu$, and $\Phi$ is the standard
+normal distribution function.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
 
 ## Proof depends on
 
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
-- [Error le iff](../berry-esseen-model/error-le-iff.md)
-- [Iid Law](../berry-esseen-model/iid-law.md)
-- [Iid Law ident Distrib](../berry-esseen-model/iid-law-ident-distrib.md)
-- [Iid Law independent](../berry-esseen-model/iid-law-independent.md)
-- [Iid Law probability](../berry-esseen-model/iid-law-probability.md)
-- [Kolmogorov Error](../berry-esseen-model/kolmogorov-error.md)
-- [Normal CDF](../berry-esseen-model/normal-cdf.md)
-- [Normalized Law](../berry-esseen-model/normalized-law.md)
-- [Normalized Law probability](../berry-esseen-model/normalized-law-probability.md)
-- [Third Moment](../berry-esseen-model/third-moment.md)
-- [Berry esseen explicit](../berry-esseen/berry-esseen-explicit.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
+- [Kolmogorov error bounds are uniform CDF bounds](../berry-esseen-model/error-le-iff.md)
+- [I.i.d. product law](../berry-esseen-model/iid-law.md)
+- [Coordinates of the i.i.d. product are distributed like the original law](../berry-esseen-model/iid-law-ident-distrib.md)
+- [Coordinates of the i.i.d. product are independent](../berry-esseen-model/iid-law-independent.md)
+- [The i.i.d. product of a standardized law is a probability measure](../berry-esseen-model/iid-law-probability.md)
+- [Kolmogorov error](../berry-esseen-model/kolmogorov-error.md)
+- [Standard normal CDF](../berry-esseen-model/normal-cdf.md)
+- [Law of the normalized sum](../berry-esseen-model/normalized-law.md)
+- [The normalized law is a probability measure](../berry-esseen-model/normalized-law-probability.md)
+- [Third absolute moment](../berry-esseen-model/third-moment.md)
+- [Berry–Esseen theorem with constant 42](../berry-esseen/berry-esseen-explicit.md)
 
 ## Sources
 

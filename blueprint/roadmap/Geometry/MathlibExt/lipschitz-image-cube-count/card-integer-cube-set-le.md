@@ -23,7 +23,7 @@ offset in $\{0, \dots, 2L + 2\}^n$.
 ## Depends on
 
 - [Integer cube set](integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

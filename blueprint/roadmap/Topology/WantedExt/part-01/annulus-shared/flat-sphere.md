@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.AnnulusShared.FlatSphere
 ---
 
-# Flat Sphere
+# Locally flat embedded sphere
 
-A **locally flat embedded `(n-1)`-sphere** in `ℝⁿ`: a continuous injective
-locally flat map from the unit sphere.
+**Locally flat embedded sphere.** For $n \ge 1$, a locally flat embedded $(n-1)$-sphere in
+$\mathbb{R}^n$ is a map $f : S^{n-1} \to \mathbb{R}^n$ from the unit sphere that is continuous,
+injective and locally flat.
 
 ## Depends on
 

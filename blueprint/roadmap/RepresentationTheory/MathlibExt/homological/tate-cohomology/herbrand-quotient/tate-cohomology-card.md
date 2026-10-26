@@ -6,9 +6,11 @@ statement: formalized
 lean: TateCohomology.tateCohomologyCard
 ---
 
-# Tate Cohomology Card
+# Cardinality of Tate cohomology
 
-Cardinality of degree-`n` Tate cohomology of `M`.
+**Cardinality of Tate cohomology.** Let $G$ be a finite group, $R$ a commutative ring, $M$ an
+$R$-linear representation of $G$ and $n$ an integer. This is the cardinality of the Tate
+cohomology group $\hat H^n(G, M)$, as a cardinal number (possibly infinite).
 
 ## Depends on
 

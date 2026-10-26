@@ -4,7 +4,7 @@ navigation: module
 
 # Scottish Book38
 
-- [KOut Reachable](kout-reachable.md)
+- [Reachability by a chain of friends](kout-reachable.md)
 - [KOut Connected](kout-connected.md)
-- [KOut Connected Prob](kout-connected-prob.md)
-- [K out connectivity threshold](k-out-connectivity-threshold.md)
+- [Probability that a random $k$-out assignment connects everyone](kout-connected-prob.md)
+- [Connectivity threshold for random $k$-out friendship graphs](k-out-connectivity-threshold.md)

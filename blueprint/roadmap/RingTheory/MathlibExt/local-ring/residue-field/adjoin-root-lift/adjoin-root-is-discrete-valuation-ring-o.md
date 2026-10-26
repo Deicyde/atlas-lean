@@ -7,9 +7,12 @@ proof: formalized
 lean: DVRResidue.adjoinRoot_isDiscreteValuationRing_of_monic_of_irreducible_map
 ---
 
-# Adjoin Root is Discrete Valuation Ring of monic of irreducible map
+# Monic lifts of irreducible residue polynomials give DVRs
 
-The monic irreducible-reduction `AdjoinRoot` over a DVR is a DVR.
+**Monic lifts of irreducible residue polynomials give DVRs.** Let $A$ be a discrete valuation
+ring with residue field $k$, and let $g \in A[X]$ be a monic polynomial whose reduction
+$\bar g \in k[X]$ modulo the maximal ideal of $A$ is irreducible. If $A[X]/(g)$ is an integral
+domain and a local ring, then $A[X]/(g)$ is a discrete valuation ring.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maximal Ideal adjoin Root eq map](maximal-ideal-adjoin-root-eq-map.md)
+- [The maximal ideal of $A(X)/(g)$ is extended from $A$](maximal-ideal-adjoin-root-eq-map.md)
 
 ## Sources
 

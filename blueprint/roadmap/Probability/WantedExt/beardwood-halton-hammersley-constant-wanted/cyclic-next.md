@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.cyclicNext
 ---
 
-# Cyclic Next
+# Cyclic successor
 
-The next index in a finite cyclic order. There is no input when `n = 0`.
+**Cyclic successor.** For a natural number $n$ and an index $i$ with $0 \le i < n$, the cyclic
+successor of $i$ is $(i + 1) \bmod n$; in particular the successor of $n - 1$ is $0$. For $n = 0$
+there are no indices.
 
 ## Depends on
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Supported](supported.md)
+- [Families of maps supported on a set](supported.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.AnnulusShared.Amb
 ---
 
-# Amb
+# Ambient Euclidean space
 
-Ambient Euclidean space `ℝⁿ`.
+**Ambient Euclidean space.** For a natural number $n$, the ambient space is the real
+Euclidean space $\mathbb{R}^n$ of dimension $n$, with coordinates indexed by $0, \dots, n-1$ and
+the Euclidean norm.
 
 ## Depends on
 

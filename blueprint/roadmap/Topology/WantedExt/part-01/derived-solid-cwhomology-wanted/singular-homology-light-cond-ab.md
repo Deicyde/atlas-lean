@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.singularHomologyLightCondAb
 ---
 
-# Singular Homology Light Cond Ab
+# Singular homology as a light condensed abelian group
 
-Integral singular homology of a topological space, viewed as a discrete light condensed
-abelian group.
+**Singular homology as a light condensed abelian group.** For a topological space $X$ and
+$n \in \mathbb{N}$, this is the discrete light condensed abelian group on the $n$-th integral
+singular homology group $H_n(X; \mathbb{Z})$.
 
 ## Depends on
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SteinerTree.steinerTreeDec
 ---
 
-# Steiner Tree Dec
+# The STEINER TREE decision problem
 
-STEINER TREE as a decision problem over bitstrings.
+**The STEINER TREE decision problem.** The decision problem STEINER TREE accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding of Steiner tree instances,
+to a Steiner tree instance that is both well formed and feasible. Bitstrings that do not decode
+are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ STEINER TREE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Steiner Tree Feasible](steiner-tree-feasible.md)
-- [Steiner Tree Instance](steiner-tree-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible Steiner tree instances](steiner-tree-feasible.md)
+- [Steiner tree instances](steiner-tree-instance.md)
+- [Well-formed Steiner tree instances](well-formed.md)
 
 ## Sources
 

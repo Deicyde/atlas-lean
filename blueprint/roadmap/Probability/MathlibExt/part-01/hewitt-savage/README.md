@@ -5,5 +5,5 @@ navigation: module
 
 # Hewitt Savage
 
-- [Hewitt savage zero one general](hewitt-savage-zero-one-general.md)
-- [Hewitt savage zero one](hewitt-savage-zero-one.md)
+- [Hewitt–Savage zero–one law](hewitt-savage-zero-one-general.md)
+- [Hewitt–Savage zero–one law on a Polish space](hewitt-savage-zero-one.md)

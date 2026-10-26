@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumLeafSpanningTree.maximumLeafSpanningTreeDec
 ---
 
-# Maximum Leaf Spanning Tree Dec
+# The decision problem MAXIMUM LEAF SPANNING TREE
 
-MAXIMUM LEAF SPANNING TREE as a decision problem over bitstrings.
+**The decision problem MAXIMUM LEAF SPANNING TREE.** The decision problem MAXIMUM LEAF
+SPANNING TREE accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding of instances, to an instance $(n, es, K)$ of MAXIMUM LEAF SPANNING TREE that is well
+formed and feasible (its graph has a spanning tree with at least $K$ leaves). Bitstrings that do
+not decode are rejected.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ MAXIMUM LEAF SPANNING TREE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Maximum Leaf Spanning Tree Feasible](maximum-leaf-spanning-tree-feasible.md)
-- [Maximum Leaf Spanning Tree Instance](maximum-leaf-spanning-tree-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MAXIMUM LEAF SPANNING TREE instances](maximum-leaf-spanning-tree-feasible.md)
+- [Instances of MAXIMUM LEAF SPANNING TREE](maximum-leaf-spanning-tree-instance.md)
+- [Well-formed MAXIMUM LEAF SPANNING TREE instances](well-formed.md)
 
 ## Sources
 

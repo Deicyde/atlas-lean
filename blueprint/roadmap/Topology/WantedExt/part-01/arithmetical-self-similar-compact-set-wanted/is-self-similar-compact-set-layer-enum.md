@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.isSelfSimilarCompactSet_layer_enum
 ---
 
-# Is Self Similar Compact Set layer enum
+# Enumerating the higher layers of a self-similar compact set
 
-Proposition 3, third formula: for `u ≥ 1`, if `α ↦ T_u[α]` is the strictly
-decreasing enumeration of the layer `T_u` by `[0, ω^ω)`, then
-`T_u[α] = K[ω^u (α + 1)]`. The paper writes `0 ≤ α ≤ ω^ω`; the layer has order type
-`ω^ω`, so the range here is `α < ω^ω`.
+**Enumerating the higher layers of a self-similar compact set.** Let $K$ be a self-similar
+compact set of module $\mu$ and ratio $\rho$, let $u \ge 1$, and let
+$T_u = K^{(u)} \setminus K^{(u+1)}$, where $K^{(u)}$ is the $u$-th derived set of $K$. Let
+$\alpha \mapsto K[\alpha]$ be a strictly decreasing map from the ordinals $\alpha \le \omega^\omega$
+onto $K$, and $\alpha \mapsto T_u[\alpha]$ a strictly decreasing map from the ordinals
+$\alpha < \omega^\omega$ onto $T_u$. Then $T_u[\alpha] = K[\omega^u (\alpha + 1)]$ (ordinal
+arithmetic) for every ordinal $\alpha < \omega^\omega$.
+
+The paper writes $0 \le \alpha \le \omega^\omega$; the layer has order type $\omega^\omega$, so the
+range here is $\alpha < \omega^\omega$.
 
 ## Depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
-- [Self Similar Layer](self-similar-layer.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

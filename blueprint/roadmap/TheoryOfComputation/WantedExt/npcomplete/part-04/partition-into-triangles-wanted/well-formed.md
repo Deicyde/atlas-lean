@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.PartitionIntoTriangles.WellFormed
 ---
 
-# Well Formed
+# Well-formed PARTITION INTO TRIANGLES instances
 
-Well-formedness of an instance.
+**Well-formed PARTITION INTO TRIANGLES instances.** An instance consisting of a natural number
+$n$ and a list $E$ of pairs of natural numbers is well formed when $E$ has no repeated entries
+and every pair $(u, v)$ in $E$ satisfies $u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$.
 
 ## Depends on
 
-- [Partition Into Triangles Instance](partition-into-triangles-instance.md)
+- [Instances of PARTITION INTO TRIANGLES](partition-into-triangles-instance.md)
 
 ## Sources
 

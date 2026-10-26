@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.gaudioJaillet2020LowerBound_holds
 ---
 
-# Gaudio Jaillet2020 Lower Bound holds
+# Gaudio–Jaillet lower bound for the BHH constant
 
-Source: Gaudio and Jaillet, An improved lower bound for the Traveling Salesman constant.
+**Gaudio–Jaillet lower bound for the BHH constant.** The Beardwood–Halton–Hammersley
+constant $\beta_2$ of the unit square satisfies $0.6277 \le \beta_2$.
 
 ## Depends on
 
-- [Gaudio Jaillet2020 Lower Bound](gaudio-jaillet2020-lower-bound.md)
+- [Statement of the Gaudio–Jaillet lower bound](gaudio-jaillet2020-lower-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Gaudio and Jaillet, An improved lower bound for the Traveling Salesman constant.

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.KCenter.kCenterDec
 ---
 
-# K Center Dec
+# Generalized nonmetric k-center as a decision problem
 
-k-CENTER (GENERALIZED, NONMETRIC) as a decision problem over bitstrings.
+**Generalized nonmetric k-center as a decision problem.** This decision problem accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a k-center
+instance that is well formed and feasible; bitstrings that do not decode to an instance are
+rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ k-CENTER (GENERALIZED, NONMETRIC) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [KCenter Feasible](kcenter-feasible.md)
-- [KCenter Instance](kcenter-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible k-center instances](kcenter-feasible.md)
+- [k-center instances](kcenter-instance.md)
+- [Well-formed k-center instances](well-formed.md)
 
 ## Sources
 

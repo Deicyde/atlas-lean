@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.IndependentDominatingSet.independentDominatingSetDec
 ---
 
-# Independent Dominating Set Dec
+# INDEPENDENT DOMINATING SET as a decision problem
 
-INDEPENDENT DOMINATING SET as a decision problem over bitstrings.
+**INDEPENDENT DOMINATING SET as a decision problem.** The decision problem INDEPENDENT
+DOMINATING SET accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to an independent dominating set instance $(n, E, K)$ that is well formed and whose
+graph has an independent dominating set of at most $K$ vertices. It rejects every bitstring
+that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ INDEPENDENT DOMINATING SET as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Independent Dominating Set Feasible](independent-dominating-set-feasible.md)
-- [Independent Dominating Set Instance](independent-dominating-set-instance.md)
-- [Well Formed](well-formed.md)
+- [Instances with a small independent dominating set](independent-dominating-set-feasible.md)
+- [Independent dominating set instances](independent-dominating-set-instance.md)
+- [Well-formed independent dominating set instances](well-formed.md)
 
 ## Sources
 

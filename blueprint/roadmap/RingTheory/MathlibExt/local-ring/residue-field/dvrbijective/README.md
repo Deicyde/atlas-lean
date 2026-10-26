@@ -5,5 +5,5 @@ navigation: module
 
 # DVRBijective
 
-- [Residue Field Map Alg Hom bijective](residue-field-map-alg-hom-bijective.md)
-- [Exists alg Equiv lift residue Field](exists-alg-equiv-lift-residue-field.md)
+- [Algebra maps from an étale DVR extension into a Henselian one match residue-field maps](residue-field-map-alg-hom-bijective.md)
+- [Lifting residue-field isomorphisms between Henselian étale DVR extensions](exists-alg-equiv-lift-residue-field.md)

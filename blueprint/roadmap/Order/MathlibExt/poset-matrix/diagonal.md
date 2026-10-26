@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.IsPosetMatrix.diagonal
 ---
 
-# Diagonal
+# Diagonal entries of a poset matrix
 
-Projection of the diagonal clause (D3).
+**Diagonal entries of a poset matrix.** If $M$ is an $n \times n$ poset matrix, then
+$M_{ii}$ is true for every index $i < n$.
 
 ## Depends on
 
-- [Is Poset Matrix](is-poset-matrix.md)
+- [Poset matrix](is-poset-matrix.md)
 
 ## Sources
 

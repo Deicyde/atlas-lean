@@ -9,7 +9,7 @@ navigation: module
 
 - [Inversion on a group ring](inversion.md)
 - [Inversion on basis elements](inversion-single.md)
-- [Inversion involution](inversion-involution.md)
+- [Group-ring inversion is an involution](inversion-involution.md)
 - [Inversion twist of a group-ring module](inversion-twist.md)
 
 ## Inversion Twist

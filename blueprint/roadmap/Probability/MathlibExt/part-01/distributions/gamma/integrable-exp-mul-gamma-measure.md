@@ -7,9 +7,11 @@ proof: formalized
 lean: ProbabilityTheory.integrable_exp_mul_gammaMeasure
 ---
 
-# Integrable exp mul gamma Measure
+# Exponential moments of the gamma distribution
 
-Exponential moments of a gamma law exist below the rate.
+**Exponential moments of the gamma distribution.** Let $a > 0$ and $r > 0$. For every real
+$t < r$, the function $x \mapsto e^{tx}$ is integrable with respect to the gamma distribution with
+shape $a$ and rate $r$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrable On rpow mul exp neg mul Ioi](integrable-on-rpow-mul-exp-neg-mul-ioi.md)
+- [Integrability of the scaled gamma integrand](integrable-on-rpow-mul-exp-neg-mul-ioi.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ navigation: module
 
 # Families Of Maps B01
 
-- [Supported](supported.md)
+- [Families of maps supported on a set](supported.md)
 - [Adapted To](adapted-to.md)
-- [Is Polyhedron](is-polyhedron.md)
-- [Subdivision](subdivision.md)
-- [Closed Cell](closed-cell.md)
-- [Is Boundary Subpolyhedron](is-boundary-subpolyhedron.md)
-- [Continuous](continuous.md)
-- [Bi Lipschitz](bi-lipschitz.md)
+- [Convex linear polyhedra](is-polyhedron.md)
+- [Polyhedral subdivisions](subdivision.md)
+- [Closed cells](closed-cell.md)
+- [Boundary subpolyhedra](is-boundary-subpolyhedron.md)
+- [Morrison–Walker lemma on adapting families of maps to an open cover](continuous.md)
+- [Morrison–Walker lemma on adapting families of maps, bi-Lipschitz case](bi-lipschitz.md)

@@ -7,17 +7,22 @@ proof: formalized
 lean: FractionalIdeal.smul_coeIdeal
 ---
 
-# Smul coe Ideal
+# Translating an integral ideal
 
-The action on an integral ideal agrees with the induced fractional-ideal action.
+**Translating an integral ideal.** Let a group $G$ act on a commutative domain $R$ by ring
+automorphisms, let $K$ be a field of fractions of $R$, and let $G$ act on fractional ideals of
+$R$ in $K$ by $g \cdot J = \tilde\sigma_g(J)$, where $\tilde\sigma_g$ is the automorphism of $K$
+extending $r \mapsto g \cdot r$. For every $g \in G$ and every ideal $I$ of $R$, the translate
+$g \cdot I$ of $I$ viewed as a fractional ideal is the ideal $\{g \cdot a : a \in I\}$ of $R$
+viewed as a fractional ideal.
 
 ## Depends on
 
-- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
+- [Ring automorphisms act on fractional ideals](ring-equiv-of-ring-equiv-hom.md)
 
 ## Proof depends on
 
-- [Mem smul iff exists](mem-smul-iff-exists.md)
+- [Elements of a translated fractional ideal are images](mem-smul-iff-exists.md)
 
 ## Sources
 

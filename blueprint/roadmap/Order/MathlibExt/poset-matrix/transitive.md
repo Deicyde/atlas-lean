@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsPosetMatrix.transitive
 ---
 
-# Transitive
+# Transitivity of the true entries of a poset matrix
 
-Projection of the transitivity clause (D4).
+**Transitivity of the true entries of a poset matrix.** If $M$ is an $n \times n$ poset
+matrix, then for all indices $i, j, k < n$, if $M_{ij}$ and $M_{jk}$ are true, then $M_{ik}$
+is true.
 
 ## Depends on
 
-- [Is Poset Matrix](is-poset-matrix.md)
+- [Poset matrix](is-poset-matrix.md)
 
 ## Sources
 

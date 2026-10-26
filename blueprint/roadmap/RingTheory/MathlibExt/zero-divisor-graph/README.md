@@ -5,7 +5,7 @@ navigation: module
 
 # Zero Divisor Graph
 
-- [Vertex](vertex.md)
-- [Zero Divisor Graph](zero-divisor-graph.md)
-- [Exists vertex iff](exists-vertex-iff.md)
-- [Adj iff](adj-iff.md)
+- [Nonzero zero divisors](vertex.md)
+- [The zero-divisor graph](zero-divisor-graph.md)
+- [Vertices are the nonzero zero divisors](exists-vertex-iff.md)
+- [Adjacency in the zero-divisor graph](adj-iff.md)

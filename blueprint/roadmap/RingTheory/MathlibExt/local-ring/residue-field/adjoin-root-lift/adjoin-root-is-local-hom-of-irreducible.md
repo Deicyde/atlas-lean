@@ -7,9 +7,13 @@ proof: formalized
 lean: DVRResidue.adjoinRoot_isLocalHom_of_irreducible_map
 ---
 
-# Adjoin Root is Local Hom of irreducible map
+# Local base map for polynomials with irreducible reduction
 
-`AdjoinRoot.of g` is local when the reduction is irreducible.
+**Local base map for polynomials with irreducible reduction.** Let $A$ be a local ring with
+residue field $k$, and let $g \in A[X]$ be a polynomial whose reduction $\bar g \in k[X]$ modulo
+the maximal ideal of $A$ is irreducible. If $A[X]/(g)$ is a local ring, then the canonical map
+$A \to A[X]/(g)$ is a local ring homomorphism: an element of $A$ whose image in $A[X]/(g)$ is a
+unit is itself a unit.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maximal Ideal adjoin Root eq map](maximal-ideal-adjoin-root-eq-map.md)
+- [The maximal ideal of $A(X)/(g)$ is extended from $A$](maximal-ideal-adjoin-root-eq-map.md)
 
 ## Sources
 

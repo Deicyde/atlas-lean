@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.GeneralizedAssignment.WellFormed
 ---
 
-# Well Formed
+# Well-formed generalized-assignment instances
 
-Well-formedness of an instance.
+**Well-formed generalized-assignment instances.** A generalized-assignment instance
+$(R, C, c, K)$ is well formed when $R$ and $C$ have the same number of rows and every row of $R$
+and every row of $C$ has as many entries as $c$ (one per machine).
 
 ## Depends on
 
-- [Generalized Assignment Instance](generalized-assignment-instance.md)
+- [Generalized-assignment instances](generalized-assignment-instance.md)
 
 ## Sources
 

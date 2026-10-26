@@ -18,7 +18,7 @@ $\lambda$ and $(u)^r$ is the multiset of $r$ copies of $u$.
 
 ## Depends on
 
-- [P Equiv Class Sum](p-equiv-class-sum.md)
+- [The $p$-equivalence class sum](p-equiv-class-sum.md)
 
 ## Sources
 

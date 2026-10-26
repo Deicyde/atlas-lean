@@ -6,18 +6,23 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.iterate
 ---
 
-# Iterate
+# Iterated braid-closure passes
 
-Iterate passes until back at position `1`, bounded by `fuel` to
-guarantee termination (we visit at most `n` distinct strand positions).
+**Iterated braid-closure passes.** For a braid word $w$, a number $f$ of remaining passes and
+a traversal state $S$, the iteration returns $S$ when $f = 0$. When $f > 0$ it applies one pass
+of $w$ to $S$, obtaining a state $S'$; it returns $S'$ if the strand position of $S'$ is $1$, and
+otherwise iterates on $S'$ with $f - 1$ passes remaining.
+
+The bound $f$ guarantees termination. The braid closure on $n$ strands uses $f = n$, since at
+most $n$ distinct strand positions are visited.
 
 ## Depends on
 
-- [State](state.md)
+- [Braid closure traversal state](state.md)
 
 ## Proof depends on
 
-- [One Pass](one-pass.md)
+- [One pass of the braid closure](one-pass.md)
 
 ## Sources
 

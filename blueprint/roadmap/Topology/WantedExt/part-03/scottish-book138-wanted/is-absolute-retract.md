@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Topology.ScottishBook138Wanted.IsAbsoluteRetract
 ---
 
-# Is Absolute Retract
+# Absolute retract
 
-A compact space is an absolute retract when it is a retract in every
-separable metrizable space containing it: for every embedding into such a
-space there is a continuous retraction back onto the embedded copy.
+**Absolute retract.** A topological space $K$ is an absolute retract when $K$ is compact
+and, for every separable metrizable space $X$ and every topological embedding
+$e \colon K \to X$, there is a continuous map $r \colon X \to K$ with $r(e(k)) = k$ for all
+$k \in K$.
 
 ## Depends on
 

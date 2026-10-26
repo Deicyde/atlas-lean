@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FlowShop.WellFormed
 ---
 
-# Well Formed
+# Well-formed flow-shop instances
 
-Well-formedness of an instance.
+**Well-formed flow-shop instances.** A flow-shop instance is well formed when every job in
+it is a list of exactly three natural numbers.
 
 ## Depends on
 
-- [Flow Shop Instance](flow-shop-instance.md)
+- [Flow-shop instances](flow-shop-instance.md)
 
 ## Sources
 

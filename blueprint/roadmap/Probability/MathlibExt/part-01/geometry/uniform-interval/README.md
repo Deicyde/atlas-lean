@@ -5,10 +5,10 @@ navigation: module
 
 # Uniform Interval
 
-- [Line Isometry](line-isometry.md)
-- [Symmetric Interval](symmetric-interval.md)
-- [Uniform Interval](uniform-interval.md)
-- [Uniform Interval sqrt three is Isotropic Log Concave](uniform-interval-sqrt-three-is-isotropic.md)
-- [Uniform Interval variance le thin Shell Constant](uniform-interval-variance-le-thin-shell.md)
-- [Uniform Interval radius Fluctuation le thin Shell Constant](uniform-interval-radius-fluctuation-le-t.md)
-- [Uniform Interval one not is Isotropic Log Concave](uniform-interval-one-not-is-isotropic-lo.md)
+- [Identification of the line with one-dimensional Euclidean space](line-isometry.md)
+- [Symmetric interval in one-dimensional Euclidean space](symmetric-interval.md)
+- [Uniform distribution on a symmetric interval](uniform-interval.md)
+- [The uniform law on (−√3, √3) is isotropic log-concave](uniform-interval-sqrt-three-is-isotropic.md)
+- [Thin-shell variance bound for the uniform law on (−√3, √3)](uniform-interval-variance-le-thin-shell.md)
+- [Radius fluctuation of the uniform law on (−√3, √3)](uniform-interval-radius-fluctuation-le-t.md)
+- [The uniform law on (−1, 1) is not isotropic log-concave](uniform-interval-one-not-is-isotropic-lo.md)

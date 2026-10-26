@@ -7,18 +7,20 @@ proof: formalized
 lean: isLipschitzParametrizable_singleton
 ---
 
-# Is Lipschitz Parametrizable singleton
+# Singletons are Lipschitz parametrizable
 
-Singletons are `d`-Lipschitz parametrizable, via one constant map.
+**Singletons are Lipschitz parametrizable.** Let $X$ be a metric space. For every natural
+number $d$ and every point $x \in X$, the set $\lbrace x \rbrace$ is $d$-Lipschitz parametrizable,
+via a single constant map.
 
 ## Depends on
 
-- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+- [Lipschitz parametrizable sets](is-lipschitz-parametrizable.md)
 
 ## Proof depends on
 
-- [Unit Cube](unit-cube.md)
-- [Unit Cube zero mem](unit-cube-zero-mem.md)
+- [The unit cube](unit-cube.md)
+- [The origin lies in the unit cube](unit-cube-zero-mem.md)
 
 ## Sources
 

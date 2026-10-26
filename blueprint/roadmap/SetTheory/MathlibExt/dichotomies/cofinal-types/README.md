@@ -4,6 +4,6 @@ navigation: module
 
 # Cofinal Types
 
-- [Tukey LE](tukey-le.md)
-- [Tukey Equiv](tukey-equiv.md)
-- [Cofinal Type](cofinal-type.md)
+- [Tukey reducibility](tukey-le.md)
+- [Tukey equivalence](tukey-equiv.md)
+- [Cofinal type](cofinal-type.md)

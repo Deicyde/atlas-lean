@@ -5,12 +5,15 @@ statement: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError
 ---
 
-# Mean Squared Error
+# Mean squared error
 
-Source finite mean squared error of a fixed real estimator under a
-probability law: expected squared error at the real target. The `Integrable`
-input is the source expectation domain; without it no finite source MSE
-exists. Blueprint `af_fd40353442120bd19166139d`.
+**Mean squared error.** Let $\mu$ be a probability measure on a measurable space $S$, let
+$W : S \to \mathbb{R}$ be an estimator and $\theta \in \mathbb{R}$ a target value, and suppose the
+squared error $x \mapsto (W(x) - \theta)^2$ is $\mu$-integrable. The mean squared error of $W$ at
+$\theta$ under $\mu$ is the real number $\int_S (W(x) - \theta)^2 \, d\mu(x)$.
+
+The integrability hypothesis is part of the definition: without it no finite mean squared error is
+defined.
 
 ## Depends on
 
@@ -19,3 +22,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- Casella–Berger, Definition 7.3.1; blueprint `af_fd40353442120bd19166139d`.

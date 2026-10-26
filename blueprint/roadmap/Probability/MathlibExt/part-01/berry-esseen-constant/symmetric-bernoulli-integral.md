@@ -7,13 +7,15 @@ proof: formalized
 lean: BerryEsseenConstant.symmetricBernoulli_integral
 ---
 
-# Symmetric Bernoulli integral
+# Integrals against the symmetric Bernoulli law
 
-Integration against the finite actual law.
+**Integrals against the symmetric Bernoulli law.** For every function
+$f : \mathbb{R} \to \mathbb{R}$, the integral of $f$ against the symmetric Bernoulli law
+$\frac12 \delta_{-1} + \frac12 \delta_1$ equals $\frac12 f(-1) + \frac12 f(1)$.
 
 ## Depends on
 
-- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
+- [Symmetric Bernoulli law](symmetric-bernoulli-law.md)
 
 ## Sources
 

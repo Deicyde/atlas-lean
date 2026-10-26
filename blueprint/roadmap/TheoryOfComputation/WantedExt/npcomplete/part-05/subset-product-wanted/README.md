@@ -4,8 +4,8 @@ navigation: module
 
 # Subset Product
 
-- [Subset Product Instance](subset-product-instance.md)
-- [Well Formed](well-formed.md)
-- [Subset Product Feasible](subset-product-feasible.md)
-- [Subset Product Dec](subset-product-dec.md)
+- [SUBSET PRODUCT instances](subset-product-instance.md)
+- [Well-formed SUBSET PRODUCT instances](well-formed.md)
+- [Feasible SUBSET PRODUCT instances](subset-product-feasible.md)
+- [SUBSET PRODUCT as a decision problem](subset-product-dec.md)
 - [SUBSET PRODUCT is NP-complete](subset-product-np-complete.md)

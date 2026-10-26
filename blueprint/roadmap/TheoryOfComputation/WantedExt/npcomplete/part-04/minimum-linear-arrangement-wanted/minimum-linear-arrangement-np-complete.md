@@ -7,13 +7,13 @@ lean: MetaMathlibExt.Complexity.NPComplete.MinimumLinearArrangement.minimumLinea
 
 # MINIMUM LINEAR ARRANGEMENT is NP-complete
 
-**MINIMUM LINEAR ARRANGEMENT is NP-complete.** Source: M. R. Garey and D. S. Johnson,
-*Computers and Intractability* (1979), MINIMUM LINEAR ARRANGEMENT.
+**MINIMUM LINEAR ARRANGEMENT is NP-complete.** The MINIMUM LINEAR ARRANGEMENT decision problem
+lies in NP, and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Minimum Linear Arrangement Dec](minimum-linear-arrangement-dec.md)
+- [The MINIMUM LINEAR ARRANGEMENT decision problem](minimum-linear-arrangement-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +21,4 @@ lean: MetaMathlibExt.Complexity.NPComplete.MinimumLinearArrangement.minimumLinea
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.MinimumLinearArrangementWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), MINIMUM LINEAR ARRANGEMENT.

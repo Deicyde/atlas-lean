@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SubsetProduct.subsetProductDec
 ---
 
-# Subset Product Dec
+# SUBSET PRODUCT as a decision problem
 
-SUBSET PRODUCT as a decision problem over bitstrings.
+**SUBSET PRODUCT as a decision problem.** The decision problem SUBSET PRODUCT accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of pairs of a finite
+list of natural numbers and a natural number, to an instance $(a, T)$ that is well formed (every
+entry of $a$ is positive) and feasible (some sublist of $a$ has product exactly $T$). It rejects
+every bitstring that does not decode to an instance.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ SUBSET PRODUCT as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Subset Product Feasible](subset-product-feasible.md)
-- [Subset Product Instance](subset-product-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible SUBSET PRODUCT instances](subset-product-feasible.md)
+- [SUBSET PRODUCT instances](subset-product-instance.md)
+- [Well-formed SUBSET PRODUCT instances](well-formed.md)
 
 ## Sources
 

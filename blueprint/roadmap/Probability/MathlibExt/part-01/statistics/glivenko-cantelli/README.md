@@ -5,5 +5,5 @@ navigation: module
 
 # Glivenko Cantelli
 
-- [Empirical Count](empirical-count.md)
-- [Glivenko cantelli](glivenko-cantelli.md)
+- [Empirical count](empirical-count.md)
+- [Glivenko–Cantelli theorem](glivenko-cantelli.md)

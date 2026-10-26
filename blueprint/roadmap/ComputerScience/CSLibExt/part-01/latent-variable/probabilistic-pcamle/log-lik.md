@@ -35,7 +35,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Probabilistic PCA covariance](ppca-cov.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

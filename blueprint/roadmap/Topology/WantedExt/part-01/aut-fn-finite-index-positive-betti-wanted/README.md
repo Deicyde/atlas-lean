@@ -5,6 +5,6 @@ navigation: module
 
 # Aut Fn Finite Index Positive Betti
 
-- [First Betti Rank](first-betti-rank.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [First Betti number of a group](first-betti-rank.md)
+- [Farb's positive first Betti number question for $\mathrm{Aut}(F_n)$](conjecture.md)
+- [Some $\mathrm{Aut}(F_n)$ with $n > 3$ has no finite-index subgroup of positive first Betti number](conjecture-refuted.md)

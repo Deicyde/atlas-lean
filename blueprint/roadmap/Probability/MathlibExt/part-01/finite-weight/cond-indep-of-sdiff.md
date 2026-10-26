@@ -12,11 +12,11 @@ Conditional independence given `S` only involves the variables of `A` and `B` ou
 
 ## Depends on
 
-- [Cond Indep](cond-indep.md)
+- [Conditional independence for a finite weight](cond-indep.md)
 
 ## Proof depends on
 
-- [Marginal](marginal.md)
+- [Marginal of a weight](marginal.md)
 
 ## Sources
 

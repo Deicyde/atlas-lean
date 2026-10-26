@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DensestKSubgraph.densestKSubgraphDec
 ---
 
-# Densest KSubgraph Dec
+# DENSEST k-SUBGRAPH as a decision problem
 
-DENSEST k-SUBGRAPH as a decision problem over bitstrings.
+**DENSEST k-SUBGRAPH as a decision problem.** The decision problem DENSEST k-SUBGRAPH accepts
+a bitstring $x$ exactly when bitstring decoding of $x$ as a quadruple $(n, E, k, m)$ succeeds and
+returns an instance of DENSEST k-SUBGRAPH that is both well formed and feasible; every bitstring
+that does not decode is rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ DENSEST k-SUBGRAPH as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Densest KSubgraph Feasible](densest-ksubgraph-feasible.md)
-- [Densest KSubgraph Instance](densest-ksubgraph-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasibility for DENSEST k-SUBGRAPH](densest-ksubgraph-feasible.md)
+- [Instances of DENSEST k-SUBGRAPH](densest-ksubgraph-instance.md)
+- [Well-formed DENSEST k-SUBGRAPH instances](well-formed.md)
 
 ## Sources
 

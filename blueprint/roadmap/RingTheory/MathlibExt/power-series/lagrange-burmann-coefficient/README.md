@@ -5,5 +5,5 @@ navigation: module
 
 # Lagrange Burmann Coefficient
 
-- [Fps lagrange burmann coeff'](fps-lagrange-burmann-coeff.md)
-- [Fps lagrange burmann coeff](fps-lagrange-burmann-coeff-2.md)
+- [Lagrange–Bürmann formula from the fixed-point equation alone](fps-lagrange-burmann-coeff.md)
+- [Lagrange–Bürmann formula, coefficient form](fps-lagrange-burmann-coeff-2.md)

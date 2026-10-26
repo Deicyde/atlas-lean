@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Order.StrictTotalOrder.ext
 ---
 
-# Ext
+# Strict total orders are determined by their relation
 
-Two strict total orders with the same relation are equal.
+**Strict total orders are determined by their relation.** Two strict total orders on a
+type $\alpha$ with the same relation are equal.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict total order](strict-total-order.md)
 
 ## Sources
 

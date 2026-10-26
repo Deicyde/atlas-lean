@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCommonSubsequence.LongestCommonSubsequenceFeasible
 ---
 
-# Longest Common Subsequence Feasible
+# Feasible longest-common-subsequence instances
 
-A common subsequence of length at least `K`.
+**Feasible longest-common-subsequence instances.** A longest-common-subsequence instance
+$(R, K)$ is feasible when there is a binary string $w$ of length at least $K$ that is a
+subsequence of every string in $R$, that is, $w$ is obtained from each string in $R$ by deleting
+some of its entries.
 
 ## Depends on
 
-- [Longest Common Subsequence Instance](longest-common-subsequence-instance.md)
+- [Longest-common-subsequence instances](longest-common-subsequence-instance.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsWeaklyCompact
 ---
 
-# Weakly Compact
+# Weakly compact cardinal
 
-A cardinal κ is *weakly compact* if ℵ₀ < κ and κ → (κ)²₂: every 2-colouring of [I]², where |I| =
-κ, admits a homogeneous set H ⊆ I with |H| = κ.
+**Weakly compact cardinal.** A cardinal $\kappa$ is *weakly compact* if $\aleph_0 < \kappa$
+and $\kappa \to (\kappa)^2_2$: for every set $I$ of cardinality $\kappa$ and every colouring $c$
+of the finite subsets of $I$ with two colours, there are a subset $H \subseteq I$ of cardinality
+$\kappa$ and a colour $k$ such that $c(s) = k$ for every two-element subset $s \subseteq H$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Calculus](../../infinitary-combinatorics/is-homogeneous-for.md)
+- [Homogeneous set](../../infinitary-combinatorics/is-homogeneous-for.md)
 
 ## Sources
 

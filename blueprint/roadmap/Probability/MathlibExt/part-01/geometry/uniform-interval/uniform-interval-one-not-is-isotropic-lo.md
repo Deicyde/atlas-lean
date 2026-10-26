@@ -7,20 +7,24 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.uniformInterval_one_not_isIsotropicLogConcave
 ---
 
-# Uniform Interval one not is Isotropic Log Concave
+# The uniform law on (−1, 1) is not isotropic log-concave
 
-An actual unscaled interval law is a negative control for isotropy.
+**The uniform law on [−1, 1] is not isotropic log-concave.** The uniform distribution on the
+symmetric interval $[-1, 1]$ of one-dimensional Euclidean space $\mathbb{R}^1$ is not an isotropic
+log-concave probability measure.
+
+Its second moment is $1/3$ rather than $1$.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
-- [Uniform Interval](uniform-interval.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
+- [Uniform distribution on a symmetric interval](uniform-interval.md)
 
 ## Proof depends on
 
-- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
-- [Line Isometry](line-isometry.md)
-- [Symmetric Interval](symmetric-interval.md)
+- [Log-concave densities](../thin-shell/is-log-concave-density.md)
+- [Identification of the line with one-dimensional Euclidean space](line-isometry.md)
+- [Symmetric interval in one-dimensional Euclidean space](symmetric-interval.md)
 
 ## Sources
 

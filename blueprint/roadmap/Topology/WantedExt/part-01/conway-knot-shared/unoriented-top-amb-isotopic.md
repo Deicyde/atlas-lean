@@ -6,20 +6,21 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.Set.UnorientedTopAmbIsotopic
 ---
 
-# Unoriented Top Amb Isotopic
+# Topological ambient isotopy of subsets
 
-Two subsets of `ℝ³` are *unoriented topologically ambient isotopic*
-if some topological ambient isotopy of `ℝ³` carries one onto the other.
-"Unoriented" because this is a set-level relation that forgets any
-parametrization.
+**Topological ambient isotopy of subsets.** Two subsets $A$ and $B$ of $\mathbb{R}^3$ are
+unoriented topologically ambient isotopic if there is a topological ambient isotopy $(H_t)$ of
+$\mathbb{R}^3$ whose time-one map carries $A$ onto $B$, that is, $H_1(A) = B$.
+
+"Unoriented" because this is a set-level relation that forgets any parametrization.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Proof depends on
 
-- [Top Ambient Isotopy](top-ambient-isotopy.md)
+- [Topological ambient isotopy](top-ambient-isotopy.md)
 
 ## Sources
 

@@ -5,7 +5,7 @@ navigation: module
 
 # Isotropic Cube
 
-- [Interval Body](interval-body.md)
-- [Unit Interval Body](unit-interval-body.md)
-- [Inv sqrt twelve le body Supremum](inv-sqrt-twelve-le-body-supremum.md)
-- [Unit Interval Body mem iff](unit-interval-body-mem-iff.md)
+- [Symmetric interval as a convex body](interval-body.md)
+- [Unit interval body](unit-interval-body.md)
+- [Cube lower bound for the supremal isotropic constant](inv-sqrt-twelve-le-body-supremum.md)
+- [Membership in the unit interval body](unit-interval-body-mem-iff.md)

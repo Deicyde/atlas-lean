@@ -8,10 +8,10 @@ navigation: module
 ## Complex
 
 - [Closed Unit Disc](closed-unit-disc.md)
-- [Bdy Pt Of Real](bdy-pt-of-real.md)
+- [Boundary point of the unit disc at a real parameter](bdy-pt-of-real.md)
 
 ## Classification Of Surfaces
 
-- [Orientable Rel](orientable-rel.md)
-- [Non Orientable Rel](non-orientable-rel.md)
-- [Classification of surfaces](classification-of-surfaces.md)
+- [Gluing relation for the orientable normal form](orientable-rel.md)
+- [Gluing relation for the non-orientable normal form](non-orientable-rel.md)
+- [Classification of compact surfaces](classification-of-surfaces.md)

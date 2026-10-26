@@ -7,19 +7,20 @@ proof: formalized
 lean: BerryEsseenConstant.value_nonnegative
 ---
 
-# Value nonnegative
+# The optimal Berry–Esseen coefficient is nonnegative
 
-The optimal coefficient is nonnegative.
+**The optimal Berry–Esseen coefficient is nonnegative.** The infimum $C^*$ of all admissible
+Berry–Esseen coefficients satisfies $0 \le C^*$.
 
 ## Depends on
 
-- [Value](value.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Is Admissible](is-admissible.md)
-- [Admissible nonempty](admissible-nonempty.md)
-- [Is Admissible nonnegative](is-admissible-nonnegative.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
+- [Admissible Berry–Esseen coefficients exist](admissible-nonempty.md)
+- [Admissible coefficients are nonnegative](is-admissible-nonnegative.md)
 
 ## Sources
 

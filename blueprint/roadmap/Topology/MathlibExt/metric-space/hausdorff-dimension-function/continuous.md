@@ -7,13 +7,14 @@ proof: formalized
 lean: HausdorffDimensionFunction.continuous
 ---
 
-# Continuous
+# Continuity of a Hausdorff dimension function
 
-Continuity as a function `ℝ≥0 → ℝ≥0`.
+**Continuity of a Hausdorff dimension function.** Every Hausdorff dimension function
+$\psi : [0,\infty) \to [0,\infty)$ is continuous.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Sources
 

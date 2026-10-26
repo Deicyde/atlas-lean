@@ -4,11 +4,11 @@ navigation: module
 
 # Pardon Distortion
 
-- [Speed](speed.md)
-- [Parameter Arc Length](parameter-arc-length.md)
+- [Speed of a knot](speed.md)
+- [Arc length between two parameters](parameter-arc-length.md)
 - [Total Arc Length](total-arc-length.md)
-- [Intrinsic Distance](intrinsic-distance.md)
-- [Distortion Ratio](distortion-ratio.md)
+- [Intrinsic distance on a knot](intrinsic-distance.md)
+- [Distortion ratio](distortion-ratio.md)
 - [Distortion](distortion.md)
-- [Standard Torus Curve](standard-torus-curve.md)
-- [Pardon torus knot distortion](pardon-torus-knot-distortion.md)
+- [Standard torus curve](standard-torus-curve.md)
+- [Pardon's lower bound for the distortion of torus knots](pardon-torus-knot-distortion.md)

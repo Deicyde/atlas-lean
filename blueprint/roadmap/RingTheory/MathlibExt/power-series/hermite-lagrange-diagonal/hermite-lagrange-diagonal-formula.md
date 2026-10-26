@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.LagrangeInversion.hermite_lagrange_diagonal_formula
 ---
 
-# Hermite lagrange diagonal formula
+# Hermite's diagonal form of Lagrange inversion
 
-Hermite's distinct diagonal/reversion form: the `n`-th coefficient of
-`F * phi ^ n` equals the `n`-th coefficient of the diagonal generating series `G`, where `w` is
-the reverted series (`w = X * phi(w)`) and `(1 - X * phi'(w)) * G = F(w)`.
+**Hermite's diagonal form of Lagrange inversion.** Let $R$ be a commutative ring, let $F$,
+$\varphi$, $w$ and $G$ be formal power series over $R$, and write $[X^n]H$ for the coefficient
+of $X^n$ in a power series $H$. Write $\varphi'$ for the formal derivative of $\varphi$, and
+$\varphi(w)$, $\varphi'(w)$, $F(w)$ for the substitution of $w$ into $\varphi$, $\varphi'$, $F$.
+Suppose that $w$ has constant term $0$, that $\varphi$ has nonzero constant term, that
+$w = X\,\varphi(w)$, and that $(1 - X\,\varphi'(w))\,G = F(w)$. Then
+$[X^n](F\varphi^n) = [X^n]G$ for every natural number $n$.
 
-This contrasts with the derivative-coefficient form in
-`WantedExt/RingTheory/PowerSeries/LagrangeBurmannCoefficientWanted.lean`, which
-extracts the coefficient via an explicit derivative factor; here the derivative
-is instead absorbed into the defining equation for `G`. No definitions are
-duplicated.
+In contrast to the derivative-coefficient form of the Lagrange–Bürmann formula, the derivative
+here is absorbed into the defining equation for $G$.
 
 Reference: Bakir Farhi, "Some Applications of the Lagrange Inversion Formula
 for the k-Fibonacci Numbers", Journal of Integer Sequences 27 (2024),

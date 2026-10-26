@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Topology.ManolescuTriangulationWanted.Topology.ClosedTopManifold
 ---
 
-# Closed Top Manifold
+# Closed topological manifold
 
-A closed connected topological `n`-manifold, bundled with its
-topological-space and chart instances so its existence can be quantified over.
-Charts model `carrier` on `EuclideanSpace ℝ (Fin n)` (the whole space), so it is
-locally Euclidean with no boundary; with `CompactSpace` this is a closed
-manifold.
+**Closed topological manifold.** For a natural number $n$, a closed topological $n$-manifold
+is a nonempty, compact, connected, Hausdorff, second-countable topological space $M$ together
+with an atlas of charts, homeomorphisms from open subsets of $M$ onto open subsets of
+$\mathbb{R}^n$, whose domains cover $M$. Since the charts land in $\mathbb{R}^n$ itself rather
+than in a half-space, $M$ has no boundary.
 
 ## Depends on
 

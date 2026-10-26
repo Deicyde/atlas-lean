@@ -6,10 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.IsBHHConstantFor
 ---
 
-# Is BHHConstant For
+# BHH constant of a law
 
-`β` is the BHH limit for the explicit common law `law`. A realization is required before the
-universal limit clause, preventing an empty realization type from making the claim vacuous.
+**BHH constant of a law.** For a measure $\nu$ on the plane and a real number $\beta$, $\beta$
+is a BHH constant for $\nu$ when an i.i.d. realization with law $\nu$ exists and every i.i.d.
+realization with law $\nu$ has almost-sure BHH limit $\beta$: almost surely,
+$L_n/\sqrt{n} \to \beta$, where $L_n$ is the length of a shortest closed tour through the first
+$n$ points.
+
+Requiring a realization to exist keeps the condition from holding vacuously.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ universal limit clause, preventing an empty realization type from making the cla
 
 ## Proof depends on
 
-- [Has BHHLimit](has-bhhlimit.md)
-- [IIDRealization](iidrealization.md)
+- [Almost-sure BHH limit](has-bhhlimit.md)
+- [I.i.d. realization](iidrealization.md)
 
 ## Sources
 

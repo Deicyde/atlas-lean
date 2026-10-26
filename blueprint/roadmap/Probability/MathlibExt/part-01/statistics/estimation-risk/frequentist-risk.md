@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.frequentistRisk
 ---
 
-# Frequentist Risk
+# Frequentist risk
 
-Source finite frequentist risk of one fixed rule: at each parameter, the
-real expected loss under that parameter law and loss. `δ` is fixed before the
-family and does not depend on `θ`; `A` may differ from `Θ`. The
-per-parameter `Integrable` evidence is the source expectation domain from
-Chapter 2 Definition 2.2.1; without it no finite source risk exists. No prior,
-kernel, or optimality input occurs. Source equation 7.3.16. Blueprint
-`af_36871388da7326a07a5e4f71`.
+**Frequentist risk.** Let $S$ be a measurable space, $\delta : S \to A$ a decision rule,
+$(P_\theta)_{\theta \in \Theta}$ a family of probability measures on $S$, and
+$\ell : \Theta \times A \to [0, \infty)$ a loss such that $x \mapsto \ell(\theta, \delta(x))$ is
+$P_\theta$-integrable for every $\theta \in \Theta$. The frequentist risk of $\delta$ is the
+function $\Theta \to \mathbb{R}$ given by
+$R(\theta, \delta) = \int_S \ell(\theta, \delta(x)) \, dP_\theta(x)$.
+
+The rule $\delta$ does not depend on $\theta$, and the action space $A$ may differ from $\Theta$.
+No prior, kernel or optimality criterion enters.
 
 ## Depends on
 
@@ -22,3 +24,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- Casella–Berger equation 7.3.16; the integrability hypothesis is the expectation domain of Chapter 2 Definition 2.2.1. Blueprint `af_36871388da7326a07a5e4f71`.

@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Topology.Poincare3DTopologicalWanted.Topology.poincare_3d_topological
 ---
 
-# Poincare3 DTopological Wanted
+# Topological Poincaré conjecture in dimension 3
 
-Source: G. Perelman, The entropy formula for the Ricci flow and its geometric applications (arXiv:math/0211159, 2002); Ricci flow with surgery on three-manifolds (arXiv:math/0303109, 2003); Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (arXiv:math/0307245, 2003). Recorded as a `proof_wanted` in Mathlib/Geometry/Manifold/PoincareConjecture.lean. Originally conjectured by Henri Poincaré in 1904. Via leanprover/lean-eval@38361be, problem `poincare_3d_topological`.
+**Topological Poincaré conjecture in dimension 3.** Let $M$ be a nonempty, compact, simply
+connected Hausdorff space with an atlas of charts to $\mathbb{R}^3$, that is, a topological
+3-manifold without boundary. Then $M$ is homeomorphic to the unit sphere
+$S^3 = \{x \in \mathbb{R}^4 : \|x\| = 1\}$.
 
 ## Depends on
 
@@ -17,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Topology.Poincare3DTopologicalWanted](../../../../sources/v2/WantedExt.md)
+- G. Perelman, The entropy formula for the Ricci flow and its geometric applications (arXiv:math/0211159, 2002); Ricci flow with surgery on three-manifolds (arXiv:math/0303109, 2003); Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (arXiv:math/0307245, 2003). Recorded as a `proof_wanted` in Mathlib/Geometry/Manifold/PoincareConjecture.lean. Originally conjectured by Henri Poincaré in 1904. Via leanprover/lean-eval@38361be, problem `poincare_3d_topological`.

@@ -6,20 +6,22 @@ statement: formalized
 lean: MathlibExt.Topology.AutFnFiniteIndexPositiveBettiWanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# Some $\mathrm{Aut}(F_n)$ with $n > 3$ has no finite-index subgroup of positive first Betti number
 
-Resolved false: Kaluba-Nowak-Ozawa proved Aut(F5) has Kazhdan property (T) (Math. Ann. 375
-(2019), 1169-1191). Property (T) passes to finite-index subgroups and forces finite
-abelianization, so every finite-index subgroup of Aut(F5) has first Betti rank 0. The n = 5
-instance is therefore false, refuting the universal claim over n > 3. Source: M. Kaluba, P. W.
-Nowak, N. Ozawa, Aut(F5) has property (T), Math. Ann. 375 (2019), no. 3-4, 1169-1191,
-https://arxiv.org/abs/1712.07167. Moved from
-`OpenConjectures/Topology/AutFnFiniteIndexPositiveBetti`.
+**Some $\mathrm{Aut}(F_n)$ with $n > 3$ has no finite-index subgroup of positive first Betti
+number.** It is not the case that for every natural number $n > 3$ the automorphism group
+$\mathrm{Aut}(F_n)$ of the free group $F_n$ on $n$ generators has a finite-index subgroup $H$ whose
+first Betti number, the $\mathbb{Z}$-rank of the abelianization of $H$, is positive.
+
+The case $n = 5$ fails: Kaluba, Nowak and Ozawa proved that $\mathrm{Aut}(F_5)$ has Kazhdan's
+property (T), which passes to finite-index subgroups and forces finite abelianization, so every
+finite-index subgroup of $\mathrm{Aut}(F_5)$ has first Betti number $0$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Farb's positive first Betti number question for $\mathrm{Aut}(F_n)$](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Topology.AutFnFiniteIndexPositiveBettiWanted](../../../../../sources/v2/WantedExt.md)
+- M. Kaluba, P. W. Nowak, N. Ozawa, Aut(F5) has property (T), Math. Ann. 375 (2019), no. 3-4, 1169-1191, https://arxiv.org/abs/1712.07167. Moved from `OpenConjectures/Topology/AutFnFiniteIndexPositiveBetti`.

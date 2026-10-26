@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.meanSquaredError_eq_variance_add_sq_bias
 ---
 
-# Mean Squared Error eq variance add sq bias
+# Bias–variance decomposition of the mean squared error
 
-Source equation 7.3.1: under a finite second moment, the finite MSE equals
-the variance plus the squared bias. This bias form is the complete source
-conclusion; the expectation form `(∫W - θ)²` is the same value through the
-accepted `bias` definition. All integrability evidence is derived from the
-`MemLp` hypothesis. Blueprint `af_3a1bafba0b7dff99554b01f0`.
+**Bias–variance decomposition of the mean squared error.** Let $\mu$ be a probability measure
+on a measurable space $S$, let $\theta \in \mathbb{R}$, and let $W : S \to \mathbb{R}$ be
+square-integrable with respect to $\mu$, that is, $W \in L^2(\mu)$. Then the mean squared error of
+$W$ at $\theta$ under $\mu$ equals $\operatorname{Var}_\mu(W) + b^2$, where
+$b = \int_S W \, d\mu - \theta$ is the bias of $W$ at $\theta$ under $\mu$.
+
+The integrability that the mean squared error and the bias require follows from $W \in L^2(\mu)$.
 
 ## Depends on
 
-- [Bias](bias.md)
-- [Integrable sq sub of mem Lp two](integrable-sq-sub-of-mem-lp-two.md)
-- [Mean Squared Error](mean-squared-error.md)
+- [Bias of an estimator](bias.md)
+- [A finite second moment makes the squared error integrable](integrable-sq-sub-of-mem-lp-two.md)
+- [Mean squared error](mean-squared-error.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- Casella–Berger, equation (7.3.1); blueprint `af_3a1bafba0b7dff99554b01f0`.

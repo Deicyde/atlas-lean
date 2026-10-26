@@ -7,15 +7,18 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.inverseCheegerConstant_le_dimensional
 ---
 
-# Inverse Cheeger Constant le dimensional
+# Inverse Cheeger constant bounded by the dimensional KLS constant
 
-Every admissible law contributes its inverse coefficient to the dimensional supremum.
+**Inverse Cheeger constant bounded by the dimensional KLS constant.** For every
+$n \in \mathbb{N}$ and every isotropic log-concave probability measure $\mu$ on $\mathbb{R}^n$
+with the Euclidean metric, the inverse Cheeger constant of $\mu$ is at most the dimensional KLS
+constant in dimension $n$.
 
 ## Depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
-- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
+- [Inverse Cheeger constant](inverse-cheeger-constant.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

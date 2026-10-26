@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.thinShellVarianceConstant_nonneg
 ---
 
-# Thin Shell Variance Constant nonneg
+# The thin-shell variance constant is nonnegative
 
-The optimal variance constant is nonnegative in the extended nonnegative reals.
+**The thin-shell variance constant is nonnegative.** The thin-shell variance constant, a
+value in $[0, \infty]$, is at least $0$.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+- [Thin-shell variance constant](thin-shell-variance-constant.md)
 
 ## Sources
 

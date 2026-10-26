@@ -7,9 +7,13 @@ proof: formalized
 lean: IsPreconnected.inter_frontier_nonempty_of_inter_compl
 ---
 
-# Frontier
+# A preconnected set meets the frontier of every set it crosses
 
-A preconnected set meeting both a set and its complement meets its frontier.
+**A preconnected set meets the frontier of every set it crosses.** Let $s$ be a
+preconnected subset of a topological space $X$ and let $A \subseteq X$. If both $s \cap A$ and
+$s \cap (X \setminus A)$ are nonempty, then $s$ meets the frontier
+$\partial A = \overline{A} \setminus \operatorname{int} A$ of $A$, that is,
+$s \cap \partial A$ is nonempty.
 
 ## Depends on
 

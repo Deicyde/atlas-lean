@@ -7,17 +7,19 @@ proof: formalized
 lean: BerryEsseenConstant.admissible_bddBelow
 ---
 
-# Admissible bdd Below
+# The admissible Berry–Esseen coefficients are bounded below
 
-The optimized family is bounded below by zero.
+**The admissible Berry–Esseen coefficients are bounded below.** The set of real numbers $C$
+that are admissible Berry–Esseen coefficients (common Berry–Esseen coefficients for all
+standardized laws and all positive sample sizes) is bounded below.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
 
 ## Proof depends on
 
-- [Is Admissible nonnegative](is-admissible-nonnegative.md)
+- [Admissible coefficients are nonnegative](is-admissible-nonnegative.md)
 
 ## Sources
 

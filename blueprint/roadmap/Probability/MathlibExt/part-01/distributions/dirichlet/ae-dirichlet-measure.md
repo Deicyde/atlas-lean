@@ -6,19 +6,22 @@ proof: formalized
 lean: ProbabilityTheory.ae_dirichletMeasure
 ---
 
-# Ae dirichlet Measure
+# The Dirichlet distribution is concentrated on the open simplex
 
-A `Dir(α)`-random vector is almost surely a probability vector with positive entries.
+**The Dirichlet distribution is concentrated on the open simplex.** For every $n$ and every
+parameter vector $\alpha \in \mathbb{R}^{n+1}$, almost every $\theta \in \mathbb{R}^{n+1}$ with
+respect to the Dirichlet distribution $\mathrm{Dir}(\alpha)$ is a probability vector with positive
+entries: $\theta_i > 0$ for every $i$ and $\sum_{i=0}^{n} \theta_i = 1$.
 
 ## Depends on
 
-- [Dirichlet Measure](dirichlet-measure.md)
+- [Dirichlet distribution](dirichlet-measure.md)
 
 ## Proof depends on
 
-- [Dirichlet Density](dirichlet-density.md)
-- [Multi Beta](multi-beta.md)
-- [Simplex Completion](simplex-completion.md)
+- [Unnormalized Dirichlet density](dirichlet-density.md)
+- [Multivariate Beta function](multi-beta.md)
+- [Simplex completion](simplex-completion.md)
 
 ## Sources
 

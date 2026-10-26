@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.IsUnbiased
 ---
 
-# Is Unbiased
+# Unbiased estimator
 
-Source unbiasedness of a single fixed real estimator for a target function:
-at every parameter the expectation exists and equals the target value. `W` is
-fixed before the family `P` and the target `τ`; no parameter-dependent
-estimator map is accepted. Integrability is inside the predicate: a
-nonintegrable estimator is not unbiased even when the totalized integral
-happens to match. The identity target on real parameters is the source
-`§7.3.1` case; the general target is the explicit `§7.3.2` generalization.
-Blueprint `af_95118d196fd6478105a6eb43`.
+**Unbiased estimator.** Let $(P_\theta)_{\theta \in \Theta}$ be a family of probability measures
+on a measurable space $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. An estimator
+$W : S \to \mathbb{R}$ is unbiased for $\tau$ if for every $\theta \in \Theta$ the function $W$ is
+$P_\theta$-integrable and $\int_S W \, dP_\theta = \tau(\theta)$.
+
+Integrability is part of the definition, so a non-integrable estimator is never unbiased. The
+estimator $W$ is fixed and does not depend on $\theta$.
 
 ## Depends on
 
@@ -23,3 +22,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- Casella–Berger Definition 7.3.2 is the case $\tau(\theta) = \theta$ on real parameters; the general target follows section 7.3.2. Blueprint `af_95118d196fd6478105a6eb43`.

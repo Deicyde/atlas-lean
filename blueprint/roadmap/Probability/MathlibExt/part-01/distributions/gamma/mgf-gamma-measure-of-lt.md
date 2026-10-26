@@ -7,9 +7,11 @@ proof: formalized
 lean: ProbabilityTheory.mgf_gammaMeasure_of_lt
 ---
 
-# Mgf gamma Measure of lt
+# Moment generating function of the gamma distribution
 
-MGF of a gamma law below the rate.
+**Moment generating function of the gamma distribution.** Let $a > 0$ and $r > 0$, and let
+$X$ have the gamma distribution with shape $a$ and rate $r$. For every real $t < r$, the moment
+generating function of $X$ at $t$ is $\mathbb{E}[e^{tX}] = \left(\frac{r}{r - t}\right)^a$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrable exp mul gamma Measure](integrable-exp-mul-gamma-measure.md)
+- [Exponential moments of the gamma distribution](integrable-exp-mul-gamma-measure.md)
 
 ## Sources
 

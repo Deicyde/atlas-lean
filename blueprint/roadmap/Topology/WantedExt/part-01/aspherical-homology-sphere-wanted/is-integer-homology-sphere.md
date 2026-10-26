@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Topology.AsphericalHomologySphereWanted.Topology.Closed4Manifold.IsIntegerHomologySphere
 ---
 
-# Is Integer Homology Sphere
+# Integer homology 4-sphere
 
-`M` is an **integer homology 4-sphere**: in every degree its integral
-singular homology is isomorphic to that of the standard 4-sphere.
+**Integer homology 4-sphere.** A closed topological 4-manifold $M$ is an integer homology
+4-sphere if for every $k \ge 0$ the integral singular homology $H_k(M; \mathbb{Z})$ is isomorphic,
+as a $\mathbb{Z}$-module, to $H_k(S^4; \mathbb{Z})$, where $S^4$ is the unit sphere in
+$\mathbb{R}^5$.
 
 ## Depends on
 
-- [Closed4 Manifold](closed4-manifold.md)
+- [Closed topological 4-manifold](closed4-manifold.md)
 
 ## Proof depends on
 
-- [Int Homology](int-homology.md)
+- [Integral singular homology as a $\mathbb{Z}$-module](int-homology.md)
 
 ## Sources
 

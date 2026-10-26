@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianPathUndirected.HamiltonianPathUndirectedFeasible
 ---
 
-# Hamiltonian Path Undirected Feasible
+# Feasible undirected Hamiltonian path instances
 
-A Hamiltonian path.
+**Feasible undirected Hamiltonian path instances.** An instance $(n, E)$ of undirected
+Hamiltonian path is feasible when its graph has a Hamiltonian path: a list of length $n$ of
+vertices of the graph, with no repeated entries and containing every vertex, in which any two
+consecutive entries are adjacent.
 
 ## Depends on
 
-- [Hamiltonian Path Undirected Instance](hamiltonian-path-undirected-instance.md)
+- [Instances of undirected Hamiltonian path](hamiltonian-path-undirected-instance.md)
 
 ## Proof depends on
 
-- [Graph](graph.md)
+- [Graph of an undirected Hamiltonian path instance](graph.md)
 
 ## Sources
 

@@ -7,14 +7,17 @@ proof: formalized
 lean: elementDifferent_of_adjoin_eq_top
 ---
 
-# Element Different of adjoin eq top
+# Element different of a generator
 
-Primitive case: when `algebraMap B L α` generates `L` over `K`, the element
-different is `aeval α (derivative (minpoly A α))`.
+**Element different of a generator.** Let $A$ be a commutative ring, $B$ a commutative
+$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. Let
+$\alpha \in B$ and let $f$ be the minimal polynomial of $\alpha$ over $A$ (taken to be $0$ when
+$\alpha$ is not integral over $A$). If the image of $\alpha$ in $L$ generates $L$ as a
+$K$-algebra, then the element different $\delta_{B/A}(\alpha)$ equals $f'(\alpha)$.
 
 ## Depends on
 
-- [Element Different](element-different.md)
+- [Element different](element-different.md)
 
 ## Sources
 

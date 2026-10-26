@@ -18,15 +18,15 @@ every earlier one) makes on the rearranged list equals $\sum_{i=0}^{n-1} \frac{1
 
 - [The hire-assistant scan](../hire-assistant/hire-assistant.md)
 - [Uniformly random rearrangement of a list](../../random/expected-cost/uniform-permutation.md)
-- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+- [Extended expectation](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
 
 ## Proof depends on
 
 - [The hire-assistant scan hires exactly the strict prefix maxima](../hire-assistant/hire-assistant-hires.md)
 - [Cost of the hire-assistant scan](../hire-assistant/hire-assistant-time.md)
-- [Expect ENN map](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-map.md)
-- [Expect ENN uniform Of Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-uniform-of-fintype.md)
-- [Uniform Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/uniform/uniform-fintype.md)
+- [Change of variables for extended expectation](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-map.md)
+- [Extended expectation under the uniform distribution](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-uniform-of-fintype.md)
+- [Uniform distribution on a finite type](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/uniform/uniform-fintype.md)
 
 ## Sources
 

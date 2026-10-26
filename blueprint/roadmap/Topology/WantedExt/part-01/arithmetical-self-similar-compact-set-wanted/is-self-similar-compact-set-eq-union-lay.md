@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isSelfSimilarCompactSet_eq_union_layers
 ---
 
-# Is Self Similar Compact Set eq union layers
+# Decomposition of a self-similar compact set into layers
 
-Proposition 2: a self-similar compact set of module `μ` and ratio `ρ` is
-`K = {0} ∪ ⋃_{n ≥ 0} (T_0 ∪ ⋯ ∪ T_{μ-1}) / ρ^n`.
+**Decomposition of a self-similar compact set into layers.** Let $K$ be a self-similar
+compact set of module $\mu$ and ratio $\rho$, and for $u \ge 0$ let
+$T_u = K^{(u)} \setminus K^{(u+1)}$, where $K^{(u)}$ is the $u$-th derived set of $K$. Then
+
+$$K = \{0\} \cup \bigcup_{n \ge 0} \bigcup_{0 \le u < \mu} \rho^{-n} T_u,$$
+
+where $\rho^{-n} T_u = \{\rho^{-n} x : x \in T_u\}$.
 
 ## Depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
-- [Self Similar Layer](self-similar-layer.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

@@ -18,8 +18,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [(α)^ω or P_{ω₁}(α) is the set of countable subsets of α](../../cardinal/cofinality/countable-subsets/or-p-is-the-set-of-countable-subsets-of.md)
-- [Is Orthogonal To](is-orthogonal-to.md)
-- [Is PIdeal](is-pideal.md)
+- [Orthogonality to a family of sets](is-orthogonal-to.md)
+- [P-ideal of countable sets](is-pideal.md)
 
 ## Sources
 

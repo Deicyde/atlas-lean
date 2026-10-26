@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.selfSimilarLayer_succ
 ---
 
-# Self Similar Layer succ
+# Layers of the derived set
 
-Recurrence: the layer `T_{u+1}` of `K` is the layer `T_u` of the derived set `K'`.
+**Layers of the derived set.** For a set $A \subseteq \mathbb{R}$ and $u \ge 0$, write
+$T_u(A) = A^{(u)} \setminus A^{(u+1)}$ for the $u$-th layer of $A$, where $A^{(u)}$ is the $u$-th
+derived set of $A$. Then for every set $K \subseteq \mathbb{R}$ and every $u \ge 0$,
+$T_{u+1}(K) = T_u(K')$, where $K'$ is the derived set of $K$.
 
 ## Depends on
 
-- [Self Similar Layer](self-similar-layer.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

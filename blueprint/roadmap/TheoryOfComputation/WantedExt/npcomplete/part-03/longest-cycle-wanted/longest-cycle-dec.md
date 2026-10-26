@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCycle.longestCycleDec
 ---
 
-# Longest Cycle Dec
+# The decision problem LONGEST CYCLE
 
-LONGEST CYCLE as a decision problem over bitstrings.
+**The decision problem LONGEST CYCLE.** LONGEST CYCLE accepts a bitstring $x$ exactly when $x$
+decodes, under the canonical bitstring encoding of instances, to an instance of LONGEST CYCLE that
+is well formed and feasible. Bitstrings that do not decode, and bitstrings that decode to
+instances that are not well formed, are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ LONGEST CYCLE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Longest Cycle Feasible](longest-cycle-feasible.md)
-- [Longest Cycle Instance](longest-cycle-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible LONGEST CYCLE instances](longest-cycle-feasible.md)
+- [Instances of LONGEST CYCLE](longest-cycle-instance.md)
+- [Well-formed LONGEST CYCLE instances](well-formed.md)
 
 ## Sources
 

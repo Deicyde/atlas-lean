@@ -19,7 +19,7 @@ $W$ and every real number $\sigma^2$ is $0$.
 ## Proof depends on
 
 - [Probabilistic PCA covariance](ppca-cov.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

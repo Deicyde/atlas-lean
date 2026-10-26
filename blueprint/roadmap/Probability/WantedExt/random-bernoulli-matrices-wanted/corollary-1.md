@@ -6,14 +6,13 @@ statement: formalized
 lean: MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_1
 ---
 
-# Corollary 1
+# Singularity probability of Bernoulli matrices
 
-This (unnamed) corollary appears directly below Theorem A in the paper:
-
-For every `p ∈ (0, 1/2]` and any sequence `Bₙ` of `n × n` random matrices with mutually
-independent `Bernoulli(p)` entries we have that
-
-`P(Bₙ is singular) = (1 - p + oₙ(1))ⁿ`.
+**Singularity probability of Bernoulli matrices.** Let $0 < p \le 1/2$. For each $n$, let $B_n$ be
+a random $n \times n$ real matrix on a probability space $(\Omega_n, P_n)$ whose $n^2$ entries are
+mutually independent and each equal to $1$ with probability $p$ and to $0$ with probability $1 - p$.
+Then there is a function $o : \mathbb{N} \to \mathbb{R}$ with $o(n) \to 0$ as $n \to \infty$ such
+that $P_n(\det B_n = 0) = (1 - p + o(n))^n$ for every $n \ge 1$.
 
 ## Depends on
 

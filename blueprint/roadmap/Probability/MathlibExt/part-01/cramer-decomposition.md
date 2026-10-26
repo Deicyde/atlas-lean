@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Probability.CramerDecompositionWanted.cramer_decomposition
 ---
 
-# Cramer Decomposition
+# Cramér's decomposition theorem
 
-If independent real `X, Y` have Gaussian sum, each is Gaussian (degenerate allowed).
+**Cramér's decomposition theorem.** Let $X$ and $Y$ be measurable real random variables on a
+probability space. If $X$ and $Y$ are independent and $X + Y$ has a Gaussian law, then $X$ and
+$Y$ each have a Gaussian law. Here a Gaussian law may be degenerate, that is, a point mass.
 
 ## Depends on
 

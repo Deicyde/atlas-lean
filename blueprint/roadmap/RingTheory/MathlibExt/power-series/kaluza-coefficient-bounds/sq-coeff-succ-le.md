@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Algebra.PowerSeries.KaluzaCoefficientBoundsWanted.HasPositiveLogConvexCoefficients.sq_coeff_succ_le
 ---
 
-# Sq coeff succ le
+# Log-convexity of the coefficients
 
-The log-convexity inequality `aₙ₊₁² ≤ aₙ aₙ₊₂`.
+**Log-convexity of the coefficients.** If a real formal power series $f = \sum_n a_n X^n$
+has positive log-convex coefficients, then $a_{n+1}^2 \le a_n a_{n+2}$ for every natural
+number $n$.
 
 ## Depends on
 
-- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
+- [Positive log-convex coefficients](has-positive-log-convex-coefficients.md)
 
 ## Sources
 

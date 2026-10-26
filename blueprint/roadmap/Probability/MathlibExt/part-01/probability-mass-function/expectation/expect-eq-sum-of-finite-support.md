@@ -6,15 +6,18 @@ proof: formalized
 lean: PMF.expect_eq_sum_of_finite_support
 ---
 
-# Expect eq sum of finite support
+# Expectation of a finitely supported distribution
 
-If all the mass of `p` lies in a finite set `s`, the expectation is the
-finite sum over `s`, with no integrability hypothesis and no finiteness
-assumption on the ambient type.
+**Expectation of a finitely supported distribution.** Let $p$ be a probability mass function
+on a measurable space $\alpha$ in which singletons are measurable, and let $s$ be a finite subset
+of $\alpha$ such that $p(a) = 0$ for every $a \notin s$. Then for every function
+$f : \alpha \to \mathbb{R}$, the expectation of $f$ under $p$ equals $\sum_{a \in s} p(a) f(a)$.
+
+No integrability hypothesis on $f$ and no finiteness assumption on $\alpha$ is needed.
 
 ## Depends on
 
-- [Expect](expect.md)
+- [Expectation under a probability mass function](expect.md)
 
 ## Sources
 

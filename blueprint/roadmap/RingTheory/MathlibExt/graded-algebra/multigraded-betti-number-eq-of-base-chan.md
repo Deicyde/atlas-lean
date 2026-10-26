@@ -7,24 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.multigradedBettiNumber_eq_of_baseChange
 ---
 
-# Multigraded Betti Invariance
+# Betti numbers do not depend on the choice of base change data
 
-For one fixed multigraded free resolution, the multigraded Betti number is
-independent of the certified component-presentation package: any two
-`MultigradedBaseChange` presentations give the same `multigradedBettiNumber`
-in every multidegree `α` and homological index `i`.
+**Betti numbers do not depend on the choice of base change data.** Let $K$ be a field,
+let $R = K[x_1, \dots, x_n]$, and let $M$ be a $\mathbb{Z}^n$-graded $R$-module with a fixed
+multigraded free resolution $P_\bullet \to M$. Any two choices of multigraded base change
+data for $P_\bullet$ define the same multigraded Betti numbers, in every multidegree
+$\alpha \in \mathbb{Z}^n$ and every homological index $i \in \mathbb{N}$.
 
 ## Depends on
 
-- [Multigraded Base Change](multigraded-betti/multigraded-base-change.md)
-- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
-- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
-- [Multigraded Betti Number](multigraded-betti/multigraded-betti-number.md)
+- [Multigraded base change data](multigraded-betti/multigraded-base-change.md)
+- [Multigraded free resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded modules over a polynomial ring](multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Multigraded Betti number](multigraded-betti/multigraded-betti-number.md)
 
 ## Proof depends on
 
-- [Base Changed Complex](multigraded-betti/base-changed-complex.md)
-- [Base Changed Degree Piece](multigraded-betti/base-changed-degree-piece.md)
+- [Base change of a resolution to the residue field](multigraded-betti/base-changed-complex.md)
+- [Degree pieces of the base-changed resolution](multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

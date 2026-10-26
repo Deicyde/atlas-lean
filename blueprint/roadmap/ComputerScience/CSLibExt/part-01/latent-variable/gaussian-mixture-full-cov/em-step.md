@@ -32,7 +32,7 @@ parameters valid.
 - [Effective number of points of a full-covariance mixture component](mass.md)
 - [The covariance update is positive definite](new-cov-pos-def.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

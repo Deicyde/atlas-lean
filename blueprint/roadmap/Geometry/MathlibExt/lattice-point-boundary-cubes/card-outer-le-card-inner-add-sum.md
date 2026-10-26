@@ -23,7 +23,7 @@ $|O| \le |I| + \sum_{i=1}^m |C_i|$.
 - [Inner cube set](../lattice-point-cube-sandwich/inner-cube-set.md)
 - [Outer cube set](../lattice-point-cube-sandwich/outer-cube-set.md)
 - [Integer cube set](../lipschitz-image-cube-count/integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.FiniteWeight.CondIndep
 ---
 
-# Cond Indep
+# Conditional independence for a finite weight
 
-The variables in `A` and in `B` are **conditionally independent given** those in `S` under
-the weight `p`: `p(x_A, x_B, x_S) p(x_S) = p(x_A, x_S) p(x_B, x_S)` for every configuration,
-where `p(x_U)` is `marginal p U x`.
+**Conditional independence for a finite weight.** Let $V$ and $\alpha$ be finite types, let $p$
+be a real-valued weight on the configurations $x : V \to \alpha$, and for $U \subseteq V$ write
+$p(x_U)$ for the marginal of $p$ on $U$ at $x$, the total weight of the configurations that agree
+with $x$ on $U$. For $A, B, S \subseteq V$, the variables in $A$ and in $B$ are conditionally
+independent given those in $S$ under $p$ when
+
+$$p(x_{A \cup B \cup S})\, p(x_S) = p(x_{A \cup S})\, p(x_{B \cup S})$$
+
+for every configuration $x$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Marginal](marginal.md)
+- [Marginal of a weight](marginal.md)
 
 ## Sources
 

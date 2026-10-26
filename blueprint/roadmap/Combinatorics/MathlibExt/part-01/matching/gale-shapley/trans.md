@@ -18,7 +18,7 @@ type $\alpha$. If $a, b, c \in \alpha$ satisfy $a < b$ and $b < c$, then $a < c$
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

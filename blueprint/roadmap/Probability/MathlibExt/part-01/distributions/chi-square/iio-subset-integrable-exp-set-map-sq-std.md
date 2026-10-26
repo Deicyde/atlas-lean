@@ -7,9 +7,12 @@ proof: formalized
 lean: ProbabilityTheory.Iio_subset_integrableExpSet_map_sq_stdGaussian
 ---
 
-# Iio subset integrable Exp Set map sq std Gaussian
+# Exponential moments of the law of the square of a standard normal
 
-The law of the square pushes exponential integrability forward.
+**Exponential moments of the law of the square of a standard normal.** Let $\gamma$ be the
+standard Gaussian measure on $\mathbb{R}$ (mean $0$, variance $1$) and let $\nu$ be its image under
+$x \mapsto x^2$. For every real $t < 1/2$, the function $y \mapsto e^{t y}$ is integrable with
+respect to $\nu$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrable exp mul sq std Gaussian](integrable-exp-mul-sq-std-gaussian.md)
+- [Exponential moments of the square of a standard normal](integrable-exp-mul-sq-std-gaussian.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.QuadraticAssignment.quadraticAssignmentDec
 ---
 
-# Quadratic Assignment Dec
+# QUADRATIC ASSIGNMENT as a decision problem
 
-QUADRATIC ASSIGNMENT as a decision problem over bitstrings.
+**QUADRATIC ASSIGNMENT as a decision problem.** The decision problem QUADRATIC ASSIGNMENT
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+quadratic assignment instance that is well formed and feasible; bitstrings that do not decode
+are rejected.
 
 ## Depends on
 
@@ -24,8 +27,8 @@ QUADRATIC ASSIGNMENT as a decision problem over bitstrings.
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
 - [Quadratic Assignment Feasible](quadratic-assignment-feasible.md)
-- [Quadratic Assignment Instance](quadratic-assignment-instance.md)
-- [Well Formed](well-formed.md)
+- [Instances of QUADRATIC ASSIGNMENT](quadratic-assignment-instance.md)
+- [Well-formed quadratic assignment instances](well-formed.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Multigraded Poincare Coefficients
 
-- [Multigraded Poincare Coefficients](multigraded-poincare-coefficients.md)
-- [Multigraded Poincare Coefficients apply](multigraded-poincare-coefficients-apply.md)
-- [Multigraded Poincare Coefficients eq of resolution Comparison](multigraded-poincare-coefficients-eq-of.md)
+- [Multigraded Poincaré coefficients](multigraded-poincare-coefficients.md)
+- [Multigraded Poincaré coefficients are Betti numbers](multigraded-poincare-coefficients-apply.md)
+- [Resolution comparisons preserve multigraded Poincaré coefficients](multigraded-poincare-coefficients-eq-of.md)

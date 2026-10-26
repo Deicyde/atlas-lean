@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex Dominated](convex-dominated.md)
-- [Is One Sub Gaussian Tail](is-one-sub-gaussian-tail.md)
+- [Convex domination](convex-dominated.md)
+- [Random variables with a 1-sub-Gaussian tail](is-one-sub-gaussian-tail.md)
 
 ## Sources
 

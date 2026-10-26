@@ -7,19 +7,22 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.thinShellVarianceConstant_le_iff
 ---
 
-# Thin Shell Variance Constant le iff
+# Characterization of bounds on the thin-shell variance constant
 
-The supremum is exactly the least simultaneous bound, not an unspecified oracle.
+**Characterization of bounds on the thin-shell variance constant.** For every
+$C \in [0, \infty]$, the thin-shell variance constant is at most $C$ if and only if, for every
+$n > 0$ and every isotropic log-concave probability measure $\mu$ on $\mathbb{R}^n$, the
+normalized radius variance of $\mu$ is at most $C$.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
-- [Normalized Radius Variance](normalized-radius-variance.md)
-- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+- [Isotropic log-concave probability measures](is-isotropic-log-concave.md)
+- [Normalized radius variance](normalized-radius-variance.md)
+- [Thin-shell variance constant](thin-shell-variance-constant.md)
 
 ## Proof depends on
 
-- [Normalized Radius Variance le constant](normalized-radius-variance-le-constant.md)
+- [The thin-shell variance constant bounds the normalized radius variance of isotropic log-concave measures](normalized-radius-variance-le-constant.md)
 
 ## Sources
 

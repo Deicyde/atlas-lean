@@ -7,17 +7,19 @@ proof: formalized
 lean: ProbabilityTheory.integrable_exp_mul_chiSquareMeasure
 ---
 
-# Integrable exp mul chi Square Measure
+# Exponential moments of the chi-square distribution
 
-Exponential moments of a chi-square law exist below `1/2`.
+**Exponential moments of the chi-square distribution.** Let $p$ be a positive integer and let
+$\chi^2_p$ be the chi-square law with $p$ degrees of freedom. For every real $t < 1/2$, the
+function $x \mapsto e^{t x}$ is integrable with respect to $\chi^2_p$.
 
 ## Depends on
 
-- [Chi Square Measure](chi-square-measure.md)
+- [Chi-square distribution](chi-square-measure.md)
 
 ## Proof depends on
 
-- [Integrable exp mul gamma Measure](../gamma/integrable-exp-mul-gamma-measure.md)
+- [Exponential moments of the gamma distribution](../gamma/integrable-exp-mul-gamma-measure.md)
 
 ## Sources
 

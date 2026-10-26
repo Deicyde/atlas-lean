@@ -7,13 +7,20 @@ proof: formalized
 lean: MathlibExt.Probability.BerryEsseenWanted.berry_esseen_explicit
 ---
 
-# Berry esseen explicit
+# Berry–Esseen theorem with constant 42
 
-I.i.d. Berry–Esseen bound with explicit constant `42`.
+**Berry–Esseen theorem with constant 42.** Let $X_0, X_1, X_2, \dots$ be measurable, mutually
+independent real random variables on a probability space, each with the same distribution as
+$X_0$, where $X_0$ has a finite third moment, mean $\mathbb{E}[X_0] = 0$ and variance
+$\sigma^2 = \operatorname{Var}(X_0) > 0$ with $\sigma > 0$. Write $\rho = \mathbb{E}|X_0|^3$,
+$S_n = X_0 + \dots + X_{n-1}$, and $\Phi$ for the distribution function of the standard normal
+distribution. Then for every $n \ge 1$ and every real $x$,
 
-Reusable public API for `berry_esseen`: the constant is stated explicitly, and
-the redundant `Integrable (X 0) P` premise is omitted since it follows from
-`hXmem` via `MemLp.integrable` on a probability space.
+$$\left|\mathbb{P}\left(\frac{S_n}{\sqrt{n\sigma^2}} \le x\right) - \Phi(x)\right| \le
+\frac{42\rho}{\sigma^3\sqrt{n}}.$$
+
+Integrability of $X_0$ is not assumed separately, since on a probability space it follows from
+the finite third moment.
 
 ## Depends on
 
@@ -21,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Berry esseen finset Sum gaussian](berry-esseen-finset-sum-gaussian.md)
+- [Berry–Esseen bound for finite sums](berry-esseen-finset-sum-gaussian.md)
 
 ## Sources
 

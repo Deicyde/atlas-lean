@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.steinerberger2015CorrectedSymbolicLowerBound_holds
 ---
 
-# Steinerberger2015 Corrected Symbolic Lower Bound holds
+# Gaudio–Jaillet corrected lower bound for the BHH constant
 
-Source: Gaudio and Jaillet (2020), correction of Steinerberger's lower coefficient.
+**Gaudio–Jaillet corrected lower bound for the BHH constant.** The Beardwood–Halton–Hammersley
+constant $\beta_2$ satisfies $\frac{5}{8} + \frac{19}{10368} \le \beta_2$.
 
 ## Depends on
 
-- [Steinerberger2015 Corrected Symbolic Lower Bound](steinerberger2015-corrected-symbolic-low.md)
+- [Statement of the corrected Steinerberger lower bound](steinerberger2015-corrected-symbolic-low.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Gaudio and Jaillet (2020), correction of Steinerberger's lower coefficient.

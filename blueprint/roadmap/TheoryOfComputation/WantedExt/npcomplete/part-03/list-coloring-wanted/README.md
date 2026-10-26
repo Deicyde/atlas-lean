@@ -4,8 +4,8 @@ navigation: module
 
 # List Coloring
 
-- [List Coloring Instance](list-coloring-instance.md)
-- [Well Formed](well-formed.md)
-- [List Coloring Feasible](list-coloring-feasible.md)
-- [List Coloring Dec](list-coloring-dec.md)
+- [List-coloring instances](list-coloring-instance.md)
+- [Well-formed list-coloring instances](well-formed.md)
+- [Feasible list-coloring instances](list-coloring-feasible.md)
+- [The LIST COLORING decision problem](list-coloring-dec.md)
 - [LIST COLORING is NP-complete](list-coloring-np-complete.md)

@@ -1,3 +1,3 @@
 # Ultrafilter
 
-- [Ramsey](is-ramsey-ultrafilter.md)
+- [Ramsey ultrafilter](is-ramsey-ultrafilter.md)

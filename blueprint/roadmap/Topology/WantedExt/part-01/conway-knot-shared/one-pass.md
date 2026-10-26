@@ -6,22 +6,27 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.onePass
 ---
 
-# One Pass
+# One pass of the braid closure
 
-One pass through the braid box plus a closure arc. If the pass ends
-at position `1`, the closure arc closes back to the polyline's starting
-vertex `(1, 0, 0)` and we omit the redundant final vertex. Otherwise
-we continue at the top of the new position.
+**One pass of the braid closure.** Let $w$ be a braid word (a list of integers) of length $m$.
+Starting from a traversal state, one pass applies the letters of $w$ in order as crossings, the
+$k$-th letter (counting from $0$) occupying the slab $-(k+1) \le z \le -k$; this moves the state
+to a strand position $p$ and appends the crossing vertices. It then appends the closure arc: the
+vertices $(p, 100, -m)$ and $(p, 100, 0)$, followed by $(p, 0, 0)$ unless $p = 1$. The resulting
+state has position $p$ and the extended vertex list.
+
+When $p = 1$ the vertex $(1, 0, 0)$ is left out because the polyline starts there, so the closure
+arc already returns to its first vertex.
 
 ## Depends on
 
-- [State](state.md)
+- [Braid closure traversal state](state.md)
 
 ## Proof depends on
 
-- [Apply Word](apply-word.md)
-- [Mk R3](mk-r3.md)
-- [R3](r3.md)
+- [Tracing a strand through a braid word](apply-word.md)
+- [Point from three coordinates](mk-r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

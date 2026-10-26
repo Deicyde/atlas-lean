@@ -5,10 +5,10 @@ navigation: module
 
 # Annulus Shared
 
-- [Amb](amb.md)
-- [Sph](sph.md)
-- [Model Hyperplane](model-hyperplane.md)
-- [Locally Flat](locally-flat.md)
-- [Flat Sphere](flat-sphere.md)
-- [Inside](inside.md)
-- [Region Between](region-between.md)
+- [Ambient Euclidean space](amb.md)
+- [Unit sphere in Euclidean space](sph.md)
+- [Model hyperplane](model-hyperplane.md)
+- [Locally flat maps of the sphere](locally-flat.md)
+- [Locally flat embedded sphere](flat-sphere.md)
+- [Inside of a set](inside.md)
+- [Region between two flat spheres](region-between.md)

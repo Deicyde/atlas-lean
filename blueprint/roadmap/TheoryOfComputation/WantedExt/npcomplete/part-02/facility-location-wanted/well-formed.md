@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FacilityLocation.WellFormed
 ---
 
-# Well Formed
+# Well-formed facility location instances
 
-Well-formedness of an instance.
+**Well-formed facility location instances.** A facility location instance $(o, D, B)$, with
+opening costs $o$ and assignment-cost rows $D$, is well-formed when every row of $D$ has the same
+length as $o$.
 
 ## Depends on
 
-- [Facility Location Instance](facility-location-instance.md)
+- [Facility location instances](facility-location-instance.md)
 
 ## Sources
 

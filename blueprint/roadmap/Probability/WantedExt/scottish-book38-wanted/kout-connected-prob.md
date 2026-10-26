@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook38Wanted.KOutConnectedProb
 ---
 
-# KOut Connected Prob
+# Probability that a random $k$-out assignment connects everyone
 
-`P_{kN}`: the proportion of assignments in which each of the `N` people is
-assigned exactly `k` others as friends (never oneself) that connect all `N`
-people.
+**Probability that a random $k$-out assignment connects everyone.** For natural numbers $k$
+and $N$, $P_{kN}$ is the number of assignments that give each of $N$ people a set of exactly $k$
+friends other than themselves and connect all $N$ people, divided by the number of all
+assignments that give each person a set of exactly $k$ friends other than themselves. When there
+is no such assignment, $P_{kN} = 0$.
 
 ## Depends on
 

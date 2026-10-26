@@ -5,19 +5,20 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook161Wanted.kacLacunaryCentralLimitTheorem
 ---
 
-# Kac Lacunary Central Limit Theorem
+# Kac's lacunary central limit theorem
 
-The central limit theorem for lacunary trigonometric series holds under
-Kac's gap hypothesis, and in particular for `rₙ = 2ⁿ`. More precisely: if
-`(rₙ)` is a sequence of integers with `rₙ` minus the sum of all earlier
-terms tending to infinity, then the central limit conclusion above holds;
-and the same conclusion holds for `rₙ = 2ⁿ`, which does not satisfy the gap
-hypothesis. The sequence `rₙ = 2^(n²)` is the example given in the problem
-satisfying the hypothesis.
+**Kac's lacunary central limit theorem.** Let $(r_n)_{n \ge 0}$ be a sequence of integers such
+that $r_n - (r_0 + r_1 + \dots + r_{n-1})$ tends to $+\infty$ as $n \to \infty$. Then $(r_n)$
+satisfies the central limit theorem for lacunary sine sums. The sequence $r_n = 2^n$ satisfies
+it as well.
+
+The sequence $r_n = 2^n$ does not satisfy the gap hypothesis, since
+$2^n - (1 + 2 + \dots + 2^{n-1}) = 1$ for every $n$. The sequence $r_n = 2^{n^2}$ is the example
+given in the problem that does satisfy it.
 
 ## Depends on
 
-- [Lacunary CLT](lacunary-clt.md)
+- [Central limit theorem for lacunary sine sums](lacunary-clt.md)
 
 ## Sources
 

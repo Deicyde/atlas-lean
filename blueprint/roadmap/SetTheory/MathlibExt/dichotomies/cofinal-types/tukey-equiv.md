@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.TukeyEquiv
 ---
 
-# Tukey Equiv
+# Tukey equivalence
 
-D ≡_T E: cofinal (Tukey) equivalence means Tukey reducibility in both directions.
+**Tukey equivalence.** Preordered sets $D$ and $E$ are Tukey equivalent (cofinally
+equivalent), written $D \equiv_T E$, if $D \le_T E$ and $E \le_T D$, where $\le_T$ is Tukey
+reducibility.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tukey LE](tukey-le.md)
+- [Tukey reducibility](tukey-le.md)
 
 ## Sources
 

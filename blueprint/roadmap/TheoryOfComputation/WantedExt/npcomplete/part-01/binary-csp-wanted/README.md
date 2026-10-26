@@ -4,8 +4,8 @@ navigation: module
 
 # Binary Csp
 
-- [Binary Csp Instance](binary-csp-instance.md)
-- [Well Formed](well-formed.md)
-- [Binary Csp Feasible](binary-csp-feasible.md)
-- [Binary Csp Dec](binary-csp-dec.md)
+- [Binary CSP instances](binary-csp-instance.md)
+- [Well-formed binary CSP instances](well-formed.md)
+- [Feasible binary CSP instances](binary-csp-feasible.md)
+- [Binary constraint satisfaction as a decision problem](binary-csp-dec.md)
 - [BINARY CONSTRAINT SATISFACTION is NP-complete](binary-csp-np-complete.md)

@@ -6,10 +6,11 @@ statement: formalized
 lean: IsThreeManifold
 ---
 
-# Is Three Manifold
+# Topological 3-manifold
 
-A **topological 3-manifold**: a Hausdorff, second-countable topological space that is locally
-homeomorphic to `ℝ³` (encoded by a `ChartedSpace (EuclideanSpace ℝ (Fin 3)) M` instance).
+**Topological 3-manifold.** Let $M$ be a topological space equipped with an atlas of charts,
+each a homeomorphism from an open subset of $M$ onto an open subset of $\mathbb{R}^3$, whose domains
+cover $M$. Then $M$ is a topological 3-manifold if it is Hausdorff and second-countable.
 
 ## Depends on
 

@@ -4,10 +4,10 @@ navigation: module
 
 # Tight Knot Constant
 
-- [Is Admissible](is-admissible.md)
-- [Tight Knot Constant](tight-knot-constant.md)
-- [Is Admissible zero](is-admissible-zero.md)
-- [Of le](of-le.md)
+- [Admissible constants for the tight-knot inequality](is-admissible.md)
+- [Tight knot constant](tight-knot-constant.md)
+- [Zero is an admissible tight-knot constant](is-admissible-zero.md)
+- [Admissibility passes to smaller nonnegative constants](of-le.md)
 - [Le tight Knot Constant](le-tight-knot-constant.md)
-- [Zero le tight Knot Constant](zero-le-tight-knot-constant.md)
-- [Tight Knot Constant le iff](tight-knot-constant-le-iff.md)
+- [The tight knot constant is nonnegative](zero-le-tight-knot-constant.md)
+- [Upper bounds for the tight knot constant](tight-knot-constant-le-iff.md)

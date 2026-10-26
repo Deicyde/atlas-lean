@@ -6,23 +6,28 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.IsLocallyFlatBoundary
 ---
 
-# Is Locally Flat Boundary
+# Local flatness at a boundary point
 
-Local flatness of the disk image at a *boundary* disk point `q`. The
-chart is ambient-open in `ℝ³ × ℝ` (it cannot be contained in the closed
-half-space because `q.2 = 0` forces any open neighborhood of `q` to
-escape the half-space), but it preserves the half-space and maps the
-disk image onto the model half-plane in the half-space.
+**Local flatness at a boundary point.** Let $q \in \mathbb{R}^3 \times \mathbb{R}$ and
+$D : \mathbb{R}^2 \to \mathbb{R}^3 \times \mathbb{R}$. Write $\Delta = \{(x, y) : x^2 + y^2 \le 1\}$
+for the closed unit disk, $H = \{(p, s) : s \ge 0\}$ for the closed upper half-space, and
+$P = \{((p_1, p_2, p_3), s) : p_2 = p_3 = 0,\ s \ge 0\}$ for the model half-plane. The image
+$D(\Delta)$ is locally flat at $q$ in the boundary sense if there is a homeomorphism $h : U \to V$
+between open subsets $U$, $V$ of $\mathbb{R}^3 \times \mathbb{R}$ such that $q \in U$,
+$h(U \cap H) = V \cap H$ and $h(U \cap D(\Delta)) = V \cap P$.
+
+The chart is open in $\mathbb{R}^3 \times \mathbb{R}$ rather than in $H$: when the last coordinate
+of $q$ is $0$, every open neighbourhood of $q$ leaves $H$.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Proof depends on
 
-- [Disk2](disk2.md)
-- [Model Half Plane2](model-half-plane2.md)
-- [Upper Half](upper-half.md)
+- [Closed unit disk in the plane](disk2.md)
+- [Model half-plane](model-half-plane2.md)
+- [Closed upper half-space](upper-half.md)
 
 ## Sources
 

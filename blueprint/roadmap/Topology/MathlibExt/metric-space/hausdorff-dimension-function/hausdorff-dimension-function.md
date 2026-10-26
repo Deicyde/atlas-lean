@@ -6,12 +6,11 @@ statement: formalized
 lean: HausdorffDimensionFunction
 ---
 
-# Hausdorff Dimension Function
+# Hausdorff dimension function
 
-A Hausdorff dimension function (gauge) extending the source
-`ψ : (0,∞) → (0,∞)` to `ℝ≥0 → ℝ≥0`. Continuous and (weakly) monotone
-via `ContinuousOrderHom`, zero at zero, strictly positive at positive
-radii; hence `lim_{r→0⁺} ψ r = 0`.
+**Hausdorff dimension function.** A Hausdorff dimension function (gauge) is a continuous,
+non-decreasing function $\psi : [0,\infty) \to [0,\infty)$ with $\psi(0) = 0$ and $\psi(r) > 0$
+for every $r > 0$. In particular $\psi(r) \to 0$ as $r \to 0^+$.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.MetricSpace.HausdorffDimensionFunction](../../../../../sources/v2/MathlibExt.md)
+- Das and Simmons, arXiv:2305.11829v1, line 211; the source gauge on $(0,\infty)$ is extended by $\psi(0) = 0$, and "increasing" is read as non-decreasing.

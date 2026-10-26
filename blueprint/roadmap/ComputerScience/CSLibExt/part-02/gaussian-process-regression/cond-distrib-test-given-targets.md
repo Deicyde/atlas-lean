@@ -33,7 +33,7 @@ $K(x^*, x^*) - K(x^*, x) (K(x, x) + \sigma^2 I)^{-1} K(x, x^*)$.
 - [Regularized kernel matrices are invertible](is-unit-det-kernel-matrix-add.md)
 - [The joint covariance is positive semidefinite](joint-cov-pos-semidef.md)
 - [Training blocks of positive semidefinite kernel matrices](kernel-matrix-pos-semidef-train.md)
-- [Block Row](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/block-row.md)
+- [Horizontal block matrix](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/block-row.md)
 - [Gaussian conditioning (Schur complement)](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/cond-distrib-multivariate-gaussian.md)
 
 ## Sources

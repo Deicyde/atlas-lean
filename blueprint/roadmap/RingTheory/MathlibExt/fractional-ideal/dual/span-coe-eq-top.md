@@ -7,9 +7,10 @@ proof: formalized
 lean: Submodule.span_coe_eq_top
 ---
 
-# Span coe eq top
+# A nonzero submodule spans the field
 
-A nonzero submodule spans the fraction field.
+**A nonzero submodule spans the field.** Let $A$ be a commutative ring and $K$ a field that is
+an $A$-algebra. Then every nonzero $A$-submodule $M$ of $K$ spans $K$ as a $K$-vector space.
 
 ## Depends on
 

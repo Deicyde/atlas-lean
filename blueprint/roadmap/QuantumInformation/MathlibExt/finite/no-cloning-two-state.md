@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_two_state
 ---
 
-# No Cloning
+# No-cloning theorem for two states
 
-Two-state pure-state no-cloning obstruction: in a complex inner-product space,
-non-orthogonal non-identical unit vectors cannot both be exactly cloned by a single
-complex linear isometry `H ⊗ H ≃ₗᵢ H ⊗ H` with a fixed blank state.
+**No-cloning theorem for two states.** Let $H$ be a complex inner product space and let
+$\psi, \varphi, b \in H$ be unit vectors with $0 < |\langle \psi, \varphi \rangle| < 1$. Then there
+is no $\mathbb{C}$-linear isometric isomorphism $U$ of $H \otimes_{\mathbb{C}} H$ onto itself with
+$U(\psi \otimes b) = \psi \otimes \psi$ and $U(\varphi \otimes b) = \varphi \otimes \varphi$.
 
 ## Depends on
 

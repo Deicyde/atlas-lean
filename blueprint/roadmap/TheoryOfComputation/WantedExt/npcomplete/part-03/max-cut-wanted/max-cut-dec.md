@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaxCut.maxCutDec
 ---
 
-# Max Cut Dec
+# MAXIMUM CUT as a decision problem
 
-MAXIMUM CUT as a decision problem over bitstrings.
+**MAXIMUM CUT as a decision problem.** The decision problem MAXIMUM CUT accepts a bitstring
+$x$ exactly when decoding $x$ with the canonical bitstring encoding of instances of MAXIMUM CUT
+succeeds and yields an instance that is well formed and feasible. All other bitstrings, including
+those that fail to decode, are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ MAXIMUM CUT as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Max Cut Feasible](max-cut-feasible.md)
-- [Max Cut Instance](max-cut-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MAXIMUM CUT instances](max-cut-feasible.md)
+- [Instances of MAXIMUM CUT](max-cut-instance.md)
+- [Well-formed MAXIMUM CUT instances](well-formed.md)
 
 ## Sources
 

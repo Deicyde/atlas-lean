@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCycle.WellFormed
 ---
 
-# Well Formed
+# Well-formed LONGEST CYCLE instances
 
-Well-formedness of an instance.
+**Well-formed LONGEST CYCLE instances.** An instance $(n, E, K)$ of LONGEST CYCLE is well
+formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ satisfies
+$u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$.
 
 ## Depends on
 
-- [Longest Cycle Instance](longest-cycle-instance.md)
+- [Instances of LONGEST CYCLE](longest-cycle-instance.md)
 
 ## Sources
 

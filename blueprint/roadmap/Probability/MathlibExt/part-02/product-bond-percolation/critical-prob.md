@@ -6,16 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.ProductBondPercolation.criticalProb
 ---
 
-# Critical Prob
+# Critical probability for bond percolation
 
-The critical probability `p_c(G)` for bond percolation on a graph
-`G` with countable vertex type: the infimum of densities at which an
-infinite open cluster exists with positive probability, with `1`
-inserted so that graphs which never percolate (empty density set) get
-`p_c(G) = 1`, the standard `[0, 1]`-valued threshold convention
-(`sInf ∅ = 0` in `ℝ`). Countability is part of the domain so that the
-global "some infinite cluster exists" event is measurable for the
-`Measure.infinitePi` product law.
+**Critical probability for bond percolation.** For a simple graph $G$ on a countable vertex
+set $V$, the critical probability $p_c(G)$ is the infimum of the set consisting of $1$ together
+with every $p \in [0, 1]$ for which, under the Bernoulli($p$) bond law on $V$, the event that
+the open cluster in $G$ of some vertex is infinite has positive probability. In particular
+$p_c(G) = 1$ when no such $p$ exists.
+
+Countability of $V$ makes the event that some open cluster is infinite measurable for the
+product law.
 
 ## Depends on
 
@@ -23,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gbernoulli Law](gbernoulli-law.md)
-- [Gcluster](gcluster.md)
+- [Bernoulli bond law on $V$](gbernoulli-law.md)
+- [Open cluster in a graph](gcluster.md)
 
 ## Sources
 

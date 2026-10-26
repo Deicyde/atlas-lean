@@ -4,10 +4,10 @@ navigation: module
 
 # Continuous Hom
 
-- [ΩScott Continuous of apply](scott-continuous-of-apply.md)
+- [Scott continuity into a function space is checked pointwise](scott-continuous-of-apply.md)
 - [Currying of Scott-continuous maps](curry.md)
-- [Lfp](lfp.md)
-- [Lfp eq](lfp-eq.md)
-- [Lfp le](lfp-le.md)
-- [Lfp ωScott Continuous](lfp-scott-continuous.md)
-- [Lfp Hom](lfp-hom.md)
+- [Least fixed point of a Scott-continuous map](lfp.md)
+- [The least fixed point is a fixed point](lfp-eq.md)
+- [The least fixed point lies below every prefixed point](lfp-le.md)
+- [Scott continuity of the least-fixed-point operator](lfp-scott-continuous.md)
+- [The least-fixed-point operator as a Scott-continuous map](lfp-hom.md)

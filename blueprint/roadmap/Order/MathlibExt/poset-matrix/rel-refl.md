@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsPosetMatrix.rel_refl
 ---
 
-# Rel refl
+# The relation of a poset matrix is reflexive
 
-The represented relation is reflexive.
+**The relation of a poset matrix is reflexive.** If $M$ is an $n \times n$ poset matrix,
+then the relation represented by $M$ relates every index $i < n$ to itself.
 
 ## Depends on
 
-- [Is Poset Matrix](is-poset-matrix.md)
-- [Rel](rel.md)
+- [Poset matrix](is-poset-matrix.md)
+- [Relation represented by a Boolean matrix](rel.md)
 
 ## Sources
 

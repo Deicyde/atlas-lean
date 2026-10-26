@@ -33,7 +33,7 @@ The proof is Gibbs' inequality.
 - [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [Joint density of the full-covariance Gaussian mixture](joint.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

@@ -16,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Coloring Free](is-coloring-free.md)
-- [Is Coloring Homogeneous](is-coloring-homogeneous.md)
-- [Is Open Coloring](is-open-coloring.md)
+- [Free set for a coloring](is-coloring-free.md)
+- [Homogeneous set for a coloring](is-coloring-homogeneous.md)
+- [Open coloring of a topological space](is-open-coloring.md)
 
 ## Sources
 

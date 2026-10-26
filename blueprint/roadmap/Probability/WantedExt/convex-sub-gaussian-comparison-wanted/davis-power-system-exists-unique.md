@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparisonWanted.davisPowerSystem_existsUnique
 ---
 
-# Davis Power System exists Unique
+# Existence and uniqueness for the Davis–Power system
 
-Source: Davis–Power (2026), equations (3)–(6), existence and uniqueness.
+**Existence and uniqueness for the Davis–Power system.** There is exactly one quadruple
+$(a, p_0, z, c_0)$ of real numbers that is a valid solution of the Davis–Power system.
 
 ## Depends on
 
-- [Davis Power Solution](davis-power-solution.md)
-- [Is Valid](is-valid.md)
+- [Parameter quadruples of the Davis–Power system](davis-power-solution.md)
+- [Valid solutions of the Davis–Power system](is-valid.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ConvexSubGaussianComparisonWanted](../../../../sources/v2/WantedExt.md)
+- Davis–Power (2026), equations (3)–(6), existence and uniqueness.

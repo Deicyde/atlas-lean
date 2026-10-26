@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.circle1
 ---
 
-# Circle1
+# Unit circle in the plane
 
-The unit Euclidean circle `{(x, y) | x² + y² = 1}` in `ℝ²`, the source of
-the slicing disk's boundary.
+**Unit circle in the plane.** The unit Euclidean circle
+$\{(x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + y^2 = 1\}$, the source of the boundary of
+a slicing disk.
 
 ## Depends on
 

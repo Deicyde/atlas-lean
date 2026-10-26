@@ -21,7 +21,7 @@ distinct parts $a$ of $\mu$, with $r_a$ the number of parts of $\mu$ equal to $a
 ## Depends on
 
 - [The $p$-equivalence class of a multiset of parts](p-equiv-class.md)
-- [P Equiv Class Sum](p-equiv-class-sum.md)
+- [The $p$-equivalence class sum](p-equiv-class-sum.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsComplexityStable
 ---
 
-# Is Complexity Stable
+# Stable numbers for integer complexity
 
-A stable number: a positive `n` with `‖3^k n‖ = ‖n‖ + 3k` for all `k`, where `‖·‖` is
-integer complexity (`cx`, MathlibExt's `IntegerComplexity.complexity` over `ℕ`). The paper
-quantifies over `k ≥ 1`; `k = 0` is trivial.
+**Stable numbers for integer complexity.** A natural number $n$ is stable when $n > 0$ and
+$\lVert 3^k n \rVert = \lVert n \rVert + 3k$ for every natural number $k$, where $\lVert m \rVert$
+is the integer complexity of $m$.
+
+The paper quantifies over $k \ge 1$; the case $k = 0$ holds trivially.
 
 ## Depends on
 

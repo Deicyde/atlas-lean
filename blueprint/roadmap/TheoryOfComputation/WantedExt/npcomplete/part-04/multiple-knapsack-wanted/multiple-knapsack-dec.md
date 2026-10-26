@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MultipleKnapsack.multipleKnapsackDec
 ---
 
-# Multiple Knapsack Dec
+# MULTIPLE KNAPSACK as a decision problem
 
-MULTIPLE KNAPSACK as a decision problem over bitstrings.
+**MULTIPLE KNAPSACK as a decision problem.** The decision problem MULTIPLE KNAPSACK accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a feasible
+multiple-knapsack instance. Bitstrings that do not decode are rejected.
 
 ## Depends on
 
@@ -23,8 +25,8 @@ MULTIPLE KNAPSACK as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Multiple Knapsack Feasible](multiple-knapsack-feasible.md)
-- [Multiple Knapsack Instance](multiple-knapsack-instance.md)
+- [Feasible multiple-knapsack instances](multiple-knapsack-feasible.md)
+- [Multiple-knapsack instances](multiple-knapsack-instance.md)
 
 ## Sources
 

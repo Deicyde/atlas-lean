@@ -4,7 +4,7 @@ navigation: module
 
 # Open Coloring
 
-- [Is Open Coloring](is-open-coloring.md)
-- [Is Coloring Homogeneous](is-coloring-homogeneous.md)
-- [Is Coloring Free](is-coloring-free.md)
+- [Open coloring of a topological space](is-open-coloring.md)
+- [Homogeneous set for a coloring](is-coloring-homogeneous.md)
+- [Free set for a coloring](is-coloring-free.md)
 - [Open Coloring Axiom](open-coloring-axiom.md)

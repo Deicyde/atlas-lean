@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.QuadraticAssignment.WellFormed
 ---
 
-# Well Formed
+# Well-formed quadratic assignment instances
 
-Well-formedness of an instance.
+**Well-formed quadratic assignment instances.** An instance $(n, F, D, K)$ of quadratic
+assignment is well formed when the flow matrix $F$ and the distance matrix $D$ each have
+exactly $n$ rows and every row of each has length $n$.
 
 ## Depends on
 
-- [Quadratic Assignment Instance](quadratic-assignment-instance.md)
+- [Instances of QUADRATIC ASSIGNMENT](quadratic-assignment-instance.md)
 
 ## Sources
 

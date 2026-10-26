@@ -7,11 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.mk_sum_choose_mul_eq_inv_one_sub_mul_subst
 ---
 
-# Mk sum choose mul eq inv one sub mul subst
+# Generating function of the binomial transform over a field
 
-The ordinary generating function of the binomial transform `n ↦ ∑ k ≤ n, n.choose k * a k`
-of a sequence `a` over a field `K` is `(1 - X)⁻¹ * (mk a).subst (X * (1 - X)⁻¹)`.
-`ordinary_generating_function_binomial_transform` is the source-shaped form over `ℝ`.
+**Generating function of the binomial transform over a field.** Let $K$ be a field and let
+$a : \mathbb{N} \to K$ be a sequence with ordinary generating function
+$A(X) = \sum_n a_n X^n \in K[[X]]$. Then the ordinary generating function of the binomial
+transform $n \mapsto \sum_{k=0}^{n} \binom{n}{k} a_k$ of $a$ equals
+$(1 - X)^{-1} \cdot A\big(X (1 - X)^{-1}\big)$ in $K[[X]]$, where $A\big(X (1 - X)^{-1}\big)$ is
+the power series obtained by substituting $X (1 - X)^{-1}$ for $X$ in $A$.
 
 ## Depends on
 

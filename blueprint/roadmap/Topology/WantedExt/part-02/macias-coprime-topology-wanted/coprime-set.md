@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.coprimeSet
 ---
 
-# Coprime Set
+# Positive integers coprime to a given integer
 
-The paper's `Ω_n = {m ∈ ℕ : gcd(n, m) = 1}`.
+**Positive integers coprime to a given integer.** For a positive integer $n$, $\Omega_n$ is the
+set of positive integers $m$ with $\gcd(n, m) = 1$.
 
 ## Depends on
 

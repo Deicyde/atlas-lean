@@ -7,21 +7,23 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.inverseCheegerConstant_le_constant
 ---
 
-# Inverse Cheeger Constant le constant
+# Inverse Cheeger constant bounded by the KLS constant
 
-A law in positive dimension is bounded by the global KLS constant.
+**Inverse Cheeger constant bounded by the KLS constant.** For every positive integer $n$ and
+every isotropic log-concave probability measure $\mu$ on $\mathbb{R}^n$ with the Euclidean
+metric, the inverse Cheeger constant of $\mu$ is at most the KLS constant.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
-- [Kls Constant](kls-constant.md)
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Inverse Cheeger constant](inverse-cheeger-constant.md)
+- [KLS constant](kls-constant.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
 
 ## Proof depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
-- [Dimensional Kls Constant le constant](dimensional-kls-constant-le-constant.md)
-- [Inverse Cheeger Constant le dimensional](inverse-cheeger-constant-le-dimensional.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
+- [Dimensional KLS constants are bounded by the KLS constant](dimensional-kls-constant-le-constant.md)
+- [Inverse Cheeger constant bounded by the dimensional KLS constant](inverse-cheeger-constant-le-dimensional.md)
 
 ## Sources
 

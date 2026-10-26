@@ -7,19 +7,23 @@ proof: formalized
 lean: BerryEsseenConstant.bernoulliAdmissible_nonempty
 ---
 
-# Bernoulli Admissible nonempty
+# Bernoulli-admissible coefficients exist
 
-The coefficient 42 applies to the actual subclass too.
+**Bernoulli-admissible coefficients exist.** The set of real numbers $C$ that are admissible
+Berry–Esseen coefficients for the Bernoulli subclass (common Berry–Esseen coefficients for all
+standardized laws concentrated on two points and all positive sample sizes) is nonempty.
+
+The coefficient $42$, admissible for all standardized laws, is one such coefficient.
 
 ## Depends on
 
-- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+- [Admissible Berry–Esseen coefficient for two-point laws](is-bernoulli-admissible.md)
 
 ## Proof depends on
 
-- [Is Bernoulli Law](is-bernoulli-law.md)
-- [Is Admissible forty Two](is-admissible-forty-two.md)
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
+- [Standardized two-point law](is-bernoulli-law.md)
+- [The Berry–Esseen bound with coefficient 42](is-admissible-forty-two.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
 
 ## Sources
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Binomial Product
 
-- [Binomial Product](binomial-product.md)
-- [Coeff binomial Product](coeff-binomial-product.md)
-- [Constant Coeff binomial Product](constant-coeff-binomial-product.md)
+- [Binomial (Hurwitz) product of power series](binomial-product.md)
+- [Coefficients of the binomial product](coeff-binomial-product.md)
+- [Constant coefficient of the binomial product](constant-coeff-binomial-product.md)

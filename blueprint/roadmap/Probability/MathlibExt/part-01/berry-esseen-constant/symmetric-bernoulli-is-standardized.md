@@ -7,19 +7,21 @@ proof: formalized
 lean: BerryEsseenConstant.symmetricBernoulli_isStandardized
 ---
 
-# Symmetric Bernoulli is Standardized
+# The symmetric Bernoulli law is standardized
 
-The Bernoulli benchmark has the source's actual mean and variance.
+**The symmetric Bernoulli law is standardized.** The symmetric Bernoulli law, which puts mass
+$1/2$ at each of the points $-1$ and $1$, is a standardized law: it is a probability measure on
+$\mathbb{R}$ with mean $0$ and variance $1$, and it has a finite third absolute moment.
 
 ## Depends on
 
-- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
+- [Symmetric Bernoulli law](symmetric-bernoulli-law.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
 
 ## Proof depends on
 
-- [Symmetric Bernoulli integral](symmetric-bernoulli-integral.md)
-- [Symmetric Bernoulli mem Lp](symmetric-bernoulli-mem-lp.md)
+- [Integrals against the symmetric Bernoulli law](symmetric-bernoulli-integral.md)
+- [The symmetric Bernoulli law has moments of all orders](symmetric-bernoulli-mem-lp.md)
 
 ## Sources
 

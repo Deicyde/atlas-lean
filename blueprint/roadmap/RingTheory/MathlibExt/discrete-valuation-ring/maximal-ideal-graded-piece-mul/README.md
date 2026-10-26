@@ -5,7 +5,7 @@ navigation: module
 
 # Maximal Ideal Graded Piece Mul
 
-- [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)
-- [Residue Field Mul Maximal Ideal Graded Piece residue mk](residue-field-mul-maximal-ideal-graded-p-2.md)
-- [Residue Field Linear Equiv Maximal Ideal Graded Piece conj lmul](residue-field-linear-equiv-maximal-ideal.md)
-- [Trace residue Field Mul Maximal Ideal Graded Piece](trace-residue-field-mul-maximal-ideal-gr.md)
+- [Multiplication by a residue class on a graded piece](residue-field-mul-maximal-ideal-graded-p.md)
+- [Multiplication by a residue class on representatives](residue-field-mul-maximal-ideal-graded-p-2.md)
+- [The residue-field isomorphism intertwines multiplication](residue-field-linear-equiv-maximal-ideal.md)
+- [Trace of multiplication on a graded piece](trace-residue-field-mul-maximal-ideal-gr.md)

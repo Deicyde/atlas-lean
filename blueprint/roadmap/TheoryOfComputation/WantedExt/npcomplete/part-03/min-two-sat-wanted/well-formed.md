@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinTwoSat.WellFormed
 ---
 
-# Well Formed
+# Well-formed MINIMUM 2-SATISFIABILITY instances
 
-Well-formedness of an instance.
+**Well-formed MINIMUM 2-SATISFIABILITY instances.** A triple $(n, \varphi, K)$ of a natural
+number $n$, a CNF formula $\varphi$ and a natural number $K$ is well formed when every clause of
+$\varphi$ has at most two literals and every literal of every clause has variable index less than
+$n$.
 
 ## Depends on
 
-- [Min Two Sat Instance](min-two-sat-instance.md)
+- [MINIMUM 2-SATISFIABILITY instances](min-two-sat-instance.md)
 
 ## Proof depends on
 

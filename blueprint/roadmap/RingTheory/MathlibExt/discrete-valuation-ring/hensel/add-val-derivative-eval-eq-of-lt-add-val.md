@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Add Val sub le add Val eval sub](add-val-sub-le-add-val-eval-sub.md)
+- [Polynomials do not decrease the valuation of differences](add-val-sub-le-add-val-eval-sub.md)
 
 ## Sources
 

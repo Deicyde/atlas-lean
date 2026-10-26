@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SetPacking.SetPackingInstance
 ---
 
-# Set Packing Instance
+# Set-packing instances
 
-A set-packing instance: universe size, list of subsets, bound.
+**Set-packing instances.** A set-packing instance is a triple $(n, C, K)$ consisting of a
+natural number $n$, the size of the universe, a finite list $C$ of finite lists of natural numbers,
+the subsets, and a natural number $K$, the bound.
 
 ## Depends on
 

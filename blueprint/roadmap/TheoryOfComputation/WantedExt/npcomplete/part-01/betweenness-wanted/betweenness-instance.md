@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Betweenness.BetweennessInstance
 ---
 
-# Betweenness Instance
+# BETWEENNESS instances
 
-A betweenness instance: number of elements, triples.
+**BETWEENNESS instances.** An instance of BETWEENNESS is a pair $(n, T)$ of a natural number
+$n$ (the number of elements) and a list $T$ of triples of natural numbers.
 
 ## Depends on
 

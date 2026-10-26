@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.steinerberger2015ImprovedUpperBound
 ---
 
-# Steinerberger2015 Improved Upper Bound
+# Statement of Steinerberger's upper bound
 
-[S2015] improvement `β_2 ≤ 0.92117 - (9 / 16) * 10^-6`.
+**Statement of Steinerberger's upper bound.** The proposition that the
+Beardwood–Halton–Hammersley constant $\beta_2$ satisfies
+$\beta_2 \le 0.92117 - \frac{9}{16} \cdot 10^{-6}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

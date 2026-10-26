@@ -6,13 +6,16 @@ proof: formalized
 lean: PMF.toOuterMeasure_uniformFintype_apply
 ---
 
-# To Outer Measure uniform Fintype apply
+# Outer measure of an event under the uniform distribution
 
-Outer measure is the fraction of outcomes belonging to the event.
+**Outer measure of an event under the uniform distribution.** Let $\alpha$ be a nonempty finite
+type. For every subset $s \subseteq \alpha$, the outer measure associated to the uniform
+distribution on $\alpha$ assigns to $s$ the value $|s| / |\alpha|$, computed in the extended
+nonnegative reals.
 
 ## Depends on
 
-- [Uniform Fintype](uniform-fintype.md)
+- [Uniform distribution on a finite type](uniform-fintype.md)
 
 ## Sources
 

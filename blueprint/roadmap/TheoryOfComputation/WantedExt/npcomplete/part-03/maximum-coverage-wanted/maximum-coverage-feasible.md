@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumCoverage.MaximumCoverageFeasible
 ---
 
-# Maximum Coverage Feasible
+# Feasible maximum-coverage instances
 
-At most `K` sets covering at least `M` elements.
+**Feasible maximum-coverage instances.** A maximum-coverage instance $(n, S, K, M)$, with
+universe size $n$, list of subsets $S$, set budget $K$ and coverage target $M$, is feasible when
+there are a sublist $T$ of $S$ with at most $K$ entries and a list of at least $M$ pairwise
+distinct natural numbers, each less than $n$ and each belonging to some subset in $T$.
 
 ## Depends on
 
-- [Maximum Coverage Instance](maximum-coverage-instance.md)
+- [Maximum-coverage instances](maximum-coverage-instance.md)
 
 ## Sources
 

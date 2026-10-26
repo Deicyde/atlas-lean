@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.C₁₂
 ---
 
-# C₁₂
+# Notation C₁₂ for the BHH constant
 
-The source notation `C_12`, definitionally equal to `β_2`.
+**Notation C₁₂ for the BHH constant.** The constant $C_{12}$ is defined to be the
+Beardwood–Halton–Hammersley constant $\beta_2$ for uniform points in the unit square; $C_{12}$ is
+the name the source uses for it.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Β₂](untitled.md)
+- [The notation $\beta_2$](untitled.md)
 
 ## Sources
 

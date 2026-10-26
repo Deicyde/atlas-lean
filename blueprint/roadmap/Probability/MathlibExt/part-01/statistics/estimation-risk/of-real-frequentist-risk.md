@@ -6,16 +6,22 @@ proof: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.ofReal_frequentistRisk
 ---
 
-# Of Real frequentist Risk
+# Finite and extended frequentist risk agree
 
-On the finite domain, the extended bridge agrees with the source finite
-risk value. Blueprint `af_36871388da7326a07a5e4f71`.
+**Finite and extended frequentist risk agree.** Let $\Theta$ and $A$ be sets, let
+$(P_\vartheta)_{\vartheta \in \Theta}$ be a family of probability measures on a measurable space
+$S$, let $\delta : S \to A$ be a decision rule and $\ell : \Theta \times A \to [0, \infty)$ a
+loss, and suppose $x \mapsto \ell(\vartheta, \delta(x))$ is $P_\vartheta$-integrable for every
+$\vartheta \in \Theta$. Then for every $\theta \in \Theta$ the extended frequentist risk
+$\int_S \ell(\theta, \delta(x)) \, dP_\theta(x)$, computed in $[0, \infty]$, is finite and equals
+the frequentist risk of $\delta$ at $\theta$.
 
 ## Depends on
 
-- [Frequentist Risk](frequentist-risk.md)
-- [Frequentist Risk ENN](frequentist-risk-enn.md)
+- [Frequentist risk](frequentist-risk.md)
+- [Extended frequentist risk](frequentist-risk-enn.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- blueprint `af_36871388da7326a07a5e4f71`.

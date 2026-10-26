@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.constantCoeff_binomialProduct
 ---
 
-# Constant Coeff binomial Product
+# Constant coefficient of the binomial product
 
-The constant coefficient of a binomial product is the product of the constant coefficients.
+**Constant coefficient of the binomial product.** Let $K$ be a commutative ring. For formal
+power series $A$ and $B$ over $K$, the constant coefficient of the binomial product of $A$ and
+$B$ is the product of the constant coefficients of $A$ and $B$.
 
 ## Depends on
 
-- [Binomial Product](binomial-product.md)
+- [Binomial (Hurwitz) product of power series](binomial-product.md)
 
 ## Sources
 

@@ -7,9 +7,12 @@ proof: formalized
 lean: ClassGroup.exists_mk0_eq_and_isCoprime
 ---
 
-# Exists mk0 eq and is Coprime
+# Ideal classes have representatives coprime to a given ideal
 
-Every ideal class has an integral representative coprime to any prescribed nonzero ideal.
+**Ideal classes have representatives coprime to a given ideal.** Let $A$ be a
+Dedekind domain and let $\mathfrak{a}$ be a nonzero ideal of $A$. Then every class $c$ in the
+ideal class group of $A$ is the class of some nonzero ideal $K$ of $A$ with
+$K + \mathfrak{a} = A$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Coprime mul is Principal](exists-is-coprime-mul-is-principal.md)
+- [Making an ideal principal with a factor coprime to a given ideal](exists-is-coprime-mul-is-principal.md)
 
 ## Sources
 

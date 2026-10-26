@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.rot
 ---
 
-# Rot
+# Rotation of a dart
 
-Rotate a dart one step counterclockwise around its crossing.
+**Rotation of a dart.** For a dart diagram $D$, the rotation of a dart $(v, i)$ of $D$, with
+$v$ a crossing and $i \in \mathbb{Z}/4$, is the dart $(v, i + 1)$: one step counterclockwise
+around the crossing $v$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
-- [Dart](dart.md)
+- [Dart diagram](dart-diagram.md)
+- [Darts of a dart diagram](dart.md)
 
 ## Sources
 

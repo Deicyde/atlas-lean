@@ -5,7 +5,7 @@ navigation: module
 # Quadrisecant
 
 - [Period](period.md)
-- [Standard Circle](standard-circle.md)
-- [Is Unknotted](is-unknotted.md)
-- [Has Quadrisecant](has-quadrisecant.md)
-- [Smooth knot has quadrisecant](smooth-knot-has-quadrisecant.md)
+- [Standard circle](standard-circle.md)
+- [Unknotted knot](is-unknotted.md)
+- [Quadrisecant of a knot](has-quadrisecant.md)
+- [Quadrisecant theorem (Pannwitz–Kuperberg)](smooth-knot-has-quadrisecant.md)

@@ -6,26 +6,29 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.projPoint_overPoint
 ---
 
-# Proj Point over Point
+# The over-strand preimage lies over its crossing
 
-The over preimage projects to the crossing point.
+**The over-strand preimage lies over its crossing.** Let $L$ be a parametrized link whose
+standard projection is regular, and let $p$ be a crossing of $L$, that is, a point of the
+double-point set of its projection. Then the projected point of the over-strand parameter point
+at $p$ is $p$.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
 - [Crossing](crossing.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Double Point Set](double-point-set.md)
-- [Over Point](over-point.md)
-- [Proj Point](proj-point.md)
-- [R2](r2.md)
+- [Regular projections](is-regular-projection.md)
+- [Double points of a link projection](double-point-set.md)
+- [Over-strand preimage of a crossing](over-point.md)
+- [Projected point of a link at a parameter point](proj-point.md)
+- [Euclidean plane](r2.md)
 
 ## Proof depends on
 
-- [Is Over Point](is-over-point.md)
-- [Exists Unique is Over Point](exists-unique-is-over-point.md)
-- [Height At](height-at.md)
-- [Param Point](param-point.md)
+- [Being the over-strand preimage of a crossing](is-over-point.md)
+- [The over-strand preimage exists and is unique](exists-unique-is-over-point.md)
+- [Height of a parameter point](height-at.md)
+- [Parameter point](param-point.md)
 
 ## Sources
 

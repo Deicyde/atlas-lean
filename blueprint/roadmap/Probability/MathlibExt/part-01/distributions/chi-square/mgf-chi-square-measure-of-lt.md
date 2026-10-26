@@ -7,17 +7,19 @@ proof: formalized
 lean: ProbabilityTheory.mgf_chiSquareMeasure_of_lt
 ---
 
-# Mgf chi Square Measure of lt
+# Moment generating function of the chi-square distribution
 
-MGF of a chi-square law below `1/2`.
+**Moment generating function of the chi-square distribution.** Let $p$ be a positive integer
+and let $\chi^2_p$ be the chi-square law with $p$ degrees of freedom. For every real $t < 1/2$,
+$\int_{\mathbb{R}} e^{t x} \, d\chi^2_p(x) = \left(\frac{1/2}{1/2 - t}\right)^{p/2}$.
 
 ## Depends on
 
-- [Chi Square Measure](chi-square-measure.md)
+- [Chi-square distribution](chi-square-measure.md)
 
 ## Proof depends on
 
-- [Mgf gamma Measure of lt](../gamma/mgf-gamma-measure-of-lt.md)
+- [Moment generating function of the gamma distribution](../gamma/mgf-gamma-measure-of-lt.md)
 
 ## Sources
 

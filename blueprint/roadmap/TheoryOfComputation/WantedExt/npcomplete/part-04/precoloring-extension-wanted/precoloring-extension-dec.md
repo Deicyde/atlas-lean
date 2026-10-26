@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.precoloringExtensionDec
 ---
 
-# Precoloring Extension Dec
+# PRECOLORING EXTENSION as a decision problem
 
-PRECOLORING EXTENSION as a decision problem over bitstrings.
+**PRECOLORING EXTENSION as a decision problem.** The decision problem PRECOLORING EXTENSION
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
+precoloring extension instance that is well formed and feasible; bitstrings that do not decode
+are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ PRECOLORING EXTENSION as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Precoloring Extension Feasible](precoloring-extension-feasible.md)
-- [Precoloring Extension Instance](precoloring-extension-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible precoloring extension instances](precoloring-extension-feasible.md)
+- [Instances of PRECOLORING EXTENSION](precoloring-extension-instance.md)
+- [Well-formed precoloring extension instances](well-formed.md)
 
 ## Sources
 

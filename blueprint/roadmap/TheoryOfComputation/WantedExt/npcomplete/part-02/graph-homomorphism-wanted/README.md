@@ -4,9 +4,9 @@ navigation: module
 
 # Graph Homomorphism
 
-- [Graph Homomorphism Instance](graph-homomorphism-instance.md)
-- [Graph Target](graph-target.md)
-- [Well Formed](well-formed.md)
-- [Graph Homomorphism Feasible](graph-homomorphism-feasible.md)
-- [Graph Homomorphism Dec](graph-homomorphism-dec.md)
+- [Graph-homomorphism instances](graph-homomorphism-instance.md)
+- [Target graph of a graph-homomorphism instance](graph-target.md)
+- [Well-formed graph-homomorphism instances](well-formed.md)
+- [Feasible graph-homomorphism instances](graph-homomorphism-feasible.md)
+- [GRAPH HOMOMORPHISM as a decision problem](graph-homomorphism-dec.md)
 - [GRAPH HOMOMORPHISM is NP-complete](graph-homomorphism-np-complete.md)

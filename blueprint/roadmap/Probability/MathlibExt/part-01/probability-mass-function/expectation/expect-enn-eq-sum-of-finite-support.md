@@ -6,15 +6,18 @@ proof: formalized
 lean: PMF.expectENN_eq_sum_of_finite_support
 ---
 
-# Expect ENN eq sum of finite support
+# Extended expectation under a finitely supported distribution
 
-If all the mass of `p` lies in a finite set `s`, the extended
-expectation is the finite sum over `s`, with no finiteness assumption on
-the ambient type.
+**Extended expectation under a finitely supported distribution.** Let $p$ be a probability
+mass function on a set $\alpha$, and let $s \subseteq \alpha$ be a finite set with $p(a) = 0$ for
+every $a \notin s$. For every $f : \alpha \to [0, \infty]$, the extended expectation of $f$
+under $p$ equals $\sum_{a \in s} p(a)\, f(a)$.
+
+The set $\alpha$ itself need not be finite.
 
 ## Depends on
 
-- [Expect ENN](expect-enn.md)
+- [Extended expectation](expect-enn.md)
 
 ## Sources
 

@@ -7,12 +7,15 @@ proof: formalized
 lean: MathlibExt.Probability.HewittSavageWanted.hewitt_savage_zero_one_general
 ---
 
-# Hewitt savage zero one general
+# Hewitt–Savage zero–one law
 
-The Hewitt–Savage zero–one law for an arbitrary measurable space: if `μ` is a probability
-measure on `S` and `E : Set (ℕ → S)` is measurable and invariant under every finitely supported
-permutation of `ℕ`, then `Measure.infinitePi (fun _ => μ) E = 0` or `1`.
-`hewitt_savage_zero_one` is the source-shaped form.
+**Hewitt–Savage zero–one law.** Let $\mu$ be a probability measure on a measurable space $S$,
+and let $E \subseteq S^{\mathbb{N}}$ be a set that is measurable for the product σ-algebra and
+invariant under every finitely supported permutation $\sigma$ of $\mathbb{N}$, that is,
+$\{\omega : \omega \circ \sigma \in E\} = E$ whenever $\sigma$ moves only finitely many points.
+Then $E$ has measure $0$ or $1$ under the product measure $\mu^{\otimes \mathbb{N}}$.
+
+No topological assumption on $S$ is needed.
 
 ## Depends on
 

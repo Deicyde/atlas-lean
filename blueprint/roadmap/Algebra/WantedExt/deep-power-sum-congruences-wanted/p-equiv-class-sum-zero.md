@@ -13,7 +13,7 @@ natural number $p$, the $p$-equivalence class sum of the empty multiset is $g_\e
 
 ## Depends on
 
-- [P Equiv Class Sum](p-equiv-class-sum.md)
+- [The $p$-equivalence class sum](p-equiv-class-sum.md)
 
 ## Proof depends on
 

@@ -4,11 +4,11 @@ navigation: module
 
 # Diversity Statistics
 
-- [Gini Simpson Count](gini-simpson-count.md)
-- [Shannon Count](shannon-count.md)
-- [Proposition 4](gini-simpson-count-le.md)
-- [Proposition 5](gini-simpson-count-ge-triangular.md)
-- [Proposition 6](gini-simpson-count-ge.md)
-- [Proposition 7](gini-simpson-count-asymp.md)
-- [Proposition 8](shannon-count-le.md)
-- [Theorem 9](shannon-count-superpolynomial.md)
+- [Number of values of the Gini–Simpson index](gini-simpson-count.md)
+- [Number of values of the Shannon index](shannon-count.md)
+- [Upper bound on the number of Gini–Simpson values](gini-simpson-count-le.md)
+- [Triangular-number lower bound on the number of Gini–Simpson values](gini-simpson-count-ge-triangular.md)
+- [Quadratic lower bound on the number of Gini–Simpson values](gini-simpson-count-ge.md)
+- [Asymptotics of the number of Gini–Simpson values](gini-simpson-count-asymp.md)
+- [Upper bound on the number of Shannon values](shannon-count-le.md)
+- [The number of Shannon values grows faster than every polynomial](shannon-count-superpolynomial.md)

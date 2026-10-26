@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.AsphericalHomologySphereWanted.Topology.intHomology
 ---
 
-# Int Homology
+# Integral singular homology as a $\mathbb{Z}$-module
 
-`Hₖ(X; ℤ)`, the `k`-th singular homology with integer coefficients, as an
-object of `ModuleCat ℤ`.
+**Integral singular homology as a $\mathbb{Z}$-module.** For a natural number $k$ and a
+topological space $X$, $H_k(X; \mathbb{Z})$ is the $k$-th singular homology of $X$ with
+coefficients in $\mathbb{Z}$, viewed as a $\mathbb{Z}$-module.
 
 ## Depends on
 

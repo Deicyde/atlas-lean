@@ -7,21 +7,26 @@ proof: formalized
 lean: BerryEsseenModel.normalized_cdf_eq
 ---
 
-# Normalized cdf eq
+# CDF of the normalized sum
 
-The model CDF is exactly the probability of the source's non-strict event.
+**CDF of the normalized sum.** Let $\mu$ be a standardized law on $\mathbb{R}$
+(a probability measure with mean $0$, variance $1$ and finite third absolute moment), let $n$ be
+a positive integer and let $x \in \mathbb{R}$. Then the cumulative distribution function of the
+normalized law of $\mu$ at $n$, evaluated at $x$, equals the probability under the i.i.d. law
+$\mu^{\otimes \mathbb{N}}$ on $\mathbb{R}^{\mathbb{N}}$ of the event
+$\{\omega \in \mathbb{R}^{\mathbb{N}} : (\omega_0 + \dots + \omega_{n-1})/\sqrt{n} \le x\}$.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Iid Law](iid-law.md)
-- [Normalized Law](normalized-law.md)
-- [Normalized Sum](normalized-sum.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [I.i.d. product law](iid-law.md)
+- [Law of the normalized sum](normalized-law.md)
+- [Normalized sum](normalized-sum.md)
 
 ## Proof depends on
 
-- [Normalized Law probability](normalized-law-probability.md)
-- [Normalized Sum measurable](normalized-sum-measurable.md)
+- [The normalized law is a probability measure](normalized-law-probability.md)
+- [Measurability of the normalized sum](normalized-sum-measurable.md)
 
 ## Sources
 

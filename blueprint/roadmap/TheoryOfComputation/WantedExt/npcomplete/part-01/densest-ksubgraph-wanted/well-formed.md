@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DensestKSubgraph.WellFormed
 ---
 
-# Well Formed
+# Well-formed DENSEST k-SUBGRAPH instances
 
-Well-formedness of an instance.
+**Well-formed DENSEST k-SUBGRAPH instances.** An instance $(n, E, k, m)$ of DENSEST
+k-SUBGRAPH is well formed when the list $E$ has no repeated entries and every pair $(u, v)$ in
+$E$ satisfies $u < n$, $v < n$ and $u \ne v$, with the reversed pair $(v, u)$ not in $E$.
 
 ## Depends on
 
-- [Densest KSubgraph Instance](densest-ksubgraph-instance.md)
+- [Instances of DENSEST k-SUBGRAPH](densest-ksubgraph-instance.md)
 
 ## Sources
 

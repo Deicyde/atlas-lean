@@ -6,9 +6,10 @@ statement: formalized
 lean: Metric.IsGromovHyperbolic
 ---
 
-# Is Gromov Hyperbolic
+# Gromov-hyperbolic spaces
 
-A pseudometric space is Gromov-hyperbolic if it is `δ`-hyperbolic for some `δ`.
+**Gromov-hyperbolic spaces.** A pseudometric space $X$ is Gromov-hyperbolic if there is a
+real number $\delta$ such that $X$ is $\delta$-hyperbolic.
 
 ## Depends on
 

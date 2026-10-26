@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparison.one_le_comparisonConstant
 ---
 
-# One le comparison Constant
+# The comparison constant is at least one
 
-The Gaussian lower bound also holds if the comparator family is empty.
+**The comparison constant is at least one.** The convex sub-Gaussian comparison constant is
+at least $1$. This holds also when no admissible comparison constant exists, in which case the
+constant is $\infty$.
 
 ## Depends on
 
-- [Comparison Constant](comparison-constant.md)
+- [The convex sub-Gaussian comparison constant](comparison-constant.md)
 
 ## Proof depends on
 
 - [Is Admissible Constant](is-admissible-constant.md)
-- [One le of is Admissible Constant](one-le-of-is-admissible-constant.md)
+- [Admissible comparison constants are at least one](one-le-of-is-admissible-constant.md)
 
 ## Sources
 

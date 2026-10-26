@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.MartinAxiom
 ---
 
-# Martin Axiom
+# Martin's axiom
 
-MA(κ) is the statement that for any ccc poset (P,≤), for any sequence (D_α : α<κ') of dense
-subsets of the partial order for some κ'≤ κ, for any condition p∈ P, there is a filter G meeting all
-D_α's and p∈ G.
+**Martin's axiom.** For a cardinal $\kappa$, $\mathrm{MA}(\kappa)$ is the statement that for
+every partial order $P$ with the countable chain condition, every family $\mathcal{D}$ of at most
+$\kappa$ dense subsets of $P$ and every $p \in P$, there is a filter $G$ on $P$ with $p \in G$
+that meets every member of $\mathcal{D}$. Here $D \subseteq P$ is dense if every element of $P$
+has an element of $D$ below it, and a filter is a nonempty upward closed subset of $P$ any two
+of whose elements have a common lower bound in it.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is CCC](is-ccc.md)
+- [Countable chain condition](is-ccc.md)
 
 ## Sources
 

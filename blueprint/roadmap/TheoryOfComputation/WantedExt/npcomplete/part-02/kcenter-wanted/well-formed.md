@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.KCenter.WellFormed
 ---
 
-# Well Formed
+# Well-formed k-center instances
 
-Well-formedness of an instance.
+**Well-formed k-center instances.** A k-center instance $(D, K, B)$ is well formed when all
+rows of $D$ have the same length.
 
 ## Depends on
 
-- [KCenter Instance](kcenter-instance.md)
+- [k-center instances](kcenter-instance.md)
 
 ## Sources
 

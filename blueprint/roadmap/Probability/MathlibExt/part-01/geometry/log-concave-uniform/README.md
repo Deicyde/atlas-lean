@@ -5,5 +5,5 @@ navigation: module
 
 # Log Concave Uniform
 
-- [Is Log Concave Density indicator const](is-log-concave-density-indicator-const.md)
-- [Cond eq with Density indicator](cond-eq-with-density-indicator.md)
+- [Constant densities on convex sets are log-concave](is-log-concave-density-indicator-const.md)
+- [Conditioning on a set is the normalized indicator density](cond-eq-with-density-indicator.md)

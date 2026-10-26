@@ -5,9 +5,9 @@ navigation: module
 
 # Quantile
 
-- [Cdf Quantile](cdf-quantile.md)
-- [Cdf Quantile mem](cdf-quantile-mem.md)
+- [Quantile function of a real measure](cdf-quantile.md)
+- [The cdf at the quantile is at least the level](cdf-quantile-mem.md)
 - [Cdf Quantile le iff](cdf-quantile-le-iff.md)
-- [Cdf Quantile mono On](cdf-quantile-mono-on.md)
-- [Measurable cdf Quantile](measurable-cdf-quantile.md)
-- [Map cdf Quantile restrict Icc](map-cdf-quantile-restrict-icc.md)
+- [Monotonicity of the quantile function](cdf-quantile-mono-on.md)
+- [Measurability of the quantile function](measurable-cdf-quantile.md)
+- [Inverse transform sampling](map-cdf-quantile-restrict-icc.md)

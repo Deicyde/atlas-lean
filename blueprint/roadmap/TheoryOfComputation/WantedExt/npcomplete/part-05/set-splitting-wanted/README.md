@@ -4,8 +4,8 @@ navigation: module
 
 # Set Splitting
 
-- [Set Splitting Instance](set-splitting-instance.md)
-- [Well Formed](well-formed.md)
-- [Set Splitting Feasible](set-splitting-feasible.md)
-- [Set Splitting Dec](set-splitting-dec.md)
+- [Set-splitting instances](set-splitting-instance.md)
+- [Well-formed set-splitting instances](well-formed.md)
+- [Feasible set-splitting instances](set-splitting-feasible.md)
+- [The SET SPLITTING decision problem](set-splitting-dec.md)
 - [SET SPLITTING is NP-complete](set-splitting-np-complete.md)

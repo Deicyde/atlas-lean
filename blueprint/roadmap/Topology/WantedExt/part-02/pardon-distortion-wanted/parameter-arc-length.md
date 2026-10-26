@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.PardonDistortionWanted.KnotTheory.PardonDistortion.parameterArcLength
 ---
 
-# Parameter Arc Length
+# Arc length between two parameters
 
-Arclength of the parametrized arc between `s` and `t`.  The absolute value
-makes this independent of the order of the endpoints.
+**Arc length between two parameters.** For a knot $K$ with parametrization $\gamma$ and real
+numbers $s$ and $t$, the arc length of $K$ between $s$ and $t$ is
+$\left| \int_s^t \lVert \gamma'(u) \rVert \, du \right|$, the length of the arc that $\gamma$ traces
+between the parameters $s$ and $t$. It does not depend on the order of $s$ and $t$.
 
 ## Depends on
 
-- [Knot](../../part-01/conway-knot-shared/knot.md)
+- [Oriented smooth knot](../../part-01/conway-knot-shared/knot.md)
 
 ## Proof depends on
 
-- [Speed](speed.md)
+- [Speed of a knot](speed.md)
 
 ## Sources
 

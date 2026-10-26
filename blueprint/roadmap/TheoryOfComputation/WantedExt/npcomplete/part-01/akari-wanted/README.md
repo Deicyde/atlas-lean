@@ -4,9 +4,9 @@ navigation: module
 
 # Akari
 
-- [Akari Instance](akari-instance.md)
-- [Illuminates](illuminates.md)
-- [Well Formed](well-formed.md)
-- [Akari Feasible](akari-feasible.md)
-- [Akari Dec](akari-dec.md)
+- [Akari boards](akari-instance.md)
+- [Illumination on an Akari board](illuminates.md)
+- [Well-formed Akari boards](well-formed.md)
+- [Feasible Akari boards](akari-feasible.md)
+- [The Akari decision problem](akari-dec.md)
 - [AKARI (LIGHT UP) is NP-complete](akari-np-complete.md)

@@ -7,14 +7,15 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.dimensionalKlsConstant_le_constant
 ---
 
-# Dimensional Kls Constant le constant
+# Dimensional KLS constants are bounded by the KLS constant
 
-Each positive dimension contributes its actual supremum to the global constant.
+**Dimensional KLS constants are bounded by the KLS constant.** For every positive integer
+$n$, the dimensional KLS constant in dimension $n$ is at most the KLS constant.
 
 ## Depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
-- [Kls Constant](kls-constant.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
+- [KLS constant](kls-constant.md)
 
 ## Sources
 

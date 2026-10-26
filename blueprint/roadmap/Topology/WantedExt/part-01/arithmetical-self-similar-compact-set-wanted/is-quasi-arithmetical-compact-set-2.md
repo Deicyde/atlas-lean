@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.IsArithmeticalCompactSet.isQuasiArithmeticalCompactSet
 ---
 
-# Is Quasi Arithmetical Compact Set
+# Arithmetical compact sets are quasi-arithmetical
 
-Characteristic lemma: an arithmetical compact set is quasi-arithmetical with the same
-module and ratio.
+**Arithmetical compact sets are quasi-arithmetical.** If $K \subseteq \mathbb{R}$ is an
+arithmetical compact set of module $\mu$ and ratio $\rho$, then $K$ is a quasi-arithmetical
+compact set of module $\mu$ and ratio $\rho$.
 
 ## Depends on
 
-- [Is Arithmetical Compact Set](is-arithmetical-compact-set.md)
-- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+- [Arithmetical compact sets](is-arithmetical-compact-set.md)
+- [Quasi-arithmetical compact sets](is-quasi-arithmetical-compact-set.md)
 
 ## Proof depends on
 
-- [Self Similar Layer](self-similar-layer.md)
-- [Stability Gauge](stability-gauge.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
+- [Stability gauge](stability-gauge.md)
 
 ## Sources
 

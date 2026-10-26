@@ -39,7 +39,7 @@ and strategy-proof is dictatorial.
 - [Relation of a strict preference order](lt.md)
 - [Strict preferences in the Gibbard–Satterthwaite setting are total](total.md)
 - [Transitivity of strict preferences in the Gibbard–Satterthwaite setting](trans.md)
-- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

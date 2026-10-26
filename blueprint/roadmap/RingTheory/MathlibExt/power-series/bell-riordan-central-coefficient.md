@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.bell_riordan_central_coefficient
 ---
 
-# Bell Riordan Central Coefficient
+# Central coefficients of Bell matrices
 
-Central coefficients of Bell-subgroup Riordan matrices: for the Bell matrix
-`(g(X), X*g(X))`, the entry in row `2*n` and column `n` equals `(n+1)`
-times the degree-`(n+1)` coefficient of the compositional inverse `u` of
-`X / g(X)`.
+**Central coefficients of Bell matrices.** Let $g \in \mathbb{Z}[[X]]$ be the power series of a
+Bell matrix over $\mathbb{Z}$, with constant coefficient $g(0) = 1$, and let
+$u \in \mathbb{Z}[[X]]$ be a power series with constant coefficient $0$ such that substituting
+$u$ for $X$ in $X \, g(X)^{-1}$ gives $X$. Then for every natural number $n$, the entry of the
+Bell matrix in row $2n$ and column $n$ equals $(n+1)$ times the coefficient of $X^{n+1}$ in $u$.
 
-The paper's `[x^n] (1/x) u(x)` is rendered as `coeff (n+1) u`, and
-`T_{2n,n} = [x^{2n}] g*(X*g)^n` follows the paper's proof.
+The source writes the right-hand side as $(n+1)\,[x^n]\,\tfrac{1}{x} u(x)$.
 
 ## Depends on
 
@@ -24,7 +24,7 @@ The paper's `[x^n] (1/x) u(x)` is rendered as `coeff (n+1) u`, and
 
 ## Proof depends on
 
-- [Fps lagrange burmann coeff'](lagrange-burmann-coefficient/fps-lagrange-burmann-coeff.md)
+- [Lagrange–Bürmann formula from the fixed-point equation alone](lagrange-burmann-coefficient/fps-lagrange-burmann-coeff.md)
 
 ## Sources
 

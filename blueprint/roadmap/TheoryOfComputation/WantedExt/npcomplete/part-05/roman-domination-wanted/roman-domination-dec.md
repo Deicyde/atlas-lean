@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.RomanDomination.romanDominationDec
 ---
 
-# Roman Domination Dec
+# ROMAN DOMINATION as a decision problem
 
-ROMAN DOMINATION as a decision problem over bitstrings.
+**ROMAN DOMINATION as a decision problem.** The decision problem ROMAN DOMINATION accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to an instance
+$(n, E, K)$ of ROMAN DOMINATION that is well formed and feasible; it rejects every other
+bitstring.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ ROMAN DOMINATION as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Roman Domination Feasible](roman-domination-feasible.md)
-- [Roman Domination Instance](roman-domination-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible Roman domination instances](roman-domination-feasible.md)
+- [Roman domination instances](roman-domination-instance.md)
+- [Well-formed Roman domination instances](well-formed.md)
 
 ## Sources
 

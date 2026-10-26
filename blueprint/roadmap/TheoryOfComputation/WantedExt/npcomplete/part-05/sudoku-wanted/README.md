@@ -4,8 +4,8 @@ navigation: module
 
 # Sudoku
 
-- [Sudoku Instance](sudoku-instance.md)
-- [Well Formed](well-formed.md)
-- [Sudoku Feasible](sudoku-feasible.md)
-- [Sudoku Dec](sudoku-dec.md)
+- [Sudoku instances](sudoku-instance.md)
+- [Well-formed Sudoku instances](well-formed.md)
+- [Feasible Sudoku instances](sudoku-feasible.md)
+- [SUDOKU as a decision problem](sudoku-dec.md)
 - [SUDOKU is NP-complete](sudoku-np-complete.md)

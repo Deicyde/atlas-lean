@@ -6,12 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.IsPosetMatrix
 ---
 
-# Is Poset Matrix
+# Poset matrix
 
-Upper-triangular `(0, 1)`-poset matrix (concept `jis_sem_b6df1a00e0451f0892d6d4dd`):
-a square Boolean matrix `M` over `Fin n` with false entries strictly below the
-main diagonal (D2), true entries on the main diagonal (D3), and transitivity of
-the true entries (D4): `M i j = true` and `M j k = true` imply `M i k = true`.
+**Poset matrix.** An $n \times n$ Boolean matrix $M$, with rows and columns indexed by
+$\{0, \dots, n-1\}$, is an upper-triangular $(0, 1)$-poset matrix when its entries strictly
+below the main diagonal are false ($M_{ij}$ is false whenever $j < i$), its diagonal entries
+$M_{ii}$ are true, and its true entries are transitive: if $M_{ij}$ and $M_{jk}$ are true,
+then $M_{ik}$ is true.
 
 ## Depends on
 

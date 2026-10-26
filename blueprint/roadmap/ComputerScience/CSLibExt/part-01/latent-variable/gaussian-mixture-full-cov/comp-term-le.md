@@ -34,8 +34,8 @@ $$\sum_n r_{nk} \log \mathcal{N}(x_n \mid \mu, S) \le
 - [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [Joint density of the full-covariance Gaussian mixture](joint.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
-- [The weighted Gaussian MLE](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-4.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [The weighted Gaussian MLE for points in general position](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-4.md)
 
 ## Sources
 

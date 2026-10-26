@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct
 ---
 
-# Binomial Product
+# Binomial (Hurwitz) product of power series
 
-The binomial (Hurwitz) product of formal power series:
-`(∑ aₙ xⁿ) ⊙ (∑ bₙ xⁿ) = ∑ cₙ xⁿ` with `cₙ = ∑_{k=0}^n binom(n, k) a_k b_{n-k}`.
+**Binomial (Hurwitz) product of power series.** Let $K$ be a commutative ring. The binomial
+product of formal power series $A = \sum_n a_n X^n$ and $B = \sum_n b_n X^n$ in $K[[X]]$ is the
+power series $\sum_n c_n X^n$ with $c_n = \sum_{k=0}^{n} \binom{n}{k} a_k b_{n-k}$.
 
 ## Depends on
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: BerryEsseenModel.standardGaussian_isStandardized
 ---
 
-# Standard Gaussian is Standardized
+# The standard Gaussian is a standardized law
 
-A nondegenerate actual Gaussian belongs to the source domain.
+**The standard Gaussian is a standardized law.** The standard normal law $N(0,1)$ on
+$\mathbb{R}$ is a standardized law: it is a probability measure with mean $0$, variance $1$ and
+finite third absolute moment.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
 
 ## Sources
 

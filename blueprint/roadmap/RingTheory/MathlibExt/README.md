@@ -22,6 +22,6 @@ navigation: collection
 - [Spectrum](spectrum/README.md)
 - [Conductor Ideal](conductor-ideal/README.md)
 - [Conductor Residue](conductor-residue/README.md)
-- [Pi Field Decomposition](exists-index-equiv-alg-equiv.md)
+- [Uniqueness of a finite product of fields up to permutation](exists-index-equiv-alg-equiv.md)
 - [Pi Field Quotient](pi-field-quotient/README.md)
 - [Zero Divisor Graph](zero-divisor-graph/README.md)

@@ -6,16 +6,16 @@ statement: formalized
 lean: IsDiscreteValuationRing.residueFieldMulMaximalIdealGradedPiece
 ---
 
-# Residue Field Mul Maximal Ideal Graded Piece
+# Multiplication by a residue class on a graded piece
 
-Multiplication by a residue-field scalar on the `i`-th maximal-ideal graded
-piece, as a `κ`-linear endomorphism. This is new prerequisite support for the
-corrected ATLAS N261 filtered-trace route (whose graded-piece trace statement
-is proved below), not a source theorem.
+**Multiplication by a residue class on a graded piece.** Let $R$ be a discrete valuation ring
+with maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$. For $a \in \kappa$
+and $i \in \mathbb{N}$, this is the $\kappa$-linear endomorphism $x \mapsto a x$ of the graded
+piece $\mathfrak{m}^i/\mathfrak{m}^{i+1}$.
 
 ## Depends on
 
-- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Graded pieces of the maximal-ideal filtration](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
 
 ## Sources
 

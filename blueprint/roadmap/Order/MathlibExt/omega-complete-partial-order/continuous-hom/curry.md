@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [ΩScott Continuous of apply](scott-continuous-of-apply.md)
+- [Scott continuity into a function space is checked pointwise](scott-continuous-of-apply.md)
 
 ## Sources
 

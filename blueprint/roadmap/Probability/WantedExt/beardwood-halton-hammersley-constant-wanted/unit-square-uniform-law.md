@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.unitSquareUniformLaw
 ---
 
-# Unit Square Uniform Law
+# Uniform law on the unit square
 
-Lebesgue measure restricted to the source's unit square.
+**Uniform law on the unit square.** Lebesgue measure on the Euclidean plane restricted to the
+closed unit square $[0,1]^2$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ Lebesgue measure restricted to the source's unit square.
 
 ## Proof depends on
 
-- [Unit Square](unit-square.md)
+- [Unit square](unit-square.md)
 
 ## Sources
 

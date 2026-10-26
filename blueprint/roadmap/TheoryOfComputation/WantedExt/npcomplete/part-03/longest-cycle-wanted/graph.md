@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCycle.Graph
 ---
 
-# Graph
+# Graph of a LONGEST CYCLE instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a LONGEST CYCLE instance.** For an instance $(n, E, K)$ of LONGEST CYCLE, its graph
+is the simple graph on $\{0, \dots, n-1\}$ in which distinct vertices $i$ and $j$ are adjacent
+when $(i, j)$ or $(j, i)$ belongs to $E$. Loops are dropped, and pairs with an endpoint at least
+$n$ contribute no edge.
 
 ## Depends on
 
-- [Longest Cycle Instance](longest-cycle-instance.md)
+- [Instances of LONGEST CYCLE](longest-cycle-instance.md)
 
 ## Proof depends on
 

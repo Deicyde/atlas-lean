@@ -5,5 +5,5 @@ navigation: module
 
 # Baire Space Characterization
 
-- [Is Zero Dimensional Space](is-zero-dimensional-space.md)
-- [Baire space characterization](baire-space-characterization.md)
+- [Zero-dimensional space](is-zero-dimensional-space.md)
+- [Alexandrov–Urysohn theorem on Baire space](baire-space-characterization.md)

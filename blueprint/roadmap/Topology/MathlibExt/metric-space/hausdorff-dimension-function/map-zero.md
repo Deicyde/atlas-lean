@@ -7,13 +7,14 @@ proof: formalized
 lean: HausdorffDimensionFunction.map_zero
 ---
 
-# Map zero
+# A Hausdorff dimension function vanishes at zero
 
-Value at zero.
+**A Hausdorff dimension function vanishes at zero.** Every Hausdorff dimension function
+$\psi$ satisfies $\psi(0) = 0$.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Sources
 

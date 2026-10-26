@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.FeedbackArcSet.WellFormed
 ---
 
-# Well Formed
+# Well-formed FEEDBACK ARC SET instances
 
-Well-formedness of an instance.
+**Well-formed FEEDBACK ARC SET instances.** An instance $(n, E, K)$ of FEEDBACK ARC SET is
+well formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ satisfies
+$u < n$, $v < n$ and $u \ne v$; that is, $E$ lists distinct arcs, without loops, of a directed
+graph on the vertices $0, \dots, n-1$.
 
 ## Depends on
 
-- [Feedback Arc Set Instance](feedback-arc-set-instance.md)
+- [Instances of FEEDBACK ARC SET](feedback-arc-set-instance.md)
 
 ## Sources
 

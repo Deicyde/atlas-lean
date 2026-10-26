@@ -22,7 +22,7 @@ such fractional ideal to its ideal class, is surjective.
 
 ## Proof depends on
 
-- [Exists mk0 eq and is Coprime](../../../../../../../../RingTheory/MathlibExt/class-group/coprime-representative/exists-mk0-eq-and-is-coprime.md)
+- [Ideal classes have representatives coprime to a given ideal](../../../../../../../../RingTheory/MathlibExt/class-group/coprime-representative/exists-mk0-eq-and-is-coprime.md)
 - [Value of the ideal-class map on a coprime ideal](../ray-class-to-class-group/coprime-ideal-class-map-apply.md)
 - [Nonzero integral ideals coprime to the modulus are coprime fractional ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
 

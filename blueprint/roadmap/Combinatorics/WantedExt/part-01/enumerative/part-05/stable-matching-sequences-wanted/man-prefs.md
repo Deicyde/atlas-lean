@@ -18,7 +18,7 @@ woman $b$ exactly when he ranks $a$ at an earlier position than $b$.
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 - [Rank of a woman for a man](man-rank.md)
 
 ## Sources

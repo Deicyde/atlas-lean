@@ -7,13 +7,16 @@ proof: formalized
 lean: TateCohomology.herbrandQuotient_den_pos
 ---
 
-# Herbrand Quotient den pos
+# The denominator of the Herbrand quotient is positive
 
-The denominator of the Herbrand quotient is positive.
+**The denominator of the Herbrand quotient is positive.** Let $G$ be a finite group, $R$ a
+commutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups
+$\hat H^0(G, M)$ and $\hat H^{-1}(G, M)$ are finite. Then the number of elements of
+$\hat H^{-1}(G, M)$ is positive.
 
 ## Depends on
 
-- [Herbrand Finite](herbrand-finite.md)
+- [Finiteness hypothesis for the Herbrand quotient](herbrand-finite.md)
 
 ## Sources
 

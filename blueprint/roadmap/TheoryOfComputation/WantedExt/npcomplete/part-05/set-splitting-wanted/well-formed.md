@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.SetSplitting.WellFormed
 ---
 
-# Well Formed
+# Well-formed set-splitting instances
 
-Well-formedness of an instance.
+**Well-formed set-splitting instances.** A set-splitting instance $(n, C)$, a natural number
+$n$ together with a list $C$ of lists of natural numbers, is well formed when every list in $C$
+has no repeated entries and all its entries are less than $n$.
 
 ## Depends on
 
-- [Set Splitting Instance](set-splitting-instance.md)
+- [Set-splitting instances](set-splitting-instance.md)
 
 ## Sources
 

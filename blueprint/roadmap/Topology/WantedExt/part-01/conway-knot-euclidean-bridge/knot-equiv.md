@@ -5,22 +5,23 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotEuclideanBridge.knotEquiv
 ---
 
-# Knot Equiv
+# Knots are the same as parametrized knots
 
-The trusted lean-eval knot type is equivalent to the canonical
-parametrized-knot type, by the identity on fields.
+**Knots are the same as parametrized knots.** Sending a knot in $\mathbb{R}^3$ to the
+parametrized knot with the same parametrization is a bijection from knots to parametrized knots,
+whose inverse sends a parametrized knot to the knot with the same parametrization.
 
 ## Depends on
 
-- [Knot](../conway-knot-shared/knot.md)
-- [Parametrized Knot](../../../MathlibExt/knot/euclidean-link/parametrized-knot.md)
+- [Oriented smooth knot](../conway-knot-shared/knot.md)
+- [Parametrized knot](../../../MathlibExt/knot/euclidean-link/parametrized-knot.md)
 
 ## Proof depends on
 
 - [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Of Parametrized Knot](of-parametrized-knot.md)
-- [To Parametrized Knot](to-parametrized-knot.md)
-- [R3](../conway-knot-shared/r3.md)
+- [Parametrized knots as knots](of-parametrized-knot.md)
+- [Knots as parametrized knots](to-parametrized-knot.md)
+- [Euclidean space $\mathbb{R}^3$](../conway-knot-shared/r3.md)
 
 ## Sources
 

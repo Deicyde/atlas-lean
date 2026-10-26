@@ -6,10 +6,11 @@ proof: formalized
 lean: MathlibExt.Probability.integrable_pow_of_abs_le_one
 ---
 
-# Integrable pow of abs le one
+# Integrability of $s^X$ for $|s| \le 1$
 
-On the convergence domain `|s| ≤ 1`, `s ^ X` is integrable for any measurable `X` under a
-finite measure.
+**Integrability of $s^X$ for $|s| \le 1$.** Let $\mu$ be a finite measure on $\Omega$, let
+$X : \Omega \to \mathbb{N}$ be measurable, and let $s$ be a real number with $|s| \le 1$. Then the
+function $\omega \mapsto s^{X(\omega)}$ is integrable with respect to $\mu$.
 
 ## Depends on
 

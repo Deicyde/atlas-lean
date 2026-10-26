@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.TotalTardiness.totalTardinessDec
 ---
 
-# Total Tardiness Dec
+# The TOTAL TARDINESS decision problem
 
-TOTAL TARDINESS as a decision problem over bitstrings.
+**The TOTAL TARDINESS decision problem.** The decision problem TOTAL TARDINESS accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding (natural numbers in
+binary), to an instance of TOTAL TARDINESS that is feasible, that is, whose jobs admit an ordering
+of total tardiness at most its bound. It rejects every bitstring that does not decode to an
+instance.
 
 ## Depends on
 
@@ -23,8 +27,8 @@ TOTAL TARDINESS as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Total Tardiness Feasible](total-tardiness-feasible.md)
-- [Total Tardiness Instance](total-tardiness-instance.md)
+- [Feasible TOTAL TARDINESS instances](total-tardiness-feasible.md)
+- [Instances of TOTAL TARDINESS](total-tardiness-instance.md)
 
 ## Sources
 

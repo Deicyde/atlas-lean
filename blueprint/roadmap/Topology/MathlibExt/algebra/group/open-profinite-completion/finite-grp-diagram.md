@@ -6,13 +6,16 @@ statement: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.finiteGrpDiagram
 ---
 
-# Finite Grp Diagram
+# Diagram of finite quotients
 
-Finite-group diagram `G ⧸ H` with projection maps.
+**Diagram of finite quotients.** For a group $G$ with a topology, this is the functor from
+the category of open finite-index normal subgroups of $G$ to finite groups that sends $H$ to the
+quotient group $G/H$ and sends an inclusion $H \subseteq K$ to the projection $G/H \to G/K$,
+$gH \mapsto gK$.
 
 ## Depends on
 
-- [Index](index.md)
+- [Open finite-index normal subgroups](index.md)
 
 ## Sources
 

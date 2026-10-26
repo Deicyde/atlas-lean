@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.CircleReparam.id
 ---
 
-# Id
+# Identity reparametrization of the circle
 
-The identity circle reparametrization.
+**Identity reparametrization of the circle.** The identity circle reparametrization has
+lift and inverse lift both equal to the identity map of $\mathbb{R}$.
 
 ## Depends on
 
-- [Circle Reparam](circle-reparam.md)
+- [Orientation-preserving reparametrization of the circle](circle-reparam.md)
 
 ## Sources
 

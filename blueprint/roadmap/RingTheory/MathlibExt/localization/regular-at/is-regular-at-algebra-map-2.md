@@ -13,13 +13,13 @@ Coordinate-ring elements define rational functions regular at every point.
 
 ## Depends on
 
-- [Affine Coordinate Ring](affine-coordinate-ring.md)
+- [Affine coordinate ring](affine-coordinate-ring.md)
 - [Is Regular At](is-regular-at-2.md)
 
 ## Proof depends on
 
-- [Is Regular At algebra Map](is-regular-at-algebra-map.md)
-- [Eval At](eval-at.md)
+- [Elements of the base ring are regular](is-regular-at-algebra-map.md)
+- [Evaluation at a point of an affine set](eval-at.md)
 
 ## Sources
 

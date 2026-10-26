@@ -24,7 +24,7 @@ lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.emQ_eq
 
 - [Posterior of a latent-variable model](../expectation-maximization/posterior.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

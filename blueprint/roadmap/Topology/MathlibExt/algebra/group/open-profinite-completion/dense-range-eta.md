@@ -7,18 +7,20 @@ proof: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.denseRange_eta
 ---
 
-# Dense Range eta
+# Density of the canonical homomorphism
 
-Corrected endpoint: density of `eta` under separate continuity of `*`.
+**Density of the canonical homomorphism.** Let $G$ be a group with a topology in which
+multiplication is separately continuous. Then the canonical continuous homomorphism from $G$ to
+its open profinite completion has dense image.
 
 ## Depends on
 
-- [Completion](completion.md)
-- [Eta](eta.md)
+- [Open profinite completion of a group](completion.md)
+- [Canonical homomorphism into the open profinite completion](eta.md)
 
 ## Proof depends on
 
-- [Dense Range eta Fn](dense-range-eta-fn.md)
+- [The canonical map has dense image](dense-range-eta-fn.md)
 
 ## Sources
 

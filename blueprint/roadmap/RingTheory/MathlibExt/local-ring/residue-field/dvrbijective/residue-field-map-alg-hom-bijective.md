@@ -7,20 +7,23 @@ proof: formalized
 lean: DVRResidue.residueFieldMapAlgHom_bijective
 ---
 
-# Residue Field Map Alg Hom bijective
+# Algebra maps from an étale DVR extension into a Henselian one match residue-field maps
 
-The map from algebra homomorphisms of finite local DVR extensions to their induced
-residue-field algebra homomorphisms is bijective when the source is etale and the target is
-Henselian.
+**Algebra maps from an étale DVR extension into a Henselian one match residue-field maps.**
+Let $A$, $B$, $C$ be discrete valuation rings, with $B$ and $C$ finite $A$-algebras whose structure
+maps are local homomorphisms, $B$ étale over $A$, and $C$ a Henselian local ring. Write
+$\kappa(R)$ for the residue field of a local ring $R$. Then sending an $A$-algebra homomorphism
+$B \to C$ to the $\kappa(A)$-algebra homomorphism $\kappa(B) \to \kappa(C)$ it induces is a
+bijection.
 
 ## Depends on
 
-- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](../dvr/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 
-- [Residue Field Map Alg Hom injective](../dvr/residue-field-map-alg-hom-injective.md)
-- [Residue Field Map Alg Hom surjective](../dvrfull/residue-field-map-alg-hom-surjective.md)
+- [Residue-field maps determine algebra maps out of a formally unramified DVR extension](../dvr/residue-field-map-alg-hom-injective.md)
+- [Lifting residue-field homomorphisms of finite étale DVR extensions](../dvrfull/residue-field-map-alg-hom-surjective.md)
 
 ## Sources
 

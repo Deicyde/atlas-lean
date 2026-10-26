@@ -6,18 +6,20 @@ proof: formalized
 lean: ProfiniteGrp.ProfiniteCompletion.isStronglyComplete_iff_bijective_etaFn
 ---
 
-# Is Strongly Complete iff bijective eta Fn
+# Strongly complete profinite groups via the profinite completion
 
-A profinite group is strongly complete if and only if the canonical map to
-its profinite completion is bijective.
+**Strongly complete profinite groups via the profinite completion.** Let $P$ be a profinite
+group and let $\hat P$ be the profinite completion of $P$ as an abstract group, that is, the
+inverse limit of the finite quotients $P/N$ over all normal subgroups $N$ of finite index in $P$.
+Then $P$ is strongly complete if and only if the canonical map $P \to \hat P$ is bijective.
 
 ## Depends on
 
-- [Is Strongly Complete](is-strongly-complete.md)
+- [Strongly complete group](is-strongly-complete.md)
 
 ## Proof depends on
 
-- [Is Open to Subgroup of surjective eta Fn](is-open-to-subgroup-of-surjective-eta-fn.md)
+- [Finite-index normal subgroups are open when the completion map is onto](is-open-to-subgroup-of-surjective-eta-fn.md)
 
 ## Sources
 

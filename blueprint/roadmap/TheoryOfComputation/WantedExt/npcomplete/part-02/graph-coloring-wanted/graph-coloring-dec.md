@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.GraphColoring.graphColoringDec
 ---
 
-# Graph Coloring Dec
+# GRAPH COLORING as a decision problem
 
-GRAPH COLORING as a decision problem over bitstrings.
+**GRAPH COLORING as a decision problem.** The decision problem GRAPH COLORING accepts a
+bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to an instance
+of GRAPH COLORING that is well formed and feasible. Bitstrings that do not decode to an instance
+are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ GRAPH COLORING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Graph Coloring Feasible](graph-coloring-feasible.md)
-- [Graph Coloring Instance](graph-coloring-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible GRAPH COLORING instances](graph-coloring-feasible.md)
+- [Instances of GRAPH COLORING](graph-coloring-instance.md)
+- [Well-formed GRAPH COLORING instances](well-formed.md)
 
 ## Sources
 

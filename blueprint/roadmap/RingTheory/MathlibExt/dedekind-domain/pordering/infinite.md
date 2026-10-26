@@ -7,17 +7,19 @@ proof: formalized
 lean: IsDedekindDomain.HeightOneSpectrum.IsPOrdering.infinite
 ---
 
-# Infinite
+# A set with a p-ordering is infinite
 
-Accessor: the underlying set is infinite.
+**A set with a p-ordering is infinite.** Let $R$ be a Dedekind domain, $\mathfrak p$ a
+nonzero prime ideal of $R$ and $S \subseteq R$. If some sequence in $R$ is a
+$\mathfrak p$-ordering of $S$, then $S$ is infinite.
 
 ## Depends on
 
-- [Is POrdering](is-pordering.md)
+- [Bhargava p-ordering](is-pordering.md)
 
 ## Proof depends on
 
-- [P Ordering Valuation](p-ordering-valuation.md)
+- [Prefix-product valuation](p-ordering-valuation.md)
 
 ## Sources
 

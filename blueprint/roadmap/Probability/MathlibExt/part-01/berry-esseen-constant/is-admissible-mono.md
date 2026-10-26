@@ -7,20 +7,21 @@ proof: formalized
 lean: BerryEsseenConstant.isAdmissible_mono
 ---
 
-# Is Admissible mono
+# Admissibility is upward closed
 
-Larger coefficients remain admissible.
+**Admissibility is upward closed.** If $C \le D$ are real numbers and $C$ is an admissible
+Berry–Esseen coefficient, then $D$ is an admissible Berry–Esseen coefficient.
 
 ## Depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible Berry–Esseen coefficient](is-admissible.md)
 
 ## Proof depends on
 
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
-- [Kolmogorov Error](../berry-esseen-model/kolmogorov-error.md)
-- [Third Moment](../berry-esseen-model/third-moment.md)
-- [Third Moment nonnegative](../berry-esseen-model/third-moment-nonnegative.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
+- [Kolmogorov error](../berry-esseen-model/kolmogorov-error.md)
+- [Third absolute moment](../berry-esseen-model/third-moment.md)
+- [Nonnegativity of the third absolute moment](../berry-esseen-model/third-moment-nonnegative.md)
 
 ## Sources
 

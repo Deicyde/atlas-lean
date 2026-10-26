@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.CWTopCat
 ---
 
-# CWTop Cat
+# The category of spaces admitting a CW structure
 
-The full subcategory of topological spaces admitting a classical CW complex structure.
+**The category of spaces admitting a CW structure.** The full subcategory of the category of
+topological spaces whose objects are the spaces $X$ admitting a classical CW complex structure
+with underlying set all of $X$; its morphisms are all continuous maps between such spaces.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is CWTop Cat](is-cwtop-cat.md)
+- [Spaces admitting a CW complex structure](is-cwtop-cat.md)
 
 ## Sources
 

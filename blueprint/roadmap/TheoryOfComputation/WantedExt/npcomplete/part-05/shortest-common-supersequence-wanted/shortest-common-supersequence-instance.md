@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ShortestCommonSupersequence.ShortestCommonSupersequenceInstance
 ---
 
-# Shortest Common Supersequence Instance
+# Shortest common supersequence instances
 
-An SCS instance: binary strings, bound.
+**Shortest common supersequence instances.** An instance of SHORTEST COMMON SUPERSEQUENCE is a
+pair $(R, K)$ of a list $R$ of binary strings (lists of booleans) and a natural number $K$, the
+length bound.
 
 ## Depends on
 

@@ -7,14 +7,14 @@ lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianCycleUndirected.hamiltonia
 
 # HAMILTONIAN CYCLE (UNDIRECTED) is NP-complete
 
-**HAMILTONIAN CYCLE (UNDIRECTED) is NP-complete.** Source: M. R. Garey and D. S. Johnson,
-*Computers and Intractability* (1979), HAMILTONIAN CIRCUIT; R. M. Karp, "Reducibility
-among combinatorial problems" (1972).
+**HAMILTONIAN CYCLE (UNDIRECTED) is NP-complete.** The decision problem HAMILTONIAN CYCLE
+(UNDIRECTED) belongs to NP, and every decision problem in NP has a polynomial-time many-one
+reduction to it.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Hamiltonian Cycle Undirected Dec](hamiltonian-cycle-undirected-dec.md)
+- [HAMILTONIAN CYCLE (UNDIRECTED) as a decision problem](hamiltonian-cycle-undirected-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -22,3 +22,4 @@ among combinatorial problems" (1972).
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.HamiltonianCycleUndirectedWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), HAMILTONIAN CIRCUIT; R. M. Karp, "Reducibility among combinatorial problems" (1972).

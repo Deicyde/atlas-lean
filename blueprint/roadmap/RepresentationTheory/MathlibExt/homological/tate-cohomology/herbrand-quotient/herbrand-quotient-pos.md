@@ -7,18 +7,20 @@ proof: formalized
 lean: TateCohomology.herbrandQuotient_pos
 ---
 
-# Herbrand Quotient pos
+# Positivity of the Herbrand quotient
 
-The Herbrand quotient is positive.
+**Positivity of the Herbrand quotient.** Let $G$ be a finite group, $R$ a commutative ring
+and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups $\hat H^0(G, M)$ and
+$\hat H^{-1}(G, M)$ are finite. Then the Herbrand quotient of $M$ is strictly positive.
 
 ## Depends on
 
-- [Herbrand Finite](herbrand-finite.md)
-- [Herbrand Quotient](herbrand-quotient.md)
+- [Finiteness hypothesis for the Herbrand quotient](herbrand-finite.md)
+- [Herbrand quotient](herbrand-quotient.md)
 
 ## Proof depends on
 
-- [Herbrand Quotient eq](herbrand-quotient-eq.md)
+- [Herbrand quotient as a ratio of orders](herbrand-quotient-eq.md)
 
 ## Sources
 

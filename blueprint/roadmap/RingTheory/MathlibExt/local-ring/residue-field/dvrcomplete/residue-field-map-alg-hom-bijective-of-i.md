@@ -7,19 +7,23 @@ proof: formalized
 lean: DVRResidue.residueFieldMapAlgHom_bijective_of_isAdicComplete
 ---
 
-# Residue Field Map Alg Hom bijective of is Adic Complete
+# Algebra maps from an étale DVR extension into a complete one match residue-field maps
 
-For a finite etale local DVR extension, every residue-field algebra homomorphism into a
-maximal-adically complete local DVR lifts uniquely.
+**Algebra maps from an étale DVR extension into a complete one match residue-field maps.**
+Let $A$, $B$, $C$ be discrete valuation rings, with $B$ and $C$ finite $A$-algebras whose structure
+maps are local homomorphisms, $B$ étale over $A$, and $C$ complete and separated for its
+maximal-ideal-adic topology. Write $\kappa(R)$ for the residue field of a local ring $R$. Then
+sending an $A$-algebra homomorphism $B \to C$ to the $\kappa(A)$-algebra homomorphism
+$\kappa(B) \to \kappa(C)$ it induces is a bijection.
 
 ## Depends on
 
-- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](../dvr/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 
-- [Residue Field Map Alg Hom bijective](../dvrbijective/residue-field-map-alg-hom-bijective.md)
-- [Henselian](../../of-is-adic-complete-maximal-ideal.md)
+- [Algebra maps from an étale DVR extension into a Henselian one match residue-field maps](../dvrbijective/residue-field-map-alg-hom-bijective.md)
+- [Complete local rings are Henselian](../../of-is-adic-complete-maximal-ideal.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.WeightedTardyJobs.WeightedTardyJobsFeasible
 ---
 
-# Weighted Tardy Jobs Feasible
+# Feasible weighted tardy jobs instances
 
-An ordering with weighted tardy sum at most `K`.
+**Feasible weighted tardy jobs instances.** A weighted tardy jobs instance, consisting of a
+list of $n$ jobs and a bound $K$, is feasible when there is an ordering of its jobs, that is, a
+list of the job indices $0, 1, \dots, n - 1$ in which each index occurs exactly once, whose
+weighted number of tardy jobs is at most $K$.
 
 ## Depends on
 
-- [Weighted Tardy Jobs Instance](weighted-tardy-jobs-instance.md)
+- [Weighted tardy jobs instances](weighted-tardy-jobs-instance.md)
 
 ## Proof depends on
 
-- [Weighted Tardy](weighted-tardy.md)
+- [Weighted number of tardy jobs of an ordering](weighted-tardy.md)
 
 ## Sources
 

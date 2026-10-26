@@ -7,13 +7,16 @@ proof: formalized
 lean: TateCohomology.tateCohomologyCard_eq_natCast
 ---
 
-# Tate Cohomology Card eq nat Cast
+# Cardinality of finite Tate cohomology as a natural number
 
-Under finiteness, the cardinal is the cast of `Nat.card`.
+**Cardinality of finite Tate cohomology as a natural number.** Let $G$ be a finite group, $R$
+a commutative ring, $M$ an $R$-linear representation of $G$ and $n$ an integer such that the Tate
+cohomology group $\hat H^n(G, M)$ is finite. Then the cardinality of $\hat H^n(G, M)$ equals its
+number of elements, a natural number viewed as a cardinal number.
 
 ## Depends on
 
-- [Tate Cohomology Card](tate-cohomology-card.md)
+- [Cardinality of Tate cohomology](tate-cohomology-card.md)
 
 ## Sources
 

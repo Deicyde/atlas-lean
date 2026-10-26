@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatFeasible
 ---
 
-# Monotone Three Sat Feasible
+# Satisfiable monotone 3-SAT instances
 
-A satisfying assignment.
+**Satisfiable monotone 3-SAT instances.** A monotone 3-SAT instance $(n, \varphi)$ is
+feasible when there is a list of $n$ truth values $a_0, \dots, a_{n-1}$ such that the assignment
+sending each variable $x < n$ to $a_x$ and every variable $x \ge n$ to false satisfies the CNF
+formula $\varphi$.
 
 ## Depends on
 
-- [Monotone Three Sat Instance](monotone-three-sat-instance.md)
+- [Monotone 3-SAT instances](monotone-three-sat-instance.md)
 
 ## Proof depends on
 

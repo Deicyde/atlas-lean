@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book187b
 
-- [Cover LE](cover-le.md)
-- [Scottish Book187b refuted](scottish-book187b-refuted.md)
+- [Covering dimension at most n](cover-le.md)
+- [Small inductive and covering dimension can differ for compact Hausdorff spaces](scottish-book187b-refuted.md)

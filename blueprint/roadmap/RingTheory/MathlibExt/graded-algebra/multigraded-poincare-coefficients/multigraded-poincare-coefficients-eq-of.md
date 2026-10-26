@@ -7,23 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.multigradedPoincareCoefficients_eq_of_resolutionComparison
 ---
 
-# Multigraded Poincare Coefficients eq of resolution Comparison
+# Resolution comparisons preserve multigraded Poincaré coefficients
 
-Conditional coherence of the coefficient family: an edge-5
-`MultigradedResolutionComparison` forces the two raw coefficient
-functions to be equal.
+**Resolution comparisons preserve multigraded Poincaré coefficients.** Let $K$ be a field,
+let $R = K[x_1, \dots, x_n]$, let $M$ be a multigraded $R$-module, and let $D$ and $D'$ be
+base-change data for two multigraded free resolutions of $M$. Given a multigraded resolution
+comparison between $D$ and $D'$, that is, for every $\alpha \in \mathbb{Z}^n$ a chain-homotopy
+equivalence between the degree-$\alpha$ component complexes of $D$ and $D'$, the multigraded
+Poincaré coefficient families of $D$ and $D'$ are equal.
 
 ## Depends on
 
-- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
-- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
-- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
-- [Multigraded Resolution Comparison](../multigraded-betti-resolution-invariance/multigraded-resolution-comparison.md)
-- [Multigraded Poincare Coefficients](multigraded-poincare-coefficients.md)
+- [Multigraded base change data](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded free resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded modules over a polynomial ring](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Multigraded resolution comparison](../multigraded-betti-resolution-invariance/multigraded-resolution-comparison.md)
+- [Multigraded Poincaré coefficients](multigraded-poincare-coefficients.md)
 
 ## Proof depends on
 
-- [Multigraded Betti Number eq of resolution Comparison](../multigraded-betti-resolution-invariance/multigraded-betti-number-eq-of-resolutio.md)
+- [Betti numbers agree across comparable resolutions](../multigraded-betti-resolution-invariance/multigraded-betti-number-eq-of-resolutio.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.ManolescuTriangulationWanted.Topology.Triangulable
 ---
 
-# Triangulable
+# Triangulable closed manifold
 
-`M` is **triangulable**: it is homeomorphic to the geometric realization (the
-union of the faces, with the subspace topology) of a *finite* simplicial complex
-sitting in some finite-dimensional Euclidean space `ℝᴺ`. For a compact manifold
-this is exactly the usual notion of triangulability; the finiteness of `K.faces`
-is essential (see the module docstring).
+**Triangulable closed manifold.** A closed topological $n$-manifold $M$ is triangulable if,
+for some natural number $N$, there is a simplicial complex $K$ in $\mathbb{R}^N$ with finitely
+many faces such that $M$ is homeomorphic to the geometric realization of $K$, the union of its
+faces with the subspace topology from $\mathbb{R}^N$.
+
+For a compact manifold this is the usual notion of triangulability. Requiring finitely many faces
+is essential: otherwise any copy of $M$ embedded in $\mathbb{R}^N$ would be the realization of the
+complex whose faces are its points.
 
 ## Depends on
 
-- [Closed Top Manifold](closed-top-manifold.md)
+- [Closed topological manifold](closed-top-manifold.md)
 
 ## Sources
 

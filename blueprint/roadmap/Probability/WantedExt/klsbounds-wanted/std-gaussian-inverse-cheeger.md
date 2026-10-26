@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.stdGaussian_inverseCheeger
 ---
 
-# Std Gaussian inverse Cheeger
+# Inverse Cheeger constant of the standard Gaussian
 
-The standard Gaussian has the exact inverse Cheeger coefficient `sqrt(pi/2)`.
+**Inverse Cheeger constant of the standard Gaussian.** For every $n \ge 1$, the standard
+Gaussian measure on $\mathbb{R}^n$ has inverse Cheeger constant exactly $\sqrt{\pi/2}$.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
+- [Inverse Cheeger constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
 
 ## Sources
 

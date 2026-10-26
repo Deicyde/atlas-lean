@@ -22,9 +22,9 @@ $\mathcal O_K$ that do not divide the finite part of $\mathfrak m$.
 
 ## Proof depends on
 
-- [Finsupp To Units](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/finsupp-to-units.md)
-- [To Units left inv](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/to-units-left-inv.md)
-- [Units To Finsupp](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/units-to-finsupp.md)
+- [Fractional ideal with prescribed prime exponents](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/finsupp-to-units.md)
+- [Reconstructing a fractional ideal from its prime exponents](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/to-units-left-inv.md)
+- [Prime exponents of an invertible fractional ideal](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/units-to-finsupp.md)
 - [Primes dividing a modulus](../../part-02/ray-group/finite-supported.md)
 - [Membership in the prime coprime units](mem-coprime-prime-units.md)
 - [The prime as a coprime fractional ideal](../prime-generators/prime-coprime-unit.md)

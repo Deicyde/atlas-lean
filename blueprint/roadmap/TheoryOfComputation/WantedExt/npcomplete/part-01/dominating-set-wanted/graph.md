@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DominatingSet.Graph
 ---
 
-# Graph
+# Graph of a DOMINATING SET instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a DOMINATING SET instance.** For an instance $(n, E, K)$ of DOMINATING SET, its
+graph is the simple graph on $\{0, \dots, n - 1\}$ in which distinct vertices $i$ and $j$ are
+adjacent when $(i, j)$ or $(j, i)$ belongs to $E$.
 
 ## Depends on
 
-- [Dominating Set Instance](dominating-set-instance.md)
+- [Instances of DOMINATING SET](dominating-set-instance.md)
 
 ## Proof depends on
 

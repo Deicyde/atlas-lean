@@ -7,17 +7,19 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_mono
 ---
 
-# Conductor Ideal mono
+# Monotonicity of the conductor ideal
 
-The conductor ideal is monotone in the subalgebra.
+**Monotonicity of the conductor ideal.** Let $R$ be a commutative semiring, $S$ a commutative
+$R$-algebra and $A \subseteq B$ two $R$-subalgebras of $S$. Then the conductor ideal of $A$ is
+contained in the conductor ideal of $B$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Mem conductor Ideal](mem-conductor-ideal.md)
+- [Membership in the conductor ideal](mem-conductor-ideal.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ParallelMachinesDeadlines.ParallelMachinesDeadlinesInstance
 ---
 
-# Parallel Machines Deadlines Instance
+# Parallel machine scheduling instances
 
-A parallel-machines-deadlines instance: jobs (processing time, deadline), machine count.
+**Parallel machine scheduling instances.** An instance of parallel machine scheduling with
+deadlines is a pair consisting of a finite list of jobs, each a pair $(p, d)$ of natural numbers
+giving its processing time $p$ and deadline $d$, and a natural number $m$, the number of
+machines.
 
 ## Depends on
 

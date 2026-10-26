@@ -5,20 +5,29 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparisonWantedDavis.DavisPowerSolution.IsValid
 ---
 
-# Is Valid
+# Valid solutions of the Davis–Power system
 
-Equations (3)–(6), with the domains that select the solution.
+**Valid solutions of the Davis–Power system.** Let $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ be
+the standard Gaussian density, $Q(x) = \int_x^\infty \varphi(t)\,dt$ its upper tail,
+$t_0 = \sqrt{2\log 2}$ with $\log$ the natural logarithm,
+$B = \frac{1}{2}\int_0^\infty \min(1, 2e^{-t^2/2})\,dt$ and
+$h(x) = 2x e^{-x^2/2} + 2\int_x^\infty e^{-t^2/2}\,dt$. A quadruple $(a, p_0, z, c_0)$ of real
+numbers is a valid solution of the Davis–Power system when $a > t_0$, $h(a) = B$,
+$p_0 = 2e^{-a^2/2}$, $0 < p_0 < 1$, $Q(z) = p_0$ and $c_0 = B/\varphi(z)$.
+
+These are equations (3)–(6) of Davis–Power (2026), with the domain conditions that select the
+solution.
 
 ## Depends on
 
-- [Davis Power Solution](davis-power-solution.md)
+- [Parameter quadruples of the Davis–Power system](davis-power-solution.md)
 
 ## Proof depends on
 
-- [Davis Power B](davis-power-b.md)
-- [Davis Power H](davis-power-h.md)
-- [Davis Power T0](davis-power-t0.md)
-- [Standard Normal Tail](standard-normal-tail.md)
+- [Half the envelope integral, $B$](davis-power-b.md)
+- [The function $h$ of Davis–Power](davis-power-h.md)
+- [The Davis–Power transition threshold](davis-power-t0.md)
+- [Standard Gaussian upper tail](standard-normal-tail.md)
 
 ## Sources
 

@@ -7,9 +7,12 @@ proof: formalized
 lean: DVRResidue.AlgHom.isLocalHom_of_isDiscreteValuationRing
 ---
 
-# Is Local Hom of is Discrete Valuation Ring
+# Algebra maps from a DVR into a finite local DVR extension are local
 
-Every `A`-algebra map between finite local DVR extensions is local.
+**Algebra maps from a DVR into a finite local DVR extension are local.** Let $A$, $B$, $C$
+be discrete valuation rings, with $B$ and $C$ algebras over $A$, where $C$ is finite as an
+$A$-module and the structure map $A \to C$ is a local homomorphism. Then every $A$-algebra
+homomorphism $B \to C$ is a local homomorphism.
 
 ## Depends on
 

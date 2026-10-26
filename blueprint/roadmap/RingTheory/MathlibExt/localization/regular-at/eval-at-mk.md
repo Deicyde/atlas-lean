@@ -7,14 +7,17 @@ proof: formalized
 lean: MvPolynomial.AffineCoordinateRing.evalAt_mk
 ---
 
-# Eval At mk
+# Evaluating a residue class
 
-Evaluation of a residue class agrees with evaluation of its representative.
+**Evaluating a residue class.** Let $K$ be a field, $\sigma$ an index set,
+$X \subseteq K^\sigma$ a set of points and $P \in X$. For every polynomial $f$ over $K$ in
+variables indexed by $\sigma$, evaluating the residue class of $f$ in the affine coordinate ring
+of $X$ at $P$ gives $f(P)$.
 
 ## Depends on
 
-- [Affine Coordinate Ring](affine-coordinate-ring.md)
-- [Eval At](eval-at.md)
+- [Affine coordinate ring](affine-coordinate-ring.md)
+- [Evaluation at a point of an affine set](eval-at.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.trace
 ---
 
-# Trace
+# Trace of a parametrized link
 
-The whole trace of a parametrized link in Euclidean 3-space.
+**Trace of a parametrized link.** The trace of a parametrized link $L$ in Euclidean 3-space
+is the union of the images of its component curves: the set of all points $\gamma(t)$, where
+$\gamma$ is a component of $L$ and $t \in \mathbb{R}$.
 
 ## Depends on
 
 - [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Parametrized Link](parametrized-link.md)
+- [Parametrized link](parametrized-link.md)
 
 ## Proof depends on
 
-- [Parametrized Knot](parametrized-knot.md)
+- [Parametrized knot](parametrized-knot.md)
 
 ## Sources
 

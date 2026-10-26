@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.PartitionIntoP3s.partitionIntoP3sDec
 ---
 
-# Partition Into P3s Dec
+# PARTITION INTO PATHS OF LENGTH 2
 
-PARTITION INTO PATHS OF LENGTH 2 as a decision problem over bitstrings.
+**PARTITION INTO PATHS OF LENGTH 2.** The decision problem PARTITION INTO PATHS OF LENGTH 2
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
+instances, to an instance $(n, E)$ that is well formed and admits a partition into paths of
+length 2. Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ PARTITION INTO PATHS OF LENGTH 2 as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Partition Into P3s Feasible](partition-into-p3s-feasible.md)
-- [Partition Into P3s Instance](partition-into-p3s-instance.md)
-- [Well Formed](well-formed.md)
+- [Partitions into paths of length 2](partition-into-p3s-feasible.md)
+- [Instances of PARTITION INTO PATHS OF LENGTH 2](partition-into-p3s-instance.md)
+- [Well-formed PARTITION INTO PATHS OF LENGTH 2 instances](well-formed.md)
 
 ## Sources
 

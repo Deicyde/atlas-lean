@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.stdGaussianDensityMeasure
 ---
 
-# Std Gaussian Density Measure
+# Standard Gaussian measure via its density
 
-The standard Gaussian density as a measure.
+**Standard Gaussian measure via its density.** Let $\iota$ be a finite set of size $n$. This is
+the measure on the Euclidean space $\mathbb{R}^\iota$ with density
+$v \mapsto (2\pi)^{-n/2} \exp(-\|v\|^2/2)$ with respect to Lebesgue measure.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Std Gaussian PDFReal](std-gaussian-pdfreal.md)
+- [Standard Gaussian density function](std-gaussian-pdfreal.md)
 
 ## Sources
 

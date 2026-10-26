@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.EfficientDomination.Graph
 ---
 
-# Graph
+# Graph of an Efficient Domination instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of an Efficient Domination instance.** For an instance $(n, E)$, its graph is the
+simple graph on the vertex set $\{0, \dots, n - 1\}$ in which distinct vertices $u$ and $v$ are
+adjacent when $(u, v)$ or $(v, u)$ belongs to $E$.
 
 ## Depends on
 
-- [Efficient Domination Instance](efficient-domination-instance.md)
+- [Efficient Domination instances](efficient-domination-instance.md)
 
 ## Proof depends on
 

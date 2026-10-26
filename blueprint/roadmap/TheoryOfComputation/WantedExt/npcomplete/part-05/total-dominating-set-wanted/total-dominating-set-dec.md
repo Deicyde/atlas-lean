@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.TotalDominatingSet.totalDominatingSetDec
 ---
 
-# Total Dominating Set Dec
+# The decision problem TOTAL DOMINATING SET
 
-TOTAL DOMINATING SET as a decision problem over bitstrings.
+**The decision problem TOTAL DOMINATING SET.** TOTAL DOMINATING SET accepts a bitstring $x$
+exactly when $x$ decodes, under the canonical bitstring encoding of triples of a natural number,
+a list of pairs of natural numbers and a natural number, to an instance $(n, E, K)$ that is well
+formed and feasible: some set of at most $K$ vertices of the graph of the instance contains a
+neighbor of every vertex. Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +27,9 @@ TOTAL DOMINATING SET as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Total Dominating Set Feasible](total-dominating-set-feasible.md)
-- [Total Dominating Set Instance](total-dominating-set-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasibility of a total dominating set instance](total-dominating-set-feasible.md)
+- [Instances of TOTAL DOMINATING SET](total-dominating-set-instance.md)
+- [Well-formed total dominating set instances](well-formed.md)
 
 ## Sources
 

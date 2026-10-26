@@ -7,9 +7,11 @@ proof: formalized
 lean: HenselianLocalRing.of_isAdicComplete_maximalIdeal
 ---
 
-# Henselian
+# Complete local rings are Henselian
 
-A local ring complete for its maximal-ideal adic topology is Henselian.
+**Complete local rings are Henselian.** Let $R$ be a local ring with maximal ideal
+$\mathfrak m$. If $R$ is Hausdorff and complete for the $\mathfrak m$-adic topology, then $R$
+is a Henselian local ring.
 
 ## Depends on
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.denseRange_etaFn
 ---
 
-# Dense Range eta Fn
+# The canonical map has dense image
 
-Algebraic density of `etaFn`, following Mathlib `denseRange`.
+**The canonical map has dense image.** For every group $G$ with a topology, the image of the
+canonical map from $G$ to its open profinite completion is dense.
+
+No compatibility between the multiplication and the topology of $G$ is assumed.
 
 ## Depends on
 
-- [Completion](completion.md)
-- [Eta Fn](eta-fn.md)
+- [Open profinite completion of a group](completion.md)
+- [Canonical map into the open profinite completion](eta-fn.md)
 
 ## Proof depends on
 
-- [Index](index.md)
-- [Diagram](diagram.md)
-- [Finite Grp Diagram](finite-grp-diagram.md)
+- [Open finite-index normal subgroups](index.md)
+- [Diagram of finite quotients as profinite groups](diagram.md)
+- [Diagram of finite quotients](finite-grp-diagram.md)
 
 ## Sources
 

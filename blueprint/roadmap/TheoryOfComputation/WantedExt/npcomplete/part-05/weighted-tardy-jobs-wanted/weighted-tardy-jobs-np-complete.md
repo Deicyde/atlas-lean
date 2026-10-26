@@ -7,13 +7,14 @@ lean: MetaMathlibExt.Complexity.NPComplete.WeightedTardyJobs.weightedTardyJobs_n
 
 # WEIGHTED NUMBER OF TARDY JOBS is NP-complete
 
-**WEIGHTED NUMBER OF TARDY JOBS is NP-complete.** Source: M. R. Garey and D. S. Johnson,
-*Computers and Intractability* (1979), WEIGHTED NUMBER OF TARDY JOBS (1||sum w_j U_j).
+**WEIGHTED NUMBER OF TARDY JOBS is NP-complete.** The weighted number of tardy jobs decision
+problem lies in NP, and every decision problem in NP has a polynomial-time many-one reduction to
+it.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Weighted Tardy Jobs Dec](weighted-tardy-jobs-dec.md)
+- [The weighted number of tardy jobs decision problem](weighted-tardy-jobs-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +22,4 @@ lean: MetaMathlibExt.Complexity.NPComplete.WeightedTardyJobs.weightedTardyJobs_n
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.WeightedTardyJobsWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), WEIGHTED NUMBER OF TARDY JOBS (1||sum w_j U_j).

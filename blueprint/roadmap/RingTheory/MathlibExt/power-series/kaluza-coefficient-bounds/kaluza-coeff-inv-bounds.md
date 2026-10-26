@@ -7,23 +7,23 @@ proof: formalized
 lean: MathlibExt.Algebra.PowerSeries.KaluzaCoefficientBoundsWanted.kaluza_coeff_inv_bounds
 ---
 
-# Kaluza coeff inv bounds
+# Kaluza's bounds for the coefficients of a reciprocal power series
 
-Combined Kaluza inverse-coefficient bounds: under
-`HasPositiveLogConvexCoefficients f`, the formal reciprocal `f⁻¹` satisfies
-`b₀ = a₀⁻¹` with `b₀ > 0`, and for every `n ≥ 1`,
-`-aₙ / a₀² ≤ bₙ ≤ 0`, where `aₙ` and `bₙ` are the coefficients of `f`
-and of the formal power-series reciprocal `f⁻¹`. This is a formal reciprocal
-with no analytic convergence assumptions.
+**Kaluza's bounds for the coefficients of a reciprocal power series.** Let
+$f = \sum_n a_n X^n$ be a real formal power series with positive log-convex coefficients, and
+let $f^{-1} = \sum_n b_n X^n$ be its reciprocal in the ring of formal power series. Then
+$b_0 = a_0^{-1}$, $b_0 > 0$, and $-a_n / a_0^2 \le b_n \le 0$ for every $n \ge 1$.
+
+The reciprocal is formal; no convergence is assumed.
 
 ## Depends on
 
-- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
+- [Positive log-convex coefficients](has-positive-log-convex-coefficients.md)
 
 ## Proof depends on
 
-- [Coeff pos](coeff-pos.md)
-- [Sq coeff succ le](sq-coeff-succ-le.md)
+- [Coefficients of a positive log-convex series are positive](coeff-pos.md)
+- [Log-convexity of the coefficients](sq-coeff-succ-le.md)
 
 ## Sources
 

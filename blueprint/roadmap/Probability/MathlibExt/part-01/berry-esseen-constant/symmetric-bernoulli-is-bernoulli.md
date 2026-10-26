@@ -7,19 +7,22 @@ proof: formalized
 lean: BerryEsseenConstant.symmetricBernoulli_isBernoulli
 ---
 
-# Symmetric Bernoulli is Bernoulli
+# The symmetric Bernoulli law is a standardized two-point law
 
-The Bernoulli witness is supported on the two distinct actual points.
+**The symmetric Bernoulli law is a standardized two-point law.** The law
+$\frac12 \delta_{-1} + \frac12 \delta_1$ on $\mathbb{R}$ is a probability measure with mean $0$,
+variance $1$ and finite third absolute moment, and it is concentrated on the two distinct points
+$-1$ and $1$.
 
 ## Depends on
 
-- [Is Bernoulli Law](is-bernoulli-law.md)
-- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
+- [Standardized two-point law](is-bernoulli-law.md)
+- [Symmetric Bernoulli law](symmetric-bernoulli-law.md)
 
 ## Proof depends on
 
-- [Symmetric Bernoulli is Standardized](symmetric-bernoulli-is-standardized.md)
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
+- [The symmetric Bernoulli law is standardized](symmetric-bernoulli-is-standardized.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
 
 ## Sources
 

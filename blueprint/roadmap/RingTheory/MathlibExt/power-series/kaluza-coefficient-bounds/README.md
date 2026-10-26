@@ -5,7 +5,7 @@ navigation: module
 
 # Kaluza Coefficient Bounds
 
-- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
-- [Coeff pos](coeff-pos.md)
-- [Sq coeff succ le](sq-coeff-succ-le.md)
-- [Kaluza coeff inv bounds](kaluza-coeff-inv-bounds.md)
+- [Positive log-convex coefficients](has-positive-log-convex-coefficients.md)
+- [Coefficients of a positive log-convex series are positive](coeff-pos.md)
+- [Log-convexity of the coefficients](sq-coeff-succ-le.md)
+- [Kaluza's bounds for the coefficients of a reciprocal power series](kaluza-coeff-inv-bounds.md)

@@ -5,10 +5,11 @@ statement: formalized
 lean: ProbabilityTheory.IsMedian
 ---
 
-# Is Median
+# Median of a measure on the real line
 
-`m` is a **median** of the probability measure `ν`: each of `(-∞, m]` and `[m, ∞)` has
-probability at least `1 / 2`.
+**Median of a measure on the real line.** Let $\nu$ be a measure on $\mathbb{R}$, typically a
+probability measure. A real number $m$ is a median of $\nu$ when $\nu((-\infty, m]) \ge 1/2$
+and $\nu([m, \infty)) \ge 1/2$, where a set of infinite measure counts as having measure $0$.
 
 ## Depends on
 

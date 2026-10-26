@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Numerical3DM.numerical3DMDec
 ---
 
-# Numerical3 DMDec
+# NUMERICAL 3-DIMENSIONAL MATCHING as a decision problem
 
-NUMERICAL 3-DIMENSIONAL MATCHING as a decision problem over bitstrings.
+**NUMERICAL 3-DIMENSIONAL MATCHING as a decision problem.** The decision problem NUMERICAL
+3-DIMENSIONAL MATCHING accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding (natural numbers in binary), to an instance $(A, B, C, t)$ that is well
+formed and feasible: the lists $B$ and $C$ have the same length $n$ as the list $A$, and there
+are permutations $p$ and $q$ of the numbers $0$ through $n-1$ such that
+$A_j + B_{p(j)} + C_{q(j)} = t$ for every $j < n$, with lists indexed from $0$. Every other
+bitstring is rejected.
 
 ## Depends on
 
@@ -23,9 +29,9 @@ NUMERICAL 3-DIMENSIONAL MATCHING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Numerical3 DMFeasible](numerical3-dmfeasible.md)
-- [Numerical3 DMInstance](numerical3-dminstance.md)
-- [Well Formed](well-formed.md)
+- [Feasible numerical 3-dimensional matching instances](numerical3-dmfeasible.md)
+- [Numerical 3-dimensional matching instances](numerical3-dminstance.md)
+- [Well-formed numerical 3-dimensional matching instances](well-formed.md)
 
 ## Sources
 

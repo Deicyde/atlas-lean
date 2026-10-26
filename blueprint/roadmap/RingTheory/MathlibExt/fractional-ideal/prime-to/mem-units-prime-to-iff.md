@@ -7,14 +7,17 @@ proof: formalized
 lean: FractionalIdeal.mem_unitsPrimeTo_iff
 ---
 
-# Mem units Prime To iff
+# Membership in the subgroup of units prime to an ideal
 
-Membership in unitsPrimeTo is the prime-to condition on the underlying fractional ideal.
+**Membership in the subgroup of units prime to an ideal.** Let $A$ be an integral domain with
+fraction field $K$ and let $J$ be an ideal of $A$. An invertible fractional ideal $I$ of $A$ in
+$K$ lies in the subgroup of invertible fractional ideals prime to $J$ if and only if $I$ is prime
+to $J$.
 
 ## Depends on
 
-- [Is Prime To](is-prime-to.md)
-- [Units Prime To](units-prime-to.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
+- [Invertible fractional ideals prime to an ideal](units-prime-to.md)
 
 ## Sources
 

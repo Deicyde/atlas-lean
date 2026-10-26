@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.OneInThreeSat.OneInThreeSatFeasible
 ---
 
-# One In Three Sat Feasible
+# Feasible 1-in-3-SAT instances
 
-An assignment making exactly one literal true per clause.
+**Feasible 1-in-3-SAT instances.** A 1-in-3-SAT instance $(n, \varphi)$ is feasible when
+there is an assignment $v$ of truth values to the variables $0, \dots, n - 1$, with variables
+$y \ge n$ read as false, such that every clause of $\varphi$ has exactly one position holding a
+literal $(y, b)$ with $v(y) = b$.
 
 ## Depends on
 
-- [One In Three Sat Instance](one-in-three-sat-instance.md)
+- [1-in-3-SAT instances](one-in-three-sat-instance.md)
 
 ## Proof depends on
 

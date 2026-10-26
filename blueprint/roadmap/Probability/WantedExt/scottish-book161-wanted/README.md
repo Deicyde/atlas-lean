@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book161
 
-- [Lacunary CLT](lacunary-clt.md)
-- [Kac Lacunary Central Limit Theorem](kac-lacunary-central-limit-theorem.md)
+- [Central limit theorem for lacunary sine sums](lacunary-clt.md)
+- [Kac's lacunary central limit theorem](kac-lacunary-central-limit-theorem.md)

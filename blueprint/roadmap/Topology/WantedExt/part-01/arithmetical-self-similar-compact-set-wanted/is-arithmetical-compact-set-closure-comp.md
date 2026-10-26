@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.isArithmeticalCompactSet_closure_complexityLayerZero
 ---
 
-# Is Arithmetical Compact Set closure complexity Layer Zero
+# The closure of $T_0$ is an arithmetical compact set (Theorem 2)
 
-Theorem 2: the closure `K` of `T_0` (display (7)) is an arithmetical compact set with
-module `μ = 3` and ratio `ρ = 3`, and its stability gauge coincides with the stable
-complexity, `‖n‖_K = ‖n‖_st` for `n ≥ 1`. The extracted record prints `K = T0`; the paper
-writes `K` as the closure of `T_0`.
+**The closure of $T_0$ is an arithmetical compact set (Theorem 2).** Let $T_0$ be the set of
+reals $n / 3^k$, where $n$ and $k$ are natural numbers, $n$ is stable and
+$\lVert n \rVert = 3k + 2$ (with $\lVert n \rVert$ the integer complexity of $n$), and let $K$ be
+the closure of $T_0$ in $\mathbb{R}$. Then $K$ is an arithmetical compact set of module $3$ and
+ratio $3$, and for every natural number $n \ge 1$ the stability gauge $\lVert n \rVert_K$ of $K$
+with module $3$ and ratio $3$ equals the stable complexity $\lVert n \rVert_{\mathrm{st}}$.
 
 ## Depends on
 
-- [Is Arithmetical Compact Set](is-arithmetical-compact-set.md)
-- [Complexity Layer Zero](complexity-layer-zero.md)
-- [Stability Gauge](stability-gauge.md)
-- [Stable Complexity](stable-complexity.md)
+- [Arithmetical compact sets](is-arithmetical-compact-set.md)
+- [The set $T_0$ built from stable numbers](complexity-layer-zero.md)
+- [Stability gauge](stability-gauge.md)
+- [Stable complexity](stable-complexity.md)
 
 ## Sources
 

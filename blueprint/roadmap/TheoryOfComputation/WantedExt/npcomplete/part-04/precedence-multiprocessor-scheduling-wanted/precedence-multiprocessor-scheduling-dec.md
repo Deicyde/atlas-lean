@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.precedenceMultiprocessorSchedulingDec
 ---
 
-# Precedence Multiprocessor Scheduling Dec
+# The precedence-constrained multiprocessor scheduling decision problem
 
-PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING as a decision problem over bitstrings.
+**The precedence-constrained multiprocessor scheduling decision problem.** The decision
+problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to a precedence-multiprocessor scheduling instance that is well formed and feasible.
+Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING as a decision problem over bits
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Precedence Multiprocessor Scheduling Feasible](precedence-multiprocessor-scheduling-fea.md)
-- [Precedence Multiprocessor Scheduling Instance](precedence-multiprocessor-scheduling-ins.md)
-- [Well Formed](well-formed.md)
+- [Feasible precedence-multiprocessor scheduling instances](precedence-multiprocessor-scheduling-fea.md)
+- [Instances of precedence-constrained multiprocessor scheduling](precedence-multiprocessor-scheduling-ins.md)
+- [Well-formed precedence-multiprocessor scheduling instances](well-formed.md)
 
 ## Sources
 

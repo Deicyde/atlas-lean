@@ -5,11 +5,11 @@ navigation: module
 
 # Lipschitz Parametrizable
 
-- [Unit Cube](unit-cube.md)
-- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
-- [Unit Cube zero mem](unit-cube-zero-mem.md)
-- [Is Lipschitz Parametrizable empty](is-lipschitz-parametrizable-empty.md)
-- [Is Lipschitz Parametrizable singleton](is-lipschitz-parametrizable-singleton.md)
-- [Is Lipschitz Parametrizable coe](is-lipschitz-parametrizable-coe.md)
-- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable-2.md)
-- [Image lipschitz With](image-lipschitz-with.md)
+- [The unit cube](unit-cube.md)
+- [Lipschitz parametrizable sets](is-lipschitz-parametrizable.md)
+- [The origin lies in the unit cube](unit-cube-zero-mem.md)
+- [The empty set is Lipschitz parametrizable](is-lipschitz-parametrizable-empty.md)
+- [Singletons are Lipschitz parametrizable](is-lipschitz-parametrizable-singleton.md)
+- [Finsets are Lipschitz parametrizable](is-lipschitz-parametrizable-coe.md)
+- [Finite sets are Lipschitz parametrizable](is-lipschitz-parametrizable-2.md)
+- [Lipschitz images of Lipschitz parametrizable sets](image-lipschitz-with.md)

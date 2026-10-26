@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.exists_pair_of_mem_doublePointSet
 ---
 
-# Exists pair of mem double Point Set
+# Double points have exactly two preimages
 
-Every point of the double-point set has exactly two parameter
-preimages under a regular projection.
+**Double points have exactly two preimages.** Let $L$ be a parametrized link with $n$
+components whose standard projection is regular, and let $p$ be a point of the double-point set
+of $L$. Then there are parameter points $a \ne b$ of $L$ whose projected points are both $p$, and
+every parameter point of $L$ whose projected point is $p$ is $a$ or $b$.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Double Point Set](double-point-set.md)
-- [Proj Point](proj-point.md)
-- [Param Point](param-point.md)
-- [R2](r2.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Regular projections](is-regular-projection.md)
+- [Double points of a link projection](double-point-set.md)
+- [Projected point of a link at a parameter point](proj-point.md)
+- [Parameter point](param-point.md)
+- [Euclidean plane](r2.md)
 
 ## Sources
 

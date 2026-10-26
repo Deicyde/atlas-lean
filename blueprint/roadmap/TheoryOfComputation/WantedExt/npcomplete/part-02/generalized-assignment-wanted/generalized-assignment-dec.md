@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.GeneralizedAssignment.generalizedAssignmentDec
 ---
 
-# Generalized Assignment Dec
+# The generalized assignment decision problem
 
-GENERALIZED ASSIGNMENT as a decision problem over bitstrings.
+**The generalized assignment decision problem.** The decision problem GENERALIZED
+ASSIGNMENT accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding of generalized-assignment instances, to an instance that is well formed and feasible.
+Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ GENERALIZED ASSIGNMENT as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Generalized Assignment Feasible](generalized-assignment-feasible.md)
-- [Generalized Assignment Instance](generalized-assignment-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible generalized assignments](generalized-assignment-feasible.md)
+- [Generalized-assignment instances](generalized-assignment-instance.md)
+- [Well-formed generalized-assignment instances](well-formed.md)
 
 ## Sources
 

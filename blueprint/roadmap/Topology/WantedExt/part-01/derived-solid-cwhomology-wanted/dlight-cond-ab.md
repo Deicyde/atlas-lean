@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.DLightCondAb
 ---
 
-# DLight Cond Ab
+# Derived category of light condensed abelian groups
 
-The derived category of light condensed abelian groups.
+**Derived category of light condensed abelian groups.** The derived category of the abelian
+category of light condensed abelian groups.
 
 ## Depends on
 

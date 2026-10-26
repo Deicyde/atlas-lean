@@ -6,15 +6,17 @@ statement: formalized
 lean: MathlibExt.Topology.AnnulusShared.inside
 ---
 
-# Inside
+# Inside of a set
 
-The **inside** of a set `S ⊆ ℝⁿ`: the points of the complement whose
-connected component there is bounded. For a locally flat sphere this is the open
-ball it bounds.
+**Inside of a set.** For a set $S \subseteq \mathbb{R}^n$, the inside of $S$ is the set of
+points $x \notin S$ whose connected component in the complement $\mathbb{R}^n \setminus S$ is
+bounded.
+
+For the image of a locally flat embedded sphere, this is the open ball it bounds.
 
 ## Depends on
 
-- [Amb](amb.md)
+- [Ambient Euclidean space](amb.md)
 
 ## Sources
 

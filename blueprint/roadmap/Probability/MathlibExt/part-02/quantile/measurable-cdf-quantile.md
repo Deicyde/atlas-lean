@@ -7,13 +7,14 @@ proof: formalized
 lean: ProbabilityTheory.measurable_cdfQuantile
 ---
 
-# Measurable cdf Quantile
+# Measurability of the quantile function
 
-The generalized cdf inverse is measurable.
+**Measurability of the quantile function.** For every measure $\mu$ on $\mathbb{R}$, the
+quantile function $Q_\mu : \mathbb{R} \to \mathbb{R}$ is measurable.
 
 ## Depends on
 
-- [Cdf Quantile](cdf-quantile.md)
+- [Quantile function of a real measure](cdf-quantile.md)
 
 ## Proof depends on
 

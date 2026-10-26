@@ -6,12 +6,12 @@ statement: formalized
 lean: IsDiscreteValuationRing.MaximalIdealGradedPiece
 ---
 
-# Maximal Ideal Graded Piece
+# Graded pieces of the maximal-ideal filtration
 
-The `i`-th maximal-ideal graded piece `𝔪 ^ i ⧸ 𝔪 ^ (i + 1)` of a discrete
-valuation ring, presented as the quotient of the ideal `𝔪 ^ i` by `𝔪 • ⊤`.
-This is new supporting infrastructure for the corrected ATLAS N261
-filtered-trace route, not a source theorem.
+**Graded pieces of the maximal-ideal filtration.** Let $R$ be a discrete valuation ring with
+maximal ideal $\mathfrak{m}$. For $i \in \mathbb{N}$, the $i$-th graded piece is the $R$-module
+$\mathfrak{m}^i/\mathfrak{m}^{i+1}$, realized as the quotient of the ideal $\mathfrak{m}^i$,
+viewed as an $R$-module, by its submodule $\mathfrak{m} \cdot \mathfrak{m}^i$.
 
 ## Depends on
 

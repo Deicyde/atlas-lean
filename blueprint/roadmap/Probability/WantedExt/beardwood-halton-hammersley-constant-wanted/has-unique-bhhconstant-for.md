@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.HasUniqueBHHConstantFor
 ---
 
-# Has Unique BHHConstant For
+# Unique BHH constant of a law
 
-The source's singular constant clause for an explicit sampling law.
+**Unique BHH constant of a law.** A measure $\nu$ on the plane has a unique BHH constant when
+there is exactly one real number $\beta$ that is a BHH constant for $\nu$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ The source's singular constant clause for an explicit sampling law.
 
 ## Proof depends on
 
-- [Is BHHConstant For](is-bhhconstant-for.md)
+- [BHH constant of a law](is-bhhconstant-for.md)
 
 ## Sources
 

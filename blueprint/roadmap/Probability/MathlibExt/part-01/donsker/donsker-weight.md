@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.DonskerWanted.donskerWeight
 ---
 
-# Donsker Weight
+# Polygonal interpolation weight
 
-Weight `t ↦ clamp(n·t - i)` for the polygonal interpolation.
+**Polygonal interpolation weight.** For natural numbers $n$ and $i$ and $t \in [0,1]$, the
+weight is $w_{n,i}(t) = \min(\max(nt - i, 0), 1)$, the clamp of $nt - i$ to $[0,1]$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Donsker Clamp](donsker-clamp.md)
+- [Clamping to the unit interval](donsker-clamp.md)
 
 ## Sources
 

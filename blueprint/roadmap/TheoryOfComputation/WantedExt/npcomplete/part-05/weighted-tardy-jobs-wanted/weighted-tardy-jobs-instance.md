@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.WeightedTardyJobs.WeightedTardyJobsInstance
 ---
 
-# Weighted Tardy Jobs Instance
+# Weighted tardy jobs instances
 
-A weighted-tardy-jobs instance: jobs (processing time, due date, weight), bound.
+**Weighted tardy jobs instances.** An instance of WEIGHTED NUMBER OF TARDY JOBS is a pair
+consisting of a finite list of jobs, each a triple $(p, d, w)$ of natural numbers giving its
+processing time $p$, due date $d$ and weight $w$, and a natural number $K$, the bound.
 
 ## Depends on
 

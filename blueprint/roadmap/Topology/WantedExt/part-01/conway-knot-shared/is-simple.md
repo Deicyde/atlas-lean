@@ -6,21 +6,24 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.IsSimple
 ---
 
-# Is Simple
+# Simple PL knot
 
-The polyline is a *simple closed curve*: the periodic parametrization is
-injective on a half-open fundamental domain `[0, vertices.length)`.
-Equivalent to: all vertices distinct, non-adjacent edges disjoint, adjacent
-edges meet only at their shared vertex.
+**Simple PL knot.** A PL knot $K$ with vertices $v_0, \dots, v_{n-1}$ is simple if its closed
+polyline parametrization, which sends $k + \alpha$, for an integer $0 \le k < n$ and a real
+$0 \le \alpha < 1$, to $(1 - \alpha) v_k + \alpha v_{k+1}$ (indices modulo $n$), is injective on
+the half-open interval $[0, n)$.
+
+Equivalently, the polyline is a simple closed curve: all vertices are distinct, non-adjacent
+edges are disjoint, and adjacent edges meet only at their shared vertex.
 
 ## Depends on
 
-- [PLKnot](plknot.md)
+- [PL knot (closed polyline)](plknot.md)
 
 ## Proof depends on
 
-- [R3](r3.md)
-- [Pl Curve](pl-curve.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
+- [Parametrization of a closed polyline](pl-curve.md)
 
 ## Sources
 

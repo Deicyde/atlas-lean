@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ExactCoverBy3Sets.WellFormed
 ---
 
-# Well Formed
+# Well-formed EXACT COVER BY 3-SETS instances
 
-Well-formedness of an instance.
+**Well-formed EXACT COVER BY 3-SETS instances.** An instance $(q, C)$ of EXACT COVER BY
+3-SETS is well formed when every entry of $C$ is a list of exactly three pairwise distinct
+natural numbers, each less than $3q$.
 
 ## Depends on
 
-- [Exact Cover By3 Sets Instance](exact-cover-by3-sets-instance.md)
+- [Instances of EXACT COVER BY 3-SETS](exact-cover-by3-sets-instance.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rademacher Function](../../../../Probability/MathlibExt/part-01/number-theory/random-multiplicative-function/rademacher-function.md)
+- [Rademacher random multiplicative function](../../../../Probability/MathlibExt/part-01/number-theory/random-multiplicative-function/rademacher-function.md)
 
 ## Sources
 

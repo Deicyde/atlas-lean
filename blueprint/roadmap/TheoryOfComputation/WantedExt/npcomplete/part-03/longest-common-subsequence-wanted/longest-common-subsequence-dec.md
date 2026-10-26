@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCommonSubsequence.longestCommonSubsequenceDec
 ---
 
-# Longest Common Subsequence Dec
+# The LONGEST COMMON SUBSEQUENCE decision problem
 
-LONGEST COMMON SUBSEQUENCE as a decision problem over bitstrings.
+**The LONGEST COMMON SUBSEQUENCE decision problem.** LONGEST COMMON SUBSEQUENCE is the
+decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
+bitstring encoding, to a feasible longest-common-subsequence instance. Bitstrings that do not
+decode are rejected.
 
 ## Depends on
 
@@ -23,8 +26,8 @@ LONGEST COMMON SUBSEQUENCE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Longest Common Subsequence Feasible](longest-common-subsequence-feasible.md)
-- [Longest Common Subsequence Instance](longest-common-subsequence-instance.md)
+- [Feasible longest-common-subsequence instances](longest-common-subsequence-feasible.md)
+- [Longest-common-subsequence instances](longest-common-subsequence-instance.md)
 
 ## Sources
 

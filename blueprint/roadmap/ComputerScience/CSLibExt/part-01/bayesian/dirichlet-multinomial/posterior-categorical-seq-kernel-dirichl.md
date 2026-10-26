@@ -20,11 +20,11 @@ with parameters $\alpha_i + n_i(s)$.
 - [Label counts](counts.md)
 - [Probability vectors](prob-vectors.md)
 - [Likelihood of a label sequence](seq-likelihood.md)
-- [Dirichlet Density](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-density.md)
-- [Dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
+- [Unnormalized Dirichlet density](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-density.md)
+- [Dirichlet distribution](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
 - [The Dirichlet integral](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/lintegral-dirichlet-density.md)
-- [Multi Beta](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
-- [Simplex Completion](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/simplex-completion.md)
+- [Multivariate Beta function](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
+- [Simplex completion](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/simplex-completion.md)
 
 ## Proof depends on
 

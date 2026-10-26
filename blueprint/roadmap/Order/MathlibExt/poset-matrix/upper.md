@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.IsPosetMatrix.upper
 ---
 
-# Upper
+# Poset matrices are upper triangular
 
-Projection of the upper-triangularity clause (D2).
+**Poset matrices are upper triangular.** If $M$ is an $n \times n$ poset matrix, then
+$M_{ij}$ is false for all indices $i, j < n$ with $j < i$.
 
 ## Depends on
 
-- [Is Poset Matrix](is-poset-matrix.md)
+- [Poset matrix](is-poset-matrix.md)
 
 ## Sources
 

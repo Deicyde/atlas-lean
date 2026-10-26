@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsPredenseBelow
 ---
 
-# Is Predense Below
+# Predense below a condition
 
-A set A⊂ ℙ is predense below q∈ P if for any r≤ q, there is a∈ A such that a, r are compatible
+**Predense below a condition.** A set $A \subseteq \mathbb{P}$ of elements of a partial order
+$\mathbb{P}$ is predense below $q \in \mathbb{P}$ if for every $r \le q$ there is $a \in A$ such
+that $r$ and $a$ are compatible.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Compatible](is-compatible.md)
+- [Compatible conditions](is-compatible.md)
 
 ## Sources
 

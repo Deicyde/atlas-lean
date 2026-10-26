@@ -7,8 +7,8 @@ navigation: module
 
 ## Ideal
 
-- [Quotient Inf Alg Equiv Pi Quotient](quotient-inf-alg-equiv-pi-quotient.md)
+- [Chinese remainder theorem as an algebra isomorphism](quotient-inf-alg-equiv-pi-quotient.md)
 
 ## Adjoin Root
 
-- [Tensor Product Alg Equiv Pi](tensor-product-alg-equiv-pi.md)
+- [Base change of $K(X)/(f)$ along a factorization of $f$ over $K'$](tensor-product-alg-equiv-pi.md)

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.IsGenericFor
 ---
 
-# Is Generic For
+# (M, ℙ)-generic conditions
 
-Fix a set M ⊆ ℙ ⊔ 𝒫(ℙ) and write M_c = , p ∈ ℙ : inl(p) ∈ M ,,   Mₛ = , D ⊆ ℙ : inr(D) ∈ M ,. No
-model-theoretic condition is imposed on M here. In the intended application M is (the trace of) a
-countable elementary submodel M ≺ H(θ) with ℙ ∈ M — uncollapsed, hence not transitive — but
-genericity refers only to M_c and Mₛ, so those are all the definition records. The elementarity is
-supplied where it is used: by the club in IsProper, not here.
+**(M, ℙ)-generic conditions.** Let $\mathbb{P}$ be a partial order and $M$ a subset of the
+disjoint union $\mathbb{P} \sqcup \mathcal{P}(\mathbb{P})$. Write $M_c$ for the set of
+$p \in \mathbb{P}$ whose copy in the disjoint union lies in $M$, and $M_s$ for the set of
+$D \subseteq \mathbb{P}$ whose copy lies in $M$. A condition $q \in \mathbb{P}$ is
+$(M, \mathbb{P})$-generic if for every $D \in M_s$ that is dense in $\mathbb{P}$ (every element
+of $\mathbb{P}$ has an element of $D$ below it), the set $D \cap M_c$ is predense below $q$: for
+every $r \le q$ there are $a \in D \cap M_c$ and $s \in \mathbb{P}$ with $s \le r$ and $s \le a$.
 
-A condition q is (M,ℙ)-generic if for every D ∈ Mₛ that is dense in ℙ, the set D ∩ M_c is predense
-below q: ∀ D ∈ Mₛ [ D  dense ⟶ ∀ r ≤ q ∃ a ∈ D ∩ M_c ∃ s ∈ ℙ (s ≤ r ∧ s ≤ a) ].
+No condition is imposed on $M$ here. In the intended application $M$ is the trace of a countable
+elementary submodel of $H(\theta)$, for a sufficiently large regular cardinal $\theta$, that
+contains $\mathbb{P}$; genericity depends only on $M_c$ and $M_s$, and the elementarity is
+supplied by the club in the definition of proper partial orders.
 
 ## Depends on
 
@@ -22,9 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Predense Below](is-predense-below.md)
-- [Model Conds](model-conds.md)
-- [Model Sets](model-sets.md)
+- [Predense below a condition](is-predense-below.md)
+- [Conditions in a model](model-conds.md)
+- [Sets of conditions in a model](model-sets.md)
 
 ## Sources
 

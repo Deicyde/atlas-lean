@@ -16,7 +16,7 @@ where $\odot$ is the binomial product and $d/dx$ is the formal derivative.
 
 ## Depends on
 
-- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
+- [Binomial (Hurwitz) product of power series](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

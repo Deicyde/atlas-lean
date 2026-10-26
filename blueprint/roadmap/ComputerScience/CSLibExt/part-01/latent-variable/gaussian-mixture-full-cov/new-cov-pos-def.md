@@ -29,7 +29,7 @@ responsibility-weighted mean) is positive definite.
 - [Joint density of the full-covariance Gaussian mixture](joint.md)
 - [Mean update of the full-covariance Gaussian mixture](new-mean.md)
 - [Responsibilities of the full-covariance Gaussian mixture](resp.md)
-- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Multivariate Gaussian density function](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 - [Weighted scatter matrices of points in general position are positive definite](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter-pos-def.md)
 
 ## Sources

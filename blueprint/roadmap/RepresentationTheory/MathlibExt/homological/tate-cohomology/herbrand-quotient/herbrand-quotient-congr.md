@@ -13,12 +13,12 @@ Invariance under carrier equivalences in degrees `0` and `-1`.
 
 ## Depends on
 
-- [Herbrand Finite](herbrand-finite.md)
-- [Herbrand Quotient](herbrand-quotient.md)
+- [Finiteness hypothesis for the Herbrand quotient](herbrand-finite.md)
+- [Herbrand quotient](herbrand-quotient.md)
 
 ## Proof depends on
 
-- [Herbrand Quotient eq](herbrand-quotient-eq.md)
+- [Herbrand quotient as a ratio of orders](herbrand-quotient-eq.md)
 
 ## Sources
 

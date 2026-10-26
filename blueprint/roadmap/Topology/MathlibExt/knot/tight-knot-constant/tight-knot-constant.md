@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.TightKnot.tightKnotConstant
 ---
 
-# Tight Knot Constant
+# Tight knot constant
 
-The tight knot constant `C₂₂ₐ`: the supremal admissible constant
-for the inequality `L ≥ c * C ^ (3 / 4)` relating type ropelength to
-crossing number, without assuming that the supremum is attained.
+**Tight knot constant.** The tight knot constant $C_{22a}$ is the supremum, taken in the
+extended reals $[-\infty, \infty]$, of the set of real numbers $c$ that are admissible for the
+tight-knot inequality $\mathrm{ropelength} \ge c \cdot (\text{crossing number})^{3/4}$ on link
+types. The supremum is not assumed to be attained.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Admissible](is-admissible.md)
+- [Admissible constants for the tight-knot inequality](is-admissible.md)
 
 ## Sources
 

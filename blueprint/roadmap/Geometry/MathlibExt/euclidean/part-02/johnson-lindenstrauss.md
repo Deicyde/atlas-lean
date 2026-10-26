@@ -26,8 +26,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integrable exp mul sq std Gaussian](../../../../Probability/MathlibExt/part-01/distributions/chi-square/integrable-exp-mul-sq-std-gaussian.md)
-- [Mgf sq std Gaussian](../../../../Probability/MathlibExt/part-01/distributions/chi-square/mgf-sq-std-gaussian.md)
+- [Exponential moments of the square of a standard normal](../../../../Probability/MathlibExt/part-01/distributions/chi-square/integrable-exp-mul-sq-std-gaussian.md)
+- [Moment generating function of the square of a standard normal](../../../../Probability/MathlibExt/part-01/distributions/chi-square/mgf-sq-std-gaussian.md)
 
 ## Sources
 

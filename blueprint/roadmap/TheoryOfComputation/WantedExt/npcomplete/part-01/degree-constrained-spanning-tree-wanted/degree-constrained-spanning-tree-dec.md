@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DegreeConstrainedSpanningTree.degreeConstrainedSpanningTreeDec
 ---
 
-# Degree Constrained Spanning Tree Dec
+# DEGREE-CONSTRAINED SPANNING TREE as a decision problem
 
-DEGREE-CONSTRAINED SPANNING TREE as a decision problem over bitstrings.
+**DEGREE-CONSTRAINED SPANNING TREE as a decision problem.** The decision problem
+DEGREE-CONSTRAINED SPANNING TREE accepts a bitstring $x$ exactly when bitstring decoding of $x$ as
+a triple $(n, E, K)$ succeeds and returns an instance of DEGREE-CONSTRAINED SPANNING TREE that is
+both well formed and feasible; every bitstring that does not decode is rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ DEGREE-CONSTRAINED SPANNING TREE as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Degree Constrained Spanning Tree Feasible](degree-constrained-spanning-tree-feasibl.md)
-- [Degree Constrained Spanning Tree Instance](degree-constrained-spanning-tree-instanc.md)
-- [Well Formed](well-formed.md)
+- [Feasibility for DEGREE-CONSTRAINED SPANNING TREE](degree-constrained-spanning-tree-feasibl.md)
+- [Instances of DEGREE-CONSTRAINED SPANNING TREE](degree-constrained-spanning-tree-instanc.md)
+- [Well-formed DEGREE-CONSTRAINED SPANNING TREE instances](well-formed.md)
 
 ## Sources
 

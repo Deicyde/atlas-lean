@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.Topology.PardonDistortionWanted.KnotTheory.PardonDistortion.distortionRatio
 ---
 
-# Distortion Ratio
+# Distortion ratio
 
-The distortion ratio for the two points with parameters `s` and `t`.
+**Distortion ratio.** For a knot $K$ with parametrization $\gamma$ and real numbers $s$ and $t$,
+the distortion ratio of $K$ at $s$ and $t$ is the intrinsic distance between $s$ and $t$ along $K$
+divided by the Euclidean distance $\lVert \gamma(s) - \gamma(t) \rVert$ in $\mathbb{R}^3$, where
+division by $0$ gives $0$.
 
 ## Depends on
 
-- [Knot](../../part-01/conway-knot-shared/knot.md)
+- [Oriented smooth knot](../../part-01/conway-knot-shared/knot.md)
 
 ## Proof depends on
 
-- [R3](../../part-01/conway-knot-shared/r3.md)
-- [Intrinsic Distance](intrinsic-distance.md)
+- [Euclidean space $\mathbb{R}^3$](../../part-01/conway-knot-shared/r3.md)
+- [Intrinsic distance on a knot](intrinsic-distance.md)
 
 ## Sources
 

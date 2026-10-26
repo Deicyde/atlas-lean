@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.IsSolid
 ---
 
-# Is Solid
+# The solidity class
 
-The class expressing that a light condensed abelian group is solid.
+**The solidity class.** For a light condensed abelian group $A$, the class asserting that $A$
+is solid.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Solid](is-solid.md)
+- [Solid light condensed abelian groups](is-solid.md)
 
 ## Sources
 

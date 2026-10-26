@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.Topology.ScottishBook187cWanted.scottishBook187c_refuted
 ---
 
-# Scottish Book187c refuted
+# Open maps can raise the dimension of a cube
 
-Scottish Book Problem 187, part (3), is false as stated: Keldysh
-constructed an open continuous surjection `I^m → I^n` for `m < n`,
-refuting the impossibility claim for an open (interior) continuous
-transformation of a `p`-dimensional cube into a `q`-dimensional cube
-for `p < q`. Status: solved-negative for part (3) (whole Problem 187
-is partially_solved, part (1) remaining separate).
+**Open maps can raise the dimension of a cube.** There are natural numbers $p < q$ and a
+continuous, open, surjective map $f \colon I^p \to I^q$, where $I^p = [0,1]^p$ and
+$I^q = [0,1]^q$ are the $p$- and $q$-dimensional cubes.
+
+Keldysh constructed such maps, refuting the claim of Scottish Book Problem 187, part (3), that no
+open (interior) continuous map of a $p$-dimensional cube onto a $q$-dimensional cube exists for
+$p < q$.
 
 ## Depends on
 
-- [Cube](cube.md)
+- [The p-dimensional cube](cube.md)
 
 ## Sources
 

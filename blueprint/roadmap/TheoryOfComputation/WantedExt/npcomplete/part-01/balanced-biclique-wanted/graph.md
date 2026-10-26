@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.BalancedBiclique.Graph
 ---
 
-# Graph
+# Graph of a balanced biclique instance
 
-The graph of the instance as a `SimpleGraph (Fin n)`.
+**Graph of a balanced biclique instance.** The graph of a balanced biclique instance
+$(n, es, K)$ is the simple graph on $\{0, \dots, n-1\}$ in which distinct vertices $u$ and $v$
+are adjacent when $(u, v)$ or $(v, u)$ belongs to $es$.
 
 ## Depends on
 
-- [Balanced Biclique Instance](balanced-biclique-instance.md)
+- [Balanced biclique instances](balanced-biclique-instance.md)
 
 ## Proof depends on
 

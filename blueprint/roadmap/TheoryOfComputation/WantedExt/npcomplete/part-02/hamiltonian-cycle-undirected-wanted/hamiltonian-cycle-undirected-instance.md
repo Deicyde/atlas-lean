@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianCycleUndirected.HamiltonianCycleUndirectedInstance
 ---
 
-# Hamiltonian Cycle Undirected Instance
+# Instances of HAMILTONIAN CYCLE (UNDIRECTED)
 
-An instance: vertex count, edge list.
+**Instances of HAMILTONIAN CYCLE (UNDIRECTED).** An instance of HAMILTONIAN CYCLE
+(UNDIRECTED) is a pair $(n, E)$ of a natural number $n$, the number of vertices, and a finite
+list $E$ of pairs of natural numbers, the edges.
 
 ## Depends on
 

@@ -6,11 +6,19 @@ statement: formalized
 lean: MathlibExt.Topology.ClassificationOfSurfacesWanted.Topology.ClassificationOfSurfaces.OrientableRel
 ---
 
-# Orientable Rel
+# Gluing relation for the orientable normal form
 
-The representative orientable surface homeomorphic to a closed orientable genus `p`
-surface with `n` discs removed, obtained by identifying the boundary of a disc in the pattern
-`a₁b₁a₁⁻¹b₁⁻¹⋯aₚbₚaₚ⁻¹bₚ⁻¹c₁h₁c₁⁻¹⋯cₙhₙcₙ⁻¹`.
+**Gluing relation for the orientable normal form.** For natural numbers $p$ and $n$, put
+$N = 4p + 3n$ and write $e(t) = e^{2\pi i t}$ for the boundary point of the closed unit disc at
+the real parameter $t$. This is the relation on the closed unit disc under which, for every
+$x \in [0, 1]$ and every natural number $k < p$, the point $e((4k + x)/N)$ is related to
+$e((4k + 3 - x)/N)$ and the point $e((4k + 1 + x)/N)$ is related to $e((4k + 4 - x)/N)$, and
+for every $x \in [0, 1]$ and every natural number $k < n$, the point $e(-(3k + x)/N)$ is related
+to $e(-(3k + 3 - x)/N)$; no other pairs are related.
+
+Gluing the disc along it identifies the boundary in the pattern $a_1 b_1 a_1^{-1} b_1^{-1}
+\cdots a_p b_p a_p^{-1} b_p^{-1} c_1 h_1 c_1^{-1} \cdots c_n h_n c_n^{-1}$, where the arcs $h_j$
+are left free.
 
 ## Depends on
 

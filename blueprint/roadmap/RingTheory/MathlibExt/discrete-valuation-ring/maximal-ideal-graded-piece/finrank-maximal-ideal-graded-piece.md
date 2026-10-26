@@ -7,17 +7,20 @@ proof: formalized
 lean: IsDiscreteValuationRing.finrank_maximalIdealGradedPiece
 ---
 
-# Finrank maximal Ideal Graded Piece
+# Graded pieces of a DVR are one-dimensional
 
-Every maximal-ideal graded piece of a DVR has residue-field finrank one.
+**Graded pieces of a DVR are one-dimensional.** Let $R$ be a discrete valuation ring with
+maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$. For every
+$i \in \mathbb{N}$, the graded piece $\mathfrak{m}^i/\mathfrak{m}^{i+1}$ is a vector space of
+dimension one over $\kappa$.
 
 ## Depends on
 
-- [Maximal Ideal Graded Piece](maximal-ideal-graded-piece.md)
+- [Graded pieces of the maximal-ideal filtration](maximal-ideal-graded-piece.md)
 
 ## Proof depends on
 
-- [Residue Field Linear Equiv Maximal Ideal Graded Piece](residue-field-linear-equiv-maximal-ideal.md)
+- [Graded pieces of a DVR as copies of the residue field](residue-field-linear-equiv-maximal-ideal.md)
 
 ## Sources
 

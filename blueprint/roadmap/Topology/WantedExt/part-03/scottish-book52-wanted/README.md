@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book52
 
-- [Has Derivative At Every Point](has-derivative-at-every-point.md)
-- [Everywhere differentiable class not borel](everywhere-differentiable-class-not-bore.md)
+- [Functions differentiable at every point of $(0, 1)$](has-derivative-at-every-point.md)
+- [Everywhere differentiable functions do not form a Borel set](everywhere-differentiable-class-not-bore.md)

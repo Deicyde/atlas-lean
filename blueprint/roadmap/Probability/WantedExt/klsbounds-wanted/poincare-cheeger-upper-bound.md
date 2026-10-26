@@ -6,15 +6,18 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.poincare_cheeger_upper_bound
 ---
 
-# Poincare cheeger upper bound
+# Cheeger's inequality for isotropic log-concave measures
 
-The upper Poincare comparison shared by the catalogue and retained primary.
+**Cheeger's inequality for isotropic log-concave measures.** Let $n \ge 1$, let $\mu$ be an
+isotropic log-concave probability measure on $\mathbb{R}^n$, and let $\psi_\mu \in [0, \infty]$ be
+the inverse Cheeger constant of $\mu$. Then the smooth Poincaré constant of $\mu$ is at most
+$4 \psi_\mu^2$.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
-- [Smooth Poincare Constant](../../MathlibExt/part-01/geometry/kls/smooth-poincare-constant.md)
-- [Is Isotropic Log Concave](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
+- [Inverse Cheeger constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
+- [Smooth Poincaré constant](../../MathlibExt/part-01/geometry/kls/smooth-poincare-constant.md)
+- [Isotropic log-concave probability measures](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

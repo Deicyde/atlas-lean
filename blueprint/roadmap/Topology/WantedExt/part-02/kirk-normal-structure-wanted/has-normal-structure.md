@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Topology.KirkNormalStructureWanted.Topology.KirkNormalStructure.HasNormalStructure
 ---
 
-# Has Normal Structure
+# Normal structure
 
-A bounded convex set has normal structure if every nontrivial convex subset
-contains a non-diametral point.
+**Normal structure.** A set $K$ in a real normed space has normal structure if every convex
+subset $H \subseteq K$ with at least two points contains a point that is not diametral in $H$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Diametral Point](is-diametral-point.md)
+- [Diametral point](is-diametral-point.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.HamiltonianCycleUndirected.HamiltonianCycleUndirectedFeasible
 ---
 
-# Hamiltonian Cycle Undirected Feasible
+# Feasible HAMILTONIAN CYCLE (UNDIRECTED) instances
 
-A Hamiltonian cycle.
+**Feasible HAMILTONIAN CYCLE (UNDIRECTED) instances.** An instance $(n, E)$ is feasible when
+$n \ge 3$ and its graph has a Hamiltonian cycle, that is, a cycle that visits every vertex exactly
+once.
 
 ## Depends on
 
-- [Hamiltonian Cycle Undirected Instance](hamiltonian-cycle-undirected-instance.md)
+- [Instances of HAMILTONIAN CYCLE (UNDIRECTED)](hamiltonian-cycle-undirected-instance.md)
 
 ## Proof depends on
 
-- [Graph](graph.md)
+- [Graph of a HAMILTONIAN CYCLE (UNDIRECTED) instance](graph.md)
 
 ## Sources
 

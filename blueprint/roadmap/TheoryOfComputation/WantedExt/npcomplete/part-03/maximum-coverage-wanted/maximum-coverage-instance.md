@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumCoverage.MaximumCoverageInstance
 ---
 
-# Maximum Coverage Instance
+# Maximum-coverage instances
 
-A maximum-coverage instance: universe size, list of subsets, set budget K, coverage target
-M.
+**Maximum-coverage instances.** A maximum-coverage instance is a tuple $(n, S, K, M)$ of a
+natural number $n$ (the universe size), a list $S$ of lists of natural numbers (the subsets), a
+natural number $K$ (the set budget) and a natural number $M$ (the coverage target).
 
 ## Depends on
 

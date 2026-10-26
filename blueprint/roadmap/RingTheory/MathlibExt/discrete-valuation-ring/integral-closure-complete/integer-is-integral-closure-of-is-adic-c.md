@@ -7,11 +7,15 @@ proof: formalized
 lean: Valuation.integer_isIntegralClosure_of_isAdicComplete
 ---
 
-# Integer is Integral Closure of is Adic Complete
+# Valuation rings dominating a complete DVR are integral closures
 
-For a finite separable extension of the fraction field of an adically complete DVR,
-a valuation integer ring receiving the base by a local algebra map is the integral closure.
-Completeness gives the unique prime over the base maximal ideal.
+**Valuation rings dominating a complete DVR are integral closures.** Let $A$ be a discrete
+valuation ring that is complete with respect to its maximal ideal, $K$ its fraction field, and
+$L$ a finite separable extension of $K$. Let $v$ be a valuation on $L$ with values in a linearly
+ordered commutative group with zero, with valuation ring $\mathcal O_v = \{x \in L : v(x) \le 1\}$.
+Suppose $\mathcal O_v$ is an $A$-algebra such that the composite $A \to \mathcal O_v \subseteq L$
+is the structure map $A \to L$, and $A \to \mathcal O_v$ is a local homomorphism. Then
+$\mathcal O_v$ is the integral closure of $A$ in $L$.
 
 ## Depends on
 
@@ -19,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists Unique primes Over maximal Ideal of is Adic Complete](exists-unique-primes-over-maximal-ideal.md)
-- [Is Discrete Valuation Ring of is Adic Complete](is-discrete-valuation-ring-of-is-adic-co.md)
+- [Exactly one prime lies over the maximal ideal of a complete DVR](exists-unique-primes-over-maximal-ideal.md)
+- [The integral closure of a complete DVR is a DVR](is-discrete-valuation-ring-of-is-adic-co.md)
 
 ## Sources
 

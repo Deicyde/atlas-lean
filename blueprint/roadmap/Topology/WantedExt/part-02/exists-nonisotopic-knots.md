@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Topology.NonIsotopicKnotsWanted.KnotTheory.exists_nonisotopic_knots
 ---
 
-# Non Isotopic Knots Wanted
+# Existence of non-isotopic knots
 
-Source: Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Via leanprover/lean-eval@38361be, problem `exists_nonisotopic_knots`.
+**Existence of non-isotopic knots.** There are two oriented smooth knots $K_1$ and $K_2$ in
+$\mathbb{R}^3$ that are not ambient-isotopic.
 
 ## Depends on
 
-- [Knot](../part-01/conway-knot-shared/knot.md)
-- [Isotopic](../part-01/conway-knot-shared/isotopic.md)
+- [Oriented smooth knot](../part-01/conway-knot-shared/knot.md)
+- [Ambient isotopy of oriented knots](../part-01/conway-knot-shared/isotopic.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Topology.NonIsotopicKnotsWanted](../../../../sources/v2/WantedExt.md)
+- Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Via leanprover/lean-eval@38361be, problem `exists_nonisotopic_knots`.

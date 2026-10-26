@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.oneMinusShift'
 ---
 
-# One Minus Shift'
+# One minus shift on ℤ(ℕ ∪ {∞})
 
-The endomorphism `1 - shift` of the free light condensed abelian group `ℤ[ℕ∪{∞}]`.
+**One minus shift on ℤ[ℕ ∪ {∞}].** Let $\mathbb{Z}[\mathbb{N} \cup \{\infty\}]$ be the free
+light condensed abelian group on the light profinite set $\mathbb{N} \cup \{\infty\}$, and let
+$\mathrm{shift}$ be its endomorphism induced by the map $n \mapsto n + 1$, $\infty \mapsto \infty$.
+This is the endomorphism $1 - \mathrm{shift}$ of $\mathbb{Z}[\mathbb{N} \cup \{\infty\}]$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Shift](shift.md)
+- [The shift map on $\mathbb{N} \cup \{\infty\}$](shift.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [KOut Reachable](kout-reachable.md)
+- [Reachability by a chain of friends](kout-reachable.md)
 
 ## Sources
 

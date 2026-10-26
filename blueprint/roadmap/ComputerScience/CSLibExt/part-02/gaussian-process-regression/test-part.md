@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Block Row](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/block-row.md)
+- [Horizontal block matrix](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/block-row.md)
 
 ## Sources
 

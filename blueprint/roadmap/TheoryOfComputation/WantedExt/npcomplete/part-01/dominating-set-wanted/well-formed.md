@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DominatingSet.WellFormed
 ---
 
-# Well Formed
+# Well-formed DOMINATING SET instances
 
-Well-formedness of an instance.
+**Well-formed DOMINATING SET instances.** An instance $(n, E, K)$ of DOMINATING SET is well
+formed when the list $E$ has no repeated entries and every pair $(u, v) \in E$ satisfies $u < n$,
+$v < n$, $u \ne v$ and $(v, u) \notin E$.
 
 ## Depends on
 
-- [Dominating Set Instance](dominating-set-instance.md)
+- [Instances of DOMINATING SET](dominating-set-instance.md)
 
 ## Sources
 

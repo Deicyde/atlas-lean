@@ -7,17 +7,19 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_top
 ---
 
-# Conductor Ideal top
+# Conductor ideal of the whole algebra
 
-The conductor ideal of the top subalgebra is the top ideal.
+**Conductor ideal of the whole algebra.** Let $R$ be a commutative semiring and $S$ a
+commutative $R$-algebra. The conductor ideal of $S$, viewed as an $R$-subalgebra of itself, is
+the unit ideal $S$.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Mem conductor Ideal](mem-conductor-ideal.md)
+- [Membership in the conductor ideal](mem-conductor-ideal.md)
 
 ## Sources
 

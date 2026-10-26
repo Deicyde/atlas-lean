@@ -11,7 +11,7 @@ A permutation of total cost at most `K`.
 
 ## Depends on
 
-- [Quadratic Assignment Instance](quadratic-assignment-instance.md)
+- [Instances of QUADRATIC ASSIGNMENT](quadratic-assignment-instance.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.dense_primeSet_of_dense_primeSet₁
 ---
 
-# Lemma 2
+# Density of the primes passes from the subspace without 1
 
-**Lemma 2**: if the set of primes is dense in `X₁`, then it
-is dense in `X`.
+**Density of the primes passes from the subspace without 1.** Let $X$ be the positive
+integers with Macías's coprime topology and $X_1$ the subspace of positive integers different
+from $1$. If the set of prime numbers is dense in $X_1$, then it is dense in $X$.
 
 ## Depends on
 
-- [Macias Topology](macias-topology.md)
-- [Macias Topology₁](macias-topology-2.md)
-- [Prime Set](prime-set.md)
-- [Prime Set₁](prime-set-2.md)
+- [Macías's coprime topology](macias-topology.md)
+- [Macías's coprime topology without 1](macias-topology-2.md)
+- [Primes among the positive integers](prime-set.md)
+- [Primes among the positive integers different from 1](prime-set-2.md)
 
 ## Sources
 

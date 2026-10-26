@@ -18,7 +18,7 @@ total order on a type $\alpha$. If $a, b \in \alpha$ and $a \ne b$, then $a < b$
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

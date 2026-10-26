@@ -7,19 +7,20 @@ proof: formalized
 lean: ProbabilityTheory.map_cdfQuantile_restrict_Icc
 ---
 
-# Map cdf Quantile restrict Icc
+# Inverse transform sampling
 
-The generalized cdf inverse maps Lebesgue measure restricted to `[0, 1]`
-to the given real probability measure.
+**Inverse transform sampling.** Let $\mu$ be a probability measure on $\mathbb{R}$ with quantile
+function $Q_\mu$. The pushforward under $Q_\mu$ of Lebesgue measure restricted to $[0, 1]$ is
+$\mu$.
 
 ## Depends on
 
-- [Cdf Quantile](cdf-quantile.md)
+- [Quantile function of a real measure](cdf-quantile.md)
 
 ## Proof depends on
 
 - [Cdf Quantile le iff](cdf-quantile-le-iff.md)
-- [Measurable cdf Quantile](measurable-cdf-quantile.md)
+- [Measurability of the quantile function](measurable-cdf-quantile.md)
 
 ## Sources
 

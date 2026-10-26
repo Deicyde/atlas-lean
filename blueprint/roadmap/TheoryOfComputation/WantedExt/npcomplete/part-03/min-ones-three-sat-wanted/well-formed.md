@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinOnesThreeSat.WellFormed
 ---
 
-# Well Formed
+# Well-formed MINIMUM ONES 3-SAT instances
 
-Well-formedness of an instance.
+**Well-formed MINIMUM ONES 3-SAT instances.** A triple $(n, \varphi, K)$ of a natural number
+$n$, a CNF formula $\varphi$ and a natural number $K$ is well formed when every clause of $\varphi$
+is a list of exactly three literals and every literal of every clause has variable index less
+than $n$.
 
 ## Depends on
 
-- [Min Ones Three Sat Instance](min-ones-three-sat-instance.md)
+- [MINIMUM ONES 3-SAT instances](min-ones-three-sat-instance.md)
 
 ## Proof depends on
 

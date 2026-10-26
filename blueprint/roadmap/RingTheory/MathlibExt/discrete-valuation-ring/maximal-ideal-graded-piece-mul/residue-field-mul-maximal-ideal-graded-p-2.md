@@ -7,17 +7,18 @@ proof: formalized
 lean: IsDiscreteValuationRing.residueFieldMulMaximalIdealGradedPiece_residue_mk
 ---
 
-# Residue Field Mul Maximal Ideal Graded Piece residue mk
+# Multiplication by a residue class on representatives
 
-Representative formula: multiplication by `residue x` acts on a quotient
-representative as the representative `R`-scalar action `x • ·`. This is the
-bridge from residue scalar multiplication to actual multiplication on the
-quotient.
+**Multiplication by a residue class on representatives.** Let $R$ be a discrete valuation
+ring with maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$. For $x \in R$,
+$i \in \mathbb{N}$ and $y \in \mathfrak{m}^i$, multiplication by the residue class
+$\bar{x} \in \kappa$ on $\mathfrak{m}^i/\mathfrak{m}^{i+1}$ sends the class of $y$ to the class
+of $x y$.
 
 ## Depends on
 
-- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
-- [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)
+- [Graded pieces of the maximal-ideal filtration](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Multiplication by a residue class on a graded piece](residue-field-mul-maximal-ideal-graded-p.md)
 
 ## Sources
 

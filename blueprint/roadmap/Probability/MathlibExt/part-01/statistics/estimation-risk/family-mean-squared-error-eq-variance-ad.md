@@ -6,20 +6,26 @@ proof: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.familyMeanSquaredError_eq_variance_add_sq_familyBias
 ---
 
-# Family Mean Squared Error eq variance add sq family Bias
+# Bias–variance decomposition for a parametric family
 
-Family equation 7.3.1 for a single fixed estimator: at each parameter with
-a finite second moment, family MSE equals variance plus squared family bias.
+**Bias–variance decomposition for a parametric family.** Let $S$ be a measurable space,
+$W : S \to \mathbb{R}$ an estimator, $(P_\theta)_{\theta \in \Theta}$ a family of probability
+measures on $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. Suppose that for every
+$\theta \in \Theta$, $W$ has a finite second moment under $P_\theta$, and $W$ and
+$(W - \tau(\theta))^2$ are integrable for $P_\theta$. Then for every $\theta \in \Theta$ the family
+mean squared error of $W$ at $\theta$ equals the variance $\operatorname{Var}_{P_\theta}(W)$ of
+$W$ under $P_\theta$ plus the square of the family bias of $W$ at $\theta$.
 
 ## Depends on
 
-- [Family Bias](family-bias.md)
-- [Family Mean Squared Error](family-mean-squared-error.md)
+- [Family bias of an estimator](family-bias.md)
+- [Family mean squared error of an estimator](family-mean-squared-error.md)
 
 ## Proof depends on
 
-- [Mean Squared Error eq variance add sq bias](mean-squared-error-eq-variance-add-sq-bi.md)
+- [Bias–variance decomposition of the mean squared error](mean-squared-error-eq-variance-add-sq-bi.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- equation 7.3.1, in family form for a single fixed estimator.

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.unitSquare
 ---
 
-# Unit Square
+# Unit square
 
-The closed unit square from the primary BHH formulation.
+**Unit square.** The closed unit square $[0,1]^2$: the set of points of the Euclidean plane
+both of whose coordinates lie in the interval $[0,1]$.
 
 ## Depends on
 

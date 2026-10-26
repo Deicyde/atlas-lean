@@ -7,12 +7,11 @@ proof: formalized
 lean: MathlibExt.Topology.KuratowskiClosureComplement.kuratowski_closure_complement
 ---
 
-# Kuratowski Closure Complement
+# Kuratowski's closure-complement theorem
 
-The closure-complement orbit of any set contains at most 14 distinct sets.
-
-This packages Mathlib's canonical `Topology.ClosureCompl.IsObtainable` interface
-as the finite-and-cardinality form requested by the original Wanted entry.
+**Kuratowski's closure-complement theorem.** Let $X$ be a topological space and $s \subseteq X$.
+The sets that can be obtained from $s$ by applying closure and complement finitely many times
+(including $s$ itself) form a finite family of at most $14$ distinct sets.
 
 ## Depends on
 

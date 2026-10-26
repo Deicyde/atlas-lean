@@ -4,9 +4,9 @@ navigation: module
 
 # Probability Generating Function
 
-- [Pgf](pgf.md)
-- [Integrable pow of abs le one](integrable-pow-of-abs-le-one.md)
-- [Pgf one](pgf-one.md)
+- [Probability generating function](pgf.md)
+- [Integrability of $s^X$ for $|s| \le 1$](integrable-pow-of-abs-le-one.md)
+- [The generating function at $s = 1$](pgf-one.md)
 - [Pgf zero](pgf-zero.md)
-- [Pgf eq tsum](pgf-eq-tsum.md)
-- [Pgf add of indep Fun](pgf-add-of-indep-fun.md)
+- [Series form of the probability generating function](pgf-eq-tsum.md)
+- [Generating function of a sum of independent variables](pgf-add-of-indep-fun.md)

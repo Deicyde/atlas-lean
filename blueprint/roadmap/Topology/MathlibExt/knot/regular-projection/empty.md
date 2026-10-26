@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.empty
 ---
 
-# Empty
+# Empty dart diagram
 
-The empty dart diagram with a prescribed number of isolated
-components. It is alternating by convention and by the definition.
+**Empty dart diagram.** For a natural number $k$, the empty dart diagram with $k$ isolated
+components has no crossings, hence no darts, and records $k$ isolated crossingless components.
+
+It is alternating, since the alternating condition is vacuous when there are no darts.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
+- [Dart diagram](dart-diagram.md)
 
 ## Sources
 

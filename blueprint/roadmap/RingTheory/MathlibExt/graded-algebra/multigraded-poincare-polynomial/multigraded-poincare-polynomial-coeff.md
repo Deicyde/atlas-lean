@@ -7,25 +7,29 @@ proof: formalized
 lean: MetaMathlibExt.multigradedPoincarePolynomial_coeff
 ---
 
-# Multigraded Poincare Polynomial coeff
+# Coefficients of the multigraded Poincaré polynomial
 
-Coefficient equation: evaluating the Poincaré polynomial at
-`(i, α)` returns exactly the edge-3 Betti number
-`multigradedBettiNumber data α i`.
+**Coefficients of the multigraded Poincaré polynomial.** Let $K$ be a field, let
+$R = K[x_1, \dots, x_n]$, let $M$ be a multigraded $R$-module, and let $D$ be base-change data
+for a multigraded free resolution $F_\bullet$ of $M$ in which $F_i$ has a homogeneous basis
+indexed by a finite set $\iota_i$, with $\iota_i$ empty for every $i > b$ for a fixed
+$b \in \mathbb{N}$. For every $i \in \mathbb{N}$ and $\alpha \in \mathbb{Z}^n$, the coefficient
+at $(i, \alpha)$ of the multigraded Poincaré polynomial of $D$ is the multigraded Betti number
+$\beta_{i,\alpha}(D)$ of $D$ in homological degree $i$ and multidegree $\alpha$.
 
 ## Depends on
 
-- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
-- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
-- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
-- [Multigraded Betti Number](../multigraded-betti/multigraded-betti-number.md)
-- [Multigraded Poincare Polynomial](multigraded-poincare-polynomial.md)
+- [Multigraded base change data](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded free resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded modules over a polynomial ring](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Multigraded Betti number](../multigraded-betti/multigraded-betti-number.md)
+- [Multigraded Poincaré polynomial](multigraded-poincare-polynomial.md)
 
 ## Proof depends on
 
-- [Multigraded Poincare Coefficients](../multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
-- [Multigraded Poincare Coefficients apply](../multigraded-poincare-coefficients/multigraded-poincare-coefficients-apply.md)
-- [Multigraded Poincare Finite Support](../multigraded-poincare-coefficients-has-fi.md)
+- [Multigraded Poincaré coefficients](../multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
+- [Multigraded Poincaré coefficients are Betti numbers](../multigraded-poincare-coefficients/multigraded-poincare-coefficients-apply.md)
+- [Finite support of the multigraded Poincaré coefficients](../multigraded-poincare-coefficients-has-fi.md)
 
 ## Sources
 

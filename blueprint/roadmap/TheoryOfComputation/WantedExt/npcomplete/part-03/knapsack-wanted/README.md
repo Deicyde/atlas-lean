@@ -4,7 +4,7 @@ navigation: module
 
 # Knapsack
 
-- [Knapsack Instance](knapsack-instance.md)
-- [Knapsack Feasible](knapsack-feasible.md)
-- [Knapsack Dec](knapsack-dec.md)
+- [Knapsack instances](knapsack-instance.md)
+- [Feasible knapsack instances](knapsack-feasible.md)
+- [The KNAPSACK decision problem](knapsack-dec.md)
 - [KNAPSACK is NP-complete](knapsack-np-complete.md)

@@ -7,14 +7,16 @@ proof: formalized
 lean: elementDifferent_of_adjoin_ne_top
 ---
 
-# Element Different of adjoin ne top
+# Element different of a non-generator
 
-Nonprimitive case: when `algebraMap B L α` does not generate `L` over `K`,
-the element different is `0`.
+**Element different of a non-generator.** Let $A$ be a commutative ring, $B$ a commutative
+$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. If
+$\alpha \in B$ and the image of $\alpha$ in $L$ does not generate $L$ as a $K$-algebra, then the
+element different $\delta_{B/A}(\alpha)$ is $0$.
 
 ## Depends on
 
-- [Element Different](element-different.md)
+- [Element different](element-different.md)
 
 ## Sources
 

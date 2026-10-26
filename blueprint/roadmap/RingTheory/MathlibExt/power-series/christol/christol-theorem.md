@@ -6,16 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.christol_theorem
 ---
 
-# Christol theorem
+# Christol's theorem
 
-Christol's theorem: algebraicity iff `p`-automaticity of coefficients.
+**Christol's theorem.** Let $p$ be a prime, $r \ge 1$ a natural number, and $K$ a finite field
+of characteristic $p$ with $q = p^r$ elements. A formal power series
+$f = \sum_n f_n X^n \in K[[X]]$ is algebraic over the polynomial ring $K[X]$ (it is a root of a
+nonzero polynomial with coefficients in $K[X]$) if and only if its coefficient sequence
+$n \mapsto f_n$ is $p$-automatic, that is, its $p$-kernel is finite.
 
-Polynomial-relation interpretation: `IsAlgebraic (Polynomial K) f` asserts a
-denominator-cleared nonzero polynomial relation over `K[X]` satisfied by `f`,
-which is the formalization of algebraicity over the rational function field
-`K(t)`; it is not integrality (`IsIntegral`). The right side is
-`p`-automaticity (base `p`, not base `q`) of `fun n => PowerSeries.coeff n f`.
-The positivity `0 < r` is preserved verbatim from the source.
+Algebraicity over $K[X]$ is the denominator-cleared form of algebraicity over the rational
+function field $K(X)$; it is not integrality over $K[X]$. Automaticity is taken in base $p$, not
+in base $q$.
 
 ## Depends on
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.cheegerCoefficient_le_halfspace
 ---
 
-# Cheeger Coefficient le halfspace
+# The Cheeger coefficient is at most the half-space Cheeger coefficient
 
-Restricting the cuts to half-spaces can only increase their infimum.
+**The Cheeger coefficient is at most the half-space Cheeger coefficient.** For every measure
+$\mu$ on $\mathbb{R}^n$ with the Euclidean metric, the Cheeger coefficient of $\mu$ is at most
+its half-space Cheeger coefficient.
 
 ## Depends on
 
-- [Cheeger Coefficient](cheeger-coefficient.md)
-- [Halfspace Cheeger Coefficient](halfspace-cheeger-coefficient.md)
+- [Cheeger coefficient](cheeger-coefficient.md)
+- [Half-space Cheeger coefficient](halfspace-cheeger-coefficient.md)
 
 ## Proof depends on
 
-- [Is Halfspace](is-halfspace.md)
-- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
+- [Half-spaces](is-halfspace.md)
+- [Outer Minkowski boundary measure](outer-minkowski-boundary.md)
 
 ## Sources
 

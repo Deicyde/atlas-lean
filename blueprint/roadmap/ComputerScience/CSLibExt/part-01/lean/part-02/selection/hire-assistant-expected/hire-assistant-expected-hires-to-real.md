@@ -19,7 +19,7 @@ $\sum_{i=0}^{n-1} \frac{1}{i+1}$.
 
 - [The hire-assistant scan](../hire-assistant/hire-assistant.md)
 - [Uniformly random rearrangement of a list](../../random/expected-cost/uniform-permutation.md)
-- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+- [Extended expectation](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
 
 ## Proof depends on
 

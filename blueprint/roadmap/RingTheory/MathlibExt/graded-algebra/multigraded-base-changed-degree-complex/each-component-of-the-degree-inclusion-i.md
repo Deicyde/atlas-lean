@@ -16,15 +16,15 @@ Integer Sequences 23 (2020), lines 864–867,
 
 ## Depends on
 
-- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
-- [Base Changed Degree Complex](base-changed-degree-complex.md)
-- [Base Changed Degree Inclusion](base-changed-degree-inclusion.md)
-- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
-- [Base Changed Complex](../multigraded-betti/base-changed-complex.md)
+- [Multigraded free resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multidegree component complex of the base-changed resolution](base-changed-degree-complex.md)
+- [Inclusion of a multidegree component complex](base-changed-degree-inclusion.md)
+- [Multigraded modules over a polynomial ring](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Base change of a resolution to the residue field](../multigraded-betti/base-changed-complex.md)
 
 ## Proof depends on
 
-- [Base Changed Degree Piece](../multigraded-betti/base-changed-degree-piece.md)
+- [Degree pieces of the base-changed resolution](../multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

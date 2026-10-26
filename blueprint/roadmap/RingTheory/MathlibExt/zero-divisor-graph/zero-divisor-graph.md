@@ -6,13 +6,15 @@ statement: formalized
 lean: ZeroDivisorGraph.zeroDivisorGraph
 ---
 
-# Zero Divisor Graph
+# The zero-divisor graph
 
-Zero-divisor graph via the zero-product relation.
+**The zero-divisor graph.** For a commutative ring $R$, the zero-divisor graph of $R$ is
+the simple graph whose vertices are the nonzero zero divisors of $R$, in which two distinct
+vertices $v$ and $w$ are adjacent exactly when $vw = 0$.
 
 ## Depends on
 
-- [Vertex](vertex.md)
+- [Nonzero zero divisors](vertex.md)
 
 ## Sources
 

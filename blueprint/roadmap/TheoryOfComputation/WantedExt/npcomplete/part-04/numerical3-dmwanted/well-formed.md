@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Numerical3DM.WellFormed
 ---
 
-# Well Formed
+# Well-formed numerical 3-dimensional matching instances
 
-Well-formedness of an instance.
+**Well-formed numerical 3-dimensional matching instances.** An instance $(A, B, C, t)$ of
+NUMERICAL 3-DIMENSIONAL MATCHING is well formed when the lists $B$ and $C$ have the same length
+as the list $A$.
 
 ## Depends on
 
-- [Numerical3 DMInstance](numerical3-dminstance.md)
+- [Numerical 3-dimensional matching instances](numerical3-dminstance.md)
 
 ## Sources
 

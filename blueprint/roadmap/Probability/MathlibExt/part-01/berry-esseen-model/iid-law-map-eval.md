@@ -7,14 +7,16 @@ proof: formalized
 lean: BerryEsseenModel.iidLaw_map_eval
 ---
 
-# Iid Law map eval
+# Coordinate laws of the i.i.d. product
 
-Each canonical coordinate has the original law.
+**Coordinate laws of the i.i.d. product.** If $\mu$ is a standardized law on $\mathbb{R}$ and
+$i$ is a natural number, then the pushforward of the i.i.d. product law of $\mu$ under the
+coordinate map $\omega \mapsto \omega_i$ from $\mathbb{R}^{\mathbb{N}}$ to $\mathbb{R}$ is $\mu$.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Iid Law](iid-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [I.i.d. product law](iid-law.md)
 
 ## Sources
 

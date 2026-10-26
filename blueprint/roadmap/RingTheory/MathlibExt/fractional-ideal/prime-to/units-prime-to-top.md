@@ -7,19 +7,21 @@ proof: formalized
 lean: FractionalIdeal.unitsPrimeTo_top
 ---
 
-# Units Prime To top
+# Every invertible fractional ideal is prime to the unit ideal
 
-Every invertible fractional ideal is prime to the top ideal.
+**Every invertible fractional ideal is prime to the unit ideal.** Let $A$ be an integral domain
+with fraction field $K$. The subgroup of invertible fractional ideals of $A$ in $K$ prime to the
+unit ideal $A$ is the whole group of invertible fractional ideals of $A$ in $K$.
 
 ## Depends on
 
-- [Units Prime To](units-prime-to.md)
+- [Invertible fractional ideals prime to an ideal](units-prime-to.md)
 
 ## Proof depends on
 
-- [Is Prime To](is-prime-to.md)
-- [Mem units Prime To iff](mem-units-prime-to-iff.md)
-- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
+- [Membership in the subgroup of units prime to an ideal](mem-units-prime-to-iff.md)
+- [Non-zero-divisors stay non-zero-divisors in a localization at a prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.AchromaticNumber.WellFormed
 ---
 
-# Well Formed
+# Well-formed ACHROMATIC NUMBER instances
 
-Well-formedness of an instance.
+**Well-formed ACHROMATIC NUMBER instances.** An instance $(n, E, K)$ of ACHROMATIC NUMBER is
+well-formed when the list $E$ has no repeated entries and every pair $(u, v)$ in $E$ satisfies
+$u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$.
 
 ## Depends on
 
-- [Achromatic Number Instance](achromatic-number-instance.md)
+- [Instances of ACHROMATIC NUMBER](achromatic-number-instance.md)
 
 ## Sources
 

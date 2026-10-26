@@ -5,23 +5,25 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotEuclideanBridge.ofParametrizedLink
 ---
 
-# Of Parametrized Link
+# Labeled two-component links as two-component links
 
-A canonical labeled link with two components as a trusted
-lean-eval two-component link, reading components `0` and `1`.
+**Labeled two-component links as two-component links.** A labeled parametrized link with
+two components $0$ and $1$ is sent to the two-component link in $\mathbb{R}^3$ whose first
+component is the knot with the same parametrization as component $0$ and whose second component
+is the knot with the same parametrization as component $1$.
 
 ## Depends on
 
-- [Two Link](../conway-knot-shared/two-link.md)
-- [Parametrized Link](../../../MathlibExt/knot/euclidean-link/parametrized-link.md)
+- [Two-component link](../conway-knot-shared/two-link.md)
+- [Parametrized link](../../../MathlibExt/knot/euclidean-link/parametrized-link.md)
 
 ## Proof depends on
 
 - [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Of Parametrized Knot](of-parametrized-knot.md)
-- [Knot](../conway-knot-shared/knot.md)
-- [R3](../conway-knot-shared/r3.md)
-- [Parametrized Knot](../../../MathlibExt/knot/euclidean-link/parametrized-knot.md)
+- [Parametrized knots as knots](of-parametrized-knot.md)
+- [Oriented smooth knot](../conway-knot-shared/knot.md)
+- [Euclidean space $\mathbb{R}^3$](../conway-knot-shared/r3.md)
+- [Parametrized knot](../../../MathlibExt/knot/euclidean-link/parametrized-knot.md)
 
 ## Sources
 

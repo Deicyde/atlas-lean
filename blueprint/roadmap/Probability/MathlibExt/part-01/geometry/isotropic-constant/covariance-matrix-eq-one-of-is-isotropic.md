@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.covarianceMatrix_eq_one_of_isIsotropic
 ---
 
-# Covariance Matrix eq one of is Isotropic
+# Isotropic log-concave laws have identity covariance
 
-The shared probabilistic isotropy convention gives the actual identity covariance.
+**Isotropic log-concave laws have identity covariance.** If $\mu$ is an isotropic log-concave
+probability measure on $\mathbb{R}^n$, then the covariance matrix of $\mu$ is the $n \times n$
+identity matrix.
 
 ## Depends on
 
-- [Covariance Matrix](covariance-matrix.md)
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Covariance matrix](covariance-matrix.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
 
 ## Proof depends on
 
-- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
+- [Log-concave densities](../thin-shell/is-log-concave-density.md)
 
 ## Sources
 

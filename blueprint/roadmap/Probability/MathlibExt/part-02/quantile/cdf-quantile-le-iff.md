@@ -14,11 +14,11 @@ the cdf at `x` is at least `u`.
 
 ## Depends on
 
-- [Cdf Quantile](cdf-quantile.md)
+- [Quantile function of a real measure](cdf-quantile.md)
 
 ## Proof depends on
 
-- [Cdf Quantile mem](cdf-quantile-mem.md)
+- [The cdf at the quantile is at least the level](cdf-quantile-mem.md)
 
 ## Sources
 

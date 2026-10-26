@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Partition.PartitionFeasible
 ---
 
-# Partition Feasible
+# Feasible PARTITION instances
 
-A sublist summing to half the total.
+**Feasible PARTITION instances.** A list $a$ of natural numbers is a yes-instance of PARTITION
+when it has a subsequence $s$, not necessarily contiguous, such that twice the sum of $s$ equals
+the sum of $a$.
 
 ## Depends on
 
-- [Partition Instance](partition-instance.md)
+- [Instances of PARTITION](partition-instance.md)
 
 ## Sources
 

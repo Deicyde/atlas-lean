@@ -7,13 +7,14 @@ proof: formalized
 lean: HausdorffDimensionFunction.monotone
 ---
 
-# Monotone
+# Monotonicity of a Hausdorff dimension function
 
-Weak monotonicity inherited from `ContinuousOrderHom`.
+**Monotonicity of a Hausdorff dimension function.** Every Hausdorff dimension function
+$\psi : [0,\infty) \to [0,\infty)$ is non-decreasing: if $r \le s$ then $\psi(r) \le \psi(s)$.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ distribution, so this is `P(x_A, x_B | x_S) = P(x_A | x_S) P(x_B | x_S)`.
 
 ## Depends on
 
-- [Cond Indep](cond-indep.md)
-- [Marginal](marginal.md)
+- [Conditional independence for a finite weight](cond-indep.md)
+- [Marginal of a weight](marginal.md)
 
 ## Sources
 

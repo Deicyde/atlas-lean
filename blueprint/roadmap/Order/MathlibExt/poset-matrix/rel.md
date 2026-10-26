@@ -6,10 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.IsPosetMatrix.Rel
 ---
 
-# Rel
+# Relation represented by a Boolean matrix
 
-The order relation represented by a Boolean matrix (R1): `xᵢ ≤ xⱼ` iff the
-`(i, j)`-entry is `true`. Defined separately from the poset-matrix predicate.
+**Relation represented by a Boolean matrix.** Let $M$ be an $n \times n$ Boolean matrix
+with rows and columns indexed by $\{0, \dots, n-1\}$. The relation represented by $M$
+relates index $i$ to index $j$ exactly when the entry $M_{ij}$ is true.
+
+The matrix $M$ is arbitrary; it need not be a poset matrix.
 
 ## Depends on
 

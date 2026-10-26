@@ -36,7 +36,7 @@ navigation: module
 - [$p$-splitting of multisets of parts](is-psplitting.md)
 - [$p$ copies of $u$ form a $p$-splitting of $\{pu\}$](is-psplitting-replicate-singleton.md)
 - [The $p$-equivalence class of a multiset of parts](p-equiv-class.md)
-- [P Equiv Class Sum](p-equiv-class-sum.md)
+- [The $p$-equivalence class sum](p-equiv-class-sum.md)
 - [The class sum of the empty partition](p-equiv-class-sum-zero.md)
 - [Multiplicativity of $g_\lambda$ over disjoint parts](p-equiv-class-sum-add-of-disjoint.md)
 - [For odd $p$ the signs in $g_\lambda$ are constant](p-equiv-class-sum-eq-neg-one-pow-smul.md)

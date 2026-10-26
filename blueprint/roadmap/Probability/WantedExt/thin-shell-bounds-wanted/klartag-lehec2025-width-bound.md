@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.klartagLehec2025_width_bound
 ---
 
-# Klartag Lehec2025 width bound
+# Klartag–Lehec bounded thin-shell width
 
-The dimension-independent constant-width consequence of the 2025 variance bound.
+**Klartag–Lehec bounded thin-shell width.** There is a real $C > 0$ such that for every
+natural number $n \ge 1$ the thin-shell width $\sigma_n \in [0, \infty]$ of dimension $n$
+satisfies $\sigma_n \le C$.
 
 ## Depends on
 
-- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
+- [Thin-shell width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

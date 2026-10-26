@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.thinShellVarianceConstant_lt_top
 ---
 
-# Thin Shell Variance Constant lt top
+# The thin-shell variance constant is finite
 
-The variance constant is finite, rather than an unresolved boundedness conjecture.
+**The thin-shell variance constant is finite.** The thin-shell variance constant, the
+supremum in $[0, \infty]$ of the normalized radius variances
+$\frac{1}{n} \int (|x|^2 - n)^2 \, d\mu(x)$ over all dimensions $n \ge 1$ and all isotropic
+log-concave probability measures $\mu$ on $\mathbb{R}^n$, is finite.
 
 ## Depends on
 
-- [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
+- [Thin-shell variance constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources
 

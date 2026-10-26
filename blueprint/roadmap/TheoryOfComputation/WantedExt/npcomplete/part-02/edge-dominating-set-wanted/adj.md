@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.EdgeDominatingSet.Adj
 ---
 
-# Adj
+# Edge-list adjacency for EDGE DOMINATING SET
 
-Undirected adjacency from an edge list (as a Bool, for use in filters).
+**Edge-list adjacency for EDGE DOMINATING SET.** For a list $E$ of ordered pairs of natural
+numbers and natural numbers $u$ and $v$, the Boolean adjacency of $u$ and $v$ in $E$ is true
+exactly when $(u, v)$ or $(v, u)$ occurs in $E$.
 
 ## Depends on
 

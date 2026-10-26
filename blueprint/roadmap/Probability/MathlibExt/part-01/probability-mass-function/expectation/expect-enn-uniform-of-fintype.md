@@ -6,19 +6,20 @@ proof: formalized
 lean: PMF.expectENN_uniformOfFintype
 ---
 
-# Expect ENN uniform Of Fintype
+# Extended expectation under the uniform distribution
 
-The extended expectation under the uniform distribution on a nonempty
-`Fintype` is the average of the values.
+**Extended expectation under the uniform distribution.** Let $\alpha$ be a nonempty finite type
+and $f : \alpha \to [0, \infty]$. The extended expectation of $f$ under the uniform distribution on
+$\alpha$ equals $|\alpha|^{-1} \sum_{a \in \alpha} f(a)$, computed in $[0, \infty]$.
 
 ## Depends on
 
-- [Expect ENN](expect-enn.md)
-- [Uniform Fintype](../uniform/uniform-fintype.md)
+- [Extended expectation](expect-enn.md)
+- [Uniform distribution on a finite type](../uniform/uniform-fintype.md)
 
 ## Proof depends on
 
-- [Expect ENN eq sum](expect-enn-eq-sum.md)
+- [Extended expectation on a finite set](expect-enn-eq-sum.md)
 
 ## Sources
 

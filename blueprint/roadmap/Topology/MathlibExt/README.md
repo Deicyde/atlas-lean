@@ -15,5 +15,5 @@ navigation: collection
 - [Countably Monolithic](countably-monolithic/README.md)
 - [Homogeneous Space](homogeneous-space.md)
 - [Inverse Limit](inverse-limit/README.md)
-- [Kuratowski Closure Complement](kuratowski-closure-complement.md)
+- [Kuratowski's closure-complement theorem](kuratowski-closure-complement.md)
 - [Three Manifold](three-manifold/README.md)

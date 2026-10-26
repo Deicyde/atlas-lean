@@ -7,10 +7,15 @@ proof: formalized
 lean: Valuation.module_finite_integer_of_isAdicComplete
 ---
 
-# Module finite integer of is Adic Complete
+# Valuation rings dominating a complete DVR are finite over it
 
-The valuation integer ring is a finite module over the complete DVR,
-as the immediate integral-closure consequence.
+**Valuation rings dominating a complete DVR are finite over it.** Let $A$ be a discrete
+valuation ring that is complete with respect to its maximal ideal, $K$ its fraction field, and
+$L$ a finite separable extension of $K$. Let $v$ be a valuation on $L$ with values in a linearly
+ordered commutative group with zero, with valuation ring $\mathcal O_v = \{x \in L : v(x) \le 1\}$.
+Suppose $\mathcal O_v$ is an $A$-algebra such that the composite $A \to \mathcal O_v \subseteq L$
+is the structure map $A \to L$, and $A \to \mathcal O_v$ is a local homomorphism. Then
+$\mathcal O_v$ is a finitely generated $A$-module.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integer is Integral Closure of is Adic Complete](integer-is-integral-closure-of-is-adic-c.md)
+- [Valuation rings dominating a complete DVR are integral closures](integer-is-integral-closure-of-is-adic-c.md)
 
 ## Sources
 

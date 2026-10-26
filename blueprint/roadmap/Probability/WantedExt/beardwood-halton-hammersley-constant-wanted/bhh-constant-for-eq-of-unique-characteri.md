@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhhConstantFor_eq_of_unique_characterization
 ---
 
-# Bhh Constant For eq of unique characterization
+# The BHH constant equals the unique BHH limit
 
-If `β` is exactly the unique real satisfying the BHH characterization for `law`, the canonical
-infimum construction equals `β`. This isolates the empty-set totalization from the source case.
+**The BHH constant equals the unique BHH limit.** Let $\mu$ be a measure on the plane and
+$\beta$ a real number. If, for every real $\gamma$, $\gamma$ is a BHH limit for $\mu$ if and only
+if $\gamma = \beta$, then the BHH constant of $\mu$ (the infimum of its BHH limits) equals $\beta$.
+
+The hypothesis excludes the case with no BHH limit, where the infimum is $0$ by convention.
 
 ## Depends on
 
-- [Is BHHConstant For](is-bhhconstant-for.md)
+- [BHH constant of a law](is-bhhconstant-for.md)
 - [Planar Point](planar-point.md)
-- [Bhh Constant For](bhh-constant-for.md)
+- [BHH constant of a sampling law](bhh-constant-for.md)
 
 ## Proof depends on
 
-- [Bhh Limit Values](bhh-limit-values.md)
+- [BHH limit values of a sampling law](bhh-limit-values.md)
 
 ## Sources
 

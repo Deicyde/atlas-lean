@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Topology.FamiliesOfMapsB01Wanted.FamiliesOfMapsB01.IsBoundarySubpolyhedron
 ---
 
-# Is Boundary Subpolyhedron
+# Boundary subpolyhedra
 
-A *boundary subpolyhedron* of `P`: a **face** of `P` (an `IsExtreme`
-subset, the paper's "convex linear subpolyhedron of `∂P`") whose image in
-`ℝᵏ` is a polyhedron and lies in the *intrinsic* frontier of `P`. The
-face condition is what the construction keeps invariant (`u (I × Q × X) ⊆
-Q`); without it single interior points of `∂P` would qualify and condition
-4 would vacuously force the homotopy to freeze them in time.
+**Boundary subpolyhedra.** Let $P \subseteq \mathbb{R}^k$. A subset $Q \subseteq P$ is a
+boundary subpolyhedron of $P$ when $Q$ is the convex hull of a finite set of points of
+$\mathbb{R}^k$, $Q$ lies in the intrinsic frontier (relative boundary) of $P$, and $Q$ is a face of
+$P$: whenever a point of $Q$ lies in the open segment between two points of $P$, both of those
+points lie in $Q$.
+
+The face condition matches the paper's "convex linear subpolyhedron of $\partial P$"; without it a
+single non-vertex point of the boundary of $P$ would qualify.
 
 ## Depends on
 

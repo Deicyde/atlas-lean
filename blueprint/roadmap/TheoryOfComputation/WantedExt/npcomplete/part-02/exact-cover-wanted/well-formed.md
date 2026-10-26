@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ExactCover.WellFormed
 ---
 
-# Well Formed
+# Well-formed EXACT COVER instances
 
-Well-formedness of an instance.
+**Well-formed EXACT COVER instances.** An instance $(n, C)$ of EXACT COVER is well formed
+when every entry of $C$ is a list of pairwise distinct natural numbers, each less than $n$.
 
 ## Depends on
 
-- [Exact Cover Instance](exact-cover-instance.md)
+- [Instances of EXACT COVER](exact-cover-instance.md)
 
 ## Sources
 

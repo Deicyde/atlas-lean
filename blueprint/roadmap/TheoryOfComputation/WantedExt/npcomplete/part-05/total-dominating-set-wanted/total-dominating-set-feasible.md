@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.TotalDominatingSet.TotalDominatingSetFeasible
 ---
 
-# Total Dominating Set Feasible
+# Feasibility of a total dominating set instance
 
-A total dominating set of at most `K` vertices.
+**Feasibility of a total dominating set instance.** An instance $(n, E, K)$ of TOTAL
+DOMINATING SET is feasible when there is a set $S$ of at most $K$ vertices of its graph such that
+every vertex $v$ of the graph, including the vertices of $S$, is adjacent to some vertex
+$u \in S$.
 
 ## Depends on
 
-- [Total Dominating Set Instance](total-dominating-set-instance.md)
+- [Instances of TOTAL DOMINATING SET](total-dominating-set-instance.md)
 
 ## Proof depends on
 
-- [Graph](graph.md)
+- [Graph of a total dominating set instance](graph.md)
 
 ## Sources
 

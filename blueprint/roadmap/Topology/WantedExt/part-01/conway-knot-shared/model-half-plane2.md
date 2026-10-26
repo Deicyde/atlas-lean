@@ -6,16 +6,18 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelHalfPlane2
 ---
 
-# Model Half Plane2
+# Model half-plane
 
-Model boundary half-plane in the upper half-space. The disk sits in
-the plane `q.1 1 = 0 ∧ q.1 2 = 0` (a copy of `ℝ × ℝ`, parametrized by
-`q.1 0` and `q.2`) and is restricted to the half-space `q.2 ≥ 0`. Used
-to express boundary local flatness of a proper embedded disk.
+**Model half-plane.** The model half-plane is the set of pairs $((p_1, p_2, p_3), s)$ in
+$\mathbb{R}^3 \times \mathbb{R}$ with $p_2 = p_3 = 0$ and $s \ge 0$. It is a copy of the closed
+half-plane $\mathbb{R} \times [0, \infty)$, with coordinates $p_1$ and $s$, lying in the upper
+half-space $s \ge 0$.
+
+It is the local model for boundary local flatness of a properly embedded disk.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

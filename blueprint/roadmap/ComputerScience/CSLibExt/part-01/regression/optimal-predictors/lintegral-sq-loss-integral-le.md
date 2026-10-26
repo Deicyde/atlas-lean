@@ -25,9 +25,9 @@ the variance decomposition applies.
 
 ## Proof depends on
 
-- [Integrable sq sub of mem Lp two](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/integrable-sq-sub-of-mem-lp-two.md)
-- [Mean Squared Error](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error.md)
-- [Mean Squared Error eq variance add sq expectation sub](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error-eq-variance-add-sq-ex.md)
+- [A finite second moment makes the squared error integrable](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/integrable-sq-sub-of-mem-lp-two.md)
+- [Mean squared error](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error.md)
+- [Mean squared error as variance plus squared mean deviation](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error-eq-variance-add-sq-ex.md)
 
 ## Sources
 

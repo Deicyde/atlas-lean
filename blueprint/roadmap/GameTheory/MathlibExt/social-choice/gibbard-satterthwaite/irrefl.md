@@ -18,7 +18,7 @@ with relation $\lt _T$. Then $a \lt _T a$ fails for every $a \in \alpha$.
 
 ## Proof depends on
 
-- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

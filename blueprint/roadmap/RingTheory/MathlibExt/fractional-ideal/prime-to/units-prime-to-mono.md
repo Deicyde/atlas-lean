@@ -7,17 +7,20 @@ proof: formalized
 lean: FractionalIdeal.unitsPrimeTo_mono
 ---
 
-# Units Prime To mono
+# Monotonicity of the subgroups of units prime to an ideal
 
-The prime-to subgroups are monotone in the ideal.
+**Monotonicity of the subgroups of units prime to an ideal.** Let $A$ be an integral domain
+with fraction field $K$ and let $J \subseteq J'$ be ideals of $A$. Then the subgroup of invertible
+fractional ideals of $A$ in $K$ prime to $J$ is contained in the subgroup of invertible fractional
+ideals of $A$ in $K$ prime to $J'$.
 
 ## Depends on
 
-- [Units Prime To](units-prime-to.md)
+- [Invertible fractional ideals prime to an ideal](units-prime-to.md)
 
 ## Proof depends on
 
-- [Mono](mono.md)
+- [Prime to an ideal implies prime to every larger ideal](mono.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.componentCount
 ---
 
-# Component Count
+# Number of components of a dart diagram
 
-Number of components: unoriented strand-connectivity classes of
-darts plus the recorded isolated crossingless components.
+**Number of components of a dart diagram.** The number of components of a dart diagram $D$ is
+the number of classes of darts of $D$ under unoriented strand connectivity, plus the recorded
+number of isolated crossingless components of $D$.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
+- [Dart diagram](dart-diagram.md)
 
 ## Proof depends on
 
-- [Dart](dart.md)
-- [Component Setoid](component-setoid.md)
+- [Darts of a dart diagram](dart.md)
+- [Strand-connectivity relation on darts](component-setoid.md)
 
 ## Sources
 

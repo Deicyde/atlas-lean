@@ -6,22 +6,23 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.crossingCount_pos_of_crossing
 ---
 
-# Crossing Count pos of crossing
+# A regular projection with a crossing has positive crossing count
 
-A regular projection with a crossing has positive crossing
-count.
+**A regular projection with a crossing has positive crossing count.** If a parametrized link
+$L$ has a regular standard projection with at least one crossing, then the crossing count of $L$
+is positive.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
 - [Crossing](crossing.md)
-- [Is Regular Projection](is-regular-projection.md)
-- [Crossing Count](crossing-count-2.md)
+- [Regular projections](is-regular-projection.md)
+- [Crossing count of a regular projection](crossing-count-2.md)
 
 ## Proof depends on
 
-- [Double Point Set](double-point-set.md)
-- [R2](r2.md)
+- [Double points of a link projection](double-point-set.md)
+- [Euclidean plane](r2.md)
 
 ## Sources
 

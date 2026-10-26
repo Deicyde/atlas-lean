@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.LongestCommonSubsequence.LongestCommonSubsequenceInstance
 ---
 
-# Longest Common Subsequence Instance
+# Longest-common-subsequence instances
 
-An LCS instance: binary strings, bound.
+**Longest-common-subsequence instances.** A longest-common-subsequence instance is a pair
+$(R, K)$ of a finite list $R$ of binary strings (finite lists of booleans) and a natural number
+$K$.
 
 ## Depends on
 

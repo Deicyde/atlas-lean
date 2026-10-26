@@ -7,25 +7,31 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.inv_sqrt_twelve_le_bodySupremum
 ---
 
-# Inv sqrt twelve le body Supremum
+# Cube lower bound for the supremal isotropic constant
 
-The single actual cube already witnesses the source's global lower bound.
+**Cube lower bound for the supremal isotropic constant.** The supremum, over all positive
+integers $n$ and all full-dimensional convex bodies $K \subseteq \mathbb{R}^n$, of the isotropic
+constant $L_K = \left(\det \mathrm{Cov}(K) / \mathrm{Vol}(K)^2\right)^{1/(2n)}$, where
+$\mathrm{Cov}(K)$ is the covariance matrix of the uniform distribution on $K$, is at least
+$1/\sqrt{12}$.
+
+The interval $[-1/2, 1/2]$ in dimension one already attains $L_K = 1/\sqrt{12}$.
 
 ## Depends on
 
-- [Body Supremum](../isotropic-constant/body-supremum.md)
+- [Supremum of isotropic constants of convex bodies](../isotropic-constant/body-supremum.md)
 
 ## Proof depends on
 
-- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
-- [Body Isotropic Constant](../isotropic-constant/body-isotropic-constant.md)
-- [Body Law](../isotropic-constant/body-law.md)
-- [Covariance Matrix](../isotropic-constant/covariance-matrix.md)
-- [Dimension Body Supremum](../isotropic-constant/dimension-body-supremum.md)
-- [Unit Interval Body](unit-interval-body.md)
-- [Line Isometry](../uniform-interval/line-isometry.md)
-- [Symmetric Interval](../uniform-interval/symmetric-interval.md)
-- [Uniform Interval](../uniform-interval/uniform-interval.md)
+- [Full-dimensional convex body](../isotropic-constant/full-dimensional-body.md)
+- [Isotropic constant of a convex body](../isotropic-constant/body-isotropic-constant.md)
+- [Uniform distribution on a convex body](../isotropic-constant/body-law.md)
+- [Covariance matrix](../isotropic-constant/covariance-matrix.md)
+- [Supremum of isotropic constants in a fixed dimension](../isotropic-constant/dimension-body-supremum.md)
+- [Unit interval body](unit-interval-body.md)
+- [Identification of the line with one-dimensional Euclidean space](../uniform-interval/line-isometry.md)
+- [Symmetric interval in one-dimensional Euclidean space](../uniform-interval/symmetric-interval.md)
+- [Uniform distribution on a symmetric interval](../uniform-interval/uniform-interval.md)
 
 ## Sources
 

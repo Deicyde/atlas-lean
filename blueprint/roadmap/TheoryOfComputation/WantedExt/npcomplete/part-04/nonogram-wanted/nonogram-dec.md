@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Nonogram.nonogramDec
 ---
 
-# Nonogram Dec
+# The NONOGRAM decision problem
 
-NONOGRAM as a decision problem over bitstrings.
+**The NONOGRAM decision problem.** NONOGRAM is the decision problem that accepts a bitstring
+$x$ exactly when $x$ decodes, under the canonical bitstring encoding of nonogram instances, to a
+feasible nonogram instance. Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,8 +25,8 @@ NONOGRAM as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Nonogram Feasible](nonogram-feasible.md)
-- [Nonogram Instance](nonogram-instance.md)
+- [Feasible nonogram instances](nonogram-feasible.md)
+- [Nonogram instances](nonogram-instance.md)
 
 ## Sources
 

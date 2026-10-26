@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.mkR3
 ---
 
-# Mk R3
+# Point from three coordinates
 
-Construct an `R3` element from three coordinates `(x, y, z)`.
+**Point from three coordinates.** For real numbers $x$, $y$, $z$, this is the point
+$(x, y, z)$ of the Euclidean space $\mathbb{R}^3$.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

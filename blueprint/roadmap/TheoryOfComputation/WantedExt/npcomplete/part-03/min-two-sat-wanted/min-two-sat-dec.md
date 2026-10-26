@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinTwoSat.minTwoSatDec
 ---
 
-# Min Two Sat Dec
+# The MINIMUM 2-SATISFIABILITY decision problem
 
-MINIMUM 2-SATISFIABILITY as a decision problem over bitstrings.
+**The MINIMUM 2-SATISFIABILITY decision problem.** MINIMUM 2-SATISFIABILITY is the decision
+problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to a triple $(n, \varphi, K)$ of a natural number $n$, a CNF formula $\varphi$ with
+clauses $C_0, \dots, C_{m-1}$ and a natural number $K$ such that every clause has at most two
+literals, all with variables less than $n$, and some assignment of truth values to the variables
+$0, \dots, n-1$ satisfies $C_j$ for at most $K$ indices $j < m$. Every other bitstring is
+rejected.
 
 ## Depends on
 
@@ -25,9 +31,9 @@ MINIMUM 2-SATISFIABILITY as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Min Two Sat Feasible](min-two-sat-feasible.md)
-- [Min Two Sat Instance](min-two-sat-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible MINIMUM 2-SATISFIABILITY instances](min-two-sat-feasible.md)
+- [MINIMUM 2-SATISFIABILITY instances](min-two-sat-instance.md)
+- [Well-formed MINIMUM 2-SATISFIABILITY instances](well-formed.md)
 
 ## Sources
 

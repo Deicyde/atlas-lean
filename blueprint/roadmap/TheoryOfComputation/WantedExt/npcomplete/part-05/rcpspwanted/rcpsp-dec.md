@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.RCPSP.rcpspDec
 ---
 
-# Rcpsp Dec
+# Resource-constrained project scheduling as a decision problem
 
-RESOURCE-CONSTRAINED PROJECT SCHEDULING as a decision problem over bitstrings.
+**Resource-constrained project scheduling as a decision problem.** RESOURCE-CONSTRAINED
+PROJECT SCHEDULING is the decision problem that accepts a bitstring $x$ exactly when $x$ decodes,
+under the canonical bitstring encoding of RCPSP instances, to an RCPSP instance that is well
+formed and feasible. Bitstrings that do not decode to an instance are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ RESOURCE-CONSTRAINED PROJECT SCHEDULING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [RCPSPFeasible](rcpspfeasible.md)
-- [RCPSPInstance](rcpspinstance.md)
-- [Well Formed](well-formed.md)
+- [Feasible RCPSP instances](rcpspfeasible.md)
+- [Instances of resource-constrained project scheduling](rcpspinstance.md)
+- [Well-formed RCPSP instances](well-formed.md)
 
 ## Sources
 

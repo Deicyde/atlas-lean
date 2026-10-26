@@ -7,13 +7,15 @@ proof: formalized
 lean: FractionalIdeal.IsPrimeTo.mono
 ---
 
-# Mono
+# Prime to an ideal implies prime to every larger ideal
 
-Being prime to an ideal implies being prime to every larger ideal.
+**Prime to an ideal implies prime to every larger ideal.** Let $A$ be an integral domain with
+fraction field $K$, let $I$ be a fractional ideal of $A$ in $K$ and let $J \subseteq J'$ be ideals
+of $A$. If $I$ is prime to $J$, then $I$ is prime to $J'$.
 
 ## Depends on
 
-- [Is Prime To](is-prime-to.md)
+- [Fractional ideals prime to an ideal](is-prime-to.md)
 
 ## Sources
 

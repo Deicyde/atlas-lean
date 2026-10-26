@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.KMedian.WellFormed
 ---
 
-# Well Formed
+# Well-formed k-median instances
 
-Well-formedness of an instance.
+**Well-formed k-median instances.** A k-median instance $(d, K, B)$ is well formed when all
+rows of its cost matrix $d$ have the same length.
 
 ## Depends on
 
-- [KMedian Instance](kmedian-instance.md)
+- [k-median instances](kmedian-instance.md)
 
 ## Sources
 

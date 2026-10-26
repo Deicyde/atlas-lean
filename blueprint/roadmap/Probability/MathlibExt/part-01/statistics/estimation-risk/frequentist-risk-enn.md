@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Probability.Statistics.EstimationRisk.frequentistRiskENN
 ---
 
-# Frequentist Risk ENN
+# Extended frequentist risk
 
-Extended risk bridge: nonnegative extended integral of the finite NNReal
-cost. This is a boundary-analysis object only. It is not the source finite
-risk; on the integrable domain it agrees with the source value by
-`ofReal_frequentistRisk`, and off that domain with measurability it records
-infinity by `frequentistRiskENN_eq_top_of_not_integrable`. Blueprint
-`af_36871388da7326a07a5e4f71`.
+**Extended frequentist risk.** Let $S$ be a measurable space, $\delta : S \to A$ a decision
+rule, $(P_\theta)_{\theta \in \Theta}$ a family of probability measures on $S$, and
+$\ell : \Theta \times A \to [0, \infty)$ a loss. The extended frequentist risk of $\delta$ at
+$\theta \in \Theta$ is the Lebesgue integral $\int_S \ell(\theta, \delta(x)) \, dP_\theta(x)$, taken
+in $[0, \infty]$.
+
+When the loss is $P_\theta$-integrable for every $\theta$, this is the frequentist risk; when it is
+measurable but not integrable at $\theta$, it equals $\infty$.
 
 ## Depends on
 
@@ -21,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)
+- blueprint `af_36871388da7326a07a5e4f71`.

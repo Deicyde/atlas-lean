@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.centrallySymmetricBodySupremum
 ---
 
-# Centrally Symmetric Body Supremum
+# Supremum of isotropic constants of symmetric convex bodies
 
-The actual body supremum restricted to bodies symmetric about the origin.
+**Supremum of isotropic constants of symmetric convex bodies.** This is the value
+$\sup_{n \ge 1} \sup_K L_K \in [0, \infty]$, where for each dimension $n \ge 1$ the inner
+supremum runs over the full-dimensional convex bodies $K$ in $\mathbb{R}^n$ that are centrally
+symmetric, that is $K = -K$, and $L_K$ is the isotropic constant of $K$.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Full Dimensional Body](full-dimensional-body.md)
-- [Is Centrally Symmetric](is-centrally-symmetric.md)
-- [Body Isotropic Constant](body-isotropic-constant.md)
+- [Full-dimensional convex body](full-dimensional-body.md)
+- [Centrally symmetric convex body](is-centrally-symmetric.md)
+- [Isotropic constant of a convex body](body-isotropic-constant.md)
 
 ## Sources
 

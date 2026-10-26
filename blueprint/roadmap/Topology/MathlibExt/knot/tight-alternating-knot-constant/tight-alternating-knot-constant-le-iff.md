@@ -6,22 +6,21 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.tightAlternatingKnotConstant_le_iff
 ---
 
-# Tight Alternating Knot Constant le iff
+# Upper bounds for the tight alternating knot constant
 
-An extended-real upper bound for the tight alternating knot
-constant is exactly a bound for every admissible alternating real
-constant. This is the characteristic elimination rule for proving
-upper bounds on `tightAlternatingKnotConstant` without unfolding its
-supremum definition.
+**Upper bounds for the tight alternating knot constant.** For every
+extended real number $b$, the tight alternating knot constant is at
+most $b$ if and only if every real number $c$ that is admissible for
+the tight alternating knot inequality satisfies $c \le b$.
 
 ## Depends on
 
-- [Is Admissible Alternating](is-admissible-alternating.md)
-- [Tight Alternating Knot Constant](tight-alternating-knot-constant.md)
+- [Admissible constants for the tight alternating knot inequality](is-admissible-alternating.md)
+- [Tight alternating knot constant](tight-alternating-knot-constant.md)
 
 ## Proof depends on
 
-- [Le tight Alternating Knot Constant](le-tight-alternating-knot-constant.md)
+- [Admissible constants are at most the tight alternating knot constant](le-tight-alternating-knot-constant.md)
 
 ## Sources
 

@@ -11,11 +11,11 @@ Total arclength over the fundamental interval `[0, 2π]`.
 
 ## Depends on
 
-- [Knot](../../part-01/conway-knot-shared/knot.md)
+- [Oriented smooth knot](../../part-01/conway-knot-shared/knot.md)
 
 ## Proof depends on
 
-- [Parameter Arc Length](parameter-arc-length.md)
+- [Arc length between two parameters](parameter-arc-length.md)
 
 ## Sources
 

@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.unitIntervalBody
 ---
 
-# Unit Interval Body
+# Unit interval body
 
-The actual cube in dimension one, with endpoints included.
+**Unit interval body.** The unit interval body is the closed interval $[-1/2, 1/2]$, of length
+one and centred at the origin, in the one-dimensional Euclidean space, regarded as a
+full-dimensional convex body.
 
 ## Depends on
 
-- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Full-dimensional convex body](../isotropic-constant/full-dimensional-body.md)
 
 ## Proof depends on
 
-- [Interval Body](interval-body.md)
+- [Symmetric interval as a convex body](interval-body.md)
 
 ## Sources
 

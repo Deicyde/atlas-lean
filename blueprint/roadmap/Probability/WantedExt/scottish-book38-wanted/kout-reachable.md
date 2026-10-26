@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook38Wanted.KOutReachable
 ---
 
-# KOut Reachable
+# Reachability by a chain of friends
 
-Reachability by a chain of friends in a `k`-out assignment `c`: there is a
-finite chain of people from `a` to `b` in which consecutive people are joined
-by a friendship in either direction.
+**Reachability by a chain of friends.** Let $c$ assign to each person $i$ among $N$ people a
+set $c(i)$ of people, the friends of $i$. A person $b$ is reachable from a person $a$ if there are
+$m \ge 0$ and people $p_0 = a, p_1, \dots, p_m = b$ such that for each $j < m$, $p_j$ is a friend
+of $p_{j+1}$ or $p_{j+1}$ is a friend of $p_j$.
 
 ## Depends on
 

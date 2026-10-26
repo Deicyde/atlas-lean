@@ -7,19 +7,23 @@ proof: formalized
 lean: BerryEsseenModel.pointwise_le_kolmogorovError
 ---
 
-# Pointwise le kolmogorov Error
+# Each CDF error is at most the Kolmogorov error
 
-Each actual threshold error is below the supremum.
+**Each CDF error is at most the Kolmogorov error.** Let $\mu$ be a measure on $\mathbb{R}$,
+$n$ a positive integer, $F_{\mu,n}$ the distribution function of the normalized law of $\mu$ at
+$n$ and $\Phi$ the standard normal distribution function. Then for every real $x$,
+$|F_{\mu,n}(x) - \Phi(x)| \le \sup_{y \in \mathbb{R}} |F_{\mu,n}(y) - \Phi(y)|$, the right side
+being the Kolmogorov error of $\mu$ at $n$.
 
 ## Depends on
 
-- [Kolmogorov Error](kolmogorov-error.md)
-- [Normal CDF](normal-cdf.md)
-- [Normalized Law](normalized-law.md)
+- [Kolmogorov error](kolmogorov-error.md)
+- [Standard normal CDF](normal-cdf.md)
+- [Law of the normalized sum](normalized-law.md)
 
 ## Proof depends on
 
-- [Error Range bdd Above](error-range-bdd-above.md)
+- [The CDF errors are bounded above](error-range-bdd-above.md)
 
 ## Sources
 

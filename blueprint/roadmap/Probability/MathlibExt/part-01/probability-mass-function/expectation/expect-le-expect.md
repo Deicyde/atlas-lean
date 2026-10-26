@@ -6,17 +6,20 @@ proof: formalized
 lean: PMF.expect_le_expect
 ---
 
-# Expect le expect
+# Monotonicity of expectation
 
-Expectation is monotone in the function (finite case).
+**Monotonicity of expectation.** Let $p$ be a probability mass function on a finite measurable
+space $\alpha$ in which singletons are measurable, and let $f, g : \alpha \to \mathbb{R}$ satisfy
+$f(a) \le g(a)$ for every $a \in \alpha$. Then the expectation of $f$ under $p$ is at most the
+expectation of $g$ under $p$.
 
 ## Depends on
 
-- [Expect](expect.md)
+- [Expectation under a probability mass function](expect.md)
 
 ## Proof depends on
 
-- [Expect eq sum](expect-eq-sum.md)
+- [Expectation on a finite type](expect-eq-sum.md)
 
 ## Sources
 

@@ -4,9 +4,9 @@ navigation: module
 
 # Hamiltonian Path Undirected
 
-- [Hamiltonian Path Undirected Instance](hamiltonian-path-undirected-instance.md)
-- [Graph](graph.md)
-- [Well Formed](well-formed.md)
-- [Hamiltonian Path Undirected Feasible](hamiltonian-path-undirected-feasible.md)
-- [Hamiltonian Path Undirected Dec](hamiltonian-path-undirected-dec.md)
+- [Instances of undirected Hamiltonian path](hamiltonian-path-undirected-instance.md)
+- [Graph of an undirected Hamiltonian path instance](graph.md)
+- [Well-formed undirected Hamiltonian path instances](well-formed.md)
+- [Feasible undirected Hamiltonian path instances](hamiltonian-path-undirected-feasible.md)
+- [HAMILTONIAN PATH (UNDIRECTED) as a decision problem](hamiltonian-path-undirected-dec.md)
 - [HAMILTONIAN PATH (UNDIRECTED) is NP-complete](hamiltonian-path-undirected-np-complete.md)

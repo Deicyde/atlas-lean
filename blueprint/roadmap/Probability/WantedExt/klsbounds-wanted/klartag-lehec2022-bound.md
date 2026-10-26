@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.klartagLehec2022_bound
 ---
 
-# Klartag Lehec2022 bound
+# Klartag–Lehec polylogarithmic bound on the KLS constant
 
-The first polylogarithmic KLS bound.
+**Klartag–Lehec polylogarithmic bound on the KLS constant.** There are a real $C > 0$ and an
+integer $N \ge 3$ such that for every $n \ge N$ the dimensional KLS constant
+$\psi_n \in [0, \infty]$ satisfies $\psi_n \le C (\log n)^5$.
 
 ## Depends on
 
-- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
+- [Dimensional KLS constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
 
 ## Sources
 

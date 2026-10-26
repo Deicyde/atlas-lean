@@ -6,17 +6,20 @@ proof: formalized
 lean: PMF.toMeasure_uniformFintype_apply
 ---
 
-# To Measure uniform Fintype apply
+# Probability of an event under the uniform distribution
 
-Every measurable event has its counting probability.
+**Probability of an event under the uniform distribution.** Let $\alpha$ be a nonempty finite
+type carrying a σ-algebra. For every measurable set $s \subseteq \alpha$, the probability measure
+associated to the uniform distribution on $\alpha$ gives $s$ the measure $|s| / |\alpha|$, computed
+in the extended nonnegative reals.
 
 ## Depends on
 
-- [Uniform Fintype](uniform-fintype.md)
+- [Uniform distribution on a finite type](uniform-fintype.md)
 
 ## Proof depends on
 
-- [To Outer Measure uniform Fintype apply](to-outer-measure-uniform-fintype-apply.md)
+- [Outer measure of an event under the uniform distribution](to-outer-measure-uniform-fintype-apply.md)
 
 ## Sources
 

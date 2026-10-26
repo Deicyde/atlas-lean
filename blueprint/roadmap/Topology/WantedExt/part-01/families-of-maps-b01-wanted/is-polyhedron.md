@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Topology.FamiliesOfMapsB01Wanted.FamiliesOfMapsB01.IsPolyhedron
 ---
 
-# Is Polyhedron
+# Convex linear polyhedra
 
-A *convex linear polyhedron* in `ℝᵏ`: the convex hull of a finite set
-(equivalently, a bounded intersection of finitely many half-spaces).
+**Convex linear polyhedra.** A subset $P \subseteq \mathbb{R}^k$ is a convex linear polyhedron
+when it is the convex hull of a finite set of points (equivalently, a bounded intersection of
+finitely many closed half-spaces).
 
 ## Depends on
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.covarianceMatrix
 ---
 
-# Covariance Matrix
+# Covariance matrix
 
-The actual covariance matrix of the coordinate random variables.
+**Covariance matrix.** For a measure $\mu$ on $\mathbb{R}^n$, the covariance matrix of $\mu$ is
+the $n \times n$ real matrix whose $(i, j)$ entry is
+$\int (x_i - m_i)(x_j - m_j) \, d\mu(x)$, where $m_i = \int x_i \, d\mu(x)$ is the mean of the
+$i$-th coordinate.
 
 ## Depends on
 

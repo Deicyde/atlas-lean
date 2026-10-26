@@ -7,13 +7,14 @@ lean: MetaMathlibExt.Complexity.NPComplete.ConnectedDominatingSet.connectedDomin
 
 # CONNECTED DOMINATING SET is NP-complete
 
-**CONNECTED DOMINATING SET is NP-complete.** Source: M. R. Garey and D. S. Johnson,
-*Computers and Intractability* (1979), CONNECTED DOMINATING SET.
+**CONNECTED DOMINATING SET is NP-complete.** The decision problem CONNECTED DOMINATING SET
+belongs to NP, and every decision problem in NP reduces to it by a polynomial-time many-one
+reduction.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
-- [Connected Dominating Set Dec](connected-dominating-set-dec.md)
+- [The decision problem CONNECTED DOMINATING SET](connected-dominating-set-dec.md)
 - [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
 - [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
 - [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
@@ -21,3 +22,4 @@ lean: MetaMathlibExt.Complexity.NPComplete.ConnectedDominatingSet.connectedDomin
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.ConnectedDominatingSetWanted](../../../../../../sources/v2/WantedExt.md)
+- M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), CONNECTED DOMINATING SET.

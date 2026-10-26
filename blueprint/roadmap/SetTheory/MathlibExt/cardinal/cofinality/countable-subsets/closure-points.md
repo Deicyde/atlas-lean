@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ClosurePoints
 ---
 
-# Closure Points
+# Closure points of a finitary function
 
-For a function F: [X]^{<ω}→ X, the set of closure points of F is {a∈ [X]^ω : F[a]⊆ a}.
+**Closure points of a finitary function.** Let $X$ be a set and let $F$ be a function
+assigning an element of $X$ to every finite subset of $X$. The closure points of $F$ are the
+countable (finite or countably infinite) sets $a \subseteq X$ such that $F(s) \in a$ for every
+finite set $s \subseteq a$.
 
 ## Depends on
 

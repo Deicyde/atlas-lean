@@ -7,17 +7,20 @@ proof: formalized
 lean: TateCohomology.herbrandQuotient_den_ne_zero
 ---
 
-# Herbrand Quotient den ne zero
+# The denominator of the Herbrand quotient is nonzero
 
-The denominator of the Herbrand quotient is nonzero.
+**The denominator of the Herbrand quotient is nonzero.** Let $G$ be a finite group, $R$ a
+commutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups
+$\hat H^0(G, M)$ and $\hat H^{-1}(G, M)$ are finite. Then the number of elements of
+$\hat H^{-1}(G, M)$ is nonzero.
 
 ## Depends on
 
-- [Herbrand Finite](herbrand-finite.md)
+- [Finiteness hypothesis for the Herbrand quotient](herbrand-finite.md)
 
 ## Proof depends on
 
-- [Herbrand Quotient den pos](herbrand-quotient-den-pos.md)
+- [The denominator of the Herbrand quotient is positive](herbrand-quotient-den-pos.md)
 
 ## Sources
 

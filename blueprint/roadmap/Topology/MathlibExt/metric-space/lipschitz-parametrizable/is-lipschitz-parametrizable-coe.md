@@ -7,18 +7,19 @@ proof: formalized
 lean: Finset.isLipschitzParametrizable_coe
 ---
 
-# Is Lipschitz Parametrizable coe
+# Finsets are Lipschitz parametrizable
 
-A finite set, coerced to a set, is `d`-Lipschitz parametrizable.
+**Finsets are Lipschitz parametrizable.** Let $X$ be a metric space and $d$ a natural number.
+Every finite set $s$ of points of $X$, given as a finset, is $d$-Lipschitz parametrizable.
 
 ## Depends on
 
-- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+- [Lipschitz parametrizable sets](is-lipschitz-parametrizable.md)
 
 ## Proof depends on
 
-- [Unit Cube](unit-cube.md)
-- [Unit Cube zero mem](unit-cube-zero-mem.md)
+- [The unit cube](unit-cube.md)
+- [The origin lies in the unit cube](unit-cube-zero-mem.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Multiway Partition
 
-- [Multiway Partition Instance](multiway-partition-instance.md)
-- [Multiway Partition Feasible](multiway-partition-feasible.md)
-- [Multiway Partition Dec](multiway-partition-dec.md)
+- [Multiway number partition instances](multiway-partition-instance.md)
+- [Feasible multiway number partition instances](multiway-partition-feasible.md)
+- [The MULTIWAY NUMBER PARTITION decision problem](multiway-partition-dec.md)
 - [MULTIWAY NUMBER PARTITION is NP-complete](multiway-partition-np-complete.md)

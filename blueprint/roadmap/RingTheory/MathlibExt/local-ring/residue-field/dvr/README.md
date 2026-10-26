@@ -7,9 +7,9 @@ navigation: module
 
 ## Alg Hom
 
-- [Is Local Hom of is Discrete Valuation Ring](is-local-hom-of-is-discrete-valuation-ri.md)
+- [Algebra maps from a DVR into a finite local DVR extension are local](is-local-hom-of-is-discrete-valuation-ri.md)
 
 ## DVRResidue
 
-- [Residue Field Map Alg Hom](residue-field-map-alg-hom.md)
-- [Residue Field Map Alg Hom injective](residue-field-map-alg-hom-injective.md)
+- [Induced map on residue fields of DVR extensions](residue-field-map-alg-hom.md)
+- [Residue-field maps determine algebra maps out of a formally unramified DVR extension](residue-field-map-alg-hom-injective.md)

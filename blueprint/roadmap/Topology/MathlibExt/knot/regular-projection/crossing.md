@@ -12,12 +12,12 @@ double-point set.
 
 ## Depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
 
 ## Proof depends on
 
-- [Double Point Set](double-point-set.md)
-- [R2](r2.md)
+- [Double points of a link projection](double-point-set.md)
+- [Euclidean plane](r2.md)
 
 ## Sources
 

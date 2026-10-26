@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CVRP.cvrpDec
 ---
 
-# Cvrp Dec
+# Capacitated vehicle routing as a decision problem
 
-CAPACITATED VEHICLE ROUTING as a decision problem over bitstrings.
+**Capacitated vehicle routing as a decision problem.** The decision problem CAPACITATED
+VEHICLE ROUTING accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to a capacitated vehicle routing instance that is well formed and feasible; it rejects
+every bitstring that does not decode.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ CAPACITATED VEHICLE ROUTING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [CVRPFeasible](cvrpfeasible.md)
-- [CVRPInstance](cvrpinstance.md)
-- [Well Formed](well-formed.md)
+- [Feasibility of a capacitated vehicle routing instance](cvrpfeasible.md)
+- [Capacitated vehicle routing instances](cvrpinstance.md)
+- [Well-formed capacitated vehicle routing instances](well-formed.md)
 
 ## Sources
 

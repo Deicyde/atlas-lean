@@ -7,18 +7,19 @@ proof: formalized
 lean: BerryEsseenConstant.symmetricBernoulli_thirdMoment
 ---
 
-# Symmetric Bernoulli third Moment
+# Third absolute moment of the symmetric Bernoulli law
 
-Its third absolute moment is exactly one.
+**Third absolute moment of the symmetric Bernoulli law.** The third absolute moment
+$\int |x|^3 \, d\mu(x)$ of the symmetric Bernoulli law $\mu$ equals $1$.
 
 ## Depends on
 
-- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
-- [Third Moment](../berry-esseen-model/third-moment.md)
+- [Symmetric Bernoulli law](symmetric-bernoulli-law.md)
+- [Third absolute moment](../berry-esseen-model/third-moment.md)
 
 ## Proof depends on
 
-- [Symmetric Bernoulli integral](symmetric-bernoulli-integral.md)
+- [Integrals against the symmetric Bernoulli law](symmetric-bernoulli-integral.md)
 
 ## Sources
 

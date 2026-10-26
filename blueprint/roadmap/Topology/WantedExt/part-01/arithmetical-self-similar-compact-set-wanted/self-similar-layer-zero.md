@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.selfSimilarLayer_zero
 ---
 
-# Self Similar Layer zero
+# The zeroth layer is the set of isolated points
 
-Characteristic value: the layer `T_0` is `K \ K'`, the isolated points of `K`.
+**The zeroth layer is the set of isolated points.** For every set
+$K \subseteq \mathbb{R}$, the layer $T_0$ of $K$ equals $K \setminus K'$, where $K'$ is the derived
+set of $K$ (its set of accumulation points); that is, $T_0$ is the set of isolated points of $K$.
 
 ## Depends on
 
-- [Self Similar Layer](self-similar-layer.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

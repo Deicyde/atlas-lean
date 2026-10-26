@@ -5,21 +5,20 @@ statement: formalized
 lean: MathlibExt.Probability.ScottishBook38Wanted.k_out_connectivity_threshold
 ---
 
-# K out connectivity threshold
+# Connectivity threshold for random $k$-out friendship graphs
 
-Ulam, Problem 38 of the Scottish Book. Original question: `N` people are
-given, each person is assigned `k` others at random as friends, friendship
-need not be symmetric; what is the chance `P_{kN}` that, starting from any
-person, one can reach every other person by a chain of mutual friends, and
-what is the limit of `P_{kN}` as `N` tends to infinity, `0` or `1`? The
-answer: the limit is `1` for `k ≥ 2` and `0` for `k = 1`. The model used
-here is the `k`-out model: each person chooses an ordered `k`-set of friends,
-and two people are joined when either one chose the other, so a chain of
-friends is a path in the underlying undirected graph.
+**Connectivity threshold for random $k$-out friendship graphs.** For natural numbers $k$ and $N$,
+let $P_{kN}$ be the proportion of the assignments giving each of $N$ people exactly $k$ friends
+other than themselves that connect all $N$ people. Then $P_{kN} \to 1$ as $N \to \infty$ for
+every $k \ge 2$, and $P_{1N} \to 0$ as $N \to \infty$.
+
+Friendship need not be symmetric: two people are joined when either one chose the other, so a
+chain of friends is a path in the underlying undirected graph. Ulam asked for $P_{kN}$ and for
+its limit as $N \to \infty$, $0$ or $1$.
 
 ## Depends on
 
-- [KOut Connected Prob](kout-connected-prob.md)
+- [Probability that a random $k$-out assignment connects everyone](kout-connected-prob.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.steinerberger2015ImprovedUpperBound_holds
 ---
 
-# Steinerberger2015 Improved Upper Bound holds
+# Steinerberger's upper bound for the BHH constant
 
-Source: Steinerberger, New Bounds for the Traveling Salesman Constant (2015).
+**Steinerberger's upper bound for the BHH constant.** The Beardwood–Halton–Hammersley constant
+$\beta_2$ satisfies $\beta_2 \le 0.92117 - \frac{9}{16} \cdot 10^{-6}$.
 
 ## Depends on
 
-- [Steinerberger2015 Improved Upper Bound](steinerberger2015-improved-upper-bound.md)
+- [Statement of Steinerberger's upper bound](steinerberger2015-improved-upper-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../sources/v2/WantedExt.md)
+- Steinerberger, New Bounds for the Traveling Salesman Constant (2015).

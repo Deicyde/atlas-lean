@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ExactCoverBy3Sets.exactCoverBy3SetsDec
 ---
 
-# Exact Cover By3 Sets Dec
+# EXACT COVER BY 3-SETS as a decision problem
 
-EXACT COVER BY 3-SETS as a decision problem over bitstrings.
+**EXACT COVER BY 3-SETS as a decision problem.** The decision problem EXACT COVER BY 3-SETS
+accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of pairs
+of a natural number and a list of lists of natural numbers, to an instance of EXACT COVER BY
+3-SETS that is well formed and feasible; bitstrings that do not decode are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ EXACT COVER BY 3-SETS as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Exact Cover By3 Sets Feasible](exact-cover-by3-sets-feasible.md)
-- [Exact Cover By3 Sets Instance](exact-cover-by3-sets-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible EXACT COVER BY 3-SETS instances](exact-cover-by3-sets-feasible.md)
+- [Instances of EXACT COVER BY 3-SETS](exact-cover-by3-sets-instance.md)
+- [Well-formed EXACT COVER BY 3-SETS instances](well-formed.md)
 
 ## Sources
 

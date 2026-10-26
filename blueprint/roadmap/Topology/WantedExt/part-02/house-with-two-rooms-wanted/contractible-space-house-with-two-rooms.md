@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Topology.HouseWithTwoRoomsWanted.Topology.contractibleSpace_houseWithTwoRooms
 ---
 
-# Contractible Space house With Two Rooms
+# Bing's house with two rooms is contractible
 
-Source: Allen Hatcher, *Algebraic Topology*. Via leanprover/lean-eval@38361be, problem `contractibleSpace_houseWithTwoRooms`.
+**Bing's house with two rooms is contractible.** Bing's house with two rooms, regarded as a
+subspace of $\mathbb{R} \times \mathbb{R} \times \mathbb{R}$, is contractible.
 
 ## Depends on
 
-- [House With Two Rooms](house-with-two-rooms.md)
+- [Bing's house with two rooms](house-with-two-rooms.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Topology.HouseWithTwoRoomsWanted](../../../../../sources/v2/WantedExt.md)
+- Allen Hatcher, *Algebraic Topology*. Via leanprover/lean-eval@38361be, problem `contractibleSpace_houseWithTwoRooms`.

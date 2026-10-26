@@ -7,22 +7,25 @@ proof: formalized
 lean: BerryEsseenConstant.bernoulliValue_le_value
 ---
 
-# Bernoulli Value le value
+# The Bernoulli Berry–Esseen constant is at most the general one
 
-Restricting to Bernoulli laws cannot increase the optimized coefficient.
+**The Bernoulli Berry–Esseen constant is at most the general one.** The infimum of the real
+numbers that are admissible Berry–Esseen coefficients for the Bernoulli subclass is at most the
+infimum of the real numbers that are admissible Berry–Esseen coefficients for all standardized
+laws.
 
 ## Depends on
 
-- [Bernoulli Value](bernoulli-value.md)
-- [Value](value.md)
+- [Bernoulli Berry–Esseen constant](bernoulli-value.md)
+- [The optimal Berry–Esseen constant](value.md)
 
 ## Proof depends on
 
-- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
-- [Is Bernoulli Law](is-bernoulli-law.md)
-- [Bernoulli Admissible bdd Below](bernoulli-admissible-bdd-below.md)
-- [Value is Admissible](value-is-admissible.md)
-- [Is Standardized Law](../berry-esseen-model/is-standardized-law.md)
+- [Admissible Berry–Esseen coefficient for two-point laws](is-bernoulli-admissible.md)
+- [Standardized two-point law](is-bernoulli-law.md)
+- [The Bernoulli-admissible coefficients are bounded below](bernoulli-admissible-bdd-below.md)
+- [The optimal Berry–Esseen coefficient is admissible](value-is-admissible.md)
+- [Standardized laws with finite third moment](../berry-esseen-model/is-standardized-law.md)
 
 ## Sources
 

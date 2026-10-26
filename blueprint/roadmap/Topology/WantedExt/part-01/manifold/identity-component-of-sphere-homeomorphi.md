@@ -5,21 +5,21 @@ statement: formalized
 lean: MathlibExt.Topology.Manifold.ScottishBook29Wanted.identity_component_of_sphere_homeomorphism_group_simple
 ---
 
-# Scottish Book29 Wanted
+# Normal subgroups of the identity component of the homeomorphism group of a sphere
 
-Ulam, Problem 29 of the Scottish Book. Original question: is the group `H_n`
-of all homeomorphisms of the surface of an `n`-dimensional sphere simple, in
-the sense that the component of the identity contains no nontrivial normal
-subgroup? The answer is affirmative: Epstein proved that the identity
-component of the homeomorphism group of a manifold is simple. Formalized
-here as: a subgroup of `H_n` that lies in the identity component and is
-normal in the identity component (not merely normal in the full
-homeomorphism group) is either trivial or contains the whole identity
-component. Normality is in the identity component, per Epstein's theorem.
-The statement is
-guarded by `n ≠ 4`, the caveat attached to the sphere case in the
-Encyclopedia of Mathematics; Epstein's theorem itself is stated for manifolds
-in general. The cases `n = 2` (Schreier-Ulam) and `n ≠ 4` are covered.
+**Normal subgroups of the identity component of the homeomorphism group of a sphere.** Let
+$n \ne 4$ be a natural number and let $S^n$ be the unit sphere in $\mathbb{R}^{n+1}$. Give the
+group $\mathrm{Homeo}(S^n)$ of homeomorphisms of $S^n$ the topology induced by the embedding
+$h \mapsto (h, h^{-1})$ into pairs of continuous self-maps of $S^n$ with the compact-open
+topology, and let $G_0$ be the connected component of the identity in $\mathrm{Homeo}(S^n)$.
+If $N$ is a subgroup of $\mathrm{Homeo}(S^n)$ contained in $G_0$ such that $h k h^{-1} \in N$
+for all $h \in G_0$ and $k \in N$, then either $N$ is the trivial subgroup or $G_0 \subseteq N$.
+In other words, the only normal subgroups of $G_0$ are the trivial one and $G_0$ itself.
+
+This is Ulam's Problem 29 of the Scottish Book, which asked the question for every $n$; the
+case $n = 4$ is excluded here. The restriction $n \ne 4$ is the caveat attached to the sphere
+case in the Encyclopedia of Mathematics; Epstein's theorem itself is stated for manifolds in
+general.
 
 ## Depends on
 

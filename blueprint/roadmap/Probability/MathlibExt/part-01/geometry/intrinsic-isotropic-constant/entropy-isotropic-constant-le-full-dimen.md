@@ -7,23 +7,31 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.entropyIsotropicConstant_le_fullDimensionalSupremum
 ---
 
-# Entropy Isotropic Constant le full Dimensional Supremum
+# The entropy isotropic constant is at most the full-dimensional supremum
 
-Each actual intrinsic representation contributes its actual coordinate entropy value.
+**The entropy isotropic constant is at most the full-dimensional supremum.** The entropy
+isotropic constant, the supremum of the isotropic constants of intrinsic log-concave laws over
+all ambient dimensions $N > 0$, is at most the supremum in $[0, \infty]$, over all dimensions
+$n > 0$ and all log-concave laws $\nu$ on $\mathbb{R}^n$, of the entropy isotropic constant
+$L_\nu = e^{-h(f)/n} \det(\operatorname{Cov} \nu)^{1/(2n)}$, where $f$ is the density of $\nu$
+and $h(f) = -\int f \log f$.
+
+Each intrinsic law contributes the isotropic constant of its coordinate law, which is a
+full-dimensional log-concave law.
 
 ## Depends on
 
-- [Entropy Isotropic Constant](entropy-isotropic-constant.md)
-- [Full Dimensional Law Supremum](../isotropic-constant/full-dimensional-law-supremum.md)
+- [Entropy-convention isotropic constant](entropy-isotropic-constant.md)
+- [Supremum of the isotropic constant over full-dimensional log-concave laws](../isotropic-constant/full-dimensional-law-supremum.md)
 
 ## Proof depends on
 
-- [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
-- [Log Concave Law](../isotropic-constant/log-concave-law.md)
-- [Dimension Intrinsic Law Supremum](dimension-intrinsic-law-supremum.md)
-- [Dimension Law Supremum](../isotropic-constant/dimension-law-supremum.md)
-- [Intrinsic Law Isotropic Constant](intrinsic-law-isotropic-constant.md)
-- [Law Isotropic Constant](../isotropic-constant/law-isotropic-constant.md)
+- [Log-concave law in intrinsic coordinates](intrinsic-log-concave-law.md)
+- [Log-concave law](../isotropic-constant/log-concave-law.md)
+- [Supremum of intrinsic isotropic constants in a fixed ambient dimension](dimension-intrinsic-law-supremum.md)
+- [Supremum of entropic isotropic constants in a fixed dimension](../isotropic-constant/dimension-law-supremum.md)
+- [Isotropic constant of an intrinsic log-concave law](intrinsic-law-isotropic-constant.md)
+- [Isotropic constant of a log-concave law](../isotropic-constant/law-isotropic-constant.md)
 
 ## Sources
 

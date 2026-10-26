@@ -7,21 +7,24 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.klsConstant_le_iff_measures
 ---
 
-# Kls Constant le iff measures
+# Bounding the KLS constant measure by measure
 
-The least-bound characterization quantifies over actual laws, not supplied numerical data.
+**Bounding the KLS constant measure by measure.** For every $C \in [0, \infty]$, the KLS
+constant is at most $C$ if and only if, for every positive integer $n$ and every isotropic
+log-concave probability measure $\mu$ on $\mathbb{R}^n$, the inverse Cheeger constant of $\mu$ is
+at most $C$.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
-- [Kls Constant](kls-constant.md)
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Inverse Cheeger constant](inverse-cheeger-constant.md)
+- [KLS constant](kls-constant.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
 
 ## Proof depends on
 
-- [Dimensional Kls Constant](dimensional-kls-constant.md)
-- [Inverse Cheeger Constant le constant](inverse-cheeger-constant-le-constant.md)
-- [Kls Constant le iff](kls-constant-le-iff.md)
+- [Dimensional KLS constant](dimensional-kls-constant.md)
+- [Inverse Cheeger constant bounded by the KLS constant](inverse-cheeger-constant-le-constant.md)
+- [Bounding the KLS constant dimension by dimension](kls-constant-le-iff.md)
 
 ## Sources
 

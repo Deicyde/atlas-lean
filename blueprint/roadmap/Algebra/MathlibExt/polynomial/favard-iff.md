@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.favard_iff
 ---
 
-# Favard Iff
+# Favard's theorem
 
-Canonical Favard iff endpoint for monic polynomial sequences.
-
-The zero-based `n + 2` recurrence form below is exactly equivalent to the source's
-`n ≥ 1` form. The forward direction is `favard_forward`; the reverse direction is proved
-here.
+**Favard's theorem.** Let $R$ be a field and let $(p_n)_{n \ge 0}$ be a family of monic
+polynomials in $R[x]$. Then $(p_n)$ is formally orthogonal if and only if there are sequences
+$(\alpha_n)_{n \ge 0}$ and $(\beta_n)_{n \ge 0}$ in $R$ with $\beta_n \ne 0$ for all $n \ge 1$
+such that $p_0 = 1$, $p_1 = x - \alpha_0$, and
+$p_{n+1} = (x - \alpha_n) \, p_n - \beta_n \, p_{n-1}$ for all $n \ge 1$.
 
 ## Depends on
 

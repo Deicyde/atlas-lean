@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ZeroOneILP.zeroOneILPDec
 ---
 
-# Zero One ILPDec
+# 0-1 integer programming feasibility as a decision problem
 
-0-1 INTEGER PROGRAMMING FEASIBILITY as a decision problem over bitstrings.
+**0-1 integer programming feasibility as a decision problem.** The decision problem 0-1
+INTEGER PROGRAMMING FEASIBILITY accepts a bitstring $x$ exactly when $x$ decodes, under the
+canonical bitstring encoding, to a 0-1 integer programming instance that is well formed and
+feasible; it rejects every bitstring that does not decode to such an instance.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ lean: MetaMathlibExt.Complexity.NPComplete.ZeroOneILP.zeroOneILPDec
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Well Formed](well-formed.md)
-- [Zero One ILPFeasible](zero-one-ilpfeasible.md)
-- [Zero One ILPInstance](zero-one-ilpinstance.md)
+- [Well-formed 0-1 integer programming instances](well-formed.md)
+- [Feasible 0-1 integer programs](zero-one-ilpfeasible.md)
+- [0-1 integer programming instances](zero-one-ilpinstance.md)
 
 ## Sources
 

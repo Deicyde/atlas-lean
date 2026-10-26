@@ -4,9 +4,9 @@ navigation: module
 
 # Nonogram
 
-- [Nonogram Instance](nonogram-instance.md)
-- [Runs Step](runs-step.md)
-- [Runs](runs.md)
-- [Nonogram Feasible](nonogram-feasible.md)
-- [Nonogram Dec](nonogram-dec.md)
+- [Nonogram instances](nonogram-instance.md)
+- [One step of the run-length computation](runs-step.md)
+- [Run lengths of a row](runs.md)
+- [Feasible nonogram instances](nonogram-feasible.md)
+- [The NONOGRAM decision problem](nonogram-dec.md)
 - [NONOGRAM is NP-complete](nonogram-np-complete.md)

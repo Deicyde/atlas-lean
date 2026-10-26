@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.Topology.Knot.TightAlternatingKnot.isAdmissibleAlternating_zero
 ---
 
-# Is Admissible Alternating zero
+# Zero is an admissible alternating constant
 
-Zero is admissible.
+**Zero is an admissible alternating constant.** The constant
+$c = 0$ is admissible for the tight alternating knot inequality.
 
 ## Depends on
 
-- [Is Admissible Alternating](is-admissible-alternating.md)
+- [Admissible constants for the tight alternating knot inequality](is-admissible-alternating.md)
 
 ## Proof depends on
 
-- [Parametrized Link](../euclidean-link/parametrized-link.md)
-- [Admits Alternating Diagram](../regular-projection/admits-alternating-diagram.md)
-- [Crossing Number](../regular-projection/crossing-number.md)
-- [Ropelength](../euclidean-link/ropelength.md)
+- [Parametrized link](../euclidean-link/parametrized-link.md)
+- [Links admitting an alternating diagram](../regular-projection/admits-alternating-diagram.md)
+- [Crossing number of a link](../regular-projection/crossing-number.md)
+- [Ropelength of a parametrized link](../euclidean-link/ropelength.md)
 
 ## Sources
 

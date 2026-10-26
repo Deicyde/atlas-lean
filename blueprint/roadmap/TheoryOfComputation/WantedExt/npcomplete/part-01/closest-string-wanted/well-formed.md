@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ClosestString.WellFormed
 ---
 
-# Well Formed
+# Well-formed closest-string instances
 
-Well-formedness of an instance.
+**Well-formed closest-string instances.** A closest-string instance $(S, d)$ is well formed
+when all bitstrings in the list $S$ have the same length.
 
 ## Depends on
 
-- [Closest String Instance](closest-string-instance.md)
+- [Closest-string instances](closest-string-instance.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Probability.IsotropicConstant.unitIntervalBody_mem_iff
 ---
 
-# Unit Interval Body mem iff
+# Membership in the unit interval body
 
-The literal source endpoints agree with the orthonormal interval construction.
+**Membership in the unit interval body.** A point $x$ of the one-dimensional Euclidean space
+lies in the unit interval body if and only if its single coordinate $x_1$ satisfies
+$-1/2 \le x_1 \le 1/2$.
 
 ## Depends on
 
-- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
-- [Unit Interval Body](unit-interval-body.md)
+- [Full-dimensional convex body](../isotropic-constant/full-dimensional-body.md)
+- [Unit interval body](unit-interval-body.md)
 
 ## Proof depends on
 
-- [Line Isometry](../uniform-interval/line-isometry.md)
+- [Identification of the line with one-dimensional Euclidean space](../uniform-interval/line-isometry.md)
 
 ## Sources
 

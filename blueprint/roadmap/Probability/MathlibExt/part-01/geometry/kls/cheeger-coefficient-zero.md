@@ -7,17 +7,21 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.cheegerCoefficient_zero
 ---
 
-# Cheeger Coefficient zero
+# Cheeger coefficient of the zero measure
 
-The zero measure has no positive-mass cuts, so its Cheeger infimum is infinity.
+**Cheeger coefficient of the zero measure.** On every pseudometric space $E$ equipped with a
+σ-algebra, the zero measure has Cheeger coefficient $\infty$.
+
+No set has measure strictly between $0$ and $1$ under the zero measure, so the infimum is taken
+over the empty family.
 
 ## Depends on
 
-- [Cheeger Coefficient](cheeger-coefficient.md)
+- [Cheeger coefficient](cheeger-coefficient.md)
 
 ## Proof depends on
 
-- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
+- [Outer Minkowski boundary measure](outer-minkowski-boundary.md)
 
 ## Sources
 

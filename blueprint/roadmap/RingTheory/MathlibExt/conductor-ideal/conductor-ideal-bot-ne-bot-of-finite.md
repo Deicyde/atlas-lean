@@ -7,17 +7,20 @@ proof: formalized
 lean: Subalgebra.conductorIdeal_bot_ne_bot_of_finite
 ---
 
-# Conductor Ideal bot ne bot of finite
+# A finite overring has nonzero conductor
 
-A finite overring in the fraction field has nonzero conductor.
+**A finite overring has nonzero conductor.** Let $R$ be an integral domain with fraction
+field $K$, and let $T$ be an $R$-subalgebra of $K$ that is finitely generated as an $R$-module.
+Then the conductor ideal of the image of $R$ in $T$ (the smallest $R$-subalgebra of $T$) is
+nonzero.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+- [Conductor ideal of a subalgebra](conductor-ideal.md)
 
 ## Proof depends on
 
-- [Mem conductor Ideal](mem-conductor-ideal.md)
+- [Membership in the conductor ideal](mem-conductor-ideal.md)
 
 ## Sources
 

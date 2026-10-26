@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.DirectedDisjointPaths.DAdj
 ---
 
-# DAdj
+# Directed adjacency in an arc list
 
-Directed adjacency from an edge list (as a Bool, for use in filters).
+**Directed adjacency in an arc list.** For a finite list $E$ of ordered pairs of natural
+numbers and natural numbers $u$ and $v$, the directed adjacency of $u$ to $v$ in $E$ is the
+boolean value that is true exactly when the pair $(u, v)$ occurs in $E$.
 
 ## Depends on
 

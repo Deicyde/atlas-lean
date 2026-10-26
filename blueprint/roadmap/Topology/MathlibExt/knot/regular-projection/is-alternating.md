@@ -5,21 +5,24 @@ statement: formalized
 lean: MathlibExt.Topology.Knot.RegularProjection.DartDiagram.IsAlternating
 ---
 
-# Is Alternating
+# Alternating dart diagrams
 
-A dart diagram is alternating when consecutive crossings on every
-strand have opposite over/under status. Crossingless components are
-alternating by the empty condition.
+**Alternating dart diagrams.** A dart diagram is alternating when, for every dart $d$, the
+dart $\operatorname{next}(d)$, reached from $d$ by crossing its edge segment and going straight
+through the next crossing, has the opposite over/under status to $d$. In other words, consecutive
+crossings on every strand have opposite over/under status.
+
+Crossingless components impose no condition.
 
 ## Depends on
 
-- [Dart Diagram](dart-diagram.md)
+- [Dart diagram](dart-diagram.md)
 
 ## Proof depends on
 
-- [Dart](dart.md)
-- [Is Over](is-over.md)
-- [Next](next.md)
+- [Darts of a dart diagram](dart.md)
+- [Over-strand darts](is-over.md)
+- [Strand traversal step](next.md)
 
 ## Sources
 

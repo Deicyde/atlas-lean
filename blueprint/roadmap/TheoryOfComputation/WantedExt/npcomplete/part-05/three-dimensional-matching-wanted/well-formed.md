@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.ThreeDimensionalMatching.WellFormed
 ---
 
-# Well Formed
+# Well-formed 3-dimensional matching instances
 
-Well-formedness of an instance.
+**Well-formed 3-dimensional matching instances.** A 3-dimensional matching instance $(n, T)$
+is well formed when each of the three coordinates of every triple in $T$ is less than $n$.
 
 ## Depends on
 
-- [Three Dimensional Matching Instance](three-dimensional-matching-instance.md)
+- [3-dimensional matching instances](three-dimensional-matching-instance.md)
 
 ## Sources
 

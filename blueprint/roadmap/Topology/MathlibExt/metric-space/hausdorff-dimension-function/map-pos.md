@@ -7,13 +7,14 @@ proof: formalized
 lean: HausdorffDimensionFunction.map_pos
 ---
 
-# Map pos
+# A Hausdorff dimension function is positive at positive radii
 
-Strict positivity at positive radii, preserving source codomain `(0,∞)`.
+**A Hausdorff dimension function is positive at positive radii.** If $\psi$ is a Hausdorff
+dimension function and $r > 0$ is a real number, then $\psi(r) > 0$.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Sources
 

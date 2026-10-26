@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.CofinalType
 ---
 
-# Cofinal Type
+# Cofinal type
 
-A cofinal type is a ≡_T-equivalence class of preordered sets.
+**Cofinal type.** A cofinal type is an equivalence class of preordered sets under Tukey
+equivalence $\equiv_T$, where $D \equiv_T E$ means $D \le_T E$ and $E \le_T D$ (Tukey
+reducibility in both directions).
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tukey Equiv](tukey-equiv.md)
-- [Tukey LE](tukey-le.md)
+- [Tukey equivalence](tukey-equiv.md)
+- [Tukey reducibility](tukey-le.md)
 
 ## Sources
 

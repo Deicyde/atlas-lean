@@ -7,15 +7,17 @@ proof: formalized
 lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.mem_bhhLimitValues_iff
 ---
 
-# Mem bhh Limit Values iff
+# Membership in the set of BHH limit values
 
-Membership in `bhhLimitValues` unfolds to the generic BHH characterization.
+**Membership in the set of BHH limit values.** For a measure $\nu$ on the plane and a real
+number $\beta$, $\beta$ belongs to the set of BHH limit values of $\nu$ if and only if $\beta$ is a
+BHH constant for $\nu$.
 
 ## Depends on
 
-- [Is BHHConstant For](is-bhhconstant-for.md)
+- [BHH constant of a law](is-bhhconstant-for.md)
 - [Planar Point](planar-point.md)
-- [Bhh Limit Values](bhh-limit-values.md)
+- [BHH limit values of a sampling law](bhh-limit-values.md)
 
 ## Sources
 

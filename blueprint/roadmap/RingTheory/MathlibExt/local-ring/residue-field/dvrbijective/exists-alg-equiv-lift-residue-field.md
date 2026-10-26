@@ -7,20 +7,24 @@ proof: formalized
 lean: DVRResidue.exists_algEquiv_lift_residueField
 ---
 
-# Exists alg Equiv lift residue Field
+# Lifting residue-field isomorphisms between Henselian étale DVR extensions
 
-An isomorphism of residue fields between finite etale Henselian local DVR extensions lifts to
-an algebra isomorphism, compatibly in both directions.
+**Lifting residue-field isomorphisms between Henselian étale DVR extensions.** Let $A$, $B$,
+$C$ be discrete valuation rings, with $B$ and $C$ finite $A$-algebras whose structure maps are local
+homomorphisms, both étale over $A$ and both Henselian local rings. Write $\kappa(R)$ for the
+residue field of a local ring $R$. Then every $\kappa(A)$-algebra isomorphism
+$e \colon \kappa(B) \to \kappa(C)$ lifts to an $A$-algebra isomorphism $e' \colon B \to C$: the
+map that $e'$ induces on residue fields is $e$, and the map that $e'^{-1}$ induces is $e^{-1}$.
 
 ## Depends on
 
-- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+- [Induced map on residue fields of DVR extensions](../dvr/residue-field-map-alg-hom.md)
 
 ## Proof depends on
 
-- [Is Local Hom of is Discrete Valuation Ring](../dvr/is-local-hom-of-is-discrete-valuation-ri.md)
-- [Residue Field Map Alg Hom injective](../dvr/residue-field-map-alg-hom-injective.md)
-- [Residue Field Map Alg Hom surjective](../dvrfull/residue-field-map-alg-hom-surjective.md)
+- [Algebra maps from a DVR into a finite local DVR extension are local](../dvr/is-local-hom-of-is-discrete-valuation-ri.md)
+- [Residue-field maps determine algebra maps out of a formally unramified DVR extension](../dvr/residue-field-map-alg-hom-injective.md)
+- [Lifting residue-field homomorphisms of finite étale DVR extensions](../dvrfull/residue-field-map-alg-hom-surjective.md)
 
 ## Sources
 

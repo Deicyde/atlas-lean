@@ -5,5 +5,5 @@ navigation: module
 
 # Multigraded Poincare Polynomial
 
-- [Multigraded Poincare Polynomial](multigraded-poincare-polynomial.md)
-- [Multigraded Poincare Polynomial coeff](multigraded-poincare-polynomial-coeff.md)
+- [Multigraded Poincaré polynomial](multigraded-poincare-polynomial.md)
+- [Coefficients of the multigraded Poincaré polynomial](multigraded-poincare-polynomial-coeff.md)

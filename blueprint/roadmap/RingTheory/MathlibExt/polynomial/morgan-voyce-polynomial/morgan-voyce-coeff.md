@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.morganVoyceCoeff
 ---
 
-# Morgan Voyce Coeff
+# Morgan–Voyce coefficients
 
-Morgan-Voyce coefficient array entry `d(n, k)`: `binom{n + k}{n - k}` for
-`k ≤ n` and `0` otherwise, giving the lower-triangular Riordan array
-`(1 / (1 - x), x / (1 - x) ^ 2)` identified as OEIS A085478.
-Source statement `jis_9df126595a4035315bd915ac`,
-concept `jis_sem_455f7ec0e8ec92a0f271843b`.
+**Morgan–Voyce coefficients.** For natural numbers $n$ and $k$, the Morgan–Voyce coefficient
+$d(n, k)$ is the binomial coefficient $\binom{n + k}{n - k}$ if $k \le n$, and $0$ if $k > n$.
+
+These numbers form the lower-triangular Riordan array
+$\left(\frac{1}{1 - x}, \frac{x}{(1 - x)^2}\right)$, OEIS A085478.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.MorganVoycePolynomial](../../../../../sources/v2/MathlibExt.md)
+- statement `jis_9df126595a4035315bd915ac`, concept `jis_sem_455f7ec0e8ec92a0f271843b`.

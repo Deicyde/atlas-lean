@@ -6,9 +6,13 @@ statement: formalized
 lean: FractionalIdeal.dualEquivInv
 ---
 
-# Dual Equiv Inv
+# Dual of a nonzero fractional ideal is its inverse
 
-Dual of a nonzero fractional ideal is its inverse submodule.
+**Dual of a nonzero fractional ideal is its inverse.** Let $A$ be an integral domain with
+fraction field $K$ and let $I$ be a nonzero fractional ideal of $A$ in $K$. This is the $A$-linear
+isomorphism $\operatorname{Hom}_A(I, A) \to I^{-1}$, with $I^{-1}$ viewed as an $A$-submodule of
+$K$, sending $f$ to the unique $x \in I^{-1}$ such that $f(y) = xy$ in $K$ for all $y \in I$
+(where $A$ is identified with its image in $K$).
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coe inv eq mul dual Submodule](coe-inv-eq-mul-dual-submodule.md)
-- [Dual Equiv Mul Dual Submodule](dual-equiv-mul-dual-submodule.md)
+- [The inverse of a nonzero fractional ideal is its multiplication dual](coe-inv-eq-mul-dual-submodule.md)
+- [Dual of a nonzero submodule of the fraction field](dual-equiv-mul-dual-submodule.md)
 
 ## Sources
 

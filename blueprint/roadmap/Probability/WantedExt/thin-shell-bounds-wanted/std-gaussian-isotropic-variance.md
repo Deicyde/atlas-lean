@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Probability.ThinShell.stdGaussian_isotropic_variance
 ---
 
-# Std Gaussian isotropic variance
+# The standard Gaussian has normalized radius variance 2
 
-The actual standard Gaussian witnesses normalized squared-radius variance `2`.
+**The standard Gaussian has normalized radius variance 2.** For every dimension $n \ge 1$,
+the standard Gaussian measure $\gamma_n$ on $\mathbb{R}^n$ is isotropic log-concave (a probability
+measure with a log-concave Lebesgue density, mean $0$ and identity covariance), and its normalized
+radius variance $\frac{1}{n} \int (|x|^2 - n)^2 \, d\gamma_n(x)$ equals $2$.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
-- [Normalized Radius Variance](../../MathlibExt/part-01/geometry/thin-shell/normalized-radius-variance.md)
+- [Isotropic log-concave probability measures](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
+- [Normalized radius variance](../../MathlibExt/part-01/geometry/thin-shell/normalized-radius-variance.md)
 
 ## Sources
 

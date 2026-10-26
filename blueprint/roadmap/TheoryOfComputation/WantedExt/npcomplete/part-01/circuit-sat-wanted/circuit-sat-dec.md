@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.CircuitSat.circuitSatDec
 ---
 
-# Circuit Sat Dec
+# The CIRCUIT SAT decision problem
 
-CIRCUIT SAT as a decision problem over bitstrings.
+**The CIRCUIT SAT decision problem.** CIRCUIT SAT is the decision problem that accepts a
+bitstring $s$ exactly when $s$ decodes, under the canonical bitstring encoding of
+circuit-satisfiability instances, to an instance that is well formed and satisfiable. Bitstrings
+that fail to decode are rejected.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ CIRCUIT SAT as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Circuit Sat Feasible](circuit-sat-feasible.md)
-- [Circuit Sat Instance](circuit-sat-instance.md)
-- [Well Formed](well-formed.md)
+- [Satisfiable circuit instances](circuit-sat-feasible.md)
+- [Circuit-satisfiability instances](circuit-sat-instance.md)
+- [Well-formed circuit-satisfiability instances](well-formed.md)
 
 ## Sources
 

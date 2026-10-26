@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.IsQuasiArithmeticalCompactSet.isSelfSimilarCompactSet
 ---
 
-# Is Self Similar Compact Set
+# Quasi-arithmetical compact sets are self-similar
 
-Characteristic lemma: a quasi-arithmetical compact set is self-similar with the same
-module and ratio.
+**Quasi-arithmetical compact sets are self-similar.** If $K$ is a quasi-arithmetical compact
+set of module $\mu$ and natural-number ratio $\rho$, then $K$ is a self-similar compact set of
+module $\mu$ and ratio $\rho$.
 
 ## Depends on
 
-- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Quasi-arithmetical compact sets](is-quasi-arithmetical-compact-set.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
 
 ## Sources
 

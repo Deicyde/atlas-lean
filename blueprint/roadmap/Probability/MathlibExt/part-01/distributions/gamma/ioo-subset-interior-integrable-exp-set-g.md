@@ -7,10 +7,15 @@ proof: formalized
 lean: ProbabilityTheory.Ioo_subset_interior_integrableExpSet_gammaMeasure
 ---
 
-# Ioo subset interior integrable Exp Set gamma Measure
+# A neighbourhood of zero of exponential integrability for the gamma distribution
 
-A symmetric interval around zero lies in the interior of the gamma
-integrability set, as required by `measure_eq_of_mgf_eqOn_Ioo`.
+**A neighbourhood of zero of exponential integrability for the gamma distribution.** Let
+$a > 0$, $r > 0$ and $0 < \varepsilon < r$, and let $S$ be the set of real $t$ such that
+$x \mapsto e^{tx}$ is integrable with respect to the gamma distribution with shape $a$ and rate
+$r$. Then the interval $(-\varepsilon, \varepsilon)$ is contained in the interior of $S$.
+
+This is the form of hypothesis used to identify a distribution from its moment generating
+function on such an interval.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Iio subset integrable Exp Set gamma Measure](iio-subset-integrable-exp-set-gamma-meas.md)
+- [Half-line of exponential integrability for the gamma distribution](iio-subset-integrable-exp-set-gamma-meas.md)
 
 ## Sources
 

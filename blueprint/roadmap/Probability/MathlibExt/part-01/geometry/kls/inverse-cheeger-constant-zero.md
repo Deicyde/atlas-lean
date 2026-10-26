@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Probability.KLS.inverseCheegerConstant_zero
 ---
 
-# Inverse Cheeger Constant zero
+# Inverse Cheeger constant of the zero measure
 
-Inversion does not mistake the empty cut family for an admissible probability law.
+**Inverse Cheeger constant of the zero measure.** On every pseudometric space $E$ equipped
+with a σ-algebra, the zero measure has inverse Cheeger constant $0$.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Inverse Cheeger constant](inverse-cheeger-constant.md)
 
 ## Proof depends on
 
-- [Cheeger Coefficient](cheeger-coefficient.md)
-- [Cheeger Coefficient zero](cheeger-coefficient-zero.md)
+- [Cheeger coefficient](cheeger-coefficient.md)
+- [Cheeger coefficient of the zero measure](cheeger-coefficient-zero.md)
 
 ## Sources
 

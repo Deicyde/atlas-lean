@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Probability.ConvexSubGaussianComparisonWantedDavis.standardNormalTail
 ---
 
-# Standard Normal Tail
+# Standard Gaussian upper tail
 
-The standard Gaussian upper tail uses Mathlib's actual normalized Gaussian density.
+**Standard Gaussian upper tail.** For a real number $x$, the standard Gaussian upper tail at
+$x$ is $Q(x) = \int_x^\infty \varphi(t)\,dt$, where $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ is the
+standard Gaussian density.
 
 ## Depends on
 

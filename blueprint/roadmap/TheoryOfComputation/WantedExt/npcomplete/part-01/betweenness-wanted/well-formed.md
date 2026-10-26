@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Betweenness.WellFormed
 ---
 
-# Well Formed
+# Well-formed BETWEENNESS instances
 
-Well-formedness of an instance.
+**Well-formed BETWEENNESS instances.** A BETWEENNESS instance $(n, T)$ is well formed when
+every triple $(a, b, c)$ in $T$ satisfies $a < n$, $b < n$ and $c < n$, and $a$, $b$, $c$ are
+pairwise distinct.
 
 ## Depends on
 
-- [Betweenness Instance](betweenness-instance.md)
+- [BETWEENNESS instances](betweenness-instance.md)
 
 ## Sources
 

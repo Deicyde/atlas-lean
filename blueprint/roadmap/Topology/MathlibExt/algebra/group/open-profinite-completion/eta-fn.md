@@ -6,18 +6,20 @@ statement: formalized
 lean: ProfiniteGrp.OpenProfiniteCompletion.etaFn
 ---
 
-# Eta Fn
+# Canonical map into the open profinite completion
 
-Canonical map `G → completion G` sending `x` to `(mk x)_H`.
+**Canonical map into the open profinite completion.** For a group $G$ with a topology, this is
+the map from $G$ to its open profinite completion that sends $x \in G$ to the family of cosets
+$(xH)_H$, where $H$ runs over the open finite-index normal subgroups of $G$.
 
 ## Depends on
 
-- [Completion](completion.md)
+- [Open profinite completion of a group](completion.md)
 
 ## Proof depends on
 
-- [Index](index.md)
-- [Diagram](diagram.md)
+- [Open finite-index normal subgroups](index.md)
+- [Diagram of finite quotients as profinite groups](diagram.md)
 
 ## Sources
 

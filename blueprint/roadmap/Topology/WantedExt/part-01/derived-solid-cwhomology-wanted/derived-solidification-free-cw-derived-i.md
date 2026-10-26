@@ -4,23 +4,28 @@ origin: cited
 lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.Solid.derivedSolidification_free_CW_derivedIso
 ---
 
-# Derived Solidification free CW derived Iso
+# Pointwise derived comparison for CW complexes
 
-The pointwise component of `derivedSolidification_free_CW_derivedNatIso`.
+**Pointwise derived comparison for CW complexes.** For a topological space $X$ with a CW
+complex structure on all of $X$, an isomorphism in the derived category of light condensed abelian
+groups from the derived inclusion of the derived solidification of the free light condensed
+abelian group $\mathbb{Z}[X]$, placed in degree $0$, to the integral singular chain complex of $X$,
+viewed as a complex of discrete light condensed abelian groups with chains of degree $n$ placed in
+cohomological degree $-n$.
 
 ## Depends on
 
-- [P](p.md)
-- [P retract](p-retract.md)
-- [Solid](solid.md)
-- [DLight Cond Ab](dlight-cond-ab.md)
-- [DSolid](dsolid.md)
-- [Derived Inclusion](derived-inclusion.md)
-- [Derived Solidification](derived-solidification.md)
-- [Free Light Cond Ab Of Top](free-light-cond-ab-of-top.md)
-- [Singular Chains Light Cond Ab Derived](singular-chains-light-cond-ab-derived.md)
-- [Is Solid](is-solid.md)
-- [One Minus Shift](one-minus-shift-2.md)
+- [The light condensed abelian group P](p.md)
+- [P is a retract of ℤ(ℕ ∪ {∞})](p-retract.md)
+- [The category of light solid abelian groups](solid.md)
+- [Derived category of light condensed abelian groups](dlight-cond-ab.md)
+- [Derived category of light solid abelian groups](dsolid.md)
+- [Derived inclusion of solid abelian groups](derived-inclusion.md)
+- [Derived solidification](derived-solidification.md)
+- [Free light condensed abelian group on a topological space](free-light-cond-ab-of-top.md)
+- [The singular chains of a space in the derived category](singular-chains-light-cond-ab-derived.md)
+- [Solid light condensed abelian groups](is-solid.md)
+- [One minus shift on P](one-minus-shift-2.md)
 
 ## Sources
 

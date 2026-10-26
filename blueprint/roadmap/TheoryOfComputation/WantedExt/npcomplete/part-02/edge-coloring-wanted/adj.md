@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.EdgeColoring.Adj
 ---
 
-# Adj
+# Adjacency in an edge coloring edge list
 
-Undirected adjacency from an edge list (as a Bool, for use in filters).
+**Adjacency in an edge coloring edge list.** Given a list $E$ of ordered pairs of natural
+numbers and natural numbers $u$ and $v$, the boolean adjacency of $u$ and $v$ in $E$ is true
+exactly when $(u, v)$ or $(v, u)$ occurs in $E$.
 
 ## Depends on
 

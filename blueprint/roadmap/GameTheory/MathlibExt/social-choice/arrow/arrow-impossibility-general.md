@@ -35,7 +35,7 @@ procedure for equality on each; this extra data does not change the mathematical
 - [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 - [Strict preference orders for Arrow's theorem are total](total.md)
 - [Strict preference orders for Arrow's theorem are transitive](trans.md)
-- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Strict total order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

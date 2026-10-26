@@ -7,13 +7,13 @@ navigation: module
 
 ## Splits Completely
 
-- [Stabilizer eq bot iff ncard primes Over eq card](stabilizer-eq-bot-iff-ncard-primes-over.md)
+- [Trivial decomposition group and the number of primes above](stabilizer-eq-bot-iff-ncard-primes-over.md)
 
 ## Conditional
 
-- [Arith Frob At eq one iff ncard primes Over eq card of generates](arith-frob-at-eq-one-iff-ncard-primes-ov.md)
+- [Trivial Frobenius and the number of primes above, assuming the Frobenius generates](arith-frob-at-eq-one-iff-ncard-primes-ov.md)
 
 ## Unramified
 
-- [Arith Frob At generates stabilizer of is Unramified At](arith-frob-at-generates-stabilizer-of-is.md)
-- [Arith Frob At eq one iff ncard primes Over eq card](arith-frob-at-eq-one-iff-ncard-primes-ov-2.md)
+- [The Frobenius element generates the decomposition group at an unramified prime](arith-frob-at-generates-stabilizer-of-is.md)
+- [The Frobenius element is trivial iff the prime splits completely](arith-frob-at-eq-one-iff-ncard-primes-ov-2.md)

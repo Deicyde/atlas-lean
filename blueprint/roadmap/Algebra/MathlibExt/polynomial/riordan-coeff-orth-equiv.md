@@ -44,7 +44,7 @@ inverse-array equivalence from the Stieltjes production construction of the inve
 
 ## Proof depends on
 
-- [Favard Iff](favard-iff.md)
+- [Favard's theorem](favard-iff.md)
 
 ## Sources
 

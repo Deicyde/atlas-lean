@@ -17,7 +17,7 @@ $v_i \le t f(y)_i < v_i + 1$ for every coordinate $i$.
 ## Depends on
 
 - [Integer cube set](integer-cube-set.md)
-- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
+- [The unit cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

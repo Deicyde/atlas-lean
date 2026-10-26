@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinBisection.MinBisectionFeasible
 ---
 
-# Min Bisection Feasible
+# Feasible MINIMUM BISECTION instances
 
-A bisection into two sets of `n / 2` vertices with at most `K` crossing edges.
+**Feasible MINIMUM BISECTION instances.** An instance $(n, es, K)$ of MINIMUM BISECTION is
+feasible when there is a set $S \subseteq \{0, \dots, n - 1\}$ with $\lfloor n / 2 \rfloor$
+elements such that no sublist of $es$ (a list obtained from $es$ by deleting entries) with
+$K + 1$ entries consists only of entries $(u, v)$ with exactly one of $u$ and $v$ in $S$; that
+is, at most $K$ entries of $es$ have exactly one endpoint in $S$.
 
 ## Depends on
 
-- [Min Bisection Instance](min-bisection-instance.md)
+- [Instances of MINIMUM BISECTION](min-bisection-instance.md)
 
 ## Sources
 

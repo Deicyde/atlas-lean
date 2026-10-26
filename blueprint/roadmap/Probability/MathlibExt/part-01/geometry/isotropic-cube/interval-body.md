@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Probability.IsotropicConstant.intervalBody
 ---
 
-# Interval Body
+# Symmetric interval as a convex body
 
-A full-dimensional interval body, built from the actual closed interval.
+**Symmetric interval as a convex body.** For a real number $a > 0$, this is the closed
+interval $[-a, a]$ in the one-dimensional Euclidean space, regarded as a full-dimensional convex
+body.
 
 ## Depends on
 
-- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Full-dimensional convex body](../isotropic-constant/full-dimensional-body.md)
 
 ## Proof depends on
 
-- [Line Isometry](../uniform-interval/line-isometry.md)
-- [Symmetric Interval](../uniform-interval/symmetric-interval.md)
+- [Identification of the line with one-dimensional Euclidean space](../uniform-interval/line-isometry.md)
+- [Symmetric interval in one-dimensional Euclidean space](../uniform-interval/symmetric-interval.md)
 
 ## Sources
 

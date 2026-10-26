@@ -4,8 +4,8 @@ navigation: module
 
 # Degree Constrained Spanning Tree
 
-- [Degree Constrained Spanning Tree Instance](degree-constrained-spanning-tree-instanc.md)
-- [Well Formed](well-formed.md)
-- [Degree Constrained Spanning Tree Feasible](degree-constrained-spanning-tree-feasibl.md)
-- [Degree Constrained Spanning Tree Dec](degree-constrained-spanning-tree-dec.md)
+- [Instances of DEGREE-CONSTRAINED SPANNING TREE](degree-constrained-spanning-tree-instanc.md)
+- [Well-formed DEGREE-CONSTRAINED SPANNING TREE instances](well-formed.md)
+- [Feasibility for DEGREE-CONSTRAINED SPANNING TREE](degree-constrained-spanning-tree-feasibl.md)
+- [DEGREE-CONSTRAINED SPANNING TREE as a decision problem](degree-constrained-spanning-tree-dec.md)
 - [DEGREE-CONSTRAINED SPANNING TREE is NP-complete](degree-constrained-spanning-tree-np-comp.md)

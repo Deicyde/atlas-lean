@@ -5,13 +5,13 @@ navigation: module
 
 # Dual
 
-- [Dual Submodule mul eq div](dual-submodule-mul-eq-div.md)
-- [Exists mul rep](exists-mul-rep.md)
-- [Mul nondegenerate](mul-nondegenerate.md)
-- [Span coe eq top](span-coe-eq-top.md)
-- [Mul dual Submodule To Dual surjective](mul-dual-submodule-to-dual-surjective.md)
-- [Dual Equiv Mul Dual Submodule](dual-equiv-mul-dual-submodule.md)
-- [Dual Equiv Mul Dual Submodule spec](dual-equiv-mul-dual-submodule-spec.md)
-- [Coe inv eq mul dual Submodule](coe-inv-eq-mul-dual-submodule.md)
-- [Dual Equiv Inv](dual-equiv-inv.md)
-- [Double Dual Equiv Of Is Unit](double-dual-equiv-of-is-unit.md)
+- [The multiplication dual is a colon quotient](dual-submodule-mul-eq-div.md)
+- [Functionals on a submodule of the fraction field are multiplications](exists-mul-rep.md)
+- [Multiplication is a nondegenerate bilinear form](mul-nondegenerate.md)
+- [A nonzero submodule spans the field](span-coe-eq-top.md)
+- [Every functional comes from the multiplication dual](mul-dual-submodule-to-dual-surjective.md)
+- [Dual of a nonzero submodule of the fraction field](dual-equiv-mul-dual-submodule.md)
+- [Formula for the isomorphism onto the multiplication dual](dual-equiv-mul-dual-submodule-spec.md)
+- [The inverse of a nonzero fractional ideal is its multiplication dual](coe-inv-eq-mul-dual-submodule.md)
+- [Dual of a nonzero fractional ideal is its inverse](dual-equiv-inv.md)
+- [Double dual of an invertible fractional ideal](double-dual-equiv-of-is-unit.md)

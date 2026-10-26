@@ -7,7 +7,7 @@ lean: MathlibExt.Topology.QuadrisecantWanted.KnotTheory.Quadrisecant.period
 
 # Period
 
-The `2π` period.
+**Period.** The period is the real number $2\pi$.
 
 ## Depends on
 

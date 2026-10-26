@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsColoringFree
 ---
 
-# Is Coloring Free
+# Free set for a coloring
 
-For a given set X, K⊆ X× X, H⊆ X, the coloring H (thought of as a function H : X→ 2), is K-free
-if no pair from H lies in K.
+**Free set for a coloring.** Let $X$ be a set and $K \subseteq X \times X$. A set
+$H \subseteq X$ is $K$-free if $(x, y) \notin K$ for all $x, y \in H$.
 
 ## Depends on
 

@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.stabilityGaugeIndex
 ---
 
-# Stability Gauge Index
+# Un-normalized stability gauge
 
-The un-normalized stability gauge `ℓ μ - u` of `n`, read off the witness
-`n / ρ^ℓ ∈ T_u` with the least `ℓ` (and the `u` of that witness). By Proposition 5 the
-value `ℓ μ - u` is the same for every witness when `K` is quasi-arithmetical; the least
-`ℓ` only fixes a choice.
+**Un-normalized stability gauge.** Let $K \subseteq \mathbb{R}$, let $\mu$, $\rho$ and $n$ be
+natural numbers, and let $T_u$ denote the layer of $K$ of index $u$. Let $\ell$ be the least
+natural number such that $n / \rho^\ell$ lies in some layer $T_u$ (division by $0$ gives $0$), and
+let $u$ be the least index with $n / \rho^\ell \in T_u$. The un-normalized stability gauge of $n$
+is the integer $\ell \mu - u$. If $n / \rho^\ell$ lies in no layer for any $\ell$, its value is $0$.
+
+When $K$ is a quasi-arithmetical compact set of module $\mu$ and ratio $\rho$, Proposition 5 of the
+source says that $\ell \mu - u$ is the same for every $\ell$ and $u$ with $n / \rho^\ell \in T_u$;
+taking the least $\ell$ only fixes a choice.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Self Similar Layer](self-similar-layer.md)
+- [Layers of the iterated derived sets](self-similar-layer.md)
 
 ## Sources
 

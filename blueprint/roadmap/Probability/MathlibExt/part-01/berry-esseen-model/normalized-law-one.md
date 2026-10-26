@@ -7,20 +7,22 @@ proof: formalized
 lean: BerryEsseenModel.normalizedLaw_one
 ---
 
-# Normalized Law one
+# The normalized law with one summand
 
-A one-summand normalized law is the original law.
+**The normalized law with one summand.** For every standardized law $\mu$ on $\mathbb{R}$
+(a probability measure with mean $0$, variance $1$ and finite third absolute moment), the
+normalized law of $\mu$ at $n = 1$ is $\mu$ itself.
 
 ## Depends on
 
-- [Is Standardized Law](is-standardized-law.md)
-- [Normalized Law](normalized-law.md)
+- [Standardized laws with finite third moment](is-standardized-law.md)
+- [Law of the normalized sum](normalized-law.md)
 
 ## Proof depends on
 
-- [Iid Law](iid-law.md)
-- [Iid Law map eval](iid-law-map-eval.md)
-- [Normalized Sum](normalized-sum.md)
+- [I.i.d. product law](iid-law.md)
+- [Coordinate laws of the i.i.d. product](iid-law-map-eval.md)
+- [Normalized sum](normalized-sum.md)
 
 ## Sources
 

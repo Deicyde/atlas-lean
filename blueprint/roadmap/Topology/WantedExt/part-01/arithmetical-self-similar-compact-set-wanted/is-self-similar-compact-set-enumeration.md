@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isSelfSimilarCompactSet_enumeration
 ---
 
-# Is Self Similar Compact Set enumeration
+# Order type of a self-similar compact set
 
-Proposition 1 together with the order-type claim of its proof: a self-similar
-compact set of positive module has order type `ω^ω + 1` under the reverse order,
-i.e. it is the image of `[0, ω^ω]` under a strictly decreasing enumeration
-`α ↦ K[α]`, and `K[ω^ω] = 0`, `K[0] > 0`, `K ⊆ [0, K[0]]`. The hypothesis `0 < μ`
-is the paper's convention that `μ` is a natural number (for `μ = 0` the set `{0}`
-satisfies Definition 1).
+**Order type of a self-similar compact set.** Let $K$ be a self-similar compact set of module
+$\mu \ge 1$ and ratio $\rho$. Then there is a strictly decreasing map $\alpha \mapsto K[\alpha]$
+from the ordinals $\alpha \le \omega^\omega$ onto $K$ (so $K$ has order type $\omega^\omega + 1$
+under the reverse order) with $K[\omega^\omega] = 0$, $K[0] > 0$ and $K \subseteq [0, K[0]]$.
+
+The hypothesis $\mu \ge 1$ is the paper's convention that $\mu$ is a natural number; for
+$\mu = 0$ the set $\{0\}$ would satisfy the definition.
 
 ## Depends on
 
-- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Self-similar compact set](is-self-similar-compact-set.md)
 
 ## Sources
 

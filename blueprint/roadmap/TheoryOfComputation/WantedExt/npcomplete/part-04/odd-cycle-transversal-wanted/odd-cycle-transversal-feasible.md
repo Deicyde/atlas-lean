@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.OddCycleTransversal.OddCycleTransversalFeasible
 ---
 
-# Odd Cycle Transversal Feasible
+# Feasible odd cycle transversal instances
 
-At most `K` vertices whose removal leaves a bipartite graph.
+**Feasible odd cycle transversal instances.** An odd cycle transversal instance $(n, es, K)$
+is feasible when there is a set $S$ of at most $K$ vertices of its graph such that the subgraph
+induced on the vertices outside $S$ is bipartite.
 
 ## Depends on
 
-- [Odd Cycle Transversal Instance](odd-cycle-transversal-instance.md)
+- [Odd cycle transversal instances](odd-cycle-transversal-instance.md)
 
 ## Proof depends on
 
-- [Graph](graph.md)
+- [Graph of an odd cycle transversal instance](graph.md)
 
 ## Sources
 

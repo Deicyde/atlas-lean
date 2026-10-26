@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.Akari.akariDec
 ---
 
-# Akari Dec
+# The Akari decision problem
 
-AKARI (LIGHT UP) as a decision problem over bitstrings.
+**The Akari decision problem.** The Akari (Light Up) decision problem accepts a list of
+booleans $x$ exactly when $x$ decodes, under the canonical bitstring encoding of lists of lists of
+natural numbers, to an Akari board that is well formed and feasible; it rejects every list that
+does not decode.
 
 ## Depends on
 
@@ -23,9 +26,9 @@ AKARI (LIGHT UP) as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Akari Feasible](akari-feasible.md)
-- [Akari Instance](akari-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible Akari boards](akari-feasible.md)
+- [Akari boards](akari-instance.md)
+- [Well-formed Akari boards](well-formed.md)
 
 ## Sources
 

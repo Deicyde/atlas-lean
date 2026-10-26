@@ -5,6 +5,6 @@ navigation: module
 
 # Conjugacy Class
 
-- [Arith Frob Conj Class](arith-frob-conj-class.md)
-- [Arith Frob Conj Class mem carrier](arith-frob-conj-class-mem-carrier.md)
-- [Arith Frob Conj Class eq of under eq](arith-frob-conj-class-eq-of-under-eq.md)
+- [Frobenius conjugacy class](arith-frob-conj-class.md)
+- [The Frobenius element lies in the Frobenius conjugacy class](arith-frob-conj-class-mem-carrier.md)
+- [The Frobenius conjugacy class depends only on the prime below](arith-frob-conj-class-eq-of-under-eq.md)

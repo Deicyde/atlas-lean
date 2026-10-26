@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MinimumTestSet.WellFormed
 ---
 
-# Well Formed
+# Well-formed minimum test set instance
 
-Well-formedness of an instance.
+**Well-formed minimum test set instance.** An instance $(n, C, K)$ of MINIMUM TEST SET is well
+formed when every test in the list $C$ is a list of numbers below $n$ without repeated entries,
+so that each test lists a subset of $\{0, \dots, n-1\}$, each element once.
 
 ## Depends on
 
-- [Minimum Test Set Instance](minimum-test-set-instance.md)
+- [Minimum test set instance](minimum-test-set-instance.md)
 
 ## Sources
 

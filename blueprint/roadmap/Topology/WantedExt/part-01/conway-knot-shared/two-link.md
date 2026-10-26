@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink
 ---
 
-# Two Link
+# Two-component link
 
-An oriented two-component smooth link in `ℝ³`: a pair of oriented knots
-with disjoint images.
+**Two-component link.** An oriented two-component smooth link in $\mathbb{R}^3$ is a pair
+$(K, L)$ of oriented smooth knots whose images in $\mathbb{R}^3$ are disjoint.
 
 ## Depends on
 

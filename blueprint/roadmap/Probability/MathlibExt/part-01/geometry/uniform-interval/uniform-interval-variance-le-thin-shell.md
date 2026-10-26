@@ -7,20 +7,24 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.uniformInterval_variance_le_thinShellConstant
 ---
 
-# Uniform Interval variance le thin Shell Constant
+# Thin-shell variance bound for the uniform law on (−√3, √3)
 
-The proved interval law exercises the actual universal-supremum bridge.
+**Thin-shell variance bound for the uniform law on [−√3, √3].** Let $\mu$ be the uniform
+distribution on the symmetric interval $[-\sqrt{3}, \sqrt{3}]$ of one-dimensional Euclidean
+space $\mathbb{R}^1$. Its normalized radius variance $\int (\|x\|^2 - 1)^2 \, d\mu(x)$ is at most
+the thin-shell variance constant, the supremum of the normalized radius variance over all
+isotropic log-concave probability measures in all positive dimensions.
 
 ## Depends on
 
-- [Normalized Radius Variance](../thin-shell/normalized-radius-variance.md)
-- [Thin Shell Variance Constant](../thin-shell/thin-shell-variance-constant.md)
-- [Uniform Interval](uniform-interval.md)
+- [Normalized radius variance](../thin-shell/normalized-radius-variance.md)
+- [Thin-shell variance constant](../thin-shell/thin-shell-variance-constant.md)
+- [Uniform distribution on a symmetric interval](uniform-interval.md)
 
 ## Proof depends on
 
-- [Normalized Radius Variance le constant](../thin-shell/normalized-radius-variance-le-constant.md)
-- [Uniform Interval sqrt three is Isotropic Log Concave](uniform-interval-sqrt-three-is-isotropic.md)
+- [The thin-shell variance constant bounds the normalized radius variance of isotropic log-concave measures](../thin-shell/normalized-radius-variance-le-constant.md)
+- [The uniform law on (−√3, √3) is isotropic log-concave](uniform-interval-sqrt-three-is-isotropic.md)
 
 ## Sources
 

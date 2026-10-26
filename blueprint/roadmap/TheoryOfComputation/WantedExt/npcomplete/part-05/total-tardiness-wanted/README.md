@@ -4,9 +4,9 @@ navigation: module
 
 # Total Tardiness
 
-- [Total Tardiness Instance](total-tardiness-instance.md)
-- [Tardiness Step](tardiness-step.md)
-- [Total Tardiness Value](total-tardiness-value.md)
-- [Total Tardiness Feasible](total-tardiness-feasible.md)
-- [Total Tardiness Dec](total-tardiness-dec.md)
+- [Instances of TOTAL TARDINESS](total-tardiness-instance.md)
+- [One step of the tardiness computation](tardiness-step.md)
+- [Total tardiness of a job order](total-tardiness-value.md)
+- [Feasible TOTAL TARDINESS instances](total-tardiness-feasible.md)
+- [The TOTAL TARDINESS decision problem](total-tardiness-dec.md)
 - [TOTAL TARDINESS is NP-complete](total-tardiness-np-complete.md)

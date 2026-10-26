@@ -4,9 +4,9 @@ navigation: module
 
 # Kirk Normal Structure
 
-- [Metric Diameter](metric-diameter.md)
-- [Point Radius In](point-radius-in.md)
-- [Is Diametral Point](is-diametral-point.md)
-- [Has Normal Structure](has-normal-structure.md)
-- [Is Nonexpansive Self Map](is-nonexpansive-self-map.md)
-- [Kirk normal structure](kirk-normal-structure.md)
+- [Diameter of a set](metric-diameter.md)
+- [Radius of a point in a set](point-radius-in.md)
+- [Diametral point](is-diametral-point.md)
+- [Normal structure](has-normal-structure.md)
+- [Nonexpansive self-map](is-nonexpansive-self-map.md)
+- [Kirk's fixed-point theorem for sets with normal structure](kirk-normal-structure.md)

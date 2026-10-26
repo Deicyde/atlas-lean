@@ -4,5 +4,5 @@ navigation: module
 
 # Piccirillo
 
-- [Conway Knot is Simple](conway-knot-is-simple.md)
-- [Conway knot not smoothly slice](conway-knot-not-smoothly-slice.md)
+- [The Conway knot polyline is a simple closed curve](conway-knot-is-simple.md)
+- [The Conway knot is not smoothly slice (Piccirillo)](conway-knot-not-smoothly-slice.md)

@@ -5,9 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.Complexity.NPComplete.MaximumInducedMatching.maximumInducedMatchingDec
 ---
 
-# Maximum Induced Matching Dec
+# The MAXIMUM INDUCED MATCHING decision problem
 
-MAXIMUM INDUCED MATCHING as a decision problem over bitstrings.
+**The MAXIMUM INDUCED MATCHING decision problem.** MAXIMUM INDUCED MATCHING is the decision
+problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
+encoding, to a maximum-induced-matching instance $(n, E, K)$ that is well formed and feasible:
+the edge list $E$ has no repeated entries, every pair $(u, v)$ in $E$ satisfies $u < n$, $v < n$
+and $u \ne v$ with $(v, u)$ not in $E$, and some sublist $M$ of $E$ of length at least $K$ is an
+induced matching, meaning that any two distinct pairs in $M$ share no endpoint and no pair in $E$
+joins an endpoint of one pair in $M$ to an endpoint of a different pair in $M$. Bitstrings that
+do not decode are rejected.
 
 ## Depends on
 
@@ -23,9 +30,9 @@ MAXIMUM INDUCED MATCHING as a decision problem over bitstrings.
 - [Parsing one self-delimiting block](../../../../../Computability/MathlibExt/complexity/undelimit.md)
 - [Parsing a list of booleans into self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Maximum Induced Matching Feasible](maximum-induced-matching-feasible.md)
-- [Maximum Induced Matching Instance](maximum-induced-matching-instance.md)
-- [Well Formed](well-formed.md)
+- [Feasible maximum-induced-matching instances](maximum-induced-matching-feasible.md)
+- [Maximum-induced-matching instances](maximum-induced-matching-instance.md)
+- [Well-formed maximum-induced-matching instances](well-formed.md)
 
 ## Sources
 

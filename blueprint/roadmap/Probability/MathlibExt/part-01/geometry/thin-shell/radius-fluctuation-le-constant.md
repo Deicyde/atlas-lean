@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Probability.ThinShell.radius_fluctuation_le_constant
 ---
 
-# Radius fluctuation le constant
+# The thin-shell variance constant bounds the radius fluctuation
 
-The variance formulation controls the radius fluctuation for every actual law.
+**The thin-shell variance constant bounds the radius fluctuation.** For every $n > 0$ and
+every isotropic log-concave probability measure $\mu$ on $\mathbb{R}^n$, the integral
+$\int (\|x\| - \sqrt{n})^2 \, d\mu(x)$, taken in $[0, \infty]$ with $\|x\|$ the Euclidean
+norm, is at most the thin-shell variance constant.
 
 ## Depends on
 
-- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
-- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+- [Isotropic log-concave probability measures](is-isotropic-log-concave.md)
+- [Thin-shell variance constant](thin-shell-variance-constant.md)
 
 ## Proof depends on
 
-- [Normalized Radius Variance](normalized-radius-variance.md)
-- [Normalized Radius Variance le constant](normalized-radius-variance-le-constant.md)
-- [Radius fluctuation le normalized variance](radius-fluctuation-le-normalized-varianc.md)
+- [Normalized radius variance](normalized-radius-variance.md)
+- [The thin-shell variance constant bounds the normalized radius variance of isotropic log-concave measures](normalized-radius-variance-le-constant.md)
+- [Radius fluctuation is bounded by the normalized radius variance](radius-fluctuation-le-normalized-varianc.md)
 
 ## Sources
 

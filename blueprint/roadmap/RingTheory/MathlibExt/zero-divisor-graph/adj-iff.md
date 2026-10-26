@@ -7,14 +7,15 @@ proof: formalized
 lean: ZeroDivisorGraph.adj_iff
 ---
 
-# Adj iff
+# Adjacency in the zero-divisor graph
 
-Adjacency is distinctness plus zero product in source orientation.
+**Adjacency in the zero-divisor graph.** Let $R$ be a commutative ring. Two vertices $v$
+and $w$ of the zero-divisor graph of $R$ are adjacent if and only if $v \neq w$ and $vw = 0$.
 
 ## Depends on
 
-- [Vertex](vertex.md)
-- [Zero Divisor Graph](zero-divisor-graph.md)
+- [Nonzero zero divisors](vertex.md)
+- [The zero-divisor graph](zero-divisor-graph.md)
 
 ## Sources
 

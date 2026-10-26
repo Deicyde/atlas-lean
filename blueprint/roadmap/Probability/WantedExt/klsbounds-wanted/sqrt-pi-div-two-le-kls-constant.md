@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.sqrtPiDivTwo_le_klsConstant
 ---
 
-# Sqrt Pi Div Two le kls Constant
+# A lower bound for the KLS constant
 
-The actual Gaussian law gives the exact lower bound for the global constant.
+**A lower bound for the KLS constant.** The KLS constant is at least $\sqrt{\pi/2}$.
+
+The bound comes from the standard Gaussian measure in any dimension $n \ge 1$, whose inverse Cheeger
+constant is $\sqrt{\pi/2}$.
 
 ## Depends on
 
-- [Kls Constant](../../MathlibExt/part-01/geometry/kls/kls-constant.md)
+- [KLS constant](../../MathlibExt/part-01/geometry/kls/kls-constant.md)
 
 ## Sources
 

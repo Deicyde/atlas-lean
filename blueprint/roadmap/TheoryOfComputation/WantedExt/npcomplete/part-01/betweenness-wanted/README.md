@@ -4,8 +4,8 @@ navigation: module
 
 # Betweenness
 
-- [Betweenness Instance](betweenness-instance.md)
-- [Well Formed](well-formed.md)
-- [Betweenness Feasible](betweenness-feasible.md)
-- [Betweenness Dec](betweenness-dec.md)
+- [BETWEENNESS instances](betweenness-instance.md)
+- [Well-formed BETWEENNESS instances](well-formed.md)
+- [BETWEENNESS feasibility](betweenness-feasible.md)
+- [The BETWEENNESS decision problem](betweenness-dec.md)
 - [BETWEENNESS is NP-complete](betweenness-np-complete.md)

@@ -7,18 +7,20 @@ proof: formalized
 lean: HausdorffDimensionFunction.tendsto_zero
 ---
 
-# Tendsto zero
+# A Hausdorff dimension function tends to zero at zero
 
-Source limit `lim_{r→0} ψ r = 0`, realized as `Tendsto ψ (𝓝[>] 0) (𝓝 0)`.
+**A Hausdorff dimension function tends to zero at zero.** Every Hausdorff dimension function
+$\psi$ satisfies $\psi(r) \to 0$ as $r \to 0^+$, that is, as $r$ tends to $0$ through positive
+values.
 
 ## Depends on
 
-- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+- [Hausdorff dimension function](hausdorff-dimension-function.md)
 
 ## Proof depends on
 
-- [Continuous](continuous.md)
-- [Map zero](map-zero.md)
+- [Continuity of a Hausdorff dimension function](continuous.md)
+- [A Hausdorff dimension function vanishes at zero](map-zero.md)
 
 ## Sources
 

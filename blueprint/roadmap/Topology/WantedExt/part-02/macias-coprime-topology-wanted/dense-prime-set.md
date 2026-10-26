@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.dense_primeSet₁
 ---
 
-# Theorem 3
+# The primes are dense in the coprime topology without 1
 
-**Theorem 3**: the set of prime numbers is dense in `X₁`.
+**The primes are dense in the coprime topology without 1.** The set of prime numbers is dense
+in the set of positive integers different from $1$, with the subspace topology induced by
+Macías's coprime topology on the positive integers.
 
 ## Depends on
 
-- [Macias Topology₁](macias-topology-2.md)
-- [Prime Set₁](prime-set-2.md)
+- [Macías's coprime topology without 1](macias-topology-2.md)
+- [Primes among the positive integers different from 1](prime-set-2.md)
 
 ## Sources
 

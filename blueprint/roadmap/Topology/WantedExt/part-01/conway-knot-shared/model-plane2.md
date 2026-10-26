@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.modelPlane2
 ---
 
-# Model Plane2
+# Model interior $2$-plane
 
-Model interior `2`-plane in `ℝ³ × ℝ`: the locus where the last two
-coordinates of `q.1` and `q.2` all vanish. Used to express interior local
-flatness of an embedded `2`-disk.
+**Model interior $2$-plane.** The model interior $2$-plane in $\mathbb{R}^3 \times \mathbb{R}$
+is the set of points $((x_1, x_2, x_3), t)$ with $x_2 = x_3 = 0$, where $x_1$ and $t$ are
+arbitrary. It is the local model for interior local flatness of an embedded $2$-disk.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean space $\mathbb{R}^3$](r3.md)
 
 ## Sources
 

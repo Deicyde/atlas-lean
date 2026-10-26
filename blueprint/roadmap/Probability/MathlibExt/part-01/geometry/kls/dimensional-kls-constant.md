@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Probability.KLS.dimensionalKlsConstant
 ---
 
-# Dimensional Kls Constant
+# Dimensional KLS constant
 
-The worst inverse coefficient among actual isotropic log-concave laws in dimension `n`.
+**Dimensional KLS constant.** For $n \in \mathbb{N}$, the dimensional KLS constant in
+dimension $n$ is the supremum in $[0, \infty]$ of the inverse Cheeger constants of all isotropic
+log-concave probability measures on $\mathbb{R}^n$ with the Euclidean metric.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
-- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Inverse Cheeger constant](inverse-cheeger-constant.md)
+- [Isotropic log-concave probability measures](../thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

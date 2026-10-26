@@ -29,7 +29,7 @@ $\mathrm{Gal}(L/K)$ trivial.
 
 - [Primes dividing a modulus](../part-02/ray-group/finite-supported.md)
 - [The chosen Frobenius is an arithmetic Frobenius at an unramified prime](frobenius-generators/frobenius-at-coprime-prime-spec.md)
-- [Restriction](../../../../../../../RingTheory/MathlibExt/frobenius/restrict-normal-hom-eq-of-is-arith-frob.md)
+- [Restricting a Frobenius element to an intermediate field](../../../../../../../RingTheory/MathlibExt/frobenius/restrict-normal-hom-eq-of-is-arith-frob.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: PMF.uniformFinset_univ
 ---
 
-# Uniform Finset univ
+# Uniform distribution on the whole finite type
 
-Sampling the full finite set agrees with sampling its ambient finite type.
+**Uniform distribution on the whole finite type.** For a nonempty finite type $\alpha$, the
+uniform distribution on the finite set of all elements of $\alpha$ equals the uniform
+distribution on $\alpha$.
 
 ## Depends on
 
-- [Uniform Finset](uniform-finset.md)
-- [Uniform Fintype](uniform-fintype.md)
+- [Uniform distribution on a finite set](uniform-finset.md)
+- [Uniform distribution on a finite type](uniform-fintype.md)
 
 ## Sources
 
