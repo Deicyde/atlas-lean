@@ -17,7 +17,8 @@ Generic restatements of the public signatures in
 `MathlibExt.Probability.StrongMarkovIID`, plus a concrete instance: for a
 constant stopping time `T ≡ c`, the post-stopping-time sequence is the shift
 `k ↦ X (c + k + 1)`, which the main theorems say is i.i.d. with the same
-distribution as `X 0`.
+distribution as `X 0`. The stopping-time filtration is contained in the natural
+filtration of `X`, as required by `hfX`.
 -/
 
 @[expose] public section
