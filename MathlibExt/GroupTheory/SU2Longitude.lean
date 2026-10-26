@@ -242,13 +242,13 @@ theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
   exact Subtype.ext (Subtype.ext hθ).symm
 
 /-- The longitude map is bijective. -/
-theorem longitude_bijective : Function.Bijective longitudeMap :=
+theorem longitudeMap_bijective : Function.Bijective longitudeMap :=
   ⟨longitudeMap_injective, longitudeMap_surjective⟩
 
 /-- The fixed diagonal longitude subgroup of `SU₂` is isomorphic to the circle group
 `ℝ / 2πℤ`. -/
 noncomputable def longitudeMulEquiv :
     Multiplicative (AddCircle (2 * Real.pi)) ≃* longitudeSubgroup :=
-  MulEquiv.ofBijective longitudeMap longitude_bijective
+  MulEquiv.ofBijective longitudeMap longitudeMap_bijective
 
 end MathlibExt.GroupTheory.SU2Longitude
