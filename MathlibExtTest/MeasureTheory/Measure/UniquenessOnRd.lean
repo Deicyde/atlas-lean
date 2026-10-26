@@ -72,10 +72,13 @@ example (c : ℝ) (a b : Fin 1 → ℝ) :
 /-- The zero measure is the unique measure assigning every rectangle the
 mass `ENNReal.ofReal (rectangleValue (fun _ => 0) a b) = 0`, via the
 rectangle-value theorem. -/
-example {d : ℕ} :
-    (0 : Measure (Fin d → ℝ)) = (0 : Measure (Fin d → ℝ)) :=
+example {d : ℕ} (μ : Measure (Fin d → ℝ))
+    (h : ∀ (a b : Fin d → ℝ), (∀ i, a i ≤ b i) →
+      μ (univ.pi fun i => Ioc (a i) (b i)) =
+        ENNReal.ofReal (rectangleValue (fun _ => 0) a b)) :
+    μ = 0 :=
   Measure.eq_of_forall_rectangleValue_eq (fun _ : (Fin d → ℝ) => (0 : ℝ))
-    (fun a b _ => by simp [rectangleValue])
+    h
     (fun a b _ => by simp [rectangleValue])
 
 /-- Application of quadrant uniqueness: two finite measures on `ℝ²`
