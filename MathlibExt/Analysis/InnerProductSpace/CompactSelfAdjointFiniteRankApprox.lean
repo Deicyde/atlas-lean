@@ -20,6 +20,9 @@ public import Mathlib.RingTheory.Finiteness.Basic
 public import Mathlib.Topology.MetricSpace.Cauchy
 public import Mathlib.Topology.Sequences
 
+import MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue
+import MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues
+
 @[expose] public section
 
 open ContinuousLinearMap InnerProductSpace
@@ -46,13 +49,16 @@ eigenvalue of the compression would be an eigenvalue of `T` of modulus
 `> ε`, contradicting the choice of the span).
 
 The v1 formalization of the maximum principle is left unproved and is not
-ported here; the statement below is proved from scratch. It is genuinely new
-against the existing library: Mathlib has the norm-attained eigenvalue, the
-finiteness of each nonzero eigenspace, and the spectral decomposition, but
-no finite-rank approximation theorem for compact operators, and MathlibExt
-has no finite-rank approximation for compact self-adjoint operators either
-(its `CompactSpectral.compactNormal_hilbertBasis` is `ℂ`-only, assumes
-normality, and gives a Hilbert basis rather than a norm approximation).
+ported here. The finite-rank compression argument below uses existing
+eigenvalue results. The finiteness argument was closely adapted from
+`CompactSpectralWanted.aux_finite_eigenvalues` in
+`MathlibExt/Analysis/InnerProductSpace/CompactSpectral.lean`, replacing
+normality over `ℂ` by self-adjointness over `RCLike`; this module now uses
+the canonical public
+`CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge`.
+The norm-attained eigenvalue is supplied by
+`CompactSelfAdjointNormEigenvalue.exists_hasEigenvalue_norm_eq`.
+The finite-rank compression and its norm estimate are proved here.
 
 Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
 `SpectralTheory.compact_selfAdjoint_maximum_principle` and
@@ -65,38 +71,12 @@ here, only the finite-rank approximation above.
 variable {𝕜 : Type*} [RCLike 𝕜]
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
 
-/-- The spectrum of a nonzero self-adjoint operator is nonempty: if it
-were empty, the spectral radius would be `0`, contradicting
-`spectralRadius_eq_nnnorm`. -/
-private theorem spectrum_nonempty_of_ne_zero (T : H →L[𝕜] H) (hT : IsSelfAdjoint T)
-    (hT0 : T ≠ 0) : (spectrum 𝕜 T).Nonempty := by
-  by_contra h
-  rw [Set.not_nonempty_iff_eq_empty] at h
-  have h0 : spectralRadius 𝕜 T = 0 := by
-    rw [spectralRadius_eq_of_unital, h]
-    simp
-  rw [T.spectralRadius_eq_nnnorm hT] at h0
-  exact hT0 (by simpa using h0)
-
 /-- **A nonzero compact self-adjoint operator has an eigenvalue of norm
 `‖T‖`.** -/
 private theorem exists_hasEigenvalue_norm_eq (T : H →L[𝕜] H) (hT : IsSelfAdjoint T)
     (hc : IsCompactOperator (T : H → H)) (hT0 : T ≠ 0) :
     ∃ μ : 𝕜, μ ≠ 0 ∧ ‖μ‖ = ‖T‖ ∧ Module.End.HasEigenvalue (T : Module.End 𝕜 H) μ := by
-  obtain ⟨μ, hμspec, hμμ⟩ :=
-    spectrum.exists_nnnorm_eq_spectralRadius_of_nonempty
-      (spectrum_nonempty_of_ne_zero T hT hT0)
-  rw [T.spectralRadius_eq_nnnorm hT] at hμμ
-  have h2 : ‖μ‖₊ = ‖T‖₊ := by exact_mod_cast hμμ
-  have hnorm : ‖μ‖ = ‖T‖ := by
-    calc ‖μ‖ = (‖μ‖₊ : ℝ) := coe_nnnorm μ
-      _ = (‖T‖₊ : ℝ) := by rw [h2]
-      _ = ‖T‖ := (coe_nnnorm T).symm
-  have hμ0 : μ ≠ 0 := by
-    intro h
-    rw [h, norm_zero] at hnorm
-    exact hT0 (norm_eq_zero.mp hnorm.symm)
-  exact ⟨μ, hμ0, hnorm, (hc.hasEigenvalue_iff_mem_spectrum hμ0).mpr hμspec⟩
+  exact CompactSelfAdjointNormEigenvalue.exists_hasEigenvalue_norm_eq T hT hc hT0
 
 /-- **Finiteness of eigenvalues bounded away from zero.** For a compact
 self-adjoint operator `T` and any `ε > 0`, the set of eigenvalues `μ` of `T`
@@ -104,74 +84,7 @@ with `ε ≤ ‖μ‖` is finite. -/
 private theorem finite_eigenvalues_of_ge {T : H →L[𝕜] H} (hT : IsSelfAdjoint T)
     (hc : IsCompactOperator (T : H → H)) {ε : ℝ} (hε : 0 < ε) :
     Set.Finite {μ : 𝕜 | Module.End.HasEigenvalue (T : H →ₗ[𝕜] H) μ ∧ ε ≤ ‖μ‖} := by
-  by_contra hinf
-  rw [Set.not_finite] at hinf
-  set e := hinf.natEmbedding with hedef
-  have ha : ∀ n, Module.End.HasEigenvalue (T : H →ₗ[𝕜] H) ((e n : 𝕜)) ∧
-      ε ≤ ‖(e n : 𝕜)‖ := fun n => (e n).2
-  have hinj : Function.Injective (fun n => ((e n : 𝕜))) := by
-    intro m n hmn
-    exact e.injective (Subtype.ext hmn)
-  have hex : ∀ n, ∃ x : H, T x = ((e n : 𝕜)) • x ∧ ‖x‖ = 1 := by
-    intro n
-    obtain ⟨x, hx_mem, hx_ne⟩ := (ha n).1.exists_hasEigenvector
-    have hxT : T x = ((e n : 𝕜)) • x := Module.End.mem_eigenspace_iff.mp hx_mem
-    refine ⟨(((‖x‖⁻¹ : ℝ)) : 𝕜) • x, ?_, ?_⟩
-    · rw [map_smul, hxT]
-      exact (smul_comm _ _ _).symm
-    · rw [norm_smul, RCLike.norm_ofReal, abs_of_nonneg (inv_nonneg.mpr (norm_nonneg x)),
-        inv_mul_cancel₀ (norm_ne_zero_iff.mpr hx_ne)]
-  choose u hu_eig hu_norm using hex
-  have hsym : (T : H →ₗ[𝕜] H).IsSymmetric :=
-    ContinuousLinearMap.isSelfAdjoint_iff_isSymmetric.mp hT
-  have horth : ∀ m n, m ≠ n → @inner 𝕜 H _ (u m) (u n) = 0 := by
-    intro m n hmn
-    have hne : ((e m : 𝕜)) ≠ ((e n : 𝕜)) := fun hcon => hmn (hinj hcon)
-    exact hsym.orthogonalFamily_eigenspaces hne
-      ⟨u m, Module.End.mem_eigenspace_iff.mpr (hu_eig m)⟩
-      ⟨u n, Module.End.mem_eigenspace_iff.mpr (hu_eig n)⟩
-  have hsep : ∀ m n, m ≠ n → ε ≤ ‖T (u m) - T (u n)‖ := by
-    intro m n hmn
-    have h1 : T (u m) - T (u n)
-        = ((e m : 𝕜)) • (u m) - ((e n : 𝕜)) • (u n) := by
-      rw [hu_eig m, hu_eig n]
-    have hort : @inner 𝕜 H _ (((e m : 𝕜)) • (u m)) (((e n : 𝕜)) • (u n)) = 0 := by
-      rw [inner_smul_left, inner_smul_right, horth m n hmn, mul_zero, mul_zero]
-    have hpyth : ‖T (u m) - T (u n)‖ ^ 2
-        = ‖((e m : 𝕜))‖ ^ 2 + ‖((e n : 𝕜))‖ ^ 2 := by
-      have hnorm : ‖((e m : 𝕜)) • (u m) - ((e n : 𝕜)) • (u n)‖ ^ 2
-          = ‖((e m : 𝕜)) • (u m)‖ ^ 2
-            - 2 * RCLike.re (@inner 𝕜 H _ (((e m : 𝕜)) • (u m)) (((e n : 𝕜)) • (u n)))
-            + ‖((e n : 𝕜)) • (u n)‖ ^ 2 :=
-        norm_sub_sq _ _
-      rw [h1, hnorm, hort]
-      simp [norm_smul, hu_norm m, hu_norm n]
-    have hge : ε ^ 2 ≤ ‖T (u m) - T (u n)‖ ^ 2 := by
-      rw [hpyth]
-      have hm := (ha m).2
-      have hn := (ha n).2
-      nlinarith [sq_nonneg (‖((e m : 𝕜))‖ - ε), sq_nonneg (‖((e n : 𝕜))‖ - ε),
-        sq_nonneg ‖((e m : 𝕜))‖, sq_nonneg ‖((e n : 𝕜))‖]
-    have hnn : (0 : ℝ) ≤ ‖T (u m) - T (u n)‖ := norm_nonneg _
-    nlinarith [sq_nonneg (‖T (u m) - T (u n)‖ - ε), hge, hnn, hε]
-  have hcompact := hc.isCompact_closure_image_closedBall (1 : ℝ)
-  have hmem : ∀ n, T (u n)
-      ∈ closure (⇑T '' Metric.closedBall (0 : H) 1) := by
-    intro n
-    apply subset_closure
-    refine ⟨u n, ?_, rfl⟩
-    rw [Metric.mem_closedBall, dist_zero_right, hu_norm n]
-  obtain ⟨L, -, φ, hmono, hlim⟩ := hcompact.tendsto_subseq hmem
-  have hcauchy := hlim.cauchySeq
-  rw [Metric.cauchySeq_iff] at hcauchy
-  obtain ⟨N, hN⟩ := hcauchy (ε / 2) (by linarith)
-  have h1 := hN (N + 1) (Nat.le_succ N) N (le_refl N)
-  simp only [Function.comp_apply] at h1
-  have h2 : ε ≤ dist (T (u (φ (N + 1)))) (T (u (φ N))) := by
-    rw [dist_eq_norm]
-    apply hsep
-    exact ne_of_gt (hmono (Nat.lt_succ_self N))
-  linarith
+  exact CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge hT hc hε
 
 omit [CompleteSpace H] in
 /-- The span of a finite family of eigenspaces is invariant under `T`:
