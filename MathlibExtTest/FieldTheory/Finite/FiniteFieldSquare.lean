@@ -44,3 +44,8 @@ example : ∃ r : GaloisField 2 3, r ^ 2 ≠ 0 ∧ r ^ 2 ≠ 1 ∧ r ^ 2 ≠ -1 
 
 /-- Sharpness: over `ZMod 5`, every square is `0`, `1`, or `-1`. -/
 example : ∀ r : ZMod 5, r ^ 2 = 0 ∨ r ^ 2 = 1 ∨ r ^ 2 = -1 := by decide
+
+/-- The theorem needs only the source's field and finiteness assumptions. -/
+example {F : Type*} [Field F] [Fintype F] (hF : 5 < Fintype.card F) :
+    ∃ r : F, r ^ 2 ≠ 0 ∧ r ^ 2 ≠ 1 ∧ r ^ 2 ≠ -1 := by
+  exact exists_sq_ne_zero_one_neg_one hF

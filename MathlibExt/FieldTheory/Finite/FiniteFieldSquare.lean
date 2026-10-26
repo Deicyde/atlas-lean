@@ -76,7 +76,7 @@ private theorem card_filter_sq_eq_zero_le_one {F : Type*} [Field F] [Fintype F] 
 
 /-- In a field with more than five elements, some square avoids `0`, `1`,
 and `-1`. -/
-theorem exists_sq_ne_zero_one_neg_one {F : Type*} [Field F] [Fintype F] [DecidableEq F]
+theorem exists_sq_ne_zero_one_neg_one {F : Type*} [Field F] [Fintype F]
     (hF : 5 < Fintype.card F) :
     ∃ r : F, r ^ 2 ≠ 0 ∧ r ^ 2 ≠ 1 ∧ r ^ 2 ≠ -1 := by
   classical
