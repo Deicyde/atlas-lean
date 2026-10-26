@@ -148,6 +148,86 @@ example :
   rw [hInt0, hIntStop, hIntLim] at h
   constructor <;> linarith [h.1, h.2, (by norm_num : (0 : ℝ) < (1 / 2 : ℝ) ^ 5)]
 
+/-- The same process changes with time: its values at `0` and `1` are
+`0` and `1 / 2`, so a constant-process fixture cannot cover this case. -/
+example (ω : Ω) :
+    (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n) 0 ω = 0 ∧
+    (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n) 1 ω = 1 / 2 ∧
+    (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n) 0 ω <
+      (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n) 1 ω := by
+  norm_num
+
+/-- The limiting value is proved independently of optional stopping. -/
+private theorem tendsto_one_sub_pow :
+    Tendsto (fun n : ℕ => 1 - (1 / 2 : ℝ) ^ n) atTop (𝓝 1) := by
+  have hpow : Tendsto (fun n : ℕ => (1 / 2 : ℝ) ^ n) atTop (𝓝 0) :=
+    tendsto_pow_atTop_nhds_zero_of_lt_one (by norm_num) (by norm_num)
+  simpa using tendsto_const_nhds.sub hpow
+
+/-- At the infinite stopping time, `limUnder` gives the actual limit `1`,
+rather than the initial value `0`. -/
+private theorem stoppedValueAtTop_one_sub_pow_top (ω : Ω) :
+    stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω = 1 := by
+  simp only [stoppedValueAtTop, ite_true]
+  exact tendsto_one_sub_pow.limUnder_eq
+
+/-- The `τ = ⊤` branch evaluates the nonconstant process to `1` pointwise. -/
+example (ω : Ω) :
+    stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω = 1 :=
+  stoppedValueAtTop_one_sub_pow_top ω
+
+/-- The expectation at `τ = ⊤` is the independently computed limit `1`. -/
+private theorem integral_stoppedValueAtTop_one_sub_pow_top :
+    ∫ ω, stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω ∂μ = 1 := by
+  rw [integral_congr_ae (Filter.Eventually.of_forall stoppedValueAtTop_one_sub_pow_top)]
+  simp [integral_const]
+
+/-- The integral test exercises the infinite branch with a literal expected value. -/
+example :
+    ∫ ω, stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω ∂μ = 1 :=
+  integral_stoppedValueAtTop_one_sub_pow_top
+
+/-- Stopping at infinity leaves every finite-time value unchanged. -/
+example (n : ℕ) (ω : Ω) :
+    stoppedProcess (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) n ω = 1 - (1 / 2 : ℝ) ^ n := by
+  simp only [stoppedProcess, min_top_right]
+  rfl
+
+/-- The constant infinite time is a stopping time: every finite sublevel set is empty. -/
+private theorem isStoppingTime_top (ℱ : Filtration ℕ m0) :
+    IsStoppingTime ℱ (fun _ => (⊤ : WithTop ℕ)) := by
+  intro i
+  simp
+
+/-- The public preservation theorem applies to this concrete process at infinity. -/
+example :
+    UniformIntegrable (stoppedProcess (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ))) 1 μ :=
+  (submartingale_one_sub_pow (μ := μ) ℱ).uniformIntegrable_stoppedProcess_of_uniformIntegrable
+    (uniformIntegrable_one_sub_pow (μ := μ)) (fun _ => (⊤ : WithTop ℕ))
+    (isStoppingTime_top ℱ)
+
+/-- The public expectation theorem is exercised at infinity; the stopped
+expectation is strictly larger than the initial expectation `0`. -/
+example :
+    (0 : ℝ) < ∫ ω, stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω ∂μ ∧
+    (∫ ω, stoppedValueAtTop (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n)
+      (fun _ => (⊤ : WithTop ℕ)) ω ∂μ ≤
+        ∫ ω, ℱ.limitProcess (fun (n : ℕ) (_ : Ω) => 1 - (1 / 2 : ℝ) ^ n) μ ω ∂μ) := by
+  have h := (submartingale_one_sub_pow (μ := μ) ℱ).integral_stoppedValueAtTop_of_uniformIntegrable
+    (uniformIntegrable_one_sub_pow (μ := μ)) (fun _ => (⊤ : WithTop ℕ))
+    (isStoppingTime_top ℱ)
+  constructor
+  · rw [integral_stoppedValueAtTop_one_sub_pow_top]
+    norm_num
+  · exact h.2
+
 #print axioms Submartingale.uniformIntegrable_stoppedProcess_of_uniformIntegrable
 #print axioms Submartingale.integral_stoppedValueAtTop_of_uniformIntegrable
 
