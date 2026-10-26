@@ -9,17 +9,14 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.InnerProductSpace.Adjoint
-public import Mathlib.Analysis.InnerProductSpace.Projection.Basic
-public import Mathlib.Analysis.InnerProductSpace.Rayleigh
-public import Mathlib.Analysis.InnerProductSpace.Spectrum
-public import Mathlib.Analysis.Normed.Algebra.Spectrum
 public import Mathlib.Analysis.Normed.Operator.Compact.Basic
-public import Mathlib.Analysis.Normed.Operator.Compact.FredholmAlternative
-public import Mathlib.Analysis.RCLike.Basic
-public import Mathlib.RingTheory.Finiteness.Basic
-public import Mathlib.Topology.MetricSpace.Cauchy
-public import Mathlib.Topology.Sequences
+public import Mathlib.LinearAlgebra.FiniteDimensional.Defs
 
+import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.InnerProductSpace.Spectrum
+import Mathlib.Analysis.Normed.Algebra.Spectrum
+import Mathlib.Analysis.Normed.Operator.Compact.FredholmAlternative
+import Mathlib.RingTheory.Finiteness.Basic
 import MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue
 import MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues
 
