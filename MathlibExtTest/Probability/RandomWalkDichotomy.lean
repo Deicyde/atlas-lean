@@ -9,15 +9,106 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.RandomWalkDichotomy
+import Mathlib.Probability.Distributions.Gaussian.Real
+import Mathlib.Probability.Independence.InfinitePi
 
 @[expose] public section
 
-open MeasureTheory Filter ProbabilityTheory
+open MeasureTheory Filter ProbabilityTheory Topology
 open MathlibExt.Probability.RandomWalkDichotomy
 
 namespace MathlibExtTest.Probability.RandomWalkDichotomy
 
-/-- The dichotomy has the expected public signature. -/
+private theorem gaussian_ne_zero_ae : ∀ᵐ x ∂gaussianReal 0 1, x ≠ 0 := by
+  let : NullSingletonClass (gaussianReal 0 1) := nullSingletonClass_gaussianReal (by simp)
+  rw [ae_iff]
+  simp
+
+/-- The source conclusion includes zero partial sums at every time. -/
+example {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω) [IsProbabilityMeasure μ]
+    (X : ℕ → Ω → ℝ) (hindep : iIndepFun X μ)
+    (hident : ∀ i, IdentDistrib (X i) (X 0) μ μ) :
+    ZeroWalk μ X ∨ DriftsToTop μ X ∨ DriftsToBot μ X ∨ Oscillates μ X :=
+  random_walk_dichotomy_zero μ X hindep hident
+
+/-- The product-space theorem has the same all-times zero alternative. -/
+example (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
+    ZeroWalk (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    DriftsToTop (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    DriftsToBot (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    Oscillates (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq :=
+  dichotomy_product_zero ρ
+
+/-- The actual product law with zero increments gives a zero walk at all times. -/
+example : ZeroWalk (Measure.infinitePi (fun _ : ℕ => Measure.dirac (0 : ℝ))) coordSeq := by
+  rw [zeroWalk_iff_ae_forall_eq_zero, ae_all_iff]
+  intro i
+  have hmap : ∀ᵐ x ∂(Measure.infinitePi (fun _ : ℕ => Measure.dirac (0 : ℝ))).map
+      (fun ω => ω i), x = 0 := by
+    rw [Measure.infinitePi_map_eval]
+    simp
+  exact (ae_map_iff (measurable_pi_apply i).aemeasurable (measurableSet_singleton 0)).mp hmap
+
+/-- A nonconstant Gaussian i.i.d. walk cannot take the all-times zero alternative. -/
+example :
+    DriftsToTop (Measure.infinitePi (fun _ : ℕ => gaussianReal 0 1)) coordSeq ∨
+    DriftsToBot (Measure.infinitePi (fun _ : ℕ => gaussianReal 0 1)) coordSeq ∨
+    Oscillates (Measure.infinitePi (fun _ : ℕ => gaussianReal 0 1)) coordSeq := by
+  let ν := Measure.infinitePi (fun _ : ℕ => gaussianReal 0 1)
+  have hindep : iIndepFun coordSeq ν :=
+    iIndepFun_infinitePi (P := fun _ : ℕ => gaussianReal 0 1)
+      (X := fun _ : ℕ => (id : ℝ → ℝ)) (fun _ => measurable_id)
+  have hident : ∀ i, IdentDistrib (coordSeq i) (coordSeq 0) ν ν := by
+    intro i
+    refine ⟨(measurable_pi_apply i).aemeasurable, (measurable_pi_apply 0).aemeasurable, ?_⟩
+    exact (Measure.infinitePi_map_eval (fun _ : ℕ => gaussianReal 0 1) i).trans
+      (Measure.infinitePi_map_eval (fun _ : ℕ => gaussianReal 0 1) 0).symm
+  have hmap : ∀ᵐ x ∂ν.map (fun ω => ω 0), x ≠ 0 := by
+    rw [Measure.infinitePi_map_eval]
+    exact gaussian_ne_zero_ae
+  have hnonzero : ∀ᵐ ω ∂ν, ω 0 ≠ 0 :=
+    (ae_map_iff (measurable_pi_apply 0).aemeasurable (measurableSet_singleton 0).compl).mp hmap
+  have hnotzero : ¬ ZeroWalk ν coordSeq := by
+    intro hzero
+    have hzero' : ∀ᵐ ω ∂ν, ∀ i, ω i = 0 := zeroWalk_iff_ae_forall_eq_zero.mp hzero
+    obtain ⟨ω, hz, hne⟩ := (hzero'.and hnonzero).exists
+    exact hne (hz 0)
+  exact (random_walk_dichotomy_zero ν coordSeq hindep hident).resolve_left hnotzero
+
+/-- Finite convergence can have a nonzero limit that depends on the path. -/
+example :
+    ConvergesFinite (gaussianReal 0 1) (fun i ω => if i = 0 then ω else 0) ∧
+    ¬ ZeroWalk (gaussianReal 0 1) (fun i ω => if i = 0 then ω else 0) := by
+  constructor
+  · apply Filter.Eventually.of_forall
+    intro ω
+    refine ⟨ω, tendsto_const_nhds.congr' ?_⟩
+    filter_upwards [eventually_ge_atTop (1 : ℕ)] with n hn
+    have hn0 : 0 < n := by omega
+    simp [randomWalkPartialSum, hn0]
+  · intro hzero
+    have hall := zeroWalk_iff_ae_forall_eq_zero.mp hzero
+    obtain ⟨ω, hz, hne⟩ := (hall.and gaussian_ne_zero_ae).exists
+    exact hne (by simpa using hz 0)
+
+/-- Tending to zero still permits a nonzero excursion at the first step. -/
+example : ∃ X : ℕ → ℝ → ℝ,
+    (∀ᵐ ω ∂gaussianReal 0 1, Tendsto (fun n => randomWalkPartialSum X n ω)
+      atTop (𝓝 0)) ∧ ¬ ZeroWalk (gaussianReal 0 1) X := by
+  refine ⟨fun i ω => (if i = 0 then ω else 0) - (if i = 1 then ω else 0), ?_, ?_⟩
+  · apply Filter.Eventually.of_forall
+    intro ω
+    apply tendsto_const_nhds.congr'
+    filter_upwards [eventually_ge_atTop (2 : ℕ)] with n hn
+    have hn0 : 0 < n := by omega
+    have hn1 : 1 < n := by omega
+    simp [randomWalkPartialSum, Finset.sum_sub_distrib, hn0, hn1]
+  · intro hzero
+    have hall := zeroWalk_iff_ae_forall_eq_zero.mp hzero
+    obtain ⟨ω, hz, hne⟩ := (hall.and gaussian_ne_zero_ae).exists
+    exact hne (by simpa using hz 0)
+
+/-- The finite-convergence corollary retains the original public conclusion. -/
 example {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω) [IsProbabilityMeasure μ]
     (X : ℕ → Ω → ℝ) (hindep : iIndepFun X μ)
     (hident : ∀ i, IdentDistrib (X i) (X 0) μ μ) :

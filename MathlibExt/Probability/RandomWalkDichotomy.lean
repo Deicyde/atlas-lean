@@ -9,21 +9,17 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.RandomWalkLimsup
-public import MathlibExt.Probability.HewittSavage
-public import Mathlib.Probability.Independence.InfinitePi
 public import Mathlib.Probability.Independence.Basic
 public import Mathlib.Probability.IdentDistrib
-public import Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
-public import Mathlib.Topology.Instances.EReal.Lemmas
-public import Mathlib.Data.EReal.Operations
-public import Mathlib.MeasureTheory.Measure.DiracProba
+import MathlibExt.Probability.HewittSavage
+import Mathlib.Probability.Independence.InfinitePi
 
 /-!
 # Random-walk dichotomy
 
 Let `X₁, X₂, …` be i.i.d. real-valued random variables and
 `Sₙ = X₁ + ⋯ + Xₙ`. Almost surely, exactly one of the following occurs:
-`Sₙ` converges to a finite limit (the degenerate case `Xᵢ ≡ 0`),
+`Sₙ = 0` for every `n` (the degenerate case `Xᵢ ≡ 0`),
 `Sₙ → +∞`, `Sₙ → -∞`, or `liminf Sₙ = -∞` and `limsup Sₙ = +∞`
 (the walk oscillates).
 
@@ -43,7 +39,7 @@ events built from `limsup Sₙ` and `liminf Sₙ`:
   `EReal`-valued variables). The one-step shift identity
   `limsup Sₙ = X₀ + limsup Sₙ ∘ shift` plus shift-invariance of the product
   measure then forces `X₀ = 0` a.s., hence every `Xᵢ = 0` a.s., and the walk
-  converges to `0`.
+  is zero at every time.
 * If `{limsup Sₙ < +∞}` has probability `1` and `{liminf Sₙ > -∞}` has
   probability `0`, the a.s. constant `u = limsup Sₙ` is either `-∞`
   (the walk drifts to `-∞`) or finite (which forces `X₀ = 0` a.s. as
@@ -57,7 +53,9 @@ events built from `limsup Sₙ` and `liminf Sₙ`:
 ## Source
 
 This proves the target "Theorem (Random walk dichotomy)" (Lecture 23) in
-`v1/Atlas/TheoryOfProbability/targets.yaml`. The v1 formalization is
+`v1/Atlas/TheoryOfProbability/targets.yaml`, including its all-times zero-walk
+alternative. The finite-convergence form used by the v1 formalization is a
+separate corollary here. The v1 formalization is
 `v1/Atlas/TheoryOfProbability/code/RandomWalkDichotomyProof.lean`, whose
 covering lemma `randomWalk_events_cover_ae` is left unproved there; the
 proof here is new. The tail-measurability of the four events is Batch 25
@@ -81,6 +79,11 @@ open MeasureTheory Filter Topology ProbabilityTheory
 
 namespace MathlibExt.Probability.RandomWalkDichotomy
 
+/-- Almost surely every partial sum of the random walk is zero. -/
+def ZeroWalk {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
+    [IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) : Prop :=
+  ∀ᵐ ω ∂μ, ∀ n, randomWalkPartialSum X n ω = 0
+
 /-- The random walk *drifts to `+∞`*: almost surely `Sₙ → +∞` as `n → ∞`. -/
 def DriftsToTop {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
     [IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) : Prop :=
@@ -98,12 +101,32 @@ def Oscillates {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
   ∀ᵐ ω ∂μ, randomWalkLimsup X ω = ⊤ ∧ randomWalkLiminf X ω = ⊥
 
 /-- The random walk *converges to a finite limit*: almost surely there
-exists `l ∈ ℝ` with `Sₙ → l`. In the i.i.d. dichotomy this is the
-degenerate case `Xᵢ ≡ 0`. -/
+exists `l ∈ ℝ` with `Sₙ → l`. The limit may depend on the path; this is a
+weaker consequence of the zero-walk alternative in the i.i.d. dichotomy. -/
 def ConvergesFinite {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
     [IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) : Prop :=
   ∀ᵐ ω ∂μ, ∃ l : ℝ, Tendsto (fun n => randomWalkPartialSum X n ω) Filter.atTop
     (𝓝 l)
+
+/-- Every partial sum vanishes almost surely if and only if every increment does. -/
+theorem zeroWalk_iff_ae_forall_eq_zero {Ω : Type*} [MeasurableSpace Ω]
+    {μ : Measure Ω} [IsProbabilityMeasure μ] {X : ℕ → Ω → ℝ} :
+    ZeroWalk μ X ↔ ∀ᵐ ω ∂μ, ∀ i, X i ω = 0 := by
+  constructor
+  · intro h
+    filter_upwards [h] with ω hω i
+    have hs := partialSum_succ X i ω
+    rw [hω (i + 1), hω i, zero_add] at hs
+    exact hs.symm
+  · intro h
+    filter_upwards [h] with ω hω n
+    exact Finset.sum_eq_zero fun i _ => hω i
+
+/-- A zero walk converges to the finite limit zero. -/
+theorem ZeroWalk.convergesFinite {Ω : Type*} [MeasurableSpace Ω]
+    {μ : Measure Ω} [IsProbabilityMeasure μ] {X : ℕ → Ω → ℝ}
+    (h : ZeroWalk μ X) : ConvergesFinite μ X :=
+  convergesFinite_of_ae_forall_eq_zero (zeroWalk_iff_ae_forall_eq_zero.mp h)
 
 /-- A set of full measure is almost surely inhabited: from `μ E = 1`,
 every `ω` lies in `E` almost surely. -/
@@ -212,8 +235,8 @@ private theorem ae_all_coords_eq_zero_of_ae_coord_zero (ρ : Measure ℝ)
 
 /-- The dichotomy on the canonical sequence space: for the i.i.d. product
 measure, the coordinate walk satisfies one of the four alternatives. -/
-theorem dichotomy_product (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
-    ConvergesFinite (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+theorem dichotomy_product_zero (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
+    ZeroWalk (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
     DriftsToTop (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
     DriftsToBot (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
     Oscillates (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq := by
@@ -365,7 +388,7 @@ theorem dichotomy_product (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
       rw [h1] at h2
       exact absurd h2 (by simp)
   · -- Both `1`: the walk is a.s. bounded, hence a.s. constant finite
-    -- `limsup`, hence `X₀ = 0` a.s., hence the walk converges to `0`.
+    -- `limsup`, hence `X₀ = 0` a.s., hence the walk is zero at every time.
     left
     -- `U < ⊤` a.s. and `L > ⊥` a.s.
     have hUlt : ∀ᵐ ω ∂ν, randomWalkLimsup coordSeq ω < ⊤ :=
@@ -389,16 +412,24 @@ theorem dichotomy_product (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
         (ne_of_gt hu_gt)
     have hall : ∀ᵐ ω ∂ν, ∀ i, ω i = 0 :=
       ae_all_coords_eq_zero_of_ae_coord_zero ρ h0
-    exact convergesFinite_of_ae_forall_eq_zero hall
+    exact zeroWalk_iff_ae_forall_eq_zero.mpr hall
+
+/-- The finite-convergence form of the product-space dichotomy. -/
+theorem dichotomy_product (ρ : Measure ℝ) [IsProbabilityMeasure ρ] :
+    ConvergesFinite (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    DriftsToTop (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    DriftsToBot (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq ∨
+    Oscillates (Measure.infinitePi (fun _ : ℕ => ρ)) coordSeq :=
+  Or.imp_left ZeroWalk.convergesFinite (dichotomy_product_zero ρ)
 
 /-- **Random-walk dichotomy.** If `X₁, X₂, …` are i.i.d. real-valued random
 variables and `Sₙ = X₁ + ⋯ + Xₙ`, then almost surely one of the following
-occurs: `Sₙ` converges to a finite limit, `Sₙ → +∞`, `Sₙ → -∞`, or
+occurs: `Sₙ = 0` for every `n`, `Sₙ → +∞`, `Sₙ → -∞`, or
 `liminf Sₙ = -∞` and `limsup Sₙ = +∞`. -/
-theorem random_walk_dichotomy {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
+theorem random_walk_dichotomy_zero {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)
     [IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ)
     (hindep : iIndepFun X μ) (hident : ∀ i, IdentDistrib (X i) (X 0) μ μ) :
-    ConvergesFinite μ X ∨ DriftsToTop μ X ∨ DriftsToBot μ X ∨ Oscillates μ X := by
+    ZeroWalk μ X ∨ DriftsToTop μ X ∨ DriftsToBot μ X ∨ Oscillates μ X := by
   have hXae : ∀ i, AEMeasurable (X i) μ := fun i => (hident i).aemeasurable_fst
   set Φ : Ω → (ℕ → ℝ) := fun ω i => X i ω with hΦ
   have hΦae : AEMeasurable Φ μ := aemeasurable_pi_iff.mpr hXae
@@ -416,12 +447,11 @@ theorem random_walk_dichotomy {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω
     have h' : ∀ᵐ ω' ∂μ.map Φ, ω' ∈ E := by
       rwa [← hmap] at h
     exact (ae_map_iff hΦae hE).mp h'
-  rcases dichotomy_product (μ.map (X 0)) with h | h | h | h
+  rcases dichotomy_product_zero (μ.map (X 0)) with h | h | h | h
   · left
-    -- `ConvergesFinite` on sequence space transfers to `X`.
-    have hE := htransfer measurableSet_coord_convergesFinite h
-    filter_upwards [hE] with ω hω
-    exact hω
+    have hE := htransfer measurableSet_coord_forall_eq_zero
+      (zeroWalk_iff_ae_forall_eq_zero.mp h)
+    exact zeroWalk_iff_ae_forall_eq_zero.mpr hE
   · right; left
     have hE := htransfer measurableSet_coord_driftsToTop h
     filter_upwards [hE] with ω hω
@@ -439,5 +469,12 @@ theorem random_walk_dichotomy {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω
           (measurableSet_singleton ⊥))) h
     filter_upwards [hE] with ω hω
     exact hω
+
+/-- The finite-convergence corollary of the random-walk dichotomy. -/
+theorem random_walk_dichotomy {Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ)
+    (hindep : iIndepFun X μ) (hident : ∀ i, IdentDistrib (X i) (X 0) μ μ) :
+    ConvergesFinite μ X ∨ DriftsToTop μ X ∨ DriftsToBot μ X ∨ Oscillates μ X :=
+  Or.imp_left ZeroWalk.convergesFinite (random_walk_dichotomy_zero μ X hindep hident)
 
 end MathlibExt.Probability.RandomWalkDichotomy
