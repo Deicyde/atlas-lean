@@ -75,7 +75,4 @@ theorem eLpNorm_top_eq_enorm_continuousMap
   rw [eLpNorm_exponent_top f.continuous.aestronglyMeasurable]
   exact eLpNormEssSup_eq_enorm_continuousMap f
 
-#print axioms eLpNormEssSup_eq_enorm_continuousMap
-#print axioms eLpNorm_top_eq_enorm_continuousMap
-
 end MathlibExt.MeasureTheory.Function.EssSupContinuousMap

@@ -71,4 +71,7 @@ example : eLpNormEssSup
   exact eLpNormEssSup_eq_enorm_continuousMap
     ⟨fun x : Fin 2 => if x = 0 then (2 : ℝ) else (1 : ℝ), continuous_of_discreteTopology⟩
 
+#print axioms MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNormEssSup_eq_enorm_continuousMap
+#print axioms MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNorm_top_eq_enorm_continuousMap
+
 end MathlibExtTest.MeasureTheory.Function.EssSupContinuousMapTests
