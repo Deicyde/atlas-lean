@@ -22,9 +22,9 @@ import Mathlib.Tactic.Ring
 
 Every element of `SU₂` is conjugate in `SU₂` to a diagonal matrix
 `diag(z, conj z)` with `z * conj z = 1`, and two elements of `SU₂` with the
-same trace are conjugate in `SU₂`. In particular the conjugacy classes of
-`SU₂` are parametrized by the trace, which ranges over the real interval
-`[-2, 2]` (see `SU2.su2_trace_real` and `SU2.su2_trace_bound` in
+same trace are conjugate in `SU₂`. Thus trace distinguishes conjugacy
+classes and takes real values in `[-2, 2]` (see `SU2.su2_trace_real` and
+`SU2.su2_trace_bound` in
 `MathlibExt/GroupTheory/SU2Basic.lean`).
 
 Source: `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean` (theorems
