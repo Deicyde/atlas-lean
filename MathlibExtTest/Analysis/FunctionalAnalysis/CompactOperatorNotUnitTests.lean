@@ -58,4 +58,8 @@ example : IsUnit (1 : (Fin 2 → ℝ) →L[ℝ] (Fin 2 → ℝ)) ∧
   rw [hcoe]
   exact isCompactOperator_id
 
+#print axioms not_isUnit_of_isCompactOperator
+#print axioms not_bijective_of_isCompactOperator
+#print axioms zero_mem_spectrum_of_isCompactOperator
+
 end MathlibExtTest.Analysis.FunctionalAnalysis.CompactOperatorNotUnit

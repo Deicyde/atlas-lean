@@ -10,7 +10,7 @@ module
 
 public import Mathlib.Analysis.RCLike.Basic
 public import Mathlib.Analysis.Normed.Operator.Compact.FiniteDimension
-public import Mathlib.Analysis.Normed.Operator.Banach
+import Mathlib.Analysis.Normed.Operator.Banach
 public import Mathlib.Algebra.Algebra.Spectrum.Basic
 
 @[expose] public section
@@ -26,19 +26,13 @@ would make the identity operator compact, and the identity is compact only
 on finite-dimensional spaces. Consequently `0` lies in its spectrum.
 On a Banach space, such an operator is also not bijective.
 
-This is not in the pinned Mathlib: Mathlib has the Fredholm alternative for
-compact operators (`IsCompactOperator.hasEigenvalue_iff_mem_spectrum`, which
-requires the eigenvalue/spectral value to be nonzero) and the fact that the
-identity is compact iff the space is finite-dimensional
-(`isCompactOperator_id_iff_finiteDimensional`), but no statement that a
-compact operator on an infinite-dimensional space fails to be invertible.
-MathlibExt's Lomonosov file uses the same identity-compact step inside a
-private proof (a nonzero compact operator is not a scalar), but does not
-state this consequence.
+The non-unit proof composes a compact operator with a bounded inverse
+using `IsCompactOperator.clm_comp`, then contradicts infinite dimension
+using `FiniteDimensional.of_isCompactOperator_id`. The Banach-space
+corollary uses `ContinuousLinearMap.isUnit_iff_bijective`; the spectral
+conclusion uses `spectrum.zero_mem_iff`.
 
-The proof is an independent consequence of compactness under composition
-and compactness of the identity in Mathlib. For the Banach-space corollary,
-bounded-inverse provenance is
+Bounded-inverse provenance for the Banach-space corollary is
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/OpenMapping.lean`,
 `OpenMapping.bijective_bounded_inverse` (Corollary).
 -/
@@ -77,9 +71,5 @@ theorem zero_mem_spectrum_of_isCompactOperator (hInf : ¬ FiniteDimensional 𝕜
     (T : E →L[𝕜] E) (hT : IsCompactOperator (T : E → E)) :
     (0 : 𝕜) ∈ spectrum 𝕜 T :=
   (spectrum.zero_mem_iff 𝕜).mpr (not_isUnit_of_isCompactOperator hInf T hT)
-
-#print axioms not_isUnit_of_isCompactOperator
-#print axioms not_bijective_of_isCompactOperator
-#print axioms zero_mem_spectrum_of_isCompactOperator
 
 end MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit
