@@ -16,9 +16,10 @@ import Mathlib.Tactic.NormNum
 @[expose] public section
 
 /-!
-# Tests for ramification of cyclotomic extensions of complete DVRs
+# Tests for cyclotomic ramification over an absolutely unramified base
 
-The supporting lemmas are exercised at the trivial extension
+Here `(3)` generates the maximal ideal of `ℤ_[3]`, so these are tests of
+the stated absolutely unramified base case. The supporting lemmas use the identity extension
 `ℚ_[3] / ℚ_[3]` with `B = A = ℤ_[3]`, and the main theorem is exercised at
 the genuine cyclotomic extension
 `CyclotomicField 3 ℚ_[3] / ℚ_[3]` with `B` the integral closure of `ℤ_[3]`.
@@ -134,9 +135,9 @@ example (η : ℚ_[3]) (hη : η ^ 3 = 1) :
       (R := ℤ_[3]) (S := ℤ_[3]) hne_top hne_bot
     simpa using h
   constructor
-  · exact no_prim_pth_root_in_unramified_ext ℤ_[3] ℚ_[3] 3 ℚ_[3] ℤ_[3]
+  · exact no_prim_pth_root_in_unramified_ext_of_prime_spans_maximal_ideal ℤ_[3] ℚ_[3] 3 ℚ_[3] ℤ_[3]
       habsunram he no_isPrimitiveRoot_three_of_padic_three η hη
-  · exact unramified_pth_root_in_base ℤ_[3] ℚ_[3] 3 ℚ_[3] ℤ_[3] habsunram he
+  · exact unramified_pth_root_in_base_of_prime_spans_maximal_ideal ℤ_[3] ℚ_[3] 3 ℚ_[3] ℤ_[3] habsunram he
       η hη
 
 /-- The integral closure of `ℤ_[3]` in `CyclotomicField 3 ℚ_[3]` is a DVR:
@@ -150,7 +151,8 @@ private instance : IsDiscreteValuationRing
   exact IsIntegralClosure.isDiscreteValuationRing_of_isAdicComplete ℤ_[3] ℚ_[3]
     (CyclotomicField 3 ℚ_[3]) ↥(integralClosure ℤ_[3] (CyclotomicField 3 ℚ_[3]))
 
-/-- The main theorem at `CyclotomicField 3 ℚ_[3] / ℚ_[3]`: adjoining a
+/-- The absolutely unramified base theorem at
+`CyclotomicField 3 ℚ_[3] / ℚ_[3]`: adjoining a
 primitive cube root of unity to `ℚ_[3]` is ramified. -/
 example : Ideal.ramificationIdx' (maximalIdeal ℤ_[3])
     (maximalIdeal ↥(integralClosure ℤ_[3] (CyclotomicField 3 ℚ_[3]))) ≠ 1 := by
@@ -171,11 +173,11 @@ example : Ideal.ramificationIdx' (maximalIdeal ℤ_[3])
   have hno_prim : ∀ ζ : ℚ_[3], ζ ^ 3 = 1 → ζ = 1 := fun ζ hζ =>
     pth_root_unity_eq_one_of_no_prim_root ℚ_[3] 3
       no_isPrimitiveRoot_three_of_padic_three ζ hζ
-  exact dvr_pth_root_ramified ℤ_[3] ℚ_[3] 3 hno_prim 3 (by norm_num)
+  exact dvr_pth_root_ramified_of_prime_spans_maximal_ideal ℤ_[3] ℚ_[3] 3 hno_prim 3 (by norm_num)
     (by norm_num) (CyclotomicField 3 ℚ_[3])
     ↥(integralClosure ℤ_[3] (CyclotomicField 3 ℚ_[3]))
     (PadicInt.maximalIdeal_eq_span_p (p := 3)).symm
 
-#print axioms dvr_pth_root_ramified
-#print axioms no_prim_root_in_unramified_ext_of_base
-#print axioms unramified_pth_root_in_base
+#print axioms dvr_pth_root_ramified_of_prime_spans_maximal_ideal
+#print axioms no_prim_root_in_unramified_ext_of_prime_spans_maximal_ideal
+#print axioms unramified_pth_root_in_base_of_prime_spans_maximal_ideal
