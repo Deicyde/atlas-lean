@@ -38,9 +38,9 @@ trace-form/étaleness identification taken as an explicit hypothesis
 extensions (via Mathlib's separable-field trace-form results). Here the
 general-algebra iff is proved: the étale direction uses the classification of
 étale algebras as finite products of finite separable field extensions, and
-the converse direction shows that a degenerate trace form forces nilpotents,
-hence that the algebra is a reduced Artinian ring, hence a product of fields,
-each of which is separable because its own trace form is nondegenerate.
+the converse uses nondegeneracy to show that every nilpotent is zero. The
+resulting reduced Artinian algebra is a product of fields, each separable
+because its trace form is nondegenerate.
 
 ## Main results
 
@@ -236,14 +236,15 @@ theorem discr_ne_zero_iff_traceForm_nondegenerate {R : Type*} [CommRing R]
 commutative algebra over a field, the discriminant of the basis is nonzero if
 and only if the algebra is étale. -/
 theorem discr_ne_zero_iff_etale {R : Type u} [CommRing R] [Algebra K R]
-    [Module.Finite K R] {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R) :
+    {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R) :
     Algebra.discr K b ≠ 0 ↔ Etale K R := by
+  let : Module.Finite K R := Module.Finite.of_basis b
   rw [discr_ne_zero_iff_traceForm_nondegenerate b, traceForm_nondegenerate_iff_etale]
 
 /-- One direction of Lemma 12.18: an étale algebra has nonzero discriminant
 for every basis. -/
 theorem discr_ne_zero_of_etale {R : Type u} [CommRing R] [Algebra K R]
-    [Module.Finite K R] {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R)
+    {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R)
     (hR : Etale K R) :
     Algebra.discr K b ≠ 0 :=
   (discr_ne_zero_iff_etale b).mpr hR
@@ -251,7 +252,7 @@ theorem discr_ne_zero_of_etale {R : Type u} [CommRing R] [Algebra K R]
 /-- One direction of Lemma 12.18: a nonzero discriminant for some basis forces
 the algebra to be étale. -/
 theorem etale_of_discr_ne_zero {R : Type u} [CommRing R] [Algebra K R]
-    [Module.Finite K R] {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R)
+    {ι : Type*} [Fintype ι] [DecidableEq ι] (b : Module.Basis ι K R)
     (h : Algebra.discr K b ≠ 0) :
     Etale K R :=
   (discr_ne_zero_iff_etale b).mp h

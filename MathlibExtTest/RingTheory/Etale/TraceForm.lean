@@ -49,3 +49,24 @@ example : Algebra.trace ℚ (Fin 2 → ℚ) (fun _ => 1) = 2 := by
 example : Algebra.traceForm ℚ (Fin 2 → ℚ) (fun _ => 1) (fun _ => 1) = 2 := by
   rw [Algebra.traceForm_pi]
   simp [Algebra.traceForm_apply]
+
+section BasisInput
+
+universe u
+
+variable {K R : Type u} [Field K] [CommRing R] [Algebra K R]
+  {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+/-- A supplied finite-indexed basis suffices for the discriminant equivalence. -/
+example (b : Module.Basis ι K R) : Algebra.discr K b ≠ 0 ↔ Algebra.Etale K R :=
+  Algebra.discr_ne_zero_iff_etale b
+
+/-- A supplied finite-indexed basis suffices for the étale direction. -/
+example (b : Module.Basis ι K R) (h : Algebra.Etale K R) : Algebra.discr K b ≠ 0 :=
+  Algebra.discr_ne_zero_of_etale b h
+
+/-- A supplied finite-indexed basis suffices for the discriminant direction. -/
+example (b : Module.Basis ι K R) (h : Algebra.discr K b ≠ 0) : Algebra.Etale K R :=
+  Algebra.etale_of_discr_ne_zero b h
+
+end BasisInput
