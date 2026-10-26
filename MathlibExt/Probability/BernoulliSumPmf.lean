@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Probability.Independence.Basic
+public import Mathlib.Probability.Distributions.Bernoulli
 
 /-!
 # Probability mass function of a sum of independent Bernoulli variables
@@ -58,13 +59,42 @@ open scoped ENNReal NNReal Topology Nat
 
 namespace ProbabilityTheory
 
-/-- `IsBernoulliRV X μ p` says that `X : Ω → ℕ` is a Bernoulli`(p)` random variable under
-the measure `μ`: the parameter `p ∈ [0,1]` satisfies `P(X = 0) = 1 - p` and `P(X = 1) = p`. -/
+/-- `IsBernoulliRV X μ p` means that `p ∈ [0,1]` and `X : Ω → ℕ` has Mathlib's
+Bernoulli law `bernoulliMeasure 1 0 p` under `μ`. The law includes almost-everywhere
+measurability and gives mass `p` to `1` and `1 - p` to `0`, with no mass elsewhere. -/
 def IsBernoulliRV {Ω : Type*} [MeasurableSpace Ω]
     (X : Ω → ℕ) (μ : Measure Ω) (p : ℝ) : Prop :=
-  0 ≤ p ∧ p ≤ 1 ∧
-    μ (X ⁻¹' {0}) = ENNReal.ofReal (1 - p) ∧
-    μ (X ⁻¹' {1}) = ENNReal.ofReal p
+  ∃ hp : p ∈ Set.Icc (0 : ℝ) 1, HasLaw X (bernoulliMeasure 1 0 ⟨p, hp⟩) μ
+
+variable {Ω : Type*} [MeasurableSpace Ω] {X : Ω → ℕ} {μ : Measure Ω} {p : ℝ}
+
+/-- A Bernoulli parameter is nonnegative. -/
+lemma IsBernoulliRV.nonneg (hX : IsBernoulliRV X μ p) : 0 ≤ p := by
+  rcases hX with ⟨hp, _⟩
+  exact hp.1
+
+/-- A Bernoulli parameter is at most one. -/
+lemma IsBernoulliRV.le_one (hX : IsBernoulliRV X μ p) : p ≤ 1 := by
+  rcases hX with ⟨hp, _⟩
+  exact hp.2
+
+/-- The real-parameter predicate supplies the standard Nat-valued Bernoulli law. -/
+lemma IsBernoulliRV.hasLaw (hX : IsBernoulliRV X μ p) :
+    HasLaw X (bernoulliMeasure 1 0 ⟨p, hX.nonneg, hX.le_one⟩) μ := by
+  rcases hX with ⟨hp, hLaw⟩
+  exact hLaw
+
+/-- A Bernoulli variable has mass `1 - p` at zero. -/
+lemma IsBernoulliRV.measure_zero (hX : IsBernoulliRV X μ p) :
+    μ (X ⁻¹' {0}) = ENNReal.ofReal (1 - p) := by
+  have h := hX.hasLaw.measure_eq (p := fun n : ℕ => n = 0) (measurableSet_singleton 0)
+  simpa [Set.preimage_singleton, bernoulliMeasure_apply, ENNReal.coe_nnreal_eq] using h
+
+/-- A Bernoulli variable has mass `p` at one. -/
+lemma IsBernoulliRV.measure_one (hX : IsBernoulliRV X μ p) :
+    μ (X ⁻¹' {1}) = ENNReal.ofReal p := by
+  have h := hX.hasLaw.measure_eq (p := fun n : ℕ => n = 1) (measurableSet_singleton 1)
+  simpa [Set.preimage_singleton, bernoulliMeasure_apply, ENNReal.coe_nnreal_eq] using h
 
 /-- Probability mass function of a sum of independent (possibly nonidentical) Bernoulli random
 variables: if `X₁, …, X_m` are independent with `X_i ∼ Bernoulli(p_i)`, then for any `j ∈ ℕ`,
@@ -105,16 +135,16 @@ theorem bernoulli_sum_pmf
           simp [Set.mem_preimage] at h0 h1; omega)
       have hfin : μ (X i ⁻¹' {0} ∪ X i ⁻¹' {1}) ≠ ⊤ := by
         rw [measure_union hd ((hMeas i) (measurableSet_singleton 1)),
-          (hBernoulli i).2.2.1, (hBernoulli i).2.2.2,
-          ← ENNReal.ofReal_add (by linarith [(hBernoulli i).1, (hBernoulli i).2.1])
-            (hBernoulli i).1]
+          (hBernoulli i).measure_zero, (hBernoulli i).measure_one,
+          ← ENNReal.ofReal_add (by linarith [(hBernoulli i).nonneg, (hBernoulli i).le_one])
+            (hBernoulli i).nonneg]
         simp
       rw [measure_compl (.union ((hMeas i) (measurableSet_singleton 0))
         ((hMeas i) (measurableSet_singleton 1))) hfin]
       rw [measure_union hd ((hMeas i) (measurableSet_singleton 1)),
-        (hBernoulli i).2.2.1, (hBernoulli i).2.2.2,
-        ← ENNReal.ofReal_add (by linarith [(hBernoulli i).1, (hBernoulli i).2.1])
-          (hBernoulli i).1]
+        (hBernoulli i).measure_zero, (hBernoulli i).measure_one,
+        ← ENNReal.ofReal_add (by linarith [(hBernoulli i).nonneg, (hBernoulli i).le_one])
+          (hBernoulli i).nonneg]
       simp
     apply le_antisymm _ (by simp)
     calc μ ((fun ω => ∑ i : Fin m, X i ω) ⁻¹' {↑j} \
@@ -164,8 +194,8 @@ theorem bernoulli_sum_pmf
     rw [hIndep.meas_iInter (fun i =>
       ⟨{if i ∈ A then 1 else 0}, measurableSet_singleton _, rfl⟩)]
     congr 1; ext i; split_ifs with h
-    · exact (hBernoulli i).2.2.2
-    · exact (hBernoulli i).2.2.1
+    · exact (hBernoulli i).measure_one
+    · exact (hBernoulli i).measure_zero
   rw [hS_eq, hbiUnion]
   rw [ENNReal.toReal_sum (fun A _ => ne_top_of_le_ne_top (measure_ne_top μ Set.univ)
     (measure_mono (Set.subset_univ _)))]
@@ -175,8 +205,8 @@ theorem bernoulli_sum_pmf
       (ENNReal.ofReal (if i ∈ A then p i else 1 - p i)).toReal =
         if i ∈ A then p i else 1 - p i := by
     intro i; split_ifs with h
-    · exact ENNReal.toReal_ofReal (hBernoulli i).1
-    · exact ENNReal.toReal_ofReal (by linarith [(hBernoulli i).2.1])
+    · exact ENNReal.toReal_ofReal (hBernoulli i).nonneg
+    · exact ENNReal.toReal_ofReal (by linarith [(hBernoulli i).le_one])
   rw [Finset.prod_congr rfl (fun i _ => h_toReal i)]
   rw [show (∏ i ∈ A, p i) = ∏ i ∈ A, (if i ∈ A then p i else 1 - p i) from
     Finset.prod_congr rfl (fun i hi => by simp [hi])]
