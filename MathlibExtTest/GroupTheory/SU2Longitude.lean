@@ -9,13 +9,14 @@ LICENSE file in the root directory of this source tree.
 module
 
 import MathlibExt.GroupTheory.SU2Longitude
+import Mathlib.Analysis.SpecialFunctions.Complex.Log
 
 namespace MathlibExtTest.GroupTheory.SU2Longitude
 
 open MathlibExt.GroupTheory.SU2Longitude
 open Matrix
 
-/-- The longitude isomorphism sends `1` to `1`. -/
+/-- The fixed diagonal longitude isomorphism sends `1` to `1`. -/
 theorem longitudeMulEquiv_one : longitudeMulEquiv 1 = 1 := map_one _
 
 /-- The diagonal rotation through `π / 2` is `diag (i, -i)`. -/

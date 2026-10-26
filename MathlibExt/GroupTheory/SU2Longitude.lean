@@ -8,31 +8,34 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Analysis.SpecialFunctions.Complex.Log
-public import Mathlib.LinearAlgebra.UnitaryGroup
 public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+public import Mathlib.LinearAlgebra.UnitaryGroup
+public import Mathlib.Topology.Instances.AddCircle.Defs
+
+import Mathlib.Analysis.SpecialFunctions.Complex.Log
 
 @[expose] public section
 
 namespace MathlibExt.GroupTheory.SU2Longitude
 
 /-!
-# The longitude subgroup of `SU₂`
+# The fixed diagonal longitude subgroup of `SU₂`
 
-The longitude subgroup is the subgroup of diagonal rotations in `SU₂`,
-and it is isomorphic to the circle group `ℝ / 2πℤ`: the angle map
-`θ ↦ diag (exp (iθ), exp (-iθ))` is a homomorphism with period `2π`,
-injective because the angle is recovered from `exp (iθ)`, and surjective
-by the definition of the subgroup.
+The subgroup of diagonal rotations in `SU₂` is isomorphic to the circle
+group `ℝ / 2πℤ`. The real-angle homomorphism
+`θ ↦ diag (exp (iθ), exp (-iθ))` has period `2π` and factors through
+`AddCircle (2 * Real.pi)`. The resulting quotient map is injective because
+equal diagonal rotations have angles differing by an integral multiple of
+`2π`, and surjective by the definition of this diagonal subgroup.
 
-Source: `v1/Atlas/AlgebraNotes`, targets entry 67 (the longitude
-isomorphism, for the equator point `i`) and
-`SimpleGroups.longitude_iso` in `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean`,
-which is left unproved there. The proof below is independent of v1:
-the hom is built by factoring the angle homomorphism through the quotient
-`AddCircle (2 * Real.pi)`, and bijectivity is proved from
-`Complex.exp_eq_exp_iff_exists_int`. The book's statement is for a general
-equator point `x`; only the `x = i` case formalized in v1 is ported here.
+This is a supporting result for the fixed equator point `i`. ATLAS
+`v1/Atlas/AlgebraNotes`, targets entry 67 states the longitude isomorphism
+for every equator point `x`; that general quantifier and its conjugation
+argument are not formalized here. The fixed-point v1 statement
+`SimpleGroups.longitude_iso` in `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean`
+is left unproved there. The independent proof below factors the angle
+homomorphism through the quotient and uses
+`Complex.exp_eq_exp_iff_exists_int` to identify equal angle classes.
 -/
 
 open Matrix
@@ -105,8 +108,8 @@ theorem diagRotation_add_int_mul_two_pi (θ : ℝ) (n : ℤ) :
     diagRotation (θ + n * (2 * Real.pi)) = diagRotation θ := by
   rw [← diagRotation_add, diagRotation_int_mul_two_pi, mul_one]
 
-/-- The longitude subgroup of `SU₂`: the diagonal rotations. In the book
-this is `Long_i`, the longitude at the equator point `i`. -/
+/-- The fixed diagonal longitude subgroup of `SU₂`: the diagonal rotations.
+In the book this is `Long_i`, the longitude at the equator point `i`. -/
 def longitudeSubgroup : Subgroup (Matrix.specialUnitaryGroup (Fin 2) ℂ) where
   carrier := {M | ∃ θ : ℝ, (M : Matrix (Fin 2) (Fin 2) ℂ) = diagRotation θ}
   mul_mem' := by
@@ -214,8 +217,8 @@ theorem exists_ofAdd_mk_eq (x : Multiplicative (AddCircle (2 * Real.pi))) :
   congr 1
   exact ha.symm
 
-/-- The longitude map is injective: the angle is recovered from the
-diagonal rotation via the exponential. -/
+/-- The quotient longitude map is injective: the angle class is recovered
+from the diagonal rotation via the exponential. -/
 theorem longitudeMap_injective : Function.Injective longitudeMap := by
   intro x y h
   obtain ⟨a, ha⟩ := exists_ofAdd_mk_eq x
@@ -242,7 +245,7 @@ theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
 theorem longitude_bijective : Function.Bijective longitudeMap :=
   ⟨longitudeMap_injective, longitudeMap_surjective⟩
 
-/-- The longitude subgroup of `SU₂` is isomorphic to the circle group
+/-- The fixed diagonal longitude subgroup of `SU₂` is isomorphic to the circle group
 `ℝ / 2πℤ`. -/
 noncomputable def longitudeMulEquiv :
     Multiplicative (AddCircle (2 * Real.pi)) ≃* longitudeSubgroup :=
