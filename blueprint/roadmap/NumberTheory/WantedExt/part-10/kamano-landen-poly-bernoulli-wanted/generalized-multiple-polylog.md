@@ -5,22 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.generalizedMultiplePolylog
 ---
 
-# Generalized Multiple Polylog
+# Kamano's generalized multiple polylogarithm
 
-Kamano's generalized multiple polylogarithm `Li_k(g; (β, γ); z) ∈ ℝ[[z]]`:
-`Li_{(1)} = ∫₀^z (c₀/(1 - c₀u) + d₀/(1 + d₀u)) du`,
-`Li_{k↑} = ∫₀^z ∑_i β_i G_{g_i}(u) Li_k(u) du` and
-`Li_{k→} = ∫₀^z ∑_i γ_i G_{g_i}(u) Li_k(u) du`, where
-`k↑ = (k₁, …, k_r + 1)` and `k→ = (k₁, …, k_r, 1)`. Lists that are not indices
-(empty, or with a zero entry) give `0`.
+**Kamano's generalized multiple polylogarithm.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen
+data, where $g_0$ has rows $(1, -1)$ and $(c_0, d_0)$ and $g_i$ has rows $(a_i, b_i)$ and
+$(c_i, d_i)$, and let $\beta, \gamma \in \mathbb{R}^s$. For a matrix $h$ with rows $(a, b)$ and
+$(c, d)$ put $G_h(u) = \frac{c}{a - c u} - \frac{d}{b - d u}$, a fraction with zero numerator and
+zero denominator being read as $0$. For an index $\mathbf{k} = (k_1, \dots, k_r)$ of positive
+integers put $\mathbf{k}{\uparrow} = (k_1, \dots, k_r + 1)$ and
+$\mathbf{k}{\rightarrow} = (k_1, \dots, k_r, 1)$. The generalized multiple polylogarithm
+$\mathrm{Li}_{\mathbf{k}} = \mathrm{Li}_{\mathbf{k}}(g; (\beta, \gamma); z) \in \mathbb{R}[[z]]$
+is defined recursively by
+$\mathrm{Li}_{(1)} = \int_0^z \left(\frac{c_0}{1 - c_0 u} + \frac{d_0}{1 + d_0 u}\right) du$,
+$\mathrm{Li}_{\mathbf{k}{\uparrow}} =
+\int_0^z \sum_{i=1}^{s} \beta_i G_{g_i}(u) \, \mathrm{Li}_{\mathbf{k}}(u)\,du$ and
+$\mathrm{Li}_{\mathbf{k}{\rightarrow}} =
+\int_0^z \sum_{i=1}^{s} \gamma_i G_{g_i}(u) \, \mathrm{Li}_{\mathbf{k}}(u)\,du$, where
+integrals of power series are taken term by term. A list of natural numbers that is empty or has
+a zero entry gives $0$.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
+- [Landen data](landen-data.md)
 
 ## Proof depends on
 
-- [Polylog Rev](polylog-rev.md)
+- [Reversed recursion for Kamano's generalized multiple polylogarithm](polylog-rev.md)
 
 ## Sources
 

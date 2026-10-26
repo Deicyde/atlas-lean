@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.recipSumUpTo_empty
 ---
 
-# Recip Sum Up To empty
+# The harmonic sum over the empty set vanishes
 
-The harmonic sum of the empty set is zero.
+**The harmonic sum over the empty set vanishes.** For every real number $x$,
+$\sum_{n \in \emptyset,\, n \le x} 1/n = 0$.
 
 ## Depends on
 
-- [Recip Sum Up To](recip-sum-up-to.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
 
 ## Proof depends on
 
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
-- [Naturals In Set Up To empty](naturals-in-set-up-to-empty.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
+- [The empty set has no elements up to any bound](naturals-in-set-up-to-empty.md)
 
 ## Sources
 

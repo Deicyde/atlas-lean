@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.naturalsInSetUpTo
 ---
 
-# Naturals In Set Up To
+# Elements of a set up to a bound
 
-The finite set encoding the paper's positive integers `n ∈ A` with `n ≤ x`.
-The upper endpoint is `⌊x⌋₊`, so the definition is total even for negative `x`.
+**Elements of a set up to a bound.** For a set $A$ of natural numbers and a real number $x$,
+this is the finite set of positive integers $n \in A$ with $n \le x$; it is empty when $x < 1$.
 
 ## Depends on
 

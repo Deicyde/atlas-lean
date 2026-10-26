@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.gcd_arithmetic_terms_small_bases
 ---
 
-# Gcd arithmetic terms small bases
+# The gcd terms in bases $2$, $3$ and $4$
 
-For the bases `c ∈ {2, 3, 4}` and all `a, b ≥ 1`, both identities
-`gcd(a, b) = (⌊c^{ab(ab+a+b)} / ((c^{a²b} - 1)(c^{ab²} - 1))⌋ mod c^{ab}) - 1` and
-`gcd(a, b) = (((-c^{ab(ab+a+b)}) mod ((c^{a²b} - 1)(c^{ab²} - 1))) mod c^{ab}) - 2` hold exactly
-when `(a, b) ≠ (1, 1)` (for `(1, 1)` both fail: "the unique exception"). Both identities are
-stated over `ℤ` with `Int.ediv`/`Int.emod` (floor and nonnegative remainder for positive
-divisors). The record's closing remark on which cases remain to verify is proof commentary
-and is not formalized.
+**The gcd terms in bases $2$, $3$ and $4$.** Let $c \in \{2, 3, 4\}$, let $a, b \ge 1$ be
+natural numbers, and put $E = ab(ab + a + b)$ and $D = (c^{a^2 b} - 1)(c^{a b^2} - 1)$. Then the
+identity
+
+$$
+\gcd(a, b) = \left( \lfloor c^E / D \rfloor \bmod c^{ab} \right) - 1
+$$
+
+holds if and only if $(a, b) \ne (1, 1)$, and the identity
+
+$$
+\gcd(a, b) = \big( ((-c^E) \bmod D) \bmod c^{ab} \big) - 2
+$$
+
+holds if and only if $(a, b) \ne (1, 1)$. Both identities are read in the integers, where
+$x \bmod m$ is the remainder of $x$ in $\{0, \dots, m - 1\}$ for $m > 0$, also when $x < 0$.
 
 ## Depends on
 

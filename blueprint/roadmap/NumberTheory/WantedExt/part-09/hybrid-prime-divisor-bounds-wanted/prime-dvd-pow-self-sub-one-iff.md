@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_pow_self_sub_one_iff
 ---
 
-# Prime dvd pow self sub one iff
+# Divisibility of $x^p - 1$ by $p$
 
-For a prime `p` and a positive integer `x`, `p ∣ x^p - 1` if and only if `p ∣ x - 1` and
-`p ∣ Φ_p(x)`.
+**Divisibility of $x^p - 1$ by $p$.** Let $p$ be a prime, let $x$ be a positive integer, and
+let $\Phi_p$ be the $p$-th cyclotomic polynomial with integer coefficients. Then
+$p \mid x^p - 1$ if and only if $p \mid x - 1$ and $p \mid \Phi_p(x)$.
 
 ## Depends on
 

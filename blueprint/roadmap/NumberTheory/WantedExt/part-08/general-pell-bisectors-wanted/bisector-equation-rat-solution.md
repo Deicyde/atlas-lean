@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_rat_solution
 ---
 
-# Bisector equation rat solution
+# Rational solutions of the bisector equation
 
-Every rational solution `(a, b, c)` of `(a - c)² (b² + 1) = (b - c)² (a² + 1)` with
-`|a| ≠ |b|` has the form `c = (a b₂ + a₂ b) / (b₂ + a₂)` or `c = (a b₂ - a₂ b) / (b₂ - a₂)`,
-where `(a, a₂)` and `(b, b₂)` are rational solutions of `x² - d y² = -1` for one positive
-square-free integer `d`.
+**Rational solutions of the bisector equation.** Let $a, b, c$ be rational numbers with
+$|a| \ne |b|$ and $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then there are a square-free
+natural number $d > 0$ and rational numbers $a_2, b_2$ with $a^2 - d a_2^2 = -1$ and
+$b^2 - d b_2^2 = -1$ such that either $a_2 + b_2 \ne 0$ and
+$c = (a b_2 + a_2 b) / (a_2 + b_2)$, or $b_2 - a_2 \ne 0$ and $c = (a b_2 - a_2 b) / (b_2 - a_2)$.
 
 ## Depends on
 

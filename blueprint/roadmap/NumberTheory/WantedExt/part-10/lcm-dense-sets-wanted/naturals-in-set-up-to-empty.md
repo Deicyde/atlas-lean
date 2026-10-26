@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.naturalsInSetUpTo_empty
 ---
 
-# Naturals In Set Up To empty
+# The empty set has no elements up to any bound
 
-No positive integer in the empty set occurs in the finite summation range.
+**The empty set has no elements up to any bound.** For every real number $x$, the finite set
+of elements $n$ of the empty set with $1 \le n \le x$ is empty.
 
 ## Depends on
 
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
 
 ## Sources
 

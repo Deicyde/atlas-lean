@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovCongruenceCount_prime_pow_le_two
 ---
 
-# Gen Markov Congruence Count prime pow le two
+# At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo an odd prime power
 
-Lemma 4.11: for an odd prime `p`, `m ≥ 2` and `k² - 4 ≢ 0 (mod p)`,
-`x² + k x + 1 ≡ 0 (mod p^m)` has at most two solutions.
+**At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo an odd prime power.** Let $p$
+be an odd prime, let $m \ge 2$ and let $k \in \mathbb{N}$ with $k^2 - 4 \not\equiv 0 \pmod p$.
+Then at most two integers $x$ with $0 \le x < p^m$ satisfy
+$x^2 + kx + 1 \equiv 0 \pmod{p^m}$.
 
 ## Depends on
 
-- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
+- [Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$](gen-markov-congruence-count.md)
 
 ## Sources
 

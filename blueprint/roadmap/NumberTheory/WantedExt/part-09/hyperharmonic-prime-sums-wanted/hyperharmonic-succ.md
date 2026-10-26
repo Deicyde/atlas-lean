@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.hyperharmonic_succ
 ---
 
-# Hyperharmonic succ
+# Recursion for the hyperharmonic numbers
 
-The defining recursion `h_n^{(r+1)} = ∑_{k=1}^{n} h_k^{(r)}`.
+**Recursion for the hyperharmonic numbers.** For all natural numbers $r$ and $n$, the
+hyperharmonic numbers $h_m^{(s)}$ (of order $s$ and index $m$) satisfy
+
+$$h_n^{(r+1)} = \sum_{k=1}^{n} h_k^{(r)}.$$
 
 ## Depends on
 
-- [Hyperharmonic](hyperharmonic.md)
+- [Hyperharmonic numbers](hyperharmonic.md)
 
 ## Sources
 

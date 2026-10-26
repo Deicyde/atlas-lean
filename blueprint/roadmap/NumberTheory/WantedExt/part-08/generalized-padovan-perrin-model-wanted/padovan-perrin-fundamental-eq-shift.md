@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinFundamental_eq_shift
 ---
 
-# Padovan Perrin Fundamental eq shift
+# Shift property of the generalized Padovan–Perrin fundamental system
 
-For `p + 1 ≤ j ≤ s + p - 1`, the fundamental sequence `v⁽ʲ⁾` is a shift of the fundamental
-solution `v⁽ˢ⁺ᵖ⁾`: `v⁽ʲ⁾ n = v⁽ˢ⁺ᵖ⁾ (n + (s + p) - j)` for all `n ≥ 0`, and
-`v⁽ʲ⁾ n = k₁ v⁽ˢ⁺ᵖ⁾ (n - j + p) + k₂ v⁽ˢ⁺ᵖ⁾ (n - j)` for `n ≥ j` (where both indices are
-nonnegative). The paper's second clause `v⁽ʲ⁾ n = k₂ v⁽ˢ⁺ᵖ⁾ (n + j)` for `1 ≤ j ≤ p` is omitted:
-it fails for `k₁ = k₂ = 1`, `p = 1`, `s = 2`, `j = 1`, `n = 0` (`v⁽¹⁾ 0 = 1`, `v⁽³⁾ 1 = 0`).
-Stated over any commutative ring.
+**Shift property of the generalized Padovan–Perrin fundamental system.** Let $R$ be a
+commutative ring, $k_1, k_2 \in R$, and let $p, s, j$ be natural numbers with $p \ge 1$ and
+$p + 1 \le j \le s + p - 1$. Write $v^{(\ell)}$ for the $\ell$-th sequence of the Fibonacci
+fundamental system of the $([k]; p; s)$-Padovan–Perrin recurrence. Then
+$v^{(j)}_n = v^{(s+p)}_{n+s+p-j}$ for every $n \ge 0$, and
+$v^{(j)}_n = k_1 v^{(s+p)}_{n-j+p} + k_2 v^{(s+p)}_{n-j}$ for every $n \ge j$.
+
+The paper's second clause, $v^{(j)}_n = k_2 v^{(s+p)}_{n+j}$ for $1 \le j \le p$, is omitted: it
+fails for $k_1 = k_2 = 1$, $p = 1$, $s = 2$, $j = 1$, $n = 0$, where $v^{(1)}_0 = 1$ but
+$v^{(3)}_1 = 0$.
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
 
 ## Sources
 

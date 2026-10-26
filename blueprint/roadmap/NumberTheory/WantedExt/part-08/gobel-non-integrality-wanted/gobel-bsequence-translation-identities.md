@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelBSequence_translation_identities
 ---
 
-# Gobel BSequence translation identities
+# Translation and reflection identities for $b_{l,s}$
 
-Every function satisfying the defining conditions for `b_{l,s}` obeys all three
-translations/reflection identities of the paper. Clauses (b) and (c) use
-`t = l/2-s` inline, and divisibility is encoded by `Int.emod = 0`. This avoids introducing
-the unique sequence by choice; all Proposition 20 hypotheses and `l ≥ 2` are explicit.
+**Translation and reflection identities for $b_{l,s}$.** Let $l \ge 2$ be an even natural
+number and $s \le l$ a natural number such that $2s + 1$ and $l + 1$ are coprime, let
+$b : \mathbb{Z} \to \mathbb{Z}$ satisfy the defining conditions of $b_{l,s}$, and write
+$t = l/2 - s$. Then the following hold. (a) For every integer $n$ such that neither $n$ nor
+$n + 2s + 1$ is divisible by $l + 1$, $b(n) = -b(n + 2s + 1)$. (b) If $s < l/2$, then for every
+integer $n$ such that neither $n$ nor $n + 2t$ is divisible by $l + 1$, $b(n) = -b(n + 2t)$.
+(c) If $s < l/2$, then for every integer $n$ such that neither $t - n$ nor $t + n$ is divisible
+by $l + 1$, $b(t - n) = b(t + n)$.
 
 ## Depends on
 
-- [Is Gobel BSequence](is-gobel-bsequence.md)
+- [The periodic sign sequence $b_{l,s}$](is-gobel-bsequence.md)
 
 ## Sources
 

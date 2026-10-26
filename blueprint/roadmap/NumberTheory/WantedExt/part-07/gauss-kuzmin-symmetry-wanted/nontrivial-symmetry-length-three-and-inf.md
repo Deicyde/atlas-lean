@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nontrivialSymmetry_length_three_and_infinite
 ---
 
-# Nontrivial Symmetry length three and infinite
+# No nontrivial symmetries in length three, infinitely many from length four
 
-(i) No string of three positive integers has a nontrivial symmetry; (ii) for each `n ≥ 4` there
-are infinitely many strings of `n` positive integers with a nontrivial symmetry.
+**No nontrivial symmetries in length three, infinitely many from length four.** (i) No string
+of three positive integers has a nontrivial symmetry. (ii) For every $n \ge 4$ there are infinitely
+many strings of $n$ positive integers that have a nontrivial symmetry.
 
 ## Depends on
 
-- [Has Nontrivial Symmetry](has-nontrivial-symmetry.md)
+- [Nontrivial symmetry of a string](has-nontrivial-symmetry.md)
 
 ## Sources
 

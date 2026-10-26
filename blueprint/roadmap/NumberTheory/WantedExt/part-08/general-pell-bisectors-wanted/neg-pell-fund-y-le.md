@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negPellFundY_le
 ---
 
-# Neg Pell Fund Y le
+# Minimality of the fundamental negative Pell solution
 
-Minimality: `negPellFundY d` is at most every positive `y` for which `x² - d y² = -1` has a
-solution.
+**Minimality of the fundamental negative Pell solution.** Let $d$ be a natural number and let
+$Y$ be the second coordinate of its fundamental negative Pell solution. If $y$ is a positive
+integer such that $x^2 - d y^2 = -1$ for some natural number $x$, then $Y \le y$.
 
 ## Depends on
 
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
 
 ## Sources
 

@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.weightedBinaryDigitSum_two
 ---
 
-# Weighted Binary Digit Sum two
+# Weighted binary digit sum of 2
 
-Characteristic value `a(2) = 2`.
+**Weighted binary digit sum of 2.** The weighted binary digit sum of $2$ is $a(2) = 2$.
 
 ## Depends on
 
-- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
+- [Weighted binary digit sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_succ_modEq_card_frequency_two
 ---
 
-# Generalized Tau succ mod Eq card frequency two
+# Parity of the generalized tau function via part frequencies
 
-Parity of `τ_k(n + 1)`: with `A = {a : 1 ≤ a ≤ k, C(k, a) odd}`, `τ_k(n + 1) ≡ F_A(n) (mod 2)`,
-where `F_A(n)` counts partitions of `n` whose every frequency lies in `A`.
+**Parity of the generalized tau function via part frequencies.** Let $k \ge 1$ and $n \ge 0$ be
+natural numbers, and let $A$ be the set of integers $a$ with $1 \le a \le k$ and $\binom{k}{a}$
+odd. Then $\tau_k(n + 1)$ is congruent modulo $2$ to the number of partitions of $n$ in which the
+number of times each part occurs lies in $A$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

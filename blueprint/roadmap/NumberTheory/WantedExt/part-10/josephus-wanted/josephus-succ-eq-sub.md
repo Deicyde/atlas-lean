@@ -5,12 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.JosephusWanted.josephus_succ_eq_sub
 ---
 
-# Theorem 2
+# Josephus recurrence by number of wrap-arounds
 
-**Theorem 2**: with `p := J_k(n)`, if
-`p + k ∈ [[ℓ(n+1) + 1, (ℓ+1)(n+1)]]` for some
-nonnegative integer `ℓ`, then
-`J_k(n+1) = p + k - ℓ(n+1)`.
+**Josephus recurrence by number of wrap-arounds.** Let $k \ge 2$ and $n \ge 1$ be natural
+numbers, let $J_k$ be the Josephus function and write $p = J_k(n)$. If $\ell$ is a natural
+number with $\ell(n+1) + 1 \le p + k \le (\ell+1)(n+1)$, then $J_k(n+1) = p + k - \ell(n+1)$.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.ρ
 ---
 
-# Ρ
+# Proportion of soluble hypersurfaces of bounded height
 
-`ρ_{d,n}(A)` is the proportion of degree-`d` hypersurfaces in `ℙⁿ` of height at most `A`
-that have a rational point:
-`ρ_{d,n}(A) = #{V ∈ 𝕍_{d,n}(A) | V(ℚ) ≠ ∅} / #𝕍_{d,n}(A)`.
+**Proportion of soluble hypersurfaces of bounded height.** For a real number $A$,
+$\rho_{d,n}(A)$ is the proportion of hypersurfaces in $\mathbb{V}_{d,n}(A)$, the degree-$d$
+hypersurfaces in $\mathbb{P}^n$ of height at most $A$, that have a rational point: it is the
+number of $V \in \mathbb{V}_{d,n}(A)$ with $V(\mathbb{Q}) \ne \emptyset$ divided by the number of
+elements of $\mathbb{V}_{d,n}(A)$, taken to be $0$ when $\mathbb{V}_{d,n}(A)$ is empty. Here
+$V(\mathbb{Q}) \ne \emptyset$ means that the chosen homogeneous polynomial representing $V$ has a
+nonzero rational zero.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Solutions In](has-solutions-in.md)
-- [Height LE](height-le.md)
-- [𝕍](untitled-2.md)
+- [Unimodular solutions of a polynomial](has-solutions-in.md)
+- [Hypersurfaces of bounded height](height-le.md)
+- [Parameter space of hypersurfaces](untitled-2.md)
 
 ## Sources
 

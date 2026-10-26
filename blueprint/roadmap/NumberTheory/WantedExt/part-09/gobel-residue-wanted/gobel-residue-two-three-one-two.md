@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.gobelResidue_two_three_one_two
 ---
 
-# Gobel Residue two three one two
+# Example value of the Göbel residue sequence
 
-For `k = 2`, `p = 3`, `r = 1`: `g(2) = (1·2 + 2²) · 2⁻¹ = 0 mod 3`.
+**Example value of the Göbel residue sequence.** For $k = 2$, $p = 3$ and $r = 1$, the
+residue sequence satisfies $g_{2,3,1}(2) = 0 \bmod 3$; in particular it is not the failure value
+$F$. Indeed $g_{2,3,1}(1) = 2$ and
+$(1 \cdot 2 + 2^2) \cdot 2^{-1} = 6 \cdot 2^{-1} \equiv 0 \pmod 3$.
 
 ## Depends on
 
-- [Gobel Residue](gobel-residue.md)
+- [Residue sequence of the $k$-Göbel sequence](gobel-residue.md)
 
 ## Sources
 

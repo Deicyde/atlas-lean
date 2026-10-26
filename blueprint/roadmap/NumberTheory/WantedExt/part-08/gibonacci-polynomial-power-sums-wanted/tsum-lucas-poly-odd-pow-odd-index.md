@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tsum_lucasPoly_odd_pow_odd_index
 ---
 
-# Tsum lucas Poly odd pow odd index
+# Odd-power sums with odd-index Lucas polynomial denominators
 
-Theorem 1.8: for real `x > 0`, a positive integer `k` and `m ∈ ℕ`,
-`Σ_{n≥M} Σ_{j=0}^m C(2m+1, j) ℓ_{(2n+1)(2m+1-2j)} ℓ_{k(2m+1-2j)} / (ℓ_{2n+1}² + Δ² f_k²)^{2m+1}
-  = Σ_{r=1}^k 1/ℓ_{2r}^{2m+1}` if `k` is odd, and
-`Σ_{n≥M} Σ_{j=0}^m C(2m+1, j)(-1)^j f_{(2n+1)(2m+1-2j)} f_{k(2m+1-2j)} /
-  (ℓ_{2n+1}² - Δ² f_k²)^{2m+1} = (1/Δ²) Σ_{r=1}^k 1/ℓ_{2r-1}^{2m+1}` if `k` is even
-(summation index shifted to start at `0`).
+**Odd-power sums with odd-index Lucas polynomial denominators.** Let $f_n$ and $\ell_n$
+denote the Fibonacci and Lucas polynomials, given by $f_0 = 0$, $f_1 = 1$, $\ell_0 = 2$,
+$\ell_1 = x$ and $g_{n+2} = x g_{n+1} + g_n$ for $g \in \{f, \ell\}$, evaluated at a real number
+$x > 0$, let $k$ be a positive integer and $m$ a natural number, and put $M = (k + 1)/2$ if $k$ is
+odd and $M = k/2$ if $k$ is even. If $k$ is odd, then
+
+$$\sum_{n \ge M} \frac{\sum_{j=0}^{m} \binom{2m+1}{j} \ell_{(2n+1)(2m+1-2j)} \ell_{k(2m+1-2j)}}
+{\left(\ell_{2n+1}^2 + (x^2 + 4) f_k^2\right)^{2m+1}}
+= \sum_{r=1}^{k} \frac{1}{\ell_{2r}^{2m+1}},$$
+
+and if $k$ is even, then
+
+$$\sum_{n \ge M} \frac{\sum_{j=0}^{m} (-1)^j \binom{2m+1}{j} f_{(2n+1)(2m+1-2j)} f_{k(2m+1-2j)}}
+{\left(\ell_{2n+1}^2 - (x^2 + 4) f_k^2\right)^{2m+1}}
+= \frac{1}{x^2 + 4} \sum_{r=1}^{k} \frac{1}{\ell_{2r-1}^{2m+1}}.$$
 
 ## Depends on
 

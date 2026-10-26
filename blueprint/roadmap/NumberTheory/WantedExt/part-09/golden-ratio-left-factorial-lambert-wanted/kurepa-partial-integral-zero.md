@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kurepaPartialIntegral_zero
 ---
 
-# Kurepa Partial Integral zero
+# Kurepa's partial integral vanishes at zero
 
-The partial integral vanishes at `x = 0`.
+**Kurepa's partial integral vanishes at zero.** For every natural number $n$, Kurepa's partial
+integral $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ satisfies $K_n(0) = 0$.
 
 ## Depends on
 
-- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Kurepa's partial integral](kurepa-partial-integral.md)
 
 ## Sources
 

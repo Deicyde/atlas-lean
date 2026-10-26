@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.fundInterval_of_lt
 ---
 
-# Fund Interval of lt
+# Half-open interval between increasing endpoints
 
-`⟨α, β⟩ = [α, β)` when `α < β`.
+**Half-open interval between increasing endpoints.** For real numbers $\alpha$ and $\beta$,
+write $\langle \alpha, \beta \rangle$ for $[\alpha, \beta)$ if $\alpha < \beta$ and for
+$(\beta, \alpha]$ otherwise. If $\alpha < \beta$, then
+$\langle \alpha, \beta \rangle = [\alpha, \beta)$.
 
 ## Depends on
 
-- [Fund Interval](fund-interval.md)
+- [Half-open interval between two reals](fund-interval.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cx](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
 
 ## Sources
 

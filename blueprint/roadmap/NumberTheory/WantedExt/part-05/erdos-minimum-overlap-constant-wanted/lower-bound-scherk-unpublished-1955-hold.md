@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_Scherk_unpublished_1955_holds
 ---
 
-# Lower Bound Scherk unpublished 1955 holds
+# Scherk's lower bound for the minimum-overlap constant
 
-Source: Scherk, unpublished 1955, recorded by Optimization Problems 1b.
+**Scherk's lower bound for the minimum-overlap constant.** The continuous Erdős
+minimum-overlap constant $C_{1b}$ satisfies $1 - 1/\sqrt{2} \le C_{1b}$.
 
 ## Depends on
 
-- [Lower Bound Scherk unpublished 1955](lower-bound-scherk-unpublished-1955.md)
+- [Scherk's lower bound for the minimum-overlap constant (statement)](lower-bound-scherk-unpublished-1955.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Scherk, unpublished 1955, recorded by Optimization Problems 1b.

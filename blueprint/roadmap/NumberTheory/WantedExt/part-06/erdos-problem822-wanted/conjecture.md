@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem822Wanted.conjecture
 ---
 
-# Conjecture
+# Erdős Problem 822
 
-`n + φ(n)` has positive lower density.
+**Erdős Problem 822.** The statement that the set $\{n + \varphi(n) : n \in \mathbb{N}\}$,
+where $\varphi$ is Euler's totient function, has positive lower density in $\mathbb{N}$.
 
 ## Depends on
 

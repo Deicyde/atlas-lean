@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.triangularFrobeniusX
 ---
 
-# Triangular Frobenius X
+# The parameter $x_s$ of the triangular Frobenius formula
 
-The integers `x_s` of the paper's Definition 1 for `s = k(k+1) + i`, `0 ≤ i ≤ 2k+1`:
-for even `n`, `x_s^{even} = i` (`i ≤ k`) or `i - k - 1` (`i > k`); for odd `n`, `x_s^{odd} = 2i`
-(`i ≤ k`) or `2(i - k) - 1` (`i > k`).
+**The parameter $x_s$ of the triangular Frobenius formula.** For natural numbers $n$, $k$
+and $i$, let $x$ be $i$ if $i \le k$ and $i - k - 1$ if $i > k$ when $n$ is even, and $2i$ if
+$i \le k$ and $2(i - k) - 1$ if $i > k$ when $n$ is odd. For $s = k(k+1) + i$ with
+$0 \le i \le 2k+1$ this is the integer $x_s$ (written $x_s^{\mathrm{even}}$ or
+$x_s^{\mathrm{odd}}$ by the parity of $n$).
 
 ## Depends on
 

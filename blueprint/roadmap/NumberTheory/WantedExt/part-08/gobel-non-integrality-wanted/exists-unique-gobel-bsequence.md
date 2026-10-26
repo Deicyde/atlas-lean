@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_gobelBSequence
 ---
 
-# Exists Unique gobel BSequence
+# Existence and uniqueness of the sequence $b_{l,s}$
 
-If `l` is nonnegative even, `0 ≤ s ≤ l`, and `2s+1` is coprime to `l+1`, there is
-exactly one periodically extended `±1` function satisfying clauses (a), (b), and (c).
-Nonnegativity is automatic for naturals, periodicity is explicit on `ℤ`, and no
-choice-defined sequence is introduced. Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on
-Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article
-26.3.8, Proposition 20.
+**Existence and uniqueness of the sequence $b_{l,s}$.** Let $l$ be an even natural number and
+$s$ a natural number with $s \le l$ such that $2s + 1$ and $l + 1$ are coprime. Then exactly one
+function $b : \mathbb{Z} \to \mathbb{Z}$ satisfies the defining conditions of $b_{l,s}$:
+$b(n) = \pm 1$ for every integer $n$, $b(n + l + 1) = b(n)$ for every $n$, $b(1) = 1$,
+$b(n) = -b(l + 1 - n)$ for every $n$ not divisible by $l + 1$, and $b(s - n) = b(s + 1 + n)$ for
+every $n$.
 
 ## Depends on
 
-- [Is Gobel BSequence](is-gobel-bsequence.md)
+- [The periodic sign sequence $b_{l,s}$](is-gobel-bsequence.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 20.

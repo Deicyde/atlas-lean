@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.additiveOfPrimeValues
 ---
 
-# Additive Of Prime Values
+# Completely additive function with prescribed prime values
 
-The completely additive function with prescribed prime values `v`:
-`m = ∏ p^{aₚ} ↦ ∑ aₚ v(p)`.
+**Completely additive function with prescribed prime values.** Given a function
+$v : \mathbb{N} \to \mathbb{N}$, this is the function $\mathbb{N} \to \mathbb{N}$ that sends each
+$m \ge 1$ with prime factorization $m = \prod_p p^{a_p}$ to $\sum_p a_p\, v(p)$, and sends $0$
+to $0$. Only the values of $v$ at primes matter.
 
 ## Depends on
 

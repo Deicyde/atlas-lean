@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sq_add_add_one_eq_three_mul_cube_iff
 ---
 
-# Sq add add one eq three mul cube iff
+# Integer solutions of $u^2 \pm u + 1 = 3v^3$
 
-The equation `u² + u + 1 = 3 v³` has exactly the integer solutions
-`(-2, 1)` and `(1, 1)`, and `u² - u + 1 = 3 v³` has exactly `(2, 1)` and
-`(-1, 1)`.
+**Integer solutions of $u^2 \pm u + 1 = 3v^3$.** For all integers $u$ and $v$,
+$u^2 + u + 1 = 3v^3$ if and only if $(u, v) = (-2, 1)$ or $(u, v) = (1, 1)$, and
+$u^2 - u + 1 = 3v^3$ if and only if $(u, v) = (2, 1)$ or $(u, v) = (-1, 1)$.
 
 ## Depends on
 

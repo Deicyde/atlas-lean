@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.polyToLaurentInv_X
 ---
 
-# Poly To Laurent Inv X
+# The polynomial variable embeds as the Laurent variable
 
-The polynomial `x` embeds as `laurentInvVar K`.
+**The polynomial variable embeds as the Laurent variable.** Let $K$ be a field. The
+embedding $K[x] \to K((x^{-1}))$ sends the polynomial $x$ to the element $x$ of
+$K((x^{-1}))$.
 
 ## Depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

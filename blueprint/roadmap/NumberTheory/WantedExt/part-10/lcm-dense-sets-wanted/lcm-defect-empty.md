@@ -6,21 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.lcmDefect_empty
 ---
 
-# Lcm Defect empty
+# The gcd defect of the empty set
 
-On the empty set the defect is `-1`, as dictated by Lean's total division.
+**The gcd defect of the empty set.** For every real number $x$, the gcd defect of the empty
+set up to $x$ equals $-1$.
+
+The harmonic sum of the empty set is $0$, and division by $0$ gives $0$.
 
 ## Depends on
 
-- [Lcm Defect](lcm-defect.md)
+- [Gcd defect](lcm-defect.md)
 
 ## Proof depends on
 
-- [Gcd Logarithmic Moment](gcd-logarithmic-moment.md)
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
-- [Naturals In Set Up To empty](naturals-in-set-up-to-empty.md)
-- [Recip Sum Up To](recip-sum-up-to.md)
-- [Recip Sum Up To empty](recip-sum-up-to-empty.md)
+- [Logarithmic gcd moment](gcd-logarithmic-moment.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
+- [The empty set has no elements up to any bound](naturals-in-set-up-to-empty.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
+- [The harmonic sum over the empty set vanishes](recip-sum-up-to-empty.md)
 
 ## Sources
 

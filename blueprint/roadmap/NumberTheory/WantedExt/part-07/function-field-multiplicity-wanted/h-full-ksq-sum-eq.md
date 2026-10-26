@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.hFullKSqSum_eq
 ---
 
-# H Full KSq Sum eq
+# Unfolding the sum of the squares $K(P, h, j)^2$
 
-Unfolding `∑_P K(P, h, j)^2`.
+**Unfolding the sum of the squares $K(P, h, j)^2$.** Let $F$ be a finite field, let $h$ and
+$j$ be natural numbers and let $\xi$ be a complex number. The quantity $\sum_P K(P, h, j)^2$ of
+Theorem 5 is the complex sum, over all monic irreducible polynomials $P$ over $F$, of the squares
+of the local factors $K(P, h, j)$ attached to $h$, $j$ and $\xi$, taken to be $0$ if it does not
+converge absolutely.
 
 ## Depends on
 
-- [H Full K](h-full-k.md)
-- [H Full KSq Sum](h-full-ksq-sum.md)
-- [Monic Irreducible](monic-irreducible.md)
+- [The local factor $K(P, h, j)$](h-full-k.md)
+- [The sum $\sum_P K(P, h, j)^2$ over monic irreducible polynomials](h-full-ksq-sum.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

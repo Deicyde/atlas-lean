@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.soCS_infinite_family_plane
 ---
 
-# So CS infinite family plane
+# Infinite families of solutions in a plane
 
-From any SoCS solution `(a, b, c)` one obtains an infinite family of
-integer solutions of the SoCS equation, all lying in the plane
-`(b - c) * x + (c - a) * y + (a - b) * z = 0`, with `z - x ≡ c - a (mod 2)`.
+**Infinite families of solutions in a plane.** Let $(a, b, c)$ be a solution of the sum of
+consecutive squares problem. Then there are infinitely many distinct integer triples $(x, y, z)$
+satisfying the sum of consecutive squares equation
+$2\,y(y+1)(2y+1) = x(x+1)(2x+1) + z(z+1)(2z+1)$, with no order or sign condition, such that
+$(b - c)x + (c - a)y + (a - b)z = 0$ and $z - x \equiv c - a \pmod 2$.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
-- [So CSEq](so-cseq.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
+- [The sum of consecutive squares equation](so-cseq.md)
 
 ## Sources
 

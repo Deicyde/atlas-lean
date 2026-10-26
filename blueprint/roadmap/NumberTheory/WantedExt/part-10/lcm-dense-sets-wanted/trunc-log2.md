@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.truncLog2
 ---
 
-# Trunc Log2
+# Second iterated truncated logarithm
 
-The paper's second iterated truncated logarithm `Log₂ x = Log (Log x)`.
+**Second iterated truncated logarithm.** For a real number $x$, the second iterated truncated
+logarithm is $\operatorname{Log}_2 x = \operatorname{Log}(\operatorname{Log} x)$, where
+$\operatorname{Log}$ is the truncated logarithm.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trunc Log](trunc-log.md)
+- [Truncated logarithm](trunc-log.md)
 
 ## Sources
 

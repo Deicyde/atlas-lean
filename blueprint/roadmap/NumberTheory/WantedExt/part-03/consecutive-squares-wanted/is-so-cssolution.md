@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSoCSSolution
 ---
 
-# Is So CSSolution
+# Solutions of the sum of consecutive squares problem
 
-A solution of the Sum of Consecutive Squares Problem in the paper's
-range `0 < a + 1 < b < c`.
+**Solutions of the sum of consecutive squares problem.** A triple of integers
+$(a, b, c)$ is a SoCS solution when $0 < a + 1 < b < c$ and $(a, b, c)$ satisfies the sum of
+consecutive squares equation $2\,b(b+1)(2b+1) = a(a+1)(2a+1) + c(c+1)(2c+1)$, that is,
+$(a+1)^2 + \dots + b^2 = (b+1)^2 + \dots + c^2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [So CSEq](so-cseq.md)
+- [The sum of consecutive squares equation](so-cseq.md)
 
 ## Sources
 

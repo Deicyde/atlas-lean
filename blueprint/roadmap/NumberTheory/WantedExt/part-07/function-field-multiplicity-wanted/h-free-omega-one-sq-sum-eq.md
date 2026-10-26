@@ -6,15 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.hFreeOmegaOneSqSum_eq
 ---
 
-# H Free Omega One Sq Sum eq
+# Series formula for the squared prime sum $U_h$
 
-Unfolding `U_h`.
+**Series formula for the squared prime sum $U_h$.** Let $F$ be a finite field with $q$
+elements, let $h$ be a natural number, and for a monic irreducible polynomial $P$ over $F$ write
+$|P| = q^{\deg P}$. Then the squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials
+equals
+
+$$\sum_P \left(\frac{|P|^{\max(h-2,\,0)} (|P| - 1)}{|P|^h - 1}\right)^2,$$
+
+the sum over all monic irreducible $P$, where a quotient with zero denominator (only when
+$h = 0$) is read as $0$ and the sum is $0$ when the series does not converge absolutely.
 
 ## Depends on
 
-- [H Free Omega One Sq Sum](h-free-omega-one-sq-sum.md)
-- [Monic Irreducible](monic-irreducible.md)
-- [Poly Norm](poly-norm.md)
+- [The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials](h-free-omega-one-sq-sum.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

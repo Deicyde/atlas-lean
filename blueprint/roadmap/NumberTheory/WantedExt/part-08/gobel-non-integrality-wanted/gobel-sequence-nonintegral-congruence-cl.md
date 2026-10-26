@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_nonintegral_congruence_class_of_odd_multiple
 ---
 
-# Gobel Sequence nonintegral congruence class of odd multiple
+# A congruence class of non-integral Göbel sequences
 
-Let `p ≥ 13` be a prime with `p ≡ 1 (mod 4)` and `k` a positive odd multiple of
-`(p-1)/2` (such `k` is automatically positive and even, so the paper's hypothesis "`k` positive
-even" is implied and not repeated). Then there is an even
-`2 ≤ l ≤ p-3` such that every positive `l' ≡ l (mod p)` has negative `p`-adic valuation
-at index `p`. The final bounded witness is the formal counterpart of `N_{k,l'} ≤ p`, stated
-directly because no threshold object is introduced. Congruence is natural-number remainder.
+**A congruence class of non-integral Göbel sequences.** Let $g_{k,l}$ denote the
+$(k, l)$-Göbel sequence, let $p \ge 13$ be a prime with $p \equiv 1 \pmod 4$, and let
+$k = \frac{p-1}{2} q$ for a positive odd natural number $q$. Then there is an even natural number
+$l$ with $2 \le l \le p-3$ such that for every positive natural number $l'$ with
+$l' \equiv l \pmod p$, the $p$-adic valuation of $g_{k,l'}(p)$ is negative, and some
+$g_{k,l'}(n)$ with $1 \le n \le p$ is not an integer.
+
+Every such $k$ is positive and even, as the paper requires.
 
 ## Depends on
 
-- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
+- [The (k, l)-Göbel sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

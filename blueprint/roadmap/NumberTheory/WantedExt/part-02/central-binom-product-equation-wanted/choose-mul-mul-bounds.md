@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_mul_bounds
 ---
 
-# Choose mul mul bounds
+# Stănică's bounds for the binomial coefficient $\binom{mn}{rn}$
 
-Lemma 6 (Stănică): for positive integers `m > r ≥ 1` and `n ≥ 1`, with
-`B = m^(mn+1/2) / ((m-r)^((m-r)n+1/2) r^(rn+1/2))`,
-`e^(-1/(8n)) n^(-1/2) B / √(2π) < C(mn, rn) < n^(-1/2) B / √(2π)`.
+**Stănică's bounds for the binomial coefficient $\binom{mn}{rn}$.** Let $m$, $n$ and $r$ be
+natural numbers with $1 \le r < m$ and $n \ge 1$, and put
+
+$$B = \frac{m^{mn + 1/2}}{(m-r)^{(m-r)n + 1/2}\, r^{rn + 1/2}}.$$
+
+Then
+
+$$\frac{e^{-1/(8n)}}{\sqrt{2\pi}\,\sqrt{n}}\, B < \binom{mn}{rn} <
+\frac{1}{\sqrt{2\pi}\,\sqrt{n}}\, B.$$
 
 ## Depends on
 

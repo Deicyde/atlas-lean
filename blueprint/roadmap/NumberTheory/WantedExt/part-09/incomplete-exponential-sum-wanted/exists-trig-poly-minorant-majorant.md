@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_trigPoly_minorant_majorant
 ---
 
-# Exists trig Poly minorant majorant
+# Trigonometric polynomials bounding the indicator of an arc
 
-Selberg-type majorant and minorant: for an interval `J = [a, b]` of the circle
-`𝕋 = ℝ/ℤ` of length `b - a < 1` and a positive integer `K`, there are trigonometric polynomials
-`S_±(x) = ∑_{k=-K}^{K} α_±(k) e^{2πikx}` with `α_±(0) = b - a ± 1/(K+1)` and
-`S_-(x) ≤ 1_J(x) ≤ S_+(x)` for all `x`. Here `S_±` are real-valued (stated as vanishing
-imaginary part) and `1_J(x) = 1` exactly when `x - n ∈ [a, b]` for some integer `n`; the
-hypothesis `a ≤ b` makes `J` an interval. Partial statement: only the zero coefficients and the
-pointwise sandwich, as in the extracted record; bounds on the nonzero coefficients `α_±(k)`
-(as in the classical Selberg–Vaaler construction) are not part of the record and are not stated.
+**Trigonometric polynomials bounding the indicator of an arc.** Let $a \le b$ be real
+numbers with $b - a < 1$ and let $K \ge 1$ be an integer. Let $\chi(x) = 1$ if
+$a \le x - n \le b$ for some integer $n$, and $\chi(x) = 0$ otherwise. Then there are complex
+numbers $\alpha_-(k)$ and $\alpha_+(k)$, for $k \in \mathbb{Z}$, with
+$\alpha_\pm(0) = b - a \pm \frac{1}{K+1}$, such that for every real $x$ the trigonometric
+polynomials $S_\pm(x) = \sum_{k=-K}^{K} \alpha_\pm(k) e^{2\pi i k x}$ are real and satisfy
+$S_-(x) \le \chi(x) \le S_+(x)$.
+
+Only the constant coefficients and the pointwise bounds are stated; no bounds on the
+coefficients $\alpha_\pm(k)$ with $k \ne 0$ are asserted.
 
 ## Depends on
 

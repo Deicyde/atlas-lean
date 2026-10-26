@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_heightOneMultipleZeta_mul_pow
 ---
 
-# Has Sum height One Multiple Zeta mul pow
+# Expansion of the multiple Hurwitz zeta function in height one multiple zeta values
 
-For `Re s > 1`, `|r - 1| < |s - 1|` and `Re r < Re s` (where (2.2) converges),
-`ζ_r(s) = ∑_{j ≥ 0} ζ(s, {1}^j) (r - 1)^j`.
+**Expansion of the multiple Hurwitz zeta function in height one multiple zeta values.** Let
+$r$ and $s$ be complex numbers with $\operatorname{Re} s > 1$, $|r - 1| < |s - 1|$ and
+$\operatorname{Re} r < \operatorname{Re} s$. Write $\zeta(s, \{1\}^j)$ for the height one multiple
+zeta function and $\zeta_r(s)$ for the multiple Hurwitz zeta function of order $r$. Then the series
+$\sum_{j \ge 0} \zeta(s, \{1\}^j) \, (r - 1)^j$ is summable with sum $\zeta_r(s)$.
 
 ## Depends on
 
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
-- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
+- [Multiple Hurwitz zeta function](multiple-hurwitz-zeta.md)
 
 ## Sources
 

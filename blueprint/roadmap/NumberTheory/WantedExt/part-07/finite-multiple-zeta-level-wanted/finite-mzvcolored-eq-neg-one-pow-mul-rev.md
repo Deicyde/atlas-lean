@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.finiteMZVColored_eq_neg_one_pow_mul_reverse
 ---
 
-# Proposition 1 (i)
+# Reversal for finite multiple zeta values of level $N$
 
-**Proposition 1 (i)** (reversal). For an index `k` of weight `w` and a color map `c`,
-`ζ^c_{𝒜,N}(k) = (-1)^w ζ^{c←}_{𝒜,N}(k←)`, where `k← = (k_r, …, k₁)` and
-`c←(α) = (α - α_r, …, α - α₁)` when `c(α) = (α₁, …, α_r)`, `c←(α) = ∅` when `c(α) = ∅`.
+**Reversal for finite multiple zeta values of level $N$.** Let $N \ge 1$, let
+$k = (k_1, \dots, k_r)$ be a tuple of natural numbers of weight $w = k_1 + \dots + k_r$, and let
+$c$ be a color map, which sends each $a \in \mathbb{Z}/N\mathbb{Z}$ either to $\emptyset$ or to a
+tuple in $(\mathbb{Z}/N\mathbb{Z})^r$. Write $k^{\leftarrow} = (k_r, \dots, k_1)$, and let
+$c^{\leftarrow}$ be the color map with $c^{\leftarrow}(a) = (a - \alpha_r, \dots, a - \alpha_1)$
+when $c(a) = (\alpha_1, \dots, \alpha_r)$ and $c^{\leftarrow}(a) = \emptyset$ when
+$c(a) = \emptyset$. Then for all but finitely many primes $p$, the $p$-components of the finite
+multiple zeta values of level $N$ with these color maps satisfy
+$\zeta^{c}_{\mathcal{A},N}(k)_p = (-1)^w \zeta^{c^{\leftarrow}}_{\mathcal{A},N}(k^{\leftarrow})_p$
+in $\mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 
-- [Finite MZVColored](finite-mzvcolored.md)
+- [Finite multiple zeta value of level $N$ with a color map](finite-mzvcolored.md)
 
 ## Sources
 

@@ -5,20 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicBox_almost_equidistant
 ---
 
-# Theorem 1
+# Almost all pairs in the cyclotomic box are nearly equidistant
 
-**Theorem 1** (main theorem). For every `ε > 0` there is `A(ε)` such that for
-`N, p > A(ε)` (`p` prime), fewer than `ε · #B(p, N)²` pairs `(α, β) ∈ B(p, N)²` have
-`|d_{p,N}(α, β) - 1/√6| > ε`, where `d_{p,N} = d / (2 N p √(p - 1))` is the distance
-normalized by the diameter.
+**Almost all pairs in the cyclotomic box are nearly equidistant.** For every real
+$\varepsilon > 0$ there is a natural number $A$ with the following property. Let $p$ be a prime
+and $N$ a natural number with $p > A$ and $N > A$, and let $K$ be a field generated over
+$\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed primitive $p$-th root of unity
+$\omega \in K$. Let $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$ be the trace metric on $K$,
+where $\lVert \gamma \rVert \ge 0$ and
+$\lVert \gamma \rVert^2 = \sum_{j=1}^{p-1} \operatorname{Tr}_{K/\mathbb{Q}}(\gamma \omega^j)^2$.
+Let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$ with $-N \le a_i \le N$
+for all $i$, and write $\alpha_a = a_1 \omega + \dots + a_{p-1} \omega^{p-1}$. Then fewer than
+$\varepsilon \lvert B(p, N) \rvert^2$ pairs $(a, b) \in B(p, N)^2$ satisfy
 
-The paper's "absolute and effectively computable" is not formalized.
+$$
+\left| \frac{d(\alpha_a, \alpha_b)}{2 N p \sqrt{p - 1}} - \frac{1}{\sqrt{6}} \right| > \varepsilon.
+$$
+
+The constant $A$ depends only on $\varepsilon$; it is not claimed to be effectively computable.
 
 ## Depends on
 
-- [Cyclotomic Box](cyclotomic-box.md)
-- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [The cyclotomic box](cyclotomic-box.md)
+- [Lattice points of a cyclotomic field](cyclotomic-lattice-point.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hasUniqueMaxGenMarkovTriple_iff_existsUnique_label
 ---
 
-# Has Unique Max Gen Markov Triple iff exists Unique label
+# Unique maximal triple via the fraction labeling
 
-Proposition 4.1: a `k`-generalized Markov number `b` is the maximum of a unique
-`k`-generalized Markov triple up to order if and only if `b = m_t` for a unique irreducible
-fraction `t ∈ [0, 1]`.
+**Unique maximal triple via the fraction labeling.** Let $k$ be a natural number and $b$
+a $k$-generalized Markov number. Then $b$ is the maximum of a unique $k$-generalized Markov
+triple up to order if and only if there is exactly one pair $(n, d)$ of natural numbers with
+$n \le d$ such that $b$ is a label of the fraction $n/d$ in the fraction labeling of
+$k$-generalized Markov numbers.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Label](is-gen-markov-label.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Fraction labeling of generalized Markov numbers](is-gen-markov-label.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

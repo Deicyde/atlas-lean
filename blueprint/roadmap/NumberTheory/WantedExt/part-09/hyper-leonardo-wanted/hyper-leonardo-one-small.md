@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.hyperLeonardo_one_small
 ---
 
-# Hyper Leonardo one small
+# First hyper-Leonardo numbers of order one
 
-Small values: `Le^{(1)}_0, …, Le^{(1)}_3 = 1, 2, 5, 10`.
+**First hyper-Leonardo numbers of order one.** The hyper-Leonardo numbers $Le^{(1)}_n$ of
+order $1$ satisfy $Le^{(1)}_0 = 1$, $Le^{(1)}_1 = 2$, $Le^{(1)}_2 = 5$ and $Le^{(1)}_3 = 10$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Proof depends on
 
-- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Generalized Leonardo numbers](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

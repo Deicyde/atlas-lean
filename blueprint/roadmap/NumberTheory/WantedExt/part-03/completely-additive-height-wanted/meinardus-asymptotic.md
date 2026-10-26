@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.meinardus_asymptotic
 ---
 
-# Meinardus asymptotic
+# Meinardus' theorem
 
-Theorem 3 (Meinardus): for nonnegative weights `bₖ`, not all zero, satisfying (M1)-(M3) with
-`α > 0` and `A > 0`, `aₙ ∼ C₁ n^κ exp(C₂ n^{α/(α+1)})` for some `C₁ > 0`, where
-`κ = (B(0) - 1 - α/2)/(α + 1)` (`B(0)` the value of the continuation, real part) and
-`C₂ = (1 + 1/α)(A Γ(α + 1) ζ(α + 1))^{1/(α+1)}`; in particular
-`log aₙ ∼ C₂ n^{α/(α+1)}`.
+**Meinardus' theorem.** Let $b_0, b_1, b_2, \dots$ be nonnegative reals with $b_k \ne 0$ for
+some $k \ge 1$, and let $a_n$ be the coefficients of the weighted partition product
+$\prod_{k \ge 1} (1 - q^k)^{-b_k}$. Suppose that the weights satisfy Meinardus' hypotheses
+(M1)–(M3) with exponent $\alpha > 0$, residue $A > 0$ and continuation $G$, and put
+$\kappa = (\operatorname{Re} G(0) - 1 - \alpha/2)/(\alpha + 1)$ and
+$C_2 = (1 + 1/\alpha)\,(A\,\Gamma(\alpha + 1)\,\zeta(\alpha + 1))^{1/(\alpha + 1)}$. Then there is
+$C_1 > 0$ with $a_n \sim C_1 n^{\kappa} \exp(C_2 n^{\alpha/(\alpha + 1)})$ as $n \to \infty$, and
+$\log a_n \sim C_2 n^{\alpha/(\alpha + 1)}$ as $n \to \infty$.
 
 ## Depends on
 
-- [Meinardus Hypotheses](meinardus-hypotheses.md)
-- [Weighted Partition Coeff](weighted-partition-coeff.md)
+- [Meinardus' hypotheses](meinardus-hypotheses.md)
+- [Weighted partition coefficients](weighted-partition-coeff.md)
 
 ## Sources
 

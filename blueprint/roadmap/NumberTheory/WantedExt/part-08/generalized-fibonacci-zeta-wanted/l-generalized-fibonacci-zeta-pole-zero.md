@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZetaPole_zero
 ---
 
-# L Generalized Fibonacci Zeta Pole zero
+# The possible pole at the zero index is zero
 
-The index `κ = 0`, `n = 0` gives the possible pole `s = 0`.
+**The possible pole at the zero index is zero.** For every natural number $\ell$ and every
+real number $\alpha$, the possible pole $s_{\kappa,n}$ of the $\ell$-generalized Fibonacci zeta
+function indexed by the identically zero function $\kappa$ and $n = 0$ equals $0$.
 
 ## Depends on
 
-- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
 
 ## Proof depends on
 
-- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
+- [Other roots of the ℓ-generalized Fibonacci characteristic polynomial](l-generalized-fibonacci-other-roots.md)
 
 ## Sources
 

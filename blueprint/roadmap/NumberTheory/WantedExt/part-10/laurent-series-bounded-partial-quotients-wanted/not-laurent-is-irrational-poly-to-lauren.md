@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.not_laurentIsIrrational_polyToLaurentInv
 ---
 
-# Not laurent Is Irrational poly To Laurent Inv
+# Polynomials are not irrational
 
-Polynomials are not irrational.
+**Polynomials are not irrational.** Let $K$ be a field. For every polynomial $P \in K[x]$,
+the image of $P$ in $K((x^{-1}))$ is not irrational.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Proof depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
 
 ## Sources
 

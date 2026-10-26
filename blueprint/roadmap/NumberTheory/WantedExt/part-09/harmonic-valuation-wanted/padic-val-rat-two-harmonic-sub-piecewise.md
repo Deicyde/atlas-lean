@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.padicValRat_two_harmonic_sub_piecewise
 ---
 
-# Padic Val Rat two harmonic sub piecewise
+# Piecewise formula for the 2-adic valuation of $H_n - H_{n-m}$
 
-Piecewise valuation formula.
-
-The accompanying lower bound (3.2) is garbled in the extraction and is not
-formalized. Both branches were verified computationally with exact rational
-arithmetic for `m < 20`, `n < 45`.
+**Piecewise formula for the 2-adic valuation of $H_n - H_{n-m}$.** Let
+$H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th harmonic number and let $\nu_2$ denote the $2$-adic
+valuation on the rational numbers (for a positive integer it is the exponent of $2$ in its
+factorization). Let $m$ and $n$ be natural numbers with $1 \le m \le n$, and put
+$M = \lceil \log_2(m + 1) \rceil$ and $j = \lfloor (n - m) / 2^M \rfloor$. If
+$2^M j + m \le n \le 2^M (j + 1) - 1$, then $\nu_2(H_n - H_{n-m}) = 1 - M$. If
+$2^M (j + 1) \le n \le 2^M (j + 1) + m - 1$, then $\nu_2(H_n - H_{n-m}) = -M - \nu_2(j + 1)$.
 
 ## Depends on
 

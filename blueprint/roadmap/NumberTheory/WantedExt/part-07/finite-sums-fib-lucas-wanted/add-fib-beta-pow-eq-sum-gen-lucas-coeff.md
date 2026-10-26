@@ -5,19 +5,31 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum_genLucasCoeff
 ---
 
-# Theorem 11
+# Genocchi–Lucas expansion of $(x + \beta)^m$
 
-**Theorem 11** (corrected): `(x + β)ᵐ = (1/(2√5))
-∑_{n=0}^m C(m,n) cₙ x^{m-n}` where `cₙ` is
-`genLucasCoeff n`, the printed inner sum
-`∑_{k=0}^n √5ᵏ C(n,k) Gₖ L_{n-k+1}/(n-k+1)` plus the
-dropped term `2√5^{n+1} G_{n+1}/(n+1)` (the printed form
-already fails at `m = 0`, giving `0` for `1`).
+**Genocchi–Lucas expansion of $(x + \beta)^m$.** Let $\beta = (1 - \sqrt{5})/2$, and for every
+natural number $n$ let
+
+$$
+c_n = \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} G_k \frac{L_{n-k+1}}{n-k+1} +
+2 \sqrt{5}^{\,n+1} \frac{G_{n+1}}{n+1}
+$$
+
+be the Genocchi–Lucas coefficient, where $G_k$ are the Genocchi numbers and $L_k$ the Lucas
+numbers. Then for every natural number $m$ and every real number $x$,
+
+$$
+(x + \beta)^m = \frac{1}{2\sqrt{5}} \sum_{n=0}^{m} \binom{m}{n} c_n x^{m-n}.
+$$
+
+This corrects the paper's Theorem 11, whose inner sum omits the term
+$2 \sqrt{5}^{\,n+1} G_{n+1}/(n+1)$; without it the identity already fails at $m = 0$, giving $0$
+instead of $1$.
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
-- [Gen Lucas Coeff](gen-lucas-coeff.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
+- [Genocchi–Lucas coefficients](gen-lucas-coeff.md)
 
 ## Sources
 

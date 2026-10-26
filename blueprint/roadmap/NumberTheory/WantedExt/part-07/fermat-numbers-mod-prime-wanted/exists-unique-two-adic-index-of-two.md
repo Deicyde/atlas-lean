@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_twoAdic_index_of_two
 ---
 
-# Exists Unique two Adic index of two
+# Uniqueness of the $2$-adic decomposition of the index of $2$
 
-For an odd prime `p` with `p - 1 = 2^r u`, `u` odd, there is exactly one pair `(s, t)`
-with `s ≤ r`, `t ∣ u` and `2^s t = ind_g(2)` for some primitive root `g` modulo `p`
-(encoded as `g ^ (2^s t) = 2`; `1 ≤ 2^s t ≤ p - 1` holds because `2^s t ∣ p - 1`).
+**Uniqueness of the $2$-adic decomposition of the index of $2$.** Let $p$ be an odd prime and
+write $p - 1 = 2^r u$ with $u$ odd. Then there is exactly one pair $(s, t)$ of natural numbers
+with $s \le r$ and $t \mid u$ such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$
+(an element of order $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$).
+
+Since $2^s t$ divides $p - 1$, it lies in $\{1, \dots, p - 1\}$, so it is the index
+$\operatorname{ind}_g(2)$ of $2$ with respect to $g$.
 
 ## Depends on
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pseudoGreedyExpansion
 ---
 
-# Pseudo Greedy Expansion
+# Pseudo-greedy expansion
 
-The pseudo-greedy expansion `a_n = ⌊x_n⁻¹ + 1⌉ = ⌊x_n⁻¹ + 1 + 1/2⌋` of `r`, indexed
-from `0`.
+**Pseudo-greedy expansion.** Let $r$ be a real number with pseudo-greedy remainder sequence
+$(x_n)_{n \ge 0}$. The pseudo-greedy expansion of $r$ is the integer sequence
+$a_n = \lfloor x_n^{-1} + 1 + 1/2 \rfloor$ for $n \ge 0$; that is, $a_n$ is the integer nearest
+to $x_n^{-1} + 1$, with halves rounded up.
+
+Here $0^{-1}$ is read as $0$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
+- [Pseudo-greedy remainder sequence](pseudo-greedy-remainder.md)
 
 ## Sources
 

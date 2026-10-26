@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.negPellF_gcd_of_even_quotient
 ---
 
-# Neg Pell F gcd of even quotient
+# Coprimality of negative Pell terms whose indices have an even ratio
 
-For `d > 1` whose negative Pell equation is solvable in integers and `0 < n ≤ m`: if `m` is a
-multiple of `n` with even quotient, then `gcd(f_m, f_n) = 1`.
+**Coprimality of negative Pell terms whose indices have an even ratio.** Let $d > 1$ be a
+natural number such that $x^2 - dy^2 = -1$ has an integral solution, let $(X, Y)$ be the solution
+of $x^2 - dy^2 = -1$ in natural numbers with the least positive $Y$, and for each $n$ let $f_n$
+and $g_n$ be the integers with $(X + Y\sqrt d)^n = f_n + g_n \sqrt d$. If $0 < n \le m$ are
+natural numbers such that $n$ divides $m$ and $m / n$ is even, then $\gcd(f_m, f_n) = 1$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
 
 ## Sources
 

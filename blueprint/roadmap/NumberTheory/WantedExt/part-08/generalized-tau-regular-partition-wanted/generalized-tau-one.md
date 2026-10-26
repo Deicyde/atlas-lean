@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.generalizedTau_one
 ---
 
-# Generalized Tau one
+# The generalized tau function at $1$
 
-`τ_k(1) = 1` for every integer `k`.
+**The generalized tau function at $1$.** For every integer $k$, $\tau_k(1) = 1$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Proof depends on
 
-- [Constant Coeff pentagonal Series int](constant-coeff-pentagonal-series-int.md)
-- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
+- [Euler's product has constant term $1$](constant-coeff-pentagonal-series-int.md)
+- [Euler's product is a unit in $\mathbb{Z}((X))$](is-unit-pentagonal-series-int.md)
 
 ## Sources
 

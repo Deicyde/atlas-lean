@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_dominantRoot_bounds
 ---
 
-# Lemma 1
+# Bounds for the dominant root of the $k$-Pell–Lucas polynomial (Lemma 1)
 
-**Lemma 1.** Let `k ≥ 2` and let `α` be the positive real root of
-`Φ_k(x) = x^k - 2x^{k-1} - x^{k-2} - ⋯ - 1`. Then (a) `0.276 < g_k(α) < 0.5` and
-`|g_k(β)| < 1` for every other complex root `β` of `Φ_k`, and (b) `φ²(1 - φ^{-k}) < α < φ²`,
-where `g_k(z) = (z - 1) / ((k + 1) z² - 3kz + k - 1)` and `φ` is the golden ratio.
+**Bounds for the dominant root of the $k$-Pell–Lucas polynomial (Lemma 1).** Let $k \ge 2$ be
+a natural number and let $\alpha > 0$ be a real number with
+$\alpha^k = 2\alpha^{k-1} + \sum_{i=0}^{k-2} \alpha^i$, that is, a positive real root of
+$\Phi_k(x) = x^k - 2x^{k-1} - \sum_{i=0}^{k-2} x^i$. Write
+$g_k(z) = (z - 1) / ((k + 1) z^2 - 3kz + k - 1)$ and let $\varphi$ be the golden ratio. Then
+(a) $0.276 < g_k(\alpha) < 0.5$, and $|g_k(\beta)| < 1$ for every complex root $\beta \ne \alpha$
+of $\Phi_k$; and (b) $\varphi^2 (1 - \varphi^{-k}) < \alpha < \varphi^2$.
 
 ## Depends on
 

@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tsum_lucas_cube_even_index
 ---
 
-# Tsum lucas cube even index
+# Cubic series over even-indexed Lucas numbers
 
-Corollary 4.6: `Σ_{n≥1} (4L_{6n} - 3L_{2n})/(L_{2n}² - 5)³ = 1` and
-`Σ_{n≥2} (8F_{6n} + 3F_{2n})/(L_{2n}² + 5)³ = 74/9261`.
+**Cubic series over even-indexed Lucas numbers.** Let $F_n$ and $L_n$ denote the Fibonacci and
+Lucas numbers, given by $F_0 = 0$, $F_1 = 1$, $L_0 = 2$, $L_1 = 1$ and the recurrence
+$z_{n+2} = z_{n+1} + z_n$ for both. Then
+
+$$\sum_{n=1}^{\infty} \frac{4L_{6n} - 3L_{2n}}{(L_{2n}^2 - 5)^3} = 1$$
+
+and
+
+$$\sum_{n=2}^{\infty} \frac{8F_{6n} + 3F_{2n}}{(L_{2n}^2 + 5)^3} = \frac{74}{9261}.$$
 
 ## Depends on
 

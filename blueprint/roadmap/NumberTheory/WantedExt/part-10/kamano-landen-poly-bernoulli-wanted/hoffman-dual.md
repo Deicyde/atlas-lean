@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hoffmanDual
 ---
 
-# Hoffman Dual
+# Hoffman dual index
 
-Hoffman's dual index `k^∨`, defined by `(1)^∨ = (1)`, `(k↑)^∨ = (k^∨)→` and
-`(k→)^∨ = (k^∨)↑`. Lists that are not indices give `[]`.
+**Hoffman dual index.** For an index $k = (k_1, \dots, k_r)$ of positive integers write
+$k\uparrow = (k_1, \dots, k_r + 1)$ and $k\rightarrow = (k_1, \dots, k_r, 1)$. The Hoffman dual
+index $k^\vee$ is defined recursively by $(1)^\vee = (1)$, $(k\uparrow)^\vee = (k^\vee)\rightarrow$
+and $(k\rightarrow)^\vee = (k^\vee)\uparrow$. On other finite lists of natural numbers, the empty
+list is sent to the empty list and a list with an entry $0$ is sent to an unspecified junk value.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hoffman Dual Rev](hoffman-dual-rev.md)
+- [Hoffman dual on reversed lists](hoffman-dual-rev.md)
 
 ## Sources
 

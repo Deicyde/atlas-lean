@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.laurentInvVar
 ---
 
-# Laurent Inv Var
+# The variable $x$ of $K((x^{-1}))$
 
-The variable `x` of the field `𝔽_q((x⁻¹))` of formal Laurent series in `x⁻¹`, realized in
-Mathlib's `LaurentSeries K` (series in `X = x⁻¹`) as `X⁻¹ = single (-1) 1`. A series
-`∑ c_n Xⁿ` is `∑ c_n x⁻ⁿ`, so its degree valuation is `|α| = |x|^{-α.order}`.
+**The variable $x$ of $K((x^{-1}))$.** Let $K$ be a field. Formal Laurent series in $x^{-1}$
+over $K$ are realized as Laurent series $\sum_n c_n X^n$ in $X = x^{-1}$, and the variable $x$
+is the series $X^{-1}$, with coefficient $1$ at $X^{-1}$ and $0$ elsewhere.
+
+A series $\alpha = \sum_n c_n x^{-n} \ne 0$ has absolute value $|\alpha| = |x|^{-v(\alpha)}$,
+where its order $v(\alpha)$ is the least $n$ with $c_n \ne 0$.
 
 ## Depends on
 

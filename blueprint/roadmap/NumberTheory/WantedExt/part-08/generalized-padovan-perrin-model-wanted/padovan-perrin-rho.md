@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinRho
 ---
 
-# Padovan Perrin Rho
+# Padovan–Perrin coefficients
 
-The combinatorial coefficient `ρ(n, s + p)` of equation (12) specialized to the
-`([k]; p; s)`-Padovan–Perrin model: `0` for `n < s + p`, and for `n ≥ s + p` the sum of
-`(a + b)! / (a! b!) · k₁^a k₂^b` over `a, b ≥ 0` with `s a + (s + p) b = n - (s + p)`. The paper's
-Proposition 4 prints the constraint as `= n - (s + p - 1)`, which contradicts its own normalization
-`ρ(s + p, s + p) = 1` for `s ≥ 2`; the constraint used here is the one of the general formula (12)
-(`t₀ + 2 t₁ + ⋯ + r t_{r-1} = n - r` with only `t_{s-1}, t_{s+p-1}` weighted). Meant for `s > 0`.
+**Padovan–Perrin coefficients.** Let $R$ be a commutative semiring, let $k_1, k_2 \in R$ and
+let $p, s, n$ be natural numbers. The coefficient $\rho(n, s + p)$ attached to $k_1, k_2, p, s$ is
+$0$ when $n < s + p$; when $n \ge s + p$ it is the sum of $\binom{a + b}{a} k_1^a k_2^b$ over all
+pairs of natural numbers $a, b \le n$ with $s a + (s + p) b = n - (s + p)$. For $s > 0$ the bounds
+$a, b \le n$ hold automatically.
+
+For $s > 0$ this is the coefficient $\rho(n, r)$, $r = s + p$, of the paper's general formula (12)
+for the recurrence $v_n = k_1 v_{n-s} + k_2 v_{n-s-p}$. The paper's Proposition 4 prints the
+constraint as $s a + (s + p) b = n - (s + p - 1)$, which contradicts its own normalization
+$\rho(s + p, s + p) = 1$ for $s \ge 2$; the constraint used here is the one of formula (12).
 
 ## Depends on
 

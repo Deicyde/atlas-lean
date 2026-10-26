@@ -7,18 +7,22 @@ lean: MetaMathlibExt.multiPolyBernoulliStar_duality
 
 # Duality of multi-poly-Bernoulli-star numbers
 
-**Duality of multi-poly-Bernoulli-star numbers** (Imatomi): with
-`Li⋆_k(1 - e^{-t})/(e^t - 1) = ∑ C_{n,⋆}^{(k)} tⁿ/n!` and
-`Li⋆_k(1 - e^{-t})/(1 - e^{-t}) = ∑ B_{n,⋆}^{(k)} tⁿ/n!`, every index `k` and
-`n ≥ 0` satisfy `C_{n,⋆}^{(k)} = (-1)ⁿ B_{n,⋆}^{(k^∨)}`. The two generating
-functions are the series `F`, `G` determined by the displayed products (the
-divisors are non-zero-divisors in `ℝ⟦t⟧`), and `1 - e^{-t}` is
-`1 - rescale (-1) (exp ℝ)`.
+**Duality of multi-poly-Bernoulli-star numbers.** This duality is due to Imatomi. Let $k$
+be an index (a composition of a natural number $m$), let $k^\vee$ be its Hoffman dual, and let
+$\mathrm{Li}^\star_k$ be the non-strict multiple polylogarithm. Let $F, G \in \mathbb{R}[[t]]$
+satisfy $(e^t - 1) F = \mathrm{Li}^\star_k(1 - e^{-t})$ and
+$(1 - e^{-t}) G = \mathrm{Li}^\star_{k^\vee}(1 - e^{-t})$, and write
+$F = \sum_{n \ge 0} C_{n,\star}^{(k)} t^n / n!$ and
+$G = \sum_{n \ge 0} B_{n,\star}^{(k^\vee)} t^n / n!$. Then
+$C_{n,\star}^{(k)} = (-1)^n B_{n,\star}^{(k^\vee)}$ for every $n \ge 0$.
+
+Since $e^t - 1$ and $1 - e^{-t}$ are non-zero-divisors in $\mathbb{R}[[t]]$, these equations
+determine $F$ and $G$.
 
 ## Depends on
 
-- [Hoffman Dual](hoffman-dual.md)
-- [Multiple Polylog Star](multiple-polylog-star.md)
+- [Hoffman dual index](hoffman-dual.md)
+- [Non-strict multiple polylogarithm](multiple-polylog-star.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_nine_regular_four_mul_add_one_modEq
 ---
 
-# Card nine regular four mul add one mod Eq
+# A congruence for 9-regular partitions at $4n + 1$
 
-`R_9(4n + 1) ≡ R_9(n) (mod 3)`.
+**A congruence for 9-regular partitions at $4n + 1$.** Let $R_9(m)$ denote the number of
+partitions of $m$ in which no part is divisible by $9$. For every positive integer $n$,
+$R_9(4n + 1) \equiv R_9(n) \pmod 3$.
 
 ## Depends on
 

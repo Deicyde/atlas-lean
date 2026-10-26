@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.squarefree_one_mod_eight_relativeDensity
 ---
 
-# Squarefree one mod eight relative Density
+# Relative density of square-free integers congruent to $1$ modulo $8$
 
-The square-free positive integers `t ≡ 1 (mod 8)` have relative density `1/6` among the
-square-free positive integers.
+**Relative density of square-free integers congruent to $1$ modulo $8$.** As $X \to \infty$
+through the natural numbers, the number of square-free integers $t$ with $1 \le t \le X$ and
+$t \equiv 1 \pmod 8$, divided by the number of square-free integers $t$ with $1 \le t \le X$,
+tends to $1/6$.
 
 ## Depends on
 

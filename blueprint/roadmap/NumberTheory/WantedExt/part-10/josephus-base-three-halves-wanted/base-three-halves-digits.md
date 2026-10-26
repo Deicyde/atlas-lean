@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.baseThreeHalvesDigits
 ---
 
-# Base Three Halves Digits
+# Base-3/2 digits
 
-The little-endian base-`3/2` digits: a positive `N` emits
-`d = 2 * N % 3` and continues with `(2 * N - d) / 3`, while zero emits no digits.
+**Base-3/2 digits.** The base-$3/2$ digit list of a natural number $N$, least significant
+digit first, is defined by recursion on $N$: the list of $0$ is empty, and for $N \ge 1$ it is
+the digit $d = 2N \bmod 3$ followed by the base-$3/2$ digit list of $(2N - d)/3$.
 
 ## Depends on
 

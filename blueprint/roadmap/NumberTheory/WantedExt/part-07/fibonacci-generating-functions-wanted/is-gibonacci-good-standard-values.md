@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isGibonacciGood_standard_values
 ---
 
-# Is Gibonacci Good standard values
+# Two standard families of good values
 
-The two standard families of good values: the Fibonacci ratios
-`F_n / F_{n+1}`, and the negated Gibonacci ratios
-`-G^{(a,b)}_{n+1} / G^{(a,b)}_n` whenever the denominator is nonzero.
-The paper indexes both families by all integers (`n ≠ -1` for the
-first); this statement covers `n ∈ ℕ`.
+**Two standard families of good values.** Let $a$ and $b$ be integers and let $(G_n)_{n \ge 0}$
+be the Gibonacci sequence with $G_0 = a$ and $G_1 = b$. For every natural number $n$, the ratio
+$F_n / F_{n+1}$ of consecutive Fibonacci numbers is good for $(a, b)$, and if $G_n \ne 0$, then
+$-G_{n+1} / G_n$ is good for $(a, b)$.
+
+The source indexes both families by all integers ($n \ne -1$ for the first).
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 - [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources

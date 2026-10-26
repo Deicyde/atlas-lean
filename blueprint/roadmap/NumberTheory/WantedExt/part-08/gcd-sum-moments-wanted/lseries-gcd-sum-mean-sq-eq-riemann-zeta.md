@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.LSeries_gcdSumMean_sq_eq_riemannZeta_pow_four_div
 ---
 
-# Theorem 5
+# Dirichlet series of the square of the mean gcd-sum function
 
-**Theorem 5**, the case `k = 2`: `F_2(s) = ζ(s)^4 / ζ(2s) · G̃_{2,2}(s)` for `ℜ s > 1`,
-where `G̃_{2,2}(s) = ∑ h(n) n^{-s}` converges absolutely in every half-plane `ℜ s > 1/n`, that
-is, for `ℜ s > 0`.
+**Dirichlet series of the square of the mean gcd-sum function.** Let $A$ be the mean gcd-sum
+function. There is a function $h \colon \mathbb{N} \to \mathbb{C}$ such that the Dirichlet series
+$\tilde G_{2,2}(s) = \sum_{n \ge 1} h(n) n^{-s}$ converges absolutely for every complex $s$ with
+$\operatorname{Re} s > 0$, and for every complex $s$ with $\operatorname{Re} s > 1$,
+
+$$\sum_{n \ge 1} A(n)^2 n^{-s} = \frac{\zeta(s)^4}{\zeta(2s)} \, \tilde G_{2,2}(s).$$
+
+This is the case $k = 2$ of the paper's Theorem 5, which gives the absolute convergence of
+$\tilde G_{2,2}(s)$ in every half-plane $\operatorname{Re} s > 1/N$ with $N \ge 1$, that is, for
+$\operatorname{Re} s > 0$.
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

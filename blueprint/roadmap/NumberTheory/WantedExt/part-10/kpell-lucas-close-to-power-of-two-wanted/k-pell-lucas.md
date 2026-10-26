@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas
 ---
 
-# K Pell Lucas
+# $k$-generalized Pell–Lucas numbers
 
-The `k`-generalized Pell–Lucas numbers `Q^{(k)}_n` for `n ≥ 0`: `Q_0 = Q_1 = 2` and
-`Q_{n+2} = 2 Q_{n+1} + Q_n + Q_{n-1} + ⋯ + Q_{n+2-k}`, where the terms of negative index (the
-`k - 2` initial zeros) are dropped.
+**$k$-generalized Pell–Lucas numbers.** For natural numbers $k$ and $n$, the $k$-generalized
+Pell–Lucas number $Q^{(k)}_n$ is the natural number defined by $Q^{(k)}_0 = Q^{(k)}_1 = 2$ and
+
+$$Q^{(k)}_{n+2} = 2 Q^{(k)}_{n+1} + \sum_{j} Q^{(k)}_{n-j},$$
+
+where $j$ runs over the integers with $0 \le j \le n$ and $j \le k - 2$. For $k \ge 2$ and
+$n \ge k - 2$ this reads $Q^{(k)}_{n+2} = 2 Q^{(k)}_{n+1} + Q^{(k)}_n + \cdots + Q^{(k)}_{n+2-k}$;
+for smaller $n$ the terms of negative index (the $k - 2$ initial zeros of the sequence) are
+dropped, and for $k \le 1$ the sum is empty.
 
 ## Depends on
 

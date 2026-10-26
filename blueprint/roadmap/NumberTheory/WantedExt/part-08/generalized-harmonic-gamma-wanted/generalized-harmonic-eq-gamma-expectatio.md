@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHarmonic_eq_gamma_expectation
 ---
 
-# Generalized Harmonic eq gamma expectation
+# Gamma representation of generalized harmonic numbers
 
-Gamma representation of generalized harmonic numbers: if `X_s ∼ Gamma(s, 1)` with `s > 0`,
-then `H_n^{(s)} = ∑_{k=0}^{n-1} E[e^{-k X_s}] = E[(1 - e^{-n X_s}) / (1 - e^{-X_s})]`.
+**Gamma representation of generalized harmonic numbers.** Let $s > 0$ be real, let
+$H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ denote the generalized harmonic numbers, and let $X_s$ be a
+random variable with the Gamma distribution $\mathrm{Gamma}(s, 1)$ of shape $s$ and rate $1$. Then
+for every natural number $n$,
 
-`Gamma(s, 1)` is Mathlib's `gammaMeasure s 1` (shape `s`, rate `1`); expectations are integrals
-against it.
+$$H_n^{(s)} = \sum_{k=0}^{n-1} \mathbb{E}[e^{-k X_s}] =
+\mathbb{E}\left[\frac{1 - e^{-n X_s}}{1 - e^{-X_s}}\right].$$
 
 ## Depends on
 
-- [Generalized Harmonic](generalized-harmonic.md)
+- [Generalized harmonic numbers](generalized-harmonic.md)
 
 ## Sources
 

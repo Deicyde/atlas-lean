@@ -6,13 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.digitConvolutionCoeff_succ
 ---
 
-# Digit Convolution Coeff succ
+# Recurrence for the digit-convolution coefficients
 
-The recurrence of `a(k)` for `k ≥ 3`, written for `k + 1` with `k ≥ 2`.
+**Recurrence for the digit-convolution coefficients.** For every natural number $q$ and
+every integer $k \ge 2$, the base-$q$ digit-convolution coefficients $a(k)$ satisfy
+
+$$a(k + 1) = a(k) \cdot \frac{q - 1}{2 \log q}
+\sum_{j=0}^{2k-1} \binom{2k-1}{j} \frac{(-1)^j}{j + 2},$$
+
+where division by $0$ is read as $0$ (this matters only for $q \le 1$).
 
 ## Depends on
 
-- [Digit Convolution Coeff](digit-convolution-coeff.md)
+- [Digit-convolution coefficients](digit-convolution-coeff.md)
 
 ## Sources
 

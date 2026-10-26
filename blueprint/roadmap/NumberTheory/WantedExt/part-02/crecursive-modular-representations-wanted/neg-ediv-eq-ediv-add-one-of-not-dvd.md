@@ -5,14 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.neg_ediv_eq_ediv_add_one_of_not_dvd
 ---
 
-# Neg ediv eq ediv add one of not dvd
+# Floor quotient of a negated non-multiple
 
-For integers `A ≥ 1` and `B ≥ 2` such that `B` does not divide `A`, negating the floor quotient
-of `-A` by `B` gives the floor quotient of `A` by `B` plus one. The paper's lower bounds are
-`hA` and `hB`, and its nondivisibility clause is `hndvd`. Lean's integer `/` is `Int.ediv`,
-which is floor division because `hB` makes the divisor positive; thus no rational floor is
-introduced. Integer negation and addition directly encode the remaining operations, with no
-other deviation from the paper.
+**Floor quotient of a negated non-multiple.** Let $A$ and $B$ be integers with $A \ge 1$ and
+$B \ge 2$ such that $B$ does not divide $A$. Then
+$-\lfloor -A/B \rfloor = \lfloor A/B \rfloor + 1$.
 
 ## Depends on
 

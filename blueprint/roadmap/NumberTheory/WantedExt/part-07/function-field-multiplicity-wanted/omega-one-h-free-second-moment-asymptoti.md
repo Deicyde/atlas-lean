@@ -5,21 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.omegaOne_hFree_secondMoment_asymptotic
 ---
 
-# Omega One h Free second Moment asymptotic
+# Second moment of $\omega_1$ over $h$-free polynomials
 
-Theorem 1, second moment: for `h ≥ 2` and every `ε > 0`, the mean of `ω_1^2` over
-`S_h ∩ M_n` is `log^2 n + C_2 log n + C_3 + O_ε(n^{ε-1})` with `C_2 = 2(B_1 - T_h) + 1` and
-`C_3 = B_1^2 + B_1 - ζ(2) - U_h + T_h^2 - (2B_1 + 1) T_h`, `ζ(2) = π^2/6`. The printed error
-`O_ε(q^n/n^{1-ε})` is the error of the unnormalized sum in the paper's proof; divided by
-`|S_h ∩ M_n| = q^n/ζ_q(h)` it is `O_ε(n^{ε-1})`, the order the paper's remark (an extra factor
-`n^ε` over the first moment's `O(1/n)`) and its variance formula state.
+**Second moment of $\omega_1$ over $h$-free polynomials.** Let $F$ be a finite field with $q$
+elements, let $h \ge 2$ and let $\varepsilon > 0$. Let $\omega_1(f)$ be the number of monic
+irreducible $P$ dividing $f$ exactly once, write $S_h \cap M_n$ for the set of $h$-free monic
+polynomials of degree $n$ over $F$ and $|P| = q^{\deg P}$, and let
+$B_1 = \gamma + \sum_P (\log(1 - 1/|P|) + 1/|P|)$ be the function field Mertens constant, with
+$\gamma$ the Euler–Mascheroni constant, $T_h = \sum_P (|P|^{h-1} - 1)/(|P|(|P|^h - 1))$ and
+$U_h = \sum_P (|P|^{h-2}(|P| - 1)/(|P|^h - 1))^2$, all sums over monic irreducible $P$. Then the
+mean of $\omega_1^2$ over $S_h \cap M_n$ is $\log^2 n + C_2 \log n + C_3 + O(n^{\varepsilon - 1})$
+as $n \to \infty$, where $C_2 = 2(B_1 - T_h) + 1$ and
+$C_3 = B_1^2 + B_1 - \pi^2/6 - U_h + T_h^2 - (2B_1 + 1) T_h$.
+
+The printed error $O_\varepsilon(q^n/n^{1-\varepsilon})$ is the error of the unnormalized sum in
+the paper's proof; divided by $|S_h \cap M_n| = q^n/\zeta_q(h)$ for $n \ge h$, where
+$\zeta_q(h) = (1 - q^{1-h})^{-1}$, it is $O_\varepsilon(n^{\varepsilon-1})$, the order that the
+paper's remark (an extra factor $n^\varepsilon$ over the first moment's $O(1/n)$) and its
+variance formula state.
 
 ## Depends on
 
-- [Function Field Mertens Constant](function-field-mertens-constant.md)
-- [H Free Moment](h-free-moment.md)
-- [H Free Omega One Sq Sum](h-free-omega-one-sq-sum.md)
-- [H Free Omega One Sum](h-free-omega-one-sum.md)
+- [Function field Mertens constant](function-field-mertens-constant.md)
+- [Moments of $\omega_k$ over $h$-free polynomials](h-free-moment.md)
+- [The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials](h-free-omega-one-sq-sum.md)
+- [The prime sum $T_h$](h-free-omega-one-sum.md)
 
 ## Sources
 

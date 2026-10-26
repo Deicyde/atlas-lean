@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_two
 ---
 
-# Corollary 1
+# $2$ is $(k,1)$-deficient-perfect
 
-**Corollary 1**: `2` is `[k,1]`-deficient-perfect for
-every `k` (with `d = 1`).
+**$2$ is $[k,1]$-deficient-perfect.** For every natural number $k$, the number $2$ is
+$[k,1]$-deficient-perfect.
+
+The divisor is $d = 1$, since $1 + 2^k + 1^k = 2^k + 1 \cdot 2$.
 
 ## Depends on
 
-- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+- [$(k,\ell)$-deficient-perfect numbers](is-kldeficient-perfect.md)
 
 ## Sources
 

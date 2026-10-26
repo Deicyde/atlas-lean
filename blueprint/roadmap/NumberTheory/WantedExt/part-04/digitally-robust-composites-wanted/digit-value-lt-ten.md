@@ -6,11 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.digitValue_lt_ten
 ---
 
-# Digit Value lt ten
+# Base-ten digits are less than ten
 
-For every natural `N` and units-indexed position `i`, the extracted base-ten digit
-`N / 10 ^ i % 10` is below `10`. This records the digit interpretation used in the replacement
-clause and introduces no deviation.
+**Base-ten digits are less than ten.** For all natural numbers $N$ and $i$, the base-ten digit
+of $N$ in position $i$ (counted from $0$ at the units digit), namely
+$\lfloor N / 10^{i} \rfloor \bmod 10$, is less than $10$.
 
 ## Depends on
 

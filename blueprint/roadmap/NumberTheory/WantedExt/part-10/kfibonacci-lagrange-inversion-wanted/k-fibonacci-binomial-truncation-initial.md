@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kFibonacciBinomialTruncation_initial_values
 ---
 
-# Proposition 10
+# Initial values of the truncated binomial sums
 
-**Proposition 10.** For `k ≥ 2`, `G_n^{(k)} = 2^{n - 2}` for `2 ≤ n ≤ k + 1`, and
-`G_{k + 2}^{(k)} = 2^k - 1`.
+**Initial values of the truncated binomial sums.** Let $k \ge 2$ be a natural number and let
+$G_n^{(k)}$ be the truncated binomial sum. Then $G_n^{(k)} = 2^{n-2}$ for every natural number $n$
+with $2 \le n \le k + 1$, and $G_{k+2}^{(k)} = 2^k - 1$.
 
 ## Depends on
 
-- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
+- [Truncated binomial sum $G_n^{(k)}$](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

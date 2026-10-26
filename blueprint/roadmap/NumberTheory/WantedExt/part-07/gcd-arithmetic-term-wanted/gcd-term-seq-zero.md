@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gcdTermSeq_zero
 ---
 
-# Gcd Term Seq zero
+# Initial value of the gcd-term sequence
 
-`s_{a,b}(0) = 1` for `a, b ≥ 1`.
+**Initial value of the gcd-term sequence.** For natural numbers $a, b \ge 1$, the gcd-term
+sequence satisfies $s_{a,b}(0) = 1$.
 
 ## Depends on
 
-- [Gcd Term Seq](gcd-term-seq.md)
+- [The gcd-term sequence](gcd-term-seq.md)
 
 ## Sources
 

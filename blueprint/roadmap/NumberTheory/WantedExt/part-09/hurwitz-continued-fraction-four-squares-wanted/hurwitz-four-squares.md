@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.hurwitz_four_squares
 ---
 
-# Main theorem
+# Sums of four squares via Hurwitz continued fractions
 
-**Main theorem.** Let `w` be odd and not a square, and let `0 ≤ x, y < w/2` with
-`x^2 + y^2 ≡ -1 (mod w)`; expand `z = (x + y i)/w` by the Hurwitz algorithm. There is a unique
-legal `n` (with `n + 1` legal) such that `|Q_n| ≤ √w < |Q_{n+1}|`, and if `|Q_n| ≠ √w` then
-`w = |(x + y i) Q_n - w P_n|^2 + |Q_n|^2`, a representation of `w` as a sum of four squares.
+**Sums of four squares via Hurwitz continued fractions.** Let $w$, $x$, $y$ be natural numbers
+such that $w$ is odd and not a perfect square, $2x < w$, $2y < w$ and $w$ divides
+$x^2 + y^2 + 1$. Expand $z = (x + yi)/w$ by the Hurwitz algorithm, with convergent numerators
+$P_n$ and convergent denominators $Q_n$. Then there is exactly one natural number $n$ such that
+$n + 1$ is a legal index for $z$, $|Q_n| \le \sqrt{w} < |Q_{n+1}|$, and, if $|Q_n| \ne \sqrt{w}$,
+$w = |(x + yi) Q_n - w P_n|^2 + |Q_n|^2$.
+
+When it holds, the last identity is a representation of $w$ as a sum of four squares.
 
 ## Depends on
 
-- [Hurwitz Legal](hurwitz-legal.md)
-- [Hurwitz P](hurwitz-p.md)
-- [Hurwitz Q](hurwitz-q.md)
+- [Legal indices of the Hurwitz expansion](hurwitz-legal.md)
+- [Convergent numerators of the Hurwitz expansion](hurwitz-p.md)
+- [Convergent denominators of the Hurwitz expansion](hurwitz-q.md)
 
 ## Sources
 

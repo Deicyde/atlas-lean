@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_tail_eq_pseudoGreedyExpansion
 ---
 
-# Exists tail eq pseudo Greedy Expansion
+# Tails that are pseudo-greedy expansions
 
-If `a` is a sequence of positive integers with `a_n² / a_(n+1) → 1` and
-`∑ 1 / a_n < ∞`, then some tail `(a_(N+n))_n` is the pseudo-greedy expansion of its own
-reciprocal sum, and the gap sequence of that expansion tends to `0`.
+**Tails that are pseudo-greedy expansions.** Let $(a_n)_{n \ge 0}$ be a sequence of positive
+integers with $a_n^2 / a_{n+1} \to 1$ such that $\sum_n 1 / a_n$ converges. Then there is a
+natural number $N$ such that, with $r = \sum_{k \ge 0} 1 / a_{N+k}$, the tail
+$(a_{N+n})_{n \ge 0}$ is the pseudo-greedy expansion of $r$, and the gap sequence of this
+expansion tends to $0$.
 
 ## Depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
-- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
+- [Gap sequence of the pseudo-greedy expansion](pseudo-greedy-gap.md)
 
 ## Sources
 

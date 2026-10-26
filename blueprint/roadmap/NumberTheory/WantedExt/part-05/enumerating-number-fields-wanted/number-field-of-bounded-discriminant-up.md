@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.NumberFieldOfBoundedDiscriminantUpToIsomorphism
 ---
 
-# Number Field Of Bounded Discriminant Up To Isomorphism
+# Isomorphism classes of number fields with bounded discriminant
 
-The type of all number fields of degree `n` and discriminant `≤ H`, up to isomorphism.
+**Isomorphism classes of number fields with bounded discriminant.** For natural numbers $n$
+and $H$, the quotient of the type of number fields of degree $n$ over $\mathbb{Q}$ whose
+discriminant has absolute value at most $H$ by the relation of being isomorphic as rings.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Number Field Of Bounded Discriminant](number-field-of-bounded-discriminant.md)
-- [Iso](iso.md)
+- [Number fields of degree $n$ with discriminant bounded by $H$](number-field-of-bounded-discriminant.md)
+- [Isomorphism of number fields with bounded discriminant](iso.md)
 
 ## Sources
 

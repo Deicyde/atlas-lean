@@ -6,14 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.dedekindSixSquaresA0_A3_small
 ---
 
-# Dedekind Six Squares A0 A3 small
+# Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$
 
-The values `a_{0,ℓ}, a_{3,ℓ}` for `ℓ = 3, 4, 5`: `(4, 1)`, `(9, 4)`, `(21, 14)` (Table 1).
+**Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$.** For a natural number $\ell$
+let $a_{0,\ell} = 1 + \sum_{i=1}^{\lfloor \ell/2 \rfloor} \binom{\ell}{2i} C_i$, with $C_i$ the
+$i$-th Catalan number, and let $a_{3,\ell}$ be the sum over the integers
+$1 \le i \le \lfloor (\ell - 1)/2 \rfloor$ of $\binom{\ell}{2i+1}$ times the integer part of
+$4\,(2i+1)!/((i-1)!\,(i+3)!)$. Then $(a_{0,3}, a_{3,3}) = (4, 1)$, $(a_{0,4}, a_{3,4}) = (9, 4)$
+and $(a_{0,5}, a_{3,5}) = (21, 14)$.
 
 ## Depends on
 
-- [Dedekind Six Squares A0](dedekind-six-squares-a0.md)
-- [Dedekind Six Squares A3](dedekind-six-squares-a3.md)
+- [The exponent $a_{0,\ell}$](dedekind-six-squares-a0.md)
+- [The exponent $a_{3,\ell}$](dedekind-six-squares-a3.md)
 
 ## Sources
 

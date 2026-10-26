@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# Hough's minimum modulus theorem
 
-Resolved false: Disproved by Hough: the least modulus of a distinct covering system is bounded.
+**Hough's minimum modulus theorem.** There is a natural number $N$ such that no finite set of
+residue classes covering $\mathbb{Z}$ has pairwise distinct moduli that are all at least $N$.
+Hence the conjecture of Open Garden problem OPG-493 is false.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Covering systems with arbitrarily large distinct moduli (OPG-493)](conjecture.md)
 
 ## Sources
 

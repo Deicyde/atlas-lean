@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelResidueWalk_isZigzagBelow_antidiagonal_of_three_mod_four
 ---
 
-# Gobel Residue Walk is Zigzag Below antidiagonal of three mod four
+# Even residue walks lie zigzag-below the antidiagonal when $p \equiv 3 \pmod 4$
 
-When `p ≡ 3 (mod 4)`, every even residue walk is zigzag-below the reflected diagonal
-`n ↦ p-n`. The paper's point sets are coordinate functions, and the fixed-section
-hypotheses on the odd prime and `0 ≤ l < p` are explicit. Source: Yuh Kobayashi and
-Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer
-Sequences 29 (2026), Article 26.3.8, Proposition 10.
+**Even residue walks lie zigzag-below the antidiagonal when $p \equiv 3 \pmod 4$.** Let $p$
+be a prime with $p \equiv 3 \pmod 4$, let $l < p$ be an even natural number, and write
+$\tilde g_l$ for the residue walk of $p$ starting at $l$. Then $\tilde g_l$ is zigzag-below the
+function $n \mapsto p - n$ up to $p$: there is an $m \le p$ such that $\tilde g_l(n) < p - n$
+for $1 \le n \le m$ and $\tilde g_l(n) = p - n$ for $m < n \le p$.
 
 ## Depends on
 
-- [Is Zigzag Below](is-zigzag-below.md)
-- [Gobel Residue Walk](gobel-residue-walk.md)
+- [Zigzag order on integer sequences](is-zigzag-below.md)
+- [The residue walk $\tilde g_l$](gobel-residue-walk.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 10.

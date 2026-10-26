@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.ratResidue_intCast
 ---
 
-# Rat Residue int Cast
+# Residue of an integer
 
-On integers `ratResidue` is the usual cast.
+**Residue of an integer.** For every natural number $m$ and every integer $z$, the residue
+modulo $m$ of $z$, viewed as a rational number, is the image of $z$ in $\mathbb{Z}/m\mathbb{Z}$.
 
 ## Depends on
 
-- [Rat Residue](rat-residue.md)
+- [Residue of a rational number modulo an integer](rat-residue.md)
 
 ## Sources
 

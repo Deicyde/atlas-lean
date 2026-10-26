@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.linearFractionalPoleSeries
 ---
 
-# Linear Fractional Pole Series
+# Linear fractional pole series
 
-The power series of `c u / (a - c u)` for `(a, c) ≠ (0, 0)`: for `a ≠ 0` it is
-`∑_{n ≥ 1} (c/a)^n u^n`, and for `a = 0` it is the constant `-1`. (For
-`a = c = 0` it is `0`, a junk value.) It is `u` times the summand `c/(a - c u)` of
-the paper's `G_g(u)`.
+**Linear fractional pole series.** For real numbers $a$ and $c$, this is the power series
+$F_{a,c}(u)$ of $\frac{cu}{a - cu}$: it is $\sum_{n \ge 1} (c/a)^n u^n$ if $a \neq 0$, the
+constant $-1$ if $a = 0$ and $c \neq 0$, and $0$ (a junk value) if $a = c = 0$. It is $u$
+times the summand $\frac{c}{a - cu}$ of $G_g(u) = \frac{c}{a - cu} - \frac{d}{b - du}$ for
+the matrix $g$ with rows $(a, b)$ and $(c, d)$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.hofstadterF_zero
 ---
 
-# Hofstadter F zero
+# The generalized Hofstadter functions vanish at zero
 
-`F_k(0) = 0`.
+**The generalized Hofstadter functions vanish at zero.** For every natural number $k$, the
+generalized Hofstadter function $F_k$ satisfies $F_k(0) = 0$.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_prime_iff
 ---
 
-# Is Linearly Recurrent Seq constant Term mod prime iff
+# Linear recurrence of constant terms modulo $p$
 
-Main theorem mod `p`: if `ct[P^n Q] mod p` is not identically `0`, it is linearly
-recurrent if and only if `p ∤ ct[P^n]` for all `n`; otherwise its zeros have density `1`.
+**Linear recurrence of constant terms modulo $p$.** Let $p$ be a prime and let $P, Q$ be
+Laurent polynomials with integer coefficients in $r$ variables; write $\operatorname{ct}[f]$ for
+the constant term of $f$. Suppose $p \nmid \operatorname{ct}[P^n Q]$ for some $n \in \mathbb{N}$.
+Then the sequence $u_n = \operatorname{ct}[P^n Q] \bmod p$ is linearly recurrent if and only if
+$p \nmid \operatorname{ct}[P^n]$ for all $n \in \mathbb{N}$, and if $u$ is not linearly recurrent,
+then the set of $n$ with $p \mid \operatorname{ct}[P^n Q]$ has natural density $1$.
 
 ## Depends on
 
-- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Linearly recurrent sequence](is-linearly-recurrent-seq.md)
 - [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources

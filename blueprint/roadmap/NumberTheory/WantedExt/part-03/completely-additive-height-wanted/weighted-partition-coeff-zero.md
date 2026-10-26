@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.weightedPartitionCoeff_zero
 ---
 
-# Weighted Partition Coeff zero
+# Zeroth weighted partition coefficient
 
-`a₀ = 1`.
+**Zeroth weighted partition coefficient.** For every sequence of real weights $(b_k)$, the
+weighted partition coefficient $a_0$ attached to $(b_k)$ equals $1$.
 
 ## Depends on
 
-- [Weighted Partition Coeff](weighted-partition-coeff.md)
+- [Weighted partition coefficients](weighted-partition-coeff.md)
 
 ## Sources
 

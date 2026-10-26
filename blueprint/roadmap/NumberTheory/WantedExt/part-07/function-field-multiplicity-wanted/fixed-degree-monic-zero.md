@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fixedDegreeMonic_zero
 ---
 
-# Fixed Degree Monic zero
+# The only monic polynomial of degree zero
 
-The degree-zero slice `M_0` consists only of the constant monic polynomial `1`.
+**The only monic polynomial of degree zero.** For every finite field $F$, the set $M_0$ of monic
+polynomials of degree $0$ over $F$ is $\{1\}$.
 
 ## Depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
 
 ## Sources
 

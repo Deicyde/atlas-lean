@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHarmonic_zero
 ---
 
-# Generalized Harmonic zero
+# The zeroth generalized harmonic number
 
-`H_0^{(s)} = 0`.
+**The zeroth generalized harmonic number.** For every real $s$, the generalized harmonic
+number $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ vanishes at $n = 0$: $H_0^{(s)} = 0$.
 
 ## Depends on
 
-- [Generalized Harmonic](generalized-harmonic.md)
+- [Generalized harmonic numbers](generalized-harmonic.md)
 
 ## Sources
 

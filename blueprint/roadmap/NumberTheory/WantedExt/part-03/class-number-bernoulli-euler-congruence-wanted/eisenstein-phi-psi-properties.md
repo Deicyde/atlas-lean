@@ -5,21 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.eisensteinPhiPsi_properties
 ---
 
-# Eisenstein Phi Psi properties
+# Identities for the Eisenstein elliptic functions $\varphi$ and $\psi$
 
-Properties of the Eisenstein elliptic functions `φ(u) = 6℘(ϖ₁u)/(9 + ℘'(ϖ₁u))` and
-`ψ(u) = (-9 + ℘'(ϖ₁u))/(9 + ℘'(ϖ₁u))`, where `℘` is the Weierstrass function of the lattice
-`ϖ₁ ℤ[ρ]`, `ρ = e^(2πi/3)` and `ϖ₁ = ∫₀¹ (1 - t³)^(-2/3) dt`: (d) `φ(ρu) = ρφ(u)`,
-`ψ(ρu) = ψ(u)`, `φ(ū) = conj φ(u)`, `ψ(ū) = conj ψ(u)`; (e) `φ' = -3ϖ₁ψ²`, `ψ' = 3ϖ₁φ²`;
-(f) `φ³ + ψ³ = 1`, `φ(0) = 0`, `ψ(0) = 1`; (g) `φ(-u) = -φ(u)/ψ(u)`, `ψ(-u) = ψ(u)⁻¹` and
-`φ(u)⁻¹ + φ(-u)⁻¹ = 3℘(ϖ₁u)⁻¹`.
-
-`φ` is the paper's introductory definition through `℘` and `ψ` its formula from part (c); the
-paper's Definition 1 through the Weierstrass `ζ`-function, and parts (a), (b), (h), which
-concern `ζ` and the function `Z` built from it, are omitted (`ζ` is not in Mathlib). The
-lattice is any `PeriodPair` with periods `ϖ₁` and `ϖ₁ρ`. The identities are stated off the
-poles (`ϖ₁u` off the lattice, the denominators nonzero), and `φ(0) = 0`, `ψ(0) = 1` as limits
-at `0`, where `℘` has its pole.
+**Identities for the Eisenstein elliptic functions $\varphi$ and $\psi$.** Let
+$\rho = e^{2\pi i/3}$, let $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, and let $\wp$ be the
+Weierstrass function of the lattice spanned by $\varpi_1$ and $\varpi_1\rho$. Put
+$\varphi(u) = 6\wp(\varpi_1 u)/(9 + \wp'(\varpi_1 u))$ and
+$\psi(u) = (\wp'(\varpi_1 u) - 9)/(\wp'(\varpi_1 u) + 9)$. For every $u \in \mathbb{C}$ with
+$\varpi_1 u$ off the lattice and $\wp'(\varpi_1 u) \ne -9$: $\varphi(\rho u) = \rho\varphi(u)$,
+$\psi(\rho u) = \psi(u)$, $\varphi(\bar u) = \overline{\varphi(u)}$,
+$\psi(\bar u) = \overline{\psi(u)}$, the functions $\varphi$ and $\psi$ are complex differentiable
+at $u$ with $\varphi'(u) = -3\varpi_1 \psi(u)^2$ and $\psi'(u) = 3\varpi_1 \varphi(u)^2$, and
+$\varphi(u)^3 + \psi(u)^3 = 1$. As $u \to 0$ with $u \ne 0$, $\varphi(u) \to 0$ and
+$\psi(u) \to 1$. For every $u$ with $\varpi_1 u$ off the lattice and $\wp'(\varpi_1 u)^2 \ne 81$:
+$\varphi(-u) = -\varphi(u)/\psi(u)$ and $\psi(-u) = \psi(u)^{-1}$, and if moreover
+$\wp(\varpi_1 u) \ne 0$, then $\varphi(u)^{-1} + \varphi(-u)^{-1} = 3/\wp(\varpi_1 u)$.
 
 ## Depends on
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.reverse_symmetric_of_eq_gaussKuzmin_at_length
 ---
 
-# Reverse symmetric of eq gauss Kuzmin at length
+# Reversal symmetry from agreement with the Gauss–Kuzmin measure
 
-If a probability measure `μ` agrees with `μ_GK` on `I(a)` for all strings of positive integers of
-length exactly `N`, then `μ(I(a)) = μ(I(a⃖))` for all strings of length `n ≤ N`.
+**Reversal symmetry from agreement with the Gauss–Kuzmin measure.** Let $\mu$ be a probability
+measure on $\mathbb{R}$ and let $N \ge 1$. For a string $a$ of positive integers write $I(a)$ for
+its fundamental interval, $P_{GK}(a)$ for its Gauss–Kuzmin measure and $a^{\mathrm{rev}}$ for its
+reverse. If $\mu(I(a)) = P_{GK}(a)$ for every string $a$ of exactly $N$ positive integers, then
+$\mu(I(a)) = \mu(I(a^{\mathrm{rev}}))$ for every string $a$ of at most $N$ positive integers.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Fundamental interval of a string](cf-cylinder.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.𝒦
 ---
 
-# 𝒦
+# The set $\mathcal{K}$ of Catlin's conjecture
 
-The set `𝒦` as defined in Theorem 2:
-The `α ∈ [0,1]` such that inequality 1.7 `|α - a/q| ≤ ψ(q)/q` has infinitely many solutions `(a, q)`
-with `0 ≤ a ≤ q`.
+**The set $\mathcal{K}$ of Catlin's conjecture.** For a function $\psi$ from the positive
+integers to the nonnegative reals, $\mathcal{K}(\psi)$ is the set of real numbers
+$\alpha \in [0, 1]$ for which inequality (1.7), $|\alpha - a/q| \le \psi(q)/q$, has infinitely
+many solutions $(a, q)$ with $a$ a natural number and $q$ a positive integer such that $a \le q$.
 
-Note: we allow non-coprime `(a, q)` and we explicitly rule out `q = 0`.
+The fractions $a/q$ need not be reduced.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inequality 1 7](inequality-1-7.md)
+- [The approximation inequality (1.7)](inequality-1-7.md)
 
 ## Sources
 

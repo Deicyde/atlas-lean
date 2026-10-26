@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.not_generalizedFermatSolvable_of_two_gcd_gt_one
 ---
 
-# Not generalized Fermat Solvable of two gcd gt one
+# Generalized Fermat equations with two non-coprime pairs of exponents
 
-Theorem 1: let `m, n, r ≥ 2` with `gcd(m, n, r) = 1` and at least two of
-`g₁ = gcd(m, n)`, `g₂ = gcd(m, r)`, `g₃ = gcd(n, r)` greater than one. Then `x^m + y^n = z^r`
-has no solution in nonzero integers, unless `(m, n, r)` is `(3s, 6t, 2w)`, `(6t, 3s, 2w)`,
-`(2w, 3s, 6t)` or `(3s, 2w, 6t)` for pairwise coprime `s, t, w` with `s` odd and `3 ∤ w`
-(positivity of `s, t, w` is automatic from `m, n, r ≥ 2`).
+**Generalized Fermat equations with two non-coprime pairs of exponents.** Let
+$m, n, r \ge 2$ be integers with $\gcd(m, n, r) = 1$ such that at least two of $\gcd(m, n)$,
+$\gcd(m, r)$ and $\gcd(n, r)$ are greater than $1$. Suppose there are no natural numbers
+$s, t, w$ that are pairwise coprime, with $s$ odd and $3 \nmid w$, such that $(m, n, r)$ is one
+of $(3s, 6t, 2w)$, $(6t, 3s, 2w)$, $(2w, 3s, 6t)$ and $(3s, 2w, 6t)$. Then the equation
+$x^m + y^n = z^r$ has no solution in nonzero integers $x, y, z$.
+
+Positivity of $s, t, w$ is automatic from $m, n, r \ge 2$.
 
 ## Depends on
 
-- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
+- [Solvable generalized Fermat equation](generalized-fermat-solvable.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.distinctMultiplesIntervalLength_mul_le
 ---
 
-# Distinct Multiples Interval Length mul le
+# An inequality between diagonal and shifted interval lengths
 
-Lemma 2: for all positive integers `k` and `n`,
-`kn + f(kn, kn) ≤ k²n + f(n, k²n)`.
+**An inequality between diagonal and shifted interval lengths.** For natural numbers $n$ and
+$m$, let $f(n, m)$ be the least natural number $L$ such that the interval $(m, m + L]$ contains
+distinct multiples of $1, \dots, n$. Then for all positive integers $k$ and $n$,
+$kn + f(kn, kn) \le k^2 n + f(n, k^2 n)$.
 
 ## Depends on
 

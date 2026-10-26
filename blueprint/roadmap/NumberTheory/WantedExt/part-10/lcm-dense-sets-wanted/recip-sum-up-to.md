@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.recipSumUpTo
 ---
 
-# Recip Sum Up To
+# Harmonic sum of a set up to a bound
 
-The finite harmonic sum `∑_{n ∈ A, n ≤ x} 1 / n`; the range begins at one,
-matching the paper's convention that natural numbers are positive.
+**Harmonic sum of a set up to a bound.** For a set $A$ of natural numbers and a real number
+$x$, this is the finite sum $\sum_{n \in A,\, 1 \le n \le x} 1/n$ of the reciprocals of the
+positive integers in $A$ that are at most $x$; it is $0$ when $x < 1$.
+
+The sum starts at $n = 1$, matching the paper's convention that natural numbers are positive.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
 
 ## Sources
 

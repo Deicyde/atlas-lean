@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_E1955_quarter
 ---
 
-# Lower Bound E1955 quarter
+# The proposition $1/4 \le C_{1b}$
 
-Source-reported lower bound `1/4 ≤ C₁ᵦ`.
+**The proposition $1/4 \le C_{1b}$.** This is the proposition that the continuous Erdős
+minimum-overlap constant $C_{1b}$ satisfies $1/4 \le C_{1b}$.
 
 ## Depends on
 

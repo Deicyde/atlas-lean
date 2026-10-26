@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_secondPentagonal
 ---
 
-# Nth Non Value second Pentagonal
+# Formula for the non-second-pentagonal numbers
 
-The `n`-th non-second-pentagonal number (second pentagonal numbers `(3j² + j)/2`, `j ≥ 1`):
-with `s = ⌊√(2n/3)⌋`, it is `n + s + 1` if `2n ≥ s(3s + 5) + 4` and `n + s` otherwise.
+**Formula for the non-second-pentagonal numbers.** For every integer $n \ge 1$, put
+$s = \lfloor \sqrt{2n/3} \rfloor$. Then the $n$-th positive integer that is not a second
+pentagonal number $(3j^2 + j)/2$ with $j \ge 1$ equals $n + s + 1$ if $s (3s + 5) + 4 \le 2n$, and
+$n + s$ otherwise.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

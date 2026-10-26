@@ -5,20 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.uniform_harmonic_bound_of_defect
 ---
 
-# Uniform harmonic bound of defect
+# Harmonic sums of sets with small gcd defect
 
-Theorem 2(ii), the uniform converse bound. For each positive `C₀`, the error
-function `e(x) → 0` is chosen before `x` and before the set `A`, so the `o(1)` is
-uniform in `A`. Eventually, every set `A ⊆ ℕ` (sums over `1 ≤ n ≤ x`) whose defect at that `x`
-is at most `C₀²` obeys (23). An empty finite range is harmless because its
-harmonic sum, the left side of the conclusion, is zero.
+**Harmonic sums of sets with small gcd defect.** For a set $A$ of natural numbers and a real
+number $x$, let $S_A(x)$ be the sum of $1/n$ over $n \in A$ with $1 \le n \le x$, and let the
+defect of $A$ at $x$ be the sum of $\gcd(n, m)/(nm)$ over $n, m \in A$ with $1 \le n, m \le x$,
+divided by $S_A(x)^2$, minus $1$ (the defect is $-1$ when $S_A(x) = 0$). Let
+$\operatorname{Log} x = \max(\log x, 1)$ be the truncated logarithm, let
+$\operatorname{Log}_2 x = \operatorname{Log}(\operatorname{Log} x)$ and let
+$\operatorname{Log}_3 x = \operatorname{Log}(\operatorname{Log}_2 x)$. For every real
+$C_0 > 0$ there are a function $e : \mathbb{R} \to \mathbb{R}$ with $e(x) \to 0$ as
+$x \to \infty$ and a real $x_0$ such that for every real $x \ge x_0$ and every set $A$ of natural
+numbers whose defect at $x$ is at most $C_0^2$,
+
+$$S_A(x) \le \exp\bigl((C_0 + e(x)) (\operatorname{Log}_2 x)^{1/2} \operatorname{Log}_3 x\bigr).$$
+
+The function $e$ and the threshold $x_0$ are chosen before $x$ and $A$, so the $o(1)$ error is
+uniform in $A$.
 
 ## Depends on
 
-- [Lcm Defect](lcm-defect.md)
-- [Recip Sum Up To](recip-sum-up-to.md)
-- [Trunc Log2](trunc-log2.md)
-- [Trunc Log3](trunc-log3.md)
+- [Gcd defect](lcm-defect.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
+- [Second iterated truncated logarithm](trunc-log2.md)
+- [Third iterated truncated logarithm](trunc-log3.md)
 
 ## Sources
 

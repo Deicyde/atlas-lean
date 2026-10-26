@@ -13,7 +13,7 @@ Let `d ≥ 2` and `n ≥ d` with `(d, n) ≠ (3, 3)`. Then we have `lim_{A → �
 
 ## Depends on
 
-- [Ρ](untitled-3.md)
+- [Proportion of soluble hypersurfaces of bounded height](untitled-3.md)
 - [ΡLoc](loc-2.md)
 
 ## Sources

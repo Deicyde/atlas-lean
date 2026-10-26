@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_two_mul_prime_succ_modEq_zero
 ---
 
-# Generalized Tau two mul prime succ mod Eq zero
+# $\tau_{2p}(n + 1)$ vanishes modulo $p$ when $p \nmid n$
 
-`τ_{2p}(n + 1) ≡ 0 (mod p)` when `p ∤ n`, `p` an odd prime. The record prints the hypothesis
-as `p ∤ n + 1`; that is false, and the corollary follows from Theorem 3.26 (the record's
-Theorem 16) in its corrected form, which forces `p ∣ n` for a nonzero residue.
+**$\tau_{2p}(n + 1)$ vanishes modulo $p$ when $p \nmid n$.** Let $p$ be an odd prime and $n$ a
+natural number not divisible by $p$. Then $\tau_{2p}(n + 1) \equiv 0 \pmod{p}$.
+
+The record prints the hypothesis as $p \nmid n + 1$; that is false, and the corollary follows from
+Theorem 3.26 (the record's Theorem 16) in its corrected form, which forces $p \mid n$ for a nonzero
+residue.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

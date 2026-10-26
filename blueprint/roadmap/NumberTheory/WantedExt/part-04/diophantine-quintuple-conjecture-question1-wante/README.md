@@ -4,6 +4,6 @@ navigation: module
 
 # Diophantine Quintuple Conjecture Question1
 
-- [Is Diophantine Tuple](is-diophantine-tuple.md)
-- [Statement](statement.md)
-- [Statement holds](statement-holds.md)
+- [Diophantine tuples](is-diophantine-tuple.md)
+- [The statement that no Diophantine quintuple exists](statement.md)
+- [There is no Diophantine quintuple](statement-holds.md)

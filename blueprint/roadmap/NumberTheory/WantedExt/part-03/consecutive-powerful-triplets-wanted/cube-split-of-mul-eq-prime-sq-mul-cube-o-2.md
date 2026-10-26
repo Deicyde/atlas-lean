@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.cube_split_of_mul_eq_prime_sq_mul_cube_of_gcd_prime
 ---
 
-# Cube split of mul eq prime sq mul cube of gcd prime
+# Splitting $RS = p^2 C^3$ when $\gcd(R, S)$ is prime
 
-Prime-gcd splitting: if `R * S = p ^ 2 * C ^ 3` for a prime `p` and
-`g = gcd(R, S)` is prime, then for some integers `C₁`, `C₂` either
-`(R, S) = (g C₁³, g C₂³)`, or `{R, S} = {g C₁³, g² p² C₂³}`, or
-`{R, S} = {g p² C₁³, g² C₂³}` (unordered pairs written out in both orders).
+**Splitting $RS = p^2 C^3$ when $\gcd(R, S)$ is prime.** Let $p$ be a prime and let $R$, $S$,
+$C$ be integers with $RS = p^2 C^3$ such that $g = \gcd(R, S)$ is prime. Then there are
+integers $C_1$, $C_2$ such that one of the following holds: $R = g C_1^3$ and $S = g C_2^3$;
+or $R = g C_1^3$ and $S = g^2 p^2 C_2^3$; or $S = g C_1^3$ and $R = g^2 p^2 C_2^3$; or
+$R = g p^2 C_1^3$ and $S = g^2 C_2^3$; or $S = g p^2 C_1^3$ and $R = g^2 C_2^3$.
 
 ## Depends on
 

@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.mem_lineProblem_of_prime_sieve
 ---
 
-# Mem line Problem of prime sieve
+# Cohen's prime sieve for the line problem
 
-Cohen's prime sieve for the line problem, quoted in the source. Membership `q ∈ 𝓛_n` (the
-arXiv version's definition) says: for finite fields `K ⊆ L` with `|K| = q` and `[L : K] = n`,
-and all nonzero `γ₁, γ₂ ∈ L` with `K(γ₁/γ₂) = L`, some `a ∈ K` makes `aγ₂ + γ₁` primitive. For
-distinct prime divisors `p_1, …, p_s` of `q^n - 1` (the finset `S`) with
-`δ = 1 - ∑ 1/p_i > 0`, `q > (n - 1)^2 2^{2(ω_n - s)} ((s - 1)/δ + 2)^2` implies `q ∈ 𝓛_n`. The
-source's hypothesis that `q` is a prime power is implied by the field `K` and is not restated
-(likewise in the other line-problem and primitive-sum statements below).
+**Cohen's prime sieve for the line problem.** Let $q$ and $n$ be natural numbers, let $\omega$
+be the number of distinct prime factors of $q^n - 1$, and let $S$ be a set of $s$ prime factors of
+$q^n - 1$ with $\delta = 1 - \sum_{\rho \in S} 1/\rho > 0$. Suppose that
+$q > (n - 1)^2 \, 2^{2(\omega - s)} \left(\frac{s - 1}{\delta} + 2\right)^2$. Then for all finite
+fields $K$ and $L$ with $L$ an extension of $K$, $|K| = q$ and $[L : K] = n$, and all nonzero
+$\gamma_1, \gamma_2 \in L$ with $K(\gamma_1/\gamma_2) = L$, there is $a \in K$ such that
+$a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 ## Depends on
 

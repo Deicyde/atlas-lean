@@ -5,12 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tsum_fibPoly_cube_even_index
 ---
 
-# Tsum fib Poly cube even index
+# Cubic-denominator series for even-index Fibonacci polynomials
 
-Corollary 4.3: for real `x > 0`,
-`Σ_{n≥1} ((x³ + 3x)f_{6n} + 3x f_{2n})/(f_{2n}² + 1)³ = x² + 4` and
-`Σ_{n≥2} (x(x⁴ + 4x² + 3)ℓ_{6n} - 3x ℓ_{2n})/(f_{2n}² - x²)³
-  = (x² + 4)((x² + 2)³ + 1)/(x³(x² + 2)³)`.
+**Cubic-denominator series for even-index Fibonacci polynomials.** Let $f_i$ and $\ell_i$ be the
+Fibonacci and Lucas polynomials, defined by $f_0 = 0$, $f_1 = 1$, $\ell_0 = 2$, $\ell_1 = x$ and
+$g_{i+2} = x g_{i+1} + g_i$ for $g = f, \ell$. For every real $x > 0$,
+
+$$
+\sum_{n \ge 1} \frac{(x^3 + 3x) f_{6n}(x) + 3x f_{2n}(x)}{(f_{2n}(x)^2 + 1)^3} = x^2 + 4
+$$
+
+and
+
+$$
+\sum_{n \ge 2} \frac{x(x^4 + 4x^2 + 3) \ell_{6n}(x) - 3x \ell_{2n}(x)}{(f_{2n}(x)^2 - x^2)^3} =
+\frac{(x^2 + 4)\bigl((x^2 + 2)^3 + 1\bigr)}{x^3 (x^2 + 2)^3}.
+$$
 
 ## Depends on
 

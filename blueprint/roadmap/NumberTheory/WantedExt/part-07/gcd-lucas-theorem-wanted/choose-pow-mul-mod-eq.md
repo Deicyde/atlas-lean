@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.choose_pow_mul_modEq
 ---
 
-# Choose pow mul mod Eq
+# Binomial coefficients $\binom{p^r a}{p^r b}$ modulo $p$
 
-For a prime `p`, `r ≥ 1` and `p ∤ a`, `p ∤ b`, `C(p^r a, p^r b) ≡ C(a, b) (mod p)`.
+**Binomial coefficients $\binom{p^r a}{p^r b}$ modulo $p$.** Let $p$ be a prime, let $r \ge 1$,
+and let $a, b$ be natural numbers not divisible by $p$. Then
+$\binom{p^r a}{p^r b} \equiv \binom{a}{b} \pmod{p}$.
 
 ## Depends on
 

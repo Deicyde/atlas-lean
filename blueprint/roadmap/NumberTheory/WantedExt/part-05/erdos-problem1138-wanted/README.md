@@ -4,9 +4,9 @@ navigation: module
 
 # Erdos Problem1138
 
-- [Sup prime Gap](sup-prime-gap.md)
-- [Snd gt half fst](snd-gt-half-fst.md)
-- [Prime Count Ioc mul const](prime-count-ioc-mul-const.md)
-- [Vardi Asymptotic](vardi-asymptotic.md)
-- [Disproved Vardi](disproved-vardi.md)
-- [Vardi Asymptotic refuted](vardi-asymptotic-refuted.md)
+- [Largest prime gap below $x$](sup-prime-gap.md)
+- [The regime $x \to \infty$ with $x/2 < y < x$](snd-gt-half-fst.md)
+- [Primes in a window of $C$ maximal prime gaps](prime-count-ioc-mul-const.md)
+- [Vardi's prime-gap asymptotic](vardi-asymptotic.md)
+- [Negation of Vardi's prime-gap asymptotic](disproved-vardi.md)
+- [Vardi's prime-gap asymptotic is false](vardi-asymptotic-refuted.md)

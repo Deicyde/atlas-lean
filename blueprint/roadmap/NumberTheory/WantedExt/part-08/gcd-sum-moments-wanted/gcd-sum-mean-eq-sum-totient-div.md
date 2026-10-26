@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gcdSumMean_eq_sum_totient_div
 ---
 
-# Gcd Sum Mean eq sum totient div
+# Divisor-sum formula for the mean gcd-sum function
 
-`A(n) = ∑_{d ∣ n} φ(d)/d` for `n ≥ 1`, the divisor-sum form the paper records next to the
-definition.
+**Divisor-sum formula for the mean gcd-sum function.** For every natural number $n \ge 1$,
+the mean gcd-sum function $A$ satisfies $A(n) = \sum_{d \mid n} \varphi(d)/d$, where $\varphi$ is
+Euler's totient function and the sum runs over the positive divisors $d$ of $n$.
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Proof depends on
 

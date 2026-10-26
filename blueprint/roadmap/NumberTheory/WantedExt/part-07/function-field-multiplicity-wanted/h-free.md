@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hFree
 ---
 
-# H Free
+# $h$-free polynomials
 
-`hFree F h` is `S_h`: a member is monic, and no monic irreducible `P` has its `h`th
-power dividing the member.  The condition is intentionally meaningful for every
-natural `h`; the paper's asymptotic theorems separately assume `2 ≤ h`.
+**$h$-free polynomials.** Let $F$ be a field and $h$ a natural number. The set $S_h$ of
+$h$-free polynomials over $F$ consists of the monic polynomials $f$ over $F$ such that no monic
+irreducible polynomial $P$ over $F$ satisfies $P^h \mid f$.
+
+The condition makes sense for every natural number $h$; the paper's asymptotic theorems
+separately assume $h \ge 2$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Monic Irreducible](monic-irreducible.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

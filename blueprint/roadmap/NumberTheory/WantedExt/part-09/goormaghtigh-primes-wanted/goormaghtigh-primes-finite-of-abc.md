@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.goormaghtigh_primes_finite_of_abc
 ---
 
-# Goormaghtigh primes finite of abc
+# Under abc, there are only finitely many Goormaghtigh primes
 
-Assuming the abc conjecture, there are only finitely many Goormaghtigh primes, i.e.
-finitely many primes that are repunits of length at least three in two distinct bases.
+**Under abc, there are only finitely many Goormaghtigh primes.** Assume the abc conjecture in
+the following form: for every real $\varepsilon > 0$, there are only finitely many triples
+$(a, b, c)$ of positive integers with $a + b = c$, $\gcd(a, b) = 1$ and
+$\operatorname{rad}(abc)^{1 + \varepsilon} \le c$, where $\operatorname{rad}(k)$ is the product of
+the distinct primes dividing $k$. Then there are only finitely many primes $p$ for which there
+exist natural numbers $x, y, m, n$ with $2 \le x < y$ and $n \ge 3$ such that
 
-The abc conjecture is the hypothesis `habc`, in the positive-triple form described for
-`goormaghtigh_numbers_length_ge_five_finite_of_abc`.
+$$p = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i.$$
 
 ## Depends on
 

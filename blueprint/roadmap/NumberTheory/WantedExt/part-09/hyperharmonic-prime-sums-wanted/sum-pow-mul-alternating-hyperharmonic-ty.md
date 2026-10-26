@@ -5,21 +5,41 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_alternatingHyperharmonic_typeII_isEquivalent
 ---
 
-# Sum pow mul alternating Hyperharmonic type II is Equivalent
+# Prime- and squarefree-weighted power sums of type II alternating hyperharmonic numbers
 
-Theorem 14: for `α, m, q, k, r ≥ 1`, the asymptotics of `∑ p_ℓ^α (H_ℓ^{(q,r,2)})^m` over `ℓ ≤
-x` and over `p_ℓ ≤ x`, and of `∑ p_{ℓ,k}^α (H_ℓ^{(q,r,2)})^m` over `ℓ ≤ x` and over `p_{ℓ,k} ≤
-x`. Sums run over `ℓ ≤ x` (`ℓ ∈ [1, x]`) or over `p_ℓ ≤ x` for natural `x → ∞` (the sums
-depend on `⌊x⌋` only); `p_ℓ = Nat.nth Nat.Prime (ℓ - 1)`, `p_{ℓ,k}` is the `ℓ`th squarefree
-number with exactly `k` prime factors, `H_n^{(p,r,i)}` is `signedIteratedPartialSum` over
-`generalizedHarmonic p` (type I) or `alternatingGeneralizedHarmonic p` (types II, III), `ζ(q)
-= ∑ 1/n^q`, and `ζ̄ = alternatingZeta`.
+**Prime- and squarefree-weighted power sums of type II alternating hyperharmonic numbers.**
+Let $\alpha, m, q, k, r \ge 1$ be integers. Let $p_\ell$ be the $\ell$-th prime ($p_1 = 2$) and
+$p_{\ell,k}$ the $\ell$-th squarefree number with exactly $k$ prime factors. Let
+$H_n^{(q,r,2)}$ be the signed iterated partial sum of order $r$, with constant signs, of the
+alternating generalized harmonic numbers $\bar H_n^{(q)} = \sum_{j=1}^{n} (-1)^{j-1} j^{-q}$, and
+let $\bar\zeta$ be the alternating zeta function ($\bar\zeta(1) = \log 2$). Put
+$E = m(r-1) + 1$ and $A = \alpha + E$. Then, as the natural number $x$ tends to infinity,
+
+$$\sum_{\ell=1}^{x} p_\ell^\alpha \bigl(H_\ell^{(q,r,2)}\bigr)^m \sim
+\frac{\bar\zeta(q)^m x^A (\log x)^\alpha}{((r-1)!)^m A},$$
+
+
+
+$$\sum_{\substack{1 \le \ell \le x \\ p_\ell \le x}} p_\ell^\alpha \bigl(H_\ell^{(q,r,2)}\bigr)^m
+\sim \frac{\bar\zeta(q)^m x^A}{((r-1)!)^m A (\log x)^E},$$
+
+
+
+$$\sum_{\ell=1}^{x} p_{\ell,k}^\alpha \bigl(H_\ell^{(q,r,2)}\bigr)^m \sim
+\frac{((k-1)!)^\alpha \bar\zeta(q)^m x^A (\log x)^\alpha}
+{((r-1)!)^m A (\log \log x)^{\alpha(k-1)}},$$
+
+
+
+$$\sum_{\substack{1 \le \ell \le x \\ p_{\ell,k} \le x}} p_{\ell,k}^\alpha
+\bigl(H_\ell^{(q,r,2)}\bigr)^m \sim
+\frac{\bar\zeta(q)^m x^A (\log \log x)^{E(k-1)}}{((r-1)!)^m ((k-1)!)^E A (\log x)^E}.$$
 
 ## Depends on
 
-- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
-- [Alternating Zeta](alternating-zeta.md)
-- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
+- [Alternating generalized harmonic numbers](alternating-generalized-harmonic.md)
+- [Alternating zeta values](alternating-zeta.md)
+- [Signed iterated partial sums](signed-iterated-partial-sum.md)
 
 ## Sources
 

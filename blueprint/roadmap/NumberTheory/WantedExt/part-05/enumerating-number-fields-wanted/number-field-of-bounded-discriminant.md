@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.NumberFieldOfBoundedDiscriminant
 ---
 
-# Number Field Of Bounded Discriminant
+# Number fields of degree $n$ with discriminant bounded by $H$
 
-The type of all number fields of degree `n` and discriminant `≤ H`.
+**Number fields of degree $n$ with discriminant bounded by $H$.** For natural numbers $n$ and
+$H$, the type of number fields $K$ of degree $n$ over $\mathbb{Q}$ whose discriminant $d_K$
+satisfies $|d_K| \le H$.
 
 ## Depends on
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_not_close_two_pow_of_large_order
 ---
 
-# Lemma 10
+# No $k$-Pell–Lucas number with $k > 350$ and index $n \ge k + 1$ is close to a power of two (Lemma 10)
 
-**Lemma 10.** There is no solution of `|Q^{(k)}_n - 2^m| < 2^{m/2}` with `k > 350` and
-`n ≥ k + 1`.
+**No $k$-Pell–Lucas number with $k > 350$ and index $n \ge k + 1$ is close to a power of
+two (Lemma 10).** For all natural numbers $k$, $n$ and $m$ with $k > 350$ and $n \ge k + 1$, the
+$n$th $k$-Pell–Lucas number $Q^{(k)}_n$ satisfies $|Q^{(k)}_n - 2^m| \ge 2^{m/2}$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

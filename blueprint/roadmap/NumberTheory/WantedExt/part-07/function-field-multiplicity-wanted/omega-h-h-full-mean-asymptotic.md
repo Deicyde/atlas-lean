@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.omegaH_hFull_mean_asymptotic
 ---
 
-# Omega H h Full mean asymptotic
+# Mean of $\omega_h$ over $h$-full polynomials
 
-Theorem 5, Equation (8): for `h ≥ 2`, a primitive `h`-th root of unity `ξ` and `ε > 0`, the
-mean of `ω_h` over `N_h ∩ M_n` is `log(n/h) + C_1(N_h, h) + O_ε(n^{ε-1})` with
-`C_1(N_h, h) = B_1 + |N_h ∩ M_n|^{-1} (q^{n/h}/h) ∑_j ξ^{jn} Π_j κ_j`.
+**Mean of $\omega_h$ over $h$-full polynomials.** Let $F$ be a finite field with $q$ elements,
+let $h \ge 2$, let $\xi \in \mathbb{C}$ be a primitive $h$-th root of unity, and let
+$\varepsilon > 0$. Write $N_h \cap M_n$ for the set of monic polynomials $f$ of degree $n$ over $F$
+that are $h$-full (if a monic irreducible $P$ divides $f$, then so does $P^h$), and $\omega_h(f)$
+for the number of monic irreducible $P$ that divide $f$ exactly $h$ times. For monic irreducible
+$P$ and $j < h$ put $|P| = q^{\deg P}$, $y_{P,j} = (q^{1/h}\xi^j)^{-\deg P}$ with $q^{1/h} > 0$,
+and $K(P, h, j) = (1 - y_{P,j})/(|P|(1 - y_{P,j}) + 1)$. Let
+$\kappa_j = \sum_P (K(P, h, j) - |P|^{-1})$ and
+$\Pi_j = \prod_P (1 - |P|^{-1})(1 + |P|^{-1}(1 - y_{P,j})^{-1})$, with sum and product over monic
+irreducible $P$, and for $X = (X_j)_j$ put
+$W_n(X) = |N_h \cap M_n|^{-1} (q^{n/h}/h) \sum_{j=0}^{h-1} \xi^{jn} \Pi_j X_j$. Let $B_1$ be the
+function field Mertens constant and $L_n = \log(n/h)$. Then, as $n \to \infty$, the mean
+of $\omega_h$ over $N_h \cap M_n$ is $L_n + B_1 + W_n(\kappa) + O(n^{\varepsilon - 1})$.
 
 ## Depends on
 
-- [Function Field Mertens Constant](function-field-mertens-constant.md)
-- [H Full KSum](h-full-ksum.md)
-- [H Full Moment](h-full-moment.md)
-- [H Full Weighted Mean](h-full-weighted-mean.md)
+- [Function field Mertens constant](function-field-mertens-constant.md)
+- [The constant $\kappa_j$ for $h$-full polynomials](h-full-ksum.md)
+- [The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$](h-full-moment.md)
+- [The $h$-full weighted mean](h-full-weighted-mean.md)
 
 ## Sources
 

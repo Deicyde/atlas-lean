@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_at_least_two
 ---
 
-# Josephus Three Fixed Point digits of gap at least two
+# Base-3/2 digits of the next Josephus fixed point, gap at least two
 
-Theorem 1(iii): with `D`, `E`, and `m` as in Theorem 1(i), `2 ≤ m` implies
-that `E` starts with `2`, then `m - 1` ones and a zero, followed by `D`; this is
-the little-endian form of the paper's appended `0`, ones, and `2`.
+**Base-3/2 digits of the next Josephus fixed point, gap at least two.** Let $J_3$ be the
+Josephus function with elimination step $3$, let $n_\ell$ be the $\ell$-th positive fixed point
+of $J_3$ in increasing order (counting from $\ell = 0$), and let $m_\ell$ be the number of
+integers $n$ with $n_\ell < n < n_{\ell+1}$ and $J_3(n) + 1 = n$ (the pure high extremal points
+between them). For every $\ell$, if $m_\ell \ge 2$, then the base-$3/2$ digit list of
+$n_{\ell+1}$, least significant digit first, is the digit $2$, then $m_\ell - 1$ digits equal to
+$1$, then the digit $0$, followed by the digit list of $n_\ell$.
+
+Written most significant digit first, this appends to the digits of $n_\ell$ a $0$, then
+$m_\ell - 1$ ones, then a $2$. This is part (iii) of the cited Theorem 1.
 
 ## Depends on
 
-- [Base Three Halves Digits](base-three-halves-digits.md)
-- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
-- [Josephus Three Gap](josephus-three-gap.md)
+- [Base-3/2 digits](base-three-halves-digits.md)
+- [Enumeration of the positive fixed points of $J_3$](josephus-three-fixed-point.md)
+- [Gaps between consecutive positive fixed points of $J_3$](josephus-three-gap.md)
 
 ## Sources
 

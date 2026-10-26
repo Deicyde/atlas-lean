@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lucasLeonardoP_eq_leonardoPK
 ---
 
-# Proposition 14
+# Lucas-Leonardo $p$-numbers from Leonardo $p$-numbers
 
-**Proposition 14**: `R_{p,n} = (p + 1) 𝓛_{p,n} - p 𝓛_{p,n-1}`, with
-`𝓛_{p,-1} = -p` (the backward value of the recurrence, `leonardoPKZ`) at `n = 0`.
+**Lucas-Leonardo $p$-numbers from Leonardo $p$-numbers.** Let $p \ge 1$, let $R_{p,n}$ denote
+the Lucas-Leonardo $p$-numbers, and let $\mathcal{L}_{p,n}$ denote the Leonardo $p$-numbers
+$\mathcal{L}_{p,p}(n)$ (the generalized Leonardo $p$-numbers with $k = p$), extended to $n = -1$
+by $\mathcal{L}_{p,-1} = -p$. Then $R_{p,n} = (p + 1) \mathcal{L}_{p,n} - p \mathcal{L}_{p,n-1}$
+for every natural number $n$.
 
 ## Depends on
 

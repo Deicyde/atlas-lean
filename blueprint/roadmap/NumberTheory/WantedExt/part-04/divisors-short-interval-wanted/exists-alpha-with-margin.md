@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_alpha_with_margin
 ---
 
-# Exists alpha with margin
+# Exponents with a margin in Letendre's inequality
 
-For `0 < θ² - (θ(1 - θ))²δ ≤ η < θ < 1` and `0 ≤ δ ≤ 1` there is `α(θ, η, δ) > 0` with
-`ξ(θ, η) - δ ≤ α(θ, η, δ) ≤ ξ(θ, η)` such that
-`((θ - t)/α)² - (η - t)/α ≥ (θ(1 - θ))²δ` for all `0 < α ≤ α(θ, η, δ)` and `0 ≤ t ≤ 1 - α`.
+**Exponents with a margin in Letendre's inequality.** Let $\xi(\theta, \eta)$ denote Letendre's
+saving exponent, and let $\theta$, $\eta$ and $\delta$ be real numbers with $0 \le \delta \le 1$,
+$\eta < \theta < 1$ and $0 < \theta^2 - (\theta(1 - \theta))^2 \delta \le \eta$. Then there is a
+real number $A > 0$ with $\xi(\theta, \eta) - \delta \le A \le \xi(\theta, \eta)$ such that
+$((\theta - t)/\alpha)^2 - (\eta - t)/\alpha \ge (\theta(1 - \theta))^2 \delta$ for all real
+numbers $\alpha$ and $t$ with $0 < \alpha \le A$ and $0 \le t \le 1 - \alpha$.
 
 ## Depends on
 
-- [Letendre Xi](letendre-xi.md)
+- [Letendre's saving exponent](letendre-xi.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem690Wanted.kthPrimeFactorDensity
 ---
 
-# Kth Prime Factor Density
+# The $k$-th prime-factor density
 
-Natural (asymptotic) density of a set of naturals: the canonical
-`Set.HasDensity` from `MathlibExt.Data.Set.Density` (default ambient set);
-for naturals it is the limit of `|S ∩ [0, N)| / N`.
-`dₖ(p)`: the density of integers whose `k`-th smallest prime factor
-is `p`, chosen by Hilbert choice (the unique limit when it exists).
+**The $k$-th prime-factor density.** For natural numbers $k$ and $p$, let $S_{k,p}$ be the set
+of natural numbers whose $k$-th smallest prime factor is $p$. The $k$-th prime-factor density
+$d_k(p)$ is the natural density of $S_{k,p}$, that is, the limit of
+$\lvert S_{k,p} \cap \{0, 1, \dots, N - 1\} \rvert / N$ as $N \to \infty$, when this limit
+exists; otherwise $d_k(p)$ is an unspecified real number.
 
 ## Depends on
 
@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Kth Smallest Prime Factor](is-kth-smallest-prime-factor.md)
+- [The $k$-th smallest prime factor](is-kth-smallest-prime-factor.md)
 - [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources

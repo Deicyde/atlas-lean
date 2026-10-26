@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.mul_mk_gcdTermSeq
 ---
 
-# Mul mk gcd Term Seq
+# Generating function of the gcd-term sequence
 
-The generating function identity `(z^a - 1)(z^b - 1) · ∑ s_{a,b}(n) zⁿ = 1` for
-`a, b ≥ 1`.
+**Generating function of the gcd-term sequence.** For natural numbers $a, b \ge 1$, in the
+ring $\mathbb{Q}[[z]]$ of formal power series, the gcd-term sequence $s_{a,b}$ satisfies
+
+$$
+(z^a - 1)(z^b - 1) \sum_{n \ge 0} s_{a,b}(n) z^n = 1.
+$$
 
 ## Depends on
 
-- [Gcd Term Seq](gcd-term-seq.md)
+- [The gcd-term sequence](gcd-term-seq.md)
 
 ## Sources
 

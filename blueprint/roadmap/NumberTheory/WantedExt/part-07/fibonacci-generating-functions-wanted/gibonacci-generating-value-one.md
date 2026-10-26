@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gibonacciGeneratingValue_one
 ---
 
-# Gibonacci Generating Value one
+# Value of the Gibonacci generating function at one
 
-Characteristic value at `x = 1`: `G^{(a,b)}(1) = -b`.
+**Value of the Gibonacci generating function at one.** For all integers $a$ and $b$, the
+Gibonacci generating function $G^{(a,b)}(x) = \frac{(b - a)x + a}{1 - x - x^2}$ takes the value
+$G^{(a,b)}(1) = -b$ at $x = 1$.
 
 ## Depends on
 
-- [Gibonacci Generating Value](gibonacci-generating-value.md)
+- [Gibonacci generating function](gibonacci-generating-value.md)
 
 ## Sources
 

@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.goldenFactorialExponent_two
 ---
 
-# Golden Factorial Exponent two
+# Golden factorial exponent of $2$
 
-`α 2 = 2`, since `φ < 2 ≤ φ ^ 2 = φ + 1`.
+**Golden factorial exponent of $2$.** Let $\varphi$ be the golden ratio and, for a natural
+number $n$, let $\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$. Then
+$\alpha(2) = 2$.
+
+This holds because $\varphi < 2 \le \varphi^2 = \varphi + 1$.
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
 
 ## Proof depends on
 
-- [Golden Factorial Exponent le](golden-factorial-exponent-le.md)
-- [Golden Factorial Exponent mem](golden-factorial-exponent-mem.md)
+- [Minimality of the golden factorial exponent](golden-factorial-exponent-le.md)
+- [Defining property of the golden factorial exponent](golden-factorial-exponent-mem.md)
 
 ## Sources
 

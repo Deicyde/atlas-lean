@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.genMarkovTree_zero_false
 ---
 
-# Gen Markov Tree zero false
+# Left child of the root of the classical Markov tree
 
-Characteristic value: for `k = 0` the left child of the root of `MT(0)` is `(1, 5, 2)`.
+**Left child of the root of the classical Markov tree.** For $k = 0$, the vertex of the
+Markov tree $MT(0)$ reached from the root by one left step is $(1, 5, 2)$.
 
 ## Depends on
 
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

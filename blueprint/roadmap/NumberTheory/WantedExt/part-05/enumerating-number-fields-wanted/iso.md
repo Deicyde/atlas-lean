@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.NumberFieldOfBoundedDiscriminant.iso
 ---
 
-# Iso
+# Isomorphism of number fields with bounded discriminant
 
-The relation of two number fields being isomorphic.
+**Isomorphism of number fields with bounded discriminant.** For natural numbers $n$ and $H$,
+two number fields $K$ and $L$ of degree $n$ over $\mathbb{Q}$, each with discriminant of absolute
+value at most $H$, are related when there exists a ring isomorphism from $K$ to $L$.
 
 ## Depends on
 
-- [Number Field Of Bounded Discriminant](number-field-of-bounded-discriminant.md)
+- [Number fields of degree $n$ with discriminant bounded by $H$](number-field-of-bounded-discriminant.md)
 
 ## Proof depends on
 
-- [Number Field Of Degree](number-field-of-degree.md)
+- [Number fields of degree $n$](number-field-of-degree.md)
 
 ## Sources
 

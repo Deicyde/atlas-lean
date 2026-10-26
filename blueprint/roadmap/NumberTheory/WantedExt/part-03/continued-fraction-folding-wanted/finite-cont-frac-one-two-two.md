@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.finiteContFrac_one_two_two
 ---
 
-# Finite Cont Frac one two two
+# The continued fraction $(1; 2, 2)$
 
-`[1; 2, 2] = 7/5`.
+**The continued fraction $[1; 2, 2]$.** The finite continued fraction $[1; 2, 2]$ has value
+$7/5$.
 
 ## Depends on
 
-- [Finite Cont Frac](finite-cont-frac.md)
+- [Value of a finite continued fraction](finite-cont-frac.md)
 
 ## Sources
 

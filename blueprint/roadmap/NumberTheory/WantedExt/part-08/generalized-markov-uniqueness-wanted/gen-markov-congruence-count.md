@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovCongruenceCount
 ---
 
-# Gen Markov Congruence Count
+# Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$
 
-The number of solutions `x ∈ {0, …, b - 1}` of `x² + k x + 1 ≡ 0 (mod b)`.
+**Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$.** For natural numbers $k$ and
+$b$, this is the number of integers $x$ with $0 \le x < b$ such that $b$ divides
+$x^2 + kx + 1$. For $b = 0$ it is $0$.
 
 ## Depends on
 

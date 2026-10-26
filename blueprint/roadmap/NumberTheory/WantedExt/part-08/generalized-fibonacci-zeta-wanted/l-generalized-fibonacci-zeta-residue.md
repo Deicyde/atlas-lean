@@ -5,13 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZetaResidue
 ---
 
-# L Generalized Fibonacci Zeta Residue
+# Residue expression of the ℓ-generalized Fibonacci zeta function
 
-The residue expression in Theorem 1, with `k = ∑ κ(β)`.  `Ring.choose` encodes
-the generalized binomial coefficient, the factorial quotient encodes the multinomial
-coefficient, natural powers encode the product over non-dominant roots, and complex
-powers encode the two generally nonintegral exponents.  As in the paper, all logarithms
-are principal `Complex.log` values.
+**Residue expression of the ℓ-generalized Fibonacci zeta function.** Let $\ell$ be a natural
+number, let $\alpha$ be a real number, let $R$ be the set of complex roots of
+$X^\ell - \sum_{i\lt \ell} X^i$ other than $\alpha$, let
+$c(\beta) = (\beta - 1)/(2 + (\ell + 1)(\beta - 2))$ be the Dresden–Du coefficient, and put
+$d = c(\alpha)/\alpha$. For a function $\kappa$ from $\mathbb{C}$ to the natural numbers and an
+integer $n$, let $k = \sum_{\beta \in R} \kappa(\beta)$ and let $s_0$ be the possible pole
+indexed by $(\kappa, n)$. The residue expression indexed by $(\kappa, n)$ is
+
+$$
+\rho_{\kappa,n} = d^{-s_0} \binom{-s_0}{k} d^{-k} \cdot
+\frac{k!}{\prod_{\beta \in R} \kappa(\beta)!} \cdot
+\prod_{\beta \in R} \left(\frac{c(\beta)}{\beta}\right)^{\kappa(\beta)} \cdot
+\frac{1}{\log \alpha},
+$$
+
+where $\binom{-s_0}{k} = (-s_0)(-s_0 - 1)\cdots(-s_0 - k + 1)/k!$ is the generalized binomial
+coefficient, $d^{-s_0}$ and $d^{-k}$ are principal complex powers, and $\log$ is the principal
+branch of the complex logarithm.
 
 ## Depends on
 
@@ -19,9 +32,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [L Generalized Fibonacci Coefficient](l-generalized-fibonacci-coefficient.md)
-- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
-- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+- [Dresden–Du coefficient](l-generalized-fibonacci-coefficient.md)
+- [Other roots of the ℓ-generalized Fibonacci characteristic polynomial](l-generalized-fibonacci-other-roots.md)
+- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
 
 ## Sources
 

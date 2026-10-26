@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.watson_alternating_odd_zero
 ---
 
-# Watson alternating odd zero
+# Watson's alternating cosecant sum vanishes for odd $n$
 
-The odd case of Corollary 2 states that the alternating cosecant sum vanishes.
-This declaration also supplies the identical odd-vanishing clause in Theorem 6.
+**Watson's alternating cosecant sum vanishes for odd $n$.** For every odd natural number $n$,
+
+$$
+\sum_{l=1}^{n-1} \frac{(-1)^{l+1}}{\sin(\pi l / n)} = 0.
+$$
 
 ## Depends on
 
-- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
+- [Watson's alternating cosecant sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

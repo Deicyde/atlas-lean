@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.exists_dense_set_controlled_defect
 ---
 
-# Exists dense set controlled defect
+# Dense sets with controlled gcd defect
 
-Theorem 2(i), construction with controlled defect. A single absolute positive
-constant `C` works for every positive `C₀`. The resulting set (sums over
-`1 ≤ n ≤ x`) has its harmonic sum eventually within a positive factor `K` of
-`lcmDenseGrowthF C₀ x`, and an error `e(x) → 0` gives the eventual equation-(21) defect bound
-`≪ exp(e² C₀²) - 1 + o(1)` as printed in the journal version (the arXiv v1 TeX prints
-`exp(C₀²)`; its proof, through the factor `e^ℓ` of (35), gives `e² C₀²`). The
-dependence of `K` and `e` on `C₀` is represented by choosing them after `C₀`.
+**Dense sets with controlled gcd defect.** Let $e$ be Euler's number. There is an absolute
+constant $C > 0$ with the following property. Let $C_0 > 0$ be real, and let $F_{C_0}$ be the
+growth function of the dense-set construction. Then there is a set $A$ of natural numbers such
+that, writing $S_A(x) = \sum_{n \in A,\ 1 \le n \le x} 1/n$ for its harmonic sum up to $x$ and
+$\mathcal{E}_A(x)$ for its gcd defect up to $x$, the following two statements hold. First, there
+is a constant $K > 0$ with $F_{C_0}(x)/K \le S_A(x) \le K\, F_{C_0}(x)$ for all sufficiently large
+real $x$. Second, there is a function $\varepsilon : \mathbb{R} \to \mathbb{R}$ with
+$\varepsilon(x) \to 0$ as $x \to \infty$ such that
+$\mathcal{E}_A(x) \le C\,(\exp(e^2 C_0^2) - 1 + \varepsilon(x))$ for all sufficiently large
+real $x$.
+
+The factor $e^2$ follows the journal version of the source; the arXiv preprint prints
+$\exp(C_0^2)$, but its proof, through the factor $e^\ell$ of (35), gives $e^2 C_0^2$.
 
 ## Depends on
 
-- [Lcm Defect](lcm-defect.md)
-- [Lcm Dense Growth F](lcm-dense-growth-f.md)
-- [Recip Sum Up To](recip-sum-up-to.md)
+- [Gcd defect](lcm-defect.md)
+- [Growth function of the dense-set construction](lcm-dense-growth-f.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
 
 ## Sources
 

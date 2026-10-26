@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_factorial_coeff_inv_sl_mem_int_inv_three
 ---
 
-# Two mul factorial coeff inv sl mem int inv three
+# The Hurwitz-normalized coefficients of 1/Sl
 
-Writing `1/Sl(u) = 1/u + Σ_n D_{3n+2} u^(3n+2)` and `d_n = n! Dₙ`, one has
-`2 d_{6m+2} ∈ ℤ[1/3]` for all `m ≥ 0`.
+**The Hurwitz-normalized coefficients of 1/Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power
+series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$, $\mathrm{Cl}' = -\mathrm{Sl}^2$,
+$\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. Write $\mathrm{Sl}(u) = u\,S_0(u)$ with
+$S_0 \in \mathbb{Q}[[u]]$, and let $D_n$ be the coefficient of $u^{n+1}$ in $S_0^{-1}$, so that
+$1/\mathrm{Sl}(u) = 1/u + \sum_{n \ge 0} D_n u^n$. Then for every $m \ge 0$ the number
+$2\,(6m + 2)!\,D_{6m+2}$ lies in $\mathbb{Z}[1/3]$, that is, it equals $a/3^k$ for some
+$a \in \mathbb{Z}$ and $k \ge 0$.
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart. With `Sl(u) = u S₀(u)`,
-`D_k` is the coefficient of `u^(k+1)` in `S₀⁻¹`.
+The four conditions determine $\mathrm{Sl}$ and $\mathrm{Cl}$ uniquely: they are the Taylor series
+at $0$ of the Eisenstein elliptic functions of the source.
 
 ## Depends on
 

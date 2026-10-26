@@ -6,19 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isGibonacciGood_zero
 ---
 
-# Is Gibonacci Good zero
+# Zero is good for every pair
 
-Characteristic example: `0` is good for every `(a, b)`, with value
-`a`.
+**Zero is good for every pair.** For all integers $a$ and $b$, the rational number $0$ is good
+for $(a, b)$.
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 
 ## Proof depends on
 
-- [Gibonacci Generating Value](gibonacci-generating-value.md)
-- [Gibonacci Generating Value zero](gibonacci-generating-value-zero.md)
+- [Gibonacci generating function](gibonacci-generating-value.md)
+- [Value of the Gibonacci generating function at zero](gibonacci-generating-value-zero.md)
 
 ## Sources
 

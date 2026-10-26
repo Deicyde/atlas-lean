@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.oddMultipleHarmonic_of_lt
 ---
 
-# Odd Multiple Harmonic of lt
+# Vanishing of odd multiple harmonic numbers of large depth
 
-`O_n(k) = 0` for `k > n`.
+**Vanishing of odd multiple harmonic numbers of large depth.** For natural numbers $k$ and
+$n$ with $k > n$, the depth-$k$ odd harmonic number $O_n(k)$ equals $0$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

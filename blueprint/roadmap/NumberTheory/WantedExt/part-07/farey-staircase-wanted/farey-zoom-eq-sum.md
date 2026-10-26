@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fareyZoom_eq_sum
 ---
 
-# Farey Zoom eq sum
+# The zoomed Farey staircase as a sum
 
-`B_n(x) = Σ_{k=1}^n ⌊(k/n) x⌋/k` for `n ≥ 1`.
+**The zoomed Farey staircase as a sum.** For every natural number $n \ge 1$ and every real
+number $x$, the zoomed Farey staircase $B_n$ of order $n$ satisfies
+$B_n(x) = \sum_{k=1}^{n} \lfloor (k/n) x \rfloor / k$.
 
 ## Depends on
 
-- [Farey Zoom](farey-zoom.md)
+- [Zoomed Farey staircase](farey-zoom.md)
 
 ## Sources
 

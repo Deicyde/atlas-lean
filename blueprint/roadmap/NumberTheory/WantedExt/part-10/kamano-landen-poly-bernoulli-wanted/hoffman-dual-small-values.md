@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.hoffmanDual_small_values
 ---
 
-# Hoffman Dual small values
+# Small values of the Hoffman dual
 
-Small values: `(1)^∨ = (1)`, `(3)^∨ = (1, 1, 1)`, `(1, 2)^∨ = (2, 1)`.
+**Small values of the Hoffman dual.** The Hoffman dual index satisfies $(1)^\vee = (1)$,
+$(3)^\vee = (1, 1, 1)$ and $(1, 2)^\vee = (2, 1)$.
 
 ## Depends on
 
-- [Hoffman Dual](hoffman-dual.md)
+- [Hoffman dual index](hoffman-dual.md)
 
 ## Proof depends on
 
-- [Hoffman Dual Rev](hoffman-dual-rev.md)
+- [Hoffman dual on reversed lists](hoffman-dual-rev.md)
 
 ## Sources
 

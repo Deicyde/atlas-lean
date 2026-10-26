@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kFibonacciBinomialTruncation_recurrence
 ---
 
-# Proposition 11
+# Recurrence for the truncated binomial sums
 
-**Proposition 11.** For `n, k ≥ 2`, `G_{n + k + 1}^{(k)} = 2 G_{n + k}^{(k)} - G_n^{(k)}`.
+**Recurrence for the truncated binomial sums.** Let $G_n^{(k)}$ be the truncated binomial
+sum. For all natural numbers $k \ge 2$ and $n \ge 2$,
+$G_{n+k+1}^{(k)} = 2 G_{n+k}^{(k)} - G_n^{(k)}$.
 
 ## Depends on
 
-- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
+- [Truncated binomial sum $G_n^{(k)}$](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

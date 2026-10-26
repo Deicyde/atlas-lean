@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.letendreXi
 ---
 
-# Letendre Xi
+# Letendre's saving exponent
 
-Letendre's saving exponent `ξ(θ, η)` of Theorem 1: `1` if `η ≤ θ²`; otherwise `θ²/η` if
-`θ ≤ 1/2` and `2η ≤ θ`, `4(θ - η)` if `θ ≤ 1/2` and `2η > θ`,
-`(1 - θ)²/((1 - θ)² + η - θ²)` if `θ > 1/2` and `2η ≤ 3θ - 1`, and `4(θ - η)` if `θ > 1/2`
-and `2η > 3θ - 1`.
+**Letendre's saving exponent.** For real numbers $\theta$ and $\eta$, Letendre's saving
+exponent $\xi(\theta, \eta)$ is defined as follows. If $\eta \le \theta^2$, then
+$\xi(\theta, \eta) = 1$. Otherwise, if $\theta \le 1/2$, then $\xi(\theta, \eta) = \theta^2/\eta$
+when $2\eta \le \theta$ and $\xi(\theta, \eta) = 4(\theta - \eta)$ when $2\eta > \theta$; and if
+$\theta > 1/2$, then $\xi(\theta, \eta) = (1 - \theta)^2/((1 - \theta)^2 + \eta - \theta^2)$ when
+$2\eta \le 3\theta - 1$ and $\xi(\theta, \eta) = 4(\theta - \eta)$ when $2\eta > 3\theta - 1$.
 
 ## Depends on
 

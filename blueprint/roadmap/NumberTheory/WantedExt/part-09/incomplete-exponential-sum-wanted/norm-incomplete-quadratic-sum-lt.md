@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.norm_incomplete_quadratic_sum_lt
 ---
 
-# Norm incomplete quadratic sum lt
+# Incomplete quadratic exponential sums of medium length
 
-Theorem 1.2: for a prime `p`, a quadratic `f(x) = a x² + b x + c` with `p ∤ a`, and a
-positive integer `B` with `√p < B < p/2`,
-`|S_p(f, B)| < √((2/π) p log(16.6 B² / p))`.
-The hypothesis that `p` is prime is the paper's standing assumption on `S_p`.
+**Incomplete quadratic exponential sums of medium length.** Let $p$ be a prime, write
+$e_p(t) = e^{2\pi i t/p}$, let $a, b, c$ be integers with $p \nmid a$, and let $B$ be an integer
+with $\sqrt{p} < B < p/2$. Then $\left|\sum_{x=1}^{B} e_p(a x^2 + b x + c)\right| <
+\sqrt{\frac{2}{\pi} \, p \log \frac{16.6 B^2}{p}}$.
 
 ## Depends on
 

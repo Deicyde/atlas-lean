@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sq_dvd_fermatNumber_iff
 ---
 
-# Sq dvd fermat Number iff
+# Squared prime factors of Fermat numbers
 
-For a prime `p ∣ F_n`: `p² ∣ F_n` if and only if `2^{p-1} ≡ 1 (mod p²)`.
+**Squared prime factors of Fermat numbers.** Let $F_n = 2^{2^n} + 1$ be the $n$-th Fermat
+number, and let $p$ be a prime dividing $F_n$. Then $p^2$ divides $F_n$ if and only if
+$2^{p-1} \equiv 1 \pmod{p^2}$.
 
 ## Depends on
 

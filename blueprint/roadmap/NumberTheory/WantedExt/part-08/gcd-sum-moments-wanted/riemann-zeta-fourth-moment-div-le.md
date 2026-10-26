@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_fourth_moment_div_le
 ---
 
-# Lemma 5
+# A weighted fourth-moment bound for $\zeta$ on the critical line
 
-**Lemma 5** (quoted). `∫_{10}^T |ζ(1/2 + i t)|^4 / |ζ(1 + 2 i t)| dt ≪ T (log T)^5` for
-all sufficiently large `T`.
+**A weighted fourth-moment bound for $\zeta$ on the critical line.** There are real constants
+$C$ and $T_0$ such that for every real $T \ge T_0$,
+
+$$\int_{10}^{T} \frac{|\zeta(1/2 + it)|^4}{|\zeta(1 + 2it)|} \, dt \le C T (\log T)^5.$$
 
 ## Depends on
 

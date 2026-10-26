@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isLargeZsigmondyPrime_two_one_three_seven
 ---
 
-# Is Large Zsigmondy Prime two one three seven
+# $7$ is a large Zsigmondy prime for $(2, 1, 3)$
 
-`7` is a large Zsigmondy prime for `(2, 1, 3)`: `7 = 2³ - 1`, `7 ∤ 2 - 1, 2² - 1`, and
-`7 > 3 + 1`.
+**$7$ is a large Zsigmondy prime for $(2, 1, 3)$.** The prime $7$ is a large Zsigmondy prime
+for $(a, b, n) = (2, 1, 3)$: it divides $2^3 - 1 = 7$, divides neither $2^1 - 1$ nor $2^2 - 1$,
+and $7 > 3 + 1$.
 
 ## Depends on
 
-- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
+- [Large Zsigmondy prime](is-large-zsigmondy-prime.md)
 
 ## Proof depends on
 

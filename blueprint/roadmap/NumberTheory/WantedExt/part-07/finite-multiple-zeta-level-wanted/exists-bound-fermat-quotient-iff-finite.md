@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_bound_fermatQuotient_iff_finite_iInter
 ---
 
-# Lemma 3
+# Criterion for a uniform bound on the least non-Wieferich base
 
-**Lemma 3** (Lemma 5.4). Problem 5.3 (a uniform bound `M` with `ℓ_p ≤ M` for every odd
-prime `p`, where `ℓ_p` is the least `N` with `p ∤ N` and `p ∤ q_p(N)`) holds iff for some
-`M ≥ 3` the set `⋂_{N=2}^M W(N)` is finite, `W(N) = {p prime : N^{p-1} ≡ 1 (mod p²)}`.
+**Criterion for a uniform bound on the least non-Wieferich base.** The following are
+equivalent:
+(a) there is a natural number $M$ such that for every odd prime $p$ there is an integer $N$ with
+$1 \le N \le M$, $p \nmid N$ and $p^2 \nmid N^{p-1} - 1$;
+(b) there is a natural number $M \ge 3$ such that only finitely many primes $p$ satisfy
+$p^2 \mid N^{p-1} - 1$ for every integer $N$ with $2 \le N \le M$.
 
-`ℓ_p ≤ M` is written as the existence of such an `N ≤ M`; `p ∤ q_p(N)` as
-`p² ∤ N^{p-1} - 1`.
+For $p \nmid N$ the condition $p^2 \nmid N^{p-1} - 1$ says that $p$ does not divide the Fermat
+quotient $q_p(N) = (N^{p-1} - 1)/p$, so (a) bounds, uniformly in $p$, the least such base $N$;
+(b) says that $\bigcap_{N=2}^{M} W(N)$ is finite, where $W(N)$ is the set of primes $p$ with
+$N^{p-1} \equiv 1 \pmod{p^2}$.
 
 ## Depends on
 

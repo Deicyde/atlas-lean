@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovTree_isGenMarkovTriple_and_once
 ---
 
-# Gen Markov Tree is Gen Markov Triple and once
+# Vertices of the generalized Markov tree
 
-Corollary 2.2: every vertex of `MT(k)` is a `k`-generalized Markov triple, and every
-`k`-generalized Markov triple `(a, b, c)` with `b > max {a, c}` appears exactly once in
-`MT(k)`.
+**Vertices of the generalized Markov tree.** For every natural number $k$, every vertex of
+the $k$-generalized Markov tree $MT(k)$ is a $k$-generalized Markov triple, and for every
+$k$-generalized Markov triple $(a, b, c)$ with $a < b$ and $c < b$ there is exactly one path $w$
+such that the vertex of $MT(k)$ at $w$ is $(a, b, c)$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.cuspFormNormalizedCoeff_one
 ---
 
-# Cusp Form Normalized Coeff one
+# Normalized cusp form coefficient at one
 
-`λ_f(1)` is the first `q`-expansion coefficient.
+**Normalized cusp form coefficient at one.** Let $f$ be a cusp form of weight
+$k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with $q$-expansion
+$f(z) = \sum_{n \ge 0} a_f(n) e^{2\pi i n z}$, and let $\lambda_f$ be its normalized Fourier
+coefficients. Then $\lambda_f(1) = a_f(1)$, the coefficient of $e^{2\pi i z}$ in the
+$q$-expansion of $f$.
 
 ## Depends on
 
-- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Normalized Fourier coefficients of a cusp form](cusp-form-normalized-coeff.md)
 
 ## Sources
 

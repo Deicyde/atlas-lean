@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciCoefficient
 ---
 
-# L Generalized Fibonacci Coefficient
+# Dresden–Du coefficient
 
-The Dresden--Du coefficient `c(β) = (β - 1) / (2 + (ℓ + 1)(β - 2))`.
+**Dresden–Du coefficient.** For a natural number $\ell$ and a complex number $\beta$, the
+Dresden–Du coefficient is the complex number
+$c(\beta) = \frac{\beta - 1}{2 + (\ell + 1)(\beta - 2)}$, taken to be $0$ when the denominator
+vanishes.
 
 ## Depends on
 

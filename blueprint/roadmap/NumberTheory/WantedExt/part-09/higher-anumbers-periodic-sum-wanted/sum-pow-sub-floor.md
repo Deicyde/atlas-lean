@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_sub_floor
 ---
 
-# Sum pow sub floor
+# Sum of $p^n - \lfloor x i \rfloor$
 
-For positive rational `x` with `v_p(x) ≥ 0`,
-`∑_{i=1}^{⌊x^{-1} p^n⌋} (p^n - ⌊x i⌋) = ½ x^{-1} p^{2n} + ½ (x^{-1} (1 - 1/x_D) - 1) p^n +
-A_{x^{-1}}(n)`, and `A_{x^{-1}}(n)` is periodic for `n ≥ D_{x^{-1}}` with period
-`L_{x^{-1}}`.
+**Sum of $p^n - \lfloor x i \rfloor$.** Let $p$ be a prime and $x$ a positive rational with
+$v_p(x) \ge 0$. Let $x_D$ be the prime-to-$p$ part of the denominator of $x$, let $D_{x^{-1}}$
+and $L_{x^{-1}}$ be the delay and the period of the base-$p$ expansion of $x^{-1}$, and let
+$A_{x^{-1}}(n)$ be the periodic correction of Proposition 4. Then for every natural number $n$,
+
+$$\sum_{i=1}^{\lfloor p^n/x \rfloor} \left(p^n - \lfloor x i \rfloor\right) =
+\frac{1}{2} x^{-1} p^{2n} +
+\frac{1}{2} \left(x^{-1} \left(1 - \frac{1}{x_D}\right) - 1\right) p^n + A_{x^{-1}}(n),$$
+
+and $A_{x^{-1}}(n + L_{x^{-1}}) = A_{x^{-1}}(n)$ for every natural number $n \ge D_{x^{-1}}$.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PPeriod](base-pperiod.md)
-- [Floor Sum Correction](floor-sum-correction.md)
-- [Prime To PDen](prime-to-pden.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
+- [The correction term $A_{x^{-1}}$ for sums of floors](floor-sum-correction.md)
+- [Prime-to-$p$ part of the denominator](prime-to-pden.md)
 
 ## Sources
 

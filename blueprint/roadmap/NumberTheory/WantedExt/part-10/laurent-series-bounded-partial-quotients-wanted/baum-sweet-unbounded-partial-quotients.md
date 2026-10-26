@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.baumSweet_unboundedPartialQuotients
 ---
 
-# Baum Sweet unbounded Partial Quotients
+# Baum–Sweet: unbounded partial quotients for higher degrees
 
-Baum–Sweet: if `f ∈ 𝔽₂((x⁻¹))` satisfies `f^{2ⁿ+1} + g⁻¹ f + 1 = 0` with `n > 1`,
-`g ∈ 𝔽₂[x]`, `deg g ≥ 1`, then `f` has unbounded partial quotients (quoted result).
+**Baum–Sweet: unbounded partial quotients for higher degrees.** Let $n > 1$ and let
+$g \in \mathbb{F}_2[x]$ have degree at least $1$. If $f \in \mathbb{F}_2((x^{-1}))$ satisfies
+$f^{2^n+1} + g^{-1} f + 1 = 0$, then $f$ does not have bounded partial quotients.
 
 ## Depends on
 
-- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Laurent series with bounded partial quotients](laurent-has-bounded-partial-quotients.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

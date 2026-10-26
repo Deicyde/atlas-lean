@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberDeltaZero
 ---
 
-# Higher ANumber Delta Zero
+# The variant $\delta_0$ of the rounding indicator
 
-The variant `δ₀(i)`: `0` if `p ∣ i`, and `δ(i)` otherwise.
+**The variant $\delta_0$ of the rounding indicator.** For natural numbers $p$, $d$ and $i$, with
+$\delta$ the rounding indicator for $p$ and $d$, the value $\delta_0(i)$ is $0$ if $p \mid i$, and
+$\delta(i)$ otherwise.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Higher ANumber Delta](higher-anumber-delta.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
 
 ## Sources
 

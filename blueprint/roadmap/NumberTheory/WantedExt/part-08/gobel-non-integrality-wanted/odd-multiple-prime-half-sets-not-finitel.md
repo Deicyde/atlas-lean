@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.odd_multiple_prime_half_sets_not_finitely_coverable
 ---
 
-# Odd multiple prime half sets not finitely coverable
+# The odd multiples of $(p-1)/2$ admit no finite subcover
 
-No finite collection of the displayed prime-indexed sets covers their union: for every
-finite set `S` of candidate primes there is a natural `k` lying in
-`(p-1)/2 * (2ℕ+1)` for some prime `p ≥ 13`, `p ≡ 1 (mod 4)`, but in none of the sets
-indexed by members of `S`, where `S` ranges over finite sets of such primes.
+**The odd multiples of $(p-1)/2$ admit no finite subcover.** For a prime $p$ write
+$A_p = \{\tfrac{p-1}{2}(2m+1) : m \in \mathbb{N}\}$ for the set of odd multiples of $(p-1)/2$. For
+every finite set $S$ of primes $q$ with $q \ge 13$ and $q \equiv 1 \pmod 4$, there is a natural
+number $k$ that lies in $A_p$ for some prime $p \ge 13$ with $p \equiv 1 \pmod 4$ but lies in no
+$A_q$ with $q \in S$.
 
 ## Depends on
 

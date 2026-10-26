@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_distinct_primes
 ---
 
-# Theorem 2, available count
+# Available integers for distinct primes
 
-**Theorem 2, available count**: for `k ≥ 2` distinct primes
-and any residue classes, the number of available integers in
-`[1, P_k]` is `A_k(p_1, …, p_k)`.
+**Available integers for distinct primes.** Let $k \ge 2$, let $p_1, \dots, p_k$ be pairwise
+distinct primes, and let $r_1, \dots, r_k$ be any natural numbers. Call an integer $n$ available if
+$n \equiv r_i \pmod{p_i}$ holds for at most one index $i$. Then the number of available integers $n$
+with $1 \le n \le p_1 p_2 \cdots p_k$ equals $A_k(p_1, \dots, p_k)$, the determinant of the
+$k \times k$ matrix with diagonal entries $p_1, \dots, p_k$ and all other entries $1$.
 
 ## Depends on
 
-- [Available Count](available-count.md)
-- [Ones Diag Det](ones-diag-det.md)
+- [Number of available integers](available-count.md)
+- [Ones-diagonal determinant](ones-diag-det.md)
 
 ## Sources
 

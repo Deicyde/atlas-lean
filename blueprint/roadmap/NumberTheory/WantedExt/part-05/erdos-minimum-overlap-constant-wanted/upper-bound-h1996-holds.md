@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_H1996_holds
 ---
 
-# Upper Bound H1996 holds
+# Haugland's 1996 upper bound for the minimum-overlap constant
 
-Source: Haugland 1996 and Optimization Problems 1b.
+**Haugland's 1996 upper bound for the minimum-overlap constant.** The continuous Erdős
+minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 0.382002$.
 
 ## Depends on
 
-- [Upper Bound H1996](upper-bound-h1996.md)
+- [Statement of Haugland's 1996 upper bound for the minimum-overlap constant](upper-bound-h1996.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Haugland 1996 and Optimization Problems 1b.

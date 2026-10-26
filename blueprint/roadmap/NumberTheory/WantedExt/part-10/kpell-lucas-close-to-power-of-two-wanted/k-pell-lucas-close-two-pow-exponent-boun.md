@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_close_two_pow_exponent_bounds
 ---
 
-# Lemma 8
+# Exponent bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 8)
 
-**Lemma 8.** If `|Q^{(k)}_n - 2^m| < 2^{m/2}` with `k ≥ 2`, `n ≥ 1`, `m ≥ 2` and
-`n ≥ k + 1`, then `0.69n - 1.69 < m < 1.39n + 3.78`.
+**Exponent bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 8).** Let $k$, $n$
+and $m$ be natural numbers with $k \ge 2$, $n \ge 1$, $m \ge 2$ and $n \ge k + 1$, and let
+$Q^{(k)}_n$ be the $n$th $k$-Pell–Lucas number. If $|Q^{(k)}_n - 2^m| < 2^{m/2}$, then
+$0.69n - 1.69 < m < 1.39n + 3.78$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

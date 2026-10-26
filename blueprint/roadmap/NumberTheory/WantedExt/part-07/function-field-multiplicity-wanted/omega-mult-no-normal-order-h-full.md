@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.omegaMult_no_normalOrder_hFull
 ---
 
-# Omega Mult no normal Order h Full
+# $\omega_k$ has no normal order on $h$-full polynomials for $k > h$
 
-If `2 ≤ h` and `h < k`, then `ω_k`, cast to a real-valued function, has no normal
-order on the `h`-full monic polynomials for any nonnegative degree-nondecreasing
-comparison function `G`.  As elsewhere, `G` is total on polynomials and its sign and
-monotonicity requirements are restricted to `N_h`.
+**$\omega_k$ has no normal order on $h$-full polynomials for $k > h$.** Let $F$ be a finite
+field, let $2 \le h < k$, and let $N_h$ be the set of $h$-full monic polynomials over $F$. Let
+$G$ be a real-valued function on polynomials over $F$ that is nonnegative on $N_h$ and
+degree-nondecreasing on $N_h$, that is, $G(f_2) \le G(f_1)$ whenever $f_1, f_2 \in N_h$ and
+$\deg f_2 \le \deg f_1$. Then $\omega_k$, the number of monic irreducible factors of multiplicity
+exactly $k$, viewed as a real-valued function, does not have normal order $G$ on $N_h$.
 
 ## Depends on
 
-- [Has Normal Order](has-normal-order.md)
-- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
-- [H Full](h-full.md)
-- [Omega Mult](omega-mult.md)
+- [Normal order on a set of polynomials](has-normal-order.md)
+- [Degree-nondecreasing functions](is-degree-nondecreasing.md)
+- [$h$-full polynomials](h-full.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

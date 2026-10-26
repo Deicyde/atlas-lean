@@ -6,17 +6,21 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.theorem_2_b
 ---
 
-# Theorem 2 b
+# Koukoulopoulos–Maynard Theorem 2(b) (Catlin's conjecture, divergent case)
 
-Statement of Theorem 2(b):
-
-Let `ψ : ℕ → ℝ≥0`, `𝒦` and `ψ⋆` be as above. Then, if `∑ ψ⋆ (q)` diverges, `𝒦` has Lebesgue
-measure `1`.
+**Koukoulopoulos–Maynard Theorem 2(b) (Catlin's conjecture, divergent case).** Let $\psi$
+be a function from the positive integers to the nonnegative reals, and for each positive integer
+$q$ let $\psi^*(q) = \varphi(q) \cdot \sup \{\psi(n)/n : n \text{ a positive integer with }
+q \mid n\}$, where $\varphi$ is Euler's totient function and the supremum is taken in
+$[0, \infty]$. Let $\mathcal{K}(\psi)$ be the set of real numbers $\alpha \in [0, 1]$ for which
+$|\alpha - a/q| \le \psi(q)/q$ has infinitely many solutions with $a$ a natural number and $q$ a
+positive integer such that $a \le q$. If $\sum_{q \ge 1} \psi^*(q) = \infty$, then
+$\mathcal{K}(\psi)$ is a Borel set and has Lebesgue measure $1$.
 
 ## Depends on
 
 - [Ψ star](star.md)
-- [𝒦](untitled-2.md)
+- [The set $\mathcal{K}$ of Catlin's conjecture](untitled-2.md)
 
 ## Sources
 

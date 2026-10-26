@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.exists_hofTauList_iterate_eq_cons
 ---
 
-# Exists hof Tau List iterate eq cons
+# Every iterate $\tau_k^j(k)$ starts with $k$
 
-Every prefix `τ_k^j(k)` begins with the letter `k`.
+**Every iterate $\tau_k^j(k)$ starts with $k$.** Let $\tau_k$ be the substitution sending the
+letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words. For all
+natural numbers $k$ and $j$, the word $\tau_k^j(k)$, obtained by applying $\tau_k$ to the
+one-letter word $k$ a total of $j$ times, has the form $k\,r$ for some word $r$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Proof depends on
 
-- [Hof Tau](hof-tau.md)
+- [The Hofstadter substitution on letters](hof-tau.md)
 
 ## Sources
 

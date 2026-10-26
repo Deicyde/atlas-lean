@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.somosLike_root_antitone_tendsto
 ---
 
-# Somos Like root antitone tendsto
+# Root asymptotics of Somos-type sequences
 
-Lemma 8: let `k ≥ 2`, let `σ_k = exp (∑_{m ≥ 1} log m / k^m)` be the `k`-Somos
-constant, and let `t` satisfy `t(n + 1) = t(n)^k / (n + 1)`. If `t(0) > σ_k`, then
-`t(n)^{1/k^n}` is antitone (it is constant from `n = 0` to `n = 1`, so the paper's
-"decreases monotonically" is the non-strict reading) and tends to some `c > 1`.
-The sum is written over all `m : ℕ`; the `m = 0` term is `log 0 = 0`.
+**Root asymptotics of Somos-type sequences.** Let $k \ge 2$ be a natural number, let
+$\sigma_k = \exp\bigl(\sum_{m \ge 1} \log m / k^m\bigr)$ be the $k$-Somos constant, and let
+$t : \mathbb{N} \to \mathbb{R}$ satisfy $t(n + 1) = t(n)^k / (n + 1)$ for all $n \ge 0$. If
+$t(0) > \sigma_k$, then the sequence $n \mapsto t(n)^{1/k^n}$ is nonincreasing and converges to
+some real number $c > 1$.
+
+The sequence is constant from $n = 0$ to $n = 1$, so the paper's "decreases monotonically" is
+read in the non-strict sense.
 
 ## Depends on
 

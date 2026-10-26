@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_sq_eq_round
 ---
 
-# Nth Non Value sq eq round
+# Formula for the non-square numbers
 
-The `n`-th non-square number is `n + ⌊√n + 1/2⌋`.
+**Formula for the non-square numbers.** For every integer $n \ge 1$, the $n$-th positive
+integer that is not a perfect square is $n + \lfloor \sqrt{n} + 1/2 \rfloor$.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.negPell_gcd_eq_one
 ---
 
-# Neg Pell gcd eq one
+# Coprimality of the negative Pell sequences
 
-For `d > 1` whose negative Pell equation is solvable in integers and `n > 0`,
-`gcd(d, f_n) = gcd(f_n, g_n) = 1`.
+**Coprimality of the negative Pell sequences.** Let $d > 1$ be a natural number such that
+$x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural numbers with
+least positive $Y$, and define integers $f_n, g_n$ by $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$.
+Then for every $n > 0$, $\gcd(d, f_n) = 1$ and $\gcd(f_n, g_n) = 1$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

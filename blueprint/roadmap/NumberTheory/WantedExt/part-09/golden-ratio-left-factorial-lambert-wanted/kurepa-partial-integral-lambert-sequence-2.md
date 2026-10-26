@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kurepaPartialIntegral_lambertSequence_two_bounds
 ---
 
-# Kurepa Partial Integral lambert Sequence two bounds
+# Two-parameter Lambert bounds for the left factorial
 
-Theorem 14: `B n m < !n < B n m + 1/m` for `n ≥ 5` and positive `m`, where
-`B n m = !n(A n m)` and `A n m = -(n - 1) W₋₁(-(1/(n-1)) (4/(7m))^(1/(n-1)))` is encoded by
-`n - 1 ≤ A` and `lambertMap (-A / (n - 1)) = -(1/(n-1)) (4/(7m))^(1/(n-1))`.
+**Two-parameter Lambert bounds for the left factorial.** Let $n \ge 5$ and $m \ge 1$ be
+integers, let $!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
+$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, let
+$h(y) = y e^y$ be the Lambert map, and let $A$ be a real number with $A \ge n - 1$ and
+
+$$h\left(-\frac{A}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7m}\right)^{1/(n-1)}.$$
+
+Then $K_n(A) < {!n} < K_n(A) + \frac{1}{m}$.
+
+The two conditions on $A$ say exactly that
+$A = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7m}\right)^{1/(n-1)}\right)$, where $W_{-1}$
+is the lower real branch of the Lambert $W$ function; this is the paper's $A(n, m)$, and
+$K_n(A)$ is its $B(n, m)$.
 
 ## Depends on
 
-- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Kurepa's partial integral](kurepa-partial-integral.md)
 - [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources

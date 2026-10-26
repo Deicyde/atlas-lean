@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.kFibonacci_repdigit_index_lt
 ---
 
-# K Fibonacci repdigit index lt
+# Index bound for repdigit products of $k$-Fibonacci numbers
 
-Lemma 5: every solution of `F_n^{(k)} F_m^{(k)} = a (10 ^ ℓ - 1) / 9` (with
-the constraints of Theorem 1) having `k ≥ 3` and `n ≥ k + 2` satisfies
-`n < 1.64 · 10^29 k^8 log^5 k` (natural logarithm). Same encoding of
-`F^{(k)}` as `kFibonacci_mul_eq_repdigit_iff`.
+**Index bound for repdigit products of $k$-Fibonacci numbers.** Let $k \ge 3$ and let
+$(F_n)_{n \ge 2-k}$ be the $k$-generalized Fibonacci sequence, given by
+$F_{2-k} = \dots = F_0 = 0$, $F_1 = 1$ and $F_n = F_{n-1} + F_{n-2} + \dots + F_{n-k}$
+for $n \ge 2$. Let $a, \ell, m, n$ be natural numbers with $3 \le m \le n$, $\ell \ge 2$,
+$1 \le a \le 9$ and $n \ge k + 2$. If $F_n F_m = a (10^\ell - 1)/9$, then
+$n < 1.64 \cdot 10^{29} k^8 (\log k)^5$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

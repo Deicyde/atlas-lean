@@ -5,20 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.exists_cyclotomicBox_deviation_le
 ---
 
-# Theorem 5
+# Concentration of trace distances in the box, quantitative form
 
-**Theorem 5** (quantitative form). There is an absolute `C` such that for every
-`ε > 0`, prime `p` and `N ≥ 1`, the proportion of pairs `(α, β) ∈ B(p, N)²` with
-`|d(α, β) / (2 N p^{3/2}) - 1/√6| > ε` is at most `C ε⁻² (1/p + 1/N)`.
+**Concentration of trace distances in the box, quantitative form.** There is a real
+number $C$ such that the following holds for every real $\varepsilon > 0$, every prime $p$,
+every integer $N \ge 1$ and every $p$-th cyclotomic extension $K$ of $\mathbb{Q}$. Let $\omega$
+be the chosen primitive $p$-th root of unity in $K$, let $d$ be the trace distance on $K$, and
+let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$ with $|a_i| \le N$ for
+all $i$, where $a$ stands for the point $a_1 \omega + \dots + a_{p-1} \omega^{p-1}$ of $K$.
+Among all pairs $(\alpha, \beta) \in B(p, N)^2$, the proportion of pairs with
 
-The paper fixes `p` odd; `p = 2` is included. Effective computability of `C` is not
-formalized.
+$$\left| \frac{d(\alpha, \beta)}{2 N p^{3/2}} - \frac{1}{\sqrt{6}} \right| > \varepsilon$$
+
+is at most $C \varepsilon^{-2} (1/p + 1/N)$.
+
+The paper takes $p$ odd; here $p = 2$ is allowed. The paper also shows that $C$ is
+effectively computable; only its existence is stated here.
 
 ## Depends on
 
-- [Cyclotomic Box](cyclotomic-box.md)
-- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [The cyclotomic box](cyclotomic-box.md)
+- [Lattice points of a cyclotomic field](cyclotomic-lattice-point.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Sources
 

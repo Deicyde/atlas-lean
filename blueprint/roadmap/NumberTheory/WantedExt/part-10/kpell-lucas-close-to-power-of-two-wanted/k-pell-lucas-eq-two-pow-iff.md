@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_eq_two_pow_iff
 ---
 
-# Corollary 1
+# $k$-Pell–Lucas numbers that are powers of two (Corollary 1)
 
-**Corollary 1.** For `k ≥ 2` and positive `n`, `m`, `Q^{(k)}_n = 2^m` only for
-`Q^{(k)}_1 = 2^1` (every `k ≥ 2`) and `Q^{(k)}_3 = 2^4` (`k ≥ 3`).
+**$k$-Pell–Lucas numbers that are powers of two (Corollary 1).** Let $k \ge 2$, $n \ge 1$ and
+$m \ge 1$ be natural numbers, and let $Q^{(k)}_n$ be the $n$th $k$-Pell–Lucas number. Then
+$Q^{(k)}_n = 2^m$ if and only if either $n = 1$ and $m = 1$, or $n = 3$, $m = 4$ and $k \ge 3$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

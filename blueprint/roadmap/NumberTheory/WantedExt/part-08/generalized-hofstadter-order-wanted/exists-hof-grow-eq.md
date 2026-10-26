@@ -6,20 +6,25 @@ proof: formalized
 lean: MetaMathlibExt.exists_hofGrow_eq
 ---
 
-# Exists hof Grow eq
+# The grown prefix is a long iterate of $\tau_k$
 
-`hofGrow k n` is a prefix `τ_k^m(k)` with more than `n` letters.
+**The grown prefix is a long iterate of $\tau_k$.** Let $\tau_k$ be the substitution sending
+the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words, and
+let $\mathrm{grow}_k(n)$ be the word obtained from the one-letter word $k$ by applying $\tau_k$
+until it has more than $n$ letters, at most $n$ times. For all natural numbers $k$ and $n$ there
+is an $m$ with $\mathrm{grow}_k(n) = \tau_k^m(k)$, and $\mathrm{grow}_k(n)$ has more than $n$
+letters.
 
 ## Depends on
 
-- [Hof Grow](hof-grow.md)
-- [Hof Tau List](hof-tau-list.md)
+- [The shortest long iterate $\tau_k^j(k)$](hof-grow.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Proof depends on
 
-- [Hof Grow Aux](hof-grow-aux.md)
-- [Hof Grow Aux iterate](hof-grow-aux-iterate.md)
-- [Succ le length hof Tau List iterate](succ-le-length-hof-tau-list-iterate.md)
+- [Bounded growth of a word under $\tau_k$](hof-grow-aux.md)
+- [Growing from an iterate of $\tau_k$ gives an iterate of $\tau_k$](hof-grow-aux-iterate.md)
+- [Growth of the iterated generalized Hofstadter substitution](succ-le-length-hof-tau-list-iterate.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardoP_rec
 ---
 
-# Proposition 10
+# Recurrence for the hyper Leonardo $p$-numbers
 
-**Proposition 10**: `𝓛^{(k)}_{p,n} = 𝓛^{(k)}_{p,n-1} + 𝓛^{(k-1)}_{p,n}` for `n, k ≥ 1`,
-with `𝓛^{(0)}_{p,n} = 𝓛_{p,n}` (and `𝓛^{(k)}_{p,0} = 1`, proved as
-`hyperLeonardoP_zero_left`).
+**Recurrence for the hyper Leonardo $p$-numbers.** Let $p \ge 1$ be a natural number. For all
+natural numbers $n \ge 1$ and $k \ge 1$, the hyper Leonardo $p$-numbers satisfy
+$\mathcal{L}^{(k)}_{p,n} = \mathcal{L}^{(k)}_{p,n-1} + \mathcal{L}^{(k-1)}_{p,n}$, and for every
+natural number $n$, $\mathcal{L}^{(0)}_{p,n} = \mathcal{L}_{p,n}$, where $\mathcal{L}_{p,n}$ is the
+Leonardo $p$-number: $\mathcal{L}_{p,n} = 1$ for $n \le p$ and
+$\mathcal{L}_{p,n} = \mathcal{L}_{p,n-1} + \mathcal{L}_{p,n-p-1} + p$ for $n > p$.
 
 ## Depends on
 
 - [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
-- [Hyper Leonardo P](hyper-leonardo-p.md)
+- [Hyper Leonardo $p$-numbers](hyper-leonardo-p.md)
 
 ## Sources
 

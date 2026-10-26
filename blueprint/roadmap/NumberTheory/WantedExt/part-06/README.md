@@ -18,7 +18,7 @@ navigation: transparent
 - [Erdos Problem997](erdos-problem997-wanted/README.md)
 - [Erdos Sequence Discrepancy](erdos-sequence-discrepancy-wanted/README.md)
 - [Erdos Straus Divisor Patterns](erdos-straus-divisor-patterns-wanted/README.md)
-- [Erdos Straus Prime Structure Wanted](erdos-straus-prime-restricted-representa.md)
+- [Chamberland's characterization of restricted Erdős–Straus representations](erdos-straus-prime-restricted-representa.md)
 - [Erdos Supersingular Primes](erdos-supersingular-primes-wanted/README.md)
 - [Euler Polynomial Formulas](euler-polynomial-formulas-wanted/README.md)
 - [Even Pseudoprime](even-pseudoprime-wanted/README.md)

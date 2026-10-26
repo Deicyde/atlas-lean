@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsGenCohnTriple.step
 ---
 
-# Step
+# Children of a generalized Cohn triple
 
-Theorem 3.5: if `(P, Q, R)` is a `k`-generalized Cohn triple associated with `(a, b, c)`,
-then `(P, PQ - S, Q)` is one associated with `(a, (a² + kab + b²)/c, b)` and `(Q, QR - S, R)`
-one associated with `(b, (b² + kbc + c²)/a, c)`.
+**Children of a generalized Cohn triple.** Let $k$ be a natural number, let $S$ be the integer
+matrix with rows $(k, 0)$ and $(3k^2 + 3k, k)$, and let $(P, Q, R)$ be a $k$-generalized Cohn
+triple associated with $(a, b, c)$. Then $(P, PQ - S, Q)$ is a $k$-generalized Cohn triple
+associated with $(a, \lfloor (a^2 + kab + b^2)/c \rfloor, b)$, and $(Q, QR - S, R)$ is a
+$k$-generalized Cohn triple associated with $(b, \lfloor (b^2 + kbc + c^2)/a \rfloor, c)$.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Gen Cohn S](gen-cohn-s.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [The matrix $S$ of the generalized Cohn triple relation](gen-cohn-s.md)
 
 ## Sources
 

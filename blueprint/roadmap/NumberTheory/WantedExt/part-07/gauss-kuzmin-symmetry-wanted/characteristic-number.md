@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.characteristicNumber
 ---
 
-# Characteristic Number
+# Characteristic number of a string
 
-The characteristic number `χ(a) = (p + q)(q' + q)` of a string.
+**Characteristic number of a string.** For a finite string $a$ of natural numbers with
+convergent matrix $C(a) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix}$, the characteristic
+number of $a$ is the integer $\chi(a) = (p + q)(q' + q)$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

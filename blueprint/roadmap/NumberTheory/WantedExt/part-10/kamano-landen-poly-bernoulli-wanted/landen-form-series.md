@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.landenFormSeries
 ---
 
-# Landen Form Series
+# Landen form series
 
-The power series `u · G_g(u) = c u/(a - c u) - d u/(b - d u)` attached to a
-matrix `g = (a b; c d) ∈ GL₂(ℝ)`.
+**Landen form series.** For real numbers $a, b, c, d$, viewed as the matrix $g$ with rows
+$(a, b)$ and $(c, d)$, this is the power series
+$u \cdot G_g(u) = \frac{cu}{a - cu} - \frac{du}{b - du} \in \mathbb{R}[[u]]$, where
+$G_g(t) = \frac{c}{a - ct} - \frac{d}{b - dt}$. Here the power series of $\frac{cu}{a - cu}$ is
+$\sum_{n \ge 1} (c/a)^n u^n$ if $a \neq 0$, the constant $-1$ if $a = 0$ and $c \neq 0$, and
+$0$ if $a = c = 0$; likewise for $\frac{du}{b - du}$ with $b, d$ in place of $a, c$. For
+$g \in GL_2(\mathbb{R})$ the last case does not occur.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
+- [Linear fractional pole series](linear-fractional-pole-series.md)
 
 ## Sources
 

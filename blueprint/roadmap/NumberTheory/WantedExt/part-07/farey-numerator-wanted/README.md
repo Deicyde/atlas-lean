@@ -4,6 +4,6 @@ navigation: module
 
 # Farey Numerator
 
-- [Farey Numerator Count](farey-numerator-count.md)
-- [Lemma 1](farey-between-count.md)
-- [Theorem 1](farey-numerator-count-formula.md)
+- [Number of Farey fractions with a given numerator](farey-numerator-count.md)
+- [Farey fractions with equal numerators between consecutive unit fractions](farey-between-count.md)
+- [Formula for the number of Farey fractions with a given numerator](farey-numerator-count-formula.md)

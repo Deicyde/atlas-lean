@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_root_strictAnti
 ---
 
-# Gobel Sequence root strict Anti
+# Strict decrease of the normalized Göbel roots
 
-Lemma 7: for `k, l ≥ 2` and `n ≥ 1`, the real numbers
-`C_{k,l}(n) = g_{k,l}(n)^{1/k^n}` satisfy `C_{k,l}(n) > C_{k,l}(n + 1) > 1`.
+**Strict decrease of the normalized Göbel roots.** Let $k, l \ge 2$ be natural numbers, let
+$g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $C_{k,l}(n) = g_{k,l}(n)^{1/k^n}$, a real
+number. Then $C_{k,l}(n) > C_{k,l}(n + 1) > 1$ for every natural number $n \ge 1$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.lucasLeonardoP_eq_lucasP
 ---
 
-# Proposition 13
+# Lucas-Leonardo $p$-numbers from Lucas $p$-numbers
 
-**Proposition 13**: `R_{p,n} = (p + 1) L_{p,n} - p`.
+**Lucas-Leonardo $p$-numbers from Lucas $p$-numbers.** For every $p \ge 1$ and every
+natural number $n$, the Lucas-Leonardo $p$-number $R_{p,n}$ and the Lucas $p$-number $L_{p,n}$
+satisfy $R_{p,n} = (p + 1) L_{p,n} - p$.
 
 ## Depends on
 

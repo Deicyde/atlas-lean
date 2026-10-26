@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.gobelResidueWalk_even_chain_of_one_mod_four
 ---
 
-# Gobel Residue Walk even chain of one mod four
+# Consecutive even residue walks form a zigzag chain when $p \equiv 1 \pmod 4$
 
-When `p ≡ 1 (mod 4)`, consecutive even residue walks form the paper's chain
-`G_0 ⪯ G_2 ⪯ ... ⪯ G_{p-1}`. The display is expanded into its equivalent adjacent-link
-statement for every even `l` with `l+2 ≤ p-1`; the fixed-section odd-prime hypotheses are
-explicit. Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-
-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 11.
+**Consecutive even residue walks form a zigzag chain when $p \equiv 1 \pmod 4$.** Let $p$
+be a prime with $p \equiv 1 \pmod 4$, and for a natural number $l$ write $\tilde g_l$ for the
+residue walk of $p$ starting at $l$. Then for every even natural number $l$ with
+$l + 2 \le p - 1$, the walk $\tilde g_l$ is zigzag-below $\tilde g_{l+2}$ up to $p$: there is
+an $m \le p$ such that $\tilde g_l(n) < \tilde g_{l+2}(n)$ for $1 \le n \le m$ and
+$\tilde g_l(n) = \tilde g_{l+2}(n)$ for $m < n \le p$. Writing $A \preceq B$ when $A$ is
+zigzag-below $B$ up to $p$, these links form the chain
+$\tilde g_0 \preceq \tilde g_2 \preceq \cdots \preceq \tilde g_{p-1}$.
 
 ## Depends on
 
-- [Is Zigzag Below](is-zigzag-below.md)
-- [Gobel Residue Walk](gobel-residue-walk.md)
+- [Zigzag order on integer sequences](is-zigzag-below.md)
+- [The residue walk $\tilde g_l$](gobel-residue-walk.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 11.

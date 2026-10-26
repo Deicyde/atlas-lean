@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isGibonacciGood_ratios_infinite_iff
 ---
 
-# Is Gibonacci Good ratios infinite iff
+# Good consecutive ratios of a Gibonacci sequence
 
-For coprime `p, q`, let `H` be the Gibonacci sequence with
-`H_0 = p` and `H_1 = q`. Then infinitely many pairs `(a, b)` make
-every ratio `H_n / H_{n+1}` (with nonzero denominator) good, and this
-holds for a given `(a, b)` if and only if
-`a ≡ -b p (q - p)⁻¹ ≡ -b q p⁻¹ (mod |q ^ 2 - p q - p ^ 2|)`, with the
-modular inverses written via explicit witnesses. The paper indexes
-`H` by all integers; this statement covers `n ∈ ℕ`.
+**Good consecutive ratios of a Gibonacci sequence.** Let $p$ and $q$ be coprime integers,
+let $(H_n)_{n \ge 0}$ be the Gibonacci sequence with $H_0 = p$ and $H_1 = q$, and put
+$m = |q^2 - pq - p^2|$. Call a pair of integers $(a, b)$ admissible when $H_n / H_{n+1}$ is
+good for $(a, b)$ for every natural number $n$ with $H_{n+1} \ne 0$. Then there are infinitely
+many admissible pairs, and a pair $(a, b)$ is admissible if and only if there are integers $u$
+and $v$ with $(q - p) u \equiv 1$, $p v \equiv 1$, $a \equiv -b p u$ and
+$a \equiv -b q v \pmod{m}$.
+
+In the source's notation, with modular inverses, the condition reads
+$a \equiv -bp(q - p)^{-1} \equiv -bqp^{-1} \pmod{m}$. The source indexes $H$ by all integers.
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 - [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources

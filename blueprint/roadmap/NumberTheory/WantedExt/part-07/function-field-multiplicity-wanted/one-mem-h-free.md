@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_hFree
 ---
 
-# One mem h Free
+# The polynomial $1$ is $h$-free
 
-The unit polynomial is `h`-free for positive `h`: a hypothetical irreducible factor
-would become a unit after taking a positive power, contradicting irreducibility.
+**The polynomial $1$ is $h$-free.** For every field $F$ and every natural number $h \ge 1$,
+the constant polynomial $1 \in F[X]$ is $h$-free: it is monic and no $h$-th power of a monic
+irreducible polynomial divides it.
 
 ## Depends on
 
-- [H Free](h-free.md)
+- [$h$-free polynomials](h-free.md)
 
 ## Proof depends on
 
-- [Monic Irreducible](monic-irreducible.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

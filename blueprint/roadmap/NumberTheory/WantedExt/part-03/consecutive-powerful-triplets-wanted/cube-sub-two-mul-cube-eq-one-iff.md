@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.cube_sub_two_mul_cube_eq_one_iff
 ---
 
-# Cube sub two mul cube eq one iff
+# Integer solutions of $u^3 - 2v^3 = 1$
 
-The only integer solutions of `u³ - 2 v³ = 1` are `(1, 0)` and `(-1, -1)`.
+**Integer solutions of $u^3 - 2v^3 = 1$.** For all integers $u$ and $v$, $u^3 - 2v^3 = 1$ if
+and only if $(u, v) = (1, 0)$ or $(u, v) = (-1, -1)$.
 
 ## Depends on
 

@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.density_hurwitz_norm_valuations_in
 ---
 
-# Density hurwitz norm valuations in
+# Density of Hurwitz quaternions whose norm has prescribed prime exponents
 
-Let `A ⊆ ℕ` and `G = {n ≥ 1 : ν_p(n) ∈ A for all primes p}`. Then the set `S(G)` of
-Hurwitz quaternions with norm in `G` has density
-`(1/ζ(2)) (∑_{k ∈ A} 2^{-2k}) ∏_{p > 2} (∑_{k ∈ A} p^{-k} - p⁻¹ ∑_{k ∈ A} p^{-2k})`,
-with `1/ζ(2)` written as `6/π²`.
+**Density of Hurwitz quaternions whose norm has prescribed prime exponents.** A Hurwitz
+quaternion is a quaternion whose four rational coordinates are either all integers or all halves
+of odd integers; its norm is the sum of the squares of its coordinates. For a natural number $N$
+let $S(N)$ be the set of nonzero Hurwitz quaternions of norm at most $N$. Let $A$ be a set of
+natural numbers, let $G$ be the set of positive integers $n$ such that for every prime $p$ the
+exponent $\nu_p(n)$ of $p$ in $n$ lies in $A$, and let $H_G$ be the set of Hurwitz quaternions
+whose norm lies in $G$. Then the ratio $|H_G \cap S(N)| / |S(N)|$ tends, as $N \to \infty$, to
+
+$$\frac{6}{\pi^2} \Bigl( \sum_{k \in A} 2^{-2k} \Bigr)
+\prod_{p > 2} \Bigl( \sum_{k \in A} p^{-k} - \frac{1}{p} \sum_{k \in A} p^{-2k} \Bigr),$$
+
+the product running over the odd primes $p$. Here $6/\pi^2 = 1/\zeta(2)$.
 
 ## Depends on
 

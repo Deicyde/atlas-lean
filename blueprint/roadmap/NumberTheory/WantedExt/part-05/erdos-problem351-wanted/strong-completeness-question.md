@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem351Wanted.EP351.StrongCompletenessQuestion
 ---
 
-# Strong Completeness Question
+# The strong completeness statement of Erdős Problem 351
 
-The question of [EP-351] Erdős Problem #351 as a proposition: is
-`A = { p(n) + 1 / n }` strongly complete for every `p ∈ ℚ[x]` with
-positive leading coefficient?
+**The strong completeness statement of Erdős Problem 351.** This is the proposition that for
+every polynomial $p$ with rational coefficients and positive leading coefficient, the set $A_p$
+of rational numbers $p(n) + 1/n$, where $n$ ranges over the positive integers, is strongly
+complete.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Erdos Set351](erdos-set351.md)
-- [Strongly Complete](strongly-complete.md)
+- [Polynomial values plus reciprocals](erdos-set351.md)
+- [Strongly complete sets of rationals](strongly-complete.md)
 
 ## Sources
 

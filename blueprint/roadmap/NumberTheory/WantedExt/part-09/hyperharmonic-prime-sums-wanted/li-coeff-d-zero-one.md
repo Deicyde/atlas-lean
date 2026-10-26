@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffD_zero_one
 ---
 
-# Li Coeff D zero one
+# Li's coefficient $d(0, 1)$
 
-`d(0, 1) = 1`.
+**Li's coefficient $d(0, 1)$.** Li's coefficient $d(0, 1)$ equals $1$.
 
 ## Depends on
 
-- [Li Coeff D](li-coeff-d.md)
+- [Li's coefficients $d(m, j)$](li-coeff-d.md)
 
 ## Sources
 

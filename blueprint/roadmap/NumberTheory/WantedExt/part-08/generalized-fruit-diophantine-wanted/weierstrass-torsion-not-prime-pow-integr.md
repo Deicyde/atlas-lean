@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weierstrass_torsion_not_primePow_integral
 ---
 
-# Weierstrass torsion not prime Pow integral
+# Torsion points of non-prime-power order are integral
 
-Integrality of torsion points of non-prime-power order: let `E/K` be an elliptic curve
-given by a Weierstrass equation with coefficients in `𝓞_K`. If `P = (x, y) ∈ E(K)` is a torsion
-point of order `m ≥ 2` that is not a prime power, then `x, y ∈ 𝓞_K`.
+**Torsion points of non-prime-power order are integral.** Let $K$ be a number field with ring
+of integers $\mathcal{O}_K$, and let $E$ be a Weierstrass curve with coefficients in
+$\mathcal{O}_K$ whose base change to $K$ is an elliptic curve. If $P = (x, y) \in E(K)$ is a
+point of finite order $m \ge 2$ and $m$ is not a prime power, then $x$ and $y$ lie in
+$\mathcal{O}_K$.
 
 ## Depends on
 

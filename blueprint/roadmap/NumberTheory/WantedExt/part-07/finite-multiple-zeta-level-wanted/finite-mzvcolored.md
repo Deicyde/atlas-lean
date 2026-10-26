@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.finiteMZVColored
 ---
 
-# Finite MZVColored
+# Finite multiple zeta value of level $N$ with a color map
 
-The `p`-component of `ζ^c_{𝒜,N}(k)` for a color map `c`: `ζ^{c(p)}_{p,N}(k)` when
-`c(p mod N)` is a color tuple and `0` when it is `∅` (`none`). Color maps are taken on all of
-`ℤ/Nℤ`; only their values at units matter for all but finitely many `p`.
+**Finite multiple zeta value of level $N$ with a color map.** Let $p$ and $N$ be natural
+numbers, $k = (k_1, \dots, k_r)$ a tuple of natural numbers, and $c$ a color map, which sends
+each $a \in \mathbb{Z}/N\mathbb{Z}$ either to $\emptyset$ or to a tuple in
+$(\mathbb{Z}/N\mathbb{Z})^r$. The $p$-component
+$\zeta^c_{\mathcal{A},N}(k)_p \in \mathbb{Z}/p\mathbb{Z}$ is the colored finite multiple harmonic
+sum $\zeta^{\alpha}_{p,N}(k)$ when $c(p \bmod N) = \alpha$ is a tuple, and $0$ when
+$c(p \bmod N) = \emptyset$.
+
+Color maps are taken on all of $\mathbb{Z}/N\mathbb{Z}$; only their values at units matter for all
+but finitely many $p$.
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Colored Finite MZV](colored-finite-mzv.md)
+- [Colored finite multiple harmonic sums](colored-finite-mzv.md)
 
 ## Sources
 

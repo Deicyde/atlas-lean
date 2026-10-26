@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_half_modEq_one_fermatNumber
 ---
 
-# Two pow half mod Eq one fermat Number
+# Warren–Bray congruence for prime divisors of Fermat numbers
 
-Warren and Bray (1967), as recalled by the source: for `n ≥ 2` and an odd prime
-`p ∣ F_n`, `2^{(p-1)/2} ≡ 1 (mod F_n)`.
+**Warren–Bray congruence for prime divisors of Fermat numbers.** Let $F_n = 2^{2^n} + 1$ be
+the $n$-th Fermat number. For every $n \ge 2$ and every odd prime $p$ dividing $F_n$, we have
+$2^{(p-1)/2} \equiv 1 \pmod{F_n}$. This result is due to Warren and Bray (1967).
 
 ## Depends on
 

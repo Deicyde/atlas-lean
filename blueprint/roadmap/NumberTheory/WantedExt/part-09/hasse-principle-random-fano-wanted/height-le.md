@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.heightLE
 ---
 
-# Height LE
+# Hypersurfaces of bounded height
 
-The set `𝕍_{d,n}(A)` of degree-`d` hypersurfaces in `ℙⁿ` with height at most `A`.
+**Hypersurfaces of bounded height.** For a real number $A$, $\mathbb{V}_{d,n}(A)$ is the set of
+degree-$d$ hypersurfaces $V \in \mathbb{V}_{d,n}$ in $\mathbb{P}^n$ whose height is at most $A$,
+where the height of $V$ is the height of the chosen nonzero homogeneous polynomial of degree $d$
+that represents $V$.
 
 ## Depends on
 
-- [𝕍](untitled-2.md)
+- [Parameter space of hypersurfaces](untitled-2.md)
 
 ## Proof depends on
 
-- [Height](height.md)
+- [Height of a rational polynomial](height.md)
 
 ## Sources
 

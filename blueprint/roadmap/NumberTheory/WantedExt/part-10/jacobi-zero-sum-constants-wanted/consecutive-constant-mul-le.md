@@ -5,9 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.consecutive_constant_mul_le
 ---
 
-# Consecutive constant mul le
+# Product lower bound for the consecutive weighted zero-sum constant
 
-If `n = mq`, `f_{n,m}(A) ⊆ B` and `f_{n,q}(A) ⊆ C`, then `C_A(n) ≥ C_B(m) C_C(q)`.
+**Product lower bound for the consecutive weighted zero-sum constant.** For a natural number
+$n$ and $A \subseteq \mathbb{Z}/n\mathbb{Z}$, let $C_A(n)$ denote the least positive integer $k$
+such that every sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}/n\mathbb{Z}$ has a block of
+consecutive terms $x_s, \dots, x_t$ with $s \le t$ and weights $a_s, \dots, a_t \in A$ such that
+$a_s x_s + \dots + a_t x_t = 0$. Let $m$ and $q$ be natural numbers and let
+$A \subseteq \mathbb{Z}/mq\mathbb{Z}$, $B \subseteq \mathbb{Z}/m\mathbb{Z}$ and
+$C \subseteq \mathbb{Z}/q\mathbb{Z}$ be such that the reduction map
+$\mathbb{Z}/mq\mathbb{Z} \to \mathbb{Z}/m\mathbb{Z}$ sends $A$ into $B$ and the reduction map
+$\mathbb{Z}/mq\mathbb{Z} \to \mathbb{Z}/q\mathbb{Z}$ sends $A$ into $C$. If $C_A(mq)$, $C_B(m)$
+and $C_C(q)$ exist, then $C_A(mq) \ge C_B(m)\,C_C(q)$.
 
 ## Depends on
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem650Wanted.conjecture
 ---
 
-# Conjecture
+# Statement of Erdős Problem 650
 
-`f(m) = min(m, ⌈2√m⌉)`, not `≤ √m`; plus the classical bounds.
+**Statement of Erdős Problem 650.** Let $f$ be Erdős's matching function for multiples in
+intervals. The statement is the conjunction of four claims: for every natural number $m$,
+$f(m) = \min(m, \lceil 2\sqrt{m}\,\rceil)$; it is not the case that $f(m) \le \sqrt{m}$ for every
+natural number $m$; $\sqrt{m} \le f(m)$ for every natural number $m$; and $f(m^2) \le 2m$ for
+every natural number $m$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [F](f.md)
+- [Erdős's matching function for multiples in intervals](f.md)
 
 ## Sources
 

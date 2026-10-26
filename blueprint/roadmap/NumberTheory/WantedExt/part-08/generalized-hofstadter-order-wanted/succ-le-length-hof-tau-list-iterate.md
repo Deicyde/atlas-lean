@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.succ_le_length_hofTauList_iterate
 ---
 
-# Succ le length hof Tau List iterate
+# Growth of the iterated generalized Hofstadter substitution
 
-The prefix `τ_k^j(k)` has length at least `j + 1`.
+**Growth of the iterated generalized Hofstadter substitution.** For natural numbers $k$
+and $j$, let $\tau_k$ be the substitution on letters in $\mathbb{N}$ sending $k$ to the
+two-letter word $k\,1$ and every other letter $i$ to the one-letter word $i + 1$, extended
+letter by letter to finite words. The word $\tau_k^j(k)$, obtained by applying $\tau_k$
+$j$ times to the one-letter word $k$, has length at least $j + 1$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Proof depends on
 
-- [Exists hof Tau List iterate eq cons](exists-hof-tau-list-iterate-eq-cons.md)
-- [Hof Tau](hof-tau.md)
-- [Length le length hof Tau List](length-le-length-hof-tau-list.md)
+- [Every iterate $\tau_k^j(k)$ starts with $k$](exists-hof-tau-list-iterate-eq-cons.md)
+- [The Hofstadter substitution on letters](hof-tau.md)
+- [The generalized Hofstadter substitution does not shorten words](length-le-length-hof-tau-list.md)
 
 ## Sources
 

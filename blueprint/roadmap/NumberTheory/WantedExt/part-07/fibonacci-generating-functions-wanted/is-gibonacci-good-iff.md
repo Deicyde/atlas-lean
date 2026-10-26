@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isGibonacciGood_iff
 ---
 
-# Is Gibonacci Good iff
+# Congruence criterion for good fractions
 
-The congruence criterion for goodness: for `(a, b) ≠ (0, 0)` and
-coprime `p, q`, the fraction `p / q` is good for `(a, b)` if and only
-if `a ≡ -b p (q - p)⁻¹ ≡ -b q p⁻¹ (mod |q ^ 2 - p q - p ^ 2|)`. The
-paper's modular inverses are written here with explicit inverse
-witnesses `u` and `v`.
+**Congruence criterion for good fractions.** Let $a, b, p, q$ be integers with
+$(a, b) \ne (0, 0)$, $q \ne 0$ and $\gcd(p, q) = 1$, and put $m = |q^2 - pq - p^2|$. Then
+$p / q$ is good for $(a, b)$ if and only if there are integers $u$ and $v$ with
+$(q - p) u \equiv 1$, $p v \equiv 1$, $a \equiv -b p u$ and $a \equiv -b q v \pmod{m}$.
+
+In the source's notation, with modular inverses, the condition reads
+$a \equiv -bp(q - p)^{-1} \equiv -bqp^{-1} \pmod{m}$.
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.negPellFundY
 ---
 
-# Neg Pell Fund Y
+# Second coordinate of the fundamental negative Pell solution
 
-The `y`-component of the least positive integral solution of the negative Pell equation
-`x² - d y² = -1` (the least `y > 0` with `x² + 1 = d y²` for some `x : ℕ`), and `0` when there is
-none.
+**Second coordinate of the fundamental negative Pell solution.** For a natural number $d$,
+$Y$ is the least positive integer $y$ such that $x^2 - d y^2 = -1$ for some integer $x$, and
+$Y = 0$ when there is no such $y$.
 
 ## Depends on
 

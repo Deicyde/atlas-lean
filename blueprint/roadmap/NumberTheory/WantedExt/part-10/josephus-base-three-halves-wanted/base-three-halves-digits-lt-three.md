@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.baseThreeHalvesDigits_lt_three
 ---
 
-# Base Three Halves Digits lt three
+# Base-3/2 digits are at most two
 
-Every digit emitted by `baseThreeHalvesDigits` belongs to `{0, 1, 2}`, formally
-expressed by the strict bound `d < 3`.
+**Base-3/2 digits are at most two.** For every natural number $N$, every digit $d$ in the
+base-$3/2$ digit list of $N$ satisfies $d < 3$, that is, $d \in \{0, 1, 2\}$.
 
 ## Depends on
 
-- [Base Three Halves Digits](base-three-halves-digits.md)
+- [Base-3/2 digits](base-three-halves-digits.md)
 
 ## Sources
 

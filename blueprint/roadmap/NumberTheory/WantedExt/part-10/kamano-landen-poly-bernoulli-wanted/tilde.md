@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.LandenData.tilde
 ---
 
-# Tilde
+# Transformed Landen data
 
-The transformed data `g̃`, with `g̃_i = (1 0; c₀ - d₀ -1) g_i`; thus
-`g̃₀ = (1 -1; -d₀ -c₀)` and `g̃_i = (a_i b_i; (c₀ - d₀) a_i - c_i (c₀ - d₀) b_i - d_i)`.
+**Transformed Landen data.** For Landen data $g = (g_0, g_1, \dots, g_s)$ with
+$g_0 = \begin{pmatrix} 1 & -1 \\ c_0 & d_0 \end{pmatrix}$ and
+$g_i = \begin{pmatrix} a_i & b_i \\ c_i & d_i \end{pmatrix}$ for $1 \le i \le s$, the transformed
+data $\tilde g = (\tilde g_0, \tilde g_1, \dots, \tilde g_s)$ has the same $s$, with
+$\tilde g_0 = \begin{pmatrix} 1 & -1 \\ -d_0 & -c_0 \end{pmatrix}$ and, for $1 \le i \le s$, the
+matrix $\tilde g_i$ has first row $(a_i, b_i)$ and second row
+$((c_0 - d_0) a_i - c_i, (c_0 - d_0) b_i - d_i)$. Equivalently,
+$\tilde g_i = \begin{pmatrix} 1 & 0 \\ c_0 - d_0 & -1 \end{pmatrix} g_i$ for $0 \le i \le s$.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
+- [Landen data](landen-data.md)
 
 ## Sources
 

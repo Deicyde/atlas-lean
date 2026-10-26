@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_three_mul_modEq_zero
 ---
 
-# Ramanujan Tau three mul mod Eq zero
+# Ramanujan's congruence $\tau(3n) \equiv 0 \pmod 3$
 
-Ramanujan's congruence `τ(3n) ≡ 0 (mod 3)`.
+**Ramanujan's congruence $\tau(3n) \equiv 0 \pmod 3$.** Let $\tau = \tau_{24}$ be Ramanujan's
+tau function, where $\tau_k$ is the generalized tau function. For every integer $n \ge 1$,
+$\tau(3n) \equiv 0 \pmod 3$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

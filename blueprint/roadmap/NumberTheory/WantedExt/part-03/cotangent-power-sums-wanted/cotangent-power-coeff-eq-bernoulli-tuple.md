@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.cotangentPowerCoeff_eq_bernoulli_tuple_sum
 ---
 
-# Theorem 2
+# Cotangent power coefficients through even Bernoulli numbers
 
-**Theorem 2.** Girstmair's coefficients agree with the coefficients `d_{r,j}` of the
-earlier literature (Equation (15)): for `1 ≤ j ≤ r` with `j ≡ r (mod 2)`,
-`c_{r,j} = (-1)^{r+1} 2^{r-j}/(j-1)! · d_{r,j}`, where
-`d_{r,j} = ∑_{j_1, …, j_r ≥ 0, j + 2 j_1 + ⋯ + 2 j_r = r} ∏_{t=1}^r B_{2 j_t}/(2 j_t)!`
-(Equation (13); only even-index Bernoulli numbers occur).
+**Cotangent power coefficients through even Bernoulli numbers.** Let $c_{r,j}$ be
+Girstmair's cotangent power coefficients and $B_m$ the $m$-th Bernoulli number. For natural
+numbers $j$ and $r$ with $1 \le j \le r$ and $j \equiv r \pmod 2$,
+
+$$c_{r,j} = \frac{(-1)^{r+1} 2^{r-j}}{(j-1)!} \, d_{r,j},$$
+
+where
+
+$$d_{r,j} = \sum_{(j_1, \dots, j_r)} \prod_{t=1}^{r} \frac{B_{2 j_t}}{(2 j_t)!}$$
+
+and the sum runs over all $r$-tuples $(j_1, \dots, j_r)$ of natural numbers with
+$j + 2 j_1 + \dots + 2 j_r = r$. This is Theorem 2 of the source, relating $c_{r,j}$ to the
+coefficients $d_{r,j}$ of the earlier literature (Equations (13) and (15)).
 
 ## Depends on
 
-- [Cotangent Power Coeff](cotangent-power-coeff.md)
+- [Girstmair's cotangent power coefficients](cotangent-power-coeff.md)
 
 ## Sources
 

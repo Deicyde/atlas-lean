@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ratResidue
 ---
 
-# Rat Residue
+# Residue of a rational number modulo an integer
 
-The residue in `ZMod m` of a rational `x` whose denominator is prime to `m`,
-namely `num x · (den x)⁻¹`. Used to read congruences in `ℤ_(p)` modulo `p^r`; on
-other inputs `ZMod.inv` gives a junk value.
+**Residue of a rational number modulo an integer.** For a natural number $m$ and a rational
+number $x = a/b$ in lowest terms with $b > 0$, the residue of $x$ modulo $m$ is the element
+$a \cdot b^{-1}$ of $\mathbb{Z}/m\mathbb{Z}$. When $b$ is prime to $m$, $b^{-1}$ is the inverse
+of $b$ modulo $m$, so the residue is the class $c$ with $b c \equiv a \pmod m$; for other $x$
+the inverse, and hence the residue, is a conventional value with no arithmetic meaning.
+
+For a prime $p$ and a natural number $r$, it is used to read congruences modulo $p^r$ in the
+ring $\mathbb{Z}_{(p)}$ of rational numbers whose denominator is prime to $p$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hyperFibonacci
 ---
 
-# Hyper Fibonacci
+# Hyper-Fibonacci numbers
 
-The hyper-Fibonacci numbers `F^{(r)}_n`: `F^{(0)}_n = F_n` and
-`F^{(r+1)}_n = ∑_{k=0}^{n} F^{(r)}_k`.
+**Hyper-Fibonacci numbers.** The hyper-Fibonacci numbers $F^{(r)}_n$, for natural numbers $r$
+and $n$, are the natural numbers defined by $F^{(0)}_n = F_n$, the $n$-th Fibonacci number
+(with $F_0 = 0$ and $F_1 = 1$), and $F^{(r+1)}_n = \sum_{k=0}^{n} F^{(r)}_k$.
 
 ## Depends on
 

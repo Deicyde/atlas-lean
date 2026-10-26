@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.mem_primitiveSum_of_sixteen_pow_lt
 ---
 
-# Mem primitive Sum of sixteen pow lt
+# Liao–Li–Pu criterion for primitive element sums
 
-The Liao–Li–Pu criterion for primitive element sums, quoted in the source. Membership
-`q ∈ 𝓤_n` says the field with `q^n` elements has a primitive `α` with `α + α⁻¹` primitive. For a
-prime power `q` coprime to `n`, `q^{n/2} > 2^{2ω_n}` (stated as `16^{ω_n} < q^n`) implies
-`q ∈ 𝓤_n`. Here `q^n > 2` is added: for `q = 2`, `n = 1` the hypothesis reads `16^0 = 1 < 2`,
-but in `𝔽_2` the only primitive element is `1` and `1 + 1⁻¹ = 0`, so `2 ∉ 𝓤_1` (as the source's
-Proposition 11 also records).
+**Liao–Li–Pu criterion for primitive element sums.** Let $q$ and $n$ be coprime natural numbers
+with $q^n > 2$, and let $\omega$ be the number of distinct prime factors of $q^n - 1$. If
+$16^\omega < q^n$, that is $q^{n/2} > 2^{2\omega}$, then every finite field $L$ with $q^n$ elements
+contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate the
+multiplicative group $L^\times$.
+
+The hypothesis $q^n > 2$ is added to the source's statement: for $q = 2$ and $n = 1$ the inequality
+$16^0 < 2$ holds, but the only generator of $\mathbb{F}_2^\times$ is $1$, and $1 + 1^{-1} = 0$.
 
 ## Depends on
 

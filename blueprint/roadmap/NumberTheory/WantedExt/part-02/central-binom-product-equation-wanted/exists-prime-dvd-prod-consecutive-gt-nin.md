@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_dvd_prod_consecutive_gt_nine_fifths
 ---
 
-# Exists prime dvd prod consecutive gt nine fifths
+# A prime factor above $9m/5$ in a product of consecutive integers
 
-Lemma 9 (Shanta-Shorey): if `n > m > 2` and `n + m ≥ 150`, then
-`n (n+1) ⋯ (n+m-1)` has a prime divisor `p > 1.8 m`.
+**A prime factor above $9m/5$ in a product of consecutive integers.** Let $m$ and $n$ be
+natural numbers with $2 < m < n$ and $n + m \ge 150$. Then the product $n(n+1)\cdots(n+m-1)$ has
+a prime divisor $p$ with $p > 9m/5$.
 
 ## Depends on
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovCharNumber_sq_add
 ---
 
-# Gen Markov Char Number sq add
+# The characteristic number solves $x^2 + kx + 1 \equiv 0 \pmod{m_t}$
 
-Lemma 4.7: for `t ∈ (0, 1)` the characteristic number `u_t` solves
-`x² + k x + 1 ≡ 0 (mod m_t)`.
+**The characteristic number solves $x^2 + kx + 1 \equiv 0 \pmod{m_t}$.** Let
+$k \in \mathbb{N}$, let $w$ be a finite sequence of left and right moves, let $(r, t, s)$ be
+the vertex of the Farey tree at $w$, and let $(m_r, m_t, m_s)$ be the vertex of the
+$k$-generalized Markov tree $\mathrm{MT}(k)$ at $w$. Write $t = n/d$. If $0 < n < d$ and $u$
+is a characteristic number of $(m_r, m_t, m_s)$, then $m_t$ divides $u^2 + ku + 1$, that is,
+$u^2 + ku + 1 \equiv 0 \pmod{m_t}$.
 
 ## Depends on
 
-- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
-- [Farey Tree](farey-tree.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Characteristic number](is-gen-markov-char-number.md)
+- [The Farey tree](farey-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

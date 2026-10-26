@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.cube_sub_mul_cube_eq_one_iff_of_mem
 ---
 
-# Cube sub mul cube eq one iff of mem
+# Integer solutions of $u^3 - d v^3 = 1$ for $d \in \{4, 18, 36\}$
 
-For `d ∈ {4, 18, 36}`, the equation `u³ - d v³ = 1` has the unique integer
-solution `(1, 0)`.
+**Integer solutions of $u^3 - d v^3 = 1$ for $d \in \{4, 18, 36\}$.** Let $d$ be one of the
+integers $4$, $18$, $36$. For all integers $u$ and $v$, $u^3 - d v^3 = 1$ if and only if
+$(u, v) = (1, 0)$.
 
 ## Depends on
 

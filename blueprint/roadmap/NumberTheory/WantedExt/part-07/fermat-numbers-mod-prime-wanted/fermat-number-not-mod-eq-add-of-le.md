@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_not_modEq_add_of_le
 ---
 
-# Fermat Number not mod Eq add of le
+# Non-congruence of Fermat numbers passes to smaller indices
 
-If `F_j ≢ F_{j+t} (mod m)` for every `t ≥ 1` and `i ≤ j`, then `F_i ≢ F_{i+t} (mod m)`
-for every `t ≥ 1`; stated for every modulus and `i ≤ j` (the paper takes `p` prime and
-`i < j`).
+**Non-congruence of Fermat numbers passes to smaller indices.** Write $F_n = 2^{2^n} + 1$ for
+the $n$-th Fermat number. Let $m$ be a natural number and let $i \le j$. If
+$F_j \not\equiv F_{j+t} \pmod{m}$ for every $t \ge 1$, then $F_i \not\equiv F_{i+t} \pmod{m}$
+for every $t \ge 1$.
+
+The statement holds for every modulus $m$ and allows $i = j$; the paper takes $m = p$ prime and
+$i < j$.
 
 ## Depends on
 

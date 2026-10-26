@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsJosephusThreeFixedPoint
 ---
 
-# Is Josephus Three Fixed Point
+# Fixed points of the Josephus function $J_3$
 
-`n` is a fixed point of the Josephus function `J₃`: `n ≥ 1` and `J₃(n) = n`.
+**Fixed points of the Josephus function $J_3$.** A natural number $n$ is a fixed point of the
+Josephus function $J_3$ (elimination step $3$) when $n \ge 1$ and $J_3(n) = n$.
 
 ## Depends on
 

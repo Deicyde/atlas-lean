@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pseudoGreedyGap_succ_eq_zero
 ---
 
-# Pseudo Greedy Gap succ eq zero
+# A vanishing gap stays zero
 
-If a gap `ε_n` of the pseudo-greedy expansion of a positive real vanishes, so does
-`ε_(n+1)`.
+**A vanishing gap stays zero.** Let $r > 0$ be a real number and let $(\varepsilon_n)$ be
+the gap sequence of its pseudo-greedy expansion. For every $n \ge 0$, if $\varepsilon_n = 0$,
+then $\varepsilon_{n+1} = 0$.
 
 ## Depends on
 
-- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
+- [Gap sequence of the pseudo-greedy expansion](pseudo-greedy-gap.md)
 
 ## Sources
 

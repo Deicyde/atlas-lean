@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_height_eq_sum_prime_powers
 ---
 
-# Sum height eq sum prime powers
+# Prime-power decomposition of summatory heights
 
-Proposition 7 (prime reduction), first identity of Equation (6): for completely additive
-`H` and `x ≥ 2`, `F(x) = ∑_{m ≤ x} H(m) = ∑_{p^α ≤ x} H(p) ⌊x / p^α⌋`. Stated for integer `x`
-(`F` and every floor depend on `x` only through `⌊x⌋`).
+**Prime-power decomposition of summatory heights.** Let $H : \mathbb{N} \to \mathbb{N}$ be
+completely additive on the positive integers, and let $x \ge 2$ be a natural number. Then
+
+$$\sum_{m=1}^{x} H(m) = \sum_{p \le x} \sum_{\alpha \ge 1,\ p^\alpha \le x} H(p)
+\left\lfloor \frac{x}{p^\alpha} \right\rfloor,$$
+
+where $p$ runs over the primes $p \le x$.
+
+The paper states this for real $x \ge 2$; both sides depend on $x$ only through $\lfloor x \rfloor$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
 
 ## Sources
 

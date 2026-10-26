@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hFreeOmegaOneB
 ---
 
-# H Free Omega One B
+# Coefficients of $B_{1,S_h}(u, z)$
 
-The coefficient `B_z(n)` of `u^n` in `B_{1,S_h}(u, z) = Z_q(u)^{-z} C_{1,S_h}(u, z)`, where
-`C_{1,S_h}(u, z) = ∑_{f ∈ S_h} z^{ω_1(f)} u^{deg f}` and `Z_q(u)^{-z} = (1 - qu)^z` has
-coefficients `q^m (-z)_m / m!` (`(x)_m` the rising factorial): the Cauchy product of the two
-coefficient sequences.
+**Coefficients of $B_{1,S_h}(u, z)$.** Let $F$ be a finite field with $q$ elements, let $h$
+be a natural number and let $z$ be a complex number. Let $S_h$ be the set of $h$-free monic
+polynomials over $F$ (those divisible by no $P^h$ with $P$ monic irreducible), and $\omega_1(f)$
+the number of distinct monic irreducible factors of $f$ of multiplicity exactly $1$. Write
+$C_{1,S_h}(u, z) = \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f}$ and
+$B_{1,S_h}(u, z) = Z_q(u)^{-z} C_{1,S_h}(u, z)$, where $Z_q(u)^{-z} = (1 - qu)^z$ is the power
+series with coefficient $q^m (-z)_m / m!$ at $u^m$ and $(x)_m = x(x+1) \cdots (x+m-1)$ is the
+rising factorial. For a natural number $n$, $B_z(n)$ is the coefficient of $u^n$ in
+$B_{1,S_h}(u, z)$, that is,
+
+$$B_z(n) = \sum_{a=0}^{n} \Bigl(\sum_{f \in S_h,\ \deg f = a} z^{\omega_1(f)}\Bigr)
+\frac{q^{n-a} (-z)_{n-a}}{(n-a)!}.$$
 
 ## Depends on
 
@@ -18,9 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [H Free](h-free.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [$h$-free polynomials](h-free.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

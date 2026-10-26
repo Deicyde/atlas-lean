@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.overpartition_mod_eight_iff_dD_convolution
 ---
 
-# Overpartition mod eight iff d D convolution
+# Overpartitions modulo $8$ and a convolution of divisor sums
 
-`p̄(4m+3) ≡ 0 (mod 8)` for all `m` is equivalent to
-`∑_{i ≥ 1} d_D(i) d_D(4m-i) ≡ 0 (mod 4)` for all `m`, where `p̄` counts overpartitions.
+**Overpartitions modulo $8$ and a convolution of divisor sums.** Let $\bar p(k)$ be the
+number of overpartitions of $k$, and let $d_D(k)$ be the sum of the divisors $d$ of $k$ for which
+$k/d$ is odd. Then $\bar p(4m+3) \equiv 0 \pmod 8$ for every natural number $m$ if and only if
+$\sum_{i=1}^{4m-1} d_D(i)\,d_D(4m-i) \equiv 0 \pmod 4$ for every natural number $m$.
 
 ## Depends on
 

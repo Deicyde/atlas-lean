@@ -5,13 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.gleefulRepCount_le
 ---
 
-# Theorem 1
+# Upper bound for the number of gleeful representations
 
-**Theorem 1.** If `k > 1` and `M(x, k) ≥ M₀ ≥ 6`, then
-`s_k(x) ≤ c_k · x^{2/(k+1)} / (log x)^{2k/(k+1)} · U(M₀, k)`.
+**Upper bound for the number of gleeful representations.** Let $p_1 = 2, p_2 = 3, \dots$ be
+the primes in increasing order, and for natural numbers $k$ and $x$ let $s_k(x)$ be the number
+of pairs $(n, m)$ of natural numbers with $m \ge 1$ and $p_{n+1}^k + \cdots + p_{n+m}^k \le x$.
+Let $k > 1$, $M_0 \ge 6$ and $x$ be natural numbers with $p_1^k + \cdots + p_{M_0}^k \le x$. Put
+$y = M_0$, let $\log$ be the natural logarithm, and set
 
-The printed exponent of `log x` is `k/(k+1)`; the paper's proof ends with
-`2k/(k+1)`, which is stated here and implies the printed bound since `log x ≥ 1`.
+$$A = \frac{\log(y/2)}{\log y},$$
+
+
+
+$$B = \frac{\log(y+1)}{\log y} + \frac{\log\log((y+1)^2)}{\log y} \cdot \frac{k}{k+1},$$
+
+
+
+$$C = \Big(\frac{y}{y-1}\Big)^{1/(k+1)} B^{k/(k+1)}, \qquad E = 1 + \frac{1}{(k+1)A - 1},$$
+
+
+
+$$F = \Big(\frac{y+1}{y}\Big)^{(k-1)/k} 4^{(k-1)/(k(k+1))} C^{(k-1)/k} E,$$
+
+$U = 1.25506\,F$ and $c_k = \frac{k^2}{k-1} (k+1)^{(k-1)/k}$. Then
+
+$$s_k(x) \le c_k \cdot \frac{x^{2/(k+1)}}{(\log x)^{2k/(k+1)}} \cdot U.$$
+
+The paper prints the exponent of $\log x$ as $k/(k+1)$; its proof ends with $2k/(k+1)$, which
+is stated here and implies the printed bound because $\log x \ge 1$.
 
 ## Depends on
 

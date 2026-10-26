@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isCompatibleSemiprimePair_71_1609
 ---
 
-# Is Compatible Semiprime Pair 71 1609
+# An example of compatible semiprimes
 
-The first entry of the paper's Table 1: `71 · 1609 = 114239` is compatible with
-`349 · 491`.
+**An example of compatible semiprimes.** The semiprimes $71 \cdot 1609 = 114239$ and
+$349 \cdot 491$ are compatible.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

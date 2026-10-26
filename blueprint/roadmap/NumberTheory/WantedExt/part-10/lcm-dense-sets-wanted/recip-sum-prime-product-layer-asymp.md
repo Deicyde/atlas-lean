@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.recipSum_primeProductLayer_asymp
 ---
 
-# Recip Sum prime Product Layer asymp
+# Harmonic sums over products of distinct primes
 
-Lemma 1 (logarithmic growth rate). The absolute positive constants `c` and
-`C` precede `𝒫`, `k`, and `x`. Assuming every member of `𝒫` is prime, `x ≥ 1`,
-and `k ≤ c*S`, the four inequalities state that both the exact-`k` and at-most-`k`
-harmonic sums are comparable to `S^k/k!`. The paper's `k ≥ 0` is automatic for
-`k : ℕ`; `𝒫^[k]` and `𝒫^[≤k]` use the squarefree-layer definitions above.
+**Harmonic sums over products of distinct primes.** There are constants $c > 0$ and $C > 0$
+such that the following holds. Let $\mathcal{P}$ be a set of primes, let $k$ be a natural number,
+let $x \ge 1$ be real, and put $S = \sum_{p \in \mathcal{P},\, p \le x} 1/p$,
+$T_k = \sum_{n \in \mathcal{P}^{[k]},\, n \le x} 1/n$ and
+$T_{\le k} = \sum_{n \in \mathcal{P}^{[\le k]},\, n \le x} 1/n$, where $\mathcal{P}^{[k]}$ and
+$\mathcal{P}^{[\le k]}$ are the sets of products of exactly $k$, respectively at most $k$,
+distinct primes from $\mathcal{P}$. If $k \le cS$, then
+$S^k/(C\,k!) \le T_k \le C\,S^k/k!$ and $S^k/(C\,k!) \le T_{\le k} \le C\,S^k/k!$.
 
 ## Depends on
 
-- [Prime Product Layer](prime-product-layer.md)
-- [Prime Products At Most](prime-products-at-most.md)
-- [Recip Sum Up To](recip-sum-up-to.md)
+- [Products of a fixed number of distinct primes](prime-product-layer.md)
+- [Products of at most a fixed number of distinct primes](prime-products-at-most.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
 
 ## Sources
 

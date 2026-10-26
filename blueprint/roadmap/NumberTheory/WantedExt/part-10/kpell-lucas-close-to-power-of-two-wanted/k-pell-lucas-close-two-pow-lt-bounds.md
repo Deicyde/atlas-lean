@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_close_two_pow_lt_bounds
 ---
 
-# Lemma 9
+# Absolute bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 9)
 
-**Lemma 9.** If `|Q^{(k)}_n - 2^m| < 2^{m/2}` with `k ≥ 2`, positive `n`, `m` and
-`n ≥ k + 1`, then `n < 1.7 · 10¹⁵ · k⁴ · log³ k` and `m < 2.37 · 10¹⁵ · k⁴ · log³ k`.
+**Absolute bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 9).** Let $k$, $n$
+and $m$ be natural numbers with $k \ge 2$, $m \ge 1$ and $n \ge k + 1$, and let $Q^{(k)}_n$ be
+the $n$th $k$-Pell–Lucas number. If $|Q^{(k)}_n - 2^m| < 2^{m/2}$, then
+$n < 1.7 \cdot 10^{15} \, k^4 (\log k)^3$ and $m < 2.37 \cdot 10^{15} \, k^4 (\log k)^3$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

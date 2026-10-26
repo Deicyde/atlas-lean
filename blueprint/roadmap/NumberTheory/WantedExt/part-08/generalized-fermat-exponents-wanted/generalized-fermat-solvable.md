@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.GeneralizedFermatSolvable
 ---
 
-# Generalized Fermat Solvable
+# Solvable generalized Fermat equation
 
-The equation `x^m + y^n = z^r` has a solution in nonzero integers `x`, `y`, `z`.
+**Solvable generalized Fermat equation.** For natural numbers $m$, $n$, $r$, the equation
+$x^m + y^n = z^r$ is called solvable when there are nonzero integers $x$, $y$, $z$ with
+$x^m + y^n = z^r$.
 
 ## Depends on
 

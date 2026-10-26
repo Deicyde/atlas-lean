@@ -5,17 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_padicValRat_two_harmonic_sub
 ---
 
-# Sum padic Val Rat two harmonic sub
+# Sum of the 2-adic valuations of $H_n - H_m$
 
-Sum of valuations over all `m < n`.
-
-The extracted statement flattens the displayed aggregation over `m`; the sum
-reading used here (rather than a product of valuations) was verified
-computationally with exact rational arithmetic for `n ≤ 16`.
+**Sum of the 2-adic valuations of $H_n - H_m$.** Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
+harmonic number (so $H_0 = 0$), let $\nu_2$ denote the $2$-adic valuation on the rational
+numbers, and let $a(n)$ be the weighted binary digit sum of $n$. For every natural number $n$,
+$\sum_{m=0}^{n-1} \nu_2(H_n - H_m) = -a(n)$.
 
 ## Depends on
 
-- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
+- [Weighted binary digit sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

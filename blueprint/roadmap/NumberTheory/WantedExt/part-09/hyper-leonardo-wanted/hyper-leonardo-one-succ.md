@@ -13,8 +13,8 @@ Equation (4). The extraction drops the superscript `(1)` on `Le_{n-1}`; as print
 
 ## Depends on
 
-- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Generalized Leonardo numbers](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

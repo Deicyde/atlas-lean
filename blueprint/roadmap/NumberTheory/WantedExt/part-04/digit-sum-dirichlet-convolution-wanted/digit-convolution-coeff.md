@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.digitConvolutionCoeff
 ---
 
-# Digit Convolution Coeff
+# Digit-convolution coefficients
 
-The leading coefficients of Theorem 3: `a(2) = (q - 1)² / (24 log² q)` and, for `k ≥ 3`,
-`a(k) = a(k - 1) (q - 1)/(2 log q) ∑_{j=0}^{2k-3} C(2k-3, j) (-1)^j / (j + 2)`.
-The values at `k = 0, 1` are junk (`0`); the theorem uses `k ≥ 2` only.
+**Digit-convolution coefficients.** For a natural number $q$, the base-$q$ digit-convolution
+coefficients are the real numbers $a(k)$, $k \ge 0$, given by $a(0) = a(1) = 0$,
+$a(2) = \frac{(q - 1)^2}{24 \log^2 q}$ and, for every $k \ge 3$,
+
+$$a(k) = a(k - 1) \cdot \frac{q - 1}{2 \log q}
+\sum_{j=0}^{2k-3} \binom{2k-3}{j} \frac{(-1)^j}{j + 2},$$
+
+where $\log$ is the natural logarithm and division by $0$ is read as $0$ (this matters only for
+$q \le 1$). The values $a(0)$ and $a(1)$ are placeholders; only $a(k)$ with $k \ge 2$ is used.
 
 ## Depends on
 

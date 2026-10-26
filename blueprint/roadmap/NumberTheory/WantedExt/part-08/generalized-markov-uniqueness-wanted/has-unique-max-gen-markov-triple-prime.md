@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime
 ---
 
-# Has Unique Max Gen Markov Triple prime
+# Generalized Markov numbers $p$ and $2p$ are unique maxima
 
-Theorem 1.6: a `k`-generalized Markov number `b = p` or `b = 2p` with `p` prime is the
-maximum of a unique `k`-generalized Markov triple up to order.
+**Generalized Markov numbers $p$ and $2p$ are unique maxima.** Let $k$ be a natural number
+and $p$ a prime. If $b$ is a $k$-generalized Markov number with $b = p$ or $b = 2p$, then $b$ is
+the maximum of a unique $k$-generalized Markov triple up to order.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

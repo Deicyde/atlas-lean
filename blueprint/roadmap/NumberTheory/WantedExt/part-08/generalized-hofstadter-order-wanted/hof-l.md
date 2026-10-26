@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hofL
 ---
 
-# Hof L
+# The image length $L_k$
 
-`L_k(n) = |τ_k(x_k[0:n))|`.
+**The image length $L_k$.** For natural numbers $k$ and $n$, $L_k(n) = |\tau_k(x_k[0:n))|$
+is the length of the word obtained by applying the substitution $\tau_k$, letter by letter, to
+the prefix $x_k[0:n)$ formed by the first $n$ letters of the fixed point $x_k$ of $\tau_k$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hof Prefix](hof-prefix.md)
-- [Hof Tau List](hof-tau-list.md)
+- [The prefix $x_k(0:n)$](hof-prefix.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Sources
 

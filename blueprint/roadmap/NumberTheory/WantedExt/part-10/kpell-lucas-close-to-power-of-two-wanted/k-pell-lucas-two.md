@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kPellLucas_two
 ---
 
-# K Pell Lucas two
+# The $2$-generalized Pell–Lucas numbers are the Pell–Lucas numbers
 
-For `k = 2` the sequence is the Pell–Lucas sequence `2, 2, 6, 14, 34, …`.
+**The $2$-generalized Pell–Lucas numbers are the Pell–Lucas numbers.** For every natural number
+$n$, the $2$-generalized Pell–Lucas number $Q^{(2)}_n$ equals the $n$th Pell–Lucas number $Q_n$;
+this is the sequence $2, 2, 6, 14, 34, \ldots$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 - [Pell–Lucas numbers](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
 
 ## Sources

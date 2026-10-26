@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.generalizedTau_zero
 ---
 
-# Generalized Tau zero
+# Generalized tau function at zero
 
-`τ_k(0) = 0`: the series `q ∏ (1 - q^m)^k` has no constant term.
+**Generalized tau function at zero.** For every integer $k$, $\tau_k(0) = 0$, where $\tau_k$
+is the generalized tau function: the series $q \prod_{m \ge 1} (1 - q^m)^k$ has no constant term.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Proof depends on
 
-- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
+- [Euler's product is a unit in $\mathbb{Z}((X))$](is-unit-pentagonal-series-int.md)
 
 ## Sources
 

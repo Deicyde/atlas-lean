@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.coeff_laurentCartier
 ---
 
-# Coeff laurent Cartier
+# Coefficients of Kohen's operator $\Lambda_k$
 
-The coefficient of `x^j` in `Λ_k f` is the coefficient of `x^{k j}` in `f`.
+**Coefficients of Kohen's operator $\Lambda_k$.** Let $R$ be a semiring and let $r$ and
+$k \ne 0$ be natural numbers. For every Laurent polynomial $f$ in $r$ variables with coefficients
+in $R$ and every $j \in \mathbb{Z}^r$, the coefficient of $x^j$ in $\Lambda_k f$ is the
+coefficient of $x^{kj}$ in $f$.
 
 ## Depends on
 
-- [Laurent Cartier](laurent-cartier.md)
+- [Cartier operator $\Lambda_k$ on Laurent polynomials](laurent-cartier.md)
 
 ## Sources
 

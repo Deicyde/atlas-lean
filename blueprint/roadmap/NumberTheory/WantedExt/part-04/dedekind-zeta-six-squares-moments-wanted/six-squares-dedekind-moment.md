@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sixSquaresDedekindMoment
 ---
 
-# Six Squares Dedekind Moment
+# Six-squares moments of Dedekind zeta coefficients
 
-The moment `S_ℓ(x) = ∑_{1 ≤ n ≤ x} r₆(n) a_K(n)^ℓ`, with `r₆(n)` the number of
-representations of `n` as a sum of six squares of integers (`sumOfSquaresRepCount 6 n`).
+**Six-squares moments of Dedekind zeta coefficients.** For a number field $K$, a natural
+number $\ell$ and a real number $x$, the moment is the real number
+$S_\ell(x) = \sum_{1 \le n \le x} r_6(n)\, a_K(n)^\ell$, where $n$ runs over the integers in
+$[1, x]$, $a_K(n)$ is the number of ideals of the ring of integers of $K$ of absolute norm $n$,
+and $r_6(n)$ is the coefficient of $q^n$ in $\theta(q)^6$, with
+$\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$; that is, $r_6(n)$ is the number of representations
+of $n$ as a sum of six squares of integers.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
+- [Coefficients of the Dedekind zeta function](dedekind-zeta-coeff.md)
 - [Sum Of Squares Rep Count](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
 
 ## Sources

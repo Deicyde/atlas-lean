@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.baseThreeHalvesDigits_four
 ---
 
-# Base Three Halves Digits four
+# Base-3/2 digits of four
 
-The emitted base-`3/2` digits of `4` are `[2, 1, 2]` in little-endian order,
-corresponding to the paper's `(212)_{3/2}`.
+**Base-3/2 digits of four.** The base-$3/2$ digit list of $4$, written least significant
+digit first, is $(2, 1, 2)$; written most significant digit first, this is the paper's
+$(212)_{3/2}$.
 
 ## Depends on
 
-- [Base Three Halves Digits](base-three-halves-digits.md)
+- [Base-3/2 digits](base-three-halves-digits.md)
 
 ## Sources
 

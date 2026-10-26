@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.one_le_truncLog
 ---
 
-# One le trunc Log
+# The truncated logarithm is at least one
 
-The truncated logarithm is always at least one; this records the effect of the
-`max` in the paper's definition.
+**The truncated logarithm is at least one.** For every real number $x$, the truncated
+logarithm $\operatorname{Log} x = \max(\log x, 1)$ satisfies $\operatorname{Log} x \ge 1$.
 
 ## Depends on
 
-- [Trunc Log](trunc-log.md)
+- [Truncated logarithm](trunc-log.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovTriple_two_iff_sq
 ---
 
-# Gen Markov Triple two iff sq
+# 2-generalized Markov triples are squares of Markov triples
 
-Proposition 4.17: `(a, b, c)` is a Markov triple (`k = 0`) exactly when `(a², b², c²)` is
-a `2`-generalized Markov triple; conversely every `2`-generalized Markov triple consists of
-squares of a Markov triple.
+**2-generalized Markov triples are squares of Markov triples.** If $(a, b, c)$ is a Markov
+triple, that is, a $0$-generalized Markov triple, then $(a^2, b^2, c^2)$ is a $2$-generalized
+Markov triple. Conversely, for every $2$-generalized Markov triple $(A, B, C)$ there is a Markov
+triple $(a, b, c)$ with $A = a^2$, $B = b^2$ and $C = c^2$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

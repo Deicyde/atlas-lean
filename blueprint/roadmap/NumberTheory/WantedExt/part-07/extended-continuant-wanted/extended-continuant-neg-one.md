@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.extendedContinuant_neg_one
 ---
 
-# Extended Continuant neg one
+# Extended continuant of order $-1$
 
-`K_{-1}(x)_b = 1`.
+**Extended continuant of order $-1$.** For every integer sequence
+$x : \mathbb{Z} \to \mathbb{Z}$ and every integer $b$, the extended continuant of $x$ of order
+$-1$ with start index $b$ equals $1$, that is, $K_{-1}(x)_b = 1$.
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Proof depends on
 
-- [Extended Continuant Bwd](extended-continuant-bwd.md)
-- [Extended Continuant Fwd](extended-continuant-fwd.md)
+- [Backward branch of the extended continuant](extended-continuant-bwd.md)
+- [Forward branch of the extended continuant](extended-continuant-fwd.md)
 
 ## Sources
 

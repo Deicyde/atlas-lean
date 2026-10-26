@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.hyperLeonardo_zero
 ---
 
-# Hyper Leonardo zero
+# Hyper-Leonardo numbers of order zero
 
-`Le^{(0)}_n = Le_n`.
+**Hyper-Leonardo numbers of order zero.** For every natural number $n$, the hyper-Leonardo
+number $Le^{(0)}_n$ equals the Leonardo number $L_{1,n}$, the generalized Leonardo number with
+$k = 1$, given by $L_{1,0} = L_{1,1} = 1$ and $L_{1,n+2} = L_{1,n+1} + L_{1,n} + 1$.
 
 ## Depends on
 
-- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Generalized Leonardo numbers](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

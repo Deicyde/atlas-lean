@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.mem_primitiveSum_of_not_mem_exceptional
 ---
 
-# Mem primitive Sum of not mem exceptional
+# Primitive element sums away from exceptional pairs
 
-Primitive element sums away from 33 exceptional pairs: for a prime power `q` coprime to
-`n > 1`, if `(n, ω(q^n - 1))` is not in the 33-element set `𝓔_𝓤` then `q ∈ 𝓤_n` (membership as
-in `mem_primitiveSum_of_sixteen_pow_lt`). The list is the appendix of the arXiv version
-(arXiv:2412.00010); its size agrees with the journal statement. Added hypotheses: `n > 1` (the
-source's standing assumption; for `n = 1`, `q = 2` the pair `(1, 0)` is not exceptional but
-`2 ∉ 𝓤_1`) and `q` coprime to `n` (the source derives the result from the coprime criterion
-`mem_primitiveSum_of_sixteen_pow_lt`).
+**Primitive element sums away from exceptional pairs.** Let $q$ and $n > 1$ be coprime natural
+numbers, and let $\omega$ be the number of distinct prime factors of $q^n - 1$. Suppose that the
+pair $(n, \omega)$ is none of the following $33$ pairs: $(2, w)$ for $1 \le w \le 11$; $(3, w)$ for
+$2 \le w \le 7$; $(4, w)$ for $w \in \{2, 3, 4, 5, 6, 7, 9\}$; $(5, 3)$ and $(5, 5)$; $(6, w)$ for
+$3 \le w \le 6$; $(8, 4)$ and $(8, 6)$; and $(12, 6)$. Then every finite field $L$ with $q^n$
+elements contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate
+the multiplicative group $L^\times$.
+
+The hypotheses $n > 1$ and $\gcd(q, n) = 1$ are added. For $n = 1$ and $q = 2$ the pair $(1, 0)$
+is not exceptional, yet $\mathbb{F}_2$ has no such $\alpha$; and the source derives the result from
+the Liao–Li–Pu criterion, which assumes coprimality.
 
 ## Depends on
 

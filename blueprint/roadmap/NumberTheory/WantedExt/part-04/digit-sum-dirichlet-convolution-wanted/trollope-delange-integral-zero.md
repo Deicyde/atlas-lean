@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.trollopeDelangeIntegral_zero
 ---
 
-# Trollope Delange Integral zero
+# Delange's function vanishes at zero
 
-`g(0) = 0`.
+**Delange's function vanishes at zero.** For every natural number $q$, Delange's function $g$
+in base $q$ satisfies $g(0) = 0$.
 
 ## Depends on
 
-- [Trollope Delange Integral](trollope-delange-integral.md)
+- [Delange's function](trollope-delange-integral.md)
 
 ## Sources
 

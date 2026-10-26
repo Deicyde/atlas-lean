@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.digitConvolutionCoeff_two
 ---
 
-# Digit Convolution Coeff two
+# Second digit-convolution coefficient
 
-`a(2) = (q - 1)² / (24 log² q)`.
+**Second digit-convolution coefficient.** For every natural number $q$, the base-$q$
+digit-convolution coefficient $a(2)$ equals $\frac{(q - 1)^2}{24 \log^2 q}$, with division by
+$0$ read as $0$ (this matters only for $q \le 1$).
 
 ## Depends on
 
-- [Digit Convolution Coeff](digit-convolution-coeff.md)
+- [Digit-convolution coefficients](digit-convolution-coeff.md)
 
 ## Sources
 

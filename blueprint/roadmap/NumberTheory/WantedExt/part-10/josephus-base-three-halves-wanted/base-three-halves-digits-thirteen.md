@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.baseThreeHalvesDigits_thirteen
 ---
 
-# Base Three Halves Digits thirteen
+# Base-3/2 digits of thirteen
 
-The emitted base-`3/2` digits of `13` are `[2, 1, 1, 0, 1, 2]` in
-little-endian order, corresponding to the paper's `(210112)_{3/2}`.
+**Base-3/2 digits of thirteen.** The base-$3/2$ digit list of $13$, written least
+significant digit first, is $(2, 1, 1, 0, 1, 2)$; written most significant digit first, this
+is the paper's $(210112)_{3/2}$.
 
 ## Depends on
 
-- [Base Three Halves Digits](base-three-halves-digits.md)
+- [Base-3/2 digits](base-three-halves-digits.md)
 
 ## Sources
 

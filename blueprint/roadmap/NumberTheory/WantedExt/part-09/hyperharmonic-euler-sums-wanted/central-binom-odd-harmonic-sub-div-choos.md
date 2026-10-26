@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_oddHarmonic_sub_div_choose_half_sq_tsum
 ---
 
-# Central Binom odd Harmonic sub div choose half sq tsum
+# Odd harmonic central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
-For every integer `m ≥ 1`,
-`∑_{n ≥ 0} binom(2n, n) (O_n - O_m) / (4^n binom(n + m, m) (n + 1/2)^2)
-= (4^m π / binom(2m, m)) ((O_m - 2 log 2)^2 - ζ(2))
-  + ∑_{q=1}^{m} (-4)^q binom(m, q) (O_m - O_q) / (binom(2q, q) (q - 1/2)^2)`,
-where `O_j = O_j(1)` and `ζ(2)` is written `π² / 6`.
+**Odd harmonic central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$.** Let $m \ge 1$ be an
+integer and write $O_j = O_j(1) = \sum_{i=1}^{j} 1/(i - 1/2)$ for the depth-one odd harmonic
+number. Then
+
+$$\sum_{n \ge 0} \frac{\binom{2n}{n} (O_n - O_m)}{4^n \binom{n+m}{m} (n + 1/2)^2} =
+\frac{4^m \pi}{\binom{2m}{m}} \Bigl(\bigl(O_m - 2 \log 2\bigr)^2 - \frac{\pi^2}{6}\Bigr) +
+\sum_{q=1}^{m} \frac{(-4)^q \binom{m}{q} (O_m - O_q)}{\binom{2q}{q} (q - 1/2)^2}.$$
+
+Here $\pi^2 / 6 = \zeta(2)$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hyperharmonicEulerSum_duality
 ---
 
-# Hyperharmonic Euler Sum duality
+# Duality for hyperharmonic Euler sums
 
-Duality: for `ℜ(r) < p + 1` and `ℜ(t) < k + 1`, both sums converge and
-`S(k, r; p + 1; 1 - t) = S(p, t; k + 1; 1 - r)`.
+**Duality for hyperharmonic Euler sums.** Let $k, p \ge 0$ be integers and let $r, t$ be
+complex numbers with $\operatorname{Re}(r) < p + 1$ and $\operatorname{Re}(t) < k + 1$. Write
+$H_n^{[r]}(k)$ for the generalized hyperharmonic number. Then the series
+$S(k, r; p + 1; 1 - t) = \sum_{n \ge k} H_n^{[r]}(k) / (n + 1 - t)^{p+1}$ and
+$S(p, t; k + 1; 1 - r) = \sum_{n \ge p} H_n^{[t]}(p) / (n + 1 - r)^{k+1}$ both converge absolutely,
+and $S(k, r; p + 1; 1 - t) = S(p, t; k + 1; 1 - r)$.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
-- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic Euler sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

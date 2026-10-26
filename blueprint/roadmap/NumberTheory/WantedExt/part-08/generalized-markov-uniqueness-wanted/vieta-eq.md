@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsGenMarkovTriple.vieta_eq
 ---
 
-# Vieta eq
+# Vieta jumping identities for generalized Markov triples
 
-The integer presentation of the Vieta jumpings displayed after Corollary 2.2: for a
-`k`-generalized Markov triple, `(a² + kab + b²)/c = (3 + 3k)ab - c - k(a + b)` and
-`(b² + kbc + c²)/a = (3 + 3k)bc - a - k(b + c)`, stated without division.
+**Vieta jumping identities for generalized Markov triples.** If $(a, b, c)$ is a
+$k$-generalized Markov triple, then, as integers,
+$a^2 + kab + b^2 = c\,((3 + 3k)ab - c - k(a + b))$ and
+$b^2 + kbc + c^2 = a\,((3 + 3k)bc - a - k(b + c))$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

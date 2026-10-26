@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_M1959
 ---
 
-# Lower Bound M1959
+# The proposition $\sqrt{4 - \sqrt{15}} \le C_{1b}$
 
-Source-reported lower bound `√(4-√15) ≤ C₁ᵦ`.
+**The proposition $\sqrt{4 - \sqrt{15}} \le C_{1b}$.** This is the proposition that the
+continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $\sqrt{4 - \sqrt{15}} \le C_{1b}$.
 
 ## Depends on
 

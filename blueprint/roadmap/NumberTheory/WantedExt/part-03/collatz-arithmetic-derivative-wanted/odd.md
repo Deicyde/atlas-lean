@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatibleSemiprimePair.odd
 ---
 
-# Odd
+# Compatible semiprimes have odd prime factors
 
-For compatible semiprimes `pq` and `rs`, all of `p, q, r, s` are odd.
+**Compatible semiprimes have odd prime factors.** Let $p, q, r, s$ be primes with
+$2(r + s) = p + q$ and $2rs = 3pq + 1$, so that the semiprimes $pq$ and $rs$ are compatible.
+Then $p$, $q$, $r$ and $s$ are all odd.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

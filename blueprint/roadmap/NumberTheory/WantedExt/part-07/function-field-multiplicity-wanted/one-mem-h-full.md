@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_hFull
 ---
 
-# One mem h Full
+# The polynomial $1$ is $h$-full
 
-The unit polynomial is `h`-full for every `h`, because no irreducible polynomial can
-divide `1`; the divisibility implication in the definition is therefore vacuous.
+**The polynomial $1$ is $h$-full.** For every field $F$ and every natural number $h$, the
+constant polynomial $1 \in F[X]$ is $h$-full: it is monic, and whenever a monic irreducible
+polynomial $P$ divides it, so does $P^h$.
+
+The divisibility condition holds vacuously, since no irreducible polynomial divides $1$.
 
 ## Depends on
 
-- [H Full](h-full.md)
+- [$h$-full polynomials](h-full.md)
 
 ## Proof depends on
 
-- [Monic Irreducible](monic-irreducible.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

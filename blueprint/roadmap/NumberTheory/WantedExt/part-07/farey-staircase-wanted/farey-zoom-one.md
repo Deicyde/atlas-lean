@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.fareyZoom_one
 ---
 
-# Farey Zoom one
+# The zoomed Farey staircase of order one is the floor function
 
-`B_1(x) = ⌊x⌋`.
+**The zoomed Farey staircase of order one is the floor function.** For every real number $x$,
+the zoomed Farey staircase $B_1$ of order $1$ satisfies $B_1(x) = \lfloor x \rfloor$.
 
 ## Depends on
 
-- [Farey Zoom](farey-zoom.md)
+- [Zoomed Farey staircase](farey-zoom.md)
 
 ## Proof depends on
 
-- [Farey Staircase](farey-staircase.md)
-- [Farey Staircase one](farey-staircase-one.md)
+- [Farey staircase](farey-staircase.md)
+- [The Farey staircase of order one is the floor function](farey-staircase-one.md)
 
 ## Sources
 

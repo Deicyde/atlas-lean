@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.choose_add_modEq_prime
 ---
 
-# Choose add mod Eq prime
+# Binomial coefficients $\binom{n+k}{k}$ modulo an odd prime
 
-For an odd prime `l`, `1 ≤ k < l` and `r = n mod l`: `C(n + k, k) ≡ (-1)^r C(l - k - 1, r)
-(mod l)` when `r ≤ l - k - 1`, and `≡ 0` when `r ≥ l - k`.
+**Binomial coefficients $\binom{n+k}{k}$ modulo an odd prime.** Let $l$ be an odd prime, $k$
+an integer with $1 \le k < l$, $n$ a natural number, and $r$ the remainder of $n$ modulo $l$. If
+$r \le l - k - 1$, then $\binom{n+k}{k} \equiv (-1)^r \binom{l-k-1}{r} \pmod l$; otherwise
+$\binom{n+k}{k} \equiv 0 \pmod l$.
 
 ## Depends on
 

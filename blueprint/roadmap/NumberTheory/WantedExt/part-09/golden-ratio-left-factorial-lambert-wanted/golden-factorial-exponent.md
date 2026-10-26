@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.goldenFactorialExponent
 ---
 
-# Golden Factorial Exponent
+# Golden factorial exponent
 
-The golden sequence `α n` (OEIS A214048): the least positive integer `m` with
-`n! ≤ φ ^ m`, where `φ` is the golden ratio. This is the paper's definition (4),
-`α n = m ⇔ φ ^ (m - 1) ≤ n! ≤ φ ^ m` with `m` positive; `n!` is never a power of `φ`
-for `n ≥ 2`, and `α 1 = 1`.
+**Golden factorial exponent.** For a natural number $n$, the golden factorial exponent
+$\alpha(n)$ is the least positive integer $m$ with $n! \le \varphi^m$, where $\varphi$ is the golden
+ratio. This is the sequence OEIS A214048.
+
+Equivalently $\alpha(n)$ is the positive integer $m$ with $\varphi^{m-1} \le n! \le \varphi^m$; the
+number $n!$ is never a power of $\varphi$ for $n \ge 2$, and $\alpha(1) = 1$.
 
 ## Depends on
 

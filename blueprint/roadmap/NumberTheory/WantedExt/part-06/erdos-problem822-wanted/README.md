@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem822
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 822](conjecture.md)
+- [Erdős Problem 822 is true](conjecture-holds.md)

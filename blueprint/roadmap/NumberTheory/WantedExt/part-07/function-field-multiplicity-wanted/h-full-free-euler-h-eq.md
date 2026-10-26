@@ -6,14 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.hFullFreeEulerH_eq
 ---
 
-# H Full Free Euler H eq
+# Unfolding the Euler product $H_{N_h, S_\ell}$
 
-Unfolding `H_{N_h,S_ℓ}`.
+**Unfolding the Euler product $H_{N_h, S_\ell}$.** Let $F$ be a finite field, let $h$ and
+$\ell$ be natural numbers and let $u$ be a complex number. Then $H_{N_h, S_\ell}(u)$ equals the
+complex product over all monic irreducible polynomials $P$ over $F$
+
+$$\prod_P \Bigl(1 + \frac{x^{h+1} - x^{\ell} - x^{2h} + x^{h+\ell}}{1 - x}\Bigr),$$
+
+where $x = u^{\deg P}$ in the factor for $P$, the quotient is read as $0$ when $x = 1$, and the
+product is taken to be $1$ if it does not converge unconditionally.
 
 ## Depends on
 
-- [H Full Free Euler H](h-full-free-euler-h.md)
-- [Monic Irreducible](monic-irreducible.md)
+- [The Euler product $H_{N_h, S_\ell}$ for $h$-full, $\ell$-free polynomials](h-full-free-euler-h.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

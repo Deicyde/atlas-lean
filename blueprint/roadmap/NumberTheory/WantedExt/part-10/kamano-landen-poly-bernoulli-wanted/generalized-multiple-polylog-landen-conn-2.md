@@ -7,15 +7,19 @@ lean: MetaMathlibExt.generalizedMultiplePolylog_landen_connection_classical
 
 # Landen formula in the classical case
 
-**Landen formula in the classical case**: for the data (9),
-`g₀ = g₂ = (1 -1; 1 0)` and `g₁ = (1 0; 0 1)` (so `G_{g₁}(t) = 1/t` and
-`G_{g₂}(t) = 1/(1 - t)`), and every index `k`,
-`Li_k(g; ((β₁, β₂), (γ₁, γ₂)); z/(z - 1)) = -Li_k(g; ((β₁, β₁ - β₂), (γ₁, γ₁ - γ₂)); z)`.
+**Landen formula in the classical case.** Let $g = (g_0, g_1, g_2)$ be the Landen data in
+which $g_0 = g_2$ has rows $(1, -1)$ and $(1, 0)$ and $g_1$ is the identity matrix, so that
+$G_{g_1}(t) = 1/t$ and $G_{g_2}(t) = 1/(1 - t)$. For all real numbers $\beta_1$, $\beta_2$,
+$\gamma_1$, $\gamma_2$ and every finite (possibly empty) sequence $\mathbf{k}$ of positive
+integers,
+$\mathrm{Li}_{\mathbf{k}}(g; ((\beta_1, \beta_2), (\gamma_1, \gamma_2)); \frac{z}{z - 1}) =
+-\mathrm{Li}_{\mathbf{k}}(g; ((\beta_1, \beta_1 - \beta_2), (\gamma_1, \gamma_1 - \gamma_2)); z)$
+in $\mathbb{R}[[z]]$, where $\frac{z}{z - 1} = -\sum_{n \ge 1} z^n$ is substituted for $z$.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
-- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Landen data](landen-data.md)
+- [Kamano's generalized multiple polylogarithm](generalized-multiple-polylog.md)
 
 ## Sources
 

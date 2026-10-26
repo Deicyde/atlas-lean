@@ -5,18 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_eq_leonardoPK_one
 ---
 
-# Gen Leonardo eq leonardo PK one
+# Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$
 
-Bridge to the existing generalized Leonardo `p`-number API: on
-natural `k`, `genLeonardo` agrees with `leonardoPK 1` from
-`WantedExt.NumberTheory.LeonardoPWanted` (initial values `1, 1` and
-the same recurrence). The `ℤ`-valued parameter here is the
-intentional extension beyond the paper's positive-`k` domain.
+**Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$.** For all natural numbers
+$k$ and $n$, the generalized Leonardo number $L_{k,n}$ equals the generalized Leonardo $p$-number
+$\mathcal{L}_{1,k}(n)$; both sequences start with $1, 1$ and satisfy the recurrence
+$a_{n+2} = a_{n+1} + a_n + k$.
 
 ## Depends on
 
 - [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
-- [Gen Leonardo](gen-leonardo.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.goldenFactorialExponent_one
 ---
 
-# Golden Factorial Exponent one
+# Golden factorial exponent of $1$
 
-`α 1 = 1`.
+**Golden factorial exponent of $1$.** Let $\varphi$ be the golden ratio and, for a natural
+number $n$, let $\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$. Then
+$\alpha(1) = 1$.
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
 
 ## Proof depends on
 
-- [Golden Factorial Exponent le](golden-factorial-exponent-le.md)
-- [Golden Factorial Exponent mem](golden-factorial-exponent-mem.md)
+- [Minimality of the golden factorial exponent](golden-factorial-exponent-le.md)
+- [Defining property of the golden factorial exponent](golden-factorial-exponent-mem.md)
 
 ## Sources
 

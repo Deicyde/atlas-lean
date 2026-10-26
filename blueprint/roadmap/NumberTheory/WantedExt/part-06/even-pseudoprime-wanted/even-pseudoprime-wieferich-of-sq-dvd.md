@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.evenPseudoprime_wieferich_of_sq_dvd
 ---
 
-# Lemma 5
+# Square prime factors of even pseudoprimes are Wieferich primes
 
-**Lemma 5.** If `p² ∣ N` for an even pseudoprime `N` and a prime `p`, then `p` is a
-Wieferich prime, `2^{p-1} ≡ 1 (mod p²)`; in particular `p ≥ 3511`.
+**Square prime factors of even pseudoprimes are Wieferich primes.** Let $N$ be an even
+pseudoprime and $p$ a prime with $p^2 \mid N$. Then $p$ is a Wieferich prime, that is
+$2^{p-1} \equiv 1 \pmod{p^2}$, and $p \ge 3511$.
 
 ## Depends on
 

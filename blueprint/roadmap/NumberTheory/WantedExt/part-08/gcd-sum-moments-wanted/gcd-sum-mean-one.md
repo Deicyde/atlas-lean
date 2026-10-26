@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.gcdSumMean_one
 ---
 
-# Gcd Sum Mean one
+# The mean gcd-sum function at $1$
 
-`A(1) = 1`.
+**The mean gcd-sum function at $1$.** The mean gcd-sum function $A$ satisfies $A(1) = 1$.
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

@@ -5,18 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.negPell_sum_difference_formulas
 ---
 
-# Neg Pell sum difference formulas
+# Sum and difference formulas for the negative Pell sequences
 
-Sum and difference formulas: for `m > n`, `f_{m+n} ± f_{m-n}` and `g_{m+n} ± g_{m-n}` equal
-`2 f_m f_n`, `2 d g_m g_n`, `2 g_m f_n` or `2 f_m g_n` according to the parity of `n`
-((33)-(36)).
+**Sum and difference formulas for the negative Pell sequences.** Let $d$ be a natural number
+such that $x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural
+numbers with least positive $Y$, and define integers $f_n, g_n$ by
+$(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$, computed formally with $(\sqrt{d})^2 = d$. Let $m > n$
+be natural numbers. If $n$ is even, then
 
-Only solvability of `x² - d y² = -1` is assumed (the source's `d > 1` is not needed).
+$$f_{m+n} + f_{m-n} = 2 f_m f_n, \qquad f_{m+n} - f_{m-n} = 2 d g_m g_n,$$
+
+
+
+$$g_{m+n} + g_{m-n} = 2 g_m f_n, \qquad g_{m+n} - g_{m-n} = 2 f_m g_n;$$
+
+if $n$ is odd, then
+
+$$f_{m+n} + f_{m-n} = 2 d g_m g_n, \qquad f_{m+n} - f_{m-n} = 2 f_m f_n,$$
+
+
+
+$$g_{m+n} + g_{m-n} = 2 f_m g_n, \qquad g_{m+n} - g_{m-n} = 2 g_m f_n.$$
+
+The source also assumes $d > 1$, which is not needed.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

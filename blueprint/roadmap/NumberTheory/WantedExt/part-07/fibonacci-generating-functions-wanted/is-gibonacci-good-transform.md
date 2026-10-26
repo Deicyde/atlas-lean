@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isGibonacciGood_transform
 ---
 
-# Is Gibonacci Good transform
+# Goodness passes to two transformed fractions
 
-Integrality propagates along the two fractional transforms: if
-`p / q` (in lowest terms) is good for `(a, b)`, then so are
-`q / (p + q)` (when `p + q ≠ 0`) and `(q - p) / p` (when `p ≠ 0`).
+**Goodness passes to two transformed fractions.** Let $a$, $b$, $p$, $q$ be integers with
+$q \ne 0$ and $\gcd(p, q) = 1$, and suppose that $p/q$ is good for $(a, b)$. If $p + q \ne 0$,
+then $q/(p + q)$ is good for $(a, b)$; and if $p \ne 0$, then $(q - p)/p$ is good for $(a, b)$.
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 
 ## Sources
 

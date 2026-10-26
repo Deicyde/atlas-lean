@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_seven_iff_padic_claims
 ---
 
-# Gobel Sequence seven iff padic claims
+# Integrality of Göbel sequences up to index 7 via finite $p$-adic checks
 
-Lemma 6: Theorem 2 is equivalent to the conjunction of four finite `p`-adic
-claims about `g_{k,l}(7)` (membership in `ℤ_(p)` written `0 ≤ padicValRat p x`):
-`g_{k,l}(7) ∈ ℤ_(2)` for `2 ≤ k ≤ 11`, `1 ≤ l ≤ 16`; `g_{k,l}(7) ∈ ℤ_(3)` for
-`2 ≤ k ≤ 7`, `1 ≤ l ≤ 9`; `g_{k,l}(7) ∈ ℤ_(5)` for `1 ≤ k ≤ 4`, `1 ≤ l ≤ 5`; and for
-`1 ≤ k ≤ 6`, `1 ≤ l ≤ 7`, `g_{k,l}(7) ∉ ℤ_(7)` iff `(k, l) = (2, 3)`. The left side
-is the Theorem 2 statement as formalized in
-`gobelSequence_integral_le_six_and_seven_iff`.
+**Integrality of Göbel sequences up to index 7 via finite $p$-adic checks.** Let $g_{k,l}$ be
+the $(k, l)$-Göbel sequence. For a prime $p$, call a rational number $x$ $p$-integral if
+$x \in \mathbb{Z}_{(p)}$, that is, if $x = 0$ or its $p$-adic valuation $\nu_p(x)$ is
+nonnegative. The following two statements are equivalent.
+
+(i) For all natural numbers $k, l \ge 2$, the value $g_{k,l}(n)$ is an integer for every
+$1 \le n \le 6$, and $g_{k,l}(7)$ is not an integer if and only if $k \equiv 2 \pmod 6$ and
+$l \equiv 3 \pmod 7$.
+
+(ii) $g_{k,l}(7)$ is $2$-integral for all $2 \le k \le 11$ and $1 \le l \le 16$; it is
+$3$-integral for all $2 \le k \le 7$ and $1 \le l \le 9$; it is $5$-integral for all
+$1 \le k \le 4$ and $1 \le l \le 5$; and for all $1 \le k \le 6$ and $1 \le l \le 7$, it is not
+$7$-integral if and only if $(k, l) = (2, 3)$.
+
+Statement (i) is Theorem 2 of the source.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

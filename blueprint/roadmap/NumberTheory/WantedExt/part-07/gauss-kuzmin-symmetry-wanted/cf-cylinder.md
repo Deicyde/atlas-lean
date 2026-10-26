@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.cfCylinder
 ---
 
-# Cf Cylinder
+# Fundamental interval of a string
 
-The fundamental interval `I(a)`: the numbers `x ∈ [0, 1)` whose continued fraction
-digits begin with `a₁, …, aₙ`. Digits are those of Mathlib's `GenContFract.of x`, so a rational
-`x` uses the expansion whose last digit exceeds `1` (the resolution in the paper's footnote 2).
+**Fundamental interval of a string.** For a finite string $a = (a_1, \ldots, a_n)$ of natural
+numbers, the fundamental interval $I(a)$ is the set of real numbers $x \in [0, 1)$ whose
+continued fraction expansion $x = [0; a_1(x), a_2(x), \ldots]$ has at least $n$ digits, with
+$a_i(x) = a_i$ for $1 \le i \le n$.
+
+The digits are those produced by the continued fraction algorithm, so a rational $x$ uses the
+finite expansion whose last digit is at least $2$ (the resolution in the paper's footnote 2).
 
 ## Depends on
 

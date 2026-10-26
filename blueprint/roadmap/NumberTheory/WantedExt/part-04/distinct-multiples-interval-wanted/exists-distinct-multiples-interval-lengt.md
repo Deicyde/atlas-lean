@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_distinctMultiplesIntervalLength_sub_gt
 ---
 
-# Exists distinct Multiples Interval Length sub gt
+# Shifting the interval can greatly increase the least length
 
-Theorem 1: for all large enough `n` there is a positive `m` with
-`f(n, m) - f(n, n) > 0.36 n log n / log log n`; equivalently
-`max_m f(n, m) - f(n, n) > 0.36 n log n / log log n`.
+**Shifting the interval can greatly increase the least length.** For natural numbers $n$ and
+$m$, let $f(n, m)$ be the least natural number $L$ such that the interval $(m, m + L]$ contains
+distinct multiples of $1, \dots, n$. For all sufficiently large natural numbers $n$ there is a
+positive integer $m$ with
+
+$$
+f(n, m) - f(n, n) > \frac{0.36\, n \log n}{\log \log n}.
+$$
+
+Since $f(n, m)$ is periodic in $m$ with period $\operatorname{lcm}(1, \dots, n)$, this says that
+$\max_{m \ge 1} f(n, m) - f(n, n) > 0.36\, n \log n / \log \log n$ for all large $n$, the form
+stated in the source.
 
 ## Depends on
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_inv_modEq_orderOf_le
 ---
 
-# Proposition 11
+# Reciprocal sum over a residue class in an exponential window
 
-**Proposition 11.** For an odd prime `p` and `k ∈ ℕ`,
-`F_p(k) = ∑ 1/N ≤ 2 / (p ℓ₂(p))`, the sum over `e^k < N ≤ e^{k+1}` with
-`N ≡ p (mod p ℓ₂(p))` and `N > p`.
+**Reciprocal sum over a residue class in an exponential window.** Write $\ell_2(p)$ for the
+multiplicative order of $2$ modulo a prime $p$. Let $p$ be an odd prime and $k$ a natural
+number, and let $F_p(k)$ be the sum of $1/N$ over the integers $N$ with $e^k < N \le e^{k+1}$,
+$N \equiv p \pmod{p\,\ell_2(p)}$ and $N > p$. Then $F_p(k) \le 2 / (p\,\ell_2(p))$.
 
-Stated for every `k ∈ ℕ`: the bound holds for all `k`, since the terms are `p + j p ℓ₂(p)`
-with `j ≥ 1`.
+The bound holds for every $k$, since the terms are $1/N$ with $N = p + j\,p\,\ell_2(p)$ and
+$j \ge 1$.
 
 ## Depends on
 

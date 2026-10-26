@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sl_rescale_int_expansion
 ---
 
-# Sl rescale int expansion
+# Sl(ru) as a power series in Sl(u)
 
-For every integer `r`, `Sl(ru) ∈ r Sl(u) + Sl(u)⁴ ℤ[1/3][[Sl(u)³]]`, and for `r ≠ 0`,
-`Sl(ru)⁻¹ ∈ 1/(r Sl(u)) + Sl(u)² ℤ[1/r, 1/3][[Sl(u)³]]`, inside `ℚ[[u]]` (resp. `u⁻¹ℚ[[u]]`).
+**Sl(ru) as a power series in Sl(u).** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power series
+in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$, $\mathrm{Cl}' = -\mathrm{Sl}^2$,
+$\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$, and let $r$ be an integer. Then there is a power
+series $g \in \mathbb{Q}[[x]]$, with every coefficient in $\mathbb{Z}[1/3]$, such that
+$\mathrm{Sl}(ru) = r\,\mathrm{Sl}(u) + \mathrm{Sl}(u)^4\,g(\mathrm{Sl}(u)^3)$. If moreover
+$r \ne 0$, there is a power series $h \in \mathbb{Q}[[x]]$, each coefficient of which has the form
+$a/(r^j 3^k)$ with $a \in \mathbb{Z}$ and $j, k \ge 0$, such that
+$r\,\mathrm{Sl}(u) = \mathrm{Sl}(ru) + r\,\mathrm{Sl}(u)^3\,\mathrm{Sl}(ru)\,h(\mathrm{Sl}(u)^3)$.
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart. `Sl(ru)` is
-`PowerSeries.rescale r S`. The second claim, `Sl(ru)⁻¹ = 1/(r Sl(u)) + Sl(u)² h(Sl(u)³)`, is
-stated multiplied through by `r Sl(u) Sl(ru)`: `r Sl(u) = Sl(ru) + r Sl(u)³ Sl(ru) h(Sl(u)³)`.
+Dividing by $r\,\mathrm{Sl}(u)\,\mathrm{Sl}(ru)$, the second identity reads
+$\mathrm{Sl}(ru)^{-1} = (r\,\mathrm{Sl}(u))^{-1} + \mathrm{Sl}(u)^2\,h(\mathrm{Sl}(u)^3)$ in the
+Laurent series in $u$. The four conditions determine $\mathrm{Sl}$ and $\mathrm{Cl}$ uniquely:
+they are the Taylor series at $0$ of the Eisenstein elliptic functions of the source.
 
 ## Depends on
 

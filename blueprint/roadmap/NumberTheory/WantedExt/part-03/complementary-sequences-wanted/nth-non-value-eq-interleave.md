@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_eq_interleave
 ---
 
-# Nth Non Value eq interleave
+# Complementary sequences from an interleaving function
 
-Interleaving functions: let `f` satisfy the hypotheses of `nthNonValue_eq_one_step`, let
-`α : ℕ → ℝ` interleave `f` (`f(m - 1) ≤ α(m) ≤ f(m)` for `m ≥ 2`), and let `h(n) ≥ 1` with
-`α(h(n)) ≤ n < α(h(n) + 1)` (for increasing `α` with `α(1) = 1` this is the paper's
-`h(n) = max {m ≥ 1 : α(m) ≤ n}`). Then `f_P(n)` is `n + h(n) + 1` if `n + h(n) ≥ f(h(n) + 1)`,
-`n + h(n) - 1` if `n + h(n) ≤ f(h(n))`, and `n + h(n)` otherwise.
+**Complementary sequences from an interleaving function.** Let
+$f : \mathbb{N} \to \mathbb{N}$ satisfy $f(1) \ge 1$ and $f(m + 1) \ge f(m) + m$ for all $m \ge 1$,
+and for $n \ge 1$ let $f_P(n)$ be the $n$-th positive integer that is not a value $f(m)$ with
+$m \ge 1$. Let $\alpha : \mathbb{N} \to \mathbb{R}$ satisfy $f(m - 1) \le \alpha(m) \le f(m)$ for
+all $m \ge 2$, and let $h : \mathbb{N} \to \mathbb{N}$ satisfy $h(n) \ge 1$ and
+$\alpha(h(n)) \le n < \alpha(h(n) + 1)$ for all $n \ge 1$.
+Then for every $n \ge 1$, $f_P(n) = n + h(n) + 1$ if $f(h(n) + 1) \le n + h(n)$; otherwise
+$f_P(n) = n + h(n) - 1$ if $n + h(n) \le f(h(n))$, and $f_P(n) = n + h(n)$ if not.
+
+For increasing $\alpha$ with $\alpha(1) = 1$, the paper's choice of $h(n)$ as the largest
+$m \ge 1$ with $\alpha(m) \le n$ satisfies the hypothesis on $h$.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

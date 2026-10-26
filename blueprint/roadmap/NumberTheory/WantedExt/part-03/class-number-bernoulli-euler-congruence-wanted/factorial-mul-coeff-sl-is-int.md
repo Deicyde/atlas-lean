@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.factorial_mul_coeff_sl_isInt
 ---
 
-# Factorial mul coeff sl is Int
+# The Hurwitz-normalized coefficients of Sl are integers
 
-The Hurwitz-normalized Taylor coefficients `c_{3m+1} = (3m+1)! C_{3m+1}` of
-`Sl(u) = Σ_m C_{3m+1} u^(3m+1)` are integers.
+**The Hurwitz-normalized coefficients of Sl are integers.** Let $\mathrm{Sl}, \mathrm{Cl}$ be
+formal power series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$,
+$\mathrm{Cl}' = -\mathrm{Sl}^2$, $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$, and let $C_n$ be
+the coefficient of $u^n$ in $\mathrm{Sl}$. Then $(3m + 1)!\,C_{3m+1}$ is an integer for every
+$m \ge 0$.
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart.
+The four conditions determine $\mathrm{Sl}$ and $\mathrm{Cl}$ uniquely: they are the Taylor series
+at $0$ of the Eisenstein elliptic functions of the source.
 
 ## Depends on
 

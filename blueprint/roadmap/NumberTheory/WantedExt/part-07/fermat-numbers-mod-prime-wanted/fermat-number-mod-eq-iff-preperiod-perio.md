@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_modEq_iff_preperiod_period
 ---
 
-# Fermat Number mod Eq iff preperiod period
+# Coincidences among Fermat residues
 
-Coincidences among Fermat residues: if `h` and `k` are the preperiod and period of
-`n ↦ F_n mod p` (tail from `h` periodic with period `k`, no earlier tail periodic, every
-period of the tail from `h` a multiple of `k`), then for `i < j`,
-`F_i ≡ F_j (mod p)` if and only if `i ≥ h` and `i ≡ j (mod k)`.
+**Coincidences among Fermat residues.** Write $F_n = 2^{2^n} + 1$. Let $p$ be a prime, and let
+$h$ and $k$ be the preperiod and the period of $n \mapsto F_n \bmod p$ in the following sense:
+$k > 0$, the sequence $n \mapsto F_{h+n} \bmod p$ is periodic with period $k$, every positive
+period of it is a multiple of $k$, and for no $h' < h$ is the sequence $n \mapsto F_{h'+n} \bmod p$
+periodic with a positive period. Then for all natural numbers $i < j$, $F_i \equiv F_j \pmod p$
+if and only if $i \ge h$ and $i \equiv j \pmod k$.
 
 ## Depends on
 

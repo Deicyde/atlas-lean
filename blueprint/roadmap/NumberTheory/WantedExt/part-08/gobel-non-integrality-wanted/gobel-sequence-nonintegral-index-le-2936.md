@@ -15,7 +15,7 @@ Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29
 
 ## Depends on
 
-- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
+- [The (k, l)-Göbel sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

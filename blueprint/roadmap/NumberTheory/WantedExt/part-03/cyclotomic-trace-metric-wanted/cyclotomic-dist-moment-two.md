@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicDistMoment_two
 ---
 
-# Lemma 4
+# Second moment of the trace distance on the cyclotomic box
 
-**Lemma 4.** The second moment is
-`M_2(p, N) = (2/3)(p³ - 2p² + 1) N (N + 1)`.
+**Second moment of the trace distance on the cyclotomic box.** Let $p$ be a prime, let $N$ be
+a natural number, and let $K$ be a field generated over $\mathbb{Q}$ by a primitive $p$-th root of
+unity, with fixed primitive $p$-th root of unity $\omega \in K$. Let $M_2(p, N)$ be the second
+moment of the trace metric $d$ of $K$ over the box $B(p, N)$: the average of
+$d(\alpha_a, \alpha_b)^2$ over all pairs $(a, b)$ of integer vectors in $\mathbb{Z}^{p-1}$ whose
+coordinates lie in $[-N, N]$, where $\alpha_a = a_1 \omega + \dots + a_{p-1} \omega^{p-1}$ and
+$d(\alpha, \beta)^2 = \sum_{j=1}^{p-1} \mathrm{Tr}_{K/\mathbb{Q}}((\alpha - \beta) \omega^j)^2$.
+Then $M_2(p, N) = \frac{2}{3} (p^3 - 2 p^2 + 1) N (N + 1)$.
 
-Only the exact formula is stated; the paper's `= (2/3) p³ N² + O(p² N² + p³ N)` follows
-from it.
+The asymptotic form $M_2(p, N) = \frac{2}{3} p^3 N^2 + O(p^2 N^2 + p^3 N)$ follows from this
+exact formula.
 
 ## Depends on
 
-- [Cyclotomic Dist Moment](cyclotomic-dist-moment.md)
+- [Moments of the trace distance on the cyclotomic box](cyclotomic-dist-moment.md)
 
 ## Sources
 

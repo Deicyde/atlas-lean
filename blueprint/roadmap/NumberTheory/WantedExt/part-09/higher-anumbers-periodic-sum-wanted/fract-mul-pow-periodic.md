@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.fract_mul_pow_periodic
 ---
 
-# Fract mul pow periodic
+# Periodicity and average of the fractional parts of $x p^n$
 
-For positive rational `x`, `{x p^n}` is periodic in `n ≥ D_x` with period `L_x`, and its
-average over one period is `x̄/(p - 1)`. Here `n ∈ ℤ` (the delay `D_x = -v_p(x)` can be negative),
-`L_x`, `D_x` are as identified by Lemma 2, and the average is taken over `n ∈ [D_x, D_x + L_x)`.
+**Periodicity and average of the fractional parts of $x p^n$.** Let $p$ be a prime and $x$ a
+positive rational. Write $\lbrace t \rbrace$ for the fractional part of $t$, $D_x = -v_p(x)$ for
+the delay and $L_x$ for the period of the base-$p$ expansion of $x$ (the order of $p$ modulo the
+prime-to-$p$ part of the denominator of $x$), and $\bar x$ for the average of its repeating
+base-$p$ digits. Then $\lbrace x p^{n + L_x} \rbrace = \lbrace x p^n \rbrace$ for every integer
+$n \ge D_x$, and
+
+$$\frac{1}{L_x} \sum_{n = D_x}^{D_x + L_x - 1} \lbrace x p^n \rbrace = \frac{\bar x}{p - 1}.$$
+
+Here $n$ ranges over the integers, since $D_x$ can be negative.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit Average](base-pdigit-average.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Average repeating digit](base-pdigit-average.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 
 ## Sources
 

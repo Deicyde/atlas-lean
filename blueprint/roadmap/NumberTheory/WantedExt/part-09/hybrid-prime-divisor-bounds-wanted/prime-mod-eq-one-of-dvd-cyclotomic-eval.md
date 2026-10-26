@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.prime_modEq_one_of_dvd_cyclotomic_eval
 ---
 
-# Prime mod Eq one of dvd cyclotomic eval
+# Prime divisors of $\Phi_p(x)$ other than $p$ are $1$ modulo $p$
 
-For distinct primes `ρ ≠ p` and a positive integer `x`, `ρ ∣ Φ_p(x)` implies
-`ρ ≡ 1 (mod p)`.
+**Prime divisors of $\Phi_p(x)$ other than $p$ are $1$ modulo $p$.** Let $\rho$ and $p$ be
+distinct primes, let $x$ be a positive integer, and let $\Phi_p$ be the $p$-th cyclotomic
+polynomial with integer coefficients. If $\rho \mid \Phi_p(x)$, then $\rho \equiv 1 \pmod p$.
 
 ## Depends on
 

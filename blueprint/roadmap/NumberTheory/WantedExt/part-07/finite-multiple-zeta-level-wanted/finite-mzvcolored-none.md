@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.finiteMZVColored_none
 ---
 
-# Finite MZVColored none
+# The empty color map gives zero
 
-The color map that is constantly `∅` gives `0`.
+**The empty color map gives zero.** For all natural numbers $p$ and $N$ and every tuple
+$k = (k_1, \dots, k_r)$ of natural numbers, if $c$ is the color map sending every
+$a \in \mathbb{Z}/N\mathbb{Z}$ to $\emptyset$, then the $p$-component $\zeta^c_{\mathcal{A},N}(k)_p$
+of the finite multiple zeta value of level $N$ with color map $c$ is $0$.
 
 ## Depends on
 
-- [Finite MZVColored](finite-mzvcolored.md)
+- [Finite multiple zeta value of level $N$ with a color map](finite-mzvcolored.md)
 
 ## Sources
 

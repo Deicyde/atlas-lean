@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isGenMarkovCharNumber_one_five_two
 ---
 
-# Is Gen Markov Char Number one five two
+# Characteristic number of $(1, 5, 2)$
 
-Characteristic value: `2` is the characteristic number of the Markov triple `(1, 5, 2)`.
+**Characteristic number of $(1, 5, 2)$.** The number $2$ is a characteristic number of
+$(m_r, m_t, m_s) = (1, 5, 2)$: indeed $0 < 2 < 5/2$ and $1 \cdot 2 \equiv 2 \pmod 5$.
 
 ## Depends on
 
-- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
+- [Characteristic number](is-gen-markov-char-number.md)
 
 ## Sources
 

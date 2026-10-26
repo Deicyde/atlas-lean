@@ -12,7 +12,7 @@ For `k ≥ 1` and `j ≥ k + 2`, `L_k^j(n_j) > L_{k+1}^{j+1}(n_j)` where `n_j = 
 
 ## Depends on
 
-- [Hof L](hof-l.md)
+- [The image length $L_k$](hof-l.md)
 
 ## Sources
 

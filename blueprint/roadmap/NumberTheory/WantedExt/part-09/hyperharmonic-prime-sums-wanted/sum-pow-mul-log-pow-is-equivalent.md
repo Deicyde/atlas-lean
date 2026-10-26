@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_log_pow_isEquivalent
 ---
 
-# Sum pow mul log pow is Equivalent
+# Asymptotics of power-logarithm sums
 
-Lemma 9: for `m, n, k ∈ ℕ`, as `x → ∞`,
-`∑_{ℓ=1}^{x} ℓ^m (log ℓ)^n ∼ x^{m+1} (log x)^n / (m+1)` and
-`∑_{ℓ=1}^{x} ℓ^m (log ℓ)^n / (log log ℓ)^k ∼ x^{m+1} (log x)^n / ((m+1)(log log x)^k)`.
-The terms `ℓ = 1, 2` of the second sum use Lean's conventions for `log 0` and division by `0`;
-finitely many terms do not affect the asymptotic.
+**Asymptotics of power-logarithm sums.** For all $m, n, k \in \mathbb{N}$, as the natural
+number $x$ tends to infinity,
+
+$$\sum_{\ell=1}^{x} \ell^m (\log \ell)^n \sim \frac{x^{m+1} (\log x)^n}{m+1}$$
+
+and
+
+$$\sum_{\ell=1}^{x} \frac{\ell^m (\log \ell)^n}{(\log \log \ell)^k} \sim
+\frac{x^{m+1} (\log x)^n}{(m+1)(\log \log x)^k}.$$
+
+In the second sum the term $\ell = 1$, where $\log \log 1 = \log 0$ is undefined, is evaluated with
+the conventions $\log 0 = 0$ and $t/0 = 0$; a single term does not affect the asymptotic.
 
 ## Depends on
 

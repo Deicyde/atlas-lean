@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem847
 
-- [Has Few3 APs](has-few3-aps.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Sets with uniformly large 3AP-free subsets](has-few3-aps.md)
+- [Erdős Problem 847](conjecture.md)
+- [Erdős Problem 847 is false](conjecture-refuted.md)

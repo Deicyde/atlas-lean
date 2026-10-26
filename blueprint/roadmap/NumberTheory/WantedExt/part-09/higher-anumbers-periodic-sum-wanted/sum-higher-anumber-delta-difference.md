@@ -5,24 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.sum_higherANumberDelta_difference
 ---
 
-# Sum higher ANumber Delta difference
+# Sum of $\delta$ between the $\gamma$- and $\tau$-cutoffs
 
-`∑_{i=⌊γ^{-1} p^n⌋+1}^{⌊τ^{-1} p^n⌋} δ(i) = ½ (τ^{-1} - γ^{-1})(1 - 1/τ_D) p^n +
-(γ̄^{-1}/(2p) (1 - 1/τ_D) - F̄_{γ^{-1}}) n + C(n)` with `C = B_{τ^{-1}} - B_{γ^{-1}}`
-periodic for `n ≥ D_{γ^{-1}}` with period `lcm(L_{τ^{-1}}, L_{γ^{-1}})`; the paper's explicit
-`B` functions are replaced by this existential, and `F̄_{γ^{-1}}` is averaged as in
-Proposition 5.
+**Sum of $\delta$ between the $\gamma$- and $\tau$-cutoffs.** Let $p$ be a prime, let $d$
+be a divisor of $p - 1$ and let $r \ge 1$ be an integer. Write $\tau = (p + 1)/d$,
+$\gamma = ((p - 1) r + (p + 1))/d$ and $\tau_D$ for the denominator of $\tau$ in lowest terms;
+let $\delta$ be the rounding indicator, and for a rational $y$ let $L_y$ be the period, $D_y$
+the delay and $\bar y$ the average repeating digit of the base-$p$ expansion of $y$, and let
+$F_y(e)$ be the $\delta_0$ correction sum of Lemma 9. Put $D = D_{\gamma^{-1}}$,
+$L = L_{\gamma^{-1}}$, $s = \max(D + 1, 0)$ and
+$\bar F = \frac{1}{L} \sum_{e=s}^{s+L-1} F_{\gamma^{-1}}(e)$. Then there is a function
+$C : \mathbb{N} \to \mathbb{Q}$ such that $C(n + \operatorname{lcm}(L_{\tau^{-1}}, L)) = C(n)$
+for every natural number $n \ge D$, and for every natural number $n \ge D$,
+
+$$\sum_{\lfloor p^n/\gamma \rfloor < i \le \lfloor p^n/\tau \rfloor} \delta(i) =
+\frac{1}{2} (\tau^{-1} - \gamma^{-1}) \left(1 - \frac{1}{\tau_D}\right) p^n +
+\left(\frac{\overline{\gamma^{-1}}}{2p} \left(1 - \frac{1}{\tau_D}\right) - \bar F\right) n +
+C(n).$$
+
+The paper's explicit $B$ functions are replaced by the existential $C$.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit Average](base-pdigit-average.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Average repeating digit](base-pdigit-average.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 - [Delta Zero Sum Correction](delta-zero-sum-correction.md)
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Tau Den](tau-den.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The denominator $\tau_D$](tau-den.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

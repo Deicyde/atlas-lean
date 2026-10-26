@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.silentTerms_table_five_mod_six
 ---
 
-# Silent Terms table five mod six
+# Silent-term formulas on table (33), case $\sigma \equiv 5 \pmod 6$
 
-Proposition 3, case `σ ≡ 5 (mod 6)`, `σ ≥ 7`: with `x_{-3} = x_0 + c₁`, `x_{-2} = 1`,
-`x_{-1} = -1`, `z_0 = x_0 + c₂` (`c₁ ≠ c₂`) and, for `4 ≤ m ≤ σ - 3`, `x_{-m} = -1` if
-`m ≡ 2 (mod 3)` and `x_{-m} = 1` otherwise (table (33)), the value
-`w = -K_{σ-5}(x)_{-σ+3} - z_0 K_{σ-4}(x)_{-σ+3}` that formula (29) assigns to `x_{-σ+1}` is
-nonzero and formula (29) gives `x_{-σ+2} = 1 + c₂ - c₁`.
+**Silent-term formulas on table (33), case $\sigma \equiv 5 \pmod 6$.** Let $\sigma \ge 7$ be
+an integer with $\sigma \equiv 5 \pmod 6$, let $c_1 \ne c_2$ be integers, and let
+$x : \mathbb{Z} \to \mathbb{Z}$ be a bi-infinite integer sequence with $x_{-3} = x_0 + c_1$,
+$x_{-2} = 1$, $x_{-1} = -1$ and, for all integers $4 \le m \le \sigma - 3$, $x_{-m} = -1$ if
+$m \equiv 2 \pmod 3$ and $x_{-m} = 1$ otherwise. Write $K_a(x)_b$ for the extended continuant of
+order $a$ with start index $b$, and put $z_0 = x_0 + c_2$ and
+$w = -K_{\sigma-5}(x)_{-\sigma+3} - z_0 K_{\sigma-4}(x)_{-\sigma+3}$. Then $w \ne 0$ and
+$-1 + K_{\sigma-6}(x)_{-\sigma+4} + z_0 K_{\sigma-5}(x)_{-\sigma+4} = (1 + c_2 - c_1) w$.
+
+So formula (29) of Theorem 7, with $z_0 = x_0 + c_2$, gives $x_{-\sigma+1} = w \ne 0$ and
+$x_{-\sigma+2} = 1 + c_2 - c_1$.
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Sources
 

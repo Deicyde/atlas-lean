@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hyperharmonic_isEquivalent
 ---
 
-# Hyperharmonic is Equivalent
+# Asymptotic of the hyperharmonic numbers (Mező)
 
-Lemma 1 (Mező): for a fixed order `r ≥ 1`, `h_n^{(r)} ∼ n^{r-1} log n / (r-1)!` as
-`n → ∞`.
+**Asymptotic of the hyperharmonic numbers (Mező).** For every natural number $r \ge 1$, the
+hyperharmonic numbers $h_n^{(r)}$ of order $r$ are asymptotically equivalent, as $n \to \infty$,
+to $n^{r-1} \log n / (r-1)!$, where $\log$ is the natural logarithm:
+
+$$h_n^{(r)} \sim \frac{n^{r-1} \log n}{(r-1)!} \qquad (n \to \infty).$$
 
 ## Depends on
 
-- [Hyperharmonic](hyperharmonic.md)
+- [Hyperharmonic numbers](hyperharmonic.md)
 
 ## Sources
 

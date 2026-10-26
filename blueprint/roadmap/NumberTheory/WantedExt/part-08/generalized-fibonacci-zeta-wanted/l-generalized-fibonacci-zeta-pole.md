@@ -5,12 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZetaPole
 ---
 
-# L Generalized Fibonacci Zeta Pole
+# Possible poles of the ℓ-generalized Fibonacci zeta function
 
-The possible pole indexed by the exponent tuple `κ` and integer `n`.  The natural
-number called `k` in the paper is represented by the sum of `κ` over the non-dominant
-roots.  Only the values of the unrestricted function `κ : ℂ → ℕ` on that finite root
-set enter this definition.
+**Possible poles of the ℓ-generalized Fibonacci zeta function.** Let $\ell$ be a natural
+number, let $\alpha$ be a real number, and let $R$ be the set of complex roots of
+$X^\ell - \sum_{i\lt \ell} X^i$ other than $\alpha$. For a function $\kappa$ from $\mathbb{C}$ to the
+natural numbers and an integer $n$, the possible pole indexed by $(\kappa, n)$ is
+
+$$
+s_{\kappa,n} = -\sum_{\beta \in R} \kappa(\beta) +
+\frac{2 n \pi i + \sum_{\beta \in R} \kappa(\beta) \log \beta}{\log \alpha},
+$$
+
+where $\log$ is the principal branch of the complex logarithm.
+
+Only the values of $\kappa$ on $R$ enter; their sum is the number called $k$ in the paper.
 
 ## Depends on
 
@@ -18,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
+- [Other roots of the ℓ-generalized Fibonacci characteristic polynomial](l-generalized-fibonacci-other-roots.md)
 
 ## Sources
 

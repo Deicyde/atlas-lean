@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_order_add_mul_prime_eq
 ---
 
-# Theorem 2
+# Unique order-preserving lift modulo $p^2$
 
-**Theorem 2**: for `a` coprime to the odd prime `p`, there
-exists a unique `m` modulo `p` such that
-`ord_{p²}(a + mp) = ord_p(a)`.
+**Unique order-preserving lift modulo $p^2$.** Let $p$ be an odd prime and let $a$ be
+a natural number coprime to $p$. Writing $\operatorname{ord}_n(b)$ for the multiplicative
+order of $b$ modulo $n$, there is exactly one $m \in \{0, 1, \dots, p - 1\}$ such that
+$\operatorname{ord}_{p^2}(a + mp) = \operatorname{ord}_p(a)$.
 
 ## Depends on
 
-- [Mul Ord Mod](mul-ord-mod.md)
+- [Multiplicative order modulo $n$](mul-ord-mod.md)
 
 ## Sources
 

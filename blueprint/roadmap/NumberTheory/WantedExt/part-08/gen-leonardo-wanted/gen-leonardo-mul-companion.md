@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_mul_companion
 ---
 
-# Gen Leonardo mul companion
+# Product of a generalized Leonardo number and its dual
 
-The product identity `L_{k,n} * M_{k,n} = (k+1) * L_{k,2n+1} -
-k * L_{k,n+3} + k * (2k+1)`.
+**Product of a generalized Leonardo number and its dual.** Let $k$ be an integer, and let
+$L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized Leonardo
+numbers. For every natural number $n$,
+
+$$L_{k,n} M_{k,n} = (k+1) L_{k,2n+1} - k L_{k,n+3} + k\,(2k+1).$$
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
-- [Gen Leonardo Companion](gen-leonardo-companion.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
+- [Dual generalized Leonardo numbers](gen-leonardo-companion.md)
 
 ## Sources
 

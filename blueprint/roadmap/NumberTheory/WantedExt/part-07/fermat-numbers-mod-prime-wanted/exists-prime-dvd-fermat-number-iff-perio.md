@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_dvd_fermatNumber_iff_period_eq_one
 ---
 
-# Exists prime dvd fermat Number iff period eq one
+# Prime divisors of Fermat numbers and the period of Fermat residues
 
-An odd prime `p` divides some Fermat number if and only if the primitive period `k(p)` of
-`n ↦ F_n mod p` equals `1`. The paper's set `F` is the set of primes dividing some `F_n`
-(`n ≥ 0`). `k` is the primitive period of the tail from `h`: that tail is periodic with
-period `k > 0` and every positive period of it is a multiple of `k`. The paper takes `h = h(p)`,
-the pre-period; the primitive period is the same for every `h ≥ h(p)` and no tail from
-`h < h(p)` is periodic, so `h` is left free.
+**Prime divisors of Fermat numbers and the period of Fermat residues.** Write
+$F_n = 2^{2^n} + 1$ for the $n$-th Fermat number. Let $p$ be an odd prime, let $h$ be a natural
+number and let $k$ be a positive integer such that the sequence $n \mapsto F_{h+n} \bmod p$ is
+periodic with period $k$ and every positive period of it is a multiple of $k$. Then $p$ divides
+$F_n$ for some natural number $n$ if and only if $k = 1$.
+
+Any such $h$ is at least the preperiod of $n \mapsto F_n \bmod p$, and $k$ is then the primitive
+period of $n \mapsto F_n \bmod p$, which does not depend on $h$.
 
 ## Depends on
 

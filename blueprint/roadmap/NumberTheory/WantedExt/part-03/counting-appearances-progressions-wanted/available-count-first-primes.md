@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_firstPrimes
 ---
 
-# Theorem 1, available count
+# Available integers for the first primes
 
-**Theorem 1, available count**: for every choice of residue
-classes modulo the first `k` primes, the number of available
-integers in `[1, P_k]` is `a_k`.
+**Available integers for the first primes.** Let $k$ be a natural number, let
+$p_1, \dots, p_k$ be the first $k$ primes, and let $r_1, \dots, r_k$ be any natural numbers. Call an
+integer $n$ available if $n \equiv r_i \pmod{p_i}$ holds for at most one index $i$. Then the number
+of available integers $n$ with $1 \le n \le p_1 p_2 \cdots p_k$ equals
+$a_k = A_k(p_1, \dots, p_k)$, the determinant of the $k \times k$ matrix with diagonal entries
+$p_1, \dots, p_k$ and all other entries $1$.
 
 ## Depends on
 
-- [Available Count](available-count.md)
-- [First Primes](first-primes.md)
-- [Ones Diag Det](ones-diag-det.md)
+- [Number of available integers](available-count.md)
+- [The first primes](first-primes.md)
+- [Ones-diagonal determinant](ones-diag-det.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.one_div_sin_pi_lt
 ---
 
-# One div sin pi lt
+# Partial-fraction bound for the cosecant
 
-For `0 < x < 1`, `1 / sin(πx) < (1/π) (1/x + 2x / (1 - x²))`: the first two terms of the
-partial-fraction expansion of `π / sin(πx)` bound it from above.
+**Partial-fraction bound for the cosecant.** For every real number $x$ with $0 < x < 1$,
+
+$$\frac{1}{\sin(\pi x)} < \frac{1}{\pi}\left(\frac{1}{x} + \frac{2x}{1 - x^2}\right).$$
+
+That is, the first two terms of the partial-fraction expansion of $\pi / \sin(\pi x)$ bound it
+from above.
 
 ## Depends on
 

@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_of_prime
 ---
 
-# Proposition 2
+# Primes are not $(k,\ell)$-near-perfect
 
-**Proposition 2**: a prime is not
-`[k,ℓ]`-near-perfect (for `ℓ ≥ 1`).
+**Primes are not $[k,\ell]$-near-perfect.** Let $k$ and $\ell$ be natural numbers with
+$\ell \ge 1$ and let $p$ be a prime. Then $p$ is not $[k,\ell]$-near-perfect.
 
 ## Depends on
 
-- [Is KLNear Perfect](is-klnear-perfect.md)
+- [$(k,\ell)$-near-perfect numbers](is-klnear-perfect.md)
 
 ## Sources
 

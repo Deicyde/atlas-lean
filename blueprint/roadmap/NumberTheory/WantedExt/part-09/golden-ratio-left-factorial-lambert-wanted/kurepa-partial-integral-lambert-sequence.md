@@ -5,14 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kurepaPartialIntegral_lambertSequence_bounds
 ---
 
-# Kurepa Partial Integral lambert Sequence bounds
+# Lambert bounds for the left factorial
 
-Theorem 10: `b n < !n < b n + 1` for `n ≥ 5`, where `b n = !n(a n)` is Kurepa's partial
-integral at `a n` and `!n = ∑_{k<n} k!`.
+**Lambert bounds for the left factorial.** Let $n \ge 5$ be an integer, let
+$!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
+$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, let
+$h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and
+
+$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
+
+Then $K_n(a) < {!n} < K_n(a) + 1$.
+
+The two conditions on $a$ say exactly that
+$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
+is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$, and $K_n(a)$
+is its $b(n)$.
 
 ## Depends on
 
-- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Kurepa's partial integral](kurepa-partial-integral.md)
 - [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources

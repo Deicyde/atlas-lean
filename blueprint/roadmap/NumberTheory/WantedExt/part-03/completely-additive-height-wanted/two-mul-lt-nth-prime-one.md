@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_lt_nthPrimeOne
 ---
 
-# Two mul lt nth Prime One
+# The $k$-th prime exceeds $2k$ for $k \ge 6$
 
-Lemma 2: `pₖ > 2k` for all `k ≥ 6`.
+**The $k$-th prime exceeds $2k$ for $k \ge 6$.** For every natural number $k \ge 6$, the
+$k$-th prime $p_k$, indexed from one so that $p_1 = 2$, satisfies $p_k > 2k$.
 
 ## Depends on
 
-- [Nth Prime One](nth-prime-one.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

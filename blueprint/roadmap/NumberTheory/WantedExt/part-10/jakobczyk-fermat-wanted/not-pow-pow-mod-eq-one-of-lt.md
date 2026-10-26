@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_pow_pow_modEq_one_of_lt
 ---
 
-# Not pow pow mod Eq one of lt
+# Smaller iterated powers are not congruent to one
 
-For `a, b, m ≥ 2` and `n ≥ 1`: if `a^{b^n} ≢ 1 (mod m)`, then `a^{b^t} ≢ 1 (mod m)` for every
-`t < n`.
+**Smaller iterated powers are not congruent to one.** Let $a, b, m \ge 2$ and $n \ge 1$ be
+natural numbers with $a^{b^n} \not\equiv 1 \pmod m$. Then $a^{b^t} \not\equiv 1 \pmod m$ for every
+natural number $t < n$.
 
 ## Depends on
 

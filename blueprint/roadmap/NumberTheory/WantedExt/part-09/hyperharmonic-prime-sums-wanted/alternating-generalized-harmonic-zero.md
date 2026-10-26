@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.alternatingGeneralizedHarmonic_zero
 ---
 
-# Alternating Generalized Harmonic zero
+# Alternating generalized harmonic numbers of index zero
 
-`H̄_0^{(s)} = 0`.
+**Alternating generalized harmonic numbers of index zero.** For every real number $s$, the
+alternating generalized harmonic number $\overline{H}_0^{(s)}$ is $0$.
 
 ## Depends on
 
-- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
+- [Alternating generalized harmonic numbers](alternating-generalized-harmonic.md)
 
 ## Sources
 

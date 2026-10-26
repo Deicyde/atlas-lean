@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.goormaghtigh_numbers_length_ge_five_finite_of_abc
 ---
 
-# Goormaghtigh numbers length ge five finite of abc
+# Under abc, finitely many Goormaghtigh numbers have both lengths at least five
 
-Assuming the abc conjecture, there are only finitely many Goormaghtigh numbers where
-neither representation has length three or four, i.e. finitely many `N` that are repunits
-of length at least five in two distinct bases.
+**Under abc, finitely many Goormaghtigh numbers have both lengths at least five.** Assume the
+abc conjecture in the following form: for every real $\varepsilon > 0$, there are only finitely
+many triples $(a, b, c)$ of positive integers with $a + b = c$, $\gcd(a, b) = 1$ and
+$\operatorname{rad}(abc)^{1 + \varepsilon} \le c$, where $\operatorname{rad}(k)$ is the product of
+the distinct primes dividing $k$. Then there are only finitely many natural numbers $N$ for which
+there exist natural numbers $x, y, m, n$ with $2 \le x < y$ and $n \ge 5$ such that
 
-The abc conjecture is the hypothesis `habc`: for every `ε > 0`, only finitely many
-coprime positive triples `a + b = c` satisfy `rad(abc)^(1 + ε) ≤ c`. The paper states it
-for relatively prime integers; the positive-triple form used here is the standard
+$$N = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i.$$
+
+Such an $N$ is a repunit of length $m$ in base $x$ and of length $n \ge 5$ in base $y$; since
+$x < y$, equality forces $m > n$, so both lengths are at least five. The paper states the abc
+conjecture for relatively prime integers; the positive-triple form used here is the standard
 equivalent one.
 
 ## Depends on

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.shortIntervalDivisorCount_le_card_divisors
 ---
 
-# Short Interval Divisor Count le card divisors
+# Trivial bound for the short-interval divisor count
 
-`D_n(X, Y) ≤ τ(n)`.
+**Trivial bound for the short-interval divisor count.** For every natural number $n$ and
+all real numbers $X$ and $Y$, the number $D_n(X, Y)$ of positive divisors of $n$ in
+$[X, X + Y]$ is at most the number $\tau(n)$ of positive divisors of $n$. Here $0$ is taken to
+have no divisors, so $D_0(X, Y) = \tau(0) = 0$.
 
 ## Depends on
 
-- [Short Interval Divisor Count](short-interval-divisor-count.md)
+- [Number of divisors in a short interval](short-interval-divisor-count.md)
 
 ## Sources
 

@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.hyperharmonicEulerSum_eq_iteratedDeriv_beta
 ---
 
-# Hyperharmonic Euler Sum eq iterated Deriv beta
+# Beta-function evaluation of hyperharmonic Euler sums
 
-Beta-function evaluation: for `k, p ≥ 0`, `ℜ(r) < p + 1` and `ℜ(a) > -k`,
-`p! k! S(k, r; p + 1; a) = (-1)^p D_a^p D_r^k B(a, 1 - r)`.
+**Beta-function evaluation of hyperharmonic Euler sums.** Let $k, p \ge 0$ be integers and
+let $r, a$ be complex numbers with $\operatorname{Re}(r) < p + 1$ and $\operatorname{Re}(a) > -k$,
+such that $r$ is not a positive integer and $a$ is not a nonpositive integer. Write
+$H_n^{[r]}(k)$ for the generalized hyperharmonic number and let
+$S(k, r; p + 1; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^{p+1}$. Then
 
-`B(a, 1 - r)` is written `Γ(a) Γ(1 - r) / Γ(a + 1 - r)` with `(Γ(a + 1 - r))⁻¹` (Mathlib's value
-`0` at the poles of `Γ` is the value of the entire function `1/Γ` there). Deviation: the points
-`r ∈ {1, 2, …}` (where the source's statement holds after removing a singularity of
-`Γ(1 - r)`) and `a ∈ {0, -1, -2, …}` are excluded. The source's analytic-continuation sentence
-is not formalized.
+$$p! \, k! \, S(k, r; p + 1; a) = (-1)^p D_a^p D_r^k B(a, 1 - r),$$
+
+where $B(a, 1 - r) = \Gamma(a) \Gamma(1 - r) \cdot (1/\Gamma)(a + 1 - r)$, with $1/\Gamma$ the
+entire reciprocal of the Gamma function (zero at the poles of $\Gamma$), and $D_a^p D_r^k$ means
+the $k$-th complex derivative in $r$ followed by the $p$-th complex derivative in $a$.
+
+The source also states the identity at positive integers $r$, after removing the singularity of
+$\Gamma(1 - r)$, and at nonpositive integers $a$, and extends it by analytic continuation; those
+cases are not included here.
 
 ## Depends on
 
-- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
+- [Generalized hyperharmonic Euler sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

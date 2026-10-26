@@ -4,6 +4,6 @@ navigation: module
 
 # KGeneralized Fibonacci Discriminant
 
-- [Abs discr k Generalized Fibonacci Polynomial mem iff](abs-discr-k-generalized-fibonacci-polyno.md)
-- [K Generalized Fibonacci discr eq index bounds](k-generalized-fibonacci-discr-eq-index-b.md)
-- [K Generalized Fibonacci discr eq bounds](k-generalized-fibonacci-discr-eq-bounds.md)
+- [When the absolute discriminant of a $k$-generalized Fibonacci polynomial is a $k$-generalized Fibonacci number](abs-discr-k-generalized-fibonacci-polyno.md)
+- [Bounds on the index in Luca's discriminant equation](k-generalized-fibonacci-discr-eq-index-b.md)
+- [Absolute bounds on solutions of Luca's discriminant equation](k-generalized-fibonacci-discr-eq-bounds.md)

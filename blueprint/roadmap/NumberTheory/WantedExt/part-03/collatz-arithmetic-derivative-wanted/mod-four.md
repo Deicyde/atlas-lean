@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatibleSemiprimePair.mod_four
 ---
 
-# Mod four
+# Compatible semiprimes modulo 4
 
-If `pq` is compatible with another semiprime, then `pq ≡ 3 (mod 4)`; hence one of `p, q` is
-`≡ 1` and the other `≡ 3 (mod 4)`.
+**Compatible semiprimes modulo 4.** Let $p, q, r, s$ be primes with $2(r + s) = p + q$ and
+$2rs = 3pq + 1$, so that the semiprime $pq$ is compatible with the semiprime $rs$. Then
+$pq \equiv 3 \pmod 4$, and one of $p, q$ is congruent to $1$ and the other to $3$ modulo $4$.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

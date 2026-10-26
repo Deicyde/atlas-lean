@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.monoidHom_image_liftFiber_subset
 ---
 
-# Lemma 3
+# Endomorphisms of the units modulo $p^2$ respect the fibers
 
-**Lemma 3**: for any endomorphism `f` of `(ZMod (p^2))ˣ` and
-any `a`, `f '' P_a ⊆ P_{f a}`.
+**Endomorphisms of the units modulo $p^2$ respect the fibers.** Let $p$ be an odd
+prime, let $f$ be a group endomorphism of $(\mathbb{Z}/p^2\mathbb{Z})^\times$, and let
+$a$ be a unit modulo $p^2$. Writing $P_b$ for the set of units $x$ modulo $p^2$ with
+$x \equiv b \pmod p$, the image of $P_a$ under $f$ is contained in $P_{f(a)}$.
 
 ## Depends on
 

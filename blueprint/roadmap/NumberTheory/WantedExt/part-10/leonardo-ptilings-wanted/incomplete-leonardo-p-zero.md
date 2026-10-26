@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.incompleteLeonardoP_zero
 ---
 
-# Incomplete Leonardo P zero
+# Incomplete Leonardo p-numbers at zero
 
-`𝓛_{p,n}(0) = 1`.
+**Incomplete Leonardo p-numbers at zero.** For all natural numbers $p$ and $n$, the
+incomplete Leonardo $p$-number $\mathcal{L}_{p,n}(0)$ equals $1$.
 
 ## Depends on
 
-- [Incomplete Leonardo P](incomplete-leonardo-p.md)
+- [Incomplete Leonardo p-numbers](incomplete-leonardo-p.md)
 
 ## Sources
 

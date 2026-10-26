@@ -5,21 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.exists_finiteMZV_ne_zero_of_conjectures
 ---
 
-# Proposition 2
+# Regular and non-Wieferich primes give non-vanishing finite multiple zeta values
 
-**Proposition 2.** (i) If there are infinitely many regular primes, then for every
-`w ∉ {1, 2, 4}` some finite multiple zeta value of weight `w` is non-zero in `𝒜`.
-(ii) If there are infinitely many non-Wieferich primes, then for every even `N > 0` and
-every `w` some finite multiple zeta value of level `N` and weight `w` is non-zero.
+**Regular and non-Wieferich primes give non-vanishing finite multiple zeta values.**
+(i) Suppose that infinitely many odd primes $p$ are regular, in the sense that $p$ does not
+divide the class number of any $p$-th cyclotomic field over $\mathbb{Q}$. Then for every
+natural number $w \notin \{1, 2, 4\}$ there is an index $k = (k_1, \dots, k_r)$ of positive
+integers with $k_1 + \dots + k_r = w$ such that
+$\zeta_p(k) = \sum_{0 < m_1 < \dots < m_r < p} m_1^{-k_1} \cdots m_r^{-k_r}$ is non-zero in
+$\mathbb{Z}/p\mathbb{Z}$ for infinitely many primes $p$.
+(ii) Suppose that infinitely many primes are not Wieferich primes. Then for every even $N > 0$
+and every natural number $w$ there are an index $k = (k_1, \dots, k_r)$ of positive integers with
+$k_1 + \dots + k_r = w$ and a color map $c$ from $\mathbb{Z}/N\mathbb{Z}$ to
+$(\mathbb{Z}/N\mathbb{Z})^r \cup \{\varnothing\}$ such that the $p$-component
+$\zeta^{c}_{p,N}(k)$ of the finite multiple zeta value of level $N$ with color map $c$ is
+non-zero in $\mathbb{Z}/p\mathbb{Z}$ for infinitely many primes $p$.
 
-Non-zero in `𝒜` means non-zero modulo infinitely many primes. Regular primes use the class
-number of any `K` with `IsCyclotomicExtension {p} ℚ K`. The paper's positive weight is
-relaxed to `w ≥ 0` (the empty index has value `1`).
+The weight $w = 0$ is allowed (the empty index has value $1$); the paper takes $w$ positive.
 
 ## Depends on
 
-- [Colored Finite MZV](colored-finite-mzv.md)
-- [Finite MZVColored](finite-mzvcolored.md)
+- [Colored finite multiple harmonic sums](colored-finite-mzv.md)
+- [Finite multiple zeta value of level $N$ with a color map](finite-mzvcolored.md)
 - [Wieferich primes](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime.md)
 
 ## Sources

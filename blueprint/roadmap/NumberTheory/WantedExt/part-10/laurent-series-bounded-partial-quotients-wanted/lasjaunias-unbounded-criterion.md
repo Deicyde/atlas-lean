@@ -5,23 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.lasjaunias_unbounded_criterion
 ---
 
-# Lasjaunias unbounded criterion
+# Lasjaunias's criterion for unbounded partial quotients
 
-Lasjaunias's criterion: let `α` be irrational with `α = (A α^q + B)/(C α^q + D)`,
-`Δ = AD - BC ≠ 0`, `C ≠ 0`. If some convergent `P/Q = P_n/Q_n` in lowest terms lies in
-`F = {P/Q : |α - P/Q| < |α^q + D/C|^{1/q}}` and satisfies
-`|α - P/Q| < |Δ|^{1/(q-1)} |C α^q + D|^{2/(q-1)}` and `|b_{n+1}| > |Δ|^{1/(q-1)}`, then `α` has
-unbounded partial quotients. Fractional exponents are cleared by multiplying the logarithmic
-(degree) inequalities by `q` or `q - 1`.
+**Lasjaunias's criterion for unbounded partial quotients.** Let $\mathbb{F}_q$ be a finite
+field, let $A, B, C, D \in \mathbb{F}_q[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$, and let
+$\alpha \in \mathbb{F}_q((x^{-1}))$ be irrational with $\alpha = (A\alpha^q + B)/(C\alpha^q + D)$.
+Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where $\deg y$ is
+the largest exponent of $x$ occurring in $y \ne 0$, and write $P_n/Q_n$ for the convergents and
+$b_n$ for the partial quotients of $\alpha$. Suppose that for some $n \ge 0$ there are coprime
+$P, Q \in \mathbb{F}_q[x]$ with $Q \ne 0$ and $P/Q = P_n/Q_n$ such that
+$|\alpha - P/Q|^q < |\alpha^q + D/C|$, $|\alpha - P/Q|^{q-1} < |\Delta|\,|C\alpha^q + D|^2$ and
+$|b_{n+1}|^{q-1} > |\Delta|$. Then $\alpha$ does not have bounded partial quotients.
+
+In the paper these conditions read $|\alpha - P/Q| < |\alpha^q + D/C|^{1/q}$,
+$|\alpha - P/Q| < |\Delta|^{1/(q-1)} |C\alpha^q + D|^{2/(q-1)}$ and
+$|b_{n+1}| > |\Delta|^{1/(q-1)}$.
 
 ## Depends on
 
-- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Laurent series with bounded partial quotients](laurent-has-bounded-partial-quotients.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

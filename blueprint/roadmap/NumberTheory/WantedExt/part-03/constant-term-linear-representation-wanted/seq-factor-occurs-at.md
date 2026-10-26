@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.SeqFactorOccursAt
 ---
 
-# Seq Factor Occurs At
+# Occurrence of a sequence factor at a position
 
-The factor of `s` of length `ℓ` starting at position `i` also occurs at position `i'`.
+**Occurrence of a sequence factor at a position.** Let $s = (s_n)_{n \ge 0}$ be a sequence and
+let $i$, $\ell$ and $i'$ be natural numbers. The factor of $s$ of length $\ell$ starting at
+position $i$ occurs at position $i'$ when $s_{i'+t} = s_{i+t}$ for every natural number $t < \ell$.
 
 ## Depends on
 

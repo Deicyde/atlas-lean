@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_choose_mul_incompleteLeonardoP
 
 ## Depends on
 
-- [Incomplete Leonardo P](incomplete-leonardo-p.md)
+- [Incomplete Leonardo p-numbers](incomplete-leonardo-p.md)
 
 ## Sources
 

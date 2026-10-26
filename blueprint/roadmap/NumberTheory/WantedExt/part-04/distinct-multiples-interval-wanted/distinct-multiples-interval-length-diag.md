@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.distinctMultiplesIntervalLength_diag_bounds
 ---
 
-# Distinct Multiples Interval Length diag bounds
+# Erdős–Pomerance bounds for the diagonal interval length
 
-Lemma 3 (Erdős and Pomerance): for every `ε > 0` and all large enough `n`,
-`(2/√e - ε) n √(log n / log log n) < f(n, n) < (2 + ε) n √(log n)`, the paper's
-`(2/√e + o(1)) n √(log n / log log n) < f(n, n) < (2 + o(1)) n √(log n)`.  The record's
-constants are garbled; they are read from the paper text (arXiv:2601.16972, same paper,
-Lemma 3), consistent with the record's `√2e > 1.21` remark (`2/√e ≈ 1.213`).
+**Erdős–Pomerance bounds for the diagonal interval length.** For natural numbers $n$ and $m$,
+let $f(n, m)$ be the least natural number $L$ such that the interval $(m, m + L]$ contains
+distinct multiples of $1, \dots, n$. For every real $\varepsilon > 0$ and all sufficiently large
+natural numbers $n$,
+
+$$
+\left(\frac{2}{\sqrt{e}} - \varepsilon\right) n \sqrt{\frac{\log n}{\log \log n}} < f(n, n) <
+(2 + \varepsilon)\, n \sqrt{\log n}.
+$$
 
 ## Depends on
 
@@ -20,4 +24,5 @@ Lemma 3), consistent with the record's `√2e > 1.21` remark (`2/√e ≈ 1.213`
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DistinctMultiplesIntervalWanted](../../../../../sources/v2/WantedExt.md)
+- the constants are read from the paper text (arXiv:2601.16972, same paper, Lemma 3), since the record's are garbled; they agree with the record's `√2e > 1.21` remark (`2/√e ≈ 1.213`).
 - Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Lemma 3 (`integers-2026-A7-lem-3`), quoting Erdős and Pomerance.

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.padicValRat_two_harmonic_sub_pow
 ---
 
-# Padic Val Rat two harmonic sub pow
+# 2-adic valuation of $H_n - H_{n-2^r}$
 
-Valuation for shifts by powers of two.
+**2-adic valuation of $H_n - H_{n-2^r}$.** Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
+harmonic number and let $\nu_2$ denote the $2$-adic valuation on the rational numbers. For all
+natural numbers $r$ and $n$ with $2^r \le n$,
+$\nu_2(H_n - H_{n-2^r}) = -r - \nu_2(\lfloor n / 2^r \rfloor)$.
 
 ## Depends on
 

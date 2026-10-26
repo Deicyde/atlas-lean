@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.cube_sub_cube_eq_two_or_one_iff
 ---
 
-# Cube sub cube eq two or one iff
+# Integer solutions of $u^3 - v^3 = 2$ and $u^3 - v^3 = 1$
 
-`u³ - v³ = 2` has the unique integer solution `(1, -1)`, and `u³ - v³ = 1`
-has exactly the integer solutions `(1, 0)` and `(0, -1)`.
+**Integer solutions of $u^3 - v^3 = 2$ and $u^3 - v^3 = 1$.** For all integers $u$ and $v$,
+$u^3 - v^3 = 2$ if and only if $(u, v) = (1, -1)$, and $u^3 - v^3 = 1$ if and only if
+$(u, v) = (1, 0)$ or $(u, v) = (0, -1)$.
 
 ## Depends on
 

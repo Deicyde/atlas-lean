@@ -6,22 +6,32 @@ proof: formalized
 lean: MetaMathlibExt.hFreeOmegaOneB_zero
 ---
 
-# H Free Omega One B zero
+# Constant coefficient of $B_{1,S_h}$
 
-`B_z(0) = 1` for `B_{1,S_h}`, `h > 0`: the only monic polynomial of degree `0` is `1`.
+**Constant coefficient of $B_{1,S_h}$.** Let $F$ be a finite field with $q$ elements and let
+$h \ge 1$ be a natural number. Let $S_h$ be the set of $h$-free monic polynomials over $F$ (those
+divisible by no $P^h$ with $P$ monic irreducible) and $\omega_1(f)$ the number of distinct monic
+irreducible factors of $f$ of multiplicity exactly $1$. For every complex number $z$, the
+coefficient $B_z(0)$ of $u^0$ in the formal power series
+
+$$B_{1,S_h}(u, z) = (1 - qu)^z \sum_{f \in S_h} z^{\omega_1(f)} u^{\deg f},$$
+
+where $(1 - qu)^z = \sum_{m \ge 0} \binom{z}{m} (-qu)^m$, equals $1$.
+
+The only monic polynomial of degree $0$ is $1$, which is $h$-free and has $\omega_1(1) = 0$.
 
 ## Depends on
 
-- [H Free Omega One B](h-free-omega-one-b.md)
+- [Coefficients of $B_{1,S_h}(u, z)$](h-free-omega-one-b.md)
 
 ## Proof depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [Fixed Degree Monic zero](fixed-degree-monic-zero.md)
-- [H Free](h-free.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [The only monic polynomial of degree zero](fixed-degree-monic-zero.md)
+- [$h$-free polynomials](h-free.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 - [Omega Mult one](omega-mult-one.md)
-- [One mem h Free](one-mem-h-free.md)
+- [The polynomial $1$ is $h$-free](one-mem-h-free.md)
 
 ## Sources
 

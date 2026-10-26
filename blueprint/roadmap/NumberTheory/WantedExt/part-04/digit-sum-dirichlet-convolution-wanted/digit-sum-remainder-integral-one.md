@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.digitSumRemainderIntegral_one
 ---
 
-# Digit Sum Remainder Integral one
+# The remainder integral vanishes at $1$
 
-`K(1) = 0`.
+**The remainder integral vanishes at $1$.** For every natural number $q$, let $J$ be the
+remainder of the Trollope–Delange formula in base $q$ and $K(x) = \int_1^x J(u) \, du / u^2$.
+Then $K(1) = 0$.
 
 ## Depends on
 
-- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
+- [Weighted integral of the Trollope–Delange remainder](digit-sum-remainder-integral.md)
 
 ## Proof depends on
 
-- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
 
 ## Sources
 

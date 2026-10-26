@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.jacobi_eq_legendre_index_two
 ---
 
-# Jacobi eq legendre index two
+# Units with equal Jacobi and Legendre symbols form a subgroup of index two
 
-For odd `n` and a prime divisor `p` of `n`, `L(n;p)` is a subgroup of index two in
-`U(n)` unless `p` is the unique prime divisor of `n` with odd `p`-adic valuation.
+**Units with equal Jacobi and Legendre symbols form a subgroup of index two.** Let $n$ be an
+odd natural number and $p$ a prime divisor of $n$, and suppose that $p$ is not the unique prime
+divisor of $n$ with odd exponent in $n$; that is, it is not the case that the exponent of $p$ in
+$n$ is odd and every prime divisor of $n$ with odd exponent in $n$ equals $p$. Then the set of
+units $u$ of $\mathbb{Z}/n\mathbb{Z}$ whose Jacobi symbol $\left(\frac{u}{n}\right)$ equals the
+Legendre symbol $\left(\frac{u}{p}\right)$ is a subgroup of index two in the unit group of
+$\mathbb{Z}/n\mathbb{Z}$.
 
 ## Depends on
 

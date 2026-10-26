@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isLinearlyRecurrentSeq_combination_mod_primePow_iff
 ---
 
-# Is Linearly Recurrent Seq combination mod prime Pow iff
+# Linear recurrence of combinations of constant terms modulo $p^a$
 
-Combinations mod `p^a`: for
-`b_n = F(ct[P^{n+k_1} Q_1] mod p^a, …, ct[P^{n+k_ℓ} Q_ℓ] mod p^a)` not constantly
-`F(0, …, 0)`, `b` is linearly recurrent if and only if `p ∤ ct[P^n]` for all `n`, and if
-`p ∣ ct[P^n]` for some `n` then `F(0, …, 0)` has frequency `1` in `b`.
+**Linear recurrence of combinations of constant terms modulo $p^a$.** Let $p$ be a prime,
+let $a \ge 1$, let $P, Q_1, \dots, Q_\ell$ be Laurent polynomials with integer coefficients in
+$r$ variables, let $k_1, \dots, k_\ell \in \mathbb{N}$, and let
+$F \colon (\mathbb{Z}/p^a\mathbb{Z})^\ell \to X$ be a map to a set $X$. Write
+$\operatorname{ct}[f]$ for the constant term of $f$ and, for $n \in \mathbb{N}$, let
+$b_n = F(\operatorname{ct}[P^{n+k_1} Q_1] \bmod p^a, \dots,
+\operatorname{ct}[P^{n+k_\ell} Q_\ell] \bmod p^a)$. Suppose $b_n \ne F(0, \dots, 0)$ for some $n$.
+Then $(b_n)$ is linearly recurrent if and only if $p \nmid \operatorname{ct}[P^n]$ for all
+$n \in \mathbb{N}$, and if $p \mid \operatorname{ct}[P^n]$ for some $n$, then the set of $n$ with
+$b_n = F(0, \dots, 0)$ has natural density $1$.
 
 ## Depends on
 
-- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Linearly recurrent sequence](is-linearly-recurrent-seq.md)
 - [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources

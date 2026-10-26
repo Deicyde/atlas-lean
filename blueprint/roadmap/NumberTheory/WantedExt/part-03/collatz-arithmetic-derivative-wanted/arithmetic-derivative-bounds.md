@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.arithmeticDerivative_bounds
 ---
 
-# Arithmetic Derivative bounds
+# Bounds for the arithmetic derivative
 
-For `n ≥ 2` with least prime factor `p` and `Ω(n)` prime factors counted with multiplicity,
-`Ω(n) n^{(Ω(n) - 1)/Ω(n)} ≤ D(n) ≤ n log_p(n) / p`, and each bound is an equality exactly when
-`n` is a prime power.
+**Bounds for the arithmetic derivative.** Let $n \ge 2$ be a natural number, let $p$ be the
+least prime factor of $n$, and let $\Omega(n)$ be the number of prime factors of $n$ counted with
+multiplicity. Then the arithmetic derivative $D(n)$ satisfies
+
+$$\Omega(n) \, n^{(\Omega(n) - 1)/\Omega(n)} \le D(n) \le \frac{n \log_p n}{p},$$
+
+and each of the two inequalities is an equality if and only if $n$ is a prime power.
 
 ## Depends on
 

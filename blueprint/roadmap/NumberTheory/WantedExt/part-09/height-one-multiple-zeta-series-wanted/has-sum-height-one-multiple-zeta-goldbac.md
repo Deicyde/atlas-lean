@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_heightOneMultipleZeta_goldbach
 ---
 
-# Has Sum height One Multiple Zeta goldbach
+# Generalized Goldbach series for height one multiple zeta values
 
-Generalized Goldbach series: for a positive integer `k`,
-`∑_j (k^j ζ(k + 1, {1}^j) - 1/(k! k)) = (1/k!) (∑_{m=0}^{k-1} [k, m] ζ(k + 1 - m) + H_k)`, and
-`∑_j (-1)^j (k^j ζ(k + 1, {1}^j) - 1/(k! k)) = H_{k,k}/k - 1/(2 k! k)`, with the Roman harmonic
-number `H_{k,k} = ∑_{i=1}^k (-1)^{i-1} C(k, i) i^{-k}` (Equation (2.18)).
+**Generalized Goldbach series for height one multiple zeta values.** Let $k \ge 1$ be an
+integer. Write $\zeta(s, \{1\}^j)$ for the height one multiple zeta function, $\zeta$ for the
+Riemann zeta function, $c(k, m)$ for the unsigned Stirling numbers of the first kind,
+$H_k = \sum_{i=1}^{k} 1/i$ for the $k$-th harmonic number and
+$H_{k,k} = \sum_{i=1}^{k} (-1)^{i-1} \binom{k}{i} i^{-k}$ for the Roman harmonic number. Then the
+series $\sum_{j \ge 0} \bigl(k^j \zeta(k + 1, \{1\}^j) - \frac{1}{k! \, k}\bigr)$ is summable with
+sum $\frac{1}{k!} \bigl(\sum_{m=0}^{k-1} c(k, m) \, \zeta(k + 1 - m) + H_k\bigr)$, and the series
+$\sum_{j \ge 0} (-1)^j \bigl(k^j \zeta(k + 1, \{1\}^j) - \frac{1}{k! \, k}\bigr)$ is summable with
+sum $\frac{H_{k,k}}{k} - \frac{1}{2 \, k! \, k}$.
 
 ## Depends on
 
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
 
 ## Sources
 

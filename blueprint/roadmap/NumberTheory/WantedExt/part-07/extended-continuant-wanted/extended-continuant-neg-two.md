@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.extendedContinuant_neg_two
 ---
 
-# Extended Continuant neg two
+# Extended continuants of order $-2$ vanish
 
-`K_{-2}(x)_b = 0`.
+**Extended continuants of order $-2$ vanish.** For every bi-infinite integer sequence
+$x : \mathbb{Z} \to \mathbb{Z}$ and every integer $b$, the extended continuant of order $-2$ with
+start index $b$ is zero: $K_{-2}(x)_b = 0$.
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Proof depends on
 
-- [Extended Continuant Bwd](extended-continuant-bwd.md)
-- [Extended Continuant Fwd](extended-continuant-fwd.md)
+- [Backward branch of the extended continuant](extended-continuant-bwd.md)
+- [Forward branch of the extended continuant](extended-continuant-fwd.md)
 
 ## Sources
 

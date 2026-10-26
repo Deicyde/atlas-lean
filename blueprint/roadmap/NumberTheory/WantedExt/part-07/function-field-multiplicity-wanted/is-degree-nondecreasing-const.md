@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isDegreeNondecreasing_const
 ---
 
-# Is Degree Nondecreasing const
+# Constant functions are degree-nondecreasing
 
-Every constant real-valued function is degree-nondecreasing on every polynomial set;
-the degree premise is irrelevant because both function values coincide.
+**Constant functions are degree-nondecreasing.** Let $F$ be a field and $U$ a set of
+polynomials over $F$. For every real number $c$, the constant function with value $c$ is
+degree-nondecreasing on $U$.
 
 ## Depends on
 
-- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
+- [Degree-nondecreasing functions](is-degree-nondecreasing.md)
 
 ## Sources
 

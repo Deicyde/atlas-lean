@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GeometricSumsTwoSquaresWanted.exists_sq_add_sq_eq_cyclotomic
 ---
 
-# Proposition 4
+# Every cyclotomic polynomial $\Phi_{4q}$ is a sum of two squares
 
-**Proposition 4**: for each `q ≥ 1`, the
-cyclotomic polynomial `Φ_{4q}(x)` is a sum of two
-squares in `ℤ[x]` (the paper gives the two squares
-explicitly from a product over primitive `4q`-th roots
-of unity in the class `1 (mod 4)`).
+**Every cyclotomic polynomial $\Phi_{4q}$ is a sum of two squares.** For every integer
+$q \ge 1$ there are polynomials $A, B \in \mathbb{Z}[x]$ such that the $4q$-th cyclotomic
+polynomial $\Phi_{4q}$ over $\mathbb{Z}$ satisfies $\Phi_{4q} = A^2 + B^2$.
+
+The paper gives the two squares explicitly, from a product over the primitive $4q$-th roots of
+unity in the class $1 \pmod 4$; only their existence is stated here.
 
 ## Depends on
 

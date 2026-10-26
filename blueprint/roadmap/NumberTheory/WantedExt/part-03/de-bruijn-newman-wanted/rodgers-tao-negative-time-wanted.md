@@ -5,12 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DeBruijnNewmanWanted.rodgersTaoNegativeTime_wanted
 ---
 
-# Rodgers Tao Negative Time wanted
+# Nonreal zeros of the de Bruijn–Newman deformation at negative times
 
-Source: Rodgers and Tao, *The de Bruijn--Newman constant is
-non-negative*, Forum Math. Pi 8 (2020): at every negative deformation
-time, `H` has a nonreal zero. Known literature result; its proof is
-not supplied here.
+**Nonreal zeros of the de Bruijn–Newman deformation at negative times.** For every real
+$\lambda < 0$, not every zero of the de Bruijn–Newman deformation $H_\lambda$ is real: there is
+a complex $z$ with $H_\lambda(z) = 0$ and nonzero imaginary part.
 
 ## Depends on
 
@@ -19,3 +18,4 @@ not supplied here.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DeBruijnNewmanWanted](../../../../../sources/v2/WantedExt.md)
+- Rodgers and Tao, *The de Bruijn--Newman constant is non-negative*, Forum Math. Pi 8 (2020): at every negative deformation time, `H` has a nonreal zero. Known literature result; its proof is not supplied here.

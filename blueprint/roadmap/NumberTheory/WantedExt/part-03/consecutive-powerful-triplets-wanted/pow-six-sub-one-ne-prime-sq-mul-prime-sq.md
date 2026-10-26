@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.pow_six_sub_one_ne_prime_sq_mul_prime_sq_mul_cube
 ---
 
-# Pow six sub one ne prime sq mul prime sq mul cube
+# $x^6 - 1$ is not $p^2 q^2$ times a nonzero cube
 
-For primes `p, q` and integers `x`, `a` with `a ≠ 0`,
-`x⁶ - 1 ≠ p² q² a³`.
+**$x^6 - 1$ is not $p^2 q^2$ times a nonzero cube.** For all primes $p$, $q$ and all integers
+$x$ and $a$ with $a \ne 0$, $x^6 - 1 \ne p^2 q^2 a^3$.
 
 ## Depends on
 

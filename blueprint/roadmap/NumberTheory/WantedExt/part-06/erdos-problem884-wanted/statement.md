@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem884Wanted.Statement
 ---
 
-# Statement
+# Divisor-gap sums (Erdős Problem 884)
 
-EP-884 (Erdős Problem #884) [Erdős Problems]: existence of an absolute
-constant `C` bounding the full reciprocal divisor-gap sum by `1` plus the
-consecutive reciprocal divisor-gap sum, over the increasing enumeration of
-all divisors of each positive integer `n`.
+**Divisor-gap sums (Erdős Problem 884).** The statement that there is a real constant $C > 0$
+such that for every positive integer $n$, if $d_1 < d_2 < \dots < d_t$ are all the divisors of $n$
+in increasing order, then
+$\sum_{1 \le i < j \le t} \frac{1}{d_j - d_i} \le
+C \left(1 + \sum_{1 \le i < t} \frac{1}{d_{i+1} - d_i}\right)$.
 
 ## Depends on
 

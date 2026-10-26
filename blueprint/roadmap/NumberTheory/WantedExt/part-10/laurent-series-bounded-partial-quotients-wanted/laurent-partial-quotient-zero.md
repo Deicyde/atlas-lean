@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.laurentPartialQuotient_zero
 ---
 
-# Laurent Partial Quotient zero
+# First step of the continued fraction of a Laurent series
 
-`b₀ = [α]` and `α₁ = (α - [α])⁻¹`.
+**First step of the continued fraction of a Laurent series.** Let $K$ be a field and
+$\alpha \in K((x^{-1}))$. The partial quotient $b_0$ of $\alpha$ is its polynomial part
+$[\alpha]$, and the complete quotient $\alpha_1$ is $(\alpha - [\alpha])^{-1}$, where
+$0^{-1} = 0$.
 
 ## Depends on
 
-- [Laurent Complete Quotient](laurent-complete-quotient.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Laurent Poly Part](laurent-poly-part.md)
+- [Complete quotients of a Laurent series](laurent-complete-quotient.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomial part of a Laurent series](laurent-poly-part.md)
 
 ## Sources
 

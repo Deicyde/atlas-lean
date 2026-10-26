@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kGeneralizedFibonacci_discr_eq_bounds
 ---
 
-# K Generalized Fibonacci discr eq bounds
+# Absolute bounds on solutions of Luca's discriminant equation
 
-Absolute bounds in the paper's equation (7): for `k > 100`, `k < 2·10^16` and
-`n < 1.5·10^18`.
+**Absolute bounds on solutions of Luca's discriminant equation.** Let $k > 100$ be a natural
+number and let $F : \mathbb{Z} \to \mathbb{Z}$ satisfy $F(n) = 0$ for every integer $n$ with
+$2 - k \le n \le 0$, $F(1) = 1$, and $F(n) = F(n-1) + F(n-2) + \cdots + F(n-k)$ for every
+integer $n \ge 2$ (the $k$-generalized Fibonacci sequence). If a natural number $n$ satisfies
+$F(n)\,(k-1)^2 = 2^{k+1} k^k - (k+1)^{k+1}$, then $k < 2 \cdot 10^{16}$ and
+$n < 1.5 \cdot 10^{18}$.
+
+The equation is the paper's equation (7) multiplied by $(k-1)^2$.
 
 ## Depends on
 

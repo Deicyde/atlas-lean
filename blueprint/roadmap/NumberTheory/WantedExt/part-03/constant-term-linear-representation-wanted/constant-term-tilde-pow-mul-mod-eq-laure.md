@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.constantTerm_tilde_pow_mul_modEq_laurentCartier
 ---
 
-# Constant Term tilde pow mul mod Eq laurent Cartier
+# Rowland–Zeilberger congruence modulo $p^a$
 
-Rowland–Zeilberger congruence mod `p^a` for `P̃` with `P̃(x)^p ≡ P̃(x^p) (mod p^a)`:
-`ct[P̃^{pn+k} Q] ≡ ct[P̃^n Λ_p(P̃^k Q)] (mod p^a)`, for all natural `k` (the paper states
-`k ∈ 𝔽_p`).
+**Rowland–Zeilberger congruence modulo $p^a$.** Let $p$ be a prime, let $a$ be a natural
+number, and let $\tilde P$ be a Laurent polynomial in $r$ variables with integer coefficients
+such that $\tilde P^p \equiv \tilde P(x^p) \pmod{p^a}$ coefficientwise, where $\tilde P(x^p)$
+is obtained from $\tilde P$ by replacing each monomial $x^e$ with $x^{pe}$. Write
+$\operatorname{ct}[F]$ for the constant term of a Laurent polynomial $F$ and $\Lambda_p$ for
+Kohen's operator, which keeps the terms whose exponents are all divisible by $p$ and replaces
+$x^{pj}$ by $x^j$. Then for every Laurent polynomial $Q$ in $r$ variables with integer
+coefficients and all natural numbers $n$ and $k$,
+$\operatorname{ct}[\tilde P^{pn+k} Q] \equiv
+\operatorname{ct}[\tilde P^n \Lambda_p(\tilde P^k Q)] \pmod{p^a}$.
+
+The statement holds for every natural number $k$; the paper states it for $k \in \mathbb{F}_p$.
 
 ## Depends on
 
-- [Laurent Cartier](laurent-cartier.md)
+- [Cartier operator $\Lambda_k$ on Laurent polynomials](laurent-cartier.md)
 
 ## Sources
 

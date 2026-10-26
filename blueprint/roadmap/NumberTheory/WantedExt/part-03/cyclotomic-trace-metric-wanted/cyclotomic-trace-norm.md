@@ -5,9 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicTraceNorm
 ---
 
-# Cyclotomic Trace Norm
+# Trace norm on a cyclotomic field
 
-The trace norm `‖α‖`, the Euclidean length of `(Tr_{K/ℚ}(α ω^j))_{1 ≤ j ≤ p-1}`.
+**Trace norm on a cyclotomic field.** Let $p$ be a positive integer, let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$, and let $\omega$ be the chosen primitive $p$-th root of
+unity in $K$. The trace norm of $\alpha \in K$ is the real number
+
+$$\|\alpha\| = \sqrt{\sum_{j=1}^{p-1} \mathrm{Tr}_{K/\mathbb{Q}}(\alpha \omega^j)^2},$$
+
+the Euclidean length of the vector
+$(\mathrm{Tr}_{K/\mathbb{Q}}(\alpha \omega^j))_{1 \le j \le p-1}$.
 
 ## Depends on
 
@@ -15,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
+- [Squared trace norm on a cyclotomic field](cyclotomic-trace-norm-sq.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.laurentPolyPart_laurentInvVar
 ---
 
-# Laurent Poly Part laurent Inv Var
+# Polynomial parts of the variable and its inverse
 
-The polynomial part of `x` is `x`, and that of `x⁻¹` is `0`.
+**Polynomial parts of the variable and its inverse.** Let $K$ be a field. In
+$K((x^{-1}))$ the polynomial part of $x$ is $x$, and the polynomial part of $x^{-1}$ is $0$.
 
 ## Depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
-- [Laurent Poly Part](laurent-poly-part.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
+- [Polynomial part of a Laurent series](laurent-poly-part.md)
 
 ## Sources
 

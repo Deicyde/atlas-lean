@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gcdTermSeq_le_gcdTermSeq_one_one
 ---
 
-# Gcd Term Seq le gcd Term Seq one one
+# The gcd-term sequence is bounded by $n + 1$
 
-If `a, b ≥ 1` and one of them exceeds `1`, then `s_{a,b}(n) ≤ s_{1,1}(n) = n + 1` for every
-`n`, with equality only for `n = 0`.
+**The gcd-term sequence is bounded by $n + 1$.** Let $a, b \ge 1$ be natural numbers, at least
+one of them greater than $1$, and let $s_{a,b}$ be the gcd-term sequence. For every natural
+number $n$, $s_{a,b}(n) \le s_{1,1}(n) = n + 1$, and $s_{a,b}(n) = s_{1,1}(n)$ only if $n = 0$.
 
 ## Depends on
 
-- [Gcd Term Seq](gcd-term-seq.md)
+- [The gcd-term sequence](gcd-term-seq.md)
 
 ## Sources
 

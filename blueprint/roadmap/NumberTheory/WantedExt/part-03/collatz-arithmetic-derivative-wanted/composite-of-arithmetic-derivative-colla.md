@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.composite_of_arithmeticDerivative_collatz_comm
 ---
 
-# Composite of arithmetic Derivative collatz comm
+# Positive solutions of the Collatz arithmetic differential equation are composite
 
-Every positive solution of `D(C(n)) = C(D(n))` is composite.
+**Positive solutions of the Collatz arithmetic differential equation are composite.** Let
+$D$ be the arithmetic derivative and $C$ the accelerated Collatz map. Every positive integer $n$
+with $D(C(n)) = C(D(n))$ is composite, that is, $n > 1$ and $n$ is not prime.
 
 ## Depends on
 
 - [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 
 ## Sources
 

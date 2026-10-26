@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_primePow_iff
 ---
 
-# Is Linearly Recurrent Seq constant Term mod prime Pow iff
+# Linear recurrence of constant terms modulo $p^a$
 
-Main theorem mod `p^a`: if `ct[P^n Q] mod p^a` is not identically `0`, it is linearly
-recurrent if and only if `p ∤ ct[P^n]` for all `n` (independently of `Q` and `a`); otherwise
-its zeros have density `1`.
+**Linear recurrence of constant terms modulo $p^a$.** Let $p$ be a prime, let $a \ge 1$, and
+let $P, Q$ be Laurent polynomials with integer coefficients in $r$ variables; write
+$\operatorname{ct}[f]$ for the constant term of $f$. Suppose $p^a \nmid \operatorname{ct}[P^n Q]$
+for some $n \in \mathbb{N}$. Then the sequence $u_n = \operatorname{ct}[P^n Q] \bmod p^a$ is
+linearly recurrent if and only if $p \nmid \operatorname{ct}[P^n]$ for all $n \in \mathbb{N}$, and
+if $u$ is not linearly recurrent, then the set of $n$ with $p^a \mid \operatorname{ct}[P^n Q]$ has
+natural density $1$.
+
+In particular, as long as $u$ is not identically $0$, whether it is linearly recurrent does not
+depend on $Q$ or $a$.
 
 ## Depends on
 
-- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Linearly recurrent sequence](is-linearly-recurrent-seq.md)
 - [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources

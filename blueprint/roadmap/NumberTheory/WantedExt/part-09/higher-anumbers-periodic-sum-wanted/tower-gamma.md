@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.towerGamma
 ---
 
-# Tower Gamma
+# The constant $\gamma$
 
-`γ = ((p - 1) r + (p + 1))/d`.
+**The constant $\gamma$.** For natural numbers $p$, $d$ and $r$,
+$\gamma = ((p - 1) r + (p + 1))/d$, a rational number (taken to be $0$ when $d = 0$).
 
 ## Depends on
 

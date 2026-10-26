@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.erdosKac_omegaH_hFull
 ---
 
-# Erdos Kac omega H h Full
+# Erdős–Kac theorem for $\omega_h$ on $h$-full polynomials
 
-For `2 ≤ h` and `α ≤ β`, the proportion of `h`-full monic degree-`n` polynomials for
-which `(ω_h(f) - log (n/h)) / sqrt (log (n/h))` lies in `[α,β]` tends to the standard
-Gaussian mass of the interval.  Crucially, `(n : ℝ) / (h : ℝ)` is real division, not
-truncated natural-number division.  Counts are cast to `ℝ`, with ordinary zero-
-denominator field behavior left unchanged.
+**Erdős–Kac theorem for $\omega_h$ on $h$-full polynomials.** Let $F$ be a finite field, let
+$h \ge 2$ and let $\alpha \le \beta$ be real numbers. A monic polynomial $f$ over $F$ is $h$-full
+if $P^h \mid f$ for every monic irreducible $P$ dividing $f$, and $\omega_h(f)$ is the number of
+distinct monic irreducible $P$ that divide $f$ with multiplicity exactly $h$. For each $n$, let
+$p_n$ be the number of $h$-full monic polynomials $f$ of degree $n$ over $F$ with
+
+$$\alpha \le \frac{\omega_h(f) - \log(n/h)}{\sqrt{\log(n/h)}} \le \beta,$$
+
+divided by the number of all $h$-full monic polynomials of degree $n$ over $F$, where $n/h$ is
+real division. Then $p_n \to \frac{1}{\sqrt{2\pi}} \int_\alpha^\beta e^{-t^2/2}\,dt$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [H Full](h-full.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [$h$-full polynomials](h-full.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

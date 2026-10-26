@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.digitSumRemainder
 ---
 
-# Digit Sum Remainder
+# Trollope–Delange remainder
 
-The remainder `J(x) = (1 + ⌊x⌋ - x) s_q(⌊x⌋) - h(x)` of the Trollope-Delange formula.
+**Trollope–Delange remainder.** Let $q$ be a natural number, write $s_q(n)$ for the sum of the
+base-$q$ digits of a natural number $n$ (with $s_q(n) = n$ when $q \le 1$), and let $h$ be
+Delange's series in base $q$. For a real number $x$, let $n_x$ be the floor of $x$ when
+$x \ge 0$ and $n_x = 0$ when $x < 0$. The remainder of the Trollope–Delange formula is
+$J(x) = (1 + n_x - x)\, s_q(n_x) - h(x)$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trollope Delange Series](trollope-delange-series.md)
+- [Delange's series](trollope-delange-series.md)
 
 ## Sources
 

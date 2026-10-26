@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.laurentCartier
 ---
 
-# Laurent Cartier
+# Cartier operator $\Lambda_k$ on Laurent polynomials
 
-Kohen's operator `Λ_k`: keep the terms whose exponents are all multiples of `k` and
-substitute `x_j^k ↦ x_j`, so `coef_j[Λ_k f] = coef_{k j}[f]`. For `k = 0` it is set to `0`
-(the paper uses only positive `k`).
+**Cartier operator $\Lambda_k$ on Laurent polynomials.** Let $R$ be a semiring and $f$ a
+Laurent polynomial in $r$ variables with coefficients in $R$. For a natural number $k > 0$,
+$\Lambda_k f$ keeps the terms of $f$ whose exponents are all multiples of $k$ and substitutes
+$x_s^k \mapsto x_s$ for each variable, so that the coefficient of $x^j$ in $\Lambda_k f$ is the
+coefficient of $x^{kj}$ in $f$ for every $j \in \mathbb{Z}^r$. For $k = 0$ it is set to
+$\Lambda_0 f = 0$ (the paper uses only positive $k$).
 
 ## Depends on
 

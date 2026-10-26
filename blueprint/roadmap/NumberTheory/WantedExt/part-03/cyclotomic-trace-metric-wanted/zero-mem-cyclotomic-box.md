@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.zero_mem_cyclotomicBox
 ---
 
-# Zero mem cyclotomic Box
+# The zero vector lies in every box
 
-The coefficient vector `0` lies in every box.
+**The zero vector lies in every box.** For all natural numbers $p$ and $N$, the zero vector
+lies in the box $B(p, N)$, the set of integer vectors $(a_1, \dots, a_{p-1})$ with
+$|a_i| \le N$ for all $i$.
 
 ## Depends on
 
-- [Cyclotomic Box](cyclotomic-box.md)
+- [The cyclotomic box](cyclotomic-box.md)
 
 ## Sources
 

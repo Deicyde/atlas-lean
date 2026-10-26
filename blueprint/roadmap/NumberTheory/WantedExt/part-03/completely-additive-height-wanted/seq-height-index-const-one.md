@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.seqHeightIndex_const_one
 ---
 
-# Seq Height Index const one
+# Block index of the constant profile
 
-For the constant profile `π_k = 1`, `k(i) = i`.
+**Block index of the constant profile.** For the constant profile $\pi_k = 1$, whose cumulative
+profile is $\Pi_k = \sum_{j=1}^{k} \pi_j = k$, the block index $k(i)$, the least $k$ with
+$i \le \Pi_k$, equals $i$ for every natural number $i$.
 
 ## Depends on
 
-- [Seq Height Index](seq-height-index.md)
+- [Block index of a profile](seq-height-index.md)
 
 ## Proof depends on
 
-- [Profile Partial Sum](profile-partial-sum.md)
+- [Cumulative profile](profile-partial-sum.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.additiveOfPrimeValues_prime
 ---
 
-# Additive Of Prime Values prime
+# The completely additive extension at a prime
 
-The extension takes the prescribed value at a prime.
+**The completely additive extension at a prime.** For every function
+$v : \mathbb{N} \to \mathbb{N}$ and every prime $p$, the completely additive function with prime
+values $v$ (which sends $m = \prod_q q^{a_q}$ to $\sum_q a_q\, v(q)$) takes the value $v(p)$
+at $p$.
 
 ## Depends on
 
-- [Additive Of Prime Values](additive-of-prime-values.md)
+- [Completely additive function with prescribed prime values](additive-of-prime-values.md)
 
 ## Sources
 

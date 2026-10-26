@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.constantTerm_pow_mul_modEq_tilde
 ---
 
-# Constant Term pow mul mod Eq tilde
+# Passing from $P$ to $\tilde P$ modulo $p^a$
 
-Conversion to `P̃`: `ct[P^{p^{a-1} n + k} Q] ≡ ct[P̃^n Λ_{p^ℓ}(P^k Q)] (mod p^a)`, for all
-natural `k` (the paper restricts to `k < p^{a-1}`).
+**Passing from $P$ to $\tilde P$ modulo $p^a$.** Let $p$ be a prime, let $a \ge 1$ and $\ell$
+be natural numbers, and let $P$ and $\tilde P$ be Laurent polynomials in $r$ variables with
+integer coefficients such that $P^{p^{a-1}} \equiv \tilde P(x^{p^\ell}) \pmod{p^a}$
+coefficientwise, where $\tilde P(x^q)$ is obtained from $\tilde P$ by replacing each monomial
+$x^e$ with $x^{qe}$. Write $\operatorname{ct}[F]$ for the constant term of a Laurent polynomial
+$F$ and $\Lambda_q$ for Kohen's operator, which keeps the terms whose exponents are all divisible
+by $q$ and replaces $x^{qj}$ by $x^j$. Then for every Laurent polynomial $Q$ in $r$ variables
+with integer coefficients and all natural numbers $n$ and $k$,
+$\operatorname{ct}[P^{p^{a-1} n + k} Q] \equiv
+\operatorname{ct}[\tilde P^n \Lambda_{p^\ell}(P^k Q)] \pmod{p^a}$.
+
+The statement holds for every natural number $k$; the paper restricts to $k < p^{a-1}$.
 
 ## Depends on
 
-- [Laurent Cartier](laurent-cartier.md)
+- [Cartier operator $\Lambda_k$ on Laurent polynomials](laurent-cartier.md)
 
 ## Sources
 

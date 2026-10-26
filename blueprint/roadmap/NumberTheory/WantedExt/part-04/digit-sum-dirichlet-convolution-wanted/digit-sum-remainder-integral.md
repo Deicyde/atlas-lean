@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.digitSumRemainderIntegral
 ---
 
-# Digit Sum Remainder Integral
+# Weighted integral of the Trollope–Delange remainder
 
-`K(x) = ∫_1^x J(u) du / u²`.
+**Weighted integral of the Trollope–Delange remainder.** For a natural number $q$, let $J$
+be the remainder of the Trollope–Delange formula in base $q$. For a real number $x$, define
+$K(x) = \int_1^x J(u)/u^2 \, du$, an oriented interval integral (so
+$K(x) = -\int_x^1 J(u)/u^2 \, du$ when $x < 1$) that is taken to be $0$ when $J(u)/u^2$ is not
+integrable on the interval between $1$ and $x$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
 
 ## Sources
 

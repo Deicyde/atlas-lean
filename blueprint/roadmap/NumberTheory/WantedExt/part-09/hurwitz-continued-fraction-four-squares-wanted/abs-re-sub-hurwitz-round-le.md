@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.abs_re_sub_hurwitzRound_le
 ---
 
-# Abs re sub hurwitz Round le
+# Rounding error of the nearest Gaussian integer
 
-`z - [z]` lies in the square `|Re| ≤ 1/2`, `|Im| ≤ 1/2`.
+**Rounding error of the nearest Gaussian integer.** For every complex number $z$, let $[z]$ be
+the Gaussian integer nearest to $z$, obtained by rounding the real and imaginary parts to the
+nearest integer with halves rounded up. Then $|\operatorname{Re}(z - [z])| \le 1/2$ and
+$|\operatorname{Im}(z - [z])| \le 1/2$.
 
 ## Depends on
 
-- [Hurwitz Round](hurwitz-round.md)
+- [Hurwitz rounding to the nearest Gaussian integer](hurwitz-round.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_fermatNumber_iff_orderOf_two
 ---
 
-# Prime dvd fermat Number iff order Of two
+# Prime divisors of Fermat numbers and the order of $2$
 
-An odd prime `p` divides `F_n` if and only if `ord_p(2) = 2^{n+1}`.
+**Prime divisors of Fermat numbers and the order of $2$.** Write $F_n = 2^{2^n} + 1$ for the
+$n$-th Fermat number. An odd prime $p$ divides $F_n$ if and only if the multiplicative order of
+$2$ modulo $p$ equals $2^{n+1}$.
 
 ## Depends on
 

@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.hofTauList_iterate_isPrefix
 ---
 
-# Hof Tau List iterate is Prefix
+# The iterates of the Hofstadter substitution on $k$ form a chain of prefixes
 
-Coherence of the prefixes: `τ_k^i(k)` is a prefix of `τ_k^j(k)` for `i ≤ j`.
+**The iterates of the Hofstadter substitution on $k$ form a chain of prefixes.** For a natural
+number $k$, let $\tau_k$ be the morphism of finite words over $\mathbb{N}$ that replaces the letter
+$k$ by the word $k\,1$ and every other letter $i$ by $i + 1$, and write $\tau_k^j(k)$ for the word
+obtained by applying $\tau_k$ $j$ times to the one-letter word $k$. For every natural number $k$
+and all natural numbers $i \le j$, $\tau_k^i(k)$ is a prefix of $\tau_k^j(k)$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Proof depends on
 
-- [Hof Tau List iterate is Prefix succ](hof-tau-list-iterate-is-prefix-succ.md)
+- [Consecutive iterates of the Hofstadter substitution on $k$ are nested](hof-tau-list-iterate-is-prefix-succ.md)
 
 ## Sources
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.eventually_pseudoGreedyGap_eq_zero
 ---
 
-# Eventually pseudo Greedy Gap eq zero
+# Eventual vanishing of the pseudo-greedy gaps of a rational number
 
-Let `r` be a positive rational with gap sequence `ε`. If
-`liminf ε_n ∏_(k<n) (1 - ε_k) ≥ 0`, or if `ε_n ≥ 0` for `n ≫ 0`, then `ε_n = 0` for `n ≫ 0`.
-The `liminf` condition is written as: for every `δ > 0`, eventually
-`-δ ≤ ε_n ∏_(k<n) (1 - ε_k)`.
+**Eventual vanishing of the pseudo-greedy gaps of a rational number.** Let $r$ be a positive
+rational number and let $(\varepsilon_n)_{n \ge 0}$ be the gap sequence of the pseudo-greedy
+expansion of $r$. Suppose that $\liminf_n \varepsilon_n \prod_{k\lt n} (1 - \varepsilon_k) \ge 0$,
+that is, for every $\delta > 0$ we have $\varepsilon_n \prod_{k\lt n} (1 - \varepsilon_k) \ge -\delta$
+for all sufficiently large $n$; or that $\varepsilon_n \ge 0$ for all sufficiently large $n$.
+Then $\varepsilon_n = 0$ for all sufficiently large $n$.
 
 ## Depends on
 
-- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
+- [Gap sequence of the pseudo-greedy expansion](pseudo-greedy-gap.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_incompleteSum_eq_completeSum_add
 ---
 
-# Exists incomplete Sum eq complete Sum add
+# Completing an incomplete exponential sum
 
-Lemma 2.1 (completing the sum): for a prime `p`, a polynomial `f` over `ℤ`, and
-`1 ≤ B ≤ p`, there is a complex `θ` with `|θ| ≤ 1` and
-`S_p(f, B) = (B/p) ∑_{x=1}^{p} e_p(f(x)) + θ T_p(B) max_{1 ≤ y ≤ p-1} |∑_{x=1}^{p} e_p(f(x) + y x)|`,
-where `T_p(B) = (1/p) ∑_{y=1}^{p-1} |sin(πBy/p) / sin(πy/p)|`. The maximum is written as a
-`Finset.sup` of `‖·‖₊` over `Icc 1 (p - 1)`; `θ` is complex since the sums are.
+**Completing an incomplete exponential sum.** Let $p$ be a prime, write
+$e_p(t) = e^{2\pi i t/p}$, let $f$ be a polynomial with integer coefficients, and let $B$ be an
+integer with $1 \le B \le p$. Put
+$T_p(B) = \frac{1}{p} \sum_{y=1}^{p-1} \left|\frac{\sin(\pi B y/p)}{\sin(\pi y/p)}\right|$ and
+$M = \max_{1 \le y \le p-1} \left|\sum_{x=1}^{p} e_p(f(x) + yx)\right|$. Then there is a complex
+number $\theta$ with $|\theta| \le 1$ such that
+$\sum_{x=1}^{B} e_p(f(x)) = \frac{B}{p} \sum_{x=1}^{p} e_p(f(x)) + \theta \, T_p(B) \, M$.
 
 ## Depends on
 

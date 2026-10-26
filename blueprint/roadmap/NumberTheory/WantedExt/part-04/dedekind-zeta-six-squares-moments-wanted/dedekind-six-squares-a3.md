@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.dedekindSixSquaresA3
 ---
 
-# Dedekind Six Squares A3
+# The exponent $a_{3,\ell}$
 
-The exponent `a_{3,ℓ} = ∑_{i=1}^{⌈ℓ/2 - 1⌉} C(ℓ, 2i+1) · 4(2i+1)!/((i-1)!(i+3)!)`
-(`⌈ℓ/2 - 1⌉ = ⌊(ℓ - 1)/2⌋`; each quotient is an integer).
+**The exponent $a_{3,\ell}$.** For a natural number $\ell$, $a_{3,\ell}$ is the sum over the
+integers $1 \le i \le \lfloor (\ell - 1)/2 \rfloor$ of $\binom{\ell}{2i+1} q_i$, where $q_i$ is the
+integer part of $4\,(2i+1)!/((i-1)!\,(i+3)!)$.
+
+Each quotient $4\,(2i+1)!/((i-1)!\,(i+3)!)$ is in fact an integer, and the upper limit
+$\lfloor (\ell - 1)/2 \rfloor$ equals the source's $\lceil \ell/2 - 1 \rceil$.
 
 ## Depends on
 

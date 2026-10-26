@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.laurentCompleteQuotient
 ---
 
-# Laurent Complete Quotient
+# Complete quotients of a Laurent series
 
-The complete quotients `α₀ = α`, `α_{n+1} = (α_n - [α_n])⁻¹` of the continued fraction
-expansion of `α ∈ 𝔽_q((x⁻¹))` (they become `0` after a finite expansion ends).
+**Complete quotients of a Laurent series.** Let $K$ be a field and $\alpha \in K((x^{-1}))$. The
+complete quotients of the continued fraction expansion of $\alpha$ are $\alpha_0 = \alpha$ and
+$\alpha_{n+1} = (\alpha_n - [\alpha_n])^{-1}$ for $n \ge 0$, where $[\beta]$ is the polynomial part
+of $\beta$ and $0^{-1} = 0$. So the complete quotients become $0$ after a finite expansion ends.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Laurent Poly Part](laurent-poly-part.md)
+- [Polynomial part of a Laurent series](laurent-poly-part.md)
 
 ## Sources
 

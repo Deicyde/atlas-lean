@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_coprime_modEq_of_coprime
 ---
 
-# Exists coprime mod Eq of coprime
+# Coprime representatives of a residue class
 
-For coprime `α, β` and every positive `γ` there is a positive `c` coprime to `γ` with
-`c ≡ β (mod α)`; positivity of `α, β` is not needed.
+**Coprime representatives of a residue class.** Let $\alpha$, $\beta$ and $\gamma$ be natural
+numbers with $\gamma > 0$ and $\gcd(\alpha, \beta) = 1$. Then there is a natural number $c > 0$
+with $\gcd(c, \gamma) = 1$ and $c \equiv \beta \pmod{\alpha}$.
+
+The numbers $\alpha$ and $\beta$ need not be positive.
 
 ## Depends on
 

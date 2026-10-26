@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.hofGrowAux_iterate
 ---
 
-# Hof Grow Aux iterate
+# Growing from an iterate of $\tau_k$ gives an iterate of $\tau_k$
 
-Growing from a prefix `τ_k^j(k)` yields a prefix `τ_k^m(k)` that has more than `n` letters
-or used all `f` steps.
+**Growing from an iterate of $\tau_k$ gives an iterate of $\tau_k$.** Let $\tau_k$ be the
+substitution sending the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended
+letterwise to words, and let $\mathrm{grow}_{k,n}^f(w)$ be the word obtained from $w$ by applying
+$\tau_k$ until it has more than $n$ letters, at most $f$ times. For all $k, n, f, j$ there is an
+$m$ with $\mathrm{grow}_{k,n}^f(\tau_k^j(k)) = \tau_k^m(k)$ such that $\tau_k^m(k)$ has more than
+$n$ letters or $j + f \le m$.
 
 ## Depends on
 
-- [Hof Grow Aux](hof-grow-aux.md)
-- [Hof Tau List](hof-tau-list.md)
+- [Bounded growth of a word under $\tau_k$](hof-grow-aux.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Sources
 

@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.mem_lineProblem_of_general_prime_sieve
 ---
 
-# Mem line Problem of general prime sieve
+# General prime sieve for the line problem
 
-The general prime sieve of Bailey, Cohen, Sutherland and Trudgian for the line problem,
-quoted in the source (membership in `𝓛_n` as in `mem_lineProblem_of_prime_sieve`). Write
-`Rad(q^n - 1) = k ∏_{ρ ∈ S} ρ ∏_{l ∈ T} l` with disjoint sets `S` (`s` primes) and `T` (`r`
-primes) of prime factors, `δ = 1 - ∑_{ρ ∈ S} 1/ρ`, `ε = ∑_{l ∈ T} 1/l` and `μ = φ(k)/k` (the
-source's `m`). If `δμ > ε`, then
-`q > (n - 1)^2 ((2^{ω_n - s - r} μ(s - 1 + 2δ) - δμ + r - ε)/(δμ - ε))^2` implies `q ∈ 𝓛_n`.
+**General prime sieve for the line problem.** Let $q$ and $n$ be natural numbers, let $\omega$
+be the number of distinct prime factors of $q^n - 1$, and let $S$ and $T$ be disjoint sets of prime
+factors of $q^n - 1$, with $s = |S|$ and $r = |T|$. Let $k$ be the product of the prime factors of
+$q^n - 1$ that lie in neither $S$ nor $T$, and put $\delta = 1 - \sum_{\rho \in S} 1/\rho$,
+$\varepsilon = \sum_{l \in T} 1/l$ and $\mu = \varphi(k)/k$, where $\varphi$ is Euler's totient
+function. Suppose that $\delta\mu > \varepsilon$ and
+
+$$
+q > (n - 1)^2 \left(\frac{2^{\omega - s - r} \mu (s - 1 + 2\delta) - \delta\mu + r -
+\varepsilon}{\delta\mu - \varepsilon}\right)^2.
+$$
+
+Then for all finite fields $K$ and $L$ with $L$ an extension of $K$, $|K| = q$ and $[L : K] = n$,
+and all nonzero $\gamma_1, \gamma_2 \in L$ with $K(\gamma_1/\gamma_2) = L$, there is $a \in K$
+such that $a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 ## Depends on
 

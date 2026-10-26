@@ -12,11 +12,11 @@ For the identity matrix, `G_g(t) = 1/t` (Table 1), i.e. `u · G_g(u) = 1`.
 
 ## Depends on
 
-- [Landen Form Series](landen-form-series.md)
+- [Landen form series](landen-form-series.md)
 
 ## Proof depends on
 
-- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
+- [Linear fractional pole series](linear-fractional-pole-series.md)
 
 ## Sources
 

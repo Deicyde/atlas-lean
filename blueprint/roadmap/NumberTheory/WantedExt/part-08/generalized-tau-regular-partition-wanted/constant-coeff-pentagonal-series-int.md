@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.constantCoeff_pentagonalSeries_int
 ---
 
-# Constant Coeff pentagonal Series int
+# Euler's product has constant term $1$
 
-Euler's product `∏ (1 - X^m)` has constant coefficient `1`.
+**Euler's product has constant term $1$.** The constant coefficient of the integer power
+series $\prod_{m \ge 1} (1 - X^m)$ in $\mathbb{Z}[[X]]$ is $1$.
 
 ## Depends on
 

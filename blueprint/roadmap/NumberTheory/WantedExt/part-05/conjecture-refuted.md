@@ -5,7 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem1Wanted.conjecture_refuted
 ---
 
-# Erdos Problem1 Wanted
+# Disproof of Erdős Problem 1 on distinct subset sums
+
+**Disproof of Erdős Problem 1 on distinct subset sums.** There is no real number $C > 0$
+such that for every natural number $N \ne 0$ and every finite set $A \subseteq \{1, \dots, N\}$
+whose distinct subsets have distinct sums, $C \cdot 2^{|A|} < N$.
 
 Resolved false: Disproved: machine-checked disproof recorded in the FormalConjectures source
 record. Source: Lean 4 disproof of Erdos Problem 1 (proof by GPT-6 Astra in the FrontierMath

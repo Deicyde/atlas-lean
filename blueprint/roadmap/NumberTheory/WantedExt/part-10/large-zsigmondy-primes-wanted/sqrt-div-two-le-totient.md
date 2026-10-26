@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.sqrt_div_two_le_totient
 ---
 
-# Sqrt div two le totient
+# Square-root lower bound for Euler's totient
 
-For every positive integer `n`, `φ(n) ≥ √n / 2`.
+**Square-root lower bound for Euler's totient.** For every positive integer $n$,
+$\varphi(n) \ge \sqrt{n}/2$, where $\varphi$ is Euler's totient function.
 
 ## Depends on
 

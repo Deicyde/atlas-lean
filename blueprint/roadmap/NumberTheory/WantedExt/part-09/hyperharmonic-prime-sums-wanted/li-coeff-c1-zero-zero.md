@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffC1_zero_zero
 ---
 
-# Li Coeff C1 zero zero
+# Li's coefficient $c_1(0, 0)$
 
-`c₁(0, 0) = 1/2`.
+**Li's coefficient $c_1(0, 0)$.** Li's coefficient $c_1(0, 0)$ equals $\frac{1}{2}$.
 
 ## Depends on
 
-- [Li Coeff C1](li-coeff-c1.md)
+- [Li's coefficients $c_1(m, j)$](li-coeff-c1.md)
 
 ## Sources
 

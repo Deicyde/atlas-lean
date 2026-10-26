@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.prod_zpow_le_lcm_zpow_mul_prod_gcd
 ---
 
-# Prod zpow le lcm zpow mul prod gcd
+# Cohen's lcm–gcd inequality
 
-Cohen's inequality: for positive integers `d_1, …, d_k` and every `t ∈ ℤ`,
-`[d_1, …, d_k]^{t(t+1)/2} ∏_{i<j} (d_i, d_j) ≥ ∏_i d_i^t` (in `ℚ`; `t(t+1)/2` is an integer).
+**Cohen's lcm–gcd inequality.** Let $k$ be a natural number, let $d_1, \dots, d_k$ be
+positive integers and let $t$ be an integer. Then, as an inequality of rational numbers,
+
+$$\prod_{i=1}^{k} d_i^{\,t} \le \operatorname{lcm}(d_1, \dots, d_k)^{t(t+1)/2}
+\prod_{1 \le i < j \le k} \gcd(d_i, d_j),$$
+
+where the exponent $t(t+1)/2$ is an integer.
 
 ## Depends on
 

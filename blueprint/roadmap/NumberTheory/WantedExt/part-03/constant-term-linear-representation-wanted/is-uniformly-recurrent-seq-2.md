@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.IsLinearlyRecurrentSeq.isUniformlyRecurrentSeq
 ---
 
-# Is Uniformly Recurrent Seq
+# Linearly recurrent sequences are uniformly recurrent
 
-Linear recurrence implies uniform recurrence.
+**Linearly recurrent sequences are uniformly recurrent.** Every linearly recurrent sequence
+$s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is uniformly recurrent.
 
 ## Depends on
 
-- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
-- [Is Uniformly Recurrent Seq](is-uniformly-recurrent-seq.md)
+- [Linearly recurrent sequence](is-linearly-recurrent-seq.md)
+- [Uniformly recurrent sequence](is-uniformly-recurrent-seq.md)
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

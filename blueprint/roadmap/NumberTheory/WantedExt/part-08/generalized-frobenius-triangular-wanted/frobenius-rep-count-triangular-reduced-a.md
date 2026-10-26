@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusRepCount_triangular_reduced_at_pair_frobenius
 ---
 
-# Frobenius Rep Count triangular reduced at pair frobenius
+# Representation count of the reduced triangular triple at a shifted Frobenius number
 
-For `s = k(k+1) + i` with `0 ≤ i ≤ 2k+1` and `n > N_s` (`N_s^{even}` or `N_s^{odd}` by the
-parity of `n`): with `d₁ = gcd(t_{n+1}, t_{n+2})`,
-`d(g(t_{n+1}/d₁, t_{n+2}/d₁; x_s) + y_s t_n; t_n, t_{n+1}/d₁, t_{n+2}/d₁) = s`.
+**Representation count of the reduced triangular triple at a shifted Frobenius number.** For a
+natural number $r$ write $t_r = r(r+1)/2$. Let $n$, $k$, $i$ be natural numbers with $i \le 2k + 1$
+and put $s = k(k+1) + i$. Let $N_s = 6\lfloor\sqrt{s+1}\rfloor - 6$ if $n$ is even and
+$N_s = 6\lfloor(\sqrt{4s+5} - 1)/2\rfloor - 3$ if $n$ is odd, and suppose $n > N_s$. For even $n$
+let $(x_s, y_s) = (i, 2(k - i))$ if $i \le k$ and $(x_s, y_s) = (i - k - 1, 4k - 2i + 3)$ if
+$i > k$; for odd $n$ let $(x_s, y_s) = (2i, k - i)$ if $i \le k$ and
+$(x_s, y_s) = (2(i - k) - 1, 2k - i + 1)$ if $i > k$. Put $d_1 = \gcd(t_{n+1}, t_{n+2})$,
+$a = t_{n+1}/d_1$ and $b = t_{n+2}/d_1$. If $g$ is the generalized Frobenius number
+$g(a, b; x_s)$, then the number of representations of $g + y_s t_n$ by $(t_n, a, b)$ is $s$.
 
 ## Depends on
 
 - [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
 - [Number of representations by a vector of generators](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
-- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
-- [Triangular Frobenius X](triangular-frobenius-x.md)
-- [Triangular Frobenius Y](triangular-frobenius-y.md)
+- [Triangular Frobenius threshold](triangular-frobenius-bound.md)
+- [The parameter $x_s$ of the triangular Frobenius formula](triangular-frobenius-x.md)
+- [The parameter $y_s$ of the triangular Frobenius formula](triangular-frobenius-y.md)
 
 ## Sources
 

@@ -7,15 +7,18 @@ lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_fi
 
 # Theorem 1, free count
 
-**Theorem 1, free count**: for every choice of residue
-classes modulo the first `k` primes, the number of free integers
-in `[1, P_k]` is `f_k`.
+**Theorem 1, free count.** Let $k$ be a natural number, let $p_1 < \cdots < p_k$ be the
+first $k$ primes and let $r_1, \dots, r_k$ be natural numbers. Then the number of integers $n$
+with $1 \le n \le p_1 \cdots p_k$ such that $n \not\equiv r_i \pmod{p_i}$ for every $i$ equals
+$f_k = (-1)^k \det B$, where $B$ is the $(k+1) \times (k+1)$ integer matrix whose first row
+consists of ones and whose row $i + 1$, for $1 \le i \le k$, has $p_i$ in column $i$ and $1$ in
+every other column.
 
 ## Depends on
 
-- [Bordered Ones Diag Det](bordered-ones-diag-det.md)
-- [First Primes](first-primes.md)
-- [Free Count](free-count.md)
+- [Bordered ones-diagonal determinant](bordered-ones-diag-det.md)
+- [The first primes](first-primes.md)
+- [Free count](free-count.md)
 
 ## Sources
 

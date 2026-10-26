@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinRho_eq_sum_roots
 ---
 
-# Padovan Perrin Rho eq sum roots
+# Root formula for the generalized Padovan–Perrin coefficients ρ
 
-If the characteristic polynomial `P(z) = z^{s+p} - k₁ z^p - k₂` (with `k₂ ≠ 0`) has distinct
-roots `λ₁, …, λ_{s+p}`, then `ρ(n, s + p) = ∑_i λ_iⁿ⁻¹ / P'(λ_i)` for every `n ≥ s + p`. The paper
-states this for the general `ρ` of formula (12) attached to an arbitrary characteristic
-polynomial `z^r - a₀ z^{r-1} - ⋯ - a_{r-1}`; this is its specialization to the
-`([k]; p; s)`-Padovan–Perrin coefficients, the case the paper applies.
+**Root formula for the generalized Padovan–Perrin coefficients ρ.** Let $k_1, k_2$ be complex
+numbers with $k_2 \neq 0$, let $p, s \ge 1$, and let $P(z) = z^{s+p} - k_1 z^p - k_2$. If $P$ is
+separable, that is, has $s + p$ distinct roots $\lambda_1, \dots, \lambda_{s+p}$ in $\mathbb{C}$,
+then for every $n \ge s + p$ the Padovan–Perrin coefficient satisfies
+
+$$\rho(n, s + p) = \sum_{i=1}^{s+p} \frac{\lambda_i^{n-1}}{P'(\lambda_i)}.$$
+
+The paper states this for the general $\rho$ of formula (12) attached to an arbitrary
+characteristic polynomial $z^r - a_0 z^{r-1} - \cdots - a_{r-1}$; this is its specialization to
+the $([k]; p; s)$-Padovan–Perrin coefficients, the case the paper applies.
 
 ## Depends on
 
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

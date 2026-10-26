@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF_hofL_galoisInsertion
 ---
 
-# Hofstadter F hof L galois Insertion
+# Galois insertion between iterated Hofstadter functions
 
-For `j ≥ 0` and `k ≥ 1`, `F_k^j` and `L_k^j` form a Galois connection
-(`F_k^j(n) ≤ m ↔ n ≤ L_k^j(m)`), and it is a Galois insertion: `F_k^j ∘ L_k^j = id`.
+**Galois insertion between iterated Hofstadter functions.** Let $k \ge 1$ and $j \ge 0$. Let
+$F_k$ be the generalized Hofstadter function, let $x_k[0]\,x_k[1] \cdots$ be the fixed point,
+beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other letter
+$i$ to $i + 1$, let $L_k(m)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[m-1])$, and
+write $f^j$ for the $j$-fold iterate of a function $f$. Then for all $n, m \ge 0$,
+$F_k^j(n) \le m$ if and only if $n \le L_k^j(m)$, so $F_k^j$ and $L_k^j$ form a Galois
+connection; and $F_k^j(L_k^j(m)) = m$ for every $m \ge 0$, so it is a Galois insertion.
 
 ## Depends on
 
-- [Hof L](hof-l.md)
-- [Hofstadter F](hofstadter-f.md)
+- [The image length $L_k$](hof-l.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

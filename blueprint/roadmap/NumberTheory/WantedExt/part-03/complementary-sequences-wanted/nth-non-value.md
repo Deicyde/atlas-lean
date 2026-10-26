@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue
 ---
 
-# Nth Non Value
+# The $n$-th non-value of a sequence
 
-The `n`-th (`1`-indexed) positive integer that is not a value `f m` with `m ≥ 1`, i.e. the
-paper's `f_P(n)` for the complementary sequence of `f = f_{¬P}`. At `n = 0` it agrees with
-`n = 1` (junk value of the `1`-indexing).
+**The $n$-th non-value of a sequence.** For $f : \mathbb{N} \to \mathbb{N}$ and $n \ge 1$, the
+$n$-th non-value of $f$ is the $n$-th smallest positive integer that is not of the form $f(m)$
+with $m \ge 1$, or $0$ if fewer than $n$ such integers exist. At $n = 0$ it takes the same value
+as at $n = 1$.
+
+In the paper's notation, where $f = f_{\neg P}$ lists the positive integers without a property
+$P$, the $n$-th non-value of $f$ is $f_P(n)$, the $n$-th term of the complementary sequence.
 
 ## Depends on
 

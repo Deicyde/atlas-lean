@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fareyStaircase_zero
 ---
 
-# Farey Staircase zero
+# The Farey staircase of order zero vanishes
 
-`A_0 = 0`.
+**The Farey staircase of order zero vanishes.** For every real number $x$, the Farey staircase
+$A_0$ of order $0$ satisfies $A_0(x) = 0$.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

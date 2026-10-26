@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.wideGenMarkovTree_append_singleton
 ---
 
-# Wide Gen Markov Tree append singleton
+# Children in the wide generalized Markov tree are Vieta jumpings
 
-Characteristic lemma: children in `WMT(k)` are Vieta jumpings of their parent.
+**Children in the wide generalized Markov tree are Vieta jumpings.** For every natural
+number $k$, every path $w$ and every direction $d$ (left or right), the vertex of the wide
+$k$-generalized Markov tree $\mathrm{WMT}(k)$ at the path $w$ followed by one step in direction
+$d$ is the image of the vertex at $w$ under the Vieta jumping in direction $d$.
 
 ## Depends on
 
-- [Gen Markov Vieta](gen-markov-vieta.md)
-- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
+- [Vieta jumping of generalized Markov triples](gen-markov-vieta.md)
+- [The wide generalized Markov tree](wide-gen-markov-tree.md)
 
 ## Sources
 

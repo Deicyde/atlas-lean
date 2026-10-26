@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.collatzAccelerated_mul_eq_and_comm_of_roots_prime
 ---
 
-# Collatz Accelerated mul eq and comm of roots prime
+# Prime roots give semiprime solutions
 
-If `p, q` are primes and both `r± = (p + q ± √(p² - 22pq + q² - 8))/4` are primes, then
-`C(pq) = r₊ r₋` and `pq` solves `D(C(n)) = C(D(n))`. The square root is an integer `t ≥ 0`
-with `t² = p² - 22pq + q² - 8`.
+**Prime roots give semiprime solutions.** Let $D$ be the arithmetic derivative and $C$ the
+accelerated Collatz map. Let $p$ and $q$ be primes and let $t \ge 0$ be an integer with
+$t^2 = p^2 - 22pq + q^2 - 8$. If $r = (p + q + t)/4$ and $s = (p + q - t)/4$ are both primes,
+then $C(pq) = rs$ and $D(C(pq)) = C(D(pq))$.
+
+The numbers $r$ and $s$ are the roots $(p + q \pm \sqrt{p^2 - 22pq + q^2 - 8})/4$ of
+$2x^2 - (p + q)x + 3pq + 1 = 0$.
 
 ## Depends on
 
 - [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 
 ## Sources
 

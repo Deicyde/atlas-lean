@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.maxChainLength_lt
 ---
 
-# Lemma 1
+# Upper bound for the maximal gleeful chain length
 
-**Lemma 1.** If `k > 1` and `M = M(x, k) ≥ M₀ ≥ 6`, then
-`M < 4^{1/(k+1)} (k+1) x^{1/(k+1)} / (log x)^{k/(k+1)} · C(M₀, k)`.
+**Upper bound for the maximal gleeful chain length.** Let $p_1 = 2, p_2 = 3, \dots$ be the
+primes in increasing order. Let $k > 1$, $M_0 \ge 6$, $M \ge M_0$ and $x$ be natural numbers with
+$p_1^k + \cdots + p_M^k \le x < p_1^k + \cdots + p_{M+1}^k$. Put $y = M_0$,
+
+$$B = \frac{\log(y+1)}{\log y} + \frac{\log\log((y+1)^2)}{\log y} \cdot \frac{k}{k+1}$$
+
+and $C = (y/(y-1))^{1/(k+1)} B^{k/(k+1)}$, where $\log$ is the natural logarithm. Then
+
+$$M < 4^{1/(k+1)} \cdot \frac{(k+1)\, x^{1/(k+1)}}{(\log x)^{k/(k+1)}} \cdot C.$$
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fareyStaircase_one
 ---
 
-# Farey Staircase one
+# The Farey staircase of order one is the floor function
 
-`A_1(x) = ⌊x⌋`.
+**The Farey staircase of order one is the floor function.** For every real number $x$, the
+Farey staircase $A_1$ of order $1$ satisfies $A_1(x) = \lfloor x \rfloor$.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

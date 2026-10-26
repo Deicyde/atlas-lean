@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.IsKLDeficientPerfect
 ---
 
-# Is KLDeficient Perfect
+# $(k,\ell)$-deficient-perfect numbers
 
-The paper's `[k,ℓ]`-deficient-perfect numbers.
+**$[k,\ell]$-deficient-perfect numbers.** For natural numbers $k$, $\ell$ and $n$, write
+$\sigma_k(n) = \sum_{e \mid n} e^k$. The number $n$ is $[k,\ell]$-deficient-perfect when there is a
+divisor $d$ of $n$ with $d < n$ such that $\sigma_k(n) + d^k = n^k + \ell n$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [KLDeficient Perfect With](kldeficient-perfect-with.md)
+- [$(k,\ell)$-deficient-perfect with a given divisor](kldeficient-perfect-with.md)
 
 ## Sources
 

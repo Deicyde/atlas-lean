@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝔸
 ---
 
-# 𝔸
+# Adele ring of the rationals
 
-The adele ring `𝔸 = 𝔸_ℚ` of the rationals.
+**Adele ring of the rationals.** $\mathbb{A}_\mathbb{Q}$, also written $\mathbb{A}$, is the
+adele ring of $\mathbb{Q}$.
 
 ## Depends on
 

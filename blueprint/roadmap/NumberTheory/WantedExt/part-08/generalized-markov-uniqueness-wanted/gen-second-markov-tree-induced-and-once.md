@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.genSecondMarkovTree_induced_and_once
 ---
 
-# Gen Second Markov Tree induced and once
+# Vertices of the second generalized Markov tree
 
-Corollary 2.8: the tree `SMT(k)`, obtained from `MT(k)` by replacing each vertex
-`(a, b, c)` with `((3 + 3k)a - k, (3 + 3k)b - k, (3 + 3k)c - k)`, consists of induced solutions
-of `GSME(k)`, and each induced solution `(a, b, c)` with `b > max {a, c}` appears exactly once.
+**Vertices of the second generalized Markov tree.** For a natural number $k$, let $SMT(k)$
+be the tree obtained from the $k$-generalized Markov tree $MT(k)$ by replacing each vertex
+$(a, b, c)$ with the integer triple $((3 + 3k)a - k, (3 + 3k)b - k, (3 + 3k)c - k)$. Every vertex
+of $SMT(k)$ is an induced solution of the $k$-generalized second Markov equation, and for every
+induced solution $(a, b, c)$ with $a < b$ and $c < b$ there is exactly one path $w$ such that the
+vertex of $SMT(k)$ at $w$ is $(a, b, c)$.
 
 ## Depends on
 
-- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Induced solution of the generalized second Markov equation](is-induced-gen-second-markov-solution.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

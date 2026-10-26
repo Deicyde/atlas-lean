@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.triangularTriple
 ---
 
-# Triangular Triple
+# Three consecutive triangular numbers
 
-The three consecutive triangular numbers `(t_n, t_{n+1}, t_{n+2})`, `t_n = n(n+1)/2`.
+**Three consecutive triangular numbers.** For a natural number $n$, the triangular triple of
+$n$ is $(t_n, t_{n+1}, t_{n+2})$, where $t_m = m(m+1)/2$ is the $m$-th triangular number.
 
 ## Depends on
 

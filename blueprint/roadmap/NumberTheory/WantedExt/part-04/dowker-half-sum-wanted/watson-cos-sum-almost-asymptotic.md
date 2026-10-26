@@ -5,18 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.watson_cos_sum_almost_asymptotic
 ---
 
-# Watson cos sum almost asymptotic
+# Almost-asymptotic expansion of Watson's cosine sum
 
-Theorem 3 (printed as Theorem 4 in the source) gives the almost-asymptotic
-expansion for `C_n(ν)`. The hypotheses formalize `n,N ≥ 2` and the standing
-condition `1 ≤ ν ≤ n-1`; the existential `λ` is constrained by `0 < λ < 1`.
-The finite sum and final term respectively encode the terms through `N-1` and
-the `λ`-weighted `N`th remainder term.
+**Almost-asymptotic expansion of Watson's cosine sum.** Let $n \ge 2$, $N \ge 2$ and $\nu$ be
+natural numbers with $1 \le \nu \le n - 1$, and let
+
+$$
+C_n(\nu) = \sum_{l=1}^{n-1} \frac{\cos(2 \pi \nu l / n)}{\sin(\pi l / n)}.
+$$
+
+For $r \ge 1$ write
+
+$$
+T_r(n, \nu) = \frac{(1 - 2^{1-2r}) \, \pi^{2r-1} B_{2r} \, \cot^{(2r-1)}(\pi \nu / n)}
+{(2r)! \, n^{2r-1}},
+$$
+
+where $B_{2r}$ is the $2r$-th Bernoulli number and $\cot^{(2r-1)}$ is the $(2r-1)$-st derivative
+of the cotangent. Then there is a real number $\lambda$ with $0 < \lambda < 1$ such that
+
+$$
+C_n(\nu) = -\frac{2n}{\pi} \log\left(2 \sin\frac{\pi \nu}{n}\right) +
+2 \sum_{r=1}^{N-1} T_r(n, \nu) + 2 \lambda \, T_N(n, \nu).
+$$
 
 ## Depends on
 
-- [Watson Cos Sum](watson-cos-sum.md)
-- [Watson Expansion Term](watson-expansion-term.md)
+- [Generalized Watson trigonometric sum](watson-cos-sum.md)
+- [Watson expansion terms](watson-expansion-term.md)
 
 ## Sources
 

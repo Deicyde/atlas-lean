@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovCharNumber_dvd_sub
 ---
 
-# Gen Markov Char Number dvd sub
+# The characteristic number solves $m_r x \equiv m_s \pmod{m_t}$
 
-Corollary 4.6: for `t ∈ (0, 1)` the characteristic number `u_t` solves
-`m_r x ≡ m_s (mod m_t)` (with the plus sign).
+**The characteristic number solves $m_r x \equiv m_s \pmod{m_t}$.** Let $k \in \mathbb{N}$,
+let $w$ be a finite sequence of left and right moves, let $(r, t, s)$ be the vertex of the
+Farey tree at $w$, and let $(m_r, m_t, m_s)$ be the vertex of the $k$-generalized Markov tree
+$\mathrm{MT}(k)$ at $w$. Write $t = n/d$. If $0 < n < d$ and $u$ is a characteristic number
+of $(m_r, m_t, m_s)$, then $m_t$ divides $m_r u - m_s$ in $\mathbb{Z}$, that is,
+$m_r u \equiv m_s \pmod{m_t}$.
+
+Of the two congruences $m_r x \equiv \pm m_s \pmod{m_t}$ allowed in the definition of a
+characteristic number, the one with the plus sign holds.
 
 ## Depends on
 
-- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
-- [Farey Tree](farey-tree.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Characteristic number](is-gen-markov-char-number.md)
+- [The Farey tree](farey-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

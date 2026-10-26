@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_S1958
 ---
 
-# Lower Bound S1958
+# The proposition $(4 - \sqrt{6})/5 \le C_{1b}$
 
-Source-reported lower bound `(4-√6)/5 ≤ C₁ᵦ`.
+**The proposition $(4 - \sqrt{6})/5 \le C_{1b}$.** This is the proposition that the continuous
+Erdős minimum-overlap constant $C_{1b}$ satisfies $(4 - \sqrt{6})/5 \le C_{1b}$.
 
 ## Depends on
 

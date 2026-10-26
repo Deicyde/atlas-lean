@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.gaussKuzminMass
 ---
 
-# Gauss Kuzmin Mass
+# Gauss–Kuzmin mass of a string
 
-The Gauss-Kuzmin measure `P_GK(a) = μ_GK(I(a)) = (1/log 2) ∫_{I(a)} dx/(1 + x)` of a string.
+**Gauss–Kuzmin mass of a string.** For a finite string $a$ of natural numbers with
+fundamental interval $I(a)$, the Gauss–Kuzmin mass of $a$ is
+$P_{GK}(a) = \frac{1}{\log 2} \int_{I(a)} \frac{dx}{1 + x}$, the measure of $I(a)$ under the
+Gauss–Kuzmin measure with density $\frac{1}{(1 + x) \log 2}$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cf Cylinder](cf-cylinder.md)
+- [Fundamental interval of a string](cf-cylinder.md)
 
 ## Sources
 

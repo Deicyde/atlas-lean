@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.genCohnPath
 ---
 
-# Gen Cohn Path
+# Paths of generalized Cohn steps
 
-The triple reached from `T` by applying the steps of the path `w` in order.
+**Paths of generalized Cohn steps.** Fix a natural number $k$ and let $S$ be the integer
+$2 \times 2$ matrix with rows $(k, 0)$ and $(3k^2 + 3k, k)$. For a triple $T$ of integer
+$2 \times 2$ matrices and a path $w$, a finite sequence of left and right moves, this is the
+triple obtained from $T$ by applying the moves of $w$ in order, where a left move sends
+$(P, Q, R)$ to $(P, PQ - S, Q)$ and a right move sends $(P, Q, R)$ to $(Q, QR - S, R)$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gen Cohn Step](gen-cohn-step.md)
+- [One step of the wide generalized Cohn tree](gen-cohn-step.md)
 
 ## Sources
 

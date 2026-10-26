@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gcdSumMean_two
 ---
 
-# Gcd Sum Mean two
+# The mean gcd-sum function at $2$
 
-`A(2) = 3/2`, since `P(2) = gcd(1, 2) + gcd(2, 2) = 3`.
+**The mean gcd-sum function at $2$.** The mean gcd-sum function $A$ satisfies $A(2) = 3/2$,
+since $A(2) = P(2)/2$, where $P(n) = \sum_{j=1}^{n} \gcd(j, n)$ is Pillai's gcd-sum function
+and $P(2) = \gcd(1, 2) + \gcd(2, 2) = 3$.
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

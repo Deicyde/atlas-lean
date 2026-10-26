@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digitSumFluctuationIntegral
 ---
 
-# Digit Sum Fluctuation Integral
+# Integral of the Trollope–Delange fluctuation
 
-`G(x) = ∫_1^x F(log u / log q) du / u`.
+**Integral of the Trollope–Delange fluctuation.** For a natural number $q$ and a real number
+$x$, let $F$ be the Trollope–Delange fluctuation in base $q$. Then $G(x)$ is the real number
+
+$$G(x) = \int_1^x \frac{F(\log u / \log q)}{u} \, du,$$
+
+where the integral is oriented, so that $\int_1^x = -\int_x^1$ when $x < 1$.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

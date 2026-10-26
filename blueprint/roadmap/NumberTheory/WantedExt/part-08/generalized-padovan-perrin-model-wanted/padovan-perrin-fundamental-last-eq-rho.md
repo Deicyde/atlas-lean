@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinFundamental_last_eq_rho
 ---
 
-# Padovan Perrin Fundamental last eq rho
+# The last generalized Padovan–Perrin fundamental sequence is a shifted ρ
 
-The Fibonacci fundamental solution is a shifted `ρ`: `v⁽ˢ⁺ᵖ⁾ n = ρ(n + 1, s + p)` for
-`n ≥ s + p`, with `ρ` as in `padovanPerrinRho` (constraint `s a + (s + p) b = n - (s + p)` of
-formula (12); the printed `n - (s + p - 1)` fails, e.g. `k₁ = k₂ = 1`, `p = 1`, `s = 2`, `n = 3`:
-`v⁽³⁾ 3 = 0` while the printed `ρ(4, 3) = 1`). Stated over any commutative ring.
+**The last generalized Padovan–Perrin fundamental sequence is a shifted ρ.** Let $R$ be a
+commutative ring, $k_1, k_2 \in R$, and $p, s \ge 1$. Write $v^{(s+p)}$ for the $(s+p)$-th
+sequence of the Fibonacci fundamental system of the $([k]; p; s)$-Padovan–Perrin recurrence and
+$\rho(m, s+p)$ for the Padovan–Perrin coefficient. Then $v^{(s+p)}_n = \rho(n + 1, s + p)$ for
+every $n \ge s + p$.
+
+Here $\rho(m, s+p)$ sums over $a, b \ge 0$ with $sa + (s+p)b = m - (s+p)$, the constraint of
+formula (12). With the printed constraint $m - (s + p - 1)$ the identity fails, e.g. for
+$k_1 = k_2 = 1$, $p = 1$, $s = 2$, $n = 3$, where $v^{(3)}_3 = 0$ but the printed
+$\rho(4, 3)$ is $1$.
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

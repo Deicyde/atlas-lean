@@ -5,17 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.sixSquaresDedekindMoment_ge_four
 ---
 
-# Six Squares Dedekind Moment ge four
+# Higher six-squares moments over a non-normal cubic field
 
-For a cubic field `K` of negative discriminant (so non-normal over `ℚ`), every `ℓ ≥ 4` and
-every `ε > 0`, `S_ℓ(x) = x³ P_ℓ(log x) + O(x^{3 - 2/3^ℓ + ε})` for a polynomial `P_ℓ` of degree
-`a_{0,ℓ} + a_{3,ℓ} - 1` (`P_ℓ` for even `ℓ`, `Q_ℓ` for odd `ℓ` in the paper).
+**Higher six-squares moments over a non-normal cubic field.** Let $K$ be a number field of
+degree $3$ over $\mathbb{Q}$ with negative discriminant and let $\ell \ge 4$. For $n \ge 1$ let
+$a_K(n)$ be the number of ideals of the ring of integers of $K$ of absolute norm $n$ and $r_6(n)$
+the number of representations of $n$ as a sum of six squares of integers, and for real $x$ let
+$S_\ell(x) = \sum_{1 \le n \le x} r_6(n)\, a_K(n)^\ell$. Let
+$a_{0,\ell} = 1 + \sum_{i=1}^{\lfloor \ell/2 \rfloor} \binom{\ell}{2i} C_i$, with $C_i$ the
+$i$-th Catalan number, and let $a_{3,\ell}$ be the sum over the integers
+$1 \le i \le \lfloor (\ell - 1)/2 \rfloor$ of $\binom{\ell}{2i+1}$ times the integer part of
+$4\,(2i+1)!/((i-1)!\,(i+3)!)$. Then there is a real polynomial $P$ of degree
+$a_{0,\ell} + a_{3,\ell} - 1$ such that for every $\varepsilon > 0$,
+$S_\ell(x) - x^3 P(\log x) = O(x^{3 - 2/3^\ell + \varepsilon})$ as $x \to \infty$.
+
+Such a field is not normal over $\mathbb{Q}$. The polynomial is called $P_\ell$ for even $\ell$
+and $Q_\ell$ for odd $\ell$ in the source.
 
 ## Depends on
 
-- [Dedekind Six Squares A0](dedekind-six-squares-a0.md)
-- [Dedekind Six Squares A3](dedekind-six-squares-a3.md)
-- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
+- [The exponent $a_{0,\ell}$](dedekind-six-squares-a0.md)
+- [The exponent $a_{3,\ell}$](dedekind-six-squares-a3.md)
+- [Six-squares moments of Dedekind zeta coefficients](six-squares-dedekind-moment.md)
 
 ## Sources
 

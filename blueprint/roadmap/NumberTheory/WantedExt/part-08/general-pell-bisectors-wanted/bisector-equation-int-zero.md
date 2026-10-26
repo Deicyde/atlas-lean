@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_int_zero
 ---
 
-# Bisector equation int zero
+# No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$
 
-If `a = 0` or `b = 0`, then `(a - c)² (b² + 1) = (b - c)² (a² + 1)` has no nontrivial integral
-solutions (every integral solution has `|a| = |b|`).
+**No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$.** Let
+$a, b, c$ be integers with $a = 0$ or $b = 0$ and
+$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then $|a| = |b|$.
 
 ## Depends on
 

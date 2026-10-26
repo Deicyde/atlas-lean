@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.one_div_partialQuotient_bound_mul_lt_abs_mul_sub
 ---
 
-# One div partial Quotient bound mul lt abs mul sub
+# Partial-quotient lower bound for rational approximation
 
-Lemma 2: let `γ` be irrational with convergents `p_i / q_i` and partial
-quotients `a_0 = ⌊γ⌋, a_1, …`. Let `M ≥ 1` and `N` with `q_N ≤ M < q_{N+1}`,
-and let `a_L ≥ a_i` for `0 ≤ i ≤ N + 1` (the paper takes the maximum; any upper
-bound is equivalent since the bound weakens as `a_L` grows). Then
-`|x γ - y| > 1 / ((a_L + 2) x)` for all integers `x, y` with `0 < x < M`. Here
-`a_{j+1}` is the `j`-th entry of Mathlib's `partDens`.
+**Partial-quotient lower bound for rational approximation.** Let $\gamma$ be an irrational real
+number with continued fraction $[a_0; a_1, a_2, \dots]$, so that $a_0 = \lfloor \gamma \rfloor$,
+and let $q_0 = 1, q_1, q_2, \dots$ be the denominators of its convergents. Let $M \ge 1$ and
+$N \ge 0$ be integers with $q_N \le M < q_{N+1}$, and let $A$ be a real number with $a_i \le A$
+for $0 \le i \le N + 1$. Then $|x \gamma - y| > 1/((A + 2) x)$ for all integers $x, y$ with
+$0 < x < M$.
+
+Taking $A = \max(a_0, \dots, a_{N+1})$ gives the strongest bound.
 
 ## Depends on
 

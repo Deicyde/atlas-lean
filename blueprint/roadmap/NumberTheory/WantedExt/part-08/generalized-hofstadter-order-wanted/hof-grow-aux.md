@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hofGrowAux
 ---
 
-# Hof Grow Aux
+# Bounded growth of a word under $\tau_k$
 
-Apply `τ_k` to `w` until the word has more than `n` letters, with fuel `f`.
+**Bounded growth of a word under $\tau_k$.** Let $\tau_k$ be the substitution sending the
+letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words. Given
+$n$, a bound $f$ and a word $w$, the result is $w$ if $f = 0$ or $w$ has more than $n$ letters,
+and otherwise it is the result for the bound $f - 1$ and the word $\tau_k(w)$. Thus $\tau_k$ is
+applied to $w$ until the word has more than $n$ letters, at most $f$ times.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Sources
 

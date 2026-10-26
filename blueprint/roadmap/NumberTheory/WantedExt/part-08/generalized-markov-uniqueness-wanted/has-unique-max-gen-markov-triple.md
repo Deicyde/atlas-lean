@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.HasUniqueMaxGenMarkovTriple
 ---
 
-# Has Unique Max Gen Markov Triple
+# Unique maximal generalized Markov triple
 
-`b` is the maximum of a unique `k`-generalized Markov triple up to order: there is a
-triple `(a, b, c)` with `max {a, b, c} = b`, and any other such triple `(a', b, c')` has
-`{a', c'} = {a, c}`.
+**Unique maximal generalized Markov triple.** Let $k$ and $b$ be natural numbers. The number
+$b$ is the maximum of a unique $k$-generalized Markov triple up to order if there is a
+$k$-generalized Markov triple $(a, b, c)$ with $a \le b$ and $c \le b$, and every
+$k$-generalized Markov triple $(a', b, c')$ with $a' \le b$ and $c' \le b$ satisfies
+$(a', c') = (a, c)$ or $(a', c') = (c, a)$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

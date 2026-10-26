@@ -5,10 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.𝔖_q
 ---
 
-# 𝔖 q
+# Singular series for twin primes in $F(T)$
 
-The Hardy-Littlewood constant associated to prime tuples of the form `{f, f + h}`;
-see Equation (1.4) in the paper.
+**Singular series for twin primes in $F[T]$.** Let $F$ be a finite field with $q$ elements and
+let $h \in F[T]$. The Hardy–Littlewood constant of the prime pair $\{f, f + h\}$ is the infinite
+product over all primes $P$ of $F[T]$ (the monic irreducible polynomials)
+
+$$\mathfrak{S}_q(h) =
+\prod_P \frac{1 - |P|^{-1} - |P|^{-1}\,\mathbf{1}_{P \nmid h}}{(1 - |P|^{-1})^2},$$
+
+where $|P|$ is the norm of $P$ and $\mathbf{1}_{P \nmid h}$ is $1$ if $P$ does not divide $h$ and
+$0$ otherwise.
+
+The product is an unconditional infinite product of real numbers; when it does not converge its
+value is taken to be $1$.
 
 ## Depends on
 
@@ -16,10 +26,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Indicator](indicator.md)
-- [Primes](primes.md)
-- [Ring Norm](ring-norm.md)
+- [Indicator of a statement](indicator.md)
+- [Primes of $F(T)$](primes.md)
+- [The norm on $F(T)$](ring-norm.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted](../../../../../sources/v2/WantedExt.md)
+- W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.4).

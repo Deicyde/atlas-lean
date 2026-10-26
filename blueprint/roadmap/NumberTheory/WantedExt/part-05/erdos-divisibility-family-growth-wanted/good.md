@@ -6,11 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosDivisibilityFamilyGrowthWanted.Good
 ---
 
-# Good
+# Sets in which no element divides the product of two others
 
-A finite set of naturals is good when no element divides the product of
-any two other (not necessarily distinct from each other) elements, and every
-element is positive.
+**Sets in which no element divides the product of two others.** A finite set $A$ of natural
+numbers is good when every element of $A$ is positive and no $a \in A$ divides $bc$ for any
+$b, c \in A$ with $a \ne b$ and $a \ne c$; here $b = c$ is allowed.
 
 ## Depends on
 

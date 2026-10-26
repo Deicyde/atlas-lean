@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.partition_composition_sum_modEq_zero
 ---
 
-# Partition composition sum mod Eq zero
+# Partition composition sums vanishing modulo a prime
 
-For a prime `l ≥ 5` and `m ≥ 0` with `m ≢ 0` and `m ≢ (-1)^r C(l - 3, r) (mod l)` for all
-`0 ≤ r ≤ (l - 3)/2`: every `n ≡ m (mod l)` has
-`∑_{a_1 + ⋯ + a_{l-3} = n} p(a_1)⋯p(a_{l-3}) ≡ 0 (mod l)`.
+**Partition composition sums vanishing modulo a prime.** Let $p(a)$ be the number of
+partitions of $a$. Let $\ell \ge 5$ be a prime and $m \ge 0$ an integer such that
+$m \not\equiv 0 \pmod{\ell}$ and $m \not\equiv (-1)^r \binom{\ell - 3}{r} \pmod{\ell}$ for every
+integer $r$ with $0 \le r \le (\ell - 3)/2$. Then every integer $n \ge 0$ with
+$n \equiv m \pmod{\ell}$ satisfies
+
+$$\sum_{a_1 + \cdots + a_{\ell - 3} = n} p(a_1) \cdots p(a_{\ell - 3}) \equiv 0 \pmod{\ell},$$
+
+the sum running over all $(\ell - 3)$-tuples $(a_1, \dots, a_{\ell - 3})$ of nonnegative integers
+with sum $n$.
 
 ## Depends on
 

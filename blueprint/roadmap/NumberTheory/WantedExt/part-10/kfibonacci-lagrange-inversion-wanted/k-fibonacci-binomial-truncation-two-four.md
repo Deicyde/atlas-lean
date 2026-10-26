@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.kFibonacciBinomialTruncation_two_four
 ---
 
-# K Fibonacci Binomial Truncation two four
+# Value $G_4^{(2)} = 3$
 
-`G_4^{(2)} = 3 = F_4`: the first value whose sum has two terms.
+**Value $G_4^{(2)} = 3$.** The truncated binomial sum satisfies $G_4^{(2)} = 3$.
+
+This is the Fibonacci number $F_4$, and $n = 4$ is the first index for which the sum defining
+$G_n^{(2)}$ has two terms.
 
 ## Depends on
 
-- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
+- [Truncated binomial sum $G_n^{(k)}$](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hofTauList_iterate_self
 ---
 
-# Hof Tau List iterate self
+# Iterates of the Hofstadter substitution on the letter $k$
 
-The prefixes `τ_k^j(k)`: `τ_k^j(k) = k 1 2 ⋯ j` for `j ≤ k`, and
-`τ_k^j(k) = τ_k^{j-1}(k) τ_k^{j-k}(k)` for `j ≥ k`.
+**Iterates of the Hofstadter substitution on the letter $k$.** Let $k \ge 1$, let $\tau_k$ be
+the morphism of finite words over $\mathbb{N}$ that replaces the letter $k$ by the word $k\,1$ and
+every other letter $i$ by $i + 1$, and write $\tau_k^j(k)$ for the word obtained by applying
+$\tau_k$ $j$ times to the one-letter word $k$. For every natural number $j$: if $j \le k$, then
+$\tau_k^j(k) = k\,1\,2 \cdots j$, the letter $k$ followed by $1, 2, \dots, j$; and if $j \ge k$,
+then $\tau_k^j(k)$ is the concatenation $\tau_k^{j-1}(k)\,\tau_k^{j-k}(k)$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Sources
 

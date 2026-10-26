@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ringOfIntegers_quotient_pow_ringEquiv_zmod_two_pow
 ---
 
-# Ring Of Integers quotient pow ring Equiv zmod two pow
+# Quotients by powers of a prime in $T_K$
 
-For a prime `P ∈ T_K` and every `n ≥ 1`, `𝓞_K / P^n ≃ ℤ / 2^n ℤ` as rings.
+**Quotients by powers of a prime in $T_K$.** Let $K$ be a number field with ring of integers
+$\mathcal{O}_K$, and let $P \in T_K$, that is, $P$ is a prime ideal of $\mathcal{O}_K$ lying over
+$2$ with ramification index $1$ and inertia degree $1$ over $\mathbb{Z}$. Then for every $n \ge 1$
+the ring $\mathcal{O}_K / P^n$ is isomorphic to $\mathbb{Z} / 2^n \mathbb{Z}$.
 
 ## Depends on
 
-- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
+- [Unramified primes of degree one above $2$](two-unramified-degree-one-primes.md)
 
 ## Sources
 

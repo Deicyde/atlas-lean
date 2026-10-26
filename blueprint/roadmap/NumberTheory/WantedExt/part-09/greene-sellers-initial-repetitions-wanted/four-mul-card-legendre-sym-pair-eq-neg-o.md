@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.four_mul_card_legendreSym_pair_eq_neg_one
 ---
 
-# Four mul card legendre Sym pair eq neg one
+# Counting $r$ with $mr + 1$ and $nr + 1$ both quadratic nonresidues
 
-For an odd prime `p` and integers `m, n` with `p ∤ mn(n - m)`, the number `N` of
-`0 ≤ r ≤ p - 1` with `mr + 1` and `nr + 1` both quadratic nonresidues modulo `p` satisfies
-`N = ⌊p/4⌋ - (1/4)((m/p) - ((n-m)/p))((n/p) - ((m-n)/p))`, stated multiplied by `4`.
+**Counting $r$ with $mr + 1$ and $nr + 1$ both quadratic nonresidues.** Let $p$ be an odd
+prime, write $\left(\frac{a}{p}\right)$ for the Legendre symbol of an integer $a$, and let $m$ and
+$n$ be integers with $p \nmid mn(n - m)$. If $N$ is the number of integers $r$ with
+$0 \le r \le p - 1$ such that $\left(\frac{mr+1}{p}\right) = \left(\frac{nr+1}{p}\right) = -1$, then
+
+$$4N = 4\left\lfloor \frac{p}{4} \right\rfloor -
+\left(\left(\frac{m}{p}\right) - \left(\frac{n-m}{p}\right)\right)
+\left(\left(\frac{n}{p}\right) - \left(\frac{m-n}{p}\right)\right).$$
 
 ## Depends on
 

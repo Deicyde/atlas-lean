@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.andrews_rogersRamanujan_second_dissection
 ---
 
-# Andrews rogers Ramanujan second dissection
+# Andrews' identity for the second Rogers–Ramanujan series
 
-Andrews' identity (6.23): for `|q| < 1`,
-`(q²;q²)_∞ ∑_{j ≥ 0} q^{j²+j}/(q;q)_j = ∑_{λ ∈ ℤ} (q^{60λ²+8λ} - q^{60λ²+32λ+4} + q^{60λ²+28λ+3}
-- q^{60λ²+52λ+11})`. All exponents are nonnegative for integer `λ`.
+**Andrews' identity for the second Rogers–Ramanujan series.** Let $q$ be a complex number
+with $|q| < 1$, write $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ for $j \ge 0$, and let
+$(q^2;q^2)_\infty = \prod_{n=0}^{\infty} (1 - q^{2n+2})$ be the infinite q-Pochhammer symbol. Then
+
+$$(q^2;q^2)_\infty \sum_{j=0}^{\infty} \frac{q^{j^2+j}}{(q;q)_j} = \sum_{\lambda \in \mathbb{Z}}
+\left(q^{60\lambda^2+8\lambda} - q^{60\lambda^2+32\lambda+4} + q^{60\lambda^2+28\lambda+3} -
+q^{60\lambda^2+52\lambda+11}\right).$$
+
+All exponents on the right are nonnegative for integer $\lambda$.
 
 ## Depends on
 

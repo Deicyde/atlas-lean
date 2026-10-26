@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.convergentMatrix_cons
 ---
 
-# Convergent Matrix cons
+# Prepending a digit to a string
 
-Prepending a digit multiplies the convergent matrix on the left by `[[0, 1], [1, t]]`.
+**Prepending a digit to a string.** For every natural number $t$ and every finite string $a$
+of natural numbers, the convergent matrix of the string $(t, a)$, obtained by prepending $t$ to
+$a$, is $C(t, a) = \begin{pmatrix} 0 & 1 \\ 1 & t \end{pmatrix} C(a)$.
 
 ## Depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

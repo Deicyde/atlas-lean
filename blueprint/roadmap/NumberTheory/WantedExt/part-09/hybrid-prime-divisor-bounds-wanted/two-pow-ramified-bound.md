@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_ramified_bound
 ---
 
-# Two pow ramified bound
+# The ramified bound for $n = 2^a$
 
-The ramified bound for `n = 2^a`: with `ω_n = ω(x^n - 1)` and `s_i` the `i`-th prime,
-`x ≥ min((1 + 2n ∏_{i=1}^{ω_n} s_i)^{1/n}, (1 + ∏_{i=2}^{ω_n+1} s_i)^{1/n})`, stated
-equivalently after raising to the `n`-th power, with `s_i = Nat.nth Nat.Prime (i - 1)`. The
-source admits `x ∈ ℤ⁺`; here `x > 1`, since for `x = 1` the number `x^n - 1 = 0` has
-`ω = 0` in Mathlib and the bound would read `1 ≥ 2^{1/n}`.
+**The ramified bound for $n = 2^a$.** Let $a \ge 1$, let $n = 2^a$, let $x > 1$ be a natural
+number, let $\omega_n$ be the number of distinct prime factors of $x^n - 1$, and let
+$s_1 = 2 < s_2 = 3 < s_3 = 5 < \cdots$ be the primes in increasing order. Then
+
+$$\min\Bigl(1 + 2n \prod_{i=1}^{\omega_n} s_i,\ 1 + \prod_{i=2}^{\omega_n + 1} s_i\Bigr) \le x^n.$$
+
+Equivalently, $x$ is at least the smaller of the $n$-th roots of these two numbers, which is the
+form of the source. The source admits every positive integer $x$; at $x = 1$ the number
+$x^n - 1 = 0$ has an empty prime factorization, so $\omega_n = 0$ and the bound would read
+$2 \le 1$.
 
 ## Depends on
 

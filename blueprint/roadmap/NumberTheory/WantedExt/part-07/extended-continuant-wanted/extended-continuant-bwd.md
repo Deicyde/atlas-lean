@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.extendedContinuantBwd
 ---
 
-# Extended Continuant Bwd
+# Backward branch of the extended continuant
 
-Backward branch of the extended continuant with start index `b`: the value at `m` is
-`K_{-1-m}(x)_b`, so `0 ↦ 1`, `1 ↦ 0`, and `m + 2 ↦ -x_{b-1-m} K_{-2-m} + K_{-1-m}`.
+**Backward branch of the extended continuant.** For an integer sequence
+$x : \mathbb{Z} \to \mathbb{Z}$ and an integer $b$, the backward branch with start index $b$ is
+the sequence $(B_m)_{m \ge 0}$ of integers defined by $B_0 = 1$, $B_1 = 0$ and
+$B_{m+2} = -x_{b-1-m} B_{m+1} + B_m$. Its value $B_m$ is the extended continuant
+$K_{-1-m}(x)_b$ of negative order $-1-m$.
 
 ## Depends on
 

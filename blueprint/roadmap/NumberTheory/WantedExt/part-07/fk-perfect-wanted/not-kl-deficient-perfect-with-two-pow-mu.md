@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_klDeficientPerfectWith_two_pow_mul
 ---
 
-# Theorem 8
+# $2^a p$ is not $(k,\ell)$-deficient-perfect with divisor $1$ or $p$
 
-**Theorem 8**: `2^a p` (`p` an odd prime) is not
-`[k,ℓ]`-deficient-perfect with divisor `d = 1` or `d = p`.
+**$2^a p$ is not $[k,\ell]$-deficient-perfect with divisor $1$ or $p$.** Let $k$, $\ell$, $a$
+be natural numbers with $\ell \ge 1$ and let $p$ be an odd prime. Call $n$
+$[k,\ell]$-deficient-perfect with divisor $d$ when $d$ divides $n$, $d < n$ and
+$\sigma_k(n) + d^k = n^k + \ell n$, where $\sigma_k(n)$ is the sum of the $k$-th powers of the
+divisors of $n$. Then $2^a p$ is not $[k,\ell]$-deficient-perfect with divisor $1$, and not with
+divisor $p$.
 
 ## Depends on
 
-- [KLDeficient Perfect With](kldeficient-perfect-with.md)
+- [$(k,\ell)$-deficient-perfect with a given divisor](kldeficient-perfect-with.md)
 
 ## Sources
 

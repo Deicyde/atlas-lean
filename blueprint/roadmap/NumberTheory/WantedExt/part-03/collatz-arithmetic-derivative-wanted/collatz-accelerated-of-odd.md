@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.collatzAccelerated_of_odd
 ---
 
-# Collatz Accelerated of odd
+# The accelerated Collatz map on odd numbers
 
-On odd inputs the accelerated map is two steps of `Nat.collatzStep`.
+**The accelerated Collatz map on odd numbers.** Let $C$ be the accelerated Collatz map and
+$T$ the Collatz map. For every odd natural number $n$, $C(n) = T(T(n))$.
 
 ## Depends on
 
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 - [The Collatz map](../../../MathlibExt/part-04/collatz/collatz-step.md)
 
 ## Sources

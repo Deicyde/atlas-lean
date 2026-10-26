@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.collatzAccelerated_of_even
 ---
 
-# Collatz Accelerated of even
+# The accelerated Collatz map on even numbers
 
-On even inputs the accelerated map is one step of `Nat.collatzStep`.
+**The accelerated Collatz map on even numbers.** Let $C$ be the accelerated Collatz map and
+$T$ the Collatz map. For every even natural number $n$, $C(n) = T(n)$.
 
 ## Depends on
 
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 - [The Collatz map](../../../MathlibExt/part-04/collatz/collatz-step.md)
 
 ## Sources

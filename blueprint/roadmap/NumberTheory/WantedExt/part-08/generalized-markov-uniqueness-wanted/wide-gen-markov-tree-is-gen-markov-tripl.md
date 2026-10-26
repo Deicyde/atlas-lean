@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.wideGenMarkovTree_isGenMarkovTriple_and_twice
 ---
 
-# Wide Gen Markov Tree is Gen Markov Triple and twice
+# Generalized Markov triples in the wide Markov tree
 
-Proposition 2.1: every vertex of `WMT(k)` is a `k`-generalized Markov triple, and every
-`k`-generalized Markov triple `(a, b, c)` with `b > max {a, c}` appears exactly twice in
-`WMT(k)`: once among the left descendants of the root and once among the right ones.
+**Generalized Markov triples in the wide Markov tree.** Let $k$ be a natural number. Every
+vertex of the wide $k$-generalized Markov tree $\mathrm{WMT}(k)$ is a $k$-generalized Markov
+triple. Moreover, every $k$-generalized Markov triple $(a, b, c)$ with $a < b$ and $c < b$ is
+the vertex of $\mathrm{WMT}(k)$ at exactly one path that starts with a left step, and at exactly
+one path that starts with a right step.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
-- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
+- [The wide generalized Markov tree](wide-gen-markov-tree.md)
 
 ## Sources
 

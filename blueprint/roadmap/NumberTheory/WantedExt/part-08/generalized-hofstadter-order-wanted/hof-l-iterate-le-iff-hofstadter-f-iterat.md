@@ -18,8 +18,8 @@ n = 8`: `F_1(8) = 4 < F_4^2(8) = 5`, but `L_4^2(5) = L_1(5) = 10`.
 
 ## Depends on
 
-- [Hof L](hof-l.md)
-- [Hofstadter F](hofstadter-f.md)
+- [The image length $L_k$](hof-l.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

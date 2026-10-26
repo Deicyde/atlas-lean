@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.genCohnLabel_injective_index_strictMono
 ---
 
-# Gen Cohn Label injective index strict Mono
+# The Cohn labeling is injective and increasing
 
-Corollary 3.23: the fraction labeling of `k`-generalized Cohn matrices is injective, and
-it is strictly increasing for the index `I_M = m₁₁/m₁₂`: `p < q` implies
-`I_{C_p(k, ℓ)} < I_{C_q(k, ℓ)}` (fractions compared by cross multiplication).
+**The Cohn labeling is injective and increasing.** Fix a natural number $k$ and an integer
+$\ell$. Write fractions $a/b$, with $a$ and $b$ natural numbers, as pairs $(a, b)$, compared by
+cross multiplication ($a/b < c/d$ means $ad < cb$), and write $C = C_q(k, \ell)$ when the
+matrix $C$ carries the fraction label $q$ in the $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$.
+For an integer $2 \times 2$ matrix $M = (m_{ij})$ let $I_M = m_{11}/m_{12} \in \mathbb{Q}$.
+(1) If $C = C_q(k, \ell)$ and $C = C_{q'}(k, \ell)$, then $q = q'$. (2) If $C = C_q(k, \ell)$,
+$C' = C_{q'}(k, \ell)$ and $q < q'$, then $I_C < I_{C'}$.
 
 ## Depends on
 
-- [Is Gen Cohn Label](is-gen-cohn-label.md)
+- [Fraction labels of generalized Cohn matrices](is-gen-cohn-label.md)
 
 ## Sources
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.oddMultipleHarmonic
 ---
 
-# Odd Multiple Harmonic
+# Odd multiple harmonic numbers
 
-The depth-`k` odd harmonic number `O_n(k) = H_n(k; 1/2)
-= ∑_{1 ≤ i_1 < ⋯ < i_k ≤ n} ∏_j 1 / (i_j - 1/2)`, with `O_n(0) = 1` and `O_n(k) = 0` for
-`k > n`.
+**Odd multiple harmonic numbers.** For natural numbers $k$ and $n$, the depth-$k$ odd
+harmonic number is the real number
+
+$$O_n(k) = \sum_{1 \le i_1 < \cdots < i_k \le n} \prod_{j=1}^{k} \frac{1}{i_j - 1/2}.$$
+
+In particular $O_n(0) = 1$ (the empty product) and $O_n(k) = 0$ for $k > n$ (the empty sum).
 
 ## Depends on
 

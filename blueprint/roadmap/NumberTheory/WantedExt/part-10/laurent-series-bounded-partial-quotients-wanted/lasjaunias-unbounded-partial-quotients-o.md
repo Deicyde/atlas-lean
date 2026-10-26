@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lasjaunias_unboundedPartialQuotients_of_small
 ---
 
-# Lasjaunias unbounded Partial Quotients of small
+# Small roots of a hyperquadratic equation have unbounded partial quotients
 
-Let `α ∈ 𝔽_q((x⁻¹))` be an irrational root of `x T^{q+1} + D T + x^ℓ = 0` with `ℓ ≥ 1` and
-`D ∈ 𝔽_q[x]`, `D(0) ≠ 0`. If `|α| < |x|^{-((q-1)ℓ+1)}` (i.e. `α.order > (q - 1)ℓ + 1`), then `α`
-has unbounded partial quotients.
+**Small roots of a hyperquadratic equation have unbounded partial quotients.** Let
+$\mathbb{F}_q$ be a finite field, let $\ell \ge 1$ and let $D \in \mathbb{F}_q[x]$ with
+$D(0) \ne 0$. Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where
+$\deg y$ is the largest exponent of $x$ occurring in $y \ne 0$. If
+$\alpha \in \mathbb{F}_q((x^{-1}))$ is irrational, satisfies $x\alpha^{q+1} + D\alpha + x^\ell = 0$
+and $|\alpha| < |x|^{-((q-1)\ell + 1)}$, then $\alpha$ does not have bounded partial quotients.
 
 ## Depends on
 
-- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Inv Var](laurent-inv-var.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Laurent series with bounded partial quotients](laurent-has-bounded-partial-quotients.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

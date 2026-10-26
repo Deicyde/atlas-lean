@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.squarefree_count_arithmeticProgression_isEquivalent
 ---
 
-# Squarefree count arithmetic Progression is Equivalent
+# Square-free integers in an arithmetic progression
 
-Square-free integers in an arithmetic progression: for `r ∈ ℤ` and `N ≥ 1` with
-`s = gcd(r, N)` square-free,
-`#{t ≤ X : t ≡ r (mod N), t square-free} ~ φ(N)/(s φ(N/s) N) ∏_{q ∣ N} (1 - 1/q²)⁻¹ · (6/π²) X`,
-the product over the primes `q` dividing `N`.
+**Square-free integers in an arithmetic progression.** Let $r \in \mathbb{Z}$ and let $N \ge 1$
+be an integer such that $s = \gcd(r, N)$ is square-free. Then, as the real number $X \to \infty$,
+the number of square-free integers $t$ with $1 \le t \le X$ and $t \equiv r \pmod N$ is
+asymptotically equivalent to
+
+$$
+\frac{\varphi(N)}{s \, \varphi(N/s) \, N} \prod_{q \mid N} \left(1 - \frac{1}{q^2}\right)^{-1}
+\frac{6}{\pi^2} X,
+$$
+
+where $\varphi$ is Euler's totient function and the product runs over the primes $q$ dividing $N$.
 
 ## Depends on
 

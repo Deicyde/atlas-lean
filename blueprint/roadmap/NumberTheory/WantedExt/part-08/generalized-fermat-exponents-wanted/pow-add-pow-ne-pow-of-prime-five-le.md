@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.pow_add_pow_ne_pow_of_prime_five_le
 ---
 
-# Pow add pow ne pow of prime five le
+# The Bartolomé–Mihăilescu theorem for prime exponents
 
-Corollary 1 (quoted by the paper from Bartolomé and Mihăilescu, arXiv:2108.08572): for primes
-`5 ≤ p ≤ q`, `x^p + y^p = z^q` has no solution in pairwise coprime nonzero integers.
+**The Bartolomé–Mihăilescu theorem for prime exponents.** Let $p \le q$ be primes with
+$p \ge 5$, and let $x, y, z$ be pairwise coprime nonzero integers. Then $x^p + y^p \ne z^q$.
+
+The source quotes this result from Bartolomé and Mihăilescu, arXiv:2108.08572.
 
 ## Depends on
 

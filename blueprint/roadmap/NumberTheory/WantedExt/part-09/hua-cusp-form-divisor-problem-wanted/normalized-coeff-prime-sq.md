@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.IsNormalizedHeckeEigenform.normalizedCoeff_prime_sq
 ---
 
-# Normalized Coeff prime sq
+# Hecke relation at the square of a prime
 
-For a normalized Hecke eigenform and a prime `p`, `λ_f(p)² = λ_f(p²) + 1`.
+**Hecke relation at the square of a prime.** Let $f$ be a normalized Hecke eigenform of weight
+$k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients
+$\lambda_f$. Then $\lambda_f(p)^2 = \lambda_f(p^2) + 1$ for every prime $p$.
 
 ## Depends on
 
-- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
-- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Normalized Hecke eigenform](is-normalized-hecke-eigenform.md)
+- [Normalized Fourier coefficients of a cusp form](cusp-form-normalized-coeff.md)
 
 ## Sources
 

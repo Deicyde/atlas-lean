@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_reverse_symmetric_density_ne_gaussKuzmin
 ---
 
-# Exists reverse symmetric density ne gauss Kuzmin
+# Symmetry up to a fixed length does not force the Gauss–Kuzmin density
 
-Optimality: for every `N` there is a probability density `f`, continuous on `[0, 1]`, with
-`μ(I(a)) = μ(I(a⃖))` for all strings of positive integers of length at most `N`, whose measure is
-not `μ_GK`.
+**Symmetry up to a fixed length does not force the Gauss–Kuzmin density.** Write $I(a)$ for
+the fundamental interval of a string $a$ and $\overleftarrow{a}$ for the reverse of $a$. For every
+integer $N \ge 1$ there is a real function $f$, continuous and nonnegative on $[0, 1]$ with
+$\int_0^1 f(x)\,dx = 1$, such that $\int_{I(a)} f(x)\,dx = \int_{I(\overleftarrow{a})} f(x)\,dx$
+for every string $a$ of positive integers of length at most $N$, but
+$f(x) \ne \frac{1}{\log 2 \cdot (1 + x)}$ for some $x \in [0, 1]$.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
+- [Fundamental interval of a string](cf-cylinder.md)
 
 ## Sources
 

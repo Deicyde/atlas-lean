@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digitSumArith
 ---
 
-# Digit Sum Arith
+# Digit-sum arithmetic function
 
-The base-`q` digit sum `s_q(n)` (sum of the digits of `n` in base `q`) as an arithmetic
-function, so that its Dirichlet powers `digitSumArith q ^ k` are the `k`-fold Dirichlet
-convolutions `s_q^{(k)} = s_q * s_q^{(k-1)}` of the paper.
+**Digit-sum arithmetic function.** For a natural number $q$, $s_q$ is the arithmetic function
+that sends $n$ to $s_q(n)$, the sum of the digits of $n$ in base $q$. Its $k$-th Dirichlet power
+is the $k$-fold Dirichlet convolution $s_q^{(k)}$, so $s_q^{(1)} = s_q$ and
+$s_q^{(k)} = s_q * s_q^{(k-1)}$ for $k \ge 2$.
+
+For $q \le 1$ the base-$q$ digit expansion is degenerate and $s_q(n) = n$.
 
 ## Depends on
 

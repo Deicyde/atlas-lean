@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.gaussKuzminMass_nil
 ---
 
-# Gauss Kuzmin Mass nil
+# Gauss–Kuzmin mass of the empty string
 
-`P_GK(a)` unfolded at the empty string: `(1/log 2) ∫_{[0,1)} dx/(1 + x)`.
+**Gauss–Kuzmin mass of the empty string.** The Gauss–Kuzmin mass of the empty string is
+$P_{GK}(()) = \frac{1}{\log 2} \int_{[0, 1)} \frac{dx}{1 + x}$.
 
 ## Depends on
 
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Proof depends on
 
-- [Cf Cylinder](cf-cylinder.md)
-- [Cf Cylinder nil](cf-cylinder-nil.md)
+- [Fundamental interval of a string](cf-cylinder.md)
+- [Fundamental interval of the empty string](cf-cylinder-nil.md)
 
 ## Sources
 

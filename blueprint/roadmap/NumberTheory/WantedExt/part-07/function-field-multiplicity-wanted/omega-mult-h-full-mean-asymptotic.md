@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.omegaMult_hFull_mean_asymptotic
 ---
 
-# Omega Mult h Full mean asymptotic
+# Mean of $\omega_k$ over $h$-full polynomials for $k > h$
 
-Theorem 7, first moment: for `2 ≤ h < k`, a primitive `h`-th root of unity `ξ` and `ε > 0`,
-the mean of `ω_k` over `N_h ∩ M_n` is `W(∑_P b_P) + O_ε(q^{-n/(h(h+1)) + εn})`, with
-`b_P = |P|(q^{1/h}ξ^j)^{-k deg P} K(P, h, j)` and
-`W(X) = |N_h ∩ M_n|^{-1} (q^{n/h}/h) ∑_j ξ^{jn} Π_j X_j`.
+**Mean of $\omega_k$ over $h$-full polynomials for $k > h$.** Let $F$ be a finite field with
+$q$ elements, let $2 \le h < k$, let $\xi \in \mathbb{C}$ be a primitive $h$-th root of unity and
+let $\varepsilon > 0$. Write $M_n$ for the set of monic polynomials of degree $n$ over $F$, $N_h$
+for the set of $h$-full monic polynomials, $|P| = q^{\deg P}$, and $\omega_k(f)$ for the number of
+monic irreducible $P$ dividing $f$ whose multiplicity in $f$ is exactly $k$. For $j < h$ and a
+monic irreducible $P$ put $y_{P,j} = (q^{1/h}\xi^j)^{-\deg P}$, where $q^{1/h}$ is the positive
+real root, $K(P, h, j) = (1 - y_{P,j})/(|P|(1 - y_{P,j}) + 1)$ and
+$b_P(j) = |P| (q^{1/h}\xi^j)^{-k \deg P} K(P, h, j)$, and let
+$\Pi_j = \prod_P (1 - 1/|P|)(1 + 1/(|P|(1 - y_{P,j})))$, where sums and products over $P$ run
+over the monic irreducible polynomials. For $X = (X_0, \dots, X_{h-1}) \in \mathbb{C}^h$ let
+$W_n(X) = |N_h \cap M_n|^{-1} (q^{n/h}/h) \sum_{j\lt h} \xi^{jn} \Pi_j X_j$. Then the mean of
+$\omega_k$ over $N_h \cap M_n$ equals
+$W_n\bigl(\sum_P b_P(0), \dots, \sum_P b_P(h-1)\bigr) + O(q^{-n/(h(h+1)) + \varepsilon n})$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [H Full Moment](h-full-moment.md)
-- [H Full Omega Mult Sum](h-full-omega-mult-sum.md)
-- [H Full Weighted Mean](h-full-weighted-mean.md)
+- [The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$](h-full-moment.md)
+- [The $h$-full prime sum $\sum_P b_P$](h-full-omega-mult-sum.md)
+- [The $h$-full weighted mean](h-full-weighted-mean.md)
 
 ## Sources
 

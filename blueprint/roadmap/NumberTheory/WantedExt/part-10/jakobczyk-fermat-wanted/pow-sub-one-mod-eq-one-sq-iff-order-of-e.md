@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pow_sub_one_modEq_one_sq_iff_orderOf_eq
 ---
 
-# Pow sub one mod Eq one sq iff order Of eq
+# Wieferich primes to base $a$ via multiplicative orders
 
-For a prime `p ∤ a`: `p ∈ W(a)` if and only if `ord_{p²}(a) = ord_p(a)`, with `p ∈ W(a)`
-written `a^{p-1} ≡ 1 (mod p²)` (the paper's equation (8)); the source's `a ≥ 2` is dropped (both
-sides hold at `a = 1`).
+**Wieferich primes to base $a$ via multiplicative orders.** Let $p$ be a prime and $a$ a
+natural number not divisible by $p$. Then $a^{p-1} \equiv 1 \pmod{p^2}$, that is, $p$ is a
+Wieferich prime to base $a$, if and only if the multiplicative order of $a$ modulo $p^2$ equals
+the multiplicative order of $a$ modulo $p$.
+
+The congruence $a^{p-1} \equiv 1 \pmod{p^2}$ is the source's equation (8) defining $p \in W(a)$.
+The source assumes $a \ge 2$; both sides also hold for $a = 1$.
 
 ## Depends on
 

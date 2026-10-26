@@ -4,12 +4,12 @@ navigation: module
 
 # Compound Sequence Frobenius
 
-- [Compound Sequence](compound-sequence.md)
-- [Compound Sequence zero](compound-sequence-zero.md)
-- [Compound Sequence self](compound-sequence-self.md)
-- [Frobenius eq max apery sub](frobenius-eq-max-apery-sub.md)
-- [Compound Sequence apery and frobenius](compound-sequence-apery-and-frobenius.md)
-- [Compound Sequence erase cofinite iff](compound-sequence-erase-cofinite-iff.md)
-- [Compound Sequence erase frobenius eq iff](compound-sequence-erase-frobenius-eq-iff.md)
-- [Compound Sequence embedding Dimension](compound-sequence-embedding-dimension.md)
-- [Compound Sequence minimal generating set least](compound-sequence-minimal-generating-set.md)
+- [Compound sequence](compound-sequence.md)
+- [First term of a compound sequence](compound-sequence-zero.md)
+- [Last term of a compound sequence](compound-sequence-self.md)
+- [Brauer–Shockley formula for the Frobenius number](frobenius-eq-max-apery-sub.md)
+- [Apéry set and Frobenius number of a compound sequence](compound-sequence-apery-and-frobenius.md)
+- [When deleting a term of a compound sequence leaves a numerical semigroup](compound-sequence-erase-cofinite-iff.md)
+- [Deletions from a compound sequence that keep the Frobenius number](compound-sequence-erase-frobenius-eq-iff.md)
+- [Embedding dimension of the semigroup of a compound sequence](compound-sequence-embedding-dimension.md)
+- [The minimal generating set as the least Frobenius-preserving subset](compound-sequence-minimal-generating-set.md)

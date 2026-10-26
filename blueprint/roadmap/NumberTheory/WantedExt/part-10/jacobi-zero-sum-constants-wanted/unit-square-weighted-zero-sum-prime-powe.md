@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.unit_square_weighted_zero_sum_prime_power
 ---
 
-# Unit square weighted zero sum prime power
+# Three unit terms force a square-weighted zero sum modulo $p^r$
 
-For `n = p^r` with `p ≥ 7` prime, a sequence in `ℤ_n` with at least three unit terms is
-a `U(n)²`-weighted zero-sum sequence.
+**Three unit terms force a square-weighted zero sum modulo $p^r$.** Let $p \ge 7$ be a prime,
+$r$ a natural number and $n = p^r$, and let $U(n)^2$ be the set of squares of units of
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. If a sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}_n$ has
+at least three indices $i$ with $x_i$ a unit, then there are $a_1, \dots, a_k \in U(n)^2$ with
+$a_1 x_1 + \dots + a_k x_k = 0$, that is, the sequence is a $U(n)^2$-weighted zero-sum sequence.
 
 ## Depends on
 

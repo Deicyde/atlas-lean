@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC8_even_of_not_isSquare
 ---
 
-# Initial Repetitions C8 even of not is Square
+# $c_8(N)$ is even when $15N + 1$ is not a square
 
-`c₈(N)` is even for every `N ≥ 0` such that `15N + 1` is not a square.
+**$c_8(N)$ is even when $15N + 1$ is not a square.** Let $c_8$ be the initial-repetitions
+partition function of Nyirenda and Mugwangwavari. For every integer $N \ge 0$ such that $15N + 1$
+is not a perfect square, $c_8(N)$ is even.
 
 ## Depends on
 
-- [Initial Repetitions C8](initial-repetitions-c8.md)
+- [The partition function $c_8$](initial-repetitions-c8.md)
 
 ## Sources
 

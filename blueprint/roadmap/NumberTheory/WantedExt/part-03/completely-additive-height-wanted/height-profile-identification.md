@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.heightProfile_identification
 ---
 
-# Height Profile identification
+# Identifying the profile from the growth of the levels
 
-Corollary 1 (identification under Meinardus hypotheses): let `H` be a height function whose
-profile Dirichlet series satisfies (M1)-(M3) with a simple pole at `r > 0` of residue `A > 0`,
-and suppose `Nₙ ∼ C₁ n^κ exp(C₂ n^β)` with `β ∈ (0, 1)`, `C₁, C₂ > 0`. Then `β = r/(r + 1)`,
-`r = β/(1 - β)`, `C₂ = (1 + 1/r)(A Γ(r + 1) ζ(r + 1))^{1/(r+1)}`, and
-`∑_{k ≤ x} π_k ∼ (A/r) x^r`.
+**Identifying the profile from the growth of the levels.** Let $H$ be a height function, for
+$k \ge 0$ let $\pi_k$ be the number of primes $p$ with $H(p) = k$, and for $n \ge 0$ let $N_n$ be
+the number of integers $m \ge 1$ with $H(m) = n$. Let $r > 0$ and $A > 0$ be real numbers and
+suppose that the weights $(\pi_k)$ satisfy Meinardus' hypotheses with exponent $r$, residue $A$
+and some continuation $G$. Suppose further that $N_n \sim C_1 n^{\kappa} \exp(C_2 n^{\beta})$ as
+$n \to \infty$ for real numbers $C_1 > 0$, $C_2 > 0$, $\kappa$ and $\beta$ with $0 < \beta < 1$.
+Then $\beta = r/(r + 1)$, $r = \beta/(1 - \beta)$,
+$C_2 = (1 + 1/r)\bigl(A\,\Gamma(r + 1)\,\zeta(r + 1)\bigr)^{1/(r+1)}$, and
+$\sum_{k=1}^{\lfloor x \rfloor} \pi_k \sim (A/r)\, x^r$ as the real number $x$ tends to $\infty$.
 
 ## Depends on
 
-- [Is Height Function](is-height-function.md)
-- [Meinardus Hypotheses](meinardus-hypotheses.md)
+- [Height functions](is-height-function.md)
+- [Meinardus' hypotheses](meinardus-hypotheses.md)
 
 ## Sources
 

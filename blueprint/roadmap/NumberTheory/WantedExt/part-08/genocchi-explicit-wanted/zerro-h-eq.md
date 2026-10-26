@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH_eq
 
 ## Depends on
 
-- [Zerro H](zerro-h.md)
+- [The Zerroukhat–Khaldi sum $H_{n,m}$](zerro-h.md)
 
 ## Sources
 

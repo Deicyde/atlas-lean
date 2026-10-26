@@ -5,20 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_int_solution
 ---
 
-# Bisector equation int solution
+# Integer solutions of the bisector equation
 
-Integral solutions of (1): every integral solution `(a, b, c)` of
-`(a - c)² (b² + 1) = (b - c)² (a² + 1)` with `|a| ≠ |b|` is, after switching `a` and `b` if
-necessary, `± (f_{(2m-1)(2n-1)}, f_{(2m-1)(2n+1)}, g_{(2m-1) 2n} / g_{2m-1})` for the sequences of
-some square-free `d > 1` whose negative Pell equation is solvable in integers and some
-`m, n > 0` (9), or `± (f_{2n-1}, -f_{2n+1}, f_{2n})` for `d = 2` and some `n > 0` (10).
+**Integer solutions of the bisector equation.** For a natural number $d > 1$ such that
+$x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in positive integers
+with $Y$ least, and define integers $f^{(d)}_k$ and $g^{(d)}_k$ by
+$f^{(d)}_k + g^{(d)}_k \sqrt{d} = (X + Y \sqrt{d})^k$ for natural numbers $k$. Let $a, b, c$ be
+integers with $|a| \ne |b|$ and
 
-The quotient `g_{(2m-1) 2n} / g_{2m-1}` is integer division; it is exact.
+$$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
+
+Then there is $s \in \{1, -1\}$ such that one of the following holds: there are a square-free
+natural number $d > 1$ for which $x^2 - d y^2 = -1$ has an integer solution and natural numbers
+$m, n > 0$ such that $(a, b, c)$ or $(b, a, c)$ equals
+
+$$s \left(f^{(d)}_{(2m-1)(2n-1)}, \ f^{(d)}_{(2m-1)(2n+1)}, \
+g^{(d)}_{(2m-1) 2n} / g^{(d)}_{2m-1}\right);$$
+
+or there is a natural number $n > 0$ such that $(a, b, c)$ or $(b, a, c)$ equals
+
+$$s \left(f^{(2)}_{2n-1}, \ -f^{(2)}_{2n+1}, \ f^{(2)}_{2n}\right).$$
+
+Here $g^{(d)}_{(2m-1) 2n} / g^{(d)}_{2m-1}$ is the integer quotient; the division is exact.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

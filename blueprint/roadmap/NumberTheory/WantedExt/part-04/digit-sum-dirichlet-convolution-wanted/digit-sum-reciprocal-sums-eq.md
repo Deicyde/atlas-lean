@@ -5,22 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.digitSum_reciprocal_sums_eq
 ---
 
-# Digit Sum reciprocal sums eq
+# Exact formulas for the reciprocal digit sums
 
-The reciprocal digit sums, for real `x ≥ 1`:
-`∑_{n ≤ x} s_q(n)/n = (q-1) log² x/(4 log q) + (q-1) log x/(2 log q) + F(log x/log q)
-  + G(x) + J(x)/x + K(x)` and
-`∑_{n ≤ x} s_q(n) log n/n = (q-1) log³ x/(6 log q) + (q-1) log² x/(4 log q)
-  + log x · F(log x/log q) + (log x - 1) G(x) - H(x) + J(x) log x/x + (log x - 1) K(x) - L(x)`.
+**Exact formulas for the reciprocal digit sums.** Let $q \ge 2$ be an integer and let $s_q(n)$
+denote the sum of the base-$q$ digits of $n$. Let $F$ be the Trollope–Delange fluctuation and $J$
+the remainder of the Trollope–Delange formula in base $q$, and for real $x$ put
+$G(x) = \int_1^x F(\log u / \log q) \, du / u$, $H(x) = \int_1^x G(u) \, du / u$,
+$K(x) = \int_1^x J(u) \, du / u^2$ and $L(x) = \int_1^x K(u) \, du / u$. Then for every real
+number $x \ge 1$,
+
+$$\sum_{n=1}^{\lfloor x \rfloor} \frac{s_q(n)}{n} = \frac{(q - 1) \log^2 x}{4 \log q} +
+\frac{(q - 1) \log x}{2 \log q} + F\left(\frac{\log x}{\log q}\right) + G(x) + \frac{J(x)}{x} +
+K(x)$$
+
+and
+
+$$\sum_{n=1}^{\lfloor x \rfloor} \frac{s_q(n) \log n}{n} = \frac{(q - 1) \log^3 x}{6 \log q} +
+\frac{(q - 1) \log^2 x}{4 \log q} + \log x \cdot F\left(\frac{\log x}{\log q}\right) +
+(\log x - 1) \, G(x) - H(x) + \frac{J(x) \log x}{x} + (\log x - 1) \, K(x) - L(x).$$
 
 ## Depends on
 
-- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
-- [Digit Sum Fluctuation Integral](digit-sum-fluctuation-integral.md)
-- [Digit Sum Remainder](digit-sum-remainder.md)
-- [Digit Sum Remainder Double Integral](digit-sum-remainder-double-integral.md)
-- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Double integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-double-integral.md)
+- [Integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-integral.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
+- [Double integral of the Trollope–Delange remainder](digit-sum-remainder-double-integral.md)
+- [Weighted integral of the Trollope–Delange remainder](digit-sum-remainder-integral.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

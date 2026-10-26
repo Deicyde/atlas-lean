@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_half_eq_sum
 ---
 
-# Proposition 3.1
+# Euler polynomials at (x + 1)/2 via generalized Stirling polynomials
 
-**Proposition 3.1**: for every `n`,
-`2^n E_n((x + 1) / 2) = ∑_{k=0}^n k! α_k S(n, k, x)`,
-where `α_k` are the coefficients of Lemma 2.2 and
-`S(n, k, x)` is the generalized Stirling polynomial.
+**Euler polynomials at (x + 1)/2 via generalized Stirling polynomials.** Let $E_n(x)$ denote
+the Euler polynomial, $\alpha_k$ the Taylor coefficients of $(2 + 2z)/(2 + 2z + z^2)$, and
+$S(n, k, x) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} (-1)^{k-j} (x + j)^n$ the generalized
+Stirling polynomial. For every $n \ge 0$, as polynomials in $x$ with rational coefficients,
+$2^n E_n\left(\frac{x + 1}{2}\right) = \sum_{k=0}^{n} k! \, \alpha_k \, S(n, k, x)$.
 
 ## Depends on
 
-- [Euler Alpha](euler-alpha.md)
-- [Euler Poly](euler-poly.md)
-- [Gen Stirling Poly](gen-stirling-poly.md)
+- [Taylor coefficients of (2 + 2z)/(2 + 2z + z²)](euler-alpha.md)
+- [Euler polynomials](euler-poly.md)
+- [Generalized Stirling polynomial](gen-stirling-poly.md)
 
 ## Sources
 

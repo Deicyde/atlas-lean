@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_root_tendsto_gt_one
 ---
 
-# Gobel Sequence root tendsto gt one
+# The normalized Göbel roots converge to a limit greater than 1
 
-Proposition 10: for `k, l ≥ 2` the sequence `C_{k,l}(n) = g_{k,l}(n)^{1/k^n}`
-converges to a limit `C_{k,l} > 1`. The paper defines `C_{k,l}` as this limit
-(convergence follows from Lemma 7); the statement packages existence of the
-limit with the strict bound.
+**The normalized Göbel roots converge to a limit greater than 1.** Let $k, l \ge 2$ be natural
+numbers and let $g_{k,l}$ be the $(k, l)$-Göbel sequence. There is a real number $C > 1$ such
+that the real numbers $g_{k,l}(n)^{1/k^n}$ tend to $C$ as $n \to \infty$.
+
+The paper defines $C_{k,l}$ as this limit.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_card_odd_lFree_div_card_even_lFree
 ---
 
-# Tendsto card odd l Free div card even l Free
+# Odd-to-even ratio of $l$-free numbers
 
-Corollary 1 (the case `k = 1` of Theorem 1): for `l ≥ 2`, the numbers `O_{1,l}(x)`
-and `E_{1,l}(x)` of odd and even `l`-free positive integers up to `x` (`[1, l]`-integers:
-`Nat.IsKFull 1 n` is `n ≠ 0`, `l`-free is `n.IsPowerFree l`) satisfy
-`O_{1,l}(x) / E_{1,l}(x) → 2^l / (2^l - 2)`. The limit is taken along natural numbers `N`.
+**Odd-to-even ratio of $l$-free numbers.** Let $l \ge 2$. For a natural number $N$ let $O(N)$
+and $E(N)$ be the numbers of odd and of even $l$-free positive integers $n \le N$. Then
+$O(N)/E(N) \to 2^l/(2^l - 2)$ as $N \to \infty$.
+
+This is the case $k = 1$ of the odd-to-even ratio for $k$-full, $l$-free numbers, since every
+positive integer is $1$-full.
 
 ## Depends on
 

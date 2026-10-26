@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sq_dvd_fermatNumber_iff_wieferich_orderOf
 ---
 
-# Sq dvd fermat Number iff wieferich order Of
+# Squared prime factors of Fermat numbers via Wieferich primes and orders
 
-For an odd prime `p`: `p² ∣ F_n` if and only if `p` is a Wieferich prime and
-`ord_p(2) = 2^{n+1}` (the source's consequence (11) of Theorem 5). Derived from
-`sq_dvd_fermatNumber_iff` (Theorem 3): `p ∣ F_n` exactly when `ord_p(2) = 2^{n+1}`.
+**Squared prime factors of Fermat numbers via Wieferich primes and orders.** Let
+$F_n = 2^{2^n} + 1$ be the $n$-th Fermat number. For every natural number $n$ and every odd prime
+$p$, $p^2$ divides $F_n$ if and only if $p$ is a Wieferich prime (to base $2$) and the
+multiplicative order of $2$ modulo $p$ is $2^{n+1}$.
+
+This follows from the criterion that a prime $p$ dividing $F_n$ satisfies $p^2 \mid F_n$ exactly
+when $2^{p-1} \equiv 1 \pmod{p^2}$, since an odd prime $p$ divides $F_n$ exactly when the order
+of $2$ modulo $p$ is $2^{n+1}$.
 
 ## Depends on
 
-- [Sq dvd fermat Number iff](sq-dvd-fermat-number-iff.md)
+- [Squared prime factors of Fermat numbers](sq-dvd-fermat-number-iff.md)
 - [Wieferich primes](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime.md)
 
 ## Proof depends on

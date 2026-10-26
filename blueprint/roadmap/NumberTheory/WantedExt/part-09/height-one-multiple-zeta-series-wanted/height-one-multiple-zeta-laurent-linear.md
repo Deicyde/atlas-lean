@@ -5,21 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.heightOneMultipleZeta_laurent_linear_coeff
 ---
 
-# Height One Multiple Zeta laurent linear coeff
+# Linear Laurent coefficient of the height one multiple zeta function
 
-For a positive integer `j`, the linear coefficient `γ_1^{[j]}` of the Laurent expansion of
-`ζ(s, {1}^{j-1})` at `s = 1` is
-`∫_0^1 ((1 - r) ζ_r(j + 2) - ζ_r(j + 1)) dr - [s^{j+1}] (Γ(s + 1)^{-1})`. The Laurent expansion is
-encoded on the half-plane `Re s > 1` as a principal part of order `j` plus a function `F`
-analytic at `1`; the Taylor coefficient is an iterated derivative. `γ_1^{[j]}` is normalized like
-the usual first Stieltjes constant `γ₁` (the paper's (4.4) is this formula for `γ₁`), so the linear
-coefficient is `F'(1) = -γ_1^{[j]}`: the paper's parenthetical "the linear coefficient" drops this
-sign (`ζ(s) = 1/(s - 1) + γ - γ₁ (s - 1) + ⋯` with `γ₁ ≈ -0.0728`).
+**Linear Laurent coefficient of the height one multiple zeta function.** Let $j \ge 1$ be an
+integer, write $\zeta(s, \{1\}^{j-1})$ for the height one multiple zeta function and $\zeta_r(s)$
+for the multiple Hurwitz zeta function of order $r$. There are complex numbers
+$c_0, \dots, c_{j-1}$ and a function $F$ analytic at $s = 1$ such that
+$\zeta(s, \{1\}^{j-1}) = \sum_{i=0}^{j-1} c_i (s - 1)^{-(i+1)} + F(s)$ for all $s$ near $1$
+with $\operatorname{Re} s > 1$, and
+
+$$-F'(1) = \int_0^1 \bigl((1 - r) \, \zeta_r(j + 2) - \zeta_r(j + 1)\bigr) \, dr - a_{j+1},$$
+
+where $a_{j+1}$ is the coefficient of $s^{j+1}$ in the Taylor expansion of $1/\Gamma(s + 1)$
+at $s = 0$.
+
+The number $-F'(1)$ generalizes the first Stieltjes constant $\gamma_1$: for $j = 1$ and
+$\operatorname{Re} s > 1$, $\zeta(s, \{1\}^0)$ equals the Riemann zeta function $\zeta(s)$, whose
+Laurent expansion at $s = 1$ is $\zeta(s) = \frac{1}{s - 1} + \gamma - \gamma_1 (s - 1) + \cdots$
+with Euler's constant $\gamma$, so $-F'(1) = \gamma_1$.
 
 ## Depends on
 
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
-- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
+- [Multiple Hurwitz zeta function](multiple-hurwitz-zeta.md)
 
 ## Sources
 

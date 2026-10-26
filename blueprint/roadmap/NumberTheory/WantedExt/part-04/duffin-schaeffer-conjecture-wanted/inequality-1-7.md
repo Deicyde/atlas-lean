@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.inequality_1_7
 ---
 
-# Inequality 1 7
+# The approximation inequality (1.7)
 
-Inequality 1.7: `|α - a / q| ≤ ψ q / q`. Here `α ∈ ℝ` and `ψ : ℕ → ℝ≥0` is a function.
+**The approximation inequality (1.7).** For a function $\psi$ from the positive integers to
+the nonnegative reals, a real number $\alpha$, a natural number $a$ and a positive integer $q$,
+inequality (1.7) is the condition $|\alpha - a/q| \le \psi(q)/q$.
 
 ## Depends on
 

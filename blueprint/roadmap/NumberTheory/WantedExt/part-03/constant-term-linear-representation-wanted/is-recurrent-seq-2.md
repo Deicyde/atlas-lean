@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.IsUniformlyRecurrentSeq.isRecurrentSeq
 ---
 
-# Is Recurrent Seq
+# Uniformly recurrent sequences are recurrent
 
-Uniform recurrence implies recurrence.
+**Uniformly recurrent sequences are recurrent.** Every uniformly recurrent sequence
+$s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is recurrent.
 
 ## Depends on
 
-- [Is Recurrent Seq](is-recurrent-seq.md)
-- [Is Uniformly Recurrent Seq](is-uniformly-recurrent-seq.md)
+- [Recurrent sequence](is-recurrent-seq.md)
+- [Uniformly recurrent sequence](is-uniformly-recurrent-seq.md)
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

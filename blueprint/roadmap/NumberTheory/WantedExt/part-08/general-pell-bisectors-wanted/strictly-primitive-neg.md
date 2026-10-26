@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.strictlyPrimitive_neg
 ---
 
-# Strictly Primitive neg
+# Negating the value of a strictly primitive solution
 
-If `x² - d y² = -1` is solvable in integers and `x² - d y² = z ≠ 0` has a strictly primitive
-integral solution (`x` and `d y` coprime), then so does `x² - d y² = -z`.
+**Negating the value of a strictly primitive solution.** Let $d > 1$ be a square-free integer
+such that $x^2 - d y^2 = -1$ has an integral solution, and let $z \ne 0$ be an integer. If
+$x^2 - d y^2 = z$ has an integral solution with $x$ and $d y$ coprime, then so does
+$x^2 - d y^2 = -z$.
 
 ## Depends on
 

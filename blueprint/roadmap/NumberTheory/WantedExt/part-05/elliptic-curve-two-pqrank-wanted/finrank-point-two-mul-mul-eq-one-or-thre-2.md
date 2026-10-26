@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.finrank_point_two_mul_mul_eq_one_or_three_or_five
 ---
 
-# Finrank point two mul mul eq one or three or five
+# Odd-rank curves y² = x³ − 2pqx: rank one, three or five case
 
-Theorem 1 (iii): let `p ≠ q` be primes with `p ≡ q ≡ 1 (mod 8)` and `(p/q) = 1`, and let
-`E : y² = x³ - 2pqx` over `ℚ`. If the rank of `E(ℚ)` is odd (the parity conjecture for `E`), then
-the rank is `1`, `3` or `5`.
+**Odd-rank curves y² = x³ − 2pqx: rank one, three or five case.** Let $p \ne q$ be primes
+with $p \equiv q \equiv 1 \pmod 8$ and Legendre symbol $\left(\frac{p}{q}\right) = 1$, and let
+$E$ be the elliptic curve $y^2 = x^3 - 2pqx$ over $\mathbb{Q}$. If the rank of the group
+$E(\mathbb{Q})$ of rational points is odd, then it equals $1$, $3$ or $5$.
+
+The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 ## Depends on
 

@@ -5,21 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.paperfoldingSum_contFrac_cloitre_ruler
 ---
 
-# Paperfolding Sum cont Frac cloitre ruler
+# Continued fraction of a paperfolding sum in Cloitre and ruler order
 
-Theorem 14: for `s₀ = 1`, `sₖ₊₁ = sₖ² / xₖ` with integers `x₀ = 2` and `xₖ ≥ 2`, the simple
-continued fraction of `S = ∑ sₖ` is `[1; L₁, c₁, L₂, c₂, …]`, where `L₁, L₂, …` are the letters
-`[1, 1]`, `[2]` of Cloitre's self-describing sequence, one at a time, and the creases
-`cⱼ = x_{ν₂(j)+1} - 1` follow the ruler order (`ν₂(j) + 1` is the ruler function A001511).
-Stated as: `⌊S⌋ = 1`, and for every `k` the first partial denominators of `S` (`partDens`,
-indexed from `0` for `a₁`) are the first `2ᵏ` letters of `cloitreApprox k`, each followed by
-its crease.
+**Continued fraction of a paperfolding sum in Cloitre and ruler order.** Let
+$x = (x_k)_{k \ge 0}$ be natural numbers with $x_0 = 2$ and $x_k \ge 2$ for all $k$, let $s_k$ be
+the paperfolding sum terms defined by $x$, and let $S = \sum_{k \ge 0} s_k$, with continued
+fraction expansion $[a_0; a_1, a_2, \ldots]$. For $j \ge 1$ let $c_j = x_{\nu_2(j) + 1} - 1$, where
+$\nu_2(j)$ is the exponent of $2$ in $j$. Then $a_0 = 1$, and for every $k$ the partial quotients
+$a_1, a_2, \ldots$ begin with the word obtained from the $k$-th approximant $A_k$ of Cloitre's
+sequence by splitting $A_k$ from the left into letters $1, 1$ and $2$ and inserting $c_j$ after
+its $j$-th letter, for every $j$.
 
 ## Depends on
 
 - [Approximants of Cloitre's sequence](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-approx.md)
-- [Cloitre Crease Interleave](cloitre-crease-interleave.md)
-- [Paperfolding Sum Term](paperfolding-sum-term.md)
+- [Interleaving creases into a Cloitre word](cloitre-crease-interleave.md)
+- [Terms of the paperfolding sums](paperfolding-sum-term.md)
 
 ## Sources
 

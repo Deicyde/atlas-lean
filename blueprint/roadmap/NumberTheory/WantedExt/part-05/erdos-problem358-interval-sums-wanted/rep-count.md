@@ -5,19 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem358IntervalSumsWanted.RepCount
 ---
 
-# Rep Count
+# Interval-sum representation count
 
-Number of interval representations of `n` as a consecutive sum of `A`.
+**Interval-sum representation count.** For a sequence $a_0, a_1, a_2, \ldots$ of natural
+numbers and a natural number $n$, $f_a(n)$ is the number of pairs $(u, v)$ of natural numbers
+with $u \le v$ and $a_u + a_{u+1} + \cdots + a_v = n$, and $f_a(n) = 0$ if there are infinitely
+many such pairs.
 
-The sequence is indexed from `0` rather than the source's `1`-based
-`a_1 < a_2 < ...`; this shift is harmless since only the ordered values
-and interval sums matter.
-
-`Nat.card` of a set is junk-but-total: it returns `0` when the solution
-set is infinite. Finiteness gap (not formalized): for a strictly
-increasing sequence of positive integers the solution set is in fact
-finite, so `RepCount` agrees with the true count on all admissible
-inputs.
+The sequence is indexed from $0$ rather than from $1$ as in the source; this does not change the
+count. When the sequence is strictly increasing with positive terms there are only finitely many
+such pairs, so $f_a(n)$ is then the true number of representations.
 
 ## Depends on
 

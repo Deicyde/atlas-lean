@@ -5,7 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem31Wanted.conjecture_holds
 ---
 
-# Erdos Problem31 Wanted
+# Lorentz's theorem on additive complements (Erdős Problem 31)
+
+**Lorentz's theorem on additive complements (Erdős Problem 31).** For every infinite set
+$A$ of natural numbers there is a set $B$ of natural numbers of natural density $0$ such that
+every sufficiently large natural number lies in $A + B = \{a + b \mid a \in A,\ b \in B\}$.
 
 Resolved true: Proved by Lorentz [Lo54]. Source: George G. Lorentz, On a problem of additive
 number theory, Proceedings of the American Mathematical Society 5 (1954), 838–841,

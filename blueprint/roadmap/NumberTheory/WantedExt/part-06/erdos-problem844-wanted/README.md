@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem844
 
-- [Even Or Odd Non Squarefree](even-or-odd-non-squarefree.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Even or odd non-squarefree numbers up to a bound](even-or-odd-non-squarefree.md)
+- [Erdős Problem 844](conjecture.md)
+- [Erdős Problem 844 is true](conjecture-holds.md)

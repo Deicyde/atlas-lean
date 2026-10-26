@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.digitSumFluctuationIntegral_one
 ---
 
-# Digit Sum Fluctuation Integral one
+# The fluctuation integral vanishes at $1$
 
-`G(1) = 0`.
+**The fluctuation integral vanishes at $1$.** For every natural number $q$, let $F$ be the
+Trollope–Delange fluctuation in base $q$ and $G(x) = \int_1^x F(\log u / \log q) \, du / u$.
+Then $G(1) = 0$.
 
 ## Depends on
 
-- [Digit Sum Fluctuation Integral](digit-sum-fluctuation-integral.md)
+- [Integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-integral.md)
 
 ## Proof depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

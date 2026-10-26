@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
-- [Tau Den](tau-den.md)
+- [The variant $\delta_0$ of the rounding indicator](higher-anumber-delta-zero.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

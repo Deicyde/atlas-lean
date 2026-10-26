@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isKLDeficientPerfect_of_prime_odd
 ---
 
-# Proposition 1
+# Odd primes are not $(k,\ell)$-deficient-perfect
 
-**Proposition 1**: an odd prime is not
-`[k,ℓ]`-deficient-perfect.
+**Odd primes are not $[k,\ell]$-deficient-perfect.** Let $p$ be an odd prime. Then for all
+natural numbers $k$ and $\ell$, $p$ is not $[k,\ell]$-deficient-perfect.
 
 ## Depends on
 
-- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+- [$(k,\ell)$-deficient-perfect numbers](is-kldeficient-perfect.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.product_add_add_eq_univ_of_card_mul_gt
 ---
 
-# Product add add eq univ of card mul gt
+# Sum-product sets cover the integers modulo a prime
 
-Sumset-product covering in `ℤ/pℤ`: if `A₁, A₂, A₃, D ⊆ ℤ/pℤ` satisfy
-`|A₁| |A₂| |A₃| |D| > p³`, then `A₁ D + A₂ + A₃ = ℤ/pℤ`.
+**Sum-product sets cover the integers modulo a prime.** Let $p$ be a prime and let
+$A_1, A_2, A_3, D$ be subsets of $\mathbb{Z}/p\mathbb{Z}$ with $|A_1| |A_2| |A_3| |D| > p^3$.
+Then every residue class modulo $p$ can be written as $a_1 d + a_2 + a_3$ with $a_1 \in A_1$,
+$d \in D$, $a_2 \in A_2$ and $a_3 \in A_3$; that is, $A_1 D + A_2 + A_3 = \mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

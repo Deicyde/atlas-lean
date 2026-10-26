@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_succ_mul_heightOneMultipleZeta_mul_pow
 ---
 
-# Has Sum succ mul height One Multiple Zeta mul pow
+# Expansion of the hyperharmonic zeta function in height one multiple zeta values
 
-The hyperharmonic zeta function `σ(r, s) = ∑_{m ≥ 1} H_m^{[r]} m^{-s}` has the expansion
-`σ(r, s) = ∑_{j ≥ 0} (j + 1) ζ(s + 1, {1}^j) r^j` for `Re s > 0`, `|r| < |s|` and `Re r < Re s`
-(where the series for `σ` converges). `H_m^{[r]} = D_r binom(m + r - 1, m)` (3.2) is
-`generalizedHyperharmonic m 1 r`.
+**Expansion of the hyperharmonic zeta function in height one multiple zeta values.** Let $r$
+and $s$ be complex numbers with $\operatorname{Re} s > 0$, $|r| < |s|$ and
+$\operatorname{Re} r < \operatorname{Re} s$. Write $\zeta(s, \{1\}^j)$ for the height one multiple
+zeta function, $H_m^{[r]}(k)$ for the generalized hyperharmonic numbers and
+$H_m^{[r]} = H_m^{[r]}(1)$; equivalently, $H_m^{[r]}$ is the derivative of $\binom{m + r - 1}{m}$
+with respect to $r$. Then the series $\sum_{j \ge 0} (j + 1) \, \zeta(s + 1, \{1\}^j) \, r^j$ is
+summable with sum the hyperharmonic zeta function $\sigma(r, s) = \sum_{m \ge 1} H_m^{[r]} m^{-s}$.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](../hyperharmonic-euler-sums-wanted/generalized-hyperharmonic.md)
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Generalized hyperharmonic numbers](../hyperharmonic-euler-sums-wanted/generalized-hyperharmonic.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
 
 ## Sources
 

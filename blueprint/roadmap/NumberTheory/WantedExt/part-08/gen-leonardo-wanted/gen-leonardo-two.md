@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.genLeonardo_two
 ---
 
-# Gen Leonardo two
+# Generalized Leonardo number of index two
 
-Characteristic value `L_{k,2} = 2 + k`.
+**Generalized Leonardo number of index two.** For every integer $k$, the generalized
+Leonardo number $L_{k,2}$ equals $2 + k$.
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
 
 ## Sources
 

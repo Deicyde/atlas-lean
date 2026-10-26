@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_pow_gibonacciPoly_sub_odd
 ---
 
-# Tsum inv pow gibonacci Poly sub odd
+# Telescoping inverse-power series of gibonacci polynomials at odd indices, odd shift
 
-Lemma 2.2 (quoted from Koshy): for `x > 0`, `g ∈ {f, ℓ}`, odd `k` and a positive integer `λ`,
-`Σ_{n ≥ (k + 1)/2} (1/g_{2n-k}^λ - 1/g_{2n+k}^λ) = Σ_{r=1}^k 1/g_{2r-1}^λ`
-(summation index shifted to start at `0`).
+**Telescoping inverse-power series of gibonacci polynomials at odd indices, odd shift.**
+Let $x > 0$ be real, and let $g_n$ denote either the Fibonacci polynomials, given by $g_0 = 0$ and
+$g_1 = 1$, or the Lucas polynomials, given by $g_0 = 2$ and $g_1 = x$, both satisfying
+$g_{n+2} = x g_{n+1} + g_n$ and evaluated at $x$. Let $k$ be an odd natural number and
+$\lambda$ a positive integer. Then
+
+$$\sum_{n=0}^{\infty} \left(\frac{1}{g_{2n+1}^{\lambda}} - \frac{1}{g_{2n+1+2k}^{\lambda}}\right) =
+\sum_{r=1}^{k} \frac{1}{g_{2r-1}^{\lambda}}.$$
+
+The source quotes this lemma from Koshy as the sum over $n \ge (k + 1)/2$ of
+$1/g_{2n-k}^{\lambda} - 1/g_{2n+k}^{\lambda}$; here the summation index is shifted to start at $0$.
 
 ## Depends on
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.baumSweet_cubic_boundedPartialQuotients
 ---
 
-# Baum Sweet cubic bounded Partial Quotients
+# Baum–Sweet: cubics with bounded partial quotients
 
-Baum–Sweet: a root `f ∈ 𝔽₂((x⁻¹))` of `f³ + p⁻¹ f + 1 = 0`, `p ∈ 𝔽₂[x]`, `deg p ≥ 1`, has
-bounded partial quotients (quoted result).
+**Baum–Sweet: cubics with bounded partial quotients.** Let $p \in \mathbb{F}_2[x]$ have degree
+at least $1$. If $f \in \mathbb{F}_2((x^{-1}))$ satisfies $f^3 + p^{-1} f + 1 = 0$, then $f$ has
+bounded partial quotients.
 
 ## Depends on
 
-- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Laurent series with bounded partial quotients](laurent-has-bounded-partial-quotients.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

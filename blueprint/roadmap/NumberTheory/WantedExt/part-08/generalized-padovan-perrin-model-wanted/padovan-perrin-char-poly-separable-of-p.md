@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_charPoly_separable_of_p_eq_one
 ---
 
-# Padovan Perrin char Poly separable of p eq one
+# Simple roots of the Padovan–Perrin polynomial for $p = 1$
 
-For positive integers `k₁, k₂, s` and `p = 1`, if
-`(-k₂ (s + 1) / (k₁ s))^s ≠ k₁ / (s + 1)` then `P(z) = z^{s+1} - k₁ z - k₂` has only simple roots
-(stated as separability over `ℂ`).
+**Simple roots of the Padovan–Perrin polynomial for $p = 1$.** Let $k_1, k_2, s$ be positive
+integers with $\left(-\frac{k_2 (s + 1)}{k_1 s}\right)^s \neq \frac{k_1}{s + 1}$. Then the
+polynomial $P(z) = z^{s+1} - k_1 z - k_2$ is separable over $\mathbb{C}$, that is, it has only
+simple roots.
 
 ## Depends on
 

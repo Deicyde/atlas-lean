@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.JosephusWanted.josephus_eq_self_iff
 ---
 
-# Proposition 4
+# Josephus fixed points detected by the next value
 
-**Proposition 4**, final clause: for `n_p ≥ k - 1`,
-`J_k(n_p) = n_p` if and only if `J_k(n_p + 1) = k - 1`.
+**Josephus fixed points detected by the next value.** Let $k \ge 2$ and $n_p$ be natural
+numbers with $n_p \ge k - 1$, and let $J_k$ be the Josephus function. Then $J_k(n_p) = n_p$ if
+and only if $J_k(n_p + 1) = k - 1$.
 
 ## Depends on
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_alternating_heightOneMultipleZeta_integral
 ---
 
-# Tendsto alternating height One Multiple Zeta integral
+# Shifted alternating series of height one multiple zeta values
 
-For integers `k ≥ -1` and `p ≥ 0`, the shifted alternating series
-`ν_{k,p} = ∑_{n ≥ 2} (-1)^n ζ(n, {1}^p) / (n + k)` (as the limit of its partial sums) equals
-`∫_0^1 (1 - r)^{k+1} ζ_r(p + 2) dr`.
+**Shifted alternating series of height one multiple zeta values.** Let $k \ge -1$ and
+$p \ge 0$ be integers, write $\zeta(s, \{1\}^p)$ for the height one multiple zeta function and
+$\zeta_r(s)$ for the multiple Hurwitz zeta function of order $r$. Then the partial sums of the
+series $\nu_{k,p} = \sum_{n \ge 2} \frac{(-1)^n \, \zeta(n, \{1\}^p)}{n + k}$ converge to
+$\int_0^1 (1 - r)^{k+1} \, \zeta_r(p + 2) \, dr$.
 
 ## Depends on
 
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
-- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
+- [Multiple Hurwitz zeta function](multiple-hurwitz-zeta.md)
 
 ## Sources
 

@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nth_kPrimeFactors_isEquivalent
 ---
 
-# Nth k Prime Factors is Equivalent
+# Asymptotics of the $n$-th number with $k$ prime factors
 
-Lemma 8 (Hardy–Wright, Li): let `p_{n,k}` be the `n`-th squarefree number with exactly `k`
-prime factors and `q_{n,k}` the `n`-th number with exactly `k` prime factors counted with
-multiplicity (`Ω = k`, Hardy–Wright's `τ_k`). For `k ≥ 1`,
-`p_{n,k} ∼ q_{n,k} ∼ (k-1)! n log n / (log log n)^{k-1}`,
-`p_{n,k} (log log p_{n,k})^{k-1} ∼ q_{n,k} (log log q_{n,k})^{k-1} ∼ (k-1)! n log n`,
-and for `k = 1`, `p_n ∼ n log n` for the `n`-th prime. The `n`-th element (from `n = 1`) is
-`Nat.nth _ (n - 1)`.
+**Asymptotics of the $n$-th number with $k$ prime factors.** Let $k \ge 1$. For $n \ge 1$ let
+$p_{n,k}$ be the $n$-th squarefree natural number with exactly $k$ distinct prime factors, and let
+$q_{n,k}$ be the $n$-th natural number with exactly $k$ prime factors counted with multiplicity
+(that is, $\Omega(q_{n,k}) = k$). Then, as $n \to \infty$,
+$p_{n,k} \sim q_{n,k} \sim (k-1)!\, n \log n / (\log \log n)^{k-1}$ and
+$p_{n,k} (\log \log p_{n,k})^{k-1} \sim q_{n,k} (\log \log q_{n,k})^{k-1} \sim (k-1)!\, n \log n$.
+Moreover the $n$-th prime $p_n$ satisfies $p_n \sim n \log n$.
 
 ## Depends on
 

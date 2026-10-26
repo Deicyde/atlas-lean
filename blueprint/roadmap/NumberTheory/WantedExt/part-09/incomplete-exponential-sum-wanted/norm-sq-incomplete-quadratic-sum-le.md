@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.norm_sq_incomplete_quadratic_sum_le
 ---
 
-# Norm sq incomplete quadratic sum le
+# Square of an incomplete quadratic exponential sum
 
-Proposition 6.1: for a prime `p`, a quadratic `f(x) = a x² + b x + c` with `p ∤ a`, and a
-positive integer `B` with `√p < B < p/2`,
-`|S_p(f, B)|² ≤ min{(2p/π) log(B²/p) + 1.366 p + 3B + R, (2p/π) log B + 0.368 p + B + p/(πB) + R}`,
-where `R = 2pB(B+1)/(π(p² - B²))`.
+**Square of an incomplete quadratic exponential sum.** Let $p$ be a prime, write
+$e_p(t) = e^{2\pi i t/p}$, let $a, b, c$ be integers with $p \nmid a$, let $B$ be an integer with
+$\sqrt{p} < B < p/2$, and put $S = \sum_{x=1}^{B} e_p(a x^2 + b x + c)$ and
+$R = \frac{2pB(B+1)}{\pi(p^2 - B^2)}$. Then $|S|^2$ is at most the minimum of
+$\frac{2p}{\pi} \log \frac{B^2}{p} + 1.366 p + 3B + R$ and
+$\frac{2p}{\pi} \log B + 0.368 p + B + \frac{p}{\pi B} + R$.
 
 ## Depends on
 

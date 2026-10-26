@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC2
 ---
 
-# Initial Repetitions C2
+# The partition function $c_2$ of Nyirenda and Mugwangwavari
 
-`c₂(n)`: the number of partitions of `n` with some `j ≥ 1` appearing exactly `j` times as
-the only part less than `2j + 1`, even parts `≥ 2j + 2` distinct, odd parts `≥ 2j + 1`
-unrestricted.
+**The partition function $c_2$ of Nyirenda and Mugwangwavari.** For an integer $n \ge 0$,
+$c_2(n)$ is the number of partitions of $n$ for which there is an integer $j$ with
+$1 \le j \le n$ such that $j$ appears exactly $j$ times, every part other than $j$ is at least
+$2j + 1$, and every even part that is at least $2j + 2$ appears only once.
+
+Odd parts that are at least $2j + 1$ may appear any number of times.
 
 ## Depends on
 

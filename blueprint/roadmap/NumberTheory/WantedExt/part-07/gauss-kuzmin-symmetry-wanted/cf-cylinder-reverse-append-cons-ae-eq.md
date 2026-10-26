@@ -5,20 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.cfCylinder_reverse_append_cons_ae_eq
 ---
 
-# Cf Cylinder reverse append cons ae eq
+# Fundamental intervals of reversed and extended strings
 
-Explicit formulas for fundamental intervals, up to Lebesgue-null sets: with `n = |a|`,
-`C(a) = [[p', p], [q', q]]` and `t ∈ ℕ`,
-(i) `I(a⃖) = ⟨q'/q, q'/q + (-1)ⁿ/(q(p + q))⟩`;
-(ii) `I(a, t) = ⟨(p' + tp)/(q' + tq), (p' + tp)/(q' + tq) + (-1)ⁿ⁺¹/((q' + tq)(q' + (t+1)q))⟩`;
-(iii) `I(t, a) = ⟨q/(p + tq), q/(p + tq) + (-1)ⁿ⁺¹/((p + tq)(p' + p + t(q' + q)))⟩`;
-(iv) `I(t, a⃖) = ⟨q/(q' + tq), q/(q' + tq) + (-1)ⁿ⁺¹/((q' + tq)(p' + q' + t(p + q)))⟩`.
+**Fundamental intervals of reversed and extended strings.** Let $a = (a_1, \ldots, a_n)$ be a
+finite string of positive integers with convergent matrix
+$C(a) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix}$, let $t \ge 1$ be an integer, write
+$\overleftarrow{a} = (a_n, \ldots, a_1)$ for the reversed string, and for real numbers $x$ and $y$
+let $\langle x, y \rangle$ be $[x, y)$ if $x < y$ and $(y, x]$ otherwise. Write $I(b)$ for the
+fundamental interval of a string $b$, and set $u = (p' + tp)/(q' + tq)$, $v = q/(p + tq)$ and
+$w = q/(q' + tq)$. Then each of the following equalities holds up to a set of Lebesgue measure
+zero:
+(i) $I(\overleftarrow{a}) = \langle q'/q, \; q'/q + (-1)^n / (q(p + q)) \rangle$;
+(ii) $I(a_1, \ldots, a_n, t) = \langle u, \; u + (-1)^{n+1} / ((q' + tq)(q' + (t + 1)q)) \rangle$;
+(iii) $I(t, a_1, \ldots, a_n) = \langle v, \; v + (-1)^{n+1} / ((p + tq)(p' + p + t(q' + q)))
+\rangle$;
+(iv) $I(t, a_n, \ldots, a_1) = \langle w, \; w + (-1)^{n+1} / ((q' + tq)(p' + q' + t(p + q)))
+\rangle$.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
-- [Convergent Matrix](convergent-matrix.md)
-- [Fund Interval](fund-interval.md)
+- [Fundamental interval of a string](cf-cylinder.md)
+- [Convergent matrix](convergent-matrix.md)
+- [Half-open interval between two reals](fund-interval.md)
 
 ## Sources
 

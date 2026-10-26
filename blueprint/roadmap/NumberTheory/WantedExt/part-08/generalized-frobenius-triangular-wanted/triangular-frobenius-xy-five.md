@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.triangularFrobeniusXY_five
 ---
 
-# Triangular Frobenius XY five
+# Triangular Frobenius parameters at $s = 5$
 
-Table 2 entries at `s = 5 = 1·2 + 3`: `(x_5^{even}, y_5^{even}) = (1, 1)` and
-`(x_5^{odd}, y_5^{odd}) = (3, 0)`.
+**Triangular Frobenius parameters at $s = 5$.** Take $k = 1$ and $i = 3$, so that
+$s = k(k+1) + i = 5$. Then $(x_s, y_s) = (1, 1)$ for $n = 0$ (the even case) and
+$(x_s, y_s) = (3, 0)$ for $n = 1$ (the odd case).
 
 ## Depends on
 
-- [Triangular Frobenius X](triangular-frobenius-x.md)
-- [Triangular Frobenius Y](triangular-frobenius-y.md)
+- [The parameter $x_s$ of the triangular Frobenius formula](triangular-frobenius-x.md)
+- [The parameter $y_s$ of the triangular Frobenius formula](triangular-frobenius-y.md)
 
 ## Sources
 

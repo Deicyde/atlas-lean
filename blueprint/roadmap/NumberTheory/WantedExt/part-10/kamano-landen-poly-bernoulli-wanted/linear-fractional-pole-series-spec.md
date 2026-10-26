@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.linearFractionalPoleSeries_spec
 ---
 
-# Linear Fractional Pole Series spec
+# The linear fractional pole series solves its defining equation
 
-`linearFractionalPoleSeries a c` solves `(a - c u) · F(u) = c u`.
+**The linear fractional pole series solves its defining equation.** For all real numbers
+$a$ and $c$, the linear fractional pole series $F_{a,c}(u)$, the power series of
+$\frac{cu}{a - cu}$, satisfies $(a - cu) \cdot F_{a,c}(u) = cu$ in $\mathbb{R}[[u]]$.
 
 ## Depends on
 
-- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
+- [Linear fractional pole series](linear-fractional-pole-series.md)
 
 ## Sources
 

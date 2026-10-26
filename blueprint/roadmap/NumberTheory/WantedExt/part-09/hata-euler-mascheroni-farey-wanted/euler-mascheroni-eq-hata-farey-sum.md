@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.euler_mascheroni_eq_hata_farey_sum
 ---
 
-# Euler mascheroni eq hata farey sum
+# Hata's formula for Euler's constant
 
-Hata's formula: Euler's constant equals `1/2 + 1/2 ∑ 1 / (a b c d (a + c)(b + d))`, the sum
-over Farey intervals `[a/b, c/d] ⊆ [0, 1]` (`b c - a d = 1`, `c ≤ d`) with positive left endpoint
-`0 < a` (the source's `F \ F*`, with `F*` the intervals `[0/1, 1/n]`); the series is summable.
+**Hata's formula for Euler's constant.** Let $S$ be the set of quadruples $(a, b, c, d)$ of
+natural numbers with $bc = ad + 1$, $a > 0$ and $c \le d$; these are the Farey intervals
+$[a/b, c/d] \subseteq [0, 1]$ with positive left endpoint. The family
+$1/(abcd(a + c)(b + d))$, indexed by $(a, b, c, d) \in S$, is summable, and Euler's constant
+$\gamma$ satisfies
+
+$$
+\gamma = \frac{1}{2} + \frac{1}{2} \sum_{(a, b, c, d) \in S} \frac{1}{abcd(a + c)(b + d)}.
+$$
+
+The set $S$ is the source's $F \setminus F^*$, where $F^*$ consists of the intervals $[0/1, 1/n]$.
 
 ## Depends on
 

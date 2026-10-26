@@ -5,21 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.laurentMobius_order_identities
 ---
 
-# Laurent Mobius order identities
+# Degree identities at convergents of a Möbius–Frobenius fixed point
 
-In the setting of Lemma 6, with `P/Q = P_n/Q_n` a convergent in lowest terms and
-`b_α(P, Q) = b_{n+1}` the next partial quotient: (i) if `|α - P/Q| < |α - A/C|`, then
-`|S₁ α^q - R₁| = |Δ| |b_{n+1}|^{-1} |S₁|^{-1}`; (ii) if `|α - P/Q| < |α^q + D/C|^{1/q}`, then
-`|S₂ α - R₂| = |Δ| |b_{n+1}|^{-q} |S₂|^{-1}` (degrees via `order`, `|y| = |x|^{-y.order}`). The
-hypothesis `C ≠ 0` makes `A/C`, `D/C` meaningful (implicit in the paper).
+**Degree identities at convergents of a Möbius–Frobenius fixed point.** Let $K$ be a finite
+field with $q$ elements, let $A, B, C, D \in K[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$,
+and let $\alpha \in K((x^{-1}))$ be irrational with $\alpha = (A \alpha^q + B) / (C \alpha^q + D)$.
+Let $b_0, b_1, \dots$ be the partial quotients of $\alpha$ and $P_n / Q_n$ its convergents, where
+$P_{-1} = 1$, $Q_{-1} = 0$, $P_0 = b_0$, $Q_0 = 1$, $P_{n+1} = b_{n+1} P_n + P_{n-1}$ and
+$Q_{n+1} = b_{n+1} Q_n + Q_{n-1}$. For a Laurent series $y = \sum_m c_m x^{-m}$ let $v(y)$ be its
+order, the least $m$ with $c_m \ne 0$, and let $v(0) = 0$; thus $|y| = |x|^{-v(y)}$ for
+$y \ne 0$. Let $n \ge 0$, let $P, Q \in K[x]$ be coprime with $Q \ne 0$ and $P Q_n = Q P_n$,
+and put $R_1 = DP - BQ$, $S_1 = -CP + AQ$, $R_2 = AP^q + BQ^q$ and $S_2 = CP^q + DQ^q$, with
+the degree of the zero polynomial taken to be $0$. Then:
+(i) if $v(\alpha - A/C) < v(\alpha - P/Q)$, then
+$v(S_1 \alpha^q - R_1) = \deg S_1 - \deg \Delta - v(b_{n+1})$;
+(ii) if $v(\alpha^q + D/C) < q \, v(\alpha - P/Q)$, then
+$v(S_2 \alpha - R_2) = \deg S_2 - \deg \Delta - q \, v(b_{n+1})$.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

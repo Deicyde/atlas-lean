@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.watson_alternating_simple_bounds
 ---
 
-# Watson alternating simple bounds
+# Decimal bounds for Watson's alternating cosecant sum
 
-Corollary 3 replaces the correction in Theorem 6 by decimal bounds: for every
-even `n ≥ 4`, `C_n` lies strictly between `2n log 2 / π + 0.252/n` and
-`2n log 2 / π + 0.262/n`.
+**Decimal bounds for Watson's alternating cosecant sum.** For every even natural number
+$n \ge 4$, the alternating cosecant sum $C_n = \sum_{l=1}^{n-1} (-1)^{l+1} / \sin(\pi l / n)$
+satisfies the strict inequalities
+
+$$
+\frac{2 n \log 2}{\pi} + \frac{0.252}{n} < C_n < \frac{2 n \log 2}{\pi} + \frac{0.262}{n}.
+$$
 
 ## Depends on
 
-- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
+- [Watson's alternating cosecant sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

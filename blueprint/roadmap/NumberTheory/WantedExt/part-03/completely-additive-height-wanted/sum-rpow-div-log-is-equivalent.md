@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_rpow_div_log_isEquivalent
 ---
 
-# Sum rpow div log is Equivalent
+# A logarithmic-integral sum
 
-Lemma 5 (a logarithmic-integral sum): for fixed `β > 0`,
-`∑_{2 ≤ i ≤ m} i^{β-1} / log i ∼ m^β / (β log m)` as `m → ∞`.
+**A logarithmic-integral sum.** For every real $\beta > 0$,
+
+$$\sum_{i=2}^{m} \frac{i^{\beta - 1}}{\log i} \sim \frac{m^\beta}{\beta \log m}$$
+
+as $m \to \infty$ through the natural numbers.
 
 ## Depends on
 

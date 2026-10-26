@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.genMarkovTree_nil
 ---
 
-# Gen Markov Tree nil
+# Root of the generalized Markov tree
 
-Characteristic value: the root of `MT(k)` is `(1, k + 2, 1)`.
+**Root of the generalized Markov tree.** For every natural number $k$, the root of the
+$k$-generalized Markov tree $MT(k)$, its vertex at the empty path, is $(1, k + 2, 1)$.
 
 ## Depends on
 
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

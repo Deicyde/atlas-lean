@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.laurentPolyPart
 ---
 
-# Laurent Poly Part
+# Polynomial part of a Laurent series
 
-The polynomial part `[α]` of `α ∈ 𝔽_q((x⁻¹))`: the terms `c_n x⁻ⁿ` with `n ≤ 0`, i.e. the
-coefficients of `Xⁿ`, `n ≤ 0`, in `LaurentSeries K`.
+**Polynomial part of a Laurent series.** Let $K$ be a field and write a Laurent series
+$\alpha \in K((x^{-1}))$ as $\alpha = \sum_n c_n x^{-n}$. Its polynomial part is
+$[\alpha] = \sum_{n \le 0} c_n x^{-n}$, the sum of the terms in nonnegative powers of $x$.
 
 ## Depends on
 

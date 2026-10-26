@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.availableCount_two_primes
 ---
 
-# Lemma 5, available count
+# Available integers for two distinct primes
 
-**Lemma 5, available count**: for two distinct primes and
-any residue classes, the number of available integers in
-`[1, p·q]` is `A_2(p, q)`.
+**Available integers for two distinct primes.** Let $p \ne q$ be primes and let $r_1, r_2$ be
+any natural numbers. Call an integer $n$ available if it satisfies at most one of the congruences
+$n \equiv r_1 \pmod p$ and $n \equiv r_2 \pmod q$. Then the number of available integers $n$ with
+$1 \le n \le pq$ equals $A_2(p, q)$, the determinant of the $2 \times 2$ matrix with diagonal
+entries $p, q$ and both other entries $1$.
 
 ## Depends on
 
-- [Available Count](available-count.md)
-- [Ones Diag Det](ones-diag-det.md)
+- [Number of available integers](available-count.md)
+- [Ones-diagonal determinant](ones-diag-det.md)
 
 ## Sources
 

@@ -5,20 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sl_hurwitz_numbers_den_coprime
 ---
 
-# Sl hurwitz numbers den coprime
+# Denominators of the Hurwitz-type numbers of Sl
 
-For a prime `ℓ`, the denominator of the Bernoulli-Hurwitz-type number `C_{2(ℓ-1)/3}` (the
-coefficient of `u^(2(ℓ-1)/3)` in `Sl(u)`) is prime to `ℓ` when `ℓ ≡ 7 (mod 9)`, and that of
-`D_{2(ℓ-1)/3}` (the coefficient of `u^(2(ℓ-1)/3)` in `1/Sl(u) - 1/u`) is prime to `ℓ` when
-`ℓ ≡ 4 (mod 9)`.
+**Denominators of the Hurwitz-type numbers of Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
+power series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$,
+$\mathrm{Cl}' = -\mathrm{Sl}^2$, $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. Let $C_n$ be the
+coefficient of $u^n$ in $\mathrm{Sl}$; write $\mathrm{Sl}(u) = u\,S_0(u)$ with
+$S_0 \in \mathbb{Q}[[u]]$ and let $D_n$ be the coefficient of $u^{n+1}$ in $S_0^{-1}$, so that
+$1/\mathrm{Sl}(u) = 1/u + \sum_{n \ge 0} D_n u^n$. Let $\ell$ be a prime and put
+$k = 2(\ell - 1)/3$. If $\ell \equiv 7 \pmod 9$, then $\ell$ does not divide the denominator of
+$C_k$ in lowest terms; if $\ell \equiv 4 \pmod 9$, then $\ell$ does not divide the denominator of
+$D_k$ in lowest terms.
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart. With `Sl(u) = u S₀(u)`, `D_k` is the coefficient of `u^(k+1)` in `S₀⁻¹`.
-Only the first sentence of the theorem is stated: the congruences `α_λ ≡ -C_{2(ℓ-1)/3}/3`,
-`-D_{2(ℓ-1)/3}/3 (mod λ)` involve the elliptic Gauss sum coefficient `α_λ`, built from the
-paper's `φ`, and are omitted.
+The four conditions determine $\mathrm{Sl}$ and $\mathrm{Cl}$ uniquely: they are the Taylor series
+at $0$ of the Eisenstein elliptic functions of the source.
 
 ## Depends on
 

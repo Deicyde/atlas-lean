@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gobelSequence_one
 ---
 
-# Gobel Sequence one
+# Initial value of the $(k, l)$-Göbel sequence
 
-Initial value `g_{k,l}(1) = l`.
+**Initial value of the $(k, l)$-Göbel sequence.** For all natural numbers $k$ and $l$, the
+$(k, l)$-Göbel sequence $g_{k,l}$ satisfies $g_{k,l}(1) = l$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

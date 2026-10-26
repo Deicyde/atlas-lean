@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polyNorm_of_ne_zero
 ---
 
-# Poly Norm of ne zero
+# A nonzero polynomial has norm $q^{\deg f}$
 
-`|f| = q^{deg f}` for `f ≠ 0`.
+**A nonzero polynomial has norm $q^{\deg f}$.** Let $F$ be a finite field with $q$
+elements. Every nonzero polynomial $f \in F[X]$ has norm $|f| = q^{\deg f}$.
 
 ## Depends on
 
-- [Poly Norm](poly-norm.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

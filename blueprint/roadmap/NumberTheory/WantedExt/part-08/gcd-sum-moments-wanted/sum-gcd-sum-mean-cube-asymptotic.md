@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_gcdSumMean_cube_asymptotic
 ---
 
-# Theorem 2
+# Asymptotic formula for the third moment of the mean gcd-sum function
 
-**Theorem 2** (`k = 3`). There are a real polynomial `P` and a constant `C` with
-`∑_{n ≤ x} A(n)^3 = x P(log x) + O(x^{5/8} exp(C (log log x)^2))` as `x → ∞`.
+**Asymptotic formula for the third moment of the mean gcd-sum function.** For $n \ge 1$ let
+$A(n) = \frac{1}{n} \sum_{j=1}^{n} \gcd(j, n)$ be the mean gcd-sum function. There are a real
+polynomial $P$ and a real constant $C$ such that, as $x \to \infty$,
+
+$$\sum_{1 \le n \le x} A(n)^3 = x P(\log x) +
+O\left(x^{5/8} \exp\left(C (\log \log x)^2\right)\right).$$
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

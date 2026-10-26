@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.goldenRatio_pow_eq_binomial_series
 ---
 
-# Corollary 5
+# Binomial series for the powers of the golden ratio
 
-**Corollary 5.** For `n ≥ 1`, with `φ` the golden ratio,
-`φⁿ = 2ⁿ - n 2^{n - 3} ∑_{ℓ ≥ 0} 1/(ℓ + 1) binom(3ℓ + 2 - n, ℓ) 2^{-3ℓ}`; in particular
-`φ = 2 - ∑_{ℓ ≥ 0} 1/(ℓ + 1) binom(3ℓ + 1, ℓ) 2^{-(3ℓ + 2)}`.
+**Binomial series for the powers of the golden ratio.** Let $\varphi = (1 + \sqrt{5})/2$ be
+the golden ratio, and for an integer $x$ and a natural number $j$ let
+$\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For every natural number $n \ge 1$ the series
+$S_n = \sum_{\ell \ge 0} \frac{1}{\ell + 1} \binom{3\ell + 2 - n}{\ell} 2^{-3\ell}$ converges
+absolutely and $\varphi^n = 2^n - n \, 2^{n-3} S_n$. Moreover, the series
+$\sum_{\ell \ge 0} \frac{1}{\ell + 1} \binom{3\ell + 1}{\ell} 2^{-(3\ell + 2)}$ converges
+absolutely to $2 - \varphi$.
 
 ## Depends on
 

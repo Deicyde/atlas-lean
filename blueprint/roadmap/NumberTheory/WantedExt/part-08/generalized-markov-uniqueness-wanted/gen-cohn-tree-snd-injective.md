@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.genCohnTree_snd_injective
 ---
 
-# Gen Cohn Tree snd injective
+# Middle matrices of the generalized Cohn tree are distinct
 
-Corollary 3.16: the second entries of the vertices of `GCT(k, ℓ)` are pairwise distinct.
+**Middle matrices of the generalized Cohn tree are distinct.** For every natural number $k$
+and every integer $\ell$, vertices of the $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$ at
+different paths have different middle matrices.
 
 ## Depends on
 
-- [Gen Cohn Tree](gen-cohn-tree.md)
+- [The $k$-generalized Cohn tree](gen-cohn-tree.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightedPartitionCoeff
 ---
 
-# Weighted Partition Coeff
+# Weighted partition coefficients
 
-The coefficients `aₙ` of the weighted partition product `∏_{k ≥ 1} (1 - qᵏ)^{-bₖ}`, computed by
-the logarithmic-derivative recurrence `n aₙ = ∑_{m=1}^{n} (∑_{k ∣ m} k bₖ) a_{n-m}`, `a₀ = 1`
-(valid for real exponents `bₖ`). The value `b 0` is unused.
+**Weighted partition coefficients.** Given real weights $(b_k)_{k \ge 0}$, the coefficients
+$a_n$ of the weighted partition product $\prod_{k \ge 1} (1 - q^k)^{-b_k}$ are defined by $a_0 = 1$
+and, for $n \ge 1$, the logarithmic-derivative recurrence
+$n a_n = \sum_{m=1}^{n} \big(\sum_{k \mid m} k b_k\big) a_{n-m}$ (valid for real exponents $b_k$).
+The value $b_0$ is unused.
 
 ## Depends on
 

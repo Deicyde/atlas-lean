@@ -6,15 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.hFreeOmegaMultSqSum_eq
 ---
 
-# H Free Omega Mult Sq Sum eq
+# Series formula for the squared prime sum for multiplicity $k$ on $h$-free polynomials
 
-Unfolding `∑_P a_P^2`.
+**Series formula for the squared prime sum for multiplicity $k$ on $h$-free polynomials.**
+Let $F$ be a finite field with $q$ elements and let $h$, $k$ be natural numbers. For a monic
+irreducible polynomial $P$ over $F$ write $|P| = q^{\deg P}$ and
+$a_P = |P|^{\max(h-k-1,\,0)} (|P| - 1)/(|P|^h - 1)$, read as $0$ when the denominator vanishes
+(only when $h = 0$). Then the squared prime sum for multiplicity $k$ on $h$-free polynomials
+equals $\sum_P a_P^2$, the sum over all monic irreducible $P$, taken to be $0$ when the series
+does not converge absolutely.
 
 ## Depends on
 
-- [H Free Omega Mult Sq Sum](h-free-omega-mult-sq-sum.md)
-- [Monic Irreducible](monic-irreducible.md)
-- [Poly Norm](poly-norm.md)
+- [Squared prime sum for multiplicity $k$ on $h$-free polynomials](h-free-omega-mult-sq-sum.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

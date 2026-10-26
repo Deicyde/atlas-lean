@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.HasNontrivialSymmetry
 ---
 
-# Has Nontrivial Symmetry
+# Nontrivial symmetry of a string
 
-A string `a` has a nontrivial symmetry if some rearrangement `σ(a)`, different from `a` and from
-its reverse, has the same Gauss-Kuzmin measure.
+**Nontrivial symmetry of a string.** A finite string $a$ of natural numbers has a nontrivial
+symmetry if there is a string $b$ that is a rearrangement of $a$ (the same entries with the same
+multiplicities, in some order) such that $b \ne a$, $b$ is not the reverse of $a$, and
+$P_{GK}(b) = P_{GK}(a)$, where $P_{GK}$ denotes the Gauss–Kuzmin measure of a string.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

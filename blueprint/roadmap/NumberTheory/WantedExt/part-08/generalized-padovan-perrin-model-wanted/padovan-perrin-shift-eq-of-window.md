@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_shift_eq_of_window
 ---
 
-# Padovan Perrin shift eq of window
+# Solutions agreeing on a window agree afterwards
 
-If two solutions `v, w` of the `([k]; p; s)`-Padovan–Perrin recurrence satisfy
-`v (j + n₀) = w (j + m₀)` on a window `N ≤ j ≤ N + s + p - 1` of length the order, then
-`v (n + n₀) = w (n + m₀)` for every `n ≥ N`. Stated over any commutative ring.
+**Solutions agreeing on a window agree afterwards.** Let $R$ be a commutative ring, let
+$k_1, k_2 \in R$, let $p, s$ be natural numbers and let $v, w \colon \mathbb{N} \to R$ be solutions
+of the Padovan–Perrin recurrence with parameters $k_1, k_2, p, s$. Let $n_0, m_0, N$ be natural
+numbers such that $v(j + n_0) = w(j + m_0)$ for every $j$ with $N \le j < N + s + p$. Then
+$v(n + n_0) = w(n + m_0)$ for every $n \ge N$.
 
 ## Depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tsum_lucas_cube_odd_index
 ---
 
-# Tsum lucas cube odd index
+# Cubic series over odd-indexed Lucas numbers
 
-Corollary 4.10: `Σ_{n≥1} (4L_{6n+3} + 3L_{2n+1})/(L_{2n+1}² + 5)³ = 1/27` and
-`Σ_{n≥1} (8F_{6n+3} - 3F_{2n+1})/(L_{2n+1}² - 5)³ = 13/64`.
+**Cubic series over odd-indexed Lucas numbers.** Let $F_n$ and $L_n$ denote the Fibonacci and
+Lucas numbers, given by $F_0 = 0$, $F_1 = 1$, $L_0 = 2$, $L_1 = 1$ and the recurrence
+$z_{n+2} = z_{n+1} + z_n$ for both. Then
+
+$$\sum_{n=1}^{\infty} \frac{4L_{6n+3} + 3L_{2n+1}}{(L_{2n+1}^2 + 5)^3} = \frac{1}{27}$$
+
+and
+
+$$\sum_{n=1}^{\infty} \frac{8F_{6n+3} - 3F_{2n+1}}{(L_{2n+1}^2 - 5)^3} = \frac{13}{64}.$$
 
 ## Depends on
 

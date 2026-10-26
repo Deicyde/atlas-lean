@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.triangularTriple_one
 ---
 
-# Triangular Triple one
+# Triangular triple at $n = 1$
 
-`triangularTriple 1 = (1, 3, 6)`.
+**Triangular triple at $n = 1$.** The three consecutive triangular numbers
+$(t_1, t_2, t_3)$, where $t_m = m(m+1)/2$, are $(1, 3, 6)$.
 
 ## Depends on
 
-- [Triangular Triple](triangular-triple.md)
+- [Three consecutive triangular numbers](triangular-triple.md)
 
 ## Sources
 

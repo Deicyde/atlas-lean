@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.adjoin_le_adjoin_of_cyclotomicTraceDist_lt
 ---
 
-# Theorem 4
+# Krasner-type lemma for the cyclotomic trace metric
 
-**Theorem 4** (a Krasner-type lemma). If `β ∈ K` satisfies
-`d(α, β) < d(α, σ α) / 2` for every conjugate `σ α ≠ α` (`σ ∈ Gal(K/ℚ)`), then
-`ℚ(α) ⊆ ℚ(β)`.
+**Krasner-type lemma for the cyclotomic trace metric.** Let $p$ be a prime and let $K$ be a
+field generated over $\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed primitive $p$-th
+root of unity $\omega \in K$. Write $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$ for the trace
+metric on $K$, where $\lVert \gamma \rVert \ge 0$ and
+$\lVert \gamma \rVert^2 = \sum_{j=1}^{p-1} \operatorname{Tr}_{K/\mathbb{Q}}(\gamma \omega^j)^2$.
+Let $\alpha, \beta \in K$ and suppose that $d(\alpha, \beta) < d(\alpha, \sigma(\alpha)) / 2$ for
+every automorphism $\sigma$ of $K$ over $\mathbb{Q}$ with $\sigma(\alpha) \ne \alpha$. Then
+$\mathbb{Q}(\alpha) \subseteq \mathbb{Q}(\beta)$ as subfields of $K$.
 
-The record's "conjugates of `α` over `K`" is read as conjugates over `ℚ` (the Galois
-conjugates `σ α`), as in the paper's proof.
+Since $K / \mathbb{Q}$ is Galois, the elements $\sigma(\alpha) \ne \alpha$ are exactly the
+conjugates of $\alpha$ over $\mathbb{Q}$ other than $\alpha$ itself.
 
 ## Depends on
 
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Sources
 

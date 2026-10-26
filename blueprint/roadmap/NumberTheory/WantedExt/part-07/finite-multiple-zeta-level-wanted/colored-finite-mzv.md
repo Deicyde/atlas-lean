@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.coloredFiniteMZV
 ---
 
-# Colored Finite MZV
+# Colored finite multiple harmonic sums
 
-The colored finite multiple harmonic sum `ζ^α_{p,N}(k) ∈ ℤ/pℤ`: the sum of
-`∏ᵢ mᵢ^{-kᵢ}` over `0 < m₁ < ⋯ < m_r < p` with `mᵢ ≡ αᵢ (mod N)`.
+**Colored finite multiple harmonic sums.** Let $p$ and $N$ be natural numbers, let
+$k = (k_1, \dots, k_r)$ be a finite sequence of natural numbers and let
+$\alpha = (\alpha_1, \dots, \alpha_r) \in (\mathbb{Z}/N\mathbb{Z})^r$. The colored finite multiple
+harmonic sum $\zeta^{\alpha}_{p,N}(k) \in \mathbb{Z}/p\mathbb{Z}$ is the sum of
+$m_1^{-k_1} \cdots m_r^{-k_r}$ over all integers $0 < m_1 < \dots < m_r < p$ with
+$m_i \equiv \alpha_i \pmod N$ for every $i$.
+
+Here $m^{-1}$ is the inverse of $m$ in $\mathbb{Z}/p\mathbb{Z}$; when $p$ is prime every
+$0 < m < p$ is invertible, and for other $p$ non-units get a conventional value.
 
 ## Depends on
 

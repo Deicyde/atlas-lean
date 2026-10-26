@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_modEq_exists_repeat
 ---
 
-# Fermat Number mod Eq exists repeat
+# Two of $F_0, \dots, F_p$ are congruent modulo $p$
 
-Among `F_0, …, F_p` two Fermat numbers are congruent modulo `p`; stated for every
-positive modulus (pigeonhole), the paper takes `p` prime.
+**Two of $F_0, \dots, F_p$ are congruent modulo $p$.** Write $F_n = 2^{2^n} + 1$. For every
+positive integer $p$ there are natural numbers $i < j \le p$ with $F_i \equiv F_j \pmod p$.
+
+This is the pigeonhole principle; $p$ need not be prime.
 
 ## Depends on
 

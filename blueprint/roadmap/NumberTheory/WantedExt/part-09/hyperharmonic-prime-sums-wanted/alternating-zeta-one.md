@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.alternatingZeta_one
 ---
 
-# Alternating Zeta one
+# Alternating zeta value at one
 
-`ζ̄(1) = log 2`.
+**Alternating zeta value at one.** The alternating zeta value at $1$ is $\bar\zeta(1) = \log 2$.
 
 ## Depends on
 
-- [Alternating Zeta](alternating-zeta.md)
+- [Alternating zeta values](alternating-zeta.md)
 
 ## Sources
 

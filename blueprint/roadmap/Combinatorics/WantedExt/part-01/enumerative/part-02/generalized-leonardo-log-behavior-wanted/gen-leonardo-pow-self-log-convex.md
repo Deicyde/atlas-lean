@@ -14,7 +14,7 @@ every integer $n \ge 4$.
 
 ## Depends on
 
-- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Generalized Leonardo numbers](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Gleeful Numbers
 
-- [Lemma 1](max-chain-length-lt.md)
-- [Lemma 2](le-max-chain-length.md)
-- [Lemma 3](log-max-chain-length-bounds.md)
-- [Theorem 1](gleeful-rep-count-le.md)
-- [Theorem 2](le-gleeful-rep-count.md)
+- [Upper bound for the maximal gleeful chain length](max-chain-length-lt.md)
+- [Lower bound for the maximal gleeful chain length](le-max-chain-length.md)
+- [Bounds for the logarithm of the maximal gleeful chain length](log-max-chain-length-bounds.md)
+- [Upper bound for the number of gleeful representations](gleeful-rep-count-le.md)
+- [Lower bound for the number of gleeful representations](le-gleeful-rep-count.md)

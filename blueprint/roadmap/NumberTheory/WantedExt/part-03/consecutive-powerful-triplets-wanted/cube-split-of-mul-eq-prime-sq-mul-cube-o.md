@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.cube_split_of_mul_eq_prime_sq_mul_cube_of_gcd_eq_one
 ---
 
-# Cube split of mul eq prime sq mul cube of gcd eq one
+# Splitting $RS = p^2 C^3$ when $R$ and $S$ are coprime
 
-Coprime splitting: if `R * S = p ^ 2 * C ^ 3` for a prime `p` and
-`gcd(R, S) = 1`, then one of `R`, `S` is a perfect cube and the other is `p ^ 2`
-times a perfect cube.
+**Splitting $RS = p^2 C^3$ when $R$ and $S$ are coprime.** Let $p$ be a prime and let $R$,
+$S$, $C$ be integers with $RS = p^2 C^3$ and $\gcd(R, S) = 1$. Then there are integers $C_1$,
+$C_2$ such that either $R = C_1^3$ and $S = p^2 C_2^3$, or $R = p^2 C_1^3$ and $S = C_2^3$.
 
 ## Depends on
 

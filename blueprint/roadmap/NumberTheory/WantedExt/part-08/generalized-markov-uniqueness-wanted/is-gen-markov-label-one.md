@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.isGenMarkovLabel_one
 ---
 
-# Is Gen Markov Label one
+# The fraction $1/1$ labels $k + 2$
 
-Characteristic value: `m_{1/1} = k + 2`.
+**The fraction $1/1$ labels $k + 2$.** For every natural number $k$, the number $k + 2$
+carries the label $1/1$ in the fraction labeling of $k$-generalized Markov numbers, that is,
+$m_{1/1} = k + 2$.
 
 ## Depends on
 
-- [Is Gen Markov Label](is-gen-markov-label.md)
+- [Fraction labeling of generalized Markov numbers](is-gen-markov-label.md)
 
 ## Proof depends on
 
-- [Farey Tree](farey-tree.md)
-- [Gen Markov Tree](gen-markov-tree.md)
-- [Gen Markov Tree nil](gen-markov-tree-nil.md)
+- [The Farey tree](farey-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
+- [Root of the generalized Markov tree](gen-markov-tree-nil.md)
 
 ## Sources
 

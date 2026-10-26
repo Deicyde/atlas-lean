@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.pow_injectiveOn_liftFiber_and_order_eq
 ---
 
-# Lemma 4
+# Power maps on the fibers modulo $p^2$
 
-**Lemma 4**: for `n` coprime to both the odd prime `p` and
-`ord_{p²}(a)`, the power map `x ↦ x^n` is injective on `P_a`,
-maps `P_a` onto `P_{a^n}`, and preserves the order of every
-element of `P_a`.
+**Power maps on the fibers modulo $p^2$.** Let $p$ be an odd prime, let $a$ be a unit
+modulo $p^2$, and let $n$ be a natural number coprime to $p$ and to the multiplicative
+order of $a$. Writing $P_b$ for the set of units $x$ modulo $p^2$ with
+$x \equiv b \pmod p$, the map $x \mapsto x^n$ is injective on $P_a$, maps $P_a$ onto
+$P_{a^n}$, and preserves the multiplicative order of every element of $P_a$.
 
 ## Depends on
 

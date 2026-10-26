@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.tauDen
 ---
 
-# Tau Den
+# The denominator $\tau_D$
 
-The denominator `τ_D` of `τ = (p + 1)/d` in lowest terms.
+**The denominator $\tau_D$.** For natural numbers $p$ and $d$, $\tau_D$ is the denominator in
+lowest terms of the rational number $\tau = (p + 1)/d$ (when $d = 0$, $\tau$ is taken to be $0$,
+so $\tau_D = 1$).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Tower Tau](tower-tau.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hFull
 ---
 
-# H Full
+# $h$-full polynomials
 
-`hFull F h` is `N_h`: a member is monic, and whenever a monic irreducible `P` divides
-it, `P ^ h` also divides it.  As in the source, theorem statements impose `2 ≤ h`.
+**$h$-full polynomials.** Let $F$ be a field and $h \in \mathbb{N}$. The set $N_h$ of $h$-full
+polynomials over $F$ consists of the monic polynomials $f$ such that $P^h$ divides $f$ for
+every monic irreducible polynomial $P$ that divides $f$.
+
+As in the source, theorem statements impose $h \ge 2$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Monic Irreducible](monic-irreducible.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

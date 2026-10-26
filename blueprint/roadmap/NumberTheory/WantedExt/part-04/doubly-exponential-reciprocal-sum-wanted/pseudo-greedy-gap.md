@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.pseudoGreedyGap
 ---
 
-# Pseudo Greedy Gap
+# Gap sequence of the pseudo-greedy expansion
 
-The gap sequence `ε_n = x_n⁻¹ + 1 - a_n` of the pseudo-greedy expansion of `r`.
+**Gap sequence of the pseudo-greedy expansion.** Let $r$ be a real number, and let $(x_n)$
+be the remainder sequence and $(a_n)$ the pseudo-greedy expansion of $r$. The gap sequence of
+$r$ is the real sequence $\varepsilon_n = x_n^{-1} + 1 - a_n$ for $n \ge 0$.
+
+Here $0^{-1}$ is read as $0$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
-- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
+- [Pseudo-greedy remainder sequence](pseudo-greedy-remainder.md)
 
 ## Sources
 

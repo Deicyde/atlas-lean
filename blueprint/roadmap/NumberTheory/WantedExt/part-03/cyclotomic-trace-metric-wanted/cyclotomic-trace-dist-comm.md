@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.cyclotomicTraceDist_comm
 ---
 
-# Cyclotomic Trace Dist comm
+# Symmetry of the trace metric
 
-`d` is symmetric.
+**Symmetry of the trace metric.** Let $p$ be a positive integer and let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$. For all $\alpha, \beta \in K$, the trace distance satisfies
+$d(\alpha, \beta) = d(\beta, \alpha)$.
 
 ## Depends on
 
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Proof depends on
 
-- [Cyclotomic Trace Norm](cyclotomic-trace-norm.md)
-- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
-- [Cyclotomic Trace Norm Sq neg](cyclotomic-trace-norm-sq-neg.md)
+- [Trace norm on a cyclotomic field](cyclotomic-trace-norm.md)
+- [Squared trace norm on a cyclotomic field](cyclotomic-trace-norm-sq.md)
+- [The squared trace norm is invariant under negation](cyclotomic-trace-norm-sq-neg.md)
 
 ## Sources
 

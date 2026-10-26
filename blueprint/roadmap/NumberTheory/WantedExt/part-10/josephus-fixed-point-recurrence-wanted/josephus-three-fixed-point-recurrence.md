@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.josephusThree_fixedPoint_recurrence
 ---
 
-# Josephus Three fixed Point recurrence
+# Recurrence for consecutive fixed points of $J_3$
 
-For consecutive fixed points `a = n_p^{(ℓ)}`, `b = n_p^{(ℓ+1)}` of `J₃`, the number
-`m` of pure high extremal points strictly between them is the `2`-adic valuation of
-`3a + 2` (the paper's `max {m | 2^m ∣ 3a + 2}`), and
-`b = (3^m (3a + 2) - 2^m) / 2^{m+1}`, stated as `2^{m+1} b + 2^m = 3^m (3a + 2)`.
+**Recurrence for consecutive fixed points of $J_3$.** For every natural number $\ell$, let $a$
+and $b$ be the $(\ell+1)$-th and $(\ell+2)$-th smallest fixed points of the Josephus function
+$J_3$, and let $m = \nu_2(3a + 2)$ be the $2$-adic valuation of $3a + 2$. Then exactly $m$
+natural numbers $n$ with $a < n < b$ satisfy $J_3(n) = n - 1$ (the pure high extremal points
+between $a$ and $b$), and $2^{m+1} b + 2^m = 3^m (3a + 2)$, that is,
+$b = (3^m (3a + 2) - 2^m) / 2^{m+1}$.
 
 ## Depends on
 
-- [Is Josephus Three Fixed Point](is-josephus-three-fixed-point.md)
+- [Fixed points of the Josephus function $J_3$](is-josephus-three-fixed-point.md)
 - [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources

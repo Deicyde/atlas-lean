@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_mul_sub_sq
 ---
 
-# Hyper Leonardo mul sub sq
+# Cassini-type identity for hyper-Leonardo numbers
 
-Proposition 4: for `r ≥ 1` and `n ≥ 1`,
-`Le^{(r)}_{n-1} Le^{(r)}_{n+1} - (Le^{(r)}_n)² = Le^{(r)}_n Le^{(r-1)}_{n+1} - Le^{(r-1)}_n Le^{(r)}_{n+1}`
-(written with `r + 1` and `n + 1`; `n = 0` would use the undefined term `Le^{(r)}_{-1}`).
+**Cassini-type identity for hyper-Leonardo numbers.** For all natural numbers $r \ge 1$ and
+$n \ge 1$, the hyper-Leonardo numbers $Le^{(r)}_n$ satisfy
+$Le^{(r)}_{n-1} Le^{(r)}_{n+1} - (Le^{(r)}_n)^2 =
+Le^{(r)}_n Le^{(r-1)}_{n+1} - Le^{(r-1)}_n Le^{(r)}_{n+1}$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

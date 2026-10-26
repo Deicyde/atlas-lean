@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.negPellG
 ---
 
-# Neg Pell G
+# Second coordinates of the powers of the fundamental negative Pell solution
 
-The `y`-sequence `g_n` of the powers `ε^n = f_n + g_n √d` of the least positive unit
-`ε = X + Y √d` of norm `-1` in `ℤ[√d]`.
+**Second coordinates of the powers of the fundamental negative Pell solution.** For a natural
+number $d$, let $Y$ be the least positive integer $y$ such that $x^2 - d y^2 = -1$ for some
+integer $x$, let $X$ be the nonnegative integer with $X^2 - d Y^2 = -1$, and set $X = Y = 0$
+when there is no such $y$. In the ring $\mathbb{Z}[\sqrt{d}]$ of formal expressions
+$a + b \sqrt{d}$ with $a, b \in \mathbb{Z}$ and $(\sqrt{d})^2 = d$, put
+$\varepsilon = X + Y \sqrt{d}$. For $n \ge 0$, $g_n$ is the integer such that
+$\varepsilon^n = f_n + g_n \sqrt{d}$ for some integer $f_n$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Neg Pell Fund X](neg-pell-fund-x.md)
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [First coordinate of the fundamental negative Pell solution](neg-pell-fund-x.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
 
 ## Sources
 

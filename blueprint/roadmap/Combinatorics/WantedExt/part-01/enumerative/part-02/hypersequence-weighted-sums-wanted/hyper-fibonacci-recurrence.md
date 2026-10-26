@@ -16,7 +16,7 @@ form in which Parisse quotes this result of Cristea, Martinjak and Urbiha.
 
 ## Depends on
 
-- [Hyper Fibonacci](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
+- [Hyper-Fibonacci numbers](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
 
 ## Sources
 

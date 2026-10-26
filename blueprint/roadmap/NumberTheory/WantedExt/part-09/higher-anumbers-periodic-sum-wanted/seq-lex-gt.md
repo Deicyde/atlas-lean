@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.SeqLexGt
 ---
 
-# Seq Lex Gt
+# Lexicographic order on integer sequences
 
-The lexicographic order on integer sequences used in Definition 1: `a > b` when they agree
-below some index `m` and `a m > b m`.
+**Lexicographic order on integer sequences.** For sequences
+$a, b \colon \mathbb{N} \to \mathbb{Z}$, $a$ is lexicographically larger than $b$ when there is
+an index $m$ with $a_j = b_j$ for all $j < m$ and $a_m > b_m$. This is the order used in
+Definition 1.
 
 ## Depends on
 

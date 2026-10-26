@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_eq_sum_rho
 ---
 
-# Padovan Perrin eq sum rho
+# Combinatorial expression of the Padovan–Perrin sequences
 
-Combinatorial expression of the `([k]; p; s)`-Padovan–Perrin sequences: for every solution
-`v` with initial values `α_j = v j` and every `n ≥ s + p`,
-`v n = ∑_{m=0}^{s+p-1} ρ(n - m, s + p) A_m` with `A_m = k₂ α_m + k₁ α_{m+p}` for `m ≤ s - 1` and
-`A_m = k₂ α_m` for `s ≤ m ≤ s + p - 1`. Here `ρ` is `padovanPerrinRho`, whose constraint
-`s a + (s + p) b = n - (s + p)` follows the general formula (12); with the printed constraint
-`= n - (s + p - 1)` the identity fails (for `k₁ = k₂ = 1`, `p = 1`, `s = 2` the printed `ρ(4, 3)`
-is `1` instead of `0`). Stated over any commutative ring.
+**Combinatorial expression of the Padovan–Perrin sequences.** Let $R$ be a commutative ring,
+let $k_1, k_2 \in R$, let $p, s$ be positive integers, and let $v \colon \mathbb{N} \to R$ satisfy
+$v(n + s + p) = k_1 v(n + p) + k_2 v(n)$ for every $n$. For $0 \le m \le s + p - 1$ put
+$A_m = k_2 v(m) + k_1 v(m + p)$ if $m < s$ and $A_m = k_2 v(m)$ if $m \ge s$. Let $\rho(N, s + p)$
+be the Padovan–Perrin coefficient: $0$ for $N < s + p$, and for $N \ge s + p$ the sum of
+$\binom{a+b}{a} k_1^a k_2^b$ over all $a, b \ge 0$ with $s a + (s + p) b = N - (s + p)$. Then for
+every $n \ge s + p$,
+
+$$v(n) = \sum_{m=0}^{s+p-1} \rho(n - m, s + p)\, A_m.$$
+
+The paper prints the constraint in $\rho$ as $s a + (s + p) b = N - (s + p - 1)$, and with it the
+identity fails (for $k_1 = k_2 = 1$, $p = 1$, $s = 2$ the printed $\rho(4, 3)$ is $1$ instead of
+$0$); the constraint used here is the one of the paper's general formula (12).
 
 ## Depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

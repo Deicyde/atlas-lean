@@ -4,7 +4,7 @@ navigation: module
 
 # Fibonacci Pi Squared
 
-- [Pi sq eq fibonacci factorial series](pi-sq-eq-fibonacci-factorial-series.md)
-- [Pi sq eq fibonacci central series](pi-sq-eq-fibonacci-central-series.md)
-- [Fib Pi Squared coeff eq fib](fib-pi-squared-coeff-eq-fib.md)
-- [Fib Pi Squared poly eq sum](fib-pi-squared-poly-eq-sum.md)
+- [Fibonacci series for $\pi^2$ with polynomial weights](pi-sq-eq-fibonacci-factorial-series.md)
+- [Two Fibonacci series for $\pi^2$](pi-sq-eq-fibonacci-central-series.md)
+- [Fibonacci closed form of the sequence $a_n$](fib-pi-squared-coeff-eq-fib.md)
+- [Explicit formula for the polynomials $p_n$](fib-pi-squared-poly-eq-sum.md)

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_unsolvable_sq_add_primePow
 ---
 
-# Card unsolvable sq add prime Pow
+# Counting $x$ with $x^2 + p^v u$ not a square modulo $p^{v+1}$
 
-For a prime `p ≥ 3` and `p ∤ u`, let `S_v` be the number of `x mod p^{v+1}` for which
-`x² + p^v u ≡ y² (mod p^{v+1})` has no solution `y`. Then `S_0 = (p - (-u/p))/2`, `S_1 = p` and
-`S_v = p S_{v-2}` for `v ≥ 2`.
+**Counting $x$ with $x^2 + p^v u$ not a square modulo $p^{v+1}$.** Let $p \ge 3$ be a prime
+and let $u$ be an integer not divisible by $p$. For $v \ge 0$ let $S_v$ be the number of integers
+$0 \le x < p^{v+1}$ for which there is no integer $y$ with
+$x^2 + p^v u \equiv y^2 \pmod{p^{v+1}}$. Then $2 S_0 = p - \left(\frac{-u}{p}\right)$, where
+$\left(\frac{-u}{p}\right)$ is the Legendre symbol, $S_1 = p$, and $S_v = p S_{v-2}$ for every
+$v \ge 2$.
 
 ## Depends on
 

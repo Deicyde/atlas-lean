@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.fareyGeneration_succ
 ---
 
-# Farey Generation succ
+# Recurrence for the Stern-Brocot generations
 
-The recurrence of the Stern-Brocot generations: `F_{n+1}` is the set of mediant halves of
-the intervals of `F_n`.
+**Recurrence for the Stern-Brocot generations.** For every natural number $n$, the
+generation $F_{n+1}$ is the union, over all intervals $[a/b, c/d] \in F_n$, of the two mediant
+halves $[a/b, (a + c)/(b + d)]$ and $[(a + c)/(b + d), c/d]$, where each interval $[x/y, z/w]$
+is stored as the quadruple $(x, y, z, w)$.
 
 ## Depends on
 
-- [Farey Generation](farey-generation.md)
+- [Stern-Brocot generations](farey-generation.md)
 
 ## Sources
 

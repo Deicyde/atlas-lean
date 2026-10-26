@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kPellLucas_zero
 ---
 
-# K Pell Lucas zero
+# Initial value of the generalized Pell–Lucas numbers
 
-`Q^{(k)}_0 = 2`.
+**Initial value of the generalized Pell–Lucas numbers.** For every natural number $k$, the
+$k$-generalized Pell–Lucas number $Q^{(k)}_0$ equals $2$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

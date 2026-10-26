@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.IsDeficientFPerfect
 ---
 
-# Is Deficient FPerfect
+# Deficient $F$-perfect numbers
 
-The paper's deficient `F`-perfect numbers (`k = 2`,
-`ℓ = 3`).
+**Deficient $F$-perfect numbers.** For a natural number $n$, write
+$\sigma_2(n) = \sum_{e \mid n} e^2$. The number $n$ is deficient $F$-perfect when it is
+$[2,3]$-deficient-perfect, that is, when there is a divisor $d$ of $n$ with $d < n$ such that
+$\sigma_2(n) + d^2 = n^2 + 3n$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+- [$(k,\ell)$-deficient-perfect numbers](is-kldeficient-perfect.md)
 
 ## Sources
 

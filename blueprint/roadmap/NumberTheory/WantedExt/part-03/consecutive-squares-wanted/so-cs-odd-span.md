@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.soCS_odd_span
 ---
 
-# So CS odd span
+# Solutions with odd span $c - a$
 
-For each odd `N ≥ 3` there is a SoCS solution `(a, b, c)` with
-`c - a = N`, and an infinite family of SoCS solutions with odd span, all
-lying in the plane `(b - c) * x + (c - a) * y + (a - b) * z = 0` determined
-by that solution (the plane through `(a, b, c)` and the line `x = y = z`, as
-in Proposition 1). Partial scope: the paper additionally states that this
-plane is unique for each `N`; that uniqueness clause is not encoded here.
+**Solutions with odd span $c - a$.** For every odd integer $N \ge 3$ there is a solution
+$(a, b, c)$ of the sum of consecutive squares problem with $c - a = N$, together with infinitely
+many distinct solutions $(x, y, z)$ of that problem with $z - x$ odd, all lying in the plane
+$(b - c)x + (c - a)y + (a - b)z = 0$, which passes through $(a, b, c)$ and contains the line
+$x = y = z$.
+
+The paper also states that this plane is unique for each $N$; that uniqueness clause is not part
+of this statement.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

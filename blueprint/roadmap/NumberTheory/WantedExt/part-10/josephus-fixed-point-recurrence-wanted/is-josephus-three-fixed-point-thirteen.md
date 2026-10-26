@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.isJosephusThreeFixedPoint_thirteen
 ---
 
-# Is Josephus Three Fixed Point thirteen
+# $13$ is a fixed point of $J_3$
 
-`13` is a fixed point of `J₃` (the third one, after `1` and `2`).
+**$13$ is a fixed point of $J_3$.** The number $13$ is a fixed point of the Josephus function
+$J_3$ (elimination step $3$), that is, $J_3(13) = 13$.
+
+It is the third fixed point of $J_3$, after $1$ and $2$; the statement records only that $13$ is
+a fixed point.
 
 ## Depends on
 
-- [Is Josephus Three Fixed Point](is-josephus-three-fixed-point.md)
+- [Fixed points of the Josephus function $J_3$](is-josephus-three-fixed-point.md)
 
 ## Proof depends on
 

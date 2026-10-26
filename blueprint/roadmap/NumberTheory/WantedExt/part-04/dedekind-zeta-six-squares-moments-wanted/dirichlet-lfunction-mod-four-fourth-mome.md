@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.dirichletLFunction_mod_four_fourth_moment_le
 ---
 
-# Dirichlet LFunction mod four fourth moment le
+# Fourth moment of the $L$-function modulo $4$
 
-Fourth moment of the Dirichlet `L`-function of the non-principal character `χ` modulo `4`
-on the critical line: for every `ε > 0`, `∫_1^T |L(1/2 + i t, χ)|⁴ dt ≪_ε T^{1 + ε}` uniformly
-for `T ≥ 1`.
+**Fourth moment of the $L$-function modulo $4$.** Let $\chi$ be a nontrivial Dirichlet
+character modulo $4$ and let $\varepsilon > 0$. Then there is a real constant $C$ such that for
+every real $T \ge 1$, $\int_1^T |L(1/2 + it, \chi)|^4 \, dt \le C\, T^{1 + \varepsilon}$.
 
 ## Depends on
 

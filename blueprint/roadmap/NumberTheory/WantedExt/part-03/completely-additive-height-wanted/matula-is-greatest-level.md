@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.matula_isGreatest_level
 ---
 
-# Matula is Greatest level
+# Largest number at a given Matula height
 
-Proposition 5 (Gutman-Ivić, maximal case): for the Matula height function
-`H(pᵢ) = H(i) + 1`, the largest number at height `n ≥ 4` is `P(n)`, attained only by `P(n)`.
+**Largest number at a given Matula height.** Write $p_i$ for the $i$-th prime, indexed from
+one ($p_1 = 2$), and let $H$ be a function from the natural numbers to themselves that is
+completely additive on the positive integers and satisfies $H(p_i) = H(i) + 1$ for every $i \ge 1$
+(Matula's height function). Then for every $n \ge 4$ the largest positive integer $m$ with
+$H(m) = n$ is the Gutman–Ivić maximal Matula number $P(n)$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
-- [Matula Max](matula-max.md)
-- [Nth Prime One](nth-prime-one.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
+- [Gutman–Ivić maximal Matula numbers](matula-max.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

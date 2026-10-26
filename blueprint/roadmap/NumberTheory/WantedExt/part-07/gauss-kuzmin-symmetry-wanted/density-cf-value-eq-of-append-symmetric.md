@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.density_cfValue_eq_of_append_symmetric
 ---
 
-# Density cf Value eq of append symmetric
+# Symmetric one-digit extensions fix the density at a rational point
 
-If a probability density `f`, continuous on `[0, 1]`, satisfies `μ(I(a, t)) = μ(I(t, a⃖))` for
-all `t ∈ ℕ`, then `f(r) = f(0)/(1 + r)` for `r = [0; a₁, …, aₙ] = p/q`.
+**Symmetric one-digit extensions fix the density at a rational point.** Let $f$ be a real
+function that is continuous and nonnegative on $[0, 1]$ with $\int_0^1 f(x)\,dx = 1$. Let
+$a = (a_1, \dots, a_n)$ be a string of positive integers, let $p$ and $q$ be the upper-right and
+lower-right entries of its convergent matrix $C(a)$, so that $p/q = [0; a_1, \dots, a_n]$, and let
+$\overleftarrow{a}$ be the reverse of $a$. Write $I(b)$ for the fundamental interval of a string
+$b$, $(a, t)$ for $a$ followed by $t$, and $(t, \overleftarrow{a})$ for $t$ followed by
+$\overleftarrow{a}$. If $\int_{I(a, t)} f(x)\,dx = \int_{I(t, \overleftarrow{a})} f(x)\,dx$ for
+every integer $t \ge 1$, then $f(p/q) = f(0)/(1 + p/q)$.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
-- [Convergent Matrix](convergent-matrix.md)
+- [Fundamental interval of a string](cf-cylinder.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

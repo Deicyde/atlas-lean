@@ -5,21 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZeta_meromorphicContinuation
 ---
 
-# L Generalized Fibonacci Zeta meromorphic Continuation
+# Meromorphic continuation of the ℓ-generalized Fibonacci zeta function
 
-Theorem 1, continuation and possible-pole clauses: there is a function agreeing
-with the defining zeta series on `Re(s) > 0`, differentiable away from the explicitly
-defined set `S`, and having a finite punctured limit of `(s-s₀)f(s)` at every point of
-`S`.  The last clause formalizes “at most simple poles”; the residue value is separated
-into `lGeneralizedFibonacciZeta_residue` so collision handling can be stated explicitly.
-The real root `α` is hypothesis-characterized by `1 < α` and its characteristic
-equation, while irreducibility, uniqueness outside the unit circle, and root simplicity
-are not reproved or added as redundant hypotheses.
+**Meromorphic continuation of the ℓ-generalized Fibonacci zeta function.** Let $\ell \ge 2$,
+let $F$ be an $\ell$-generalized Fibonacci sequence, let $\alpha > 1$ be a real number with
+$\alpha^\ell = \sum_{i=0}^{\ell-1} \alpha^i$, and let $S$ be the set of possible poles determined
+by $\ell$ and $\alpha$. Then there is a function $f : \mathbb{C} \to \mathbb{C}$ such that
+$f(s) = \sum_{n \ge 1} F(n)^{-s}$ for every complex $s$ with $\operatorname{Re} s > 0$, $f$ is
+complex differentiable at every point outside $S$, and for every $s_0 \in S$ the limit of
+$(s - s_0) f(s)$ as $s \to s_0$ with $s \ne s_0$ exists in $\mathbb{C}$.
+
+The last clause says that $f$ has at most simple poles, all lying in $S$; the residues are
+stated separately.
 
 ## Depends on
 
-- [Is LGeneralized Fibonacci](is-lgeneralized-fibonacci.md)
-- [L Generalized Fibonacci Zeta Pole Set](l-generalized-fibonacci-zeta-pole-set.md)
+- [ℓ-generalized Fibonacci sequence](is-lgeneralized-fibonacci.md)
+- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

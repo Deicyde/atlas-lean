@@ -5,12 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_abs_sin_mul_div_lt
 ---
 
-# Sum abs sin mul div lt
+# Bound for a weighted sum of absolute sines
 
-For every positive integer `K` and real `ξ`,
-`∑_{y=1}^{K} |sin(yξ)| / y < (2/π)(log(K + 1) + γ + log 2) + 3 / (π (K + 1))`, and, in the
-form (3.1) obtained from `log(K + 1) < log K + 1/K`,
-`∑_{y=1}^{K} |sin(yξ)| / y < (2/π) log K + (2/π)(γ + log 2) + 5 / (π K)`.
+**Bound for a weighted sum of absolute sines.** Let $K$ be a positive integer, let $\xi$ be a
+real number, and let $\gamma$ be the Euler–Mascheroni constant. Then
+
+$$
+\sum_{y=1}^{K} \frac{|\sin(y\xi)|}{y} <
+\frac{2}{\pi}\left(\log(K + 1) + \gamma + \log 2\right) + \frac{3}{\pi(K + 1)}
+$$
+
+and
+
+$$
+\sum_{y=1}^{K} \frac{|\sin(y\xi)|}{y} <
+\frac{2}{\pi}\log K + \frac{2}{\pi}(\gamma + \log 2) + \frac{5}{\pi K}.
+$$
+
+The second bound is the form (3.1) of the first, obtained from $\log(K + 1) < \log K + 1/K$.
 
 ## Depends on
 

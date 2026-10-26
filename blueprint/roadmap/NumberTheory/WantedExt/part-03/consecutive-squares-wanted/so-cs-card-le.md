@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.soCS_card_le
 ---
 
-# So CS card le
+# At most $2(N - 1)$ solutions with $c - a = N$
 
-For each `N > 1` there are at most `2 * (N - 1)` SoCS solutions with
-`c - a = N`.
+**At most $2(N - 1)$ solutions with $c - a = N$.** For every integer $N > 1$,
+there are at most $2(N - 1)$ solutions $(a, b, c)$ of the sum of consecutive squares problem
+with $c - a = N$.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

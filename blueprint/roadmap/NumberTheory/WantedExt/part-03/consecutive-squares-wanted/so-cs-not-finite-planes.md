@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.soCS_not_finite_planes
 ---
 
-# So CS not finite planes
+# No finitely many planes contain all solutions
 
-No finite collection of planes in `ℝ^3` contains all SoCS solutions:
-for every finite set of affine planes `u * x + v * y + w * z = t` with
-nonzero normal vector, some SoCS solution lies outside all of them.
+**No finitely many planes contain all solutions.** Let $S$ be a finite set of affine planes
+$ux + vy + wz = t$ in $\mathbb{R}^3$, with $u, v, w, t$ real and $(u, v, w) \ne (0, 0, 0)$. Then
+some solution $(a, b, c)$ of the sum of consecutive squares problem lies on none of the planes in
+$S$, that is, $ua + vb + wc \ne t$ for every plane in $S$.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.truncLog3
 ---
 
-# Trunc Log3
+# Third iterated truncated logarithm
 
-The paper's third iterated truncated logarithm `Log₃ x = Log (Log₂ x)`.
+**Third iterated truncated logarithm.** For real $x$, let
+$\operatorname{Log} x = \max(\log x, 1)$ be the truncated logarithm, where $\log$ is the natural
+logarithm extended by $\log x = \log |x|$ for $x < 0$ and $\log 0 = 0$, and let
+$\operatorname{Log}_2 x = \operatorname{Log}(\operatorname{Log} x)$. The third iterated truncated
+logarithm is the function on all of $\mathbb{R}$ given by
+$\operatorname{Log}_3 x = \operatorname{Log}(\operatorname{Log}_2 x)$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trunc Log](trunc-log.md)
-- [Trunc Log2](trunc-log2.md)
+- [Truncated logarithm](trunc-log.md)
+- [Second iterated truncated logarithm](trunc-log2.md)
 
 ## Sources
 

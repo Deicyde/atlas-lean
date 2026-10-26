@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_le_of_avoids_residues_primePow
 ---
 
-# Card le of avoids residues prime Pow
+# Arithmetic large sieve with prime-power moduli
 
-Arithmetic large sieve with prime-power moduli: let `M` be a finite set of integers in an
-interval of `N ≥ 1` integers and, for each prime `p ∈ S`, let `M` avoid a proper set
-`Ω_p ⊊ ℤ/p^{β_p}ℤ` of residues (given by representatives in `[0, p^{β_p})`). Then
-`|M| ≤ (N + Q²)/H` for every real `Q ≥ 1`, where `H = ∑_{q ≤ Q} h(q)` and `h` is multiplicative
-with `h(p^β) = |Ω_p|/(p^{β_p} - |Ω_p|)` if `p ∈ S` and `β = β_p`, and `0` otherwise.
+**Arithmetic large sieve with prime-power moduli.** Let $N \ge 1$ be an integer and let $M$
+be a finite set of integers contained in $[a, a + N)$ for some integer $a$. Let $S$ be a finite
+set of primes and, for each $p \in S$, let $\beta_p \ge 1$ be an integer and let $\Omega_p$ be a
+set of fewer than $p^{\beta_p}$ integers in $[0, p^{\beta_p})$ such that no $m \in M$ has its
+remainder modulo $p^{\beta_p}$ in $\Omega_p$. Then for every real $Q \ge 1$,
+
+$$|M| \le \frac{N + Q^2}{\sum_{1 \le q \le Q} h(q)},$$
+
+where $q$ runs over the integers in $[1, Q]$ and $h(q) = \prod_{p \mid q} h_p(q)$, the product
+over the prime factors $p$ of $q$ of $h_p(q) = |\Omega_p| / (p^{\beta_p} - |\Omega_p|)$ if
+$p \in S$ and $p^{\beta_p}$ exactly divides $q$, and $h_p(q) = 0$ otherwise (so $h(1) = 1$).
 
 ## Depends on
 

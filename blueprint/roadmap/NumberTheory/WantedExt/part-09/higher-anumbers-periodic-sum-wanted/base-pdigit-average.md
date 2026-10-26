@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.basePDigitAverage
 ---
 
-# Base PDigit Average
+# Average repeating digit
 
-The average value `x̄` of the repeating digits of the base-`p` expansion of `x`, i.e.
-`(1/L_x) ∑_{k=D_x+1}^{D_x+L_x} [p^{-k}](x)`.
+**Average repeating digit.** For a natural number $p$ and a rational number $x$, let $D_x$ be
+the delay and $L_x$ the period of the base-$p$ expansion of $x$, and let $[p^k](x)$ be its
+$k$-th base-$p$ digit. The average repeating digit of $x$ is
+
+$$\bar{x} = \frac{1}{L_x} \sum_{k=D_x+1}^{D_x+L_x} [p^{-k}](x),$$
+
+with $\bar{x} = 0$ when $L_x = 0$.
 
 ## Depends on
 
@@ -16,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit](base-pdigit.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Base-$p$ digits of a rational number](base-pdigit.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 
 ## Sources
 

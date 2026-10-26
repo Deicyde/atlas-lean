@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_dvd_prod_consecutive_gt_four_point_four_two
 ---
 
-# Exists prime dvd prod consecutive gt four point four two
+# A prime factor above $4.42m$ in a product of consecutive integers
 
-Lemma 10 (Nair-Shorey): if `n > 4m`, `m > 3` and `n + m ≥ 150`, then
-`n (n+1) ⋯ (n+m-1)` has a prime divisor `p > 4.42 m`.
+**A prime factor above $4.42m$ in a product of consecutive integers.** Let $m$ and $n$ be
+natural numbers with $m > 3$, $n > 4m$ and $n + m \ge 150$. Then the product
+$n(n+1)\cdots(n+m-1)$ has a prime divisor $p$ with $p > 4.42\,m$.
 
 ## Depends on
 

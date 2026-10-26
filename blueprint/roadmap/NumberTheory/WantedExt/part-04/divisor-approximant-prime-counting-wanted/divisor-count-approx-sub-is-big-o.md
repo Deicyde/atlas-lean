@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.divisorCountApprox_sub_isBigO
 ---
 
-# Divisor Count Approx sub is Big O
+# Exponential approximation of the divisor-counting function
 
-Lemma 2: with `A` as in Lemma 1, `τ̃(n) = ∑_{k=1}^{n} exp(-n k A(k, n) sin²(nπ/k))`
-satisfies `τ̃(n) = τ(n) + O(1/(eⁿ - 1))` as `n → ∞`.
+**Exponential approximation of the divisor-counting function.** Let $A$ be a real-valued
+function of two natural numbers such that $A(k, n) \sin^2(n\pi/k) \ge 1$ for all natural numbers
+$k, n$ with $1 \le k \le n$ and $k \nmid n$. For a natural number $n$ let $\tau(n)$ be the number
+of positive divisors of $n$ and
+
+$$\tilde\tau(n) = \sum_{k=1}^{n} e^{-nkA(k, n)\sin^2(n\pi/k)}.$$
+
+Then $\tilde\tau(n) - \tau(n) = O\left(\frac{1}{e^n - 1}\right)$ as $n \to \infty$.
 
 ## Depends on
 

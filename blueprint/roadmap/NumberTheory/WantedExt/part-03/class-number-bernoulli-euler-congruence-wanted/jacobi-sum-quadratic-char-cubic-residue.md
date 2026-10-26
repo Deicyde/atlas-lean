@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.jacobiSum_quadraticChar_cubicResidueChar
 ---
 
-# Jacobi Sum quadratic Char cubic Residue Char
+# Jacobi sums of the quadratic and the cubic residue character
 
-Jacobi sums of the quadratic and the cubic residue character: for a primary prime
-`μ ∈ ℤ[ρ]` (`μ ≡ 1 (mod 3)`) of prime norm `p`, the quadratic character `ϕ` of `𝔽_p` and the
-cubic residue character `χ` modulo `μ` (`χ(t) ≡ t^((p-1)/3) (mod μ)`) satisfy
-`J(ϕ, χ) = χ(4) J(χ, χ) = -χ(4) μ`, where `J(ϕ, χ) = Σ_{t ∈ 𝔽_p} ϕ(t) χ(1 - t)`.
+**Jacobi sums of the quadratic and the cubic residue character.** Let $K$ be a number field
+generated over $\mathbb{Q}$ by a primitive cube root of unity, with ring of integers
+$\mathcal{O}_K$. Let $\mu \in \mathcal{O}_K$ with $\mu \equiv 1 \pmod 3$, and let $p$ be a prime
+such that the norm of $\mu$ from $\mathcal{O}_K$ to $\mathbb{Z}$ is $p$. Let
+$\chi : \mathbb{Z}/p\mathbb{Z} \to \mathcal{O}_K$ be a multiplicative character with
+$\chi(t) \equiv t^{(p-1)/3} \pmod{\mu}$ for every integer $t$ (the cubic residue character modulo
+$\mu$), and let $\phi$ be the quadratic character of $\mathbb{Z}/p\mathbb{Z}$, with values in
+$\{0, \pm 1\} \subset \mathcal{O}_K$. Writing
+$J(\alpha, \beta) = \sum_{t \in \mathbb{Z}/p\mathbb{Z}} \alpha(t)\,\beta(1 - t)$, one has
+$J(\phi, \chi) = \chi(4)\,J(\chi, \chi)$ and $J(\chi, \chi) = -\mu$.
 
-The paper's setting (i) says "any characters `ϕ` and `χ` of `𝔽_p^×`"; the identity holds for
-the quadratic `ϕ` and the cubic residue character `χ` modulo `μ`, the characters of the lemma
-it cites (Ireland-Rosen, Chap. 18, §3 and Chap. 9, §4) and of its use in Lemma 14 (d); this
-reading is stated. `ℤ[ρ]` is the ring of integers of a cyclotomic field `K = ℚ(ζ₃)`, `χ` takes
-values in it, and `J` is Mathlib's `jacobiSum`.
+The source states this for arbitrary characters $\phi$ and $\chi$ of $\mathbb{F}_p^\times$; the
+identity holds for the quadratic $\phi$ and the cubic residue character $\chi$ modulo $\mu$, the
+characters of the lemma it cites (Ireland-Rosen, Chap. 18, §3 and Chap. 9, §4).
 
 ## Depends on
 

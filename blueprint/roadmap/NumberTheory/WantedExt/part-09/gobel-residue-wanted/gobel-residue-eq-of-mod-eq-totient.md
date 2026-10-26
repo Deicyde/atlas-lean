@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelResidue_eq_of_modEq_totient
 ---
 
-# Gobel Residue eq of mod Eq totient
+# Periodicity of the Göbel residue sequence in the exponent
 
-Lemma 3 (Matsuhira–Matsusaka–Tsuchida, Proposition 12): for a prime `p`, `r ≥ 1`, and
-integers `r + 1 ≤ k ≤ l` with `k ≡ l (mod φ(p^r))`, every positive integer `n` with
-`ν_p(n!) ≤ r` has `g_{k,p,r}(n) = g_{l,p,r}(n)`.
+**Periodicity of the Göbel residue sequence in the exponent.** Let $p$ be a prime, $r \ge 1$,
+and $k$, $l$ integers with $r + 1 \le k \le l$ and $k \equiv l \pmod{\varphi(p^r)}$, where
+$\varphi$ is Euler's totient function. Write $\nu_p$ for the $p$-adic valuation. Then every
+integer $n \ge 1$ with $\nu_p(n!) \le r$ satisfies $g_{k,p,r}(n) = g_{l,p,r}(n)$, where both
+sides are values of the residue sequence (so either both are the failure value $F$ or both are
+the same residue class).
+
+This is Proposition 12 of Matsuhira, Matsusaka, and Tsuchida.
 
 ## Depends on
 
-- [Gobel Residue](gobel-residue.md)
+- [Residue sequence of the $k$-Göbel sequence](gobel-residue.md)
 
 ## Sources
 

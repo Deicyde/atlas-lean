@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_mvPolynomial_eval_eq_zero_of_norm_lt_norm_pderiv_sq
 ---
 
-# Exists mv Polynomial eval eq zero of norm lt norm pderiv sq
+# Multivariable Hensel lemma over the p-adic integers
 
-Multivariable Hensel lemma over `ℤₚ`: if `f ∈ ℤₚ[x₁, …, xₙ]` and `a ∈ ℤₚⁿ` satisfy
-`ordₚ (f a) > 2 ordₚ ((∂f/∂xᵢ) a)` for some `i`, then `f = 0` has a solution in `ℤₚⁿ`. The
-valuation inequality is written with the `p`-adic norm as `‖f a‖ < ‖(∂f/∂xᵢ) a‖²`.
+**Multivariable Hensel lemma over the p-adic integers.** Let $p$ be a prime, let
+$f \in \mathbb{Z}_p[x_1, \dots, x_n]$ and $a \in \mathbb{Z}_p^n$, and suppose that for some index
+$i$ the $p$-adic absolute values satisfy $|f(a)|_p < |(\partial f / \partial x_i)(a)|_p^2$, that
+is, $\operatorname{ord}_p f(a) > 2 \operatorname{ord}_p (\partial f / \partial x_i)(a)$. Then
+there is a point $x \in \mathbb{Z}_p^n$ with $f(x) = 0$.
 
 ## Depends on
 

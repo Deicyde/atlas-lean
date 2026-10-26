@@ -11,9 +11,9 @@ For `k ≥ 1`, `L_k(n) = n + C_k^{(=k)}(n) = n + F_k^{k-1}(n)`.
 
 ## Depends on
 
-- [Hof Count](hof-count.md)
-- [Hof L](hof-l.md)
-- [Hofstadter F](hofstadter-f.md)
+- [Letter counts in the Hofstadter word](hof-count.md)
+- [The image length $L_k$](hof-l.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.odd_card_four_regular_iff_triangular
 ---
 
-# Odd card four regular iff triangular
+# Parity of the $4$-regular partition function
 
-Parity of the `4`-regular partition function: `R_4(n)` is odd exactly when `n` is a
-triangular number `m(m + 1)/2`.
+**Parity of the $4$-regular partition function.** For a positive integer $n$, let $R_4(n)$ be
+the number of partitions of $n$ with no part divisible by $4$. Then $R_4(n)$ is odd if and only if
+$n$ is a triangular number, that is, $n = m(m + 1)/2$ for some integer $m \ge 0$.
 
 ## Depends on
 

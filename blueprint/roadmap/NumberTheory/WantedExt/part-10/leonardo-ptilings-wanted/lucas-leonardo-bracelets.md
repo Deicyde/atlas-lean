@@ -16,11 +16,11 @@ its phase, followed by the remaining pieces read clockwise (`false` a square, `t
 
 ## Depends on
 
-- [Bracelet First Tile](bracelet-first-tile.md)
+- [First tile of a bracelet](bracelet-first-tile.md)
 
 ## Proof depends on
 
-- [Length](length.md)
+- [Length of the first tile of a bracelet](length.md)
 
 ## Sources
 

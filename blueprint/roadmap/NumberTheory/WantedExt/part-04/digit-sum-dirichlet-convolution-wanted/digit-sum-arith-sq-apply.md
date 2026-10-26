@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.digitSumArith_sq_apply
 ---
 
-# Digit Sum Arith sq apply
+# The second digit-sum convolution
 
-The second Dirichlet convolution `s_q^{(2)}(n) = ∑_{d ∣ n} s_q(d) s_q(n/d)`.
+**The second digit-sum convolution.** For natural numbers $q$ and $n$, the Dirichlet square
+$s_q^{(2)} = s_q * s_q$ of the base-$q$ digit-sum function $s_q$ satisfies
+$s_q^{(2)}(n) = \sum_{de = n} s_q(d) \, s_q(e)$, where the sum runs over the pairs $(d, e)$ of
+positive integers with $de = n$ (there are none for $n = 0$, and then both sides are $0$).
 
 ## Depends on
 
-- [Digit Sum Arith](digit-sum-arith.md)
+- [Digit-sum arithmetic function](digit-sum-arith.md)
 
 ## Sources
 

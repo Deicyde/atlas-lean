@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_eq_of_dvd_sub_one_of_dvd_cyclotomic_eval_pow
 ---
 
-# Prime eq of dvd sub one of dvd cyclotomic eval pow
+# A common prime divisor of $y - 1$ and $\Phi_p(y^{p^{a-1}})$ is $p$
 
-If primes `ρ` and `p` satisfy `ρ ∣ y - 1` and `ρ ∣ Φ_p(y^{p^{a-1}})` for a positive integer
-`y` and some `a ≥ 1`, then `ρ = p`.
+**A common prime divisor of $y - 1$ and $\Phi_p(y^{p^{a-1}})$ is $p$.** Let $\rho$ and $p$ be
+primes, let $a \ge 1$ be a natural number, let $y$ be a positive integer, and let $\Phi_p$ be the
+$p$-th cyclotomic polynomial with integer coefficients. If $\rho \mid y - 1$ and
+$\rho \mid \Phi_p(y^{p^{a-1}})$, then $\rho = p$.
 
 ## Depends on
 

@@ -5,19 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.sum_rankinSelbergCoeff_pow_arithmeticProgression
 ---
 
-# Theorem 1.3
+# Sums of Rankin–Selberg convolution powers in arithmetic progressions
 
-**Theorem 1.3.** Let `f ∈ H_k^*`, `w ≥ 2`, and `ϑ_w = 92/(247w+10)`. For primes `q`,
-residues `l` coprime to `q`, and real `x ≥ 1` with `q ≤ x^{ϑ_w}`,
-`∑_{n ≤ x, n ≡ l (mod q)} λ_{w,f×f}(n) = (x/φ(q)) P_{w-1}(log x) + O_{f,ε}(q x^{1 - 3ϑ_w/2 + ε})`,
-where `λ_{w,f×f}` is the `w`-fold Dirichlet convolution power of `λ_{f×f}` and `P_{w-1}` has
-degree `w - 1` and positive leading coefficient. `q ≪ x^{ϑ_w}` is read as `q ≤ x^{ϑ_w}`; the
-polynomial may depend on `q`; the implied constant depends only on `f`, `w`, `ε`.
+**Sums of Rankin–Selberg convolution powers in arithmetic progressions.** Let $f$ be a
+normalized Hecke eigenform of weight $k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with
+Rankin–Selberg coefficients $\lambda_{f \times f}$, let $w \ge 2$ be an integer, write
+$\lambda_{w, f \times f}$ for the $w$-fold Dirichlet convolution power of $\lambda_{f \times f}$,
+and put $\vartheta_w = 92/(247w + 10)$. Then there are real polynomials $P_q$, one for each prime
+$q$, each of degree $w - 1$ with positive leading coefficient, with the following property: for
+every $\varepsilon > 0$ there is a real constant $C$ such that for every prime $q$, every natural
+number $l$ coprime to $q$ and every real $x \ge 1$ with $q \le x^{\vartheta_w}$,
+$\bigl|\sum_{n} \lambda_{w, f \times f}(n) - (x / \varphi(q)) P_q(\log x)\bigr| \le
+C q x^{1 - 3\vartheta_w/2 + \varepsilon}$, where $n$ runs over the integers $1 \le n \le x$ with
+$n \equiv l \pmod q$, $\varphi$ is Euler's totient function and $\log$ is the natural logarithm.
+
+The printed hypothesis $q \ll x^{\vartheta_w}$ is read as $q \le x^{\vartheta_w}$, and the
+polynomial is allowed to depend on $q$; the constant $C$ depends only on $f$, $w$ and
+$\varepsilon$.
 
 ## Depends on
 
-- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
-- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+- [Normalized Hecke eigenform](is-normalized-hecke-eigenform.md)
+- [Rankin–Selberg coefficients](rankin-selberg-coeff.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.genCohnTree_neg_snd_entry_pos
 ---
 
-# Gen Cohn Tree neg snd entry pos
+# Positive corner entry of the generalized Cohn tree for $\ell = -k$
 
-Lemma 4.4: for an irreducible fraction `t ∈ (0, 1)`, the `(1, 1)`-entry of `C_t(k, -k)` is
-positive.
+**Positive corner entry of the generalized Cohn tree for $\ell = -k$.** Let $k$ be a natural
+number and $w$ a path, and suppose that the middle fraction $n/d$ of the vertex of the Farey
+tree at $w$ satisfies $0 < n < d$. Then the $(1,1)$-entry of the middle matrix of the vertex of
+the $k$-generalized Cohn tree $\mathrm{GCT}(k, -k)$ at $w$ is positive.
 
 ## Depends on
 
-- [Farey Tree](farey-tree.md)
-- [Gen Cohn Tree](gen-cohn-tree.md)
+- [The Farey tree](farey-tree.md)
+- [The $k$-generalized Cohn tree](gen-cohn-tree.md)
 
 ## Sources
 

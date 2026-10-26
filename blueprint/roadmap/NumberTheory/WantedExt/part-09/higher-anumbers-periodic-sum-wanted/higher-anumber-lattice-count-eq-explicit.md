@@ -5,26 +5,42 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberLatticeCount_eq_explicit_linear_add_periodic
 ---
 
-# Theorem 4
+# Explicit linear term and period for higher $a$-numbers
 
-**Theorem 4.** For `d ∣ p - 1` and `r ≥ 1` there is `ν_r : ℕ → ℚ` with
-`a^r(X_n) = ½ (τ^{-1} - γ^{-1}) p^{2n} + λ_r n + ν_r(n)`, where
-`λ_r = F̄_{γ^{-1}} - γ̄^{-1}/(2p) (1 - 1/τ_D)`, and `ν_r` is periodic for `n ≥ D_{γ^{-1}}` with
-minimal period `lcm(L_{γ^{-1}}, 2)` or `½ lcm(L_{γ^{-1}}, 2)`. Stated with `a^r(X_n)` replaced by
-the Theorem 1 lattice expression (`higherANumberLatticeCount`); `F̄_{γ^{-1}}` is averaged as in
-Proposition 5; the minimal-period claim is stated as: `lcm(L_{γ^{-1}}, 2)` is a period from
-`D_{γ^{-1}}` on, and every period `L'` from `D_{γ^{-1}}` on has `lcm(L_{γ^{-1}}, 2) ∣ 2 L'`.
+**Explicit linear term and period for higher $a$-numbers.** Let $p$ be a prime, let $d$ be a
+natural number dividing $p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
+$\gamma = ((p - 1) r + (p + 1))/d$, let $\tau_D$ be the denominator of $\tau$ in lowest terms, let
+$\delta_0$ be the variant of the rounding indicator for $p$ and $d$, and for each natural number
+$n$ let $A_r(n)$ be the lattice-point count for the $r$-th higher $a$-number at level $n$. Put
+$x = \gamma^{-1}$. Let $L$ be the period of the base-$p$ expansion of $x$ (the order of $p$
+modulo the prime-to-$p$ part of the denominator of $x$), let $D = -v_p(x)$ be its delay, let
+$\bar{x}$ be the average of its repeating digits, put $e_0 = \max(D + 1, 0)$, and for a natural
+number $e$ let
+
+$$F(e) = \sum_{k=1}^{\lfloor x p^e \rfloor \bmod \tau_D p}
+\left(\delta_0(k) - \tfrac{1}{2} (1 - 1/p)(1 - 1/\tau_D)\right).$$
+
+With
+
+$$\lambda_r = \frac{1}{L} \sum_{e=e_0}^{e_0 + L - 1} F(e) -
+\frac{\bar{x}}{2p} \left(1 - \frac{1}{\tau_D}\right),$$
+
+there is a function $\nu_r$ from the natural numbers to the rationals such that
+$A_r(n) = \frac{1}{2} (\tau^{-1} - \gamma^{-1}) p^{2n} + \lambda_r n + \nu_r(n)$ for every natural
+number $n$, $\nu_r(n + \operatorname{lcm}(L, 2)) = \nu_r(n)$ for every natural number $n \ge D$,
+and $\operatorname{lcm}(L, 2) \mid 2L'$ for every $L' > 0$ such that $\nu_r(n + L') = \nu_r(n)$
+for all natural numbers $n \ge D$.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit Average](base-pdigit-average.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Average repeating digit](base-pdigit-average.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 - [Delta Zero Sum Correction](delta-zero-sum-correction.md)
-- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
-- [Tau Den](tau-den.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
+- [The denominator $\tau_D$](tau-den.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

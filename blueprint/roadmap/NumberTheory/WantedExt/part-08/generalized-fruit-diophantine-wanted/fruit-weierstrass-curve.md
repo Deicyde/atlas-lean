@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fruitWeierstrassCurve
 ---
 
-# Fruit Weierstrass Curve
+# The Weierstrass curve $E_\alpha$ of the generalized fruit equation
 
-The curve `E_α : y² - α x y = x³ - (α² + 5)` of Theorem 4, as a Weierstrass curve
-(`a₁ = -α`, `a₂ = a₃ = a₄ = 0`, `a₆ = -(α² + 5)`).
+**The Weierstrass curve $E_\alpha$ of the generalized fruit equation.** For a commutative ring
+$R$ and $\alpha \in R$, $E_\alpha$ is the Weierstrass curve over $R$ with coefficients
+$a_1 = -\alpha$, $a_2 = a_3 = a_4 = 0$ and $a_6 = -(\alpha^2 + 5)$, that is, the curve
+$y^2 - \alpha x y = x^3 - (\alpha^2 + 5)$.
 
 ## Depends on
 

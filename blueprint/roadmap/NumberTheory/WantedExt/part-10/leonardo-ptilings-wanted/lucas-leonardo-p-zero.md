@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.lucasLeonardoP_zero
 ---
 
-# Lucas Leonardo P zero
+# Initial Lucas-Leonardo $p$-number
 
-`R_{p,0} = p² + p + 1`.
+**Initial Lucas-Leonardo $p$-number.** For every natural number $p$, the Lucas-Leonardo
+$p$-number $R_{p,0}$ equals $p^2 + p + 1$.
 
 ## Depends on
 

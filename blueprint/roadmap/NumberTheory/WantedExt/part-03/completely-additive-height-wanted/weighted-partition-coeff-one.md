@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.weightedPartitionCoeff_one
 ---
 
-# Weighted Partition Coeff one
+# First weighted partition coefficient
 
-`a₁ = b₁`.
+**First weighted partition coefficient.** For every sequence of real weights $(b_k)$, the
+weighted partition coefficient $a_1$ attached to $(b_k)$ equals $b_1$.
 
 ## Depends on
 
-- [Weighted Partition Coeff](weighted-partition-coeff.md)
+- [Weighted partition coefficients](weighted-partition-coeff.md)
 
 ## Sources
 

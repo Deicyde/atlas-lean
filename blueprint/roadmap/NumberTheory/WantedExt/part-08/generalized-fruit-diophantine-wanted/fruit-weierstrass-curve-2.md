@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fruitWeierstrassCurve_Δ
 ---
 
-# Fruit Weierstrass Curve Δ
+# Discriminant of the curve $E_\alpha$
 
-The discriminant of `E_α` is `α⁸ + 5α⁶ - 432α⁴ - 4320α² - 10800`.
+**Discriminant of the curve $E_\alpha$.** For every commutative ring $R$ and every
+$\alpha \in R$, the Weierstrass curve $E_\alpha : y^2 - \alpha x y = x^3 - (\alpha^2 + 5)$ over $R$
+has discriminant $\alpha^8 + 5\alpha^6 - 432\alpha^4 - 4320\alpha^2 - 10800$.
 
 ## Depends on
 
-- [Fruit Weierstrass Curve](fruit-weierstrass-curve.md)
+- [The Weierstrass curve $E_\alpha$ of the generalized fruit equation](fruit-weierstrass-curve.md)
 
 ## Sources
 

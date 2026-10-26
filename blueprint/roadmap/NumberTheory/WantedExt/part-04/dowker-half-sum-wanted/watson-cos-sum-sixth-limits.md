@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.watson_cos_sum_sixth_limits
 ---
 
-# Watson cos sum sixth limits
+# Vanishing limits of Watson's cosine sum at one sixth and five sixths
 
-Corollary 4 states both sixth-multiple limits: along `n = 6m`, the cosine sum
-tends to zero for `ν = m = n/6` and for `ν = 5m = 5n/6`.
+**Vanishing limits of Watson's cosine sum at one sixth and five sixths.** For natural numbers
+$n$ and $\nu$ let $C_n(\nu) = \sum_{l=1}^{n-1} \cos(2 \pi \nu l / n) / \sin(\pi l / n)$. As
+$m \to \infty$ through the natural numbers, $C_{6m}(m) \to 0$ and $C_{6m}(5m) \to 0$.
 
 ## Depends on
 
-- [Watson Cos Sum](watson-cos-sum.md)
+- [Generalized Watson trigonometric sum](watson-cos-sum.md)
 
 ## Sources
 

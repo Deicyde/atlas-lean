@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicLatticePoint
 ---
 
-# Cyclotomic Lattice Point
+# Lattice points of a cyclotomic field
 
-The lattice point `a₁ ω + ⋯ + a_{p-1} ω^{p-1}` of `K` with integer coefficients
-(indexed from `0`, so `a i` multiplies `ω^(i+1)`).
+**Lattice points of a cyclotomic field.** Let $p$ be a positive integer, let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$, and let $\omega$ be the chosen primitive $p$-th root of
+unity in $K$. For integers $a_1, \dots, a_{p-1}$, the lattice point with coefficients
+$a_1, \dots, a_{p-1}$ is the element $a_1 \omega + a_2 \omega^2 + \cdots + a_{p-1} \omega^{p-1}$
+of $K$.
 
 ## Depends on
 

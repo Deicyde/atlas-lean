@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_Icc_of_eventually_periodic
 ---
 
-# Sum Icc of eventually periodic
+# Sum of an eventually periodic sequence
 
-If `(f_i)_{i ≥ 1}` is periodic for `i ≥ D` with period `L`, then for `N ≥ D - 1`,
-`∑_{i=1}^N f_i = ∑_{i=1}^{D-1} f_i + (N - D + 1) f̄ + ∑_{k=1}^{(N-D+1) mod L} (f_{k+D-1} - f̄)`,
-where `f̄ = (1/L) ∑_{k=D}^{D+L-1} f_k` is the average over one period. The delay satisfies
-`D ≥ 1` since the sequence is indexed from `1`.
+**Sum of an eventually periodic sequence.** Let $K$ be a field of characteristic zero, let
+$f : \mathbb{N} \to K$, and let $L \ge 1$ and $D \ge 1$ be natural numbers such that
+$f(i + L) = f(i)$ for all $i \ge D$. Let $\bar f = \frac{1}{L} \sum_{k=D}^{D+L-1} f(k)$ be the
+average over one period. Then for every natural number $N \ge D - 1$,
+
+$$\sum_{i=1}^{N} f(i) = \sum_{i=1}^{D-1} f(i) + (N - D + 1) \bar f +
+\sum_{k=1}^{(N-D+1) \bmod L} \left(f(k + D - 1) - \bar f\right).$$
 
 ## Depends on
 

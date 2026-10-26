@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.units_prime_subset_image_jacobi_eq_legendre
 ---
 
-# Units prime subset image jacobi eq legendre
+# Units modulo a prime divisor lift to units where the Jacobi and Legendre symbols agree
 
-For odd `n` and a prime divisor `p'` of `n` coprime to `n/p'`,
-`U(p') ⊆ f_{n,p'}(L(n;p'))`.
+**Units modulo a prime divisor lift to units where the Jacobi and Legendre symbols agree.**
+Let $n$ be odd and let $p'$ be a prime dividing $n$ such that $p'$ is coprime to $n/p'$. Write
+$L(n;p')$ for the set of units $x$ of $\mathbb{Z}/n\mathbb{Z}$ whose least nonnegative
+representative $v$ satisfies $\left(\frac{v}{n}\right) = \left(\frac{v}{p'}\right)$, where both
+are Jacobi symbols. Then every unit $z$ of $\mathbb{Z}/p'\mathbb{Z}$ is the reduction modulo $p'$
+of some element of $L(n;p')$.
 
 ## Depends on
 

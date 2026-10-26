@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_MRS1956_fiveTwelfths_holds
 ---
 
-# Upper Bound MRS1956 five Twelfths holds
+# Motzkin–Ralston–Selfridge upper bound $5/12$ for the minimum-overlap constant
 
-Source: Motzkin--Ralston--Selfridge 1956 and Optimization Problems 1b.
+**Motzkin–Ralston–Selfridge upper bound $5/12$ for the minimum-overlap constant.** The
+continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 5/12$.
 
 ## Depends on
 
-- [Upper Bound MRS1956 five Twelfths](upper-bound-mrs1956-five-twelfths.md)
+- [Statement of the Motzkin–Ralston–Selfridge upper bound $5/12$ for the minimum-overlap constant](upper-bound-mrs1956-five-twelfths.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Motzkin--Ralston--Selfridge 1956 and Optimization Problems 1b.

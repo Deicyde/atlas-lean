@@ -5,12 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DirichletWeylBoundWanted.DirichletWeylBound.corollary_1_3
 ---
 
-# Dirichlet Weyl Bound Wanted
+# Petrow–Young Weyl bound on the critical line
 
-Statement of Corollary 1.3:
+**Petrow–Young Weyl bound on the critical line.** For every real $\varepsilon > 0$ there is a
+real number $C$ such that for every cube-free natural number $q$ (that is, $q > 0$ and $p^3$ does
+not divide $q$ for any prime $p$), every primitive Dirichlet character $\chi$ modulo $q$ and
+every real $t$, the analytically continued Dirichlet $L$-function satisfies
 
-Suppose `χ` has cubefree conductor `q`. Then
-`|L(1/2 + it, χ)| ≪ q ^ (1/6 + ε) * (1 + |t|) ^ (1/6 + ε)`.
+$$|L(1/2 + it, \chi)| \le C \, q^{1/6 + \varepsilon} (1 + |t|)^{1/6 + \varepsilon}.$$
+
+This is Corollary 1.3 of the source.
 
 ## Depends on
 

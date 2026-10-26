@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsGenMarkovLabel
 ---
 
-# Is Gen Markov Label
+# Fraction labeling of generalized Markov numbers
 
-The fraction labeling of `k`-generalized Markov numbers: `m = m_q` when `q` and `m` sit
-at the same position of the vertices of `FT` and `MT(k)` at the same path; on `[0, 1]` this
-gives `m_{0/1} = 1`, `m_{1/1} = k + 2` and the paper's `m_t` for `t ∈ (0, 1)`.
+**Fraction labeling of generalized Markov numbers.** Let $k$ be a natural number. Write a
+fraction $n/d$ as the pair $(n, d)$ of natural numbers, with $1/0$ standing for $\infty$. Let
+$FT$ be the Farey tree and $MT(k)$ the $k$-generalized Markov tree, with vertices of both
+indexed by finite paths of left and right steps from the root. A natural number $m$ carries the
+label $q$, written $m = m_q$, when there are a path $w$ and a position $i \in \{1, 2, 3\}$ such
+that the $i$-th entry of the vertex of $FT$ at $w$ is $q$ and the $i$-th entry of the vertex of
+$MT(k)$ at $w$ is $m$.
+
+On fractions in $[0, 1]$ this gives $m_{0/1} = 1$, $m_{1/1} = k + 2$ and, for $t \in (0, 1)$,
+the number $m_t$ of Gyoda and Maruyama.
 
 ## Depends on
 
@@ -17,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Farey Tree](farey-tree.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [The Farey tree](farey-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

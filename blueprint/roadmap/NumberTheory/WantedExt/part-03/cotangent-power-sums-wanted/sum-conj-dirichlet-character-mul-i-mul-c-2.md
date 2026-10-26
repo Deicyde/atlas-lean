@@ -5,19 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_even
 ---
 
-# Theorem 1, even `r`
+# Girstmair's cotangent power sums, even case
 
-**Theorem 1, even `r`.** For `n ≥ 2`, even `r ≥ 2` and an even Dirichlet character `χ` mod
-`n` (`χ(-1) = 1`) with conductor `f`,
-`y(χ|i^r cot^r(π/n)) = y(χ|1) + ∑_{1 ≤ j ≤ r, j even} c_{r,j} (2n)^j/(j f^j)
-∏_{p ∣ n} (1 - χ̄_f(p)/p^j) B_{j,χ_f}`, where `y(χ|1)` is `φ(n)` for the principal character and
-`0` otherwise (Equation (11)).
+**Girstmair's cotangent power sums, even case.** Let $n \ge 2$, let $r \ge 2$ be even, and let
+$\chi$ be a complex Dirichlet character modulo $n$ with $\chi(-1) = 1$. Let $f$ be the conductor
+of $\chi$, $\chi_f$ the primitive character modulo $f$ attached to $\chi$, and $c_{r,j}$
+Girstmair's cotangent power coefficients. Write
+$\tau(\overline{\chi_f}) = \sum_{k=1}^{f} \overline{\chi_f(k)} e^{2 \pi i k/f}$ for the Gauss sum,
+$B_{j,\chi_f} = f^{j-1} \sum_{k=1}^{f} B_j(k/f) \chi_f(k)$, where $B_j$ is the $j$-th Bernoulli
+polynomial, and $\varepsilon_\chi = \varphi(n)$ if $\chi$ is the principal character modulo $n$
+and $\varepsilon_\chi = 0$ otherwise. Then
 
-The character coordinate is unfolded through Equation (3) as in the odd case.
+$$\sum_{k} \overline{\chi(k)} \left(i \cot \frac{\pi k}{n}\right)^r = \tau(\overline{\chi_f}) \,
+\Bigl(\varepsilon_\chi + \sum_{j} \frac{c_{r,j} (2n)^j}{j f^j}
+\prod_{p \mid n} \Bigl(1 - \frac{\overline{\chi_f(p)}}{p^j}\Bigr) B_{j,\chi_f}\Bigr),$$
+
+where $k$ runs over $1 \le k \le n$ with $\gcd(k, n) = 1$, $j$ runs over the even numbers with
+$1 \le j \le r$, and $p$ runs over the primes dividing $n$.
+
+The left side is $\tau(\overline{\chi_f})$ times the character coordinate
+$y(\chi \mid i^r \cot^r(\pi/n))$ of the source (Equation (3)), and $\varepsilon_\chi$ is
+$y(\chi \mid 1)$ (Equation (11)).
 
 ## Depends on
 
-- [Cotangent Power Coeff](cotangent-power-coeff.md)
+- [Girstmair's cotangent power coefficients](cotangent-power-coeff.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_consecutivePrimePowerSums_length_le
 ---
 
-# Card consecutive Prime Power Sums length le
+# Counting sums of a fixed number of consecutive prime powers
 
-Lemma 1: for `k > 1` and `m > 0`, `s_{k,m}(x) ≤ π((x/m)^{1/k})`.
+**Counting sums of a fixed number of consecutive prime powers.** Let $p_1 < p_2 < \cdots$
+be the primes. For natural numbers $k > 1$, $m > 0$ and $x$, the number of integers $n \le x$ of
+the form $n = p_{\ell+1}^k + p_{\ell+2}^k + \cdots + p_{\ell+m}^k$ for some $\ell \ge 0$ is at
+most $\pi(\lfloor (x/m)^{1/k} \rfloor)$, the number of primes up to $(x/m)^{1/k}$.
 
 ## Depends on
 

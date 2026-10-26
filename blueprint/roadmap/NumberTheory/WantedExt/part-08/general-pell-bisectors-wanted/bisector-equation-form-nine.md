@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_form_nine
 ---
 
-# Bisector equation form nine
+# Bisector-equation solutions from the negative Pell sequences
 
-Converse of Theorem 3, Form (9): for `d > 1` whose negative Pell equation is solvable in
-integers and `m, n > 0`, `(f_{(2m-1)(2n-1)}, f_{(2m-1)(2n+1)}, g_{(2m-1) 2n} / g_{2m-1})` solves
-`(a - c)² (b² + 1) = (b - c)² (a² + 1)`.
+**Bisector-equation solutions from the negative Pell sequences.** Let $d > 1$ be a natural
+number such that $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in
+positive integers with $Y$ least, and define integers $f_k$ and $g_k$ by
+$f_k + g_k \sqrt{d} = (X + Y \sqrt{d})^k$ for natural numbers $k$. Let $m, n > 0$ be natural
+numbers and put $a = f_{(2m-1)(2n-1)}$, $b = f_{(2m-1)(2n+1)}$ and
+$c = g_{(2m-1) 2n} / g_{2m-1}$. Then $g_{2m-1}$ divides $g_{(2m-1) 2n}$, so $c$ is an integer, and
 
-Square-freeness of `d` is not needed here.
+$$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralPellBisectorsWanted](../../../../../sources/v2/WantedExt.md)
+- converse of Theorem 3 for Form (9); the square-freeness of $d$ is not needed here.
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3, converse for (9) (`integers-2024-A111-thm-3`).

@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.laurent_sub_convergent_order
 ---
 
-# Laurent sub convergent order
+# Distance from an irrational Laurent series to its convergents
 
-Let `α` be irrational with convergents `P_n / Q_n`. (i) If `|α| ≥ 1`, then
-`|α - P_n/Q_n| < |α|` for all `n ≥ 0`. (ii) If `|α| < 1`, then `|α - P₀/Q₀| = |α|` and
-`|α - P_n/Q_n| < |α|` for all `n ≥ 1` (`|y| = |x|^{-y.order}`).
+**Distance from an irrational Laurent series to its convergents.** Let $K$ be a field, let
+$\alpha \in K((x^{-1}))$ be irrational with convergents $P_n/Q_n$ ($n \ge 0$), and for nonzero
+$y \in K((x^{-1}))$ let $|y| = |x|^{\deg y}$, where $\deg y$ is the largest exponent of $x$
+occurring in $y$ and $|x| > 1$ is fixed. (i) If $|\alpha| \ge 1$, then
+$|\alpha - P_n/Q_n| < |\alpha|$ for all $n \ge 0$. (ii) If $|\alpha| < 1$, then
+$|\alpha - P_0/Q_0| = |\alpha|$ and $|\alpha - P_n/Q_n| < |\alpha|$ for all $n \ge 1$.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
 
 ## Sources
 

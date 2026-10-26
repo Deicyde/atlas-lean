@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedBinaryDigitSum_recurrence
 ---
 
-# Weighted Binary Digit Sum recurrence
+# Recurrence for the weighted binary digit sum
 
-Recurrence for the weighted binary digit sum.
+**Recurrence for the weighted binary digit sum.** Let $a(n)$ denote the weighted binary digit
+sum of $n$. For every natural number $n$, $a(2n) = 2a(n) + 2n$ and $a(2n + 1) = a(2n)$.
 
-The two-variable generating-function claim in the same theorem is garbled in
-the extraction and is not formalized.
+The source theorem also gives a two-variable generating function, which is not part of this
+statement.
 
 ## Depends on
 
-- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
+- [Weighted binary digit sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

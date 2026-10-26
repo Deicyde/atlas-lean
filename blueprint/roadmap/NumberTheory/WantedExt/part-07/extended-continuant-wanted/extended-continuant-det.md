@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.extendedContinuant_det
 ---
 
-# Extended Continuant det
+# Determinant identity for extended continuants
 
-Corollary 2: for all `n ∈ ℤ`,
-`K_n(x)_0 K_{n-2}(x)_1 - K_{n-1}(x)_1 K_{n-1}(x)_0 = (-1)^{n+1}`.
+**Determinant identity for extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$ be an
+integer sequence and write $K_a(x)_b$ for its extended continuant of order $a$ with start index
+$b$. For every integer $n$,
+
+$$K_n(x)_0 K_{n-2}(x)_1 - K_{n-1}(x)_1 K_{n-1}(x)_0 = (-1)^{n+1}.$$
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Sources
 

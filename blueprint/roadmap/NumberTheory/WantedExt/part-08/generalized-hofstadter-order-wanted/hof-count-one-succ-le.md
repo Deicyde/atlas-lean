@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hofCount_one_succ_le
 ---
 
-# Hof Count one succ le
+# Prefixes of $x_{k+1}$ contain no more letters $1$ than those of $x_k$
 
-For `k ≥ 1` and `n ≥ 0`, `C_k^{(=1)}(n) ≥ C_{k+1}^{(=1)}(n)`.
+**Prefixes of $x_{k+1}$ contain no more letters $1$ than those of $x_k$.** Let $x_k$ be the
+fixed point, starting with $k$, of the substitution sending the letter $k$ to $k\,1$ and every
+other letter $i$ to $i + 1$, and let $C_k^{(=1)}(n)$ be the number of indices $j < n$ with
+$x_k[j] = 1$. For $k \ge 1$ and every $n \ge 0$, $C_{k+1}^{(=1)}(n) \le C_k^{(=1)}(n)$.
 
 ## Depends on
 
-- [Hof Count](hof-count.md)
+- [Letter counts in the Hofstadter word](hof-count.md)
 
 ## Sources
 

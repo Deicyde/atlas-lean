@@ -13,8 +13,8 @@ for every `k`.
 
 ## Depends on
 
-- [Paperfolding Cont Frac Word](paperfolding-cont-frac-word.md)
-- [Paperfolding Sum Term](paperfolding-sum-term.md)
+- [Continued-fraction words of the paperfolding sums](paperfolding-cont-frac-word.md)
+- [Terms of the paperfolding sums](paperfolding-sum-term.md)
 
 ## Sources
 

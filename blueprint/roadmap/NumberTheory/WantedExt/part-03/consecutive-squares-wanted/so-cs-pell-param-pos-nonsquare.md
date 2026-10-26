@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.soCS_pell_param_pos_nonsquare
 ---
 
-# So CS pell param pos nonsquare
+# The Pell-type parameter is a positive nonsquare
 
-For a SoCS solution `(a, b, c)`, the Pell-type parameter
-`A = 3 * (b - c)^2 * (12 * (b - a)^2 * (c - b)^2 - (a - 2b + c)^4)` is
-positive and is not a square.
+**The Pell-type parameter is a positive nonsquare.** For every solution $(a, b, c)$ of the
+sum of consecutive squares problem, the integer
+$A = 3(b - c)^2\bigl(12(b - a)^2(c - b)^2 - (a - 2b + c)^4\bigr)$ is positive and is not a
+perfect square.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

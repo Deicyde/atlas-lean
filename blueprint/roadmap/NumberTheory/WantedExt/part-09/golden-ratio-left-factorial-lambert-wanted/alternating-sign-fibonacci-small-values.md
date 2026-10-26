@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.alternatingSignFibonacci_small_values
 ---
 
-# Alternating Sign Fibonacci small values
+# First values of the alternating-sign Fibonacci sequence
 
-The first values `d 0, …, d 4 = 0, 1, 2, 2, 5`.
+**First values of the alternating-sign Fibonacci sequence.** The alternating-sign Fibonacci
+sequence $d$ satisfies $d_0 = 0$, $d_1 = 1$, $d_2 = 2$, $d_3 = 2$ and $d_4 = 5$.
 
 ## Depends on
 
-- [Alternating Sign Fibonacci](alternating-sign-fibonacci.md)
+- [Alternating-sign Fibonacci sequence](alternating-sign-fibonacci.md)
 
 ## Sources
 

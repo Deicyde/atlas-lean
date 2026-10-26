@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZetaPoleSet
 ---
 
-# L Generalized Fibonacci Zeta Pole Set
+# Possible poles of the ℓ-generalized Fibonacci zeta function
 
-The set `S` of all possible poles from Theorem 1.  Exponent functions which agree
-on the non-dominant-root finset describe the same tuple; values elsewhere are ignored.
+**Possible poles of the ℓ-generalized Fibonacci zeta function.** For a natural number $\ell$
+and a real number $\alpha$, let $R$ be the set of distinct complex roots of the characteristic
+polynomial $X^\ell - \sum_{i=0}^{\ell-1} X^i$ other than $\alpha$. The set $S$ of possible poles
+is the set of all complex numbers $-K + (2n\pi i + L)/\log\alpha$, where $n$ is an integer,
+$(\kappa_\beta)_{\beta \in R}$ is a family of natural numbers, $K = \sum_{\beta \in R} \kappa_\beta$
+and $L = \sum_{\beta \in R} \kappa_\beta \log \beta$. Here $\log$ is the principal complex
+logarithm.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole.md)
 
 ## Sources
 

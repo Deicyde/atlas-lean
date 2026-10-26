@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsDegreeNondecreasing
 ---
 
-# Is Degree Nondecreasing
+# Degree-nondecreasing functions
 
-`IsDegreeNondecreasing U G` formalizes the source's reversed-looking monotonicity
-convention: for `f₁,f₂ ∈ U`, the inequality `deg f₂ ≤ deg f₁` implies
-`G f₂ ≤ G f₁`.  Natural degree is adequate because `U` will consist of monic, hence
-nonzero, polynomials.
+**Degree-nondecreasing functions.** Let $F$ be a field, $U$ a set of polynomials over $F$ and
+$G$ a real-valued function on polynomials over $F$. Then $G$ is degree-nondecreasing on $U$
+when for all $f_1, f_2 \in U$ with $\deg f_2 \le \deg f_1$ we have $G(f_2) \le G(f_1)$. Here
+$\deg$ is the natural degree, with $\deg 0 = 0$.
+
+In particular $G$ takes the same value on members of $U$ of equal degree. The natural degree is
+adequate because $U$ will consist of monic, hence nonzero, polynomials.
 
 ## Depends on
 

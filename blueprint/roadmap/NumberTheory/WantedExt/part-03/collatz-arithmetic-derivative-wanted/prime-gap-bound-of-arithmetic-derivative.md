@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.prime_gap_bound_of_arithmeticDerivative_collatz_comm
 ---
 
-# Prime gap bound of arithmetic Derivative collatz comm
+# Prime gap bound for semiprime solutions
 
-If `pq` with primes `q < p` solves `D(C(n)) = C(D(n))`, then
-`p - q ≥ 2√(30p² + 2) - 10p`.
+**Prime gap bound for semiprime solutions.** Let $D$ be the arithmetic derivative and let $C$
+be the accelerated Collatz map, $C(n) = n/2$ for even $n$ and $C(n) = (3n + 1)/2$ for odd $n$.
+If $p$ and $q$ are primes with $q < p$ and $D(C(pq)) = C(D(pq))$, then
+$p - q \ge 2\sqrt{30p^2 + 2} - 10p$.
 
 ## Depends on
 
 - [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 
 ## Sources
 

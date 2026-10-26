@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsUniformlyRecurrentSeq
 ---
 
-# Is Uniformly Recurrent Seq
+# Uniformly recurrent sequence
 
-A sequence is uniformly recurrent if for every factor `w` there is a constant `C_w` such
-that every occurrence of `w` is followed by another occurrence at distance at most `C_w`.
+**Uniformly recurrent sequence.** A sequence $s : \mathbb{N} \to \alpha$ is uniformly
+recurrent if for every factor $w$ there is a constant $C_w$ such that every occurrence of $w$ is
+followed by another occurrence at distance at most $C_w$: for all $i, \ell \in \mathbb{N}$ there
+is $C \in \mathbb{N}$ such that for every $i'$ with $s(i' + t) = s(i + t)$ for all $t < \ell$,
+there is $j$ with $0 < j \le C$ and $s(i' + j + t) = s(i + t)$ for all $t < \ell$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

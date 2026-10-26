@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_nine_regular
 ---
 
-# Ramanujan Tau succ mod Eq nine regular
+# Ramanujan's $\tau$ modulo $3$ via $9$-regular partitions
 
-Ramanujan's `τ` modulo `3`: `τ(n + 1) ≡ R_9(n/3)` if `3 ∣ n` and `≡ 0` otherwise. Here
-`τ = generalizedTau 24`.
+**Ramanujan's $\tau$ modulo $3$ via $9$-regular partitions.** Let $\tau = \tau_{24}$ be
+Ramanujan's tau function, where $\tau_k$ is the generalized tau function, and let $R_9(m)$ be
+the number of partitions of $m$ with no part divisible by $9$. For every integer $n \ge 1$,
+$\tau(n + 1) \equiv R_9(n/3) \pmod 3$ if $3$ divides $n$, and $\tau(n + 1) \equiv 0 \pmod 3$
+otherwise.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isGenFrobeniusNumber_cons_mul_of_gcd
 ---
 
-# Is Gen Frobenius Number cons mul of gcd
+# Beck–Kifer reduction by a common factor of all generators but the first
 
-Beck and Kifer's reduction: for `A = (a₁, ℓa'₂, …, ℓa'_K)` of `K ≥ 2` positive integers with
-`gcd(A) = 1` and `gcd(a'₂, …, a'_K) = 1` (so `ℓ = gcd(a₂, …, a_K)`), and `s ≥ 0`,
-`g(A; s) = ℓ g(a₁, a'₂, …, a'_K; s) + a₁(ℓ - 1)`. The tail `(a'₂, …, a'_K)` is
-`a' : Fin (k + 1) → ℕ`, so the paper's arity is `K = k + 2` (Lean `k = 0` is two generators).
+**Beck–Kifer reduction by a common factor of all generators but the first.** Let $K \ge 2$,
+let $a_1$ and $\ell$ be positive integers, and let $a'_2, \dots, a'_K$ be positive integers with
+$\gcd(a'_2, \dots, a'_K) = 1$ such that $\gcd(a_1, \ell a'_2, \dots, \ell a'_K) = 1$. Let $s$ be a
+natural number. If $g'$ is the generalized Frobenius number $g(a_1, a'_2, \dots, a'_K; s)$, then
+$\ell g' + a_1(\ell - 1)$ is the generalized Frobenius number
+$g(a_1, \ell a'_2, \dots, \ell a'_K; s)$.
 
 ## Depends on
 

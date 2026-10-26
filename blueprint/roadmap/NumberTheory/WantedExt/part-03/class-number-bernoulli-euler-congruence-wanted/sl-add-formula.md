@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.sl_add_formula
 ---
 
-# Sl add formula
+# Addition formula for the Eisenstein function Sl
 
-Addition formula for the Eisenstein elliptic function `Sl`:
-`Sl(u + v) = (Sl(u)² Cl(v) - Sl(v)² Cl(u)) / (Sl(u) Cl(v)² - Sl(v) Cl(u)²)`, and
-`Sl(u + v) ∈ Sl(u) + Sl(v) + (Sl(u), Sl(v))⁴ ℤ[1/3][[Sl(u), Sl(v)]]` inside `ℚ[[u, v]]`.
+**Addition formula for the Eisenstein function Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
+power series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$,
+$\mathrm{Cl}' = -\mathrm{Sl}^2$, $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. In the ring
+$\mathbb{Q}[[u, v]]$ of formal power series in two variables,
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart. The quotient is
-stated cleared of its denominator, and the second claim as a two-variable series `F` with
-coefficients in `ℤ[1/3]` and no terms of total degree below `4`. The arXiv version
-(arXiv:2204.04425) states the ideal power `2`; the journal statement, followed here, has `4`
-(all terms of `Sl(u + v) - Sl(u) - Sl(v)` have total degree `≡ 1 (mod 3)`).
+$$\mathrm{Sl}(u + v)\bigl(\mathrm{Sl}(u)\,\mathrm{Cl}(v)^2 - \mathrm{Sl}(v)\,\mathrm{Cl}(u)^2\bigr)
+= \mathrm{Sl}(u)^2\,\mathrm{Cl}(v) - \mathrm{Sl}(v)^2\,\mathrm{Cl}(u),$$
+
+and there is a power series $F \in \mathbb{Q}[[x, y]]$, with every coefficient in $\mathbb{Z}[1/3]$
+and no terms of total degree below $4$, such that
+$\mathrm{Sl}(u + v) = \mathrm{Sl}(u) + \mathrm{Sl}(v) + F(\mathrm{Sl}(u), \mathrm{Sl}(v))$.
+
+The four conditions determine $\mathrm{Sl}$ and $\mathrm{Cl}$ uniquely: they are the Taylor series
+at $0$ of the Eisenstein elliptic functions of the source. The first identity is the addition
+formula $\mathrm{Sl}(u + v) = \frac{\mathrm{Sl}(u)^2 \mathrm{Cl}(v) - \mathrm{Sl}(v)^2
+\mathrm{Cl}(u)}{\mathrm{Sl}(u) \mathrm{Cl}(v)^2 - \mathrm{Sl}(v) \mathrm{Cl}(u)^2}$ with its
+denominator cleared. The arXiv version of the source (arXiv:2204.04425) has the exponent $2$ in
+place of $4$; every term of $\mathrm{Sl}(u + v) - \mathrm{Sl}(u) - \mathrm{Sl}(v)$ has total
+degree $\equiv 1 \pmod 3$.
 
 ## Depends on
 

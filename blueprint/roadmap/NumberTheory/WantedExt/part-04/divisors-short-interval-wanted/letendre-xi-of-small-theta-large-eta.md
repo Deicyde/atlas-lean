@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.letendreXi_of_small_theta_large_eta
 ---
 
-# Letendre Xi of small theta large eta
+# Letendre's exponent for $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$
 
-`ξ(θ, η) = 4(θ - η)` when `θ² < η`, `θ ≤ 1/2` and `θ < 2η`.
+**Letendre's exponent for $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$.** For all
+real numbers $\theta$ and $\eta$ with $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$,
+Letendre's saving exponent satisfies $\xi(\theta, \eta) = 4(\theta - \eta)$.
 
 ## Depends on
 
-- [Letendre Xi](letendre-xi.md)
+- [Letendre's saving exponent](letendre-xi.md)
 
 ## Sources
 

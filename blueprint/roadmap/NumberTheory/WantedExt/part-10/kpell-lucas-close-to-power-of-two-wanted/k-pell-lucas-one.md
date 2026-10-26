@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kPellLucas_one
 ---
 
-# K Pell Lucas one
+# The $k$-Pell–Lucas number of index one
 
-`Q^{(k)}_1 = 2`.
+**The $k$-Pell–Lucas number of index one.** For every natural number $k$, the $k$-Pell–Lucas
+number $Q^{(k)}_1$ equals $2$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

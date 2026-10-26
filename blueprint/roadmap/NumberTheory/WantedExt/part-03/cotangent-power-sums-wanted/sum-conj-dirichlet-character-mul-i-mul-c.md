@@ -5,20 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_odd
 ---
 
-# Theorem 1, odd `r`
+# Girstmair's cotangent power sums, odd case
 
-**Theorem 1, odd `r`.** For `n ≥ 2`, odd `r ≥ 1` and an odd Dirichlet character `χ` mod `n`
-(`χ(-1) = -1`) with conductor `f` and attached primitive character `χ_f`,
-`y(χ|i^r cot^r(π/n)) = -∑_{1 ≤ j ≤ r, j odd} c_{r,j} (2n)^j/(j f^j) ∏_{p ∣ n} (1 - χ̄_f(p)/p^j)
-B_{j,χ_f}`, where `B_{j,χ_f} = f^{j-1} ∑_{k=1}^f B_j(k/f) χ_f(k)`.
+**Girstmair's cotangent power sums, odd case.** Let $n \ge 2$, let $r$ be odd, and let $\chi$
+be a complex Dirichlet character modulo $n$ with $\chi(-1) = -1$. Let $f$ be the conductor of
+$\chi$, $\chi_f$ the primitive character modulo $f$ attached to $\chi$, and $c_{r,j}$
+Girstmair's cotangent power coefficients. Write
+$\tau(\overline{\chi_f}) = \sum_{k=1}^{f} \overline{\chi_f(k)} e^{2 \pi i k/f}$ for the Gauss sum
+and $B_{j,\chi_f} = f^{j-1} \sum_{k=1}^{f} B_j(k/f) \chi_f(k)$, where $B_j$ is the $j$-th
+Bernoulli polynomial. Then
 
-The character coordinate is unfolded through its defining Equation (3),
-`y(χ|a) τ(χ̄_f) = ∑_{1 ≤ k ≤ n, (k,n)=1} χ̄(k) σ_k(a)`, with `σ_k(i^r cot^r(π/n)) =
-i^r cot^r(πk/n)` (Equation (4)) and the Gauss sum `τ(χ̄_f) = ∑_{k=1}^f χ̄_f(k) e^{2πik/f}`.
+$$\sum_{k} \overline{\chi(k)} \left(i \cot \frac{\pi k}{n}\right)^r = -\tau(\overline{\chi_f})
+\sum_{j} \frac{c_{r,j} (2n)^j}{j f^j}
+\prod_{p \mid n} \Bigl(1 - \frac{\overline{\chi_f(p)}}{p^j}\Bigr) B_{j,\chi_f},$$
+
+where $k$ runs over $1 \le k \le n$ with $\gcd(k, n) = 1$, $j$ runs over the odd numbers with
+$1 \le j \le r$, and $p$ runs over the primes dividing $n$.
+
+The left side is $\tau(\overline{\chi_f})$ times the character coordinate
+$y(\chi \mid i^r \cot^r(\pi/n))$ of the source, defined by Equation (3), since
+$\sigma_k(i^r \cot^r(\pi/n)) = i^r \cot^r(\pi k/n)$ (Equation (4)).
 
 ## Depends on
 
-- [Cotangent Power Coeff](cotangent-power-coeff.md)
+- [Girstmair's cotangent power coefficients](cotangent-power-coeff.md)
 
 ## Sources
 

@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isGenCohnTriple_one_iff
 ---
 
-# Is Gen Cohn Triple one iff
+# Generalized Cohn triples associated with $(1, 1, 1)$
 
-Proposition 3.4: for every `ℓ ∈ ℤ`, `(P_{1;ℓ}, Q_{1;ℓ}, R_{1;ℓ})` is a `k`-generalized Cohn
-triple (associated with `(1, 1, 1)`); conversely every `k`-generalized Cohn triple associated
-with `(1, 1, 1)` is of this form.
+**Generalized Cohn triples associated with $(1, 1, 1)$.** Let $k$ be a natural number.
+For an integer $\ell$, let $P_{1;\ell}$ be the integer matrix with rows $(\ell, 1)$ and
+$(-\ell^2 + 2k\ell + 3\ell - 1, -\ell + 2k + 3)$, let $Q_{1;\ell}$ be the one with rows
+$(k + \ell + 1, 1)$ and $(k^2 - \ell^2 + 3k + \ell + 1, k - \ell + 2)$, and let $R_{1;\ell}$ be
+the one with rows $(2k + \ell + 2, 1)$ and $(-\ell^2 - 2k\ell + 2k - \ell + 1, -\ell + 1)$.
+Then for every integer $\ell$, $(P_{1;\ell}, Q_{1;\ell}, R_{1;\ell})$ is a $k$-generalized Cohn
+triple associated with $(1, 1, 1)$. Conversely, if $(P, Q, R)$ is a $k$-generalized Cohn triple
+associated with $(1, 1, 1)$, then there is an integer $\ell$ with $P = P_{1;\ell}$,
+$Q = Q_{1;\ell}$ and $R = R_{1;\ell}$.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Gen Cohn P1](gen-cohn-p1.md)
-- [Gen Cohn Q1](gen-cohn-q1.md)
-- [Gen Cohn R1](gen-cohn-r1.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [The matrix $P_{1;\ell}$](gen-cohn-p1.md)
+- [The matrix $Q_{1;\ell}$](gen-cohn-q1.md)
+- [The matrix $R_{1;\ell}$](gen-cohn-r1.md)
 
 ## Sources
 

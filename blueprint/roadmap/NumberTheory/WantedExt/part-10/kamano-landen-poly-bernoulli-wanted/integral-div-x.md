@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.integralDivX
 ---
 
-# Integral Div X
+# Formal integral against $du/u$
 
-The formal integral `h ↦ ∫₀^z h(u) du / u`, coefficientwise
-`[z^n] = [u^n] h / n` (and `[z^0] = 0`); it is the integral of the paper when `h`
-has zero constant term.
+**Formal integral against $du/u$.** For a real power series $h$, this is the power series
+$\int_0^z h(u)\,du/u$ computed coefficientwise: for $n \ge 1$ its coefficient of $z^n$ is the
+coefficient of $u^n$ in $h$ divided by $n$, and its constant coefficient is $0$. The constant
+coefficient of $h$ is ignored, so this is the termwise integral only when $h$ has zero constant
+term.
 
 ## Depends on
 

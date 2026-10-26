@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.LandenData
 ---
 
-# Landen Data
+# Landen data
 
-The data `g = (g₀, g₁, …, g_s)` of the paper: `g₀ = (1 -1; c₀ d₀)` and
-`g_i = (a_i b_i; c_i d_i)` for `1 ≤ i ≤ s` (indexed here by `Fin s`).
+**Landen data.** Landen data $g = (g_0, g_1, \dots, g_s)$ consist of a natural number $s$,
+real numbers $c_0, d_0$, and real numbers $a_i, b_i, c_i, d_i$ for $1 \le i \le s$. They
+encode the real $2 \times 2$ matrix $g_0$ with rows $(1, -1)$ and $(c_0, d_0)$ and, for
+$1 \le i \le s$, the matrix $g_i$ with rows $(a_i, b_i)$ and $(c_i, d_i)$. No invertibility is
+required.
 
 ## Depends on
 

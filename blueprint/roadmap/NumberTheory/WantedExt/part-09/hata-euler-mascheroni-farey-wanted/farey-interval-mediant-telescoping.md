@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.farey_interval_mediant_telescoping
 ---
 
-# Farey interval mediant telescoping
+# Mediant telescoping identity for Farey intervals
 
-Mediant telescoping identity for a Farey interval `[a/b, c/d]` (`b c - a d = 1`): with
-`f([x/y, z/w]) = (x w + y z) / (x y z w)`, the value of `f` on the interval minus its values on
-the two halves cut at the mediant `(a + c)/(b + d)` equals
-`(b c - a d)^2 / (a b c d (a + c)(b + d)) = 1 / (a b c d (a + c)(b + d))`. Natural-number
-entries with `0 < a` and `0 < d`, so that every denominator is nonzero.
+**Mediant telescoping identity for Farey intervals.** For an interval $[x/y, z/w]$ write
+$f([x/y, z/w]) = (xw + yz)/(xyzw)$. Let $a, b, c, d$ be natural numbers with $a > 0$, $d > 0$
+and $bc = ad + 1$. Then, computing in the real numbers, the value of $f$ on $[a/b, c/d]$ minus
+its values on the two halves $[a/b, (a + c)/(b + d)]$ and $[(a + c)/(b + d), c/d]$ cut at the
+mediant equals
+
+$$
+\frac{(bc - ad)^2}{abcd(a + c)(b + d)} = \frac{1}{abcd(a + c)(b + d)}.
+$$
 
 ## Depends on
 

@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.digitSumRemainderDoubleIntegral
 ---
 
-# Digit Sum Remainder Double Integral
+# Double integral of the Trollope–Delange remainder
 
-`L(x) = ∫_1^x ∫_1^u J(v) dv / v² du / u`.
+**Double integral of the Trollope–Delange remainder.** For a natural number $q$ and a real
+number $x$, let $J$ be the remainder of the Trollope–Delange formula in base $q$. Then $L(x)$ is
+the real number
+
+$$L(x) = \int_1^x \frac{1}{u} \left( \int_1^u \frac{J(v)}{v^2} \, dv \right) du,$$
+
+where the integrals are oriented, so that $\int_a^b = -\int_b^a$ when $b < a$.
 
 ## Depends on
 
@@ -15,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
 
 ## Sources
 

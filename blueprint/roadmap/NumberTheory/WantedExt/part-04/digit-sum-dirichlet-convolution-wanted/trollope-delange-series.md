@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.trollopeDelangeSeries
 ---
 
-# Trollope Delange Series
+# Delange's series
 
-Delange's series `h(x) = ∑_{r ≥ 0} g(q^r x) / q^r`.
+**Delange's series.** For a natural number $q$, let $g$ be Delange's function in base $q$.
+Delange's series in base $q$ is the function of a real number $x$ given by
+$h(x) = \sum_{r \ge 0} g(q^r x)/q^r$, where the sum is taken to be $0$ when the series is not
+summable.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trollope Delange Integral](trollope-delange-integral.md)
+- [Delange's function](trollope-delange-integral.md)
 
 ## Sources
 

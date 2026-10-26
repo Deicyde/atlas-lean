@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GeometricSumsTwoSquaresWanted.cyclotomicFourMul_eq_sq_add_sq
 ---
 
-# Proposition 2
+# The cyclotomic polynomial $\Phi_{4p}$ as a sum of two explicit squares
 
-**Proposition 2**: for each odd prime `p`,
-`Φ_{4p}(x) = X_1(x)^2 + Y_1(x)^2` for the explicit
-polynomials `X_1` and `Y_1` above.
+**The cyclotomic polynomial $\Phi_{4p}$ as a sum of two explicit squares.** Let $p$ be an
+odd prime, let $X_1 = \sum_{i=0}^{(p-1)/2} (-1)^i x^{p-1-2i}$ and
+$Y_1 = \sum_{i=0}^{(p-3)/2} (-1)^i x^{p-2-2i}$ in $\mathbb{Z}[x]$, and let $\Phi_{4p}$ be the
+$4p$-th cyclotomic polynomial over $\mathbb{Z}$. Then $\Phi_{4p} = X_1^2 + Y_1^2$.
 
 ## Depends on
 
-- [Phi4p X1](phi4p-x1.md)
-- [Phi4p Y1](phi4p-y1.md)
+- [The alternating polynomial $X_1$](phi4p-x1.md)
+- [The alternating polynomial $Y_1$](phi4p-y1.md)
 
 ## Sources
 

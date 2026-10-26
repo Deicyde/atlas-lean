@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.genCohnP1
 ---
 
-# Gen Cohn P1
+# The matrix $P_{1;\ell}$
 
-The matrix `P_{1;ℓ} = [[ℓ, 1], [-ℓ² + 2kℓ + 3ℓ - 1, -ℓ + 2k + 3]]`.
+**The matrix $P_{1;\ell}$.** For a natural number $k$ and an integer $\ell$, $P_{1;\ell}$ is
+the integer $2 \times 2$ matrix with first row $(\ell, 1)$ and second row
+$(-\ell^2 + 2k\ell + 3\ell - 1, -\ell + 2k + 3)$.
 
 ## Depends on
 

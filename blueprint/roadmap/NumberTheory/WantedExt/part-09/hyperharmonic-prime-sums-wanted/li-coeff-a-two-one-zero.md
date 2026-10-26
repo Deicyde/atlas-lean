@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffA_two_one_zero
 ---
 
-# Li Coeff A two one zero
+# The coefficient $a(2, 1, 0)$
 
-Small value `a(2, 1, 0) = -a(1, 0, 0) = -1`.
+**The coefficient $a(2, 1, 0)$.** The coefficient $a(2, 1, 0)$ of Li's Lemma 3 equals $-1$.
+
+By the recursion, $a(2, 1, 0) = -a(1, 0, 0) = -1$.
 
 ## Depends on
 
-- [Li Coeff A](li-coeff-a.md)
+- [Li's coefficients $a(r, m, j)$](li-coeff-a.md)
 
 ## Sources
 

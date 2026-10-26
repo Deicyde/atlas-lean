@@ -6,14 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.baseThreeHalvesDigits_value
 ---
 
-# Base Three Halves Digits value
+# Value of the base-3/2 digits
 
-For every natural `N`, the rational positional sum of its little-endian
-base-`3/2` digits is exactly `2 * N`, equivalently the paper's expansion has value `N`.
+**Value of the base-3/2 digits.** For every natural number $N$, if
+$(d_0, d_1, \dots, d_{k-1})$ is the base-$3/2$ digit list of $N$, least significant digit first,
+then in $\mathbb{Q}$
+
+$$2N = \sum_{i=0}^{k-1} d_i \left(\frac{3}{2}\right)^i.$$
+
+Equivalently, the paper's expansion $\frac{1}{2} \sum_{i} d_i (3/2)^i$ has value $N$.
 
 ## Depends on
 
-- [Base Three Halves Digits](base-three-halves-digits.md)
+- [Base-3/2 digits](base-three-halves-digits.md)
 
 ## Sources
 

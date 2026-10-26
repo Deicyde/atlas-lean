@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.hyperharmonicEulerSum_mem_adjoin_digamma
 ---
 
-# Hyperharmonic Euler Sum mem adjoin digamma
+# Polygamma structure of hyperharmonic Euler sums
 
-Polygamma structure: for `r = 1, …, p` and `a ∈ ℂ \ ℤ`, `S(k, r; p + 1; a)` converges and
-lies in `ℚ(a)[ψ(a) + γ, ψ^{(j)}(a)_{j ≥ 1}, ζ(j)_{j ≥ 2}]`.
+**Polygamma structure of hyperharmonic Euler sums.** Let $k \ge 0$, $r$ and $p$ be integers
+with $1 \le r \le p$, and let $a \in \mathbb{C} \setminus \mathbb{Z}$. Write $H_n^{[r]}(k)$ for
+the generalized hyperharmonic number. Then the series
+$S(k, r; p + 1; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^{p+1}$ converges absolutely, and its
+sum lies in the algebra generated over the field $\mathbb{Q}(a)$ by $\psi(a) + \gamma$, the
+derivatives $\psi^{(j)}(a)$ for $j \ge 1$ and the zeta values $\zeta(j)$ for $j \ge 2$, where
+$\psi$ is the digamma function and $\gamma$ is the Euler–Mascheroni constant.
 
-`ψ` is `Complex.digamma` and `ψ^{(j)}` its `j`-th derivative. The source's extension to integers
-`a > -k` by continuity is not formalized.
+The source also extends the result by continuity to integers $a > -k$; that case is not included
+here.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
-- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic Euler sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

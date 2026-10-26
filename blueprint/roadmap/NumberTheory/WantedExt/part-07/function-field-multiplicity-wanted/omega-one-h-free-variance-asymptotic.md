@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.omegaOne_hFree_variance_asymptotic
 ---
 
-# Omega One h Free variance asymptotic
+# Variance of $\omega_1$ over $h$-free polynomials
 
-Theorem 1, variance: for `h ≥ 2` and every `ε > 0`, the variance of `ω_1` over
-`S_h ∩ M_n` is `log n + C_4(S_h, 1) + O_ε(n^{ε-1})` with
-`C_4(S_h, 1) = B_1 - ζ(2) - U_h - T_h`, `ζ(2) = π^2/6`.
+**Variance of $\omega_1$ over $h$-free polynomials.** Let $F$ be a finite field with $q$
+elements, let $h \ge 2$ and let $\varepsilon > 0$. Let $\omega_1(f)$ be the number of monic
+irreducible $P$ dividing $f$ exactly once, write $|P| = q^{\deg P}$, and let
+$B_1 = \gamma + \sum_P (\log(1 - 1/|P|) + 1/|P|)$ be the function field Mertens constant, with
+$\gamma$ the Euler–Mascheroni constant, $T_h = \sum_P (|P|^{h-1} - 1)/(|P|(|P|^h - 1))$ and
+$U_h = \sum_P (|P|^{h-2}(|P| - 1)/(|P|^h - 1))^2$, all sums over monic irreducible $P$. Then the
+variance of $\omega_1$ over the $h$-free monic polynomials of degree $n$ over $F$, that is, the
+mean of $\omega_1^2$ minus the square of the mean of $\omega_1$, is
+$\log n + B_1 - \pi^2/6 - U_h - T_h + O(n^{\varepsilon - 1})$ as $n \to \infty$.
 
 ## Depends on
 
-- [Function Field Mertens Constant](function-field-mertens-constant.md)
-- [H Free Moment](h-free-moment.md)
-- [H Free Omega One Sq Sum](h-free-omega-one-sq-sum.md)
-- [H Free Omega One Sum](h-free-omega-one-sum.md)
+- [Function field Mertens constant](function-field-mertens-constant.md)
+- [Moments of $\omega_k$ over $h$-free polynomials](h-free-moment.md)
+- [The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials](h-free-omega-one-sq-sum.md)
+- [The prime sum $T_h$](h-free-omega-one-sum.md)
 
 ## Sources
 

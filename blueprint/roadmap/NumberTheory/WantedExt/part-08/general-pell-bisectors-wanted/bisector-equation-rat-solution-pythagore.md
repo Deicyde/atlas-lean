@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_rat_solution_pythagorean
 ---
 
-# Bisector equation rat solution pythagorean
+# Pythagorean parametrization of rational solutions of the bisector equation
 
-Rational solutions of (1) for `d = 1`: if `(a, b, c)` is a rational solution of
-`(a - c)² (b² + 1) = (b - c)² (a² + 1)` with `|a| ≠ |b|`, and `a`, `b` are `x`-components of
-rational solutions of `x² - y² = -1`, then for some integers `l, m, n` with `|l| ≠ |m|`,
-`l m ≠ n²`, `l m n ≠ 0`: `a = (l² - n²) / (2 l n)`, `b = (m² - n²) / (2 m n)` and
-`c = (l m - n²) / ((l + m) n)` or `c = -((l + m) n) / (l m - n²)` (2).
+**Pythagorean parametrization of rational solutions of the bisector equation.** Let $a, b, c$
+be rational numbers with $|a| \ne |b|$ and $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$, and suppose
+that $a^2 + 1$ and $b^2 + 1$ are squares of rational numbers. Then there are integers $l, m, n$ with
+$|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$ such that
+
+$$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n},$$
+
+and
+
+$$c = \frac{l m - n^2}{(l + m) n} \qquad \text{or} \qquad c = -\frac{(l + m) n}{l m - n^2}.$$
 
 ## Depends on
 

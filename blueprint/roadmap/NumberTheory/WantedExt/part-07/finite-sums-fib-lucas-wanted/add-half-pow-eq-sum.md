@@ -5,15 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_half_pow_eq_sum
 ---
 
-# Theorem 5
+# Euler–Lucas expansion of $(x + 1/2)^m$
 
-**Theorem 5**: `(x + 1/2)ᵐ = (1/2) ∑_{n=0}^m
-∑_{k=0}^n (√5/2)ᵏ C(n,k) C(m,n) x^{m-n} Eₖ L_{n-k}` for
-every real `x`, with `Eₖ` the Euler (secant) numbers.
+**Euler–Lucas expansion of $(x + 1/2)^m$.** Let $E_k$ be the Euler (secant) numbers, which
+vanish at odd $k$ and begin $E_0 = 1$, $E_2 = -1$, $E_4 = 5$, and let $L_k$ be the Lucas numbers.
+Then for every natural number $m$ and every real number $x$,
+
+$$
+\left(x + \frac{1}{2}\right)^m = \frac{1}{2} \sum_{n=0}^{m} \sum_{k=0}^{n}
+\left(\frac{\sqrt{5}}{2}\right)^{k} \binom{n}{k} \binom{m}{n} x^{m-n} E_k L_{n-k}.
+$$
 
 ## Depends on
 
-- [Euler Sec Number](euler-sec-number.md)
+- [Euler numbers](euler-sec-number.md)
 - [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.genMarkovCongruenceCount_prime_le_two
 ---
 
-# Gen Markov Congruence Count prime le two
+# At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo a prime
 
-Lemma 4.9: for a prime `p`, `x² + k x + 1 ≡ 0 (mod p)` has at most two solutions.
+**At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo a prime.** For every prime $p$
+and every $k \in \mathbb{N}$, at most two integers $x$ with $0 \le x < p$ satisfy
+$x^2 + kx + 1 \equiv 0 \pmod p$.
 
 ## Depends on
 
-- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
+- [Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$](gen-markov-congruence-count.md)
 
 ## Sources
 

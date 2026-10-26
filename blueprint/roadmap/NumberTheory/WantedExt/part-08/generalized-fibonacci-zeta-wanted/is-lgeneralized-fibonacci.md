@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsLGeneralizedFibonacci
 ---
 
-# Is LGeneralized Fibonacci
+# ℓ-generalized Fibonacci sequence
 
-`IsLGeneralizedFibonacci ℓ F` says that `F : ℤ → ℤ` has the paper's zero initial
-window from `2 - ℓ` through `0`, has `F 1 = 1`, and satisfies the ℓ-step recurrence
-at every index greater than one.  Values below `2 - ℓ` are deliberately unconstrained,
-because the paper defines the sequence only from that index onward.
+**ℓ-generalized Fibonacci sequence.** Let $\ell$ be a natural number. A function
+$F : \mathbb{Z} \to \mathbb{Z}$ is an $\ell$-generalized Fibonacci sequence when $F(n) = 0$ for
+every integer $n$ with $2 - \ell \le n \le 0$, $F(1) = 1$, and
+$F(n) = \sum_{i=0}^{\ell-1} F(n-1-i)$ for every integer $n > 1$.
+
+The values of $F$ below $2 - \ell$ are unconstrained, since the sequence is defined only from
+that index onward.
 
 ## Depends on
 

@@ -6,18 +6,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem847Wanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# Erdős Problem 847 is false
 
-Resolved false: Resolved false externally by Reiher, Rödl, and Sales. This repository records
-the historical proposition, not a proof. Source: Christian Reiher, Vojtěch Rödl, and Marcelo
-Sales, Colouring versus density in integers and Hales–Jewett cubes, Journal of the London
-Mathematical Society (2024), e12987, https://doi.org/10.1112/jlms.12987. Moved from
-`OpenConjectures/NumberTheory/ErdosProblem847`.
+**Erdős Problem 847 is false.** Call a set of natural numbers 3AP-free if it contains no
+$a, b, c$ with $a + c = 2b$ and $a \ne b$. There is an infinite set $A$ of natural numbers such
+that, for some real number $\varepsilon > 0$, every finite subset $B \subseteq A$ has a 3AP-free
+subset of size at least $\varepsilon |B|$, but $A$ is not the union of finitely many 3AP-free sets
+of natural numbers.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Erdős Problem 847](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem847Wanted](../../../../../sources/v2/WantedExt.md)
+- Christian Reiher, Vojtěch Rödl, and Marcelo Sales, Colouring versus density in integers and Hales–Jewett cubes, Journal of the London Mathematical Society (2024), e12987, https://doi.org/10.1112/jlms.12987. Moved from `OpenConjectures/NumberTheory/ErdosProblem847`.

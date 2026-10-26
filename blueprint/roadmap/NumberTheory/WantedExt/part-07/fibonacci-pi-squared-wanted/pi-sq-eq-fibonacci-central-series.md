@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.pi_sq_eq_fibonacci_central_series
 ---
 
-# Pi sq eq fibonacci central series
+# Two Fibonacci series for $\pi^2$
 
-Lemma 2.2 (the case `n = 1`):
-`π² = (250 / (8√5)) Σ_k (k!)² F_(2k+2) / (2k+2)!` (2.3) and
-`π² = (250 / (25 - 4√5)) Σ_k (k!)² F_(2k+1) / (2k+2)!` (2.4).
+**Two Fibonacci series for $\pi^2$.** Writing $F_m$ for the Fibonacci numbers ($F_0 = 0$,
+$F_1 = 1$),
+
+$$\pi^2 = \frac{250}{8\sqrt{5}} \sum_{k=0}^{\infty} \frac{(k!)^2 \, F_{2k+2}}{(2k+2)!}
+\quad \text{and} \quad
+\pi^2 = \frac{250}{25 - 4\sqrt{5}} \sum_{k=0}^{\infty} \frac{(k!)^2 \, F_{2k+1}}{(2k+2)!}.$$
+
+These are identities (2.3) and (2.4) of the paper, the case $n = 1$ of its Theorem 2.1.
 
 ## Depends on
 

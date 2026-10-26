@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.not_dvd_sq_sub_four_of_genMarkovNumber_prime_pow
 ---
 
-# Not dvd sq sub four of gen Markov Number prime pow
+# Discriminant condition for prime-power generalized Markov numbers
 
-Proposition 4.16, in the setting of its proof: for an odd prime `p`, if some
-`k`-generalized Markov number equals `p^m` or `2p^m` with `m ≥ 2`, and `k ≥ 4` is even with
-`p² ∤ k/2 + 1`, `p² ∤ k/2 - 1`, or `k` is odd with `p² ∤ k + 2`, `p² ∤ k - 2`, then
-`k² - 4 ≢ 0 (mod p)`. As printed (without the Markov-number hypothesis) the claim is false:
-`k = 4`, `p = 3` satisfy the divisibility conditions (`9 ∤ 3`, `9 ∤ 1`) but `3 ∣ 12`; the
-paper's proof assumes `b = p^m` is a `k`-generalized Markov number and uses `m ≥ 2`.
+**Discriminant condition for prime-power generalized Markov numbers.** Let $p$ be an odd
+prime and $m \ge 2$, and suppose that some $k$-generalized Markov number $b$ equals $p^m$ or
+$2p^m$. Suppose moreover that either $k \ge 4$ is even and $p^2$ divides neither $k/2 + 1$ nor
+$k/2 - 1$, or $k$ is odd and $p^2$ divides neither $k + 2$ nor $k - 2$. Then $p$ does not
+divide $k^2 - 4$.
+
+As printed (without the Markov-number hypothesis) Proposition 4.16 is false: $k = 4$, $p = 3$
+satisfy the divisibility conditions ($9 \nmid 3$, $9 \nmid 1$) but $3 \mid 12$; the paper's
+proof assumes $b = p^m$ is a $k$-generalized Markov number and uses $m \ge 2$.
 
 ## Depends on
 
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

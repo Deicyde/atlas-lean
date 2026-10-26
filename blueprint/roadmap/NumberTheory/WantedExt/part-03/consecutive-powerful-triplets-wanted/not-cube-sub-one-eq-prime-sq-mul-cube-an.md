@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.not_cube_sub_one_eq_prime_sq_mul_cube_and_cube_add_one
 ---
 
-# Not cube sub one eq prime sq mul cube and cube add one
+# $x^3 - 1$ and $x^3 + 1$ are not both a prime square times a cube
 
-There are no integers `x, a, b` and primes `p, q` with `x³ - 1 = p² a³` and
-`x³ + 1 = q² b³`; as in the paper, `x`, `a`, `b` range over all integers (no
-positivity assumption).
+**$x^3 - 1$ and $x^3 + 1$ are not both a prime square times a cube.** There are no primes
+$p$, $q$ and integers $x$, $a$, $b$ with $x^3 - 1 = p^2 a^3$ and $x^3 + 1 = q^2 b^3$.
+
+As in the paper, $x$, $a$, $b$ range over all integers, with no positivity assumption.
 
 ## Depends on
 

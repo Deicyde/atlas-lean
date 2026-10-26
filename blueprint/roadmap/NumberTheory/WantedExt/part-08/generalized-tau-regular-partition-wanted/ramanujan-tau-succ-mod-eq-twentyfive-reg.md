@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_twentyfive_regular
 ---
 
-# Ramanujan Tau succ mod Eq twentyfive regular
+# Ramanujan's $\tau$ modulo $5$ via $25$-regular partitions
 
-`τ(n + 1) ≡ R_{25}(n) (mod 5)`.
+**Ramanujan's $\tau$ modulo $5$ via $25$-regular partitions.** Let $\tau = \tau_{24}$ be
+Ramanujan's tau function, where $\tau_k$ is the generalized tau function, and let $R_{25}(n)$ be
+the number of partitions of $n$ with no part divisible by $25$. For every integer $n \ge 1$,
+$\tau(n + 1) \equiv R_{25}(n) \pmod 5$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

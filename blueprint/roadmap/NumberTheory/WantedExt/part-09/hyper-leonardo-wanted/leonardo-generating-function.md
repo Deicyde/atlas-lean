@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.leonardo_generatingFunction
 ---
 
-# Leonardo generating Function
+# Generating function of the Leonardo numbers
 
-Corollary 2: `∑ Le_n tⁿ = 2/(1-t-t²) - 1/(1-t) = (1-t+t²)/(1-2t+t³)`, stated as
-`(∑ Le_n tⁿ)(1-2t+t³) = 1-t+t²` and `(∑ Le_n tⁿ)(1-t-t²)(1-t) = 2(1-t) - (1-t-t²)` in `ℤ⟦t⟧`.
+**Generating function of the Leonardo numbers.** Let $Le_n$ be the Leonardo numbers
+($Le_0 = Le_1 = 1$ and $Le_{n+2} = Le_{n+1} + Le_n + 1$), and let
+$L(t) = \sum_{n \ge 0} Le_n t^n$ in the ring $\mathbb{Z}[[t]]$ of formal power series. Then
+$L(t)(1 - 2t + t^3) = 1 - t + t^2$ and $L(t)(1 - t - t^2)(1 - t) = 2(1 - t) - (1 - t - t^2)$.
+
+Equivalently, $L(t) = \frac{2}{1-t-t^2} - \frac{1}{1-t} = \frac{1-t+t^2}{1-2t+t^3}$; the
+identities above are this equality with the denominators cleared.
 
 ## Depends on
 
-- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Generalized Leonardo numbers](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

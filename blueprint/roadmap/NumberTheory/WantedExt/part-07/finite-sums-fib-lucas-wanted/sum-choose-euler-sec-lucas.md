@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_choose_eulerSec_lucas
 ---
 
-# Corollary 10
+# A binomial sum of Euler and Lucas numbers
 
-**Corollary 10**: `∑_{k=0}^n C(n,k) (√5/2)ᵏ Eₖ
-L_{n-k} = 2^{1-n}`.
+**A binomial sum of Euler and Lucas numbers.** Let $L_n$ be the Lucas numbers and let $E_k$
+be the Euler (secant) numbers, given by $2/(e^t + e^{-t}) = \sum_{k \ge 0} E_k t^k / k!$. For
+every natural number $n$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} \left(\frac{\sqrt{5}}{2}\right)^{k} E_k L_{n-k} = \frac{2}{2^n}.$$
 
 ## Depends on
 
-- [Euler Sec Number](euler-sec-number.md)
+- [Euler numbers](euler-sec-number.md)
 - [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources

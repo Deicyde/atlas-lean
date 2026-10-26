@@ -4,12 +4,12 @@ navigation: module
 
 # Even Pseudoprime
 
-- [Lemma 2](even-pseudoprime-mod-eq-and-order-of-odd.md)
-- [Corollary 4](even-pseudoprime-mod-sixteen.md)
-- [Lemma 5](even-pseudoprime-wieferich-of-sq-dvd.md)
-- [Proposition 11](sum-inv-mod-eq-order-of-le.md)
-- [Proposition 12](sum-inv-mod-eq-order-of-mod-sixteen-le.md)
-- [Lemma 8](smooth-reciprocal-tail-le-rpow-mul-smoot.md)
-- [Lemma 8](smooth-reciprocal-tail-lt-nguyen-pomeran.md)
-- [Lemma 10](order-of-two-odd-small-count-lt.md)
-- [Lemma 10](order-of-two-odd-medium-count-lt.md)
+- [Odd prime divisors of an even pseudoprime](even-pseudoprime-mod-eq-and-order-of-odd.md)
+- [Even pseudoprimes modulo 16](even-pseudoprime-mod-sixteen.md)
+- [Square prime factors of even pseudoprimes are Wieferich primes](even-pseudoprime-wieferich-of-sq-dvd.md)
+- [Reciprocal sum over a residue class in an exponential window](sum-inv-mod-eq-order-of-le.md)
+- [Reciprocal sum over a residue class restricted modulo 16](sum-inv-mod-eq-order-of-mod-sixteen-le.md)
+- [Rankin's bound for reciprocal sums of smooth numbers](smooth-reciprocal-tail-le-rpow-mul-smoot.md)
+- [Nguyen–Pomerance bound for reciprocal sums of smooth numbers](smooth-reciprocal-tail-lt-nguyen-pomeran.md)
+- [Primes with odd order of 2 of small size](order-of-two-odd-small-count-lt.md)
+- [Primes with odd order of 2 of medium size](order-of-two-odd-medium-count-lt.md)

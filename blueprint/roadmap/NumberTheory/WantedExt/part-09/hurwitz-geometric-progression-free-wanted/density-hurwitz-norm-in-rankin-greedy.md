@@ -5,12 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.density_hurwitz_norm_in_rankin_greedy
 ---
 
-# Density hurwitz norm in rankin greedy
+# Density of Hurwitz quaternions with norm in Rankin's greedy set
 
-The set `S(G₃*(ℕ₊))` of Hurwitz quaternions whose norm lies in Rankin's greedy set has
-density `(f(2²)/ζ(2)) ∏_{p > 2} (f(p) - f(p²)/p)`, where `f(x) = ∏_{i ≥ 0} (1 + x^{-3^i})`
-and `1/ζ(2)` is written as `6/π²`. The paper's numerical value `≈ 0.782643` is not part of the
-statement.
+**Density of Hurwitz quaternions with norm in Rankin's greedy set.** A Hurwitz quaternion is a
+quaternion whose four rational coordinates are either all integers or all halves of odd integers;
+its norm is the sum of the squares of its coordinates. For a natural number $N$ let $S(N)$ be the
+set of nonzero Hurwitz quaternions of norm at most $N$. Let $G$ be the set of positive integers
+$n$ such that, for every prime $p$, the base-$3$ digits of the exponent $\nu_p(n)$ of $p$ in $n$
+include no $2$ (this is Rankin's greedy set of positive integers avoiding 3-term geometric
+progressions), and let $H_G$ be the set of Hurwitz quaternions whose norm lies in $G$. With
+$f(x) = \prod_{i \ge 0} \bigl(1 + x^{-3^i}\bigr)$, the ratio $|H_G \cap S(N)| / |S(N)|$ tends,
+as $N \to \infty$, to
+
+$$\frac{6}{\pi^2} \, f(4) \prod_{p > 2} \Bigl( f(p) - \frac{f(p^2)}{p} \Bigr),$$
+
+the product running over the odd primes $p$.
+
+The paper writes this constant as $(f(2^2)/\zeta(2)) \prod_{p > 2} (f(p) - f(p^2)/p)$, using
+$1/\zeta(2) = 6/\pi^2$, and gives its value as approximately $0.782643$.
 
 ## Depends on
 

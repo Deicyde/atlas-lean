@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.finiteContFrac_add_inv_mul_den_sq
 ---
 
-# Finite Cont Frac add inv mul den sq
+# Folding lemma for finite continued fractions
 
-The folding lemma: if `p/q = [a₀; a₁, …, aₜ]` with `a₀ ∈ ℤ`, positive partial quotients
-`a₁, …, aₜ` and `t` even, then for every positive integer `x`,
-`p/q + 1/(x q²) = [a₀; a₁, …, aₜ, x, -aₜ, …, -a₁]`. Here `q` is the reduced denominator
-(`Rat.den`), which is the continuant `qₜ` for positive partial quotients.
+**Folding lemma for finite continued fractions.** Let $a_0$ be an integer, let $t$ be even
+and let $a_1, \dots, a_t$ be integers with $a_i \ge 1$ for every $i$, and let $q$ be the
+denominator in lowest terms of the value $[a_0; a_1, \dots, a_t]$ of the finite continued
+fraction. Then for every integer $x \ge 1$,
+$[a_0; a_1, \dots, a_t] + 1/(x q^2) = [a_0; a_1, \dots, a_t, x, -a_t, \dots, -a_1]$.
+
+For positive partial quotients, $q$ is the continuant $q_t$.
 
 ## Depends on
 
-- [Finite Cont Frac](finite-cont-frac.md)
+- [Value of a finite continued fraction](finite-cont-frac.md)
 
 ## Sources
 

@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_mul_add_eq_toeplitzHessenberg_det_iff
 ---
 
-# Gibonacci mul add eq toeplitz Hessenberg det iff
+# Multiples of a shifted Gibonacci sequence that are Toeplitz–Hessenberg determinants
 
-Uniqueness in Theorem 2: for a Gibonacci sequence `G` as in
-`gibonacci_add_eq_composition_sum`, `m ≥ 3` and a constant `k ≠ 0`, there are constants
-`a, b, c, d` with `k G_{n+m} = u_n(a, b, c, d)` for all `n ≥ 1` (the `n × n` Toeplitz–Hessenberg
-determinant with `a_0 = a` and `a_i = (bi + c) d^i`) if and only if
-`k = (G_{m+2} + G_m + 2D)/G_{m+1}^2` for a square root `D` of `(-1)^m (y^2 + yz - z^2)`, so there
-are exactly the two identities (28). The hypothesis `k ≠ 0` excludes the trivial `k = 0`, which
-is `u_n(a, b, c, 0) = 0`.
+**Multiples of a shifted Gibonacci sequence that are Toeplitz–Hessenberg determinants.** Let
+$y$ and $z$ be non-negative integers, not both zero, and let $(G_k)$ be the Gibonacci sequence
+with $G_0 = y$ and $G_1 = z$. For complex numbers $a, b, c, d$ and $n \ge 1$, let
+$u_n(a, b, c, d)$ be the determinant of the $n \times n$ matrix whose entry in row $i$ and column
+$j$ is $a$ if $j = i + 1$, is $(bp + c) d^p$ with $p = i - j + 1$ if $j \le i$, and is $0$ if
+$j > i + 1$. Let $m \ge 3$ and let $k$ be a nonzero complex number. There are complex numbers
+$a, b, c, d$ with $k G_{n+m} = u_n(a, b, c, d)$ for every $n \ge 1$ if and only if there is a
+complex number $D$ with $D^2 = (-1)^m (y^2 + yz - z^2)$ and
+$k = (G_{m+2} + G_m + 2D) / G_{m+1}^2$.
+
+This is the uniqueness part of Theorem 2 of the source. The case $k = 0$ is excluded: there any
+$a, b, c$ with $d = 0$ work trivially, since $u_n(a, b, c, 0) = 0$.
 
 ## Depends on
 

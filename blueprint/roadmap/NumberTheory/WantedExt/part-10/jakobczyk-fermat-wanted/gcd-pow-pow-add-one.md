@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gcd_pow_pow_add_one
 ---
 
-# Gcd pow pow add one
+# Greatest common divisors of generalized Fermat numbers
 
-Divisibility of the generalized Fermat numbers `F_n(a, b) = a^{b^n} + 1` for `a, b ≥ 2` and
-`n < m`: (i) if `a` and `b` are even, `gcd(F_m(a, b), F_n(a, b)) = 1`; (ii) if `a` is odd and `b`
-even, the gcd is `2`; (iii) if `b` is odd, the gcd is `F_n(a, b)` (here `n ≤ m` suffices). The
-source assumes `2 < a, b` and `0 ≤ n ≤ m`; its proof uses only `a, b ≥ 2` and treats `m > n`
-("Since `m > n`"), and (i), (ii) fail at `m = n` (`a = b = 4`, `m = n = 0`:
-`gcd(5, 5) = 5`; `a = 3`, `b = 4`, `m = n = 0`: `gcd(4, 4) = 4`).
+**Greatest common divisors of generalized Fermat numbers.** For natural numbers $a$, $b$ and
+$k$ write $F_k(a, b) = a^{b^k} + 1$, and let $a, b \ge 2$ and $m$, $n$ be natural numbers. If
+$n < m$ and $a$ and $b$ are both even, then $\gcd(F_m(a, b), F_n(a, b)) = 1$. If $n < m$, $a$ is
+odd and $b$ is even, then $\gcd(F_m(a, b), F_n(a, b)) = 2$. If $n \le m$ and $b$ is odd, then
+$\gcd(F_m(a, b), F_n(a, b)) = F_n(a, b)$.
+
+The source assumes $a, b > 2$ and $0 \le n \le m$; its proof uses only $a, b \ge 2$ and treats
+$m > n$ ("Since $m > n$"), and the first two cases fail for $m = n$: for $a = b = 4$ and
+$m = n = 0$ the gcd is $\gcd(5, 5) = 5$, and for $a = 3$, $b = 4$ and $m = n = 0$ it is
+$\gcd(4, 4) = 4$.
 
 ## Depends on
 

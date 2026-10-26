@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.pseudoGreedyExpansion_one_zero
 ---
 
-# Pseudo Greedy Expansion one zero
+# The pseudo-greedy expansion of 1 starts with 2
 
-The pseudo-greedy expansion of `1` starts with `a 0 = 2` (first Sylvester number).
+**The pseudo-greedy expansion of 1 starts with 2.** The first term $a_0$ of the
+pseudo-greedy expansion of $1$ equals $2$, the first Sylvester number.
 
 ## Depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
 
 ## Proof depends on
 
-- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
+- [Pseudo-greedy remainder sequence](pseudo-greedy-remainder.md)
 
 ## Sources
 

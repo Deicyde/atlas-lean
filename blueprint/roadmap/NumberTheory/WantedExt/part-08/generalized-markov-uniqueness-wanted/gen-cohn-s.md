@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.genCohnS
 ---
 
-# Gen Cohn S
+# The matrix $S$ of the generalized Cohn triple relation
 
-The matrix `S = [[k, 0], [3k² + 3k, k]]` of the `k`-generalized Cohn triple relation
-`Q = PR - S`.
+**The matrix $S$ of the generalized Cohn triple relation.** For a natural number $k$, $S$
+is the $2 \times 2$ integer matrix
+
+$$S = \begin{pmatrix} k & 0 \\ 3k^2 + 3k & k \end{pmatrix}.$$
+
+It is the matrix in the relation $Q = PR - S$ that defines $k$-generalized Cohn triples.
 
 ## Depends on
 

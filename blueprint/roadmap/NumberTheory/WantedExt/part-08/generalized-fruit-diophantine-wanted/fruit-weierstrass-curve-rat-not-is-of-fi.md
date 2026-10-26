@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.fruitWeierstrassCurve_rat_not_isOfFinOrder_of_two_dvd_num
 ---
 
-# Fruit Weierstrass Curve rat not is Of Fin Order of two dvd num
+# Points of $E_\alpha(\mathbb{Q})$ with even numerator have infinite order
 
-Over `ℚ`: for an integer `α` not a root of `x⁸ + 5x⁶ - 432x⁴ - 4320x² - 10800`, `E_α(ℚ)` has
-no torsion point `P = (x₀, y₀) ≠ O` whose `x₀` has even numerator in lowest terms.
+**Points of $E_\alpha(\mathbb{Q})$ with even numerator have infinite order.** Let $\alpha$ be an
+integer with $\alpha^8 + 5\alpha^6 - 432\alpha^4 - 4320\alpha^2 - 10800 \neq 0$, and let $E_\alpha$
+be the curve $y^2 - \alpha x y = x^3 - (\alpha^2 + 5)$ over $\mathbb{Q}$. If
+$P = (x_0, y_0) \in E_\alpha(\mathbb{Q})$ is a point such that $x_0$, written in lowest terms, has
+even numerator, then $P$ has infinite order.
 
 ## Depends on
 
-- [Fruit Weierstrass Curve](fruit-weierstrass-curve.md)
+- [The Weierstrass curve $E_\alpha$ of the generalized fruit equation](fruit-weierstrass-curve.md)
 
 ## Sources
 

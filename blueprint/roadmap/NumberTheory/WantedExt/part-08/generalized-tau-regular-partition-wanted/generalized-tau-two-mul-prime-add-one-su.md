@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_two_mul_prime_add_one_succ_modEq
 ---
 
-# Generalized Tau two mul prime add one succ mod Eq
+# Generalized tau at $2p + 1$ modulo $p$
 
-`τ_{2p + 1}(n + 1) ≡ ∑ (-1)^(r + s + t) (mod p)` over `n = P(r) + p (P(s) + P(t))`, `p` an odd
-prime. The record prints `n + 1 = ...`; that is false and the proof's identity
-`∑ τ_{2p+1}(n + 1) q^n ≡ ∏ (1 - q^m)(1 - q^(pm))^2 (mod p)` gives the index `n`.
+**Generalized tau at $2p + 1$ modulo $p$.** Let $p$ be an odd prime and $n$ a natural number,
+and for an integer $j$ let $P(j) = j(3j - 1)/2$ be the generalized pentagonal number. Then
+$\tau_{2p + 1}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^{r + s + t}$ over the triples
+of integers $(r, s, t)$ with $-n \le r, s, t \le n$ and $n = P(r) + p(P(s) + P(t))$.
+
+The record prints the condition as $n + 1 = P(r) + p(P(s) + P(t))$; that is false, and the
+proof's identity $\sum \tau_{2p+1}(n + 1) q^n \equiv \prod (1 - q^m)(1 - q^{pm})^2 \pmod{p}$
+gives the index $n$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

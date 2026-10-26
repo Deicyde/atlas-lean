@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_sq_sub_sq
 ---
 
-# Gen Leonardo sq sub sq
+# Square-difference identity for generalized Leonardo numbers
 
-The square-difference identity `M_{k,n}^2 - L_{k,n}^2 =
-4 * L_{k,n-1} * L_{k,n+1} + 2k * L_{k,n} + k^2`.
+**Square-difference identity for generalized Leonardo numbers.** For every integer $k$ and
+every natural number $n \ge 1$, the generalized Leonardo numbers $L_{k,n}$ and the dual
+generalized Leonardo numbers $M_{k,n}$ satisfy
+
+$$M_{k,n}^2 - L_{k,n}^2 = 4 L_{k,n-1} L_{k,n+1} + 2k L_{k,n} + k^2.$$
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
-- [Gen Leonardo Companion](gen-leonardo-companion.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
+- [Dual generalized Leonardo numbers](gen-leonardo-companion.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.baumSweet_x_cubic_partialQuotient_degree_le_two
 ---
 
-# Baum Sweet x cubic partial Quotient degree le two
+# Baum–Sweet cubic: partial quotients of degree at most 2
 
-Over `𝔽₂`, a root `α` of the irreducible equation `x T³ + T + x = 0` has bounded partial
-quotients, all of degree at most `2`.
+**Baum–Sweet cubic: partial quotients of degree at most 2.** If
+$\alpha \in \mathbb{F}_2((x^{-1}))$ satisfies $x\alpha^3 + \alpha + x = 0$, then every partial
+quotient $b_n$ of $\alpha$, $n \ge 0$, has degree at most $2$ in $x$.
 
 ## Depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
 
 ## Sources
 

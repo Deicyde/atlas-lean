@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.laurentPolyPart_coeff
 ---
 
-# Laurent Poly Part coeff
+# Coefficients of the polynomial part of a Laurent series
 
-Coefficients of the polynomial part.
+**Coefficients of the polynomial part of a Laurent series.** Let $K$ be a field and write
+$\alpha \in K((x^{-1}))$ as $\alpha = \sum_n c_n x^{-n}$. For every integer $n$, the coefficient
+of $x^{-n}$ in the polynomial part $[\alpha]$ is $c_n$ if $n \le 0$ and $0$ if $n > 0$.
 
 ## Depends on
 
-- [Laurent Poly Part](laurent-poly-part.md)
+- [Polynomial part of a Laurent series](laurent-poly-part.md)
 
 ## Sources
 

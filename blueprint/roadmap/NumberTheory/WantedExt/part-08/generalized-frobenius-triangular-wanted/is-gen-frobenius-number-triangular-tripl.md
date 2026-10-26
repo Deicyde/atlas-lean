@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isGenFrobeniusNumber_triangularTriple
 ---
 
-# Is Gen Frobenius Number triangular Triple
+# Generalized Frobenius numbers of three consecutive triangular numbers
 
-Main formula: for all `s ≥ 0`, with `r = ⌊√s⌋`, `δ_s = 1` if `s ≥ r² + r` and `0` otherwise,
-`q_s = 2r + 2 + δ_s`, `c_s = s - r² - δ_s r`: (i) for even `n > 6⌊√(s+1)⌋ - 6`,
-`g(t_n, t_{n+1}, t_{n+2}; s) = (n+1)(n+2)(q_s n + 6c_s)/4 - 1`; (ii) for odd
-`n > 6⌊(√(4s+5) - 1)/2⌋ - 3`, `g(t_n, t_{n+1}, t_{n+2}; s) = (n+1)(n+2)(q_s n + 6c_s - 3δ_s)/4 - 1`.
-Stated as `4(g + 1) = …`.
+**Generalized Frobenius numbers of three consecutive triangular numbers.** For a natural number
+$j$ write $t_j = j(j+1)/2$. Let $n$ and $s$ be natural numbers, let $r = \lfloor\sqrt{s}\rfloor$,
+let $\delta_s = 1$ if $s \ge r^2 + r$ and $\delta_s = 0$ otherwise, and put
+$q_s = 2r + 2 + \delta_s$ and $c_s = s - r^2 - \delta_s r$. Suppose that
+$n > 6\lfloor\sqrt{s+1}\rfloor - 6$ if $n$ is even and $n > 6\lfloor(\sqrt{4s+5} - 1)/2\rfloor - 3$
+if $n$ is odd. Then the generalized Frobenius number $g$ of $(t_n, t_{n+1}, t_{n+2})$ at $s$ exists
+and satisfies $4(g + 1) = (n+1)(n+2)(q_s n + 6c_s)$ if $n$ is even and
+$4(g + 1) = (n+1)(n+2)(q_s n + 6c_s - 3\delta_s)$ if $n$ is odd.
 
 ## Depends on
 
 - [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
-- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
-- [Triangular Triple](triangular-triple.md)
+- [Triangular Frobenius threshold](triangular-frobenius-bound.md)
+- [Three consecutive triangular numbers](triangular-triple.md)
 
 ## Sources
 

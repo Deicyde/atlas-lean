@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sSup_upperDensity_hurwitz_gpFree_bounds
 ---
 
-# S Sup upper Density hurwitz gp Free bounds
+# Bounds on the supremum of upper densities of geometric-progression-free Hurwitz sets
 
-The supremum `m̄_Hur` of the upper densities of sets of Hurwitz quaternions avoiding 3-term
-geometric progressions satisfies `17665627/18662400 ≤ m̄_Hur ≤ 20/21`. The paper's decimal
-approximations are not part of the statement.
+**Bounds on the supremum of upper densities of geometric-progression-free Hurwitz sets.** Let
+$Q_{\mathrm{Hur}}$ be the set of Hurwitz quaternions, the rational quaternions whose four
+coordinates are all integers or all lie in $\mathbb{Z} + \tfrac12$, and let $\mathrm{Nm}(q)$ be
+the sum of the squares of the coordinates of $q$. For $N \in \mathbb{N}$ let $S(N)$ be the set of
+nonzero $q \in Q_{\mathrm{Hur}}$ with $\mathrm{Nm}(q) \le N$, and define the upper density of a
+set $A$ of quaternions as $\limsup_{N \to \infty} |A \cap S(N)| / |S(N)|$. Call
+$A \subseteq Q_{\mathrm{Hur}}$ free of 3-term geometric progressions if there are no
+$a, r \in Q_{\mathrm{Hur}}$ with $a \ne 0$, $r \ne 0$ and $\mathrm{Nm}(r) \ne 1$ such that $a$,
+$ar$ and $ar^2$ all lie in $A$. Let $\bar m_{\mathrm{Hur}}$ be the supremum of the upper
+densities of such sets. Then $17665627/18662400 \le \bar m_{\mathrm{Hur}} \le 20/21$.
 
 ## Depends on
 

@@ -5,21 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.omegaH_hFull_variance_asymptotic
 ---
 
-# Omega H h Full variance asymptotic
+# Variance of $\omega_h$ over $h$-full polynomials
 
-Theorem 5, variance: the variance of `ω_h` over `N_h ∩ M_n` is
-`log(n/h) + B_1 - ζ(2) + W(-∑_P K^2 + κ^2 + κ) - W(κ)^2 + O_ε(n^{ε-1})`, with `W` as in
-`omegaH_hFull_secondMoment_asymptotic`. The printed display writes `ω_1` for `ω_h` in the
-definition of the variance and omits the factor `q^{n/h}/h` in both weighted sums; both are
-restored as in Equations (8) and (9), from which the paper derives the variance.
+**Variance of $\omega_h$ over $h$-full polynomials.** Let $F$ be a finite field with $q$
+elements, let $h \ge 2$, let $\xi \in \mathbb{C}$ be a primitive $h$-th root of unity, and let
+$\varepsilon > 0$. Write $N_h \cap M_n$ for the set of monic polynomials $f$ of degree $n$ over $F$
+that are $h$-full (if a monic irreducible $P$ divides $f$, then so does $P^h$), and $\omega_h(f)$
+for the number of monic irreducible $P$ that divide $f$ exactly $h$ times. For monic irreducible
+$P$ and $j < h$ put $|P| = q^{\deg P}$, $y_{P,j} = (q^{1/h}\xi^j)^{-\deg P}$ with $q^{1/h} > 0$,
+and $K(P, h, j) = (1 - y_{P,j})/(|P|(1 - y_{P,j}) + 1)$. Let
+$\kappa_j = \sum_P (K(P, h, j) - |P|^{-1})$ and
+$\Pi_j = \prod_P (1 - |P|^{-1})(1 + |P|^{-1}(1 - y_{P,j})^{-1})$, with sum and product over monic
+irreducible $P$, and for $X = (X_j)_j$ put
+$W_n(X) = |N_h \cap M_n|^{-1} (q^{n/h}/h) \sum_{j=0}^{h-1} \xi^{jn} \Pi_j X_j$. Let $B_1$ be the
+function field Mertens constant and $L_n = \log(n/h)$. Then, as $n \to \infty$,
+the variance of $\omega_h$ over $N_h \cap M_n$ (the mean of $\omega_h^2$ minus the square of the
+mean of $\omega_h$) is
+$L_n + B_1 - \pi^2/6 + W_n(Y) - W_n(\kappa)^2 + O(n^{\varepsilon - 1})$, where
+$Y_j = -\sum_P K(P, h, j)^2 + \kappa_j^2 + \kappa_j$.
+
+The printed display writes $\omega_1$ for $\omega_h$ in the definition of the variance and omits
+the factor $q^{n/h}/h$ in both weighted sums; both are restored as in Equations (8) and (9), from
+which the paper derives the variance.
 
 ## Depends on
 
-- [Function Field Mertens Constant](function-field-mertens-constant.md)
-- [H Full KSq Sum](h-full-ksq-sum.md)
-- [H Full KSum](h-full-ksum.md)
-- [H Full Moment](h-full-moment.md)
-- [H Full Weighted Mean](h-full-weighted-mean.md)
+- [Function field Mertens constant](function-field-mertens-constant.md)
+- [The sum $\sum_P K(P, h, j)^2$ over monic irreducible polynomials](h-full-ksq-sum.md)
+- [The constant $\kappa_j$ for $h$-full polynomials](h-full-ksum.md)
+- [The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$](h-full-moment.md)
+- [The $h$-full weighted mean](h-full-weighted-mean.md)
 
 ## Sources
 

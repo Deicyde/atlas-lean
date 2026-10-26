@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsGenMarkovTriple.pairwise_coprime
 ---
 
-# Pairwise coprime
+# Generalized Markov triples are pairwise coprime
 
-Proposition 2.3: the entries of a `k`-generalized Markov triple are pairwise coprime.
+**Generalized Markov triples are pairwise coprime.** If $(a, b, c)$ is a $k$-generalized
+Markov triple, then $\gcd(a, b) = \gcd(b, c) = \gcd(a, c) = 1$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

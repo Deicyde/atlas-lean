@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.nthPrimeOne_one_two_three
 ---
 
-# Nth Prime One one two three
+# The first three primes
 
-Small values: `p₁ = 2`, `p₂ = 3`, `p₃ = 5`.
+**The first three primes.** With primes indexed from one, the first three primes are
+$p_1 = 2$, $p_2 = 3$ and $p_3 = 5$.
 
 ## Depends on
 
-- [Nth Prime One](nth-prime-one.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

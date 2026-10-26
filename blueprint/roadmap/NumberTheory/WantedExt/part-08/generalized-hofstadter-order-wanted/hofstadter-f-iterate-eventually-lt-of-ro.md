@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF_iterate_eventually_lt_of_root_pow_lt
 ---
 
-# Hofstadter F iterate eventually lt of root pow lt
+# Eventual order of iterated Hofstadter functions from their growth rates
 
-If `α_k^j < α_{k'}^{j'}` (`k, k' ≥ 1`, `j, j' ≥ 0`), then `F_k^j <_∞ F_{k'}^{j'}`.
+**Eventual order of iterated Hofstadter functions from their growth rates.** Let $k, k' \ge 1$
+and $j, j' \ge 0$, let $F_k$ be the generalized Hofstadter function, write $F_k^i$ for its
+$i$-fold iterate, let $\alpha > 0$ be a root of $X^k + X - 1$, and let $\alpha' > 0$ be a root of
+$X^{k'} + X - 1$. If $\alpha^j < \alpha'^{j'}$, then $F_k^j(n) < F_{k'}^{j'}(n)$ for all
+sufficiently large $n$.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

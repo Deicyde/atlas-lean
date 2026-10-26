@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_seven
 ---
 
-# Ramanujan Tau succ mod Eq pentagonal tau seven
+# Ramanujan's $\tau$ modulo $17$ via $\tau_7$
 
-`τ(n + 1) ≡ ∑ (-1)^r τ_7(s + 1) (mod 17)` over `n = 17 P(r) + s`. The record prints
-`τ_7(s)`; that is false (at `n = 1`) and the proof's identity
-`∏ (1 - q^m)^7 (1 - q^(17m)) = ∑ (-1)^r τ_7(s + 1) q^(17 P(r) + s)`, from Definition 1.1,
-gives the shifted index used here.
+**Ramanujan's $\tau$ modulo $17$ via $\tau_7$.** Let $\tau = \tau_{24}$ be Ramanujan's tau
+function, where $\tau_k$ is the generalized tau function, and let $P(r) = r(3r - 1)/2$ for
+integers $r$. For every integer $n \ge 1$,
+
+$$\tau(n + 1) \equiv \sum_{17P(r) \le n} (-1)^r \tau_7(n - 17P(r) + 1) \pmod{17},$$
+
+the sum running over all integers $r$ with $17P(r) \le n$.
+
+The source record prints $\tau_7(s)$ in place of $\tau_7(s + 1)$, where $n = 17P(r) + s$;
+that version is false at $n = 1$. The shifted index comes from the identity
+$\prod_{m \ge 1} (1 - q^m)^7 (1 - q^{17m}) = \sum_{r, s} (-1)^r \tau_7(s + 1) q^{17P(r) + s}$,
+which follows from Definition 1.1 and is used in the proof.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

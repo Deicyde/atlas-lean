@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_oddMultipleHarmonic_div_succ_sq_tsum
 ---
 
-# Central Binom odd Multiple Harmonic div succ sq tsum
+# Central binomial odd harmonic sum with denominator $4^n (n + 1)^2$
 
-For every integer `k ≥ 0`,
-`∑_{n ≥ k} binom(2n, n) O_n(k) / (4^n (n + 1)^2)
-= 2^{k+2} (k + 1 - log 2) - ∑_{j=1}^{k} (2^{k+2} - 2^j) ζ(k + 2 - j)`.
+**Central binomial odd harmonic sum with denominator $4^n (n + 1)^2$.** For every integer
+$k \ge 0$, with $O_n(k)$ the depth-$k$ odd harmonic number,
 
-The sum runs over all `n ≥ 0`; the terms with `n < k` vanish.
+$$\sum_{n \ge 0} \frac{\binom{2n}{n} O_n(k)}{4^n (n + 1)^2} =
+2^{k+2} (k + 1 - \log 2) - \sum_{j=1}^{k} (2^{k+2} - 2^j) \zeta(k + 2 - j).$$
+
+The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

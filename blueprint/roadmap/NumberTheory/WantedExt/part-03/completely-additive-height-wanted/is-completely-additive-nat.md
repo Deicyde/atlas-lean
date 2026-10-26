@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsCompletelyAdditiveNat
 ---
 
-# Is Completely Additive Nat
+# Completely additive functions on the positive integers
 
-Complete additivity on positive integers: `H(ab) = H(a) + H(b)` for all `a, b ≥ 1`.
+**Completely additive functions on the positive integers.** A function
+$H : \mathbb{N} \to \mathbb{N}$ is completely additive on the positive integers if
+$H(ab) = H(a) + H(b)$ for all integers $a, b \ge 1$.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.isUnit_pentagonalSeries_int
 ---
 
-# Is Unit pentagonal Series int
+# Euler's product is a unit in $\mathbb{Z}((X))$
 
-Euler's product `∏ (1 - X^m)` is a unit of `ℤ⟦X⟧`, so its integer powers are defined.
+**Euler's product is a unit in $\mathbb{Z}[[X]]$.** Euler's pentagonal series
+$\sum_{k \in \mathbb{Z}} (-1)^k X^{k(3k - 1)/2}$, which equals $\prod_{m \ge 1} (1 - X^m)$, is a
+unit of the ring $\mathbb{Z}[[X]]$ of formal power series with integer coefficients, so all its
+integer powers are defined.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Constant Coeff pentagonal Series int](constant-coeff-pentagonal-series-int.md)
+- [Euler's product has constant term $1$](constant-coeff-pentagonal-series-int.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.eventually_sylvester_recurrence_of_rational_sum
 ---
 
-# Erdős–Straus; Badea
+# Erdős–Straus and Badea criterion for the Sylvester recurrence
 
-**Erdős–Straus; Badea.** Let `a` be a sequence of positive integers with
-`a_n² / a_(n+1) → 1` and rational reciprocal sum. If
-`liminf (a_0 ⋯ a_(n-1) / a_n)(1 - a_n² / a_(n+1)) ≥ 0`, or if `a_(n+1) ≥ a_n² - a_n + 1` for
-`n ≫ 0`, then `a_(n+1) = a_n² - a_n + 1` for `n ≫ 0`. The `liminf` condition is written as:
-for every `δ > 0`, eventually the quantity is `≥ -δ`.
+**Erdős–Straus and Badea criterion for the Sylvester recurrence.** Let $(a_n)_{n \ge 0}$ be a
+sequence of positive integers with $a_n^2 / a_{n+1} \to 1$ such that $\sum_n 1 / a_n$ converges
+to a rational number. Suppose that
+$\liminf_n (a_0 \cdots a_{n-1} / a_n)(1 - a_n^2 / a_{n+1}) \ge 0$, that is, for every
+$\delta > 0$ this quantity is at least $-\delta$ for all sufficiently large $n$; or that
+$a_{n+1} \ge a_n^2 - a_n + 1$ for all sufficiently large $n$. Then
+$a_{n+1} = a_n^2 - a_n + 1$ for all sufficiently large $n$.
 
 ## Depends on
 

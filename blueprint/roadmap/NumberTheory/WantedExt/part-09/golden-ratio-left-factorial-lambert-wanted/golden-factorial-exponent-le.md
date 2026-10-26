@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.goldenFactorialExponent_le
 ---
 
-# Golden Factorial Exponent le
+# Minimality of the golden factorial exponent
 
-Minimality of `α n`: every positive `m` with `n! ≤ φ ^ m` satisfies `α n ≤ m`.
+**Minimality of the golden factorial exponent.** Let $\varphi$ be the golden ratio and,
+for a natural number $n$, let $\alpha(n)$ be the least positive integer $m$ with
+$n! \le \varphi^m$. If $n$ and $m$ are natural numbers with $m \ge 1$ and $n! \le \varphi^m$,
+then $\alpha(n) \le m$.
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
 
 ## Sources
 

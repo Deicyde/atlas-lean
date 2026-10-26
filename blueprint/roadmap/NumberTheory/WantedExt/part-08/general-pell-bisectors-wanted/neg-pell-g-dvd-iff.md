@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.negPellG_dvd_iff
 ---
 
-# Neg Pell G dvd iff
+# Divisibility of the second coordinates of negative Pell powers
 
-For `d > 1` whose negative Pell equation is solvable in integers and `0 < n ≤ m`: `g_n ∣ g_m`
-if and only if `n ∣ m`.
+**Divisibility of the second coordinates of negative Pell powers.** Let $d > 1$ be a natural
+number such that $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its fundamental
+solution (the one with $X, Y > 0$ and $Y$ least), and write
+$(X + Y \sqrt{d})^n = f_n + g_n \sqrt{d}$. For natural numbers $0 < n \le m$, $g_n$ divides $g_m$
+if and only if $n$ divides $m$.
 
 ## Depends on
 
-- [Neg Pell G](neg-pell-g.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

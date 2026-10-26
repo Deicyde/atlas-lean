@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.digitSumFluctuationDoubleIntegral_one
 ---
 
-# Digit Sum Fluctuation Double Integral one
+# The double fluctuation integral vanishes at 1
 
-`H(1) = 0`.
+**The double fluctuation integral vanishes at 1.** For every natural number $q$, the double
+integral $H(x) = \int_1^x \int_1^u F(\log v / \log q) \, dv/v \, du/u$ of the Trollope–Delange
+fluctuation $F$ for base $q$ satisfies $H(1) = 0$.
 
 ## Depends on
 
-- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
+- [Double integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-double-integral.md)
 
 ## Proof depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.compoundSequence_zero
 ---
 
-# Compound Sequence zero
+# First term of a compound sequence
 
-`c_0 = a_1 a_2 ⋯ a_n`.
+**First term of a compound sequence.** For every natural number $n$ and all sequences $a$, $b$
+of natural numbers, the compound sequence $c$ of $a$ and $b$ satisfies $c_0 = a_1 a_2 \cdots a_n$.
 
 ## Depends on
 
-- [Compound Sequence](compound-sequence.md)
+- [Compound sequence](compound-sequence.md)
 
 ## Sources
 

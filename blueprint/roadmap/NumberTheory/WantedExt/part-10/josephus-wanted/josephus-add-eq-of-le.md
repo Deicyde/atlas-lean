@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_of_le
 ---
 
-# Lemma 6
+# Linear growth of the Josephus function before a wrap-around
 
-**Lemma 6**(a): with `p := J_k(n)`, if
-`p + k * m ≤ n + m` then `J_k(n + m) = p + k * m`.
+**Linear growth of the Josephus function before a wrap-around.** Let $k \ge 2$, $n \ge 1$
+and $m$ be natural numbers, let $J_k$ be the Josephus function and write $p = J_k(n)$. If
+$p + km \le n + m$, then $J_k(n + m) = p + km$.
 
 ## Depends on
 

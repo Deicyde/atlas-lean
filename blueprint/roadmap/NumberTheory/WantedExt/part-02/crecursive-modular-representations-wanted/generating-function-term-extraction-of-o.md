@@ -5,19 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.generating_function_term_extraction_of_one_third_growth
 ---
 
-# Generating function term extraction of one third growth
+# Term extraction from the generating function under cube-root growth
 
-For a natural-valued sequence whose generating-function series is summable at `c⁻¹`, if
-`c ≥ 8` and `t n < c ^ (n / 3)` for every `n ≥ 1`, then every such `t n` is the remainder
-modulo `c ^ n` of the floor of `c ^ (n ^ 2)` times the series evaluated at `c⁻ⁿ`.
+**Term extraction from the generating function under cube-root growth.** Let
+$t_0, t_1, t_2, \dots$ be natural numbers and let $c \ge 8$ be a natural number. Suppose that
+the real series $\sum_{k \ge 0} t_k c^{-k}$ is summable and that $t_n < c^{n/3}$, a real power,
+for every $n \ge 1$. Then for every $n \ge 1$,
 
-The paper's clauses `c ≥ 8` and `n ≥ 1` are `hc` and `hn`; its growth condition is `hbound`,
-where the cast to `ℝ` and real exponent `(n : ℝ) / 3` avoid natural-number division. Its
-generating function is written explicitly as the infinite sum in the conclusion. The radius
-condition `c⁻¹ < R` is represented by `hconv`, summability at `c⁻¹`, as in the existing
-formalization of the first part of Theorem 2. Summability at that point is implied by the
-paper's radius condition but is strictly weaker, so this formal statement is stronger than the
-paper's result. The floor and outer modulus use `Nat.floor` and `%`, respectively.
+$$t_n = \Bigl\lfloor c^{n^2} \sum_{k \ge 0} t_k \, (c^{-n})^k \Bigr\rfloor \bmod c^n.$$
+
+Summability at $c^{-1}$ stands in for the paper's hypothesis that $c^{-1}$ lies inside the
+radius of convergence of the generating function. It is implied by that hypothesis but is
+strictly weaker, so this statement is stronger than the paper's.
 
 ## Depends on
 

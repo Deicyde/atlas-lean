@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_error_eq_tsum_le
 ---
 
-# Gobel Sequence error eq tsum le
+# Series formula and bound for the Göbel error
 
-Lemma 12: for `k, l ≥ 2`, `n ≥ 1`, and `C = C_{k,l}` the limit of
-`C_{k,l}(n) = g_{k,l}(n)^{1/k^n}`, the error
-`ε_{k,l}(n) = ∑_{m ≥ 1} log (m + n) / k^m - k^n (log C_{k,l}(n) - log C_{k,l})` equals
-`∑_{m ≥ 1} k^{-m} log (1 + (m + n - 1) / g_{k,l}(m + n - 1)^{k-1})`, and this sum is at
-most `2n / C_{k,l}^{(k-1) k^n}`. The definition of `ε_{k,l}` is taken from the
-paper's Section 3.2; both sums are reindexed `m ↦ m + 1` over `ℕ`.
+**Series formula and bound for the Göbel error.** Let $k, l \ge 2$ be natural numbers, let
+$g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $C$ be a real number such that the real numbers
+$C_{k,l}(n) = g_{k,l}(n)^{1/k^n}$ tend to $C$ as $n \to \infty$. Then for every natural number
+$n \ge 1$ the error
+
+$$\varepsilon_{k,l}(n) = \sum_{m=1}^{\infty} \frac{\log(m + n)}{k^m} -
+k^n \bigl(\log C_{k,l}(n) - \log C\bigr)$$
+
+satisfies
+
+$$\varepsilon_{k,l}(n) = \sum_{m=1}^{\infty} \frac{1}{k^m}
+\log\Bigl(1 + \frac{m + n - 1}{g_{k,l}(m + n - 1)^{k-1}}\Bigr) \le \frac{2n}{C^{(k-1) k^n}}.$$
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

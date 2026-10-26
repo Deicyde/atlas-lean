@@ -5,9 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicDistMoment
 ---
 
-# Cyclotomic Dist Moment
+# Moments of the trace distance on the cyclotomic box
 
-The `k`-th moment `M_k(p, N) = #B(p, N)⁻² ∑_{α, β ∈ B(p, N)} d(α, β)^k`.
+**Moments of the trace distance on the cyclotomic box.** Let $p \ge 1$, $N$ and $k$ be natural
+numbers, and let $K$ be a field generated over $\mathbb{Q}$ by a primitive $p$-th root of unity,
+with fixed primitive $p$-th root of unity $\omega \in K$. Let $d$ be the trace metric on $K$, given
+by $d(\alpha, \beta) \ge 0$ and
+$d(\alpha, \beta)^2 = \sum_{j=1}^{p-1} \mathrm{Tr}_{K/\mathbb{Q}}((\alpha - \beta) \omega^j)^2$.
+Let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$ with $-N \le a_i \le N$
+for all $i$, and write $\alpha_a = a_1 \omega + \dots + a_{p-1} \omega^{p-1}$. The $k$-th moment
+of $d$ over $B(p, N)$ is the real number
+
+$$
+M_k(p, N) = \frac{1}{\lvert B(p, N) \rvert^2} \sum_{a \in B(p, N)} \sum_{b \in B(p, N)}
+d(\alpha_a, \alpha_b)^k.
+$$
 
 ## Depends on
 
@@ -15,9 +27,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyclotomic Box](cyclotomic-box.md)
-- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [The cyclotomic box](cyclotomic-box.md)
+- [Lattice points of a cyclotomic field](cyclotomic-lattice-point.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Sources
 

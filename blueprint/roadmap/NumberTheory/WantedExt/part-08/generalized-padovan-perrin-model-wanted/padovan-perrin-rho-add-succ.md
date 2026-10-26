@@ -6,16 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinRho_add_succ
 ---
 
-# Padovan Perrin Rho add succ
+# Recurrence for the generalized Padovan–Perrin coefficients ρ
 
-The characteristic recurrence of `ρ(n, s + p)` for `s > 0`:
-`ρ(n + (s + p) + 1, s + p) = k₁ ρ(n + p + 1, s + p) + k₂ ρ(n + 1, s + p)`, i.e.
-`ρ(m) = k₁ ρ(m - s) + k₂ ρ(m - s - p)` for `m > s + p`. Together with `padovanPerrinRho_of_lt` and
-`padovanPerrinRho_self` it determines `ρ`.
+**Recurrence for the generalized Padovan–Perrin coefficients ρ.** Let $R$ be a commutative
+semiring, $k_1, k_2 \in R$, and $p, s \in \mathbb{N}$ with $s > 0$, and write $\rho(m, s+p)$ for
+the Padovan–Perrin coefficient. For every $n \ge 0$,
+
+$$\rho(n + s + p + 1, s + p) = k_1 \, \rho(n + p + 1, s + p) + k_2 \, \rho(n + 1, s + p),$$
+
+that is, $\rho(m, s+p) = k_1 \rho(m - s, s+p) + k_2 \rho(m - s - p, s+p)$ for every $m > s + p$.
+
+Together with $\rho(m, s+p) = 0$ for $m < s + p$ and $\rho(s+p, s+p) = 1$, this determines $\rho$.
 
 ## Depends on
 
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

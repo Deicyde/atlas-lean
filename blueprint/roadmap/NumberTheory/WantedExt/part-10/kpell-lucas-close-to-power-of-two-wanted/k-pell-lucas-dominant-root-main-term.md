@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.kPellLucas_dominantRoot_main_term
 ---
 
-# Lemma 3
+# Main term of the dominant root (Lemma 3)
 
-**Lemma 3.** Let `α` be the positive real root of `Φ_k` and `g_k` as in Lemma 1. If
-`k ≥ 50` and `n < φ^{k/2}`, then `(2α - 2) g_k(α) αⁿ = 2φ^{2n+1} / (φ + 2) · (1 + ξ)` with
-`|ξ| < 1.25 / φ^{k/2}`.
+**Main term of the dominant root (Lemma 3).** Let $\varphi$ be the golden ratio, let $k$ and
+$n$ be natural numbers with $k \ge 50$ and $n < \varphi^{k/2}$, and let $\alpha > 0$ be a real
+number with $\alpha^k = 2\alpha^{k-1} + \sum_{i=0}^{k-2} \alpha^i$. Write
+$g_k(z) = (z - 1) / ((k + 1) z^2 - 3kz + k - 1)$. Then there is a real number $\xi$ with
+$|\xi| < 1.25 / \varphi^{k/2}$ such that
+$(2\alpha - 2) \, g_k(\alpha) \, \alpha^n = \frac{2\varphi^{2n+1}}{\varphi + 2} (1 + \xi)$.
 
 ## Depends on
 

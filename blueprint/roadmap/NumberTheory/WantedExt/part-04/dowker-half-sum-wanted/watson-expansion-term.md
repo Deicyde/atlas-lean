@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.watsonExpansionTerm
 ---
 
-# Watson Expansion Term
+# Watson expansion terms
 
-One summand in the almost-asymptotic expansion of `watsonCosSum`. It explicitly
-casts the rational Bernoulli number `B_{2r}` to `ℝ` and writes
-`2^(1-2r)` as the reciprocal `1 / 2^(2r-1)`, avoiding a negative natural power.
+**Watson expansion terms.** For natural numbers $r$, $n$ and $\nu$, let $B_{2r}$ be the $2r$th
+Bernoulli number and let $\mathcal{H}_{2r-1}(\nu/n) = \cot^{(2r-1)}(\pi\nu/n)$ be the
+$(2r-1)$st derivative of the cotangent evaluated at $\pi\nu/n$. The $r$th Watson expansion term is
+the real number
+
+$$
+\Bigl(1 - \frac{1}{2^{2r-1}}\Bigr)
+\frac{\pi^{2r-1} B_{2r} \, \mathcal{H}_{2r-1}(\nu/n)}{(2r)! \, n^{2r-1}}.
+$$
+
+Here $2r - 1$ is computed in the natural numbers, so for $r = 0$ the factor $1 - 1/2^{2r-1}$ is $0$
+and the term vanishes.
 
 ## Depends on
 
@@ -17,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Watson Odd Cotangent Deriv](watson-odd-cotangent-deriv.md)
+- [Odd cotangent derivatives](watson-odd-cotangent-deriv.md)
 
 ## Sources
 

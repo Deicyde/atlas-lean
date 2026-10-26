@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fermatLastTheoremFor_of_regular
 ---
 
-# Theorem 1
+# Kummer's theorem for regular primes
 
-**Theorem 1** (Kummer). If `p` is a regular prime (odd, and `p` does not divide the
-class number of the `p`-th cyclotomic field), then Fermat's last theorem holds for the
-exponent `p`.
-
-The cyclotomic field is any `K` with `IsCyclotomicExtension {p} ℚ K`.
+**Kummer's theorem for regular primes.** Let $p$ be an odd prime and let $K$ be a $p$-th
+cyclotomic field over $\mathbb{Q}$ (a number field generated over $\mathbb{Q}$ by a primitive
+$p$-th root of unity). If $p$ does not divide the class number of $K$, then Fermat's Last Theorem
+holds for the exponent $p$: there are no positive integers $a, b, c$ with $a^p + b^p = c^p$.
 
 ## Depends on
 

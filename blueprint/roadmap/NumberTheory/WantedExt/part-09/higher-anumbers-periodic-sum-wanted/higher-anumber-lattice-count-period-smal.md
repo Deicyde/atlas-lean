@@ -5,22 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberLatticeCount_period_small_d
 ---
 
-# Higher ANumber Lattice Count period small d
+# Period of higher $a$-numbers for $d = 1$ or $d = 2$
 
-When `d = 1` or `d = 2`: (i) `λ_r = 0`, and (ii) the minimal period of `a^r(X_n)` is
-`L_{γ^{-1}}` if that is odd, and `L_{γ^{-1}}` or `L_{γ^{-1}}/2` if it is even. Stated with
-`a^r(X_n)` replaced by the Theorem 1 lattice expression: the remainder
-`ν(n) = a^r(X_n) - ½ (τ^{-1} - γ^{-1}) p^{2n}` (no linear term, which is (i)) is periodic for
-`n ≥ D_{γ^{-1}}` with period `L_{γ^{-1}}`, and every eventual period `L'` of it satisfies
-`L_{γ^{-1}} ∣ 2 L'` (together, (ii)).
+**Period of higher $a$-numbers for $d = 1$ or $d = 2$.** Let $p$ be a prime, let $d$ be $1$
+or $2$ with $d \mid p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
+$\gamma = ((p - 1) r + (p + 1))/d$, and for each natural number $n$ let $A_r(n)$ be the
+lattice-point count for the $r$-th higher $a$-number at level $n$ and
+$R(n) = A_r(n) - \frac{1}{2} (\tau^{-1} - \gamma^{-1}) p^{2n}$. Let $L$ be the period and $D$ the
+delay of the base-$p$ expansion of $\gamma^{-1}$. Then $R(n + L) = R(n)$ for every natural number
+$n \ge D$, and $L \mid 2L'$ for all natural numbers $L' > 0$ and $N$ such that
+$R(n + L') = R(n)$ for every $n \ge N$.
+
+In particular $R$ has no linear term in $n$, and its minimal eventual period is $L$ when $L$ is
+odd and $L$ or $L/2$ when $L$ is even.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PPeriod](base-pperiod.md)
-- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
+- [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

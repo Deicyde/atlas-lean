@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isRecurrentSeq_constantTerm_mod_prime
 ---
 
-# Is Recurrent Seq constant Term mod prime
+# Recurrence of constant-term sequences modulo a prime
 
-If `p ∤ ct[P^{n₀}]` for some `n₀ > 0`, then `ct[P^n Q] mod p` is recurrent.
+**Recurrence of constant-term sequences modulo a prime.** Let $p$ be a prime and let $P$ and
+$Q$ be Laurent polynomials in $r$ variables with integer coefficients; write $\mathrm{ct}[F]$ for
+the constant term of a Laurent polynomial $F$. If $p \nmid \mathrm{ct}[P^{n_0}]$ for some
+$n_0 > 0$, then the sequence of residues $(\mathrm{ct}[P^n Q] \bmod p)_{n \ge 0}$ in
+$\mathbb{Z}/p\mathbb{Z}$ is recurrent.
 
 ## Depends on
 
-- [Is Recurrent Seq](is-recurrent-seq.md)
+- [Recurrent sequence](is-recurrent-seq.md)
 
 ## Sources
 

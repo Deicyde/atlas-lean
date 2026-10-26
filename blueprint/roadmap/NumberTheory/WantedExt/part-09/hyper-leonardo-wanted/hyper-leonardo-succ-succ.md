@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_succ_succ
 ---
 
-# Hyper Leonardo succ succ
+# Recurrence across consecutive orders of hyper-Leonardo numbers
 
-Proposition 3: `Le^{(r)}_n = Le^{(r)}_{n-1} + Le^{(r-1)}_n` for `r ≥ 1` and `n ≥ 1`
-(the cases `r = 0` or `n = 0` refer to undefined terms and are omitted).
+**Recurrence across consecutive orders of hyper-Leonardo numbers.** For all natural numbers
+$r \ge 1$ and $n \ge 1$, the hyper-Leonardo numbers $Le^{(r)}_n$ satisfy
+$Le^{(r)}_n = Le^{(r)}_{n-1} + Le^{(r-1)}_n$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem690Wanted.IsKthSmallestPrimeFactor
 ---
 
-# Is Kth Smallest Prime Factor
+# The $k$-th smallest prime factor
 
-`IsKthSmallestPrimeFactor k n p`: `p` is the `k`-th smallest prime
-factor of `n` (`p ∈ primeFactors n` with exactly `k - 1` prime factors
-below `p`).
+**The $k$-th smallest prime factor.** For natural numbers $k$, $n$ and $p$, $p$ is the $k$-th
+smallest prime factor of $n$ when $n \ne 0$, $p$ is a prime dividing $n$, and exactly $k - 1$
+primes dividing $n$ are smaller than $p$.
+
+For $k = 0$ the count $k - 1$ is read as $0$ (truncated subtraction), so $k = 0$ and $k = 1$
+agree.
 
 ## Depends on
 

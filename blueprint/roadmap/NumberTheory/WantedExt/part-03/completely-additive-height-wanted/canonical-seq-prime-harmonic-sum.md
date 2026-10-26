@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.canonicalSeq_primeHarmonicSum
 ---
 
-# Canonical Seq prime Harmonic Sum
+# Prime-harmonic growth of the canonical sequential realization
 
-Theorem 5 (prime-harmonic growth for the canonical sequential model): if `Π_k ∼ C k^α` with
-`C, α > 0` and `m = π(x)`, then `S_seq(x) = ∑_{p ≤ x} H_seq(p)/p ∼ (α / C^{1/α}) m^{1/α} / log m`,
-and `S_seq(x) ≍ x^{1/α} / (log x)^{1+1/α}`.
+**Prime-harmonic growth of the canonical sequential realization.** Let $(\pi_k)_{k \ge 1}$ be
+a sequence of nonnegative integers with partial sums $\Pi_k = \sum_{1 \le j \le k} \pi_j$, let
+$H_{\mathrm{seq}}$ be its canonical sequential realization, and suppose that $C > 0$ and
+$\alpha > 0$ are real numbers with $\Pi_k \sim C k^\alpha$ as $k \to \infty$. Write
+$S(x) = \sum_{p \le x} H_{\mathrm{seq}}(p)/p$, the sum over primes $p \le x$, and let $m(x)$ be
+the number of primes $p \le x$. Then, as $x \to \infty$ over the reals,
+$S(x) \sim \frac{\alpha}{C^{1/\alpha}} \cdot \frac{m(x)^{1/\alpha}}{\log m(x)}$ and
+$S(x) = \Theta\bigl(x^{1/\alpha} / (\log x)^{1+1/\alpha}\bigr)$, where $f = \Theta(g)$ means
+$f = O(g)$ and $g = O(f)$.
 
 ## Depends on
 
-- [Canonical Seq Height](canonical-seq-height.md)
-- [Profile Partial Sum](profile-partial-sum.md)
+- [Canonical sequential realization of a profile](canonical-seq-height.md)
+- [Cumulative profile](profile-partial-sum.md)
 
 ## Sources
 

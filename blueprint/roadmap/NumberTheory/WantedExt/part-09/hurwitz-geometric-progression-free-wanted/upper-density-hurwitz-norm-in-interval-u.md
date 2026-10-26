@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.upperDensity_hurwitz_norm_in_interval_union
 ---
 
-# Upper Density hurwitz norm in interval union
+# Upper density of Hurwitz quaternions with norms in a lacunary union of intervals
 
-Let `T_N` be the set of positive integers in
-`(N/48, N/45] ∪ (N/40, N/36] ∪ (N/32, N/27] ∪ (N/24, N/12] ∪ (N/9, N/8] ∪ (N/4, N]` and let
-`𝒮 = ⋃_{i ≥ 1} T_{N_i}` with `N_i = 48^{2^i}`. Then the upper density of `S(𝒮)` in `Q_Hur` is
-`17665627/18662400`.
+**Upper density of Hurwitz quaternions with norms in a lacunary union of intervals.** Let
+$Q_{\mathrm{Hur}}$ be the set of Hurwitz quaternions, the rational quaternions whose four
+coordinates are all integers or all lie in $\mathbb{Z} + \tfrac12$, and let $\mathrm{Nm}(q)$ be
+the sum of the squares of the coordinates of $q$. For $N \in \mathbb{N}$ let $S(N)$ be the set of
+nonzero $q \in Q_{\mathrm{Hur}}$ with $\mathrm{Nm}(q) \le N$, and define the upper density of a
+set $A$ of quaternions as $\limsup_{N \to \infty} |A \cap S(N)| / |S(N)|$. For a natural number
+$M$ let $T_M$ be the set of positive integers in $(M/48, M/45] \cup (M/40, M/36] \cup
+(M/32, M/27] \cup (M/24, M/12] \cup (M/9, M/8] \cup (M/4, M]$, and let
+$\mathcal{S} = \bigcup_{i \ge 1} T_{N_i}$ with $N_i = 48^{2^i}$. Then the set of
+$q \in Q_{\mathrm{Hur}}$ with $\mathrm{Nm}(q) \in \mathcal{S}$ has upper density
+$17665627/18662400$.
 
 ## Depends on
 

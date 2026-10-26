@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardoP
 ---
 
-# Hyper Leonardo P
+# Hyper Leonardo $p$-numbers
 
-The hyper Leonardo `p`-numbers
-`𝓛^{(k)}_{p,n} = (p + 1) ∑_{i=0}^{⌊n/(p+1)⌋} C(n + k - pi, i + k) - p C(n + k, k)`.
+**Hyper Leonardo $p$-numbers.** For natural numbers $p$, $n$ and $k$, the hyper Leonardo
+$p$-number is the integer
+
+$$\mathcal{L}^{(k)}_{p,n} = (p + 1) \sum_{i=0}^{\lfloor n/(p+1) \rfloor}
+\binom{n + k - pi}{i + k} - p \binom{n + k}{k}.$$
 
 ## Depends on
 

@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.rankinSelbergCoeff_apply
 ---
 
-# Rankin Selberg Coeff apply
+# Rankin–Selberg coefficients as a sum over square divisors
 
-Unfolding `λ_{f×f}(n) = ∑_{d ∣ n, d a square} λ_f(n/d)²`.
+**Rankin–Selberg coefficients as a sum over square divisors.** Let $f$ be a cusp form of
+weight $k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients
+$\lambda_f$ and Rankin–Selberg coefficients $\lambda_{f \times f}$. For every natural number $n$,
+$\lambda_{f \times f}(n) = \sum_d \lambda_f(n/d)^2$, where $d$ runs over the positive divisors of
+$n$ that are perfect squares (so the sum is empty when $n = 0$).
 
 ## Depends on
 
-- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
-- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+- [Normalized Fourier coefficients of a cusp form](cusp-form-normalized-coeff.md)
+- [Rankin–Selberg coefficients](rankin-selberg-coeff.md)
 
 ## Sources
 

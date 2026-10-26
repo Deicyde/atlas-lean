@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.josephusThreeFixedPoint
 ---
 
-# Josephus Three Fixed Point
+# Enumeration of the positive fixed points of $J_3$
 
-The zero-indexed increasing enumeration of positive fixed points of `josephus 3`;
-`josephusThreeFixedPoint ℓ` is the paper's `n_p^{(ℓ+1)}`.
+**Enumeration of the positive fixed points of $J_3$.** Let $J_3$ be the Josephus function
+with step $3$. For $\ell \in \mathbb{N}$, $n_\ell$ is the $\ell$-th element, in increasing order
+and counting from $\ell = 0$, of the set of natural numbers $n \ge 1$ with $J_3(n) = n$. Thus
+$n_\ell$ is the paper's $n_p^{(\ell+1)}$.
+
+If this set has at most $\ell$ elements, then $n_\ell = 0$ by convention.
 
 ## Depends on
 

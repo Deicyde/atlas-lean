@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsNormalizedHeckeEigenform
 ---
 
-# Is Normalized Hecke Eigenform
+# Normalized Hecke eigenform
 
-A level-one cusp form `f` lies in `H_k^*` (is a normalized Hecke eigenform) when
-`λ_f(1) = 1` and its normalized coefficients satisfy the Hecke relation (1) of the paper,
-`λ_f(m) λ_f(n) = ∑_{d ∣ (m,n)} λ_f(mn/d²)`. At level one this is equivalent to `f` being a
-simultaneous eigenform of all Hecke operators normalized by `a_f(1) = 1`.
+**Normalized Hecke eigenform.** Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
+$\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients $\lambda_f$. Then $f$ is a
+normalized Hecke eigenform when $\lambda_f(1) = 1$ and, for all positive integers $m$ and $n$,
+$\lambda_f(m) \lambda_f(n) = \sum_{d \mid \gcd(m, n)} \lambda_f(mn/d^2)$, the sum running over the
+positive divisors $d$ of $\gcd(m, n)$. The set of these forms is denoted $H_k^*$.
+
+At level one this is equivalent to $f$ being a simultaneous eigenform of all Hecke operators
+normalized by $a_f(1) = 1$, where $f(z) = \sum_{n \ge 0} a_f(n) e^{2\pi i n z}$ is the
+$q$-expansion of $f$.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Normalized Fourier coefficients of a cusp form](cusp-form-normalized-coeff.md)
 
 ## Sources
 

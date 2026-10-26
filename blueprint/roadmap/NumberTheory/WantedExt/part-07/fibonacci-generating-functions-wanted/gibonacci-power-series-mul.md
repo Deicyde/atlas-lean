@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_powerSeries_mul
 ---
 
-# Gibonacci power Series mul
+# Generating series of a Gibonacci sequence
 
-The generating series identity: multiplying the Gibonacci power
-series by `1 - X - X ^ 2` leaves the linear polynomial `a + (b - a) X`.
-This is the product form of the paper's displayed quotient
-`G(x) = ((b - a) x + a) / (1 - x - x ^ 2)`.
+**Generating series of a Gibonacci sequence.** Let $a$ and $b$ be integers and let
+$(G_n)_{n \ge 0}$ be the Gibonacci sequence with $G_0 = a$ and $G_1 = b$. In the ring
+$\mathbb{Q}[[X]]$ of formal power series with rational coefficients,
+
+$$(1 - X - X^2) \sum_{n \ge 0} G_n X^n = a + (b - a) X.$$
+
+This is the product form of the quotient $\frac{(b - a)x + a}{1 - x - x^2}$ for the generating
+function of $(G_n)$.
 
 ## Depends on
 

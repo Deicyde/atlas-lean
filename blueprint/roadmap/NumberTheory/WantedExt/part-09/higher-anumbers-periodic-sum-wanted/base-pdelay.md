@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.basePDelay
 ---
 
-# Base PDelay
+# Delay of the base-$p$ expansion
 
-The delay `D_x = -v_p(x)` of the base-`p` expansion of `x`; Lemma 2
-(`basePDigit_eventually_periodic_iff`) identifies it with the minimal delay.
+**Delay of the base-$p$ expansion.** For a natural number $p$ and a rational number $x$, the
+delay of the base-$p$ expansion of $x$ is $D_x = -v_p(x)$, where $v_p$ is the $p$-adic valuation
+(with $v_p(0) = 0$).
+
+For prime $p$ and $x > 0$, Lemma 2 of the source identifies $D_x$ with the minimal delay of the
+base-$p$ digits of $x$.
 
 ## Depends on
 

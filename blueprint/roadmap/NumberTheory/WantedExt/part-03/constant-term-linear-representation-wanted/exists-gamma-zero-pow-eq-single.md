@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_gammaZero_pow_eq_single
 ---
 
-# Exists gamma Zero pow eq single
+# Powers of $\gamma(0)$ modulo $p$ stabilize at a matrix unit
 
-Eventually `γ(0)^{s'} = e_{C,C}` over `𝔽_p`, where `γ(0)_{i,j} = a^0_{i-pj} = [i = p j]`
-on `T = [-m, m]^r` and `C` is the index of the constant monomial.
+**Powers of $\gamma(0)$ modulo $p$ stabilize at a matrix unit.** Let $p$ be a prime, let
+$r, m \ge 0$ be natural numbers, let $T = \{-m, \dots, m\}^r \subseteq \mathbb{Z}^r$, and let
+$\gamma(0)$ be the $T \times T$ matrix over $\mathbb{Z}/p\mathbb{Z}$ whose $(i, j)$ entry is $1$
+if $i = p j$ and $0$ otherwise. Then there is $s \in \mathbb{N}$ such that for every $s' \ge s$,
+$\gamma(0)^{s'}$ is the matrix whose $(0, 0)$ entry is $1$ and whose other entries are $0$.
 
 ## Depends on
 

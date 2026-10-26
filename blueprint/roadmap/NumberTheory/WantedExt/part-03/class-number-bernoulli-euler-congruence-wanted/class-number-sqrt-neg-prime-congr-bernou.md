@@ -5,19 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.classNumber_sqrt_neg_prime_congr_bernoulli_euler
 ---
 
-# Class Number sqrt neg prime congr bernoulli euler
+# Class number congruences for $\mathbb{Q}(\sqrt{-p})$
 
-Classical congruence for the class number `h(-p)` of the imaginary quadratic field
-`ℚ(√-p)`, `p > 3` prime: `h(-p) ≡ -2 B_{(p+1)/2} (mod p)` when `p ≡ 3 (mod 4)`, and
-`h(-p) ≡ 2⁻¹ E_{(p-1)/2} (mod p)` when `p ≡ 1 (mod 4)`, where `Bₙ` are the Bernoulli numbers
-(`t/(eᵗ - 1)`) and `Eₙ` the Euler numbers (`2/(eᵗ + e⁻ᵗ)`).
+**Class number congruences for $\mathbb{Q}(\sqrt{-p})$.** Let $p > 3$ be a prime and let $K$
+be a number field of degree $2$ over $\mathbb{Q}$ that contains a square root of $-p$, with class
+number $h$. Let $B_n$ be the Bernoulli numbers, $t/(e^t - 1) = \sum_n B_n t^n/n!$, and $E_n$ the
+Euler numbers, $2/(e^t + e^{-t}) = \sum_n E_n t^n/n!$ (so $E_2 = -1$). If $p \equiv 3 \pmod 4$,
+then $p$ divides the numerator, in lowest terms, of the rational number $h + 2B_{(p+1)/2}$. If
+$p \equiv 1 \pmod 4$, then $p$ divides the integer $2h - E_{(p-1)/2}$.
 
-The field is any number field `K` of degree `2` containing a square root of `-p`. `Bₙ` is
-Mathlib's `bernoulli` (it agrees with `bernoulli'` at the even index `(p+1)/2 ≥ 4`), and
-`E_{(p-1)/2}` is `chapter5EulerEven ((p-1)/4)` (`chapter5EulerEven m = E_{2m}`). The first
-congruence is stated as `p ∣ num(h + 2 B_{(p+1)/2})`; the denominator of `B_{(p+1)/2}` is
-prime to `p` for `p > 3` (von Staudt-Clausen), so this is the congruence in `ℤ_(p)`. The second
-is stated as `p ∣ 2h - E_{(p-1)/2}`, equivalent since `p` is odd.
+Since the denominator of $B_{(p+1)/2}$ is prime to $p$ for $p > 3$ (von Staudt–Clausen) and $p$
+is odd, these are the congruences $h \equiv -2B_{(p+1)/2} \pmod p$ and
+$h \equiv E_{(p-1)/2}/2 \pmod p$.
 
 ## Depends on
 

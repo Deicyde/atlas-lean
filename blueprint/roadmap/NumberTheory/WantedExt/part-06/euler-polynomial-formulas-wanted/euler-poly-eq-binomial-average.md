@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_binomial_average
 ---
 
-# Theorem 4.1
+# Euler polynomials as alternating sums of shifted powers
 
-**Theorem 4.1**: for `m ≥ 2` and `n ≤ 2m + 1`,
-`E_n(x) = ∑_{k=0}^m (-1)^k (m + 1 choose k + 1) / 2^k
-  ∑_{j=0}^k (k choose j) (x + j - (k + 1) / 2)^n`.
+**Euler polynomials as alternating sums of shifted powers.** Let $E_n(x)$ denote the Euler
+polynomial. For all natural numbers $m \ge 2$ and $n \le 2m + 1$,
+$E_n(x) = \sum_{k=0}^{m} \frac{(-1)^k}{2^k} \binom{m+1}{k+1}
+\sum_{j=0}^{k} \binom{k}{j} \left(x + j - \frac{k+1}{2}\right)^n$
+as polynomials in $x$ with rational coefficients.
 
 ## Depends on
 
-- [Euler Poly](euler-poly.md)
+- [Euler polynomials](euler-poly.md)
 
 ## Sources
 

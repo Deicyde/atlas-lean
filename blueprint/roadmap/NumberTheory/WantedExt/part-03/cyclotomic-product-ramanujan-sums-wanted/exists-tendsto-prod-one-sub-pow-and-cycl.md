@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.exists_tendsto_prod_one_sub_pow_and_cyclotomicHat_zeta
 ---
 
-# Exists tendsto prod one sub pow and cyclotomic Hat zeta
+# A zeta-twisted cyclotomic product identity
 
-Zeta-twisted companion of Theorem 1: for real `s > 1` and `‖z‖ < 1`,
-`∏_{i ≥ 1} (1 - z^i)^{-1/i^s} = ∏_{i ≥ 1} Φ̂ᵢ(z)^{-ζ(s)/i^s}`, written as: the partial products of
-both sides (ordered by `i`) converge to one common limit. Powers use the branches of Theorem 1:
-the principal logarithm for `(1 - zⁱ)` and `∑_ζ log(1 - z ζ)` for `Φ̂ᵢ(z)`, each `0` at `z = 0`.
+**A zeta-twisted cyclotomic product identity.** For $n \ge 1$ and complex $z$, let
+$\hat\Phi_n(z) = \prod_\omega (1 - z\omega)$, the product over the primitive $n$-th roots of
+unity $\omega$. Let $z$ be a complex number with $|z| < 1$, let $s > 1$ be real, and let
+$\zeta$ be the Riemann zeta function. Then
 
-The exponent `-ζ(s)/i^s` follows the arXiv version (arXiv:2511.16975, Theorem 2.2). The garbled
-record shows `-ζ(s)/i` with a stray `s`, which is the misplaced exponent of `i^s`. Read literally,
-the right side would be `1` by Theorem 1 while the left side is not.
+$$
+\prod_{i \ge 1} (1 - z^i)^{-1/i^s} = \prod_{i \ge 1} \hat\Phi_i(z)^{-\zeta(s)/i^s}
+$$
+
+in the sense that, as $N \to \infty$, the partial products over $1 \le i \le N$ of both sides
+converge to a common limit. Here $(1 - z^i)^{-1/i^s} = \exp(-i^{-s} \log(1 - z^i))$ and
+$\hat\Phi_i(z)^{-\zeta(s)/i^s} = \exp(-\zeta(s) \, i^{-s} \sum_\omega \log(1 - z\omega))$, where
+$\log$ is the principal branch of the logarithm.
+
+The exponent $-\zeta(s)/i^s$ follows arXiv:2511.16975, Theorem 2.2. The INTEGERS record shows
+$-\zeta(s)/i$; with that exponent the right side would equal $1$ by the constancy of
+$\prod_{n \ge 1} \hat\Phi_n(z)^{-1/n}$, while the left side does not.
 
 ## Depends on
 

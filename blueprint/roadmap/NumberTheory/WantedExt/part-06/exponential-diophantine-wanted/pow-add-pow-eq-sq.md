@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ExponentialDiophantineWanted.pow_add_pow_eq_sq
 ---
 
-# Theorem 6
+# Solutions of $p^x + (p + a)^y = z^2$ for odd primes $p$ and $p + a$
 
-**Theorem 6**: the Diophantine equation
-`p^x + (p + a)^y = z^2`, where `a ≡ 0 (mod 4)` and
-`a ≡ -1 (mod p)`, has no solution other than
-`(x, y, z) = (0, 1, √(p + a + 1))` when `p + a + 1` is a
-perfect square, provided `p ≠ 3` and `p`, `p + a` are
-both odd primes.
+**Solutions of $p^x + (p + a)^y = z^2$ for odd primes $p$ and $p + a$.** Let $p$ be a
+prime with $p \ne 2$ and $p \ne 3$, and let $a$ be a natural number such that $p + a$ is
+prime, $a \equiv 0 \pmod 4$ and $p$ divides $a + 1$. If natural numbers $x$, $y$ and $z$
+satisfy $p^x + (p + a)^y = z^2$, then $x = 0$, $y = 1$ and $z^2 = p + a + 1$.
 
 ## Depends on
 

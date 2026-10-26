@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_form_two
 ---
 
-# Bisector equation form two
+# Parametric rational solutions of the bisector equation
 
-Converse of Theorem 1(i): for integers `l, m, n` with `|l| ≠ |m|`, `l m ≠ n²`, `l m n ≠ 0`,
-both triples of Form (2) solve `(a - c)² (b² + 1) = (b - c)² (a² + 1)`.
+**Parametric rational solutions of the bisector equation.** Let $l, m, n$ be integers with
+$|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$, and put
+
+$$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n}.$$
+
+Then each of the rational numbers
+
+$$c = \frac{l m - n^2}{(l + m) n} \qquad \text{and} \qquad c = -\frac{(l + m) n}{l m - n^2}$$
+
+satisfies $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$.
 
 ## Depends on
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.multiplePolylog
 ---
 
-# Multiple Polylog
+# Multiple polylogarithm
 
-The multiple polylogarithm
-`Li_k(z) = ∑_{0 < m₁ < ⋯ < m_r} z^{m_r} / (m₁^{k₁} ⋯ m_r^{k_r}) ∈ ℝ[[z]]`.
+**Multiple polylogarithm.** For a finite sequence $k = (k_1, \dots, k_r)$ of natural numbers
+with $r \ge 1$, the multiple polylogarithm is the formal power series
+
+$$\mathrm{Li}_k(z) = \sum_{0 < m_1 < \cdots < m_r} \frac{z^{m_r}}{m_1^{k_1} \cdots m_r^{k_r}}$$
+
+in $\mathbb{R}[[z]]$; for the empty sequence it is the constant series $1$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Multiple Polylog Coeff Rev](multiple-polylog-coeff-rev.md)
+- [Coefficient recursion for multiple polylogarithms](multiple-polylog-coeff-rev.md)
 
 ## Sources
 

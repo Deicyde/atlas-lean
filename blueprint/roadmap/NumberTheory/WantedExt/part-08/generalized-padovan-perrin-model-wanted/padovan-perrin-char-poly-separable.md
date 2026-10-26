@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_charPoly_separable
 ---
 
-# Padovan Perrin char Poly separable
+# Simple roots of the Padovan–Perrin characteristic polynomial
 
-For positive integers `k₁, k₂, p, s` with `p ≥ 2`, `k₁² < k₂` and `p < s`, the characteristic
-polynomial `P(z) = z^{s+p} - k₁ z^p - k₂` of the `([k]; p; s)`-generalized Padovan–Perrin
-recurrence has only simple roots (stated as separability over `ℂ`; `k₂ > 0` and `s > 0` follow
-from the other hypotheses).
+**Simple roots of the Padovan–Perrin characteristic polynomial.** Let $k_1, k_2, p, s$ be
+natural numbers with $k_1 > 0$, $p \ge 2$, $p < s$ and $k_1^2 < k_2$. Then the characteristic
+polynomial $P(z) = z^{s+p} - k_1 z^p - k_2$ of the $([k]; p; s)$-generalized Padovan–Perrin
+recurrence is separable over $\mathbb{C}$, that is, it has only simple roots.
+
+The hypotheses force $k_2 > 0$ and $s > 0$.
 
 ## Depends on
 

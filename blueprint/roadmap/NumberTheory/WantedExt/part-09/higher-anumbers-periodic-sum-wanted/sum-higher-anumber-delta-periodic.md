@@ -5,25 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.sum_higherANumberDelta_periodic
 ---
 
-# Sum higher ANumber Delta periodic
+# Eventual periodicity of the $\delta$ sums
 
-Suppose `x_D = τ_D`. Then `F_{x^{-1}}(e)` is periodic for `e ≥ D_{x^{-1}} + 1` with period
-`L_{x^{-1}}`, and for `n ≥ D_{x^{-1}}`,
-`∑_{i=1}^{⌊x^{-1} p^n⌋} δ(i) = ½ x^{-1} (1 - 1/τ_D) p^n +
-(F̄_{x^{-1}} - x̄^{-1}/(2p) (1 - 1/τ_D)) n + B_{x^{-1}}(n)` for a function `B_{x^{-1}}` periodic
-for `n ≥ D_{x^{-1}}` with period `L_{x^{-1}}`. `F̄` is the average of `F` over `L_{x^{-1}}`
-consecutive indices from `max(D_{x^{-1}} + 1, 0)`; the paper's explicit `B` (Equation (6)) is
-replaced by an existential.
+**Eventual periodicity of the $\delta$ sums.** Let $p$ be a prime and $d$ a divisor of
+$p - 1$; let $\delta$ be the rounding indicator, $\tau_D$ the denominator of $\tau = (p + 1)/d$
+in lowest terms, and $F_y(e)$ the $\delta_0$ correction sum of Lemma 9. Let $x$ be a positive
+rational such that the prime-to-$p$ part $x_D$ of the denominator of $x$ equals $\tau_D$, and
+write $D = D_{x^{-1}}$, $L = L_{x^{-1}}$ and $\overline{x^{-1}}$ for the delay, the period and
+the average repeating digit of the base-$p$ expansion of $x^{-1}$. Then
+$F_{x^{-1}}(e + L) = F_{x^{-1}}(e)$ for every natural number $e \ge D + 1$. Moreover, with
+$s = \max(D + 1, 0)$ and $\bar F = \frac{1}{L} \sum_{e=s}^{s+L-1} F_{x^{-1}}(e)$, there is a
+function $B : \mathbb{N} \to \mathbb{Q}$ with $B(n + L) = B(n)$ for every natural number
+$n \ge D$ such that for every natural number $n \ge D$,
+
+$$\sum_{i=1}^{\lfloor p^n/x \rfloor} \delta(i) =
+\frac{1}{2} x^{-1} \left(1 - \frac{1}{\tau_D}\right) p^n +
+\left(\bar F - \frac{\overline{x^{-1}}}{2p} \left(1 - \frac{1}{\tau_D}\right)\right) n + B(n).$$
+
+The paper's explicit $B$ (Equation (6)) is replaced by an existential.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit Average](base-pdigit-average.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Average repeating digit](base-pdigit-average.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 - [Delta Zero Sum Correction](delta-zero-sum-correction.md)
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Prime To PDen](prime-to-pden.md)
-- [Tau Den](tau-den.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [Prime-to-$p$ part of the denominator](prime-to-pden.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

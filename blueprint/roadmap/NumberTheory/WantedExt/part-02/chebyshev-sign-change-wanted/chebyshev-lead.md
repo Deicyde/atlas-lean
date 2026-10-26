@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ChebyshevSignChangeWanted.NumberTheory.ChebyshevSignChangeProblem.chebyshevLead
 ---
 
-# Chebyshev Lead
+# The set where primes $\equiv 3 \pmod 4$ lead
 
-The set of `n` for which there are strictly more primes `≡ 3 mod 4`
-than primes `≡ 1 mod 4` in `{2, 3, …, n}`.
+**The set where primes $\equiv 3 \pmod 4$ lead.** This is the set of natural numbers $n$
+for which the number of primes $p \le n$ with $p \equiv 3 \pmod 4$ is strictly greater than the
+number of primes $p \le n$ with $p \equiv 1 \pmod 4$.
 
 ## Depends on
 

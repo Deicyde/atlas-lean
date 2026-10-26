@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.polyNorm
 ---
 
-# Poly Norm
+# The polynomial norm $q^{\deg f}$ over a finite field
 
-The norm `|f| = q^{deg f}` of a polynomial over a finite field with `q` elements, with
-`|0| = 0`.
+**The polynomial norm $q^{\deg f}$ over a finite field.** Let $F$ be a finite field with
+$q$ elements. The norm of a polynomial $f \in F[X]$ is the real number $|f| = q^{\deg f}$ if
+$f \neq 0$, and $|0| = 0$.
 
 ## Depends on
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.strictlyPrimitive_pow
 ---
 
-# Strictly Primitive pow
+# Powers of strictly primitive solutions
 
-Powers of strictly primitive solutions: for an odd prime `p` and `m, n > 0`, if
-`a ∈ ℤ[√d]` has `|N(a)| = p^m` with `re a` and `d · im a` coprime, then `a^n` is a strictly
-primitive solution of `|x² - d y²| = p^{m n}` (14).
+**Powers of strictly primitive solutions.** Let $d > 1$ be a square-free integer, $p$ an odd
+prime, and $m, n > 0$ natural numbers. Write elements of $\mathbb{Z}[\sqrt{d}]$ as $u + v\sqrt{d}$
+with integers $u, v$, and let $N(u + v\sqrt{d}) = u^2 - d v^2$ be the norm. If
+$a = u + v\sqrt{d}$ satisfies $|N(a)| = p^m$ with $u$ and $d v$ coprime, then
+$a^n = u' + v'\sqrt{d}$ satisfies $|N(a^n)| = p^{mn}$ with $u'$ and $d v'$ coprime; that is, $a^n$
+gives a strictly primitive solution of $|x^2 - d y^2| = p^{mn}$.
 
-Deviation: `p ≠ 2` is added. For `p = 2` the statement is false as printed: `d = 3`,
-`a = 1 + √3` (`N(a) = -2`), `n = 2` gives `a² = 4 + 2√3` with `gcd(4, 6) = 2`. The sign `±` in
-(14) is dropped.
+The source states this without $p \ne 2$, and it fails for $p = 2$: for $d = 3$ and
+$a = 1 + \sqrt{3}$ we have $N(a) = -2$, but $a^2 = 4 + 2\sqrt{3}$ and $\gcd(4, 6) = 2$. The sign
+$\pm$ in the source's equation (14) is dropped.
 
 ## Depends on
 

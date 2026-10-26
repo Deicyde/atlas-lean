@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.nthNonValue_sq_two
 ---
 
-# Nth Non Value sq two
+# The second non-square
 
-Characteristic value: the second positive non-square is `3`.
+**The second non-square.** The second smallest positive integer that is not the square of a
+positive integer is $3$; that is, the second non-value of $m \mapsto m^2$ is $3$.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gaussKuzmin_string_frequency
 ---
 
-# Gauss Kuzmin string frequency
+# Generalized Gauss–Kuzmin theorem
 
-Generalized Gauss-Kuzmin theorem: for almost every real `x` and every string `a` of positive
-integers, the frequency of the indices `i` with `a_{i+1}(x) = a₁, …, a_{i+n}(x) = aₙ` tends to
-`P_GK(a)`.
+**Generalized Gauss–Kuzmin theorem.** For a real number $x$, let $a_1(x), a_2(x), \dots$ be
+the partial denominators of the continued fraction expansion of $x$. For almost every real $x$,
+with respect to Lebesgue measure, the following holds: for every string $b = (b_1, \dots, b_n)$
+of positive integers, the number of indices $i \in \{0, \dots, N - 1\}$ such that
+$a_{i+j}(x) = b_j$ for all $j = 1, \dots, n$, divided by $N$, tends to the Gauss–Kuzmin measure
+$P_{GK}(b)$ as $N \to \infty$.
 
 ## Depends on
 
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

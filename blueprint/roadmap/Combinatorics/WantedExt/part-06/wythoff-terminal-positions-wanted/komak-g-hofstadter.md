@@ -18,7 +18,7 @@ as in the source's table of values; the value is corrected to $g(1) = 0$.
 
 ## Depends on
 
-- [Hofstadter F](../../../../NumberTheory/WantedExt/part-08/generalized-hofstadter-order-wanted/hofstadter-f.md)
+- [Generalized Hofstadter function](../../../../NumberTheory/WantedExt/part-08/generalized-hofstadter-order-wanted/hofstadter-f.md)
 - [The Komak sequence $g$](komak-g.md)
 
 ## Sources

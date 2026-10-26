@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.jacobi_eq_legendre_weighted_zero_sum
 ---
 
-# Jacobi eq legendre weighted zero sum
+# Weighted zero-sum criterion for the Jacobi–Legendre weights
 
-For squarefree `n` with every prime divisor at least seven, a prime divisor `p'`,
-`n' = n/p'`, and a sequence `S` in `ℤ_n` with at least two terms coprime to each prime
-divisor of `n`: if the image of `S` in `ℤ_{n'}` has at most one unit term, or some prime
-divisor of `n'` is coprime to at least three terms of `S`, then `S` is an
-`L(n;p')`-weighted zero-sum sequence.
+**Weighted zero-sum criterion for the Jacobi–Legendre weights.** Let $n$ be a squarefree
+natural number all of whose prime divisors are at least $7$, let $p'$ be a prime divisor of $n$,
+let $n' = n/p'$, and let $L(n;p')$ be the set of units $x$ of $\mathbb{Z}/n\mathbb{Z}$ whose Jacobi
+symbol $\left(\frac{x}{n}\right)$ equals the Legendre symbol $\left(\frac{x}{p'}\right)$. Let
+$(x_1, \dots, x_k)$ be a sequence in $\mathbb{Z}/n\mathbb{Z}$ such that for every prime divisor
+$p$ of $n$ at least two terms $x_i$ are not divisible by $p$. Suppose that at most one term $x_i$
+maps to a unit under the reduction map $\mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n'\mathbb{Z}$, or
+that for some prime divisor $p$ of $n'$ at least three terms $x_i$ are not divisible by $p$. Then
+there are weights $a_1, \dots, a_k \in L(n;p')$ with $a_1 x_1 + \dots + a_k x_k = 0$.
 
 ## Depends on
 

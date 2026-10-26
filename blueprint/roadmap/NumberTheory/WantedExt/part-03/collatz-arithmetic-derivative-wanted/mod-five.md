@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatibleSemiprimePair.mod_five
 ---
 
-# Mod five
+# Compatible semiprimes modulo 5
 
-For compatible semiprimes `pq` and `rs`, one of `p, q` is `≡ 1` and the other `≡ 4 (mod 5)`,
-and likewise for `r, s`.
+**Compatible semiprimes modulo 5.** Let $p, q, r, s$ be primes with $2(r + s) = p + q$ and
+$2rs = 3pq + 1$, so that the semiprimes $pq$ and $rs$ are compatible. Then one of $p, q$ is
+congruent to $1$ and the other to $4$ modulo $5$, and likewise one of $r, s$ is congruent to $1$
+and the other to $4$ modulo $5$.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

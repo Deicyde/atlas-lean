@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sq_dvd_pow_pow_add_one_wieferich
 ---
 
-# Sq dvd pow pow add one wieferich
+# Squared prime factors of generalized Fermat numbers
 
-For `a, b ≥ 2`, `n ≥ 0` and an odd prime `p` with `gcd(ab, p) = 1`, writing `p ∈ W(a)` (a
-Wieferich prime to base `a`) for `a^{p-1} ≡ 1 (mod p²)` (with `p ∤ a`, given here) and `ord_p(a)`
-for the order of `a` in `ZMod p`: (i) if `p² ∣ F_n(a, b)` then `p ∈ W(a)` and
-`ord_p(a) ∣ 2b^n`; (ii) if `p ∈ W(a)` and `ord_p(a) = 2b^n` then `p² ∣ F_n(a, b)`.
+**Squared prime factors of generalized Fermat numbers.** For natural numbers $a$, $b$ and $n$
+write $F_n(a, b) = a^{b^n} + 1$. Let $a, b \ge 2$, let $n$ be a natural number, let $p$ be an odd
+prime coprime to $ab$, and write $\operatorname{ord}_p(a)$ for the multiplicative order of $a$
+modulo $p$. If $p^2$ divides $F_n(a, b)$, then $a^{p-1} \equiv 1 \pmod{p^2}$ (that is, $p$ is a
+Wieferich prime to base $a$) and $\operatorname{ord}_p(a)$ divides $2b^n$. Conversely, if
+$a^{p-1} \equiv 1 \pmod{p^2}$ and $\operatorname{ord}_p(a) = 2b^n$, then $p^2$ divides $F_n(a, b)$.
 
 ## Depends on
 

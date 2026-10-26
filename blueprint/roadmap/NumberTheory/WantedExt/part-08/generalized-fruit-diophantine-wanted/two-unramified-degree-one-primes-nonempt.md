@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.twoUnramifiedDegreeOnePrimes_nonempty_iff_quadratic
 ---
 
-# Two Unramified Degree One Primes nonempty iff quadratic
+# Unramified degree-one primes above $2$ in quadratic fields
 
-For a square-free integer `t ≠ 1` and the quadratic field `K = ℚ(√t)`, the set `T_K` is
-nonempty if and only if `t ≡ 1 (mod 8)`.
+**Unramified degree-one primes above $2$ in quadratic fields.** Let $t \ne 1$ be a squarefree
+integer, and let $K$ be a number field of degree $2$ over $\mathbb{Q}$ that contains an element
+$\alpha$ with $\alpha^2 = t$, so that $K = \mathbb{Q}(\sqrt{t})$. Then the set $T_K$ of prime
+ideals of the ring of integers $\mathcal{O}_K$ above $2$ with ramification index $1$ and inertia
+degree $1$ is nonempty if and only if $t \equiv 1 \pmod{8}$.
 
 ## Depends on
 
-- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
+- [Unramified primes of degree one above $2$](two-unramified-degree-one-primes.md)
 
 ## Sources
 

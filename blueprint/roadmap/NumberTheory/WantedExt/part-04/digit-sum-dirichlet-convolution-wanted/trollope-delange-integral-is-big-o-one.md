@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.trollopeDelangeIntegral_isBigO_one
 ---
 
-# Trollope Delange Integral is Big O one
+# Delange's function is eventually bounded
 
-`g(x) = O(1)` as `x → ∞`.
+**Delange's function is eventually bounded.** For every natural number $q \ge 2$, Delange's
+function $g$ in base $q$ satisfies $g(x) = O(1)$ as $x \to +\infty$.
 
 ## Depends on
 
-- [Trollope Delange Integral](trollope-delange-integral.md)
+- [Delange's function](trollope-delange-integral.md)
 
 ## Sources
 

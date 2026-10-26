@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_initialRepetitions_eq_card_not_dvd_eq_card_count_le
 ---
 
-# Card initial Repetitions eq card not dvd eq card count le
+# Andrews' theorem on partitions with initial repetitions
 
-Andrews' theorem on partitions with initial `k`-repetitions (if some `j` appears at least
-`k` times, then every positive integer below `j` appears at least `k` times): for `k ≥ 1` their
-number equals the number of partitions of `n` into parts not divisible by `2k`, which equals the
-number of partitions of `n` in which no part appears more than `2k - 1` times.
+**Andrews' theorem on partitions with initial repetitions.** Let $k \ge 1$ and $n \ge 0$ be
+integers. Say that a partition has initial $k$-repetitions if, whenever a part $j$ appears at
+least $k$ times, every integer $i$ with $1 \le i < j$ appears at least $k$ times. Then the number
+of partitions of $n$ with initial $k$-repetitions equals the number of partitions of $n$ into parts
+not divisible by $2k$, and this number equals the number of partitions of $n$ in which no part
+appears more than $2k - 1$ times.
 
 ## Depends on
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.lt_sixteen_iff_prod_first_primes_lt
 ---
 
-# Lt sixteen iff prod first primes lt
+# Primorials below powers of sixteen
 
-For a positive integer `w`, `w < 16` if and only if the product of the first `w` primes is
-less than `16^w`.
+**Primorials below powers of sixteen.** For every positive integer $w$, we have $w < 16$ if and
+only if the product $p_1 p_2 \cdots p_w$ of the first $w$ primes is less than $16^w$.
 
 ## Depends on
 

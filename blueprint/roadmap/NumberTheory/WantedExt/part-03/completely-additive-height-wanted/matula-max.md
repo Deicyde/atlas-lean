@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.matulaMax
 ---
 
-# Matula Max
+# Gutman–Ivić maximal Matula numbers
 
-The Gutman-Ivić maximal Matula number `P(n)` for `n ≥ 4`: `P(4) = p₈` and
-`P(n) = p_{P(n-1)}`, i.e. `n - 3` nested applications of `i ↦ pᵢ` to `8`.
+**Gutman–Ivić maximal Matula numbers.** Write $p_i$ for the $i$-th prime, indexed from one
+($p_1 = 2$). For a natural number $n$, $P(n)$ is the result of applying $i \mapsto p_i$ to $8$
+exactly $n - 3$ times, so $P(4) = p_8$ and $P(n) = p_{P(n-1)}$ for $n \ge 5$. For $n \le 3$ there
+are no applications and $P(n) = 8$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nth Prime One](nth-prime-one.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

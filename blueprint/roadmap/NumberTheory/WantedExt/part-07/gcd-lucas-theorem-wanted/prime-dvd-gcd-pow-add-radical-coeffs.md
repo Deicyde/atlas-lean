@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_gcd_pow_add_radical_coeffs
 ---
 
-# Prime dvd gcd pow add radical coeffs
+# Common prime factors of $u^N + (-1)^{N+1} v$ and the coefficient gcd divide $N$
 
-For coprime `u, v`, `N ≥ 2` and `x^N - v` irreducible over `ℚ`, every prime dividing
-`gcd(u^N + (-1)^{N+1} v, D_n)` divides `N` (`n ≥ 1`): the gcd is `1` or a product of powers of
-primes dividing `N`. The section assumes `N ≥ 4`; `N = 2, 3` also hold (probe, and the paper's
-Theorems 17 and 18), while `N = 1` fails (`D_n = (u + v)^n`).
+**Common prime factors of $u^N + (-1)^{N+1} v$ and the coefficient gcd divide $N$.** Let
+$N \ge 2$, let $u, v$ be coprime natural numbers such that $x^N - v$ is irreducible over
+$\mathbb{Q}$, let $\theta = v^{1/N}$ be the nonnegative real $N$-th root of $v$, and let $a_{n,i}$
+(for natural $n$ and $0 \le i \le N - 1$) be integers with
+$(u + \theta)^n = \sum_{i=0}^{N-1} a_{n,i} \theta^i$ for every $n \ge 1$. Write $D_n$ for the
+nonnegative greatest common divisor of $a_{n,0}, \dots, a_{n,N-1}$. Then for every $n \ge 1$,
+every prime $p$ dividing $\gcd(u^N + (-1)^{N+1} v, D_n)$ divides $N$.
+
+The paper assumes $N \ge 4$; the cases $N = 2, 3$ also hold, while $N = 1$ fails, since then
+$D_n = (u + v)^n$.
 
 ## Depends on
 

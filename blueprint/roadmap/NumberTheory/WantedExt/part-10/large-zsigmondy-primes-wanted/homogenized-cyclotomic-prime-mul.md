@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic_prime_mul
 ---
 
-# Homogenized Cyclotomic prime mul
+# Homogenized cyclotomic values at $pn$
 
-For a prime `p` and a positive integer `n`: `Φ_{pn}(a, b) = Φ_n(aᵖ, bᵖ)` if `p ∣ n`, and
-`Φ_{pn}(a, b) · Φ_n(a, b) = Φ_n(aᵖ, bᵖ)` (the paper's quotient, cleared of its denominator)
-if `p ∤ n`, for all integers `a`, `b`.
+**Homogenized cyclotomic values at $pn$.** Let $p$ be a prime, $n$ a positive integer and
+$a, b$ integers, and write $\Phi_m(a, b)$ for the homogenized cyclotomic value. If $p \mid n$,
+then $\Phi_{pn}(a, b) = \Phi_n(a^p, b^p)$. If $p \nmid n$, then
+$\Phi_{pn}(a, b) \cdot \Phi_n(a, b) = \Phi_n(a^p, b^p)$.
+
+The paper states the case $p \nmid n$ as a quotient; here it is cleared of its denominator.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.finiteContFrac_singleton
 ---
 
-# Finite Cont Frac singleton
+# Continued fraction of length one
 
-`[a] = a`.
+**Continued fraction of length one.** For every integer $a$, the finite continued fraction
+$[a]$ has value $a$.
 
 ## Depends on
 
-- [Finite Cont Frac](finite-cont-frac.md)
+- [Value of a finite continued fraction](finite-cont-frac.md)
 
 ## Sources
 

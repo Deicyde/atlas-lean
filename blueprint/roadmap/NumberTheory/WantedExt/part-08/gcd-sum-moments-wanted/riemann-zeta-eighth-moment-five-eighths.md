@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_eighth_moment_five_eighths_le
 ---
 
-# Lemma 2
+# Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$
 
-**Lemma 2** (quoted from Ivić). `∫_{T/2}^T |ζ(5/8 + i t)|^8 dt ≪ T (log T)^{38}` for all
-sufficiently large `T`.
+**Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$.** There are real
+constants $C$ and $T_0$ such that for every real $T \ge T_0$,
+
+$$\int_{T/2}^{T} |\zeta(5/8 + it)|^8 \, dt \le C T (\log T)^{38}.$$
 
 ## Depends on
 

@@ -6,17 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.not_hasNontrivialSymmetry_nil
 ---
 
-# Not has Nontrivial Symmetry nil
+# The empty string has no nontrivial symmetry
 
-The empty string has no nontrivial symmetry.
+**The empty string has no nontrivial symmetry.** The empty string has no nontrivial symmetry.
 
 ## Depends on
 
-- [Has Nontrivial Symmetry](has-nontrivial-symmetry.md)
+- [Nontrivial symmetry of a string](has-nontrivial-symmetry.md)
 
 ## Proof depends on
 
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

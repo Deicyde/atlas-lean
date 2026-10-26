@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.alternatingSignFibonacci
 ---
 
-# Alternating Sign Fibonacci
+# Alternating-sign Fibonacci sequence
 
-The sequence `d` (OEIS A181716) with `d 0 = 0`, `d 1 = 1` and
-`d m = d (m - 1) + d (m - 2) + (-1) ^ m`.
+**Alternating-sign Fibonacci sequence.** The alternating-sign Fibonacci sequence
+(OEIS A181716) is the integer sequence $(d_m)_{m \ge 0}$ defined by $d_0 = 0$, $d_1 = 1$ and
+$d_{m+2} = d_{m+1} + d_m + (-1)^{m+2}$ for every natural number $m$.
 
 ## Depends on
 

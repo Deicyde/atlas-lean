@@ -4,5 +4,5 @@ navigation: module
 
 # Distinct Eisenstein Primes
 
-- [Lemma 2](exists-prime-mod-eq-five-between.md)
-- [Lemma 3](eq-sum-distinct-primes-mod-eq-five.md)
+- [Breusch's theorem for primes of the form $6k - 1$](exists-prime-mod-eq-five-between.md)
+- [Makowski's theorem on sums of distinct primes of the form $6k - 1$](eq-sum-distinct-primes-mod-eq-five.md)

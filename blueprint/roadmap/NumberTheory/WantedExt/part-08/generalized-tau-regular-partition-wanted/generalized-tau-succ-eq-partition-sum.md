@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_succ_eq_partition_sum
 ---
 
-# Generalized Tau succ eq partition sum
+# Partition formulas for the generalized tau function
 
-Binomial-weighted partition sums for `τ_k(n + 1)` and `τ_{-k}(n + 1)`: (a) the sum over
-partitions of `n` with every frequency `f ≤ k` of `∏ (-1)^f * C(k, f)`; (b) the sum over all
-partitions of `n` of `∏ C(f + k - 1, k - 1)`, the products running over the distinct parts.
+**Partition formulas for the generalized tau function.** Let $k \ge 1$ and $n \ge 0$ be natural
+numbers. For a partition $\lambda$ of $n$ and a part $a$ of $\lambda$, write $f_a$ for the number
+of times $a$ occurs in $\lambda$. Then
+
+$$\tau_k(n + 1) = \sum_{\lambda} \prod_{a} (-1)^{f_a} \binom{k}{f_a},$$
+
+where $\lambda$ runs over the partitions of $n$ with $f_a \le k$ for every part $a$ and the
+product runs over the distinct parts $a$ of $\lambda$, and
+
+$$\tau_{-k}(n + 1) = \sum_{\lambda} \prod_{a} \binom{f_a + k - 1}{k - 1},$$
+
+where $\lambda$ runs over all partitions of $n$ and the product again runs over the distinct parts
+$a$ of $\lambda$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

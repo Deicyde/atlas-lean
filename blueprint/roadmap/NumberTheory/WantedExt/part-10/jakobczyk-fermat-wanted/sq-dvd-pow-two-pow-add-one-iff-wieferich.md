@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sq_dvd_pow_two_pow_add_one_iff_wieferich
 ---
 
-# Sq dvd pow two pow add one iff wieferich
+# Squared prime factors of $a^{2^n} + 1$
 
-For an odd prime `p ∤ a`: `p² ∣ F_n(a, 2) = a^{2^n} + 1` if and only if
-`p ∈ W(a)` and `ord_p(a) = 2^{n+1}` (the source's `a ≥ 2` is dropped: at `a = 1` both sides are
-false). Membership `p ∈ W(a)` (Wieferich prime to base `a`) is written `a^{p-1} ≡ 1 (mod p²)`, the paper's equation (8); `ord_p(a)` is `orderOf (a : ZMod p)`.
+**Squared prime factors of $a^{2^n} + 1$.** Let $p$ be an odd prime, let $a$ be a natural
+number not divisible by $p$, and let $n$ be a natural number. Then $p^2$ divides $a^{2^n} + 1$ if
+and only if $a^{p-1} \equiv 1 \pmod{p^2}$ (that is, $p$ is a Wieferich prime to base $a$) and the
+multiplicative order of $a$ modulo $p$ is $2^{n+1}$.
+
+The congruence $a^{p-1} \equiv 1 \pmod{p^2}$ is the source's equation (8) defining $p \in W(a)$.
+The source assumes $a \ge 2$; for $a = 1$ both sides are false.
 
 ## Depends on
 

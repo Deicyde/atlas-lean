@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.multipleHurwitzZeta
 ---
 
-# Multiple Hurwitz Zeta
+# Multiple Hurwitz zeta function
 
-The multiple Hurwitz zeta function of order `r` at `a = 1`, by the Dirichlet series (2.2):
-`ζ_r(s) = ∑_{m ≥ 0} binom(m + r - 1, m) (m + 1)^{-s}`, convergent for `Re r < Re s`.
+**Multiple Hurwitz zeta function.** For complex numbers $r$ and $s$, the multiple Hurwitz zeta
+function of order $r$, with Hurwitz parameter $a = 1$, is the Dirichlet series
+
+$$\zeta_r(s) = \sum_{m \ge 0} \binom{m + r - 1}{m} (m + 1)^{-s},$$
+
+where $\binom{m + r - 1}{m} = r (r + 1) \cdots (r + m - 1) / m!$. The series converges for
+$\operatorname{Re} r < \operatorname{Re} s$.
 
 ## Depends on
 

@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.somos_tsum_asymptotic_expansion
 ---
 
-# Somos tsum asymptotic expansion
+# Sondow–Hadjicostas asymptotic expansion
 
-Theorem 15 (Sondow and Hadjicostas): for `k ≥ 2` let
-`a_{k,r} = ∑_{m_1 + 2 m_2 + ⋯ + r m_r = r} ∏_{j=1}^{r} (1 / m_j!)
-((-1)^{j-1} / j · A_j(k) / (k-1)^{j+1})^{m_j}`, where `A_j` is the Eulerian
-polynomial. Then `exp (∑_{m ≥ 1} log (m + n) / k^m) ∼ n^{1/(k-1)} (1 + ∑_{r ≥ 1} a_{k,r} / n^r)`
-as an asymptotic expansion: for every `R ≥ 0` the error after the terms `r ≤ R` is
-`O(n^{1/(k-1)} n^{-(R+1)})`. The Eulerian ratio is replaced by its defining series
-`A_j(k) / (k-1)^{j+1} = ∑_{m ≥ 1} m^j / k^m` (the paper's definition of `A_j`); the
-partition sum ranges over `m : Fin r → ℕ` with entries at most `r` (the constraint
-forces this), index `j` of `Fin r` standing for the paper's `j + 1`.
+**Sondow–Hadjicostas asymptotic expansion.** Let $k \ge 2$ be a natural number. For $j \ge 1$
+put $S_j = \sum_{i \ge 1} i^j / k^i$ and $b_j = (-1)^{j-1} S_j / j$, and for $r \ge 0$ let
+
+$$a_r = \sum_{m_1 + 2 m_2 + \dots + r m_r = r} \ \prod_{j=1}^{r} \frac{b_j^{m_j}}{m_j!},$$
+
+where the sum runs over the tuples $(m_1, \dots, m_r)$ of natural numbers satisfying the
+constraint. For $n \in \mathbb{N}$ let $E(n) = \exp\bigl(\sum_{s \ge 1} \log(s + n) / k^s\bigr)$
+and, for a natural number $R$, let $P_R(n) = 1 + \sum_{r=1}^{R} a_r / n^r$. Then for every
+natural number $R$,
+
+$$E(n) - n^{1/(k-1)} P_R(n) = O\bigl(n^{1/(k-1)} / n^{R+1}\bigr)$$
+
+as $n \to \infty$ through the natural numbers.
+
+In the paper $S_j$ appears as $A_j(k) / (k - 1)^{j+1}$, with $A_j$ the Eulerian polynomial.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.finrank_point_two_mul_mul_eq_three
 ---
 
-# Finrank point two mul mul eq three
+# Odd-rank curves y² = x³ − 2pqx: a rank three family
 
-Theorem 2, first part: if `p = 272r² + 120r + 9` and `q = 2p + 9 = 544r² + 240r + 27` are
-prime for a positive integer `r`, and the rank of `E(ℚ)` for `E : y² = x³ - 2pqx` is odd (the
-parity conjecture for `E`), then the rank is `3`.
+**Odd-rank curves y² = x³ − 2pqx: a rank three family.** Let $r$ be a positive integer such
+that $p = 272r^2 + 120r + 9$ and $q = 2p + 9 = 544r^2 + 240r + 27$ are both prime, and let $E$
+be the elliptic curve $y^2 = x^3 - 2pqx$ over $\mathbb{Q}$. If the rank of the group
+$E(\mathbb{Q})$ of rational points is odd, then it equals $3$.
+
+The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 ## Depends on
 

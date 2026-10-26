@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.nthPrimeOne
 ---
 
-# Nth Prime One
+# The $i$-th prime
 
-The `i`-th prime `pᵢ`, indexed from one: `p₁ = 2`.
+**The $i$-th prime.** For a natural number $i \ge 1$, $p_i$ denotes the $i$-th prime in
+increasing order, so that $p_1 = 2$. For $i = 0$ the definition also gives $p_0 = 2$.
 
 ## Depends on
 

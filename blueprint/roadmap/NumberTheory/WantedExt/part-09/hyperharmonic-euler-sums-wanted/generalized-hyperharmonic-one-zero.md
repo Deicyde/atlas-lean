@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHyperharmonic_one_zero
 ---
 
-# Generalized Hyperharmonic one zero
+# The value $H_1^{(r)}(0) = r$
 
-`H_1^{[r]}(0) = r`.
+**The value $H_1^{[r]}(0) = r$.** For every complex number $r$, the generalized
+hyperharmonic number $H_1^{[r]}(0)$ equals $r$.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
 
 ## Sources
 

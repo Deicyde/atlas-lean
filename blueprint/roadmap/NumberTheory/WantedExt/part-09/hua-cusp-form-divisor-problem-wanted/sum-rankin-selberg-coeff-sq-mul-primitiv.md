@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_rankinSelbergCoeff_sq_mul_primitive_character
 ---
 
-# Proposition 3.1
+# Sums of squared Rankin–Selberg coefficients twisted by a primitive character
 
-**Proposition 3.1.** Let `f ∈ H_k^*`, `χ` a primitive Dirichlet character modulo a prime
-`q`, and `η = 23/261`. For real `x ≥ 1` with `q ≤ x^η`,
-`∑_{n ≤ x} λ_{f×f}(n)² χ(n) = O_{f,ε}(q x^{1 - 3η/2 + ε})`, the implied constant depending only
-on `f` and `ε`. `q ≪ x^η` is read as `q ≤ x^η`.
+**Sums of squared Rankin–Selberg coefficients twisted by a primitive character.** Let $f$ be
+a level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let
+$\lambda_{f\times f}$ be its Rankin–Selberg coefficients, and put $\eta = 23/261$. For every
+$\varepsilon > 0$ there is a constant $C$ such that for every prime $q$, every primitive Dirichlet
+character $\chi$ modulo $q$ and every real $x \ge 1$ with $q \le x^{\eta}$,
+
+$$
+\Bigl|\sum_{1 \le n \le x} \lambda_{f\times f}(n)^2\,\chi(n)\Bigr| \le
+C\,q\,x^{1 - 3\eta/2 + \varepsilon}.
+$$
 
 ## Depends on
 
-- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
-- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+- [Normalized Hecke eigenform](is-normalized-hecke-eigenform.md)
+- [Rankin–Selberg coefficients](rankin-selberg-coeff.md)
 
 ## Sources
 

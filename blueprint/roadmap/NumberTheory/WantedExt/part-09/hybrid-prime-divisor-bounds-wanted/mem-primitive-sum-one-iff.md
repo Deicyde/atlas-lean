@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.mem_primitiveSum_one_iff
 ---
 
-# Mem primitive Sum one iff
+# Finite fields with a primitive element sum
 
-Primitive element sums for `n = 1` (Cohen, Oliveira e Silva, Sutherland and Trudgian),
-quoted in the source: a prime power `q` lies in `𝓤_1` (membership as in
-`mem_primitiveSum_of_sixteen_pow_lt`) if and only if `q ∉ {2, 3, 4, 5, 7, 9, 13, 25, 121}`.
+**Finite fields with a primitive element sum.** For every natural number $q$, we have
+$q \notin \{2, 3, 4, 5, 7, 9, 13, 25, 121\}$ if and only if every finite field $L$ with $q$
+elements contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate
+the multiplicative group $L^\times$.
 
 ## Depends on
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Straus Divisor Patterns
 
-- [Erdos Straus type I of dvd sq](erdos-straus-type-i-of-dvd-sq.md)
-- [Erdos Straus type I exists dvd sq](erdos-straus-type-i-exists-dvd-sq.md)
-- [Erdos Straus type II exists dvd sq](erdos-straus-type-ii-exists-dvd-sq.md)
+- [Type I Erdős–Straus triples from divisors of a square](erdos-straus-type-i-of-dvd-sq.md)
+- [Divisor criterion necessary for type I Erdős–Straus solutions](erdos-straus-type-i-exists-dvd-sq.md)
+- [Divisor criterion necessary for type II Erdős–Straus solutions](erdos-straus-type-ii-exists-dvd-sq.md)

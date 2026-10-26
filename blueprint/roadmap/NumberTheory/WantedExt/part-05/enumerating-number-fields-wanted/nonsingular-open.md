@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.nonsingularOpen
 ---
 
-# Nonsingular Open
+# The open subscheme where the Jacobian does not vanish
 
-The open subscheme of `Spec ℚ[x₁,…,xᵣ]/(E₁,…,Eᵣ)` defined by `det (∂Eᵢ/∂xⱼ) ≠ 0`.
+**The open subscheme where the Jacobian does not vanish.** For polynomials
+$E_1, \dots, E_r \in \mathbb{Q}[x_1, \dots, x_r]$, the open subscheme of
+$\operatorname{Spec} \mathbb{Q}[x_1, \dots, x_r]/(E_1, \dots, E_r)$ where the Jacobian
+determinant $\det(\partial E_i / \partial x_j)$ does not vanish, that is, the basic open set of
+the image of this determinant in the quotient ring.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Jacobian](jacobian.md)
-- [Quotient Ring](quotient-ring.md)
+- [Jacobian determinant in the quotient ring](jacobian.md)
+- [Quotient of a polynomial ring by $r$ polynomials](quotient-ring.md)
 
 ## Sources
 

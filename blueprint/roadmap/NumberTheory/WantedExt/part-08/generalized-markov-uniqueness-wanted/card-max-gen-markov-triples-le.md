@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.card_maxGenMarkovTriples_le
 ---
 
-# Card max Gen Markov Triples le
+# Bound on the number of generalized Markov triples with a given maximum
 
-Theorem 4.20: if `k ≥ 4` is even with `k/2 + 1`, `k/2 - 1` squarefree, or `k` is odd
-with `k + 2`, `k - 2` squarefree (in `ℤ`), then a `k`-generalized Markov number
-`b = p_1^{a_1} ⋯ p_n^{a_n}` or `2 p_1^{a_1} ⋯ p_n^{a_n}` (distinct odd primes `p_i`,
-`n ≥ 1`) is the maximum of at most `2^{n-1}` triples up to order. Here `b` not divisible by
-`4` encodes the two shapes and `n` is the number of odd prime factors of `b`.
+**Bound on the number of generalized Markov triples with a given maximum.** Let $k$ be a
+natural number such that either $k \ge 4$ is even and $k/2 + 1$ and $k/2 - 1$ are squarefree,
+or $k$ is odd and the integers $k + 2$ and $k - 2$ are squarefree. Let $b$ be a $k$-generalized
+Markov number that is not divisible by $4$, and suppose that the number $n$ of odd primes
+dividing $b$ is at least $1$; equivalently, $b = p_1^{a_1} \cdots p_n^{a_n}$ or
+$b = 2 p_1^{a_1} \cdots p_n^{a_n}$ for distinct odd primes $p_1, \dots, p_n$ with $n \ge 1$.
+Then there are at most $2^{n-1}$ pairs of natural numbers $(a, c)$ with $a \le c \le b$ such
+that $(a, b, c)$ is a $k$-generalized Markov triple; that is, $b$ is the maximum of at most
+$2^{n-1}$ such triples up to order.
 
 ## Depends on
 
-- [Is Gen Markov Number](is-gen-markov-number.md)
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

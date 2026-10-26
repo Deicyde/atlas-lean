@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_or_mul
 ---
 
-# Lemma 1
+# The order of $a + kp$ modulo $p^2$
 
-**Lemma 1**: for `a` coprime to the odd prime `p` and any `k`,
-`ord_{p²}(a + kp) = ord_p(a)` or `p · ord_p(a)`.
+**The order of $a + kp$ modulo $p^2$.** Let $p$ be an odd prime and let $a$ and $k$ be
+natural numbers with $a$ coprime to $p$. Writing $\operatorname{ord}_n(b)$ for the
+multiplicative order of $b$ modulo $n$, the order $\operatorname{ord}_{p^2}(a + kp)$ is
+either $\operatorname{ord}_p(a)$ or $p \cdot \operatorname{ord}_p(a)$.
 
 ## Depends on
 
-- [Mul Ord Mod](mul-ord-mod.md)
+- [Multiplicative order modulo $n$](mul-ord-mod.md)
 
 ## Sources
 

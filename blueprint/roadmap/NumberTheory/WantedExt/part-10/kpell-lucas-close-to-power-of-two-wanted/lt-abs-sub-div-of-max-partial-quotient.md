@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lt_abs_sub_div_of_max_partialQuotient
 ---
 
-# Lemma 5 (ii)
+# Continued-fraction lower bound for rational approximations
 
-**Lemma 5 (ii).** Let `τ` be irrational with continued fraction `[a₀; a₁, a₂, …]` and
-convergent denominators `q₀, q₁, …`, let `M > 0`, let `N` be the least positive integer with
-`q_N > M`, and let `a(M) = max {a_k : 0 ≤ k ≤ N}`. Then `|τ - y/x| > 1 / ((a(M) + 2) x²)` for
-all integers `x`, `y` with `0 < x < M`. Here `a₀ = ⌊τ⌋` and `a_{j+1}` is the `j`th partial
-denominator of `GenContFract.of τ`.
+**Continued-fraction lower bound for rational approximations.** Let $\tau$ be an irrational real
+number with simple continued fraction expansion $[a_0; a_1, a_2, \ldots]$, so that
+$a_0 = \lfloor \tau \rfloor$, and let $q_0, q_1, \ldots$ be the denominators of its convergents. Let
+$M > 0$ be a real number, let $N$ be the least positive integer with $q_N > M$, and put
+$a(M) = \max \{a_k : 0 \le k \le N\}$. Then
+
+$$\left|\tau - \frac{y}{x}\right| > \frac{1}{(a(M) + 2)\, x^2}$$
+
+for all integers $x$ and $y$ with $0 < x < M$.
 
 ## Depends on
 

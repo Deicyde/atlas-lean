@@ -4,8 +4,8 @@ navigation: module
 
 # Erdos Problem690
 
-- [Is Kth Smallest Prime Factor](is-kth-smallest-prime-factor.md)
-- [Kth Prime Factor Density](kth-prime-factor-density.md)
-- [Is Unimodal On Primes](is-unimodal-on-primes.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [The $k$-th smallest prime factor](is-kth-smallest-prime-factor.md)
+- [The $k$-th prime-factor density](kth-prime-factor-density.md)
+- [Unimodality on the primes](is-unimodal-on-primes.md)
+- [Erdős Problem 690](conjecture.md)
+- [Erdős Problem 690 is false](conjecture-refuted.md)

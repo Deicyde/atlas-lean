@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.kurepaPartialIntegral_goldenFactorialExponent_bounds
 ---
 
-# Kurepa Partial Integral golden Factorial Exponent bounds
+# Left factorial bounds at the golden factorial exponent
 
-Theorem 12: `β n < !n < β n + 1` for every positive integer `n`, where `β n = !n(α n)`.
+**Left factorial bounds at the golden factorial exponent.** For every integer $n \ge 1$, let
+$!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
+$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, and let
+$\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$, where $\varphi$ is the
+golden ratio. Then $\beta(n) = K_n(\alpha(n))$ satisfies $\beta(n) < {!n} < \beta(n) + 1$.
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
-- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
+- [Kurepa's partial integral](kurepa-partial-integral.md)
 
 ## Sources
 

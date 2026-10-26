@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.eq_sub_one_of_not_isLargeZsigmondyPrime
 ---
 
-# Eq sub one of not is Large Zsigmondy Prime
+# A Zsigmondy prime $q$ that is not large satisfies $n = q - 1$
 
-For coprime positive integers `a > b` and `n ≥ 2`, a Zsigmondy prime `q` for `(a, b, n)`
-that is not a large Zsigmondy prime satisfies `n = q - 1`.
+**A Zsigmondy prime $q$ that is not large satisfies $n = q - 1$.** Let $a > b$ be coprime
+positive integers and let $n \ge 2$. If $q$ is a primitive prime divisor of the term $a^n - b^n$
+of the integer sequence $(a^m - b^m)_{m \ge 0}$ and $q$ is not a large Zsigmondy prime for
+$(a, b, n)$, then $n = q - 1$.
 
 ## Depends on
 
 - [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
-- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
+- [Large Zsigmondy prime](is-large-zsigmondy-prime.md)
 
 ## Sources
 

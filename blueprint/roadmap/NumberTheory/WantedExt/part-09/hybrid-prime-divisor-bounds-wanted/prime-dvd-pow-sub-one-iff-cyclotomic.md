@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_pow_sub_one_iff_cyclotomic
 ---
 
-# Prime dvd pow sub one iff cyclotomic
+# Divisibility of $x^{rp^a} - 1$ by $p$
 
-For a prime `p`, `n = r p^a` with `r` coprime to `p`, and a positive integer `x`:
-`p ∣ x^n - 1` if and only if `p ∣ x^r - 1` and `p ∣ Φ_p(x^{r p^{i-1}})` for every
-`i ∈ {1, …, a}`.
+**Divisibility of $x^{rp^a} - 1$ by $p$.** Let $p$ be a prime, let $r$ and $a$ be natural
+numbers with $r$ coprime to $p$, let $x$ be a positive integer, and let $\Phi_p$ be the $p$-th
+cyclotomic polynomial with integer coefficients. Then $p \mid x^{rp^a} - 1$ if and only if
+$p \mid x^r - 1$ and $p \mid \Phi_p(x^{rp^{i-1}})$ for every $i \in \{1, \dots, a\}$.
 
 ## Depends on
 

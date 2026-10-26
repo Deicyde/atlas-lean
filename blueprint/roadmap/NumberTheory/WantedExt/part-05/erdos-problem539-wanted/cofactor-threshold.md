@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem539Wanted.cofactorThreshold
 ---
 
-# Cofactor Threshold
+# Erdős cofactor threshold
 
-Largest cofactor lower bound for `n`.
+**Erdős cofactor threshold.** For a natural number $n$, the cofactor threshold $h(n)$ is the
+largest natural number $m$ such that for every set $A$ of exactly $n$ positive integers, the set
+$\{a/\gcd(a,b) : a, b \in A\}$ has at least $m$ elements.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Cofactor Lower Bound](is-cofactor-lower-bound.md)
+- [Cofactor lower bound](is-cofactor-lower-bound.md)
 
 ## Sources
 

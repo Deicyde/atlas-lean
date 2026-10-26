@@ -5,18 +5,25 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FareyNumeratorWanted.fareyNumeratorCount_formula
 ---
 
-# Theorem 1
+# Formula for the number of Farey fractions with a given numerator
 
-**Theorem 1**: for `0 < h < n`,
-`N_n(h) = φ(h) * (n / h) - ∑_{d ∣ h} μ(d) {n / d}
-  - φ(h) + δ_{1h}`, where `μ` is the Möbius function,
-`{x}` is the fractional part (written `(n % d) / d`)
-and `δ_{1h}` is `1` if
-`h = 1` and `0` otherwise.
+**Formula for the number of Farey fractions with a given numerator.** Let $h$ and $n$ be
+natural numbers with $0 < h < n$, and let $N_n(h)$ be the number of integers $b$ with
+$h \le b \le n$ and $\gcd(h, b) = 1$ (the number of fractions with numerator $h$ in the Farey
+sequence of order $n$). Then
+
+$$
+N_n(h) = \frac{n \varphi(h)}{h} - \sum_{d \mid h} \mu(d) \frac{n \bmod d}{d} -
+\varphi(h) + \delta_{1h},
+$$
+
+where $\varphi$ is Euler's totient function, $\mu$ is the Möbius function, the sum runs over the
+positive divisors $d$ of $h$, $(n \bmod d)/d$ is the fractional part of $n/d$, and $\delta_{1h}$ is
+$1$ if $h = 1$ and $0$ otherwise.
 
 ## Depends on
 
-- [Farey Numerator Count](farey-numerator-count.md)
+- [Number of Farey fractions with a given numerator](farey-numerator-count.md)
 
 ## Sources
 

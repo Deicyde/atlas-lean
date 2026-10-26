@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_perm_prefix_sum_le
 ---
 
-# Exists perm prefix sum le
+# Reordering so that prefix sums compare
 
-If `∑ x_i ≤ ∑ y_i`, some reordering `σ` has `∑_{i<s} x_{σ i} ≤ ∑_{i<s} y_{σ i}` for every
-prefix length `s ≤ k` (the paper's positivity of `x_i, y_i` is not needed).
+**Reordering so that prefix sums compare.** Let $k$ be a natural number and let
+$x_1, \dots, x_k$ and $y_1, \dots, y_k$ be real numbers with $\sum_i x_i \le \sum_i y_i$. Then
+there is a permutation $\sigma$ of $\{1, \dots, k\}$ such that
+$\sum_{i \le s} x_{\sigma(i)} \le \sum_{i \le s} y_{\sigma(i)}$ for every $s$ with $0 \le s \le k$.
+
+No positivity of the $x_i$ or $y_i$ is assumed.
 
 ## Depends on
 

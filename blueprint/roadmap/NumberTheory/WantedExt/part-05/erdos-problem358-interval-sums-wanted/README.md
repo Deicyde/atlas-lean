@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem358 Interval Sums
 
-- [Rep Count](rep-count.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Interval-sum representation count](rep-count.md)
+- [The interval-sum conjecture of Erdős Problem 358](conjecture.md)
+- [Interval sums with unbounded representation counts (Erdős Problem 358)](conjecture-holds.md)

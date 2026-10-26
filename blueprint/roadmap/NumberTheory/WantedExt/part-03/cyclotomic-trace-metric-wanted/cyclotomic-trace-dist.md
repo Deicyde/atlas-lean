@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicTraceDist
 ---
 
-# Cyclotomic Trace Dist
+# Trace metric on a cyclotomic field
 
-The trace metric `d(α, β) = ‖α - β‖` on `K = ℚ(ω)`.
+**Trace metric on a cyclotomic field.** Let $p$ be a positive integer and let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$. The trace distance between $\alpha, \beta \in K$ is the real
+number $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$, where $\lVert \cdot \rVert$ is the trace
+norm on $K$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyclotomic Trace Norm](cyclotomic-trace-norm.md)
+- [Trace norm on a cyclotomic field](cyclotomic-trace-norm.md)
 
 ## Sources
 

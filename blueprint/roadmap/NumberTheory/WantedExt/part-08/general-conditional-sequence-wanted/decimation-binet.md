@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.decimation_binet
 ---
 
-# Decimation binet
+# Binet formula for decimated linear recurrences
 
-Binet form of a solution of (3): if `f(x) = x^m - A_{m-1} x^{m-1} - ⋯ - A_0` has `m` distinct
-roots `α_1, …, α_m`, then for all `n ≥ 0`, with `ξ(n) = n mod r`,
-`s_n = ∑_{l<m} v_l^{(ξ(n))} ∑_t α_t^{m-1-l+⌊n/r⌋} / f'(α_t)`.
+**Binet formula for decimated linear recurrences.** Let $m$ and $r$ be natural numbers and
+let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be sequences of complex numbers such that
+$s_{n+mr} = \sum_{j\lt m} A_j s_{n+jr}$ for all $n \ge 0$. Let $f(x) = x^m - \sum_{j\lt m} A_j x^j$
+and let $\alpha_1, \ldots, \alpha_m$ be pairwise distinct roots of $f$ in $\mathbb{C}$. Then
+for every $n \ge 0$
+
+$$
+s_n = \sum_{l\lt m} v_l^{(n \bmod r)}
+\sum_{t=1}^{m} \frac{\alpha_t^{m-1-l+\lfloor n/r \rfloor}}{f'(\alpha_t)},
+$$
+
+where $v_l^{(i)} = s_{lr+i} - \sum_{j\lt l} A_{m-1-j} s_{(l-1-j)r+i}$ are the decimation
+coefficients. For $r = 0$ the formula is read with $n \bmod 0 = n$ and
+$\lfloor n/0 \rfloor = 0$.
 
 ## Depends on
 
-- [Decimation Coeff](decimation-coeff.md)
+- [Decimation coefficients](decimation-coeff.md)
 
 ## Sources
 

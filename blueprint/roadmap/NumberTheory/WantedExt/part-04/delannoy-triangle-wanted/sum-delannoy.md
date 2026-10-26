@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_delannoy
 ---
 
-# Theorem 9
+# Sum of the Delannoy triangle entries in rows $0$ to $p - 1$ modulo $p$
 
-**Theorem 9**: for an odd prime `p`,
-`∑_{0 ≤ k ≤ n ≤ p-1} C(n, k)_{[2]} ≡ (2 / p) (mod p)`,
-where `(2 / p)` is the Legendre symbol.
+**Sum of the Delannoy triangle entries in rows $0$ to $p - 1$ modulo $p$.** Let $p$ be an
+odd prime and let $T(n, k; 1)$ denote the entry of the ordinary Riordan Pascal-like triangle
+with $r = 1$ (the Delannoy triangle). Then
+
+$$\sum_{n=0}^{p-1} \sum_{k=0}^{n} T(n, k; 1) \equiv \left(\frac{2}{p}\right) \pmod{p},$$
+
+where $\left(\frac{2}{p}\right)$ is the Legendre symbol.
 
 ## Depends on
 

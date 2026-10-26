@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gobelBSequence_complement
 ---
 
-# Gobel BSequence complement
+# Complementary sequences $b_{l,s}$ and $b_{l,l-s}$
 
-For any functions satisfying the defining conditions for `b_{l,s}` and `b_{l,l-s}`,
-their values agree off the zero residue class modulo `l+1` and are negatives on that class.
-This states the lemma for every admissible realization instead of naming choice-defined unique
-sequences. All Proposition 20 hypotheses and the printed assumption `l ≥ 2` are explicit.
+**Complementary sequences $b_{l,s}$ and $b_{l,l-s}$.** Let $l \ge 2$ be an even natural
+number and $s \le l$ a natural number such that $2s + 1$ and $l + 1$ are coprime. Let
+$b_1, b_2 : \mathbb{Z} \to \mathbb{Z}$ satisfy the defining conditions of $b_{l,s}$ and of
+$b_{l,l-s}$ respectively. Then for every integer $n$, $b_1(n) = b_2(n)$ if $l + 1$ does not divide
+$n$, and $b_1(n) = -b_2(n)$ if $l + 1$ divides $n$.
 
 ## Depends on
 
-- [Is Gobel BSequence](is-gobel-bsequence.md)
+- [The periodic sign sequence $b_{l,s}$](is-gobel-bsequence.md)
 
 ## Sources
 

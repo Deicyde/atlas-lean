@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.hofstadterFAux_le
 ---
 
-# Hofstadter FAux le
+# The fuel-bounded Hofstadter recursion is bounded by its argument
 
-`hofstadterFAux k p n ≤ n`.
+**The fuel-bounded Hofstadter recursion is bounded by its argument.** For all natural numbers
+$k$, $p$ and $n$, the fuel-bounded value $A_k(p, n)$ of the generalized Hofstadter recursion
+satisfies $A_k(p, n) \le n$.
 
 ## Depends on
 
-- [Hofstadter FAux](hofstadter-faux.md)
+- [Fuel-bounded generalized Hofstadter recursion](hofstadter-faux.md)
 
 ## Sources
 

@@ -5,19 +5,27 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_weighted
 ---
 
-# Corollary 13
+# A weighted sum of the corrected Genocchi–Lucas coefficients
 
-**Corollary 13** (corrected):
-`∑_{n=0}^m (2/√5)ⁿ C(m,n) cₙ = 2√5^{1-m}` with
-`cₙ = genLucasCoeff n`; expanding `cₙ` gives the printed
-double sum `∑ 2ⁿ√5^{k-n} C(n,k) C(m,n) Gₖ L_{n-k+1}/(n-k+1)`
-plus the correction `∑ (2/√5)ⁿ C(m,n) 2√5^{n+1}
-G_{n+1}/(n+1)`. The printed form holds only for odd `m`
-(at `m = 2` it gives `12√5/5` against `2√5/5`).
+**A weighted sum of the corrected Genocchi–Lucas coefficients.** Let $G_k$ be the Genocchi
+numbers and $L_n$ the Lucas numbers, and for each natural number $n$ let
+
+$$c_n = \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} G_k \frac{L_{n-k+1}}{n-k+1} +
+2\sqrt{5}^{\,n+1} \frac{G_{n+1}}{n+1}.$$
+
+For every natural number $m$,
+
+$$\sum_{n=0}^{m} \left(\frac{2}{\sqrt{5}}\right)^{n} \binom{m}{n} c_n =
+\frac{2\sqrt{5}}{\sqrt{5}^{\,m}}.$$
+
+Expanding $c_n$ splits the left side into the paper's printed double sum
+$\sum_{n,k} 2^n \sqrt{5}^{\,k-n} \binom{n}{k} \binom{m}{n} G_k \frac{L_{n-k+1}}{n-k+1}$ and a
+correction term; the printed double sum alone gives the right side only for odd $m$ (at $m = 2$
+it is $12\sqrt{5}/5$, not $2\sqrt{5}/5$).
 
 ## Depends on
 
-- [Gen Lucas Coeff](gen-lucas-coeff.md)
+- [Genocchi–Lucas coefficients](gen-lucas-coeff.md)
 
 ## Sources
 

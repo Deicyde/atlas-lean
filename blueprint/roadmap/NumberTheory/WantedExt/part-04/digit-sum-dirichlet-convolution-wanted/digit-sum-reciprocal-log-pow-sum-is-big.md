@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digitSum_reciprocal_log_pow_sum_isBigO
 ---
 
-# Digit Sum reciprocal log pow sum is Big O
+# Reciprocal digit sums weighted by powers of the logarithm
 
-For every positive integer `j`,
-`∑_{n ≤ x} s_q(n)/n · log^j n = (q - 1) log^{j+2} x / (2 (j + 2) log q) + O(log^{j+1} x)`.
+**Reciprocal digit sums weighted by powers of the logarithm.** Let $q \ge 2$ and $j \ge 1$ be
+integers, and let $s_q(n)$ denote the sum of the base-$q$ digits of $n$. As the real number $x$
+tends to infinity,
+
+$$\sum_{n=1}^{\lfloor x \rfloor} \frac{s_q(n)}{n} \log^j n =
+\frac{(q - 1) \log^{j+2} x}{2 (j + 2) \log q} + O\left(\log^{j+1} x\right).$$
 
 ## Depends on
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.neg_one_pow_mul_bernoulli_eq_sum_one
 ---
 
-# Corollary 2
+# Bernoulli numbers via forward differences at $1$
 
-**Corollary 2**, second formula: for positive `n, r`
-with `n ≥ r + 1`, `(-1)ⁿ Bₙ = (n/(2ⁿ-1))
-∑_{k=0}^{n-1-r} (∑_{j=0}^r (-1)^{k+j+r} 2^{r-j} (k+j)!/k!
-S(r,j)) Δᵏ1^{n-1-r}/2^{k+1+r}`.
+**Bernoulli numbers via forward differences at $1$.** Let $n$ and $r$ be positive integers
+with $n \ge r + 1$, let $B_n$ be the $n$-th Bernoulli number, let $S(a, b)$ denote the Stirling
+numbers of the second kind and let $\Delta^k 1^m$ be the $k$-th forward difference of
+$y \mapsto y^m$ at $1$. For $k \ge 0$ write
+$e_k = \sum_{j=0}^{r} (-1)^{k+j+r} \, 2^{r-j} \, \frac{(k+j)!}{k!} \, S(r, j)$. Then
+$(-1)^n B_n = \frac{n}{2^n - 1} \sum_{k=0}^{n-1-r} e_k \, \frac{\Delta^k 1^{n-1-r}}{2^{k+1+r}}$.
 
 ## Depends on
 
-- [Diff Pow Eval](diff-pow-eval.md)
+- [Iterated forward differences of a power](diff-pow-eval.md)
 
 ## Sources
 

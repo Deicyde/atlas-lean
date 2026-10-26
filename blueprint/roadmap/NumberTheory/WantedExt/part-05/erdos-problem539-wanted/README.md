@@ -4,7 +4,7 @@ navigation: module
 
 # Erdos Problem539
 
-- [Is Cofactor Lower Bound](is-cofactor-lower-bound.md)
-- [Cofactor Threshold](cofactor-threshold.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Cofactor lower bound](is-cofactor-lower-bound.md)
+- [Erdős cofactor threshold](cofactor-threshold.md)
+- [Statement of Erdős Problem 539](conjecture.md)
+- [Erdős Problem 539: square-root lower bound for the cofactor threshold](conjecture-holds.md)

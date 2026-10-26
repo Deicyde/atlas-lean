@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_tau_eleven
 ---
 
-# Ramanujan Tau succ mod Eq pentagonal tau eleven
+# Ramanujan's $\tau$ modulo $13$ via $\tau_{11}$
 
-`τ(n + 1) ≡ ∑ (-1)^r τ_11(s + 1) (mod 13)` over `n = 13 P(r) + s`. The record prints
-`τ_11(s)`; that is false (at `n = 1`) and the proof's identity
-`∏ (1 - q^m)^11 (1 - q^(13m)) = ∑ (-1)^r τ_11(s + 1) q^(13 P(r) + s)`, from Definition 1.1,
-gives the shifted index used here.
+**Ramanujan's $\tau$ modulo $13$ via $\tau_{11}$.** Let $\tau = \tau_{24}$ be Ramanujan's tau
+function, where $\tau_k$ is the generalized tau function, and let $P(r) = r(3r - 1)/2$ for
+integers $r$. For every integer $n \ge 1$,
+
+$$\tau(n + 1) \equiv \sum_{13P(r) \le n} (-1)^r \tau_{11}(n - 13P(r) + 1) \pmod{13},$$
+
+the sum running over all integers $r$ with $13P(r) \le n$.
+
+The source record prints $\tau_{11}(s)$ in place of $\tau_{11}(s + 1)$, where $n = 13P(r) + s$;
+that version is false at $n = 1$. The shifted index comes from the identity
+$\prod_{m \ge 1} (1 - q^m)^{11} (1 - q^{13m}) = \sum_{r, s} (-1)^r \tau_{11}(s + 1) q^{13P(r) + s}$,
+which follows from Definition 1.1 and is used in the proof.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

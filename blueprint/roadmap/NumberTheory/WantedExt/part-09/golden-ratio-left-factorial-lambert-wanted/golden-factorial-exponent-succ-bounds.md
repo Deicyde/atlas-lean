@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.goldenFactorialExponent_succ_bounds
 ---
 
-# Golden Factorial Exponent succ bounds
+# Increment bounds for the golden factorial exponent
 
-Lemma 2: `α (n-1) + ⌊ln n / ln φ⌋ ≤ α n ≤ α (n-1) + ⌊ln n / ln φ⌋ + 1` for `n > 1`.
+**Increment bounds for the golden factorial exponent.** Let $\varphi$ be the golden ratio
+and, for a natural number $n$, let $\alpha(n)$ be the least positive integer $m$ with
+$n! \le \varphi^m$. For every natural number $n > 1$,
+
+$$\alpha(n-1) + \lfloor \log_\varphi n \rfloor \le \alpha(n) \le
+\alpha(n-1) + \lfloor \log_\varphi n \rfloor + 1.$$
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
 
 ## Sources
 

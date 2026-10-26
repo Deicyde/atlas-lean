@@ -5,15 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_card_odd_kFull_div_card_even_kFull
 ---
 
-# Tendsto card odd k Full div card even k Full
+# Odd-to-even ratio of $k$-full numbers
 
-Corollary 2: for `k ≥ 2`, the number `K_o(x)` of odd `k`-full numbers up to `x`
-and the number `K_e(x)` of even `k`-full numbers up to `x` satisfy
-`K_o(x) / K_e(x) → 2 - 2^{1 - 1/k}` as `x → ∞`. `k`-full is the standard notion
-(`Nat.IsKFull`: `n ≠ 0` and `p^k ∣ n` for every prime `p ∣ n`, so `1` is `k`-full);
-both counts depend only on `⌊x⌋`, so the limit is taken along natural numbers `N`.
-The paper's identification of these counts with its `O_{k,⌊x⌋}(x)` and
-`E_{k,⌊x⌋}(x)` is not stated.
+**Odd-to-even ratio of $k$-full numbers.** Let $k \ge 2$. For a natural number $N$ let
+$K_o(N)$ and $K_e(N)$ be the numbers of odd and of even $k$-full numbers $n \le N$. Then
+$K_o(N)/K_e(N) \to 2 - 2^{1 - 1/k}$ as $N \to \infty$.
+
+The counts up to a real $x$ depend only on $\lfloor x \rfloor$, so this is the same as the limit
+as $x \to \infty$ through the reals.
 
 ## Depends on
 

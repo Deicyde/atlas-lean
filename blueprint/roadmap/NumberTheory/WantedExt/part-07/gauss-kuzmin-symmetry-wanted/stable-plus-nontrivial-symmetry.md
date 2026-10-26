@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.stable_plus_nontrivial_symmetry
 ---
 
-# Stable plus nontrivial symmetry
+# Nontrivial symmetries from stable strings
 
-If `a = (a₁, …, aₙ)` is a stable string of positive integers, then
-`a⁺ = (2, 1, a₁, …, aₙ₋₁, aₙ + 1)` has the nontrivial symmetry
-`σ(a⁺) = (2, aₙ + 1, aₙ₋₁, …, a₁, 1)`.
+**Nontrivial symmetries from stable strings.** Let $n \ge 1$ and let $a = (a_1, \dots, a_n)$ be
+a stable string of positive integers. Put $a^+ = (2, 1, a_1, \dots, a_{n-1}, a_n + 1)$ and
+$\sigma(a^+) = (2, a_n + 1, a_{n-1}, \dots, a_1, 1)$. Then $\sigma(a^+)$ is a rearrangement of
+$a^+$, it differs both from $a^+$ and from the reverse of $a^+$, and
+$P_{GK}(\sigma(a^+)) = P_{GK}(a^+)$, where $P_{GK}$ denotes the Gauss–Kuzmin measure of a string.
 
 ## Depends on
 
-- [Is Stable String](is-stable-string.md)
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Stable strings](is-stable-string.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

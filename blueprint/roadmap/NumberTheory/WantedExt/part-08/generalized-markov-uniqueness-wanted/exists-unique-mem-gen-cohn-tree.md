@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsGenCohnTriple.existsUnique_mem_genCohnTree
 ---
 
-# Exists Unique mem gen Cohn Tree
+# Cohn triples sit at a unique vertex of a Cohn tree
 
-Proposition 3.17: a `k`-generalized Cohn triple associated with `(a, b, c)`,
-`b > max {a, c}`, is the vertex of `GCT(k, ℓ)` for a unique pair of `ℓ ∈ ℤ` and path.
+**Cohn triples sit at a unique vertex of a Cohn tree.** Let $(P, Q, R)$ be a
+$k$-generalized Cohn triple associated with $(a, b, c)$, where $b > \max\{a, c\}$. Then there is
+exactly one pair $(\ell, w)$ of an integer $\ell$ and a path $w$ (a finite sequence of left and
+right moves) such that $(P, Q, R)$ is the vertex of the $k$-generalized Cohn tree
+$\mathrm{GCT}(k, \ell)$ reached along $w$.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Gen Cohn Tree](gen-cohn-tree.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [The $k$-generalized Cohn tree](gen-cohn-tree.md)
 
 ## Sources
 

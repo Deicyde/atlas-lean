@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.watsonOddCotangentDeriv
 ---
 
-# Watson Odd Cotangent Deriv
+# Odd cotangent derivatives
 
-`watsonOddCotangentDeriv r n ν` is the `(2r-1)`st derivative of cotangent,
-evaluated at `πν/n`, which is the paper's `ℋ_{2r-1}(ν/n)`. The unguarded
-`iteratedDeriv` is intentional because this is the prescribed derivative form.
+**Odd cotangent derivatives.** For natural numbers $r$, $n$ and $\nu$, $\mathcal{H}_{2r-1}(\nu/n)$
+is the real number $\cot^{(2r-1)}(\pi\nu/n)$, the $(2r-1)$st derivative of the cotangent function
+evaluated at $\pi\nu/n$. Here $2r - 1$ is computed in the natural numbers, so for $r = 0$ this is
+$\cot(\pi\nu/n)$ itself.
+
+The derivative is taken of the cotangent as a function on all of $\mathbb{R}$; the value is the
+classical one whenever $\pi\nu/n$ is not a multiple of $\pi$.
 
 ## Depends on
 

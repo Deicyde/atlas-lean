@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.sixSquaresDedekindMoment_of_lt_one
 ---
 
-# Six Squares Dedekind Moment of lt one
+# The six-squares moment vanishes below $1$
 
-`S_ℓ(x) = 0` for `x < 1`.
+**The six-squares moment vanishes below $1$.** For every number field $K$, every natural
+number $\ell$ and every real $x < 1$, the six-squares moment
+$S_\ell(x) = \sum_{1 \le n \le x} r_6(n)\, a_K(n)^\ell$ equals $0$, where $r_6(n)$ is the number
+of representations of $n$ as a sum of six squares of integers and $a_K(n)$ is the number of
+ideals of the ring of integers of $K$ of absolute norm $n$.
 
 ## Depends on
 
-- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
+- [Six-squares moments of Dedekind zeta coefficients](six-squares-dedekind-moment.md)
 
 ## Proof depends on
 
-- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
+- [Coefficients of the Dedekind zeta function](dedekind-zeta-coeff.md)
 - [Sum Of Squares Rep Count](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
 
 ## Sources

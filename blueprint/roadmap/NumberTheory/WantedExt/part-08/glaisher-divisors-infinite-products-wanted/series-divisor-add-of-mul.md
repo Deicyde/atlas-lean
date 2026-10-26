@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.series_divisor_add_of_mul
 ---
 
-# Series divisor add of mul
+# Series-divisors add under multiplication
 
-Addition lemma: if `sA` and `sB` are series-divisors of `A` and `B`, then `sA + sB`
-is a series-divisor of `A * B`.
+**Series-divisors add under multiplication.** Let $R$ be a commutative ring and let $A$, $B$
+be formal power series over $R$ with coefficients $a(n)$, $b(n)$. Suppose $s_A, s_B$ are maps
+$\mathbb{N} \to R$ with $n\,a(n) = \sum_{i=1}^{n} s_A(i)\,a(n-i)$ and
+$n\,b(n) = \sum_{i=1}^{n} s_B(i)\,b(n-i)$ for every $n \ge 0$ (that is, $s_A$ and $s_B$ are
+series-divisors of $A$ and $B$). Then, writing $c(n)$ for the coefficients of $AB$,
+$n\,c(n) = \sum_{i=1}^{n} \bigl(s_A(i) + s_B(i)\bigr)\,c(n-i)$ for every $n \ge 0$, so $s_A + s_B$
+is a series-divisor of $AB$.
 
 ## Depends on
 

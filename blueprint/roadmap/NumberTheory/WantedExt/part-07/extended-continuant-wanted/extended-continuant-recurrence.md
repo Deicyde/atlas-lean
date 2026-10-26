@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.extendedContinuant_recurrence
 ---
 
-# Extended Continuant recurrence
+# Recurrence for extended continuants
 
-The right-adjusting recurrence `K_a(x)_b = x_{b+a} K_{a-1}(x)_b + K_{a-2}(x)_b` holds for
-every integer order `a` (for `a ≤ -1` it is the paper's backward recurrence of Definition 4).
+**Recurrence for extended continuants.** For every bi-infinite integer sequence
+$x : \mathbb{Z} \to \mathbb{Z}$ and all integers $a$ and $b$, the extended continuants $K_a(x)_b$
+of order $a$ with start index $b$ satisfy
+$K_a(x)_b = x_{b+a} K_{a-1}(x)_b + K_{a-2}(x)_b$.
+
+For $a \le -1$ this is the paper's backward recurrence of Definition 4.
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Proof depends on
 
-- [Extended Continuant Bwd](extended-continuant-bwd.md)
-- [Extended Continuant Fwd](extended-continuant-fwd.md)
+- [Backward branch of the extended continuant](extended-continuant-bwd.md)
+- [Forward branch of the extended continuant](extended-continuant-fwd.md)
 
 ## Sources
 

@@ -6,12 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.choose_add_powerSeries_mul_one_sub_pow
 ---
 
-# Choose add power Series mul one sub pow
+# Generating function of shifted binomial coefficients
 
-Lemma 2: `∑_{n ≥ 0} C(n+r, r) tⁿ = 1/(1-t)^{r+1}`, stated as
-`(∑ C(n+r, r) tⁿ) (1-t)^{r+1} = 1` in `ℤ⟦t⟧`. The paper says `r` positive; the statement
-holds for every `r ≥ 0` and is stated so. Proved from Mathlib's
-`PowerSeries.mk_one_pow_eq_mk_choose_add` and `PowerSeries.mk_one_mul_one_sub_eq_one`.
+**Generating function of shifted binomial coefficients.** For every natural number $r$, the
+formal power series $\sum_{n \ge 0} \binom{n+r}{r} t^n$ with integer coefficients satisfies
+$\left(\sum_{n \ge 0} \binom{n+r}{r} t^n\right)(1-t)^{r+1} = 1$ in $\mathbb{Z}[[t]]$, that is,
+$\sum_{n \ge 0} \binom{n+r}{r} t^n = 1/(1-t)^{r+1}$.
+
+The paper states this for positive $r$; it holds for every $r \ge 0$ and is stated so.
 
 ## Depends on
 

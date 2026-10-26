@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.monotone_cardFactors_pow_pow_add_one
 ---
 
-# Monotone card Factors pow pow add one
+# Monotonicity of the number of prime factors of generalized Fermat numbers
 
-For `a, b ≥ 2` with `b` odd, the number `φ_n(a, b) = Ω(F_n(a, b))` of prime factors of
-`F_n(a, b) = a^{b^n} + 1`, counted with multiplicity, is monotone in `n`. The open question on
-`φ_n(2, 2)` and the listed values of `φ_n(2, 2)` that the record appends are omitted.
+**Monotonicity of the number of prime factors of generalized Fermat numbers.** For natural
+numbers $a$, $b$ and $n$ write $F_n(a, b) = a^{b^n} + 1$, and let $\Omega(N)$ be the number of
+prime factors of $N$ counted with multiplicity. If $a, b \ge 2$ and $b$ is odd, then
+$\Omega(F_n(a, b)) \le \Omega(F_m(a, b))$ for all natural numbers $n \le m$.
+
+The source writes $\varphi_n(a, b)$ for $\Omega(F_n(a, b))$. Its open question on
+$\varphi_n(2, 2)$ and its list of values of $\varphi_n(2, 2)$ are not stated here.
 
 ## Depends on
 

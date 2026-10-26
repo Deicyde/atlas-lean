@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.canonicalSeq_averageOrder
 ---
 
-# Canonical Seq average Order
+# Average order of the canonical sequential realization
 
-Corollary 2 (average-order scale from Equation (7)): if `Π_k ∼ C k^α` with `C, α > 0`, then
-the leading prime-sum term `x S_seq(x) = x ∑_{p ≤ x} H_seq(p)/p`, the error term
-`∑_{p ≤ x} H_seq(p) log x / log p` of Equation (7), and `F_seq(x) = ∑_{n ≤ x} H_seq(n)` are all
-`≍ x^{1+1/α} / (log x)^{1+1/α}`.
+**Average order of the canonical sequential realization.** Let $(\pi_k)_{k \ge 1}$ be a
+sequence of nonnegative integers with partial sums $\Pi_k = \sum_{1 \le j \le k} \pi_j$, let
+$H_{\mathrm{seq}}$ be its canonical sequential realization, and suppose that $C > 0$ and
+$\alpha > 0$ are real numbers with $\Pi_k \sim C k^\alpha$ as $k \to \infty$. Then, as
+$x \to \infty$ over the reals, each of the three functions
+$x \sum_{p \le x} H_{\mathrm{seq}}(p)/p$, $\sum_{p \le x} H_{\mathrm{seq}}(p) \log x / \log p$
+(both sums over primes $p \le x$) and $\sum_{1 \le n \le x} H_{\mathrm{seq}}(n)$ is
+$\Theta\bigl(x^{1+1/\alpha} / (\log x)^{1+1/\alpha}\bigr)$, where $f = \Theta(g)$ means
+$f = O(g)$ and $g = O(f)$.
 
 ## Depends on
 
-- [Canonical Seq Height](canonical-seq-height.md)
-- [Profile Partial Sum](profile-partial-sum.md)
+- [Canonical sequential realization of a profile](canonical-seq-height.md)
+- [Cumulative profile](profile-partial-sum.md)
 
 ## Sources
 

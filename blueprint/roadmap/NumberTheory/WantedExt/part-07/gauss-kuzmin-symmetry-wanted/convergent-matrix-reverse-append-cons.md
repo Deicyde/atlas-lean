@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.convergentMatrix_reverse_append_cons
 ---
 
-# Convergent Matrix reverse append cons
+# Convergent matrices of reversed and extended strings
 
-Explicit formulas for convergent matrices: with `C(a) = [[p', p], [q', q]]` and `t ∈ ℕ`,
-(i) `C(a⃖) = [[p', q'], [p, q]]`; (ii) `C(a, t) = [[p, p' + tp], [q, q' + tq]]`;
-(iii) `C(t, a) = [[q', q], [p' + tq', p + tq]]`; (iv) `C(t, a⃖) = [[p, q], [p' + tp, q' + tq]]`.
+**Convergent matrices of reversed and extended strings.** Let $a = (a_1, \ldots, a_n)$ be a
+finite string of positive integers with convergent matrix
+$C(a) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix}$, let $t \ge 1$ be an integer, and write
+$\overleftarrow{a} = (a_n, \ldots, a_1)$ for the reversed string. Then
+(i) $C(\overleftarrow{a}) = \begin{pmatrix} p' & q' \\ p & q \end{pmatrix}$;
+(ii) $C(a_1, \ldots, a_n, t) = \begin{pmatrix} p & p' + tp \\ q & q' + tq \end{pmatrix}$;
+(iii) $C(t, a_1, \ldots, a_n) = \begin{pmatrix} q' & q \\ p' + tq' & p + tq \end{pmatrix}$;
+(iv) $C(t, a_n, \ldots, a_1) = \begin{pmatrix} p & q \\ p' + tp & q' + tq \end{pmatrix}$.
 
 ## Depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

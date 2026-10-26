@@ -5,22 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.negPell_sequences_basic
 ---
 
-# Neg Pell sequences basic
+# Basic properties of the negative Pell sequences
 
-Basic properties of `f_n, g_n` for `d > 1` whose negative Pell equation is solvable in
-integers: `f_n² - d g_n² = (-1)^n` (24), `(g_n)` is strictly increasing, `(f_n)` is strictly
-increasing from `n = 1`, and `f_n = (εⁿ + ε'ⁿ) / 2`, `g_n = (εⁿ - ε'ⁿ) / (2 √d)` (25)-(26) with
-`ε = X + Y √d`, `ε' = X - Y √d`.
+**Basic properties of the negative Pell sequences.** Let $d > 1$ be a natural number such that
+$x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural numbers with
+least positive $Y$, and define integers $f_n, g_n$ by $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$.
+Then $f_n^2 - d g_n^2 = (-1)^n$ for every $n \ge 0$, the sequence $(g_n)_{n \ge 0}$ is strictly
+increasing, the sequence $(f_n)_{n \ge 1}$ is strictly increasing, and, with the real numbers
+$\varepsilon = X + Y\sqrt{d}$ and $\varepsilon' = X - Y\sqrt{d}$, for every $n \ge 0$
 
-Deviation: `(f_n)` is not strictly increasing from `n = 0` when `d = 2` (`f_0 = f_1 = 1`), so
-monotonicity of `f` is stated on `n ≥ 1`. (23) holds by definition.
+$$f_n = \frac{\varepsilon^n + \varepsilon'^n}{2},$$
+
+
+
+$$g_n = \frac{\varepsilon^n - \varepsilon'^n}{2\sqrt{d}}.$$
+
+The sequence $(f_n)_{n \ge 0}$ is not strictly increasing when $d = 2$, since $f_0 = f_1 = 1$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell Fund X](neg-pell-fund-x.md)
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [First coordinate of the fundamental negative Pell solution](neg-pell-fund-x.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

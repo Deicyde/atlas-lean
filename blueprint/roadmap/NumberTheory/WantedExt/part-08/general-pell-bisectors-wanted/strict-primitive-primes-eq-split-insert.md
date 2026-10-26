@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.strictPrimitivePrimes_eq_split_insert_two
 ---
 
-# Strict Primitive Primes eq split insert two
+# Strictly primitive primes are 2 and the split primes
 
-If `d ≡ 5 (mod 8)` and the fundamental unit `η` of `ℚ(√d)` does not lie in `ℤ[√d]`, then
-`S(d)` consists of `2` and the primes that split in `ℚ(√d)`.
-
-`η ∉ ℤ[√d]` is stated as: some unit of the ring of integers lies outside `ℤ[s]`.
+**Strictly primitive primes are 2 and the split primes.** Let $d > 1$ be a square-free
+integer, let $K$ be any number field of degree $2$ over $\mathbb{Q}$ containing an element $s$
+with $s^2 = d$, and let $\mathcal{O}_K$ be its ring of integers. Suppose that $d \equiv 5 \pmod 8$
+and that some unit of $\mathcal{O}_K$ does not lie in $\mathbb{Z}[s]$ (equivalently, the
+fundamental unit of $K$ does not lie in $\mathbb{Z}[s]$). Then $S(d)$, the set of primes $p$ for
+which $|x^2 - d y^2| = p^l$ has an integral solution with $x$ and $d y$ coprime for some integer
+$l > 0$, consists of $2$ together with the primes $p$ that split in $K$, that is, for which
+exactly two prime ideals of $\mathcal{O}_K$ lie over $p\mathbb{Z}$.
 
 ## Depends on
 
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.floor_gaps_inter_Iic_finite
 ---
 
-# Floor gaps inter Iic finite
+# Finiteness of small floor gaps of the Farey staircase
 
-Theorem 5 (ii) (D. R. Richman): for every `ε > 0` only finitely many values
-`f_n(x) = ⌊nx⌋ - n A_n(x)` (`n ≥ 1`, `x ∈ ℝ`) are at most `1 - log 2 - ε`.
+**Finiteness of small floor gaps of the Farey staircase.** For a natural number $n \ge 1$ and a
+real number $x$, let $f_n(x) = \lfloor nx \rfloor - n A_n(x)$, where $A_n$ is the Farey staircase
+of order $n$. Then for every real number $\varepsilon > 0$, only finitely many distinct real
+numbers that are at most $1 - \log 2 - \varepsilon$ occur as a value $f_n(x)$ with $n \ge 1$ and
+$x$ real; here $\log$ is the natural logarithm.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partition_mod_five_iff_sigma_convolution
 ---
 
-# Partition mod five iff sigma convolution
+# Ramanujan's congruence modulo $5$ and a convolution of divisor sums
 
-Ramanujan's congruence `p(5m+4) ≡ 0 (mod 5)` for all `m` is equivalent to
-`∑_{i ≥ 1} σ(i) σ(5m+1-i) ≡ 0 (mod 5)` for all `m`.
+**Ramanujan's congruence modulo $5$ and a convolution of divisor sums.** Let $p(k)$ be the
+number of partitions of $k$ and $\sigma(k)$ the sum of the positive divisors of $k$. Then
+$p(5m+4) \equiv 0 \pmod 5$ for every natural number $m$ if and only if
+$\sum_{i=1}^{5m} \sigma(i)\,\sigma(5m+1-i) \equiv 0 \pmod 5$ for every natural number $m$.
 
 ## Depends on
 

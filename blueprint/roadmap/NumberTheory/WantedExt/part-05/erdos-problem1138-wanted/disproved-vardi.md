@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem1138Wanted.disprovedVardi
 ---
 
-# Disproved Vardi
+# Negation of Vardi's prime-gap asymptotic
 
-Its disproof (companion).
+**Negation of Vardi's prime-gap asymptotic.** The proposition that Vardi's prime-gap
+asymptotic does not hold.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Vardi Asymptotic](vardi-asymptotic.md)
+- [Vardi's prime-gap asymptotic](vardi-asymptotic.md)
 
 ## Sources
 

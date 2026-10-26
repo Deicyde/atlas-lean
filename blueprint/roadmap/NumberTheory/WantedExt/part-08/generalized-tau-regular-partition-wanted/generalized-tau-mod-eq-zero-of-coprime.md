@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_modEq_zero_of_coprime
 ---
 
-# Generalized Tau mod Eq zero of coprime
+# Vanishing of the generalized tau function modulo $|k|/d$
 
-`τ_k(|k| m + d r + 1) ≡ 0 (mod |k|/d)` for every divisor `d < |k|` of `|k|` and every `r`
-coprime to `|k|/d`.
+**Vanishing of the generalized tau function modulo $|k|/d$.** Let $\tau_k(n)$ be the
+generalized tau function, the coefficient of $q^n$ in $q \prod_{j \ge 1} (1 - q^j)^k$. Let $k$ be
+an integer with $|k| \ge 2$ and $d$ a natural number dividing $|k|$ with $d < |k|$. Then for all
+natural numbers $m$ and $r$ with $\gcd(r, |k|/d) = 1$,
+$\tau_k(|k| m + d r + 1) \equiv 0 \pmod{|k|/d}$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_abs_sin_div_abs_sin_lt
 ---
 
-# Sum abs sin div abs sin lt
+# Bound for a sum of sine ratios
 
-Lemma 3.5: for positive integers `q, K, B` with `K < q`,
-`∑_{k=1}^{K} |sin(πBk/q)| / |sin(πk/q)| <
-(2/π²) q log K + (2q/π²)(γ + log 2) + (q/π) K/(q - K) + 5q/(π²K)`, with `γ` the
-Euler–Mascheroni constant. Positivity of `q` follows from `1 ≤ K < q` and is not a separate
-hypothesis.
+**Bound for a sum of sine ratios.** Let $q$, $K$ and $B$ be natural numbers with
+$1 \le K < q$ and $B \ge 1$, and let $\gamma$ be the Euler–Mascheroni constant. Then
+
+$$
+\sum_{k=1}^{K} \frac{|\sin(\pi B k / q)|}{|\sin(\pi k / q)|} <
+\frac{2}{\pi^2} q \log K + \frac{2q}{\pi^2}(\gamma + \log 2) + \frac{q}{\pi} \cdot \frac{K}{q - K} +
+\frac{5q}{\pi^2 K}.
+$$
 
 ## Depends on
 

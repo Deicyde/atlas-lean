@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.continuousDiscreteEquivalence_holds
 ---
 
-# Continuous Discrete Equivalence holds
+# The normalized minimum overlap tends to $C_{1b}$
 
-Source: Haugland 2016 and Optimization Problems 1b.
+**The normalized minimum overlap tends to $C_{1b}$.** For a natural number $N$ let $M(N)$ be
+the Erdős minimum overlap function: the least, over all pairs of disjoint finite sets
+$A, B \subseteq \mathbb{Z}$ with $A \cup B = \{1, \dots, 2N\}$ and $|A| = |B|$, of the largest
+number of pairs $(a, b) \in A \times B$ with a given difference $a - b$. Then $M(N)/N$ tends to
+the continuous Erdős minimum-overlap constant $C_{1b}$ as $N \to \infty$.
 
 ## Depends on
 
-- [Continuous Discrete Equivalence](continuous-discrete-equivalence.md)
+- [The proposition that $M(N)/N$ tends to $C_{1b}$](continuous-discrete-equivalence.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Haugland 2016 and Optimization Problems 1b.

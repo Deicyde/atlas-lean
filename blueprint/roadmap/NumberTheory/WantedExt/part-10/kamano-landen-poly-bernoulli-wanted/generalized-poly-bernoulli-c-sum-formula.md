@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.generalizedPolyBernoulliC_sum_formula
 ---
 
-# Sum formula for `C_n`
+# Sum formula for generalized poly-Bernoulli numbers $C_n$
 
-**Sum formula for `C_n`**, Identity (16): for `k ≥ 1` and every real `μ`,
-`∑_{|k| = k} μ^{d(k) - 1} C_n^{(k, g, (β, γ))} = B_n^{((k), g, (β + μγ, β))}
-= C_n^{({1}^k, g, (β, β + μγ))}`, with `{1}^k = (1, …, 1)` (`k` ones).
+**Sum formula for generalized poly-Bernoulli numbers $C_n$.** Let $g = (g_0, g_1, \dots, g_s)$
+be Landen data, let $\beta, \gamma \in \mathbb{R}^s$, let $\mu$ be a real number, and let $k \ge 1$
+and $n \ge 0$ be integers. Write $B_n$ and $C_n$ for Kamano's generalized poly-Bernoulli numbers of
+the second and first kind, $d(\mathbf{k})$ for the number of entries of an index $\mathbf{k}$, and
+$\{1\}^k = (1, \dots, 1)$ for the index of $k$ ones. Then
+
+$$\sum_{|\mathbf{k}| = k} \mu^{d(\mathbf{k}) - 1} C_n^{(\mathbf{k}, g, (\beta, \gamma))} =
+B_n^{((k), g, (\beta + \mu\gamma, \beta))} =
+C_n^{(\{1\}^k, g, (\beta, \beta + \mu\gamma))},$$
+
+where the sum runs over all compositions $\mathbf{k}$ of $k$, that is, all tuples of positive
+integers with sum $k$.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
-- [Generalized Poly Bernoulli B](generalized-poly-bernoulli-b.md)
-- [Generalized Poly Bernoulli C](generalized-poly-bernoulli-c.md)
+- [Landen data](landen-data.md)
+- [Generalized poly-Bernoulli numbers of the second kind](generalized-poly-bernoulli-b.md)
+- [Generalized poly-Bernoulli numbers of the first kind](generalized-poly-bernoulli-c.md)
 
 ## Sources
 

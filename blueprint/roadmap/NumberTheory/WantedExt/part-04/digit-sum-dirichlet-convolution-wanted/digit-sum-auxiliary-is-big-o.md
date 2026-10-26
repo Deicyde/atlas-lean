@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.digitSum_auxiliary_isBigO
 ---
 
-# Digit Sum auxiliary is Big O
+# Size bounds for the Trollope–Delange auxiliary functions
 
-The size bounds `h(x) = O(1)`, `F` bounded, `J(x) = O(log x)`, `G(x) = O(log x)`,
-`H(x) = O(log² x)`, `K(x) = O(1)` and `L(x) = O(log x)` as `x → ∞`.
+**Size bounds for the Trollope–Delange auxiliary functions.** Let $q \ge 2$ be an integer.
+For base $q$, let $h$ be Delange's series, $F$ the Trollope–Delange fluctuation, $J$ the
+remainder of the Trollope–Delange formula, and
+$G(x) = \int_1^x F(\log u / \log q) \, du/u$,
+$H(x) = \int_1^x \int_1^u F(\log v / \log q) \, dv/v \, du/u$,
+$K(x) = \int_1^x J(u) \, du/u^2$ and $L(x) = \int_1^x \int_1^u J(v) \, dv/v^2 \, du/u$.
+Then $F$ is bounded on $\mathbb{R}$, and as $x \to \infty$ through the reals, $h(x) = O(1)$,
+$J(x) = O(\log x)$, $G(x) = O(\log x)$, $H(x) = O(\log^2 x)$, $K(x) = O(1)$ and
+$L(x) = O(\log x)$.
 
 ## Depends on
 
-- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
-- [Digit Sum Fluctuation Integral](digit-sum-fluctuation-integral.md)
-- [Digit Sum Remainder](digit-sum-remainder.md)
-- [Digit Sum Remainder Double Integral](digit-sum-remainder-double-integral.md)
-- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
-- [Trollope Delange Series](trollope-delange-series.md)
+- [Double integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-double-integral.md)
+- [Integral of the Trollope–Delange fluctuation](digit-sum-fluctuation-integral.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
+- [Double integral of the Trollope–Delange remainder](digit-sum-remainder-double-integral.md)
+- [Weighted integral of the Trollope–Delange remainder](digit-sum-remainder-integral.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
+- [Delange's series](trollope-delange-series.md)
 
 ## Sources
 

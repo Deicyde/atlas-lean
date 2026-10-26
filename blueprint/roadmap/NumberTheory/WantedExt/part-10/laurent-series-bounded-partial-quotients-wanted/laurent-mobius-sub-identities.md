@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.laurentMobius_sub_identities
 ---
 
-# Laurent Mobius sub identities
+# Difference identities for a Möbius–Frobenius fixed point
 
-Let `α ∈ 𝔽_q((x⁻¹))` be irrational with `α = f(α^q)`, `f(T) = (AT + B)/(CT + D)`,
-`Δ = AD - BC ≠ 0`, and let `P, Q ∈ 𝔽_q[x]`, `Q ≠ 0`, with `R₁ = DP - BQ`, `S₁ = -CP + AQ`,
-`R₂ = AP^q + BQ^q`, `S₂ = CP^q + DQ^q`, `S₁ ≠ 0`, `S₂ ≠ 0` (for `C ≠ 0` these say
-`P/Q ≠ A/C` and `(P/Q)^q ≠ -D/C`). Then
-`α^q - R₁/S₁ = Δ (Qα - P) / ((A - Cα) S₁)` and `α - R₂/S₂ = Δ (Qα - P)^q / ((Cα^q + D) S₂)`
-(equations (3.4) and (3.5); their middle expressions `f⁻¹(α) - f⁻¹(P/Q)` and
-`f(α^q) - f((P/Q)^q)` are omitted). The hypotheses `gcd(A, B, C, D) = 1` and that `P/Q` is a
-convergent in lowest terms are dropped as unused by the identities.
+**Difference identities for a Möbius–Frobenius fixed point.** Let $K$ be a finite field with
+$q$ elements, let $A, B, C, D \in K[x]$ with $\Delta = AD - BC \ne 0$, and let
+$\alpha \in K((x^{-1}))$ be irrational with $\alpha = (A \alpha^q + B) / (C \alpha^q + D)$. Let
+$P, Q \in K[x]$ with $Q \ne 0$, put $R_1 = DP - BQ$, $S_1 = -CP + AQ$, $R_2 = AP^q + BQ^q$ and
+$S_2 = CP^q + DQ^q$, and assume $S_1 \ne 0$ and $S_2 \ne 0$. Then
+$\alpha^q - R_1 / S_1 = \Delta (Q \alpha - P) / ((A - C \alpha) S_1)$ and
+$\alpha - R_2 / S_2 = \Delta (Q \alpha - P)^q / ((C \alpha^q + D) S_2)$.
+
+For $C \ne 0$ the conditions $S_1 \ne 0$ and $S_2 \ne 0$ say $P/Q \ne A/C$ and
+$(P/Q)^q \ne -D/C$. The source also assumes $\gcd(A, B, C, D) = 1$ and that $P/Q$ is a
+convergent of $\alpha$ in lowest terms; the identities do not need these hypotheses.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

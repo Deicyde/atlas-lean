@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.unit_weighted_zero_sum_prime_power
 ---
 
-# Unit weighted zero sum prime power
+# Unit-weighted zero sums modulo an odd prime power
 
-For an odd prime `p`, a sequence in `ℤ_{p^r}` with at least two terms coprime to `p`
-is a `U(p^r)`-weighted zero-sum sequence.
+**Unit-weighted zero sums modulo an odd prime power.** Let $p$ be an odd prime, let $r$ and
+$k$ be natural numbers, and let $x_1, \dots, x_k \in \mathbb{Z}/p^r\mathbb{Z}$. Suppose that for
+at least two indices $i$ the least nonnegative representative of $x_i$ is coprime to $p$. Then
+there are units $a_1, \dots, a_k$ of $\mathbb{Z}/p^r\mathbb{Z}$ with
+$a_1 x_1 + \dots + a_k x_k = 0$.
 
 ## Depends on
 

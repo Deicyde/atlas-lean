@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.norm_sub_hurwitz_convergent_le
 ---
 
-# Norm sub hurwitz convergent le
+# Lakein's first theorem on Hurwitz convergents
 
-(First Lakein theorem) For every legal `k`, `|z - P_k / Q_k| ≤ 1 / |Q_k|^2`.
+**Lakein's first theorem on Hurwitz convergents.** Let $z$ be a complex number and let $P_k$
+and $Q_k$ be the convergent numerators and denominators of its Hurwitz continued fraction
+expansion. For every legal index $k$ for $z$ (the expansion has not terminated before step $k$),
+$|z - P_k / Q_k| \le 1 / |Q_k|^2$.
 
 ## Depends on
 
-- [Hurwitz Legal](hurwitz-legal.md)
-- [Hurwitz P](hurwitz-p.md)
-- [Hurwitz Q](hurwitz-q.md)
+- [Legal indices of the Hurwitz expansion](hurwitz-legal.md)
+- [Convergent numerators of the Hurwitz expansion](hurwitz-p.md)
+- [Convergent denominators of the Hurwitz expansion](hurwitz-q.md)
 
 ## Sources
 

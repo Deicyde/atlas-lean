@@ -5,20 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.exists_dense_set_large_lcm
 ---
 
-# Exists dense set large lcm
+# Dense sets with unusually large least common multiples
 
-Theorem 1 (negative answer to Erdős problem #442), existence portion. For
-every positive `C₀`, there is a set `A` (all sums run over `1 ≤ n ≤ x`, so whether
-`0 ∈ A` is irrelevant); an error `e(x) → 0` gives the eventual equality (11); and a
-positive `C₀`-dependent constant `K` gives the eventual LCM-sum bound (12). The informal
-optimality sentence is omitted because its precise formal content is delegated to Theorem 2(ii).
+**Dense sets with unusually large least common multiples.** Let $\operatorname{Log}_2$ and
+$\operatorname{Log}_3$ be the second and third iterated truncated logarithms. For a set $A$ of
+natural numbers and real $x$, write $S_A(x) = \sum_{n \in A,\ 1 \le n \le x} 1/n$, and write
+$L_A(x)$ for the sum of $1/\operatorname{lcm}(n, m)$ over all ordered pairs $(n, m)$ with
+$n, m \in A$, $1 \le n \le x$ and $1 \le m \le x$. Then for every real $C_0 > 0$ there is a set
+$A$ of natural numbers with the following two properties. First, there is a function
+$\varepsilon : \mathbb{R} \to \mathbb{R}$ with $\varepsilon(x) \to 0$ as $x \to \infty$ such that
+for all sufficiently large real $x$,
+$S_A(x) = \exp((C_0/2 + \varepsilon(x))(\operatorname{Log}_2 x)^{1/2} \operatorname{Log}_3 x)$.
+Second, there is a constant $K > 0$ such that $L_A(x) \le K\, S_A(x)^2$ for all sufficiently
+large real $x$.
+
+The source presents this as a negative answer to Erdős problem #442. Its accompanying claim that
+the exponent is optimal is made precise by Theorem 2(ii) and is stated separately.
 
 ## Depends on
 
-- [Lcm Reciprocal Sum](lcm-reciprocal-sum.md)
-- [Recip Sum Up To](recip-sum-up-to.md)
-- [Trunc Log2](trunc-log2.md)
-- [Trunc Log3](trunc-log3.md)
+- [Double sum of reciprocal least common multiples](lcm-reciprocal-sum.md)
+- [Harmonic sum of a set up to a bound](recip-sum-up-to.md)
+- [Second iterated truncated logarithm](trunc-log2.md)
+- [Third iterated truncated logarithm](trunc-log3.md)
 
 ## Sources
 

@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.exists_goldenRatio_pow_ge_factorial
 ---
 
-# Exists golden Ratio pow ge factorial
+# Every factorial is at most a positive power of the golden ratio
 
-The set defining `α n` is nonempty: some positive power of `φ` is at least `n!`.
+**Every factorial is at most a positive power of the golden ratio.** Let $\varphi$ be the
+golden ratio. For every natural number $n$ there is an integer $m \ge 1$ with $n! \le \varphi^m$.
+
+Thus the set of positive integers $m$ with $n! \le \varphi^m$, whose least element is the
+golden factorial exponent of $n$, is nonempty.
 
 ## Depends on
 

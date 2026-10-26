@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.convergentMatrix_nil
 ---
 
-# Convergent Matrix nil
+# Convergent matrix of the empty string
 
-The empty string has the identity convergent matrix.
+**Convergent matrix of the empty string.** The convergent matrix of the empty string is the
+$2 \times 2$ identity matrix.
 
 ## Depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

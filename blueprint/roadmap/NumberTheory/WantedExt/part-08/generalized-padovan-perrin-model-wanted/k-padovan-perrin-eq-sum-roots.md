@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.kPadovanPerrin_eq_sum_roots
 ---
 
-# K Padovan Perrin eq sum roots
+# Root formula for the $k$-Padovan–Perrin numbers
 
-Analytic formula for the `k`-Padovan–Perrin numbers `v n = v (n - 2) + k v (n - 3)` with an
-integer `k ≥ 2` (so `27 k² - 4 ≠ 0` and the roots `λ_i` of `z³ - z - k` are distinct): for
-`n ≥ 3`, `v n = ∑_i ((k α₀ + α₁) λ_iⁿ⁻¹ + (k α₁ + α₂) λ_iⁿ⁻² + k α₂ λ_iⁿ⁻³) / P'(λ_i)`. The paper
-prints the middle coefficient as `k α₁`; `k α₁ + α₂` is the coefficient `A₁` of its Theorem 3,
-and the printed form fails already for `k = 2`, `(α₀, α₁, α₂) = (0, 0, 1)`, `n = 4` (where it
-gives `0` while `v 4 = 1`).
+**Root formula for the $k$-Padovan–Perrin numbers.** Let $k \ge 2$ be an integer, let
+$P(z) = z^3 - z - k$, and let $v \colon \mathbb{N} \to \mathbb{C}$ satisfy
+$v(n + 3) = v(n + 1) + k\,v(n)$ for every $n$, that is, $v$ solves the Padovan–Perrin recurrence
+with $k_1 = 1$, $k_2 = k$, $p = 1$, $s = 2$. Put $A_0 = k\,v(0) + v(1)$, $A_1 = k\,v(1) + v(2)$
+and $A_2 = k\,v(2)$. Then for every $n \ge 3$,
+
+$$v(n) = \sum_\lambda \frac{A_0\lambda^{n-1} + A_1\lambda^{n-2} + A_2\lambda^{n-3}}{P'(\lambda)},$$
+
+where $\lambda$ runs over the complex roots of $P$ counted with multiplicity.
+
+Since $27 k^2 - 4 \neq 0$, the roots of $P$ are distinct. The paper prints the middle coefficient
+as $k\,v(1)$; $k\,v(1) + v(2)$ is the coefficient $A_1$ of its Theorem 3, and the printed form
+fails already for $k = 2$, $(v(0), v(1), v(2)) = (0, 0, 1)$, $n = 4$, where it gives $0$ while
+$v(4) = 1$.
 
 ## Depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

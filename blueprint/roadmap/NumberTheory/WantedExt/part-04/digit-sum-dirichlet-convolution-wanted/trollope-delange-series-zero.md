@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.trollopeDelangeSeries_zero
 ---
 
-# Trollope Delange Series zero
+# Delange's series vanishes at zero
 
-`h(0) = 0`.
+**Delange's series vanishes at zero.** For every natural number $q$, Delange's series $h$ in
+base $q$ satisfies $h(0) = 0$.
 
 ## Depends on
 
-- [Trollope Delange Series](trollope-delange-series.md)
+- [Delange's series](trollope-delange-series.md)
 
 ## Proof depends on
 
-- [Trollope Delange Integral](trollope-delange-integral.md)
-- [Trollope Delange Integral zero](trollope-delange-integral-zero.md)
+- [Delange's function](trollope-delange-integral.md)
+- [Delange's function vanishes at zero](trollope-delange-integral-zero.md)
 
 ## Sources
 

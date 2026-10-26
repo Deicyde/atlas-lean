@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinFundamental_of_lt
 ---
 
-# Padovan Perrin Fundamental of lt
+# Initial values of the generalized Padovan–Perrin fundamental system
 
-Initial values of the Fibonacci fundamental system: `v⁽ʲ⁾ n = δ_{n+1, j}` for `n < s + p`.
+**Initial values of the generalized Padovan–Perrin fundamental system.** Let $R$ be a
+commutative semiring, $k_1, k_2 \in R$ and $p, s, j \in \mathbb{N}$. For every $n < s + p$, the
+$j$-th sequence $v^{(j)}$ of the Fibonacci fundamental system satisfies $v^{(j)}_n = 1$ if
+$n + 1 = j$ and $v^{(j)}_n = 0$ otherwise.
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
 
 ## Proof depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

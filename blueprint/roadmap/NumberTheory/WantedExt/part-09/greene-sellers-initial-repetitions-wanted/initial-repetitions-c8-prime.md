@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC8Prime
 ---
 
-# Initial Repetitions C8 Prime
+# The initial-repetitions partition function $c_8'$
 
-`c₈'(n)`: the number of partitions of `n`, with a possibly distinguished part, in which
-either (a) all parts are even and distinct and no part is distinguished, or (b) a distinguished
-even part `2m` (`m ≥ 1`) is present together with all smaller even parts, even parts `≤ m` appear
-at most twice, odd parts `≤ m` are distinct, and every part greater than `m` is even and distinct.
-Case (b) is counted once for each admissible `m`.
+**The initial-repetitions partition function $c_8'$.** For $n \ge 0$, $c_8'(n)$ is the number
+of partitions of $n$ into distinct even parts plus the sum, over $m = 1, \dots, n$, of the number
+of partitions of $n$ in which every even number $2i$ with $1 \le i \le m$ is a part, every even
+part at most $m$ appears at most twice, every odd part at most $m$ appears exactly once, and every
+part greater than $m$ is even and appears exactly once.
+
+Equivalently, $c_8'(n)$ counts partitions of $n$ with a possibly distinguished part: either all
+parts are even and distinct and no part is distinguished, or a part $2m$ is distinguished and the
+conditions above hold for $m$.
 
 ## Depends on
 

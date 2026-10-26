@@ -5,13 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.mul_mod_eq_mul_mod_of_mul_lt
 ---
 
-# Mul mod eq mul mod of mul lt
+# Pulling a factor out of a remainder
 
-For naturals `a`, `y`, and `C`, if `a * y < C`, then reducing `a * y` modulo `C` is the same
-as multiplying `a` by the reduction of `y` modulo `C`. The paper's upper bound is exactly
-`hbound`, while its lower bound `0 ≤ a * y` is omitted because it is automatic in `ℕ`. The
-paper's products and modular reductions are Lean multiplication and natural remainder `%`;
-apart from the automatic nonnegativity clause, there is no deviation.
+**Pulling a factor out of a remainder.** Let $a$, $y$ and $C$ be natural numbers with $ay < C$.
+Then $(ay) \bmod C = a \cdot (y \bmod C)$.
 
 ## Depends on
 

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.markov_eq_of_characteristic_number_eq
 ---
 
-# Markov eq of characteristic number eq
+# Markov triples with a common characteristic number agree up to order
 
-Proposition 1.11 (classical, `k = 0`): let `m ≥ 5` be a Markov number and `(m, m₂, m₃)`,
-`(m, n₂, n₃)` Markov triples with maximum `m`. If they share a characteristic number, i.e.
-some `0 < x < m` satisfies `m₂ x ≡ ± m₃` and `n₂ x ≡ ± n₃ (mod m)`, then
-`{m₂, m₃} = {n₂, n₃}`.
+**Markov triples with a common characteristic number agree up to order.** Let $m \ge 5$
+and let $(m, m_2, m_3)$ and $(m, n_2, n_3)$ be Markov triples (that is, $0$-generalized Markov
+triples) with $m_2, m_3, n_2, n_3 \le m$. Suppose some integer $x$ with $0 < x < m$ satisfies
+$m_2 x \equiv \pm m_3 \pmod{m}$ and $n_2 x \equiv \pm n_3 \pmod{m}$, where the two signs are
+chosen independently. Then $(m_2, m_3) = (n_2, n_3)$ or $(m_2, m_3) = (n_3, n_2)$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_Haugland_unpublished_1993
 ---
 
-# Upper Bound Haugland unpublished 1993
+# Statement of Haugland's unpublished 1993 upper bound for the minimum-overlap constant
 
-Source-reported unpublished 1993 Haugland upper bound.
+**Statement of Haugland's unpublished 1993 upper bound for the minimum-overlap constant.**
+The proposition that the continuous Erdős minimum-overlap constant $C_{1b}$ satisfies
+$C_{1b} \le 0.385694$.
 
 ## Depends on
 

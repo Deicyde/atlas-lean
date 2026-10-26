@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_five_regular_sum_twentyfive
 ---
 
-# Ramanujan Tau succ mod Eq five regular sum twentyfive
+# Ramanujan's $\tau$ modulo $25$ via $5$-regular partitions
 
-`τ(n + 1) ≡ ∑ (-1)^(s + t) (2s + 1) R_5(r) (mod 25)` over `n = r + 5 s(s + 1)/2 + 5 P(t)`
-with `r, s ≥ 0`.
+**Ramanujan's $\tau$ modulo $25$ via $5$-regular partitions.** Let $\tau = \tau_{24}$ be
+Ramanujan's tau function, where $\tau_k$ is the generalized tau function. Let $R_5(m)$ be the
+number of partitions of $m$ with no part divisible by $5$, and let $P(t) = t(3t - 1)/2$ for
+integers $t$. For every integer $n \ge 1$,
+
+$$\tau(n + 1) \equiv \sum (-1)^{s + t} (2s + 1) R_5\big(n - 5s(s + 1)/2 - 5P(t)\big) \pmod{25},$$
+
+the sum running over all integers $s \ge 0$ and $t$ with $5s(s + 1)/2 + 5P(t) \le n$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

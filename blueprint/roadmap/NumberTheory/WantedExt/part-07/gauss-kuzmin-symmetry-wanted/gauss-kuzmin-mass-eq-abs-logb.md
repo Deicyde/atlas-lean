@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gaussKuzminMass_eq_abs_logb
 ---
 
-# Gauss Kuzmin Mass eq abs logb
+# Explicit Gauss–Kuzmin mass of a string
 
-Explicit formula: `P_GK(a) = P_GK(a⃖) = |log₂(1 + (-1)ⁿ/((p + q)(q' + q)))|` with `n = |a|`.
+**Explicit Gauss–Kuzmin mass of a string.** Let $a$ be a string of $n$ positive integers, let
+$p$, $q'$ and $q$ be the upper-right, lower-left and lower-right entries of its convergent matrix
+$C(a)$, and let $\overleftarrow{a}$ be the reverse of $a$. Then the Gauss–Kuzmin masses satisfy
+$P_{GK}(a) = P_{GK}(\overleftarrow{a})$ and
+$P_{GK}(a) = \left|\log_2\left(1 + \frac{(-1)^n}{(p + q)(q' + q)}\right)\right|$.
 
 ## Depends on
 
-- [Convergent Matrix](convergent-matrix.md)
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Convergent matrix](convergent-matrix.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

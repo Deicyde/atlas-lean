@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.strictPrimitiveExponent_of_not_mem
 ---
 
-# Strict Primitive Exponent of not mem
+# Vanishing of the strictly primitive exponent
 
-`l_p = 0` for `p ∉ S(d)` (in particular for every non-prime `p`).
+**Vanishing of the strictly primitive exponent.** Let $d$ be an integer and let $S(d)$ be the
+set of primes $p$ for which $|x^2 - d y^2| = p^l$ has a strictly primitive integral solution
+($x$ and $d y$ coprime) for some integer $l > 0$. Let $l_p$ be the least such $l$ when
+$p \in S(d)$, and $l_p = 0$ otherwise. Then $l_p = 0$ for every natural number $p \notin S(d)$,
+in particular for every $p$ that is not prime.
 
 ## Depends on
 
-- [Strict Primitive Exponent](strict-primitive-exponent.md)
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Strictly primitive exponent](strict-primitive-exponent.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

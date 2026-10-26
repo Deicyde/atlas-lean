@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHarmonic_succ
 ---
 
-# Generalized Harmonic succ
+# Recurrence for generalized harmonic numbers
 
-Recurrence `H_{n+1}^{(s)} = H_n^{(s)} + 1 / (n+1)^s`.
+**Recurrence for generalized harmonic numbers.** For every real $s$ and every natural number
+$n$, the generalized harmonic numbers $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ satisfy
+$H_{n+1}^{(s)} = H_n^{(s)} + 1/(n+1)^s$.
 
 ## Depends on
 
-- [Generalized Harmonic](generalized-harmonic.md)
+- [Generalized harmonic numbers](generalized-harmonic.md)
 
 ## Sources
 

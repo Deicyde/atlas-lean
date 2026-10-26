@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.basePDigit_div_periodic_one
 ---
 
-# Base PDigit div periodic one
+# Digits of $m/d$ after the radix point are constant
 
-For every positive integer `m`, the base-`p` expansion of `m/d` is periodic with period `1`
-right after the radix point: `[p^{-(k+1)}](m/d) = [p^{-k}](m/d)` for all `k ≥ 1`. The paper's
-odd prime `p` is relaxed to any prime (for `p = 2` only `d = 1` occurs).
+**Digits of $m/d$ after the radix point are constant.** Let $p$ be a prime, $d$ a divisor of
+$p - 1$, and write $[p^j](x)$ for the $j$-th base-$p$ digit of a rational number $x$. For every
+positive integer $m$ and every integer $k \ge 1$, $[p^{-(k+1)}](m/d) = [p^{-k}](m/d)$; that is,
+the base-$p$ expansion of $m/d$ is periodic with period $1$ right after the radix point.
+
+The source assumes $p$ odd; for $p = 2$ only $d = 1$ occurs.
 
 ## Depends on
 
-- [Base PDigit](base-pdigit.md)
+- [Base-$p$ digits of a rational number](base-pdigit.md)
 
 ## Sources
 

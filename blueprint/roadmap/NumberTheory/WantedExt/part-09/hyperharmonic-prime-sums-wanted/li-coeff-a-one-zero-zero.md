@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffA_one_zero_zero
 ---
 
-# Li Coeff A one zero zero
+# The coefficient $a(1, 0, 0)$
 
-Initial value `a(1, 0, 0) = 1`.
+**The coefficient $a(1, 0, 0)$.** The coefficient $a(1, 0, 0)$ of Li's Lemma 3 equals $1$.
 
 ## Depends on
 
-- [Li Coeff A](li-coeff-a.md)
+- [Li's coefficients $a(r, m, j)$](li-coeff-a.md)
 
 ## Sources
 

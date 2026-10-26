@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hFullEulerProduct
 ---
 
-# H Full Euler Product
+# The Euler product $\Pi_j$ for $h$-full polynomials
 
-`Π_j = ∏_P (1 - 1/|P|)(1 + 1/(|P|(1 - (q^{1/h}ξ^j)^{-deg P})))`, the product over monic
-irreducible `P` taken factor by factor (Equation (46)).
+**The Euler product $\Pi_j$ for $h$-full polynomials.** Let $F$ be a finite field with $q$
+elements, let $h$ and $j$ be natural numbers and let $\xi$ be a complex number. Write
+$\rho_j = q^{1/h} \xi^j$, where $q^{1/h}$ is the positive real $h$-th root of $q$ (read as $1$
+when $h = 0$), read $\rho_j^{-1}$ as $0$ when $\rho_j = 0$, and write $|P| = q^{\deg P}$ for a
+monic irreducible polynomial $P$ over $F$. Then $\Pi_j$ is the complex number
+
+$$\Pi_j = \prod_P (1 - |P|^{-1})\Bigl(1 + \frac{1}{|P|\,(1 - (\rho_j^{-1})^{\deg P})}\Bigr),$$
+
+the product running over all monic irreducible polynomials $P$ over $F$ (Equation (46)), where
+$1/0$ is read as $0$, and the product is taken to be $1$ if it does not converge unconditionally.
 
 ## Depends on
 
@@ -16,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [H Full Root](h-full-root.md)
-- [Monic Irreducible](monic-irreducible.md)
-- [Poly Norm](poly-norm.md)
+- [The pole parameter $q^{1/h}\xi^j$](h-full-root.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

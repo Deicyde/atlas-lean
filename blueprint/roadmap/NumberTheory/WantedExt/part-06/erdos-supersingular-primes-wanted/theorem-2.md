@@ -5,18 +5,23 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosSupersingularPrimesWanted.ErdosSupersingularPrimes.theorem_2
 ---
 
-# Theorem 2
+# Bennett–Siksek theorem on perfect powers in arithmetic progressions
 
-Statement of Theorem 2:
+**Bennett–Siksek theorem on perfect powers in arithmetic progressions.** Let $k_0$ be the
+threshold constant of this module. For every natural number $k \ge k_0$, every natural number
+$l$ that is prime, and all integers $n$, $d$, $y$ with $\gcd(n, d) = 1$ and
 
-There is an effectively computable absolute constant `k₀` such
-that if `k ≥ k₀` is a positive integer, then any `Solution` with prime exponent `l` satisfies
-either `y = 0` or `d = 0` or `l ≤ exp(10 ^ k)`.
+$$\prod_{i=0}^{k-1} (n + i d) = y^l,$$
+
+we have $y = 0$ or $d = 0$ or $l \le \exp(10^k)$.
+
+The source asserts that $k_0$ is an effectively computable absolute constant; the formal
+statement leaves $k_0$ to be supplied and does not enforce computability.
 
 ## Depends on
 
-- [Solution](solution.md)
-- [K₀](k.md)
+- [Solutions of the Erdős equation for products of arithmetic progressions](solution.md)
+- [The threshold constant $k_0$ in the Bennett–Siksek theorem](k.md)
 
 ## Sources
 

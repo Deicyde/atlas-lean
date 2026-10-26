@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.norm_eq_pow_natDegree
 ---
 
-# Norm eq pow nat Degree
+# Norm of a nonzero polynomial
 
-The norm of a nonzero `f ∈ F[T]` is `|F| ^ deg(f)`; see Equation (1.1) in the paper.
+**Norm of a nonzero polynomial.** Let $F$ be a finite field and give $F[T]$ its ring norm.
+For every nonzero $f \in F[T]$, the norm of $f$ is $|f| = |F|^{\deg f}$, where $|F|$ is the number
+of elements of $F$.
 
 ## Depends on
 
-- [Ring Norm](ring-norm.md)
+- [The norm on $F(T)$](ring-norm.md)
 
 ## Proof depends on
 
-- [Card Quot span eq pow nat Degree](card-quot-span-eq-pow-nat-degree.md)
-- [Norm eq card Quot](norm-eq-card-quot.md)
+- [Size of the quotient of $F(T)$ by a nonzero polynomial](card-quot-span-eq-pow-nat-degree.md)
+- [The norm of a polynomial is the size of its quotient ring](norm-eq-card-quot.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted](../../../../../sources/v2/WantedExt.md)
+- W. Sawin and M. Shusterman, *On the Chowla and twin primes conjectures over $\mathbb{F}_q[T]$*, Annals of Math. 196 (2) 2022, Equation (1.1).

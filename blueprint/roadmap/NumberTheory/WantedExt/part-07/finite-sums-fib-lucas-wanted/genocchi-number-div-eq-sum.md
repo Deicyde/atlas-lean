@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.genocchiNumber_div_eq_sum
 ---
 
-# Theorem 22
+# Genocchi numbers via Stirling numbers of the second kind
 
-**Theorem 22**: `Gₙ/n = ∑_{j=0}^{n-1} (-1)ʲ j!/2ʲ
-S(n-1, j)` for `n ≥ 1`, with `S` the Stirling numbers of
-the second kind, as a rational identity.
+**Genocchi numbers via Stirling numbers of the second kind.** For every natural number
+$n \ge 1$, the Genocchi number $G_n$ satisfies, in $\mathbb{Q}$,
+
+$$
+\frac{G_n}{n} = \sum_{j=0}^{n-1} (-1)^j \frac{j!}{2^j} S(n-1, j),
+$$
+
+where $S(n-1, j)$ are the Stirling numbers of the second kind.
 
 ## Depends on
 

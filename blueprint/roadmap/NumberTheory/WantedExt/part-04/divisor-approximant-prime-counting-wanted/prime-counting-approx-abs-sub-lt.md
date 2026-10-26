@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.primeCountingApprox_abs_sub_lt
 ---
 
-# Prime Counting Approx abs sub lt
+# Prime-counting function from the smooth divisor count
 
-Theorem 2: with `τ̃` from (1), `π̃(n) = ∑_{k=2}^{n} e^{-k(τ̃(k) - 2)}` satisfies
-`|π̃(n) - π(n)| < 0.7129749140934` for all `n ≥ 2` (the record's extraction drops the absolute
-value bars; the constant is `0.684 + 1/(e³(e - 1))`, the sum of the one-sided bounds, as the
-two-sided reading requires).
+**Prime-counting function from the smooth divisor count.** For a natural number $k$ let
+
+$$\tilde\tau(k) = \sum_{j=1}^{k} \exp\left(-\frac{\pi^2}{2} k j^3 \sin^2\frac{k\pi}{j}\right),$$
+
+and for $n \ge 2$ let $\tilde\pi(n) = \sum_{k=2}^{n} e^{-k(\tilde\tau(k) - 2)}$. Then for every
+natural number $n \ge 2$, $|\tilde\pi(n) - \pi(n)| < 0.7129749140934$, where $\pi(n)$ is the
+number of primes at most $n$.
+
+The constant is $0.684 + 1/(e^3(e - 1))$ truncated to thirteen decimal places, the sum of the
+two one-sided bounds, as the two-sided bound requires.
 
 ## Depends on
 

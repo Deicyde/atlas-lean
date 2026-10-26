@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.orderOfTwo_odd_medium_count_lt
 ---
 
-# Lemma 10
+# Primes with odd order of 2 of medium size
 
-**Lemma 10**, second part: `Q_{a₁,a₂}(x) < M x^{2a₂}` for `x ≥ 337`, with `a₁ = 0.4`,
-`a₂ = 0.48`, `M = 0.00754`.
+**Primes with odd order of 2 of medium size.** Write $\ell_2(p)$ for the multiplicative
+order of $2$ modulo a prime $p$. For every real $x \ge 337$, the number of primes $p$ with
+$2 < p \le x$ such that $\ell_2(p)$ is odd and $p^{2/5} < \ell_2(p) \le p^{12/25}$ is less than
+$0.00754\, x^{24/25}$.
 
 ## Depends on
 

@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.eisensteinRealPeriod_eq_beta_gamma
 ---
 
-# Eisenstein Real Period eq beta gamma
+# Beta and Gamma values of the real Eisenstein period
 
-The real period `ϖ₁ = ∫₀¹ (1 - t³)^(-2/3) dt` of the Eisenstein lattice satisfies
-`ϖ₁ = B(1/3, 1/3)/3 = Γ(1/3)³/(2π√3) = 2^(1/3)/(3√3) · B(1/6, 1/2)`.
-
-`B` is Mathlib's `Complex.betaIntegral`; the identities are stated in `ℂ` for that reason.
+**Beta and Gamma values of the real Eisenstein period.** The real number
+$\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$ satisfies
+$\varpi_1 = \frac13 B(\frac13, \frac13) = \frac{\Gamma(1/3)^3}{2\pi\sqrt3}
+= \frac{2^{1/3}}{3\sqrt3} B(\frac16, \frac12)$, where $B$ is the Beta function.
 
 ## Depends on
 

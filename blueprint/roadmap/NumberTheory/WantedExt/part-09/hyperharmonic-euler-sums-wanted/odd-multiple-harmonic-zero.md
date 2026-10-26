@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.oddMultipleHarmonic_zero
 ---
 
-# Odd Multiple Harmonic zero
+# Odd multiple harmonic numbers of depth zero
 
-`O_n(0) = 1`.
+**Odd multiple harmonic numbers of depth zero.** For every natural number $n$, the
+depth-zero odd harmonic number $O_n(0)$ equals $1$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

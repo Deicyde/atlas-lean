@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_two_pow_mul
 ---
 
-# Theorem 10
+# No $(2,\ell)$-near-perfect number of the form $2^a p$
 
-**Theorem 10**: `2^a p` (`p` an odd prime) is not
-`[2,ℓ]`-near-perfect.
+**No $[2,\ell]$-near-perfect number of the form $2^a p$.** Let $\ell$ and $a$ be natural
+numbers with $\ell \ge 1$, and let $p$ be an odd prime. Then $2^a p$ is not
+$[2,\ell]$-near-perfect.
 
 ## Depends on
 
-- [Is KLNear Perfect](is-klnear-perfect.md)
+- [$(k,\ell)$-near-perfect numbers](is-klnear-perfect.md)
 
 ## Sources
 

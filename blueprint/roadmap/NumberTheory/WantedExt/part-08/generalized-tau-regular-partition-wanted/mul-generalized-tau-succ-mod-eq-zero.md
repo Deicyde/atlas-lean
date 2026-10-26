@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.mul_generalizedTau_succ_modEq_zero
 ---
 
-# Mul generalized Tau succ mod Eq zero
+# Divisibility of $n\,\tau_k(n + 1)$ by $|k|$
 
-`n τ_k(n + 1) ≡ 0 (mod |k|)` for `|k| ≥ 2`.
+**Divisibility of $n\,\tau_k(n + 1)$ by $|k|$.** Let $\tau_k$ be the generalized tau function.
+For every positive integer $n$ and every integer $k$ with $|k| \ge 2$,
+$n\,\tau_k(n + 1) \equiv 0 \pmod{|k|}$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

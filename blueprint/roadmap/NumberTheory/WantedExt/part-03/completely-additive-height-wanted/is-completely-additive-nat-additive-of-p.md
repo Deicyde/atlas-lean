@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.isCompletelyAdditiveNat_additiveOfPrimeValues
 ---
 
-# Is Completely Additive Nat additive Of Prime Values
+# The extension from prime values is completely additive
 
-The extension is completely additive.
+**The extension from prime values is completely additive.** For every function
+$v : \mathbb{N} \to \mathbb{N}$, let $H_v$ be the function with $H_v(m) = \sum_p a_p v(p)$ for
+$m = \prod_p p^{a_p}$. Then $H_v$ is completely additive on the positive integers:
+$H_v(ab) = H_v(a) + H_v(b)$ for all integers $a, b \ge 1$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
-- [Additive Of Prime Values](additive-of-prime-values.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
+- [Completely additive function with prescribed prime values](additive-of-prime-values.md)
 
 ## Sources
 

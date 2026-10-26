@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.soCS_even_span_infinite
 ---
 
-# So CS even span infinite
+# Infinitely many solutions with $c - a$ even
 
-There are infinitely many SoCS solutions with `c - a` even.
+**Infinitely many solutions with $c - a$ even.** There are infinitely many solutions
+$(a, b, c)$ of the sum of consecutive squares problem with $c - a$ even.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

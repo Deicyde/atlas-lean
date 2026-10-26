@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.integralDivX_spec
 ---
 
-# Integral Div X spec
+# The formal integral against $du/u$ is a right inverse of $z \, d/dz$
 
-`integralDivX h` has no constant term and `z · d/dz (integralDivX h) = h`
-whenever `h` has no constant term.
+**The formal integral against $du/u$ is a right inverse of $z \, d/dz$.** Let
+$h \in \mathbb{R}[[z]]$ be a power series with zero constant term, and let
+$I(h) = \sum_{n \ge 1} \frac{[z^n] h}{n} z^n$ be its formal integral $\int_0^z h(u) \, du / u$,
+where $[z^n] h$ is the coefficient of $z^n$ in $h$. Then $I(h)$ has zero constant term and
+$z \, \frac{d}{dz} I(h) = h$.
 
 ## Depends on
 
-- [Integral Div X](integral-div-x.md)
+- [Formal integral against $du/u$](integral-div-x.md)
 
 ## Sources
 

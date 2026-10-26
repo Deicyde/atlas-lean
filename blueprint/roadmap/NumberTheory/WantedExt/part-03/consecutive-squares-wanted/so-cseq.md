@@ -5,18 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.SoCSEq
 ---
 
-# So CSEq
+# The sum of consecutive squares equation
 
-The Sum of Consecutive Squares (SoCS) equation
-`(a+1)^2 + ⋯ + b^2 = (b+1)^2 + ⋯ + c^2`, written in cleared square-pyramidal
-form `2 * P b = P a + P c` with `6 * P x = x * (x + 1) * (2 * x + 1)`.
+**The sum of consecutive squares equation.** Integers $a$, $b$, $c$ satisfy the sum of
+consecutive squares (SoCS) equation when $2\,b(b+1)(2b+1) = a(a+1)(2a+1) + c(c+1)(2c+1)$.
 
-Verified verbatim against the primary source (arXiv:2411.08398, the TeX
-source of the published article): equation (1) there is
-`(a+1)^2 + (a+2)^2 + ⋯ + b^2 = (b+1)^2 + (b+2)^2 + ⋯ + c^2`, restated with
-`P_n = n(n+1)(2n+1)/6` as `P_b - P_a = P_c - P_b`, i.e. equation (2)
-`P_a + P_c = 2 P_b`, under the range `0 < a + 1 < b < c`. The form used here
-is (2) multiplied through by `6`.
+With $P_n = n(n+1)(2n+1)/6$ this is $P_a + P_c = 2P_b$ multiplied by $6$. For $a < b < c$ it is
+equivalent to $(a+1)^2 + (a+2)^2 + \dots + b^2 = (b+1)^2 + (b+2)^2 + \dots + c^2$, since
+$P_n - P_{n-1} = n^2$. No order or sign condition on $a$, $b$, $c$ is imposed.
 
 ## Depends on
 

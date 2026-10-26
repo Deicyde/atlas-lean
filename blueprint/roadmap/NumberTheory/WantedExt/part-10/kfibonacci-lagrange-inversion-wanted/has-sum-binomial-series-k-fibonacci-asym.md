@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_binomial_series_kFibonacci_asymptotic
 ---
 
-# Theorem 8
+# Difference binomial series at the $k$-Fibonacci root
 
-**Theorem 8.** For `k ≥ 2` and `n ≥ 0` with `n ≠ 1`, the asymptotic equivalent
-`As_n^{(k)} = (ρ_k - 1) / ((k + 1)ρ_k - 2k) ρ_k^{n - 1}` of `F_n^{(k)}` equals
-`2^{n - 2} ∑_{ℓ ≥ 0} (binom((k + 1)ℓ - n, ℓ) - binom((k + 1)ℓ - n, ℓ - 1)) 2^{-(k + 1)ℓ}`.
+**Difference binomial series at the $k$-Fibonacci root.** Let $k \ge 2$ be a natural number
+and $\rho > 0$ a real number with $\rho^k = 1 + \rho + \cdots + \rho^{k-1}$, and for an integer
+$x$ and a natural number $j$ let $\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For every natural number
+$n \ne 1$ the series below converges absolutely and
 
-The `ℓ = 0` term `binom(-n, -1)` is `0` for `n ≠ 1` and is written as `0`.
+$$
+2^{n-2} \sum_{\ell \ge 0} \left(\binom{(k+1)\ell - n}{\ell} - \binom{(k+1)\ell - n}{\ell - 1}\right)
+2^{-(k+1)\ell} = \frac{\rho - 1}{(k+1)\rho - 2k} \rho^{n-1},
+$$
+
+where the term $\binom{(k+1)\ell - n}{\ell - 1}$ is taken to be $0$ for $\ell = 0$.
 
 ## Depends on
 

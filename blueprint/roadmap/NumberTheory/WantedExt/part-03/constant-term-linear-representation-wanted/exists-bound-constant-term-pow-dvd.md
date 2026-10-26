@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_bound_constantTerm_pow_dvd
 ---
 
-# Exists bound constant Term pow dvd
+# Divisibility of constant terms of powers is decided on a bounded prefix
 
-Whether `p` divides some `ct[P^n]` can be decided on a prefix whose length depends only on
-`p`, the number of variables and a bound on `deg P`.
+**Divisibility of constant terms of powers is decided on a bounded prefix.** Let $p$ be a
+prime, let $r$ and $d$ be natural numbers, and write $\operatorname{ct}[F]$ for the constant term
+of a Laurent polynomial $F$ and $\deg F$ for the largest absolute value of an exponent of a single
+variable in a monomial occurring in $F$ ($0$ if $F = 0$). There is a natural number $B$ such that
+for every Laurent polynomial $P$ in $r$ variables with integer coefficients and $\deg P \le d$, if
+$p$ divides $\operatorname{ct}[P^n]$ for some natural number $n$, then $p$ divides
+$\operatorname{ct}[P^{n_0}]$ for some natural number $n_0 < B$.
 
 ## Depends on
 
-- [Laurent Deg](laurent-deg.md)
+- [Degree of a Laurent polynomial](laurent-deg.md)
 
 ## Sources
 

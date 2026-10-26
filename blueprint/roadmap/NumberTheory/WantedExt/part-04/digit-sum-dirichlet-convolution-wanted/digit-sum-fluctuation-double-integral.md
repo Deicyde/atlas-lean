@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digitSumFluctuationDoubleIntegral
 ---
 
-# Digit Sum Fluctuation Double Integral
+# Double integral of the Trollope–Delange fluctuation
 
-`H(x) = ∫_1^x ∫_1^u F(log v / log q) dv / v du / u`.
+**Double integral of the Trollope–Delange fluctuation.** For a natural number $q$ and a real
+number $x$, let $F$ be the Trollope–Delange fluctuation in base $q$. Then $H(x)$ is the real number
+
+$$H(x) = \int_1^x \frac{1}{u} \left( \int_1^u \frac{F(\log v / \log q)}{v} \, dv \right) du,$$
+
+where the integrals are oriented, so that $\int_a^b = -\int_b^a$ when $b < a$.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

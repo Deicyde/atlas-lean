@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.watsonCosSum
 ---
 
-# Watson Cos Sum
+# Generalized Watson trigonometric sum
 
-`watsonCosSum n ν` is the real finite sum from the paper: the index `l` runs from
-`1` through `n - 1`, and the summand is `cos (2πνl/n) / sin (πl/n)`.
+**Generalized Watson trigonometric sum.** For natural numbers $n$ and $\nu$, $C_n(\nu)$ is the real
+number
+
+$$
+C_n(\nu) = \sum_{l=1}^{n-1} \frac{\cos(2\pi\nu l/n)}{\sin(\pi l/n)}.
+$$
+
+For $n \le 1$ the sum is empty and $C_n(\nu) = 0$.
 
 ## Depends on
 

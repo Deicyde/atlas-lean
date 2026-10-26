@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pseudoGreedyRemainder
 ---
 
-# Pseudo Greedy Remainder
+# Pseudo-greedy remainder sequence
 
-The remainder sequence `x_n` of the pseudo-greedy expansion of a real number `r`, indexed
-from `0`: `x 0 = r` and `x (n + 1) = x n - 1 / a n` with `a n = ⌊(x n)⁻¹ + 1⌉`, the integer
-nearest to `(x n)⁻¹ + 1`.
+**Pseudo-greedy remainder sequence.** For a real number $r$, the remainder sequence
+$(x_n)_{n \ge 0}$ of the pseudo-greedy expansion of $r$ is defined by $x_0 = r$ and
+$x_{n+1} = x_n - 1/a_n$, where $a_n = \lfloor x_n^{-1} + 1 + 1/2 \rfloor$ is the integer
+nearest to $x_n^{-1} + 1$, with halves rounded up.
+
+Here $0^{-1}$ and $1/0$ are read as $0$.
 
 ## Depends on
 

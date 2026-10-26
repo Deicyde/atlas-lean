@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_dvd_sq_sub_four_of_large_prime
 ---
 
-# Not dvd sq sub four of large prime
+# Large odd primes do not divide $k^2 - 4$
 
-Proposition 4.15: for an odd prime `p`, if `k ≥ 4` is even and `p > k/2 + 1`, or `k` is
-odd and `p > k + 2`, then `k² - 4 ≢ 0 (mod p)`.
+**Large odd primes do not divide $k^2 - 4$.** Let $p$ be an odd prime and $k$ a natural
+number. If either $k \ge 4$ is even and $p > k/2 + 1$, or $k$ is odd and $p > k + 2$, then $p$
+does not divide $k^2 - 4$.
 
 ## Depends on
 

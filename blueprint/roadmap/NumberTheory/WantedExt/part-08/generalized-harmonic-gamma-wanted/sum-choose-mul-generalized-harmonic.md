@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_generalizedHarmonic
 ---
 
-# Sum choose mul generalized Harmonic
+# Binomially weighted sums of generalized harmonic numbers
 
-Sums of generalized harmonic numbers weighted by binomial coefficients: for every integer
-`m ≥ 0` and real `α`,
-`∑_{j=1}^{n-1} C(j, m) H_j^{(α)} = C(n, m+1) H_n^{(α)} - (1/(m+1)!) ∑_{r=0}^{m+1}
-[m+1, r] (-1)^{m+1-r} H_n^{(α-r)}`, with `[m+1, r]` the unsigned Stirling numbers of the first
-kind (`Nat.stirlingFirst`).
+**Binomially weighted sums of generalized harmonic numbers.** Write $[a, b]$ for the unsigned
+Stirling number of the first kind, the number of permutations of $a$ elements with exactly $b$
+cycles, and, for real $t$ and a natural number $n$, write $H_n^{(t)} = \sum_{k=1}^{n} 1/k^t$ for
+the generalized harmonic number. For all natural numbers $m$ and $n$ and every real $\alpha$,
+
+$$\sum_{j=1}^{n-1} \binom{j}{m} H_j^{(\alpha)} = \binom{n}{m+1} H_n^{(\alpha)} -
+\frac{1}{(m+1)!} \sum_{r=0}^{m+1} [m+1, r] (-1)^{m+1-r} H_n^{(\alpha-r)}.$$
 
 ## Depends on
 
-- [Generalized Harmonic](generalized-harmonic.md)
+- [Generalized harmonic numbers](generalized-harmonic.md)
 
 ## Sources
 

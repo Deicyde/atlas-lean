@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.genMarkovCongruenceCount_zero_five
 ---
 
-# Gen Markov Congruence Count zero five
+# The congruence $x^2 + 1 \equiv 0 \pmod 5$ has two solutions
 
-Characteristic value: `x² + 1 ≡ 0 (mod 5)` has the two solutions `2, 3`.
+**The congruence $x^2 + 1 \equiv 0 \pmod 5$ has two solutions.** Exactly two integers $x$
+with $0 \le x < 5$ satisfy $x^2 + 1 \equiv 0 \pmod 5$.
+
+They are $x = 2$ and $x = 3$.
 
 ## Depends on
 
-- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
+- [Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$](gen-markov-congruence-count.md)
 
 ## Sources
 

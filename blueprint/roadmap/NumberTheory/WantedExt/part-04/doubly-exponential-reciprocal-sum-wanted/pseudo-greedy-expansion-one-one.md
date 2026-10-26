@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.pseudoGreedyExpansion_one_one
 ---
 
-# Pseudo Greedy Expansion one one
+# Second term of the pseudo-greedy expansion of $1$
 
-The pseudo-greedy expansion of `1` continues with `a 1 = 3` (remainder `1 - 1/2 = 1/2`).
+**Second term of the pseudo-greedy expansion of $1$.** The pseudo-greedy expansion
+$(a_n)_{n \ge 0}$ of $1$ satisfies $a_1 = 3$.
+
+The remainder after the first term $a_0 = 2$ is $1 - 1/2 = 1/2$.
 
 ## Depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
 
 ## Proof depends on
 
-- [Pseudo Greedy Expansion one zero](pseudo-greedy-expansion-one-zero.md)
-- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
-- [Pseudo Greedy Remainder succ](pseudo-greedy-remainder-succ.md)
+- [The pseudo-greedy expansion of 1 starts with 2](pseudo-greedy-expansion-one-zero.md)
+- [Pseudo-greedy remainder sequence](pseudo-greedy-remainder.md)
+- [Remainder recursion](pseudo-greedy-remainder-succ.md)
 
 ## Sources
 

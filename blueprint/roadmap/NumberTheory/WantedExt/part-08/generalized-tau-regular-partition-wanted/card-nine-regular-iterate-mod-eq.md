@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.card_nine_regular_iterate_modEq
 ---
 
-# Card nine regular iterate mod Eq
+# Iterated congruences for 9-regular partitions modulo 3
 
-`R_9((r - 1) 4^(s-1) + (4^s - 1)/3) ≡ R_9(r) (mod 3)`, with the particular cases
-`R_9((4^s - 1)/3) ≡ 1`, `R_9(4^(s-1) + (4^s - 1)/3) ≡ 2`, `R_9(2·4^(s-1) + (4^s - 1)/3) ≡ 0`.
+**Iterated congruences for 9-regular partitions modulo 3.** Let $R_9(m)$ denote the number of
+partitions of $m$ in which no part is divisible by $9$, and let $N_s = (4^s - 1)/3$. For all
+positive integers $r$ and $s$, $R_9((r - 1) 4^{s-1} + N_s) \equiv R_9(r) \pmod 3$,
+$R_9(N_s) \equiv 1 \pmod 3$, $R_9(4^{s-1} + N_s) \equiv 2 \pmod 3$ and
+$R_9(2 \cdot 4^{s-1} + N_s) \equiv 0 \pmod 3$.
 
 ## Depends on
 

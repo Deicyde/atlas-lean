@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fareyStaircase_le_floor_div
 ---
 
-# Farey Staircase le floor div
+# Bounds comparing the Farey staircase with $\lfloor nx \rfloor / n$
 
-Lemma 8 (a): for `n ≥ 1`, `A_n(x) ≤ ⌊nx⌋/n ≤ A_n(x) + (log n)/n`.
+**Bounds comparing the Farey staircase with $\lfloor nx \rfloor / n$.** For every natural
+number $n \ge 1$ and every real number $x$, the Farey staircase $A_n$ of order $n$ satisfies
+$A_n(x) \le \lfloor nx \rfloor / n \le A_n(x) + (\log n)/n$, where $\log$ is the natural
+logarithm.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

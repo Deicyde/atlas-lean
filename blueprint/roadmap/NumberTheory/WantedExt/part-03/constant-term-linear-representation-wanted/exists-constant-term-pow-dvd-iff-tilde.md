@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_constantTerm_pow_dvd_iff_tilde
 ---
 
-# Exists constant Term pow dvd iff tilde
+# Divisibility of constant terms of powers of $P$ and $\tilde P$
 
-`p` divides some `ct[P^n]` if and only if it divides some `ct[P̃^n]`, and the same index
-works in the forward direction.
+**Divisibility of constant terms of powers of $P$ and $\tilde P$.** Let $p$ be a prime, let
+$a \ge 1$ and $\ell$ be natural numbers, and let $P$ and $\tilde P$ be Laurent polynomials in $r$
+variables with integer coefficients such that $P^{p^{a-1}} \equiv \tilde P(x^{p^\ell}) \pmod{p^a}$
+coefficientwise, where $\tilde P(x^q)$ is obtained from $\tilde P$ by replacing each monomial
+$x^e$ with $x^{qe}$. Write $\operatorname{ct}[F]$ for the constant term of a Laurent polynomial
+$F$. Then $p$ divides $\operatorname{ct}[P^{n_0}]$ for some natural number $n_0$ if and only if
+$p$ divides $\operatorname{ct}[\tilde P^{n_1}]$ for some natural number $n_1$; moreover, for every
+natural number $n_0$ with $p \mid \operatorname{ct}[P^{n_0}]$, also
+$p \mid \operatorname{ct}[\tilde P^{n_0}]$.
 
 ## Depends on
 

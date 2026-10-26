@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.GeneralizedFermatSolvable.swap
 ---
 
-# Swap
+# Swapping the first two exponents of a generalized Fermat equation
 
-Solvability is symmetric in the first two exponents.
+**Swapping the first two exponents of a generalized Fermat equation.** For natural numbers
+$m$, $n$, $r$, if $x^m + y^n = z^r$ has a solution in nonzero integers, then so does
+$x^n + y^m = z^r$.
 
 ## Depends on
 
-- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
+- [Solvable generalized Fermat equation](generalized-fermat-solvable.md)
 
 ## Sources
 

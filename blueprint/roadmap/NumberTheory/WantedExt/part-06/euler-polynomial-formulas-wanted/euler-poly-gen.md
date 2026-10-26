@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen
 ---
 
-# Euler Poly Gen
+# Euler polynomials of order α
 
-The order-`α` Euler polynomial
-`E_n^{(α)}(x) = ∑_{k=0}^n (n choose k) E_k^{(α)}(0) x^{n-k}`.
+**Euler polynomials of order α.** For a complex number $\alpha$ and $n \ge 0$, let
+$E_k^{(\alpha)}(0)$ denote the Euler numbers of order $\alpha$. The Euler polynomial of order
+$\alpha$ is the complex polynomial
+$E_n^{(\alpha)}(x) = \sum_{k=0}^{n} \binom{n}{k} E_k^{(\alpha)}(0) \, x^{n-k}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Euler Num Gen](euler-num-gen.md)
+- [Euler numbers of order α](euler-num-gen.md)
 
 ## Sources
 

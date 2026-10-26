@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_min_one_div_abs_sin_lt
 ---
 
-# Sum min one div abs sin lt
+# Bound for a truncated sum of reciprocal sines
 
-Lemma 3.3: for a prime `p`, an integer `a` with `p ∤ a`, and `√(p/π) < B < p/2`,
-`∑_{h=1}^{B} min{B, 1/|sin(π a h / p)|} < (p/π)(log(πB²/p) + 1 + πB/p) + pB(B+1)/(π(p² - B²))`.
+**Bound for a truncated sum of reciprocal sines.** Let $p$ be a prime, let $a$ be an integer
+not divisible by $p$, and let $B$ be an integer with $\sqrt{p/\pi} < B < p/2$. Then
+
+$$
+\sum_{h=1}^{B} \min\left\{B, \frac{1}{|\sin(\pi a h / p)|}\right\} <
+\frac{p}{\pi}\left(\log\frac{\pi B^2}{p} + 1 + \frac{\pi B}{p}\right) +
+\frac{pB(B+1)}{\pi(p^2 - B^2)}.
+$$
 
 ## Depends on
 

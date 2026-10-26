@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.matulaMax_succ
 ---
 
-# Matula Max succ
+# Recursion for the maximal Matula numbers
 
-`P(n + 1) = p_{P(n)}` for `n ≥ 4`.
+**Recursion for the maximal Matula numbers.** Write $p_i$ for the $i$-th prime, indexed from
+one ($p_1 = 2$). For every $n \ge 4$ the Gutman–Ivić maximal Matula numbers satisfy
+$P(n + 1) = p_{P(n)}$.
 
 ## Depends on
 
-- [Matula Max](matula-max.md)
-- [Nth Prime One](nth-prime-one.md)
+- [Gutman–Ivić maximal Matula numbers](matula-max.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

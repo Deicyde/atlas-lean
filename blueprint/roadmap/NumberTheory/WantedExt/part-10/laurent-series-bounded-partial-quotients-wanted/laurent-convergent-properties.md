@@ -5,24 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.laurentConvergent_properties
 ---
 
-# Laurent Convergent properties
+# Basic properties of the convergents of a Laurent series
 
-Standard properties of the convergents `P_n / Q_n` of an irrational `α ∈ 𝔽_q((x⁻¹))`
-(`P_n = laurentConvNum α (n + 1)`, `Q_n = laurentConvDen α (n + 1)`, `|y| = |x|^{-y.order}`):
-(i) `(β P_n + P_{n-1}) / (β Q_n + Q_{n-1}) = [b₀, …, b_n, β]` for `β ≠ 0` whose tails
-`[b_k, …, b_n, β]` (`1 ≤ k ≤ n`) are nonzero (with the totalized inverse `0⁻¹ = 0` the fold
-otherwise disagrees: `n = 2`, `β = -b₂⁻¹` gives `b₀` on the left and `b₀ + b₁⁻¹` on the right);
-(ii) `P_n Q_{n-1} - P_{n-1} Q_n = (-1)^{n-1}`; (iii) `|Q_n| > |Q_{n-1}| > 0`;
-(iv) `|Q_n| = |b₁ ⋯ b_n|`; (v) `|α - P_n/Q_n| = 1 / (|b_{n+1}| |Q_n|²)`;
-(vi) `|Q_{n+1} α - P_{n+1}| < |Q_n α - P_n|`. Parts (iii)–(vi) are stated for `n ≥ 1` (the paper
-puts `n ≥ 1` on (iv)–(vi); (iii) fails at `n = 0` because `Q_{-1} = 0`).
+**Basic properties of the convergents of a Laurent series.** Let $K$ be a field and let
+$\alpha \in K((x^{-1}))$ be irrational, with partial quotients $b_0, b_1, \dots$ and convergents
+$P_n / Q_n$, where $P_{-1} = 1$, $Q_{-1} = 0$, $P_0 = b_0$, $Q_0 = 1$,
+$P_{n+1} = b_{n+1} P_n + P_{n-1}$ and $Q_{n+1} = b_{n+1} Q_n + Q_{n-1}$. For a Laurent series
+$y = \sum_m c_m x^{-m}$ let $v(y)$ be its order, the least $m$ with $c_m \ne 0$, and let
+$v(0) = 0$; thus $|y| = |x|^{-v(y)}$ for $y \ne 0$. For $\beta \in K((x^{-1}))$ write
+$[b_k, \dots, b_n, \beta] = b_k + 1/(b_{k+1} + 1/(\cdots + 1/(b_n + 1/\beta)))$. Then:
+(i) for every $n \ge 0$ and every $\beta \ne 0$ such that $[b_k, \dots, b_n, \beta] \ne 0$ for
+all $1 \le k \le n$, $(\beta P_n + P_{n-1}) / (\beta Q_n + Q_{n-1}) = [b_0, \dots, b_n, \beta]$;
+(ii) $P_n Q_{n-1} - P_{n-1} Q_n = (-1)^{n+1}$ for every $n \ge 0$;
+(iii) $Q_{n-1} \ne 0$ and $v(Q_n) < v(Q_{n-1})$ for every $n \ge 1$;
+(iv) $v(Q_n) = v(b_1) + \dots + v(b_n)$ for every $n \ge 1$;
+(v) $v(\alpha - P_n / Q_n) = -v(b_{n+1}) - 2 v(Q_n)$ for every $n \ge 1$;
+(vi) $v(Q_n \alpha - P_n) < v(Q_{n+1} \alpha - P_{n+1})$ for every $n \ge 1$.
+
+Part (iii) fails at $n = 0$ because $Q_{-1} = 0$.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
 
 ## Sources
 

@@ -7,15 +7,21 @@ lean: MetaMathlibExt.generalizedMultiplePolylog_sum_formula
 
 # Sum formula
 
-**Sum formula**: for `k ≥ 1`, every real `μ` and every `δ`,
-`∑_{|k| = k} μ^{d(k) - 1} Li_k(g; (β, γ); z) = Li_{(k)}(g; (β + μγ, δ); z)`.
-The paper takes `μ` an indeterminate; both sides are polynomials in `μ`, so this
+**Sum formula.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data, let
+$\beta, \gamma, \delta \in \mathbb{R}^s$, let $\mu$ be a real number and let $k \ge 1$ be an
+integer. Then
+$\sum_{\mathbf{k}} \mu^{d(\mathbf{k}) - 1} \mathrm{Li}_{\mathbf{k}}(g; (\beta, \gamma); z) =
+\mathrm{Li}_{(k)}(g; (\beta + \mu \gamma, \delta); z)$, where the sum runs over all compositions
+$\mathbf{k} = (k_1, \dots, k_r)$ of $k$ (sequences of positive integers with
+$k_1 + \dots + k_r = k$) and $d(\mathbf{k}) = r$ is the depth of $\mathbf{k}$.
+
+The paper takes $\mu$ an indeterminate; both sides are polynomials in $\mu$, so this
 is equivalent.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
-- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Landen data](landen-data.md)
+- [Kamano's generalized multiple polylogarithm](generalized-multiple-polylog.md)
 
 ## Sources
 

@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem869Wanted.addSumset
 ---
 
-# Add Sumset
+# Sumset of a set of naturals
 
-Sumset `A + A` of a set of naturals, as used in the basis condition of
-EP-869 [Erdős Problems].
+**Sumset of a set of naturals.** For a set $A$ of natural numbers, $A + A$ is the set of
+natural numbers $n$ such that $n = a + b$ for some $a, b \in A$.
 
 ## Depends on
 

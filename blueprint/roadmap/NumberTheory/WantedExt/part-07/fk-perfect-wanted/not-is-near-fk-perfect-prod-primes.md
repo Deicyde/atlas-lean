@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prod_primes
 ---
 
-# Theorem 22
+# No product of distinct odd primes is near $F_k$-perfect
 
-**Theorem 22**: no product of distinct odd primes is
-near `F_k`-perfect (for `k > 1`).
+**No product of distinct odd primes is near $F_k$-perfect.** Let $k > 1$ and let $s$ be a
+finite set of odd primes. Then $\prod_{p \in s} p$ is not near $F_k$-perfect.
 
 ## Depends on
 
-- [Is Near Fk Perfect](is-near-fk-perfect.md)
+- [Near $F_k$-perfect numbers](is-near-fk-perfect.md)
 
 ## Sources
 

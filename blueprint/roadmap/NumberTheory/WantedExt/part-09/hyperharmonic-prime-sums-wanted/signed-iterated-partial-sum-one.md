@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.signedIteratedPartialSum_one
 ---
 
-# Signed Iterated Partial Sum one
+# Order one of the signed iterated partial sums
 
-Order `1` of the iterated partial sums is the base sequence.
+**Order one of the signed iterated partial sums.** For every real sequence
+$(b_n)_{n \ge 0}$, either choice of signs and every $n \in \mathbb{N}$, the signed iterated partial
+sum of $b$ of order $1$ at $n$ equals $b_n$.
 
 ## Depends on
 
-- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
+- [Signed iterated partial sums](signed-iterated-partial-sum.md)
 
 ## Sources
 

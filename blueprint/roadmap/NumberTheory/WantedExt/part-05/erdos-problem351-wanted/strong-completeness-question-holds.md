@@ -5,14 +5,21 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem351Wanted.StrongCompletenessQuestion_holds
 ---
 
-# Strong Completeness Question holds
+# Strong completeness of polynomial values plus reciprocals (Erdős Problem 351)
+
+**Strong completeness of polynomial values plus reciprocals (Erdős Problem 351).** For every
+polynomial $p$ with rational coefficients and positive leading coefficient, let $A_p$ be the set
+of rational numbers $p(n) + 1/n$, where $n$ ranges over the positive integers. Then $A_p$ is
+strongly complete: for every finite set $B$ of rational numbers there is an integer $N_0$ such
+that every integer $m \ge N_0$ is the sum of the elements of some finite subset of
+$A_p \setminus B$.
 
 Resolved true: The maintained Erdős Problems page marks Problem 351 proved in the affirmative
 and records that the positive solution follows from the positive solution of Problem 283.
 
 ## Depends on
 
-- [Strong Completeness Question](strong-completeness-question.md)
+- [The strong completeness statement of Erdős Problem 351](strong-completeness-question.md)
 
 ## Sources
 

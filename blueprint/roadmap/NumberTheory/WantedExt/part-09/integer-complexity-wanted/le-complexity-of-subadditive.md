@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.IntegerComplexityWanted.le_complexity_of_subadditive
 ---
 
-# Proposition 2
+# A criterion for lower bounds on integer complexity
 
-**Proposition 2**: if `P : ℕ → ℝ` satisfies `P 1 = 1`
-and `P (n + m) ≤ P n + P m`, `P (n * m) ≤ P n + P m` for
-all positive `n, m`, then `P n ≤ ‖n‖` for all positive
-`n`.
+**A criterion for lower bounds on integer complexity.** Write $\lVert n \rVert$ for the
+integer complexity of a positive integer $n$, the least number of ones needed to write $n$ using
+$1$, $+$, $\times$ and parentheses. Let $P$ be a real-valued function on the natural numbers with
+$P(1) = 1$ such that $P(n + m) \le P(n) + P(m)$ and $P(nm) \le P(n) + P(m)$ for all positive
+integers $n$ and $m$. Then $P(n) \le \lVert n \rVert$ for every positive integer $n$.
 
 ## Depends on
 
-- [Cx](cx.md)
+- [Integer complexity extended to all natural numbers](cx.md)
 
 ## Sources
 

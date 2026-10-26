@@ -13,7 +13,7 @@ For `k ≥ 1`: `L_{k+1}^{j+1}(1) - L_k^j(1) = 1` for `0 ≤ j ≤ 2k`, and
 
 ## Depends on
 
-- [Hof L](hof-l.md)
+- [The image length $L_k$](hof-l.md)
 
 ## Sources
 

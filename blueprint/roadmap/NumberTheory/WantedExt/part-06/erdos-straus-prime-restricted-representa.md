@@ -5,16 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosStrausPrimeStructureWanted.erdos_straus_prime_restricted_representation_iff
 ---
 
-# Erdos Straus Prime Structure Wanted
+# Chamberland's characterization of restricted Erdős–Straus representations
 
-Chamberland's Theorem 1: for a prime `p`, a restricted
-Erdős-Straus representation with `p ∤ a` and `p` dividing both `b` and
-`c` exists if and only if `p = q * r - 4 * s₁ * s₂` for positive
-`q r s₁ s₂` with `q ≡ 3 [MOD 4]` and both `s₁` and `s₂` dividing
-`(q + 1) / 4`.
-
-The equality on the right is written as
-`p + 4 * s₁ * s₂ = q * r` over `ℕ` to avoid truncated subtraction.
+**Chamberland's characterization of restricted Erdős–Straus representations.** For a prime
+$p$, there are positive integers $a \le b \le c$ with $p \nmid a$, $p \mid b$, $p \mid c$ and
+$4/p = 1/a + 1/b + 1/c$ if and only if there are positive integers $q$, $r$, $s_1$, $s_2$ with
+$q \equiv 3 \pmod 4$, both $s_1$ and $s_2$ dividing $(q + 1)/4$, and $p + 4 s_1 s_2 = qr$.
 
 ## Depends on
 

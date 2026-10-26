@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isInducedGenSecondMarkovSolution_root
 ---
 
-# Is Induced Gen Second Markov Solution root
+# The root induced solution of the generalized second Markov equation
 
-Characteristic value: `(3 + 2k, 3 + 2k, 3 + 2k)`, the image of `(1, 1, 1)`, is an induced
-solution of `GSME(k)`.
+**The root induced solution of the generalized second Markov equation.** For every natural
+number $k$, the triple $(3 + 2k, 3 + 2k, 3 + 2k)$, the image of $(1, 1, 1)$ under
+$x \mapsto (3 + 3k)x - k$, is an induced positive solution of the $k$-generalized second
+Markov equation $\mathrm{GSME}(k)$.
 
 ## Depends on
 
-- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
+- [Induced solution of the generalized second Markov equation](is-induced-gen-second-markov-solution.md)
 
 ## Sources
 

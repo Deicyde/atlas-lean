@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.floor_mul_pow_modEq
 ---
 
-# Floor mul pow mod Eq
+# Periodicity of $\lfloor x p^n \rfloor$ modulo $x_N$ and modulo $p$
 
-For positive rational `x`: (i) `⌊x p^n⌋ ≡ ⌊x p^{n+L_x}⌋ (mod x_N)` for `n ≥ D_x`, and
-(ii) `⌊x p^n⌋ ≡ ⌊x p^{n+L_x}⌋ (mod p)` for `n ≥ D_x + 1`, with `n ∈ ℤ`.
+**Periodicity of $\lfloor x p^n \rfloor$ modulo $x_N$ and modulo $p$.** Let $p$ be a prime and
+$x$ a positive rational. Write $x_N$ for the prime-to-$p$ part of the numerator of $x$,
+$D_x = -v_p(x)$ for the delay of its base-$p$ expansion, and $L_x$ for its period, the order of
+$p$ modulo the prime-to-$p$ part of the denominator of $x$. Then for every integer $n$:
+(i) if $n \ge D_x$, then $\lfloor x p^n \rfloor \equiv \lfloor x p^{n + L_x} \rfloor \pmod{x_N}$;
+(ii) if $n \ge D_x + 1$, then $\lfloor x p^n \rfloor \equiv \lfloor x p^{n + L_x} \rfloor \pmod p$.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PPeriod](base-pperiod.md)
-- [Prime To PNum](prime-to-pnum.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
+- [Prime-to-$p$ part of the numerator](prime-to-pnum.md)
 
 ## Sources
 

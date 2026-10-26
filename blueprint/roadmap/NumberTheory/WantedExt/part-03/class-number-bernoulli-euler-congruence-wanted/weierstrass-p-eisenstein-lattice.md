@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.weierstrassP_eisenstein_lattice
 ---
 
-# Weierstrass P eisenstein lattice
+# The Weierstrass function of the Eisenstein lattice
 
-Elementary properties of the Weierstrass `℘`-function of the lattice `ϖ₁ ℤ[ρ]`, where
-`ρ = e^(2πi/3)` and `ϖ₁ = ∫₀¹ (1 - t³)^(-2/3) dt`: (a) `℘(ρu) = ρ℘(u)`, `℘(-u) = ℘(u)`,
-`℘'(ρu) = ℘'(u)`, `℘'(-u) = -℘'(u)`; (b) `℘(ū) = conj ℘(u)`, `℘'(ū) = conj ℘'(u)`;
-(c) `℘'² = 4℘³ - 27`; (d) `℘(ϖ₁/3) = 3`, `℘((1 - ρ)ϖ₁/3) = 0`; (e) `℘'(ϖ₁/3) = -9`,
-`℘'((1 - ρ)ϖ₁/3) = -3√3 i`.
+**The Weierstrass function of the Eisenstein lattice.** Let $\rho = e^{2\pi i/3}$, let
+$\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, and let $\wp$ be the Weierstrass function of the
+lattice $\Lambda = \varpi_1 \mathbb{Z} + \varpi_1 \rho \mathbb{Z}$, with derivative $\wp'$. Then for
+every $u \in \mathbb{C} \setminus \Lambda$:
+(a) $\wp(\rho u) = \rho\,\wp(u)$, $\wp(-u) = \wp(u)$, $\wp'(\rho u) = \wp'(u)$ and
+$\wp'(-u) = -\wp'(u)$;
+(b) $\wp(\bar u) = \overline{\wp(u)}$ and $\wp'(\bar u) = \overline{\wp'(u)}$;
+(c) $\wp'(u)^2 = 4\wp(u)^3 - 27$.
+Moreover, (d) $\wp(\varpi_1/3) = 3$ and $\wp((1 - \rho)\varpi_1/3) = 0$, and
+(e) $\wp'(\varpi_1/3) = -9$ and $\wp'((1 - \rho)\varpi_1/3) = -3\sqrt{3}\,i$.
 
-The lattice is any `PeriodPair` with periods `ϖ₁` and `ϖ₁ρ`; `℘` and `℘'` are Mathlib's
-`PeriodPair.weierstrassP` and `PeriodPair.derivWeierstrassP`. The functional identities in
-(a)-(c) are stated off the lattice, where both functions are meromorphic with poles. The
-reality consequence in (b) is omitted (it follows from the conjugation identities).
+By (b), $\wp$ and $\wp'$ take real values at real points off $\Lambda$.
 
 ## Depends on
 

@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.laurentCartier_pow_mul_single_eq_sum
 ---
 
-# Laurent Cartier pow mul single eq sum
+# Cartier operator applied to a power times a monomial
 
-Bookkeeping identity: for a digit `k < p` and `i ∈ T = [-m, m]^r` with
-`m ≥ deg P - 1`, `Λ_p(P^k x^i) = ∑_{j ∈ T} a^k_{i - p j} x^j`, where
-`a^k_{i-pj} = coef_{pj-i}[P^k]`.
+**Cartier operator applied to a power times a monomial.** Let $p$ be a prime and $P$ a
+Laurent polynomial in $r$ variables with integer coefficients. Write $\mathrm{coef}_e[F]$ for the
+coefficient of $x^e$ in a Laurent polynomial $F$, $\deg F$ for the largest absolute value of an
+exponent of a variable occurring in $F$, and $\Lambda_p$ for the Cartier operator with
+$\mathrm{coef}_j[\Lambda_p F] = \mathrm{coef}_{pj}[F]$. Let $m \in \mathbb{N}$ with
+$\deg P \le m + 1$, put $T = [-m, m]^r \subset \mathbb{Z}^r$, and let $k < p$ be a natural
+number and $i \in T$. Then
+$\Lambda_p(P^k x^i) = \sum_{j \in T} \mathrm{coef}_{pj - i}[P^k] \, x^j$.
+
+In Kohen's notation $\mathrm{coef}_{pj - i}[P^k]$ is $a^k_{i - pj}$.
 
 ## Depends on
 
-- [Laurent Cartier](laurent-cartier.md)
-- [Laurent Deg](laurent-deg.md)
+- [Cartier operator $\Lambda_k$ on Laurent polynomials](laurent-cartier.md)
+- [Degree of a Laurent polynomial](laurent-deg.md)
 
 ## Sources
 

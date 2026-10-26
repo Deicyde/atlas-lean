@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberLatticeCount_r_eq_succ
 ---
 
-# Higher ANumber Lattice Count r eq succ
+# The lattice-point count for $r = p + 1$
 
-When `r = p + 1`: `λ_r = 0`, the minimal period is `1`, and
-`ν_r(n) = ½ (p - 1)(τ^{-1} - 1)` for `n ≥ 1`; that is,
-`a^r(X_n) = ½ (τ^{-1} - γ^{-1}) p^{2n} + ½ (p - 1)(τ^{-1} - 1)` for `n ≥ 1`, with `a^r(X_n)`
-replaced by the Theorem 1 lattice expression.
+**The lattice-point count for $r = p + 1$.** Let $p$ be a prime and $d$ a natural number
+dividing $p - 1$. Put $\tau = (p + 1)/d$ and $\gamma = ((p - 1)(p + 1) + (p + 1))/d$, the value
+at $r = p + 1$ of $\gamma = ((p - 1) r + (p + 1))/d$, and write $a^{p+1}(X_n)$ for the
+lattice-point expression of Theorem 1 with $r = p + 1$. Then for every $n \ge 1$,
+
+$$
+a^{p+1}(X_n) = \tfrac12 (\tau^{-1} - \gamma^{-1}) p^{2n} + \tfrac12 (p - 1)(\tau^{-1} - 1).
+$$
+
+In the paper's terms: for $r = p + 1$ the linear coefficient $\lambda_r$ vanishes, and the
+periodic part $\nu_r(n) = \tfrac12 (p - 1)(\tau^{-1} - 1)$ is constant (minimal period $1$) for
+$n \ge 1$.
 
 ## Depends on
 
-- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

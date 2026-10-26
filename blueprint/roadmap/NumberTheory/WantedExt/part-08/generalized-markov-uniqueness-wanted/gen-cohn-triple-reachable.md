@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.genCohnTriple_reachable
 ---
 
-# Gen Cohn Triple reachable
+# Cohn steps reach every generalized Cohn triple whose middle entry is largest
 
-Theorem 1.10: every `k`-generalized Cohn triple associated with `(a, b, c)`,
-`b ≥ max {a, c}`, is obtained by applying `(P, Q, R) ↦ (P, PQ - S, Q)` or
-`(P, Q, R) ↦ (Q, QR - S, R)` successively to a `k`-generalized Cohn triple associated with
-`(1, 1, 1)`, and on `(1, 2)`-entries these steps are the Vieta jumpings of `GME(k)`.
+**Cohn steps reach every generalized Cohn triple whose middle entry is largest.** Let
+$k \in \mathbb{N}$ and let $S$ be the integer matrix with rows $(k, 0)$ and $(3k^2 + 3k, k)$.
+Call $(P, Q, R) \mapsto (P, PQ - S, Q)$ the left step and $(P, Q, R) \mapsto (Q, QR - S, R)$ the
+right step. First, if $(P, Q, R)$ is a $k$-generalized Cohn triple associated with $(a, b, c)$
+and $a \le b$, $c \le b$, then $(P, Q, R)$ is obtained by applying finitely many left and
+right steps to some $k$-generalized Cohn triple associated with $(1, 1, 1)$. Second, if
+$(P, Q, R)$ is a $k$-generalized Cohn triple associated with $(a, b, c)$, then the
+$(1, 2)$-entries of the left step $(P, PQ - S, Q)$ are
+$(a, \lfloor (a^2 + kab + b^2)/c \rfloor, b)$ and those of the right step $(Q, QR - S, R)$ are
+$(b, \lfloor (b^2 + kbc + c^2)/a \rfloor, c)$: on $(1, 2)$-entries the steps are the left and
+right Vieta jumpings of $(a, b, c)$.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Gen Cohn Path](gen-cohn-path.md)
-- [Gen Cohn Step](gen-cohn-step.md)
-- [Gen Markov Vieta](gen-markov-vieta.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [Paths of generalized Cohn steps](gen-cohn-path.md)
+- [One step of the wide generalized Cohn tree](gen-cohn-step.md)
+- [Vieta jumping of generalized Markov triples](gen-markov-vieta.md)
 
 ## Sources
 

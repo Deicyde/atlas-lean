@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prod_primes
 ---
 
-# Theorem 21
+# No product of distinct odd primes is deficient $F_k$-perfect
 
-**Theorem 21**: no product of distinct odd primes is
-deficient `F_k`-perfect (for `k > 1`).
+**No product of distinct odd primes is deficient $F_k$-perfect.** Let $k > 1$ and let $s$ be a
+finite set of odd primes. Then $\prod_{p \in s} p$ is not deficient $F_k$-perfect.
 
 ## Depends on
 
-- [Is Deficient Fk Perfect](is-deficient-fk-perfect.md)
+- [Deficient $F_k$-perfect numbers](is-deficient-fk-perfect.md)
 
 ## Sources
 

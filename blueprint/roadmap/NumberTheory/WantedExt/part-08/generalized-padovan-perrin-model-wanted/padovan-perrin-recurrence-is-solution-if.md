@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinRecurrence_isSolution_iff
 ---
 
-# Padovan Perrin Recurrence is Solution iff
+# Characterization of solutions of the generalized Padovan–Perrin recurrence
 
-For `s > 0`, a sequence solves the `([k]; p; s)`-Padovan–Perrin recurrence exactly when
-`v (n + (s + p)) = k₁ v (n + p) + k₂ v n` for every `n`.
+**Characterization of solutions of the generalized Padovan–Perrin recurrence.** Let $R$ be a
+commutative semiring, $k_1, k_2 \in R$, and $p, s \in \mathbb{N}$ with $s > 0$. A sequence
+$v \colon \mathbb{N} \to R$ is a solution of the $([k]; p; s)$-Padovan–Perrin recurrence if and
+only if $v_{n+s+p} = k_1 v_{n+p} + k_2 v_n$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHyperharmonic_zero_zero
 ---
 
-# Generalized Hyperharmonic zero zero
+# Generalized hyperharmonic numbers with both indices zero
 
-`H_0^{[r]}(0) = 1`.
+**Generalized hyperharmonic numbers with both indices zero.** For every complex number $r$,
+the generalized hyperharmonic number $H_0^{[r]}(0)$ equals $1$.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
 
 ## Sources
 

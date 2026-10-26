@@ -6,17 +6,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.theorem_2
 ---
 
-# Theorem 2
+# Couveignes: counting number fields with bounded discriminant
 
-Statement of Theorem 2 (Number fields with bounded discriminant):
-
-There exists a positive constant `Q` such that the following is true. Let `n ≥ Q` be an integer.
-Let `H ≥ 1` be an integer. The number of isomorphism classes of number fields
-with degree `n` and discriminant `≤ H` is `≤ n^(Q n log^3 n) H^(Q log^3 n)`.
+**Couveignes: counting number fields with bounded discriminant.** There is a positive integer
+$Q$ such that for all natural numbers $n \ge Q$ and $H \ge 1$, there are only finitely many
+isomorphism classes of number fields of degree $n$ over $\mathbb{Q}$ whose discriminant has
+absolute value at most $H$, and their number is at most $n^{Q n (\log n)^3} H^{Q (\log n)^3}$.
 
 ## Depends on
 
-- [Number Field Of Bounded Discriminant Up To Isomorphism](number-field-of-bounded-discriminant-up.md)
+- [Isomorphism classes of number fields with bounded discriminant](number-field-of-bounded-discriminant-up.md)
 
 ## Sources
 

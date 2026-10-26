@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pseudoGreedyExpansion_succ_eq
 ---
 
-# Pseudo Greedy Expansion succ eq
+# Recursion for the pseudo-greedy expansion
 
-The pseudo-greedy expansion and its gap sequence satisfy
-`a_(n+1) = a_n² / (1 - ε_n) - a_n + (1 - ε_(n+1))`.
+**Recursion for the pseudo-greedy expansion.** Let $r > 0$ be a real number, and let
+$(a_n)$ be its pseudo-greedy expansion and $(\varepsilon_n)$ its gap sequence. Then for every
+$n \ge 0$,
+
+$$a_{n+1} = \frac{a_n^2}{1 - \varepsilon_n} - a_n + (1 - \varepsilon_{n+1}).$$
 
 ## Depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
-- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
+- [Gap sequence of the pseudo-greedy expansion](pseudo-greedy-gap.md)
 
 ## Sources
 

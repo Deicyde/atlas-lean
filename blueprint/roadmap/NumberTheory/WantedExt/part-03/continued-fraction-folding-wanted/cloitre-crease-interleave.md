@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.cloitreCreaseInterleave
 ---
 
-# Cloitre Crease Interleave
+# Interleaving creases into a Cloitre word
 
-Insert crease values into a word over the alphabet `([1, 1], [2])`: after the `j`-th letter
-(counting from the start value `j`) insert `c j`. A digit that starts neither letter is copied
-without a crease; that branch is unreachable on Cloitre words (`cloitreApprox k`).
+**Interleaving creases into a Cloitre word.** Given a sequence $c : \mathbb{N} \to \mathbb{N}$
+and a start index $j$, the crease interleaving of a finite word $w$ of natural numbers reads $w$
+from left to right as letters $(2)$ and $(1, 1)$ and inserts $c_j, c_{j+1}, c_{j+2}, \dots$ after
+the successive letters. Precisely, the empty word gives the empty word; a word $2, w'$ gives
+$2, c_j$ followed by the interleaving of $w'$ from index $j + 1$; a word $1, 1, w'$ gives
+$1, 1, c_j$ followed by the interleaving of $w'$ from index $j + 1$; and any other nonempty word
+$a, w'$ gives $a$ followed by the interleaving of $w'$ from the same index $j$.
+
+The last case is unreachable on the approximants $A_k$ of Cloitre's sequence.
 
 ## Depends on
 

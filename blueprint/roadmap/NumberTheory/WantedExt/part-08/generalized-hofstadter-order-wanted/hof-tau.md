@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hofTau
 ---
 
-# Hof Tau
+# The Hofstadter substitution on letters
 
-The substitution `τ_k`: `k ↦ k 1` and `i ↦ i + 1` (used for `1 ≤ i < k`).
+**The Hofstadter substitution on letters.** For a natural number $k$, the substitution
+$\tau_k$ sends the letter $k$ to the word $k\,1$ and every other letter $i \in \mathbb{N}$ to the
+one-letter word $i + 1$.
+
+The rule $i \mapsto i + 1$ is used only for $1 \le i < k$.
 
 ## Depends on
 

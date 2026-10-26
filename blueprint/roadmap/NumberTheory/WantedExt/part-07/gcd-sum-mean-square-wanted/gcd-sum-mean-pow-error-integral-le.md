@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.gcdSumMean_pow_error_integral_le
 ---
 
-# Integral of `E_k` under RH
+# Integral of the error term for gcd-sum moments under RH
 
-**Integral of `E_k` under RH**: under the hypotheses of Theorem 1 (RH, `k ≥ 2`, a fixed `η`
-with `(1/2^k)(4^k - 3^k - C(2^k, 2)) + 1/2^{k+1} + 1 ≤ η`), for all sufficiently large `T`,
-`J_k(T) = ∫_1^T E_k(u) du ≪ T^{3/2 - 1/2^{k+1}} exp(η log T / log log T)` (stated for `|J_k(T)|`).
+**Integral of the error term for gcd-sum moments under RH.** Let
+$A(n) = \frac{1}{n} \sum_{m=1}^{n} \gcd(m, n)$ be the mean gcd-sum function. Assume the Riemann
+Hypothesis and let $k \ge 2$ be an integer. Then there is a real polynomial $P$ with the following
+property. Write $E(u) = \sum_{1 \le n \le u} A(n)^k - u P(\log u)$ for real $u$. For every real
+$\eta$ with $\frac{1}{2^k}\left(4^k - 3^k - \binom{2^k}{2}\right) + \frac{1}{2^{k+1}} + 1 \le \eta$
+there are real constants $C$ and $T_0$ such that for all real $T \ge T_0$,
+
+$$\left|\int_1^T E(u) \, du\right| \le C \, T^{3/2 - 1/2^{k+1}}
+\exp\left(\frac{\eta \log T}{\log \log T}\right).$$
 
 ## Depends on
 
-- [Gcd Sum Mean](../../part-08/gcd-sum-moments-wanted/gcd-sum-mean.md)
+- [The mean gcd-sum function](../../part-08/gcd-sum-moments-wanted/gcd-sum-mean.md)
 
 ## Sources
 

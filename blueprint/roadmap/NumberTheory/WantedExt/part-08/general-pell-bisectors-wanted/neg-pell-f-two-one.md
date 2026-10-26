@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.negPellF_two_one
 ---
 
-# Neg Pell F two one
+# The negative Pell sequences for d = 2 at n = 1
 
-For `d = 2`: `f_1 = g_1 = 1`.
+**The negative Pell sequences for d = 2 at n = 1.** Let $(X, Y)$ be the solution of
+$x^2 - 2y^2 = -1$ in natural numbers with the least positive $Y$, and for each $n$ let $f_n$ and
+$g_n$ be the integers with $(X + Y\sqrt 2)^n = f_n + g_n \sqrt 2$. Then $f_1 = g_1 = 1$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Proof depends on
 
-- [Neg Pell Fund X](neg-pell-fund-x.md)
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
-- [Neg Pell Fund two](neg-pell-fund-two.md)
+- [First coordinate of the fundamental negative Pell solution](neg-pell-fund-x.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
+- [The fundamental solution of the negative Pell equation for d = 2](neg-pell-fund-two.md)
 
 ## Sources
 

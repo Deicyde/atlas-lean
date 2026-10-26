@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.laurentPartialQuotient_pow_card
 ---
 
-# Laurent Partial Quotient pow card
+# Frobenius acts on continued fractions of Laurent series
 
-Frobenius and continued fractions: over `𝔽_q` the continued fraction of `α^q` is
-`[b₀^q, b₁^q, …]` and its convergents are `P_n^q / Q_n^q`.
+**Frobenius acts on continued fractions of Laurent series.** Let $K$ be a finite field with
+$q$ elements and let $\alpha \in K((x^{-1}))$, with partial quotients $b_0, b_1, \dots$ and
+convergent numerators and denominators $P_n, Q_n$, where $P_{-1} = 1$ and $Q_{-1} = 0$. Then for
+every $n \ge 0$ the $n$-th partial quotient of $\alpha^q$ is $b_n^q$, and for every $n \ge -1$
+the convergent numerator and denominator of $\alpha^q$ of index $n$ are $P_n^q$ and $Q_n^q$.
 
 ## Depends on
 
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicTraceDist_algEquiv
 ---
 
-# Proposition 1
+# Galois invariance of the trace metric
 
-**Proposition 1.** The metric `d` is invariant under `Gal(K/ℚ)`:
-`d(σ α, σ β) = d(α, β)`.
+**Galois invariance of the trace metric.** Let $p$ be a prime and let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$. For every $\mathbb{Q}$-algebra automorphism $\sigma$ of $K$
+and all $\alpha, \beta \in K$, the trace distance satisfies
+$d(\sigma \alpha, \sigma \beta) = d(\alpha, \beta)$.
 
 ## Depends on
 
-- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [Trace metric on a cyclotomic field](cyclotomic-trace-dist.md)
 
 ## Sources
 

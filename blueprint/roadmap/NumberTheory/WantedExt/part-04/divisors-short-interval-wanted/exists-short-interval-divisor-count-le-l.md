@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_shortIntervalDivisorCount_le_letendre
 ---
 
-# Exists short Interval Divisor Count le letendre
+# Letendre's bound for divisors in short intervals
 
-Letendre's main bound: uniformly in `0 < η < θ < 1` and `n ≥ 2`,
-`D_n(n^θ, n^η) ≪ τ(n)^{1 - ξ(θ, η)} V(n) log τ(n) / (θ(1 - θ))`, with `V(n)` the largest
-exponent in the factorization of `n`.
+**Letendre's bound for divisors in short intervals.** For a natural number $n$ and real numbers
+$X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with $X \le d \le X + Y$, let
+$\tau(n)$ be the number of divisors of $n$, let $V(n)$ be the largest exponent in the prime
+factorization of $n$, and let $\xi(\theta, \eta)$ be Letendre's saving exponent. There is an
+absolute constant $C$ such that for all real numbers $\theta$, $\eta$ with $0 < \eta < \theta < 1$
+and every integer $n \ge 2$,
+$D_n(n^\theta, n^\eta) \le C \tau(n)^{1 - \xi(\theta, \eta)} V(n) \log \tau(n) /
+(\theta(1 - \theta))$.
 
 ## Depends on
 
-- [Letendre Xi](letendre-xi.md)
-- [Short Interval Divisor Count](short-interval-divisor-count.md)
+- [Letendre's saving exponent](letendre-xi.md)
+- [Number of divisors in a short interval](short-interval-divisor-count.md)
 
 ## Sources
 

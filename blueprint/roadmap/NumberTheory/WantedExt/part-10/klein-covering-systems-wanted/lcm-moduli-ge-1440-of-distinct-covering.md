@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lcm_moduli_ge_1440_of_distinct_covering_min_five
 ---
 
-# Theorem 3
+# Least common multiple of a covering system with minimum modulus five
 
-**Theorem 3** (Dalton–Trifonov problem, `m = 5`). If the smallest modulus of a distinct
-covering system is `5`, then the least common multiple of its moduli is at least `1440`.
+**Least common multiple of a covering system with minimum modulus five.** Let $C$ be a
+distinct covering system: a finite set of congruences $x \equiv r \pmod m$ with
+$r \in \mathbb{Z}$ and $m \in \mathbb{N}$, no two with the same modulus, such that every integer
+satisfies at least one of them. If every modulus of $C$ is at least $5$ and some modulus equals
+$5$, then the least common multiple of the moduli of $C$ is at least $1440$.
 
 ## Depends on
 

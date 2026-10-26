@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.genCohnR1
 ---
 
-# Gen Cohn R1
+# The matrix $R_{1;\ell}$
 
-The matrix `R_{1;ℓ} = [[2k + ℓ + 2, 1], [-ℓ² - 2kℓ + 2k - ℓ + 1, -ℓ + 1]]`.
+**The matrix $R_{1;\ell}$.** For a natural number $k$ and an integer $\ell$, $R_{1;\ell}$ is
+the $2 \times 2$ integer matrix
+
+$$\begin{pmatrix} 2k + \ell + 2 & 1 \\ -\ell^2 - 2k\ell + 2k - \ell + 1 & -\ell + 1 \end{pmatrix}.$$
 
 ## Depends on
 

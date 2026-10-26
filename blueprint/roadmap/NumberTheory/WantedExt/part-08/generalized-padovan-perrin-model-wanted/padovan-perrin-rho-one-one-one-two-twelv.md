@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinRho_one_one_one_two_twelve
 ---
 
-# Padovan Perrin Rho one one one two twelve
+# The Padovan–Perrin coefficient $\rho(12, 3)$ equals $5$
 
-A value check: for the Padovan–Perrin case `k₁ = k₂ = 1`, `p = 1`, `s = 2`,
-`ρ(12, 3) = 5` (`= v⁽³⁾₁₁` in the paper's Table 1).
+**The Padovan–Perrin coefficient $\rho(12, 3)$ equals $5$.** Over the integers, with
+$k_1 = k_2 = 1$, $p = 1$ and $s = 2$ (the Padovan–Perrin recurrence $v_n = v_{n-2} + v_{n-3}$),
+the coefficient $\rho(12, 3)$ equals $5$.
 
 ## Depends on
 
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

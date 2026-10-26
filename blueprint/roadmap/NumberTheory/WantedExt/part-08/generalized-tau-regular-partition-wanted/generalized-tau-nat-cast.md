@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.generalizedTau_natCast
 ---
 
-# Generalized Tau nat Cast
+# The generalized tau function for natural exponents
 
-For natural `k`, `τ_k(n)` is the `q^n` coefficient of `q (∏ (1 - q^m))^k`.
+**The generalized tau function for natural exponents.** For natural numbers $k$ and $n$,
+$\tau_k(n)$ is the coefficient of $q^n$ in the integer power series
+$q \bigl(\prod_{m \ge 1} (1 - q^m)\bigr)^k$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Proof depends on
 
-- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
+- [Euler's product is a unit in $\mathbb{Z}((X))$](is-unit-pentagonal-series-int.md)
 
 ## Sources
 

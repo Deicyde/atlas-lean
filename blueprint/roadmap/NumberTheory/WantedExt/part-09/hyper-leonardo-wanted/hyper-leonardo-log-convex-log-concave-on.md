@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_logConvex_logConcave_one
 ---
 
-# Hyper Leonardo log Convex log Concave one
+# Log-convexity and log-concavity of the hyper-Leonardo numbers at index one
 
-Proposition 12: at `n = 1`, `Le^{(1)}` satisfies the log-convexity inequality
-`Le^{(1)}_0 Le^{(1)}_2 ≥ (Le^{(1)}_1)²`, and `Le^{(r)}` for `r ≥ 2` the log-concavity
-inequality `(Le^{(r)}_1)² ≥ Le^{(r)}_0 Le^{(r)}_2`.
+**Log-convexity and log-concavity of the hyper-Leonardo numbers at index one.** The
+hyper-Leonardo numbers $\mathrm{Le}^{(r)}_n$ satisfy
+$\left(\mathrm{Le}^{(1)}_1\right)^2 \le \mathrm{Le}^{(1)}_0 \mathrm{Le}^{(1)}_2$, and for every
+natural number $r \ge 2$ they satisfy
+$\mathrm{Le}^{(r)}_0 \mathrm{Le}^{(r)}_2 \le \left(\mathrm{Le}^{(r)}_1\right)^2$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

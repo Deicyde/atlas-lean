@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_double_sum
 ---
 
-# Theorem 4.3
+# Double-sum formula for Euler polynomials
 
-**Theorem 4.3**: for every `n ≥ 0`,
-`2^n E_n(x) = ∑_{ℓ=0}^n (-1)^ℓ / (ℓ + 1)
-  ∑_{k=0}^{n-ℓ} ((k + ℓ + 1)! / 2^k) (ℓ + 1 choose k)
-  S(n, k + ℓ, 2x - 1)`.
+**Double-sum formula for Euler polynomials.** Let $E_n(x)$ denote the Euler polynomial and
+$S(n, k, x) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} (-1)^{k-j} (x + j)^n$ the generalized
+Stirling polynomial. For every $n \ge 0$, as polynomials in $x$ with rational coefficients,
+$2^n E_n(x) = \sum_{\ell=0}^{n} \frac{(-1)^\ell}{\ell + 1}
+\sum_{k=0}^{n-\ell} \frac{(k + \ell + 1)!}{2^k} \binom{\ell + 1}{k} S(n, k + \ell, 2x - 1)$.
 
 ## Depends on
 
-- [Euler Poly](euler-poly.md)
-- [Gen Stirling Poly](gen-stirling-poly.md)
+- [Euler polynomials](euler-poly.md)
+- [Generalized Stirling polynomial](gen-stirling-poly.md)
 
 ## Sources
 

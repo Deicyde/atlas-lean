@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_nine_regular_modEq_sigma
 ---
 
-# Card nine regular mod Eq sigma
+# 9-regular partitions modulo 3 and the divisor sum
 
-`R_9(n) ≡ σ(3n + 1) (mod 3)`.
+**9-regular partitions modulo 3 and the divisor sum.** Let $R_9(m)$ denote the number of
+partitions of $m$ in which no part is divisible by $9$, and let $\sigma(m)$ be the sum of the
+positive divisors of $m$. For every positive integer $n$, $R_9(n) \equiv \sigma(3n + 1) \pmod 3$.
 
 ## Depends on
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.even_of_abs_sq_sub_mul_sq_four_mod_eight
 ---
 
-# Even of abs sq sub mul sq four mod eight
+# Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8)
 
-If `d ≡ 1 (mod 8)` and `z ≡ 4 (mod 8)`, then every integral solution of `|x² - d y²| = z` is a
-pair of even integers.
+**Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8).** Let $d$ and $z$ be
+integers with $d \equiv 1 \pmod 8$ and $z \equiv 4 \pmod 8$. If integers $x$ and $y$ satisfy
+$|x^2 - dy^2| = z$, then $x$ and $y$ are both even.
 
-The source's `z > 1` is not needed. The second sentence of part (c) (on `η`) is not formalized.
+The paper also assumes $z > 1$; this is not needed. The second sentence of part (c) of the
+paper's lemma, on the fundamental unit, is not formalized.
 
 ## Depends on
 

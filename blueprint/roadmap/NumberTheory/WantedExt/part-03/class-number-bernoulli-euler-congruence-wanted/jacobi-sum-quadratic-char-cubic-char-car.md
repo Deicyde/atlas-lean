@@ -5,17 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.jacobiSum_quadraticChar_cubicChar_card_sq
 ---
 
-# Jacobi Sum quadratic Char cubic Char card sq
+# The Jacobi sum of the quadratic and a cubic character of a field with $q^2$ elements
 
-For an odd prime `q ≡ 2 (mod 3)`, the quadratic character `ϕ` and a cubic character `χ` of
-`𝔽_{q²}` satisfy `J₂(ϕ, χ) = Σ_{t ∈ 𝔽_{q²}} ϕ(t) χ(1 - t) = q`.
+**The Jacobi sum of the quadratic and a cubic character of a field with $q^2$ elements.** Let
+$q$ be an odd prime with $q \equiv 2 \pmod 3$, let $F$ be a finite field with $q^2$ elements, let
+$\phi$ be the quadratic character of $F$, and let $\chi : F \to \mathbb{C}$ be a multiplicative
+character of order $3$, that is, $\chi^3 = 1$ and $\chi \ne 1$ (characters take the value $0$ at
+$0$). Then the Jacobi sum $J(\phi, \chi) = \sum_{t \in F} \phi(t)\,\chi(1 - t)$ equals $q$.
 
-The paper's setting (ii) says "any characters `ϕ` and `χ` of `𝔽_{q²}^×`"; the identity holds
-for the quadratic `ϕ` and a character `χ` of order `3` (the cubic residue character modulo
-`-q` or its conjugate, which give the same value since it is real), as in the sources it
-cites; this reading is stated. `q = 2` is excluded since `𝔽₄^×` has no quadratic character.
-`𝔽_{q²}` is any finite field `F` with `q²` elements, characters are complex-valued, and `J₂`
-is Mathlib's `jacobiSum`.
+The source states this for arbitrary characters $\phi$ and $\chi$ of $F^\times$; the identity
+holds for the quadratic $\phi$ and a $\chi$ of order $3$, the characters of the sources it cites.
 
 ## Depends on
 

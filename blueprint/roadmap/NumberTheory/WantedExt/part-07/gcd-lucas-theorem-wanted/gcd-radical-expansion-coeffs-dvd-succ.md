@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gcd_radical_expansion_coeffs_dvd_succ
 ---
 
-# Gcd radical expansion coeffs dvd succ
+# The coefficient gcd of $(u + v^{1/N})^n$ divides that of $(u + v^{1/N})^{n+1}$
 
-With `D_n = gcd(a_{n,0}, …, a_{n,N-1})` for the coefficients of `(u + v^{1/N})^n`
-(`x^N - v` irreducible over `ℚ`), `D_n ∣ D_{n+1}` for every `n ≥ 1`. The section's standing
-`N ≥ 4` and the coprimality of `u, v` are not needed.
+**The coefficient gcd of $(u + v^{1/N})^n$ divides that of $(u + v^{1/N})^{n+1}$.** Let
+$N, u, v$ be natural numbers such that $x^N - v$ is irreducible over $\mathbb{Q}$, let
+$\theta = v^{1/N}$ be the nonnegative real $N$-th root of $v$, and let $a_{n,i}$ (for natural $n$
+and $0 \le i \le N - 1$) be integers with $(u + \theta)^n = \sum_{i=0}^{N-1} a_{n,i} \theta^i$
+for every $n \ge 1$. Write $D_n$ for the nonnegative greatest common divisor of
+$a_{n,0}, \dots, a_{n,N-1}$. Then $D_n \mid D_{n+1}$ for every $n \ge 1$.
+
+This holds without the paper's standing assumptions $N \ge 4$ and $\gcd(u, v) = 1$.
 
 ## Depends on
 

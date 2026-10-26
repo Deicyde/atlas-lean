@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.exists_mod_mod_representation_of_neg_free_term
 ---
 
-# Exists mod mod representation of neg free term
+# Mod-mod representation of C-recursive sequences, negative free term
 
-Mod-mod representation of a natural C-recursive sequence. Let `t : ℕ → ℕ` have generating
-function `A(z)/B(z)` with `A, B ∈ ℤ[z]`, `B(0) = 1` (the recurrence polynomial
-`1 + a₁z + ⋯ + a_d z^d`) and `deg A = k < deg B = d`; put `Ã(x) = x^k A(1/x)` and
-`B̃(x) = x^d B(1/x)` (`Polynomial.reverse`), so that
-`c^{n²} c^{n(d-k)} Ã(cⁿ) / B̃(cⁿ) = c^{n²} A(c⁻ⁿ)/B(c⁻ⁿ)`. If `t` has the div-mod
-representation `t(n) = ⌊c^{n²} c^{n(d-k)} Ã(cⁿ)/B̃(cⁿ)⌋ mod cⁿ` for all `n ≥ 1` (`hrep`) and
-the free term `α_d = a_d` of `B̃` is negative, then for some natural `r` and all `n ≥ 1`,
-`|α_d| t(n) = ((r^{n²} r^{n(d-k)} Ã(rⁿ)) mod B̃(rⁿ)) mod rⁿ` (the paper's `t(n) = (1/|α_d|)(…)`
-with the factor cleared). Remainders are `Int.emod` and the floor is taken in `ℚ`. Added
-hypothesis `A ≠ 0`, excluding the zero sequence: for `A = 0`, `B = 1 + z` (`α_d = 1 > 0`) the
-companion positive case would give `t(n) = -1`.
+**Mod-mod representation of C-recursive sequences, negative free term.** Let
+$t_0, t_1, t_2, \dots$ be natural numbers, let $c$ be a natural number, and let $A$ and $B$ be
+polynomials with integer coefficients such that $A \ne 0$, $B(0) = 1$ and
+$k = \deg A < d = \deg B$. Suppose that $\bigl(\sum_{n \ge 0} t_n z^n\bigr) B(z) = A(z)$ as
+formal power series. Let $\tilde A(x) = x^k A(1/x)$ and $\tilde B(x) = x^d B(1/x)$ be the
+reversed polynomials, let $\alpha$ be the constant term of $\tilde B$, that is, the leading
+coefficient of $B$, and for an integer $x$ put $P_x(n) = x^{n^2} x^{n(d-k)} \tilde A(x^n)$. For
+integers $X$ and $M \ne 0$, write $X \bmod M$ for the remainder of $X$ modulo $M$ in
+$\{0, 1, \dots, |M| - 1\}$, and set $X \bmod 0 = X$. Suppose that for every $n \ge 1$,
+
+$$t_n = \bigl\lfloor P_c(n) / \tilde B(c^n) \bigr\rfloor \bmod c^n,$$
+
+where the quotient is taken in $\mathbb{Q}$ and is $0$ when $\tilde B(c^n) = 0$. If $\alpha < 0$,
+then there is a natural number $r$ such that for every $n \ge 1$,
+
+$$|\alpha| \, t_n = \bigl( P_r(n) \bmod \tilde B(r^n) \bigr) \bmod r^n.$$
 
 ## Depends on
 

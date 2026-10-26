@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gobelSequence_two_two_small
 ---
 
-# Gobel Sequence two two small
+# Göbel's original sequence
 
-Göbel's original sequence `g_{2,2}` starts `2, 3, 5, 10, 28`.
+**Göbel's original sequence.** The $(2, 2)$-Göbel sequence $g_{2,2}$ satisfies
+$g_{2,2}(2) = 3$, $g_{2,2}(3) = 5$, $g_{2,2}(4) = 10$ and $g_{2,2}(5) = 28$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

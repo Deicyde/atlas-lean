@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.IsGenCohnTriple.isGenMarkovTriple
 ---
 
-# Is Gen Markov Triple
+# Generalized Cohn triples give generalized Markov triples
 
-Characteristic lemma: the associated triple of a `k`-generalized Cohn triple is a
-`k`-generalized Markov triple.
+**Generalized Cohn triples give generalized Markov triples.** Let $k$ be a natural number.
+If $(P, Q, R)$ is a $k$-generalized Cohn triple associated with $(a, b, c)$, then $(a, b, c)$ is
+a $k$-generalized Markov triple.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Proof depends on
 
-- [Is Gen Cohn Matrix](is-gen-cohn-matrix.md)
-- [Gen Cohn S](gen-cohn-s.md)
+- [Generalized Cohn matrices](is-gen-cohn-matrix.md)
+- [The matrix $S$ of the generalized Cohn triple relation](gen-cohn-s.md)
 
 ## Sources
 

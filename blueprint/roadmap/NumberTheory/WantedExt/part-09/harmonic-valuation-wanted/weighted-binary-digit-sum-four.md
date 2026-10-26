@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.weightedBinaryDigitSum_four
 ---
 
-# Weighted Binary Digit Sum four
+# Weighted binary digit sum of 4
 
-Characteristic value `a(4) = 8`.
+**Weighted binary digit sum of 4.** The weighted binary digit sum of $4$ is $a(4) = 8$.
 
 ## Depends on
 
-- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
+- [Weighted binary digit sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

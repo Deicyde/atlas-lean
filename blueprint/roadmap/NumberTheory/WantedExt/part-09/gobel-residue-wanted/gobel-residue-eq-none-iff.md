@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelResidue_eq_none_iff
 ---
 
-# Gobel Residue eq none iff
+# Failure of the residue sequence detects non-integrality
 
-Lemma 2 (Matsuhira–Matsusaka–Tsuchida, Lemma 10): for `k ≥ 2`, `r ≥ 1`, a prime `p` and a
-positive integer `n` with `ν_p(n!) ≤ r`, `g_{k,p,r}(n) = F` if and only if `g_{k,n} ∉ ℤ_(p)`.
+**Failure of the residue sequence detects non-integrality.** Let $k \ge 2$ and $r \ge 1$ be
+integers, let $p$ be a prime, write $\nu_p$ for the $p$-adic valuation, and let $n \ge 1$ be an
+integer with $\nu_p(n!) \le r$. Then the residue sequence $g_{k,p,r}$ takes the failure value $F$
+at $n$, that is $g_{k,p,r}(n) = F$, if and only if the value $g_{k,2}(n)$ of the $(k, 2)$-Göbel
+sequence has negative $p$-adic valuation, that is $g_{k,2}(n) \notin \mathbb{Z}_{(p)}$.
+
+This is Lemma 10 of Matsuhira, Matsusaka, and Tsuchida.
 
 ## Depends on
 
-- [Gobel Residue](gobel-residue.md)
-- [Gobel Sequence](../gobel-sequence-wanted/gobel-sequence.md)
+- [Residue sequence of the $k$-Göbel sequence](gobel-residue.md)
+- [The (k, l)-Göbel sequence](../gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

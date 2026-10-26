@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nthPrimeOne_rosser_schoenfeld
 ---
 
-# Nth Prime One rosser schoenfeld
+# Rosser–Schoenfeld bounds for the $k$-th prime
 
-Lemma 1 (Rosser-Schoenfeld): there is an absolute `k₀` with
-`k (log k + log log k - 1) ≤ pₖ ≤ k (log k + log log k)` for all `k ≥ k₀`.
+**Rosser–Schoenfeld bounds for the $k$-th prime.** Write $p_k$ for the $k$-th prime, indexed
+from one ($p_1 = 2$). There is a natural number $k_0$ such that every $k \ge k_0$ satisfies
+$k (\log k + \log \log k - 1) \le p_k \le k (\log k + \log \log k)$.
 
 ## Depends on
 
-- [Nth Prime One](nth-prime-one.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

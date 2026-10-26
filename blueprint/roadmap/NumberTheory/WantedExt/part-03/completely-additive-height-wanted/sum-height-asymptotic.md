@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_height_asymptotic
 ---
 
-# Sum height asymptotic
+# Prime reduction for summatory heights
 
-Proposition 7 (prime reduction), final form: for completely additive `H` there is `C` with
-`|F(x) - x ∑_{p ≤ x} H(p)/(p - 1)| ≤ C log x ∑_{p ≤ x} H(p)` for all real `x ≥ 2`.
+**Prime reduction for summatory heights.** Let $H : \mathbb{N} \to \mathbb{N}$ be completely
+additive on the positive integers, and for real $x$ let $F(x) = \sum_{1 \le m \le x} H(m)$. Then
+there is a real constant $C$ such that for every real $x \ge 2$,
+
+$$\Bigl| F(x) - x \sum_{p \le x} \frac{H(p)}{p - 1} \Bigr| \le C \log x \sum_{p \le x} H(p),$$
+
+where both sums run over the primes $p \le x$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
 
 ## Sources
 

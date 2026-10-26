@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFPerfect_two_pow_mul_prime_pow
 ---
 
-# Theorem 15
+# No near $F$-perfect number of the form $2^a p^b$ with $b$ even
 
-**Theorem 15**: there is no near `F`-perfect number
-of the form `2^a p^b` with `b` even.
+**No near $F$-perfect number of the form $2^a p^b$ with $b$ even.** For every prime $p$ and
+all natural numbers $a$ and $b$ with $b$ even, the number $n = 2^a p^b$ is not near $F$-perfect:
+there is no divisor $d$ of $n$ with $d < n$ and $\sigma_2(n) = n^2 + d^2 + 3n$, where
+$\sigma_2(n)$ is the sum of the squares of the divisors of $n$.
 
 ## Depends on
 
-- [Is Near FPerfect](is-near-fperfect.md)
+- [Near $F$-perfect numbers](is-near-fperfect.md)
 
 ## Sources
 

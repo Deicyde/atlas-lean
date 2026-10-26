@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_dilation_quotient
 ---
 
-# Tendsto dilation quotient
+# Dilation derivative of a differentiable function
 
-Proposition 12: if `f` has derivative `f'` at `x`, the dilation derivative
-`lim_{λ → 1} (λ⁻¹ f(λx) - f(x))/(λ - 1)` exists and equals `x f' - f(x)`.
+**Dilation derivative of a differentiable function.** Let $f : \mathbb{R} \to \mathbb{R}$ have
+derivative $f'$ at the point $x \in \mathbb{R}$. Then the quotient
+$(\lambda^{-1} f(\lambda x) - f(x))/(\lambda - 1)$ tends to $x f' - f(x)$ as $\lambda \to 1$ with
+$\lambda \ne 1$; that is, the dilation derivative of $f$ at $x$ exists and equals $x f' - f(x)$.
 
 ## Depends on
 

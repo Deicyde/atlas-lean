@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.omegaOne_hFree_mean_asymptotic
 ---
 
-# Omega One h Free mean asymptotic
+# Mean of $\omega_1$ over $h$-free polynomials
 
-Theorem 1, first moment: for `h ≥ 2`, the mean of `ω_1` over `S_h ∩ M_n` is
-`log n + C_1(S_h, 1) + O(1/n)` with `C_1(S_h, 1) = B_1 - T_h`.
+**Mean of $\omega_1$ over $h$-free polynomials.** Let $F$ be a finite field with $q$ elements
+and let $h \ge 2$. Let $\omega_1(f)$ be the number of monic irreducible $P$ dividing $f$ exactly
+once, write $|P| = q^{\deg P}$, and let $B_1 = \gamma + \sum_P (\log(1 - 1/|P|) + 1/|P|)$ be the
+function field Mertens constant, with $\gamma$ the Euler–Mascheroni constant, and let
+$T_h = \sum_P (|P|^{h-1} - 1)/(|P|(|P|^h - 1))$, both sums over monic irreducible $P$. Then the
+mean of $\omega_1$ over the $h$-free monic polynomials of degree $n$ over $F$ is
+$\log n + B_1 - T_h + O(1/n)$ as $n \to \infty$.
 
 ## Depends on
 
-- [Function Field Mertens Constant](function-field-mertens-constant.md)
-- [H Free Moment](h-free-moment.md)
-- [H Free Omega One Sum](h-free-omega-one-sum.md)
+- [Function field Mertens constant](function-field-mertens-constant.md)
+- [Moments of $\omega_k$ over $h$-free polynomials](h-free-moment.md)
+- [The prime sum $T_h$](h-free-omega-one-sum.md)
 
 ## Sources
 

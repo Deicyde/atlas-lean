@@ -6,22 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.not_isDigitallyRobustComposite_25011
 ---
 
-# Not is Digitally Robust Composite 25011
+# 25011 is not a digitally robust composite
 
-The number `25011` is not digitally robust: replacing its units digit `1` by `3` yields the
-prime `25013`, contradicting the replacement-composite conjunct of
-`IsDigitallyRobustComposite`. This formalizes the paper's counterexample with no deviation.
+**25011 is not a digitally robust composite.** The number $25011$ is not a digitally robust
+composite: replacing its units digit $1$ by $3$ gives the prime $25013$.
 
 ## Depends on
 
-- [Is Digitally Robust Composite](is-digitally-robust-composite.md)
+- [Digitally robust composite numbers](is-digitally-robust-composite.md)
 
 ## Proof depends on
 
-- [Delete Digit](delete-digit.md)
-- [Insert Digit](insert-digit.md)
-- [Replace Digit](replace-digit.md)
-- [Replace Digit 25011 units](replace-digit-25011-units.md)
+- [Deleting a digit](delete-digit.md)
+- [Inserting a digit](insert-digit.md)
+- [Replacing a base-ten digit](replace-digit.md)
+- [Replacing the units digit of 25011 by 3](replace-digit-25011-units.md)
 
 ## Sources
 

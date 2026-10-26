@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.jacobi_weighted_zero_sum_of_three_coprime
 ---
 
-# Jacobi weighted zero sum of three coprime
+# Three terms coprime to one prime force a Jacobi-weighted zero sum
 
-For squarefree `n` with every prime divisor at least seven, a sequence in `ℤ_n` with
-at least two terms coprime to each prime divisor, and at least three terms coprime to
-some prime divisor, is an `S(n)`-weighted zero-sum sequence.
+**Three terms coprime to one prime force a Jacobi-weighted zero sum.** Let $n$ be a squarefree
+natural number all of whose prime divisors are at least $7$, let
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let $S(n)$ be the set of units $u$ of $\mathbb{Z}_n$
+whose Jacobi symbol $(a/n)$ is $1$, where $0 \le a < n$ is the representative of $u$. Let
+$(x_1, \dots, x_k)$ be a sequence in $\mathbb{Z}_n$, and call $x_i$ coprime to a prime $p$ when its
+representative in $\{0, \dots, n-1\}$ is. Suppose that for every prime divisor $p$ of $n$ at least
+two indices $i$ have $x_i$ coprime to $p$, and that for some prime divisor $p$ of $n$ at least
+three indices $i$ have $x_i$ coprime to $p$. Then there are $a_1, \dots, a_k \in S(n)$ with
+$a_1 x_1 + \dots + a_k x_k = 0$, that is, the sequence is an $S(n)$-weighted zero-sum sequence.
 
 ## Depends on
 

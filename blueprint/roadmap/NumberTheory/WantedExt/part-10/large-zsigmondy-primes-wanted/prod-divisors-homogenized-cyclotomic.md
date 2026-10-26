@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.prod_divisors_homogenizedCyclotomic
 ---
 
-# Prod divisors homogenized Cyclotomic
+# Factorization of $a^n - b^n$ into homogenized cyclotomic values
 
-`aⁿ - bⁿ = ∏_{d ∣ n} Φ_d(a, b)` for every positive integer `n` and all integers `a`, `b`.
+**Factorization of $a^n - b^n$ into homogenized cyclotomic values.** For every positive
+integer $n$ and all integers $a$ and $b$,
+
+$$a^n - b^n = \prod_{d \mid n} \Phi_d(a, b),$$
+
+where the product runs over the positive divisors $d$ of $n$ and $\Phi_d(a, b)$ is the
+homogenized cyclotomic value.
 
 ## Depends on
 

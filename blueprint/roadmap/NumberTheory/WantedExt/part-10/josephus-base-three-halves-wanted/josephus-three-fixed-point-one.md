@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.josephusThreeFixedPoint_one
 ---
 
-# Josephus Three Fixed Point one
+# Second positive fixed point of the Josephus function for step three
 
-The second zero-indexed positive fixed point is `2`, the paper's `n_p^{(2)}`.
+**Second positive fixed point of the Josephus function for step three.** Let $J_3$ be the
+Josephus function with elimination step $3$. The second smallest positive integer $n$ with
+$J_3(n) = n$ is $2$; in the zero-indexed enumeration $n_0 < n_1 < \cdots$ of these fixed points,
+$n_1 = 2$, the paper's $n_p^{(2)}$.
 
 ## Depends on
 
-- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
+- [Enumeration of the positive fixed points of $J_3$](josephus-three-fixed-point.md)
 
 ## Proof depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.genMarkov_iff_genSecondMarkov
 ---
 
-# Gen Markov iff gen Second Markov
+# The generalized Markov equation and the generalized second Markov equation
 
-Proposition 2.4: a rational triple `(a, b, c)` solves `GME(k)` if and only if
-`((3 + 3k)a - k, (3 + 3k)b - k, (3 + 3k)c - k)` solves the `k`-generalized second Markov
-equation `GSME(k)`: `x² + y² + z² + (k² + 2k)(x + y + z) + 2k³ + 3k² = x y z`.
+**The generalized Markov equation and the generalized second Markov equation.** Let
+$k \in \mathbb{N}$ and let $a, b, c$ be rational numbers. Put $x = (3 + 3k)a - k$,
+$y = (3 + 3k)b - k$ and $z = (3 + 3k)c - k$. Then
+$a^2 + b^2 + c^2 + k(bc + ca + ab) = (3 + 3k)abc$ if and only if
+$x^2 + y^2 + z^2 + (k^2 + 2k)(x + y + z) + 2k^3 + 3k^2 = xyz$. The first equation is the
+$k$-generalized Markov equation $\mathrm{GME}(k)$ and the second the $k$-generalized second
+Markov equation $\mathrm{GSME}(k)$.
 
 ## Depends on
 

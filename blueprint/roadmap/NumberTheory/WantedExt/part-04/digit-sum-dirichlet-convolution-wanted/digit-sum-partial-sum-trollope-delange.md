@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.digitSum_partialSum_trollopeDelange
 ---
 
-# Digit Sum partial Sum trollope Delange
+# Trollope–Delange formula for real $x$
 
-The Trollope-Delange formula in base `q`, for real `x ≥ 1`:
-`∑_{n ≤ x} s_q(n) = (q - 1)/(2 log q) · x log x + x F(log x / log q) - h(x)
-  + (1 + ⌊x⌋ - x) s_q(⌊x⌋)`.
+**Trollope–Delange formula for real $x$.** Let $q \ge 2$ be an integer, let $s_q(n)$ denote
+the sum of the base-$q$ digits of $n$, and let $F$ be the Trollope–Delange fluctuation and $h$
+Delange's series in base $q$. For every real number $x \ge 1$,
+
+$$\sum_{n=1}^{\lfloor x \rfloor} s_q(n) = \frac{q - 1}{2 \log q} \, x \log x +
+x F\left(\frac{\log x}{\log q}\right) - h(x) +
+(1 + \lfloor x \rfloor - x) \, s_q(\lfloor x \rfloor).$$
 
 ## Depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
-- [Trollope Delange Series](trollope-delange-series.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
+- [Delange's series](trollope-delange-series.md)
 
 ## Sources
 

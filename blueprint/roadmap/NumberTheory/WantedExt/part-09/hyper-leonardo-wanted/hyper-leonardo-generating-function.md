@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_generatingFunction
 ---
 
-# Hyper Leonardo generating Function
+# Generating function of the hyper-Leonardo numbers
 
-Theorem 1: `∑_{n ≥ 0} Le^{(r)}_n tⁿ = (1-t+t²)/((1-2t+t³)(1-t)^r)`, stated after
-clearing denominators in `ℤ⟦t⟧`.
+**Generating function of the hyper-Leonardo numbers.** For every natural number $r$, the
+formal power series $\sum_{n \ge 0} \mathrm{Le}^{(r)}_n t^n$ of the hyper-Leonardo numbers of
+order $r$ satisfies
+$\left(\sum_{n \ge 0} \mathrm{Le}^{(r)}_n t^n\right)(1-2t+t^3)(1-t)^r = 1-t+t^2$ in
+$\mathbb{Z}[[t]]$, that is,
+$\sum_{n \ge 0} \mathrm{Le}^{(r)}_n t^n = \frac{1-t+t^2}{(1-2t+t^3)(1-t)^r}$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

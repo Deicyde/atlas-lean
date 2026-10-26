@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_one_div_abs_sin_lt
 ---
 
-# Sum one div abs sin lt
+# Bound for a sum of reciprocal sines
 
-For a prime `p`, an integer `a` with `p ∤ a`, and `1 ≤ B < p/2`,
-`∑_{h=1}^{B} 1 / |sin(π a h / p)| < (p/π)(log B + γ + 1/(2B)) + p B (B + 1) / (π (p² - B²))`,
-with `γ` the Euler–Mascheroni constant.
+**Bound for a sum of reciprocal sines.** Let $p$ be a prime, let $a$ be an integer not
+divisible by $p$, let $B$ be an integer with $1 \le B < p/2$, and let $\gamma$ be the
+Euler–Mascheroni constant. Then
+
+$$
+\sum_{h=1}^{B} \frac{1}{|\sin(\pi a h / p)|} <
+\frac{p}{\pi}\left(\log B + \gamma + \frac{1}{2B}\right) + \frac{pB(B+1)}{\pi(p^2 - B^2)}.
+$$
 
 ## Depends on
 

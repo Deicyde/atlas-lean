@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fundInterval
 ---
 
-# Fund Interval
+# Half-open interval between two reals
 
-The interval `⟨α, β⟩`, equal to `[α, β)` if `α < β` and to `(β, α]` otherwise.
+**Half-open interval between two reals.** For real numbers $\alpha$ and $\beta$, the interval
+$\langle \alpha, \beta \rangle$ is $[\alpha, \beta)$ if $\alpha < \beta$, and $(\beta, \alpha]$
+otherwise.
 
 ## Depends on
 

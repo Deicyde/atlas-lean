@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.decimationCoeff
 ---
 
-# Decimation Coeff
+# Decimation coefficients
 
-The coefficient `v_l^{(i)} = s_{lr+i} - A_{m-1} s_{(l-1)r+i} - ⋯ - A_{m-l} s_i` of Theorems 1
-and 2.
+**Decimation coefficients.** Let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be sequences in a
+commutative ring and let $m$, $r$ be natural numbers. For natural numbers $l$ and $i$, the
+decimation coefficient is
+
+$$v_l^{(i)} = s_{lr+i} - \sum_{j\lt l} A_{m-1-j} s_{(l-1-j)r+i},$$
+
+an index $m-1-j$ that would be negative being read as $0$. For $l \le m$ this is
+$v_l^{(i)} = s_{lr+i} - A_{m-1} s_{(l-1)r+i} - \cdots - A_{m-l} s_i$.
 
 ## Depends on
 

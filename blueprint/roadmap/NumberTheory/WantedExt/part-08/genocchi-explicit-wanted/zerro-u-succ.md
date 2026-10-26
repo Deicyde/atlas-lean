@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU_succ
 ---
 
-# Lemma 3
+# Recurrence for the Zerroukhat–Khaldi sums $U$
 
-**Lemma 3**, first identity: for `k ≥ 1`,
-`U(r+1, k) = U(r, k+1) + k U(r, k)`.
+**Recurrence for the Zerroukhat–Khaldi sums $U$.** Let $U(m, k)$ be the Zerroukhat–Khaldi
+sum. For all natural numbers $r$ and $k$ with $k \ge 1$,
+$U(r+1, k) = U(r, k+1) + k \, U(r, k)$.
 
 ## Depends on
 
-- [Zerro U](zerro-u.md)
+- [The Zerroukhat–Khaldi sum $U(m, k)$](zerro-u.md)
 
 ## Sources
 

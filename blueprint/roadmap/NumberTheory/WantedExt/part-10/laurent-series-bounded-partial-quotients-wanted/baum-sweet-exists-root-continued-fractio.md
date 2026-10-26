@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.baumSweet_exists_root_continuedFraction
 ---
 
-# Baum Sweet exists root continued Fraction
+# Baum–Sweet: explicit continued fractions of roots
 
-Baum–Sweet: for `n ≥ 0` and `P, Q ∈ 𝔽₂[x]` with `P + Q^{2ⁿ} ∉ {0, 1}`, the equation
-`f^{2ⁿ+1} + Q f^{2ⁿ} + P f + Q P + 1 = 0` has a root `f ∈ 𝔽₂((x⁻¹))` with continued fraction
-`[Q; P + Q^{2ⁿ}, P^{2ⁿ} + Q^{2^{2n}}, P^{2^{2n}} + Q^{2^{3n}}, …]`, i.e. `b₀ = Q` and
-`b_k = P^{2^{(k-1)n}} + Q^{2^{kn}}` for `k ≥ 1`. The paper also claims the root is unique; that
-part is omitted: for `n = 0`, `P = x`, `Q = 0` the equation `f (f + x) = 1` has the two roots
-`[0; x, x, …]` and `[x; x, x, …]`.
+**Baum–Sweet: explicit continued fractions of roots.** Let $n \ge 0$ and let
+$P, Q \in \mathbb{F}_2[x]$ with $P + Q^{2^n} \ne 0$ and $P + Q^{2^n} \ne 1$. Then some
+$f \in \mathbb{F}_2((x^{-1}))$ satisfies $f^{2^n+1} + Q f^{2^n} + P f + QP + 1 = 0$ and has partial
+quotients $b_0 = Q$ and $b_k = P^{2^{(k-1)n}} + Q^{2^{kn}}$ for all $k \ge 1$, that is,
+$f = [Q; P + Q^{2^n}, P^{2^n} + Q^{2^{2n}}, P^{2^{2n}} + Q^{2^{3n}}, \dots]$.
+
+The paper also claims that this root is unique, which fails: for $n = 0$, $P = x$ and $Q = 0$ the
+equation $f(f + x) = 1$ has the two roots $[0; x, x, \dots]$ and $[x; x, x, \dots]$.
 
 ## Depends on
 
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

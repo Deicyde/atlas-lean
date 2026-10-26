@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lcmReciprocalSum_empty
 ---
 
-# Lcm Reciprocal Sum empty
+# Double reciprocal lcm sum of the empty set
 
-The double least-common-multiple sum of the empty set is zero.
+**Double reciprocal lcm sum of the empty set.** For every real number $x$, the double sum of
+reciprocal least common multiples of the empty set up to $x$ is $0$.
 
 ## Depends on
 
-- [Lcm Reciprocal Sum](lcm-reciprocal-sum.md)
+- [Double sum of reciprocal least common multiples](lcm-reciprocal-sum.md)
 
 ## Proof depends on
 
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
-- [Naturals In Set Up To empty](naturals-in-set-up-to-empty.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
+- [The empty set has no elements up to any bound](naturals-in-set-up-to-empty.md)
 
 ## Sources
 

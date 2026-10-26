@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cyclotomicTraceNormSq_zero
 ---
 
-# Cyclotomic Trace Norm Sq zero
+# Squared trace norm of zero
 
-`‖0‖² = 0`.
+**Squared trace norm of zero.** Let $p$ be a positive integer and let $K$ be a $p$-th
+cyclotomic extension of $\mathbb{Q}$. The squared trace norm of $0 \in K$ is $0$, that is,
+$\lVert 0 \rVert^2 = 0$.
 
 ## Depends on
 
-- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
+- [Squared trace norm on a cyclotomic field](cyclotomic-trace-norm-sq.md)
 
 ## Sources
 

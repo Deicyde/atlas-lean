@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.primeCountingApprox_sub_lt
 ---
 
-# Prime Counting Approx sub lt
+# Prime counting from the exact divisor count
 
-Lemma 3: `π₀(n) = ∑_{m=2}^{n} exp(-m (τ(m) - 2))` satisfies
-`π₀(n) - π(n) < 1/(e³ (e - 1))` for all `n ≥ 2`.
+**Prime counting from the exact divisor count.** For every natural number $n \ge 2$,
+
+$$\sum_{m=2}^{n} e^{-m(\tau(m) - 2)} - \pi(n) < \frac{1}{e^3(e - 1)},$$
+
+where $\tau(m)$ is the number of positive divisors of $m$ and $\pi(n)$ is the number of primes at
+most $n$.
 
 ## Depends on
 

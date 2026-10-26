@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.isSophieGermainPrime_iff_forall_fermat_congruence
 ---
 
-# Is Sophie Germain Prime iff forall fermat congruence
+# Fermat-type characterizations of Sophie Germain primes
 
-A prime `p` is a Sophie Germain prime if and only if
-`a ^ (2p) ≡ (2p + 1) a ^ (p + 1) - 2p (mod p (2p + 1))` for every integer `a` coprime to
-`p (2p + 1)`, and also if and only if
-`(2p + 1) a ^ (p - 1) ≡ p a ^ (2p) + p + 1 (mod p (2p + 1))` for every such `a`.
+**Fermat-type characterizations of Sophie Germain primes.** Let $p$ be a prime. Then $p$ is a
+Sophie Germain prime if and only if $a^{2p} \equiv (2p + 1)\,a^{p+1} - 2p \pmod{p(2p + 1)}$ for
+every integer $a$ coprime to $p(2p + 1)$; and $p$ is a Sophie Germain prime if and only if
+$(2p + 1)\,a^{p-1} \equiv p\,a^{2p} + p + 1 \pmod{p(2p + 1)}$ for every integer $a$ coprime to
+$p(2p + 1)$.
 
 ## Depends on
 

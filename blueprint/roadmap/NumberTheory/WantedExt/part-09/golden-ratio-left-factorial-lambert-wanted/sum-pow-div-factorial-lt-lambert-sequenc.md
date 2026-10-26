@@ -5,9 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_div_factorial_lt_lambertSequence
 ---
 
-# Sum pow div factorial lt lambert Sequence
+# Partial exponential sums at the Lambert sequence
 
-Lemma 9: `∑_{t=0}^{k} a_n^t / t! < a_n^{k+1} / (k+1)!` for `n ≥ 5` and `0 ≤ k < n - 2`.
+**Partial exponential sums at the Lambert sequence.** Let $n \ge 5$ and $k$ be natural numbers
+with $k < n - 2$, let $h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with
+$a \ge n - 1$ and
+
+$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
+
+Then
+
+$$\sum_{t=0}^{k} \frac{a^t}{t!} < \frac{a^{k+1}}{(k+1)!}.$$
+
+The two conditions on $a$ say exactly that
+$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
+is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$.
 
 ## Depends on
 

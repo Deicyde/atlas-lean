@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_radical_expansion_coeffs
 ---
 
-# Exists Unique radical expansion coeffs
+# Unique integer coordinates of powers of $u + v^{1/N}$
 
-If `N` has at least two distinct prime factors, `u, v` are coprime positive integers and
-`x^N - v` is irreducible over `ℚ`, then for every `n` the integer coefficients of
-`(u + v^{1/N})^n` in the basis `1, v^{1/N}, …, v^{(N-1)/N}` exist and are unique.
+**Unique integer coordinates of powers of $u + v^{1/N}$.** Let $N$ be a natural number with
+at least two distinct prime divisors, let $u, v$ be coprime positive integers such that
+$x^N - v$ is irreducible over $\mathbb{Q}$, and let $\theta = v^{1/N}$ be the positive real
+$N$-th root of $v$. Then for every natural number $n$ there is exactly one tuple of integers
+$(a_0, \dots, a_{N-1})$ with $(u + \theta)^n = \sum_{i=0}^{N-1} a_i \theta^i$.
 
 ## Depends on
 

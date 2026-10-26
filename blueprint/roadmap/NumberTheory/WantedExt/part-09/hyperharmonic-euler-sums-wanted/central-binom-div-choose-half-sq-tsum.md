@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_div_choose_half_sq_tsum
 ---
 
-# Central Binom div choose half sq tsum
+# Central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
-For every integer `m ≥ 1`,
-`∑_{n ≥ 0} binom(2n, n) / (4^n binom(n + m, m) (n + 1/2)^2)
-= (4^m π / binom(2m, m)) (2 log 2 - O_m)
-  - ∑_{q=1}^{m} (-4)^q binom(m, q) / (binom(2q, q) (q - 1/2)^2)`,
-where `O_m = O_m(1)` (the source writes `O_m` for the depth-one odd harmonic number).
+**Central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$.** Let $m \ge 1$ be an integer and
+write $O_m = O_m(1) = \sum_{i=1}^{m} 1/(i - 1/2)$ for the depth-one odd harmonic number. Then
+
+$$\sum_{n \ge 0} \frac{\binom{2n}{n}}{4^n \binom{n+m}{m} (n + 1/2)^2} =
+\frac{4^m \pi}{\binom{2m}{m}} \bigl(2 \log 2 - O_m\bigr) -
+\sum_{q=1}^{m} \frac{(-4)^q \binom{m}{q}}{\binom{2q}{q} (q - 1/2)^2}.$$
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

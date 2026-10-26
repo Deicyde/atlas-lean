@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZeta_corollaryPole_mem
 ---
 
-# L Generalized Fibonacci Zeta corollary Pole mem
+# Explicit possible poles of the ℓ-generalized Fibonacci zeta function
 
-Corollary 1: if `(ℓ-1) ∣ k`, then for every integer `n` the point printed by the
-paper (using its even/odd alternatives) belongs to the possible-pole set `S` of
-Theorem 1.  In the witnessing tuple `κ` is constant `k/(ℓ-1)` on all
-non-dominant roots in the witnessing tuple.
+**Explicit possible poles of the ℓ-generalized Fibonacci zeta function.** Let $\ell \ge 2$, let
+$\alpha > 1$ be a real number with $\alpha^\ell = \sum_{i=0}^{\ell-1} \alpha^i$, and let $k$ be a
+natural number divisible by $\ell - 1$; write $q = k/(\ell - 1)$. Then for every integer $n$, the
+point $-(k + q) + i\pi(2n + q)/\log \alpha$ if $\ell$ is even, and $-(k + q) + 2\pi i n/\log \alpha$
+if $\ell$ is odd, belongs to the set $S$ of possible poles of the $\ell$-generalized Fibonacci
+zeta function determined by $\ell$ and $\alpha$.
+
+A witnessing exponent tuple takes the constant value $q$ at every root of the characteristic
+polynomial other than $\alpha$.
 
 ## Depends on
 
-- [L Generalized Fibonacci Zeta Corollary Pole](l-generalized-fibonacci-zeta-corollary-p.md)
-- [L Generalized Fibonacci Zeta Pole Set](l-generalized-fibonacci-zeta-pole-set.md)
+- [Corollary pole of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-corollary-p.md)
+- [Possible poles of the ℓ-generalized Fibonacci zeta function](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

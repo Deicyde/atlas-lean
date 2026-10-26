@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciZeta_summable
 ---
 
-# L Generalized Fibonacci Zeta summable
+# Absolute convergence of the ℓ-generalized Fibonacci zeta series
 
-Proposition 1: for an ℓ-generalized Fibonacci sequence with `ℓ ≥ 2`, the series
-of norms of `(F_n)^{-s}` is summable whenever `Re(s) > 0`.  Reindexing by `j ↦ j+1`
-expresses the paper's indices `n ≥ 1` as a Lean sum over `j : ℕ`; the complex power is
-`Complex.cpow` through `HPow ℂ ℂ`.
+**Absolute convergence of the ℓ-generalized Fibonacci zeta series.** Let $\ell \ge 2$ and let
+$F$ be an $\ell$-generalized Fibonacci sequence. For every complex number $s$ with
+$\operatorname{Re} s > 0$, the series $\sum_{n \ge 1} |F_n^{-s}|$ converges, where $F_n^{-s}$ is
+the principal complex power of $F_n$ viewed as a complex number.
 
 ## Depends on
 
-- [Is LGeneralized Fibonacci](is-lgeneralized-fibonacci.md)
+- [ℓ-generalized Fibonacci sequence](is-lgeneralized-fibonacci.md)
 
 ## Sources
 

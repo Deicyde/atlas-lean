@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_cloitreApprox_count_div_length
 ---
 
-# Tendsto cloitre Approx count div length
+# Digit frequencies in Cloitre's approximants
 
-Theorem 17: in the stage words `Aₖ` (`cloitreApprox k`) of Cloitre's sequence, the
-proportion of digits equal to `1` tends to `2/3` and the proportion equal to `2` tends to
-`1/3`; here `L(k)` is the number of digits of `Aₖ`.
+**Digit frequencies in Cloitre's approximants.** Let $A_k$ be the $k$-th approximant of
+Cloitre's sequence. As $k \to \infty$, the proportion of entries of $A_k$ equal to $1$ tends to
+$2/3$, and the proportion of entries equal to $2$ tends to $1/3$.
 
 ## Depends on
 

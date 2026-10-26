@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_fixedDegreeMonic_iff
 ---
 
-# Mem fixed Degree Monic iff
+# Membership in $M_n$
 
-Membership in `fixedDegreeMonic F n` is exactly representability by the displayed
-coefficient-vector construction.  This records the defining finite parametrization of
-`M_n` without appealing to an ambient infinite set of polynomials.
+**Membership in $M_n$.** Let $F$ be a finite field and $n \in \mathbb{N}$. A polynomial $f$ over
+$F$ lies in the set $M_n$ of monic polynomials of degree $n$ over $F$ if and only if there are
+$c_0, \dots, c_{n-1} \in F$ with $f = X^n + \sum_{i=0}^{n-1} c_i X^i$.
 
 ## Depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
 
 ## Sources
 

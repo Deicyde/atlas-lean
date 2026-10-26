@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.basePDigit_eventually_periodic_iff
 ---
 
-# Base PDigit eventually periodic iff
+# Minimal period and delay of base-$p$ digits
 
-For a positive rational `x`, the digit sequence `k ↦ [p^{-k}](x)` is periodic with period
-`L > 0` for all `k ≥ D + 1` exactly when the order `L_x` of `p` in `(ℤ/x_Dℤ)^×` divides `L` and
-`D ≥ -v_p(x)`; that is, `L_x` is the minimal period and `-v_p(x)` the minimal delay. Indices
-`k` and `D` range over `ℤ` (for `v_p(x) > 0` the delay is negative).
+**Minimal period and delay of base-$p$ digits.** Let $p$ be a prime and $x > 0$ a rational
+number, write $[p^j](x)$ for the $j$-th base-$p$ digit of $x$, and let $L_x$ be the period and
+$D_x = -v_p(x)$ the delay of the base-$p$ expansion of $x$. For every integer $D$ and every
+natural number $L > 0$, the identity $[p^{-(k+L)}](x) = [p^{-k}](x)$ holds for all integers
+$k \ge D + 1$ if and only if $L_x$ divides $L$ and $D_x \le D$. Thus $L_x$ is the minimal period
+and $D_x$ the minimal delay of the digit sequence $k \mapsto [p^{-k}](x)$.
+
+For $v_p(x) > 0$ the delay $D_x$ is negative.
 
 ## Depends on
 
-- [Base PDelay](base-pdelay.md)
-- [Base PDigit](base-pdigit.md)
-- [Base PPeriod](base-pperiod.md)
+- [Delay of the base-$p$ expansion](base-pdelay.md)
+- [Base-$p$ digits of a rational number](base-pdigit.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 
 ## Sources
 

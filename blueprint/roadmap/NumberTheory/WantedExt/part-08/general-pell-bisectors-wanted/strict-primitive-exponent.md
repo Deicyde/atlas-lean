@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.strictPrimitiveExponent
 ---
 
-# Strict Primitive Exponent
+# Strictly primitive exponent
 
-`l_p`: for `p ∈ S(d)`, the least integer `l > 0` such that `|x² - d y²| = p^l` has a strictly
-primitive integral solution; `0` when `p ∉ S(d)`.
+**Strictly primitive exponent.** Let $d$ be an integer and $p$ a natural number, and let
+$S(d)$ be the set of primes $q$ for which $|x^2 - d y^2| = q^l$ has a strictly primitive integral
+solution (integers $x, y$ with $x$ and $d y$ coprime) for some integer $l > 0$. If $p \in S(d)$,
+then $l_p$ is the least integer $l > 0$ such that $|x^2 - d y^2| = p^l$ has a strictly primitive
+integral solution; if $p \notin S(d)$, then $l_p = 0$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

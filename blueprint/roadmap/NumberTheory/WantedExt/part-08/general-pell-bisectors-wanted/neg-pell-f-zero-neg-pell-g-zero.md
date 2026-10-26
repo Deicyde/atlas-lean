@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.negPellF_zero_negPellG_zero
 ---
 
-# Neg Pell F zero neg Pell G zero
+# Initial values of the negative Pell sequences
 
-`f_0 = 1` and `g_0 = 0`.
+**Initial values of the negative Pell sequences.** For every natural number $d$, the
+sequences $f_n$ and $g_n$ of the negative Pell equation $x^2 - d y^2 = -1$ satisfy $f_0 = 1$ and
+$g_0 = 0$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Proof depends on
 
-- [Neg Pell Fund X](neg-pell-fund-x.md)
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [First coordinate of the fundamental negative Pell solution](neg-pell-fund-x.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
 
 ## Sources
 

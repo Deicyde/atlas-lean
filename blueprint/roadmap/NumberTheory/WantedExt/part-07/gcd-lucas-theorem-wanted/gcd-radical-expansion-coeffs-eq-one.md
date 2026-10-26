@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.gcd_radical_expansion_coeffs_eq_one
 ---
 
-# Gcd radical expansion coeffs eq one
+# Coprime coefficients of $(u + v^{1/N})^n$ when $N$ has two distinct prime factors
 
-Under the hypotheses of Lemma 3, the coefficients `a_{n,0}, …, a_{n,N-1}` of
-`(u + v^{1/N})^n` have greatest common divisor `1` for every `n ≥ 1`.
+**Coprime coefficients of $(u + v^{1/N})^n$ when $N$ has two distinct prime factors.** Let
+$N$ be a natural number with at least two distinct prime divisors, let $u, v$ be coprime positive
+integers such that $x^N - v$ is irreducible over $\mathbb{Q}$, let $\theta = v^{1/N}$ be the
+positive real $N$-th root of $v$, and let $a_{n,i}$ (for natural $n$ and $0 \le i \le N - 1$) be
+integers with $(u + \theta)^n = \sum_{i=0}^{N-1} a_{n,i} \theta^i$ for every $n \ge 1$. Then for
+every $n \ge 1$ the greatest common divisor of $a_{n,0}, \dots, a_{n,N-1}$ is $1$.
 
 ## Depends on
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.isCoveringSystem_translate
 ---
 
-# Lemma 3
+# Translating a covering system
 
-**Lemma 3** (translation). If `{a_i mod m_i}` is a covering system and `t ∈ ℤ`, then
-`{a_i + t mod m_i}` is a covering system.
+**Translating a covering system.** Let $C$ be a covering system: a finite set of
+congruences $x \equiv a_i \pmod{m_i}$ with $a_i \in \mathbb{Z}$ and $m_i \in \mathbb{N}$ (where
+$x \equiv a_i \pmod 0$ means $x = a_i$) such that every integer satisfies at least one of them.
+Then for every $t \in \mathbb{Z}$ the congruences $x \equiv a_i + t \pmod{m_i}$ also form a
+covering system.
 
 ## Depends on
 

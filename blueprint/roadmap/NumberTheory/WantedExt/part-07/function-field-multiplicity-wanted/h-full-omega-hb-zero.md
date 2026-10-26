@@ -12,16 +12,16 @@ lean: MetaMathlibExt.hFullOmegaHB_zero
 
 ## Depends on
 
-- [H Full Omega HB](h-full-omega-hb.md)
+- [The coefficients $B_z(n)$ of the $h$-full series](h-full-omega-hb.md)
 
 ## Proof depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [Fixed Degree Monic zero](fixed-degree-monic-zero.md)
-- [H Full](h-full.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [The only monic polynomial of degree zero](fixed-degree-monic-zero.md)
+- [$h$-full polynomials](h-full.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 - [Omega Mult one](omega-mult-one.md)
-- [One mem h Full](one-mem-h-full.md)
+- [The polynomial $1$ is $h$-full](one-mem-h-full.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsGenMarkovNumber
 ---
 
-# Is Gen Markov Number
+# Generalized Markov number
 
-A `k`-generalized Markov number: an entry of some `k`-generalized Markov triple (the
-equation is symmetric, so the middle entry is no restriction).
+**Generalized Markov number.** Let $k$ be a natural number. A natural number $b$ is a
+$k$-generalized Markov number when there are natural numbers $a$ and $c$ such that
+$(a, b, c)$ is a $k$-generalized Markov triple.
+
+Since the $k$-generalized Markov equation is symmetric in its three variables, this is the same
+as $b$ being an entry, in any position, of some $k$-generalized Markov triple.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

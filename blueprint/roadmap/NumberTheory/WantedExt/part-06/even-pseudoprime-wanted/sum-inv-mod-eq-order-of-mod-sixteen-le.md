@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_inv_modEq_orderOf_mod_sixteen_le
 ---
 
-# Proposition 12
+# Reciprocal sum over a residue class restricted modulo 16
 
-**Proposition 12.** Let `p` be a prime with `p` and `ℓ₂(p)` odd and `k ∈ ℕ`, and let
-`S` be the sum of `1/N` over `e^k < N ≤ e^{k+1}` with `N ≡ p (mod p ℓ₂(p))` and
-`N ≡ ±2 (mod 16)`. Then `S ≤ 1 / (4 p ℓ₂(p))` whenever `16 p ℓ₂(p) ≤ e^k`, and always
-`S ≤ (1/8 + 4 e^{-k} p ℓ₂(p)) / (p ℓ₂(p))`.
+**Reciprocal sum over a residue class restricted modulo 16.** Write $\ell_2(p)$ for the
+multiplicative order of $2$ modulo a prime $p$. Let $p$ be an odd prime with $\ell_2(p)$ odd,
+let $k$ be a natural number, and let $S$ be the sum of $1/N$ over the integers $N$ with
+$e^k < N \le e^{k+1}$, $N \equiv p \pmod{p\,\ell_2(p)}$ and $N \equiv \pm 2 \pmod{16}$. Then
+$S \le 1 / (4p\,\ell_2(p))$ whenever $16p\,\ell_2(p) \le e^k$, and in all cases
+$S \le (1/8 + 4e^{-k} p\,\ell_2(p)) / (p\,\ell_2(p))$.
 
-Partial: the clauses involving `z_k`, `c_k` and `d_k` are omitted (`z_k` is defined only in
-the paper body).
+The paper's further clauses, involving $z_k$, $c_k$ and $d_k$, are not stated here.
 
 ## Depends on
 

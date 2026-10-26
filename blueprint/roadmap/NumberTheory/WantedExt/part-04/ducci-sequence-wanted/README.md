@@ -5,8 +5,8 @@ navigation: module
 # Ducci Sequence
 
 - [Ducci Coeff](ducci-coeff.md)
-- [Lemma 1](choose-prime-pow-sub-one-mod.md)
-- [Lemma 2](choose-prime-pow-sub-mod.md)
-- [Lemma 3](ducci-coeff-vanish-mod.md)
-- [Lemma 4](ducci-coeff-reduce-mod.md)
-- [Theorem 2](ducci-pred-iff.md)
+- [Binomial coefficients $\binom{p^k - 1}{j}$ modulo $p$](choose-prime-pow-sub-one-mod.md)
+- [Binomial coefficients $\binom{p^k - p^{k-1}}{j}$ modulo $p$](choose-prime-pow-sub-mod.md)
+- [Vanishing of Ducci coefficients modulo $p$](ducci-coeff-vanish-mod.md)
+- [Reduction of Ducci coefficients modulo $p$](ducci-coeff-reduce-mod.md)
+- [Ducci predecessor criterion for even length](ducci-pred-iff.md)

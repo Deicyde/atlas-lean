@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.markov_hasUniqueMaxTriple_of_congruenceCount_le_two
 ---
 
-# Markov has Unique Max Triple of congruence Count le two
+# Uniqueness criterion for classical Markov numbers
 
-Theorem 1.2 (classical criterion, `k = 0`): for a Markov number `b ∉ {1, 2}`, if
-`x² + 1 ≡ 0 (mod b)` has at most two solutions, then `b` is the maximum of a unique Markov
-triple up to order.
+**Uniqueness criterion for classical Markov numbers.** Let $b \ne 1, 2$ be a Markov number
+(a $0$-generalized Markov number). If the congruence $x^2 + 1 \equiv 0 \pmod{b}$ has at most
+two solutions $x$ with $0 \le x < b$, then $b$ is the maximum of a unique Markov triple up to
+order.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
-- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
+- [Number of solutions of $x^2 + kx + 1 \equiv 0 \pmod b$](gen-markov-congruence-count.md)
 
 ## Sources
 

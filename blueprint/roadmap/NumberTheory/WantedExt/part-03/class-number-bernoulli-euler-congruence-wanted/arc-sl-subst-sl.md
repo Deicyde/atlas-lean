@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.arcSl_subst_sl
 ---
 
-# Arc Sl subst sl
+# Power series inverse of $\mathrm{Sl}$
 
-The inverse of `Sl` near `0` is
-`ArcSl(t) = Σ_{n ≥ 0} (-1)ⁿ binom(-2/3, n) t^(3n+1)/(3n+1)`, i.e.
-`u = Σ_{n ≥ 0} (-1)ⁿ binom(-2/3, n) Sl(u)^(3n+1)/(3n+1)` in `ℚ[[u]]`.
+**Power series inverse of $\mathrm{Sl}$.** Let $S, C \in \mathbb{Q}[[u]]$ be formal power
+series with $S' = C^2$, $C' = -S^2$, $S(0) = 0$ and $C(0) = 1$. Then
 
-The Taylor series of `Sl` and `Cl` at `0` enter as power series `S C : ℚ⟦X⟧` subject to
-`Sl' = Cl²`, `Cl' = -Sl²`, `Sl(0) = 0`, `Cl(0) = 1` (the paper's Lemma 3; these determine both
-series uniquely), since the paper's definition of `Sl` through the Weierstrass `ζ`-function has
-no Mathlib counterpart. `binom(-2/3, n)` is
-`Ring.choose (-2/3) n`.
+$$\sum_{n \ge 0} (-1)^n \binom{-2/3}{n} \frac{S^{3n+1}}{3n+1} = u$$
+
+in $\mathbb{Q}[[u]]$, where $\binom{-2/3}{n} = \frac{1}{n!} \prod_{j=0}^{n-1} (-2/3 - j)$ is the
+generalized binomial coefficient.
+
+These conditions determine $S$ and $C$ uniquely: they are the Taylor series at $0$ of the
+Eisenstein elliptic functions $\mathrm{Sl}$ and $\mathrm{Cl}$. The statement says that
+$\mathrm{ArcSl}(t) = \sum_{n \ge 0} (-1)^n \binom{-2/3}{n} t^{3n+1}/(3n+1)$ is the inverse of
+$\mathrm{Sl}$ near $0$.
 
 ## Depends on
 

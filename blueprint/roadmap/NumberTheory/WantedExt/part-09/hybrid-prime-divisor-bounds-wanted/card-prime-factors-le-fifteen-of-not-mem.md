@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_primeFactors_le_fifteen_of_not_mem_primitiveSum
 ---
 
-# Card prime Factors le fifteen of not mem primitive Sum
+# Fields without primitive element sums have few prime factors
 
-If a prime power `q` coprime to `n` is not in `𝓤_n` (membership as in
-`mem_primitiveSum_of_sixteen_pow_lt`), then `ω(q^n - 1) ≤ 15`. Coprimality is added: the source
-derives the bound from the coprime criterion `mem_primitiveSum_of_sixteen_pow_lt`.
+**Fields without primitive element sums have few prime factors.** Let $q$ and $n$ be natural
+numbers with $\gcd(q, n) = 1$. If it is not the case that every finite field $L$ with $q^n$
+elements contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate
+the multiplicative group $L^\times$, then $q^n - 1$ has at most $15$ distinct prime factors.
+
+The hypothesis $\gcd(q, n) = 1$ is added: the source derives the bound from the Liao–Li–Pu
+criterion, which assumes it.
 
 ## Depends on
 

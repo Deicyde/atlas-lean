@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fareyGeneration_one_two
 ---
 
-# Farey Generation one two
+# The first two Stern-Brocot generations
 
-The first Stern-Brocot generations: `F_1 = {[0/1, 1/2], [1/2, 1/1]}` and
-`F_2 = {[0/1, 1/3], [1/3, 1/2], [1/2, 2/3], [2/3, 1/1]}`.
+**The first two Stern-Brocot generations.** Writing $[a/b, c/d]$ for the quadruple
+$(a, b, c, d)$, the first two Stern-Brocot generations are $F_1 = \{[0/1, 1/2], [1/2, 1/1]\}$
+and $F_2 = \{[0/1, 1/3], [1/3, 1/2], [1/2, 2/3], [2/3, 1/1]\}$.
 
 ## Depends on
 
-- [Farey Generation](farey-generation.md)
+- [Stern-Brocot generations](farey-generation.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsGenCohnTriple.mem_wideGenCohnTree
 ---
 
-# Mem wide Gen Cohn Tree
+# Generalized Cohn triples with largest middle entry lie in wide generalized Cohn trees
 
-Proposition 3.10: every `k`-generalized Cohn triple associated with `(a, b, c)`,
-`b ≥ max {a, c}`, is a vertex of `WGCT(k, ℓ)` for some `ℓ ∈ ℤ`.
+**Generalized Cohn triples with largest middle entry lie in wide generalized Cohn trees.**
+Let $k$ be a natural number and let $(P, Q, R)$ be a $k$-generalized Cohn triple associated with
+$(a, b, c)$, where $a \le b$ and $c \le b$. Then there are an integer $\ell$ and a path $w$ such
+that $(P, Q, R)$ is the vertex of the wide $k$-generalized Cohn tree $\mathrm{WGCT}(k, \ell)$
+reached along $w$.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [The wide generalized Cohn tree](wide-gen-cohn-tree.md)
 
 ## Sources
 

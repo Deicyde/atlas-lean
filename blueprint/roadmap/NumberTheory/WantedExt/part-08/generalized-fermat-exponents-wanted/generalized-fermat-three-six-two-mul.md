@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedFermat_three_six_two_mul
 ---
 
-# Generalized Fermat three six two mul
+# Generalized Fermat equations with exponents 3s, 6t and 2w
 
-Lemma 1 (from the author's earlier work): for positive integers `s, t, w`, the equation
-`x^{3s} + y^{6t} = z^{2w}` has infinitely many solutions in nonzero integers if `s, t, w` are
-pairwise coprime, `s` is odd and `3 ∤ w`, and no solution otherwise.
+**Generalized Fermat equations with exponents 3s, 6t and 2w.** Let $s, t, w$ be positive
+integers. If $s, t, w$ are pairwise coprime, $s$ is odd and $3 \nmid w$, then the equation
+$x^{3s} + y^{6t} = z^{2w}$ has infinitely many solutions $(x, y, z)$ in nonzero integers;
+otherwise it has no solution in nonzero integers.
 
 ## Depends on
 
-- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
+- [Solvable generalized Fermat equation](generalized-fermat-solvable.md)
 
 ## Sources
 

@@ -5,23 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_sq_sum_diff
 ---
 
-# Gen Leonardo sq sum diff
+# Sum-and-difference square identities for generalized Leonardo numbers
 
-The sum-and-difference square identities:
-`L_{k,m+n}^2 - L_{k,m-n}^2
-= (L_{k,2m+1} + k)(L_{k,2n-1} + k) - 2k (L_{k,m+n} - L_{k,m-n})` and
-`L_{k,m+n}^2 + L_{k,m-n-1}^2
-= (L_{k,2m} + k)(L_{k,2n} + k) - 2k (L_{k,m+n} + L_{k,m-n-1}) - 2k^2`.
+**Sum-and-difference square identities for generalized Leonardo numbers.** For every
+integer $k$ and all natural numbers $m$, $n$ with $1 \le n < m$, the generalized Leonardo
+numbers $L_{k,n}$ satisfy
 
-In part (ii) the last summand inside the parenthesis is read as
-`L_{k,m-n-1}`. The paper as printed shows `L_{k,m-n}` there, which is
-false: at `k = 1, m = 3, n = 1` the printed identity reads `82 = 78`.
-The reading used here agrees with the paper's outline derivation and
-was verified computationally for `k ∈ {0,1,2,3}`, `m ≤ 11`.
+$$L_{k,m+n}^2 - L_{k,m-n}^2 =
+(L_{k,2m+1} + k)(L_{k,2n-1} + k) - 2k (L_{k,m+n} - L_{k,m-n})$$
+
+and
+
+$$L_{k,m+n}^2 + L_{k,m-n-1}^2 =
+(L_{k,2m} + k)(L_{k,2n} + k) - 2k (L_{k,m+n} + L_{k,m-n-1}) - 2k^2.$$
+
+In the second identity the last term inside the parentheses is $L_{k,m-n-1}$. The paper as
+printed shows $L_{k,m-n}$ there, which is false: at $k = 1$, $m = 3$, $n = 1$ the printed
+identity reads $82 = 78$. The reading used here agrees with the paper's outline derivation.
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
 
 ## Sources
 

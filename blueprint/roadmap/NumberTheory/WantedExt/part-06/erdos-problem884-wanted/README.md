@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Problem884
 
-- [Statement](statement.md)
-- [Statement refuted](statement-refuted.md)
+- [Divisor-gap sums (Erdős Problem 884)](statement.md)
+- [Erdős Problem 884 is false (Larsen)](statement-refuted.md)

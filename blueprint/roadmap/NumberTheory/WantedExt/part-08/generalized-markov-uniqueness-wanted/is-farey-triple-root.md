@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isFareyTriple_root
 ---
 
-# Is Farey Triple root
+# The triple $(0/1, 1/1, 1/0)$ is a Farey triple
 
-Characteristic value: the root `(0/1, 1/1, 1/0)` of `FT` is a Farey triple.
+**The triple $(0/1, 1/1, 1/0)$ is a Farey triple.** The fractions $0/1$, $1/1$ and $1/0$,
+given as the pairs of natural numbers $(0, 1)$, $(1, 1)$ and $(1, 0)$, form a Farey triple.
+
+This triple is the root of the Farey tree.
 
 ## Depends on
 
-- [Is Farey Triple](is-farey-triple.md)
+- [Farey triples](is-farey-triple.md)
 
 ## Sources
 

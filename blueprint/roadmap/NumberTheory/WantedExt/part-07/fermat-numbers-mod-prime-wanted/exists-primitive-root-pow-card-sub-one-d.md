@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_primitiveRoot_pow_card_sub_one_div_orderOf
 ---
 
-# Exists primitive Root pow card sub one div order Of
+# A primitive root in which a residue has index $(p-1)/\operatorname{ord}_p(a)$
 
-For a prime `p` and a nonzero residue `a`, some primitive root `g` modulo `p` satisfies
-`ind_g(a) = (p - 1) / ord_p(a)`, i.e. `g ^ ((p - 1) / ord_p(a)) = a`.
+**A primitive root in which a residue has index $(p-1)/\operatorname{ord}_p(a)$.** Let $p$ be
+a prime and let $a$ be a nonzero residue modulo $p$, of multiplicative order
+$\operatorname{ord}_p(a)$. Then there is a primitive root $g$ modulo $p$ (an element of order
+$p - 1$ in $\mathbb{Z}/p\mathbb{Z}$) with $g^{(p-1)/\operatorname{ord}_p(a)} = a$.
 
 ## Depends on
 

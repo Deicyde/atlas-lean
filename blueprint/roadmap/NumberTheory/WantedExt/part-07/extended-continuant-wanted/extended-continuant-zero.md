@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.extendedContinuant_zero
 ---
 
-# Extended Continuant zero
+# The extended continuant of order $0$ is a single term
 
-`K_0(x)_b^b = x_b`.
+**The extended continuant of order $0$ is a single term.** For every bi-infinite integer
+sequence $x : \mathbb{Z} \to \mathbb{Z}$ and every integer $b$, the extended continuant of order $0$
+with start index $b$ is $K_0(x)_b = x_b$.
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Proof depends on
 
-- [Extended Continuant Bwd](extended-continuant-bwd.md)
-- [Extended Continuant Fwd](extended-continuant-fwd.md)
+- [Backward branch of the extended continuant](extended-continuant-bwd.md)
+- [Forward branch of the extended continuant](extended-continuant-fwd.md)
 
 ## Sources
 

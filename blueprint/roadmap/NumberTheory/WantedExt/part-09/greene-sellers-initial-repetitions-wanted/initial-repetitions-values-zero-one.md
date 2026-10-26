@@ -6,17 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.initialRepetitions_values_zero_one
 ---
 
-# Initial Repetitions values zero one
+# Small values of the partition functions $c_2$, $c_3$, $c_8$ and $c_8'$
 
-Values at `0` and `1`: `c₂(0) = 0`, `c₂(1) = 1`, `c₃(1) = 1`, `c₈(0) = c₈(1) = 1`,
-`c₈'(0) = 1` and `c₈'(1) = 0`.
+**Small values of the partition functions $c_2$, $c_3$, $c_8$ and $c_8'$.** We have
+$c_2(0) = 0$, $c_2(1) = 1$, $c_3(1) = 1$, $c_8(0) = c_8(1) = 1$, $c_8'(0) = 1$ and $c_8'(1) = 0$.
 
 ## Depends on
 
-- [Initial Repetitions C2](initial-repetitions-c2.md)
-- [Initial Repetitions C3](initial-repetitions-c3.md)
-- [Initial Repetitions C8](initial-repetitions-c8.md)
-- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
+- [The partition function $c_2$ of Nyirenda and Mugwangwavari](initial-repetitions-c2.md)
+- [The initial-repetitions partition function $c_3$](initial-repetitions-c3.md)
+- [The partition function $c_8$](initial-repetitions-c8.md)
+- [The initial-repetitions partition function $c_8'$](initial-repetitions-c8-prime.md)
 
 ## Sources
 

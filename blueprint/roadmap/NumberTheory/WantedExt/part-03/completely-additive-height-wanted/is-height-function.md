@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsHeightFunction
 ---
 
-# Is Height Function
+# Height functions
 
-A height function: completely additive `H : ℕ → ℕ` with `H(1) = 0`, `H(p) ≥ 1` for every
-prime `p`, and finitely many primes at each height `n ≥ 1`.
+**Height functions.** A function $H : \mathbb{N} \to \mathbb{N}$ is a height function if it is
+completely additive on the positive integers, that is $H(ab) = H(a) + H(b)$ for all integers
+$a, b \ge 1$; if $H(p) \ge 1$ for every prime $p$; and if for every $n \ge 1$ only finitely many
+primes $p$ have $H(p) = n$.
+
+Complete additivity forces $H(1) = 0$.
 
 ## Depends on
 

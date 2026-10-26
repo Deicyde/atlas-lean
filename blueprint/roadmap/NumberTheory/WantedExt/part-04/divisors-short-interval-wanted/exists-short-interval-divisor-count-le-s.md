@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_shortIntervalDivisorCount_le_sqrt_letendre
 ---
 
-# Exists short Interval Divisor Count le sqrt letendre
+# Letendre's square-root bound for divisors in short intervals
 
-Letendre's square-root saving: uniformly in `0 < η < θ < 1` and `n ≥ 2`,
-`D_n(n^θ, n^η) ≪ τ(n)^{1 - ξ(θ, η)/2} √(log τ(n) / (θ(1 - θ)))`, with an absolute implied
-constant.
+**Letendre's square-root bound for divisors in short intervals.** For a natural number $n$
+and real numbers $X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with
+$X \le d \le X + Y$, let $\tau(n)$ be the number of divisors of $n$, and let $\xi(\theta, \eta)$
+be Letendre's saving exponent. There is an absolute constant $C$ such that for all real numbers
+$\theta$, $\eta$ with $0 < \eta < \theta < 1$ and every integer $n \ge 2$,
+$D_n(n^\theta, n^\eta) \le C \tau(n)^{1 - \xi(\theta, \eta)/2}
+\sqrt{\log \tau(n) / (\theta(1 - \theta))}$.
 
 ## Depends on
 
-- [Letendre Xi](letendre-xi.md)
-- [Short Interval Divisor Count](short-interval-divisor-count.md)
+- [Letendre's saving exponent](letendre-xi.md)
+- [Number of divisors in a short interval](short-interval-divisor-count.md)
 
 ## Sources
 

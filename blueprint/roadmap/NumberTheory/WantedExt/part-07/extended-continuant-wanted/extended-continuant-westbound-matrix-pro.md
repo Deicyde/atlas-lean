@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.extendedContinuant_westbound_matrix_prod
 ---
 
-# Extended Continuant westbound matrix prod
+# Westbound matrix product of extended continuants
 
-Proposition 1: for `n ≥ 1`, the westbound matrix product
-`∏_{i=n}^{1} [[0, 1], [1, -x_{-i}]]` (factor `i = n` leftmost) equals
-`[[K_{-n-1}(x)_0, K_{-n-2}(x)_1], [K_{-n-2}(x)_0, K_{-n-3}(x)_1]]`.
+**Westbound matrix product of extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$ be a
+bi-infinite integer sequence, write $K_a(x)_b$ for the extended continuant of order $a$ with start
+index $b$, and put $M_i = \begin{pmatrix} 0 & 1 \\ 1 & -x_{-i} \end{pmatrix}$. Then for every
+integer $n \ge 1$,
+
+$$
+M_n M_{n-1} \cdots M_1 =
+\begin{pmatrix} K_{-n-1}(x)_0 & K_{-n-2}(x)_1 \\ K_{-n-2}(x)_0 & K_{-n-3}(x)_1 \end{pmatrix}.
+$$
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Sources
 

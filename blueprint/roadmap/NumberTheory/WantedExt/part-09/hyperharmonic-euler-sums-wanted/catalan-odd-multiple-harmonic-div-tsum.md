@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.catalan_oddMultipleHarmonic_div_tsum
 ---
 
-# Catalan odd Multiple Harmonic div tsum
+# Catalan–odd harmonic sum with denominator $4^n n$
 
-For every integer `k > 0`, `∑_{n ≥ k} C_n O_n(k) / (4^n n) = (2^{k+1} - 1) ζ(k + 1) - 2^{k+1}`,
-with `C_n` the Catalan number.
+**Catalan–odd harmonic sum with denominator $4^n n$.** Let $k \ge 1$ be an integer, let $C_n$
+denote the $n$-th Catalan number and $O_n(k)$ the depth-$k$ odd harmonic number. Then
 
-The denominator `4^n n` is read from the record's two-row layout (`C_n O_n(k)` over `4^n n`).
-The sum runs over all `n ≥ 0`; the terms with `n < k` vanish.
+$$\sum_{n \ge 1} \frac{C_n O_n(k)}{4^n n} = (2^{k+1} - 1) \zeta(k + 1) - 2^{k+1}.$$
+
+Since $O_n(k) = 0$ for $n < k$, the sum can equally be taken over $n \ge k$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HyperharmonicEulerSumsWanted](../../../../../sources/v2/WantedExt.md)
+- the denominator $4^n n$ is read from the record's two-row layout ($C_n O_n(k)$ over $4^n n$).
 - Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 5 (`integers-2026-A81-cor-5`).

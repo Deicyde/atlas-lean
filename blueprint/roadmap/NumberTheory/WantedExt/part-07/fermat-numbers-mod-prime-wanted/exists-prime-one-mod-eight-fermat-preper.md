@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_one_mod_eight_fermat_preperiod
 ---
 
-# Exists prime one mod eight fermat preperiod
+# Every preperiod of Fermat residues occurs for a prime $p \equiv 1 \pmod 8$
 
-Every preperiod occurs among primes `p ≡ 1 (mod 8)`: for every `v` there is such a prime
-for which `n ↦ F_n mod p` has exact preperiod `v` (the tail from `v` has a positive period
-and no earlier tail does).
+**Every preperiod of Fermat residues occurs for a prime $p \equiv 1 \pmod 8$.** Write
+$F_n = 2^{2^n} + 1$. For every natural number $v$ there is a prime $p \equiv 1 \pmod 8$ such that
+the sequence $n \mapsto F_n \bmod p$ has preperiod exactly $v$: the sequence
+$n \mapsto F_{v+n} \bmod p$ is periodic with some positive period, and for no $h < v$ is the
+sequence $n \mapsto F_{h+n} \bmod p$ periodic with a positive period.
 
 ## Depends on
 

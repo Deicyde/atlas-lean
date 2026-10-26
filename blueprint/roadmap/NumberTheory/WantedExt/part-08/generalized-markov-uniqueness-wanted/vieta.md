@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsInducedGenSecondMarkovSolution.vieta
 ---
 
-# Vieta
+# Vieta jumping preserves induced solutions of the generalized second Markov equation
 
-Proposition 2.7: if `(a, b, c)` is an induced solution of `GSME(k)`, then so are
-`(a, ab - c - k² - 2k, b)` and `(b, bc - a - k² - 2k, c)`.
+**Vieta jumping preserves induced solutions of the generalized second Markov equation.** If
+$(a, b, c)$ is an induced solution of the $k$-generalized second Markov equation
+$\mathrm{GSME}(k)$, then so are $(a, ab - c - k^2 - 2k, b)$ and $(b, bc - a - k^2 - 2k, c)$.
 
 ## Depends on
 
-- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
+- [Induced solution of the generalized second Markov equation](is-induced-gen-second-markov-solution.md)
 
 ## Sources
 

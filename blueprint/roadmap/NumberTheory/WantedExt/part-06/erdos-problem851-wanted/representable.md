@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem851Wanted.Representable
 ---
 
-# Representable
+# Sums of a power of two and a number with few prime factors
 
-Representability as `2 ^ k + n` with `k ≥ 0` and `n` having at most `r`
-prime divisors (source EP-851 [Erdős Problems]).
+**Sums of a power of two and a number with few prime factors.** For a natural number $r$, a
+natural number $m$ is of this form when $m = 2^k + n$ for some natural numbers $k$ and $n$ such
+that $n = 0$ or at most $r$ distinct primes divide $n$.
 
 ## Depends on
 
@@ -16,8 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has At Most RPrime Factors](has-at-most-rprime-factors.md)
+- [Natural numbers with at most $r$ distinct prime factors](has-at-most-rprime-factors.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem851Wanted](../../../../../sources/v2/WantedExt.md)
+- EP-851 [Erdős Problems].

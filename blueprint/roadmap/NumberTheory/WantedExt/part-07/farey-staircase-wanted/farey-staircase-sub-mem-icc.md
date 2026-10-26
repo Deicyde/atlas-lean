@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fareyStaircase_sub_mem_Icc
 ---
 
-# Farey Staircase sub mem Icc
+# Bounds on the increment of the Farey staircase
 
-Lemma 8 (b): for `n ≥ 2`, `0 ≤ D_n(x) ≤ (log n)/(n(n - 1))`.
+**Bounds on the increment of the Farey staircase.** Let $n \ge 2$ be a natural number and $x$
+a real number, and write $A_m$ for the Farey staircase of order $m$. Then
+$0 \le A_n(x) - A_{n-1}(x) \le \frac{\log n}{n(n-1)}$, where $\log$ is the natural logarithm.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

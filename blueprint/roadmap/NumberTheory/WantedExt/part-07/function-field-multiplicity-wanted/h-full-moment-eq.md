@@ -6,16 +6,25 @@ proof: formalized
 lean: MetaMathlibExt.hFullMoment_eq
 ---
 
-# H Full Moment eq
+# The $h$-full moment is an average of $\omega_k^j$
 
-Unfolding the `h`-full moment.
+**The $h$-full moment is an average of $\omega_k^j$.** Let $F$ be a finite field and let $h$,
+$k$, $j$ and $n$ be natural numbers. Let $N_h \cap M_n$ be the finite set of $h$-full monic
+polynomials of degree $n$ over $F$ (monic $f$ such that $P^h$ divides $f$ for every monic
+irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the number of monic irreducible
+polynomials that divide $f$ with multiplicity exactly $k$. Then the $j$-th moment of $\omega_k$
+over $N_h \cap M_n$ equals
+
+$$|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,$$
+
+where the quotient is $0$ when $N_h \cap M_n$ is empty. This holds by definition.
 
 ## Depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [H Full](h-full.md)
-- [H Full Moment](h-full-moment.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [$h$-full polynomials](h-full.md)
+- [The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$](h-full-moment.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.primeProductLayer
 ---
 
-# Prime Product Layer
+# Products of a fixed number of distinct primes
 
-`primeProductLayer 𝒫 k` is the paper's `𝒫^[k]`: the products of exactly `k`
-distinct primes from `𝒫`. In particular, the squarefree number `1` belongs exactly
-to the zero layer because its set of prime factors is empty.
+**Products of a fixed number of distinct primes.** For a set $\mathcal{P}$ of natural numbers
+and $k \in \mathbb{N}$, $\mathcal{P}^{[k]}$ is the set of squarefree natural numbers $n$ whose prime
+divisors all lie in $\mathcal{P}$ and which have exactly $k$ distinct prime divisors; that is, the
+products of exactly $k$ distinct primes from $\mathcal{P}$. In particular,
+$\mathcal{P}^{[0]} = \{1\}$.
 
 ## Depends on
 

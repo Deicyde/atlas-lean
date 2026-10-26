@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciOtherRoots
 ---
 
-# L Generalized Fibonacci Other Roots
+# Other roots of the ℓ-generalized Fibonacci characteristic polynomial
 
-The finset of roots of `φ_ℓ` other than the distinguished real root `α`.
-Multiplicity is intentionally discarded with `toFinset`, as requested: the paper's
-roots are simple, but simplicity is not reproved in this statement-only formalization.
+**Other roots of the ℓ-generalized Fibonacci characteristic polynomial.** For a natural number
+$\ell$ and a real number $\alpha$, this is the finite set of distinct complex roots of the
+characteristic polynomial $\varphi_\ell(X) = X^\ell - \sum_{i=0}^{\ell-1} X^i$ other than $\alpha$.
+In applications $\alpha$ is the dominant real root of $\varphi_\ell$.
+
+Each root is listed once, without multiplicity; the roots of $\varphi_\ell$ are in fact simple.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [L Generalized Fibonacci Characteristic](l-generalized-fibonacci-characteristic.md)
+- [Characteristic polynomial of the ℓ-generalized Fibonacci recurrence](l-generalized-fibonacci-characteristic.md)
 
 ## Sources
 

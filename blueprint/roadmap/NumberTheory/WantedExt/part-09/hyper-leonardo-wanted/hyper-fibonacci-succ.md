@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.hyperFibonacci_succ
 ---
 
-# Hyper Fibonacci succ
+# Hyper-Fibonacci numbers as partial sums
 
-`F^{(r+1)}_n = ∑_{k=0}^{n} F^{(r)}_k`.
+**Hyper-Fibonacci numbers as partial sums.** For all natural numbers $r$ and $n$, the
+hyper-Fibonacci numbers $F^{(r)}_n$ satisfy $F^{(r+1)}_n = \sum_{k=0}^{n} F^{(r)}_k$.
 
 ## Depends on
 
-- [Hyper Fibonacci](hyper-fibonacci.md)
+- [Hyper-Fibonacci numbers](hyper-fibonacci.md)
 
 ## Sources
 

@@ -5,21 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_binomial_steps
 ---
 
-# Gen Leonardo binomial steps
+# Binomial identities with steps three and four for generalized Leonardo numbers
 
-The step-3 and step-4 binomial identities:
-`∑_i C(n,i) L_{k,3i+r} = 2^n L_{k,2n+r}`,
-`∑_i C(n,i) M_{k,3i+r} = 2^n M_{k,2n+r}`,
-`∑_i C(n,i) L_{k,4i+r} = 3^n L_{k,2n+r} + k (3^n - 2^n)`, and
-`∑_i C(n,i) M_{k,4i+r} = 3^n M_{k,2n+r} + 2k (3^n - 2^n)`
-(part (iv) as printed in the paper shows `k (3^n - 2^n)`, which is
-false at `k = n = 1, r = 0`; the factor `2k` used here is verified
-computationally, consistent with parts (ii) of Theorems 3.1–3.3).
+**Binomial identities with steps three and four for generalized Leonardo numbers.** Let $k$ be
+an integer, and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual
+generalized Leonardo numbers. For all natural numbers $n$ and $r$,
+
+$$\sum_{i=0}^{n} \binom{n}{i} L_{k,3i+r} = 2^n L_{k,2n+r},$$
+
+
+
+$$\sum_{i=0}^{n} \binom{n}{i} M_{k,3i+r} = 2^n M_{k,2n+r},$$
+
+
+
+$$\sum_{i=0}^{n} \binom{n}{i} L_{k,4i+r} = 3^n L_{k,2n+r} + k\,(3^n - 2^n),$$
+
+and
+
+$$\sum_{i=0}^{n} \binom{n}{i} M_{k,4i+r} = 3^n M_{k,2n+r} + 2k\,(3^n - 2^n).$$
+
+Part (iv) of the paper's Theorem 3.4 prints the last term of the fourth identity as
+$k\,(3^n - 2^n)$, which is false at $k = n = 1$, $r = 0$; the coefficient $2k$ is the correct one,
+as in parts (ii) of Theorems 3.1–3.3.
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
-- [Gen Leonardo Companion](gen-leonardo-companion.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
+- [Dual generalized Leonardo numbers](gen-leonardo-companion.md)
 
 ## Sources
 

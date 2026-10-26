@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bisector_equation_form_ten
 ---
 
-# Bisector equation form ten
+# Bisector-equation solutions from the powers of $1 + \sqrt{2}$
 
-Converse of Theorem 3, Form (10): for `n > 0`, `(f_{2n-1}, -f_{2n+1}, f_{2n})` with `d = 2`
-solves `(a - c)² (b² + 1) = (b - c)² (a² + 1)`.
+**Bisector-equation solutions from the powers of $1 + \sqrt{2}$.** The least solution of
+$x^2 - 2 y^2 = -1$ in positive integers is $(1, 1)$; define integers $f_k$ and $g_k$ by
+$f_k + g_k \sqrt{2} = (1 + \sqrt{2})^k$ for natural numbers $k$. For every natural number $n > 0$,
+the integers $a = f_{2n-1}$, $b = -f_{2n+1}$ and $c = f_{2n}$ satisfy
+
+$$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
 
 ## Sources
 

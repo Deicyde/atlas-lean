@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC3_prime_mul_add_even
 ---
 
-# Initial Repetitions C3 prime mul add even
+# Parity of $c_3$ on residue classes modulo a prime
 
-For a prime `p ≥ 5` and `1 ≤ r ≤ p - 1` such that neither `12r + 1` nor `8r + 1` is a
-square modulo `p`, `c₃(pn + r)` is even for all `n ≥ 0`. "Quadratic residue" is read as "square
-in `ZMod p`", so `0` counts as a residue.
+**Parity of $c_3$ on residue classes modulo a prime.** Let $c_3$ be the initial-repetitions
+partition function of Nyirenda and Mugwangwavari. Let $p \ge 5$ be a prime and let $r$ be an
+integer with $1 \le r \le p - 1$ such that neither $12r + 1$ nor $8r + 1$ is a square modulo $p$.
+Then $c_3(pn + r)$ is even for every integer $n \ge 0$.
+
+Here $x$ is a square modulo $p$ when $x \equiv y^2 \pmod{p}$ for some integer $y$, so multiples
+of $p$ count as squares.
 
 ## Depends on
 
-- [Initial Repetitions C3](initial-repetitions-c3.md)
+- [The initial-repetitions partition function $c_3$](initial-repetitions-c3.md)
 
 ## Sources
 

@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC8Prime_prime_mul_add_even
 ---
 
-# Initial Repetitions C8 Prime prime mul add even
+# Parity of $c_8'$ on residue classes modulo a prime
 
-For a prime `p ≥ 7` and `1 ≤ r ≤ p - 1` such that `15r + 4` is a quadratic nonresidue
-modulo `p` (not a square in `ZMod p`), `c₈'(pn + r)` is even for all `n ≥ 0`.
+**Parity of $c_8'$ on residue classes modulo a prime.** Let $c_8'$ be the partition function
+that counts partitions with a possibly distinguished part. Let $p \ge 7$ be a prime and let $r$ be
+an integer with $1 \le r \le p - 1$ such that $15r + 4$ is not a square modulo $p$. Then
+$c_8'(pn + r)$ is even for every integer $n \ge 0$.
+
+Here $x$ is a square modulo $p$ when $x \equiv y^2 \pmod{p}$ for some integer $y$, so multiples
+of $p$ count as squares.
 
 ## Depends on
 
-- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
+- [The initial-repetitions partition function $c_8'$](initial-repetitions-c8-prime.md)
 
 ## Sources
 

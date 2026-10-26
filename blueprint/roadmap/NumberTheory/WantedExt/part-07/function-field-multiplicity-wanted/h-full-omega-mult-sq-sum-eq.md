@@ -6,17 +6,26 @@ proof: formalized
 lean: MetaMathlibExt.hFullOmegaMultSqSum_eq
 ---
 
-# H Full Omega Mult Sq Sum eq
+# The series defining $\sum_P b_P^2$
 
-Unfolding `∑_P b_P^2`.
+**The series defining $\sum_P b_P^2$.** Let $F$ be a finite field with $q$ elements, let $h$,
+$k$ and $j$ be natural numbers and let $\xi$ be a complex number. Write $\rho = q^{1/h}\xi^j$,
+where $q^{1/h}$ is the positive real $h$-th root of $q$ for $h \ge 1$ and $q^{1/h} = 1$ for
+$h = 0$, and let $\rho^{-1}$ be read as $0$ when $\rho = 0$. For a monic irreducible polynomial
+$P$ over $F$ write $|P| = q^{\deg P}$, $y = (\rho^{-1})^{\deg P}$ and
+$K(P, h, j) = (1 - y)/(|P|(1 - y) + 1)$, read as $0$ when the denominator vanishes. Then the
+constant $\sum_P b_P^2$ attached to $F$, $h$, $k$, $\xi$ and $j$ equals
+$\sum_P (|P| (\rho^{-1})^{k \deg P} K(P, h, j))^2$, the sum over all monic irreducible
+polynomials $P$ over $F$, taken as an unconditional sum that is $0$ when the family is not
+summable. This holds by definition.
 
 ## Depends on
 
-- [H Full K](h-full-k.md)
-- [H Full Omega Mult Sq Sum](h-full-omega-mult-sq-sum.md)
-- [H Full Root](h-full-root.md)
-- [Monic Irreducible](monic-irreducible.md)
-- [Poly Norm](poly-norm.md)
+- [The local factor $K(P, h, j)$](h-full-k.md)
+- [The sum $\sum_P b_P^2$ over monic irreducible polynomials](h-full-omega-mult-sq-sum.md)
+- [The pole parameter $q^{1/h}\xi^j$](h-full-root.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

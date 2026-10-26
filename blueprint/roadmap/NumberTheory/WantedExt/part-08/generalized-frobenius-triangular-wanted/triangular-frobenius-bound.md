@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.triangularFrobeniusBound
 ---
 
-# Triangular Frobenius Bound
+# Triangular Frobenius threshold
 
-The bounds `N_s^{even} = 6⌊√(s+1)⌋ - 6` (for even `n`) and
-`N_s^{odd} = 6⌊(√(4s+5) - 1)/2⌋ - 3` (for odd `n`), as integers.
+**Triangular Frobenius threshold.** For natural numbers $n$ and $s$, the threshold $N_s$ is
+the integer $N_s^{\mathrm{even}} = 6\lfloor\sqrt{s+1}\rfloor - 6$ when $n$ is even and
+$N_s^{\mathrm{odd}} = 6\lfloor(\sqrt{4s+5} - 1)/2\rfloor - 3$ when $n$ is odd.
 
 ## Depends on
 

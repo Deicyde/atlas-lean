@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.characteristicNumber_nil
 ---
 
-# Characteristic Number nil
+# Characteristic number of the empty string
 
-`χ(()) = 1`.
+**Characteristic number of the empty string.** The characteristic number of the empty string
+is $\chi(()) = 1$.
 
 ## Depends on
 
-- [Characteristic Number](characteristic-number.md)
+- [Characteristic number of a string](characteristic-number.md)
 
 ## Proof depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

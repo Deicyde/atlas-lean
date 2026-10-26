@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.canonicalSeq_planePartitionProfile_growth
 ---
 
-# Canonical Seq plane Partition Profile growth
+# Growth for the plane partition profile
 
-Corollary 4 (plane partition profile `π_k = k`, so `Π_k = k(k+1)/2`, `α = 2`, `C = 1/2`):
-`S_seq(x) ∼ 2√2 √π(x) / log π(x)`, `S_seq(x) ≍ x^{1/2} / (log x)^{3/2}`,
-`F_seq(x) ≍ x S_seq(x)`, and `F_seq(x) ≍ x^{3/2} / (log x)^{3/2}`.
+**Growth for the plane partition profile.** Let $H_{\mathrm{seq}}$ be the canonical
+sequential realization of the profile $\pi_k = k$ for $k \ge 1$, let
+$S(x) = \sum_{p \le x} H_{\mathrm{seq}}(p)/p$ (the sum over primes $p \le x$) and
+$F(x) = \sum_{1 \le n \le x} H_{\mathrm{seq}}(n)$, and let $m(x)$ be the number of primes
+$p \le x$. Then, as $x \to \infty$ over the reals,
+$S(x) \sim 2\sqrt{2}\, \sqrt{m(x)} / \log m(x)$,
+$S(x) = \Theta\bigl(x^{1/2} / (\log x)^{3/2}\bigr)$, $F(x) = \Theta\bigl(x\, S(x)\bigr)$ and
+$F(x) = \Theta\bigl(x^{3/2} / (\log x)^{3/2}\bigr)$, where $f = \Theta(g)$ means $f = O(g)$ and
+$g = O(f)$.
+
+Here the partial sums are $k(k+1)/2 \sim k^2/2$, so this is the case $\alpha = 2$, $C = 1/2$ of
+the general growth laws.
 
 ## Depends on
 
-- [Canonical Seq Height](canonical-seq-height.md)
+- [Canonical sequential realization of a profile](canonical-seq-height.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.extendedContinuant_euler
 ---
 
-# Extended Continuant euler
+# Euler's continuant identity for extended continuants
 
-Corollary 1 (Euler's continuant identity, extended): for all `h, k, ℓ, m ∈ ℤ`,
-`K_{ℓ+m}(x)_h K_{k-1}(x)_{ℓ+h+1} - K_{m-1}(x)_{ℓ+h+1} K_{k+ℓ}(x)_h
-= (-1)^k K_{m-k-2}(x)_{k+ℓ+h+2} K_{ℓ-1}(x)_h`.
+**Euler's continuant identity for extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$
+be an integer sequence and write $K_a(x)_b$ for its extended continuant of order $a$ with start
+index $b$. For all integers $h$, $k$, $\ell$, $m$,
+
+$$K_{\ell+m}(x)_h K_{k-1}(x)_{\ell+h+1} - K_{m-1}(x)_{\ell+h+1} K_{k+\ell}(x)_h =
+(-1)^k K_{m-k-2}(x)_{k+\ell+h+2} K_{\ell-1}(x)_h.$$
 
 ## Depends on
 
-- [Extended Continuant](extended-continuant.md)
+- [Extended continuants](extended-continuant.md)
 
 ## Sources
 

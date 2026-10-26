@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.trollopeDelangeIntegral
 ---
 
-# Trollope Delange Integral
+# Delange's function
 
-Delange's function `g(x) = ∫_0^x (⌊q t⌋ - q ⌊t⌋ - (q - 1)/2) dt`.
+**Delange's function.** For a natural number $q$, Delange's function in base $q$ is the
+function of a real number $x$ given by
+$g(x) = \int_0^x \left(\lfloor q t \rfloor - q \lfloor t \rfloor - \frac{q - 1}{2}\right) dt$,
+where $\lfloor \cdot \rfloor$ is the floor function.
 
 ## Depends on
 

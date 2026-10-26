@@ -18,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Height LE](height-le.md)
-- [𝕍](untitled-2.md)
-- [𝕍Loc](loc.md)
+- [Hypersurfaces of bounded height](height-le.md)
+- [Parameter space of hypersurfaces](untitled-2.md)
+- [Everywhere locally soluble hypersurfaces](loc.md)
 
 ## Sources
 

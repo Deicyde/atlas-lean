@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fareyStaircase
 ---
 
-# Farey Staircase
+# Farey staircase
 
-The Farey staircase of order `n`: `A_n(x) = (1/n) Σ_{k=1}^n ⌊kx⌋/k`, the average of the first `n`
-lower rational approximations `⌊kx⌋/k` of `x` (`A_0 = 0`).
+**Farey staircase.** For a natural number $n$ and a real number $x$, the Farey staircase of
+order $n$ is $A_n(x) = \frac{1}{n} \sum_{k=1}^{n} \lfloor kx \rfloor / k$, the average of the
+first $n$ lower rational approximations $\lfloor kx \rfloor / k$ of $x$. For $n = 0$ the sum is
+empty and $A_0(x) = 0$.
 
 ## Depends on
 

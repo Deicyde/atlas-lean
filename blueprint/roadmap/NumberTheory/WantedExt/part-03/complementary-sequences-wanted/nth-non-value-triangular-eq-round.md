@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_triangular_eq_round
 ---
 
-# Nth Non Value triangular eq round
+# Formula for the $n$-th non-triangular number
 
-The `n`-th non-triangular number is `n + ⌊√(2n) + 1/2⌋`.
+**Formula for the $n$-th non-triangular number.** For every integer $n \ge 1$, the $n$-th
+smallest positive integer that is not a triangular number $j(j+1)/2$ with $j \ge 1$ is
+$n + \lfloor \sqrt{2n} + 1/2 \rfloor$.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

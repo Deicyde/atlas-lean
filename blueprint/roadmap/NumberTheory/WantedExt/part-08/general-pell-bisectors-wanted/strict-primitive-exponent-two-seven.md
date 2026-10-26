@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.strictPrimitiveExponent_two_seven
 ---
 
-# Strict Primitive Exponent two seven
+# The strictly primitive exponent of 7 for d = 2
 
-`l_7 = 1` for `d = 2`.
+**The strictly primitive exponent of 7 for d = 2.** For $d = 2$ and $p = 7$, the strictly
+primitive exponent $l_7$ equals $1$: the least integer $l > 0$ such that $|x^2 - 2 y^2| = 7^l$ has
+an integral solution with $x$ and $2 y$ coprime exists and equals $1$.
 
 ## Depends on
 
-- [Strict Primitive Exponent](strict-primitive-exponent.md)
+- [Strictly primitive exponent](strict-primitive-exponent.md)
 
 ## Proof depends on
 
-- [Seven mem strict Primitive Primes two](seven-mem-strict-primitive-primes-two.md)
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [$7$ is a strictly primitive prime for $d = 2$](seven-mem-strict-primitive-primes-two.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

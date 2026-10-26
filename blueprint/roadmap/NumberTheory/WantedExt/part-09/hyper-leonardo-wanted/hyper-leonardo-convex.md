@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_convex
 ---
 
-# Hyper Leonardo convex
+# Convexity of the hyper-Leonardo numbers
 
-Theorem 3: `Le^{(r)}` is convex: `Le^{(r)}_{n-1} + Le^{(r)}_{n+1} ≥ 2 Le^{(r)}_n` for
-`r ≥ 0` and `n ≥ 1`.
+**Convexity of the hyper-Leonardo numbers.** For all natural numbers $r$ and $n \ge 1$, the
+hyper-Leonardo numbers $\mathrm{Le}^{(r)}_n$ satisfy
+$2 \mathrm{Le}^{(r)}_n \le \mathrm{Le}^{(r)}_{n-1} + \mathrm{Le}^{(r)}_{n+1}$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

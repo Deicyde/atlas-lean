@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gobelResidueWalk_one
 ---
 
-# Gobel Residue Walk one
+# Initial value of the residue walk
 
-The residue walk has the paper's initial value at index one, with no hypotheses needed.
+**Initial value of the residue walk.** For all natural numbers $p$ and $l$, the residue walk
+$\tilde g_l$ of $p$ starting at $l$ satisfies $\tilde g_l(1) = l$.
 
 ## Depends on
 
-- [Gobel Residue Walk](gobel-residue-walk.md)
+- [The residue walk $\tilde g_l$](gobel-residue-walk.md)
 
 ## Sources
 

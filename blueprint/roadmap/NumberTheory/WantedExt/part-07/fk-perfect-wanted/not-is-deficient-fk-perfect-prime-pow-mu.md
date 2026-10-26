@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFkPerfect_prime_pow_mul
 ---
 
-# Theorem 16
+# No deficient $F_k$-perfect number $p_1^a p_2$ with distinct odd primes
 
-**Theorem 16**: there is no deficient `F_k`-perfect
-number of the form `p₁^a p₂` for distinct odd primes
-`p₁, p₂` (and `k > 1`).
+**No deficient $F_k$-perfect number $p_1^a p_2$ with distinct odd primes.** Let $k > 1$ be
+a natural number, let $p_1 \ne p_2$ be odd primes and let $a$ be a natural number. Then
+$p_1^a p_2$ is not deficient $F_k$-perfect.
 
 ## Depends on
 
-- [Is Deficient Fk Perfect](is-deficient-fk-perfect.md)
+- [Deficient $F_k$-perfect numbers](is-deficient-fk-perfect.md)
 
 ## Sources
 

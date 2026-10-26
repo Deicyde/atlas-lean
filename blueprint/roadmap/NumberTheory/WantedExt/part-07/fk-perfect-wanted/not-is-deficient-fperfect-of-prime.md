@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isDeficientFPerfect_of_prime
 ---
 
-# Corollary 2
+# No prime is deficient $F$-perfect
 
-**Corollary 2**: no prime is deficient `F`-perfect.
+**No prime is deficient $F$-perfect.** If $p$ is a prime, then $p$ is not deficient
+$F$-perfect.
 
 ## Depends on
 
-- [Is Deficient FPerfect](is-deficient-fperfect.md)
+- [Deficient $F$-perfect numbers](is-deficient-fperfect.md)
 
 ## Sources
 

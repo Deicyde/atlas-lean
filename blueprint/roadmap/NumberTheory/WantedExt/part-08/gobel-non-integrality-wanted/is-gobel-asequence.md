@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsGobelASequence
 ---
 
-# Is Gobel ASequence
+# The sign sequence $a_{p,l}$
 
-These are precisely the four conditions defining the paper's sequence `a_{p,l}`: values
-are `±1` on `1..p-1`, the value at one is one, and clauses (b), (c), and (d) are the three
-displayed symmetries. Since a function `ℕ → ℤ` is used instead of a finite sequence, values
-outside `1..p-1` are fixed to zero solely to make literal function uniqueness express the
-paper's uniqueness. Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of
-the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8,
-Proposition 17.
+**The sign sequence $a_{p,l}$.** For natural numbers $p$ and $l$, a function
+$a : \mathbb{N} \to \mathbb{Z}$ is an $a_{p,l}$-sequence when all of the following hold:
+$a(n) \in \{1, -1\}$ for $1 \le n \le p-1$; $a(n) = 0$ for $n = 0$ and for every $n \ge p$;
+$a(1) = 1$; $a(n) = a(p-n)$ for $1 \le n \le \lfloor (p-1)/2 \rfloor$; $a(n) = -a(l+1-n)$ for
+$1 \le n \le \lfloor l/2 \rfloor$; and $a(n) = a(l+1+n)$ for $1 \le n \le p-l-2$.
+
+The values outside $1 \le n \le p-1$ are fixed to $0$ so that uniqueness of the paper's finite
+sequence becomes uniqueness of the function.
 
 ## Depends on
 
@@ -22,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Proposition 17.

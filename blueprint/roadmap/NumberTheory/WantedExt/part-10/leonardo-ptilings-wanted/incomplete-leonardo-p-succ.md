@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.incompleteLeonardoP_succ
 ---
 
-# Proposition 6
+# Recurrence for incomplete Leonardo p-numbers
 
-**Proposition 6**: for `n > p` and `0 ≤ k ≤ ⌊n/(p+1)⌋`,
-`𝓛_{p,n}(k + 1) = 𝓛_{p,n-1}(k + 1) + 𝓛_{p,n-p-1}(k) + p`.
+**Recurrence for incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$, $n > p$ and
+$k \le \lfloor n/(p+1) \rfloor$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
+satisfy
+
+$$
+\mathcal{L}_{p,n}(k + 1) = \mathcal{L}_{p,n-1}(k + 1) + \mathcal{L}_{p,n-p-1}(k) + p.
+$$
 
 ## Depends on
 
-- [Incomplete Leonardo P](incomplete-leonardo-p.md)
+- [Incomplete Leonardo p-numbers](incomplete-leonardo-p.md)
 
 ## Sources
 

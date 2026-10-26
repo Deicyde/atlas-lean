@@ -6,20 +6,25 @@ proof: formalized
 lean: MetaMathlibExt.hofWord_eq_getElem
 ---
 
-# Hof Word eq get Elem
+# Letters of $x_k$ from the iterates $\tau_k^j(k)$
 
-`x_k[n]` is the `n`-th letter of every prefix `τ_k^j(k)` long enough to contain it.
+**Letters of $x_k$ from the iterates $\tau_k^j(k)$.** For a natural number $k$, let $\tau_k$ be
+the Hofstadter substitution on finite words over $\mathbb{N}$ ($k \mapsto k\,1$, $i \mapsto i + 1$
+for $i \ne k$), let $x_k = x_k[0]\,x_k[1] \cdots$ be its fixed point, and write $\tau_k^j(k)$
+for the word obtained by applying $\tau_k$ $j$ times to the one-letter word $k$. For all natural
+numbers $k$, $n$ and $j$, if $\tau_k^j(k)$ has more than $n$ letters, then $x_k[n]$ is the letter
+at position $n$ of $\tau_k^j(k)$, counting positions from $0$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
-- [Hof Word](hof-word.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
+- [Letters of the Hofstadter fixed-point word](hof-word.md)
 
 ## Proof depends on
 
-- [Exists hof Grow eq](exists-hof-grow-eq.md)
-- [Hof Grow](hof-grow.md)
-- [Hof Tau List iterate is Prefix](hof-tau-list-iterate-is-prefix.md)
+- [The grown prefix is a long iterate of $\tau_k$](exists-hof-grow-eq.md)
+- [The shortest long iterate $\tau_k^j(k)$](hof-grow.md)
+- [The iterates of the Hofstadter substitution on $k$ form a chain of prefixes](hof-tau-list-iterate-is-prefix.md)
 
 ## Sources
 

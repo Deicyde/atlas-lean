@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_fareyZoom_sub_at_rational
 ---
 
-# Tendsto farey Zoom sub at rational
+# Limit of the Farey staircase zoomed at a rational point
 
-Theorem 3: for `x ≥ 0` and a positive reduced fraction `p/q`,
-`B_n(x + (p/q) n) - B_n((p/q) n) → (1/q) Σ_{k=1}^{⌊qx⌋} log(qx/k)` as `n → ∞`.
+**Limit of the Farey staircase zoomed at a rational point.** Let $B_n$ be the zoomed Farey
+staircase of order $n$, let $x \ge 0$ be real, and let $p$ and $q$ be coprime positive integers.
+Then $B_n(x + pn/q) - B_n(pn/q) \to \frac{1}{q} \sum_{k=1}^{\lfloor qx \rfloor} \log(qx/k)$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Farey Zoom](farey-zoom.md)
+- [Zoomed Farey staircase](farey-zoom.md)
 
 ## Sources
 

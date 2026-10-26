@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_hurwitz_norm_eq
 ---
 
-# Card hurwitz norm eq
+# Number of Hurwitz quaternions of a given norm
 
-For every positive integer `N`, the number of Hurwitz quaternions of norm `N` is
-`24 σ_odd(N)`, where `σ_odd(N)` is the sum of the odd divisors of `N`.
+**Number of Hurwitz quaternions of a given norm.** A Hurwitz quaternion is a quaternion
+$q = x_0 + x_1 i + x_2 j + x_3 k$ whose rational coordinates $x_0, x_1, x_2, x_3$ are either all
+integers or all halves of odd integers, and its norm is
+$\mathrm{Nm}(q) = x_0^2 + x_1^2 + x_2^2 + x_3^2$. For every positive integer $N$, the number of
+Hurwitz quaternions of norm $N$ is $24 \sum_{d \mid N,\ d \text{ odd}} d$, that is, $24$ times
+the sum of the odd divisors of $N$.
 
 ## Depends on
 

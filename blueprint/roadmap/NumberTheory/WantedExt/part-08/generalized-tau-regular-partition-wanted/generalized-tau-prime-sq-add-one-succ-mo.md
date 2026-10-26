@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_prime_sq_add_one_succ_modEq
 ---
 
-# Generalized Tau prime sq add one succ mod Eq
+# Generalized tau at $p^2 + 1$ modulo $p$
 
-`τ_{p² + 1}(n + 1) ≡ ∑ (-1)^(r + s) (mod p)` over `n = P(r) + p² P(s)`, `p` an odd prime. The
-record prints `n + 1 = ...`; that is false and the proof's identity
-`∑ τ_{p²+1}(n + 1) q^n ≡ ∏ (1 - q^m)(1 - q^(p² m)) (mod p)` gives the index `n`.
+**Generalized tau at $p^2 + 1$ modulo $p$.** Let $p$ be an odd prime and $n$ a natural number,
+and for an integer $j$ let $P(j) = j(3j - 1)/2$ be the generalized pentagonal number. Then
+$\tau_{p^2 + 1}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^{r + s}$ over the pairs of
+integers $(r, s)$ with $-n \le r, s \le n$ and $n = P(r) + p^2 P(s)$.
+
+The record prints the condition as $n + 1 = P(r) + p^2 P(s)$; that is false, and the proof's
+identity $\sum \tau_{p^2+1}(n + 1) q^n \equiv \prod (1 - q^m)(1 - q^{p^2 m}) \pmod{p}$ gives the
+index $n$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

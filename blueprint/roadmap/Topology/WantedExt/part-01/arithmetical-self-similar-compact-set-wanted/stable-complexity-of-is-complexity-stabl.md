@@ -12,7 +12,7 @@ Characteristic value: a stable number's stable complexity is its complexity.
 
 ## Depends on
 
-- [Cx](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+- [Integer complexity extended to all natural numbers](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
 - [Is Complexity Stable](is-complexity-stable.md)
 - [Stable Complexity](stable-complexity.md)
 

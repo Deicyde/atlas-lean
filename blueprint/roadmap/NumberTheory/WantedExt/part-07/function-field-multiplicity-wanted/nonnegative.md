@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.HasNormalOrder.nonnegative
 ---
 
-# Nonnegative
+# Normal orders are nonnegative
 
-Any asserted normal order has a nonnegative comparison function on `U`; this is the
-second defining clause of `HasNormalOrder`.
+**Normal orders are nonnegative.** Let $F$ be a finite field, $U$ a set of polynomials over $F$,
+and $g, G$ real-valued functions on polynomials over $F$. If $g$ has normal order $G$ on $U$, then
+$G(f) \ge 0$ for every $f \in U$.
+
+This is the second defining clause of a normal order.
 
 ## Depends on
 
-- [Has Normal Order](has-normal-order.md)
+- [Normal order on a set of polynomials](has-normal-order.md)
 
 ## Proof depends on
 
-- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
-- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Degree-nondecreasing functions](is-degree-nondecreasing.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
 
 ## Sources
 

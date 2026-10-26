@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kPadovanPerrin_eq_sum_rho
 ---
 
-# K Padovan Perrin eq sum rho
+# Combinatorial formula for the $k$-Padovan–Perrin numbers
 
-Combinatorial formula for the `k`-Padovan–Perrin numbers `v n = v (n - 2) + k v (n - 3)`
-(the case `k₁ = 1`, `k₂ = k`, `p = 1`, `s = 2`): for `n ≥ 3`,
-`v n = ρ(n, 3)(k α₀ + α₁) + (k α₁ + α₂) ρ(n - 1, 3) + k α₂ ρ(n - 2, 3)`, with `ρ` as in
-`padovanPerrinRho`. The paper prints the middle coefficient as `k α₁`; the coefficient
-`A₁ = k₂ α₁ + k₁ α₂ = k α₁ + α₂` is the one its Theorem 3 gives, and the printed form fails for
-`k = 2`, `(α₀, α₁, α₂) = (0, 0, 1)`, `n = 4` (`v 4 = 1`, printed right side `0`). Stated for any
-`k` in a commutative ring instead of an integer `k ≥ 2`.
+**Combinatorial formula for the $k$-Padovan–Perrin numbers.** Let $R$ be a commutative ring,
+let $k \in R$, and let $v \colon \mathbb{N} \to R$ satisfy $v(n + 3) = v(n + 1) + k\,v(n)$ for
+every $n$, that is, $v$ solves the Padovan–Perrin recurrence with $k_1 = 1$, $k_2 = k$, $p = 1$,
+$s = 2$. Let $\rho(m) = \rho(m, 3)$ be the Padovan–Perrin coefficient for these parameters:
+$\rho(m) = 0$ for $m < 3$, and for $m \ge 3$ it is the sum of $\binom{a+b}{a} k^b$ over all
+$a, b \ge 0$ with $2a + 3b = m - 3$. Then for every $n \ge 3$,
+
+$$v(n) = \rho(n)\,(k\,v(0) + v(1)) + (k\,v(1) + v(2))\,\rho(n - 1) + k\,v(2)\,\rho(n - 2).$$
+
+The paper prints the middle coefficient as $k\,v(1)$; the coefficient $k\,v(1) + v(2)$ is the one
+its Theorem 3 gives, and the printed form fails for $k = 2$, $(v(0), v(1), v(2)) = (0, 0, 1)$,
+$n = 4$, where $v(4) = 1$ but the printed right side is $0$. The paper takes $k \ge 2$ an integer.
 
 ## Depends on
 
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.paperfoldingContFracWord
 ---
 
-# Paperfolding Cont Frac Word
+# Continued-fraction words of the paperfolding sums
 
-The continued-fraction words of Corollary 15: `A₀ = [1, 1]` and
-`Aₖ₊₁ = Aₖ (xₖ₊₁ - 1) Aₖ^r`, where `A^r` (`cloitreMirror`) is the mirror image with its first
-letter flipped in the alphabet `([1, 1], [2])`. The mirror image of `Aₖ` starts with the last
-letter of `Aₖ`, which is always a letter `[1, 1]` or `[2]`, never a crease.
+**Continued-fraction words of the paperfolding sums.** For a sequence $x = (x_k)_{k \ge 0}$ of
+natural numbers, the finite words $A_k$ of natural numbers are defined by $A_0 = (1, 1)$ and
+$A_{k+1} = A_k \, (x_{k+1} - 1) \, A_k^r$: the concatenation of $A_k$, the single letter
+$\max(x_{k+1} - 1, 0)$ and the mirror image $A_k^r$ of $A_k$. The mirror image of a word reverses
+it and then replaces a leading $2$ by $1, 1$, or two leading letters $1, 1$ by $2$, leaving any
+other word unchanged.
 
 ## Depends on
 

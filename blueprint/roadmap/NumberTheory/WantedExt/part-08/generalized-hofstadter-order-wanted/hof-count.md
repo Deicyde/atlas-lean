@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hofCount
 ---
 
-# Hof Count
+# Letter counts in the Hofstadter word
 
-`C_k^{(P)}(n) = #{0 ≤ j < n : P(x_k[j])}`, counted along the prefix `x_k[0:n)`.
+**Letter counts in the Hofstadter word.** Let $x_k$ be the fixed point, starting with $k$, of
+the substitution sending the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, and write
+$x_k[j]$ for its letter at index $j$. For a predicate $P$ on letters, $C_k^{(P)}(n)$ is the number
+of letters satisfying $P$ in the prefix $x_k[0] \cdots x_k[n-1]$, that is,
+$C_k^{(P)}(n) = \#\{0 \le j < n : P(x_k[j])\}$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hof Prefix](hof-prefix.md)
+- [The prefix $x_k(0:n)$](hof-prefix.md)
 
 ## Sources
 

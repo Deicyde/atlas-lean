@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.eisensteinSl_inverse_arcSl
 ---
 
-# Eisenstein Sl inverse arc Sl
+# $\mathrm{Sl}$ and $\mathrm{ArcSl}$ are inverse on the real segment
 
-On the real segment, `Sl : [0, ϖ₁] → [0, 1]` is the inverse of
-`ArcSl : [0, 1] → [0, ϖ₁]`, `ArcSl(t) = ∫₀ᵗ (1 - s³)^(-2/3) ds
-= Σ_{n ≥ 0} (-1)ⁿ binom(-2/3, n) t^(3n+1)/(3n+1)`, where `ϖ₁ = ArcSl(1)`,
-`Sl(u) = φ(u/(-3ϖ₁))` and `φ(u) = 6℘(ϖ₁u)/(9 + ℘'(ϖ₁u))` for the Weierstrass `℘` of the
-lattice `ϖ₁ ℤ[ρ]`, `ρ = e^(2πi/3)`.
+**$\mathrm{Sl}$ and $\mathrm{ArcSl}$ are inverse on the real segment.** Let
+$\rho = e^{2\pi i/3}$, let $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, let $\wp$ be the
+Weierstrass function of the lattice spanned by $\varpi_1$ and $\varpi_1\rho$, and put
+$\varphi(u) = 6\wp(\varpi_1 u)/(9 + \wp'(\varpi_1 u))$. For real $x$ put
+$\mathrm{Sl}(x) = \varphi(x/(-3\varpi_1))$, and for real $t$ put
+$\mathrm{ArcSl}(t) = \int_0^t (1 - s^3)^{-2/3}\,ds$, so that $\varpi_1 = \mathrm{ArcSl}(1)$. Then:
+for every $t \in [0, 1]$ the series $\sum_{n \ge 0} (-1)^n \binom{-2/3}{n} t^{3n+1}/(3n+1)$ has
+sum $\mathrm{ArcSl}(t)$, where $\binom{-2/3}{n}$ is the generalized binomial coefficient; for
+every $x \in [0, \varpi_1]$, $\mathrm{Sl}(x)$ is a real number $s \in [0, 1]$ with
+$\mathrm{ArcSl}(s) = x$; and for every $t \in [0, 1]$, $\mathrm{ArcSl}(t) \in [0, \varpi_1]$ and
+$\mathrm{Sl}(\mathrm{ArcSl}(t)) = t$.
 
-`Sl` is the paper's introductory definition through `℘` (complex-valued; the statement
-includes that it is real on `[0, ϖ₁]`). The lattice is any `PeriodPair` with periods `ϖ₁`
-and `ϖ₁ρ`, and `binom(-2/3, n)` is `Ring.choose (-2/3 : ℚ) n`.
+At $x = 0$, where $\wp$ has a pole, the values $\wp(0)$ and $\wp'(0)$ are taken to be $0$, so
+$\mathrm{Sl}(0) = 0$.
 
 ## Depends on
 

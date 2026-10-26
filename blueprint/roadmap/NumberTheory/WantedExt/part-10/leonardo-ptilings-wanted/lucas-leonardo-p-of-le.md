@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.lucasLeonardoP_of_le
 ---
 
-# Lucas Leonardo P of le
+# Lucas-Leonardo $p$-numbers at indices $1$ to $p$
 
-`R_{p,n} = 1` for `1 ≤ n ≤ p`.
+**Lucas-Leonardo $p$-numbers at indices $1$ to $p$.** For every natural number $p$ and every
+$n$ with $1 \le n \le p$, the Lucas-Leonardo $p$-number $R_{p,n}$ equals $1$.
 
 ## Depends on
 

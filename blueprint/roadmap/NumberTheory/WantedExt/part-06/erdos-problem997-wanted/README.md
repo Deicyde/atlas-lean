@@ -4,7 +4,7 @@ navigation: module
 
 # Erdos Problem997
 
-- [Well Distributed](well-distributed.md)
-- [Prime Fract](prime-fract.md)
-- [Statement](statement.md)
-- [Statement holds](statement-holds.md)
+- [Well-distributed sequences](well-distributed.md)
+- [Fractional parts of multiples of the primes](prime-fract.md)
+- [Statement of Erdős Problem 997](statement.md)
+- [Erdős Problem 997 holds](statement-holds.md)

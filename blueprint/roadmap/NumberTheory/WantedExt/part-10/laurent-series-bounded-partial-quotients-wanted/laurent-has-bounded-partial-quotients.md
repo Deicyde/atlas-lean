@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.LaurentHasBoundedPartialQuotients
 ---
 
-# Laurent Has Bounded Partial Quotients
+# Laurent series with bounded partial quotients
 
-`α` has bounded partial quotients: the degrees in `x` of all partial quotients are bounded,
-i.e. some `B` has `(b_n).coeff m = 0` (coefficient of `x⁻ᵐ`) for all `n` and `m < -B`.
+**Laurent series with bounded partial quotients.** Let $K$ be a field. A Laurent series
+$\alpha \in K((x^{-1}))$ with partial quotients $b_0, b_1, \dots$ has bounded partial quotients
+if there is an integer $B$ such that for every $n \ge 0$ and every integer $k > B$ the
+coefficient of $x^k$ in $b_n$ is zero, that is, every nonzero $b_n$ is a polynomial in $x$ of
+degree at most $B$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
 
 ## Sources
 

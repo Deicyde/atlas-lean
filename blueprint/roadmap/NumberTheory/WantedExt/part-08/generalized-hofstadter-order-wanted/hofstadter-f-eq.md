@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.hofstadterF_eq
 ---
 
-# Hofstadter F eq
+# Recursion for the generalized Hofstadter function
 
-The defining recursion `F_k(n) = n - F_k^k(n - 1)` for `n ≥ 1` (the paper's Rocq lemma
-`f_eqn`).
+**Recursion for the generalized Hofstadter function.** For every $k \ge 0$ and every $n \ge 1$,
+the generalized Hofstadter function $F_k$ satisfies $F_k(n) = n - F_k^k(n - 1)$, where $F_k^k$
+is the $k$-fold iterate of $F_k$.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Proof depends on
 
-- [Hofstadter FAux](hofstadter-faux.md)
-- [Hofstadter FAux le](hofstadter-faux-le.md)
+- [Fuel-bounded generalized Hofstadter recursion](hofstadter-faux.md)
+- [The fuel-bounded Hofstadter recursion is bounded by its argument](hofstadter-faux-le.md)
 
 ## Sources
 

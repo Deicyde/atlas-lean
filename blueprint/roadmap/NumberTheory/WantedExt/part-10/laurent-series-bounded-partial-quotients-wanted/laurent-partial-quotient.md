@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.laurentPartialQuotient
 ---
 
-# Laurent Partial Quotient
+# Partial quotients of a Laurent series
 
-The partial quotients `b_n = [α_n]` of `α = [b₀, b₁, b₂, …]`.
+**Partial quotients of a Laurent series.** Let $K$ be a field, $\alpha \in K((x^{-1}))$ and
+$n \ge 0$. The $n$-th partial quotient of $\alpha$ is $b_n = [\alpha_n]$, the polynomial part of
+the $n$-th complete quotient $\alpha_n$ of $\alpha$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Laurent Complete Quotient](laurent-complete-quotient.md)
-- [Laurent Poly Part](laurent-poly-part.md)
+- [Complete quotients of a Laurent series](laurent-complete-quotient.md)
+- [Polynomial part of a Laurent series](laurent-poly-part.md)
 
 ## Sources
 

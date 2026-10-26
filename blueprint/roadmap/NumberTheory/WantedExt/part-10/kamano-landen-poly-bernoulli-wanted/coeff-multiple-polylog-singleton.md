@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_multiplePolylog_singleton
 ---
 
-# Coeff multiple Polylog singleton
+# Depth-one multiple polylogarithm
 
-Depth one: `Li_{(a)}(z) = ∑_{m ≥ 1} z^m / m^a`.
+**Depth-one multiple polylogarithm.** For every natural number $a$ and every integer
+$m \ge 1$, the coefficient of $z^m$ in the multiple polylogarithm $\mathrm{Li}_{(a)}(z)$ is
+$1/m^a$.
 
 ## Depends on
 
-- [Multiple Polylog](multiple-polylog.md)
+- [Multiple polylogarithm](multiple-polylog.md)
 
 ## Proof depends on
 
-- [Multiple Polylog Coeff Rev](multiple-polylog-coeff-rev.md)
+- [Coefficient recursion for multiple polylogarithms](multiple-polylog-coeff-rev.md)
 
 ## Sources
 

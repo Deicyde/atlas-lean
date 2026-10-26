@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fixedDegreeMonic
 ---
 
-# Fixed Degree Monic
+# Monic polynomials of fixed degree
 
-`fixedDegreeMonic F n` is the finite collection `M_n` of monic polynomials over `F`
-of degree `n`.  A coefficient vector `c : Fin n → F` is sent to
-`X ^ n + ∑ i, C (c i) * X ^ i`; thus the formal collection is explicitly finite and
-contains exactly the possible lower coefficients of a monic degree-`n` polynomial.
+**Monic polynomials of fixed degree.** For a finite field $F$ and a natural number $n$, $M_n$ is
+the finite set of monic polynomials of degree $n$ over $F$: the polynomials
+$X^n + c_{n-1} X^{n-1} + \dots + c_1 X + c_0$ with $c_0, \dots, c_{n-1} \in F$.
 
 ## Depends on
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.wideGenCohnTree_snd_injective
 ---
 
-# Wide Gen Cohn Tree snd injective
+# Distinct paths give distinct middle matrices in the wide generalized Cohn tree
 
-Theorem 3.13: the second entries of the vertices of `WGCT(k, ℓ)` are pairwise distinct.
+**Distinct paths give distinct middle matrices in the wide generalized Cohn tree.** For
+every natural number $k$ and every integer $\ell$, if the vertices $(P, Q, R)$ and $(P', Q', R')$
+of the wide $k$-generalized Cohn tree $\mathrm{WGCT}(k, \ell)$ at paths $w$ and $w'$ (finite
+sequences of left and right steps) satisfy $Q = Q'$, then $w = w'$.
 
 ## Depends on
 
-- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
+- [The wide generalized Cohn tree](wide-gen-cohn-tree.md)
 
 ## Sources
 

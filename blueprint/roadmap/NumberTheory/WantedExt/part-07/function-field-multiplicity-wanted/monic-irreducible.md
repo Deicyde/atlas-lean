@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.monicIrreducible
 ---
 
-# Monic Irreducible
+# Monic irreducible polynomials
 
-`monicIrreducible F` is the paper's set `𝒫` of prime polynomials: its two formal clauses
-say respectively that the polynomial is monic and irreducible.
+**Monic irreducible polynomials.** For a field $F$, $\mathcal{P}$ is the set of polynomials over
+$F$ that are monic and irreducible; these are the prime polynomials of the paper.
 
 ## Depends on
 

@@ -5,18 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.not_covering_of_nonintersecting
 ---
 
-# Theorem 3.2
+# Non-intersecting integers admit no covering system of divisor form
 
-**Theorem 3.2**: there does not exist any `n` such
-that a congruence set of the form
-`{a_d (mod d) : d ∣ n, d > 1}`, where `a_d (mod d)` and
-`a_{d'} (mod d')` overlap only if `gcd d d' = 1`, is a
-covering set. In the paper's terminology: a
-non-intersecting integer (one admitting a congruence
-set of divisor form whose distinct classes overlap
-only at coprime moduli) admits no covering congruence
-set of divisor form at all; the two witnesses are
-quantified independently below.
+**Non-intersecting integers admit no covering system of divisor form.** Let $n$ be a natural
+number and let $D$ be the finite set of divisors of $n$ greater than $1$, taken empty when $n = 0$.
+Call $n$ non-intersecting if there are integers $a_d$, one for each natural number $d$, such that
+for all distinct natural numbers $d, d' > 1$ dividing $n$ (every $d$ divides $0$), if the classes
+$a_d \pmod d$ and $a_{d'} \pmod{d'}$ have an integer in common, then $d$ and $d'$ are coprime. If
+$n$ is non-intersecting, then there are no integers $b_d$ for $d \in D$ such that every integer
+lies in the class $b_d \pmod d$ for some $d \in D$.
+
+The families $(a_d)$ and $(b_d)$ are independent; in particular, no family of classes
+$a_d \pmod d$ for $d \in D$ with the coprime-overlap property covers the integers.
 
 ## Depends on
 

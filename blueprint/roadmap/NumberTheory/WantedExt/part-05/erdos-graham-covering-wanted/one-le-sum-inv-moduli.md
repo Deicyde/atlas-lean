@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.one_le_sum_inv_moduli
 ---
 
-# Lemma 2.2
+# Covering systems have reciprocal-moduli sum at least one
 
-**Lemma 2.2**: for any covering set
-`{a_1 (mod d_1), …, a_t (mod d_t)}`,
-`∑_{i=1}^t 1 / d_i ≥ 1`.
+**Covering systems have reciprocal-moduli sum at least one.** Let $d_1, \dots, d_t$ be
+positive integers and $a_1, \dots, a_t$ integers such that every integer $z$ satisfies
+$z \equiv a_i \pmod{d_i}$ for some $i$. Then $\sum_{i=1}^t 1/d_i \ge 1$.
 
 ## Depends on
 

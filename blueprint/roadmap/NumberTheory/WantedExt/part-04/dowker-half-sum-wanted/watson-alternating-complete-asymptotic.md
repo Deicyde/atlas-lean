@@ -5,16 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.watson_alternating_complete_asymptotic
 ---
 
-# Watson alternating complete asymptotic
+# Complete asymptotic expansion of Watson's alternating cosecant sum
 
-Corollary 2 gives the complete asymptotic expansion for even `n`. For each fixed
-`N ≥ 2`, the error is bounded by `K / n^(2N-1)` for a nonnegative constant `K`;
-this reciprocal positive natural power is the formal version of `O(n^(1-2N))`.
+**Complete asymptotic expansion of Watson's alternating cosecant sum.** For natural numbers $N$
+and $n$ let $C_n = \sum_{l=1}^{n-1} (-1)^{l+1} / \sin(\pi l / n)$ and
+
+$$
+M_N(n) = \frac{2 n \log 2}{\pi} + 2 \sum_{r=1}^{N-1}
+\frac{(-1)^{r+1} (2^{2r-1} - 1)(2^{2r} - 1) \pi^{2r-1} B_{2r}^2}{r \, (2r)! \, n^{2r-1}},
+$$
+
+where $B_{2r}$ is the $2r$-th Bernoulli number. For every $N \ge 2$ there is a real constant
+$K \ge 0$ such that for every even $n \ge 2$,
+
+$$
+|C_n - M_N(n)| \le \frac{K}{n^{2N-1}}.
+$$
+
+In other words, $C_n = M_N(n) + O(n^{1-2N})$ as $n \to \infty$ through even values.
 
 ## Depends on
 
-- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
-- [Watson Alternating Main](watson-alternating-main.md)
+- [Watson's alternating cosecant sum](watson-alternating-cosecant-sum.md)
+- [Main part of the asymptotic expansion of Watson's alternating cosecant sum](watson-alternating-main.md)
 
 ## Sources
 

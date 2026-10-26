@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.hyperharmonic_two_two
 ---
 
-# Hyperharmonic two two
+# The hyperharmonic number $h_2^{(2)}$
 
-Small value `h_2^{(2)} = H_1 + H_2 = 5/2`.
+**The hyperharmonic number $h_2^{(2)}$.** The hyperharmonic number of order $2$ and index $2$
+is $h_2^{(2)} = 5/2$.
+
+Indeed $h_2^{(2)} = h_1^{(1)} + h_2^{(1)} = H_1 + H_2 = 1 + 3/2$, where $H_n$ is the $n$-th
+harmonic number.
 
 ## Depends on
 
-- [Hyperharmonic](hyperharmonic.md)
+- [Hyperharmonic numbers](hyperharmonic.md)
 
 ## Sources
 

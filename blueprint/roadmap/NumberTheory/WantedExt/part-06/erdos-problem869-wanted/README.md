@@ -4,8 +4,8 @@ navigation: module
 
 # Erdos Problem869
 
-- [Add Sumset](add-sumset.md)
-- [Is Additive Basis Order2](is-additive-basis-order2.md)
-- [Is Minimal Additive Basis Order2](is-minimal-additive-basis-order2.md)
-- [Statement](statement.md)
-- [Statement refuted](statement-refuted.md)
+- [Sumset of a set of naturals](add-sumset.md)
+- [Additive basis of order 2](is-additive-basis-order2.md)
+- [Minimal additive basis of order 2](is-minimal-additive-basis-order2.md)
+- [Erdős Problem 869 (disjoint bases and minimal bases)](statement.md)
+- [Erdős Problem 869 is false (Larsen)](statement-refuted.md)

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_choose_pow_mul_pow_mul
 ---
 
-# Prime dvd choose pow mul pow mul
+# $p$ divides $\binom{p^r a}{p^s b}$ when $r > s$
 
-For a prime `p`, `r > s` and `p ∤ a`, `p ∤ b`, the prime `p` divides `C(p^r a, p^s b)`.
+**$p$ divides $\binom{p^r a}{p^s b}$ when $r > s$.** Let $p$ be a prime, let $r > s$ be
+natural numbers, and let $a, b$ be natural numbers not divisible by $p$. Then
+$p \mid \binom{p^r a}{p^s b}$.
 
 ## Depends on
 

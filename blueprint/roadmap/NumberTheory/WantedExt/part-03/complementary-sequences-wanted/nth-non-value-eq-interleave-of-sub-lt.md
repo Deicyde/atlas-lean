@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_eq_interleave_of_sub_lt
 ---
 
-# Nth Non Value eq interleave of sub lt
+# Interleaving formula when $f(m) - \alpha(m) < m$
 
-Under the hypotheses of `nthNonValue_eq_interleave`, if moreover `f(m) - α(m) < m` for all
-`m ≥ 1`, the middle case never occurs: `f_P(n) = n + h(n) + 1` if `n + h(n) ≥ f(h(n) + 1)` and
-`f_P(n) = n + h(n)` otherwise.
+**Interleaving formula when $f(m) - \alpha(m) < m$.** Let
+$f : \mathbb{N} \to \mathbb{N}$ satisfy $f(1) \ge 1$ and $f(m + 1) \ge f(m) + m$ for all $m \ge 1$,
+and for $n \ge 1$ let $f_P(n)$ be the $n$-th positive integer that is not a value $f(m)$ with
+$m \ge 1$. Let $\alpha : \mathbb{N} \to \mathbb{R}$ satisfy $f(m - 1) \le \alpha(m) \le f(m)$ for
+all $m \ge 2$, and let $h : \mathbb{N} \to \mathbb{N}$ satisfy $h(n) \ge 1$ and
+$\alpha(h(n)) \le n < \alpha(h(n) + 1)$ for all $n \ge 1$.
+Suppose moreover that $f(m) - \alpha(m) < m$ for all $m \ge 1$. Then for every $n \ge 1$,
+$f_P(n) = n + h(n) + 1$ if $f(h(n) + 1) \le n + h(n)$, and $f_P(n) = n + h(n)$ otherwise.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

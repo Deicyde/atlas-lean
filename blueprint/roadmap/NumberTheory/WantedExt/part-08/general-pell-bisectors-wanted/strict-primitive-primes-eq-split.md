@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.strictPrimitivePrimes_eq_split
 ---
 
-# Strict Primitive Primes eq split
+# Strictly primitive primes are the split primes
 
-If `d ≡ 1 (mod 8)`, or `d ≡ 5 (mod 8)` and the fundamental unit `η` of `ℚ(√d)` lies in
-`ℤ[√d]`, or `d ≡ 2 (mod 4)`, then `S(d)` is the set of primes that split in `ℚ(√d)`.
+**Strictly primitive primes are the split primes.** Let $d > 1$ be a square-free integer, let
+$K$ be any number field of degree $2$ over $\mathbb{Q}$ containing an element $s$ with $s^2 = d$,
+and let $\mathcal{O}_K$ be its ring of integers. Suppose that $d \equiv 1 \pmod 8$, or that
+$d \equiv 5 \pmod 8$ and every unit of $\mathcal{O}_K$ lies in $\mathbb{Z}[s]$, or that
+$d \equiv 2 \pmod 4$. Then $S(d)$, the set of primes $p$ for which $|x^2 - d y^2| = p^l$ has an
+integral solution with $x$ and $d y$ coprime for some integer $l > 0$, is the set of primes $p$
+that split in $K$, that is, for which exactly two prime ideals of $\mathcal{O}_K$ lie over
+$p\mathbb{Z}$.
 
-`η ∈ ℤ[√d]` is stated as: every unit of the ring of integers lies in `ℤ[s]` (equivalent, since
-the units are `±η^n`). Deviation: the source also lists `d ≡ 3 (mod 4)`, where the statement is
-false as printed: `2 ∈ S(3)` by `|1² - 3 · 1²| = 2`, but `2` ramifies in `ℚ(√3)`.
+Every unit of $\mathcal{O}_K$ lies in $\mathbb{Z}[s]$ exactly when the fundamental unit $\eta$ of
+$K$ does, since the units are $\pm \eta^n$. The source also lists $d \equiv 3 \pmod 4$, where the
+statement fails: $2 \in S(3)$ because $|1^2 - 3 \cdot 1^2| = 2$, but $2$ ramifies in
+$\mathbb{Q}(\sqrt{3})$.
 
 ## Depends on
 
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

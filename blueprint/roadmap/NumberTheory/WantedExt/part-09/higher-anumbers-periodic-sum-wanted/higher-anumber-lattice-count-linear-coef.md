@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberLatticeCount_linear_coeff_mul_period
 ---
 
-# Higher ANumber Lattice Count linear coeff mul period
+# The linear coefficient times a period is an integer
 
-`λ_r · L` is an integer: whenever `a^r(X_n) = ½ (τ^{-1} - γ^{-1}) p^{2n} + λ n + ν(n)` for
-`n ≥ N` with `ν` periodic of period `L > 0` there, `λ L ∈ ℤ`. Stated for every period `L` (the
-minimal one included), with `a^r(X_n)` replaced by the Theorem 1 lattice expression.
+**The linear coefficient times a period is an integer.** Let $p$ be a prime, let $d$ be a
+natural number dividing $p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
+$\gamma = ((p - 1) r + (p + 1))/d$, and for each natural number $n$ let $A_r(n)$ be the
+lattice-point count for the $r$-th higher $a$-number at level $n$. Let $\lambda$ be a rational
+number, $\nu$ a function from the natural numbers to the rationals, and $N$ and $L > 0$ natural
+numbers such that, for every $n \ge N$, $\nu(n + L) = \nu(n)$ and
+$A_r(n) = \frac{1}{2} (\tau^{-1} - \gamma^{-1}) p^{2n} + \lambda n + \nu(n)$. Then $\lambda L$ is
+an integer.
 
 ## Depends on
 
-- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

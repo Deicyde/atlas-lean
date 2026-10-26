@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_not_isSquare_twelve_mul_add_one_eight_mul_add_one
 ---
 
-# Card not is Square twelve mul add one eight mul add one
+# Residues $r$ with $12r + 1$ and $8r + 1$ both non-squares modulo $p$
 
-For a prime `p` (the paper assumes `p ≥ 5`; both sides are `0` at `p = 2, 3`), the number of
-`r` with `1 ≤ r ≤ p - 1` such that neither `12r + 1` nor
-`8r + 1` is a square modulo `p` is `⌊p / 4⌋ - 1` if `p ≡ 5 (mod 24)`, `⌊p / 4⌋ + 1` if
-`p ≡ 11 (mod 24)`, and `⌊p / 4⌋` otherwise. "Quadratic residue" is read as "square in `ZMod p`",
-so `0` counts as a residue; with nonzero residues only the count is `2` at `p = 5`.
+**Residues $r$ with $12r + 1$ and $8r + 1$ both non-squares modulo $p$.** For every prime $p$,
+let $N$ be the number of integers $r$ with $1 \le r \le p - 1$ such that neither $12r + 1$ nor
+$8r + 1$ is a square modulo $p$. Then $N = \lfloor p/4 \rfloor - 1$ if $p \equiv 5 \pmod{24}$,
+$N = \lfloor p/4 \rfloor + 1$ if $p \equiv 11 \pmod{24}$, and $N = \lfloor p/4 \rfloor$ otherwise.
+
+Here $0$ counts as a square modulo $p$, so "not a square" means "quadratic nonresidue". The paper
+assumes $p \ge 5$; for $p = 2$ and $p = 3$ both sides are $0$. If $0$ were counted as a non-square,
+the count at $p = 5$ would be $2$ instead of $0$.
 
 ## Depends on
 

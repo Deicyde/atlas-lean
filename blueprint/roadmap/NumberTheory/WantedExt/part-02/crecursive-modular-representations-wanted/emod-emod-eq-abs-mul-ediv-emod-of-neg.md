@@ -5,19 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.emod_emod_eq_abs_mul_ediv_emod_of_neg
 ---
 
-# Emod emod eq abs mul ediv emod of neg
+# Remainder of a remainder, negative residue case
 
-Let integers `A` and `B` be positive, let `C ≥ 2` divide `A` while `B` does not divide `A`,
-and let the nonzero integer `a < 0` be congruent to `B` modulo `C`. If
-`|a| * ((A / B) % C) < C`, then `(A % B) % C` equals that product. These paper clauses are,
-respectively, `hA`, `hB`, `hC`, `hCA`, `hBA`, `ha`, `hcongr`, and `hbound`; the paper's `a ≠ 0` is
-implied by the sign hypothesis `ha` and is not repeated.
-
-Congruence is represented by equality of integer remainders `B % C = a % C`; every modular
-operation uses Lean's `Int.emod`, whose remainder is nonnegative for the nonzero modulus ensured
-by `hC`. The paper's floor `⌊A / B⌋` is Lean's integer `/`, namely `Int.ediv`, which is floor
-division because `hB` makes `B` positive. Absolute value is the integer notation `|a|`. These
-encoding choices are the only deviations, and this part carries only the negative-sign bound.
+**Remainder of a remainder, negative residue case.** Let $a$, $A$, $B$ and $C$ be integers with
+$A > 0$, $B > 0$ and $C \ge 2$ such that $C$ divides $A$, $B$ does not divide $A$, $a < 0$ and
+$B \equiv a \pmod C$. Write $\lfloor A/B \rfloor$ for the floor of $A/B$ and $X \bmod M$ for the
+remainder of $X$ modulo $M$ in $\{0, 1, \dots, M - 1\}$. If
+$|a| \cdot (\lfloor A/B \rfloor \bmod C) < C$, then
+$(A \bmod B) \bmod C = |a| \cdot (\lfloor A/B \rfloor \bmod C)$.
 
 ## Depends on
 

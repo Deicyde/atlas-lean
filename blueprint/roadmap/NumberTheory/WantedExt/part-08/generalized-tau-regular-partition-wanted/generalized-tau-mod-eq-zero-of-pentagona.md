@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_modEq_zero_of_pentagonal
 ---
 
-# Generalized Tau mod Eq zero of pentagonal
+# Vanishing of $\tau_k(n)$ modulo the prime $k - 1$
 
-If `k - 1` is prime and `k - 1 ∤ n - 1 - P` for every generalized pentagonal number
-`P ≤ n - 1`, then `τ_k(n) ≡ 0 (mod k - 1)`.
+**Vanishing of $\tau_k(n)$ modulo the prime $k - 1$.** Let $n \ge 1$ and let $k$ be a natural
+number such that $k - 1$ is prime. For an integer $t$ let $P(t) = t(3t - 1)/2$ be the generalized
+pentagonal number. If $k - 1$ does not divide $n - 1 - P(t)$ for any integer $t$ with
+$P(t) \le n - 1$, then the generalized tau function satisfies $\tau_k(n) \equiv 0 \pmod{k - 1}$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

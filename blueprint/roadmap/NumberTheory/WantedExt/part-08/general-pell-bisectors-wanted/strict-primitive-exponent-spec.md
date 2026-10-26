@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.strictPrimitiveExponent_spec
 ---
 
-# Strict Primitive Exponent spec
+# The strictly primitive exponent is attained
 
-For `p ∈ S(d)`, `l_p > 0` and `|x² - d y²| = p^{l_p}` has a strictly primitive integral
-solution.
+**The strictly primitive exponent is attained.** Let $d$ be an integer and let $S(d)$ be the
+set of primes $p$ for which $|x^2 - d y^2| = p^l$ has a strictly primitive integral solution
+($x$ and $d y$ coprime) for some integer $l > 0$; for $p \in S(d)$ let $l_p$ be the least such
+$l$. Then for every $p \in S(d)$, $l_p > 0$ and $|x^2 - d y^2| = p^{l_p}$ has a strictly
+primitive integral solution.
 
 ## Depends on
 
-- [Strict Primitive Exponent](strict-primitive-exponent.md)
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Strictly primitive exponent](strict-primitive-exponent.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

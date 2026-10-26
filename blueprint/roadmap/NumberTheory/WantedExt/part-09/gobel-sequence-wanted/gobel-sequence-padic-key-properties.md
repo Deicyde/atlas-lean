@@ -5,20 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_padic_key_properties
 ---
 
-# Gobel Sequence padic key properties
+# Key $p$-adic properties of the $(k, l)$-Göbel sequences
 
-Lemma 5 (key properties), with `r = ν_p(N!)` and `k, l ≥ 1`. Membership in
-`ℤ_(p)` is written `0 ≤ padicValRat p x`, and `x ∈ p^s ℤ_(p)` is written
-`x = 0 ∨ s ≤ padicValRat p x`. Parts:
-(1) if `p > N` then `g_{k,l}(N) ∈ ℤ_(p)`;
-(2) if `g_{k,l}(n) ∉ ℤ_(p)` then `g_{k,l}(n + 1) ∉ ℤ_(p)`;
-(3) if `p ≤ N`, `k₁, k₂ ≥ r` and `k₁ ≡ k₂ (mod φ(p^r))`, then `g_{k₁,l}(n) ∈ ℤ_(p)`
-iff `g_{k₂,l}(n) ∈ ℤ_(p)`, and then `g_{k₁,l}(n) - g_{k₂,l}(n) ∈ p^{r - ν_p(n!)} ℤ_(p)`;
-(4) the same with `l₁ ≡ l₂ (mod p^r)` in place of the condition on `k`.
+**Key $p$-adic properties of the $(k, l)$-Göbel sequences.** Let $p$ be a prime, let $N \ge 1$
+be a natural number, let $r = \nu_p(N!)$, where $\nu_p$ is the $p$-adic valuation on $\mathbb{Q}$
+(with $\nu_p(0) = 0$), and write $g_{k,l}$ for the $(k, l)$-Göbel sequence. Write
+$\mathbb{Z}_{(p)}$ for the set of rational numbers $x$ with $\nu_p(x) \ge 0$, and for an integer
+$s$ write $x \in p^s \mathbb{Z}_{(p)}$ when $x = 0$ or $\nu_p(x) \ge s$. Then:
+(1) for all natural numbers $k, l \ge 1$, if $p > N$ then $g_{k,l}(N) \in \mathbb{Z}_{(p)}$;
+(2) for all natural numbers $k, l \ge 1$ and $1 \le n \le N$, if
+$g_{k,l}(n) \notin \mathbb{Z}_{(p)}$ then $g_{k,l}(n + 1) \notin \mathbb{Z}_{(p)}$;
+(3) if $p \le N$, then for all natural numbers $k_1, k_2 \ge r$ with
+$k_1 \equiv k_2 \pmod{\varphi(p^r)}$, where $\varphi$ is Euler's totient function, all $l \ge 1$
+and all $1 \le n \le N$: $g_{k_1,l}(n) \in \mathbb{Z}_{(p)}$ if and only if
+$g_{k_2,l}(n) \in \mathbb{Z}_{(p)}$, and in that case
+$g_{k_1,l}(n) - g_{k_2,l}(n) \in p^{r - \nu_p(n!)} \mathbb{Z}_{(p)}$;
+(4) if $p \le N$, then for all natural numbers $k, l_1, l_2 \ge 1$ with
+$l_1 \equiv l_2 \pmod{p^r}$ and all $1 \le n \le N$: $g_{k,l_1}(n) \in \mathbb{Z}_{(p)}$ if and
+only if $g_{k,l_2}(n) \in \mathbb{Z}_{(p)}$, and in that case
+$g_{k,l_1}(n) - g_{k,l_2}(n) \in p^{r - \nu_p(n!)} \mathbb{Z}_{(p)}$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC3
 ---
 
-# Initial Repetitions C3
+# The initial-repetitions partition function $c_3$
 
-`c₃(n)`: the number of partitions of `n` with a positive integer `j` such that `1` appears
-`j²` or `j² + 1` times, odd parts larger than `1` are distinct, all even parts are distinct, and
-even parts greater than `2j` are at least `4j + 4` and divisible by `4`.
+**The initial-repetitions partition function $c_3$.** For $n \ge 0$, $c_3(n)$ is the number
+of partitions of $n$ for which there is an integer $j$ with $1 \le j \le n$ such that the part $1$
+appears exactly $j^2$ or $j^2 + 1$ times, every odd part larger than $1$ appears exactly once,
+every even part appears exactly once, and every even part greater than $2j$ is at least $4j + 4$
+and divisible by $4$.
 
 ## Depends on
 

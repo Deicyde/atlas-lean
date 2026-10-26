@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gaussKuzminMass_eq_iff_characteristicNumber_eq
 ---
 
-# Gauss Kuzmin Mass eq iff characteristic Number eq
+# Gauss–Kuzmin masses agree exactly when characteristic numbers do
 
-For strings of positive integers whose lengths have the same parity, `P_GK(a) = P_GK(b)` if and
-only if `χ(a) = χ(b)`.
+**Gauss–Kuzmin masses agree exactly when characteristic numbers do.** Write $P_{GK}$ for the
+Gauss–Kuzmin mass and $\chi$ for the characteristic number of a string. If $a$ and $b$ are strings
+of positive integers whose lengths have the same parity, then $P_{GK}(a) = P_{GK}(b)$ if and only
+if $\chi(a) = \chi(b)$.
 
 ## Depends on
 
-- [Characteristic Number](characteristic-number.md)
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Characteristic number of a string](characteristic-number.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

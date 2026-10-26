@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kFibonacci_eq_binomial_sum
 ---
 
-# Corollary 12
+# Binomial-sum formula for the $k$-Fibonacci numbers
 
-**Corollary 12.** For `n ≥ k ≥ 2`,
-`F_n^{(k)} = 2^{n - k} ∑_{0 ≤ ℓ ≤ (n - k + 1)/(k + 1)} (binom((k + 1)ℓ - n + k - 2, ℓ) -
-binom((k + 1)ℓ - n + k - 2, ℓ - 1)) 2^{-(k + 1)ℓ}`.
+**Binomial-sum formula for the $k$-Fibonacci numbers.** Let $k \ge 2$ and let
+$(F_n)_{n \ge 0}$ be the $k$-Fibonacci sequence, given by $F_0 = \dots = F_{k-2} = 0$,
+$F_{k-1} = 1$ and $F_{m+k} = F_m + F_{m+1} + \dots + F_{m+k-1}$ for all $m \ge 0$. For integers
+$a$ and $j \ge 0$ write $\binom{a}{j} = a(a-1)\cdots(a-j+1)/j!$, and put $\binom{a}{-1} = 0$.
+Then for every $n \ge k$,
 
-The `ℓ = 0` term `binom(k - n - 2, -1)` is `0` and is written as `0`.
+$$F_n = 2^{n-k} \sum_{\ell=0}^{\lfloor (n-k+1)/(k+1) \rfloor} \left(\binom{(k+1)\ell+k-n-2}{\ell} -
+\binom{(k+1)\ell+k-n-2}{\ell-1}\right) 2^{-(k+1)\ell}.$$
 
 ## Depends on
 

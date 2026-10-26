@@ -16,7 +16,7 @@ $a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$.
 
 ## Depends on
 
-- [Hyper Fibonacci](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
+- [Hyper-Fibonacci numbers](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
 - [Hypersequence](hypersequence.md)
 
 ## Sources

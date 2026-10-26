@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.hofL_iterate_basic
 ---
 
-# Hof L iterate basic
+# Basic properties of the iterates of $L_k$
 
-Basic properties of `L_k^j` for `k ≥ 1`: `L_k^j(n) = |τ_k^j(x_k[0:n))|`; `L_k^j(0) = 0` and
-`L_k^j(n+1) = L_k^j(n) + |τ_k^j(x_k[n])|`; `L_k^j(1) = j + 1` for `j ≤ k` and
-`L_k^j(1) = L_k^{j-1}(1) + L_k^{j-k}(1)` for `j ≥ k`; `L_k^j` is strictly increasing in `n`;
-`L_k^j(n) ≥ n` with equality only when `j = 0` or `n = 0`; for `n ≥ 1`, `j ↦ L_k^j(n)` is
-strictly increasing.
+**Basic properties of the iterates of $L_k$.** Let $k \ge 1$, let $x_k$ be the fixed point of
+the substitution $\tau_k$, with letters $x_k[0], x_k[1], \dots$ and prefixes
+$x_k[0:n) = x_k[0] \cdots x_k[n-1]$, let $L_k(n) = |\tau_k(x_k[0:n))|$, and write $f^j$ for the
+$j$-fold iterate of a map $f$ (so $f^0$ is the identity). Then for every $j \ge 0$:
+(1) $L_k^j(n) = |\tau_k^j(x_k[0:n))|$ for every $n$;
+(2) $L_k^j(0) = 0$, and $L_k^j(n+1) = L_k^j(n) + |\tau_k^j(x_k[n])|$ for every $n$;
+(3) $L_k^j(1) = j + 1$ if $j \le k$, and $L_k^j(1) = L_k^{j-1}(1) + L_k^{j-k}(1)$ if $j \ge k$;
+(4) $n \mapsto L_k^j(n)$ is strictly increasing;
+(5) $L_k^j(n) \ge n$ for every $n$, with equality if and only if $j = 0$ or $n = 0$;
+(6) for every $n \ge 1$, the sequence $i \mapsto L_k^i(n)$ is strictly increasing.
 
 ## Depends on
 
-- [Hof L](hof-l.md)
-- [Hof Prefix](hof-prefix.md)
-- [Hof Tau List](hof-tau-list.md)
-- [Hof Word](hof-word.md)
+- [The image length $L_k$](hof-l.md)
+- [The prefix $x_k(0:n)$](hof-prefix.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
+- [Letters of the Hofstadter fixed-point word](hof-word.md)
 
 ## Sources
 

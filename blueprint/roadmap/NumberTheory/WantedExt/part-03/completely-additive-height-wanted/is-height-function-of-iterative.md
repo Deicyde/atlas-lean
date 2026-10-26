@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isHeightFunction_of_iterative
 ---
 
-# Is Height Function of iterative
+# Iteratively defined height functions
 
-Theorem 2 (iteratively defined height functions): let `f : ℕ → ℕ` with `f(1) = 1` such that
-every prime `p_r ∣ f(i)` has `r < i` (which forces `f(i) ≥ 1`), and each value `t ≥ 1` has
-finitely many preimages. For `j ≥ 1`, a completely additive `H` with `H(pᵢ) = H(f(i)) + j` for all
-`i ≥ 1` exists, and every such `H` is a height function. (`H(2) = j` is the case `i = 1`.)
+**Iteratively defined height functions.** Write $p_i$ for the $i$-th prime, so $p_1 = 2$. Let
+$f : \mathbb{N} \to \mathbb{N}$ satisfy $f(1) = 1$; suppose that for all integers $i, r \ge 1$, if
+$p_r$ divides $f(i)$ then $r < i$ (this forces $f(i) \ge 1$ for $i \ge 1$); and suppose that for
+every $t \ge 1$ only finitely many $i \ge 1$ have $f(i) = t$. Let $j \ge 1$. Then there is a
+function $H : \mathbb{N} \to \mathbb{N}$ that is completely additive on the positive integers and
+satisfies $H(p_i) = H(f(i)) + j$ for every $i \ge 1$, and every such $H$ is a height function.
+
+The case $i = 1$ gives $H(2) = j$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
-- [Is Height Function](is-height-function.md)
-- [Nth Prime One](nth-prime-one.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
+- [Height functions](is-height-function.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

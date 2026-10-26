@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_isLargeZsigmondyPrime_of_lt
 ---
 
-# Exists is Large Zsigmondy Prime of lt
+# A size criterion for a large Zsigmondy prime
 
-For distinct coprime positive integers `a`, `b` and `n ≥ 3`, if `(n + 1) · gpf(n) < Φ_n(a, b)`
-(stated for every prime factor of `n`, equivalently for the greatest one), then there is a
-large Zsigmondy prime for `(a, b, n)`.
+**A size criterion for a large Zsigmondy prime.** Let $a$ and $b$ be distinct coprime
+positive integers and let $n \ge 3$. If $(n + 1) q < \Phi_n(a, b)$ for every prime factor $q$ of
+$n$, where $\Phi_n(a, b)$ is the homogenized cyclotomic value, then there is a large Zsigmondy
+prime for $(a, b, n)$.
+
+Equivalently, the hypothesis asks that $n + 1$ times the greatest prime factor of $n$ be less
+than $\Phi_n(a, b)$.
 
 ## Depends on
 
-- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
+- [Large Zsigmondy prime](is-large-zsigmondy-prime.md)
 - [Homogenized cyclotomic value](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources

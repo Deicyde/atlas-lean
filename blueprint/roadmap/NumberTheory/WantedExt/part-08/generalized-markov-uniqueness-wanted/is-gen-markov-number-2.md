@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.HasUniqueMaxGenMarkovTriple.isGenMarkovNumber
 ---
 
-# Is Gen Markov Number
+# A unique maximum is a generalized Markov number
 
-Characteristic lemma: a number that is the maximum of a unique triple is a
-`k`-generalized Markov number.
+**A unique maximum is a generalized Markov number.** Let $k$ and $b$ be natural numbers.
+If $b$ is the maximum of a unique $k$-generalized Markov triple up to order, then $b$ is a
+$k$-generalized Markov number.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Proof depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

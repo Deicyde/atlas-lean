@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.padicValRat_two_harmonic_sub_neg
 ---
 
-# Padic Val Rat two harmonic sub neg
+# Kürschák's strengthening of Theisinger's theorem
 
-Kürschák's strengthening of Theisinger's theorem:
+**Kürschák's strengthening of Theisinger's theorem.** Let $H_k = \sum_{j=1}^{k} 1/j$ be the
+$k$-th harmonic number (so $H_0 = 0$) and let $\nu_2$ denote the $2$-adic valuation on the
+rational numbers. For all natural numbers $m$ and $n$ with $m + 2 \le n$, the $2$-adic valuation
+$\nu_2(H_n - H_m)$ is negative; that is, $H_n - H_m$ is not a $2$-adic integer.
 
-For a rational number this is the statement that its `2`-adic valuation
-`padicValRat 2` is negative; in particular `H_n - H_m ∉ ℤ`.
+In particular $H_n - H_m$ is not an integer.
 
 ## Depends on
 

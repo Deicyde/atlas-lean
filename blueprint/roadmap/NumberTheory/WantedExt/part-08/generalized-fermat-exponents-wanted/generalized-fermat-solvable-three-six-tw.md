@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFermatSolvable_three_six_two
 ---
 
-# Generalized Fermat Solvable three six two
+# A solution of x³ + y⁶ = z²
 
-`2^3 + 1^6 = 3^2`, so `x^3 + y^6 = z^2` is solvable.
+**A solution of x³ + y⁶ = z².** The equation $x^3 + y^6 = z^2$ has a solution in nonzero
+integers, namely $2^3 + 1^6 = 3^2$.
 
 ## Depends on
 
-- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
+- [Solvable generalized Fermat equation](generalized-fermat-solvable.md)
 
 ## Sources
 

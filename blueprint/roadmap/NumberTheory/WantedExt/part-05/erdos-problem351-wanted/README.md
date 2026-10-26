@@ -6,10 +6,10 @@ navigation: module
 
 ## EP351
 
-- [Strongly Complete](strongly-complete.md)
-- [Erdos Set351](erdos-set351.md)
-- [Strong Completeness Question](strong-completeness-question.md)
+- [Strongly complete sets of rationals](strongly-complete.md)
+- [Polynomial values plus reciprocals](erdos-set351.md)
+- [The strong completeness statement of Erdős Problem 351](strong-completeness-question.md)
 
 ## Erdos Problem351 Wanted
 
-- [Strong Completeness Question holds](strong-completeness-question-holds.md)
+- [Strong completeness of polynomial values plus reciprocals (Erdős Problem 351)](strong-completeness-question-holds.md)

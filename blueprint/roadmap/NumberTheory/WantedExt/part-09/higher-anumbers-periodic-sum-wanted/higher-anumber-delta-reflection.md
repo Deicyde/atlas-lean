@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberDelta_reflection
 ---
 
-# Higher ANumber Delta reflection
+# Reflection symmetry of the rounding indicator
 
-For `0 ≤ i < τ_D p` with `p ∤ i`: (i) if `τ_D ∤ i` then `δ(i) + δ(τ_D p - i) = 1`; (ii) if
-`τ_D ∣ i` then `δ(i) = δ(τ_D p - i) = 0`. For `0 ≤ j < d` with `p ∤ j`: (iii) if `τ_D ∤ j` then
-`δ(j) + δ(d - j) = 1`; (iv) if `τ_D ∣ j` then `δ(j) = 0`.
+**Reflection symmetry of the rounding indicator.** Let $p$ be a prime, let $d$ be a natural
+number dividing $p - 1$, let $\tau_D$ be the denominator of $(p + 1)/d$ in lowest terms, and let
+$\delta$ be the rounding indicator for $p$ and $d$. For every natural number $i < \tau_D p$ with
+$p \nmid i$: (i) if $\tau_D \nmid i$, then $\delta(i) + \delta(\tau_D p - i) = 1$; (ii) if
+$\tau_D \mid i$, then $\delta(i) = \delta(\tau_D p - i) = 0$. For every natural number $j < d$
+with $p \nmid j$: (iii) if $\tau_D \nmid j$, then $\delta(j) + \delta(d - j) = 1$; (iv) if
+$\tau_D \mid j$, then $\delta(j) = 0$.
 
 ## Depends on
 
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Tau Den](tau-den.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

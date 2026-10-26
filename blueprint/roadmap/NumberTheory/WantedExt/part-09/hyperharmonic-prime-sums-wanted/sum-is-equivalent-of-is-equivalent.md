@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_isEquivalent_of_isEquivalent
 ---
 
-# Sum is Equivalent of is Equivalent
+# Jakimczuk's lemma on sums of asymptotically equivalent terms
 
-Lemma 7 (Jakimczuk): if `∑ a_i` and `∑ b_i` are series of positive terms with
-`a_i ∼ b_i` and `∑ b_i` diverges, then `∑_{i=1}^{n} a_i ∼ ∑_{i=1}^{n} b_i`. Divergence of a
-series of positive terms is stated as the partial sums tending to `+∞`.
+**Jakimczuk's lemma on sums of asymptotically equivalent terms.** Let $(a_i)_{i \ge 0}$ and
+$(b_i)_{i \ge 0}$ be real sequences with $a_i > 0$ and $b_i > 0$ for every $i \ge 1$. If
+$a_i \sim b_i$ as $i \to \infty$ and $\sum_{i=1}^{n} b_i \to +\infty$ as $n \to \infty$, then
+
+$$\sum_{i=1}^{n} a_i \sim \sum_{i=1}^{n} b_i \qquad (n \to \infty).$$
 
 ## Depends on
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_prime_regular_modEq_generalizedTau_pred
 ---
 
-# Card prime regular mod Eq generalized Tau pred
+# Prime-regular partitions and the generalized tau function
 
-`R_p(n) ≡ τ_{p-1}(n + 1) (mod p)` for every prime `p`.
+**Prime-regular partitions and the generalized tau function.** Let $p$ be a prime and $n$ a
+natural number. Let $R_p(n)$ be the number of partitions of $n$ in which no part is divisible by
+$p$, and let $\tau_k(m)$ be the generalized tau function, the coefficient of $q^m$ in
+$q \prod_{j \ge 1} (1 - q^j)^k$. Then $R_p(n) \equiv \tau_{p-1}(n + 1) \pmod p$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

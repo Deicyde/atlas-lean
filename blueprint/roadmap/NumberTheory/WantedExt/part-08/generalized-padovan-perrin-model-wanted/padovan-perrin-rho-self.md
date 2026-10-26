@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinRho_self
 ---
 
-# Padovan Perrin Rho self
+# Normalization of the Padovan–Perrin coefficients
 
-`ρ(s + p, s + p) = 1` for `s > 0`.
+**Normalization of the Padovan–Perrin coefficients.** Let $R$ be a commutative semiring, let
+$k_1, k_2 \in R$ and let $p, s$ be natural numbers with $s > 0$. Then the Padovan–Perrin
+coefficient $\rho(s + p, s + p)$ attached to $k_1, k_2, p, s$ equals $1$.
 
 ## Depends on
 
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

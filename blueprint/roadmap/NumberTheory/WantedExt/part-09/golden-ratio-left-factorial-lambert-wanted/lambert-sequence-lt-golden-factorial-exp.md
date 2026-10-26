@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.lambertSequence_lt_goldenFactorialExponent
 ---
 
-# Lambert Sequence lt golden Factorial Exponent
+# The golden factorial exponent exceeds the Lambert sequence
 
-Theorem 6 (main result): `α n > a n` for `n > 4`, where
-`a n = -(n - 1) W₋₁(-(1/(n-1)) (4/7)^(1/(n-1)))` is encoded by `n - 1 ≤ a` and
-`lambertMap (-a / (n - 1)) = -(1/(n-1)) (4/7)^(1/(n-1))` (see the module docstring).
+**The golden factorial exponent exceeds the Lambert sequence.** Let $n > 4$ be an integer, let
+$h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and
+
+$$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$
+
+Then $a < \alpha(n)$, where $\alpha(n)$ is the least positive integer $m$ with $n! \le \varphi^m$
+and $\varphi$ is the golden ratio.
+
+The two conditions on $a$ say exactly that
+$a = -(n-1)\, W_{-1}\left(-\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}\right)$, where $W_{-1}$
+is the lower real branch of the Lambert $W$ function; this is the paper's $a(n)$.
 
 ## Depends on
 
-- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Golden factorial exponent](golden-factorial-exponent.md)
 - [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources

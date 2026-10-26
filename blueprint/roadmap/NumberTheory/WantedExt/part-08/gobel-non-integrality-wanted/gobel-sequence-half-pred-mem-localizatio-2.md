@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_half_pred_mem_localization_of_one_mod_four_of_odd
 ---
 
-# Gobel Sequence half pred mem localization of one mod four of odd
+# Odd starting values give a $p$-integral $p$-th term when $p \equiv 1 \pmod 4$
 
-For an odd prime `p ≡ 1 (mod 4)`, every odd `0 ≤ l < p` gives localization membership.
-Membership is encoded by nonnegative `padicValRat`, and the lower bound is automatic for
-naturals. Source: Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)-
-Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), odd
-case.
+**Odd starting values give a $p$-integral $p$-th term when $p \equiv 1 \pmod 4$.** Let $p$ be
+a prime with $p \equiv 1 \pmod 4$, write $k = (p-1)/2$, and let $g_{k,l}$ denote the
+$(k,l)$-Göbel sequence. Then for every odd natural number $l < p$, the term $g_{k,l}(p)$ lies in
+the localization $\mathbb{Z}_{(p)}$, that is, its $p$-adic valuation is nonnegative.
 
 ## Depends on
 
-- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
+- [The (k, l)-Göbel sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)
+- Yuh Kobayashi and Shin-ichiro Seki, *A Note on Non-Integrality of the (k, l)- Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 1(b), odd case.

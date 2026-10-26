@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.negPellG_le_negPellF
 ---
 
-# Neg Pell G le neg Pell F
+# Comparison of the negative Pell sequences
 
-For `d > 1` whose negative Pell equation is solvable in integers, `g_n ≤ f_n`, with equality
-if and only if `d = 2` and `n = 1`.
+**Comparison of the negative Pell sequences.** Let $d > 1$ be a natural number such that
+$x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its fundamental solution (the one with
+$X, Y > 0$ and $Y$ least), and write $(X + Y \sqrt{d})^n = f_n + g_n \sqrt{d}$. Then for every
+$n \ge 0$, $g_n \le f_n$, with equality if and only if $d = 2$ and $n = 1$.
 
-The record's second sentence (printed `f_1 ≥ d - 1`, with a displaced `√` glyph; the literal
-reading fails at `d = 5`, `f_1 = 2`) is not formalized.
+Only the first sentence of the source's corollary is stated here: its second sentence, printed as
+$f_1 \ge d - 1$ with a displaced square root sign, fails when read literally at $d = 5$, where
+$f_1 = 2$.
 
 ## Depends on
 
-- [Neg Pell F](neg-pell-f.md)
-- [Neg Pell G](neg-pell-g.md)
+- [First coordinates of the powers of the fundamental negative Pell solution](neg-pell-f.md)
+- [Second coordinates of the powers of the fundamental negative Pell solution](neg-pell-g.md)
 
 ## Sources
 

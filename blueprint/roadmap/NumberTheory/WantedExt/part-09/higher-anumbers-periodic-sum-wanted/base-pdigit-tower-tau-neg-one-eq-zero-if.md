@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.basePDigit_towerTau_neg_one_eq_zero_iff
 ---
 
-# Base PDigit tower Tau neg one eq zero iff
+# Digits of $\tau i$ next to the radix point
 
-For `τ = (p + 1)/d` with `d ∣ p - 1`, `[p^{-1}](τ i) = [p^0](τ i)` if and only if `p ∣ i`.
-The paper's positivity of `i` is dropped (the claim holds at `i = 0`) and `p` is any prime.
+**Digits of $\tau i$ next to the radix point.** Let $p$ be a prime, $d$ a divisor of $p - 1$
+and $\tau = (p + 1)/d$, and write $[p^j](x)$ for the $j$-th base-$p$ digit of a rational number
+$x$. For every natural number $i$, $[p^{-1}](\tau i) = [p^0](\tau i)$ if and only if $p$ divides
+$i$.
+
+The source's positivity assumption on $i$ is dropped (the claim holds at $i = 0$), and $p$ is any
+prime.
 
 ## Depends on
 
-- [Base PDigit](base-pdigit.md)
-- [Tower Tau](tower-tau.md)
+- [Base-$p$ digits of a rational number](base-pdigit.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.soCS_ratio_bounds
 ---
 
-# So CS ratio bounds
+# Bounds on the ratio of the two spans
 
-Bounds on the ratio `(b - a) / (c - b)` for SoCS solutions:
-`1 < (b - a) / (c - b) < 1 + 2^{1/3} + 2^{2/3}`.
+**Bounds on the ratio of the two spans.** For every solution $(a, b, c)$ of the sum of
+consecutive squares problem, $1 < (b - a)/(c - b) < 1 + 2^{1/3} + 2^{2/3}$.
 
 ## Depends on
 
-- [Is So CSSolution](is-so-cssolution.md)
+- [Solutions of the sum of consecutive squares problem](is-so-cssolution.md)
 
 ## Sources
 

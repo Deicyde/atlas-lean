@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.collatzAccelerated
 ---
 
-# Collatz Accelerated
+# The accelerated Collatz map
 
-The accelerated Collatz map: `(3n + 1)/2` for odd `n` and `n/2` for even `n`.
+**The accelerated Collatz map.** The accelerated Collatz map $C : \mathbb{N} \to \mathbb{N}$
+sends a natural number $n$ to $n/2$ if $n$ is even and to $(3n + 1)/2$ if $n$ is odd.
 
 ## Depends on
 

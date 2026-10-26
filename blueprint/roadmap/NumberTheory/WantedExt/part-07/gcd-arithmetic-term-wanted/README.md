@@ -4,11 +4,11 @@ navigation: module
 
 # Gcd Arithmetic Term
 
-- [Gcd Term Seq](gcd-term-seq.md)
-- [Gcd Term Seq zero](gcd-term-seq-zero.md)
-- [Mul mk gcd Term Seq](mul-mk-gcd-term-seq.md)
-- [Gcd Term Seq natural and eq gcd add one](gcd-term-seq-natural-and-eq-gcd-add-one.md)
-- [Gcd Term Seq le gcd Term Seq one one](gcd-term-seq-le-gcd-term-seq-one-one.md)
-- [Gcd add one eq floor div mod five](gcd-add-one-eq-floor-div-mod-five.md)
-- [Gcd eq neg emod emod five sub two](gcd-eq-neg-emod-emod-five-sub-two.md)
-- [Gcd arithmetic terms small bases](gcd-arithmetic-terms-small-bases.md)
+- [The gcd-term sequence](gcd-term-seq.md)
+- [Initial value of the gcd-term sequence](gcd-term-seq-zero.md)
+- [Generating function of the gcd-term sequence](mul-mk-gcd-term-seq.md)
+- [The gcd-term sequence is integral and recovers the gcd](gcd-term-seq-natural-and-eq-gcd-add-one.md)
+- [The gcd-term sequence is bounded by $n + 1$](gcd-term-seq-le-gcd-term-seq-one-one.md)
+- [Arithmetic term for the gcd in base $5$](gcd-add-one-eq-floor-div-mod-five.md)
+- [Second arithmetic term for the gcd in base $5$](gcd-eq-neg-emod-emod-five-sub-two.md)
+- [The gcd terms in bases $2$, $3$ and $4$](gcd-arithmetic-terms-small-bases.md)

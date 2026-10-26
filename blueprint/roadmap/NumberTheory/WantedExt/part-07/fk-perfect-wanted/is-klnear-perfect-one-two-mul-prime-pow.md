@@ -13,7 +13,7 @@ is one, for `ℓ = 1` with `d = 3`).
 
 ## Depends on
 
-- [Is KLNear Perfect](is-klnear-perfect.md)
+- [$(k,\ell)$-near-perfect numbers](is-klnear-perfect.md)
 
 ## Sources
 

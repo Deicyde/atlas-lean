@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffB1_one_zero_zero_two
 ---
 
-# Li Coeff B1 one zero zero two
+# The coefficient $b_1(1, 0, 0, 2)$
 
-Initial value `b₁(1, 0, 0, 2) = 1`.
+**The coefficient $b_1(1, 0, 0, 2)$.** The coefficient $b_1(1, 0, 0, 2)$ of Li's
+Definition 5 equals $1$.
 
 ## Depends on
 
-- [Li Coeff B1](li-coeff-b1.md)
+- [Li's coefficients $b_1(r, m, j, k)$](li-coeff-b1.md)
 
 ## Sources
 

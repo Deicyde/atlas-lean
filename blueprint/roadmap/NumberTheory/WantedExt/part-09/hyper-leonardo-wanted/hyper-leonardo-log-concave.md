@@ -14,7 +14,7 @@ paper's proof starts its induction at `r = 1` (Proposition 13).
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

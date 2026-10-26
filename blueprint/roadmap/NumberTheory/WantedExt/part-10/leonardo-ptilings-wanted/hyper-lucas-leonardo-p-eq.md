@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hyperLucasLeonardoP_eq
 ---
 
-# Proposition 19
+# Hyper Lucas–Leonardo numbers from incomplete ones
 
-**Proposition 19**: for `n > p ≥ 1` and `k ≥ 1`,
-`R^{(k)}_{p,n} = R_{p,n+(p+1)k} - R_{p,n+(p+1)k}(k - 1) - p C(n + k, k)`.
+**Hyper Lucas–Leonardo numbers from incomplete ones.** For natural numbers $p \ge 1$, $n > p$
+and $k \ge 1$, write $R_{p,m}$ for the Lucas–Leonardo $p$-numbers and $R_{p,m}(j)$ for the
+incomplete Lucas–Leonardo $p$-numbers. Then the hyper Lucas–Leonardo $p$-number $R^{(k)}_{p,n}$
+satisfies
+
+$$R^{(k)}_{p,n} = R_{p,n+(p+1)k} - R_{p,n+(p+1)k}(k - 1) - p \binom{n + k}{k}.$$
 
 ## Depends on
 
-- [Hyper Lucas Leonardo P](hyper-lucas-leonardo-p.md)
-- [Incomplete Lucas Leonardo P](incomplete-lucas-leonardo-p.md)
+- [Hyper Lucas-Leonardo p-numbers](hyper-lucas-leonardo-p.md)
+- [Incomplete Lucas-Leonardo p-numbers](incomplete-lucas-leonardo-p.md)
 - [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources

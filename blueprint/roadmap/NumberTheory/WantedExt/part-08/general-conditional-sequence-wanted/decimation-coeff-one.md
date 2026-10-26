@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.decimationCoeff_one
 ---
 
-# Decimation Coeff one
+# First decimation coefficient
 
-`v_1^{(i)} = s_{r+i} - A_{m-1} s_i`.
+**First decimation coefficient.** For sequences $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ in a
+commutative ring and natural numbers $m$, $r$, $i$, the decimation coefficient $v_1^{(i)}$
+equals $s_{r+i} - A_{m-1} s_i$, where $A_{m-1}$ is read as $A_0$ when $m = 0$.
 
 ## Depends on
 
-- [Decimation Coeff](decimation-coeff.md)
+- [Decimation coefficients](decimation-coeff.md)
 
 ## Sources
 

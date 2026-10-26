@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinFundamental_mul_sum
 ---
 
-# Padovan Perrin Fundamental mul sum
+# Product identity for the generalized Padovan–Perrin fundamental system
 
-Product identity of the Fibonacci fundamental system: for `m, n ≥ 0` and
-`1 ≤ i, j ≤ s + p`,
-`v⁽ˢ⁺ᵖ⁻ʲ⁺¹⁾ (n + m + s + p - i) = ∑_{k=1}^{s+p} v⁽ˢ⁺ᵖ⁻ᵏ⁺¹⁾ (m + s + p - i) v⁽ˢ⁺ᵖ⁻ʲ⁺¹⁾ (n + s + p - k)`.
-Stated over any commutative ring.
+**Product identity for the generalized Padovan–Perrin fundamental system.** Let $R$ be a
+commutative ring, $k_1, k_2 \in R$, and $p, s \ge 1$. Write $r = s + p$ and $v^{(\ell)}$ for the
+$\ell$-th sequence of the Fibonacci fundamental system of the $([k]; p; s)$-Padovan–Perrin
+recurrence. Then for all $m, n \ge 0$ and all $1 \le i, j \le r$,
+
+$$v^{(r-j+1)}_{n+m+r-i} = \sum_{k=1}^{r} v^{(r-k+1)}_{m+r-i} \, v^{(r-j+1)}_{n+r-k}.$$
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
 
 ## Sources
 

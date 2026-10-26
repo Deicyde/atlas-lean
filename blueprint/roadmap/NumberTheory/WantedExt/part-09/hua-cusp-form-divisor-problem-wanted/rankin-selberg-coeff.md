@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.rankinSelbergCoeff
 ---
 
-# Rankin Selberg Coeff
+# Rankin–Selberg coefficients
 
-The Rankin–Selberg coefficients `λ_{f×f}(n) = ∑_{l² m = n} λ_f(m)²`, i.e. the Dirichlet
-coefficients of `L(f × f, s) = ζ(2s) ∑ λ_f(n)² n^{-s}`, as an arithmetic function (so that its
-`w`-th power under Dirichlet convolution is `λ_{w,f×f}`).
+**Rankin–Selberg coefficients.** Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
+$\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients $\lambda_f$. The Rankin–Selberg
+coefficients of $f$ form the arithmetic function $\lambda_{f \times f}$ with
+$\lambda_{f \times f}(0) = 0$ and, for $n \ge 1$,
+$\lambda_{f \times f}(n) = \sum_{l^2 m = n} \lambda_f(m)^2$, the sum running over the pairs of
+positive integers $(l, m)$ with $l^2 m = n$; equivalently, $\lambda_{f \times f}(n)$ is the sum of
+$\lambda_f(n/d)^2$ over the positive divisors $d$ of $n$ that are perfect squares.
+
+These are the Dirichlet coefficients of
+$L(f \times f, s) = \zeta(2s) \sum_{n \ge 1} \lambda_f(n)^2 n^{-s}$. The $w$-th power of
+$\lambda_{f \times f}$ under Dirichlet convolution is denoted $\lambda_{w, f \times f}$.
 
 ## Depends on
 
@@ -17,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Normalized Fourier coefficients of a cusp form](cusp-form-normalized-coeff.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.maxConsecutivePrimePowerSumLength_isEquivalent
 ---
 
-# Max Consecutive Prime Power Sum Length is Equivalent
+# Length of the longest sum of consecutive prime powers
 
-Lemma 2: for `k > 1`, `M(x, k) ∼ (k + 1) x^{1/(k+1)} / (log x)^{k/(k+1)}` as `x → ∞`.
+**Length of the longest sum of consecutive prime powers.** Let $p_1 < p_2 < \cdots$ be the
+primes, let $k > 1$ be a natural number, and for a natural number $x$ let $M(x, k)$ be the
+largest $m \le x$ with $p_1^k + p_2^k + \cdots + p_m^k \le x$. Then
+$M(x, k) \sim (k + 1)\, x^{1/(k+1)} / (\log x)^{k/(k+1)}$ (asymptotic equivalence) as $x \to \infty$
+through the natural numbers.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibAlpha
 ---
 
-# Fib Alpha
+# The golden ratio $\alpha$
 
-The paper's `α = (1 + √5)/2`.
+**The golden ratio $\alpha$.** The golden ratio is the real number
+$\alpha = (1 + \sqrt{5})/2$.
 
 ## Depends on
 

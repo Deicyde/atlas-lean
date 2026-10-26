@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_harmonic_block_sub_integral
 ---
 
-# Tendsto harmonic block sub integral
+# Harmonic blocks versus the logarithmic integral
 
-Lemma 9: if `a_n ≤ b_n` are natural numbers with `a_n → ∞`, then
-`Σ_{k=a_n}^{b_n} 1/k - ∫_{a_n}^{b_n} dt/t → 0`, i.e. the two limits agree whenever either exists.
-The paper's positivity of `a_n, b_n` and `b_n → ∞` follow eventually from `a_n ≤ b_n`, `a_n → ∞`.
+**Harmonic blocks versus the logarithmic integral.** Let $(a_n)$ and $(b_n)$ be sequences of
+natural numbers with $a_n \le b_n$ for every $n$ and $a_n \to \infty$. Then
+$\sum_{k=a_n}^{b_n} 1/k - \int_{a_n}^{b_n} dt/t \to 0$ as $n \to \infty$.
+
+In particular, if either $\sum_{k=a_n}^{b_n} 1/k$ or $\int_{a_n}^{b_n} dt/t$ converges, then so does
+the other, with the same limit. Positivity of $a_n$ and $b_n$ and $b_n \to \infty$ need not be
+assumed: they follow from the hypotheses (positivity for all large $n$).
 
 ## Depends on
 

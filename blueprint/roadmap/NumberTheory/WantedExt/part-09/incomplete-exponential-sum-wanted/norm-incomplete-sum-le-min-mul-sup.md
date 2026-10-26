@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.norm_incompleteSum_le_min_mul_sup
 ---
 
-# Norm incomplete Sum le min mul sup
+# Explicit completion bound for incomplete exponential sums
 
-Theorem 1.1: for a prime `p`, a polynomial `f` over `ℤ` whose reduction mod `p` has degree
-`d_p(f) ≥ 2`, and `1 ≤ B ≤ p`,
-`|S_p(f, B)| ≤ min{(2/π²) log p + 3.29 + B/p, (4/π²) log p + B/p + 0.35} Φ(f, p)`, with
-`Φ(f, p) = max_{0 ≤ y ≤ p-1} |∑_{x=1}^{p} e_p(f(x) + y x)|`.
+**Explicit completion bound for incomplete exponential sums.** Let $p$ be a prime, write
+$e_p(t) = e^{2\pi i t/p}$, let $f$ be a polynomial with integer coefficients whose reduction
+modulo $p$ has degree at least $2$, and let $B$ be an integer with $1 \le B \le p$. Put
+$\Phi(f, p) = \max_{0 \le y \le p-1} \left|\sum_{x=1}^{p} e_p(f(x) + yx)\right|$. Then
+$\left|\sum_{x=1}^{B} e_p(f(x))\right| \le
+\min\left\{\frac{2}{\pi^2} \log p + 3.29 + \frac{B}{p},
+\frac{4}{\pi^2} \log p + \frac{B}{p} + 0.35\right\} \Phi(f, p)$.
 
 ## Depends on
 

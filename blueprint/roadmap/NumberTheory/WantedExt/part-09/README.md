@@ -9,7 +9,7 @@ navigation: transparent
 - [Golden Ratio Left Factorial Lambert](golden-ratio-left-factorial-lambert-wanted/README.md)
 - [Goormaghtigh Primes](goormaghtigh-primes-wanted/README.md)
 - [Greene Sellers Initial Repetitions](greene-sellers-initial-repetitions-wanted/README.md)
-- [Hardy Littlewood Prime Tuple Wanted](hardy-littlewood-prime-tuple-conjecture.md)
+- [Hardy–Littlewood prime-tuple conjecture](hardy-littlewood-prime-tuple-conjecture.md)
 - [Harmonic Valuation](harmonic-valuation-wanted/README.md)
 - [Hasse Principle Random Fano](hasse-principle-random-fano-wanted/README.md)
 - [Hata Euler Mascheroni Farey](hata-euler-mascheroni-farey-wanted/README.md)

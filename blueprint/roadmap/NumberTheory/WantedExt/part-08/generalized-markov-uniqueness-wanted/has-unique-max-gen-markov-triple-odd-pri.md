@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hasUniqueMaxGenMarkovTriple_odd_prime_pow
 ---
 
-# Has Unique Max Gen Markov Triple odd prime pow
+# Uniqueness for odd prime powers $p^m$ and $2p^m$ with $p \nmid k^2 - 4$
 
-Theorem 4.10: a `k`-generalized Markov number `b = p^m` or `2p^m` with `p` an odd prime,
-`m ≥ 2` and `k² - 4 ≢ 0 (mod p)` is the maximum of a unique triple up to order.
+**Uniqueness for odd prime powers $p^m$ and $2p^m$ with $p \nmid k^2 - 4$.** Let $k$ and $m$
+be natural numbers with $m \ge 2$, and let $p$ be an odd prime that does not divide $k^2 - 4$ in
+$\mathbb{Z}$. If $b$ is a $k$-generalized Markov number with $b = p^m$ or $b = 2p^m$, then $b$ is
+the maximum of a unique $k$-generalized Markov triple up to order.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

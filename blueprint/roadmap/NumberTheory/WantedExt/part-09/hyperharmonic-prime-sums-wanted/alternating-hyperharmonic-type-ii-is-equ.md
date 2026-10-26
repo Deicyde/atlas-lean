@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.alternatingHyperharmonic_typeII_isEquivalent
 ---
 
-# Alternating Hyperharmonic type II is Equivalent
+# Asymptotic of type II alternating hyperharmonic numbers
 
-Lemma 13: for `r, p ≥ 1`, the type II numbers satisfy
-`H_n^{(p,r,2)} ∼ n^{r-1} ζ̄(p) / (r-1)!` (with `ζ̄(1) = log 2`).
+**Asymptotic of type II alternating hyperharmonic numbers.** For a natural number $p$ let
+$\overline{H}_n^{(p)} = \sum_{i=1}^{n} (-1)^{i-1}/i^p$ be the alternating generalized harmonic
+numbers, and let the type II generalized alternating hyperharmonic numbers be
+$H_n^{(p,1,2)} = \overline{H}_n^{(p)}$ and $H_n^{(p,r+1,2)} = \sum_{k=1}^{n} H_k^{(p,r,2)}$. Let
+$\bar\zeta(p)$ be the alternating zeta value at $p$, so that $\bar\zeta(1) = \log 2$. Then for all
+natural numbers $r, p \ge 1$, $H_n^{(p,r,2)} \sim n^{r-1} \bar\zeta(p) / (r-1)!$ as $n \to \infty$.
 
 ## Depends on
 
-- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
-- [Alternating Zeta](alternating-zeta.md)
-- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
+- [Alternating generalized harmonic numbers](alternating-generalized-harmonic.md)
+- [Alternating zeta values](alternating-zeta.md)
+- [Signed iterated partial sums](signed-iterated-partial-sum.md)
 
 ## Sources
 

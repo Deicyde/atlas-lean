@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_shift
 ---
 
-# Gen Leonardo shift
+# Shift identity for generalized Leonardo numbers
 
-The shift identity
-`L_{k,m} L_{k,n} - L_{k,m+t} L_{k,n-t}
-= (-1)^{n-t+1} (L_{k,m-n+t-1} + k)(L_{k,t-1} + k)
-- k (L_{k,m} + L_{k,n} - L_{k,m+t} - L_{k,n-t})`.
+**Shift identity for generalized Leonardo numbers.** Let $k$ be an integer and let $L_{k,n}$
+denote the generalized Leonardo numbers. For all natural numbers $m$, $n$, $t$ with
+$1 \le t \le n$ and $n + 1 \le m + t$,
 
-Stated here for `1 ≤ t ≤ n` with `n + 1 ≤ m + t` so that all indices are
-nonnegative; the paper allows `t = 0` with `L_{k,-1}` read by backward
-extension.
+$$L_{k,m} L_{k,n} - L_{k,m+t} L_{k,n-t}
+= (-1)^{n-t+1} (L_{k,m+t-n-1} + k)(L_{k,t-1} + k) -
+k\,(L_{k,m} + L_{k,n} - L_{k,m+t} - L_{k,n-t}).$$
+
+The paper also allows $t = 0$, reading $L_{k,-1}$ by extending the sequence to negative indices.
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
 
 ## Sources
 

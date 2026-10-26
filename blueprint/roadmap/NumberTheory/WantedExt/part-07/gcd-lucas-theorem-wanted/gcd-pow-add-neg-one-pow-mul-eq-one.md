@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.gcd_pow_add_neg_one_pow_mul_eq_one
 ---
 
-# Gcd pow add neg one pow mul eq one
+# $u^N + (-1)^{N+1} v$ is coprime to $u$ and to $v$
 
-For coprime positive integers `u, v` and `N ≥ 1`,
-`gcd(u^N + (-1)^{N+1} v, u) = gcd(u^N + (-1)^{N+1} v, v) = 1`.
+**$u^N + (-1)^{N+1} v$ is coprime to $u$ and to $v$.** Let $u, v$ be coprime positive integers
+and let $N \ge 1$. Then $\gcd(u^N + (-1)^{N+1} v, u) = 1$ and $\gcd(u^N + (-1)^{N+1} v, v) = 1$.
 
 ## Depends on
 

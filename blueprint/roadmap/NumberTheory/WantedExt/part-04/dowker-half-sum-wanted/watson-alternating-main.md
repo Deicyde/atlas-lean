@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.watsonAlternatingMain
 ---
 
-# Watson Alternating Main
+# Main part of the asymptotic expansion of Watson's alternating cosecant sum
 
-`watsonAlternatingMain N n` is the displayed main part of Corollary 2. It uses
-the square of the explicitly real-cast rational Bernoulli number and includes
-all terms indexed from `1` through `N-1`.
+**Main part of the asymptotic expansion of Watson's alternating cosecant sum.** For natural numbers
+$N$ and $n$, the main part is the real number
+
+$$
+M_N(n) = \frac{2 n \log 2}{\pi} + 2 \sum_{r=1}^{N-1}
+\frac{(-1)^{r+1} (2^{2r-1} - 1)(2^{2r} - 1) \pi^{2r-1} B_{2r}^2}{r \, (2r)! \, n^{2r-1}},
+$$
+
+where $B_{2r}$ is the $2r$-th Bernoulli number. For $N \le 1$ the sum is empty.
 
 ## Depends on
 

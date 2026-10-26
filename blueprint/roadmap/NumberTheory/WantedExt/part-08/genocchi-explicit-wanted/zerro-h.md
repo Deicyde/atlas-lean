@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH
 ---
 
-# Zerro H
+# The Zerroukhat–Khaldi sum $H_{n,m}$
 
-The paper's auxiliary sum
-`H_{n,m} = (-1)ⁿ n ∑_{k=1}^{n-m} U(m+1,k) S(n-m,k)`.
+**The Zerroukhat–Khaldi sum $H_{n,m}$.** For natural numbers $n$ and $m$, define the rational
+number
+
+$$H_{n,m} = (-1)^n \, n \sum_{k=1}^{n-m} U(m+1, k) \, S(n-m, k),$$
+
+where $U(m+1, k)$ is the Zerroukhat–Khaldi sum $U$, $S(n-m, k)$ is the Stirling number of the
+second kind, and $n - m$ is truncated at $0$, so that $H_{n,m} = 0$ when $m \ge n$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zerro U](zerro-u.md)
+- [The Zerroukhat–Khaldi sum $U(m, k)$](zerro-u.md)
 
 ## Sources
 

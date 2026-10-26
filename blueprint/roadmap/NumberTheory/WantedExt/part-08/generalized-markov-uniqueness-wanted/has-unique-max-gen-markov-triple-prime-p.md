@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hasUniqueMaxGenMarkovTriple_prime_pow
 ---
 
-# Has Unique Max Gen Markov Triple prime pow
+# Uniqueness for prime powers $p^m$ and $2p^m$ under conditions on $k$
 
-Theorem 1.7: a `k`-generalized Markov number `b = p^m` or `2p^m` (`p` prime, `m ≥ 2`) is
-the maximum of a unique triple when `k = 2`, or `k ≥ 4` is even and `p² ∤ k/2 + 1`,
-`p² ∤ k/2 - 1`, or `k` is odd and `p² ∤ k + 2`, `p² ∤ k - 2` (in `ℤ`).
+**Uniqueness for prime powers $p^m$ and $2p^m$ under conditions on $k$.** Let $k$ and $m$ be
+natural numbers with $m \ge 2$ and let $p$ be a prime. Suppose that $k = 2$; or that $k \ge 4$ is
+even and $p^2$ divides neither $k/2 + 1$ nor $k/2 - 1$; or that $k$ is odd and $p^2$ divides
+neither $k + 2$ nor $k - 2$ in $\mathbb{Z}$. If $b$ is a $k$-generalized Markov number with
+$b = p^m$ or $b = 2p^m$, then $b$ is the maximum of a unique $k$-generalized Markov triple up to
+order.
 
 ## Depends on
 
-- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Unique maximal generalized Markov triple](has-unique-max-gen-markov-triple.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

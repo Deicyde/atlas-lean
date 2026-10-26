@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.letendreXi_of_le_sq
 ---
 
-# Letendre Xi of le sq
+# Letendre's exponent equals $1$ when $\eta \le \theta^2$
 
-`ξ(θ, η) = 1` when `η ≤ θ²`.
+**Letendre's exponent equals $1$ when $\eta \le \theta^2$.** For all real numbers $\theta$ and
+$\eta$ with $\eta \le \theta^2$, Letendre's saving exponent satisfies $\xi(\theta, \eta) = 1$.
 
 ## Depends on
 
-- [Letendre Xi](letendre-xi.md)
+- [Letendre's saving exponent](letendre-xi.md)
 
 ## Sources
 

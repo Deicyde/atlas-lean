@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sum_higherANumberDelta_eq
 ---
 
-# Sum higher ANumber Delta eq
+# Sum of $\delta$ up to $\lfloor p^n/x \rfloor$
 
-For rational `x ≥ 1`,
-`∑_{i=1}^{⌊x^{-1} p^n⌋} δ(i) = ½ (1 - 1/τ_D)(p^n - 1/p) x^{-1} -
-½ (1 - 1/p)(1 - 1/τ_D) ∑_{e=0}^n {x^{-1} p^e} + ∑_{e=0}^n F_{x^{-1}}(e)`. The paper's
-positivity of `n` is dropped (the identity holds at `n = 0`).
+**Sum of $\delta$ up to $\lfloor p^n/x \rfloor$.** Let $p$ be a prime and $d$ a divisor of
+$p - 1$; let $\delta$ be the rounding indicator, $\tau_D$ the denominator of $\tau = (p + 1)/d$
+in lowest terms, and $F_y(e)$ the $\delta_0$ correction sum of Lemma 9. For every rational
+$x \ge 1$ and every natural number $n$,
+
+$$\sum_{i=1}^{\lfloor p^n/x \rfloor} \delta(i) =
+\frac{1}{2} \left(1 - \frac{1}{\tau_D}\right) \left(p^n - \frac{1}{p}\right) x^{-1} -
+\frac{1}{2} \left(1 - \frac{1}{p}\right) \left(1 - \frac{1}{\tau_D}\right)
+\sum_{e=0}^{n} \left(x^{-1} p^e - \lfloor x^{-1} p^e \rfloor\right) +
+\sum_{e=0}^{n} F_{x^{-1}}(e).$$
+
+The paper's positivity of $n$ is dropped (the identity holds at $n = 0$).
 
 ## Depends on
 
 - [Delta Zero Sum Correction](delta-zero-sum-correction.md)
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Tau Den](tau-den.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

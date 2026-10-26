@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicBox
 ---
 
-# Cyclotomic Box
+# The cyclotomic box
 
-The coefficient vectors of the box `B(p, N)`: all `a ∈ ℤ^{p-1}` with
-`-N ≤ aᵢ ≤ N`.
+**The cyclotomic box.** For natural numbers $p$ and $N$, the box $B(p, N)$ is the finite set
+of integer vectors $a = (a_1, \dots, a_{p-1}) \in \mathbb{Z}^{p-1}$ with $-N \le a_i \le N$ for
+every $i$.
+
+The vector $a$ stands for the point $a_1 \omega + \dots + a_{p-1} \omega^{p-1}$ of the $p$-th
+cyclotomic field $\mathbb{Q}(\omega)$, where $\omega$ is a primitive $p$-th root of unity.
 
 ## Depends on
 

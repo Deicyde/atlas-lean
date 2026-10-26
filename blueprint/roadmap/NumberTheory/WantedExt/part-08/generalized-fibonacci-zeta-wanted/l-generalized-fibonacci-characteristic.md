@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lGeneralizedFibonacciCharacteristic
 ---
 
-# L Generalized Fibonacci Characteristic
+# Characteristic polynomial of the ℓ-generalized Fibonacci recurrence
 
-The characteristic polynomial `φ_ℓ(X) = X^ℓ - ∑_{i < ℓ} X^i`, which is the
-paper's `X^ℓ - X^(ℓ-1) - ⋯ - X - 1`, over `ℂ`.
+**Characteristic polynomial of the ℓ-generalized Fibonacci recurrence.** For a natural number
+$\ell$, the characteristic polynomial of the $\ell$-generalized Fibonacci recurrence is the
+polynomial $\varphi_\ell(X) = X^\ell - \sum_{i=0}^{\ell-1} X^i$ in $\mathbb{C}[X]$; for
+$\ell \ge 2$ this is $X^\ell - X^{\ell-1} - \cdots - X - 1$.
 
 ## Depends on
 

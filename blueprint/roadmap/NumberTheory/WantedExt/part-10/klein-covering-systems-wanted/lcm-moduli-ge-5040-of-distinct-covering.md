@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lcm_moduli_ge_5040_of_distinct_covering_min_six
 ---
 
-# Theorem 4
+# Least common multiple of a covering system with minimum modulus six
 
-**Theorem 4** (`m = 6`). If the smallest modulus of a distinct covering system is `6`, then
-the least common multiple of its moduli is at least `5040`.
+**Least common multiple of a covering system with minimum modulus six.** Let $C$ be a
+distinct covering system: a finite set of congruences $x \equiv r \pmod m$ with
+$r \in \mathbb{Z}$ and $m \in \mathbb{N}$, no two with the same modulus, such that every integer
+satisfies at least one of them. If every modulus of $C$ is at least $6$ and some modulus equals
+$6$, then the least common multiple of the moduli of $C$ is at least $5040$.
 
 ## Depends on
 

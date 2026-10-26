@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.cyclicCount_isEquivalent_compositeCyclicCount
 ---
 
-# Cyclic Count is Equivalent composite Cyclic Count
+# Asymptotic count of cyclic and composite cyclic numbers
 
-Campbell and Cohen, Lemma 1: `A(x) ~ cc(x) ~ x e^{-γ} / log log log x` as `x → ∞`, where
-`A(x)` counts cyclic numbers `≤ x` and `cc(x)` counts composite cyclic numbers `≤ x`.
+**Asymptotic count of cyclic and composite cyclic numbers.** For real $x$, let $A(x)$ be the
+number of cyclic numbers $m$ with $1 \le m \le x$, and let $cc(x)$ be the number of composite
+cyclic numbers $m \le x$, that is, cyclic numbers $m > 1$ that are not prime. Then, as
+$x \to \infty$, $A(x) \sim cc(x)$ and $cc(x) \sim x e^{-\gamma} / \log \log \log x$, where
+$\gamma$ is the Euler–Mascheroni constant.
 
 ## Depends on
 

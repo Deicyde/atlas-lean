@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsDigitallyRobustComposite
 ---
 
-# Is Digitally Robust Composite
+# Digitally robust composite numbers
 
-`IsDigitallyRobustComposite N` says that `N` is composite (`1 < N ∧ ¬ N.Prime`) and coprime
-to `10`; every genuine digit replacement by a digit below `10` is composite; deleting every
-written digit is composite; and inserting every digit below `10` at every position is composite.
-Digits are units-indexed and the replacement quantifier includes infinitely many leading zeros.
-The insertion case at the written length duplicates replacement of the first leading zero, as
-specified; “composite” is expanded rather than given a separate definition, with no mathematical
-deviation.
+**Digitally robust composite numbers.** A natural number $N$ is a digitally robust composite if
+it is composite (greater than $1$ and not prime), coprime to $10$, and each of the following
+numbers is greater than $1$ and not prime: the result of replacing the base-ten digit of $N$ in
+any position $i$ by any digit $d < 10$ other than $\lfloor N / 10^{i} \rfloor \bmod 10$; the
+result of deleting the single digit in any position $i$ smaller than the number of base-ten
+digits of $N$; and the result of inserting any digit $d < 10$ in any position $i$. Positions are
+counted from $0$ at the units digit, and positions beyond the written digits of $N$ refer to its
+leading zeros.
 
 ## Depends on
 
@@ -21,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Delete Digit](delete-digit.md)
-- [Insert Digit](insert-digit.md)
-- [Replace Digit](replace-digit.md)
+- [Deleting a digit](delete-digit.md)
+- [Inserting a digit](insert-digit.md)
+- [Replacing a base-ten digit](replace-digit.md)
 
 ## Sources
 

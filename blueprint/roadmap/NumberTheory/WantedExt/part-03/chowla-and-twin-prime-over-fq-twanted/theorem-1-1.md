@@ -5,22 +5,25 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_1
 ---
 
-# Theorem 1 1
+# Twin prime asymptotic over $\mathbb{F}_q(T)$ for large $q$
 
-Statement of Theorem 1.1:
+**Twin prime asymptotic over $\mathbb{F}_q[T]$ for large $q$.** Let $p$ be an odd prime and let
+$q$ be a power of $p$ with $q > 685090\,p^2$; write $\mathbb{F}_q$ for the finite field with $q$
+elements. Then there is a real number $\varepsilon > 0$ such that for every nonzero
+$h \in \mathbb{F}_q[T]$, as $X \to \infty$ through the powers of $q$,
 
-For an odd prime number `p`, and a power `q` of `p` satisfying
-`q > 685090 * p ^ 2`, the following holds. For any nonzero `h ∈ 𝔽_q[T]`, we have
-`#{f ∈ 𝔽_q[T] : |f| = X, f and f + h are prime} ∼ 𝔖_q(h) X / log_q^2 (X)`
-as `X → ∞` through the powers of `q`.
+$$\#\{f \in \mathbb{F}_q[T] : |f| = X,\ f \text{ and } f + h \text{ are prime}\} =
+\frac{\mathfrak{S}_q(h)\, X}{(\log_q X)^2} + O\bigl(X^{1 - \varepsilon}\bigr),$$
 
-Moreover, we have a power saving (depending on q) in the asymptotic above.
+where $|f| = |\mathbb{F}_q[T]/(f)|$ is the norm of $f$, the primes of $\mathbb{F}_q[T]$ are its
+monic irreducible polynomials, $\mathfrak{S}_q(h)$ is the singular series for twin primes, and
+the implied constant may depend on $h$ (but $\varepsilon$ does not).
 
 ## Depends on
 
-- [Primes](primes.md)
-- [Ring Norm](ring-norm.md)
-- [𝔖 q](q.md)
+- [Primes of $F(T)$](primes.md)
+- [The norm on $F(T)$](ring-norm.md)
+- [Singular series for twin primes in $F(T)$](q.md)
 
 ## Sources
 

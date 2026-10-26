@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gcd_add_one_eq_floor_div_mod_five
 ---
 
-# Gcd add one eq floor div mod five
+# Arithmetic term for the gcd in base $5$
 
-For all `a, b ≥ 1`,
-`gcd(a, b) = (⌊5^{ab(ab+a+b)} / ((5^{a²b} - 1)(5^{ab²} - 1))⌋ mod 5^{ab}) - 1`, stated without
-truncated subtraction as `gcd(a, b) + 1 = ⋯` in `ℕ`.
+**Arithmetic term for the gcd in base $5$.** For all natural numbers $a, b \ge 1$,
+
+$$
+\gcd(a, b) + 1 = \left\lfloor \frac{5^{ab(ab+a+b)}}{(5^{a^2 b} - 1)(5^{a b^2} - 1)} \right\rfloor
+\bmod 5^{ab},
+$$
+
+that is, $\gcd(a, b)$ is one less than the remainder of this floor modulo $5^{ab}$.
 
 ## Depends on
 

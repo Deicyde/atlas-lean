@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.wideGenCohnTree_isGenCohnTriple
 ---
 
-# Wide Gen Cohn Tree is Gen Cohn Triple
+# Vertices of the wide generalized Cohn tree are generalized Cohn triples
 
-Corollary 3.9: the map `(P, Q, R) ↦ (p₁₂, q₁₂, r₁₂)` is the canonical graph isomorphism
-`WGCT(k, ℓ) → WMT(k)`: the vertex of `WGCT(k, ℓ)` at each path is a `k`-generalized Cohn triple
-associated with the vertex of `WMT(k)` at the same path. In particular every
-`k`-generalized Markov triple `(a, b, c)` with `b ≥ max {a, c}` has an associated
-`k`-generalized Cohn triple.
+**Vertices of the wide generalized Cohn tree are generalized Cohn triples.** Let $k$ be a
+natural number. For every integer $\ell$ and every path $w$, the vertex of the wide
+$k$-generalized Cohn tree $\mathrm{WGCT}(k, \ell)$ at $w$ is a $k$-generalized Cohn triple
+associated with the vertex of the wide $k$-generalized Markov tree $\mathrm{WMT}(k)$ at $w$.
+Moreover, every $k$-generalized Markov triple $(a, b, c)$ with $a \le b$ and $c \le b$ has an
+associated $k$-generalized Cohn triple.
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
-- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
-- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
+- [The wide generalized Cohn tree](wide-gen-cohn-tree.md)
+- [The wide generalized Markov tree](wide-gen-markov-tree.md)
 
 ## Sources
 

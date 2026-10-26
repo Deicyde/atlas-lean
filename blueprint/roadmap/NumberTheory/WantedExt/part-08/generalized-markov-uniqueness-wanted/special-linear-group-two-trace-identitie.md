@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.specialLinearGroup_two_trace_identities
 ---
 
-# Special Linear Group two trace identities
+# Trace identities in $\mathrm{SL}(2, \mathbb{Z})$
 
-Lemma 3.6: for `A, B ∈ SL(2, ℤ)`, `tr A = tr A⁻¹`, `tr(AB) = tr A tr B - tr(AB⁻¹)` and
-`A² = (tr A) A - I`.
+**Trace identities in $\mathrm{SL}(2, \mathbb{Z})$.** For all $A, B \in \mathrm{SL}(2,
+\mathbb{Z})$ we have $\operatorname{tr} A = \operatorname{tr} A^{-1}$,
+$\operatorname{tr}(AB) = \operatorname{tr} A \cdot \operatorname{tr} B -
+\operatorname{tr}(AB^{-1})$, and $A^2 = (\operatorname{tr} A) A - I$, where $I$ is the
+identity matrix.
 
 ## Depends on
 

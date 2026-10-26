@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_pyramidal_two_case_le_eight
 ---
 
-# Nth Non Value pyramidal two case le eight
+# Two-case formula for the non-pyramidal numbers when $k \le 8$
 
-Equation (7) of Corollary 4 (the two-case formula of `nthNonValue_pyramidal_two_case`)
-holds for all `3 ≤ k ≤ 8`, as the paper reports after checking small `n`.
+**Two-case formula for the non-pyramidal numbers when $k \le 8$.** Let $3 \le k \le 8$, and
+for $j \ge 1$ let $P(k, j) = j (j + 1) ((k - 2) j - (k - 5))/6$ be the $k$-gonal pyramidal
+numbers. For every integer $n \ge 1$, put $s = \lfloor \sqrt[3]{6n/(k - 2)} \rfloor$. Then the
+$n$-th positive integer that is not of the form $P(k, j)$ with $j \ge 1$ equals $n + s - 1$ if
+$6n \le s (s - 1) (s (k - 2) + k + 1)$, and $n + s$ otherwise.
+
+This extends Equation (7) of Corollary 4 from $k \le 5$ to $k \le 8$; the paper reports it after
+checking small values of $n$.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

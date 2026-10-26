@@ -5,22 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberLatticeCount_eq_sums
 ---
 
-# Higher ANumber Lattice Count eq sums
+# Higher $a$-numbers as sums of floors and of $\delta$
 
-The higher `a`-number, in the lattice-point form of Theorem 1 (`higherANumberLatticeCount`),
-equals `∑_{i=1}^{t_n} (γ - τ) i + ∑_{i=t_n+1}^{⌊τ^{-1} p^n⌋} (p^n - ⌊τ i⌋) -
-∑_{i=t_n+1}^{⌊τ^{-1} p^n⌋} δ(i)` and also
-`(∑_{i=1}^{⌊τ^{-1} p^n⌋} (p^n - ⌊τ i⌋) - ∑_{i=1}^{⌊γ^{-1} p^n⌋} (p^n - ⌊γ i⌋)) -
-(∑_{i=1}^{⌊τ^{-1} p^n⌋} δ(i) - ∑_{i=1}^{⌊γ^{-1} p^n⌋} δ(i))`, where
-`t_n = ⌊γ^{-1} p^n⌋`. The paper states this for `a^r(X_n)`; here `a^r(X_n)` is replaced by the
-Theorem 1 expression, and all `n ≥ 0`, `r ≥ 0` and primes `p` are admitted.
+**Higher $a$-numbers as sums of floors and of $\delta$.** Let $p$ be a prime, let $d$ be a
+natural number dividing $p - 1$, let $r$ and $n$ be natural numbers, let $\tau = (p + 1)/d$ and
+$\gamma = ((p - 1) r + (p + 1))/d$, let $\delta$ be the rounding indicator for $p$ and $d$, and let
+$A_r(n)$ be the lattice-point count for the $r$-th higher $a$-number at level $n$. Put
+$t_n = \lfloor \gamma^{-1} p^n \rfloor$ and $s_n = \lfloor \tau^{-1} p^n \rfloor$. Then
+
+$$A_r(n) = \sum_{i=1}^{t_n} (\gamma - \tau) i +
+\sum_{i=t_n+1}^{s_n} (p^n - \lfloor \tau i \rfloor) - \sum_{i=t_n+1}^{s_n} \delta(i)$$
+
+and
+
+$$A_r(n) = \left(\sum_{i=1}^{s_n} (p^n - \lfloor \tau i \rfloor) -
+\sum_{i=1}^{t_n} (p^n - \lfloor \gamma i \rfloor)\right) -
+\left(\sum_{i=1}^{s_n} \delta(i) - \sum_{i=1}^{t_n} \delta(i)\right).$$
 
 ## Depends on
 
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
-- [Tower Gamma](tower-gamma.md)
-- [Tower Tau](tower-tau.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The lattice-point count of Theorem 1](higher-anumber-lattice-count.md)
+- [The constant $\gamma$](tower-gamma.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

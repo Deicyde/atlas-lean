@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberDeltaZero_average
 ---
 
-# Higher ANumber Delta Zero average
+# Average of the indicator $\delta_0$
 
-The average of `δ₀` over its period `τ_D p` is `½ (1 - 1/p)(1 - 1/τ_D)`.
+**Average of the indicator $\delta_0$.** Let $p$ be a prime, let $d$ be a natural number
+dividing $p - 1$, let $\tau_D$ be the denominator of $(p + 1)/d$ in lowest terms, and let
+$\delta_0$ be the variant of the rounding indicator for $p$ and $d$. Then
+
+$$\frac{1}{\tau_D p} \sum_{i=1}^{\tau_D p} \delta_0(i) =
+\frac{1}{2} \left(1 - \frac{1}{p}\right) \left(1 - \frac{1}{\tau_D}\right).$$
 
 ## Depends on
 
-- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
-- [Tau Den](tau-den.md)
+- [The variant $\delta_0$ of the rounding indicator](higher-anumber-delta-zero.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

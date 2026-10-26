@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.paperfoldingSumTerm_one
 ---
 
-# Paperfolding Sum Term one
+# Second term of the paperfolding sums
 
-With `x₀ = 2`, `s₁ = 1/2`.
+**Second term of the paperfolding sums.** For every sequence $x$ of natural numbers with
+$x_0 = 2$, the term $s_1$ of the paperfolding sum terms defined by $x$ equals $1/2$.
 
 ## Depends on
 
-- [Paperfolding Sum Term](paperfolding-sum-term.md)
+- [Terms of the paperfolding sums](paperfolding-sum-term.md)
 
 ## Sources
 

@@ -5,19 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.deltaZeroSumCorrection_average_towerTau
 ---
 
-# Delta Zero Sum Correction average tower Tau
+# The linear coefficient of Proposition 5 vanishes at $\tau$
 
-The coefficient of `n` in Proposition 5 vanishes for `x = τ`:
-`F̄_{τ^{-1}} - τ̄^{-1}/(2p) (1 - 1/τ_D) = 0`, with `F̄_{τ^{-1}}` the average of
-`F_{τ^{-1}}(e)` over `1 ≤ e ≤ L_{τ^{-1}}` (the delay `D_{τ^{-1}}` is `0`).
+**The linear coefficient of Proposition 5 vanishes at $\tau$.** Let $p$ be a prime and $d$ a
+divisor of $p - 1$, let $\tau = (p + 1)/d$, and let $\tau_D$ be the denominator of $\tau$ in
+lowest terms. Let $L$ be the order of $p$ modulo the prime-to-$p$ part of the denominator of
+$\tau^{-1}$ (the period of the base-$p$ expansion of $\tau^{-1}$), and let $\overline{\tau^{-1}}$
+be the average of the repeating base-$p$ digits of $\tau^{-1}$. For $e \ge 0$ let
+$F_{\tau^{-1}}(e) = \sum_{k=1}^{\lfloor \tau^{-1} p^e \rfloor \bmod \tau_D p}
+(\delta_0(k) - \frac12 (1 - 1/p)(1 - 1/\tau_D))$, where $\delta_0(k)$ is $0$ if $p \mid k$ and
+$\delta(k)$ otherwise, $\delta$ being the rounding indicator. Then
+
+$$\frac1L \sum_{e=1}^{L} F_{\tau^{-1}}(e) - \frac{\overline{\tau^{-1}}}{2p} (1 - 1/\tau_D) = 0.$$
+
+This says that the linear coefficient in Proposition 5 vanishes at $\tau$; the delay of
+$\tau^{-1}$ is $0$, so the average of $F_{\tau^{-1}}$ is taken over $1 \le e \le L$.
 
 ## Depends on
 
-- [Base PDigit Average](base-pdigit-average.md)
-- [Base PPeriod](base-pperiod.md)
+- [Average repeating digit](base-pdigit-average.md)
+- [Period of the base-$p$ expansion](base-pperiod.md)
 - [Delta Zero Sum Correction](delta-zero-sum-correction.md)
-- [Tau Den](tau-den.md)
-- [Tower Tau](tower-tau.md)
+- [The denominator $\tau_D$](tau-den.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

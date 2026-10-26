@@ -4,6 +4,6 @@ navigation: module
 
 # KFibonacci Repdigit Product
 
-- [K Fibonacci mul eq repdigit iff](k-fibonacci-mul-eq-repdigit-iff.md)
-- [K Fibonacci repdigit index lt](k-fibonacci-repdigit-index-lt.md)
-- [One div partial Quotient bound mul lt abs mul sub](one-div-partial-quotient-bound-mul-lt-ab.md)
+- [Products of two $k$-Fibonacci numbers that are repdigits](k-fibonacci-mul-eq-repdigit-iff.md)
+- [Index bound for repdigit products of $k$-Fibonacci numbers](k-fibonacci-repdigit-index-lt.md)
+- [Partial-quotient lower bound for rational approximation](one-div-partial-quotient-bound-mul-lt-ab.md)

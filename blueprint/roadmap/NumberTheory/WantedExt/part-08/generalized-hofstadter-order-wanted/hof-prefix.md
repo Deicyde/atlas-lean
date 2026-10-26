@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hofPrefix
 ---
 
-# Hof Prefix
+# The prefix $x_k(0:n)$
 
-The prefix `x_k[0:n)`, cut from one prefix `τ_k^j(k)`.
+**The prefix $x_k[0:n)$.** For natural numbers $k$ and $n$, let $\tau_k$ be the
+substitution $k \mapsto k\,1$, $i \mapsto i + 1$ for $i \ne k$, applied letter by letter to
+words, and let $\tau_k^j$ be its $j$-fold iterate. Then $x_k[0:n)$ is the word formed by the
+first $n$ letters of the shortest of the words $\tau_k^j(k)$, $j \ge 0$, that has more than $n$
+letters.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hof Grow](hof-grow.md)
+- [The shortest long iterate $\tau_k^j(k)$](hof-grow.md)
 
 ## Sources
 

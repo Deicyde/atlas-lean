@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.convergentMatrix
 ---
 
-# Convergent Matrix
+# Convergent matrix
 
-The convergent matrix `C(a) = ∏ᵢ [[0, 1], [1, aᵢ]] = [[p', p], [q', q]]` of a string
-`a = (a₁, …, aₙ)`, where `p/q = [0; a₁, …, aₙ]` and `p'/q'` are its last two convergents
-(`p' = C 0 0`, `p = C 0 1`, `q' = C 1 0`, `q = C 1 1`).
+**Convergent matrix.** For a finite string $a = (a_1, \ldots, a_n)$ of natural numbers, the
+convergent matrix $C(a)$ is the $2 \times 2$ integer matrix given by the ordered product
+$C(a) = \begin{pmatrix} 0 & 1 \\ 1 & a_1 \end{pmatrix} \cdots
+\begin{pmatrix} 0 & 1 \\ 1 & a_n \end{pmatrix}$ (the identity matrix when $n = 0$). Its entries
+are written $C(a) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix}$.
+
+When $n \ge 1$ and all $a_i$ are positive, $p/q = [0; a_1, \ldots, a_n]$ and $p'/q'$ is the
+preceding convergent.
 
 ## Depends on
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF_le_succ
 ---
 
-# Main theorem
+# Pointwise order of the generalized Hofstadter functions
 
-**Main theorem.** For all `k ≥ 1` and `n`, `F_k(n) ≤ F_{k+1}(n)`.
+**Pointwise order of the generalized Hofstadter functions.** For every $k \ge 1$ and every
+natural number $n$, the generalized Hofstadter functions satisfy $F_k(n) \le F_{k+1}(n)$.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

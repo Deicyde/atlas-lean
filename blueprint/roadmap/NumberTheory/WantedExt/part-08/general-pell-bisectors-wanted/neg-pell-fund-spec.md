@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.negPellFund_spec
 ---
 
-# Neg Pell Fund spec
+# The fundamental negative Pell solution solves the equation
 
-If `x² - d y² = -1` has a positive integral solution, `(negPellFundX d, negPellFundY d)` is
-one, with positive `y`.
+**The fundamental negative Pell solution solves the equation.** Let $d$ be a natural number
+such that $x^2 - d y^2 = -1$ has a solution in a natural number $x$ and a positive integer $y$.
+Then the fundamental solution $(X, Y)$, the one with the least positive $y$, satisfies $Y > 0$
+and $X^2 + 1 = d Y^2$.
 
 ## Depends on
 
-- [Neg Pell Fund X](neg-pell-fund-x.md)
-- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [First coordinate of the fundamental negative Pell solution](neg-pell-fund-x.md)
+- [Second coordinate of the fundamental negative Pell solution](neg-pell-fund-y.md)
 
 ## Sources
 

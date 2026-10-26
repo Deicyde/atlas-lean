@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_mod_prime_preperiod_period_of_index
 ---
 
-# Fermat Number mod prime preperiod period of index
+# Preperiod and period of Fermat residues from the index of $2$
 
-Preperiod and period of Fermat residues from the index of `2`: for an odd prime `p` with
-`p - 1 = 2^r u`, `u` odd, and `s ≤ r`, `t ∣ u` with `g ^ (2^s t) = 2` for a primitive root
-`g`, the sequence `n ↦ F_n mod p` has exact preperiod `r - s` and primitive period
-`ord_{u/t}(2)`.
+**Preperiod and period of Fermat residues from the index of $2$.** Write $F_n = 2^{2^n} + 1$.
+Let $p$ be an odd prime, write $p - 1 = 2^r u$ with $u$ odd, and let $s \le r$ and $t \mid u$ be
+natural numbers such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$ (an element of
+order $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$). Let $k$ be the multiplicative order of $2$ modulo
+$u/t$, with $k = 1$ when $t = u$. Then the sequence $n \mapsto F_{r-s+n} \bmod p$ is periodic
+with period $k$, every positive period of it is a multiple of $k$, and for no $h < r - s$ is the
+sequence $n \mapsto F_{h+n} \bmod p$ periodic with a positive period. Thus $n \mapsto F_n \bmod p$
+has preperiod $r - s$ and primitive period $k$.
 
 ## Depends on
 

@@ -14,7 +14,7 @@ Proposition 7).
 
 ## Depends on
 
-- [Incomplete Lucas Leonardo P](incomplete-lucas-leonardo-p.md)
+- [Incomplete Lucas-Leonardo p-numbers](incomplete-lucas-leonardo-p.md)
 
 ## Sources
 

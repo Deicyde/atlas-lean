@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic_prime_pow_mul
 ---
 
-# Homogenized Cyclotomic prime pow mul
+# Homogenized cyclotomic values at $p^\beta k$
 
-For a prime `p` and `n = p^β k` with `β, k ≥ 1`, `p ∤ k`:
-`Φ_n(a, b) = Φ_{pk}(a^{p^{β-1}}, b^{p^{β-1}})` and
-`Φ_n(a, b) · Φ_k(a^{p^{β-1}}, b^{p^{β-1}}) = Φ_k(a^{p^β}, b^{p^β})` (the paper's quotient,
-cleared of its denominator), for all integers `a`, `b`.
+**Homogenized cyclotomic values at $p^\beta k$.** Let $p$ be a prime, let $\beta \ge 1$ and
+$k \ge 1$ be integers with $p \nmid k$, and let $a, b$ be integers; write $\Phi_m(a, b)$ for the
+homogenized cyclotomic value. Then
+$\Phi_{p^\beta k}(a, b) = \Phi_{pk}(a^{p^{\beta - 1}}, b^{p^{\beta - 1}})$ and
+$\Phi_{p^\beta k}(a, b) \cdot \Phi_k(a^{p^{\beta - 1}}, b^{p^{\beta - 1}}) =
+\Phi_k(a^{p^\beta}, b^{p^\beta})$.
+
+The paper states the second identity as a quotient; here it is cleared of its denominator.
 
 ## Depends on
 

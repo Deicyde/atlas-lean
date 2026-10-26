@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.matula_isLeast_level
 ---
 
-# Matula is Least level
+# Smallest number at a given Matula height
 
-Proposition 6 (Gutman-Ivić, minimal case): for the Matula height function
-`H(pᵢ) = H(i) + 1` and `n > 1`, the smallest number at height `n` is `3 · 5^{(n-2)/3}`,
-`5^{n/3}`, or `9 · 5^{(n-4)/3}` according as `n ≡ 2, 0, 1 (mod 3)`, and it is the unique
-element of `ℋₙ` with that value (uniqueness of a least element is automatic).
+**Smallest number at a given Matula height.** Write $p_i$ for the $i$-th prime, indexed from
+one ($p_1 = 2$), and let $H$ be a function from the natural numbers to themselves that is
+completely additive on the positive integers and satisfies $H(p_i) = H(i) + 1$ for every $i \ge 1$
+(Matula's height function). Then for every $n > 1$ the smallest positive integer $m$ with
+$H(m) = n$ is $3 \cdot 5^{(n-2)/3}$ if $n \equiv 2 \pmod 3$, $5^{n/3}$ if $n \equiv 0 \pmod 3$, and
+$9 \cdot 5^{(n-4)/3}$ if $n \equiv 1 \pmod 3$.
 
 ## Depends on
 
-- [Is Completely Additive Nat](is-completely-additive-nat.md)
-- [Nth Prime One](nth-prime-one.md)
+- [Completely additive functions on the positive integers](is-completely-additive-nat.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

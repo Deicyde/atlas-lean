@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.watson_alternating_sharp_bounds
 ---
 
-# Watson alternating sharp bounds
+# Two-sided bounds for Watson's alternating cosecant sum
 
-Theorem 6 bounds the alternating cosecant sum for every even `n ≥ 2` between
-the first three and the first two displayed asymptotic terms, respectively.
-The odd clause is stated once in `watson_alternating_odd_zero`.
+**Two-sided bounds for Watson's alternating cosecant sum.** For every even natural number
+$n \ge 2$, the alternating cosecant sum $C_n = \sum_{l=1}^{n-1} (-1)^{l+1} / \sin(\pi l / n)$
+satisfies the strict inequalities
+
+$$
+\frac{2 n \log 2}{\pi} + \frac{\pi}{12 n} - \frac{7 \pi^3}{1440 n^3} < C_n <
+\frac{2 n \log 2}{\pi} + \frac{\pi}{12 n}.
+$$
+
+The lower bound consists of the first three terms of the asymptotic expansion of $C_n$ and the
+upper bound of the first two.
 
 ## Depends on
 
-- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
+- [Watson's alternating cosecant sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

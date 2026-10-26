@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exponent_dvd_card_sub_one_iff
 ---
 
-# Exponent dvd card sub one iff
+# Indices dividing $p - 1$
 
-If `g` is a primitive root modulo the prime `p` and `g ^ i = a`, then `i ∣ p - 1` if and
-only if `i = (p - 1) / ord_p(a)`; stated for every exponent `i` with `g ^ i = a` (for `i`
-outside the paper's range `{1, …, p - 1}` both sides are false).
+**Indices dividing $p - 1$.** Let $p$ be a prime, let $g$ be a primitive root modulo $p$ (an
+element of order $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$), let $a \in \mathbb{Z}/p\mathbb{Z}$ and let
+$i$ be a natural number with $g^i = a$. Then $i$ divides $p - 1$ if and only if
+$i = (p - 1)/\operatorname{ord}_p(a)$, where $\operatorname{ord}_p(a)$ is the multiplicative order
+of $a$.
+
+For $i$ outside $\{1, \dots, p - 1\}$ both sides are false, so the statement concerns the index
+$\operatorname{ind}_g(a)$.
 
 ## Depends on
 

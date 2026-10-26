@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_heightFunction_with_profile
 ---
 
-# Exists height Function with profile
+# Realizing a prescribed profile
 
-Proposition 2 (realizing a prescribed profile): for nonnegative integers `(πₖ)_{k ≥ 1}`
-with `∑ πₖ = ∞` (infinitely many `πₖ ≠ 0`), some height function has exactly `πₖ` primes of
-height `k` for every `k ≥ 1`.
+**Realizing a prescribed profile.** Let $(\pi_k)_{k \ge 1}$ be nonnegative integers with
+$\pi_k \ne 0$ for infinitely many $k$ (equivalently, $\sum_k \pi_k = \infty$). Then there is a
+height function $H$ such that for every $k \ge 1$ exactly $\pi_k$ primes $p$ satisfy $H(p) = k$.
 
 ## Depends on
 
-- [Is Height Function](is-height-function.md)
+- [Height functions](is-height-function.md)
 
 ## Sources
 

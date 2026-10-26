@@ -12,8 +12,8 @@ For `k, n ≥ 1` and `0 ≤ j ≤ k`: `L_k(n) ≥ L_{k+1}(n)`, i.e.
 
 ## Depends on
 
-- [Hof Count](hof-count.md)
-- [Hof L](hof-l.md)
+- [Letter counts in the Hofstadter word](hof-count.md)
+- [The image length $L_k$](hof-l.md)
 
 ## Sources
 

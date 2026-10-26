@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.isDeficientFPerfect_two_mul_prime_pow
 ---
 
-# Theorem 12
+# The only deficient $F$-perfect number of the form $2p^a$ is $6$
 
-**Theorem 12**: the only deficient `F`-perfect number
-of the form `2p^a` is `6` (and `6` is one, with `d = 2`).
+**The only deficient $F$-perfect number of the form $2p^a$ is $6$.** The number $6$ is deficient
+$F$-perfect, and for every prime $p$ and every natural number $a$, if $2p^a$ is deficient
+$F$-perfect then $2p^a = 6$.
+
+The divisor for $6$ is $d = 2$.
 
 ## Depends on
 
-- [Is Deficient FPerfect](is-deficient-fperfect.md)
+- [Deficient $F$-perfect numbers](is-deficient-fperfect.md)
 
 ## Sources
 

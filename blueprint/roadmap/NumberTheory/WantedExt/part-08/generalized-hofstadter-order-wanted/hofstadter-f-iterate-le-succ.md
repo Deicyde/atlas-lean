@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF_iterate_le_succ
 ---
 
-# Hofstadter F iterate le succ
+# Iterates of consecutive Hofstadter functions are ordered
 
-For `j ≥ 0` and `k ≥ 1`, `F_k^j ≤ F_{k+1}^j`.
+**Iterates of consecutive Hofstadter functions are ordered.** For every $k \ge 1$, $j \ge 0$
+and $n \ge 0$, $F_k^j(n) \le F_{k+1}^j(n)$, where $F_k$ is the generalized Hofstadter function and
+$F_k^j$ is its $j$-fold iterate.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

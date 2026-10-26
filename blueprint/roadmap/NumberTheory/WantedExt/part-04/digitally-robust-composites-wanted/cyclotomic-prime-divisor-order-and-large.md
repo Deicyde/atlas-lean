@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicPrimeDivisor_order_and_largestPrime
 ---
 
-# Cyclotomic Prime Divisor order and largest Prime
+# Prime divisors of cyclotomic values at 10
 
-For positive `b` and prime `p` dividing the integer value `Φ_b(10)`, both implications hold:
-if `b < p`, then the multiplicative order of `10 : ZMod p` is `b`; and if `p ≤ b` and
-`2 < b`, then `p ∣ b`, every prime divisor `q` of `b` satisfies `q ≤ p`, and `p²` does not
-divide `Φ_b(10)`. The “largest prime dividing `b`” clause is expanded into divisibility and
-the universal upper-bound condition exactly as requested; there is no other deviation.
+**Prime divisors of cyclotomic values at 10.** Let $b$ be a positive integer, let $\Phi_b$ be
+the $b$-th cyclotomic polynomial with integer coefficients, and let $p$ be a prime that divides
+the integer $\Phi_b(10)$. If $b < p$, then the multiplicative order of $10$ modulo $p$ is $b$.
+If $p \le b$ and $b > 2$, then $p$ divides $b$, every prime divisor $q$ of $b$ satisfies
+$q \le p$ (so $p$ is the largest prime divisor of $b$), and $p^2$ does not divide $\Phi_b(10)$.
 
 ## Depends on
 

@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.strictPrimitiveExponent_le_classNumber
 ---
 
-# Strict Primitive Exponent le class Number
+# The strictly primitive exponent is at most the class number
 
-For `p ∈ S(d)`, `l_p` is at most the class number of `ℚ(√d)`.
+**The strictly primitive exponent is at most the class number.** Let $d > 1$ be a squarefree
+integer with $d \equiv 2$ or $d \equiv 3 \pmod 4$, and let $K$ be a number field of degree $2$
+containing a square root of $d$ (so $K \cong \mathbb{Q}(\sqrt{d})$). Let $S(d)$ be the set of
+primes $p$ for which $|x^2 - d y^2| = p^l$ has a strictly primitive integral solution ($x$ and
+$d y$ coprime) for some integer $l > 0$, and for $p \in S(d)$ let $l_p$ be the least such $l$.
+Then $l_p \le h_K$ for every $p \in S(d)$, where $h_K$ is the class number of $K$.
 
-Deviation: stated for `d ≡ 2, 3 (mod 4)`; the source excludes only `d ≡ 1 (mod 4)` with `p = 2`.
-For `d ≡ 5 (mod 8)` it is false as printed: `ℚ(√37)` has class number `1`, but `l_3 = 3` for
-`d = 37` (`8² - 37 · 1² = 27`; `|x² - 37 y²| = 3` and `= 9` have no strictly primitive solutions,
-since the elements of norm `±3` and `±9` generating primitive ideals are `(5 ± √37) / 2` and
-`(31 ± 5√37) / 2` times units, and all units lie in `ℤ[√37]`).
+The source states this for all squarefree $d > 1$ except $d \equiv 1 \pmod 4$ with $p = 2$. For
+$d \equiv 5 \pmod 8$ that is false: $\mathbb{Q}(\sqrt{37})$ has class number $1$, but $l_3 = 3$
+for $d = 37$, since $8^2 - 37 \cdot 1^2 = 27$ while $|x^2 - 37 y^2| = 3$ and $|x^2 - 37 y^2| = 9$
+have no strictly primitive solutions (the elements of norm $\pm 3$ and $\pm 9$ generating
+primitive ideals are $(5 \pm \sqrt{37}) / 2$ and $(31 \pm 5\sqrt{37}) / 2$ times units, and all
+units lie in $\mathbb{Z}[\sqrt{37}]$).
 
 ## Depends on
 
-- [Strict Primitive Exponent](strict-primitive-exponent.md)
-- [Strict Primitive Primes](strict-primitive-primes.md)
+- [Strictly primitive exponent](strict-primitive-exponent.md)
+- [Primes with strictly primitive representations](strict-primitive-primes.md)
 
 ## Sources
 

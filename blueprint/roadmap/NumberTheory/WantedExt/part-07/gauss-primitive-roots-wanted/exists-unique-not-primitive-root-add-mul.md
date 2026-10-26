@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_not_primitiveRoot_add_mul_prime
 ---
 
-# Corollary 1
+# Exactly one lift of a primitive root fails modulo $p^2$
 
-**Corollary 1**: if `g` is a primitive root of the odd prime
-`p`, then there exists a unique `m` modulo `p` such that `g + mp`
-is not a primitive root of `p²`, and `g + kp` is a primitive root
-of `p²` for every other `k` modulo `p`.
+**Exactly one lift of a primitive root fails modulo $p^2$.** Let $p$ be an odd prime
+and let $g$ be a natural number that is a primitive root modulo $p$, where a primitive
+root modulo $n$ is a residue class modulo $n$ of multiplicative order $\varphi(n)$. Then
+there is exactly one $m \in \{0, 1, \dots, p - 1\}$ such that $g + mp$ is not a primitive
+root modulo $p^2$, and $g + kp$ is a primitive root modulo $p^2$ for every other
+$k \in \{0, 1, \dots, p - 1\}$.
 
 ## Depends on
 

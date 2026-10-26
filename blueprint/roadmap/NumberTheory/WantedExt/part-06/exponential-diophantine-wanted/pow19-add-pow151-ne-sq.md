@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ExponentialDiophantineWanted.pow19_add_pow151_ne_sq
 ---
 
-# Corollary 1
+# $19^x + 151^y$ is never a perfect square
 
-**Corollary 1**: the exponential Diophantine
-equation `19^x + 151^y = z^2` has no solution.
+**$19^x + 151^y$ is never a perfect square.** For all natural numbers $x$, $y$ and $z$,
+$19^x + 151^y \ne z^2$.
 
 ## Depends on
 

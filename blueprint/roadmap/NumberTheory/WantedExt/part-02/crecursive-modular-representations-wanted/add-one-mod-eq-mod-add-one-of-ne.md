@@ -5,14 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.add_one_mod_eq_mod_add_one_of_ne
 ---
 
-# Add one mod eq mod add one of ne
+# Adding one to a remainder without wrap-around
 
-For naturals `x` and `C ≥ 2`, if `x` is not congruent to `C - 1` modulo `C`, then incrementing
-`x` increments its remainder without wrapping: `(x + 1) % C = x % C + 1`. The paper's bound
-on `C` is `hC`. Its incongruence clause is `hne`, expressed as inequality of the natural
-remainders `x % C` and `(C - 1) % C`; the conclusion likewise uses natural remainder `%`.
-Using remainder equality rather than a separate congruence predicate is the only presentational
-deviation.
+**Adding one to a remainder without wrap-around.** Let $x$ and $C$ be natural numbers with
+$C \ge 2$. If $x \bmod C \ne (C - 1) \bmod C$, that is, if $x$ is not congruent to $C - 1$
+modulo $C$, then $(x + 1) \bmod C = (x \bmod C) + 1$.
 
 ## Depends on
 

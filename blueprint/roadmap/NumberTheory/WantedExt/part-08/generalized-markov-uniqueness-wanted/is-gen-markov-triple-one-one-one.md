@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isGenMarkovTriple_one_one_one
 ---
 
-# Is Gen Markov Triple one one one
+# $(1, 1, 1)$ is a generalized Markov triple
 
-Characteristic value: `(1, 1, 1)` is a `k`-generalized Markov triple for every `k`.
+**$(1, 1, 1)$ is a generalized Markov triple.** For every natural number $k$, the triple
+$(1, 1, 1)$ is a $k$-generalized Markov triple.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.compoundSequence_self
 ---
 
-# Compound Sequence self
+# Last term of a compound sequence
 
-`c_n = b_1 b_2 ⋯ b_n`.
+**Last term of a compound sequence.** For every natural number $n$ and all sequences $a$, $b$
+of natural numbers, the compound sequence $c$ of $a$ and $b$ satisfies $c_n = b_1 b_2 \cdots b_n$.
 
 ## Depends on
 
-- [Compound Sequence](compound-sequence.md)
+- [Compound sequence](compound-sequence.md)
 
 ## Sources
 

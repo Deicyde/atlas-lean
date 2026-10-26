@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fareyTree_false
 ---
 
-# Farey Tree false
+# Left child of the root of the Farey tree
 
-Characteristic value: the left child of the root of `FT` is `(0/1, 1/2, 1/1)`.
+**Left child of the root of the Farey tree.** The left child of the root $(0/1, 1/1, 1/0)$
+of the Farey tree is $(0/1, 1/2, 1/1)$.
 
 ## Depends on
 
-- [Farey Tree](farey-tree.md)
+- [The Farey tree](farey-tree.md)
 
 ## Sources
 

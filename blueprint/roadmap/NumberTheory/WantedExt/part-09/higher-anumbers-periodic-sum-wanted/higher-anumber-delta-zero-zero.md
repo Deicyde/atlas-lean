@@ -6,20 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.higherANumberDeltaZero_zero
 ---
 
-# Higher ANumber Delta Zero zero
+# The indicator $\delta_0$ vanishes at $0$
 
-Source: Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via
-Counting Lattice Points*, INTEGERS 26 (2026), Article A78,
-Definition of `δ₀` (`δ₀(0) = 0`).
+**The indicator $\delta_0$ vanishes at $0$.** For all natural numbers $p$ and $d$, the variant
+$\delta_0$ of the rounding indicator for $p$ and $d$ satisfies $\delta_0(0) = 0$.
 
 ## Depends on
 
-- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+- [The variant $\delta_0$ of the rounding indicator](higher-anumber-delta-zero.md)
 
 ## Proof depends on
 
-- [Higher ANumber Delta](higher-anumber-delta.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)
+- Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `δ₀` (`δ₀(0) = 0`).

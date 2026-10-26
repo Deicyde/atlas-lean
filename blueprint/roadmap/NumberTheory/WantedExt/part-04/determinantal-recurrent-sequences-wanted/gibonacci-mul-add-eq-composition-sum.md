@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_mul_add_eq_composition_sum
 ---
 
-# Gibonacci mul add eq composition sum
+# Subsequences $G_{\ell n + m}$ of a Gibonacci sequence as composition sums
 
-Modular subsequences of a Gibonacci sequence `G` (`G_0 = y`, `G_1 = z` non-negative
-integers, not both zero) as composition sums: for `ℓ ≥ 1`, `m ≥ 0`, `n ≥ 1` and `E` either square
-root of `(-1)^ℓ G_ℓ (G_ℓ - L_ℓ y) + y^2` (`m` even) or `(-1)^ℓ G_{ℓ+1} (G_{ℓ+1} - L_ℓ z) + z^2`
-(`m` odd),
-`G_{ℓn+m} = (L_ℓ G_{ℓ+m} - 2(-1)^ℓ G_m + 2E)^{n-1} / (G_{ℓ+m}^{n-2} ((-1)^{ℓ+1} G_m + E)^n)
-  · ∑_α (-((-1)^{ℓ+1} G_m + E)^2/(L_ℓ G_{ℓ+m} - 2(-1)^ℓ G_m + 2E))^{n-|α|} m_n(α)
-    ∏_i (Ei - (-1)^ℓ G_m)^{α_i}`
-(identity (35)), provided `m ≥ ℓ + 2` or `G_{ℓ+m} ((-1)^{ℓ+1} G_m + E) ≠ 0` (the paper's
-sufficient condition for `0 ≤ m ≤ ℓ + 1`).
+**Subsequences $G_{\ell n + m}$ of a Gibonacci sequence as composition sums.** Let $y$ and $z$
+be non-negative integers, not both zero, let $(G_k)$ be the Gibonacci sequence with $G_0 = y$
+and $G_1 = z$, and let $L_k$ be the Lucas numbers. Let $\ell \ge 1$, $m \ge 0$ and $n \ge 1$, and
+let $E$ be a complex number with $E^2 = (-1)^\ell G_\ell (G_\ell - L_\ell y) + y^2$ if $m$ is
+even and $E^2 = (-1)^\ell G_{\ell+1} (G_{\ell+1} - L_\ell z) + z^2$ if $m$ is odd. Write
+$A = L_\ell G_{\ell+m} - 2(-1)^\ell G_m + 2E$ and $B = (-1)^{\ell+1} G_m + E$, and assume that
+$m \ge \ell + 2$ or $G_{\ell+m} B \ne 0$. Then
+
+$$G_{\ell n + m} = \frac{A^{n-1}}{G_{\ell+m}^{n-2} B^n} \sum_c \left(-\frac{B^2}{A}\right)^{n-r}
+\prod_{i=1}^{r} (E c_i - (-1)^\ell G_m),$$
+
+where the sum runs over all compositions $c = (c_1, \dots, c_r)$ of $n$ (tuples of positive
+integers with $c_1 + \dots + c_r = n$) and $r$ is the number of parts of $c$.
+
+This is identity (35) of the source; for $0 \le m \le \ell + 1$ the condition $G_{\ell+m} B \ne 0$
+is the source's sufficient condition.
 
 ## Depends on
 

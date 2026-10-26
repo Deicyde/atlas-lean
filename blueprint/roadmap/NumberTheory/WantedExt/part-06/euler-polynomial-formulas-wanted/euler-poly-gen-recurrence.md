@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen_recurrence
 ---
 
-# Proposition 3.2
+# Recurrence for Euler polynomials of order α
 
-**Proposition 3.2**: for every complex `α` and
-`n ≥ 1`,
-`E_n^{(α)}(x) = (x - α / 2) E_{n-1}^{(α)}(x) +
-  (α / 2) ∑_{k=0}^{n-2} (n - 1 choose k) (-1)^{n-k}
-  E_{n-1-k}(0) E_k^{(α)}(x)`.
+**Recurrence for Euler polynomials of order α.** Let $E_m(x)$ denote the Euler polynomial
+and $E_m^{(\alpha)}(x)$ the Euler polynomial of order $\alpha$. For every complex number
+$\alpha$ and every integer $n \ge 1$, as polynomials in $x$,
+$E_n^{(\alpha)}(x) = (x - \alpha/2) \, E_{n-1}^{(\alpha)}(x) +
+\frac{\alpha}{2} \sum_{k=0}^{n-2} \binom{n-1}{k} (-1)^{n-k} E_{n-1-k}(0) \, E_k^{(\alpha)}(x)$,
+where the sum is empty when $n = 1$.
 
 ## Depends on
 
-- [Euler Poly](euler-poly.md)
-- [Euler Poly Gen](euler-poly-gen.md)
+- [Euler polynomials](euler-poly.md)
+- [Euler polynomials of order α](euler-poly-gen.md)
 
 ## Sources
 

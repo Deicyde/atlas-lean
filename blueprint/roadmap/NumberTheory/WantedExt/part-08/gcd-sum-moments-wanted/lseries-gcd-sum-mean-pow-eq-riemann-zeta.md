@@ -5,18 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.LSeries_gcdSumMean_pow_eq_riemannZeta_pow_mul
 ---
 
-# Lemma 8
+# Factorization of the Dirichlet series of powers of the mean gcd-sum function
 
-**Lemma 8** (structure of `F_k`). For every `k`, there are Dirichlet series
-`G_k(s) = ∑ g(n) n^{-s}`, absolutely convergent for `ℜ s > 1/2`, and
-`G̃_{k,2}(s) = ∑ h(n) n^{-s}`, absolutely convergent for `ℜ s > 1/3`, with
-`∑ A(n)^k n^{-s} = ζ(s)^{2^k} G_k(s)` and `G_k(s) ζ(2s)^{4^k - 3^k - C(2^k, 2)} = G̃_{k,2}(s)`
-for `ℜ s > 1`. The exponent is a natural number (`3^k + C(2^k, 2) ≤ 4^k`). The explicit Euler
-product (3) for `G̃_{k,2}` is not stated.
+**Factorization of the Dirichlet series of powers of the mean gcd-sum function.** Let $k$ be a
+natural number and let $A$ be the mean gcd-sum function. There are functions
+$g, h \colon \mathbb{N} \to \mathbb{C}$ such that the Dirichlet series
+$G_k(s) = \sum_{n \ge 1} g(n) n^{-s}$ converges absolutely for every complex $s$ with
+$\operatorname{Re} s > 1/2$, the Dirichlet series $\tilde G_{k,2}(s) = \sum_{n \ge 1} h(n) n^{-s}$
+converges absolutely for every complex $s$ with $\operatorname{Re} s > 1/3$, and for every complex
+$s$ with $\operatorname{Re} s > 1$,
+
+$$\sum_{n \ge 1} A(n)^k n^{-s} = \zeta(s)^{2^k} G_k(s)$$
+
+and
+
+$$G_k(s) \, \zeta(2s)^{4^k - 3^k - \binom{2^k}{2}} = \tilde G_{k,2}(s).$$
+
+The exponent $4^k - 3^k - \binom{2^k}{2}$ is a nonnegative integer, since
+$3^k + \binom{2^k}{2} \le 4^k$. The paper also gives an explicit Euler product for
+$\tilde G_{k,2}$, which is not stated here.
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

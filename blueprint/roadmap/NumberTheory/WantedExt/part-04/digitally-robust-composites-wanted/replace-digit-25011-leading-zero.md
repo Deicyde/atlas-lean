@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.replaceDigit_25011_leadingZero
 ---
 
-# Replace Digit 25011 leading Zero
+# Replacing a leading zero of 25011 by zero
 
-Replacing the leading-zero digit at position `6` of `25011` by `0` leaves `25011` unchanged,
-checking the leading-zero interpretation used by the replacement clause. This is a sanity check
-and has no encoding deviation.
+**Replacing a leading zero of 25011 by zero.** Replacing the base-ten digit in position $6$ of
+$25011$, where positions are counted from $0$ at the units digit (so this digit is a leading
+zero), by $0$ gives $25011$ again.
 
 ## Depends on
 
-- [Replace Digit](replace-digit.md)
+- [Replacing a base-ten digit](replace-digit.md)
 
 ## Sources
 

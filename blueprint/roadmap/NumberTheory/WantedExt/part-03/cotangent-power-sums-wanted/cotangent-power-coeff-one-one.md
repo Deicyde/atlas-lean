@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.cotangentPowerCoeff_one_one
 ---
 
-# Cotangent Power Coeff one one
+# Girstmair's coefficient at index (1, 1)
 
-`c_{1,1} = 1`, matching `i cot = i cot`.
+**Girstmair's coefficient at index (1, 1).** Girstmair's cotangent power coefficient
+$c_{1,1}$ equals $1$, matching the identity $i \cot = i \cot$.
 
 ## Depends on
 
-- [Cotangent Power Coeff](cotangent-power-coeff.md)
+- [Girstmair's cotangent power coefficients](cotangent-power-coeff.md)
 
 ## Sources
 

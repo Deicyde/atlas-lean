@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_mod
 ---
 
-# Lemma 2
+# Binomial coefficients $\binom{p^k - p^{k-1}}{j}$ modulo $p$
 
-**Lemma 2**: for an odd prime `p`, `k > 1`, and
-`j ≤ p^k - p^{k-1}`,
-`C(p^k - p^{k-1}, j) ≡ (-1)^c (mod p)` if
-`j = c * p^{k-1}` for some `c`, and `≡ 0 (mod p)`
-otherwise.
+**Binomial coefficients $\binom{p^k - p^{k-1}}{j}$ modulo $p$.** Let $p$ be an odd prime,
+let $k \ge 2$, and let $j$ be an integer with $0 \le j \le p^k - p^{k-1}$. If $j = c\,p^{k-1}$
+for an integer $c$, then $\binom{p^k - p^{k-1}}{j} \equiv (-1)^c \pmod{p}$; otherwise
+$\binom{p^k - p^{k-1}}{j} \equiv 0 \pmod{p}$.
 
 ## Depends on
 

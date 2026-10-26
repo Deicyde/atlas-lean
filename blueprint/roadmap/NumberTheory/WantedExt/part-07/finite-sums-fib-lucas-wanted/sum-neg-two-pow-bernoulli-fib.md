@@ -5,10 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_neg_two_pow_bernoulli_fib
 ---
 
-# Corollary 3
+# Bernoulli–Fibonacci double sum with weights $(-2)^n$
 
-**Corollary 3**: `∑_{n=0}^m ∑_{k=0}^n (-2)ⁿ √5ᵏ
-C(n,k) C(m,n) Bₖ F_{n-k+1}/(n-k+1) = √5ᵐ`.
+**Bernoulli–Fibonacci double sum with weights $(-2)^n$.** Let $B_k$ be the Bernoulli
+numbers, with $B_1 = -1/2$, and let $F_k$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). For every
+natural number $m$,
+
+$$\sum_{n=0}^{m} \sum_{k=0}^{n} (-2)^n (\sqrt{5})^k \binom{n}{k} \binom{m}{n} B_k
+\frac{F_{n-k+1}}{n-k+1} = (\sqrt{5})^m.$$
 
 ## Depends on
 

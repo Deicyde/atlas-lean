@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.onesDiagDet
 ---
 
-# Ones Diag Det
+# Ones-diagonal determinant
 
-The determinant of the matrix of ones with `p` on the
-diagonal: the paper's `A_k(p_1, …, p_k)`.
+**Ones-diagonal determinant.** For natural numbers $p_1, \dots, p_k$, the determinant
+$A_k(p_1, \dots, p_k)$ is the determinant of the $k \times k$ integer matrix with
+$p_1, \dots, p_k$ on the diagonal and $1$ in every other entry.
 
 ## Depends on
 

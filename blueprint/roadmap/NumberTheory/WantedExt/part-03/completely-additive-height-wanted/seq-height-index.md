@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.seqHeightIndex
 ---
 
-# Seq Height Index
+# Block index of a profile
 
-The block index `k(i)`: the least `k` with `i ≤ Π_k` (for `i ≥ 1` and unbounded `Π`, the
-unique `k` with `Π_{k-1} < i ≤ Π_k`).
+**Block index of a profile.** Let $\pi : \mathbb{N} \to \mathbb{N}$ be a sequence with
+cumulative profile $\Pi_k = \sum_{j=1}^{k} \pi_j$. For a natural number $i$, the block index $k(i)$
+is the least natural number $k$ with $i \le \Pi_k$, and $k(i) = 0$ if there is no such $k$. When
+$i \ge 1$ and $\Pi$ is unbounded, $k(i)$ is the unique $k$ with $\Pi_{k-1} < i \le \Pi_k$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Profile Partial Sum](profile-partial-sum.md)
+- [Cumulative profile](profile-partial-sum.md)
 
 ## Sources
 

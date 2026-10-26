@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.conjugate_continuedFraction_not_purelyPeriodic
 ---
 
-# Conjugate continued Fraction not purely Periodic
+# The conjugate continued fraction is not purely periodic
 
-Lemma 3: for conjugate real quadratic irrationals `α = (P + √D)/Q > ᾱ = (P - √D)/Q`
-(`D > 0` not a square, `Q > 0`), the simple continued fraction of `ᾱ` is not purely periodic,
-i.e. it has at least one nonperiodic term (`ṙ ≥ 1`). The terms are the integer parts `b` of
-Mathlib's continued-fraction stream `GenContFract.IntFractPair.stream`.
+**The conjugate continued fraction is not purely periodic.** Let $P$, $Q$ and $D$ be integers
+with $D > 0$ not a perfect square and $Q > 0$, and let $\bar\alpha = (P - \sqrt{D})/Q$. Then the
+simple continued fraction $[a_0; a_1, a_2, \dots]$ of $\bar\alpha$, which is infinite because
+$\bar\alpha$ is irrational, is not purely periodic: there is no integer $s \ge 1$ with
+$a_{n+s} = a_n$ for all $n \ge 0$. Here $a_0 = \lfloor \bar\alpha \rfloor$ is included.
 
 ## Depends on
 

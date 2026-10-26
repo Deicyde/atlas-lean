@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.laurentDeg_foldl_laurentCartier_le_zmod
 ---
 
-# Laurent Deg foldl laurent Cartier le zmod
+# Degree bound for the Rowland–Zeilberger states mod $p^a$
 
-Degree bound mod `p^a`: for Laurent polynomials `P̃` and `Q₀` over `ℤ/p^aℤ`, iterating
-`Q ↦ Λ_p(P̃^k Q)` with digits `k < p` never raises the degree above
-`max(deg P̃ - 1, deg Q₀)`.
+**Degree bound for the Rowland–Zeilberger states mod $p^a$.** Let $p$ be a prime, let $a$
+be a natural number, and let $\tilde P$ and $Q_0$ be Laurent polynomials in $r$ variables with
+coefficients in $\mathbb{Z}/p^a\mathbb{Z}$. Write $\deg F$ for the largest absolute value of an
+exponent of a variable occurring in $F$, and $\Lambda_p$ for the operator that keeps the terms
+whose exponents are all multiples of $p$ and substitutes $x_s^p \mapsto x_s$. For every finite
+list $k_1, \dots, k_n$ of natural numbers with each $k_t < p$, starting from $Q_0$ and applying
+$Q \mapsto \Lambda_p(\tilde P^{k_t} Q)$ for $t = 1, \dots, n$ in turn gives a Laurent polynomial
+of degree at most $\max(\deg \tilde P - 1, \deg Q_0)$.
 
 ## Depends on
 
-- [Laurent Cartier](laurent-cartier.md)
-- [Laurent Deg](laurent-deg.md)
+- [Cartier operator $\Lambda_k$ on Laurent polynomials](laurent-cartier.md)
+- [Degree of a Laurent polynomial](laurent-deg.md)
 
 ## Sources
 

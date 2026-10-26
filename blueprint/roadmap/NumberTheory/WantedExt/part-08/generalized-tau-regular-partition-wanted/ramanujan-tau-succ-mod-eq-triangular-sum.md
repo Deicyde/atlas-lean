@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_triangular_sum_seven
 ---
 
-# Ramanujan Tau succ mod Eq triangular sum seven
+# Ramanujan's $\tau$ modulo $7$ via triangular numbers
 
-`τ(n + 1) ≡ ∑ (-1)^(m + r) (2m + 1)(2r + 1) (mod 7)`, the sum over `m, r ≥ 0` with
-`n = m(m + 1)/2 + 7 r(r + 1)/2`.
+**Ramanujan's $\tau$ modulo $7$ via triangular numbers.** Let $\tau = \tau_{24}$ be Ramanujan's
+tau function, where $\tau_k$ is the generalized tau function. For every integer $n \ge 1$,
+$\tau(n + 1)$ is congruent modulo $7$ to the sum of $(-1)^{m + r} (2m + 1)(2r + 1)$ over all
+pairs of integers $m, r \ge 0$ with $m(m + 1)/2 + 7r(r + 1)/2 = n$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

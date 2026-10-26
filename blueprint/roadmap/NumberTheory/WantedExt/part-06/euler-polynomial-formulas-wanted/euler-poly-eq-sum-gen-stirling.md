@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_sum_genStirling
 ---
 
-# Theorem 4.2
+# Euler polynomials via generalized Stirling polynomials
 
-**Theorem 4.2**: for every positive integer `n`,
-`2^n E_n(x) = ∑_{k=0}^n k! α_k S(n, k, 2x - 1)`.
+**Euler polynomials via generalized Stirling polynomials.** Let $E_n(x)$ denote the Euler
+polynomial, $\alpha_k$ the Taylor coefficients of $(2 + 2z)/(2 + 2z + z^2)$, and
+$S(n, k, x) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} (-1)^{k-j} (x + j)^n$ the generalized
+Stirling polynomial. For every integer $n \ge 1$, as polynomials in $x$ with rational
+coefficients, $2^n E_n(x) = \sum_{k=0}^{n} k! \, \alpha_k \, S(n, k, 2x - 1)$.
 
 ## Depends on
 
-- [Euler Alpha](euler-alpha.md)
-- [Euler Poly](euler-poly.md)
-- [Gen Stirling Poly](gen-stirling-poly.md)
+- [Taylor coefficients of (2 + 2z)/(2 + 2z + z²)](euler-alpha.md)
+- [Euler polynomials](euler-poly.md)
+- [Generalized Stirling polynomial](gen-stirling-poly.md)
 
 ## Sources
 

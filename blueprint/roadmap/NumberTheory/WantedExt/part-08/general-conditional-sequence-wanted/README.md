@@ -4,8 +4,8 @@ navigation: module
 
 # General Conditional Sequence
 
-- [Decimation Coeff](decimation-coeff.md)
-- [Decimation Coeff zero](decimation-coeff-zero.md)
-- [Decimation Coeff one](decimation-coeff-one.md)
-- [Decimation generating function](decimation-generating-function.md)
-- [Decimation binet](decimation-binet.md)
+- [Decimation coefficients](decimation-coeff.md)
+- [Zeroth decimation coefficient](decimation-coeff-zero.md)
+- [First decimation coefficient](decimation-coeff-one.md)
+- [Generating function of a decimated linear recurrence](decimation-generating-function.md)
+- [Binet formula for decimated linear recurrences](decimation-binet.md)

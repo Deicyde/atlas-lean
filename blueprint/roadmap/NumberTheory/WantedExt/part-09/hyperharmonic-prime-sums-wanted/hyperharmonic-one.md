@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.hyperharmonic_one
 ---
 
-# Hyperharmonic one
+# Hyperharmonic numbers of order one are the harmonic numbers
 
-First-order hyperharmonic numbers are the harmonic numbers: `h_n^{(1)} = H_n`.
+**Hyperharmonic numbers of order one are the harmonic numbers.** For every natural number $n$,
+the hyperharmonic number $h_n^{(1)}$ of order $1$ and index $n$ equals the $n$-th harmonic number
+$H_n = \sum_{k=1}^{n} 1/k$ (in particular $h_0^{(1)} = H_0 = 0$).
 
 ## Depends on
 
-- [Hyperharmonic](hyperharmonic.md)
+- [Hyperharmonic numbers](hyperharmonic.md)
 
 ## Sources
 

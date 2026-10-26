@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.dvd_pow_pow_add_one_shift
 ---
 
-# Dvd pow pow add one shift
+# Divisibility of later generalized Fermat numbers
 
-For `a, b, D ≥ 2` and `D ∣ F_n(a, b) = a^{b^n} + 1`: (i) if `b` is odd, `D ∣ F_{n+k}(a, b)` for
-every `k ≥ 1`; (ii) if `b` is even and `D ≥ 3`, `D ∤ F_{n+k}(a, b)` for every `k ≥ 1`. The source
-states (ii) for `D ≥ 2`; its proof gives `F_{n+k}(a, b) ≡ 2 (mod D)`, which excludes only
-`D = 2`, and (ii) is false there (`a = 3`, `b = 2`, `n = 0`, `k = 1`: `2 ∣ 4` and `2 ∣ 10`).
+**Divisibility of later generalized Fermat numbers.** For natural numbers $a$, $b$ and $m$
+write $F_m(a, b) = a^{b^m} + 1$. Let $a, b, D \ge 2$ and $n$ be natural numbers such that $D$
+divides $F_n(a, b)$. If $b$ is odd, then $D$ divides $F_{n+k}(a, b)$ for every $k \ge 1$. If $b$
+is even and $D \ge 3$, then $D$ does not divide $F_{n+k}(a, b)$ for any $k \ge 1$.
+
+The source states the even case for $D \ge 2$; its proof gives $F_{n+k}(a, b) \equiv 2 \pmod D$,
+which excludes only $D = 2$, and the even case is false there: for $a = 3$, $b = 2$, $n = 0$ and
+$k = 1$, $2$ divides both $F_0(3, 2) = 4$ and $F_1(3, 2) = 10$.
 
 ## Depends on
 

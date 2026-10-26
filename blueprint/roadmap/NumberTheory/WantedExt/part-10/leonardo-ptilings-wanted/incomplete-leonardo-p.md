@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.incompleteLeonardoP
 ---
 
-# Incomplete Leonardo P
+# Incomplete Leonardo p-numbers
 
-The incomplete Leonardo `p`-numbers
-`𝓛_{p,n}(k) = (p + 1) ∑_{i=0}^{k} C(n - pi, i) - p` (natural-number subtraction; the
-paper uses `0 ≤ k ≤ ⌊n/(p+1)⌋`, where it does not truncate).
+**Incomplete Leonardo p-numbers.** For natural numbers $p$, $n$ and $k$, the incomplete
+Leonardo $p$-number is the integer
+
+$$
+\mathcal{L}_{p,n}(k) = (p + 1) \sum_{i=0}^{k} \binom{\max(n - pi, 0)}{i} - p.
+$$
+
+On the paper's range $0 \le k \le \lfloor n/(p+1) \rfloor$ the maximum is always $n - pi$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.multipleHurwitzZeta_zero
 ---
 
-# Multiple Hurwitz Zeta zero
+# Multiple Hurwitz zeta function of order zero
 
-Order zero: `ζ_0(s) = 1`.
+**Multiple Hurwitz zeta function of order zero.** For every complex number $s$, the multiple
+Hurwitz zeta function of order $0$ is identically one: $\zeta_0(s) = 1$.
 
 ## Depends on
 
-- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
+- [Multiple Hurwitz zeta function](multiple-hurwitz-zeta.md)
 
 ## Sources
 

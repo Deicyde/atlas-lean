@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.trollopeDelangeFluctuation_add_one
 ---
 
-# Trollope Delange Fluctuation add one
+# Periodicity of the Trollope–Delange fluctuation
 
-`F` is `1`-periodic.
+**Periodicity of the Trollope–Delange fluctuation.** For every natural number $q$ and every
+real number $x$, the Trollope–Delange fluctuation $F$ in base $q$ satisfies $F(x + 1) = F(x)$.
 
 ## Depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Proof depends on
 
-- [Trollope Delange Series](trollope-delange-series.md)
+- [Delange's series](trollope-delange-series.md)
 
 ## Sources
 

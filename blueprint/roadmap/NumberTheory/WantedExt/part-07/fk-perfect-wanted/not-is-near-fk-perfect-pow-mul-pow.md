@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_pow_mul_pow
 ---
 
-# Theorem 20
+# No near $F_k$-perfect number $p_1^a p_2^b$ with $a + b$ odd or $a, b$ both odd
 
-**Theorem 20**: there is no near `F_k`-perfect number
-of the form `p₁^a p₂^b` (distinct odd primes, `k > 1`,
-`a, b ≥ 1`) when `a + b` is odd or both `a` and `b` are
-odd.
+**No near $F_k$-perfect number $p_1^a p_2^b$ with $a + b$ odd or $a, b$ both odd.** Let
+$k > 1$, let $p_1 \ne p_2$ be odd primes and let $a, b \ge 1$ be natural numbers such that
+$a + b$ is odd or both $a$ and $b$ are odd. Then $p_1^a p_2^b$ is not near $F_k$-perfect.
 
 ## Depends on
 
-- [Is Near Fk Perfect](is-near-fk-perfect.md)
+- [Near $F_k$-perfect numbers](is-near-fk-perfect.md)
 
 ## Sources
 

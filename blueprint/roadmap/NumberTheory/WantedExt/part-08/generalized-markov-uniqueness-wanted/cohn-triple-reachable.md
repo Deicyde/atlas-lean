@@ -14,10 +14,10 @@ applying the steps successively to a Cohn triple associated with `(1, 1, 1)`, an
 
 ## Depends on
 
-- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
-- [Gen Cohn Path](gen-cohn-path.md)
-- [Gen Cohn Step](gen-cohn-step.md)
-- [Gen Markov Vieta](gen-markov-vieta.md)
+- [Generalized Cohn triple](is-gen-cohn-triple.md)
+- [Paths of generalized Cohn steps](gen-cohn-path.md)
+- [One step of the wide generalized Cohn tree](gen-cohn-step.md)
+- [Vieta jumping of generalized Markov triples](gen-markov-vieta.md)
 
 ## Sources
 

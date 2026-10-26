@@ -5,18 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_neg_succ_modEq_partition_convolution
 ---
 
-# Generalized Tau neg succ mod Eq partition convolution
+# $\tau_{-k}$ and partition convolutions modulo a prime
 
-For `2 ≤ k < l`, `l` an odd prime: `τ_{-k}(n + 1) ≡ ∑_{n = t + ls} τ_{l-k}(t + 1) p(s) (mod l)`,
-and the same right side is congruent to the composition sum
-`∑_{a_1 + ⋯ + a_k = n} p(a_1)⋯p(a_k)`. The record prints `τ_{l-k}(t)`; that is false and the
-proof's identity `∏ (1 - q^m)^(-k) ≡ ∏ (1 - q^m)^(l-k) (1 - q^(lm))^(-1) (mod l)` together with
-Definition 1.1 (`∏ (1 - q^m)^j = ∑ τ_j(t + 1) q^t`) gives `τ_{l-k}(t + 1)`; Corollary 4.3 (the
-record's Corollary 6) uses this shifted form, `ω(t) = τ_1(t + 1)`.
+**$\tau_{-k}$ and partition convolutions modulo a prime.** Let $l$ be an odd prime, let $k$ be a
+natural number with $2 \le k < l$, let $n$ be a natural number, and write $p(s)$ for the number of
+partitions of $s$. Then
+
+$$\tau_{-k}(n + 1) \equiv \sum_{s=0}^{\lfloor n/l \rfloor} \tau_{l-k}(n - ls + 1)\, p(s) \pmod{l},$$
+
+and the composition sum $\sum p(a_1) p(a_2) \cdots p(a_k)$, taken over all $k$-tuples
+$(a_1, \dots, a_k)$ of natural numbers with $a_1 + \cdots + a_k = n$, is congruent modulo $l$ to
+the same right-hand side.
+
+The record prints $\tau_{l-k}(t)$ in place of $\tau_{l-k}(t + 1)$, writing $n = t + ls$; that is
+false. The proof's identity
+$\prod (1 - q^m)^{-k} \equiv \prod (1 - q^m)^{l-k} (1 - q^{lm})^{-1} \pmod{l}$ together with
+Definition 1.1 ($\prod (1 - q^m)^j = \sum \tau_j(t + 1) q^t$) gives $\tau_{l-k}(t + 1)$;
+Corollary 4.3 (the record's Corollary 6) uses this shifted form, $\omega(t) = \tau_1(t + 1)$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

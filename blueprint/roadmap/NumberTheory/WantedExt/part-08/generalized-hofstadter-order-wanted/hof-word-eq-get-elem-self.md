@@ -6,19 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.hofWord_eq_getElem_self
 ---
 
-# Hof Word eq get Elem self
+# The letter $x_k(n)$ can be read off $\tau_k^n(k)$
 
-`x_k[n]` is the `n`-th letter of `τ_k^n(k)`.
+**The letter $x_k[n]$ can be read off $\tau_k^n(k)$.** For a natural number $k$, let $\tau_k$ be
+the Hofstadter substitution on finite words over $\mathbb{N}$ ($k \mapsto k\,1$, $i \mapsto i + 1$
+for $i \ne k$), let $x_k = x_k[0]\,x_k[1] \cdots$ be its fixed point, and write $\tau_k^n(k)$
+for the word obtained by applying $\tau_k$ $n$ times to the one-letter word $k$. For all natural
+numbers $k$ and $n$, $x_k[n]$ is the letter at position $n$ of $\tau_k^n(k)$, counting positions
+from $0$ (this word has at least $n + 1$ letters).
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
-- [Hof Word](hof-word.md)
-- [Succ le length hof Tau List iterate](succ-le-length-hof-tau-list-iterate.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
+- [Letters of the Hofstadter fixed-point word](hof-word.md)
+- [Growth of the iterated generalized Hofstadter substitution](succ-le-length-hof-tau-list-iterate.md)
 
 ## Proof depends on
 
-- [Hof Word eq get Elem](hof-word-eq-get-elem.md)
+- [Letters of $x_k$ from the iterates $\tau_k^j(k)$](hof-word-eq-get-elem.md)
 
 ## Sources
 

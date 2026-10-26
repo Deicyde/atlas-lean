@@ -6,16 +6,26 @@ proof: formalized
 lean: MetaMathlibExt.hFullEulerProduct_eq
 ---
 
-# H Full Euler Product eq
+# Unfolding the Euler product $\Pi_j$
 
-Unfolding `Π_j`.
+**Unfolding the Euler product $\Pi_j$.** Let $F$ be a finite field with $q$ elements, let $h$
+and $j$ be natural numbers and let $\xi$ be a complex number. Write $\rho_j = q^{1/h} \xi^j$, where
+$q^{1/h}$ is the positive real $h$-th root of $q$ (read as $1$ when $h = 0$), read $\rho_j^{-1}$
+as $0$ when $\rho_j = 0$, and write $|P| = q^{\deg P}$ for a monic irreducible polynomial $P$
+over $F$. Then $\Pi_j$ equals the complex product over all monic irreducible polynomials $P$
+over $F$
+
+$$\prod_P (1 - |P|^{-1})\Bigl(1 + \frac{1}{|P|\,(1 - (\rho_j^{-1})^{\deg P})}\Bigr),$$
+
+where $1/0$ is read as $0$, and the product is taken to be $1$ if it does not converge
+unconditionally.
 
 ## Depends on
 
-- [H Full Euler Product](h-full-euler-product.md)
-- [H Full Root](h-full-root.md)
-- [Monic Irreducible](monic-irreducible.md)
-- [Poly Norm](poly-norm.md)
+- [The Euler product $\Pi_j$ for $h$-full polynomials](h-full-euler-product.md)
+- [The pole parameter $q^{1/h}\xi^j$](h-full-root.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

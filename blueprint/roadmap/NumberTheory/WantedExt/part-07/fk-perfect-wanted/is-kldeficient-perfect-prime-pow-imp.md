@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_imp
 ---
 
-# Theorem 5
+# $(k,\ell)$-deficient-perfect prime powers for $k \ge 2$
 
-**Theorem 5**, `k ≥ 2` part: if `p^a` is
-`[k,ℓ]`-deficient-perfect with `k ≥ 2`, then `p = 2` and
-`a = 1`.
+**$[k,\ell]$-deficient-perfect prime powers for $k \ge 2$.** Let $p$ be a prime and let $a$,
+$k$ and $\ell$ be natural numbers with $k \ge 2$. If $p^a$ is $[k,\ell]$-deficient-perfect, then
+$p = 2$ and $a = 1$.
 
 ## Depends on
 
-- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+- [$(k,\ell)$-deficient-perfect numbers](is-kldeficient-perfect.md)
 
 ## Sources
 

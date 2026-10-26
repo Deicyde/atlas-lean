@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.hyperharmonicEulerSum_rat_mem_pi_mul_adjoin
 ---
 
-# Hyperharmonic Euler Sum rat mem pi mul adjoin
+# Hyperharmonic Euler sums with rational parameters
 
-Rational parameters: if `a, r ∈ ℚ \ ℤ` with `N a ∈ ℤ` (`N ≥ 1`) and `a ≡ r (mod ℤ)`, then for
-integers `k ≥ 0` and `p > r`, `S(k, r; p; a)` converges and lies in
-`π ℚ(ζ + ζ⁻¹)[ψ(a) + γ, ψ^{(j)}(a)_{j ≥ 1}, π², ζ(2j+1)_{j ≥ 1}]`, `ζ` a primitive root of unity
-of order `lcm(2N, 4)`.
+**Hyperharmonic Euler sums with rational parameters.** Let $a$ and $r$ be rational numbers
+that are not integers, with $a - r \in \mathbb{Z}$, let $N \ge 1$ be an integer with
+$N a \in \mathbb{Z}$, and let $k \ge 0$ and $p > r$ be integers. Put $M = \mathrm{lcm}(2N, 4)$
+and $\omega = e^{2 \pi i / M}$, a primitive $M$-th root of unity. Write $H_n^{[r]}(k)$ for the
+generalized hyperharmonic numbers. Then the generalized hyperharmonic Euler sum
+$S(k, r; p; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^p$ converges, and $S(k, r; p; a) = \pi x$
+for some $x$ in the algebra generated over the field $\mathbb{Q}(\omega + \omega^{-1})$ by
+$\psi(a) + \gamma$, the derivatives $\psi^{(j)}(a)$ for $j \ge 1$, $\pi^2$ and the odd zeta
+values $\zeta(3), \zeta(5), \dots$, where $\psi$ is the digamma function and $\gamma$ is the
+Euler–Mascheroni constant.
 
-`ζ` is taken to be `exp(2πi / lcm(2N, 4))`; `ℚ(ζ + ζ⁻¹)` does not depend on the primitive root.
+The field $\mathbb{Q}(\omega + \omega^{-1})$ does not depend on which primitive $M$-th root of
+unity $\omega$ is chosen.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
-- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic Euler sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

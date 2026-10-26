@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kPellLucas_three_small
 ---
 
-# K Pell Lucas three small
+# Two values of the $3$-generalized Pell–Lucas numbers
 
-Small values: `Q^{(3)}_3 = 16` and `Q^{(3)}_6 = 260`.
+**Two values of the $3$-generalized Pell–Lucas numbers.** The $3$-generalized Pell–Lucas
+numbers $Q^{(3)}_n$ satisfy $Q^{(3)}_3 = 16$ and $Q^{(3)}_6 = 260$.
 
 ## Depends on
 
-- [K Pell Lucas](k-pell-lucas.md)
+- [$k$-generalized Pell–Lucas numbers](k-pell-lucas.md)
 
 ## Sources
 

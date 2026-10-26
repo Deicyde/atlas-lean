@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.cyclotomicTraceNormSq
 ---
 
-# Cyclotomic Trace Norm Sq
+# Squared trace norm on a cyclotomic field
 
-The squared trace norm `‖α‖² = ∑_{j=1}^{p-1} Tr_{K/ℚ}(α ω^j)²` on `K = ℚ(ω)`.
+**Squared trace norm on a cyclotomic field.** Let $p$ be a positive integer, let $K$ be a
+$p$-th cyclotomic extension of $\mathbb{Q}$, and let $\omega$ be the chosen primitive $p$-th root
+of unity in $K$. The squared trace norm of $\alpha \in K$ is the rational number
+
+$$\lVert \alpha \rVert^2 = \sum_{j=1}^{p-1} \mathrm{Tr}_{K/\mathbb{Q}}(\alpha \omega^j)^2.$$
 
 ## Depends on
 

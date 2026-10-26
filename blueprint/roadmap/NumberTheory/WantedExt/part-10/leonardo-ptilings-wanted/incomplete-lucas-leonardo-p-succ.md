@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.incompleteLucasLeonardoP_succ
 ---
 
-# Proposition 17
+# Recurrence for incomplete Lucas-Leonardo p-numbers
 
-**Proposition 17**: for `n > p + 1` and `0 ≤ k ≤ ⌊n/(p+1)⌋`,
-`R_{p,n}(k + 1) = R_{p,n-1}(k + 1) + R_{p,n-p-1}(k) + p`. At `n = p + 1` the term
-`R_{p,0}(k)` has the undefined summand `0/0 · C(0, 0)` and is excluded.
+**Recurrence for incomplete Lucas-Leonardo p-numbers.** For natural numbers $p \ge 1$,
+$n > p + 1$ and $k \le \lfloor n/(p+1) \rfloor$, the incomplete Lucas-Leonardo $p$-numbers
+$R_{p,m}(j)$ satisfy
+
+$$
+R_{p,n}(k + 1) = R_{p,n-1}(k + 1) + R_{p,n-p-1}(k) + p.
+$$
+
+At $n = p + 1$ the term $R_{p,0}(k)$ would contain the undefined summand
+$\frac{0}{0} \binom{0}{0}$, so that case is excluded.
 
 ## Depends on
 
-- [Incomplete Lucas Leonardo P](incomplete-lucas-leonardo-p.md)
+- [Incomplete Lucas-Leonardo p-numbers](incomplete-lucas-leonardo-p.md)
 
 ## Sources
 

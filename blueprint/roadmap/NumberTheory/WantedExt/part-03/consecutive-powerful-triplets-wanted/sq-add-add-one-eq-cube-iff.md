@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sq_add_add_one_eq_cube_iff
 ---
 
-# Sq add add one eq cube iff
+# When $u^2 \pm u + 1$ is a cube
 
-`u² + u + 1` is a perfect cube exactly for `u ∈ {-19, -1, 0, 18}`, and
-`u² - u + 1` is a perfect cube exactly for `u ∈ {-18, 0, 1, 19}`.
+**When $u^2 \pm u + 1$ is a cube.** For every integer $u$, $u^2 + u + 1$ is the cube of an
+integer if and only if $u \in \{-19, -1, 0, 18\}$, and $u^2 - u + 1$ is the cube of an integer
+if and only if $u \in \{-18, 0, 1, 19\}$.
 
 ## Depends on
 

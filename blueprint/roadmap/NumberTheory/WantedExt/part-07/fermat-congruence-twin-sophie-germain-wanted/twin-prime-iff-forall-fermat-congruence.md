@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.twinPrime_iff_forall_fermat_congruence
 ---
 
-# Twin Prime iff forall fermat congruence
+# Fermat-type characterizations of twin primes
 
-Let `n ≥ 3` be odd with neither `n` nor `n + 2` a Carmichael number. Then `(n, n + 2)`
-is a twin prime pair if and only if `2 a ^ (n + 1) ≡ (n + 2) a ^ 2 - n (mod n (n + 2))` for
-every integer `a` coprime to `n (n + 2)`, and also if and only if
-`n a ^ (n + 1) ≡ (n + 2) a ^ (n - 1) - 2 (mod n (n + 2))` for every such `a`.
+**Fermat-type characterizations of twin primes.** Let $n \ge 3$ be odd, and suppose neither $n$
+nor $n + 2$ is a Carmichael number. Then $n$ and $n + 2$ are both prime if and only if
+$2a^{n+1} \equiv (n + 2)\,a^2 - n \pmod{n(n + 2)}$ for every integer $a$ coprime to $n(n + 2)$;
+and $n$ and $n + 2$ are both prime if and only if
+$n\,a^{n+1} \equiv (n + 2)\,a^{n-1} - 2 \pmod{n(n + 2)}$ for every integer $a$ coprime to
+$n(n + 2)$.
 
 ## Depends on
 

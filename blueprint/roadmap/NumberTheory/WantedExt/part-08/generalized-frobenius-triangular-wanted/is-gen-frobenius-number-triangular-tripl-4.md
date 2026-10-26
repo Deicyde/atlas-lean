@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isGenFrobeniusNumber_triangularTriple_eleven_to_twenty
 ---
 
-# Is Gen Frobenius Number triangular Triple eleven to twenty
+# Explicit generalized Frobenius numbers of triangular triples at levels 11 to 20
 
-Explicit values for `s = 11, …, 20`, each as `4(g + 1) = (n+1)(n+2) L`:
-`s = 11`: `L = 8n + 12` (`n = 12` or `n ≥ 14`); `s = 12`: `9n` (even `n ≥ 14`), `9n - 3`
-(odd `n ≥ 17`); `s = 13`: `9n + 6` (even `n ≥ 12`), `9n + 3` (odd `n ≥ 15`); `s = 14`: `9n + 12`
-(even `n ≥ 12`), `9n + 9` (odd `n ≥ 15`); `s = 15`: `9n + 18` (even `n ≥ 18`), `9n + 15`
-(odd `n ≥ 15`); `s = 16`: `10n` (`n = 17` or `n ≥ 19`); `s = 17`: `10n + 6` (`n = 15` or
-`n ≥ 17`); `s = 18`: `10n + 12` (`n = 17` or `n ≥ 19`); `s = 19`: `10n + 18` (`n = 20` or
-`n ≥ 22`); `s = 20`: `11n` (even `n ≥ 18`), `11n - 3` (odd `n ≥ 21`).
+**Explicit generalized Frobenius numbers of triangular triples at levels 11 to 20.** For a
+natural number $r$ write $t_r = r(r+1)/2$. For a natural number $n$, a natural number $s$ and an
+integer $L$, say that $s$ has value $L$ when the generalized Frobenius number $g$ of
+$(t_n, t_{n+1}, t_{n+2})$ at $s$ exists and satisfies $4(g + 1) = (n+1)(n+2)L$. Then for every
+natural number $n$: $11$ has value $8n + 12$ if $n = 12$ or $n \ge 14$; $12$ has value $9n$ for
+even $n \ge 14$ and $9n - 3$ for odd $n \ge 17$; $13$ has value $9n + 6$ for even $n \ge 12$ and
+$9n + 3$ for odd $n \ge 15$; $14$ has value $9n + 12$ for even $n \ge 12$ and $9n + 9$ for odd
+$n \ge 15$; $15$ has value $9n + 18$ for even $n \ge 18$ and $9n + 15$ for odd $n \ge 15$; $16$
+has value $10n$ if $n = 17$ or $n \ge 19$; $17$ has value $10n + 6$ if $n = 15$ or $n \ge 17$; $18$
+has value $10n + 12$ if $n = 17$ or $n \ge 19$; $19$ has value $10n + 18$ if $n = 20$ or
+$n \ge 22$; $20$ has value $11n$ for even $n \ge 18$ and $11n - 3$ for odd $n \ge 21$.
 
 ## Depends on
 
 - [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
-- [Triangular Triple](triangular-triple.md)
+- [Three consecutive triangular numbers](triangular-triple.md)
 
 ## Sources
 

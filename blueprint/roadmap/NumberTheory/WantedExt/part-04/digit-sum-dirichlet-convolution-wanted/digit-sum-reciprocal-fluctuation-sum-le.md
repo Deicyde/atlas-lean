@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.digitSum_reciprocal_fluctuation_sum_le
 ---
 
-# Digit Sum reciprocal fluctuation sum le
+# Bound for a weighted sum of the fluctuation
 
-For real `x > 0` and `y`,
-`∑_{n ≤ y} s_q(n)/n · F(log(x/n)/log q) ≤ F_M ∑_{n ≤ y} s_q(n)/n`, where
-`F_M = sup_t |F(t)|`.
+**Bound for a weighted sum of the fluctuation.** Let $q \ge 2$ be an integer, let $s_q(n)$
+denote the sum of the base-$q$ digits of $n$, let $F$ be the Trollope–Delange fluctuation in base
+$q$, and let $F_M = \sup_{t \in \mathbb{R}} |F(t)|$ (taken to be $0$ if $|F|$ is unbounded). For
+all real numbers $x > 0$ and $y$,
+
+$$\sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n} \, F\left(\frac{\log(x/n)}{\log q}\right) \le
+F_M \sum_{n=1}^{\lfloor y \rfloor} \frac{s_q(n)}{n}.$$
 
 ## Depends on
 
-- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope–Delange fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

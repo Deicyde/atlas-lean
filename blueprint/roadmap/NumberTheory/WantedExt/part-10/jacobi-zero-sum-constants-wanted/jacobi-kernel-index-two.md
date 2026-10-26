@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.jacobi_kernel_index_two
 ---
 
-# Jacobi kernel index two
+# The index of the Jacobi symbol kernel
 
-For odd `n`, `S(n)` is a subgroup of index two in `U(n)` when `n` is not a square,
-and `S(n) = U(n)` when `n` is a square.
+**The index of the Jacobi symbol kernel.** Let $n$ be an odd natural number, let $U(n)$
+be the group of units of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let
+$S(n) = \{u \in U(n) : (u/n) = 1\}$, where $(u/n)$ is the Jacobi symbol $(a/n)$ of the
+representative $0 \le a < n$ of $u$. If $n$ is not a perfect square, then $S(n)$ is a subgroup of
+$U(n)$ of index $2$. If $n$ is a perfect square, then $S(n) = U(n)$.
 
 ## Depends on
 

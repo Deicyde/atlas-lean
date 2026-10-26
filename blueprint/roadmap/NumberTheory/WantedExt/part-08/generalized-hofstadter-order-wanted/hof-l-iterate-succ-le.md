@@ -11,7 +11,7 @@ For `k ≥ 1` and `j ≥ 0`, `L_k^j ≥ L_{k+1}^j`.
 
 ## Depends on
 
-- [Hof L](hof-l.md)
+- [The image length $L_k$](hof-l.md)
 
 ## Sources
 

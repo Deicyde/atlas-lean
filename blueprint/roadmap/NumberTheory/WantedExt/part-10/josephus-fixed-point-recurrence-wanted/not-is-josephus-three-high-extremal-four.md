@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.not_isJosephusThreeHighExtremal_four
 ---
 
-# Not is Josephus Three High Extremal four
+# $4$ is not a high extremal point of $J_3$
 
-`4` is not a high extremal point of `J₃` (`J₃(4) = 1`).
+**$4$ is not a high extremal point of $J_3$.** The number $4$ is not a high extremal point of
+the Josephus function $J_3$ (elimination step $3$).
+
+Indeed $J_3(4) = 1$.
 
 ## Depends on
 
-- [Is Josephus Three High Extremal](is-josephus-three-high-extremal.md)
+- [High extremal points of the Josephus function $J_3$](is-josephus-three-high-extremal.md)
 
 ## Proof depends on
 

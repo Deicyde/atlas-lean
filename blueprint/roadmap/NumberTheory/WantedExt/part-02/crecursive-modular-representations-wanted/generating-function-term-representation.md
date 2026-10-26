@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.generating_function_term_representation_mono_base
 ---
 
-# Generating function term representation mono base
+# Term extraction from the generating function persists in larger bases
 
-If the generating-function representation holds in base `c` for every `n ≥ m`, then it also
-holds in every natural base `r ≥ c`. The paper's standing assumptions `2 ≤ c`, `2 ≤ m`, and
-`c ≤ r` are `hc`, `hm`, and `hcr`. The base-`c` representation is `hrep`, and `hconv` states
-separately that its displayed series is summable at every `c⁻ⁿ` for `n ≥ m`, so each `tsum`
-denotes the genuine series value.
+**Term extraction from the generating function persists in larger bases.** Let
+$t_0, t_1, t_2, \dots$ be natural numbers and let $c$, $m$ and $r$ be natural numbers with
+$c \ge 2$, $m \ge 2$ and $c \le r$. Suppose that for every $n \ge m$ the real series
+$\sum_{k \ge 0} t_k \, (c^{-n})^k$ is summable and
 
-No growth hypothesis is added, and no convergence hypothesis at `r⁻ⁿ` is assumed. This is a
-deviation in presentation needed for the explicit `tsum`: for `n ≥ m ≥ 2`, `hrep` forces
-`t n < c ^ n`, and together with `c ≤ r` this makes the series at every `r⁻ⁿ` converge. The
-paper's generating functions, floors, and congruences are encoded by the displayed sums,
-`Nat.floor`, and equality to a natural remainder `%`, respectively.
+$$t_n = \Bigl\lfloor c^{n^2} \sum_{k \ge 0} t_k \, (c^{-n})^k \Bigr\rfloor \bmod c^n.$$
+
+Then for every $n \ge m$,
+
+$$t_n = \Bigl\lfloor r^{n^2} \sum_{k \ge 0} t_k \, (r^{-n})^k \Bigr\rfloor \bmod r^n.$$
+
+No summability at $r^{-n}$ is assumed: the hypothesis gives $t_n < c^n \le r^n$ for $n \ge m$,
+which makes the series at $r^{-n}$ converge.
 
 ## Depends on
 

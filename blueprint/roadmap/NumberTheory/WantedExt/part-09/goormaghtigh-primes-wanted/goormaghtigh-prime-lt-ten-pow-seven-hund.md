@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.goormaghtigh_prime_lt_ten_pow_seven_hundred
 ---
 
-# Goormaghtigh prime lt ten pow seven hundred
+# No Goormaghtigh primes below $10^{700}$ besides $31$ and $8191$
 
-There are no Goormaghtigh primes below `10^700` other than `31` and `8191`: a prime
-`p < 10^700` that is a repunit of length at least three in two distinct bases is `31`
-or `8191`.
+**No Goormaghtigh primes below $10^{700}$ besides $31$ and $8191$.** Let $p$ be a prime with
+$p < 10^{700}$, and let $x, y, m, n$ be natural numbers with $2 \le x < y$ and $n \ge 3$ such that
 
-This is the headline result whose computation the extracted Theorem 1 record describes;
-the record's further remark (no new Goormaghtigh numbers below `10^700` with both
-exponents prime) is not formalized here.
+$$p = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i,$$
+
+that is, $p$ is a repunit of length $m$ in base $x$ and of length $n$ in base $y$. Then $p = 31$
+or $p = 8191$.
 
 ## Depends on
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardoP_add
 ---
 
-# Proposition 9
+# Binomial addition formula for hyper Leonardo $p$-numbers
 
-**Proposition 9**: for `m, n ≥ 1` with `m ≤ k`,
-`𝓛^{(k)}_{p,n+m} = ∑_{i=0}^{m} C(m, i) 𝓛^{(k-i)}_{p,n+i}`.
+**Binomial addition formula for hyper Leonardo $p$-numbers.** For natural numbers $p \ge 1$,
+$n \ge 1$, $m \ge 1$ and $k \ge m$, the hyper Leonardo $p$-numbers satisfy
+
+$$\mathcal{L}^{(k)}_{p,n+m} = \sum_{i=0}^{m} \binom{m}{i} \mathcal{L}^{(k-i)}_{p,n+i}.$$
 
 ## Depends on
 
-- [Hyper Leonardo P](hyper-leonardo-p.md)
+- [Hyper Leonardo $p$-numbers](hyper-leonardo-p.md)
 
 ## Sources
 

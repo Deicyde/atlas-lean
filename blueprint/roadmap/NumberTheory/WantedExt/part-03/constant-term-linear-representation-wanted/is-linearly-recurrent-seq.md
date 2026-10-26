@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsLinearlyRecurrentSeq
 ---
 
-# Is Linearly Recurrent Seq
+# Linearly recurrent sequence
 
-A sequence is linearly recurrent if the return constant `C_w` of every nonempty factor `w`
-can be taken to be a fixed multiple of the length of `w`.
+**Linearly recurrent sequence.** A sequence $s = (s_n)_{n \in \mathbb{N}}$ with values in a
+set $\alpha$ is linearly recurrent if there is $K \in \mathbb{N}$ such that for all
+$i, i' \in \mathbb{N}$ and $\ell \ge 1$ with $s_{i'+t} = s_{i+t}$ for all $t < \ell$, there is $j$
+with $0 < j \le K \ell$ and $s_{i'+j+t} = s_{i+t}$ for all $t < \ell$. That is, each occurrence
+of a nonempty factor of length $\ell$ is followed by another occurrence starting at most
+$K \ell$ positions later.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

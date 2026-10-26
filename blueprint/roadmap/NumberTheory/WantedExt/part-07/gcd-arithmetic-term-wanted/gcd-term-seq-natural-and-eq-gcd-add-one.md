@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gcdTermSeq_natural_and_eq_gcd_add_one
 ---
 
-# Gcd Term Seq natural and eq gcd add one
+# The gcd-term sequence is integral and recovers the gcd
 
-The sequence `s_{a,b}` takes natural-number values, and `s_{a,b}(ab) = gcd(a, b) + 1`.
+**The gcd-term sequence is integral and recovers the gcd.** Let $a, b \ge 1$ be natural
+numbers and let $s_{a,b}$ be the gcd-term sequence. Every value $s_{a,b}(n)$ is a natural number,
+and $s_{a,b}(ab) = \gcd(a, b) + 1$.
 
 ## Depends on
 
-- [Gcd Term Seq](gcd-term-seq.md)
+- [The gcd-term sequence](gcd-term-seq.md)
 
 ## Sources
 

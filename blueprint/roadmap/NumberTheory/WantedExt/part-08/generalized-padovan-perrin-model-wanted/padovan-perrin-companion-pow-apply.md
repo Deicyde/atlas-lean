@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_companion_pow_apply
 ---
 
-# Padovan Perrin companion pow apply
+# Powers of the Padovan–Perrin companion matrix
 
-The powers of the companion matrix `A([k]; p; s)` of order `s + p` (first row `k₁` in
-column `s` and `k₂` in column `s + p`, ones on the subdiagonal) have entries
-`(Aⁿ)_{ij} = v⁽ˢ⁺ᵖ⁻ʲ⁺¹⁾ (n + s + p - i)` for `1 ≤ i, j ≤ s + p`; with the `0`-based indices of
-`Fin (s + p)` this reads `(Aⁿ) i j = v⁽ˢ⁺ᵖ⁻ʲ⁾ (n + (s + p) - 1 - i)`. Stated over any commutative
-ring.
+**Powers of the Padovan–Perrin companion matrix.** Let $R$ be a commutative ring, let
+$k_1, k_2 \in R$, let $p, s$ be positive integers, and write $r = s + p$. Let $A$ be the
+$r \times r$ matrix over $R$, with rows and columns indexed by $0, \dots, r - 1$, whose row $0$ has
+$k_1$ in column $s - 1$, $k_2$ in column $r - 1$ and $0$ elsewhere, and whose entry in row
+$a \ge 1$ and column $b$ is $1$ if $a = b + 1$ and $0$ otherwise. For $1 \le \ell \le r$ let
+$v^{(\ell)}$ be the solution of the $([k]; p; s)$-Padovan–Perrin recurrence with
+$v^{(\ell)}(m) = 1$ if $m + 1 = \ell$ and $v^{(\ell)}(m) = 0$ otherwise, for $0 \le m < r$. Then
+for every $n \ge 0$ and all $0 \le i, j \le r - 1$,
+
+$$(A^n)_{ij} = v^{(r - j)}(n + r - 1 - i).$$
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
 
 ## Sources
 

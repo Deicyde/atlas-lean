@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo
 ---
 
-# Gen Leonardo
+# Generalized Leonardo numbers
 
-The generalized Leonardo numbers `L_{k,n}`: `L_{k,0} = L_{k,1} = 1` and
-`L_{k,n+2} = L_{k,n+1} + L_{k,n} + k`. The paper fixes `k` positive; the
-recurrence here is stated over `ℤ` (an intentional domain extension,
-bridged to the existing `p = 1` API by
-`genLeonardo_eq_leonardoPK_one` below).
+**Generalized Leonardo numbers.** For an integer $k$, the generalized Leonardo numbers
+$L_{k,0}, L_{k,1}, L_{k,2}, \ldots$ are the integers defined by $L_{k,0} = L_{k,1} = 1$ and
+$L_{k,n+2} = L_{k,n+1} + L_{k,n} + k$ for all $n \ge 0$.
+
+The paper takes $k$ positive; here $k$ may be any integer.
 
 ## Depends on
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem937
 
-- [Is Coprime Powerful AP4](is-coprime-powerful-ap4.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Four-term progressions of pairwise coprime powerful numbers](is-coprime-powerful-ap4.md)
+- [Statement of Erdős Problem 937](conjecture.md)
+- [Erdős Problem 937 holds (Bajpai–Bennett–Chan)](conjecture-holds.md)

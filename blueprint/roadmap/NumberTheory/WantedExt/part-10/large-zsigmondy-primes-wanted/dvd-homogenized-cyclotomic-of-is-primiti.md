@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dvd_homogenizedCyclotomic_of_isPrimitivePrimeDivisor
 ---
 
-# Dvd homogenized Cyclotomic of is Primitive Prime Divisor
+# Zsigmondy primes divide the homogenized cyclotomic value
 
-For distinct coprime positive integers `a`, `b` and `n ≥ 2`, every Zsigmondy prime for
-`(a, b, n)` divides `Φ_n(a, b)`.
+**Zsigmondy primes divide the homogenized cyclotomic value.** Let $a$ and $b$ be distinct
+coprime positive integers and let $n \ge 2$. If $p$ is a primitive prime divisor of the term
+$a^n - b^n$ of the integer sequence $(a^m - b^m)_{m \ge 0}$ (a Zsigmondy prime for $(a, b, n)$),
+then $p$ divides the homogenized cyclotomic value $\Phi_n(a, b)$.
 
 ## Depends on
 

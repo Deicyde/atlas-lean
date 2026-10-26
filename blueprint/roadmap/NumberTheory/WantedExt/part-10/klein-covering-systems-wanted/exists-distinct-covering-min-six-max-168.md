@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_distinct_covering_min_six_max_168
 ---
 
-# Theorem 2
+# A distinct covering system with moduli from 6 to 168
 
-**Theorem 2.** There is a distinct covering system with smallest modulus `6` and largest
-modulus `168`.
+**A distinct covering system with moduli from 6 to 168.** There is a distinct covering
+system, that is, a finite set of congruences $x \equiv r \pmod m$ with $r \in \mathbb{Z}$,
+$m \in \mathbb{N}$ and no two with the same modulus, such that every integer satisfies at least
+one of them, whose moduli all lie between $6$ and $168$ and include both $6$ and $168$.
 
 ## Depends on
 

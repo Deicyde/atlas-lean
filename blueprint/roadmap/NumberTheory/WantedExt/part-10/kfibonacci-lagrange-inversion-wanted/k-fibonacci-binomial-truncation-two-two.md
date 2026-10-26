@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kFibonacciBinomialTruncation_two_two
 ---
 
-# K Fibonacci Binomial Truncation two two
+# Value $G_2^{(2)} = 1$
 
-`G_2^{(2)} = 1 = F_2`.
+**Value $G_2^{(2)} = 1$.** The truncated binomial sum satisfies $G_2^{(2)} = 1$.
+
+This is the Fibonacci number $F_2$.
 
 ## Depends on
 
-- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
+- [Truncated binomial sum $G_n^{(k)}$](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

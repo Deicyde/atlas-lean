@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_prod_cyclotomicHat_inv_root_one
 ---
 
-# Tendsto prod cyclotomic Hat inv root one
+# Constancy of an infinite cyclotomic product
 
-For every complex `z` with `‖z‖ < 1`, the partial products
-`∏_{n=1}^{N} Φ̂ₙ(z)^{-1/n}` tend to `1` as `N → ∞`, where
-`Φ̂ₙ(z) = ∏_{ζ primitive n-th root of unity} (1 - z ζ)` (so `Φ̂₁(z) = 1 - z` and
-`Φ̂ₙ = Φₙ` for `n ≥ 2`). The `n`-th root is taken on the branch
-`Φ̂ₙ(z)^{-1/n} = exp(-(1/n) ∑_ζ log(1 - z ζ))` with principal logarithms of the linear factors
-(each `1 - z ζ` has positive real part), which is the branch equal to `1` at `z = 0` used in the
-paper's logarithmic-derivative proof. The paper writes the product as
-`P(z) = -∏_{n ≥ 1} Φₙ(z)^{-1/n}`; the sign absorbs `Φ₁(z) = -(1 - z)`, and the claim is
-`P(z) ≡ 1`. Convergence is stated for the natural ordering by `n`.
+**Constancy of an infinite cyclotomic product.** For $n \ge 1$ and complex $z$, let
+$\hat\Phi_n(z) = \prod_\omega (1 - z\omega)$, the product over the primitive $n$-th roots of
+unity $\omega$; thus $\hat\Phi_1(z) = 1 - z$ and $\hat\Phi_n = \Phi_n$ for $n \ge 2$, where
+$\Phi_n$ is the $n$-th cyclotomic polynomial. For every complex $z$ with $|z| < 1$, the partial
+products $\prod_{n=1}^{N} \hat\Phi_n(z)^{-1/n}$ tend to $1$ as $N \to \infty$, where
+$\hat\Phi_n(z)^{-1/n} = \exp\bigl(-\tfrac{1}{n} \sum_\omega \log(1 - z\omega)\bigr)$ and $\log$
+is the principal branch of the logarithm.
+
+Each factor $1 - z\omega$ has positive real part, and this branch equals $1$ at $z = 0$, as in
+the paper's logarithmic-derivative proof. The paper writes the product as
+$P(z) = -\prod_{n \ge 1} \Phi_n(z)^{-1/n}$; the sign absorbs $\Phi_1(z) = -(1 - z)$, and the
+claim is $P(z) \equiv 1$.
 
 ## Depends on
 

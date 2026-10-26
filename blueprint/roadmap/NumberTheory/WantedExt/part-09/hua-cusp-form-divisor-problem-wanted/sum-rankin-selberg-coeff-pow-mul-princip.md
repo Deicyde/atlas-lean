@@ -5,18 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.sum_rankinSelbergCoeff_pow_mul_principal_character
 ---
 
-# Proposition 4.2
+# Sums of Rankin–Selberg convolution powers twisted by the principal character
 
-**Proposition 4.2.** Let `f ∈ H_k^*`, `w ≥ 2`, and `χ_0` the principal character modulo a
-prime `q`. For `q ≤ x`,
-`∑_{n ≤ x} λ_{w,f×f}(n) χ_0(n) = x P_{w-1}(log x) + O_{f,ε}(x^{ϑ̃_w + ε})` with
-`ϑ̃_w = 1 - 210/(317w+115)` and `P_{w-1}` of degree `w - 1`. `q ≪ x` is read as `q ≤ x`; the
-polynomial may depend on `q`; the implied constant depends only on `f`, `w`, `ε`.
+**Sums of Rankin–Selberg convolution powers twisted by the principal character.** Let $f$ be a
+level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let $\lambda_{f\times f}$
+be its Rankin–Selberg coefficients, let $w \ge 2$, let $\lambda_{w,f\times f}$ be the $w$-th
+power of $\lambda_{f\times f}$ under Dirichlet convolution, and for a prime $q$ let $\chi_0$ be
+the principal Dirichlet character modulo $q$. There are real polynomials $P_q$, one for each
+prime $q$, each of degree $w - 1$, such that for every $\varepsilon > 0$ there is a constant $C$
+with
+
+$$
+\Bigl|\sum_{1 \le n \le x} \lambda_{w,f\times f}(n)\,\chi_0(n) - x\,P_q(\log x)\Bigr| \le
+C\,x^{1 - 210/(317w + 115) + \varepsilon}
+$$
+
+for every prime $q$ and every real $x \ge q$.
 
 ## Depends on
 
-- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
-- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+- [Normalized Hecke eigenform](is-normalized-hecke-eigenform.md)
+- [Rankin–Selberg coefficients](rankin-selberg-coeff.md)
 
 ## Sources
 

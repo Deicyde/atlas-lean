@@ -22,5 +22,5 @@ navigation: transparent
 - [Large Zsigmondy Primes](large-zsigmondy-primes-wanted/README.md)
 - [Laurent Series Bounded Partial Quotients](laurent-series-bounded-partial-quotients-wanted/README.md)
 - [Lcm Dense Sets](lcm-dense-sets-wanted/README.md)
-- [Lemoine Verification Wanted](lemoine-of-le-ten-pow-thirteen.md)
+- [Lemoine's conjecture up to $10^{13}$](lemoine-of-le-ten-pow-thirteen.md)
 - [Leonardo PTilings](leonardo-ptilings-wanted/README.md)

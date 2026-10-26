@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_pow_add_of_dvd_radical_coeffs_gcd
 ---
 
-# Prime dvd pow add of dvd radical coeffs gcd
+# Primes dividing the coefficient gcd of $(u + v^{1/N})^n$ divide the norm
 
-If a prime `p` divides `D_n` for some `n ≥ 1`, then `p ∣ u^N + (-1)^{N+1} v` (the norm of
-`u + v^{1/N}`). The section's `N ≥ 4` and the coprimality of `u, v` are not needed (norm
-argument; probe).
+**Primes dividing the coefficient gcd of $(u + v^{1/N})^n$ divide the norm.** Let $u, v, N$
+be natural numbers such that $x^N - v$ is irreducible over $\mathbb{Q}$. Write $\theta = v^{1/N}$
+for the nonnegative real $N$-th root of $v$, and let $a_{n,i}$ be integers ($n \ge 1$,
+$0 \le i < N$) with $(u + \theta)^n = \sum_{i=0}^{N-1} a_{n,i} \theta^i$ for every $n \ge 1$. If
+$n \ge 1$ and $p$ is a prime dividing $D_n = \gcd(a_{n,0}, \dots, a_{n,N-1})$, then $p$ divides
+$u^N + (-1)^{N+1} v$, the norm of $u + \theta$.
+
+The paper's section assumes $N \ge 4$ and $u, v$ coprime; neither is needed here.
 
 ## Depends on
 

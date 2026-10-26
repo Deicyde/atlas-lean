@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gcd_eq_neg_emod_emod_five_sub_two
 ---
 
-# Gcd eq neg emod emod five sub two
+# Second arithmetic term for the gcd in base $5$
 
-For all `a, b ≥ 1`,
-`gcd(a, b) = (((-5^{ab(ab+a+b)}) mod ((5^{a²b} - 1)(5^{ab²} - 1))) mod 5^{ab}) - 2` over `ℤ`,
-with the nonnegative remainder.
+**Second arithmetic term for the gcd in base $5$.** For all natural numbers $a, b \ge 1$,
+
+$$
+\gcd(a, b) = \Big( \big( (-5^{ab(ab+a+b)}) \bmod \big( (5^{a^2 b} - 1)(5^{a b^2} - 1) \big) \big)
+\bmod 5^{ab} \Big) - 2
+$$
+
+in the integers, where $x \bmod m$ is the remainder of $x$ in $\{0, \dots, m - 1\}$ for $m > 0$,
+also when $x < 0$.
 
 ## Depends on
 

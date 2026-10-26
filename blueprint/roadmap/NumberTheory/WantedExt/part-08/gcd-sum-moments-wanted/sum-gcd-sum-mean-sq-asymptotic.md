@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_gcdSumMean_sq_asymptotic
 ---
 
-# Theorem 1
+# Asymptotic formula for the second moment of the mean gcd-sum function
 
-**Theorem 1** (`k = 2`). There are a real polynomial `P` and a constant `C` with
-`∑_{n ≤ x} A(n)^2 = x P(log x) + O(x^{1/2} exp(C (log log x)^2))` as `x → ∞`.
+**Asymptotic formula for the second moment of the mean gcd-sum function.** For $n \ge 1$ let
+$A(n) = \frac{1}{n} \sum_{j=1}^{n} \gcd(j, n)$ be the mean gcd-sum function. There are a real
+polynomial $P$ and a real constant $C$ such that, as $x \to \infty$,
+
+$$\sum_{1 \le n \le x} A(n)^2 = x P(\log x) +
+O\left(x^{1/2} \exp\left(C (\log \log x)^2\right)\right).$$
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sqrt5
 ---
 
-# Sqrt5
+# The square root of five
 
-`√5` as a real number.
+**The square root of five.** This is the real number $\sqrt{5}$, the nonnegative real square
+root of $5$.
 
 ## Depends on
 

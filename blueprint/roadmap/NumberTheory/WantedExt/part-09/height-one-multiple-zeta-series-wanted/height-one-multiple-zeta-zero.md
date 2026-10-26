@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.heightOneMultipleZeta_zero
 ---
 
-# Height One Multiple Zeta zero
+# Height one multiple zeta function of depth one
 
-Depth one: `ζ(s, {1}^0) = ∑_{n ≥ 0} (n + 1)^{-s}`, the Riemann zeta series.
+**Height one multiple zeta function of depth one.** For every complex number $s$, the height
+one multiple zeta function $\zeta(s, \{1\}^j)$ at $j = 0$ is the Dirichlet series of the Riemann
+zeta function: $\zeta(s, \{1\}^0) = \sum_{n \ge 0} (n + 1)^{-s}$.
 
 ## Depends on
 
-- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Height one multiple zeta function](height-one-multiple-zeta.md)
 
 ## Sources
 

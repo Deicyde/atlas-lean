@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusRepCount_pair_eq_iff
 ---
 
-# Frobenius Rep Count pair eq iff
+# Representation counts between consecutive two-generator Frobenius numbers
 
-For coprime positive `a, b`, `i, s ≥ 0`, a positive `c` divisible by `a` or by `b`, and
-`j ∈ ℤ`: `d(g(a, b; s) + jc; a, b) = i` if and only if
-`g(a, b; i - 1) < g(a, b; s) + jc ≤ g(a, b; i)`, with `g(a, b; -1) = -∞`. Here `G r` is
-`g(a, b; r)`.
+**Representation counts between consecutive two-generator Frobenius numbers.** Let $a$ and $b$
+be coprime positive integers. For a natural number $r$ let $g(a, b; r)$ be the generalized
+Frobenius number of $(a, b)$ at $r$, and for an integer $m$ let $d(m; a, b)$ be the number of
+representations of $m$ by $(a, b)$. Let $i$ and $s$ be natural numbers, let $c$ be a positive
+integer divisible by $a$ or by $b$, and let $j$ be an integer. Then $d(g(a, b; s) + jc; a, b) = i$
+if and only if $g(a, b; s) + jc \le g(a, b; i)$ and, in case $i \ge 1$, also
+$g(a, b; i - 1) < g(a, b; s) + jc$.
 
 ## Depends on
 

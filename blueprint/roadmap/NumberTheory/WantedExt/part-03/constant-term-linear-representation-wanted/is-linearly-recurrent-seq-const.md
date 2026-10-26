@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isLinearlyRecurrentSeq_const
 ---
 
-# Is Linearly Recurrent Seq const
+# Constant sequences are linearly recurrent
 
-A constant sequence is linearly recurrent.
+**Constant sequences are linearly recurrent.** For every set $\alpha$ and every $c \in \alpha$,
+the constant sequence $n \mapsto c$ on $\mathbb{N}$ is linearly recurrent.
 
 ## Depends on
 
-- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Linearly recurrent sequence](is-linearly-recurrent-seq.md)
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

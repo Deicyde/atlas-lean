@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_one_div_pseudoGreedyExpansion
 ---
 
-# Has Sum one div pseudo Greedy Expansion
+# Convergence of the pseudo-greedy expansion
 
-The pseudo-greedy expansion of a positive real `r` sums to `r`.
+**Convergence of the pseudo-greedy expansion.** For every real number $r > 0$, the
+pseudo-greedy expansion $(a_n)_{n \ge 0}$ of $r$ satisfies $\sum_n 1 / a_n = r$.
 
 ## Depends on
 
-- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo-greedy expansion](pseudo-greedy-expansion.md)
 
 ## Sources
 

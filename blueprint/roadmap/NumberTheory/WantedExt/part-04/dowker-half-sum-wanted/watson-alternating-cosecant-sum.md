@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.watsonAlternatingCosecantSum
 ---
 
-# Watson Alternating Cosecant Sum
+# Watson's alternating cosecant sum
 
-`watsonAlternatingCosecantSum n` is the paper's particular sum `C_n`: the index
-`l` runs from `1` through `n - 1`, with summand `(-1)^(l+1) / sin (πl/n)`.
+**Watson's alternating cosecant sum.** For a natural number $n$, the alternating cosecant sum is
+the real number
+
+$$
+C_n = \sum_{l=1}^{n-1} \frac{(-1)^{l+1}}{\sin(\pi l / n)}.
+$$
+
+For $n \le 1$ the sum is empty and $C_n = 0$.
 
 ## Depends on
 

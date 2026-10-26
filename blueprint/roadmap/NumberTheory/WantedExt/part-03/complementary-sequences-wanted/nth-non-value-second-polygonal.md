@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_secondPolygonal
 ---
 
-# Nth Non Value second Polygonal
+# Formula for the non-second-polygonal numbers
 
-The `n`-th non-second-`k`-gonal number for `k > 5` (second `k`-gonal numbers
-`((k - 2) j² + (k - 4) j)/2`, `j ≥ 1`): with `s = ⌊√(2n / (k - 2))⌋`, it is `n + s` if
-`2n > (k - 2) s (s + 1) - 4s` and `n + s - 1` otherwise. The condition is written with `4s`
-moved to the left side.
+**Formula for the non-second-polygonal numbers.** Let $k > 5$, and for $j \ge 1$ let
+$S(k, j) = ((k - 2) j^2 + (k - 4) j)/2$ be the second $k$-gonal numbers. For every integer
+$n \ge 1$, put $s = \lfloor \sqrt{2n/(k - 2)} \rfloor$. Then the $n$-th positive integer that is
+not of the form $S(k, j)$ with $j \ge 1$ equals $n + s$ if $(k - 2) s (s + 1) < 2n + 4s$, and
+$n + s - 1$ otherwise.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

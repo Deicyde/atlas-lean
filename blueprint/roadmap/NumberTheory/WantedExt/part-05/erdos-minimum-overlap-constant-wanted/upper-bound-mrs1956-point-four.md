@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_MRS1956_pointFour
 ---
 
-# Upper Bound MRS1956 point Four
+# Statement of the Motzkin–Ralston–Selfridge upper bound $0.4$ for the minimum-overlap constant
 
-Source-reported exact terminating-decimal upper bound `C₁ᵦ ≤ 0.4`.
+**Statement of the Motzkin–Ralston–Selfridge upper bound $0.4$ for the minimum-overlap
+constant.** The proposition that the continuous Erdős minimum-overlap constant $C_{1b}$
+satisfies $C_{1b} \le 0.4$.
 
 ## Depends on
 

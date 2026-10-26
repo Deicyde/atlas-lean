@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC2_prime_mul_add_even
 ---
 
-# Initial Repetitions C2 prime mul add even
+# Parity of $c_2(pn + r)$ for primes $p \ge 5$
 
-For a prime `p ≥ 5` and `1 ≤ r ≤ p - 1` such that neither `16r + 1` nor `8r + 1` is a
-square modulo `p`, `c₂(pn + r)` is even for all `n ≥ 0`. "Quadratic residue" is read as "square
-in `ZMod p`", so `0` counts as a residue.
+**Parity of $c_2(pn + r)$ for primes $p \ge 5$.** Let $c_2(m)$ be the number of partitions of
+$m$ for which there is an integer $j$ with $1 \le j \le m$ such that $j$ appears exactly $j$
+times, every part other than $j$ is at least $2j + 1$, and every even part that is at least
+$2j + 2$ appears only once. Let $p \ge 5$ be a prime and let $r$ be an integer with
+$1 \le r \le p - 1$ such that neither $16r + 1$ nor $8r + 1$ is a square modulo $p$. Then
+$c_2(pn + r)$ is even for every integer $n \ge 0$.
+
+Here $0$ counts as a square modulo $p$, so the hypothesis says that $16r + 1$ and $8r + 1$ are
+quadratic nonresidues modulo $p$.
 
 ## Depends on
 
-- [Initial Repetitions C2](initial-repetitions-c2.md)
+- [The partition function $c_2$ of Nyirenda and Mugwangwavari](initial-repetitions-c2.md)
 
 ## Sources
 

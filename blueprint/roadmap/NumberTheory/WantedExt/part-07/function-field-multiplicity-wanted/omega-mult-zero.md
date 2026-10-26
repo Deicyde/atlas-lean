@@ -13,7 +13,7 @@ multiplicity `k`.
 
 ## Depends on
 
-- [Omega Mult](omega-mult.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

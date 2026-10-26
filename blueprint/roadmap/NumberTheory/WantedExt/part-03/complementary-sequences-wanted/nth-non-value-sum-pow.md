@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.nthNonValue_sumPow
 ---
 
-# Nth Non Value sum Pow
+# Integers missed by the sums $1^k + \dots + j^k$
 
-The `n`-th non-sum-of-`k`-th-powers for `k > 1` (values `∑_{i=1}^j i^k`, `j ≥ 1`): with
-`h = ⌊((k + 1) n)^{1/(k+1)}⌋`, it is `n + h - [n ≤ ∑_{i=1}^h (i^k - 1)]`.
+**Integers missed by the sums $1^k + \dots + j^k$.** Let $k > 1$ and $n \ge 1$ be integers,
+and let $h = \lfloor ((k+1)n)^{1/(k+1)} \rfloor$. Then the $n$-th smallest positive integer that
+is not of the form $\sum_{i=1}^{j} i^k$ with $j \ge 1$ is $n + h - 1$ if
+$n \le \sum_{i=1}^{h} (i^k - 1)$, and $n + h$ otherwise.
 
 ## Depends on
 
-- [Nth Non Value](nth-non-value.md)
+- [The $n$-th non-value of a sequence](nth-non-value.md)
 
 ## Sources
 

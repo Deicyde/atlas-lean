@@ -91,9 +91,10 @@ public theorem_wanted centralBinom_add_ne_centralBinom_mul_choose_sub_three (a b
     (ha : 4 < 2 * a) (hab : 2 * a ≤ a + b) :
     (a + b).centralBinom ≠ a.centralBinom * (a + 2 * b - 3).choose b
 
-/-- Lemma 5 (Hanson): for `0 < m < n`, the product `n (n+1) ⋯ (n+m-1)` has a prime divisor
-`p > 3m/2` if and only if `(n, m)` is none of the exceptions `3·4`, `8·9`,
-`6·7·8·9·10`.
+/-- **Hanson's theorem on a prime factor above $3m/2$ in consecutive integers.** Let $m$ and $n$
+be natural numbers with $0 < m < n$. The product $n(n+1)\cdots(n+m-1)$ has a prime divisor $p$
+with $p > 3m/2$ if and only if $(n, m)$ is none of the pairs $(3, 2)$, $(8, 2)$ and $(6, 5)$
+(the products $3 \cdot 4$, $8 \cdot 9$ and $6 \cdot 7 \cdot 8 \cdot 9 \cdot 10$).
 
 Source: Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*,
 INTEGERS 26 (2026), Article A26, Lemma 5 (`integers-2026-A26-lem-5`), quoting Hanson. -/
@@ -102,9 +103,15 @@ public theorem_wanted exists_prime_dvd_prod_consecutive_gt_three_halves_iff (n m
     (∃ p, p.Prime ∧ p ∣ ∏ i ∈ range m, (n + i) ∧ 3 * m < 2 * p) ↔
       (n, m) ≠ (3, 2) ∧ (n, m) ≠ (8, 2) ∧ (n, m) ≠ (6, 5)
 
-/-- Lemma 6 (Stănică): for positive integers `m > r ≥ 1` and `n ≥ 1`, with
-`B = m^(mn+1/2) / ((m-r)^((m-r)n+1/2) r^(rn+1/2))`,
-`e^(-1/(8n)) n^(-1/2) B / √(2π) < C(mn, rn) < n^(-1/2) B / √(2π)`.
+/-- **Stănică's bounds for the binomial coefficient $\binom{mn}{rn}$.** Let $m$, $n$ and $r$ be
+natural numbers with $1 \le r < m$ and $n \ge 1$, and put
+
+$$B = \frac{m^{mn + 1/2}}{(m-r)^{(m-r)n + 1/2}\, r^{rn + 1/2}}.$$
+
+Then
+
+$$\frac{e^{-1/(8n)}}{\sqrt{2\pi}\,\sqrt{n}}\, B < \binom{mn}{rn} <
+\frac{1}{\sqrt{2\pi}\,\sqrt{n}}\, B.$$
 
 Source: Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*,
 INTEGERS 26 (2026), Article A26, Lemma 6 (`integers-2026-A26-lem-6`), quoting Stănică. -/
@@ -140,8 +147,9 @@ public theorem_wanted centralBinom_add_ne_of_half_le_of_two_le (x a b : ℕ) (hx
     (hb : 0 < b) (hab : a + b ≤ 2 * a) :
     (a + b).centralBinom ≠ a.centralBinom * (x + 2 * b).choose b
 
-/-- Lemma 9 (Shanta-Shorey): if `n > m > 2` and `n + m ≥ 150`, then
-`n (n+1) ⋯ (n+m-1)` has a prime divisor `p > 1.8 m`.
+/-- **A prime factor above $9m/5$ in a product of consecutive integers.** Let $m$ and $n$ be
+natural numbers with $2 < m < n$ and $n + m \ge 150$. Then the product $n(n+1)\cdots(n+m-1)$ has
+a prime divisor $p$ with $p > 9m/5$.
 
 Source: Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*,
 INTEGERS 26 (2026), Article A26, Lemma 9 (`integers-2026-A26-lem-9`), quoting Shanta and
@@ -150,8 +158,9 @@ public theorem_wanted exists_prime_dvd_prod_consecutive_gt_nine_fifths (n m : �
     (hmn : m < n) (h150 : 150 ≤ n + m) :
     ∃ p, p.Prime ∧ p ∣ ∏ i ∈ range m, (n + i) ∧ 9 * m < 5 * p
 
-/-- Lemma 10 (Nair-Shorey): if `n > 4m`, `m > 3` and `n + m ≥ 150`, then
-`n (n+1) ⋯ (n+m-1)` has a prime divisor `p > 4.42 m`.
+/-- **A prime factor above $4.42m$ in a product of consecutive integers.** Let $m$ and $n$ be
+natural numbers with $m > 3$, $n > 4m$ and $n + m \ge 150$. Then the product
+$n(n+1)\cdots(n+m-1)$ has a prime divisor $p$ with $p > 4.42\,m$.
 
 Source: Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*,
 INTEGERS 26 (2026), Article A26, Lemma 10 (`integers-2026-A26-lem-10`), quoting Nair and

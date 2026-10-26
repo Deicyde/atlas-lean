@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_periodic_start_pow_pow_add_one_mod_sq
 ---
 
-# Is Least periodic start pow pow add one mod sq
+# Start of the period of generalized Fermat numbers modulo the square of a prime
 
-For `a, b ≥ 2` and a prime `p`, let `n₀` be the least `n` with `p² ∣ F_n(a, b) = a^{b^n} + 1`.
-The residues `F_n(a, b) mod p²` are eventually periodic; let the period start at the least index
-`m` from which they are periodic. (i) If `b` is odd, the period starts at `n₀` (the index of the
-first term of the period); (ii) if `b` is even, it starts at `n₀ + 1` (`n₀` is the index of the
-last term of the pre-period).
+**Start of the period of generalized Fermat numbers modulo the square of a prime.** For
+natural numbers $a$, $b$ and $k$ write $F_k(a, b) = a^{b^k} + 1$. Let $a, b \ge 2$, let $p$ be a
+prime, and let $n_0$ be the least natural number with $p^2 \mid F_{n_0}(a, b)$. Say that the
+sequence $(F_k(a, b))_k$ is periodic modulo $p^2$ from index $m$ if there is a $T > 0$ with
+$F_{m+k+T}(a, b) \equiv F_{m+k}(a, b) \pmod{p^2}$ for every $k \ge 0$. If $b$ is odd, then $n_0$
+is the least index from which the sequence is periodic modulo $p^2$; if $b$ is even, this least
+index is $n_0 + 1$.
+
+In the source's terms, $n_0$ is the index of the first term of the period when $b$ is odd, and
+the index of the last term of the pre-period when $b$ is even.
 
 ## Depends on
 

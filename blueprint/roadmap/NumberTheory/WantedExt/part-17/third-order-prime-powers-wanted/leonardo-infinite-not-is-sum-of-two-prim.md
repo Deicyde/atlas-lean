@@ -17,7 +17,7 @@ reason as in the Tribonacci statement.
 ## Depends on
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
-- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Generalized Leonardo numbers](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

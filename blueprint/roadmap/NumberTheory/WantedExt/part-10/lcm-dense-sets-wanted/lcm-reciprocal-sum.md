@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lcmReciprocalSum
 ---
 
-# Lcm Reciprocal Sum
+# Double sum of reciprocal least common multiples
 
-The paper's double sum `∑_{n,m ∈ A, n,m ≤ x} 1 / lcm(n,m)`, with all
-natural-number quantities explicitly coerced to real numbers.
+**Double sum of reciprocal least common multiples.** For a set $A$ of natural numbers and a
+real number $x$, the double sum of reciprocal least common multiples of $A$ up to $x$ is the
+real number $\sum 1/\operatorname{lcm}(n, m)$, summed over all ordered pairs $(n, m)$ with
+$n, m \in A$, $1 \le n \le x$ and $1 \le m \le x$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Naturals In Set Up To](naturals-in-set-up-to.md)
+- [Elements of a set up to a bound](naturals-in-set-up-to.md)
 
 ## Sources
 

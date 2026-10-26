@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.symmetric_power_sums
 ---
 
-# Lemma 3
+# Power sums over a symmetric interval
 
-**Lemma 3.** The power sums `S_r(N) = ∑_{-N ≤ a ≤ N} a^r` satisfy `S_r(N) = 0`
-for odd `r`, `S_2(N) = N(N+1)(2N+1)/3` and `S_4(N) = N(N+1)(2N+1)(3N²+3N-1)/15`.
+**Power sums over a symmetric interval.** For natural numbers $N$ and $r$, let
+$S_r(N) = \sum_{a=-N}^{N} a^r$, the sum over the integers $a$ with $-N \le a \le N$. Then
+$S_r(N) = 0$ for every odd $r$, and
 
-The paper takes `N ≥ 1`; `N = 0` is included.
+$$S_2(N) = \frac{N(N+1)(2N+1)}{3}, \qquad S_4(N) = \frac{N(N+1)(2N+1)(3N^2+3N-1)}{15}.$$
+
+The paper takes $N \ge 1$; here $N = 0$ is allowed.
 
 ## Depends on
 

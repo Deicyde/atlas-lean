@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_asymptotic_expansion
 ---
 
-# Gobel Sequence asymptotic expansion
+# Asymptotic expansion of the $(k, l)$-Göbel sequence
 
-Theorem 4 (generalized Zagier asymptotic): for `k, l ≥ 2` there are a constant
-`C > 1` and coefficients `a_r` with
-`g_{k,l}(n) ∼ C^{k^n} n^{1/(k-1)} (1 + ∑_{r ≥ 1} a_r / n^r)` as an asymptotic
-expansion in the paper's sense: for every `R ≥ 0` the error after the terms
-`r ≤ R` is `O(C^{k^n} n^{1/(k-1)} n^{-(R+1)})`.
+**Asymptotic expansion of the $(k, l)$-Göbel sequence.** Let $k, l \ge 2$ be natural numbers
+and let $g_{k,l}$ be the $(k, l)$-Göbel sequence. There are a real number $C > 1$ and real numbers
+$a_1, a_2, \dots$ such that for every natural number $R$, as $n \to \infty$,
+
+$$g_{k,l}(n) - C^{k^n} n^{1/(k-1)} \Bigl(1 + \sum_{r=1}^{R} \frac{a_r}{n^r}\Bigr) =
+O\Bigl(\frac{C^{k^n} n^{1/(k-1)}}{n^{R+1}}\Bigr).$$
+
+In other words, $g_{k,l}(n) \sim C^{k^n} n^{1/(k-1)} \bigl(1 + \sum_{r \ge 1} a_r / n^r\bigr)$ as
+an asymptotic expansion, generalizing Zagier's asymptotic for Göbel's sequence.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

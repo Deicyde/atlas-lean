@@ -14,7 +14,7 @@ number of the form `p₁^a p₂^b` (distinct odd primes,
 
 ## Depends on
 
-- [Is Deficient Fk Perfect](is-deficient-fk-perfect.md)
+- [Deficient $F_k$-perfect numbers](is-deficient-fk-perfect.md)
 
 ## Sources
 

@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.hurwitzPQ_recursion
 ---
 
-# Hurwitz PQ recursion
+# Recursion for the Hurwitz convergents
 
-The initial `Q`-pairs and the recursion `P_{n+1} = a_{n+1} P_n + P_{n-1}`,
-`Q_{n+1} = a_{n+1} Q_n + Q_{n-1}` for `n ≥ 1`, with `P_1 = a_1 a_0 + 1` and `Q_1 = a_1`.
+**Recursion for the Hurwitz convergents.** Let $z$ be a complex number with Hurwitz partial
+quotients $a_n$, convergent numerators $P_n$ and convergent denominators $Q_n$. Then
+$P_0 = a_0$, $Q_0 = 1$, $P_1 = a_1 a_0 + 1$ and $Q_1 = a_1$, and for every $n \ge 0$,
+$P_{n+2} = a_{n+2} P_{n+1} + P_n$ and $Q_{n+2} = a_{n+2} Q_{n+1} + Q_n$.
 
 ## Depends on
 
-- [Hurwitz Digit](hurwitz-digit.md)
-- [Hurwitz P](hurwitz-p.md)
-- [Hurwitz Q](hurwitz-q.md)
+- [Partial quotients of the Hurwitz expansion](hurwitz-digit.md)
+- [Convergent numerators of the Hurwitz expansion](hurwitz-p.md)
+- [Convergent denominators of the Hurwitz expansion](hurwitz-q.md)
 
 ## Proof depends on
 
-- [Hurwitz PQ](hurwitz-pq.md)
+- [Consecutive pairs of Hurwitz convergents](hurwitz-pq.md)
 
 ## Sources
 

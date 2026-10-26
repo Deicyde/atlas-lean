@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem650
 
-- [F](f.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős's matching function for multiples in intervals](f.md)
+- [Statement of Erdős Problem 650](conjecture.md)
+- [Erdős Problem 650: matching integers to distinct multiples](conjecture-holds.md)

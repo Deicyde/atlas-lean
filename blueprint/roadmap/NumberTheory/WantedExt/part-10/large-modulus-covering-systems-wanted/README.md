@@ -4,5 +4,5 @@ navigation: module
 
 # Large Modulus Covering Systems
 
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Covering systems with arbitrarily large distinct moduli (OPG-493)](conjecture.md)
+- [Hough's minimum modulus theorem](conjecture-refuted.md)

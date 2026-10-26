@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_gcdSumMean_pow_asymptotic
 ---
 
-# Theorem 4
+# Asymptotic formula for the higher moments of the mean gcd-sum function
 
-**Theorem 4** (`k ≥ 5`). For each fixed `k ≥ 5` there is a real polynomial `P` such that
-for every `ε > 0`,
-`∑_{n ≤ x} A(n)^k = x P(log x) + O_{k,ε}(x^{1 + 2ε - 42/(13 · 2^k - 9)})` as `x → ∞`.
+**Asymptotic formula for the higher moments of the mean gcd-sum function.** For $n \ge 1$ let
+$A(n) = \frac{1}{n} \sum_{j=1}^{n} \gcd(j, n)$ be the mean gcd-sum function, and let $k \ge 5$ be
+an integer. There is a real polynomial $P$ such that for every $\varepsilon > 0$, as
+$x \to \infty$,
+
+$$\sum_{1 \le n \le x} A(n)^k = x P(\log x) +
+O_{k,\varepsilon}\left(x^{1 + 2\varepsilon - 42/(13 \cdot 2^k - 9)}\right).$$
 
 ## Depends on
 
-- [Gcd Sum Mean](gcd-sum-mean.md)
+- [The mean gcd-sum function](gcd-sum-mean.md)
 
 ## Sources
 

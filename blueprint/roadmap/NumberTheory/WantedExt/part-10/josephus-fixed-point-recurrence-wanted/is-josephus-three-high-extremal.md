@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsJosephusThreeHighExtremal
 ---
 
-# Is Josephus Three High Extremal
+# High extremal points of the Josephus function $J_3$
 
-`n` is a high extremal point of the Josephus function `J₃`: `n ≥ 1` and
-`J₃(n) ∈ {n - 1, n}`.
+**High extremal points of the Josephus function $J_3$.** A natural number $n$ is a high
+extremal point of the Josephus function $J_3$ (elimination step $3$) when $n \ge 1$ and either
+$J_3(n) = n$ or $J_3(n) = n - 1$.
 
 ## Depends on
 

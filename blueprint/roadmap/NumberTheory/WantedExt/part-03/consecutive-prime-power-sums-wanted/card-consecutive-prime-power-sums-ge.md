@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_consecutivePrimePowerSums_ge
 ---
 
-# Card consecutive Prime Power Sums ge
+# Lower bound for the number of sums of consecutive prime powers
 
-Theorem 2: for `k > 1`,
-`s_k(x) ≥ M²/2 ≥ (1 + o(1)) (k + 1)² x^{2/(k+1)} / (2 (log x)^{2k/(k+1)})` with
-`M = M(x, k)`. The extraction lost the square on `M` (superscripts are flattened throughout the
-record). The `1 + o(1)` is stated as: for every `ε > 0`, the bound with factor `1 - ε` holds
-for all sufficiently large `x`.
+**Lower bound for the number of sums of consecutive prime powers.** Let $p_1 < p_2 < \cdots$
+be the primes and let $k > 1$ be a natural number. For a natural number $x$ let $s_k(x)$ be the
+number of pairs $(\ell, m)$ of integers with $0 \le \ell < x$ and $1 \le m \le x$ such that
+$p_{\ell+1}^k + \cdots + p_{\ell+m}^k \le x$, and let $M(x, k)$ be the largest $m \le x$ with
+$p_1^k + \cdots + p_m^k \le x$. Then $M(x, k)^2 / 2 \le s_k(x)$ for every $x$, and for every
+real $\varepsilon > 0$, for all sufficiently large $x$,
+$(1 - \varepsilon) (k + 1)^2 x^{2/(k+1)} / \bigl(2 (\log x)^{2k/(k+1)}\bigr) \le M(x, k)^2 / 2$.
 
 ## Depends on
 

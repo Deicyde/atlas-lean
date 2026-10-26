@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.alternatingHyperharmonic_typeII_eq_sum
 ---
 
-# Alternating Hyperharmonic type II eq sum
+# Explicit formula for type II alternating hyperharmonic numbers
 
-Lemma 3: for `r, n, p ≥ 1`, the type II generalized alternating hyperharmonic numbers satisfy
-`H_n^{(p,r,2)} = ∑_{m=0}^{r-1} ∑_{j=0}^{r-1-m} a(r, m, j) n^j H̄_n^{(p-m)}`, with `a = liCoeffA`.
+**Explicit formula for type II alternating hyperharmonic numbers.** For real $s$ write
+$\overline{H}_n^{(s)} = \sum_{i=1}^{n} (-1)^{i-1}/i^s$ for the alternating generalized harmonic
+numbers. For a natural number $p$, the type II generalized alternating hyperharmonic numbers are
+$H_n^{(p,1,2)} = \overline{H}_n^{(p)}$ and $H_n^{(p,r+1,2)} = \sum_{k=1}^{n} H_k^{(p,r,2)}$. Let
+$a(r, m, j)$ be Li's rational coefficients. Then for all natural numbers $r, n, p \ge 1$,
+
+$$
+H_n^{(p,r,2)} = \sum_{m=0}^{r-1} \sum_{j=0}^{r-1-m} a(r, m, j)\, n^j\, \overline{H}_n^{(p-m)},
+$$
+
+where the index $p - m$ is a real number and may be negative.
 
 ## Depends on
 
-- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
-- [Li Coeff A](li-coeff-a.md)
-- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
+- [Alternating generalized harmonic numbers](alternating-generalized-harmonic.md)
+- [Li's coefficients $a(r, m, j)$](li-coeff-a.md)
+- [Signed iterated partial sums](signed-iterated-partial-sum.md)
 
 ## Sources
 

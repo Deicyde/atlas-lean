@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_W2022
 ---
 
-# Lower Bound W2022
+# White's lower bound for the minimum-overlap constant (statement)
 
-Source-reported exact terminating-decimal lower bound `0.379005 ≤ C₁ᵦ`.
+**White's lower bound for the minimum-overlap constant (statement).** The statement that the
+continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $0.379005 \le C_{1b}$, where
+$0.379005$ is the exact rational number $379005/1000000$.
 
 ## Depends on
 

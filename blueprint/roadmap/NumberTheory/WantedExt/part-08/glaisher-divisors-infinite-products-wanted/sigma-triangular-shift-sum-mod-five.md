@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sigma_triangular_shift_sum_mod_five
 ---
 
-# Sigma triangular shift sum mod five
+# A congruence modulo 5 for divisor sums over triangular shifts
 
-For `n ≥ 1`, `∑_{j ≥ 0} σ(2n + 1 - j(j+1))` is `1` mod 5 when `n = 5k(k+1)/2` for
-some `k`, and `0` mod 5 otherwise.
+**A congruence modulo 5 for divisor sums over triangular shifts.** Let $\sigma$ be the
+sum-of-divisors function, with $\sigma(r) = 0$ for $r \le 0$. For every integer $n \ge 1$, the sum
+$\sum_{j=0}^{n} \sigma\bigl(2n + 1 - j(j+1)\bigr)$ is congruent to $1$ modulo $5$ if
+$n = 5k(k+1)/2$ for some integer $k \ge 0$, and to $0$ modulo $5$ otherwise.
 
 ## Depends on
 

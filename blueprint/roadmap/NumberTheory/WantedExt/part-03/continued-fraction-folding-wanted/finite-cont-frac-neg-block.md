@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.finiteContFrac_neg_block
 ---
 
-# Finite Cont Frac neg block
+# Normalizing a negated block
 
-Normalizing a negated block: for positive integers `a₁, …, aₜ` with `t ≥ 2`,
-`[…, x, -aₜ, -aₜ₋₁, …, -a₁] = […, x - 1, 1, aₜ - 1, aₜ₋₁, …, a₁]`.
+**Normalizing a negated block.** Let $x \ge 0$ be an integer, let $t \ge 2$ and let
+$a_1, \dots, a_t$ be integers with $a_i \ge 1$ for every $i$. Then for every finite list of
+integers $b_1, \dots, b_m$ ($m \ge 0$), the finite continued fractions satisfy
+$[b_1, \dots, b_m, x, -a_t, -a_{t-1}, \dots, -a_1] =
+[b_1, \dots, b_m, x - 1, 1, a_t - 1, a_{t-1}, \dots, a_1]$.
 
 ## Depends on
 
-- [Finite Cont Frac](finite-cont-frac.md)
+- [Value of a finite continued fraction](finite-cont-frac.md)
 
 ## Sources
 

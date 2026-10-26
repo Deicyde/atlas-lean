@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.digitSumRemainder_zero
 ---
 
-# Digit Sum Remainder zero
+# The Trollope–Delange remainder vanishes at zero
 
-`J(0) = 0`.
+**The Trollope–Delange remainder vanishes at zero.** For every natural number $q$, the
+remainder $J$ of the Trollope–Delange formula in base $q$ satisfies $J(0) = 0$.
 
 ## Depends on
 
-- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Trollope–Delange remainder](digit-sum-remainder.md)
 
 ## Proof depends on
 
-- [Trollope Delange Series](trollope-delange-series.md)
-- [Trollope Delange Series zero](trollope-delange-series-zero.md)
+- [Delange's series](trollope-delange-series.md)
+- [Delange's series vanishes at zero](trollope-delange-series-zero.md)
 
 ## Sources
 

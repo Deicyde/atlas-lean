@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusRepCount_pair_sub_ge
 ---
 
-# Frobenius Rep Count pair sub ge
+# Representation counts above a shifted two-generator Frobenius number
 
-For coprime positive `a < b`, `s, k ≥ 0` and an integer `m > g(a, b; s) + ka`, every
-`j ≥ 0` has `d(m - ja; a, b) ≥ d(g(a, b; s) + (k - j)a; a, b)`.
+**Representation counts above a shifted two-generator Frobenius number.** Let $a < b$ be
+coprime positive integers, let $s$ and $k$ be natural numbers, let $g$ be the generalized Frobenius
+number $g(a, b; s)$, and for an integer $m$ let $d(m; a, b)$ be the number of representations of
+$m$ by $(a, b)$. If $m$ is an integer with $m > g + ka$, then for every natural number $j$,
+$d(m - ja; a, b) \ge d(g + (k - j)a; a, b)$.
 
 ## Depends on
 

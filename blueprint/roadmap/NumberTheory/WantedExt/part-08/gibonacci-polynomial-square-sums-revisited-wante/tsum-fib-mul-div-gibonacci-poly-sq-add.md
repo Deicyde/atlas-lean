@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tsum_fib_mul_div_gibonacciPoly_sq_add
 ---
 
-# Tsum fib mul div gibonacci Poly sq add
+# Gibonacci polynomial square sums at even multiples of the index
 
-Theorem 3.1, corrected sign: for `x > 0`, positive `k` and `g ∈ {f, l}` with
-`(μ, ν) = (1, -1)` for `g = f` and `(Δ², 1)` for `g = l`,
-`Σ_{n ≥ 1} (-1)^{k+1} μ ν f_r f_{2k} / (g_{2nk}² + (-1)^k μ ν f_k²) = g_{k+r}/g_k - α^r`.
-The record prints the numerator as `(-1)^k μ ν f_r f_{2k}`, which negates the left side and is
-false (`x = 1`, `g = f`, `k = r = 1`: the printed sum is `Σ 1/(F_{2n}² + 1) = (√5 - 1)/2`, the right
-side is `1 - (1 + √5)/2`); the paper's proof (displays for `g = f` and `g = l`) and its `r = 1`
-corollaries (`Σ 1/(F_{2n}² + 1) = -1/2 + √5/2`) use `(-1)^{k+1} μ ν`, which is stated. The paper
-also asks `r > 0`; at `r = 0` both sides vanish.
+**Gibonacci polynomial square sums at even multiples of the index.** Let $f_n$ and $l_n$
+denote the Fibonacci and Lucas polynomials, given by $f_0 = 0$, $f_1 = 1$, $l_0 = 2$, $l_1 = x$
+and $g_{n+2} = x g_{n+1} + g_n$ for $g \in \{f, l\}$, evaluated at a real number $x > 0$, and
+let $\alpha = (x + \sqrt{x^2 + 4})/2$. Let $g$ be $f$ with $(\mu, \nu) = (1, -1)$, or $l$ with
+$(\mu, \nu) = (x^2 + 4, 1)$. Then for every positive integer $k$ and every natural number $r$,
+
+$$\sum_{n \ge 1} \frac{(-1)^{k+1} \mu \nu f_r f_{2k}}{g_{2nk}^2 + (-1)^k \mu \nu f_k^2}
+= \frac{g_{k+r}}{g_k} - \alpha^r.$$
+
+The extracted statement of this theorem prints the numerator with $(-1)^k$ in place of
+$(-1)^{k+1}$, which negates the left side and makes the identity false (for $x = 1$, $g = f$ and
+$k = r = 1$ that left side is $(\sqrt{5} - 1)/2$ while the right side is $(1 - \sqrt{5})/2$); the
+paper's proof and its corollaries use the sign stated here.
 
 ## Depends on
 

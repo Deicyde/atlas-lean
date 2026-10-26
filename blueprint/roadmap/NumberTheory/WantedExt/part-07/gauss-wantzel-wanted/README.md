@@ -4,6 +4,6 @@ navigation: module
 
 # Gauss Wantzel
 
-- [Is Constructible](is-constructible.md)
-- [Gauss Wantzel Number](gauss-wantzel-number.md)
-- [Gauss wantzel constructible polygon](gauss-wantzel-constructible-polygon.md)
+- [Constructible real numbers](is-constructible.md)
+- [Gauss–Wantzel number](gauss-wantzel-number.md)
+- [Gauss–Wantzel theorem](gauss-wantzel-constructible-polygon.md)

@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.mulOrdMod
 ---
 
-# Mul Ord Mod
+# Multiplicative order modulo $n$
 
-The paper's `ord_n(a)`: the multiplicative order of the residue
-class of `a` in `(ZMod n)ˣ`, and `0` when `a` is not coprime to
-`n`.
+**Multiplicative order modulo $n$.** For natural numbers $n$ and $a$,
+$\operatorname{ord}_n(a)$ is the multiplicative order of the residue class of $a$ in the
+unit group $(\mathbb{Z}/n\mathbb{Z})^\times$ when $a$ is coprime to $n$, and $0$
+otherwise.
 
 ## Depends on
 

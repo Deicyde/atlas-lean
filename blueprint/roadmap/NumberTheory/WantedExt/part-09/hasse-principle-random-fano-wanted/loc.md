@@ -5,19 +5,22 @@ statement: formalized
 lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝕍Loc
 ---
 
-# 𝕍Loc
+# Everywhere locally soluble hypersurfaces
 
-The set `𝕍ˡᵒᶜ_{d,n}` of everywhere locally soluble degree-`d` hypersurfaces in `ℙⁿ`:
-those `V` for which `V(𝔸_ℚ) ≠ ∅`, i.e., which have a solution in the adele ring.
+**Everywhere locally soluble hypersurfaces.** $\mathbb{V}^{\mathrm{loc}}_{d,n}$ is the set of
+degree-$d$ hypersurfaces $V \in \mathbb{V}_{d,n}$ in $\mathbb{P}^n$ that are everywhere locally
+soluble, that is, with $V(\mathbb{A}_\mathbb{Q}) \ne \emptyset$: the chosen homogeneous polynomial
+representing $V$ has a solution in the adele ring $\mathbb{A}_\mathbb{Q}$, namely a zero given by
+$n + 1$ adeles that generate the unit ideal of $\mathbb{A}_\mathbb{Q}$.
 
 ## Depends on
 
-- [𝕍](untitled-2.md)
+- [Parameter space of hypersurfaces](untitled-2.md)
 
 ## Proof depends on
 
-- [Has Solutions In](has-solutions-in.md)
-- [𝔸](untitled.md)
+- [Unimodular solutions of a polynomial](has-solutions-in.md)
+- [Adele ring of the rationals](untitled.md)
 
 ## Sources
 

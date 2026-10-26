@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHyperharmonic_of_lt
 ---
 
-# Generalized Hyperharmonic of lt
+# Generalized hyperharmonic numbers vanish for $k > n$
 
-`H_n^{[r]}(k) = 0` for `k > n`.
+**Generalized hyperharmonic numbers vanish for $k > n$.** For all natural numbers $n$ and $k$
+with $n < k$ and every complex number $r$, the generalized hyperharmonic number $H_n^{[r]}(k)$
+equals $0$.
 
 ## Depends on
 
-- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Generalized hyperharmonic numbers](generalized-hyperharmonic.md)
 
 ## Sources
 

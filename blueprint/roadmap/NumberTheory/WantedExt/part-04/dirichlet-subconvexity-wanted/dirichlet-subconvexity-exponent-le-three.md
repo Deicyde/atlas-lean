@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DirichletSubconvexity.dirichletSubconvexityExponent_le_threeSixteenths
 ---
 
-# Dirichlet Subconvexity Exponent le three Sixteenths
+# The Dirichlet subconvexity exponent is at most 3/16
 
-The catalogue's exact upper bound `C62b ≤ 3/16`.
+**The Dirichlet subconvexity exponent is at most 3/16.** The conductor-aspect Dirichlet
+subconvexity exponent, an extended real number, is at most $3/16$.
 
 ## Depends on
 

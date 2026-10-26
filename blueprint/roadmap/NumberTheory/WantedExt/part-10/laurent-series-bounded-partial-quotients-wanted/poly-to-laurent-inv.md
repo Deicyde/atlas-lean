@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.polyToLaurentInv
 ---
 
-# Poly To Laurent Inv
+# Polynomials as Laurent series in the inverse variable
 
-The embedding `𝔽_q[x] → 𝔽_q((x⁻¹))`, `x ↦ laurentInvVar K`.
+**Polynomials as Laurent series in the inverse variable.** Let $K$ be a field. The embedding
+$K[x] \to K((x^{-1}))$ is the $K$-algebra homomorphism that sends $x$ to the element $x$ of
+$K((x^{-1}))$, that is, it evaluates a polynomial at $x$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
 
 ## Sources
 

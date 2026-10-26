@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_YLTLYSTYLLGDHZSWZSHMELCZX2026_SimpleTES
 ---
 
-# Upper Bound YLTLYSTYLLGDHZSWZSHMELCZX2026 Simple TES
+# SimpleTES 2026 upper bound statement for the minimum overlap constant
 
-Source-reported SimpleTES 2026 upper bound.
+**SimpleTES 2026 upper bound statement for the minimum overlap constant.** This is the
+proposition that the continuous Erdős minimum-overlap constant $C_{1b}$ is at most $0.380868$.
 
 ## Depends on
 

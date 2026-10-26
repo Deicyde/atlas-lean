@@ -5,13 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.watson_cosh_integral_digamma
 ---
 
-# Watson cosh integral digamma
+# Digamma evaluation of a hyperbolic Laplace integral
 
-Lemma 1 states both convergence and the four-digamma evaluation of the improper
-integral. Here `b` is positive real and `α, β` are complex. In addition to the
-printed condition `re (α + b - β) > 0`, the statement requires
-`re (α + b + β) > 0`; this is necessary because the integrand is even in `β`.
-Mathlib's `Complex.digamma` is used for `Ψ`.
+**Digamma evaluation of a hyperbolic Laplace integral.** Let $b > 0$ be a real number and let
+$\alpha, \beta$ be complex numbers with $\operatorname{Re}(\alpha + b - \beta) > 0$ and
+$\operatorname{Re}(\alpha + b + \beta) > 0$. Then the function
+$x \mapsto e^{-\alpha x} \cosh(\beta x) / \cosh(bx)$ is integrable on $(0, \infty)$, and, writing
+$\psi$ for the digamma function,
+
+$$
+\int_0^\infty \frac{e^{-\alpha x} \cosh(\beta x)}{\cosh(bx)} \, dx =
+\frac{1}{4b} \Bigl[ \psi\bigl(\tfrac34 + \tfrac{\alpha+\beta}{4b}\bigr) -
+\psi\bigl(\tfrac14 + \tfrac{\alpha-\beta}{4b}\bigr) +
+\psi\bigl(\tfrac34 + \tfrac{\alpha-\beta}{4b}\bigr) -
+\psi\bigl(\tfrac14 + \tfrac{\alpha+\beta}{4b}\bigr) \Bigr].
+$$
+
+The source prints only the condition $\operatorname{Re}(\alpha + b - \beta) > 0$; the condition
+$\operatorname{Re}(\alpha + b + \beta) > 0$ is also needed, since the integrand is even in $\beta$.
 
 ## Depends on
 

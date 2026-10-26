@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_eleven
 ---
 
-# Ramanujan Tau succ mod Eq pentagonal sum eleven
+# Ramanujan's $\tau$ modulo $11$ via pentagonal numbers
 
-`τ(n + 1) ≡ ∑ (-1)^(l + m + s + r) (mod 11)`, the sum over generalized pentagonal indices
-with `n = P(l) + P(m) + 11 P(s) + 11 P(r)`, `P(r) = r(3r - 1)/2`.
+**Ramanujan's $\tau$ modulo $11$ via pentagonal numbers.** Let $\tau = \tau_{24}$ be Ramanujan's
+tau function, where $\tau_k$ is the generalized tau function, and let $P(r) = r(3r - 1)/2$ for
+integers $r$. For every integer $n \ge 1$, $\tau(n + 1)$ is congruent modulo $11$ to the sum of
+$(-1)^{l + m + s + r}$ over all quadruples of integers $(l, m, s, r)$ with
+$P(l) + P(m) + 11P(s) + 11P(r) = n$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

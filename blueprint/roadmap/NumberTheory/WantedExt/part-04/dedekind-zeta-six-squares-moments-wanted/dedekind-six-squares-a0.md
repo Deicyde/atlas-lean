@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.dedekindSixSquaresA0
 ---
 
-# Dedekind Six Squares A0
+# The exponent $a_{0,\ell}$
 
-The exponent `a_{0,ℓ} = 1 + ∑_{i=1}^{⌊ℓ/2⌋} C(ℓ, 2i) (2i)!/(i!(i+1)!)`, the multiplicity of
-the constant term in `a_K(p)^ℓ`; `(2i)!/(i!(i+1)!)` is the Catalan number `catalan i`.
+**The exponent $a_{0,\ell}$.** For a natural number $\ell$, define
+
+$$a_{0,\ell} = 1 + \sum_{i=1}^{\lfloor \ell/2 \rfloor} \binom{\ell}{2i} C_i,$$
+
+where $C_i = (2i)!/(i!\,(i+1)!)$ is the $i$-th Catalan number.
 
 ## Depends on
 

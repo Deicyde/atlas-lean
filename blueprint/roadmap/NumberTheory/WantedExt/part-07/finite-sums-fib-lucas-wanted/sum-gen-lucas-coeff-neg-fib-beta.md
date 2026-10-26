@@ -5,18 +5,24 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.sum_genLucasCoeff_neg_fibBeta
 ---
 
-# Corollary 12
+# A vanishing sum of the corrected Genocchi–Lucas coefficients
 
-**Corollary 12** (corrected): the `x = -β`
-specialization of corrected Theorem 11,
-`∑_{n=0}^m C(m,n) cₙ (-β)^{m-n} = 0` for `m ≥ 1`; as
-printed (with `β^{m-n}` and without the correction term in
-`cₙ`) the sum at `m = 2` is `-10 + 4√5`, not `0`.
+**A vanishing sum of the corrected Genocchi–Lucas coefficients.** Let
+$\beta = (1 - \sqrt{5})/2$, let $G_k$ be the Genocchi numbers and $L_n$ the Lucas numbers, and for
+each natural number $n$ let
+
+$$c_n = \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} G_k \frac{L_{n-k+1}}{n-k+1} +
+2\sqrt{5}^{\,n+1} \frac{G_{n+1}}{n+1}.$$
+
+For every natural number $m \ge 1$, $\sum_{n=0}^{m} \binom{m}{n} c_n (-\beta)^{m-n} = 0$.
+
+This is the case $x = -\beta$ of the corrected Theorem 11. As printed, with $\beta^{m-n}$ in place
+of $(-\beta)^{m-n}$ and without the last term of $c_n$, the sum at $m = 2$ is $-10 + 4\sqrt{5}$.
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
-- [Gen Lucas Coeff](gen-lucas-coeff.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
+- [Genocchi–Lucas coefficients](gen-lucas-coeff.md)
 
 ## Sources
 

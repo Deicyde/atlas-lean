@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.genCohnTree_neg_snd_eq
 ---
 
-# Gen Cohn Tree neg snd eq
+# Shape of the generalized Cohn matrices for $\ell = -k$
 
-Lemma 4.5: for an irreducible fraction `t ∈ (0, 1)` with Farey vertex `(r, t, s)`,
-`C_t(k, -k) = [[u_t, m_t], [*, (3 + 3k)m_t - u_t - k]]`, where `u_t` is the characteristic
-number of `(m_r, m_t, m_s)`.
+**Shape of the generalized Cohn matrices for $\ell = -k$.** Let $k$ be a natural number and
+$w$ a path, and suppose that the middle fraction $n/d$ of the vertex of the Farey tree at $w$
+satisfies $0 < n < d$. Let $(a, b, c)$ be the vertex of the $k$-generalized Markov tree
+$\mathrm{MT}(k)$ at $w$, and let $C$ be the middle matrix of the vertex of the $k$-generalized
+Cohn tree $\mathrm{GCT}(k, -k)$ at $w$. Then there is a natural number $u$ that is a
+characteristic number of $(a, b, c)$ such that $C_{11} = u$, $C_{12} = b$ and
+$C_{22} = (3 + 3k)b - u - k$.
 
 ## Depends on
 
-- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
-- [Farey Tree](farey-tree.md)
-- [Gen Cohn Tree](gen-cohn-tree.md)
-- [Gen Markov Tree](gen-markov-tree.md)
+- [Characteristic number](is-gen-markov-char-number.md)
+- [The Farey tree](farey-tree.md)
+- [The $k$-generalized Cohn tree](gen-cohn-tree.md)
+- [Generalized Markov tree](gen-markov-tree.md)
 
 ## Sources
 

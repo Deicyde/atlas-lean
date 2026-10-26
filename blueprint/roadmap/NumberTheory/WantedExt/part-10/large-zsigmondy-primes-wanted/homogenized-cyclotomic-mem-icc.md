@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.homogenizedCyclotomic_mem_Icc
 ---
 
-# Homogenized Cyclotomic mem Icc
+# Bounds for homogenized cyclotomic values
 
-For positive integers `a > b` and `n`, `(a - b)^φ(n) ≤ Φ_n(a, b) ≤ (a + b)^φ(n)`.
+**Bounds for homogenized cyclotomic values.** Let $a > b$ be positive integers and let
+$n \ge 1$. Then the homogenized cyclotomic value $\Phi_n(a, b)$ satisfies
+$(a - b)^{\varphi(n)} \le \Phi_n(a, b) \le (a + b)^{\varphi(n)}$, where $\varphi$ is Euler's
+totient function.
 
 ## Depends on
 

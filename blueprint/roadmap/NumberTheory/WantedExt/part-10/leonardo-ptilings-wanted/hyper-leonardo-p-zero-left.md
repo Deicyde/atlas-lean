@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.hyperLeonardoP_zero_left
 ---
 
-# Hyper Leonardo P zero left
+# Hyper Leonardo $p$-numbers at $n = 0$
 
-`𝓛^{(k)}_{p,0} = 1`.
+**Hyper Leonardo $p$-numbers at $n = 0$.** For all natural numbers $p$ and $k$, the hyper
+Leonardo $p$-number $\mathcal{L}^{(k)}_{p,0}$ equals $1$.
 
 ## Depends on
 
-- [Hyper Leonardo P](hyper-leonardo-p.md)
+- [Hyper Leonardo $p$-numbers](hyper-leonardo-p.md)
 
 ## Sources
 

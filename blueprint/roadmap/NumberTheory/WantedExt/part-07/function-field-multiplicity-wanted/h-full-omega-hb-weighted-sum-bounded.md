@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.hFullOmegaHB_weighted_sum_bounded
 ---
 
-# H Full Omega HB weighted sum bounded
+# Uniform bound for the weighted coefficients of $B_{h,N_h}(u, z)$
 
-Lemma 4: for `h ≥ 2`, `A`, and `σ > 1/(h+1)` there is a constant `c` with
-`∑_{0 ≤ a ≤ n} |B_z(a)| q^{-σa} ≤ c` for all `|z| ≤ A` and `n ≥ 2`, where `B_z(a)` are the
-coefficients of `B_{h,N_h}(u, z)`.
+**Uniform bound for the weighted coefficients of $B_{h,N_h}(u, z)$.** Let $F$ be a finite
+field with $q$ elements, let $h \ge 2$ be a natural number, and let $A$ and $\sigma$ be real
+numbers with $\sigma > 1/(h + 1)$. Then there is a real constant $c$ such that for every complex
+number $z$ with $|z| \le A$ and every natural number $n \ge 2$,
+
+$$\sum_{a=0}^{n} |B_z(a)| \, q^{-\sigma a} \le c,$$
+
+where $B_z(a)$ is the coefficient of $u^a$ in the series $B_{h,N_h}(u, z)$ attached to the
+$h$-full polynomials over $F$.
 
 ## Depends on
 
-- [H Full Omega HB](h-full-omega-hb.md)
+- [The coefficients $B_z(n)$ of the $h$-full series](h-full-omega-hb.md)
 
 ## Sources
 

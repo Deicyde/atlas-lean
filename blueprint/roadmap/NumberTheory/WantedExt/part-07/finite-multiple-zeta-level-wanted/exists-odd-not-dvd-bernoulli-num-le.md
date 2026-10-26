@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_odd_not_dvd_bernoulli_num_le
 ---
 
-# Proposition 5
+# A small odd $k$ with $p \nmid B_{p-k}$
 
-**Proposition 5.** For every prime `p ≥ 11` there is an odd `k ≥ 3` with
-`p ∤ B_{p-k}` and `k ≤ (p - 3)/2` if `p ≡ 1 (mod 4)`, `k ≤ (p - 5)/2` if `p ≡ 3 (mod 4)`;
-equivalently `g_p` (the least such odd `k`, Definition 5.5 of the paper) is at most that
-bound. `p ∤ B_{p-k}` means `p` does not divide the numerator.
+**A small odd $k$ with $p \nmid B_{p-k}$.** For every prime $p \ge 11$ there is an odd
+integer $k \ge 3$ such that $p$ does not divide the numerator of the Bernoulli number $B_{p-k}$
+and $k \le (p-3)/2$ if $p \equiv 1 \pmod 4$, while $k \le (p-5)/2$ if
+$p \equiv 3 \pmod 4$.
 
-The record's `ðp` is the paper's `g_p`.
+Equivalently, the least such odd $k$ is at most this bound. Since $p - k$ is even and at least
+$2$, the convention for $B_1$ does not matter.
 
 ## Depends on
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC8_fortyNine_mul_add_even
 ---
 
-# Initial Repetitions C8 forty Nine mul add even
+# $c_8$ is even on six residue classes modulo $49$
 
-Nyirenda and Mugwangwavari: `c₈(49n + r)` is even for all `n ≥ 0` and
-`r ∈ {6, 20, 27, 34, 41, 48}`.
+**$c_8$ is even on six residue classes modulo $49$.** Let $c_8$ be the initial-repetitions
+partition function of Nyirenda and Mugwangwavari. For every integer $n \ge 0$ and every
+$r \in \{6, 20, 27, 34, 41, 48\}$, the number $c_8(49n + r)$ is even.
+
+This result is due to Nyirenda and Mugwangwavari.
 
 ## Depends on
 
-- [Initial Repetitions C8](initial-repetitions-c8.md)
+- [The partition function $c_8$](initial-repetitions-c8.md)
 
 ## Sources
 

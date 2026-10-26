@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrinRecurrence
 ---
 
-# Padovan Perrin Recurrence
+# Generalized Padovan–Perrin recurrence
 
-The `([k]; p; s)`-generalized Padovan–Perrin recurrence of order `s + p`,
-`v n = k₁ v (n - s) + k₂ v (n - s - p)` for `n ≥ s + p` (equation (1)), as a Mathlib
-`LinearRecurrence`: `v (n + (s + p)) = k₂ v n + k₁ v (n + p)`.
+**Generalized Padovan–Perrin recurrence.** Let $R$ be a commutative semiring, $k_1, k_2 \in R$
+and $p, s \in \mathbb{N}$. The $([k]; p; s)$-generalized Padovan–Perrin recurrence is the linear
+recurrence of order $s + p$ with coefficients $c_i = [i = 0] \, k_2 + [i = p] \, k_1$ for
+$0 \le i < s + p$, where $[\cdot]$ is $1$ if the condition holds and $0$ otherwise: a sequence
+$v \colon \mathbb{N} \to R$ solves it when $v_{n+s+p} = \sum_{i=0}^{s+p-1} c_i v_{n+i}$ for every
+$n \ge 0$. For $s > 0$ this reads $v_{n+s+p} = k_1 v_{n+p} + k_2 v_n$, that is,
+$v_n = k_1 v_{n-s} + k_2 v_{n-s-p}$ for $n \ge s + p$ (equation (1)).
 
 ## Depends on
 

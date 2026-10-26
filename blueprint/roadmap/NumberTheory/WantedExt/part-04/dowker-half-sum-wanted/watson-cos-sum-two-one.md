@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.watsonCosSum_two_one
 ---
 
-# Watson Cos Sum two one
+# Watson's cosine sum at $n = 2$, $\nu = 1$
 
-The characteristic value `C_2(1) = -1` fixes the cosine-sum convention.
+**Watson's cosine sum at $n = 2$, $\nu = 1$.** The cosine sum
+$C_n(\nu) = \sum_{l=1}^{n-1} \cos(2 \pi \nu l / n) / \sin(\pi l / n)$ satisfies $C_2(1) = -1$.
 
 ## Depends on
 
-- [Watson Cos Sum](watson-cos-sum.md)
+- [Generalized Watson trigonometric sum](watson-cos-sum.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_solSpace_eq_span_fundamental
 ---
 
-# Padovan Perrin sol Space eq span fundamental
+# The Fibonacci fundamental system spans the solutions
 
-The solutions of the `([k]; p; s)`-Padovan–Perrin recurrence form a module (Mathlib's
-`solSpace`), and the Fibonacci fundamental system `v⁽¹⁾, …, v⁽ˢ⁺ᵖ⁾` spans it. Stated over any
-commutative ring instead of `ℝ`.
+**The Fibonacci fundamental system spans the solutions.** Let $R$ be a commutative ring, let
+$k_1, k_2 \in R$ and let $p, s$ be natural numbers. For $1 \le j \le s + p$ let $v^{(j)}$ be the
+solution of the Padovan–Perrin recurrence with parameters $k_1, k_2, p, s$ whose initial values
+are $v^{(j)}(n) = 1$ if $n + 1 = j$ and $v^{(j)}(n) = 0$ otherwise, for $n < s + p$. Then the
+submodule of $R^{\mathbb{N}}$ formed by all solutions of this recurrence is the submodule spanned
+by $v^{(1)}, \dots, v^{(s+p)}$.
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

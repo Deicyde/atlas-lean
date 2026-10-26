@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.insertDigit_25011_leadingZeros
 ---
 
-# Insert Digit 25011 leading Zeros
+# Inserting a digit among the leading zeros of 25011
 
-Inserting `1` at position `7` of `25011`, between its second and third leading zeros, produces
-`10025011`, illustrating the insertion operation in Theorem 1. This is a characteristic
-computation and has no encoding deviation.
+**Inserting a digit among the leading zeros of 25011.** Inserting the digit $1$ in position $7$
+of $25011$, where positions are counted from $0$ at the units digit (so the new digit goes
+between the second and third leading zeros), gives $10025011$.
 
 ## Depends on
 
-- [Insert Digit](insert-digit.md)
+- [Inserting a digit](insert-digit.md)
 
 ## Sources
 

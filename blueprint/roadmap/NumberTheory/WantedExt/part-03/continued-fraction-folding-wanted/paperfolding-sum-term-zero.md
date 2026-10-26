@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.paperfoldingSumTerm_zero
 ---
 
-# Paperfolding Sum Term zero
+# First term of the paperfolding sums
 
-`s₀ = 1`.
+**First term of the paperfolding sums.** For every sequence $x$ of natural numbers, the term
+$s_0$ of the paperfolding sum terms defined by $x$ equals $1$.
 
 ## Depends on
 
-- [Paperfolding Sum Term](paperfolding-sum-term.md)
+- [Terms of the paperfolding sums](paperfolding-sum-term.md)
 
 ## Sources
 

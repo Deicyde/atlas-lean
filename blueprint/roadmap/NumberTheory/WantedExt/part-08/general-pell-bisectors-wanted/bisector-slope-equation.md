@@ -5,13 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.bisector_slope_equation
 ---
 
-# Bisector slope equation
+# Angle bisectors satisfy the bisector equation
 
-Angle bisectors: if `|a| ≠ |b|`, `c ≠ 0`, and the lines `y = c x` and `y = -c⁻¹ x` bisect
-the angles between `y = a x` and `y = b x`, then `(a - c)² (b² + 1) = (b - c)² (a² + 1)` (1).
+**Angle bisectors satisfy the bisector equation.** Let $a, b, c$ be real numbers with
+$|a| \ne |b|$ and $c \ne 0$, and suppose that the lines $y = cx$ and $y = -c^{-1} x$ both bisect
+the angles between the lines $y = ax$ and $y = bx$, that is,
 
-A line `y = s x` bisects the angles between `y = a x` and `y = b x` when its point `(1, s)` is
-equidistant from both lines: `|a - s| / √(a² + 1) = |b - s| / √(b² + 1)`.
+$$
+\frac{|a - c|}{\sqrt{a^2 + 1}} = \frac{|b - c|}{\sqrt{b^2 + 1}} \quad\text{and}\quad
+\frac{|a + c^{-1}|}{\sqrt{a^2 + 1}} = \frac{|b + c^{-1}|}{\sqrt{b^2 + 1}}.
+$$
+
+Then $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$.
+
+A line $y = sx$ bisects the angles between $y = ax$ and $y = bx$ exactly when the point $(1, s)$
+is equidistant from both lines, that is, when $|a - s| / \sqrt{a^2 + 1} = |b - s| / \sqrt{b^2 + 1}$.
 
 ## Depends on
 

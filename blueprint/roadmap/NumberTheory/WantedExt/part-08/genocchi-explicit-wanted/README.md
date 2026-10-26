@@ -4,11 +4,11 @@ navigation: module
 
 # Genocchi Explicit
 
-- [Diff Pow Eval](diff-pow-eval.md)
-- [Zerro U](zerro-u.md)
-- [Zerro H](zerro-h.md)
-- [Theorem 1](genocchi-number-eq-sum.md)
-- [Corollary 2](neg-one-pow-mul-bernoulli-eq-sum-zero.md)
-- [Corollary 2](neg-one-pow-mul-bernoulli-eq-sum-one.md)
-- [Lemma 3](zerro-u-succ.md)
+- [Iterated forward differences of a power](diff-pow-eval.md)
+- [The Zerroukhat–Khaldi sum $U(m, k)$](zerro-u.md)
+- [The Zerroukhat–Khaldi sum $H_{n,m}$](zerro-h.md)
+- [Explicit formula for Genocchi numbers via Stirling numbers](genocchi-number-eq-sum.md)
+- [Bernoulli numbers via forward differences at $0$](neg-one-pow-mul-bernoulli-eq-sum-zero.md)
+- [Bernoulli numbers via forward differences at $1$](neg-one-pow-mul-bernoulli-eq-sum-one.md)
+- [Recurrence for the Zerroukhat–Khaldi sums $U$](zerro-u-succ.md)
 - [Lemma 3](zerro-h-eq.md)

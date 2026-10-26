@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.smoothReciprocalTail_le_rpow_mul_smoothZeta
 ---
 
-# Lemma 8
+# Rankin's bound for reciprocal sums of smooth numbers
 
-**Lemma 8** (Nguyen and Pomerance), Rankin bound: for `2 ≤ y < x` and `0 < s < 1`,
-`S(x, y) ≤ x^{-s} ζ(1 - s, y)`, where `S(x, y) = ∑_{n > x, P(n) ≤ y} 1/n` and
-`ζ(σ, y) = ∑_{P(n) ≤ y} n^{-σ}` (both series converge).  The `y`-smooth positive integers
-(`P(n) ≤ y`, with `P(1) = 1`) are `Nat.smoothNumbers (⌊y⌋₊ + 1)`.
+**Rankin's bound for reciprocal sums of smooth numbers.** Let $x, y, s$ be real numbers with
+$2 \le y < x$ and $0 < s < 1$. Call a positive integer $y$-smooth if all its prime factors are
+at most $y$ (so $1$ is $y$-smooth). Let $S(x, y)$ be the sum of $1/n$ over the $y$-smooth
+integers $n > x$, and let $\zeta(\sigma, y)$ be the sum of $n^{-\sigma}$ over all $y$-smooth
+integers $n$. Then $S(x, y) \le x^{-s} \zeta(1 - s, y)$, where both series converge.
 
 ## Depends on
 

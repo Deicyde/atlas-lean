@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gcd_sqrt_expansion_coeffs
 ---
 
-# Gcd sqrt expansion coeffs
+# Gcd of the coefficients of $(u + \sqrt{v})^n$
 
-Let `u, v` be coprime positive integers with `√v` irrational, `(u + √v)^n = a_n + b_n √v`
-for `n ≥ 1`, and `D_n = gcd(a_n, b_n)`. (a) If `u² - v` is odd, `D_n = 1`; (b) if
-`u² - v ≡ 2 (mod 4)`, `D_{2n-1} = 2^{n-1}` and `D_{2n} = 2^n`; (c) if `u² - v ≡ 4 (mod 8)`,
-`D_{3n-2} = 2^{3n-3}`, `D_{3n-1} = 2^{3n-2}`, `D_{3n} = 2^{3n}`; (d) if `u² - v ≡ 0 (mod 8)`,
-`D_n = 2^{n-1}`; all for `n ≥ 1`.
+**Gcd of the coefficients of $(u + \sqrt{v})^n$.** Let $u, v$ be coprime positive integers
+with $\sqrt{v}$ irrational, let $a_n, b_n$ (for natural $n$) be integers with
+$(u + \sqrt{v})^n = a_n + b_n \sqrt{v}$ for every $n \ge 1$, and let $D_n \ge 0$ be the greatest
+common divisor of $a_n$ and $b_n$. Then for every $n \ge 1$:
+(a) if $u^2 - v$ is odd, then $D_n = 1$;
+(b) if $u^2 - v \equiv 2 \pmod 4$, then $D_{2n-1} = 2^{n-1}$ and $D_{2n} = 2^n$;
+(c) if $u^2 - v \equiv 4 \pmod 8$, then $D_{3n-2} = 2^{3n-3}$, $D_{3n-1} = 2^{3n-2}$ and
+$D_{3n} = 2^{3n}$;
+(d) if $u^2 - v \equiv 0 \pmod 8$, then $D_n = 2^{n-1}$.
 
 ## Depends on
 

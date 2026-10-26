@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.MeinardusHypotheses
 ---
 
-# Meinardus Hypotheses
+# Meinardus' hypotheses
 
-Meinardus' hypotheses (M1)-(M3) for weights `(bₖ)_{k ≥ 1}`, exponent `α`, residue `A`, and a
-continuation `G` of `B(s) = ∑ bₖ k^{-s}`: (M1) `B` converges for `ℜs > α` and equals `G` there,
-and `G(s) = A / (s - α) + R(s)` on `ℜs ≥ -C₀` with `R` holomorphic there, for some
-`0 < C₀ < 1`; (M2) `G(σ + it) = O((1 + |t|)^c)` uniformly for `σ ≥ -C₀` as `|t| → ∞`;
-(M3) with `g(τ) = ∑ bₖ e^{-kτ}`, `ℜ g(y + 2πix) - g(y) ≤ -C₃ y^{-ε}` for
-`y^{1+ε/2} ≤ |x| ≤ 1/2` and all small `y > 0`.
+**Meinardus' hypotheses.** Let $b_1, b_2, \dots$ be real weights (the value $b_0$ is unused),
+let $\alpha$ and $A$ be reals and let $G : \mathbb{C} \to \mathbb{C}$. The weights satisfy
+Meinardus' hypotheses (M1)–(M3) with exponent $\alpha$, residue $A$ and continuation $G$ if there
+is $C_0$ with $0 < C_0 < 1$ such that: (M1) for $\operatorname{Re} s > \alpha$ the Dirichlet series
+$B(s) = \sum_{k \ge 1} b_k k^{-s}$ converges absolutely and equals $G(s)$, and there is a function
+$R : \mathbb{C} \to \mathbb{C}$ that is complex differentiable at every point of the closed
+half-plane $\{s : \operatorname{Re} s \ge -C_0\}$ relative to that half-plane, with
+$G(s) = A/(s - \alpha) + R(s)$ for all $s \ne \alpha$ with $\operatorname{Re} s \ge -C_0$; (M2)
+there are $c > 0$ and reals $K$, $T$ with $|G(s)| \le K (1 + |\operatorname{Im} s|)^c$ whenever
+$\operatorname{Re} s \ge -C_0$ and $|\operatorname{Im} s| \ge T$; (M3) there are
+$\varepsilon > 0$, $C_3 > 0$ and $y_0 > 0$ such that, with
+$g(\tau) = \sum_{k \ge 1} b_k e^{-k\tau}$, the inequality
+$\operatorname{Re} g(y + 2\pi i x) - g(y) \le -C_3 y^{-\varepsilon}$ holds for all reals
+$x$, $y$ with $0 < y < y_0$ and $y^{1 + \varepsilon/2} \le |x| \le 1/2$.
 
 ## Depends on
 

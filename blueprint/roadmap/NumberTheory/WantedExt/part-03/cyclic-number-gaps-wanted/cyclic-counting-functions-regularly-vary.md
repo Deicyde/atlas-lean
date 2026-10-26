@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.cyclicCountingFunctions_regularlyVarying_index_one
 ---
 
-# Cyclic Counting Functions regularly Varying index one
+# The cyclic counting functions vary regularly with index one
 
-Campbell and Cohen, Theorem 1, regular variation: the counting functions `A(x)` of cyclic
-numbers, `π(x) = pc(x)` of (prime cyclic numbers =) primes, and `cc(x)` of composite cyclic
-numbers are regularly varying with index `1`, i.e. `F(λx)/F(x) → λ` as `x → ∞` for every
-`λ > 0`.
+**The cyclic counting functions vary regularly with index one.** For real $x$, let $A(x)$ be
+the number of cyclic numbers $m$ with $1 \le m \le x$, let $\pi(x)$ be the number of primes
+$p \le x$, and let $cc(x)$ be the number of composite cyclic numbers $m \le x$, that is, cyclic
+numbers $m > 1$ that are not prime. Then for every real $\lambda > 0$, each of
+$A(\lambda x) / A(x)$, $\pi(\lambda x) / \pi(x)$ and $cc(\lambda x) / cc(x)$ tends to $\lambda$
+as $x \to \infty$.
+
+Every prime is cyclic, so $\pi(x)$ is also the number of prime cyclic numbers $\le x$.
 
 ## Depends on
 

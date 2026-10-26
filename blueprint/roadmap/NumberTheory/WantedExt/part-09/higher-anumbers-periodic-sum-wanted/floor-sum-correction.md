@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.floorSumCorrection
 ---
 
-# Floor Sum Correction
+# The correction term $A_{x^{-1}}$ for sums of floors
 
-The periodic correction `A_{x^{-1}}(n)` of Proposition 4:
-`½ (-(1 - 1/x_D) + x (1 - {x^{-1} p^n})) {x^{-1} p^n} +
-∑_{k=1}^{⌊x^{-1} p^n⌋ mod x_D} ({x k} - ½ (1 - 1/x_D))`.
+**The correction term $A_{x^{-1}}$ for sums of floors.** For a natural number $p$, a rational
+$x$ and a natural number $n$, let $x_D$ be the prime-to-$p$ part of the denominator of $x$, write
+$\lbrace t \rbrace = t - \lfloor t \rfloor$ for the fractional part of $t$, and put
+$y = x^{-1} p^n$ (with $y = 0$ when $x = 0$). Define
+
+$$A_{x^{-1}}(n) = \frac12 \left(-\left(1 - \frac1{x_D}\right) + x (1 - \lbrace y \rbrace)\right)
+\lbrace y \rbrace + \sum_{k=1}^{\lfloor y \rfloor \bmod x_D}
+\left(\lbrace x k \rbrace - \frac12 \left(1 - \frac1{x_D}\right)\right),$$
+
+where $\lfloor y \rfloor$ is read as $0$ when $y < 0$.
+
+This is the periodic correction term of Proposition 4.
 
 ## Depends on
 
@@ -17,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime To PDen](prime-to-pden.md)
+- [Prime-to-$p$ part of the denominator](prime-to-pden.md)
 
 ## Sources
 

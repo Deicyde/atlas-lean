@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_isCoveringSystem_merge_prime_power
 ---
 
-# Lemma 2
+# Merging the p classes whose modulus is divisible by a prime power
 
-**Lemma 2** (Dalton–Trifonov). Let `C` be a covering system with positive moduli, `p` prime,
-`a ≥ 1`, and suppose exactly `p` classes of `C` have modulus divisible by `p^a`, with moduli
-`p^a m_1, …, p^a m_p`. Replacing these `p` classes by a single class with modulus
-`p^{a-1} lcm(m_1, …, m_p)` (for a suitable residue) still gives a covering system.
+**Merging the p classes whose modulus is divisible by a prime power.** Let $C$ be a
+covering system with positive moduli: a finite set of congruences $x \equiv r \pmod m$ with
+$r \in \mathbb{Z}$ and $m \ge 1$ such that every integer satisfies at least one of them. Let $p$
+be a prime and $a \ge 1$, and suppose exactly $p$ congruences of $C$ have modulus divisible by
+$p^a$, with moduli $p^a m_1, \dots, p^a m_p$. Then for some $r \in \mathbb{Z}$, replacing these
+$p$ congruences by the single congruence $x \equiv r \pmod{p^{a-1} \operatorname{lcm}(m_1,
+\dots, m_p)}$ still gives a covering system.
 
 ## Depends on
 

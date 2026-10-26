@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.hofCount_eq_card
 ---
 
-# Hof Count eq card
+# Letter counts of the Hofstadter word as cardinalities
 
-`C_k^{(P)}(n)` is the number of indices `j < n` with `P(x_k[j])`.
+**Letter counts of the Hofstadter word as cardinalities.** Let $x_k$ be the fixed point,
+starting with $k$, of the substitution sending the letter $k$ to $k\,1$ and every other letter
+$i$ to $i + 1$, and write $x_k[j]$ for its letter at index $j$. For every predicate $P$ on letters
+and every $n$, the number $C_k^{(P)}(n)$ of letters satisfying $P$ in the prefix
+$x_k[0] \cdots x_k[n-1]$ equals the number of indices $j < n$ with $P(x_k[j])$.
 
 ## Depends on
 
-- [Hof Count](hof-count.md)
-- [Hof Word](hof-word.md)
+- [Letter counts in the Hofstadter word](hof-count.md)
+- [Letters of the Hofstadter fixed-point word](hof-word.md)
 
 ## Proof depends on
 
-- [Hof Prefix](hof-prefix.md)
-- [Hof Prefix eq map](hof-prefix-eq-map.md)
+- [The prefix $x_k(0:n)$](hof-prefix.md)
+- [The prefix $x_k(0:n)$ letter by letter](hof-prefix-eq-map.md)
 
 ## Sources
 

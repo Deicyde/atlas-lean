@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.deleteDigit_25011_tenThousands
 ---
 
-# Delete Digit 25011 ten Thousands
+# Deleting the ten-thousands digit of 25011
 
-Deleting position `4`, the ten-thousands digit, from `25011` produces `5011`, illustrating
-the deletion operation in Theorem 1. This is a characteristic computation and has no encoding
-deviation.
+**Deleting the ten-thousands digit of 25011.** Deleting the base-ten digit in position $4$ of
+$25011$, where positions are counted from $0$ at the units digit (so position $4$ is the
+ten-thousands digit $2$), gives $5011$.
 
 ## Depends on
 
-- [Delete Digit](delete-digit.md)
+- [Deleting a digit](delete-digit.md)
 
 ## Sources
 

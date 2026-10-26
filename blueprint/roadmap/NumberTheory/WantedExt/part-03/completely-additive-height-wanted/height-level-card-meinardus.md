@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.heightLevel_card_meinardus
 ---
 
-# Height Level card meinardus
+# Meinardus asymptotics for the levels of a height function
 
-Theorem 4 (conditional inverse growth): let `H` be a height function with profile
-`π_k = #{p : H(p) = k}` and level sizes `Nₙ = #{m ≥ 1 : H(m) = n}`. If the weights `π_k`
-satisfy (M1)-(M3) with exponent `α > 0` and residue `C > 0`, then
-`Nₙ ∼ C₁ n^κ exp(C₂ n^{α/(α+1)})` for some `C₁ > 0`, `κ ∈ ℝ`, with
-`C₂ = (1 + 1/α)(C Γ(α + 1) ζ(α + 1))^{1/(α+1)}`; in particular `log Nₙ ∼ C₂ n^{α/(α+1)}`.
+**Meinardus asymptotics for the levels of a height function.** Let $H$ be a height function,
+for $k \ge 0$ let $\pi_k$ be the number of primes $p$ with $H(p) = k$, and for $n \ge 0$ let $N_n$
+be the number of integers $m \ge 1$ with $H(m) = n$. Let $\alpha > 0$ and $C > 0$ be real numbers
+and suppose that the weights $(\pi_k)$ satisfy Meinardus' hypotheses with exponent $\alpha$,
+residue $C$ and some continuation $G$. Put
+$C_2 = (1 + 1/\alpha)\bigl(C\,\Gamma(\alpha + 1)\,\zeta(\alpha + 1)\bigr)^{1/(\alpha+1)}$. Then
+there are real numbers $C_1 > 0$ and $\kappa$ with
+$N_n \sim C_1 n^{\kappa} \exp\bigl(C_2 n^{\alpha/(\alpha+1)}\bigr)$ as $n \to \infty$, and
+$\log N_n \sim C_2 n^{\alpha/(\alpha+1)}$ as $n \to \infty$.
 
 ## Depends on
 
-- [Is Height Function](is-height-function.md)
-- [Meinardus Hypotheses](meinardus-hypotheses.md)
+- [Height functions](is-height-function.md)
+- [Meinardus' hypotheses](meinardus-hypotheses.md)
 
 ## Sources
 

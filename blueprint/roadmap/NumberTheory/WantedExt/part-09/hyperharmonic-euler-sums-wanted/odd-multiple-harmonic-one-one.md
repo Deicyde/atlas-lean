@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.oddMultipleHarmonic_one_one
 ---
 
-# Odd Multiple Harmonic one one
+# The first odd harmonic number
 
-`O_1(1) = 2`.
+**The first odd harmonic number.** The depth-one odd harmonic number $O_1(1)$ equals $2$.
 
 ## Depends on
 
-- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
+- [Odd multiple harmonic numbers](odd-multiple-harmonic.md)
 
 ## Sources
 

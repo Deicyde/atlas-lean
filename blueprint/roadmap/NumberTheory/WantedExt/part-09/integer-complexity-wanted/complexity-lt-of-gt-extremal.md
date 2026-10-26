@@ -5,17 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.IntegerComplexityWanted.complexity_lt_of_gt_extremal
 ---
 
-# Corollary 2
+# Integers above $2^a 3^b$ have complexity above $2a + 3b$ when $a \le 2$ and $2a + 3b \ge 2$
 
-**Corollary 2**, second claim: writing an integer
-`v > 1` uniquely as `v = 2a + 3b` with `a ∈ {0, 1, 2}`,
-the number `2^a * 3^b` is the greatest `m` with
-`‖m‖ = v`; in particular `m > 2^a * 3^b` implies
-`‖m‖ > 2a + 3b`.
+**Integers above $2^a 3^b$ have complexity above $2a + 3b$ when $a \le 2$ and $2a + 3b \ge 2$.**
+Write $\lVert m \rVert$ for the integer complexity of a positive integer $m$, the least number
+of ones needed to write $m$ using $1$, $+$, $\times$ and parentheses. Let $a \le 2$ and $b$ be
+natural numbers with $2a + 3b \ge 2$. Then every natural number $m > 2^a 3^b$ satisfies
+$\lVert m \rVert > 2a + 3b$.
 
 ## Depends on
 
-- [Cx](cx.md)
+- [Integer complexity extended to all natural numbers](cx.md)
 
 ## Sources
 

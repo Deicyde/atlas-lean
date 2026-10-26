@@ -5,15 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_fibBeta_pow_eq_sum
 ---
 
-# Theorem 1
+# Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
-**Theorem 1**: `(x + β)ᵐ = ∑_{n=0}^m ∑_{k=0}^n
-√5ᵏ C(n,k) C(m,n) Bₖ F_{n-k+1}/(n-k+1) x^{m-n}` for every
-real `x`.
+**Bernoulli–Fibonacci expansion of $(x + \beta)^m$.** Let $\beta = (1 - \sqrt{5})/2$, let
+$B_k$ be the Bernoulli numbers, normalized so that $B_1 = -1/2$, and let $F_k$ be the Fibonacci
+numbers ($F_0 = 0$, $F_1 = 1$). Then for every natural number $m$ and every real number $x$,
+
+$$
+(x + \beta)^m = \sum_{n=0}^{m} \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} \binom{m}{n} B_k
+\frac{F_{n-k+1}}{n-k+1} x^{m-n}.
+$$
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
 
 ## Sources
 

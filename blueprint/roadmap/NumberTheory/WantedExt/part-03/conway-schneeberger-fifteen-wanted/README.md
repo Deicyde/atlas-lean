@@ -4,7 +4,7 @@ navigation: module
 
 # Conway Schneeberger Fifteen
 
-- [Eval Q](eval-q.md)
-- [Represents](represents.md)
-- [Is Universal](is-universal.md)
-- [Conway schneeberger fifteen](conway-schneeberger-fifteen.md)
+- [Quadratic form of an integer matrix](eval-q.md)
+- [Integers represented by an integer-matrix quadratic form](represents.md)
+- [Universal integer-matrix quadratic forms](is-universal.md)
+- [Conway–Schneeberger fifteen theorem](conway-schneeberger-fifteen.md)

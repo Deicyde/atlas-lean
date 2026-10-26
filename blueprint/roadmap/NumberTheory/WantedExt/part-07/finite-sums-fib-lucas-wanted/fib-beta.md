@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.fibBeta
 ---
 
-# Fib Beta
+# The conjugate golden ratio $\beta$
 
-The paper's `β = (1 - √5)/2`.
+**The conjugate golden ratio $\beta$.** The real number $\beta = (1 - \sqrt{5})/2$, the
+conjugate of the golden ratio $(1 + \sqrt{5})/2$.
 
 ## Depends on
 

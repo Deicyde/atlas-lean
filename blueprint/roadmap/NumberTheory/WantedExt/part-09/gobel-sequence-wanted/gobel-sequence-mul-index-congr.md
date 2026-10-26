@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_mul_index_congr
 ---
 
-# Gobel Sequence mul index congr
+# Propagation of a congruence along the $(k, l)$-Göbel sequence
 
-Lemma 20: for a prime `p`, `k, l, r ≥ 2`, `1 ≤ a < p` and `0 ≤ b < p`, if
-`g_{k,l}(a) ≡ b p^{r-1} (mod p^r)` then `n g_{k,l}(n) ≡ a b p^{r-1} (mod p^r)` for every
-`a ≤ n < p`. Congruences are in `ℤ_(p)`: `x ≡ y (mod p^r)` is written
-`x - y = 0 ∨ r ≤ padicValRat p (x - y)`.
+**Propagation of a congruence along the $(k, l)$-Göbel sequence.** Let $p$ be a prime, let
+$k, l, r \ge 2$ be natural numbers, let $g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $a, b$ be
+natural numbers with $1 \le a < p$ and $b < p$. For rational numbers $x, y$ write
+$x \equiv y \pmod{p^r}$ when $x = y$ or $\nu_p(x - y) \ge r$, where $\nu_p$ is the $p$-adic
+valuation on $\mathbb{Q}$. If $g_{k,l}(a) \equiv b p^{r-1} \pmod{p^r}$, then
+$n \, g_{k,l}(n) \equiv a b p^{r-1} \pmod{p^r}$ for every natural number $n$ with $a \le n < p$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

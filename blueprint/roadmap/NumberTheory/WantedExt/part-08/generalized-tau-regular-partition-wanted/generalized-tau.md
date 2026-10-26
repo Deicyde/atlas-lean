@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau
 ---
 
-# Generalized Tau
+# Generalized tau function
 
-The generalized tau function `τ_k(n)`: the `q^n` coefficient of `q ∏_{m ≥ 1} (1 - q^m)^k`,
-for any integer `k`. The paper requires `k ≠ 0`; `k = 0` gives `τ_0(1) = 1` and `0` elsewhere.
-`τ_{24}` is Ramanujan's tau function, `τ_1(n + 1)` is Euler's `ω(n)`.
+**Generalized tau function.** For an integer $k$ and a natural number $n$, the generalized tau
+function $\tau_k(n)$ is the coefficient of $q^n$ in the integer power series
+$q \prod_{m \ge 1} (1 - q^m)^k$. For negative $k$ the power is taken in the group of units of
+$\mathbb{Z}[[q]]$, where $\prod_{m \ge 1} (1 - q^m)$ is invertible because its constant term is $1$.
+
+The paper requires $k \ne 0$; $k = 0$ gives $\tau_0(1) = 1$ and $\tau_0(n) = 0$ for $n \ne 1$.
+$\tau_{24}$ is Ramanujan's tau function, and $\tau_1(n + 1)$ is Euler's $\omega(n)$, the
+coefficient of $q^n$ in $\prod_{m \ge 1} (1 - q^m)$.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
+- [Euler's product is a unit in $\mathbb{Z}((X))$](is-unit-pentagonal-series-int.md)
 
 ## Sources
 

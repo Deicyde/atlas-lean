@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.IntegerComplexityWanted.complexity_eq_min
 ---
 
-# Proposition 1
+# Integer complexity as a minimum over factorizations and sums
 
-**Proposition 1**: for `n > 1`, `‖n‖` is the minimum of
-`‖d‖ + ‖n / d‖` over divisors `d` of `n` with `d ≥ 2` and
-of `‖j‖ + ‖n - j‖` over `1 ≤ j ≤ n / 2`.
+**Integer complexity as a minimum over factorizations and sums.** Write
+$\lVert m \rVert$ for the integer complexity of a positive integer $m$, the least number of ones
+needed to write $m$ using $1$, $+$, $\times$ and parentheses. For every integer $n \ge 2$,
+$\lVert n \rVert$ is the least element of the set consisting of the numbers
+$\lVert d \rVert + \lVert n/d \rVert$ for the divisors $d \ge 2$ of $n$ and the numbers
+$\lVert j \rVert + \lVert n - j \rVert$ for the integers $j$ with $1 \le j \le n/2$.
 
 ## Depends on
 
-- [Cx](cx.md)
+- [Integer complexity extended to all natural numbers](cx.md)
 
 ## Sources
 

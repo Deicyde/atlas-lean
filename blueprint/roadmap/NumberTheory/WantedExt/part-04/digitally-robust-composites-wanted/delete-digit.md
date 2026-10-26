@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.deleteDigit
 ---
 
-# Delete Digit
+# Deleting a digit
 
-`deleteDigit N i` deletes the base-ten digit of `N` at the units-indexed position `i`:
-digits above `i` shift down one place and digits below `i` remain fixed. Its use is restricted
-to `i < (Nat.digits 10 N).length`; there is no deviation from the requested encoding.
+**Deleting a digit.** For natural numbers $N$ and $i$, deleting the base-ten digit of $N$ in
+position $i$, where positions are counted from $0$ at the units digit, gives the number
+
+$$\lfloor N / 10^{i+1} \rfloor \cdot 10^{i} + (N \bmod 10^{i}),$$
+
+so the digits above position $i$ move down one place and the digits below position $i$ stay
+where they are.
 
 ## Depends on
 

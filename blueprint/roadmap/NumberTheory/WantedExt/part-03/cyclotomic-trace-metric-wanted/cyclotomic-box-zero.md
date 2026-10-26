@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.cyclotomicBox_zero
 ---
 
-# Cyclotomic Box zero
+# The cyclotomic box of radius zero
 
-The box `B(0)` of radius `0` is the single coefficient vector `0`.
+**The cyclotomic box of radius zero.** Let $p$ be a natural number and, for a natural number
+$N$, let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$ with
+$-N \le a_i \le N$ for all $i$. Then $B(p, 0) = \{0\}$: the zero vector is the only element of the
+box of radius $0$.
 
 ## Depends on
 
-- [Cyclotomic Box](cyclotomic-box.md)
+- [The cyclotomic box](cyclotomic-box.md)
 
 ## Sources
 

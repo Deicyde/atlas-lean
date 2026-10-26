@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.genocchiNumber_eq_sum
 ---
 
-# Theorem 1
+# Explicit formula for Genocchi numbers via Stirling numbers
 
-**Theorem 1**: for positive `n, r` with `n ≥ r + 1`,
-`Gₙ = (-1)ⁿ n ∑_{k=1}^{n-r} (∑_{j=0}^r (-1)^{k+j+r}
-(k+j-1)!/2^{k+j-1} S(r,j)) S(n-r,k)` (the paper's first
-equality `2(1-2ⁿ)Bₙ = Gₙ` is MathlibExt's proved
-`genocchiNumber_eq_bernoulli`).
+**Explicit formula for Genocchi numbers via Stirling numbers.** Let $n$ and $r$ be positive
+integers with $n \ge r + 1$, let $G_n$ be the $n$-th Genocchi number and let $S(a, b)$ denote
+the Stirling numbers of the second kind. For $k \ge 1$ write
+$c_k = \sum_{j=0}^{r} (-1)^{k+j+r} \frac{(k+j-1)!}{2^{k+j-1}} S(r, j)$. Then
+$G_n = (-1)^n \, n \sum_{k=1}^{n-r} c_k \, S(n-r, k)$.
 
 ## Depends on
 

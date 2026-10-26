@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.one_le_pi_sq_mul_sq_div_two_mul_sin_sq
 ---
 
-# One le pi sq mul sq div two mul sin sq
+# Sine lower bound at non-divisors
 
-Lemma 4: `A(k, n) = π² k² / 2` satisfies `A(k, n) sin²(nπ/k) ≥ 1` for all positive integers
-`k, n` with `k ∤ n`.
+**Sine lower bound at non-divisors.** For all positive integers $k$ and $n$ with $k \nmid n$,
+
+$$\frac{\pi^2 k^2}{2} \sin^2\frac{n\pi}{k} \ge 1.$$
+
+In other words, $A(k, n) = \pi^2 k^2 / 2$ satisfies the hypothesis
+$A(k, n) \sin^2(n\pi/k) \ge 1$ of the exponential approximation of the divisibility indicator.
 
 ## Depends on
 

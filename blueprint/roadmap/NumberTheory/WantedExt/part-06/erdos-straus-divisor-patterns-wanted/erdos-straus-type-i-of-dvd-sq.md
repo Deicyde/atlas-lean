@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.erdosStraus_typeI_of_dvd_sq
 ---
 
-# Erdos Straus type I of dvd sq
+# Type I Erdős–Straus triples from divisors of a square
 
-Sufficient condition for a type I solution: if `p` is prime, `⌈p/4⌉ ≤ x ≤ ⌈p/2⌉`, and
-`d > 0` divides `x²` with `d ≡ -p x (mod 4x - p)`, then `y = (p x + d)/(4x - p)` and
-`z = p(x + p x²/d)/(4x - p)` are integers with `x ≤ y ≤ z` and `p ∤ y`.
+**Type I Erdős–Straus triples from divisors of a square.** Let $p$ be a prime and let $x$ be a
+natural number with $\lceil p/4 \rceil \le x \le \lceil p/2 \rceil$. If $d$ is a positive divisor
+of $x^2$ with $d \equiv -px \pmod{4x - p}$, then there are natural numbers $y$ and $z$ with
+$(4x - p)\,y = px + d$ and $(4x - p)\,d\,z = px(px + d)$ such that $x \le y \le z$ and $p \nmid y$.
+
+Since $4x > p$, these equations say $y = (px + d)/(4x - p)$ and $z = p(x + px^2/d)/(4x - p)$.
 
 ## Depends on
 

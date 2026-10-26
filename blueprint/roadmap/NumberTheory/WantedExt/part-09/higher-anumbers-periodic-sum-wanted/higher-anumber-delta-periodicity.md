@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberDelta_periodicity
 ---
 
-# Higher ANumber Delta periodicity
+# Periodicity and reflection of $\delta$ and $\delta_0$
 
-(i) `δ(p^n i) = δ(i)`; (ii) `δ₀(i) = δ₀(i + τ_D p)`; (iii) if `τ_D ∤ i` and `p ∤ i` then
-`δ₀(i) + δ₀(τ_D p - i) = 1`; (iv) if `τ_D ∣ i` or `p ∣ i` then `δ₀(i) = δ₀(τ_D p - i) = 0`.
-Parts (iii) and (iv) assume `i ≤ τ_D p`, so that `τ_D p - i` is the natural number the paper
-means; the paper's positivity of `i` and `n` is dropped (the claims hold at `0`).
+**Periodicity and reflection of $\delta$ and $\delta_0$.** Let $p$ be a prime and $d$ a divisor
+of $p - 1$, let $\tau_D$ be the denominator of $\tau = (p + 1)/d$ in lowest terms, let $\delta$ be
+the rounding indicator, and let $\delta_0(i)$ be $0$ if $p \mid i$ and $\delta(i)$ otherwise. Then
+for all natural numbers $i$ and $n$: (i) $\delta(p^n i) = \delta(i)$;
+(ii) $\delta_0(i) = \delta_0(i + \tau_D p)$; (iii) if $i \le \tau_D p$, $\tau_D \nmid i$ and
+$p \nmid i$, then $\delta_0(i) + \delta_0(\tau_D p - i) = 1$; (iv) if $i \le \tau_D p$ and
+at least one of $\tau_D \mid i$ and $p \mid i$ holds, then $\delta_0(i) = 0$ and
+$\delta_0(\tau_D p - i) = 0$.
+
+The bound $i \le \tau_D p$ in (iii) and (iv) makes $\tau_D p - i$ the natural number the
+paper means; the paper's positivity of $i$ and $n$ is dropped (the claims hold at $0$).
 
 ## Depends on
 
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
-- [Tau Den](tau-den.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The variant $\delta_0$ of the rounding indicator](higher-anumber-delta-zero.md)
+- [The denominator $\tau_D$](tau-den.md)
 
 ## Sources
 

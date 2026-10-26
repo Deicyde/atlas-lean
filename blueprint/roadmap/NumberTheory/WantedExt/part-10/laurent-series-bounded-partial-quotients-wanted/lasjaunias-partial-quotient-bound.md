@@ -5,22 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.lasjaunias_partialQuotient_bound
 ---
 
-# Lasjaunias partial Quotient bound
+# Lasjaunias's bound on the next partial quotient
 
-Lasjaunias's lemma: let `α ∈ 𝔽_q((x⁻¹))` be irrational with `α = (A α^q + B)/(C α^q + D)`,
-`A, B, C, D ∈ 𝔽_q[x]`, `Δ = AD - BC ≠ 0`, `C ≠ 0`. If `P/Q = P_n/Q_n` is a convergent in lowest
-terms with `|α - P/Q| < |α - A/C|`, and, writing `R₁ = DP - BQ`, `S₁ = -CP + AQ`,
-`δ₁ = gcd(R₁, S₁)`, `R₁' = R₁/δ₁`, `S₁' = S₁/δ₁`, one of `R₁'`, `S₁'` is not a `q`-th power in
-`𝔽_q[x]`, then the next partial quotient satisfies `|b_{n+1}| < |Δ| |δ₁|^{-2}`. The hypothesis
-`C ≠ 0` makes `A/C` meaningful (implicit in the paper).
+**Lasjaunias's bound on the next partial quotient.** Let $\mathbb{F}_q$ be a finite field, let
+$A, B, C, D \in \mathbb{F}_q[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$, and let
+$\alpha \in \mathbb{F}_q((x^{-1}))$ be irrational with $\alpha = (A\alpha^q + B)/(C\alpha^q + D)$.
+Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where $\deg y$ is
+the largest exponent of $x$ occurring in $y \ne 0$, and write $P_n/Q_n$ for the convergents and
+$b_n$ for the partial quotients of $\alpha$. Let $n \ge 0$, let $P, Q \in \mathbb{F}_q[x]$ be
+coprime with $Q \ne 0$ and $P/Q = P_n/Q_n$, and suppose $|\alpha - P/Q| < |\alpha - A/C|$. Put
+$R_1 = DP - BQ$, $S_1 = -CP + AQ$ and $\delta_1 = \gcd(R_1, S_1)$. If $R_1/\delta_1$ or
+$S_1/\delta_1$ is not a $q$-th power in $\mathbb{F}_q[x]$, then
+$|b_{n+1}| < |\Delta|\,|\delta_1|^{-2}$.
+
+The hypothesis $C \ne 0$, which makes $A/C$ meaningful, is implicit in the paper.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

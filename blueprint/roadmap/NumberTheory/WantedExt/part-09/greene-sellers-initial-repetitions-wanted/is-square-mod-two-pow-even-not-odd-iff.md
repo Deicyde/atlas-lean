@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isSquare_mod_two_pow_even_not_odd_iff
 ---
 
-# Is Square mod two pow even not odd iff
+# Residues that are squares modulo $2^{2k}$ but not modulo $2^{2k+1}$
 
-For `k ≥ 1`, `2^(2k) + 2^(2k-2)` is the unique residue modulo `2^(2k+1)` that is a square
-modulo `2^(2k)` but not a square modulo `2^(2k+1)`. Stated for all `k`; at `k = 0` both sides are
-false.
+**Residues that are squares modulo $2^{2k}$ but not modulo $2^{2k+1}$.** Let $k \ge 0$ and let
+$x$ be an integer with $0 \le x < 2^{2k+1}$, where the exponent $2k - 2$ is truncated at $0$. Then
+$x$ is a square modulo $2^{2k}$ but not a square modulo $2^{2k+1}$ if and only if
+$x = 2^{2k} + 2^{2k-2}$.
+
+For $k \ge 1$ this is the unique such residue; for $k = 0$ both sides of the equivalence are false.
 
 ## Depends on
 

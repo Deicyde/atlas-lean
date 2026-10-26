@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polyNorm_zero
 ---
 
-# Poly Norm zero
+# The zero polynomial has norm $0$
 
-`|0| = 0`.
+**The zero polynomial has norm $0$.** For every finite field $F$, the norm of the zero
+polynomial in $F[X]$ is $|0| = 0$.
 
 ## Depends on
 
-- [Poly Norm](poly-norm.md)
+- [The polynomial norm $q^{\deg f}$ over a finite field](poly-norm.md)
 
 ## Sources
 

@@ -13,8 +13,8 @@ For `3 ≤ i < k`: `C_k^{(=i)}(n) < C_{k+1}^{(=i)}(n)` at `n = i + L_k^{2k+2}(1)
 
 ## Depends on
 
-- [Hof Count](hof-count.md)
-- [Hof L](hof-l.md)
+- [Letter counts in the Hofstadter word](hof-count.md)
+- [The image length $L_k$](hof-l.md)
 
 ## Sources
 

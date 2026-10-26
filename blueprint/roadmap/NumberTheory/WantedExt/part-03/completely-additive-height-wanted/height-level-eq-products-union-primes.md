@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.heightLevel_eq_products_union_primes
 ---
 
-# Height Level eq products union primes
+# Level construction for a height function
 
-Theorem 1 (level construction): for a height function `H` and `n ≥ 1`, the level
-`ℋₙ = {m ≥ 1 : H(m) = n}` is the union of the products `p · m'` with `H(p) = ℓ`,
-`1 ≤ ℓ ≤ ⌊n/2⌋`, `m' ∈ ℋ_{n-ℓ}`, and the primes of height `n`.
+**Level construction for a height function.** Let $H$ be a height function and let $n \ge 1$,
+and for $k \ge 0$ write $\mathcal{H}_k = \{m \ge 1 : H(m) = k\}$. Then $\mathcal{H}_n$ is the union
+of two sets: the set of products $p m'$, where $p$ is a prime with $H(p) = \ell$ for some integer
+$\ell$ with $1 \le \ell \le \lfloor n/2 \rfloor$ and $m' \in \mathcal{H}_{n - \ell}$; and the set
+of primes $p$ with $H(p) = n$.
 
 ## Depends on
 
-- [Is Height Function](is-height-function.md)
+- [Height functions](is-height-function.md)
 
 ## Sources
 

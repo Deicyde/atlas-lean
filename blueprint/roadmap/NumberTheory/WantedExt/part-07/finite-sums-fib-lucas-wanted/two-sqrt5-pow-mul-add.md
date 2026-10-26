@@ -17,8 +17,8 @@ correction terms) the identity fails already at `q = 1`.
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
-- [Gen Lucas Coeff](gen-lucas-coeff.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
+- [Genocchi–Lucas coefficients](gen-lucas-coeff.md)
 
 ## Sources
 

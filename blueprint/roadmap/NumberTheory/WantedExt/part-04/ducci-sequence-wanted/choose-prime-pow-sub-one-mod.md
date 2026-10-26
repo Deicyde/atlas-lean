@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DucciWanted.choose_prime_pow_sub_one_mod
 ---
 
-# Lemma 1
+# Binomial coefficients $\binom{p^k - 1}{j}$ modulo $p$
 
-**Lemma 1**: for prime `p`, `k ≥ 1`, and
-`j ≤ p^k - 1`, `C(p^k - 1, j) ≡ (-1)^j (mod p)`.
+**Binomial coefficients $\binom{p^k - 1}{j}$ modulo $p$.** Let $p$ be a prime, let $k \ge 1$,
+and let $j$ be an integer with $0 \le j \le p^k - 1$. Then
+$\binom{p^k - 1}{j} \equiv (-1)^j \pmod{p}$.
 
 ## Depends on
 

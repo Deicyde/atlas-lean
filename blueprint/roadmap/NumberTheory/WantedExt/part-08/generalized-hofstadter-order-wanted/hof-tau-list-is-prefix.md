@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.hofTauList_isPrefix
 ---
 
-# Hof Tau List is Prefix
+# The Hofstadter substitution preserves prefixes
 
-`τ_k` preserves prefixes.
+**The Hofstadter substitution preserves prefixes.** For a natural number $k$, let $\tau_k$ be
+the morphism of finite words over $\mathbb{N}$ that replaces the letter $k$ by the word $k\,1$ and
+every other letter $i$ by $i + 1$. For every $k$ and all finite words $u$, $v$ over $\mathbb{N}$,
+if $u$ is a prefix of $v$, then $\tau_k(u)$ is a prefix of $\tau_k(v)$.
 
 ## Depends on
 
-- [Hof Tau List](hof-tau-list.md)
+- [The Hofstadter substitution on finite words](hof-tau-list.md)
 
 ## Proof depends on
 
-- [Hof Tau](hof-tau.md)
+- [The Hofstadter substitution on letters](hof-tau.md)
 
 ## Sources
 

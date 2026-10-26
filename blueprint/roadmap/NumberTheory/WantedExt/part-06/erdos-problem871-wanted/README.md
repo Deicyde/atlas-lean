@@ -4,6 +4,6 @@ navigation: module
 
 # Erdos Problem871
 
-- [Conjecture](conjecture.md)
-- [Disproved Form](disproved-form.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Erdős Problem 871 (splitting rich bases of order 2)](conjecture.md)
+- [Negation of the Erdős Problem 871 statement](disproved-form.md)
+- [Erdős Problem 871 is false (Larsen)](conjecture-refuted.md)

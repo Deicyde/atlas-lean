@@ -7,14 +7,16 @@ lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.freeCount_fi
 
 # Lemma 3, free recurrence
 
-**Lemma 3, free recurrence**:
-`free(k+1) = (p_{k+1} - 1)·free(k)` for every choice of residue
-classes.
+**Lemma 3, free recurrence.** Let $k \ge 1$, let $p_1 < p_2 < \cdots$ be the primes in
+increasing order, and let $r_1, \dots, r_{k+1}$ be natural numbers. For $m \in \{k, k + 1\}$
+write $\mathrm{free}(m)$ for the number of integers $n$ with $1 \le n \le p_1 \cdots p_m$ such
+that $n \not\equiv r_i \pmod{p_i}$ for every $i \le m$. Then
+$\mathrm{free}(k+1) = (p_{k+1} - 1) \cdot \mathrm{free}(k)$.
 
 ## Depends on
 
-- [First Primes](first-primes.md)
-- [Free Count](free-count.md)
+- [The first primes](first-primes.md)
+- [Free count](free-count.md)
 
 ## Sources
 

@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.hurwitzQ_mul_sub_hurwitzP
 ---
 
-# Hurwitz Q mul sub hurwitz P
+# Error of the Hurwitz convergents
 
-For legal `n ≥ 0`, `Q_n z - P_n = (-1)^n (z_1 ⋯ z_{n+1})⁻¹`, and for legal `n ≥ 1`,
-`z_{n+1} = -(Q_{n-1} z - P_{n-1}) / (Q_n z - P_n)`. The `n = 0` case of the second identity,
-`z_1 = (z - a_0)⁻¹` (with `Q_{-1} = 0`, `P_{-1} = 1`), is the definition of `hurwitzIter`.
+**Error of the Hurwitz convergents.** Let $z$ be a complex number with Hurwitz iterates
+$z_0 = z, z_1, z_2, \dots$, convergent numerators $P_n$ and convergent denominators $Q_n$. For
+every legal index $n$ for $z$,
+
+$$Q_n z - P_n = (-1)^n (z_1 z_2 \cdots z_{n+1})^{-1},$$
+
+and if moreover $n \ge 1$, then $z_{n+1} = -(Q_{n-1} z - P_{n-1}) / (Q_n z - P_n)$. Here the
+inverse of $0$ and any quotient by $0$ are taken to be $0$.
+
+The case $n = 0$ of the second identity, $z_1 = (z - a_0)^{-1}$ with $a_0$ the first partial
+quotient (and $Q_{-1} = 0$, $P_{-1} = 1$), is the definition of the iterates.
 
 ## Depends on
 
-- [Hurwitz Legal](hurwitz-legal.md)
-- [Hurwitz Iter](hurwitz-iter.md)
-- [Hurwitz P](hurwitz-p.md)
-- [Hurwitz Q](hurwitz-q.md)
+- [Legal indices of the Hurwitz expansion](hurwitz-legal.md)
+- [Iterates of the Hurwitz algorithm](hurwitz-iter.md)
+- [Convergent numerators of the Hurwitz expansion](hurwitz-p.md)
+- [Convergent denominators of the Hurwitz expansion](hurwitz-q.md)
 
 ## Sources
 

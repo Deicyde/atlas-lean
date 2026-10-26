@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gaussKuzminMass_reverse
 ---
 
-# Gauss Kuzmin Mass reverse
+# Reversal symmetry of the Gauss–Kuzmin mass
 
-Symmetry property: `μ_GK(I(a)) = μ_GK(I(a⃖))`, i.e. `P_GK(a) = P_GK(a⃖)`, where `a⃖` is the reverse
-of `a`.
+**Reversal symmetry of the Gauss–Kuzmin mass.** For every string $a$ of positive integers,
+$P_{GK}(\overleftarrow{a}) = P_{GK}(a)$, where $P_{GK}$ is the Gauss–Kuzmin mass and
+$\overleftarrow{a}$ is the reverse of $a$.
 
 ## Depends on
 
-- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+- [Gauss–Kuzmin mass of a string](gauss-kuzmin-mass.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.klNearPerfectWith_two_mul_prime_pow_imp
 ---
 
-# Theorem 14
+# A divisibility condition for near-perfect numbers $2p^a$
 
-**Theorem 14**, part 2: if `2p^a` (`p` an odd prime)
-is `[k,ℓ]`-near-perfect with divisor `d` and `k > 1`, then
-`p² ∣ 1 + 2^k`, and `a` is even if and only if `d` is odd.
+**A divisibility condition for near-perfect numbers $2p^a$.** Let $p$ be an odd prime, let
+$a$, $k$, $\ell$ and $d$ be natural numbers with $k > 1$ and $\ell \ge 1$, and write
+$\sigma_k(m) = \sum_{e \mid m} e^k$. If $d$ is a proper divisor of $2p^a$ ($d \mid 2p^a$ and
+$d < 2p^a$) with $\sigma_k(2p^a) = (2p^a)^k + d^k + \ell \cdot 2p^a$, then $p^2 \mid 1 + 2^k$,
+and $a$ is even if and only if $d$ is odd.
+
+This is part 2 of Theorem 14 of the source.
 
 ## Depends on
 
-- [KLNear Perfect With](klnear-perfect-with.md)
+- [$(k,\ell)$-near-perfect with a given divisor](klnear-perfect-with.md)
 
 ## Sources
 

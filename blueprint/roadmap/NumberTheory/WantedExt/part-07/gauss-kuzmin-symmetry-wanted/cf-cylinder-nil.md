@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.cfCylinder_nil
 ---
 
-# Cf Cylinder nil
+# Fundamental interval of the empty string
 
-The empty string gives `I(()) = [0, 1)`.
+**Fundamental interval of the empty string.** The fundamental interval of the empty string is
+the whole interval: $I(()) = [0, 1)$.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
+- [Fundamental interval of a string](cf-cylinder.md)
 
 ## Sources
 

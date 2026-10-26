@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.genCohnPQR1_det
 ---
 
-# Gen Cohn PQR1 det
+# The matrices $P_{1;\ell}$, $Q_{1;\ell}$ and $R_{1;\ell}$ have determinant $1$
 
-Characteristic lemma: `P_{1;ℓ}`, `Q_{1;ℓ}`, `R_{1;ℓ}` have determinant `1`.
+**The matrices $P_{1;\ell}$, $Q_{1;\ell}$ and $R_{1;\ell}$ have determinant $1$.** For every
+natural number $k$ and every integer $\ell$, the $2 \times 2$ integer matrices $P_{1;\ell}$,
+$Q_{1;\ell}$ and $R_{1;\ell}$ (which depend on $k$) all have determinant $1$.
 
 ## Depends on
 
-- [Gen Cohn P1](gen-cohn-p1.md)
-- [Gen Cohn Q1](gen-cohn-q1.md)
-- [Gen Cohn R1](gen-cohn-r1.md)
+- [The matrix $P_{1;\ell}$](gen-cohn-p1.md)
+- [The matrix $Q_{1;\ell}$](gen-cohn-q1.md)
+- [The matrix $R_{1;\ell}$](gen-cohn-r1.md)
 
 ## Sources
 

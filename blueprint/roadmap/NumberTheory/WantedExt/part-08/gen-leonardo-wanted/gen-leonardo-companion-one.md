@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.genLeonardoCompanion_one
 ---
 
-# Gen Leonardo Companion one
+# The dual generalized Leonardo number of index one
 
-Characteristic value `M_{k,1} = 3 + k`.
+**The dual generalized Leonardo number of index one.** For every integer $k$, the dual
+generalized Leonardo number $M_{k,1}$ equals $3 + k$.
 
 ## Depends on
 
-- [Gen Leonardo Companion](gen-leonardo-companion.md)
+- [Dual generalized Leonardo numbers](gen-leonardo-companion.md)
 
 ## Proof depends on
 
-- [Gen Leonardo](gen-leonardo.md)
-- [Gen Leonardo two](gen-leonardo-two.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
+- [Generalized Leonardo number of index two](gen-leonardo-two.md)
 
 ## Sources
 

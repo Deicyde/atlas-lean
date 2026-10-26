@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTau_seven_mul_modEq_zero
 ---
 
-# Ramanujan Tau seven mul mod Eq zero
+# Ramanujan's congruence modulo $7$
 
-Ramanujan's congruence `τ(7n) ≡ 0 (mod 7)`.
+**Ramanujan's congruence modulo $7$.** Let $\tau(n) = \tau_{24}(n)$ be Ramanujan's tau
+function, the generalized tau function with $k = 24$. For every positive integer $n$,
+$\tau(7n) \equiv 0 \pmod 7$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

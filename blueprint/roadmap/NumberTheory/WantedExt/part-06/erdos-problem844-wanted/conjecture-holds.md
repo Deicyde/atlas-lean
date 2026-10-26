@@ -6,19 +6,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem844Wanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Erdős Problem 844 is true
 
-Resolved true: Resolved affirmatively by Desmond Weisenberg and independently by Alexeev, Mixon,
-and Sawin; this repository records the statement but not either proof. Source: B. Alexeev, D.
-Mixon, and W. Sawin, The independence and clique cover numbers of the squarefree graph,
-arXiv:2507.01928 (2025), https://arxiv.org/abs/2507.01928; Erdős Problems, Problem 844
-(including Desmond Weisenberg's proof), https://www.erdosproblems.com/latex/844. Moved from
-`OpenConjectures/NumberTheory/ErdosProblem844`.
+**Erdős Problem 844 is true.** For every natural number $N$, the largest size of a set
+$A \subseteq \{1, \dots, N\}$ such that $ab$ is not squarefree for all $a, b \in A$ (including
+$a = b$) is the number of integers $n$ with $1 \le n \le N$ that are even or not squarefree.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Erdős Problem 844](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem844Wanted](../../../../../sources/v2/WantedExt.md)
+- B. Alexeev, D. Mixon, and W. Sawin, The independence and clique cover numbers of the squarefree graph, arXiv:2507.01928 (2025), https://arxiv.org/abs/2507.01928; Erdős Problems, Problem 844 (including Desmond Weisenberg's proof), https://www.erdosproblems.com/latex/844. Moved from `OpenConjectures/NumberTheory/ErdosProblem844`.

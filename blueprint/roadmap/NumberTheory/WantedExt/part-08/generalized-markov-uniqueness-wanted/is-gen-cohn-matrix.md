@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsGenCohnMatrix
 ---
 
-# Is Gen Cohn Matrix
+# Generalized Cohn matrices
 
-A `k`-generalized Cohn matrix: an integer `2 × 2` matrix `P` of determinant `1` whose
-`(1, 2)`-entry `p₁₂` is a `k`-generalized Markov number and whose trace is
-`(3 + 3k) p₁₂ - k`.
+**Generalized Cohn matrices.** Let $k$ be a natural number. An integer $2 \times 2$ matrix
+$P = (p_{ij})$ is a $k$-generalized Cohn matrix if $\det P = 1$, its entry $p_{12}$ is a
+$k$-generalized Markov number, and its trace equals $(3 + 3k) p_{12} - k$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

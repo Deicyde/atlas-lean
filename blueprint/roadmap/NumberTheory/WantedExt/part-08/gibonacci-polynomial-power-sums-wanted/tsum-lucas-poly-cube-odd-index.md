@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tsum_lucasPoly_cube_odd_index
 ---
 
-# Tsum lucas Poly cube odd index
+# Cubic sums with odd-index Lucas polynomial denominators
 
-Corollary 4.9: for real `x > 0`,
-`Σ_{n≥1} ((x³ + 3x)ℓ_{6n+3} + 3x ℓ_{2n+1})/(ℓ_{2n+1}² + x² + 4)³ = 1/(x² + 2)³` and
-`Σ_{n≥1} (x(x⁴ + 4x² + 3)f_{6n+3} - 3x f_{2n+1})/(ℓ_{2n+1}² - x²(x² + 4))³
-  = ((x² + 3)³ + 1)/(x³(x² + 4)(x² + 3)³)`.
+**Cubic sums with odd-index Lucas polynomial denominators.** Let $f_n$ and $\ell_n$ denote the
+Fibonacci and Lucas polynomials, given by $f_0 = 0$, $f_1 = 1$, $\ell_0 = 2$, $\ell_1 = x$ and
+$g_{n+2} = x g_{n+1} + g_n$ for $g \in \{f, \ell\}$, evaluated at a real number $x > 0$. Then
+
+$$\sum_{n \ge 1} \frac{(x^3 + 3x) \ell_{6n+3} + 3x \ell_{2n+1}}{(\ell_{2n+1}^2 + x^2 + 4)^3}
+= \frac{1}{(x^2 + 2)^3}$$
+
+and
+
+$$\sum_{n \ge 1} \frac{x (x^4 + 4x^2 + 3) f_{6n+3} - 3x f_{2n+1}}{(\ell_{2n+1}^2 - x^2 (x^2 + 4))^3}
+= \frac{(x^2 + 3)^3 + 1}{x^3 (x^2 + 4) (x^2 + 3)^3}.$$
 
 ## Depends on
 

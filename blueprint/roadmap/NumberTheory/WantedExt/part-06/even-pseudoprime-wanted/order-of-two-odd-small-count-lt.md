@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.orderOfTwo_odd_small_count_lt
 ---
 
-# Lemma 10
+# Primes with odd order of 2 of small size
 
-**Lemma 10**, first part: `Q_{0,a₁}(x) < M x^{2a₁}` with `a₁ = 0.4`, `M = 0.00754`,
-where `Q_{a,b}(x)` counts the primes `2 < p ≤ x` with `ℓ₂(p)` odd and
-`p^a < ℓ₂(p) ≤ p^b`.
+**Primes with odd order of 2 of small size.** Write $\ell_2(p)$ for the multiplicative
+order of $2$ modulo a prime $p$. For every real $x > 0$, the number of primes $p$ with
+$2 < p \le x$ such that $\ell_2(p)$ is odd and $1 < \ell_2(p) \le p^{2/5}$ is less than
+$0.00754\, x^{4/5}$.
 
-Corrected range: stated for `x > 0`.  The paper says `x ≥ 0`, but at `x = 0` both sides are `0`
-(`Q_{0,a₁}(0) = 0` and `M · 0^{0.8} = 0`), so the strict inequality fails there; the paper
-itself applies the lemma for `t > 0`.
+The hypothesis $x > 0$ cannot be dropped: at $x = 0$ both sides are $0$, so the strict
+inequality fails.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly
 ---
 
-# Euler Poly
+# Euler polynomials
 
-The Euler polynomial `E_n(x)`, defined through
-Bernoulli polynomials by
-`E_n(x) = (2 / (n + 1)) (B_{n+1}(x) - 2^{n+1} B_{n+1}(x / 2))`.
+**Euler polynomials.** Let $B_m(x)$ denote the $m$-th Bernoulli polynomial. For $n \ge 0$,
+the Euler polynomial $E_n(x)$ is the polynomial with rational coefficients
+$E_n(x) = \frac{2}{n + 1} \left(B_{n+1}(x) - 2^{n+1} B_{n+1}(x/2)\right)$.
 
 ## Depends on
 

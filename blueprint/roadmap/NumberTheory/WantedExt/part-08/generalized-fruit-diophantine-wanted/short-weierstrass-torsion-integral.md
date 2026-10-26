@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.short_weierstrass_torsion_integral
 ---
 
-# Short weierstrass torsion integral
+# Nagell–Lutz integrality
 
-Nagell-Lutz integrality: for an elliptic curve `E : y² = x³ + A x + B` over `ℚ` with
-`A, B ∈ ℤ`, every torsion point `P = (x, y) ∈ E(ℚ)` of order `m ≥ 2` has `x, y ∈ ℤ`.
+**Nagell–Lutz integrality.** Let $E : y^2 = x^3 + A x + B$ be an elliptic curve over
+$\mathbb{Q}$ with $A, B \in \mathbb{Z}$. Every point $P = (x, y) \in E(\mathbb{Q})$ of finite order
+$m \ge 2$ has $x, y \in \mathbb{Z}$.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.laurentInvVar_mul_single_one
 ---
 
-# Laurent Inv Var mul single one
+# The variable $x$ times $x^{-1}$ is one
 
-`x · x⁻¹ = 1` in `LaurentSeries K`, with `x = laurentInvVar K` and `x⁻¹ = single 1 1`.
+**The variable $x$ times $x^{-1}$ is one.** Let $K$ be a field. In $K((x^{-1}))$, the
+product of the variable $x$ and the series $x^{-1}$ (coefficient $1$ at $x^{-1}$ and $0$
+elsewhere) is $1$.
 
 ## Depends on
 
-- [Laurent Inv Var](laurent-inv-var.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
 
 ## Sources
 

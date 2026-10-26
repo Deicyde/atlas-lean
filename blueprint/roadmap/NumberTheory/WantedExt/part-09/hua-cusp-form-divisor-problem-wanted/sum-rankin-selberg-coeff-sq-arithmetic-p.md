@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.sum_rankinSelbergCoeff_sq_arithmeticProgression
 ---
 
-# Theorem 1.2
+# Hua's theorem on squared Rankin–Selberg coefficients in arithmetic progressions
 
-**Theorem 1.2.** Let `f ∈ H_k^*` and `η = 23/261`. For primes `q`, residues `l` coprime to
-`q`, and real `x ≥ 1` with `q ≤ x^η`,
-`∑_{n ≤ x, n ≡ l (mod q)} λ_{f×f}(n)² = (x/φ(q)) P(log x) + O_{f,ε}(q x^{1 - 3η/2 + ε})`,
-where `P` has degree `1` and positive leading coefficient. `q ≪ x^η` is read as `q ≤ x^η`;
-`P` may depend on `q` (it is the residue of the `χ_0`-twisted series, Proposition 3.2); the
-implied constant depends only on `f` and `ε`. The stray "`j ≥ 1`" of the printed statement is
-dropped (no `j` occurs).
+**Hua's theorem on squared Rankin–Selberg coefficients in arithmetic progressions.** Let $f$
+be a level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let
+$\lambda_{f\times f}$ be its Rankin–Selberg coefficients, let $\varphi$ be Euler's totient
+function, and put $\eta = 23/261$. There are real polynomials $P_q$, one for each prime $q$, each
+of degree $1$ with positive leading coefficient, such that for every $\varepsilon > 0$ there is a
+constant $C$ with
+
+$$
+\Bigl|\sum_{\substack{1 \le n \le x \\ n \equiv l \ (\mathrm{mod}\ q)}} \lambda_{f\times f}(n)^2 -
+\frac{x}{\varphi(q)}\,P_q(\log x)\Bigr| \le C\,q\,x^{1 - 3\eta/2 + \varepsilon}
+$$
+
+for every prime $q$, every natural number $l$ coprime to $q$ and every real $x \ge 1$ with
+$q \le x^{\eta}$.
 
 ## Depends on
 
-- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
-- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+- [Normalized Hecke eigenform](is-normalized-hecke-eigenform.md)
+- [Rankin–Selberg coefficients](rankin-selberg-coeff.md)
 
 ## Sources
 

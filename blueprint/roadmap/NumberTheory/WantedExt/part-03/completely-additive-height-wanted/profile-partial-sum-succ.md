@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.profilePartialSum_succ
 ---
 
-# Profile Partial Sum succ
+# Recursion for the cumulative profile
 
-`Π_{k+1} = Π_k + π_{k+1}`.
+**Recursion for the cumulative profile.** For every sequence $\pi : \mathbb{N} \to \mathbb{N}$
+with cumulative profile $\Pi_k = \sum_{j=1}^{k} \pi_j$ and every natural number $k$,
+$\Pi_{k+1} = \Pi_k + \pi_{k+1}$.
 
 ## Depends on
 
-- [Profile Partial Sum](profile-partial-sum.md)
+- [Cumulative profile](profile-partial-sum.md)
 
 ## Sources
 

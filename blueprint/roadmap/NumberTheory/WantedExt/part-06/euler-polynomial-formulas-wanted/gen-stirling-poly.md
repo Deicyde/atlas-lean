@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.genStirlingPoly
 ---
 
-# Gen Stirling Poly
+# Generalized Stirling polynomial
 
-The generalized Stirling polynomial
-`S(n, k, x) = (1 / k!) ∑_{j=0}^k (k choose j) (-1)^{k-j} (x + j)^n`.
+**Generalized Stirling polynomial.** For natural numbers $n$ and $k$, the generalized
+Stirling polynomial $S(n, k, x)$ is the polynomial in $x$ with rational coefficients
+
+$$S(n, k, x) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} (-1)^{k-j} (x + j)^n.$$
 
 ## Depends on
 

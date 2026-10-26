@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsStableString
 ---
 
-# Is Stable String
+# Stable strings
 
-A string is stable if its convergent matrix satisfies `p = 2q'`.
+**Stable strings.** For a finite string $a = (a_1, \dots, a_n)$ of natural numbers, let
+$M(t) = \begin{pmatrix} 0 & 1 \\ 1 & t \end{pmatrix}$ and write the convergent matrix of $a$ as
+
+$$C(a) = M(a_1) M(a_2) \cdots M(a_n) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix},$$
+
+computed over the integers, with the empty product equal to the identity matrix. The string $a$ is
+stable if $p = 2q'$.
 
 ## Depends on
 
@@ -15,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convergent Matrix](convergent-matrix.md)
+- [Convergent matrix](convergent-matrix.md)
 
 ## Sources
 

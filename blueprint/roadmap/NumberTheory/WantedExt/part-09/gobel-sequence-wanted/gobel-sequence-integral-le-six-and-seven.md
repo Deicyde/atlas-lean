@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence_integral_le_six_and_seven_iff
 ---
 
-# Gobel Sequence integral le six and seven iff
+# Integrality of the early terms of $(k, l)$-Göbel sequences
 
-Theorem 2: every `(k, l)`-Göbel sequence with `k, l ≥ 2` is integral for
-`1 ≤ n ≤ 6`, and `g_{k,l}(7)` fails to be an integer exactly when `k ≡ 2 (mod 6)`
-and `l ≡ 3 (mod 7)`. Together these say `min_{k,l ≥ 2} N_{k,l} = 7` with
-`N_{k,l} = 7` iff `k ≡ 2 (mod 6)` and `l ≡ 3 (mod 7)`, where `N_{k,l}` is the
-first index at which `g_{k,l}` is not an integer; the threshold `N_{k,l}` is
-not introduced as a separate definition.
+**Integrality of the early terms of $(k, l)$-Göbel sequences.** Let $g_{k,l}$ denote the
+$(k, l)$-Göbel sequence. For all natural numbers $k, l \ge 2$ and $1 \le n \le 6$, the value
+$g_{k,l}(n)$ is an integer. Moreover, for all natural numbers $k, l \ge 2$, the value $g_{k,l}(7)$
+is not an integer if and only if $k \equiv 2 \pmod 6$ and $l \equiv 3 \pmod 7$.
+
+Equivalently, if $N_{k,l}$ is the first index at which $g_{k,l}$ is not an integer, then
+$\min_{k,l \ge 2} N_{k,l} = 7$, and $N_{k,l} = 7$ if and only if $k \equiv 2 \pmod 6$ and
+$l \equiv 3 \pmod 7$.
 
 ## Depends on
 
-- [Gobel Sequence](gobel-sequence.md)
+- [The (k, l)-Göbel sequence](gobel-sequence.md)
 
 ## Sources
 

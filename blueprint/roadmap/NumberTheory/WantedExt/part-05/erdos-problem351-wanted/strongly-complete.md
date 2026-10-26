@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosProblem351Wanted.EP351.StronglyComplete
 ---
 
-# Strongly Complete
+# Strongly complete sets of rationals
 
-Strong completeness from [EP-351]: `A` is strongly complete when, for every
-finite set `B`, the finite subset-sums of `A \ B` contain all sufficiently
-large integers.
+**Strongly complete sets of rationals.** A set $A$ of rational numbers is strongly complete
+when, for every finite set $B$ of rational numbers, there is an integer $N_0$ such that every
+integer $m \ge N_0$ is the sum of the elements of some finite subset of $A \setminus B$.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.digitSumArith_apply
 ---
 
-# Digit Sum Arith apply
+# Value of the digit-sum arithmetic function
 
-`digitSumArith q n` is the base-`q` digit sum of `n`.
+**Value of the digit-sum arithmetic function.** For natural numbers $q$ and $n$, the
+base-$q$ digit-sum arithmetic function $s_q$ takes at $n$ the value $s_q(n)$, the sum of the
+digits of $n$ in base $q$.
 
 ## Depends on
 
-- [Digit Sum Arith](digit-sum-arith.md)
+- [Digit-sum arithmetic function](digit-sum-arith.md)
 
 ## Sources
 

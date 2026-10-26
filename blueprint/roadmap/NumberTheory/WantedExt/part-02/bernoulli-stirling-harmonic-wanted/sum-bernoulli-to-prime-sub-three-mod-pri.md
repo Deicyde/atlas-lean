@@ -14,7 +14,7 @@ $p$ (its numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{
 
 ## Depends on
 
-- [Rat Residue](../../part-09/gobel-sequence-wanted/rat-residue.md)
+- [Residue of a rational number modulo an integer](../../part-09/gobel-sequence-wanted/rat-residue.md)
 
 ## Sources
 

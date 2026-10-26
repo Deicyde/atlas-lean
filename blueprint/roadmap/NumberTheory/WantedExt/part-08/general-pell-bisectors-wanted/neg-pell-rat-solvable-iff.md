@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.negPell_rat_solvable_iff
 ---
 
-# Neg Pell rat solvable iff
+# Rational solvability of the negative Pell equation
 
-For a positive square-free integer `d`, `x² - d y² = -1` has a rational solution if and only
-if `d` has no prime divisor congruent to `3` modulo `4`.
+**Rational solvability of the negative Pell equation.** For a positive squarefree integer
+$d$, the equation $x^2 - d y^2 = -1$ has a rational solution if and only if no prime divisor of
+$d$ is congruent to $3$ modulo $4$.
 
 ## Depends on
 

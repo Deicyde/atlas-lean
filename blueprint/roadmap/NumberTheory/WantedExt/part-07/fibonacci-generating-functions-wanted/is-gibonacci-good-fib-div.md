@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isGibonacciGood_fib_div
 ---
 
-# Is Gibonacci Good fib div
+# Consecutive Fibonacci ratios are good
 
-Consecutive Fibonacci ratios are good: `F_n / F_{n+1}` is good for
-every `(a, b)`. The paper allows every integer `n ≠ -1` with the
-two-sided Fibonacci extension; this statement covers `n ∈ ℕ`.
+**Consecutive Fibonacci ratios are good.** For all integers $a$ and $b$ and every natural
+number $n$, the ratio $F_n / F_{n+1}$ of consecutive Fibonacci numbers is good for $(a, b)$.
+
+The source allows every integer $n \ne -1$, using the Fibonacci numbers at negative indices.
 
 ## Depends on
 
-- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Good rationals for a Gibonacci generating function](is-gibonacci-good.md)
 
 ## Sources
 

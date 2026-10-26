@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_fareyZoom
 ---
 
-# Tendsto farey Zoom
+# Limit of the Farey staircase zoomed at the origin
 
-Theorem 1: for `x ≥ 0`, `B_n(x) → Σ_{k=1}^{⌊x⌋} log(x/k)` as `n → ∞`.
+**Limit of the Farey staircase zoomed at the origin.** Let $B_n$ be the zoomed Farey staircase
+of order $n$. For every real $x \ge 0$, $B_n(x) \to \sum_{k=1}^{\lfloor x \rfloor} \log(x/k)$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Farey Zoom](farey-zoom.md)
+- [Zoomed Farey staircase](farey-zoom.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.paperfoldingSumTerm_succ
 ---
 
-# Paperfolding Sum Term succ
+# Recursion for the paperfolding sum terms
 
-`sₖ₊₁ = sₖ² / xₖ`.
+**Recursion for the paperfolding sum terms.** For every sequence $x$ of natural numbers and
+every $k \in \mathbb{N}$, the paperfolding sum terms defined by $x$ satisfy
+$s_{k+1} = s_k^2 / x_k$, where the quotient is read as $0$ when $x_k = 0$.
 
 ## Depends on
 
-- [Paperfolding Sum Term](paperfolding-sum-term.md)
+- [Terms of the paperfolding sums](paperfolding-sum-term.md)
 
 ## Sources
 

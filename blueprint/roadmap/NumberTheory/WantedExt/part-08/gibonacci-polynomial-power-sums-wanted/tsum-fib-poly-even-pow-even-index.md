@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tsum_fibPoly_even_pow_even_index
 ---
 
-# Tsum fib Poly even pow even index
+# Series of even powers of Fibonacci polynomials at even indices
 
-Theorem 1.1: for real `x > 0` and positive integers `k`, `m`,
-`Σ_{n≥L} Σ_{j=0}^{m-1} C(2m, j)(-1)^{(k+1)j} f_{2k(m-j)} f_{4n(m-j)} / [f_{2n}² - (-1)^k f_k²]^{2m}
-  = Δ^{2(m-1)} Σ_{r=1}^k 1/f_s^{2m}` (summation index shifted to start at `0`).
+**Series of even powers of Fibonacci polynomials at even indices.** Let $f_i$ be the
+Fibonacci polynomials, defined by $f_0 = 0$, $f_1 = 1$ and $f_{i+2} = x f_{i+1} + f_i$. Let
+$x > 0$ be real and let $k$ and $m$ be positive integers. If $k$ is odd, put $L = (k + 1)/2$ and
+$s_r = 2r - 1$; if $k$ is even, put $L = k/2 + 1$ and $s_r = 2r$. Then
+
+$$
+\sum_{n \ge L} \frac{\sum_{j=0}^{m-1} \binom{2m}{j} (-1)^{(k+1)j} f_{2k(m-j)}(x)
+f_{4n(m-j)}(x)}{\bigl(f_{2n}(x)^2 - (-1)^k f_k(x)^2\bigr)^{2m}} =
+(x^2 + 4)^{m-1} \sum_{r=1}^{k} \frac{1}{f_{s_r}(x)^{2m}}.
+$$
 
 ## Depends on
 

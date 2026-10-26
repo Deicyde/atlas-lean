@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_monicIrreducible_iff
 ---
 
-# Mem monic Irreducible iff
+# Membership in the set of monic irreducible polynomials
 
-A polynomial belongs to `monicIrreducible F` precisely when it is both monic and
-irreducible, exposing the two clauses used for `P ∈ 𝒫` in later statements.
+**Membership in the set of monic irreducible polynomials.** Let $F$ be a field. A polynomial $P$
+over $F$ lies in the set $\mathcal{P}$ of monic irreducible polynomials over $F$ if and only if
+$P$ is monic and irreducible.
 
 ## Depends on
 
-- [Monic Irreducible](monic-irreducible.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

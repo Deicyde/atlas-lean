@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.iterate_forwardDiff_pow_eq_sum
 ---
 
-# Lemma 21
+# Iterated forward differences of a power
 
-**Lemma 21**: the `k`-th forward difference with step
-`r` of `y ↦ yⁿ` is `∑_{j=0}^k (-1)^{k-j} C(k,j) (x + rj)ⁿ`
-(paper: nonzero complex `r`, positive `k`; the identity
-holds for all real `r` and all `k`).
+**Iterated forward differences of a power.** For a real number $r$, let $\Delta_r$ be the
+forward difference operator with step $r$, sending a function $f : \mathbb{R} \to \mathbb{R}$ to
+$y \mapsto f(y + r) - f(y)$, and let $\Delta_r^k$ be its $k$-fold iterate (the identity when
+$k = 0$). For all real numbers $r$ and $x$ and all natural numbers $k$ and $n$, applying
+$\Delta_r^k$ to the function $y \mapsto y^n$ and evaluating at $x$ gives
+$\sum_{j=0}^{k} (-1)^{k-j} \binom{k}{j} (x + rj)^n$.
+
+The paper states this for nonzero complex $r$ and positive $k$; here $r$ is real and $k = 0$ is
+allowed.
 
 ## Depends on
 

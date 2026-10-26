@@ -5,9 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hFullKSqSum
 ---
 
-# H Full KSq Sum
+# The sum $\sum_P K(P, h, j)^2$ over monic irreducible polynomials
 
-`∑_P K(P, h, j)^2`.
+**The sum $\sum_P K(P, h, j)^2$ over monic irreducible polynomials.** Let $F$ be a finite
+field with $q$ elements, let $h$ and $j$ be natural numbers and let $\xi$ be a complex number.
+Write $\rho = q^{1/h}\xi^j$, where $q^{1/h}$ is the positive real $h$-th root of $q$ for $h \ge 1$
+and $q^{1/h} = 1$ for $h = 0$, and let $\rho^{-1}$ be read as $0$ when $\rho = 0$. For a monic
+irreducible polynomial $P$ over $F$ write $|P| = q^{\deg P}$, $y = (\rho^{-1})^{\deg P}$ and
+$K(P, h, j) = (1 - y)/(|P|(1 - y) + 1)$, read as $0$ when the denominator vanishes. This defines
+the complex number $\sum_P K(P, h, j)^2$, the sum over all monic irreducible polynomials $P$ over
+$F$, taken as an unconditional sum that is $0$ when the family is not summable.
 
 ## Depends on
 
@@ -15,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [H Full K](h-full-k.md)
-- [Monic Irreducible](monic-irreducible.md)
+- [The local factor $K(P, h, j)$](h-full-k.md)
+- [Monic irreducible polynomials](monic-irreducible.md)
 
 ## Sources
 

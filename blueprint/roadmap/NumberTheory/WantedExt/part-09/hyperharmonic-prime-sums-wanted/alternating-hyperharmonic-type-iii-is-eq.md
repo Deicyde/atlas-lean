@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.alternatingHyperharmonic_typeIII_isEquivalent
 ---
 
-# Alternating Hyperharmonic type III is Equivalent
+# Asymptotics of type III alternating hyperharmonic numbers
 
-Lemma 16: for `y, p ≥ 1`, the type III numbers satisfy
-`H_n^{(p,2y+1,3)} ∼ n^y ζ̄(p) / (2^y y!)`, `H_n^{(1,2y,3)} ∼ n^{y-1} log n / (2^y (y-1)!)`, and for
-`p ≥ 2`, `H_{2n}^{(p,2y,3)} ∼ n^{y-1} (ζ(p) - ζ̄(p)) / (2 (y-1)!)` and
-`H_{2n-1}^{(p,2y,3)} ∼ n^{y-1} (ζ(p) + ζ̄(p)) / (2 (y-1)!)`.
+**Asymptotics of type III alternating hyperharmonic numbers.** For real $s$ let
+$\overline{H}_n^{(s)} = \sum_{i=1}^{n} (-1)^{i-1}/i^s$ be the alternating generalized harmonic
+numbers, and let the type III generalized alternating hyperharmonic numbers be
+$H_n^{(s,1,3)} = \overline{H}_n^{(s)}$ and
+$H_n^{(s,r+1,3)} = \sum_{k=1}^{n} (-1)^{k-1} H_k^{(s,r,3)}$. Let $y \ge 1$ and $p \ge 1$ be natural
+numbers and let $\bar\zeta(p)$ be the alternating zeta value at $p$. Then, as $n \to \infty$,
+$H_n^{(p,2y+1,3)} \sim n^y \bar\zeta(p) / (2^y\, y!)$ and
+$H_n^{(1,2y,3)} \sim n^{y-1} \log n / (2^y (y-1)!)$. If moreover $p \ge 2$, then, with
+$\zeta(p) = \sum_{i \ge 1} 1/i^p$, as $n \to \infty$,
+$H_{2n}^{(p,2y,3)} \sim n^{y-1} (\zeta(p) - \bar\zeta(p)) / (2\,(y-1)!)$ and
+$H_{2n-1}^{(p,2y,3)} \sim n^{y-1} (\zeta(p) + \bar\zeta(p)) / (2\,(y-1)!)$.
 
 ## Depends on
 
-- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
-- [Alternating Zeta](alternating-zeta.md)
-- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
+- [Alternating generalized harmonic numbers](alternating-generalized-harmonic.md)
+- [Alternating zeta values](alternating-zeta.md)
+- [Signed iterated partial sums](signed-iterated-partial-sum.md)
 
 ## Sources
 

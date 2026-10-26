@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.arithmeticDerivative_collatz_comm_prime_tetration_iff
 ---
 
-# Arithmetic Derivative collatz comm prime tetration iff
+# Prime tetrations where the arithmetic derivative and the Collatz map commute
 
-For a prime `p`, the tetration `p^p` solves `D(C(n)) = C(D(n))` if and only if
-`C(p^p) = q^q` for some prime `q`.
+**Prime tetrations where the arithmetic derivative and the Collatz map commute.** Let $D$ be
+the arithmetic derivative and $C$ the accelerated Collatz map. For a prime $p$,
+$D(C(p^p)) = C(D(p^p))$ if and only if $C(p^p) = q^q$ for some prime $q$.
 
 ## Depends on
 
 - [Arithmetic derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
-- [Collatz Accelerated](collatz-accelerated.md)
+- [The accelerated Collatz map](collatz-accelerated.md)
 
 ## Sources
 

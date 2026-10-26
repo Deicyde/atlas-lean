@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.additiveOfPrimeValues_one
 ---
 
-# Additive Of Prime Values one
+# The completely additive extension vanishes at one
 
-The extension vanishes at `1`.
+**The completely additive extension vanishes at one.** For every function
+$v : \mathbb{N} \to \mathbb{N}$, the completely additive function with prime values $v$ (which
+sends $m = \prod_p p^{a_p}$ to $\sum_p a_p\, v(p)$) takes the value $0$ at $1$.
 
 ## Depends on
 
-- [Additive Of Prime Values](additive-of-prime-values.md)
+- [Completely additive function with prescribed prime values](additive-of-prime-values.md)
 
 ## Sources
 

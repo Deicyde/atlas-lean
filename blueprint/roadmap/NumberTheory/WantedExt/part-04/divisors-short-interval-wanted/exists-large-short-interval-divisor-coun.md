@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_large_shortIntervalDivisorCount_pos
 ---
 
-# Exists large short Interval Divisor Count pos
+# Arbitrarily large integers with a divisor in a short window
 
-Under Conjecture 2 any admissible constant is at least `1`, in the nontrivial form proved
-in the paper: there are arbitrarily large `n` with a divisor in `[n^θ, n^θ + n^{θ-ε}]`. (As
-printed, `k_ε(θ) ≥ 1` already follows from `n = 1`, where `D_1(1, 1) = 1`.)
+**Arbitrarily large integers with a divisor in a short window.** Let $\theta$ and $\varepsilon$
+be real numbers with $0 < \theta < 1$ and $0 < \varepsilon < \theta$. Then for every natural
+number $N$ there is a natural number $n \ge N$ with at least one divisor $d$ satisfying
+$n^\theta \le d \le n^\theta + n^{\theta - \varepsilon}$.
+
+This is the nontrivial form of the statement that a constant bounding the number of such divisors
+for all $n \ge 1$ is at least $1$; that weaker statement already follows from $n = 1$.
 
 ## Depends on
 
-- [Short Interval Divisor Count](short-interval-divisor-count.md)
+- [Number of divisors in a short interval](short-interval-divisor-count.md)
 
 ## Sources
 

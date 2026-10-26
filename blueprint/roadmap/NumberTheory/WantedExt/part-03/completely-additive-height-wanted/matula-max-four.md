@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.matulaMax_four
 ---
 
-# Matula Max four
+# The first maximal Matula number
 
-`P(4) = p₈`.
+**The first maximal Matula number.** The Gutman–Ivić maximal Matula number $P(4)$ equals
+$p_8$, the eighth prime.
 
 ## Depends on
 
-- [Matula Max](matula-max.md)
-- [Nth Prime One](nth-prime-one.md)
+- [Gutman–Ivić maximal Matula numbers](matula-max.md)
+- [The $i$-th prime](nth-prime-one.md)
 
 ## Sources
 

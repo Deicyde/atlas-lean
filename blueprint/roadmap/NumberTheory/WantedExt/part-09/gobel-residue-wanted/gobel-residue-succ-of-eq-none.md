@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gobelResidue_succ_of_eq_none
 ---
 
-# Gobel Residue succ of eq none
+# Failure of the Göbel residue sequence persists
 
-Once the residue sequence fails (`F`), it stays `F`.
+**Failure of the Göbel residue sequence persists.** For all natural numbers $k$, $p$, $r$ and
+every $n \ge 1$, if the residue sequence takes the failure value at $n$, that is
+$g_{k,p,r}(n) = F$, then $g_{k,p,r}(n + 1) = F$.
 
 ## Depends on
 
-- [Gobel Residue](gobel-residue.md)
+- [Residue sequence of the $k$-Göbel sequence](gobel-residue.md)
 
 ## Sources
 

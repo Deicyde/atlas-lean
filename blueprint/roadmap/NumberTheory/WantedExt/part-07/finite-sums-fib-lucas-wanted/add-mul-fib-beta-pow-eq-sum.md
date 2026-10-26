@@ -5,19 +5,28 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.add_mul_fibBeta_pow_eq_sum
 ---
 
-# Theorem 15
+# Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$
 
-**Theorem 15** (corrected multinomial): for `q ≥ 1`
-and every real `x`, `(x + qβ)ᵐ` is the sum over `n ≤ m` and
-`j₁+⋯+j_q+ℓ₁+⋯+ℓ_q = n` of `√5^{ℓ₁+⋯+ℓ_q} · (n!/(∏jᵢ!∏ℓᵢ!))
-· C(m,n) · B_{ℓ₁}⋯B_{ℓ_q} · ∏ F_{jᵢ+1}/(jᵢ+1) · x^{m-n}`,
-with the full multinomial coefficient (the paper's displayed
-definition omits the `ℓᵢ!` factors, and with them omitted
-the identity fails, e.g. at `q = 2`, `x = √5`, `m = 2`).
+**Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$.** Let
+$\beta = (1 - \sqrt{5})/2$, let $B_k$ be the Bernoulli numbers with $B_1 = -1/2$, and let $F_k$ be
+the Fibonacci numbers. For every natural number $q \ge 1$, every natural number $m$ and every real
+number $x$, the power $(x + q\beta)^m$ equals the sum, over $0 \le n \le m$ and over all pairs of
+tuples of natural numbers $(j_1, \dots, j_q)$ and $(\ell_1, \dots, \ell_q)$ with
+$j_1 + \dots + j_q + \ell_1 + \dots + \ell_q = n$, of
+
+$$
+\sqrt{5}^{\,\ell_1 + \dots + \ell_q} \frac{n!}{j_1! \cdots j_q! \, \ell_1! \cdots \ell_q!}
+\binom{m}{n} B_{\ell_1} \cdots B_{\ell_q} \frac{F_{j_1+1}}{j_1+1} \cdots \frac{F_{j_q+1}}{j_q+1}
+x^{m-n}.
+$$
+
+The coefficient is the full multinomial coefficient: the paper's displayed definition omits the
+factors $\ell_i!$, and with them omitted the identity fails, for example at $q = 2$,
+$x = \sqrt{5}$, $m = 2$.
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
 
 ## Sources
 

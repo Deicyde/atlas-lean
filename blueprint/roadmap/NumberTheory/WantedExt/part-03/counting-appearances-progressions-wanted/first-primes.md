@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.firstPrimes
 ---
 
-# First Primes
+# The first primes
 
-The first `k` primes, `p i = ` the `(i+1)`-st prime.
+**The first primes.** For a natural number $k$, the $k$-tuple whose entry with index $i$, for
+$0 \le i < k$, is the $(i+1)$-st prime; that is, the first $k$ primes $2, 3, 5, \dots$ in
+increasing order.
 
 ## Depends on
 

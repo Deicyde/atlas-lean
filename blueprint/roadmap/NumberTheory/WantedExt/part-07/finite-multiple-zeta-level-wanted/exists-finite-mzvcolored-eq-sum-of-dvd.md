@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.exists_finiteMZVColored_eq_sum_of_dvd
 ---
 
-# Lemma 2
+# Raising the level of finite multiple zeta values
 
-**Lemma 2.** For `N ∣ M` (both positive), `Z_{𝒜,w}(N) ⊆ Z_{𝒜,w}(M)`: every finite
-multiple zeta value of level `N` and weight `w` is a `ℚ`-linear combination, in `𝒜`, of
-finite multiple zeta values of level `M` and weight `w`.
+**Raising the level of finite multiple zeta values.** Let $N$ and $M$ be positive integers
+with $N \mid M$, let $k = (k_1, \dots, k_r)$ be an index of positive integers of weight
+$w = k_1 + \dots + k_r$, and let $c$ be a color map from $\mathbb{Z}/N\mathbb{Z}$ to
+$(\mathbb{Z}/N\mathbb{Z})^r \cup \{\varnothing\}$. Write $\zeta^{c}_{p,N}(k)$ for the
+$p$-component of the finite multiple zeta value of level $N$ with color map $c$. Then there are
+rationals $q_1, \dots, q_n$, indices $k^{(1)}, \dots, k^{(n)}$ of positive integers, each of
+weight $w$, and color maps $c_1, \dots, c_n$ of level $M$ (each $c_i$ from
+$\mathbb{Z}/M\mathbb{Z}$ to $(\mathbb{Z}/M\mathbb{Z})^{r_i} \cup \{\varnothing\}$, where $r_i$
+is the depth of $k^{(i)}$) such that for all sufficiently large primes $p$
 
-The inclusion of `ℚ`-spans is stated on generators; a rational `q` acts modulo `p` as
-`q.num · q.den⁻¹`.
+$$
+\zeta^{c}_{p,N}(k) = \sum_{i=1}^{n} q_i \, \zeta^{c_i}_{p,M}(k^{(i)}) \quad \text{in }
+\mathbb{Z}/p\mathbb{Z},
+$$
+
+where a rational $q = a/b$ in lowest terms with $b > 0$ is read modulo $p$ as $a b^{-1}$.
 
 ## Depends on
 
-- [Finite MZVColored](finite-mzvcolored.md)
+- [Finite multiple zeta value of level $N$ with a color map](finite-mzvcolored.md)
 
 ## Sources
 

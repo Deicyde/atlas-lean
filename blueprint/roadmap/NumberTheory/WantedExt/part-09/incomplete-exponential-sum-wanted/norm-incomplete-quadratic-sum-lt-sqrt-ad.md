@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.norm_incomplete_quadratic_sum_lt_sqrt_add_sqrt
 ---
 
-# Norm incomplete quadratic sum lt sqrt add sqrt
+# Uniform bound for incomplete quadratic exponential sums
 
-Corollary 6.1: for a prime `p`, a quadratic `f(x) = a x² + b x + c` with `p ∤ a`, and
-`1 ≤ B ≤ p`, `|S_p(f, B)| < √p + √((2/π) p log p + p/2)`.
+**Uniform bound for incomplete quadratic exponential sums.** Let $p$ be a prime, write
+$e_p(t) = e^{2\pi i t/p}$, let $a, b, c$ be integers with $p \nmid a$, and let $B$ be an integer
+with $1 \le B \le p$. Then $\left|\sum_{x=1}^{B} e_p(a x^2 + b x + c)\right| <
+\sqrt{p} + \sqrt{\frac{2}{\pi} p \log p + \frac{p}{2}}$.
 
 ## Depends on
 

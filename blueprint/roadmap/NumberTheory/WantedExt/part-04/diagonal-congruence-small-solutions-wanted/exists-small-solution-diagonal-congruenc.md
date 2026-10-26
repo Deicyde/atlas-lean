@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_small_solution_diagonal_congruence
 ---
 
-# Exists small solution diagonal congruence
+# Small solutions of diagonal congruences
 
-Theorem 1: for `k ≥ 2` there is `C = C(k) > 0` such that for every `n` with `n ≥ 9`
-(`k = 2`), `n ≥ 12` (`k = 3`), or `n ≥ (3/2) k (log k + log log k + 2 + O(log log k / log k))`
-(`k ≥ 4`), every prime `p`, integer `c` and integers `a_i` with `p ∤ a_i`, the congruence
-`a_1 x_1^k + ⋯ + a_n x_n^k ≡ c (mod p)` has a solution with `1 ≤ x_i ≤ C p^{1/k}`.
+**Small solutions of diagonal congruences.** There is a real-valued function $g$ on the natural
+numbers with $g(k) = O(\log \log k / \log k)$ as $k \to \infty$ such that for every $k \ge 2$
+there is a constant $C > 0$ with the following property. Let $n$ satisfy $n \ge 9$ if $k = 2$,
+$n \ge 12$ if $k = 3$, and $n \ge \frac{3}{2} k (\log k + \log \log k + 2 + g(k))$ if $k \ge 4$.
+Then for every prime $p$, every integer $c$ and all integers $a_1, \dots, a_n$ not divisible by
+$p$, the congruence $a_1 x_1^k + \dots + a_n x_n^k \equiv c \pmod p$ has a solution in natural
+numbers $x_1, \dots, x_n$ with $1 \le x_i \le C p^{1/k}$ for every $i$.
 
 ## Depends on
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.even_of_even_genMarkovNumber
 ---
 
-# Even of even gen Markov Number
+# An even generalized Markov number forces $k$ to be even
 
-Lemma 4.13: if some `k`-generalized Markov number is even, then `k` is even.
+**An even generalized Markov number forces $k$ to be even.** Let $k$ be a natural number. If
+some $k$-generalized Markov number $b$ is even, then $k$ is even.
 
 ## Depends on
 
-- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Generalized Markov number](is-gen-markov-number.md)
 
 ## Sources
 

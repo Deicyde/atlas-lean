@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.isKLDeficientPerfect_prime_pow_two_imp
 ---
 
-# Theorem 3
+# $(2,\ell)$-deficient-perfect prime powers (corrected)
 
-**Theorem 3** (corrected): if `p^a` is
-`[2,ℓ]`-deficient-perfect then `ℓ = 1` and (`a = 2` or
-`p^a = 2`); the printed exception `a = 2`, `ℓ = 1` omits
-the solution `p = 2`, `a = 1`, `ℓ = 1`, `d = 1` (the
-number `2` of Corollary 1).
+**$[2,\ell]$-deficient-perfect prime powers (corrected).** Let $p$ be a prime and let $a$ and
+$\ell$ be natural numbers. If $p^a$ is $[2,\ell]$-deficient-perfect, then $\ell = 1$, and either
+$a = 2$, or $p = 2$ and $a = 1$.
+
+The printed statement allows only the exception $a = 2$, $\ell = 1$, and so omits the solution
+$p = 2$, $a = 1$, $\ell = 1$, $d = 1$ (the number $2$ of Corollary 1).
 
 ## Depends on
 
-- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+- [$(k,\ell)$-deficient-perfect numbers](is-kldeficient-perfect.md)
 
 ## Sources
 

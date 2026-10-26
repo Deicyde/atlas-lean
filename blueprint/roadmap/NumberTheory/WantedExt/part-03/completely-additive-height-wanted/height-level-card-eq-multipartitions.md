@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.heightLevel_card_eq_multipartitions
 ---
 
-# Height Level card eq multipartitions
+# Height levels are counted by coloured partitions
 
-Proposition 1: a height function induces a height-preserving bijection between `ℕ` and
-multipartitions with `πₗ` colours at part size `ℓ`, `πₗ` the number of primes of height `ℓ`.
-Stated level by level: the number of `m ≥ 1` with `H(m) = n` equals the number of families
-`(α_{ℓ,j})`, `1 ≤ ℓ ≤ n`, `j < πₗ`, of nonnegative integers with `∑ ℓ α_{ℓ,j} = n`.
+**Height levels are counted by coloured partitions.** Let $H$ be a height function and, for
+$\ell \ge 1$, let $\pi_\ell$ be the number of primes $p$ with $H(p) = \ell$. For every $n \ge 0$,
+the number of positive integers $m$ with $H(m) = n$ equals the number of families
+$(\alpha_{\ell,j})$ of nonnegative integers indexed by $1 \le \ell \le n$ and $0 \le j < \pi_\ell$
+with $\sum_{\ell,j} \ell\, \alpha_{\ell,j} = n$, that is, the number of partitions of $n$ in which
+a part of size $\ell$ comes in $\pi_\ell$ colours.
+
+This is the level-by-level form of the statement that $H$ induces a height-preserving bijection
+between the positive integers and such coloured partitions.
 
 ## Depends on
 
-- [Is Height Function](is-height-function.md)
+- [Height functions](is-height-function.md)
 
 ## Sources
 

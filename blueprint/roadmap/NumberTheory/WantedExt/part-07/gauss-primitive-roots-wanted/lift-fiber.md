@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unit Reduce Sq](unit-reduce-sq.md)
+- [Reduction of units modulo $p^2$ to units modulo $p$](unit-reduce-sq.md)
 
 ## Sources
 

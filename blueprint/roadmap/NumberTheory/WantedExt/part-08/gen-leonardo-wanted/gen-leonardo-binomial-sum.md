@@ -5,21 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_binomial_sum
 ---
 
-# Gen Leonardo binomial sum
+# Binomial convolution identities for generalized Leonardo numbers
 
-The binomial-convolution identities
-`∑_i C(n,i) L_{k,i+r} = L_{k,2n+r} - k (2^n - 1)` and
-`∑_i C(n,i) M_{k,i+r} = M_{k,2n+r} - 2k (2^n - 1)`.
+**Binomial convolution identities for generalized Leonardo numbers.** Let $k$ be an integer,
+and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized
+Leonardo numbers. For all natural numbers $n$ and $r$,
 
-Parts (iii) and (iv) of the paper's Theorem 3.1 (alternating sums)
-are not formalized: as printed they involve the backward index
-`L_{k,n-r-2}` and fail, for example at `k = 1, n = 3, r = 1` under
-the backward extension (left side `2`, printed right side `-2`).
+$$\sum_{i=0}^{n} \binom{n}{i} L_{k,i+r} = L_{k,2n+r} - k\,(2^n - 1)$$
+
+and
+
+$$\sum_{i=0}^{n} \binom{n}{i} M_{k,i+r} = M_{k,2n+r} - 2k\,(2^n - 1).$$
+
+Parts (iii) and (iv) of the paper's Theorem 3.1, alternating sums involving the index
+$L_{k,n-r-2}$, are false as printed: at $k = 1$, $n = 3$, $r = 1$, with the sequence extended to
+negative indices by the recurrence, the left side is $2$ and the printed right side is $-2$.
 
 ## Depends on
 
-- [Gen Leonardo](gen-leonardo.md)
-- [Gen Leonardo Companion](gen-leonardo-companion.md)
+- [Generalized Leonardo numbers](gen-leonardo.md)
+- [Dual generalized Leonardo numbers](gen-leonardo-companion.md)
 
 ## Sources
 

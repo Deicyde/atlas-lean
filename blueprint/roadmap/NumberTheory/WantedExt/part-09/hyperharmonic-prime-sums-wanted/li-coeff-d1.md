@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.liCoeffD1
 ---
 
-# Li Coeff D1
+# Li's coefficients $d_1(m, j)$
 
-`d₁(m, j) = ∑_{k=j}^{m} C(k, j) (-1)^{k-j} c₁(m, k)`.
+**Li's coefficients $d_1(m, j)$.** For natural numbers $m$ and $j$,
+$d_1(m, j) = \sum_{k=j}^{m} \binom{k}{j} (-1)^{k-j} c_1(m, k)$, where $c_1$ denotes Li's
+coefficients $c_1(m, k)$; in particular $d_1(m, j) = 0$ when $j > m$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Li Coeff C1](li-coeff-c1.md)
+- [Li's coefficients $c_1(m, j)$](li-coeff-c1.md)
 
 ## Sources
 

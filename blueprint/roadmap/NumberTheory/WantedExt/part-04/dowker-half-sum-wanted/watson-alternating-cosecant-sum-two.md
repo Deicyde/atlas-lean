@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.watsonAlternatingCosecantSum_two
 ---
 
-# Watson Alternating Cosecant Sum two
+# Watson's alternating cosecant sum at $n = 2$
 
-The characteristic value of the alternating cosecant sum at `n = 2` is `1`.
+**Watson's alternating cosecant sum at $n = 2$.** The alternating cosecant sum
+$C_2 = \sum_{l=1}^{1} (-1)^{l+1} / \sin(\pi l / 2)$ equals $1$.
 
 ## Depends on
 
-- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
+- [Watson's alternating cosecant sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

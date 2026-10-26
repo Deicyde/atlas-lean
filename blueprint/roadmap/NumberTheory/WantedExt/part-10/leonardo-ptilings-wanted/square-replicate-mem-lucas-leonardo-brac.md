@@ -12,7 +12,7 @@ The all-squares bracelet lies in `B_{p,n}` for `n ≥ 1`.
 
 ## Depends on
 
-- [Bracelet First Tile](bracelet-first-tile.md)
+- [First tile of a bracelet](bracelet-first-tile.md)
 - [Lucas Leonardo Bracelets](lucas-leonardo-bracelets.md)
 
 ## Sources

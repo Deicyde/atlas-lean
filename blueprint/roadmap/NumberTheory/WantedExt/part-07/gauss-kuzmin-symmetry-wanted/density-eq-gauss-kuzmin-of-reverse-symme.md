@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.density_eq_gaussKuzmin_of_reverse_symmetric
 ---
 
-# Density eq gauss Kuzmin of reverse symmetric
+# Reversal symmetry forces the Gauss–Kuzmin density
 
-Characterization of the Gauss-Kuzmin measure: if a probability density `f` continuous on
-`[0, 1]` satisfies `μ(I(a)) = μ(I(a⃖))` for all strings of positive integers whose length lies in an
-infinite set `S`, then `f(x) = 1/(log 2 · (1 + x))` on `[0, 1]`.
+**Reversal symmetry forces the Gauss–Kuzmin density.** Let $f$ be a real function that is
+continuous and nonnegative on $[0, 1]$ with $\int_0^1 f(x)\,dx = 1$, and let $S$ be an infinite
+set of natural numbers. Write $I(a)$ for the fundamental interval of a string $a$ and
+$\overleftarrow{a}$ for the reverse of $a$. If
+$\int_{I(a)} f(x)\,dx = \int_{I(\overleftarrow{a})} f(x)\,dx$ for every string $a$ of positive
+integers whose length lies in $S$, then $f(x) = \frac{1}{\log 2 \cdot (1 + x)}$ for every
+$x \in [0, 1]$.
 
 ## Depends on
 
-- [Cf Cylinder](cf-cylinder.md)
+- [Fundamental interval of a string](cf-cylinder.md)
 
 ## Sources
 

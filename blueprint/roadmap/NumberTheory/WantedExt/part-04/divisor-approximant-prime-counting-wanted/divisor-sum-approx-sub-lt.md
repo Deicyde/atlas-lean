@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.divisorSumApprox_sub_lt
 ---
 
-# Divisor Sum Approx sub lt
+# Exponential approximation of the sum-of-divisors function
 
-Theorem 3: with `A` as in Lemma 1, `σ̃(n) = ∑_{k=1}^{n} k exp(-n k A(k, n) sin²(nπ/k))`
-satisfies `σ̃(n) - σ(n) < n/(eⁿ - 1)` for all `n ≥ 1`.
+**Exponential approximation of the sum-of-divisors function.** Let $A$ be a real-valued
+function of two natural numbers such that $A(k, n) \sin^2(n\pi/k) \ge 1$ for all natural numbers
+$k, n$ with $1 \le k \le n$ and $k \nmid n$. For a natural number $n \ge 1$ let $\sigma(n)$
+be the sum of the positive divisors of $n$ and
+
+$$\tilde\sigma(n) = \sum_{k=1}^{n} k\, e^{-nkA(k, n)\sin^2(n\pi/k)}.$$
+
+Then $\tilde\sigma(n) - \sigma(n) < \frac{n}{e^n - 1}$.
 
 ## Depends on
 

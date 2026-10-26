@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_twentyfive_regular_modEq_mul_sigma
 ---
 
-# Card twentyfive regular mod Eq mul sigma
+# 25-regular partitions modulo 5 and the divisor sum
 
-`R_{25}(n) ≡ (n + 1) σ(n + 1) (mod 5)`.
+**25-regular partitions modulo 5 and the divisor sum.** Let $R_{25}(m)$ denote the number of
+partitions of $m$ in which no part is divisible by $25$, and let $\sigma(m)$ be the sum of the
+positive divisors of $m$. For every positive integer $n$,
+$R_{25}(n) \equiv (n + 1) \, \sigma(n + 1) \pmod 5$.
 
 ## Depends on
 

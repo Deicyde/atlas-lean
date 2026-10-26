@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gobelSequence
 ---
 
-# Gobel Sequence
+# The (k, l)-Göbel sequence
 
-The `(k, l)`-Göbel sequence `g_{k,l}(n)`: `g_{k,l}(1) = l` and
-`(n + 1) g_{k,l}(n + 1) = g_{k,l}(n) (n + g_{k,l}(n)^{k-1})` for `n ≥ 1`.
-The paper indexes from `n = 1` and takes `k, l ≥ 2` (Lemma 5 also admits
-`k, l ≥ 1`); here `k, l` are arbitrary naturals and the unused value at
-`n = 0` is set to `0`.
+**The (k, l)-Göbel sequence.** For natural numbers $k$ and $l$, the $(k, l)$-Göbel sequence
+is the sequence of rational numbers $g_{k,l}(n)$, $n \ge 0$, given by $g_{k,l}(0) = 0$,
+$g_{k,l}(1) = l$ and, for $n \ge 1$,
+
+$$g_{k,l}(n + 1) = \frac{g_{k,l}(n) \bigl(n + g_{k,l}(n)^{k-1}\bigr)}{n + 1},$$
+
+where $k - 1$ is truncated subtraction, so the exponent is $0$ when $k = 0$.
+
+The paper indexes from $n = 1$ and takes $k, l \ge 2$ (Lemma 5 also admits $k, l \ge 1$); the
+value at $n = 0$ is a convention and plays no role.
 
 ## Depends on
 

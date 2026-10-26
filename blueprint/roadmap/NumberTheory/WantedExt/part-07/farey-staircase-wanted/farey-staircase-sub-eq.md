@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.fareyStaircase_sub_eq
 ---
 
-# Farey Staircase sub eq
+# Recursion between consecutive Farey staircases
 
-Proposition 7: for `n ≥ 2`, `D_n = A_n - A_{n-1}` satisfies
-(a) `D_n(x) = (1/n)(⌊nx⌋/n - A_{n-1}(x))` and (b) `D_n(x) = (1/(n-1))(⌊nx⌋/n - A_n(x))`.
+**Recursion between consecutive Farey staircases.** Let $n \ge 2$ be a natural number and $x$
+a real number, write $A_m$ for the Farey staircase of order $m$, and let
+$D_n(x) = A_n(x) - A_{n-1}(x)$. Then
+$D_n(x) = \frac{1}{n} \left( \lfloor nx \rfloor / n - A_{n-1}(x) \right)$ and
+$D_n(x) = \frac{1}{n-1} \left( \lfloor nx \rfloor / n - A_n(x) \right)$.
 
 ## Depends on
 
-- [Farey Staircase](farey-staircase.md)
+- [Farey staircase](farey-staircase.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ayadi_cubic_boundedPartialQuotients
 ---
 
-# Ayadi cubic bounded Partial Quotients
+# Bounded partial quotients for a cubic of Ayadi et al
 
-Ayadi et al.: over `𝔽₂`, a root `α` of positive degree of `C T³ + A T² + 1 = 0` with
-`C = x^ℓ`, `ℓ ≥ 2`, and `A = x^{2ℓ} + ∑_{i=2}^{2ℓ-1} e_i x^i + x + 1` has bounded partial quotients
-(`A` is any polynomial of degree `2ℓ` with constant and linear coefficients `1`; positive degree is
-`α.order < 0`).
+**Bounded partial quotients for a cubic of Ayadi et al.** Let $\ell \ge 2$ and let
+$A \in \mathbb{F}_2[x]$ be a polynomial of degree $2\ell$ whose constant and linear coefficients
+are both $1$, that is, $A = x^{2\ell} + \sum_{i=2}^{2\ell-1} e_i x^i + x + 1$ with
+$e_i \in \mathbb{F}_2$. If $\alpha \in \mathbb{F}_2((x^{-1}))$ has positive degree in $x$ (the
+largest exponent of $x$ occurring in $\alpha$ is positive) and satisfies
+$x^\ell \alpha^3 + A \alpha^2 + 1 = 0$, then $\alpha$ has bounded partial quotients.
 
 ## Depends on
 
-- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
-- [Laurent Inv Var](laurent-inv-var.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Laurent series with bounded partial quotients](laurent-has-bounded-partial-quotients.md)
+- [The variable $x$ of $K((x^{-1}))$](laurent-inv-var.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

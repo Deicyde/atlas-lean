@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.IsKLNearPerfect
 ---
 
-# Is KLNear Perfect
+# $(k,\ell)$-near-perfect numbers
 
-The paper's `[k,ℓ]`-near-perfect numbers.
+**$[k,\ell]$-near-perfect numbers.** For natural numbers $k$, $\ell$ and $n$, write
+$\sigma_k(n) = \sum_{e \mid n} e^k$. The number $n$ is $[k,\ell]$-near-perfect when there is a
+divisor $d$ of $n$ with $d < n$ such that $\sigma_k(n) = n^k + d^k + \ell n$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [KLNear Perfect With](klnear-perfect-with.md)
+- [$(k,\ell)$-near-perfect with a given divisor](klnear-perfect-with.md)
 
 ## Sources
 

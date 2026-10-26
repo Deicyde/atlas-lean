@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.power_coeff_convolution_pow
 ---
 
-# Power coeff convolution pow
+# Power recursion lemma for positive exponents
 
-Power recursion lemma for positive exponents and an arbitrary power series `A`:
-`∑_{k=0}^n (n - (u/v + 1) k) a_u(n-k) a_v(k) = 0`.
+**Power recursion lemma for positive exponents.** Let $K$ be a field of characteristic zero,
+let $A \in K[[X]]$ be a formal power series, and let $u$ and $v$ be positive integers. Write
+$a_u(k)$ and $a_v(k)$ for the coefficients of $X^k$ in $A^u$ and $A^v$. Then for every natural
+number $n$,
+
+$$\sum_{k=0}^{n} \left(n - \left(\frac{u}{v} + 1\right) k\right) a_u(n-k)\, a_v(k) = 0.$$
 
 ## Depends on
 

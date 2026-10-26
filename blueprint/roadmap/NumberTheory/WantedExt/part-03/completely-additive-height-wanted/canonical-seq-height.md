@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.canonicalSeqHeight
 ---
 
-# Canonical Seq Height
+# Canonical sequential realization of a profile
 
-The canonical sequential realization `H_seq` of a profile: `H_seq(pᵢ) = k(i)` and complete
-additivity.
+**Canonical sequential realization of a profile.** Let $(\pi_k)_{k \ge 1}$ be a sequence of
+nonnegative integers with partial sums $\Pi_k = \sum_{1 \le j \le k} \pi_j$. For $i \ge 1$ let
+$k(i)$ be the least $k \ge 0$ with $i \le \Pi_k$, or $0$ if there is none, and let
+$p_1 = 2, p_2 = 3, \dots$ be the primes in increasing order. The canonical sequential realization
+$H_{\mathrm{seq}}$ of $\pi$ is the function $\mathbb{N} \to \mathbb{N}$ that sends $m \ge 1$ to
+$\sum_{i \ge 1} a_i\, k(i)$, where $a_i$ is the exponent of $p_i$ in $m$, and sends $0$ to $0$;
+thus $H_{\mathrm{seq}}$ is completely additive with $H_{\mathrm{seq}}(p_i) = k(i)$.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Additive Of Prime Values](additive-of-prime-values.md)
-- [Seq Height Index](seq-height-index.md)
+- [Completely additive function with prescribed prime values](additive-of-prime-values.md)
+- [Block index of a profile](seq-height-index.md)
 
 ## Sources
 

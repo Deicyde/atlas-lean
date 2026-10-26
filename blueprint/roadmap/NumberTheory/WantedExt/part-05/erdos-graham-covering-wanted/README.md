@@ -4,5 +4,5 @@ navigation: module
 
 # Erdos Graham Covering
 
-- [Theorem 3.2](not-covering-of-nonintersecting.md)
-- [Lemma 2.2](one-le-sum-inv-moduli.md)
+- [Non-intersecting integers admit no covering system of divisor form](not-covering-of-nonintersecting.md)
+- [Covering systems have reciprocal-moduli sum at least one](one-le-sum-inv-moduli.md)

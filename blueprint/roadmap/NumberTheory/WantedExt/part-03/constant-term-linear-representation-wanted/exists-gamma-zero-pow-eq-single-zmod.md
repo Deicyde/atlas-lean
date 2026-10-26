@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_gammaZero_pow_eq_single_zmod
 ---
 
-# Exists gamma Zero pow eq single zmod
+# Powers of $\tilde\gamma(0)$ modulo $p^a$ stabilize at a matrix unit
 
-Eventually `γ̃(0)^{s'} = e_{C,C}` over `ℤ/p^aℤ` (the printed `γ̃(0)^s` is read as
-`γ̃(0)^{s'}`, as in Lemma 11).
+**Powers of $\tilde\gamma(0)$ modulo $p^a$ stabilize at a matrix unit.** Let $p$ be a prime,
+let $a \ge 1$, $r$ and $m$ be natural numbers, let $T = \{-m, \dots, m\}^r \subseteq \mathbb{Z}^r$,
+and let $\tilde\gamma(0)$ be the $T \times T$ matrix over $\mathbb{Z}/p^a\mathbb{Z}$ whose
+$(i, j)$ entry is $1$ if $i = p j$ and $0$ otherwise. Then there is $s \in \mathbb{N}$ such that for
+every $s' \ge s$, $\tilde\gamma(0)^{s'}$ is the matrix whose $(0, 0)$ entry is $1$ and whose other
+entries are $0$.
+
+Kohen's Lemma 30 prints $\tilde\gamma(0)^s$; as in Lemma 11, it is read for every exponent
+$s' \ge s$.
 
 ## Depends on
 

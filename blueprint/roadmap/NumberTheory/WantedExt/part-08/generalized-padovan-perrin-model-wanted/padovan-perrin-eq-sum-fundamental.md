@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.padovanPerrin_eq_sum_fundamental
 ---
 
-# Padovan Perrin eq sum fundamental
+# Expansion in the Fibonacci fundamental system
 
-Every solution of the `([k]; p; s)`-Padovan–Perrin recurrence with initial values
-`α_j = v j` satisfies `v n = ∑_{j=0}^{s+p-1} α_j v⁽ʲ⁺¹⁾ n` for every `n ≥ 0`. Stated over any
-commutative ring instead of `ℝ`.
+**Expansion in the Fibonacci fundamental system.** Let $R$ be a commutative ring, let
+$k_1, k_2 \in R$ and $p, s \in \mathbb{N}$, and for $1 \le j \le s + p$ let $v^{(j)}$ be the
+solution of the $([k]; p; s)$-Padovan–Perrin recurrence with $v^{(j)}(m) = 1$ if $m + 1 = j$ and
+$v^{(j)}(m) = 0$ otherwise, for $0 \le m < s + p$. Then every solution $v \colon \mathbb{N} \to R$
+of the recurrence satisfies, for every $n \ge 0$,
+
+$$v(n) = \sum_{j=0}^{s+p-1} v(j)\, v^{(j+1)}(n).$$
 
 ## Depends on
 
-- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
-- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Fibonacci fundamental system of the generalized Padovan–Perrin recurrence](padovan-perrin-fundamental.md)
+- [Generalized Padovan–Perrin recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

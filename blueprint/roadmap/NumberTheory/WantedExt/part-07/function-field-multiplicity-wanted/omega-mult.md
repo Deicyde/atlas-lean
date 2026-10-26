@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.omegaMult
 ---
 
-# Omega Mult
+# Number of prime factors of given multiplicity
 
-`omegaMult F k f` is `ω_k(f)`, the number of distinct normalized irreducible factors
-of the nonzero polynomial `f` whose multiplicity in `normalizedFactors f` is exactly
-`k`.  The exceptional input `f = 0`, for which normalized factorization is not the
-paper's finite prime factorization, is assigned value `0` explicitly.
+**Number of prime factors of given multiplicity.** Let $F$ be a field and $k \in \mathbb{N}$. For a
+nonzero polynomial $f$ over $F$, $\omega_k(f)$ is the number of distinct monic irreducible
+polynomials $P$ dividing $f$ whose multiplicity in $f$ (the largest $m$ with $P^m \mid f$) is
+exactly $k$. For the zero polynomial, $\omega_k(0) = 0$ by convention.
 
 ## Depends on
 

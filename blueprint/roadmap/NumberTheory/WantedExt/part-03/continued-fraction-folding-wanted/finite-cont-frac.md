@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.finiteContFrac
 ---
 
-# Finite Cont Frac
+# Value of a finite continued fraction
 
-The value `[a₀; a₁, …, aₜ] = a₀ + 1/(a₁ + 1/(⋯ + 1/aₜ))` of a finite continued fraction
-with arbitrary (possibly zero or negative) integer entries, as a rational number. The empty
-list has value `0`, so `[a] = a + 0⁻¹ = a`; a vanishing intermediate denominator evaluates
-through Lean's `0⁻¹ = 0`.
+**Value of a finite continued fraction.** For a finite list $a_0, a_1, \dots, a_t$ of integers
+(possibly zero or negative), the value $[a_0; a_1, \dots, a_t]$ is the rational number
+$a_0 + 1/(a_1 + 1/(\cdots + 1/a_t))$, computed from the right: the empty list has value $0$, and
+the list $a_0, a_1, \dots, a_t$ has value $a_0 + v^{-1}$, where $v$ is the value of the list
+$a_1, \dots, a_t$. In particular $[a] = a + 0^{-1} = a$; here and at any vanishing intermediate
+denominator, $0^{-1}$ is taken to be $0$.
 
 ## Depends on
 

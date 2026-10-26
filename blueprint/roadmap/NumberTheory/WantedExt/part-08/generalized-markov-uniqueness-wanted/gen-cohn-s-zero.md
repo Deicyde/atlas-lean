@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.genCohnS_zero
 ---
 
-# Gen Cohn S zero
+# The matrix $S$ vanishes for $k = 0$
 
-Characteristic value: for `k = 0` the matrix `S` vanishes (classical Cohn triples
-`Q = PR`).
+**The matrix $S$ vanishes for $k = 0$.** For $k = 0$, the matrix $S$ of the generalized
+Cohn triple relation is the zero $2 \times 2$ matrix, so the relation $Q = PR - S$ reduces to
+the classical Cohn relation $Q = PR$.
 
 ## Depends on
 
-- [Gen Cohn S](gen-cohn-s.md)
+- [The matrix $S$ of the generalized Cohn triple relation](gen-cohn-s.md)
 
 ## Sources
 

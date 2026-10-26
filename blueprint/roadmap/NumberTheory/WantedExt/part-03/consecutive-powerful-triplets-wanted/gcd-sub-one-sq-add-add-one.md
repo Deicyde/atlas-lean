@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.gcd_sub_one_sq_add_add_one
 ---
 
-# Gcd sub one sq add add one
+# The gcd of $x \mp 1$ and $x^2 \pm x + 1$
 
-For every integer `x`, `gcd(x - 1, x² + x + 1) = gcd(x - 1, 3)` and
-`gcd(x + 1, x² - x + 1) = gcd(x + 1, 3)`.
+**The gcd of $x \mp 1$ and $x^2 \pm x + 1$.** For every integer $x$,
+$\gcd(x - 1, x^2 + x + 1) = \gcd(x - 1, 3)$ and $\gcd(x + 1, x^2 - x + 1) = \gcd(x + 1, 3)$.
 
 ## Depends on
 

@@ -5,21 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.laurent_eq_convergent_of_order
 ---
 
-# Laurent eq convergent of order
+# Close rational approximations and convergents
 
-Let `α` be irrational and `P, Q ∈ 𝔽_q[x]` coprime, `Q ≠ 0`. (i) If
-`|Q α - P| = |x|^{-s} |Q|^{-1}` for some `s ≥ 1`, then `P = c P_n` and `Q = c Q_n` for some
-`n ≥ 0` and `c ∈ 𝔽_q \ {0}`, and `|b_{n+1}| = |x|^s`. (ii) If `|Q α - P| = |Q|^{-1}`, then
-`P = c P_n + d P_{n-1}` and `Q = c Q_n + d Q_{n-1}` for some `n ≥ 0` and `c, d ∈ 𝔽_q \ {0}`.
-Degrees are written with `order` (`|y| = |x|^{-y.order}`, `|Q| = |x|^{deg Q}`).
+**Close rational approximations and convergents.** Let $K$ be a field and let
+$\alpha \in K((x^{-1}))$ be irrational, with partial quotients $b_0, b_1, \dots$ and convergents
+$P_n / Q_n$, where $P_{-1} = 1$, $Q_{-1} = 0$, $P_0 = b_0$, $Q_0 = 1$,
+$P_{n+1} = b_{n+1} P_n + P_{n-1}$ and $Q_{n+1} = b_{n+1} Q_n + Q_{n-1}$. For a Laurent series
+$y = \sum_m c_m x^{-m}$ let $v(y)$ be its order, the least $m$ with $c_m \ne 0$, and let
+$v(0) = 0$. Let $P, Q \in K[x]$ be coprime with $Q \ne 0$.
+(i) If $v(Q \alpha - P) = s + \deg Q$ for some integer $s \ge 1$, then there are $n \ge 0$ and
+$c \in K \setminus \{0\}$ with $P = c P_n$, $Q = c Q_n$ and $v(b_{n+1}) = -s$.
+(ii) If $v(Q \alpha - P) = \deg Q$, then there are $n \ge 0$ and $c, d \in K \setminus \{0\}$
+with $P = c P_n + d P_{n-1}$ and $Q = c Q_n + d Q_{n-1}$.
+
+With $|y| = |x|^{-v(y)}$, the hypothesis of (i) reads $|Q \alpha - P| = |x|^{-s} |Q|^{-1}$ and
+its conclusion $|b_{n+1}| = |x|^s$; the hypothesis of (ii) reads $|Q \alpha - P| = |Q|^{-1}$.
 
 ## Depends on
 
-- [Laurent Is Irrational](laurent-is-irrational.md)
-- [Laurent Conv Den](laurent-conv-den.md)
-- [Laurent Conv Num](laurent-conv-num.md)
-- [Laurent Partial Quotient](laurent-partial-quotient.md)
-- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+- [Irrational Laurent series](laurent-is-irrational.md)
+- [Denominators of the convergents](laurent-conv-den.md)
+- [Numerators of the convergents of a Laurent series](laurent-conv-num.md)
+- [Partial quotients of a Laurent series](laurent-partial-quotient.md)
+- [Polynomials as Laurent series in the inverse variable](poly-to-laurent-inv.md)
 
 ## Sources
 

@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tsum_lucasPoly_cube_even_index
 ---
 
-# Tsum lucas Poly cube even index
+# Cubic series over even-indexed Lucas polynomials
 
-Corollary 4.5: for real `x > 0`,
-`Σ_{n≥1} ((x³ + 3x)ℓ_{6n} - 3x ℓ_{2n})/(ℓ_{2n}² - Δ²)³ = 1/x³` and
-`Σ_{n≥2} (x(x⁴ + 4x² + 3)f_{6n} + 3x f_{2n})/(ℓ_{2n}² + (x² + 4)x²)³
-  = (1/(x² + 4))(1/(x² + 2)³ + 1/(x⁴ + 4x² + 2)³)`.
+**Cubic series over even-indexed Lucas polynomials.** Let $x > 0$ be real, and let $f_n$ and
+$\ell_n$ denote the Fibonacci and Lucas polynomials evaluated at $x$, given by $f_0 = 0$,
+$f_1 = 1$, $\ell_0 = 2$, $\ell_1 = x$ and the recurrence $z_{n+2} = x z_{n+1} + z_n$ for both. Then
+
+$$\sum_{n=1}^{\infty} \frac{(x^3 + 3x) \ell_{6n} - 3x \ell_{2n}}
+{\left(\ell_{2n}^2 - (x^2 + 4)\right)^3} = \frac{1}{x^3}$$
+
+and
+
+$$\sum_{n=2}^{\infty} \frac{x(x^4 + 4x^2 + 3) f_{6n} + 3x f_{2n}}
+{\left(\ell_{2n}^2 + (x^2 + 4) x^2\right)^3} =
+\frac{1}{x^2 + 4} \left(\frac{1}{(x^2 + 2)^3} + \frac{1}{(x^4 + 4x^2 + 2)^3}\right).$$
 
 ## Depends on
 

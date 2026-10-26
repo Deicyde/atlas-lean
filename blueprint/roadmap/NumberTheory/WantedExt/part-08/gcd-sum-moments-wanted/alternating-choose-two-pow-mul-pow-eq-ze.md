@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.alternating_choose_two_pow_mul_pow_eq_zero
 ---
 
-# Theorem 5
+# An alternating binomial sum vanishes
 
-**Theorem 5**, vanishing of the exponents `ℓ_m`: for `m ≥ 2^k - 1`,
-`ℓ_m = ∑_{r=0}^{2^k} (-1)^r C(2^k, r) (m + 1 - r)^k = 0`.
+**An alternating binomial sum vanishes.** Let $k$ and $m$ be natural numbers with $k \ge 2$
+and $m \ge 2^k - 1$. Then, computed in the integers,
 
-The sum is truncated at `r ≤ m + 1` (the coefficient of `p^{-ms}` in
-`(1 - p^{-s})^{2^k} ∑_a (a + 1)^k p^{-as}`, read off from (3)); for `m ≥ 2^k - 1` the truncation
-is vacuous. The printed untruncated sum vanishes for every `m` (a `2^k`-th difference of a
-polynomial of degree `k`), which contradicts the paper's own `ℓ_2 = 3^k - 4^k + C(2^k, 2)`
-(the exponent in (2) and (3)): at `k = 2`, `m = 2` the printed sum is `0` but the truncated sum is
-`-1`. With the truncation the hypothesis `m ≥ 2^k - 1` is needed (`k = 2`, `m = 2`). The paper's
-`k ≥ 2` is kept: at `k = 0` the `r = m + 1` term contributes `0^0 = 1` instead of the vanishing
-coefficient of a negative index, so the truncated sum is no longer the coefficient of (3).
+$$\sum_{r=0}^{\min(2^k,\, m+1)} (-1)^r \binom{2^k}{r} (m + 1 - r)^k = 0.$$
+
+Since $m + 1 \ge 2^k$, the upper limit of the sum is $2^k$.
+
+This sum is the exponent $\ell_m$ of the paper: the coefficient of $p^{-ms}$ in
+$(1 - p^{-s})^{2^k} \sum_{a \ge 0} (a + 1)^k p^{-as}$, which is why it stops at $r = m + 1$. The
+paper prints the sum up to $r = 2^k$ for every $m$; that sum vanishes for every $m$, being a
+$2^k$-th difference of a polynomial of degree $k$, which contradicts the paper's own
+$\ell_2 = 3^k - 4^k + \binom{2^k}{2}$: for $k = m = 2$ the truncated sum is $-1$. So with the
+truncation the hypothesis $m \ge 2^k - 1$ is needed. The paper's hypothesis $k \ge 2$ is kept: for
+$k = 0$ the term $r = m + 1$ contributes $0^0 = 1$ rather than the coefficient of a negative
+index, so the truncated sum is no longer the coefficient read off from the paper's Euler product.
 
 ## Depends on
 

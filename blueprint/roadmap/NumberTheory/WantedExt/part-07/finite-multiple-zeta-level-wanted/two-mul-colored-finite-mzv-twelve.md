@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_coloredFiniteMZV_twelve
 ---
 
-# Proposition 3
+# Level-$12$ colored finite zeta values and Bernoulli numbers
 
-**Proposition 3.** For odd `k ≥ 3`, in `𝒜`:
-`2 ζ^{[2]}_{𝒜,12}(k) = (2^{-k} - 3^{-k} - 4^{-k} + 12^{-k}) Z(k)` and
-`2 ζ^{[3]}_{𝒜,12}(k) = (3^{-k} - 4^{-k} - 6^{-k} + 12^{-k}) Z(k)`, where
-`Z(k) = (B_{p-k} / k mod p)_p`.
+**Level-$12$ colored finite zeta values and Bernoulli numbers.** Let $k \ge 3$ be odd. For a
+prime $p > k$ write $Z_p(k) = B_{p-k}/k \in \mathbb{Z}/p\mathbb{Z}$, where $B_n$ is the $n$-th
+Bernoulli number, and for $\alpha \in \mathbb{Z}/12\mathbb{Z}$ let
+$\zeta^{\alpha}_{p,12}(k) \in \mathbb{Z}/p\mathbb{Z}$ be the sum of $m^{-k}$ over $0 < m < p$ with
+$m \equiv \alpha \pmod{12}$. Then for all but finitely many primes $p$, in $\mathbb{Z}/p\mathbb{Z}$,
+$2\zeta^{-2p}_{p,12}(k) = (2^{-k} - 3^{-k} - 4^{-k} + 12^{-k}) Z_p(k)$ and
+$2\zeta^{-3p}_{p,12}(k) = (3^{-k} - 4^{-k} - 6^{-k} + 12^{-k}) Z_p(k)$.
 
 ## Depends on
 
-- [Colored Finite MZV](colored-finite-mzv.md)
+- [Colored finite multiple harmonic sums](colored-finite-mzv.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_T2026_TogetherAI
 ---
 
-# Upper Bound T2026 Together AI
+# Together AI 2026 upper bound statement for the minimum overlap constant
 
-Source-reported Together AI 2026 upper bound.
+**Together AI 2026 upper bound statement for the minimum overlap constant.** This is the
+proposition that the continuous Erdős minimum-overlap constant $C_{1b}$ is at most $0.380871$.
 
 ## Depends on
 

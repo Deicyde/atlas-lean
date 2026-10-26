@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.generalizedFruit_no_solution_two_dvd
 ---
 
-# Generalized Fruit no solution two dvd
+# No solutions of the generalized fruit equation with even $x$
 
-The generalized fruit equation has no solution with even `x`: let `K` be a number field
-with `T_K ≠ ∅`, let `a, b ∈ 𝓞_K \ {0}`, and let `c = 2ᵈ b - 3ʳ` with `r ≥ 2` odd and
-`d ≥ 3` odd.  Then `a xᵈ - y² - z² + x y z - c = 0` has no solution `(x, y, z) ∈ 𝓞_K³` with
-`2 ∣ x`.  Corrected reading: the record says "integers `r ≥ 2` and `d ≥ 3` odd", and is
-false if `r` may be even: over `K = ℚ` with `a = b = 1`, `d = 3`, `r = 2` (so `c = -1`),
-`(x, y, z) = (2, 3, 0)` is a solution.  The paper's proof (arXiv:2408.12278, proof of
-Theorem 1) uses "since `r` is odd", so `odd` is read as applying to both `r` and `d`.
+**No solutions of the generalized fruit equation with even $x$.** Let $K$ be a number field
+with ring of integers $\mathcal{O}_K$ such that some prime ideal of $\mathcal{O}_K$ lying over $2$
+has ramification index $1$ and inertia degree $1$ over $\mathbb{Z}$. Let $a, b \in \mathcal{O}_K$
+be nonzero, let $r \ge 2$ and $d \ge 3$ be odd natural numbers, and let $c = 2^d b - 3^r$. Then
+the equation $a x^d - y^2 - z^2 + x y z - c = 0$ has no solution $(x, y, z) \in \mathcal{O}_K^3$
+with $2 \mid x$ in $\mathcal{O}_K$.
+
+The hypothesis that $r$ is odd cannot be dropped: over $K = \mathbb{Q}$ with $a = b = 1$, $d = 3$
+and $r = 2$ (so $c = -1$), $(x, y, z) = (2, 3, 0)$ is a solution. The source states "integers
+$r \ge 2$ and $d \ge 3$ odd"; its proof (arXiv:2408.12278, proof of Theorem 1) uses that $r$ is
+odd, so oddness is read as applying to both $r$ and $d$.
 
 ## Depends on
 
-- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
+- [Unramified primes of degree one above $2$](two-unramified-degree-one-primes.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_modEq_add
 ---
 
-# Fermat Number mod Eq add
+# Congruences between Fermat numbers propagate
 
-A congruence `F_i ≡ F_j (mod m)` propagates to `F_{i+t} ≡ F_{j+t} (mod m)` for every
-`t`; stated for every modulus and all `i, j` (the paper takes `p` prime and `i < j`).
+**Congruences between Fermat numbers propagate.** Write $F_n = 2^{2^n} + 1$. Let $m$, $i$ and
+$j$ be natural numbers with $F_i \equiv F_j \pmod m$. Then $F_{i+t} \equiv F_{j+t} \pmod m$ for
+every natural number $t$.
+
+No condition on $m$, $i$ or $j$ is needed.
 
 ## Depends on
 

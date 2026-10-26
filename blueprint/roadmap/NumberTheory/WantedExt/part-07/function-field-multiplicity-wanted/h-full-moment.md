@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hFullMoment
 ---
 
-# H Full Moment
+# The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$
 
-The `j`-th moment of `ω_k` over the `h`-full monic polynomials of degree `n`,
-`|N_h ∩ M_n|^{-1} ∑_{f ∈ N_h ∩ M_n} ω_k(f)^j`.
+**The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$.** Let $F$ be a
+finite field and let $h$, $k$, $j$ and $n$ be natural numbers. Let $N_h \cap M_n$ be the finite
+set of $h$-full monic polynomials of degree $n$ over $F$ (monic $f$ such that $P^h$ divides $f$
+for every monic irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the number of monic
+irreducible polynomials that divide $f$ with multiplicity exactly $k$. The moment is the real
+number
+
+$$|N_h \cap M_n|^{-1} \sum_{f \in N_h \cap M_n} \omega_k(f)^j,$$
+
+taken to be $0$ when $N_h \cap M_n$ is empty.
 
 ## Depends on
 
@@ -16,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [H Full](h-full.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [$h$-full polynomials](h-full.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

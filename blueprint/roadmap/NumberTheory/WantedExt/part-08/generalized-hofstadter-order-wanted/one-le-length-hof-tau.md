@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.one_le_length_hofTau
 ---
 
-# One le length hof Tau
+# Letter images under the generalized Hofstadter substitution are nonempty
 
-Each letter is replaced by a nonempty word under `τ_k`.
+**Letter images under the generalized Hofstadter substitution are nonempty.** For every
+natural number $k$, let $\tau_k$ be the substitution on letters in $\mathbb{N}$ sending $k$ to
+the two-letter word $k\,1$ and every other letter $m$ to the one-letter word $m + 1$. For every
+natural number $i$, the image $\tau_k(i)$ of the letter $i$ has length at least $1$.
 
 ## Depends on
 
-- [Hof Tau](hof-tau.md)
+- [The Hofstadter substitution on letters](hof-tau.md)
 
 ## Sources
 

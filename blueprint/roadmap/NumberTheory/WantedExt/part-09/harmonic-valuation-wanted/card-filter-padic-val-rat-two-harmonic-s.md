@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_filter_padicValRat_two_harmonic_sub
 ---
 
-# Card filter padic Val Rat two harmonic sub
+# Fiber counts of the 2-adic valuations of $H_n - H_m$
 
-Fiber counts of the values `ν₂(H_n - H_m)`.
+**Fiber counts of the 2-adic valuations of $H_n - H_m$.** Let $H_k = \sum_{j=1}^{k} 1/j$ be
+the $k$-th harmonic number (so $H_0 = 0$) and let $\nu_2$ denote the $2$-adic valuation on the
+rational numbers. Let $n$ and $a$ be natural numbers such that the binary digit of $n$ in
+position $a$ is $1$, that is, $2^a$ occurs in the binary expansion of $n$. Then exactly $2^a$ of
+the natural numbers $m < n$ satisfy $\nu_2(H_n - H_m) = -a$.
 
-The extracted statement truncates the refinement locating these values in
-the intervals determined by the partial sums `Mⱼ`; only the fiber counts
-stated in the first part are formalized here. Verified computationally with
-exact rational arithmetic for `n < 40`.
+The source theorem also locates these values of $m$ in intervals determined by the partial sums
+of the binary expansion of $n$; that refinement is not part of this statement.
 
 ## Depends on
 

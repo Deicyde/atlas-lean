@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.generalizedTau_fourteen_six_odd_index_mod_two
 ---
 
-# Generalized Tau fourteen six odd index mod two
+# Parity of $\tau_{14}$ and $\tau_6$ at odd arguments
 
-(a) `τ_{14}(2n + 1) ≡ R_8(n) (mod 2)`; (b) `τ_6(2n + 1)` is odd exactly when `n` is
-triangular.
+**Parity of $\tau_{14}$ and $\tau_6$ at odd arguments.** Let $\tau_k(m)$ be the generalized
+tau function, the coefficient of $q^m$ in $q \prod_{j \ge 1} (1 - q^j)^k$, and let $R_8(n)$ be
+the number of partitions of $n$ in which no part is divisible by $8$. For every positive integer
+$n$: (a) $\tau_{14}(2n + 1) \equiv R_8(n) \pmod 2$; (b) $\tau_6(2n + 1)$ is odd if and only if
+$n$ is a triangular number, that is, $n = m(m + 1)/2$ for some natural number $m$.
 
 ## Depends on
 
-- [Generalized Tau](generalized-tau.md)
+- [Generalized tau function](generalized-tau.md)
 
 ## Sources
 

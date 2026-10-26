@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sophieGermainChain_length_le_orderOf_two
 ---
 
-# Sophie Germain Chain length le order Of two
+# Length of a Sophie Germain prime chain
 
-For an odd prime `p`, the Sophie Germain prime chain
-`q_(j+1) = 2 ^ j * (p + 1) - 1` starting at `p` has length at most `ord_p(2)`: some term
-`q_(j+1)` with `j ≤ ord_p(2)` is not prime.
+**Length of a Sophie Germain prime chain.** Let $p$ be an odd prime and let
+$\mathrm{ord}_p(2)$ be the multiplicative order of $2$ modulo $p$. Then there is some
+$j \le \mathrm{ord}_p(2)$ such that $2^j (p + 1) - 1$ is not prime. Thus the Sophie Germain prime
+chain $q_1 = p$, $q_{i+1} = 2q_i + 1 = 2^i (p + 1) - 1$ begins with at most $\mathrm{ord}_p(2)$
+consecutive primes.
 
 ## Depends on
 

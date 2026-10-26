@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.primitiveRoot_pow_add_mul_prime_pow
 ---
 
-# Theorem 3
+# Primitive roots modulo $p^\ell$ of the form $g^p + kp$
 
-**Theorem 3**: if `g` is a primitive root of the odd prime `p`
-and `k ≢ 0 (mod p)`, then `g^p + kp` is a primitive root of `p^ℓ`
-for all `ℓ > 1`.
+**Primitive roots modulo $p^\ell$ of the form $g^p + kp$.** Let $p$ be an odd prime and let
+$g$ be a natural number that is a primitive root modulo $p$. If $k$ is a natural number not
+divisible by $p$, then $g^p + kp$ is a primitive root modulo $p^\ell$ for every natural number
+$\ell > 1$.
+
+Here a natural number $a$ is a primitive root modulo $n$ when its residue class in
+$\mathbb{Z}/n\mathbb{Z}$ is a primitive $\varphi(n)$-th root of unity, where $\varphi$ is Euler's
+totient function.
 
 ## Depends on
 

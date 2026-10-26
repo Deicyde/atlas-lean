@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.monicBounded
 ---
 
-# Monic Bounded
+# Monic polynomials of bounded norm
 
-The set of monic polynomials in `F[T]` with norm at most `X`.
+**Monic polynomials of bounded norm.** Let $F$ be a finite field and let $X$ be a real number.
+This is the set of monic polynomials $f \in F[T]$ whose norm $|f| = |F[T]/(f)|$, the number of
+elements of the quotient ring $F[T]/(f)$, satisfies $|f| \le X$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ring Norm](ring-norm.md)
+- [The norm on $F(T)$](ring-norm.md)
 
 ## Sources
 

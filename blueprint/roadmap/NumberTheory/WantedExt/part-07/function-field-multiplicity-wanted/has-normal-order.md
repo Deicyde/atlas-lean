@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.HasNormalOrder
 ---
 
-# Has Normal Order
+# Normal order on a set of polynomials
 
-`HasNormalOrder F U g G` says first that `g` and `G` are nonnegative on `U` and that `G`
-is degree-nondecreasing there.  It then says that for each `ε > 0`, the real-valued count
-of degree-`n` members of `U` outside
-`(1-ε)G(f) < g(f) < (1+ε)G(f)` is little-o of the count of `U ∩ M_n` as `n → ∞`.
-The paper writes `g,G : U → ℝ≥0`; total real-valued functions are used here, with
-nonnegativity of both imposed on `U`, so that finite-set filtering remains direct.
+**Normal order on a set of polynomials.** Let $F$ be a finite field, let $U$ be a set of
+polynomials over $F$, and let $g, G$ be real-valued functions on polynomials over $F$. For
+$n \in \mathbb{N}$ let $M_n$ be the set of monic polynomials of degree $n$ over $F$. Then $g$
+has normal order $G$ on $U$ when $g$ and $G$ are nonnegative on $U$, $G$ is
+degree-nondecreasing on $U$ (for $f_1, f_2 \in U$, $\deg f_2 \le \deg f_1$ implies
+$G(f_2) \le G(f_1)$, with $\deg$ the natural degree), and for every real $\varepsilon > 0$ the
+number of $f \in U \cap M_n$ for which $(1 - \varepsilon)G(f) < g(f) < (1 + \varepsilon)G(f)$
+fails is $o(|U \cap M_n|)$ as $n \to \infty$.
+
+The paper takes $g, G : U \to \mathbb{R}_{\ge 0}$; here both are total real-valued functions,
+with nonnegativity imposed on $U$.
 
 ## Depends on
 
@@ -20,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
-- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Degree-nondecreasing functions](is-degree-nondecreasing.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
 
 ## Sources
 

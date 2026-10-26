@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.basePPeriod
 ---
 
-# Base PPeriod
+# Period of the base-$p$ expansion
 
-The period `L_x` of the repeating part of the base-`p` expansion of `x`, taken as the order
-of `p` in `(ℤ/x_Dℤ)^×`; Lemma 2 (`basePDigit_eventually_periodic_iff`) identifies it with the
-minimal period of the digit sequence.
+**Period of the base-$p$ expansion.** For a natural number $p$ and a rational number $x$, let
+$x_D$ be the denominator of $x$ in lowest terms divided by the largest power of $p$ dividing it.
+The period $L_x$ of the base-$p$ expansion of $x$ is the multiplicative order of $p$ modulo $x_D$:
+the least $n \ge 1$ with $p^n \equiv 1 \pmod{x_D}$, or $0$ if there is no such $n$. For prime $p$
+this is the order of $p$ in $(\mathbb{Z}/x_D\mathbb{Z})^\times$.
+
+For prime $p$ and $x > 0$, Lemma 2 of the source identifies $L_x$ with the minimal period of the
+base-$p$ digits of $x$.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime To PDen](prime-to-pden.md)
+- [Prime-to-$p$ part of the denominator](prime-to-pden.md)
 
 ## Sources
 

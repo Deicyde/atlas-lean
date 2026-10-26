@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.initialRepetitionsC8Prime_two_pow_mul_add_even
 ---
 
-# Initial Repetitions C8 Prime two pow mul add even
+# Parity of $c_8'$ on residue classes modulo powers of $2$
 
-For `k ≥ 1` and `n ≥ 0`, `c₈'(2^{2k} n + r)` is even when `r < 2^{2k}` and
-`15 r ≡ 2^{2k-1} - 4` or `15 r ≡ 2^{2k-1} + 2^{2k-2} - 4 (mod 2^{2k})`, and `c₈'(2^{2k+1} n + r)`
-is even when `r < 2^{2k+1}` and `15 r ≡ 2^{2k} + 2^{2k-2} - 4 (mod 2^{2k+1})`. These `r` are the
-paper's least nonnegative residues `r'_{k,1}, r'_{k,2}, r'_{k,3}`.
+**Parity of $c_8'$ on residue classes modulo powers of $2$.** Let $c_8'$ be the partition
+function that counts partitions with a possibly distinguished part, and let $k \ge 1$, $n \ge 0$
+and $r \ge 0$ be integers. If $r < 2^{2k}$ and $15r \equiv 2^{2k-1} - 4 \pmod{2^{2k}}$, then
+$c_8'(2^{2k} n + r)$ is even. If $r < 2^{2k}$ and
+$15r \equiv 2^{2k-1} + 2^{2k-2} - 4 \pmod{2^{2k}}$, then $c_8'(2^{2k} n + r)$ is even. If
+$r < 2^{2k+1}$ and $15r \equiv 2^{2k} + 2^{2k-2} - 4 \pmod{2^{2k+1}}$, then
+$c_8'(2^{2k+1} n + r)$ is even.
+
+These $r$ are the paper's least nonnegative residues $r'_{k,1}$, $r'_{k,2}$, $r'_{k,3}$.
 
 ## Depends on
 
-- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
+- [The initial-repetitions partition function $c_8'$](initial-repetitions-c8-prime.md)
 
 ## Sources
 

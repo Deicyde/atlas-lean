@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FareyNumeratorWanted.farey_between_count
 ---
 
-# Lemma 1
+# Farey fractions with equal numerators between consecutive unit fractions
 
-**Lemma 1**: for positive integers `k > 1`, `n`
-and `h`, the number of Farey fractions between `1/k`
-and `1/(k-1)` in `F_n` with numerator `h` is `φ(h)`
-when `n ≥ k*h - 1`; the number between `1/k` and
-`2/(2k-1)` with numerator `h` is `φ(h)/2` for
-`h > 2` (stated as `2 * count = φ(h)`).
+**Farey fractions with equal numerators between consecutive unit fractions.** Let $k$, $n$
+and $h$ be natural numbers with $k > 1$, $h \ge 1$ and $n \ge kh - 1$, and let $\varphi$ be Euler's
+totient function. The number of integers $b$ with $1 \le b \le n$, $\gcd(h, b) = 1$ and
+$1/k < h/b \le 1/(k-1)$ is $\varphi(h)$. If moreover $h > 2$, then twice the number of integers
+$b$ with $1 \le b \le n$, $\gcd(h, b) = 1$ and $1/k < h/b < 2/(2k-1)$ is $\varphi(h)$.
+
+Equivalently, the Farey sequence of order $n$ has exactly $\varphi(h)$ fractions with numerator
+$h$ in the interval $(1/k, 1/(k-1)]$, and for $h > 2$ exactly $\varphi(h)/2$ in the interval
+$(1/k, 2/(2k-1))$.
 
 ## Depends on
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.partition_convolution_two_modEq_three
 ---
 
-# Partition convolution two mod Eq three
+# Partition convolution modulo $3$
 
-`∑_{a + b = n} p(a) p(b) ≡ ∑_{n = t + 3s} ω(t) p(s) (mod 3)`, where `ω(t)` is the `q^t`
-coefficient of `∏ (1 - q^m)` (Euler's pentagonal series).
+**Partition convolution modulo $3$.** Let $p(a)$ be the number of partitions of $a$, and let
+$\omega(t)$ be the coefficient of $q^t$ in Euler's product $\prod_{m \ge 1} (1 - q^m)$. For every
+integer $n \ge 0$,
+
+$$\sum_{a + b = n} p(a)\, p(b) \equiv \sum_{0 \le s \le n/3} \omega(n - 3s)\, p(s) \pmod 3,$$
+
+the left sum running over pairs $(a, b)$ of nonnegative integers and the right one over integers
+$s$.
 
 ## Depends on
 

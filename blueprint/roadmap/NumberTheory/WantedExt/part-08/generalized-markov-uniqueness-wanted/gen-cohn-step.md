@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.genCohnStep
 ---
 
-# Gen Cohn Step
+# One step of the wide generalized Cohn tree
 
-One step of the wide `k`-generalized Cohn tree: `false` maps `(P, Q, R)` to its left
-child `(P, PQ - S, Q)`, `true` to its right child `(Q, QR - S, R)`.
+**One step of the wide generalized Cohn tree.** Fix a natural number $k$ and let $S$ be the
+matrix of the $k$-generalized Cohn triple relation. On triples $(P, Q, R)$ of $2 \times 2$
+integer matrices, the left step (encoded by the Boolean false) sends $(P, Q, R)$ to its left
+child $(P, PQ - S, Q)$, and the right step (encoded by true) sends it to its right child
+$(Q, QR - S, R)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gen Cohn S](gen-cohn-s.md)
+- [The matrix $S$ of the generalized Cohn triple relation](gen-cohn-s.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.alternatingSignFibonacci_add_two
 ---
 
-# Alternating Sign Fibonacci add two
+# Recurrence of the alternating-sign Fibonacci sequence
 
-The recurrence `d (m + 2) = d (m + 1) + d m + (-1) ^ (m + 2)`.
+**Recurrence of the alternating-sign Fibonacci sequence.** For every natural number $m$,
+the alternating-sign Fibonacci sequence $d$ satisfies $d_{m+2} = d_{m+1} + d_m + (-1)^{m+2}$.
 
 ## Depends on
 
-- [Alternating Sign Fibonacci](alternating-sign-fibonacci.md)
+- [Alternating-sign Fibonacci sequence](alternating-sign-fibonacci.md)
 
 ## Sources
 

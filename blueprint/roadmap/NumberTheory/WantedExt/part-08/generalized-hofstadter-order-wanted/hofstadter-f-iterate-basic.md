@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF_iterate_basic
 ---
 
-# Hofstadter F iterate basic
+# Basic properties of the iterated Hofstadter functions
 
-Basic properties of `F_k^j` for `j, k ≥ 1`: `F_k^j(1) = F_k^j(2) = 1`; `F_k^j(n) ≥ 1` for
-`n ≥ 1`; `F_k^j(n) < n` for `n ≥ 2`; `∂F_k(n) = 1 - ∂F_k^k(n-1)` for `n ≥ 1`; `∂F_k^j(n) ∈
-{0, 1}`; `F_k^j` is monotone and onto but not one-to-one.
+**Basic properties of the iterated Hofstadter functions.** Let $j, k \ge 1$, let $F_k$ be the
+generalized Hofstadter function, and write $F_k^i$ for its $i$-fold iterate. Then
+$F_k^j(1) = F_k^j(2) = 1$; $F_k^j(n) \ge 1$ for every $n \ge 1$; $F_k^j(n) < n$ for every
+$n \ge 2$; $F_k(n+1) - F_k(n) = 1 - \bigl(F_k^k(n) - F_k^k(n-1)\bigr)$ in $\mathbb{Z}$ for every
+$n \ge 1$; $F_k^j(n+1)$ equals $F_k^j(n)$ or $F_k^j(n) + 1$ for every $n \ge 0$; and $F_k^j$ is
+monotone and surjective from $\mathbb{N}$ to $\mathbb{N}$ but not injective.
 
 ## Depends on
 
-- [Hofstadter F](hofstadter-f.md)
+- [Generalized Hofstadter function](hofstadter-f.md)
 
 ## Sources
 

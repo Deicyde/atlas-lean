@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatibleSemiprimePair.bounds
 ---
 
-# Bounds
+# Bounds on the factors of compatible semiprimes
 
-For compatible semiprimes `pq` and `rs` with `p > q`, both `r, s ≥ 241` and
-`3q < r, s < 3p`.
+**Bounds on the factors of compatible semiprimes.** Suppose the semiprimes $pq$ and $rs$ are
+compatible, where $q < p$. Then $r \ge 241$, $s \ge 241$, $3q < r < 3p$ and $3q < s < 3p$.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

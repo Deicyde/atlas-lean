@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_modulus_ge_108_of_distinct_covering_min_five
 ---
 
-# Theorem 1
+# Krukenberg's conjecture for minimum modulus five
 
-**Theorem 1** (Krukenberg's conjecture). If the smallest modulus of a distinct covering
-system is `5`, then its largest modulus is at least `108`.
+**Krukenberg's conjecture for minimum modulus five.** Let $C$ be a distinct covering
+system: a finite set of congruences $x \equiv r \pmod m$ with $r \in \mathbb{Z}$ and
+$m \in \mathbb{N}$, no two with the same modulus, such that every integer satisfies at least one
+of them. If every modulus of $C$ is at least $5$ and some modulus equals $5$, then some modulus
+of $C$ is at least $108$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.liCoeffC_zero_zero
 ---
 
-# Li Coeff C zero zero
+# Li's coefficient $c(0, 0)$
 
-`c(0, 0) = B_1 = 1/2`.
+**Li's coefficient $c(0, 0)$.** Li's coefficient $c(0, 0)$ equals $\frac{1}{2}$ (this is the
+Bernoulli number $B_1$ in the convention $B_1 = +\frac{1}{2}$).
 
 ## Depends on
 
-- [Li Coeff C](li-coeff-c.md)
+- [Li's coefficients $c(m, j)$](li-coeff-c.md)
 
 ## Sources
 

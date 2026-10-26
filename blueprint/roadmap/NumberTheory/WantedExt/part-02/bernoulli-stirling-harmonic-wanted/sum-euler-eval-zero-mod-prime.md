@@ -17,8 +17,8 @@ $2e^{xt}/(e^t + 1)$ and begin $1, -\tfrac12, 0, \tfrac14$.
 
 ## Depends on
 
-- [Euler Poly](../../part-06/euler-polynomial-formulas-wanted/euler-poly.md)
-- [Rat Residue](../../part-09/gobel-sequence-wanted/rat-residue.md)
+- [Euler polynomials](../../part-06/euler-polynomial-formulas-wanted/euler-poly.md)
+- [Residue of a rational number modulo an integer](../../part-09/gobel-sequence-wanted/rat-residue.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hofstadterF
 ---
 
-# Hofstadter F
+# Generalized Hofstadter function
 
-The generalized Hofstadter function `F_k`: `F_k(0) = 0` and `F_k(n) = n - F_k^k(n - 1)`
-for `n ≥ 1` (see `hofstadterF_zero` and `hofstadterF_eq`).
+**Generalized Hofstadter function.** For a natural number $k$, the function
+$F_k : \mathbb{N} \to \mathbb{N}$ is given by $F_k(0) = 0$ and $F_k(n) = n - F_k^k(n - 1)$ for
+$n \ge 1$, where $F_k^k$ is the $k$-fold iterate of $F_k$ (the identity when $k = 0$).
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hofstadter FAux](hofstadter-faux.md)
+- [Fuel-bounded generalized Hofstadter recursion](hofstadter-faux.md)
 
 ## Sources
 

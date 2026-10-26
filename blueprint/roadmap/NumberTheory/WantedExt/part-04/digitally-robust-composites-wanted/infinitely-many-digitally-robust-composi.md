@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinitelyMany_digitallyRobustComposites
 ---
 
-# Infinitely Many digitally Robust Composites
+# Infinitely many digitally robust composites
 
-There are infinitely many natural numbers `N` that satisfy `IsDigitallyRobustComposite N`:
-they are composite and coprime to ten, and remain composite under every replacement, permitted
-deletion, and insertion encoded above. The set-theoretic infinitude is the requested rendering;
-there is no mathematical deviation.
+**Infinitely many digitally robust composites.** There are infinitely many natural numbers that
+are digitally robust composites: composite numbers coprime to $10$ that stay composite after
+replacing any one base-ten digit (including a leading zero) by a different digit, after deleting
+any one of their digits, and after inserting any digit in any position.
 
 ## Depends on
 
-- [Is Digitally Robust Composite](is-digitally-robust-composite.md)
+- [Digitally robust composite numbers](is-digitally-robust-composite.md)
 
 ## Sources
 

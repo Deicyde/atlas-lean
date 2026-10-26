@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.higherANumberDelta_eq_one_iff
 ---
 
-# Higher ANumber Delta eq one iff
+# A digit criterion for $\delta(i) = 1$
 
-If `p ∤ i`, then `[p^{-1}](τ i) > [p^0](τ i)` if and only if `δ(i) = 1`.
+**A digit criterion for $\delta(i) = 1$.** Let $p$ be a prime, $d$ a divisor of $p - 1$ and
+$\tau = (p + 1)/d$. For a rational $t$ and an integer $k$ write $[p^k](t)$ for the $k$-th base-$p$
+digit of $t$, the residue of $\lfloor t / p^k \rfloor$ modulo $p$ in
+$\lbrace 0, \dots, p - 1 \rbrace$, and let $\delta$ be the rounding indicator. If $i$ is a natural
+number not divisible by $p$, then $[p^0](\tau i) < [p^{-1}](\tau i)$ if and only if $\delta(i) = 1$.
 
 ## Depends on
 
-- [Base PDigit](base-pdigit.md)
-- [Higher ANumber Delta](higher-anumber-delta.md)
-- [Tower Tau](tower-tau.md)
+- [Base-$p$ digits of a rational number](base-pdigit.md)
+- [The rounding indicator $\delta$](higher-anumber-delta.md)
+- [The ratio $\tau = (p + 1)/d$](tower-tau.md)
 
 ## Sources
 

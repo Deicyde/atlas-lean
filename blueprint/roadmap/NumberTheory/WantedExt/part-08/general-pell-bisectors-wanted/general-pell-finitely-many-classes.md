@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.generalPell_finitely_many_classes
 ---
 
-# General Pell finitely many classes
+# Finitely many classes of solutions of a general Pell equation
 
-Classes of solutions of a general Pell equation: for `d > 0` not a square and `z ≠ 0`, if
-`x² - d y² = z` is solvable in integers, there are finitely many solutions `(a_i, b_i)` such that
-every solution satisfies `x + y √d = ± ε^n (a_i + b_i √d)` for some `i` and `n ∈ ℤ`.
+**Finitely many classes of solutions of a general Pell equation.** Let $d > 0$ be an integer
+that is not a perfect square, let $\varepsilon$ be the fundamental solution of $x^2 - dy^2 = 1$,
+viewed as a unit of $\mathbb{Z}[\sqrt d]$, and let $z \ne 0$ be an integer such that
+$x^2 - dy^2 = z$ has an integral solution. Then there is a finite set $S$ of integral solutions
+$(a, b)$ of $x^2 - dy^2 = z$ such that every integral solution $(x, y)$ satisfies
+$x + y\sqrt d = \pm \varepsilon^n (a + b\sqrt d)$ in $\mathbb{Z}[\sqrt d]$ for some $(a, b) \in S$,
+some sign and some $n \in \mathbb{Z}$.
 
-`ε` is taken to be the fundamental solution of `x² - d y² = 1` (Mathlib `Pell.IsFundamental`);
-since its powers are among the powers of the fundamental unit of norm `±1`, this form implies the
-source's.
+The paper uses the fundamental unit of norm $\pm 1$; the powers of $\varepsilon$ are among its
+powers, so this form implies the paper's.
 
 ## Depends on
 

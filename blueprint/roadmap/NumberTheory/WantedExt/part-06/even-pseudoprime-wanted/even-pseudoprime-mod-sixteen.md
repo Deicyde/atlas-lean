@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.evenPseudoprime_mod_sixteen
 ---
 
-# Corollary 4
+# Even pseudoprimes modulo 16
 
-**Corollary 4.** Every even pseudoprime is `≡ 2` or `14 (mod 16)`.
+**Even pseudoprimes modulo 16.** Every even pseudoprime $N$ satisfies
+$N \equiv 2 \pmod{16}$ or $N \equiv 14 \pmod{16}$.
 
 ## Depends on
 

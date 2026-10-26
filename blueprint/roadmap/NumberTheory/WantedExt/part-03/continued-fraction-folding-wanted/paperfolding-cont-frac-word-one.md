@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.paperfoldingContFracWord_one
 ---
 
-# Paperfolding Cont Frac Word one
+# The second paperfolding continued-fraction word
 
-`A₁ = [1, 1, x₁ - 1, 2]`.
+**The second paperfolding continued-fraction word.** For every sequence $x$ of natural numbers,
+the continued-fraction word $A_1$ defined by $x$ is $(1, 1, \max(x_1 - 1, 0), 2)$.
 
 ## Depends on
 
-- [Paperfolding Cont Frac Word](paperfolding-cont-frac-word.md)
+- [Continued-fraction words of the paperfolding sums](paperfolding-cont-frac-word.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.diagonal_congruence_solvable_of_card_eq_exponent
 ---
 
-# Diagonal congruence solvable of card eq exponent
+# Diagonal congruences in $k$ variables are solvable
 
-Lemma 2 (quoting Lemma 8.1 of Cochrane, Ostergaard and Spencer): `Γ(k, p) ≤ k`, where
-`Γ(k, p)` is the least `n` such that every congruence
-`a_1 x_1^k + ⋯ + a_n x_n^k ≡ c (mod p)` with `p ∤ a_i` is solvable. Since solvability with
-`n` variables gives solvability with more (set the extra variables to `0`), this is stated
-as: every such congruence in exactly `k` variables is solvable.
+**Diagonal congruences in $k$ variables are solvable.** Let $p$ be a prime and $k \ge 1$. For
+all integers $a_1, \dots, a_k$ not divisible by $p$ and every integer $c$, there are integers
+$x_1, \dots, x_k$ with $a_1 x_1^k + \dots + a_k x_k^k \equiv c \pmod p$.
+
+Equivalently, $\Gamma(k, p) \le k$, where $\Gamma(k, p)$ is the least $n$ such that every such
+congruence in $n$ variables is solvable; extra variables can be set to $0$.
 
 ## Depends on
 

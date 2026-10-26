@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatibleSemiprimePair.mod_three
 ---
 
-# Mod three
+# Compatible semiprimes modulo 3
 
-For compatible semiprimes `pq` and `rs`, `pq ≡ 2 ≡ rs (mod 3)`; hence one of `p, q` is
-`≡ 1` and the other `≡ 2 (mod 3)`, and likewise for `r, s`.
+**Compatible semiprimes modulo 3.** Let $p, q, r, s$ be primes with $2(r + s) = p + q$ and
+$2rs = 3pq + 1$, so that the semiprimes $pq$ and $rs$ are compatible. Then
+$pq \equiv rs \equiv 2 \pmod 3$; moreover one of $p, q$ is congruent to $1$ and the other to $2$
+modulo $3$, and likewise one of $r, s$ is congruent to $1$ and the other to $2$ modulo $3$.
 
 ## Depends on
 
-- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
+- [Compatible semiprimes](is-compatible-semiprime-pair.md)
 
 ## Sources
 

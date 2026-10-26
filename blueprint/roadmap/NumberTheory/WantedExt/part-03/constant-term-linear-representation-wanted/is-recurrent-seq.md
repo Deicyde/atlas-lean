@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsRecurrentSeq
 ---
 
-# Is Recurrent Seq
+# Recurrent sequence
 
-A sequence is recurrent if every occurrence of a factor is followed by a later occurrence.
+**Recurrent sequence.** A sequence $s : \mathbb{N} \to \alpha$ is recurrent if every
+occurrence of a factor is followed by a later occurrence: for all $i, \ell \in \mathbb{N}$ there
+is $j > 0$ such that $s(i + j + t) = s(i + t)$ for every $t < \ell$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+- [Occurrence of a sequence factor at a position](seq-factor-occurs-at.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cotangentPowerCoeff_eq_zero_of_mod_two_ne
 ---
 
-# Cotangent Power Coeff eq zero of mod two ne
+# Parity of Girstmair's cotangent power coefficients
 
-Parity of Girstmair's coefficients: `c_{r,j} = 0` when `1 ≤ j ≤ r` and `r ≢ j (mod 2)`.
-The source deduces this from the `ℚ`-linear independence of the functions `i^j cot^{(j-1)}`.
+**Parity of Girstmair's cotangent power coefficients.** For natural numbers $j$ and $r$ with
+$1 \le j \le r$ and $r \not\equiv j \pmod 2$, Girstmair's cotangent power coefficient $c_{r,j}$
+is $0$.
+
+The source deduces this from the $\mathbb{Q}$-linear independence of the functions
+$i^j \cot^{(j-1)}$.
 
 ## Depends on
 
-- [Cotangent Power Coeff](cotangent-power-coeff.md)
+- [Girstmair's cotangent power coefficients](cotangent-power-coeff.md)
 
 ## Sources
 

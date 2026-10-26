@@ -5,15 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isNearFkPerfect_prime_pow_mul
 ---
 
-# Theorem 17
+# No near $F_k$-perfect number of the form $p_1^a p_2$
 
-**Theorem 17**: there is no near `F_k`-perfect number
-of the form `p₁^a p₂` for distinct odd primes `p₁, p₂`
-(and `k > 1`).
+**No near $F_k$-perfect number of the form $p_1^a p_2$.** Let $k > 1$, let $p_1$ and $p_2$ be
+distinct odd primes and let $a$ be a natural number. Then $p_1^a p_2$ is not near $F_k$-perfect.
 
 ## Depends on
 
-- [Is Near Fk Perfect](is-near-fk-perfect.md)
+- [Near $F_k$-perfect numbers](is-near-fk-perfect.md)
 
 ## Sources
 

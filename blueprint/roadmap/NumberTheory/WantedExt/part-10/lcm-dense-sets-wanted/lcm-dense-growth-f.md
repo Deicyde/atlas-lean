@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lcmDenseGrowthF
 ---
 
-# Lcm Dense Growth F
+# Growth function of the dense-set construction
 
-The growth function `F` of equations (13)--(15). It takes
-`k = ⌈C₀ * sqrt(Log₂ x)⌉ - 1`, using truncated natural subtraction; sets
-`h(x) = Log₂ x - k²/C₀² + 1`; evaluates the same formula at
-`x_(k+1) = exp(exp((k+1)²/C₀²))`; sets `ψ(x) = 1 + h(x)²/h(x_(k+1))`;
-and returns `ψ(x) * k^(2k) * C₀^(-2k) / k!`. The final negative power is
-encoded by division by `C₀^(2k)`. This total definition is used by the theorem
-only for positive `C₀` and sufficiently large `x`, as in the paper.
+**Growth function of the dense-set construction.** Let $\operatorname{Log}_2$ be the second
+iterated truncated logarithm. For real numbers $C_0$ and $x$, let $k$ be the natural number
+$\max(\lceil C_0 \sqrt{\operatorname{Log}_2 x}\,\rceil - 1, 0)$, and set
+$h = \operatorname{Log}_2 x - k^2/C_0^2 + 1$, $x' = \exp(\exp((k + 1)^2/C_0^2))$,
+$h' = \operatorname{Log}_2 x' - k^2/C_0^2 + 1$ and $\psi = 1 + h^2/h'$. The growth function at
+$(C_0, x)$ is $F_{C_0}(x) = \psi\, k^{2k} / (C_0^{2k}\, k!)$. Here division by $0$ gives $0$ and
+$0^0 = 1$.
+
+In the source, $h'$ is the value at $x_{k+1} = x'$ of the expression defining $h$, with $k$ kept
+fixed, and $F_{C_0}(x)$ is written $\psi(x)\, k^{2k} C_0^{-2k}/k!$; the function is used only for
+$C_0 > 0$ and sufficiently large $x$.
 
 ## Depends on
 
@@ -21,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trunc Log2](trunc-log2.md)
+- [Second iterated truncated logarithm](trunc-log2.md)
 
 ## Sources
 

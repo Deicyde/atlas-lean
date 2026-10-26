@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.landenExpVariable_spec
 ---
 
-# Landen Exp Variable spec
+# Defining relation of the Landen exponential variable
 
-For `c₀ + d₀ ≠ 0`, `(c₀ e^t + d₀) z(t) = e^t - 1`.
+**Defining relation of the Landen exponential variable.** Let $g$ be Landen data whose
+matrix $g_0$ has rows $(1, -1)$ and $(c_0, d_0)$ with $c_0 + d_0 \neq 0$, and let
+$z(t) = (e^t - 1)(c_0 e^t + d_0)^{-1} \in \mathbb{R}[[t]]$ be its Landen exponential variable.
+Then $(c_0 e^t + d_0)\, z(t) = e^t - 1$ in $\mathbb{R}[[t]]$.
 
 ## Depends on
 
-- [Landen Data](landen-data.md)
-- [Landen Exp Variable](landen-exp-variable.md)
+- [Landen data](landen-data.md)
+- [Landen exponential variable](landen-exp-variable.md)
 
 ## Sources
 

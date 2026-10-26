@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.dedekindZetaCoeff
 ---
 
-# Dedekind Zeta Coeff
+# Coefficients of the Dedekind zeta function
 
-The coefficient `a_K(n)` of the Dedekind zeta function `ζ_K(s) = ∑ a_K(n) n^{-s}`: the
-number of ideals of `𝓞 K` of absolute norm `n`.
+**Coefficients of the Dedekind zeta function.** For a number field $K$ with ring of integers
+$\mathcal{O}_K$ and a natural number $n$, $a_K(n)$ is the number of ideals of $\mathcal{O}_K$ of
+absolute norm $n$. These are the coefficients of $\zeta_K(s) = \sum_{n \ge 1} a_K(n)\, n^{-s}$.
 
 ## Depends on
 

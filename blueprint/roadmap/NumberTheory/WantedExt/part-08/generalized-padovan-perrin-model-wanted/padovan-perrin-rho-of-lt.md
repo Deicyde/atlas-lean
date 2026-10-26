@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.padovanPerrinRho_of_lt
 ---
 
-# Padovan Perrin Rho of lt
+# The Padovan–Perrin coefficients vanish below the order
 
-`ρ(n, s + p) = 0` for `n < s + p`.
+**The Padovan–Perrin coefficients vanish below the order.** Let $R$ be a commutative
+semiring, let $k_1, k_2 \in R$ and let $p, s, n$ be natural numbers with $n < s + p$. Then the
+Padovan–Perrin coefficient $\rho(n, s + p)$ attached to $k_1, k_2, p, s$ equals $0$.
 
 ## Depends on
 
-- [Padovan Perrin Rho](padovan-perrin-rho.md)
+- [Padovan–Perrin coefficients](padovan-perrin-rho.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isStableString_families
 ---
 
-# Is Stable String families
+# Families of stable strings
 
-Stable families: (i) `(t, 2t)` and `(t, 1, 2t + 1)` are stable for `t ∈ ℕ`; (ii) if `a` is
-stable then so is `(t, a⃖, 2t)`; (iii) for each `n ≥ 2` there are infinitely many stable strings of
-length `n`.
+**Families of stable strings.** (i) For every positive integer $t$, the strings $(t, 2t)$ and
+$(t, 1, 2t + 1)$ are stable. (ii) If $a = (a_1, \dots, a_m)$ is a stable string of positive
+integers, then for every positive integer $t$ the string $(t, a_m, \dots, a_1, 2t)$, obtained from
+the reverse of $a$ by adding $t$ at the front and $2t$ at the end, is stable. (iii) For every
+$n \ge 2$ there are infinitely many stable strings of $n$ positive integers.
 
 ## Depends on
 
-- [Is Stable String](is-stable-string.md)
+- [Stable strings](is-stable-string.md)
 
 ## Sources
 

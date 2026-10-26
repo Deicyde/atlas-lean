@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hFreeMoment
 ---
 
-# H Free Moment
+# Moments of $\omega_k$ over $h$-free polynomials
 
-The `j`-th moment of `ω_k` over the `h`-free monic polynomials of degree `n`,
-`|S_h ∩ M_n|^{-1} ∑_{f ∈ S_h ∩ M_n} ω_k(f)^j`.
+**Moments of $\omega_k$ over $h$-free polynomials.** Let $F$ be a finite field and let $h$,
+$k$, $j$, $n$ be natural numbers. Let $S_h$ be the set of $h$-free monic polynomials over $F$
+(those divisible by no $P^h$ with $P$ monic irreducible), $M_n$ the set of monic polynomials of
+degree $n$ over $F$, and $\omega_k(f)$ the number of distinct monic irreducible factors of $f$
+whose multiplicity is exactly $k$. The $j$-th moment of $\omega_k$ over the $h$-free monic
+polynomials of degree $n$ is the real number
+
+$$\frac{1}{|S_h \cap M_n|} \sum_{f \in S_h \cap M_n} \omega_k(f)^j,$$
+
+which is $0$ when $S_h \cap M_n$ is empty.
 
 ## Depends on
 
@@ -16,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Degree Monic](fixed-degree-monic.md)
-- [H Free](h-free.md)
-- [Omega Mult](omega-mult.md)
+- [Monic polynomials of fixed degree](fixed-degree-monic.md)
+- [$h$-free polynomials](h-free.md)
+- [Number of prime factors of given multiplicity](omega-mult.md)
 
 ## Sources
 

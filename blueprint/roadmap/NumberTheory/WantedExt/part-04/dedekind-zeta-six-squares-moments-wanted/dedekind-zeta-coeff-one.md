@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.dedekindZetaCoeff_one
 ---
 
-# Dedekind Zeta Coeff one
+# The Dedekind zeta coefficient at $1$
 
-`a_K(1) = 1`: the unit ideal is the only ideal of norm `1`.
+**The Dedekind zeta coefficient at $1$.** For every number field $K$, $a_K(1) = 1$, where
+$a_K(n)$ is the number of ideals of the ring of integers of $K$ of absolute norm $n$: the unit
+ideal is the only ideal of norm $1$.
 
 ## Depends on
 
-- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
+- [Coefficients of the Dedekind zeta function](dedekind-zeta-coeff.md)
 
 ## Sources
 

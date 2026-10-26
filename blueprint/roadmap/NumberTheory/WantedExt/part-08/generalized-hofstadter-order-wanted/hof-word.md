@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hofWord
 ---
 
-# Hof Word
+# Letters of the Hofstadter fixed-point word
 
-The letter `x_k[n]` of the fixed point `x_k` of `τ_k`, read off the shortest prefix
-`τ_k^j(k)` with more than `n` letters (`hofWord_eq_getElem` gives every longer prefix).
+**Letters of the Hofstadter fixed-point word.** For natural numbers $k$ and $n$, let $\tau_k$
+be the substitution on letters in $\mathbb{N}$ that sends $k$ to the word $k\,1$ and every other
+letter $i$ to $i + 1$, applied to words letter by letter, and let $\tau_k^j(k)$ be the word
+obtained by applying $\tau_k$ $j$ times to the one-letter word $k$. Then $x_k[n]$ is the letter at
+position $n$, counting from $0$, of the shortest word $\tau_k^j(k)$ with $j \ge 0$ that has more
+than $n$ letters.
+
+Since each word $\tau_k^j(k)$ is a prefix of $\tau_k^{j+1}(k)$, $x_k[n]$ is the letter at position
+$n$ of the fixed point $x_k$ of $\tau_k$ that begins with $k$, and every word $\tau_k^j(k)$ with
+more than $n$ letters has $x_k[n]$ at position $n$.
 
 ## Depends on
 
@@ -16,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hof Grow](hof-grow.md)
+- [The shortest long iterate $\tau_k^j(k)$](hof-grow.md)
 
 ## Sources
 

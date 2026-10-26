@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weightedBinaryDigitSum
 ---
 
-# Weighted Binary Digit Sum
+# Weighted binary digit sum
 
-The weighted binary digit sum `a(n) = ∑ aᵢ * 2^{aᵢ}`, summed over the
-exponents `aᵢ` of the powers of `2` in the binary expansion of `n` (that is,
-over the indices of the `1` bits of `n`).
+**Weighted binary digit sum.** For a natural number $n$, the weighted binary digit sum of $n$
+is $a(n) = \sum_i i \cdot 2^i$, where $i$ runs over the indices of the $1$ bits in the binary
+expansion of $n$. Equivalently, if $n = 2^{a_1} + \dots + 2^{a_t}$ with distinct exponents
+$a_1, \dots, a_t$, then $a(n) = a_1 2^{a_1} + \dots + a_t 2^{a_t}$; in particular $a(0) = 0$.
 
 ## Depends on
 

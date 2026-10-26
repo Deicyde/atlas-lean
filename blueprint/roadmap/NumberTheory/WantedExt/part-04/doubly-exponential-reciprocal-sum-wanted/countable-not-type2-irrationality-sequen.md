@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.countable_not_type2IrrationalitySequence_floor_pow_two_pow
 ---
 
-# Countable not type2 Irrationality Sequence floor pow two pow
+# Doubly exponential floors are Type 2 irrationality sequences for all but countably many bases
 
-For all `α > 1` outside a countable set, `⌊α ^ (2 ^ n)⌋` is a Type 2 irrationality
-sequence: for every sequence `b` of positive integers with `b_n / ⌊α ^ (2 ^ n)⌋ → 1`, the sum
-`∑ 1 / b_n` is not a rational number.
+**Doubly exponential floors are Type 2 irrationality sequences for all but countably many
+bases.** For all real numbers $\alpha > 1$ outside a countable set, the sequence
+$(\lfloor \alpha^{2^{n+1}} \rfloor)_{n \ge 0}$ is a Type 2 irrationality sequence: for every
+sequence $(b_n)_{n \ge 0}$ of positive integers with $b_n / \lfloor \alpha^{2^{n+1}} \rfloor \to 1$,
+the series $\sum_n 1 / b_n$ does not converge to a rational number.
 
 ## Depends on
 

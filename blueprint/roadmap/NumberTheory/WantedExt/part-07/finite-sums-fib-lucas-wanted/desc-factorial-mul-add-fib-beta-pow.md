@@ -5,17 +5,27 @@ statement: formalized
 lean: MathlibExt.NumberTheory.FiniteSumsFibLucasWanted.descFactorial_mul_add_fibBeta_pow
 ---
 
-# Corollary 4
+# Derivatives of the Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
-**Corollary 4** (corrected): differentiating Theorem 1
-`s` times gives `(m)↓_s (x + β)^{m-s} = ∑_{n,k} √5ᵏ C(n,k)
-C(m,n) Bₖ F_{n-k+1}/(n-k+1) (m-n)↓_s x^{m-n-s}` for `s ≤ m`;
-the printed falling factor `(m-n+1)(s)` is off by one and
-the identity is written cross-multiplied by `(m)↓_s`.
+**Derivatives of the Bernoulli–Fibonacci expansion of $(x + \beta)^m$.** Let
+$\beta = (1 - \sqrt{5})/2$, let $B_k$ be the Bernoulli numbers with $B_1 = -1/2$, let $F_k$ be the
+Fibonacci numbers, and write $a^{\underline{s}} = a(a-1)\cdots(a-s+1)$ for the falling factorial.
+Then for all natural numbers $s \le m$ and every real number $x$,
+
+$$
+m^{\underline{s}} (x + \beta)^{m-s} = \sum_{n=0}^{m} \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k}
+\binom{m}{n} B_k \frac{F_{n-k+1}}{n-k+1} (m-n)^{\underline{s}} x^{m-n-s},
+$$
+
+where the terms with $m - n < s$ are $0$ because $(m-n)^{\underline{s}} = 0$ there.
+
+This is the paper's Corollary 4, obtained by differentiating Theorem 1 $s$ times; the printed
+falling factorial of $m - n + 1$ is off by one, and the identity is written here multiplied
+through by $m^{\underline{s}}$.
 
 ## Depends on
 
-- [Fib Beta](fib-beta.md)
+- [The conjugate golden ratio $\beta$](fib-beta.md)
 
 ## Sources
 

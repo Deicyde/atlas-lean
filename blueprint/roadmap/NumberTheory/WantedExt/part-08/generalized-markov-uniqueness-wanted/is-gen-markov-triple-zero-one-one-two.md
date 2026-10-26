@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isGenMarkovTriple_zero_one_one_two
 ---
 
-# Is Gen Markov Triple zero one one two
+# The Markov triple $(1, 1, 2)$
 
-Characteristic value: `(1, 1, 2)` is a classical (`k = 0`) Markov triple.
+**The Markov triple $(1, 1, 2)$.** The triple $(1, 1, 2)$ is a $0$-generalized Markov
+triple, that is, a classical Markov triple: $1^2 + 1^2 + 2^2 = 3 \cdot 1 \cdot 1 \cdot 2$.
 
 ## Depends on
 
-- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Generalized Markov triple](is-gen-markov-triple.md)
 
 ## Sources
 

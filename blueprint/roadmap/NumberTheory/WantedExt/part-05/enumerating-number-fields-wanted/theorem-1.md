@@ -6,23 +6,26 @@ statement: formalized
 lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.theorem_1
 ---
 
-# Theorem 1
+# Couveignes: number fields have small models
 
-Statement of Theorem 1 (Number fields have small models):
-
-There exists a positive constant `Q` such that the following is true. Let `K` be a number field
-of degree `n ≥ Q` and root discriminant `δ` over `ℚ`. Then there exist integers `r ≤ Q log n` and
-`d ≤ Q log n` such that `(d + r) choose r ≤ Q n log n`, and there exist `r` polynomials
-`E₁, ..., Eᵣ` of degree `≤ d` in `ℤ[x₁, ..., xᵣ]` all having coefficients bounded in absolute value
-by `(n δ) ^ (Q log n)` such that the (smooth and zero-dimensional affine) scheme with equations
-`E₁ = ... = Eᵣ = 0` and `det (∂Eᵢ/∂xⱼ) ≠ 0` contains `Spec K` as one of its irreducible components.
+**Couveignes: number fields have small models.** There is a positive integer $Q$ such that for
+every natural number $n \ge Q$ and every number field $K$ of degree $n$ over $\mathbb{Q}$, with
+discriminant $d_K$ and root discriminant $\delta_K = |d_K|^{1/n}$, there are natural numbers $r$
+and $d$ with $r \le Q \log n$, $d \le Q \log n$ and $\binom{d + r}{r} \le Q n \log n$, and
+polynomials $E_1, \dots, E_r \in \mathbb{Z}[x_1, \dots, x_r]$ of total degree at most $d$, all of
+whose coefficients have absolute value at most $(n \delta_K)^{Q \log n}$, with the following
+property. Let $X$ be the open subscheme of
+$\operatorname{Spec} \mathbb{Q}[x_1, \dots, x_r]/(E_1, \dots, E_r)$ where
+$\det(\partial E_i / \partial x_j) \ne 0$. Then $X$ has an irreducible component $Z$ which, with
+its subscheme structure as the scheme-theoretic closure of the open set of points of $X$ lying on
+no other irreducible component, is isomorphic to $\operatorname{Spec} K$.
 
 ## Depends on
 
-- [Number Field Of Degree](number-field-of-degree.md)
-- [Jacobian](jacobian.md)
-- [Nonsingular Open](nonsingular-open.md)
-- [Quotient Ring](quotient-ring.md)
+- [Number fields of degree $n$](number-field-of-degree.md)
+- [Jacobian determinant in the quotient ring](jacobian.md)
+- [The open subscheme where the Jacobian does not vanish](nonsingular-open.md)
+- [Quotient of a polynomial ring by $r$ polynomials](quotient-ring.md)
 
 ## Sources
 

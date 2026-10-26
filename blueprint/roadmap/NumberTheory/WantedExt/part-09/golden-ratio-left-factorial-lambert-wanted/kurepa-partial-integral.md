@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kurepaPartialIntegral
 ---
 
-# Kurepa Partial Integral
+# Kurepa's partial integral
 
-Kurepa's partial integral `!n(x) = ∫₀ˣ e^{-t} (t^n - 1)/(t - 1) dt`, written with the
-geometric sum `∑_{k<n} t^k` in place of `(t^n - 1)/(t - 1)` (they agree for `t ≠ 1`, and the
-singularity at `t = 1` is removable). The paper's `b n`, `β n` and `B n m` are its values
-at `a n`, `α n` and `A n m`.
+**Kurepa's partial integral.** For a natural number $n$ and a real number $x$, Kurepa's partial
+integral is
+
+$$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt,$$
+
+an oriented integral, so for $x < 0$ it is minus the integral over $[x, 0]$.
+
+The paper writes it as $!n(x) = \int_0^x e^{-t} \frac{t^n - 1}{t - 1} \, dt$; the geometric sum
+agrees with $\frac{t^n - 1}{t - 1}$ for $t \ne 1$, and the singularity at $t = 1$ is removable.
 
 ## Depends on
 

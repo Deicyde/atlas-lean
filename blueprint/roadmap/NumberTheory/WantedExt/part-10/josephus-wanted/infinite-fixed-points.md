@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.JosephusWanted.infinite_fixedPoints
 ---
 
-# Theorem 13
+# The Josephus function has infinitely many fixed points
 
-**Theorem 13**: the Josephus function `J_k` has
-infinitely many fixed points.
+**The Josephus function has infinitely many fixed points.** For every natural number
+$k \ge 2$, the set of natural numbers $n$ with $J_k(n) = n$ is infinite, where $J_k$ is the
+Josephus function.
 
 ## Depends on
 

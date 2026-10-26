@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hyperLeonardo_one_two_generatingFunction
 ---
 
-# Hyper Leonardo one two generating Function
+# Generating functions of the hyper-Leonardo numbers of orders one and two
 
-Corollary 3: the generating functions of `Le^{(1)}` and `Le^{(2)}` are
-`(1-t+t²)/((1-2t+t³)(1-t))` and `(1-t+t²)/((1-2t+t³)(1-t)²)`, stated after clearing
-denominators in `ℤ⟦t⟧`. The intermediate partial-fraction forms are not restated.
+**Generating functions of the hyper-Leonardo numbers of orders one and two.** In the ring
+$\mathbb{Z}[[t]]$ of formal power series, the hyper-Leonardo numbers $Le^{(r)}_n$ satisfy
+$\left(\sum_{n \ge 0} Le^{(1)}_n t^n\right)(1 - 2t + t^3)(1 - t) = 1 - t + t^2$ and
+$\left(\sum_{n \ge 0} Le^{(2)}_n t^n\right)(1 - 2t + t^3)(1 - t)^2 = 1 - t + t^2$.
+
+Equivalently, the two generating functions are $\frac{1 - t + t^2}{(1 - 2t + t^3)(1 - t)}$ and
+$\frac{1 - t + t^2}{(1 - 2t + t^3)(1 - t)^2}$.
 
 ## Depends on
 
-- [Hyper Leonardo](hyper-leonardo.md)
+- [Hyper-Leonardo numbers](hyper-leonardo.md)
 
 ## Sources
 

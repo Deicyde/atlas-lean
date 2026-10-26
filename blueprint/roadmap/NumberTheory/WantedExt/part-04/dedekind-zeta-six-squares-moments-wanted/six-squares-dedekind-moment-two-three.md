@@ -13,7 +13,7 @@ For a cubic field `K` of negative discriminant (so non-normal over `ℚ`) and ev
 
 ## Depends on
 
-- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
+- [Six-squares moments of Dedekind zeta coefficients](six-squares-dedekind-moment.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.upperBound_E1955_half
 ---
 
-# Upper Bound E1955 half
+# Erdős's upper bound $1/2$ for the minimum-overlap constant (statement)
 
-Source-reported upper bound `C₁ᵦ ≤ 1/2`.
+**Erdős's upper bound $1/2$ for the minimum-overlap constant (statement).** The statement that
+the continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 1/2$.
 
 ## Depends on
 
