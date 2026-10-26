@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import MathlibExt.Probability.RandomWalkTailMeasurability
 public import Mathlib.MeasureTheory.MeasurableSpace.Basic
 public import Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
 public import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
@@ -48,15 +49,9 @@ whose v1 formalization is
 @[expose] public section
 
 open MeasureTheory Filter Topology ProbabilityTheory
+open MathlibExt.Probability.RandomWalkTailMeasurability (randomWalkPartialSum)
 
 namespace MathlibExt.Probability.RandomWalkDichotomy
-
-/-- The `n`-th partial sum `Sₙ(ω) = ∑_{i < n} Xᵢ(ω)` of a sequence of
-random variables `X`, viewed as a random walk on `ℝ`. (On rebase onto
-Batch 25, this should be unified with the identical definition in
-`MathlibExt.Probability.RandomWalkTailMeasurability`.) -/
-noncomputable def randomWalkPartialSum {Ω : Type*} (X : ℕ → Ω → ℝ) (n : ℕ) (ω : Ω) : ℝ :=
-  ∑ i ∈ Finset.range n, X i ω
 
 /-- The `limsup` of the random-walk partial sums, as an `EReal`-valued
 function. -/

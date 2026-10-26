@@ -16,6 +16,7 @@ import Mathlib.Probability.Independence.InfinitePi
 
 open MeasureTheory Filter ProbabilityTheory Topology
 open MathlibExt.Probability.RandomWalkDichotomy
+open MathlibExt.Probability.RandomWalkTailMeasurability (randomWalkPartialSum)
 
 namespace MathlibExtTest.Probability.RandomWalkDichotomy
 

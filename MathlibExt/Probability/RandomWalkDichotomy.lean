@@ -76,6 +76,7 @@ Out: the classification of *which* alternative occurs for a given law
 @[expose] public section
 
 open MeasureTheory Filter Topology ProbabilityTheory
+open MathlibExt.Probability.RandomWalkTailMeasurability (randomWalkPartialSum)
 
 namespace MathlibExt.Probability.RandomWalkDichotomy
 
