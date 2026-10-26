@@ -29,8 +29,8 @@ Conditions (2) and (3) of Theorem 3.23 are already Mathlib iffs
 (`IsDedekindDomainDvr` / `IsDedekindDomainInv`), condition (4) (prime
 factorization of ideals) is not claimed here -- in v1 its
 prime-factorization-implies-Dedekind direction is unproved in v1 --
-and conditions (7) and (8) (quotients are PIDs, two-generator ideals)
-are not ported in this slice.
+and conditions (7) and (8) (quotients are principal ideal rings,
+two-generator ideals) are not ported in this slice.
 -/
 
 @[expose] public section
