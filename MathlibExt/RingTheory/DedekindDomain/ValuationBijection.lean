@@ -10,22 +10,28 @@ module
 
 public import Mathlib.RingTheory.DedekindDomain.IntegralClosure
 public import Mathlib.RingTheory.DedekindDomain.AdicValuation
-public import Mathlib.RingTheory.DedekindDomain.Dvr
+import Mathlib.RingTheory.DedekindDomain.Dvr
 public import Mathlib.RingTheory.Ideal.Over
-public import Mathlib.RingTheory.Valuation.Discrete.Basic
-public import Mathlib.RingTheory.Valuation.ValuationSubring
-public import Mathlib.RingTheory.Valuation.LocalSubring
+import Mathlib.RingTheory.Valuation.Discrete.Basic
+import Mathlib.RingTheory.Valuation.ValuationSubring
+import Mathlib.RingTheory.Valuation.LocalSubring
 
 @[expose] public section
 
 /-!
-# Valuations extending a prime of a Dedekind domain
+# Valuation equivalence classes above a prime
 
-ATLAS `NumberTheoryI`, Theorem 8.20 (Section 8.3): in the AKLB setup, for a
-prime `𝔭` of `A`, every prime `𝔮` of `B` lying over `𝔭` induces a discrete
-valuation `v_𝔮` on `L` extending `v_𝔭`, and every discrete valuation on `L`
-extending `v_𝔭` arises in this way. The map `𝔮 ↦ v_𝔮` is therefore a bijection
-from the primes above `𝔭` to the discrete valuations of `L` extending `v_𝔭`.
+In the AKLB setup, height-one primes of `B` above a prime `𝔭` of `A`
+classify the `WithZero (Multiplicative ℤ)`-valued valuations on `L`
+whose restriction to `K` is equivalent to `v_𝔭`, up to `Valuation.IsEquiv`.
+The module proves existence of a corresponding prime and uniqueness of
+that prime from the valuation equivalence class.
+
+This is an index-free consequence of ATLAS `NumberTheoryI`, Theorem 8.20
+(Section 8.3), following the weaker relation used in the v1 formalization.
+The indexed extension relation of Definition 8.19 and the exact restriction
+formula with ramification index `e_𝔮` are not formalized here. No bijection
+with normalized valuation representatives is claimed.
 
 ## Main results
 
@@ -34,12 +40,14 @@ from the primes above `𝔭` to the discrete valuations of `L` extending `v_𝔭
 * `ValuationBijection.primesAbove`: the primes of `B` lying over `𝔭`.
 * `ValuationBijection.valuation_extends_of_liesOver`: `v_𝔮` extends `v_𝔭`
   whenever `𝔮` lies over `𝔭`.
-* `ValuationBijection.dvr_overring_equiv`: a discrete valuation on `L`
-  whose unit ball is exactly `𝔮` is equivalent to `v_𝔮`.
+* `ValuationBijection.dvr_overring_equiv`: an integer-valued valuation
+  whose valuation ring contains `B` and whose strict unit ball in `B` is
+  `𝔮` is equivalent to `v_𝔮`.
 * `ValuationBijection.valuation_surjective_of_extends`: every valuation
   extending `v_𝔭` is equivalent to `v_𝔮` for some `𝔮` above `𝔭`.
 * `ValuationBijection.extending_valuation_bijection_primes_above`:
-  injectivity plus surjectivity, i.e. the bijection of Theorem 8.20.
+  uniqueness plus existence up to `IsEquiv`, giving the equivalence-class
+  classification.
 
 Scope note: the book states that `v_𝔮` extends `v_𝔭` with index `e_𝔮`
 (the ramification index). This module proves only equivalence of the
@@ -51,8 +59,9 @@ open IsDedekindDomain
 
 namespace ValuationBijection
 
-/-- A valuation `w` on `L` **extends** the `𝔭`-adic valuation `v_𝔭` of `K`
-if its restriction to `K` is equivalent to `v_𝔭`. -/
+/-- A valuation `w` on `L` extends the `𝔭`-adic valuation of `K` up to
+equivalence: the restriction has the same valuation ring as `v_𝔭`.
+This relation does not record an extension index or a normalization. -/
 def extendsValuation
     (A : Type*) [CommRing A] [IsDedekindDomain A]
     (K : Type*) [Field K] [Algebra A K] [IsFractionRing A K]
@@ -85,8 +94,8 @@ lemma mem_of_liesOver (𝔭 : HeightOneSpectrum A) (𝔮 : HeightOneSpectrum B)
 
 set_option maxHeartbeats 800000 in
 set_option linter.unusedSectionVars false in
-/-- **Theorem 8.20, forward direction.** If `𝔮` lies over `𝔭`, then the
-`𝔮`-adic valuation `v_𝔮` extends `v_𝔭`. -/
+/-- If `𝔮` lies over `𝔭`, the restriction of its adic valuation is
+equivalent to `v_𝔭`. This is the forward equivalence-class statement. -/
 theorem valuation_extends_of_liesOver
     (𝔭 : HeightOneSpectrum A) (𝔮 : HeightOneSpectrum B)
     (hlo : 𝔮.asIdeal.LiesOver 𝔭.asIdeal) :
@@ -150,10 +159,9 @@ theorem valuation_extends_of_liesOver
     exact (mem_of_liesOver A B 𝔭 𝔮 hlo n).not.symm
 
 set_option maxHeartbeats 800000 in
-/-- A discrete valuation on `L` whose unit ball is exactly `𝔮` is
-equivalent to the `𝔮`-adic valuation. This is the key step for the
-surjectivity direction: the prime constructed from an extending valuation
-has exactly this property. -/
+/-- An integer-valued valuation on `L` whose valuation ring contains `B`
+and whose strict unit ball in `B` is `𝔮` is equivalent to the `𝔮`-adic
+valuation. The prime constructed in the surjectivity proof has these properties. -/
 theorem dvr_overring_equiv
     {B' : Type*} [CommRing B'] [IsDedekindDomain B']
     {L' : Type*} [Field L'] [Algebra B' L'] [IsFractionRing B' L']
@@ -213,10 +221,9 @@ theorem dvr_overring_equiv
 
 set_option maxHeartbeats 800000 in
 set_option linter.unusedSectionVars false in
-/-- **Theorem 8.20, surjectivity direction.** Every discrete valuation
-on `L` extending `v_𝔭` is equivalent to `v_𝔮` for some prime `𝔮` of `B`
-lying over `𝔭`. The prime is constructed as the unit-ball ideal
-`{b ∈ B | w b < 1}`. -/
+/-- Every integer-valued valuation on `L` extending `v_𝔭` up to
+equivalence is equivalent to `v_𝔮` for a prime `𝔮` of `B` over `𝔭`.
+The prime is the strict unit-ball ideal `{b ∈ B | w b < 1}`. -/
 theorem valuation_surjective_of_extends
     (𝔭 : HeightOneSpectrum A)
     (w : Valuation L (WithZero (Multiplicative ℤ)))
@@ -316,9 +323,10 @@ theorem valuation_surjective_of_extends
         ((Valuation.isEquiv_iff_val_lt_one.mp hw).mp h2)
   exact ⟨𝔮, h𝔮_over, dvr_overring_equiv 𝔮 w hB (fun b => hI_mem b)⟩
 
-/-- **Theorem 8.20.** The map `𝔮 ↦ v_𝔮` is a bijection from the primes
-of `B` above `𝔭` to the discrete valuations of `L` extending `v_𝔭`,
-stated as injectivity plus surjectivity. -/
+/-- Height-one primes above `𝔭` classify the equivalently extending
+integer-valued valuations up to `IsEquiv`: equivalent prime-adic valuations
+come from the same prime, and every extending valuation has a prime-adic
+representative. No normalization or ramification-index equality is asserted. -/
 theorem extending_valuation_bijection_primes_above (𝔭 : HeightOneSpectrum A) :
     (∀ 𝔮₁ 𝔮₂ : HeightOneSpectrum B,
       𝔮₁ ∈ primesAbove A B 𝔭 →
