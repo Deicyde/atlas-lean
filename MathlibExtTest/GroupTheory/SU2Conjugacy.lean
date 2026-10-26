@@ -20,7 +20,8 @@ open SU2
 `!![0, 1; -1, 0]`, with `α = 0` and `β = 1`. -/
 example : ∃ α β : ℂ, α = 0 ∧ β = 1 ∧ Complex.normSq α + Complex.normSq β = 1 := by
   obtain ⟨α, β, hMat, hnorm⟩ :=
-    su2_matrix_form !![(0 : ℂ), 1; -1, 0] antidiag_mem
+    Matrix.exists_eq_of_mem_specialUnitaryGroup_fin_two
+      !![(0 : ℂ), 1; -1, 0] antidiag_mem
   have h00 := congr_fun (congr_fun hMat 0) 0
   have h01 := congr_fun (congr_fun hMat 0) 1
   simp at h00 h01
@@ -30,7 +31,8 @@ example : ∃ α β : ℂ, α = 0 ∧ β = 1 ∧ Complex.normSq α + Complex.nor
 example : ∃ α β : ℂ, α = Complex.I ∧ β = 0 ∧
     Complex.normSq α + Complex.normSq β = 1 := by
   obtain ⟨α, β, hMat, hnorm⟩ :=
-    su2_matrix_form !![Complex.I, (0 : ℂ); 0, -Complex.I] diag_I_mem
+    Matrix.exists_eq_of_mem_specialUnitaryGroup_fin_two
+      !![Complex.I, (0 : ℂ); 0, -Complex.I] diag_I_mem
   have h00 := congr_fun (congr_fun hMat 0) 0
   have h01 := congr_fun (congr_fun hMat 0) 1
   simp at h00 h01
@@ -39,7 +41,7 @@ example : ∃ α β : ℂ, α = Complex.I ∧ β = 0 ∧
 /-- The identity of `SU₂` is central. -/
 example : (1 : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) ∈
     Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ) := by
-  rw [su2_center_mem_iff]
+  rw [Matrix.mem_center_specialUnitaryGroup_fin_two_iff]
   left
   rfl
 
@@ -47,7 +49,7 @@ example : (1 : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) ∈
 example : (⟨!![Complex.I, (0 : ℂ); 0, -Complex.I], diag_I_mem⟩ :
       ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) ∉
     Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ) := by
-  rw [su2_center_mem_iff]
+  rw [Matrix.mem_center_specialUnitaryGroup_fin_two_iff]
   rw [not_or]
   constructor
   · intro h
@@ -70,7 +72,8 @@ example :
       ‖Matrix.trace ((⟨!![(0 : ℂ), 1; -1, 0], antidiag_mem⟩ :
         ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
         Matrix (Fin 2) (Fin 2) ℂ)‖ ≤ 2 :=
-  ⟨su2_trace_real _, su2_trace_bound _⟩
+  ⟨Matrix.trace_im_eq_zero_of_mem_specialUnitaryGroup_fin_two _ antidiag_mem,
+    Matrix.norm_trace_le_two_of_mem_specialUnitaryGroup_fin_two _ antidiag_mem⟩
 
 /-- The anti-diagonal element and `diag(I, -I)` both have trace `0`, so they
 are conjugate in `SU₂`. -/

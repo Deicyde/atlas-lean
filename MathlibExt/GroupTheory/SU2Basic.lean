@@ -10,12 +10,10 @@ module
 
 public import MathlibExt.LinearAlgebra.Matrix.SpecialUnitaryFinTwo
 public import Mathlib.LinearAlgebra.UnitaryGroup
-public import Mathlib.LinearAlgebra.Matrix.Trace
-public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
-public import Mathlib.LinearAlgebra.Matrix.Adjugate
 public import Mathlib.Analysis.Complex.Basic
-public import Mathlib.Analysis.Normed.Group.Basic
 public import Mathlib.GroupTheory.Subgroup.Center
+import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+import Mathlib.LinearAlgebra.Matrix.Adjugate
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.NormNum
 
@@ -26,8 +24,6 @@ An element of `SU₂`, the special unitary group of `2 × 2` complex matrices,
 has the form `!![α, β; -conj β, conj α]` with `‖α‖² + ‖β‖² = 1`. Its center
 is `{1, -1}`, its trace is real, and its trace has norm at most `2`.
 
-The matrix-form, center, real-trace and trace-bound declarations below are
-compatibility wrappers for `MathlibExt.LinearAlgebra.Matrix.SpecialUnitaryFinTwo`.
 The membership witnesses and proper-center result support the conjugacy development.
 
 Source: `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean` (theorems
@@ -78,21 +74,6 @@ theorem antidiag_mem :
     (apply Complex.ext <;> simp)
   · simp [Matrix.detMonoidHom, Matrix.det_fin_two]
 
-/-- **Matrix form of `SU₂`.** Every `M ∈ SU₂` is `!![α, β; -conj β, conj α]`
-with `‖α‖² + ‖β‖² = 1`, where `α = M 0 0` and `β = M 0 1`. -/
-theorem su2_matrix_form (M : Matrix (Fin 2) (Fin 2) ℂ)
-    (hU : M ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ) :
-    ∃ (α β : ℂ), M = !![α, β; -starRingEnd ℂ β, starRingEnd ℂ α] ∧
-      Complex.normSq α + Complex.normSq β = 1 := by
-  exact Matrix.exists_eq_of_mem_specialUnitaryGroup_fin_two M hU
-
-/-- **Center of `SU₂`.** A matrix in `SU₂` is central iff it is `1` or `-1`. -/
-theorem su2_center_mem_iff (M : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
-    M ∈ Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ) ↔
-    (M : Matrix (Fin 2) (Fin 2) ℂ) = 1 ∨
-      (M : Matrix (Fin 2) (Fin 2) ℂ) = -1 := by
-  exact Matrix.mem_center_specialUnitaryGroup_fin_two_iff M
-
 /-- The center of `SU₂` is a proper subgroup: `diag(I, -I)` is not central. -/
 theorem su2_center_ne_top :
     Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ) ≠ ⊤ := by
@@ -101,7 +82,7 @@ theorem su2_center_ne_top :
       ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) ∈
       Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ) :=
     heq ▸ Subgroup.mem_top _
-  rw [su2_center_mem_iff] at hmem
+  rw [Matrix.mem_center_specialUnitaryGroup_fin_two_iff] at hmem
   rcases hmem with h | h
   · have h00 := congr_fun (congr_fun h 0) 0
     simp at h00
@@ -111,15 +92,5 @@ theorem su2_center_ne_top :
     simp at h00
     have him := congr_arg Complex.im h00
     simp at him
-
-/-- The trace of a matrix in `SU₂` is real. -/
-theorem su2_trace_real (M : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
-    (Matrix.trace (M : Matrix (Fin 2) (Fin 2) ℂ)).im = 0 := by
-  exact Matrix.trace_im_eq_zero_of_mem_specialUnitaryGroup_fin_two M M.prop
-
-/-- The trace of a matrix in `SU₂` has norm at most `2`. -/
-theorem su2_trace_bound (M : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
-    ‖Matrix.trace (M : Matrix (Fin 2) (Fin 2) ℂ)‖ ≤ 2 := by
-  exact Matrix.norm_trace_le_two_of_mem_specialUnitaryGroup_fin_two M M.prop
 
 end SU2

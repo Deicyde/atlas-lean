@@ -9,7 +9,8 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.GroupTheory.SU2Basic
-public import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+public import Mathlib.LinearAlgebra.Matrix.Trace
+import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.LinearCombination
@@ -23,9 +24,10 @@ import Mathlib.Tactic.Ring
 Every element of `SU₂` is conjugate in `SU₂` to a diagonal matrix
 `diag(z, conj z)` with `z * conj z = 1`, and two elements of `SU₂` with the
 same trace are conjugate in `SU₂`. Thus trace distinguishes conjugacy
-classes and takes real values in `[-2, 2]` (see `SU2.su2_trace_real` and
-`SU2.su2_trace_bound` in
-`MathlibExt/GroupTheory/SU2Basic.lean`).
+classes and takes real values in `[-2, 2]` (see
+`Matrix.trace_im_eq_zero_of_mem_specialUnitaryGroup_fin_two` and
+`Matrix.norm_trace_le_two_of_mem_specialUnitaryGroup_fin_two` in
+`MathlibExt/LinearAlgebra/Matrix/SpecialUnitaryFinTwo.lean`).
 
 Source: `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean` (theorems
 `su2_conj_to_diag`, `su2_trace_conj_inv`, `su2_diag_conj_of_trace`, and
