@@ -15,51 +15,97 @@ import Mathlib.Analysis.Normed.Lp.lpSpace
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
 /-!
-# Tests for the Green's operator's square root squared
+# Tests for the bounded Green square-root identity
 
-* A constant-coefficient diagonal operator on `ℓ²(ℕ, ℝ)` acts on the
-  first basis vector by scalar multiplication, and squaring it squares the
-  coefficient.
-* The Green's coefficient identity at `k = 1` and `k = 2`.
-* The Green's square-root squaring identity applied to an abstract sine
-  Hilbert basis of `L²([0, 1])`.
+Retain the original bounded constant-map and coefficient checks. Exercise the
+actual canonical sine basis and the supplied Green operator under its exact
+kernel/self-adjoint hypotheses. Continuous-map operations and an unbounded
+coefficient rejection check the repaired diagonal constructor's contract.
 -/
 
 open MeasureTheory
 open scoped lp
 open MathlibExt.Analysis.InnerProductSpace.HilbertBasisDiagonal
 open MathlibExt.Analysis.ODE.GreensOperatorSqrtSquared
+open MathlibExt.Analysis.ODE.GreensOperator
 
 namespace MathlibExtTest.Analysis.ODE.GreensOperatorSqrtSquaredTests
 
-/-- A constant diagonal operator on `ℓ²(ℕ, ℝ)` scales the first basis vector. -/
-example : diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
-    ((default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) 0) =
-    (2 : ℝ) • (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) 0 :=
-  diagonalOperator_apply_basis 0
+private lemma twoCoeff_bound (_i : ℕ) : ‖(2 : ℝ)‖ ≤ 2 := by norm_num
 
-/-- Squaring a constant diagonal operator on `ℓ²(ℕ, ℝ)` squares its coefficient. -/
+/-- A bounded constant diagonal map scales the first basis vector. -/
+example : diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+    twoCoeff_bound ((default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) 0) =
+    (2 : ℝ) • (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) 0 :=
+  diagonalOperator_apply_basis twoCoeff_bound 0
+
+/-- Squaring a bounded constant diagonal map squares its coefficient. -/
 example (x : ℓ²(ℕ, ℝ)) :
     diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
-        (diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ)) x) =
-      diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ) ^ 2) x :=
-  diagonalOperator_sq (C := (2 : ℝ)) (fun _ => by norm_num) x
+        twoCoeff_bound
+        (diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+          twoCoeff_bound x) =
+      diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ) ^ 2)
+        (C := (2 : ℝ) ^ 2) (fun _ => by norm_num) x :=
+  diagonalOperator_sq twoCoeff_bound x
 
-/-- The first Green's square-root coefficient squares to the first Green's eigenvalue. -/
+/-- The first Green square-root coefficient squares to its eigenvalue. -/
 example : ((1 : ℝ) / Real.pi) ^ 2 = 1 / Real.pi ^ 2 := by
   rw [div_pow, one_pow]
 
-/-- The second Green's square-root coefficient squares to the second Green's eigenvalue. -/
+/-- The second Green square-root coefficient squares to its eigenvalue. -/
 example : ((1 : ℝ) / ((2 : ℝ) * Real.pi)) ^ 2 = 1 / (4 * Real.pi ^ 2) := by
   field_simp [Real.pi_ne_zero]
   ring
 
-/-- The Green's square-root squaring identity, for an abstract sine Hilbert basis. -/
-example (b : HilbertBasis ℕ+ ℝ (Lp ℝ 2 (volume.restrict (Set.Icc (0 : ℝ) 1))))
-    (f : Lp ℝ 2 (volume.restrict (Set.Icc (0 : ℝ) 1))) :
-    diagonalOperator b (fun k : ℕ+ => (1 : ℝ) / ((k : ℝ) * Real.pi))
-        (diagonalOperator b (fun k : ℕ+ => (1 : ℝ) / ((k : ℝ) * Real.pi)) f) =
-      diagonalOperator b (fun k : ℕ+ => (1 : ℝ) / ((k : ℝ) ^ 2 * Real.pi ^ 2)) f :=
-  greensOperatorSqrt_sq b f
+/-- The canonical sine-basis square root squares to the actual supplied Green map. -/
+example (A : Module.End ℝ L2UnitInterval)
+    (hA_sa : ∀ f g : L2UnitInterval,
+      inner (𝕜 := ℝ) (A f) g = inner (𝕜 := ℝ) f (A g))
+    (hA_greens : ∀ f : L2UnitInterval,
+      (A f : L2UnitInterval) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (fun x => ∫ t in Set.Icc (0 : ℝ) 1, greensKernel x t * (f : ℝ → ℝ) t))
+    (f : L2UnitInterval) :
+    greensOperatorSqrt sineHilbertBasis sineHilbertBasis_coe
+        (greensOperatorSqrt sineHilbertBasis sineHilbertBasis_coe f) = A f :=
+  greensOperatorSqrt_sq A sineHilbertBasis hA_sa sineHilbertBasis_coe hA_greens f
+
+private lemma greenCoeff_bound (k : ℕ+) : ‖greensEigenvalueSqrt k‖ ≤ 1 / Real.pi := by
+  unfold greensEigenvalueSqrt
+  have hk1 : (1 : ℝ) ≤ (k : ℝ) := by exact_mod_cast k.pos
+  have hpi : 0 < Real.pi := Real.pi_pos
+  rw [Real.norm_eq_abs, abs_of_nonneg (by positivity)]
+  exact one_div_le_one_div_of_le (by positivity) (by nlinarith [hk1, hpi])
+
+/-- Genuine canonical sine modes are eigenvectors of the square root. -/
+example (k : ℕ+) :
+    greensOperatorSqrt sineHilbertBasis sineHilbertBasis_coe (sineHilbertBasis k) =
+      greensEigenvalueSqrt k • sineHilbertBasis k := by
+  rw [greensOperatorSqrt_eq_diagonal sineHilbertBasis sineHilbertBasis_coe greenCoeff_bound]
+  exact diagonalOperator_apply_basis greenCoeff_bound k
+
+/-- The repaired constructor exposes actual continuity. -/
+example : Continuous
+    (diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+      twoCoeff_bound) :=
+  (diagonalOperator _ _ twoCoeff_bound).continuous
+
+/-- The repaired constructor exposes actual linearity. -/
+example (x y : ℓ²(ℕ, ℝ)) :
+    diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+        twoCoeff_bound (x + y) =
+      diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+          twoCoeff_bound x +
+        diagonalOperator (default : HilbertBasis ℕ ℝ ℓ²(ℕ, ℝ)) (fun _ => (2 : ℝ))
+          twoCoeff_bound y :=
+  (diagonalOperator _ _ twoCoeff_bound).map_add x y
+
+/-- The review's unbounded coefficient family cannot satisfy the constructor's bound. -/
+example : ¬ ∃ C : ℝ, ∀ n : ℕ, ‖(n : ℝ) + 1‖ ≤ C := by
+  rintro ⟨C, hC⟩
+  obtain ⟨n, hn⟩ := exists_nat_gt C
+  have h := hC n
+  rw [Real.norm_eq_abs, abs_of_nonneg (by positivity)] at h
+  linarith
 
 end MathlibExtTest.Analysis.ODE.GreensOperatorSqrtSquaredTests
