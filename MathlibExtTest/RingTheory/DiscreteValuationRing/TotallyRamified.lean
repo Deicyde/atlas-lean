@@ -52,6 +52,15 @@ example (π : B) (hπ : Irreducible π)
   IsDiscreteValuationRing.ramificationIdx_eq_finrank_of_adjoin_uniformizer
     π hπ hadj
 
+/-- The Eisenstein direction, applied at a general extension of discrete
+valuation rings. -/
+example (π : B) (hπ : Irreducible π)
+    (hadj : Algebra.adjoin A ({π} : Set B) = ⊤)
+    (heis : (minpoly A π).IsEisensteinAt (IsLocalRing.maximalIdeal A)) :
+    (IsLocalRing.maximalIdeal B).ramificationIdx A = Module.finrank K L :=
+  IsDiscreteValuationRing.ramificationIdx_eq_finrank_of_eisenstein_adjoin
+    π hπ hadj heis
+
 /-- The totally-ramified direction, applied at a general extension of
 discrete valuation rings. -/
 example (π : B) (hπ : Irreducible π)

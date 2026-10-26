@@ -32,7 +32,7 @@ import MathlibExt.RingTheory.DiscreteValuationRing.RamificationFiltration
 # Totally ramified extensions of discrete valuation rings are Eisenstein
 
 Let `A ⊆ B` be an extension of discrete valuation rings, finite and local,
-with fraction fields `K ⊆ L`. An element `π ∈ B` generates `B` over `A`
+with fraction fields `K ⊆ L`. A uniformizer `π` of `B` generates `B` over `A`
 with Eisenstein minimal polynomial if and only if the ramification index
 of the maximal ideal of `B` over `A` equals the degree `[L : K]`, i.e. the
 extension is totally ramified. This is Theorem 11.5 of ATLAS `NumberTheoryI`
@@ -72,8 +72,10 @@ the source's `IsAdicComplete`, residue-separability, and separability
 hypotheses are dropped, since no step of the proof uses them. The source
 states the ramification index with the `sSup` definition; the statements
 and proof here use the current length-based `Ideal.ramificationIdx`.
-The maximal-ideal identity is the existing unprimed API in
-`MathlibExt.RingTheory.DiscreteValuationRing.RamificationFiltration`.
+The canonical maximal-ideal identity maps the maximal ideal of `A` to
+the `e`-th power of the maximal ideal of `B`, where
+`e = (IsLocalRing.maximalIdeal B).ramificationIdx A`. It is the existing
+unprimed API in `MathlibExt.RingTheory.DiscreteValuationRing.RamificationFiltration`.
 -/
 
 @[expose] public section
@@ -90,8 +92,9 @@ variable {K L : Type*} [Field K] [Field L] [Algebra A K] [IsFractionRing A K]
   [Algebra B L] [IsFractionRing B L] [Algebra K L] [Algebra A L]
   [IsScalarTower A B L] [IsScalarTower A K L] [FiniteDimensional K L]
 
-/-- A subalgebra of a finite module over a local ring is everything if it
-meets every coset modulo the maximal ideal. This is Nakayama's lemma. -/
+/-- An `A`-subalgebra of a finite `A`-algebra `B` is everything if it
+meets every coset modulo the extended maximal ideal of `A` in `B`.
+This is Nakayama's lemma. -/
 private theorem subalgebra_eq_top_of_mod_maximal {A B : Type*} [CommRing A]
     [IsLocalRing A] [CommRing B] [Algebra A B] [Module.Finite A B]
     (S : Subalgebra A B)
@@ -143,8 +146,9 @@ private theorem finrank_eq_ramificationIdx_mul_finrank_residueField :
   rfl
 
 /-- If the ramification index equals the degree, every element of `B`
-is congruent modulo the maximal ideal of `A` to an `A`-polynomial in a
-uniformizer. -/
+is congruent modulo the extended maximal ideal of `A` in `B` to an
+`A`-polynomial in a uniformizer of `B`. The extended ideal is the
+`[L : K]`-th power of the maximal ideal of `B`. -/
 private theorem uniformizer_powers_span_mod_maximal (π : B) (hπ : Irreducible π)
     (htotram : (IsLocalRing.maximalIdeal B).ramificationIdx A =
       Module.finrank K L) :
@@ -491,6 +495,16 @@ theorem ramificationIdx_eq_finrank_of_adjoin_uniformizer (π : B)
     rfl
   rw [hdeg_eq.symm.trans hf1, mul_one] at hfund
   exact hfund.symm
+
+omit [FiniteDimensional K L] in
+/-- A generating uniformizer of `B` with Eisenstein minimal polynomial
+gives total ramification. This form retains the original criterion interface. -/
+theorem ramificationIdx_eq_finrank_of_eisenstein_adjoin (π : B)
+    (hπ : Irreducible π)
+    (hadj : Algebra.adjoin A ({π} : Set B) = ⊤)
+    (_heis : (minpoly A π).IsEisensteinAt (IsLocalRing.maximalIdeal A)) :
+    (IsLocalRing.maximalIdeal B).ramificationIdx A = Module.finrank K L :=
+  ramificationIdx_eq_finrank_of_adjoin_uniformizer π hπ hadj
 
 /-- The totally-ramified direction: if the ramification index equals
 the degree, then a uniformizer generates `B` over `A` with Eisenstein
