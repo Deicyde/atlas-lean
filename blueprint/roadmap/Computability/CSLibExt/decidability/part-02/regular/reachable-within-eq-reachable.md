@@ -23,8 +23,8 @@ Since the search stops once a round changes nothing, a generous bound costs noth
 ## Proof depends on
 
 - [One round of the DFA reachability search](reach-step.md)
-- [Lfp Fin](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
-- [Lfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-fixed.md)
+- [Least fixed point of a finset map by finite iteration](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
+- [Finite iteration from the empty set reaches a fixed point](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-fixed.md)
 
 ## Sources
 

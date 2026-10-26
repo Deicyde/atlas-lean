@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsTrivialSpoof
 ---
 
-# Is Trivial Spoof
+# Trivial spoof factorizations
 
-A spoof factorization is trivial if every base is `1`.
+**Trivial spoof factorizations.** A finite multiset $F$ of pairs $(x, a)$ of natural numbers,
+read as a spoof factorization with bases $x$ and exponents $a$, is trivial if every base $x$
+occurring in $F$ equals $1$.
 
 ## Depends on
 

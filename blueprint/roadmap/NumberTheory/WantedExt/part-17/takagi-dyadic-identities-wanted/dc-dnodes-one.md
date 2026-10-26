@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.dcDNodes_one
 ---
 
-# Dc DNodes one
+# The divide-and-conquer D-node count at one leaf
 
-`δ(1) = 0`.
+**The divide-and-conquer D-node count at one leaf.** The divide-and-conquer D-node count
+$\delta$ satisfies $\delta(1) = 0$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lt_two_mul_of_strong_two_near_perfect_form
 ---
 
-# Lt two mul of strong two near perfect form
+# Prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$ satisfy $k < 2a$
 
-Lemma 9: if `n = 2^k p` with `p` prime and `p = (2^(k+1) - 2^a - 1) / (1 + 2^(k-a))`,
-`a ≤ k`, then `k < 2a`. The paper also assumes `n` strongly `2`-near perfect; that follows
-from the form of `p` (take `d = 2^a`), so the hypothesis is dropped.
+**Prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$ satisfy $k < 2a$.** Let $a \le k$
+be natural numbers and let $p$ be a prime with $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$, that is,
+$p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$. Then $k < 2a$.
+
+The source also assumes that $n = 2^k p$ is strongly $2$-near perfect, that is, that
+$\sigma(n) = 2n + d + n/d$ for some divisor $d$ of $n$, where $\sigma$ is the sum of divisors.
+This follows from the equation for $p$ by taking $d = 2^a$.
 
 ## Depends on
 

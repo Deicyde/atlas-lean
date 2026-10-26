@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLines
 ---
 
-# Dist Lines
+# Distance between lines
 
-When `x = x¹` and `y = y¹` are lines, the distance is the usual distance on the
-projective space, given by `d(x¹,y¹) = sin ∡(x¹,y¹)`.
+**Distance between lines.** For lines $x$ and $y$ through the origin in $\mathbb{R}^d$, the
+distance $\operatorname{dist}(x, y)$ is $\sin \theta$, where $\theta \in [0, \pi]$ is the angle
+between nonzero vectors spanning $x$ and $y$. This is the usual distance on the projective
+space.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.pqBinomial_zero_succ
 ---
 
-# Pq Binomial zero succ
+# $(p,q)$-binomial coefficients with upper index zero and positive lower index
 
-`[0, k+1]_{p,q} = 0`.
+**$(p,q)$-binomial coefficients with upper index zero and positive lower index.** For all
+elements $p, q$ of a commutative semiring and every natural number $k$, the $(p,q)$-binomial
+coefficient $\binom{0}{k+1}_{p,q}$ equals $0$.
 
 ## Depends on
 
-- [Pq Binomial](pq-binomial.md)
+- [$(p,q)$-binomial coefficient](pq-binomial.md)
 
 ## Sources
 

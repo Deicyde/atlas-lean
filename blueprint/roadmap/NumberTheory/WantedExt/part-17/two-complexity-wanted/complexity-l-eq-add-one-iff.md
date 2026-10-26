@@ -14,7 +14,7 @@ if and only if `n = 2^m + 2^t` for some `1 ≤ t ≤ m`
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

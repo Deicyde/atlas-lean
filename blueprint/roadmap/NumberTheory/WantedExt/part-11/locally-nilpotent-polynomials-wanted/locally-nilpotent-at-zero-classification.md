@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.locallyNilpotentAt_zero_classification
 ---
 
-# Locally Nilpotent At zero classification
+# Classification of locally nilpotent polynomials at $0$
 
-Classification of the locally nilpotent polynomials at `0` (degree `≥ 1`): exactly
-`x + b` with `b ≠ 0`; `ax + b` with `b ≠ 0` and `P(b) ⊇ P(a) ≠ ∅` (`P(n)` the set of prime
-divisors of `n`); `x p(x)` with `p ≠ 0`; and `(x - a) p(x)` with `a ≠ 0`, `p(0) = -1`.
-The nilpotency annotations are not part of this statement.
+**Classification of locally nilpotent polynomials at $0$.** A polynomial $u \in \mathbb{Z}[x]$
+of positive degree is locally nilpotent at $0$ if and only if it has one of the following forms:
+$x + b$ with $b \in \mathbb{Z}$, $b \ne 0$; $ax + b$ with $a, b \in \mathbb{Z}$, $b \ne 0$, $a$
+divisible by at least one prime, and every prime divisor of $a$ dividing $b$; $x\,p(x)$ with
+$p \in \mathbb{Z}[x]$, $p \ne 0$; or $(x - a)p(x)$ with $a \in \mathbb{Z}$, $a \ne 0$, and
+$p \in \mathbb{Z}[x]$ with $p(0) = -1$.
 
 ## Depends on
 
-- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+- [Weakly locally nilpotent polynomial at a point](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

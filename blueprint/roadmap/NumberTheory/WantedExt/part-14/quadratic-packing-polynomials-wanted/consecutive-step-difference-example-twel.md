@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.consecutiveStepDifference_example_twelve_sevenths
 ---
 
-# Consecutive Step Difference example twelve sevenths
+# Step difference of the slope-$12/7$ example
 
-The recurring example `P(x, y) = 6 (x - y/2)(x - y/2 - 3/2) + x + y + 2` on `I(12/7)` has
-step difference `k = 3`.
+**Step difference of the slope-$12/7$ example.** Let
+$P(x, y) = 6(x - y/2)(x - y/2 - 3/2) + x + y + 2$. For $m = 7$ and $n = 12$ (the sector of
+slope $12/7$), the step difference of $P$ is $k = 3$: with $l = \gcd(6, 12) = 6$, one has
+$P(1, 2) - P(0, 0) = 3$.
 
 ## Depends on
 
-- [Consecutive Step Difference](consecutive-step-difference.md)
+- [Step difference](consecutive-step-difference.md)
 
 ## Sources
 

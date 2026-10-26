@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.squareSplitU_mul_squareSplitV_sq
 ---
 
-# Square Split U mul square Split V sq
+# Square-splitting decomposition
 
-The decomposition `n = u(n) v(n)²` for `n ≠ 0`.
+**Square-splitting decomposition.** For every natural number $n \ne 0$ with prime
+factorization $n = \prod_p p^{e_p}$, we have $n = u(n)\,v(n)^2$, where
+$u(n) = \prod_p p^{e_p \bmod 2}$ and $v(n) = \prod_p p^{\lfloor e_p/2 \rfloor}$.
 
 ## Depends on
 
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

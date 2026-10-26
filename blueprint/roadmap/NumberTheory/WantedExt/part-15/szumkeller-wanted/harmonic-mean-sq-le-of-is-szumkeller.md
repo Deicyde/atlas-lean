@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.harmonicMeanSq_le_of_isSZumkeller
 ---
 
-# Harmonic Mean Sq le of is SZumkeller
+# Harmonic mean of squared divisors of even s-Zumkeller numbers
 
-For an even s-Zumkeller number, `H₂(n) = τ(n) / ∑_{d ∣ n} 1/d² ≤ 2τ(n)/3`.
+**Harmonic mean of squared divisors of even s-Zumkeller numbers.** Let $n$ be an even
+s-Zumkeller number and let $\tau(n)$ be the number of positive divisors of $n$. Then
+$\tau(n) / \sum_{d \mid n} d^{-2} \le 2\tau(n)/3$, where the sum runs over the positive divisors
+$d$ of $n$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

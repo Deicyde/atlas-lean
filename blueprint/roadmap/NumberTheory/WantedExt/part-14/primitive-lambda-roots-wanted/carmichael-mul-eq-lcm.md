@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.carmichael_mul_eq_lcm
 ---
 
-# Lemma 1
+# Carmichael's function on coprime products
 
-**Lemma 1**: for coprime `m n > 1`, Carmichael's function
-satisfies `λ(m*n) = lcm (λ m) (λ n)`.
+**Carmichael's function on coprime products.** For coprime natural numbers $m, n > 1$,
+the Carmichael function $\lambda$ satisfies
+$\lambda(mn) = \operatorname{lcm}(\lambda(m), \lambda(n))$.
 
 ## Depends on
 

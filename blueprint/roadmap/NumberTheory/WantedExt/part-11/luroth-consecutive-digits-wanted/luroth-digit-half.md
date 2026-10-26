@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.lurothDigit_half
 ---
 
-# Luroth Digit half
+# First Lüroth digit of 1/2
 
-`d₁(1/2) = 3`.
+**First Lüroth digit of 1/2.** The first Lüroth digit of $1/2$ is $d_1(1/2) = 3$.
 
 ## Depends on
 
-- [Luroth Digit](luroth-digit.md)
+- [First Lüroth digit](luroth-digit.md)
 
 ## Sources
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_sternBrocotRep
 ---
 
-# Is Eventually Periodic mallows Rep iff stern Brocot Rep
+# Mallows and Stern–Brocot representations are eventually periodic together
 
-The Mallows representation of an irrational `α ∈ (0, 1)` is eventually periodic iff its
-Stern–Brocot representation is.
+**Mallows and Stern–Brocot representations are eventually periodic together.** For every
+irrational $\alpha \in (0, 1)$, the Mallows representation $M(\alpha)$ is eventually periodic if
+and only if the Stern–Brocot representation $\mathrm{SB}(\alpha)$ is eventually periodic.
 
 ## Depends on
 
 - [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Mallows Letter](mallows-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Mallows Rep](mallows-rep.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Mallows representation](mallows-rep.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

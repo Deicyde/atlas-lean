@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_pow_add_pow_eq_sq
 ---
 
-# Theorem 2
+# Sums of powers of consecutive Pell–Lucas numbers that are squares
 
-**Theorem 2**: the Diophantine equation
-`Q_n^x + Q_{n+1}^x = y^2`, where `Q_n` is the `n`-th
-Pell–Lucas number, has as its only solution in
-nonnegative integers `(n, x, y) = (1, 1, 2)`.
+**Sums of powers of consecutive Pell–Lucas numbers that are squares.** Let $Q_n$ denote the
+Pell–Lucas numbers. For natural numbers $n$, $x$ and $y$, the equation $Q_n^x + Q_{n+1}^x = y^2$
+holds if and only if $n = 1$, $x = 1$ and $y = 2$; that is, its only solution in natural numbers
+is $Q_1 + Q_2 = 1 + 3 = 2^2$.
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_eisenstein_ellipse_asymptotic
 ---
 
-# Card eisenstein ellipse asymptotic
+# Lattice points in the ellipse $x^2 + xy + y^2 \le n$, asymptotically
 
-Corollary 45: the elliptical region `x² + xy + y² ≤ n` contains
-`(2/3)√3 π n + O(√n)` lattice points.
+**Lattice points in the ellipse $x^2 + xy + y^2 \le n$, asymptotically.** There is a real
+constant $C$ such that for every integer $n \ge 1$, the number $E(n)$ of pairs
+$(x, y) \in \mathbb{Z}^2$ with $x^2 + xy + y^2 \le n$ satisfies
+$\bigl| E(n) - \tfrac{2}{3}\sqrt{3}\,\pi n \bigr| \le C\sqrt{n}$.
 
 ## Depends on
 

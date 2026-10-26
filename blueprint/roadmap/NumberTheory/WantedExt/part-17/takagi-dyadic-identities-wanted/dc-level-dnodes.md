@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.dcLevelDNodes
 ---
 
-# Dc Level DNodes
+# Level counts of D-nodes
 
-The number `λᵢ(n)` of `D`-nodes on level `i` of the divide-and-conquer tree on `n`
-leaves: `n mod 2^i` if the binary digit `nᵢ` is `0`, and `2^i - (n mod 2^i)` if it is `1`.
+**Level counts of D-nodes.** For natural numbers $n$ and $i$, let $n_i$ be the binary digit
+of $n$ at position $i$ (the coefficient of $2^i$ in the binary expansion of $n$). The level count
+$\lambda_i(n)$ is $n \bmod 2^i$ if $n_i = 0$, and $2^i - (n \bmod 2^i)$ if $n_i = 1$.
+
+This is the paper's closed form for the number of D-nodes on level $i$ of the
+divide-and-conquer tree on $n$ leaves.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.robinExceptionalSet_eq_empty_of_le
 ---
 
-# Robin Exceptional Set eq empty of le
+# The Robin exceptional set is empty up to $7!$
 
-The exceptional set is empty for `x ≤ 7!`, i.e. `N_R(x) = 0` there.
+**The Robin exceptional set is empty up to $7!$.** For every real $x \le 7! = 5040$, the
+Robin exceptional set up to $x$ is empty; that is, its cardinality $N_R(x)$ is $0$.
 
 ## Depends on
 
-- [Robin Exceptional Set](robin-exceptional-set.md)
+- [Robin exceptional set](robin-exceptional-set.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.replicate_mem_leonardoPTilings
 ---
 
-# Replicate mem leonardo PTilings
+# The all-squares tiling is a Leonardo $p$-tiling
 
-The all-squares tiling lies in `K_{p,n}`.
+**The all-squares tiling is a Leonardo $p$-tiling.** For all natural numbers $p$ and $n$, the
+linear tiling of an $n$-board by $n$ squares, with no $p$-tile, lies in the tiling set $K_{p,n}$.
 
 ## Depends on
 

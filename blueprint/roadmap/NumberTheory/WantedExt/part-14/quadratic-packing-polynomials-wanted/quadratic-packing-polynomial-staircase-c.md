@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_staircase_congruence
 ---
 
-# Quadratic Packing Polynomial staircase congruence
+# Staircase congruence for quadratic packing polynomials
 
-Lemma 13: if `P` is a QPP on `I(n/m)` with step difference `k > 0`, then for every `i`
-the values of `P` on the staircase `J_{i+k}` lie in the same residue class modulo `k` as its
-values on `J_i`.
+**Staircase congruence for quadratic packing polynomials.** Let $m, n$ be positive coprime
+integers, let $P$ be a quadratic packing polynomial on the lattice sector $I(n/m)$, and suppose
+that the step difference of $P$ equals a positive integer $k$. Then for every natural number
+$i$, every point $p$ of the staircase $J_i$ and every point $q$ of the staircase $J_{i+k}$, the
+difference $P(q) - P(p)$ is an integer multiple of $k$.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Consecutive Step Difference](consecutive-step-difference.md)
-- [Sector Lattice Points](sector-lattice-points.md)
-- [Sector Staircase](sector-staircase.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Step difference](consecutive-step-difference.md)
+- [Lattice points of a sector](sector-lattice-points.md)
+- [Staircases of a rational sector](sector-staircase.md)
 
 ## Sources
 

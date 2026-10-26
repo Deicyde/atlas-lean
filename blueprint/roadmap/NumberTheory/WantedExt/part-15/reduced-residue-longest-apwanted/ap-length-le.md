@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.apLength_le
 ---
 
-# Ap Length le
+# Length bound for progressions in a reduced residue window
 
-An arithmetic progression with positive common difference inside `R_m(n)` has at most `n`
-terms.
+**Length bound for progressions in a reduced residue window.** Let $m$ be an integer and $n$
+a natural number, and let $R_m(n)$ be the set of integers $a$ with $m + 1 \le a \le m + n$ and
+$\gcd(a, n) = 1$. If $b$ is an integer, $d$ a positive integer and $s$ a natural number such
+that $b + i d \in R_m(n)$ for every $0 \le i < s$, then $s \le n$.
 
 ## Depends on
 
-- [Reduced Residue Window](reduced-residue-window.md)
+- [The reduced residue system $R_m(n)$](reduced-residue-window.md)
 
 ## Sources
 

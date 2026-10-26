@@ -18,7 +18,7 @@ $$R^{(k)}_{p,n} = R_{p,n+(p+1)k} - R_{p,n+(p+1)k}(k - 1) - p \binom{n + k}{k}.$$
 
 - [Hyper Lucas-Leonardo p-numbers](hyper-lucas-leonardo-p.md)
 - [Incomplete Lucas-Leonardo p-numbers](incomplete-lucas-leonardo-p.md)
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

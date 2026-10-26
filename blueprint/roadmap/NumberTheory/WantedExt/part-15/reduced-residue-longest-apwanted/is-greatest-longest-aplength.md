@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isGreatest_longestAPLength
 ---
 
-# Is Greatest longest APLength
+# Maximum longest progression length over all reduced residue windows
 
-Theorem 2: for `n > 1`, `max_{m ∈ ℤ} f_m(n) = max(n / rad(n), gpf(n) - 1)`.
+**Maximum longest progression length over all reduced residue windows.** Let $n > 1$ be a
+natural number, $\operatorname{rad}(n)$ the product of its distinct prime factors and
+$\operatorname{gpf}(n)$ its largest prime factor. For an integer $m$ let $f_m(n)$ be the length of
+the longest arithmetic progression with positive common difference contained in the set $R_m(n)$
+of integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$. Then the largest value of
+$f_m(n)$ over all integers $m$ is $\max(n / \operatorname{rad}(n), \operatorname{gpf}(n) - 1)$.
 
 ## Depends on
 
-- [Longest APLength](longest-aplength.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
 
 ## Sources
 

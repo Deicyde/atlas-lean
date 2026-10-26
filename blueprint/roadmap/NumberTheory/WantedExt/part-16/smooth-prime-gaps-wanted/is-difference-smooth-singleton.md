@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isDifferenceSmooth_singleton
 ---
 
-# Is Difference Smooth singleton
+# One-element sets are difference smooth
 
-A one-element tuple is difference `y`-smooth for every `y`.
+**One-element sets are difference smooth.** For every natural number $y$ and every integer
+$a$, the set $\{a\}$ is difference $y$-smooth.
 
 ## Depends on
 
-- [Is Difference Smooth](is-difference-smooth.md)
+- [Difference-smooth sets of integers](is-difference-smooth.md)
 
 ## Sources
 

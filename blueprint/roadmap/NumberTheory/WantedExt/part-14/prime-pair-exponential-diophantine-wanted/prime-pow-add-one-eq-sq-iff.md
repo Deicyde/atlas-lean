@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.prime_pow_add_one_eq_sq_iff
 ---
 
-# Prime pow add one eq sq iff
+# Prime powers one less than a square
 
-For a prime `p`, the only non-negative solutions of `pˣ + 1 = y²` are `(p, x, y) = (2, 3, 3)`
-and `(3, 1, 2)`.
+**Prime powers one less than a square.** Let $p$ be a prime. Then non-negative integers $x$
+and $y$ satisfy $p^x + 1 = y^2$ if and only if $(p, x, y) = (2, 3, 3)$ or $(p, x, y) = (3, 1, 2)$.
 
 ## Depends on
 

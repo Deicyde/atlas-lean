@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.hammingWeight_eq_dcDNodes_diff
 ---
 
-# Hamming Weight eq dc DNodes diff
+# Binary digit sum from consecutive D-node counts
 
-Corollary 23: for `n > 0`, `s₁(n) = (δ(n) - δ(n+1) + ⌊log₂ n⌋)/2 + 1`.
+**Binary digit sum from consecutive D-node counts.** For every natural number $n > 0$, the
+sum $s_1(n)$ of the binary digits of $n$ satisfies
+$s_1(n) = (\delta(n) - \delta(n+1) + \lfloor \log_2 n \rfloor)/2 + 1$ in $\mathbb{Q}$, where
+$\delta(m)$ denotes the number of D-nodes in the divide-and-conquer tree on $m$ leaves.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.isSquare_card_fermatPsp_bases_mul_of_prime
 ---
 
-# Is Square card fermat Psp bases mul of prime
+# Products of two distinct primes have a square number of Fermat pseudoprime bases
 
-A product of two distinct primes has a square number of pseudoprime bases `1 ≤ b < pq`.
+**Products of two distinct primes have a square number of Fermat pseudoprime bases.** Let
+$p$ and $q$ be distinct primes. Then the number of integers $b$ with $1 \le b < pq$ such that
+$pq$ is a Fermat pseudoprime to the base $b$, that is, $b^{pq-1} \equiv 1 \pmod{pq}$, is a perfect
+square.
 
 ## Depends on
 

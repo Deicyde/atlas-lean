@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.oozT_nil
 ---
 
-# Ooz T nil
+# The OOZ map fixes the empty word
 
-`T(𝟏) = 𝟏`.
+**The OOZ map fixes the empty word.** Let $T$ be the map of the OOZ quasi-shuffle product,
+which sends words in letters $z_k$ ($k$ a natural number) to finite formal $\mathbb{Q}$-linear
+combinations of words. Then $T$ sends the empty word $\mathbf{1}$ to itself:
+$T(\mathbf{1}) = \mathbf{1}$.
 
 ## Depends on
 
-- [Ooz T](ooz-t.md)
+- [The map $T$ of the OOZ quasi-shuffle product](ooz-t.md)
 
 ## Sources
 

@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.szQMZVWord
 ---
 
-# Sz QMZVWord
+# Schlesinger–Zudilin qMZVs of words
 
-`ζ_q^SZ` extended to words of `𝔎¹`: `p^{k₁} y ⋯ p^{kᵣ} y ↦ ζ_q^SZ(k₁, …, kᵣ)`.
+**Schlesinger–Zudilin qMZVs of words.** Write $\zeta_q^{SZ}$ for the Schlesinger–Zudilin qMZV
+of an index of natural numbers. For a word $w$ in the letters $p$ and $y$ with $r$ letters $y$,
+let $k_j$ be the number of letters $p$ between the $(j-1)$-st and the $j$-th letter $y$ of $w$
+(for $j = 1$, before the first $y$); letters $p$ after the last $y$ are ignored. The value of
+$\zeta_q^{SZ}$ on $w$ is $\zeta_q^{SZ}(k_1, \dots, k_r)$. In particular the word
+$p^{k_1} y \cdots p^{k_r} y$ is sent to $\zeta_q^{SZ}(k_1, \dots, k_r)$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sz Index Of Word Aux](sz-index-of-word-aux.md)
-- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Reading an index off a word in $p$ and $y$](sz-index-of-word-aux.md)
+- [Schlesinger–Zudilin qMZVs](../part-01/sz-qmzv.md)
 
 ## Sources
 

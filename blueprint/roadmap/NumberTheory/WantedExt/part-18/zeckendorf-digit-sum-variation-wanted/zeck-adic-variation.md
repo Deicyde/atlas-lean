@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.zeckAdicVariation
 ---
 
-# Zeck Adic Variation
+# The variation of the Zeckendorf digit sum
 
-The variation `Δ^{(r)}(x) = lim_{k → ∞} Δ_k^{(r)}(x)` on `𝕏`, where the integer sequence
-`Δ_k^{(r)}(x)` is eventually constant; it is `0` (a junk value) elsewhere, a set the paper shows
-to be finite.
+**The variation of the Zeckendorf digit sum.** For $r \in \mathbb{N}$ and a digit sequence
+$x : \mathbb{N} \to \{0, 1\}$, let $\Delta_k^{(r)}(x)$ be the truncated variation of order $k$. If
+the integer sequence $(\Delta_k^{(r)}(x))_k$ is eventually constant, the variation
+$\Delta^{(r)}(x) = \lim_{k \to \infty} \Delta_k^{(r)}(x)$ is its eventual value; otherwise
+$\Delta^{(r)}(x) = 0$.
+
+The value $0$ is a junk value. The paper shows that the Zeckendorf-adic integers at which the
+limit does not exist form a finite set.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Truncated variation of the Zeckendorf digit sum](zeck-adic-trunc-variation.md)
 
 ## Sources
 

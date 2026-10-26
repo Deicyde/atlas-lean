@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lucasTetrahedral_recurrence
 ---
 
-# Theorem 7
+# Recurrence for the Lucas tetrahedral numbers
 
-**Theorem 7.** `[n + 3, 3] = s t [n + 2, 3] + {n + 1} [n + 2, 2]` for `n ≥ 0`.
+**Recurrence for the Lucas tetrahedral numbers.** Let $(s, t)$ be nondegenerate Lucas
+parameters, and write $\{n\}_{s,t}$ for the Lucas brackets and $\binom{n}{k}_{s,t}$ for the
+Lucasnomial coefficients. For every natural number $n$,
+
+$$\binom{n+3}{3}_{s,t} = st\binom{n+2}{3}_{s,t} + \{n+1\}_{s,t}\binom{n+2}{2}_{s,t}.$$
 
 ## Depends on
 

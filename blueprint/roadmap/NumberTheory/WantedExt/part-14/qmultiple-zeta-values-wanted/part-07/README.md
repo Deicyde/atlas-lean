@@ -2,17 +2,17 @@
 navigation: transparent
 ---
 
-# Sz Star QMZVPartial to Tbz QMZV eq sum tbz QMZV sz To TBZ sz Dual
+# Partial sums of SZ-star qMZVs to Duality for TBZ-qMZVs
 
-- [Sz Star QMZVPartial](sz-star-qmzvpartial.md)
-- [Sz Star QMZV](sz-star-qmzv.md)
-- [Sz Star QMZV nil](sz-star-qmzv-nil.md)
-- [Coeff one sz Star QMZV singleton one](coeff-one-sz-star-qmzv-singleton-one.md)
-- [Ooz QMZV eq sz Star QMZV sz Dual Index](ooz-qmzv-eq-sz-star-qmzv-sz-dual-index.md)
-- [Tbz To SZ](tbz-to-sz.md)
-- [Tbz To SZ bar](tbz-to-sz-bar.md)
-- [Sz To TBZ](sz-to-tbz.md)
-- [Sz To TBZ one](sz-to-tbz-one.md)
-- [Tbz QMZV eq sum sz QMZV tbz To SZ](tbz-qmzv-eq-sum-sz-qmzv-tbz-to-sz.md)
-- [Sz QMZV eq sum tbz QMZV sz To TBZ](sz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz.md)
-- [Tbz QMZV eq sum tbz QMZV sz To TBZ sz Dual](tbz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz-sz-du.md)
+- [Partial sums of SZ-star qMZVs](sz-star-qmzvpartial.md)
+- [SZ-star qMZVs](sz-star-qmzv.md)
+- [The empty SZ-star qMZV](sz-star-qmzv-nil.md)
+- [The coefficient of $q$ in $\zeta_q^{SZ,\star}(1)$](coeff-one-sz-star-qmzv-singleton-one.md)
+- [OOZ-qMZVs are SZ-star qMZVs of the dual index](ooz-qmzv-eq-sz-star-qmzv-sz-dual-index.md)
+- [The map from TBZ words to SZ indices](tbz-to-sz.md)
+- [The TBZ-to-SZ map on the letter $\bar{1}$](tbz-to-sz-bar.md)
+- [The map $V_{TBZ}$ from SZ indices to TBZ words](sz-to-tbz.md)
+- [The map $V_{TBZ}$ on the index $(1)$](sz-to-tbz-one.md)
+- [TBZ-qMZVs in the SZ model](tbz-qmzv-eq-sum-sz-qmzv-tbz-to-sz.md)
+- [SZ-qMZVs in the TBZ model](sz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz.md)
+- [Duality for TBZ-qMZVs](tbz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz-sz-du.md)

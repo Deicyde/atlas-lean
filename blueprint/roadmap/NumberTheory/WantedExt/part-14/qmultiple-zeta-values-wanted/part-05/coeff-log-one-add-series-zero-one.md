@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_logOneAddSeries_zero_one
 ---
 
-# Coeff log One Add Series zero one
+# Low-order coefficients of the logarithm series
 
-`ln(1 + T)` has no constant term and linear coefficient `1`.
+**Low-order coefficients of the logarithm series.** The power series
+$\ln(1 + T) = \sum_{n \ge 1} (-1)^{n+1} T^n / n$ over $\mathbb{Q}$ has constant coefficient $0$
+and coefficient $1$ at $T$.
 
 ## Depends on
 
-- [Log One Add Series](log-one-add-series.md)
+- [The logarithm series $\ln(1 + T)$](log-one-add-series.md)
 
 ## Sources
 

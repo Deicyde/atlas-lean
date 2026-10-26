@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.two_pow_add_one_eq_sq
 ---
 
-# Lemma 1
+# Solutions of $2^x + 1 = z^2$
 
-**Lemma 1**, case `n = 2`: with `y = 0`, Equation
-(1) `2^x + 1 = z^2` has the unique nonnegative
-integer solution `(x, z) = (3, 3)`.
+**Solutions of $2^x + 1 = z^2$.** For natural numbers $x$ and $z$, $2^x + 1 = z^2$ holds if
+and only if $x = 3$ and $z = 3$.
 
 ## Depends on
 

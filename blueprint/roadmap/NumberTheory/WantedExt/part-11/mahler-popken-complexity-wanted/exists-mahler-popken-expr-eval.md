@@ -6,15 +6,16 @@ proof: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.exists_mahlerPopkenExpr_eval
 ---
 
-# Exists mahler Popken Expr eval
+# Every positive integer has an $m$-ary expression
 
-Every positive natural is expressed by some `m`-ary expression
-when `1 ≤ m` (a sum of ones).
+**Every positive integer has an $m$-ary expression.** For natural numbers $m \ge 1$ and
+$n \ge 1$, there is an $m$-ary Mahler–Popken expression whose value is $n$ (for instance a sum of
+ones).
 
 ## Depends on
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
-- [Eval](eval.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
+- [Value of an $m$-ary expression](eval.md)
 
 ## Sources
 

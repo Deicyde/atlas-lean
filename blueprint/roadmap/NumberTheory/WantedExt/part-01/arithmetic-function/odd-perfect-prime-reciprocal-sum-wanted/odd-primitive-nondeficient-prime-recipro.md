@@ -18,8 +18,8 @@ The hypothesis that $n$ is odd is added: the statement as printed fails at $n = 
 
 ## Depends on
 
-- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
-- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
+- [Primitive non-deficient number](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Product of $p/(p-1)$ over the prime factors](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

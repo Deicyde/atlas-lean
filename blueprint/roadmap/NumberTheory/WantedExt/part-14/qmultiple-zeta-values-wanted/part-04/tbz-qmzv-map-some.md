@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.tbzQMZV_map_some
 ---
 
-# Tbz QMZV map some
+# The TBZ model extends the BZ model
 
-The TBZ model extends the BZ model: on indices without `1̄` it is `ζ_q^BZ`.
+**The TBZ model extends the BZ model.** For every index $(k_1, \dots, k_r)$ of natural
+numbers, read as a TBZ index without the symbol $\bar 1$, the TBZ-qMZV equals the Bradley–Zhao
+qMZV: $\zeta_q^{\mathrm{TBZ}}(k_1, \dots, k_r) = \zeta_q^{\mathrm{BZ}}(k_1, \dots, k_r)$.
 
 ## Depends on
 
-- [Bz QMZV](../part-02/bz-qmzv.md)
-- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Bradley–Zhao q-multiple zeta values](../part-02/bz-qmzv.md)
+- [Takeyama–Bradley–Zhao qMZVs](../part-03/tbz-qmzv.md)
 
 ## Proof depends on
 
-- [Q MZV](../part-02/q-mzv.md)
-- [Tbz Letter](../part-03/tbz-letter.md)
+- [General q-multiple zeta values](../part-02/q-mzv.md)
+- [Letters of the Takeyama–Bradley–Zhao model as qMZV data](../part-03/tbz-letter.md)
 
 ## Sources
 

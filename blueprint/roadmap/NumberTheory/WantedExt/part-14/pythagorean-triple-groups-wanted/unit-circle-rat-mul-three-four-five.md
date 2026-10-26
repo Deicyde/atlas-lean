@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.unitCircleRatMul_three_four_five
 ---
 
-# Unit Circle Rat Mul three four five
+# Squaring $(3/5, 4/5)$ under Amato's product
 
-`(3/5, 4/5) ⊙ (3/5, 4/5) = (9/41, 40/41)`.
+**Squaring $(3/5, 4/5)$ under Amato's product.** For Amato's product
+$(x, y) \odot (x', y') = (x x' / (1 + y y'), (y + y') / (1 + y y'))$ on $\mathbb{Q}^2$, we have
+$(3/5, 4/5) \odot (3/5, 4/5) = (9/41, 40/41)$.
 
 ## Depends on
 
-- [Unit Circle Rat Mul](unit-circle-rat-mul.md)
+- [Amato's product on rational points of the unit circle](unit-circle-rat-mul.md)
 
 ## Sources
 

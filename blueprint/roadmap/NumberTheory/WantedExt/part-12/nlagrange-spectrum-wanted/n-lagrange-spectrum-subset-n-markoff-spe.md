@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.nLagrangeSpectrum_subset_nMarkoffSpectrum_attained
 ---
 
-# N Lagrange Spectrum subset n Markoff Spectrum attained
+# The $n$-Lagrange spectrum lies in the $n$-Markoff spectrum, with attained suprema
 
-`Lₙ ⊆ Mₙ`, and every `α ∈ Lₙ` is `μₙ(ξ, ξ')` for some `ξ, ξ'` at which the supremum in the definition
-of `μₙ` is attained.
+**The $n$-Lagrange spectrum lies in the $n$-Markoff spectrum, with attained suprema.** Let
+$n \ge 1$, let $L_n$ and $M_n$ be the $n$-Lagrange and $n$-Markoff spectra, and let $\mu_n$ be the
+$n$-Markoff approximability. Then $L_n \subseteq M_n$. Moreover, for every $\alpha \in L_n$ there
+are distinct irrational real numbers $\xi$ and $\xi'$ with $\mu_n(\xi, \xi') = \alpha$ at which the
+supremum defining $\mu_n(\xi, \xi')$ is attained: some pair of integers $(s, t) \ne (0, 0)$
+satisfies
+
+$$\frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|} = \alpha.$$
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
-- [N Markoff Approximability](n-markoff-approximability.md)
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
+- [$n$-Markoff approximability](n-markoff-approximability.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

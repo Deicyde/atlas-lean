@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_rFibonacciPolynomial
 ---
 
-# Sum r Fibonacci Polynomial
+# Sum of the first $n$ $r$-Fibonacci polynomials
 
-Corollary 2: for `r ≥ 1` and `1 - x - y ≠ 0`,
-`∑_{j=1}^{n} U_j = (1 - U_{n+1} - y ∑_{j=1}^{r} U_{n-r+j}) / (1 - x - y)`
-(terms with `n - r + j ≤ 0` vanish).
+**Sum of the first $n$ $r$-Fibonacci polynomials.** Let $K$ be a field, let $r \ge 1$ be a
+natural number, let $x, y \in K$ with $1 - x - y \ne 0$, and write $U_j$ for the $r$-Fibonacci
+polynomial $U^{(r)}_j(x, y)$. Then for every natural number $n$,
+
+$$
+\sum_{j=1}^{n} U_j = \frac{1 - U_{n+1} - y \sum_{j=1}^{r} U_{n-r+j}}{1 - x - y},
+$$
+
+where the terms of the inner sum with $n - r + j \le 0$ are zero.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

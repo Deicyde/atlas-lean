@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.nMarkoffApproximability_comm
 ---
 
-# N Markoff Approximability comm
+# Symmetry of the $n$-Markoff approximability
 
-`μₙ` is symmetric in its two arguments.
+**Symmetry of the $n$-Markoff approximability.** For every natural number $n$ and all real
+numbers $\xi$ and $\xi'$, the $n$-Markoff approximability satisfies
+$\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
 
 ## Depends on
 
-- [N Markoff Approximability](n-markoff-approximability.md)
+- [$n$-Markoff approximability](n-markoff-approximability.md)
 
 ## Sources
 

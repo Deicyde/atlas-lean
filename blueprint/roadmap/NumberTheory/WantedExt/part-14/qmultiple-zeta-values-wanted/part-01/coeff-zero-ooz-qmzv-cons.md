@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_zero_oozQMZV_cons
 ---
 
-# Coeff zero ooz QMZV cons
+# Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term
 
-A nonempty OOZ-qMZV has no constant term.
+**Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term.** For every nonempty index
+$(k_1, \dots, k_r)$ of natural numbers, the constant term of the Ohno–Okuda–Zudilin qMZV
+$\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ is $0$.
 
 ## Depends on
 
-- [Ooz QMZV](ooz-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](ooz-qmzv.md)
 
 ## Proof depends on
 
-- [Ooz QMZVPartial](ooz-qmzvpartial.md)
+- [Partial Ohno–Okuda–Zudilin sums](ooz-qmzvpartial.md)
 
 ## Sources
 

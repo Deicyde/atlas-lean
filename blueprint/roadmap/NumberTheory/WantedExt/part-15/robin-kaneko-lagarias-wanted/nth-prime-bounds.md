@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nth_prime_bounds
 ---
 
-# Nth prime bounds
+# Rosser–Schoenfeld and Dusart bounds for the $k$-th prime
 
-Rosser–Schoenfeld and Dusart bounds for the `k`-th prime `p_k` (`p_1 = 2`): for `k ≥ 6`,
-`k(log k + log log k - 1) < p_k < k(log k + log log k)`.
+**Rosser–Schoenfeld and Dusart bounds for the $k$-th prime.** Let $p_k$ be the $k$-th prime
+($p_1 = 2$) and $\log$ the natural logarithm. For every natural number $k \ge 6$,
+
+$$k(\log k + \log \log k - 1) < p_k < k(\log k + \log \log k).$$
 
 ## Depends on
 

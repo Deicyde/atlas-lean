@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.infinite_prime_pairs_smooth_5_gap_of_elliottHalberstam
 ---
 
-# Infinite prime pairs smooth 5 gap of elliott Halberstam
+# Prime pairs with $5$-smooth difference under Elliott–Halberstam
 
-Assuming the Elliott-Halberstam conjecture, there are infinitely many pairs of
-primes `p > q` whose difference `p - q` is `5`-smooth.
+**Prime pairs with $5$-smooth difference under Elliott–Halberstam.** If the
+Elliott–Halberstam conjecture holds, then there are infinitely many pairs of primes $p > q$ such
+that every prime factor of $p - q$ is at most $5$.
 
 ## Depends on
 
-- [Elliott Halberstam](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
+- [Elliott–Halberstam conjecture (dyadic form)](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources
 

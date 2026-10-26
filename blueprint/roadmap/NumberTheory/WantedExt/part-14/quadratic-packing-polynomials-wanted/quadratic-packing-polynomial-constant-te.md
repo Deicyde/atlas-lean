@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_constant_term
 ---
 
-# Quadratic Packing Polynomial constant term
+# Constant term of a quadratic packing polynomial on a rational sector
 
-Lemma 20: if `P` is a QPP on `I(n/m)` with step difference `k > 0`, then its constant term
-is `F = P(0, 0) = (l²/n)(k - 1)(k + 1)/12`, `l = gcd(m - 1, n)`.
+**Constant term of a quadratic packing polynomial on a rational sector.** Let $m, n$ be
+coprime positive integers, let $l = \gcd(m - 1, n)$, and let $P$ be a quadratic packing
+polynomial on the lattice points $I(n/m)$ of the sector of slope $n/m$. If the step difference
+of $P$ for $m, n$ is a positive integer $k$, then $P(0, 0) = \frac{l^2}{n} (k - 1)(k + 1)/12$.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Consecutive Step Difference](consecutive-step-difference.md)
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Step difference](consecutive-step-difference.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.oozQMZV_eq_sum_bzQMZV_oozToBZ
 ---
 
-# Ooz QMZV eq sum bz QMZV ooz To BZ
+# OOZ-qMZVs of admissible indices via BZ-qMZVs
 
-Restricted OOZ-qMZVs in the BZ model: for an admissible index `k` (`kᵢ ≥ 1`, `k₁ ≥ 2`),
-`ζ_q^OBZ(k) = ζ_q^BZ(U(k))`, with `ζ_q^BZ` extended `ℚ`-linearly.
+**OOZ-qMZVs of admissible indices via BZ-qMZVs.** Write $\zeta_q^{\mathrm{OOZ}}$ and
+$\zeta_q^{\mathrm{BZ}}$ for the Ohno–Okuda–Zudilin and Bradley–Zhao qMZVs. Let
+$k = (k_1, \dots, k_r)$ be an index of natural numbers with all $k_i \ge 1$ and, when $r \ge 1$,
+$k_1 \ge 2$ (the empty index is allowed). Write the image of $k$ under the map $U$ from OOZ to BZ
+indices as a $\mathbb{Q}$-linear combination $U(k) = \sum_w c_w \, w$ of indices. Then
+$\zeta_q^{\mathrm{OOZ}}(k) = \sum_w c_w \, \zeta_q^{\mathrm{BZ}}(w)$.
+
+On admissible indices $\zeta_q^{\mathrm{OOZ}}$ is the restricted OOZ-qMZV
+$\zeta_q^{\mathrm{OBZ}}$ of the source.
 
 ## Depends on
 
-- [Bz QMZV](../part-02/bz-qmzv.md)
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Ooz To BZ](ooz-to-bz.md)
+- [Bradley–Zhao q-multiple zeta values](../part-02/bz-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The map $U$ from OOZ to BZ words](ooz-to-bz.md)
 
 ## Sources
 

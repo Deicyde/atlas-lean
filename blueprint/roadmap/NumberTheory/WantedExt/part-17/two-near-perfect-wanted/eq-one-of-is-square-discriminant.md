@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.eq_one_of_isSquare_discriminant
 ---
 
-# Eq one of is Square discriminant
+# Square values of the discriminant $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$
 
-Lemma 2: for integers `1 ≤ a ≤ k`, if `D = 2^(2k+2) + 2^(k+2) - 2^(a+2) - 7` is a
-perfect square, then `k = a = 1`.
+**Square values of the discriminant $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$.** Let $a$ and $k$ be
+natural numbers with $1 \le a \le k$. If $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$ is the square of an
+integer, then $k = a = 1$.
 
 ## Depends on
 

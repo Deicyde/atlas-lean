@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.divisor_summatory_asymptotic
 ---
 
-# Divisor summatory asymptotic
+# Dirichlet's asymptotic for the divisor summatory function
 
-Theorem 6 (Dirichlet): for `x ≥ 1`,
-`D(x) = x log x + (2γ - 1) x + O(√x)`, with `D(x) = ∑_{m ≤ x} τ(m)`.
+**Dirichlet's asymptotic for the divisor summatory function.** Let $\tau(m)$ be the number of
+positive divisors of $m$, let $D(x) = \sum_{1 \le m \le x} \tau(m)$ for real $x$, and let
+$\gamma$ be the Euler–Mascheroni constant. There is a real constant $C$ such that
+$|D(x) - (x \log x + (2\gamma - 1)\, x)| \le C \sqrt{x}$ for every real $x \ge 1$.
 
 ## Depends on
 

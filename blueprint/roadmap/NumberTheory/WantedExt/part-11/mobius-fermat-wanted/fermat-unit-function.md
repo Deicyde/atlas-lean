@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fermatUnitFunction
 ---
 
-# Fermat Unit Function
+# Fermat unit function
 
-The Fermat unit function `u_M`: `u_M l = 1` when `l = 2 ^ n - 1` for some `n ≥ 1`, and
-`u_M l = 0` otherwise. A positive `l` is of this form exactly when `l + 1` is a power of two,
-i.e. when `2 ^ Nat.log 2 (l + 1) = l + 1`.
+**Fermat unit function.** The Fermat unit function $u_M$ is the integer-valued arithmetic
+function with $u_M(l) = 1$ when $l = 2^n - 1$ for some integer $n \ge 1$, and $u_M(l) = 0$
+otherwise (in particular $u_M(0) = 0$). Equivalently, $u_M(l) = 1$ exactly when $l \ge 1$ and
+$l + 1$ is a power of $2$.
 
 ## Depends on
 

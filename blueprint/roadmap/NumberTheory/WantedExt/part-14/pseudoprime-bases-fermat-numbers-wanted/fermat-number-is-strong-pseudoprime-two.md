@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_zpow
 ---
 
-# Fermat Number is Strong Pseudoprime two zpow
+# Composite Fermat numbers are strong pseudoprimes to every power of $2$
 
-Every composite Fermat number `F_k = 2 ^ (2 ^ k) + 1` is a strong pseudoprime to every
-integer power `2 ^ t` of the unit `2`.
+**Composite Fermat numbers are strong pseudoprimes to every power of $2$.** Let $k$ be a
+natural number such that the Fermat number $F_k = 2^{2^k} + 1$ is composite. Then for every
+integer $t$, $F_k$ is a strong pseudoprime to the base $2^t$, where the power is taken in the
+unit group of $\mathbb{Z}/F_k\mathbb{Z}$ (in which $2$ is a unit because $F_k$ is odd).
 
 ## Depends on
 

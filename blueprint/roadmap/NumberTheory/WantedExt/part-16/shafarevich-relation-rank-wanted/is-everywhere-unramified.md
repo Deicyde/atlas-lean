@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ShafarevichRelationRankWanted.NumberTheory.IsEverywhereUnramified
 ---
 
-# Is Everywhere Unramified
+# Everywhere unramified extension
 
-`M/F` is everywhere unramified: every nonzero prime of `𝓞 F` has
-ramification index `1` in `𝓞 M`, and every real place of `F` stays real in
-`M`.
+**Everywhere unramified extension.** Let $M/F$ be an extension of number fields, with rings
+of integers $\mathcal{O}_F$ and $\mathcal{O}_M$. Then $M/F$ is everywhere unramified when every
+prime ideal $\mathfrak{P}$ of $\mathcal{O}_M$ lying over a nonzero prime ideal $\mathfrak{p}$
+of $\mathcal{O}_F$ has ramification index $1$ over $\mathcal{O}_F$, and every infinite place of
+$M$ lying over a real place of $F$ is real.
 
 ## Depends on
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.weightedQuasiShuffle_nil_left
 ---
 
-# Weighted Quasi Shuffle nil left
+# The empty word is a left unit for the weighted quasi-shuffle
 
-`𝟏 ∗ w = w` for the weighted quasi-shuffle.
+**The empty word is a left unit for the weighted quasi-shuffle.** For every alphabet $A$,
+every weighted letter product $d$ on $A$ (assigning to two letters a finite formal
+$\mathbb{Q}$-linear combination of letters) and every word $v$ over $A$, the weighted
+quasi-shuffle product of the empty word $\mathbf{1}$ with $v$ is $v$: $\mathbf{1} \ast v = v$.
 
 ## Depends on
 
-- [Weighted Quasi Shuffle](weighted-quasi-shuffle.md)
+- [Weighted quasi-shuffle product](weighted-quasi-shuffle.md)
 
 ## Sources
 

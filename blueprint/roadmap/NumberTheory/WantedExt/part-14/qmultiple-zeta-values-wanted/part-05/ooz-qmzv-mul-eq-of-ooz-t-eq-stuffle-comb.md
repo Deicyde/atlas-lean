@@ -5,20 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.oozQMZV_mul_eq_of_oozT_eq_stuffleComb
 ---
 
-# Ooz QMZV mul eq of ooz T eq stuffle Comb
+# OOZ qMZVs respect the OOZ quasi-shuffle product
 
-The OOZ quasi-shuffle product `ш_OOZ` (defined by `T(u ш_OOZ v) = T(u) ∗ T(v)`) is well defined
-and `ζ_q^OOZ` respects it: for admissible words `u, v` (letters `≥ 1`, first letter `≥ 2`), there is
-exactly one `ℚ`-combination `w` of admissible words with `T(w) = T(u) ∗ T(v)`, and every such `w`
-has `ζ_q^OOZ(w) = ζ_q^OOZ(u) ζ_q^OOZ(v)` (`T` and `ζ_q^OOZ` extended `ℚ`-linearly). The record's
-trailing remarks (references for the quasi-shuffle structure, the generating series) are
-omitted.
+**OOZ qMZVs respect the OOZ quasi-shuffle product.** Identify words in letters $z_k$ with
+lists $(k_1, \dots, k_r)$ of natural numbers, and call such a word admissible if every
+$k_i \ge 1$ and, when $r \ge 1$, $k_1 \ge 2$. Let $T$ send the empty word $\mathbf{1}$ to
+$\mathbf{1}$ and a word $z_n v$ with first letter $z_n$ to the formal $\mathbb{Q}$-linear
+combination $z_n v - z_{n-1} v$ (with $n - 1$ truncated at $0$). Extend $T$ and the
+Ohno–Okuda–Zudilin qMZV $\zeta_q^{\mathrm{OOZ}}$ $\mathbb{Q}$-linearly to finite formal
+$\mathbb{Q}$-linear combinations of words, and let $\ast$ be the stuffle product (the
+quasi-shuffle product with letter product $z_m \diamond z_n = z_{m+n}$) of such combinations.
+For all admissible words $u$ and $v$, there is exactly one finite formal $\mathbb{Q}$-linear
+combination $w$ of admissible words with $T(w) = T(u) \ast T(v)$, and every finite formal
+$\mathbb{Q}$-linear combination $w$ of admissible words with $T(w) = T(u) \ast T(v)$ satisfies
+$\zeta_q^{\mathrm{OOZ}}(w) = \zeta_q^{\mathrm{OOZ}}(u) \, \zeta_q^{\mathrm{OOZ}}(v)$.
+
+Thus the OOZ quasi-shuffle product, defined by $T(u \ast_{\mathrm{OOZ}} v) = T(u) \ast T(v)$,
+is well defined, and $\zeta_q^{\mathrm{OOZ}}$ is multiplicative for it.
 
 ## Depends on
 
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Ooz T](ooz-t.md)
-- [Stuffle Comb](stuffle-comb.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The map $T$ of the OOZ quasi-shuffle product](ooz-t.md)
+- [Stuffle product of formal linear combinations of words](stuffle-comb.md)
 
 ## Sources
 

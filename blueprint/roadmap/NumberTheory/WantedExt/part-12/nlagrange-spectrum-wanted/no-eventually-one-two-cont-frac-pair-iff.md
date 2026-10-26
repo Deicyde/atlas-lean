@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.no_eventually_one_two_contFrac_pair_iff_eq_67
 ---
 
-# No eventually one two cont Frac pair iff eq 67
+# The prime $67$ and continued fraction digits $1$ and $2$
 
-`p = 67` is the only prime `p < 2000` for which no irrational `ξ` has both `ξ` and `pξ` with
-continued fraction digits eventually in `{1, 2}`. Digits are `a_k = ⌊ξ_k⌋` for the complete
-quotients `ξ₀ = ξ`, `ξ_{k+1} = 1/{ξ_k}`.
+**The prime $67$ and continued fraction digits $1$ and $2$.** For an irrational real
+number $\xi$, define its complete quotients by $\xi_0 = \xi$ and $\xi_{k+1} = 1/\{\xi_k\}$,
+where $\{\cdot\}$ denotes the fractional part, and its continued fraction digits by
+$a_k = \lfloor \xi_k \rfloor$. Let $p < 2000$ be a prime. Then there is no irrational $\xi$
+such that the digits of both $\xi$ and $p\xi$ eventually all lie in $\{1, 2\}$ if and only
+if $p = 67$.
 
 ## Depends on
 

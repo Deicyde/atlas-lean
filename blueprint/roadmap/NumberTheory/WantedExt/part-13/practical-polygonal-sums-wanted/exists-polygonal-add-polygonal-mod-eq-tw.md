@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_polygonal_add_polygonal_modEq_two
 ---
 
-# Exists polygonal add polygonal mod Eq two
+# Parity of sums of two polygonal numbers
 
-For positive `n` and `s > 3` there are positive `x, y` such that
-`P_s(x₁) + P_s(y₁) ≡ n (mod 2)` for all positive `x₁ ≡ x`, `y₁ ≡ y (mod 4)`.
+**Parity of sums of two polygonal numbers.** For a natural number $s > 3$ and a natural
+number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. For every
+natural number $n > 0$ there are natural numbers $x, y > 0$ such that
+$P_s(x_1) + P_s(y_1) \equiv n \pmod{2}$ for all natural numbers $x_1, y_1 > 0$ with
+$x_1 \equiv x \pmod{4}$ and $y_1 \equiv y \pmod{4}$.
 
 ## Depends on
 

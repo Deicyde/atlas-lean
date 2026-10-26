@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.convergentDen_one
 ---
 
-# Convergent Den one
+# The convergent denominator $q_1$ equals $a_1$
 
-`q₁ = a₁`.
+**The convergent denominator $q_1$ equals $a_1$.** For every sequence of natural numbers
+$a_0, a_1, a_2, \dots$ with convergent denominators $q_0, q_1, q_2, \dots$, we have $q_1 = a_1$.
 
 ## Depends on
 
-- [Convergent Den](convergent-den.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

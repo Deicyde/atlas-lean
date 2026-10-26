@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.robinExceptionalSet
 ---
 
-# Robin Exceptional Set
+# Robin exceptional set
 
-The set `{7! < n ≤ x : σ(n) ≥ e^γ n log log n}` of integers above `7! = 5040` up to `x`
-failing Robin's inequality; its cardinality is the paper's counting function `N_R(x)`.
+**Robin exceptional set.** For a real number $x$, the Robin exceptional set up to $x$ is the
+set of natural numbers $n$ with $7! = 5040 < n \le x$ that fail Robin's inequality, that is,
+with $\sigma(n) \ge e^\gamma n \log\log n$, where $\sigma(n)$ is the sum of the divisors of $n$
+and $\gamma$ is the Euler–Mascheroni constant. Its cardinality is the counting function $N_R(x)$.
 
 ## Depends on
 

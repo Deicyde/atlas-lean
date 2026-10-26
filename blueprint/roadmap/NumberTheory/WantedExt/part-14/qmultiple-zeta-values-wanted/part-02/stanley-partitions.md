@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.stanleyPartitions
 ---
 
-# Stanley Partitions
+# Partitions in Stanley coordinates
 
-The set `𝒫_r(N)` of partitions of `N` of length `r` in Stanley coordinates:
-pairs `((m₁, …, mᵣ), (n₁, …, nᵣ))` of positive integers with `m₁ > ⋯ > mᵣ` and
-`m₁ n₁ + ⋯ + mᵣ nᵣ = N` (all coordinates are then at most `N`).
+**Partitions in Stanley coordinates.** For natural numbers $r$ and $N$, $\mathcal{P}_r(N)$ is
+the finite set of partitions of $N$ of length $r$ in Stanley coordinates: the pairs of tuples
+$((m_1, \dots, m_r), (n_1, \dots, n_r))$ of positive integers with $m_1 > m_2 > \dots > m_r$ and
+$m_1 n_1 + \dots + m_r n_r = N$.
+
+All coordinates of such a pair are then at most $N$.
 
 ## Depends on
 

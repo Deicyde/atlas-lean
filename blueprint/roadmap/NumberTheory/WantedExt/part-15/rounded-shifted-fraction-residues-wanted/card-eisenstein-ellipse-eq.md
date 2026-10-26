@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_eisenstein_ellipse_eq
 ---
 
-# Card eisenstein ellipse eq
+# Lattice points in the ellipse $x^2 + xy + y^2 \le n$
 
-Corollary 43: the elliptical region `x² + xy + y² ≤ n` contains
-`6 𝓝_{n,0,0,1,3} + 1` lattice points. Stated for every `n : ℕ` (both sides
-are `1` at `n = 0`).
+**Lattice points in the ellipse $x^2 + xy + y^2 \le n$.** For every natural number $n$, the
+number of pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + xy + y^2 \le n$ equals
+$6\,\mathcal{N}_{n,0,0,1,3} + 1$, where $\mathcal{N}_{n,0,0,1,3}$ is the number of
+$k \in \{1, \dots, n\}$ with $\lfloor n/k \rfloor \equiv 1 \pmod 3$. At $n = 0$ both sides
+are $1$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

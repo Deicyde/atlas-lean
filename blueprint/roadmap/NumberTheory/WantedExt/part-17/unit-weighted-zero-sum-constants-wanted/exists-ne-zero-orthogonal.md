@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_ne_zero_orthogonal
 ---
 
-# Exists ne zero orthogonal
+# A nonzero vector of $\mathbb{Z}_2^m$ orthogonal to $a$ vectors when $a < m$
 
-Lemma 4.2: if `a + 1 ≤ m` and `v_1, …, v_a ∈ ℤ_2^m`, some nonzero `w ∈ ℤ_2^m` satisfies
-`w · v_i = 0` for all `i`.
+**A nonzero vector of $\mathbb{Z}_2^m$ orthogonal to $a$ vectors when $a < m$.** Let
+$\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$, let $a + 1 \le m$ and let
+$v_1, \dots, v_a \in \mathbb{Z}_2^m$. Then there is a nonzero $w \in \mathbb{Z}_2^m$ with
+$w \cdot v_i = \sum_j w_j (v_i)_j = 0$ in $\mathbb{Z}_2$ for every $i$.
 
 ## Depends on
 

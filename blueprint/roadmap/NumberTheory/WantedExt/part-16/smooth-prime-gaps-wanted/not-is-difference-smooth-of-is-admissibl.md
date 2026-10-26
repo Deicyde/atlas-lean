@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.not_isDifferenceSmooth_of_isAdmissibleFinset
 ---
 
-# Not is Difference Smooth of is Admissible Finset
+# Admissible sets are not difference smooth at small bounds
 
-An admissible `k`-tuple, `k ≥ 2`, is not difference `ℓ`-smooth for any
-`ℓ < z_k`, `z_k` the largest prime `≤ k`; equivalently, for every prime
-`z ≤ k` and every `ℓ < z`.
+**Admissible sets are not difference smooth at small bounds.** Let $H$ be an admissible
+finite set of $k \ge 2$ integers, let $z \le k$ be a prime and let $\ell < z$ be a natural
+number. Then $H$ is not difference $\ell$-smooth. Equivalently, $H$ is not difference
+$\ell$-smooth for any $\ell$ less than the largest prime at most $k$.
 
 ## Depends on
 
 - [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
-- [Is Difference Smooth](is-difference-smooth.md)
+- [Difference-smooth sets of integers](is-difference-smooth.md)
 
 ## Sources
 

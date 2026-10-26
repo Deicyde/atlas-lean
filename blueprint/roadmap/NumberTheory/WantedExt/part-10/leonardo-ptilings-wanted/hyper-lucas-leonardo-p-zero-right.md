@@ -15,7 +15,7 @@ $R^{(0)}_{p,n} = R_{p,n}$.
 ## Depends on
 
 - [Hyper Lucas-Leonardo p-numbers](hyper-lucas-leonardo-p.md)
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

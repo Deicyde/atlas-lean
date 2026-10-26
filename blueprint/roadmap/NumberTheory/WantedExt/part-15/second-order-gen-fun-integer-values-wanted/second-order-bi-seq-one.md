@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.secondOrderBiSeq_one
 ---
 
-# Second Order Bi Seq one
+# Second initial value of the two-sided sequence
 
-Initial value `A^{(r,s)}_1 = s`.
+**Second initial value of the two-sided sequence.** For all integers $p$, $r$, $s$, the
+two-sided sequence $(A^{(r,s)}_n)_{n \in \mathbb{Z}}$ for $p$ with initial values $r$ and $s$
+satisfies $A^{(r,s)}_1 = s$.
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
 
 ## Sources
 

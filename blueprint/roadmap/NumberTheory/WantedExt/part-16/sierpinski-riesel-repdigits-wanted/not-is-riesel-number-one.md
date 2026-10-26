@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isRieselNumber_one
 ---
 
-# Not is Riesel Number one
+# One is not a Riesel number
 
-`1` is not a Riesel number: `1·2^2 - 1 = 3` is prime.
+**One is not a Riesel number.** The number $1$ is not a Riesel number, since
+$1 \cdot 2^2 - 1 = 3$ is prime.
 
 ## Depends on
 
-- [Is Riesel Number](is-riesel-number.md)
+- [Riesel number](is-riesel-number.md)
 
 ## Sources
 

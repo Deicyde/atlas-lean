@@ -14,7 +14,7 @@ $a_{n+2} = a_{n+1} + a_n + k$.
 
 ## Depends on
 
-- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](../../part-11/leonardo-pwanted/leonardo-pk.md)
 - [Generalized Leonardo numbers](gen-leonardo.md)
 
 ## Sources

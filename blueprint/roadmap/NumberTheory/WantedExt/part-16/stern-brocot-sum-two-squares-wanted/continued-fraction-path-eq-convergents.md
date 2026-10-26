@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.continuedFraction_path_eq_convergents
 ---
 
-# Continued Fraction path eq convergents
+# Continued fraction convergents as matrix paths
 
-Convergents as paths. Let `A_n / B_n` be the convergents of `[q₀; q₁, q₂, …]`, with
-`A_n = q_n A_{n-1} + A_{n-2}`, `B_n = q_n B_{n-1} + B_{n-2}`, `A_{-1} = 1`, `A_0 = q₀`,
-`B_{-1} = 0`, `B_0 = 1`; here `A k`, `B k` stand for `A_{k-1}`, `B_{k-1}`. The path
-`W_n = R^{q₀} L^{q₁} ⋯` (alternating, `n + 1` blocks) equals `!![A_{n-1}, A_n; B_{n-1}, B_n]`
-when it ends with an `R`-move (`n` even) and `!![A_n, A_{n-1}; B_n, B_{n-1}]` when it ends with an
-`L`-move (`n` odd). The last move is read off the parity of `n`, which is the paper's case split
-when every `q_i ≥ 1`; the identity is stated for all `q_i ∈ ℕ`.
+**Continued fraction convergents as matrix paths.** Let
+$R = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ and
+$L = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$, as matrices over $\mathbb{N}$. Let
+$q_0, q_1, q_2, \dots$ be natural numbers, and define natural numbers $A_k$, $B_k$ for $k \ge -1$
+by $A_{-1} = 1$, $A_0 = q_0$, $B_{-1} = 0$, $B_0 = 1$ and, for $k \ge 1$,
+$A_k = q_k A_{k-1} + A_{k-2}$ and $B_k = q_k B_{k-1} + B_{k-2}$. For $n \ge 0$ let
+$W_n = M_0^{q_0} M_1^{q_1} \cdots M_n^{q_n}$, where $M_i = R$ for even $i$ and $M_i = L$ for odd
+$i$. Then $W_n = \begin{pmatrix} A_{n-1} & A_n \\ B_{n-1} & B_n \end{pmatrix}$ when $n$ is even,
+and $W_n = \begin{pmatrix} A_n & A_{n-1} \\ B_n & B_{n-1} \end{pmatrix}$ when $n$ is odd.
+
+When every $q_i$ is positive, $A_k / B_k$ is the $k$-th convergent of $[q_0; q_1, q_2, \dots]$,
+and the parity of $n$ says whether the path $W_n$ ends with an $R$-move or an $L$-move, which is
+the paper's case split; the identity holds for all $q_i \ge 0$.
 
 ## Depends on
 

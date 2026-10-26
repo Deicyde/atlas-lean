@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.digitSumCongruenceCount_small
 ---
 
-# Digit Sum Congruence Count small
+# A small value of the digit-sum congruence count
 
-Small value: `N_3(2, 2, 0, 0, 3) = 5` (pairs `(x_1, x_2) ∈ [0, 3)²` with even sum).
+**A small value of the digit-sum congruence count.** In the notation $N_b(k, q, r, x, y)$
+of the digit-sum congruence count, $N_3(2, 2, 0, 0, 3) = 5$: exactly five pairs $(x_1, x_2)$ of
+natural numbers with $x_1, x_2 < 3$ have even sum.
 
 ## Depends on
 
-- [Digit Sum Congruence Count](digit-sum-congruence-count.md)
+- [Digit-sum congruence count](digit-sum-congruence-count.md)
 
 ## Sources
 

@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_cylinder_measure_extrema
 ---
 
-# Mallows Rep cylinder measure extrema
+# Extremal measures of Mallows cylinder sets
 
-Over words `w ∈ {L, M, R}^ℓ`, the Lebesgue measure of `{α ∈ (0,1) \ ℚ : M(α) starts with w}`
-has maximum `1/(ℓ+1)` and minimum `4√2 / ((1+√2)^{2ℓ+2} - (1-√2)^{2ℓ+2})`. Domain extension:
-stated for all `ℓ`, including `ℓ = 0` where both values are `1`.
+**Extremal measures of Mallows cylinder sets.** Let $\ell \ge 0$. For a word
+$w = w_1 \cdots w_\ell$ over $\{L, M, R\}$, let $C_w$ be the set of irrational $\alpha \in (0, 1)$
+whose Mallows representation begins with $w$, that is, $M_t(\alpha) = w_t$ for $1 \le t \le \ell$.
+Over the $3^\ell$ words $w$ of length $\ell$, the Lebesgue measure of $C_w$ attains the maximum
+value $1/(\ell + 1)$ and the minimum value
+
+$$\frac{4\sqrt{2}}{(1 + \sqrt{2})^{2\ell + 2} - (1 - \sqrt{2})^{2\ell + 2}}.$$
+
+For $\ell = 0$ both values equal $1$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

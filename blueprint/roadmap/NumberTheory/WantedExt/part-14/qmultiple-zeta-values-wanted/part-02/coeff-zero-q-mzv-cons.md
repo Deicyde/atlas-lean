@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.coeff_zero_qMZV_cons
 ---
 
-# Coeff zero q MZV cons
+# Nonempty general qMZVs have no constant term
 
-A nonempty general qMZV has no constant term.
+**Nonempty general qMZVs have no constant term.** For every nonempty list
+$(k_1, Q_1), \dots, (k_r, Q_r)$ of natural numbers $k_j$ and polynomials $Q_j \in \mathbb{Q}[X]$,
+the constant coefficient of the general q-multiple zeta value
+$\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$ is $0$. No condition on $Q_1(0)$ is assumed.
 
 ## Depends on
 
-- [Q MZV](q-mzv.md)
+- [General q-multiple zeta values](q-mzv.md)
 
 ## Proof depends on
 
-- [Q MZVPartial](../part-01/q-mzvpartial.md)
+- [Partial sums of general qMZVs](../part-01/q-mzvpartial.md)
 
 ## Sources
 

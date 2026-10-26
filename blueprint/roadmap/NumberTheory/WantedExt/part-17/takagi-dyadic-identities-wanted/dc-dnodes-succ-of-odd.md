@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_succ_of_odd
 ---
 
-# Dc DNodes succ of odd
+# Successor formula for the D-node count at odd arguments
 
-Lemma 20: for odd `n`, `δ(n+1) = δ(n) + ⌊log₂ n⌋ - 2 s₁(n) + 2`.
+**Successor formula for the D-node count at odd arguments.** Let $\delta$ be the
+divide-and-conquer D-node count and $s_1(n)$ the number of ones in the binary expansion of $n$.
+For every odd natural number $n$,
+$\delta(n+1) = \delta(n) + \lfloor \log_2 n \rfloor - 2 s_1(n) + 2$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.neg_one_pow_mul_factorial_mul_factorial_modEq_neg_one_iff
 ---
 
-# Neg one pow mul factorial mul factorial mod Eq neg one iff
+# A generalized Wilson criterion for primality
 
-Morozov's Corollary 1: for `1 ≤ n` and `k < n`,
-`(-1) ^ k * k ! * (n - k - 1)! ≡ -1 [ZMOD n]` if and only if
-`n` is `1` or prime.
+**A generalized Wilson criterion for primality.** Let $n \ge 1$ and $k < n$ be natural
+numbers. Then $(-1)^k \, k! \, (n - k - 1)! \equiv -1 \pmod{n}$ if and only if $n = 1$ or $n$
+is prime.
 
 ## Depends on
 

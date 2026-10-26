@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.repetend_last_column_inv_eq
 ---
 
-# Repetend last column inv eq
+# The last column pairs a base with its inverse
 
-The final column `L - 1` of the repetend table of `1/n` pairs each small base `b` of order `L`
-with `b^(L-1) mod n = b⁻¹`: the two rows have the same digit in column `L - 1`. Here `b < n` is a
-small base, as in the table.
+**The last column pairs a base with its inverse.** Let $n$ and $L \ge 1$ be natural numbers
+and let $b < n$ have multiplicative order $L$ modulo $n$. Put $b' = b^{L-1} \bmod n$, the inverse
+of $b$ modulo $n$. Then $b$ and $b'$ have the same digit in column $L - 1$:
+$\lfloor b'^{L}/n \rfloor \bmod b' = \lfloor b^{L}/n \rfloor \bmod b$.
 
 ## Depends on
 

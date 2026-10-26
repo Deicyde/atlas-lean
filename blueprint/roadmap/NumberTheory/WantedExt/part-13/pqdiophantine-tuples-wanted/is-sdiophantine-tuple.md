@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSDiophantineTuple
 ---
 
-# Is SDiophantine Tuple
+# $S$-Diophantine tuples
 
-`s` is an `S`-Diophantine tuple: its elements are positive and, for distinct `a, b ∈ s`,
-every prime factor of `a * b + 1` lies in `S`. A tuple `(a₁, …, aₘ)` of distinct positive
-integers is encoded by the finset of its entries, of cardinality `m`.
+**$S$-Diophantine tuples.** Let $S$ be a finite set of natural numbers. A finite set $s$ of
+natural numbers is an $S$-Diophantine tuple if all its elements are positive and, for all
+distinct $a, b \in s$, every prime factor of $ab + 1$ lies in $S$. A tuple $(a_1, \dots, a_m)$ of
+distinct positive integers is encoded by the set of its entries, which has $m$ elements.
 
 ## Depends on
 

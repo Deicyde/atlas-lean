@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ringChoose_mul_prime_sub_congr_pow_four_two_mul
 ---
 
-# Ring Choose mul prime sub congr pow four two mul
+# The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ alone
 
-Theorem 6: for a prime `p ≥ 7`, `n ∈ ℤ` and `k ∈ ℕ`,
-`binom(np, kp) - binom(n, k) ≡ (n k (n - k) / 4) binom(n, k) (binom(2p, p) - 2)
-(mod p^{4+v_p(binom(n, 4))})`. The paper takes `n ∈ ℤ_p`; integer case. The exponent uses
-Lean's `padicValRat p 0 = 0`, so for `binom(n, 4) = 0` (`n ∈ {0, 1, 2, 3}`) this reads
-modulo `p^4`: the exact-equality reading `v_p(0) = ∞` fails at `p = 7`, `n = 3`, `k = 1`,
-where the difference is `100842 = 6 · 7^5`.
+**The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ alone.** Let
+$p \ge 7$ be a prime, let $k$ be a natural number and let $n$ be an integer. For an integer $x$
+and a natural number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the
+$p$-adic valuation on $\mathbb{Q}$, with the convention $v_p(0) = 0$. Let
+
+$$
+X = \binom{np}{kp} - \binom{n}{k} - \frac{nk(n-k)}{4} \binom{n}{k} \left(\binom{2p}{p} - 2\right).
+$$
+
+Then either $X = 0$ or $v_p(X) \ge 4 + v_p\big(\binom{n}{4}\big)$. In particular, when
+$\binom{n}{4} = 0$, that is $n \in \{0, 1, 2, 3\}$, the conclusion is only that $X = 0$ or
+$v_p(X) \ge 4$.
+
+Equality cannot be demanded when $\binom{n}{4} = 0$: for $p = 7$, $n = 3$ and $k = 1$ one has
+$X = 100842 = 6 \cdot 7^5$. The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered
+here.
 
 ## Depends on
 

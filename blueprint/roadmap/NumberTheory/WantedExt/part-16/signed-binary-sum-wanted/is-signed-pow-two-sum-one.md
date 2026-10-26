@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isSignedPowTwoSum_one
 ---
 
-# Is Signed Pow Two Sum one
+# Example of a signed power-of-two sum
 
-Characteristic example: with `m = 3`, `s = 0`, `t = 1`, the value
-`3 * 1 + (-1) * 2 = 1` is a signed power-of-two sum.
+**Example of a signed power-of-two sum.** The integer $1$ can be written as
+$\sum_{j=0}^{1} \lambda_j 2^j$ with every $\lambda_j \in \{-1, 3\}$, namely
+$1 = 3 \cdot 2^0 + (-1) \cdot 2^1$.
 
 ## Depends on
 
-- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
+- [Signed power-of-two sums](is-signed-pow-two-sum.md)
 
 ## Sources
 

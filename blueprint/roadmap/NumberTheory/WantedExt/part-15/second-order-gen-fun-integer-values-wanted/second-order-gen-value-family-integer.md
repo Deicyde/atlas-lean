@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderGenValue_family_integer
 ---
 
-# Second Order Gen Value family integer
+# Integer values propagate along a family
 
-If `r, s` are coprime (`s ≠ 0`) and `A(r/s)` is an integer, then
-`A(A^{(r,s)}_n / A^{(r,s)}_{n+1})` is an integer whenever `A^{(r,s)}_{n+1} ≠ 0` (all `n ∈ ℤ`).
+**Integer values propagate along a family.** Let $a, b, p$ be integers with $p \ne 0$, let
+$A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$ for rational $x$, and for integers $r, s$ let
+$A^{(r,s)}$ be the two-sided integer sequence with $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and
+$A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for all integers $n$. If $r$ and $s$ are
+coprime integers with $s \ne 0$ and $A(r/s)$ is an integer, then
+$A(A^{(r,s)}_n / A^{(r,s)}_{n+1})$ is an integer for every integer $n$ with
+$A^{(r,s)}_{n+1} \ne 0$.
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
-- [Second Order Gen Value](second-order-gen-value.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
+- [Generating function of the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-gen-value.md)
 
 ## Sources
 

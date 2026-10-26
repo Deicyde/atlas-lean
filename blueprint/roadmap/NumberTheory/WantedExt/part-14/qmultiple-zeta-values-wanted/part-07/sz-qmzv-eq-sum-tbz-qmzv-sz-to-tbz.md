@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.szQMZV_eq_sum_tbzQMZV_szToTBZ
 ---
 
-# Sz QMZV eq sum tbz QMZV sz To TBZ
+# SZ-qMZVs in the TBZ model
 
-SZ-qMZVs in the TBZ model: for an SZ-admissible index `k` (empty or `k₁ ≥ 1`),
-`ζ_q^SZ(k) = ζ_q^TBZ(V_TBZ(k))`, i.e. the paper's signed sum
-`∑ (-1)^{∑ kᵢ - jᵢ + |εᵢ|} ζ_q^TBZ(j₁', ε₁, …, jᵣ', εᵣ)`, with `ζ_q^TBZ` extended `ℚ`-linearly.
+**SZ-qMZVs in the TBZ model.** Let $k = (k_1, \dots, k_r)$ be an index of natural numbers
+that is empty or has $k_1 \ge 1$. Let $V_{TBZ}(k) = \sum_w c_w\, w$ be the formal
+$\mathbb{Q}$-linear combination of TBZ words (words in the letters $\bar 1$ and $j \ge 1$; write
+$z_a$ for the one-letter word $a$) obtained by replacing each letter $k_i = 0$ by
+$z_1 - z_{\bar 1}$ and each letter $k_i \ge 1$ by $\sum_{j=1}^{k_i} (-1)^{k_i - j} z_{j'}$, where
+$j' = \bar 1$ for $j = 1$ and $j' = j$ otherwise, and multiplying out by concatenation of words.
+Then the Schlesinger–Zudilin qMZV of $k$ is the corresponding combination of
+Takeyama–Bradley–Zhao qMZVs: $\zeta_q^{SZ}(k) = \sum_w c_w\, \zeta_q^{TBZ}(w)$, that is,
+$\zeta_q^{SZ}(k) = \zeta_q^{TBZ}(V_{TBZ}(k))$ with $\zeta_q^{TBZ}$ extended
+$\mathbb{Q}$-linearly.
 
 ## Depends on
 
-- [Sz QMZV](../part-01/sz-qmzv.md)
-- [Sz To TBZ](sz-to-tbz.md)
-- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Schlesinger–Zudilin qMZVs](../part-01/sz-qmzv.md)
+- [The map $V_{TBZ}$ from SZ indices to TBZ words](sz-to-tbz.md)
+- [Takeyama–Bradley–Zhao qMZVs](../part-03/tbz-qmzv.md)
 
 ## Sources
 

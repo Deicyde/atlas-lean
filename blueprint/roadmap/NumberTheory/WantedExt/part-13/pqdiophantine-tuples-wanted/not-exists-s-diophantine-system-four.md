@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_exists_sDiophantine_system_four
 ---
 
-# Not exists s Diophantine system four
+# The Szalay–Ziegler system (4) has no solutions
 
-Let `p ≠ q` be odd primes and `a < b < c < d` positive integers. Then there are no
-exponents with `ab + 1 = q ^ β₁`, `bc + 1 = p ^ α₄ q ^ β₄`, `ac + 1 = p ^ α₂`,
-`bd + 1 = p ^ α₅`, `ad + 1 = p ^ α₃ q ^ β₃`, `cd + 1 = q ^ β₆`. (Such a system would make
-`(a, b, c, d)` a `{p, q}`-Diophantine quadruple, so positivity of `a` replaces that
-hypothesis.)
+**The Szalay–Ziegler system (4) has no solutions.** Let $p \ne q$ be odd primes and let
+$a, b, c, d$ be integers with $0 < a < b < c < d$. Then there are no natural numbers
+$\beta_1, \alpha_4, \beta_4, \alpha_2, \alpha_5, \alpha_3, \beta_3, \beta_6$ with
+$ab + 1 = q^{\beta_1}$, $bc + 1 = p^{\alpha_4} q^{\beta_4}$, $ac + 1 = p^{\alpha_2}$,
+$bd + 1 = p^{\alpha_5}$, $ad + 1 = p^{\alpha_3} q^{\beta_3}$ and $cd + 1 = q^{\beta_6}$.
+
+Any solution would make $\{a, b, c, d\}$ a $\{p, q\}$-Diophantine quadruple.
 
 ## Depends on
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_additive_six_squares_eq_id
 ---
 
-# Multiplicative additive six squares eq id
+# Multiplicative functions additive on six paired squares and nonzero at $2$ are the identity
 
-If `f` is multiplicative, satisfies Equation (1) with `k = 3` and `f(2) ≠ 0`, then
-`f(n) = n` for all positive integers `n`.
+**Multiplicative functions additive on six paired squares and nonzero at $2$ are the
+identity.** Let $f$ be a complex-valued multiplicative function with $f(2) \ne 0$ such that
+
+$$f\Big(\sum_{j=1}^{3} (x_j^2 + y_j^2)\Big) = \sum_{j=1}^{3} f(x_j^2 + y_j^2)$$
+
+for all positive integers $x_1, x_2, x_3, y_1, y_2, y_3$. Then $f(n) = n$ for every positive
+integer $n$.
 
 ## Depends on
 

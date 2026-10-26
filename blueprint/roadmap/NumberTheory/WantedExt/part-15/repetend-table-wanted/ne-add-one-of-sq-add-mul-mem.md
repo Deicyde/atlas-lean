@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ne_add_one_of_sq_add_mul_mem
 ---
 
-# Ne add one of sq add mul mem
+# A constraint on $b^2 + un$ between $2$ and $n - 2$
 
-If `b_2 = b^2 + u n` with `u ∈ ℤ` and `2 ≤ b_2 ≤ n - 2`, then `b ≠ u + 1`. Stated for every
-natural `b` (the paper's `b` is a small base).
+**A constraint on $b^2 + un$ between $2$ and $n - 2$.** Let $n$ and $b$ be natural numbers and
+$u$ an integer, and put $b_2 = b^2 + un$. If $2 \le b_2 \le n - 2$, then $b \ne u + 1$.
+
+The paper states this for a small base $b$; here $b$ is any natural number.
 
 ## Depends on
 

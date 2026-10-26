@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitDivisors_properties
 ---
 
-# Square Split Divisors properties
+# Basic properties of the square-splitting divisor sets
 
-Theorem 1: `A(n)` is a divisor system (`1, n ∈ A(n)` and every element
-divides `n`), `A` is multiplicative in the strong sense
-(`A(mn) = A(m) A(n)` for coprime `m, n`), and
-`τ⋆(n) = |A(n)| = d(u(n)) d(v(n)) = 2^{ω(u(n))} d(v(n))`.
+**Basic properties of the square-splitting divisor sets.** Let
+$A(n) = \{u_1 v_1^2 : u_1 \mid u(n),\ v_1 \mid v(n)\}$ be the square-splitting divisor set of
+$n$, where $u(n)$ is the squarefree part of $n$ and $n = u(n) v(n)^2$ for $n \ge 1$. Then
+(i) for every $n \ge 1$, both $1$ and $n$ belong to $A(n)$, and every element of $A(n)$ divides
+$n$; (ii) for all coprime natural numbers $m$ and $n$, $A(mn) = \{ab : a \in A(m),\ b \in A(n)\}$;
+and (iii) for every $n \ge 1$, $|A(n)| = d(u(n))\, d(v(n))$ and $|A(n)| = 2^{\omega(u(n))} d(v(n))$,
+where $d(k)$ is the number of divisors of $k$ and $\omega(k)$ is the number of distinct prime
+factors of $k$.
 
 ## Depends on
 
-- [Square Split Divisors](square-split-divisors.md)
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Square-splitting divisors](square-split-divisors.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

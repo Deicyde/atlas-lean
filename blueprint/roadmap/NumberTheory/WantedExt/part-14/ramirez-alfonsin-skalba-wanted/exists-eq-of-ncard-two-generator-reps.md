@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_eq_of_ncard_twoGeneratorReps
 ---
 
-# Lemma 2
+# Normal form of a number with exactly $\ell$ representations
 
-**Lemma 2.** If `n = c x + d y` has exactly `ℓ` solutions `x, y ∈ ℕ`, then
-`n = (ℓ - 1) c d + c x₀ + d y₀` for some `0 ≤ x₀ ≤ d - 1` and `0 ≤ y₀ ≤ c - 1`.
+**Normal form of a number with exactly $\ell$ representations.** Let $c$ and $d$ be coprime
+positive integers, and let $n$ and $\ell$ be natural numbers such that the equation
+$n = cx + dy$ has exactly $\ell$ solutions $(x, y)$ in natural numbers. Then there are natural
+numbers $x_0 < d$ and $y_0 < c$ with $n = (\ell - 1)cd + cx_0 + dy_0$ in the integers.
 
-The identity is stated over `ℤ`, so `ℓ = 0` is included (then `ℓ - 1 = -1`). The
-paper's standing assumption `1 < c < d` is weakened to `0 < c`, `0 < d`.
+The identity is stated over the integers, so $\ell = 0$ is included (then $\ell - 1 = -1$). The
+paper's standing assumption $1 < c < d$ is weakened to $0 < c$, $0 < d$.
 
 ## Depends on
 

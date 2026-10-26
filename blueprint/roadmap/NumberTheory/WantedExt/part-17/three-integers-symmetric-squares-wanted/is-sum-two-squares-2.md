@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.IsSumTwoSquaresℤ
 ---
 
-# Is Sum Two Squaresℤ
+# Sums of two integer squares
 
-An integer is a sum of two integer squares.
+**Sums of two integer squares.** An integer $z$ is a sum of two squares when $z = x^2 + y^2$
+for some integers $x$ and $y$.
 
 ## Depends on
 

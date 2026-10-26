@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.bzQMZV_mul_eq_sum_quasiShuffle
 ---
 
-# Bz QMZV mul eq sum quasi Shuffle
+# Quasi-shuffle relations for Bradley–Zhao qMZVs
 
-`ζ_q^BZ` is an algebra homomorphism on `(𝔥⁰, ∗_BZ)`, where `∗_BZ` is the
-quasi-shuffle product induced by `z_{k₁} ⋄_BZ z_{k₂} = z_{k₁+k₂} + z_{k₁+k₂-1}`:
-for admissible `u, v`, `ζ_q^BZ(u ∗_BZ v) = ζ_q^BZ(u) ζ_q^BZ(v)`.
+**Quasi-shuffle relations for Bradley–Zhao qMZVs.** Identify an index $(k_1, \dots, k_r)$
+with the word $z_{k_1} \cdots z_{k_r}$, and let $u$ and $v$ be admissible indices: finite,
+possibly empty, sequences of positive integers whose first entry, if any, is at least $2$. Let
+$u \ast_{BZ} v$ be the quasi-shuffle product of $u$ and $v$ with letter product
+$z_a \diamond z_b = z_{a+b} + z_{a+b-1}$, a formal sum of indices. Then
+$\zeta_q^{BZ}(u)\,\zeta_q^{BZ}(v) = \zeta_q^{BZ}(u \ast_{BZ} v)$, where the Bradley–Zhao qMZV
+$\zeta_q^{BZ}$ is extended linearly to formal sums of indices.
 
 ## Depends on
 
-- [Bz QMZV](../part-02/bz-qmzv.md)
-- [Quasi Shuffle](quasi-shuffle.md)
+- [Bradley–Zhao q-multiple zeta values](../part-02/bz-qmzv.md)
+- [Quasi-shuffle product](quasi-shuffle.md)
 
 ## Sources
 

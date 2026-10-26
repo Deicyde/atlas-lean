@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.harmonicExtension_lt_log_add
 ---
 
-# Harmonic Extension lt log add
+# Upper bound $H(x) < \log x + \gamma + 1/(2x)$
 
-For `x ≥ 1`, `H(x) < log x + γ + 1/(2x)`.
+**Upper bound $H(x) < \log x + \gamma + 1/(2x)$.** With $H$ the real extension of the harmonic
+numbers, $\log$ the natural logarithm and $\gamma$ the Euler–Mascheroni constant, every real
+$x \ge 1$ satisfies $H(x) < \log x + \gamma + \frac{1}{2x}$.
 
 ## Depends on
 
-- [Harmonic Extension](harmonic-extension.md)
+- [The real extension of the harmonic numbers](harmonic-extension.md)
 
 ## Sources
 

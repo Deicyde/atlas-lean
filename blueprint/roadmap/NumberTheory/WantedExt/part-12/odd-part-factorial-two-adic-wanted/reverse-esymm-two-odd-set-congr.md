@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.reverseESymm_two_oddSet_congr
 ---
 
-# Reverse ESymm two odd Set congr
+# $\hat\sigma_2$ of the odd numbers below $2^e$
 
-For `e≥2`, the reversed elementary symmetric function `σ̂_2(S_e)` is
-congruent to `2^(e-2)` modulo `2^(e-1)`.  As in Lemma 18, the multiset and
-congruence are taken in `ℤ` rather than relying on truncated natural subtraction.
+**$\hat\sigma_2$ of the odd numbers below $2^e$.** Let $e \ge 2$ and let $S_e$ be the set of odd
+natural numbers $i$ with $1 \le i < 2^e$, regarded as a multiset of integers with $n$ elements,
+and write $\sigma_k$ for the elementary symmetric function of degree $k$. Then the reversed
+elementary symmetric function $\hat\sigma_2(S_e) = \sigma_{n-2}(S_e)$ satisfies
+$\hat\sigma_2(S_e) \equiv 2^{e-2} \pmod{2^{e-1}}$ in $\mathbb{Z}$.
 
 ## Depends on
 
-- [Integer Multiset](integer-multiset.md)
-- [Odd Below Two Pow](odd-below-two-pow.md)
-- [Reverse ESymm](reverse-esymm.md)
+- [Integer multiset of a finite set of naturals](integer-multiset.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
+- [Reversed elementary symmetric functions](reverse-esymm.md)
 
 ## Sources
 

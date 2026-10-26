@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.qMZVSpaceCirc_one_eq_span_okounkovQMZV
 ---
 
-# Q MZVSpace Circ one eq span okounkov QMZV
+# Okounkov qMZVs span $\mathcal{Z}^\circ_{q,1}$
 
-Okounkov qMZVs span `𝒵°_{q,1}`: `𝒵°_{q,1}` is the `ℚ`-span of the `ζ_q^Oko(k)` with every
-`kᵢ ≥ 2`.
+**Okounkov qMZVs span $\mathcal{Z}^\circ_{q,1}$.** The space $\mathcal{Z}^\circ_{q,1}$ equals
+the $\mathbb{Q}$-linear span of the Okounkov qMZVs $\zeta_q^{\mathrm{Oko}}(k_1, \dots, k_r)$ over
+all indices of length $r \ge 0$ with every $k_i \ge 2$.
 
 ## Depends on
 
-- [Okounkov QMZV](okounkov-qmzv.md)
-- [Q MZVSpace Circ](q-mzvspace-circ.md)
+- [Okounkov $q$-multiple zeta values](okounkov-qmzv.md)
+- [The spaces $\mathcal{Z}^\circ_{q,d}$](q-mzvspace-circ.md)
 
 ## Sources
 

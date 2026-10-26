@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.upperOrderAtInfinity
 ---
 
-# Upper Order At Infinity
+# Upper order at infinity
 
-The upper order at infinity `limsup_{q → ∞} -log ψ(q) / log q` of `1/ψ`, valued in
-`ℝ≥0∞`.
+**Upper order at infinity.** For a function $\psi$ from the natural numbers to the reals, the
+upper order at infinity of $\psi$ is the element
+
+$$\bar\tau_\psi = \limsup_{q \to \infty} \max\left(0, \frac{-\log \psi(q)}{\log q}\right)$$
+
+of $[0, \infty]$.
 
 ## Depends on
 

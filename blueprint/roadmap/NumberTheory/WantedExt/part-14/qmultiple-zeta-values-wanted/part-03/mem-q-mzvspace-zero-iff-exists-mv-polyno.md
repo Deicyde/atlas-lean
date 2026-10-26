@@ -14,8 +14,8 @@ written over `1 ≤ r ≤ N`, which is exact because `𝒫_r(N)` is empty for `r
 
 ## Depends on
 
-- [Q MZVSpace](../part-02/q-mzvspace.md)
-- [Stanley Partitions](../part-02/stanley-partitions.md)
+- [Spaces of general qMZVs](../part-02/q-mzvspace.md)
+- [Partitions in Stanley coordinates](../part-02/stanley-partitions.md)
 
 ## Sources
 

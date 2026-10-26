@@ -5,9 +5,10 @@ statement: formalized
 lean: WantedExt.NumberTheory.Polymath8b.ElliottHalberstam
 ---
 
-# Elliott Halberstam
+# Elliott–Halberstam conjecture (dyadic form)
 
-The complete dyadic EH assumption below its excluded endpoint one.
+**Elliott–Halberstam conjecture (dyadic form).** The Elliott–Halberstam estimate at level
+$\theta$ holds for every real number $\theta$ with $0 < \theta < 1$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Elliott Halberstam At](elliott-halberstam-at.md)
+- [Elliott–Halberstam estimate at level $\theta$](elliott-halberstam-at.md)
 
 ## Sources
 

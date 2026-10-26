@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.modularProductSum_two_three_one
 ---
 
-# Modular Product Sum two three one
+# The modular product sum $S_2(3, 1)$
 
-Characteristic value: `S_2(3, 1) = 1 · 1 + 2 · 2 = 5`.
+**The modular product sum $S_2(3, 1)$.** The modular product sum satisfies $S_2(3, 1) = 5$:
+the pairs $(a_1, a_2) \in \{1, 2, 3\}^2$ of numbers coprime to $3$ with $a_1 a_2 \equiv 1 \pmod 3$
+are $(1, 1)$ and $(2, 2)$, and $1 \cdot 1 + 2 \cdot 2 = 5$.
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

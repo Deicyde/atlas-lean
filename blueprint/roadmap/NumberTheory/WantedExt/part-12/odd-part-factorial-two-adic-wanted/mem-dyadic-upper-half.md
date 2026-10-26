@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_dyadicUpperHalf
 ---
 
-# Mem dyadic Upper Half
+# Membership in the dyadic upper half
 
-Membership in `dyadicUpperHalf e` is precisely the conjunction
-`2^(e-1)<i ∧ i≤2^e`, making the two inequalities defining `I_e` explicit.
+**Membership in the dyadic upper half.** For natural numbers $e$ and $i$, $i$ belongs to the
+dyadic upper half $I_e$ if and only if $2^{e-1} < i$ and $i \le 2^e$, where $e - 1$ is truncated
+subtraction.
 
 ## Depends on
 
-- [Dyadic Upper Half](dyadic-upper-half.md)
+- [Dyadic upper half interval](dyadic-upper-half.md)
 
 ## Sources
 

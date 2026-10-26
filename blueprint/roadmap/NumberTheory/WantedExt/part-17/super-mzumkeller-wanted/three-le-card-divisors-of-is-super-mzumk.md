@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.three_le_card_divisors_of_isSuperMZumkeller
 ---
 
-# Theorem 1
+# Super-m-Zumkeller numbers $n \ge 2$ have at least three divisors
 
-**Theorem 1**: a super-m-Zumkeller number `n ≥ 2` satisfies
-`τ(n) ≥ 3`.
+**Super-m-Zumkeller numbers $n \ge 2$ have at least three divisors.** If a natural number
+$n \ge 2$ is super-m-Zumkeller, then the number $\tau(n)$ of positive divisors of $n$ satisfies
+$\tau(n) \ge 3$.
 
 ## Depends on
 
-- [Is Super MZumkeller](is-super-mzumkeller.md)
+- [Super-m-Zumkeller numbers](is-super-mzumkeller.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.maxAverageIndices_one
 ---
 
-# Max Average Indices one
+# Maximal-average indices for $m = 1$
 
-For `m = 1` the only index is `1`.
+**Maximal-average indices for $m = 1$.** Let $\eta = (e_1, e_2, \dots)$ be a sequence of
+nonnegative integers and $A_i = (e_1 + \dots + e_i)/i$. For $m = 1$, the set of indices
+$1 \le i \le m$ at which $A_i$ is maximal among $A_1, \dots, A_m$ is $\{1\}$.
 
 ## Depends on
 
-- [Max Average Indices](max-average-indices.md)
+- [Indices of maximal average](max-average-indices.md)
 
 ## Proof depends on
 

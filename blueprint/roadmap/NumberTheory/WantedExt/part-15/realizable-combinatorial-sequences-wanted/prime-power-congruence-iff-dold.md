@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_power_congruence_iff_dold
 ---
 
-# Prime power congruence iff dold
+# Dold congruences via prime-power congruences
 
-For an integer sequence `(V(n))_{n ≥ 1}`, the congruences
-`V(n p^m) ≡ V(n p^{m-1}) (mod p^m)` for all `n, m ≥ 1` and primes `p` hold if and only if `V`
-satisfies the Dold condition `(μ * V)(n) ≡ 0 (mod n)` for all `n ≥ 1`.
+**Dold congruences via prime-power congruences.** Let $(V(n))_{n \ge 1}$ be a sequence of
+integers and let $\mu$ denote the Möbius function. Then
+$V(n p^m) \equiv V(n p^{m-1}) \pmod{p^m}$ holds for all integers $n, m \ge 1$ and all primes $p$
+if and only if $n$ divides $\sum_{d \mid n} \mu(n/d) V(d)$ for every integer $n \ge 1$.
 
 ## Depends on
 

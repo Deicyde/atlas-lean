@@ -5,13 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_pow_add_eq
 ---
 
-# Sum pow mul pow add eq
+# Product formula for homogeneous sums of powers
 
-Lemma 1: for `a, b` in a commutative ring (the values `u(n), v(n)`) and `τ, ξ ≥ 0`,
-`∑_{j=0}^{τ+ξ} a^j b^{τ+ξ-j} = (∑_{j=0}^{τ} a^j b^{τ-j}) (∑_{i=0}^{ξ} a^i b^{ξ-i})
-  - a b (∑_{j=0}^{τ-1} a^j b^{τ-1-j}) (∑_{i=0}^{ξ-1} a^i b^{ξ-1-i})`, void sums being zero.
+**Product formula for homogeneous sums of powers.** Let $R$ be a commutative ring, let
+$a, b \in R$ and let $\tau, \xi$ be natural numbers. Then
 
-Stated for arbitrary values in a commutative ring instead of `u(n), v(n) ∈ ℂ`.
+$$
+\sum_{j=0}^{\tau+\xi} a^j b^{\tau+\xi-j} =
+\left(\sum_{j=0}^{\tau} a^j b^{\tau-j}\right) \left(\sum_{i=0}^{\xi} a^i b^{\xi-i}\right) -
+ab \left(\sum_{j=0}^{\tau-1} a^j b^{\tau-1-j}\right)
+\left(\sum_{i=0}^{\xi-1} a^i b^{\xi-1-i}\right),
+$$
+
+where a sum with upper limit $-1$ is zero.
+
+In the source, $a$ and $b$ are the values $u(n)$ and $v(n)$ of complex arithmetic functions.
 
 ## Depends on
 

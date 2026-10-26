@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.bronzeCompanionFirst_add_two
 ---
 
-# Bronze Companion First add two
+# Recurrence for the companion bronze numbers of the first type
 
-`C_{n+2} = 3C_{n+1} + C_n`.
+**Recurrence for the companion bronze numbers of the first type.** For every natural number
+$n$, the companion bronze numbers $C_n$ of the first type satisfy $C_{n+2} = 3C_{n+1} + C_n$.
 
 ## Depends on
 
-- [Bronze Companion First](bronze-companion-first.md)
+- [Companion bronze numbers of the first type](bronze-companion-first.md)
 
 ## Proof depends on
 
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas U bronze Lucas Params add two](lucas-u-bronze-lucas-params-add-two.md)
+- [Recurrence of the bronze numbers](lucas-u-bronze-lucas-params-add-two.md)
 
 ## Sources
 

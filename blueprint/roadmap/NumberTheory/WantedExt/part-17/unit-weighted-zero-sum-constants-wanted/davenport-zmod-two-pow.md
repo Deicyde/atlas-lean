@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.davenport_zmod_two_pow
 ---
 
-# Davenport zmod two pow
+# Davenport constant of $\mathbb{Z}_2^a$
 
-Theorem 4.1: `D(ℤ_2^a) = a + 1`. Stated for every `a` (the paper: `a` positive).
+**Davenport constant of $\mathbb{Z}_2^a$.** Let $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$. For
+every natural number $a$, the least positive integer $k$ such that every sequence of $k$ elements
+of the group $\mathbb{Z}_2^a$ has a nonempty subsequence with sum zero is $a + 1$; that is, the
+Davenport constant of $\mathbb{Z}_2^a$ is $a + 1$.
+
+The paper states this for positive $a$; for $a = 0$ both sides equal $1$.
 
 ## Depends on
 

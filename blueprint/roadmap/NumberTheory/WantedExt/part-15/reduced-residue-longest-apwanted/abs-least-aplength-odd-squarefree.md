@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength_odd_squarefree
 ---
 
-# Abs Least APLength odd squarefree
+# Longest progressions of absolute least residues: odd squarefree composite moduli
 
-Theorem 1, odd squarefree non-prime `n`: with `P = gpf(n)` and `d = n / P`,
-`g(n) = ⌊P - (P + 1) / (2d)⌋`.
+**Longest progressions of absolute least residues: odd squarefree composite moduli.** Let
+$n > 1$ be an odd squarefree natural number that is not prime, let $P$ be its largest prime
+factor and $d = n / P$, and let $g(n)$ be the length of the longest arithmetic progression in the
+absolute least reduced residue system modulo $n$. Then
+$g(n) = \lfloor P - (P + 1)/(2d) \rfloor$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Sources
 

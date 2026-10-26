@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.qCollatz_zero
 ---
 
-# Q Collatz zero
+# Zero is a fixed point of the q-analog 3x+1 map
 
-`T_{A,B}(0) = 0`.
+**Zero is a fixed point of the q-analog 3x+1 map.** For all power series
+$A, B \in \mathbb{F}_2[[q]]$, the $q$-analog $3x+1$ map satisfies $T_{A,B}(0) = 0$.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
 
 ## Proof depends on
 
-- [Q Collatz X mul](q-collatz-x-mul.md)
+- [The q-analog 3x+1 map on multiples of $q$](q-collatz-x-mul.md)
 
 ## Sources
 

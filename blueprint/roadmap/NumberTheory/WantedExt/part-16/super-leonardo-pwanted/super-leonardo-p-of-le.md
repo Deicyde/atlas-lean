@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.superLeonardoP_of_le
 ---
 
-# Super Leonardo P of le
+# Initial values of the supergeneralized Leonardo p-numbers
 
-The initial values: `𝓛_{p,k,x}(n) = x_n` for `n ≤ p`.
+**Initial values of the supergeneralized Leonardo p-numbers.** For all natural numbers $p$,
+$k$ and $n$ with $n \le p$ and every real sequence $x$, the supergeneralized Leonardo $p$-number
+$\mathcal{L}_{p,k,x}(n)$ equals $x_n$.
 
 ## Depends on
 
-- [Super Leonardo P](super-leonardo-p.md)
+- [Supergeneralized Leonardo p-numbers](super-leonardo-p.md)
 
 ## Sources
 

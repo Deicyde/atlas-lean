@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.mallowsLabel
 ---
 
-# Mallows Label
+# Labels of the Mallows tree
 
-The label (a pair of fractions) of the Mallows-tree vertex reached by the path `w`.
+**Labels of the Mallows tree.** For a word $w$ over the letters $L$, $M$, $R$, the label of
+the Mallows-tree vertex reached from the root by the path $w$ is the pair
+$\langle p, q\rangle$ of fractions that Mallows' insertion rule inserts in the gap $(a, b)$ of
+that vertex.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
+- [The Mallows alphabet](mallows-letter.md)
 
 ## Proof depends on
 
-- [Mallows Insert](mallows-insert.md)
-- [Mallows Node](mallows-node.md)
+- [Mallows' insertion rule](mallows-insert.md)
+- [Gaps of the Mallows tree](mallows-node.md)
 
 ## Sources
 

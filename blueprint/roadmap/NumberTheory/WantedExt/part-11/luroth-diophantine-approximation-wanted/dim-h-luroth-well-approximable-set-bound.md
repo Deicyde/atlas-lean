@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.dimH_lurothWellApproximableSet_bounds
 ---
 
-# Dim H luroth Well Approximable Set bounds
+# Dimension bounds for Lüroth well approximable sets
 
-For `ψ : ℕ → (0, 1]`, `1/(1 + τ̄_ψ) ≤ dim L(ψ) ≤ 1/(1 + τ_ψ)` (in `ℝ≥0∞`, with
-`1/∞ = 0`).
+**Dimension bounds for Lüroth well approximable sets.** Let $\psi$ be a function from the
+natural numbers to $(0, 1]$. Let $L(\psi)$ be the set of $x \in (0, 1]$ such that
+$|x - P_n(x)/Q_n(x)| < \psi(Q_n(x))/Q_n(x)$ for infinitely many $n$, where $P_n(x)/Q_n(x)$ is the
+$n$-th Lüroth convergent of $x$ and $Q_n(x)$ its Lüroth denominator. Let
+$\tau_\psi = \liminf_{q \to \infty} (-\log \psi(q) / \log q)$ and
+$\bar\tau_\psi = \limsup_{q \to \infty} (-\log \psi(q) / \log q)$, taken in $[0, \infty]$, be the
+lower and upper orders at infinity of $1/\psi$. Then
+$1/(1 + \bar\tau_\psi) \le \dim_H L(\psi) \le 1/(1 + \tau_\psi)$, where $1/\infty = 0$.
 
 ## Depends on
 
-- [Lower Order At Infinity](lower-order-at-infinity.md)
-- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
-- [Upper Order At Infinity](upper-order-at-infinity.md)
+- [Lower order at infinity](lower-order-at-infinity.md)
+- [Lüroth well approximable numbers](luroth-well-approximable-set.md)
+- [Upper order at infinity](upper-order-at-infinity.md)
 
 ## Sources
 

@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.shiftedFloorResidueCount_one_asymptotic_series
 ---
 
-# Shifted Floor Residue Count one asymptotic series
+# Series asymptotics for the shifted floor residue count with $r = 1$
 
-Corollary 35: for `m ≥ 2` and `α, ν ∈ [0, 1)`, uniformly over `n` with
-`nα ≥ ν`, `𝓝_{n,α,ν,1,m} = -αn/(1-α) +
-n ∑_{i ≥ 0} (1/(1+im-α) - 1/(2+im-α)) + O(√n)`.
+**Series asymptotics for the shifted floor residue count with $r = 1$.** Let $m \ge 2$ be a
+natural number and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$ and
+$0 \le \nu < 1$. For a natural number $n$ let $\mathcal N_{n,\alpha,\nu,1,m}$ be the number of
+integers $k$ with $1 \le k \le n$ such that
+$\lfloor (n - \nu)/k + \alpha \rfloor \equiv 1 \pmod m$, and put
+
+$$S = \sum_{i \ge 0} \Bigl( \frac{1}{1 + im - \alpha} - \frac{1}{2 + im - \alpha} \Bigr).$$
+
+Then there is a constant $C$ such that
+
+$$\Bigl| \mathcal N_{n,\alpha,\nu,1,m} - \Bigl( -\frac{\alpha n}{1 - \alpha} + nS \Bigr) \Bigr| \le
+C \sqrt n$$
+
+for every natural number $n \ge 1$ with $\nu \le n\alpha$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

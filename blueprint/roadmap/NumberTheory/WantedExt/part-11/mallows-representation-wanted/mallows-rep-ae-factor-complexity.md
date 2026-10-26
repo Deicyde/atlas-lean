@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_ae_factorComplexity
 ---
 
-# Mallows Rep ae factor Complexity
+# Factor complexity of almost every Mallows representation
 
-For almost every irrational `α ∈ (0, 1)` the factor complexity of `M(α)` is `ρ(n) = 3^n`
-(stated for all `n`; `n = 0` gives `1`).
+**Factor complexity of almost every Mallows representation.** For almost every irrational
+$\alpha \in (0, 1)$, with respect to Lebesgue measure, the factor complexity of the Mallows
+representation $M(\alpha)$ satisfies $p_{M(\alpha)}(n) = 3^n$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 - [Factor complexity of an infinite word](../../../../Combinatorics/MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

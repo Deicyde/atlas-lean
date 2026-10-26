@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.round_div_sequence_card_ge
 ---
 
-# Round div sequence card ge
+# Counting large terms of the rounded quotient sequence
 
-Lemma 13: in the rounding sequence `⌊n/1 + 1/2⌋, …, ⌊n/n + 1/2⌋`, all
-`n` terms are at least `1`, and for `k ≥ 2` exactly `⌊2n/(2k-1)⌋` terms are
-at least `k`.
+**Counting large terms of the rounded quotient sequence.** Let $n$ be a natural number.
+Every $d$ with $1 \le d \le n$ satisfies $\lfloor n/d + 1/2 \rfloor \ge 1$, and for every
+integer $k \ge 2$ the number of $d$ with $1 \le d \le n$ and $\lfloor n/d + 1/2 \rfloor \ge k$
+is $\lfloor 2n/(2k-1) \rfloor$.
 
 ## Depends on
 

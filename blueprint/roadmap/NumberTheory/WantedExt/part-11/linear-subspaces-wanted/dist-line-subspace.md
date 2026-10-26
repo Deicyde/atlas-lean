@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLineSubspace
 ---
 
-# Dist Line Subspace
+# Distance from a line to a subspace
 
-Then, if `x = x¹` is a line and `y = yᵏ` a k-dimensional subspace, we set
-`d(x¹,yᵏ) = min { d(x¹, y¹) : y¹ ≤ yᵏ }`.
+**Distance from a line to a subspace.** For a line $x$ through the origin in $\mathbb{R}^d$
+and a subspace $y$ of $\mathbb{R}^d$, the distance $\operatorname{dist}(x, y)$ is the infimum,
+over all lines $y'$ contained in $y$, of the distance $\operatorname{dist}(x, y')$ between the
+lines $x$ and $y'$. When $y = 0$ there is no such line and the value is $0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dist Lines](dist-lines.md)
+- [Distance between lines](dist-lines.md)
 
 ## Sources
 

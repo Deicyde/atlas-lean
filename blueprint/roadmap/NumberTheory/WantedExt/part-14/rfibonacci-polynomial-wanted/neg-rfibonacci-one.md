@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negRFibonacci_one
 ---
 
-# Neg RFibonacci one
+# The first (-r)-Fibonacci polynomial
 
-`U^{(-r)}_1 = 1`.
+**The first (-r)-Fibonacci polynomial.** For every commutative ring $A$, natural number
+$r$, $x \in A$ and unit $y$ of $A$, the $(-r)$-Fibonacci polynomial satisfies
+$U^{(-r)}_1(x, y) = 1$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

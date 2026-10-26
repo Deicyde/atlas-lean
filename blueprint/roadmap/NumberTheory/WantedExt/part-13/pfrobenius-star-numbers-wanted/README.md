@@ -4,13 +4,13 @@ navigation: module
 
 # PFrobenius Star Numbers
 
-- [Star](star.md)
-- [Star Rep Count](star-rep-count.md)
-- [Is PFrobenius Star Number](is-pfrobenius-star-number.md)
-- [P Sylvester Star Count](p-sylvester-star-count.md)
-- [Gcd star succ succ](gcd-star-succ-succ.md)
-- [Exists is PFrobenius Number star of le nine](exists-is-pfrobenius-number-star-of-le-n.md)
-- [Exists is PFrobenius Number star of ten le](exists-is-pfrobenius-number-star-of-ten.md)
-- [P Sylvester Count zero star](p-sylvester-count-zero-star.md)
-- [P Sylvester Count one star](p-sylvester-count-one-star.md)
-- [P Sylvester Count two star](p-sylvester-count-two-star.md)
+- [Star numbers](star.md)
+- [Representation count for three consecutive star numbers](star-rep-count.md)
+- [$p$-Frobenius number of three consecutive star numbers](is-pfrobenius-star-number.md)
+- [$p$-Sylvester number of three consecutive star numbers](p-sylvester-star-count.md)
+- [Three consecutive star numbers are relatively prime](gcd-star-succ-succ.md)
+- [Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$](exists-is-pfrobenius-number-star-of-le-n.md)
+- [Frobenius numbers of three consecutive star numbers for $n \ge 10$](exists-is-pfrobenius-number-star-of-ten.md)
+- [$0$-Sylvester number of three consecutive star numbers](p-sylvester-count-zero-star.md)
+- [$1$-Sylvester number of three consecutive star numbers](p-sylvester-count-one-star.md)
+- [$2$-Sylvester number of three consecutive star numbers](p-sylvester-count-two-star.md)

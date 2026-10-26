@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsSierpinskiNumber
 ---
 
-# Is Sierpinski Number
+# Sierpiński number
 
-A Sierpiński number: an odd `k` such that `k·2^n + 1` is composite for every `n ≥ 1`.
+**Sierpiński number.** A natural number $k$ is a Sierpiński number if $k$ is odd and,
+for every integer $n \ge 1$, the number $k \cdot 2^n + 1$ is not prime.
 
 ## Depends on
 

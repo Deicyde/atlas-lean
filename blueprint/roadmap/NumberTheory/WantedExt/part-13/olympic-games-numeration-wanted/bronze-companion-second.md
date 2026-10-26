@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.bronzeCompanionSecond
 ---
 
-# Bronze Companion Second
+# Companion bronze numbers of the second type
 
-The companion bronze numbers of the second type, `D_n = B_{n+1} - B_n = 2B_n + B_{n-1}`
-(`D_0 = 1`, `D_1 = 2`, `D_{n+1} = 3D_n + D_{n-1}`).
+**Companion bronze numbers of the second type.** Let $B_n$ denote the bronze numbers, the
+Lucas sequence $U(3, -1)$: $B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 3B_{n+1} + B_n$. For every
+natural number $n$, the $n$-th companion bronze number of the second type is the integer
+$D_n = B_{n+1} - B_n$.
+
+Thus $D_0 = 1$, $D_1 = 2$, $D_{n+2} = 3D_{n+1} + D_n$, and $D_n = 2B_n + B_{n-1}$ for $n \ge 1$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources

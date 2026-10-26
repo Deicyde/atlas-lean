@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_repCount_of_half_lt
 ---
 
-# Prime dvd rep Count of half lt
+# A prime between $p/2$ and $p$ divides the representation counts of $p$
 
-For an odd prime `p` and a prime `q` with `p/2 < q < p`: `r_q(p) ≡ 0 (mod q)` and
-`t_q(p) ≡ 0 (mod q)`.
+**A prime between $p/2$ and $p$ divides the representation counts of $p$.** For integers
+$k, n \ge 1$, let $r_k(n)$ be the number of representations of $n$ as an ordered sum of $k$ squares
+of integers and $t_k(n)$ the number of representations of $n$ as an ordered sum of $k$ triangular
+numbers $m(m+1)/2$ with $m \ge 0$. Let $p$ be an odd prime and $\ell$ a prime with
+$p/2 < \ell < p$. Then $\ell$ divides both $r_\ell(p)$ and $t_\ell(p)$.
 
 ## Depends on
 
-- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Representation numbers for sums of squares](sum-of-squares-rep-count.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
 
 ## Sources
 

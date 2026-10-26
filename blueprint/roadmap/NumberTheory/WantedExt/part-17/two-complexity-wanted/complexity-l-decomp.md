@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_decomp
 ---
 
-# Proposition 2
+# Adding a small multiple of $l$ to a multiple of $l^2$
 
-**Proposition 2**: for `l > 1`, writing a positive
-multiple `n` of `l` uniquely as `n = b + a * l` with `b` a
-positive multiple of `l^2` and `0 ≤ a ≤ l - 1`, one has
-`‖n‖_l = ‖b‖_l + a`.
+**Adding a small multiple of $l$ to a multiple of $l^2$.** Write $\|n\|_l$ for the
+$l$-complexity of $n$. Let $l > 1$, let $b \ge 1$ be a multiple of $l^2$, let $a$ be a natural
+number with $a \le l - 1$, and let $n = b + a l$. Then $\|n\|_l = \|b\|_l + a$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

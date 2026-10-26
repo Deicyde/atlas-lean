@@ -5,22 +5,26 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RademacherLILConstantWanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# No iterated-logarithm constant for Rademacher multiplicative functions
 
-Resolved false: Durkan and Pearce-Crump (arXiv:2607.29429, 2026) and independently Verreault
-(arXiv:2608.21354, 2026) prove that a Rademacher random multiplicative function a.s. has
-|Σ_{n≤x} f(n)| ≪ √x (log log x)^{1/4+ε}, so the normalized limsup is a.s. 0 and no constant c>0
-works. Source: B. Durkan, A. Pearce-Crump, A sharp almost sure upper bound for partial sums of
-random multiplicative functions, arXiv preprint (2026), arXiv:2607.29429,
-https://arxiv.org/abs/2607.29429; W. Verreault, Almost sure upper bound for sums of random
-multiplicative functions and critical chaos, arXiv preprint (2026), arXiv:2608.21354,
-https://arxiv.org/abs/2608.21354. Moved from
-`OpenConjectures/NumberTheory/RademacherLILConstant`.
+**No iterated-logarithm constant for Rademacher multiplicative functions.** The Rademacher
+LIL constant conjecture is false: there is no real constant $c > 0$ such that, for every
+probability space $(\Omega, \mu)$ and every family $(X_p)_p$ of independent, measurable random
+signs indexed by the primes, each uniform on $\{-1, 1\}$, for $\mu$-almost every $\omega$ the
+limit superior as $N \to \infty$ of $S_N(\omega) / \sqrt{N \log \log N}$ equals $c$. Here
+$S_N(\omega) = \sum_{m=1}^{N} f_\omega(m)$, where $f_\omega$ is the Rademacher random
+multiplicative function: $f_\omega(m) = \prod_{p \mid m} X_p(\omega)$ for squarefree $m$ and
+$f_\omega(m) = 0$ otherwise.
+
+Durkan and Pearce-Crump, and independently Verreault, proved that for every $\varepsilon > 0$,
+almost surely $|\sum_{n \le x} f_\omega(n)| \ll \sqrt{x} (\log \log x)^{1/4 + \varepsilon}$ as
+$x \to \infty$, so the normalized limit superior is almost surely $0$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Rademacher LIL constant conjecture](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RademacherLILConstantWanted](../../../../../sources/v2/WantedExt.md)
+- B. Durkan, A. Pearce-Crump, A sharp almost sure upper bound for partial sums of random multiplicative functions, arXiv preprint (2026), arXiv:2607.29429, https://arxiv.org/abs/2607.29429; W. Verreault, Almost sure upper bound for sums of random multiplicative functions and critical chaos, arXiv preprint (2026), arXiv:2608.21354, https://arxiv.org/abs/2608.21354. Moved from `OpenConjectures/NumberTheory/RademacherLILConstant`.

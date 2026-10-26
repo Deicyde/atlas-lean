@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ShafarevichRelationRankWanted.NumberTheory.relationRank
 ---
 
-# Relation Rank
+# Relation rank of a topological group
 
-The relation rank `r(G) = dim_{𝔽_p} H²(G; 𝔽_p)`, via degree-`2` continuous
-cohomology with trivial `ZMod p` coefficients.
+**Relation rank of a topological group.** For a prime $p$ and a topological group $G$, the
+relation rank $r(G)$ is the dimension over $\mathbb{F}_p$ of the continuous cohomology group
+$H^2(G, \mathbb{F}_p)$ of degree $2$, with coefficients in the trivial representation of $G$ on
+$\mathbb{F}_p$. If this space is infinite-dimensional, then $r(G) = 0$ by convention.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trivial ZModp Rep](trivial-zmodp-rep.md)
+- [Trivial representation on $\mathbb{Z}/p\mathbb{Z}$](trivial-zmodp-rep.md)
 
 ## Sources
 

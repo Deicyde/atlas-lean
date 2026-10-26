@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisConjecturesWanted.size_choose_two_pow
 ---
 
-# Theorem 6
+# Bit length of $\binom{2^n}{2^{n-1}}$
 
-**Theorem 6**: the number of binary bits required to
-represent `C(2^n, 2^{n-1})` is `2^n - ⌊n / 2⌋`.
+**Bit length of $\binom{2^n}{2^{n-1}}$.** For every integer $n \ge 1$, the binary expansion of
+the binomial coefficient $\binom{2^n}{2^{n-1}}$ has exactly $2^n - \lfloor n/2 \rfloor$ digits.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lucasTypeSeq_length
 ---
 
-# Lucas Type Seq length
+# Length of a Lucas-type list
 
-`lucasTypeSeq p a₀ c n` has `n + 1` entries.
+**Length of a Lucas-type list.** For every type $\alpha$ with a zero, a one and an addition,
+every natural number $p$, all $a_0, c \in \alpha$ and every natural number $n$, the Lucas-type
+list with parameters $p$, $a_0$, $c$ ending at index $n$ has exactly $n + 1$ entries.
 
 ## Depends on
 
-- [Lucas Type Seq](lucas-type-seq.md)
+- [Lucas-type recurrence lists](lucas-type-seq.md)
 
 ## Sources
 

@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_one_div_odd_pow
 ---
 
-# Has Sum one div odd pow
+# Zeta series over odd denominators
 
-The odd-denominator zeta series: for integers `k > 1`,
-`∑_{n ≥ 1} 1/(2n - 1)^k = (1 - 2^{-k}) ζ(k)`, stated over `ℂ` with Mathlib's `riemannZeta`
-and the index shifted to `n ≥ 0` (`2n + 1`). The source writes `k > 1`; it uses `k` as an
-integer throughout, so `k` is a natural number with `2 ≤ k` here.
+**Zeta series over odd denominators.** Let $\zeta$ be the Riemann zeta function. For every
+natural number $k \ge 2$, the series $\sum_{n \ge 0} 1/(2n+1)^k$ converges in $\mathbb{C}$ and
+
+$$\sum_{n=0}^{\infty} \frac{1}{(2n+1)^k} = \Bigl(1 - \frac{1}{2^k}\Bigr) \zeta(k).$$
+
+The source writes this as $\sum_{n \ge 1} 1/(2n-1)^k = (1 - 2^{-k}) \zeta(k)$ for integers
+$k > 1$.
 
 ## Depends on
 

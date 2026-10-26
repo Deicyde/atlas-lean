@@ -22,7 +22,7 @@ the hyper Leonardo $p$-number.
 
 ## Depends on
 
-- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](../../part-11/leonardo-pwanted/leonardo-pk.md)
 - [Hyper Leonardo $p$-numbers](hyper-leonardo-p.md)
 - [Incomplete Leonardo p-numbers](incomplete-leonardo-p.md)
 

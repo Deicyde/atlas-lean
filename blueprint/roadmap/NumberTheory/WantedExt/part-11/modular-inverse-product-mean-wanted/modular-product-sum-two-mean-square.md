@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.modularProductSum_two_mean_square
 ---
 
-# Modular Product Sum two mean square
+# Mean square of the error in the modular product sum $S_2(n, m)$
 
-Theorem 4, mean square: for every `ε > 0` there is `C` such that for every odd `n ≥ 3`,
-`|∑_{1 ≤ m ≤ n, (m, n) = 1} (S_2(n, m) - n² φ(n) / 4)² - (5 C_n / 144) (n φ(n))³|
-≤ C n^{5 + ε}`, with `C_n` the Xu-Zhang constant of equation (4).
+**Mean square of the error in the modular product sum $S_2(n, m)$.** Let $\varphi$ be Euler's
+totient function, $S_2(n, m)$ the modular product sum and $C_n$ the Xu–Zhang constant of $n$.
+For every real $\varepsilon > 0$ there is a real constant $C$ such that for every odd natural
+number $n \ge 3$,
+
+$$\left| \sum_{1 \le m \le n,\ \gcd(m, n) = 1}
+\left( S_2(n, m) - \frac{n^2 \varphi(n)}{4} \right)^2 -
+\frac{5 C_n}{144} \bigl(n \varphi(n)\bigr)^3 \right| \le C n^{5 + \varepsilon}.$$
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
-- [Xu Zhang Constant](xu-zhang-constant.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
+- [Xu–Zhang constant](xu-zhang-constant.md)
 
 ## Sources
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.spoofLehmer_base_not_modEq_one_base
 ---
 
-# Spoof Lehmer base not mod Eq one base
+# Bases of a nontrivial spoof Lehmer factorization are not $1$ modulo one another
 
-If `F = x_1 ⋯ x_r` is a nontrivial spoof Lehmer factorization, then `x_i ≢ 1 (mod x_j)` for
-all `i, j` (the record's range `1 ≤ i, j ≤ n` is the paper's typo for `r`).
+**Bases of a nontrivial spoof Lehmer factorization are not $1$ modulo one another.** Let
+$x_1, \dots, x_r$ be natural numbers and let $F = x_1 \cdots x_r$ be the spoof factorization with
+these bases, all with exponent $1$. If $F$ is a nontrivial spoof $k$-Lehmer factorization for some
+integer $k$, then $x_i \not\equiv 1 \pmod{x_j}$ for all $i$ and $j$, including $i = j$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
-- [Spoof Of Bases](spoof-of-bases.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
+- [Factorization with all exponents one](spoof-of-bases.md)
 
 ## Sources
 

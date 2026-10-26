@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.modularProductSum_one_five_three
 ---
 
-# Modular Product Sum one five three
+# The modular product sum $S_1(5, 3)$
 
-Characteristic value: `S_1(5, 3) = 3` (the only `a ∈ {1, …, 5}` with `a ≡ 3 (mod 5)`).
+**The modular product sum $S_1(5, 3)$.** The modular product sum satisfies $S_1(5, 3) = 3$:
+the only $a \in \{1, \dots, 5\}$ coprime to $5$ with $a \equiv 3 \pmod 5$ is $a = 3$.
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

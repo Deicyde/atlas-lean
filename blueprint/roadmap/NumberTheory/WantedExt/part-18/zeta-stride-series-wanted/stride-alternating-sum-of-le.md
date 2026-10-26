@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.strideAlternatingSum_of_le
 ---
 
-# Stride Alternating Sum of le
+# Alternating stride sum with a single term
 
-For `1 ≤ n ≤ q` the alternating stride sum has the single term `n^{-t}`.
+**Alternating stride sum with a single term.** For natural numbers $q$, $t$ and $n$ with
+$1 \le n \le q$, the alternating stride sum satisfies $S_{q,t}(n) = 1/n^t$.
 
 ## Depends on
 
-- [Stride Alternating Sum](stride-alternating-sum.md)
+- [Alternating stride sum](stride-alternating-sum.md)
 
 ## Sources
 

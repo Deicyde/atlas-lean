@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsSignedPowTwoSum
 ---
 
-# Is Signed Pow Two Sum
+# Signed power-of-two sums
 
-The integers of the form `∑_{j=s}^{t} λⱼ * 2^j` with each coefficient
-`λⱼ ∈ {-1, m}`.
+**Signed power-of-two sums.** For natural numbers $m$, $s$ and $t$, an integer $n$ is a signed
+power-of-two sum with coefficients in $\{-1, m\}$ over the range $s \le j \le t$ if
+$n = \sum_{j=s}^{t} \lambda_j 2^j$ for some integers $\lambda_j$ with every
+$\lambda_j \in \{-1, m\}$.
 
 ## Depends on
 

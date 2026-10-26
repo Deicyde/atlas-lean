@@ -4,6 +4,6 @@ navigation: module
 
 # Oeis A022030
 
-- [A](a.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [The sequence OEIS A022030](a.md)
+- [Barker's linear recurrence for A022030](conjecture.md)
+- [Barker's linear recurrence for A022030 holds](conjecture-holds.md)

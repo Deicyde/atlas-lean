@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_integral_sinc_pow
 ---
 
-# Tendsto integral sinc pow
+# Integrals of powers of $\sin x / x$
 
-Theorem 1 (Equation (1)): for every integer `k ≥ 1`,
-`I_k = (1/π) ∫_0^∞ (sin x / x)^k dx = (1 / (2^k (k-1)!)) ∑_{i=0}^{⌊k/2⌋} (-1)^i C(k,i) (k - 2i)^(k-1)`.
-The integral is taken as the improper limit `lim_{R → ∞} ∫_0^R` (for `k = 1` it converges only
-conditionally), so the statement is `∫_0^R (sin x / x)^k dx → π I_k`.
+**Integrals of powers of $\sin x / x$.** For every natural number $k \ge 1$, the improper
+integral $\lim_{R \to \infty} \int_0^R (\sin x / x)^k \, dx$ exists and
+
+$$
+\lim_{R \to \infty} \int_0^R \Bigl(\frac{\sin x}{x}\Bigr)^k dx =
+\frac{\pi}{2^k (k-1)!} \sum_{i=0}^{\lfloor k/2 \rfloor} (-1)^i \binom{k}{i} (k-2i)^{k-1}.
+$$
+
+For $k = 1$ the integral converges only conditionally, hence the limit over $R$.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isAddMonoidBasis_lexMinimalExtensions_iff
 ---
 
-# Is Add Monoid Basis lex Minimal Extensions iff
+# Basis of the monoid of lex-minimal extensions
 
-Proposition 5, first part: `Atom ∩ L` is the unique basis of the monoid `L`
-of lex-minimal extensions.
+**Basis of the monoid of lex-minimal extensions.** Let $L$ be the set of lex-minimal
+extensions, viewed inside the sequences of nonnegative integers under componentwise addition.
+A set $B$ of sequences of nonnegative integers is a basis of $L$ if and only if $B$ is the set
+of nonzero atomic binomid indices that belong to $L$. Hence that set is the unique basis of $L$.
 
 ## Depends on
 
-- [Is Add Monoid Basis](is-add-monoid-basis.md)
-- [Is Atomic Binomid Index](is-atomic-binomid-index.md)
+- [Basis of a submonoid](is-add-monoid-basis.md)
+- [Atomic binomid index](is-atomic-binomid-index.md)
 - [Lex-minimal extensions](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
 
 ## Sources

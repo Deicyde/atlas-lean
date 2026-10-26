@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rLucasPolynomial_succ_of_lt
 ---
 
-# R Lucas Polynomial succ of lt
+# Initial values of the $r$-Lucas polynomials
 
-`V_{n+1} = x^{n+1}` for `n < r`.
+**Initial values of the $r$-Lucas polynomials.** Let $R$ be a commutative semiring, let $s$ be
+a natural number, let $x, y \in R$, and let $n < r$ be natural numbers. Then the $r$-Lucas
+polynomial of type $s$ satisfies $V^{(r,s)}_{n+1}(x, y) = x^{n+1}$.
 
 ## Depends on
 
-- [R Lucas Polynomial](r-lucas-polynomial.md)
+- [The $r$-Lucas polynomials of type $s$](r-lucas-polynomial.md)
 
 ## Sources
 

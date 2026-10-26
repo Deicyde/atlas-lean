@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.oozQMZV_eq_szStarQMZV_szDualIndex
 ---
 
-# Ooz QMZV eq sz Star QMZV sz Dual Index
+# OOZ-qMZVs are SZ-star qMZVs of the dual index
 
-OOZ-qMZVs as SZ-star qMZVs, `ζ_q^OSZ = ζ_q^{SZ,⋆} ∘ τ̃` on `𝔎¹`: for an SZ-admissible index `k`
-(empty or `k₁ ≥ 1`), `ζ_q^OOZ(k) = ζ_q^{SZ,⋆}(k†)`.
+**OOZ-qMZVs are SZ-star qMZVs of the dual index.** For every index $k = (k_1, \dots, k_r)$ of
+natural numbers that is empty or has $k_1 \ge 1$, the Ohno–Okuda–Zudilin qMZV of $k$ equals the
+SZ-star qMZV of the SZ dual index $k^\dagger$: $\zeta_q^{OOZ}(k) = \zeta_q^{SZ,\star}(k^\dagger)$.
 
 ## Depends on
 
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Sz Dual Index](../part-06/sz-dual-index.md)
-- [Sz Star QMZV](sz-star-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The SZ dual index](../part-06/sz-dual-index.md)
+- [SZ-star qMZVs](sz-star-qmzv.md)
 
 ## Sources
 

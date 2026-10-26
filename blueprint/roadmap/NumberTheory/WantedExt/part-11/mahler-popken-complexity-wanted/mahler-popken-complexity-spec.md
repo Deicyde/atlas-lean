@@ -6,21 +6,22 @@ proof: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexity_spec
 ---
 
-# Mahler Popken Complexity spec
+# The Mahler–Popken complexity is attained
 
-Specification: for `1 ≤ m` and `1 ≤ n`, the complexity is
-attained by an optimal expression.
+**The Mahler–Popken complexity is attained.** For all natural numbers $m \ge 1$ and $n \ge 1$,
+there is an $m$-ary Mahler–Popken expression whose value is $n$ and whose number of leaves
+(counted with repetition) equals the $m$-ary Mahler–Popken complexity $\lVert n \rVert_m$.
 
 ## Depends on
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
+- [Number of leaves of an $m$-ary expression](count.md)
+- [Value of an $m$-ary expression](eval.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
 
 ## Proof depends on
 
-- [Exists mahler Popken Expr eval](exists-mahler-popken-expr-eval.md)
+- [Every positive integer has an $m$-ary expression](exists-mahler-popken-expr-eval.md)
 
 ## Sources
 

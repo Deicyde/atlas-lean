@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.nicomacheanAlpha
 ---
 
-# Nicomachean Alpha
+# The Nicomachean progression factor
 
-The second factor `α(n, s, a) = 2n^2 + na - a^2 + n(n-1)(s - s^2)/2 - (n-1)as` of
-`ν(S_m)` in the paper's (`nusm`), where `S_m` joins `n` copies of `n` with the arithmetic
-progressions `S, S + n, …, S + mn`, `S = (a, a + s, …, a + (n-1)s)`.
+**The Nicomachean progression factor.** For rational numbers $n$, $s$ and $a$, define
+
+$$\alpha(n, s, a) = 2n^2 + na - a^2 + \frac{n(n-1)(s - s^2)}{2} - (n-1)as.$$
+
+This is the second factor of $\nu(S_m)$, where
+$\nu(a_1, \dots, a_k) = (a_1 + \dots + a_k)^2 - (a_1^3 + \dots + a_k^3)$ is the Nicomachean defect,
+$S = (a, a + s, \dots, a + (n-1)s)$, and $S_m$ joins $n$ copies of $n$ with the translated
+progressions $S, S + n, \dots, S + mn$.
 
 ## Depends on
 

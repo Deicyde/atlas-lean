@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distSubspaces
 ---
 
-# Dist Subspaces
+# Distance between subspaces
 
-Finally, in general, if `x = xˡ` is `l`-dimensional and `y = yᵏ` is `k`-dimensional, then
-`d(xˡ, yᵏ) = max { d(y¹, xˡ) : y¹ ≤ yᵏ }`, if `k ≤ l`, and
-`d(xˡ, yᵏ) = max { d(x¹, yᵏ) : x¹ ≤ xˡ }`, if `k ≥ l`.
+**Distance between subspaces.** For subspaces $x$ and $y$ of $\mathbb{R}^d$, the distance
+$\operatorname{dist}(x, y)$ is defined as follows. If $\dim y \le \dim x$, it is the supremum,
+over all lines $y'$ contained in $y$, of the distance $\operatorname{dist}(y', x)$ from the line
+$y'$ to the subspace $x$. If $\dim y > \dim x$, it is the supremum, over all lines $x'$ contained
+in $x$, of the distance $\operatorname{dist}(x', y)$ from the line $x'$ to the subspace $y$. A
+supremum over no lines is $0$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dist Line Subspace](dist-line-subspace.md)
+- [Distance from a line to a subspace](dist-line-subspace.md)
 
 ## Sources
 

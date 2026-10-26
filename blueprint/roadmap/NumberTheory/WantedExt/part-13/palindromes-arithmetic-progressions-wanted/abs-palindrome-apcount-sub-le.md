@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.abs_palindromeAPCount_sub_le
 ---
 
-# Abs palindrome APCount sub le
+# Palindromes in residue classes: a logarithmic error bound
 
-Corollary 12: for `b ≥ 2`, odd `q ≥ 1`, `0 ≤ r < q` and `b ≡ 1 (mod q)`, uniformly in `m ≥ 1`,
-`A_b(m, q, r) = A_b(m)/q + O*(log m/(2 log b) + 2)`, i.e. the error is at most
-`log m/(2 log b) + 2` in absolute value.
+**Palindromes in residue classes: a logarithmic error bound.** Let $b \ge 2$ be a natural
+number, let $q$ be an odd natural number with $b \equiv 1 \pmod q$, and let $r$ be a natural
+number with $r < q$. For natural numbers $m$, $q'$ and $r'$, write $A_b(m, q', r')$ for the number
+of base-$b$ palindromes $n$ with $1 \le n \le m$ and $n \equiv r' \pmod{q'}$; thus $A_b(m, 1, 0)$
+is the number of all base-$b$ palindromes in $[1, m]$. Then for every natural number $m \ge 1$,
+
+$$\left| A_b(m, q, r) - \frac{A_b(m, 1, 0)}{q} \right| \le \frac{\log m}{2 \log b} + 2,$$
+
+where $\log$ is the natural logarithm.
 
 ## Depends on
 
-- [Palindrome APCount](palindrome-apcount.md)
+- [Palindromes in an arithmetic progression](palindrome-apcount.md)
 
 ## Sources
 

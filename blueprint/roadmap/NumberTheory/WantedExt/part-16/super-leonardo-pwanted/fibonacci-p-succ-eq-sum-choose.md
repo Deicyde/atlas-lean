@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciP_succ_eq_sum_choose
 ---
 
-# Theorem 8
+# Binomial sum formula for Fibonacci p-numbers
 
-**Theorem 8** (Kuhapatanakul, quoted): `F_p(n+1) = ∑_{i=0}^{⌊n/(p+1)⌋} C(n-ip, i)` for
-`p ≥ 1` and `n ≥ 0`; the paper's second form `F_p(n) = ∑_{i=0}^{⌊(n-1)/(p+1)⌋} C(n-1-ip, i)` is
-the same identity with `n` shifted by one. The paper allows all nonnegative `p`, but at `p = 0`
-the sequence is identically zero (`F_0(1) = F_0(0) + F_0(0) = 0`) while the sum at `n = 0` is
-`C(0, 0) = 1`, so `p ≥ 1` is assumed.
+**Binomial sum formula for Fibonacci p-numbers.** For all natural numbers $p \ge 1$ and $n$,
+the Fibonacci $p$-numbers $F_p$ satisfy
+
+$$F_p(n+1) = \sum_{i=0}^{\lfloor n/(p+1) \rfloor} \binom{n-ip}{i}.$$
+
+The paper (Theorem 8, quoting Kuhapatanakul) also gives the form
+$F_p(n) = \sum_{i=0}^{\lfloor (n-1)/(p+1) \rfloor} \binom{n-1-ip}{i}$, which is the same identity
+with $n$ shifted by one. The paper allows all natural $p$, but at $p = 0$ the sequence is
+identically zero ($F_0(1) = F_0(0) + F_0(0) = 0$) while the sum at $n = 0$ is
+$\binom{0}{0} = 1$, so $p \ge 1$ is assumed.
 
 ## Depends on
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.iteratedRemainderSet_one
 ---
 
-# Iterated Remainder Set one
+# The first iterated remainder set is the remainder set
 
-`S_1(n) = S(n)`.
+**The first iterated remainder set is the remainder set.** For every natural number $n$, the
+iterated remainder set $S_1(n)$ equals the remainder set
+$S(n) = \{n \bmod k : 1 \le k \le \lfloor n/2 \rfloor\}$.
 
 ## Depends on
 
-- [Iterated Remainder Set](iterated-remainder-set.md)
-- [Remainder Set](remainder-set.md)
+- [Iterated remainder sets](iterated-remainder-set.md)
+- [Remainder set](remainder-set.md)
 
 ## Sources
 

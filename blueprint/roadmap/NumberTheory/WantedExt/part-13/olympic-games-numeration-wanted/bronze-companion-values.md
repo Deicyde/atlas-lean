@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.bronzeCompanion_values
 ---
 
-# Bronze Companion values
+# Initial companion bronze numbers
 
-The first companion bronze numbers: `C = 1, 1, 4, 13, 43, …` and `D = 1, 2, 7, 23, 76, …`.
+**Initial companion bronze numbers.** The companion bronze numbers $C_n$ of the first type
+satisfy $(C_0, C_1, C_2, C_3, C_4) = (1, 1, 4, 13, 43)$, and the companion bronze numbers $D_n$
+of the second type satisfy $(D_0, D_1, D_2, D_3, D_4) = (1, 2, 7, 23, 76)$.
 
 ## Depends on
 
-- [Bronze Companion First](bronze-companion-first.md)
-- [Bronze Companion Second](bronze-companion-second.md)
+- [Companion bronze numbers of the first type](bronze-companion-first.md)
+- [Companion bronze numbers of the second type](bronze-companion-second.md)
 
 ## Sources
 

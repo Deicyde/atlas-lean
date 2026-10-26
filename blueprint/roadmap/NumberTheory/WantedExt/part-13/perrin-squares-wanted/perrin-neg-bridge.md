@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.perrinNeg_bridge
 ---
 
-# Perrin Neg bridge
+# The Perrin sequence and its backward extension fit together at index zero
 
-The backward extension agrees with the Perrin sequence at index `0` and
-satisfies the Perrin recurrence across `0`: `R_2 = R_0 + R_{-1}` and
-`R_1 = R_{-1} + R_{-2}`.
+**The Perrin sequence and its backward extension fit together at index zero.** Write $R_n$
+for the Perrin sequence and $R_{-n}$ for its extension to negative indices, for natural numbers
+$n$. The two definitions give the same value at index $0$, and the Perrin recurrence holds across
+index $0$: $R_2 = R_0 + R_{-1}$ and $R_1 = R_{-1} + R_{-2}$.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 - [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources

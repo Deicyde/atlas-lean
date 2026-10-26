@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.natPairToReal_one_two
 ---
 
-# Nat Pair To Real one two
+# The pair $(1, 2)$ encodes $1/2$
 
-Characteristic value: the pair `(1, 2)` encodes `1 / 2`.
+**The pair $(1, 2)$ encodes $1/2$.** The real value of the fraction encoded by the pair
+$(1, 2)$ is $1/2$.
 
 ## Depends on
 
-- [Nat Pair To Real](nat-pair-to-real.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
 
 ## Sources
 

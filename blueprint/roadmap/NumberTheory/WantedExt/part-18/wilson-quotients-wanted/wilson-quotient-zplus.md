@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.wilsonQuotientZPlus
 ---
 
-# Wilson Quotient ZPlus
+# Morozov's sign-adjusted Wilson quotient sum
 
-Morozov's sum `Z^+(n) = ∑ k ∈ [0,n), M_k^+(n)`.
+**Morozov's sign-adjusted Wilson quotient sum.** For a natural number $n$, $Z^+(n)$ is the
+rational number $\sum_{k=0}^{n-1} M_k^+(n)$, where $M_k^+(n) = ((-1)^k + k!\,(n-k-1)!)/n$ is
+Morozov's sign-adjusted quotient.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wilson Quotient MPlus](wilson-quotient-mplus.md)
+- [Morozov's sign-adjusted Wilson quotients](wilson-quotient-mplus.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_six_and_eight_nonzero_squares
 ---
 
-# Sum six and eight nonzero squares
+# Sums of six and of eight nonzero squares
 
-Every integer `n ≥ 20` is a sum of `6` nonzero squares, and every integer `n ≥ 22` is a
-sum of `8` nonzero squares.
+**Sums of six and of eight nonzero squares.** Every integer $n \ge 20$ is a sum of $6$
+squares of positive integers, and every integer $n \ge 22$ is a sum of $8$ squares of positive
+integers.
 
 ## Depends on
 

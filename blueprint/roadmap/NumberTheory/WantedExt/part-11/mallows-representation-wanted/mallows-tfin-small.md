@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mallowsTFin_small
 ---
 
-# Mallows TFin small
+# Two values of $\dot T$
 
-Characteristic values: `Ṫ⟨O_L, E_R, O_R⟩ = ⟨M⟩` and `Ṫ⟨O_L, O_L⟩ = ⟨L⟩`.
+**Two values of $\dot T$.** The finite version $\dot T$ of $T$ satisfies
+$\dot T(\langle O_L, E_R, O_R \rangle) = \langle M \rangle$ and
+$\dot T(\langle O_L, O_L \rangle) = \langle L \rangle$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Mallows TFin](mallows-tfin.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [The finite version $\dot T$ of $T$](mallows-tfin.md)
 
 ## Sources
 

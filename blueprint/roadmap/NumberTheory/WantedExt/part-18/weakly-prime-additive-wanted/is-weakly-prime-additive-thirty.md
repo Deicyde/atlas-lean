@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isWeaklyPrimeAdditive_thirty
 ---
 
-# Is Weakly Prime Additive thirty
+# Thirty is weakly prime-additive
 
-`30` is weakly prime-additive.
+**Thirty is weakly prime-additive.** The number $30$ is weakly prime-additive.
+
+Indeed, $30$ has the distinct prime divisors $2$, $3$, $5$ and $30 = 2 + 3 + 5^2$.
 
 ## Depends on
 
-- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
+- [Weakly prime-additive numbers](is-weakly-prime-additive.md)
 
 ## Proof depends on
 
-- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
-- [Is Prime Divisor Power Sum thirty](is-prime-divisor-power-sum-thirty.md)
+- [Sums of powers of distinct prime divisors](is-prime-divisor-power-sum.md)
+- [Thirty is a sum of powers of three of its prime divisors](is-prime-divisor-power-sum-thirty.md)
 
 ## Sources
 

@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.zeckNIZ_values_shift
 ---
 
-# Zeck NIZ values shift
+# Values of the variation on $\mathrm{NIZ}_{k+2}$ are shifted by $-1$
 
-For `k ≥ ℓ + 4` (`F_ℓ ≤ r < F_{ℓ+1}`, `ℓ ≥ 2`), the values of `Δ^{(r)}` on the cylinders of
-order `k + 2` in `NIZ_{k+2}` are those on the cylinders of order `k` in `NIZ_k` shifted by `-1`,
-with multiplicity: each cylinder of order `k` is represented by the integer `v < F_{k+2}` whose
-Zeckendorf digits are its name, and for every `d` the number of cylinders of `NIZ_{k+2}` with
-value `d - 1` equals the number of cylinders of `NIZ_k` with value `d`.
+**Values of the variation on $\mathrm{NIZ}_{k+2}$ are shifted by $-1$.** Let $\ell \ge 2$,
+let $r$ satisfy $F_\ell \le r < F_{\ell+1}$, where $F_1 = F_2 = 1, F_3 = 2, \dots$ are the
+Fibonacci numbers, and let $k \ge \ell + 4$. Write $\Delta^{(r)}$ for the variation of the
+Zeckendorf sum of digits under adding $r$ on the Zeckendorf-adic integers, $\mathrm{NIZ}_m$ for
+the new-information zone of order $m$ for $r$, and $i(v)$ for the Zeckendorf-adic integer whose
+digits are the Zeckendorf digits of $v \in \mathbb{N}$. Then for every integer $d$, the number
+of $v < F_{k+4}$ with $i(v) \in \mathrm{NIZ}_{k+2}$ and $\Delta^{(r)}(i(v)) = d - 1$ equals
+the number of $v < F_{k+2}$ with $i(v) \in \mathrm{NIZ}_k$ and $\Delta^{(r)}(i(v)) = d$.
+
+Each $v < F_{m+2}$ stands for the cylinder of order $m$ whose name is its digits, so the values
+of $\Delta^{(r)}$ on the cylinders in $\mathrm{NIZ}_{k+2}$ are those on the cylinders in
+$\mathrm{NIZ}_k$ shifted by $-1$, with multiplicity.
 
 ## Depends on
 
-- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck NIZ](zeck-niz.md)
+- [Zeckendorf digit sequence of a natural number](zeck-adic-of-nat.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [New-information zone](zeck-niz.md)
 
 ## Sources
 

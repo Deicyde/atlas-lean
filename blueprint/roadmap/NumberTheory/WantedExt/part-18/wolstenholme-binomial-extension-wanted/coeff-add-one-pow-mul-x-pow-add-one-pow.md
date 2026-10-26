@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.coeff_add_one_pow_mul_X_pow_add_one_pow
 ---
 
-# Coeff add one pow mul X pow add one pow
+# Coefficients of $(x + 1)^{jp} (x^p + 1)^{n-j}$
 
-Lemma 2: the coefficient of `x^{kp}` in `(x + 1)^{jp} (x^p + 1)^{n-j}` is
-`c_j(n, k) = ∑_{s=0}^{j} binom(jp, sp) binom(n - j, k - s)`, where
-`binom(n - j, k - s) = 0` for `s > k`. Stated for every `p > 0` (the paper takes
-`p` prime) and every `j` (for `j > n` the truncated `n - j = 0` keeps it true).
+**Coefficients of $(x + 1)^{jp} (x^p + 1)^{n-j}$.** Let $n$, $j$ and $k$ be natural numbers and
+$p$ a positive integer, and let $d = \max(n - j, 0)$. Then the coefficient of $x^{kp}$ in the
+polynomial $(x + 1)^{jp} (x^p + 1)^{d}$ is
+
+$$\sum_{s=0}^{\min(j, k)} \binom{jp}{sp} \binom{d}{k - s}.$$
+
+The source takes $p$ prime; here $p$ is any positive integer.
 
 ## Depends on
 

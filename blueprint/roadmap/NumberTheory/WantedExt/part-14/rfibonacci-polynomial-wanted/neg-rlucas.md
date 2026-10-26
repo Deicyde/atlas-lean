@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.negRLucas
 ---
 
-# Neg RLucas
+# Companion sequence of the $(-r)$-Fibonacci polynomials
 
-Definition 4: the companion sequence `V^{(-r)}_n(x, y)`: `V_0 = r + 1`,
-`V_1 = ⋯ = V_{r-1} = 0`, `V_r = r y^{-1}`, and
-`V_{n+1} = y^{-1} V_{n-r+1} - y^{-1} x V_{n-r}` for `n ≥ r`. The paper takes `r ≥ 2`;
-the guard `r = 0` only makes the definition total.
+**Companion sequence of the $(-r)$-Fibonacci polynomials.** Let $A$ be a commutative ring,
+$r$ a natural number, $x \in A$ and $y$ a unit of $A$. The companion sequence
+$V^{(-r)}_n(x, y) \in A$, $n \ge 0$, is defined by $V^{(-r)}_0 = r + 1$ and, if $r \ge 1$, by
+$V^{(-r)}_n = 0$ for $1 \le n < r$, $V^{(-r)}_r = r y^{-1}$ and
+$V^{(-r)}_{n+1} = y^{-1} V^{(-r)}_{n-r+1} - y^{-1} x V^{(-r)}_{n-r}$ for $n \ge r$. If $r = 0$,
+then $V^{(-r)}_n = 0$ for all $n \ge 1$.
+
+The paper takes $r \ge 2$; the case $r = 0$ only makes the definition total.
 
 ## Depends on
 

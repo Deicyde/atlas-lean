@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_cubes_infinite
 ---
 
-# Primitive pythagorean sides sum two cubes infinite
+# Infinitely many primitive Pythagorean triples with sides sums of two cubes
 
-Li and Zhang's Theorem 2: infinitely many primitive Pythagorean
-triples have all three sides equal to a sum of two positive cubes.
+**Infinitely many primitive Pythagorean triples with sides sums of two cubes.** There are
+infinitely many triples $(X, Y, Z)$ of natural numbers with $X^2 + Y^2 = Z^2$ and
+$\gcd(X, Y) = 1$ such that each of $X$, $Y$ and $Z$ is a sum of two cubes of positive
+integers.
 
 ## Depends on
 

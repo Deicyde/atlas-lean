@@ -5,16 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.square_mod_twoPower_fiber_card
 ---
 
-# Square mod two Power fiber card
+# Each residue $1 \bmod 8$ has four odd square roots modulo $2^e$
 
-For `e≥3`, every `v<2^e` with `v≡1 (mod 8)` has exactly four preimages among
-`i∈S_e` under `i↦i^2 mod 2^e`.  The cardinality of the explicitly filtered
-finite set formalizes “occurs exactly four times”; the paper's count of
-`2^(e-3)` possible values is represented by the quantified range of `v`.
+**Each residue $1 \bmod 8$ has four odd square roots modulo $2^e$.** Let $e \ge 3$ and let $S_e$
+be the set of odd natural numbers $i$ with $1 \le i < 2^e$. For every natural number $v < 2^e$
+with $v \equiv 1 \pmod 8$, exactly four elements $i \in S_e$ satisfy $i^2 \bmod 2^e = v$.
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.dcDNodes_two_mul
 ---
 
-# Dc DNodes two mul
+# Doubling recurrence for the divide-and-conquer D-node count
 
-`δ(2m) = 2 δ(m)` for `m > 0`.
+**Doubling recurrence for the divide-and-conquer D-node count.** For every integer $m > 0$,
+the divide-and-conquer D-node count $\delta$ satisfies $\delta(2m) = 2\delta(m)$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

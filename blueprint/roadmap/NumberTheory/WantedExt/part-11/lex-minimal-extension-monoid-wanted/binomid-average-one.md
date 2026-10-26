@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.binomidAverage_one
 ---
 
-# Binomid Average one
+# The first average is the first entry
 
-`A_1 = e_1`.
+**The first average is the first entry.** For every sequence $\eta = (e_1, e_2, \dots)$ of
+nonnegative integers, the initial average $A_{1,0}(\eta)$ of its first entry equals $e_1$.
 
 ## Depends on
 

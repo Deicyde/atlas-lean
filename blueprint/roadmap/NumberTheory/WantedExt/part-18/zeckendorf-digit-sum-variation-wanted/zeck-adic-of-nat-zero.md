@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckAdicOfNat_zero
 ---
 
-# Zeck Adic Of Nat zero
+# Zeckendorf digit sequence of zero
 
-The inclusion sends `0` to the zero sequence.
+**Zeckendorf digit sequence of zero.** The Zeckendorf digit sequence of $0$ is the zero
+sequence: all of its digits are $0$, because the Zeckendorf representation of $0$ is empty.
 
 ## Depends on
 
-- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
+- [Zeckendorf digit sequence of a natural number](zeck-adic-of-nat.md)
 
 ## Sources
 

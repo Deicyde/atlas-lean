@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.szQMZVPartial_cons
 ---
 
-# Sz QMZVPartial cons
+# Recursion for partial sums of Schlesinger–Zudilin qMZVs
 
-The defining sum peels off its outermost summation variable.
+**Recursion for partial sums of Schlesinger–Zudilin qMZVs.** For natural numbers $k_1$ and
+$M$ and an index $\kappa = (k_2, \dots, k_r)$ (possibly empty), write $Z_M(k_1, \kappa)$ and
+$Z_m(\kappa)$ for the partial sums of Schlesinger–Zudilin qMZVs with bounds $M$ and $m$. Then
+
+$$Z_M(k_1, \kappa) = \sum_{0 < m < M} \left(\frac{q^m}{1 - q^m}\right)^{k_1} Z_m(\kappa).$$
 
 ## Depends on
 
-- [Sz QMZVPartial](sz-qmzvpartial.md)
+- [Partial sums of Schlesinger–Zudilin qMZVs](sz-qmzvpartial.md)
 
 ## Sources
 

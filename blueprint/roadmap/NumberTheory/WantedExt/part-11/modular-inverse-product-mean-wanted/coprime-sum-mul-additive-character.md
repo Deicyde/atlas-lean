@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.coprime_sum_mul_additive_character
 ---
 
-# Coprime sum mul additive character
+# Weighted additive character sum over reduced residues
 
-Lemma 4: for `n ≥ 2` and `k ≥ 1`,
-`∑_{1 ≤ b ≤ n, (b, n) = 1} b e_n(-k b) = -n ∑_{d ∣ n, (n/d) ∤ k} μ(d) / (1 - e_{n/d}(-k))
-+ (n/2) ∑_{d ∣ n, d < n, (n/d) ∣ k} μ(d) (n/d - 1)`.
+**Weighted additive character sum over reduced residues.** For a positive integer $r$ and an
+integer $x$ write $e_r(x) = \exp(2\pi i x / r)$, and let $\mu$ be the Möbius function. For all
+natural numbers $n \ge 2$ and $k \ge 1$,
+
+$$\sum_{1 \le b \le n,\ \gcd(b, n) = 1} b \, e_n(-kb)
+= -n \sum_{d \mid n,\ (n/d) \nmid k} \frac{\mu(d)}{1 - e_{n/d}(-k)} +
+\frac{n}{2} \sum_{d \mid n,\ d < n,\ (n/d) \mid k} \mu(d) \left(\frac{n}{d} - 1\right).$$
 
 ## Depends on
 

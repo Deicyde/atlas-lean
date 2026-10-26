@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.okounkovPoly_two_three
 ---
 
-# Okounkov Poly two three
+# The Okounkov polynomials $p_2$ and $p_3$
 
-`p₂ = X` and `p₃ = X (1 + X)`.
+**The Okounkov polynomials $p_2$ and $p_3$.** The Okounkov polynomials of index $2$ and $3$
+are $p_2(X) = X$ and $p_3(X) = X(1 + X)$.
 
 ## Depends on
 
-- [Okounkov Poly](okounkov-poly.md)
+- [Okounkov polynomials](okounkov-poly.md)
 
 ## Sources
 

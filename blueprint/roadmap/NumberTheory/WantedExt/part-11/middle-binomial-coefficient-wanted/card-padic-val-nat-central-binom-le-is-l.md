@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_padicValNat_centralBinom_le_isLittleO
 ---
 
-# Card padic Val Nat central Binom le is Little O
+# Small valuations of the middle binomial coefficient are rare
 
-Lemma 4: with `D = D_p = 1 + ⌊log x / log p⌋` and `K = ⌊exp(0.8 √(log x))⌋`, the number of
-`m ≤ x` with `v_p(C(2m, m)) ≤ D / log D` for some prime `p ≤ 2K` is `o(x)` as `x → ∞`
-(counted over `1 ≤ m ≤ x`).
+**Small valuations of the middle binomial coefficient are rare.** For a natural number $x$
+let $K = \lfloor \exp(0.8 \sqrt{\log x}) \rfloor$ and, for a prime $p$, let
+$D_p = 1 + \lfloor \log x / \log p \rfloor$. Write $v_p(n)$ for the exponent of $p$ in a
+positive integer $n$. Then the number of integers $m$ with $1 \le m \le x$ for which some prime
+$p \le 2K$ satisfies $v_p\bigl(\binom{2m}{m}\bigr) \le D_p / \log D_p$ is $o(x)$ as $x \to \infty$.
+
+For large $x$ every prime $p \le 2K$ is at most $x$, so $D_p \ge 2$ and $\log D_p > 0$.
 
 ## Depends on
 

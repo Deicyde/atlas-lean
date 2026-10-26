@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.pqRFibonacci_one
 ---
 
-# Pq RFibonacci one
+# First value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-At `p = q = 1`, `m = 0`, the first values agree with `U^{(r)}`: `U_1 = 1`.
+**First value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial.** For all natural
+numbers $r$ and $m$ and all elements $x, y, p, q$ of a commutative semiring, the
+$(p,q)$-analogue of the $r$-Fibonacci polynomial satisfies $U^{(r)}_1(x, y, p, q, m) = 1$.
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
 
 ## Proof depends on
 
-- [Pq Binomial](pq-binomial.md)
-- [Pq Binomial zero right](pq-binomial-zero-right.md)
+- [$(p,q)$-binomial coefficient](pq-binomial.md)
+- [$(p,q)$-binomial coefficients with lower index zero](pq-binomial-zero-right.md)
 
 ## Sources
 

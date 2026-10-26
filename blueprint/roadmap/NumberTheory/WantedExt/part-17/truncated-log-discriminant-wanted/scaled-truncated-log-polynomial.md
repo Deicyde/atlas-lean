@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.scaledTruncatedLogPolynomial
 ---
 
-# Scaled Truncated Log Polynomial
+# Scaled truncated logarithmic polynomial
 
-The integer polynomial `F̃_n = L_n F_n = L_n + ∑_{j=1}^n (L_n / j) x^j`.
+**Scaled truncated logarithmic polynomial.** For a natural number $n$, let
+$L_n = \operatorname{lcm}(1, 2, \dots, n)$. The scaled truncated logarithmic polynomial is the
+integer polynomial $\tilde F_n(x) = L_n + \sum_{j=1}^{n} (L_n / j)\, x^j$, where each quotient
+$L_n / j$ is an integer.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Truncated Log Lcm](truncated-log-lcm.md)
+- [Least common multiple of $1, \dots, n$](truncated-log-lcm.md)
 
 ## Sources
 

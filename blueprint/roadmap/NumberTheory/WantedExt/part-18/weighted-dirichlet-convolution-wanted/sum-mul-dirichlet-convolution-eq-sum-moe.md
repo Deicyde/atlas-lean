@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sum_mul_dirichletConvolution_eq_sum_moebius
 ---
 
-# Sum mul dirichlet Convolution eq sum moebius
+# Möbius expansion of weighted sums of a Dirichlet convolution
 
-Lemma 4: for arbitrary arithmetic functions `w, u, v` and real `x`,
-`D[w, u, v](x) = ∑_{j ≤ x} w(j) (u * v)(j) = ∑_{r ≤ x} g(r) S_r[u, v](x)` with `g = w * μ` and
-`S_r[u, v](x) = ∑_{j ≤ x/r} (u * v)(rj)`.
+**Möbius expansion of weighted sums of a Dirichlet convolution.** Let $w$, $u$ and $v$ be
+arithmetic functions with complex values, let $*$ denote Dirichlet convolution, let $\mu$ be the
+Möbius function and put $g = w * \mu$. Then for every real $x$,
 
-The paper's `x ≥ 1` is dropped (both sides vanish for `x < 1`).
+$$
+\sum_{1 \le j \le x} w(j)\, (u * v)(j) =
+\sum_{1 \le r \le x} g(r) \sum_{1 \le j \le x/r} (u * v)(rj),
+$$
+
+where $j$ and $r$ run over positive integers.
+
+Both sides vanish for $x < 1$; the source assumes $x \ge 1$.
 
 ## Depends on
 

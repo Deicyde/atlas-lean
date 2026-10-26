@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_sum_two_squares_infinite
 ---
 
-# Primitive pythagorean sides sum two squares infinite
+# Infinitely many primitive Pythagorean triples with sides sums of two squares
 
-Li and Zhang's Theorem 1: infinitely many primitive Pythagorean
-triples have all three sides equal to a sum of two positive squares.
+**Infinitely many primitive Pythagorean triples with sides sums of two squares.** There are
+infinitely many triples $(X, Y, Z)$ of natural numbers with $X^2 + Y^2 = Z^2$ and
+$\gcd(X, Y) = 1$ such that each of $X$, $Y$ and $Z$ is a sum of two squares of positive
+integers.
 
 ## Depends on
 

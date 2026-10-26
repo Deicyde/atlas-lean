@@ -14,7 +14,7 @@ the point `(α : β : γ)` belongs to the polygon.
 
 ## Depends on
 
-- [Shadow Markoff Tree](shadow-markoff-tree.md)
+- [Shadow Markoff tree](shadow-markoff-tree.md)
 
 ## Sources
 

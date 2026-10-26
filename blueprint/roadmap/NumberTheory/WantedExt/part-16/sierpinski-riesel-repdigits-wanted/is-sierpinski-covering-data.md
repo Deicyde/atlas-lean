@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsSierpinskiCoveringData
 ---
 
-# Is Sierpinski Covering Data
+# Sierpiński covering data
 
-Covering data `{(r_j, m_j, p_j)}` producing `k` as a Sierpiński number by the covering
-system method: the classes `r_j mod m_j` cover `ℤ`, the `p_j` are distinct primes,
-`p_j ∣ 2^{m_j} - 1` with `m_j ≥ 1`, and `p_j ∣ k·2^{r_j} + 1` (that is, `k ≡ -2^{-r_j}`).
+**Sierpiński covering data.** Let $k$ be a natural number and $S$ a finite set of triples
+$(r, m, p)$ of natural numbers. Then $S$ is Sierpiński covering data for $k$ if every integer is
+congruent to $r$ modulo $m$ for some $(r, m, p) \in S$, distinct triples in $S$ have distinct
+third entries, and every $(r, m, p) \in S$ has $m \ge 1$, $p$ prime, $p \mid 2^m - 1$ and
+$p \mid k \cdot 2^r + 1$.
+
+This is the input of the covering system method for Sierpiński numbers; the last condition says
+that $k \equiv -2^{-r} \pmod{p}$.
 
 ## Depends on
 

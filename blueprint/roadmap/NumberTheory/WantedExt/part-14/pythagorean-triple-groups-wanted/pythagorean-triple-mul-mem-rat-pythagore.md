@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.pythagoreanTripleMul_mem_ratPythagoreanTriples
 ---
 
-# Pythagorean Triple Mul mem rat Pythagorean Triples
+# Amato's product preserves rational Pythagorean triples
 
-`⋆` is a binary operation on `E`.
+**Amato's product preserves rational Pythagorean triples.** Let $E$ be the set of rational
+triples $(x, y, z)$ with $x \ne 0$ and $x^2 + y^2 = z^2$, and let $\star$ be Amato's product of
+triples. If $u \in E$ and $v \in E$, then $u \star v \in E$; that is, $\star$ is a binary
+operation on $E$.
 
-`E` is written as the set of rational triples `(x, y, z)` with `x ≠ 0` and `x² + y² = z²`; the
-source's fraction representation `(a/b, c/d, e/f)` with `a, b, d, f ≠ 0` describes the same set.
+The source's fraction representation $(a/b, c/d, e/f)$ with $a, b, d, f \ne 0$ describes the
+same set $E$.
 
 ## Depends on
 
-- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
-- [Rat Pythagorean Triples](rat-pythagorean-triples.md)
+- [Amato's product of triples](pythagorean-triple-mul.md)
+- [Rational Pythagorean triples](rat-pythagorean-triples.md)
 
 ## Sources
 

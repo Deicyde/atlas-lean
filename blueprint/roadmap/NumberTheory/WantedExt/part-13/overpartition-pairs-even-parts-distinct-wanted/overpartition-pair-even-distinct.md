@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Overpartition Pair Even Distinct GF](overpartition-pair-even-distinct-gf.md)
+- [Generating function of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct-gf.md)
 
 ## Sources
 

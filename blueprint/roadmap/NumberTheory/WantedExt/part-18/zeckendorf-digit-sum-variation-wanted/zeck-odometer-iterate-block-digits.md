@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer_iterate_block_digits
 ---
 
-# Zeck Odometer iterate block digits
+# Adding $r$ across a window of four zero digits
 
-If `x_{ℓ+1} = ⋯ = x_{ℓ+4} = 0` (`ℓ ≥ 2`), `r_{ℓ+2} = 1` and `r < F_{ℓ+3}`, then either
-`(x + r)_{ℓ+k} = r_{ℓ+k}` for `k = 1, 2, 3, 4`, or `(x + r)_{ℓ+1} = 0` and `(x + r)_{ℓ+3} = 1`.
+**Adding $r$ across a window of four zero digits.** Write $F_j$ for the Fibonacci numbers
+($F_1 = F_2 = 1$). For $r \in \mathbb{N}$ let $Z(r)$ be the set of indices in the Zeckendorf
+representation $r = \sum_{j \in Z(r)} F_j$ (all indices $\ge 2$, no two consecutive), and let
+$r_j = 1$ if $j \in Z(r)$ and $r_j = 0$ otherwise. Let $\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$
+be the set of Zeckendorf-adic integers (sequences with $x_0 = x_1 = 0$ and no two consecutive
+ones), and write $x + n = T^n(x)$ for the $n$-th iterate of the Zeckendorf odometer $T$. Let
+$x \in \mathbb{X}$ and $\ell \ge 2$ with $x_{\ell+1} = x_{\ell+2} = x_{\ell+3} = x_{\ell+4} = 0$,
+and let $r < F_{\ell+3}$ with $r_{\ell+2} = 1$. Then either $(x + r)_{\ell+k} = r_{\ell+k}$ for
+$k = 1, 2, 3, 4$, or $(x + r)_{\ell+1} = 0$ and $(x + r)_{\ell+3} = 1$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

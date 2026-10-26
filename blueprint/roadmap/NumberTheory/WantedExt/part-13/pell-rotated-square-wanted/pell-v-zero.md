@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.pellV_zero
 ---
 
-# Pell V zero
+# Value of the Pell interpolation function v at 0
 
-`v(0) = 0`.
+**Value of the Pell interpolation function v at 0.** For all integers $D$, $\alpha$, $\beta$,
+the function $v(x) = ((\alpha + \beta\sqrt D)^x - (\alpha - \beta\sqrt D)^x)/(2\sqrt D)$ of a real
+variable $x$, where $\sqrt D$ is the real square root (zero when $D < 0$) and division by zero
+gives $0$, satisfies $v(0) = 0$.
 
 ## Depends on
 
-- [Pell V](pell-v.md)
+- [The Pell interpolation function v](pell-v.md)
 
 ## Sources
 

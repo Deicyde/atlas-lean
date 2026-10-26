@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsConcatTwoRepdigitsBase
 ---
 
-# Is Concat Two Repdigits Base
+# Concatenations of two repdigits in a general base
 
-`n` is a concatenation of two repdigits in base `b`: its base-`b` expansion is a block of
-`l ≥ 1` copies of a digit `a₁ ∈ [1, b - 1]` followed by a block of `m ≥ 1` copies of a digit
-`a₂ ∈ [0, b - 1]` with `a₁ ≠ a₂`, i.e.
-`(b - 1) n = a₁ (b^l - 1) b^m + a₂ (b^m - 1)` (the paper's Equation (1)). Distinctness is
-required by the paper's list: repdigits such as `4 = (11)₃` are not counted. For `b = 10`
-this is `IsConcatTwoRepdigits`.
+**Concatenations of two repdigits in a general base.** A natural number $n$ is a
+concatenation of two repdigits in base $b$ if there are digits $a_1, a_2$ with
+$1 \le a_1 \le b - 1$, $0 \le a_2 \le b - 1$ and $a_1 \ne a_2$, and block lengths $l, m \ge 1$,
+such that $(b - 1) n = a_1 (b^l - 1) b^m + a_2 (b^m - 1)$. The digit conditions force
+$b \ge 2$, and the equation says that the base-$b$ expansion of $n$ is $l$ copies of $a_1$
+followed by $m$ copies of $a_2$.
+
+Because of the condition $a_1 \ne a_2$, a repdigit such as $4 = (11)_3$ is not a concatenation
+of two repdigits in base $3$. For $b = 10$ this is the notion of a concatenation of two decimal
+repdigits.
 
 ## Depends on
 

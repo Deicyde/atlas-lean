@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.lurothWellApproximableSet_subset_Ioc
 ---
 
-# Luroth Well Approximable Set subset Ioc
+# Lüroth well approximable numbers lie in $(0, 1)$
 
-Every point of `lurothWellApproximableSet ψ` lies in `(0, 1]`.
+**Lüroth well approximable numbers lie in $(0, 1]$.** For every function $\psi$ from the
+natural numbers to the reals, the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers is
+contained in $(0, 1]$.
 
 ## Depends on
 
-- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
+- [Lüroth well approximable numbers](luroth-well-approximable-set.md)
 
 ## Proof depends on
 
-- [Luroth Convergent](luroth-convergent.md)
-- [Luroth Denominator](luroth-denominator.md)
-- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Lüroth convergents](luroth-convergent.md)
+- [Lüroth denominators](luroth-denominator.md)
+- [Lüroth digits](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Sources
 

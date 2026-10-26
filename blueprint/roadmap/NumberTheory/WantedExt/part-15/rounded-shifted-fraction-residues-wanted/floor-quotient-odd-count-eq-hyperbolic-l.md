@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.floorQuotientOddCount_eq_hyperbolic_lattice_difference
 ---
 
-# Floor Quotient Odd Count eq hyperbolic lattice difference
+# Odd floor quotients as a hyperbolic lattice-point difference
 
-Proposition 4: `𝓕_n` is the number of lattice points `(x, y)` with
-`x, y ≥ 1` and `n/2 < xy ≤ n` (the region `H_{1,n}` without its boundary
-curve `xy = n/2`) minus the number of lattice points with `x, y ≥ 1` and
-`xy ≤ n/2` (the closed region `H_{2,n}`).
+**Odd floor quotients as a hyperbolic lattice-point difference.** For every natural number
+$n$, the floor sequence parity count $\mathcal{F}_n$ equals the number of integer pairs $(x, y)$
+with $x, y \ge 1$ and $n/2 < xy \le n$ minus the number of integer pairs $(x, y)$ with
+$x, y \ge 1$ and $xy \le n/2$.
 
 ## Depends on
 
-- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
+- [Floor sequence parity count](floor-quotient-odd-count.md)
 
 ## Sources
 

@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oozToSZ
 ---
 
-# Ooz To SZ
+# The map $V$ from OOZ to SZ words
 
-The map `V : 𝔎¹ → 𝔎¹` on a word (words `p^{k₁} y ⋯ p^{kᵣ} y` as their indices): `𝟏 ↦ 𝟏` and
-`p^{k₁} y ⋯ p^{kᵣ} y ↦ ∑ C(k₁ - 1, n₁ - 1) C(k₂, n₂) ⋯ C(kᵣ, nᵣ) p^{n₁} y ⋯ p^{nᵣ} y` over
-`1 ≤ n₁ ≤ k₁` and `0 ≤ nⱼ ≤ kⱼ` (`j ≥ 2`).
+**The map $V$ from OOZ to SZ words.** Identify an index $(k_1, \dots, k_r)$ of natural
+numbers with the word $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$. The map $V$ sends
+each such word to a formal $\mathbb{Q}$-linear combination of words: $V(\mathbf{1}) = \mathbf{1}$
+for the empty word $\mathbf{1}$, and for $r \ge 1$
+
+$$V(p^{k_1} y \cdots p^{k_r} y) = \sum \binom{k_1 - 1}{n_1 - 1} \binom{k_2}{n_2} \cdots
+\binom{k_r}{n_r} \, p^{n_1} y \cdots p^{n_r} y$$
+
+where the sum runs over $1 \le n_1 \le k_1$ and $0 \le n_j \le k_j$ for $2 \le j \le r$ (an empty
+sum is $0$).
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ooz To SZTail](ooz-to-sztail.md)
+- [The tail part of the map $V$](ooz-to-sztail.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.two_pow_factorization_add_one_lt_radical
 ---
 
-# Proposition
+# The power of 2 in an even primitive non-deficient number is below its radical
 
-**Proposition**: if `n` is an even primitive non-deficient
-number and `2^a` exactly divides `n`, then `2^(a+1) < R`.
+**The power of 2 in an even primitive non-deficient number is below its radical.** Let $n$
+be an even primitive non-deficient number, that is, a positive integer with $\sigma(n) \ge 2n$
+all of whose proper divisors $m$ satisfy $\sigma(m) < 2m$, where $\sigma$ is the sum of divisors.
+If $2^a$ is the largest power of $2$ dividing $n$ and $R$ is the product of the distinct primes
+dividing $n$, then $2^{a+1} < R$.
 
 ## Depends on
 
-- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
+- [Primitive non-deficient number](is-primitive-nondeficient.md)
 
 ## Sources
 

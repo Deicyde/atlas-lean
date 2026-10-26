@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_incompleteLeonardoP
 ---
 
-# Proposition 7
+# Binomial sum identity for incomplete Leonardo p-numbers
 
-**Proposition 7**: for `n ≥ p + r` and `0 ≤ k ≤ ⌊(n - p - r)/(p+1)⌋`,
-`∑_{i=0}^{r} C(r, i) 𝓛_{p,n+pi}(k + i) + (2^r - 1) p = 𝓛_{p,n+(p+1)r}(k + r)`.
+**Binomial sum identity for incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$,
+$n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$, the
+incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$ satisfy
+
+$$
+\sum_{i=0}^{r} \binom{r}{i} \mathcal{L}_{p,n+pi}(k + i) + (2^r - 1) p =
+\mathcal{L}_{p,n+(p+1)r}(k + r).
+$$
 
 ## Depends on
 

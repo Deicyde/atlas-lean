@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength_of_not_squarefree_of_not_isPrimePow
 ---
 
-# Abs Least APLength of not squarefree of not is Prime Pow
+# Longest progressions of absolute least residues: neither squarefree nor prime power
 
-Theorem 1, `n` neither a prime power nor squarefree (odd or even):
-`g(n) = max(n / rad(n), gpf(n) - 1)`.
+**Longest progressions of absolute least residues: neither squarefree nor prime power.** Let
+$n > 1$ be a natural number that is neither squarefree nor a prime power, let
+$\operatorname{rad}(n)$ be the product of the distinct primes dividing $n$ and $P$ the largest
+prime factor of $n$, and let $g(n)$ be the length of the longest arithmetic progression in the
+absolute least reduced residue system modulo $n$. Then
+$g(n) = \max(n / \operatorname{rad}(n), P - 1)$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Sources
 

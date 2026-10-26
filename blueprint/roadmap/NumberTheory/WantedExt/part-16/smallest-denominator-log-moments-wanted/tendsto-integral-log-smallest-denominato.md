@@ -5,20 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_integral_log_smallestDenominator_pow
 ---
 
-# Tendsto integral log smallest Denominator pow
+# Convergence of the log moments of smallest denominators
 
-Convergence of the logarithmic moments: for an interval `D = [a, b] ⊆ [0, 1]`
-and `n ≥ 0`, `∫_D (log q_min(x, δ) + ½ log δ)^n dx → μ_n vol D` as `δ → 0⁺`, with
-`μ_n = ∫ s^n η_log(s) ds` over all of `ℝ`. The record prints the lower limit `0`;
-the whole line is used, as the paper's own second expression
-`∫_0^∞ (log s)^n η(s) ds` with `η_log(s) = e^s η(e^s)` gives (with lower limit
-`0`, `n = 0` would give `μ_0 = 1 - 3/π² ≠ 1 = lim ∫_D 1 / vol D`). The second
-expression, through the density `η` of the cited paper, is not included.
+**Convergence of the log moments of smallest denominators.** Let $0 \le a \le b \le 1$ be
+real numbers and let $n \ge 0$ be an integer. For real $x$ and $\delta > 0$ let
+$q_{\min}(x, \delta)$ be the smallest positive integer $q$ such that some rational $p/q$ lies in
+the open interval $(x - \delta/2, x + \delta/2)$, and let $\eta_{\log}$ be the log smallest
+denominator density. Then, as $\delta \to 0^+$,
+
+$$
+\int_a^b \bigl(\log q_{\min}(x, \delta) + \tfrac12 \log \delta\bigr)^n \, dx \to \mu_n \, (b - a),
+$$
+
+where $\mu_n = \int_{-\infty}^{\infty} s^n \, \eta_{\log}(s) \, ds$.
+
+The moment $\mu_n$ is an integral over the whole real line: $\eta_{\log}$ has mass $3/\pi^2$ on
+$(-\infty, 0]$, so integrating only over $s \ge 0$ would give $\mu_0 = 1 - 3/\pi^2$ instead of
+the correct limit $1$.
 
 ## Depends on
 
-- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
-- [Smallest Denominator](smallest-denominator.md)
+- [Density of the logarithmic smallest denominator](log-smallest-denominator-density.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Sources
 

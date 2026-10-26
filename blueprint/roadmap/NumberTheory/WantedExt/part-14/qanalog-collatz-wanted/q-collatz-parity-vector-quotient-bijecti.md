@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.qCollatzParityVector_quotient_bijection
 ---
 
-# Q Collatz Parity Vector quotient bijection
+# Parity vectors induce bijections modulo $q^n$
 
-For odd `A, B` and `n ≥ 1`, the map `[a] ↦ [PV(a)]` is a well-defined bijection from
-`𝔽₂[[q]]/(qⁿ)` to `ℤ₂/2ⁿ ≅ ℤ/2ⁿ`.
+**Parity vectors induce bijections modulo $q^n$.** Let $A, B \in \mathbb{F}_2[[q]]$ be odd
+(constant term $1$), let $\mathrm{PV}_{A,B}$ be the parity vector map of the $q$-analog $T_{A,B}$
+of the $3x+1$ map, and let $n \ge 1$ be an integer. Then there is a bijection
+$e : \mathbb{F}_2[[q]]/(q^n) \to \mathbb{Z}/2^n\mathbb{Z}$ such that, for every
+$a \in \mathbb{F}_2[[q]]$, $e$ sends the class of $a$ to the residue of $\mathrm{PV}_{A,B}(a)$
+modulo $2^n$.
 
 ## Depends on
 
-- [Q Collatz Parity Vector](q-collatz-parity-vector.md)
+- [The parity vector of the q-analog 3x+1 map](q-collatz-parity-vector.md)
 
 ## Sources
 

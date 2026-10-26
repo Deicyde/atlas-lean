@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.superLeonardoP_eq_sum_choose
 ---
 
-# Theorem 9
+# Explicit formula for the supergeneralized Leonardo p-numbers
 
-**Theorem 9** (explicit formula, with the factor `k` restored): for `n > p`,
-`𝓛_{p,k,x}(n) = (∑_{i=0}^{⌊(n-p)/(p+1)⌋} C(n-p-ip, i)) x_p +
-∑_{i=0}^{min(p-1,n-p-1)} (∑_{j=0}^{⌊(n-p-i-1)/(p+1)⌋} C(n-p-i-1-jp, j)) x_i +
-max{0, ∑_{j=0}^{⌊(n-p)/(p+1)⌋} C(n-p-pj, j+1)} · k`. As in Corollary 7, the printed
-theorem omits the factor `k` on the last term and is false without it (same
-counterexample: `p = 1`, `k = 2`, `n = 2`, `x = (1, 1)` gives `4` versus `3`).
+**Explicit formula for the supergeneralized Leonardo p-numbers.** For all natural numbers
+$p \ge 1$, $k$ and $n$ with $n > p$ and every real sequence $x$, the supergeneralized Leonardo
+$p$-numbers $\mathcal{L}_{p,k,x}$ satisfy
+
+$$\mathcal{L}_{p,k,x}(n) =
+\Big(\sum_{i=0}^{\lfloor (n-p)/(p+1) \rfloor} \binom{n-p-ip}{i}\Big) x_p +
+\sum_{i=0}^{\min(p-1,\,n-p-1)} \Big(\sum_{j=0}^{\lfloor (n-p-i-1)/(p+1) \rfloor}
+\binom{n-p-i-1-jp}{j}\Big) x_i +
+\max\Big\{0, \sum_{j=0}^{\lfloor (n-p)/(p+1) \rfloor} \binom{n-p-pj}{j+1}\Big\} \cdot k.$$
+
+This is Theorem 9 of the paper with the factor $k$ restored: as in Corollary 7, the printed
+theorem omits the factor $k$ on the last term and is false without it (same counterexample:
+$p = 1$, $k = 2$, $n = 2$, $x = (1, 1)$ gives $4$ versus $3$).
 
 ## Depends on
 
-- [Super Leonardo P](super-leonardo-p.md)
+- [Supergeneralized Leonardo p-numbers](super-leonardo-p.md)
 
 ## Sources
 

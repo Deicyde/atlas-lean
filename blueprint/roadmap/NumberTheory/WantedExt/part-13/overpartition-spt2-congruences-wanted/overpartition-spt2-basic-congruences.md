@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionSpt2_basic_congruences
 ---
 
-# Overpartition Spt2 basic congruences
+# Three congruences modulo 4 for $\overline{\mathrm{spt2}}$
 
-For every natural `n`, the three clauses state respectively that
-`overpartitionSpt2 (36 * n + 30)`, `overpartitionSpt2 (48 * n + 34)`, and
-`overpartitionSpt2 (72 * n + 42)` have remainder zero modulo four. Natural-number remainder
-equalities encode the paper's congruences; there is no other deviation.
+**Three congruences modulo 4 for $\overline{\mathrm{spt2}}$.** Let $\overline{\mathrm{spt2}}(n)$
+be the number of smallest parts in the overpartitions of $n$ whose smallest part is even and not
+overlined. For every natural number $n$, each of $\overline{\mathrm{spt2}}(36n + 30)$,
+$\overline{\mathrm{spt2}}(48n + 34)$ and $\overline{\mathrm{spt2}}(72n + 42)$ is divisible by $4$.
 
 ## Depends on
 
-- [Overpartition Spt2](overpartition-spt2.md)
+- [Number of smallest even parts in overpartitions](overpartition-spt2.md)
 
 ## Sources
 

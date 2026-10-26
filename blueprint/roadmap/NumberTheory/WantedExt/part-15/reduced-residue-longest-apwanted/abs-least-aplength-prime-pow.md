@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength_prime_pow
 ---
 
-# Abs Least APLength prime pow
+# Longest progressions of absolute least residues: prime powers
 
-Theorem 1, prime-power cases: `g(p ^ r) = p ^ (r - 1)` for an odd prime `p` and `r > 1`, and
-for `p = 2` and `r ≥ 1`.
+**Longest progressions of absolute least residues: prime powers.** Let $p$ be a prime and
+$r \ge 1$, with $r \ge 2$ when $p$ is odd. Then the length $g(p^r)$ of the longest arithmetic
+progression in the absolute least reduced residue system modulo $p^r$ is $p^{r-1}$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Sources
 

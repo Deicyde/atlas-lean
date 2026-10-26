@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.hasSum_ringChoose_mul_sin
 ---
 
-# Lemma 1
+# Ramanujan's binomial sine series
 
-**Lemma 1**: Ramanujan's generalized-binomial sine series.
-For real `a`, `N ≥ 0`, and `|θ| ≤ π / 2`, the series
-`∑' ν, (N choose ν) * sin((a + 2ν)θ)` converges to
-`2^N * cos(θ)^N * sin((a + N)θ)`, with real powers.
+**Ramanujan's binomial sine series.** Let $a$, $N$ and $\theta$ be real numbers with
+$N \ge 0$ and $|\theta| \le \pi / 2$. Then the series
+$\sum_{\nu=0}^{\infty} \binom{N}{\nu} \sin((a + 2\nu)\theta)$ converges unconditionally to
+$2^N (\cos \theta)^N \sin((a + N)\theta)$. Here $\binom{N}{\nu} = N(N-1)\cdots(N-\nu+1)/\nu!$
+is the generalized binomial coefficient, and $2^N$ and $(\cos \theta)^N$ are real powers.
 
 ## Depends on
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_zero_bzQMZV_cons
 ---
 
-# Coeff zero bz QMZV cons
+# Nonempty Bradley–Zhao qMZVs have no constant term
 
-A nonempty BZ-qMZV has no constant term.
+**Nonempty Bradley–Zhao qMZVs have no constant term.** For every nonempty index
+$(k_1, \dots, k_r)$ of natural numbers, the constant coefficient of the Bradley–Zhao
+q-multiple zeta value $\zeta_q^{BZ}(k_1, \dots, k_r)$ is $0$.
 
 ## Depends on
 
-- [Bz QMZV](bz-qmzv.md)
+- [Bradley–Zhao q-multiple zeta values](bz-qmzv.md)
 
 ## Proof depends on
 
-- [Coeff zero q MZV cons](coeff-zero-q-mzv-cons.md)
+- [Nonempty general qMZVs have no constant term](coeff-zero-q-mzv-cons.md)
 
 ## Sources
 

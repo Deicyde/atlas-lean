@@ -5,21 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.gaussian_quadSchatunowskySet_eq
 ---
 
-# Gaussian quad Schatunowsky Set eq
+# The first three Schatunowsky sets of the Gaussian integers
 
-Corollary 1: for the Gaussian integers (`discr K = -4`), with `π_1 = 1 + i` the prime of norm
-`2` (any element `π` of norm `2`; all are associates), `π_2# = 5π`, `π_3# = 15π`, `π_4# = 195π`:
-`Q_{-1,1} = {α | 1 < N(α) ≤ 4} ∪ {γπ_1 | 3 ≤ N(γ) ≤ 12} ∪ {π_2#}`,
-`Q_{-1,2} = {α | 1 < N(α) ≤ 8} ∪ {γπ_1 | 5 ≤ N(γ) ≤ 62} ∪ {γ(π_2#) | 3 ≤ N(γ) ≤ 14} ∪
-{γ(π_3#) | 2 ≤ N(γ) ≤ 4}`,
-`Q_{-1,3} = {α | 1 < N(α) ≤ 16} ∪ {γπ_1 | 9 ≤ N(γ) ≤ 312} ∪ {γ(π_2#) | 13 ≤ N(γ) ≤ 131} ∪
-{γ(π_3#) | 15 ≤ N(γ) ≤ 63} ∪ {π_4#}` (as sets of elements, so `{π_k#}` is its associates), and
-the elements of largest norm are `π_2# = 5(1+i)`, `2(π_3#) = 30(1+i)` and `π_4# = 195(1+i)`,
-unique up to units. The record's closing remark on Dalezman is omitted.
+**The first three Schatunowsky sets of the Gaussian integers.** Let $K$ be a number field
+of discriminant $-4$ (so $K \cong \mathbb{Q}(i)$). For $\alpha \in \mathcal{O}_K$ let $N(\alpha)$
+be the absolute norm of the ideal $(\alpha)$, and let $Q_\ell$ be the set of
+$\alpha \in \mathcal{O}_K$ with $N(\alpha) > 1$ such that every $\beta \in \mathcal{O}_K$ coprime
+to $\alpha$ with $1 < N(\beta) < N(\alpha)$ has at most $\ell$ prime ideal factors, counted with
+multiplicity. Below, $\gamma$ ranges over $\mathcal{O}_K$ and $\pi$ over the elements of norm $2$.
+Then $Q_1$ consists of the $\alpha$ with $1 < N(\alpha) \le 4$, the products $\gamma\pi$ with
+$3 \le N(\gamma) \le 12$, and the associates of $5\pi$. The set $Q_2$ consists of the $\alpha$
+with $1 < N(\alpha) \le 8$, the $\gamma\pi$ with $5 \le N(\gamma) \le 62$, the $5\gamma\pi$ with
+$3 \le N(\gamma) \le 14$, and the $15\gamma\pi$ with $2 \le N(\gamma) \le 4$. The set $Q_3$
+consists of the $\alpha$ with $1 < N(\alpha) \le 16$, the $\gamma\pi$ with
+$9 \le N(\gamma) \le 312$, the $5\gamma\pi$ with $13 \le N(\gamma) \le 131$, the $15\gamma\pi$
+with $15 \le N(\gamma) \le 63$, and the associates of $195\pi$. Moreover, the elements of largest
+norm are unique up to units: for $(c, \ell) = (5, 1), (30, 2), (195, 3)$ there is a $\pi$ of
+norm $2$ with $c\pi \in Q_\ell$ such that every $\alpha \in Q_\ell$ has $N(\alpha) \le N(c\pi)$,
+with $\alpha$ an associate of $c\pi$ in case of equality.
 
 ## Depends on
 
-- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
+- [Schatunowsky set of a number field](quad-schatunowsky-set.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisA002897Wanted.xyzPowN
 ---
 
-# Xyz Pow N
+# Exponent vector of $x^n y^n z^n$
 
-The finsupp for the monomial `x^n y^n z^n`.
+**Exponent vector of $x^n y^n z^n$.** For a natural number $n$, the exponent vector assigning
+exponent $n$ to each of the three variables $x, y, z$, that is, the monomial $x^n y^n z^n$.
 
 ## Depends on
 
-- [Vars](vars.md)
+- [Indices for three variables](vars.md)
 
 ## Sources
 

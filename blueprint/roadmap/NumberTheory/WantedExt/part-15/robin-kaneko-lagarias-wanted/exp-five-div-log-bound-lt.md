@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exp_five_div_log_bound_lt
 ---
 
-# Exp five div log bound lt
+# The factor $\hat C(k)$ is below $1.525$
 
-For `k ≥ 13042`, `Ĉ(k) = exp(5/log((k+1)(log(k+1) + log log(k+1) - 1))) < 1.525` (`Ĉ` as
-defined in the proof of Proposition 1).
+**The factor $\hat C(k)$ is below $1.525$.** Let $\log$ be the natural logarithm. For every
+natural number $k \ge 13042$, with $L^-(k) = (k+1)(\log(k+1) + \log\log(k+1) - 1)$,
+
+$$\hat C(k) = \exp\Bigl(\frac{5}{\log L^-(k)}\Bigr) < 1.525.$$
 
 ## Depends on
 

@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.quadSchatunowskySet_norm_bound_and_finite
 ---
 
-# Quad Schatunowsky Set norm bound and finite
+# Norm bound and finiteness of the Schatunowsky set
 
-Theorem 4: if `n₀` has the property of Proposition 4 (`N(π_{n+1})^{ℓ+1} < N(π_n#)` for all
-`n ≥ n₀`), then no `α` with `N(π_{n₀})^{ℓ+1} < N(α)` lies in `Q_{m,ℓ}`; and `Q_{m,ℓ}` is finite.
+**Norm bound and finiteness of the Schatunowsky set.** Let $K$ be an imaginary quadratic field
+(a totally complex number field of degree $2$ over $\mathbb{Q}$) with class number $1$ and ring of
+integers $\mathcal{O}_K$, and let $\ell$ and $n_0$ be natural numbers such that
+$N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$ for every $n \ge n_0$, where $N(\pi_n)$ and $N(\pi_n\#)$ are
+the prime and primorial norms of $K$. Then no $\alpha \in \mathcal{O}_K$ whose principal ideal
+$(\alpha)$ has absolute norm greater than $N(\pi_{n_0})^{\ell+1}$ lies in the Schatunowsky set
+$Q_\ell(K)$, and $Q_\ell(K)$ is finite.
 
 ## Depends on
 
-- [Quad Prime Norm](quad-prime-norm.md)
-- [Quad Primorial Norm](quad-primorial-norm.md)
-- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
+- [Norm of the $n$-th prime](quad-prime-norm.md)
+- [Norm of the $n$-th primorial](quad-primorial-norm.md)
+- [Schatunowsky set of a number field](quad-schatunowsky-set.md)
 
 ## Sources
 

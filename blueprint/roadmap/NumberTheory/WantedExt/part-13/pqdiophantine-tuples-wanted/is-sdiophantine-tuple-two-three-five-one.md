@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isSDiophantineTuple_two_three_five_one_three_eight
 ---
 
-# Is SDiophantine Tuple two three five one three eight
+# $(1, 3, 8)$ is a $\{2, 3, 5\}$-Diophantine triple
 
-`(1, 3, 8)` is a `{2, 3, 5}`-Diophantine triple: `1 * 3 + 1 = 2 ^ 2`,
-`1 * 8 + 1 = 3 ^ 2`, `3 * 8 + 1 = 5 ^ 2`.
+**$(1, 3, 8)$ is a $\{2, 3, 5\}$-Diophantine triple.** The set $\{1, 3, 8\}$ is a
+$\{2, 3, 5\}$-Diophantine tuple, since $1 \cdot 3 + 1 = 2^2$, $1 \cdot 8 + 1 = 3^2$ and
+$3 \cdot 8 + 1 = 5^2$.
 
 ## Depends on
 
-- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
+- [$S$-Diophantine tuples](is-sdiophantine-tuple.md)
 
 ## Sources
 

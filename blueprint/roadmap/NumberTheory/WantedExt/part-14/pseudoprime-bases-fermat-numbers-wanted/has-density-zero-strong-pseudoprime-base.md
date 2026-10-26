@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hasDensity_zero_strongPseudoprime_bases_not_subgroup
 ---
 
-# Has Density zero strong Pseudoprime bases not subgroup
+# Strong pseudoprime bases almost always form a subgroup
 
-The odd composite numbers `n` whose strong pseudoprime bases do not form a subgroup of
-`(ZMod n)ˣ` have natural density `0`.
+**Strong pseudoprime bases almost always form a subgroup.** The set of odd composite natural
+numbers $n$ for which the units $b$ of $\mathbb{Z}/n\mathbb{Z}$ such that $n$ is a strong
+pseudoprime to the base $b$ do not form a subgroup of the unit group has natural density $0$.
 
 ## Depends on
 

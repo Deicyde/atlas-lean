@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.IsNondeficient
 ---
 
-# Is Nondeficient
+# Non-deficient number
 
-Zelinsky's *non-deficient*: a positive integer with
-`σ(n) ≥ 2n`. (Positivity is part of the notion: with
-`Nat.divisors 0 = ∅` the bare divisor-sum inequality would make
-`0` vacuously non-deficient.)
+**Non-deficient number.** A natural number $n$ is non-deficient when $n \ne 0$ and
+$\sigma(n) \ge 2n$, where $\sigma(n)$ is the sum of the positive divisors of $n$.
+
+Positivity is part of the notion: $0$ has no divisors in this convention, so the inequality
+alone would make $0$ non-deficient.
 
 ## Depends on
 

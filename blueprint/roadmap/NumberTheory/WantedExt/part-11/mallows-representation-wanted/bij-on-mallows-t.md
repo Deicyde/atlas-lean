@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.bijOn_mallowsT
 ---
 
-# Bij On mallows T
+# Hida's map $T$ is a bijection from $I$ onto the Mallows representations
 
-`T` maps `I` bijectively onto the set of Mallows representations (`Set.BijOn` includes
-the membership claim).
+**Hida's map $T$ is a bijection from $I$ onto the Mallows representations.** Let $I$ be the
+set of admissible sequences over $\{O_L, E_R, O_R, E_L\}$, let $T$ be Hida's map from sequences
+over $\{O_L, E_R, O_R, E_L\}$ to sequences over $\{L, M, R\}$, and let $M(\alpha)$ be the Mallows
+representation of a real number $\alpha$. Then $T$ maps $I$ bijectively onto the set
+$\{M(\alpha) : \alpha \in (0, 1) \text{ irrational}\}$: for every $x \in I$ the sequence $T(x)$
+lies in this set, $T$ is injective on $I$, and for every irrational $\alpha \in (0, 1)$ there is
+$x \in I$ with $T(x) = M(\alpha)$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Mallows Admissible](mallows-admissible.md)
-- [Mallows Rep](mallows-rep.md)
-- [Mallows T](mallows-t.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [The admissible parity sequences $I$](mallows-admissible.md)
+- [Mallows representation](mallows-rep.md)
+- [The map $T$](mallows-t.md)
 
 ## Sources
 

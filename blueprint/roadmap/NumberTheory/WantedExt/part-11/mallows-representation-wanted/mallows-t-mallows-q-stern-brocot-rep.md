@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.mallowsT_mallowsQ_sternBrocotRep
 ---
 
-# Mallows T mallows Q stern Brocot Rep
+# The Mallows representation from the Stern–Brocot representation
 
-Main link: `T(Q(SB(α))) = M(α)` for every irrational `α ∈ (0, 1)`.
+**The Mallows representation from the Stern–Brocot representation.** For every irrational
+number $\alpha$ with $0 < \alpha < 1$, the Mallows representation $M(\alpha)$ is obtained from the
+Stern–Brocot representation $\mathrm{SB}(\alpha)$ by applying the map $Q$, which gives a sequence
+over $\{O_L, E_R, O_R, E_L\}$, and then the map $T$, which gives a sequence over $\{L, M, R\}$:
+$T(Q(\mathrm{SB}(\alpha))) = M(\alpha)$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Q](mallows-q.md)
-- [Mallows Rep](mallows-rep.md)
-- [Mallows T](mallows-t.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [Mallows representation](mallows-rep.md)
+- [The map $T$](mallows-t.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

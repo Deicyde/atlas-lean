@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isSZumkeller_even_props
 ---
 
-# Is SZumkeller even props
+# Properties of even s-Zumkeller numbers
 
-An even s-Zumkeller number `n` has `σ₂(n)` even, some odd prime with odd
-exponent, and `σ₂(n) ≥ 3n²/2`.
+**Properties of even s-Zumkeller numbers.** Let $n$ be an even s-Zumkeller number and let
+$\sigma_2(n)$ be the sum of the squares of the positive divisors of $n$. Then $\sigma_2(n)$ is
+even, some odd prime $p$ divides $n$ with an odd exponent in the prime factorization of $n$, and
+$3n^2 \le 2\sigma_2(n)$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

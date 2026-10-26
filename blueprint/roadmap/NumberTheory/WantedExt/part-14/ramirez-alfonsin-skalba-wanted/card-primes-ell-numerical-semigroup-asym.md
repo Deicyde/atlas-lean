@@ -5,13 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.card_primes_ellNumericalSemigroup_asymptotic
 ---
 
-# Theorem 1
+# Asymptotic count of primes with more than $\ell$ representations
 
-**Theorem 1.** For each `ℓ`, `π_{ℓ,c,d} ∼ π(g_ℓ(c, d)) / (2ℓ + 2)` as `c → ∞`,
-uniformly over coprime `d > c`, where `π_{ℓ,c,d}` is the number of primes
-`n ≤ g_ℓ(c, d)` with more than `ℓ` representations `n = c x + d y`.
+**Asymptotic count of primes with more than $\ell$ representations.** For every natural
+number $\ell$ and every $\varepsilon > 0$ there is a natural number $C$ such that the following
+holds for all coprime natural numbers $c$ and $d$ with $C \le c < d$. Put
+$g_\ell(c, d) = (\ell + 1)cd - c - d$, and let $\pi_{\ell,c,d}$ be the number of primes
+$n \le g_\ell(c, d)$ such that the equation $n = cx + dy$ has more than $\ell$ solutions
+$(x, y)$ in natural numbers. Then, with $\pi$ the prime-counting function,
 
-The asymptotic is stated with explicit `ε` and a threshold `C` for `c`.
+$$
+\left|\pi_{\ell,c,d} - \frac{\pi(g_\ell(c, d))}{2\ell + 2}\right| <
+\varepsilon \, \frac{\pi(g_\ell(c, d))}{2\ell + 2}.
+$$
+
+That is, $\pi_{\ell,c,d} \sim \pi(g_\ell(c, d))/(2\ell + 2)$ as $c \to \infty$, uniformly over
+coprime $d > c$.
 
 ## Depends on
 

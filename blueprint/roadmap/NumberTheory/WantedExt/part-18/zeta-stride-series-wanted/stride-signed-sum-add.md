@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.strideSignedSum_add
 ---
 
-# Stride Signed Sum add
+# Recurrence for the signed stride sum
 
-Recurrence `T_{q,t}(n + q) = (n + q)^{-t} + (-1)^{q+1} T_{q,t}(n)` for `n ≥ 1`, where
-`T_{q,t}` is the signed stride sum.
+**Recurrence for the signed stride sum.** Let $q \ge 1$, $n \ge 1$ and $t \ge 0$ be integers
+and let $T_{q,t}$ denote the signed stride sum. Then
+$T_{q,t}(n + q) = 1/(n + q)^t + (-1)^{q+1} T_{q,t}(n)$.
 
 ## Depends on
 
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

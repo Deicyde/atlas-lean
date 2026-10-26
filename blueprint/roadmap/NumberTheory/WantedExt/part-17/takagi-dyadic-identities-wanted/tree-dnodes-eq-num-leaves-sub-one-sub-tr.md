@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.treeDNodes_eq_numLeaves_sub_one_sub_treeSNodes
 ---
 
-# Tree DNodes eq num Leaves sub one sub tree SNodes
+# $D$-nodes and $S$-nodes of a full binary tree
 
-Lemma 5: in a full binary tree with `n` leaves and `a(n)` `S`-nodes, the number of
-`D`-nodes is `n - 1 - a(n)`.
+**$D$-nodes and $S$-nodes of a full binary tree.** Let $t$ be a full binary tree with $n$
+leaves and let $a$ be the number of $S$-nodes of $t$. Then the number of $D$-nodes of $t$ is
+$n - 1 - a$ (subtraction of natural numbers, truncated at $0$).
 
 ## Depends on
 
-- [Tree DNodes](tree-dnodes.md)
-- [Tree SNodes](tree-snodes.md)
+- [Number of $D$-nodes of a full binary tree](tree-dnodes.md)
+- [Number of $S$-nodes of a full binary tree](tree-snodes.md)
 
 ## Sources
 

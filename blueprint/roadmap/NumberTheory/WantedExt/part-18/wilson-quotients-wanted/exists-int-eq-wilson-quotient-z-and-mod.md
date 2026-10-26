@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.exists_int_eq_wilsonQuotientZ_and_modEq
 ---
 
-# Exists int eq wilson Quotient Z and mod Eq
+# The Wilson quotient sum Z(n) modulo n
 
-Morozov's Theorem 3: the integer value of `Z(n)` is
-`1 [ZMOD n]` for composite `n` and `-1 [ZMOD n]` for `n = 1`
-or prime.
+**The Wilson quotient sum Z(n) modulo n.** Let $n \ge 1$ be a natural number. Morozov's
+Wilson quotient sum $Z(n)$ is an integer; moreover $Z(n) \equiv 1 \pmod{n}$ if $n$ is neither
+$1$ nor prime, and $Z(n) \equiv -1 \pmod{n}$ if $n = 1$ or $n$ is prime.
 
 ## Depends on
 
-- [Wilson Quotient Z](wilson-quotient-z.md)
+- [Morozov's Wilson quotient sum](wilson-quotient-z.md)
 
 ## Sources
 

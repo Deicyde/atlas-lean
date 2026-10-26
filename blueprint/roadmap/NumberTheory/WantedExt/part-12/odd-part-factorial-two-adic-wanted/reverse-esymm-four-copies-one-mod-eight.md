@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.reverseESymm_fourCopies_oneModEight_congr
 ---
 
-# Reverse ESymm four Copies one Mod Eight congr
+# $\hat\sigma_1$ of four copies of the numbers $1 \bmod 8$ below $2^e$
 
-For `e≥3`, `σ̂_1` of the multiset with four copies of each number below `2^e`
-congruent to `1 mod 8` is congruent to `2^(e-1)` modulo `2^e`.  The displayed
-sequence `{1,9,...,2^e-7}` is represented by `oneModEightBelowTwoPow e`, and four copies
-by multiset scalar multiplication.
+**$\hat\sigma_1$ of four copies of the numbers $1 \bmod 8$ below $2^e$.** Let $e \ge 3$ and let
+$M_e$ be the multiset of integers containing each natural number $n < 2^e$ with
+$n \equiv 1 \pmod 8$ (that is, $1, 9, \dots, 2^e - 7$) exactly four times, let $N$ be the
+number of elements of $M_e$ counted with multiplicity, and write $\sigma_k$ for the elementary
+symmetric function of degree $k$. Then the reversed elementary symmetric function
+$\hat\sigma_1(M_e) = \sigma_{N-1}(M_e)$ satisfies $\hat\sigma_1(M_e) \equiv 2^{e-1} \pmod{2^e}$
+in $\mathbb{Z}$.
 
 ## Depends on
 
-- [Four Copies One Mod Eight Below Two Pow](four-copies-one-mod-eight-below-two-pow.md)
-- [Reverse ESymm](reverse-esymm.md)
+- [Four copies of the residues $1 \bmod 8$ below $2^e$](four-copies-one-mod-eight-below-two-pow.md)
+- [Reversed elementary symmetric functions](reverse-esymm.md)
 
 ## Sources
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.linear_weaklyLocallyNilpotent_not_nilpotentAt_one
 ---
 
-# Linear weakly Locally Nilpotent not nilpotent At one
+# Linear polynomials weakly locally nilpotent but not nilpotent at $1$
 
-For a finite set `A` of primes, the linear polynomials weakly locally nilpotent at `1`
-outside `A` and not nilpotent at `1` are exactly `x + c`, `x - c` with `c ≠ 1`,
-`±c x + 1` with `c ≠ 1`, and (only when `2 ∈ A`) `-2x - 1`, where `c` ranges over the
-positive integers all of whose prime factors lie in `A` (`c = q_1^{s_1} ⋯ q_k^{s_k}`;
-`c ≠ 1` is the paper's `∑ s_i ≥ 1`).
+**Linear polynomials weakly locally nilpotent but not nilpotent at $1$.** Let $A$ be a finite
+set of primes, and let $c$ range over the positive integers all of whose prime factors lie in $A$.
+A polynomial $u \in \mathbb{Z}[x]$ of degree $1$ is weakly locally nilpotent at $1$ outside $A$ and
+not nilpotent at $1$ if and only if $u$ is one of: $x + c$; $x - c$ with $c \ne 1$; $cx + 1$ or
+$-cx + 1$ with $c \ne 1$; or $-2x - 1$, the last only when $2 \in A$.
+
+Writing $c = q_1^{s_1} \cdots q_k^{s_k}$ with the $q_i$ the primes of $A$, the condition $c \ne 1$
+is the paper's $\sum s_i \ge 1$.
 
 ## Depends on
 
-- [Is Nilpotent At](is-nilpotent-at.md)
-- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+- [Nilpotent polynomial at a point](is-nilpotent-at.md)
+- [Weakly locally nilpotent polynomial at a point](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

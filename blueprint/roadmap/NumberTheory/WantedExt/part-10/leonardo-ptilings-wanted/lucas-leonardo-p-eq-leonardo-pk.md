@@ -15,9 +15,9 @@ for every natural number $n$.
 
 ## Depends on
 
-- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
-- [Leonardo PKZ](../../part-11/leonardo-pwanted/leonardo-pkz.md)
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Generalized Leonardo $p$-numbers](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers at integer arguments](../../part-11/leonardo-pwanted/leonardo-pkz.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

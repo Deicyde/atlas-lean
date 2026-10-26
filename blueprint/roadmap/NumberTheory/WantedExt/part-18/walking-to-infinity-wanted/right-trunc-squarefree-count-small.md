@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rightTruncSquarefreeCount_small
 ---
 
-# Right Trunc Squarefree Count small
+# Small counts of right-truncatable square-free numbers
 
-Small values from the paper: `L_{2,n} = 1, 2, 3, 5` for `n = 1, …, 4` and `L_{10,1} = 6`.
+**Small counts of right-truncatable square-free numbers.** Let $L_{b,k}$ denote the number of
+right-truncatable square-free numbers with exactly $k$ digits in base $b$. Then $L_{2,1} = 1$,
+$L_{2,2} = 2$, $L_{2,3} = 3$, $L_{2,4} = 5$ and $L_{10,1} = 6$.
 
 ## Depends on
 
-- [Right Trunc Squarefree Count](right-trunc-squarefree-count.md)
+- [Counting right-truncatable square-free numbers](right-trunc-squarefree-count.md)
 
 ## Sources
 

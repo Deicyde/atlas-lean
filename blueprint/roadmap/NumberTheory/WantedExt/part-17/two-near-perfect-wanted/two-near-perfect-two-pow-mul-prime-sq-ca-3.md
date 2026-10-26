@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.two_near_perfect_two_pow_mul_prime_sq_case_five
 ---
 
-# Two near perfect two pow mul prime sq case five
+# $2$-near perfect $2^k p^2$ with omitted divisors $p^m$ and $2^b p^j$
 
-Proposition 4 (Case V: omitted divisors `p^m`, `m ∈ {1, 2}`, and `2^b p^j`,
-`1 ≤ b ≤ k`, `j ∈ {1, 2}`): if `n = 2^k p^2` (`p` an odd prime) is `2`-near perfect with
-such omitted divisors, then `n = 200`.
+**$2$-near perfect $2^k p^2$ with omitted divisors $p^m$ and $2^b p^j$.** Let $p$ be an odd
+prime, let each of $m$ and $j$ be $1$ or $2$, and let $b, k$ be integers with $1 \le b \le k$.
+If $n = 2^k p^2$ satisfies $\sigma(n) = 2n + p^m + 2^b p^j$, where $\sigma$ is the
+sum-of-divisors function (that is, $n$ is $2$-near perfect with omitted divisors $p^m$ and
+$2^b p^j$), then $n = 200$.
 
 ## Depends on
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotFrac_parity_not_eventually_const
 ---
 
-# Stern Brocot Frac parity not eventually const
+# The numerator parities are not eventually constant
 
-The parities of the numerators of `f_1(α), f_2(α), …` are not eventually constant.
+**The numerator parities are not eventually constant.** Let $\alpha \in (0, 1)$ be
+irrational and let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its Stern–Brocot path.
+Then there are no natural numbers $c$ and $j_0$ such that the numerator of $f_j(\alpha)$ has
+remainder $c$ modulo $2$ for all $j \ge j_0$: the parities of these numerators are not
+eventually constant.
 
 ## Depends on
 
-- [Stern Brocot Frac](stern-brocot-frac.md)
+- [Fractions on the Stern–Brocot path](stern-brocot-frac.md)
 
 ## Sources
 

@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.oddPart
 ---
 
-# Odd Part
+# Odd part
 
-`oddPart n` is the factor of `n` left after removing the full power of two in
-`n`.  The paper writes this as `od(n)`; the formalization reuses Mathlib's
-`ordCompl[2] n`, rather than introducing a quotient with a separately defined
-valuation.
+**Odd part.** For a natural number $n \ge 1$, the odd part $\operatorname{od}(n)$ is
+$n / 2^{\nu_2(n)}$, where $2^{\nu_2(n)}$ is the largest power of $2$ dividing $n$; it is the odd
+factor of $n$ left after removing that power of $2$. For $n = 0$ the definition gives
+$\operatorname{od}(0) = 0$.
 
 ## Depends on
 

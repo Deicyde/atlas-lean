@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitMoebius_support_density
 ---
 
-# Square Split Moebius support density
+# Support and density of the square-splitting Möbius function
 
-Theorem 11: `μ⋆(n) ≠ 0` if and only if every prime exponent of `n` is at
-most `3`; the set `S = {n : μ⋆(n) ≠ 0}` has natural density
-`∏_p (1 - p^{-4}) = 1/ζ(4)`, equivalently `∑_{n ≤ x} μ⋆(n)² ∼ x/ζ(4)`.
-`μ⋆` enters as any `m` with `1 ⋆ m = ε`.
+**Support and density of the square-splitting Möbius function.** Let $\star$ be the
+square-splitting convolution, $\mathbf{1}$ the constant function $1$ on the positive integers,
+$\varepsilon$ the identity element ($\varepsilon(1) = 1$ and $\varepsilon(n) = 0$ for $n \ne 1$),
+and let $\mu_\star$ be any complex-valued arithmetic function with
+$\mathbf{1} \star \mu_\star = \varepsilon$. Then for every $n \ge 1$, $\mu_\star(n) \ne 0$ if and
+only if every prime exponent of $n$ is at most $3$. The proportion of the integers
+$1 \le n \le N$ with $\mu_\star(n) \ne 0$ tends to $\prod_p (1 - p^{-4})$ as $N \to \infty$, and
+$\prod_p (1 - p^{-4}) = 1/\zeta(4)$. Finally,
+$\sum_{1 \le n \le x} |\mu_\star(n)|^2 \sim x/\zeta(4)$ as $x \to \infty$.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
+- [Square-splitting convolution](square-split-conv.md)
 
 ## Sources
 

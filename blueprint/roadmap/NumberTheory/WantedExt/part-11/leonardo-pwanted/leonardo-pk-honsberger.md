@@ -5,23 +5,26 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_honsberger
 ---
 
-# Theorem 13
+# Honsberger-type identity for generalized Leonardo $p$-numbers
 
-**Theorem 13** (Honsberger-type identity, index
-corrected): for positive `m, n`,
-`ℒ_{p,k}(m)ℒ_{p,k}(n+1) + ∑_{i=1}^p ℒ_{p,k}(m-i)
-ℒ_{p,k}(n-p+i) = (k+1)ℒ_{p,k}(m+n+1) -
-k(ℒ_{p,k}(m+p) + ℒ_{p,k}(n+p+1)) + pk² + k`, with
-`ℒ_{p,k}` at negative arguments read through the same
-recurrence (here `leonardoPK` at truncated indices,
-where the paper's values at negative arguments in
-`[-p, -1]` are `-k`; the statement is stated with the
-`ℤ`-extension `leonardoPKZ` below).
+**Honsberger-type identity for generalized Leonardo $p$-numbers.** Let $p$, $k$, $m$ and $n$
+be natural numbers with $p, k, m, n \ge 1$. Write $\mathcal{L}$ for the generalized Leonardo
+$p$-numbers $\mathcal{L}_{p,k}$, extended to negative integers by $\mathcal{L}(t) = -k$ for
+$t < 0$. Then
+
+$$
+\mathcal{L}(m)\mathcal{L}(n+1) + \sum_{i=1}^{p} \mathcal{L}(m-i)\mathcal{L}(n-p+i) =
+(k+1)\mathcal{L}(m+n+1) - k\bigl(\mathcal{L}(m+p) + \mathcal{L}(n+p+1)\bigr) + pk^2 + k.
+$$
+
+The arguments that occur are at least $-p$, and on $[-p, -1]$ the value $-k$ is the one forced by
+the recurrence $\mathcal{L}(t) = \mathcal{L}(t-1) + \mathcal{L}(t-p-1) + k$ read backwards. The
+paper prints the summation index as $j$ in $\mathcal{L}(m-j)$; it is corrected to $i$ here.
 
 ## Depends on
 
-- [Leonardo PK](leonardo-pk.md)
-- [Leonardo PKZ](leonardo-pkz.md)
+- [Generalized Leonardo $p$-numbers](leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers at integer arguments](leonardo-pkz.md)
 
 ## Sources
 

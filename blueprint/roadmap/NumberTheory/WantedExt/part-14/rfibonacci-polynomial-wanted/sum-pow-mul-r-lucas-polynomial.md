@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_rLucasPolynomial
 ---
 
-# Sum pow mul r Lucas Polynomial
+# Geometrically weighted sum of $r$-Lucas polynomials
 
-Theorem 5: for `η_n = m^n V^{(r,s)}_n`, `r ≥ 1`, `n ≥ r - 1` and
-`P(1) = 1 - m x - m^{r+1} y ≠ 0`,
-`∑_{j=1}^{n} η_j = (1 + s m^{r+1} y - η_{n+1} - m^{r+1} y ∑_{j=1}^{r} η_{n-r+j}) / P(1) - 1`.
-The paper takes `m` a positive integer (here any field element) and states no
-range for `n`; for `n < r - 1` the right side involves `η` at negative indices.
+**Geometrically weighted sum of $r$-Lucas polynomials.** Let $K$ be a field, let $r \ge 1$ and
+$s$ be natural numbers, let $x, y, m \in K$ with $1 - m x - m^{r+1} y \ne 0$, and write $V_j$ for
+the $r$-Lucas polynomial of type $s$, $V_j = V^{(r,s)}_j(x, y)$. Then for every natural number
+$n \ge r - 1$,
+
+$$
+\sum_{j=1}^{n} m^j V_j =
+\frac{1 + s m^{r+1} y - m^{n+1} V_{n+1} - m^{r+1} y \sum_{j=1}^{r} m^{n-r+j} V_{n-r+j}}
+{1 - m x - m^{r+1} y} - 1.
+$$
+
+The paper takes $m$ a positive integer (here any element of $K$) and states no range for $n$; for
+$n < r - 1$ the right side involves $V$ at negative indices.
 
 ## Depends on
 
-- [R Lucas Polynomial](r-lucas-polynomial.md)
+- [The $r$-Lucas polynomials of type $s$](r-lucas-polynomial.md)
 
 ## Sources
 

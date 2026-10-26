@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isSignedPowTwoSum_iff
 ---
 
-# Is Signed Pow Two Sum iff
+# Interval and congruence characterization of signed power-of-two sums
 
-Interval and congruence characterization of signed power-of-two sums.
-
-Verified by brute-force enumeration for `m ∈ {1, 2, 3, 5}`, `s ≤ 2`,
-`t - s ≤ 3` before formalizing.
+**Interval and congruence characterization of signed power-of-two sums.** Let $m \ge 1$ and
+$s \le t$ be natural numbers and put $L = t - s + 1$. An integer $n$ can be written as
+$\sum_{j=s}^{t} \lambda_j 2^j$ with every $\lambda_j \in \{-1, m\}$ if and only if
+$-2^s (2^L - 1) \le n \le 2^s m (2^L - 1)$ and $n \equiv -2^s (2^L - 1) \pmod{2^s (m + 1)}$.
 
 ## Depends on
 
-- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
+- [Signed power-of-two sums](is-signed-pow-two-sum.md)
 
 ## Sources
 

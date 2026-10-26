@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_strideSignedSum_dirichletEta
 ---
 
-# Tendsto stride Signed Sum dirichlet Eta
+# Stride series for the Dirichlet eta function
 
-Series representation of the Dirichlet eta function: for `q, t ≥ 1`,
-`η(t+1) = ∑_{n≥1} (-1)^{n+1} (2n+q)/(n(n+q)) T_{q,t}(n)` (limit of partial sums), with
-`η(s) = ∑_{n≥1} (-1)^{n+1} n^{-s}`.
+**Stride series for the Dirichlet eta function.** Let $q, t \ge 1$ be integers and let
+$T_{q,t}(n)$ denote the signed stride sum. Then the partial sums
+
+$$\sum_{n=1}^{N} (-1)^{n+1} \frac{2n+q}{n(n+q)} T_{q,t}(n)$$
+
+converge, as $N \to \infty$, to $\eta(t+1)$, where $\eta(s) = \sum_{n \ge 1} (-1)^{n+1} n^{-s}$ is
+the Dirichlet eta function.
 
 ## Depends on
 
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

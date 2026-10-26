@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.SelbergClassFunction.aPointCount_of_nonpos
 ---
 
-# A Point Count of nonpos
+# The a-point count vanishes at nonpositive height
 
-`N_k(a; T, F) = 0` for `T ≤ 0`.
+**The a-point count vanishes at nonpositive height.** Let $F$ be a function in the Selberg
+class, $k \in \mathbb{N}$, $a \in \mathbb{C}$ and $E_2, E_1 \in \mathbb{R}$. If $T \le 0$, then
+$N_k(a; T, F) = 0$, where $N_k(a; T, F)$ is the number of a-points of the $k$-th derivative
+$F^{(k)}$, counted with multiplicity, in $E_2 < \operatorname{Re} s < E_1$,
+$0 < \operatorname{Im} s < T$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
-- [A Point Count](a-point-count.md)
+- [Functions in the Selberg class](selberg-class-function.md)
+- [Counting function of a-points of derivatives](a-point-count.md)
 
 ## Sources
 

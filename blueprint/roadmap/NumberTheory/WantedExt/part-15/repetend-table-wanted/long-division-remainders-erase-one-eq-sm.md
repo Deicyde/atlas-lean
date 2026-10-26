@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.long_division_remainders_erase_one_eq_small_bases
 ---
 
-# Long division remainders erase one eq small bases
+# Long-division remainders and small bases of prime order
 
-For a prime `n`, a prime `L` and a base `b` of repetend length `L = ord_n(b)`: if `m = 1`
-or `m` is a small base `2 ≤ m ≤ n - 1` of length `L`, the long-division remainders
-`c_j = m b^j mod n` (`0 ≤ j < L`, one period), with `1` removed, are exactly the small bases
-`2 ≤ a ≤ n - 1` of length `L`.
+**Long-division remainders and small bases of prime order.** Let $n$ and $L$ be primes and
+let $b$ be a natural number of multiplicative order $L$ modulo $n$. Suppose $m = 1$, or
+$2 \le m \le n - 1$ and $m$ has multiplicative order $L$ modulo $n$. Then removing $1$ from the
+set of remainders $\{m b^j \bmod n : 0 \le j < L\}$ leaves exactly the set of integers $a$ with
+$2 \le a \le n - 1$ whose multiplicative order modulo $n$ is $L$.
 
 ## Depends on
 

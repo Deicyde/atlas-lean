@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.zeckAdicPrefixValue_one
 ---
 
-# Zeck Adic Prefix Value one
+# Prefix value of order one
 
-`v_1(x) = x_2`.
+**Prefix value of order one.** For every binary sequence $x = (x_i)_{i \in \mathbb{N}}$, the
+prefix value of order $1$ is $v_1(x) = x_2 F_2$, where $F_2 = 1$ is the second Fibonacci number.
+It equals $x_2$: it is $1$ if $x_2 = 1$ and $0$ otherwise.
 
 ## Depends on
 
-- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
+- [Prefix value of a digit sequence](zeck-adic-prefix-value.md)
 
 ## Sources
 

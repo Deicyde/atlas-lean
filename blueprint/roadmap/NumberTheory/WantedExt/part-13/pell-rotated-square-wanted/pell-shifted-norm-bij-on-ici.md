@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.pellShiftedNorm_bijOn_Ici
 ---
 
-# Pell Shifted Norm bij On Ici
+# The shifted Pell norm function is increasing past its last crossing of the bound
 
-With `x₁ = sup {x ≥ 0 : f_{i,j}(x) = K}` (Equation (3.6)), on `[x₁, ∞)` the function
-`f_{i,j}` equals `u + v + i a + j b` (Equation (3.7)), is strictly increasing, and maps
-`[x₁, ∞)` bijectively onto `[K, ∞)`.
+**The shifted Pell norm function is increasing past its last crossing of the bound.** Let $D$
+be an integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation
+$X^2 - D Y^2 = 1$, put $\varepsilon = \alpha + \beta \sqrt{D}$ and
+$\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let
+$u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and
+$v(x) = (\varepsilon^x - \bar\varepsilon^x) / (2 \sqrt{D})$ for real $x$. Let $a$ and $b$ be
+integers, let $i, j \in \{1, -1\}$, let $f_{i,j}(x) = |i u(x) + a| + |j v(x) + b|$, let
+$K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$ and let $x_1 = \sup \{y \ge 0 : f_{i,j}(y) = K\}$.
+Then $f_{i,j}(x) = u(x) + v(x) + i a + j b$ for every real $x \ge x_1$, the function $f_{i,j}$ is
+strictly increasing on $[x_1, \infty)$, and $f_{i,j}$ maps $[x_1, \infty)$ bijectively onto
+$[K, \infty)$.
 
 ## Depends on
 
-- [Pell Shift Bound](pell-shift-bound.md)
-- [Pell Shifted Norm](pell-shifted-norm.md)
-- [Pell U](pell-u.md)
-- [Pell V](pell-v.md)
+- [The bound $K$ for the shifted Pell equation](pell-shift-bound.md)
+- [The $L^1$ norm along a shifted Pell curve](pell-shifted-norm.md)
+- [The Pell interpolation function u](pell-u.md)
+- [The Pell interpolation function v](pell-v.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.twoAdicCollatz
 ---
 
-# Two Adic Collatz
+# The $2$-adic $3x+1$ map
 
-The `3x+1` map `T : ℤ₂ → ℤ₂`, `T(x) = x/2` for even `x` and `(3x+1)/2` for odd `x`
-(exact division by `2` in `ℤ₂`; see `two_mul_twoAdicCollatz_of_even` and
-`two_mul_twoAdicCollatz_of_odd`).
+**The $2$-adic $3x+1$ map.** The map $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ is defined by
+$T(x) = x/2$ if $x$ is even and $T(x) = (3x+1)/2$ if $x$ is odd, where even and odd refer to the
+residue of $x$ modulo $2$.
+
+In both cases the numerator is divisible by $2$ in $\mathbb{Z}_2$, so the division is exact.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To ZMod three mul add one of odd](to-zmod-three-mul-add-one-of-odd.md)
-- [Two dvd of to ZMod eq zero](two-dvd-of-to-zmod-eq-zero.md)
+- [$3x + 1$ is even for odd $2$-adic $x$](to-zmod-three-mul-add-one-of-odd.md)
+- [Divisibility by $2$ from the residue modulo $2$](two-dvd-of-to-zmod-eq-zero.md)
 
 ## Sources
 

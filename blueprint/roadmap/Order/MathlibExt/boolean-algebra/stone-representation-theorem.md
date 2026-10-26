@@ -7,11 +7,14 @@ proof: formalized
 lean: MathlibExt.Order.BooleanAlgebra.StoneRepresentation.stone_representation_theorem
 ---
 
-# Stone Representation
+# Stone representation theorem
 
-Every Boolean algebra `B` embeds via an injective `BoundedLatticeHom` into a powerset `Set X` for
-some `X`. `Set X` carries the powerset Boolean algebra and a bounded lattice hom between Boolean
-algebras preserves `ᶜ` via `map_compl'`.
+**Stone representation theorem.** Every Boolean algebra $B$ embeds in a power set algebra: there
+are a set $X$ and an injective map $f$ from $B$ to the power set of $X$ such that
+$f(a \sqcup b) = f(a) \cup f(b)$ and $f(a \sqcap b) = f(a) \cap f(b)$ for all $a, b \in B$,
+$f(\top) = X$ and $f(\bot) = \emptyset$.
+
+Such a map automatically preserves complements: $f(a^c) = X \setminus f(a)$ for all $a \in B$.
 
 ## Depends on
 

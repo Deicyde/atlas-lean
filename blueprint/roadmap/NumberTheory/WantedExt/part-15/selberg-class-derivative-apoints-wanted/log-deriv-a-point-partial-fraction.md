@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.logDeriv_aPoint_partialFraction
 ---
 
-# Lemma 5
+# Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5)
 
-**Lemma 5.** For `σ₁ < Re s < σ₂` and large `t = Im s` (with `s` not an a-point),
-`F^(k+1)(s) / (F^(k)(s) - a) = ∑_{|γ - t| ≤ 1} 1 / (s - ρ) + O(log t)`, the sum over the
-a-points `ρ = β + iγ` of `F^(k)` with multiplicity.
+**Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5).** Let $F$
+be a function in the Selberg class, let $k \ge 1$, write $F^{(k)}$ for the $k$-th derivative of
+$F$, and let $a \in \mathbb{C}$ and let $\sigma_1$, $\sigma_2$ be real numbers. Then there are real
+numbers $t_0$ and $C$ such that for every $s \in \mathbb{C}$ with
+$\sigma_1 < \operatorname{Re} s < \sigma_2$, $\operatorname{Im} s \ge t_0$ and $F^{(k)}(s) \ne a$,
+
+$$\left| \frac{F^{(k+1)}(s)}{F^{(k)}(s) - a} - \sum_{\rho} \frac{m(\rho)}{s - \rho} \right|
+\le C \log \operatorname{Im} s,$$
+
+where $\rho$ runs over the points with $F^{(k)}(\rho) = a$ and
+$|\operatorname{Im} \rho - \operatorname{Im} s| \le 1$, and $m(\rho)$ is the order of the zero of
+$F^{(k)} - a$ at $\rho$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

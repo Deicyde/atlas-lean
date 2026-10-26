@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_prime_modEq_choose_div
 ---
 
-# Choose mul prime mod Eq choose div
+# Binomial coefficients at multiples of a prime divisor
 
-For a prime `p` dividing `n > 0` and every `λ ≥ 0` with `λ p ≠ n`,
-`C(n, λp) ≡ C(n/p, λ) (mod p^{max(ν_p(n), ν_p(n - λp))})`, where `ν_p(n - λp)` is the valuation
-of the integer `n - λp`.
+**Binomial coefficients at multiples of a prime divisor.** Let $p$ be a prime and let
+$n \ge 1$ be an integer divisible by $p$. Then for every integer $\lambda \ge 0$ with
+$\lambda p \ne n$,
+
+$$\binom{n}{\lambda p} \equiv \binom{n/p}{\lambda} \pmod{p^e},$$
+
+where $e = \max(\nu_p(n), \nu_p(n - \lambda p))$ and $\nu_p$ is the $p$-adic valuation; the
+integer $n - \lambda p$ may be negative, and $\nu_p(n - \lambda p)$ is the valuation of its
+absolute value.
 
 ## Depends on
 

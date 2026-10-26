@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.primitive_pythagorean_sides_square_middle_infinite
 ---
 
-# Primitive pythagorean sides square middle infinite
+# Infinitely many primitive Pythagorean triples with a square leg
 
-Li and Zhang's Corollary 1: infinitely many primitive Pythagorean
-triples have first and third sides equal to sums of two positive squares
-and middle side equal to one positive square.
+**Infinitely many primitive Pythagorean triples with a square leg.** There are infinitely
+many triples $(X, Y, Z)$ of natural numbers with $X^2 + Y^2 = Z^2$ and $\gcd(X, Y) = 1$ such that
+$X$ and $Z$ are each a sum of two squares of positive integers and $Y$ is the square of a
+positive integer.
 
 ## Depends on
 

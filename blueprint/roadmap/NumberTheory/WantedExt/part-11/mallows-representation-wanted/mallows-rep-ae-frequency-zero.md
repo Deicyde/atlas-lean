@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_ae_frequency_zero
 ---
 
-# Mallows Rep ae frequency zero
+# Words of frequency zero in almost every Mallows representation
 
-Let `w` be a finite word over `{L, M, R}` containing `M` or both `L` and `R`. For almost every
-irrational `α ∈ (0, 1)`, the frequency of occurrences of `w` in `M(α)` is `0`.
+**Words of frequency zero in almost every Mallows representation.** Let $w$ be a finite word
+over $\{L, M, R\}$ that contains the letter $M$ or contains both $L$ and $R$. Then for almost
+every irrational $\alpha \in (0, 1)$, with respect to Lebesgue measure, $w$ has frequency $0$ in
+the Mallows representation $M(\alpha) = M_0(\alpha) M_1(\alpha) M_2(\alpha) \cdots$: if $N_n$ is
+the number of positions $i < n$ with $M_i(\alpha) M_{i+1}(\alpha) \cdots M_{i+|w|-1}(\alpha) = w$,
+then $N_n / n \to 0$ as $n \to \infty$.
 
 ## Depends on
 
 - [Factor as a list](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/factor-list.md)
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

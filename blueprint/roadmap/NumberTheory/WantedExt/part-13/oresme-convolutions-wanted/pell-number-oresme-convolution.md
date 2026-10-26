@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.pellNumber_oresme_convolution
 ---
 
-# Pell Number oresme convolution
+# Pell–Oresme convolution
 
-The Pell–Oresme convolution:
-`∑_{k=0}^n P_k O_{n-k} = (2/49)(5 P_{n+1} - 4 P_n) - (2/49)(7n+5)/2^n` for every `n ≥ 0`.
+**Pell–Oresme convolution.** Let $P_m$ denote the Pell numbers and let $O_m = m/2^m$ denote
+the Oresme numbers. For every natural number $n$,
+$\sum_{k=0}^{n} P_k O_{n-k} = \frac{2}{49}(5 P_{n+1} - 4 P_n) - \frac{2(7n + 5)}{49 \cdot 2^n}$.
 
 ## Depends on
 

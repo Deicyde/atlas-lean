@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.RamanujanTauWanted.NumberTheory.RamanujanTauProblem.τ_one
 ---
 
-# Τ one
+# Normalisation of the Ramanujan τ-function
 
-Normalisation check: `τ 1 = 1`.
+**Normalisation of the Ramanujan τ-function.** The Ramanujan τ-function satisfies
+$\tau(1) = 1$: the coefficient of $q$ in the $q$-expansion of the modular discriminant $\Delta$
+is $1$.
 
 ## Depends on
 
-- [Τ](untitled.md)
+- [Ramanujan τ-function](untitled.md)
 
 ## Sources
 

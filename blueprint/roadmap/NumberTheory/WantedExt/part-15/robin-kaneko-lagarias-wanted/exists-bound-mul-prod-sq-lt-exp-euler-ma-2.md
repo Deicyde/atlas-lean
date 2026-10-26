@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul_log_log
 ---
 
-# Exists bound mul prod sq lt exp euler Mascheroni mul log log
+# Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient
 
-For `j ∈ {1, 2, 3}` there is `K_j` such that `C(k) B(k) < e^γ log log m` for all `k ≥ K_j`,
-with `m = p_{k+1}# / p_j` and `C(k)`, `B(k)` as in
-`exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul`.
+**Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient.** Let $p_\ell$
+denote the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm, $\gamma$ the
+Euler–Mascheroni constant, $c_1$ the Meissel–Mertens constant and $p\#$ the product of all primes
+at most $p$. For $j \in \{1, 2, 3\}$ and $k \in \mathbb{N}$ put
+$L(k) = (k+1)(\log(k+1) + \log\log(k+1))$, $L^-(k) = (k+1)(\log(k+1) + \log\log(k+1) - 1)$ and
+
+$$C(k) = \log L(k) \cdot \exp\Bigl(c_1 - \frac{1}{p_j} + \frac{5}{\log L^-(k)}\Bigr),
+\qquad B(k) = \prod_{\substack{1 \le \ell \le k+1 \\ \ell \ne j}} \frac{p_\ell^2}{p_\ell^2 - 1}.$$
+
+Then there is $K \in \mathbb{N}$ such that for every $k \ge K$,
+
+$$C(k)\,B(k) < e^{\gamma} \log\log\frac{p_{k+1}\#}{p_j}.$$
 
 ## Depends on
 

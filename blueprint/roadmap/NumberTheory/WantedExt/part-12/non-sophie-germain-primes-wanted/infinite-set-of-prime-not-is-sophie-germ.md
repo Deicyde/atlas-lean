@@ -5,14 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.infinite_setOf_prime_not_isSophieGermainPrime
 ---
 
-# Infinite set Of prime not is Sophie Germain Prime
+# Infinitely many primes are not Sophie Germain primes
 
-There are infinitely many primes that are not Sophie Germain primes: the
-set `T` of primes `q` for which `2q + 1` is not prime is infinite.
-
-Here `T` is the paper's set of primes that are not Sophie Germain primes
-("`a ∈ T`, i.e., `a` is not a Sophie Germain prime"), and a Sophie Germain prime
-is a prime `p` with `2p + 1` prime (`Nat.IsSophieGermainPrime`).
+**Infinitely many primes are not Sophie Germain primes.** The set of primes $q$ that are not
+Sophie Germain primes, that is, the primes $q$ for which $2q + 1$ is not prime, is infinite.
 
 ## Depends on
 

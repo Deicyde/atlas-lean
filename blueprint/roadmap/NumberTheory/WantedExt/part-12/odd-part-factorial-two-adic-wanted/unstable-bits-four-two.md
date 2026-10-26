@@ -6,16 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.unstableBits_four_two
 ---
 
-# Unstable Bits four two
+# The unstable bits for $e = 4$ and $d = 2$
 
-The smaller executable unstable-window check `uns(4,2)=3` witnesses that the
-definition extracts bits by first shifting and then reducing modulo `2^2`.
-It replaces the paper's much larger `uns(17,7)=74` check, whose direct
-factorial evaluation is impractical with the non-native kernel evaluator.
+**The unstable bits for $e = 4$ and $d = 2$.** The unstable bits $\operatorname{uns}(4,2)$ equal
+$3$; that is, $\lfloor \operatorname{od}(16!) / 2^5 \rfloor \bmod 2^2 = 3$, where
+$\operatorname{od}(16!)$ is the odd part of $16!$.
+
+This small case stands in for the paper's worked example $\operatorname{uns}(17,7) = 74$.
 
 ## Depends on
 
-- [Unstable Bits](unstable-bits.md)
+- [Unstable bits](unstable-bits.md)
 
 ## Sources
 

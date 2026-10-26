@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.PrimitiveApollonianCirclePacking
 ---
 
-# Primitive Apollonian Circle Packing
+# Primitive Apollonian circle packing
 
-A `PrimitiveApollonianCirclePacking` is an orbit of integral primitive Descartes quadruples
-under the action of the transformation group.
+**Primitive Apollonian circle packing.** A primitive Apollonian circle packing is an orbit of
+the transformation group acting on the set of integral primitive Descartes quadruples.
 
 ## Depends on
 
@@ -16,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Transformation Group](transformation-group.md)
-- [Transformation Group Action](transformation-group-action.md)
-- [Integral Primitive Descartes Quadruple](integral-primitive-descartes-quadruple.md)
+- [The transformation group](transformation-group.md)
+- [Action of the transformation group on integral primitive Descartes quadruples](transformation-group-action.md)
+- [Integral primitive Descartes quadruple](integral-primitive-descartes-quadruple.md)
 
 ## Sources
 

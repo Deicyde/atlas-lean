@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.exists_int_eq_wilsonQuotientZ
 ---
 
-# Exists int eq wilson Quotient Z
+# The Wilson quotient sum is an integer
 
-Morozov's Theorem 1: `Z(n)` is an integer for positive `n`.
+**The Wilson quotient sum is an integer.** For every natural number $n \ge 1$, Morozov's
+Wilson quotient sum $Z(n)$ is an integer.
 
 ## Depends on
 
-- [Wilson Quotient Z](wilson-quotient-z.md)
+- [Morozov's Wilson quotient sum](wilson-quotient-z.md)
 
 ## Sources
 

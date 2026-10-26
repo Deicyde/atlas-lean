@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.parity_eventually_alternating_iff
 ---
 
-# Parity eventually alternating iff
+# Eventually alternating parities of Stern–Brocot numerators
 
-The parities of the numerators of `f_j(α)` are eventually alternating iff `M` occurs
-infinitely often in `M(α)` and, for some `k ≥ 1`, from the `2k`-th occurrence `m(2k)` of `M` on,
-`M(α) = M R^{e'_1} M L^{e'_2} M R^{e'_3} M ⋯` (`e'_i ≥ 0`). With `m t` the `(t+1)`-st occurrence
-of `M` (`Nat.nth`), this says: for all `t ≥ 2k - 1`, the letters strictly between `m t` and
-`m (t+1)` are `R` for odd `t` and `L` for even `t`.
+**Eventually alternating parities of Stern–Brocot numerators.** Let $\alpha$ be an irrational
+number with $0 < \alpha < 1$, let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its
+Stern–Brocot path, and let $M(\alpha) = \langle M_1(\alpha), M_2(\alpha), \dots \rangle$ be its
+Mallows representation. The following are equivalent: (a) there is $j_0$ such that for every
+$j \ge j_0$ the numerators of $f_j(\alpha)$ and $f_{j+1}(\alpha)$ have different parities;
+(b) the letter $M$ occurs infinitely often in $M(\alpha)$, and, writing $m_1 < m_2 < \cdots$ for
+the positions $i$ with $M_i(\alpha) = M$, there is an integer $k \ge 1$ such that for every
+$t \ge 2k$ and every $i$ with $m_t < i < m_{t+1}$ we have $M_i(\alpha) = R$ if $t$ is even and
+$M_i(\alpha) = L$ if $t$ is odd.
+
+In other words, from the $2k$-th occurrence of $M$ on,
+$M(\alpha) = M R^{e'_1} M L^{e'_2} M R^{e'_3} M \cdots$ with all $e'_i \ge 0$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
-- [Stern Brocot Frac](stern-brocot-frac.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
+- [Fractions on the Stern–Brocot path](stern-brocot-frac.md)
 
 ## Sources
 

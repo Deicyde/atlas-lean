@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_sum_fibonacciP
 ---
 
-# Corollary 6
+# The sequence $A_p$ as a sum of Fibonacci $p$-numbers
 
-**Corollary 6**: for `0 ≤ j < p`,
-`A_p(mp + j) = ∑_{i=0}^m F_p(ip + j)`.
+**The sequence $A_p$ as a sum of Fibonacci $p$-numbers.** For natural numbers $p$, $j$ and $m$
+with $j < p$, the auxiliary sequence $A_p$ and the Fibonacci $p$-numbers $F_p$ satisfy
+$A_p(mp + j) = \sum_{i=0}^{m} F_p(ip + j)$.
 
 ## Depends on
 
-- [Seq AZ](seq-az.md)
+- [The sequence $A_p$](seq-az.md)
 - [Fibonacci p-numbers](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources

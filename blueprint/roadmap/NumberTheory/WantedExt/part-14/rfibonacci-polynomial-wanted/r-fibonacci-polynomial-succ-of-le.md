@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rFibonacciPolynomial_succ_of_le
 ---
 
-# R Fibonacci Polynomial succ of le
+# Recurrence for the $r$-Fibonacci polynomials
 
-`U_{n+1} = x U_n + y U_{n-r}` for `n ≥ r`.
+**Recurrence for the $r$-Fibonacci polynomials.** Let $R$ be a commutative semiring, let
+$x, y \in R$, and let $r \le n$ be natural numbers. Then the $r$-Fibonacci polynomials
+$U_m = U^{(r)}_m(x, y)$ satisfy $U_{n+1} = x \, U_n + y \, U_{n-r}$.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

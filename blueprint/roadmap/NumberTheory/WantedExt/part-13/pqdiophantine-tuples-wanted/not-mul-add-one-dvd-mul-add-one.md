@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.not_mul_add_one_dvd_mul_add_one
 ---
 
-# Not mul add one dvd mul add one
+# $ac + 1$ does not divide $bc + 1$
 
-If `a < b < c` are positive integers, then `ac + 1` does not divide `bc + 1`. The paper
-states this for `S`-Diophantine triples; the `S`-unit hypothesis is not needed.
+**$ac + 1$ does not divide $bc + 1$.** If $a < b < c$ are positive integers, then $ac + 1$
+does not divide $bc + 1$.
+
+The source states this for $S$-Diophantine triples; that hypothesis is not needed.
 
 ## Depends on
 

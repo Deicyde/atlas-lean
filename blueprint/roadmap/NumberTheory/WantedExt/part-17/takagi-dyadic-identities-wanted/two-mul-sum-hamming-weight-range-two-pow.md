@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_sum_hammingWeight_range_two_pow
 ---
 
-# Two mul sum hamming Weight range two pow
+# Sum of binary digit sums below a power of two
 
-Lemma 29: `S₁(2^m) = ∑_{i<2^m} s₁(i) = 2^m · m / 2` (stated as `2 S₁(2^m) = 2^m m`).
+**Sum of binary digit sums below a power of two.** For a natural number $i$, let $s_1(i)$
+denote the sum of the binary digits of $i$. Then for every natural number $m$,
+$2 \sum_{i < 2^m} s_1(i) = 2^m m$; that is, the binary expansions of $0, 1, \dots, 2^m - 1$
+contain $2^m m / 2$ ones in total.
 
 ## Depends on
 

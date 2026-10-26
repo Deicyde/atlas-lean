@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_two_pow_odd_mul_pow_sub_pow_eq_sq_iff
 ---
 
-# Prime pair two pow odd mul pow sub pow eq sq iff
+# Squares of the form $(2^{2k+1}(2p - 1))^x - p^y$ for prime pairs
 
-If `p` and `2p - 1` are primes with `p ≡ 5 (mod 8)` and `k ≥ 0`, then the non-negative
-solutions of `(2^{2k+1}(2p - 1))ˣ - pʸ = z²` are `(x, y, z) = (0, 0, 0)` and
-`(p, k, x, y, z) = ((t² + 3)/4, 0, 1, 0, t)` for `t ∈ ℕ` (then `(t² + 3)/4` and `(t² + 1)/2` are
-the given primes and `(t² + 3)/4 ≡ 5 (mod 8)`).
+**Squares of the form $(2^{2k+1}(2p - 1))^x - p^y$ for prime pairs.** Let $p$ be a prime with
+$p \equiv 5 \pmod 8$ such that $2p - 1$ is prime, and let $k$ be a non-negative integer. Then
+non-negative integers $x$, $y$ and $z$ satisfy $(2^{2k+1}(2p - 1))^x - p^y = z^2$ if and only if
+$(x, y, z) = (0, 0, 0)$, or $k = 0$, $x = 1$, $y = 0$ and $4p = z^2 + 3$.
+
+In the last case the two primes are $p = (z^2 + 3)/4$ and $2p - 1 = (z^2 + 1)/2$.
 
 ## Depends on
 

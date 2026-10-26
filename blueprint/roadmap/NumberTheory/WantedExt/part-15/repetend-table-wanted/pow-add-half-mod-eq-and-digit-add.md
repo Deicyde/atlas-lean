@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pow_add_half_mod_eq_and_digit_add
 ---
 
-# Pow add half mod eq and digit add
+# Half-period symmetry of the repetend of $1/n$
 
-If `L` is even, `(ℤ/nℤ)ˣ` is cyclic and `b` is a small base of order `L`, then
-`b_(j+L/2) = n - b_j` (`b_j = b^j mod n`) and the digits `r_j = ⌊b^(j+1)/n⌋ mod b` satisfy
-`r_j + r_(j+L/2) = r_(L/2)`; summing over rows gives the column relations
-`C_j + C_(j+L/2) = C_(L/2)`, `S_j + S_(j+L/2) = S_(L/2)`.
+**Half-period symmetry of the repetend of $1/n$.** Let $n$ be a natural number whose unit
+group $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic, let $L > 0$ be even, and let $b < n$ be a
+natural number whose multiplicative order modulo $n$ is $L$. For natural numbers $m$ write
+$b_m = b^m \bmod n$ and $r_m = \lfloor b^{m+1}/n \rfloor \bmod b$, the $m$-th base-$b$ digit of
+$1/n$. Then for every natural number $j$ we have $b_{j+L/2} = n - b_j$ and
+$r_j + r_{j+L/2} = r_{L/2}$.
 
 ## Depends on
 

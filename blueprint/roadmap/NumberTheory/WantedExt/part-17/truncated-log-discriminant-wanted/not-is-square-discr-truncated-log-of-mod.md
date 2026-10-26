@@ -11,7 +11,7 @@ If `n ≡ 0, 2, 3 (mod 4)` (`n ≥ 1`), then `disc(F_n)` is not a rational squar
 
 ## Depends on
 
-- [Truncated Log Polynomial](truncated-log-polynomial.md)
+- [Truncated logarithmic polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

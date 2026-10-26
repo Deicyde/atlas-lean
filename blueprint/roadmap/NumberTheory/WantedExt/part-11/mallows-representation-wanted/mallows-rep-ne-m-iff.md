@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_ne_M_iff
 ---
 
-# Mallows Rep ne M iff
+# Mallows representations without the letter $M$
 
-For `α = [0; a_1, a_2, …]` irrational in `(0, 1)`, `M(α)` contains no `M` iff `a_{2k}` is
-even for all `k ≥ 1`; `a k = a_{k+1}`, so `a_{2k}` is `a (2k - 1)`.
+**Mallows representations without the letter $M$.** Let $\alpha \in (0, 1)$ be irrational,
+with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$. The letter $M$ does not occur
+in the Mallows representation $M(\alpha)$ if and only if $a_{2k}$ is even for every $k \ge 1$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

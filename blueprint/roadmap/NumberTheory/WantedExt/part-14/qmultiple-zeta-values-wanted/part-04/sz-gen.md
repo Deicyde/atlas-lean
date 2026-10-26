@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.szGen
 ---
 
-# Sz Gen
+# Generating series of Schlesinger–Zudilin qMZVs
 
-The generating series of SZ-qMZVs of depth `r`,
-`s(X₁, …, Xᵣ; Y₁, …, Yᵣ) = ∑_{kⱼ ≥ 1, dⱼ ≥ 0} ζ_q^SZ(k₁, {0}^{d₁}, …, kᵣ, {0}^{dᵣ})
-∏ⱼ Xⱼ^{kⱼ-1} Yⱼ^{dⱼ}`, in the variables `Xⱼ = Sum.inl j`, `Yⱼ = Sum.inr j` over `ℚ⟦q⟧`.
+**Generating series of Schlesinger–Zudilin qMZVs.** For a natural number $r$, the
+generating series of SZ-qMZVs of depth $r$ is the formal power series in the $2r$ variables
+$X_1, \dots, X_r, Y_1, \dots, Y_r$ with coefficients in $\mathbb{Q}[[q]]$
+
+$$
+s(X_1, \dots, X_r; Y_1, \dots, Y_r) = \sum_{k_1, \dots, k_r \ge 1} \sum_{d_1, \dots, d_r \ge 0}
+\zeta_q^{\mathrm{SZ}}(k_1, \{0\}^{d_1}, \dots, k_r, \{0\}^{d_r})
+\prod_{j=1}^{r} X_j^{k_j - 1} Y_j^{d_j},
+$$
+
+where $\{0\}^{d}$ stands for $d$ consecutive zeros.
 
 ## Depends on
 
@@ -17,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sz Block Index](../part-01/sz-block-index.md)
-- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Block indices for Schlesinger–Zudilin qMZVs](../part-01/sz-block-index.md)
+- [Schlesinger–Zudilin qMZVs](../part-01/sz-qmzv.md)
 
 ## Sources
 

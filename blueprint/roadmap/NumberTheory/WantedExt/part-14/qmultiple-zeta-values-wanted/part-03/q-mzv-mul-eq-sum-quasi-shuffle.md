@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.qMZV_mul_eq_sum_quasiShuffle
 ---
 
-# Q MZV mul eq sum quasi Shuffle
+# Quasi-shuffle relations for general qMZVs
 
-The general evaluation map is an algebra homomorphism for the quasi-shuffle
-product on `M` induced by `(k₁, Q₁) ⋄ (k₂, Q₂) = (k₁ + k₂, Q₁ Q₂)`: for words
-`u, v` of `M` (letters with `deg Q ≤ k`, first letter with `Q(0) = 0`),
-`ζ_q(u ∗ v) = ζ_q(u) ζ_q(v)`.
+**Quasi-shuffle relations for general qMZVs.** Consider words in letters $(k, Q)$ with
+$k \in \mathbb{N}$ and $Q \in \mathbb{Q}[X]$, and let $u$ and $v$ be words in which every letter
+satisfies $\deg Q \le k$ and the first letter, if any, satisfies $Q(0) = 0$. Let $u \ast v$ be
+the quasi-shuffle product of $u$ and $v$ with letter product
+$(k_1, Q_1) \diamond (k_2, Q_2) = (k_1 + k_2, Q_1 Q_2)$, a formal sum of words. Then
+$\zeta_q(u)\,\zeta_q(v) = \zeta_q(u \ast v)$, where $\zeta_q$ sends a word
+$(k_1, Q_1) \cdots (k_r, Q_r)$ to the general qMZV $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$
+and is extended linearly to formal sums of words.
 
 ## Depends on
 
-- [Q MZV](../part-02/q-mzv.md)
-- [Quasi Shuffle](quasi-shuffle.md)
+- [General q-multiple zeta values](../part-02/q-mzv.md)
+- [Quasi-shuffle product](quasi-shuffle.md)
 
 ## Sources
 

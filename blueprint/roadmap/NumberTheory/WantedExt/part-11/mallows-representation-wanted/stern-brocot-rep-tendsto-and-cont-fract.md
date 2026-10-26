@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotRep_tendsto_and_contFract
 ---
 
-# Stern Brocot Rep tendsto and cont Fract
+# Stern–Brocot representation and continued fractions
 
-Stern–Brocot representation: (i) the fractions `f_j(α)` converge to `α`; (ii)
-`SB(α) = L^{a_1 - 1} R^{a_2} L^{a_3} R^{a_4} ⋯` for `α = [0; a_1, a_2, …]`. In (ii) the digit
-sequence is `a k = a_{k+1}`, and position `j` (paper `j + 1`) with
-`a_1 + ⋯ + a_k ≤ j + 1 < a_1 + ⋯ + a_{k+1}` carries `L` for even `k`, `R` for odd `k`.
+**Stern–Brocot representation and continued fractions.** Let $\alpha \in (0, 1)$ be
+irrational with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$, let
+$f_1(\alpha), f_2(\alpha), \ldots$ be the fractions labelling the vertices visited by its
+Stern–Brocot path, and let $SB(\alpha) = SB_1(\alpha) SB_2(\alpha) \cdots$ be its Stern–Brocot
+representation. Then (i) $f_j(\alpha) \to \alpha$ as $j \to \infty$; and (ii)
+$SB(\alpha) = L^{a_1 - 1} R^{a_2} L^{a_3} R^{a_4} \cdots$, that is, for all $j \ge 1$ and
+$k \ge 0$ with $a_1 + \cdots + a_k \le j < a_1 + \cdots + a_{k+1}$, the letter $SB_j(\alpha)$ is
+$L$ if $k$ is even and $R$ if $k$ is odd.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Nat Pair To Real](nat-pair-to-real.md)
-- [Stern Brocot Frac](stern-brocot-frac.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
+- [Fractions on the Stern–Brocot path](stern-brocot-frac.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

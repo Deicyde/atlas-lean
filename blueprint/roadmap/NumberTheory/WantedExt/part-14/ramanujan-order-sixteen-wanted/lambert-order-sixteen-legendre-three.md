@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.lambert_order_sixteen_legendre_three
 ---
 
-# Lambert order sixteen legendre three
+# Lambert series of order sixteen twisted by the Legendre symbol modulo $3$
 
-Lambert series twisted by the Legendre symbol `(n/3)`: for `‖q‖ < 1`,
-`∑_{n ≥ 1} (n/3) (qⁿ - q⁷ⁿ - q⁹ⁿ + q¹⁵ⁿ)/(1 - q¹⁶ⁿ)
-  = q (q⁸; q⁸)²_∞ (q⁴⁸; q⁴⁸)_∞ (q⁶, q¹⁰; q¹⁶)_∞ (q, q⁷, q⁹, q¹⁵; q¹⁶)_∞
-    / ((q¹⁶; q¹⁶)_∞ (q³, q²¹, q²⁷, q⁴⁵; q⁴⁸)_∞)` (64) and
-`∑_{n ≥ 1} (n/3) (q³ⁿ - q⁵ⁿ - q¹¹ⁿ + q¹³ⁿ)/(1 - q¹⁶ⁿ)
-  = q³ (q⁸; q⁸)²_∞ (q⁴⁸; q⁴⁸)_∞ (q², q¹⁴; q¹⁶)_∞ (q³, q⁵, q¹¹, q¹³; q¹⁶)_∞
-    / ((q¹⁶; q¹⁶)_∞ (q⁹, q¹⁵, q³³, q³⁹; q⁴⁸)_∞)` (65).
-The source's `(n/3)` is the Legendre symbol modulo `3`, here `jacobiSym n 3` (equal to the
-Legendre symbol since `3` is prime); the source's `|q| < 1` is `‖q‖ < 1`.
+**Lambert series of order sixteen twisted by the Legendre symbol modulo $3$.** Write
+$(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$,
+$(a_1, \dots, a_k; q)_\infty = (a_1; q)_\infty \cdots (a_k; q)_\infty$ and
+$f_k = (q^k; q^k)_\infty$, and let $\left(\frac{n}{3}\right)$ be the Legendre symbol modulo $3$.
+For every complex number $q$ with $|q| < 1$,
+
+$$\sum_{n \ge 1} \left(\frac{n}{3}\right) \frac{q^n - q^{7n} - q^{9n} + q^{15n}}{1 - q^{16n}} =
+\frac{q f_8^2 f_{48} (q^6, q^{10}; q^{16})_\infty (q, q^7, q^9, q^{15}; q^{16})_\infty}
+{f_{16} (q^3, q^{21}, q^{27}, q^{45}; q^{48})_\infty}$$
+
+and
+
+$$\sum_{n \ge 1} \left(\frac{n}{3}\right) \frac{q^{3n} - q^{5n} - q^{11n} + q^{13n}}{1 - q^{16n}} =
+\frac{q^3 f_8^2 f_{48} (q^2, q^{14}; q^{16})_\infty (q^3, q^5, q^{11}, q^{13}; q^{16})_\infty}
+{f_{16} (q^9, q^{15}, q^{33}, q^{39}; q^{48})_\infty}.$$
 
 ## Depends on
 

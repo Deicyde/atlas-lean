@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.quadPrimeNorm
 ---
 
-# Quad Prime Norm
+# Norm of the $n$-th prime
 
-`N(π_n)`, the norm of the `n`-th prime of the paper's ordered set `P_m^+` (Definition 1), with
-`N(π_0) = 1` for the paper's convention `π_0 = 1`: the `n`-th smallest norm of a nonzero prime
-ideal of `𝓞 K` (distinct primes of `P_m^+` have distinct norms `p` or `p^2`).
+**Norm of the $n$-th prime.** Let $K$ be a number field with ring of integers $\mathcal{O}_K$.
+For $n \ge 1$, $N(\pi_n)$ is the $n$-th smallest natural number that is the absolute norm of some
+nonzero prime ideal of $\mathcal{O}_K$, each such norm counted once however many prime ideals
+have it; and $N(\pi_0) = 1$.
+
+For an imaginary quadratic field $K = \mathbb{Q}(\sqrt{m})$ of class number one the prime ideals
+above distinct rational primes $p$ have distinct norms $p$ or $p^2$, so $N(\pi_n)$ is the norm of
+the $n$-th prime $\pi_n$ of the paper's norm-ordered set $P_m^+$ (Definition 1), and
+$N(\pi_0) = 1$ matches its convention $\pi_0 = 1$.
 
 ## Depends on
 

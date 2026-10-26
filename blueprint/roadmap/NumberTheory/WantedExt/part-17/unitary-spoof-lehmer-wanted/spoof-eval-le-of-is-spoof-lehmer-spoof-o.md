@@ -7,15 +7,19 @@ lean: MetaMathlibExt.spoofEval_le_of_isSpoofLehmer_spoofOfBases
 
 # Bound on unitary Lehmer factorizations
 
-**Bound on unitary Lehmer factorizations**: if `x_1 ⋯ x_r` is a unitary `k`-Lehmer
-factorization, then `ε̃(x_1 ⋯ x_r) ≤ 2^{2^r} - 2^{2^{r-1}}`. The paper takes `k ∈ ℤ_{>0}`; the
-statement here allows every integer `k` (for `k ≤ 0` the equation forces `ε̃ = 1`).
+**Bound on unitary Lehmer factorizations.** Let $k$ be an integer and let $x_1, \dots, x_r$ be
+natural numbers. If the spoof factorization $x_1 \cdots x_r$ with every exponent $1$ is a spoof
+$k$-Lehmer factorization (a unitary $k$-Lehmer factorization), then its spoof evaluation
+$\tilde{e}(x_1 \cdots x_r) = \prod_{i=1}^{r} x_i$ is at most $2^{2^r} - 2^{2^{r-1}}$.
+
+The paper takes $k > 0$; here $k$ is any integer. For $k \le 0$ the hypothesis forces the spoof
+evaluation to be $1$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
-- [Spoof Eval](../../part-16/spoof-lehmer-factorization-wanted/spoof-eval.md)
-- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
+- [Spoof Lehmer factorizations](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
+- [Spoof evaluation](../../part-16/spoof-lehmer-factorization-wanted/spoof-eval.md)
+- [Factorization with all exponents one](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
 
 ## Sources
 

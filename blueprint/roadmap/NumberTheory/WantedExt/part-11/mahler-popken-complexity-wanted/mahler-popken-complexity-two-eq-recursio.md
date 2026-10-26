@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexity_two_eq_recursionValue
 ---
 
-# Proposition 1, binary case
+# Recursion for the binary Mahler–Popken complexity
 
-**Proposition 1, binary case**: for `m = 2`, the recursion (9)
-holds for every `n ≥ 3`.
+**Recursion for the binary Mahler–Popken complexity.** For every natural number $n \ge 3$,
+the binary ($2$-ary) Mahler–Popken complexity $\lVert n \rVert_2$ equals the minimum of the sums
+$\lVert d \rVert_2 + \lVert n/d \rVert_2$ over the divisors $d$ of $n$ with $d \ne 1$ and
+$d \ne n$, and of the sums $\lVert \eta \rVert_2 + \lVert n - \eta \rVert_2$ over $0 < \eta < n$.
+This is the recursion (9) for $m = 2$.
 
 ## Depends on
 
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
-- [Mahler Popken Recursion Value](mahler-popken-recursion-value.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
+- [Right-hand side of the Mahler–Popken recursion](mahler-popken-recursion-value.md)
 
 ## Sources
 

@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisConjecturesWanted.floor_sum_cbrt
 ---
 
-# Theorem 7
+# Floor of a sum of cube roots
 
-**Theorem 7**: for `n` divisible by `3`, writing
-`n = 3m`,
-`⌊∑_{i=1}^{10^n} i^{1/3}⌋
-  = 3 * 10^{4m} / 4 + 5 * 10^{m-1} - 1`.
+**Floor of a sum of cube roots.** For every integer $m \ge 1$, the sum
+$S_m = \sum_{i=1}^{10^{3m}} i^{1/3}$ of the real cube roots of $1, 2, \dots, 10^{3m}$ satisfies
+
+$$\lfloor S_m \rfloor = \frac{3 \cdot 10^{4m}}{4} + 5 \cdot 10^{m-1} - 1.$$
 
 ## Depends on
 

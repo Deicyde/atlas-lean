@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.biBracketLambda_one_one_one
 ---
 
-# Bi Bracket Lambda one one one
+# Bachmann's coefficient $\lambda_{1,1}^1$
 
-`λ_{1,1}^1 = B₁ = -1/2`.
+**Bachmann's coefficient $\lambda_{1,1}^1$.** Bachmann's coefficient $\lambda_{1,1}^1$ equals
+$-1/2$, the Bernoulli number $B_1$.
 
 ## Depends on
 
-- [Bi Bracket Lambda](bi-bracket-lambda.md)
+- [Bachmann's coefficients](bi-bracket-lambda.md)
 
 ## Sources
 

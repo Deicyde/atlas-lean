@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.staircaseFirstHeight_zero
 ---
 
-# Staircase First Height zero
+# The zeroth staircase starts at height zero
 
-The first step of `J_0` is the origin: `ȳ_0 = 0`.
+**The zeroth staircase starts at height zero.** For all natural numbers $m, n$, the first
+height of the staircase $J_0$ of the sector of slope $n/m$ is $\bar y_0 = 0$; indeed the origin
+lies on $J_0$.
 
 ## Depends on
 
-- [Staircase First Height](staircase-first-height.md)
+- [First height of a staircase](staircase-first-height.md)
 
 ## Proof depends on
 
-- [Sector Staircase](sector-staircase.md)
-- [Zero mem sector Staircase zero](zero-mem-sector-staircase-zero.md)
+- [Staircases of a rational sector](sector-staircase.md)
+- [The origin lies on the zeroth staircase](zero-mem-sector-staircase-zero.md)
 
 ## Sources
 

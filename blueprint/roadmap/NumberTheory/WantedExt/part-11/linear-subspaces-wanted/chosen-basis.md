@@ -5,19 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.chosenBasis
 ---
 
-# Chosen Basis
+# Chosen basis of a rational subspace
 
-For a rational subspace `V ≤ ℝᵈ`, a choice of a `ℤ`-basis of the lattice `V ∩ ℤᵈ`, viewed
-as an `ℝ`-basis of `V`.
+**Chosen basis of a rational subspace.** For a rational subspace $V$ of $\mathbb{R}^d$, this
+is a fixed choice of a $\mathbb{Z}$-basis of the lattice $V \cap \mathbb{Z}^d$, indexed by
+$\{0, \dots, \dim V - 1\}$ and viewed as an $\mathbb{R}$-basis of $V$.
 
 ## Depends on
 
-- [Is Rational](is-rational.md)
+- [Rational subspace](is-rational.md)
 
 ## Proof depends on
 
-- [Int Points](int-points.md)
-- [Int Points Subspace](int-points-subspace.md)
+- [The integer lattice](int-points.md)
+- [Integer points of a subspace](int-points-subspace.md)
 
 ## Sources
 

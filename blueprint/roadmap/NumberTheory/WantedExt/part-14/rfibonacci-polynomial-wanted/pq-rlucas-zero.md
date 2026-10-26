@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.pqRLucas_zero
 ---
 
-# Pq RLucas zero
+# Initial value of the first-kind (p, q)-Lucas polynomials
 
-`V_0 = s + 1` (first kind).
+**Initial value of the first-kind (p, q)-Lucas polynomials.** Let $R$ be a commutative
+semiring, let $r$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in R$. The first-kind
+$(p, q)$-analogue $V^{(r,s)}_n(x, y, p, q, m)$ of the $r$-Lucas polynomial of type $s$ satisfies
+$V^{(r,s)}_0(x, y, p, q, m) = s + 1$.
 
 ## Depends on
 
-- [Pq RLucas](pq-rlucas.md)
+- [First-kind (p, q)-Lucas polynomials](pq-rlucas.md)
 
 ## Sources
 

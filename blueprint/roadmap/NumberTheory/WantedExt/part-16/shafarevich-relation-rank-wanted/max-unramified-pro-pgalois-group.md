@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ShafarevichRelationRankWanted.NumberTheory.MaxUnramifiedProPGaloisGroup
 ---
 
-# Max Unramified Pro PGalois Group
+# Galois group of the maximal unramified pro-$p$ extension
 
-`Gal(F^{un,p}/F)`, the Galois group of the maximal unramified pro-`p`
-extension.
+**Galois group of the maximal unramified pro-$p$ extension.** For a number field $F$ and a
+prime $p$, this is the group $\mathrm{Gal}(F^{\mathrm{un},p}/F)$ of field automorphisms of the
+maximal unramified pro-$p$ extension $F^{\mathrm{un},p}$ of $F$ that fix $F$, under
+composition and with the Krull topology.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Maximal Unramified Pro PF](maximal-unramified-pro-pf.md)
+- [Maximal unramified pro-$p$ extension](maximal-unramified-pro-pf.md)
 
 ## Sources
 

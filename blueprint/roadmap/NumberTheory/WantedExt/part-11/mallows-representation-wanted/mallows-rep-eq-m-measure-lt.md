@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_eq_M_measure_lt
 ---
 
-# Mallows Rep eq M measure lt
+# Measure bound for the letter $M$ at a fixed position
 
-For every `i ≥ 1`, the Lebesgue measure of `{α ∈ (0,1) \ ℚ : M_i(α) = M}` is less than
-`3 - 2√2` (Lean index `i` is paper `i + 1`).
+**Measure bound for the letter $M$ at a fixed position.** For every $i \ge 1$, the set of
+irrational $\alpha \in (0, 1)$ whose Mallows representation has $i$-th letter
+$M_i(\alpha) = M$ has Lebesgue measure less than $3 - 2\sqrt{2}$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

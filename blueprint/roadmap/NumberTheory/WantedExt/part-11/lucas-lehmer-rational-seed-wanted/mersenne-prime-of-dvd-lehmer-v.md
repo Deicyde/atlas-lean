@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.mersenne_prime_of_dvd_lehmerV
 ---
 
-# Mersenne prime of dvd lehmer V
+# Lehmer-sequence primality criterion for Mersenne numbers
 
-Let `n ≥ 3` be odd. If `gcd(M_n, Q) = 1` and `M_n ∣ V̄_{(M_n+1)/2}(R, Q)`, then `M_n` is
-prime. Here `(M_n + 1)/2 = 2^{n-1}`; `R`, `Q` are arbitrary integers (no coprimality or
-`D ≠ 0` hypothesis is needed for the statement).
+**Lehmer-sequence primality criterion for Mersenne numbers.** Let $n \ge 3$ be odd, let
+$M_n = 2^n - 1$, and let $R$ and $Q$ be integers with $\gcd(M_n, Q) = 1$. If $M_n$ divides
+Lehmer's companion term $\bar V_{2^{n-1}}(R, Q)$, then $M_n$ is prime.
+
+Here $2^{n-1} = (M_n + 1)/2$. No coprimality of $R$ and $Q$ and no condition on $D = R - 4Q$
+is assumed.
 
 ## Depends on
 
-- [Lehmer V](lehmer-v.md)
+- [Lehmer's companion sequence](lehmer-v.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.qPochhammer_three_dissection_product_one_two
 ---
 
-# Q Pochhammer three dissection product one two
+# The 3-dissection of $f_1 f_2$ for complex $q$
 
-For every complex `q` of norm less than one, this 3-dissection states
-`f₁ f₂ = f₆ f₉⁴/(f₃ f₁₈²) - q f₉ f₁₈ - 2q² f₃ f₁₈⁴/(f₆ f₉²)`. Every `f_k`
-is expanded as `qPochhammerInfRaw (q ^ k) (q ^ k)`; this is the only notational deviation.
+**The 3-dissection of $f_1 f_2$ for complex $q$.** Let $q$ be a complex number with $|q| < 1$,
+and for $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$ be the raw
+infinite q-Pochhammer product with $a = q^k$ and base $q^k$. Then
+
+$$
+f_1 f_2 = \frac{f_6 f_9^4}{f_3 f_{18}^2} - q f_9 f_{18} - 2 q^2 \frac{f_3 f_{18}^4}{f_6 f_9^2}.
+$$
 
 ## Depends on
 

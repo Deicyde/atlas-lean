@@ -5,16 +5,22 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.hasSquareElementarySymmetricFunctions_family334_and_entries_sum_two_nonzero_squares
 ---
 
-# Theorem 3, family (3.34)
+# Choudhry's family (3.34) of sums of two nonzero squares
 
-**Theorem 3, family (3.34)**: in the nondegenerate parameter range of
-the proof, the entries are sums of two nonzero integer squares and their
-symmetric functions are squares.
+**Choudhry's family (3.34) of sums of two nonzero squares.** For all nonzero integers $r$
+and $s$, let $E = r^8 + 2 r^6 s^2 - 12 r^4 s^4 - 6 r^2 s^6 - s^8$,
+$T = r^{12} + 6 r^{10} s^2 + 87 r^8 s^4 + 108 r^6 s^6 + 55 r^4 s^8 + 14 r^2 s^{10} + s^{12}$ and
+$S = 5 r^6 + 3 r^4 s^2 + 3 r^2 s^4 + s^6$, and put $a = r^2 (r^2 + s^2) E^2 T$,
+$b = s^2 (r^2 + s^2) S^2 E^2$ and $c = 4 r^4 s^4 S^2 T$. Then each of $a + b + c$, $ab + bc + ca$
+and $abc$ is the square of an integer, and each of $a$, $b$, $c$ is a sum $x^2 + y^2$ of the
+squares of two nonzero integers $x$ and $y$.
+
+The hypothesis that $r$ and $s$ are nonzero is the nondegenerate range used in the proof.
 
 ## Depends on
 
-- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
-- [Is Sum Two Nonzero Squaresℤ](is-sum-two-nonzero-squares.md)
+- [Integer triples with square elementary symmetric functions](has-square-elementary-symmetric-function.md)
+- [Sums of two nonzero integer squares](is-sum-two-nonzero-squares.md)
 
 ## Sources
 

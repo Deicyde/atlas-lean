@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.valuationSquareCount_le
 ---
 
-# Valuation Square Count le
+# Trivial bound for the square count
 
-`X(k, l) ≤ p²`.
+**Trivial bound for the square count.** For every polynomial $f \in \mathbb{Z}[x, y]$ and all
+natural numbers $p$, $k$ and $l$, the number $X(k, l)$ of points $(x, y)$ of the square
+$\{kp, \dots, kp + p - 1\} \times \{lp, \dots, lp + p - 1\}$ with $p^2 \mid f(x, y)$ is at most
+$p^2$.
 
 ## Depends on
 
-- [Valuation Square Count](valuation-square-count.md)
+- [Count of points of high valuation in a square](valuation-square-count.md)
 
 ## Sources
 

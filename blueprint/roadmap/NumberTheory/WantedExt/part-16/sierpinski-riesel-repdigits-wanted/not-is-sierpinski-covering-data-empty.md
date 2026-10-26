@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isSierpinskiCoveringData_empty
 ---
 
-# Not is Sierpinski Covering Data empty
+# Empty Sierpiński covering data
 
-Empty data never covers `ℤ`.
+**Empty Sierpiński covering data.** For every natural number $k$, the empty set is not
+Sierpiński covering data for $k$: the empty family of residue classes does not cover $\mathbb{Z}$.
 
 ## Depends on
 
-- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
+- [Sierpiński covering data](is-sierpinski-covering-data.md)
 
 ## Sources
 

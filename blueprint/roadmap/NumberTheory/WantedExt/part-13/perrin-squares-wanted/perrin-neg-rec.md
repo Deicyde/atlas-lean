@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.perrinNeg_rec
 ---
 
-# Perrin Neg rec
+# Perrin recurrence at negative indices
 
-The Perrin recurrence `R_{-n} = R_{-n-2} + R_{-n-3}` at negative indices.
+**Perrin recurrence at negative indices.** Let $R_{-k}$ denote the Perrin sequence extended
+to negative indices. For every natural number $n$, $R_{-n} = R_{-(n+2)} + R_{-(n+3)}$.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 
 ## Sources
 

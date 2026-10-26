@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_volume_log_smallestDenominator_gt
 ---
 
-# Tendsto volume log smallest Denominator gt
+# Limit law of the smallest denominator
 
-Limit law of the smallest denominator: `η_log` is a probability density (nonnegative with
-total integral `1`) and,
-for an interval `D = [a, b] ⊆ [0, 1]` and `L ∈ ℝ`,
-`vol {x ∈ D : log q_min(x, δ) > L - ½ log δ} → vol D · ∫_L^∞ η_log(s) ds` as
-`δ → 0⁺`. The interval is taken closed (endpoints do not affect volumes).
+**Limit law of the smallest denominator.** For real $x$ and $\delta > 0$ let
+$q_{\min}(x, \delta)$ be the smallest positive integer $q$ such that some rational $p/q$ lies in
+the open interval $(x - \delta/2, x + \delta/2)$, and let $\eta_{\log}$ be the log smallest
+denominator density. Then $\eta_{\log}$ is a probability density on $\mathbb{R}$:
+$\eta_{\log}(s) \ge 0$ for every real $s$ and $\int_{-\infty}^{\infty} \eta_{\log}(s) \, ds = 1$.
+Moreover, for all real numbers $a$, $b$, $L$ with $0 \le a \le b \le 1$, as $\delta \to 0^+$ the
+Lebesgue measure of $\{x \in [a, b] : \log q_{\min}(x, \delta) > L - \tfrac12 \log \delta\}$
+tends to $(b - a) \int_L^\infty \eta_{\log}(s) \, ds$.
+
+The interval is taken closed; its endpoints do not affect the measures.
 
 ## Depends on
 
-- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
-- [Smallest Denominator](smallest-denominator.md)
+- [Density of the logarithmic smallest denominator](log-smallest-denominator-density.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.consecutive_odd_weights
 ---
 
-# Consecutive odd weights
+# Consecutive weighted zero-sum constant for odd weights
 
-Theorem 7.2: for even `n` with `v_2(n) = r`, `m = n / 2^r`, `B` the odd elements of `ℤ_n`
-and `{m} ⊆ A ⊆ B`, `C_A(n) = 2^r`.
+**Consecutive weighted zero-sum constant for odd weights.** Let $n$ be a positive even
+integer, let $2^r$ be the largest power of $2$ dividing $n$ and let $m = n / 2^r$. Let
+$A \subseteq \mathbb{Z}_n$ contain the residue of $m$ and consist of odd elements (residues whose
+representative in $\{0, \dots, n - 1\}$ is odd). Let $C_A(n)$ be the least positive integer $k$
+such that every sequence $x_1, \dots, x_k$ in $\mathbb{Z}_n$ has indices $s \le t$ and weights
+$a_s, \dots, a_t \in A$ with $a_s x_s + \dots + a_t x_t = 0$. Then $C_A(n) = 2^r$.
 
 ## Depends on
 

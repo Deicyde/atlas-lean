@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isAddMonoidBasis_iff_eq_atoms
 ---
 
-# Is Add Monoid Basis iff eq atoms
+# Atoms are the unique basis of an atom-generated submonoid
 
-Proposition 4: let `M` be a submonoid of `ℕ^ι` and `A` its set of nonzero
-atomic elements (nonzero, and not a sum of two nonzero elements of `M`). If
-every element of `M` is a finite sum of elements of `A`, then `A` is the unique
-basis of `M`.
+**Atoms are the unique basis of an atom-generated submonoid.** Let $\iota$ be a type and
+let $M$ be a submonoid of $\mathbb{N}^\iota$ under componentwise addition. Let $A$ be the set
+of atoms of $M$: the elements $a \in M$ with $a \ne 0$ such that $y = 0$ or $z = 0$ whenever
+$a = y + z$ with $y, z \in M$. If every element of $M$ is a finite sum of elements of $A$, then
+a set $B \subseteq \mathbb{N}^\iota$ is a basis of $M$ if and only if $B = A$; that is, $A$ is
+the unique basis of $M$.
 
 ## Depends on
 
-- [Is Add Monoid Basis](is-add-monoid-basis.md)
+- [Basis of a submonoid](is-add-monoid-basis.md)
 
 ## Sources
 

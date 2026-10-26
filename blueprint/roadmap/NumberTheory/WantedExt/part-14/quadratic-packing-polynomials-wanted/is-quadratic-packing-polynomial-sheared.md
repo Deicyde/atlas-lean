@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isQuadraticPackingPolynomial_sheared_example_twelve_sevenths
 ---
 
-# Is Quadratic Packing Polynomial sheared example twelve sevenths
+# The slope-$12/7$ example on the sheared sector
 
-The sheared polynomial `P̂(x, y) = 6x(x - 3/2) + x + 3/2 y + 2` is a QPP on the sheared
-lattice sector `Î(12/7) = M(I(12/7))`, `M(x, y) = (x - y/2, y)`.
+**The slope-$12/7$ example on the sheared sector.** Let $M(x, y) = (x - y/2, y)$ and let
+$\hat I(12/7) = M(I(12/7))$ be the image under $M$ of the lattice points $I(12/7)$ of the sector
+of slope $12/7$. Then $\hat P(x, y) = 6x(x - 3/2) + x + \frac{3}{2} y + 2$ is a quadratic
+packing polynomial on $\hat I(12/7)$.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

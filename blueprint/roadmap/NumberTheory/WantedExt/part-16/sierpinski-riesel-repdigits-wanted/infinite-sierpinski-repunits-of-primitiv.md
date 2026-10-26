@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.infinite_sierpinski_repunits_of_primitive_divisors
 ---
 
-# Theorem 3.11
+# Infinitely many Sierpiński repunits from primitive divisors of $2^{2^j} - 1$
 
-**Theorem 3.11.** For `1 ≤ j ≤ τ` let `p_j` be a primitive prime divisor of `2^{2^j} - 1`, and
-let `q ≠ p_τ` be another primitive prime divisor of `2^{2^τ} - 1`. Put `ℓ_j = 1` if
-`b ≡ 0 (mod p_j)`, `ℓ_j = p_j` if `b ≡ 1 (mod p_j)`, `ℓ_j = ord_{p_j}(b)` otherwise, and
-`L = lcm(2, ℓ_1, …, ℓ_τ)`. If `b > 2`, `q ∤ b`, and either (i) `b ≡ 1 (mod q)` and `q ∤ L`, or
-(ii) `b ≢ 1 (mod q)` and some `t ≡ 1 (mod L)` has `(b^t - 1)/(b - 1) ≡ -1 (mod q)`, then there
-are infinitely many `b`-repunit Sierpiński numbers.
+**Infinitely many Sierpiński repunits from primitive divisors of $2^{2^j} - 1$.** Let $\tau$
+be a natural number. For $1 \le j \le \tau$ let $p_j$ be a primitive prime divisor of
+$2^{2^j} - 1$ in the sequence $(2^m - 1)_{m \ge 0}$, and let $q \ne p_\tau$ be a primitive prime
+divisor of $2^{2^\tau} - 1$ in the same sequence. Let $b > 2$ be a natural number with $q \nmid b$.
+For $1 \le j \le \tau$ put $\ell_j = 1$ if $p_j \mid b$, $\ell_j = p_j$ if $p_j \nmid b$ and
+$b \equiv 1 \pmod{p_j}$, and otherwise $\ell_j = \operatorname{ord}_{p_j}(b)$, the multiplicative
+order of $b$ modulo $p_j$; let $L = \operatorname{lcm}(2, \ell_1, \dots, \ell_\tau)$. Suppose that
+either (i) $b \equiv 1 \pmod q$ and $q \nmid L$, or (ii) $b \not\equiv 1 \pmod q$ and there is a
+natural number $s \equiv 1 \pmod L$ with $(b^s - 1)/(b - 1) \equiv -1 \pmod q$. Then there are
+infinitely many Sierpiński numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 ## Depends on
 
 - [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
-- [Is Sierpinski Number](is-sierpinski-number.md)
-- [Repstring](repstring.md)
+- [Sierpiński number](is-sierpinski-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

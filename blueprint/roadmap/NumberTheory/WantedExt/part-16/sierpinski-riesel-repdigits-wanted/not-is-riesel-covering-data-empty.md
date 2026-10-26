@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isRieselCoveringData_empty
 ---
 
-# Not is Riesel Covering Data empty
+# The empty set is not Riesel covering data
 
-Empty data never covers `ℤ`.
+**The empty set is not Riesel covering data.** For every natural number $k$, the empty set is
+not Riesel covering data for $k$, because its residue classes do not cover $\mathbb{Z}$.
 
 ## Depends on
 
-- [Is Riesel Covering Data](is-riesel-covering-data.md)
+- [Riesel covering data](is-riesel-covering-data.md)
 
 ## Sources
 

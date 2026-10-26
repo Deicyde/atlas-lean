@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotTree_label_unique_order_path
 ---
 
-# Stern Brocot Tree label unique order path
+# Stern–Brocot tree: labels, order and paths
 
-Stern–Brocot tree (left subtree, root `1/2`): (i) every fraction of `(0, 1) ∩ ℚ` labels
-exactly one vertex; (ii) on each level the left-to-right (lexicographic, `L < R`) order agrees
-with the increasing order; (iii) the path to the vertex whose label has continued fraction
-`[0; a_1, …, a_ℓ]` (`a_ℓ ≥ 2`, as produced by `GenContFract.of`) is
-`L^{a_1 - 1} R^{a_2} L^{a_3} ⋯` with last block of length `a_ℓ - 1` (`L^{a_1 - 2}` if `ℓ = 1`).
-Vertices are paths `w`; in (ii) two paths of the same length first differ by `L` versus `R`.
+**Stern–Brocot tree: labels, order and paths.** Consider the subtree of the Stern–Brocot
+tree with root $1/2$, and identify each vertex with its path $w$ from the root, a finite word over
+$\{L, R\}$. Then:
+(i) every rational $q$ with $0 < q < 1$ is the label of exactly one vertex;
+(ii) for all words $u, v_1, v_2$ over $\{L, R\}$ with $v_1$ and $v_2$ of the same length, the
+label of $u L v_1$ is less than the label of $u R v_2$;
+(iii) if the label of the vertex $w$ has continued fraction expansion $[0; a_1, \ldots, a_\ell]$
+with last partial quotient $a_\ell \ge 2$, then $w = L^{a_1 - 1} R^{a_2} L^{a_3} \cdots$, made of
+$\ell$ blocks alternating between $L$ and $R$ starting with $L$, where the $k$-th block has
+length $a_k$, except that the first block has length $a_1 - 1$ and the last has length
+$a_\ell - 1$; if $\ell = 1$, then $w = L^{a_1 - 2}$.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Nat Pair To Real](nat-pair-to-real.md)
-- [Stern Brocot Label](stern-brocot-label.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
+- [Labels of the Stern–Brocot tree](stern-brocot-label.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckBlocks_zero
 ---
 
-# Zeck Blocks zero
+# Zero has no blocks
 
-`0` has no blocks.
+**Zero has no blocks.** The list of blocks of $0$ is empty; that is, the number $\rho(0)$ of
+blocks of $0$ is $0$.
 
 ## Depends on
 
-- [Zeck Blocks](zeck-blocks.md)
+- [Blocks of a Zeckendorf representation](zeck-blocks.md)
 
 ## Sources
 

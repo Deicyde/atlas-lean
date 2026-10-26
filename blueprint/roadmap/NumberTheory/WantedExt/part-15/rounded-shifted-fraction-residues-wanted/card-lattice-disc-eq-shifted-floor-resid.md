@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_lattice_disc_eq_shiftedFloorResidueCount
 ---
 
-# Card lattice disc eq shifted Floor Residue Count
+# Lattice points in the disc of radius $\sqrt{n}$ via shifted floor sequences
 
-Proposition 39: the closed disc of radius `√n` about the origin contains
-`4 𝓝_{⌈n/2⌉,1/2,{n/2},1,2} + 4 ⌊n/2⌋ + 1` lattice points, where `{n/2}` is
-the fractional part of `n/2`. Stated for every `n : ℕ` (both sides are `1`
-at `n = 0`).
+**Lattice points in the disc of radius $\sqrt{n}$ via shifted floor sequences.** For every
+natural number $n$, the number of pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + y^2 \le n$ equals
+$4\,\mathcal{N}_{\lceil n/2 \rceil, 1/2, \{n/2\}, 1, 2} + 4\lfloor n/2 \rfloor + 1$, where
+$\{n/2\}$ is the fractional part of $n/2$ and $\mathcal{N}_{N,\alpha,\nu,r,m}$ is the number of
+$k \in \{1, \dots, N\}$ with $\lfloor (N - \nu)/k + \alpha \rfloor \equiv r \pmod m$. At $n = 0$
+both sides are $1$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

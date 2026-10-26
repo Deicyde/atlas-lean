@@ -4,5 +4,5 @@ navigation: module
 
 # Van Der Waerden Conjecture
 
-- [E](e.md)
-- [Theorem 1](theorem-1.md)
+- [Monic integer polynomials whose Galois group is not $S_n$](e.md)
+- [Van der Waerden's conjecture (Bhargava)](theorem-1.md)

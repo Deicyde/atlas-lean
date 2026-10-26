@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexity
 ---
 
-# Mahler Popken Complexity
+# Mahler–Popken complexity
 
-The `m`-ary Mahler-Popken complexity `∥n∥ₘ`: the smallest
-number of possibly repeated selections from `{1, …, m}` needed to
-express `n` with addition, multiplication, and legal bracketing.
-For `1 ≤ m` and `1 ≤ n` the set is nonempty (a sum of ones), so
-the infimum is attained.
+**Mahler–Popken complexity.** For natural numbers $m$ and $n$, the $m$-ary Mahler–Popken
+complexity $\lVert n \rVert_m$ is the smallest number of leaves (counted with repetition) of an
+$m$-ary Mahler–Popken expression whose value is $n$: the smallest number of possibly repeated
+selections from $\{1, \dots, m\}$ needed to express $n$ with addition, multiplication and legal
+bracketing. If no expression has value $n$ (which happens exactly when $m = 0$ or $n = 0$), the
+value is $0$.
 
 ## Depends on
 
@@ -19,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
+- [Number of leaves of an $m$-ary expression](count.md)
+- [Value of an $m$-ary expression](eval.md)
 
 ## Sources
 

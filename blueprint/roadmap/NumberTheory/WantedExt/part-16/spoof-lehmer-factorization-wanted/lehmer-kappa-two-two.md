@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lehmerKappa_two_two
 ---
 
-# Lehmer Kappa two two
+# The Lehmer function at $(2, 2)$
 
-Characteristic value: `κ_2(2, 2) = 3`.
+**The Lehmer function at $(2, 2)$.** The Lehmer function
+$\kappa_2(t_1, t_2) = (t_1 t_2 - 1) / ((t_1 - 1)(t_2 - 1))$ takes the value $\kappa_2(2, 2) = 3$.
 
 ## Depends on
 
-- [Lehmer Kappa](lehmer-kappa.md)
+- [The Lehmer function $\kappa_r$](lehmer-kappa.md)
 
 ## Sources
 

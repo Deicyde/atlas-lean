@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rLucasPolynomial_zero
 ---
 
-# R Lucas Polynomial zero
+# Initial value of the $r$-Lucas polynomials
 
-`V_0 = s + 1`.
+**Initial value of the $r$-Lucas polynomials.** For every commutative semiring $R$, all natural
+numbers $r$ and $s$ and all $x, y \in R$, the $r$-Lucas polynomial of type $s$ satisfies
+$V^{(r,s)}_0(x, y) = s + 1$.
 
 ## Depends on
 
-- [R Lucas Polynomial](r-lucas-polynomial.md)
+- [The $r$-Lucas polynomials of type $s$](r-lucas-polynomial.md)
 
 ## Sources
 

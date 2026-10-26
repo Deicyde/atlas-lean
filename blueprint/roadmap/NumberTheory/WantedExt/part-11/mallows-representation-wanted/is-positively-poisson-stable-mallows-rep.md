@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_sternBrocotRep
 ---
 
-# Is Positively Poisson Stable mallows Rep iff stern Brocot Rep
+# Poisson stability of the Mallows and Stern–Brocot representations
 
-The Mallows representation of an irrational `α ∈ (0, 1)` is positively Poisson stable iff
-its Stern–Brocot representation is.
+**Poisson stability of the Mallows and Stern–Brocot representations.** For every irrational
+$\alpha \in (0, 1)$, the Mallows representation of $\alpha$ is positively Poisson stable if and
+only if the Stern–Brocot representation of $\alpha$ is positively Poisson stable.
 
 ## Depends on
 
-- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
-- [Mallows Letter](mallows-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Mallows Rep](mallows-rep.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [Positively Poisson stable sequence](is-positively-poisson-stable.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Mallows representation](mallows-rep.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

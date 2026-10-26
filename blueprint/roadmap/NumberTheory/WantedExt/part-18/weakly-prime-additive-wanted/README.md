@@ -4,13 +4,13 @@ navigation: module
 
 # Weakly Prime Additive
 
-- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
-- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
-- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
-- [Is Prime Divisor Power Sum thirty](is-prime-divisor-power-sum-thirty.md)
-- [Is Weakly Prime Additive thirty](is-weakly-prime-additive-thirty.md)
-- [Weakly Prime Additive Length le](weakly-prime-additive-length-le.md)
-- [Infinite weakly Prime Additive length four dvd](infinite-weakly-prime-additive-length-fo.md)
-- [Infinite primes dvd four prime power sum](infinite-primes-dvd-four-prime-power-sum.md)
-- [Infinite shortest weakly Prime Additive dvd iff](infinite-shortest-weakly-prime-additive.md)
-- [Infinite weakly Prime Additive length le four dvd](infinite-weakly-prime-additive-length-le.md)
+- [Sums of powers of distinct prime divisors](is-prime-divisor-power-sum.md)
+- [Weakly prime-additive numbers](is-weakly-prime-additive.md)
+- [Weakly prime-additive length](weakly-prime-additive-length.md)
+- [Thirty is a sum of powers of three of its prime divisors](is-prime-divisor-power-sum-thirty.md)
+- [Thirty is weakly prime-additive](is-weakly-prime-additive-thirty.md)
+- [The length is at most the size of any representation](weakly-prime-additive-length-le.md)
+- [Weakly prime-additive multiples of length four](infinite-weakly-prime-additive-length-fo.md)
+- [Primes completing a four-term prime-power divisibility](infinite-primes-dvd-four-prime-power-sum.md)
+- [Fang–Chen theorem on shortest weakly prime-additive multiples](infinite-shortest-weakly-prime-additive.md)
+- [Weakly prime-additive multiples of length at most four](infinite-weakly-prime-additive-length-le.md)

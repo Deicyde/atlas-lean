@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.alpha_mixing_le_half_phi_mixing
 ---
 
-# Alpha mixing le half phi mixing
+# Bradley's inequality between the $\alpha$- and $\varphi$-mixing coefficients
 
-Bradley's inequality `α(k) ≤ φ(k)/2` between the `α`- and `φ`-mixing coefficients of a
-sequence of random variables `(X_j)_{j ≥ 1}`, stated through the suprema: if `c` bounds every
-term `|ℙ_A(B) - ℙ(B)|` defining `φ(k)` (`p ≥ 1`, `A ∈ σ(X_j : 1 ≤ j ≤ p)`, `ℙ(A) > 0`,
-`B ∈ σ(X_j : j ≥ k + p)`), then `c/2` bounds every term `|ℙ(A ∩ B) - ℙ(A)ℙ(B)|` defining `α(k)`.
+**Bradley's inequality between the $\alpha$- and $\varphi$-mixing coefficients.** Let
+$(X_j)_{j \ge 1}$ be random variables on a probability space $(\Omega, \mathbb{P})$ with values in
+a measurable space, and let $k \ge 1$. Suppose a real number $c$ bounds every term defining the
+$\varphi$-mixing coefficient $\varphi(k)$: for every $p \ge 1$, every event
+$A \in \sigma(X_j : 1 \le j \le p)$ with $\mathbb{P}(A) > 0$ and every event
+$B \in \sigma(X_j : j \ge k + p)$, $|\mathbb{P}(B \mid A) - \mathbb{P}(B)| \le c$. Then $c/2$
+bounds every term defining the $\alpha$-mixing coefficient $\alpha(k)$: for every $p \ge 1$,
+every event $A \in \sigma(X_j : 1 \le j \le p)$ and every event $B \in \sigma(X_j : j \ge k + p)$,
+$|\mathbb{P}(A \cap B) - \mathbb{P}(A)\mathbb{P}(B)| \le c/2$.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.prod_succ_div_prime_lt_bound
 ---
 
-# Prod succ div prime lt bound
+# Explicit bound for a product over the first primes with one prime omitted
 
-For `k ≥ 6` and `1 ≤ j ≤ k + 1`, `A(k) < C(k)` with
-`C(k) = log((k+1)(log(k+1) + log log(k+1))) exp(c₁ - 1/p_j + 5/log((k+1)(log(k+1) + log log(k+1) - 1)))`,
-`A(k)` as in `prod_succ_div_prime_le` and `c₁` the Meissel–Mertens constant.
+**Explicit bound for a product over the first primes with one prime omitted.** Let $p_\ell$ be
+the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm and $B$ the Meissel–Mertens constant.
+For natural numbers $k \ge 6$ and $j$ with $1 \le j \le k + 1$, put
+$U = (k+1)(\log(k+1) + \log \log(k+1))$ and $L = (k+1)(\log(k+1) + \log \log(k+1) - 1)$. Then
+
+$$\prod_{1 \le \ell \le k+1,\ \ell \ne j} \frac{p_\ell + 1}{p_\ell} <
+\log U \cdot \exp\Bigl(B - \frac{1}{p_j} + \frac{5}{\log L}\Bigr).$$
 
 ## Depends on
 

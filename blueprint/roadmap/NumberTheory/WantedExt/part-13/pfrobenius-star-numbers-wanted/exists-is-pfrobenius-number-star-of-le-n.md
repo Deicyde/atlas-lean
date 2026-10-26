@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine
 ---
 
-# Exists is PFrobenius Number star of le nine
+# Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$
 
-The `6 ≤ n ≤ 9` case of Theorem 1: for `p = 0, 1, 2`, the
-`p`-Frobenius number of the three consecutive star numbers is
-`2n * S_{n+1} + (p + 2) * n * S_{n+2} - S_n` (written over `ℤ`).
+**Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$.** Write $S_m$ for
+the $m$-th star number $6m(m-1)+1$. For natural numbers $n$ and $p$ with $6 \le n \le 9$ and
+$p \in \{0, 1, 2\}$, there is a natural number $g$ such that at most $p$ triples $(x, y, z)$ of
+natural numbers satisfy $x S_n + y S_{n+1} + z S_{n+2} = g$, every natural number larger than
+$g$ has more than $p$ such triples, and $g = 2n S_{n+1} + (p + 2) n S_{n+2} - S_n$. That is,
+the $p$-Frobenius number of $S_n, S_{n+1}, S_{n+2}$ is $2n S_{n+1} + (p + 2) n S_{n+2} - S_n$.
 
 ## Depends on
 
-- [Is PFrobenius Star Number](is-pfrobenius-star-number.md)
-- [Star](star.md)
+- [$p$-Frobenius number of three consecutive star numbers](is-pfrobenius-star-number.md)
+- [Star numbers](star.md)
 
 ## Sources
 

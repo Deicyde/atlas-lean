@@ -21,7 +21,7 @@ ideals of the ring of integers of $K$ of absolute norm $n$.
 ## Proof depends on
 
 - [Coefficients of the Dedekind zeta function](dedekind-zeta-coeff.md)
-- [Sum Of Squares Rep Count](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
+- [Representation numbers for sums of squares](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
 
 ## Sources
 

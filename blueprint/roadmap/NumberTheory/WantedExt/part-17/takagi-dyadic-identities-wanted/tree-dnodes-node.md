@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.treeDNodes_node
 ---
 
-# Tree DNodes node
+# Recursion for the number of $D$-nodes
 
-Unfolding of `treeDNodes` at an interior node.
+**Recursion for the number of $D$-nodes.** Write $D(t)$ for the number of $D$-nodes of a
+full binary tree $t$. If the root of $t$ has left subtree $l$ and right subtree $r$, then
+$D(t) = \varepsilon + D(l) + D(r)$, where $\varepsilon = 0$ if $l$ and $r$ have the same number
+of leaves and $\varepsilon = 1$ otherwise.
 
 ## Depends on
 
-- [Tree DNodes](tree-dnodes.md)
+- [Number of $D$-nodes of a full binary tree](tree-dnodes.md)
 
 ## Sources
 

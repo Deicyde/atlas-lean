@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oddRangeProduct_eq
 ---
 
-# Odd Range Product eq
+# Odd-range product as a filtered product
 
-The characteristic expansion of `oddRangeProduct` is exactly the product over
-the closed interval filtered by `Odd`; this lemma exposes the computation used
-for the paper's `odpr(l,m)`.
+**Odd-range product as a filtered product.** For all natural numbers $l$ and $m$, the odd-range
+product $\operatorname{odpr}(l, m)$ equals the product $\prod j$ over the odd natural numbers $j$ in
+the closed interval $[l, m]$.
 
 ## Depends on
 
-- [Odd Range Product](odd-range-product.md)
+- [Odd-range product](odd-range-product.md)
 
 ## Sources
 

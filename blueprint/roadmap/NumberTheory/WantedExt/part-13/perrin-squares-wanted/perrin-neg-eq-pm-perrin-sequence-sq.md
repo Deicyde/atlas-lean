@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.perrinNeg_eq_pm_perrinSequence_sq
 ---
 
-# Perrin Neg eq pm perrin Sequence sq
+# Negative-index Perrin numbers equal to plus or minus a Perrin square
 
-Theorem 2: the solutions of `R_{-n} = ± R_m ^ 2` in positive integers are
-exactly `R_{-5} = 4 = R_2 ^ 2 = R_4 ^ 2` and `R_{-18} = 25 = R_5 ^ 2 = R_6 ^ 2`.
+**Negative-index Perrin numbers equal to plus or minus a Perrin square.** Let $R_k$ denote the
+Perrin sequence, extended to negative indices. The pairs of positive integers $(n, m)$ with
+$R_{-n} = R_m^2$ or $R_{-n} = -R_m^2$ are exactly $(5, 2)$, $(5, 4)$, $(18, 5)$ and $(18, 6)$;
+that is, $R_{-5} = 4 = R_2^2 = R_4^2$ and $R_{-18} = 25 = R_5^2 = R_6^2$.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 - [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources

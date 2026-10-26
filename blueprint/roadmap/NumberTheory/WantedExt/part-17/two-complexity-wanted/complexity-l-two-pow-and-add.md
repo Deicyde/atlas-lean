@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_two_pow_and_add
 ---
 
-# Lemma 3
+# The 2-complexity of a power of two and of a sum of two powers of two
 
-**Lemma 3**(1): `‖2^{m₁}‖₂ = m₁`, and
-`‖2^{m₁} + 2^{m₂}‖₂ = m₁ + 1` for `m₁ > m₂ ≥ 1`.
+**The 2-complexity of a power of two and of a sum of two powers of two.** Write
+$\|n\|_2$ for the $2$-complexity of $n$. For all natural numbers $m_1$ and $m_2$ with
+$m_1 > m_2 \ge 1$, one has $\|2^{m_1}\|_2 = m_1$ and $\|2^{m_1} + 2^{m_2}\|_2 = m_1 + 1$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

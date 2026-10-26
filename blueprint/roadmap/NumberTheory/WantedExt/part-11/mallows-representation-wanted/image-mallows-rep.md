@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.image_mallowsRep
 ---
 
-# Image mallows Rep
+# Characterization of Mallows representations
 
-The Mallows representations of the irrationals of `(0, 1)` are exactly the sequences over
-`{L, M, R}` that are not eventually `L` and not eventually `R`.
+**Characterization of Mallows representations.** A sequence over $\{L, M, R\}$ is the Mallows
+representation $M(\alpha)$ of some irrational $\alpha \in (0, 1)$ if and only if it is neither
+eventually constantly $L$ nor eventually constantly $R$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

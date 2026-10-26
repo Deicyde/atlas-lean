@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_additive_paired_squares_dichotomy
 ---
 
-# Multiplicative additive paired squares dichotomy
+# Dichotomy for multiplicative functions additive on paired squares
 
-Let `k ≥ 5` and let `f` be multiplicative satisfying Equation (1). Then either `f(n) = n`
-for all positive integers `n`, or `f` vanishes on
-`{a² + b² : a, b ≥ 1} ∪ {2k + t : t ∈ {0, 3, 6, 8, 9, 11, 12}} ∪ {n : n ≥ 2k + 14}`.
+**Dichotomy for multiplicative functions additive on paired squares.** Let $k \ge 5$ and
+let $f$ be a complex-valued multiplicative function such that
+
+$$f\Big(\sum_{j=1}^{k} (x_j^2 + y_j^2)\Big) = \sum_{j=1}^{k} f(x_j^2 + y_j^2)$$
+
+for all positive integers $x_1, \dots, x_k, y_1, \dots, y_k$. Then either $f(n) = n$ for every
+positive integer $n$, or $f(n) = 0$ for every positive integer $n$ that is of the form $a^2 + b^2$
+with integers $a, b \ge 1$, or of the form $2k + t$ with $t \in \{0, 3, 6, 8, 9, 11, 12\}$, or
+satisfies $n \ge 2k + 14$.
 
 ## Depends on
 

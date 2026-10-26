@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaV_coeff_six_mul_add_five_mod_three
 ---
 
-# Mock Theta V coeff six mul add five mod three
+# The coefficients of $q^{6n+5}$ in $v(q)$ are divisible by 3
 
-Theorem 2 (i): `P_v(6n+5) ≡ 0 (mod 3)` for all `n ≥ 0`.
+**The coefficients of $q^{6n+5}$ in $v(q)$ are divisible by 3.** Let $P_v(n)$ be the
+coefficient of $q^n$ in the eighth-order mock theta function $v(q)$. Then
+$P_v(6n+5) \equiv 0 \pmod 3$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Mock Theta V](mock-theta-v.md)
+- [The eighth-order mock theta function $v(q)$](mock-theta-v.md)
 
 ## Sources
 

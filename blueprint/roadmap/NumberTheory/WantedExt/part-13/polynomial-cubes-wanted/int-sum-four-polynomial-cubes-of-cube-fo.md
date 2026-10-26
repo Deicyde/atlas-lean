@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PolynomialCubesWanted.int_sum_four_polynomial_cubes_of_cube_form
 ---
 
-# Int sum four polynomial cubes of cube form
+# Integers of the form $p^3 + q^3$ or $2(p^6 - q^6)$ as sums of four polynomial cubes
 
-Choudhry's Theorem 1: every integer of the form `p ^ 3 + q ^ 3` or
-`2 * (p ^ 6 - q ^ 6)` is a sum of four cubes of nonconstant integer
-polynomials.
+**Integers of the form $p^3 + q^3$ or $2(p^6 - q^6)$ as sums of four polynomial cubes.**
+Let $p$ and $q$ be integers and let $N = p^3 + q^3$ or $N = 2(p^6 - q^6)$. Then there are
+polynomials $f, g, h, k \in \mathbb{Z}[x]$, each of degree at least $1$, such that
+$f^3 + g^3 + h^3 + k^3 = N$ as an identity in $\mathbb{Z}[x]$.
 
 ## Depends on
 

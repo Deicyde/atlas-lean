@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsRieselNumber
 ---
 
-# Is Riesel Number
+# Riesel number
 
-A Riesel number: an odd `k` such that `k·2^n - 1` is composite for every `n ≥ 1`.
+**Riesel number.** A natural number $k$ is a Riesel number if $k$ is odd and, for every
+integer $n \ge 1$, the number $k \cdot 2^n - 1$ is not prime.
 
 ## Depends on
 

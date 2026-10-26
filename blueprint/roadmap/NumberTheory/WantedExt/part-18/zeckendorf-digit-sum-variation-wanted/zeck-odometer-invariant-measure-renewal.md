@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer_invariant_measure_renewal
 ---
 
-# Zeck Odometer invariant measure renewal
+# Renewal property of the invariant measure
 
-Renewal property of `ℙ`, with `σ` the shift `(σ x)_i = x_{i+1}`: for a cylinder
-`C = C_{z_{ℓ₀} ⋯ z_2}`, `k ≥ 2` and admissible `(r_k, …, r_2)` (the digits of `y ∈ 𝕏`),
-`ℙ(σ^k x ∈ C | x ∈ C_{0 r_k ⋯ r_2}) = ℙ(C)`, and if `r_k = 0` then
-`ℙ(σ^{k+1} x ∈ C | x ∈ C_{1 r_k ⋯ r_2}) = ℙ(C)`.
+**Renewal property of the invariant measure.** Let
+$\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$ be the set of Zeckendorf-adic integers (sequences
+with $x_0 = x_1 = 0$ and no two consecutive ones) and let $T$ be the Zeckendorf odometer. Let
+$\mu$ be a probability measure on $\{0,1\}^{\mathbb{N}}$ with $\mu(\mathbb{X}^c) = 0$ that is
+preserved by $T$. Let $k \ge 2$, $\ell_0 \in \mathbb{N}$ and $y, z \in \mathbb{X}$, and let
+$C = \{x : x_i = z_i \text{ for } 2 \le i \le \ell_0\}$. Let
+$E_0 = \{x : x_{k+1} = 0 \text{ and } x_i = y_i \text{ for } 2 \le i \le k\}$ and
+$E_1 = \{x : x_{k+1} = 1 \text{ and } x_i = y_i \text{ for } 2 \le i \le k\}$. Then
+$\mu(\{x : x_{i+k} = z_i \text{ for } 2 \le i \le \ell_0\} \mid E_0) = \mu(C)$, and if
+$y_k = 0$, then also
+$\mu(\{x : x_{i+k+1} = z_i \text{ for } 2 \le i \le \ell_0\} \mid E_1) = \mu(C)$.
+
+With the shift $(\sigma x)_i = x_{i+1}$, the two conditioned events are $\sigma^k x \in C$ and
+$\sigma^{k+1} x \in C$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

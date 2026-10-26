@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ceilQuotientOddCount
 ---
 
-# Ceil Quotient Odd Count
+# Ceiling parity count
 
-The ceiling sequence parity count `𝓒_n`: the number of `k` with
-`1 ≤ k ≤ n` for which `⌈n/k⌉` is odd (OEIS A330926).
+**Ceiling parity count.** For a natural number $n$, the ceiling parity count $\mathcal{C}_n$
+is the number of integers $k$ with $1 \le k \le n$ for which $\lceil n/k \rceil$ is odd
+(OEIS A330926).
 
 ## Depends on
 

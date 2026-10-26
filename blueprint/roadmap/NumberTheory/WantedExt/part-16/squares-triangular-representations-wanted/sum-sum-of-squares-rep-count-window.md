@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_sumOfSquaresRepCount_window
 ---
 
-# Sum sum Of Squares Rep Count window
+# Window congruence for sums of squares
 
-For `n ≥ 1`, an odd prime `p` with `p - 1 ≥ n + 1`, and every integer `s ≥ p`:
-`∑_{i=0}^{p-1} r_{s-i}(n) ≡ 0 (mod p)`.
+**Window congruence for sums of squares.** For an integer $k$, let $r_k(n)$ be the coefficient
+of $q^n$ in $\theta(q)^k$, where $\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$. Let $n \ge 1$, let
+$p$ be an odd prime with $p - 1 \ge n + 1$, and let $s \ge p$ be an integer. Then $p$ divides
+$\sum_{i=0}^{p-1} r_{s-i}(n)$.
 
 ## Depends on
 
-- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
+- [Representation numbers for sums of squares](sum-of-squares-rep-count.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.zeckBlockPrefix_zero
 ---
 
-# Zeck Block Prefix zero
+# The empty block prefix is zero
 
-`r[0] = 0`.
+**The empty block prefix is zero.** For every natural number $r$, the block prefix $r[0]$,
+formed by the first $0$ blocks of the Zeckendorf representation of $r$, equals $0$.
 
 ## Depends on
 
-- [Zeck Block Prefix](zeck-block-prefix.md)
+- [Block prefixes of a natural number](zeck-block-prefix.md)
 
 ## Proof depends on
 
-- [Zeck Blocks](zeck-blocks.md)
+- [Blocks of a Zeckendorf representation](zeck-blocks.md)
 
 ## Sources
 

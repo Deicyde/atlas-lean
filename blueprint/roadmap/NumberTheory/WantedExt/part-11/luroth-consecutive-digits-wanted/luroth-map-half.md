@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.lurothMap_half
 ---
 
-# Luroth Map half
+# The Lüroth map at 1/2
 
-`L(1/2) = 1`.
+**The Lüroth map at 1/2.** The Lüroth map $L$ sends $1/2$ to $1$: $L(1/2) = 1$.
 
 ## Depends on
 
-- [Luroth Map](luroth-map.md)
+- [Lüroth map](luroth-map.md)
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
-- [Luroth Digit half](luroth-digit-half.md)
+- [First Lüroth digit](luroth-digit.md)
+- [First Lüroth digit of 1/2](luroth-digit-half.md)
 
 ## Sources
 

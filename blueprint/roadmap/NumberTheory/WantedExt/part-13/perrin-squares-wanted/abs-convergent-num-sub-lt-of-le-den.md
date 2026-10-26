@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.abs_convergent_num_sub_lt_of_le_den
 ---
 
-# Abs convergent num sub lt of le den
+# Convergents minimize $|p - qx|$ up to their denominator
 
-Theorem 10 (Hardy–Wright, Theorem 182): for an irrational `x` with
-convergents `p_n / q_n`, if `n > 1`, `0 < q ≤ q_n` and `p / q ≠ p_n / q_n`,
-then `|p_n - q_n x| < |p - q x|`.
+**Convergents minimize $|p - qx|$ up to their denominator.** Let $x$ be an irrational real
+number with continued fraction convergents $p_k / q_k$, where $p_0 / q_0 = \lfloor x \rfloor / 1$.
+If $n > 1$ is a natural number and $p, q$ are integers with $0 < q \le q_n$ and
+$p / q \ne p_n / q_n$, then $|p_n - q_n x| < |p - q x|$.
+
+This is Theorem 182 of Hardy and Wright.
 
 ## Depends on
 

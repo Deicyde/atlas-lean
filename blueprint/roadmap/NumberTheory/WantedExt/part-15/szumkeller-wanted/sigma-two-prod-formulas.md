@@ -5,10 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sigma_two_prod_formulas
 ---
 
-# Sigma two prod formulas
+# Product formulas for the sum of squared divisors
 
-Product formulas for `σ₂(n)` and `σ₂(n)/n²`, and `σ₂(n)/n² < ∏ p²/(p²-1)`
-for `n > 1`.
+**Product formulas for the sum of squared divisors.** Let $n \ne 0$ be a natural number,
+let $\sigma_2(n)$ be the sum of the squares of the divisors of $n$, and for each prime $p$
+dividing $n$ let $k_p$ be the exponent of $p$ in $n$. Then, with products over the primes $p$
+dividing $n$,
+
+$$\sigma_2(n) = \prod_{p \mid n} \frac{p^{2(k_p + 1)} - 1}{p^2 - 1}$$
+
+and
+
+$$\frac{\sigma_2(n)}{n^2} = \prod_{p \mid n} \frac{p^{2(k_p + 1)} - 1}{p^{2k_p} (p^2 - 1)}.$$
+
+If moreover $n > 1$, then $\sigma_2(n)/n^2 < \prod_{p \mid n} p^2/(p^2 - 1)$.
 
 ## Depends on
 

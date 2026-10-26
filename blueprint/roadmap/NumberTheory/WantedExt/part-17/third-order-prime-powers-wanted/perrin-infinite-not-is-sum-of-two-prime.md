@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.perrin_infinite_not_isSumOfTwoPrimePowers
 ---
 
-# Perrin infinite not is Sum Of Two Prime Powers
+# Infinitely many Perrin numbers are not sums of two prime powers
 
-Infinitely many Perrin numbers are not a sum of two prime powers.
-Stated for the repository Perrin sequence with initial values
-`3, 0, 2`. The paper's strengthening to every sufficiently large
-`k ≡ 472190 (mod 967206240)` is omitted for the same seed-convention
-reason as in the Tribonacci statement.
+**Infinitely many Perrin numbers are not sums of two prime powers.** Let $(E_n)_{n \ge 0}$ be
+the Perrin sequence, given by $E_0 = 3$, $E_1 = 0$, $E_2 = 2$ and $E_{n+3} = E_{n+1} + E_n$.
+There are infinitely many natural numbers $k$ such that $E_k$ is not a sum of two prime powers.
+
+The paper proves the stronger statement that this holds for every sufficiently large
+$k \equiv 472190 \pmod{967206240}$. That form is not stated here, since the residue class
+depends on how the sequence is indexed.
 
 ## Depends on
 
-- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Sums of two prime powers](is-sum-of-two-prime-powers.md)
 - [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources

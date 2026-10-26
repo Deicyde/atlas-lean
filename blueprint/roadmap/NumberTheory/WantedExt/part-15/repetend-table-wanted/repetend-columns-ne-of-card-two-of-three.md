@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.repetend_columns_ne_of_card_two_of_three
 ---
 
-# Repetend columns ne of card two of three
+# Two-row repetend tables of length $3$ have no matched columns
 
-If `n_r = 2` and `L = 3`, no two distinct columns of the repetend table of `1/n` match.
+**Two-row repetend tables of length $3$ have no matched columns.** For a natural number $n$,
+let the rows be the integers $b$ with $1 \le b < n$, $\gcd(b, n) = 1$ and multiplicative order $3$
+modulo $n$, and let column $j$ be the multiset of the digits $\lfloor b^{j+1}/n \rfloor \bmod b$
+over these rows. If there are exactly two rows, then for all distinct $i, j < 3$ columns $i$ and
+$j$ are different.
 
 ## Depends on
 

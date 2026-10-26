@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount_integer_root
 ---
 
-# Sum Of Triangular Rep Count integer root
+# Integer roots of triangular representation numbers
 
-`n! t_z(n)` is an integer polynomial `t_{n,0} + t_{n,1} z + ⋯ + t_{n,n} z^n`, and every nonzero
-integer `k` with `t_k(n) = 0` divides `t_{n,1}` and satisfies `|k| < 2 T_n`,
-`T_n = max_{0 ≤ i ≤ n-1} |t_{n,i}|^{1/(n-i)}` (written as `|k| < 2 |t_{n,i}|^{1/(n-i)}` for some
-`i < n`).
+**Integer roots of triangular representation numbers.** For an integer $k$, let $t_k(n)$ be the
+coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. For every
+natural number $n$ there is a polynomial $P(z) = \sum_i a_i z^i$ with integer coefficients such that
+$P(z) = n!\, t_z(n)$ for every integer $z$, and every nonzero integer $k$ with $t_k(n) = 0$ divides
+$a_1$ and satisfies $|k| < 2 |a_i|^{1/(n-i)}$ for some $i < n$.
+
+For $n \ge 1$ the bound says $|k| < 2 \max_{0 \le i \le n-1} |a_i|^{1/(n-i)}$.
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
 
 ## Sources
 

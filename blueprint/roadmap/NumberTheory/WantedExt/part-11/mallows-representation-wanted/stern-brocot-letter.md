@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.SternBrocotLetter
 ---
 
-# Stern Brocot Letter
+# Stern–Brocot letters
 
-The letters `L`, `R` of Stern–Brocot representations.
+**Stern–Brocot letters.** The alphabet of Stern–Brocot representations: the two letters
+$L$ ("left") and $R$ ("right").
 
 ## Depends on
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.theorem_1_2
 ---
 
-# Theorem 1 2
+# Reverse Minkowski theorem
 
-Statement of Theorem 1.2 (Reverse Minkowski Theorem):
-
-For any lattice `ℒ ⊆ ℝ^n` with determinant greater or equal to `1` for all sublattices `ℒ'` of `ℒ`,
-`ρ_{1/t}(ℒ) ≤ 3/2` where `t = 10 (log n + 2)`.
+**Reverse Minkowski theorem.** Let $\mathcal{L} \subseteq \mathbb{R}^n$ be a full-rank lattice, that
+is, a discrete subgroup of $\mathbb{R}^n$ that spans $\mathbb{R}^n$, such that every subgroup
+$\mathcal{L}' \subseteq \mathcal{L}$ (a lattice of possibly lower rank) has determinant
+$\det(\mathcal{L}') \ge 1$. Let $t = 10(\log n + 2)$, where $\log$ is the natural logarithm. Then
+the Gaussian mass of $\mathcal{L}$ at parameter $1/t$ satisfies
+$\rho_{1/t}(\mathcal{L}) = \sum_{y \in \mathcal{L}} e^{-\pi t^2 \|y\|^2} \le 3/2$, where
+$\|y\|$ is the Euclidean norm.
 
 ## Depends on
 
-- [Determinant](determinant.md)
-- [Ρ](untitled.md)
+- [Determinant of a lattice](determinant.md)
+- [Gaussian mass of a lattice](untitled.md)
 
 ## Sources
 

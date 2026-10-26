@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.overpartitionSpt2_zero
 ---
 
-# Overpartition Spt2 zero
+# $\overline{\mathrm{spt2}}$ vanishes at zero
 
-`spt2‾(0) = 0`: the empty overpartition has no smallest part.
+**$\overline{\mathrm{spt2}}$ vanishes at zero.** Let $\overline{\mathrm{spt2}}(n)$ be the
+number of smallest parts in the overpartitions of $n$ whose smallest part is even and not
+overlined. Then $\overline{\mathrm{spt2}}(0) = 0$: the only overpartition of $0$ is empty and has
+no smallest part.
 
 ## Depends on
 
-- [Overpartition Spt2](overpartition-spt2.md)
+- [Number of smallest even parts in overpartitions](overpartition-spt2.md)
 
 ## Proof depends on
 
-- [Overpartition Spt2 Contribution](overpartition-spt2-contribution.md)
+- [Smallest-even-part contribution of an overpartition](overpartition-spt2-contribution.md)
 - [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources

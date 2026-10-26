@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.upperOrderAtInfinity_rpow_inv
 ---
 
-# Upper Order At Infinity rpow inv
+# Upper order at infinity of $q^{-\tau}$
 
-The upper order at infinity of `q ↦ q^{-τ}` is `τ`.
+**Upper order at infinity of $q^{-\tau}$.** For every real $\tau$, the upper order at infinity
+of $q \mapsto (q^{\tau})^{-1}$ is $\max(0, \tau)$; in particular it is $\tau$ when $\tau \ge 0$.
 
 ## Depends on
 
-- [Upper Order At Infinity](upper-order-at-infinity.md)
+- [Upper order at infinity](upper-order-at-infinity.md)
 
 ## Proof depends on
 
-- [Order Ratio rpow inv](order-ratio-rpow-inv.md)
+- [The order ratio of $q^{-\tau}$](order-ratio-rpow-inv.md)
 
 ## Sources
 

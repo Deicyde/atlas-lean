@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negRFibonacci_succ_of_le
 ---
 
-# Neg RFibonacci succ of le
+# Recurrence for the (-r)-Fibonacci polynomials
 
-The recurrence (7): `U_{n+1} = y^{-1} U_{n-r+1} - y^{-1} x U_{n-r}` for `n ≥ r ≥ 1`.
+**Recurrence for the (-r)-Fibonacci polynomials.** Let $A$ be a commutative ring, $x \in A$
+and $y$ a unit of $A$, let $r$ and $n$ be natural numbers with $1 \le r \le n$, and write
+$U_m = U^{(-r)}_m(x, y)$. Then $U_{n+1} = y^{-1} U_{n-r+1} - y^{-1} x U_{n-r}$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

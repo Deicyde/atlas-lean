@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_bronzeLucasParams_add_two
 ---
 
-# Lucas U bronze Lucas Params add two
+# Recurrence of the bronze numbers
 
-The bronze numbers satisfy `B_{n+2} = 3B_{n+1} + B_n`.
+**Recurrence of the bronze numbers.** Let $B_n$ be the bronze numbers, the terms of the Lucas
+sequence $U(3, -1)$. For every natural number $n$, $B_{n+2} = 3B_{n+1} + B_n$.
 
 ## Depends on
 
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Proof depends on

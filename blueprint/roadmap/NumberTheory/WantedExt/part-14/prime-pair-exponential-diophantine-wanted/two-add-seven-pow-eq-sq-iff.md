@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.two_add_seven_pow_eq_sq_iff
 ---
 
-# Two add seven pow eq sq iff
+# Solutions of $2 + 7^y = z^2$
 
-The only non-negative solution of `2 + 7ʸ = z²` is `(y, z) = (1, 3)`.
+**Solutions of $2 + 7^y = z^2$.** For natural numbers $y, z$, we have $2 + 7^y = z^2$ if and
+only if $(y, z) = (1, 3)$.
 
 ## Depends on
 

@@ -16,7 +16,7 @@ the function whose truth table is that of $f$ reversed.
 
 ## Depends on
 
-- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
+- [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

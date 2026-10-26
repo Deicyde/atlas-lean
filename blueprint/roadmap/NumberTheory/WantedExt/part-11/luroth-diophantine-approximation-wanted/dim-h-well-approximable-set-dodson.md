@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.dimH_wellApproximableSet_dodson
 ---
 
-# Dim H well Approximable Set dodson
+# Dodson's theorem
 
-Dodson's theorem: for non-increasing `ψ` with values in `(0, 1/2]` whose lower order
-at infinity `τ_ψ` is at least `1`, `dim W(ψ) = 2/(1+τ_ψ)` (read as `0` when
-`τ_ψ = ∞`). The paper allows `ψ(q) = 0`; positivity is assumed here because Lean's
-`Real.log 0 = 0` would misread `τ_ψ`. The paper's "`τ_ψ ≥ 1`" is taken as a hypothesis:
-without it the formula fails (constant `ψ = 1/4` gives `τ_ψ = 0` and `dim W(ψ) = 1`).
+**Dodson's theorem.** Let $\psi$ be a non-increasing function from the natural numbers to
+$(0, 1/2]$, let $W(\psi)$ be the set of $x \in [0, 1)$ such that for infinitely many $q$ there
+is an integer $p$ with $|x - p/q| < \psi(q)/q$, and let
+$\tau_\psi = \liminf_{q \to \infty} (-\log \psi(q) / \log q)$, taken in $[0, \infty]$, be the
+lower order at infinity of $1/\psi$. If $\tau_\psi \ge 1$, then the Hausdorff dimension of
+$W(\psi)$ is $2/(1 + \tau_\psi)$, read as $0$ when $\tau_\psi = \infty$.
+
+The paper allows $\psi(q) = 0$; here $\psi$ is assumed positive, so that $\log \psi(q)$ is
+defined. Without the hypothesis $\tau_\psi \ge 1$ the formula fails: the constant
+$\psi = 1/4$ has $\tau_\psi = 0$ and $\dim_H W(\psi) = 1$.
 
 ## Depends on
 
-- [Lower Order At Infinity](lower-order-at-infinity.md)
-- [Well Approximable Set](well-approximable-set.md)
+- [Lower order at infinity](lower-order-at-infinity.md)
+- [Well approximable numbers](well-approximable-set.md)
 
 ## Sources
 

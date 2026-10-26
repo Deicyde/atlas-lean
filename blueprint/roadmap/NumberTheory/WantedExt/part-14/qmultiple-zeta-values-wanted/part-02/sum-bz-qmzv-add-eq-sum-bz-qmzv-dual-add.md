@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_bzQMZV_add_eq_sum_bzQMZV_dual_add
 ---
 
-# Sum bz QMZV add eq sum bz QMZV dual add
+# q-Ohno relations for Bradley–Zhao qMZVs
 
-q-Ohno relations: for an admissible index `k = (a₁ + 1, {1}^{b₁-1}, …)` with dual
-`k^∨` and every `c ≥ 0`, `∑_{|𝐜| = c} ζ_q^BZ(k + 𝐜) = ∑_{|𝐜'| = c} ζ_q^BZ(k^∨ + 𝐜')`,
-the sums over `𝐜 ∈ ℕ^{depth k}` and `𝐜' ∈ ℕ^{depth k^∨}` with entry sum `c`, added
-componentwise.
+**q-Ohno relations for Bradley–Zhao qMZVs.** Let $(a_1, b_1), \dots, (a_r, b_r)$ be pairs of
+positive integers, write $\{1\}^{n}$ for $n$ repetitions of $1$, let
+$\mathbf{k} = (a_1 + 1, \{1\}^{b_1 - 1}, \dots, a_r + 1, \{1\}^{b_r - 1})$ be the admissible
+index they determine, of depth $\ell$, and let
+$\mathbf{k}^\vee = (b_r + 1, \{1\}^{a_r - 1}, \dots, b_1 + 1, \{1\}^{a_1 - 1})$ be its dual, of
+depth $\ell^\vee$. Then for every natural number $c$,
+$\sum_{\mathbf{c}} \zeta_q^{\mathrm{BZ}}(\mathbf{k} + \mathbf{c}) =
+\sum_{\mathbf{c}'} \zeta_q^{\mathrm{BZ}}(\mathbf{k}^\vee + \mathbf{c}')$, where $\mathbf{c}$ runs
+over the tuples in $\mathbb{N}^{\ell}$ and $\mathbf{c}'$ over the tuples in $\mathbb{N}^{\ell^\vee}$
+whose entries sum to $c$, and indices are added componentwise.
 
 ## Depends on
 
-- [Bz Block Index](bz-block-index.md)
-- [Bz QMZV](bz-qmzv.md)
+- [Block index of a list of pairs](bz-block-index.md)
+- [Bradley–Zhao q-multiple zeta values](bz-qmzv.md)
 
 ## Sources
 

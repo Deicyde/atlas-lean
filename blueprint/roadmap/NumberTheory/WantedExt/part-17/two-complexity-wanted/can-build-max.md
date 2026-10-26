@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.canBuild_max
 ---
 
-# Lemma 1
+# The largest number built from $m$ copies of $l$
 
-**Lemma 1**: for `l > 1` and positive `m`, `l^m` is the
-largest number obtainable using addition and multiplication
-with `m` copies of `l`.
+**The largest number built from $m$ copies of $l$.** Let $l > 1$ and $m \ge 1$ be natural
+numbers. Then $l^m$ can be built from exactly $m$ copies of $l$ using addition and
+multiplication, and every natural number that can be built from $m$ copies of $l$ in this way
+is at most $l^m$.
 
 ## Depends on
 
-- [Can Build](can-build.md)
+- [Numbers built from copies of $l$](can-build.md)
 
 ## Sources
 

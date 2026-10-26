@@ -67,7 +67,11 @@ theorem ωScottContinuous_of_apply {g : α → β →𝒄 γ}
   rw [(h b).map_ωSup, ωSup_def, ωSup_apply]
   apply le_antisymm <;> apply ωSup_le_ωSup_of_le <;> intro i <;> exact ⟨i, le_rfl⟩
 
-/-- Currying of continuous maps out of a product. -/
+/-- **Currying of Scott-continuous maps.** Let $\alpha$, $\beta$, $\gamma$ be ω-complete partial
+orders and let $f : \alpha \times \beta \to \gamma$ be a Scott-continuous map, that is, a map that
+is monotone and preserves suprema of ω-chains. Its currying is the Scott-continuous map from
+$\alpha$ to the ω-complete partial order of Scott-continuous maps $\beta \to \gamma$, ordered
+pointwise, that sends $a$ to the map $b \mapsto f(a, b)$. -/
 def curry (f : α × β →𝒄 γ) : α →𝒄 (β →𝒄 γ) :=
   ofFun (fun a => ofFun (fun b => f (a, b)))
     (ωScottContinuous_of_apply fun b => show ωScottContinuous (fun a => f (a, b)) by fun_prop)

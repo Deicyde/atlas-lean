@@ -6,10 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.mersenneEtaCondition_37
 ---
 
-# Mersenne Eta Condition 37
+# Condition (etar) for the seed $37$
 
-For `s_1 = 37` (`s_1^- = 35`, `s_1^+ = 39`), condition (etar) holds for `n = 7` and fails for
-`n = 1`.
+**Condition (etar) for the seed $37$.** For the seed $s_1 = 37$, the odd squarefree parts of
+$s_1 - 2 = 35$ and $s_1 + 2 = 39$ are $s_1^- = 35$ and $s_1^+ = 39$. Condition (etar) for
+$s_1^- = 35$ and $s_1^+ = 39$ holds for $n = 7$ and fails for $n = 1$.
 
 ## Depends on
 

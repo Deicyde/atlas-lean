@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PolynomialCubesWanted.int_eq_sum_five_polynomial_cubes
 ---
 
-# Int eq sum five polynomial cubes
+# Every integer is a sum of five cubes of polynomials
 
-Choudhry's Theorem 2: every integer is a sum of five cubes of
-nonconstant integer polynomials.
+**Every integer is a sum of five cubes of polynomials.** For every integer $N$ there are
+polynomials $f, g, h, k, l \in \mathbb{Z}[x]$, each of degree at least $1$, such that
+$f^3 + g^3 + h^3 + k^3 + l^3 = N$ as an identity in $\mathbb{Z}[x]$.
 
 ## Depends on
 

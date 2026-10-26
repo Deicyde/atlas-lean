@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_qMZVSpaceCirc
 ---
 
-# One mem q MZVSpace Circ
+# The constant $1$ lies in $\mathcal{Z}^\circ_{q,d}$
 
-`1 ∈ 𝒵°_{q,d}` (the empty qMZV).
+**The constant $1$ lies in $\mathcal{Z}^\circ_{q,d}$.** For every natural number $d$, the
+constant power series $1$ (the qMZV of the empty index) lies in
+the space $\mathcal{Z}^\circ_{q,d}$.
 
 ## Depends on
 
-- [Q MZVSpace Circ](q-mzvspace-circ.md)
+- [The spaces $\mathcal{Z}^\circ_{q,d}$](q-mzvspace-circ.md)
 
 ## Proof depends on
 
-- [Q MZV](../part-02/q-mzv.md)
+- [General q-multiple zeta values](../part-02/q-mzv.md)
 
 ## Sources
 

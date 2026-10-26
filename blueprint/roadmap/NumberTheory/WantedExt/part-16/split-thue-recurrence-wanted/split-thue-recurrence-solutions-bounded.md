@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.splitThue_recurrence_solutions_bounded
 ---
 
-# Split Thue recurrence solutions bounded
+# Hilgart's theorem on split families of Thue equations
 
-Main theorem: under the hypotheses, every integer solution of
-`(x - G 1 n * y) ⋯ (x - G d n * y) - y ^ d = ±1` with `|y| ≥ 2` has
-`max (log |x|, log |y|, n) ≤ κ` for a constant `κ` depending only on the sequences.
+**Hilgart's theorem on split families of Thue equations.** Let $(d, G, \gamma, \delta)$ be a
+split Thue recurrence family. Then there is $\kappa \in \mathbb{R}$ such that for every
+$n \in \mathbb{N}$ and all integers $x, y$ with $|y| \ge 2$ and
+
+$$(x - G_1(n) y) \cdots (x - G_d(n) y) - y^d = \pm 1$$
+
+we have $\log |x| \le \kappa$, $\log |y| \le \kappa$ and $n \le \kappa$ (where $\log 0 = 0$).
 
 ## Depends on
 
-- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
+- [Split Thue recurrence family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

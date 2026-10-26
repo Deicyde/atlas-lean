@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.szDualIndex_two
 ---
 
-# Sz Dual Index two
+# The SZ dual of $(2)$
 
-`(2)† = (1, 0)`.
+**The SZ dual of $(2)$.** The SZ dual index of the one-entry index $(2)$ is $(1, 0)$, that
+is, $(2)^\dagger = (1, 0)$.
 
 ## Depends on
 
-- [Sz Dual Index](sz-dual-index.md)
+- [The SZ dual index](sz-dual-index.md)
 
 ## Sources
 

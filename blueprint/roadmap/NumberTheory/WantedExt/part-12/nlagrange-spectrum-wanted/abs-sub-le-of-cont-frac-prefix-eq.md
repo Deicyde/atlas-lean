@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.abs_sub_le_of_contFrac_prefix_eq
 ---
 
-# Abs sub le of cont Frac prefix eq
+# Real numbers with a common continued fraction prefix are close
 
-If two simple continued fractions agree in their initial terms `a₀, …, a_k`, their values differ
-by at most `2^{1-k}`. Digits are those of Mathlib's `GenContFract.of` (`h = a₀`,
-`partDens.get? i = a_{i+1}`).
+**Real numbers with a common continued fraction prefix are close.** Let $\xi$ and $\xi'$ be
+real numbers with continued fraction expansions $[a_0; a_1, a_2, \dots]$ and
+$[a_0'; a_1', a_2', \dots]$, computed by $\xi_0 = \xi$, $a_i = \lfloor \xi_i \rfloor$ and
+$\xi_{i+1} = 1/(\xi_i - a_i)$, stopping when $\xi_i = a_i$ (so an expansion is finite exactly when
+the number is rational). Let $k \ge 0$ be an integer, and suppose that $a_0 = a_0'$ and that for
+each $1 \le i \le k$ either both expansions have a digit of index $i$ and $a_i = a_i'$, or neither
+has one. Then $|\xi - \xi'| \le 2^{1-k}$.
 
 ## Depends on
 

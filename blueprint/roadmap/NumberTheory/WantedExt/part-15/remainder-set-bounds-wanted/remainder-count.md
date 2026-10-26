@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.remainderCount
 ---
 
-# Remainder Count
+# Remainder count
 
-The number of distinct remainders `s(n) = |S(n)|` (OEIS A283190).
+**Remainder count.** For a natural number $n$, $s(n)$ is the number of elements of the
+remainder set $S(n)$, that is, the number of distinct values of $n \bmod k$ for
+$1 \le k \le \lfloor n/2 \rfloor$ (OEIS A283190).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Remainder Set](remainder-set.md)
+- [Remainder set](remainder-set.md)
 
 ## Sources
 

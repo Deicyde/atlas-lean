@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_of_even
 ---
 
-# Sqrt has Periodic CF exists iff of even
+# Parity criterion for $\sqrt{d}$ with a given symmetric period, even length
 
-Theorem 1 (ii): for even `l ≥ 2` and a symmetric sequence of positive integers
-`a₁, …, a_{l-1}`, some positive nonsquare `d` has `√d = [a₀; a₁, …, a_{l-1}, 2a₀]` if and
-only if both `a_{l/2}` and `q_{l-1}` are odd, or `a_{l/2}` is even.
+**Parity criterion for $\sqrt{d}$ with a given symmetric period, even length.** Let $l \ge 2$
+be even and let $a_1, \dots, a_{l-1}$ be positive integers with $a_i = a_{l-i}$ for
+$1 \le i \le l - 1$. For $0 \le i \le l - 1$ let $q_i = K(a_1, \dots, a_i)$ be the continuant,
+given by $q_0 = 1$, $q_1 = a_1$ and $q_{i+2} = a_{i+2} q_{i+1} + q_i$. Then there are a natural
+number $d$ that is not a perfect square and a natural number $a_0$ with
+$\sqrt{d} = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0}]$ if and only if either $a_{l/2}$ and
+$q_{l-1}$ are both odd, or $a_{l/2}$ is even.
 
 ## Depends on
 
-- [Has Periodic CF](has-periodic-cf.md)
-- [Convergent Den](convergent-den.md)
+- [Continued fractions with a prescribed period](has-periodic-cf.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

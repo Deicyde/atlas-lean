@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.beattyOctalMove_lt
 ---
 
-# Beatty Octal Move lt
+# Moves of a Beatty octal game decrease the heap
 
-Every move of a Beatty octal game decreases the heap, so the game terminates.
+**Moves of a Beatty octal game decrease the heap.** For all real numbers $\alpha$, $\beta$
+and all natural numbers $n$, $m$: if a move of the Beatty octal game for $\alpha$ and $\beta$
+takes a heap of $n$ tokens to a heap of $m$ tokens, then $m < n$.
+
+Consequently every play of the game terminates.
 
 ## Depends on
 
-- [Beatty Octal Move](beatty-octal-move.md)
+- [Moves of the Beatty octal game](beatty-octal-move.md)
 
 ## Sources
 

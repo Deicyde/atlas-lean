@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_eq_sum_dcLevelDNodes
 ---
 
-# Dc DNodes eq sum dc Level DNodes
+# Level-sum formula for the divide-and-conquer D-node count
 
-Theorem 11: for `n > 0`, `δ(n) = ∑_{i=0}^{⌊log₂ n⌋-1} λᵢ(n)`, and explicitly
-`δ(n) = ∑_{i=0}^{⌊log₂ n⌋-1} (nᵢ 2^i + (-1)^{nᵢ} (n mod 2^i))`.
+**Level-sum formula for the divide-and-conquer D-node count.** Let $\delta$ be the
+divide-and-conquer D-node count. For every integer $n > 0$, let $k = \lfloor \log_2 n \rfloor$,
+let $\lambda_i(n)$ be the level-$i$ D-node count, and let $n_i$ be the binary digit of $n$ at
+$2^i$. Then
+
+$$\delta(n) = \sum_{i=0}^{k-1} \lambda_i(n),$$
+
+and explicitly
+
+$$\delta(n) = \sum_{i=0}^{k-1} \left(n_i 2^i + (-1)^{n_i} (n \bmod 2^i)\right).$$
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
-- [Dc Level DNodes](dc-level-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
+- [Level counts of D-nodes](dc-level-dnodes.md)
 
 ## Sources
 

@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isSumOfTwoPrimePowers_of_lt_two
 ---
 
-# Not is Sum Of Two Prime Powers of lt two
+# Integers below $2$ are not sums of two prime powers
 
-Characteristic threshold: no integer below `2` is representable,
-since each prime power is at least `1`.
+**Integers below $2$ are not sums of two prime powers.** If $n$ is an integer with $n < 2$,
+then $n$ is not a sum of two prime powers, since every prime power $p^a$ is at least $1$.
 
 ## Depends on
 
-- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Sums of two prime powers](is-sum-of-two-prime-powers.md)
 
 ## Sources
 

@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.lucasDerivative_of_ne_zero
 ---
 
-# Lucas Derivative of ne zero
+# The Lucas derivative away from the origin
 
-The Lucas derivative away from `0` is the difference quotient.
+**The Lucas derivative away from the origin.** For all real numbers $\varphi$, $\varphi'$
+and $x \ne 0$ and every function $f : \mathbb{R} \to \mathbb{R}$, the Lucas derivative
+$D_{\varphi,\varphi'}$ satisfies
+$D_{\varphi,\varphi'} f(x) = (f(\varphi x) - f(\varphi' x))/((\varphi - \varphi')x)$, where the
+quotient is read as $0$ when $\varphi = \varphi'$.
 
 ## Depends on
 
-- [Lucas Derivative](lucas-derivative.md)
+- [Lucas derivative](lucas-derivative.md)
 
 ## Sources
 

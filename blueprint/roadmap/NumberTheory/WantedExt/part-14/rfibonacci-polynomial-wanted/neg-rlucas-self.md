@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negRLucas_self
 ---
 
-# Neg RLucas self
+# The $r$-th term of the companion sequence $V^{(-r)}$
 
-`V^{(-r)}_r = r y^{-1}` for `r ≥ 1`.
+**The $r$-th term of the companion sequence $V^{(-r)}$.** Let $A$ be a commutative ring,
+$r \ge 1$ a natural number, $x \in A$ and $y$ a unit of $A$. The companion sequence of the
+$(-r)$-Fibonacci polynomials satisfies $V^{(-r)}_r(x, y) = r y^{-1}$.
 
 ## Depends on
 
-- [Neg RLucas](neg-rlucas.md)
+- [Companion sequence of the $(-r)$-Fibonacci polynomials](neg-rlucas.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isEventuallyPeriodic_mallowsRep_iff_quadratic
 ---
 
-# Is Eventually Periodic mallows Rep iff quadratic
+# Lagrange's theorem for Mallows representations
 
-The Mallows representation of an irrational `α ∈ (0, 1)` is eventually periodic iff `α` is
-a quadratic irrational (degree-two algebraic over `ℚ`, `IsRealQuadraticIrrational`).
+**Lagrange's theorem for Mallows representations.** For every irrational $\alpha \in (0, 1)$,
+the Mallows representation $M(\alpha)$ is eventually periodic if and only if $\alpha$ is a real
+quadratic irrational, that is, algebraic of degree $2$ over $\mathbb{Q}$.
 
 ## Depends on
 
 - [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
 - [Real quadratic irrationals](../../../MathlibExt/part-01/continued-fractions/lagrange-periodic/is-real-quadratic-irrational.md)
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

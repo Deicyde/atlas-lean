@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.exists_nicomachean_family_same_quadratic_factor
 ---
 
-# Exists nicomachean family same quadratic factor
+# Nicomachean families sharing a quadratic factor
 
-For every `N` there are `N` distinct sequences (as multisets) of positive integers with
-`ν(σ) = 0` whose adjoined polynomials `ν(σ; a, b)` share the same quadratic factor: for a common
-`c` (the sum of the entries) every `ν(σ; a, b) = -(a + b)(a^2 - ab + b^2 - a - b - 2c)`.
-Positivity of the entries, the paper's setting, excludes trivial families such as `(k, -k, 1)`.
+**Nicomachean families sharing a quadratic factor.** Write
+$\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
+of a finite sequence. For every natural number $N$ there are finite sequences
+$\sigma_1, \dots, \sigma_N$ of positive integers, pairwise distinct as multisets, and an integer
+$c$ such that for every $i$ we have $\nu(\sigma_i) = 0$ and, for all integers $a$ and $b$, the
+sequence $(\sigma_i, a, b)$ obtained by appending $a$ and $b$ to $\sigma_i$ satisfies
+$\nu(\sigma_i, a, b) = -(a + b)(a^2 - ab + b^2 - a - b - 2c)$.
+
+Since $\nu(\sigma_i) = 0$, the identity forces $c$ to be the sum of the entries of every
+$\sigma_i$. Positivity of the entries, the paper's setting, excludes trivial families such as
+$(k, -k, 1)$.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.okounkovPoly
 ---
 
-# Okounkov Poly
+# Okounkov polynomials
 
-Okounkov's polynomials: `p_k(X) = X^{k/2}` for even `k` and `X^{(k-1)/2}(1 + X)` for
-odd `k`.
+**Okounkov polynomials.** For $k \in \mathbb{N}$, the Okounkov polynomial
+$p_k \in \mathbb{Q}[X]$ is $p_k(X) = X^{k/2}$ if $k$ is even and $p_k(X) = X^{(k-1)/2}(1 + X)$ if
+$k$ is odd.
 
 ## Depends on
 

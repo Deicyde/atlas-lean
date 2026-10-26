@@ -4,6 +4,6 @@ navigation: module
 
 # Ramanujan Tau
 
-- [Τ](untitled.md)
-- [Τ one](one.md)
-- [Ramanujan petersson](ramanujan-petersson.md)
+- [Ramanujan τ-function](untitled.md)
+- [Normalisation of the Ramanujan τ-function](one.md)
+- [Ramanujan–Petersson conjecture for τ (Deligne's theorem)](ramanujan-petersson.md)

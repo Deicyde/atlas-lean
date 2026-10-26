@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.eventually_practical_add_two_polygonal
 ---
 
-# Eventually practical add two polygonal
+# Large integers as a practical number plus two polygonal numbers
 
-For `s > 3`, every sufficiently large positive integer is a practical number plus two
-`s`-gonal numbers.
+**Large integers as a practical number plus two polygonal numbers.** Let $s > 3$ be a natural
+number and, for a natural number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th
+$s$-gonal number, so that $P_s(0) = 0$. There is a natural number $N$ such that every natural
+number $n > N$ can be written as $n = q + P_s(x) + P_s(y)$ with $q$ a practical number and
+$x, y$ natural numbers.
 
 ## Depends on
 

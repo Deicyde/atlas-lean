@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_four_squares_large_parts
 ---
 
-# Exists four squares large parts
+# Four squares with large nonzero parts
 
-There is a constant `C > 0` such that every positive integer `n` is `a₁² + a₂² + a₃² + a₄²`
-with integers `aᵢ`, each `aᵢ = 0` or `aᵢ ≥ √n / C` (quoted by the paper from Moscariello).
+**Four squares with large nonzero parts.** There is a real constant $C > 0$ such that every
+positive integer $n$ can be written as $n = a_1^2 + a_2^2 + a_3^2 + a_4^2$ with integers
+$a_1, a_2, a_3, a_4$, each of which is either $0$ or at least $\sqrt{n} / C$.
 
 ## Depends on
 

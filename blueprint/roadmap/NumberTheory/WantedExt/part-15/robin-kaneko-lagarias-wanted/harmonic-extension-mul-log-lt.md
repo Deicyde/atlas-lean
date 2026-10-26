@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.harmonicExtension_mul_log_lt
 ---
 
-# Harmonic Extension mul log lt
+# Upper bound for $H(x) \log H(x)$
 
-For `x ≥ 4`, `H(x) log H(x) < x² / (x + 6/π²)`.
+**Upper bound for $H(x) \log H(x)$.** With $H$ the real extension of the harmonic numbers and
+$\log$ the natural logarithm, every real $x \ge 4$ satisfies
+
+$$H(x) \log H(x) < \frac{x^2}{x + 6/\pi^2}.$$
 
 ## Depends on
 
-- [Harmonic Extension](harmonic-extension.md)
+- [The real extension of the harmonic numbers](harmonic-extension.md)
 
 ## Sources
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellLucasSequence_succ
 ---
 
-# Lemma 4
+# Consecutive Pell–Lucas numbers are coprime
 
-**Lemma 4**: for every nonnegative integer `n`,
-`gcd(Q_n, Q_{n+1}) = 1`.
+**Consecutive Pell–Lucas numbers are coprime.** For every natural number $n$, the Pell–Lucas
+numbers $Q_n$ and $Q_{n+1}$ satisfy $\gcd(Q_n, Q_{n+1}) = 1$.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.modularProductSum_two_error_large
 ---
 
-# Modular Product Sum two error large
+# Large values of the error in the modular product sum $S_2(n, m)$
 
-Theorem 4, consequence: there are `c > 0` and `N` such that every odd `n ≥ N` admits
-`m ∈ {1, …, n}` coprime to `n` with `|S_2(n, m) - n² φ(n) / 4| ≥ c n^{3/2} φ(n)`.
+**Large values of the error in the modular product sum $S_2(n, m)$.** Let $\varphi$ be Euler's
+totient function and $S_2(n, m)$ the modular product sum. There are a real number $c > 0$ and a
+natural number $N$ such that every odd natural number $n \ge N$ admits a natural number $m$ with
+$1 \le m \le n$ and $\gcd(m, n) = 1$ for which
+
+$$\left| S_2(n, m) - \frac{n^2 \varphi(n)}{4} \right| \ge c \, n^{3/2} \varphi(n).$$
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

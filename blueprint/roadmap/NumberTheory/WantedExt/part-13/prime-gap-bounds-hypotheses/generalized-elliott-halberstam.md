@@ -5,9 +5,11 @@ statement: formalized
 lean: WantedExt.NumberTheory.Polymath8b.GeneralizedElliottHalberstam
 ---
 
-# Generalized Elliott Halberstam
+# Generalized Elliott–Halberstam conjecture (dyadic form)
 
-The complete dyadic GEH assumption below its excluded endpoint one.
+**Generalized Elliott–Halberstam conjecture (dyadic form).** The generalized
+Elliott–Halberstam estimate at level $\theta$ holds for every real number $\theta$ with
+$0 < \theta < 1$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Elliott Halberstam At](generalized-elliott-halberstam-at.md)
+- [Generalized Elliott–Halberstam estimate at level $\theta$](generalized-elliott-halberstam-at.md)
 
 ## Sources
 

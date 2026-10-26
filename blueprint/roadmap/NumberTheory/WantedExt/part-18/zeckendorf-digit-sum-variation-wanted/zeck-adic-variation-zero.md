@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.zeckAdicVariation_zero
 ---
 
-# Zeck Adic Variation zero
+# The variation for $r = 0$ vanishes
 
-`Δ^{(0)} = 0` on all of `𝕏`.
+**The variation for $r = 0$ vanishes.** For every digit sequence $x : \mathbb{N} \to \{0, 1\}$,
+not only for Zeckendorf-adic integers, the variation satisfies $\Delta^{(0)}(x) = 0$.
 
 ## Depends on
 
-- [Zeck Adic Variation](zeck-adic-variation.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
 
 ## Proof depends on
 
-- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
-- [Zeck Adic Trunc Variation zero](zeck-adic-trunc-variation-zero.md)
-- [Zeck Adic Variation eq of eventually](zeck-adic-variation-eq-of-eventually.md)
+- [Truncated variation of the Zeckendorf digit sum](zeck-adic-trunc-variation.md)
+- [The truncated variation vanishes for zero steps](zeck-adic-trunc-variation-zero.md)
+- [The variation is the eventual value of the truncated variations](zeck-adic-variation-eq-of-eventually.md)
 
 ## Sources
 

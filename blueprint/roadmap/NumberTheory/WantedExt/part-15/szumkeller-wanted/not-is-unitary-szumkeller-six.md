@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isUnitarySZumkeller_six
 ---
 
-# Not is Unitary SZumkeller six
+# The number 6 is not unitary s-Zumkeller
 
-`6` is not unitary s-Zumkeller.
+**The number 6 is not unitary s-Zumkeller.** The number $6$ is not a unitary s-Zumkeller
+number.
 
 ## Depends on
 
-- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+- [Unitary s-Zumkeller numbers](is-unitary-szumkeller.md)
 
 ## Proof depends on
 

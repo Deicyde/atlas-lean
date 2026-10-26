@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.oozToSZ_one
 ---
 
-# Ooz To SZ one
+# The map $V$ fixes $py$
 
-`V(p y) = p y`.
+**The map $V$ fixes $py$.** The map $V$ from OOZ to SZ words sends the word $py$ (the index
+$(1)$) to itself with coefficient $1$: $V(py) = py$.
 
 ## Depends on
 
-- [Ooz To SZ](ooz-to-sz.md)
+- [The map $V$ from OOZ to SZ words](ooz-to-sz.md)
 
 ## Proof depends on
 
-- [Ooz To SZTail](ooz-to-sztail.md)
+- [The tail part of the map $V$](ooz-to-sztail.md)
 
 ## Sources
 

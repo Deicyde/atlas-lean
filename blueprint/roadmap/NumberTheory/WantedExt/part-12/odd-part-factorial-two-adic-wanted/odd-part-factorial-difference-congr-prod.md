@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.oddPart_factorial_difference_congr_product
 ---
 
-# Odd Part factorial difference congr product
+# Normalized difference of odd parts of dyadic factorials
 
-For `e≥3`, the normalized difference of consecutive odd factorial parts is
-congruent to `z*w` modulo `2^(e-1)`.  Rather than defining global constants,
-`z` and `w` are quantified together with exactly their Corollary 8 and
-post-Corollary 10 congruence properties; the displayed quotient is formed in
-`ℤ`, cast to `ℤ_[2]`, and compared there.
+**Normalized difference of odd parts of dyadic factorials.** Write $\mathrm{od}(n)$ for the odd
+part of $n$, $(2^e-1)!!$ for the product of the odd numbers from $1$ to $2^e-1$, and
+$\lfloor x \rfloor$ for the floor of $x$; congruences are taken in the $2$-adic integers
+$\mathbb{Z}_2$. Let $z, w \in \mathbb{Z}_2$ satisfy $z \equiv \mathrm{od}((2^{e-1})!) \pmod{2^e}$
+for every $e \ge 1$ and $w \equiv \lfloor ((2^e-1)!! - 1)/2^e \rfloor \pmod{2^{e-1}}$ for every
+$e \ge 3$. Then for every $e \ge 3$,
+
+$$\lfloor (\mathrm{od}((2^e)!) - \mathrm{od}((2^{e-1})!))/2^e \rfloor \equiv zw \pmod{2^{e-1}}.$$
 
 ## Depends on
 
-- [Odd Double Factorial](odd-double-factorial.md)
-- [Odd Part](odd-part.md)
+- [Odd double factorial below a power of two](odd-double-factorial.md)
+- [Odd part](odd-part.md)
 
 ## Sources
 

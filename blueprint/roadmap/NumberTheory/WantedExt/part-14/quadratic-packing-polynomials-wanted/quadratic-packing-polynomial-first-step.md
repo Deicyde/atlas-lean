@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_first_step_value
 ---
 
-# Quadratic Packing Polynomial first step value
+# First step value and sheared form of a quadratic packing polynomial
 
-Lemma 11: if `P` is a QPP on `I(n/m)` with step difference `k > 0`, then, with
-`l = gcd(m - 1, n)`, `F = P(0, 0)` and `P̂(x, y) = P(x + (m-1)/n y, y)`, one has
-`P̂(k/(n/l), ȳ_k) = F + k`, and `P̂(x, y) = n/2 x(x - 1) + D x + k/(n/l) y + F` (Equation (3))
-with `D = n/l - (kl - n)/2 - ȳ_k`. The step difference is taken as a natural number; by
-Theorem 1 it is an integer for every QPP.
+**First step value and sheared form of a quadratic packing polynomial.** Let $m, n$ be
+coprime positive integers, let $l = \gcd(m - 1, n)$, and let $P$ be a quadratic packing
+polynomial on the lattice points $I(n/m)$ of the sector of slope $n/m$ whose step difference
+for $m, n$ is a positive integer $k$. Put $F = P(0, 0)$ and
+$\hat P(x, y) = P(x + \frac{m - 1}{n} y, y)$, and let $\bar y_k$ be the height of the first step
+of the $k$-th staircase of the sector. Then $\hat P(k/(n/l), \bar y_k) = F + k$, and for all
+real $x, y$ one has $\hat P(x, y) = \frac{n}{2} x (x - 1) + D x + \frac{k}{n/l} y + F$ with
+$D = n/l - (kl - n)/2 - \bar y_k$.
+
+The step difference is taken as a natural number; by Theorem 1 of the source it is an integer
+for every quadratic packing polynomial.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Consecutive Step Difference](consecutive-step-difference.md)
-- [Sector Lattice Points](sector-lattice-points.md)
-- [Staircase First Height](staircase-first-height.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Step difference](consecutive-step-difference.md)
+- [Lattice points of a sector](sector-lattice-points.md)
+- [First height of a staircase](staircase-first-height.md)
 
 ## Sources
 

@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaV_congruences_mod_six
 ---
 
-# Mock Theta V congruences mod six
+# Infinite family of congruences modulo 6 for $v(q)$
 
-Theorem 2 (iii): for a prime `p ≥ 5` with `(-18/p) = -1`, every `α ≥ 0` and
-`1 ≤ j ≤ p - 1`,
-`∑_n P_v(6 p^{2α} n + (19 p^{2α} + 1)/4) q^n ≡ 3 f_1 f_6^3 (mod 6)` and
-`P_v(6 p^{2α+2} n + 6 p^{2α+1} j + (19 p^{2α+2} + 1)/4) ≡ 0 (mod 6)`; the division by `4`
-is exact since `p^2 ≡ 1 (mod 8)`.
+**Infinite family of congruences modulo 6 for $v(q)$.** Let $P_v(n)$ be the coefficient of
+$q^n$ in the eighth-order mock theta function $v(q)$, and for $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime whose Legendre symbol
+$\left(\frac{-18}{p}\right)$ equals $-1$, and let $\alpha \ge 0$ be an integer. Then for every
+$n \ge 0$, $P_v\bigl(6 p^{2\alpha} n + (19 p^{2\alpha} + 1)/4\bigr)$ is congruent modulo $6$ to
+the coefficient of $q^n$ in $3 f_1 f_6^3$. Moreover, for every $n \ge 0$ and every $j$ with
+$1 \le j \le p - 1$,
+$P_v\bigl(6 p^{2\alpha+2} n + 6 p^{2\alpha+1} j + (19 p^{2\alpha+2} + 1)/4\bigr) \equiv 0 \pmod 6$.
+
+The divisions by $4$ are exact since $p^2 \equiv 1 \pmod 8$.
 
 ## Depends on
 
-- [Mock Theta V](mock-theta-v.md)
+- [The eighth-order mock theta function $v(q)$](mock-theta-v.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

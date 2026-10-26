@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_oozQMZV_eq_of_oozToSZ_eq_szDual
 ---
 
-# Sum ooz QMZV eq of ooz To SZ eq sz Dual
+# Duality for OOZ-qMZVs
 
-Duality for OOZ-qMZVs, `ζ_q^OSZ = ζ_q^OSZ ∘ V⁻¹ ∘ τ̃ ∘ V` on `𝔎¹`: for an SZ-admissible index
-`w` and every combination `x` of SZ-admissible words with `V(x) = τ̃(V(w))`,
-`ζ_q^OSZ(x) = ζ_q^OSZ(w)` (`V⁻¹` exists by `bijOn_linearCombination_oozToSZ`).
+**Duality for OOZ-qMZVs.** Call an index $(k_1, \dots, k_r)$ of natural numbers SZ-admissible
+if it is empty or $k_1 \ge 1$. Extend $\zeta_q^{\mathrm{OOZ}}$ and the map $V$ linearly to formal
+$\mathbb{Q}$-linear combinations of indices, and let $\tilde\tau$ act on such a combination by
+replacing each index with its SZ dual index. Let $w$ be an SZ-admissible index and let $x$ be a
+$\mathbb{Q}$-linear combination of SZ-admissible indices with $V(x) = \tilde\tau(V(w))$. Then
+$\zeta_q^{\mathrm{OOZ}}(x) = \zeta_q^{\mathrm{OOZ}}(w)$.
+
+Since $V$ is a bijection on combinations of SZ-admissible indices (Proposition 12 (ii) of the
+source), this is the identity
+$\zeta_q^{\mathrm{OOZ}} = \zeta_q^{\mathrm{OOZ}} \circ V^{-1} \circ \tilde\tau \circ V$ on
+SZ-admissible indices.
 
 ## Depends on
 
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Ooz To SZ](ooz-to-sz.md)
-- [Sz Dual Index](sz-dual-index.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The map $V$ from OOZ to SZ words](ooz-to-sz.md)
+- [The SZ dual index](sz-dual-index.md)
 
 ## Sources
 

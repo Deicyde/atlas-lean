@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount_ne_zero_of_window
 ---
 
-# Sum Of Triangular Rep Count ne zero of window
+# Window criterion for representability by triangular numbers
 
-Representability criterion for triangular numbers: for `n ≥ 1` and an odd prime
-`p` with `p - 1 ≥ n + 1`, if `t_{s-(p-1)}(n) + ⋯ + t_{s-1}(n) ≢ 0 (mod p)` then
-`t_s(n) ≠ 0` (every `s ∈ ℤ`).
+**Window criterion for representability by triangular numbers.** For an integer $k$, let
+$t_k(n)$ be the coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$.
+Let $n \ge 1$ and let $p$ be an odd prime with $p - 1 \ge n + 1$. For every integer $s$, if $p$ does
+not divide $\sum_{i=1}^{p-1} t_{s-i}(n)$, then $t_s(n) \ne 0$.
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
 
 ## Sources
 

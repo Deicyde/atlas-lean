@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanK_zero
 ---
 
-# Ramanujan K zero
+# Ramanujan's function $k$ vanishes at $0$
 
-`k(0) = 0`.
+**Ramanujan's function $k$ vanishes at $0$.** Ramanujan's function satisfies $k(0) = 0$.
 
 ## Depends on
 
-- [Ramanujan K](ramanujan-k.md)
+- [Ramanujan's function $k(q)$](ramanujan-k.md)
 
 ## Proof depends on
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_admissible_differenceSmooth
 ---
 
-# Exists admissible difference Smooth
+# Admissible difference-smooth sets of every size
 
-For every `k` there is an admissible `k`-tuple of integers that is
-difference `k`-smooth.
+**Admissible difference-smooth sets of every size.** For every natural number $k$ there is
+an admissible set $H$ of exactly $k$ integers that is difference $k$-smooth: for all distinct
+$h, h' \in H$, every prime factor of $h - h'$ is at most $k$.
 
 ## Depends on
 
 - [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
-- [Is Difference Smooth](is-difference-smooth.md)
+- [Difference-smooth sets of integers](is-difference-smooth.md)
 
 ## Sources
 

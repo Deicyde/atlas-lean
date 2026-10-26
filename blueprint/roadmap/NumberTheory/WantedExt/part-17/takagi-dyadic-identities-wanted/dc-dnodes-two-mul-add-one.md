@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.dcDNodes_two_mul_add_one
 ---
 
-# Dc DNodes two mul add one
+# Odd-argument recurrence for the divide-and-conquer D-node count
 
-`δ(2m+1) = δ(m) + δ(m+1) + 1` for `m > 0`.
+**Odd-argument recurrence for the divide-and-conquer D-node count.** For every integer
+$m > 0$, the divide-and-conquer D-node count $\delta$ satisfies
+$\delta(2m+1) = \delta(m) + \delta(m+1) + 1$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanPsi_p_dissection
 ---
 
-# Ramanujan Psi p dissection
+# The p-dissection of Ramanujan's psi function
 
-Lemma 1: for an odd prime `p`,
-`ψ(q) = ∑_{m=0}^{(p-3)/2} q^{(m^2+m)/2} f(q^{(p^2+(2m+1)p)/2}, q^{(p^2-(2m+1)p)/2}) +
-q^{(p^2-1)/8} ψ(q^{p^2})`, with `ψ(q) = f(q, q^3)`; furthermore
-`(m^2+m)/2 ≢ (p^2-1)/8 (mod p)` for `0 ≤ m ≤ (p-3)/2`. (Quoted by the paper from
-Cui and Gu, Theorem 2.1.)
+**The p-dissection of Ramanujan's psi function.** Let $p$ be an odd prime, let $f(c, d)$ be
+Ramanujan's theta function and $\psi(q) = f(q, q^3)$. Then, as integer power series,
+$\psi(q) = \sum_{m=0}^{(p-3)/2} q^{(m^2+m)/2} f(q^{(p^2+(2m+1)p)/2}, q^{(p^2-(2m+1)p)/2}) +
+q^{(p^2-1)/8} f(q^{p^2}, q^{3p^2})$, where the last factor is $\psi(q^{p^2})$. Moreover
+$(m^2+m)/2 \not\equiv (p^2-1)/8 \pmod p$ for every integer $m$ with $0 \le m \le (p-3)/2$.
+
+The paper quotes this from Cui and Gu, Theorem 2.1.
 
 ## Depends on
 
-- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
+- [Ramanujan's theta function at monomial arguments](ramanujan-theta-monomial.md)
 
 ## Sources
 

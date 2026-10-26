@@ -5,17 +5,26 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.h_add_eq
 ---
 
-# Corollary 11
+# Convolution identity for sequences in $H(p)$
 
-**Corollary 11** (convolution identity): for
-`ℋ ∈ H(p)` and `m, n > 0`,
-`ℋ(m+n) = ℋ(m)A_p(n+1) + ∑_{i=1}^{p-1} ℋ(m-i)B_p(n-p+i+1)
-- ∑_{i=0}^p ℋ(m-p-i)A_p(n-p+i)`.
+**Convolution identity for sequences in $H(p)$.** Let $p \ge 2$ be a natural number and let
+$\mathcal{H} : \mathbb{Z} \to \mathbb{Z}$ be a sequence in $H(p)$, that is,
+$\mathcal{H}(t) = \mathcal{H}(t-1) + \mathcal{H}(t-p) - \mathcal{H}(t-2p-1)$ for every integer
+$t$. Then for all natural numbers $m \ge 1$ and $n \ge 1$,
+
+$$
+\mathcal{H}(m+n) = \mathcal{H}(m)A_p(n+1) + \sum_{i=1}^{p-1} \mathcal{H}(m-i)B_p(n-p+i+1) -
+\sum_{i=0}^{p} \mathcal{H}(m-p-i)A_p(n-p+i),
+$$
+
+where $A_p, B_p : \mathbb{Z} \to \mathbb{Z}$ are the sequences in $H(p)$ with $A_p(t) = 1$ for
+$1 \le t \le p$ and $A_p(t) = 0$ for $-p \le t \le 0$, and with $B_p(t) = 1$ for $1 \le t \le p$
+and for $t = -p+1$ and $B_p(t) = 0$ for the other $-p \le t \le 0$.
 
 ## Depends on
 
-- [Seq AZ](seq-az.md)
-- [Seq BZ](seq-bz.md)
+- [The sequence $A_p$](seq-az.md)
+- [The two-sided sequence $B_p$](seq-bz.md)
 
 ## Sources
 

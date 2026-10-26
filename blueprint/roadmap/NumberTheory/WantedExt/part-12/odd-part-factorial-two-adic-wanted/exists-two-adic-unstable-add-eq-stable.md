@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_twoAdic_unstable_add_eq_stable
 ---
 
-# Exists two Adic unstable add eq stable
+# A 2-adic constant relating unstable and stable bits
 
-There is a 2-adic integer `K` such that for every `d<e`, adding `K` to the
-unstable window `unstableBits e d` gives the stable window `stableBits (e+1) d` modulo `2^d`.
-The congruence is represented by divisibility of the difference in `ℤ_[2]`.
+**A 2-adic constant relating unstable and stable bits.** Write
+$\mathrm{od}(n)$ for the odd part of a natural number $n$, and for natural numbers $d$ and $e$ let
+$\mathrm{uns}(e, d) = \lfloor \mathrm{od}((2^e)!) / 2^{e+1} \rfloor \bmod 2^d$ and
+$\mathrm{stab}(e + 1, d) = \lfloor \mathrm{od}((2^{e+d})!) / 2^{e+1} \rfloor \bmod 2^d$. There is a
+2-adic integer $K$ such that for all natural numbers $d < e$, $2^d$ divides
+$\mathrm{uns}(e, d) + K - \mathrm{stab}(e + 1, d)$ in $\mathbb{Z}_2$.
 
 ## Depends on
 
-- [Stable Bits](stable-bits.md)
-- [Unstable Bits](unstable-bits.md)
+- [Stable bits of the odd part of a factorial](stable-bits.md)
+- [Unstable bits](unstable-bits.md)
 
 ## Sources
 

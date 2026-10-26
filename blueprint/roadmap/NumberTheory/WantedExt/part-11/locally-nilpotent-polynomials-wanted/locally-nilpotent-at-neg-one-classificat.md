@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.locallyNilpotentAt_neg_one_classification
 ---
 
-# Locally Nilpotent At neg one classification
+# Classification of locally nilpotent polynomials at $-1$
 
-Classification of the locally nilpotent polynomials at `-1` (degree `≥ 1`), the image of
-Theorem 4.1 under `u(x) ↦ -u(-x)`: exactly `(x+1)p(x)` with `p ≠ 0`,
-`-2x - 4 + p(x)(x+1)(x+2)`, `2x^2 + 7x + 3 + p(x)(x+1)(x+2)(x+3)` (`p ∈ ℤ[x]`), and `x - 1`.
-The nilpotency-index annotations are not part of this statement.
+**Classification of locally nilpotent polynomials at $-1$.** A polynomial $u \in \mathbb{Z}[x]$
+of positive degree is locally nilpotent at $-1$ if and only if it has one of the following forms,
+for some $p \in \mathbb{Z}[x]$: $(x+1)p(x)$ with $p \ne 0$; $-2x - 4 + p(x)(x+1)(x+2)$;
+$2x^2 + 7x + 3 + p(x)(x+1)(x+2)(x+3)$; or $u = x - 1$.
+
+These are the images of the polynomials locally nilpotent at $1$ under $u(x) \mapsto -u(-x)$.
 
 ## Depends on
 
-- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+- [Weakly locally nilpotent polynomial at a point](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

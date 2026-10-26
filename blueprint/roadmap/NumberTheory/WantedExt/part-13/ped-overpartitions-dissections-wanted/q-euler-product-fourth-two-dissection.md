@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.qEulerProduct_fourth_two_dissection
 ---
 
-# Q Euler Product fourth two dissection
+# The 2-dissection of $f_1^4$
 
-The 2-dissection `f_1^4 = f_4^10 / (f_2^2 f_8^4) - 4q f_2^2 f_8^4 / f_4^2`, stated with
-denominators cleared. The paper's companion (6) is the existing `f1_sq_two_dissection`.
+**The 2-dissection of $f_1^4$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
+integer power series in $q$. Then
+
+$$f_1^4 f_2^2 f_4^2 f_8^4 = f_4^{12} - 4 q f_2^4 f_8^8.$$
+
+Dividing by $f_2^2 f_4^2 f_8^4$ gives
+$f_1^4 = \frac{f_4^{10}}{f_2^2 f_8^4} - 4q \frac{f_2^2 f_8^4}{f_4^2}$.
 
 ## Depends on
 

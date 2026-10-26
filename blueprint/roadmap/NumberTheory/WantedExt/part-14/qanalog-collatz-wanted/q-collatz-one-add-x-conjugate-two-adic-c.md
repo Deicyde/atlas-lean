@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.qCollatz_one_add_X_conjugate_twoAdicCollatz
 ---
 
-# Q Collatz one add X conjugate two Adic Collatz
+# The map $T_{1+q,1}$ is conjugate to the $2$-adic $3x+1$ map
 
-The map `T_q = T_{1+q,1}`, `T_q(x) = x/q` or `((1+q)x + 1)/q`, is conjugate to the `2`-adic
-`3x+1` map `T`.
+**The map $T_{1+q,1}$ is conjugate to the $2$-adic $3x+1$ map.** Let $T_q = T_{1+q,1}$
+be the $q$-analog of the $3x+1$ map with $A = 1 + q$ and $B = 1$, so that $T_q(x) = x/q$ if $q$
+divides $x$ and $T_q(x) = ((1+q)x + 1)/q$ otherwise, and let $T$ be the $3x+1$ map on the
+$2$-adic integers $\mathbb{Z}_2$. Then there is a bijection $h : \mathbb{Z}_2 \to \mathbb{F}_2[[q]]$
+with $h^{-1}(T_q(h(x))) = T(x)$ for every $x \in \mathbb{Z}_2$.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
-- [Two Adic Collatz](two-adic-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
+- [The $2$-adic $3x+1$ map](two-adic-collatz.md)
 
 ## Sources
 

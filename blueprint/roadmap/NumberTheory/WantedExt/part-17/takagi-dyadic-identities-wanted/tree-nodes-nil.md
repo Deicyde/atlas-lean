@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.treeNodes_nil
 ---
 
-# Tree Nodes nil
+# The single-leaf tree
 
-The single-leaf tree has no `D`-nodes and no `S`-nodes and is divide-and-conquer.
+**The single-leaf tree.** The full binary tree consisting of a single leaf has no $D$-nodes
+and no $S$-nodes, and it is a divide-and-conquer tree.
 
 ## Depends on
 
-- [Is Divide Conquer Tree](is-divide-conquer-tree.md)
-- [Tree DNodes](tree-dnodes.md)
-- [Tree SNodes](tree-snodes.md)
+- [Divide-and-conquer trees](is-divide-conquer-tree.md)
+- [Number of $D$-nodes of a full binary tree](tree-dnodes.md)
+- [Number of $S$-nodes of a full binary tree](tree-snodes.md)
 
 ## Sources
 

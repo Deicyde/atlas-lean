@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.isWeaklyLocallyNilpotentAt_X_add_one
 ---
 
-# Is Weakly Locally Nilpotent At X add one
+# $x + 1$ is locally nilpotent at $1$
 
-`x + 1` is locally nilpotent at `1`: `u^{(p-1)}(1) = p`.
+**$x + 1$ is locally nilpotent at $1$.** Let $u(x) = x + 1 \in \mathbb{Z}[x]$ and write
+$u^{(m)}$ for the $m$-fold iterate of $u$ as a map $\mathbb{Z} \to \mathbb{Z}$. Then for every
+prime $p$ there is $m \ge 1$ such that $p$ divides $u^{(m)}(1)$.
+
+One can take $m = p - 1$, since $u^{(p-1)}(1) = p$.
 
 ## Depends on
 
-- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+- [Weakly locally nilpotent polynomial at a point](is-weakly-locally-nilpotent-at.md)
 
 ## Proof depends on
 
-- [Iterate eval X add one](iterate-eval-x-add-one.md)
+- [Iterates of $x + 1$](iterate-eval-x-add-one.md)
 
 ## Sources
 

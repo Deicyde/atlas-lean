@@ -5,21 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitSigma_multiplicative_eulerProduct
 ---
 
-# Square Split Sigma multiplicative euler Product
+# A square-splitting divisor function and its Euler product
 
-Theorem 6, the parts about the explicit function: for `α ∈ ℂ` let
-`f(n) = σ_α(u(n)) σ_{2α}(v(n))` with `n = u(n) v(n)²` and the classical divisor sum
-`σ_β(m) = ∑_{d ∣ m} d^β` (complex powers). Then `f` is multiplicative, for every prime `p`
-`f(p^{2b}) = 1 + p^{2α} + ⋯ + p^{2bα}` and `f(p^{2b+1}) = (1 + p^α)(1 + p^{2α} + ⋯ + p^{2bα})`,
-and for `Re s > max(1, 1 + Re α)` the local factors are
-`∑_k f(p^k)/p^{ks} = (1 + p^{-s} + p^{-(s-α)}) / ((1 - p^{-2s})(1 - p^{-(2s-2α)}))` and
-`∑ f(n)/n^s = ζ(2s) ζ(2s - 2α) ∏_p (1 + p^{-s} + p^{-(s-α)})`, absolutely convergent. The
-paper's identification of `f` with its `σ⋆,α` (defined only in the paper body) is not stated.
+**A square-splitting divisor function and its Euler product.** Let
+$\alpha \in \mathbb{C}$, let $\sigma_\beta(m) = \sum_{d \mid m} d^\beta$ for $\beta \in \mathbb{C}$
+(complex powers), and let $f(n) = \sigma_\alpha(u(n))\,\sigma_{2\alpha}(v(n))$, where $u(n)$ is
+the product of the primes dividing $n$ to an odd power and $v(n)$ is the positive integer with
+$n = u(n)\,v(n)^2$. Then $f(1) = 1$ and $f(mn) = f(m)\,f(n)$ for all coprime $m$ and $n$. For
+every prime $p$ and every $b \ge 0$, $f(p^{2b}) = \sum_{j=0}^{b} p^{2j\alpha}$ and
+$f(p^{2b+1}) = (1 + p^\alpha) \sum_{j=0}^{b} p^{2j\alpha}$. For every complex $s$ with
+$\operatorname{Re} s > \max(1, 1 + \operatorname{Re} \alpha)$, for every prime $p$
+
+$$\sum_{k \ge 0} \frac{f(p^k)}{p^{ks}}
+= \frac{1 + p^{-s} + p^{-(s-\alpha)}}{(1 - p^{-2s})(1 - p^{-(2s-2\alpha)})},$$
+
+the series $\sum_{n \ge 1} f(n)\,n^{-s}$ converges absolutely, and
+
+$$\sum_{n \ge 1} \frac{f(n)}{n^s}
+= \zeta(2s)\,\zeta(2s - 2\alpha) \prod_p \left(1 + p^{-s} + p^{-(s-\alpha)}\right).$$
+
+The paper identifies $f$ with its divisor function $\sigma_{\star,\alpha}$; that identification is
+not part of this statement.
 
 ## Depends on
 
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sumOfSquaresRepCount
 ---
 
-# Sum Of Squares Rep Count
+# Representation numbers for sums of squares
 
-`r_k(n)`: the coefficient of `q^n` in `θ(q)^k`, for `k ∈ ℤ`.
+**Representation numbers for sums of squares.** For an integer $k$ and a natural number $n$,
+$r_k(n)$ is the coefficient of $q^n$ in $\theta(q)^k$, where
+$\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$. Since $\theta$ has constant coefficient $1$, it is a
+unit of $\mathbb{Z}[[q]]$, so $\theta^k$ is a power series for negative $k$ as well.
+
+For $k \ge 1$, $r_k(n)$ is the number of ways to write $n$ as an ordered sum of $k$ squares of
+integers.
 
 ## Depends on
 
@@ -15,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unit square Theta Series](is-unit-square-theta-series.md)
-- [Square Theta Series](square-theta-series.md)
+- [The square theta series is a unit](is-unit-square-theta-series.md)
+- [The square theta series](square-theta-series.md)
 
 ## Sources
 

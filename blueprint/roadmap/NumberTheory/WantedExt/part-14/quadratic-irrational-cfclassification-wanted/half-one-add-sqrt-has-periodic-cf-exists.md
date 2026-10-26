@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_iff_parity
 ---
 
-# Half one add sqrt has Periodic CF exists iff parity
+# Parity criterion for $(1 + \sqrt{d})/2$ with a given symmetric period
 
-Proposition 2 (quoted from [10]): for `l ≥ 3` and a symmetric sequence of positive integers
-`a₁, …, a_{l-1}`, some positive nonsquare `d ≡ 1 (mod 4)` has
-`(1 + √d)/2 = [a₀; a₁, …, a_{l-1}, 2a₀ - 1]` if and only if (i) `q_{l-1}` is odd, or (ii) `q_{l-2}` and `r_{l-2}` are odd and `q_{l-1}` is
-even. The paper's primed letters `a'_i, q'_i, r'_i` are written unprimed; the cases `l ≤ 2`
-are omitted as in Proposition 1. The restriction `d ≡ 1 (mod 4)` (the setting of
-`(1 + √d)/2`) is needed: `(1 + √2)/2 = [1; 4, 1, 4, 1, 4, 1, …]` fits `l = 6` with
-`a₁, …, a₅ = 4, 1, 4, 1, 4`, where `q₅ = 140` and `q₄ = 29`, `r₄ = 6` violate the criterion.
+**Parity criterion for $(1 + \sqrt{d})/2$ with a given symmetric period.** Let $l \ge 3$ and
+let $a_1, \dots, a_{l-1}$ be positive integers with $a_i = a_{l-i}$ for $1 \le i < l$. Let $q_j$ be
+the denominator of the $j$-th convergent of $[a_0; a_1, a_2, \dots]$ (so $q_0 = 1$, $q_1 = a_1$ and
+$q_{j+2} = a_{j+2} q_{j+1} + q_j$), and let $r_{l-2}$ be the denominator of the $(l-3)$-th
+convergent of $[a_1; a_2, a_3, \dots]$. There are natural numbers $d$ and $a_0$ with
+$d \equiv 1 \pmod 4$, $d$ not a perfect square, and
+$(1 + \sqrt{d})/2 = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0 - 1}]$ if and only if $q_{l-1}$ is
+odd, or $q_{l-2}$ and $r_{l-2}$ are odd and $q_{l-1}$ is even.
+
+The restriction $d \equiv 1 \pmod 4$ is needed: $(1 + \sqrt{2})/2 = [1; \overline{4, 1}]$ fits
+$l = 6$ with $(a_1, \dots, a_5) = (4, 1, 4, 1, 4)$, where $q_5 = 140$, $q_4 = 29$ and $r_4 = 6$
+violate the criterion.
 
 ## Depends on
 
-- [Has Periodic CF](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
-- [Convergent Den](../quadratic-irrational-cfnonexistence-wanted/convergent-den.md)
+- [Continued fractions with a prescribed period](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
+- [Convergent denominators as continuants](../quadratic-irrational-cfnonexistence-wanted/convergent-den.md)
 
 ## Sources
 

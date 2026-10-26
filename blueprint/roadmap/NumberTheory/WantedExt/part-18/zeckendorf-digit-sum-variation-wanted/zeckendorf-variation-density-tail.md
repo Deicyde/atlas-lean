@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorf_variation_density_tail
 ---
 
-# Zeckendorf variation density tail
+# Geometric negative tail of the Zeckendorf variation densities
 
-The negative tail of `μ^{(r)}` is geometric with ratio `1/φ²`: if `μ d` is the density of
-`{n : s(n + r) - s(n) = d}` for every `d`, then `μ(d - 1) = μ(d) / φ²` for all sufficiently
-small `d`.
+**Geometric negative tail of the Zeckendorf variation densities.** For $n \in \mathbb{N}$ let
+$s(n)$ be the number of terms in the Zeckendorf representation of $n$, and let $\varphi$ be the
+golden ratio. Let $r \in \mathbb{N}$ and let $\mu : \mathbb{Z} \to \mathbb{R}$ be such that for
+every $d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + r) - s(n) = d\}$ has natural density
+$\mu(d)$. Then there is $D \in \mathbb{Z}$ such that $\mu(d - 1) = \mu(d)/\varphi^2$ for every
+integer $d \le D$.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nLagrangeApproximability
 ---
 
-# N Lagrange Approximability
+# $n$-Lagrange approximability
 
-The `n`-Lagrange approximability `λₙ(ξ) = limsup_{s/t → ξ} gcd(t, n)/(t² |s/t - ξ|)` in `EReal`,
-the limsup over rationals `s/t ≠ ξ` (in lowest terms) tending to `ξ`; `λ₁` is the classical
-Lagrange approximability `λ`.
+**$n$-Lagrange approximability.** For a natural number $n$ and a real number $\xi$, the
+$n$-Lagrange approximability of $\xi$ is the element of the extended reals
+
+$$\lambda_n(\xi) = \limsup_{s/t \to \xi} \frac{\gcd(t, n)}{t^2 \, |s/t - \xi|},$$
+
+where the limsup is over rational numbers $s/t \ne \xi$, written in lowest terms with $t > 0$,
+tending to $\xi$. For $n = 1$ this is the classical Lagrange approximability $\lambda(\xi)$.
 
 ## Depends on
 

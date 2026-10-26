@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderGenValue_one_one_families
 ---
 
-# Second Order Gen Value one one families
+# Integer values of $(1 - px + x)/(1 - px - x^2)$
 
-For `(a, b) = (1, 1)` there are no families beyond those of Theorem 2: every rational `x`
-with `A(x) ∈ ℤ` is a ratio of consecutive terms of `A^{(0,1)}` or of `A^{(-1,1)}`.
+**Integer values of $(1 - px + x)/(1 - px - x^2)$.** Let $p \ne 0$ be an integer, let
+$A(x) = \frac{1 - px + x}{1 - px - x^2}$ for rational $x$, and for integers $r, s$ let $A^{(r,s)}$
+be the two-sided integer sequence with $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and
+$A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for all integers $n$. If $x$ is a rational
+number for which $A(x)$ is an integer, then there is an integer $n$ with $A^{(0,1)}_{n+1} \ne 0$
+and $x = A^{(0,1)}_n / A^{(0,1)}_{n+1}$, or there is an integer $n$ with $A^{(-1,1)}_{n+1} \ne 0$
+and $x = A^{(-1,1)}_n / A^{(-1,1)}_{n+1}$.
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
-- [Second Order Gen Value](second-order-gen-value.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
+- [Generating function of the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-gen-value.md)
 
 ## Sources
 

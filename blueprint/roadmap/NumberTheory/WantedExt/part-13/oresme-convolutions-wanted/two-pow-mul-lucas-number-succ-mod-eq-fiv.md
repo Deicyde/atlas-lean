@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_mul_lucasNumber_succ_modEq_five
 ---
 
-# Two pow mul lucas Number succ mod Eq five
+# Powers of two times Lucas numbers modulo 5
 
-`2^n L_{n+1} ≡ 1 (mod 5)` for every `n ≥ 0`.
+**Powers of two times Lucas numbers modulo 5.** Let $L_m$ denote the Lucas numbers. For every
+natural number $n$, $2^n L_{n+1} \equiv 1 \pmod{5}$.
 
 ## Depends on
 

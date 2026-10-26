@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hammingWeight_succ_of_even
 ---
 
-# Hamming Weight succ of even
+# Hamming weight of the successor of an even number
 
-Lemma 14: if `n` is even, then `s₁(n+1) = s₁(n) + 1` (also at `n = 0`).
+**Hamming weight of the successor of an even number.** For a natural number $m$, write
+$s_1(m)$ for the sum of the binary digits of $m$ (the number of ones in its binary expansion).
+If $n$ is an even natural number (including $n = 0$), then $s_1(n + 1) = s_1(n) + 1$.
 
 ## Depends on
 

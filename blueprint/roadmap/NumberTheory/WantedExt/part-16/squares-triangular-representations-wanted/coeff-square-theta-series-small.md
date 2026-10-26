@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_squareThetaSeries_small
 ---
 
-# Coeff square Theta Series small
+# First coefficients of the square theta series
 
-The first coefficients of `θ`: `1, 2, 0, 0, 2`.
+**First coefficients of the square theta series.** In the square theta series
+$\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$, the coefficients of $q^0$, $q^1$, $q^2$ and $q^4$ are
+$1$, $2$, $0$ and $2$ respectively.
 
 ## Depends on
 
-- [Square Theta Series](square-theta-series.md)
+- [The square theta series](square-theta-series.md)
 
 ## Sources
 

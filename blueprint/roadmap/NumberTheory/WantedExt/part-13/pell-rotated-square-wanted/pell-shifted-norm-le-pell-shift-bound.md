@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pellShiftedNorm_le_pellShiftBound
 ---
 
-# Pell Shifted Norm le pell Shift Bound
+# The shifted Pell norm function is at most the bound up to its last crossing
 
-With `x₁ = sup {x ≥ 0 : f_{i,j}(x) = K}` (Equation (3.6)), `f_{i,j}(x) ≤ K` for all
-`x ∈ [0, x₁]`.
+**The shifted Pell norm function is at most the bound up to its last crossing.** Let $D$ be
+an integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation
+$X^2 - D Y^2 = 1$, put $\varepsilon = \alpha + \beta \sqrt{D}$ and
+$\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let
+$u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and
+$v(x) = (\varepsilon^x - \bar\varepsilon^x) / (2 \sqrt{D})$ for real $x$. Let $a$ and $b$ be
+integers, let $i, j \in \{1, -1\}$, let $f_{i,j}(x) = |i u(x) + a| + |j v(x) + b|$, let
+$K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$ and let $x_1 = \sup \{y \ge 0 : f_{i,j}(y) = K\}$.
+Then $f_{i,j}(x) \le K$ for every real $x$ with $0 \le x \le x_1$.
 
 ## Depends on
 
-- [Pell Shift Bound](pell-shift-bound.md)
-- [Pell Shifted Norm](pell-shifted-norm.md)
+- [The bound $K$ for the shifted Pell equation](pell-shift-bound.md)
+- [The $L^1$ norm along a shifted Pell curve](pell-shifted-norm.md)
 
 ## Sources
 

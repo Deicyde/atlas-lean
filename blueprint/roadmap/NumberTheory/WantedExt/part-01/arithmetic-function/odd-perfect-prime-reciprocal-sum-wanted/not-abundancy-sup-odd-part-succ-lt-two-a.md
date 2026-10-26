@@ -16,7 +16,7 @@ For $q = 2$ the conclusion fails: $H(3) = 3/2 < 2$ and $H(6) = 3 > 2$.
 
 ## Depends on
 
-- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
+- [Product of $p/(p-1)$ over the prime factors](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

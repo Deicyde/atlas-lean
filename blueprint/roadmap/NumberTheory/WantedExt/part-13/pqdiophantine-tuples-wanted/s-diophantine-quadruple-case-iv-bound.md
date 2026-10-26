@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sDiophantine_quadruple_caseIV_bound
 ---
 
-# Lemma 7
+# Bound on $b$ in Case IV for $\{p, q\}$-Diophantine quadruples
 
-**Lemma 7**: under the standing assumptions of Section 3 (`p ≡ 3 (mod 4)` with `p ≥ 7`,
-`q ≡ 1 (mod 4)`), if a `{p, q}`-Diophantine quadruple `a < b < c < d` is in Case IV of Table 1
-(see `sDiophantine_quadruple_exponent_cases`) with `α, β > 0` (assumed in the proof via Lemma 4),
-then `b < 1.042 q^{β' - β}`, where
-`β = β₁ = β₆` and `β' = β₂ = β₅` (the abbreviations of the proof).
+**Bound on $b$ in Case IV for $\{p, q\}$-Diophantine quadruples.** Let $p$ and $q$ be
+primes with $p \equiv 3 \pmod 4$, $p \ge 7$ and $q \equiv 1 \pmod 4$, and let $a < b < c < d$
+be natural numbers such that $\{a, b, c, d\}$ is a $\{p, q\}$-Diophantine tuple. Write
+$s_1, \dots, s_6$ for $ab + 1, ac + 1, ad + 1, bc + 1, bd + 1, cd + 1$, and let $\alpha_i$ and
+$\beta_i$ be the exponents of $p$ and $q$ in the prime factorization of $s_i$. Suppose that
+$0 = \alpha_3 = \alpha_4 < \alpha_1 = \alpha_2 < \alpha_5 < \alpha_6$ and
+$0 < \beta_1 = \beta_6 < \beta_2 = \beta_5$, $\beta_5 < \beta_3$, $\beta_5 < \beta_4$. Then
+$b < 1.042 \, q^{\beta_2 - \beta_1}$.
+
+The assumptions on the exponents are Case IV of Table 1 of the source together with
+$\beta_1 > 0$.
 
 ## Depends on
 
-- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
+- [$S$-Diophantine tuples](is-sdiophantine-tuple.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.ζ_A_weight
 ---
 
-# Ζ A weight
+# Multiple zeta values of given depth and weight
 
-The multiple zeta value function `ζ_A 𝔰` is said to have weight `w` if `∑ i : Fin r, 𝔰 i = w`.
-Below, we define the set of multiple zeta values (MZVs) `ζ_A (s_1,..., s_r)` of weight `w`.
+**Multiple zeta values of given depth and weight.** Let $F$ be a finite field and let $w$
+and $r$ be natural numbers. The weight of a multiple zeta value $\zeta_A(s_1, \dots, s_r)$ over
+$F$, with $s_1, \dots, s_r$ positive integers, is $s_1 + \dots + s_r$. This is the set of multiple
+zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ of weight $w$, that is, with $s_1, \dots, s_r$
+positive integers and $s_1 + \dots + s_r = w$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ζ A](a.md)
-- [𝔖 w](w.md)
+- [Multiple zeta values in positive characteristic](a.md)
+- [Compositions of $w$ into $r$ parts](w.md)
 
 ## Sources
 

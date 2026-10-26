@@ -5,16 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli_symmetric_identity
 ---
 
-# Modified Degenerate Bernoulli symmetric identity
+# Symmetric identity for modified degenerate Bernoulli polynomials
 
-Theorem 1: for integers `m ≥ 2`, `n ≥ 1`, complex `r_1, …, r_m`, `x_1, …, x_m` and
-`r₀ = n - r_1 - ⋯ - r_m`,
-`r₀ ∑_{k_1+⋯+k_m=n} ∏_j C(r_j, k_j) 𝔅_{k_j,λ}(x_j) = -∑_i r_i ∑_{k_1+⋯+k_m=n} C(r₀, k_i)
-𝔅_{k_i,λ}(1 - x_i) ∏_{j ≠ i} C(r_j, k_j) 𝔅_{k_j,λ}(x_j - x_i + 1_{j>i})`, for `λ ≠ 0, -1`.
+**Symmetric identity for modified degenerate Bernoulli polynomials.** Let $m \ge 2$ and
+$n \ge 1$ be integers, let $\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$,
+let $r_1, \ldots, r_m$ and $x_1, \ldots, x_m$ be complex numbers, write
+$\mathfrak{B}_{k,\lambda}(x)$ for the modified degenerate Bernoulli polynomials, and put
+$r_0 = n - r_1 - \cdots - r_m$. Then
+
+$$
+r_0 \sum_{k_1 + \cdots + k_m = n} \prod_{j=1}^{m} \binom{r_j}{k_j} \mathfrak{B}_{k_j,\lambda}(x_j)
+= -\sum_{i=1}^{m} r_i \sum_{k_1 + \cdots + k_m = n} \binom{r_0}{k_i}
+\mathfrak{B}_{k_i,\lambda}(1 - x_i)
+\prod_{j \ne i} \binom{r_j}{k_j} \mathfrak{B}_{k_j,\lambda}(x_j - x_i + [j > i]),
+$$
+
+where $k_1, \ldots, k_m$ range over nonnegative integers, $\binom{w}{k} = w(w-1) \cdots
+(w-k+1)/k!$ is the binomial coefficient with a complex upper argument, and $[j > i]$ is $1$ if
+$j > i$ and $0$ otherwise.
 
 ## Depends on
 
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
+- [Modified degenerate Bernoulli polynomials](modified-degenerate-bernoulli.md)
 
 ## Sources
 

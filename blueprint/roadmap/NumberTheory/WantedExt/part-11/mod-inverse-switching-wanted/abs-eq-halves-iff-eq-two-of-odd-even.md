@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_eq_halves_iff_eq_two_of_odd_even
 ---
 
-# Lemma 7
+# Both first inverses extremal, odd–even case
 
-**Lemma 7**: if `r₀` is odd and `r₁` is even, then
-`|s₁| = (r₀ - 1)/2` and `|s₂| = r₁/2` hold simultaneously if
-and only if `r₁ = 2`.
+**Both first inverses extremal, odd–even case.** Let $(r_i)$, $(s_i)$ and $N$ be Euclidean
+switching data with $r_0$ odd and $r_1$ even. Then $2|s_1| = r_0 - 1$ and $2|s_2| = r_1$ hold
+simultaneously if and only if $r_1 = 2$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
 
 ## Sources
 

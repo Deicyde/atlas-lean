@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lucasP_zero
 ---
 
-# Lucas P zero
+# Initial Lucas $p$-number
 
-`L_{p,0} = p + 1`.
+**Initial Lucas $p$-number.** For every natural number $p$, the Lucas $p$-number $L_{p,0}$
+equals $p + 1$.
 
 ## Depends on
 
-- [Lucas P](lucas-p.md)
+- [Lucas $p$-numbers](lucas-p.md)
 
 ## Sources
 

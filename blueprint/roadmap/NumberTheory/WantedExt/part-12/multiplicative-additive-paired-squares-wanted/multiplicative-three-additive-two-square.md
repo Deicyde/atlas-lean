@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_three_additive_two_squares_base
 ---
 
-# Multiplicative three additive two squares base
+# Small values of a multiplicative function 3-additive on sums of two squares
 
-If `f` is multiplicative, `3`-additive on `E₂ = {a² + b² : a, b ≥ 1}` (Equation (2) with
-`k = 3`) and `f(2) ≠ 0`, then `f(2) = 2`, `f(3) = 3` and `f(5) = 5`.
+**Small values of a multiplicative function 3-additive on sums of two squares.** Let
+$E_2 = \{a^2 + b^2 : a, b \ge 1\}$ be the set of sums of two squares of positive integers. If $f$
+is a complex-valued multiplicative function with $f(2) \ne 0$ such that
+$f(A_1 + A_2 + A_3) = f(A_1) + f(A_2) + f(A_3)$ for all $A_1, A_2, A_3 \in E_2$, then $f(2) = 2$,
+$f(3) = 3$ and $f(5) = 5$.
 
 ## Depends on
 

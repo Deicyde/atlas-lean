@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.lurothMap_one
 ---
 
-# Luroth Map one
+# The Lüroth map fixes 1
 
-`L(1) = 1`.
+**The Lüroth map fixes 1.** The Lüroth map $L$ satisfies $L(1) = 1$.
 
 ## Depends on
 
-- [Luroth Map](luroth-map.md)
+- [Lüroth map](luroth-map.md)
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
-- [Luroth Digit one](luroth-digit-one.md)
+- [First Lüroth digit](luroth-digit.md)
+- [First Lüroth digit of 1](luroth-digit-one.md)
 
 ## Sources
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_zero_szQMZV_cons
 ---
 
-# Coeff zero sz QMZV cons
+# Nonempty Schlesinger–Zudilin qMZVs have no constant term
 
-A nonempty SZ-qMZV has no constant term.
+**Nonempty Schlesinger–Zudilin qMZVs have no constant term.** For every nonempty index
+$(k_1, \dots, k_r)$ of natural numbers, the constant term of the Schlesinger–Zudilin qMZV
+$\zeta_q^{\mathrm{SZ}}(k_1, \dots, k_r)$ is $0$.
 
 ## Depends on
 
-- [Sz QMZV](sz-qmzv.md)
+- [Schlesinger–Zudilin qMZVs](sz-qmzv.md)
 
 ## Proof depends on
 
-- [Sz QMZVPartial](sz-qmzvpartial.md)
+- [Partial sums of Schlesinger–Zudilin qMZVs](sz-qmzvpartial.md)
 
 ## Sources
 

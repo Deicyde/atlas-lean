@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.lucasP_lucasLeonardoP_one_values
 ---
 
-# Lucas P lucas Leonardo P one values
+# First values of the Lucas and Lucas-Leonardo $1$-numbers
 
-Values check against the recurrence: `L_{1,·} = 2, 1, 3, 4, 7, 11` and
-`R_{1,·} = 3, 1, 5, 7, 13, 21`.
+**First values of the Lucas and Lucas-Leonardo $1$-numbers.** The Lucas $1$-numbers
+$L_{1,0}, \dots, L_{1,5}$ are $2, 1, 3, 4, 7, 11$, and the Lucas-Leonardo $1$-numbers
+$R_{1,0}, \dots, R_{1,5}$ are $3, 1, 5, 7, 13, 21$.
 
 ## Depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
-- [Lucas P](lucas-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
+- [Lucas $p$-numbers](lucas-p.md)
 
 ## Sources
 

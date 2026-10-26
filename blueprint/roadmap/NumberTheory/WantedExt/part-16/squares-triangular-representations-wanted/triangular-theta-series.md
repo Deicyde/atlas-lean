@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.triangularThetaSeries
 ---
 
-# Triangular Theta Series
+# Triangular theta series
 
-`ψ(q) = ∑_{m ≥ 0} q^{m(m+1)/2}`: the coefficient of `q^n` is the number of `m ≥ 0`
-with `m(m+1)/2 = n`.
+**Triangular theta series.** The triangular theta series is the formal power series
+$\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$ with integer coefficients: for each natural number $n$,
+its coefficient of $q^n$ is the number of natural numbers $m$ with $m(m+1)/2 = n$.
 
 ## Depends on
 

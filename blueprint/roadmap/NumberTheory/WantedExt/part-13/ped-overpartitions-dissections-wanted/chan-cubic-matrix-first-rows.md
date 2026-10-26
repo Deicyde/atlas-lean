@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.chanCubicMatrix_first_rows
 ---
 
-# Chan Cubic Matrix first rows
+# First six rows of Chan's matrix
 
-The first six rows of Chan's matrix as printed in the paper:
-`(3)`, `(2, 27)`, `(1, 27, 243)`, `(0, 18, 324, 2187)`, `(0, 5, 270, 3645, 19683)`,
-`(0, 1, 126, 3645, 39366, 177147)`.
+**First six rows of Chan's matrix.** The upper left $6 \times 6$ block of Chan's matrix
+$(m_{i,j})_{i,j \ge 1}$ is lower triangular, and its rows up to the diagonal are $(3)$,
+$(2, 27)$, $(1, 27, 243)$, $(0, 18, 324, 2187)$, $(0, 5, 270, 3645, 19683)$ and
+$(0, 1, 126, 3645, 39366, 177147)$: for $1 \le j \le i \le 6$, $m_{i,j}$ is the $j$th entry of
+the $i$th listed row, and $m_{i,j} = 0$ for $1 \le i < j \le 6$.
 
 ## Depends on
 
-- [Chan Cubic Matrix](chan-cubic-matrix.md)
+- [Chan's matrix](chan-cubic-matrix.md)
 
 ## Sources
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oresme_convolution_self
 ---
 
-# Oresme convolution self
+# Self-convolution of the Oresme numbers
 
-The self-convolution of the Oresme numbers `O_n = n/2^n`:
-`∑_{k=0}^n O_k O_{n-k} = (n+1) n (n-1) / (6 · 2^n)` for every `n ≥ 0`.
+**Self-convolution of the Oresme numbers.** Let $O_m = m/2^m$ denote the Oresme numbers. For
+every natural number $n$, $\sum_{k=0}^{n} O_k O_{n-k} = \frac{(n+1) n (n-1)}{6 \cdot 2^n}$.
 
 ## Depends on
 

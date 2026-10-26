@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.hasSquareElementarySymmetricFunctions_pairwise_products
 ---
 
-# Lemma 2
+# Pairwise products preserve square symmetric functions
 
-**Lemma 2**: the pairwise products of a solution form another solution.
+**Pairwise products preserve square symmetric functions.** If $a$, $b$, $c$ are integers
+such that each of $a + b + c$, $ab + bc + ca$ and $abc$ is the square of an integer, then the
+same holds for the triple $ab$, $bc$, $ca$.
 
 ## Depends on
 
-- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
+- [Integer triples with square elementary symmetric functions](has-square-elementary-symmetric-function.md)
 
 ## Sources
 

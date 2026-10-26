@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.eulerianQSeries
 ---
 
-# Eulerian QSeries
+# Eulerian q-series
 
-The `q`-series `∑_{n ≥ 1} n^{k-1}/(k-1)! q^{m n} = P_k(q^m)/(1 - q^m)^k` (`P_k` the `k`-th
-Eulerian polynomial), the inner sum of a bi-bracket.
+**Eulerian q-series.** For natural numbers $k$ and $m \ge 1$, the Eulerian $q$-series is
+
+$$
+\sum_{n \ge 1} \frac{n^{k-1}}{(k-1)!} \, q^{mn},
+$$
+
+the inner sum of a bi-bracket; here $k - 1$ is read as $0$ when $k = 0$. For $m = 0$ the series
+is defined to be $0$.
+
+For $k, m \ge 1$ it equals $P_k(q^m)/(1 - q^m)^k$, where $P_k$ is the $k$-th Eulerian polynomial.
 
 ## Depends on
 

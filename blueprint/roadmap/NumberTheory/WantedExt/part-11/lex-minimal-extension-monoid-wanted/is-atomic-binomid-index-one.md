@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isAtomicBinomidIndex_one
 ---
 
-# Is Atomic Binomid Index one
+# The constant sequence $1$ is atomic
 
-The constant sequence `1^∞ = (E_1)^∞` is atomic.
+**The constant sequence $1$ is atomic.** The constant sequence $(1, 1, 1, \dots)$ is a
+nonzero atomic binomid index: it is a nonzero binomid index that is not the sum of two nonzero
+binomid indices.
 
 ## Depends on
 
-- [Is Atomic Binomid Index](is-atomic-binomid-index.md)
+- [Atomic binomid index](is-atomic-binomid-index.md)
 
 ## Proof depends on
 

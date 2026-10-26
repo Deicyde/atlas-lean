@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_zero
 ---
 
-# Lemma 6, case `a = 0`
+# Expansion of the logarithmic derivative of the k-th derivative (Lemma 6, zeros case)
 
-**Lemma 6, case `a = 0`.** Let `ℓ ≥ 2` be least with `a(ℓ) ≠ 0` (the least index of a
-nonzero Dirichlet coefficient of `F^(k)`). For `Re s` large,
-`F^(k+1)(s) / F^(k)(s) = ∑_{l ≥ 0} ∑_{n₀ ≥ ℓ, n₁, …, n_l ≥ ℓ + 1} (-1 / (a(ℓ) log^k ℓ))^(l+1)
-(log n₀)^(k+1) (log n₁ ⋯ log n_l)^k ℓ^((l+1)s) a(n₀) ⋯ a(n_l) / (n₀ ⋯ n_l)^s`.
+**Expansion of the logarithmic derivative of the k-th derivative (Lemma 6, zeros case).**
+Let $F$ be a function in the Selberg class with Dirichlet coefficients $a(n)$, write $F^{(k)}$ for
+the $k$-th derivative of $F$, let $k \ge 1$, and let $\ell \ge 2$ be such that $a(\ell) \ne 0$
+and $a(n) = 0$ for $2 \le n < \ell$. Then there is a real number $E$ such that for every
+$s \in \mathbb{C}$ with $\operatorname{Re} s \ge E$,
+
+$$\frac{F^{(k+1)}(s)}{F^{(k)}(s)} = \sum_{l \ge 0} \sum_{n_0, \dots, n_l}
+\left(\frac{-1}{a(\ell) (\log \ell)^k}\right)^{l+1} (\log n_0)^{k+1} (\log n_1 \cdots \log n_l)^k
+\frac{\ell^{(l+1)s} a(n_0) \cdots a(n_l)}{(n_0 \cdots n_l)^s},$$
+
+where the inner sum runs over the natural numbers $n_0 \ge \ell$ and $n_1, \dots, n_l \ge \ell + 1$,
+and the sum over all pairs of $l$ and $(n_0, \dots, n_l)$ converges absolutely.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

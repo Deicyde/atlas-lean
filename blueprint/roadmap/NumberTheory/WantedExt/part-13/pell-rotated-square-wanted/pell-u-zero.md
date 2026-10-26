@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.pellU_zero
 ---
 
-# Pell U zero
+# Value of the Pell interpolation function u at 0
 
-`u(0) = 1`.
+**Value of the Pell interpolation function u at 0.** For all integers $D$, $\alpha$, $\beta$,
+the function $u(x) = ((\alpha + \beta\sqrt D)^x + (\alpha - \beta\sqrt D)^x)/2$ of a real
+variable $x$ satisfies $u(0) = 1$.
 
 ## Depends on
 
-- [Pell U](pell-u.md)
+- [The Pell interpolation function u](pell-u.md)
 
 ## Sources
 

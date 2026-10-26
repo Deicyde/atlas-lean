@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorf_variation_density_one
 ---
 
-# Zeckendorf variation density one
+# Distribution of the Zeckendorf digit-sum variation for shift one
 
-The distribution of `Δ^{(1)}`: `μ^{(1)}(d) = 0` for `d ≥ 2`, `μ^{(1)}(1) = 1/φ²`, and
-`μ^{(1)}(d) = 1/φ^{2 - 2d}` for `d ≤ 0`.
+**Distribution of the Zeckendorf digit-sum variation for shift one.** For $n \in \mathbb{N}$
+let $s(n)$ be the number of terms in the Zeckendorf representation of $n$, and let $\varphi$ be the
+golden ratio. For every $d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + 1) - s(n) = d\}$
+has natural density $0$ if $d \ge 2$, $1/\varphi^2$ if $d = 1$, and $1/\varphi^{2 - 2d}$ if
+$d \le 0$.
 
 ## Depends on
 

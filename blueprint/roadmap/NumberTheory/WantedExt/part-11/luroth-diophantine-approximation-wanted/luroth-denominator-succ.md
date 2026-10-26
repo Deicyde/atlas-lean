@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.lurothDenominator_succ
 ---
 
-# Luroth Denominator succ
+# Recurrence for Lüroth denominators
 
-Recurrence `Q_{n+2} = Q_{n+1} (d_{n+1} - 1) d_{n+2}` (paper indexing).
+**Recurrence for Lüroth denominators.** For every sequence of natural numbers
+$d_0, d_1, d_2, \dots$ with Lüroth denominators $Q_0, Q_1, Q_2, \dots$ and every $n \ge 0$,
+
+$$Q_{n+1} = Q_n (d_n - 1) d_{n+1}.$$
 
 ## Depends on
 
-- [Luroth Denominator](luroth-denominator.md)
+- [Lüroth denominators](luroth-denominator.md)
 
 ## Sources
 

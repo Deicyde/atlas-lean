@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.long_division_remainder_expansion
 ---
 
-# Long division remainder expansion
+# Long division of a proper fraction
 
-Long division of `m/n` in base `b`: with remainders `c_j = m b^j mod n` and digits
-`r_j = ⌊b c_j / n⌋`, every truncation satisfies
-`m/n = ∑_{i<k} r_i b^{-i-1} + c_k/(n b^k)`, and `r_j = (b c_j - c_{j+1})/n`. Stated for a
-proper fraction `m < n` (needed for `k = 0`) and every base `b ≥ 1`; the identity
-`r_j = (b c_j - c_{j+1})/n` is stated with the division cleared.
+**Long division of a proper fraction.** Let $m < n$ be natural numbers and $b \ge 1$. For
+$j \ge 0$ let $c_j = m b^j \bmod n$ (the remainders of the long division of $m/n$ in base $b$) and
+$r_j = \lfloor b c_j / n \rfloor$ (its digits). Then for every $k \ge 0$
+
+$$\frac{m}{n} = \sum_{i\lt k} \frac{r_i}{b^{i+1}} + \frac{c_k}{n b^k},$$
+
+and $r_j n = b c_j - c_{j+1}$ for every $j \ge 0$.
 
 ## Depends on
 

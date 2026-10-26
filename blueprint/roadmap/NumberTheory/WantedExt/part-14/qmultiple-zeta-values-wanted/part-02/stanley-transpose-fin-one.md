@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.stanleyTranspose_fin_one
 ---
 
-# Stanley Transpose fin one
+# Transpose of a one-part partition
 
-For partitions of length one, `ρ((m), (n)) = ((n), (m))`.
+**Transpose of a one-part partition.** For all natural numbers $m$ and $n$, the transpose
+$\rho$ in Stanley coordinates sends the pair of one-entry tuples $((m), (n))$ to $((n), (m))$.
 
 ## Depends on
 
-- [Stanley Transpose](stanley-transpose.md)
+- [Transposed partition in Stanley coordinates](stanley-transpose.md)
 
 ## Sources
 

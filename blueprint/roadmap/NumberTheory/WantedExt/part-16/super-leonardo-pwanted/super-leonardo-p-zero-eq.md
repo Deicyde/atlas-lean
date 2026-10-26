@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.superLeonardoP_zero_eq
 ---
 
-# Theorem 4
+# Homogeneous supergeneralized Leonardo p-numbers via Fibonacci p-numbers
 
-**Theorem 4**: the homogeneous case `k = 0`: `𝓛_{p,0,x}(n) = x_n` for `n ≤ p` and
-`F_p(n-p+1) x_p + ∑_{i=0}^{min(p-1, n-p-1)} F_p(n-p-i) x_i` for `n > p`.
+**Homogeneous supergeneralized Leonardo p-numbers via Fibonacci p-numbers.** For all
+natural numbers $p \ge 1$ and $n$ and every real sequence $x$, the supergeneralized Leonardo
+$p$-numbers $\mathcal{L}_{p,0,x}$ with $k = 0$ satisfy $\mathcal{L}_{p,0,x}(n) = x_n$ if
+$n \le p$, and if $n > p$, with $F_p$ denoting the Fibonacci $p$-numbers,
+
+$$\mathcal{L}_{p,0,x}(n) = F_p(n-p+1)\,x_p + \sum_{i=0}^{\min(p-1,\,n-p-1)} F_p(n-p-i)\,x_i.$$
 
 ## Depends on
 
 - [Fibonacci p-numbers](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
-- [Super Leonardo P](super-leonardo-p.md)
+- [Supergeneralized Leonardo p-numbers](super-leonardo-p.md)
 
 ## Sources
 

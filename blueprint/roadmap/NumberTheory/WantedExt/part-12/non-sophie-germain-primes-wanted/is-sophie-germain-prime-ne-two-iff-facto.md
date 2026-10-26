@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isSophieGermainPrime_ne_two_iff_factorial_modEq
 ---
 
-# Is Sophie Germain Prime ne two iff factorial mod Eq
+# Wilson-type characterization of Sophie Germain primes
 
-Wilson-type characterization: for an integer `a ≥ 2`, `a` is a Sophie Germain prime other
-than `2` exactly when `(a - 1)! ≡ 2a - 1` or `(a - 1)! ≡ -(6a + 1) (mod a(2a + 1))`. The paper
-states this for all `a ∈ ℤ⁺`; at `a = 1` the first congruence holds (`0! = 1 ≡ 1 (mod 3)`)
-while `1` is not prime (the proof's appeal to Wilson's theorem modulo `a` needs `a ≥ 2`).
+**Wilson-type characterization of Sophie Germain primes.** Let $a \ge 2$ be a natural number.
+Then $a$ is a Sophie Germain prime other than $2$ if and only if
+$(a - 1)! \equiv 2a - 1 \pmod{a(2a + 1)}$ or $(a - 1)! \equiv -(6a + 1) \pmod{a(2a + 1)}$, the
+congruences being taken in the integers.
+
+The paper states this for all positive integers $a$; at $a = 1$ the first congruence holds
+($0! = 1 \equiv 1 \pmod 3$) while $1$ is not prime (the proof's appeal to Wilson's theorem modulo
+$a$ needs $a \ge 2$).
 
 ## Depends on
 

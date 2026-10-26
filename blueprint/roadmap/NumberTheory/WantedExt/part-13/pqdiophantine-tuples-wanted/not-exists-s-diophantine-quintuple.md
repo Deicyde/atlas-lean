@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_exists_sDiophantine_quintuple
 ---
 
-# Not exists s Diophantine quintuple
+# There is no $\{p, q\}$-Diophantine quintuple
 
-For primes `p < q`, no `{p, q}`-Diophantine quintuple exists.
+**There is no $\{p, q\}$-Diophantine quintuple.** Let $p < q$ be primes. Then no five-element
+set of natural numbers is a $\{p, q\}$-Diophantine tuple; that is, there is no
+$\{p, q\}$-Diophantine quintuple.
 
 ## Depends on
 
-- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
+- [$S$-Diophantine tuples](is-sdiophantine-tuple.md)
 
 ## Sources
 

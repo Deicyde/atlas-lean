@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount_add_mul_prime
 ---
 
-# Sum Of Triangular Rep Count add mul prime
+# Prime divisibility of triangular representation numbers persists under prime shifts
 
-For positive `n, k` and a prime `p ≥ n + 1`: if `p ∣ t_k(n)` then `p ∣ t_{k+rp}(n)`
-for every `r ∈ ℤ`.
+**Prime divisibility of triangular representation numbers persists under prime shifts.** For an
+integer $k$, let $t_k(n)$ be the coefficient of $q^n$ in $\psi(q)^k$, where
+$\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. Let $n \ge 1$ and $k \ge 1$ be natural numbers and let $p$
+be a prime with $p \ge n + 1$. If $p$ divides $t_k(n)$, then $p$ divides $t_{k+rp}(n)$ for every
+integer $r$.
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
 
 ## Sources
 

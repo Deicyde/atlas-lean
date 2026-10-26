@@ -6,27 +6,27 @@ navigation: module
 
 ## Mahler Popken Complexity Wanted
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
 
 ## Mahler Popken Expr
 
-- [Eval](eval.md)
-- [Count](count.md)
+- [Value of an $m$-ary expression](eval.md)
+- [Number of leaves of an $m$-ary expression](count.md)
 
 ## Mahler Popken Complexity Wanted
 
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
-- [Exists mahler Popken Expr eval](exists-mahler-popken-expr-eval.md)
-- [Mahler Popken Complexity spec](mahler-popken-complexity-spec.md)
-- [Mahler Popken Complexity min le](mahler-popken-complexity-min-le.md)
-- [Mahler Popken Complexity pos](mahler-popken-complexity-pos.md)
-- [Mahler Popken Complexity add le](mahler-popken-complexity-add-le.md)
-- [Mahler Popken Complexity mul le](mahler-popken-complexity-mul-le.md)
-- [Of Integer Complexity Expr](of-integer-complexity-expr.md)
-- [To Integer Complexity Expr](to-integer-complexity-expr.md)
-- [Mahler Popken Complexity one eq](mahler-popken-complexity-one-eq.md)
-- [Mahler Popken Recursion Value](mahler-popken-recursion-value.md)
-- [Proposition 1, general case](mahler-popken-complexity-eq-recursion-va.md)
-- [Proposition 1, binary case](mahler-popken-complexity-two-eq-recursio.md)
-- [Theorem 1](logb-two-le-mahler-popken-complexity-two.md)
-- [Theorem 2](mahler-popken-complexity-two-le-log-add.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
+- [Every positive integer has an $m$-ary expression](exists-mahler-popken-expr-eval.md)
+- [The Mahler–Popken complexity is attained](mahler-popken-complexity-spec.md)
+- [Expressions bound the $m$-ary complexity from above](mahler-popken-complexity-min-le.md)
+- [The $m$-ary complexity is positive](mahler-popken-complexity-pos.md)
+- [Subadditivity of the $m$-ary complexity under addition](mahler-popken-complexity-add-le.md)
+- [Subadditivity of the $m$-ary complexity under multiplication](mahler-popken-complexity-mul-le.md)
+- [Integer-complexity expressions as $1$-ary Mahler–Popken expressions](of-integer-complexity-expr.md)
+- [$1$-ary Mahler–Popken expressions as integer-complexity expressions](to-integer-complexity-expr.md)
+- [The $1$-ary complexity is the integer complexity](mahler-popken-complexity-one-eq.md)
+- [Right-hand side of the Mahler–Popken recursion](mahler-popken-recursion-value.md)
+- [The $m$-ary complexity eventually satisfies its recursion](mahler-popken-complexity-eq-recursion-va.md)
+- [Recursion for the binary Mahler–Popken complexity](mahler-popken-complexity-two-eq-recursio.md)
+- [Logarithmic lower bound for the binary Mahler–Popken complexity](logb-two-le-mahler-popken-complexity-two.md)
+- [Upper bound for the binary Mahler–Popken complexity](mahler-popken-complexity-two-le-log-add.md)

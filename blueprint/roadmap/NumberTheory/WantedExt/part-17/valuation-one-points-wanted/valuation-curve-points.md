@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.valuationCurvePoints
 ---
 
-# Valuation Curve Points
+# Points of $C_f(\mathbb{F}_p)$
 
-The points of `C_f(𝔽_p)`: pairs `0 ≤ r, s < p` with `p ∣ f(r, s)`.
+**Points of $C_f(\mathbb{F}_p)$.** For $f \in \mathbb{Z}[x, y]$ and a natural number $p$,
+$C_f(\mathbb{F}_p)$ is the set of pairs $(r, s)$ of natural numbers with $r, s < p$ such that $p$
+divides $f(r, s)$.
 
 ## Depends on
 

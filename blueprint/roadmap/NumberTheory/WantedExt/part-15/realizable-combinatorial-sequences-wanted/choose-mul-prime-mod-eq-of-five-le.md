@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_prime_modEq_of_five_le
 ---
 
-# Choose mul prime mod Eq of five le
+# Helou–Terjanian congruence for primes $p \ge 5$
 
-Helou and Terjanian, prime `p ≥ 5`: for `0 < m < n`,
-`C(np, mp) ≡ C(n, m) (mod p^{3 + max(ν_p(m), ν_p(n-m)) + ν_p(C(n,m))})`.
+**Helou–Terjanian congruence for primes $p \ge 5$.** Let $p \ge 5$ be a prime and let $m$ and
+$n$ be integers with $0 < m < n$. Then $\binom{np}{mp} \equiv \binom{n}{m} \pmod{p^e}$, where
+$e = 3 + \max(\nu_p(m), \nu_p(n - m)) + \nu_p\big(\binom{n}{m}\big)$ and $\nu_p$ is the $p$-adic
+valuation.
 
 ## Depends on
 

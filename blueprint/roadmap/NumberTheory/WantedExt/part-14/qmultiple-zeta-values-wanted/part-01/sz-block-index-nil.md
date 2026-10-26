@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.szBlockIndex_nil
 ---
 
-# Sz Block Index nil
+# Block index of the empty list
 
-`szBlockIndex [] = []`.
+**Block index of the empty list.** The block index of the empty list of pairs is the empty
+index.
 
 ## Depends on
 
-- [Sz Block Index](sz-block-index.md)
+- [Block indices for Schlesinger–Zudilin qMZVs](sz-block-index.md)
 
 ## Sources
 

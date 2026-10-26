@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.consecutive_constant_eq_card
 ---
 
-# Consecutive constant eq card
+# Consecutive zero-sum constant of a finite abelian group
 
-Theorem 3.1: for a finite abelian group `G`, `C(G) = |G|`.
+**Consecutive zero-sum constant of a finite abelian group.** Let $G$ be a finite abelian
+group and let $C(G)$ be the least positive integer $k$ such that every sequence
+$x_1, \dots, x_k$ in $G$ has a block of consecutive terms $x_s, \dots, x_t$ with $s \le t$ and
+$x_s + \dots + x_t = 0$. Then $C(G) = |G|$.
 
 ## Depends on
 

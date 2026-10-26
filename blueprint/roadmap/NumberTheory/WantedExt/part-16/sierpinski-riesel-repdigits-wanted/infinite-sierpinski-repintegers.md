@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.infinite_sierpinski_repintegers
 ---
 
-# Theorem 3.3
+# Covering-produced Sierpiński numbers give infinitely many Sierpiński repintegers
 
-**Theorem 3.3.** If `k` is a Sierpiński number produced by the covering system method, then
-for every `b ≥ 2` there are infinitely many `t ≥ 1` with `k_b^{(t)}` a Sierpiński number.
+**Covering-produced Sierpiński numbers give infinitely many Sierpiński repintegers.** Let $k$
+be a Sierpiński number that has Sierpiński covering data, so that $k$ is produced as a Sierpiński
+number by the covering system method. Then for every natural number $b \ge 2$ there are infinitely
+many $t \ge 1$ such that the $b$-repinteger $k_b^{(t)} = k\,(b^{\ell t} - 1)/(b^{\ell} - 1)$, where
+$\ell$ is the number of base-$b$ digits of $k$ (so $k_b^{(t)}$ is $k$ written $t$ times in base
+$b$), is a Sierpiński number.
 
 ## Depends on
 
-- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
-- [Is Sierpinski Number](is-sierpinski-number.md)
-- [Repstring](repstring.md)
+- [Sierpiński covering data](is-sierpinski-covering-data.md)
+- [Sierpiński number](is-sierpinski-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

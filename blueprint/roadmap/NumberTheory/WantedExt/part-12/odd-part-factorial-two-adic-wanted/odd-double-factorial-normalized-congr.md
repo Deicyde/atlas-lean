@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.oddDoubleFactorial_normalized_congr
 ---
 
-# Odd Double Factorial normalized congr
+# Congruence of normalized odd double factorials
 
-For `e≥3`, the two normalized odd double-factorial differences are congruent modulo `2^(e-1)`. The
-paper states `e≥2`, but at `e=2` the first quotient is not an integer: `(2^2-1)!! - 1 = 2` is not
-divisible by `4`; the paper's proof takes integrality from Lemma 6, which needs `e≥3`. The
-conjunction explicitly records that `2^e` and `2^(e+1)` divide the respective numerators, justifying
-the two integer quotients; the final clause is the paper's congruence, represented in `ℤ`.
+**Congruence of normalized odd double factorials.** For every natural number $e \ge 3$, writing
+$(2^k-1)!!$ for the product of the odd numbers from $1$ to $2^k-1$, the integer $2^e$ divides
+$(2^e-1)!! - 1$, the integer $2^{e+1}$ divides $(2^{e+1}-1)!! - 1$, and
+
+$$\frac{(2^e-1)!! - 1}{2^e} \equiv \frac{(2^{e+1}-1)!! - 1}{2^{e+1}} \pmod{2^{e-1}}.$$
+
+The source states this for $e \ge 2$, but at $e = 2$ the first quotient is not an integer:
+$(2^2-1)!! - 1 = 2$ is not divisible by $4$.
 
 ## Depends on
 
-- [Odd Double Factorial](odd-double-factorial.md)
+- [Odd double factorial below a power of two](odd-double-factorial.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gauss_circle_asymptotic
 ---
 
-# Gauss circle asymptotic
+# Gauss's bound for lattice points in a disc
 
-Theorem 20 (Gauss circle problem): for `x ≥ 1`, the closed disc of
-radius `√x` about the origin contains `π x + O(√x)` lattice points.
+**Gauss's bound for lattice points in a disc.** There is a constant $C$ such that for every
+real $x \ge 1$, the number $N(x)$ of integer pairs $(a, b)$ with $a^2 + b^2 \le x$ satisfies
+$|N(x) - \pi x| \le C \sqrt{x}$.
 
 ## Depends on
 

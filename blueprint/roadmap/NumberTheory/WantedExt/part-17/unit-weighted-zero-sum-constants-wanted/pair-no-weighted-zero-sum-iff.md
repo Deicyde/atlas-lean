@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pair_no_weightedZeroSum_iff
 ---
 
-# Pair no weighted Zero Sum iff
+# Weighted zero-sum free pairs in a field
 
-Lemma 7.6: for a field `F`, a subgroup `A` of `F^*` and nonzero `x, y ∈ F`, the sequence
-`(x, y)` has no `A`-weighted zero-sum subsequence if and only if `x` and `-y` lie in different
-cosets of `A` in `F^*`. (A zero term is itself a zero-sum subsequence, so the cosets are taken
-for nonzero `x, y`.)
+**Weighted zero-sum free pairs in a field.** Let $F$ be a field, let $A$ be a subgroup of the
+multiplicative group $F^*$, and let $x, y \in F$ be nonzero. Then the sequence
+$(x_1, x_2) = (x, y)$ has no $A$-weighted zero-sum subsequence, that is, there is no nonempty
+set $I \subseteq \{1, 2\}$ with elements $a_i \in A$ for $i \in I$ such that
+$\sum_{i \in I} a_i x_i = 0$, if and only if $x$ and $-y$ lie in different cosets of $A$ in $F^*$.
+
+A zero term is by itself a zero-sum subsequence, so the cosets are taken for nonzero $x$ and $y$.
 
 ## Depends on
 

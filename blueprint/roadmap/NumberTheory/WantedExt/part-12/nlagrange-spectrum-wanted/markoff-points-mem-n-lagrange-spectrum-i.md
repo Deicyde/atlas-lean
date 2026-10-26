@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.markoff_points_mem_nLagrangeSpectrum_iff
 ---
 
-# Markoff points mem n Lagrange Spectrum iff
+# Congruence conditions for Markoff points in the $p$-Lagrange spectrum
 
-Congruence conditions for the Markoff points `√5, 2√2, √221/5, √1517/13, √7565/29` in `L_p`,
-`p` prime: (a) `√5 ∈ L_p ↔ p ≡ 0, ±1 (mod 5)`; (b) `2√2 ∈ L_p ↔ p ≡ 2, ±1 (mod 8)`;
-(c) `√221/5 ∈ L_p ↔ p` is a square mod `13` and `17`; (d) `√1517/13 ∈ L_p ↔ p` is a square mod
-`37` and `41`; (e) `√7565/29 ∈ L_p ↔ p` is a square mod `5`, `17` and `89`. "Square mod `m`" is
-`IsSquare` in `ZMod m` (so `0` counts). Part (f) (`10√26/17`) is omitted: as printed it fails at
-`p = 17`.
+**Congruence conditions for Markoff points in the $p$-Lagrange spectrum.** Let $p$ be a prime
+and let $L_p$ be the $p$-Lagrange spectrum. Then: (a) $\sqrt{5} \in L_p$ if and only if
+$p \equiv 0, \pm 1 \pmod 5$; (b) $2\sqrt{2} \in L_p$ if and only if $p \equiv 2, \pm 1 \pmod 8$;
+(c) $\sqrt{221}/5 \in L_p$ if and only if $p$ is a square modulo $13$ and modulo $17$;
+(d) $\sqrt{1517}/13 \in L_p$ if and only if $p$ is a square modulo $37$ and modulo $41$;
+(e) $\sqrt{7565}/29 \in L_p$ if and only if $p$ is a square modulo $5$, modulo $17$ and modulo
+$89$. Here $p$ is a square modulo $m$ when $p \equiv a^2 \pmod m$ for some integer $a$; this
+includes the case $p \equiv 0 \pmod m$.
+
+Part (f) of the source, for $10\sqrt{26}/17$, is omitted: as printed it fails at $p = 17$.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

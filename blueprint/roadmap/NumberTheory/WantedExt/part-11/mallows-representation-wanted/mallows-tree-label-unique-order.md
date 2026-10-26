@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.mallowsTree_label_unique_order
 ---
 
-# Mallows Tree label unique order
+# Each rational in $(0, 1)$ occurs once in the Mallows tree, in increasing order on each level
 
-Mallows tree: (i) every fraction of `(0, 1) ∩ ℚ` appears exactly once in some `MT_i`, i.e. as
-exactly one side (`false` left, `true` right) of exactly one vertex label; (ii) on each `MT_i`
-the left-to-right order agrees with the increasing order: each label `⟨p, q⟩` has `p < q`, and
-if two paths of the same length first differ by `L < M`, `L < R` or `M < R`, the right element
-of the first label is below the left element of the second.
+**Each rational in $(0, 1)$ occurs once in the Mallows tree, in increasing order on each
+level.** For a finite word $w$ over $\{L, M, R\}$ let $\langle p_w, q_w \rangle$ be the label, a
+pair of fractions, of the vertex of the Mallows tree reached from the root by the path $w$;
+fractions are compared by their real values. Then: (i) for every rational number $r$ with
+$0 < r < 1$ there is exactly one pair $(w, s)$ of a path $w$ and a side
+$s \in \{\text{left}, \text{right}\}$ such that the fraction on side $s$ of the label of $w$
+($p_w$ for left, $q_w$ for right) has value $r$; (ii) $p_w < q_w$ for every path $w$; (iii) for
+all words $u$, $v_1$, $v_2$ over $\{L, M, R\}$ with $v_1$ and $v_2$ of the same length and every
+pair $(b, c)$ among $(L, M)$, $(L, R)$, $(M, R)$, we have $q_{u b v_1} < p_{u c v_2}$.
+
+Together, (ii) and (iii) say that on each level $\mathrm{MT}_i$ of the tree the left-to-right
+order of the fractions agrees with their increasing order.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Label](mallows-label.md)
-- [Nat Pair To Real](nat-pair-to-real.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Labels of the Mallows tree](mallows-label.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.bzChainSum_bzChainWord_one_one
 ---
 
-# Bz Chain Sum bz Chain Word one one
+# Chain sum of the single block $(1, 1)$
 
-For one block `(1, 1)`, the chain sum at `R = 2` is `∑_{m j = 2} j = 3`.
+**Chain sum of the single block $(1, 1)$.** The marker word of the single block $(1, 1)$ is
+one position weighted by $1$, and its chain sum with bound $M = 3$ and target $R = 2$ equals $3$:
+it is the sum of $\binom{j}{1} = j$ over $0 < m < 3$ and $j \ge 0$ with $m j = 2$, which is
+$2 + 1 = 3$.
 
 ## Depends on
 
-- [Bz Chain Sum](../part-05/bz-chain-sum.md)
-- [Bz Chain Word](bz-chain-word.md)
+- [Weighted chain sums](../part-05/bz-chain-sum.md)
+- [Marker word of a list of blocks](bz-chain-word.md)
 
 ## Sources
 

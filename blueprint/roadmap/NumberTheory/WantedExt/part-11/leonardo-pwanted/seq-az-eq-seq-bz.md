@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_seqBZ
 ---
 
-# Proposition 8
+# Relation between the sequences $A_p$ and $B_p$
 
-**Proposition 8**: `A_p(n) = B_p(n+1) - 1` if
-`n ≡ 0 (mod p)`, else `B_p(n+1)`.
+**Relation between the sequences $A_p$ and $B_p$.** For natural numbers $p \ge 2$ and $n$,
+the auxiliary sequences $A_p$ and $B_p$ satisfy $A_p(n) = B_p(n+1) - 1$ if $p$ divides $n$, and
+$A_p(n) = B_p(n+1)$ otherwise.
 
 ## Depends on
 
-- [Seq AZ](seq-az.md)
-- [Seq BZ](seq-bz.md)
+- [The sequence $A_p$](seq-az.md)
+- [The two-sided sequence $B_p$](seq-bz.md)
 
 ## Sources
 

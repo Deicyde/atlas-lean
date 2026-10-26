@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fermatNumber_isStrongPseudoprime_two_pow_add_sub
 ---
 
-# Fermat Number is Strong Pseudoprime two pow add sub
+# Strong pseudoprime bases $2^{2^{k-1}+t} \pm 2^t$ of composite Fermat numbers
 
-Every composite Fermat number `F_k` is a strong pseudoprime to the bases
-`2 ^ (2 ^ (k - 1) + t) ± 2 ^ t` for every `t ≥ 0`.
+**Strong pseudoprime bases $2^{2^{k-1}+t} \pm 2^t$ of composite Fermat numbers.** Let $k$ be a
+natural number such that the Fermat number $F_k = 2^{2^k} + 1$ is composite. Then for every
+natural number $t$, $F_k$ is a strong pseudoprime to both bases $2^{2^{k-1}+t} + 2^t$ and
+$2^{2^{k-1}+t} - 2^t$, computed modulo $F_k$.
 
 ## Depends on
 

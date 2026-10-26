@@ -13,8 +13,8 @@ shift, and modulus; at `s=e+1` these are respectively `e+d`, `e+1`, and `d`.
 
 ## Depends on
 
-- [Odd Part](odd-part.md)
-- [Stable Bits](stable-bits.md)
+- [Odd part](odd-part.md)
+- [Stable bits of the odd part of a factorial](stable-bits.md)
 
 ## Sources
 

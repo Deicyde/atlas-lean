@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.hammingWeight_eq_takagi_diff
 ---
 
-# Hamming Weight eq takagi diff
+# Binary digit sum from consecutive Takagi values
 
-Theorem 28: for `n = 2^k + r` with `0 ≤ r < 2^k`,
-`s₁(n) = 2^(k-1) (τ(r/2^k) - τ((r+1)/2^k)) + (k+2)/2`.
+**Binary digit sum from consecutive Takagi values.** Let $k$ and $r$ be natural numbers
+with $r < 2^k$, let $n = 2^k + r$, and let $s_1(n)$ be the sum of the binary digits of $n$.
+Writing $\tau(m, k - 1)$ for the Takagi value of the dyadic presentation $m / 2^k$, one has
+$s_1(n) = 2^{k-1} \bigl(\tau(r, k - 1) - \tau(r + 1, k - 1)\bigr) + (k + 2)/2$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.weaklyPrimeAdditiveLength
 ---
 
-# Weakly Prime Additive Length
+# Weakly prime-additive length
 
-The length `κ_n` of a weakly prime-additive number: the least number `t` of distinct prime
-divisors of `n` whose positive powers sum to `n`.
+**Weakly prime-additive length.** For a natural number $n$, the length $\kappa_n$ is the least
+$t$ such that $n$ is a sum of positive powers of $t$ distinct prime divisors of $n$, and
+$\kappa_n = 0$ when $n$ has no such representation.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
+- [Sums of powers of distinct prime divisors](is-prime-divisor-power-sum.md)
 
 ## Sources
 

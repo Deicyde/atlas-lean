@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.bijOn_linearCombination_oozToBZ
 ---
 
-# Bij On linear Combination ooz To BZ
+# The map $U$ is a bijection on combinations of admissible indices
 
-`U` is a linear isomorphism of `𝔥⁰`: its `ℚ`-linear extension maps the combinations of
-admissible words bijectively onto themselves.
+**The map $U$ is a bijection on combinations of admissible indices.** Call an index
+$(k_1, \dots, k_r)$ of natural numbers admissible if all $k_i \ge 1$ and, when $r \ge 1$,
+$k_1 \ge 2$; the empty index is admissible. Extend the map $U$ from OOZ to BZ indices
+$\mathbb{Q}$-linearly to finite $\mathbb{Q}$-linear combinations of indices. This extension maps
+the set of $\mathbb{Q}$-linear combinations of admissible indices bijectively onto itself.
 
 ## Depends on
 
-- [Ooz To BZ](ooz-to-bz.md)
+- [The map $U$ from OOZ to BZ words](ooz-to-bz.md)
 
 ## Sources
 

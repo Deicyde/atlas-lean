@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negRFibonacci_zero
 ---
 
-# Neg RFibonacci zero
+# The zeroth (-r)-Fibonacci polynomial
 
-`U^{(-r)}_0 = 0`.
+**The zeroth (-r)-Fibonacci polynomial.** For every commutative ring $A$, natural number
+$r$, $x \in A$ and unit $y$ of $A$, the $(-r)$-Fibonacci polynomial satisfies
+$U^{(-r)}_0(x, y) = 0$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

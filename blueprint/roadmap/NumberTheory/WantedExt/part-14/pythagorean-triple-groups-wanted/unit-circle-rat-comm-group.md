@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.unitCircleRat_commGroup
 ---
 
-# Unit Circle Rat comm Group
+# Amato's group law on rational points of the unit circle
 
-The set `P` of points `(a/c, b/c)` from primitive triples with `a ≠ 0`, with `⊙`, is an infinite
-commutative group: `⊙` maps `P` to `P`, is associative and commutative on `P`, `(1, 0)` is an
-identity, `(x, -y)` is the inverse of `(x, y)`, and `P` is infinite.
+**Amato's group law on rational points of the unit circle.** Let
+$P = \{(x, y) \in \mathbb{Q}^2 : x \neq 0,\ x^2 + y^2 = 1\}$ and let $\odot$ be Amato's product
+$(x, y) \odot (x', y') = (x x' / (1 + y y'), (y + y') / (1 + y y'))$. Then $(1, 0) \in P$; for all
+$p, q \in P$ we have $p \odot q \in P$; $\odot$ is associative and commutative on $P$; for every
+$(x, y) \in P$ we have $(x, y) \odot (1, 0) = (x, y)$ and $(x, y) \odot (x, -y) = (1, 0)$; and $P$
+is infinite.
 
-`P` is written as `{(x, y) ∈ ℚ² : x ≠ 0, x² + y² = 1}` (the same set: the reduced common
-denominator of a rational point gives a primitive triple). Rules (II) and (III) of (14) concern
-fraction representatives and hold automatically in `ℚ`.
+$P$ is the set of points $(a/c, b/c)$ coming from primitive Pythagorean triples $(a, b, c)$ with
+$a \neq 0$: writing a rational point of the unit circle over its reduced common denominator gives
+a primitive triple. Rules (II) and (III) of (14) in the source concern fraction representatives
+and hold automatically in $\mathbb{Q}$.
 
 ## Depends on
 
-- [Unit Circle Rat Mul](unit-circle-rat-mul.md)
+- [Amato's product on rational points of the unit circle](unit-circle-rat-mul.md)
 
 ## Sources
 

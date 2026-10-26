@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SierpinskiMersenneWanted.exists_arithProg_sierpinski_add_mersenne
 ---
 
-# Theorem 1
+# Composite numbers from Mersenne shifts of an arithmetic progression
 
-**Theorem 1**: for every fixed `t` there is an
-arithmetic progression of integers `k = a + r * d`
-(`0 < d`) such that `(k + M_j) * 2^n + 1` is composite
-for every `j ≤ t` and every nonnegative `n`, where
-`M_j = mersenne j` is the `j`-th Mersenne number.
+**Composite numbers from Mersenne shifts of an arithmetic progression.** For a natural
+number $j$ let $M_j = 2^j - 1$ be the $j$-th Mersenne number (so $M_0 = 0$). For every natural
+number $t$ there are natural numbers $a$ and $d > 0$ such that, for every natural number $r$,
+every natural number $j \le t$ and every natural number $n$, the number
+$(a + rd + M_j) \cdot 2^n + 1$ is composite.
 
 ## Depends on
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.mersenne_dvd_lehmerV_of_jacobi
 ---
 
-# Mersenne dvd lehmer V of jacobi
+# Divisibility of Lehmer's companion sequence by a Mersenne prime
 
-Let `n ≥ 3` be odd and `M_n` prime, and let `D = R - 4Q`. If the Legendre symbols
-`(DR | M_n)` and `(QR | M_n)` are both `-1`, then `M_n ∣ V̄_{(M_n+1)/2}(R, Q)`. The Legendre
-symbols are written as Jacobi symbols (equal, `M_n` being prime).
+**Divisibility of Lehmer's companion sequence by a Mersenne prime.** Let $n \ge 3$ be an odd
+natural number such that $M_n = 2^n - 1$ is prime, let $R$ and $Q$ be integers, let
+$\bar V_k(R, Q)$ denote Lehmer's companion sequence, and put $D = R - 4Q$. If the Jacobi symbols
+$\left(\frac{DR}{M_n}\right)$ and $\left(\frac{QR}{M_n}\right)$ are both $-1$, then $M_n$
+divides $\bar V_{(M_n+1)/2}(R, Q) = \bar V_{2^{n-1}}(R, Q)$.
+
+Since $M_n$ is prime, these Jacobi symbols are Legendre symbols.
 
 ## Depends on
 
-- [Lehmer V](lehmer-v.md)
+- [Lehmer's companion sequence](lehmer-v.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitDivisors
 ---
 
-# Square Split Divisors
+# Square-splitting divisors
 
-The divisor system `A(n) = {u₁ v₁² : u₁ ∣ u(n), v₁ ∣ v(n)}`.
+**Square-splitting divisors.** For a natural number $n \ge 1$ with prime factorization
+$n = \prod_p p^{e_p}$, let $u(n) = \prod_p p^{e_p \bmod 2}$ and
+$v(n) = \prod_p p^{\lfloor e_p/2 \rfloor}$, and let $u(0) = v(0) = 1$. The set of
+square-splitting divisors of $n$ is $A(n) = \{u_1 v_1^2 : u_1 \mid u(n),\ v_1 \mid v(n)\}$, where
+$u_1$ and $v_1$ range over the positive divisors of $u(n)$ and $v(n)$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

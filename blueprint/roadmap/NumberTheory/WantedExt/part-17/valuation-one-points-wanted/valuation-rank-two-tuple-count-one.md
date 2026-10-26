@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.valuationRankTwoTupleCount_one
 ---
 
-# Valuation Rank Two Tuple Count one
+# The rank-two tuple count vanishes for $k = 1$
 
-`m_1(f, p) = 0`: a single row has rank at most `1`.
+**The rank-two tuple count vanishes for $k = 1$.** For every $f \in \mathbb{Z}[x, y]$ and
+every prime $p$, the rank-two tuple count $m_1(f, p)$ is $0$: a matrix with a single row has rank
+at most $1$.
 
 ## Depends on
 
-- [Valuation Rank Two Tuple Count](valuation-rank-two-tuple-count.md)
+- [Rank-two tuple count $m_k(f, p)$](valuation-rank-two-tuple-count.md)
 
 ## Proof depends on
 
-- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
-- [Valuation Row](valuation-row.md)
+- [Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$](valuation-distinct-tuples.md)
+- [Valuation row of a point](valuation-row.md)
 
 ## Sources
 

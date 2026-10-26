@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.dimH_wellApproximableSet_rpow
 ---
 
-# Dim H well Approximable Set rpow
+# Jarník–Besicovitch theorem
 
-The Jarník–Besicovitch theorem: for `τ ≥ 1`, the set `W(τ)` of `x ∈ [0, 1)` with
-`|x - p/q| < q^{-(1+τ)}` for infinitely many `q` has Hausdorff dimension `2/(1+τ)`.
-Here `W(τ) = W(ψ)` with `ψ(q) = q^{-τ}`.
+**Jarník–Besicovitch theorem.** For a real number $\tau \ge 1$, let $W(\tau)$ be the set of
+$x \in [0, 1)$ such that for infinitely many natural numbers $q$ there is an integer $p$ with
+$|x - p/q| < q^{-(1+\tau)}$; this is the set of $\psi$-well approximable numbers for
+$\psi(q) = q^{-\tau}$. Then the Hausdorff dimension of $W(\tau)$ is $2/(1 + \tau)$.
 
 ## Depends on
 
-- [Well Approximable Set](well-approximable-set.md)
+- [Well approximable numbers](well-approximable-set.md)
 
 ## Sources
 

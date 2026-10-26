@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.truncatedLogResultantProduct_pos
 ---
 
-# Truncated Log Resultant Product pos
+# Positivity of the resultant product
 
-`𝒫_n` is positive (for `n ≥ 1`).
+**Positivity of the resultant product.** For every natural number $n \ge 1$, the resultant
+product $\mathcal{P}_n$ is a positive integer.
 
 ## Depends on
 
-- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
+- [Resultant product for truncated logarithmic polynomials](truncated-log-resultant-product.md)
 
 ## Sources
 

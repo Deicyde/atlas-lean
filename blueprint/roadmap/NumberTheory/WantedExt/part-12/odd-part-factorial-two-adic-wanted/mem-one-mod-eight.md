@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_oneModEight
 ---
 
-# Mem one Mod Eight
+# Membership in the residues one modulo eight below a power of two
 
-Membership in `oneModEightBelowTwoPow e` is exactly the pair of clauses `n<2^e` and
-`n≡1 (mod 8)`, with the congruence represented by natural remainder.
+**Membership in the residues one modulo eight below a power of two.** For all natural numbers $e$
+and $n$, $n$ lies in the set of natural numbers below $2^e$ that are congruent to $1$ modulo $8$
+if and only if $n < 2^e$ and $n \equiv 1 \pmod 8$.
 
 ## Depends on
 
-- [One Mod Eight Below Two Pow](one-mod-eight-below-two-pow.md)
+- [Numbers below $2^e$ congruent to $1$ modulo $8$](one-mod-eight-below-two-pow.md)
 
 ## Sources
 

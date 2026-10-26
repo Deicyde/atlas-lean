@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.isPracticalNumber_eq_one_or_two
 ---
 
-# Is Practical Number eq one or two
+# Practical numbers divisible by neither 3 nor 4
 
-A practical number divisible by neither `3` nor `4` is `1` or `2`.
+**Practical numbers divisible by neither 3 nor 4.** If $q$ is a practical number that is
+divisible by neither $3$ nor $4$, then $q = 1$ or $q = 2$.
 
 ## Depends on
 

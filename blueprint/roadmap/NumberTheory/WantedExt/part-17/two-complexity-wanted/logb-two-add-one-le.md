@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.logb_two_add_one_le
 ---
 
-# Corollary 2
+# A lower bound for the 2-complexity outside sums of two powers of two
 
-**Corollary 2**: if a positive even `n` is not a sum of
-one or two distinct powers of `2`, then
-`log₂ n + 1 ≤ ‖n‖₂`.
+**A lower bound for the 2-complexity outside sums of two powers of two.** Write
+$\|n\|_2$ for the $2$-complexity of $n$. Let $n$ be a positive even integer that cannot be
+written as $2^a + 2^b$ with natural numbers $a \le b$. Then $\log_2 n + 1 \le \|n\|_2$.
+
+Since $n$ is even, the hypothesis says that $n$ is neither a power of $2$ nor a sum of two
+distinct powers of $2$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_mockThetaV_zero_one
 ---
 
-# Coeff mock Theta V zero one
+# First coefficients of the mock theta function $v$
 
-Characteristic values `P_v(0) = 0` and `P_v(1) = 1` (`v(q) = q + q^2 + q^3 + ⋯`).
+**First coefficients of the mock theta function $v$.** Write
+$v(q) = \sum_{n \ge 0} P_v(n) q^n$ for the eighth-order mock theta function $v$. Then
+$P_v(0) = 0$ and $P_v(1) = 1$.
 
 ## Depends on
 
-- [Mock Theta V](mock-theta-v.md)
+- [The eighth-order mock theta function $v(q)$](mock-theta-v.md)
 
 ## Sources
 

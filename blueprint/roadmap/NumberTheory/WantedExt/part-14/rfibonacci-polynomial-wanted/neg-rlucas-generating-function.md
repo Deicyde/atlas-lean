@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.negRLucas_generatingFunction
 ---
 
-# Neg RLucas generating Function
+# Generating function of the companion sequence $V^{(-r)}$
 
-Theorem 8, `V` part, as an identity of formal power series: for `r ≥ 2`,
-`(1 - y^{-1} z^r + x y^{-1} z^{r+1}) ∑_{n ≥ 0} V^{(-r)}_n z^n = r + 1 - y^{-1} z^r`.
+**Generating function of the companion sequence $V^{(-r)}$.** Let $A$ be a commutative
+ring, $r \ge 2$ a natural number, $x \in A$ and $y$ a unit of $A$, and let $V^{(-r)}_n(x, y)$
+be the companion sequence of the $(-r)$-Fibonacci polynomials. In the ring $A[[z]]$ of formal
+power series,
+
+$$(1 - y^{-1} z^r + x y^{-1} z^{r+1}) \sum_{n \ge 0} V^{(-r)}_n(x, y) z^n = r + 1 - y^{-1} z^r.$$
 
 ## Depends on
 
-- [Neg RLucas](neg-rlucas.md)
+- [Companion sequence of the $(-r)$-Fibonacci polynomials](neg-rlucas.md)
 
 ## Sources
 

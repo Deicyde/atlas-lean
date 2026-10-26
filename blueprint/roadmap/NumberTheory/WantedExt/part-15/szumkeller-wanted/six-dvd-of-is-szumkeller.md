@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.six_dvd_of_isSZumkeller
 ---
 
-# Six dvd of is SZumkeller
+# Even s-Zumkeller numbers are divisible by 6
 
-An even s-Zumkeller number is divisible by `6`.
+**Even s-Zumkeller numbers are divisible by 6.** Every even s-Zumkeller number is divisible
+by $6$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

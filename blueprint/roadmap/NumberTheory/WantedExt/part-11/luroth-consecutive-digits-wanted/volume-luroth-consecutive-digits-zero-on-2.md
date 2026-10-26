@@ -5,19 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothConsecutiveDigits_zero_one_integral
 ---
 
-# Volume luroth Consecutive Digits zero one integral
+# Integral zero-one law for functions of consecutive Lüroth digits
 
-Integral form of the zero-one law: let `F` be positive, measurable and non-decreasing
-on `[2, ∞)^m` with `F(x) ≤ M F(⌊x⌋)` there (condition (6)), and
-`G(y) = ∫_{x_i ≥ 2, F(x) ≥ y} ∏ 1 / x_i²`. The set of `x ∈ (0, 1]` with
-`F(d_n(x), …, d_{n+m-1}(x)) ≥ Ψ(n)` for infinitely many `n` has measure `0` if
-`∑ G(Ψ(n)) < ∞` and `1` if `∑ G(M Ψ(n)) = ∞`. Here `M` is any constant satisfying (6)
-(the paper takes the supremum; a larger `M` only weakens the divergence condition). The
-paper's positivity of `Ψ` is dropped.
+**Integral zero-one law for functions of consecutive Lüroth digits.** Let $m \in \mathbb{N}$
+and let $F : \mathbb{R}^m \to \mathbb{R}$ be a measurable function that is positive on
+$[2, \infty)^m$ and non-decreasing there for the coordinatewise order. Let $M \in \mathbb{R}$
+satisfy $F(x) \le M F(\lfloor x_1 \rfloor, \dots, \lfloor x_m \rfloor)$ for every
+$x \in [2, \infty)^m$, and for $y \in \mathbb{R}$ put
+
+$$G(y) = \int_{\{x \in [2, \infty)^m : F(x) \ge y\}} \prod_{i=1}^{m} \frac{1}{x_i^2} \, dx.$$
+
+Let $(\Psi(n))_{n \ge 0}$ be a real sequence, write $d_k(x)$ for the $k$-th Lüroth digit of
+$x$, and let $E$ be the set of $x \in (0, 1]$ such that
+$F(d_{n+1}(x), \dots, d_{n+m}(x)) \ge \Psi(n)$ for infinitely many $n$. If
+$\sum_{n \ge 0} G(\Psi(n)) < \infty$ then $E$ has Lebesgue measure $0$, and if
+$\sum_{n \ge 0} G(M \Psi(n)) = \infty$ then $E$ has Lebesgue measure $1$.
+
+Here $M$ is any constant with this property (the paper takes the supremum; a larger $M$ only
+weakens the divergence condition). Unlike the paper, $\Psi$ need not be positive.
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

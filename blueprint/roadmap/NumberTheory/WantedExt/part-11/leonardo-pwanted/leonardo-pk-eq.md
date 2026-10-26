@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_eq
 ---
 
-# Theorem 2
+# Generalized Leonardo $p$-numbers in terms of Fibonacci $p$-numbers
 
-**Theorem 2**: `ℒ_{p,k}(n) = (k+1)F_p(n+1) - k`.
+**Generalized Leonardo $p$-numbers in terms of Fibonacci $p$-numbers.** For all natural
+numbers $p$, $k$ and $n$ with $p \ge 1$ and $k \ge 1$, the generalized Leonardo $p$-number
+$\mathcal{L}_{p,k}(n)$ and the Fibonacci $p$-number $F_p(n+1)$ satisfy
+$\mathcal{L}_{p,k}(n) = (k+1)F_p(n+1) - k$.
 
 ## Depends on
 
-- [Leonardo PK](leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](leonardo-pk.md)
 - [Fibonacci p-numbers](../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources

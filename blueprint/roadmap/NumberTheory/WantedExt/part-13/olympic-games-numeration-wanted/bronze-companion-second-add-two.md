@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.bronzeCompanionSecond_add_two
 ---
 
-# Bronze Companion Second add two
+# Recurrence for the companion bronze numbers of the second type
 
-`D_{n+2} = 3D_{n+1} + D_n`.
+**Recurrence for the companion bronze numbers of the second type.** For every natural number
+$n$, the companion bronze numbers $D_n$ of the second type satisfy $D_{n+2} = 3D_{n+1} + D_n$.
 
 ## Depends on
 
-- [Bronze Companion Second](bronze-companion-second.md)
+- [Companion bronze numbers of the second type](bronze-companion-second.md)
 
 ## Proof depends on
 
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas U bronze Lucas Params add two](lucas-u-bronze-lucas-params-add-two.md)
+- [Recurrence of the bronze numbers](lucas-u-bronze-lucas-params-add-two.md)
 
 ## Sources
 

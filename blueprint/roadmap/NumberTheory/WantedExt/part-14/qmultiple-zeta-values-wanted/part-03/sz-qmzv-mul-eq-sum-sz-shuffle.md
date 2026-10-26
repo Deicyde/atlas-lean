@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.szQMZV_mul_eq_sum_szShuffle
 ---
 
-# Sz QMZV mul eq sum sz Shuffle
+# Shuffle product formula for Schlesinger–Zudilin qMZVs (Singer)
 
-`ζ_q^SZ` is an algebra homomorphism on `(𝔎¹, ш_SZ)`: for SZ-admissible indices
-`u, v`, `ζ_q^SZ(u) ζ_q^SZ(v) = ζ_q^SZ(u ш_SZ v)`.
+**Shuffle product formula for Schlesinger–Zudilin qMZVs (Singer).** Write $\zeta_q^{SZ}$ for
+the Schlesinger–Zudilin qMZV. Let $u$ and $v$ be finite lists of natural numbers that are
+SZ-admissible, that is, each is empty or has first entry at least $1$, and let $w_u$ and $w_v$
+be their words in the letters $p$ and $y$ (the index $(k_1, \dots, k_r)$ has word
+$p^{k_1} y \cdots p^{k_r} y$). Then
+
+$$\zeta_q^{SZ}(u)\,\zeta_q^{SZ}(v) = \sum_{w} \zeta_q^{SZ}(w),$$
+
+where $w$ runs, counted with multiplicity, over the terms of the SZ-qshuffle product
+$w_u \mathbin{\text{ш}} w_v$, and $\zeta_q^{SZ}$ of a word is $\zeta_q^{SZ}$ of the index read
+off it: the number of letters $p$ before each letter $y$ since the previous $y$, with letters $p$
+after the last $y$ dropped.
 
 ## Depends on
 
-- [Sz QMZV](../part-01/sz-qmzv.md)
-- [Sz QMZVWord](sz-qmzvword.md)
-- [Sz Shuffle](sz-shuffle.md)
-- [Sz Word](sz-word.md)
+- [Schlesinger–Zudilin qMZVs](../part-01/sz-qmzv.md)
+- [Schlesinger–Zudilin qMZVs of words](sz-qmzvword.md)
+- [SZ-qshuffle product](sz-shuffle.md)
+- [Word of an index](sz-word.md)
 
 ## Sources
 

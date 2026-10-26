@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.szStarQMZV_nil
 ---
 
-# Sz Star QMZV nil
+# The empty SZ-star qMZV
 
-`ζ_q^{SZ,⋆}(∅) = 1`.
+**The empty SZ-star qMZV.** The SZ-star qMZV of the empty index is $1$:
+$\zeta_q^{SZ,\star}(\varnothing) = 1$.
 
 ## Depends on
 
-- [Sz Star QMZV](sz-star-qmzv.md)
+- [SZ-star qMZVs](sz-star-qmzv.md)
 
 ## Proof depends on
 
-- [Sz Star QMZVPartial](sz-star-qmzvpartial.md)
+- [Partial sums of SZ-star qMZVs](sz-star-qmzvpartial.md)
 
 ## Sources
 

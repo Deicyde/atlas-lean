@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_necessary_form
 ---
 
-# Quadratic Packing Polynomial necessary form
+# Step-difference form of a quadratic packing polynomial on a rational sector
 
-Proposition 17: if `P` is a QPP on `I(n/m)` with step difference `k > 0` and
-`l = gcd(n, m - 1)`, then `n/l ∣ l`, `k ≡ (m - 1)/l (mod n/l)`, and the sheared polynomial
-`P̂(x, y) = P(x + (m-1)/n y, y)` equals `n/2 x(x - k/(n/l)) + x + k/(n/l) y + F` with
-`F = P(0, 0)` (Equation (8)).
+**Step-difference form of a quadratic packing polynomial on a rational sector.** Let $m, n$
+be coprime positive integers, let $l = \gcd(m - 1, n)$, and let $P$ be a quadratic packing
+polynomial on the lattice points $I(n/m)$ of the sector of slope $n/m$ whose step difference
+for $m, n$ is a positive integer $k$. Then $n/l$ divides $l$, $k \equiv (m - 1)/l \pmod{n/l}$,
+and for all real $x, y$ one has $P(x + \frac{m - 1}{n} y, y) =
+\frac{n}{2} x \left(x - \frac{k}{n/l}\right) + x + \frac{k}{n/l} y + P(0, 0)$.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Consecutive Step Difference](consecutive-step-difference.md)
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Step difference](consecutive-step-difference.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

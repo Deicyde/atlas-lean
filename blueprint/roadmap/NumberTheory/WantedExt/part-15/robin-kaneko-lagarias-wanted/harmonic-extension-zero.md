@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.harmonicExtension_zero
 ---
 
-# Harmonic Extension zero
+# The real extension of the harmonic numbers vanishes at zero
 
-`H(0) = 0`.
+**The real extension of the harmonic numbers vanishes at zero.** The real extension
+$H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt$ of the harmonic numbers satisfies $H(0) = 0$.
 
 ## Depends on
 
-- [Harmonic Extension](harmonic-extension.md)
+- [The real extension of the harmonic numbers](harmonic-extension.md)
 
 ## Sources
 

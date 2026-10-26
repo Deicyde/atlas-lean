@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.star
 ---
 
-# Star
+# Star numbers
 
-The `n`th star number `6 * n * (n - 1) + 1`.
+**Star numbers.** For a natural number $n$, the $n$-th star number is $S_n = 6n(n-1)+1$.
 
 ## Depends on
 

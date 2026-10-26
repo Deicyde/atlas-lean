@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitTotient_sum_asymptotic
 ---
 
-# Square Split Totient sum asymptotic
+# Average order of the square-splitting totient function
 
-Theorem 8: for `φ⋆` defined by `∑_{d ∈ A(n)} φ⋆(d) = n`, the product
-`M = ∏_p (1 - 1/p² + (p-1)²/p⁵)` converges absolutely, and for every
-`ε ∈ (0, 1/2)`, `∑_{n ≤ x} φ⋆(n) = (M/2) x² + O_ε(x^{1+ε})`.
+**Average order of the square-splitting totient function.** Let $A(n)$ be the set of
+square-splitting divisors of $n$, and let $\varphi_\star$ be any integer-valued arithmetic function
+with $\sum_{d \in A(n)} \varphi_\star(d) = n$ for every $n \ge 1$. Then the product
+$M = \prod_p \left(1 - \frac{1}{p^2} + \frac{(p-1)^2}{p^5}\right)$ converges absolutely, that is,
+$\sum_p \left|\frac{(p-1)^2}{p^5} - \frac{1}{p^2}\right| < \infty$, and for every
+$0 < \varepsilon < 1/2$,
+
+$$\sum_{1 \le n \le x} \varphi_\star(n) = \frac{M}{2}\,x^2 + O(x^{1+\varepsilon})
+\quad (x \to \infty).$$
 
 ## Depends on
 
-- [Square Split Divisors](square-split-divisors.md)
+- [Square-splitting divisors](square-split-divisors.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.ratPythagoreanTriples
 ---
 
-# Rat Pythagorean Triples
+# Rational Pythagorean triples
 
-The set `E` of rational Pythagorean triples `(x, y, z)`, `x² + y² = z²`, with `x ≠ 0`.
+**Rational Pythagorean triples.** The set $E$ consists of the triples $(x, y, z)$ of rational
+numbers with $x \ne 0$ and $x^2 + y^2 = z^2$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.mordell_curves_two_eighteen_one_six_two_integer_points
 ---
 
-# Mordell curves two eighteen one six two integer points
+# Integer points on three Mordell curves
 
-Integer points: `y² = x³ - 2` only at `(3, ±5)`, `y² = x³ - 18` only at `(3, ±3)`, and
-`y² = x³ - 162` has none.
+**Integer points on three Mordell curves.** The integer solutions of $y^2 = x^3 - 2$ are
+exactly $(x, y) = (3, 5)$ and $(3, -5)$, the integer solutions of $y^2 = x^3 - 18$ are exactly
+$(x, y) = (3, 3)$ and $(3, -3)$, and $y^2 = x^3 - 162$ has no integer solutions.
 
 ## Depends on
 

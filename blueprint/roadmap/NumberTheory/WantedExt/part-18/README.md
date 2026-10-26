@@ -8,7 +8,7 @@ navigation: transparent
 - [Weakly Prime Additive](weakly-prime-additive-wanted/README.md)
 - [Weighted Dirichlet Convolution](weighted-dirichlet-convolution-wanted/README.md)
 - [Wieferich Nine Cubes](wieferich-nine-cubes-wanted/README.md)
-- [Theorem 1](wilson-mod-prime-sq.md)
+- [Wilson's theorem modulo $p^2$](wilson-mod-prime-sq.md)
 - [Wilson Quotients](wilson-quotients-wanted/README.md)
 - [Wolstenholme Binomial Extension](wolstenholme-binomial-extension-wanted/README.md)
 - [Zagier Hoffman Positive Char](zagier-hoffman-positive-char-wanted/README.md)

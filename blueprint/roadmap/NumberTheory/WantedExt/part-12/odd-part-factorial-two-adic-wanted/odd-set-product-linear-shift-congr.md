@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oddSet_product_linear_shift_congr
 ---
 
-# Odd Set product linear shift congr
+# Shifting the odd numbers below $2^e$ by a multiple of $2^e$
 
-For every integer `A` and `e≥2`, shifting each `i∈S_e` by `A*2^e` leaves
-their product unchanged modulo `2^(3e-1)`.  Products and the congruence are in
-`ℤ`, permitting negative `A` and avoiding natural subtraction.
+**Shifting the odd numbers below $2^e$ by a multiple of $2^e$.** For every integer $A$ and every
+natural number $e \ge 2$, let $S_e$ be the set of odd integers $i$ with $1 \le i < 2^e$. Then
+
+$$
+\prod_{i \in S_e} (A \cdot 2^e + i) \equiv \prod_{i \in S_e} i \pmod{2^{3e-1}}.
+$$
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.longestAPLengthWithDiff_le_gpf_sub_one_of_squarefree
 ---
 
-# Longest APLength With Diff le gpf sub one of squarefree
+# Squarefree bound for progressions with a fixed difference
 
-Lemma 1(ii): if `n > 1` is squarefree and `d > 0`, then `f_m(d, n) ≤ gpf(n) - 1`.
+**Squarefree bound for progressions with a fixed difference.** Let $m$ be an integer, $n > 1$
+a squarefree natural number with largest prime factor $\operatorname{gpf}(n)$, and $d > 0$ a
+natural number. Then $f_m(d, n) \le \operatorname{gpf}(n) - 1$, where $f_m(d, n)$ is the length of
+the longest arithmetic progression with common difference $d$ contained in the set $R_m(n)$ of
+integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.
 
 ## Depends on
 
-- [Longest APLength With Diff](longest-aplength-with-diff.md)
+- [Longest progression with a given common difference](longest-aplength-with-diff.md)
 
 ## Sources
 

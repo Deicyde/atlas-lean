@@ -4,10 +4,10 @@ navigation: module
 
 # Shakov Two Regular
 
-- [Shakov Seq](shakov-seq.md)
-- [Shakov A](shakov-a.md)
-- [Theorem 4](fiber-card.md)
-- [Proposition 7](block-average.md)
-- [Proposition 8](prime-iff-fiber.md)
-- [Proposition 9](shakov-seq-shakov-a.md)
-- [Corollary 10](fib-sq-add-one-composite.md)
+- [Shakov's $2$-regular sequence](shakov-seq.md)
+- [Shakov's auxiliary sequence](shakov-a.md)
+- [Shakov's sequence counts the divisors of $m^2 + 1$](fiber-card.md)
+- [Block averages of Shakov's sequence](block-average.md)
+- [Primality of $n^2 + 1$ from the fibers of Shakov's sequence](prime-iff-fiber.md)
+- [Shakov's sequence takes Fibonacci values along the auxiliary sequence](shakov-seq-shakov-a.md)
+- [Fibonacci squares plus one are eventually composite](fib-sq-add-one-composite.md)

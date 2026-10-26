@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.three_le_card_primeFactors_of_isSZumkeller_even
 ---
 
-# Three le card prime Factors of is SZumkeller even
+# Even s-Zumkeller numbers have at least three prime factors
 
-An even s-Zumkeller number has at least `3` distinct prime factors.
+**Even s-Zumkeller numbers have at least three prime factors.** If $n$ is an even
+s-Zumkeller number, then $n$ has at least $3$ distinct prime factors.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

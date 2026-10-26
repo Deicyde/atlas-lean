@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.treeDNodes
 ---
 
-# Tree DNodes
+# Number of $D$-nodes of a full binary tree
 
-The number of `D`-nodes of a full binary tree (`BinaryTree Unit`, leaves are `nil`):
-interior nodes whose two subtrees have different numbers of leaves.
+**Number of $D$-nodes of a full binary tree.** A $D$-node of a full binary tree is an
+interior node whose two subtrees have different numbers of leaves. The number of $D$-nodes of a
+full binary tree is the number of its interior nodes that are $D$-nodes.
 
 ## Depends on
 

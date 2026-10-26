@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mallowsLevel_one
 ---
 
-# Mallows Level one
+# The second Mallows level
 
-Characteristic value: `MT_2 = ⟨1/3, 2/5, 4/7, 3/5, 3/4, 4/5⟩`.
+**The second Mallows level.** The ordered list of fractions inserted at the second step of
+Mallows' construction is $MT_2 = \langle 1/3, 2/5, 4/7, 3/5, 3/4, 4/5\rangle$.
 
 ## Depends on
 
-- [Mallows Level](mallows-level.md)
+- [Mallows levels](mallows-level.md)
 
 ## Sources
 

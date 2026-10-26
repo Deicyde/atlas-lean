@@ -5,11 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.leonardoPKZ
 ---
 
-# Leonardo PKZ
+# Generalized Leonardo $p$-numbers at integer arguments
 
-`ℒ_{p,k}` at integer arguments, with the paper's
-values `ℒ_{p,k}(-i) = -k` for `1 ≤ i ≤ p` (accurate on
-`[-p, ∞)`, the range occurring in Theorem 13).
+**Generalized Leonardo $p$-numbers at integer arguments.** For natural numbers $p$ and $k$
+and an integer $z$, the value is the generalized Leonardo $p$-number $\mathcal{L}_{p,k}(z)$ if
+$z \ge 0$, and $-k$ if $z < 0$.
+
+For $-p \le z \le -1$ these are the values $\mathcal{L}_{p,k}(z) = -k$ obtained by running the
+recurrence $\mathcal{L}_{p,k}(n) = \mathcal{L}_{p,k}(n-1) + \mathcal{L}_{p,k}(n-p-1) + k$
+backwards; below $-p$ they need not be, but Theorem 13 of the source only uses arguments
+$z \ge -p$.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Leonardo PK](leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](leonardo-pk.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.floorQuotientOddCount_ten
 ---
 
-# Floor Quotient Odd Count ten
+# The floor sequence parity count at $10$
 
-Characteristic value `𝓕_10 = 7` (the paper's introduction:
-`10, 5, 3, 2, 2, 1, 1, 1, 1, 1` has seven odd terms).
+**The floor sequence parity count at $10$.** The number $\mathcal{F}_{10}$ of integers $k$
+with $1 \le k \le 10$ for which $\lfloor 10/k \rfloor$ is odd equals $7$: the quotients
+$\lfloor 10/k \rfloor$ for $k = 1, \dots, 10$ are $10, 5, 3, 2, 2, 1, 1, 1, 1, 1$, and seven of
+them are odd.
 
 ## Depends on
 
-- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
+- [Floor sequence parity count](floor-quotient-odd-count.md)
 
 ## Sources
 

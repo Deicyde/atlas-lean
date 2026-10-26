@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.roundQuotientOddCount_ten
 ---
 
-# Round Quotient Odd Count ten
+# The rounding sequence parity count at $10$
 
-Characteristic value `𝓡_10 = 7` (Figure 1 of the paper).
+**The rounding sequence parity count at $10$.** The number $\mathcal{R}_{10}$ of integers $k$
+with $1 \le k \le 10$ for which the nearest integer to $10/k$ (half-integers rounded up) is odd
+equals $7$.
 
 ## Depends on
 
-- [Round Quotient Odd Count](round-quotient-odd-count.md)
+- [Rounding sequence parity count](round-quotient-odd-count.md)
 
 ## Sources
 

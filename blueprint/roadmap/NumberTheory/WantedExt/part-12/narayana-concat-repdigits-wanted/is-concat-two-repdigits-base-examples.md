@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isConcatTwoRepdigitsBase_examples
 ---
 
-# Is Concat Two Repdigits Base examples
+# Examples of two-repdigit concatenations in bases 2 and 5
 
-`4 = (100)₂` and `406 = (3111)₅` are concatenations of two repdigits.
+**Examples of two-repdigit concatenations in bases 2 and 5.** The number $4$ is a
+concatenation of two repdigits in base $2$, since $4 = (100)_2$, and the number $406$ is a
+concatenation of two repdigits in base $5$, since $406 = (3111)_5$.
 
 ## Depends on
 
-- [Is Concat Two Repdigits Base](is-concat-two-repdigits-base.md)
+- [Concatenations of two repdigits in a general base](is-concat-two-repdigits-base.md)
 
 ## Sources
 

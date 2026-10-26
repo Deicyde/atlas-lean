@@ -5,7 +5,7 @@ navigation: module
 # Continuous Hom
 
 - [ΩScott Continuous of apply](scott-continuous-of-apply.md)
-- [Curry](curry.md)
+- [Currying of Scott-continuous maps](curry.md)
 - [Lfp](lfp.md)
 - [Lfp eq](lfp-eq.md)
 - [Lfp le](lfp-le.md)

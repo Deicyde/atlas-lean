@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.opposite_parity
 ---
 
-# Lemma 3
+# Opposite parity of the exponents in $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 3 \pmod 4$
 
-**Lemma 3**: let `n ≡ 3 (mod 4)` and
-`p ≡ 3 (mod 4)`. If Equation (1) has a nonnegative
-integer solution, then `x` and `y` have opposite
+**Opposite parity of the exponents in $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 3 \pmod 4$.**
+Let $p$ be a prime and $n$ a natural number with $n \equiv 3 \pmod 4$ and $p \equiv 3 \pmod 4$.
+If natural numbers $x$, $y$, $z$ satisfy $n^x + (5p)^y = z^2$, then $x$ and $y$ have opposite
 parity.
 
 ## Depends on

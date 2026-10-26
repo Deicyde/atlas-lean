@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.choose_dvd_centralBinom_density_one
 ---
 
-# Choose dvd central Binom density one
+# Binomial coefficients dividing the middle binomial coefficient
 
-Theorem 2: the set of `m` such that `C(m + k, k)` divides `C(2m, m)` for every positive
-integer `k ≤ exp(0.8 √(log m))` has natural density `1`. The divisibility sign, lost in the
-extracted display, is read from the paper.
+**Binomial coefficients dividing the middle binomial coefficient.** The set of natural
+numbers $m$ such that $\binom{m+k}{k}$ divides $\binom{2m}{m}$ for every integer $k$ with
+$1 \le k \le \exp(0.8 \sqrt{\log m})$ has natural density $1$.
 
 ## Depends on
 

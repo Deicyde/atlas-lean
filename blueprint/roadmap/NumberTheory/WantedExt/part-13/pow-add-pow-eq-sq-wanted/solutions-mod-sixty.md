@@ -5,14 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.solutions_mod_sixty
 ---
 
-# Theorem 4
+# Solutions of $n^x + (5p)^y = z^2$ for $n \equiv 3, 27 \pmod{60}$ and $p \equiv 7 \pmod{12}$
 
-**Theorem 4**: if `n ≡ 3 (mod 60)` or
-`n ≡ 27 (mod 60)`, and `p ≡ 7 (mod 12)` with
-`gcd(n, p) = gcd(n, 5p - 1) = 1`, then `(x, y, z)`
-is a nonnegative integer solution of Equation (1)
-if and only if it is `(0, 1, z)` with `z^2 = 5p + 1`
-or `(1, 0, z)` with `z^2 = n + 1`.
+**Solutions of $n^x + (5p)^y = z^2$ for $n \equiv 3, 27 \pmod{60}$ and $p \equiv 7 \pmod{12}$.**
+Let $p$ be a prime with $p \equiv 7 \pmod{12}$, and let $n$ be a natural number with
+$n \equiv 3 \pmod{60}$ or $n \equiv 27 \pmod{60}$ such that $\gcd(n, p) = 1$ and
+$\gcd(n, 5p - 1) = 1$. For natural numbers $x$, $y$, $z$, $n^x + (5p)^y = z^2$ holds if and
+only if either $x = 0$, $y = 1$ and $z^2 = 5p + 1$, or $x = 1$, $y = 0$ and $z^2 = n + 1$.
 
 ## Depends on
 

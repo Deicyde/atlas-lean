@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_succ_imp
 ---
 
-# Lemma 3
+# Least absolute inverses propagate down the Euclidean sequence
 
-**Lemma 3**: if for some `j ∈ {1, …, N}` the inverse
-`s_{j+1}` is the least absolute inverse of `r_{j+1}` modulo
-`r_j`, then `s_j` is the least absolute inverse of `r_j` modulo
-`r_{j-1}`.
+**Least absolute inverses propagate down the Euclidean sequence.** Let $r_0, r_1, \ldots$ be
+natural numbers, $s_0, s_1, \ldots$ integers and $N \ge 1$ such that $(r, s, N)$ is Euclidean
+switching data: $r_0 > r_1 > \cdots > r_{N+1} = 1$ are the successive remainders of the Euclidean
+algorithm, $s_{N+1} = 1$, and $s_{i+1} r_{i-1} + s_i r_i = 1$ for $1 \le i \le N$. If
+$1 \le j \le N$ and $s_{j+1}$ is the least absolute inverse of $r_{j+1}$ modulo $r_j$, then $s_j$
+is the least absolute inverse of $r_j$ modulo $r_{j-1}$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
-- [Is Least Abs Inverse](is-least-abs-inverse.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
+- [Least absolute inverse](is-least-abs-inverse.md)
 
 ## Sources
 

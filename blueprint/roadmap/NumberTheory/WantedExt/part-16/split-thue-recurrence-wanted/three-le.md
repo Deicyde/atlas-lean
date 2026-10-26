@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsSplitThueRecurrenceFamily.three_le
 ---
 
-# Three le
+# A split Thue recurrence family has at least three sequences
 
-The hypotheses force `d ≥ 3`.
+**A split Thue recurrence family has at least three sequences.** If $(d, G, \gamma, \delta)$
+is a split Thue recurrence family, then $d \ge 3$.
 
 ## Depends on
 
-- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
+- [Split Thue recurrence family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.bFreeIndicator_apply
 ---
 
-# B Free Indicator apply
+# Values of the $B_\kappa$-free indicator
 
-Unfolding lemma for `bFreeIndicator`.
+**Values of the $B_\kappa$-free indicator.** Let $\kappa$ be a function from the natural
+numbers to the natural numbers. For every natural number $n$, the indicator $q_{B_\kappa}$ of
+$B_\kappa$-free integers satisfies $q_{B_\kappa}(n) = 1$ if $n \ne 0$ and no $p^{\kappa(p)}$ with
+$p$ prime divides $n$, and $q_{B_\kappa}(n) = 0$ otherwise.
 
 ## Depends on
 
-- [B Free Indicator](b-free-indicator.md)
+- [Indicator of $B_\kappa$-free integers](b-free-indicator.md)
 
 ## Sources
 

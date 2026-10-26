@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.bzBlockIndex_cons
 ---
 
-# Bz Block Index cons
+# Block index of a prepended pair
 
-`bzBlockIndex ((a, b) :: ab) = (a + 1) :: {1}^{b-1} ++ bzBlockIndex ab`.
+**Block index of a prepended pair.** For natural numbers $a, b$ and a list $L$ of pairs of
+natural numbers, the block index of the list obtained by prepending $(a, b)$ to $L$ consists of
+the entry $a + 1$, followed by $b - 1$ entries equal to $1$ (none when $b = 0$), followed by the
+block index of $L$.
 
 ## Depends on
 
-- [Bz Block Index](bz-block-index.md)
+- [Block index of a list of pairs](bz-block-index.md)
 
 ## Sources
 

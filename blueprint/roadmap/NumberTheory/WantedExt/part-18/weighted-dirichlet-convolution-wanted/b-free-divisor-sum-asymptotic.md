@@ -5,21 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.bFree_divisor_sum_asymptotic
 ---
 
-# B Free divisor sum asymptotic
+# Asymptotic for the divisor function summed over $B_\kappa$-free integers
 
-Corollary 2: let `κ` assign to each prime `p` an exponent `κ(p)` with minimum
-`κ_min ≥ 2`. There is a constant `β_κ` such that
-`D̃_{B_κ}(x) = ∑_{n ≤ x, n B_κ-free} τ(n)
-  = (∏_p (1 - (κ(p) + 1)/p^{κ(p)} + κ(p)/p^{κ(p)+1})) x log x + β_κ x + O(x^{η_κ + ε})`
-for every `ε > 0`, with `η_κ = 1/κ_min` for `κ_min = 2, 3` and, for `κ_min ≥ 4`, `η_κ` any
-`η ≥ 1/4` with `Δ(x) = O(x^η)` (`Δ` the Dirichlet divisor error term (10)).
+**Asymptotic for the divisor function summed over $B_\kappa$-free integers.** Let $\kappa$ be
+a function from the natural numbers to the natural numbers and let $K \ge 2$ be the minimum of
+$\kappa(p)$ over the primes $p$: $\kappa(p) \ge K$ for every prime $p$, with equality for some
+prime. Let $q_{B_\kappa}$ be the indicator of $B_\kappa$-free integers, $\tau(n)$ the number of
+positive divisors of $n$, $\gamma$ the Euler–Mascheroni constant and
+$\Delta(x) = \sum_{1 \le n \le x} \tau(n) - x \log x - (2\gamma - 1) x$ the Dirichlet divisor
+error term, and put
 
-`κ` is indexed by primes (paper: `κ_i` for the `i`-th prime); `κ_min` is the parameter `K`,
-attained at some prime.
+$$C_\kappa = \prod_p \Bigl(1 - \frac{\kappa(p) + 1}{p^{\kappa(p)}} +
+\frac{\kappa(p)}{p^{\kappa(p)+1}}\Bigr),$$
+
+the product running over all primes $p$. Then there is a real constant $\beta_\kappa$ such that
+$E(x) = \sum_{1 \le n \le x} q_{B_\kappa}(n) \tau(n) - C_\kappa x \log x - \beta_\kappa x$
+satisfies the following as $x \to \infty$. If $K \le 3$, then $E(x) = O(x^{1/K + \varepsilon})$
+for every $\varepsilon > 0$. If $K \ge 4$, then for every real $\eta \ge 1/4$ with
+$\Delta(x) = O(x^\eta)$, $E(x) = O(x^{\eta + \varepsilon})$ for every $\varepsilon > 0$.
 
 ## Depends on
 
-- [B Free Indicator](b-free-indicator.md)
+- [Indicator of $B_\kappa$-free integers](b-free-indicator.md)
 
 ## Sources
 

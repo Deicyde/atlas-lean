@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.not_exists_binary_prime_walk_appending_at_most_two_digits
 ---
 
-# Not exists binary prime walk appending at most two digits
+# No binary prime walk to infinity in steps of one or two digits
 
-One cannot walk to infinity on primes in base `2` by appending one or two binary digits at a
-time on the right: there is no infinite sequence of primes in which each term is
-`2ⁿ · (previous term) + k` with `n ∈ {1, 2}` and `k < 2ⁿ`. The appended blocks are the paper's
-`0, 1, 00, 01, 10, 11` (leading zeros in a block allowed); the starting prime is arbitrary.
+**No binary prime walk to infinity in steps of one or two digits.** There is no sequence of
+primes $p_0, p_1, p_2, \ldots$ such that for every $i \ge 0$ there are $n \in \{1, 2\}$ and a
+natural number $k < 2^n$ with $p_{i+1} = 2^n p_i + k$. That is, starting from any prime, one
+cannot walk to infinity on primes by appending one or two binary digits at a time on the right.
+
+The appended blocks are the paper's $0, 1, 00, 01, 10, 11$ (a block may begin with $0$).
 
 ## Depends on
 

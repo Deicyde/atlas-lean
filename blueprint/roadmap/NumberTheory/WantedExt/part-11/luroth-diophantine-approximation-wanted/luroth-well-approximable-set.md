@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lurothWellApproximableSet
 ---
 
-# Luroth Well Approximable Set
+# Lüroth well approximable numbers
 
-The set `L(ψ)` of Lüroth `ψ`-well approximable numbers: the `x ∈ (0, 1]` with
-`|x - P_n(x)/Q_n(x)| < ψ(Q_n(x))/Q_n(x)` for infinitely many `n`.
+**Lüroth well approximable numbers.** For a function $\psi$ from the natural numbers to the
+reals, $L(\psi)$ is the set of $x \in (0, 1]$ such that $|x - c_n(x)| < \psi(Q_n(x))/Q_n(x)$ for
+infinitely many $n$, where $Q_n(x)$ and $c_n(x)$ are the $n$-th Lüroth denominator and the $n$-th
+Lüroth convergent of the Lüroth digit sequence of $x$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Luroth Convergent](luroth-convergent.md)
-- [Luroth Denominator](luroth-denominator.md)
-- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Lüroth convergents](luroth-convergent.md)
+- [Lüroth denominators](luroth-denominator.md)
+- [Lüroth digits](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Sources
 

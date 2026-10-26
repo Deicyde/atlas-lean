@@ -5,18 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.shiftedFloorResidueCount_eq_sum_floor_sub
 ---
 
-# Shifted Floor Residue Count eq sum floor sub
+# Floor-sum formulas for the shifted floor residue counts
 
-Proposition 25: for `m ≥ 2`, `α, ν ∈ [0, 1)` and `nα ≥ ν`,
-`𝓝_{n,α,ν,1,m} = n - ⌊(n-ν)/(1-α)⌋ + ∑_{i ≥ 0} (⌊(n-ν)/(1+im-α)⌋ -
-⌊(n-ν)/(2+im-α)⌋)` and, for `2 ≤ r ≤ m`,
-`𝓝_{n,α,ν,r,m} = ∑_{i ≥ 0} (⌊(n-ν)/(r+im-α)⌋ - ⌊(n-ν)/(r+1+im-α)⌋)`.
-The series over `i ≥ 0` is written as the sum over `i ≤ n`; every omitted
-term vanishes since `r + im - α > n - ν` for `i > n`.
+**Floor-sum formulas for the shifted floor residue counts.** Let $n$ and $m$ be natural
+numbers with $m \ge 2$, and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$,
+$0 \le \nu < 1$ and $\nu \le n\alpha$. For an integer $r$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be
+the number of integers $k$ with $1 \le k \le n$ such that
+$\lfloor (n - \nu)/k + \alpha \rfloor \equiv r \pmod m$. Then
+
+$$\mathcal N_{n,\alpha,\nu,1,m} = n - \Bigl\lfloor \frac{n - \nu}{1 - \alpha} \Bigr\rfloor +
+\sum_{i=0}^{n} \Bigl( \Bigl\lfloor \frac{n - \nu}{1 + im - \alpha} \Bigr\rfloor -
+\Bigl\lfloor \frac{n - \nu}{2 + im - \alpha} \Bigr\rfloor \Bigr),$$
+
+and for every natural number $r$ with $2 \le r \le m$,
+
+$$\mathcal N_{n,\alpha,\nu,r,m} = \sum_{i=0}^{n} \Bigl( \Bigl\lfloor \frac{n - \nu}{r + im - \alpha}
+\Bigr\rfloor - \Bigl\lfloor \frac{n - \nu}{r + 1 + im - \alpha} \Bigr\rfloor \Bigr).$$
+
+The paper sums over all $i \ge 0$; the terms with $i > n$ vanish, because for them every
+denominator exceeds $n - \nu \ge 0$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

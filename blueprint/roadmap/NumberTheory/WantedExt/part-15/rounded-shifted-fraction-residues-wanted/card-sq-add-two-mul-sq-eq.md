@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_sq_add_two_mul_sq_eq
 ---
 
-# Card sq add two mul sq eq
+# Dickson's divisor formula for $x^2 + 2y^2$
 
-Proposition 48 (Dickson, Exercise XXII.1): for `n ≥ 1`, the number of
-pairs `(x, y) ∈ ℤ²` with `x² + 2y² = n` is
-`2 (d_{1,8}(n) + d_{3,8}(n) - d_{5,8}(n) - d_{7,8}(n))`.
+**Dickson's divisor formula for $x^2 + 2y^2$.** For every integer $n \ge 1$, the number of
+pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + 2y^2 = n$ equals
+$2\,(d_1(n) + d_3(n) - d_5(n) - d_7(n))$, where $d_r(n)$ denotes the number of positive divisors
+$d$ of $n$ with $d \equiv r \pmod 8$.
 
 ## Depends on
 

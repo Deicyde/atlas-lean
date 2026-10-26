@@ -5,22 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.lambert_order_sixteen_sine_eq_jacobiThetaOne
 ---
 
-# Lambert order sixteen sine eq jacobi Theta One
+# Sine Lambert series of order sixteen as quotients of theta functions
 
-Lemma 2 of Section 5 (the record's Lemma 2): for `Im τ > 0`, `q = e^{2πiτ}` and
-`|Im z| < π Im τ` (where the series converges and the denominators do not vanish),
-`∑_{n ≥ 1} (qⁿ - q⁷ⁿ - q⁹ⁿ + q¹⁵ⁿ)/(1 - q¹⁶ⁿ) sin 2nz
-  = -θ₁'(0|16τ) θ₁(8πτ|16τ) θ₁(6πτ|16τ) θ₁(2z|16τ)
-    / (4 θ₁(z+πτ|16τ) θ₁(z-πτ|16τ) θ₁(z+7πτ|16τ) θ₁(z-7πτ|16τ))` (59) and
-`∑_{n ≥ 1} (q³ⁿ - q⁵ⁿ - q¹¹ⁿ + q¹³ⁿ)/(1 - q¹⁶ⁿ) sin 2nz
-  = -θ₁'(0|16τ) θ₁(2πτ|16τ) θ₁(8πτ|16τ) θ₁(2z|16τ)
-    / (4 θ₁(z+3πτ|16τ) θ₁(z-3πτ|16τ) θ₁(z+5πτ|16τ) θ₁(z-5πτ|16τ))` (60),
-with `θ₁` the paper's series as the convergence-gated `jacobiThetaOneSine` (`Im (16τ) > 0`)
-and `θ₁'` its `z`-derivative.
+**Sine Lambert series of order sixteen as quotients of theta functions.** Let $\tau$ and $z$
+be complex numbers with $\operatorname{Im} \tau > 0$ and
+$|\operatorname{Im} z| < \pi \operatorname{Im} \tau$, let $q = e^{2 \pi i \tau}$, write
+$\theta(w) = \theta_1(w \mid 16\tau)$ for the Jacobi theta function $\theta_1$, and let $\theta'$
+be the derivative of $\theta$. Then
+
+$$\sum_{n \ge 1} \frac{q^n - q^{7n} - q^{9n} + q^{15n}}{1 - q^{16n}} \sin 2nz =
+\frac{-\theta'(0) \theta(8\pi\tau) \theta(6\pi\tau) \theta(2z)}
+{4 \theta(z + \pi\tau) \theta(z - \pi\tau) \theta(z + 7\pi\tau) \theta(z - 7\pi\tau)}$$
+
+and
+
+$$\sum_{n \ge 1} \frac{q^{3n} - q^{5n} - q^{11n} + q^{13n}}{1 - q^{16n}} \sin 2nz =
+\frac{-\theta'(0) \theta(2\pi\tau) \theta(8\pi\tau) \theta(2z)}
+{4 \theta(z + 3\pi\tau) \theta(z - 3\pi\tau) \theta(z + 5\pi\tau) \theta(z - 5\pi\tau)}.$$
+
+Under these hypotheses the series converge and the denominators do not vanish.
 
 ## Depends on
 
-- [Jacobi Theta One Sine](jacobi-theta-one-sine.md)
+- [Jacobi theta function $\theta_1$](jacobi-theta-one-sine.md)
 
 ## Sources
 

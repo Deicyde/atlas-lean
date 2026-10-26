@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.zeckCST_one
 ---
 
-# Zeck CST one
+# $\mathrm{CST}_1$ is empty for every positive shift
 
-`CST_1 = ∅` for `r ≥ 1`.
+**$\mathrm{CST}_1$ is empty for every positive shift.** For every $r \ge 1$, the set
+$\mathrm{CST}_1$ for the shift $r$ is empty.
 
 ## Depends on
 
-- [Zeck CST](zeck-cst.md)
+- [The sets $\mathrm{CST}_k$](zeck-cst.md)
 
 ## Proof depends on
 
-- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
+- [Prefix value of a digit sequence](zeck-adic-prefix-value.md)
 
 ## Sources
 

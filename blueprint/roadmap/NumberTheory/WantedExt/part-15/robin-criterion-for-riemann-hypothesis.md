@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.robin_criterion_for_riemann_hypothesis
 ---
 
-# Robin Criterion Wanted
+# Robin's criterion for the Riemann hypothesis
 
-Robin's criterion for the Riemann hypothesis: `RiemannHypothesis` holds iff
-`σ(n) < e ^ γ * n * log (log n)` for every natural `n > 5040`, where `σ`
-is the sum of positive divisors (`ArithmeticFunction.sigma 1`) and `γ` is
-Euler's constant.
+**Robin's criterion for the Riemann hypothesis.** The Riemann hypothesis holds if and only if
+$\sigma(n) < e^{\gamma}\, n \log\log n$ for every natural number $n > 5040$, where $\sigma(n)$ is
+the sum of the positive divisors of $n$, $\gamma$ is the Euler–Mascheroni constant, and
+$\log$ is the natural logarithm.
 
 ## Depends on
 

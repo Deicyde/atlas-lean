@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rFibonacciPolynomial_succ_of_lt
 ---
 
-# R Fibonacci Polynomial succ of lt
+# Initial values of the $r$-Fibonacci polynomials
 
-`U_{n+1} = x^n` for `n < r`.
+**Initial values of the $r$-Fibonacci polynomials.** Let $R$ be a commutative semiring, let
+$x, y \in R$, and let $n < r$ be natural numbers. Then the $r$-Fibonacci polynomial
+$U^{(r)}_{n+1}(x, y)$ equals $x^n$.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

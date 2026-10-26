@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.log_log_primorial_div_prime_gt
 ---
 
-# Log log primorial div prime gt
+# Lower bound for the double logarithm of a primorial divided by one of its primes
 
-For `k ≥ 99` and `1 ≤ j ≤ k + 1`, with `m = p_{k+1}# / p_j`,
-`log log m > log((k+1)(log(k+1) + log log(k+1) - 1) log 2.51 - log p_j)`.
+**Lower bound for the double logarithm of a primorial divided by one of its primes.** Let
+$p_\ell$ be the $\ell$-th prime ($p_1 = 2$) and $\log$ the natural logarithm. For natural numbers
+$k \ge 99$ and $j$ with $1 \le j \le k + 1$, let $m = p_1 p_2 \cdots p_{k+1} / p_j$. Then
+
+$$\log \log m > \log\bigl((k+1)(\log(k+1) + \log \log(k+1) - 1) \log 2.51 - \log p_j\bigr).$$
 
 ## Depends on
 

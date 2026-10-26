@@ -5,11 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.nagell_ljunggren_cube_of_five_dvd
 ---
 
-# Nagell ljunggren cube of five dvd
+# The Nagell–Ljunggren cube equation when $5 \mid n$
 
-The Nagell–Ljunggren equation `(xⁿ - 1)/(x - 1) = y³` (Equation (1) with `q = 3`) has no
-solution with `5 ∣ n`. Ranges as in `nagell_ljunggren_exponent_structure`: `x, y ≥ 2`,
-`n ≥ 3`.
+**The Nagell–Ljunggren cube equation when $5 \mid n$.** There are no natural numbers
+$x \ge 2$, $y \ge 2$ and $n \ge 3$ with $5 \mid n$ such that $(x^n - 1)/(x - 1) = y^3$.
 
 ## Depends on
 

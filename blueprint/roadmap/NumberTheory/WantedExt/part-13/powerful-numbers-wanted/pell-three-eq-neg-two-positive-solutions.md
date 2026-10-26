@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowerfulNumbersWanted.pell_three_eq_neg_two_positive_solutions_iff_and_recurrence
 ---
 
-# Lemma 6
+# Positive solutions of $x^2 - 3y^2 = -2$
 
-**Lemma 6**: the positive integer solutions of
-`x^2 - 3*y^2 = -2` are exactly the coordinates of
-`(1 + √3)(2 + √3)^k` for `k ≥ 0`.  In this zero-based indexing,
-the first two coordinate pairs are `(1, 1)` and `(5, 3)`, and both
-coordinates satisfy `uₖ₊₂ = 4*uₖ₊₁ - uₖ`.
+**Positive solutions of $x^2 - 3y^2 = -2$.** For integers $x$ and $y$, we have $x > 0$,
+$y > 0$ and $x^2 - 3y^2 = -2$ if and only if $x + y\sqrt{3} = (1 + \sqrt{3})(2 + \sqrt{3})^k$
+in $\mathbb{Z}[\sqrt{3}]$ for some integer $k \ge 0$. Writing
+$(1 + \sqrt{3})(2 + \sqrt{3})^k = u_k + v_k \sqrt{3}$ for $k \ge 0$, we have
+$(u_0, v_0) = (1, 1)$, $(u_1, v_1) = (5, 3)$, and $u_{k+2} = 4u_{k+1} - u_k$ and
+$v_{k+2} = 4v_{k+1} - v_k$ for every $k \ge 0$.
 
 ## Depends on
 

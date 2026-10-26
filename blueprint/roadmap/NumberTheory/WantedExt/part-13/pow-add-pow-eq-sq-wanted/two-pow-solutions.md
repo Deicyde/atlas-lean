@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.two_pow_solutions
 ---
 
-# Theorem 3
+# Solutions of $2^x + (5p)^y = z^2$ for $p \equiv 3 \pmod 4$
 
-**Theorem 3**: if `n = 2` and `p ≡ 3 (mod 4)`,
-then `(x, y, z)` is a nonnegative integer solution
-of Equation (1) if and only if it is `(3, 0, 3)`,
-or `(6, 2, 17)` with `p = 3`, or `(0, 1, z)` with
-`z^2 = 5p + 1`.
+**Solutions of $2^x + (5p)^y = z^2$ for $p \equiv 3 \pmod 4$.** Let $p$ be a prime with
+$p \equiv 3 \pmod 4$. For natural numbers $x$, $y$, $z$, $2^x + (5p)^y = z^2$ holds if and
+only if $(x, y, z) = (3, 0, 3)$, or $p = 3$ and $(x, y, z) = (6, 2, 17)$, or $x = 0$, $y = 1$
+and $z^2 = 5p + 1$.
 
 ## Depends on
 

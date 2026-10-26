@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_sqrt_gcd_div_norm_one_sub_additive_character
 ---
 
-# Sum sqrt gcd div norm one sub additive character
+# Gcd-weighted sum of reciprocal distances from roots of unity to 1
 
-Lemma 7: for `n ≥ 2` and `d ∣ n`,
-`∑_{1 ≤ k ≤ n-1, (n/d) ∤ k} (n, k)^{1/2} / |1 - e_{n/d}(-k)| ≤ (1/2) n^{1/2} σ_{1/2}(n) log(e n)`,
-where `σ_{1/2}(n) = ∑_{δ ∣ n} √δ`.
+**Gcd-weighted sum of reciprocal distances from roots of unity to 1.** Let $n \ge 2$, let $d$
+be a divisor of $n$, and write $e_m(x) = e^{2\pi i x / m}$. Then
+
+$$\sum_{1 \le k \le n-1,\ (n/d) \nmid k} \frac{\sqrt{\gcd(n, k)}}{|1 - e_{n/d}(-k)|} \le
+\frac{1}{2} \sqrt{n}\, \sigma_{1/2}(n) \log(e n),$$
+
+where $\sigma_{1/2}(n) = \sum_{\delta \mid n} \sqrt{\delta}$.
 
 ## Depends on
 

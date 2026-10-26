@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.prod_succ_div_prime_le
 ---
 
-# Prod succ div prime le
+# Mertens-type bound for a product over the first primes with one prime omitted
 
-With `p_ℓ` the `ℓ`-th prime (`p₁ = 2`), `1 ≤ j ≤ k + 1` and
-`A(k) = ∏_{ℓ ≤ k + 1, ℓ ≠ j} (p_ℓ + 1)/p_ℓ` (the setup of Section 2.1),
-`A(k) ≤ log(p_{k+1}) exp(c₁ - 1/p_j + 5/log p_{k+1})` for every `k`, where `c₁` is the
-Meissel–Mertens constant (`≈ 0.261497`, the constant of Tenenbaum's Theorem 1.10 cited for it).
+**Mertens-type bound for a product over the first primes with one prime omitted.** Let
+$p_\ell$ be the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm and $B \approx 0.2615$
+the Meissel–Mertens constant. For all natural numbers $k$ and $j$ with $1 \le j \le k + 1$,
+
+$$\prod_{1 \le \ell \le k+1,\ \ell \ne j} \frac{p_\ell + 1}{p_\ell} \le
+\log(p_{k+1}) \exp\Bigl(B - \frac{1}{p_j} + \frac{5}{\log p_{k+1}}\Bigr).$$
+
+In the source this constant is called $c_1$, cited there from Tenenbaum's Theorem 1.10.
 
 ## Depends on
 

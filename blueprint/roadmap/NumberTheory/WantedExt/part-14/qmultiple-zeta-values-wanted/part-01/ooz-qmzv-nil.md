@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.oozQMZV_nil
 ---
 
-# Ooz QMZV nil
+# The OOZ-qMZV of the empty index
 
-`ζ_q^OOZ(∅) = 1`.
+**The OOZ-qMZV of the empty index.** The Ohno–Okuda–Zudilin qMZV of the empty index is $1$:
+$\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
 
 ## Depends on
 
-- [Ooz QMZV](ooz-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](ooz-qmzv.md)
 
 ## Sources
 

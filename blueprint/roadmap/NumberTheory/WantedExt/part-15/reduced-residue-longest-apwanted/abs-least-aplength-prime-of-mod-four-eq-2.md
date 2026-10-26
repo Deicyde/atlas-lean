@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength_prime_of_mod_four_eq_three
 ---
 
-# Abs Least APLength prime of mod four eq three
+# Longest progressions of absolute least residues: primes congruent to 3 mod 4
 
-Theorem 1, prime case `p ≡ 3 (mod 4)`: `g(p) = (p + 1) / 2`.
+**Longest progressions of absolute least residues: primes congruent to 3 mod 4.** For a
+prime $p \equiv 3 \pmod 4$, the length $g(p)$ of the longest arithmetic progression in the
+absolute least reduced residue system modulo $p$ is $(p + 1)/2$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Sources
 

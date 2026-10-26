@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.rogersDilog_hoorfarQi_series
 ---
 
-# Rogers Dilog hoorfar Qi series
+# Hoorfar–Qi dilogarithm series
 
-Hoorfar and Qi's two-parameter series: for positive integers `p, q` and `0 < θ, β < 1`,
-`∑_{n ≥ 0} L(β(1 - θ^p)(1 - θ^q)θⁿ / ((1 - βθ^{n+p})(1 - βθ^{n+q})))
-  = ∑_{n < q} L(β(1 - θ^p)θⁿ/(1 - βθ^{n+p})) + ∑_{n < p} L((1 - θ^q)/(1 - βθ^{n+q}))
-    - p L(1 - θ^q)`.
+**Hoorfar–Qi dilogarithm series.** Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
+\frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on $[0, 1]$ (with $\log 0 = 0$). For
+positive integers $p, q$ and real numbers $\theta, \beta$ with $0 < \theta < 1$ and
+$0 < \beta < 1$,
+
+$$
+\sum_{n \ge 0} L\left(\frac{\beta(1 - \theta^p)(1 - \theta^q)\theta^n}
+{(1 - \beta\theta^{n+p})(1 - \beta\theta^{n+q})}\right) =
+\sum_{n=0}^{q-1} L\left(\frac{\beta(1 - \theta^p)\theta^n}{1 - \beta\theta^{n+p}}\right) +
+\sum_{n=0}^{p-1} L\left(\frac{1 - \theta^q}{1 - \beta\theta^{n+q}}\right) - p\,L(1 - \theta^q).
+$$
 
 ## Depends on
 

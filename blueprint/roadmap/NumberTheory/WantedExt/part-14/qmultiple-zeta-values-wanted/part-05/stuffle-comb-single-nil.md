@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.stuffleComb_single_nil
 ---
 
-# Stuffle Comb single nil
+# The empty word is a left unit for the stuffle product
 
-`𝟏 ∗ B = B`.
+**The empty word is a left unit for the stuffle product.** For every word $b$ in letters
+$z_k$ ($k$ a natural number), the stuffle product of the empty word $\mathbf{1}$ with $b$ is
+$b$: $\mathbf{1} \ast b = b$, as formal $\mathbb{Q}$-linear combinations of words.
 
 ## Depends on
 
-- [Stuffle Comb](stuffle-comb.md)
+- [Stuffle product of formal linear combinations of words](stuffle-comb.md)
 
 ## Proof depends on
 
-- [Quasi Shuffle](../part-03/quasi-shuffle.md)
-- [Quasi Shuffle nil left](../part-03/quasi-shuffle-nil-left.md)
+- [Quasi-shuffle product](../part-03/quasi-shuffle.md)
+- [The empty word is a left unit for the quasi-shuffle product](../part-03/quasi-shuffle-nil-left.md)
 
 ## Sources
 

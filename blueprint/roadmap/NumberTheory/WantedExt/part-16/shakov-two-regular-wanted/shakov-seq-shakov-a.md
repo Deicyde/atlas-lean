@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ShakovTwoRegularWanted.shakovSeq_shakovA
 ---
 
-# Proposition 9
+# Shakov's sequence takes Fibonacci values along the auxiliary sequence
 
-**Proposition 9**: with `a` as in `shakovA`,
-`s(a(n)) = F_n`, the `n`-th Fibonacci number (the
-paper's `F_n` is `Nat.fib (n - 1)`; `a(n)` is a
-positive integer, written `Int.toNat` here).
+**Shakov's sequence takes Fibonacci values along the auxiliary sequence.** Let $s$ be
+Shakov's $2$-regular sequence, let $a$ be Shakov's auxiliary sequence, and let $F_k$ denote the
+$k$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 1$,
+$s(\max(a(n), 0)) = F_{n-1}$.
+
+The source shows that $a(n)$ is a positive integer and numbers the Fibonacci numbers so that
+this reads $s(a(n)) = F_n$.
 
 ## Depends on
 
-- [Shakov A](shakov-a.md)
-- [Shakov Seq](shakov-seq.md)
+- [Shakov's auxiliary sequence](shakov-a.md)
+- [Shakov's $2$-regular sequence](shakov-seq.md)
 
 ## Sources
 

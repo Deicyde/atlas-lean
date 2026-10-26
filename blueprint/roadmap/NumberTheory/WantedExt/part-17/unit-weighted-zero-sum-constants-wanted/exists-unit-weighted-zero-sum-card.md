@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_unitWeightedZeroSum_card
 ---
 
-# Exists unit Weighted Zero Sum card
+# Unit-weighted zero sums of even length in $\mathbb{Z}_n$
 
-Theorem 5.5: for `n ≥ 1` and even `m ≥ 2^{Ω(n)}`, every sequence of length `m + Ω(n)` in
-`ℤ_n` has a `U(n)`-weighted zero-sum subsequence of length `m`.
+**Unit-weighted zero sums of even length in $\mathbb{Z}_n$.** Let $n \ge 1$, let $\Omega(n)$ be
+the number of prime factors of $n$ counted with multiplicity, and let $m$ be even with
+$2^{\Omega(n)} \le m$. Then every sequence $x_1, \dots, x_{m + \Omega(n)}$ in
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ has a unit-weighted zero-sum subsequence of length $m$:
+there are a set $I \subseteq \{1, \dots, m + \Omega(n)\}$ with $|I| = m$ and units $a_i$ of
+$\mathbb{Z}_n$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.
 
 ## Depends on
 

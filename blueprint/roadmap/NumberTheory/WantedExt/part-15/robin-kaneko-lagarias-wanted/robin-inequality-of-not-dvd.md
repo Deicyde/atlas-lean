@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.robin_inequality_of_not_dvd
 ---
 
-# Robin inequality of not dvd
+# Robin's inequality for $n > 5040$ when one of $2, 3, 5$ does not divide $n$
 
-Robin's inequality `σ(n) < e^γ n log log n` holds for every `n > 5040` not divisible by one
-of `p_1, p_2, p_3 = 2, 3, 5`. (The paper prints Robin's inequality as `σ(n) < e^γ log log n`,
-dropping the factor `n`; the standard form, which the paper uses in Section 2, is formalized.)
+**Robin's inequality for $n > 5040$ when one of $2, 3, 5$ does not divide $n$.** Let
+$\sigma(n)$ denote the sum of the divisors of $n$ and $\gamma$ the Euler–Mascheroni constant.
+Let $p \in \{2, 3, 5\}$ and let $n > 5040$ be a natural number not divisible by $p$. Then Robin's
+inequality $\sigma(n) < e^{\gamma} n \log \log n$ holds.
+
+The paper prints Robin's inequality as $\sigma(n) < e^{\gamma} \log \log n$, dropping the factor
+$n$; the standard form, which the paper uses in Section 2, is formalized.
 
 ## Depends on
 

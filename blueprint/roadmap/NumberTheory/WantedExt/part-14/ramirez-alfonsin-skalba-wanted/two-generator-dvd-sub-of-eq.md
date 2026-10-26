@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.twoGenerator_dvd_sub_of_eq
 ---
 
-# Lemma 1
+# Two representations by coprime generators
 
-**Lemma 1.** If `c x + d y = c x' + d y'` with `x, y, x', y' ∈ ℕ` and `c, d`
-coprime, then `c ∣ y - y'` and `d ∣ x - x'`.
+**Two representations by coprime generators.** Let $c$ and $d$ be coprime natural numbers.
+If natural numbers $x, y, x', y'$ satisfy $cx + dy = cx' + dy'$, then $c$ divides $y - y'$ and
+$d$ divides $x - x'$ in the integers.
 
-The paper's standing assumption `1 < c < d` is not needed and is dropped.
+The paper's standing assumption $1 < c < d$ is not needed and is dropped.
 
 ## Depends on
 

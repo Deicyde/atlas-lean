@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_consecutive_orthogonal
 ---
 
-# Exists consecutive orthogonal
+# A block of consecutive coordinates orthogonal to $a$ vectors of $\mathbb{Z}_2^m$
 
-Lemma 3.2: if `2^a ≤ m` and `v_1, …, v_a ∈ ℤ_2^m`, some nonzero `w ∈ ℤ_2^m` whose ones
-occupy consecutive positions `s, …, t` satisfies `w · v_i = 0` for all `i`.
+**A block of consecutive coordinates orthogonal to $a$ vectors of $\mathbb{Z}_2^m$.** Let
+$\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$, let $2^a \le m$ and let
+$v_1, \dots, v_a \in \mathbb{Z}_2^m$, with coordinates indexed by $\{0, \dots, m - 1\}$. Then there
+are indices $s \le t$ in $\{0, \dots, m - 1\}$ such that $\sum_{j = s}^{t} (v_i)_j = 0$ in
+$\mathbb{Z}_2$ for every $i$; that is, the nonzero vector whose ones occupy exactly the positions
+$s, \dots, t$ is orthogonal to every $v_i$.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pedNineEighteen_congruences_mod_nine_twentySeven
 ---
 
-# Ped Nine Eighteen congruences mod nine twenty Seven
+# Congruences modulo 9 and 27 for (9, 18)-overpartitions with even parts distinct
 
-Congruences modulo `9` and `27` for `ped_{9,18}`: for all `n ≥ 0`,
-`ped_{9,18}(27n + 16) ≡ ped_{9,18}(27n + 25) ≡ 0 (mod 9)` and
-`ped_{9,18}(243n + 142) ≡ ped_{9,18}(243n + 223) ≡ ped_{9,18}(729n + 547) ≡ 0 (mod 27)`.
+**Congruences modulo 9 and 27 for [9, 18]-overpartitions with even parts distinct.** Let
+$\mathrm{ped}_{9,18}(n)$ be the number of $[9, 18]$-overpartitions of $n$ with even parts
+distinct. For every $n \ge 0$, $\mathrm{ped}_{9,18}(27n + 16)$ and $\mathrm{ped}_{9,18}(27n + 25)$
+are divisible by $9$, and $\mathrm{ped}_{9,18}(243n + 142)$, $\mathrm{ped}_{9,18}(243n + 223)$ and
+$\mathrm{ped}_{9,18}(729n + 547)$ are divisible by $27$.
 
 ## Depends on
 
-- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [The partition function $\mathrm{ped}_{9,18}$](ped-nine-eighteen.md)
 
 ## Sources
 

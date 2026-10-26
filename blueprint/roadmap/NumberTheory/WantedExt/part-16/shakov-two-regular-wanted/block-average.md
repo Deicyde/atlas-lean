@@ -5,15 +5,21 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ShakovTwoRegularWanted.block_average
 ---
 
-# Proposition 7
+# Block averages of Shakov's sequence
 
-**Proposition 7**:
-`(1 / 2^n) ∑_{2^n ≤ t < 2^(n+1)} s(t)
-  = ((5 + √17)^n - (5 - √17)^n) / (2^(2n-1) √17)`.
+**Block averages of Shakov's sequence.** Let $s$ be Shakov's $2$-regular sequence.
+For every natural number $n$,
+
+$$
+\frac{1}{2^n} \sum_{2^n \le t < 2^{n+1}} s(t) =
+\frac{(5 + \sqrt{17})^n - (5 - \sqrt{17})^n}{2^{2n-1} \sqrt{17}},
+$$
+
+where the exponent $2n - 1$ is read as $0$ when $n = 0$ (both sides are then $0$).
 
 ## Depends on
 
-- [Shakov Seq](shakov-seq.md)
+- [Shakov's $2$-regular sequence](shakov-seq.md)
 
 ## Sources
 

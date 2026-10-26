@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.vonMangoldt_sum_ellNumericalSemigroup_asymptotic
 ---
 
-# Proposition 1
+# Weighted count of primes in the $\ell$-numerical semigroup
 
-**Proposition 1.** For each `ℓ`, the weighted count
-`ψ_{ℓ,c,d} = ∑ Λ(n)` over `ℓ c d < n ≤ g_ℓ(c, d)` of the form
-`n = ℓ c d + c x₀ + d y₀` (`0 ≤ x₀ ≤ d`, `0 ≤ y₀ ≤ c`) satisfies
-`ψ_{ℓ,c,d} ∼ g₀(c, d) / 2` as `c → ∞`, uniformly over coprime `d > c`.
+**Weighted count of primes in the $\ell$-numerical semigroup.** For every natural number
+$\ell$ and every $\varepsilon > 0$ there is a natural number $C$ such that the following holds
+for all coprime natural numbers $c$ and $d$ with $C \le c < d$. For a natural number $k$ put
+$g_k(c, d) = (k + 1)cd - c - d$, so that $g_0(c, d) = cd - c - d$, and let $\psi_{\ell,c,d}$ be
+the sum of the von Mangoldt function $\Lambda(n)$ over the natural numbers $n$ with
+$\ell cd < n \le g_\ell(c, d)$ of the form $n = \ell cd + cx_0 + dy_0$ for some natural numbers
+$x_0 \le d$ and $y_0 \le c$. Then
 
-The asymptotic is stated with explicit `ε` and a threshold `C` for `c`.
+$$
+\left|\psi_{\ell,c,d} - \frac{g_0(c, d)}{2}\right| < \varepsilon \, \frac{g_0(c, d)}{2}.
+$$
+
+That is, $\psi_{\ell,c,d} \sim g_0(c, d)/2$ as $c \to \infty$, uniformly over coprime $d > c$.
 
 ## Depends on
 

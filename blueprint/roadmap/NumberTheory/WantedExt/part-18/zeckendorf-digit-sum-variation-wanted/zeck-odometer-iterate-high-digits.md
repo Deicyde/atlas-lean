@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer_iterate_high_digits
 ---
 
-# Zeck Odometer iterate high digits
+# Adding a small $r$ leaves the high digits unchanged
 
-If `r < F_{ℓ+1}` (`ℓ ≥ 2`) and `x_{ℓ+2} = x_{ℓ+3} = 0`, then `(x + r)_k = x_k` for all
-`k ≥ ℓ + 3`.
+**Adding a small $r$ leaves the high digits unchanged.** Write $F_j$ for the Fibonacci
+numbers ($F_1 = F_2 = 1$). Let $\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$ be the set of
+Zeckendorf-adic integers (sequences with $x_0 = x_1 = 0$ and no two consecutive ones), and write
+$x + r = T^r(x)$ for the $r$-th iterate of the Zeckendorf odometer $T$. Let $x \in \mathbb{X}$,
+$\ell \ge 2$ and $r < F_{\ell+1}$, and suppose that $x_{\ell+2} = x_{\ell+3} = 0$. Then
+$(x + r)_k = x_k$ for every $k \ge \ell + 3$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

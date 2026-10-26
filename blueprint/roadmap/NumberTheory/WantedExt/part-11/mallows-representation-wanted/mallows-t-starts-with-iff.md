@@ -5,26 +5,38 @@ statement: formalized
 lean: MetaMathlibExt.mallowsT_startsWith_iff
 ---
 
-# Mallows T starts With iff
+# Blocks of $T(Q(\mathrm{SB}(\alpha)))$ and of $Q(\mathrm{SB}(\alpha))$
 
-Let `u` be a finite word over `{L, R}` such that the last letter of `Q̇^X(u)` (computed by
-`List.scanl mallowsQStep X u`) is `O_L` or `O_R`. Then `T(Q(SB(α)))` from position `i₀` starts
-with `Ṫ(Q̇^X(u))` and `Q_{o(i₀)}(SB(α)) = X` iff the block of `Q(SB(α))` from `o(i₀)` of length
-`ℓ + 1` equals `Q̇^X(u)`. Domain extension: the paper assumes `X ∈ {O_L, O_R}` and `ℓ ≥ 1`; for
-even `X` both sides are false (`Q_{o(i₀)}` is odd), and for `ℓ = 0` both sides say
-`Q_{o(i₀)} = X`.
+**Blocks of $T(Q(\mathrm{SB}(\alpha)))$ and of $Q(\mathrm{SB}(\alpha))$.** Let $X$ be one of
+the letters $O_L, E_R, O_R, E_L$, let $u = u_1 \cdots u_\ell$ be a finite word over $\{L, R\}$,
+and let $\dot Q^X(u) = \langle X_0, X_1, \dots, X_\ell \rangle$ be the word with $X_0 = X$ and
+$X_k = \delta(X_{k-1}, u_k)$ for $1 \le k \le \ell$, where $\delta$ is the transition rule that
+defines the map $Q$ from sequences over $\{L, R\}$ to sequences over $\{O_L, E_R, O_R, E_L\}$.
+Assume that $X_\ell$ is $O_L$ or $O_R$, and let $n$ be the length of the word
+$\dot T(\dot Q^X(u))$, where $\dot T$ is the finite version of the map $T$ from sequences over
+$\{O_L, E_R, O_R, E_L\}$ to sequences $T(x) = \langle T_1(x), T_2(x), \dots \rangle$ over
+$\{L, M, R\}$. Let $\alpha$ be an irrational number with $0 < \alpha < 1$, let
+$\mathrm{SB}(\alpha)$ be its Stern–Brocot representation, write
+$x = Q(\mathrm{SB}(\alpha)) = \langle x_1, x_2, \dots \rangle$, let $o(1) < o(2) < \cdots$ be the
+positions $j$ with $x_j \in \{O_L, O_R\}$, and let $i_0 \ge 1$. Then the $n$ letters
+$T_{i_0}(x), \dots, T_{i_0 + n - 1}(x)$ form the word $\dot T(\dot Q^X(u))$ and $x_{o(i_0)} = X$
+if and only if the $\ell + 1$ letters $x_{o(i_0)}, x_{o(i_0) + 1}, \dots, x_{o(i_0) + \ell}$ form
+the word $\dot Q^X(u)$.
+
+The source assumes $X \in \{O_L, O_R\}$ and $\ell \ge 1$. For $X \in \{E_R, E_L\}$ both sides are
+false, since $x_{o(i_0)}$ is $O_L$ or $O_R$; for $\ell = 0$ both sides say $x_{o(i_0)} = X$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Mallows Odd Index](mallows-odd-index.md)
-- [Mallows Q](mallows-q.md)
-- [Mallows QStep](mallows-qstep.md)
-- [Mallows T](mallows-t.md)
-- [Mallows TFin](mallows-tfin.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Odd positions of a parity sequence](mallows-odd-index.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [Transition rule of the parity sequence](mallows-qstep.md)
+- [The map $T$](mallows-t.md)
+- [The finite version $\dot T$ of $T$](mallows-tfin.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

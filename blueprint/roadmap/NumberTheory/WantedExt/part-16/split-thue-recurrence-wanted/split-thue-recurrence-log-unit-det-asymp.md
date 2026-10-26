@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.splitThue_recurrence_logUnitDet_asymptotic
 ---
 
-# Split Thue recurrence log Unit Det asymptotic
+# Determinants of logarithms in a split Thue family
 
-The `k × k` matrix `B_k = (log η_j⁽ⁱ⁾)_{i, j ≤ k}`, `η_j⁽ⁱ⁾ = α⁽ⁱ⁾ - G j n`, has
-`det B_k = Θ(n ^ k)` for every `1 ≤ k ≤ d - 1`.
+**Determinants of logarithms in a split Thue family.** Let $(d, G, \gamma, \delta)$ be a
+split Thue recurrence family, let $\alpha_i(n)$ ($i, n \in \mathbb{N}$) be reals for which there
+is $N$ such that for all $n \ge N$ and $1 \le i \le d$,
+$\prod_{l=1}^{d} (\alpha_i(n) - G_l(n)) = 1$ and $|\alpha_i(n) - G_i(n)| < 1$, and let
+$1 \le k \le d - 1$. Let $B_k(n)$ be the $k \times k$ matrix with entries
+$\log |\alpha_i(n) - G_j(n)|$ for $1 \le i, j \le k$, where $\log 0 = 0$. Then there are
+$c_1 > 0$, $c_2 > 0$ and $N'$ such that $c_1 n^k \le |\det B_k(n)| \le c_2 n^k$ for all
+$n \ge N'$.
 
 ## Depends on
 
-- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
+- [Split Thue recurrence family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

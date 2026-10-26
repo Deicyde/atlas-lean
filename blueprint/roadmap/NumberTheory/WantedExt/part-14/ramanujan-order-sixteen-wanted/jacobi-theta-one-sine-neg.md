@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.jacobiThetaOneSine_neg
 ---
 
-# Jacobi Theta One Sine neg
+# Oddness of the Jacobi theta function $\theta_1$
 
-`θ₁(z | τ)` is odd in `z`.
+**Oddness of the Jacobi theta function $\theta_1$.** For all complex numbers $z$ and $\tau$
+with $\operatorname{Im} \tau > 0$, the Jacobi theta function satisfies
+$\theta_1(-z \mid \tau) = -\theta_1(z \mid \tau)$.
 
 ## Depends on
 
-- [Jacobi Theta One Sine](jacobi-theta-one-sine.md)
+- [Jacobi theta function $\theta_1$](jacobi-theta-one-sine.md)
 
 ## Sources
 

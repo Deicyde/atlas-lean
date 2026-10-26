@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_oozQMZV_eq_of_oozToBZ_eq_bzDual
 ---
 
-# Sum ooz QMZV eq of ooz To BZ eq bz Dual
+# Duality for restricted OOZ-qMZVs
 
-Duality for restricted OOZ-qMZVs, `ζ_q^OBZ = ζ_q^OBZ ∘ U⁻¹ ∘ τ ∘ U` on `𝔥⁰`: for an admissible
-index `w` and every combination `x` of admissible words with `U(x) = τ(U(w))`,
-`ζ_q^OBZ(x) = ζ_q^OBZ(w)` (`U⁻¹` exists by `bijOn_linearCombination_oozToBZ`).
+**Duality for restricted OOZ-qMZVs.** Call an index $(k_1, \dots, k_r)$ of natural numbers
+admissible if $k_j \ge 1$ for all $j$ and, when $r \ge 1$, $k_1 \ge 2$. Extend
+$\zeta_q^{\mathrm{OOZ}}$ and the map $U$ linearly to formal $\mathbb{Q}$-linear combinations of
+indices, and let $\tau$ act on such a combination by replacing each index with its BZ dual index.
+Let $w$ be an admissible index and let $x$ be a $\mathbb{Q}$-linear combination of admissible
+indices with $U(x) = \tau(U(w))$. Then $\zeta_q^{\mathrm{OOZ}}(x) = \zeta_q^{\mathrm{OOZ}}(w)$.
+
+Since $U$ is a bijection on combinations of admissible indices (Proposition 12 (i) of the source),
+this is the identity
+$\zeta_q^{\mathrm{OOZ}} = \zeta_q^{\mathrm{OOZ}} \circ U^{-1} \circ \tau \circ U$ on
+admissible indices.
 
 ## Depends on
 
-- [Bz Dual Index](bz-dual-index.md)
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Ooz To BZ](ooz-to-bz.md)
+- [Bradley–Zhao dual index](bz-dual-index.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The map $U$ from OOZ to BZ words](ooz-to-bz.md)
 
 ## Sources
 

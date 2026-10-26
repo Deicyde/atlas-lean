@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.palindromicHalfCopy
 ---
 
-# Palindromic Half Copy
+# Palindromic half copy
 
-`C_b(m)`: the `b`-adic palindrome with the same number of digits as `m` whose upper half
-digits are those of `m`, i.e. `∑_{j ≤ k} a_{max(j, k - j)} b ^ j`.
+**Palindromic half copy.** For natural numbers $b$ and $m \ge 1$, write
+$m = (a_k a_{k-1} \cdots a_0)_b$ for the base-$b$ digits of $m$. The palindromic half copy of $m$
+is $C_b(m) = \sum_{j=0}^{k} a_{\max(j, k - j)} b^j$: the $b$-adic palindrome with the same number
+of digits as $m$ whose upper digits $a_k, \dots, a_{\lceil k/2 \rceil}$ are those of $m$ and whose
+lower digits mirror them. For $m = 0$, which has no digits, $C_b(0) = 0$.
 
 ## Depends on
 

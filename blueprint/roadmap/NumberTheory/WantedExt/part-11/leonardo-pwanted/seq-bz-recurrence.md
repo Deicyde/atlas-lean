@@ -5,18 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.seqBZ_recurrence
 ---
 
-# Proposition 7
+# Recurrence for the sequence $B_p$
 
-**Proposition 7**(ii): for `p ≥ 2` and `n ≥ 1`,
-`B_p(n)` is `B_p(n-1) + B_p(n-p-1)` plus `1` if
-`n ≡ 1 (mod p)`, minus `1` if `n ≡ 2 (mod p)`, else `0`;
-the congruences are read as `n % p = c % p`, so at
-`p = 2` the increment is `+1` for odd `n` and `-1` for
-even `n` (e.g. `B_2(2) - B_2(1) - B_2(-1) = -1`).
+**Recurrence for the sequence $B_p$.** For natural numbers $p \ge 2$ and $n \ge 1$, the
+auxiliary sequence $B_p$ satisfies $B_p(n) = B_p(n-1) + B_p(n-p-1) + \varepsilon$, where
+$\varepsilon = 1$ if $n \equiv 1 \pmod p$, $\varepsilon = -1$ if $n \equiv 2 \pmod p$, and
+$\varepsilon = 0$ otherwise. For $p = 2$ this means $\varepsilon = 1$ for odd $n$ and
+$\varepsilon = -1$ for even $n$.
 
 ## Depends on
 
-- [Seq BZ](seq-bz.md)
+- [The two-sided sequence $B_p$](seq-bz.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.modularProductSum_odd_estimate
 ---
 
-# Modular Product Sum odd estimate
+# Estimate for the modular product sum $S_k(n, m)$ at odd moduli
 
-Theorem 2: for fixed `k ≥ 4` there is `C_k` such that for every odd `n ≥ 3` and every `m`
-coprime to `n`, `|S_k(n, m) - 2^{-k} n^k φ(n)^{k-1}|
-≤ C_k n^{3(k-2)/2} φ(n)³ (log n)^{k-4} (log log n)²`.
+**Estimate for the modular product sum $S_k(n, m)$ at odd moduli.** Let $\varphi$ be Euler's
+totient function and $S_k(n, m)$ the modular product sum. For every natural number $k \ge 4$
+there is a real constant $C_k$ such that for every odd natural number $n \ge 3$ and every natural
+number $m$ with $\gcd(m, n) = 1$,
+
+$$\left| S_k(n, m) - \frac{n^k \varphi(n)^{k-1}}{2^k} \right| \le
+C_k \, n^{3(k-2)/2} \varphi(n)^3 (\log n)^{k-4} (\log \log n)^2.$$
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

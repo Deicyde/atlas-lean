@@ -16,7 +16,7 @@ $T(n) < \log 2 - \frac{11}{50 p_1^2}$.
 
 ## Depends on
 
-- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Primitive non-deficient number](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
 
 ## Sources
 

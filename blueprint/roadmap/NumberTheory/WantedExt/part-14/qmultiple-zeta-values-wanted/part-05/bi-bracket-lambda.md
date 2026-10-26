@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.biBracketLambda
 ---
 
-# Bi Bracket Lambda
+# Bachmann's coefficients
 
-Bachmann's coefficients
-`λ_{a,b}^j = (-1)^{b-1} C(a + b - j - 1, a - j) B_{a+b-j} / (a + b - j)!`, with Mathlib's
-Bernoulli numbers `bernoulli` (`B₁ = -1/2`).
+**Bachmann's coefficients.** For natural numbers $a$, $b$ and $j$,
+
+$$\lambda_{a,b}^j = (-1)^{b-1} \binom{a + b - j - 1}{a - j} \frac{B_{a+b-j}}{(a + b - j)!},$$
+
+where $B_n$ is the $n$-th Bernoulli number with $B_1 = -1/2$ and every subtraction of natural
+numbers is truncated at $0$.
 
 ## Depends on
 

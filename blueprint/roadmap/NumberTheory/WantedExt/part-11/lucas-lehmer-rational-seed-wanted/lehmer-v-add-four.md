@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lehmerV_add_four
 ---
 
-# Lehmer V add four
+# Fourth-order recurrence of Lehmer's companion sequence
 
-The fourth-order recurrence of `V̄_k(R, Q)`.
+**Fourth-order recurrence of Lehmer's companion sequence.** For all integers $R$ and $Q$ and
+every natural number $k$, Lehmer's companion sequence satisfies
+$\bar V_{k+4}(R, Q) = (R - 2Q)\,\bar V_{k+2}(R, Q) - Q^2\,\bar V_k(R, Q)$.
 
 ## Depends on
 
-- [Lehmer V](lehmer-v.md)
+- [Lehmer's companion sequence](lehmer-v.md)
 
 ## Sources
 

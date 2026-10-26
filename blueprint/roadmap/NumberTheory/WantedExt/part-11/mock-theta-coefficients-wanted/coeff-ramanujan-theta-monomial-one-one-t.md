@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.coeff_ramanujanThetaMonomial_one_one_three
 ---
 
-# Coeff ramanujan Theta Monomial one one three
+# First coefficients of Ramanujan's theta function $\psi$
 
-Characteristic values of `ψ(q) = f(q, q^3) = 1 + q + q^3 + ⋯`: the coefficients of `q^0`,
-`q^1`, `q^2`, `q^3` are `1, 1, 0, 1`.
+**First coefficients of Ramanujan's theta function $\psi$.** Let
+$\psi(q) = f(q, q^3) = \sum_{m \in \mathbb{Z}} q^{m(m+1)/2 + 3m(m-1)/2}$, where $f$ is
+Ramanujan's general theta function. The coefficients of $q^0$, $q^1$, $q^2$, $q^3$ in $\psi(q)$
+are $1$, $1$, $0$, $1$.
 
 ## Depends on
 
-- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
+- [Ramanujan's theta function at monomial arguments](ramanujan-theta-monomial.md)
 
 ## Sources
 

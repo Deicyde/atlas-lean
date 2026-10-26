@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.robin_inequality_two_pow_mul_odd
 ---
 
-# Robin inequality two pow mul odd
+# Robin's inequality for $2^k n$ with $n$ odd and large
 
-For `k ≥ 1` and odd `n > b(k) = e^{e^{√(2.51(2^{k+1} - 1)/e^γ)}} / 2^k`, Robin's inequality
-holds for `2^k n`.
+**Robin's inequality for $2^k n$ with $n$ odd and large.** Let $\sigma(N)$ denote the sum of
+the divisors of $N$ and $\gamma$ the Euler–Mascheroni constant. Let $k \ge 1$ and let $n$ be an
+odd natural number with $n > b(k) = e^{e^{\sqrt{2.51(2^{k+1} - 1)/e^{\gamma}}}} / 2^k$. Then
+Robin's inequality $\sigma(2^k n) < e^{\gamma} 2^k n \log \log (2^k n)$ holds.
 
 ## Depends on
 

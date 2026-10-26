@@ -6,15 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli_generating_function
 ---
 
-# Modified Degenerate Bernoulli generating function
+# Generating function of the modified degenerate Bernoulli polynomials
 
-The paper's generating function: with `c = log (1+λ) / λ ≠ 0`,
-`(∑ 𝔅_{n,λ}(x) tⁿ / n!) · (e^{ct} - 1) = t e^{cxt}`, i.e.
-`(∑ 𝔅_{n,λ}(x) tⁿ / n!) · ((1+λ)^{t/λ} - 1) = t (1+λ)^{xt/λ}`.
+**Generating function of the modified degenerate Bernoulli polynomials.** Let $\lambda$ and $x$
+be complex numbers such that $c = \log(1+\lambda)/\lambda$ (principal branch) is nonzero, and write
+$\mathfrak{B}_{n,\lambda}(x)$ for the modified degenerate Bernoulli polynomials. Then, as formal
+power series in $t$ over $\mathbb{C}$,
+
+$$
+\Bigl(\sum_{n \ge 0} \mathfrak{B}_{n,\lambda}(x) \frac{t^n}{n!}\Bigr) \bigl(e^{ct} - 1\bigr) =
+t\, e^{cxt}.
+$$
+
+With $(1+\lambda)^w = e^{w \log(1+\lambda)}$, this says that the series times
+$(1+\lambda)^{t/\lambda} - 1$ equals $t\,(1+\lambda)^{xt/\lambda}$.
 
 ## Depends on
 
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
+- [Modified degenerate Bernoulli polynomials](modified-degenerate-bernoulli.md)
 
 ## Sources
 

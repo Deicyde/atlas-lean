@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isSierpinskiNumber_repstring_659
 ---
 
-# Theorem 4.3
+# Binary repstrings of 659 that are Sierpiński numbers
 
-**Theorem 4.3.** If `t ≡ 131` or `t ≡ 1361 (mod 2730)`, then the `2`-repstring
-`659_2^{(2;t)}` is a Sierpiński number.
+**Binary repstrings of 659 that are Sierpiński numbers.** For every natural number $t$ with
+$t \equiv 131 \pmod{2730}$ or $t \equiv 1361 \pmod{2730}$, the binary repstring
+$659_2^{(2;t)} = 659\,(2^{12t} - 1)/(2^{12} - 1)$ is a Sierpiński number. Its binary expansion is
+that of $659$ (ten binary digits) written $t$ times with two zeros between consecutive copies.
 
 ## Depends on
 
-- [Is Sierpinski Number](is-sierpinski-number.md)
-- [Repstring](repstring.md)
+- [Sierpiński number](is-sierpinski-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

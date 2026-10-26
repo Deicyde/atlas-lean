@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.factorial_div_factorial_dvd_centralBinom_density_one
 ---
 
-# Factorial div factorial dvd central Binom density one
+# Products of consecutive integers dividing the middle binomial coefficient
 
-Theorem 1: for every fixed `η < 1 / log 4`, the set of `m` such that
-`(m + k)! / m! = (m + 1)(m + 2) ⋯ (m + k)` divides `C(2m, m)` for every positive integer
-`k ≤ η log m` has natural density `1`. The divisibility sign is lost in the extracted display;
-it is the relation of the record's own continuation ("replacing the product with `C(m+k, k)`",
-"`C(m+k, k) ∣ C(2m, m)` almost always"), and `1 / log 4` is the `2`-adic threshold for it.
+**Products of consecutive integers dividing the middle binomial coefficient.** Let $\eta$ be
+a real number with $\eta < 1 / \log 4$. The set of natural numbers $m$ such that
+$(m+k)!/m! = (m+1)(m+2) \cdots (m+k)$ divides $\binom{2m}{m}$ for every integer $k$ with
+$1 \le k \le \eta \log m$ has natural density $1$.
+
+The constant $1 / \log 4$ is the threshold imposed by the prime $2$.
 
 ## Depends on
 

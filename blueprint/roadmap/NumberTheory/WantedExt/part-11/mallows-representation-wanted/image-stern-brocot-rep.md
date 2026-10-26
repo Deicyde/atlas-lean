@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.image_sternBrocotRep
 ---
 
-# Image stern Brocot Rep
+# Characterization of Stern–Brocot representations
 
-The Stern–Brocot representations of the irrationals of `(0, 1)` are exactly the
-sequences over `{L, R}` that are not eventually constant.
+**Characterization of Stern–Brocot representations.** A sequence over $\{L, R\}$ is the
+Stern–Brocot representation $\mathrm{SB}(\alpha)$ of some irrational $\alpha \in (0, 1)$ if and
+only if it is neither eventually constantly $L$ nor eventually constantly $R$.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

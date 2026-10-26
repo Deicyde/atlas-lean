@@ -5,9 +5,11 @@ statement: formalized
 lean: WantedExt.NumberTheory.Polymath8b.SubpowerBound
 ---
 
-# Subpower Bound
+# Subpower bound
 
-Domination with every fixed positive subpower loss.
+**Subpower bound.** For functions $f, g : \mathbb{R} \to \mathbb{R}$, $f$ is bounded by $g$ up
+to subpower losses if for every real $\delta > 0$ we have $f(x) = O(x^{\delta} g(x))$ as
+$x \to \infty$.
 
 ## Depends on
 

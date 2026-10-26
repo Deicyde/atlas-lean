@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanK_sq_relation
 ---
 
-# Ramanujan K sq relation
+# Modular equation of degree 2 for Ramanujan's function $k$
 
-Polynomial relation between `X = k(q)` and `Y = k(q²)` on the unit disk:
-`X² - Y + 2XY + X²Y + Y² = 0`.
+**Modular equation of degree 2 for Ramanujan's function $k$.** For every complex number $q$
+with $|q| < 1$, the values $X = k(q)$ and $Y = k(q^2)$ of Ramanujan's function satisfy
+$X^2 - Y + 2XY + X^2 Y + Y^2 = 0$.
 
 ## Depends on
 
-- [Ramanujan K](ramanujan-k.md)
+- [Ramanujan's function $k(q)$](ramanujan-k.md)
 
 ## Sources
 

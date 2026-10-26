@@ -12,8 +12,8 @@ rational square.
 
 ## Depends on
 
-- [Truncated Log Exceptional Primes](truncated-log-exceptional-primes.md)
-- [Truncated Log Polynomial](truncated-log-polynomial.md)
+- [Exceptional primes for truncated logarithmic discriminants](truncated-log-exceptional-primes.md)
+- [Truncated logarithmic polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

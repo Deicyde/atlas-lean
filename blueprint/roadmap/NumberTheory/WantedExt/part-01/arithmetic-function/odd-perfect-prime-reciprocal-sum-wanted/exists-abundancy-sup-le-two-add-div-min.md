@@ -14,8 +14,8 @@ $n$ with least prime factor $p_1$ satisfies $H(n) \le 2 + C/p_1$.
 
 ## Depends on
 
-- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
-- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
+- [Primitive non-deficient number](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Product of $p/(p-1)$ over the prime factors](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

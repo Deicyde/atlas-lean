@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.superLeonardoP_of_lt
 ---
 
-# Super Leonardo P of lt
+# Recurrence for the supergeneralized Leonardo p-numbers
 
-The recurrence: `𝓛_{p,k,x}(n) = 𝓛_{p,k,x}(n-1) + 𝓛_{p,k,x}(n-p-1) + k` for `n > p`.
+**Recurrence for the supergeneralized Leonardo p-numbers.** For all natural numbers $p$, $k$
+and $n$ with $n > p$ and every real sequence $x$, the supergeneralized Leonardo $p$-numbers
+$\mathcal{L}_{p,k,x}$ satisfy
+$\mathcal{L}_{p,k,x}(n) = \mathcal{L}_{p,k,x}(n-1) + \mathcal{L}_{p,k,x}(n-p-1) + k$.
 
 ## Depends on
 
-- [Super Leonardo P](super-leonardo-p.md)
+- [Supergeneralized Leonardo p-numbers](super-leonardo-p.md)
 
 ## Sources
 

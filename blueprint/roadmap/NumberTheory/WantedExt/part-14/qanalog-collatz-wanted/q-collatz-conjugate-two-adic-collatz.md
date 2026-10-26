@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.qCollatz_conjugate_twoAdicCollatz
 ---
 
-# Q Collatz conjugate two Adic Collatz
+# The $q$-Collatz map is conjugate to the $2$-adic $3x+1$ map
 
-For odd `A, B ∈ 𝔽₂[[q]]`, `T_{A,B}` is conjugate to the `2`-adic `3x+1` map `T`: there is a
-bijection `h : ℤ₂ → 𝔽₂[[q]]` with `h⁻¹ ∘ T_{A,B} ∘ h = T`.
+**The $q$-Collatz map is conjugate to the $2$-adic $3x+1$ map.** Let $A$ and $B$ be odd
+power series in $\mathbb{F}_2[[q]]$ (constant term $1$), let $T_{A,B}$ be the $q$-analog of the
+$3x+1$ map on $\mathbb{F}_2[[q]]$, and let $T$ be the $3x+1$ map on the $2$-adic integers
+$\mathbb{Z}_2$. Then there is a bijection $h : \mathbb{Z}_2 \to \mathbb{F}_2[[q]]$ with
+$h^{-1}(T_{A,B}(h(x))) = T(x)$ for every $x \in \mathbb{Z}_2$.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
-- [Two Adic Collatz](two-adic-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
+- [The $2$-adic $3x+1$ map](two-adic-collatz.md)
 
 ## Sources
 

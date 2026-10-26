@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.fundamentalUnit_eq_convergent_or_cube
 ---
 
-# Fundamental Unit eq convergent or cube
+# Fundamental unit from the period of $\sqrt{d}$
 
-Theorem 1 (quoted from [4, 12]): let `d ≥ 2` be squarefree, `ε_d` the fundamental unit of
-`ℚ(√d)`, `l_d` the length of the period of the continued fraction of `√d` and
-`p_{l_d-1}/q_{l_d-1}` its `(l_d - 1)`-th convergent. Then `ε_d = p_{l_d-1} + q_{l_d-1}√d` or
-`ε_d³ = p_{l_d-1} + q_{l_d-1}√d`, and the latter can only occur if `d ≡ 5 (mod 8)`.
-The fundamental unit is pinned as the least real number `> 1` of the form `(x + y√d)/2` with
-`x, y ∈ ℤ` and `x² - d y² = ±4` (for squarefree `d` these numbers are exactly the units of the
-ring of integers of `ℚ(√d)`); `l_d` is the least `l > 0` with `a_{k+l} = a_k` for all `k ≥ 1`;
-`p_k, q_k` are Mathlib's `nums`, `dens` of `GenContFract.of √d`. The paper's "positive
-squarefree" `d` is restricted to `d ≥ 2` (`ℚ(√1)` is not a quadratic field).
+**Fundamental unit from the period of $\sqrt{d}$.** Let $d \ge 2$ be a squarefree integer, let
+$\varepsilon$ be the least real number $u > 1$ of the form $u = (x + y\sqrt{d})/2$ with
+$x, y \in \mathbb{Z}$ and $x^2 - d y^2 = \pm 4$ (the fundamental unit of $\mathbb{Q}(\sqrt{d})$),
+let $\sqrt{d} = [a_0; a_1, a_2, \dots]$ be the regular continued fraction of $\sqrt{d}$, with
+convergents $p_k / q_k$ (so $p_0 = a_0$ and $q_0 = 1$), and let $l$ be the least positive integer
+such that $a_{k+l} = a_k$ for all $k \ge 1$. Then $p_{l-1} + q_{l-1}\sqrt{d} = \varepsilon$, or
+$p_{l-1} + q_{l-1}\sqrt{d} = \varepsilon^3$ and $d \equiv 5 \pmod 8$.
+
+For squarefree $d$ the numbers $(x + y\sqrt{d})/2$ above are exactly the units of the ring of
+integers of $\mathbb{Q}(\sqrt{d})$. The paper's positive squarefree $d$ is restricted to $d \ge 2$,
+since $\mathbb{Q}(\sqrt{1})$ is not a quadratic field.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.norm_choose_nsmul_coeff_le
 ---
 
-# Norm choose nsmul coeff le
+# Coefficient bound for the divided derivatives $D^n/n!$
 
-Lemma 1: on the Tate algebra `B{t}` over an ultrametric Banach space `B` with the
-sup norm, `‖D^n / n!‖ ≤ 1`; coefficientwise, every coefficient
-`binom(k + n, n) a_{k+n}` of `D^n f / n!` has norm at most any bound `C` of the
-coefficient norms of `f = ∑ a_k t^k`. Stated over `K = ℚ_p` (the paper allows any
-`K` between `ℚ_p` and `ℂ_p`) and for every coefficient sequence (the decay
-`a_k → 0` and completeness of `B` are not needed for the bound).
+**Coefficient bound for the divided derivatives $D^n/n!$.** Let $p$ be a prime and $B$ a
+normed vector space over $\mathbb{Q}_p$ whose norm is ultrametric. Let $(a_k)_{k \ge 0}$ be a
+sequence in $B$ and $C$ a real number with $\|a_k\| \le C$ for every $k$. Then for all natural
+numbers $n$ and $k$,
+
+$$\Big\| \binom{k+n}{n} a_{k+n} \Big\| \le C.$$
+
+The vectors $\binom{k+n}{n} a_{k+n}$ are the coefficients of $D^n f / n!$ for
+$f = \sum_k a_k t^k$, so this is the coefficientwise form of the bound $\|D^n / n!\| \le 1$ on
+the Tate algebra $B\{t\}$ with the sup norm.
 
 ## Depends on
 

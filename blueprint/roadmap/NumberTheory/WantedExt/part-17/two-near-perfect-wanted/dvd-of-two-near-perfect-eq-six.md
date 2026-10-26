@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dvd_of_two_near_perfect_eq_six
 ---
 
-# Dvd of two near perfect eq six
+# Divisibility constraints on odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$
 
-Lemma 3: if `b, k ≥ 0`, `p` is odd and
-`(2^(k+1) - 1)(p^2 + p + 1) = 2^(k+1) p^2 + 2^b p + 1`, then `p ∣ 2^k - 1` and
-`p + 1 ∣ 2^b - 2`.
+**Divisibility constraints on odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) =
+2^{k+1} p^2 + 2^b p + 1$.** Let $b$ and $k$ be natural numbers and let $p$ be an odd natural
+number such that $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$. Then, as integers, $p$
+divides $2^k - 1$ and $p + 1$ divides $2^b - 2$.
 
 ## Depends on
 

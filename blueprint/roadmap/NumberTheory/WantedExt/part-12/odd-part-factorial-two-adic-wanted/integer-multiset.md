@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.integerMultiset
 ---
 
-# Integer Multiset
+# Integer multiset of a finite set of naturals
 
-`integerMultiset s` changes the elements of a natural-number finite set to
-integers while preserving multiplicity.  This is the explicit coercion used
-when the paper's products and symmetric functions enter integer congruences.
+**Integer multiset of a finite set of naturals.** For a finite set $s$ of natural numbers, its
+integer multiset is the multiset of integers obtained by sending each element $n \in s$ to $n$
+viewed as an integer, so each element of $s$ occurs exactly once.
 
 ## Depends on
 

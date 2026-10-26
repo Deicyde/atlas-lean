@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_pos_rat_nicomacheanNu_eq_zero_large_den
 ---
 
-# Exists pos rat nicomachean Nu eq zero large den
+# Nicomachean sequences of rationals with large denominators
 
-There are sequences `σ` of positive rationals with `ν(σ) = 0` containing non-integers `p/q` in
-lowest terms with `q` arbitrarily large: for every `Q` some entry has denominator `> Q`.
+**Nicomachean sequences of rationals with large denominators.** Write
+$\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
+of a finite sequence. For every natural number $Q$ there is a finite sequence $\sigma$ of positive
+rational numbers with $\nu(\sigma) = 0$ having an entry whose denominator in lowest terms is
+greater than $Q$.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

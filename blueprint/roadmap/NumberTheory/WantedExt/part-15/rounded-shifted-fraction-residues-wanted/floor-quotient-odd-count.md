@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.floorQuotientOddCount
 ---
 
-# Floor Quotient Odd Count
+# Floor sequence parity count
 
-The floor sequence parity count `𝓕_n`: the number of `k` with `1 ≤ k ≤ n`
-for which `⌊n/k⌋` is odd (OEIS A059851). Natural-number division `n / k` is
-`⌊n/k⌋`.
+**Floor sequence parity count.** For a natural number $n$, the floor sequence parity count
+$\mathcal{F}_n$ is the number of integers $k$ with $1 \le k \le n$ for which
+$\lfloor n/k \rfloor$ is odd (OEIS A059851).
 
 ## Depends on
 

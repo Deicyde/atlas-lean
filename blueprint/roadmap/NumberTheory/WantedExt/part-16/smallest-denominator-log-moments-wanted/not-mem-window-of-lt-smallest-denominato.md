@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.not_mem_window_of_lt_smallestDenominator
 ---
 
-# Not mem window of lt smallest Denominator
+# Minimality of the smallest denominator
 
-Minimality of `q_min(x, δ)`: no positive `q < q_min(x, δ)` is the denominator of a rational
-in the window.
+**Minimality of the smallest denominator.** Let $x$ and $\delta$ be real numbers and let $q$
+be a positive integer with $q < q_{\min}(x, \delta)$, where $q_{\min}(x, \delta)$ is the smallest
+denominator. Then there is no integer $p$ with $|x - p/q| < \delta/2$.
 
 ## Depends on
 
-- [Smallest Denominator](smallest-denominator.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Proof depends on
 
-- [Smallest Denominator le](smallest-denominator-le.md)
+- [Denominators of nearby rationals bound the smallest denominator](smallest-denominator-le.md)
 
 ## Sources
 

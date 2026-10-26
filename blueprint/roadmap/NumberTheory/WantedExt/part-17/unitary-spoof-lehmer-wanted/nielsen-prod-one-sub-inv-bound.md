@@ -7,10 +7,14 @@ lean: MetaMathlibExt.nielsen_prod_one_sub_inv_bound
 
 # Nielsen's bound
 
-**Nielsen's bound** (quoted as Lemma 1): if `1 < x_1 ≤ ⋯ ≤ x_r` are integers and
-`∏_{j=1}^{r} (1 - 1/x_j) ≤ a/b < ∏_{j=1}^{r-1} (1 - 1/x_j)`, then
-`a ∏_{j=1}^{r} x_j ≤ (a + 1)^{2^r} - (a + 1)^{2^{r-1}}`. The paper's positivity of `r, a, b` is
-implied by the hypotheses (an empty product is `1`, and `a/0 = 0` in Lean) and is not stated.
+**Nielsen's bound.** Let $r$, $a$ and $b$ be natural numbers and let $x_1 \le \dots \le x_r$ be
+integers with every $x_j > 1$. If
+$\prod_{j=1}^{r} (1 - 1/x_j) \le a/b < \prod_{j=1}^{r-1} (1 - 1/x_j)$, then
+$a \prod_{j=1}^{r} x_j \le (a + 1)^{2^r} - (a + 1)^{2^{r-1}}$.
+
+The paper assumes $r$, $a$ and $b$ positive; this follows from the hypotheses, since the left-hand
+product is positive (so $a > 0$ and $b > 0$, reading $a/0$ as $0$) and both products equal $1$
+when $r = 0$.
 
 ## Depends on
 

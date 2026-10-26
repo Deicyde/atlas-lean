@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_lucasLeonardoP_stride
 ---
 
-# Proposition 16
+# Sum of the Lucas-Leonardo p-numbers at multiples of $p + 1$
 
-**Proposition 16**: `∑_{i=0}^{n} R_{p,(p+1)i} = R_{p,(p+1)n+1} - p(n - p - 1)`.
+**Sum of the Lucas-Leonardo p-numbers at multiples of $p + 1$.** For every natural number
+$p \ge 1$ and every natural number $n$, the Lucas-Leonardo $p$-numbers $R_{p,m}$ satisfy
+$\sum_{i=0}^{n} R_{p,(p+1)i} = R_{p,(p+1)n+1} - p(n - p - 1)$, an identity of integers.
 
 ## Depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

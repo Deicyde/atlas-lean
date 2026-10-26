@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.convergentDen_two
 ---
 
-# Convergent Den two
+# The convergent denominator $q_2$ equals $a_2 a_1 + 1$
 
-`q₂ = a₁ a₂ + 1`.
+**The convergent denominator $q_2$ equals $a_2 a_1 + 1$.** For every sequence of natural
+numbers $a_0, a_1, a_2, \dots$ with convergent denominators $q_0, q_1, q_2, \dots$, we have
+$q_2 = a_2 a_1 + 1$.
 
 ## Depends on
 
-- [Convergent Den](convergent-den.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

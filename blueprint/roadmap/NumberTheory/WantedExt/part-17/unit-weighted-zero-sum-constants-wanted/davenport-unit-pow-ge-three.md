@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.davenport_unit_pow_ge_three
 ---
 
-# Davenport unit pow ge three
+# Weighted zero-sum free pairs for $k$-th power weights modulo a prime
 
-Corollary 7.8: for `k ≥ 2` and a prime `p ≡ 1 (mod k)`, `D_{U(p)^k}(p) ≥ 3`: some sequence of
-length `2` in `ℤ_p` has no `U(p)^k`-weighted zero-sum subsequence.
+**Weighted zero-sum free pairs for $k$-th power weights modulo a prime.** Let $k \ge 2$, let
+$p$ be a prime with $p \equiv 1 \pmod k$, and let $U(p)^k = \{u^k : u \in \mathbb{Z}_p^\times\}$.
+Then some sequence $x_1, x_2$ in $\mathbb{Z}_p$ has no $U(p)^k$-weighted zero-sum subsequence:
+there is no nonempty $I \subseteq \{1, 2\}$ with weights $a_i \in U(p)^k$ for $i \in I$ such that
+$\sum_{i \in I} a_i x_i = 0$.
+
+Hence the weighted Davenport constant $D_{U(p)^k}(p)$, the least positive $k'$ such that every
+sequence of length $k'$ in $\mathbb{Z}_p$ has a $U(p)^k$-weighted zero-sum subsequence, is at
+least $3$.
 
 ## Depends on
 

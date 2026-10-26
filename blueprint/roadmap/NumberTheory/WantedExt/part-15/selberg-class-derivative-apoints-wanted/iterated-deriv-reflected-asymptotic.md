@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.iteratedDeriv_reflected_asymptotic
 ---
 
-# Lemma 2
+# Asymptotics of the derivatives of the reflected function (Lemma 2)
 
-**Lemma 2.** For `k ≥ 1` and `c > 1` there is `τ_k` such that in `Re s > c`, `|Im s| ≥ τ_k`,
-`(conj F(1 - conj s))^(k) = (d_F^k / (π^r ω)) Q^(2s-1) ∏ Γ(λ_j s + μ_j) Γ(λ_j s + 1 - λ_j - conj μ_j)
-× ∏ sin π(-λ_j s + λ_j + conj μ_j) · log^k s · F(s) · (1 + O(1 / |log s|))`, the error read as
-`|LHS - M(s)| ≤ C |M(s)| / |log s|` for the main term `M(s)`.
+**Asymptotics of the derivatives of the reflected function (Lemma 2).** Let $F$ be a function
+in the Selberg class with Gamma-factor data $\lambda_j$, $\mu_j$ for $1 \le j \le r$, conductor
+$Q$, root number $\omega$ and degree $d_F = 2 \sum_j \lambda_j$, let $k \ge 1$ and let $c > 1$.
+Write $\log$ for the principal branch of the logarithm and put
+
+$$M(s) = \frac{d_F^k}{\pi^r \omega} Q^{2s - 1}
+\prod_{j=1}^r \Gamma(\lambda_j s + \mu_j) \Gamma(\lambda_j s + 1 - \lambda_j - \bar\mu_j)
+\prod_{j=1}^r \sin\bigl(\pi (\lambda_j + \bar\mu_j - \lambda_j s)\bigr) (\log s)^k F(s).$$
+
+Let $G(w) = \overline{F(1 - \bar w)}$ and let $G^{(k)}$ be its $k$-th derivative. Then there are
+real numbers $\tau$ and $C$ such that $|G^{(k)}(s) - M(s)| \le C |M(s)| / |\log s|$ for every
+$s \in \mathbb{C}$ with $\operatorname{Re} s > c$ and $|\operatorname{Im} s| \ge \tau$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
-- [Degree](degree.md)
+- [Functions in the Selberg class](selberg-class-function.md)
+- [Degree of a function in the Selberg class](degree.md)
 
 ## Sources
 

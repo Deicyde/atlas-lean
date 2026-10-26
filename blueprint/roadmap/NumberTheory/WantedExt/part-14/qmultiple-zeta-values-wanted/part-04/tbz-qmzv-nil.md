@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.tbzQMZV_nil
 ---
 
-# Tbz QMZV nil
+# TBZ-qMZV of the empty index
 
-`ζ_q^TBZ(∅) = 1`.
+**TBZ-qMZV of the empty index.** The Takeyama–Bradley–Zhao qMZV of the empty index is $1$:
+$\zeta_q^{\mathrm{TBZ}}(\varnothing) = 1$.
 
 ## Depends on
 
-- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Takeyama–Bradley–Zhao qMZVs](../part-03/tbz-qmzv.md)
 
 ## Sources
 

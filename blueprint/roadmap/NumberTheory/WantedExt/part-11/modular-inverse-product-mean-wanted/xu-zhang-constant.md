@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.xuZhangConstant
 ---
 
-# Xu Zhang Constant
+# Xu–Zhang constant
 
-The constant `C_q := ∏_{p^α ∥ q} (1 + (2p³ + p² - 1) / ((p² + 1)(p² + p + 1))
-- 1 / (p^{3(α-1)} (p² + p + 1)))` of Xu and Zhang.
+**Xu–Zhang constant.** For a natural number $q$, the Xu–Zhang constant $C_q$ is the product
+over the prime factors $p$ of $q$, with $p^\alpha$ the exact power of $p$ dividing $q$,
+
+$$C_q = \prod_{p^\alpha \parallel q} \left(1 + \frac{2p^3 + p^2 - 1}{(p^2 + 1)(p^2 + p + 1)} -
+\frac{1}{p^{3(\alpha - 1)} (p^2 + p + 1)}\right).$$
+
+For $q = 1$, and by convention for $q = 0$, there are no prime factors, so $C_0 = C_1 = 1$.
 
 ## Depends on
 

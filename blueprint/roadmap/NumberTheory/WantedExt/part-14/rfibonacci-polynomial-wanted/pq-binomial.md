@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pqBinomial
 ---
 
-# Pq Binomial
+# $(p,q)$-binomial coefficient
 
-The `(p, q)`-binomial coefficient `[n, k]_{p,q}`, defined by the paper's
-Pascal recursion (3): `[n, 0] = 1`, `[0, k+1] = 0`,
-`[n+1, k+1] = p^{n-k} [n, k] + q^{k+1} [n, k+1]`. Where the `(p,q)`-factorials are
-invertible it equals `[n]_{p,q}! / ([k]_{p,q}! [n-k]_{p,q}!)`, the paper's
-definition; at `p = 1` it is the Gaussian binomial `MathlibExt.gaussBinom q`.
+**$(p,q)$-binomial coefficient.** Let $R$ be a commutative semiring and $p, q \in R$. For
+natural numbers $n$ and $k$, the $(p,q)$-binomial coefficient $\binom{n}{k}_{p,q} \in R$ is
+defined recursively by $\binom{n}{0}_{p,q} = 1$, $\binom{0}{k+1}_{p,q} = 0$ and
+$\binom{n+1}{k+1}_{p,q} = p^{n-k} \binom{n}{k}_{p,q} + q^{k+1} \binom{n}{k+1}_{p,q}$, where $n - k$
+is truncated subtraction ($0$ when $k > n$).
+
+For $k \le n$, where the $(p,q)$-factorials are invertible, $\binom{n}{k}_{p,q}$ equals
+$[n]_{p,q}! / ([k]_{p,q}! \, [n-k]_{p,q}!)$, where $[j]_{p,q} = p^{j-1} + p^{j-2} q + \dots +
+q^{j-1}$; this is the definition used in the source. At $p = 1$ it is the Gaussian binomial
+coefficient $\binom{n}{k}_q$.
 
 ## Depends on
 

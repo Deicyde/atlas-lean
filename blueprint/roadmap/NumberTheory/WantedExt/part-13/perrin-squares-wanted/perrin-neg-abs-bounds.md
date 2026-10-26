@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.perrinNeg_abs_bounds
 ---
 
-# Perrin Neg abs bounds
+# Size of the Perrin numbers at negative indices
 
-Lemma 1 (quoted from Bravo, Bravo and Luca): with `α` the real zero of
-`X ^ 3 - X - 1`, for every integer `k ≥ 6`,
-`α ^ (k / 2 - 3 × 10 ^ 15 log k) < |R_{-k}| < 2.01 α ^ (k / 2)`.
+**Size of the Perrin numbers at negative indices.** Let $\alpha$ be a real number with
+$\alpha^3 = \alpha + 1$ (the real root of $X^3 - X - 1$), and let $R_{-k}$ denote the Perrin
+sequence extended to negative indices. For every integer $k \ge 6$,
+
+$$\alpha^{k/2 - 3 \cdot 10^{15} \log k} < |R_{-k}| < 2.01 \, \alpha^{k/2}.$$
+
+The source quotes this bound from Bravo, Bravo and Luca.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 
 ## Sources
 

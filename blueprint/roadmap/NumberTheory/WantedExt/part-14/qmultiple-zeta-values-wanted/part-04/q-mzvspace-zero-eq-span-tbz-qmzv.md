@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.qMZVSpace_zero_eq_span_tbzQMZV
 ---
 
-# Q MZVSpace zero eq span tbz QMZV
+# The Takeyama–Bradley–Zhao model spans $\mathcal{Z}_q$
 
-The TBZ model spans `𝒵_q`: `𝒵_q` is the `ℚ`-span of the `ζ_q^TBZ(k₁, …, kᵣ)` with
-`kᵢ ∈ ℕ̄` (entries `some kᵢ` have `kᵢ ≥ 1`) and `k₁ ≠ 1`.
+**The Takeyama–Bradley–Zhao model spans $\mathcal{Z}_q$.** Let $\overline{\mathbb{N}}$
+consist of the positive integers and one further symbol $\bar 1$. The space
+$\mathcal{Z}_q = \mathcal{Z}_{q,0}$ equals the $\mathbb{Q}$-linear span of the TBZ-qMZVs
+$\zeta_q^{\mathrm{TBZ}}(k_1, \dots, k_r)$ over all $r \ge 0$ and all
+$k_1, \dots, k_r \in \overline{\mathbb{N}}$ with $k_1 \ne 1$ when $r \ge 1$.
 
 ## Depends on
 
-- [Q MZVSpace](../part-02/q-mzvspace.md)
-- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Spaces of general qMZVs](../part-02/q-mzvspace.md)
+- [Takeyama–Bradley–Zhao qMZVs](../part-03/tbz-qmzv.md)
 
 ## Sources
 

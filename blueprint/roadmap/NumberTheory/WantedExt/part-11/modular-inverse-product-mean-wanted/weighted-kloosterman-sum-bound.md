@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.weighted_kloosterman_sum_bound
 ---
 
-# Weighted kloosterman sum bound
+# Bound for a weighted Kloosterman-type sum
 
-Lemma 2: for `n, k ≥ 1` and `m` coprime to `n`,
-`|∑_{1 ≤ a ≤ n, (a, n) = 1} a e_n(k m ā)| ≤ 2 n^{3/2} τ(n) (n, k)^{1/2} log(e n)`, where
-`e_n(x) = exp(2πi x / n)` and `ā` is the inverse of `a` modulo `n` (represented by
-`ZMod.val`; `e_n` is `n`-periodic). The paper's `m ≥ 1` follows from coprimality for `n ≥ 2`;
-for `n = 1` the claim holds for every `m`.
+**Bound for a weighted Kloosterman-type sum.** Let $n \ge 1$ and $k \ge 1$ be integers and let
+$m$ be a natural number coprime to $n$. Write $e_n(x) = e^{2\pi i x / n}$, and for $a$ coprime to
+$n$ let $\bar a \in \{0, \dots, n - 1\}$ be the inverse of $a$ modulo $n$. Then
+
+$$\Bigl|\sum_{1 \le a \le n,\ \gcd(a, n) = 1} a\, e_n(k m \bar a)\Bigr| \le
+2 n^{3/2} \tau(n) \sqrt{\gcd(n, k)} \log(e n),$$
+
+where $\tau(n)$ is the number of positive divisors of $n$.
 
 ## Depends on
 

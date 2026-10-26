@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pqRLucasSecond_eq_succ_mul_sub
 ---
 
-# Pq RLucas Second eq succ mul sub
+# Second-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials
 
-Theorem 3.2, second kind: for all `n ≥ 0`,
-`𝕍^{(r,s)}_n(x, y) = (s + 1) U_{n+1}(x/p, y/p) - s x U_n(x, y)`.
+**Second-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials.** Let
+$K$ be a field, let $r \ge 1$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in K$ with
+$p \ne 0$. Write $U_n(x, y)$ for the $(p, q)$-analogue of the $r$-Fibonacci polynomial with
+parameters $p, q, m$, and $\mathbb{V}_n(x, y)$ for the second-kind $(p, q)$-analogue of the
+$r$-Lucas polynomial of type $s$ with the same parameters. Then for every natural number $n$,
+
+$$
+\mathbb{V}_n(x, y) = (s + 1)\,U_{n+1}(x/p, y/p) - s\,x\,U_n(x, y).
+$$
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
-- [Pq RLucas Second](pq-rlucas-second.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
+- [Second-kind (p, q)-Lucas polynomials](pq-rlucas-second.md)
 
 ## Sources
 

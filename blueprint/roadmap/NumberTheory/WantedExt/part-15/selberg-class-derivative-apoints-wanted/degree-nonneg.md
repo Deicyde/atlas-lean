@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.SelbergClassFunction.degree_nonneg
 ---
 
-# Degree nonneg
+# Nonnegativity of the degree
 
-The degree is nonnegative.
+**Nonnegativity of the degree.** Let $F$ be a function in the Selberg class with Gamma-factor
+scalings $\lambda_1, \dots, \lambda_r$. Then the degree $d_F = 2 \sum_{j=1}^{r} \lambda_j$
+satisfies $d_F \ge 0$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
-- [Degree](degree.md)
+- [Functions in the Selberg class](selberg-class-function.md)
+- [Degree of a function in the Selberg class](degree.md)
 
 ## Sources
 

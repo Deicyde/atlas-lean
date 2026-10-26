@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.strideSignedSum
 ---
 
-# Stride Signed Sum
+# Signed stride sum
 
-The signed stride sum `∑_{j=1}^{⌊(n+q-1)/q⌋} (-1)^{(q+1)(j+1)} / (n+q-qj)^t`, written
-with `i = j - 1` as `∑_{i < ⌊(n+q-1)/q⌋} (-1)^{(q+1) i} / (n - qi)^t`.
+**Signed stride sum.** For natural numbers $q$, $t$ and $n$, let
+$K = \lfloor (n + q - 1)/q \rfloor$ if $q \ge 1$ and $K = 0$ if $q = 0$. The signed stride sum is
+the real number
+
+$$
+T_{q,t}(n) = \sum_{i=0}^{K-1} \frac{(-1)^{(q+1)i}}{(n - qi)^t}.
+$$
+
+With $j = i + 1$ it reads $\sum_{j=1}^{K} (-1)^{(q+1)(j+1)}/(n + q - qj)^t$. For odd $q$ every
+sign is $+$, and for even $q$ the signs alternate.
 
 ## Depends on
 

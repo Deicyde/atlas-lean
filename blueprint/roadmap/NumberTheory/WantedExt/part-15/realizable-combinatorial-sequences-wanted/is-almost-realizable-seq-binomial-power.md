@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isAlmostRealizableSeq_binomialPowerSeq
 ---
 
-# Is Almost Realizable Seq binomial Power Seq
+# Binomial-power sequences are almost realizable
 
-A realizable sequence is almost realizable (take `m = 1`); for example the binomial-power
-sequences `A(n,r,s)` of Theorem 13 (`MetaMathlibExt.binomial_power_sequence_dold_realizable`).
+**Binomial-power sequences are almost realizable.** For all natural numbers $r \ge 1$ and $s$,
+the binomial-power sequence $n \mapsto \sum_{k=0}^{n} \binom{n}{k}^r \binom{n+k}{k}^s$ is almost
+realizable.
+
+Every Dold realizable sequence is almost realizable (take the multiplier $m = 1$), and the
+binomial-power sequences are Dold realizable.
 
 ## Depends on
 
-- [Is Almost Realizable Seq](is-almost-realizable-seq.md)
+- [Almost realizable sequences](is-almost-realizable-seq.md)
 - [Binomial-power sequences](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/binomial-power-seq.md)
 
 ## Proof depends on

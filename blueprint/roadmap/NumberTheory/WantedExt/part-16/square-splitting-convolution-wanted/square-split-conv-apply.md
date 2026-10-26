@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.squareSplitConv_apply
 ---
 
-# Square Split Conv apply
+# Value of the square-splitting convolution at a positive integer
 
-Unfolding `f ⋆ g` at `n ≠ 0`.
+**Value of the square-splitting convolution at a positive integer.** For complex arithmetic
+functions $f$ and $g$ and every natural number $n \ne 0$, the square-splitting convolution of $f$
+and $g$ takes the value $(f \star g)(n) = \sum_{d \in A(n)} f(d)\, g(n/d)$ at $n$, where $A(n)$ is
+the square-splitting divisor set of $n$.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
-- [Square Split Divisors](square-split-divisors.md)
+- [Square-splitting convolution](square-split-conv.md)
+- [Square-splitting divisors](square-split-divisors.md)
 
 ## Sources
 

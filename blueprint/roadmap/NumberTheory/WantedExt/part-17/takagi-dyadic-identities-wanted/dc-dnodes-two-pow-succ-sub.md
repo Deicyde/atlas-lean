@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_two_pow_succ_sub
 ---
 
-# Dc DNodes two pow succ sub
+# Symmetry of the D-node counts
 
-Lemma 18: for `0 ≤ r ≤ 2^k`, `δ(2^(k+1) - r) = δ(2^k + r)`.
+**Symmetry of the D-node counts.** For all natural numbers $k$ and $r$ with $r \le 2^k$,
+$\delta(2^{k+1} - r) = \delta(2^k + r)$, where $\delta(n)$ denotes the number of D-nodes in the
+divide-and-conquer tree on $n$ leaves.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

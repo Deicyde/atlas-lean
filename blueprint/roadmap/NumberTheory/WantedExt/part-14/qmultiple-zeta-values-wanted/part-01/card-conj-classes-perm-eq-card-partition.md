@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_conjClasses_perm_eq_card_partition
 ---
 
-# Card conj Classes perm eq card partition
+# Number of conjugacy classes of the symmetric group
 
-The number of conjugacy classes of `S_n` is the partition number `p(n)`.
+**Number of conjugacy classes of the symmetric group.** For every natural number $n$, the
+number of conjugacy classes of the symmetric group $S_n$ equals the number $p(n)$ of partitions
+of $n$.
 
 ## Depends on
 

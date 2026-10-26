@@ -13,7 +13,7 @@ $p$-number $R_{p,0}$ equals $p^2 + p + 1$.
 
 ## Depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

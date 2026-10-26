@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_consecutive_even_inter
 ---
 
-# Exists consecutive even inter
+# A block of consecutive integers meeting $a$ given sets evenly
 
-Lemma 3.3: if `2^a ≤ m` and `X_1, …, X_a` are sets, some nonempty block of consecutive
-integers `Y = [s, t] ⊆ [1, m]` meets every `X_i` in an even number of elements.
+**A block of consecutive integers meeting $a$ given sets evenly.** Let $2^a \le m$ and let
+$X_1, \dots, X_a$ be finite sets of natural numbers. Then there are integers $s, t$ with
+$1 \le s \le t \le m$ such that $|\{s, s + 1, \dots, t\} \cap X_i|$ is even for every $i$.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_coprime_not_sq_modEq_one
 ---
 
-# Card coprime not sq mod Eq one
+# Units modulo $L$ whose square is not $1$
 
-The number of Class A columns: if `L = 2^e · (odd part)` with `f` distinct odd prime factors,
-the number of `0 ≤ j < L` prime to `L` with `j^2 ≢ 1 (mod L)` is `φ(L) - 2^(f + g(e))`,
-`g(e) = max(0, min(2, e - 1))`. These columns pair off as `{j, j⁻¹}`, so this count is `2 P(L)`.
+**Units modulo $L$ whose square is not $1$.** Let $L \ge 1$, let $e$ be the exponent of $2$
+in $L$ and let $f$ be the number of distinct odd prime factors of $L$. Then the number of
+integers $0 \le j < L$ with $\gcd(j, L) = 1$ and $j^2 \not\equiv 1 \pmod{L}$ is
+$\varphi(L) - 2^{f + g(e)}$, where $g(e) = \max(0, \min(2, e - 1))$.
+
+In the paper these $j$ index the Class A columns of a repetend table.
 
 ## Depends on
 

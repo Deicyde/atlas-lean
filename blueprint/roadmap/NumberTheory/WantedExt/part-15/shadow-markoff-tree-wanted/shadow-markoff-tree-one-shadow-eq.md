@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.shadowMarkoffTree_one_shadow_eq
 ---
 
-# Shadow Markoff Tree one shadow eq
+# Shadow parts equal classical parts when $v = (1, 1, 1)$
 
-In the shadow Markoff tree of the initial triple `(1 + ε, 1 + ε, 1 + ε)` the shadow part of
-every solution equals its classical part: the shadow tree coincides with the classical Markoff
-tree.
+**Shadow parts equal classical parts when $v = (1, 1, 1)$.** In the shadow Markoff tree of
+$v = (1, 1, 1)$, the tree of the initial triple
+$(1 + \varepsilon, 1 + \varepsilon, 1 + \varepsilon)$ with $\varepsilon^2 = 0$, every solution
+$(x, y)$ has shadow part $y$ equal to its classical part $x$.
+
+So the shadow parts of this tree reproduce the classical Markoff tree.
 
 ## Depends on
 
-- [Shadow Markoff Tree](shadow-markoff-tree.md)
+- [Shadow Markoff tree](shadow-markoff-tree.md)
 
 ## Sources
 

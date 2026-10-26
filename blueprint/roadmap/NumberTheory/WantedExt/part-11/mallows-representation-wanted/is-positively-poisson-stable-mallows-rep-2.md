@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isPositivelyPoissonStable_mallowsRep_iff_contFract
 ---
 
-# Is Positively Poisson Stable mallows Rep iff cont Fract
+# Poisson stability of the Mallows representation and the continued fraction
 
-The Mallows representation of an irrational `α = [0; a_1, a_2, …] ∈ (0, 1)` is positively
-Poisson stable iff the digit sequence `⟨a_1, a_2, …⟩` is (as a point of the shift over
-`ℤ_{>0}`); `a k = a_{k+1}`.
+**Poisson stability of the Mallows representation and the continued fraction.** Let
+$\alpha \in (0, 1)$ be irrational, with continued fraction expansion
+$\alpha = [0; a_1, a_2, \dots]$. Then the Mallows representation of $\alpha$ is positively
+Poisson stable if and only if the sequence $(a_1, a_2, \dots)$ of its partial quotients is
+positively Poisson stable.
 
 ## Depends on
 
-- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [Positively Poisson stable sequence](is-positively-poisson-stable.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

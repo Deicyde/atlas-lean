@@ -12,7 +12,7 @@ On `(10)^∞` and `(01)^∞` (no two consecutive zero digits) the odometer retur
 
 ## Depends on
 
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

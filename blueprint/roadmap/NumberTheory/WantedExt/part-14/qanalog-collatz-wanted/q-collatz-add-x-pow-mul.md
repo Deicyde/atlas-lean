@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.qCollatz_add_X_pow_mul
 ---
 
-# Q Collatz add X pow mul
+# A perturbation at $q^{n+1}$ moves to $q^n$ under $T_{A,B}$
 
-For odd `A, B`, `n ∈ ℕ` and `U, V ∈ 𝔽₂[[q]]` with `V` odd,
-`T_{A,B}(U + q^{n+1} V) = T_{A,B}(U) + qⁿ W` for some odd `W`.
+**A perturbation at $q^{n+1}$ moves to $q^n$ under $T_{A,B}$.** Let $A, B, U, V$ be power
+series in $\mathbb{F}_2[[q]]$ with $A$, $B$ and $V$ odd (constant term $1$), let $T_{A,B}$ be the
+$q$-analog of the $3x+1$ map, and let $n \ge 0$ be an integer. Then there is an odd power series
+$W \in \mathbb{F}_2[[q]]$ with $T_{A,B}(U + q^{n+1} V) = T_{A,B}(U) + q^n W$.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
 
 ## Sources
 

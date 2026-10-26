@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.remainderCount_asymptotic
 ---
 
-# Remainder Count asymptotic
+# Asymptotic formula for the number of remainders
 
-Theorem 1: `s(n) = c n + O(n / (log n · log log n))`, and in particular
-`s(n)/n → c`.
+**Asymptotic formula for the number of remainders.** Let $s(n)$ be the number of distinct
+remainders $n \bmod k$ with $1 \le k \le \lfloor n/2 \rfloor$ and let $c$ be the remainder-set
+constant. Then, as $n \to \infty$ over the natural numbers,
+$s(n) - cn = O\bigl(n / (\log n \cdot \log \log n)\bigr)$, and $s(n)/n \to c$.
 
 ## Depends on
 
-- [Remainder Constant](remainder-constant.md)
-- [Remainder Count](remainder-count.md)
+- [The remainder-set constant](remainder-constant.md)
+- [Remainder count](remainder-count.md)
 
 ## Sources
 

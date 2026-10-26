@@ -4,5 +4,5 @@ navigation: module
 
 # Odd Greedy Expansion
 
-- [Proposition 1](even-num-of-even-sum-unit-fractions.md)
-- [Lemma 2](is-odd-greedy-choice-iff.md)
+- [Even sums of odd unit fractions have even numerator](even-num-of-even-sum-unit-fractions.md)
+- [Odd greedy choice at a fraction](is-odd-greedy-choice-iff.md)

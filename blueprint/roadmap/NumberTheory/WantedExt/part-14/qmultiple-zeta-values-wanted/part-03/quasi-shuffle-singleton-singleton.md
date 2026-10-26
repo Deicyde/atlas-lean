@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.quasiShuffle_singleton_singleton
 ---
 
-# Quasi Shuffle singleton singleton
+# The stuffle product of two letters
 
-The stuffle of two letters: `a ∗ b = ab + ba + (a + b)`.
+**The stuffle product of two letters.** For natural numbers $a$ and $b$, viewed as one-letter
+words, the quasi-shuffle product with letter product $a \diamond b = a + b$ (the stuffle product)
+is $a \ast b = ab + ba + (a + b)$: the two-letter words $ab$ and $ba$ and the one-letter word
+$(a + b)$, listed in this order.
 
 ## Depends on
 
-- [Quasi Shuffle](quasi-shuffle.md)
+- [Quasi-shuffle product](quasi-shuffle.md)
 
 ## Sources
 

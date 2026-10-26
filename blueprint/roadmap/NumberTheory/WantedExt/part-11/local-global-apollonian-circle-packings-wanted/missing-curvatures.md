@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.missingCurvatures
 ---
 
-# Missing Curvatures
+# Number of missing curvatures
 
-The number of missing curvatures up to `N` in a primitive Apollonian circle packing.
+**Number of missing curvatures.** For a primitive Apollonian circle packing $A$ and a real
+number $N$, the number of missing curvatures of $A$ up to $N$ is the number of elements $n$ of
+the missing curvature set of $A$ with $n \le N$, regarded as a real number.
 
 ## Depends on
 
-- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+- [Primitive Apollonian circle packing](primitive-apollonian-circle-packing.md)
 
 ## Proof depends on
 
-- [Missing Curvature Set](missing-curvature-set.md)
+- [Missing curvature set](missing-curvature-set.md)
 
 ## Sources
 

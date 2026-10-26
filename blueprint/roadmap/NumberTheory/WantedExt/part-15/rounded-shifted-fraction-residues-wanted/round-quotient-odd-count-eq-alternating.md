@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.roundQuotientOddCount_eq_alternating_sum
 ---
 
-# Round Quotient Odd Count eq alternating sum
+# Alternating-sum formula for the rounding sequence parity count
 
-Proposition 14: `𝓡_n = -n + ∑_{d=1}^n ⌊2n/(2d-1)⌋ (-1)^{d+1}`.
+**Alternating-sum formula for the rounding sequence parity count.** For every natural
+number $n$, the rounding sequence parity count $\mathcal{R}_n$ satisfies
+$\mathcal{R}_n = -n + \sum_{d=1}^{n} (-1)^{d+1} \lfloor 2n/(2d-1) \rfloor$.
 
 ## Depends on
 
-- [Round Quotient Odd Count](round-quotient-odd-count.md)
+- [Rounding sequence parity count](round-quotient-odd-count.md)
 
 ## Sources
 

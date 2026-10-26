@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.consecutive_interval_weights
 ---
 
-# Consecutive interval weights
+# Consecutive weighted zero-sum constant for interval weights
 
-Theorem 7.1: for `n ≥ 2`, `r ∈ [1, n - 1]` and `A = [1, r] ⊆ ℤ_n`, `C_A(n) = ⌈n / r⌉`.
+**Consecutive weighted zero-sum constant for interval weights.** Let $n \ge 2$ and
+$1 \le r \le n - 1$, and let $A \subseteq \mathbb{Z}_n$ be the set of residues of
+$1, 2, \dots, r$. Let $C_A(n)$ be the least positive integer $k$ such that every sequence
+$x_1, \dots, x_k$ in $\mathbb{Z}_n$ has indices $s \le t$ and weights $a_s, \dots, a_t \in A$
+with $a_s x_s + \dots + a_t x_t = 0$. Then $C_A(n) = \lceil n / r \rceil$.
 
 ## Depends on
 

@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.negRFibonacci_succ_eq_sum
 ---
 
-# Neg RFibonacci succ eq sum
+# Explicit sum for the (-r)-Fibonacci polynomials
 
-Theorem 6, first form: for `r ≥ 2`,
-`U^{(-r)}_{n+1} = ∑_{k=0}^{⌊n/r⌋} C(k, n - rk) y^{-k} (-x)^{n-rk}` (the terms with
-`k < ⌊n/(r+1)⌋` vanish). The paper states `n ≥ 1` and `x` a unit; the identity holds
-for `n = 0` and every `x`.
+**Explicit sum for the (-r)-Fibonacci polynomials.** Let $A$ be a commutative ring,
+$r \ge 2$, $x \in A$ and $y$ a unit of $A$, and write $U_n = U^{(-r)}_n(x, y)$. For every
+$n \ge 0$,
+
+$$U_{n+1} = \sum_{k=0}^{\lfloor n/r \rfloor} \binom{k}{n - rk} y^{-k} (-x)^{n-rk},$$
+
+where $\binom{a}{b} = 0$ for $b > a$, so the terms with $(r+1) k < n$ vanish.
+
+The paper states $n \ge 1$ and $x$ a unit; the identity holds for $n = 0$ and every $x$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

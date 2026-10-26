@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.eExtremal_of_unitEquiv_profile
 ---
 
-# E Extremal of unit Equiv profile
+# Sequences equivalent to the extremal profile have no unit-weighted zero sum of length $2^r$
 
-Theorem 6.4: for `r ≥ 1` and `n = 2^r`, a sequence of length `n + r - 1` in `ℤ_n` that is
-`U(n)`-equivalent (`c y_{σ(i)} = a_i x_i` with units `c`, `a_i` and a permutation `σ`) to a
-sequence `y` in which `2^i` occurs exactly once for each `i ∈ [0, r - 2]`, `2^{r-1}` occurs an
-odd number of times and all other terms are zero is `E`-extremal for `U(n)`: it has no
-`U(n)`-weighted zero-sum subsequence of length `n` (its length is `E_{U(n)}(n) - 1` by
-Theorem 6.3).
+**Sequences equivalent to the extremal profile have no unit-weighted zero sum of length
+$2^r$.** Let $r \ge 1$, $n = 2^r$ and $L = n + r - 1$, and let $U(n)$ be the unit group of
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. Let $y_1, \dots, y_L \in \mathbb{Z}_n$ be a sequence in
+which, for each $i \in \{0, \dots, r - 2\}$, exactly one term equals $2^i$, an odd number of
+terms equal $2^{r-1}$, and every term is $0$ or $2^i$ for some $i < r$. Let
+$x_1, \dots, x_L \in \mathbb{Z}_n$ be $U(n)$-equivalent to $y$: there are $c \in U(n)$,
+$b_1, \dots, b_L \in U(n)$ and a permutation $\sigma$ of $\{1, \dots, L\}$ with
+$c \, y_{\sigma(i)} = b_i x_i$ for all $i$. Then $x$ has no $U(n)$-weighted zero-sum subsequence
+of length $n$: there is no set $I \subseteq \{1, \dots, L\}$ with $|I| = n$ together with
+$a_i \in U(n)$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.
 
 ## Depends on
 

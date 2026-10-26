@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsQuadraticPackingPolynomial
 ---
 
-# Is Quadratic Packing Polynomial
+# Quadratic packing polynomial
 
-`P` is a quadratic packing polynomial (QPP) on `S ⊆ ℝ²`: a real polynomial of total
-degree two in `x, y` that maps `S` bijectively onto `ℕ₀`.
+**Quadratic packing polynomial.** A real function $P(x, y)$ of two real variables is a
+quadratic packing polynomial (QPP) on a set $S \subseteq \mathbb{R}^2$ if it is a polynomial of
+total degree two, that is, $P(x, y) = a x^2 + b x y + c y^2 + d x + e y + f$ for some real
+$a, b, c, d, e, f$ with $a, b, c$ not all zero, and $P$ maps $S$ bijectively onto the set
+$\mathbb{N}_0 = \{0, 1, 2, \dots\}$ of natural numbers.
 
 ## Depends on
 

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.weighted_sum_dirichletConvolution_eq
 ---
 
-# Weighted sum dirichlet Convolution eq
+# Weighted summation of Dirichlet convolutions
 
-Theorem 1: for completely multiplicative `u, v`, any arithmetic function `w` and real `x`,
-`D[w, u, v](x) = ∑_{r ≤ x} g(r) ∑_{d ∣ r} u(d) v(r/d) ∑_{m ∣ d} μ(m) v(m) D[u, v](x/(mr))`
-with `g = w * μ`, `D[w, u, v](x) = ∑_{j ≤ x} w(j) (u * v)(j)` and
-`D[u, v](y) = ∑_{1 ≤ j ≤ y} (u * v)(j)`.
+**Weighted summation of Dirichlet convolutions.** Let $u$ and $v$ be completely
+multiplicative arithmetic functions with complex values, let $w$ be any arithmetic function with
+complex values, let $*$ denote Dirichlet convolution, let $\mu$ be the Möbius function, put
+$g = w * \mu$, and for real $y$ put $D(y) = \sum_{1 \le j \le y} (u * v)(j)$. Then for every
+real $x$,
 
-The paper's `x ≥ 1` is dropped (both sides vanish for `x < 1`); the trailing text about the
-Dirichlet divisor problem is omitted.
+$$
+\sum_{1 \le j \le x} w(j)\, (u * v)(j) =
+\sum_{1 \le r \le x} g(r) \sum_{d \mid r} u(d)\, v(r/d) \sum_{m \mid d} \mu(m)\, v(m)\,
+D\left(\frac{x}{mr}\right),
+$$
+
+where $r$, $d$ and $m$ run over positive integers.
+
+Both sides vanish for $x < 1$; the source assumes $x \ge 1$.
 
 ## Depends on
 

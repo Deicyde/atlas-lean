@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorf_variation_density_fib_eq_one
 ---
 
-# Zeckendorf variation density fib eq one
+# Fibonacci shifts have the same Zeckendorf variation densities as shift one
 
-`μ^{(F_ℓ)} = μ^{(1)}` for every `ℓ ≥ 2`: whenever `μ d` is the asymptotic density of
-`{n : s(n + 1) - s(n) = d}` for every `d`, it is also the density of
-`{n : s(n + F_ℓ) - s(n) = d}`.
+**Fibonacci shifts have the same Zeckendorf variation densities as shift one.** For
+$n \in \mathbb{N}$ let $s(n)$ be the number of terms in the Zeckendorf representation of $n$, and
+let $F_\ell$ be the $\ell$-th Fibonacci number ($F_1 = F_2 = 1$). Let $\ell \ge 2$ and let
+$\mu : \mathbb{Z} \to \mathbb{R}$ be such that for every $d \in \mathbb{Z}$ the set
+$\{n \in \mathbb{N} : s(n + 1) - s(n) = d\}$ has natural density $\mu(d)$. Then for every
+$d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + F_\ell) - s(n) = d\}$ also has natural
+density $\mu(d)$.
 
 ## Depends on
 

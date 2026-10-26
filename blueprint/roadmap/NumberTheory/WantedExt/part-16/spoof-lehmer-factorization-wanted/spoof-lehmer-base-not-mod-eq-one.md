@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.spoofLehmer_base_not_modEq_one
 ---
 
-# Spoof Lehmer base not mod Eq one
+# Bases of a spoof Lehmer factorization modulo divisors of its evaluation
 
-Let `F = x_1 ⋯ x_r` be a nontrivial spoof Lehmer factorization. For any integer `n` dividing
-`ẽ(F)` and any base `x_i`, `x_i ≢ 1 (mod n)`. Corrected reading: `n` is a non-unit (`n ≠ ±1`).
-As printed the claim fails for `n = 1`: `3 ⋅ 3` is `2`-Lehmer (`2 ⋅ 4 = 9 - 1`) and
-`3 ≡ 1 (mod 1)`; the proof's contradiction `0 ≡ -1 (mod n)` needs `n ∤ 1`.
+**Bases of a spoof Lehmer factorization modulo divisors of its evaluation.** Let
+$x_1, \dots, x_r$ be natural numbers and let $F = x_1 \cdots x_r$ be the spoof factorization with
+these bases, all with exponent $1$. Suppose $F$ is a nontrivial spoof $k$-Lehmer factorization for
+some integer $k$. If $n$ is an integer with $n \ne \pm 1$ that divides the spoof evaluation
+$\tilde e(F)$, then $x_i \not\equiv 1 \pmod n$ for every $i$.
+
+The source states this for every integer $n$ dividing $\tilde e(F)$, but the hypothesis
+$n \ne \pm 1$ cannot be dropped: $3 \cdot 3$ is a nontrivial spoof $2$-Lehmer factorization
+($2 \cdot 4 = 9 - 1$), $1$ divides $\tilde e(3 \cdot 3) = 9$, and $3 \equiv 1 \pmod 1$. The source's
+proof reaches $0 \equiv -1 \pmod n$, which is a contradiction only when $n \nmid 1$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
-- [Spoof Eval](spoof-eval.md)
-- [Spoof Of Bases](spoof-of-bases.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
+- [Spoof evaluation](spoof-eval.md)
+- [Factorization with all exponents one](spoof-of-bases.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.logSmallestDenominatorDensity_zero
 ---
 
-# Log Smallest Denominator Density zero
+# Value of the log smallest-denominator density at zero
 
-`η_log(0) = 6/π²`.
+**Value of the log smallest-denominator density at zero.** The density $\eta_{\log}$ of the
+logarithmic smallest denominator satisfies $\eta_{\log}(0) = 6/\pi^2$.
 
 ## Depends on
 
-- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
+- [Density of the logarithmic smallest denominator](log-smallest-denominator-density.md)
 
 ## Sources
 

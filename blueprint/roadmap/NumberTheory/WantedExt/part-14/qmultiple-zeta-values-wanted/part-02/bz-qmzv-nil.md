@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.bzQMZV_nil
 ---
 
-# Bz QMZV nil
+# Bradley–Zhao qMZV of the empty index
 
-`ζ_q^BZ(∅) = 1`.
+**Bradley–Zhao qMZV of the empty index.** The Bradley–Zhao q-multiple zeta value of the
+empty index is $\zeta_q^{BZ}(\varnothing) = 1$.
 
 ## Depends on
 
-- [Bz QMZV](bz-qmzv.md)
+- [Bradley–Zhao q-multiple zeta values](bz-qmzv.md)
 
 ## Sources
 

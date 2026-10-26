@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.truncatedLogResultantProduct_one
 ---
 
-# Truncated Log Resultant Product one
+# Resultant product at $n = 1$
 
-`𝒫_1 = 1` (an empty product).
+**Resultant product at $n = 1$.** The resultant product satisfies $\mathcal{P}_1 = 1$; it is an
+empty product.
 
 ## Depends on
 
-- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
+- [Resultant product for truncated logarithmic polynomials](truncated-log-resultant-product.md)
 
 ## Proof depends on
 
-- [Scaled Truncated Log Polynomial](scaled-truncated-log-polynomial.md)
+- [Scaled truncated logarithmic polynomial](scaled-truncated-log-polynomial.md)
 
 ## Sources
 

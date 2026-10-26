@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nat_schatunowsky
 ---
 
-# Nat schatunowsky
+# Schatunowsky's theorem
 
-Schatunowsky's theorem: the integers `a ≥ 2` such that every `b` with `1 < b < a` and
-`gcd(a, b) = 1` is prime are exactly `2, 3, 4, 6, 8, 12, 18, 24, 30`. Here
-`T(a) = {b | 1 < b < a, gcd(a, b) = 1}`, the rational counterpart of the paper's
-`T_G(α) = {β | 1 < N(β) < N(α), gcd(α, β) = 1}`; `a = 0, 1` (empty `T(a)`) are excluded, as
-in the printed set.
+**Schatunowsky's theorem.** The natural numbers $a \ge 2$ such that every natural number $b$
+with $1 < b < a$ and $\gcd(a, b) = 1$ is prime are exactly $2, 3, 4, 6, 8, 12, 18, 24$ and $30$.
+
+The numbers $a = 0$ and $a = 1$, for which no such $b$ exists, are excluded.
 
 ## Depends on
 

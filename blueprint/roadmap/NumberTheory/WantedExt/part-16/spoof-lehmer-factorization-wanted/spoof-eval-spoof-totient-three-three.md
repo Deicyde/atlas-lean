@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.spoofEval_spoofTotient_three_three
 ---
 
-# Spoof Eval spoof Totient three three
+# Spoof evaluation and spoof totient of $3 \cdot 3$
 
-Characteristic values: `ẽ(3 ⋅ 3) = 9` and `φ̃(3 ⋅ 3) = 4`.
+**Spoof evaluation and spoof totient of $3 \cdot 3$.** Let $3 \cdot 3$ denote the spoof
+factorization $3^1 \cdot 3^1$, with two factors of base $3$ and exponent $1$. Its spoof evaluation
+is $\tilde e(3 \cdot 3) = 9$ and its spoof totient is $\tilde\varphi(3 \cdot 3) = 4$.
 
 ## Depends on
 
-- [Spoof Eval](spoof-eval.md)
-- [Spoof Totient](spoof-totient.md)
+- [Spoof evaluation](spoof-eval.md)
+- [Spoof totient](spoof-totient.md)
 
 ## Sources
 

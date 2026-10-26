@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pellShiftBound_zero_zero
 ---
 
-# Pell Shift Bound zero zero
+# The bound $K$ of the unshifted Pell equation
 
-`K = 1` for the unshifted equation `a = b = 0`.
+**The bound $K$ of the unshifted Pell equation.** For every integer $D$, the constant
+$K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$ with $a = b = 0$ equals $1$.
 
 ## Depends on
 
-- [Pell Shift Bound](pell-shift-bound.md)
+- [The bound $K$ for the shifted Pell equation](pell-shift-bound.md)
 
 ## Sources
 

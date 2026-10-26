@@ -5,19 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisConjecturesWanted.avoidZZ1Z_spec
 ---
 
-# Theorem 3
+# Recurrence for words avoiding the pattern $z, z+1, z$
 
-**Theorem 3**: the numbers `f_k(n)` of words of
-length `n` over a `k`-letter avoiding the pattern
-`z, z+1, z` satisfy `f_k(0) = 1`, `f_k(1) = k`,
-`f_k(2) = k^2`, and, for `n ≥ 3`,
-`f_k(n) = k f_k(n-1) - f_k(n-2) + f_k(n-3)`. The
-alphabet is nonempty (`k ≥ 1`); at `k = 0` the recurrence
-would read `0 = 1` at `n = 3`.
+**Recurrence for words avoiding the pattern $z, z+1, z$.** Let $k \ge 1$ and, for each
+natural number $n$, let $f_k(n)$ be the number of words of length $n$ over the alphabet
+$\{0, 1, \dots, k-1\}$ that avoid the consecutive pattern $z, z+1, z$. Then $f_k(0) = 1$,
+$f_k(1) = k$, $f_k(2) = k^2$, and $f_k(n) = k f_k(n-1) - f_k(n-2) + f_k(n-3)$ for every $n \ge 3$.
+
+At $k = 0$ the recurrence would read $0 = 1$ at $n = 3$.
 
 ## Depends on
 
-- [Avoid ZZ1 Z](avoid-zz1-z.md)
+- [Words avoiding the consecutive pattern $z, z+1, z$](avoid-zz1-z.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_polygonal_add_polygonal_modEq_prime
 ---
 
-# Exists polygonal add polygonal mod Eq prime
+# Sums of two polygonal numbers modulo an odd prime
 
-For an odd prime `p`, positive `n` and `s > 3`, some positive `x, y` have
-`P_s(x) + P_s(y) ≡ n (mod p)`.
+**Sums of two polygonal numbers modulo an odd prime.** For a natural number $s > 3$ and a
+natural number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. For
+every odd prime $p$ and every natural number $n > 0$ there are natural numbers $x, y > 0$ with
+$P_s(x) + P_s(y) \equiv n \pmod{p}$.
 
 ## Depends on
 

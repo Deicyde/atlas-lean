@@ -6,16 +6,16 @@ navigation: module
 
 ## Finite Iteration
 
-- [Lfp Fin](lfp-fin.md)
-- [Gfp Fin](gfp-fin.md)
-- [Lfp Fin fixed](lfp-fin-fixed.md)
-- [Gfp Fin fixed](gfp-fin-fixed.md)
-- [Lfp Fin le](lfp-fin-le.md)
-- [Le gfp Fin](le-gfp-fin.md)
+- [Least fixed point of a finset map by finite iteration](lfp-fin.md)
+- [Greatest fixed point of a finset map by finite iteration](gfp-fin.md)
+- [Finite iteration from the empty set reaches a fixed point](lfp-fin-fixed.md)
+- [Finite iteration from the whole type reaches a fixed point](gfp-fin-fixed.md)
+- [The finite least fixed point lies in every pre-fixed point](lfp-fin-le.md)
+- [Every post-fixed point lies in the finite greatest fixed point](le-gfp-fin.md)
 
 ## Bridge
 
-- [Mem finset iterate iff](mem-finset-iterate-iff.md)
-- [Mem finset iterate univ iff](mem-finset-iterate-univ-iff.md)
-- [Mem lfp Fin iff lfp](mem-lfp-fin-iff-lfp.md)
-- [Mem gfp Fin iff gfp](mem-gfp-fin-iff-gfp.md)
+- [Finset and predicate iterations from the bottom agree](mem-finset-iterate-iff.md)
+- [Finset and predicate iterations from the top agree](mem-finset-iterate-univ-iff.md)
+- [Finite iteration computes the least fixed point](mem-lfp-fin-iff-lfp.md)
+- [Finite iteration computes the greatest fixed point](mem-gfp-fin-iff-gfp.md)

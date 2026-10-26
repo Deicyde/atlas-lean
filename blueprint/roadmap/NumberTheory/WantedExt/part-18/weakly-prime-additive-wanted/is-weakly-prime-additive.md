@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsWeaklyPrimeAdditive
 ---
 
-# Is Weakly Prime Additive
+# Weakly prime-additive numbers
 
-A positive integer `n` is weakly prime-additive if it has at least two distinct prime divisors
-and is a sum of positive powers of some distinct prime divisors of `n`.
+**Weakly prime-additive numbers.** A natural number $n$ is weakly prime-additive if it has at
+least two distinct prime divisors and is a sum $n = \sum_{p \in s} p^{e_p}$ of positive powers
+$p^{e_p}$, $e_p \ge 1$, over some set $s$ of distinct prime divisors of $n$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
+- [Sums of powers of distinct prime divisors](is-prime-divisor-power-sum.md)
 
 ## Sources
 

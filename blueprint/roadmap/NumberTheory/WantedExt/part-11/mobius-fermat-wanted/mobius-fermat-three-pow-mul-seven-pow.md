@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.mobiusFermat_three_pow_mul_seven_pow
 ---
 
-# Mobius Fermat three pow mul seven pow
+# The Möbius–Fermat function at $3^m 7^n$
 
-Proposition 7, equations (18) and (19): for `m n : ℕ`,
-`μ_M (3 ^ m * 7 ^ n) = (-1) ^ (m + n) * ∑_{j=0}^{min(⌊m/2⌋, n)} C(n, j) * C(m + n - 2j, m - 2j)`,
-and the same sum equals `∑_j (m + n - 2j)! / ((m - 2j)! (n - j)! j!)`.
+**The Möbius–Fermat function at $3^m 7^n$.** Let $u_M$ be the Fermat unit function
+and let $\mu_M$ be an integer-valued arithmetic function with $\mu_M * u_M = \varepsilon$, where
+$*$ is Dirichlet convolution and $\varepsilon$ is its identity, with $\varepsilon(1) = 1$ and
+$\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the Dirichlet inverse of $u_M$, the
+Möbius–Fermat function.
+Then for all integers $m, n \ge 0$,
+
+$$\mu_M(3^m 7^n) = (-1)^{m+n} \sum_{j=0}^{\min(\lfloor m/2 \rfloor, n)}
+\binom{n}{j} \binom{m + n - 2j}{m - 2j},$$
+
+and, as rational numbers,
+
+$$\mu_M(3^m 7^n) = (-1)^{m+n} \sum_{j=0}^{\min(\lfloor m/2 \rfloor, n)}
+\frac{(m + n - 2j)!}{(m - 2j)! \, (n - j)! \, j!}.$$
 
 ## Depends on
 
-- [Fermat Unit Function](fermat-unit-function.md)
+- [Fermat unit function](fermat-unit-function.md)
 
 ## Sources
 

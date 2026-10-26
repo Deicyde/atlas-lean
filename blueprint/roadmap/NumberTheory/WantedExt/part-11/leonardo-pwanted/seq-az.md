@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.seqAZ
 ---
 
-# Seq AZ
+# The sequence $A_p$
 
-The paper's sequence `A_p` on `ℤ`: the element of
-`H(p)` with `A_p(n) = 1` for `1 ≤ n ≤ p` and `A_p(n) = 0`
-for `-p ≤ n ≤ 0`.
+**The sequence $A_p$.** For a natural number $p \ge 1$, $A_p : \mathbb{Z} \to \mathbb{Z}$ is
+the unique sequence with $A_p(n) = 0$ for $-p \le n \le 0$ and $A_p(n) = 1$ for $1 \le n \le p$
+that satisfies $A_p(n) = A_p(n-1) + A_p(n-p) - A_p(n-2p-1)$ for every integer $n$. For $p = 0$
+it is the zero sequence.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [H Seq Z](h-seq-z.md)
+- [Two-sided extension of initial values by the $H(p)$ recurrence](h-seq-z.md)
 
 ## Sources
 

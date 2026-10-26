@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.szBlockIndex
 ---
 
-# Sz Block Index
+# Block indices for Schlesinger–Zudilin qMZVs
 
-The SZ index `(k₁, {0}^{d₁-1}, …, kᵣ, {0}^{dᵣ-1})` built from the list of
-pairs `[(k₁, d₁), …, (kᵣ, dᵣ)]`.
+**Block indices for Schlesinger–Zudilin qMZVs.** For a list of pairs of natural numbers
+$(k_1, d_1), \dots, (k_r, d_r)$, the block index is the index
+$(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$ obtained by concatenating, for
+$j = 1, \dots, r$, the entry $k_j$ followed by $d_j - 1$ zeros (no zeros when $d_j = 0$).
 
 ## Depends on
 

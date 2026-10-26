@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isUnitarySZumkeller_sixty
 ---
 
-# Is Unitary SZumkeller sixty
+# The number 60 is unitary s-Zumkeller
 
-`60` is unitary s-Zumkeller: `20² + 3² + 1² = 410` is half of the sum of the
-squares of its proper unitary divisors `1, 3, 4, 5, 12, 15, 20`.
+**The number 60 is unitary s-Zumkeller.** The number $60$ is a unitary s-Zumkeller number: its
+proper unitary divisors are $1, 3, 4, 5, 12, 15, 20$, and $20^2 + 3^2 + 1^2 = 410$ is half the sum
+of their squares.
 
 ## Depends on
 
-- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+- [Unitary s-Zumkeller numbers](is-unitary-szumkeller.md)
 
 ## Proof depends on
 

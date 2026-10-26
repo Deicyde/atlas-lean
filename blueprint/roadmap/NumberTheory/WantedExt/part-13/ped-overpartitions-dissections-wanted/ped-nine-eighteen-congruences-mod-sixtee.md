@@ -5,23 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.pedNineEighteen_congruences_mod_sixteen
 ---
 
-# Ped Nine Eighteen congruences mod sixteen
+# Congruences modulo 16 and 8 for (9, 18)-overpartitions with even parts distinct
 
-Congruences modulo `16` and `8` for `ped_{9,18}`: for all `n, α, β, γ ≥ 0`,
-(105) `∑ ped_{9,18}(2·3^{4α+4}·5^{2β} n + (13·3^{4α+3}·5^{2β} + 1)/4) q^n ≡ 8 f_1^13 (mod 16)`,
-(106) `ped_{9,18}(2·3^{4α+4}·5^{2β+1}(5n+i) + (17·3^{4α+3}·5^{2β+1} + 1)/4) ≡ 0 (mod 16)` for
-`i ∈ {0, 1, 3, 4}`,
-(107) `∑ ped_{9,18}(2·3^{4α+4}·7^{2γ} n + (5·3^{4α+3}·7^{2γ} + 1)/4) q^n ≡ 8 f_1^5 (mod 16)`,
-(108) `ped_{9,18}(2·3^{4α+4}·7^{2γ+1}(7n+j) + (11·3^{4α+3}·7^{2γ+1} + 1)/4) ≡ 0 (mod 16)` for
-`j ∈ {0, 2, 3, 4, 5, 6}`, and
-(109) `ped_{9,18}(2·3^{4α+4} n + (3^{4α+3} + 1)/4)` is `≡ 4 (mod 8)` if `n` is a pentagonal number
-and `≡ 0 (mod 8)` otherwise. "Pentagonal number" is read as a generalized pentagonal number
-`m(3m-1)/2`, `m ∈ ℤ` (the exponents of `f_1`, which the proof reduces this case to); this is
-written `2n = m(3m-1)`. All divisions are exact.
+**Congruences modulo 16 and 8 for [9, 18]-overpartitions with even parts distinct.** Let
+$\mathrm{ped}_{9,18}(n)$ be the number of $[9, 18]$-overpartitions of $n$ with even parts
+distinct, let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and read congruences between integer power
+series in $q$ coefficientwise. For all $\alpha, \beta, \gamma \ge 0$ the following hold, where the
+statements about single values hold for every $n \ge 0$:
+(105) $\sum_{n \ge 0} \mathrm{ped}_{9,18}\bigl(2 \cdot 3^{4\alpha+4} 5^{2\beta} n +
+(13 \cdot 3^{4\alpha+3} 5^{2\beta} + 1)/4\bigr) q^n \equiv 8 f_1^{13} \pmod{16}$;
+(106) $\mathrm{ped}_{9,18}\bigl(2 \cdot 3^{4\alpha+4} 5^{2\beta+1} (5n + i) +
+(17 \cdot 3^{4\alpha+3} 5^{2\beta+1} + 1)/4\bigr) \equiv 0 \pmod{16}$ for $i \in \{0, 1, 3, 4\}$;
+(107) $\sum_{n \ge 0} \mathrm{ped}_{9,18}\bigl(2 \cdot 3^{4\alpha+4} 7^{2\gamma} n +
+(5 \cdot 3^{4\alpha+3} 7^{2\gamma} + 1)/4\bigr) q^n \equiv 8 f_1^5 \pmod{16}$;
+(108) $\mathrm{ped}_{9,18}\bigl(2 \cdot 3^{4\alpha+4} 7^{2\gamma+1} (7n + j) +
+(11 \cdot 3^{4\alpha+3} 7^{2\gamma+1} + 1)/4\bigr) \equiv 0 \pmod{16}$ for
+$j \in \{0, 2, 3, 4, 5, 6\}$;
+(109) $\mathrm{ped}_{9,18}\bigl(2 \cdot 3^{4\alpha+4} n + (3^{4\alpha+3} + 1)/4\bigr)$ is congruent
+to $4$ modulo $8$ if $n = m(3m-1)/2$ for some integer $m$ (a generalized pentagonal number), and
+to $0$ modulo $8$ otherwise.
+All divisions by $4$ are exact.
 
 ## Depends on
 
-- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [The partition function $\mathrm{ped}_{9,18}$](ped-nine-eighteen.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

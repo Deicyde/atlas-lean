@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.floorQuotientOddCount_eq_divisor_summatory_sub
 ---
 
-# Floor Quotient Odd Count eq divisor summatory sub
+# The floor parity count through the divisor summatory function
 
-Corollary 3: `𝓕_n = D(n) - 2 D(n/2)`, where `D(x) = ∑_{m ≤ x} τ(m)` is
-the divisor summatory function; for integer `m`, `m ≤ n/2` means
-`m ≤ ⌊n/2⌋ = n / 2`.
+**The floor parity count through the divisor summatory function.** Let $\tau(m)$ be the
+number of positive divisors of $m$, let $D(x) = \sum_{1 \le m \le x} \tau(m)$, and let
+$\mathcal{F}_n$ be the number of integers $k$ with $1 \le k \le n$ for which
+$\lfloor n/k \rfloor$ is odd. For every natural number $n$, $\mathcal{F}_n = D(n) - 2D(n/2)$,
+where $D(n/2) = D(\lfloor n/2 \rfloor)$.
 
 ## Depends on
 
-- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
+- [Floor sequence parity count](floor-quotient-odd-count.md)
 
 ## Sources
 

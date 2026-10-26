@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lurothDigitSeq_succ
 ---
 
-# Luroth Digit Seq succ
+# The Lüroth map shifts the digits
 
-The digits of `L(x)` are the digits of `x` shifted by one: `d_{k+1}(L x) = d_{k+2}(x)`.
+**The Lüroth map shifts the digits.** For every real number $x$ and every $n \ge 1$, the
+$n$-th Lüroth digit of $L(x)$, where $L$ is the Lüroth map, is the $(n+1)$-st Lüroth digit of
+$x$: $d_n(L(x)) = d_{n+1}(x)$.
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
-- [Luroth Map](luroth-map.md)
+- [Lüroth digits](luroth-digit-seq.md)
+- [Lüroth map](luroth-map.md)
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
+- [First Lüroth digit](luroth-digit.md)
 
 ## Sources
 

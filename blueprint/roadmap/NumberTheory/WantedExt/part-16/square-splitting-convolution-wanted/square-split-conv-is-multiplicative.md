@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitConv_isMultiplicative
 ---
 
-# Square Split Conv is Multiplicative
+# The square-splitting convolution preserves multiplicativity
 
-Corollary 1: if `f` and `g` are multiplicative, so is `f ⋆ g`.
+**The square-splitting convolution preserves multiplicativity.** If $f$ and $g$ are
+multiplicative complex arithmetic functions, then their square-splitting convolution $f \star g$
+is multiplicative. Here an arithmetic function $h$ is multiplicative when $h(1) = 1$ and
+$h(mn) = h(m)\, h(n)$ for all coprime $m$ and $n$.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
+- [Square-splitting convolution](square-split-conv.md)
 
 ## Sources
 

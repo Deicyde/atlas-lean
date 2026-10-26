@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.imagQuadratic_units_isCyclic_card
 ---
 
-# Imag Quadratic units is Cyclic card
+# Unit groups of imaginary quadratic fields
 
-Proposition 2 (units): the unit group of the ring of integers of an imaginary quadratic field
-is cyclic of order `4` for `ℚ(√-1)` (discriminant `-4`), `6` for `ℚ(√-3)` (discriminant `-3`),
-and `2` otherwise. The representative convention `-θ_m < arg α ≤ θ_m` in the record is setup text
-and is not stated.
+**Unit groups of imaginary quadratic fields.** Let $K$ be an imaginary quadratic field with
+discriminant $d_K$. The unit group of its ring of integers $\mathcal{O}_K$ is cyclic, of order
+$4$ if $d_K = -4$, of order $6$ if $d_K = -3$, and of order $2$ otherwise.
 
 ## Depends on
 

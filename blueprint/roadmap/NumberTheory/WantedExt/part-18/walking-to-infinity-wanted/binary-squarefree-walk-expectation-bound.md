@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.binary_squarefree_walk_expectation_bounds
 ---
 
-# Binary squarefree walk expectation bounds
+# Bounds on the binary expected square-free walk length
 
-Bounds on the binary expected square-free walk length
-`E₂ = ∑_{k ≥ 1} L_{2,k} / 2^k` (the series the proof of Theorem 3.8 uses):
-`636163720502 / 2^38 ≤ E₂ ≤ 636163930777 / 2^38`. The paper's Lemma 3.7 prints the
-denominators `b^k - b^{k-1}`, which for `b = 2` would double the sum.
+**Bounds on the binary expected square-free walk length.** Let $L_{2,k}$ denote the number of
+right-truncatable square-free numbers with exactly $k$ digits in base $2$. The real series
+$E_2 = \sum_{k \ge 1} L_{2,k} / 2^k$ satisfies
+$636163720502 / 2^{38} \le E_2 \le 636163930777 / 2^{38}$.
+
+This is the series the proof of Theorem 3.8 uses. The paper's Lemma 3.7 prints the denominators
+$b^k - b^{k-1}$, which for $b = 2$ would double the sum.
 
 ## Depends on
 
-- [Right Trunc Squarefree Count](right-trunc-squarefree-count.md)
+- [Counting right-truncatable square-free numbers](right-trunc-squarefree-count.md)
 
 ## Sources
 

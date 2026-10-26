@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.floorQuotientOddCount_asymptotic
 ---
 
-# Floor Quotient Odd Count asymptotic
+# Asymptotics of the floor parity count
 
-Proposition 7: `𝓕_n = n log 2 + O(√n)` and `𝓕_n / n → log 2`.
+**Asymptotics of the floor parity count.** Let $\mathcal{F}_n$ be the number of integers $k$
+with $1 \le k \le n$ for which $\lfloor n/k \rfloor$ is odd. There is a real constant $C$ such
+that $|\mathcal{F}_n - n \log 2| \le C \sqrt{n}$ for every integer $n \ge 1$, and
+$\mathcal{F}_n / n \to \log 2$ as $n \to \infty$.
 
 ## Depends on
 
-- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
+- [Floor sequence parity count](floor-quotient-odd-count.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.three_dvd_of_isSZumkeller
 ---
 
-# Three dvd of is SZumkeller
+# Even s-Zumkeller numbers are divisible by 3
 
-An even s-Zumkeller number is divisible by `3`.
+**Even s-Zumkeller numbers are divisible by 3.** If $n$ is an even s-Zumkeller number, then
+$3$ divides $n$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

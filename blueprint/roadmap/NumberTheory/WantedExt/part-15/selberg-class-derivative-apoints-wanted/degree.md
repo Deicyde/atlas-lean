@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.degree
 ---
 
-# Degree
+# Degree of a function in the Selberg class
 
-The degree `d_F = 2 ∑ λ_j`.
+**Degree of a function in the Selberg class.** For a function $F$ in the Selberg class whose
+functional equation has Gamma-factor scalings $\lambda_1, \dots, \lambda_r$, the degree of $F$ is
+$d_F = 2 \sum_{j=1}^{r} \lambda_j$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

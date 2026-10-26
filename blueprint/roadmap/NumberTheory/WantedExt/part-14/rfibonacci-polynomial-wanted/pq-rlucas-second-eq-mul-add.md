@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.pqRLucasSecond_eq_mul_add
 ---
 
-# Pq RLucas Second eq mul add
+# Recurrence-type formula for second-kind (p, q)-Lucas polynomials
 
-Theorem 3.3, second kind: for `n ≥ r`,
-`𝕍^{(r,s)}_n(x, y) = x U_n(x, y) + (1 + s) (q/p)^{n-r} y U_{n-r}(x, y p^r q^{m-r})`
-(the paper's argument list `(x, y p^r q^{m-r}, m)` drops `p, q`; they are unchanged).
+**Recurrence-type formula for second-kind (p, q)-Lucas polynomials.** Let $K$ be a field, let
+$r \ge 1$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in K$ with $p \ne 0$ and
+$q \ne 0$. Write $U_n(x, y)$ for the $(p, q)$-analogue of the $r$-Fibonacci polynomial with
+parameters $p, q, m$, and $\mathbb{V}_n(x, y)$ for the second-kind $(p, q)$-analogue of the
+$r$-Lucas polynomial of type $s$ with the same parameters. Then for every natural number
+$n \ge r$,
+
+$$
+\mathbb{V}_n(x, y) = x\,U_n(x, y) + (1 + s)\,(q/p)^{n-r}\,y\,U_{n-r}(x, y p^r q^m / q^r).
+$$
+
+The paper writes the second argument as $y p^r q^{m-r}$ and drops $p, q$ from the argument list
+$(x, y p^r q^{m-r}, m)$; they are unchanged.
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
-- [Pq RLucas Second](pq-rlucas-second.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
+- [Second-kind (p, q)-Lucas polynomials](pq-rlucas-second.md)
 
 ## Sources
 

@@ -6,22 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.mallowsRep_zero_of_lt
 ---
 
-# Mallows Rep zero of lt
+# The first Mallows letter below one half
 
-Characteristic value: `M_1(α) = L` for `α < 1/2`.
+**The first Mallows letter below one half.** For every real number $\alpha < 1/2$, the first
+letter $M_1(\alpha)$ of the Mallows representation of $\alpha$ is $L$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Proof depends on
 
-- [Mallows Insert](mallows-insert.md)
-- [Mallows Insert zero one](mallows-insert-zero-one.md)
-- [Mallows Interval](mallows-interval.md)
-- [Nat Pair To Real](nat-pair-to-real.md)
-- [Nat Pair To Real one two](nat-pair-to-real-one-two.md)
+- [Mallows' insertion rule](mallows-insert.md)
+- [Mallows insertion between $0/1$ and $1/1$](mallows-insert-zero-one.md)
+- [Gaps along the Mallows path of a real number](mallows-interval.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
+- [The pair $(1, 2)$ encodes $1/2$](nat-pair-to-real-one-two.md)
 
 ## Sources
 

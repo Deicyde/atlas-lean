@@ -5,9 +5,11 @@ statement: formalized
 lean: WantedExt.NumberTheory.Polymath8b.DyadicSupport
 ---
 
-# Dyadic Support
+# Support in a dyadic interval
 
-Support in the source dyadic interval, with no extra zero coefficient.
+**Support in a dyadic interval.** A finitely supported sequence
+$\alpha : \mathbb{N} \to \mathbb{R}$ is supported in the dyadic interval at scale
+$N \in \mathbb{R}$ if every $n$ with $\alpha(n) \ne 0$ satisfies $n \ge 1$ and $N \le n \le 2N$.
 
 ## Depends on
 

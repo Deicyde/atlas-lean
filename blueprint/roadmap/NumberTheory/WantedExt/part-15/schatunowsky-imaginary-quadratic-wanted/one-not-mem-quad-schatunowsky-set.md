@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.one_not_mem_quadSchatunowskySet
 ---
 
-# One not mem quad Schatunowsky Set
+# One is not in the Schatunowsky set
 
-`1 ∉ Q_{m,ℓ}` (its norm is `1`).
+**One is not in the Schatunowsky set.** For every number field $K$ and every natural number
+$\ell$, the element $1$ of the ring of integers $\mathcal{O}_K$ does not lie in the Schatunowsky
+set $Q_\ell(K)$, because the ideal it generates has norm $1$.
 
 ## Depends on
 
-- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
+- [Schatunowsky set of a number field](quad-schatunowsky-set.md)
 
 ## Sources
 

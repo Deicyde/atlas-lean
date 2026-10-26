@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.three_four_five_mem_ratPythagoreanTriples
 ---
 
-# Three four five mem rat Pythagorean Triples
+# $(3, 4, 5)$ is a rational Pythagorean triple
 
-`(3, 4, 5) ∈ E`.
+**$(3, 4, 5)$ is a rational Pythagorean triple.** The triple $(3, 4, 5)$ belongs to the set $E$
+of rational triples $(x, y, z)$ with $x \neq 0$ and $x^2 + y^2 = z^2$.
 
 ## Depends on
 
-- [Rat Pythagorean Triples](rat-pythagorean-triples.md)
+- [Rational Pythagorean triples](rat-pythagorean-triples.md)
 
 ## Sources
 

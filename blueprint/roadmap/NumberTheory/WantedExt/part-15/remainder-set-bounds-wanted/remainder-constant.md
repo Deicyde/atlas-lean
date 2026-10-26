@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.remainderConstant
 ---
 
-# Remainder Constant
+# The remainder-set constant
 
-The limiting constant
-`c = Σ_{p prime} 1/(p(p+1)) · ∏_{q prime, q < p} (1 - 1/q) ≈ 0.2296`.
+**The remainder-set constant.** The remainder-set constant is
+$c = \sum_{p} \frac{1}{p(p+1)} \prod_{q < p} \left(1 - \frac{1}{q}\right)$, where $p$ runs
+over all primes and, for each $p$, $q$ runs over the primes less than $p$.
+
+Numerically, $c \approx 0.2296$.
 
 ## Depends on
 

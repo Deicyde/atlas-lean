@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.min_nLagrangeSpectrum_isolated_sqrt_rat_of_prime_lt_2000
 ---
 
-# Min n Lagrange Spectrum isolated sqrt rat of prime lt 2000
+# Isolated minimum of the $p$-Lagrange spectrum for primes below 2000
 
-Conjecture 1 for primes below 2000: for every prime `p < 2000`, `L_p` has a least element `α`
-that is an isolated point of `L_p` and is the irrational square root of a rational number.
+**Isolated minimum of the $p$-Lagrange spectrum for primes below 2000.** For every prime
+$p < 2000$, the $p$-Lagrange spectrum $L_p$ has a least element $\alpha$ with the following
+properties: $\alpha$ is an isolated point of $L_p$, that is, there is $\varepsilon > 0$ such that
+every $\beta \in L_p$ with $|\beta - \alpha| < \varepsilon$ equals $\alpha$; $\alpha$ is
+irrational; and $\alpha = \sqrt{r}$ for some rational number $r$.
+
+This is Conjecture 1 of the source for primes below 2000.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

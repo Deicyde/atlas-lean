@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisA022030Wanted.conjecture
 ---
 
-# Conjecture
+# Barker's linear recurrence for A022030
 
-The sequence satisfies a linear recurrence from `n ≥ 4`.
+**Barker's linear recurrence for A022030.** The statement that for every natural number
+$n \ge 4$, the sequence $a$ of OEIS A022030 satisfies $a(n) = 4a(n - 1) - a(n - 3) + a(n - 4)$,
+with the subtraction taken in the natural numbers (truncated at $0$).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [A](a.md)
+- [The sequence OEIS A022030](a.md)
 
 ## Sources
 

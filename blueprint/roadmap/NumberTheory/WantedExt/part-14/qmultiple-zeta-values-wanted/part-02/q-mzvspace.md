@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.qMZVSpace
 ---
 
-# Q MZVSpace
+# Spaces of general qMZVs
 
-The `ℚ`-span `𝒵_{q,d}` of the general qMZVs `ζ_q(k₁, …, kᵣ; Q₁, …, Qᵣ)` with
-`Q₁(0) = 0` and `deg Qⱼ ≤ kⱼ - d` (encoded as `natDegree Qⱼ + d ≤ kⱼ`, which for
-`d = 1` also forces `kⱼ ≥ 1`). `qMZVSpace 0` is the algebra `𝒵_q` of qMZVs
-(`kⱼ ≥ 0`) and `qMZVSpace 1` is `𝒵_{q,1}`.
+**Spaces of general qMZVs.** For a natural number $d$, $\mathcal{Z}_{q,d}$ is the
+$\mathbb{Q}$-subspace of the formal power series $\mathbb{Q}[[q]]$ spanned by the general qMZVs
+$\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$ over all $r \ge 0$, natural numbers $k_1, \dots, k_r$
+and polynomials $Q_1, \dots, Q_r \in \mathbb{Q}[X]$ with $\deg Q_j + d \le k_j$ for every $j$
+(the zero polynomial counting as degree $0$) and $Q_1(0) = 0$ when $r \ge 1$.
+
+The space $\mathcal{Z}_q := \mathcal{Z}_{q,0}$ is the space of qMZVs (with $k_j \ge 0$); for
+$d = 1$ the degree condition forces $k_j \ge 1$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q MZV](q-mzv.md)
+- [General q-multiple zeta values](q-mzv.md)
 
 ## Sources
 

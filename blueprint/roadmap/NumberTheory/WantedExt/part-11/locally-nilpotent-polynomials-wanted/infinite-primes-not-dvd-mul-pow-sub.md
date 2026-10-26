@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.infinite_primes_not_dvd_mul_pow_sub
 ---
 
-# Infinite primes not dvd mul pow sub
+# Infinitely many primes avoid $\gamma \alpha^n - \beta$
 
-CRS lemma: if `α, β, γ` are nonzero integers and `β / γ` is not an integer power `α^k`
-(`k ∈ ℤ`), then infinitely many primes divide none of `γ αⁿ - β`, `n ≥ 1`. The condition
-`β / γ ≠ α^k` is stated division-free: `β ≠ γ αᵏ` and `β αᵏ ≠ γ` for all `k ∈ ℕ` (the cases
-`k ≥ 0` and `k ≤ 0`).
+**Infinitely many primes avoid $\gamma \alpha^n - \beta$.** Let $\alpha, \beta, \gamma$ be
+nonzero integers such that $\beta \ne \gamma \alpha^k$ and $\beta \alpha^k \ne \gamma$ for every
+natural number $k$, that is, $\beta / \gamma$ is not $\alpha^k$ for any integer $k$. Then there
+are infinitely many primes $p$ such that $p$ divides none of the integers $\gamma \alpha^n - \beta$
+with $n \ge 1$.
 
 ## Depends on
 

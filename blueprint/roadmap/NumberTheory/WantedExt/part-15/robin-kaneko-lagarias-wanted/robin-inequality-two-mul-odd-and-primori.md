@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.robin_inequality_two_mul_odd_and_primorial
 ---
 
-# Robin inequality two mul odd and primorial
+# Robin's inequality for $2n$ with $n \ge 620$ odd and for primorials above $30$
 
-Robin's inequality holds for `2n` for every odd `n ≥ 620`, and for every primorial
-`m# > 30`.
+**Robin's inequality for $2n$ with $n \ge 620$ odd and for primorials above $30$.** Let
+$\sigma(N)$ denote the sum of the divisors of $N$ and $\gamma$ the Euler–Mascheroni constant. For
+every odd natural number $n \ge 620$, Robin's inequality
+$\sigma(2n) < e^{\gamma} \cdot 2n \log \log (2n)$ holds. For every natural number $m$ whose
+primorial $m\# = \prod_{p \le m,\ p \text{ prime}} p$ exceeds $30$, Robin's inequality
+$\sigma(m\#) < e^{\gamma} \, m\# \log \log (m\#)$ holds.
 
 ## Depends on
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Odd Zeta Dirichlet Beta Euler
 
-- [Has Sum one div odd pow](has-sum-one-div-odd-pow.md)
-- [Dirichlet Beta two mul add one](dirichlet-beta-two-mul-add-one.md)
-- [Tendsto integral sinc pow](tendsto-integral-sinc-pow.md)
-- [Tendsto sum sin pow div pow](tendsto-sum-sin-pow-div-pow.md)
+- [Zeta series over odd denominators](has-sum-one-div-odd-pow.md)
+- [Dirichlet beta at odd positive integers](dirichlet-beta-two-mul-add-one.md)
+- [Integrals of powers of $\sin x / x$](tendsto-integral-sinc-pow.md)
+- [Sums of powers of $\sin(nt)/n$](tendsto-sum-sin-pow-div-pow.md)

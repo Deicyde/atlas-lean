@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.setOf_prime_not_isSophieGermainPrime_eq_inter
 ---
 
-# Set Of prime not is Sophie Germain Prime eq inter
+# Primes that are not Sophie Germain primes
 
-The primes that are not Sophie Germain primes are exactly the primes in
-`A = ⋃_{p odd prime} A(p)`, where `A(p) = {p r + (p - 1)/2 : r = 1, 2, 3, …}`; equivalently,
-the Sophie Germain primes are the primes outside `A`.
+**Primes that are not Sophie Germain primes.** For an odd prime $p$, let
+$A(p) = \{pr + (p - 1)/2 : r = 1, 2, 3, \dots\}$, and let $A$ be the union of the sets $A(p)$ over
+all odd primes $p$. A prime is not a Sophie Germain prime if and only if it lies in $A$;
+equivalently, the Sophie Germain primes are exactly the primes outside $A$.
 
 ## Depends on
 

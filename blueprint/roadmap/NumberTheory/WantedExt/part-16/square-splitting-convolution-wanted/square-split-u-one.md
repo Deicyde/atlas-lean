@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.squareSplitU_one
 ---
 
-# Square Split U one
+# Squarefree part of one
 
-`u(1) = 1`.
+**Squarefree part of one.** We have $u(1) = 1$, where $u(n)$ is the product of the primes
+dividing $n$ to an odd power.
 
 ## Depends on
 
-- [Square Split U](square-split-u.md)
+- [Squarefree part](square-split-u.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.shifted_floor_sequence_card_ge
 ---
 
-# Shifted floor sequence card ge
+# Tail counts of the shifted floor sequence
 
-Lemma 24: for `α, ν ∈ [0, 1)` and `nα ≥ ν`, all `n` terms of the
-`α`-shifted, `ν`-offset floor sequence of length `n` are at least `1`, and
-for `k ≥ 2` exactly `⌊(n-ν)/(k-α)⌋` of them are at least `k`.
+**Tail counts of the shifted floor sequence.** Let $n$ be a natural number and let $\alpha$
+and $\nu$ be real numbers with $0 \le \alpha < 1$, $0 \le \nu < 1$ and $\nu \le n\alpha$. Then
+$\lfloor (n - \nu)/d + \alpha \rfloor \ge 1$ for all $n$ integers $d$ with $1 \le d \le n$, and
+for every natural number $k \ge 2$ the number of integers $d$ with $1 \le d \le n$ and
+$\lfloor (n - \nu)/d + \alpha \rfloor \ge k$ is $\lfloor (n - \nu)/(k - \alpha) \rfloor$.
 
 ## Depends on
 

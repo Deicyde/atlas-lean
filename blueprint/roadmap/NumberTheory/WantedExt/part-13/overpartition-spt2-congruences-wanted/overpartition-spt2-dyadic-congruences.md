@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionSpt2_dyadic_congruences
 ---
 
-# Overpartition Spt2 dyadic congruences
+# Congruences modulo 4 for $\overline{\mathrm{spt2}}$ along powers of 2
 
-For all natural `j` and `n`, the six clauses state the modulo-four vanishing of
-`overpartitionSpt2` at, in order, `2^(j+4) n + 7·2^(j+1)`,
-`2^(j+2)·9 n + 15·2^(j+1)`, `2^(j+4)·3 n + 17·2^(j+1)`,
-`2^(j+3)·9 n + 21·2^(j+1)`, `2^(j+4)·5 n + 17·2^(j+1)`, and
-`2^(j+4)·5 n + 33·2^(j+1)`. Natural-number remainder equalities encode congruence modulo
-four; there is no other deviation.
+**Congruences modulo 4 for $\overline{\mathrm{spt2}}$ along powers of 2.** Let
+$\overline{\mathrm{spt2}}(N)$ be the number of smallest parts in the overpartitions of $N$ whose
+smallest part is even and not overlined. For all natural numbers $j$ and $n$,
+$\overline{\mathrm{spt2}}(N)$ is divisible by $4$ for each of the six values
+$N = 2^{j+4} n + 7 \cdot 2^{j+1}$, $N = 2^{j+2} \cdot 9 n + 15 \cdot 2^{j+1}$,
+$N = 2^{j+4} \cdot 3 n + 17 \cdot 2^{j+1}$, $N = 2^{j+3} \cdot 9 n + 21 \cdot 2^{j+1}$,
+$N = 2^{j+4} \cdot 5 n + 17 \cdot 2^{j+1}$ and $N = 2^{j+4} \cdot 5 n + 33 \cdot 2^{j+1}$.
 
 ## Depends on
 
-- [Overpartition Spt2](overpartition-spt2.md)
+- [Number of smallest even parts in overpartitions](overpartition-spt2.md)
 
 ## Sources
 

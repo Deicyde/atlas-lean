@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.smallestDenominator_spec
 ---
 
-# Smallest Denominator spec
+# The smallest denominator is positive and attained
 
-For `δ > 0`, `q_min(x, δ)` is positive and attained: some rational `p / q_min(x, δ)` lies in
-the window.
+**The smallest denominator is positive and attained.** For every real number $x$ and every
+real $\delta > 0$, the smallest denominator $q = q_{\min}(x, \delta)$ is positive and there is an
+integer $p$ with $|x - p/q| < \delta/2$.
 
 ## Depends on
 
-- [Smallest Denominator](smallest-denominator.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Proof depends on
 
-- [Exists denominator mem window](exists-denominator-mem-window.md)
+- [Every real number has arbitrarily close rationals](exists-denominator-mem-window.md)
 
 ## Sources
 

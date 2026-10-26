@@ -19,7 +19,7 @@ For $k = 0$ this is the initial value $R_{p,0} = p^2 + p + 1$ of the Lucas–Leo
 
 ## Proof depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

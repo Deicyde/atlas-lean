@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli_miki
 ---
 
-# Modified Degenerate Bernoulli miki
+# Miki-type identity for modified degenerate Bernoulli numbers
 
-Corollary 2, Miki-type identity: for `n ≥ 4` and `𝔅_{k,λ} = 𝔅_{k,λ}(0)`,
-`∑_{k=1}^{n-1} 𝔅_{k,λ} 𝔅_{n-k,λ} / k - ∑_{k=1}^{n-1} C(n, k) 𝔅_{k,λ} 𝔅_{n-k,λ} / k =
-λ / log (1+λ) · H_n 𝔅_{n,λ} + n/2 · 𝔅_{n-1,λ}`, for `λ ≠ 0, -1`.
+**Miki-type identity for modified degenerate Bernoulli numbers.** Let $n \ge 4$, let $\lambda$
+be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, write
+$\mathfrak{B}_{k,\lambda} = \mathfrak{B}_{k,\lambda}(0)$ for the value at $0$ of the modified
+degenerate Bernoulli polynomial $\mathfrak{B}_{k,\lambda}(x)$, and let $H_n = \sum_{k=1}^{n} 1/k$
+be the $n$-th harmonic number. Then
+
+$$
+\sum_{k=1}^{n-1} \frac{\mathfrak{B}_{k,\lambda} \mathfrak{B}_{n-k,\lambda}}{k} -
+\sum_{k=1}^{n-1} \binom{n}{k} \frac{\mathfrak{B}_{k,\lambda} \mathfrak{B}_{n-k,\lambda}}{k} =
+\frac{\lambda}{\log(1+\lambda)}\, H_n\, \mathfrak{B}_{n,\lambda} +
+\frac{n}{2}\, \mathfrak{B}_{n-1,\lambda},
+$$
+
+where $\log$ is the principal branch.
 
 ## Depends on
 
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
+- [Modified degenerate Bernoulli polynomials](modified-degenerate-bernoulli.md)
 
 ## Sources
 

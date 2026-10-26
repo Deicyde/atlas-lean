@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isAddMonoidBasis_empty
 ---
 
-# Is Add Monoid Basis empty
+# The empty set is a basis of the zero submonoid
 
-The empty set is a basis of the trivial monoid `{0}`.
+**The empty set is a basis of the zero submonoid.** In every additive commutative monoid,
+the empty set is a basis of the subset $\{0\}$.
 
 ## Depends on
 
-- [Is Add Monoid Basis](is-add-monoid-basis.md)
+- [Basis of a submonoid](is-add-monoid-basis.md)
 
 ## Sources
 

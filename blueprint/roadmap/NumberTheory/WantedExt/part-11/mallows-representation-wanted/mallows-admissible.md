@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.mallowsAdmissible
 ---
 
-# Mallows Admissible
+# The admissible parity sequences $I$
 
-The set `I` of infinite sequences over `{O_L, E_R, O_R, E_L}` starting with `O_L` and
-containing none of the factors `⟨O_L,O_R⟩, ⟨O_L,E_L⟩, ⟨E_R,E_L⟩, ⟨E_R,E_R⟩, ⟨O_R,O_L⟩,
-⟨O_R,E_R⟩, ⟨E_L,E_L⟩, ⟨E_L,E_R⟩` and no tail `⟨O_L⟩^∞`, `⟨O_R⟩^∞`, `⟨O_L,E_R⟩^∞`,
-`⟨O_R,E_L⟩^∞`.
+**The admissible parity sequences $I$.** The set $I$ consists of the infinite sequences
+$x = (x_0, x_1, \dots)$ over the alphabet $\{O_L, E_R, O_R, E_L\}$ such that $x_0 = O_L$; no two
+consecutive terms $(x_j, x_{j+1})$ form one of the pairs $(O_L, O_R)$, $(O_L, E_L)$,
+$(E_R, E_L)$, $(E_R, E_R)$, $(O_R, O_L)$, $(O_R, E_R)$, $(E_L, E_L)$, $(E_L, E_R)$; $x$ is not
+eventually constant equal to $O_L$, nor eventually constant equal to $O_R$; and no tail of $x$
+is the periodic sequence $(O_L, E_R, O_L, E_R, \dots)$ or $(O_R, E_L, O_R, E_L, \dots)$.
 
 ## Depends on
 
-- [Mallows Parity Letter](mallows-parity-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
 
 ## Sources
 

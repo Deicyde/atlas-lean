@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.HasPeriodicCF
 ---
 
-# Has Periodic CF
+# Continued fractions with a prescribed period
 
-`HasPeriodicCF x a₀ a l c` says that the regular continued fraction of `x` is
-`[a₀; a₁, …, a_{l-1}, c, a₁, …, a_{l-1}, c, …]`: its integer part is `a₀` and its `k`-th
-partial quotient (`k ≥ 1`) is `c` when `l ∣ k` and `a (k % l)` otherwise. The period `l`
-need not be minimal.
+**Continued fractions with a prescribed period.** For a real number $x$, natural numbers
+$a_0$, $l$, $c$ and a sequence of natural numbers $a_1, a_2, \dots$, we write
+$x = [a_0; \overline{a_1, \dots, a_{l-1}, c}]$ when the regular continued fraction of $x$ is the
+infinite expansion $[a_0; a_1, \dots, a_{l-1}, c, a_1, \dots, a_{l-1}, c, \dots]$: its integer
+part is $a_0$, and for every $k \ge 1$ its $k$-th partial quotient exists and equals $c$ when $l$
+divides $k$ and $a_{k \bmod l}$ otherwise. The period $l$ need not be minimal.
 
 ## Depends on
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.eisenstein_quadPrimeNorm_pow_lt_quadPrimorialNorm
 ---
 
-# Eisenstein quad Prime Norm pow lt quad Primorial Norm
+# Explicit primorial thresholds for the Eisenstein integers
 
-Proposition 6: for the Eisenstein integers (`discr K = -3`, i.e. `K ≅ ℚ(√-3)`) and
-`(ℓ, n(ℓ)) = (1, 3), (2, 4), (3, 5), (4, 5), (5, 6), (6, 7), (7, 8)`,
-`N(π_{n+1})^{ℓ+1} < N(π_n#)` for all `n ≥ n(ℓ)`. The record's trailing "…" is not stated.
+**Explicit primorial thresholds for the Eisenstein integers.** Let $K$ be a number field of
+discriminant $-3$ (so $K \cong \mathbb{Q}(\sqrt{-3})$). Put $N(\pi_0) = 1$ and, for $n \ge 1$, let
+$N(\pi_n)$ be the $n$-th smallest number that is the norm of a nonzero prime ideal of
+$\mathcal{O}_K$; let $N(\pi_n\#)$ be the product of the norms of the nonzero prime ideals of
+$\mathcal{O}_K$ of norm at most $N(\pi_n)$. For each pair $(\ell, n_\ell)$ among $(1, 3)$,
+$(2, 4)$, $(3, 5)$, $(4, 5)$, $(5, 6)$, $(6, 7)$, $(7, 8)$ and every $n \ge n_\ell$,
+$N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$.
 
 ## Depends on
 
-- [Quad Prime Norm](quad-prime-norm.md)
-- [Quad Primorial Norm](quad-primorial-norm.md)
+- [Norm of the $n$-th prime](quad-prime-norm.md)
+- [Norm of the $n$-th primorial](quad-primorial-norm.md)
 
 ## Sources
 

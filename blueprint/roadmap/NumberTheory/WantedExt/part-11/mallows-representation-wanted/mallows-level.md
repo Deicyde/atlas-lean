@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.mallowsLevel
 ---
 
-# Mallows Level
+# Mallows levels
 
-The ordered set `MT_{i+1}` of the `2 ⋅ 3^i` fractions inserted at step `i + 1`
-(Lean index `i`).
+**Mallows levels.** Fractions $n/m$ are written as pairs $(n, m)$ of natural numbers. Start
+from the list $\langle 0/1, 1/1\rangle$ and refine it repeatedly, each refinement step inserting
+between every two adjacent entries the pair of fractions given by Mallows' insertion rule. For
+$i \ge 1$, $MT_i$ is the list of the fractions inserted at the $i$-th step: the fractions that
+Mallows' rule inserts between adjacent entries of the list obtained after $i - 1$ steps, taken
+from left to right, two for each adjacent pair.
+
+After $k$ steps the list has $3^k + 1$ entries, so $MT_i$ has $2 \cdot 3^{i-1}$ entries.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mallows Inserted](mallows-inserted.md)
-- [Mallows Refine](mallows-refine.md)
+- [Fractions inserted by one Mallows step](mallows-inserted.md)
+- [One refinement step of the Mallows tree](mallows-refine.md)
 
 ## Sources
 

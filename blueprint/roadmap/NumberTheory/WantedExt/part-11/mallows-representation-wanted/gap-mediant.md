@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gapMediant
 ---
 
-# Gap Mediant
+# Mediant of a gap
 
-The mediant `(n₁ + n₂) / (m₁ + m₂)` of the two fractions bounding a gap `(a, b)`.
+**Mediant of a gap.** For a gap bounded by two fractions $n_1/m_1$ and $n_2/m_2$, each encoded
+as the pair (numerator, denominator) of natural numbers, the mediant is the fraction
+$(n_1 + n_2)/(m_1 + m_2)$, encoded as the pair $(n_1 + n_2, m_1 + m_2)$.
 
 ## Depends on
 

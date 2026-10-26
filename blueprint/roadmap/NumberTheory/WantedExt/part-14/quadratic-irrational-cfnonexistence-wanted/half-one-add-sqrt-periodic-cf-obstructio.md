@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.half_one_add_sqrt_periodicCF_obstruction_count_of_odd
 ---
 
-# Half one add sqrt periodic CF obstruction count of odd
+# Every parity pattern is realized by $(1 + \sqrt{d})/2$ for odd period length
 
-Theorem 5: for odd `l`, every parity pattern `(a₁, …, a_{(l-1)/2}) ∈ (ℤ/2)^{(l-1)/2}` is
-realized: some symmetric sequence of positive integers `a₁, …, a_{l-1}` with these parities
-and some positive nonsquare `d` satisfy `(1 + √d)/2 = [a₀; a₁, …, a_{l-1}, 2a₀ - 1]`, i.e. the
-number `A'_l` of unrealized patterns is `0`.
+**Every parity pattern is realized by $(1 + \sqrt{d})/2$ for odd period length.** Let $l$ be
+odd. For every parity pattern $(v_1, \dots, v_{(l-1)/2}) \in (\mathbb{Z}/2)^{(l-1)/2}$ there are
+positive integers $a_1, \dots, a_{l-1}$ with $a_i = a_{l-i}$ for $1 \le i \le l - 1$ and
+$a_j \equiv v_j \pmod 2$ for $1 \le j \le (l-1)/2$, a natural number $d$ that is not a perfect
+square and a natural number $a_0$ with
+$(1 + \sqrt{d})/2 = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0 - 1}]$. That is, the number $A'_l$
+of patterns that are not realized is $0$.
 
 ## Depends on
 
-- [Has Periodic CF](has-periodic-cf.md)
+- [Continued fractions with a prescribed period](has-periodic-cf.md)
 
 ## Sources
 

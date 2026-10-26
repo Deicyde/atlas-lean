@@ -16,7 +16,7 @@ requires `b_i = p_i^{κ_i} > 1`).
 
 ## Depends on
 
-- [B Free Indicator](b-free-indicator.md)
+- [Indicator of $B_\kappa$-free integers](b-free-indicator.md)
 
 ## Sources
 

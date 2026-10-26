@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.nSpectrum_subset_of_dvd
 ---
 
-# N Spectrum subset of dvd
+# Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra
 
-If `m ∣ n` then `Lₙ ⊆ L_m` and `Mₙ ⊆ M_m`; in particular `Lₙ ⊆ L` and `Mₙ ⊆ M`.
+**Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra.** Let $m$ and $n$
+be natural numbers with $m \ge 1$, $n \ge 1$ and $m \mid n$, and write $L_k$ and $M_k$ for the
+$k$-Lagrange and $k$-Markoff spectra. Then $L_n \subseteq L_m$ and $M_n \subseteq M_m$; in
+particular $L_n \subseteq L_1$ and $M_n \subseteq M_1$, where $L_1$ and $M_1$ are the
+classical Lagrange and Markoff spectra.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

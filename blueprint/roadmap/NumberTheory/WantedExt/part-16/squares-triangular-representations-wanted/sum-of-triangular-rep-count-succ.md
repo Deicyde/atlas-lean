@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount_succ
 ---
 
-# Sum Of Triangular Rep Count succ
+# Recurrence for triangular representation numbers
 
-Recurrence `t_k(n + 1) = ∑_{j=0}^n k (j + 1) b_{j+1} / (n + 1) · t_k(n - j)` for `n ≥ 0`, with
-`b_n = triangularLogCoeff n`.
+**Recurrence for triangular representation numbers.** For an integer $k$, let $t_k(n)$ be the
+coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. For $m \ge 1$
+let $b_m = \sum_{d \mid m,\ m/d \text{ odd}} 1/d - \sum_{d \mid m,\ m/d \text{ even}} 1/d$, the
+coefficient of $q^m$ in $\log \psi(q)$. Then for every integer $k$ and natural number $n$,
+
+$$t_k(n + 1) = \sum_{j=0}^{n} \frac{k (j + 1)\, b_{j+1}}{n + 1}\, t_k(n - j).$$
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
-- [Triangular Log Coeff](triangular-log-coeff.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
+- [Logarithmic coefficients of the triangular theta series](triangular-log-coeff.md)
 
 ## Sources
 

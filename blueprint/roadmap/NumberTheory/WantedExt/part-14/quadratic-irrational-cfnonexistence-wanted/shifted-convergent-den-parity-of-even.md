@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.shifted_convergentDen_parity_of_even
 ---
 
-# Shifted convergent Den parity of even
+# Parity of the shifted continuant of a symmetric sequence, even length
 
-Corollary 1 (ii): for even `l ≥ 4` and a symmetric sequence `a₁, …, a_{l-1}`,
-`r_{l-2} ≡ a_{l/2} r_{l/2-1} (mod 2)` with `r_j = K(a₂, …, a_j)`. The case `l = 2`,
-which needs `r_0 = 0`, is omitted.
+**Parity of the shifted continuant of a symmetric sequence, even length.** Let $l \ge 4$ be
+even and let $a_1, \dots, a_{l-1}$ be natural numbers with $a_i = a_{l-i}$ for
+$1 \le i \le l - 1$. For $j \ge 1$ let $r_j = K(a_2, \dots, a_j)$ be the continuant, given by
+$r_1 = 1$, $r_2 = a_2$ and $r_{j+2} = a_{j+2} r_{j+1} + r_j$. Then
+$r_{l-2} \equiv a_{l/2} \, r_{l/2-1} \pmod 2$.
+
+The case $l = 2$ of the paper, which needs $r_0 = 0$, is omitted.
 
 ## Depends on
 
-- [Convergent Den](convergent-den.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

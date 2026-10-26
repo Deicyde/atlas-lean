@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.VanDerWaerdenConjectureWanted.vanDerWaerdenConjecture.theorem_1
 ---
 
-# Theorem 1
+# Van der Waerden's conjecture (Bhargava)
 
-Statement of Theorem 1:
+**Van der Waerden's conjecture (Bhargava).** For every natural number $n \ge 3$ there is a
+constant $C$ such that $E_n(H) \le C H^{n-1}$ for all sufficiently large natural numbers $H$,
+where $E_n(H)$ is the number of monic polynomials of degree $n$ with integer coefficients, all
+non-leading coefficients of absolute value at most $H$, whose Galois group over $\mathbb{Q}$
+has order less than $n!$.
 
-`Eₙ(H) = O(Hⁿ⁻¹)` for `n ≥ 3`.
-
-The degree restriction is necessary: the theorem is false as stated for `n = 2`.
+The degree restriction is necessary: the statement is false for $n = 2$.
 
 ## Depends on
 
-- [E](e.md)
+- [Monic integer polynomials whose Galois group is not $S_n$](e.md)
 
 ## Sources
 

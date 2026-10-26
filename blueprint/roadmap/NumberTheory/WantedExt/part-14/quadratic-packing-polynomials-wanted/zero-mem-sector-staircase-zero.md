@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.zero_mem_sectorStaircase_zero
 ---
 
-# Zero mem sector Staircase zero
+# The origin lies on the zeroth staircase
 
-The origin lies on the staircase `J_0`.
+**The origin lies on the zeroth staircase.** For all natural numbers $m, n$, the origin
+$(0, 0)$ lies on the staircase $J_0$ of the sector of slope $n/m$.
 
 ## Depends on
 
-- [Sector Staircase](sector-staircase.md)
+- [Staircases of a rational sector](sector-staircase.md)
 
 ## Proof depends on
 
-- [Sector Lattice Points](sector-lattice-points.md)
-- [Zero mem sector Lattice Points](zero-mem-sector-lattice-points.md)
+- [Lattice points of a sector](sector-lattice-points.md)
+- [The origin is a lattice point of every sector](zero-mem-sector-lattice-points.md)
 
 ## Sources
 

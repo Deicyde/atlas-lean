@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasTriangular_sq_generatingFunction
 ---
 
-# Theorem 10
+# Generating function of the squared Lucas triangular numbers
 
-**Theorem 10.** The generating function of the squared Lucas-triangular numbers:
-`∑_{n ≥ 1} [n + 1, 2]² xⁿ = (x + ({4}φ - φ⁴)x² - {3}φ³φ'³x³ + ({3}φ⁷φ'³ - {4}φ⁶φ'³)x⁴) /
-((1 - t²x)(1 - φ'⁴x)(φ⁴x; q)₄)`.
+**Generating function of the squared Lucas triangular numbers.** Let $(s, t)$ be nondegenerate
+Lucas parameters, with Lucas brackets $\{n\}_{s,t}$ and Lucasnomial coefficients
+$\binom{n}{k}_{s,t}$, and let $\varphi$ and $\varphi'$ be real numbers with
+$\varphi + \varphi' = s$ and $\varphi \varphi' = -t$. Then, as formal power series in $x$ with
+real coefficients,
 
-Stated as an identity of formal power series with the denominator cleared, and with
-`(φ⁴x; q)₄ = ∏_{k < 4} (1 - φ^{4-k} φ'^k x)`.
+$$\Big(\sum_{n \ge 1} \binom{n+1}{2}_{s,t}^{2} x^n\Big) (1 - t^2 x) (1 - \varphi'^4 x)
+\prod_{k=0}^{3} (1 - \varphi^{4-k} \varphi'^k x) = x + (\{4\}_{s,t} \varphi - \varphi^4) x^2 -
+\{3\}_{s,t} \varphi^3 \varphi'^3 x^3 +
+(\{3\}_{s,t} \varphi^7 \varphi'^3 - \{4\}_{s,t} \varphi^6 \varphi'^3) x^4.$$
+
+This is the paper's quotient formula for $\sum_{n \ge 1} \binom{n+1}{2}_{s,t}^{2} x^n$ with the
+denominator cleared; the paper writes the product over $k$ as $(\varphi^4 x; q)_4$ with
+$q = \varphi' / \varphi$.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.mallowsQStep
 ---
 
-# Mallows QStep
+# Transition rule of the parity sequence
 
-The transition rule defining `Q_{j+1}` from `Q_j` and the letter `x_j`.
+**Transition rule of the parity sequence.** The map $\mathrm{step}$ sends a letter of the
+parity alphabet $\{O_L, E_R, O_R, E_L\}$ and a letter of $\{L, R\}$ to a letter of the parity
+alphabet, by $\mathrm{step}(O_L, L) = O_L$, $\mathrm{step}(O_L, R) = E_R$,
+$\mathrm{step}(E_R, L) = O_R$, $\mathrm{step}(E_R, R) = O_L$, $\mathrm{step}(O_R, L) = E_L$,
+$\mathrm{step}(O_R, R) = O_R$, $\mathrm{step}(E_L, L) = O_R$ and $\mathrm{step}(E_L, R) = O_L$.
 
 ## Depends on
 
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
 
 ## Sources
 

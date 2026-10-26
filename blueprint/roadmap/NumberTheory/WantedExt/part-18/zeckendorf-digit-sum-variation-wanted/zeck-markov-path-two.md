@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.zeckMarkovPath_two
 ---
 
-# Zeck Markov Path two
+# The first step of the Zeckendorf Markov chain
 
-The first digit of the chain is set exactly when `U_2 < 1/φ²`.
+**The first step of the Zeckendorf Markov chain.** For every real sequence $(u_n)_{n \ge 0}$,
+the digit $y_2$ of the chain driven by $(u_n)$ is $1$ exactly when $u_0 < 1/\varphi^2$, where
+$\varphi$ is the golden ratio. In the paper's notation, where $u_n = U_{n+2}$, this says that
+$y_2 = 1$ if and only if $U_2 < 1/\varphi^2$.
 
 ## Depends on
 
-- [Zeck Markov Path](zeck-markov-path.md)
+- [The Zeckendorf Markov chain](zeck-markov-path.md)
 
 ## Sources
 

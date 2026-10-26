@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_orderOf_eq_totient_classification
 ---
 
-# Card order Of eq totient classification
+# Moduli with exactly $\varphi(L)$ units of even order $L$
 
-If `E(L, n) = φ(L)` and `L ≥ 2` is even, then `n = 4, L = 2`, or `n = t q` with `t ∈ {1, 2}`,
-`q` an odd prime power and `L ∣ φ(q)`.
+**Moduli with exactly $\varphi(L)$ units of even order $L$.** Let $n \ge 1$ and let $L \ge 2$
+be even. If the number of elements of multiplicative order $L$ in
+$(\mathbb{Z}/n\mathbb{Z})^\times$ equals $\varphi(L)$, then either $n = 4$ and $L = 2$, or $n = tq$
+for some $t \in \{1, 2\}$ and some odd prime power $q$ with $L \mid \varphi(q)$.
 
 ## Depends on
 

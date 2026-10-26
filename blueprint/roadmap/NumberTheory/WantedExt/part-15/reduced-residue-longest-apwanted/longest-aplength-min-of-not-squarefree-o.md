@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.longestAPLength_min_of_not_squarefree_of_not_isPrimePow
 ---
 
-# Longest APLength min of not squarefree of not is Prime Pow
+# Minimum longest progression length when $n$ is neither squarefree nor a prime power
 
-Theorem 3, `n` neither squarefree nor a prime power:
-`n / rad(n) ≤ min_{m ∈ ℤ} f_m(n) ≤ max(n / rad(n), gpf(n) - 1)`, and the minimum equals
-`n / rad(n)` when `n / rad(n) ≥ gpf(n) - 1`.
+**Minimum longest progression length when $n$ is neither squarefree nor a prime power.** Let
+$n > 1$ be a natural number that is neither squarefree nor a prime power, $\operatorname{rad}(n)$
+the product of its distinct prime factors and $\operatorname{gpf}(n)$ its largest prime factor.
+For an integer $m$ let $f_m(n)$ be the length of the longest arithmetic progression with positive
+common difference contained in the set $R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and
+$\gcd(a, n) = 1$. Then $f_m(n) \ge n / \operatorname{rad}(n)$ for every integer $m$, and
+$f_m(n) \le \max(n / \operatorname{rad}(n), \operatorname{gpf}(n) - 1)$ for some integer $m$.
+If moreover $\operatorname{gpf}(n) - 1 \le n / \operatorname{rad}(n)$, then the least value of
+$f_m(n)$ over all integers $m$ is $n / \operatorname{rad}(n)$.
 
 ## Depends on
 
-- [Longest APLength](longest-aplength.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
 
 ## Sources
 

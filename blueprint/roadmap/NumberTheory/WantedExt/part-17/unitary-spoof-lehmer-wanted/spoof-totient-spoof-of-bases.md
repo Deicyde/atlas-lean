@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.spoofTotient_spoofOfBases
 ---
 
-# Spoof Totient spoof Of Bases
+# Spoof totient of a unitary factorization
 
-On a factorization with all exponents `1`, the Molnar–Singh spoof totient is Hasanalizade's
-spoof unitary totient `φ̃*(x_1 ⋯ x_r) = ∏ (x_i - 1)`.
+**Spoof totient of a unitary factorization.** For natural numbers $x_1, \dots, x_r$, the spoof
+totient of the spoof factorization $x_1 \cdots x_r$ with every exponent $1$ is
+$\prod_{i=1}^{r} (x_i - 1)$, computed in the integers. This is Hasanalizade's spoof unitary
+totient $\tilde{\varphi}^*(x_1 \cdots x_r)$.
 
 ## Depends on
 
-- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
-- [Spoof Totient](../../part-16/spoof-lehmer-factorization-wanted/spoof-totient.md)
+- [Factorization with all exponents one](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
+- [Spoof totient](../../part-16/spoof-lehmer-factorization-wanted/spoof-totient.md)
 
 ## Sources
 

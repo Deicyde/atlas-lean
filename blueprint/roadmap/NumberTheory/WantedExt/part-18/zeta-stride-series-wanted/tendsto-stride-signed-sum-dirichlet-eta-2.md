@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_strideSignedSum_dirichletEta_add
 ---
 
-# Tendsto stride Signed Sum dirichlet Eta add
+# Higher-power stride series for the Dirichlet eta function
 
-Series representation of `η(p+t+1)`: for `q, t ≥ 1` and even `p ≥ 0`,
-`η(p+t+1) = ∑_{n≥1} (-1)^{n+1} (n^{p+1} + (n+q)^{p+1})/(n(n+q))^{p+1} T_{q,t}(n)` (limit of
-partial sums).
+**Higher-power stride series for the Dirichlet eta function.** Let $q, t \ge 1$ be integers,
+let $p \ge 0$ be an even integer, and let $T_{q,t}(n)$ denote the signed stride sum. Then the
+partial sums
+
+$$\sum_{n=1}^{N} (-1)^{n+1} \frac{n^{p+1} + (n+q)^{p+1}}{(n(n+q))^{p+1}} T_{q,t}(n)$$
+
+converge, as $N \to \infty$, to $\eta(p+t+1)$, where $\eta(s) = \sum_{n \ge 1} (-1)^{n+1} n^{-s}$
+is the Dirichlet eta function.
 
 ## Depends on
 
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

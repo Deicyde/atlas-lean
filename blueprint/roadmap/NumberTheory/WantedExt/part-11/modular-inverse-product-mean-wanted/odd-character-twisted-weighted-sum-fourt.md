@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.odd_character_twisted_weighted_sum_fourth_moment
 ---
 
-# Odd character twisted weighted sum fourth moment
+# Xu–Zhang twisted fourth moment of weighted character sums
 
-Lemma 1 (Xu and Zhang): for every `ℓ ≥ 0` and `ε > 0` there is `C` such that for every odd
-`q ≥ 3`,
-`∑_{χ mod q, χ(-1) = -1} χ̄(2^ℓ) |∑_{a=1}^q a χ(a)|⁴ = C_q (3ℓ + 5) q³ φ(q)⁴ / (72 · 2^{ℓ+1}) + O(q^{6+ε})`,
-the error bounded by `C q^{6+ε}` (implied constant depending on `ℓ` and `ε`).
+**Xu–Zhang twisted fourth moment of weighted character sums.** Let $\varphi$ be Euler's totient
+function and $C_q$ the Xu–Zhang constant of $q$. For every natural number $\ell$ and every real
+$\varepsilon > 0$ there is a real constant $C$ such that for every odd natural number $q \ge 3$,
+
+$$\left| \sum_{\chi \bmod q,\ \chi(-1) = -1} \overline{\chi(2^\ell)}
+\left| \sum_{a=1}^{q} a \, \chi(a) \right|^4 -
+\frac{C_q (3\ell + 5) q^3 \varphi(q)^4}{72 \cdot 2^{\ell + 1}} \right| \le C q^{6 + \varepsilon},$$
+
+where $\chi$ runs over the complex Dirichlet characters modulo $q$ with $\chi(-1) = -1$.
 
 ## Depends on
 
-- [Xu Zhang Constant](xu-zhang-constant.md)
+- [Xu–Zhang constant](xu-zhang-constant.md)
 
 ## Sources
 

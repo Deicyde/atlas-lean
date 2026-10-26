@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_two_pow_mul_six_pow_bounds
 ---
 
-# Proposition 5
+# Bounds for the 2-complexity of $2^m \cdot 6^r$ when $8 \le r \le 9$
 
-**Proposition 5** (= **Theorem 2**(1)), remaining range:
-`m + 3r - 1 ≤ ‖2^m * 6^r‖₂ ≤ m + 3r` for `8 ≤ r ≤ 9`.
+**Bounds for the 2-complexity of $2^m \cdot 6^r$ when $8 \le r \le 9$.** Write $\|n\|_2$ for
+the $2$-complexity of $n$. For all natural numbers $m$ and $r$ with $8 \le r \le 9$, one has
+$m + 3r - 1 \le \|2^m \cdot 6^r\|_2 \le m + 3r$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

@@ -15,9 +15,9 @@ for `(a, b, p) = (-3, -8, 5)` and `x = 0`, `min |M| = 8` while
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
-- [Second Order Gen Value](second-order-gen-value.md)
-- [Second Order MValue](second-order-mvalue.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
+- [Generating function of the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-gen-value.md)
+- [The quantity $M(r, s)$ for the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-mvalue.md)
 
 ## Sources
 

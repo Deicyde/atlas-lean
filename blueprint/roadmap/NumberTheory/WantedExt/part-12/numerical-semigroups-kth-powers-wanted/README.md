@@ -4,10 +4,10 @@ navigation: module
 
 # Numerical Semigroups Kth Powers
 
-- [Mem minimal Generators iff first Appearance le](mem-minimal-generators-iff-first-appeara.md)
-- [Embedding Dimension le of first Appearance ge](embedding-dimension-le-of-first-appearan.md)
-- [Exists four squares large parts](exists-four-squares-large-parts.md)
-- [Conductor union le](conductor-union-le.md)
-- [Conductor powers le](conductor-powers-le.md)
-- [Embedding Dimension squares is Big O](embedding-dimension-squares-is-big-o.md)
-- [Frobenius Number powers is Big O](frobenius-number-powers-is-big-o.md)
+- [Minimal generators of the tail semigroups of an increasing sequence](mem-minimal-generators-iff-first-appeara.md)
+- [Embedding dimension bound from linear growth of first appearances](embedding-dimension-le-of-first-appearan.md)
+- [Four squares with large nonzero parts](exists-four-squares-large-parts.md)
+- [Dutch–Rickett conductor inequality for a union of generating sets](conductor-union-le.md)
+- [Dutch–Rickett conductor recursion for semigroups of $k$-th powers](conductor-powers-le.md)
+- [Semigroups of squares have embedding dimension $O(n)$](embedding-dimension-squares-is-big-o.md)
+- [Frobenius numbers of semigroups of $k$-th powers are $O(n^{k+\varepsilon})$](frobenius-number-powers-is-big-o.md)

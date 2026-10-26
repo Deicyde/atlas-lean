@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.practical_add_polygonal_exceptions
 ---
 
-# Practical add polygonal exceptions
+# Exceptions to sums of a practical number and polygonal numbers
 
-(a) If `s ≥ 3` and `s ≡ 0` or `4 (mod 12)`, infinitely many positive integers are not a
-practical number plus an `s`-gonal number. (b) The number `E(s)` of positive integers that
-are not a practical number plus two `s`-gonal numbers tends to infinity: for every `M`, all
-large `s` have at least `M` such integers.
+**Exceptions to sums of a practical number and polygonal numbers.** (a) Let $s \ge 3$ with
+$s \equiv 0$ or $s \equiv 4 \pmod{12}$. Then there are infinitely many positive integers $n$ that
+cannot be written as $n = q + p_s(m)$ with $q$ a practical number and $m \ge 0$ an integer, where
+$p_s(m)$ is the $m$-th $s$-gonal number. (b) For every natural number $M$ there is a natural
+number $S$ such that for every $t \ge S$ there are at least $M$ positive integers $n$ that cannot
+be written as $n = q + p_t(x) + p_t(y)$ with $q$ a practical number and integers $x, y \ge 0$.
 
 ## Depends on
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_one_star
 ---
 
-# P Sylvester Count one star
+# $1$-Sylvester number of three consecutive star numbers
 
-The `p = 1` case of Theorem 2: the `1`-Sylvester number for
-three consecutive star numbers, for `n ≥ 6`.
+**$1$-Sylvester number of three consecutive star numbers.** Write $S_m$ for the $m$-th star
+number $6m(m-1)+1$. For every natural number $n \ge 6$, the number of natural numbers $N$ for
+which at most one triple $(x, y, z)$ of natural numbers satisfies
+$x S_n + y S_{n+1} + z S_{n+2} = N$ is $25n^3 + 23n^2 + 14n + 1$.
 
 ## Depends on
 
-- [P Sylvester Star Count](p-sylvester-star-count.md)
+- [$p$-Sylvester number of three consecutive star numbers](p-sylvester-star-count.md)
 
 ## Sources
 

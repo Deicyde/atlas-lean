@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mem_oddSet
 ---
 
-# Mem odd Set
+# Membership in the odd numbers below $2^e$
 
-Membership in `oddBelowTwoPow e` means simultaneously `1≤i`, `i<2^e`, and `Odd i`,
-which are exactly the three clauses in the paper's definition of `S_e`.
+**Membership in the odd numbers below $2^e$.** For natural numbers $e$ and $i$, $i$ belongs to the
+set $S_e$ of odd positive integers below $2^e$ if and only if $1 \le i$, $i < 2^e$ and $i$ is odd.
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

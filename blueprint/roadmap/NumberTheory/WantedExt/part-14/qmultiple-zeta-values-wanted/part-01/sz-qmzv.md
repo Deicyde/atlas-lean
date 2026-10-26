@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.szQMZV
 ---
 
-# Sz QMZV
+# Schlesinger–Zudilin qMZVs
 
-The Schlesinger–Zudilin qMZV
-`ζ_q^SZ(k₁, …, kᵣ) = ∑_{m₁ > ⋯ > mᵣ > 0} ∏ⱼ q^{mⱼ kⱼ} / (1 - q^{mⱼ})^{kⱼ}`,
-with `ζ_q^SZ(∅) = 1`. For an SZ-admissible index (empty, or `k₁ ≥ 1`) the
-summands with `m₁ > N` have `q`-adic order `> N`, so the coefficient of `q^N` is
-that of the partial sum with `m₁ ≤ N`; this is the definition used here. The
-value for indices with `k₁ = 0` (not defined in the paper) is a junk value.
+**Schlesinger–Zudilin qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers, the
+Schlesinger–Zudilin qMZV $\zeta_q^{SZ}(k)$ is the formal power series in $q$ over $\mathbb{Q}$
+whose coefficient of $q^N$, for each $N \ge 0$, is the coefficient of $q^N$ in the partial sum
+
+$$\sum_{N \ge m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{q^{m_j k_j}}{(1 - q^{m_j})^{k_j}}$$
+
+over integers $m_1, \dots, m_r$. In particular $\zeta_q^{SZ}(\emptyset) = 1$.
+
+When the index is empty or $k_1 \ge 1$, the summands with $m_1 > N$ have no term of degree at
+most $N$, so $\zeta_q^{SZ}(k)$ is the full series
+$\sum_{m_1 > \dots > m_r > 0} \prod_{j} q^{m_j k_j} / (1 - q^{m_j})^{k_j}$. The paper does not
+define the value when $k_1 = 0$.
 
 ## Depends on
 
@@ -20,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sz QMZVPartial](sz-qmzvpartial.md)
+- [Partial sums of Schlesinger–Zudilin qMZVs](sz-qmzvpartial.md)
 
 ## Sources
 

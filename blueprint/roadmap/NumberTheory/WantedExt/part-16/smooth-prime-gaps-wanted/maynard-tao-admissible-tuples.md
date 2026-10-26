@@ -5,13 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.maynard_tao_admissible_tuples
 ---
 
-# Maynard tao admissible tuples
+# Maynard–Tao theorem
 
-Maynard–Tao theorem: for every `m ≥ 2` there is `k_m` such that for every
-admissible tuple `H` with at least `k_m` elements there are infinitely many
-integers `n` with `n + h` a (positive) prime for at least `m` elements `h ∈ H`.
-The historical remarks on admissible values of `k_2` and the bound
-`k_m < c m² e^{4m}` are not included.
+**Maynard–Tao theorem.** For every natural number $m \ge 2$ there is a natural number $k$
+such that for every admissible finite set $H$ of at least $k$ integers there are infinitely many
+integers $n$ for which $n + h$ is a (positive) prime for at least $m$ elements $h \in H$.
 
 ## Depends on
 

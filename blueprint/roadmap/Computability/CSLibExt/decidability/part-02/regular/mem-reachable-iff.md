@@ -19,9 +19,9 @@ if and only if there is a word $w$ such that running $M$ on $w$ from its start s
 ## Proof depends on
 
 - [One round of the DFA reachability search](reach-step.md)
-- [Lfp Fin](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
-- [Lfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-fixed.md)
-- [Lfp Fin le](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-le.md)
+- [Least fixed point of a finset map by finite iteration](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
+- [Finite iteration from the empty set reaches a fixed point](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-fixed.md)
+- [The finite least fixed point lies in every pre-fixed point](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-le.md)
 
 ## Sources
 

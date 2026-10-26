@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.negRFibonacci_generatingFunction
 ---
 
-# Neg RFibonacci generating Function
+# Generating function of the (-r)-Fibonacci polynomials
 
-Theorem 8, `U` part, as an identity of formal power series: for `r ≥ 2`,
-`(1 - y^{-1} z^r + x y^{-1} z^{r+1}) ∑_{n ≥ 0} U^{(-r)}_{n+1} z^n = 1`. The paper
-states it for `z ∈ ℂ`; convergence is not part of this statement.
+**Generating function of the (-r)-Fibonacci polynomials.** Let $A$ be a commutative ring,
+$r \ge 2$, $x \in A$ and $y$ a unit of $A$, and write $U_n = U^{(-r)}_n(x, y)$. In the ring
+$A[[z]]$ of formal power series,
+
+$$\left(1 - y^{-1} z^r + x y^{-1} z^{r+1}\right) \sum_{n \ge 0} U_{n+1} z^n = 1.$$
+
+The paper states the identity for complex $z$; convergence is not part of this statement.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

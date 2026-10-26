@@ -4,5 +4,5 @@ navigation: module
 
 # Wieferich Nine Cubes
 
-- [Is Sum Of Cubes](is-sum-of-cubes.md)
-- [Wieferich g three](wieferich-g-three.md)
+- [Sum of $k$ cubes](is-sum-of-cubes.md)
+- [Wieferich's nine cubes theorem](wieferich-g-three.md)

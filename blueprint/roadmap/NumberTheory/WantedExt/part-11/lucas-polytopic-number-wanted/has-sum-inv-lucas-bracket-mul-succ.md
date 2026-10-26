@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_inv_lucasBracket_mul_succ
 ---
 
-# Theorem 13
+# Sum of reciprocals of products of consecutive Lucas brackets
 
-**Theorem 13.** With `φ = (s + √(s² + 4t)) / 2` and the Lucas logarithm
-`ln_{s,t}(1 - x) = -∑_{n ≥ 1} xⁿ / {n}`,
-`∑_{n ≥ 1} 1 / ({n}{n + 1}) = φ - (1 + t) ln_{s,t}(1 + φ / t)`.
+**Sum of reciprocals of products of consecutive Lucas brackets.** Let $(s, t)$ be
+nondegenerate Lucas parameters with $s > 0$, $s^2 + 4t > 0$ and $|t| > 1$, write $\{n\}_{s,t}$
+for the Lucas brackets and let $\varphi = (s + \sqrt{s^2 + 4t})/2$. Then the series
+$\sum_{n \ge 1} 1/(\{n\}_{s,t}\{n+1\}_{s,t})$ converges absolutely, and its sum is
+$\varphi - (1 + t)\ln_{s,t}(1 + \varphi/t)$, where
+$\ln_{s,t}(1 + \varphi/t) = -\sum_{n \ge 1} (-\varphi/t)^n/\{n\}_{s,t}$ is the Lucas logarithm.
 
-Added hypotheses: `0 < s` and `0 < s² + 4t` (the paper's `0 < |q| < 1`, real `φ`) and
-`1 < |t|`, the paper's convergence range `x ∈ (-|φ|, |φ|)` for `ln_{s,t}(1 - x)` at
-`x = -φ / t`. Without `1 < |t|` the logarithm series diverges (`s = t = 1`: its terms
-`(-φ)ⁿ / Fₙ` do not tend to `0`). `ln_{s,t}(1 + φ / t)` is written out as
-`-∑' n, (-φ / t)^{n+1} / {n + 1}`.
+The hypotheses $s > 0$ and $s^2 + 4t > 0$ make $\varphi$ real with $0 < |q| < 1$, where
+$q = \varphi'/\varphi$ and $\varphi' = (s - \sqrt{s^2 + 4t})/2$; and $|t| > 1$ puts $-\varphi/t$ in
+the paper's convergence range $(-|\varphi|, |\varphi|)$ of the Lucas logarithm. Without
+$|t| > 1$ the logarithm series diverges: for $s = t = 1$ its terms $(-\varphi)^n/F_n$, with $F_n$
+the Fibonacci numbers, do not tend to $0$.
 
 ## Depends on
 

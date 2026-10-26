@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.infinite_riesel_repunits_mod_two_pow_64_sub_one
 ---
 
-# Corollary 3.14
+# Infinitely many Riesel repunits in bases $b \equiv 16518444216571 \pmod{2^{64} - 1}$
 
-**Corollary 3.14.** If `b ≡ 16518444216571 (mod 18446744073709551615)`, there are infinitely
-many `b`-repunit Riesel numbers.
+**Infinitely many Riesel repunits in bases $b \equiv 16518444216571 \pmod{2^{64} - 1}$.**
+Let $b$ be a natural number with $b \equiv 16518444216571 \pmod{18446744073709551615}$, where
+$18446744073709551615 = 2^{64} - 1$. Then there are infinitely many Riesel numbers among the
+$b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 ## Depends on
 
-- [Is Riesel Number](is-riesel-number.md)
-- [Repstring](repstring.md)
+- [Riesel number](is-riesel-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

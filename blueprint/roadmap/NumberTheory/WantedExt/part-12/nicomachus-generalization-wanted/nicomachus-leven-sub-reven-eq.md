@@ -12,9 +12,9 @@ x·P_{m,e}(x) - x² + x³` for `m ≥ 2` (Equation (8)).
 
 ## Depends on
 
-- [Nicomachus LEven](nicomachus-leven.md)
-- [Nicomachus PEven](nicomachus-peven.md)
-- [Nicomachus REven](nicomachus-reven.md)
+- [The even-case cube sum $L_{m,e}$](nicomachus-leven.md)
+- [The even-case polynomial $P_{m,e}$](nicomachus-peven.md)
+- [The even-case square $R_{m,e}$](nicomachus-reven.md)
 
 ## Sources
 

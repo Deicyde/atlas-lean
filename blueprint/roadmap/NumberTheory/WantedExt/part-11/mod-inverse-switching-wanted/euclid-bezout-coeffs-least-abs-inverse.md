@@ -5,20 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_leastAbsInverse
 ---
 
-# Lemma 4
+# The Euclidean Bézout coefficients are least absolute inverses
 
-**Lemma 4**: the pair `(s₂, s₁)` of Bézout coefficients
-provided by the Euclidean algorithm for `(m, n)` (where
-`r₀ = m/gcd(m,n)`, `r₁ = n/gcd(m,n)`) satisfies
-`s₂ m + s₁ n = gcd(m, n)`, the coefficient `s₂` of `m` is the
-least absolute inverse of `m/gcd(m,n)` modulo `n/gcd(m,n)`, and
-the coefficient `s₁` of `n` is the least absolute inverse of
-`n/gcd(m,n)` modulo `m/gcd(m,n)`.
+**The Euclidean Bézout coefficients are least absolute inverses.** Let $m > n > 1$ be
+integers, write $g = \gcd(m, n)$, and let $(r_i)$, $(s_i)$ and $N$ be Euclidean switching data
+with $r_0 = m/g$ and $r_1 = n/g$. Then $s_2 m + s_1 n = g$, $s_2$ is the least absolute inverse
+of $m/g$ modulo $n/g$, and $s_1$ is the least absolute inverse of $n/g$ modulo $m/g$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
-- [Is Least Abs Inverse](is-least-abs-inverse.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
+- [Least absolute inverse](is-least-abs-inverse.md)
 
 ## Sources
 

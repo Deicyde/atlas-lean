@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.lurothTripleSet
 ---
 
-# Luroth Triple Set
+# Lüroth convergent triples
 
-The set `S` of all triples (numerator, denominator, last digit) of Lüroth
-convergents of points of `(0, 1]`, stored as `(P/Q, Q, d)`.
+**Lüroth convergent triples.** The set $S$ consists of the triples $(c_n(y), Q_n(y), d_n(y))$
+for $y \in (0, 1]$ and $n \ge 0$, where $d_0(y), d_1(y), \dots$ are the Lüroth digits of $y$
+(indexed from $0$), $Q_n(y) = d_n(y) \prod_{j < n} d_j(y)(d_j(y) - 1)$ is the $n$-th Lüroth
+denominator of this digit sequence, and $c_n(y) = \sum_{k \le n} 1/Q_k(y)$ is its $n$-th Lüroth
+convergent. The first entry is the rational number $c_n(y)$, the second the natural number
+$Q_n(y)$ and the third the digit $d_n(y)$.
 
 ## Depends on
 
@@ -16,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Luroth Convergent](luroth-convergent.md)
-- [Luroth Denominator](luroth-denominator.md)
-- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Lüroth convergents](luroth-convergent.md)
+- [Lüroth denominators](luroth-denominator.md)
+- [Lüroth digits](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Sources
 

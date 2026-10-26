@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oozToBZ
 ---
 
-# Ooz To BZ
+# The map $U$ from OOZ to BZ words
 
-The map `U : 𝔥⁰ → 𝔥⁰` on a word: `𝟏 ↦ 𝟏` and
-`z_{k₁} ⋯ z_{kᵣ} ↦ ∑ C(k₁ - 2, n₁ - 2) C(k₂ - 1, n₂ - 1) ⋯ C(kᵣ - 1, nᵣ - 1) z_{n₁} ⋯ z_{nᵣ}` over
-`2 ≤ n₁ ≤ k₁` and `1 ≤ nⱼ ≤ kⱼ` (`j ≥ 2`), as a formal `ℚ`-combination of words.
+**The map $U$ from OOZ to BZ words.** A word is a finite sequence $z_{k_1} \cdots z_{k_r}$ of
+letters $z_k$, $k \in \mathbb{N}$. The map $U$ sends each word to a formal $\mathbb{Q}$-linear
+combination of words: $U(\mathbf{1}) = \mathbf{1}$ for the empty word $\mathbf{1}$, and for
+$r \ge 1$
+
+$$U(z_{k_1} \cdots z_{k_r}) = \sum \binom{k_1 - 2}{n_1 - 2} \binom{k_2 - 1}{n_2 - 1} \cdots
+\binom{k_r - 1}{n_r - 1} \, z_{n_1} \cdots z_{n_r}$$
+
+where the sum runs over $2 \le n_1 \le k_1$ and $1 \le n_j \le k_j$ for $2 \le j \le r$ (an empty
+sum is $0$).
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ooz To BZTail](ooz-to-bztail.md)
+- [The tail part of the map $U$](ooz-to-bztail.md)
 
 ## Sources
 

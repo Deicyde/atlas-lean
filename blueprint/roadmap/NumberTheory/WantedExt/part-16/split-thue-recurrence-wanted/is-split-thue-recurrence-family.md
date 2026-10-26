@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.IsSplitThueRecurrenceFamily
 ---
 
-# Is Split Thue Recurrence Family
+# Split Thue recurrence family
 
-The hypotheses of Hilgart's Theorem 1 on `d ≥ 3` integer sequences `G 1, …, G d`:
-each `G i` is a simple linear recurrence `G i n = ∑_{r ∈ R i} c i r * r ^ n` with
-dominant root `γ i` (all other roots of smaller modulus);
-`0 ≤ γ 1 < ⋯ < γ (d - 2) < γ (d - 1) = γ d`; the constant terms of the dominant roots of
-`G (d - 1)` and `G d` agree; `G (d - 1)` and `G d` have second dominant roots `δ (d - 1)`,
-`δ d` with `|δ (d - 1)| < |δ d| < γ (d - 2)` and `γ (d - 2) ^ 2 < γ |δ d|`.
+**Split Thue recurrence family.** Let $d \in \mathbb{N}$, let $G_i(n)$ be integers for
+$i, n \in \mathbb{N}$, and let $\gamma_i \in \mathbb{R}$ and $\delta_i \in \mathbb{C}$ for
+$i \in \mathbb{N}$. Then $(d, G, \gamma, \delta)$ is a split Thue recurrence family when $d \ge 3$
+and there are finite sets $R_i \subseteq \mathbb{C}$ and complex numbers $c_i(r)$
+($i \in \mathbb{N}$, $r \in \mathbb{C}$) such that: for every $1 \le i \le d$, $c_i(r) \ne 0$
+for all $r \in R_i$, $G_i(n) = \sum_{r \in R_i} c_i(r) r^n$ for all $n$, $\gamma_i \in R_i$,
+and $|r| < \gamma_i$ for all $r \in R_i$ with $r \ne \gamma_i$; $\gamma_1 \ge 0$, $\gamma$ is
+strictly increasing on $\{1, \dots, d - 1\}$, and $\gamma_{d-1} = \gamma_d$;
+$c_{d-1}(\gamma_{d-1}) = c_d(\gamma_d)$; for $i \in \{d - 1, d\}$, $\delta_i \in R_i$,
+$\delta_i \ne \gamma_i$, and $|r| < |\delta_i|$ for all $r \in R_i$ other than $\gamma_i$ and
+$\delta_i$; and $|\delta_{d-1}| < |\delta_d| < \gamma_{d-2}$ and
+$\gamma_{d-2}^2 < \gamma_d |\delta_d|$.
+
+In words: each $G_i$ is a simple linear recurrence with dominant root $\gamma_i$, the sequences
+$G_{d-1}$ and $G_d$ share their dominant root and its coefficient, and $\delta_{d-1}$, $\delta_d$
+are their second dominant roots.
 
 ## Depends on
 

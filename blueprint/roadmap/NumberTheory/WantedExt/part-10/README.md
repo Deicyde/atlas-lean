@@ -16,7 +16,7 @@ navigation: transparent
 - [KPell Lucas Close To Power Of Two](kpell-lucas-close-to-power-of-two-wanted/README.md)
 - [Kamano Landen Poly Bernoulli](kamano-landen-poly-bernoulli-wanted/README.md)
 - [Klein Covering Systems](klein-covering-systems-wanted/README.md)
-- [Lagarias Wanted](riemann-hypothesis-iff-lagarias-elementa.md)
+- [Lagarias' elementary criterion for the Riemann hypothesis](riemann-hypothesis-iff-lagarias-elementa.md)
 - [Large Modulus Covering Systems](large-modulus-covering-systems-wanted/README.md)
 - [Large Value Estimates](large-value-estimates-wanted/README.md)
 - [Large Zsigmondy Primes](large-zsigmondy-primes-wanted/README.md)

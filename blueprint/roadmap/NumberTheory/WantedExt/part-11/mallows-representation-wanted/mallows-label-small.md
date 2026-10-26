@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.mallowsLabel_small
 ---
 
-# Mallows Label small
+# Labels of the first Mallows-tree vertices
 
-Characteristic values: the root is labelled `⟨1/2, 2/3⟩`, its middle child `⟨4/7, 3/5⟩`
-and its right child `⟨3/4, 4/5⟩`.
+**Labels of the first Mallows-tree vertices.** In the Mallows tree, the root is labelled
+$\langle 1/2, 2/3\rangle$, its middle child is labelled $\langle 4/7, 3/5\rangle$ and its right
+child is labelled $\langle 3/4, 4/5\rangle$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Label](mallows-label.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Labels of the Mallows tree](mallows-label.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ and their successors on each letter are again Moore-related.
 - [Reachable states of an encoded DFA](../../../decidability/part-02/regular/reachable.md)
 - [The start state is reachable](../../../decidability/part-02/regular/start-mem-reachable.md)
 - [Reachable states are closed under transitions](../../../decidability/part-02/regular/step-mem-reachable.md)
-- [Gfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
+- [Finite iteration from the whole type reaches a fixed point](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
 
 ## Sources
 

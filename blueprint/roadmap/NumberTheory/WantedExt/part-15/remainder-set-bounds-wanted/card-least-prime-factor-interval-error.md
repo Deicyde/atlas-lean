@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_leastPrimeFactor_interval_error
 ---
 
-# Card least Prime Factor interval error
+# Counting integers with a given least prime factor in an interval
 
-Lemma 6: for positive integers `a, t` and a prime `p`, let `D_p` be the integers divisible
-by `p` and by no smaller prime. Then
-`|D_p ∩ [a+1, a+t]| = t · (1/p) · ∏_{p' < p prime} (1 - 1/p') + E(a,t,p)` with
-`|E(a,t,p)| ≤ 2^{π(p-1)}`; the error term is the difference of the two sides.
+**Counting integers with a given least prime factor in an interval.** Let $a$ and $t$ be
+positive integers and let $p$ be a prime. Let $N$ be the number of integers $m$ with
+$a + 1 \le m \le a + t$ that are divisible by $p$ and by no prime $q < p$. Then
+
+$$\left| N - \frac{t}{p} \prod_{q < p,\ q \text{ prime}} \left(1 - \frac{1}{q}\right) \right|
+\le 2^{\pi(p-1)}$$
+
+where $\pi$ is the prime-counting function.
 
 ## Depends on
 

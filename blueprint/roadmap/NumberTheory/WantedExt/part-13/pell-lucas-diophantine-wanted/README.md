@@ -4,8 +4,8 @@ navigation: module
 
 # Pell Lucas Diophantine
 
-- [Lemma 2](pell-lucas-sequence-is-square-iff.md)
-- [Lemma 3](gcd-pell-number-pell-lucas-sequence.md)
-- [Lemma 4](gcd-pell-lucas-sequence-succ.md)
-- [Theorem 1](pow-add-pow-ne-sq.md)
-- [Theorem 2](pell-lucas-sequence-pow-add-pow-eq-sq.md)
+- [Square Pell–Lucas numbers](pell-lucas-sequence-is-square-iff.md)
+- [Pell and Pell–Lucas numbers are coprime](gcd-pell-number-pell-lucas-sequence.md)
+- [Consecutive Pell–Lucas numbers are coprime](gcd-pell-lucas-sequence-succ.md)
+- [Sums of two coprime positive $n$-th powers are not squares for $n \ge 4$](pow-add-pow-ne-sq.md)
+- [Sums of powers of consecutive Pell–Lucas numbers that are squares](pell-lucas-sequence-pow-add-pow-eq-sq.md)

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pythagoreanTripleMul
 ---
 
-# Pythagorean Triple Mul
+# Amato's product of triples
 
-Amato's product of triples (4), (12):
-`(x, y, z) ⋆ (x', y', z') = (x x', y z' + z y', y z' + z y' + (z - y)(z' - y'))`.
+**Amato's product of triples.** For a commutative ring $R$, the product of two triples
+$(x, y, z)$ and $(x', y', z')$ in $R^3$ is
+
+$$(x, y, z) \star (x', y', z') = (x x',\ y z' + z y',\ y z' + z y' + (z - y)(z' - y')).$$
+
+This is the source's product (4); its operation (12) on integral triples is the same formula.
 
 ## Depends on
 

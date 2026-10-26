@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.card_lift_padicVal_eq_one
 ---
 
-# Card lift padic Val eq one
+# Lifts of a nonsingular point with valuation one
 
-For a prime `p`, `f ∈ ℤ[x, y]` and a point `(r, s)` of `C_f(𝔽_p)` with `f_x(r, s)` or
-`f_y(r, s)` non-zero modulo `p`, exactly `p(p - 1)` of the lifts `(r + kp, s + lp)` have
-`ν_p(f) = 1`.
+**Lifts of a nonsingular point with valuation one.** Let $p$ be a prime, let
+$f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $r, s$ be integers in
+$\{0, \dots, p - 1\}$ with $p \mid f(r, s)$ such that $f_x(r, s)$ and $f_y(r, s)$ are not both
+divisible by $p$. Then exactly $p(p - 1)$ of the pairs $(k, l)$ with $0 \le k, l < p$ satisfy
+$p \mid f(r + kp, s + lp)$ and $p^2 \nmid f(r + kp, s + lp)$, that is,
+$\nu_p(f(r + kp, s + lp)) = 1$.
 
 ## Depends on
 

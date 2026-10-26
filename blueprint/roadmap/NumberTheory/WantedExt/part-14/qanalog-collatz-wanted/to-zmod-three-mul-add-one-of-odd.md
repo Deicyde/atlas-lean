@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.toZMod_three_mul_add_one_of_odd
 ---
 
-# To ZMod three mul add one of odd
+# $3x + 1$ is even for odd $2$-adic $x$
 
-For odd `x ∈ ℤ₂`, `3x + 1` is even.
+**$3x + 1$ is even for odd $2$-adic $x$.** For every $2$-adic integer $x \in \mathbb{Z}_2$ whose
+residue modulo $2$ is nonzero, the residue of $3x + 1$ modulo $2$ is zero.
 
 ## Depends on
 

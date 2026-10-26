@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_goldenRatio_nicomachean_sequence
 ---
 
-# Exists golden Ratio nicomachean sequence
+# Golden-ratio sequences with vanishing Nicomachean defect
 
-For every `N` there is a sequence `σ` of positive algebraic integers of `ℚ(√5)` (the ring
-`ℤ[φ]`, numbers `p + qφ`, `p, q ∈ ℤ`) with `ν(σ) = 0`, more than half of whose entries are
-irrational, containing `(1/φ)^n` for `1 ≤ n ≤ N`. "More than half irrational" is stated as a
-sublist of irrational entries longer than half of `σ`.
+**Golden-ratio sequences with vanishing Nicomachean defect.** Let $\varphi = (1 + \sqrt 5)/2$
+be the golden ratio and write
+$\nu(a_1, \dots, a_k) = (a_1 + \dots + a_k)^2 - (a_1^3 + \dots + a_k^3)$ for the Nicomachean defect
+of a finite sequence of real numbers. For every natural number $N$ there is a finite sequence
+$\sigma$ of positive real numbers, each of the form $p + q\varphi$ with $p, q \in \mathbb{Z}$, such
+that $\nu(\sigma) = 0$, $\sigma$ contains $\varphi^{-n}$ for every $1 \le n \le N$, and $\sigma$ has
+a subsequence of irrational entries whose length is more than half the length of $\sigma$.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

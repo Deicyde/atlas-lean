@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.oozT_singleton_two
 ---
 
-# Ooz T singleton two
+# The OOZ map on a one-letter word
 
-`T(z_2) = z_2 - z_1`.
+**The OOZ map on a one-letter word.** Let $T$ be the map of the OOZ quasi-shuffle product,
+which sends words in letters $z_k$ ($k$ a natural number) to finite formal $\mathbb{Q}$-linear
+combinations of words. Then $T$ sends the one-letter word $z_2$ to $z_2 - z_1$:
+$T(z_2) = z_2 - z_1$.
 
 ## Depends on
 
-- [Ooz T](ooz-t.md)
+- [The map $T$ of the OOZ quasi-shuffle product](ooz-t.md)
 
 ## Sources
 

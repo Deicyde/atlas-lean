@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.pqBinomial_zero_right
 ---
 
-# Pq Binomial zero right
+# $(p,q)$-binomial coefficients with lower index zero
 
-`[n, 0]_{p,q} = 1`.
+**$(p,q)$-binomial coefficients with lower index zero.** For all elements $p, q$ of a
+commutative semiring and every natural number $n$, the $(p,q)$-binomial coefficient
+$\binom{n}{0}_{p,q}$ equals $1$.
 
 ## Depends on
 
-- [Pq Binomial](pq-binomial.md)
+- [$(p,q)$-binomial coefficient](pq-binomial.md)
 
 ## Sources
 

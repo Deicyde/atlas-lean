@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isRieselNumber_repstring_659
 ---
 
-# Theorem 4.4
+# Binary repstrings of 659 that are Riesel numbers
 
-**Theorem 4.4.** If `t ≡ 1369` or `t ≡ 2599 (mod 2730)`, then the `2`-repstring
-`659_2^{(2;t)}` is a Riesel number.
+**Binary repstrings of 659 that are Riesel numbers.** For every natural number $t$ with
+$t \equiv 1369 \pmod{2730}$ or $t \equiv 2599 \pmod{2730}$, the binary repstring
+$659_2^{(2;t)} = 659\,(2^{12t} - 1)/(2^{12} - 1)$ is a Riesel number. Its binary expansion is that
+of $659$ (ten binary digits) written $t$ times with two zeros between consecutive copies.
 
 ## Depends on
 
-- [Is Riesel Number](is-riesel-number.md)
-- [Repstring](repstring.md)
+- [Riesel number](is-riesel-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotPsi
 ---
 
-# Stern Brocot Psi
+# The map $\psi_{SBT}$
 
-The map `ψ_SBT` on a Stern–Brocot vertex with gap `I`: the left child followed by the two
-children of the right child if the left child has odd numerator, and otherwise the two
-children of the left child followed by the right child (vertices encoded by their gaps).
+**The map $\psi_{SBT}$.** Encode a Stern–Brocot vertex by its gap $(a, b)$ of fractions: its
+label is the mediant $a \oplus b$ (numerators added, denominators added), and its left and right
+children are the vertices with gaps $(a, a \oplus b)$ and $(a \oplus b, b)$. Let $v_L$ and $v_R$
+be the left and right children of a vertex $v$. If the label of $v_L$ has odd numerator, then
+$\psi_{SBT}(v)$ is the list consisting of $v_L$ followed by the left and right children of
+$v_R$; otherwise it is the list consisting of the left and right children of $v_L$ followed by
+$v_R$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gap Mediant](gap-mediant.md)
+- [Mediant of a gap](gap-mediant.md)
 
 ## Sources
 

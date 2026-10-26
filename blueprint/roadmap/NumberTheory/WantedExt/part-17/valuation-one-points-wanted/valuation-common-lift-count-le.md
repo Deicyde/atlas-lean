@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.valuationCommonLiftCount_le
 ---
 
-# Valuation Common Lift Count le
+# The common lift count is at most $p^2$
 
-At most `p²` common lifts.
+**The common lift count is at most $p^2$.** For every $f \in \mathbb{Z}[x, y]$, all natural
+numbers $p$ and $k$ and every $k$-tuple $P$ of pairs of natural numbers, the common lift count of
+$P$ is at most $p^2$.
 
 ## Depends on
 
-- [Valuation Common Lift Count](valuation-common-lift-count.md)
+- [Common lift count](valuation-common-lift-count.md)
 
 ## Sources
 

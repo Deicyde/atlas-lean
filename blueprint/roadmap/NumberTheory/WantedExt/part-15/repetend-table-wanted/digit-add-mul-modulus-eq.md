@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.digit_add_mul_modulus_eq
 ---
 
-# Digit add mul modulus eq
+# Raising the base by multiples of $n$ shifts repetend digits linearly
 
-Raising the base by multiples of `n` shifts each repetend digit linearly: for the `j`-th digit
-`⌊m B^(j+1) / n⌋ mod B` of `m/n` in base `B`, there is `c < n` with
-`digit_j(b + t n) = digit_j(b) + t c` for every `t ≥ 0`.
+**Raising the base by multiples of $n$ shifts repetend digits linearly.** Let $m$ and $j$ be
+natural numbers, $n \ge 1$ and $b \ge 2$. For a base $B$ write
+$d_j(B) = \lfloor m B^{j+1} / n \rfloor \bmod B$ for the $j$-th base-$B$ digit of $m/n$. Then
+there is a natural number $c < n$ such that $d_j(b + tn) = d_j(b) + tc$ for every natural number
+$t$.
 
 ## Depends on
 

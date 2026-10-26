@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.padicValNat_sq_sub_add_one_of_orderOf_eq
 ---
 
-# Padic Val Nat sq sub add one of order Of eq
+# The $p$-adic valuation of $B^2 - B + 1$ for a base of order $6p^j$
 
-Class C setting (`n = p^i` with `p ≡ 1 (mod 6)` prime, `Q = p^j`, `j ≥ 1`, `i ≥ 2j`, `B` of
-order `L = 6Q` mod `n`):
-`B^2 - B + 1 = M` with `p`-adic valuation exactly `i - j` (so `M = l p^(i-j)`, `p ∤ l`).
+**The $p$-adic valuation of $B^2 - B + 1$ for a base of order $6p^j$.** Let $p$ be a prime
+with $p \equiv 1 \pmod 6$, let $i$ and $j$ be natural numbers with $j \ge 1$ and $i \ge 2j$, and
+let $B$ be a natural number whose multiplicative order modulo $p^i$ is $6p^j$. Then the $p$-adic
+valuation of $B^2 - B + 1$ is exactly $i - j$.
 
 ## Depends on
 

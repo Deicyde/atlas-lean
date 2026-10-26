@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer
 ---
 
-# Zeck Odometer
+# The Zeckendorf odometer
 
-The odometer `T : 𝕏 → 𝕏`, `T(x) = x + 1`. If `k ≥ 2` is the least index with
-`x_k = x_{k+1} = 0`, then `T` sets digit `k` and clears every digit below `k`; this is the
-paper's case table `⋯00(10)^ℓ ↦ ⋯01(00)^ℓ`, `⋯001(01)^ℓ ↦ ⋯010(00)^ℓ`. If no such `k`
-exists (`x = (10)^∞` or `(01)^∞`), then `T(x) = 0^∞`. Adding `r ∈ ℕ` to `x` is `T^[r] x`.
+**The Zeckendorf odometer.** The odometer is the map $T$ on digit sequences
+$x = (x_k)_{k \in \mathbb{N}}$ with $x_k \in \{0, 1\}$ defined as follows. If $x_k = x_{k+1} = 0$
+for some $k \ge 2$, let $k$ be the least such index; then $T(x)_j = 0$ for $j < k$, $T(x)_k = 1$
+and $T(x)_j = x_j$ for $j > k$. If there is no such $k$, then $T(x)$ is the zero sequence.
+
+On a Zeckendorf-adic integer, where digit $k \ge 2$ carries the weight of the Fibonacci number
+$F_k$, the map $T$ is addition of $1$, and $x + r$ denotes $T^r(x)$ for $r \in \mathbb{N}$.
 
 ## Depends on
 

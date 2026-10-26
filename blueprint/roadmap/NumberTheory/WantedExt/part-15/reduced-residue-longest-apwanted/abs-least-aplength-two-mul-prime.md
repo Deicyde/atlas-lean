@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength_two_mul_prime
 ---
 
-# Abs Least APLength two mul prime
+# Longest progressions of absolute least residues: twice an odd prime
 
-Theorem 1, `n = 2p` with `p` an odd prime: `g(2p) = p - 1`.
+**Longest progressions of absolute least residues: twice an odd prime.** For an odd prime
+$p$, the length $g(2p)$ of the longest arithmetic progression in the absolute least reduced
+residue system modulo $2p$ is $p - 1$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Sources
 

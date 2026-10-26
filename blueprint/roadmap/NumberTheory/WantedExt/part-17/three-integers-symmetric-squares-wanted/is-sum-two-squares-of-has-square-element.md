@@ -5,18 +5,21 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.isSumTwoSquaresℚ_of_hasSquareElementarySymmetricFunctionsℚ_and_scaling
 ---
 
-# Lemma 3
+# Rational solutions are sums of two squares and rescale to integer solutions
 
-**Lemma 3**: every entry of a rational solution is a sum of two rational
-squares, and scaling the rational solution gives an integer solution whose
-entries are integer sums of two squares.
+**Rational solutions are sums of two squares and rescale to integer solutions.** Let $a$, $b$,
+$c$ be rational numbers such that $a + b + c$, $ab + bc + ca$ and $abc$ are squares of rational
+numbers. Then each of $a$, $b$ and $c$ is a sum of two squares of rational numbers. Moreover,
+there is a nonzero rational number $k$ such that $A = ka$, $B = kb$ and $C = kc$ are integers,
+$A + B + C$, $AB + BC + CA$ and $ABC$ are squares of integers, and each of $A$, $B$ and $C$ is a
+sum of two squares of integers.
 
 ## Depends on
 
-- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
-- [Has Square Elementary Symmetric Functionsℚ](has-square-elementary-symmetric-function-2.md)
-- [Is Sum Two Squaresℚ](is-sum-two-squares.md)
-- [Is Sum Two Squaresℤ](is-sum-two-squares-2.md)
+- [Integer triples with square elementary symmetric functions](has-square-elementary-symmetric-function.md)
+- [Rationals with square elementary symmetric functions](has-square-elementary-symmetric-function-2.md)
+- [Sums of two rational squares](is-sum-two-squares.md)
+- [Sums of two integer squares](is-sum-two-squares-2.md)
 
 ## Sources
 

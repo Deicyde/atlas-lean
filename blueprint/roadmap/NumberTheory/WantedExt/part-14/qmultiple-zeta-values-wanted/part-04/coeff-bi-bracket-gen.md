@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.coeff_biBracketGen
 ---
 
-# Coeff bi Bracket Gen
+# Coefficients of the bi-bracket generating series
 
-The coefficient of `∏ⱼ Xⱼ^{aⱼ} Yⱼ^{bⱼ}` in `g(X; Y)` is `g(a₁ + 1, …; b₁, …)`.
+**Coefficients of the bi-bracket generating series.** For $r \in \mathbb{N}$ and exponents
+$a_1, \dots, a_r, b_1, \dots, b_r \ge 0$, the coefficient of $\prod_{j=1}^{r} X_j^{a_j} Y_j^{b_j}$
+in the generating series $g(X_1, \dots, X_r; Y_1, \dots, Y_r)$ of bi-brackets of depth $r$ is
+the bi-bracket $g(a_1 + 1, \dots, a_r + 1; b_1, \dots, b_r)$.
 
 ## Depends on
 
-- [Bi Bracket](bi-bracket.md)
-- [Bi Bracket Gen](bi-bracket-gen.md)
+- [Bi-brackets](bi-bracket.md)
+- [Generating series of bi-brackets](bi-bracket-gen.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lehmerKappa
 ---
 
-# Lehmer Kappa
+# The Lehmer function $\kappa_r$
 
-The function `κ_r(t_1, …, t_r) = (t_1 ⋯ t_r - 1) / ((t_1 - 1) ⋯ (t_r - 1))`, on lists of
-length `r`.
+**The Lehmer function $\kappa_r$.** For a list $t = (t_1, \dots, t_r)$ of real numbers,
+
+$$\kappa_r(t_1, \dots, t_r) = \frac{t_1 \cdots t_r - 1}{(t_1 - 1) \cdots (t_r - 1)},$$
+
+with division by zero giving $0$ (so $\kappa_r(t) = 0$ when some $t_i = 1$).
 
 ## Depends on
 

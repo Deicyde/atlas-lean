@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtensionOf.exists_knapsack
 ---
 
-# Exists knapsack
+# Partial sums of a lex-minimal extension solve a knapsack problem
 
-Proposition 2: if `η` is the lex-minimal extension of a finite binomid
-index of length `m ≥ 1`, then for every `c ≥ 1` there is a solution
-`(n_i)_{i ≤ m}` of the unbounded knapsack problem `UKP[(S_i); (i); c]`
-(maximize `∑ n_i S_i` subject to `∑ n_i i ≤ c`) with `S_c = ∑ n_i S_i` and
-`c = ∑ n_i i`.
+**Partial sums of a lex-minimal extension solve a knapsack problem.** Let $m \ge 1$, let
+$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, and write
+$S_i = e_1 + \dots + e_i$. Then for every $c \ge 1$ there are nonnegative integers
+$n_1, \dots, n_m$ with $\sum_{i=1}^m n_i i = c$ and $S_c = \sum_{i=1}^m n_i S_i$ that solve the
+unbounded knapsack problem with values $S_i$, weights $i$ and capacity $c$: all nonnegative
+integers $n'_1, \dots, n'_m$ with $\sum_{i=1}^m n'_i i \le c$ satisfy
+$\sum_{i=1}^m n'_i S_i \le \sum_{i=1}^m n_i S_i$.
 
 ## Depends on
 

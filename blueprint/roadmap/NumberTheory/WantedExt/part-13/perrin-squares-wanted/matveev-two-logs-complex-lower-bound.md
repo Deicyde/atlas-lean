@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.matveev_two_logs_complex_lower_bound
 ---
 
-# Matveev two logs complex lower bound
+# Matveev's lower bound for two logarithms (complex case)
 
-Theorem 6 (Matveev, two logarithms, complex case, as quoted): let `K` be a
-number field of degree `D` embedded in `ℂ`, `η₁, η₂ ∈ K` nonzero, `b₁, b₂`
-integers, `Λ = η₁ ^ b₁ η₂ ^ b₂ - 1`, `B ≥ max (|b₁|, |b₂|)` and
-`A_j ≥ max (D h(η_j), |log η_j|, 0.16)`. If `Λ ≠ 0` then
-`|Λ| > exp (-9.20483 × 10 ^ 11 D ^ 2 A₁ A₂ (1 + log D) (1 + log (2 B)))`.
-Here `h` is Mathlib's absolute logarithmic height and `log` the principal
-complex logarithm of the embedded value; the paper prints `|log η^{(j)}|`.
+**Matveev's lower bound for two logarithms (complex case).** Let $K$ be a number field of
+degree $D = [K : \mathbb{Q}]$ with a field embedding $f : K \to \mathbb{C}$, let
+$\eta_1, \eta_2 \in K$ be nonzero, and let $b_1, b_2$ be integers. Let $B$ be a real number with
+$|b_1| \le B$ and $|b_2| \le B$, and let $A_1, A_2$ be real numbers with
+$A_j \ge \max(D\,h(\eta_j), |\log f(\eta_j)|, 0.16)$ for $j = 1, 2$, where $h$ is the absolute
+logarithmic Weil height and $\log$ is the principal branch of the complex logarithm. Put
+$\Lambda = f(\eta_1)^{b_1} f(\eta_2)^{b_2} - 1$. If $\Lambda \ne 0$, then
+
+$$|\Lambda| > \exp\bigl(-9.20483 \cdot 10^{11} \, D^2 A_1 A_2 (1 + \log D)(1 + \log(2B))\bigr).$$
 
 ## Depends on
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.MahlerPopkenExpr.eval
 ---
 
-# Eval
+# Value of an $m$-ary expression
 
-The natural number expressed by an `m`-ary complexity
-expression.
+**Value of an $m$-ary expression.** The natural number expressed by an $m$-ary Mahler–Popken
+expression: the leaf with index $i \in \{0, \dots, m-1\}$ has value $i + 1$, and the value of a
+sum or of a product of two expressions is the sum or the product of their values.
 
 ## Depends on
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
 
 ## Sources
 

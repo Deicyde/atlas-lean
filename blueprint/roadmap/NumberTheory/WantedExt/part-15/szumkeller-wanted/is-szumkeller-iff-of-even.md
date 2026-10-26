@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isSZumkeller_iff_of_even
 ---
 
-# Is SZumkeller iff of even
+# Criterion for even s-Zumkeller numbers
 
-An even positive `n` is s-Zumkeller iff `(2σ₂(n) - 3n²)/4` is a (possibly
-empty) sum of squares of distinct proper divisors of `n` other than `n/2`.
+**Criterion for even s-Zumkeller numbers.** Let $n$ be an even positive integer and let
+$\sigma_2(n)$ be the sum of the squares of the positive divisors of $n$. Then $n$ is s-Zumkeller
+if and only if there is a (possibly empty) set $S$ of proper divisors of $n$, not containing
+$n/2$, such that $4 \sum_{d \in S} d^2 = 2\sigma_2(n) - 3n^2$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.sumOfSquaresRepCount_one
 ---
 
-# Sum Of Squares Rep Count one
+# The one-square counts are the coefficients of the square theta series
 
-`r_1(n)` is the coefficient of `θ`.
+**The one-square counts are the coefficients of the square theta series.** For an integer $k$
+and $n \ge 0$, let $r_k(n)$ be the coefficient of $q^n$ in $\theta(q)^k$, where $\theta$ is the
+square theta series. Then for every $n \ge 0$, $r_1(n)$ equals the coefficient of $q^n$ in
+$\theta(q)$.
 
 ## Depends on
 
-- [Square Theta Series](square-theta-series.md)
-- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
+- [The square theta series](square-theta-series.md)
+- [Representation numbers for sums of squares](sum-of-squares-rep-count.md)
 
 ## Proof depends on
 
-- [Is Unit square Theta Series](is-unit-square-theta-series.md)
+- [The square theta series is a unit](is-unit-square-theta-series.md)
 
 ## Sources
 

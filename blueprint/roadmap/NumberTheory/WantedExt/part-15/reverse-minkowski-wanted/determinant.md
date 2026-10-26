@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.determinant
 ---
 
-# Determinant
+# Determinant of a lattice
 
-The determinant of a `ℤ`-lattice of arbitrary rank is the square root of the determinant of
-`B^T * B`, where `B`is the basis matrix defined above.
+**Determinant of a lattice.** For a discrete $\mathbb{Z}$-submodule
+$\mathcal{L} \subseteq \mathbb{R}^n$ with basis matrix $B = B(\mathcal{L})$ (the real matrix whose
+columns form a fixed $\mathbb{Z}$-basis of $\mathcal{L}$), the determinant of $\mathcal{L}$ is
+$\det(\mathcal{L}) = \sqrt{\det(B^{T} B)}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [B](b.md)
+- [Basis matrix of a lattice](b.md)
 
 ## Sources
 

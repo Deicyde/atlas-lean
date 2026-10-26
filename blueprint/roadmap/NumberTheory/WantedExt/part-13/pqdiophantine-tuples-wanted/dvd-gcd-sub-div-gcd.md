@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.dvd_gcd_sub_div_gcd
 ---
 
-# Dvd gcd sub div gcd
+# $a$, $b$, $c$, $d$ divide gcds of reduced differences
 
-With `s₁, …, s₆` as above, `a` divides
-`gcd((s₂ - s₁) / gcd(s₂, s₁), (s₃ - s₁) / gcd(s₃, s₁), (s₃ - s₂) / gcd(s₃, s₂))`, and similarly
-`b`, `c`, `d` divide the corresponding gcds built from `(s₁, s₄, s₅)`, `(s₂, s₄, s₆)`,
-`(s₃, s₅, s₆)`. Stated in `ℤ` for all natural `a, b, c, d`; the `S`-Diophantine hypothesis is
-not needed.
+**$a$, $b$, $c$, $d$ divide gcds of reduced differences.** Let $a, b, c, d$ be natural numbers
+and put $s_1 = ab + 1$, $s_2 = ac + 1$, $s_3 = ad + 1$, $s_4 = bc + 1$, $s_5 = bd + 1$,
+$s_6 = cd + 1$. For indices $i, j$ let $t_{ij}$ be the integer $(s_j - s_i) / \gcd(s_j, s_i)$.
+Then $a \mid \gcd(t_{12}, t_{13}, t_{23})$, $b \mid \gcd(t_{14}, t_{15}, t_{45})$,
+$c \mid \gcd(t_{24}, t_{26}, t_{46})$ and $d \mid \gcd(t_{35}, t_{36}, t_{56})$ in $\mathbb{Z}$.
+
+The source assumes that $\{a, b, c, d\}$ is $S$-Diophantine; that hypothesis is not needed.
 
 ## Depends on
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isClosed_nLagrangeSpectrum
 ---
 
-# Is Closed n Lagrange Spectrum
+# The $n$-Lagrange spectrum is closed
 
-`Lₙ` is closed.
+**The $n$-Lagrange spectrum is closed.** For every integer $n \ge 1$, the $n$-Lagrange spectrum
+$L_n$ is a closed subset of $\mathbb{R}$.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

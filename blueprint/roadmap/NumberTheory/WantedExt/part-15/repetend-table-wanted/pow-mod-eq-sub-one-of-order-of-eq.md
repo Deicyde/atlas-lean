@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.pow_mod_eq_sub_one_of_orderOf_eq
 ---
 
-# Pow mod eq sub one of order Of eq
+# A power of $B$ equal to $B - 1$ modulo $p^i$
 
-Class C setting (`p ≡ 1 (mod 6)`): if `0 ≤ z < 6Q` with `z ≡ 2 (mod 6)` and
-`z ≡ B⁻¹ (mod Q)`, or `z ≡ 1 - B (mod Q)`, then `B^z ≡ B - 1 (mod n)`.
+**A power of $B$ equal to $B - 1$ modulo $p^i$.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+let $i$ and $j$ be natural numbers with $j \ge 1$ and $i \ge 2j$, put $n = p^i$ and $Q = p^j$, and
+let $B < n$ be a natural number whose multiplicative order modulo $n$ is $6Q$. Let $z < 6Q$ be a
+natural number with $z \equiv 2 \pmod 6$ such that $zB \equiv 1 \pmod Q$ or
+$z \equiv 1 - B \pmod Q$. Then $B^z \bmod n = B - 1$.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothWellApproximableSet
 ---
 
-# Volume luroth Well Approximable Set
+# Tan–Zhou theorem (Lüroth analogue of Khintchine's theorem)
 
-Tan–Zhou, a Lüroth analogue of Khintchine's theorem: for non-increasing
-`ψ : ℕ → (0, 1]`, `L(L(ψ))` is `0` if `∑ -ψ(q) log ψ(q) / q` converges and `1` if it
-diverges. The `q = 0` term is `0` in Lean; `ψ` is also assumed non-increasing at `0`.
+**Tan–Zhou theorem (Lüroth analogue of Khintchine's theorem).** Let $\psi$ be a non-increasing
+function from the natural numbers (including $0$) to $(0, 1]$, and let $L(\psi)$ be the set of
+Lüroth $\psi$-well approximable numbers. If the series $\sum_{q \ge 1} -\psi(q) \log \psi(q) / q$
+converges, then $L(\psi)$ has Lebesgue measure $0$; if it diverges, then $L(\psi)$ has Lebesgue
+measure $1$.
 
 ## Depends on
 
-- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
+- [Lüroth well approximable numbers](luroth-well-approximable-set.md)
 
 ## Sources
 

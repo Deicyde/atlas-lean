@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.infinite_prime_pairs_smooth_47_gap
 ---
 
-# Infinite prime pairs smooth 47 gap
+# Infinitely many prime pairs with $47$-smooth difference
 
-Infinitely many pairs of primes `p > q` have `47`-smooth difference `p - q`.
+**Infinitely many prime pairs with $47$-smooth difference.** There are infinitely many pairs
+of primes $p > q$ such that every prime factor of $p - q$ is at most $47$.
 
 ## Depends on
 

@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bzChainSum
 ---
 
-# Bz Chain Sum
+# Weighted chain sums
 
-Weighted chain sums: for a word of markers (`some k` a position weighted by `C(j, k)` in its
-multiplicity `j`, `none` an unweighted position), a bound `M` and a target `R`,
-`∑ ∏ C(jₜ, kₜ)` over strictly decreasing chains `M > a₁ > a₂ > ⋯ > 0` (one value per marker) and
-multiplicities `jₜ ≥ 0` with `∑ aₜ jₜ = R`, the product over the `some` positions.
+**Weighted chain sums.** Let $o_1, \dots, o_\ell$ be a word of markers, each either a natural
+number (a weighted position) or a blank (an unweighted position); let $W$ be the set of weighted
+positions and $k_t$ the number at position $t \in W$. For natural numbers $M$ and $R$, the
+weighted chain sum of the word at bound $M$ and target $R$ is the natural number
+
+$$\sum \prod_{t \in W} \binom{j_t}{k_t},$$
+
+the sum running over strictly decreasing chains $M > a_1 > a_2 > \dots > a_\ell > 0$ of natural
+numbers and multiplicities $j_1, \dots, j_\ell \ge 0$ with $a_1 j_1 + \dots + a_\ell j_\ell = R$.
+For the empty word ($\ell = 0$) the sum has a single empty term, so the value is $1$ if $R = 0$
+and $0$ otherwise, whatever $M$ is.
 
 ## Depends on
 

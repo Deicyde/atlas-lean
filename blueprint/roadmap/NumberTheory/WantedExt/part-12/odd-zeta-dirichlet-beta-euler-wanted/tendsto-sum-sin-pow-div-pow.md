@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_sum_sin_pow_div_pow
 ---
 
-# Tendsto sum sin pow div pow
+# Sums of powers of $\sin(nt)/n$
 
-Proposition 4 (quoting Tuck): for `k ≥ 1`,
-`∑_{n ≥ 1} sin^k(n t) / n^k = π t^(k-1) I_k - t^k / 2` for `0 < t < 2π` if `k = 1` and for
-`0 ≤ t ≤ 2π/k` if `k ≥ 2`. Here `π I_k = L` is the improper integral
-`lim_{R → ∞} ∫_0^R (sin x / x)^k dx`, supplied as a hypothesis, and the series is the limit of
-its partial sums (for `k = 1` it converges only conditionally).
+**Sums of powers of $\sin(nt)/n$.** Let $k \ge 1$ be a natural number, suppose that the
+limit $L = \lim_{R \to \infty} \int_0^R (\sin x / x)^k \, dx$ exists, and let $t$ be a real
+number with $0 < t < 2\pi$ if $k = 1$ and $0 \le t \le 2\pi/k$ if $k \ge 2$. Then the partial
+sums of $\sum_{n \ge 1} \sin^k(nt)/n^k$ converge and
+
+$$\sum_{n=1}^{\infty} \frac{\sin^k(nt)}{n^k} = t^{k-1} L - \frac{t^k}{2}.$$
+
+The source writes $L$ as $\pi I_k$, with $I_k$ the normalized integral of its Theorem 1. For
+$k = 1$ the series converges only conditionally.
 
 ## Depends on
 

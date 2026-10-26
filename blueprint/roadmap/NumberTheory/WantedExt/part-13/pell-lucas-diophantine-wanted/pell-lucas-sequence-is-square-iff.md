@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_isSquare_iff
 ---
 
-# Lemma 2
+# Square Pell–Lucas numbers
 
-**Lemma 2**: the only square terms in the
-Pell–Lucas sequence are `Q_0 = 1` and `Q_1 = 1`.
+**Square Pell–Lucas numbers.** For every natural number $n$, the Pell–Lucas number $Q_n$ is a
+perfect square if and only if $n = 0$ or $n = 1$; thus the only square terms of the sequence are
+$Q_0 = Q_1 = 1$.
 
 ## Depends on
 

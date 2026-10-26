@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_polygonal_add_polygonal_modEq_prime_pow
 ---
 
-# Exists prime polygonal add polygonal mod Eq prime pow
+# Sums of two polygonal numbers modulo prime powers
 
-For `s > 3` there is an odd prime `p ∤ s - 2` such that for all positive `k, n` some
-positive `x, y` have `P_s(x) + P_s(y) ≡ n (mod p^k)`. The witness is required to satisfy
-`p ≡ 1 (mod 4)` (hence odd), as chosen in the paper's proof via Lemma 8 (arXiv Lemma 4.3);
-the printed statement asks only for an odd prime.
+**Sums of two polygonal numbers modulo prime powers.** For a natural number $s > 3$ and a
+natural number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. There
+is a prime $p$ with $p \equiv 1 \pmod{4}$ and $p \nmid s - 2$ such that for all natural numbers
+$k > 0$ and $n > 0$ there are natural numbers $x, y > 0$ with
+$P_s(x) + P_s(y) \equiv n \pmod{p^k}$.
+
+The paper's statement asks only for an odd prime; the condition $p \equiv 1 \pmod{4}$ is the
+choice made in its proof via Lemma 8 (arXiv Lemma 4.3).
 
 ## Depends on
 

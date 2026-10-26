@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtensionOf.gcd_maxAverageIndices_dvd_minimalPeriod
 ---
 
-# Gcd max Average Indices dvd minimal Period
+# The gcd of the maximizing indices divides the minimal period
 
-Lemma 3: the minimal period of the lex-minimal extension `η̃` of a finite
-binomid index of length `m ≥ 1` (the least `p ≥ 1` with `η (i + p) = η i` for
-all large `i`) is divisible by `GCD {i ≤ m | A_i = A_max}`.
+**The gcd of the maximizing indices divides the minimal period.** Let $m \ge 1$, let
+$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages
+$A_i = (e_1 + \dots + e_i)/i$, and let $g$ be the greatest common divisor of the indices
+$1 \le i \le m$ with $A_i = \max \{A_j \mid 1 \le j \le m\}$. If $p$ is the least $q \ge 1$
+such that $e_{i+q} = e_i$ for all sufficiently large $i$, then $g$ divides $p$.
 
 ## Depends on
 
 - [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
-- [Max Average Indices](max-average-indices.md)
+- [Indices of maximal average](max-average-indices.md)
 
 ## Sources
 

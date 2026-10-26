@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_padicVal_gt_one_le_natDegree
 ---
 
-# Card padic Val gt one le nat Degree
+# Few residues modulo $p^2$ with valuation above one
 
-For a non-zero `g ∈ ℤ[x]` of degree `d` with non-zero discriminant, for all sufficiently large primes `p`
-at most `d` residues `0 ≤ x < p²` have `ν_p(g(x)) > 1`.
+**Few residues modulo $p^2$ with valuation above one.** Let $g \in \mathbb{Z}[x]$ be a
+non-zero polynomial of degree $d$ with non-zero discriminant. Then there is a natural number $P$
+such that for every prime $p \ge P$, at most $d$ integers $x$ with $0 \le x < p^2$ satisfy
+$p^2 \mid g(x)$.
 
 ## Depends on
 

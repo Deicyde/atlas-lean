@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isUnit_triangularThetaSeries
 ---
 
-# Is Unit triangular Theta Series
+# The triangular theta series is a unit
 
-`ψ` is a unit of `ℤ⟦q⟧` (constant coefficient `1`).
+**The triangular theta series is a unit.** The triangular theta series
+$\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$ is a unit of the ring $\mathbb{Z}[[q]]$ of formal power
+series with integer coefficients, since its constant coefficient is $1$.
 
 ## Depends on
 
-- [Triangular Theta Series](triangular-theta-series.md)
+- [Triangular theta series](triangular-theta-series.md)
 
 ## Proof depends on
 
-- [Coeff triangular Theta Series small](coeff-triangular-theta-series-small.md)
+- [First coefficients of the triangular theta series](coeff-triangular-theta-series-small.md)
 
 ## Sources
 

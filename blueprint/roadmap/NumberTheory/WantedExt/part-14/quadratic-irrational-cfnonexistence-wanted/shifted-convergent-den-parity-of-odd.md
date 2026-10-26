@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.shifted_convergentDen_parity_of_odd
 ---
 
-# Shifted convergent Den parity of odd
+# Parity of the shifted continuant of a symmetric sequence, odd length
 
-Corollary 2 (ii): for odd `l ≥ 5` and a symmetric sequence `a₁, …, a_{l-1}`,
-`r_{l-2} ≡ r_{(l-1)/2} + r_{(l-3)/2} (mod 2)` with `r_j = K(a₂, …, a_j)`. The case `l = 3`,
-which needs `r_0 = 0`, is omitted.
+**Parity of the shifted continuant of a symmetric sequence, odd length.** Let $l \ge 5$ be
+odd and let $a_1, \dots, a_{l-1}$ be natural numbers with $a_i = a_{l-i}$ for
+$1 \le i \le l - 1$. For $j \ge 1$ let $r_j = K(a_2, \dots, a_j)$ be the continuant, given by
+$r_1 = 1$, $r_2 = a_2$ and $r_{j+2} = a_{j+2} r_{j+1} + r_j$. Then
+$r_{l-2} \equiv r_{(l-1)/2} + r_{(l-3)/2} \pmod 2$.
+
+The case $l = 3$ of the paper, which needs $r_0 = 0$, is omitted.
 
 ## Depends on
 
-- [Convergent Den](convergent-den.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

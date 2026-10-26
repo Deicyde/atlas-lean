@@ -5,22 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.bFree_divisor_sum_progression_asymptotic
 ---
 
-# B Free divisor sum progression asymptotic
+# Asymptotic for the divisor function summed over $B_\kappa$-free integers in a progression
 
-Corollary 3: let `κ_min = K ≥ 2` and let `0 ≤ a < ξ` with `gcd(a, ξ) = 1`. There is a
-constant `c̃` such that, for every `ε > 0`,
-`D̃_{B_κ}(x, a, ξ) = ∑_{n ≤ x, n ≡ a (mod ξ), n B_κ-free} τ(n)
-  = (φ(ξ)/ξ²) (∏_{p ∤ ξ} (1 - (κ(p) + 1)/p^{κ(p)} + κ(p)/p^{κ(p)+1})) x log x + c̃ x
-    + O(x^{η_κ + ε})`,
-with `η_κ = 1/2` for `κ_min = 2` and `η_κ = 1/3` for `κ_min ≥ 4`. The printed statement does not
-cover `κ_min = 3`, so neither does this declaration.
+**Asymptotic for the divisor function summed over $B_\kappa$-free integers in a progression.**
+Let $\kappa$ be a function from the natural numbers to the natural numbers and let $K$ be the
+minimum of $\kappa(p)$ over the primes $p$: $\kappa(p) \ge K$ for every prime $p$, with equality
+for some prime. Assume $K \ge 2$ and $K \ne 3$. Let $a$ and $\xi$ be natural numbers with
+$a < \xi$ and $\gcd(a, \xi) = 1$. Let $q_{B_\kappa}$ be the indicator of $B_\kappa$-free
+integers, $\tau(n)$ the number of positive divisors of $n$ and $\varphi$ Euler's totient
+function, and put
 
-The product over `χ_ξ(p) = 1` is written as a `tprod` over primes with factor `1` at primes
-dividing `ξ`; `κ` is indexed by primes.
+$$C_{\kappa,\xi} = \prod_{p \nmid \xi} \Bigl(1 - \frac{\kappa(p) + 1}{p^{\kappa(p)}} +
+\frac{\kappa(p)}{p^{\kappa(p)+1}}\Bigr),$$
+
+the product running over the primes $p$ that do not divide $\xi$. Let $\eta = 1/2$ if $K = 2$
+and $\eta = 1/3$ if $K \ge 4$. Then there is a real constant $\tilde c$ such that for every
+$\varepsilon > 0$, as $x \to \infty$,
+
+$$\sum_{\substack{1 \le n \le x \\ n \equiv a \pmod{\xi}}} q_{B_\kappa}(n) \tau(n) =
+\frac{\varphi(\xi)}{\xi^2} C_{\kappa,\xi} \, x \log x + \tilde c x + O(x^{\eta + \varepsilon}).$$
+
+The case $K = 3$ is not covered by the paper's statement and is excluded.
 
 ## Depends on
 
-- [B Free Indicator](b-free-indicator.md)
+- [Indicator of $B_\kappa$-free integers](b-free-indicator.md)
 
 ## Sources
 

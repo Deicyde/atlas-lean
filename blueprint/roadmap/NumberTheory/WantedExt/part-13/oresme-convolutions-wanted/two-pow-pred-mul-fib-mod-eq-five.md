@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_pred_mul_fib_modEq_five
 ---
 
-# Two pow pred mul fib mod Eq five
+# Oresme–Fibonacci congruence modulo 5
 
-`2^{n-1} F_n ≡ n (mod 5)` for every `n ≥ 0` (at `n = 0` both sides vanish, so the
-truncated exponent `0 - 1 = 0` is harmless).
+**Oresme–Fibonacci congruence modulo 5.** Let $F_n$ denote the Fibonacci numbers, with
+$F_0 = 0$ and $F_1 = 1$. For every natural number $n$, $2^{n-1} F_n \equiv n \pmod 5$, where at
+$n = 0$ the exponent $n - 1$ is taken to be $0$ (both sides are then $0$).
 
 ## Depends on
 

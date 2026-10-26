@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.convergentDen_parity_of_even
 ---
 
-# Convergent Den parity of even
+# Parity of $q_{l-1}$ for a symmetric sequence, even $l$
 
-Corollary 1 (i): for even `l ≥ 2` and a symmetric sequence `a₁, …, a_{l-1}`,
-`q_{l-1} ≡ a_{l/2} q_{l/2-1} (mod 2)`.
+**Parity of $q_{l-1}$ for a symmetric sequence, even $l$.** Let $l \ge 2$ be even and let
+$a_0, a_1, a_2, \dots$ be natural numbers with convergent denominators $q_0, q_1, q_2, \dots$,
+such that $a_i = a_{l-i}$ for $1 \le i < l$. Then $q_{l-1} \equiv a_{l/2} \, q_{l/2-1} \pmod 2$.
 
 ## Depends on
 
-- [Convergent Den](convergent-den.md)
+- [Convergent denominators as continuants](convergent-den.md)
 
 ## Sources
 

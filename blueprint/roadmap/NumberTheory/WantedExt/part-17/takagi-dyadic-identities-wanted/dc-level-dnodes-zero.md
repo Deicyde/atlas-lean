@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.dcLevelDNodes_zero
 ---
 
-# Dc Level DNodes zero
+# Level count of D-nodes on level zero
 
-On level `0`, `λ₀(n) = n mod 2`.
+**Level count of D-nodes on level zero.** For every natural number $n$, the level count of
+D-nodes on level $0$ is $\lambda_0(n) = n \bmod 2$.
 
 ## Depends on
 
-- [Dc Level DNodes](dc-level-dnodes.md)
+- [Level counts of D-nodes](dc-level-dnodes.md)
 
 ## Sources
 

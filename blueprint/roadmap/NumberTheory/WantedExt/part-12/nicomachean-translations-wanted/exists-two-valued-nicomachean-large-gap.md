@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_two_valued_nicomachean_large_gap
 ---
 
-# Exists two valued nicomachean large gap
+# Two-valued Nicomachean sequences with a large gap
 
-For every `ε > 0` there are sequences of positive integers with `ν = 0` having exactly two
-distinct entries `a < b` such that the largest gap `b - a` divided by the length exceeds `1 - ε`.
+**Two-valued Nicomachean sequences with a large gap.** Write
+$\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
+of a finite sequence. For every real $\varepsilon > 0$ there are integers $0 < a < b$ and a finite
+sequence $\sigma$ whose entries all equal $a$ or $b$, in which both $a$ and $b$ occur, such that
+$\nu(\sigma) = 0$ and $(b - a)/L > 1 - \varepsilon$, where $L$ is the length of $\sigma$.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

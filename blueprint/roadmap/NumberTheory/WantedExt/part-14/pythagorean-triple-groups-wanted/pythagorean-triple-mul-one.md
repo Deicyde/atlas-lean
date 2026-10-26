@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pythagoreanTripleMul_one
 ---
 
-# Pythagorean Triple Mul one
+# Right identity for Amato's product
 
-`(1, 0, 1)` is a right identity for `⋆`.
+**Right identity for Amato's product.** For every commutative ring $R$ and every triple
+$u \in R^3$, we have $u \star (1, 0, 1) = u$, where $\star$ is Amato's product of triples.
 
 ## Depends on
 
-- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
+- [Amato's product of triples](pythagorean-triple-mul.md)
 
 ## Sources
 

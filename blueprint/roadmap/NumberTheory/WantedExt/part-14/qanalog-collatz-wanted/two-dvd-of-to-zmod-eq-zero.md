@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.two_dvd_of_toZMod_eq_zero
 ---
 
-# Two dvd of to ZMod eq zero
+# Divisibility by $2$ from the residue modulo $2$
 
-A `2`-adic integer whose residue modulo `2` vanishes is divisible by `2`.
+**Divisibility by $2$ from the residue modulo $2$.** If the residue modulo $2$ of a $2$-adic
+integer $y \in \mathbb{Z}_2$ is zero, then $2$ divides $y$ in $\mathbb{Z}_2$.
 
 ## Depends on
 

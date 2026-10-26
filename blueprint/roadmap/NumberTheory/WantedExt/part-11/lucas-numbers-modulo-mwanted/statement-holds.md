@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement_holds
 ---
 
-# Statement holds
+# Avila–Chen theorem on Lucas numbers modulo $m$
 
-Resolved true: Avila and Chen proved the stated classification for moduli m greater than 1.
+**Avila–Chen theorem on Lucas numbers modulo $m$.** Let $L_n$ denote the Lucas numbers. For every
+integer $m > 1$, every residue modulo $m$ is attained by the Lucas numbers (for every $r$ with
+$0 \le r < m$ there is $n \ge 0$ with $L_n \equiv r \pmod m$) if and only if
+$m \in \{2, 4, 6, 7, 14\}$ or $m = 3^k$ for some integer $k \ge 1$.
 
 ## Depends on
 
-- [Statement](statement.md)
+- [Classification of moduli for which the Lucas numbers attain every residue](statement.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.dyadic_mantissa_eq
 ---
 
-# Dyadic mantissa eq
+# Normalized form of $n = 2^k + r$
 
-Lemma 2: with `n = 2^k + r`, `0 ≤ r < 2^k`, and `n = 2^k (1 + x)`, one has
-`x = r / 2^k` and `1 + x = n / 2^k`.
+**Normalized form of $n = 2^k + r$.** Let $n$, $k$ and $r$ be natural numbers with $r < 2^k$
+and $n = 2^k + r$, and let $x$ be a rational number with $n = 2^k (1 + x)$. Then $x = r / 2^k$
+and $1 + x = n / 2^k$.
 
 ## Depends on
 

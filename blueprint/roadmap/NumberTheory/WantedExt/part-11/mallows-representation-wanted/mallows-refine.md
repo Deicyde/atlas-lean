@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRefine
 ---
 
-# Mallows Refine
+# One refinement step of the Mallows tree
 
-One refinement step `{0/1, 1/1} ∪ MT_1 ∪ ⋯ ∪ MT_i ↦ {0/1, 1/1} ∪ MT_1 ∪ ⋯ ∪ MT_{i+1}` of an
-increasing list of fractions: Mallows' insertion between each pair of adjacent fractions.
+**One refinement step of the Mallows tree.** Let $a_1, a_2, \ldots, a_k$ be a finite list of
+fractions, each fraction $n/m$ recorded as the pair $(n, m)$ of natural numbers. Its refinement is
+the list obtained by keeping every entry and inserting, between each two consecutive entries
+$a_t$ and $a_{t+1}$, the two fractions that Mallows' insertion rule places between them, in the
+order the rule gives them. A list with fewer than two entries is its own refinement.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mallows Insert](mallows-insert.md)
+- [Mallows' insertion rule](mallows-insert.md)
 
 ## Sources
 

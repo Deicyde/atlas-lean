@@ -5,22 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotFrac_parity_side
 ---
 
-# Stern Brocot Frac parity side
+# Parity and side of the Stern–Brocot fractions
 
-For irrational `α ∈ (0, 1)` and every `j`: (i) the numerator of `f_j(α)` is odd iff
-`Q_j(SB(α)) ∈ {O_L, O_R}`; (ii) `f_j(α)` is the left (resp. right) element of the Mallows label
-containing it iff `Q_j(SB(α)) ∈ {O_L, E_L}` (resp. `{O_R, E_R}`). Part (ii) is stated as: some
-label contains `f_j(α)`, and every label having it as left (resp. right) element forces the
-corresponding letters; with Proposition 3 this is the paper's equivalence.
+**Parity and side of the Stern–Brocot fractions.** Let $\alpha \in (0, 1)$ be irrational,
+let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its Stern–Brocot path, and let
+$SB(\alpha) = \langle SB_1, SB_2, \dots \rangle$ be its Stern–Brocot representation. Let
+$Q(SB(\alpha)) = \langle Q_1, Q_2, \dots \rangle$ be the sequence over
+$\{O_L, E_R, O_R, E_L\}$ with $Q_1 = O_L$ in which $Q_{j+1}$ is determined by $Q_j$ and $SB_j$
+as follows: from $O_L$, $L \mapsto O_L$ and $R \mapsto E_R$; from $E_R$, $L \mapsto O_R$ and
+$R \mapsto O_L$; from $O_R$, $L \mapsto E_L$ and $R \mapsto O_R$; from $E_L$, $L \mapsto O_R$
+and $R \mapsto O_L$. Then for every $j \ge 1$: (i) the numerator of $f_j(\alpha)$ is odd if
+and only if $Q_j \in \{O_L, O_R\}$; (ii) $f_j(\alpha)$ is the left or the right element of the
+label of some vertex of the Mallows tree; (iii) for every vertex of the Mallows tree, if
+$f_j(\alpha)$ is the left element of its label then $Q_j \in \{O_L, E_L\}$, and if it is the
+right element then $Q_j \in \{O_R, E_R\}$.
+
+Since every fraction is an element of at most one Mallows label (Proposition 3), (ii) and
+(iii) give the paper's equivalence: $f_j(\alpha)$ is the left (resp. right) element of its
+Mallows label if and only if $Q_j \in \{O_L, E_L\}$ (resp. $\{O_R, E_R\}$).
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Mallows Label](mallows-label.md)
-- [Mallows Q](mallows-q.md)
-- [Stern Brocot Frac](stern-brocot-frac.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Labels of the Mallows tree](mallows-label.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [Fractions on the Stern–Brocot path](stern-brocot-frac.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsSumOfTwoPrimePowers
 ---
 
-# Is Sum Of Two Prime Powers
+# Sums of two prime powers
 
-Representability as a sum of two prime powers: `n = p ^ a + q ^ b`
-for primes `p, q` and nonnegative exponents `a, b` (so `1` counts as a
-prime power, via exponent `0`).
+**Sums of two prime powers.** An integer $n$ is a sum of two prime powers if
+$n = p^a + q^b$ for some primes $p$ and $q$ and some natural numbers $a$ and $b$. Since the
+exponents may be $0$, the number $1 = p^0$ counts as a prime power here.
 
 ## Depends on
 

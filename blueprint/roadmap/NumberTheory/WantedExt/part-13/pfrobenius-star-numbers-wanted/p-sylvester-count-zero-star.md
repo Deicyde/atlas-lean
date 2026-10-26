@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star
 ---
 
-# P Sylvester Count zero star
+# $0$-Sylvester number of three consecutive star numbers
 
-The `p = 0` case of Theorem 2: the `0`-Sylvester number for
-three consecutive star numbers, for `n ≥ 6`.
+**$0$-Sylvester number of three consecutive star numbers.** Write $S_m$ for the $m$-th star
+number $6m(m-1)+1$. For every natural number $n \ge 6$, the number of natural numbers that
+cannot be written as $x S_n + y S_{n+1} + z S_{n+2}$ with $x, y, z$ natural numbers is
+$n(15n^2 + 8n + 7)$.
 
 ## Depends on
 
-- [P Sylvester Star Count](p-sylvester-star-count.md)
+- [$p$-Sylvester number of three consecutive star numbers](p-sylvester-star-count.md)
 
 ## Sources
 

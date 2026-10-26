@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_twelfth_moment_five_sevenths_le
 ---
 
-# Riemann Zeta twelfth moment five sevenths le
+# Twelfth moment of the Riemann zeta function on the line of real part 5/7
 
-Twelfth moment of `ζ` on the line `σ = 5/7`: for every `ε > 0`,
-`∫_0^T |ζ(5/7 + i t)|^{12} dt ≪_ε T^{1 + ε}` uniformly for `T ≥ 1`.
+**Twelfth moment of the Riemann zeta function on the line of real part 5/7.** For every
+$\varepsilon > 0$ there is a constant $C$ such that for every real $T \ge 1$,
+
+$$\int_0^T |\zeta(5/7 + it)|^{12} \, dt \le C T^{1+\varepsilon}.$$
 
 ## Depends on
 

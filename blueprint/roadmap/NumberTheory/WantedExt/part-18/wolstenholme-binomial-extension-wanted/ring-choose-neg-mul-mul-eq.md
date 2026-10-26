@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ringChoose_neg_mul_mul_eq
 ---
 
-# Ring Choose neg mul mul eq
+# Binomial coefficients with upper index $-np$
 
-Lemma 5: for `n ∈ ℕ` and `k ≥ 1`,
-`binom(-np, kp) = (-1)^{kp} (n / k) binom((n + k)p - 1, kp - 1)
-= (-1)^{kp} (n / (n + k)) binom((n + k)p, kp)`, with the negative upper index
-read through `Ring.choose` on `ℤ`. Stated for every `p > 0` (the paper takes `p`
-prime).
+**Binomial coefficients with upper index $-np$.** Let $p$, $n$ and $k$ be natural numbers
+with $p \ge 1$ and $k \ge 1$. For an integer $x$ and a natural number $r$ write
+$\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$. Then
+
+$$
+\binom{-np}{kp} = (-1)^{kp} \, \frac{n}{k} \binom{(n+k)p - 1}{kp - 1} =
+(-1)^{kp} \, \frac{n}{n+k} \binom{(n+k)p}{kp}.
+$$
+
+The paper takes $p$ prime.
 
 ## Depends on
 

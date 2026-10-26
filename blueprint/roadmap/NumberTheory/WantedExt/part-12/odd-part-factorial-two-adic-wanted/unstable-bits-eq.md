@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.unstableBits_eq
 ---
 
-# Unstable Bits eq
+# Formula for the unstable bits
 
-The characteristic formula for `uns` explicitly identifies the shifted and
-reduced odd factorial whose least-significant-first binary digits are the
-paper's first `d` unstable bits.
+**Formula for the unstable bits.** Write $\operatorname{od}(n)$ for the odd part of a natural
+number $n$. For all natural numbers $e$ and $d$, the unstable bits are
+$\operatorname{uns}(e,d) = \lfloor \operatorname{od}((2^e)!) / 2^{e+1} \rfloor \bmod 2^d$.
+
+The binary digits of this number, least significant first, are the paper's first $d$ unstable
+bits of $\operatorname{od}((2^e)!)$.
 
 ## Depends on
 
-- [Odd Part](odd-part.md)
-- [Unstable Bits](unstable-bits.md)
+- [Odd part](odd-part.md)
+- [Unstable bits](unstable-bits.md)
 
 ## Sources
 

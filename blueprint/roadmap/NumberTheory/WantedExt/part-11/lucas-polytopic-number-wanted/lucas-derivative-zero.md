@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.lucasDerivative_zero
 ---
 
-# Lucas Derivative zero
+# The Lucas derivative at the origin
 
-The Lucas derivative at `0` is the ordinary derivative at `0`.
+**The Lucas derivative at the origin.** For all real numbers $\varphi$, $\varphi'$ and every
+function $f : \mathbb{R} \to \mathbb{R}$, the Lucas derivative $D_{\varphi,\varphi'}$ satisfies
+$D_{\varphi,\varphi'} f(0) = f'(0)$, where $f'(0)$ is read as $0$ when $f$ is not differentiable
+at $0$.
 
 ## Depends on
 
-- [Lucas Derivative](lucas-derivative.md)
+- [Lucas derivative](lucas-derivative.md)
 
 ## Sources
 

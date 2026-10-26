@@ -13,7 +13,7 @@ The generating function identity (2) in cleared form:
 
 ## Depends on
 
-- [Overpartition Pair Even Distinct GF](overpartition-pair-even-distinct-gf.md)
+- [Generating function of $(j, k)$-overpartition pairs with even parts distinct](overpartition-pair-even-distinct-gf.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Proof depends on

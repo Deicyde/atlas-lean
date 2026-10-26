@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.perrinNeg
 ---
 
-# Perrin Neg
+# Perrin sequence at negative indices
 
-The Perrin sequence at negative indices: `perrinNeg n = R_{-n}`, the unique
-backward extension of the Perrin recurrence `R_{k+3} = R_{k+1} + R_k` from
-`R_0 = 3`, `R_1 = 0`, `R_2 = 2`, i.e. `R_{-n-3} = R_{-n} - R_{-n-2}`, with
-`R_0 = 3`, `R_{-1} = R_2 - R_0 = -1`, `R_{-2} = R_1 - R_{-1} = 1`.
+**Perrin sequence at negative indices.** The Perrin sequence $R_k$, given by $R_0 = 3$,
+$R_1 = 0$, $R_2 = 2$ and $R_{k+3} = R_{k+1} + R_k$, extends uniquely to all integers $k$ by
+running the recurrence backward. This defines the integers $R_{-n}$ for natural numbers $n$:
+$R_0 = 3$, $R_{-1} = -1$, $R_{-2} = 1$ and $R_{-(n+3)} = R_{-n} - R_{-(n+2)}$ for every $n \ge 0$.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.terai_ten_fifteen_five_eq_one_one_two
 ---
 
-# Terai ten fifteen five eq one one two
+# The Terai equation $(10m^2 + 1)^x + (15m^2 - 1)^y = (5m)^z$
 
-For every integer `m > 1`, the only solution of
-`(10m² + 1)^x + (15m² - 1)^y = (5m)^z` in positive integers is `(x, y, z) = (1, 1, 2)`.
-Natural-number subtraction in `15 m² - 1` is exact since `m > 1`.
+**The Terai equation $(10m^2 + 1)^x + (15m^2 - 1)^y = (5m)^z$.** For every integer
+$m > 1$, the only solution of $(10m^2 + 1)^x + (15m^2 - 1)^y = (5m)^z$ in positive integers
+$x, y, z$ is $(x, y, z) = (1, 1, 2)$.
 
 ## Depends on
 

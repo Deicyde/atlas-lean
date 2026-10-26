@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.hall_ray_nLagrangeSpectrum
 ---
 
-# Hall ray n Lagrange Spectrum
+# Hall's ray in the $n$-Lagrange spectrum
 
-Hall's ray for the `n`-spectra: `[nF, ∞) ⊆ Lₙ ⊆ Mₙ`, where Freĭman's constant `F` is the least
-`F` with `[F, ∞) ⊆ L`.
+**Hall's ray in the $n$-Lagrange spectrum.** Let $L_1$ be the classical Lagrange spectrum and
+let $F$ (Freĭman's constant) be the infimum of the real numbers $c$ with
+$[c, \infty) \subseteq L_1$. Then for every integer $n \ge 1$,
+$[nF, \infty) \subseteq L_n \subseteq M_n$, where $L_n$ is the $n$-Lagrange spectrum and
+$M_n$ is the $n$-Markoff spectrum.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

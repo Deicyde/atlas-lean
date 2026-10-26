@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.intPointsSubspace
 ---
 
-# Int Points Subspace
+# Integer points of a subspace
 
-Given a subspace `V ≤ ℝᵈ`, this is the set `V ∩ ℤᵈ` as a `ℤ`-submodule of `V`.
+**Integer points of a subspace.** For a subspace $V$ of $\mathbb{R}^d$, this is the set
+$V \cap \mathbb{Z}^d$ of integer points of $V$, as a $\mathbb{Z}$-submodule of $V$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Int Points](int-points.md)
+- [The integer lattice](int-points.md)
 
 ## Sources
 

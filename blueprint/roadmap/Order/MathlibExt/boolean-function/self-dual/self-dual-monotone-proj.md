@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.selfDualMonotone_proj
 ---
 
-# Self Dual Monotone proj
+# Coordinate projections are self-dual monotone
 
-Every coordinate projection is a self-dual monotone Boolean function.
+**Coordinate projections are self-dual monotone.** For every $n$ and every index $i < n$, the
+projection $x \mapsto x_i$ on $\{0,1\}^n$ is a self-dual monotone Boolean function.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ Every coordinate projection is a self-dual monotone Boolean function.
 
 ## Proof depends on
 
-- [Boolean Function Dual](boolean-function-dual.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

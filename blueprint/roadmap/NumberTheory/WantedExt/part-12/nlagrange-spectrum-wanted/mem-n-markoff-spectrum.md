@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mem_nMarkoffSpectrum
 ---
 
-# Mem n Markoff Spectrum
+# Membership in the $n$-Markoff spectrum
 
-Membership in `Mₙ`.
+**Membership in the $n$-Markoff spectrum.** For every natural number $n$ and real number
+$\alpha$, $\alpha$ lies in the $n$-Markoff spectrum $M_n$ if and only if $\alpha = \mu_n(\xi, \xi')$
+for some distinct irrational real numbers $\xi$ and $\xi'$, where $\mu_n$ is the $n$-Markoff
+approximability.
 
 ## Depends on
 
-- [N Markoff Approximability](n-markoff-approximability.md)
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [$n$-Markoff approximability](n-markoff-approximability.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

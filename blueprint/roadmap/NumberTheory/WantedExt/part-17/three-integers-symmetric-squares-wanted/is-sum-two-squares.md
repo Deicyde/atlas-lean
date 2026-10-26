@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.IsSumTwoSquaresℚ
 ---
 
-# Is Sum Two Squaresℚ
+# Sums of two rational squares
 
-A rational is a sum of two rational squares.
+**Sums of two rational squares.** A rational number $q$ is a sum of two squares when
+$q = x^2 + y^2$ for some rational numbers $x$ and $y$.
 
 ## Depends on
 

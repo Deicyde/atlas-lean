@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_stanleyPartitions_comp_stanleyTranspose
 ---
 
-# Sum stanley Partitions comp stanley Transpose
+# Sums over partitions are invariant under transposition
 
-Summing any function over `𝒫_r(N)` is invariant under composing it with the
-transposition `ρ`.
+**Sums over partitions are invariant under transposition.** For all natural numbers $r$ and
+$N$ and every function $a$ from pairs of $r$-tuples of natural numbers to $\mathbb{Q}$,
+$\sum_{p \in \mathcal{P}_r(N)} a(p) = \sum_{p \in \mathcal{P}_r(N)} a(\rho(p))$, where
+$\mathcal{P}_r(N)$ is the set of partitions of $N$ of length $r$ in Stanley coordinates and $\rho$
+is the transpose map.
 
 ## Depends on
 
-- [Stanley Partitions](stanley-partitions.md)
-- [Stanley Transpose](stanley-transpose.md)
+- [Partitions in Stanley coordinates](stanley-partitions.md)
+- [Transposed partition in Stanley coordinates](stanley-transpose.md)
 
 ## Sources
 

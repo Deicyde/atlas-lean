@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tribonacci_infinite_not_isSumOfTwoPrimePowers
 ---
 
-# Tribonacci infinite not is Sum Of Two Prime Powers
+# Infinitely many Tribonacci numbers are not sums of two prime powers
 
-Infinitely many Tribonacci numbers are not a sum of two prime
-powers. Stated for the repository Tribonacci sequence with initial
-values `0, 0, 1` (OEIS A000073). The paper's strengthening to every
-sufficiently large `k ≡ 3817 (mod 163843680)` is omitted: the extracted
-statement does not display the paper's seed convention, and the
-residue class depends on it.
+**Infinitely many Tribonacci numbers are not sums of two prime powers.** Let $(T_n)_{n \ge 0}$
+be the Tribonacci sequence, given by $T_0 = 0$, $T_1 = 0$, $T_2 = 1$ and
+$T_{n+3} = T_{n+2} + T_{n+1} + T_n$. There are infinitely many natural numbers $k$ such that
+$T_k$ is not a sum of two prime powers.
+
+The paper proves the stronger statement that this holds for every sufficiently large
+$k \equiv 3817 \pmod{163843680}$. That form is not stated here, since the residue class depends
+on how the sequence is indexed.
 
 ## Depends on
 
-- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Sums of two prime powers](is-sum-of-two-prime-powers.md)
 - [Tribonacci sequence](../../../MathlibExt/part-12/tribonacci.md)
 
 ## Sources

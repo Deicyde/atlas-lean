@@ -12,9 +12,9 @@ x·P_{m,o}(x) - x² + x³` for `m ≥ 2` (Equation (7)).
 
 ## Depends on
 
-- [Nicomachus LOdd](nicomachus-lodd.md)
-- [Nicomachus POdd](nicomachus-podd.md)
-- [Nicomachus ROdd](nicomachus-rodd.md)
+- [The odd-case cube sum $L_{m,o}$](nicomachus-lodd.md)
+- [The odd-case polynomial $P_{m,o}$](nicomachus-podd.md)
+- [The odd-case square $R_{m,o}(x)$](nicomachus-rodd.md)
 
 ## Sources
 

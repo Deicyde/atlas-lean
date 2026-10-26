@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.biBracketGen_partition_relation
 ---
 
-# Bi Bracket Gen partition relation
+# Partition relation for bi-brackets
 
-Partition relation for bi-brackets: for `r ≥ 1`,
-`g(X₁, …, Xᵣ; Y₁, …, Yᵣ) = g(Y₁ + ⋯ + Yᵣ, …, Y₁ + Y₂, Y₁; Xᵣ, Xᵣ₋₁ - Xᵣ, …, X₁ - X₂)`,
-as a substitution of linear forms into the generating series. With `0`-based indices, the `i`-th
-upper variable becomes `∑_{j < r - i} Yⱼ` and the `i`-th lower variable becomes
-`X_{r-1-i} - X_{r-i}` (with `X_r := 0`). The identity also holds trivially for `r = 0`.
+**Partition relation for bi-brackets.** For every natural number $r$, the generating series
+$g(X_1, \dots, X_r; Y_1, \dots, Y_r)$ of bi-brackets of depth $r$ satisfies
+
+$$g(X_1, \dots, X_r; Y_1, \dots, Y_r) = g(Y_1 + \dots + Y_r, \dots, Y_1 + Y_2, Y_1;
+X_r, X_{r-1} - X_r, \dots, X_1 - X_2),$$
+
+where the right side substitutes linear forms into $g$ simultaneously: for $1 \le i \le r$, the
+variable $X_i$ is replaced by $Y_1 + \dots + Y_{r+1-i}$ and the variable $Y_i$ by
+$X_{r+1-i} - X_{r+2-i}$, with $X_{r+1} := 0$.
 
 ## Depends on
 
-- [Bi Bracket Gen](../part-04/bi-bracket-gen.md)
+- [Generating series of bi-brackets](../part-04/bi-bracket-gen.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.jacobsthalLucasNumber_oresme_convolution
 ---
 
-# Jacobsthal Lucas Number oresme convolution
+# Jacobsthal–Lucas–Oresme convolution
 
-The Jacobsthal–Lucas–Oresme convolution, `j_0 = 2`, `j_1 = 1`:
-`∑_{k=0}^n j_k O_{n-k} = (2/9) j_{n+1} - 2/(9 · 2^n)` for every `n ≥ 0`. The paper prints
-`+` where the relation sign belongs (`∑ j_k O_{n-k} + (2/9) j_{n+1} - 2/(9 · 2^n)`, with no
-relation); this is the `=` reading, matching Propositions 4.3 and 6.2 and Corollary 6.5.
+**Jacobsthal–Lucas–Oresme convolution.** Let $j_m$ denote the Jacobsthal–Lucas numbers and
+let $O_m = m/2^m$ denote the Oresme numbers. For every natural number $n$,
+$\sum_{k=0}^{n} j_k O_{n-k} = \frac{2}{9} j_{n+1} - \frac{2}{9 \cdot 2^n}$.
+
+The paper prints $+$ where the equality sign belongs, with no relation between the two sides;
+this is the equality reading, which matches Propositions 4.3 and 6.2 and Corollary 6.5.
 
 ## Depends on
 

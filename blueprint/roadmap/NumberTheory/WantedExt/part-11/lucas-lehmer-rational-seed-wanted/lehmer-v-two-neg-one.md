@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.lehmerV_two_neg_one
 ---
 
-# Lehmer V two neg one
+# Lehmer's companion sequence for $R = 2$ and $Q = -1$
 
-For `R = 2`, `Q = -1` (the parameters giving the seed `4`), `V̄_2 = 4`, `V̄_4 = 14 = 4² - 2`
-and `V̄_8 = 194 = 14² - 2`, as the doubling formula (LehmerV2n) predicts.
+**Lehmer's companion sequence for $R = 2$ and $Q = -1$.** For $R = 2$ and $Q = -1$, Lehmer's
+companion sequence has $\bar V_2(2, -1) = 4$, $\bar V_4(2, -1) = 14$ and
+$\bar V_8(2, -1) = 194$.
+
+These are the parameters giving the seed $4$, and $14 = 4^2 - 2$ and $194 = 14^2 - 2$, as the
+doubling formula (LehmerV2n) predicts.
 
 ## Depends on
 
-- [Lehmer V](lehmer-v.md)
+- [Lehmer's companion sequence](lehmer-v.md)
 
 ## Sources
 

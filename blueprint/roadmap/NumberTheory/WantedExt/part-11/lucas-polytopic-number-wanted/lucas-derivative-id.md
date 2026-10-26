@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasDerivative_id
 ---
 
-# Lucas Derivative id
+# The Lucas derivative of the identity
 
-The Lucas derivative of the identity is `1` at every point, for `φ ≠ φ'`.
+**The Lucas derivative of the identity.** For distinct real numbers $\varphi \ne \varphi'$,
+the Lucas derivative $D_{\varphi,\varphi'}$ of the identity function $y \mapsto y$ equals $1$ at
+every real number $x$.
 
 ## Depends on
 
-- [Lucas Derivative](lucas-derivative.md)
+- [Lucas derivative](lucas-derivative.md)
 
 ## Proof depends on
 
-- [Lucas Derivative of ne zero](lucas-derivative-of-ne-zero.md)
+- [The Lucas derivative away from the origin](lucas-derivative-of-ne-zero.md)
 
 ## Sources
 

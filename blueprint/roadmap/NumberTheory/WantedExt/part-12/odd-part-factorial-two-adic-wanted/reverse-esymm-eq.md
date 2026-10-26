@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.reverseESymm_eq
 ---
 
-# Reverse ESymm eq
+# Unfolding the reversed elementary symmetric function
 
-The characteristic formula for `reverseESymm` is the paper's reversal of the
-elementary-symmetric degree from `i` to `s.card-i`.
+**Unfolding the reversed elementary symmetric function.** For every commutative semiring $R$,
+natural number $i$ and finite multiset $S$ of elements of $R$ with $n$ elements counted with
+multiplicity, the reversed elementary symmetric function satisfies
+$\hat\sigma_i(S) = \sigma_{n-i}(S)$, the elementary symmetric function of $S$ of degree $n - i$,
+where $n - i$ is truncated subtraction.
 
 ## Depends on
 
-- [Reverse ESymm](reverse-esymm.md)
+- [Reversed elementary symmetric functions](reverse-esymm.md)
 
 ## Sources
 

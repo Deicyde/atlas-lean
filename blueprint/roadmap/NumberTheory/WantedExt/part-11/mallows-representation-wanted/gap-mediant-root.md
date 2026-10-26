@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gapMediant_root
 ---
 
-# Gap Mediant root
+# The mediant of $0/1$ and $1/1$
 
-Characteristic value: the mediant of `0 / 1` and `1 / 1` is `1 / 2`.
+**The mediant of $0/1$ and $1/1$.** With fractions encoded as pairs (numerator, denominator)
+of natural numbers, the mediant of the gap bounded by $0/1$ and $1/1$ is $1/2$, that is, the
+pair $(1, 2)$.
 
 ## Depends on
 
-- [Gap Mediant](gap-mediant.md)
+- [Mediant of a gap](gap-mediant.md)
 
 ## Sources
 

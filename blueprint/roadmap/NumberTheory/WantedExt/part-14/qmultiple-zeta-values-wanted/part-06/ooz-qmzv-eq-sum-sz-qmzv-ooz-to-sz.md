@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.oozQMZV_eq_sum_szQMZV_oozToSZ
 ---
 
-# Ooz QMZV eq sum sz QMZV ooz To SZ
+# OOZ-qMZVs via SZ-qMZVs
 
-OOZ-qMZVs in the SZ model: for an SZ-admissible index `k` (empty or `k₁ ≥ 1`),
-`ζ_q^OSZ(k) = ζ_q^SZ(V(k))`, with `ζ_q^SZ` extended `ℚ`-linearly.
+**OOZ-qMZVs via SZ-qMZVs.** Write $\zeta_q^{\mathrm{OOZ}}$ and $\zeta_q^{\mathrm{SZ}}$ for the
+Ohno–Okuda–Zudilin and Schlesinger–Zudilin qMZVs. Let $k = (k_1, \dots, k_r)$ be an index of
+natural numbers that is empty or has $k_1 \ge 1$ (the entries $k_2, \dots, k_r$ may be $0$).
+Write the image of $k$ under the map $V$ from OOZ to SZ indices as a $\mathbb{Q}$-linear
+combination $V(k) = \sum_w c_w \, w$ of indices. Then
+$\zeta_q^{\mathrm{OOZ}}(k) = \sum_w c_w \, \zeta_q^{\mathrm{SZ}}(w)$.
 
 ## Depends on
 
-- [Ooz QMZV](../part-01/ooz-qmzv.md)
-- [Ooz To SZ](ooz-to-sz.md)
-- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](../part-01/ooz-qmzv.md)
+- [The map $V$ from OOZ to SZ words](ooz-to-sz.md)
+- [Schlesinger–Zudilin qMZVs](../part-01/sz-qmzv.md)
 
 ## Sources
 

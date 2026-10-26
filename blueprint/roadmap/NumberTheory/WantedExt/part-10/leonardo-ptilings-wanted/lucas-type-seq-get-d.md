@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasTypeSeq_getD
 ---
 
-# Lucas Type Seq get D
+# Entries of a Lucas-type list do not depend on its length
 
-Entry `i ≤ n` of `lucasTypeSeq p a₀ c n` does not depend on `n`.
+**Entries of a Lucas-type list do not depend on its length.** Let $\alpha$ be a type with a
+zero, a one and an addition, let $p$ be a natural number and let $a_0, c \in \alpha$. For natural
+numbers $i \le n$, the entry at index $i$ of the Lucas-type list with parameters $p$, $a_0$, $c$
+ending at index $n$ equals the entry at index $i$ of the Lucas-type list ending at index $i$.
 
 ## Depends on
 
-- [Lucas Type Seq](lucas-type-seq.md)
+- [Lucas-type recurrence lists](lucas-type-seq.md)
 
 ## Proof depends on
 
-- [Lucas Type Seq length](lucas-type-seq-length.md)
+- [Length of a Lucas-type list](lucas-type-seq-length.md)
 
 ## Sources
 

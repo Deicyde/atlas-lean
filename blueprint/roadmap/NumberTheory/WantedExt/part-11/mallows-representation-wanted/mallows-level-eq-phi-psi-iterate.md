@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.mallowsLevel_eq_phi_psi_iterate
 ---
 
-# Mallows Level eq phi psi iterate
+# Mallows levels from the Stern–Brocot maps
 
-`MT_i = φ_SBT(ψ_SBT^{i-1}(⟨1/2⟩))` for every `i ≥ 1` (quoted from Hida, J. Comb. 14 (2023)).
-Stern–Brocot vertices are encoded by their gaps, `ψ_SBT` and `φ_SBT` are extended to lists by
-concatenation, and the root `1/2` is the gap `(0/1, 1/1)`; Lean index `i` is paper `i + 1`.
+**Mallows levels from the Stern–Brocot maps.** Encode each vertex of the Stern–Brocot tree
+(left subtree, root $1/2$) by its gap, so that the root is the gap $(0/1, 1/1)$, and extend
+$\psi_{\mathrm{SBT}}$ and $\varphi_{\mathrm{SBT}}$ to lists of vertices by applying them to each
+entry and concatenating the results in order. Then for every $i \ge 1$ the ordered list $MT_i$
+of fractions inserted at step $i$ of Mallows' construction is
+$MT_i = \varphi_{\mathrm{SBT}}(\psi_{\mathrm{SBT}}^{\,i-1}(\langle 1/2\rangle))$, where
+$\psi_{\mathrm{SBT}}^{\,i-1}$ is the $(i-1)$-fold iterate and $\langle 1/2\rangle$ is the list
+whose only entry is the root.
+
+The paper quotes this identity from Hida, J. Comb. 14 (2023).
 
 ## Depends on
 
-- [Mallows Level](mallows-level.md)
-- [Stern Brocot Phi](stern-brocot-phi.md)
-- [Stern Brocot Psi](stern-brocot-psi.md)
+- [Mallows levels](mallows-level.md)
+- [The map $\varphi_{SBT}$](stern-brocot-phi.md)
+- [The map $\psi_{SBT}$](stern-brocot-psi.md)
 
 ## Sources
 

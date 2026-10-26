@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount_eq_sum_compositions
 ---
 
-# Sum Of Triangular Rep Count eq sum compositions
+# Composition formula for triangular representation numbers
 
-Composition-sum formula: `t_k(n) = ∑_{l=1}^n (k^l / l!) ∑_{(w_1, …, w_l) ∈ C(n)} b_{w_1} ⋯ b_{w_l}`,
-with `b_n = triangularLogCoeff n` (the corrected coefficient; the printed `b_n` is false:
-`t_1(2) = 0` but the printed formula gives `1`). The sum runs over all compositions of `n`,
-grouped by length `l`.
+**Composition formula for triangular representation numbers.** For an integer $k$, let $t_k(n)$
+be the coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. For
+$m \ge 1$ let
+$b_m = \sum_{d \mid m,\ m/d \text{ odd}} 1/d - \sum_{d \mid m,\ m/d \text{ even}} 1/d$, the
+coefficient of $q^m$ in $\log \psi(q)$. Then for every integer $k$ and natural number $n$,
+
+$$t_k(n) = \sum_{(w_1, \dots, w_l)} \frac{k^l}{l!}\, b_{w_1} \cdots b_{w_l},$$
+
+where the sum runs over all compositions $(w_1, \dots, w_l)$ of $n$, that is, all tuples of positive
+integers with sum $n$, of every length $l$ (for $n = 0$, only the empty composition).
+
+The source prints $b_m$ with the parity condition on $d$ instead of $m/d$; with that coefficient the
+formula fails, giving $t_1(2) = 1$ although $t_1(2) = 0$.
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
-- [Triangular Log Coeff](triangular-log-coeff.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
+- [Logarithmic coefficients of the triangular theta series](triangular-log-coeff.md)
 
 ## Sources
 

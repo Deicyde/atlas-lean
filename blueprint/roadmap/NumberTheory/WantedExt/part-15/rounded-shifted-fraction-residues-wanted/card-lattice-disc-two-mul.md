@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_lattice_disc_two_mul
 ---
 
-# Card lattice disc two mul
+# Lattice points in the disc of radius $\sqrt{2n}$
 
-Proposition 17: the closed disc of radius `√(2n)` about the origin
-contains `4 𝓡_n + 4n + 1` lattice points, i.e. `C(2n) = 4 𝓡_n + 4n + 1`.
-Stated for every `n : ℕ` (both sides are `1` at `n = 0`).
+**Lattice points in the disc of radius $\sqrt{2n}$.** For every natural number $n$, the
+number of pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + y^2 \le 2n$ equals
+$4\,\mathcal{R}_n + 4n + 1$, where $\mathcal{R}_n$ is the number of $k \in \{1, \dots, n\}$ for
+which the nearest integer to $n/k$, with half-integers rounded up, is odd. At $n = 0$ both sides
+are $1$.
 
 ## Depends on
 
-- [Round Quotient Odd Count](round-quotient-odd-count.md)
+- [Rounding sequence parity count](round-quotient-odd-count.md)
 
 ## Sources
 

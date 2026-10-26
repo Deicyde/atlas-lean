@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.choose_three_mul_modEq
 ---
 
-# Choose three mul mod Eq
+# Helou–Terjanian congruence for $p = 3$
 
-Helou and Terjanian, `p = 3`: for `0 < m < n`,
-`C(3n, 3m) ≡ C(n, m) (mod 3^{2 + max(ν_3(m), ν_3(n-m)) + ν_3(C(n,m))})`.
+**Helou–Terjanian congruence for $p = 3$.** Let $m$ and $n$ be integers with $0 < m < n$.
+Then $\binom{3n}{3m} \equiv \binom{n}{m} \pmod{3^e}$, where
+$e = 2 + \max(\nu_3(m), \nu_3(n - m)) + \nu_3\big(\binom{n}{m}\big)$ and $\nu_3$ is the $3$-adic
+valuation.
 
 ## Depends on
 

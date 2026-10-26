@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.bzDualIndex_three
 ---
 
-# Bz Dual Index three
+# Bradley–Zhao dual of $(3)$
 
-`τ(z₃) = z₂ z₁`.
+**Bradley–Zhao dual of $(3)$.** The Bradley–Zhao dual index of $(3)$ is $(2, 1)$. In terms of
+words in the letters $x$ and $y$, with $z_k = x^{k-1} y$ and $\tau$ the anti-automorphism of words
+that reverses a word and swaps $x$ and $y$, this says $\tau(z_3) = \tau(x x y) = x y y = z_2 z_1$.
 
 ## Depends on
 
-- [Bz Dual Index](bz-dual-index.md)
+- [Bradley–Zhao dual index](bz-dual-index.md)
 
 ## Sources
 

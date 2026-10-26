@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.smallestDenominator_le_iff
 ---
 
-# Smallest Denominator le iff
+# Upper bounds on the smallest denominator
 
-For `δ > 0`, `q_min(x, δ) ≤ q` exactly when some positive `q' ≤ q` is the denominator of a
-rational in the window.
+**Upper bounds on the smallest denominator.** Let $x$ be a real number, let $\delta > 0$ be
+real, let $q$ be a natural number and let $q_{\min}(x, \delta)$ be the smallest denominator. Then
+$q_{\min}(x, \delta) \le q$ if and only if there are a positive integer $q' \le q$ and an integer
+$p$ with $|x - p/q'| < \delta/2$.
 
 ## Depends on
 
-- [Smallest Denominator](smallest-denominator.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Proof depends on
 
-- [Smallest Denominator le](smallest-denominator-le.md)
-- [Smallest Denominator spec](smallest-denominator-spec.md)
+- [Denominators of nearby rationals bound the smallest denominator](smallest-denominator-le.md)
+- [The smallest denominator is positive and attained](smallest-denominator-spec.md)
 
 ## Sources
 

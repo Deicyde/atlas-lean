@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.spoofLehmer_exponents_eq_one
 ---
 
-# Spoof Lehmer exponents eq one
+# Nontrivial spoof Lehmer factorizations have all exponents $1$
 
-Every exponent of a nontrivial spoof Lehmer factorization is `1`.
+**Nontrivial spoof Lehmer factorizations have all exponents $1$.** If $F$ is a nontrivial spoof
+$k$-Lehmer factorization for some integer $k$, then every exponent of $F$ is $1$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
 
 ## Sources
 

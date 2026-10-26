@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isSpoofLehmer_three_three
 ---
 
-# Is Spoof Lehmer three three
+# $3 \cdot 3$ is a $2$-Lehmer factorization
 
-Characteristic example: `3 ⋅ 3` is a `2`-Lehmer factorization.
+**$3 \cdot 3$ is a $2$-Lehmer factorization.** The spoof factorization $3^1 \cdot 3^1$ is a
+$2$-Lehmer factorization; indeed $2 \cdot (3 - 1)(3 - 1) = 3 \cdot 3 - 1$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
 
 ## Proof depends on
 
-- [Is Spoof Factorization](is-spoof-factorization.md)
-- [Spoof Eval](spoof-eval.md)
-- [Spoof Totient](spoof-totient.md)
+- [Spoof factorizations](is-spoof-factorization.md)
+- [Spoof evaluation](spoof-eval.md)
+- [Spoof totient](spoof-totient.md)
 
 ## Sources
 

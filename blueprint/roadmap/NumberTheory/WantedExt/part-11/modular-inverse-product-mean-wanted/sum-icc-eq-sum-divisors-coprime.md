@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_Icc_eq_sum_divisors_coprime
 ---
 
-# Sum Icc eq sum divisors coprime
+# Splitting a sum by greatest common divisor
 
-Lemma 5: for any arithmetic function `f` and `n`,
-`∑_{k=1}^n f(k) = ∑_{d ∣ n} ∑_{1 ≤ h ≤ n/d, (n/d, h) = 1} f(h d)`. The paper takes `n ≥ 1`;
-for `n = 0` both sides are empty sums.
+**Splitting a sum by greatest common divisor.** For every function
+$f : \mathbb{N} \to \mathbb{C}$ and every natural number $n$,
+
+$$\sum_{k=1}^{n} f(k) = \sum_{d \mid n} \sum_{1 \le h \le n/d,\ \gcd(n/d, h) = 1} f(hd).$$
+
+Here $d$ runs over the positive divisors of $n$, and $0$ is taken to have none, so for $n = 0$
+both sides are empty sums.
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_pow_add_two_pow_even_mul_pow_eq_sq_iff
 ---
 
-# Prime pair pow add two pow even mul pow eq sq iff
+# Squares of the form $p^x + (2^{2k}(2p - 1))^y$ for prime pairs
 
-If `p` and `2p - 1` are primes with `p ≡ 3 (mod 4)` and `k ≥ 1`, then the non-negative
-solutions of `pˣ + (2^{2k}(2p - 1))ʸ = z²` are `(p, x, y, z) = (3, 1, 0, 2)` (any `k`) and
-`(p, k, x, y, z) = (3, 2, 0, 1, 9)`.
+**Squares of the form $p^x + (2^{2k}(2p - 1))^y$ for prime pairs.** Let $p$ be a prime with
+$p \equiv 3 \pmod 4$ such that $2p - 1$ is prime, and let $k \ge 1$ be an integer. Then
+non-negative integers $x$, $y$ and $z$ satisfy $p^x + (2^{2k}(2p - 1))^y = z^2$ if and only if
+either $p = 3$ and $(x, y, z) = (1, 0, 2)$, or $p = 3$, $k = 2$ and $(x, y, z) = (0, 1, 9)$.
 
 ## Depends on
 

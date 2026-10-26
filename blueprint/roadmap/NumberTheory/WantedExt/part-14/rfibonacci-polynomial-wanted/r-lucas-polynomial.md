@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.rLucasPolynomial
 ---
 
-# R Lucas Polynomial
+# The $r$-Lucas polynomials of type $s$
 
-The `r`-Lucas polynomial of type `s`, `V^{(r,s)}_n(x, y)`: `V_0 = s + 1`,
-`V_k = x^k` for `1 ≤ k ≤ r`, and `V_{n+1} = x V_n + y V_{n-r}` for `n ≥ r`.
-The paper takes `1 ≤ s ≤ r`; the definition makes sense for every `s`.
+**The $r$-Lucas polynomials of type $s$.** Let $R$ be a commutative semiring, let $r$ and $s$
+be natural numbers and let $x, y \in R$. The $r$-Lucas polynomials of type $s$ are the sequence
+$V_n = V^{(r,s)}_n(x, y)$, $n \ge 0$, of elements of $R$ given by $V_0 = s + 1$, $V_k = x^k$ for
+$1 \le k \le r$, and $V_{n+1} = x V_n + y V_{n-r}$ for $n \ge r$.
+
+The paper takes $1 \le s \le r$; the definition makes sense for every natural number $s$.
 
 ## Depends on
 

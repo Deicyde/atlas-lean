@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.reducedResidueWindow
 ---
 
-# Reduced Residue Window
+# The reduced residue system $R_m(n)$
 
-The reduced residue system `R_m(n) = {a ∈ ℤ | m + 1 ≤ a ≤ m + n, gcd(a, n) = 1}` modulo `n`.
+**The reduced residue system $R_m(n)$.** For an integer $m$ and a natural number $n$, the
+reduced residue system $R_m(n)$ modulo $n$ is the finite set
+$R_m(n) = \{a \in \mathbb{Z} : m + 1 \le a \le m + n,\ \gcd(a, n) = 1\}$.
 
 ## Depends on
 

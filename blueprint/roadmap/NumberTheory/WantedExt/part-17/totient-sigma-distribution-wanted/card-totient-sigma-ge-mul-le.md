@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_totient_sigma_ge_mul_le
 ---
 
-# Card totient sigma ge mul le
+# Upper bound for the number of $n$ with $\varphi(\sigma(n)) \ge c n$
 
-For every `c > 0`,
-`#{n ≤ x : φ(σ(n)) ≥ c n} ≤ π² x / (6 c log₄ x) + O(x log₃ x / ((log x)^(1/log₃ x) log₄ x))`,
-with the implied constant depending only on `c`. The bound is stated for all sufficiently
-large `x` (it needs `log₄ x > 0`, i.e. `x > e^(e^e)`). The record's follow-up remarks are
-not part of the statement.
+**Upper bound for the number of $n$ with $\varphi(\sigma(n)) \ge c n$.** Write $\log_k$ for
+the $k$-fold iterated natural logarithm, so $\log_3 x = \log \log \log x$, and let $\varphi$ be
+Euler's totient function and $\sigma$ the sum of divisors. For every real $c > 0$ there is a
+constant $C$ such that for all sufficiently large $x$, the number of integers $n$ with
+$1 \le n \le x$ and $\varphi(\sigma(n)) \ge c n$ is at most
+
+$$
+\frac{\pi^2 x}{6 c \log_4 x} +
+C \, \frac{x \log_3 x}{(\log x)^{1/\log_3 x} \log_4 x}.
+$$
+
+The bound is only claimed for large $x$ since it needs $\log_4 x > 0$, that is, $x > e^{e^e}$.
 
 ## Depends on
 

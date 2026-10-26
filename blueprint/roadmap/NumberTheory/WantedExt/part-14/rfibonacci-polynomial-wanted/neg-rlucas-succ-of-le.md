@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.negRLucas_succ_of_le
 ---
 
-# Neg RLucas succ of le
+# Recurrence for the companion sequence $V^{(-r)}$
 
-The recurrence `V_{n+1} = y^{-1} V_{n-r+1} - y^{-1} x V_{n-r}` for `n ≥ r ≥ 1`.
+**Recurrence for the companion sequence $V^{(-r)}$.** Let $A$ be a commutative ring, $x \in A$
+and $y$ a unit of $A$. For natural numbers $r$ and $n$ with $1 \le r \le n$, the companion
+sequence of the $(-r)$-Fibonacci polynomials satisfies
+$V^{(-r)}_{n+1}(x, y) = y^{-1} V^{(-r)}_{n-r+1}(x, y) - y^{-1} x V^{(-r)}_{n-r}(x, y)$.
 
 ## Depends on
 
-- [Neg RLucas](neg-rlucas.md)
+- [Companion sequence of the $(-r)$-Fibonacci polynomials](neg-rlucas.md)
 
 ## Sources
 

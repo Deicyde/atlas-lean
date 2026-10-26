@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_not_mersenneEtaCondition_of_plus
 ---
 
-# Exists not mersenne Eta Condition of plus
+# Condition (etar) fails for some reduced residue when $s_1^+ \equiv 1 \pmod 4$
 
-If `s_1^+ ≡ 1 (mod 4)`, then condition (etar) fails for some `n ∈ ℛ(Ω)`.
+**Condition (etar) fails for some reduced residue when $s_1^+ \equiv 1 \pmod 4$.** Let
+$s_1 \ge 3$ be an integer, let $s_1^-$ and $s_1^+$ be the odd squarefree parts of $s_1 - 2$ and
+$s_1 + 2$, and let $\Omega = \Omega(s_1^- s_1^+)$ be the order of $2$ modulo $s_1^- s_1^+$,
+doubled when it is odd. If $s_1^+ \equiv 1 \pmod 4$, then there is a natural number $n$ with
+$1 \le n < \Omega$ and $\gcd(n, \Omega) = 1$ for which condition (etar) for $s_1^-$, $s_1^+$
+and $n$ fails.
 
 ## Depends on
 
-- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
+- [Odd squarefree part](is-odd-squarefree-part.md)
 - [Mersenne Eta Condition](mersenne-eta-condition.md)
-- [Mersenne Omega](mersenne-omega.md)
+- [The order $\Omega(m)$ of $2$, doubled when odd](mersenne-omega.md)
 
 ## Sources
 

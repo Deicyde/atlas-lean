@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_even_inter
 ---
 
-# Exists card even inter
+# An $m$-subset of $\{1, \dots, m + a\}$ meeting $a$ given sets evenly
 
-Lemma 5.4: if `m` is even with `2^a ≤ m` and `X_1, …, X_a` are sets, some `Y ⊆ [1, m + a]`
-with `|Y| = m` meets every `X_i` in an even number of elements.
+**An $m$-subset of $\{1, \dots, m + a\}$ meeting $a$ given sets evenly.** Let $m$ be even with
+$2^a \le m$, and let $X_1, \dots, X_a$ be finite sets of natural numbers. Then there is a set
+$Y \subseteq \{1, \dots, m + a\}$ with $|Y| = m$ such that $|Y \cap X_i|$ is even for every $i$.
 
 ## Depends on
 

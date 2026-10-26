@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_sq_unitaryDivisors
 ---
 
-# Sum sq unitary Divisors
+# Sum of squares of unitary divisors
 
-`σ₂*(n) = ∏ (1 + p^{2k})` over the prime powers `p^k ∥ n`.
+**Sum of squares of unitary divisors.** For every positive integer $n$, the sum of the
+squares of the unitary divisors of $n$ equals $\prod_{p} \left(1 + p^{2k_p}\right)$, where $p$
+ranges over the distinct prime factors of $n$ and $k_p$ is the exponent of $p$ in $n$.
 
 ## Depends on
 

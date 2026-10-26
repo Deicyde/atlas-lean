@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.remainderCount_consecutive_differences
 ---
 
-# Remainder Count consecutive differences
+# Consecutive differences of the number of remainders
 
-Theorem 2: for `n ≥ 1`, `s(n) - O(log log n) ≤ s(n+1) ≤ s(n) + 1`, and
-`liminf (s(n+1) - s(n)) = -∞`. The `O(log log n)` term is a constant multiple of
-`log log n` for all large `n` (`log log n ≤ 0` for `n ≤ 2`).
+**Consecutive differences of the number of remainders.** Let $s(n)$ be the number of
+distinct remainders $n \bmod k$ with $1 \le k \le \lfloor n/2 \rfloor$. Then
+$s(n+1) \le s(n) + 1$ for every $n \ge 1$; there is a real constant $C$ with
+$s(n) - C \log \log n \le s(n+1)$ for all sufficiently large $n$; and for every natural number
+$M$ there are infinitely many $n$ with $s(n+1) + M \le s(n)$, that is,
+$\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.
 
 ## Depends on
 
-- [Remainder Count](remainder-count.md)
+- [Remainder count](remainder-count.md)
 
 ## Sources
 

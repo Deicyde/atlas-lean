@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.zeckNIZ_count_small_values
 ---
 
-# Zeck NIZ count small values
+# Exactly $2r$ new-information cylinders carry each small value
 
-For `r ≥ 1` and all sufficiently small `d`, exactly `2r` cylinders, of possibly equal orders
-`k_1, …, k_{2r}` with the cylinder of order `k_i` in `NIZ_{k_i}`, carry the value
-`Δ^{(r)} = d` (cylinders of order `k` represented by `v < F_{k+2}` as in Corollary 36).
+**Exactly $2r$ new-information cylinders carry each small value.** Let $r \ge 1$, and let
+$F_n$ denote the $n$-th Fibonacci number ($F_1 = F_2 = 1$). There is an integer $D$ such that for
+every integer $d \le D$ there are exactly $2r$ pairs $(k, v)$ of natural numbers with
+$v < F_{k+2}$ such that the Zeckendorf digit sequence $i(v)$ of $v$ lies in the new-information
+zone $\mathrm{NIZ}_k$ (for the shift $r$) and the variation $\Delta^{(r)}$ satisfies
+$\Delta^{(r)}(i(v)) = d$.
+
+A pair $(k, v)$ stands for the cylinder of order $k$ whose name is the Zeckendorf expansion of
+$v$, so the $2r$ cylinders may have equal orders.
 
 ## Depends on
 
-- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck NIZ](zeck-niz.md)
+- [Zeckendorf digit sequence of a natural number](zeck-adic-of-nat.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [New-information zone](zeck-niz.md)
 
 ## Sources
 

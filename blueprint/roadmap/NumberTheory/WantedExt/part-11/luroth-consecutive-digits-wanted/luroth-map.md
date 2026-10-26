@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.lurothMap
 ---
 
-# Luroth Map
+# Lüroth map
 
-The Lüroth map `L(x) = d₁(x) (d₁(x) - 1) x - (d₁(x) - 1)`.
+**Lüroth map.** For a real number $x$ with first Lüroth digit $d = d_1(x)$, the Lüroth
+map is $L(x) = d(d - 1)x - (d - 1)$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
+- [First Lüroth digit](luroth-digit.md)
 
 ## Sources
 

@@ -5,12 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisA265233Wanted.coeff_pow_eq_franel
 ---
 
-# Lemma 3
+# Franel numbers as diagonal coefficients
 
-**Lemma 3**: for every `m ≥ 0`, the coefficient of
-`x^m y^m z^m` in `((x + y)(y + z)(z + x))^m` is the
-Franel number `f_m`
-(`MetaMathlibExt.binomialPowerSeq 3 0 m`).
+**Franel numbers as diagonal coefficients.** For every natural number $m$, the coefficient of
+$x^m y^m z^m$ in the polynomial $\bigl((x + y)(y + z)(z + x)\bigr)^m \in \mathbb{Q}[x, y, z]$
+is the Franel number $f_m = \sum_{k=0}^{m} \binom{m}{k}^3$.
 
 ## Depends on
 

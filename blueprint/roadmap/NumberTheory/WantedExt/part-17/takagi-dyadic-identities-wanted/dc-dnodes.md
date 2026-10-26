@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes
 ---
 
-# Dc DNodes
+# Number of D-nodes of the divide-and-conquer tree
 
-The number `δ(n)` of `D`-nodes in the divide-and-conquer tree on `n` leaves (OEIS
-A296062), defined by the recurrence the paper quotes from Coronado et al.:
-`δ(1) = 0`, `δ(2m) = 2 δ(m)`, `δ(2m+1) = δ(m) + δ(m+1) + 1`. The value at `0` is a
-junk value `0`; no statement below uses it.
+**Number of D-nodes of the divide-and-conquer tree.** The number $\delta(n)$ of D-nodes in the
+divide-and-conquer tree on $n$ leaves (OEIS A296062) is defined by the recurrence the paper
+quotes from Coronado et al.: $\delta(1) = 0$, and for every natural number $m \ge 1$,
+$\delta(2m) = 2\,\delta(m)$ and $\delta(2m+1) = \delta(m) + \delta(m+1) + 1$. The value at $0$
+is the junk value $\delta(0) = 0$.
 
 ## Depends on
 

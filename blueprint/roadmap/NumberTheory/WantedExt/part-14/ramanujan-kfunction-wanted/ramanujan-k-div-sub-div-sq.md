@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanK_div_sub_div_sq
 ---
 
-# Ramanujan K div sub div sq
+# Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient
 
-For `0 < ‖q‖ < 1`: `k(q)/k(q²) - k(q²)/k(q) = f(-q) f³(-q⁵) / (q f⁴(-q¹⁰))`. The
-hypothesis `q ≠ 0` excludes the point where the divisions by `q` and `k(q)` are undefined.
+**Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient.** For every complex number
+$q$ with $0 < |q| < 1$, Ramanujan's function $k$ satisfies
+
+$$
+\frac{k(q)}{k(q^2)} - \frac{k(q^2)}{k(q)} =
+\frac{(q;q)_\infty (q^5;q^5)_\infty^3}{q\,(q^{10};q^{10})_\infty^4},
+$$
+
+where $(a;x)_\infty = \prod_{n \ge 0} (1 - a x^n)$ is the infinite q-Pochhammer product.
 
 ## Depends on
 
 - [Raw infinite q-Pochhammer product](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Ramanujan K](ramanujan-k.md)
+- [Ramanujan's function $k(q)$](ramanujan-k.md)
 
 ## Sources
 

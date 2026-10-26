@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.lurothDenominator
 ---
 
-# Luroth Denominator
+# Lüroth denominators
 
-The Lüroth denominator of a digit sequence, indexed from `0`:
-`lurothDenominator d n = d n * ∏_{j < n} d j (d j - 1)`, i.e. the paper's `Q_{n+1}`.
+**Lüroth denominators.** For a sequence of natural numbers $d_0, d_1, d_2, \dots$ (numbered from
+$0$), the $n$-th Lüroth denominator is
+
+$$Q_n = d_n \prod_{j=0}^{n-1} d_j (d_j - 1), \qquad n \ge 0.$$
+
+With digits numbered from $1$, as in the paper, this is the paper's $Q_{n+1}$.
 
 ## Depends on
 

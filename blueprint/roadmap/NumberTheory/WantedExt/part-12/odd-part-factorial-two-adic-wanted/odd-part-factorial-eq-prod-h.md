@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.oddPart_factorial_eq_prod_h
 ---
 
-# Odd Part factorial eq prod h
+# Odd part of a dyadic factorial as a product of odd blocks
 
-For `e≥1`, the odd part of `(2^e)!` equals the product over `m=2,...,e` of
-`h(m)^(e+1-m)`.  The finite range is `Finset.Icc 2 e`; all quantities remain
-natural numbers because this is an exact factorial identity, not a congruence.
+**Odd part of a dyadic factorial as a product of odd blocks.** For every natural number
+$e \ge 1$,
+
+$$\mathrm{od}((2^e)!) = \prod_{m=2}^{e} h(m)^{e+1-m},$$
+
+where $\mathrm{od}(n)$ is the odd part of $n$ and $h(m)$ is the product of the odd numbers from
+$2^{m-1}+1$ to $2^m-1$.
 
 ## Depends on
 
-- [Odd Part](odd-part.md)
-- [Odd Product Block](odd-product-block.md)
+- [Odd part](odd-part.md)
+- [Odd product block](odd-product-block.md)
 
 ## Sources
 

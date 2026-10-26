@@ -5,11 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ramanujan_theta_level_ten
 ---
 
-# Ramanujan theta level ten
+# Ramanujan's level-10 theta function identities
 
-Ramanujan's level-10 theta identities: on the unit disk,
-`φ⁵(q)/φ(q⁵) + φ⁵(-q²)/φ(-q¹⁰) + 2 f⁵(q)/f(q⁵) = 4 ψ⁵(q)/ψ(q⁵)` and
-`φ²(q)φ²(q⁵) - φ²(-q)φ²(-q⁵) - 16 q³ ψ²(q²)ψ²(q¹⁰) = 8 q f²(-q²) f²(-q¹⁰)`.
+**Ramanujan's level-10 theta function identities.** For complex $x$ with $|x| < 1$, let
+$\varphi(x) = \sum_{n \in \mathbb{Z}} x^{n^2}$, $\psi(x) = \sum_{n \ge 0} x^{n(n+1)/2}$ and
+$f(-x) = \prod_{n \ge 1} (1 - x^n)$, so that $f(x) = \prod_{n \ge 1} (1 - (-x)^n)$. Then for
+every complex number $q$ with $|q| < 1$,
+
+$$
+\frac{\varphi(q)^5}{\varphi(q^5)} + \frac{\varphi(-q^2)^5}{\varphi(-q^{10})} +
+2\,\frac{f(q)^5}{f(q^5)} = 4\,\frac{\psi(q)^5}{\psi(q^5)}
+$$
+
+and
+
+$$
+\varphi(q)^2 \varphi(q^5)^2 - \varphi(-q)^2 \varphi(-q^5)^2 - 16 q^3 \psi(q^2)^2 \psi(q^{10})^2 =
+8 q\, f(-q^2)^2 f(-q^{10})^2.
+$$
 
 ## Depends on
 

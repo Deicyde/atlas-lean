@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isSignedPowTwoSum_extend
 ---
 
-# Is Signed Pow Two Sum extend
+# Extending a signed power-of-two sum to a longer range
 
-Extension of signed power-of-two sums to longer intervals.
+**Extending a signed power-of-two sum to a longer range.** Let $m \ge 1$, $s$, $t$ and $\alpha$
+be natural numbers, let $\beta = \nu_2(m + 1)$ be the exponent of $2$ in $m + 1$, and suppose that
+$s + \beta \le t + 1$ and $2^\alpha \equiv 1 \pmod{(m + 1)/2^\beta}$. If an integer $n$ can be
+written as $\sum_{j=s}^{t} \lambda_j 2^j$ with every $\lambda_j \in \{-1, m\}$, then $n$ can also be
+written as $\sum_{j=s}^{t+\alpha} \mu_j 2^j$ with every $\mu_j \in \{-1, m\}$.
 
-The hypothesis `t ≥ s + β - 1` is written as `s + β ≤ t + 1` to cover the
-case `β = 0`.
+The source's hypothesis $t \ge s + \beta - 1$ is written as $s + \beta \le t + 1$ to cover the
+case $\beta = 0$.
 
 ## Depends on
 
-- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
+- [Signed power-of-two sums](is-signed-pow-two-sum.md)
 
 ## Sources
 

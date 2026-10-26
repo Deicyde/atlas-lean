@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lehmerCompletions
 ---
 
-# Lehmer Completions
+# Admissible completions for the Lehmer bounds
 
-The admissible completions `u_{s+1} ≤ ⋯ ≤ u_r` of `t_1 ≤ ⋯ ≤ t_s` used in Definition 9:
-lists `u` with `s + |u| = r`, `t ⌢ u` nondecreasing and every `u_j ≥ 2`.
+**Admissible completions for the Lehmer bounds.** Let $t = (t_1, \dots, t_s)$ be a list of
+real numbers and let $r$ be a natural number. The admissible completions of $t$ to length $r$
+are the lists $u = (u_1, \dots, u_m)$ of real numbers with $s + m = r$ such that
+$t_1, \dots, t_s, u_1, \dots, u_m$ is nondecreasing and $u_j \ge 2$ for every $j$.
 
 ## Depends on
 

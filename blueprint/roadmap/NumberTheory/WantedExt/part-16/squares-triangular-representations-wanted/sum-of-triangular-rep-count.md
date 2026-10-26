@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sumOfTriangularRepCount
 ---
 
-# Sum Of Triangular Rep Count
+# Representation numbers for sums of triangular numbers
 
-`t_k(n)`: the coefficient of `q^n` in `ψ(q)^k`, for `k ∈ ℤ`.
+**Representation numbers for sums of triangular numbers.** For an integer $k$ and a natural
+number $n$, $t_k(n)$ is the coefficient of $q^n$ in $\psi(q)^k$, where
+$\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. Since $\psi$ has constant coefficient $1$, it is a unit of
+$\mathbb{Z}[[q]]$, so $\psi^k$ is a power series for negative $k$ as well.
+
+For $k \ge 1$, $t_k(n)$ is the number of ways to write $n$ as an ordered sum of $k$ triangular
+numbers $m(m+1)/2$ with $m \ge 0$.
 
 ## Depends on
 
@@ -15,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unit triangular Theta Series](is-unit-triangular-theta-series.md)
-- [Triangular Theta Series](triangular-theta-series.md)
+- [The triangular theta series is a unit](is-unit-triangular-theta-series.md)
+- [Triangular theta series](triangular-theta-series.md)
 
 ## Sources
 

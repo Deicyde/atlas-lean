@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.isEquivalent_sum_of_LSeries_eq_div_cpow
 ---
 
-# Theorem 1
+# Raikov's Tauberian theorem
 
-**Theorem 1** (Raikov). Let `F(s) = ∑ aₙ n^{-s}` have nonnegative coefficients and
-converge for `Re s > 1`, and suppose `F(s) = H(s) / (s - 1)^{1-α}` for `Re s > 1`, where
-`H` is holomorphic on an open set containing `Re s ≥ 1` and nonzero on `Re s ≥ 1`. Then
-`∑_{n ≤ x} aₙ ∼ c x / (ln x)^α` with `c = H(1) / Γ(1 - α)`.
+**Raikov's Tauberian theorem.** Let $a_1, a_2, \ldots$ be nonnegative real numbers whose
+Dirichlet series $F(s) = \sum_{n \ge 1} a_n n^{-s}$ converges absolutely for $\mathrm{Re}\, s > 1$,
+and let $\alpha < 1$ be real. Suppose that $H$ is a function holomorphic on an open set containing
+the half-plane $\mathrm{Re}\, s \ge 1$ and nonzero on that half-plane, and that
+$F(s) = H(s) / (s - 1)^{1 - \alpha}$ for $\mathrm{Re}\, s > 1$, with the principal branch of the
+power. Then
 
-The paper allows any real `α`; `α < 1` is added. For `α = 1` the statement fails:
-`a₁ = 1`, `aₙ = 0` otherwise, `H = 1` gives `F = 1 = H / (s - 1)^0`, but `Γ(0)` is a
-pole and `∑_{n ≤ x} aₙ = 1`. The analytic continuation of `F` across `Re s = 1`, `s ≠ 1`,
-assumed in the paper, follows from the representation through `H`.
+$$\sum_{n=1}^{x} a_n \sim \frac{H(1)}{\Gamma(1 - \alpha)} \cdot \frac{x}{(\ln x)^\alpha}$$
+
+as the natural number $x$ tends to infinity.
+
+The paper allows any real $\alpha$; for $\alpha = 1$ the statement fails: $a_1 = 1$, $a_n = 0$
+otherwise and $H = 1$ give $F = 1 = H / (s - 1)^0$, but $\Gamma$ has a pole at $0$ and
+$\sum_{n \le x} a_n = 1$. The analytic continuation of $F$ across $\mathrm{Re}\, s = 1$,
+$s \neq 1$, assumed in the paper, follows from the representation through $H$.
 
 ## Depends on
 

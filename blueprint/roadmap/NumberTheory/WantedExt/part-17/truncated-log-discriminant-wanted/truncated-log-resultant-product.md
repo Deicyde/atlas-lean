@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.truncatedLogResultantProduct
 ---
 
-# Truncated Log Resultant Product
+# Resultant product for truncated logarithmic polynomials
 
-`𝒫_n = ∏_{θ : F_n'(θ) = 0} F̃_n(θ)`, as the resultant
-`Res(1 + x + ⋯ + x^{n-1}, F̃_n)`.
+**Resultant product for truncated logarithmic polynomials.** For a natural number $n$, let
+$F_n(x) = 1 + x + \frac{x^2}{2} + \dots + \frac{x^n}{n}$, let
+$L_n = \operatorname{lcm}(1, \dots, n)$, and let $\tilde F_n = L_n F_n \in \mathbb{Z}[x]$. The
+integer $\mathcal{P}_n$ is the resultant $\operatorname{Res}(1 + x + \dots + x^{n-1}, \tilde F_n)$.
+For $n \ge 1$ the polynomial $1 + x + \dots + x^{n-1} = F_n'$ is monic, so
+$\mathcal{P}_n = \prod_{\theta} \tilde F_n(\theta)$, the product over the roots $\theta$ of $F_n'$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Scaled Truncated Log Polynomial](scaled-truncated-log-polynomial.md)
+- [Scaled truncated logarithmic polynomial](scaled-truncated-log-polynomial.md)
 
 ## Sources
 

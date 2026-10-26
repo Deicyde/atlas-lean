@@ -4,10 +4,10 @@ navigation: module
 
 # Middle Binomial Coefficient
 
-- [Padic Val Nat factorial div factorial le](padic-val-nat-factorial-div-factorial-le.md)
-- [Exists density one padic Val Nat central Binom bounds](exists-density-one-padic-val-nat-central.md)
-- [Factorial div factorial dvd central Binom density one](factorial-div-factorial-dvd-central-bino.md)
-- [Max padic Val Nat add le density one](max-padic-val-nat-add-le-density-one.md)
-- [Card padic Val Nat central Binom le is Little O](card-padic-val-nat-central-binom-le-is-l.md)
-- [Card max padic Val Nat add gt is Little O](card-max-padic-val-nat-add-gt-is-little.md)
-- [Choose dvd central Binom density one](choose-dvd-central-binom-density-one.md)
+- [Valuation of a product of consecutive integers](padic-val-nat-factorial-div-factorial-le.md)
+- [Valuations of the middle binomial coefficient on a set of density one](exists-density-one-padic-val-nat-central.md)
+- [Products of consecutive integers dividing the middle binomial coefficient](factorial-div-factorial-dvd-central-bino.md)
+- [Short runs of consecutive integers have small valuations almost always](max-padic-val-nat-add-le-density-one.md)
+- [Small valuations of the middle binomial coefficient are rare](card-padic-val-nat-central-binom-le-is-l.md)
+- [Large valuations in short runs of consecutive integers are rare](card-max-padic-val-nat-add-gt-is-little.md)
+- [Binomial coefficients dividing the middle binomial coefficient](choose-dvd-central-binom-density-one.md)

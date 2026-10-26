@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.szShuffle_y_y
 ---
 
-# Sz Shuffle y y
+# SZ-qshuffle of $y$ with itself
 
-`y ш y = y y`.
+**SZ-qshuffle of $y$ with itself.** The SZ-qshuffle product of the one-letter word $y$ with
+itself is the single word $yy$: $y \mathbin{\text{ш}} y = yy$.
 
 ## Depends on
 
-- [Sz Shuffle](sz-shuffle.md)
+- [SZ-qshuffle product](sz-shuffle.md)
 
 ## Sources
 

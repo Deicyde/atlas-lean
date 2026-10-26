@@ -16,7 +16,7 @@ $\mathcal{L}_{p,n} = \mathcal{L}_{p,n-1} + \mathcal{L}_{p,n-p-1} + p$ for $n > p
 
 ## Depends on
 
-- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](../../part-11/leonardo-pwanted/leonardo-pk.md)
 - [Hyper Leonardo $p$-numbers](hyper-leonardo-p.md)
 
 ## Sources

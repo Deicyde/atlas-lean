@@ -30,7 +30,7 @@ $a, b, c, d, e, f, g, h \in D_n$ satisfying these inequalities.
 
 - [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 - [Concatenation of Boolean functions](boolean-cube-concat.md)
-- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
+- [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

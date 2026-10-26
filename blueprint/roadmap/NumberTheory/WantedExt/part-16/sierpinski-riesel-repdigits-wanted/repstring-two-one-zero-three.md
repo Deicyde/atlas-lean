@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.repstring_two_one_zero_three
 ---
 
-# Repstring two one zero three
+# The three-digit $2$-repunit
 
-The `2`-repunit with three digits is `7`.
+**The three-digit $2$-repunit.** The $2$-repstring with $k = 1$, $z = 0$ and $t = 3$, that is,
+the $2$-repunit $1_2^{(3)}$ with three digits, equals $7$.
 
 ## Depends on
 
-- [Repstring](repstring.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

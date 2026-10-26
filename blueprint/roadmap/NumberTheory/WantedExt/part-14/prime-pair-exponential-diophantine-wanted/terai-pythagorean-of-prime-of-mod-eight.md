@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.terai_pythagorean_of_prime_of_mod_eight
 ---
 
-# Terai pythagorean of prime of mod eight
+# Terai's conjecture when $c$ is prime and $b \equiv \pm 5 \pmod 8$
 
-Terai's conjecture for primitive Pythagorean triples with `b ≡ ±5 (mod 8)` and `c` prime
-(Yuan–Wang): if `a² + b² = c²`, `gcd(a, b, c) = 1`, `b ≡ ±5 (mod 8)` and `c` is prime, then
-`x² + bʸ = cᶻ` has the unique positive solution `(x, y, z) = (a, 2, 2)`. Terai's conjecture
-(the paper's Conjecture 1) also assumes `a` even, which follows here since `b` is odd.
+**Terai's conjecture when $c$ is prime and $b \equiv \pm 5 \pmod 8$.** Let $a, b, c$ be
+natural numbers with $a^2 + b^2 = c^2$, $\gcd(a, b, c) = 1$, $b \equiv \pm 5 \pmod 8$ (that is,
+$b$ is $3$ or $5$ modulo $8$) and $c$ prime. Then for all positive integers $x, y, z$, the
+equation $x^2 + b^y = c^z$ holds if and only if $(x, y, z) = (a, 2, 2)$.
+
+This case of the conjecture is due to Yuan and Wang. Terai's conjecture (the paper's Conjecture 1)
+also assumes $a$ even, which follows here since $b$ is odd.
 
 ## Depends on
 

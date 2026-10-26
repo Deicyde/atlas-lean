@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_ae_matchingFraction_one
 ---
 
-# Mallows Rep ae matching Fraction one
+# Matching fractions of almost every Mallows representation
 
-For almost every irrational `α ∈ (0, 1)`, the `ℓ`-th matching fraction
-`lim_n |{i ≤ n : M_i(α) = M_{i+ℓ}(α)}| / n` of `M(α)` is `1` for all `ℓ ≥ 1`. Domain extension:
-stated for all `ℓ`, the value at `ℓ = 0` being trivially `1`.
+**Matching fractions of almost every Mallows representation.** For almost every irrational
+$\alpha \in (0, 1)$, with respect to Lebesgue measure, the Mallows representation
+$M(\alpha) = M_0(\alpha) M_1(\alpha) M_2(\alpha) \cdots$ satisfies, for every $\ell \ge 0$,
+
+$$\lim_{n \to \infty} \frac{|\{i < n : M_i(\alpha) = M_{i+\ell}(\alpha)\}|}{n} = 1,$$
+
+that is, its $\ell$-th matching fraction is $1$.
+
+For $\ell = 0$ the statement is trivial; the source states it for $\ell \ge 1$.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

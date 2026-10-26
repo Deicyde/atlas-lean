@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.card_common_lift_padicVal_of_gradients_dependent
 ---
 
-# Card common lift padic Val of gradients dependent
+# Common lifts of two points with dependent gradients
 
-For a prime `p`, `f ∈ ℤ[x, y]` and two nonsingular points `(r₁, s₁)`, `(r₂, s₂)` of
-`C_f(𝔽_p)` whose gradients `(f_x, f_y)` are linearly dependent modulo `p`, let `A` be the matrix
-with rows `(f_x, f_y, f/p)` at the two points and `ρ` its rank modulo `p`. Among the common lifts
-`(k, l) ∈ 𝔽_p²`, the number with `ν_p = 1` at both points is `p(p - 1)` if `ρ = 1` and `p(p - 2)`
-if `ρ = 2`; with `ν_p > 1` at the first and `ν_p = 1` at the second, `0` if `ρ = 1` and `p` if
-`ρ = 2`; with `ν_p > 1` at both, `p` if `ρ = 1` and `0` if `ρ = 2`. Here `ρ = 1` means that all
-`2 × 2` minors of `A` vanish modulo `p`. Corrected hypothesis: the paper assumes that `f` has no
-zero modulo `p²` with `f_x ≡ f_y ≡ 0 (mod p)` and that one column is non-zero; the counts need
-both gradients non-zero (the paper's Case 2 uses it). As printed it fails for
-`f = -x² + y² - x - 1`, `p = 3`, `(r₁, s₁) = (0, 1)`, `(r₂, s₂) = (1, 0)` (gradient `0` at
-`(1, 0)`, `ρ = 2`): the counts are `(6, 3, 0)`, not `(3, 3, 0)`.
+**Common lifts of two points with dependent gradients.** Let $p$ be a prime, let
+$f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $(r_1, s_1)$ and
+$(r_2, s_2)$ be pairs of integers in $\{0, \dots, p - 1\}$ with $p \mid f(r_i, s_i)$ for
+$i = 1, 2$. Write $a_i = f_x(r_i, s_i)$, $b_i = f_y(r_i, s_i)$ and $c_i = f(r_i, s_i)/p$.
+Suppose that for each $i$ the integers $a_i$ and $b_i$ are not both divisible by $p$, and that
+$p \mid a_1 b_2 - b_1 a_2$. Write $F_i(k, l) = f(r_i + kp, s_i + lp)$, and among the pairs
+$(k, l)$ with $0 \le k, l < p$ let $n_1$ be the number with $p \mid F_i(k, l)$ and
+$p^2 \nmid F_i(k, l)$ for both $i$, let $n_2$ be the number with $p^2 \mid F_1(k, l)$,
+$p \mid F_2(k, l)$ and $p^2 \nmid F_2(k, l)$, and let $n_3$ be the number with
+$p^2 \mid F_1(k, l)$ and $p^2 \mid F_2(k, l)$. If $p$ divides both $a_1 c_2 - c_1 a_2$ and
+$b_1 c_2 - c_1 b_2$ (the matrix with rows $(a_i, b_i, c_i)$ has rank $1$ modulo $p$), then
+$n_1 = p(p - 1)$, $n_2 = 0$ and $n_3 = p$. Otherwise (rank $2$) $n_1 = p(p - 2)$, $n_2 = p$
+and $n_3 = 0$.
+
+The source assumes only that $f$ has no zero modulo $p^2$ at which $f_x \equiv f_y \equiv 0
+\pmod p$ and that one column is non-zero. The counts need both gradients $(a_i, b_i)$ non-zero
+modulo $p$, which the paper's Case 2 uses. Without this they fail for $f = -x^2 + y^2 - x - 1$,
+$p = 3$, $(r_1, s_1) = (0, 1)$, $(r_2, s_2) = (1, 0)$: the gradient vanishes at $(1, 0)$, the
+rank is $2$, and $(n_1, n_2, n_3) = (6, 3, 0)$ rather than $(3, 3, 0)$.
 
 ## Depends on
 

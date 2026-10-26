@@ -17,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Rational](is-rational.md)
-- [Dist Subspaces](dist-subspaces.md)
-- [Height](height.md)
+- [Rational subspace](is-rational.md)
+- [Distance between subspaces](dist-subspaces.md)
+- [Height of a rational subspace](height.md)
 
 ## Sources
 

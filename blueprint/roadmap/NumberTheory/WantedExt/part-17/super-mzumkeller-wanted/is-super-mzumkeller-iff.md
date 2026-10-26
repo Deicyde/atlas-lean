@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.isSuperMZumkeller_iff
 ---
 
-# Theorem 2
+# Criterion for super-m-Zumkeller numbers
 
-**Theorem 2**: for `n ≥ 2`, `n` is super-m-Zumkeller if and
-only if `8 ∣ α_i·τ(n)·τ(T(n))` for every prime exponent `α_i`
-of `n`.
+**Criterion for super-m-Zumkeller numbers.** Let $n \ge 2$ be an integer, let $\tau(n)$ be the
+number of positive divisors of $n$ and $T(n)$ their product. Then $n$ is super-m-Zumkeller if and
+only if $8$ divides $\alpha \cdot \tau(n) \cdot \tau(T(n))$ for every prime $p$ dividing $n$,
+where $\alpha$ is the exponent of $p$ in $n$.
 
 ## Depends on
 
-- [Is Super MZumkeller](is-super-mzumkeller.md)
-- [Divisor Prod](divisor-prod.md)
+- [Super-m-Zumkeller numbers](is-super-mzumkeller.md)
+- [Product of the divisors](divisor-prod.md)
 
 ## Sources
 

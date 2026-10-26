@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.not_isNilpotentAt_X_add_one
 ---
 
-# Not is Nilpotent At X add one
+# $x + 1$ is not nilpotent at $1$
 
-`x + 1` is not nilpotent at `1`: `u^{(n)}(1) = n + 1 ≠ 0`.
+**$x + 1$ is not nilpotent at $1$.** The polynomial $x + 1 \in \mathbb{Z}[x]$ is not nilpotent
+at $1$.
+
+Writing $u(x) = x + 1$, the iterates satisfy $u^{(n)}(1) = n + 1 \ne 0$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Is Nilpotent At](is-nilpotent-at.md)
+- [Nilpotent polynomial at a point](is-nilpotent-at.md)
 
 ## Proof depends on
 
-- [Iterate eval X add one](iterate-eval-x-add-one.md)
+- [Iterates of $x + 1$](iterate-eval-x-add-one.md)
 
 ## Sources
 

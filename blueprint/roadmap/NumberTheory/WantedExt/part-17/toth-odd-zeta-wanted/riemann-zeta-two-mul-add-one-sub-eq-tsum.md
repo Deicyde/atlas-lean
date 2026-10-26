@@ -5,15 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_two_mul_add_one_sub_eq_tsum_paperfolding_thueMorse
 ---
 
-# Riemann Zeta two mul add one sub eq tsum paperfolding thue Morse
+# Tóth's paperfolding and Thue–Morse series for $\zeta(2k+1)$
 
-For `k ≥ 1`,
-`ζ(2k+1) - 2^{2k-1} |E_{2k}| π^{2k+1} / (2k)! = ∑_{n ≥ 1} N(n;k) / n^{2k+1}` with
-`N(n;k) = (2^{4k+1} - 2^{2k})(2bₙ - 1) + 2^{-(2k+1)}((2^{2k+1} + 1) t_{n-1} + (2^{2k+1} - 1) tₙ)`,
-where `(bₙ)_{n ≥ 1}` is the regular paperfolding sequence (`b_{2n} = bₙ`, `b_{4n+1} = 0`,
-`b_{4n+3} = 1`; `bₙ = paperfoldingSeq (n - 1)`), `(tₙ)_{n ≥ 0}` is the Thue-Morse sequence
-(`thueMorse`), and `E_{2k}` is the even Euler number (`chapter5EulerEven k`). The sum is
-indexed by `n + 1`.
+**Tóth's paperfolding and Thue–Morse series for $\zeta(2k+1)$.** Let $(f_n)_{n \ge 0}$ be the
+regular paperfolding sequence and $(t_n)_{n \ge 0}$ the Thue–Morse sequence, both indexed from
+$0$, and let $E_{2k}$ be the even-index Euler number. For every integer $k \ge 1$,
+
+$$
+\zeta(2k+1) - \frac{2^{2k-1} |E_{2k}| \pi^{2k+1}}{(2k)!} =
+\sum_{n \ge 0} \frac{N_k(n)}{(n+1)^{2k+1}},
+$$
+
+where
+
+$$
+N_k(n) = (2^{4k+1} - 2^{2k})(2 f_n - 1) +
+2^{-(2k+1)} \bigl((2^{2k+1} + 1) t_n + (2^{2k+1} - 1) t_{n+1}\bigr).
+$$
+
+In the source's indexing $b_n = f_{n-1}$ for $n \ge 1$ (so $b_{2n} = b_n$, $b_{4n+1} = 0$ and
+$b_{4n+3} = 1$), the right side is $\sum_{n \ge 1} N(n;k)/n^{2k+1}$ with
+$N(n;k) = (2^{4k+1} - 2^{2k})(2b_n - 1) +
+2^{-(2k+1)}((2^{2k+1} + 1) t_{n-1} + (2^{2k+1} - 1) t_n)$.
 
 ## Depends on
 

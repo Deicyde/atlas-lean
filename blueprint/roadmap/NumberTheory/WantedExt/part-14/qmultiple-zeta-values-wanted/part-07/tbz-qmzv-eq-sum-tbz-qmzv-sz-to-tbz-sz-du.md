@@ -5,18 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.tbzQMZV_eq_sum_tbzQMZV_szToTBZ_szDual
 ---
 
-# Tbz QMZV eq sum tbz QMZV sz To TBZ sz Dual
+# Duality for TBZ-qMZVs
 
-TBZ duality, `ζ_q^TBZ = ζ_q^TBZ ∘ V_TBZ ∘ τ̃ ∘ U_TBZ` on `𝔥^TBZ`: for a TBZ word `w` (letters
-`kᵢ ≥ 1`, first letter `≠ 1`), translating into the SZ model, applying `τ̃` (the SZ dual index) and
-translating back gives a combination of TBZ-qMZVs equal to `ζ_q^TBZ(w)`.
+**Duality for TBZ-qMZVs.** Let $w$ be a TBZ word: each letter is either $\bar 1$ or a natural
+number $k \ge 1$, and the first letter is not the number $1$. Let $U_{TBZ}(w) = \sum_v c_v\, v$ be
+the formal $\mathbb{Q}$-linear combination of SZ indices obtained by replacing each letter $\bar 1$
+by $1$ and each letter $k$ by $k$ or by $k - 1$, summed over all choices. For an SZ index
+$u = (u_1, \dots, u_s)$ of natural numbers, let $V_{TBZ}(u) = \sum_x d_{u,x}\, x$ be the formal
+$\mathbb{Q}$-linear combination of TBZ words obtained by replacing each letter $u_i = 0$ by
+$z_1 - z_{\bar 1}$ and each letter $u_i \ge 1$ by $\sum_{j=1}^{u_i} (-1)^{u_i - j} z_{j'}$, where
+$z_a$ is the one-letter word $a$, $j' = \bar 1$ for $j = 1$ and $j' = j$ otherwise, and
+multiplying out by concatenation of words. Then the Takeyama–Bradley–Zhao qMZVs satisfy
+
+$$
+\zeta_q^{TBZ}(w) = \sum_v c_v \sum_x d_{v^\dagger, x}\, \zeta_q^{TBZ}(x),
+$$
+
+where $v^\dagger$ is the SZ dual index of $v$; that is,
+$\zeta_q^{TBZ} = \zeta_q^{TBZ} \circ V_{TBZ} \circ \tilde\tau \circ U_{TBZ}$ on such words, where
+$\tilde\tau$ is the dual-index map and $V_{TBZ}$, $\tilde\tau$ and $\zeta_q^{TBZ}$ are extended
+$\mathbb{Q}$-linearly.
 
 ## Depends on
 
-- [Sz Dual Index](../part-06/sz-dual-index.md)
-- [Sz To TBZ](sz-to-tbz.md)
-- [Tbz QMZV](../part-03/tbz-qmzv.md)
-- [Tbz To SZ](tbz-to-sz.md)
+- [The SZ dual index](../part-06/sz-dual-index.md)
+- [The map $V_{TBZ}$ from SZ indices to TBZ words](sz-to-tbz.md)
+- [Takeyama–Bradley–Zhao qMZVs](../part-03/tbz-qmzv.md)
+- [The map from TBZ words to SZ indices](tbz-to-sz.md)
 
 ## Sources
 

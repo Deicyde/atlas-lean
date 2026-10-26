@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.locallyNilpotent_not_nilpotentAt_one_neg_one
 ---
 
-# Locally Nilpotent not nilpotent At one neg one
+# Locally nilpotent but not nilpotent polynomials at $\pm 1$
 
-The locally nilpotent but non-nilpotent polynomials at `1` and at `-1` are exactly
-`x + 1` and `x - 1` respectively (`S_1 = {x + 1}`, `S_{-1} = {x - 1}`).
+**Locally nilpotent but not nilpotent polynomials at $\pm 1$.** The only polynomial
+$u \in \mathbb{Z}[x]$ of positive degree that is locally nilpotent at $1$ but not nilpotent at $1$
+is $x + 1$, and the only polynomial of positive degree that is locally nilpotent at $-1$ but not
+nilpotent at $-1$ is $x - 1$.
 
 ## Depends on
 
-- [Is Nilpotent At](is-nilpotent-at.md)
-- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+- [Nilpotent polynomial at a point](is-nilpotent-at.md)
+- [Weakly locally nilpotent polynomial at a point](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

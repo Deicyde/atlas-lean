@@ -22,7 +22,7 @@ $2^{n-1}$; written this way the statement also covers $n = 0$.
 
 ## Depends on
 
-- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
+- [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

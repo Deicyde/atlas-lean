@@ -6,17 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.bFreeIndicator_prime_pow
 ---
 
-# B Free Indicator prime pow
+# The prime power $p^{\kappa(p)}$ is not $B_\kappa$-free
 
-A prime power `p ^ κ(p)` is not `B_κ`-free.
+**The prime power $p^{\kappa(p)}$ is not $B_\kappa$-free.** Let $\kappa$ be a function from
+the natural numbers to the natural numbers and let $p$ be a prime. Then the indicator
+$q_{B_\kappa}$ of $B_\kappa$-free integers satisfies $q_{B_\kappa}(p^{\kappa(p)}) = 0$.
+
+No positivity of $\kappa(p)$ is assumed; for $\kappa(p) = 0$ the statement is
+$q_{B_\kappa}(1) = 0$.
 
 ## Depends on
 
-- [B Free Indicator](b-free-indicator.md)
+- [Indicator of $B_\kappa$-free integers](b-free-indicator.md)
 
 ## Proof depends on
 
-- [B Free Indicator apply](b-free-indicator-apply.md)
+- [Values of the $B_\kappa$-free indicator](b-free-indicator-apply.md)
 
 ## Sources
 

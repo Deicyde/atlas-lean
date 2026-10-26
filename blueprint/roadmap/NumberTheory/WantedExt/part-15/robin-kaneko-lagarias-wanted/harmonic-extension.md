@@ -5,9 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.harmonicExtension
 ---
 
-# Harmonic Extension
+# The real extension of the harmonic numbers
 
-The real extension `H(x) = ∫₀¹ (t^x - 1)/(t - 1) dt` of the harmonic numbers (`H(n) = H_n`).
+**The real extension of the harmonic numbers.** For a real number $x$, let
+
+$$H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt,$$
+
+where $t^x$ is the real power and the integral is the Lebesgue integral over $[0, 1]$, taken to be
+$0$ when the integrand is not integrable.
+
+This extends the harmonic numbers: $H(n) = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ for every
+natural number $n$.
 
 ## Depends on
 

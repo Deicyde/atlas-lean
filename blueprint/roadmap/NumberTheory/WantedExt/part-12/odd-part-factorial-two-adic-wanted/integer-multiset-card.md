@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.integerMultiset_card
 ---
 
-# Integer Multiset card
+# Cardinality of the integer multiset
 
-The characteristic cardinality formula states that casting a finite set to an
-integer multiset neither adds nor removes entries.
+**Cardinality of the integer multiset.** For every finite set $s$ of natural numbers, the integer
+multiset of $s$ has the same number of elements, counted with multiplicity, as $s$.
 
 ## Depends on
 
-- [Integer Multiset](integer-multiset.md)
+- [Integer multiset of a finite set of naturals](integer-multiset.md)
 
 ## Sources
 

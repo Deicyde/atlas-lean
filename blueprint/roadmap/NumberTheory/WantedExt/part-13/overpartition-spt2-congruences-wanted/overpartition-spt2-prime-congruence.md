@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionSpt2_prime_congruence
 ---
 
-# Overpartition Spt2 prime congruence
+# Congruences modulo 4 for $\overline{\mathrm{spt2}}$ at primes $p \equiv 5, 7 \pmod 8$
 
-If `p` is prime, `3 < p`, and its remainder modulo eight is five or seven, then for every
-natural `k` and `m` with `p ∤ m`, `overpartitionSpt2` at
-`32 * p^(2*k+1) * m + 24 * p^(2*k+2)` has remainder zero modulo four. The paper's congruence
-and nondivisibility are represented by natural-number remainder and divisibility predicates;
-there is no other deviation.
+**Congruences modulo 4 for $\overline{\mathrm{spt2}}$ at primes $p \equiv 5, 7 \pmod 8$.** Let
+$\overline{\mathrm{spt2}}(N)$ be the number of smallest parts in the overpartitions of $N$ whose
+smallest part is even and not overlined. Let $p > 3$ be a prime with $p \equiv 5 \pmod 8$ or
+$p \equiv 7 \pmod 8$. Then for all natural numbers $k$ and $m$ with $p \nmid m$, the number
+$\overline{\mathrm{spt2}}(32 p^{2k+1} m + 24 p^{2k+2})$ is divisible by $4$.
 
 ## Depends on
 
-- [Overpartition Spt2](overpartition-spt2.md)
+- [Number of smallest even parts in overpartitions](overpartition-spt2.md)
 
 ## Sources
 

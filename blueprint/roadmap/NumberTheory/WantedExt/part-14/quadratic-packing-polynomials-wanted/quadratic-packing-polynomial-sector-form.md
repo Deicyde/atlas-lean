@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_sector_form
 ---
 
-# Quadratic Packing Polynomial sector form
+# Form of a quadratic packing polynomial on a sector (Gjaldbæk)
 
-Necessary form of a QPP on a sector (Gjaldbæk): if `P` is a QPP on `I(α)`, `α > 0`, then
-`P(x, y) = A/2 x(x - 1) + B x y + C/2 y(y - 1) + D x + E y + F` with integers `A, …, F`,
-`A > 0`, `B² = A C` and `α = A / (1 - B)`; in particular `α` is rational.
+**Form of a quadratic packing polynomial on a sector (Gjaldbæk).** Let $\alpha > 0$ be a real
+number and let $P$ be a quadratic packing polynomial on the lattice sector $I(\alpha)$. Then there
+are integers $A, B, C, D, E, F$ with $A > 0$, $B^2 = AC$ and $\alpha = A/(1 - B)$ such that for
+all real $x, y$
+
+$$P(x, y) = \tfrac{A}{2} x(x - 1) + Bxy + \tfrac{C}{2} y(y - 1) + Dx + Ey + F.$$
+
+In particular $\alpha$ is rational.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

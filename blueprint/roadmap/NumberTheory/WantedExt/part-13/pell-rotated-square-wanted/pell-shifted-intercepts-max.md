@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.pell_shifted_intercepts_max
 ---
 
-# Pell shifted intercepts max
+# Largest intercept norm of a shifted Pell curve
 
-For integers `a ≠ 0` and `b`, the largest `L¹` norm of an intercept of the shifted Pell curve
-`(x - a)² - D (y - b)² = 1`, among `(a ± √(1 + D b²), 0)` and `(0, b ± √((a² - 1) / D))`, is
-`|a| + √(1 + D b²)`.
+**Largest intercept norm of a shifted Pell curve.** Let $D > 0$, $a \ne 0$ and $b$ be
+integers. The intercepts of the shifted Pell curve $(x - a)^2 - D (y - b)^2 = 1$ with the axes
+are $(a \pm \sqrt{1 + D b^2}, 0)$ and $(0, b \pm \sqrt{(a^2 - 1) / D})$, with $L^1$ norms
+$|a \pm \sqrt{1 + D b^2}|$ and $|b \pm \sqrt{(a^2 - 1) / D}|$. The largest of these four norms
+is $|a| + \sqrt{1 + D b^2}$.
 
 ## Depends on
 

@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.lehmerCompletions_length
 ---
 
-# Lehmer Completions length
+# A full-length nondecreasing list has only the empty completion
 
-Characteristic property: a nondecreasing list of length `r` has only the empty completion.
+**A full-length nondecreasing list has only the empty completion.** Let
+$t = (t_1, \dots, t_r)$ be a nondecreasing list of $r$ real numbers. Then the empty list is the
+only admissible completion of $t$ to length $r$, that is, the only list $u$ of real numbers such
+that $r + |u| = r$, the concatenation of $t$ and $u$ is nondecreasing, and every entry of $u$ is
+at least $2$.
 
 ## Depends on
 
-- [Lehmer Completions](lehmer-completions.md)
+- [Admissible completions for the Lehmer bounds](lehmer-completions.md)
 
 ## Sources
 

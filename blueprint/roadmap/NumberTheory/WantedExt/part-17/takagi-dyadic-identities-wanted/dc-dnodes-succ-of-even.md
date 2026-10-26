@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_succ_of_even
 ---
 
-# Dc DNodes succ of even
+# Successor formula for the D-node count at even arguments
 
-Lemma 19: for even `n > 0`, `δ(n+1) = δ(n) + ⌊log₂ n⌋ - 2 s₁(n) + 2`.
+**Successor formula for the D-node count at even arguments.** Let $\delta$ be the
+divide-and-conquer D-node count and $s_1(n)$ the number of ones in the binary expansion of $n$.
+For every even integer $n > 0$, $\delta(n+1) = \delta(n) + \lfloor \log_2 n \rfloor - 2 s_1(n) + 2$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

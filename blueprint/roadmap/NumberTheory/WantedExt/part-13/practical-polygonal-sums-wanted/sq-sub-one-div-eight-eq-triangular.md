@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sq_sub_one_div_eight_eq_triangular
 ---
 
-# Sq sub one div eight eq triangular
+# Odd squares and triangular numbers
 
-For odd `x`, `(x² - 1) / 8` is a triangular number.
+**Odd squares and triangular numbers.** For every odd natural number $x$, the number
+$(x^2 - 1)/8$ is a triangular number: there is a natural number $k$ with
+$(x^2 - 1)/8 = p_3(k)$, where $p_3(k) = k(k+1)/2$ is the $k$-th $3$-gonal number.
 
 ## Depends on
 

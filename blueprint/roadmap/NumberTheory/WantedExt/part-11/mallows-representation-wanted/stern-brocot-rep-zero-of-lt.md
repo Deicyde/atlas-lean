@@ -6,22 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.sternBrocotRep_zero_of_lt
 ---
 
-# Stern Brocot Rep zero of lt
+# First Stern–Brocot letter below one half
 
-Characteristic value: `SB_1(α) = L` for `α < 1/2`.
+**First Stern–Brocot letter below one half.** For every real number $\alpha < 1/2$, the
+first letter $SB_1(\alpha)$ of the Stern–Brocot representation of $\alpha$ is $L$.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Proof depends on
 
-- [Gap Mediant](gap-mediant.md)
-- [Gap Mediant root](gap-mediant-root.md)
-- [Nat Pair To Real](nat-pair-to-real.md)
-- [Nat Pair To Real one two](nat-pair-to-real-one-two.md)
-- [Stern Brocot Interval](stern-brocot-interval.md)
+- [Mediant of a gap](gap-mediant.md)
+- [The mediant of $0/1$ and $1/1$](gap-mediant-root.md)
+- [Real value of a fraction encoded as a pair](nat-pair-to-real.md)
+- [The pair $(1, 2)$ encodes $1/2$](nat-pair-to-real-one-two.md)
+- [Gaps along the Stern–Brocot path](stern-brocot-interval.md)
 
 ## Sources
 

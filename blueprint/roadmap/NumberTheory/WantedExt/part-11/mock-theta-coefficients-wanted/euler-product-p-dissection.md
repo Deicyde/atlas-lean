@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.eulerProduct_p_dissection
 ---
 
-# Euler Product p dissection
+# The $p$-dissection of $f_1$
 
-Lemma 2: for a prime `p ≥ 5`, with `c = (±p-1)/6` equal to `(p-1)/6` if `p ≡ 1 (mod 6)`
-and `(-p-1)/6` if `p ≡ -1 (mod 6)`,
-`f_1 = ∑_{t = -(p-1)/2, t ≠ c}^{(p-1)/2} (-1)^t q^{(3t^2+t)/2}
-f(-q^{(3p^2+(6t+1)p)/2}, -q^{(3p^2-(6t+1)p)/2}) + (-1)^c q^{(p^2-1)/24} f_{p^2}`;
-furthermore `(3t^2+t)/2 ≢ (p^2-1)/24 (mod p)` for those `t ≠ c`. Exponents are integers
-(nonnegative for these `t`), converted with `Int.toNat`. (Quoted by the paper from Cui and
-Gu, Theorem 2.2.)
+**The $p$-dissection of $f_1$.** Let $p \ge 5$ be a prime, let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ for $k \ge 1$, and let
+$f(a, b) = \sum_{m \in \mathbb{Z}} a^{m(m+1)/2} b^{m(m-1)/2}$ be Ramanujan's general theta
+function. Put $c = (p-1)/6$ if $p \equiv 1 \pmod 6$ and $c = (-p-1)/6$ otherwise. Then, as
+integer power series,
+
+$$
+f_1 = \sum_{t=-(p-1)/2,\ t \ne c}^{(p-1)/2} (-1)^t q^{(3t^2+t)/2}
+f\bigl(-q^{(3p^2+(6t+1)p)/2}, -q^{(3p^2-(6t+1)p)/2}\bigr) +
+(-1)^c q^{(p^2-1)/24} f_{p^2}.
+$$
+
+Moreover, $(3t^2 + t)/2 \not\equiv (p^2 - 1)/24 \pmod p$ for every integer $t$ with
+$-(p-1)/2 \le t \le (p-1)/2$ and $t \ne c$.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
+- [Ramanujan's theta function at monomial arguments](ramanujan-theta-monomial.md)
 
 ## Sources
 

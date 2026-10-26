@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_twelfth_moment_le
 ---
 
-# Riemann Zeta twelfth moment le
+# Twelfth moment of the Riemann zeta function on the critical line
 
-Twelfth moment of `ζ` on the critical line (Heath-Brown's bound, as quoted): for every
-`ε > 0`, `∫_1^T |ζ(1/2 + i t)|^{12} dt ≪_ε T^{2 + ε}` uniformly for `T ≥ 1`.
+**Twelfth moment of the Riemann zeta function on the critical line.** For every
+$\varepsilon > 0$ there is a constant $C$ such that for every real $T \ge 1$,
+
+$$\int_1^T |\zeta(1/2 + it)|^{12} \, dt \le C T^{2+\varepsilon}.$$
+
+This is Heath-Brown's bound in the form quoted by the sources.
 
 ## Depends on
 

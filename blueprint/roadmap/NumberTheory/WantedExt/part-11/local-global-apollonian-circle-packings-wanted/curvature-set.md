@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.curvatureSet
 ---
 
-# Curvature Set
+# Curvature set
 
-The curvature set of a primitive Apollonian circle packing.
+**Curvature set.** Let $A$ be a primitive Apollonian circle packing, viewed as an orbit of
+integral primitive Descartes quadruples. The curvature set of $A$ is the set of all integers
+that occur as an entry of some quadruple in $A$.
 
 ## Depends on
 
-- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+- [Primitive Apollonian circle packing](primitive-apollonian-circle-packing.md)
 
 ## Proof depends on
 
-- [Transformation Group](transformation-group.md)
-- [Transformation Group Action](transformation-group-action.md)
-- [Integral Primitive Descartes Quadruple](integral-primitive-descartes-quadruple.md)
+- [The transformation group](transformation-group.md)
+- [Action of the transformation group on integral primitive Descartes quadruples](transformation-group-action.md)
+- [Integral primitive Descartes quadruple](integral-primitive-descartes-quadruple.md)
 
 ## Sources
 

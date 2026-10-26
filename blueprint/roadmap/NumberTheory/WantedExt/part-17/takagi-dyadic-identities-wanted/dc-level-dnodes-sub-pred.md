@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.dcLevelDNodes_sub_pred
 ---
 
-# Dc Level DNodes sub pred
+# Level counts of D-nodes at consecutive integers
 
-Lemma 17: for `n = 2^k + r` with `r` odd, `0 < r < 2^k`, and `0 < i < k`,
-`λᵢ(n) - λᵢ(n-1)` is `1` if `nᵢ = 0` and `-1` if `nᵢ = 1`.
+**Level counts of D-nodes at consecutive integers.** Let $k$, $r$ and $i$ be natural numbers
+with $r$ odd, $r < 2^k$ and $0 < i < k$, and let $n = 2^k + r$. Then the level counts of
+D-nodes satisfy $\lambda_i(n) - \lambda_i(n-1) = 1$ if the binary digit $n_i$ of $n$ is $0$,
+and $\lambda_i(n) - \lambda_i(n-1) = -1$ if $n_i = 1$.
 
 ## Depends on
 
-- [Dc Level DNodes](dc-level-dnodes.md)
+- [Level counts of D-nodes](dc-level-dnodes.md)
 
 ## Sources
 

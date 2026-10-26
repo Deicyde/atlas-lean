@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isLexMinimalExtensionOf_iff_forall_lt
 ---
 
-# Is Lex Minimal Extension Of iff forall lt
+# Partial-sum criterion for lex-minimal extensions
 
-Proposition 1, part 2: if the first `k` entries (`k ≥ 1`) form a finite
-binomid index (`S_i + S_j ≤ S_{i+j}` for `i, j ≥ 1`, `i + j ≤ k`), then `η` is
-the lex-minimal extension of its first `k` entries if and only if
-`Δ_η(r) = min {S_r - S_i - S_j | i + j = r, i, j ≥ 1} = 0` for every `r > k`,
-written as `S_i + S_j ≤ S_r` for all such splits with equality for one of
-them. Part 1 (`η` is binomid iff `S_i + S_j ≤ S_{i+j}`) is the first conjunct
-of `isBinomidIndex_iff_partialSum`.
+**Partial-sum criterion for lex-minimal extensions.** Let $k \ge 1$, let
+$\eta = (e_1, e_2, \dots)$ be a sequence of nonnegative integers and write
+$S_i = e_1 + \dots + e_i$. Suppose $S_i + S_j \le S_{i+j}$ for all $i, j \ge 1$ with
+$i + j \le k$. Then $\eta$ is the lex-minimal extension of $(e_1, \dots, e_k)$ if and only if,
+for every $r > k$, $S_i + S_j \le S_r$ for all $i, j \ge 1$ with $i + j = r$, with equality for
+at least one such pair $(i, j)$.
+
+In the paper's notation, the condition says that $\Delta_\eta(r) = 0$ for every $r > k$, where
+$\Delta_\eta(r) = \min \{S_r - S_i - S_j : i + j = r,\ i, j \ge 1\}$.
 
 ## Depends on
 

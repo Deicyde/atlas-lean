@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ceilQuotientOddCount_asymptotic
 ---
 
-# Ceil Quotient Odd Count asymptotic
+# Asymptotics of the ceiling parity count
 
-Corollary 10: `𝓒_n = (1 - log 2) n + O(√n)` and `𝓒_n / n → 1 - log 2`.
+**Asymptotics of the ceiling parity count.** Let $\mathcal{C}_n$ be the number of integers
+$k$ with $1 \le k \le n$ for which $\lceil n/k \rceil$ is odd. There is a real constant $C$ such
+that $|\mathcal{C}_n - (1 - \log 2)\, n| \le C \sqrt{n}$ for every integer $n \ge 1$, and
+$\mathcal{C}_n / n \to 1 - \log 2$ as $n \to \infty$.
 
 ## Depends on
 
-- [Ceil Quotient Odd Count](ceil-quotient-odd-count.md)
+- [Ceiling parity count](ceil-quotient-odd-count.md)
 
 ## Sources
 

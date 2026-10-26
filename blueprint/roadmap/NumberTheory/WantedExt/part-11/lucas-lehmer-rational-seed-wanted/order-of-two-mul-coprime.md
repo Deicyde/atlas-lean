@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.orderOf_two_mul_coprime
 ---
 
-# Order Of two mul coprime
+# Order of $2$ modulo a product of coprime odd numbers
 
-For coprime odd `m_1`, `m_2`, the order of `2` modulo `m_1 m_2` is the lcm of the orders
-modulo `m_1` and `m_2`. The printed `lcm(ω(m_1)ω(m_2))` is read as `lcm(ω(m_1), ω(m_2))` (the
-product reading fails: `ω(15) = 4`, `ω(3)ω(5) = 8`); `m_i` natural.
+**Order of $2$ modulo a product of coprime odd numbers.** Let $m_1$ and $m_2$ be coprime odd
+natural numbers, and write $\omega(m)$ for the multiplicative order of $2$ modulo $m$. Then
+$\omega(m_1 m_2) = \operatorname{lcm}(\omega(m_1), \omega(m_2))$.
+
+The printed $\operatorname{lcm}(\omega(m_1)\omega(m_2))$ is read as
+$\operatorname{lcm}(\omega(m_1), \omega(m_2))$; the product reading fails, since $\omega(15) = 4$
+while $\omega(3)\omega(5) = 8$.
 
 ## Depends on
 

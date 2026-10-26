@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtensionOf.exists_period_from_preperiod_bound
 ---
 
-# Exists period from preperiod bound
+# A preperiod bound for lex-minimal extensions
 
-Theorem 2: if `k ≤ m` attains `A_k = A_max`, then `k m (m + 1) / 2` is a
-preperiod of `η̃`: the tail `(e_i)_{i > k m (m + 1) / 2}`, i.e. `η j` for
-`j ≥ k m (m + 1) / 2`, is periodic.
+**A preperiod bound for lex-minimal extensions.** Let $m \ge 0$, let
+$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages
+$A_i = (e_1 + \dots + e_i)/i$, and let $1 \le k \le m$ with
+$A_k = \max \{A_i \mid 1 \le i \le m\}$. Then $\eta$ is periodic after position
+$N = k m (m + 1)/2$: there is $p \ge 1$ with $e_{i+p} = e_i$ for all $i > N$.
 
 ## Depends on
 
 - [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
-- [Max Average Indices](max-average-indices.md)
+- [Indices of maximal average](max-average-indices.md)
 
 ## Sources
 

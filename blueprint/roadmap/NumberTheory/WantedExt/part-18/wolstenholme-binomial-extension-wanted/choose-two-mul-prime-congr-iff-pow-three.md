@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.choose_two_mul_prime_congr_iff_pow_three
 ---
 
-# Choose two mul prime congr iff pow three
+# Equivalent forms of Wolstenholme's congruence
 
-Corollary 2: for a prime `p ≥ 5` and `n, k ∈ ℕ`, the congruences
-`binom(2p, p) ≡ 2`, `binom(np, p) ≡ n` and `binom(np, kp) ≡ binom(n, k)` modulo `p^3` are
-equivalent. (By Wolstenholme's theorem all three hold for every such `p`.)
+**Equivalent forms of Wolstenholme's congruence.** Let $p \ge 5$ be a prime and let $n$ and
+$k$ be natural numbers. Then the congruences $\binom{2p}{p} \equiv 2$, $\binom{np}{p} \equiv n$ and
+$\binom{np}{kp} \equiv \binom{n}{k}$ modulo $p^3$ are equivalent.
+
+By Wolstenholme's theorem all three hold for every such $p$.
 
 ## Depends on
 

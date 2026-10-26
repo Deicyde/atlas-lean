@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsQuadraticPackingPolynomial.exists_nat_eq
 ---
 
-# Exists nat eq
+# Quadratic packing polynomials take natural-number values
 
-A quadratic packing polynomial takes a natural-number value at every point of its set.
+**Quadratic packing polynomials take natural-number values.** If $P$ is a quadratic packing
+polynomial on a set $S \subseteq \mathbb{R}^2$, then for every point $(x, y) \in S$ the value
+$P(x, y)$ is a natural number.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
 
 ## Sources
 

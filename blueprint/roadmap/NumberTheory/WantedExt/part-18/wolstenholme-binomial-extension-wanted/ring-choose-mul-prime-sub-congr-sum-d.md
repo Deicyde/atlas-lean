@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ringChoose_mul_prime_sub_congr_sum_d
 ---
 
-# Ring Choose mul prime sub congr sum d
+# The general congruence for $\binom{np}{kp}$
 
-Theorem 3: for a prime `p`, `m, k ∈ ℕ` with `m + 1 < p` (the paper's setting: the mean value
-theorem is applied with order `m + 1 < p`) and `n ∈ ℤ`, with
-`c_j(n, k) = ∑_{s=0}^{j} binom(jp, sp) binom(n - j, k - s)` (Lemma 2) and
-`d(l, n, k) = binom(n, l) ∑_{j=0}^{l} (-1)^{l-j} binom(l, j) c_j(n, k)`,
-`binom(np, kp) - binom(n, k) ≡ d(1, n, k) + ⋯ + d(m, n, k) (mod p^{m+1+v_p(binom(n, m+1))})`.
-Negative upper indices are read through `Ring.choose`. The congruence is written
-`X = 0 ∨ (binom(n, m+1) ≠ 0 ∧ m + 1 + v_p(binom(n, m+1)) ≤ v_p(X))`, so
-`binom(n, m+1) = 0` (`v_p = ∞`) demands equality.
+**The general congruence for $\binom{np}{kp}$.** Let $p$ be a prime, let $m$ and $k$ be
+natural numbers with $m + 1 < p$, and let $n$ be an integer. For an integer $x$ and a natural
+number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the $p$-adic
+valuation on $\mathbb{Q}$. For natural numbers $j$ and $l$ put
+
+$$
+c_j = \sum_{s=0}^{\min(j, k)} \binom{jp}{sp} \binom{n-j}{k-s}, \qquad
+d_l = \binom{n}{l} \sum_{j=0}^{l} (-1)^{l-j} \binom{l}{j} c_j,
+$$
+
+and let $X = \binom{np}{kp} - \binom{n}{k} - (d_1 + \cdots + d_m)$. Then either $X = 0$, or
+$\binom{n}{m+1} \ne 0$ and $v_p(X) \ge m + 1 + v_p\big(\binom{n}{m+1}\big)$. That is,
+$\binom{np}{kp} - \binom{n}{k} \equiv d_1 + \cdots + d_m$ modulo $p^{m+1+v_p(\binom{n}{m+1})}$,
+with equality when $\binom{n}{m+1} = 0$.
+
+The paper allows $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.zeckMarkovPath_succ_of_true
 ---
 
-# Zeck Markov Path succ of true
+# After a one, the Zeckendorf Markov chain emits a zero
 
-After a set digit the chain emits `0`: `y_j = 1 → y_{j+1} = 0`.
+**After a one, the Zeckendorf Markov chain emits a zero.** For every real sequence
+$(u_n)_{n \ge 0}$ and every $j \ge 1$, if the digit $y_j$ of the chain driven by $(u_n)$ is $1$,
+then $y_{j+1} = 0$.
 
 ## Depends on
 
-- [Zeck Markov Path](zeck-markov-path.md)
+- [The Zeckendorf Markov chain](zeck-markov-path.md)
 
 ## Sources
 

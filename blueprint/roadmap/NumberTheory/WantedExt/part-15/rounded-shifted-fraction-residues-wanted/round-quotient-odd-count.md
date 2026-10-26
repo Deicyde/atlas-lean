@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.roundQuotientOddCount
 ---
 
-# Round Quotient Odd Count
+# Rounding sequence parity count
 
-The rounding sequence parity count `𝓡_n`: the number of `k` with
-`1 ≤ k ≤ n` for which the nearest integer to `n/k` is odd, half-integers
-rounded up. Mathlib's `round` rounds half-integers up (`round_eq`:
-`round x = ⌊x + 1/2⌋`), which is the paper's convention for `nint`.
+**Rounding sequence parity count.** For a natural number $n$, the rounding sequence parity
+count $\mathcal R_n$ is the number of integers $k$ with $1 \le k \le n$ for which the nearest
+integer to $n/k$ is odd, where half-integers are rounded up: the nearest integer to a rational
+number $x$ is taken to be $\lfloor x + 1/2 \rfloor$.
+
+Rounding half-integers up is the paper's convention for $\mathrm{nint}$.
 
 ## Depends on
 

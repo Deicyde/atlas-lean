@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.biBracket_nil
 ---
 
-# Bi Bracket nil
+# Empty bi-bracket
 
-`g(∅; ∅) = 1`.
+**Empty bi-bracket.** The bi-bracket of the empty index is $1$:
+$g(\varnothing; \varnothing) = 1$.
 
 ## Depends on
 
-- [Bi Bracket](bi-bracket.md)
+- [Bi-brackets](bi-bracket.md)
 
 ## Proof depends on
 
-- [Bi Bracket Partial](bi-bracket-partial.md)
+- [Partial sums of bi-brackets](bi-bracket-partial.md)
 
 ## Sources
 

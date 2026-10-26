@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.xuZhangConstant_prime
 ---
 
-# Xu Zhang Constant prime
+# Xu–Zhang constant at a prime
 
-Characteristic value at a prime `p`:
-`C_p = 1 + (2p³ + p² - 1) / ((p² + 1)(p² + p + 1)) - 1 / (p² + p + 1)`.
+**Xu–Zhang constant at a prime.** For every prime $p$, the Xu–Zhang constant of $p$ is
+
+$$C_p = 1 + \frac{2p^3 + p^2 - 1}{(p^2 + 1)(p^2 + p + 1)} - \frac{1}{p^2 + p + 1}.$$
 
 ## Depends on
 
-- [Xu Zhang Constant](xu-zhang-constant.md)
+- [Xu–Zhang constant](xu-zhang-constant.md)
 
 ## Sources
 

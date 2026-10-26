@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_abs_le
 ---
 
-# Lemma 5
+# The Euclidean Bézout coefficients are smallest in absolute value
 
-**Lemma 5**: the pair `(s₂, s₁)` of Bézout coefficients
-provided by the Euclidean algorithm for `(m, n)` has each
-coefficient least in absolute value among all Bézout pairs.
+**The Euclidean Bézout coefficients are smallest in absolute value.** Let $m > n > 1$ be
+integers, write $g = \gcd(m, n)$, and let $(r_i)$, $(s_i)$ and $N$ be Euclidean switching data
+with $r_0 = m/g$ and $r_1 = n/g$. Then for all integers $x$ and $y$ with $xm + yn = g$, we have
+$|s_2| \le |x|$ and $|s_1| \le |y|$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.rLucasPolynomial_succ_of_le
 ---
 
-# R Lucas Polynomial succ of le
+# Recurrence for the $r$-Lucas polynomials
 
-`V_{n+1} = x V_n + y V_{n-r}` for `n ≥ r`.
+**Recurrence for the $r$-Lucas polynomials.** Let $R$ be a commutative semiring, let $s$ be a
+natural number, let $x, y \in R$, and let $r \le n$ be natural numbers. Then the $r$-Lucas
+polynomials of type $s$, $V_m = V^{(r,s)}_m(x, y)$, satisfy $V_{n+1} = x \, V_n + y \, V_{n-r}$.
 
 ## Depends on
 
-- [R Lucas Polynomial](r-lucas-polynomial.md)
+- [The $r$-Lucas polynomials of type $s$](r-lucas-polynomial.md)
 
 ## Sources
 

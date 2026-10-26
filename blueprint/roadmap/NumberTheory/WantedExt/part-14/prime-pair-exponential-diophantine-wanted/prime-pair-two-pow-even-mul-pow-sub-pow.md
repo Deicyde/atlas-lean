@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_two_pow_even_mul_pow_sub_pow_eq_sq_iff
 ---
 
-# Prime pair two pow even mul pow sub pow eq sq iff
+# Squares of the form $(2^{2k}(2p - 1))^x - p^y$ for prime pairs
 
-If `p` and `2p - 1` are primes with `p ≡ 3 (mod 4)` and `k ≥ 1`, then
-`(2^{2k}(2p - 1))ˣ - pʸ = z²` has the unique non-negative solution `(x, y, z) = (0, 0, 0)`.
+**Squares of the form $(2^{2k}(2p - 1))^x - p^y$ for prime pairs.** Let $p$ be a prime with
+$p \equiv 3 \pmod 4$ such that $2p - 1$ is prime, and let $k \ge 1$ be an integer. Then
+non-negative integers $x$, $y$ and $z$ satisfy $(2^{2k}(2p - 1))^x - p^y = z^2$ if and only if
+$(x, y, z) = (0, 0, 0)$.
 
 ## Depends on
 

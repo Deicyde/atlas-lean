@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.natPairToReal
 ---
 
-# Nat Pair To Real
+# Real value of a fraction encoded as a pair
 
-The real value `n / m` of a fraction encoded as the pair `(n, m)`.
+**Real value of a fraction encoded as a pair.** The pair $(n, m)$ of natural numbers encodes
+the fraction with numerator $n$ and denominator $m$, whose real value is $n / m$ (taken to be $0$
+when $m = 0$).
 
 ## Depends on
 

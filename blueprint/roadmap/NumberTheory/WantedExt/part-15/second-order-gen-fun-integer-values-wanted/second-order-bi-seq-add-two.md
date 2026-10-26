@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.secondOrderBiSeq_add_two
 ---
 
-# Second Order Bi Seq add two
+# The two-sided sequence satisfies its recurrence at every index
 
-The defining recurrence on all of `ℤ`: `A_{n+2} = p A_{n+1} + A_n` for every integer `n`.
+**The two-sided sequence satisfies its recurrence at every index.** Let $p$, $r$, $s$ be
+integers and $(A^{(r,s)}_n)_{n \in \mathbb{Z}}$ the two-sided sequence for $p$ with initial values
+$A^{(r,s)}_0 = r$ and $A^{(r,s)}_1 = s$. Then
+$A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for every integer $n$.
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
 
 ## Proof depends on
 
-- [Second Order Bwd](second-order-bwd.md)
-- [Second Order Fwd](second-order-fwd.md)
+- [Backward part of the two-sided sequence](second-order-bwd.md)
+- [Forward part of a second-order sequence](second-order-fwd.md)
 
 ## Sources
 

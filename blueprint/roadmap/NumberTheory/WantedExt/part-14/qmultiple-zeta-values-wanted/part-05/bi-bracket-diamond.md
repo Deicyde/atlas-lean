@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.biBracketDiamond
 ---
 
-# Bi Bracket Diamond
+# Bachmann's product of bi-bracket letters
 
-Bachmann's product on letters `z_{k,d}` (pairs `(k, d)`):
-`z_{k₁,d₁} ⊠ z_{k₂,d₂} = C(d₁ + d₂, d₁) (∑_{j ≤ k₁} λ_{k₁,k₂}^j z_{j,d₁+d₂}
-+ ∑_{j ≤ k₂} λ_{k₂,k₁}^j z_{j,d₁+d₂} + z_{k₁+k₂,d₁+d₂})`.
+**Bachmann's product of bi-bracket letters.** Write $z_{k,d}$ for the letter indexed by a pair
+$(k, d)$ of natural numbers, and let $\lambda_{a,b}^j$ be Bachmann's coefficients. The product of
+the letters $z_{k_1,d_1}$ and $z_{k_2,d_2}$ is the formal $\mathbb{Q}$-linear combination of letters
+
+$$z_{k_1,d_1} \boxtimes z_{k_2,d_2} = \binom{d_1 + d_2}{d_1} \Big( \sum_{j=1}^{k_1}
+\lambda_{k_1,k_2}^j z_{j,d_1+d_2} + \sum_{j=1}^{k_2} \lambda_{k_2,k_1}^j z_{j,d_1+d_2} +
+z_{k_1+k_2,d_1+d_2} \Big).$$
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bi Bracket Lambda](bi-bracket-lambda.md)
+- [Bachmann's coefficients](bi-bracket-lambda.md)
 
 ## Sources
 

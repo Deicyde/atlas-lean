@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.isSuperMZumkeller_four_not_kmPerfect
 ---
 
-# Theorem 6, failure of the converse
+# $4$ is super-m-Zumkeller but not $k$-m-perfect for $k \ge 2$
 
-**Theorem 6, failure of the converse**: `4` is
-super-m-Zumkeller but is not `k`-m-perfect for any `k ≥ 2`
-(the paper's counterexample).
+**$4$ is super-m-Zumkeller but not $k$-m-perfect for $k \ge 2$.** The number $4$ is
+super-m-Zumkeller, and for no natural number $k \ge 2$ is $4$ a $k$-m-perfect number. This is the
+paper's counterexample to the converse of Theorem 6.
 
 ## Depends on
 
-- [Is KMPerfect](is-kmperfect.md)
-- [Is Super MZumkeller](is-super-mzumkeller.md)
+- [$k$-m-perfect numbers](is-kmperfect.md)
+- [Super-m-Zumkeller numbers](is-super-mzumkeller.md)
 
 ## Sources
 

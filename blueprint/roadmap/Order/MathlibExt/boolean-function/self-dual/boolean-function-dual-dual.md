@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.booleanFunctionDual_dual
 ---
 
-# Boolean Function Dual dual
+# Duality of Boolean functions is an involution
 
-Boolean-function duality is involutive.
+**Duality of Boolean functions is an involution.** For every $n$ and every Boolean function
+$f \colon \{0,1\}^n \to \{0,1\}$, writing $f^\star$ for the dual of $f$, we have
+$(f^\star)^\star = f$.
 
 ## Depends on
 
-- [Boolean Function Dual](boolean-function-dual.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Proof depends on
 
-- [Boolean Vector Complement](boolean-vector-complement.md)
-- [Boolean Vector Complement complement](boolean-vector-complement-complement.md)
+- [Complement of a Boolean vector](boolean-vector-complement.md)
+- [Complementation of Boolean vectors is an involution](boolean-vector-complement-complement.md)
 
 ## Sources
 

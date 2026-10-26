@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.perrinSequence_ne_perrinNeg_sq
 ---
 
-# Perrin Sequence ne perrin Neg sq
+# No positive-index Perrin number is the square of a negative-index one
 
-Theorem 3: `R_n = R_{-m} ^ 2` has no solutions in positive integers.
+**No positive-index Perrin number is the square of a negative-index one.** Let $R_n$ denote
+the $n$-th term of the Perrin sequence and $R_{-m}$ the term at index $-m$ of its backward
+extension to negative indices. For all positive integers $n$ and $m$, $R_n \ne R_{-m}^2$.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 - [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources

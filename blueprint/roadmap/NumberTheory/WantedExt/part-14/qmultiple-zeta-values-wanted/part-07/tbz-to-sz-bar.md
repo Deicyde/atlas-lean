@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.tbzToSZ_bar
 ---
 
-# Tbz To SZ bar
+# The TBZ-to-SZ map on the letter $\bar{1}$
 
-`U_TBZ(z_1̄) = p y`.
+**The TBZ-to-SZ map on the letter $\bar{1}$.** The map $U_{\mathrm{TBZ}}$ sends the one-letter
+word $\bar{1}$ to the index $(1)$ with coefficient $1$.
 
 ## Depends on
 
-- [Tbz To SZ](tbz-to-sz.md)
+- [The map from TBZ words to SZ indices](tbz-to-sz.md)
 
 ## Sources
 

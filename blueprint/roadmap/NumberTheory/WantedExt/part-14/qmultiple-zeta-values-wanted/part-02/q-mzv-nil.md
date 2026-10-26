@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.qMZV_nil
 ---
 
-# Q MZV nil
+# General qMZV of the empty index
 
-`ζ_q(∅; ∅) = 1`.
+**General qMZV of the empty index.** The general q-multiple zeta value of the empty data is
+$\zeta_q(\varnothing; \varnothing) = 1$.
 
 ## Depends on
 
-- [Q MZV](q-mzv.md)
+- [General q-multiple zeta values](q-mzv.md)
 
 ## Sources
 

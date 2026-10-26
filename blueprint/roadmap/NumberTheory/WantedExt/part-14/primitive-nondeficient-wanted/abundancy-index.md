@@ -5,11 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.abundancyIndex
 ---
 
-# Abundancy Index
+# Abundancy index
 
-The paper's abundancy `h(n) = σ(n)/n`, in `ℚ`. The paper
-defines `h` for positive `n`; at `n = 0` this returns `0` by
-`ℚ`-division totalization, and every use below assumes `0 < n`.
+**Abundancy index.** For a natural number $n$, the abundancy index is the rational number
+$h(n) = \sigma(n)/n$, where $\sigma(n)$ is the sum of the positive divisors of $n$.
+
+At $n = 0$ this gives $h(0) = 0$, since division by zero is $0$ in $\mathbb{Q}$; the abundancy
+index is only meaningful for positive $n$.
 
 ## Depends on
 

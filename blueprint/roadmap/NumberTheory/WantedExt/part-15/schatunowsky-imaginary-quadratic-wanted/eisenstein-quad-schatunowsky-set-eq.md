@@ -5,22 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.eisenstein_quadSchatunowskySet_eq
 ---
 
-# Eisenstein quad Schatunowsky Set eq
+# The first three Schatunowsky sets of the Eisenstein integers
 
-Corollary 2: for the Eisenstein integers (`discr K = -3`), with `π_1 = 1 + ζ` the prime of
-norm `3` (any element `π` of norm `3`), `π_2# = 2π`, `π_3# = 14π`, `π_4# = 182π`:
-`Q_{-3,1} = {α | 1 < N(α) ≤ 9} ∪ {γπ_1 | 4 ≤ N(γ) ≤ 5} ∪ {γ(π_2#) | 2 ≤ N(γ) ≤ 4}`,
-`Q_{-3,2} = {α | 1 < N(α) ≤ 27} ∪ {γπ_1 | 10 ≤ N(γ) ≤ 21} ∪ {γ(π_2#) | 6 ≤ N(γ) ≤ 28} ∪
-{γ(π_3#) | 1 ≤ N(γ) ≤ 3}`,
-`Q_{-3,3} = {α | 1 < N(α) ≤ 81} ∪ {γπ_1 | 28 ≤ N(γ) ≤ 85} ∪ {γ(π_2#) | 22 ≤ N(γ) ≤ 200} ∪
-{γ(π_3#) | 5 ≤ N(γ) ≤ 48} ∪ {π_4#}`, and the elements of largest norm are `2(π_2#) = 4(1+ζ)`,
-`(2-ζ)(π_3#) = 42` and `π_4# = 182(1+ζ)`, unique up to units. The record prints the second as
-`(2-ζ)(π_4#) = 42`; `(2-ζ)(π_4#)` has norm `298116`, while `(2-ζ)(π_3#) = 42` (norm `1764`), the
-element of largest norm in the `γ(π_3#)` part.
+**The first three Schatunowsky sets of the Eisenstein integers.** Let $K$ be a number
+field of discriminant $-3$ (so $K \cong \mathbb{Q}(\sqrt{-3})$). For $\alpha \in \mathcal{O}_K$ let
+$N(\alpha)$ be the absolute norm of the ideal $(\alpha)$, and let $Q_\ell$ be the set of
+$\alpha \in \mathcal{O}_K$ with $N(\alpha) > 1$ such that every $\beta \in \mathcal{O}_K$ coprime
+to $\alpha$ with $1 < N(\beta) < N(\alpha)$ has at most $\ell$ prime ideal factors, counted with
+multiplicity. Below, $\gamma$ ranges over $\mathcal{O}_K$ and $\pi$ over the elements of norm $3$.
+Then $Q_1$ consists of the $\alpha$ with $1 < N(\alpha) \le 9$, the products $\gamma\pi$ with
+$4 \le N(\gamma) \le 5$, and the products $2\gamma\pi$ with $2 \le N(\gamma) \le 4$. The set
+$Q_2$ consists of the $\alpha$ with $1 < N(\alpha) \le 27$, the $\gamma\pi$ with
+$10 \le N(\gamma) \le 21$, the $2\gamma\pi$ with $6 \le N(\gamma) \le 28$, and the $14\gamma\pi$
+with $1 \le N(\gamma) \le 3$. The set $Q_3$ consists of the $\alpha$ with
+$1 < N(\alpha) \le 81$, the $\gamma\pi$ with $28 \le N(\gamma) \le 85$, the $2\gamma\pi$ with
+$22 \le N(\gamma) \le 200$, the $14\gamma\pi$ with $5 \le N(\gamma) \le 48$, and the associates
+of $182\pi$. Moreover, the elements of largest norm are unique up to units: there is a $\pi$ of
+norm $3$ with $4\pi \in Q_1$ such that every $\alpha \in Q_1$ has $N(\alpha) \le N(4\pi)$, with
+$\alpha$ an associate of $4\pi$ in case of equality; $42 \in Q_2$, and every $\alpha \in Q_2$ has
+$N(\alpha) \le N(42)$, with $\alpha$ an associate of $42$ in case of equality; and there is a
+$\pi$ of norm $3$ with $182\pi \in Q_3$ such that every $\alpha \in Q_3$ has
+$N(\alpha) \le N(182\pi)$, with $\alpha$ an associate of $182\pi$ in case of equality.
 
 ## Depends on
 
-- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
+- [Schatunowsky set of a number field](quad-schatunowsky-set.md)
 
 ## Sources
 

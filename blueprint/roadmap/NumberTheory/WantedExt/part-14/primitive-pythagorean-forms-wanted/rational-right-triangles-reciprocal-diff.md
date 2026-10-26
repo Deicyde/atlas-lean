@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitivePythagoreanFormsWanted.rational_right_triangles_reciprocal_differences_infinite
 ---
 
-# Rational right triangles reciprocal differences infinite
+# Infinitely many rational right triangles with sides differences of unit fractions
 
-The reciprocal-difference part of Li and Zhang's Theorem 3:
-infinitely many positive rational right-triangle side triples have each
-side equal to a difference of reciprocals of two positive integers.
+**Infinitely many rational right triangles with sides differences of unit fractions.** There
+are infinitely many triples $(X, Y, Z)$ of positive rational numbers with $X^2 + Y^2 = Z^2$ such
+that each of $X$, $Y$ and $Z$ has the form $1/u - 1/v$ for some positive integers $u$ and $v$.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.pow_add_one_eq_sq
 ---
 
-# Lemma 1
+# Solutions of $n^x + 1 = z^2$ for $n \ne 2$
 
-**Lemma 1**, case `n ≠ 2`: with `y = 0`,
-`(x, 0, z)` solves Equation (1) if and only if
-`x = 1` and `z^2 = n + 1`.
+**Solutions of $n^x + 1 = z^2$ for $n \ne 2$.** Let $n \ge 1$ be a natural number with
+$n \ne 2$. For natural numbers $x$ and $z$, $n^x + 1 = z^2$ holds if and only if $x = 1$ and
+$z^2 = n + 1$.
 
 ## Depends on
 

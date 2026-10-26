@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_recurrence
 ---
 
-# Proposition 7
+# Recurrence for the sequence $A_p$
 
-**Proposition 7**(i): for `p ≥ 2` and `n ≥ 1`,
-`A_p(n) = A_p(n-1) + A_p(n-p-1) + 1` if `n ≡ 1 (mod p)`,
-else `A_p(n-1) + A_p(n-p-1)` (fails at `p = 1`).
+**Recurrence for the sequence $A_p$.** For natural numbers $p \ge 2$ and $n \ge 1$, the
+auxiliary sequence $A_p$ satisfies $A_p(n) = A_p(n-1) + A_p(n-p-1) + 1$ if
+$n \equiv 1 \pmod p$, and $A_p(n) = A_p(n-1) + A_p(n-p-1)$ otherwise.
 
 ## Depends on
 
-- [Seq AZ](seq-az.md)
+- [The sequence $A_p$](seq-az.md)
 
 ## Sources
 

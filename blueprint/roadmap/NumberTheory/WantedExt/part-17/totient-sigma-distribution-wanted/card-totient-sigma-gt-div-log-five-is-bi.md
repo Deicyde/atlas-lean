@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_totient_sigma_gt_div_log_five_isBigO
 ---
 
-# Card totient sigma gt div log five is Big O
+# Exceptions to $\varphi(\sigma(n)) \le n / \log_5 n$
 
-Except for `O(x log₅ x / log₄ x)` positive integers `n ≤ x`, `φ(σ(n)) ≤ n / log₅ n`.
-The finitely many small `n` for which `log₅ n` is not a positive real are absorbed by the
-`O`-term.
+**Exceptions to $\varphi(\sigma(n)) \le n / \log_5 n$.** Write $\log_k$ for the $k$-fold
+iterated natural logarithm, and let $\varphi$ be Euler's totient function and $\sigma$ the sum of
+divisors. The number of integers $n$ with $1 \le n \le x$ and $\varphi(\sigma(n)) > n / \log_5 n$
+is $O(x \log_5 x / \log_4 x)$ as $x \to \infty$.
+
+The finitely many small $n$ for which $\log_5 n$ is not a positive real are absorbed by the
+$O$-term.
 
 ## Depends on
 

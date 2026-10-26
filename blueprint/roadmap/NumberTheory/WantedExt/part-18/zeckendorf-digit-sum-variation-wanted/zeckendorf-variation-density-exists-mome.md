@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorf_variation_density_exists_moments
 ---
 
-# Zeckendorf variation density exists moments
+# Zeckendorf variation densities exist, with finite moments and mean zero
 
-For every `r ∈ ℕ` the densities `μ^{(r)}(d)` exist for all `d ∈ ℤ`, and the resulting law of
-`Δ^{(r)}` has finite moments of every order and mean zero.
+**Zeckendorf variation densities exist, with finite moments and mean zero.** For
+$n \in \mathbb{N}$ let $s(n)$ be the number of terms in the Zeckendorf representation of $n$. For
+every $r \in \mathbb{N}$ there is a function $\mu : \mathbb{Z} \to \mathbb{R}$ such that for every
+$d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + r) - s(n) = d\}$ has natural density
+$\mu(d)$, the series $\sum_{d \in \mathbb{Z}} |d|^k \mu(d)$ converges absolutely for every
+$k \in \mathbb{N}$, and $\sum_{d \in \mathbb{Z}} d \, \mu(d) = 0$.
 
 ## Depends on
 

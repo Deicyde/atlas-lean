@@ -5,16 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.shiftedFloorResidueCount_asymptotic_integral
 ---
 
-# Shifted Floor Residue Count asymptotic integral
+# Integral asymptotics for the shifted floor residue counts
 
-Theorem 37: for `m ≥ 1` and `α, ν ∈ [0, 1)`, uniformly over `n` with
-`nα ≥ ν`, `𝓝_{n,α,ν,1,m} = -αn/(1-α) + n ∫_0^1 (1-x) x^{-α}/(1-x^m) dx +
-O(√n)` and, for `2 ≤ r ≤ m`,
-`𝓝_{n,α,ν,r,m} = n ∫_0^1 (1-x) x^{r-1-α}/(1-x^m) dx + O(√n)`.
+**Integral asymptotics for the shifted floor residue counts.** Let $m \ge 1$ be a natural
+number and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$ and $0 \le \nu < 1$.
+For natural numbers $n$ and $r$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be the number of integers $k$
+with $1 \le k \le n$ such that $\lfloor (n - \nu)/k + \alpha \rfloor \equiv r \pmod m$, and put
+
+$$I_r = \int_0^1 \frac{(1 - x)\, x^{r - 1 - \alpha}}{1 - x^m} \, dx.$$
+
+Then there is a constant $C$ such that
+
+$$\Bigl| \mathcal N_{n,\alpha,\nu,1,m} - \Bigl( -\frac{\alpha n}{1 - \alpha} + n I_1 \Bigr) \Bigr|
+\le C \sqrt n$$
+
+for every natural number $n \ge 1$ with $\nu \le n\alpha$, and for every natural number $r$ with
+$2 \le r \le m$ there is a constant $C_r$ such that
+$\bigl| \mathcal N_{n,\alpha,\nu,r,m} - n I_r \bigr| \le C_r \sqrt n$ for every natural number
+$n \ge 1$ with $\nu \le n\alpha$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.volume_wellApproximableSet_khintchine
 ---
 
-# Volume well Approximable Set khintchine
+# Khintchine's theorem
 
-Khintchine's theorem: for non-increasing `ψ` with values in `[0, 1/2]`, the Lebesgue
-measure of `W(ψ)` is `0` if `∑ ψ(q)` converges and `1` if it diverges. Here `ψ` is
-defined on all of `ℕ` and also assumed non-increasing at `0` (extend by `ψ 0 = ψ 1`).
+**Khintchine's theorem.** Let $\psi : \mathbb{N} \to \mathbb{R}$ be non-increasing on all of
+$\mathbb{N}$ (including $\psi(0) \ge \psi(1)$) with $0 \le \psi(q) \le 1/2$ for every $q$. If the
+series $\sum_q \psi(q)$ converges, then the set $W(\psi)$ of $\psi$-well approximable numbers has
+Lebesgue measure $0$; if the series diverges, then $W(\psi)$ has Lebesgue measure $1$.
+
+The value $\psi(0)$ affects neither $W(\psi)$ nor the convergence of the series, so the
+condition at $0$ costs nothing: extend by $\psi(0) = \psi(1)$.
 
 ## Depends on
 
-- [Well Approximable Set](well-approximable-set.md)
+- [Well approximable numbers](well-approximable-set.md)
 
 ## Sources
 

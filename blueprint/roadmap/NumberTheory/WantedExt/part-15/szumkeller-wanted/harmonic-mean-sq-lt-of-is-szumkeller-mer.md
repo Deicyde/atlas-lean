@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.harmonicMeanSq_lt_of_isSZumkeller_mersenne
 ---
 
-# Harmonic Mean Sq lt of is SZumkeller mersenne
+# Harmonic mean of squared divisors of s-Zumkeller numbers $2^\alpha(2^{\alpha+1}-1)$
 
-If `n = 2^α (2^{α+1} - 1)` with `α ≥ 1` is s-Zumkeller, then
-`H₂(n) < 2^{2α+3}/3`.
+**Harmonic mean of squared divisors of s-Zumkeller numbers $2^\alpha(2^{\alpha+1}-1)$.** Let
+$\alpha \ge 1$ be an integer, let $n = 2^\alpha (2^{\alpha+1} - 1)$ and let $\tau(n)$ be the
+number of positive divisors of $n$. If $n$ is s-Zumkeller, then
+$\tau(n) / \sum_{d \mid n} d^{-2} < 2^{2\alpha+3}/3$, where the sum runs over the positive
+divisors $d$ of $n$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

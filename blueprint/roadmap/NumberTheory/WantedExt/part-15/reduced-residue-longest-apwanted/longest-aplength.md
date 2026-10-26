@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.longestAPLength
 ---
 
-# Longest APLength
+# Length of the longest arithmetic progression in a reduced residue system
 
-`f_m(n)`: the length of the longest arithmetic progressions (positive common difference;
-a single term counts as a progression of length `1`) contained in `R_m(n)`.
+**Length of the longest arithmetic progression in a reduced residue system.** For an
+integer $m$ and a natural number $n$, let $R_m(n)$ be the reduced residue system of the
+integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$. Then $f_m(n)$ is the largest
+natural number $s$ for which there are an integer $b$ and a positive integer $d$ such that
+$b, b + d, \dots, b + (s - 1)d$ all lie in $R_m(n)$. So it is the length of the longest
+arithmetic progression with positive common difference contained in $R_m(n)$, where a single
+term counts as a progression of length $1$, and $f_m(n) = 0$ when $R_m(n)$ is empty.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reduced Residue Window](reduced-residue-window.md)
+- [The reduced residue system $R_m(n)$](reduced-residue-window.md)
 
 ## Sources
 

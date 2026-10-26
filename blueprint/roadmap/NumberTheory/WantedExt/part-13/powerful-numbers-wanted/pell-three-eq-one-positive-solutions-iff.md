@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowerfulNumbersWanted.pell_three_eq_one_positive_solutions_iff_and_recurrence
 ---
 
-# Lemma 5
+# Positive solutions of $x^2 - 3y^2 = 1$
 
-**Lemma 5**: the positive integer solutions of
-`x^2 - 3*y^2 = 1` are exactly the coordinates of
-`(2 + √3)^k` for `k ≥ 1`.  The coordinates begin
-`(x₁, y₁) = (2, 1)` and `(x₂, y₂) = (7, 4)` and satisfy the
-second-order recursion `uₖ₊₂ = 4*uₖ₊₁ - uₖ`.
+**Positive solutions of $x^2 - 3y^2 = 1$.** For integers $x$ and $y$, we have $x > 0$,
+$y > 0$ and $x^2 - 3y^2 = 1$ if and only if $x + y\sqrt{3} = (2 + \sqrt{3})^k$ in
+$\mathbb{Z}[\sqrt{3}]$ for some natural number $k \ge 1$. Writing
+$(2 + \sqrt{3})^k = u_k + v_k \sqrt{3}$ for $k \ge 0$, we have $(u_1, v_1) = (2, 1)$,
+$(u_2, v_2) = (7, 4)$, and $u_{k+2} = 4u_{k+1} - u_k$ and $v_{k+2} = 4v_{k+1} - v_k$ for
+every $k \ge 0$.
 
 ## Depends on
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.booleanVectorComplement_complement
 ---
 
-# Boolean Vector Complement complement
+# Complementation of Boolean vectors is an involution
 
-Complementing a Boolean vector twice returns the original vector.
+**Complementation of Boolean vectors is an involution.** For every $n$ and every Boolean
+vector $x \in \{0,1\}^n$, writing $\bar x$ for the coordinatewise complement of $x$, we have
+$\bar{\bar x} = x$.
 
 ## Depends on
 
-- [Boolean Vector Complement](boolean-vector-complement.md)
+- [Complement of a Boolean vector](boolean-vector-complement.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.modularProductSum_two_explicit_estimate
 ---
 
-# Modular Product Sum two explicit estimate
+# Explicit estimate for the modular product sum $S_2(n, m)$
 
-Theorem 3: for `n ≥ 2` and `m` coprime to `n`,
-`|S_2(n, m) - n² φ(n) / 4| ≤ n² σ_{1/2}(n) (τ(n) log(e n))² + n φ(n) / 4`, where
-`σ_{1/2}(n) = ∑_{d ∣ n} √d` and `τ(n)` is the number of divisors.
+**Explicit estimate for the modular product sum $S_2(n, m)$.** Let $\varphi$ be Euler's
+totient function, $\tau(n)$ the number of divisors of $n$,
+$\sigma_{1/2}(n) = \sum_{d \mid n} \sqrt{d}$ and $S_2(n, m)$ the modular product sum. For all
+natural numbers $n \ge 2$ and $m$ with $\gcd(m, n) = 1$,
+
+$$\left| S_2(n, m) - \frac{n^2 \varphi(n)}{4} \right| \le
+n^2 \sigma_{1/2}(n) \bigl(\tau(n) \log(en)\bigr)^2 + \frac{n \varphi(n)}{4}.$$
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

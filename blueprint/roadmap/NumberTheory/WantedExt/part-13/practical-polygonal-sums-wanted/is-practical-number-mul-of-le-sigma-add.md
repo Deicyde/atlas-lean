@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.isPracticalNumber_mul_of_le_sigma_add_one
 ---
 
-# Is Practical Number mul of le sigma add one
+# Products of a practical number with small factors
 
-If `m` is practical and `1 ≤ n ≤ σ(m) + 1`, then `m n` is practical.
+**Products of a practical number with small factors.** Let $m$ be a practical number and let
+$\sigma(m)$ denote the sum of the positive divisors of $m$. Then for every natural number $n$
+with $1 \le n \le \sigma(m) + 1$, the product $mn$ is a practical number.
 
 ## Depends on
 

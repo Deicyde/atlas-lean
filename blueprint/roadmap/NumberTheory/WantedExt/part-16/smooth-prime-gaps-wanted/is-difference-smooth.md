@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDifferenceSmooth
 ---
 
-# Is Difference Smooth
+# Difference-smooth sets of integers
 
-A tuple `H` is difference `y`-smooth if `h_i - h_j` is `y`-smooth for all
-distinct `h_i, h_j ∈ H`.
+**Difference-smooth sets of integers.** Let $y$ be a natural number. A finite set $H$ of
+integers is difference $y$-smooth if for all distinct $h, h' \in H$ every prime factor of
+$h - h'$ is at most $y$.
 
 ## Depends on
 

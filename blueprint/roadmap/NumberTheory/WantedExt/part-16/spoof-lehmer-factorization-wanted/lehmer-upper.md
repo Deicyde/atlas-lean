@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lehmerUpper
 ---
 
-# Lehmer Upper
+# Upper Lehmer bound $U(t; r)$
 
-`U(t_1, …, t_s; r)`: the supremum of `κ_r(t_1, …, t_s, u_{s+1}, …, u_r)` over admissible
-completions.
+**Upper Lehmer bound $U(t; r)$.** For real numbers $y_1, \dots, y_r$ let
+$\kappa_r(y_1, \dots, y_r) = (y_1 \cdots y_r - 1) / ((y_1 - 1) \cdots (y_r - 1))$, where division
+by $0$ gives $0$. For a list $t = (t_1, \dots, t_s)$ of real numbers and a natural number $r$, an
+admissible completion of $t$ is a list $u = (u_{s+1}, \dots, u_r)$ of $r - s$ real numbers (there
+is none if $s > r$) such that $t_1, \dots, t_s, u_{s+1}, \dots, u_r$ is nondecreasing and
+$u_j \ge 2$ for every $j$. Then $U(t; r)$ is the supremum in $\mathbb{R}$ of
+$\kappa_r(t_1, \dots, t_s, u_{s+1}, \dots, u_r)$ over all admissible completions $u$ of $t$; by
+convention it is $0$ when $t$ has no admissible completion or these values are not bounded above.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lehmer Completions](lehmer-completions.md)
-- [Lehmer Kappa](lehmer-kappa.md)
+- [Admissible completions for the Lehmer bounds](lehmer-completions.md)
+- [The Lehmer function $\kappa_r$](lehmer-kappa.md)
 
 ## Sources
 

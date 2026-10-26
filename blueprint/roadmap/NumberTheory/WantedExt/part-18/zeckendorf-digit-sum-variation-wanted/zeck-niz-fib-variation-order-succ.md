@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.zeckNIZ_fib_variation_order_succ
 ---
 
-# Zeck NIZ fib variation order succ
+# Values of the variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+1}$
 
-For `r = F_ℓ`, `ℓ ≥ 3`: among the levels (cylinders of order `ℓ + 1`, represented by
-`v < F_{ℓ+3}`) in `NIZ_{ℓ+1}`, exactly `F_{ℓ-1}` carry `Δ^{(F_ℓ)} = 0` and exactly `F_{ℓ-2}`
-carry `Δ^{(F_ℓ)} = 1`.
+**Values of the variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+1}$.** Let $\ell \ge 3$, let
+$F_1 = F_2 = 1, F_3 = 2, \dots$ be the Fibonacci numbers, and let $\Delta^{(F_\ell)}$ be the
+variation of the Zeckendorf sum of digits under adding $F_\ell$ on the Zeckendorf-adic integers.
+For $v \in \mathbb{N}$ write $i(v)$ for the Zeckendorf-adic integer whose digits are the
+Zeckendorf digits of $v$. Among the $v < F_{\ell+3}$ with $i(v)$ in the new-information zone
+$\mathrm{NIZ}_{\ell+1}$ of order $\ell + 1$ for $r = F_\ell$, exactly $F_{\ell-1}$ satisfy
+$\Delta^{(F_\ell)}(i(v)) = 0$ and exactly $F_{\ell-2}$ satisfy $\Delta^{(F_\ell)}(i(v)) = 1$.
+
+Each such $v$ stands for the level (cylinder of order $\ell + 1$) whose name is its digits.
 
 ## Depends on
 
-- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck NIZ](zeck-niz.md)
+- [Zeckendorf digit sequence of a natural number](zeck-adic-of-nat.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [New-information zone](zeck-niz.md)
 
 ## Sources
 

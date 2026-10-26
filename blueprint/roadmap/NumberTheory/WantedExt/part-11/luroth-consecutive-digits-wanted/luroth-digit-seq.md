@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lurothDigitSeq
 ---
 
-# Luroth Digit Seq
+# Lüroth digits
 
-The Lüroth digits of `x`, indexed from `0`: `lurothDigitSeq x k = d₁(L^k(x))`, the
-paper's `d_{k+1}(x)`.
+**Lüroth digits.** For a real number $x$ and $n \ge 1$, the $n$-th Lüroth digit of $x$ is
+$d_n(x) = d_1(L^{n-1}(x))$, where $d_1$ is the first Lüroth digit, $L$ is the Lüroth map and
+$L^{n-1}$ is its $(n-1)$-fold iterate ($L^0$ is the identity).
+
+The digit sequence is indexed from $0$: its term of index $k$ is $d_1(L^k(x)) = d_{k+1}(x)$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
-- [Luroth Map](luroth-map.md)
+- [First Lüroth digit](luroth-digit.md)
+- [Lüroth map](luroth-map.md)
 
 ## Sources
 

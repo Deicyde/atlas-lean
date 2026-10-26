@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothWeightedProduct_ge_zero_one
 ---
 
-# Volume luroth Weighted Product ge zero one
+# Zero-one law for weighted products of consecutive Lüroth digits
 
-Weighted products of consecutive Lüroth digits: for `m ≥ 1`, weights `t_i > 0`,
-`T = max t_i`, `ℓ(t) = #{j : t_j = T}` and positive `Ψ` with `liminf Ψ(n) > 1` (written as
-`Ψ(n) ≥ c` eventually for some `c > 1`), the set of `x ∈ (0, 1]` with
-`∏ d_{n+i}(x)^{t_i} ≥ Ψ(n)` for infinitely many `n` has Lebesgue measure `0` if
-`∑ (log Ψ(n))^{ℓ(t)-1} / Ψ(n)^{1/T} < ∞` and `1` if that series diverges (convergence as
-`Summable`). Quoted in the paper from Brown-Sarre, Robert and Hussain (its reference [2]).
+**Zero-one law for weighted products of consecutive Lüroth digits.** Let $m \ge 1$, let
+$t_0, \dots, t_{m-1}$ be positive reals, let $T = \max_i t_i$ and let $\ell$ be the number of
+indices $j$ with $t_j = T$. Let $(\Psi(n))_{n \ge 0}$ be a sequence of positive reals for which
+there is $c > 1$ with $\Psi(n) \ge c$ for all sufficiently large $n$ (equivalently,
+$\liminf_n \Psi(n) > 1$). Write $d_k(x)$ for the $k$-th Lüroth digit of $x$ and let $E$ be the
+set of $x \in (0, 1]$ such that $\prod_{i=0}^{m-1} d_{n+i+1}(x)^{t_i} \ge \Psi(n)$ for
+infinitely many $n$. If the series $\sum_{n \ge 0} (\log \Psi(n))^{\ell - 1} / \Psi(n)^{1/T}$
+converges then $E$ has Lebesgue measure $0$, and if it diverges then $E$ has Lebesgue
+measure $1$.
+
+The paper quotes this result from Brown-Sarre, Robert and Hussain (its reference [2]).
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

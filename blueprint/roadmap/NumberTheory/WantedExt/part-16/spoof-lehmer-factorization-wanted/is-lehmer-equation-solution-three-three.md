@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.isLehmerEquationSolution_three_three
 ---
 
-# Is Lehmer Equation Solution three three
+# The multiset $\{3, 3\}$ solves the Lehmer equation
 
-Characteristic example: `x = (3, 3)` solves Equation (1) with `k = 2`.
+**The multiset $\{3, 3\}$ solves the Lehmer equation.** Every element of the multiset
+$\{3, 3\}$ is at least $2$, and there is a positive integer $k$ with
+$k \cdot (3 - 1)(3 - 1) = 3 \cdot 3 - 1$ (namely $k = 2$). So $\{3, 3\}$ solves Equation (1), the
+equation $k \prod_j (x_j - 1) = \prod_j x_j - 1$ in the elements $x_j$ of a multiset, counted
+with multiplicity.
 
 ## Depends on
 
-- [Is Lehmer Equation Solution](is-lehmer-equation-solution.md)
+- [Solutions of the Lehmer equation](is-lehmer-equation-solution.md)
 
 ## Sources
 

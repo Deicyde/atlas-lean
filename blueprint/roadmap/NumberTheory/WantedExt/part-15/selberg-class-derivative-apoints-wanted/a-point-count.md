@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.aPointCount
 ---
 
-# A Point Count
+# Counting function of a-points of derivatives
 
-The number `N_k(a; T, F)` of a-points of `F^(k)`, counted with multiplicity, in the
-rectangle `E₂ < Re s < E₁`, `0 < Im s < T`.
+**Counting function of a-points of derivatives.** Let $F$ be a function in the Selberg class,
+$k \in \mathbb{N}$, $a \in \mathbb{C}$ and $E_2, E_1, T \in \mathbb{R}$. Then $N_k(a; T, F)$ is the
+number of points $\rho$ with $F^{(k)}(\rho) = a$, where $F^{(k)}$ is the $k$-th derivative of $F$,
+in the rectangle $E_2 < \operatorname{Re} \rho < E_1$, $0 < \operatorname{Im} \rho < T$, each
+counted with its multiplicity as a zero of $F^{(k)} - a$.
+
+A point near which $F^{(k)} - a$ vanishes identically is given multiplicity $0$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

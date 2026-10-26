@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_two_pow_mul_six_pow_eq
 ---
 
-# Proposition 5
+# The 2-complexity of $2^m \cdot 6^r$ for $1 \le r \le 7$
 
-**Proposition 5** (= **Theorem 2**(1)), equality range:
-`‖2^m * 6^r‖₂ = m + 3r` for `1 ≤ r ≤ 7` and all `m ≥ 0`.
+**The 2-complexity of $2^m \cdot 6^r$ for $1 \le r \le 7$.** Write $\|n\|_2$ for the
+$2$-complexity of $n$. For all natural numbers $m$ and $r$ with $1 \le r \le 7$, one has
+$\|2^m \cdot 6^r\|_2 = m + 3r$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

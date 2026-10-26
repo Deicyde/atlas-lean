@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.szWord
 ---
 
-# Sz Word
+# Word of an index
 
-The word `p^{k₁} y ⋯ p^{kᵣ} y` of an index `(k₁, …, kᵣ)` (`p = true`, `y = false`).
+**Word of an index.** The word of an index $(k_1, \dots, k_r)$ of natural numbers is the word
+$p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.pow_add_pow_ne_sq
 ---
 
-# Theorem 1
+# Sums of two coprime positive $n$-th powers are not squares for $n \ge 4$
 
-**Theorem 1**: the equation `x^n + y^n = z^2` has
-no nontrivial primitive solutions for `n ≥ 4`.
+**Sums of two coprime positive $n$-th powers are not squares for $n \ge 4$.** Let $n \ge 4$
+be a natural number and let $x$ and $y$ be coprime positive integers. Then $x^n + y^n$ is not a
+perfect square: there is no natural number $z$ with $x^n + y^n = z^2$.
 
 ## Depends on
 

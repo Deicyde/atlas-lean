@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.qPochhammer_two_dissection_square
 ---
 
-# Q Pochhammer two dissection square
+# 2-dissection of the square of Euler's product
 
-For every complex `q` of norm less than one, this is the first 2-dissection:
-`f₁² = f₂ f₈⁵/(f₄² f₁₆²) - 2q f₂ f₁₆²/f₈`. Every `f_k` is expanded as
-`qPochhammerInfRaw (q ^ k) (q ^ k)`; this expansion is the only notational deviation.
+**2-dissection of the square of Euler's product.** Let $q$ be a complex number with $|q| < 1$,
+and for $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the
+raw infinite q-Pochhammer product. Then
+
+$$f_1^2 = \frac{f_2 f_8^5}{f_4^2 f_{16}^2} - 2q \frac{f_2 f_{16}^2}{f_8}.$$
 
 ## Depends on
 

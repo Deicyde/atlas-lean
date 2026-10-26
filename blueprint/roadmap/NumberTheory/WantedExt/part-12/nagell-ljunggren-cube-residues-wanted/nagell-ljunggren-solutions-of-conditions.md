@@ -5,14 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.nagell_ljunggren_solutions_of_conditions
 ---
 
-# Nagell ljunggren solutions of conditions
+# Ljunggren's theorem on the Nagell–Ljunggren equation
 
-Theorem 1 (Ljunggren, quoted from the literature): consider `(xⁿ - 1)/(x - 1) = y^q` in
-integers `|x| > 1` (as `1 < x.natAbs`), `y > 1`, `n > 2`, `q ≥ 2` (Equation (1)). Apart from
-`(3⁵ - 1)/(3 - 1) = 11²`, `(7⁴ - 1)/(7 - 1) = 20²`, `(18³ - 1)/(18 - 1) = 7³` and
-`((-19)³ - 1)/(-19 - 1) = 7³`, it has no solution `(x, y, n, q)` if `q = 2`, or `3 ∣ n`, or
-`4 ∣ n`, or `q = 3` and `n ≢ 5 (mod 6)`. The equation is written as `xⁿ - 1 = (x - 1) y^q`
-(equivalent since `x ≠ 1`).
+**Ljunggren's theorem on the Nagell–Ljunggren equation.** Let $x$ and $y$ be integers and
+$n$ and $q$ natural numbers with $|x| > 1$, $y > 1$, $n > 2$ and $q \ge 2$, and suppose that
+$x^n - 1 = (x - 1) y^q$, that is, $(x^n - 1)/(x - 1) = y^q$ (as $x \ne 1$). If $q = 2$, or
+$3 \mid n$, or $4 \mid n$, or $q = 3$ and $n \not\equiv 5 \pmod 6$, then $(x, y, n, q)$ is one
+of $(3, 11, 5, 2)$, $(7, 20, 4, 2)$, $(18, 7, 3, 3)$ and $(-19, 7, 3, 3)$.
 
 ## Depends on
 

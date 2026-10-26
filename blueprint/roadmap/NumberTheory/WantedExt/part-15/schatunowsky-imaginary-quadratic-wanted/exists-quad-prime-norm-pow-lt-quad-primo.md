@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_quadPrimeNorm_pow_lt_quadPrimorialNorm
 ---
 
-# Exists quad Prime Norm pow lt quad Primorial Norm
+# Prime norm powers eventually fall below the quadratic primorial
 
-Proposition 4: for every `ℓ ≥ 0` there is `n(ℓ)` with `N(π_{n+1})^{ℓ+1} < N(π_n#)` for all
-`n ≥ n(ℓ)`. Stated for every imaginary quadratic field (no class-number-one assumption is needed
-at the level of norms).
+**Prime norm powers eventually fall below the quadratic primorial.** Let $K$ be an imaginary
+quadratic field. Put $N(\pi_0) = 1$ and, for $n \ge 1$, let $N(\pi_n)$ be the $n$-th smallest
+number that is the norm of a nonzero prime ideal of $\mathcal{O}_K$; let $N(\pi_n\#)$ be the
+product of the norms of the nonzero prime ideals of $\mathcal{O}_K$ of norm at most $N(\pi_n)$.
+For every natural number $\ell$ there is $n_0$ such that $N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$
+for all $n \ge n_0$.
 
 ## Depends on
 
-- [Quad Prime Norm](quad-prime-norm.md)
-- [Quad Primorial Norm](quad-primorial-norm.md)
+- [Norm of the $n$-th prime](quad-prime-norm.md)
+- [Norm of the $n$-th primorial](quad-primorial-norm.md)
 
 ## Sources
 

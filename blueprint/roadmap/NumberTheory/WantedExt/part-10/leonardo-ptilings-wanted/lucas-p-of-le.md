@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasP_of_le
 ---
 
-# Lucas P of le
+# Lucas $p$-numbers at indices $1$ to $p$
 
-`L_{p,n} = 1` for `1 ≤ n ≤ p`.
+**Lucas $p$-numbers at indices $1$ to $p$.** For every natural number $p$ and every $n$ with
+$1 \le n \le p$, the Lucas $p$-number $L_{p,n}$ equals $1$.
 
 ## Depends on
 
-- [Lucas P](lucas-p.md)
+- [Lucas $p$-numbers](lucas-p.md)
 
 ## Proof depends on
 
-- [Lucas Type Seq](lucas-type-seq.md)
-- [Lucas Type Seq get D succ](lucas-type-seq-get-d-succ.md)
+- [Lucas-type recurrence lists](lucas-type-seq.md)
+- [Last entry of a Lucas-type list](lucas-type-seq-get-d-succ.md)
 
 ## Sources
 

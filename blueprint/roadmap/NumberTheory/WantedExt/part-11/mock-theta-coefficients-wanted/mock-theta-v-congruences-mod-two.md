@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaV_congruences_mod_two
 ---
 
-# Mock Theta V congruences mod two
+# Infinite family of congruences modulo 2 for $v(q)$
 
-Theorem 2 (ii): for a prime `p ≥ 3` with `(-2/p) = -1`, every `α ≥ 0` and
-`1 ≤ j ≤ p - 1`,
-`∑_n P_v(2 p^{2α} n + (3 p^{2α} + 1)/4) q^n ≡ ψ(q) ψ(q^2) (mod 2)` and
-`P_v(2 p^{2α+2} n + 2 p^{2α+1} j + (3 p^{2α+2} + 1)/4) ≡ 0 (mod 2)`. The product
-`ψ(q)ψ(q^2) = f_2 f_4^2 / f_1` (Equation (10)) is used with `f_1` cleared; the division by
-`4` is exact since `p^2 ≡ 1 (mod 8)`.
+**Infinite family of congruences modulo 2 for $v(q)$.** Let $P_v(n)$ be the coefficient of
+$q^n$ in the eighth-order mock theta function $v(q)$, and for $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 3$ be a prime whose Legendre symbol
+$\left(\frac{-2}{p}\right)$ equals $-1$, and let $\alpha \ge 0$ be an integer. Then the integer
+power series $f_1 \sum_{n \ge 0} P_v\bigl(2 p^{2\alpha} n + (3 p^{2\alpha} + 1)/4\bigr) q^n$ and
+$f_2 f_4^2$ have congruent coefficients modulo $2$. Moreover, for every $n \ge 0$ and every $j$
+with $1 \le j \le p - 1$,
+$P_v\bigl(2 p^{2\alpha+2} n + 2 p^{2\alpha+1} j + (3 p^{2\alpha+2} + 1)/4\bigr) \equiv 0 \pmod 2$.
+
+The divisions by $4$ are exact since $p^2 \equiv 1 \pmod 8$. Since $f_1$ has an inverse with
+integer coefficients, the first congruence says that
+$\sum_{n \ge 0} P_v(2 p^{2\alpha} n + (3 p^{2\alpha} + 1)/4) q^n \equiv \psi(q) \psi(q^2) \pmod 2$,
+where $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, so that $\psi(q) \psi(q^2) = f_2 f_4^2 / f_1$.
 
 ## Depends on
 
-- [Mock Theta V](mock-theta-v.md)
+- [The eighth-order mock theta function $v(q)$](mock-theta-v.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

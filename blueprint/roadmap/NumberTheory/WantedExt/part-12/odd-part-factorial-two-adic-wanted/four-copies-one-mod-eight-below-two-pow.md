@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fourCopiesOneModEightBelowTwoPow
 ---
 
-# Four Copies One Mod Eight Below Two Pow
+# Four copies of the residues $1 \bmod 8$ below $2^e$
 
-`fourCopiesOneModEightBelowTwoPow e` is the multiset containing four copies of every
-member of `{1,9,...,2^e-7}`.  Multiset scalar multiplication is the formal
-counterpart of the paper's phrase “four copies”.
+**Four copies of the residues $1 \bmod 8$ below $2^e$.** For a natural number $e$, this is the
+multiset of integers containing exactly four copies of each natural number $n < 2^e$ with
+$n \equiv 1 \pmod 8$, that is, of each of $1, 9, \dots, 2^e - 7$ when $e \ge 3$.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integer Multiset](integer-multiset.md)
-- [One Mod Eight Below Two Pow](one-mod-eight-below-two-pow.md)
+- [Integer multiset of a finite set of naturals](integer-multiset.md)
+- [Numbers below $2^e$ congruent to $1$ modulo $8$](one-mod-eight-below-two-pow.md)
 
 ## Sources
 

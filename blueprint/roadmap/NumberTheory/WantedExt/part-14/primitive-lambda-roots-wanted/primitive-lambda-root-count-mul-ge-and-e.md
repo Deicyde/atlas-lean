@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount_mul_ge_and_eq_iff
 ---
 
-# Theorem 1
+# Supermultiplicativity of the number of primitive λ-roots
 
-**Theorem 1**: for coprime `m n > 1`,
-`R(m*n) ≥ R(m) * R(n)`, with equality exactly when one factor is
-`2` and the other is odd.
+**Supermultiplicativity of the number of primitive λ-roots.** Let $R(n)$ be the number of
+primitive λ-roots modulo $n$. For coprime natural numbers $m, n > 1$, we have
+$R(m)\,R(n) \le R(mn)$, and $R(mn) = R(m)\,R(n)$ if and only if $m = 2$ and $n$ is odd, or
+$n = 2$ and $m$ is odd.
 
 ## Depends on
 
-- [Primitive Lambda Root Count](primitive-lambda-root-count.md)
+- [Number of primitive λ-roots](primitive-lambda-root-count.md)
 
 ## Sources
 

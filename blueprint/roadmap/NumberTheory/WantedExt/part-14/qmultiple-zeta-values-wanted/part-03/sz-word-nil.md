@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.szWord_nil
 ---
 
-# Sz Word nil
+# Word of the empty index
 
-`szWord [] = []`.
+**Word of the empty index.** The word of the empty index is the empty word.
 
 ## Depends on
 
-- [Sz Word](sz-word.md)
+- [Word of an index](sz-word.md)
 
 ## Sources
 

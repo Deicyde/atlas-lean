@@ -5,12 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.rogersDilog_pell_negative_series
 ---
 
-# Rogers Dilog pell negative series
+# Bridgeman's dilogarithm series for a negative Pell solution
 
-Bridgeman's series for a negative Pell solution: with `n`, `u = a + b√n`, `a_k`, `b_k` as in
-the positive case but `a² - n b² = -1`,
-`L(1/u²) = ∑_{k ≥ 1} L(a²/(n b_{2k}²)) + ∑_{k ≥ 1} L(a²/a_{2k+1}²)`, and if `a, b` are integers
-then `b_{2k}/a` and `a_{2k+1}/a` are integers for every `k`.
+**Bridgeman's dilogarithm series for a negative Pell solution.** Write
+$L(x) = \sum_{m \ge 1} x^m/m^2 + \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on
+$[0, 1]$ (with $\log 0 = 0$). Let $n$ be a natural number that is not a perfect square, let
+$a, b$ be positive rationals with $a^2 - n b^2 = -1$, and put $u = a + b\sqrt{n}$. Define rationals
+$a_k, b_k$ by $a_0 = 1$, $b_0 = 0$, $a_{k+1} = a a_k + n b b_k$ and $b_{k+1} = b a_k + a b_k$,
+so that $u^k = a_k + b_k\sqrt{n}$. Then
+
+$$
+L(1/u^2) = \sum_{k \ge 1} L\left(\frac{a^2}{n b_{2k}^2}\right) +
+\sum_{k \ge 1} L\left(\frac{a^2}{a_{2k+1}^2}\right),
+$$
+
+and if $a$ and $b$ are integers, then for every $k \ge 0$ both $b_{2k}/a$ and $a_{2k+1}/a$ are
+integers.
 
 ## Depends on
 

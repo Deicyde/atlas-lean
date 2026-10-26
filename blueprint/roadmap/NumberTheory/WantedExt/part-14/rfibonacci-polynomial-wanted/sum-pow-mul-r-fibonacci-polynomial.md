@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_rFibonacciPolynomial
 ---
 
-# Sum pow mul r Fibonacci Polynomial
+# Geometrically weighted sum of $r$-Fibonacci polynomials
 
-Theorem 4: for `ξ_n = m^{n-1} U^{(r)}_n` (`r ≥ 1`) and
-`P(1) = 1 - m x - m^{r+1} y ≠ 0`,
-`∑_{j=1}^{n} ξ_j = (1 - ξ_{n+1} - m^{r+1} y ∑_{j=1}^{r} ξ_{n-r+j}) / P(1)`.
-Terms with `n - r + j ≤ 0` vanish (`ξ_0 = 0`; the index is the truncated
-`n + j - r`). The paper takes `m` a positive integer; here `m` is any element of
-the field.
+**Geometrically weighted sum of $r$-Fibonacci polynomials.** Let $K$ be a field, let $r \ge 1$
+be a natural number, let $x, y, m \in K$ with $1 - m x - m^{r+1} y \ne 0$, and write $U_j$ for
+the $r$-Fibonacci polynomial $U^{(r)}_j(x, y)$. Then for every natural number $n$,
+
+$$
+\sum_{j=1}^{n} m^{j-1} U_j =
+\frac{1 - m^n U_{n+1} - m^{r+1} y \sum_{j=1}^{r} m^{n-r+j-1} U_{n-r+j}}{1 - m x - m^{r+1} y},
+$$
+
+where the terms of the inner sum with $n - r + j \le 0$ are zero.
+
+The paper takes $m$ a positive integer; here $m$ is any element of $K$.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

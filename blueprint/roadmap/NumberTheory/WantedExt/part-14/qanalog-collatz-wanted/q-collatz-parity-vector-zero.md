@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.qCollatzParityVector_zero
 ---
 
-# Q Collatz Parity Vector zero
+# The parity vector of $0$
 
-`PV_{A,B}(0) = 0`.
+**The parity vector of $0$.** For all $A, B \in \mathbb{F}_2[[q]]$, the parity vector of $0$
+under the $q$-analog $T_{A,B}$ of the $3x+1$ map is $0$, that is, $\mathrm{PV}_{A,B}(0) = 0$.
 
 ## Depends on
 
-- [Q Collatz Parity Vector](q-collatz-parity-vector.md)
+- [The parity vector of the q-analog 3x+1 map](q-collatz-parity-vector.md)
 
 ## Proof depends on
 
-- [Q Collatz](q-collatz.md)
-- [Q Collatz zero](q-collatz-zero.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
+- [Zero is a fixed point of the q-analog 3x+1 map](q-collatz-zero.md)
 
 ## Sources
 

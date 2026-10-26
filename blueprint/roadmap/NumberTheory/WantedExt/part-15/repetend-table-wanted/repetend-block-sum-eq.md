@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.repetend_block_sum_eq
 ---
 
-# Repetend block sum eq
+# Block sums of a repetend
 
-Block sums of a repetend: let `x/N = ∑ a_i B^(-i-1)` be purely periodic with period `e = dk`,
-`A_j = ∑_{i<k} a_(jk+i) B^(k-1-i)`, `S_d(x) = ∑_{j<d} A_j`, `x_j = x B^j mod N` and
-`R_d(x) = ∑_{j<d} x_(jk)`. Then (a) `S_d(x) = R_d(x)(B^k - 1)/N`, and (b) if
-`gcd(B^k - 1, N) = 1` then `S_d(x) ≡ 0 (mod B^k - 1)`.
+**Block sums of a repetend.** Let $B \ge 2$, $N$, $x < N$, $d \ge 1$ and $k \ge 1$ be natural
+numbers, and let $a_i = \lfloor xB^{i+1}/N \rfloor \bmod B$ be the $i$-th base-$B$ digit of $x/N$.
+Suppose $a_{i+dk} = a_i$ for every natural number $i$. Let
+$S = \sum_{j\lt d} \sum_{i\lt k} a_{jk+i} B^{k-1-i}$ be the sum of the first $d$ blocks of $k$ digits,
+each read as a base-$B$ number, and let $R = \sum_{j\lt d} (xB^{jk} \bmod N)$. Then
+$SN = R(B^k - 1)$, and if $B^k - 1$ is coprime to $N$, then $B^k - 1$ divides $S$.
 
 ## Depends on
 

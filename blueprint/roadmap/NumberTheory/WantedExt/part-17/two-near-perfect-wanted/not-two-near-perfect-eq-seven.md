@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_two_near_perfect_eq_seven
 ---
 
-# Not two near perfect eq seven
+# No odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$ for $2 \le b \le k - 1$
 
-Lemma 4: `(2^(k+1) - 1)(p^2 + p + 1) = 2^(k+1) p^2 + 2^b p + 1` has no solution with
-`p` odd and `2 ≤ b ≤ k - 1`.
+**No odd solutions of $(2^{k+1} - 1)(p^2 + p + 1) = 2^{k+1} p^2 + 2^b p + 1$ for
+$2 \le b \le k - 1$.** Let $b$ and $k$ be natural numbers with $2 \le b$ and $b + 1 \le k$, and
+let $p$ be an odd natural number. Then $(2^{k+1} - 1)(p^2 + p + 1) \ne 2^{k+1} p^2 + 2^b p + 1$.
 
 ## Depends on
 

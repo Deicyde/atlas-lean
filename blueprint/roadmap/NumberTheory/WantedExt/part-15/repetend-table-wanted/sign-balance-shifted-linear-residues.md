@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sign_balance_shifted_linear_residues
 ---
 
-# Sign balance shifted linear residues
+# Sign balance for differences of shifted linear residues
 
-For `Q = p^j`, `c_i(z) = ((g_i z + f_i) mod Q) + e_i` with `g_1, g_2, g_2 - g_1` prime to `p`,
-residues `0 ≤ f_1 ≤ f_2 < Q`, `0 ≤ g_i < Q` and reals `0 < e_1 < e_2 < 1`, the sign of
-`d(z) = c_2(z) - c_1(z)` is `+1` and `-1` equally often on (a) `1 ≤ z ≤ Q - 1` and (b)
-`1 ≤ z ≤ Q - 1`, `p ∤ z`, the latter when `f_1 ≡ 0` or `f_1 ≡ f_2 (mod p)`.
+**Sign balance for differences of shifted linear residues.** Let $p$ be prime, $j \ge 1$ and
+$Q = p^j$. Let $g_1, g_2, f_1, f_2$ be natural numbers with $g_1, g_2 < Q$ and $f_1 \le f_2 < Q$
+such that $p$ divides none of $g_1$, $g_2$, $g_2 - g_1$, and let $e_1, e_2$ be reals with
+$0 < e_1 < e_2 < 1$. For natural $z$ put $c_i(z) = ((g_i z + f_i) \bmod Q) + e_i$ and
+$d(z) = c_2(z) - c_1(z)$. Then (a) among $1 \le z \le Q - 1$, the number of $z$ with $d(z) > 0$
+equals the number with $d(z) < 0$; and (b) if $f_1 \equiv 0 \pmod p$ or
+$f_1 \equiv f_2 \pmod p$, the same holds among the $z$ with $1 \le z \le Q - 1$ and $p \nmid z$.
 
 ## Depends on
 

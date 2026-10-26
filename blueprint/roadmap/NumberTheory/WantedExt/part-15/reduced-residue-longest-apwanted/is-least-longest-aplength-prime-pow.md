@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_longestAPLength_prime_pow
 ---
 
-# Is Least longest APLength prime pow
+# Minimum longest progression length modulo a prime power
 
-Theorem 3, prime-power case: for a prime `p` and `r > 1`, `min_{m ∈ ℤ} f_m(p ^ r) = p ^ (r - 1)`.
+**Minimum longest progression length modulo a prime power.** Let $p$ be a prime and $r > 1$ a
+natural number. For an integer $m$ let $f_m(p^r)$ be the length of the longest arithmetic
+progression with positive common difference contained in the set $R_m(p^r)$ of integers $a$ with
+$m + 1 \le a \le m + p^r$ and $\gcd(a, p^r) = 1$. Then the least value of $f_m(p^r)$ over all
+integers $m$ is $p^{r-1}$.
 
 ## Depends on
 
-- [Longest APLength](longest-aplength.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
 
 ## Sources
 

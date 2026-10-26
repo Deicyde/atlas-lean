@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.convergentDen
 ---
 
-# Convergent Den
+# Convergent denominators as continuants
 
-The denominators `q_i` of the convergents `p_i / q_i` of `[a₀; a₁, a₂, …]`:
-`q₀ = 1`, `q₁ = a₁` and `q_{i+2} = a_{i+2} q_{i+1} + q_i`, i.e. the continuant
-`K(a₁, …, a_i)`. The value `a 0` is never used. The denominators `r_i` of the paper
-(the convergents `q_i / r_i` of `[a₁; a₂, …, a_i]`) are
-`convergentDen (fun n => a (n + 1)) (i - 1)` for `i ≥ 1`.
+**Convergent denominators as continuants.** For a sequence of natural numbers
+$a_0, a_1, a_2, \dots$, its convergent denominators $q_0, q_1, q_2, \dots$ are the natural
+numbers defined by $q_0 = 1$, $q_1 = a_1$ and $q_{i+2} = a_{i+2} q_{i+1} + q_i$ for $i \ge 0$.
+They are the denominators of the convergents of $[a_0; a_1, a_2, \dots]$, and $q_i$ is the
+continuant $K(a_1, \dots, a_i)$; the term $a_0$ is never used.
+
+The denominators $r_i$ of the paper, those of the convergents of $[a_1; a_2, \dots, a_i]$, are
+the convergent denominators of the shifted sequence $(a_{n+1})_{n \ge 0}$ at index $i - 1$, for
+$i \ge 1$.
 
 ## Depends on
 

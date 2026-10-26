@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.oddSet_product_power_shift_congr
 ---
 
-# Odd Set product power shift congr
+# Powers of shifted products over the odd numbers below $2^e$
 
-For integers `A,B`, natural `j`, and `e≥2`, the `2^j` powers of the two shifted
-products over `S_e` agree modulo `2^(3e-1+j)`.  The exponentiation applies to
-each factor as printed, and integer products allow arbitrary signs of `A,B`.
+**Powers of shifted products over the odd numbers below $2^e$.** For all integers $A$ and $B$ and
+all natural numbers $j$ and $e$ with $e \ge 2$, let $S_e$ be the set of odd integers $i$ with
+$1 \le i < 2^e$. Then
+
+$$
+\prod_{i \in S_e} (A \cdot 2^e + i)^{2^j} \equiv \prod_{i \in S_e} (B \cdot 2^e + i)^{2^j}
+\pmod{2^{3e-1+j}}.
+$$
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

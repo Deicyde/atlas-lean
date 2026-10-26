@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.rFibonacciPolynomial_one_one_one
 ---
 
-# R Fibonacci Polynomial one one one
+# The $1$-Fibonacci polynomials at $x = y = 1$ are the Fibonacci numbers
 
-For `r = 1` and `x = y = 1` the `r`-Fibonacci polynomials are the Fibonacci
-numbers.
+**The $1$-Fibonacci polynomials at $x = y = 1$ are the Fibonacci numbers.** For every
+natural number $n$, the $r$-Fibonacci polynomial with $r = 1$, evaluated at $x = y = 1$ in the
+natural numbers, is the $n$-th Fibonacci number: $U^{(1)}_n(1, 1) = F_n$, where $F_0 = 0$,
+$F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Proof depends on
 
-- [R Fibonacci Polynomial succ of le](r-fibonacci-polynomial-succ-of-le.md)
-- [R Fibonacci Polynomial succ of lt](r-fibonacci-polynomial-succ-of-lt.md)
-- [R Fibonacci Polynomial zero](r-fibonacci-polynomial-zero.md)
+- [Recurrence for the $r$-Fibonacci polynomials](r-fibonacci-polynomial-succ-of-le.md)
+- [Initial values of the $r$-Fibonacci polynomials](r-fibonacci-polynomial-succ-of-lt.md)
+- [The zeroth $r$-Fibonacci polynomial vanishes](r-fibonacci-polynomial-zero.md)
 
 ## Sources
 

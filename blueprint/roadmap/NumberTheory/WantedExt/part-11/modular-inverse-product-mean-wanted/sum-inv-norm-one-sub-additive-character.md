@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_inv_norm_one_sub_additive_character
 ---
 
-# Sum inv norm one sub additive character
+# Sum of reciprocal distances from roots of unity to 1
 
-Lemma 6: for `q ≥ 2`, `ℓ ≥ 1` and either sign `s = ±1`,
-`∑_{a mod q, q ∤ a ℓ} 1 / |1 - e_q(s a ℓ)| ≤ (q/2) log(e q / (2 (ℓ, q))) < (q/2) log(e q)`.
+**Sum of reciprocal distances from roots of unity to 1.** Let $q \ge 2$ and $\ell \ge 1$ be
+integers, let $s \in \{1, -1\}$, and write $e_q(x) = e^{2\pi i x / q}$. Then
+
+$$\sum_{0 \le a < q,\ q \nmid a\ell} \frac{1}{|1 - e_q(s a \ell)|} \le
+\frac{q}{2} \log \frac{e q}{2 \gcd(\ell, q)} < \frac{q}{2} \log(e q).$$
 
 ## Depends on
 

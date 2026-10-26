@@ -23,7 +23,7 @@ when $M$ started at $q$ accepts $w$.
 - [Output of the stopping Moore iteration](moore-iter-spec.md)
 - [Moore refinement step](moore-step.md)
 - [Moore's relation contains every post-fixed point](subset-moore-rel.md)
-- [Gfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
+- [Finite iteration from the whole type reaches a fixed point](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
 
 ## Sources
 

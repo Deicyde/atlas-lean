@@ -5,12 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.RamanujanHarmonicIdentityWanted.eq_lambda_mul_harmonic_of_sum_choose_sub_mul_eq
 ---
 
-# Theorem 8
+# Uniqueness of the harmonic solution of the diagonal Ramanujan identity
 
-**Theorem 8**: uniqueness of the harmonic sequence for the
-diagonal case `k = n - 1` of Theorem 1.  If a complex sequence `K`
-satisfies the displayed identity for every `n ≥ 2`, then `K` is a
-constant complex multiple of the harmonic numbers.
+**Uniqueness of the harmonic solution of the diagonal Ramanujan identity.** Let
+$K : \mathbb{N} \to \mathbb{C}$ be a sequence such that for every integer $n \ge 2$
+
+$$
+\sum_{\nu=2}^{n} \Bigl(\binom{2n-\nu-2}{n-1} - \binom{2n-\nu-2}{n-2}\Bigr) K(\nu) =
+\binom{2n-1}{n-1} \bigl(K(n-1) - K(n)\bigr).
+$$
+
+Then there is a constant $\lambda \in \mathbb{C}$ such that $K(r) = \lambda H_r$ for every integer
+$r \ge 1$, where $H_r = \sum_{j=1}^{r} 1/j$ is the $r$-th harmonic number.
 
 ## Depends on
 

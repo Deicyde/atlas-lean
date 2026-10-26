@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.okounkovQMZV_nil
 ---
 
-# Okounkov QMZV nil
+# Okounkov qMZV of the empty index
 
-`ζ_q^Oko(∅) = 1`.
+**Okounkov qMZV of the empty index.** The Okounkov $q$-multiple zeta value of the empty
+index is $1$: $\zeta_q^{\mathrm{Oko}}(\varnothing) = 1$.
 
 ## Depends on
 
-- [Okounkov QMZV](okounkov-qmzv.md)
+- [Okounkov $q$-multiple zeta values](okounkov-qmzv.md)
 
 ## Sources
 

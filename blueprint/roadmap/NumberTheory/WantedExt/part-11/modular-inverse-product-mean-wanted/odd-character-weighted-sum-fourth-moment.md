@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.odd_character_weighted_sum_fourth_moment
 ---
 
-# Odd character weighted sum fourth moment
+# Fourth moment of weighted odd character sums
 
-Corollary 1: there is `C` such that for every odd `n ≥ 3`,
-`∑_{χ mod n, χ(-1) = -1} |∑_{a=1}^n a χ(a)|⁴ ≤ C n³ φ(n)⁴ (log log n)²`.
+**Fourth moment of weighted odd character sums.** There is a real constant $C$ such that for
+every odd integer $n \ge 3$,
+
+$$\sum_{\chi \text{ odd}} \Bigl|\sum_{a=1}^{n} a\, \chi(a)\Bigr|^4 \le
+C\, n^3 \varphi(n)^4 (\log\log n)^2,$$
+
+where $\chi$ runs over the odd Dirichlet characters modulo $n$ (those with $\chi(-1) = -1$) and
+$\varphi$ is Euler's totient function.
 
 ## Depends on
 

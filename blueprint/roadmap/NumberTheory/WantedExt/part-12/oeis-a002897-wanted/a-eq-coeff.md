@@ -15,10 +15,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Vars](vars.md)
-- [A](a.md)
-- [P Poly](p-poly.md)
-- [Xyz Pow N](xyz-pow-n.md)
+- [Indices for three variables](vars.md)
+- [Cubed central binomial coefficients](a.md)
+- [Product polynomial for the cubed central binomial coefficients](p-poly.md)
+- [Exponent vector of $x^n y^n z^n$](xyz-pow-n.md)
 
 ## Sources
 

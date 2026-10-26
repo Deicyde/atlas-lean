@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lucasDerivative
 ---
 
-# Lucas Derivative
+# Lucas derivative
 
-The Lucas derivative `D_{φ,φ'}` for distinct roots `φ ≠ φ'` of `x ^ 2 - s x - t`:
-`(D f)(x) = (f(φ x) - f(φ' x)) / ((φ - φ') x)` for `x ≠ 0`, and `f'(0)` at `x = 0`.
+**Lucas derivative.** For real numbers $\varphi$ and $\varphi'$, the Lucas derivative
+$D_{\varphi,\varphi'}$ sends a function $f : \mathbb{R} \to \mathbb{R}$ to the function whose
+value at $x \ne 0$ is $(f(\varphi x) - f(\varphi' x))/((\varphi - \varphi')x)$, read as $0$ when
+$\varphi = \varphi'$, and whose value at $0$ is the derivative $f'(0)$, read as $0$ when $f$ is
+not differentiable at $0$.
 
-The paper's separate definition for `s² + 4t = 0` is not covered; when `f` is not
-differentiable at `0`, the value at `0` is Mathlib's junk `deriv f 0 = 0`.
+In the paper $\varphi \ne \varphi'$ are the roots of $x^2 - sx - t$; its separate definition for
+$s^2 + 4t = 0$ is not covered.
 
 ## Depends on
 

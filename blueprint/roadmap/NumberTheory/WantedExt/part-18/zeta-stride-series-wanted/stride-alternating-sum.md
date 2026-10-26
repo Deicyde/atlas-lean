@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.strideAlternatingSum
 ---
 
-# Stride Alternating Sum
+# Alternating stride sum
 
-The alternating stride sum `S_{q,t}(n) = ∑_{j=1}^{⌊(n+q-1)/q⌋} (-1)^{j+1} / (n+q-qj)^t`,
-written with `i = j - 1` as `∑_{i < ⌊(n+q-1)/q⌋} (-1)^i / (n - qi)^t`: the alternating sum
-of `m^{-t}` over `m = n, n - q, n - 2q, …, m ≥ 1`.
+**Alternating stride sum.** For natural numbers $q$, $t$ and $n$, let
+$K = \lfloor (n + q - 1)/q \rfloor$ if $q \ge 1$ and $K = 0$ if $q = 0$. The alternating stride
+sum is the real number
+
+$$
+S_{q,t}(n) = \sum_{i=0}^{K-1} \frac{(-1)^i}{(n - qi)^t}.
+$$
+
+For $q \ge 1$ this is the alternating sum of $m^{-t}$ over $m = n, n - q, n - 2q, \dots$ with
+$m \ge 1$; with $j = i + 1$ it reads $\sum_{j=1}^{K} (-1)^{j+1}/(n + q - qj)^t$.
 
 ## Depends on
 

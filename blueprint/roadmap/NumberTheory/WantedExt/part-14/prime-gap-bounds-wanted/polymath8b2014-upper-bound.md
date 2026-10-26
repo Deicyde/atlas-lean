@@ -5,9 +5,14 @@ statement: formalized
 lean: WantedExt.NumberTheory.PrimeGapBounds.polymath8b2014UpperBound
 ---
 
-# Polymath8b2014 Upper Bound
+# Polymath8b bound 246 on small prime gaps
 
-The Polymath8b bound from the retained original v4; erratum applicability is unresolved.
+**Polymath8b bound 246 on small prime gaps.** Let $p_0 < p_1 < p_2 < \cdots$ be the primes in
+increasing order. Then $\liminf_{n \to \infty} (p_{n+1} - p_n) \le 246$, where the liminf is
+taken in $\mathbb{N} \cup \{\infty\}$.
+
+The bound is the one stated in the original arXiv version v4; whether the 2015 erratum affects it
+is unresolved.
 
 ## Depends on
 

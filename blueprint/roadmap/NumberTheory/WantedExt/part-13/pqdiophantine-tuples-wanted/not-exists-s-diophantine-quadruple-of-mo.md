@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_exists_sDiophantine_quadruple_of_mod_four_eq_three
 ---
 
-# Not exists s Diophantine quadruple of mod four eq three
+# No $\{p, q\}$-Diophantine quadruple when $p$ or $q$ is $3$ modulo $4$
 
-If `S = {p, q}` consists of two distinct primes, at least one congruent to `3` modulo `4`,
-then no `S`-Diophantine quadruple exists.
+**No $\{p, q\}$-Diophantine quadruple when $p$ or $q$ is $3$ modulo $4$.** Let $p \ne q$ be
+primes with $p \equiv 3 \pmod 4$ or $q \equiv 3 \pmod 4$. Then no four-element set of natural
+numbers is a $\{p, q\}$-Diophantine tuple; that is, there is no $\{p, q\}$-Diophantine quadruple.
 
 ## Depends on
 
-- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
+- [$S$-Diophantine tuples](is-sdiophantine-tuple.md)
 
 ## Sources
 

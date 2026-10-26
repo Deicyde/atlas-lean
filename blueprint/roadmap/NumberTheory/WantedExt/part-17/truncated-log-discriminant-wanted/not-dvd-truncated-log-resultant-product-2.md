@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_dvd_truncatedLogResultantProduct_of_prime_power
 ---
 
-# Not dvd truncated Log Resultant Product of prime power
+# A prime $p \equiv 1 \pmod 4$ does not divide $\mathcal{P}_{p^e}$
 
-If `p ≡ 1 (mod 4)` is prime, `e ≥ 1`, and `n = p^e`, then `𝒫_n` is coprime to `p`.
+**A prime $p \equiv 1 \pmod 4$ does not divide $\mathcal{P}_{p^e}$.** Let $p$ be a prime with
+$p \equiv 1 \pmod 4$, let $e \ge 1$, and let $\mathcal{P}_n$ be the truncated logarithmic
+resultant product. Then $p$ does not divide $\mathcal{P}_{p^e}$.
 
 ## Depends on
 
-- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
+- [Resultant product for truncated logarithmic polynomials](truncated-log-resultant-product.md)
 
 ## Sources
 

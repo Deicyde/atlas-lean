@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowerfulNumbersWanted.three_exact_dvd_sq_add_self_add_one
 ---
 
-# Lemma 2
+# Exact divisibility of $x^2 + x + 1$ by $3$
 
-**Lemma 2**: if `x ≡ 1 (mod 3)`, then `3` exactly divides
-`x^2 + x + 1`, in the sense `3 ∣ x^2 + x + 1` but
-`¬ 9 ∣ x^2 + x + 1`.
+**Exact divisibility of $x^2 + x + 1$ by $3$.** If $x$ is an integer with
+$x \equiv 1 \pmod 3$, then $3$ divides $x^2 + x + 1$ but $9$ does not.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.nLagrangeSpectrum_eq_closure_quadratic
 ---
 
-# N Lagrange Spectrum eq closure quadratic
+# The $n$-Lagrange spectrum is the closure of its quadratic-irrational values
 
-`Lₙ` is the closure of the set `Pₙ` of `n`-approximabilities of quadratic irrationals.
+**The $n$-Lagrange spectrum is the closure of its quadratic-irrational values.** Let $n \ge 1$,
+let $\lambda_n$ be the $n$-Lagrange approximability, and let $P_n$ be the set of real numbers
+$\alpha$ such that $\alpha = \lambda_n(\xi)$ for some quadratic irrational $\xi$, that is, an
+irrational real number with $a\xi^2 + b\xi + c = 0$ for some integers $a \ne 0$, $b$, $c$. Then
+the $n$-Lagrange spectrum $L_n$ is the closure of $P_n$ in $\mathbb{R}$.
 
 ## Depends on
 
-- [N Lagrange Approximability](n-lagrange-approximability.md)
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [$n$-Lagrange approximability](n-lagrange-approximability.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

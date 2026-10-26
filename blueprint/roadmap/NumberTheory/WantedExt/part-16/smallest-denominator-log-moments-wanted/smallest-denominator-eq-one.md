@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.smallestDenominator_eq_one
 ---
 
-# Smallest Denominator eq one
+# Wide intervals have smallest denominator one
 
-For `δ > 1` the window always contains an integer, so `q_min(x, δ) = 1`.
+**Wide intervals have smallest denominator one.** For every real number $x$ and every real
+$\delta > 1$, the smallest denominator $q_{\min}(x, \delta)$ equals $1$.
+
+The open interval $(x - \delta/2, x + \delta/2)$ has length greater than $1$, so it contains an
+integer.
 
 ## Depends on
 
-- [Smallest Denominator](smallest-denominator.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaV_odd_generatingFunction
 ---
 
-# Mock Theta V odd generating Function
+# Generating function for the odd-indexed coefficients of $v(q)$
 
-Theorem 1: `∑_{n ≥ 0} P_v(2n+1) q^n = f_4^3/(f_1 f_2)`, stated with the denominator
-cleared, where `∑ P_v(n) q^n = v(q)`.
+**Generating function for the odd-indexed coefficients of $v(q)$.** Let $P_v(n)$ be the
+coefficient of $q^n$ in the eighth-order mock theta function $v(q)$, and for $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$. Then, as integer power series,
+$f_1 f_2 \sum_{n \ge 0} P_v(2n+1) q^n = f_4^3$, that is,
+$\sum_{n \ge 0} P_v(2n+1) q^n = f_4^3 / (f_1 f_2)$.
 
 ## Depends on
 
-- [Mock Theta V](mock-theta-v.md)
+- [The eighth-order mock theta function $v(q)$](mock-theta-v.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

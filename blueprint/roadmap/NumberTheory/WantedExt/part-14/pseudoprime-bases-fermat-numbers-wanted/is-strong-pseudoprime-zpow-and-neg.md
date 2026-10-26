@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isStrongPseudoprime_zpow_and_neg
 ---
 
-# Is Strong Pseudoprime zpow and neg
+# Strong pseudoprime bases are closed under powers and negation
 
-If `n` is a strong pseudoprime to base `b`, then it is a strong pseudoprime to every
-integer power `b ^ t` and to `-b`. The base is a unit of `ZMod n` (as it must be, since
-`b ^ (n - 1) = 1`), so negative exponents make sense.
+**Strong pseudoprime bases are closed under powers and negation.** Let $n$ be a natural
+number and $b$ a unit of $\mathbb{Z}/n\mathbb{Z}$ such that $n$ is a strong pseudoprime to the
+base $b$. Then for every integer $t$, $n$ is a strong pseudoprime to the base $b^t$, and $n$ is a
+strong pseudoprime to the base $-b$.
+
+Requiring $b$ to be a unit loses nothing, since every strong pseudoprime base $b$ satisfies
+$b^{n-1} = 1$; it also gives meaning to negative exponents.
 
 ## Depends on
 

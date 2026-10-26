@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.roundQuotientOddCount_eq_sum_divisor_difference
 ---
 
-# Round Quotient Odd Count eq sum divisor difference
+# Divisor-sum formula for the rounding sequence parity count
 
-Lemma 15: `𝓡_n = -n + ∑_{k=1}^{2n} (d_{1,4}(k) - d_{3,4}(k))`, where
-`d_{r,4}(k)` counts the positive divisors of `k` congruent to `r` mod `4`.
+**Divisor-sum formula for the rounding sequence parity count.** For a positive integer $k$
+and $r \in \{1, 3\}$, let $d_{r,4}(k)$ be the number of positive divisors of $k$ congruent to
+$r$ modulo $4$. Then for every natural number $n$, the rounding sequence parity count
+$\mathcal{R}_n$ satisfies $\mathcal{R}_n = -n + \sum_{k=1}^{2n} (d_{1,4}(k) - d_{3,4}(k))$.
 
 ## Depends on
 
-- [Round Quotient Odd Count](round-quotient-odd-count.md)
+- [Rounding sequence parity count](round-quotient-odd-count.md)
 
 ## Sources
 

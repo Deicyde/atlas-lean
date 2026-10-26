@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.lurothDigitSeq_one
 ---
 
-# Luroth Digit Seq one
+# The Lüroth digits of 1
 
-Every Lüroth digit of `1` is `2`, i.e. `1 = [2, 2, 2, ...]`.
+**The Lüroth digits of 1.** Every Lüroth digit of $1$ equals $2$, that is,
+$1 = [2, 2, 2, \dots]$ in Lüroth notation.
 
 ## Depends on
 
-- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Lüroth digits](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Proof depends on
 
-- [Luroth Digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
-- [Luroth Digit one](../luroth-consecutive-digits-wanted/luroth-digit-one.md)
-- [Luroth Map](../luroth-consecutive-digits-wanted/luroth-map.md)
-- [Luroth Map one](../luroth-consecutive-digits-wanted/luroth-map-one.md)
+- [First Lüroth digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
+- [First Lüroth digit of 1](../luroth-consecutive-digits-wanted/luroth-digit-one.md)
+- [Lüroth map](../luroth-consecutive-digits-wanted/luroth-map.md)
+- [The Lüroth map fixes 1](../luroth-consecutive-digits-wanted/luroth-map-one.md)
 
 ## Sources
 

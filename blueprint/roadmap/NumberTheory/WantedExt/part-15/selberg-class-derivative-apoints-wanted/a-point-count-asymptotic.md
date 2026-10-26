@@ -5,19 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.aPointCount_asymptotic
 ---
 
-# Theorem 1
+# Asymptotic count of a-points of derivatives in the Selberg class
 
-**Theorem 1.** For `k ≥ 1` and `a ≠ 0`,
-`N_k(a; T, F) = (d_F T / 2π) log T + (T / 2π) log (λ Q²) - d_F T / 2π + O(log T)` with
-`λ = ∏ λ_j^(2λ_j)`, where `N_k` counts a-points in `E₂ < Re s < E₁`, `0 < Im s < T` for any
-`E₁`, `E₂`, `τ` with the properties of Lemmas 1 and 3 (the bounds `E₁ ≥ 1`, `E₂ ≤ 0` of those
-lemmas are not needed and are dropped).
+**Asymptotic count of a-points of derivatives in the Selberg class.** Let $F$ be a function in
+the Selberg class with conductor $Q$, Gamma-factor scalings $\lambda_1, \dots, \lambda_r$ and
+degree $d_F$, let $k \ge 1$ and $a \in \mathbb{C}$ with $a \ne 0$, and put
+$\lambda = \prod_{j=1}^{r} \lambda_j^{2\lambda_j}$. Let $E_1, E_2, \tau$ be real numbers such that
+the $k$-th derivative $F^{(k)}$ satisfies $F^{(k)}(s) \ne a$ whenever $\operatorname{Re} s \ge E_1$,
+and $F^{(k)}(s) \ne a$ whenever $\operatorname{Re} s \le E_2$ and $|\operatorname{Im} s| \ge \tau$.
+Let $N_k(a; T, F)$ be the number of a-points of $F^{(k)}$, counted with multiplicity, in the
+rectangle $E_2 < \operatorname{Re} s < E_1$, $0 < \operatorname{Im} s < T$. Then, as $T \to \infty$,
+
+$$
+N_k(a; T, F) = \frac{d_F T}{2\pi} \log T + \frac{T}{2\pi} \log (\lambda Q^2) -
+\frac{d_F T}{2\pi} + O(\log T).
+$$
+
+The bounds $E_1 \ge 1$ and $E_2 \le 0$ of Lemmas 1 and 3 are not needed and are dropped.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
-- [A Point Count](a-point-count.md)
-- [Degree](degree.md)
+- [Functions in the Selberg class](selberg-class-function.md)
+- [Counting function of a-points of derivatives](a-point-count.md)
+- [Degree of a function in the Selberg class](degree.md)
 
 ## Sources
 

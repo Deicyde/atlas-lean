@@ -13,8 +13,8 @@ satisfy $R_{p,n} = (p + 1) L_{p,n} - p$.
 
 ## Depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
-- [Lucas P](lucas-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
+- [Lucas $p$-numbers](lucas-p.md)
 
 ## Sources
 

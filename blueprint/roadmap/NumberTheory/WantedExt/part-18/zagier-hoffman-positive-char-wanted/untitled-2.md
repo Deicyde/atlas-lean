@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯
 ---
 
-# 𝒯
+# The set $\mathcal{T}_w$ of restricted multiple zeta values
 
-Let `q` be the size of the finite field `F`. `𝒯_w` is the set of `ζ_A(s_1,..., s_r)` of weight
-`w`, with `1 ≤ s_i ≤ q` for `1 ≤ i ≤ r − 1` and `1 ≤ s_r < q`, as `r` varies.
+**The set $\mathcal{T}_w$ of restricted multiple zeta values.** Let $q$ be the number of
+elements of the finite field $F$. For $w \in \mathbb{N}$, $\mathcal{T}_w$ is the set of multiple
+zeta values $\zeta_A(s_1, \dots, s_r)$, over all $r \ge 1$ and all positive integers
+$s_1, \dots, s_r$ with $s_1 + \dots + s_r = w$, $s_i \le q$ for $1 \le i \le r - 1$,
+and $s_r < q$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [𝒯 aux](aux.md)
+- [Restricted multiple zeta values of given depth](aux.md)
 
 ## Sources
 

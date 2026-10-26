@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.quadPrimeNorm_zero
 ---
 
-# Quad Prime Norm zero
+# The zeroth prime norm is one
 
-`N(π_0) = 1`.
+**The zeroth prime norm is one.** For every number field $K$, the zeroth prime norm
+$N(\pi_0)$ of $K$ equals $1$.
 
 ## Depends on
 
-- [Quad Prime Norm](quad-prime-norm.md)
+- [Norm of the $n$-th prime](quad-prime-norm.md)
 
 ## Sources
 

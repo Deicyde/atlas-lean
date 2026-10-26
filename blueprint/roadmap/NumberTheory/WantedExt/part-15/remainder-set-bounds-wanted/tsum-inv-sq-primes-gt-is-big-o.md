@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_sq_primes_gt_isBigO
 ---
 
-# Tsum inv sq primes gt is Big O
+# Tail of the sum of inverse prime squares
 
-Lemma 8: `Σ_{p > n prime} 1/p² = O(1/(n log n))`.
+**Tail of the sum of inverse prime squares.** As the natural number $n$ tends to infinity,
+the sum $\sum_{p > n,\ p \text{ prime}} 1/p^2$ of the inverse squares of the primes greater
+than $n$ is $O(1/(n \log n))$.
 
 ## Depends on
 

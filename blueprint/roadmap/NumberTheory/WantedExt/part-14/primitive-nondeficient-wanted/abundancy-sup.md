@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.abundancySup
 ---
 
-# Abundancy Sup
+# Product of $p/(p-1)$ over the prime factors
 
-The paper's `H(n) = ∏_{p ∣ n} p/(p-1)`, in `ℚ`. The paper
-defines `H` for positive `n`; at `n = 0` the empty product makes
-this `1`, and every use below assumes `n ≠ 0`.
+**Product of $p/(p-1)$ over the prime factors.** For a natural number $n$, let
+$H(n) = \prod_p p/(p-1)$ in $\mathbb{Q}$, the product over the distinct primes $p$ dividing $n$.
+For $n = 0$ the product is empty ($0$ is taken to have no prime factors), so $H(0) = 1$.
 
 ## Depends on
 

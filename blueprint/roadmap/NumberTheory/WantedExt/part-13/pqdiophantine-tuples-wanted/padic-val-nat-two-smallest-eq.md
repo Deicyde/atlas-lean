@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.padicValNat_two_smallest_eq
 ---
 
-# Padic Val Nat two smallest eq
+# The two smallest valuations coincide
 
-For every prime `ℓ` and all `a, b, c, d`, with `vᵢ = padicValNat ℓ sᵢ`, the smallest value
-in each of `(v₂, v₃, v₄, v₅)`, `(v₁, v₂, v₅, v₆)`, `(v₁, v₃, v₄, v₆)` is attained at least twice
-(that is, the two smallest coincide). Taking `ℓ = p` and `ℓ = q` gives the paper's statements
-for the `α`'s and `β`'s; the `S`-Diophantine hypothesis is not needed, since the proof uses
-only the identities `abcd = (s₁ - 1)(s₆ - 1) = (s₂ - 1)(s₅ - 1) = (s₃ - 1)(s₄ - 1)`.
+**The two smallest valuations coincide.** Let $\ell$ be a prime and $a, b, c, d$ natural
+numbers. Put $s_1 = ab + 1$, $s_2 = ac + 1$, $s_3 = ad + 1$, $s_4 = bc + 1$, $s_5 = bd + 1$,
+$s_6 = cd + 1$, and let $v_i$ be the $\ell$-adic valuation of $s_i$. Then in each of the tuples
+$(v_2, v_3, v_4, v_5)$, $(v_1, v_2, v_5, v_6)$ and $(v_1, v_3, v_4, v_6)$ the minimum value occurs
+at two different positions.
+
+Taking $\ell = p$ and $\ell = q$ gives the source's statements for the exponents of a
+$\{p, q\}$-Diophantine quadruple. No Diophantine hypothesis is needed: the proof uses only the
+identities $abcd = (s_1 - 1)(s_6 - 1) = (s_2 - 1)(s_5 - 1) = (s_3 - 1)(s_4 - 1)$.
 
 ## Depends on
 

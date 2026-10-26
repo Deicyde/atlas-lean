@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nat_iwata_finite
 ---
 
-# Nat iwata finite
+# Iwata's generalization of Schatunowsky's theorem
 
-Iwata's generalization of Schatunowsky's theorem: for each `ℓ`, only finitely many `a`
-have `Ω(b) ≤ ℓ` for every `b` with `1 < b < a` and `gcd(a, b) = 1`; `Ω` is
-`ArithmeticFunction.cardFactors`, the number of prime factors with multiplicity.
+**Iwata's generalization of Schatunowsky's theorem.** For every natural number $\ell$, there
+are only finitely many natural numbers $a$ such that every natural number $b$ with $1 < b < a$
+and $\gcd(a, b) = 1$ satisfies $\Omega(b) \le \ell$, where $\Omega(b)$ is the number of prime
+factors of $b$ counted with multiplicity.
 
 ## Depends on
 

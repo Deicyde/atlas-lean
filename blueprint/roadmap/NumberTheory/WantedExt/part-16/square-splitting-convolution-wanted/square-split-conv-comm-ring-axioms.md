@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitConv_commRing_axioms
 ---
 
-# Square Split Conv comm Ring axioms
+# Ring axioms for the square-splitting convolution
 
-Theorem 2, ring part: `⋆` is commutative, associative, distributes over
-`+`, and has identity `ε` (the arithmetic function `1`), so arithmetic
-functions form a commutative ring under `+` and `⋆`.
+**Ring axioms for the square-splitting convolution.** For all complex arithmetic functions
+$f$, $g$ and $h$, the square-splitting convolution $\star$ satisfies $f \star g = g \star f$,
+$(f \star g) \star h = f \star (g \star h)$, $f \star (g + h) = f \star g + f \star h$ and
+$\varepsilon \star f = f$, where $\varepsilon$ is the arithmetic function with $\varepsilon(1) = 1$
+and $\varepsilon(n) = 0$ for $n \ne 1$.
+
+With pointwise addition, these identities make the complex arithmetic functions a commutative ring
+under $\star$ with identity $\varepsilon$.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
+- [Square-splitting convolution](square-split-conv.md)
 
 ## Sources
 

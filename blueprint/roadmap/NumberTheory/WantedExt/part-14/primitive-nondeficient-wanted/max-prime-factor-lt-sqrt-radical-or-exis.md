@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.max_primeFactor_lt_sqrt_radical_or_exists_pow_lt
 ---
 
-# Proposition
+# Dichotomy for odd primitive non-deficient numbers
 
-**Proposition** (dichotomy): if `n` is an odd primitive
-non-deficient number with least prime factor `p₁`, greatest prime
-factor `p_k`, `k` distinct prime factors, and radical `R`, then
-either `p_k < √R` or some prime factor `p` satisfies
-`p^(a+1) < (k + 2 + p₁)(p_k - 1)`, where `a` is the exponent
-of `p`.
+**Dichotomy for odd primitive non-deficient numbers.** Let $n$ be an odd primitive
+non-deficient number, that is, a positive integer with $\sigma(n) \ge 2n$ all of whose proper
+divisors $m$ satisfy $\sigma(m) < 2m$, where $\sigma$ is the sum of divisors. Let $k$ be the
+number of distinct prime factors of $n$, let $p_1$ and $p_k$ be its least and greatest prime
+factors, and let $R$ be the product of the distinct primes dividing $n$. Then either
+$p_k < \sqrt{R}$, or some prime $p$ dividing $n$ satisfies $p^{a+1} < (k + 2 + p_1)(p_k - 1)$,
+where $a$ is the exponent of $p$ in $n$.
 
 ## Depends on
 
-- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
+- [Primitive non-deficient number](is-primitive-nondeficient.md)
 
 ## Sources
 

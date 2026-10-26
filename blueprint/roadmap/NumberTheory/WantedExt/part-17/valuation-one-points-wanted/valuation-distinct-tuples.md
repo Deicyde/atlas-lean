@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.valuationDistinctTuples
 ---
 
-# Valuation Distinct Tuples
+# Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$
 
-The element-wise distinct (injective) `k`-tuples of points of `C_f(𝔽_p)`.
+**Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$.** For $f \in \mathbb{Z}[x, y]$ and
+natural numbers $p$ and $k$, let $C_f(\mathbb{F}_p)$ be the set of pairs $(r, s)$ of natural
+numbers with $r, s < p$ such that $p$ divides $f(r, s)$. The distinct $k$-tuples of points of
+$C_f(\mathbb{F}_p)$ are the $k$-tuples $(P_1, \dots, P_k)$ with every $P_i$ in $C_f(\mathbb{F}_p)$
+and $P_i \ne P_j$ for $i \ne j$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Valuation Curve Points](valuation-curve-points.md)
+- [Points of $C_f(\mathbb{F}_p)$](valuation-curve-points.md)
 
 ## Sources
 

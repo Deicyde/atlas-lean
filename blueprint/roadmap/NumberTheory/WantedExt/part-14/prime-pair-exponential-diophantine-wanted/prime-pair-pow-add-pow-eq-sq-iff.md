@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_pow_add_pow_eq_sq_iff
 ---
 
-# Prime pair pow add pow eq sq iff
+# Squares of the form $p^x + (2p - 1)^y$ for prime pairs
 
-If `p` and `2p - 1` are odd primes, then `pˣ + (2p - 1)ʸ = z²` has the unique non-negative
-solution `(p, x, y, z) = (3, 1, 0, 2)`.
+**Squares of the form $p^x + (2p - 1)^y$ for prime pairs.** Let $p$ be an odd prime such that
+$2p - 1$ is prime. Then non-negative integers $x$, $y$ and $z$ satisfy $p^x + (2p - 1)^y = z^2$
+if and only if $p = 3$ and $(x, y, z) = (1, 0, 2)$.
 
 ## Depends on
 

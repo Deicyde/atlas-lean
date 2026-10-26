@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isSierpinskiNumber_one
 ---
 
-# Not is Sierpinski Number one
+# $1$ is not a Sierpiński number
 
-`1` is not a Sierpiński number: `1·2 + 1 = 3` is prime.
+**$1$ is not a Sierpiński number.** The number $1$ is not a Sierpiński number, since
+$1 \cdot 2 + 1 = 3$ is prime.
 
 ## Depends on
 
-- [Is Sierpinski Number](is-sierpinski-number.md)
+- [Sierpiński number](is-sierpinski-number.md)
 
 ## Sources
 

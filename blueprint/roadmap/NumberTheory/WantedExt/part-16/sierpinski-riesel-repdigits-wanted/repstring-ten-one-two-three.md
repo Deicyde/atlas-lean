@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.repstring_ten_one_two_three
 ---
 
-# Repstring ten one two three
+# A $10$-repstring
 
-The paper's example: `1001001` is the repstring with `b = 10`, `k = 1`, `z = 2`, `t = 3`.
+**A $10$-repstring.** The $10$-repstring with $k = 1$, $z = 2$ and $t = 3$ is
+$1_{10}^{(2;3)} = 1001001$.
 
 ## Depends on
 
-- [Repstring](repstring.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

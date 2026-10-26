@@ -13,13 +13,13 @@ For irrational `α ∈ (0, 1)` and `i ≥ 1`, `φ_SBT(f_{o(i)}(α)) = pf_i(α)`.
 
 ## Depends on
 
-- [Mallows Insert](mallows-insert.md)
-- [Mallows Interval](mallows-interval.md)
-- [Mallows Odd Index](mallows-odd-index.md)
-- [Mallows Q](mallows-q.md)
-- [Stern Brocot Interval](stern-brocot-interval.md)
-- [Stern Brocot Phi](stern-brocot-phi.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [Mallows' insertion rule](mallows-insert.md)
+- [Gaps along the Mallows path of a real number](mallows-interval.md)
+- [Odd positions of a parity sequence](mallows-odd-index.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [Gaps along the Stern–Brocot path](stern-brocot-interval.md)
+- [The map $\varphi_{SBT}$](stern-brocot-phi.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

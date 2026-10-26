@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.omitted_divisors_sum_two_pow_mul_prime_sq
 ---
 
-# Omitted divisors sum two pow mul prime sq
+# Sum and parity of the omitted divisors of a $2$-near perfect $2^k p^2$
 
-Lemma 5: if `n = 2^k p^2` (`p` an odd prime) is `2`-near perfect with omitted divisors
-`d₁, d₂`, then `d₁ + d₂ = -p^2 + (2^(k+1) - 1) p + (2^(k+1) - 1)` and `d₁, d₂` have
-opposite parity.
+**Sum and parity of the omitted divisors of a $2$-near perfect $2^k p^2$.** Let $p$ be an odd
+prime, let $k$ be a natural number, and let $d_1 \ne d_2$ be divisors of $n = 2^k p^2$ with
+$\sigma(n) = 2n + d_1 + d_2$, where $\sigma$ denotes the sum of divisors. Then
+$d_1 + d_2 = -p^2 + (2^{k+1} - 1) p + (2^{k+1} - 1)$, and $d_1$ and $d_2$ have opposite parity.
 
 ## Depends on
 

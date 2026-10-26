@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bFreeIndicator
 ---
 
-# B Free Indicator
+# Indicator of $B_\kappa$-free integers
 
-The characteristic function `q_{B_κ}` of `B_κ`-free integers, where `B_κ` is the set of
-prime powers `p ^ κ(p)`: `q_{B_κ}(n) = 1` if `n ≥ 1` is divisible by no `p ^ κ(p)` (`p` prime) and
-`0` otherwise. The paper indexes the exponents by the position of the prime
-(`b_i = p_i ^ κ_i`); here `κ` is indexed by the prime itself. For constant `κ = k` this is the
-characteristic function `q_k` of `k`-free integers.
+**Indicator of $B_\kappa$-free integers.** Let $\kappa$ be a function from the natural numbers
+to the natural numbers (only its values $\kappa(p)$ at primes $p$ matter) and let $B_\kappa$ be
+the set of prime powers $p^{\kappa(p)}$. A natural number $n$ is $B_\kappa$-free if $n \ge 1$ and
+no $p^{\kappa(p)}$ with $p$ prime divides $n$. The indicator $q_{B_\kappa}$ is the integer-valued
+arithmetic function with $q_{B_\kappa}(n) = 1$ if $n$ is $B_\kappa$-free and
+$q_{B_\kappa}(n) = 0$ otherwise.
+
+The paper indexes the exponents by the position of the prime ($b_i = p_i^{\kappa_i}$); here
+$\kappa$ is indexed by the prime itself. For constant $\kappa = k$ this is the indicator $q_k$ of
+$k$-free integers.
 
 ## Depends on
 

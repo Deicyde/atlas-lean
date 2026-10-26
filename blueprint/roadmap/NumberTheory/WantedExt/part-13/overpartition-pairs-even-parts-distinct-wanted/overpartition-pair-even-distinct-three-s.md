@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionPairEvenDistinct_three_six_congr_neg_one_five
 ---
 
-# Overpartition Pair Even Distinct three six congr neg one five
+# Paksok–Saikia congruences for $(3, 6)$-overpartition pairs (Theorem 6)
 
-For a prime `p ≥ 5` with `(-1/p) = -1` and all `k, m, α ≥ 0` with `p ∤ m`:
-`bped_{3,6}(3^{4α+2}·p^{2k+1}(12m + 5p)) ≡ 0 (mod 16)` (32) and
-`bped_{3,6}(3·p^{2k+1}(12m + 5p)) ≡ 0 (mod 16)` (33).
-Deviations: the paper allows `p ≥ 3`, but the proof needs `p ∤ 24m + 10p`, which fails for `p = 3`,
-and both congruences fail there (`k = α = 0, m = 1`: `bped_{3,6}(729) ≡ 12 (mod 16)`,
-`bped_{3,6}(243) ≡ 12 (mod 16)`), so `p ≥ 5` is assumed; the paper's unused quantifier `β` is
-dropped.
+**Paksok–Saikia congruences for $[3, 6]$-overpartition pairs (Theorem 6).** Let
+$\mathrm{bped}_{j,k}(n)$ be the number of $[j, k]$-overpartition pairs of $n$ with even parts
+distinct. Let $p \ge 5$ be a prime with Legendre symbol $\left(\frac{-1}{p}\right) = -1$, and let
+$k, m, \alpha$ be natural numbers with $p \nmid m$. Then
+$\mathrm{bped}_{3,6}\bigl(3^{4\alpha+2} p^{2k+1} (12m + 5p)\bigr) \equiv 0 \pmod{16}$ and
+$\mathrm{bped}_{3,6}\bigl(3 p^{2k+1} (12m + 5p)\bigr) \equiv 0 \pmod{16}$.
+
+The paper allows $p \ge 3$, but its proof needs $p \nmid 24m + 10p$, which fails for $p = 3$, and
+both congruences fail there: at $k = \alpha = 0$, $m = 1$ one has
+$\mathrm{bped}_{3,6}(729) \equiv 12 \pmod{16}$ and $\mathrm{bped}_{3,6}(243) \equiv 12 \pmod{16}$;
+so $p \ge 5$ is assumed. The paper's unused quantifier $\beta$ is dropped.
 
 ## Depends on
 

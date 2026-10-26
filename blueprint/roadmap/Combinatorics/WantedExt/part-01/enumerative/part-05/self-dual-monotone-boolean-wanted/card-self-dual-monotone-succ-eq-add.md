@@ -28,7 +28,7 @@ The bound is the paper's $\lambda_{n+1} \le (d_n + \lambda_n) / 2$ with the divi
 ## Depends on
 
 - [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
-- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
+- [Dual of a Boolean function](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

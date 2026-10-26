@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_robinExceptionalSet_isBigO_div_log_log
 ---
 
-# Card robin Exceptional Set is Big O div log log
+# Failures of Robin's inequality number $O(x/\log\log x)$
 
-Theorem 1: `N_R(x) = O(x / log log x)`, with `N_R(x)` the cardinality of
-`robinExceptionalSet x`.
+**Failures of Robin's inequality number $O(x/\log\log x)$.** Let $N_R(x)$ be the number of
+elements of the Robin exceptional set up to $x$. Then $N_R(x) = O(x / \log\log x)$ as the real
+number $x$ tends to infinity.
 
 ## Depends on
 
-- [Robin Exceptional Set](robin-exceptional-set.md)
+- [Robin exceptional set](robin-exceptional-set.md)
 
 ## Sources
 

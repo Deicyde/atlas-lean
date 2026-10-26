@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.pellLucasSequence_oresme_convolution
 ---
 
-# Pell Lucas Sequence oresme convolution
+# Pell–Lucas–Oresme convolution
 
-The Pell–Lucas–Oresme convolution, for the odd Pell–Lucas numbers `Q_0 = Q_1 = 1`:
-`∑_{k=0}^n Q_k O_{n-k} = (2/49)(5 Q_{n+1} - 4 Q_n) + (1/49)(7n-2)/2^n` for every `n ≥ 0`.
+**Pell–Lucas–Oresme convolution.** Let $Q_m$ denote the Pell–Lucas numbers, with
+$Q_0 = Q_1 = 1$ and $Q_{m+2} = 2Q_{m+1} + Q_m$, and let $O_m = m/2^m$ denote the Oresme numbers.
+For every natural number $n$,
+$\sum_{k=0}^{n} Q_k O_{n-k} = \frac{2}{49}(5 Q_{n+1} - 4 Q_n) + \frac{7n - 2}{49 \cdot 2^n}$.
 
 ## Depends on
 

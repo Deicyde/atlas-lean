@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.pqRFibonacci_zero
 ---
 
-# Pq RFibonacci zero
+# Zeroth value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-`U_0 = 0` for the `(p, q)`-analogue.
+**Zeroth value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial.** For all natural
+numbers $r$ and $m$ and all elements $x, y, p, q$ of a commutative semiring, the
+$(p,q)$-analogue of the $r$-Fibonacci polynomial satisfies $U^{(r)}_0(x, y, p, q, m) = 0$.
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
 
 ## Sources
 

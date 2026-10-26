@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.volume_limsup_lurothPreimage_zero_one
 ---
 
-# Volume limsup luroth Preimage zero one
+# Borel–Cantelli dichotomy for Lüroth cylinder events
 
-Borel–Cantelli dichotomy for the Lüroth map: if each `A_n` is a union of cylinders of
-level `m`, i.e. `A_n = {x ∈ (0, 1] : (d_1(x), …, d_m(x)) ∈ S_n}`, then
-`λ(limsup L^{-n} A_n)` is `0` if `∑ λ(A_n) < ∞` and `1` if `∑ λ(A_n) = ∞`
-(`x ∈ L^{-n} A_n` means `(d_{n+1}(x), …, d_{n+m}(x)) ∈ S_n`).
+**Borel–Cantelli dichotomy for Lüroth cylinder events.** Let $m \in \mathbb{N}$, let
+$(S_n)_{n \ge 0}$ be a sequence of sets of $m$-tuples of natural numbers, write $d_k(x)$ for
+the $k$-th Lüroth digit of $x$ and $\lambda$ for Lebesgue measure. Put
+$A_n = \{x \in (0, 1] : (d_1(x), \dots, d_m(x)) \in S_n\}$ (a union of cylinders of level $m$)
+and let $E$ be the set of $x \in (0, 1]$ such that $(d_{n+1}(x), \dots, d_{n+m}(x)) \in S_n$
+for infinitely many $n$. If $\sum_{n \ge 0} \lambda(A_n) < \infty$ then $\lambda(E) = 0$, and
+if $\sum_{n \ge 0} \lambda(A_n) = \infty$ then $\lambda(E) = 1$.
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

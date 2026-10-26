@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.oddDoubleFactorial_eq
 ---
 
-# Odd Double Factorial eq
+# Odd double factorial below a power of two as an odd-range product
 
-The characteristic formula unfolds `oddDoubleFactorial e` to the odd-range
-product from `1` through `2^e-1`, exactly as stated in the paper.
+**Odd double factorial below a power of two as an odd-range product.** For every natural number
+$e$, $(2^e-1)!!$ equals the product of the odd natural numbers in the closed interval
+$[1, 2^e-1]$.
 
 ## Depends on
 
-- [Odd Double Factorial](odd-double-factorial.md)
-- [Odd Range Product](odd-range-product.md)
+- [Odd double factorial below a power of two](odd-double-factorial.md)
+- [Odd-range product](odd-range-product.md)
 
 ## Sources
 

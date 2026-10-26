@@ -15,7 +15,7 @@ and $\mathcal{L}_{p,p+j} = (j + 1) + jp$ for every $j$ with $1 \le j \le p$.
 
 ## Depends on
 
-- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Generalized Leonardo $p$-numbers](../../part-11/leonardo-pwanted/leonardo-pk.md)
 
 ## Sources
 

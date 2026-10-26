@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.squareThetaSeries
 ---
 
-# Square Theta Series
+# The square theta series
 
-`θ(q) = ∑_{m ∈ ℤ} q^{m²}`: the coefficient of `q^n` is the number of integers
-`m` with `m² = n`.
+**The square theta series.** The square theta series is the formal power series
+$\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$ in $\mathbb{Z}[[q]]$: for each $n \ge 0$, its
+coefficient of $q^n$ is the number of integers $m$ with $m^2 = n$.
 
 ## Depends on
 

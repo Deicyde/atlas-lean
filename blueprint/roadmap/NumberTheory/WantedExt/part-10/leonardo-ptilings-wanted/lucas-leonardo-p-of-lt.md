@@ -14,12 +14,12 @@ every $n > p$.
 
 ## Depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Proof depends on
 
-- [Lucas Type Seq](lucas-type-seq.md)
-- [Lucas Type Seq get D succ](lucas-type-seq-get-d-succ.md)
+- [Lucas-type recurrence lists](lucas-type-seq.md)
+- [Last entry of a Lucas-type list](lucas-type-seq-get-d-succ.md)
 
 ## Sources
 

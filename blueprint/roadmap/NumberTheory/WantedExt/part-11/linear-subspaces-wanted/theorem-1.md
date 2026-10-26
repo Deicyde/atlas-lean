@@ -5,12 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.theorem_1
 ---
 
-# Theorem 1
+# Dirichlet's principle in Grassmann varieties
 
-Statement of Theorem 1 (Dirichlet's principle in Grassmann varieties):
-
-For all `l`-dimensional subspaces `x ≤ ℝᵈ` and all `k ∈ {1,...,l}`, we have
-`βₖ(x) ≥ d / (k * (d - l))`, and this lower bound is optimal.
+**Dirichlet's principle in Grassmann varieties.** Let $d$, $l$ and $k$ be natural numbers with
+$d \ge 2$, $0 < l < d$ and $1 \le k \le l$, and for a subspace $x$ of $\mathbb{R}^d$ write
+$\beta_k(x)$ for the diophantine exponent of $x$ for approximation by $k$-dimensional rational
+subspaces. Then every $l$-dimensional subspace $x$ of $\mathbb{R}^d$ satisfies
+$\beta_k(x) \ge \frac{d}{k(d - l)}$. Moreover, some $l$-dimensional subspace $x$ of
+$\mathbb{R}^d$ satisfies $\beta_k(x) = \frac{d}{k(d - l)}$.
 
 ## Depends on
 

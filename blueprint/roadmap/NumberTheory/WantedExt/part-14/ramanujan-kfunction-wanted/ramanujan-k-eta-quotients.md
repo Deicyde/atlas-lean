@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanK_eta_quotients
 ---
 
-# Ramanujan K eta quotients
+# Eta-quotient expressions for Ramanujan's function $k$
 
-Three eta-quotient expressions for `k(q)`: for `0 < ‖q‖ < 1`, with `k = k(q)`,
-`f(-q²) f⁵(-q⁵) / (q f(-q) f⁵(-q¹⁰)) = 1/k - k`,
-`f⁴(-q²) f²(-q⁵) / (q f²(-q) f⁴(-q¹⁰)) = 1/k + 1 - k`, and
-`f³(-q) f(-q⁵) / (q f(-q²) f³(-q¹⁰)) = 1/k - 4 - k`.
+**Eta-quotient expressions for Ramanujan's function $k$.** Let $q$ be a complex number with
+$0 < |q| < 1$, write $f_m = (q^m;q^m)_\infty = \prod_{n \ge 1} (1 - q^{mn})$ for $m \ge 1$, and let
+$k = k(q)$ be the value of Ramanujan's function. Then
+
+$$
+\frac{f_2 f_5^5}{q f_1 f_{10}^5} = \frac{1}{k} - k, \qquad
+\frac{f_2^4 f_5^2}{q f_1^2 f_{10}^4} = \frac{1}{k} + 1 - k, \qquad
+\frac{f_1^3 f_5}{q f_2 f_{10}^3} = \frac{1}{k} - 4 - k.
+$$
 
 ## Depends on
 
 - [Raw infinite q-Pochhammer product](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Ramanujan K](ramanujan-k.md)
+- [Ramanujan's function $k(q)$](ramanujan-k.md)
 
 ## Sources
 

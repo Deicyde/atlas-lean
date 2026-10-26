@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowerfulNumbersWanted.int_sq_sub_int_sq_ne_two
 ---
 
-# Lemma 1
+# Two is not a difference of two squares
 
-**Lemma 1**: the difference of two integer squares is never `2`.
+**Two is not a difference of two squares.** For all integers $a$ and $b$,
+$a^2 - b^2 \neq 2$.
 
 ## Depends on
 

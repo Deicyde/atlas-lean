@@ -5,19 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.palindromeAPCount_of_dvd_base
 ---
 
-# Palindrome APCount of dvd base
+# Palindromes in residue classes modulo a divisor of the base
 
-Theorem 7: let `b ≥ 2`, `m, q ≥ 1` with `q ∣ b`, `m = (a_k ⋯ a_0)_b` and
-`α = (b^{⌈k/2⌉} + b^{⌊k/2⌋} - 2)/(b - 1)`. Then
-`A_b(m, q, 0) = (b/q - 1)α + ⌊(a_k - 1)/q⌋ b^{⌊k/2⌋} + [a_k ≡ 0 (mod q)](S + [m ≥ C_b(m)])`
-and, for `r mod q > 0`,
-`A_b(m, q, r) = bα/q + ⌈(a_k - (r mod q))/q⌉ b^{⌊k/2⌋} + [a_k ≡ r (mod q)](S + [m ≥ C_b(m)])`,
-where `S = ∑_{1 ≤ i ≤ ⌊k/2⌋} a_{k-i} b^{⌊k/2⌋-i}`.
+**Palindromes in residue classes modulo a divisor of the base.** Let $b \ge 2$, $m \ge 1$ and
+$q \ge 1$ be natural numbers with $q \mid b$. Write $m = (a_k a_{k-1} \cdots a_0)_b$ in base $b$,
+with leading digit $a_k$. Write $A_b(m, q, r)$ for the number of base-$b$ palindromes $n$ with
+$1 \le n \le m$ and $n \equiv r \pmod q$, $C_b(m)$ for the palindromic half copy of $m$, and
+$[P]$ for $1$ if $P$ holds and $0$ otherwise. Put
+
+$$\alpha = \frac{b^{\lceil k/2 \rceil} + b^{\lfloor k/2 \rfloor} - 2}{b - 1}, \quad
+S = \sum_{i=1}^{\lfloor k/2 \rfloor} a_{k-i} b^{\lfloor k/2 \rfloor - i}, \quad
+\delta = [C_b(m) \le m].$$
+
+Then, as rational numbers,
+
+$$A_b(m, q, 0) = \left(\frac{b}{q} - 1\right) \alpha +
+\left\lfloor \frac{a_k - 1}{q} \right\rfloor b^{\lfloor k/2 \rfloor} +
+[a_k \equiv 0 \pmod q] (S + \delta),$$
+
+and for every natural number $r$ with $r \bmod q > 0$,
+
+$$A_b(m, q, r) = \frac{b \alpha}{q} +
+\left\lceil \frac{a_k - (r \bmod q)}{q} \right\rceil b^{\lfloor k/2 \rfloor} +
+[a_k \equiv r \pmod q] (S + \delta).$$
 
 ## Depends on
 
-- [Palindrome APCount](palindrome-apcount.md)
-- [Palindromic Half Copy](palindromic-half-copy.md)
+- [Palindromes in an arithmetic progression](palindrome-apcount.md)
+- [Palindromic half copy](palindromic-half-copy.md)
 
 ## Sources
 

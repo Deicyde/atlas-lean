@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_eq_sum_digit_weight
 ---
 
-# Dc DNodes eq sum digit weight
+# Binary-digit formula for the divide-and-conquer D-node count
 
-Theorem 22: for `n > 0` with `k = ⌊log₂ n⌋`,
-`δ(n) = ∑_{i=0}^{k-1} 2^i nᵢ (k - i - 2 ∑_{j=i}^{k} nⱼ + 4)`, and equivalently with
-`∑_{j=i}^{k} nⱼ` replaced by `s₁(⌊n / 2^i⌋)`. The printed inner sum `∑_{j=i}^k n_i` is read
-as `∑_{j=i}^k n_j`.
+**Binary-digit formula for the divide-and-conquer D-node count.** Let $\delta$ be the
+divide-and-conquer D-node count and let $s_1(m)$ be the number of ones in the binary expansion
+of $m$. For every integer $n > 0$, let $k = \lfloor \log_2 n \rfloor$ and let $n_j$ be the binary
+digit of $n$ at $2^j$. Then
+
+$$\delta(n) = \sum_{i=0}^{k-1} 2^i n_i \Big(k - i - 2 \sum_{j=i}^{k} n_j + 4\Big),$$
+
+and also
+
+$$\delta(n) = \sum_{i=0}^{k-1} 2^i n_i \Big(k - i - 2\, s_1(\lfloor n / 2^i \rfloor) + 4\Big).$$
+
+The printed inner sum $\sum_{j=i}^k n_i$ is read as $\sum_{j=i}^k n_j$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

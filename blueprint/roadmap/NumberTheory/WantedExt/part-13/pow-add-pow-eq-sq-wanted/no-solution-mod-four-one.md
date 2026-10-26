@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.no_solution_mod_four_one
 ---
 
-# Theorem 2
+# No solutions of $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 1 \pmod 4$
 
-**Theorem 2**: if `n ≡ 1 (mod 4)` and
-`p ≡ 1 (mod 4)`, then Equation (1) has no
-nonnegative integer solution.
+**No solutions of $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 1 \pmod 4$.** Let $p$ be a
+prime and $n$ a natural number with $n \equiv 1 \pmod 4$ and $p \equiv 1 \pmod 4$. Then there
+are no natural numbers $x$, $y$, $z$ with $n^x + (5p)^y = z^2$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSumOfTwoPrimePowers_two
 ---
 
-# Is Sum Of Two Prime Powers two
+# $2$ is a sum of two prime powers
 
-Characteristic example: `2 = 2 ^ 0 + 2 ^ 0` is representable.
+**$2$ is a sum of two prime powers.** The integer $2$ is a sum of two prime powers, since
+$2 = 2^0 + 2^0$.
 
 ## Depends on
 
-- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Sums of two prime powers](is-sum-of-two-prime-powers.md)
 
 ## Sources
 

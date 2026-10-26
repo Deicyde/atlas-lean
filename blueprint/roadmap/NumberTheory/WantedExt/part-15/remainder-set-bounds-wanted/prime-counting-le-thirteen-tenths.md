@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_le_thirteen_tenths
 ---
 
-# Prime Counting le thirteen tenths
+# Upper bound $1.3\, n / \log n$ for the prime-counting function
 
-Lemma 7: `π(n) ≤ 1.3 · n / log n` for every `n ≥ 2`.
+**Upper bound $1.3\, n / \log n$ for the prime-counting function.** For every natural
+number $n \ge 2$, the number $\pi(n)$ of primes at most $n$ satisfies
+$\pi(n) \le 1.3\, n / \log n$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

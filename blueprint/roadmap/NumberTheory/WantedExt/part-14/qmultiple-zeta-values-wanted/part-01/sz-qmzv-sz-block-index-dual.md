@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.szQMZV_szBlockIndex_dual
 ---
 
-# Sz QMZV sz Block Index dual
+# Schlesinger–Zudilin duality
 
-SZ duality in index form: for `kⱼ, dⱼ ≥ 1`,
-`ζ_q^SZ(k₁, {0}^{d₁-1}, …, kᵣ, {0}^{dᵣ-1}) = ζ_q^SZ(dᵣ, {0}^{kᵣ-1}, …, d₁, {0}^{k₁-1})`.
-The paper's equivalent word form `ζ_q^SZ ∘ τ̃ = ζ_q^SZ` on `𝔎¹` is not stated
-separately.
+**Schlesinger–Zudilin duality.** Let $\zeta_q^{SZ}$ denote the Schlesinger–Zudilin qMZV, let
+$(k_1, d_1), \dots, (k_r, d_r)$ be pairs of natural numbers with $k_j \ge 1$ and $d_j \ge 1$
+for all $j$, and let $\{0\}^n$ denote $n$ zeros. Then
+
+$$\zeta_q^{SZ}(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1}) =
+\zeta_q^{SZ}(d_r, \{0\}^{k_r - 1}, \dots, d_1, \{0\}^{k_1 - 1}).$$
+
+That is, $\zeta_q^{SZ}$ takes the same value at the block index of the list of pairs and at
+the block index of the reversed list with each pair swapped.
 
 ## Depends on
 
-- [Sz Block Index](sz-block-index.md)
-- [Sz QMZV](sz-qmzv.md)
+- [Block indices for Schlesinger–Zudilin qMZVs](sz-block-index.md)
+- [Schlesinger–Zudilin qMZVs](sz-qmzv.md)
 
 ## Sources
 

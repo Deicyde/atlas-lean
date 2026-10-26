@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tsum_paperfolding_two_mul_add_one
 ---
 
-# Tsum paperfolding two mul add one
+# A paperfolding Dirichlet series at odd integers
 
-For `k ≥ 1`,
-`(2^{4k+1} - 2^{2k}) ∑_{n ≥ 1} (2bₙ - 1)/n^{2k+1} = -2^{2k-1} π^{2k+1} |E_{2k}| / (2k)!`,
-with `(bₙ)` the regular paperfolding sequence (`bₙ = paperfoldingSeq (n - 1)`; the sum is indexed
-by `n + 1`) and `E_{2k}` the even Euler number.
+**A paperfolding Dirichlet series at odd integers.** Let $(f_n)_{n \ge 0}$ be the regular
+paperfolding sequence, indexed from $0$, and let $E_{2k}$ be the even-index Euler number. For
+every integer $k \ge 1$,
+
+$$
+(2^{4k+1} - 2^{2k}) \sum_{n \ge 0} \frac{2 f_n - 1}{(n+1)^{2k+1}}
+= -\frac{2^{2k-1} \pi^{2k+1} |E_{2k}|}{(2k)!}.
+$$
+
+In the source's indexing $b_n = f_{n-1}$ for $n \ge 1$, the sum is
+$\sum_{n \ge 1} (2 b_n - 1)/n^{2k+1}$.
 
 ## Depends on
 

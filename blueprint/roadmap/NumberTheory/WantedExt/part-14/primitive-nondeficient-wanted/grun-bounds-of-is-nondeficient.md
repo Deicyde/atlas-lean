@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.grun_bounds_of_isNondeficient
 ---
 
-# Lemma
+# Grün's bound for non-deficient numbers
 
-**Lemma** (Grün): if `n` is non-deficient with least prime
-factor `p₁` and `k` distinct prime factors, then
-`(3/2) p₁ - 2 < k`, and if `p₁ ≥ 5` then `p₁ + 2 ≤ k`.
+**Grün's bound for non-deficient numbers.** Let $n$ be a non-deficient number with $k$
+distinct prime factors, the least of which is $p_1$. Then $\tfrac{3}{2} p_1 - 2 < k$, and if
+$p_1 \ge 5$ then $p_1 + 2 \le k$.
 
 ## Depends on
 
-- [Is Nondeficient](is-nondeficient.md)
+- [Non-deficient number](is-nondeficient.md)
 
 ## Sources
 

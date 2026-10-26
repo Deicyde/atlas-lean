@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowAddPowEqSqWanted.three_pow_add_thirtyfive_pow
 ---
 
-# Corollary 4
+# Solutions of $3^x + 35^y = z^2$
 
-**Corollary 4**: the Diophantine equation
-`3^x + 35^y = z^2` has only two nonnegative integer
-solutions, namely `(1, 0, 2)` and `(0, 1, 6)`.
+**Solutions of $3^x + 35^y = z^2$.** The natural numbers $x$, $y$, $z$ with
+$3^x + 35^y = z^2$ are exactly $(x, y, z) = (1, 0, 2)$ and $(x, y, z) = (0, 1, 6)$.
 
 ## Depends on
 

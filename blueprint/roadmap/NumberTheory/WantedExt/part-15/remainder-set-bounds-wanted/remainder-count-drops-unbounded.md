@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.remainderCount_drops_unbounded
 ---
 
-# Remainder Count drops unbounded
+# Unbounded drops in the number of remainders
 
-Proposition 17: `liminf_{n→∞} (s(n+1) - s(n)) = -∞`, i.e. for every `M` there are
-infinitely many `n` with `s(n+1) + M ≤ s(n)`.
+**Unbounded drops in the number of remainders.** Let $s(n)$ be the number of distinct
+remainders $n \bmod k$ with $1 \le k \le \lfloor n/2 \rfloor$. For every natural number $M$
+there are infinitely many $n$ with $s(n+1) + M \le s(n)$; equivalently,
+$\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.
 
 ## Depends on
 
-- [Remainder Count](remainder-count.md)
+- [Remainder count](remainder-count.md)
 
 ## Sources
 

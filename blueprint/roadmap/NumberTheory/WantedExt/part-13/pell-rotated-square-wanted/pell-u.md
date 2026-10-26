@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.pellU
 ---
 
-# Pell U
+# The Pell interpolation function u
 
-The function `u(x) = ((α + β √D)^x + (α - β √D)^x) / 2` of Equation (1.3).
+**The Pell interpolation function u.** For integers $D$, $\alpha$, $\beta$, the function
+$u : \mathbb{R} \to \mathbb{R}$ is
+$u(x) = ((\alpha + \beta\sqrt D)^x + (\alpha - \beta\sqrt D)^x)/2$, where $\sqrt D$ is the real
+square root (zero when $D < 0$) and $(\cdot)^x$ is the real power.
 
 ## Depends on
 

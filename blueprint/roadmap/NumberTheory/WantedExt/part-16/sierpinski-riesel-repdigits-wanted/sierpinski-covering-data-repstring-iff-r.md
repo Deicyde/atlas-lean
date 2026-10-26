@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sierpinskiCoveringData_repstring_iff_riesel
 ---
 
-# Theorem 4.6
+# Theorem 4.6 (Sierpiński and Riesel repstring coverings correspond)
 
-**Theorem 4.6.** For `k, 𝔱, w ≥ 1` and `z ≥ 0`: one fixed set of covering data produces
-`k_2^{(z;t)}` as a Sierpiński number by the covering system method for every `t ≥ 1` with
-`t ≡ 𝔱 (mod w)` if and only if one fixed set of covering data produces `k_2^{(z;t')}` as a Riesel
-number for every `t' ≥ 1` with `t' ≡ -𝔱 (mod w)`.
+**Theorem 4.6 (Sierpiński and Riesel repstring coverings correspond).** Let $k \ge 1$,
+$\mathfrak{t} \ge 1$, $w \ge 1$ and $z \ge 0$ be natural numbers. There is a single finite set
+of triples that is Sierpiński covering data for the $2$-repstring $k_2^{(z;t)}$ for every
+$t \ge 1$ with $t \equiv \mathfrak{t} \pmod{w}$ if and only if there is a single finite set
+of triples that is Riesel covering data for $k_2^{(z;t')}$ for every $t' \ge 1$ with
+$t' \equiv -\mathfrak{t} \pmod{w}$.
 
 ## Depends on
 
-- [Is Riesel Covering Data](is-riesel-covering-data.md)
-- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
-- [Repstring](repstring.md)
+- [Riesel covering data](is-riesel-covering-data.md)
+- [Sierpiński covering data](is-sierpinski-covering-data.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

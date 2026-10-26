@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.gaussianInt_exists_prime_norm_between
 ---
 
-# Gaussian Int exists prime norm between
+# Bertrand's postulate for Gaussian integers
 
-Bertrand's postulate for Gaussian integers: for every Gaussian prime `π` other than the
-associates of `1 + i` (equivalently `N(π) ≠ 2`; the paper's `π_n` with `n ≥ 2`), there is a
-Gaussian prime `ρ` with `N(π) < N(ρ) ≤ 2 N(π)`.
+**Bertrand's postulate for Gaussian integers.** Let $N(a + bi) = a^2 + b^2$ be the norm on the
+Gaussian integers $\mathbb{Z}[i]$. For every prime element $\pi$ of $\mathbb{Z}[i]$ with
+$N(\pi) \ne 2$ (that is, $\pi$ is not an associate of $1 + i$) there is a prime element $\rho$
+of $\mathbb{Z}[i]$ with $N(\pi) < N(\rho) \le 2N(\pi)$.
 
 ## Depends on
 

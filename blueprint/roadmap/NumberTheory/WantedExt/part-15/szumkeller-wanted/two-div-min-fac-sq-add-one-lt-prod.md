@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.two_div_minFac_sq_add_one_lt_prod
 ---
 
-# Two div min Fac sq add one lt prod
+# A prime-factor product bound for s-Zumkeller numbers
 
-For an s-Zumkeller number with least prime factor `p₁`,
-`2/p₁² + 1 < ∏_{p ∣ n} p²/(p² - 1)`.
+**A prime-factor product bound for s-Zumkeller numbers.** Let $n$ be an s-Zumkeller number
+and let $p_1$ be its least prime factor. Then
+
+$$\frac{2}{p_1^2} + 1 < \prod_{p} \frac{p^2}{p^2 - 1},$$
+
+where the product ranges over the distinct prime factors $p$ of $n$.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

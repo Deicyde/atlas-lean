@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.lurothDigit_one
 ---
 
-# Luroth Digit one
+# First Lüroth digit of 1
 
-`d₁(1) = 2`.
+**First Lüroth digit of 1.** The first Lüroth digit of $1$ is $d_1(1) = 2$.
 
 ## Depends on
 
-- [Luroth Digit](luroth-digit.md)
+- [First Lüroth digit](luroth-digit.md)
 
 ## Sources
 

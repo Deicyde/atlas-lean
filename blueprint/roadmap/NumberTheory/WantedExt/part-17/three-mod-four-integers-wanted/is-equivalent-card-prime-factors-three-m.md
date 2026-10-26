@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isEquivalent_card_primeFactors_three_mod_four
 ---
 
-# Theorem 2
+# Counting integers whose prime factors are all $\equiv 3 \pmod 4$
 
-**Theorem 2.** The number `g(x)` of `n ≤ x` all of whose prime factors are
-`≡ -1 (mod 4)` satisfies `g(x) ∼ c x / √(ln x)` with `c = √(e^γ / π) · C / 2`, where
-`C = C(4, 1) = lim (ln x)^{1/2} ∏_{q ≤ x, q ≡ 1 (4)} (1 - 1/q)`.
+**Counting integers whose prime factors are all $\equiv 3 \pmod 4$.** Let $C$ be a real
+number such that $\sqrt{\ln x} \prod_{q \le x} (1 - 1/q) \to C$ as the natural number $x$ tends
+to infinity, where $q$ runs over the primes with $q \equiv 1 \pmod 4$. Let $g(x)$ be the number
+of integers $n$ with $1 \le n \le x$ all of whose prime factors are $\equiv 3 \pmod 4$ (so
+$n = 1$ is counted). Then
 
-`x` runs over the natural numbers. The record's flattened display is read as
-`√(e^γ / π) · C / 2`, matching the paper's value `c = 0.48651…` for `C = 1.29230…`.
+$$g(x) \sim \sqrt{e^\gamma / \pi} \cdot \frac{C}{2} \cdot \frac{x}{\sqrt{\ln x}}$$
+
+as the natural number $x$ tends to infinity, where $\gamma$ is the Euler–Mascheroni constant.
+
+In the source $C = C(4, 1)$ is the constant of Languasco and Zaccagnini; for $C = 1.29230\ldots$
+the constant in front of $x / \sqrt{\ln x}$ is $0.48651\ldots$.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.smallestDenominator_le
 ---
 
-# Smallest Denominator le
+# Denominators of nearby rationals bound the smallest denominator
 
-Any denominator of a rational in the window bounds `q_min(x, δ)`.
+**Denominators of nearby rationals bound the smallest denominator.** Let $x$ and $\delta$ be
+real numbers, let $q$ be a positive integer and let $p$ be an integer. If $|x - p/q| < \delta/2$,
+then the smallest denominator satisfies $q_{\min}(x, \delta) \le q$.
 
 ## Depends on
 
-- [Smallest Denominator](smallest-denominator.md)
+- [Smallest denominator in an interval](smallest-denominator.md)
 
 ## Sources
 

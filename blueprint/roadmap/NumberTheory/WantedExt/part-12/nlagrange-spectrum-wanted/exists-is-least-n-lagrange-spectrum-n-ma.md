@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_isLeast_nLagrangeSpectrum_nMarkoffSpectrum
 ---
 
-# Exists is Least n Lagrange Spectrum n Markoff Spectrum
+# Common minimum of the $n$-Lagrange and $n$-Markoff spectra
 
-`Lₙ` and `Mₙ` have a common minimum.
+**Common minimum of the $n$-Lagrange and $n$-Markoff spectra.** For every integer $n \ge 1$
+there is a real number $\alpha$ that is the least element both of the $n$-Lagrange spectrum $L_n$
+and of the $n$-Markoff spectrum $M_n$.
 
 ## Depends on
 
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

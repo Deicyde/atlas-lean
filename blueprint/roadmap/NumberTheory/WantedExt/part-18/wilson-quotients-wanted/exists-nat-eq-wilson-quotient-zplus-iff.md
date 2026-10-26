@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.exists_nat_eq_wilsonQuotientZPlus_iff
 ---
 
-# Exists nat eq wilson Quotient ZPlus iff
+# When the sign-adjusted Wilson quotient sum is a natural number
 
-Morozov's Theorem 2: `Z^+(n)` is a natural number if and
-only if `n` is even or `1` or prime.
+**When the sign-adjusted Wilson quotient sum is a natural number.** For every natural number
+$n \ge 1$, Morozov's sign-adjusted Wilson quotient sum $Z^+(n)$ is a natural number if and only
+if $n$ is even, $n = 1$, or $n$ is prime.
 
 ## Depends on
 
-- [Wilson Quotient ZPlus](wilson-quotient-zplus.md)
+- [Morozov's sign-adjusted Wilson quotient sum](wilson-quotient-zplus.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: isRegularMod_iff_gcd_sq_eq_gcd
 ---
 
-# Regular Residues Wanted
+# Morgado's characterization of regular integers
 
-Morgado's characterization of regular integers modulo `n`: for
-`0 < n` and `m : ℤ`, the congruence `m^2 x ≡ m (mod n)` is solvable
-in `ℤ` iff `gcd(m^2, n) = gcd(m, n)` iff `gcd(m, n)` is a unitary
-divisor of `n`, i.e. `Nat.Coprime (Nat.gcd m.natAbs n)
-(n / Nat.gcd m.natAbs n)`.
+**Morgado's characterization of regular integers.** Let $n$ be a positive integer and $m$
+an integer, and write $\gcd$ for the nonnegative greatest common divisor. The congruence
+$m^2 x \equiv m \pmod{n}$ has a solution $x \in \mathbb{Z}$ if and only if
+$\gcd(m^2, n) = \gcd(m, n)$, and $\gcd(m^2, n) = \gcd(m, n)$ holds if and only if $\gcd(m, n)$
+and $n / \gcd(m, n)$ are coprime, that is, $\gcd(m, n)$ is a unitary divisor of $n$.
 
 ## Depends on
 

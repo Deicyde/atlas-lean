@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isSquare_of_isSZumkeller_odd
 ---
 
-# Is Square of is SZumkeller odd
+# Odd s-Zumkeller numbers are perfect squares
 
-An odd s-Zumkeller number is a perfect square.
+**Odd s-Zumkeller numbers are perfect squares.** Every odd s-Zumkeller number is a perfect
+square.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

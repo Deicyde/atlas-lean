@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.nicomacheanNu
 ---
 
-# Nicomachean Nu
+# Nicomachean defect
 
-The Nicomachean defect `ν(a_1, …, a_n) = (∑ a_i)^2 - ∑ a_i^3`.
+**Nicomachean defect.** For a finite sequence $\sigma = (a_1, \ldots, a_n)$ of elements of a
+commutative ring, the Nicomachean defect of $\sigma$ is
+$\nu(\sigma) = \left(\sum_{i=1}^n a_i\right)^2 - \sum_{i=1}^n a_i^3$.
 
 ## Depends on
 

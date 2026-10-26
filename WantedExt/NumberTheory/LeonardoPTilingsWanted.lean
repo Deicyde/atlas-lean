@@ -40,12 +40,14 @@ namespace MetaMathlibExt
 
 open MathlibExt.NumberTheory.LeonardoPWanted
 
-/-- Shared-prefix evaluation of the recurrence `a_0 = a₀`, `a_i = 1` for `1 ≤ i ≤ p`,
-`a_n = a_{n-1} + a_{n-p-1} + c` for `n > p`: `lucasTypeSeq p a₀ c n` is the list
-`[a_0, …, a_n]`, built by appending one value per step to the previous list, so each
-earlier value is computed once and evaluation is quadratic in `n` (list append and lookups
-are linear), not exponential as with the naive two-branch recursion. The Lucas and
-Lucas-Leonardo `p`-numbers are the cases `c = 0` and `c = p`.
+/-- **Lucas-type recurrence lists.** Let $\alpha$ be a type with a zero, a one and an addition, let
+$p$ be a natural number and let $a_0, c \in \alpha$. Define $a_i = 1$ for $1 \le i \le p$ and
+$a_n = a_{n-1} + a_{n-p-1} + c$ for $n > p$. For every natural number $n$, the Lucas-type list
+with parameters $p$, $a_0$, $c$ ending at index $n$ is $[a_0, a_1, \dots, a_n]$.
+
+The list is built by appending one value per step, so each earlier value is computed once and
+evaluation is quadratic in $n$, not exponential as with the naive two-branch recursion. The
+Lucas and Lucas-Leonardo $p$-numbers are the cases $c = 0$ and $c = p$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1, display (5). -/
@@ -55,7 +57,9 @@ def lucasTypeSeq {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (a₀ c : α
       let prev := lucasTypeSeq p a₀ c n
       prev ++ [if n + 1 ≤ p then 1 else prev.getD n 0 + prev.getD (n - p) 0 + c]
 
-/-- `lucasTypeSeq p a₀ c n` has `n + 1` entries.
+/-- **Length of a Lucas-type list.** For every type $\alpha$ with a zero, a one and an addition,
+every natural number $p$, all $a_0, c \in \alpha$ and every natural number $n$, the Lucas-type
+list with parameters $p$, $a_0$, $c$ ending at index $n$ has exactly $n + 1$ entries.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasTypeSeq_length {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (a₀ c : α)
@@ -64,7 +68,10 @@ theorem lucasTypeSeq_length {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (
   | zero => rfl
   | succ n ih => simp [lucasTypeSeq, ih]
 
-/-- Entry `i ≤ n` of `lucasTypeSeq p a₀ c n` does not depend on `n`.
+/-- **Entries of a Lucas-type list do not depend on its length.** Let $\alpha$ be a type with a
+zero, a one and an addition, let $p$ be a natural number and let $a_0, c \in \alpha$. For natural
+numbers $i \le n$, the entry at index $i$ of the Lucas-type list with parameters $p$, $a_0$, $c$
+ending at index $n$ equals the entry at index $i$ of the Lucas-type list ending at index $i$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasTypeSeq_getD {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (a₀ c : α)
@@ -84,7 +91,11 @@ theorem lucasTypeSeq_getD {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (a�
     · obtain rfl : i = n + 1 := by omega
       rfl
 
-/-- The last entry of `lucasTypeSeq p a₀ c (n + 1)` is the recurrence step.
+/-- **Last entry of a Lucas-type list.** Let $\alpha$ be a type with a zero, a one and an
+addition, let $p$ be a natural number and let $a_0, c \in \alpha$. Write $S_m$ for the Lucas-type
+list with parameters $p$, $a_0$, $c$ ending at index $m$, and $S_m[i]$ for its entry at index $i$.
+Then for every natural number $n$, $S_{n+1}[n+1] = 1$ if $n + 1 \le p$, and otherwise
+$S_{n+1}[n+1] = S_n[n] + S_{n-p}[n-p] + c$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasTypeSeq_getD_succ {α : Type*} [Zero α] [One α] [Add α] (p : ℕ) (a₀ c : α)
@@ -99,19 +110,22 @@ theorem lucasTypeSeq_getD_succ {α : Type*} [Zero α] [One α] [Add α] (p : ℕ
   rw [List.getElem?_append_right (by rw [lucasTypeSeq_length]), h]
   simp [lucasTypeSeq_length]
 
-/-- The Lucas `p`-numbers: `L_{p,0} = p + 1`, `L_{p,i} = 1` for `1 ≤ i ≤ p`, and
-`L_{p,n} = L_{p,n-1} + L_{p,n-p-1}` for `n > p` (evaluated by `lucasTypeSeq`).
+/-- **Lucas $p$-numbers.** For a natural number $p$, the Lucas $p$-numbers are the natural numbers
+$L_{p,n}$ given by $L_{p,0} = p + 1$, $L_{p,i} = 1$ for $1 \le i \le p$, and
+$L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for $n > p$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1 (after (6)). -/
 def lucasP (p n : ℕ) : ℕ := (lucasTypeSeq p (p + 1) 0 n).getD n 0
 
-/-- `L_{p,0} = p + 1`.
+/-- **Initial Lucas $p$-number.** For every natural number $p$, the Lucas $p$-number $L_{p,0}$
+equals $p + 1$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasP_zero (p : ℕ) : lucasP p 0 = p + 1 := rfl
 
-/-- `L_{p,n} = 1` for `1 ≤ n ≤ p`.
+/-- **Lucas $p$-numbers at indices $1$ to $p$.** For every natural number $p$ and every $n$ with
+$1 \le n \le p$, the Lucas $p$-number $L_{p,n}$ equals $1$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasP_of_le (p : ℕ) {n : ℕ} (h1 : 1 ≤ n) (hn : n ≤ p) : lucasP p n = 1 := by
@@ -119,7 +133,8 @@ theorem lucasP_of_le (p : ℕ) {n : ℕ} (h1 : 1 ≤ n) (hn : n ≤ p) : lucasP 
   rw [lucasP, lucasTypeSeq_getD_succ]
   simp [hn]
 
-/-- `L_{p,n} = L_{p,n-1} + L_{p,n-p-1}` for `n > p`.
+/-- **Recurrence for the Lucas $p$-numbers.** For every natural number $p$, write $L_{p,n}$ for
+the Lucas $p$-numbers. Then $L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for every $n > p$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasP_of_lt (p : ℕ) {n : ℕ} (hn : p < n) :
@@ -128,9 +143,9 @@ theorem lucasP_of_lt (p : ℕ) {n : ℕ} (hn : p < n) :
   rw [lucasP, lucasTypeSeq_getD_succ]
   simp [lucasP, show ¬m + 1 ≤ p by omega, show m + 1 - p - 1 = m - p by omega]
 
-/-- The Lucas-Leonardo `p`-numbers: `R_{p,0} = p² + p + 1`, `R_{p,i} = 1` for
-`1 ≤ i ≤ p`, and `R_{p,n} = R_{p,n-1} + R_{p,n-p-1} + p` for `n > p` (evaluated by
-`lucasTypeSeq`).
+/-- **Lucas-Leonardo $p$-numbers.** For a natural number $p$, the Lucas-Leonardo $p$-numbers are
+the integers $R_{p,n}$ given by $R_{p,0} = p^2 + p + 1$, $R_{p,i} = 1$ for $1 \le i \le p$, and
+$R_{p,n} = R_{p,n-1} + R_{p,n-p-1} + p$ for $n > p$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1, display (5). -/
@@ -164,8 +179,9 @@ theorem lucasLeonardoP_of_lt (p : ℕ) {n : ℕ} (hn : p < n) :
   rw [lucasLeonardoP, lucasTypeSeq_getD_succ]
   simp [lucasLeonardoP, show ¬m + 1 ≤ p by omega, show m + 1 - p - 1 = m - p by omega]
 
-/-- Values check against the recurrence: `L_{1,·} = 2, 1, 3, 4, 7, 11` and
-`R_{1,·} = 3, 1, 5, 7, 13, 21`.
+/-- **First values of the Lucas and Lucas-Leonardo $1$-numbers.** The Lucas $1$-numbers
+$L_{1,0}, \dots, L_{1,5}$ are $2, 1, 3, 4, 7, 11$, and the Lucas-Leonardo $1$-numbers
+$R_{1,0}, \dots, R_{1,5}$ are $3, 1, 5, 7, 13, 21$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1. -/
 theorem lucasP_lucasLeonardoP_one_values :
@@ -296,7 +312,8 @@ def leonardoPTilings (p n : ℕ) : Set (Option (Fin p × ℕ) × List Bool) :=
   {t | (∀ c l, t.1 = some (c, l) → p + 1 ≤ l) ∧
     t.1.elim 0 Prod.snd + (t.2.map fun b => if b then p + 1 else 1).sum = n}
 
-/-- The all-squares tiling lies in `K_{p,n}`.
+/-- **The all-squares tiling is a Leonardo $p$-tiling.** For all natural numbers $p$ and $n$, the
+linear tiling of an $n$-board by $n$ squares, with no $p$-tile, lies in the tiling set $K_{p,n}$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 2. -/
 theorem replicate_mem_leonardoPTilings (p n : ℕ) :
@@ -352,7 +369,9 @@ def lucasLeonardoBracelets (p n : ℕ) : Set (BraceletFirstTile p × List Bool) 
   {b | (∀ c l, b.1 = .longTile c l → p + 2 ≤ l) ∧
     b.1.length + (b.2.map fun t => if t then p + 1 else 1).sum = n}
 
-/-- The all-squares bracelet lies in `B_{p,n}` for `n ≥ 1`.
+/-- **The all-squares bracelet is a Lucas–Leonardo bracelet.** For every natural number $p$ and
+every natural number $n \ge 1$, the bracelet whose first tile is a curved square covering cell $1$
+and whose remaining $n - 1$ pieces are all curved squares lies in the bracelet set $B_{p,n}$.
 
 Source: Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 3. -/
 theorem square_replicate_mem_lucasLeonardoBracelets (p n : ℕ) (hn : 1 ≤ n) :
@@ -404,8 +423,13 @@ public theorem_wanted incompleteLeonardoP_succ (p n k : ℕ) (hp : 1 ≤ p) (hn 
     incompleteLeonardoP p n (k + 1) =
       incompleteLeonardoP p (n - 1) (k + 1) + incompleteLeonardoP p (n - p - 1) k + p
 
-/-- **Proposition 7**: for `n ≥ p + r` and `0 ≤ k ≤ ⌊(n - p - r)/(p+1)⌋`,
-`∑_{i=0}^{r} C(r, i) 𝓛_{p,n+pi}(k + i) + (2^r - 1) p = 𝓛_{p,n+(p+1)r}(k + r)`.
+/-- **Binomial sum identity for incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$,
+$n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$, the
+incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$ satisfy
+$$
+\sum_{i=0}^{r} \binom{r}{i} \mathcal{L}_{p,n+pi}(k + i) + (2^r - 1) p =
+\mathcal{L}_{p,n+(p+1)r}(k + r).
+$$
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 7. -/
@@ -415,8 +439,14 @@ public theorem_wanted sum_choose_mul_incompleteLeonardoP (p n r k : ℕ) (hp : 1
         ((2 : ℤ) ^ r - 1) * p =
       incompleteLeonardoP p (n + (p + 1) * r) (k + r)
 
-/-- **Proposition 8**: for `n ≥ (p + 1)(k + 1)`,
-`∑_{i=0}^{r-1} 𝓛_{p,n-p+i}(k) + rp = 𝓛_{p,n+r}(k + 1) - 𝓛_{p,n}(k + 1)`.
+/-- **Partial sums of incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$, $n$, $k$ and
+$r$ with $n \ge (p + 1)(k + 1)$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
+satisfy
+$$
+\sum_{i=0}^{r-1} \mathcal{L}_{p,n-p+i}(k) + rp =
+\mathcal{L}_{p,n+r}(k + 1) - \mathcal{L}_{p,n}(k + 1),
+$$
+where the sum is empty when $r = 0$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 8. -/
@@ -502,7 +532,9 @@ Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 14. -/
 public theorem_wanted lucasLeonardoP_eq_leonardoPK (p n : ℕ) (hp : 1 ≤ p) :
     lucasLeonardoP p n = ((p : ℤ) + 1) * leonardoPK p p n - p * leonardoPKZ p p ((n : ℤ) - 1)
 
-/-- **Proposition 15**: `∑_{i=0}^{n} R_{p,i} = R_{p,n+p+1} - p(n + 1) - 1`.
+/-- **Sum of the Lucas-Leonardo p-numbers.** For every natural number $p \ge 1$ and every natural
+number $n$, the Lucas-Leonardo $p$-numbers $R_{p,m}$ satisfy
+$\sum_{i=0}^{n} R_{p,i} = R_{p,n+p+1} - p(n + 1) - 1$.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 15. -/
@@ -510,7 +542,9 @@ public theorem_wanted sum_lucasLeonardoP (p n : ℕ) (hp : 1 ≤ p) :
     ∑ i ∈ Finset.range (n + 1), lucasLeonardoP p i =
       lucasLeonardoP p (n + p + 1) - p * ((n : ℤ) + 1) - 1
 
-/-- **Proposition 16**: `∑_{i=0}^{n} R_{p,(p+1)i} = R_{p,(p+1)n+1} - p(n - p - 1)`.
+/-- **Sum of the Lucas-Leonardo p-numbers at multiples of $p + 1$.** For every natural number
+$p \ge 1$ and every natural number $n$, the Lucas-Leonardo $p$-numbers $R_{p,m}$ satisfy
+$\sum_{i=0}^{n} R_{p,(p+1)i} = R_{p,(p+1)n+1} - p(n - p - 1)$, an identity of integers.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 16. -/
@@ -536,10 +570,15 @@ public theorem_wanted incompleteLucasLeonardoP_succ (p n k : ℕ) (hp : 1 ≤ p)
       incompleteLucasLeonardoP p (n - 1) (k + 1) + incompleteLucasLeonardoP p (n - p - 1) k +
         p
 
-/-- **Proposition 18**: for `n ≥ p + r` and `0 ≤ k ≤ ⌊(n - p - r)/(p+1)⌋`,
-`∑_{i=0}^{r} C(r, i) R_{p,n+pi}(k + i) + (2^r - 1) p = R_{p,n+(p+1)r}(k + r)` (the printed
-range `0 ≤ n ≤ ⌊(n-p-r)/(p+1)⌋` is read with `k` for the first `n`, as in
-Proposition 7).
+/-- **Binomial sum identity for incomplete Lucas-Leonardo p-numbers.** For natural numbers
+$p \ge 1$, $n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$,
+the incomplete Lucas-Leonardo $p$-numbers $R_{p,m}(j)$ satisfy, as rational numbers,
+$$
+\sum_{i=0}^{r} \binom{r}{i} R_{p,n+pi}(k + i) + (2^r - 1) p = R_{p,n+(p+1)r}(k + r).
+$$
+
+The paper prints the range as $0 \le n \le \lfloor (n - p - r)/(p + 1) \rfloor$; the first $n$
+is read as $k$, as in Proposition 7.
 
 Source: Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and
 Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 18. -/

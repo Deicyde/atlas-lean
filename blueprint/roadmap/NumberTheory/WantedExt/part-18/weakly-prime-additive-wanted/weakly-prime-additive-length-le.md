@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.weaklyPrimeAdditiveLength_le
 ---
 
-# Weakly Prime Additive Length le
+# The length is at most the size of any representation
 
-The length is at most the size of any representation.
+**The length is at most the size of any representation.** For natural numbers $n$ and $t$,
+if $n$ is a sum of positive powers of $t$ distinct prime divisors of $n$, then the length
+$\kappa_n$ of $n$ is at most $t$.
 
 ## Depends on
 
-- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
-- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
+- [Sums of powers of distinct prime divisors](is-prime-divisor-power-sum.md)
+- [Weakly prime-additive length](weakly-prime-additive-length.md)
 
 ## Sources
 

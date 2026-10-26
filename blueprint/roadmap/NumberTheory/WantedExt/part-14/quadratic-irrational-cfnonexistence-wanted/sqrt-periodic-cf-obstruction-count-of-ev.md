@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sqrt_periodicCF_obstruction_count_of_even
 ---
 
-# Sqrt periodic CF obstruction count of even
+# Number of unrealizable parity patterns for $\sqrt{d}$, even length
 
-Theorem 4: for even `l ≥ 4`, let `B` be the number of parity patterns
-`(a₁, …, a_{l/2}) ∈ (ℤ/2)^{l/2}` such that no symmetric sequence of positive integers
-`a₁, …, a_{l-1}` with these parities admits a positive nonsquare `d` with
-`√d = [a₀; a₁, …, a_{l-1}, 2a₀]`. Then `3B = 2^{(l-2)/2} - (-1)^{(l-2)/2}`.
+**Number of unrealizable parity patterns for $\sqrt{d}$, even length.** Let $l \ge 4$ be
+even. Call a parity pattern $(v_1, \dots, v_{l/2}) \in (\mathbb{Z}/2)^{l/2}$ realizable if there
+are positive integers $a_1, \dots, a_{l-1}$ with $a_i = a_{l-i}$ for $1 \le i \le l - 1$ and
+$a_j \equiv v_j \pmod 2$ for $1 \le j \le l/2$, a natural number $d$ that is not a perfect square
+and a natural number $a_0$ with $\sqrt{d} = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0}]$. If $B$
+is the number of parity patterns that are not realizable, then
+$3B = 2^{l/2 - 1} - (-1)^{l/2 - 1}$.
 
 ## Depends on
 
-- [Has Periodic CF](has-periodic-cf.md)
+- [Continued fractions with a prescribed period](has-periodic-cf.md)
 
 ## Sources
 

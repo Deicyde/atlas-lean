@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isSierpinskiNumber_repstring_18107
 ---
 
-# Theorem 3.5
+# Binary repintegers of 18107 that are Sierpiński numbers
 
-**Theorem 3.5.** For `t ≡ 25 (mod 56)`, `18107_2^{(t)}` is a Sierpiński number.
+**Binary repintegers of 18107 that are Sierpiński numbers.** For every natural number
+$t \equiv 25 \pmod{56}$, the binary repinteger $18107_2^{(t)} = 18107\,(2^{15t} - 1)/(2^{15} - 1)$,
+whose binary expansion is that of $18107$ (fifteen binary digits) written $t$ times, is a
+Sierpiński number.
 
 ## Depends on
 
-- [Is Sierpinski Number](is-sierpinski-number.md)
-- [Repstring](repstring.md)
+- [Sierpiński number](is-sierpinski-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

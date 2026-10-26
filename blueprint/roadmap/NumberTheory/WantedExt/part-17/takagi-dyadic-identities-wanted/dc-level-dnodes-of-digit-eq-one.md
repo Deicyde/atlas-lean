@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.dcLevelDNodes_of_digit_eq_one
 ---
 
-# Dc Level DNodes of digit eq one
+# Level count of D-nodes when the binary digit is one
 
-`λᵢ(n) = 2^i - (n mod 2^i)` when `nᵢ = 1`.
+**Level count of D-nodes when the binary digit is one.** Let $n$ and $i$ be natural numbers
+such that the binary digit $n_i$ of $n$ (the coefficient of $2^i$ in the binary expansion of
+$n$) equals $1$. Then the level count of D-nodes is $\lambda_i(n) = 2^i - (n \bmod 2^i)$.
 
 ## Depends on
 
-- [Dc Level DNodes](dc-level-dnodes.md)
+- [Level counts of D-nodes](dc-level-dnodes.md)
 
 ## Sources
 

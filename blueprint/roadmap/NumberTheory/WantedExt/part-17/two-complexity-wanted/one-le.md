@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.CanBuild.one_le
 ---
 
-# One le
+# Every build uses at least one copy
 
-Every build uses at least one copy.
+**Every build uses at least one copy.** If $n$ can be obtained from $k$ copies of $l$ using
+addition and multiplication, then $k \ge 1$.
 
 ## Depends on
 
-- [Can Build](can-build.md)
+- [Numbers built from copies of $l$](can-build.md)
 
 ## Sources
 

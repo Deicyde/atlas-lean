@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_robinExceptionalSet_isBigO_div_sqrt_log
 ---
 
-# Card robin Exceptional Set is Big O div sqrt log
+# Failures of Robin's inequality number $O(x/\sqrt{\log x})$
 
-Theorem 2: `N_R(x) = O(x / sqrt (log x))`, with `N_R(x)` the cardinality of
-`robinExceptionalSet x`.
+**Failures of Robin's inequality number $O(x/\sqrt{\log x})$.** Let $N_R(x)$ be the number
+of elements of the Robin exceptional set up to $x$. Then $N_R(x) = O(x / \sqrt{\log x})$ as the
+real number $x$ tends to infinity.
 
 ## Depends on
 
-- [Robin Exceptional Set](robin-exceptional-set.md)
+- [Robin exceptional set](robin-exceptional-set.md)
 
 ## Sources
 

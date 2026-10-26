@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.rogersRamanujanContFracReal_zero
 ---
 
-# Rogers Ramanujan Cont Frac Real zero
+# The Rogers–Ramanujan continued fraction vanishes at zero
 
-`R(0) = 0`.
+**The Rogers–Ramanujan continued fraction vanishes at zero.** The real Rogers–Ramanujan
+continued fraction $R$ satisfies $R(0) = 0$.
 
 ## Depends on
 

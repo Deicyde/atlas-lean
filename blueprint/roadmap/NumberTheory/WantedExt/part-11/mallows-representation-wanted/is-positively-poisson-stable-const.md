@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isPositivelyPoissonStable_const
 ---
 
-# Is Positively Poisson Stable const
+# Constant sequences are positively Poisson stable
 
-Characteristic property: constant sequences are positively Poisson stable.
+**Constant sequences are positively Poisson stable.** For every set $A$ and every $c \in A$,
+the constant sequence $(c, c, c, \dots)$ is positively Poisson stable.
 
 ## Depends on
 
-- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
+- [Positively Poisson stable sequence](is-positively-poisson-stable.md)
 
 ## Sources
 

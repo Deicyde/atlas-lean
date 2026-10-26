@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsLehmerEquationSolution
 ---
 
-# Is Lehmer Equation Solution
+# Solutions of the Lehmer equation
 
-`x` (a multiset of integers `x_j ≥ 2`) solves Equation (1),
-`k ∏ (x_j - 1) = ∏ x_j - 1`, for some `k ∈ ℤ_{>0}`.
+**Solutions of the Lehmer equation.** A finite multiset $x$ of natural numbers solves
+Equation (1) if every element $x_j$ of $x$ satisfies $x_j \ge 2$ and there is a positive integer
+$k$ with $k \prod_j (x_j - 1) = \prod_j x_j - 1$, where the products run over the elements of $x$
+with multiplicity and are computed in $\mathbb{Z}$.
 
 ## Depends on
 

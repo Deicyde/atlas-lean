@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotLabel
 ---
 
-# Stern Brocot Label
+# Labels of the Stern–Brocot tree
 
-The label of the Stern–Brocot-tree vertex (of the left subtree, root `1/2`) reached from
-the root by the path `w`.
+**Labels of the Stern–Brocot tree.** Fractions are pairs (numerator, denominator) of
+natural numbers, and the mediant of $n_1/m_1$ and $n_2/m_2$ is $(n_1 + n_2)/(m_1 + m_2)$. For a
+word $w$ over $\{L, R\}$, start from the gap $(0/1, 1/1)$ and read $w$ from left to right,
+replacing the current gap $(a, b)$, with mediant $c$, by $(a, c)$ for each $L$ and by $(c, b)$
+for each $R$. The label of $w$ is the mediant of the final gap: the label of the vertex reached
+from the root by the path $w$ in the left subtree of the Stern–Brocot tree, whose root is $1/2$.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
 
 ## Proof depends on
 
-- [Gap Mediant](gap-mediant.md)
-- [Stern Brocot Child](stern-brocot-child.md)
+- [Mediant of a gap](gap-mediant.md)
+- [Children in the Stern–Brocot tree](stern-brocot-child.md)
 
 ## Sources
 

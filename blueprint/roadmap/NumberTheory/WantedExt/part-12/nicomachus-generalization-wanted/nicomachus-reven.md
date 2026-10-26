@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusREven
 ---
 
-# Nicomachus REven
+# The even-case square $R_{m,e}$
 
-`R_{m,e}(x) = (T_{2m} + (1 + T_m)x)²`.
+**The even-case square $R_{m,e}$.** For a natural number $m$ and a real number $x$,
+
+$$R_{m,e}(x) = \bigl(T_{2m} + (1 + T_m)\,x\bigr)^2,$$
+
+where $T_n = n(n+1)/2$ is the $n$-th triangular number.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nicomachus Triangular](nicomachus-triangular.md)
+- [Triangular numbers as reals](nicomachus-triangular.md)
 
 ## Sources
 

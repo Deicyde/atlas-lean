@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.bijOn_mallowsQ
 ---
 
-# Bij On mallows Q
+# Hida's map $Q$ is a bijection onto $I$
 
-For every irrational `α ∈ (0, 1)`, `Q(SB(α))` belongs to `I`, and `Q` is a bijection from the
-set of Stern–Brocot representations onto `I` (`Set.BijOn` includes the first claim).
+**Hida's map $Q$ is a bijection onto $I$.** Let $\mathrm{SB}(\alpha)$ be the Stern–Brocot
+representation of a real number $\alpha$, let $Q$ be Hida's map from sequences over $\{L, R\}$ to
+sequences over $\{O_L, E_R, O_R, E_L\}$, and let $I$ be the set of admissible sequences over
+$\{O_L, E_R, O_R, E_L\}$. Then $Q$ maps the set of Stern–Brocot representations
+$\{\mathrm{SB}(\alpha) : \alpha \in (0, 1) \text{ irrational}\}$ bijectively onto $I$: for every
+irrational $\alpha \in (0, 1)$ the sequence $Q(\mathrm{SB}(\alpha))$ lies in $I$, $Q$ is injective
+on this set of representations, and every element of $I$ equals $Q(\mathrm{SB}(\alpha))$ for some
+irrational $\alpha \in (0, 1)$.
 
 ## Depends on
 
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Mallows Admissible](mallows-admissible.md)
-- [Mallows Q](mallows-q.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [The admissible parity sequences $I$](mallows-admissible.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

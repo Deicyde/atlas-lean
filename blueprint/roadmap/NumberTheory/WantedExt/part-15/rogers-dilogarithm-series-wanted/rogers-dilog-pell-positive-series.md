@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.rogersDilog_pell_positive_series
 ---
 
-# Rogers Dilog pell positive series
+# Bridgeman's dilogarithm series for a positive Pell solution
 
-Bridgeman's series for a positive Pell solution: let `n` be a positive non-square integer and
-`u = a + b√n` with rationals `a, b > 0` and `a² - n b² = 1`, and let `u^k = a_k + b_k √n` (the
-sequences `A, B` given by the multiplication recurrence). Then
-`L(1/u²) = ∑_{k ≥ 2} L(b²/b_k²)`, and if `a, b` are integers then `b ∣ b_k` for every `k`.
+**Bridgeman's dilogarithm series for a positive Pell solution.** Write
+$L(x) = \sum_{m \ge 1} x^m/m^2 + \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on
+$[0, 1]$ (with $\log 0 = 0$). Let $n$ be a natural number that is not a perfect square, let
+$a, b$ be positive rationals with $a^2 - n b^2 = 1$, and put $u = a + b\sqrt{n}$. Define rationals
+$a_k, b_k$ by $a_0 = 1$, $b_0 = 0$, $a_{k+1} = a a_k + n b b_k$ and $b_{k+1} = b a_k + a b_k$,
+so that $u^k = a_k + b_k\sqrt{n}$. Then
+
+$$
+L(1/u^2) = \sum_{k \ge 2} L(b^2/b_k^2),
+$$
+
+and if $a$ and $b$ are integers, then for every $k \ge 0$ there is an integer $m$ with $b_k = bm$.
 
 ## Depends on
 

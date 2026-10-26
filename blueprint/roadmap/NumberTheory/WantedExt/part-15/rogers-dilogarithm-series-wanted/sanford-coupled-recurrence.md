@@ -5,12 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sanford_coupled_recurrence
 ---
 
-# Sanford coupled recurrence
+# Sanford's coupled recurrence
 
-Sanford's coupled recurrence: for `a, b ∈ (0, 1)` with `a ≠ b`, the sequences
-`x_n = a(a - b)(1 - b)ⁿ / (a(1 - b)^{n+1} - b(1 - a)^{n+1})` and
-`y_n = b(a - b)(1 - a)ⁿ / (a(1 - b)^{n+1} - b(1 - a)^{n+1})` satisfy
-`x_{n+1} = x_n(1 - y_n)/(1 - x_n y_n)` and `y_{n+1} = y_n(1 - x_n)/(1 - x_n y_n)`.
+**Sanford's coupled recurrence.** Let $a, b$ be real numbers in $(0, 1)$ with $a \ne b$, and
+for every natural number $m$ put
+
+$$
+x_m = \frac{a(a - b)(1 - b)^m}{a(1 - b)^{m+1} - b(1 - a)^{m+1}}, \qquad
+y_m = \frac{b(a - b)(1 - a)^m}{a(1 - b)^{m+1} - b(1 - a)^{m+1}}.
+$$
+
+Then for every natural number $n$,
+
+$$
+x_{n+1} = \frac{x_n(1 - y_n)}{1 - x_n y_n} \quad\text{and}\quad
+y_{n+1} = \frac{y_n(1 - x_n)}{1 - x_n y_n}.
+$$
 
 ## Depends on
 

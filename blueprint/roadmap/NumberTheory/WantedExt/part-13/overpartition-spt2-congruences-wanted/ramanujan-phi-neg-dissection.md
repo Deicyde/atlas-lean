@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanPhi_neg_dissection
 ---
 
-# Ramanujan Phi neg dissection
+# 3-dissection of the product form of Ramanujan's phi function at negated argument
 
-For every complex `q` of norm less than one, the product form `f₁²/f₂` of Ramanujan's
-`φ(-q)` equals `f₉²/f₁₈ - 2q f₃ f₁₈²/(f₆ f₉)`. Both the left-hand product substitution
-for `φ(-q)` and every `f_k` expansion are explicit; these are the only notational deviations.
+**3-dissection of the product form of Ramanujan's phi function at negated argument.** Let $q$ be
+a complex number with $|q| < 1$, and for $k \ge 1$ let
+$f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the raw infinite
+q-Pochhammer product. Then
+
+$$\frac{f_1^2}{f_2} = \frac{f_9^2}{f_{18}} - 2q \frac{f_3 f_{18}^2}{f_6 f_9}.$$
+
+Here $f_1^2/f_2$ is the product form of $\varphi(-q)$, where
+$\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ is Ramanujan's theta function.
 
 ## Depends on
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.sternBrocotLabel_small
 ---
 
-# Stern Brocot Label small
+# Small labels of the Stern–Brocot tree
 
-Characteristic values: the root is `1/2`; the path `L R` leads to `2/5`.
+**Small labels of the Stern–Brocot tree.** In the left subtree of the Stern–Brocot tree,
+the root (reached by the empty path) is labelled $1/2$, and the vertex reached from the root by
+the path $LR$ is labelled $2/5$, as numerator–denominator pairs.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Stern Brocot Label](stern-brocot-label.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Labels of the Stern–Brocot tree](stern-brocot-label.md)
 
 ## Sources
 

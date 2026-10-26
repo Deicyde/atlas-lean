@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_sq_add_sq_modEq_prime_pow
 ---
 
-# Exists sq add sq mod Eq prime pow
+# Sums of two squares modulo prime powers
 
-For a prime `p ≡ 1 (mod 4)` and positive `n, k` there are positive `x, y` with
-`x² + y² ≡ n (mod p^k)` and `p ∤ y`.
+**Sums of two squares modulo prime powers.** Let $p$ be a prime with $p \equiv 1 \pmod{4}$.
+For all natural numbers $n > 0$ and $k > 0$ there are natural numbers $x, y > 0$ with
+$x^2 + y^2 \equiv n \pmod{p^k}$ and $p \nmid y$.
 
 ## Depends on
 

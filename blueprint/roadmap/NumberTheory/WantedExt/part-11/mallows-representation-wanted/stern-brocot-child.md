@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotChild
 ---
 
-# Stern Brocot Child
+# Children in the Stern–Brocot tree
 
-The child gap of a Stern–Brocot vertex with gap `(a, b)` (label `a ⊕ b`).
+**Children in the Stern–Brocot tree.** Fractions are pairs $(n, m)$ of natural numbers
+(numerator, denominator), and the mediant of $a = n_1/m_1$ and $b = n_2/m_2$ is
+$a \oplus b = (n_1 + n_2)/(m_1 + m_2)$. The child of a gap $(a, b)$ in direction $L$ is the
+gap $(a, a \oplus b)$, and its child in direction $R$ is the gap $(a \oplus b, b)$. For the gap
+of a Stern–Brocot vertex, whose label is $a \oplus b$, these are the gaps of its left and right
+children.
 
 ## Depends on
 
-- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
 
 ## Proof depends on
 
-- [Gap Mediant](gap-mediant.md)
+- [Mediant of a gap](gap-mediant.md)
 
 ## Sources
 

@@ -5,20 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_sum_expectation_distinct_tuples
 ---
 
-# Tendsto sum expectation distinct tuples
+# Sums of expectations over distinct tuples tend to one
 
-For `f ∈ ℤ[x, y]` such that, for all sufficiently large primes `p`, `f`, `f_x`, `f_y` have no
-common zero modulo `p`, with `|C_f(𝔽_p)|/p → 1`, assuming Conjecture 1 for `f`: for every
-`k ≥ 1`, `∑_{l₁ ≠ ⋯ ≠ l_k} E[Y_{l₁} ⋯ Y_{l_k}] → 1` as `p → ∞` through the primes. The paper's
-proof takes `|C_f(𝔽_p)|/p → 1` from the Hasse–Weil bounds, which need an irreducibility
-hypothesis the paper does not state; it is assumed directly here.
+**Sums of expectations over distinct tuples tend to one.** Let $f \in \mathbb{Z}[x, y]$ have
+partial derivatives $f_x$ and $f_y$, and for a prime $p$ let $C_f(\mathbb{F}_p)$ be the set of
+pairs of integers $0 \le r, s < p$ with $p \mid f(r, s)$. Suppose that there is a natural number
+$P_0$ such that for every prime $p \ge P_0$ and all integers $x, y$, the integers $f(x, y)$,
+$f_x(x, y)$ and $f_y(x, y)$ are not all divisible by $p$; that $|C_f(\mathbb{F}_p)|/p \to 1$ as
+$p \to \infty$ through the primes; and that Conjecture 1 holds for $f$. For a tuple $P$ of points
+of $C_f(\mathbb{F}_p)$, let $N(P)$ be the number of pairs $(a, b)$ with $0 \le a, b < p$ such that
+$p^2 \mid f(r + ap, s + bp)$ for every point $(r, s)$ of $P$. Then for every $k \ge 1$,
+$\sum_P N(P)/p^2 \to 1$ as $p \to \infty$ through the primes, where $P$ runs over the $k$-tuples
+of pairwise distinct points of $C_f(\mathbb{F}_p)$.
+
+In the paper's notation the sum is $\sum_{l_1 \ne \dots \ne l_k} E[Y_{l_1} \cdots Y_{l_k}]$.
+The paper's proof takes $|C_f(\mathbb{F}_p)|/p \to 1$ from the Hasse–Weil bounds, which need an
+irreducibility hypothesis the paper does not state; it is assumed directly here.
 
 ## Depends on
 
-- [Valuation Conjecture One](valuation-conjecture-one.md)
-- [Valuation Common Lift Count](valuation-common-lift-count.md)
-- [Valuation Curve Points](valuation-curve-points.md)
-- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
+- [Rajkumar–Shubham Conjecture 1](valuation-conjecture-one.md)
+- [Common lift count](valuation-common-lift-count.md)
+- [Points of $C_f(\mathbb{F}_p)$](valuation-curve-points.md)
+- [Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$](valuation-distinct-tuples.md)
 
 ## Sources
 

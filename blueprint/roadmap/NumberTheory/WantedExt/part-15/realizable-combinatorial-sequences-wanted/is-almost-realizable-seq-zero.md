@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isAlmostRealizableSeq_zero
 ---
 
-# Is Almost Realizable Seq zero
+# The zero sequence is almost realizable
 
-The zero sequence is almost realizable (by the self-map of the empty set, with `m = 1`).
+**The zero sequence is almost realizable.** The constant sequence $a(n) = 0$ is almost
+realizable.
+
+It is realized by the self-map of the empty set, with multiplier $m = 1$.
 
 ## Depends on
 
-- [Is Almost Realizable Seq](is-almost-realizable-seq.md)
+- [Almost realizable sequences](is-almost-realizable-seq.md)
 
 ## Proof depends on
 

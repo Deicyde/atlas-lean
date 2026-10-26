@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.half_one_add_sqrt_hasPeriodicCF_exists_classification
 ---
 
-# Half one add sqrt has Periodic CF exists classification
+# Existence of $(1 + \sqrt{d})/2$ with a given symmetric period
 
-Theorem 3: for a symmetric sequence of positive integers `a₁, …, a_{l-1}`, (i) if `l` is
-odd, some positive nonsquare `d ≡ 1 (mod 4)` has `(1 + √d)/2 = [a₀; a₁, …, a_{l-1}, 2a₀ - 1]`; (ii) if `l`
-is even (and positive), such a `d` exists if and only if `a_{l/2}` is odd.
+**Existence of $(1 + \sqrt{d})/2$ with a given symmetric period.** Let $l$ be a natural number
+and $a_1, \dots, a_{l-1}$ positive integers with $a_i = a_{l-i}$ for $1 \le i < l$. If $l$ is odd,
+there are natural numbers $d$ and $a_0$ with $d \equiv 1 \pmod 4$, $d$ not a perfect square, and
+$(1 + \sqrt{d})/2 = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0 - 1}]$. If $l$ is even and positive,
+such $d$ and $a_0$ exist if and only if $a_{l/2}$ is odd.
 
 ## Depends on
 
-- [Has Periodic CF](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
+- [Continued fractions with a prescribed period](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
 
 ## Sources
 

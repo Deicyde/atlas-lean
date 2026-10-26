@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaSigma
 ---
 
-# Mock Theta Sigma
+# The sixth-order mock theta function $\sigma(q)$
 
-The sixth-order mock theta function
-`σ(q) = ∑_{n ≥ 0} q^{(n+1)(n+2)/2} (-q; q)_n / (q; q^2)_{n+1}` as an integer power series;
-the `n`th summand has order `(n+1)(n+2)/2 > n`, so the coefficient of `q^m` only involves
-the summands `n ≤ m`.
+**The sixth-order mock theta function $\sigma(q)$.** The mock theta function
+$\sigma(q) = \sum_{n \ge 0} q^{(n+1)(n+2)/2} (-q; q)_n / (q; q^2)_{n+1}$, where
+$(-q; q)_n = \prod_{k=1}^{n} (1 + q^k)$ and $(q; q^2)_{n+1} = \prod_{k=0}^{n} (1 - q^{2k+1})$, is
+taken as a power series in $q$ with integer coefficients.
+
+The $n$th summand has order $(n+1)(n+2)/2 > n$, so the coefficient of $q^m$ only involves the
+summands with $n \le m$.
 
 ## Depends on
 

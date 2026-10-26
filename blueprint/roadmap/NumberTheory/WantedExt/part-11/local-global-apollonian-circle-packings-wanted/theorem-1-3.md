@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.theorem_1_3
 ---
 
-# Theorem 1 3
+# Infinitely many packings with many missing curvatures
 
-Statement of Theorem 1.3:
-
-There exist infinitely many `A` for which the number of missing curvatures up to `N` is `Ω(√N)`.
+**Infinitely many packings with many missing curvatures.** For a primitive Apollonian circle
+packing $\mathcal{A}$ and a real number $N$, let $M_{\mathcal{A}}(N)$ be the number of missing
+curvatures of $\mathcal{A}$ up to $N$. There are infinitely many primitive Apollonian circle
+packings $\mathcal{A}$ such that $\sqrt{N} = O(M_{\mathcal{A}}(N))$ as $N$ tends to infinity.
+In other words, for these packings the number of missing curvatures up to $N$ is
+$\Omega(\sqrt{N})$.
 
 ## Depends on
 
-- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
-- [Missing Curvatures](missing-curvatures.md)
+- [Primitive Apollonian circle packing](primitive-apollonian-circle-packing.md)
+- [Number of missing curvatures](missing-curvatures.md)
 
 ## Sources
 

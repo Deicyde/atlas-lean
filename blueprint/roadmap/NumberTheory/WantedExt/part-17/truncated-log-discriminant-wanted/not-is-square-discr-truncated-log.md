@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_isSquare_discr_truncatedLog
 ---
 
-# Not is Square discr truncated Log
+# Nonsquare discriminants of truncated logarithmic polynomials
 
-If `n ≡ 0, 2, 3 (mod 4)` (`n ≥ 1`), or `n ≡ 1 (mod 4)` is an odd power of a
-prime, then `disc(F_n)` is not a rational square.
+**Nonsquare discriminants of truncated logarithmic polynomials.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial and let
+$n \ge 1$. If $n \equiv 0$, $2$ or $3 \pmod 4$, or if $n \equiv 1 \pmod 4$ and $n = p^e$ for a
+prime $p$ and an odd $e$, then the discriminant of $F_n$ is not a square in $\mathbb{Q}$.
 
 ## Depends on
 
-- [Truncated Log Polynomial](truncated-log-polynomial.md)
+- [Truncated logarithmic polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

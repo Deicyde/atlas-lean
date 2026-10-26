@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.truncatedLogPolynomial
 ---
 
-# Truncated Log Polynomial
+# Truncated logarithmic polynomial
 
-The truncated logarithmic polynomial `F_n(x) = 1 + x + x²/2 + ⋯ + xⁿ/n`.
+**Truncated logarithmic polynomial.** For a natural number $n$, the truncated logarithmic
+polynomial is $F_n(x) = 1 + x + \frac{x^2}{2} + \dots + \frac{x^n}{n} \in \mathbb{Q}[x]$.
 
 ## Depends on
 

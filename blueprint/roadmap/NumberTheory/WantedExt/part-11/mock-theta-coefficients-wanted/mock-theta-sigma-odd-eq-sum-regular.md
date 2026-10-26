@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaSigma_odd_eq_sum_regular
 ---
 
-# Mock Theta Sigma odd eq sum regular
+# Sum formula for the odd-indexed coefficients of $\sigma(q)$
 
-Theorem 7: `P_σ(2n+1) = ∑_{m ≥ 0} b_2^2(n - (3m^2+3m)/2)`, where `b_2^2(k)` is the
-coefficient of `q^k` in `(f_2/f_1)^2` (Equation (8)) and vanishes for `k < 0`.
+**Sum formula for the odd-indexed coefficients of $\sigma(q)$.** Let $P_\sigma(n)$ be the
+coefficient of $q^n$ in the sixth-order mock theta function $\sigma(q)$, for $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $b_2^2(k)$ be the coefficient of $q^k$ in the
+integer power series $(f_2 / f_1)^2$. Then for every $n \ge 0$,
+$P_\sigma(2n+1) = \sum_{m \ge 0,\ (3m^2+3m)/2 \le n} b_2^2\bigl(n - (3m^2+3m)/2\bigr)$.
 
 ## Depends on
 
-- [Mock Theta Sigma](mock-theta-sigma.md)
+- [The sixth-order mock theta function $\sigma(q)$](mock-theta-sigma.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

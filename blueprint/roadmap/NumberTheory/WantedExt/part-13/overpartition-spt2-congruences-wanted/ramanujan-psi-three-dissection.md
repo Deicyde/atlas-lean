@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanPsi_three_dissection
 ---
 
-# Ramanujan Psi three dissection
+# 3-dissection of the product form of Ramanujan's psi function
 
-For every complex `q` of norm less than one, the product form
-`f₂²/f₁` of Ramanujan's `ψ(q)` equals `f₆ f₉²/(f₃ f₁₈) + q f₁₈²/f₉`.
-Both the left-hand product substitution for `ψ` and every `f_k` expansion are explicit; these
-are the only notational deviations.
+**3-dissection of the product form of Ramanujan's psi function.** Let $q$ be a complex number
+with $|q| < 1$, and for $k \ge 1$ let
+$f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the raw infinite
+q-Pochhammer product. Then
+
+$$\frac{f_2^2}{f_1} = \frac{f_6 f_9^2}{f_3 f_{18}} + q \frac{f_{18}^2}{f_9}.$$
+
+Here $f_2^2/f_1$ is the product form of Ramanujan's theta function
+$\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$.
 
 ## Depends on
 

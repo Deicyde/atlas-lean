@@ -6,14 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.shiftedFloorResidueCount_modulus_one
 ---
 
-# Shifted Floor Residue Count modulus one
+# Every term is counted modulo one
 
-Characteristic value: modulo `1` every term is counted, so
-`𝓝_{n,α,ν,r,1} = n` (the paper's remark after equation (4.2)).
+**Every term is counted modulo one.** For a natural number $n$, real numbers $\alpha$ and
+$\nu$, an integer $r$ and a natural number $m$, let $\mathcal N_{n,\alpha,\nu,r,m}$ be the number
+of integers $k$ with $1 \le k \le n$ such that
+$\lfloor (n - \nu)/k + \alpha \rfloor \equiv r \pmod m$. Then $\mathcal N_{n,\alpha,\nu,r,1} = n$
+for every natural number $n$, all real numbers $\alpha$ and $\nu$ and every integer $r$.
+
+This is the remark after equation (4.2) of the paper.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

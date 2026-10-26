@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.oozToBZ_two
 ---
 
-# Ooz To BZ two
+# The map $U$ fixes $z_2$
 
-`U(z₂) = z₂`.
+**The map $U$ fixes $z_2$.** The map $U$ from OOZ to BZ words sends the one-letter word $z_2$
+to itself with coefficient $1$: $U(z_2) = z_2$.
 
 ## Depends on
 
-- [Ooz To BZ](ooz-to-bz.md)
+- [The map $U$ from OOZ to BZ words](ooz-to-bz.md)
 
 ## Proof depends on
 
-- [Ooz To BZTail](ooz-to-bztail.md)
+- [The tail part of the map $U$](ooz-to-bztail.md)
 
 ## Sources
 

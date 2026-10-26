@@ -5,15 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonFaulhaberWanted.wilson_mod_prime_sq
 ---
 
-# Theorem 1
+# Wilson's theorem modulo $p^2$
 
-**Theorem 1**: let `δ₀(k)` be defined for
-`1 ≤ k ≤ p - 1` by
-`k^(p-1) ≡ 1 + p δ₀(k) (mod p^2)`. Then
-`(p - 1)! ≡ -1 + p ∑_{k=1}^{p-1} δ₀(k) (mod p^2)`.
-Here `δ₀(k)` is `Int.fermatQuotient` (the sum runs
-over the attached subtype so that each term carries
-its coprimality witness).
+**Wilson's theorem modulo $p^2$.** Let $p$ be an odd prime and, for $1 \le k \le p - 1$, let
+$q_p(k)$ be the Fermat quotient of $k$, the integer with $k^{p-1} = 1 + p\, q_p(k)$. Then
+
+$$
+(p - 1)! \equiv -1 + p \sum_{k=1}^{p-1} q_p(k) \pmod{p^2}.
+$$
 
 ## Depends on
 

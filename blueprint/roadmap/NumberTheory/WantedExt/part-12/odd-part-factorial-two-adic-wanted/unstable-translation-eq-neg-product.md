@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.unstable_translation_eq_neg_product
 ---
 
-# Unstable translation eq neg product
+# The unstable translation constant equals $-zw$
 
-Any `K`, `z`, and `w` satisfying their defining properties obey `K=-z*w`.
-The hypothesis on `K` reproduces the full Theorem 1 property for every
-`d<e`; the other hypotheses reproduce Corollary 8 and the definition after
-Corollary 10.  Quantification avoids choosing any of these 2-adic limits as a
-global constant.
+**The unstable translation constant equals $-zw$.** Write $\operatorname{od}(n)$ for the odd part
+of a natural number $n$, $(2^e-1)!!$ for the product of the odd numbers from $1$ to $2^e-1$,
+$\operatorname{uns}(e,d) = \lfloor \operatorname{od}((2^e)!)/2^{e+1} \rfloor \bmod 2^d$ and
+$\operatorname{stab}(e+1,d) = \lfloor \operatorname{od}((2^{e+d})!)/2^{e+1} \rfloor \bmod 2^d$.
+Let $K$, $z$ and $w$ be $2$-adic integers such that, with congruences in $\mathbb{Z}_2$,
+$\operatorname{uns}(e,d) + K \equiv \operatorname{stab}(e+1,d) \pmod{2^d}$ for all natural
+numbers $d < e$, $z \equiv \operatorname{od}((2^{e-1})!) \pmod{2^e}$ for all $e \ge 1$, and
+$w \equiv \lfloor ((2^e-1)!! - 1)/2^e \rfloor \pmod{2^{e-1}}$ for all $e \ge 3$. Then $K = -zw$.
+
+The three hypotheses are the defining properties of $K$ (Theorem 1), $z$ (Corollary 8) and $w$
+(the definition after Corollary 10).
 
 ## Depends on
 
-- [Odd Double Factorial](odd-double-factorial.md)
-- [Odd Part](odd-part.md)
-- [Stable Bits](stable-bits.md)
-- [Unstable Bits](unstable-bits.md)
+- [Odd double factorial below a power of two](odd-double-factorial.md)
+- [Odd part](odd-part.md)
+- [Stable bits of the odd part of a factorial](stable-bits.md)
+- [Unstable bits](unstable-bits.md)
 
 ## Sources
 

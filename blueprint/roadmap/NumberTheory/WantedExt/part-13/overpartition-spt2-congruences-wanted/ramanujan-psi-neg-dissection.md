@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanPsi_neg_dissection
 ---
 
-# Ramanujan Psi neg dissection
+# 3-dissection of the product form of Ramanujan's psi function at negated argument
 
-For every complex `q` of norm less than one, the product form `f₁ f₄/f₂` of Ramanujan's
-`ψ(-q)` equals `f₃ f₁₂ f₁₈⁵/(f₆² f₉² f₃₆²) - q f₉ f₃₆/f₁₈`.
-Both the left-hand product substitution for `ψ(-q)` and every `f_k` expansion are explicit;
-these are the only notational deviations.
+**3-dissection of the product form of Ramanujan's psi function at negated argument.** Let $q$ be
+a complex number with $|q| < 1$, and for $k \ge 1$ let
+$f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the raw infinite
+q-Pochhammer product. Then
+
+$$\frac{f_1 f_4}{f_2} = \frac{f_3 f_{12} f_{18}^5}{f_6^2 f_9^2 f_{36}^2} -
+q \frac{f_9 f_{36}}{f_{18}}.$$
+
+Here $f_1 f_4/f_2$ is the product form of $\psi(-q)$, where
+$\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$ is Ramanujan's theta function.
 
 ## Depends on
 

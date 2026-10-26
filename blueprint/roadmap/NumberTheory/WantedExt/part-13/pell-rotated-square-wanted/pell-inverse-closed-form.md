@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pell_inverse_closed_form
 ---
 
-# Pell inverse closed form
+# Closed form for inverting the sum of the Pell interpolating functions
 
-Closed form of `g = f⁻¹`, `f = u + v`: for real `x ≥ 1`, with
-`z = (D x - √(D x² - D + 1)) / (D - 1)`, the value
-`g(x) = cosh⁻¹(z) / log(α + β √D) = log(z + √(z² - 1)) / log(α + β √D)` is nonnegative and
-satisfies `u(g(x)) + v(g(x)) = x`. The inverse cosine is written through its logarithmic form.
+**Closed form for inverting the sum of the Pell interpolating functions.** Let $D$ be an
+integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation $X^2 - D Y^2 = 1$,
+put $\varepsilon = \alpha + \beta \sqrt{D}$ and $\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let
+$u(t) = (\varepsilon^t + \bar\varepsilon^t) / 2$ and
+$v(t) = (\varepsilon^t - \bar\varepsilon^t) / (2 \sqrt{D})$ for real $t$. For every real $x \ge 1$,
+put $z = (D x - \sqrt{D x^2 - D + 1}) / (D - 1)$ and
+$g = \log(z + \sqrt{z^2 - 1}) / \log \varepsilon$. Then $g \ge 0$ and $u(g) + v(g) = x$.
+
+Here $\log(z + \sqrt{z^2 - 1})$ is $\cosh^{-1}(z)$ written in logarithmic form.
 
 ## Depends on
 
-- [Pell U](pell-u.md)
-- [Pell V](pell-v.md)
+- [The Pell interpolation function u](pell-u.md)
+- [The Pell interpolation function v](pell-v.md)
 
 ## Sources
 

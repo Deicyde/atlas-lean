@@ -6,20 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.lehmerLower_upper_length
 ---
 
-# Lehmer Lower upper length
+# The Lehmer bounds of a full-length list
 
-Characteristic value: for `s = r`, `L(t; r) = U(t; r) = κ_r(t)`.
+**The Lehmer bounds of a full-length list.** Let $L(t; r)$ and $U(t; r)$ be the lower and
+upper Lehmer bounds and $\kappa_r$ the Lehmer function. For every nondecreasing list
+$t = (t_1, \dots, t_r)$ of real numbers, $L(t; r) = U(t; r) = \kappa_r(t_1, \dots, t_r)$.
+
+The only admissible completion of such a list to its own length $r$ is the empty list.
 
 ## Depends on
 
-- [Lehmer Kappa](lehmer-kappa.md)
-- [Lehmer Lower](lehmer-lower.md)
-- [Lehmer Upper](lehmer-upper.md)
+- [The Lehmer function $\kappa_r$](lehmer-kappa.md)
+- [The lower Lehmer bound](lehmer-lower.md)
+- [Upper Lehmer bound $U(t; r)$](lehmer-upper.md)
 
 ## Proof depends on
 
-- [Lehmer Completions](lehmer-completions.md)
-- [Lehmer Completions length](lehmer-completions-length.md)
+- [Admissible completions for the Lehmer bounds](lehmer-completions.md)
+- [A full-length nondecreasing list has only the empty completion](lehmer-completions-length.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oozToBZ_nil
 ---
 
-# Ooz To BZ nil
+# $U$ fixes the empty index
 
-`U(𝟏) = 𝟏`.
+**$U$ fixes the empty index.** Write $\mathbf{1}$ for the empty index. The map $U$ from OOZ to
+BZ indices sends $\mathbf{1}$ to the $\mathbb{Q}$-linear combination of indices consisting of
+$\mathbf{1}$ with coefficient $1$; that is, $U(\mathbf{1}) = \mathbf{1}$.
 
 ## Depends on
 
-- [Ooz To BZ](ooz-to-bz.md)
+- [The map $U$ from OOZ to BZ words](ooz-to-bz.md)
 
 ## Sources
 

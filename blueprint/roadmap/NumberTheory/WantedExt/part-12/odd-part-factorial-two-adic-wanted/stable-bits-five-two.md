@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.stableBits_five_two
 ---
 
-# Stable Bits five two
+# The stable bits $\operatorname{stab}(5, 2)$ vanish
 
-The smaller executable stable-window check `stab(5,2)=0` validates the same
-factorial, shift, and remainder convention used in the paper's larger
-`stab(18,7)=55` example, whose direct factorial evaluation is impractical with
-the non-native kernel evaluator.
+**The stable bits $\operatorname{stab}(5, 2)$ vanish.** Writing $\operatorname{od}(m)$ for the odd
+part of $m$, the binary digits of $\operatorname{od}(64!)$ in positions $5$ and $6$ (the units
+digit being position $0$) are both $0$; that is,
+$\operatorname{stab}(5, 2) = \lfloor \operatorname{od}(64!) / 2^5 \rfloor \bmod 4 = 0$.
+
+This small instance checks the same factorial, shift and remainder convention as the source's
+larger worked example $\operatorname{stab}(18, 7) = 55$.
 
 ## Depends on
 
-- [Stable Bits](stable-bits.md)
+- [Stable bits of the odd part of a factorial](stable-bits.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas-Leonardo $p$-numbers](lucas-leonardo-p.md)
 
 ## Sources
 

@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer_invariant_measure_cylinder
 ---
 
-# Zeck Odometer invariant measure cylinder
+# Mass of a cylinder under the invariant measure
 
-The `T`-invariant probability measure `ℙ` gives the cylinder `C_{r_ℓ ⋯ r_2}` (`ℓ ≥ 2`,
-`(r_ℓ, …, r_2)` admissible, here the digits of some `y ∈ 𝕏`) the mass `1/φ^{ℓ-1}` if `r_ℓ = 0`
-and `1/φ^ℓ` if `r_ℓ = 1`.
+**Mass of a cylinder under the invariant measure.** Let
+$\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$ be the set of Zeckendorf-adic integers (sequences
+with $x_0 = x_1 = 0$ and no two consecutive ones), let $T$ be the Zeckendorf odometer, and let
+$\varphi$ be the golden ratio. Let $\mu$ be a probability measure on $\{0,1\}^{\mathbb{N}}$ with
+$\mu(\mathbb{X}^c) = 0$ that is preserved by $T$. Let $\ell \ge 2$ and $y \in \mathbb{X}$, and let
+$C = \{x : x_i = y_i \text{ for } 2 \le i \le \ell\}$ be the cylinder of the digits
+$y_\ell \cdots y_2$. Then $\mu(C) = 1/\varphi^\ell$ if $y_\ell = 1$, and
+$\mu(C) = 1/\varphi^{\ell - 1}$ if $y_\ell = 0$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

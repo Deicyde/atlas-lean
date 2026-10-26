@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.eisenstein_exists_prime_norm_between
 ---
 
-# Eisenstein exists prime norm between
+# Bertrand's postulate for Eisenstein integers
 
-Bertrand's postulate for Eisenstein integers: for every Eisenstein prime `π` (the paper's
-`π_n`, `n ≥ 1`), there is an Eisenstein prime `ρ` with `N(π) < N(ρ) ≤ 2 N(π)`. The Eisenstein
-integers are `𝓞 (CyclotomicField 3 ℚ)` and `N` is the field norm to `ℚ`.
+**Bertrand's postulate for Eisenstein integers.** Let $\mathcal{O}$ be the ring of integers of
+the cyclotomic field $\mathbb{Q}(\zeta_3)$, and let $N$ be the field norm from $\mathbb{Q}(\zeta_3)$
+to $\mathbb{Q}$. For every prime element $\pi$ of $\mathcal{O}$ there is a prime element $\rho$ of
+$\mathcal{O}$ with $N(\pi) < N(\rho) \le 2N(\pi)$.
 
 ## Depends on
 

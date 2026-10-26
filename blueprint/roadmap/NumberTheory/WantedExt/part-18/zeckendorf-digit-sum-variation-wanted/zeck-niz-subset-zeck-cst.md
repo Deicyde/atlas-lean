@@ -12,8 +12,8 @@ lean: MetaMathlibExt.zeckNIZ_subset_zeckCST
 
 ## Depends on
 
-- [Zeck CST](zeck-cst.md)
-- [Zeck NIZ](zeck-niz.md)
+- [The sets $\mathrm{CST}_k$](zeck-cst.md)
+- [New-information zone](zeck-niz.md)
 
 ## Sources
 

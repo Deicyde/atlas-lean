@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.strong_two_near_perfect_two_pow_mul_prime_classification
 ---
 
-# Strong two near perfect two pow mul prime classification
+# Classification of prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$
 
-Proposition 5: if `n = 2^k p` with `p` prime and `p = (2^(k+1) - 2^a - 1) / (1 + 2^(k-a))`,
-`a ≤ k`, then `k = a + 2`, the omitted divisors are `d₁ = 2^a` and `d₂ = n / d₁ = 4p`,
-`p = (2^(a+3) - 2^a - 1) / 5`, and `a ≡ 3 (mod 4)`. The paper's hypothesis that `n` is
-strongly `2`-near perfect follows from the form of `p` and is dropped.
+**Classification of prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$.** Let $a \le k$
+be natural numbers and let $p$ be a prime with $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$, that is,
+$p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$. Then $k = a + 2$, $2^k p / 2^a = 4p$,
+$5p = 2^{a+3} - 2^a - 1$, and $a \equiv 3 \pmod 4$.
+
+The source states this for $n = 2^k p$ strongly $2$-near perfect, that is, with
+$\sigma(n) = 2n + d + n/d$ for some divisor $d$ of $n$, where $\sigma$ is the sum of divisors.
+That hypothesis follows from the equation for $p$ by taking $d = 2^a$.
 
 ## Depends on
 

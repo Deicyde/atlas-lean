@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_mul_pellNumber_combination_modEq
 ---
 
-# Two pow mul pell Number combination mod Eq
+# Oresme–Pell congruence modulo 49
 
-`2^n (5 P_{n+1} - 4 P_n) ≡ 7n + 5 (mod 49)` for every `n ≥ 0`.
+**Oresme–Pell congruence modulo 49.** For every natural number $n$, the Pell numbers $P_n$
+satisfy $2^n (5 P_{n+1} - 4 P_n) \equiv 7n + 5 \pmod{49}$ as integers.
 
 ## Depends on
 

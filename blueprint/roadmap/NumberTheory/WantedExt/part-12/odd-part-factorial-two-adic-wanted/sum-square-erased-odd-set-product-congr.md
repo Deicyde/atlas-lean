@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_square_erased_oddSet_product_congr
 ---
 
-# Sum square erased odd Set product congr
+# Squared products of the odd residues omitting one factor
 
-For `e≥1`, summing the squares of the products over `S_e\{i}` is congruent to
-`2^(e-1)` modulo `2^e`.  Each erased product squared equals the paper's
-`((2^e-1)!!)^2/i^2`; this equivalent exact-product form avoids adding an
-integer exact-division side condition for every summand.
+**Squared products of the odd residues omitting one factor.** Let $e \ge 1$ and let
+$S_e$ be the set of odd positive integers below $2^e$. Then, as integers,
+
+$$\sum_{i \in S_e} \Bigl(\prod_{j \in S_e \setminus \{i\}} j\Bigr)^2 \equiv 2^{e-1} \pmod{2^e}.$$
+
+Each squared product equals the paper's $((2^e-1)!!)^2/i^2$; the product form avoids an exact
+division for every summand.
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

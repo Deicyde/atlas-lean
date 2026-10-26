@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_isSZumkeller_six
 ---
 
-# Not is SZumkeller six
+# The number 6 is not s-Zumkeller
 
-`6` is not s-Zumkeller (`1² + 2² + 3² = 14` admits no equal split).
+**The number 6 is not s-Zumkeller.** The number $6$ is not an s-Zumkeller number: the squares of
+its proper divisors sum to $1^2 + 2^2 + 3^2 = 14$, and they admit no split into two parts with
+equal sums.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

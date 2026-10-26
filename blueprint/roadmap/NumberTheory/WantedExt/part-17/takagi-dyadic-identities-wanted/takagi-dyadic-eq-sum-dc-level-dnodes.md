@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.takagi_dyadic_eq_sum_dcLevelDNodes
 ---
 
-# Takagi dyadic eq sum dc Level DNodes
+# Takagi values at dyadic rationals from level $D$-node counts
 
-Theorem 25: for `n = 2^k + r` with `0 ≤ r < 2^k`,
-`τ(r/2^k) = 2^(-k) ∑_{i=0}^{k-1} λᵢ(n)`, and explicitly
-`τ(r/2^k) = 2^(-k) ∑_{i=0}^{k-1} (nᵢ 2^i + (-1)^{nᵢ} (n mod 2^i))`.
+**Takagi values at dyadic rationals from level $D$-node counts.** Let $k$ and $r$ be
+natural numbers with $r < 2^k$ and put $n = 2^k + r$. Write $\tau(r, k-1)$ for the Takagi value
+of the dyadic presentation $r/2^k$, write $n_i = \lfloor n/2^i \rfloor \bmod 2$ for the binary
+digit of $n$ at position $i$, and let $\lambda_i(n)$ be the level-$i$ $D$-node count, which
+equals $n \bmod 2^i$ if $n_i = 0$ and $2^i - (n \bmod 2^i)$ if $n_i = 1$. Then
+
+$$\tau(r, k-1) = 2^{-k} \sum_{i=0}^{k-1} \lambda_i(n)$$
+
+and
+
+$$\tau(r, k-1) = 2^{-k} \sum_{i=0}^{k-1} (n_i 2^i + (-1)^{n_i} (n \bmod 2^i)).$$
 
 ## Depends on
 
-- [Dc Level DNodes](dc-level-dnodes.md)
+- [Level counts of D-nodes](dc-level-dnodes.md)
 - [Takagi function on dyadic presentations](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources

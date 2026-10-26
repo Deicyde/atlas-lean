@@ -6,11 +6,16 @@ proof: formalized
 lean: Finset.mem_finset_iterate_iff
 ---
 
-# Mem finset iterate iff
+# Finset and predicate iterations from the bottom agree
 
-Bridge between finite iterates from `∅`: if a `Finset` functional
-`f` and a predicate functional `F` agree on membership predicates, then
-their iterates from `∅` and `⊥` agree at every step.
+**Finset and predicate iterations from the bottom agree.** Let $\alpha$ be a type, let $f$ map
+finite subsets of $\alpha$ to finite subsets of $\alpha$, and let $F$ map predicates on $\alpha$
+to predicates on $\alpha$. For a finite set $Z \subseteq \alpha$ write $P_Z$ for the predicate
+$t \mapsto t \in Z$, and suppose that for every finite $Z \subseteq \alpha$ and every
+$s \in \alpha$, $s \in f(Z)$ if and only if $F(P_Z)(s)$ holds. Write $f^n$ and $F^n$ for the
+$n$-fold iterates and $\bot$ for the predicate that is false everywhere. Then for every
+$n \in \mathbb{N}$ and every $s \in \alpha$, $s \in f^n(\emptyset)$ if and only if $F^n(\bot)(s)$
+holds.
 
 ## Depends on
 

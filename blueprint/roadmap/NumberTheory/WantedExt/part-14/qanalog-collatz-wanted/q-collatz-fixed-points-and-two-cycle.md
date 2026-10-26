@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.qCollatz_fixedPoints_and_twoCycle
 ---
 
-# Q Collatz fixed Points and two Cycle
+# Fixed points and the $2$-cycle of the $q$-Collatz map
 
-For odd `A, B`, the fixed points of `T_{A,B}` are `0` and `B/(A+q)`, and its unique
-`2`-cycle is `{B/(A+q²), qB/(A+q²)}`: an element `x` satisfies `T(T(x)) = x ≠ T(x)` exactly when
-it is one of these two.
+**Fixed points and the $2$-cycle of the $q$-Collatz map.** Let $A, B \in \mathbb{F}_2[[q]]$ be
+odd (constant term $1$) and let $T_{A,B}$ be the $q$-analog of the $3x+1$ map. For every
+$x \in \mathbb{F}_2[[q]]$, $T_{A,B}(x) = x$ holds exactly when $x = 0$ or $x = B/(A+q)$. Moreover,
+for every $x \in \mathbb{F}_2[[q]]$, $T_{A,B}(T_{A,B}(x)) = x$ and $T_{A,B}(x) \ne x$ hold together
+exactly when $x = B/(A+q^2)$ or $x = qB/(A+q^2)$.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
 
 ## Sources
 

@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.bzQMZV_bzBlockIndex_dual
 ---
 
-# Bz QMZV bz Block Index dual
+# Bradley–Zhao duality for q-multiple zeta values
 
-BZ duality `ζ_q^BZ ∘ τ = ζ_q^BZ` on `𝔥⁰`, in index form: for `aⱼ, bⱼ ≥ 1`,
-`ζ_q^BZ(a₁ + 1, {1}^{b₁-1}, …, aᵣ + 1, {1}^{bᵣ-1}) =
-ζ_q^BZ(bᵣ + 1, {1}^{aᵣ-1}, …, b₁ + 1, {1}^{a₁-1})`.
+**Bradley–Zhao duality for q-multiple zeta values.** For every $r \ge 0$ and all natural
+numbers $a_1, b_1, \dots, a_r, b_r \ge 1$, the Bradley–Zhao q-multiple zeta values satisfy
+
+$$\zeta_q^{BZ}(a_1 + 1, \{1\}^{b_1 - 1}, \dots, a_r + 1, \{1\}^{b_r - 1}) =
+\zeta_q^{BZ}(b_r + 1, \{1\}^{a_r - 1}, \dots, b_1 + 1, \{1\}^{a_1 - 1}),$$
+
+where $\{1\}^n$ stands for $n$ consecutive entries equal to $1$.
+
+In terms of words this is $\zeta_q^{BZ} \circ \tau = \zeta_q^{BZ}$ on the space $\mathfrak{h}^0$ of
+admissible words, where $\tau$ is the anti-automorphism of $\mathbb{Q}\langle x, y \rangle$
+exchanging $x$ and $y$.
 
 ## Depends on
 
-- [Bz Block Index](bz-block-index.md)
-- [Bz QMZV](bz-qmzv.md)
+- [Block index of a list of pairs](bz-block-index.md)
+- [Bradley–Zhao q-multiple zeta values](bz-qmzv.md)
 
 ## Sources
 

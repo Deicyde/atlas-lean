@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothDigits_ge_le
 ---
 
-# Volume luroth Digits ge le
+# Upper bound for the measure of a Lüroth digit superlevel set
 
-Upper bound: for `F` non-decreasing on `[2, ∞)^m` and every real `y`,
-`λ{x ∈ (0, 1] : F(d_1(x), …, d_m(x)) ≥ y} ≤ 3^m G(y)` with `G` as in (7). The paper
-states it for `y = Ψ(n)` under the hypotheses of Theorem 4; only monotonicity is used.
+**Upper bound for the measure of a Lüroth digit superlevel set.** Let $m \in \mathbb{N}$, let
+$F : \mathbb{R}^m \to \mathbb{R}$ be non-decreasing on $[2, \infty)^m$ for the coordinatewise
+order, let $y \in \mathbb{R}$, and write $d_k(x)$ for the $k$-th Lüroth digit of $x$. Then the
+Lebesgue measure of $\{x \in (0, 1] : F(d_1(x), \dots, d_m(x)) \ge y\}$ is at most
+
+$$3^m \int_{\{x \in [2, \infty)^m : F(x) \ge y\}} \prod_{i=1}^{m} \frac{1}{x_i^2} \, dx.$$
+
+The paper states this bound for $y = \Psi(n)$ under the hypotheses of its Theorem 4; only
+the monotonicity of $F$ is used.
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

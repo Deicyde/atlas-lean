@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.mersenneOmega
 ---
 
-# Mersenne Omega
+# The order $\Omega(m)$ of $2$, doubled when odd
 
-`Ω(m)`: the order `ω(m)` of `2` modulo `m`, doubled when it is odd.
+**The order $\Omega(m)$ of $2$, doubled when odd.** For a natural number $m$, let $\omega(m)$
+be the multiplicative order of $2$ modulo $m$, taken to be $0$ when no positive power of $2$ is
+congruent to $1$ modulo $m$ (that is, when $m$ is even). Then $\Omega(m) = 2\omega(m)$ if
+$\omega(m)$ is odd, and $\Omega(m) = \omega(m)$ otherwise.
 
 ## Depends on
 

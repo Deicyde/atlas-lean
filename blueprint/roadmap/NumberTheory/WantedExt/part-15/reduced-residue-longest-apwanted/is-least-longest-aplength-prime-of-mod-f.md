@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_longestAPLength_prime_of_mod_four_eq_one
 ---
 
-# Is Least longest APLength prime of mod four eq one
+# Minimum longest progression length modulo a prime $p \equiv 1 \pmod 4$
 
-Theorem 3, prime case `p ≡ 1 (mod 4)`: `min_{m ∈ ℤ} f_m(p) = (p - 1) / 2`.
+**Minimum longest progression length modulo a prime $p \equiv 1 \pmod 4$.** Let $p$ be a prime
+with $p \equiv 1 \pmod 4$. For an integer $m$ let $f_m(p)$ be the length of the longest arithmetic
+progression with positive common difference contained in the set $R_m(p)$ of integers $a$ with
+$m + 1 \le a \le m + p$ and $\gcd(a, p) = 1$. Then the least value of $f_m(p)$ over all integers
+$m$ is $(p - 1) / 2$.
 
 ## Depends on
 
-- [Longest APLength](longest-aplength.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
 
 ## Sources
 

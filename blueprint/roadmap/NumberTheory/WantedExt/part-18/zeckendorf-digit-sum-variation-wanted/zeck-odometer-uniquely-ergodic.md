@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.zeckOdometer_uniquely_ergodic
 ---
 
-# Zeck Odometer uniquely ergodic
+# Unique ergodicity of the Zeckendorf odometer
 
-`(𝕏, T)` is uniquely ergodic: there is exactly one `T`-invariant Borel probability measure
-carried by `𝕏` (measures on `𝕏` are taken as measures on `ℕ → Bool` with `μ 𝕏ᶜ = 0`).
+**Unique ergodicity of the Zeckendorf odometer.** Let $\mathbb{X}$ be the set of
+Zeckendorf-adic integers, a subset of the space $\{0,1\}^{\mathbb{N}}$ of digit sequences with its
+product $\sigma$-algebra, and let $T$ be the Zeckendorf odometer on $\{0,1\}^{\mathbb{N}}$. There
+is exactly one probability measure $\mu$ on $\{0,1\}^{\mathbb{N}}$ such that
+$\mu(\{0,1\}^{\mathbb{N}} \setminus \mathbb{X}) = 0$ and $T$ preserves $\mu$, that is, $T$ is
+measurable and $\mu(T^{-1}(A)) = \mu(A)$ for every measurable set $A$.
+
+In other words, $(\mathbb{X}, T)$ is uniquely ergodic.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddPart_factorial_congr_previous
 ---
 
-# Odd Part factorial congr previous
+# Odd parts of consecutive dyadic factorials agree modulo a power of two
 
-For `e≥3`, the odd parts of `(2^(e-1))!` and `(2^e)!` agree modulo `2^e`.
-The factorial values are naturals, but their difference is taken in `ℤ` to
-avoid truncated subtraction.
+**Odd parts of consecutive dyadic factorials agree modulo a power of two.** For every natural
+number $e \ge 3$, $\mathrm{od}((2^{e-1})!) \equiv \mathrm{od}((2^e)!) \pmod{2^e}$, where
+$\mathrm{od}(n)$ denotes the odd part of $n$.
 
 ## Depends on
 
-- [Odd Part](odd-part.md)
+- [Odd part](odd-part.md)
 
 ## Sources
 

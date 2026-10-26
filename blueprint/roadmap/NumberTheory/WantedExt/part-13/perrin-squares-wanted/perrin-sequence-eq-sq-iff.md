@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.perrinSequence_eq_sq_iff
 ---
 
-# Perrin Sequence eq sq iff
+# Perrin numbers that are squares of Perrin numbers
 
-Theorem 1: the only solution of `R_n = R_m ^ 2` in positive integers is
-`R_1 = 0 = R_1 ^ 2`.
+**Perrin numbers that are squares of Perrin numbers.** Let $R_n$ denote the $n$-th term of
+the Perrin sequence. For positive integers $n$ and $m$, $R_n = R_m^2$ holds if and only if
+$n = m = 1$ (where $R_1 = 0 = R_1^2$).
 
 ## Depends on
 

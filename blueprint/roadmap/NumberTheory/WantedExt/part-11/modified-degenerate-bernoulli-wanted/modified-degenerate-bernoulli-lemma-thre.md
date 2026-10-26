@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli_lemma_three
 ---
 
-# Modified Degenerate Bernoulli lemma three
+# A convolution lemma for modified degenerate Bernoulli polynomials
 
-Lemma 3: for `m ≥ 2` and nonnegative integers `s_1, …, s_m` with `S = s_1 + ⋯ + s_m`,
-`∑_i s_i 𝔅_{s_i-1,λ}(x_i) ∏_{j ≠ i} 𝔅_{s_j,λ}(x_j) = ∑_i s_i ∑_{k_1+⋯+k_m=S} 𝔅_{k_i-1,λ}(x_i)
-∏_{j ≠ i} C(s_j, k_j) 𝔅_{k_j,λ}(x_j - x_i + 1_{j>i})`, with the paper's convention
-`𝔅_{-1,λ} = 0` (written as the `k_i = 0` case; on the left the factor `s_i` vanishes there), for
-`λ ≠ 0, -1`.
+**A convolution lemma for modified degenerate Bernoulli polynomials.** Let $m \ge 2$, let
+$\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, let $s_1, \ldots, s_m$ be
+nonnegative integers with $S = s_1 + \cdots + s_m$, and let $x_1, \ldots, x_m$ be complex numbers.
+Writing $\mathfrak{B}_{n,\lambda}(x)$ for the modified degenerate Bernoulli polynomials,
+
+$$
+\sum_{i=1}^{m} s_i\, \mathfrak{B}_{s_i-1,\lambda}(x_i)
+\prod_{j \ne i} \mathfrak{B}_{s_j,\lambda}(x_j) =
+\sum_{i=1}^{m} s_i \sum_{k_1 + \cdots + k_m = S} \mathfrak{B}_{k_i-1,\lambda}(x_i)
+\prod_{j \ne i} \binom{s_j}{k_j} \mathfrak{B}_{k_j,\lambda}(x_j - x_i + [j > i]),
+$$
+
+where $k_1, \ldots, k_m$ range over nonnegative integers, $[j > i]$ is $1$ if $j > i$ and $0$
+otherwise, and $\mathfrak{B}_{-1,\lambda}$ is read as $0$ (on the left this term has the factor
+$s_i = 0$).
 
 ## Depends on
 
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
+- [Modified degenerate Bernoulli polynomials](modified-degenerate-bernoulli.md)
 
 ## Sources
 

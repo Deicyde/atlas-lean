@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_not_dvd_sigma_le
 ---
 
-# Card not dvd sigma le
+# Integers whose sum of divisors is not divisible by $p$
 
-For every prime `p` and every `x ≥ e^p`, the number `S_p(x)` of positive integers
-`n ≤ x` with `p ∤ σ(n)` is `O(x (log log x / log x)^(1/(p-1)))`, with an absolute implied
-constant.
+**Integers whose sum of divisors is not divisible by $p$.** There is an absolute constant
+$C > 0$ such that for every prime $p$ and every real $x \ge e^p$, the number of integers $n$ with
+$1 \le n \le x$ for which $p$ does not divide the sum of divisors $\sigma(n)$ is at most
+$C x (\log \log x / \log x)^{1/(p-1)}$.
 
 ## Depends on
 

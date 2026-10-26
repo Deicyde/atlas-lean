@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.bronzeLucasParams
 ---
 
-# Bronze Lucas Params
+# Bronze Lucas parameters
 
-The Lucas-sequence parameters `(P, Q) = (3, -1)`: `lucasU bronzeLucasParams n` is the `n`-th
-bronze number `B_n`, with `B_0 = 0`, `B_1 = 1`, `B_{n+1} = 3B_n + B_{n-1}`.
+**Bronze Lucas parameters.** The bronze Lucas parameters are the Lucas sequence parameters
+$(P, Q) = (3, -1)$. The Lucas sequence $U(3, -1)$ is the sequence of bronze numbers $B_n$, with
+$B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 3B_{n+1} + B_n$.
 
 ## Depends on
 

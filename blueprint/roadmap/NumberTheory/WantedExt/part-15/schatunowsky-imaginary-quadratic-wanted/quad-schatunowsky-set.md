@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.quadSchatunowskySet
 ---
 
-# Quad Schatunowsky Set
+# Schatunowsky set of a number field
 
-The paper's set `Q_{m,ℓ}` (Equation (4)), as a set of elements of `𝓞 K` (it is closed under
-multiplication by units): `α` with `N(α) > 1` such that every `β` with `1 < N(β) < N(α)` and
-`gcd(α, β) = 1` has `Ω(β) ≤ ℓ`.
+**Schatunowsky set of a number field.** Let $K$ be a number field with ring of integers
+$\mathcal{O}_K$ and let $\ell$ be a natural number. For $\alpha \in \mathcal{O}_K$ write $N(\alpha)$
+for the absolute norm of the principal ideal $(\alpha)$ and $\Omega(\alpha)$ for the number of
+prime ideal factors of $(\alpha)$ counted with multiplicity. The Schatunowsky set $Q_\ell(K)$ is
+the set of $\alpha \in \mathcal{O}_K$ with $N(\alpha) > 1$ such that every $\beta \in \mathcal{O}_K$
+coprime to $\alpha$ (that is, $(\alpha) + (\beta) = \mathcal{O}_K$) with $1 < N(\beta) < N(\alpha)$
+satisfies $\Omega(\beta) \le \ell$.
+
+The set is closed under multiplication by units. For $K = \mathbb{Q}(\sqrt{m})$ imaginary quadratic
+of class number one it is the paper's set $Q_{m,\ell}$ (Equation (4)).
 
 ## Depends on
 

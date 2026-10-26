@@ -4,13 +4,13 @@ navigation: module
 
 # Pow Add Pow Eq Sq
 
-- [Lemma 1](two-pow-add-one-eq-sq.md)
-- [Lemma 1](pow-add-one-eq-sq.md)
-- [Corollary 1](one-add-pow-eq-sq.md)
+- [Solutions of $2^x + 1 = z^2$](two-pow-add-one-eq-sq.md)
+- [Solutions of $n^x + 1 = z^2$ for $n \ne 2$](pow-add-one-eq-sq.md)
+- [The case $x = 0$ of $n^x + (5p)^y = z^2$](one-add-pow-eq-sq.md)
 - [Lemma 2](even-of-pos-exp.md)
-- [Lemma 3](opposite-parity.md)
-- [Theorem 2](no-solution-mod-four-one.md)
-- [Theorem 3](two-pow-solutions.md)
-- [Theorem 4](solutions-mod-sixty.md)
-- [Corollary 3](two-pow-add-fifteen-pow.md)
-- [Corollary 4](three-pow-add-thirtyfive-pow.md)
+- [Opposite parity of the exponents in $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 3 \pmod 4$](opposite-parity.md)
+- [No solutions of $n^x + (5p)^y = z^2$ when $n \equiv p \equiv 1 \pmod 4$](no-solution-mod-four-one.md)
+- [Solutions of $2^x + (5p)^y = z^2$ for $p \equiv 3 \pmod 4$](two-pow-solutions.md)
+- [Solutions of $n^x + (5p)^y = z^2$ for $n \equiv 3, 27 \pmod{60}$ and $p \equiv 7 \pmod{12}$](solutions-mod-sixty.md)
+- [Solutions of $2^x + 15^y = z^2$](two-pow-add-fifteen-pow.md)
+- [Solutions of $3^x + 35^y = z^2$](three-pow-add-thirtyfive-pow.md)

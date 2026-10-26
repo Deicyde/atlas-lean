@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mallowsOddIndex_zero
 ---
 
-# Mallows Odd Index zero
+# The first odd position of a sequence starting with $O_L$
 
-Characteristic value: the first `O_L`/`O_R` position of a sequence starting with `O_L` is
-`0`.
+**The first odd position of a sequence starting with $O_L$.** Let $x = x_0 x_1 x_2 \cdots$
+be an infinite sequence over the parity alphabet $\{O_L, E_R, O_R, E_L\}$ with $x_0 = O_L$, and
+call a position $j \ge 0$ odd when $x_j \in \{O_L, O_R\}$. Then the $0$-th odd position of $x$,
+the smallest odd position, is $0$.
 
 ## Depends on
 
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Mallows Odd Index](mallows-odd-index.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Odd positions of a parity sequence](mallows-odd-index.md)
 
 ## Sources
 

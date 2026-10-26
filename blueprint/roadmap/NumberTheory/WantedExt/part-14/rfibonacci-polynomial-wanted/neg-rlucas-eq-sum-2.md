@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.negRLucas_eq_sum'
 ---
 
-# Neg RLucas eq sum'
+# Explicit sum for the (-r)-Lucas polynomials, second form
 
-Theorem 7, second form: for `r ≥ 2` and `n ≥ 1`,
-`V^{(-r)}_n = ∑_k n/(k+1) C((n-1-r-k)/r, k) y^{-(n-1-k)/r} (-x)^{k+1} + r y^{-n/r} [r ∣ n]`,
-the sum over `0 ≤ k ≤ ⌊n/(r+1)⌋ - 1` with `r ∣ n - k - 1`.
+**Explicit sum for the (-r)-Lucas polynomials, second form.** Let $K$ be a field of
+characteristic zero, $r \ge 2$, $x \in K$ and $y \in K$ nonzero, and write
+$V_n = V^{(-r)}_n(x, y)$ for the companion $(-r)$-Lucas sequence. For every $n \ge 1$, $V_n$ is
+the sum of
+
+$$\frac{n}{k+1} \binom{(n-1-r-k)/r}{k} y^{-(n-1-k)/r} (-x)^{k+1}$$
+
+over the integers $k$ with $0 \le k \le \lfloor n/(r+1) \rfloor - 1$ and $r \mid n - k - 1$,
+plus $r y^{-n/r}$ when $r \mid n$.
 
 ## Depends on
 
-- [Neg RLucas](neg-rlucas.md)
+- [Companion sequence of the $(-r)$-Fibonacci polynomials](neg-rlucas.md)
 
 ## Sources
 

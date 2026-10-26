@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.spoofOfBases_three_three
 ---
 
-# Spoof Of Bases three three
+# The exponent-one factorization on the bases 3 and 3
 
-Characteristic value: the bases `3, 3` give the factorization `3 ⋅ 3 = 3^1 ⋅ 3^1`.
+**The exponent-one factorization on the bases 3 and 3.** The factorization with all exponents
+one on the multiset of bases consisting of two copies of $3$ is the multiset consisting of two
+copies of the pair $(3, 1)$, that is, $3 \cdot 3 = 3^1 \cdot 3^1$.
 
 ## Depends on
 
-- [Spoof Of Bases](spoof-of-bases.md)
+- [Factorization with all exponents one](spoof-of-bases.md)
 
 ## Sources
 

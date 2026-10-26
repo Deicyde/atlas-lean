@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.treeSNodes_node
 ---
 
-# Tree SNodes node
+# Recursion for the number of $S$-nodes
 
-Unfolding of `treeSNodes` at an interior node.
+**Recursion for the number of $S$-nodes.** Write $S(t)$ for the number of $S$-nodes of a
+full binary tree $t$. If the root of $t$ has left subtree $l$ and right subtree $r$, then
+$S(t) = \varepsilon + S(l) + S(r)$, where $\varepsilon = 1$ if $l$ and $r$ have the same number
+of leaves and $\varepsilon = 0$ otherwise.
 
 ## Depends on
 
-- [Tree SNodes](tree-snodes.md)
+- [Number of $S$-nodes of a full binary tree](tree-snodes.md)
 
 ## Sources
 

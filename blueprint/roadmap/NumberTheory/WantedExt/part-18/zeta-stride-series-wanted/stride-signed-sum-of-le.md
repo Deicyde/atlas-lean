@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.strideSignedSum_of_le
 ---
 
-# Stride Signed Sum of le
+# Signed stride sum with a single term
 
-For `1 ≤ n ≤ q` the signed stride sum has the single term `n^{-t}`.
+**Signed stride sum with a single term.** For natural numbers $q$, $t$ and $n$ with
+$1 \le n \le q$, the signed stride sum satisfies $T_{q,t}(n) = 1/n^t$.
 
 ## Depends on
 
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

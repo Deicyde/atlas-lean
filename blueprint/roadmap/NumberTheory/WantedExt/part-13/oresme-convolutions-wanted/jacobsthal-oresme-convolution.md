@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.jacobsthal_oresme_convolution
 ---
 
-# Jacobsthal oresme convolution
+# Jacobsthal–Oresme convolution
 
-The Jacobsthal–Oresme convolution, with `J = lucasU (1, -2)`:
-`∑_{k=0}^n J_k O_{n-k} = (2/9) J_{n+1} - 2(n+1)/(9 · 2^n)` for every `n ≥ 0`.
+**Jacobsthal–Oresme convolution.** Let $J_m$ denote the Jacobsthal numbers, the terms of the
+Lucas sequence $U(1, -2)$, and let $O_m = m/2^m$ denote the Oresme numbers. For every natural
+number $n$,
+$\sum_{k=0}^{n} J_k O_{n-k} = \frac{2}{9} J_{n+1} - \frac{2(n+1)}{9 \cdot 2^n}$.
 
 ## Depends on
 

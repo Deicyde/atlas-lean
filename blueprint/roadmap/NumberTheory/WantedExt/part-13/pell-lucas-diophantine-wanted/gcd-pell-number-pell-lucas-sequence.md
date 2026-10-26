@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellNumber_pellLucasSequence
 ---
 
-# Lemma 3
+# Pell and Pell–Lucas numbers are coprime
 
-**Lemma 3**: for every nonnegative integer `n`,
-`gcd(P_n, Q_n) = 1`, where `P_n` and `Q_n` are the Pell
-and Pell–Lucas numbers.
+**Pell and Pell–Lucas numbers are coprime.** For every natural number $n$, the Pell number
+$P_n$ and the Pell–Lucas number $Q_n$ satisfy $\gcd(P_n, Q_n) = 1$.
 
 ## Depends on
 

@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitMoebius_formula
 ---
 
-# Square Split Moebius formula
+# Möbius function of the square-splitting convolution
 
-Theorem 3: the `⋆`-inverse `μ⋆` of the constant function `1` satisfies
-`μ⋆(n) = μ(u(n)) μ(v(n))`; on prime powers `μ⋆(p) = μ⋆(p²) = -1`,
-`μ⋆(p³) = 1`, `μ⋆(p^k) = 0` for `k ≥ 4`; and for `Re s > 1`,
-`∑ μ⋆(n)/n^s = ∏_p (1 - p^{-s} - p^{-2s} + p^{-3s}) = 1/(ζ(s) ζ(2s))`.
-`μ⋆` enters as any `m` with `1 ⋆ m = ε` (Theorem 4's inversion relation).
+**Möbius function of the square-splitting convolution.** Let $\star$ be the square-splitting
+convolution, $\mathbf{1}$ the constant function $1$ on the positive integers, $\varepsilon$ the
+identity element ($\varepsilon(1) = 1$ and $\varepsilon(n) = 0$ for $n \ne 1$), and let $\mu_\star$
+be any complex-valued arithmetic function with $\mathbf{1} \star \mu_\star = \varepsilon$. Then
+$\mu_\star(n) = \mu(u(n))\,\mu(v(n))$ for every $n \ge 1$, where $\mu$ is the Möbius function,
+$u(n)$ is the product of the primes dividing $n$ to an odd power and $v(n)$ is the positive
+integer with $n = u(n)\,v(n)^2$. For every prime $p$, $\mu_\star(p) = \mu_\star(p^2) = -1$,
+$\mu_\star(p^3) = 1$ and $\mu_\star(p^k) = 0$ for every $k \ge 4$. For every complex $s$ with
+$\operatorname{Re} s > 1$,
+
+$$\sum_{n \ge 1} \frac{\mu_\star(n)}{n^s} = \prod_p \left(1 - p^{-s} - p^{-2s} + p^{-3s}\right)
+= \frac{1}{\zeta(s)\,\zeta(2s)}.$$
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Square-splitting convolution](square-split-conv.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

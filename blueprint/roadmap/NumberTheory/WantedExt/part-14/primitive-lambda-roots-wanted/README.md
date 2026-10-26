@@ -4,9 +4,9 @@ navigation: module
 
 # Primitive Lambda Roots
 
-- [Lambda Delta](lambda-delta.md)
-- [Lambda H](lambda-h.md)
-- [Primitive Lambda Root Count](primitive-lambda-root-count.md)
-- [Lemma 1](carmichael-mul-eq-lcm.md)
-- [Lemma 2](lambda-h-mul-ge-and-gt-iff.md)
-- [Theorem 1](primitive-lambda-root-count-mul-ge-and-e.md)
+- [The count $\Delta_q(n)$ for primitive λ-roots](lambda-delta.md)
+- [The local factor $h_q(n)$ for primitive λ-roots](lambda-h.md)
+- [Number of primitive λ-roots](primitive-lambda-root-count.md)
+- [Carmichael's function on coprime products](carmichael-mul-eq-lcm.md)
+- [Huang–Li inequality for the local factors $h_q$](lambda-h-mul-ge-and-gt-iff.md)
+- [Supermultiplicativity of the number of primitive λ-roots](primitive-lambda-root-count-mul-ge-and-e.md)

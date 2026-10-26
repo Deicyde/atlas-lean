@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LeonardoPWanted.rMatrix_mul_companionQ_pow
 ---
 
-# Theorem 10
+# Powers of $Q_p$ shift the Hankel matrices $R_{p,m}$
 
-**Theorem 10**: `R_{p,m} Q_p^n = R_{p,m+n}` for every
-`ℋ ∈ H(p)` (here: every `H : ℤ → ℤ` satisfying the
-`H(p)` recurrence at all integers) and positive `m`.
+**Powers of $Q_p$ shift the Hankel matrices $R_{p,m}$.** Let $p \ge 2$ be a natural number and
+let $H : \mathbb{Z} \to \mathbb{Z}$ satisfy $H(t) = H(t-1) + H(t-p) - H(t-2p-1)$ for every
+integer $t$. For a natural number $m$, let $R_{p,m}$ be the $(2p+1) \times (2p+1)$ integer matrix
+whose $(a, b)$ entry is $H(m - a - b)$ for $0 \le a, b \le 2p$, and let $Q_p$ be the
+$(2p+1) \times (2p+1)$ companion matrix with entries $1$ at $(0, 0)$, at $(p-1, 0)$ and on the
+superdiagonal, $-1$ at $(2p, 0)$, and $0$ elsewhere. Then $R_{p,m} Q_p^n = R_{p,m+n}$ for all
+natural numbers $m \ge 1$ and $n$.
 
 ## Depends on
 
-- [Companion Q](companion-q.md)
-- [R Matrix](r-matrix.md)
+- [The companion matrix $Q_p$](companion-q.md)
+- [The Hankel matrix $R_{p,m}$](r-matrix.md)
 
 ## Sources
 

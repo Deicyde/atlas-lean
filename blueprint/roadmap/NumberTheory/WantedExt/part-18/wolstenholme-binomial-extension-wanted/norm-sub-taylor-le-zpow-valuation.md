@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.norm_sub_taylor_le_zpow_valuation
 ---
 
-# Norm sub taylor le zpow valuation
+# Congruence form of the higher $p$-adic mean value theorem
 
-Theorem 2 (congruence form of Theorem 1): with `f`, `t`, `m` as in Theorem 1 and
-`v_p(‖f^{(m)}‖) ≥ w` (every coefficient `j (j - 1) ⋯ (j - m + 1) a_j` has norm at most
-`p^{-w}`),
-`f(t + h) ≡ ∑_{q < m} f^{(q)}(t) h^q / q! (mod p^{m v_p(h) + w})` when `m < p` and
-`v_p(h) ≥ 1 / (p - m)`, and modulo `p^{p v_p(h) + w - 1}` when `m = p` and
-`v_p(h) ≥ 1 / p`; a congruence modulo `p^v` in `B` means norm at most `p^{-v}`.
-Stated over `K = ℚ_p`, where `v_p(h)` is `Padic.valuation h`. Mathlib sets
-`Padic.valuation 0 = 0` rather than `∞`, so the case `h = 0` (where both congruences hold
-because the remainder vanishes) is the separate third conjunct.
+**Congruence form of the higher $p$-adic mean value theorem.** Let $p$ be a prime, let
+$|\cdot|$ be the $p$-adic absolute value on $\mathbb{Q}_p$, and let $B$ be a normed vector space
+over $\mathbb{Q}_p$ whose norm is ultrametric. Let $N$ and $m$ be natural numbers with
+$1 \le m \le p$, let $f(t) = \sum_{j\lt N} a_j t^j$ with $a_j \in B$, let $t, h \in \mathbb{Q}_p$
+with $|t| \le 1$, and let $w$ be a real number with
+$\|j(j-1)\cdots(j-m+1) \, a_j\| \le p^{-w}$ for every $j < N$. Write
+
+$$R = \Big\| f(t+h) - \sum_{q\lt m} \sum_{q \le j < N} \binom{j}{q} t^{j-q} h^q a_j \Big\|$$
+
+and let $v_p(h)$ be the $p$-adic valuation of $h$, taken to be $0$ when $h = 0$. Then
+$R \le p^{-(m v_p(h) + w)}$ if $m < p$ and $v_p(h) \ge 1/(p-m)$;
+$R \le p^{-(p v_p(h) + w - 1)}$ if $m = p$ and $v_p(h) \ge 1/p$; and $R = 0$ if $h = 0$.
+
+Reading a congruence modulo $p^v$ in $B$ as norm at most $p^{-v}$, the first two bounds say
+$f(t+h) \equiv \sum_{q\lt m} f^{(q)}(t) h^q / q!$ modulo $p^{m v_p(h) + w}$ and
+$p^{p v_p(h) + w - 1}$ respectively.
 
 ## Depends on
 

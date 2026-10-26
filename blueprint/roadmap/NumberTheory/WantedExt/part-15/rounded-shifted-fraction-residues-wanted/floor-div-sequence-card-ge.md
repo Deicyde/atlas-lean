@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.floor_div_sequence_card_ge
 ---
 
-# Floor div sequence card ge
+# Counting large terms of the floor sequence
 
-Lemma 1: for `k ≥ 1`, exactly `⌊n/k⌋` terms of the floor sequence
-`⌊n/1⌋, …, ⌊n/n⌋` are at least `k`. Stated for every `n : ℕ` (the case
-`n = 0` is the empty sequence).
+**Counting large terms of the floor sequence.** For every natural number $n$ and every
+integer $k \ge 1$, exactly $\lfloor n/k \rfloor$ of the integers $d$ with $1 \le d \le n$
+satisfy $\lfloor n/d \rfloor \ge k$; that is, exactly $\lfloor n/k \rfloor$ terms of the floor
+sequence $\lfloor n/1 \rfloor, \dots, \lfloor n/n \rfloor$ are at least $k$.
 
 ## Depends on
 

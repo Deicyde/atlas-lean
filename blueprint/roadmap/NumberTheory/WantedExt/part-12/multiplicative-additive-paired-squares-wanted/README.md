@@ -4,12 +4,12 @@ navigation: module
 
 # Multiplicative Additive Paired Squares
 
-- [Sum nonzero squares iff not mem exceptional](sum-nonzero-squares-iff-not-mem-exceptio.md)
-- [Sum six and eight nonzero squares](sum-six-and-eight-nonzero-squares.md)
-- [Multiplicative three additive two squares base](multiplicative-three-additive-two-square.md)
-- [Multiplicative four additive two squares base](multiplicative-four-additive-two-squares.md)
-- [Multiplicative additive paired squares eq id of three or four](multiplicative-additive-paired-squares-e.md)
-- [Multiplicative additive paired squares dichotomy](multiplicative-additive-paired-squares-d.md)
-- [Multiplicative additive paired squares eq id of ne zero](multiplicative-additive-paired-squares-e-2.md)
-- [Multiplicative additive six squares eq id](multiplicative-additive-six-squares-eq-i.md)
-- [Multiplicative additive eight squares eq id](multiplicative-additive-eight-squares-eq.md)
+- [Dubouis's theorem on sums of nonzero squares](sum-nonzero-squares-iff-not-mem-exceptio.md)
+- [Sums of six and of eight nonzero squares](sum-six-and-eight-nonzero-squares.md)
+- [Small values of a multiplicative function 3-additive on sums of two squares](multiplicative-three-additive-two-square.md)
+- [Small values of a multiplicative function 4-additive on sums of two squares](multiplicative-four-additive-two-squares.md)
+- [Multiplicative functions additive on six or eight paired squares and nonzero at $2$ are the identity](multiplicative-additive-paired-squares-e.md)
+- [Dichotomy for multiplicative functions additive on paired squares](multiplicative-additive-paired-squares-d.md)
+- [A nonzero value in the vanishing range of the dichotomy forces the identity](multiplicative-additive-paired-squares-e-2.md)
+- [Multiplicative functions additive on six paired squares and nonzero at $2$ are the identity](multiplicative-additive-six-squares-eq-i.md)
+- [Multiplicative functions additive on eight paired squares and nonzero at $2$ are the identity](multiplicative-additive-eight-squares-eq.md)

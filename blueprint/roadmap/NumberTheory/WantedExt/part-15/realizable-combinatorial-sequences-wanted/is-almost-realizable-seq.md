@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsAlmostRealizableSeq
 ---
 
-# Is Almost Realizable Seq
+# Almost realizable sequences
 
-A sequence of non-negative integers is almost realizable if some positive integer multiple
-of it is realizable (Miska and Ward). Realizability is `MetaMathlibExt.doldRealizable` of the
-integer cast: `(μ * a)(n)` is non-negative and divisible by `n` for every `n ≥ 1` (the paper's
-Definition 1 (2); the divisor involution `d ↦ n / d` turns the paper's `∑_{d ∣ n} μ(n/d) a(d)`
-into `doldRealizable`'s `∑_{d ∣ n} μ(d) a(n/d)`). The value `a 0` is not used.
+**Almost realizable sequences.** A sequence $a$ of natural numbers $a(0), a(1), \dots$ is
+almost realizable when there is an integer $m \ge 1$ such that the integer sequence
+$(m\, a(n))_{n \ge 0}$ is Dold realizable: for every $n \ge 1$, the sum
+$\sum_{d \mid n} \mu(d)\, m\, a(n/d)$ over the positive divisors $d$ of $n$, where $\mu$ is the
+Möbius function, is non-negative and divisible by $n$.
+
+This is Miska and Ward's notion that some positive integer multiple of $a$ is realizable. The
+value $a(0)$ is not used.
 
 ## Depends on
 

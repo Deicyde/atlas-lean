@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pqRFibonacci_succ_eq_left
 ---
 
-# Pq RFibonacci succ eq left
+# First recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-Theorem 2, Equation (4): for `n ≥ r`,
-`U_{n+1}(x, y) = p x U_n(px, qy) + q y U_{n-r}(px, q^{m+1} y)` (parameters `p, q, m`
-unchanged).
+**First recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial.** Let $R$ be a
+commutative semiring, let $r \ge 1$, $n \ge r$ and $m$ be natural numbers and let
+$x, y, p, q \in R$. Write $U_j(x, y)$ for $U^{(r)}_j(x, y, p, q, m)$, the $(p,q)$-analogue of the
+$r$-Fibonacci polynomial with $r$, $p$, $q$ and $m$ fixed. Then
+
+$$U_{n+1}(x, y) = p x \, U_n(p x, q y) + q y \, U_{n-r}(p x, q^{m+1} y).$$
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
 
 ## Sources
 

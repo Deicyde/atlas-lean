@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_mockThetaSigma_zero_one
 ---
 
-# Coeff mock Theta Sigma zero one
+# First coefficients of the mock theta function $\sigma$
 
-Characteristic values `P_σ(0) = 0` and `P_σ(1) = 1` (`σ(q) = q + q^2 + 2q^3 + ⋯`).
+**First coefficients of the mock theta function $\sigma$.** Write
+$\sigma(q) = \sum_{n \ge 0} P_\sigma(n) q^n$ for the sixth-order mock theta function $\sigma$.
+Then $P_\sigma(0) = 0$ and $P_\sigma(1) = 1$.
 
 ## Depends on
 
-- [Mock Theta Sigma](mock-theta-sigma.md)
+- [The sixth-order mock theta function $\sigma(q)$](mock-theta-sigma.md)
 
 ## Sources
 

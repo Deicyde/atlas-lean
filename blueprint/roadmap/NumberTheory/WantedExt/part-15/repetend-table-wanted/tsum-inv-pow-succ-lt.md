@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_pow_succ_lt
 ---
 
-# Tsum inv pow succ lt
+# Tail bound for sums of inverse powers
 
-Tail bound: for `m ≥ 2` and `s > 0`, `∑_{n > s} n^(-m) < ((m - 1) s^(m-1))^(-1)`.
+**Tail bound for sums of inverse powers.** For natural numbers $m \ge 2$ and $s \ge 1$,
+$\sum_{n = s+1}^{\infty} n^{-m} < \dfrac{1}{(m-1)\, s^{m-1}}$.
 
 ## Depends on
 

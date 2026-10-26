@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount
 ---
 
-# Primitive Lambda Root Count
+# Number of primitive λ-roots
 
-The number `R(n)` of primitive λ-root residue classes modulo
-`n`: units in `ZMod n` whose order is the Carmichael value `λ(n)`.
+**Number of primitive λ-roots.** For a natural number $n$, $R(n)$ is the number of units $a$
+of $\mathbb{Z}/n\mathbb{Z}$ whose multiplicative order equals $\lambda(n)$, where $\lambda$ is
+the Carmichael function.
 
 ## Depends on
 

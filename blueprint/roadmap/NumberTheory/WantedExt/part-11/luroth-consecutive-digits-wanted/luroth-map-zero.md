@@ -6,17 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.lurothMap_zero
 ---
 
-# Luroth Map zero
+# The Lüroth map fixes 0
 
-`L(0) = 0`.
+**The Lüroth map fixes 0.** The Lüroth map $L$ satisfies $L(0) = 0$.
 
 ## Depends on
 
-- [Luroth Map](luroth-map.md)
+- [Lüroth map](luroth-map.md)
 
 ## Proof depends on
 
-- [Luroth Digit](luroth-digit.md)
+- [First Lüroth digit](luroth-digit.md)
 
 ## Sources
 

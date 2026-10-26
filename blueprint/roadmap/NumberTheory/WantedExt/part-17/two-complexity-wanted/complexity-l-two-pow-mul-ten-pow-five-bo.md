@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_two_pow_mul_ten_pow_five_bounds
 ---
 
-# Proposition 6
+# Bounds for the 2-complexity of $2^m \cdot 10^5$
 
-**Proposition 6** (= **Theorem 2**(2)), the case
-`r = 5`: `m + 19 ≤ ‖2^m * 10^5‖₂ ≤ m + 20`.
+**Bounds for the 2-complexity of $2^m \cdot 10^5$.** Write $\|n\|_2$ for the $2$-complexity
+of $n$. For every natural number $m$, one has $m + 19 \le \|2^m \cdot 10^5\|_2 \le m + 20$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

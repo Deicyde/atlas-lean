@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaLambda_six_mul_add_two_eq_sum_overpartition
 ---
 
-# Mock Theta Lambda six mul add two eq sum overpartition
+# Coefficients of the mock theta function $\lambda$ at indices $6n+2$
 
-Theorem 9: `P_λ(6n+2) = 3 ∑_{m ≥ 0} (-1)^m (2m+1) p̄_3(n - 3m(m+1)/2) +
-6 ∑_{m ≥ 0} ∑_{k ≥ 1} (-1)^{m+k} (2m+1) p̄_3(n - 3k^2 - 3m(m+1)/2)`, where `p̄_3(j)` is the
-coefficient of `q^j` in `(f_2/f_1^2)^3` (Equation (7)) and vanishes for `j < 0`.
+**Coefficients of the mock theta function $\lambda$ at indices $6n+2$.** Write
+$\lambda(q) = \sum_{n \ge 0} P_\lambda(n) q^n$ for the sixth-order mock theta function $\lambda$,
+let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $\overline{p}_3(j)$ be the coefficient of
+$q^j$ in $(f_2/f_1^2)^3$. Then for every $n \ge 0$,
+
+$$
+P_\lambda(6n+2) = 3 \sum_{m \ge 0,\ 3m(m+1)/2 \le n} (-1)^m (2m+1)\,
+\overline{p}_3\bigl(n - 3m(m+1)/2\bigr) +
+6 \sum_{m \ge 0} \sum_{k \ge 1,\ 3k^2 + 3m(m+1)/2 \le n} (-1)^{m+k} (2m+1)\,
+\overline{p}_3\bigl(n - 3k^2 - 3m(m+1)/2\bigr).
+$$
 
 ## Depends on
 
-- [Mock Theta Lambda](mock-theta-lambda.md)
+- [The sixth-order mock theta function $\lambda$](mock-theta-lambda.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

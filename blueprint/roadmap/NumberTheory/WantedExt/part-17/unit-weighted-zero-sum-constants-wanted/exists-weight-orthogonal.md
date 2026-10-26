@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_weight_orthogonal
 ---
 
-# Exists weight orthogonal
+# A weight-$m$ vector orthogonal to given vectors of $\mathbb{Z}_2^{m+a}$
 
-Lemma 5.3: if `m` is even with `2^a ≤ m` and `v_1, …, v_a ∈ ℤ_2^{m+a}`, some `w ∈ ℤ_2^{m+a}`
-with exactly `m` coordinates equal to one satisfies `w · v_i = 0` for all `i`.
+**A weight-$m$ vector orthogonal to given vectors of $\mathbb{Z}_2^{m+a}$.** Let $a$ and $m$ be
+natural numbers with $m$ even and $2^a \le m$, write $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$, and
+let $v_1, \dots, v_a$ be vectors in $\mathbb{Z}_2^{m+a}$. Then there is a vector
+$w \in \mathbb{Z}_2^{m+a}$ with exactly $m$ coordinates equal to $1$ such that
+$w \cdot v_i = \sum_j w_j (v_i)_j = 0$ for every $i$.
 
 ## Depends on
 

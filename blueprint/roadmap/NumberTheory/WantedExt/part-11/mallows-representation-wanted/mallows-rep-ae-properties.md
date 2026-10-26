@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.mallowsRep_ae_properties
 ---
 
-# Mallows Rep ae properties
+# Typical properties of Mallows representations
 
-(i) Almost no irrational `α ∈ (0, 1)` has an eventually periodic Mallows representation;
-(ii) almost every one has a positively Poisson stable Mallows representation; (iii) almost every
-one has a transitive Mallows representation (Lebesgue measure on `(0, 1)`).
+**Typical properties of Mallows representations.** Each of the following holds for
+Lebesgue-almost every $\alpha \in (0, 1)$, provided $\alpha$ is irrational: (i) the Mallows
+representation $M(\alpha)$ is not eventually periodic; (ii) $M(\alpha)$ is positively Poisson
+stable; (iii) $M(\alpha)$ is transitive, that is, every finite word over $\{L, M, R\}$ occurs in
+$M(\alpha)$.
 
 ## Depends on
 
 - [Lists occurring in an infinite word](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
 - [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Rep](mallows-rep.md)
+- [Positively Poisson stable sequence](is-positively-poisson-stable.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [Mallows representation](mallows-rep.md)
 
 ## Sources
 

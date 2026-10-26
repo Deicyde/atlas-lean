@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.szToTBZ_one
 ---
 
-# Sz To TBZ one
+# The map $V_{TBZ}$ on the index $(1)$
 
-`V_TBZ(p y) = z_1̄`.
+**The map $V_{TBZ}$ on the index $(1)$.** The map $V_{TBZ}$ sends the SZ index $(1)$ to the
+one-letter TBZ word $\bar 1$ with coefficient $1$.
 
 ## Depends on
 
-- [Sz To TBZ](sz-to-tbz.md)
+- [The map $V_{TBZ}$ from SZ indices to TBZ words](sz-to-tbz.md)
 
 ## Sources
 

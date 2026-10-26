@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.eq_of_card_small_bases_orderOf_six_eq_two
 ---
 
-# Eq of card small bases order Of six eq two
+# Moduli with exactly two small bases of order six
 
-If exactly two small bases have order `6` modulo `n`, then `n = 3^k t ≥ 9` or `n = p^k t` with
-`p ≡ 1 (mod 6)` prime, `k ≥ 1`, and `t ∈ {1, 2}`.
+**Moduli with exactly two small bases of order six.** Let $n$ be a natural number. If exactly
+two integers $b$ with $1 \le b < n$ and $\gcd(b, n) = 1$ have multiplicative order $6$ modulo $n$,
+then either $n = 3^k t \ge 9$ for some natural number $k$ and some $t \in \{1, 2\}$, or
+$n = p^k t$ for some prime $p \equiv 1 \pmod 6$, some $k \ge 1$ and some $t \in \{1, 2\}$.
 
 ## Depends on
 

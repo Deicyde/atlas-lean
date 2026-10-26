@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.wellApproximableSet_subset_Ico
 ---
 
-# Well Approximable Set subset Ico
+# Well approximable numbers lie in $(0, 1)$
 
-Every point of `wellApproximableSet ψ` lies in `[0, 1)`.
+**Well approximable numbers lie in $[0, 1)$.** For every function
+$\psi : \mathbb{N} \to \mathbb{R}$, every point of the set $W(\psi)$ of $\psi$-well approximable
+numbers lies in the interval $[0, 1)$.
 
 ## Depends on
 
-- [Well Approximable Set](well-approximable-set.md)
+- [Well approximable numbers](well-approximable-set.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.monicStrictAntiNatDegree
 ---
 
-# Monic Strict Anti Nat Degree
+# Tuples of monic polynomials with strictly decreasing degrees
 
-The set of `r`-tuples `(a_1,..., a_r)` of monic polynomials over the finite field `F`, such that
-`deg a_1 > deg a_2 > ... > deg a_r`.
+**Tuples of monic polynomials with strictly decreasing degrees.** Let $F$ be a finite field
+and $r$ a natural number. This is the set of $r$-tuples $(a_1, \dots, a_r)$ of monic polynomials
+in $F[t]$ such that $\deg a_1 > \deg a_2 > \dots > \deg a_r$.
 
 ## Depends on
 

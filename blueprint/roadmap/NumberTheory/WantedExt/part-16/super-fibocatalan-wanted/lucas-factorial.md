@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperFibocatalanWanted.lucasFactorial
 ---
 
-# Lucas Factorial
+# Lucas factorial
 
-The paper's Lucas factorial
-`{n}! = {n}{n-1} ⋯ {1}` (empty product `1` at `n = 0`).
+**Lucas factorial.** For a natural number $n$, the Lucas factorial $\{n\}!$ is the product
+$\{n\}! = \{1\}\{2\} \cdots \{n\}$ of the Lucas polynomials $\{i\}$ in $s$ and $t$ for
+$1 \le i \le n$, a polynomial with integer coefficients; in particular $\{0\}! = 1$, the empty
+product.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Poly](lucas-poly.md)
+- [Lucas polynomials in $s$ and $t$](lucas-poly.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli_one
 ---
 
-# Modified Degenerate Bernoulli one
+# The first modified degenerate Bernoulli polynomial
 
-`𝔅_{1,λ}(x) = x - 1/2`.
+**The first modified degenerate Bernoulli polynomial.** For all complex numbers $\lambda$ and
+$x$, the modified degenerate Bernoulli polynomial $\mathfrak{B}_{1,\lambda}$ of index $1$ satisfies
+$\mathfrak{B}_{1,\lambda}(x) = x - 1/2$.
 
 ## Depends on
 
-- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
+- [Modified degenerate Bernoulli polynomials](modified-degenerate-bernoulli.md)
 
 ## Sources
 

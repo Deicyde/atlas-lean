@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zero_mem_sectorLatticePoints
 ---
 
-# Zero mem sector Lattice Points
+# The origin is a lattice point of every sector
 
-The origin lies in every lattice sector `I(α)`.
+**The origin is a lattice point of every sector.** For every real number $\alpha$, the
+origin $(0, 0)$ lies in the set $I(\alpha)$ of lattice points of the sector of slope $\alpha$.
 
 ## Depends on
 
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

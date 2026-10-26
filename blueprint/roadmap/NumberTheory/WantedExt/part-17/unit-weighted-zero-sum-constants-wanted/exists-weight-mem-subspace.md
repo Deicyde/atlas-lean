@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_weight_mem_subspace
 ---
 
-# Exists weight mem subspace
+# Every $m$-dimensional subspace of $\mathbb{Z}_2^{m+a}$ has a vector of weight $m$
 
-Corollary 5.7: if `m` is even with `2^a ≤ m`, every `m`-dimensional subspace of `ℤ_2^{m+a}`
-contains a vector with exactly `m` coordinates equal to one.
+**Every $m$-dimensional subspace of $\mathbb{Z}_2^{m+a}$ has a vector of weight $m$.** Let
+$\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$ and let $m$ be even with $2^a \le m$. Then every subspace
+$W$ of $\mathbb{Z}_2^{m+a}$ of dimension $m$ contains a vector with exactly $m$ coordinates equal
+to $1$.
 
 ## Depends on
 

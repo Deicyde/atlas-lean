@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.lucasP
 ---
 
-# Lucas P
+# Lucas $p$-numbers
 
-The Lucas `p`-numbers: `L_{p,0} = p + 1`, `L_{p,i} = 1` for `1 ≤ i ≤ p`, and
-`L_{p,n} = L_{p,n-1} + L_{p,n-p-1}` for `n > p` (evaluated by `lucasTypeSeq`).
+**Lucas $p$-numbers.** For a natural number $p$, the Lucas $p$-numbers are the natural numbers
+$L_{p,n}$ given by $L_{p,0} = p + 1$, $L_{p,i} = 1$ for $1 \le i \le p$, and
+$L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for $n > p$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Type Seq](lucas-type-seq.md)
+- [Lucas-type recurrence lists](lucas-type-seq.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitConv
 ---
 
-# Square Split Conv
+# Square-splitting convolution
 
-The square-splitting `A`-convolution of Narkiewicz type,
-`(f ⋆ g)(n) = ∑_{d ∈ A(n)} f(d) g(n/d)` for `n ≥ 1` (and `0` at `0`, as for
-every `ArithmeticFunction`).
+**Square-splitting convolution.** For complex arithmetic functions $f$ and $g$, the
+square-splitting $A$-convolution of Narkiewicz type is the arithmetic function $f \star g$ given by
+$(f \star g)(n) = \sum_{d \in A(n)} f(d)\, g(n/d)$ for $n \ge 1$ and $(f \star g)(0) = 0$. Here
+$A(n) = \{u_1 v_1^2 : u_1 \mid u(n),\ v_1 \mid v(n)\}$ is the square-splitting divisor set of $n$,
+where $u(n)$ is the squarefree part of $n$ and $n = u(n) v(n)^2$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Split Divisors](square-split-divisors.md)
+- [Square-splitting divisors](square-split-divisors.md)
 
 ## Sources
 

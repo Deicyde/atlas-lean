@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.pow_modEq_pow_of_modEq_six
 ---
 
-# Pow mod Eq pow of mod Eq six
+# Powers of a base of order $6p^j$ modulo $p^j$ depend only on the exponent modulo $6$
 
-Class C setting: if `y ≡ s (mod 6)` then `b^y ≡ b^s (mod Q)`.
+**Powers of a base of order $6p^j$ modulo $p^j$ depend only on the exponent modulo $6$.** Let
+$p$ be a prime, let $i$ and $j$ be natural numbers with $j \ge 1$ and $i \ge 2j$, and let $b$ be a
+natural number whose multiplicative order modulo $p^i$ is $6p^j$. If $y$ and $s$ are natural
+numbers with $y \equiv s \pmod 6$, then $b^y \equiv b^s \pmod{p^j}$.
 
 ## Depends on
 

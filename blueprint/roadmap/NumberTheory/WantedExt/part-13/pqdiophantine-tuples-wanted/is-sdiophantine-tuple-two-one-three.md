@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSDiophantineTuple_two_one_three
 ---
 
-# Is SDiophantine Tuple two one three
+# $(1, 3)$ is a $\{2\}$-Diophantine pair
 
-`(1, 3)` is a `{2}`-Diophantine pair: `1 * 3 + 1 = 2 ^ 2`.
+**$(1, 3)$ is a $\{2\}$-Diophantine pair.** The set $\{1, 3\}$ is a $\{2\}$-Diophantine
+tuple, since $1 \cdot 3 + 1 = 2^2$.
 
 ## Depends on
 
-- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
+- [$S$-Diophantine tuples](is-sdiophantine-tuple.md)
 
 ## Sources
 

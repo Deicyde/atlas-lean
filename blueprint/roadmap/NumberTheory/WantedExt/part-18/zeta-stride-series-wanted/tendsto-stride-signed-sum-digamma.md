@@ -5,18 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_strideSignedSum_digamma
 ---
 
-# Tendsto stride Signed Sum digamma
+# Digamma series for the signed stride sum
 
-Digamma identity: for `q, t ≥ 1` and `-1 ≤ a < 1`,
-`(1/2q) ∑_{n≥1} (-1)^{n+1} n^{-t} [ψ((n+a+1+q)/2q) - ψ((n+a+1)/2q)]
- + (1/2q) ∑_{n≥1} (-1)^{n+1} n^{-t} [ψ((n-a-1+2q)/2q) - ψ((n-a-1+q)/2q)]
- = ∑_{n≥1} (-1)^{n+1} (2n+q)/((n+a+1)(n-a-1+q)) T_{q,t}(n)`, with `T_{q,t}` the signed
-stride sum. The right side is conditionally convergent and stated as a limit of partial
-sums; the two digamma series converge absolutely.
+**Digamma series for the signed stride sum.** Let $q \ge 1$ and $t \ge 1$ be integers, let
+$a$ be a real number with $-1 \le a < 1$, let $T_{q,t}$ denote the signed stride sum and $\psi$
+the digamma function. As $N \to \infty$, the partial sums
+
+$$
+\sum_{n=1}^{N} (-1)^{n+1} \frac{2n + q}{(n + a + 1)(n - a - 1 + q)} \, T_{q,t}(n)
+$$
+
+converge to
+
+$$
+\frac{1}{2q} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^t}
+\left[\psi\left(\frac{n+a+1+q}{2q}\right) - \psi\left(\frac{n+a+1}{2q}\right)\right] +
+\frac{1}{2q} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^t}
+\left[\psi\left(\frac{n-a-1+2q}{2q}\right) - \psi\left(\frac{n-a-1+q}{2q}\right)\right].
+$$
+
+The first series converges only conditionally, while the two digamma series converge
+absolutely.
 
 ## Depends on
 
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

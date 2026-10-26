@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.qShift_X_mul
 ---
 
-# Q Shift X mul
+# Dividing a multiple of $q$ by $q$
 
-`qShift (q * y) = y`.
+**Dividing a multiple of $q$ by $q$.** For every power series $y \in \mathbb{F}_2[[q]]$,
+applying the shift $\sum_n x_n q^n \mapsto \sum_n x_{n+1} q^n$ to $qy$ gives back $y$.
 
 ## Depends on
 
-- [Q Shift](q-shift.md)
+- [Division by $q$ in $\mathbb{F}_2((q))$](q-shift.md)
 
 ## Sources
 

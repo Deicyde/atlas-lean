@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sternBrocotPhi
 ---
 
-# Stern Brocot Phi
+# The map $\varphi_{SBT}$
 
-The map `φ_SBT` on a Stern–Brocot vertex with gap `I` (label `f`, children `l`, `r`):
-`⟨l, f⟩` if the left child `l` has even numerator and `⟨f, r⟩` otherwise.
+**The map $\varphi_{SBT}$.** Let $a = n_1/m_1$ and $b = n_2/m_2$ be fractions, given by
+numerator and denominator, and consider the Stern–Brocot vertex with gap $(a, b)$: its label is
+the mediant $f = a \oplus b = (n_1 + n_2)/(m_1 + m_2)$, and its left and right children have
+labels $l = a \oplus f$ and $r = f \oplus b$. Then $\varphi_{SBT}$ of this vertex is the pair
+$\langle l, f \rangle$ if the numerator of $l$ is even, and $\langle f, r \rangle$ otherwise.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gap Mediant](gap-mediant.md)
+- [Mediant of a gap](gap-mediant.md)
 
 ## Sources
 

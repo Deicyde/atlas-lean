@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.exists_int_eq_wilsonQuotientZ_two_mul_sub_one_modEq_zero_iff
 ---
 
-# Exists int eq wilson Quotient Z two mul sub one mod Eq zero iff
+# A primality criterion from the Wilson quotient sum Z(2n − 1)
 
-Morozov's Theorem 4: the integer value of `Z(2n - 1)` is
-`0 [ZMOD n]` if and only if `n` is `1` or prime.
+**A primality criterion from the Wilson quotient sum Z(2n − 1).** For every natural number
+$n \ge 1$, Morozov's Wilson quotient sum $Z(2n - 1)$ is an integer, and it is divisible by $n$
+if and only if $n = 1$ or $n$ is prime.
 
 ## Depends on
 
-- [Wilson Quotient Z](wilson-quotient-z.md)
+- [Morozov's Wilson quotient sum](wilson-quotient-z.md)
 
 ## Sources
 

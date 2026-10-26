@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.twelve_le_card_divisors_of_isSZumkeller
 ---
 
-# Twelve le card divisors of is SZumkeller
+# Even s-Zumkeller numbers have at least twelve divisors
 
-An even s-Zumkeller number has at least `12` divisors.
+**Even s-Zumkeller numbers have at least twelve divisors.** If $n$ is an even s-Zumkeller
+number, then $n$ has at least $12$ positive divisors.
 
 ## Depends on
 
-- [Is SZumkeller](is-szumkeller.md)
+- [s-Zumkeller numbers](is-szumkeller.md)
 
 ## Sources
 

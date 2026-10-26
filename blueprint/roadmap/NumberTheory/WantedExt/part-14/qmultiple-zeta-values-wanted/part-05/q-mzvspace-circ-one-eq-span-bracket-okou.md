@@ -13,10 +13,10 @@ The bracket `g(k₁, …, kᵣ)` is the bi-bracket with all `dⱼ = 0`.
 
 ## Depends on
 
-- [Bi Bracket](../part-04/bi-bracket.md)
-- [Bz QMZV](../part-02/bz-qmzv.md)
-- [Okounkov QMZV](../part-04/okounkov-qmzv.md)
-- [Q MZVSpace Circ](../part-04/q-mzvspace-circ.md)
+- [Bi-brackets](../part-04/bi-bracket.md)
+- [Bradley–Zhao q-multiple zeta values](../part-02/bz-qmzv.md)
+- [Okounkov $q$-multiple zeta values](../part-04/okounkov-qmzv.md)
+- [The spaces $\mathcal{Z}^\circ_{q,d}$](../part-04/q-mzvspace-circ.md)
 
 ## Sources
 

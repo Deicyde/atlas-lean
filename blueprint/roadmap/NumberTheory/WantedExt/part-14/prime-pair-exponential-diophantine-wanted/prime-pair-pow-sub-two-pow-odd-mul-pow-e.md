@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_pow_sub_two_pow_odd_mul_pow_eq_sq_iff
 ---
 
-# Prime pair pow sub two pow odd mul pow eq sq iff
+# Squares of the form $p^x - (2^{2k+1}(2p - 1))^y$ for prime pairs
 
-If `p` and `2p - 1` are primes with `p ≡ 3 (mod 8)` and `k ≥ 0`, then
-`pˣ - (2^{2k+1}(2p - 1))ʸ = z²` has the unique non-negative solution `(x, y, z) = (0, 0, 0)`.
+**Squares of the form $p^x - (2^{2k+1}(2p - 1))^y$ for prime pairs.** Let $p$ be a prime with
+$p \equiv 3 \pmod 8$ such that $2p - 1$ is prime, and let $k$ be a non-negative integer. Then
+non-negative integers $x$, $y$ and $z$ satisfy $p^x - (2^{2k+1}(2p - 1))^y = z^2$ if and only if
+$(x, y, z) = (0, 0, 0)$.
 
 ## Depends on
 

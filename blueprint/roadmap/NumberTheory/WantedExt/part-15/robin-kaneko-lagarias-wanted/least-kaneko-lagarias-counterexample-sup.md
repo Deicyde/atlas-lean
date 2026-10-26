@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.least_kaneko_lagarias_counterexample_superabundant
 ---
 
-# Least kaneko lagarias counterexample superabundant
+# A least counterexample to the Kaneko–Lagarias inequality is superabundant
 
-If the Kaneko–Lagarias inequality `σ(n) < exp(H_n) log H_n` (asserted for `n > 60`) fails,
-its least counterexample `n₀ > 60` is superabundant: `σ(m)/m < σ(n₀)/n₀` for all `1 ≤ m < n₀`.
+**A least counterexample to the Kaneko–Lagarias inequality is superabundant.** Let
+$\sigma(n)$ be the sum of the divisors of $n$, $H_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ the
+$n$-th harmonic number and $\log$ the natural logarithm. Let $n_0 > 60$ be a natural number for
+which the Kaneko–Lagarias inequality $\sigma(n_0) < e^{H_{n_0}} \log H_{n_0}$ fails, while
+$\sigma(n) < e^{H_n} \log H_n$ holds for every natural number $n$ with $60 < n < n_0$. Then $n_0$
+is superabundant: $\sigma(m)/m < \sigma(n_0)/n_0$ for every natural number $m$ with $1 \le m < n_0$.
 
 ## Depends on
 

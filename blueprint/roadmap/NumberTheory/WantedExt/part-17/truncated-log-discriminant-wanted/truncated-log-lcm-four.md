@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.truncatedLogLcm_four
 ---
 
-# Truncated Log Lcm four
+# Least common multiple of $1, 2, 3, 4$
 
-`L_4 = 12`.
+**Least common multiple of $1, 2, 3, 4$.** The least common multiple of the integers from $1$
+to $4$ is $L_4 = \operatorname{lcm}(1, 2, 3, 4) = 12$.
 
 ## Depends on
 
-- [Truncated Log Lcm](truncated-log-lcm.md)
+- [Least common multiple of $1, \dots, n$](truncated-log-lcm.md)
 
 ## Sources
 

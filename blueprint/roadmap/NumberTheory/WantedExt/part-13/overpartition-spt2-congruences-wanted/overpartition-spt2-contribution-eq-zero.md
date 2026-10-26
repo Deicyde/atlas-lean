@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.overpartitionSpt2Contribution_eq_zero_of_odd
 ---
 
-# Overpartition Spt2 Contribution eq zero of odd
+# Overpartitions with odd smallest part contribute nothing
 
-An overpartition whose smallest part is odd contributes nothing to `spt2‾`.
+**Overpartitions with odd smallest part contribute nothing.** If $O$ is an overpartition of
+$n$ with at least one part and the smallest part of $O$ is odd, then the smallest-even-part
+contribution of $O$ is $0$.
 
 ## Depends on
 
-- [Overpartition Spt2 Contribution](overpartition-spt2-contribution.md)
+- [Smallest-even-part contribution of an overpartition](overpartition-spt2-contribution.md)
 - [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources

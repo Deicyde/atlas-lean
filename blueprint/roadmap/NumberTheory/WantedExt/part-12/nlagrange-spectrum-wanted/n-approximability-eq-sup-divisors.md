@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.nApproximability_eq_sup_divisors
 ---
 
-# N Approximability eq sup divisors
+# The $n$-approximabilities as maxima over divisors
 
-For each `n ≥ 1` and irrationals `ξ ≠ ξ'`, `λₙ(ξ) = max_{g ∣ n} λ(gξ)` and
-`μₙ(ξ, ξ') = max_{g ∣ n} μ(gξ, gξ')`.
+**The $n$-approximabilities as maxima over divisors.** Let $n \ge 1$, let $\lambda_n$ and
+$\mu_n$ be the $n$-Lagrange and $n$-Markoff approximabilities, and let $\xi \ne \xi'$ be irrational
+real numbers. Then $\lambda_n(\xi) = \max_{g \mid n} \lambda_1(g\xi)$ and
+$\mu_n(\xi, \xi') = \max_{g \mid n} \mu_1(g\xi, g\xi')$, where $g$ runs over the positive divisors
+of $n$ and the maxima are taken in the extended reals.
 
 ## Depends on
 
-- [N Lagrange Approximability](n-lagrange-approximability.md)
-- [N Markoff Approximability](n-markoff-approximability.md)
+- [$n$-Lagrange approximability](n-lagrange-approximability.md)
+- [$n$-Markoff approximability](n-markoff-approximability.md)
 
 ## Sources
 

@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_quadPrimeNorm_succ_div
 ---
 
-# Tendsto quad Prime Norm succ div
+# Ratios of consecutive prime ideal norms in an imaginary quadratic field tend to $1$
 
-Lemma 1: `N(ρ_{n+1}) / N(ρ_n) → 1` and `N(π_{n+1}) / N(π_n) → 1`, where `N(ρ_n)` is the
-`n`-th smallest norm of a nonzero prime ideal counted with multiplicity (the paper's `ρ_n` runs
-over all primes up to units, Definition 1). Indices are shifted by one (`n ≥ 1`). Stated for every
-imaginary quadratic field: the norms do not need the paper's class-number-one assumption.
+**Ratios of consecutive prime ideal norms in an imaginary quadratic field tend to $1$.** Let
+$K$ be an imaginary quadratic field, that is, a totally complex number field of degree $2$ over
+$\mathbb{Q}$, with ring of integers $\mathcal{O}_K$. For $m \ge 1$ let $r_m$ be the least natural
+number $x$ such that at least $m$ nonzero prime ideals of $\mathcal{O}_K$ have absolute norm at
+most $x$; this is the $m$-th smallest norm of a nonzero prime ideal, counted with multiplicity.
+Let $N(\pi_m)$ be the $m$-th smallest element of the set of absolute norms of nonzero prime
+ideals of $\mathcal{O}_K$. Then the real quotients satisfy $r_{m+1}/r_m \to 1$ and
+$N(\pi_{m+1})/N(\pi_m) \to 1$ as $m \to \infty$.
+
+The sequence $r_m$ is the paper's $N(\rho_m)$, where $\rho_m$ runs over all primes up to units
+(Definition 1). The statement holds for every imaginary quadratic field: the norms do not need
+the paper's class-number-one assumption.
 
 ## Depends on
 
-- [Quad Prime Norm](quad-prime-norm.md)
+- [Norm of the $n$-th prime](quad-prime-norm.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯0_aux
 ---
 
-# 𝒯0 aux
+# Multiple zeta values of given depth with small entries
 
-Let `q` be the size of the finite field `F`. `𝒯0_aux` is the set of `ζ_A(s_1,..., s_r)` of
-weight `w`, with `1 ≤ s_i < q` for all `i`.
+**Multiple zeta values of given depth with small entries.** Let $F$ be a finite field with
+$q$ elements, $w$ a natural number and $r$ a positive integer. This is the set of multiple
+zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ with positive integers $s_1, \dots, s_r$ such
+that $s_1 + \dots + s_r = w$ and $s_i < q$ for all $i$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ζ A](a.md)
-- [𝔖 w](w.md)
+- [Multiple zeta values in positive characteristic](a.md)
+- [Compositions of $w$ into $r$ parts](w.md)
 
 ## Sources
 

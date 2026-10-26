@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_mul_jacobsthal_succ_modEq_nine
 ---
 
-# Two pow mul jacobsthal succ mod Eq nine
+# Powers of two times Jacobsthal numbers modulo 9
 
-`2^n J_{n+1} ≡ n + 1 (mod 9)` for every `n ≥ 0`, with `J = lucasU (1, -2)`.
+**Powers of two times Jacobsthal numbers modulo 9.** Let $J_m$ denote the Jacobsthal numbers,
+the terms of the Lucas sequence $U(1, -2)$. For every natural number $n$,
+$2^n J_{n+1} \equiv n + 1 \pmod{9}$.
 
 ## Depends on
 

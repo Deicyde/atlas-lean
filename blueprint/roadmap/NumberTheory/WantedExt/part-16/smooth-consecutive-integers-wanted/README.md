@@ -4,5 +4,5 @@ navigation: module
 
 # Smooth Consecutive Integers
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 369, location variant](conjecture.md)
+- [Solution of Erdős Problem 369, location variant](conjecture-holds.md)

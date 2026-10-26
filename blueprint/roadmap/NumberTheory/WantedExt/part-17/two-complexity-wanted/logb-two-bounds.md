@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.logb_two_bounds
 ---
 
-# Lemma 3
+# Logarithmic bounds for the 2-complexity (Zhang's Lemma 3(3))
 
-**Lemma 3**(3): for positive even `n`,
-`log₂ n ≤ ‖n‖₂ ≤ 2 * log₂ n - 1`.
+**Logarithmic bounds for the 2-complexity (Zhang's Lemma 3(3)).** Write $\|n\|_2$ for the
+2-complexity of $n$: the least number of copies of $2$ from which $n$ can be built using addition
+and multiplication, and $0$ if $n$ cannot be built. For every even natural number $n \ge 1$,
+$\log_2 n \le \|n\|_2 \le 2 \log_2 n - 1$, where $\log_2$ is the real base-2 logarithm.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

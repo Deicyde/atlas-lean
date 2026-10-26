@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.repetend_column_eq_column_of_mul_modEq_one
 ---
 
-# Repetend column eq column of mul mod Eq one
+# Columns $j$ and $j^{-1}$ of a repetend table match
 
-Class A column matches: in the repetend table of `1/n` whose rows are the small bases
-`1 ≤ b < n` of order `L` and whose column `j` holds the digits `⌊b^(j+1)/n⌋ mod b`, if `j` is prime
-to `L`, `j^2 ≢ 1 (mod L)` and `j j' ≡ 1 (mod L)`, then columns `j` and `j'` are equal as multisets.
+**Columns $j$ and $j^{-1}$ of a repetend table match.** Let $n$ and $L \ge 1$ be natural
+numbers, and consider the repetend table of $1/n$ whose rows are the natural numbers $1 \le b < n$
+coprime to $n$ of multiplicative order $L$ modulo $n$, and whose column $j$ holds the digits
+$\lfloor b^{j+1}/n \rfloor \bmod b$. If $j$ and $j'$ are natural numbers with $j$ coprime to $L$,
+$j^2 \not\equiv 1 \pmod L$ and $jj' \equiv 1 \pmod L$, then columns $j$ and $j'$ are equal as
+multisets.
 
 ## Depends on
 

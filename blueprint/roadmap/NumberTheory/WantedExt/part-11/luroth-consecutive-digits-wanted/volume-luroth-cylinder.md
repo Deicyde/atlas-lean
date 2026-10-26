@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothCylinder
 ---
 
-# Volume luroth Cylinder
+# Measure of Lüroth cylinders
 
-The Lüroth cylinder `I_n(c) = {x ∈ (0, 1] : d_j(x) = c_j, 1 ≤ j ≤ n}` has Lebesgue
-measure `∏ 1 / (c_j (c_j - 1))`. Stated for every `c`; when some `c_j < 2` both sides
-vanish.
+**Measure of Lüroth cylinders.** Write $d_k(x)$ for the $k$-th Lüroth digit of $x$. For every
+$n \in \mathbb{N}$ and all natural numbers $c_1, \dots, c_n$, the set
+$\{x \in (0, 1] : d_j(x) = c_j \text{ for } 1 \le j \le n\}$ has Lebesgue measure
+$\prod_{j=1}^{n} \frac{1}{c_j (c_j - 1)}$, with the convention $1/0 = 0$; in particular both
+sides vanish when some $c_j < 2$.
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

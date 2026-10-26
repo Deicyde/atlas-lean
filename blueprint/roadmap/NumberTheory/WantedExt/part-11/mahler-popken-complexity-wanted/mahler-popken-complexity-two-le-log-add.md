@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexity_two_le_log_add_digitCount_sub_one
 ---
 
-# Theorem 2
+# Upper bound for the binary Mahler–Popken complexity
 
-**Theorem 2**: the binary complexity is at most
-`⌊log₂ n⌋ + ν₂(n) - 1` for `n ≥ 2`, where `ν₂(n)` is the number of
-ones in the base-2 expansion of `n`.
+**Upper bound for the binary Mahler–Popken complexity.** For every natural number $n \ge 2$,
+the binary ($2$-ary) Mahler–Popken complexity $\lVert n \rVert_2$ is at most
+$\lfloor \log_2 n \rfloor + \nu_2(n) - 1$, where $\nu_2(n)$ is the number of ones in the base-$2$
+expansion of $n$.
 
 ## Depends on
 
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
 
 ## Sources
 

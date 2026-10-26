@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.sum_two_squares_div_sum_two_squaresℚ
 ---
 
-# Lemma 1
+# Quotients of sums of two rational squares
 
-**Lemma 1**: a ratio of two nonzero rational sums of two squares is a sum
-of two rational squares.
+**Quotients of sums of two rational squares.** If $\alpha$ and $\beta$ are nonzero rational
+numbers that are each a sum of two squares of rational numbers, then $\alpha / \beta$ is also a
+sum of two squares of rational numbers.
 
 ## Depends on
 
-- [Is Sum Two Squaresℚ](is-sum-two-squares.md)
+- [Sums of two rational squares](is-sum-two-squares.md)
 
 ## Sources
 

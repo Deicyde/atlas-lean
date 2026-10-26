@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderMValue_relations
 ---
 
-# Second Order MValue relations
+# Relations between values of $M$ at neighbouring pairs
 
-(i) `M(s - pr, r) + (p² + 2) M(r, s) + M(s, r + ps) = 0`; (ii)
-`M(r, s)² + (p² + 2) M(r, s) M(s, r + ps) + M(s, r + ps)² = abp³ + (a² - b²)p²`. Domain
-extension: stated for all `(r, s) ≠ (0, 0)` instead of `r, s ≠ 0`, `r + ps ≠ 0`; with `p ≠ 0`
-all three denominators are `±(s² - prs - r²) ≠ 0`.
+**Relations between values of $M$ at neighbouring pairs.** Let $a$, $b$, $p$ be integers with
+$p \ne 0$, and for integers $r$, $s$ let
+$M(r, s) = \frac{br^2 + bs^2 - apr^2 + 2ars}{s^2 - prs - r^2}$. Then for all integers $r$, $s$
+that are not both zero, $M(s - pr, r) + (p^2 + 2)M(r, s) + M(s, r + ps) = 0$ and
+$M(r, s)^2 + (p^2 + 2)M(r, s)M(s, r + ps) + M(s, r + ps)^2 = abp^3 + (a^2 - b^2)p^2$.
+
+The source assumes $r \ne 0$, $s \ne 0$ and $r + ps \ne 0$; here only $(r, s) \ne (0, 0)$ is
+assumed. Since $p \ne 0$, the three denominators equal $\pm(s^2 - prs - r^2)$, which is nonzero.
 
 ## Depends on
 
-- [Second Order MValue](second-order-mvalue.md)
+- [The quantity $M(r, s)$ for the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-mvalue.md)
 
 ## Sources
 

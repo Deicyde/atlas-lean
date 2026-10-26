@@ -4,11 +4,11 @@ navigation: module
 
 # Rogers Dilogarithm Series
 
-- [Rogers Dilog hoorfar Qi series](rogers-dilog-hoorfar-qi-series.md)
-- [Rogers Dilog pell positive series](rogers-dilog-pell-positive-series.md)
-- [Rogers Dilog pell negative series](rogers-dilog-pell-negative-series.md)
-- [Sanford coupled recurrence](sanford-coupled-recurrence.md)
-- [Rogers Dilog sanford principal series](rogers-dilog-sanford-principal-series.md)
-- [Rogers Dilog sanford symmetric series](rogers-dilog-sanford-symmetric-series.md)
-- [Rogers Dilog lucas U series](rogers-dilog-lucas-u-series.md)
-- [Rogers Dilog lucas UV series of neg](rogers-dilog-lucas-uv-series-of-neg.md)
+- [Hoorfar–Qi dilogarithm series](rogers-dilog-hoorfar-qi-series.md)
+- [Bridgeman's dilogarithm series for a positive Pell solution](rogers-dilog-pell-positive-series.md)
+- [Bridgeman's dilogarithm series for a negative Pell solution](rogers-dilog-pell-negative-series.md)
+- [Sanford's coupled recurrence](sanford-coupled-recurrence.md)
+- [Sanford's dilogarithm series identity](rogers-dilog-sanford-principal-series.md)
+- [Sanford's symmetric dilogarithm series](rogers-dilog-sanford-symmetric-series.md)
+- [Sanford's Lucas-sequence dilogarithm series for $Q > 0$](rogers-dilog-lucas-u-series.md)
+- [Sanford's Lucas-sequence dilogarithm series for $Q < 0$](rogers-dilog-lucas-uv-series-of-neg.md)

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_additive_eight_squares_eq_id
 ---
 
-# Multiplicative additive eight squares eq id
+# Multiplicative functions additive on eight paired squares and nonzero at $2$ are the identity
 
-If `f` is multiplicative, satisfies Equation (1) with `k = 4` and `f(2) ≠ 0`, then
-`f(n) = n` for all positive integers `n`.
+**Multiplicative functions additive on eight paired squares and nonzero at $2$ are the
+identity.** Let $f$ be a complex-valued multiplicative function with $f(2) \ne 0$ such that
+
+$$f\Big(\sum_{j=1}^{4} (x_j^2 + y_j^2)\Big) = \sum_{j=1}^{4} f(x_j^2 + y_j^2)$$
+
+for all positive integers $x_1, \dots, x_4, y_1, \dots, y_4$. Then $f(n) = n$ for every positive
+integer $n$.
 
 ## Depends on
 

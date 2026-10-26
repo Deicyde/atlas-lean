@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaLambda_even_eq_sum_regular
 ---
 
-# Mock Theta Lambda even eq sum regular
+# Even-index coefficients of the mock theta function $\lambda$
 
-Theorem 8: `P_λ(2n) = b_2^3(n) + 2 ∑_{k ≥ 1} (-1)^k b_2^3(n - 3k^2)`, where `b_2^3(m)` is
-the coefficient of `q^m` in `(f_2/f_1)^3` (Equation (8)) and vanishes for `m < 0`, and
-`∑ P_λ(n) q^n = λ(q)`.
+**Even-index coefficients of the mock theta function $\lambda$.** Write
+$\lambda(q) = \sum_{n \ge 0} P_\lambda(n) q^n$ for the sixth-order mock theta function $\lambda$,
+let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $b_2^3(m)$ be the coefficient of $q^m$ in
+$(f_2/f_1)^3$. Then for every $n \ge 0$,
+
+$$
+P_\lambda(2n) = b_2^3(n) + 2 \sum_{k \ge 1,\ 3k^2 \le n} (-1)^k b_2^3(n - 3k^2).
+$$
 
 ## Depends on
 
-- [Mock Theta Lambda](mock-theta-lambda.md)
+- [The sixth-order mock theta function $\lambda$](mock-theta-lambda.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

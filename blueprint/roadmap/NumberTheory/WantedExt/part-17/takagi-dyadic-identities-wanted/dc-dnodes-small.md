@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.dcDNodes_small
 ---
 
-# Dc DNodes small
+# Small values of the divide-and-conquer D-node count
 
-Small values `δ(2), …, δ(7) = 0, 1, 0, 2, 2, 2`.
+**Small values of the divide-and-conquer D-node count.** The divide-and-conquer D-node count
+$\delta$ satisfies $\delta(2) = 0$, $\delta(3) = 1$, $\delta(4) = 0$, $\delta(5) = 2$,
+$\delta(6) = 2$ and $\delta(7) = 2$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

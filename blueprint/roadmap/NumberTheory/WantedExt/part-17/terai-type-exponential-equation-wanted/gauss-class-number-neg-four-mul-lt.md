@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gaussClassNumber_neg_four_mul_lt
 ---
 
-# Theorem 3
+# Hua's class number bound
 
-**Theorem 3** (quoted from Hua's textbook). For every positive integer `D`, the class number
-of primitive positive definite binary quadratic forms of discriminant `-4D` satisfies
-`h(-4D) < (4/π) √D log(2e√D)`. "Class number of positive binary quadratic forms" is read as the
-standard primitive (Gauss) class number `gaussClassNumber`: the number of primitive
-Gauss-reduced forms of discriminant `-4D`.
+**Hua's class number bound.** For every positive integer $D$, the Gauss class number
+$h(-4D)$, the number of primitive, reduced, positive definite binary quadratic forms of
+discriminant $-4D$, satisfies $h(-4D) < \frac{4}{\pi} \sqrt{D} \log(2e\sqrt{D})$, where $\log$ is
+the natural logarithm.
+
+The source quotes this bound from Hua's textbook for the class number of positive binary
+quadratic forms; it is read here as the primitive (Gauss) class number.
 
 ## Depends on
 

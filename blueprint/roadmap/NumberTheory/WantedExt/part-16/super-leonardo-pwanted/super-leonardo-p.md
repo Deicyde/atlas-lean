@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.superLeonardoP
 ---
 
-# Super Leonardo P
+# Supergeneralized Leonardo p-numbers
 
-The supergeneralized Leonardo `p`-numbers `𝓛_{p,k,x}(n)`: `x n` for `n ≤ p`, and
-`𝓛(n-1) + 𝓛(n-p-1) + k` for `n > p`. Only the initial values `x 0, …, x p` are used.
+**Supergeneralized Leonardo p-numbers.** For natural numbers $p$ and $k$ and a real sequence
+$x = (x_n)_{n \in \mathbb{N}}$, the supergeneralized Leonardo $p$-numbers are the real numbers
+$\mathcal{L}_{p,k,x}(n)$, $n \in \mathbb{N}$, given by $\mathcal{L}_{p,k,x}(n) = x_n$ for
+$n \le p$ and $\mathcal{L}_{p,k,x}(n) = \mathcal{L}_{p,k,x}(n-1) + \mathcal{L}_{p,k,x}(n-p-1) + k$
+for $n > p$. Only the initial values $x_0, \dots, x_p$ are used.
 
 ## Depends on
 

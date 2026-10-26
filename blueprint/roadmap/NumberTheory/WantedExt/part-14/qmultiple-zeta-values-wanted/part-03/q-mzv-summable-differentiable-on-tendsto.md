@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.qMZV_summable_differentiableOn_tendsto
 ---
 
-# Q MZV summable differentiable On tendsto
+# Analytic properties of general qMZVs
 
-Analytic behaviour of general qMZVs: let `k₁, …, kᵣ ≥ 1`, `Q₁(0) = 0` and
-`deg Qⱼ ≤ kⱼ` (the paper's admissible data). (i) The series `∑ₙ cₙ qⁿ` of
-`ζ_q(k₁, …, kᵣ; Q₁, …, Qᵣ)` converges for complex `|q| < 1`, and `τ ↦ ∑ₙ cₙ e^{2πiτn}` is
-holomorphic on the upper half plane. (ii) If moreover `k₁ ≥ 2`, then
-`lim_{q → 1⁻} (1 - q)^{k₁+⋯+kᵣ} ζ_q(k₁, …, kᵣ; Q₁, …, Qᵣ) = ζ(k₁, …, kᵣ) ∏ⱼ Qⱼ(1)`, with
-`ζ(k₁, …, kᵣ)` the existing `multipleZetaValue` (largest summation index paired with `k₁`).
-The record's remark on how the limit is obtained (interchanging limit and sum) is omitted.
+**Analytic properties of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of an
+integer $k_j \ge 1$ and a polynomial $Q_j \in \mathbb{Q}[X]$ with $\deg Q_j \le k_j$ for every
+$j$ and $Q_1(0) = 0$, and write the general qMZV as
+$\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r) = \sum_{n \ge 0} c_n q^n$. Then (i) for every complex
+$q$ with $|q| < 1$ the series $\sum_{n \ge 0} c_n q^n$ converges absolutely; (ii) the function
+$\tau \mapsto \sum_{n \ge 0} c_n e^{2 \pi i n \tau}$ is holomorphic on the upper half-plane
+$\{\tau \in \mathbb{C} : \operatorname{Im} \tau > 0\}$; (iii) if $r \ge 1$ and $k_1 \ge 2$, then
+$(1 - q)^{k_1 + \cdots + k_r} \sum_{n \ge 0} c_n q^n$ tends to
+$\zeta(k_1, \dots, k_r) \prod_{j=1}^{r} Q_j(1)$ as the real number $q$ tends to $1$ from below,
+where $\zeta(k_1, \dots, k_r) = \sum_{n_1 > \cdots > n_r > 0} n_1^{-k_1} \cdots n_r^{-k_r}$ is the
+multiple zeta value.
 
 ## Depends on
 
-- [Q MZV](../part-02/q-mzv.md)
+- [General q-multiple zeta values](../part-02/q-mzv.md)
 
 ## Sources
 

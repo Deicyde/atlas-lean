@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.volume_lurothDigit_ge_zero_one
 ---
 
-# Volume luroth Digit ge zero one
+# Borel–Bernstein theorem for Lüroth digits
 
-Lüroth analogue of the Borel-Bernstein theorem: for positive `Ψ`, the set of `x ∈ (0, 1]`
-with `d_n(x) ≥ Ψ(n)` for infinitely many `n` has Lebesgue measure `0` if `∑ Ψ(n)⁻¹ < ∞` and
-`1` if `∑ Ψ(n)⁻¹ = ∞` (convergence of a positive series as `Summable`). Quoted in the paper
-from Jager and de Vroedt (its reference [3]).
+**Borel–Bernstein theorem for Lüroth digits.** Let $(\Psi(n))_{n \ge 0}$ be a sequence of
+positive reals, write $d_k(x)$ for the $k$-th Lüroth digit of $x$, and let $E$ be the set of
+$x \in (0, 1]$ such that $d_{n+1}(x) \ge \Psi(n)$ for infinitely many $n$. If
+$\sum_{n \ge 0} 1 / \Psi(n) < \infty$ then $E$ has Lebesgue measure $0$, and if
+$\sum_{n \ge 0} 1 / \Psi(n) = \infty$ then $E$ has Lebesgue measure $1$.
+
+The paper quotes this result from Jager and de Vroedt (its reference [3]).
 
 ## Depends on
 
-- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Lüroth digits](luroth-digit-seq.md)
 
 ## Sources
 

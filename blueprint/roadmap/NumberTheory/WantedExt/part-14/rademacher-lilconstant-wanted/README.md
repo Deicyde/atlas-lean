@@ -4,6 +4,6 @@ navigation: module
 
 # Rademacher LILConstant
 
-- [Partial Sum](partial-sum.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Partial sums of the Rademacher multiplicative function](partial-sum.md)
+- [Rademacher LIL constant conjecture](conjecture.md)
+- [No iterated-logarithm constant for Rademacher multiplicative functions](conjecture-refuted.md)

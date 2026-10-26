@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.spoofOfBases
 ---
 
-# Spoof Of Bases
+# Factorization with all exponents one
 
-The spoof factorization `x_1 ⋯ x_r = x_1^1 ⋯ x_r^1` on the bases `x`.
+**Factorization with all exponents one.** For a finite multiset $x$ of natural numbers
+$x_1, \dots, x_r$, this is the formal product $x_1 \cdots x_r = x_1^1 \cdots x_r^1$, that is,
+the multiset of pairs $(x_1, 1), \dots, (x_r, 1)$, each consisting of a base $x_i$ and the
+exponent $1$.
 
 ## Depends on
 

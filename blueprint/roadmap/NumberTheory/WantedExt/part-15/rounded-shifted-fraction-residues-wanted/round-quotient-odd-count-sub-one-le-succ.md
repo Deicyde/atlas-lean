@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.roundQuotientOddCount_sub_one_le_succ
 ---
 
-# Round Quotient Odd Count sub one le succ
+# The rounding sequence parity count drops by at most one
 
-Corollary 19: `𝓡` decreases by at most `1` in any step.
+**The rounding sequence parity count drops by at most one.** For every natural number $n$,
+the rounding sequence parity count $\mathcal{R}$ satisfies
+$\mathcal{R}_{n+1} \ge \mathcal{R}_n - 1$.
 
 ## Depends on
 
-- [Round Quotient Odd Count](round-quotient-odd-count.md)
+- [Rounding sequence parity count](round-quotient-odd-count.md)
 
 ## Sources
 

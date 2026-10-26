@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.divisorProd_sq
 ---
 
-# Lemma 1
+# Square of the product of the divisors
 
-**Lemma 1**: `T(n)^2 = n^{τ(n)}` (the paper writes
-`T(n) = n^{τ(n)/2}`).
+**Square of the product of the divisors.** For every positive integer $n$, let $T(n)$ be the
+product of the positive divisors of $n$ and $\tau(n)$ their number. Then $T(n)^2 = n^{\tau(n)}$.
+
+The paper writes this as $T(n) = n^{\tau(n)/2}$.
 
 ## Depends on
 
-- [Divisor Prod](divisor-prod.md)
+- [Product of the divisors](divisor-prod.md)
 
 ## Sources
 

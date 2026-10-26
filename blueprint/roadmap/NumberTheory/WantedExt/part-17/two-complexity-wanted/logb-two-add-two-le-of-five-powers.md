@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.TwoComplexityWanted.logb_two_add_two_le_of_five_po
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Sources
 

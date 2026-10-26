@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsOddSquarefreePart
 ---
 
-# Is Odd Squarefree Part
+# Odd squarefree part
 
-`k` is the odd squarefree part `N^*` of `N`: `k` is odd and squarefree and
-`N = 2^a m² k`. For positive `N` this `k` is unique: it is `sqf(N)` when that is odd and
-`sqf(N)/2` otherwise.
+**Odd squarefree part.** For an integer $N$ and a natural number $k$, $k$ is an odd
+squarefree part of $N$, written $N^* = k$, when $k$ is odd and squarefree and $N = 2^a m^2 k$
+for some natural number $a$ and some integer $m$.
+
+For positive $N$ such a $k$ is unique: it is the squarefree part of $N$ when that is odd, and
+half of it otherwise.
 
 ## Depends on
 

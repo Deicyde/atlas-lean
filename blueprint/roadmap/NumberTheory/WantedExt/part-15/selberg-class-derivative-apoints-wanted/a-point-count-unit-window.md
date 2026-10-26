@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.aPointCount_unit_window
 ---
 
-# Lemma 4
+# Lemma 4 (a-points of derivatives in windows of unit height)
 
-**Lemma 4.** `N_k(a; T + 1, F) - N_k(a; T, F) = O(log T)` as `T → ∞`. Stated for every
-strip `E₂ < Re s < E₁` (the paper uses the `E₁`, `E₂` of Lemmas 1 and 3) and under `a ≠ 0` or
-`a(n) ≠ 0` for some `n ≥ 2`.
+**Lemma 4 (a-points of derivatives in windows of unit height).** Let $F$ be a function in the
+Selberg class with Dirichlet coefficients $a(n)$, let $k \ge 1$, and let $a \in \mathbb{C}$ be such
+that $a \ne 0$ or $a(n) \ne 0$ for some $n \ge 2$. Let $E_2, E_1$ be real numbers and let
+$N_k(a; T, F)$ be the number of a-points of the $k$-th derivative $F^{(k)}$, counted with
+multiplicity, in $E_2 < \operatorname{Re} s < E_1$, $0 < \operatorname{Im} s < T$. Then
+$N_k(a; T + 1, F) - N_k(a; T, F) = O(\log T)$ as $T \to \infty$.
+
+The paper takes $E_1$ and $E_2$ from Lemmas 1 and 3; the bound is stated here for every strip.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
-- [A Point Count](a-point-count.md)
+- [Functions in the Selberg class](selberg-class-function.md)
+- [Counting function of a-points of derivatives](a-point-count.md)
 
 ## Sources
 

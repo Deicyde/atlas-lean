@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PowerfulNumbersWanted.not_exists_sixty_four_mul_pow_six_sub_one_eq
 ---
 
-# Corollary 1
+# No integer solutions of $64x^6 - 1 = p^3 q^3 y^2$ with $p$, $q$ prime
 
-**Corollary 1**: the equation
-`64*x^6 - 1 = p^3*q^3*y^2` has no solution with integers `x, y`
-and primes `p, q`.
+**No integer solutions of $64x^6 - 1 = p^3 q^3 y^2$ with $p$, $q$ prime.** There are no
+integers $x$, $y$ and primes $p$, $q$ with $64 x^6 - 1 = p^3 q^3 y^2$.
 
 ## Depends on
 

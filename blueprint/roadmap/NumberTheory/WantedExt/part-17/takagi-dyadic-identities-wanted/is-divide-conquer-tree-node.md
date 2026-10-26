@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isDivideConquerTree_node
 ---
 
-# Is Divide Conquer Tree node
+# The divide-and-conquer condition at the root
 
-Unfolding of `IsDivideConquerTree` at an interior node.
+**The divide-and-conquer condition at the root.** A full binary tree whose root has left
+subtree $L$ and right subtree $R$ is a divide-and-conquer tree if and only if the numbers of
+leaves of $L$ and $R$ differ by at most $1$ and both $L$ and $R$ are divide-and-conquer trees.
 
 ## Depends on
 
-- [Is Divide Conquer Tree](is-divide-conquer-tree.md)
+- [Divide-and-conquer trees](is-divide-conquer-tree.md)
 
 ## Sources
 

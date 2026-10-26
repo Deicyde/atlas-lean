@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.not_isUnitarySZumkeller_of_odd
 ---
 
-# Not is Unitary SZumkeller of odd
+# No odd unitary s-Zumkeller numbers
 
-There is no odd unitary s-Zumkeller number.
+**No odd unitary s-Zumkeller numbers.** There is no odd unitary s-Zumkeller number.
 
 ## Depends on
 
-- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+- [Unitary s-Zumkeller numbers](is-unitary-szumkeller.md)
 
 ## Sources
 

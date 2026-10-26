@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.negRLucas_eq
 ---
 
-# Neg RLucas eq
+# The companion sequence in terms of the $(-r)$-Fibonacci polynomials
 
-Proposition 1: for `r ≥ 2` and `n ≥ r`,
-`V^{(-r)}_n = r U^{(-r)}_{n+1} - x y^{-1} U^{(-r)}_{n-r}`. The paper takes `x` a unit;
-the identity holds for every `x`.
+**The companion sequence in terms of the $(-r)$-Fibonacci polynomials.** Let $A$ be a
+commutative ring, $r \ge 2$ a natural number, $x \in A$ and $y$ a unit of $A$, and let
+$U^{(-r)}_n(x, y)$ be the $(-r)$-Fibonacci polynomials and $V^{(-r)}_n(x, y)$ their companion
+sequence. For every natural number $n \ge r$,
+$V^{(-r)}_n(x, y) = r \, U^{(-r)}_{n+1}(x, y) - x y^{-1} U^{(-r)}_{n-r}(x, y)$.
+
+The paper takes $x$ a unit; the identity holds for every $x$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
-- [Neg RLucas](neg-rlucas.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
+- [Companion sequence of the $(-r)$-Fibonacci polynomials](neg-rlucas.md)
 
 ## Sources
 

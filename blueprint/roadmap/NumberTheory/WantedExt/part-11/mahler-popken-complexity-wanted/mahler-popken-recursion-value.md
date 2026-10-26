@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenRecursionValue
 ---
 
-# Mahler Popken Recursion Value
+# Right-hand side of the Mahler–Popken recursion
 
-The right-hand side of the recursion (9): the minimum of
-`∥d∥ₘ + ∥n/d∥ₘ` over divisors `d ∣ n` with `d ≠ 1` and `d ≠ n`,
-and of `∥η∥ₘ + ∥n - η∥ₘ` over `0 < η < n`.
+**Right-hand side of the Mahler–Popken recursion.** For natural numbers $m$ and $n$, write
+$\lVert k \rVert_m$ for the $m$-ary Mahler–Popken complexity of $k$. The recursion value of $n$
+is the smallest of the sums $\lVert d \rVert_m + \lVert n/d \rVert_m$ over the divisors $d$ of
+$n$ with $d \ne 1$ and $d \ne n$, and of the sums $\lVert \eta \rVert_m + \lVert n - \eta \rVert_m$
+over $0 < \eta < n$; it is $0$ when there are no such sums. This is the right-hand side of the
+recursion (9) in Campbell's paper.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
 
 ## Sources
 

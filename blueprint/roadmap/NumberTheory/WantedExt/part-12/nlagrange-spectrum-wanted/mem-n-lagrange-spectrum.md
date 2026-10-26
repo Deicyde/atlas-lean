@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.mem_nLagrangeSpectrum
 ---
 
-# Mem n Lagrange Spectrum
+# Membership in the $n$-Lagrange spectrum
 
-Membership in `Lₙ`.
+**Membership in the $n$-Lagrange spectrum.** For every natural number $n$ and real number
+$\alpha$, $\alpha$ lies in the $n$-Lagrange spectrum $L_n$ if and only if $\alpha = \lambda_n(\xi)$
+for some irrational real number $\xi$, where $\lambda_n$ is the $n$-Lagrange approximability.
 
 ## Depends on
 
-- [N Lagrange Approximability](n-lagrange-approximability.md)
-- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [$n$-Lagrange approximability](n-lagrange-approximability.md)
+- [$n$-Lagrange spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

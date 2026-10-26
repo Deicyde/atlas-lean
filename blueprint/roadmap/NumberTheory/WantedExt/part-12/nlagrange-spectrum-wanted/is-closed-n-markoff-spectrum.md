@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isClosed_nMarkoffSpectrum
 ---
 
-# Is Closed n Markoff Spectrum
+# The $n$-Markoff spectrum is closed
 
-`Mₙ` is closed.
+**The $n$-Markoff spectrum is closed.** For every integer $n \ge 1$, the $n$-Markoff spectrum
+$M_n$ is a closed subset of $\mathbb{R}$.
 
 ## Depends on
 
-- [N Markoff Spectrum](n-markoff-spectrum.md)
+- [The $n$-Markoff spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

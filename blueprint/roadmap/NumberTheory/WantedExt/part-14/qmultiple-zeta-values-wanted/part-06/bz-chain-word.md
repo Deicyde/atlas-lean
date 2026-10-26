@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bzChainWord
 ---
 
-# Bz Chain Word
+# Marker word of a list of blocks
 
-The marker word of a list of blocks `(s, k)`: each block is a weighted position `some k`
-followed by `s - 1` unweighted positions.
+**Marker word of a list of blocks.** A marker is either a weight $k \in \mathbb{N}$ (a weighted
+position) or a blank (an unweighted position). The marker word of a list of blocks
+$(s_1, k_1), \dots, (s_r, k_r)$ of natural numbers is the concatenation, in order, of the words
+consisting of the weight $k_t$ followed by $s_t - 1$ blanks (no blanks when $s_t \le 1$).
 
 ## Depends on
 

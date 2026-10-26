@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_isSquare_discr_truncatedLog_three_five_seven_mul
 ---
 
-# Not is Square discr truncated Log three five seven mul
+# Nonsquare discriminants of $F_{3q}$, $F_{5q}$ and $F_{7q}$
 
-For every prime `q`, if `n = 3q`, `5q`, or `7q`, then `disc(F_n)` is not a rational
-square.
+**Nonsquare discriminants of $F_{3q}$, $F_{5q}$ and $F_{7q}$.** Let
+$F_n(x) = 1 + x + x^2/2 + \cdots + x^n/n$ be the truncated logarithmic polynomial. For every
+prime $q$, if $n = 3q$, $n = 5q$ or $n = 7q$, then the discriminant of $F_n$ is not a square in
+$\mathbb{Q}$.
 
 ## Depends on
 
-- [Truncated Log Polynomial](truncated-log-polynomial.md)
+- [Truncated logarithmic polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

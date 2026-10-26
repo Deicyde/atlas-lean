@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sectorLatticePoints
 ---
 
-# Sector Lattice Points
+# Lattice points of a sector
 
-The integer lattice points `I(α) = S(α) ∩ ℤ²` of the sector
-`S(α) = {(x, y) ∈ ℝ² : 0 ≤ y ≤ α x}`, viewed as a subset of `ℝ × ℝ`.
+**Lattice points of a sector.** For a real number $\alpha$, let
+$S(\alpha) = \{(x, y) \in \mathbb{R}^2 : 0 \le y \le \alpha x\}$ be the sector of slope
+$\alpha$. Its lattice points are $I(\alpha) = S(\alpha) \cap \mathbb{Z}^2$, viewed as a subset
+of $\mathbb{R}^2$.
 
 ## Depends on
 

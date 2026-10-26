@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.HasSquareElementarySymmetricFunctions
 ---
 
-# Has Square Elementary Symmetric Functions
+# Integer triples with square elementary symmetric functions
 
-The three elementary symmetric functions of `a`, `b`, and `c` are squares.
+**Integer triples with square elementary symmetric functions.** Integers $a$, $b$ and $c$
+have square elementary symmetric functions when $a + b + c$, $ab + bc + ca$ and $abc$ are each
+the square of an integer.
 
 ## Depends on
 

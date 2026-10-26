@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsAddMonoidBasis.zero_notMem
 ---
 
-# Zero not Mem
+# A monoid basis does not contain zero
 
-A basis never contains `0`.
+**A monoid basis does not contain zero.** Let $\alpha$ be an additive commutative monoid and
+let $M$ and $B$ be subsets of $\alpha$. If $B$ is a basis of $M$, then $0 \notin B$.
 
 ## Depends on
 
-- [Is Add Monoid Basis](is-add-monoid-basis.md)
+- [Basis of a submonoid](is-add-monoid-basis.md)
 
 ## Sources
 

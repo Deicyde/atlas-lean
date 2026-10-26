@@ -19,8 +19,8 @@ where $p$ runs over the prime divisors of $n$ other than $j$.
 
 ## Depends on
 
-- [Abundancy Index](../../../part-14/primitive-nondeficient-wanted/abundancy-index.md)
-- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
+- [Abundancy index](../../../part-14/primitive-nondeficient-wanted/abundancy-index.md)
+- [Product of $p/(p-1)$ over the prime factors](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

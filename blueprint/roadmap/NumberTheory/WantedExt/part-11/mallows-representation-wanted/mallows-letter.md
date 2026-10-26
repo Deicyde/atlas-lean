@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.MallowsLetter
 ---
 
-# Mallows Letter
+# The Mallows alphabet
 
-The letters `L`, `M`, `R` ("left", "middle", "right") of Mallows representations.
+**The Mallows alphabet.** The letters of Mallows representations are the three distinct
+letters $L$, $M$ and $R$, standing for "left", "middle" and "right".
 
 ## Depends on
 

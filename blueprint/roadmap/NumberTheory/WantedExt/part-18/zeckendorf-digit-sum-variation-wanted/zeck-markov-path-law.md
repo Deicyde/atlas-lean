@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.zeckMarkovPath_law
 ---
 
-# Zeck Markov Path law
+# The Zeckendorf Markov chain has the invariant law
 
-If `U_2, U_3, …` are independent and uniform on `[0, 1]`, the law of `(y_j)_{j ≥ 2}` is the
-`T`-invariant measure `ℙ`.
+**The Zeckendorf Markov chain has the invariant law.** Let $\mathbb{X}$ be the set of
+Zeckendorf-adic integers: the digit sequences $x \in \{0, 1\}^{\mathbb{N}}$ with $x_0 = x_1 = 0$
+and no two consecutive digits equal to $1$. Let $\mu$ be a probability measure on
+$\{0, 1\}^{\mathbb{N}}$ with $\mu(\mathbb{X}^c) = 0$ that is preserved by the odometer $T$. Let
+$(\Omega, \nu)$ be a probability space and let $(U_n)_{n \ge 0}$ be independent measurable real
+random variables on $\Omega$, each uniformly distributed on $[0, 1]$. Then the law under $\nu$ of
+the digit sequence $\omega \mapsto (y_j(\omega))_{j \in \mathbb{N}}$ of the Zeckendorf Markov chain
+driven by $(U_n(\omega))_{n \ge 0}$ is $\mu$.
+
+The paper indexes the uniform variables from $2$, writing $U_{n+2}$ for the $U_n$ here; the
+measure $\mu$ is the paper's $\mathbb{P}$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Markov Path](zeck-markov-path.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The Zeckendorf Markov chain](zeck-markov-path.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

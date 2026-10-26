@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.logSmallestDenominatorDensity_of_nonpos
 ---
 
-# Log Smallest Denominator Density of nonpos
+# The log smallest-denominator density for nonpositive arguments
 
-On `s ≤ 0`, `η_log(s) = (6/π²) e^{2s}`.
+**The log smallest-denominator density for nonpositive arguments.** For every real $s \le 0$,
+the density $\eta_{\log}$ of the logarithmic smallest denominator satisfies
+$\eta_{\log}(s) = \frac{6}{\pi^2} e^{2s}$.
 
 ## Depends on
 
-- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
+- [Density of the logarithmic smallest denominator](log-smallest-denominator-density.md)
 
 ## Sources
 

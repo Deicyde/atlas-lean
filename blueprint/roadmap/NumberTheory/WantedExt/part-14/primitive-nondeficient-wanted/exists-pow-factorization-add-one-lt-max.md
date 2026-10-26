@@ -5,19 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.exists_pow_factorization_add_one_lt_max
 ---
 
-# Lemma
+# Generalized Puchta lemma
 
-**Lemma** (generalized Puchta): let `n` be primitive
-non-deficient with least prime factor `p₁` and `k` distinct prime
-factors, `(p₁, k) ≠ (3, 3)`, and suppose `H(n) ≥ 2 + α` for some
-`0 < α < 1`. Then some prime factor `p` satisfies
-`p^(a+1) < max (2(k+2+p₁)/α) (k(k+1))`, where `a` is the exponent
-of `p`.
+**Generalized Puchta lemma.** Let $n$ be a primitive non-deficient number with $k$ distinct
+prime factors, the least of which is $p_1$, and suppose that $(p_1, k) \ne (3, 3)$. Let $\alpha$
+be a rational number with $0 < \alpha < 1$ such that $H(n) \ge 2 + \alpha$, where
+$H(n) = \prod_p p/(p-1)$ is the product over the distinct primes $p$ dividing $n$. Then some
+prime factor $p$ of $n$ satisfies $p^{a+1} < \max\bigl(2(k + 2 + p_1)/\alpha,\ k(k+1)\bigr)$,
+where $a$ is the exponent of $p$ in $n$.
 
 ## Depends on
 
-- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
-- [Abundancy Sup](abundancy-sup.md)
+- [Primitive non-deficient number](is-primitive-nondeficient.md)
+- [Product of $p/(p-1)$ over the prime factors](abundancy-sup.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddDoubleFactorial
 ---
 
-# Odd Double Factorial
+# Odd double factorial below a power of two
 
-`oddDoubleFactorial e` is `(2^e-1)!!`, represented through the paper's identity
-as `odpr(1,2^e-1)`.  The parameter is the exponent `e`, not the odd endpoint.
+**Odd double factorial below a power of two.** For a natural number $e$, $(2^e-1)!!$ is the
+product of the odd natural numbers in the closed interval $[1, 2^e-1]$. The parameter is the
+exponent $e$, not the odd endpoint $2^e-1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Range Product](odd-range-product.md)
+- [Odd-range product](odd-range-product.md)
 
 ## Sources
 

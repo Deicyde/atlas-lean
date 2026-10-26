@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_hammingWeight_range_eq_trollope
 ---
 
-# Sum hamming Weight range eq trollope
+# Trollope's formula via the Takagi function
 
-Corollary 30 (Trollope): for `n = 2^k + r` with `0 ≤ r < 2^k` and `x = r/2^k`,
-`S₁(n) = n log₂ n / 2 + 2^(k-1) (2x - τ(x) - (1+x) log₂(1+x))`.
+**Trollope's formula via the Takagi function.** For a natural number $m$, write $s_1(m)$ for
+the sum of the binary digits of $m$ and $S_1(m) = \sum_{i=0}^{m-1} s_1(i)$. Let $k$ and $r$ be
+natural numbers with $r < 2^k$, and put $n = 2^k + r$ and $x = r / 2^k$. Write $\tau(x)$ for
+the Takagi value of the dyadic presentation $r / 2^k$. Then
+
+$$S_1(n) = \frac{n \log_2 n}{2} + 2^{k-1} \left(2x - \tau(x) - (1 + x) \log_2 (1 + x)\right).$$
 
 ## Depends on
 

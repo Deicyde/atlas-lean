@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.nicomacheanNu_examples
 ---
 
-# Nicomachean Nu examples
+# Examples of the Nicomachean defect
 
-`ν(1, 2, 3, 4) = 0`, `ν(1, 2) = 0`, `ν(3, 3, 3) = 0`, and the paper's
-`ν(1, 2, 2, 3, 4, x, 6, 8) = (5 - x)(x - 4)(8 + x)` at `x = 5` (value `0`) and `x = 6`
-(value `-28`).
+**Examples of the Nicomachean defect.** For the Nicomachean defect $\nu$ of a sequence of
+integers, $\nu(1, 2, 3, 4) = 0$, $\nu(1, 2) = 0$, $\nu(3, 3, 3) = 0$,
+$\nu(1, 2, 2, 3, 4, 5, 6, 8) = 0$ and $\nu(1, 2, 2, 3, 4, 6, 6, 8) = -28$.
+
+The last two are the values at $x = 5$ and $x = 6$ of the paper's identity
+$\nu(1, 2, 2, 3, 4, x, 6, 8) = (5 - x)(x - 4)(8 + x)$; the identity itself is not stated here.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

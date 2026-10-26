@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SelbergSpectralGap.selbergUpperBound_wanted
 ---
 
-# Selberg Upper Bound wanted
+# Selberg's bound on the spectral-gap constant
 
-Source: Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row
-`C₆₁ ≤ 1/4`.
+**Selberg's bound on the spectral-gap constant.** Selberg's congruence spectral-gap constant
+$C_{61}$ is at most $1/4$.
 
 ## Depends on
 
@@ -17,3 +17,4 @@ Source: Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SelbergSpectralGapWanted](../../../../../sources/v2/WantedExt.md)
+- Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row `C₆₁ ≤ 1/4`.

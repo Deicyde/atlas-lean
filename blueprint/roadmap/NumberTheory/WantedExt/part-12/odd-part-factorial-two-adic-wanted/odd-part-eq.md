@@ -6,15 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oddPart_eq
 ---
 
-# Odd Part eq
+# Odd part as a quotient by a power of two
 
-The characteristic formula for `oddPart`: it divides `n` by `2` raised to the
-exponent recorded by `Nat.factorization`.  This makes the correspondence with
-the paper's `n / 2^{ν(n)}` explicit.
+**Odd part as a quotient by a power of two.** For every natural number $n$,
+$\mathrm{od}(n) = n / 2^{\nu_2(n)}$, where $\mathrm{od}(n)$ is the odd part of $n$ and
+$\nu_2(n)$ is the exponent of $2$ in the prime factorization of $n$, with $\nu_2(0) = 0$.
 
 ## Depends on
 
-- [Odd Part](odd-part.md)
+- [Odd part](odd-part.md)
 
 ## Sources
 

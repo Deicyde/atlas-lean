@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.one_lt_gcd_mersenneOmega_of_legendreSym_eq_zero
 ---
 
-# One lt gcd mersenne Omega of legendre Sym eq zero
+# A zero Legendre symbol forces $\gcd(n, \Omega) > 1$
 
-Let `p` be one of the primes `r_i`, `q_i` of `s_1^- s_1^+`. If `η_n(p) = (M_n | p) = 0`, then
-`gcd(n, Ω) > 1` with `Ω = Ω(s_1^- s_1^+)`.
+**A zero Legendre symbol forces $\gcd(n, \Omega) > 1$.** Let $s_1 \ge 3$ be an integer, let
+$s_1^-$ and $s_1^+$ be the odd squarefree parts of $s_1 - 2$ and $s_1 + 2$, and let
+$\Omega = \Omega(s_1^- s_1^+)$. Let $p$ be a prime dividing $s_1^- s_1^+$, let $n$ be a natural
+number and let $M_n = 2^n - 1$. If the Legendre symbol $\left(\frac{M_n}{p}\right)$ is $0$, then
+$\gcd(n, \Omega) > 1$.
 
 ## Depends on
 
-- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
-- [Mersenne Omega](mersenne-omega.md)
+- [Odd squarefree part](is-odd-squarefree-part.md)
+- [The order $\Omega(m)$ of $2$, doubled when odd](mersenne-omega.md)
 
 ## Sources
 

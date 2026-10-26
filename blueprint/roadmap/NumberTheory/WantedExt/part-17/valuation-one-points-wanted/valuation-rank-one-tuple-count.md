@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.valuationRankOneTupleCount
 ---
 
-# Valuation Rank One Tuple Count
+# Rank-one tuple count $o_k(f, p)$
 
-`o_k(f, p)`: the number of element-wise distinct `k`-tuples `P` of points of `C_f(𝔽_p)` whose
-matrix `B_k(P)` has rank `1` with at least one of its first two columns non-zero.
+**Rank-one tuple count $o_k(f, p)$.** For $f \in \mathbb{Z}[x, y]$ and natural numbers $p$
+and $k$, let $C_f(\mathbb{F}_p)$ be the set of pairs $(r, s)$ of natural numbers with $r, s < p$
+such that $p$ divides $f(r, s)$. Then $o_k(f, p)$ is the number of $k$-tuples
+$P = (P_1, \dots, P_k)$ of pairwise distinct points of $C_f(\mathbb{F}_p)$ such that the
+$k \times 3$ matrix $B_k(P)$ over $\mathbb{Z}/p\mathbb{Z}$ whose $i$-th row is the valuation row
+at $P_i$ has rank $1$ and the first two columns of $B_k(P)$ are not both zero.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
-- [Valuation Row](valuation-row.md)
+- [Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$](valuation-distinct-tuples.md)
+- [Valuation row of a point](valuation-row.md)
 
 ## Sources
 

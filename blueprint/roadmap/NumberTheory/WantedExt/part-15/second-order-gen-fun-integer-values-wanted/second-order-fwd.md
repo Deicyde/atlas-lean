@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderFwd
 ---
 
-# Second Order Fwd
+# Forward part of a second-order sequence
 
-Forward part `A^{(r,s)}_n` (`n ≥ 0`) of the two-sided sequence with `A_0 = r`, `A_1 = s`,
-`A_{n+1} = p A_n + A_{n-1}`.
+**Forward part of a second-order sequence.** For integers $p, r, s$, this is the sequence
+$(A^{(r,s)}_n)_{n \ge 0}$ of integers with $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and
+$A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for every natural number $n$.
 
 ## Depends on
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinite_prime_tuples_smooth_gaps
 ---
 
-# Infinite prime tuples smooth gaps
+# Prime $m$-tuples with smooth gaps
 
-Prime `m`-tuples with smooth gaps: if `k` is an admissible value of `k_m` in
-the Maynard–Tao theorem (every admissible tuple with at least `k` elements has
-infinitely many shifts containing `m` primes), then there are infinitely many
-increasing `m`-tuples of primes `p_1 < ⋯ < p_m` all of whose gaps `p_i - p_j` are
-`y_m`-smooth, `y_m` the largest prime `≤ k`. The gaps are stated as
-`k`-smooth, which is the same condition; the paper applies this with the values
-`k_m` of its Table 1 and remarks.
+**Prime $m$-tuples with smooth gaps.** Let $m \ge 2$ and $k$ be natural numbers such that
+every admissible finite set $H$ of at least $k$ integers has infinitely many integers $n$ for
+which $n + h$ is a (positive) prime for at least $m$ elements $h \in H$. Then there are
+infinitely many $m$-tuples of primes $p_1 < p_2 < \dots < p_m$ such that for all $j < i$ every
+prime factor of $p_i - p_j$ is at most $k$.
+
+Equivalently, every gap is $y$-smooth for $y$ the largest prime at most $k$; the paper applies
+this with the admissible values $k_m$ of the Maynard–Tao theorem listed in its Table 1.
 
 ## Depends on
 

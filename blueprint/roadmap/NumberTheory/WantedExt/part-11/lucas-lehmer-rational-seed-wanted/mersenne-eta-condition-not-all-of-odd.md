@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.mersenneEtaCondition_not_all_of_odd
 ---
 
-# Mersenne Eta Condition not all of odd
+# Condition (etar) fails for some reduced residue when the seed is odd
 
-If `s_1` is odd, then `q'(s_1) ≠ 1`: condition (etar) fails for some reduced residue modulo
-`Ω`.
+**Condition (etar) fails for some reduced residue when the seed is odd.** Let $s_1 \ge 3$ be
+an odd integer, let $s_1^-$ and $s_1^+$ be the odd squarefree parts of $s_1 - 2$ and $s_1 + 2$,
+and let $\Omega = \Omega(s_1^- s_1^+)$. Then the number of integers $n$ with $1 \le n < \Omega$
+and $\gcd(n, \Omega) = 1$ for which condition (etar) holds for $s_1^-$, $s_1^+$ and $n$ is not
+equal to $\varphi(\Omega)$.
 
 ## Depends on
 
-- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
+- [Odd squarefree part](is-odd-squarefree-part.md)
 - [Mersenne Eta Condition](mersenne-eta-condition.md)
-- [Mersenne Omega](mersenne-omega.md)
+- [The order $\Omega(m)$ of $2$, doubled when odd](mersenne-omega.md)
 
 ## Sources
 

@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.phi_sq_three_mul_phi_sq_five_eisenstein
 ---
 
-# Phi sq three mul phi sq five eisenstein
+# Eisenstein-series formula for $\varphi(q^3)^2\varphi(q^5)^2$
 
-For `‖q‖ < 1`, `φ²(q³)φ²(q⁵) = -(1/36)[P₁ - 2P₂ - 3P₃ + 4P₄ + 5P₅ + 6P₆ - 10P₁₀ - 12P₁₂
-- 15P₁₅ + 20P₂₀ + 30P₃₀ - 60P₆₀] - (2/3)[5q f₁f₃f₅f₁₅ + 14q² f₂f₆f₁₀f₃₀ + 20q⁴ f₄f₁₂f₂₀f₆₀
-- 4q f₃f₅f₆f₁₀ - 8q² f₆f₁₀f₁₂f₂₀]`.
+**Eisenstein-series formula for $\varphi(q^3)^2\varphi(q^5)^2$.** Let $q$ be
+a complex number with $|q| < 1$. Write $\varphi(x) = \sum_{n \in \mathbb{Z}} x^{n^2}$ for
+Ramanujan's theta function, $f_k = \prod_{m \ge 1} (1 - q^{km})$, and $P_k = P(q^k)$, where
+$P(x) = 1 - 24 \sum_{m \ge 1} m x^m / (1 - x^m)$ is the weight-two Eisenstein series. Then
+
+$$
+\varphi(q^3)^2\varphi(q^5)^2 = -\tfrac{1}{36}(P_1 - 2P_2 - 3P_3 + 4P_4 + 5P_5 + 6P_6 - 10P_{10} -
+12P_{12} - 15P_{15} + 20P_{20} + 30P_{30} - 60P_{60}) - \tfrac{2}{3}(5q f_1 f_3 f_5 f_{15} +
+14q^2 f_2 f_6 f_{10} f_{30} + 20q^4 f_4 f_{12} f_{20} f_{60} - 4q f_3 f_5 f_6 f_{10} -
+8q^2 f_6 f_{10} f_{12} f_{20}).
+$$
 
 ## Depends on
 

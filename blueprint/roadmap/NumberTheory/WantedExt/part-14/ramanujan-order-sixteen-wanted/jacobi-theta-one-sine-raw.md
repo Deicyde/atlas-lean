@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.jacobiThetaOneSineRaw
 ---
 
-# Jacobi Theta One Sine Raw
+# Raw Jacobi theta function $\theta_1$
 
-The Jacobi theta function `θ₁(z | τ) = 2 ∑_{n ≥ 0} (-1)ⁿ q^{(2n+1)²/8} sin((2n+1) z)` with
-`q^{(2n+1)²/8} = exp(πiτ (2n+1)²/4)`, i.e. `q = e^{2πiτ}` (Equation (11)).
+**Raw Jacobi theta function $\theta_1$.** For complex numbers $z$ and $\tau$, the raw Jacobi
+theta function is
 
-This raw version is Mathlib's total `tsum`; it is `0` when the series diverges (for example at
-`τ = 0`, `z = π/2`). Use `jacobiThetaOneSine`, which requires `0 < Im τ`, unless that fallback is
-intended.
+$$\theta_1(z \mid \tau) = 2 \sum_{n=0}^{\infty} (-1)^n e^{\pi i \tau (2n+1)^2/4} \sin((2n+1) z)$$
+
+when this series is summable, and $0$ otherwise. With $q = e^{2 \pi i \tau}$, the factor
+$e^{\pi i \tau (2n+1)^2/4}$ is $q^{(2n+1)^2/8}$.
+
+The value $0$ for a non-summable series is a convention; it occurs, for example, at $\tau = 0$
+and $z = \pi/2$. The intended object is the Jacobi theta function on the upper half-plane
+$\operatorname{Im} \tau > 0$, where the series converges for every $z$.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddRangeProduct
 ---
 
-# Odd Range Product
+# Odd-range product
 
-`oddRangeProduct l m` is the product of the odd natural numbers in the closed
-interval `[l,m]`.  This is the paper's `odpr(l,m)`; a filtered `Finset.Icc`
-makes both endpoints and the oddness restriction explicit.
+**Odd-range product.** For natural numbers $l$ and $m$, the odd-range product
+$\operatorname{odpr}(l, m)$ is the product of the odd natural numbers $j$ with $l \le j \le m$;
+it equals $1$ when there are none.
 
 ## Depends on
 

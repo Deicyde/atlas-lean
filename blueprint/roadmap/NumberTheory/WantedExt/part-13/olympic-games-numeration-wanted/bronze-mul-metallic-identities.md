@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.bronze_mul_metallic_identities
 ---
 
-# Bronze mul metallic identities
+# Metallic identities for the bronze numbers
 
-With `α = (3 + √13) / 2`, `β = (5 + √13) / 6` and `γ = (√13 - 3) / 2`, for `k ≥ 0`:
-(1) `B_{2k+1} α = B_{2k+2} + γ^{2k+1}`;
-(2) `C_{2k} α = C_{2k+1} + (13 + √13) / (2√13) · γ^{2k}`;
-(3) `D_{2k} α = D_{2k+1} + (13 - √13) / (2√13) · γ^{2k}`;
-(4) `3B_{2k+1} β = C_{2k+2} + (13 - 3√13) / (2√13) · γ^{2k}`;
-(5) `(B_{2k+1} + C_{2k+2}) β = D_{2k+2} + (65 - 17√13) / (6√13) · γ^{2k}`;
-(6) `D_{2k} β = B_{2k+1} + (13 - √13) / (6√13) · γ^{2k}`.
+**Metallic identities for the bronze numbers.** Let $\alpha = (3 + \sqrt{13})/2$,
+$\beta = (5 + \sqrt{13})/6$ and $\gamma = (\sqrt{13} - 3)/2$, let $B_n$ be the bronze numbers,
+and let $C_n$ and $D_n$ be the companion bronze numbers of the first and second type. For every
+natural number $k$, the following hold in $\mathbb{R}$:
+(1) $B_{2k+1}\alpha = B_{2k+2} + \gamma^{2k+1}$;
+(2) $C_{2k}\alpha = C_{2k+1} + \frac{13 + \sqrt{13}}{2\sqrt{13}}\gamma^{2k}$;
+(3) $D_{2k}\alpha = D_{2k+1} + \frac{13 - \sqrt{13}}{2\sqrt{13}}\gamma^{2k}$;
+(4) $3B_{2k+1}\beta = C_{2k+2} + \frac{13 - 3\sqrt{13}}{2\sqrt{13}}\gamma^{2k}$;
+(5) $(B_{2k+1} + C_{2k+2})\beta = D_{2k+2} + \frac{65 - 17\sqrt{13}}{6\sqrt{13}}\gamma^{2k}$;
+(6) $D_{2k}\beta = B_{2k+1} + \frac{13 - \sqrt{13}}{6\sqrt{13}}\gamma^{2k}$.
 
 ## Depends on
 
-- [Bronze Companion First](bronze-companion-first.md)
-- [Bronze Companion Second](bronze-companion-second.md)
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Companion bronze numbers of the first type](bronze-companion-first.md)
+- [Companion bronze numbers of the second type](bronze-companion-second.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources

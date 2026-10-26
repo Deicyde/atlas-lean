@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.modifiedDegenerateBernoulli
 ---
 
-# Modified Degenerate Bernoulli
+# Modified degenerate Bernoulli polynomials
 
-The modified degenerate Bernoulli polynomial `𝔅_{n,λ}(x) = c^{n-1} B_n(x)` with
-`c = log (1+λ) / λ` (principal branch), where `B_n` is the Bernoulli polynomial
-(`Polynomial.bernoulli`, with `B_1(x) = x - 1/2`).
+**Modified degenerate Bernoulli polynomials.** For a complex number $\lambda$, a natural number
+$n$ and a complex number $x$, the modified degenerate Bernoulli polynomial is
+$\mathfrak{B}_{n,\lambda}(x) = c^{n-1} B_n(x)$, where $c = \log(1+\lambda)/\lambda$ with the
+principal branch of the logarithm, $B_n$ is the $n$-th Bernoulli polynomial (with
+$B_1(x) = x - 1/2$), and the exponent $n - 1$ is an integer, so that
+$\mathfrak{B}_{0,\lambda}(x) = c^{-1}$. At $\lambda = 0$ and $\lambda = -1$, where this quotient is
+undefined, $c$ is taken to be $0$, with $0^{-1} = 0$ and $0^0 = 1$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.iteratedRemainderSet_thirtyFive
 ---
 
-# Iterated Remainder Set thirty Five
+# Iterated remainder sets of 35
 
-`S_6(35) = {0}` and `S_7(35) = ∅`, computed from the definition.
+**Iterated remainder sets of 35.** The iterated remainder sets of $35$ satisfy
+$S_6(35) = \{0\}$ and $S_7(35) = \emptyset$.
 
 ## Depends on
 
-- [Iterated Remainder Set](iterated-remainder-set.md)
+- [Iterated remainder sets](iterated-remainder-set.md)
 
 ## Sources
 

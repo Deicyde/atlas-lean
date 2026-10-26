@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.repetend_columns_eq_of_crt_sq
 ---
 
-# Repetend columns eq of crt sq
+# Class C matched columns of repetend tables
 
-Class C: for `n = p^i` (`p ≡ 1 (mod 6)` prime), `Q = p^j` (`j ≥ 1`, `i ≥ 2j`) and a small
-base `b` of order `L = 6Q`,
-let `d, e ∈ [0, L)` with `d ≡ b^2`, `e ≡ b^4 (mod Q)` and `d ≡ e ≡ 4 (mod 6)`. Then columns `d`
-and `e` of the repetend table of `1/n` are equal as multisets (the sorted columns coincide). The
-`D_s = 0` clause, which needs the multiplier `m_s`, is omitted.
+**Class C matched columns of repetend tables.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+let $j \ge 1$ and $i \ge 2j$, and put $n = p^i$, $Q = p^j$ and $L = 6Q$. Let $b$ be a natural
+number of multiplicative order $L$ modulo $n$, and let $d, e < L$ be natural numbers with
+$d \equiv b^2 \pmod Q$, $e \equiv b^4 \pmod Q$ and $d \equiv e \equiv 4 \pmod 6$. Let the rows be
+the integers $c$ with $1 \le c < n$, $\gcd(c, n) = 1$ and multiplicative order $L$ modulo $n$, and
+let column $s$ be the multiset of the digits $\lfloor c^{s+1}/n \rfloor \bmod c$ over these rows.
+Then columns $d$ and $e$ are equal.
+
+Theorem 6 of the source also says when the digit difference between these columns is $0$; that
+clause is not stated here.
 
 ## Depends on
 

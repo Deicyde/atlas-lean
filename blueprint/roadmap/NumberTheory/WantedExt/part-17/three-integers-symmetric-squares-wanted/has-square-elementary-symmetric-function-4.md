@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.hasSquareElementarySymmetricFunctions_family33
 ---
 
-# Theorem 1, family (3.3)
+# Choudhry's family (3.3) of integer triples with square symmetric functions
 
-**Theorem 1, family (3.3)**.
+**Choudhry's family (3.3) of integer triples with square symmetric functions.** For all
+integers $s$ and $t$, put $a = t^2 (s^2 - t^2)^2 (s^2 + t^2)$, $b = s^2 (s^2 - t^2)^2 (s^2 + t^2)$
+and $c = 4 s^4 t^4$. Then each of $a + b + c$, $ab + bc + ca$ and $abc$ is the square of an
+integer.
 
 ## Depends on
 
-- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
+- [Integer triples with square elementary symmetric functions](has-square-elementary-symmetric-function.md)
 
 ## Sources
 

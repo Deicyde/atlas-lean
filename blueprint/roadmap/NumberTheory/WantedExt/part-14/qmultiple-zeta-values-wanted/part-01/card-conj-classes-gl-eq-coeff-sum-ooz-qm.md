@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_conjClasses_GL_eq_coeff_sum_oozQMZV
 ---
 
-# Card conj Classes GL eq coeff sum ooz QMZV
+# Class numbers of finite general linear groups via OOZ-qMZVs
 
-For a finite field `K` with `c` elements,
-`∑_{n ≥ 0} a_{n,K} q^n = ∑_{r ≥ 0} (c - 1)^r ζ_q^OOZ({1}^r)`, where `a_{n,K}` is the
-number of conjugacy classes of `GL(n, K)` (`a_{0,K} = 1`, the class number of the
-trivial group `GL(0, K)`). Stated coefficientwise: for every `R ≥ N` the
-coefficient of `q^N` in `∑_{r=0}^{R} (c - 1)^r ζ_q^OOZ({1}^r)` is `a_{N,K}` (the
-summands with `r > N` have no `q^N` term).
+**Class numbers of finite general linear groups via OOZ-qMZVs.** Let $K$ be a finite field
+with $c$ elements and, for $n \ge 0$, let $a_{n,K}$ be the number of conjugacy classes of
+$\mathrm{GL}_n(K)$, so that $a_{0,K} = 1$ because $\mathrm{GL}_0(K)$ is the trivial group. Write
+$\{1\}^r$ for the index consisting of $r$ ones and $\zeta_q^{\mathrm{OOZ}}$ for the
+Ohno–Okuda–Zudilin qMZV. Then for all natural numbers $N \le R$, $a_{N,K}$ equals the coefficient
+of $q^N$ in $\sum_{r=0}^{R} (c - 1)^r \zeta_q^{\mathrm{OOZ}}(\{1\}^r)$.
+
+Since the summands with $r > N$ have no $q^N$ term, this is the identity of formal power series
+$\sum_{n \ge 0} a_{n,K} q^n = \sum_{r \ge 0} (c - 1)^r \zeta_q^{\mathrm{OOZ}}(\{1\}^r)$.
 
 ## Depends on
 
-- [Ooz QMZV](ooz-qmzv.md)
+- [Ohno–Okuda–Zudilin q-multiple zeta values](ooz-qmzv.md)
 
 ## Sources
 

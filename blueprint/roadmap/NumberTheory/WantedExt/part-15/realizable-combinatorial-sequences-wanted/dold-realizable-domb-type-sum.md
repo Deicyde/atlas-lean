@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.doldRealizable_dombTypeSum
 ---
 
-# Dold Realizable domb Type Sum
+# Domb-type sums are Dold realizable
 
-For every `s, t ≥ 0` and `r ≥ 1`, the sequence `(D(n, r, s, t))_{n ≥ 1}` is realizable, with
-`D(n,r,s,t) = ∑_k C(n,k)^r C(2k,k)^s C(2(n-k),n-k)^t` (`MetaMathlibExt.dombTypeSum`, Definition 7)
-and realizability `MetaMathlibExt.doldRealizable`.
+**Domb-type sums are Dold realizable.** For all natural numbers $r \ge 1$, $s$ and $t$, the
+integer sequence $(D(n, r, s, t))_{n \ge 0}$ of Domb-type sums
+$D(n, r, s, t) = \sum_{k=0}^{n} \binom{n}{k}^r \binom{2k}{k}^s \binom{2(n-k)}{n-k}^t$ is Dold
+realizable.
 
 ## Depends on
 

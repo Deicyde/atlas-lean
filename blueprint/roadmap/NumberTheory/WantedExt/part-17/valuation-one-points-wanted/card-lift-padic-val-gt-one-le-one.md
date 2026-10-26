@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_lift_padicVal_gt_one_le_one
 ---
 
-# Card lift padic Val gt one le one
+# At most one lift has valuation above one
 
-For a prime `p`, `g ∈ ℤ[x]` and `0 ≤ r < p` that is not a common root of `g` and `g'`
-modulo `p`, at most one `k ∈ {0, …, p - 1}` has `ν_p(g(r + kp)) > 1`.
+**At most one lift has valuation above one.** Let $p$ be a prime, $g \in \mathbb{Z}[x]$ and
+$r$ an integer with $0 \le r < p$ such that $g(r)$ and $g'(r)$ are not both divisible by $p$.
+Then at most one $k \in \{0, \dots, p - 1\}$ satisfies $p^2 \mid g(r + kp)$.
 
 ## Depends on
 

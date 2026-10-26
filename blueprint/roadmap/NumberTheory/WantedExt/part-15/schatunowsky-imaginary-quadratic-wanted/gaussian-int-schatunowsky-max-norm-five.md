@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.gaussianInt_schatunowsky_max_norm_five_add_five_i
 ---
 
-# Gaussian Int schatunowsky max norm five add five i
+# Dalezman's Schatunowsky theorem for the Gaussian integers
 
-Dalezman's Gaussian Schatunowsky theorem: let `S_G` be the set of Gaussian integers `α` such
-that every `β` with `1 < N(β) < N(α)` and `gcd(α, β) = 1` is a Gaussian prime. Then `5 + 5i`
-lies in `S_G`, every element of `S_G` has norm at most `N(5 + 5i) = 50`, and every element of
-`S_G` of norm `50` is a unit multiple of `5 + 5i`.
+**Dalezman's Schatunowsky theorem for the Gaussian integers.** Let $N(a + bi) = a^2 + b^2$ be
+the norm on the Gaussian integers $\mathbb{Z}[i]$, and let $S$ be the set of
+$\alpha \in \mathbb{Z}[i]$ such that every $\beta \in \mathbb{Z}[i]$ coprime to $\alpha$ with
+$1 < N(\beta) < N(\alpha)$ is a Gaussian prime. Then $5 + 5i \in S$, every element of $S$ has
+norm at most $50$, and every element of $S$ of norm $50$ is an associate of $5 + 5i$.
 
 ## Depends on
 

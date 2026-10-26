@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.zeckAdicTruncVariation_zero
 ---
 
-# Zeck Adic Trunc Variation zero
+# The truncated variation vanishes for zero steps
 
-`Δ_k^{(0)} = 0`.
+**The truncated variation vanishes for zero steps.** Let $T$ be the Zeckendorf odometer and,
+for a binary sequence $x$, let $s_k(x) = x_2 + \dots + x_k$ and
+$\Delta_k^{(r)}(x) = s_k(T^r(x)) - s_k(x)$. Then $\Delta_k^{(0)}(x) = 0$ for every
+$k \in \mathbb{N}$ and every binary sequence $x$.
 
 ## Depends on
 
-- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Truncated variation of the Zeckendorf digit sum](zeck-adic-trunc-variation.md)
 
 ## Sources
 

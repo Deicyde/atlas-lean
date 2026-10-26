@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinite_riesel_repdigits
 ---
 
-# Corollary 3.8
+# Infinitely many Riesel repdigits in every base $b > 509203$
 
-**Corollary 3.8.** For every `b > 509203` there are infinitely many `b`-repdigit Riesel
-numbers.
+**Infinitely many Riesel repdigits in every base $b > 509203$.** Let $b > 509203$ be a
+natural number. Then there are infinitely many Riesel numbers of the form $k(b^t - 1)/(b - 1)$ with
+$1 \le k < b$ and $t \ge 1$, that is, $b$-repdigits: the digit $k$ written $t$ times in base $b$.
 
 ## Depends on
 
-- [Is Riesel Number](is-riesel-number.md)
-- [Repstring](repstring.md)
+- [Riesel number](is-riesel-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

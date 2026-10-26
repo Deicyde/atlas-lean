@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.perrinNeg_small_values
 ---
 
-# Perrin Neg small values
+# Some values of the Perrin sequence at negative indices
 
-Small values quoted in Theorems 2 and 4: `R_{-5} = 4`, `R_{-18} = 25`,
-`R_{-1} = R_{-7} = R_{-11} = R_{-29} = -1`, `R_{-2} = 1`.
+**Some values of the Perrin sequence at negative indices.** The Perrin sequence $R_k$
+extended to negative indices satisfies $R_{-5} = 4$, $R_{-18} = 25$,
+$R_{-1} = R_{-7} = R_{-11} = R_{-29} = -1$ and $R_{-2} = 1$.
 
 ## Depends on
 
-- [Perrin Neg](perrin-neg.md)
+- [Perrin sequence at negative indices](perrin-neg.md)
 
 ## Sources
 

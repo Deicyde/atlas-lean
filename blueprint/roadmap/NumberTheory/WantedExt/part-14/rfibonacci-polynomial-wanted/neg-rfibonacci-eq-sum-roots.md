@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.negRFibonacci_eq_sum_roots
 ---
 
-# Neg RFibonacci eq sum roots
+# Binet formula for the (-r)-Fibonacci polynomials
 
-Theorem 9, `U` part (Binet formula): for `r ≥ 2`, if
-`t^{r+1} - y^{-1} t + x y^{-1} = ∏_k (t - β_k)` with pairwise distinct `β_k`, then
-`U^{(-r)}_{n+1} = ∑_k β_k^{n+r+1} / (r β_k^{r+1} - x y^{-1})`. The paper's hypothesis
-`x ≠ (r/(r+1))((r+1)y)^{-1/r}` is replaced by the distinctness of the zeros (see
-`separable_negRFibonacci_charPoly`).
+**Binet formula for the (-r)-Fibonacci polynomials.** Let $K$ be a field, $r \ge 2$,
+$x \in K$ and $y \in K$ nonzero, and write $U_n = U^{(-r)}_n(x, y)$. Suppose that
+$\beta_0, \dots, \beta_r \in K$ are pairwise distinct and that
+$t^{r+1} - y^{-1} t + x y^{-1} = \prod_{k=0}^{r} (t - \beta_k)$ as polynomials over $K$. Then for
+every $n \ge 0$,
+
+$$U_{n+1} = \sum_{k=0}^{r} \frac{\beta_k^{n+r+1}}{r \beta_k^{r+1} - x y^{-1}},$$
+
+where a term whose denominator vanishes is read as $0$.
+
+The paper's hypothesis $x \ne \frac{r}{r+1} ((r+1) y)^{-1/r}$ is replaced by the distinctness of
+the zeros (compare Lemma 1).
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

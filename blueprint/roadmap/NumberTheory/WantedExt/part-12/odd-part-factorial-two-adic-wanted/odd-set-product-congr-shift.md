@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oddSet_product_congr_shift
 ---
 
-# Odd Set product congr shift
+# Shifting the odd numbers below $2^e$ by $2^e$
 
-For `e≥2`, the product over `i∈S_e` of `i` agrees modulo `2^(2e)` with the
-product of `2^e+i`.  Both natural products are cast to `ℤ` before subtraction,
-so the divisibility formulation of congruence cannot truncate.
+**Shifting the odd numbers below $2^e$ by $2^e$.** For every natural number $e \ge 2$, let $S_e$ be
+the set of odd integers $i$ with $1 \le i < 2^e$. Then
+
+$$
+\prod_{i \in S_e} i \equiv \prod_{i \in S_e} (2^e + i) \pmod{2^{2e}}.
+$$
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

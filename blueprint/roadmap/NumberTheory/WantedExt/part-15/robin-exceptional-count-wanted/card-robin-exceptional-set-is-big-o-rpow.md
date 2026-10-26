@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_robinExceptionalSet_isBigO_rpow
 ---
 
-# Card robin Exceptional Set is Big O rpow
+# Failures of Robin's inequality number $O(x^\varepsilon)$
 
-Theorem 3: `N_R(x) = O(x^ε)` for every `ε > 0`, with `N_R(x)` the cardinality of
-`robinExceptionalSet x`.
+**Failures of Robin's inequality number $O(x^\varepsilon)$.** Let $N_R(x)$ be the number of
+elements of the Robin exceptional set up to $x$. For every real $\varepsilon > 0$,
+$N_R(x) = O(x^\varepsilon)$ as the real number $x$ tends to infinity.
 
 ## Depends on
 
-- [Robin Exceptional Set](robin-exceptional-set.md)
+- [Robin exceptional set](robin-exceptional-set.md)
 
 ## Sources
 

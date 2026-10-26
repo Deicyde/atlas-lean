@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.abundancyIndex_div_le
 ---
 
-# Lemma
+# Abundancy ratio at an exactly dividing prime power
 
-**Lemma**: if `p^a` exactly divides the positive integer `n`,
-then `h(n)/h(n/p) ≤ 1 + 1/p^a`.
+**Abundancy ratio at an exactly dividing prime power.** Let $n$ be a positive integer, $p$ a
+prime and $a \ge 1$ an integer such that $p^a$ exactly divides $n$ (that is, $p^a \mid n$ and
+$p^{a+1} \nmid n$). Then $h(n)/h(n/p) \le 1 + 1/p^a$, where $h(m) = \sigma(m)/m$ is the abundancy
+index and $\sigma(m)$ is the sum of the positive divisors of $m$.
 
 ## Depends on
 
-- [Abundancy Index](abundancy-index.md)
+- [Abundancy index](abundancy-index.md)
 
 ## Sources
 

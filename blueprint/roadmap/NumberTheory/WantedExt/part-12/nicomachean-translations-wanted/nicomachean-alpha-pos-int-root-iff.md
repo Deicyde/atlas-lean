@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.nicomacheanAlpha_posIntRoot_iff
 ---
 
-# Nicomachean Alpha pos Int Root iff
+# Positive integer roots of the Nicomachean factor for $s = 1, 2$
 
-For `n ≥ 1`: (`s = 1`) `α(n, 1, a)` is divisible by `a - h` for some positive integer `h`
-(i.e. `α(n, 1, h) = 0`) if and only if `n^2` is a triangular number `k(k+1)/2`; (`s = 2`)
-`α(n, 2, a)` has a positive integer root `h` if and only if `n = F_{2k}` with `k ≥ 1`, and then
-`h = F_{2k-1} + 1`. Divisibility by `a - h` is read through the factor theorem. The case `n = 0`
-(no progression) is excluded: `α(0, 2, a)` has the root `2`.
+**Positive integer roots of the Nicomachean factor for $s = 1, 2$.** Let
+$\alpha(n, s, a) = 2n^2 + na - a^2 + n(n-1)(s - s^2)/2 - (n-1)as$ and let $F_0 = 0$, $F_1 = 1$,
+$F_{k+2} = F_{k+1} + F_k$ be the Fibonacci numbers. Let $n \ge 1$ be a natural number. Then
+$\alpha(n, 1, h) = 0$ for some positive integer $h$ if and only if $2n^2 = k(k+1)$ for some natural
+number $k$, that is, $n^2$ is a triangular number; $\alpha(n, 2, h) = 0$ for some positive integer
+$h$ if and only if $n = F_{2k}$ for some $k \ge 1$; and if $n = F_{2k}$ with $k \ge 1$, then every
+positive integer $h$ with $\alpha(n, 2, h) = 0$ equals $F_{2k-1} + 1$.
+
+By the factor theorem, $\alpha(n, s, h) = 0$ says that $a - h$ divides $\alpha(n, s, a)$ as a
+polynomial in $a$. The case $n = 0$ is excluded: $\alpha(0, 2, a)$ has the root $2$.
 
 ## Depends on
 
-- [Nicomachean Alpha](nicomachean-alpha.md)
+- [The Nicomachean progression factor](nicomachean-alpha.md)
 
 ## Sources
 

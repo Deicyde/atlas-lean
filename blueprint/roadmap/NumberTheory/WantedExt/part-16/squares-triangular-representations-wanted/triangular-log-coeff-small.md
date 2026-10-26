@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.triangularLogCoeff_small
 ---
 
-# Triangular Log Coeff small
+# First logarithmic coefficients of the triangular theta series
 
-`b_1 = 1`, `b_2 = -1/2`, `b_3 = 4/3`, matching `log(1 + q + q³ + ⋯) = q - q²/2 + 4q³/3 + ⋯`.
+**First logarithmic coefficients of the triangular theta series.** The logarithmic
+coefficients $b_n$ of the triangular theta series satisfy $b_1 = 1$, $b_2 = -1/2$ and
+$b_3 = 4/3$; this matches the expansion
+$\log(1 + q + q^3 + \cdots) = q - q^2/2 + 4q^3/3 + \cdots$.
 
 ## Depends on
 
-- [Triangular Log Coeff](triangular-log-coeff.md)
+- [Logarithmic coefficients of the triangular theta series](triangular-log-coeff.md)
 
 ## Sources
 

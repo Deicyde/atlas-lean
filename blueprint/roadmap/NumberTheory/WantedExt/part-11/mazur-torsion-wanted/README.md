@@ -4,5 +4,5 @@ navigation: module
 
 # Mazur Torsion
 
-- [Is In Mazur Class](is-in-mazur-class.md)
-- [Mazur torsion](mazur-torsion.md)
+- [The Mazur class of abelian groups](is-in-mazur-class.md)
+- [Mazur's torsion theorem](mazur-torsion.md)

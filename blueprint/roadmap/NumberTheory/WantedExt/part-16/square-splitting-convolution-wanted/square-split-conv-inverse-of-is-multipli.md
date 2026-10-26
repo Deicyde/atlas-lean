@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitConv_inverse_of_isMultiplicative
 ---
 
-# Square Split Conv inverse of is Multiplicative
+# Inverse of a multiplicative function under the square-splitting convolution
 
-Theorem 5: a multiplicative `f` has a unique `⋆`-inverse `g`, which is
-multiplicative and satisfies on prime powers
-`∑_{j ≤ ⌊k/2⌋} f(p^{2j}) g(p^{k-2j}) + 1_{k odd} ∑_{j ≤ ⌊k/2⌋} f(p^{2j+1}) g(p^{k-2j-1}) = ε(p^k)`,
-with `g(1) = 1/f(1)`, `g(p) = -f(p)/f(1)²`, `g(p²) = -f(p²)/f(1)²`,
-`g(p³) = (2 f(p) f(p²) - f(p³) f(1))/f(1)³`. The paper's hypothesis
-`f(1) ≠ 0` is part of Mathlib's `IsMultiplicative` (`f 1 = 1`).
+**Inverse of a multiplicative function under the square-splitting convolution.** Let $f$ be a
+multiplicative complex arithmetic function (an arithmetic function $h$ is multiplicative when
+$h(1) = 1$ and $h(mn) = h(m)\, h(n)$ for coprime $m$ and $n$), let $\star$ be the square-splitting
+convolution, and let $\varepsilon$ be the arithmetic function with $\varepsilon(1) = 1$ and
+$\varepsilon(n) = 0$ for $n \ne 1$. Then there is a complex arithmetic function $g$ with
+$f \star g = \varepsilon$ such that every complex arithmetic function $g'$ with
+$f \star g' = \varepsilon$ equals $g$. Moreover, $g$ is multiplicative; for every prime $p$ and
+every $k \ge 1$, $\sum_{j=0}^{\lfloor k/2 \rfloor} f(p^{2j})\, g(p^{k-2j}) = 0$ if $k$ is even and
+$\sum_{j=0}^{\lfloor k/2 \rfloor} (f(p^{2j}) g(p^{k-2j}) + f(p^{2j+1}) g(p^{k-2j-1})) = 0$ if $k$ is
+odd; $g(1) = 1/f(1)$; and for every prime $p$, $g(p) = -f(p)/f(1)^2$,
+$g(p^2) = -f(p^2)/f(1)^2$ and $g(p^3) = \big(2 f(p) f(p^2) - f(p^3) f(1)\big)/f(1)^3$.
+
+Multiplicativity includes $f(1) = 1$, so the source's hypothesis $f(1) \ne 0$ holds automatically.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
+- [Square-splitting convolution](square-split-conv.md)
 
 ## Sources
 

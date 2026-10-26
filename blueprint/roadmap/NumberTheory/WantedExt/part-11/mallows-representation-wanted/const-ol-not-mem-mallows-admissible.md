@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.const_OL_not_mem_mallowsAdmissible
 ---
 
-# Const OL not mem mallows Admissible
+# The constant sequence $O_L O_L O_L \cdots$ is not admissible
 
-Characteristic property: the constant sequence `⟨O_L⟩^∞` is not in `I`.
+**The constant sequence $O_L O_L O_L \cdots$ is not admissible.** The constant sequence whose
+every term is $O_L$ does not belong to the set $I$ of admissible sequences over
+$\{O_L, E_R, O_R, E_L\}$.
 
 ## Depends on
 
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Mallows Admissible](mallows-admissible.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [The admissible parity sequences $I$](mallows-admissible.md)
 
 ## Sources
 

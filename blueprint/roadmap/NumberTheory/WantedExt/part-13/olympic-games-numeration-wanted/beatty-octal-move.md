@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.beattyOctalMove
 ---
 
-# Beatty Octal Move
+# Moves of the Beatty octal game
 
-One move of the heap game with octal code `0·d₁d₂d₃…`, where `d_i = 1` when `i` lies in the
-Beatty sequence `{⌊kα⌋ : k ≥ 1}` and `d_i = 2` when `i` lies in the Beatty sequence of `β`
-(for complementary `α`, `β` every `i ≥ 1` gets exactly one digit). Following the octal-code
-rules, a heap of size `n` with `d_n = 1` may be removed entirely, and `i` tokens with `d_i = 2`
-may be removed from a heap of size `n > i`, leaving `n - i` tokens.
+**Moves of the Beatty octal game.** Let $\alpha$ and $\beta$ be real numbers. In the Beatty
+octal game for $\alpha$ and $\beta$, a move takes a heap of $n$ tokens to a heap of $m$ tokens
+exactly when one of the following holds: $n \ge 1$, $n = \lfloor k\alpha \rfloor$ for some
+integer $k \ge 1$, and $m = 0$ (the whole heap is removed); or $m = n - i$ for some natural
+number $i$ with $1 \le i < n$ and $i = \lfloor k\beta \rfloor$ for some integer $k \ge 1$
+(removing $i$ tokens leaves a nonempty heap).
+
+When $\alpha$ and $\beta$ are complementary, so that every $i \ge 1$ lies in exactly one of the
+Beatty sequences $\{\lfloor k\alpha \rfloor : k \ge 1\}$ and
+$\{\lfloor k\beta \rfloor : k \ge 1\}$, this is the octal game with code
+$0{\cdot}d_1 d_2 d_3 \ldots$, where $d_i = 1$ if $i$ lies in the first sequence and $d_i = 2$ if
+$i$ lies in the second.
 
 ## Depends on
 

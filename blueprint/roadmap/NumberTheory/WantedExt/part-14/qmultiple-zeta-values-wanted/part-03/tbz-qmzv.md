@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tbzQMZV
 ---
 
-# Tbz QMZV
+# Takeyama–Bradley–Zhao qMZVs
 
-The TBZ-qMZV `ζ_q^TBZ(k₁, …, kᵣ) = ∑_{m₁ > ⋯ > mᵣ > 0} f(k₁, m₁) ⋯ f(kᵣ, mᵣ)` for
-`kᵢ ∈ ℕ̄ = {1̄} ∪ ℕ` (encoded as `Option ℕ`, `none = 1̄`, `some k` with `k ≥ 1`) with
-`k₁ ≠ 1`; junk for `k₁ = 1` and whenever some entry is `some 0` (then `tbzLetter` gives
-`(0, 1)`, not a TBZ summand).
+**Takeyama–Bradley–Zhao qMZVs.** For an index $(k_1, \dots, k_r)$ whose entries are the symbol
+$\bar 1$ or natural numbers, the TBZ-qMZV is the general qMZV of the data obtained by replacing
+each entry by its pair in the Takeyama–Bradley–Zhao letter encoding. When every natural-number
+entry is at least $1$ and $k_1 \ne 1$, this is
+
+$$\zeta_q^{TBZ}(k_1, \dots, k_r) = \sum_{m_1 > \cdots > m_r > 0} f(k_1, m_1) \cdots f(k_r, m_r),$$
+
+with $f(\bar 1, m) = q^m / (1 - q^m)$ and $f(k, m) = q^{(k-1)m} / (1 - q^m)^k$; the empty index
+gives $1$. For $k_1 = 1$, or when some entry is $0$, the value is a junk value.
 
 ## Depends on
 
@@ -18,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q MZV](../part-02/q-mzv.md)
-- [Tbz Letter](tbz-letter.md)
+- [General q-multiple zeta values](../part-02/q-mzv.md)
+- [Letters of the Takeyama–Bradley–Zhao model as qMZV data](tbz-letter.md)
 
 ## Sources
 

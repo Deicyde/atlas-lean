@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddProductBlock
 ---
 
-# Odd Product Block
+# Odd product block
 
-`oddProductBlock m` is the odd product from `2^(m-1)+1` through `2^m-1`, matching the
-paper's definition.  Natural subtraction is used only in `m-1`, exactly as in
-the paper; all results that need a nontruncated exponent impose a lower bound.
+**Odd product block.** For a natural number $m$, the odd product block $h(m)$ is the product of
+the odd integers $j$ with $2^{m-1}+1 \le j \le 2^m-1$. In particular $h(0) = h(1) = 1$, as empty
+products.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Range Product](odd-range-product.md)
+- [Odd-range product](odd-range-product.md)
 
 ## Sources
 

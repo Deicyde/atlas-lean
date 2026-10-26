@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_prime_eq_prod_div_prod
 ---
 
-# Choose mul prime eq prod div prod
+# $\binom{np}{mp}$ as a quotient of products
 
-Lemma 6: for a prime `p` and `1 ≤ m ≤ n`,
-`binom(np, mp) = binom(n, m) ∏_{j<m} binom((n - m + j + 1)p - 1, p - 1) / ∏_{j<m} binom((j + 1)p - 1, p - 1)
-= ∏_{j<m} binom((n - m + j + 1)p, p) / ∏_{j<m} binom((j + 1)p, p)`.
+**$\binom{np}{mp}$ as a quotient of products.** Let $p$ be a prime and let $m$ and $n$ be
+natural numbers with $1 \le m \le n$. Then
+
+$$\binom{np}{mp} = \frac{\binom{n}{m} \prod_{j=0}^{m-1} \binom{(n-m+j+1)p-1}{p-1}}
+{\prod_{j=0}^{m-1} \binom{(j+1)p-1}{p-1}} = \frac{\prod_{j=0}^{m-1} \binom{(n-m+j+1)p}{p}}
+{\prod_{j=0}^{m-1} \binom{(j+1)p}{p}}.$$
 
 ## Depends on
 

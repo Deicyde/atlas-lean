@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_strideSums_dirichletLambda
 ---
 
-# Tendsto stride Sums dirichlet Lambda
+# Stride series for the Dirichlet lambda function
 
-Series representation of the Dirichlet lambda function: for `q, t ≥ 1`,
-`λ(t+1) = ∑_{n≥1} (1/2) (2n+q)/(n(n+q)) (S_{q,t}(n) + (-1)^{n+1} T_{q,t}(n))` (limit of
-partial sums), with `λ(s) = ∑_{n≥0} (2n+1)^{-s}`; this is half the sum of the series (9) for
-`ζ(t+1)` and (25) for `η(t+1)`.
+**Stride series for the Dirichlet lambda function.** Let $q, t \ge 1$ be integers, and let
+$S_{q,t}(n)$ denote the alternating stride sum and $T_{q,t}(n)$ the signed stride sum. Then the
+partial sums
 
-Deviation: the paper prints the factor `2` where this statement has `1/2`; as printed the
-right side is `4λ(t+1)` (`q = t = 1`: about `4.935` against `λ(2) = π²/8 ≈ 1.234`).
+$$\sum_{n=1}^{N} \frac{2n+q}{2n(n+q)} \bigl(S_{q,t}(n) + (-1)^{n+1} T_{q,t}(n)\bigr)$$
+
+converge, as $N \to \infty$, to $\lambda(t+1)$, where $\lambda(s) = \sum_{n \ge 0} (2n+1)^{-s}$ is
+the Dirichlet lambda function. The series is half the sum of the paper's series (9) for
+$\zeta(t+1)$ and (25) for $\eta(t+1)$.
+
+Deviation: the paper prints the factor $2$ where this statement has $1/2$; as printed the
+series sums to $4\lambda(t+1)$ (for $q = t = 1$: about $4.935$ against
+$\lambda(2) = \pi^2/8 \approx 1.234$).
 
 ## Depends on
 
-- [Stride Alternating Sum](stride-alternating-sum.md)
-- [Stride Signed Sum](stride-signed-sum.md)
+- [Alternating stride sum](stride-alternating-sum.md)
+- [Signed stride sum](stride-signed-sum.md)
 
 ## Sources
 

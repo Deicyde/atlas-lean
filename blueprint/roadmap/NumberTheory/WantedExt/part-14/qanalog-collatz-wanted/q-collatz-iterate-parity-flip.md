@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.qCollatz_iterate_parity_flip
 ---
 
-# Q Collatz iterate parity flip
+# A perturbation at $q^n$ flips the parity of the $n$-th iterate
 
-For odd `A, B`, `n ∈ ℕ`, and `U, V ∈ 𝔽₂[[q]]` with `V` odd, `T_{A,B}^n(U + qⁿ V)` and
-`T_{A,B}^n(U)` have opposite parity.
+**A perturbation at $q^n$ flips the parity of the $n$-th iterate.** Let
+$A, B, U, V \in \mathbb{F}_2[[q]]$ with $A$, $B$ and $V$ odd (constant term $1$), let $T_{A,B}$ be
+the $q$-analog of the $3x+1$ map, and let $n \ge 0$ be an integer. Then the $n$-th iterates
+$T_{A,B}^n(U + q^n V)$ and $T_{A,B}^n(U)$ have different constant terms.
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
 
 ## Sources
 

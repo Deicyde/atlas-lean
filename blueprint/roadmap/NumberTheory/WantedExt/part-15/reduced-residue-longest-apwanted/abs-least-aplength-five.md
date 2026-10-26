@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.absLeastAPLength_five
 ---
 
-# Abs Least APLength five
+# Longest progressions of absolute least residues modulo 5
 
-`g(5) = 2`.
+**Longest progressions of absolute least residues modulo 5.** The length $g(5)$ of the
+longest arithmetic progression in the absolute least reduced residue system modulo $5$ is $2$.
 
 ## Depends on
 
-- [Abs Least APLength](abs-least-aplength.md)
+- [Longest progression in the absolute least reduced residues](abs-least-aplength.md)
 
 ## Proof depends on
 
-- [Ap Length le](ap-length-le.md)
-- [Longest APLength](longest-aplength.md)
-- [Mem reduced Residue Window neg three five](mem-reduced-residue-window-neg-three-fiv.md)
-- [Reduced Residue Window](reduced-residue-window.md)
+- [Length bound for progressions in a reduced residue window](ap-length-le.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
+- [The reduced residue system $R_{-3}(5)$](mem-reduced-residue-window-neg-three-fiv.md)
+- [The reduced residue system $R_m(n)$](reduced-residue-window.md)
 
 ## Sources
 

@@ -5,19 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.zeckAdicVariation_count_le
 ---
 
-# Zeck Adic Variation count le
+# Counting values of the variation against the invariant measure
 
-For `r ≥ 1`, `N ≥ 1`, `k ≥ 2` and `d, d' ∈ ℤ`:
-`(1/N)|{n < N : (Δ^{(r)}(n), Δ_k^{(r)}(n)) = (d, d')}| ≤ rφ³ ℙ(Δ^{(r)} = d, Δ_k^{(r)} = d')`,
-and in particular `(1/N)|{n < N : Δ^{(r)}(n) = d}| ≤ rφ³ ℙ(Δ^{(r)} = d)`.
+**Counting values of the variation against the invariant measure.** Let $\mathbb{X}$ be the
+set of Zeckendorf-adic integers, $T$ the Zeckendorf odometer, and $\mathbb{P}$ a $T$-invariant
+probability measure on binary sequences with $\mathbb{P}(\mathbb{X}^c) = 0$. Let $s(n)$ be the
+number of terms in the Zeckendorf representation of $n \in \mathbb{N}$, let $\iota(n)$ be the
+Zeckendorf digit sequence of $n$, let $\Delta^{(r)}$ and $\Delta_k^{(r)}$ be the variation and the
+truncated variation on binary sequences, and let $\varphi$ be the golden ratio. Then for all
+integers $r \ge 1$, $N \ge 1$, $k \ge 2$ and $d, d' \in \mathbb{Z}$,
+
+$$\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d,\ \Delta_k^{(r)}(\iota(n)) = d'\}
+\le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d,\ \Delta_k^{(r)} = d')$$
+
+and
+
+$$\frac{1}{N}\,\#\{n < N : s(n + r) - s(n) = d\} \le r\varphi^3\,\mathbb{P}(\Delta^{(r)} = d).$$
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
-- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [Zeckendorf digit sequence of a natural number](zeck-adic-of-nat.md)
+- [Truncated variation of the Zeckendorf digit sum](zeck-adic-trunc-variation.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

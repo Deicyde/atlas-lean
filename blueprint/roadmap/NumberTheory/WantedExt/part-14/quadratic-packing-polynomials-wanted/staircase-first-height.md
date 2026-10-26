@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.staircaseFirstHeight
 ---
 
-# Staircase First Height
+# First height of a staircase
 
-The height `ȳ_i` of the first step (the point of least `y`-coordinate) of the staircase
-`J_i`.
+**First height of a staircase.** For natural numbers $m, n, i$, the first height $\bar y_i$
+of the staircase $J_i$ of the sector of slope $n/m$ is the least $y$-coordinate of a point of
+$J_i$, that is, the height of its first step; it is $0$ if $J_i$ is empty.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sector Staircase](sector-staircase.md)
+- [Staircases of a rational sector](sector-staircase.md)
 
 ## Sources
 

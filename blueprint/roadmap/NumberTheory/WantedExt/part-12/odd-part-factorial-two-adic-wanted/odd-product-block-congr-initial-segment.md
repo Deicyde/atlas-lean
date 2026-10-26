@@ -5,21 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.oddProductBlock_congr_initial_segment
 ---
 
-# Odd Product Block congr initial segment
+# Initial-segment congruence for the odd product block
 
-For `4≤m` and `m-1≤B≤3m-7`, put `d=2+⌊(B-m)/2⌋`, written in `ℕ` as `(B+4-m)/2`
-(so `d=1` when `B=m-1`); then `h(m)` is congruent modulo `2^B` to the stated initial
-odd-range product raised to `2^(m-1-d)`.  Divisibility in `ℤ` represents the congruence.
-The printed hypotheses `2≤m-1≤B≤3m-7` also allow `m=3`, whose only admissible case is
-`(m,B)=(3,2)`; there `d=1`, `h(3)=35`, and the comparison value is `25`, whose difference
-`10` is not divisible by `4`.  Requiring `4≤m` removes exactly that case and keeps every
-other printed case, including `B=m-1` (e.g. `(m,B)=(4,3)`: `d=1`, `h(4)=19305`, `9^4=6561`,
-`8∣12744`).
+**Initial-segment congruence for the odd product block.** For natural numbers $l$ and $u$ write
+$\operatorname{odpr}(l, u)$ for the product of the odd integers $j$ with $l \le j \le u$, and let
+$h(m) = \operatorname{odpr}(2^{m-1}+1, 2^m-1)$. Let $m \ge 4$ and $B$ be natural numbers with
+$m - 1 \le B \le 3m - 7$, and put $d = \lfloor (B + 4 - m)/2 \rfloor$, that is,
+$d = 2 + \lfloor (B - m)/2 \rfloor$ (so $d = 1$ when $B = m - 1$). Then
+
+$$
+h(m) \equiv \operatorname{odpr}\bigl(2^{m-1}+1,\ 2^{m-1}+2^d-1\bigr)^{2^{m-1-d}} \pmod{2^B}.
+$$
+
+The paper prints the hypotheses $2 \le m - 1 \le B \le 3m - 7$, which also allow $(m, B) = (3, 2)$.
+There $d = 1$, $h(3) = 35$ and the right-hand side is $5^2 = 25$, but $35 - 25 = 10$ is not
+divisible by $4$. Requiring $m \ge 4$ removes exactly that case and keeps every other printed case.
 
 ## Depends on
 
-- [Odd Product Block](odd-product-block.md)
-- [Odd Range Product](odd-range-product.md)
+- [Odd product block](odd-product-block.md)
+- [Odd-range product](odd-range-product.md)
 
 ## Sources
 

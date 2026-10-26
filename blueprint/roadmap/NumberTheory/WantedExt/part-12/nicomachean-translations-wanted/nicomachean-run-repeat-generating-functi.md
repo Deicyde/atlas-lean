@@ -5,17 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.nicomachean_run_repeat_generatingFunctions
 ---
 
-# Nicomachean run repeat generating Functions
+# Generating functions for run-and-repeat Nicomachean sequences
 
-The sequences `(1, 2, …, j, j + 1, m, m, …, m)` (`m` repeated `2j` times) with `j, m ≥ 1` and
-`ν = 0`: the `j`'s, in increasing order, have generating function
-`(x^4 + x^3 - 19x^2 - 5x - 2)/((x - 1)(1 - 6x + x^2)(1 + 6x + x^2))`, and the corresponding
-`m = j + √(2j^2 + 3j + 2)` (the positive root of `ν = 0` in `m`) have generating function
-`6(1 + x)^2/((1 - x)(1 - 6x + x^2)(1 + 6x + x^2))`; both stated with denominators cleared.
+**Generating functions for run-and-repeat Nicomachean sequences.** For integers $j, m \ge 1$
+let $\sigma(j, m)$ be the integer sequence $(1, 2, \ldots, j + 1, m, \ldots, m)$ in which $m$ is
+repeated $2j$ times, and let $\nu$ denote the Nicomachean defect. Call $j \ge 1$ admissible if
+$\nu(\sigma(j, m)) = 0$ for some integer $m \ge 1$, let $j_k$ be the $k$-th smallest admissible
+integer (counting from $k = 0$), and let $m_k = j_k + \lfloor \sqrt{2j_k^2 + 3j_k + 2} \rfloor$.
+Then $\nu(\sigma(j_k, m_k)) = 0$ for every $k$, and in the ring of formal power series over
+$\mathbb{Z}$
+
+$$
+(X - 1)(1 - 6X + X^2)(1 + 6X + X^2) \sum_{k \ge 0} j_k X^k = X^4 + X^3 - 19X^2 - 5X - 2
+$$
+
+and
+
+$$
+(1 - X)(1 - 6X + X^2)(1 + 6X + X^2) \sum_{k \ge 0} m_k X^k = 6(1 + X)^2.
+$$
+
+For admissible $j$ the square root is an integer and $m = j + \sqrt{2j^2 + 3j + 2}$ is the
+positive root of $\nu(\sigma(j, m)) = 0$ in $m$, so these say that $(j_k)$ and $(m_k)$ have the
+generating functions $(x^4 + x^3 - 19x^2 - 5x - 2)/((x - 1)(1 - 6x + x^2)(1 + 6x + x^2))$ and
+$6(1 + x)^2/((1 - x)(1 - 6x + x^2)(1 + 6x + x^2))$.
 
 ## Depends on
 
-- [Nicomachean Nu](nicomachean-nu.md)
+- [Nicomachean defect](nicomachean-nu.md)
 
 ## Sources
 

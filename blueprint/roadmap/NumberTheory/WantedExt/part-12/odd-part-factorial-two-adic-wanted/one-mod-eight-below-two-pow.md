@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.oneModEightBelowTwoPow
 ---
 
-# One Mod Eight Below Two Pow
+# Numbers below $2^e$ congruent to $1$ modulo $8$
 
-`oneModEightBelowTwoPow e` is the finite set of natural numbers below `2^e` congruent to
-`1` modulo `8`, i.e. the displayed sequence `{1,9,...,2^e-7}` in Lemma 21.
-Using a filter avoids an endpoint subtraction at small `e`.
+**Numbers below $2^e$ congruent to $1$ modulo $8$.** For a natural number $e$, this is the
+finite set of natural numbers $n$ with $n < 2^e$ and $n \equiv 1 \pmod 8$.
+
+For $e \ge 3$ its elements are $1, 9, \dots, 2^e - 7$, the sequence displayed in Lemma 21 of
+the source.
 
 ## Depends on
 

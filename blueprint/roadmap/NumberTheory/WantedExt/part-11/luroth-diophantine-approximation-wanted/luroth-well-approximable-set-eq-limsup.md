@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lurothWellApproximableSet_eq_limsup
 ---
 
-# Luroth Well Approximable Set eq limsup
+# Lüroth well approximable numbers as a limsup over convergent triples
 
-For `ψ : ℕ → (0, 1]` with lower order at infinity `τ_ψ > 1`,
-`L(ψ) = limsup_k (P_k/Q_k, P_k/Q_k + ψ(Q_k)/Q_k)` over the triples of `S`, stated as
-membership for infinitely many triples (independent of the enumeration).
+**Lüroth well approximable numbers as a limsup over convergent triples.** Let $\psi$ be a
+function from the natural numbers to $(0, 1]$ whose lower order at infinity $\tau_\psi$ is greater
+than $1$. Then the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers consists of the real
+numbers $x$ for which there are infinitely many triples $(c, Q, d)$ in the set $S$ of Lüroth
+convergent triples with $c < x < c + \psi(Q)/Q$.
 
 ## Depends on
 
-- [Lower Order At Infinity](lower-order-at-infinity.md)
-- [Luroth Triple Set](luroth-triple-set.md)
-- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
+- [Lower order at infinity](lower-order-at-infinity.md)
+- [Lüroth convergent triples](luroth-triple-set.md)
+- [Lüroth well approximable numbers](luroth-well-approximable-set.md)
 
 ## Sources
 

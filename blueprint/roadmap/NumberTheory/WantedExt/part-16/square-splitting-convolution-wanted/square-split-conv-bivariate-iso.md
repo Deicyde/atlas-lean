@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitConv_bivariate_iso
 ---
 
-# Square Split Conv bivariate iso
+# Square-splitting convolution as a bivariate Dirichlet convolution
 
-Theorem 2, isomorphism part: `T f (u, v) = f(u v²)` (`u` squarefree,
-`v ≥ 1`) is a bijection from arithmetic functions onto functions on
-`{(u, v) : u squarefree, v ≥ 1}` (with `u ≥ 1` implied by squarefreeness), it
-turns `⋆` into the bivariate Dirichlet convolution
-`(F ⊙ G)(u, v) = ∑_{u₁ ∣ u} ∑_{v₁ ∣ v} F(u₁, v₁) G(u/u₁, v/v₁)`, and it is
-additive (immediate).
+**Square-splitting convolution as a bivariate Dirichlet convolution.** Let $\star$ be the
+square-splitting convolution. For all complex arithmetic functions $f$ and $g$, every squarefree
+natural number $u$ and every natural number $v \ge 1$,
+
+$$(f \star g)(u v^2) = \sum_{u_1 \mid u} \sum_{v_1 \mid v} f(u_1 v_1^2)\, g((u/u_1)(v/v_1)^2).$$
+
+Moreover, for every function $F : \mathbb{N} \times \mathbb{N} \to \mathbb{C}$ there is exactly
+one complex arithmetic function $f$ with $f(u v^2) = F(u, v)$ for every squarefree $u$ and every
+$v \ge 1$.
+
+Thus $f \mapsto \big((u, v) \mapsto f(u v^2)\big)$ is a bijection from complex arithmetic functions
+onto functions on $\{(u, v) : u \text{ squarefree},\ v \ge 1\}$, and it turns $\star$ into the
+bivariate Dirichlet convolution
+$(\Phi \odot \Psi)(u, v) = \sum_{u_1 \mid u} \sum_{v_1 \mid v} \Phi(u_1, v_1)\, \Psi(u/u_1, v/v_1)$.
 
 ## Depends on
 
-- [Square Split Conv](square-split-conv.md)
+- [Square-splitting convolution](square-split-conv.md)
 
 ## Sources
 

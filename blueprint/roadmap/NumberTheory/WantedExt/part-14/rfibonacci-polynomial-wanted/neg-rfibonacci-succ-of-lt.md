@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.negRFibonacci_succ_of_lt
 ---
 
-# Neg RFibonacci succ of lt
+# The (-r)-Fibonacci polynomials vanish at indices 2 to r
 
-`U^{(-r)}_{n+1} = 0` for `1 ≤ n < r`.
+**The (-r)-Fibonacci polynomials vanish at indices 2 to r.** Let $A$ be a commutative ring,
+$x \in A$ and $y$ a unit of $A$. For natural numbers $r$ and $n$ with $1 \le n < r$, the
+$(-r)$-Fibonacci polynomial satisfies $U^{(-r)}_{n+1}(x, y) = 0$.
 
 ## Depends on
 
-- [Neg RFibonacci](neg-rfibonacci.md)
+- [The (-r)-Fibonacci polynomials](neg-rfibonacci.md)
 
 ## Sources
 

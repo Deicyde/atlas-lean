@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zeckNIZ
 ---
 
-# Zeck NIZ
+# New-information zone
 
-The new-information zone `NIZ_k = CST_k \ CST_{k-1}` of the towers of order `k`.
+**New-information zone.** Let $F_1 = F_2 = 1, F_3 = 2, \dots$ be the Fibonacci numbers, and
+for a digit sequence $x = (x_i)_{i \ge 0}$ with $x_i \in \{0, 1\}$ and $j \in \mathbb{N}$ let
+$v_j(x) = \sum_{i=2}^{j+1} x_i F_i$. For $r \in \mathbb{N}$ let $\mathrm{CST}_j$ be the
+set of digit sequences $x$ with $v_j(x) + r < F_{j+1}$, or with $F_{j+1} \le v_j(x)$ and
+$v_j(x) + r < F_{j+2}$. For $k \in \mathbb{N}$, the new-information zone of order $k$
+for $r$ is $\mathrm{NIZ}_k = \mathrm{CST}_k \setminus \mathrm{CST}_{k-1}$, where $k - 1$ is read
+as $0$ when $k = 0$ (so $\mathrm{NIZ}_0 = \emptyset$).
 
 ## Depends on
 
@@ -15,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zeck CST](zeck-cst.md)
+- [The sets $\mathrm{CST}_k$](zeck-cst.md)
 
 ## Sources
 

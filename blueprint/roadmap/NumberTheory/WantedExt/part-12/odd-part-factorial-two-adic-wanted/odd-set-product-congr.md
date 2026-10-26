@@ -5,16 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.oddSet_product_congr
 ---
 
-# Odd Set product congr
+# Product of the odd numbers below $2^e$
 
-For `e≥3`, the product of all positive odd integers below `2^e` is congruent
-to `2^e+1` modulo `2^(e+1)`.  Integer divisibility is used so subtraction does
-not truncate, while the product itself is the natural-number product over
-`S_e`.
+**Product of the odd numbers below $2^e$.** For every natural number $e \ge 3$, the product of the
+odd integers $i$ with $1 \le i < 2^e$ is congruent to $2^e + 1$ modulo $2^{e+1}$.
 
 ## Depends on
 
-- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd numbers below a power of two](odd-below-two-pow.md)
 
 ## Sources
 

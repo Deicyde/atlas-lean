@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OeisA002897Wanted.Vars
 ---
 
-# Vars
+# Indices for three variables
 
-Variable indices.
+**Indices for three variables.** Three polynomial variables are indexed by the set
+$\{0, 1, 2\}$.
 
 ## Depends on
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_divisors_le_two_mul_sqrt
 ---
 
-# Card divisors le two mul sqrt
+# Square-root bound for the number of divisors
 
-Lemma 12: `n` has at most `2√n` positive divisors.
+**Square-root bound for the number of divisors.** For every natural number $n$, the number
+of positive divisors of $n$ is at most $2\sqrt{n}$. For $n = 0$ the set of divisors is taken to
+be empty, so the bound holds trivially.
 
 ## Depends on
 

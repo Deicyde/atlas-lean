@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.valuationCurvePoints_card_le
 ---
 
-# Valuation Curve Points card le
+# $C_f(\mathbb{F}_p)$ has at most $p^2$ points
 
-`|C_f(𝔽_p)| ≤ p²`.
+**$C_f(\mathbb{F}_p)$ has at most $p^2$ points.** For every $f \in \mathbb{Z}[x, y]$ and
+every natural number $p$, the set $C_f(\mathbb{F}_p)$ of pairs $(r, s)$ of natural numbers with
+$r, s < p$ such that $p$ divides $f(r, s)$ has at most $p^2$ elements.
 
 ## Depends on
 
-- [Valuation Curve Points](valuation-curve-points.md)
+- [Points of $C_f(\mathbb{F}_p)$](valuation-curve-points.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_palindrome_continuedFraction_div
 ---
 
-# Exists palindrome continued Fraction div
+# Perron's lemma
 
-Perron's lemma. Let `p ≡ 1 (mod 4)` be prime and `0 < x₀ < p/2` with `x₀² ≡ -1 (mod p)`.
-Then the continued fraction of `p / x₀` has an even number of terms and is palindromic. Stated
-as the existence of a palindromic expansion of even length with positive terms; since
-`x₀ < p/2` forces `q₀ ≥ 2`, such an expansion is the canonical one (the other expansion ends
-in `1`).
+**Perron's lemma.** Let $p$ be a prime with $p \equiv 1 \pmod 4$, and let $x_0$ be an integer
+with $0 < x_0 < p/2$ and $x_0^2 \equiv -1 \pmod p$. Then there are positive integers
+$q_0, q_1, \dots, q_m$ with $m + 1$ even and $q_i = q_{m-i}$ for every $i$ such that
+$p / x_0 = [q_0; q_1, \dots, q_m] = q_0 + 1/(q_1 + 1/(\cdots + 1/q_m))$.
+
+Since $x_0 < p/2$ forces $q_0 \ge 2$, such an expansion is the canonical continued fraction of
+$p / x_0$ (the other expansion ends in $1$): the continued fraction of $p / x_0$ has an even
+number of terms and is palindromic.
 
 ## Depends on
 

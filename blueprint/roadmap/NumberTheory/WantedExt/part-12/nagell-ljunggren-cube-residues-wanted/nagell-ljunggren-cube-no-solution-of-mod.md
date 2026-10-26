@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nagell_ljunggren_cube_no_solution_of_mod_six_eq_five
 ---
 
-# Nagell ljunggren cube no solution of mod six eq five
+# The Nagell–Ljunggren cube equation for $n \equiv 5 \pmod 6$
 
-Theorem 2: for `n ≡ 5 (mod 6)`, the equation `(xⁿ - 1)/(x - 1) = y³` has no integer
-solutions `(x, y)` with `x ≡ 2, 3, 5, 6 (mod 9)` (the paper's `x = 9z + 2, 9z + 3, 9z + 5,
-9z + 6` with `z ∈ ℤ`).
+**The Nagell–Ljunggren cube equation for $n \equiv 5 \pmod 6$.** Let $n$ be a natural
+number with $n \equiv 5 \pmod 6$. Then there are no integers $x$ and $y$ with
+$x \equiv 2, 3, 5$ or $6 \pmod 9$ such that $x^n - 1 = (x - 1) y^3$. Since such an $x$ is not
+$1$, this says that $(x^n - 1)/(x - 1) = y^3$ has no such integer solution.
 
 ## Depends on
 

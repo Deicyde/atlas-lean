@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_of_pairwiseSumsSquares_triple
 ---
 
-# Lemma 2, triple converse
+# Triples with square pairwise sums come from semi-magic squares
 
-**Lemma 2, triple converse**: from two integer triples with all
-nine pairwise sums squares, the matrix `E₁` in formula (2.9) has
-integer square roots and is semi-magic.
+**Triples with square pairwise sums come from semi-magic squares.** Let $a_1, a_2, a_3$ and
+$b_1, b_2, b_3$ be integers such that every sum $a_i + b_j$ is the square of an integer. Then
+there is a $3 \times 3$ integer matrix $E = (e_{ij})$ whose squared entries $e_{ij}^2$ have all
+three row sums and all three column sums equal to one common integer, and such that
+$e_{11}^2 = a_3 + b_3$, $e_{12}^2 = a_2 + b_2$, $e_{13}^2 = a_1 + b_1$, $e_{21}^2 = a_1 + b_2$,
+$e_{22}^2 = a_3 + b_1$, $e_{23}^2 = a_2 + b_3$, $e_{31}^2 = a_2 + b_1$, $e_{32}^2 = a_1 + b_3$ and
+$e_{33}^2 = a_3 + b_2$.
 
 ## Depends on
 
-- [Is Semi Magic Roots](is-semi-magic-roots.md)
-- [Pairwise Sums Squares](pairwise-sums-squares.md)
+- [Semi-magic matrix of squares](is-semi-magic-roots.md)
+- [Families whose pairwise sums are squares](pairwise-sums-squares.md)
 
 ## Sources
 

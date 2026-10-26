@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.max_finrank_avoiding_weight
 ---
 
-# Max finrank avoiding weight
+# Largest subspaces of $\mathbb{Z}_2^{m+a}$ with no vector of weight $m$
 
-Corollary 5.9: if `m` is even with `2^a ≤ m` and `n = m + a`, the largest dimension
-`l(n, m)` of a subspace of `ℤ_2^n` with no vector of weight `m` is `m - 1`.
+**Largest subspaces of $\mathbb{Z}_2^{m+a}$ with no vector of weight $m$.** Let $a$ and $m$ be
+natural numbers with $m$ even and $2^a \le m$, and write $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$.
+The largest dimension of a subspace of $\mathbb{Z}_2^{m+a}$ containing no vector with exactly $m$
+coordinates equal to $1$ is $m - 1$.
 
 ## Depends on
 

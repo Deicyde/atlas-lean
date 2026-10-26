@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.jacobiThetaOneSine_zero
 ---
 
-# Jacobi Theta One Sine zero
+# The Jacobi theta function $\theta_1$ vanishes at $z = 0$
 
-`θ₁(0 | τ) = 0`.
+**The Jacobi theta function $\theta_1$ vanishes at $z = 0$.** For every complex number $\tau$
+with $\operatorname{Im} \tau > 0$, the Jacobi theta function satisfies $\theta_1(0 \mid \tau) = 0$.
 
 ## Depends on
 
-- [Jacobi Theta One Sine](jacobi-theta-one-sine.md)
+- [Jacobi theta function $\theta_1$](jacobi-theta-one-sine.md)
 
 ## Sources
 

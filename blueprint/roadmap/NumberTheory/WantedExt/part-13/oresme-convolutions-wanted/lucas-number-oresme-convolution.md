@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.lucasNumber_oresme_convolution
 ---
 
-# Lucas Number oresme convolution
+# Lucas–Oresme convolution
 
-The Lucas–Oresme convolution:
-`∑_{k=0}^n L_k O_{n-k} = (2/5) L_{n+1} - 2/(5 · 2^n)` for every `n ≥ 0`.
+**Lucas–Oresme convolution.** Let $L_m$ denote the Lucas numbers and let $O_m = m/2^m$
+denote the Oresme numbers. For every natural number $n$,
+$\sum_{k=0}^{n} L_k O_{n-k} = \frac{2}{5} L_{n+1} - \frac{2}{5 \cdot 2^n}$.
 
 ## Depends on
 

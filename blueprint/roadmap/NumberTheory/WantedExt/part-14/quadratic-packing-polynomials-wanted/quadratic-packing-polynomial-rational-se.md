@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_rational_sector_form
 ---
 
-# Quadratic Packing Polynomial rational sector form
+# Stanton's form of a quadratic packing polynomial on a rational sector
 
-Stanton's form of a QPP on a rational sector: if `α = n / m` with `gcd(m, n) = 1` and `P`
-is a QPP on `I(n/m)`, then `n ∣ (m - 1)²` and
-`P(x, y) = n/2 (x - (m-1)/n y)² + (D - n/2) x + (E - ((m-1)²/n)/2) y + F` with integers
-`D, E, F`.
+**Stanton's form of a quadratic packing polynomial on a rational sector.** Let $m, n$ be
+coprime positive integers and let $P$ be a quadratic packing polynomial on the lattice points
+$I(n/m)$ of the sector of slope $n/m$. Then $n$ divides $(m - 1)^2$, and there are integers
+$D, E, F$ such that for all real $x, y$
+
+$$
+P(x, y) = \frac{n}{2} \left(x - \frac{m - 1}{n} y\right)^2 + \left(D - \frac{n}{2}\right) x +
+  \left(E - \frac{(m - 1)^2}{2n}\right) y + F.
+$$
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

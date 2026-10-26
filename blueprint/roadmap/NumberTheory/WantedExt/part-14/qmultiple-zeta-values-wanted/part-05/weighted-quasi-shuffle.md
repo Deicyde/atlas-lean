@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.weightedQuasiShuffle
 ---
 
-# Weighted Quasi Shuffle
+# Weighted quasi-shuffle product
 
-The quasi-shuffle product with weighted letter product `d : α → α → (α →₀ ℚ)` on formal
-`ℚ`-linear combinations of words: `𝟏 ∗ w = w ∗ 𝟏 = w` and
-`a u ∗ b v = a (u ∗ b v) + b (a u ∗ v) + ∑_c d(a, b)_c · c (u ∗ v)`.
+**Weighted quasi-shuffle product.** Let $A$ be an alphabet and let $d$ assign to any two
+letters $a, b \in A$ a finite formal $\mathbb{Q}$-linear combination
+$d(a, b) = \sum_c d(a, b)_c \, c$ of letters. The weighted quasi-shuffle product $u \ast v$ of
+two words over $A$ is the finite formal $\mathbb{Q}$-linear combination of words defined by
+recursion on total length: $\mathbf{1} \ast w = w \ast \mathbf{1} = w$ for the empty word
+$\mathbf{1}$, and for letters $a, b$ and words $u, v$,
+$a u \ast b v = a (u \ast b v) + b (a u \ast v) + \sum_c d(a, b)_c \, c (u \ast v)$, where
+prefixing a letter is extended linearly to combinations of words.
 
 ## Depends on
 

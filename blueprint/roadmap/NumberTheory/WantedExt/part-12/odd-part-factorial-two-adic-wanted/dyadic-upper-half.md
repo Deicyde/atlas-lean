@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.dyadicUpperHalf
 ---
 
-# Dyadic Upper Half
+# Dyadic upper half interval
 
-`dyadicUpperHalf e` is the finite interval `I_e={i | 2^(e-1)<i≤2^e}`.  The paper's
-interval is represented by `Finset.Ioc`; Lemma 5 supplies `1≤e`, since the
-displayed interval degenerates under natural subtraction at `e=0`.
+**Dyadic upper half interval.** For a natural number $e$, $I_e$ is the finite set of natural
+numbers $i$ with $2^{e-1} < i \le 2^e$, where $e - 1$ is truncated subtraction, so that $I_0$ is
+empty.
 
 ## Depends on
 

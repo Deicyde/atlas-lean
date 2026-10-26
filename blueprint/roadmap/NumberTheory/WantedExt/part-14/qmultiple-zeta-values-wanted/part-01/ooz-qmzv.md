@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oozQMZV
 ---
 
-# Ooz QMZV
+# Ohno–Okuda–Zudilin q-multiple zeta values
 
-The (extended) Ohno–Okuda–Zudilin qMZV
-`ζ_q^OOZ(k₁, …, kᵣ) = ∑_{m₁ > ⋯ > mᵣ > 0} q^{m₁} / ((1 - q^{m₁})^{k₁} ⋯ (1 - q^{mᵣ})^{kᵣ})`,
-with `ζ_q^OOZ(∅) = 1`. Summands with `m₁ > N` have `q`-adic order `> N`, so the
-coefficient of `q^N` is computed from the summands with `m₁ ≤ N`.
+**Ohno–Okuda–Zudilin q-multiple zeta values.** For an index $(k_1, \dots, k_r)$ of natural
+numbers with $r \ge 1$, the (extended) Ohno–Okuda–Zudilin qMZV is the formal power series in $q$
+over $\mathbb{Q}$
+
+$$\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r) = \sum_{m_1 > \dots > m_r > 0}
+\frac{q^{m_1}}{(1 - q^{m_1})^{k_1} \cdots (1 - q^{m_r})^{k_r}},$$
+
+and $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$ for the empty index. The summands with $m_1 > N$
+have $q$-adic order greater than $N$, so the coefficient of $q^N$ is computed from the finitely
+many summands with $m_1 \le N$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ooz QMZVPartial](ooz-qmzvpartial.md)
+- [Partial Ohno–Okuda–Zudilin sums](ooz-qmzvpartial.md)
 
 ## Sources
 

@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ramanujan_psi_f_chi_eq_qPochhammer
 ---
 
-# Ramanujan psi f chi eq q Pochhammer
+# Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$
 
-Product forms of Ramanujan's theta functions (Lemma 1): for `‖q‖ < 1`, with
-`f_k = (q^k; q^k)_∞`, `ψ(q) = f₂² / f₁`, `f(q) = f₂³ / (f₁ f₄)`, `χ(q) = f₂² / (f₁ f₄)` and
-`χ(-q) = f₁ / f₂`. The functions are the standard ones of Ramanujan's notebooks (Berndt, Part III,
-Chapter 16): `ψ(q) = f(q, q³)`, `f(q) = f(q, -q²)` (so `f(-q) = f₁`) and `χ(q) = (-q; q²)_∞`, with
-`f(a, b)` Ramanujan's general theta function `ramanujanThetaRaw a b`.
+**Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$.** Write
+$(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and $f_k = (q^k; q^k)_\infty$, and let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function. For every complex number $q$ with $|q| < 1$,
+$f(q, q^3) = f_2^2 / f_1$, $f(q, -q^2) = f_2^3 / (f_1 f_4)$, $(-q; q^2)_\infty = f_2^2 / (f_1 f_4)$
+and $(q; q^2)_\infty = f_1 / f_2$.
+
+In Ramanujan's notation (Berndt, Part III, Chapter 16), with $\psi(q) = f(q, q^3)$,
+$f(q) = f(q, -q^2)$ and $\chi(q) = (-q; q^2)_\infty$, these read $\psi(q) = f_2^2 / f_1$,
+$f(q) = f_2^3 / (f_1 f_4)$, $\chi(q) = f_2^2 / (f_1 f_4)$ and $\chi(-q) = f_1 / f_2$.
 
 ## Depends on
 

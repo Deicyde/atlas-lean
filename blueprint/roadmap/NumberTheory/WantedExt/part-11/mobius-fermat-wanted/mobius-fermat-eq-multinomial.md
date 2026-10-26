@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.mobiusFermat_eq_multinomial
 ---
 
-# Mobius Fermat eq multinomial
+# Multinomial formula for the Möbius–Fermat function
 
-Proposition 4: if `l = ∏ M_{n_i} ^ {m_i}` is factored as in (4) (distinct indices `n_i ≥ 2`,
-`n_i ≠ 6`) and either `3 = M 2` and `7 = M 3` do not both occur or `3` occurs to the first power,
-then `μ_M l = (-1) ^ r * r! / (m_1! ⋯ m_k!)` with `r = m_1 + ⋯ + m_k`. The side condition is
-written `f 2 ≤ 1 ∨ f 3 = 0`.
+**Multinomial formula for the Möbius–Fermat function.** Let $u_M$ be the Fermat unit function
+and let $\mu_M$ be an integer-valued arithmetic function with $\mu_M * u_M = \varepsilon$, where
+$*$ is Dirichlet convolution and $\varepsilon$ is its identity, with $\varepsilon(1) = 1$ and
+$\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the Dirichlet inverse of $u_M$, the
+Möbius–Fermat function.
+Let $n_1, \dots, n_k$ be finitely many (possibly no) distinct integers with $n_i \ge 2$ and
+$n_i \ne 6$, let $m_1, \dots, m_k \ge 1$ be integers, and put
+$l = \prod_{i=1}^{k} (2^{n_i} - 1)^{m_i}$ and
+$r = m_1 + \dots + m_k$. Suppose that $2$ is not among the $n_i$ or has exponent $1$, or that $3$
+is not among the $n_i$; that is, the factor $3 = 2^2 - 1$ occurs at most to the first power or
+the factor $7 = 2^3 - 1$ does not occur. Then, as rational numbers,
+$\mu_M(l) = (-1)^r \, r! / (m_1! \cdots m_k!)$.
 
 ## Depends on
 
-- [Fermat Unit Function](fermat-unit-function.md)
+- [Fermat unit function](fermat-unit-function.md)
 
 ## Sources
 

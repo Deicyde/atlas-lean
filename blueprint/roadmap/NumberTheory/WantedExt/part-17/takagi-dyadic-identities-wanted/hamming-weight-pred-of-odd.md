@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hammingWeight_pred_of_odd
 ---
 
-# Hamming Weight pred of odd
+# Hamming weight of the predecessor of an odd number
 
-Lemma 15: if `n` is odd, then `s₁(n-1) = s₁(n) - 1`.
+**Hamming weight of the predecessor of an odd number.** For a natural number $m$, write
+$s_1(m)$ for the sum of the binary digits of $m$ (the number of ones in its binary expansion).
+If $n$ is an odd natural number, then $s_1(n - 1) = s_1(n) - 1$.
 
 ## Depends on
 

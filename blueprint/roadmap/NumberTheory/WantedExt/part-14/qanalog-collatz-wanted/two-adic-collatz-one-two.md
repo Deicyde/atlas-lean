@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.twoAdicCollatz_one_two
 ---
 
-# Two Adic Collatz one two
+# The $2$-adic $3x+1$ map swaps $1$ and $2$
 
-`T(1) = 2` and `T(2) = 1`.
+**The $2$-adic $3x+1$ map swaps $1$ and $2$.** The $2$-adic $3x+1$ map
+$T : \mathbb{Z}_2 \to \mathbb{Z}_2$ satisfies $T(1) = 2$ and $T(2) = 1$.
 
 ## Depends on
 
-- [Two Adic Collatz](two-adic-collatz.md)
+- [The $2$-adic $3x+1$ map](two-adic-collatz.md)
 
 ## Proof depends on
 
-- [Two mul two Adic Collatz of even](two-mul-two-adic-collatz-of-even.md)
-- [Two mul two Adic Collatz of odd](two-mul-two-adic-collatz-of-odd.md)
+- [Even branch of the $2$-adic $3x+1$ map](two-mul-two-adic-collatz-of-even.md)
+- [Odd branch of the $2$-adic $3x+1$ map](two-mul-two-adic-collatz-of-odd.md)
 
 ## Sources
 

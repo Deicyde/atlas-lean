@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.spoofLehmer_finite
 ---
 
-# Spoof Lehmer finite
+# Finitely many nontrivial spoof Lehmer factorizations with $r$ factors
 
-For every `r`, there are only finitely many nontrivial (spoof) Lehmer factorizations with
-`r` factors. Omitted: the meta-claim that they can be explicitly and verifiably computed.
-Domain extension: also for `r = 0` (no Lehmer factorization has no factors).
+**Finitely many nontrivial spoof Lehmer factorizations with $r$ factors.** For every natural
+number $r$, there are only finitely many finite multisets $F$ of pairs (base, exponent) of natural
+numbers with exactly $r$ elements such that $F$ is a nontrivial spoof $k$-Lehmer factorization for
+some integer $k$.
+
+The source also asserts that these factorizations can be computed explicitly and verifiably; that
+claim is not part of this statement.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
 
 ## Sources
 

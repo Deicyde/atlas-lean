@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.harmonicExtension_natCast
 ---
 
-# Harmonic Extension nat Cast
+# The real extension agrees with the harmonic numbers
 
-Bridge: `H(n) = H_n` for natural `n`.
+**The real extension agrees with the harmonic numbers.** Let
+$H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt$ for real $x$ be the real extension of the harmonic
+numbers. For every natural number $n$, $H(n) = H_n$, where $H_n = \sum_{i=1}^n 1/i$ is the
+$n$-th harmonic number.
 
 ## Depends on
 
-- [Harmonic Extension](harmonic-extension.md)
+- [The real extension of the harmonic numbers](harmonic-extension.md)
 
 ## Sources
 

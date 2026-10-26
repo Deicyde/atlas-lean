@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanThetaMonomial
 ---
 
-# Ramanujan Theta Monomial
+# Ramanujan's theta function at monomial arguments
 
-Ramanujan's general theta function at monomial arguments,
-`f(ε q^a, ε q^b) = ∑_{m ∈ ℤ} ε^{m^2} q^{a m(m+1)/2 + b m(m-1)/2}` (since
-`(εq^a)^{m(m+1)/2} (εq^b)^{m(m-1)/2} = ε^{m^2} q^{a m(m+1)/2 + b m(m-1)/2}`). For
-`a + b ≥ 1` the exponent of the `m`th term is at least `|m|(|m|-1)/2`, so the coefficient of
-`q^n` only involves `|m| ≤ n + 1`, which is how it is computed here (the definition is
-meant for `a + b ≥ 1`). In particular `ψ(q) = f(q, q^3)` and `f(-q) = f(-q, -q^2)`.
+**Ramanujan's theta function at monomial arguments.** For an integer $\varepsilon$ and natural
+numbers $a$ and $b$, $f(\varepsilon q^a, \varepsilon q^b)$ is the integer power series in $q$
+whose coefficient of $q^n$ is the sum of $\varepsilon^{m^2}$ over the integers $m$ with
+$|m| \le n + 1$ and $a \cdot m(m+1)/2 + b \cdot m(m-1)/2 = n$.
+
+When $a + b \ge 1$ the exponent $a \cdot m(m+1)/2 + b \cdot m(m-1)/2$ is at least
+$|m|(|m|-1)/2$, so the bound $|m| \le n + 1$ excludes no term and this is Ramanujan's
+$f(c, d) = \sum_{m \in \mathbb{Z}} c^{m(m+1)/2} d^{m(m-1)/2}$ at $c = \varepsilon q^a$ and
+$d = \varepsilon q^b$; the definition is meant for $a + b \ge 1$. Special cases are
+$\psi(q) = f(q, q^3)$ and $f(-q) = f(-q, -q^2)$, which equals
+$(q; q)_\infty = \prod_{k \ge 1} (1 - q^k)$.
 
 ## Depends on
 

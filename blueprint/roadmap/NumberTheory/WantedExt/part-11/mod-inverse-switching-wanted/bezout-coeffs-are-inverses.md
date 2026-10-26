@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.bezout_coeffs_are_inverses
 ---
 
-# Lemma 1
+# Bézout coefficients are modular inverses
 
-**Lemma 1**: if `m, n` are coprime positive integers and
-`(x, y)` is a pair of Bézout coefficients for `(m, n)`, i.e.
-`xm + yn = 1`, then `x` is an inverse of `m` modulo `n` and `y`
-is an inverse of `n` modulo `m`.
+**Bézout coefficients are modular inverses.** Let $m$ and $n$ be coprime positive integers,
+and let $x$ and $y$ be integers with $xm + yn = 1$. Then $xm \equiv 1 \pmod{n}$ and
+$yn \equiv 1 \pmod{m}$; that is, $x$ is an inverse of $m$ modulo $n$ and $y$ is an inverse of
+$n$ modulo $m$.
 
 ## Depends on
 

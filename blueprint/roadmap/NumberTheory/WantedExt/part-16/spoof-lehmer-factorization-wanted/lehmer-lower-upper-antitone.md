@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.lehmerLower_upper_antitone
 ---
 
-# Lehmer Lower upper antitone
+# Monotonicity of the Lehmer bounds
 
-For `0 ≤ s ≤ r`, `L(t_1, …, t_s; r)` and `U(t_1, …, t_s; r)` are monotonically decreasing in
-`t_1, …, t_s` (on nondecreasing tuples with `t_1 ≥ 2`), stated as: increasing the arguments
-pointwise does not increase `L` or `U`.
+**Monotonicity of the Lehmer bounds.** Let $L(t; r)$ and $U(t; r)$ be the lower and upper
+Lehmer bounds: the infimum and the supremum of $\kappa_r(t_1, \dots, t_s, u_1, \dots, u_{r-s})$
+over the admissible completions $u$ of $t = (t_1, \dots, t_s)$, where $\kappa_r$ is the Lehmer
+function. Let $r$ be a natural number and let $t = (t_1, \dots, t_s)$ and
+$t' = (t'_1, \dots, t'_s)$ be nondecreasing lists of real numbers of the same length $s \le r$
+with $t_i \ge 2$ and $t_i \le t'_i$ for every $i$. Then $L(t'; r) \le L(t; r)$ and
+$U(t'; r) \le U(t; r)$.
 
 ## Depends on
 
-- [Lehmer Lower](lehmer-lower.md)
-- [Lehmer Upper](lehmer-upper.md)
+- [The lower Lehmer bound](lehmer-lower.md)
+- [Upper Lehmer bound $U(t; r)$](lehmer-upper.md)
 
 ## Sources
 

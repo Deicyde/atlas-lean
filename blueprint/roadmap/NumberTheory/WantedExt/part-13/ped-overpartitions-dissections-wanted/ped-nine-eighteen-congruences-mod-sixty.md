@@ -5,19 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.pedNineEighteen_congruences_mod_sixtyFour
 ---
 
-# Ped Nine Eighteen congruences mod sixty Four
+# Congruences modulo 64 for (9, 18)-overpartitions with even parts distinct
 
-Congruences modulo `64` for `ped_{9,18}`: for all `n, α ≥ 0`,
-(73) `∑ ped_{9,18}(3^{4α+2} n + (3^{4α+3} + 1)/4) q^n ≡ 12 f_1^4 f_3^6 / f_2^2` (stated after
-multiplying both sides by `f_2^2`),
-(74) `ped_{9,18}(3^{4α+5} n + (7·3^{4α+4} + 1)/4) ≡ ped_{9,18}(3^{4α+3} n + (7·3^{4α+2} + 1)/4)`,
-(75) `ped_{9,18}(3^{4α+5} n + (11·3^{4α+4} + 1)/4) ≡ ped_{9,18}(3^{4α+3} n + (11·3^{4α+2} + 1)/4)`,
-(76) `ped_{9,18}(3^{4α+6} n + (5·3^{4α+5} + 1)/4) ≡ ped_{9,18}(3^{4α+4} n + (5·3^{4α+3} + 1)/4)`.
-All divisions are exact.
+**Congruences modulo 64 for [9, 18]-overpartitions with even parts distinct.** Let
+$\mathrm{ped}_{9,18}(n)$ be the number of $[9, 18]$-overpartitions of $n$ with even parts
+distinct, let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and read congruences between integer power
+series in $q$ coefficientwise. For all $\alpha \ge 0$ the following hold modulo $64$, where the
+statements about single values hold for every $n \ge 0$:
+(73) $f_2^2 \sum_{n \ge 0} \mathrm{ped}_{9,18}\bigl(3^{4\alpha+2} n + (3^{4\alpha+3} + 1)/4\bigr)
+q^n \equiv 12 f_1^4 f_3^6$;
+(74) $\mathrm{ped}_{9,18}\bigl(3^{4\alpha+5} n + (7 \cdot 3^{4\alpha+4} + 1)/4\bigr) \equiv
+\mathrm{ped}_{9,18}\bigl(3^{4\alpha+3} n + (7 \cdot 3^{4\alpha+2} + 1)/4\bigr)$;
+(75) $\mathrm{ped}_{9,18}\bigl(3^{4\alpha+5} n + (11 \cdot 3^{4\alpha+4} + 1)/4\bigr) \equiv
+\mathrm{ped}_{9,18}\bigl(3^{4\alpha+3} n + (11 \cdot 3^{4\alpha+2} + 1)/4\bigr)$;
+(76) $\mathrm{ped}_{9,18}\bigl(3^{4\alpha+6} n + (5 \cdot 3^{4\alpha+5} + 1)/4\bigr) \equiv
+\mathrm{ped}_{9,18}\bigl(3^{4\alpha+4} n + (5 \cdot 3^{4\alpha+3} + 1)/4\bigr)$.
+All divisions by $4$ are exact.
+
+The paper states (73) with $12 f_1^4 f_3^6 / f_2^2$ on the right; here $f_2^2$ is cleared.
 
 ## Depends on
 
-- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [The partition function $\mathrm{ped}_{9,18}$](ped-nine-eighteen.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

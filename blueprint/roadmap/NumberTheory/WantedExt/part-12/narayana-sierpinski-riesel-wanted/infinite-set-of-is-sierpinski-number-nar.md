@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinite_setOf_isSierpinskiNumber_narayanaCowsSequence
 ---
 
-# Infinite set Of is Sierpinski Number narayana Cows Sequence
+# Infinitely many Narayana numbers are Sierpiński numbers
 
-Theorem 3: there are infinitely many NC-Sierpiński numbers, i.e. infinitely many terms of
-Narayana's cows sequence are Sierpiński numbers (`IsSierpinskiNumber`: odd `k` with
-`k·2^n + 1` composite for all `n ≥ 1`).
+**Infinitely many Narayana numbers are Sierpiński numbers.** There are infinitely many
+natural numbers $k$ that are Sierpiński numbers and terms of Narayana's cows sequence $(N_t)$,
+that is, $k = N_t$ for some $t$; here a Sierpiński number is an odd $k$ such that
+$k \cdot 2^n + 1$ is not prime for every $n \ge 1$.
 
 ## Depends on
 
-- [Is Sierpinski Number](../../part-16/sierpinski-riesel-repdigits-wanted/is-sierpinski-number.md)
+- [Sierpiński number](../../part-16/sierpinski-riesel-repdigits-wanted/is-sierpinski-number.md)
 - [Narayana's cows sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources

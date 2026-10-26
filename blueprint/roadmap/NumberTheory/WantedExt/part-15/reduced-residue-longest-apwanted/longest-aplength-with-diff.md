@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.longestAPLengthWithDiff
 ---
 
-# Longest APLength With Diff
+# Longest progression with a given common difference
 
-`f_m(d, n)`: the length of the longest arithmetic progressions with common difference `d`
-contained in `R_m(n)`. The paper uses it for `d > 0`, where the set of lengths is bounded by
-`n` (`apLength_le`).
+**Longest progression with a given common difference.** For an integer $m$ and natural numbers
+$n$ and $d$, let $R_m(n)$ be the set of integers $a$ with $m + 1 \le a \le m + n$ and
+$\gcd(a, n) = 1$. Then $f_m(d, n)$ is the supremum of the natural numbers $s$ for which some
+integer $b$ has $b + i d \in R_m(n)$ for every natural number $i < s$. For $d > 0$ every such $s$
+is at most $n$, so $f_m(d, n)$ is the length of the longest arithmetic progression with common
+difference $d$ contained in $R_m(n)$; the paper uses it only for $d > 0$, and for $d = 0$ the
+definition gives $0$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reduced Residue Window](reduced-residue-window.md)
+- [The reduced residue system $R_m(n)$](reduced-residue-window.md)
 
 ## Sources
 

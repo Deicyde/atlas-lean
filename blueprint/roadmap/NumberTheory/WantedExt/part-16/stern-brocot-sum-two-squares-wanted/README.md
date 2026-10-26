@@ -4,6 +4,6 @@ navigation: module
 
 # Stern Brocot Sum Two Squares
 
-- [Continued Fraction path eq convergents](continued-fraction-path-eq-convergents.md)
-- [Exists palindrome continued Fraction div](exists-palindrome-continued-fraction-div.md)
-- [Sq add sq of stern Brocot path](sq-add-sq-of-stern-brocot-path.md)
+- [Continued fraction convergents as matrix paths](continued-fraction-path-eq-convergents.md)
+- [Perron's lemma](exists-palindrome-continued-fraction-div.md)
+- [Sums of two squares from the Stern–Brocot tree](sq-add-sq-of-stern-brocot-path.md)

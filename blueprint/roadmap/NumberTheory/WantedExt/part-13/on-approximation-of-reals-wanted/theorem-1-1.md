@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.OnApproximationOfRealsWanted.OnApproximationOfReals.theorem_1_1
 ---
 
-# Theorem 1 1
+# Poëls' lower bound for the classical exponent
 
-Statement of Theorem 1.1:
-
-Let `n` be an integer such that `n ≥ 2`. For any transcendental real number `ξ`, we have
-`ω⋆_n(ξ) ≥ a * n`, where `a = 1 / (2 - log 2)`.
+**Poëls' lower bound for the classical exponent.** Let $n \ge 2$ be an integer and let
+$a = 1/(2 - \log 2)$. For every real number $\xi$ that is transcendental over $\mathbb{Q}$, the
+classical exponent of approximation to $\xi$ by real algebraic numbers of degree at most $n$
+satisfies $\omega^*_n(\xi) \ge a n$.
 
 ## Depends on
 
-- [Classical Exponent](classical-exponent.md)
+- [Classical exponent of approximation by algebraic numbers](classical-exponent.md)
 
 ## Sources
 

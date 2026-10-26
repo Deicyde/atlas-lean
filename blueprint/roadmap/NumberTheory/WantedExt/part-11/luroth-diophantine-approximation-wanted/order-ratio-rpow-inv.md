@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.orderRatio_rpow_inv
 ---
 
-# Order Ratio rpow inv
+# The order ratio of $q^{-\tau}$
 
-For `q ≥ 2` and `τ` real, `-log (q^τ)⁻¹ / log q = τ`.
+**The order ratio of $q^{-\tau}$.** For every real $\tau$ and all sufficiently large natural
+numbers $q$, $\max(0, -\log((q^{\tau})^{-1})/\log q) = \max(0, \tau)$.
 
 ## Depends on
 

@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pqRLucas_eq_succ_mul_sub
 ---
 
-# Pq RLucas eq succ mul sub
+# First-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials
 
-Theorem 3.2, first kind: for all `n ≥ 0`,
-`V^{(r,s)}_n(x, y) = (s + 1) U_{n+1}(x/p, y/q) - s x U_n(x, y)`.
+**First-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials.** Let
+$K$ be a field, let $r \ge 1$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in K$ with
+$p \ne 0$ and $q \ne 0$. Write $U_n(x, y)$ for the $(p, q)$-analogue of the $r$-Fibonacci
+polynomial with parameters $p, q, m$, and $V_n(x, y)$ for the first-kind $(p, q)$-analogue of
+the $r$-Lucas polynomial of type $s$ with the same parameters. Then for every natural number $n$,
+
+$$
+V_n(x, y) = (s + 1)\,U_{n+1}(x/p, y/q) - s\,x\,U_n(x, y).
+$$
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
-- [Pq RLucas](pq-rlucas.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
+- [First-kind (p, q)-Lucas polynomials](pq-rlucas.md)
 
 ## Sources
 

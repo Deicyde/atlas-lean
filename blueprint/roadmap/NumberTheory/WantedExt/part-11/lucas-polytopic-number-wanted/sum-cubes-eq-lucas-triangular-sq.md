@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_cubes_eq_lucasTriangular_sq
 ---
 
-# Theorem 5
+# Weighted sum of cubes of Lucas brackets
 
-**Theorem 5.** `∑_{k=1}^n t^{2(n-k)} (({k + 1} + t {k - 1}) / s) {k}³ = [n + 1, 2]²`.
+**Weighted sum of cubes of Lucas brackets.** Let $(s, t)$ be nondegenerate Lucas parameters,
+with Lucas brackets $\{n\}_{s,t}$ and Lucasnomial coefficients $\binom{n}{k}_{s,t}$. For every
+natural number $n$,
 
-Stated for every `n ≥ 0`.
+$$\sum_{k=1}^{n} t^{2(n-k)} \frac{\{k+1\}_{s,t} + t \{k-1\}_{s,t}}{s} \{k\}_{s,t}^{3} =
+\binom{n+1}{2}_{s,t}^{2}.$$
 
 ## Depends on
 

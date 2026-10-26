@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.totient_dvd_card_orderOf_eq
 ---
 
-# Totient dvd card order Of eq
+# The number of units of order $L$ is a multiple of $\varphi(L)$
 
-The number `E(L, n)` of elements of order `L` in `(ℤ/nℤ)ˣ` is a multiple of `φ(L)`.
+**The number of units of order $L$ is a multiple of $\varphi(L)$.** For natural numbers
+$n \ge 1$ and $L$, the number $E(L, n)$ of elements of order $L$ in the unit group
+$(\mathbb{Z}/n\mathbb{Z})^\times$ is divisible by Euler's totient $\varphi(L)$.
 
 ## Depends on
 

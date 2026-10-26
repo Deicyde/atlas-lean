@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.exists_sq_modEq_eight_mul_add_one
 ---
 
-# Exists sq mod Eq eight mul add one
+# Square roots modulo powers of two
 
-For positive `m, n` there is `1 ≤ x ≤ 2^m - 1` with `x² ≡ 8n + 1 (mod 2^(m+2))`.
+**Square roots modulo powers of two.** For all natural numbers $m > 0$ and $n > 0$ there is
+a natural number $x$ with $1 \le x \le 2^m - 1$ and $x^2 \equiv 8n + 1 \pmod{2^{m+2}}$.
 
 ## Depends on
 

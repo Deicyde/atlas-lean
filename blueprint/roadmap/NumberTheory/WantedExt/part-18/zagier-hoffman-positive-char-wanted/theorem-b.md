@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_B
 ---
 
-# Theorem B
+# Linear independence of multiple zeta values with small entries
 
-Statement of Theorem B:
-
-Let `w ∈ ℕ`, where `ℕ := {1,2,...}`. MZVs of weight `w` in `𝒯0 w` are all linearly independent over
-`K`. In particular, `dim 𝒵 w ≥ |𝒯0 w|`. Note that `K` in the paper is `RatFunc F`.
+**Linear independence of multiple zeta values with small entries.** Let $F$ be a finite field
+with $q$ elements, $K = F(t)$, and $w$ a positive integer. Let $\mathcal{T}^0_w$ be the set of
+multiple zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ with $r \ge 1$, positive integers
+$s_1, \dots, s_r$ with sum $w$, and $s_i < q$ for all $i$, and let $\mathcal{Z}_w$ be the
+$K$-vector space spanned by all multiple zeta values of weight $w$. Then the elements of
+$\mathcal{T}^0_w$ are linearly independent over $K$, and
+$\dim_K \mathcal{Z}_w \ge |\mathcal{T}^0_w|$.
 
 ## Depends on
 
-- [𝒯0](0.md)
-- [𝒵](untitled.md)
+- [Multiple zeta values with small entries](0.md)
+- [The space $\mathcal{Z}_w$ of multiple zeta values of weight $w$](untitled.md)
 
 ## Sources
 

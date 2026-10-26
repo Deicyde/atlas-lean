@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.palindromicHalfCopy_example
 ---
 
-# Palindromic Half Copy example
+# Palindromic half copies of $5570$ in bases $5$ and $8$
 
-The source's example: for `m = (134240)_5 = (12702)_8 = 5570`, `C_5(m) = (134431)_5 = 5616`
-and `C_8(m) = (12721)_8 = 5585`.
+**Palindromic half copies of $5570$ in bases $5$ and $8$.** Write $C_b(m)$ for the
+palindromic half copy of $m$ in base $b$. For $m = 5570 = (134240)_5 = (12702)_8$,
+$C_5(m) = (134431)_5 = 5616$ and $C_8(m) = (12721)_8 = 5585$.
 
 ## Depends on
 
-- [Palindromic Half Copy](palindromic-half-copy.md)
+- [Palindromic half copy](palindromic-half-copy.md)
 
 ## Sources
 

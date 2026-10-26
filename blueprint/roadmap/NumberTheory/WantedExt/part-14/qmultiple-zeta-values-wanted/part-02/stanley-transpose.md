@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.stanleyTranspose
 ---
 
-# Stanley Transpose
+# Transposed partition in Stanley coordinates
 
-The transposed partition `ρ(𝐦, 𝐧) = ((n₁ + ⋯ + nᵣ, …, n₁ + n₂, n₁),
-(mᵣ, mᵣ₋₁ - mᵣ, …, m₁ - m₂))` in Stanley coordinates (Young diagram reflected in
-the main diagonal); with `0`-based indices, `ρ.1 j = ∑_{i + j < r} nᵢ` and
-`ρ.2 j = m_{r-1-j} - m_{r-j}` with `m_r := 0`.
+**Transposed partition in Stanley coordinates.** For tuples $\mathbf{m} = (m_1, \dots, m_r)$
+and $\mathbf{n} = (n_1, \dots, n_r)$ of natural numbers, the transpose
+$\rho(\mathbf{m}, \mathbf{n})$ is the pair of tuples
+$((n_1 + \dots + n_r, \dots, n_1 + n_2, n_1), (m_r, m_{r-1} - m_r, \dots, m_1 - m_2))$: for
+$1 \le j \le r$, the $j$-th entry of the first tuple is $n_1 + \dots + n_{r+1-j}$ and the $j$-th
+entry of the second tuple is $m_{r+1-j} - m_{r+2-j}$, where $m_{r+1} := 0$ and subtraction of
+natural numbers is truncated at $0$.
+
+On a partition with $m_1 > \dots > m_r$ this reflects its Young diagram in the main diagonal.
 
 ## Depends on
 

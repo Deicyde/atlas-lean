@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.absLeastAPLength
 ---
 
-# Abs Least APLength
+# Longest progression in the absolute least reduced residues
 
-`g(n) = f_{-⌈n/2⌉}(n)`: the length of the longest arithmetic progressions contained in the
-system `R(n) = R_{-⌈n/2⌉}(n)` of absolute least reduced residues modulo `n`.
+**Longest progression in the absolute least reduced residues.** For a natural number $n$,
+let $R(n)$ be the set of integers $a$ with $1 - \lceil n/2 \rceil \le a \le n - \lceil n/2 \rceil$
+and $\gcd(a, n) = 1$, the system of absolute least reduced residues modulo $n$. Then $g(n)$ is
+the largest $s \ge 0$ for which there are an integer $b$ and a positive integer $d$ with
+$b + i d \in R(n)$ for every $0 \le i < s$: the length of the longest arithmetic progression
+with positive common difference contained in $R(n)$. Equivalently,
+$g(n) = f_{-\lceil n/2 \rceil}(n)$, where $f_m(n)$ is the same length for the set
+$R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.
 
 ## Depends on
 
@@ -16,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Longest APLength](longest-aplength.md)
+- [Length of the longest arithmetic progression in a reduced residue system](longest-aplength.md)
 
 ## Sources
 

@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.modularProductSum_explicit_estimate
 ---
 
-# Modular Product Sum explicit estimate
+# Explicit estimate for the modular product sum $S_k(n, m)$
 
-Theorem 1: for `k ≥ 3`, `n ≥ 2` and `m` coprime to `n`,
-`|S_k(n, m) - 2^{-k} n^k φ(n)^{k-1}| ≤ (2√3)^k n^{3k/2} (log n)^k` (the paper's explicit
-`O^*` notation). The paper's `m ≥ 1` follows from `gcd(m, n) = 1` and `n ≥ 2`.
+**Explicit estimate for the modular product sum $S_k(n, m)$.** Let $\varphi$ be Euler's
+totient function and $S_k(n, m)$ the modular product sum. For all natural numbers $k \ge 3$,
+$n \ge 2$ and $m$ with $\gcd(m, n) = 1$,
+
+$$\left| S_k(n, m) - \frac{n^k \varphi(n)^{k-1}}{2^k} \right| \le
+(2\sqrt{3})^k \, n^{3k/2} (\log n)^k.$$
+
+The paper also assumes $m \ge 1$, which follows from $\gcd(m, n) = 1$ and $n \ge 2$.
 
 ## Depends on
 
-- [Modular Product Sum](modular-product-sum.md)
+- [The modular product sum $S_k(n, m)$](modular-product-sum.md)
 
 ## Sources
 

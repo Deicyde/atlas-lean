@@ -5,19 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.sum_zero_pow
 ---
 
-# Theorem 2, case `a = 0`
+# Landau-type formula for the zeros of the k-th derivative (Theorem 2, zeros case)
 
-**Theorem 2, case `a = 0`.** With `ℓ ≥ 2` least such that `a(ℓ) ≠ 0`, for `k ≥ 1` and
-`x > 1` the sum of `x^ρ` over the zeros `ρ` of `F^(k)` (with multiplicity) in `E₂ < β < E₁`,
-`0 < γ < T` is `(T / 2π) ∑_{l ≥ 0} ∑ (-1 / (a(ℓ) log^k ℓ))^(l+1) (log n₀)^(k+1)
-(log n₁ ⋯ log n_l)^k a(n₀) ⋯ a(n_l) + O(log T)`, the inner sum over `n₀ ≥ ℓ`,
-`n₁, …, n_l ≥ ℓ + 1` with `x = n₀ ⋯ n_l / ℓ^(l+1)`, for `E₁`, `E₂`, `τ` as in Lemmas 1 and 3.
-The closing remark that the sum is empty when `ℓ^n x ∉ ℤ` for all `n` is not stated
-separately.
+**Landau-type formula for the zeros of the k-th derivative (Theorem 2, zeros case).** Let $F$
+be a function in the Selberg class with Dirichlet coefficients $a(n)$, write $F^{(k)}$ for the
+$k$-th derivative of $F$, let $k \ge 1$, let $\ell \ge 2$ be such that $a(\ell) \ne 0$ and
+$a(n) = 0$ for $2 \le n < \ell$, and let $x > 1$ be real. Let $E_1$, $E_2$ and $\tau$ be real
+numbers such that $F^{(k)}(s) \ne 0$ whenever $\operatorname{Re} s \ge E_1$, and whenever
+$\operatorname{Re} s \le E_2$ and $|\operatorname{Im} s| \ge \tau$. Put
+
+$$c = \sum_{l \ge 0} \sum_{n_0, \dots, n_l} \left(\frac{-1}{a(\ell) (\log \ell)^k}\right)^{l+1}
+(\log n_0)^{k+1} (\log n_1 \cdots \log n_l)^k a(n_0) \cdots a(n_l),$$
+
+the inner sum over the natural numbers $n_0 \ge \ell$ and $n_1, \dots, n_l \ge \ell + 1$ with
+$n_0 \cdots n_l = x \ell^{l+1}$ (a finite sum, since $n_0 \cdots n_l \ge \ell (\ell + 1)^l$).
+Then, as $T \to \infty$,
+
+$$\sum_{\rho} m(\rho) x^{\rho} = \frac{T}{2\pi} c + O(\log T),$$
+
+where $\rho$ runs over the zeros of $F^{(k)}$ with $E_2 < \operatorname{Re} \rho < E_1$ and
+$0 < \operatorname{Im} \rho < T$, and $m(\rho)$ is the order of the zero of $F^{(k)}$ at $\rho$.
+
+The paper takes $E_1$, $E_2$, $\tau$ from Lemmas 1 and 3. Its closing remark that the sum is
+empty when $\ell^n x \notin \mathbb{Z}$ for all $n$ is not stated separately.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

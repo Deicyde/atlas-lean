@@ -6,25 +6,28 @@ proof: formalized
 lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.transformationGroup_smul_integralPrimitiveDescartesQuadruple
 ---
 
-# Transformation Group smul integral Primitive Descartes Quadruple
+# The transformation group preserves integral primitive Descartes quadruples
 
-`TransformationGroup` stabilizes `integralPrimitiveDescartesQuadruple`.
+**The transformation group preserves integral primitive Descartes quadruples.**
+For every $g$ in the transformation group, $g$ maps the set of integral primitive Descartes
+quadruples into itself: if $v \in \mathbb{Z}^4$ is an integral primitive Descartes quadruple,
+then so is $g v$.
 
 ## Depends on
 
-- [Transformation Group](transformation-group.md)
-- [Integral Primitive Descartes Quadruple](integral-primitive-descartes-quadruple.md)
+- [The transformation group](transformation-group.md)
+- [Integral primitive Descartes quadruple](integral-primitive-descartes-quadruple.md)
 
 ## Proof depends on
 
-- [Apollonian Group](apollonian-group.md)
-- [Descartes Matrix](descartes-matrix.md)
-- [Descartes Orthogonal Group](descartes-orthogonal-group.md)
-- [Descartes Orthogonal Group Action](descartes-orthogonal-group-action.md)
-- [S₁](s.md)
-- [S₂](s-2.md)
-- [S₃](s-3.md)
-- [S₄](s-4.md)
+- [Apollonian group](apollonian-group.md)
+- [Descartes matrix](descartes-matrix.md)
+- [Descartes orthogonal group](descartes-orthogonal-group.md)
+- [Descartes orthogonal group action](descartes-orthogonal-group-action.md)
+- [The Apollonian generator $S_1$](s.md)
+- [The Apollonian generator $S_2$](s-2.md)
+- [The Apollonian generator $S_3$](s-3.md)
+- [The Apollonian generator $S_4$](s-4.md)
 
 ## Sources
 

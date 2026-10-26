@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pythagoreanTripleMul_three_four_five
 ---
 
-# Pythagorean Triple Mul three four five
+# Amato's product of $(3, 4, 5)$ with itself
 
-`(3, 4, 5) ⋆ (3, 4, 5) = (9, 40, 41)`.
+**Amato's product of $(3, 4, 5)$ with itself.** For integer triples,
+$(3, 4, 5) \star (3, 4, 5) = (9, 40, 41)$, where $\star$ is Amato's product of triples.
 
 ## Depends on
 
-- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
+- [Amato's product of triples](pythagorean-triple-mul.md)
 
 ## Sources
 

@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.squareSplitTotient_formula
 ---
 
-# Square Split Totient formula
+# The square-splitting totient function
 
-Theorem 7: the Euler-type function `φ⋆`, defined by
-`∑_{d ∈ A(n)} φ⋆(d) = n` for all `n ≥ 1` (Theorem 8), is multiplicative with
-`φ⋆(1) = 1`, `φ⋆(p) = p - 1`, and for `b ≥ 1`,
-`φ⋆(p^{2b}) = (p² - 1) p^{2b-2}`, `φ⋆(p^{2b+1}) = (p - 1)(p² - 1) p^{2b-2}`;
-equivalently `φ⋆(n) = φ(u(n)) v(n)² ∏_{p ∣ v(n)} (1 - 1/p²)`.
+**The square-splitting totient function.** Let $A(n)$ be the set of square-splitting divisors
+of $n$, and let $\varphi_\star$ be any integer-valued arithmetic function with
+$\sum_{d \in A(n)} \varphi_\star(d) = n$ for every $n \ge 1$. Then $\varphi_\star$ is
+multiplicative and $\varphi_\star(1) = 1$. For every prime $p$, $\varphi_\star(p) = p - 1$, and
+for every $b \ge 1$, $\varphi_\star(p^{2b}) = (p^2 - 1)\,p^{2b-2}$ and
+$\varphi_\star(p^{2b+1}) = (p - 1)(p^2 - 1)\,p^{2b-2}$. Moreover, for every $n \ge 1$,
+
+$$\varphi_\star(n) = \varphi(u(n))\,v(n)^2 \prod_{p \mid v(n)} \left(1 - \frac{1}{p^2}\right),$$
+
+where $\varphi$ is Euler's totient function, $u(n)$ is the product of the primes dividing $n$ to
+an odd power and $v(n)$ is the positive integer with $n = u(n)\,v(n)^2$.
 
 ## Depends on
 
-- [Square Split Divisors](square-split-divisors.md)
-- [Square Split U](square-split-u.md)
-- [Square Split V](square-split-v.md)
+- [Square-splitting divisors](square-split-divisors.md)
+- [Squarefree part](square-split-u.md)
+- [The square-root part of a natural number](square-split-v.md)
 
 ## Sources
 

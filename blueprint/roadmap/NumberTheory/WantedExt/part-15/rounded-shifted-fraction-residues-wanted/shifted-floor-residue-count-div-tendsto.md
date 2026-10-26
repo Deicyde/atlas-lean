@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.shiftedFloorResidueCount_div_tendsto
 ---
 
-# Shifted Floor Residue Count div tendsto
+# Limiting densities of the shifted floor residue counts
 
-Corollary 38: for `α, ν ∈ [0, 1)` and `1 ≤ r ≤ m`, `𝓝_{n,α,ν,r,m} / n`
-tends to `-α/(1-α) + ∫_0^1 (1-x) x^{-α}/(1-x^m) dx` if `r = 1` and to
-`∫_0^1 (1-x) x^{r-1-α}/(1-x^m) dx` if `2 ≤ r ≤ m`.
+**Limiting densities of the shifted floor residue counts.** Let $r$ and $m$ be natural
+numbers with $1 \le r \le m$, and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$
+and $0 \le \nu < 1$. For a natural number $n$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be the number
+of integers $k$ with $1 \le k \le n$ such that
+$\lfloor (n - \nu)/k + \alpha \rfloor \equiv r \pmod m$, and for a natural number $s$ put
+
+$$I_s = \int_0^1 \frac{(1 - x)\, x^{s - 1 - \alpha}}{1 - x^m} \, dx.$$
+
+Then, as $n \to \infty$, $\mathcal N_{n,\alpha,\nu,r,m}/n$ tends to $-\alpha/(1 - \alpha) + I_1$
+if $r = 1$ and to $I_r$ if $r \ge 2$.
 
 ## Depends on
 
-- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
+- [Residue counts of the shifted floor sequence](shifted-floor-residue-count.md)
 
 ## Sources
 

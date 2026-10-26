@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.pqRLucasSecond_eq_pqRFibonacci_add
 ---
 
-# Pq RLucas Second eq pq RFibonacci add
+# Splitting formula for second-kind (p, q)-Lucas polynomials
 
-Theorem 3.1, second kind: for `n ≥ r`,
-`𝕍^{(r,s)}_n(x, y) = U_{n+1}(x/p, y/p) + s y (q/p)^{n-r} U_{n-r}(x, y p^r q^{m-r})`.
+**Splitting formula for second-kind (p, q)-Lucas polynomials.** Let $K$ be a field, let
+$r \ge 1$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in K$ with $p \ne 0$ and
+$q \ne 0$. Write $U_n(x, y)$ for the $(p, q)$-analogue of the $r$-Fibonacci polynomial with
+parameters $p, q, m$, and $\mathbb{V}_n(x, y)$ for the second-kind $(p, q)$-analogue of the
+$r$-Lucas polynomial of type $s$ with the same parameters. Then for every natural number
+$n \ge r$,
+
+$$
+\mathbb{V}_n(x, y) = U_{n+1}(x/p, y/p) + s\,y\,(q/p)^{n-r}\,U_{n-r}(x, y p^r q^m / q^r).
+$$
 
 ## Depends on
 
-- [Pq RFibonacci](pq-rfibonacci.md)
-- [Pq RLucas Second](pq-rlucas-second.md)
+- [$(p,q)$-analogue of the $r$-Fibonacci polynomial](pq-rfibonacci.md)
+- [Second-kind (p, q)-Lucas polynomials](pq-rlucas-second.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsSpoofFactorization
 ---
 
-# Is Spoof Factorization
+# Spoof factorizations
 
-A spoof factorization: a finite multiset of pairs `(base, exponent)` of positive integers.
+**Spoof factorizations.** A finite multiset $F = \{(x_1, a_1), \dots, (x_r, a_r)\}$ of pairs of
+natural numbers, read as the formal product $x_1^{a_1} \cdots x_r^{a_r}$, is a spoof factorization
+if every base $x_i$ and every exponent $a_i$ is positive.
 
 ## Depends on
 

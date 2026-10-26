@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_sq_add_one_eq_three_pow_iff
 ---
 
-# Two mul sq add one eq three pow iff
+# Solutions of $2x^2 + 1 = 3^y$
 
-The only non-negative solutions of `2x² + 1 = 3ʸ` are `(x, y) = (0, 0)`, `(1, 1)`, `(2, 2)`,
-`(11, 5)`.
+**Solutions of $2x^2 + 1 = 3^y$.** For natural numbers $x, y$, we have $2x^2 + 1 = 3^y$ if and
+only if $(x, y)$ is $(0, 0)$, $(1, 1)$, $(2, 2)$ or $(11, 5)$.
 
 ## Depends on
 

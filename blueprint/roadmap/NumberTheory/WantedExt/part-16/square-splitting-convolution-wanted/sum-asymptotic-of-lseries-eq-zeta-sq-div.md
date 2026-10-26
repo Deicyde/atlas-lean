@@ -5,14 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_asymptotic_of_LSeries_eq_zeta_sq_div_zeta_two_mul
 ---
 
-# Sum asymptotic of LSeries eq zeta sq div zeta two mul
+# Partial-sum asymptotics for a Riemann zeta quotient times a Dirichlet series
 
-Lemma 1: if `F(s) = ∑_{n ≥ 1} f(n) n^{-s} = ζ(s)² / ζ(2s) · G(s)`, where `G` is a
-Dirichlet series absolutely convergent for `Re s > σ₀` with `σ₀ < 1/2`, then
-`∑_{n ≤ x} f(n) = G(1)/ζ(2) x log x + G(1)/ζ(2) (2γ - 1 + G'(1)/G(1) - 2 ζ'(2)/ζ(2)) x
-+ O(x^{1/2} (log x)³)`. `G` enters as the L-series of `g`; `F` is required to converge
-absolutely for `Re s > 1` (so `LSeries f` is not its junk value), and `G(1) ≠ 0` is added
-so that the printed quotient `G'(1)/G(1)` is meaningful.
+**Partial-sum asymptotics for a Riemann zeta quotient times a Dirichlet series.** Let
+$f, g : \mathbb{N} \to \mathbb{C}$ and let $\sigma_0 < 1/2$ be a real number. Suppose that the
+Dirichlet series $G(s) = \sum_{n \ge 1} g(n) n^{-s}$ converges absolutely for
+$\operatorname{Re} s > \sigma_0$, that $G(1) \ne 0$, and that for every complex $s$ with
+$\operatorname{Re} s > 1$ the Dirichlet series $F(s) = \sum_{n \ge 1} f(n) n^{-s}$ converges
+absolutely and $F(s) = \zeta(s)^2 G(s) / \zeta(2s)$, where $\zeta$ is the Riemann zeta
+function. Then, as the real number $x$ tends to infinity,
+
+$$
+\sum_{1 \le n \le x} f(n) = \frac{G(1)}{\zeta(2)}\, x \log x +
+\frac{G(1)}{\zeta(2)} \left(2\gamma - 1 + \frac{G'(1)}{G(1)} -
+\frac{2\zeta'(2)}{\zeta(2)}\right) x + O\big(x^{1/2} (\log x)^3\big),
+$$
+
+where $\gamma$ is the Euler–Mascheroni constant and $G'$, $\zeta'$ are complex derivatives.
+
+The hypothesis $G(1) \ne 0$ is added so that the quotient $G'(1)/G(1)$ is meaningful.
 
 ## Depends on
 

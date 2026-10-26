@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cubicCoeffVector
 ---
 
-# Cubic Coeff Vector
+# Coefficient vectors from Chan's matrix
 
-The coefficient vectors `X_α = (x_{α,1}, x_{α,2}, …)`: `X_0 = (1, 0, 0, …)` and
-`X_{α+1} = X_α A` for even `α`, `X_{α+1} = X_α B` for odd `α`, where `a_{i,j} = m_{4i-3,i+j-1}`
-and `b_{i,j} = m_{4i-1,i+j-1}` (`m = chanCubicMatrix`). Indices are shifted to start at `0`:
-`cubicCoeffVector α i = x_{α,i+1}`, so `a_{i+1,j+1} = m_{4i+1,i+j+1}` and
-`b_{i+1,j+1} = m_{4i+3,i+j+1}`. The row sum runs over `i < 3^α`, which covers the support of
-`X_α`: row `i + 1` of `A` or `B` vanishes beyond column `3i + 3` (`m` is lower triangular), so by
-induction `x_{α,i+1} = 0` for `i ≥ 3^α`.
+**Coefficient vectors from Chan's matrix.** Let $(m_{i,j})_{i,j \ge 1}$ be Chan's matrix, and
+for $i, j \ge 1$ let $a_{i,j} = m_{4i-3,i+j-1}$ and $b_{i,j} = m_{4i-1,i+j-1}$ be the entries of
+the infinite matrices $A$ and $B$. The coefficient vectors
+$X_\alpha = (x_{\alpha,1}, x_{\alpha,2}, \dots)$ of integers, for $\alpha \ge 0$, are defined by
+$X_0 = (1, 0, 0, \dots)$ and, for $j \ge 1$, $x_{\alpha+1,j} = \sum_{i=1}^{3^\alpha} x_{\alpha,i}
+a_{i,j}$ if $\alpha$ is even and $x_{\alpha+1,j} = \sum_{i=1}^{3^\alpha} x_{\alpha,i} b_{i,j}$ if
+$\alpha$ is odd.
+
+Since Chan's matrix is lower triangular, row $i$ of $A$ or $B$ vanishes beyond column $3i$, so by
+induction $x_{\alpha,i} = 0$ for $i > 3^\alpha$; hence $X_{\alpha+1} = X_\alpha A$ for even
+$\alpha$ and $X_{\alpha+1} = X_\alpha B$ for odd $\alpha$.
+
+The formalization indexes the vectors from $0$: its value at $(\alpha, i)$ is $x_{\alpha,i+1}$.
 
 ## Depends on
 
@@ -21,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chan Cubic Matrix](chan-cubic-matrix.md)
+- [Chan's matrix](chan-cubic-matrix.md)
 
 ## Sources
 

@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.iterate_lucasDerivative_inv_one_sub
 ---
 
-# Theorem 8
+# Iterated Lucas derivatives of $1/(1 - x)$
 
-**Theorem 8.** For `n ≥ 1`, `D_{φ,φ'}ⁿ (1 / (1 - x)) = {n}! / (φⁿ x; q)_{n+1}`.
+**Iterated Lucas derivatives of $1/(1 - x)$.** Let $(s, t)$ be nondegenerate Lucas
+parameters, let $\varphi \ne \varphi'$ be real numbers with $\varphi + \varphi' = s$ and
+$\varphi\varphi' = -t$, write $D_{\varphi,\varphi'}$ for the Lucas derivative and
+$\{n\}_{s,t}!$ for the $s,t$-factorial. For every natural number $n$ and every real number $x$
+with $\prod_{k=0}^{n} (1 - \varphi^{n-k}\varphi'^k x) \ne 0$, the $n$-fold iterate of
+$D_{\varphi,\varphi'}$ applied to the function $y \mapsto 1/(1 - y)$ has value at $x$
 
-With `q = φ' / φ`, `(φⁿ x; q)_{n+1} = ∏_{k ≤ n} (1 - φ^{n-k} φ'^k x)`. Stated for real
-`φ ≠ φ'` with `φ + φ' = s`, `φ φ' = -t` (the paper's `s² + 4t ≠ 0`; the identity is symmetric
-in `φ, φ'`), at every real `x` where the denominator is nonzero (including `x = 0`), and
-extended to `n = 0`.
+$$\frac{\{n\}_{s,t}!}{\prod_{k=0}^{n} (1 - \varphi^{n-k}\varphi'^k x)}.$$
+
+With $q = \varphi'/\varphi$ the denominator is the $q$-Pochhammer symbol
+$(\varphi^n x; q)_{n+1}$ of the paper, which states the identity for $n \ge 1$. Real distinct
+$\varphi, \varphi'$ exist only when $s^2 + 4t > 0$.
 
 ## Depends on
 
 - [Nondegenerate Lucas parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
-- [Lucas Derivative](lucas-derivative.md)
+- [Lucas derivative](lucas-derivative.md)
 - [Factorial of Lucas brackets](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-factorial.md)
 
 ## Sources

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.choose_two_mul_modEq
 ---
 
-# Choose two mul mod Eq
+# Helou–Terjanian congruence for $p = 2$
 
-Helou and Terjanian, `p = 2`: for `0 < m < n`,
-`C(2n, 2m) ≡ C(n, m) (mod 2^{1 + max(ν_2(m), ν_2(n-m)) + ν_2(C(n,m))})`.
+**Helou–Terjanian congruence for $p = 2$.** Let $m$ and $n$ be integers with $0 < m < n$.
+Then $\binom{2n}{2m} \equiv \binom{n}{m} \pmod{2^e}$, where
+$e = 1 + \max(\nu_2(m), \nu_2(n - m)) + \nu_2\big(\binom{n}{m}\big)$ and $\nu_2$ is the $2$-adic
+valuation.
 
 ## Depends on
 

@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_incompleteLeonardoP
 ---
 
-# Proposition 8
+# Partial sums of incomplete Leonardo p-numbers
 
-**Proposition 8**: for `n ≥ (p + 1)(k + 1)`,
-`∑_{i=0}^{r-1} 𝓛_{p,n-p+i}(k) + rp = 𝓛_{p,n+r}(k + 1) - 𝓛_{p,n}(k + 1)`.
+**Partial sums of incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$, $n$, $k$ and
+$r$ with $n \ge (p + 1)(k + 1)$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
+satisfy
+
+$$
+\sum_{i=0}^{r-1} \mathcal{L}_{p,n-p+i}(k) + rp =
+\mathcal{L}_{p,n+r}(k + 1) - \mathcal{L}_{p,n}(k + 1),
+$$
+
+where the sum is empty when $r = 0$.
 
 ## Depends on
 

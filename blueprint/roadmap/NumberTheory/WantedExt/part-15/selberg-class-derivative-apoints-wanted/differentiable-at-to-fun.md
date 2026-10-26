@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.SelbergClassFunction.differentiableAt_toFun
 ---
 
-# Differentiable At to Fun
+# Holomorphy of Selberg class functions away from $s = 1$
 
-A function in the Selberg class is holomorphic away from `s = 1`.
+**Holomorphy of Selberg class functions away from $s = 1$.** For a function $F$ in the
+Selberg class, $F$ is complex differentiable at every $s \in \mathbb{C}$ with $s \ne 1$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

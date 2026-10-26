@@ -13,7 +13,7 @@ the product over the primes $p$ dividing $n$. Then $H(n) \le 2 + \frac{9}{4 p_1^
 
 ## Depends on
 
-- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
+- [Product of $p/(p-1)$ over the prime factors](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

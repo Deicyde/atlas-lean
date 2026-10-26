@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.palindromeAPCount
 ---
 
-# Palindrome APCount
+# Palindromes in an arithmetic progression
 
-`A_b(m, q, r)`: the number of `b`-adic palindromes `n` with `1 ≤ n ≤ m` and
-`n ≡ r (mod q)`.
+**Palindromes in an arithmetic progression.** For natural numbers $b$, $m$, $q$ and $r$,
+$A_b(m, q, r)$ is the number of base-$b$ palindromes $n$ with $1 \le n \le m$ and
+$n \equiv r \pmod q$, where a natural number is a base-$b$ palindrome when its string of base-$b$
+digits reads the same in both directions.
 
 ## Depends on
 

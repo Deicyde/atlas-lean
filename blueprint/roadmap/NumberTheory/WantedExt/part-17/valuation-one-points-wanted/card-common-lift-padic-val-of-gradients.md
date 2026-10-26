@@ -5,13 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_common_lift_padicVal_of_gradients_independent
 ---
 
-# Card common lift padic Val of gradients independent
+# Common lifts of two points with independent gradients
 
-For a prime `p`, `f ∈ ℤ[x, y]` and points `(r₁, s₁)`, `(r₂, s₂)` of `C_f(𝔽_p)` whose
-gradients `(f_x, f_y)` are linearly independent modulo `p` (the first two columns of the matrix
-`A` with rows `(f_x, f_y, f/p)` at the two points), among the common lifts `(k, l) ∈ 𝔽_p²`:
-`(p - 1)²` have `ν_p = 1` at both points, `p - 1` have `ν_p > 1` at the first and `ν_p = 1` at the
-second, and exactly one has `ν_p > 1` at both.
+**Common lifts of two points with independent gradients.** Let $p$ be a prime, let
+$f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $(r_1, s_1)$ and
+$(r_2, s_2)$ be pairs of integers in $\{0, \dots, p - 1\}$ with $p \mid f(r_i, s_i)$ for
+$i = 1, 2$ and
+
+$$
+p \nmid f_x(r_1, s_1) f_y(r_2, s_2) - f_y(r_1, s_1) f_x(r_2, s_2).
+$$
+
+Write $F_i(k, l) = f(r_i + kp, s_i + lp)$. Among the pairs $(k, l)$ with $0 \le k, l < p$,
+exactly $(p - 1)^2$ have $p \mid F_i(k, l)$ and $p^2 \nmid F_i(k, l)$ for both $i$, exactly
+$p - 1$ have $p^2 \mid F_1(k, l)$, $p \mid F_2(k, l)$ and $p^2 \nmid F_2(k, l)$, and exactly
+one has $p^2 \mid F_1(k, l)$ and $p^2 \mid F_2(k, l)$.
 
 ## Depends on
 

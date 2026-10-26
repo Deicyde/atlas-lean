@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.szQMZV_nil
 ---
 
-# Sz QMZV nil
+# The empty Schlesinger–Zudilin qMZV
 
-`ζ_q^SZ(∅) = 1`.
+**The empty Schlesinger–Zudilin qMZV.** The Schlesinger–Zudilin qMZV of the empty index is
+$1$: $\zeta_q^{SZ}(\emptyset) = 1$.
 
 ## Depends on
 
-- [Sz QMZV](sz-qmzv.md)
+- [Schlesinger–Zudilin qMZVs](sz-qmzv.md)
 
 ## Proof depends on
 
-- [Sz QMZVPartial](sz-qmzvpartial.md)
+- [Partial sums of Schlesinger–Zudilin qMZVs](sz-qmzvpartial.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.logOneAddSeries
 ---
 
-# Log One Add Series
+# The logarithm series $\ln(1 + T)$
 
-The series `ln(1 + T) = ∑_{n ≥ 1} (-1)^{n+1} T^n / n`.
+**The logarithm series $\ln(1 + T)$.** The formal power series $\ln(1 + T)$ over
+$\mathbb{Q}$ is $\sum_{n \ge 1} (-1)^{n+1} T^n / n$; its constant term is $0$.
 
 ## Depends on
 

@@ -23,7 +23,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [One round of the DFA reachability search](reach-step.md)
-- [Lfp Fin](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
+- [Least fixed point of a finset map by finite iteration](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_orderOf_eq_two_eq_two_pow_sub_one
 ---
 
-# Card order Of eq two eq two pow sub one
+# Elements of order two modulo $n$
 
-The number `E(2, n)` of elements of order `2` in `(ℤ/nℤ)ˣ` is a power of `2` minus `1`.
+**Elements of order two modulo $n$.** For every $n \ge 1$, the number of elements of
+multiplicative order $2$ in $(\mathbb{Z}/n\mathbb{Z})^\times$ is $2^k - 1$ for some natural
+number $k$.
 
 ## Depends on
 

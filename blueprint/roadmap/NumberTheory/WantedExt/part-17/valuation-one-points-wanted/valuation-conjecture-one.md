@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ValuationConjectureOne
 ---
 
-# Valuation Conjecture One
+# Rajkumar–Shubham Conjecture 1
 
-The paper's Conjecture 1 for `f`: for every `k ≥ 2`, `m_k(f, p)/p² → 1` as `p → ∞` through
-the primes.
+**Rajkumar–Shubham Conjecture 1.** For $f \in \mathbb{Z}[x, y]$, the proposition that for
+every $k \ge 2$, $m_k(f, p)/p^2 \to 1$ as $p \to \infty$ through the primes, where $m_k(f, p)$ is
+the rank-two tuple count.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Valuation Rank Two Tuple Count](valuation-rank-two-tuple-count.md)
+- [Rank-two tuple count $m_k(f, p)$](valuation-rank-two-tuple-count.md)
 
 ## Sources
 

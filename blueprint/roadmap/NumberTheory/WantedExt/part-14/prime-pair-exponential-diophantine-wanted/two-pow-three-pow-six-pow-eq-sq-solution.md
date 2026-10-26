@@ -5,10 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_three_pow_six_pow_eq_sq_solutions
 ---
 
-# Two pow three pow six pow eq sq solutions
+# The exponential equations for the prime pair (2, 3)
 
-The six equations `(-1)^α 2ˣ + (-1)^β (2ᵏ · 3)ʸ = z²` with `α, β, k ∈ {0, 1}`, `αβ = 0`, have
-exactly the listed non-negative solutions `(x, y, z)`.
+**The exponential equations for the prime pair (2, 3).** The six equations
+$(-1)^\alpha 2^x + (-1)^\beta (2^k \cdot 3)^y = z^2$ with $\alpha, \beta, k \in \{0, 1\}$ and
+$\alpha\beta = 0$ have exactly the following solutions in natural numbers $x, y, z$, where the
+equations are read in the integers. The equation $2^x + 3^y = z^2$ holds if and only if
+$(x, y, z)$ is $(0, 1, 2)$, $(3, 0, 3)$ or $(4, 2, 5)$. The equation $2^x - 3^y = z^2$ holds if
+and only if $(x, y, z)$ is $(0, 0, 0)$, $(1, 0, 1)$ or $(2, 1, 1)$. The equation
+$-2^x + 3^y = z^2$ holds if and only if $(x, y, z)$ is $(0, 0, 0)$, $(1, 1, 1)$, $(1, 3, 5)$,
+$(3, 2, 1)$ or $(5, 4, 7)$. The equation $2^x + 6^y = z^2$ holds if and only if $(x, y, z)$ is
+$(3, 0, 3)$ or $(6, 2, 10)$. The equation $2^x - 6^y = z^2$ holds if and only if $(x, y, z)$ is
+$(0, 0, 0)$ or $(1, 0, 1)$. The equation $-2^x + 6^y = z^2$ holds if and only if $(x, y, z)$ is
+$(0, 0, 0)$, $(1, 1, 2)$, $(5, 2, 2)$, $(9, 4, 28)$ or $(5, 5, 88)$.
 
 ## Depends on
 

@@ -6,20 +6,28 @@ proof: formalized
 lean: MetaMathlibExt.pellShiftedNorm_zero
 ---
 
-# Pell Shifted Norm zero
+# Value at zero of the shifted Pell norm function
 
-`f_{i,j}(0) = |i + a| + |b|`.
+**Value at zero of the shifted Pell norm function.** Let $D$, $\alpha$, $\beta$, $a$, $b$,
+$i$ and $j$ be integers. Put $\varepsilon = \alpha + \beta \sqrt{D}$ and
+$\bar\varepsilon = \alpha - \beta \sqrt{D}$, let
+$u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and
+$v(x) = (\varepsilon^x - \bar\varepsilon^x) / (2 \sqrt{D})$ for real $x$, and let
+$f_{i,j}(x) = |i u(x) + a| + |j v(x) + b|$. Then $f_{i,j}(0) = |i + a| + |b|$.
+
+Here $\sqrt{s} = 0$ for $s < 0$, a quotient by $0$ is $0$, and $c^0 = 1$ for every real $c$; no
+condition is placed on the integers.
 
 ## Depends on
 
-- [Pell Shifted Norm](pell-shifted-norm.md)
+- [The $L^1$ norm along a shifted Pell curve](pell-shifted-norm.md)
 
 ## Proof depends on
 
-- [Pell U](pell-u.md)
-- [Pell U zero](pell-u-zero.md)
-- [Pell V](pell-v.md)
-- [Pell V zero](pell-v-zero.md)
+- [The Pell interpolation function u](pell-u.md)
+- [Value of the Pell interpolation function u at 0](pell-u-zero.md)
+- [The Pell interpolation function v](pell-v.md)
+- [Value of the Pell interpolation function v at 0](pell-v-zero.md)
 
 ## Sources
 

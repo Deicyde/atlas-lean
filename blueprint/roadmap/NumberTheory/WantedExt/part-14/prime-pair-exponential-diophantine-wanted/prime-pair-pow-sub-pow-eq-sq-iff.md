@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.prime_pair_pow_sub_pow_eq_sq_iff
 ---
 
-# Prime pair pow sub pow eq sq iff
+# Squares of the form $(2p - 1)^x - p^y$ for prime pairs
 
-If `p` and `2p - 1` are primes with `p ≡ 3 (mod 4)`, then the non-negative solutions of
-`(2p - 1)ˣ - pʸ = z²` are `(x, y, z) = (0, 0, 0)`, `(p, x, y, z) = (3, 2, 2, 4)`, and
-`(p, x, y, z) = (2t² + 1, 1, 0, 2t)` for `t ∈ ℕ` (then `2t² + 1` and `4t² + 1` are the given
-primes and `2t² + 1 ≡ 3 (mod 4)`).
+**Squares of the form $(2p - 1)^x - p^y$ for prime pairs.** Let $p$ be a prime with
+$p \equiv 3 \pmod 4$ such that $2p - 1$ is prime. Then non-negative integers $x$, $y$ and $z$
+satisfy $(2p - 1)^x - p^y = z^2$ if and only if $(x, y, z) = (0, 0, 0)$, or $p = 3$ and
+$(x, y, z) = (2, 2, 4)$, or $p = 2t^2 + 1$ for some non-negative integer $t$ and
+$(x, y, z) = (1, 0, 2t)$.
+
+In the last family the two primes are $p = 2t^2 + 1$ and $2p - 1 = 4t^2 + 1$.
 
 ## Depends on
 

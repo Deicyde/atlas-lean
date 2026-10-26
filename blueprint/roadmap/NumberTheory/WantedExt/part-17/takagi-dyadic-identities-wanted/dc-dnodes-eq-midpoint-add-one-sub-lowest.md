@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.dcDNodes_eq_midpoint_add_one_sub_lowestBit
 ---
 
-# Dc DNodes eq midpoint add one sub lowest Bit
+# Midpoint identity for the divide-and-conquer D-node count
 
-Corollary 10: for `n = 2^k + r` with `0 < r < 2^k` and `ρ₁` the position of the lowest
-nonzero bit of `r`, `δ(n) = (δ(n-1) + δ(n+1))/2 + 1 - ρ₁`.
+**Midpoint identity for the divide-and-conquer D-node count.** Let $\delta$ be the
+divide-and-conquer D-node count. Let $k$ and $r$ be natural numbers with $0 < r < 2^k$, put
+$n = 2^k + r$, and let $\nu_2(r)$ be the position of the lowest nonzero binary digit of $r$,
+counted from $0$ (the exponent of the largest power of $2$ dividing $r$). Then
+$\delta(n) = \frac{\delta(n-1) + \delta(n+1)}{2} + 1 - \nu_2(r)$.
 
 ## Depends on
 
-- [Dc DNodes](dc-dnodes.md)
+- [Number of D-nodes of the divide-and-conquer tree](dc-dnodes.md)
 
 ## Sources
 

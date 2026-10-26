@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_mul_rFibonacciPolynomial
 ---
 
-# Sum neg one pow mul r Fibonacci Polynomial
+# Alternating sum of $r$-Fibonacci polynomials
 
-Corollary 3: for `r ≥ 1` and `1 + x + (-1)^r y ≠ 0`,
-`∑_{j=1}^{n} (-1)^{j-1} U_j = (1 - (-1)^n U_{n+1}
-+ (-1)^r y ∑_{j=1}^{r} (-1)^{n-r+j-1} U_{n-r+j}) / (1 + x + (-1)^r y)`
-(terms with `n - r + j ≤ 0` vanish).
+**Alternating sum of $r$-Fibonacci polynomials.** Let $K$ be a field, let $r \ge 1$ be a
+natural number, let $x, y \in K$ with $1 + x + (-1)^r y \ne 0$, and write $U_j$ for the
+$r$-Fibonacci polynomial $U^{(r)}_j(x, y)$. Then for every natural number $n$,
+
+$$
+\sum_{j=1}^{n} (-1)^{j-1} U_j =
+\frac{1 - (-1)^n U_{n+1} + (-1)^r y \sum_{j=1}^{r} (-1)^{n-r+j-1} U_{n-r+j}}{1 + x + (-1)^r y},
+$$
+
+where the terms of the inner sum with $n - r + j \le 0$ are zero.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

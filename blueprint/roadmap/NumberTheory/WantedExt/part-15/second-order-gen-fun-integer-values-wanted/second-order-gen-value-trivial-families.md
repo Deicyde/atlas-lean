@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.secondOrderGenValue_trivial_families_integer
 ---
 
-# Second Order Gen Value trivial families integer
+# Two families of integer values
 
-(i) `A(A^{(0,1)}_n / A^{(0,1)}_{n+1})` is an integer for all `n ≠ -1`; (ii)
-`A(A^{(-b,a)}_n / A^{(-b,a)}_{n+1})` is an integer whenever `A^{(-b,a)}_{n+1} ≠ 0`.
+**Two families of integer values.** Let $a, b, p$ be integers with $p \ne 0$, let
+$A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$ for rational $x$, and for integers $r, s$ let
+$A^{(r,s)}$ be the two-sided integer sequence with $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and
+$A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for all integers $n$. Then
+$A(A^{(0,1)}_n / A^{(0,1)}_{n+1})$ is an integer for every integer $n \ne -1$, and
+$A(A^{(-b,a)}_n / A^{(-b,a)}_{n+1})$ is an integer for every integer $n$ with
+$A^{(-b,a)}_{n+1} \ne 0$.
 
 ## Depends on
 
-- [Second Order Bi Seq](second-order-bi-seq.md)
-- [Second Order Gen Value](second-order-gen-value.md)
+- [Two-sided second-order sequence](second-order-bi-seq.md)
+- [Generating function of the recurrence $A_{n+1} = pA_n + A_{n-1}$](second-order-gen-value.md)
 
 ## Sources
 

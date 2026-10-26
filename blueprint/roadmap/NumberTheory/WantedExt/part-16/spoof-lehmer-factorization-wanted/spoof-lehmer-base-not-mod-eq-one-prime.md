@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.spoofLehmer_base_not_modEq_one_prime
 ---
 
-# Spoof Lehmer base not mod Eq one prime
+# Primes dividing the evaluation of a spoof Lehmer factorization
 
-If `F = x_1 ⋯ x_r` is a nontrivial spoof Lehmer factorization and `p` is a prime dividing
-`ẽ(F)`, then no base is `≡ 1 (mod p)`; in particular, if `F` is even then all its bases are even.
+**Primes dividing the evaluation of a spoof Lehmer factorization.** Let $x_1, \dots, x_r$ be
+natural numbers and let $F = x_1 \cdots x_r$ be the spoof factorization with these bases, all with
+exponent $1$. Suppose $F$ is a nontrivial spoof $k$-Lehmer factorization for some integer $k$. If
+$p$ is a prime dividing the spoof evaluation $\tilde e(F)$, then $x_i \not\equiv 1 \pmod p$ for
+every $i$. Moreover, if $F$ is even (not every base is odd), then every base $x_i$ is even.
 
 ## Depends on
 
-- [Is Odd Spoof](is-odd-spoof.md)
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
-- [Spoof Eval](spoof-eval.md)
-- [Spoof Of Bases](spoof-of-bases.md)
+- [Odd spoof factorizations](is-odd-spoof.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
+- [Spoof evaluation](spoof-eval.md)
+- [Factorization with all exponents one](spoof-of-bases.md)
 
 ## Sources
 

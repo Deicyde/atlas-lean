@@ -5,9 +5,9 @@ navigation: module
 
 # Self Dual
 
-- [Boolean Vector Complement](boolean-vector-complement.md)
-- [Boolean Function Dual](boolean-function-dual.md)
+- [Complement of a Boolean vector](boolean-vector-complement.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 - [Is Self Dual Monotone](is-self-dual-monotone.md)
-- [Boolean Vector Complement complement](boolean-vector-complement-complement.md)
-- [Boolean Function Dual dual](boolean-function-dual-dual.md)
-- [Self Dual Monotone proj](self-dual-monotone-proj.md)
+- [Complementation of Boolean vectors is an involution](boolean-vector-complement-complement.md)
+- [Duality of Boolean functions is an involution](boolean-function-dual-dual.md)
+- [Coordinate projections are self-dual monotone](self-dual-monotone-proj.md)

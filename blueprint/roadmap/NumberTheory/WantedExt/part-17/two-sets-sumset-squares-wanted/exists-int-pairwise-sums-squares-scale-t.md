@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_int_pairwiseSumsSquares_scale_translate
 ---
 
-# Lemma 1
+# Scaling rational families with square pairwise sums to integers
 
-**Lemma 1**: rational families with all pairwise sums squares
-can be rescaled and translated to integer families, by
-`aᵢ' = k²aᵢ - t` and `bⱼ' = k²bⱼ + t`, whenever the displayed
-values are integers.
+**Scaling rational families with square pairwise sums to integers.** Let $a_1, \dots, a_m$
+and $b_1, \dots, b_n$ be rational numbers such that every sum $a_i + b_j$ is the square of a
+rational number, and let $t$ be an integer and $k$ a rational number such that $k^2 a_i - t$ is an
+integer for every $i$ and $k^2 b_j + t$ is an integer for every $j$. Then the integers
+$a_i' = k^2 a_i - t$ and $b_j' = k^2 b_j + t$ are such that every sum $a_i' + b_j'$ is the square
+of an integer.
 
 ## Depends on
 
-- [Pairwise Sums Squares](pairwise-sums-squares.md)
+- [Families whose pairwise sums are squares](pairwise-sums-squares.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zeckBlockPrefix
 ---
 
-# Zeck Block Prefix
+# Block prefixes of a natural number
 
-`r[i]`: the integer whose expansion is formed by the first `i` blocks of `r` (from the unit
-digit), so `r[0] = 0` and `r[ρ(r)] = r`.
+**Block prefixes of a natural number.** The blocks of $r \in \mathbb{N}$ are the maximal runs
+of Zeckendorf indices of $r$ in which consecutive indices differ by exactly $2$, listed from the
+unit digit. For $i \in \mathbb{N}$, the block prefix $r[i]$ is the sum of the Fibonacci numbers
+$F_j$ over the indices $j$ in the first $i$ blocks of $r$, or in all blocks when $i$ exceeds the
+number $\rho(r)$ of blocks. Thus $r[0] = 0$ and $r[i] = r$ for $i \ge \rho(r)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zeck Blocks](zeck-blocks.md)
+- [Blocks of a Zeckendorf representation](zeck-blocks.md)
 
 ## Sources
 

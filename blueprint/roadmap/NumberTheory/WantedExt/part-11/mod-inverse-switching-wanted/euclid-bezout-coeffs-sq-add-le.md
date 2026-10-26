@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_sq_add_le
 ---
 
-# Corollary 2
+# Rankin's minimality of the Euclidean Bézout pair
 
-**Corollary 2** (Rankin): the pair `(s₂, s₁)` of Bézout
-coefficients provided by the Euclidean algorithm for `(m, n)`
-is, as a point in the plane, nearest to the origin among all
-Bézout pairs (stated through squared distances).
+**Rankin's minimality of the Euclidean Bézout pair.** Let $m > n > 1$ be integers, write
+$g = \gcd(m, n)$, and let $(r_i)$, $(s_i)$ and $N$ be Euclidean switching data with
+$r_0 = m/g$ and $r_1 = n/g$. Then for all integers $x$ and $y$ with $xm + yn = g$, we have
+$s_2^2 + s_1^2 \le x^2 + y^2$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
 
 ## Sources
 

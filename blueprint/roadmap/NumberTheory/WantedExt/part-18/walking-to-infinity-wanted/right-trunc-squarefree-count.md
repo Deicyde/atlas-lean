@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.rightTruncSquarefreeCount
 ---
 
-# Right Trunc Squarefree Count
+# Counting right-truncatable square-free numbers
 
-`L_{b,k}`: the number of right-truncatable square-free numbers with exactly `k` digits in
-base `b`, i.e. the `x` with `b^{k-1} ≤ x < b^k` such that `⌊x / b^ℓ⌋` is square-free for every
-`ℓ ∈ {0, …, k-1}`.
+**Counting right-truncatable square-free numbers.** For natural numbers $b$ and $k$,
+$L_{b,k}$ is the number of right-truncatable square-free numbers with exactly $k$ digits in
+base $b$: the number of natural numbers $x$ with $b^{k-1} \le x < b^k$ such that
+$\lfloor x / b^{\ell} \rfloor$ is square-free for every $\ell \in \{0, \dots, k-1\}$. When
+$k = 0$ the range is empty, so $L_{b,0} = 0$.
 
 ## Depends on
 

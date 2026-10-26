@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsOddSpoof
 ---
 
-# Is Odd Spoof
+# Odd spoof factorizations
 
-A spoof factorization is odd if every base is odd (and even otherwise).
+**Odd spoof factorizations.** A finite multiset $F$ of pairs $(x, a)$ of natural numbers, read
+as a spoof factorization with bases $x$ and exponents $a$, is odd if every base $x$ occurring in
+$F$ is odd.
+
+A spoof factorization that is not odd is called even.
 
 ## Depends on
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_entry30
 ---
 
-# Ramanujan Theta entry30
+# Ramanujan's Entry 30 (i)–(iii) for the general theta function
 
-Ramanujan's Entry 30 (i)-(iii) for the general theta function `f(a, b)`, quoted in the record
-of Lemma 1: for complex `a, b` with `‖a b‖ < 1`, `f(a, ab²) f(b, a²b) = f(a, b) ψ(ab)` (8),
-`f(a, b) + f(-a, -b) = 2 f(a³b, ab³)` (9) and, for `a ≠ 0`,
-`f(a, b) - f(-a, -b) = 2a f(b/a, a⁵b³)` (10), where `f(a, b) = ramanujanThetaRaw a b` and
-`ψ(q) = f(q, q³)`.
+**Ramanujan's Entry 30 (i)–(iii) for the general theta function.** Let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function and $\psi(q) = f(q, q^3)$. For all complex numbers $a$ and $b$ with $|ab| < 1$,
+$f(a, ab^2) f(b, a^2 b) = f(a, b) \psi(ab)$ and $f(a, b) + f(-a, -b) = 2 f(a^3 b, a b^3)$, and if
+moreover $a \ne 0$, then $f(a, b) - f(-a, -b) = 2a f(b/a, a^5 b^3)$.
 
 ## Depends on
 

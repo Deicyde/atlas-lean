@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_free_of_prime_set_le_exp_neg_sum_inv
 ---
 
-# Card free of prime set le exp neg sum inv
+# Pollack–Pomerance sieve bound
 
-The Pollack–Pomerance sieve bound quoted by the paper: uniformly in the set of primes `P`
-and in `x > 1`, the proportion of positive integers `n ≤ x` with no prime factor in `P` is
-`O(exp(-A(x)))`, where `A(x) = ∑_{p ≤ x, p ∈ P} 1/p`. Stated with an absolute constant `C`
-as `#{n ≤ x : n free of P} ≤ C · x · exp(-A(x))`.
+**Pollack–Pomerance sieve bound.** There is an absolute constant $C > 0$ such that for every
+set $P$ of primes and every real $x > 1$, the number of integers $n$ with $1 \le n \le x$ that
+are divisible by no prime in $P$ is at most $C x \exp(-A_P(x))$, where
+$A_P(x) = \sum_{p \in P,\ p \le x} 1/p$.
 
 ## Depends on
 

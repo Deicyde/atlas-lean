@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.qPochhammer_three_dissection_cube
 ---
 
-# Q Pochhammer three dissection cube
+# The 3-dissection of $f_1^3$ for complex $q$
 
-For every complex `q` of norm less than one, this is the cubic 3-dissection:
-`f₁³ = f₆ f₉⁶/(f₃ f₁₈³) + 4q³ f₃² f₁₈⁶/(f₆² f₉³) - 3q f₉³`. Every `f_k` is
-expanded as `qPochhammerInfRaw (q ^ k) (q ^ k)`; this is the only notational deviation.
+**The 3-dissection of $f_1^3$ for complex $q$.** Let $q$ be a complex number with $|q| < 1$, and
+for $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$ be the raw infinite
+q-Pochhammer product with $a = q^k$ and base $q^k$. Then
+
+$$
+f_1^3 = \frac{f_6 f_9^6}{f_3 f_{18}^3} + 4 q^3 \frac{f_3^2 f_{18}^6}{f_6^2 f_9^3} - 3 q f_9^3.
+$$
 
 ## Depends on
 

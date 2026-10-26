@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.hurwitzZeta_three_quarters_two_mul_add_one
 ---
 
-# Hurwitz Zeta three quarters two mul add one
+# Hurwitz zeta at $3/4$ and odd arguments
 
-Hurwitz zeta at `3/4` and odd arguments: for `k ≥ 1`,
-`ζ(2k+1, 3/4) = -2^{2k-1} π^{2k+1} |E_{2k}| / (2k)! + 2^{2k} (2^{2k+1} - 1) ζ(2k+1)`,
-where `E_{2k}` is the even Euler number.
+**Hurwitz zeta at $3/4$ and odd arguments.** For every integer $k \ge 1$,
 
-`E_{2k}` is `chapter5EulerEven k`, defined by the binomial recurrence equivalent to the source's
-generating function `1 / cosh t = ∑ E_n tⁿ / n!` (the identity `cosh t · sech t = 1`). The
-source writes `k ∈ ℕ`; `k = 0` is excluded since `s = 1` is the pole of both zeta functions.
+$$
+\zeta(2k+1, \tfrac34) = -\frac{2^{2k-1} \pi^{2k+1} |E_{2k}|}{(2k)!} +
+2^{2k} (2^{2k+1} - 1) \zeta(2k+1),
+$$
+
+where $\zeta(s, a)$ is the Hurwitz zeta function (for $\operatorname{Re} s > 1$,
+$\zeta(s, a) = \sum_{n \ge 0} (n + a)^{-s}$), $\zeta(s)$ is the Riemann zeta function and $E_{2k}$
+is the even-index Euler number.
+
+The even-index Euler numbers are defined by a binomial recurrence equivalent to the generating
+function $1 / \cosh t = \sum_n E_n t^n / n!$. The source writes $k \in \mathbb{N}$; $k = 0$ is
+excluded since $s = 1$ is the pole of both zeta functions.
 
 ## Depends on
 

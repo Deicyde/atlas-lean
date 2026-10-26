@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_strideAlternatingSum_riemannZeta
 ---
 
-# Tendsto stride Alternating Sum riemann Zeta
+# Alternating stride sum series for $\zeta(t + 1)$
 
-Series representation of `ζ(t+1)`: for `q, t ≥ 1`,
-`ζ(t+1) = ∑_{n ≥ 1} (2n+q)/(n(n+q)) S_{q,t}(n)`. The series is only conditionally
-convergent (`S_{q,t}(n)` does not tend to `0`), so it is stated as the limit of its
-partial sums. The second equality of (9) and the general identity (8) use the quantity
-`A^{(t)}`, which the record does not define, and are not formalized.
+**Alternating stride sum series for $\zeta(t + 1)$.** Let $q \ge 1$ and $t \ge 1$ be integers
+and let $S_{q,t}$ denote the alternating stride sum. Then the partial sums
+
+$$
+\sum_{n=1}^{N} \frac{2n + q}{n(n + q)} \, S_{q,t}(n)
+$$
+
+converge to $\zeta(t + 1)$ as $N \to \infty$, where $\zeta$ is the Riemann zeta function.
+
+The series converges only conditionally, since $S_{q,t}(n)$ does not tend to $0$, which is why
+it is stated through its partial sums. The second expression in equation (9) and the general
+identity (8) use a quantity $A^{(t)}$ that the record does not define and are not stated here.
 
 ## Depends on
 
-- [Stride Alternating Sum](stride-alternating-sum.md)
+- [Alternating stride sum](stride-alternating-sum.md)
 
 ## Sources
 

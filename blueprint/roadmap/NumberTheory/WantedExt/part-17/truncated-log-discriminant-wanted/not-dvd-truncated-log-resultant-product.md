@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_dvd_truncatedLogResultantProduct_of_even_power
 ---
 
-# Not dvd truncated Log Resultant Product of even power
+# An odd prime $p$ does not divide $\mathcal{P}_{p^{2e}}$
 
-If `n = p^{2e}` for an odd prime `p` and `e ≥ 1`, then `𝒫_n` is coprime to `p`.
+**An odd prime $p$ does not divide $\mathcal{P}_{p^{2e}}$.** Let $p$ be an odd prime, let
+$e \ge 1$, and let $\mathcal{P}_n$ be the truncated logarithmic resultant product. Then $p$ does
+not divide $\mathcal{P}_{p^{2e}}$.
 
 ## Depends on
 
-- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
+- [Resultant product for truncated logarithmic polynomials](truncated-log-resultant-product.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_pow_mul_two_mul_sub_one
 ---
 
-# Tsum inv pow mul two mul sub one
+# Closed form of $\sum_{n \ge 1} 1/(n^t(2n-1))$
 
-For `t ≥ 1`, `∑_{n≥1} 1/(n^t (2n-1)) = 2^t log 2 - ∑_{j=1}^{t-1} 2^{t-1-j} ζ(j+1)`.
+**Closed form of $\sum_{n \ge 1} 1/(n^t(2n-1))$.** For every integer $t \ge 1$,
+
+$$\sum_{n \ge 1} \frac{1}{n^t (2n-1)} = 2^t \log 2 - \sum_{j=1}^{t-1} 2^{t-1-j} \zeta(j+1),$$
+
+where $\zeta$ is the Riemann zeta function.
 
 ## Depends on
 

@@ -6,20 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.squareSplitDivisors_one
 ---
 
-# Square Split Divisors one
+# The square-splitting divisor set of $1$
 
-`A(1) = {1}`.
+**The square-splitting divisor set of $1$.** Let
+$A(n) = \{u_1 v_1^2 : u_1 \mid u(n),\ v_1 \mid v(n)\}$ be the square-splitting divisor set of
+$n \ge 1$, where $u(n)$ is the squarefree part of $n$ and $v(n)$ is the positive integer with
+$n = u(n) v(n)^2$. Then $A(1) = \{1\}$.
 
 ## Depends on
 
-- [Square Split Divisors](square-split-divisors.md)
+- [Square-splitting divisors](square-split-divisors.md)
 
 ## Proof depends on
 
-- [Square Split U](square-split-u.md)
-- [Square Split U one](square-split-u-one.md)
-- [Square Split V](square-split-v.md)
-- [Square Split V one](square-split-v-one.md)
+- [Squarefree part](square-split-u.md)
+- [Squarefree part of one](square-split-u-one.md)
+- [The square-root part of a natural number](square-split-v.md)
+- [The square-root part of $1$ is $1$](square-split-v-one.md)
 
 ## Sources
 

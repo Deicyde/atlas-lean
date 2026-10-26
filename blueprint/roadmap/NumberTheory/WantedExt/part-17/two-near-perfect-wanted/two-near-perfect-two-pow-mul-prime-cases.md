@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.two_near_perfect_two_pow_mul_prime_cases
 ---
 
-# Two near perfect two pow mul prime cases
+# $2$-near perfect numbers of the form $2^k p$
 
-Theorem 1: if `n = 2^k p` (`p` prime, `k > 0`) is `2`-near perfect with omitted divisors
-`d₁, d₂`, then up to swapping `d₁, d₂` one of: (1) `p = 2^k - 1`, `d₁ = 1`, `d₂ = p`;
-(2) `p = 2^(k+1) - 2^a - 2^b - 1`, `d₁ = 2^a`, `d₂ = 2^b`; (3)
-`p = (2^(k+1) - 2^a - 1) / (1 + 2^b)`, `d₁ = 2^a`, `d₂ = 2^b p`; (4)
-`p = (2^(k+1) - 1) / (1 + 2^a + 2^b)`, `d₁ = 2^a p`, `d₂ = 2^b p`, for some `a, b ∈ ℕ`.
-Quotients are written as products. The paper states only this necessary direction; the four
-situations are not sufficient as printed (`k = 3`, `a = b = 1` gives the prime `p = 11` in
-situation 2, but `d₁ = d₂ = 2`).
+**$2$-near perfect numbers of the form $2^k p$.** Let $k \ge 1$, let $p$ be a prime and let
+$n = 2^k p$. Suppose $d_1 \ne d_2$ are divisors of $n$ with $\sigma(n) = 2n + d_1 + d_2$, where
+$\sigma$ is the sum-of-divisors function (that is, $n$ is $2$-near perfect with omitted divisors
+$d_1, d_2$). Then, after possibly swapping $d_1$ and $d_2$, one of the following holds, where
+all equations are between integers: (1) $p = 2^k - 1$, $d_1 = 1$ and $d_2 = p$; (2) for some
+natural numbers $a, b$, $p = 2^{k+1} - 2^a - 2^b - 1$, $d_1 = 2^a$ and $d_2 = 2^b$; (3) for some
+natural numbers $a, b$, $p(1 + 2^b) = 2^{k+1} - 2^a - 1$, $d_1 = 2^a$ and $d_2 = 2^b p$; (4) for
+some natural numbers $a, b$, $p(1 + 2^a + 2^b) = 2^{k+1} - 1$, $d_1 = 2^a p$ and $d_2 = 2^b p$.
+
+The paper states only this necessary direction; the four situations are not sufficient as
+printed ($k = 3$, $a = b = 1$ gives the prime $p = 11$ in situation 2, but $d_1 = d_2 = 2$).
 
 ## Depends on
 

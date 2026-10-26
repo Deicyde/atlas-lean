@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.card_unitaryDivisors
 ---
 
-# Card unitary Divisors
+# Number of unitary divisors
 
-A positive integer with `m` distinct prime factors has `2^m` unitary
-divisors.
+**Number of unitary divisors.** A positive integer $n$ with $m$ distinct prime factors has
+exactly $2^m$ unitary divisors.
 
 ## Depends on
 

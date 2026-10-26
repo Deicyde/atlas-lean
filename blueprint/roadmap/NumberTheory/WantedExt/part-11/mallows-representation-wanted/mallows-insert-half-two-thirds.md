@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mallowsInsert_half_twoThirds
 ---
 
-# Mallows Insert half two Thirds
+# Mallows insertion between $1/2$ and $2/3$
 
-Characteristic value (odd numerator branch): between `1/2` and `2/3` Mallows inserts
-`4/7` and `3/5`.
+**Mallows insertion between $1/2$ and $2/3$.** Mallows' insertion rule inserts the pair
+$\langle 4/7, 3/5 \rangle$ between the fractions $1/2$ and $2/3$ (here the left fraction $1/2$
+has odd numerator).
 
 ## Depends on
 
-- [Mallows Insert](mallows-insert.md)
+- [Mallows' insertion rule](mallows-insert.md)
 
 ## Sources
 

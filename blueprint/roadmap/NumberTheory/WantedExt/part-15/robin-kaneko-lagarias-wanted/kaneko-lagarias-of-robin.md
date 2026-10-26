@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.kaneko_lagarias_of_robin
 ---
 
-# Kaneko lagarias of robin
+# Robin's inequality implies the Kaneko–Lagarias inequality
 
-If Robin's inequality `σ(n) < e^γ n log log n` holds for `n`, then so does the
-Kaneko–Lagarias inequality `σ(n) < exp(H_n) log H_n`.
+**Robin's inequality implies the Kaneko–Lagarias inequality.** Let $\sigma(n)$ be the sum of
+the divisors of $n$, $\gamma$ the Euler–Mascheroni constant, $\log$ the natural logarithm and
+$H_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ the $n$-th harmonic number. For every natural
+number $n$, if Robin's inequality $\sigma(n) < e^{\gamma} n \log \log n$ holds, then so does the
+Kaneko–Lagarias inequality $\sigma(n) < e^{H_n} \log H_n$.
 
 ## Depends on
 

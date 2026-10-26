@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.quadraticPackingPolynomial_staircaseFirstHeight
 ---
 
-# Quadratic Packing Polynomial staircase First Height
+# Height of the first step of the k-th staircase
 
-Lemma 15: if `P` is a QPP on `I(n/m)` with step difference `k > 0`, then the first step of
-the staircase `J_k` has height `ȳ_k = n/l - 1`, `l = gcd(m - 1, n)`.
+**Height of the first step of the k-th staircase.** Let $m, n$ be positive coprime integers
+and $l = \gcd(m - 1, n)$, let $P$ be a quadratic packing polynomial on the lattice sector
+$I(n/m)$, and suppose that the step difference of $P$ equals a positive integer $k$. Then the
+first height of the staircase $J_k$ is $\bar y_k = n/l - 1$.
 
 ## Depends on
 
-- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
-- [Consecutive Step Difference](consecutive-step-difference.md)
-- [Sector Lattice Points](sector-lattice-points.md)
-- [Staircase First Height](staircase-first-height.md)
+- [Quadratic packing polynomial](is-quadratic-packing-polynomial.md)
+- [Step difference](consecutive-step-difference.md)
+- [Lattice points of a sector](sector-lattice-points.md)
+- [First height of a staircase](staircase-first-height.md)
 
 ## Sources
 

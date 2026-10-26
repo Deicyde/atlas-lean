@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.mobiusFermat_closed_form
 ---
 
-# Mobius Fermat closed form
+# Closed form of the Möbius–Fermat function
 
-Theorem 9 (closed form of `μ_M`): for `l = 3 ^ m₁ * 7 ^ m₂ * ∏ M_{n_j} ^ {m_j}` factored as in
-(5) (distinct indices `n_j ≥ 4`, `n_j ≠ 6`) and `r = m₁ + m₂ + m_3 + ⋯ + m_k`,
-`μ_M l = (-1) ^ r * ∑_{j=0}^{min(⌊m₁/2⌋, m₂)} (r - 2j)! / ((m₁ - 2j)! (m₂ - j)! j! m_3! ⋯ m_k!)`.
+**Closed form of the Möbius–Fermat function.** Let $u_M$ be the Fermat unit function
+and let $\mu_M$ be an integer-valued arithmetic function with $\mu_M * u_M = \varepsilon$, where
+$*$ is Dirichlet convolution and $\varepsilon$ is its identity, with $\varepsilon(1) = 1$ and
+$\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the Dirichlet inverse of $u_M$, the
+Möbius–Fermat function.
+Let $m_1, m_2 \ge 0$ be integers, let $n_3, \dots, n_k$ be finitely many (possibly no) distinct
+integers with $n_j \ge 4$ and $n_j \ne 6$, let $m_3, \dots, m_k \ge 1$ be integers, and put
+$l = 3^{m_1} 7^{m_2} \prod_{j=3}^{k} (2^{n_j} - 1)^{m_j}$ and
+$r = m_1 + m_2 + m_3 + \dots + m_k$. Then, as rational numbers,
+
+$$\mu_M(l) = (-1)^r \sum_{j=0}^{\min(\lfloor m_1/2 \rfloor, m_2)}
+\frac{(r - 2j)!}{(m_1 - 2j)! \, (m_2 - j)! \, j! \, m_3! \cdots m_k!}.$$
 
 ## Depends on
 
-- [Fermat Unit Function](fermat-unit-function.md)
+- [Fermat unit function](fermat-unit-function.md)
 
 ## Sources
 

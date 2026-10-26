@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.truncatedLogAuxProduct_one
 ---
 
-# Truncated Log Aux Product one
+# Auxiliary product at $m = 1$
 
-`X(1) = 1` (an empty product).
+**Auxiliary product at $m = 1$.** The auxiliary product $X(m)$ takes the value $X(1) = 1$ at
+$m = 1$; it is an empty product.
 
 ## Depends on
 
-- [Truncated Log Aux Product](truncated-log-aux-product.md)
+- [Auxiliary product for truncated logarithmic discriminants](truncated-log-aux-product.md)
 
 ## Sources
 

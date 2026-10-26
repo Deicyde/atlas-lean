@@ -16,7 +16,7 @@ navigation: transparent
 - [Luroth Diophantine Approximation](luroth-diophantine-approximation-wanted/README.md)
 - [Mahler Popken Complexity](mahler-popken-complexity-wanted/README.md)
 - [Mallows Representation](mallows-representation-wanted/README.md)
-- [Martinet Totally Real Towers Wanted](exists-totally-real-discr-le.md)
+- [Martinet's totally real towers](exists-totally-real-discr-le.md)
 - [Mazur Torsion](mazur-torsion-wanted/README.md)
 - [Middle Binomial Coefficient](middle-binomial-coefficient-wanted/README.md)
 - [Mobius Fermat](mobius-fermat-wanted/README.md)

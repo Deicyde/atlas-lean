@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_lt_of_even_odd
 ---
 
-# Lemma 8
+# First inverses not both extremal, even–odd case
 
-**Lemma 8**: if `r₀` is even and `r₁` is odd, then at least
-one of the inequalities `|s₁| ≤ r₀/2` and `|s₂| ≤ (r₁ - 1)/2`
-is strict.
+**First inverses not both extremal, even–odd case.** Let $(r_i)$, $(s_i)$ and $N$ be
+Euclidean switching data with $r_0$ even and $r_1$ odd. Then $2|s_1| < r_0$ or
+$2|s_2| < r_1 - 1$; that is, $|s_1| < r_0/2$ or $|s_2| < (r_1 - 1)/2$.
 
 ## Depends on
 
-- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
+- [Euclidean switching data](is-euclid-switch-seq.md)
 
 ## Sources
 

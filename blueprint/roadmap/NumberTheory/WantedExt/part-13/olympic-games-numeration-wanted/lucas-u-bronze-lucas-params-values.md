@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_bronzeLucasParams_values
 ---
 
-# Lucas U bronze Lucas Params values
+# The first bronze numbers
 
-The first bronze numbers are `0, 1, 3, 10, 33, 109`.
+**The first bronze numbers.** Let $B_n$ be the bronze numbers, the terms of the Lucas sequence
+$U(3, -1)$. Then $B_0, B_1, B_2, B_3, B_4, B_5$ are $0, 1, 3, 10, 33, 109$.
 
 ## Depends on
 
-- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Bronze Lucas parameters](bronze-lucas-params.md)
 - [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources

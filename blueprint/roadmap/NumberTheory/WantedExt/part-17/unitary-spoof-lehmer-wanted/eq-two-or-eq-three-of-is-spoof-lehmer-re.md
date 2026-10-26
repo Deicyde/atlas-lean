@@ -7,18 +7,20 @@ lean: MetaMathlibExt.eq_two_or_eq_three_of_isSpoofLehmer_replicate
 
 # Repeated unitary Lehmer factorizations
 
-**Repeated unitary Lehmer factorizations**: if `[x]_s = x ⋯ x` (`s` copies) is a unitary
-`k`-Lehmer factorization with `x ≥ 2`, then `x = 2` and `s ≥ 2`, or `x = 3` and `s ∈ {2, 4}`.
+**Repeated unitary Lehmer factorizations.** Let $k$ be an integer and let $x \ge 2$ and $s$ be
+natural numbers. If the spoof factorization $x \cdots x$ with $s$ factors, each with base $x$ and
+exponent $1$, is a spoof $k$-Lehmer factorization (a unitary $k$-Lehmer factorization), then
+either $x = 2$ and $s \ge 2$, or $x = 3$ and $s \in \{2, 4\}$.
 
-The paper assumes `k ≥ 2` instead of `x ≥ 2`; as printed the statement fails for `x = 1`, since
-`[1]_s` satisfies `k φ̃*([1]_s) = 0 = ε̃([1]_s) - 1` for every `k` and `s ≥ 2`. The paper's proof
-treats only `x = 2`, `x = 3` and `x ≥ 4`. With `x ≥ 2` the hypothesis `k ≥ 2` is implied and is
-not stated.
+The paper assumes $k \ge 2$ instead of $x \ge 2$; as printed the statement fails for $x = 1$:
+for every $s \ge 2$ the factorization $1 \cdots 1$ with $s$ factors has spoof totient $0$ and
+spoof evaluation $1$, so it is a spoof $k$-Lehmer factorization for every $k$. The paper's proof
+treats only $x = 2$, $x = 3$ and $x \ge 4$. When $x \ge 2$, the hypothesis forces $k \ge 2$.
 
 ## Depends on
 
-- [Is Spoof Lehmer](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
-- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
+- [Spoof Lehmer factorizations](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
+- [Factorization with all exponents one](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
 
 ## Sources
 

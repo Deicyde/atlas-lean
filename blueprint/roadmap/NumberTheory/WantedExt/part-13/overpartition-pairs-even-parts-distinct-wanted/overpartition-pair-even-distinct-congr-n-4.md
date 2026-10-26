@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_three_thirteen
 ---
 
-# Overpartition Pair Even Distinct congr neg three thirteen
+# Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 5)
 
-For a prime `p ≥ 5` with `(-3/p) = -1` and all `k, m, α, β ≥ 0` with `p ∤ m`:
-`bped_{3,3}(4·3^{4α+2}·5^{2β}·p^{2k+1} m + (13·3^{4α+1}·5^{2β}·p^{2k+2} - 1)/2) ≡ 0 (mod 8)`
-(27), `bped_{3,6}(3^{4α+2}·5^{2β}·p^{2k+1}(24m + 13p)) ≡ 0 (mod 16)` (28) and
-`bped_{3,6}(3·5^{2β}·p^{2k+1}(24m + 13p)) ≡ 0 (mod 16)` (29).
-The paper prints `p^{2α+2}` in (27); the proof's substitution gives `p^{2k+2}`, and the printed
-exponent fails: `p = 5, k = 1, α = β = 0, m = 3` gives `bped_{3,3}(13987) ≡ 4 (mod 8)`.
+**Paksok–Saikia congruences for $[3, 3]$- and $[3, 6]$-overpartition pairs (Theorem 5).** Let
+$\mathrm{bped}_{j,k}(n)$ be the number of $[j, k]$-overpartition pairs of $n$ with even parts
+distinct. Let $p \ge 5$ be a prime with Legendre symbol $\left(\frac{-3}{p}\right) = -1$, and let
+$k, m, \alpha, \beta$ be natural numbers with $p \nmid m$. Then
+$\mathrm{bped}_{3,3}\bigl(4 \cdot 3^{4\alpha+2} \cdot 5^{2\beta} p^{2k+1} m +
+(13 \cdot 3^{4\alpha+1} \cdot 5^{2\beta} p^{2k+2} - 1)/2\bigr) \equiv 0 \pmod{8}$,
+$\mathrm{bped}_{3,6}\bigl(3^{4\alpha+2} \cdot 5^{2\beta} p^{2k+1} (24m + 13p)\bigr) \equiv 0
+\pmod{16}$ and
+$\mathrm{bped}_{3,6}\bigl(3 \cdot 5^{2\beta} p^{2k+1} (24m + 13p)\bigr) \equiv 0 \pmod{16}$.
+
+The paper prints $p^{2\alpha+2}$ in place of $p^{2k+2}$ in the first congruence (its (27)); the
+substitution in its proof gives $p^{2k+2}$, and the printed exponent fails: at $p = 5$, $k = 1$,
+$\alpha = \beta = 0$, $m = 3$ the printed argument is $13987$, and
+$\mathrm{bped}_{3,3}(13987) \equiv 4 \pmod{8}$.
 
 ## Depends on
 

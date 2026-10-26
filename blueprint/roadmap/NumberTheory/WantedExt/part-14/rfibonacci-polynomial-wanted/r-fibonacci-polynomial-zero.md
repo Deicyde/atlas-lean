@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.rFibonacciPolynomial_zero
 ---
 
-# R Fibonacci Polynomial zero
+# The zeroth $r$-Fibonacci polynomial vanishes
 
-`U_0 = 0`.
+**The zeroth $r$-Fibonacci polynomial vanishes.** For every natural number $r$ and all
+$x, y$ in a commutative semiring $R$, the $r$-Fibonacci polynomial $U^{(r)}_0(x, y)$ is $0$.
 
 ## Depends on
 
-- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+- [The $r$-Fibonacci polynomials](r-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.repetend_columns_match_iff_triple_sum_eq
 ---
 
-# Repetend columns match iff triple sum eq
+# Class B matched columns of repetend tables
 
-Class B column matches: let `L = 12a + 6` with `a > 0`, `n = p^k` with `p ≡ 1 (mod L)` prime,
-`b` a small base of order `L`, `b_i = b^i mod n` and `k_i = (b_i + b_(i+L/3) + b_(i+2L/3))/n`.
-Then `k_i = 1` for all `i` prime to `L` iff columns `2a + 1, 4a + 2` match and columns
-`8a + 4, 10a + 5` match (columns as in Theorem 2). The conjectured proportion is omitted.
+**Class B matched columns of repetend tables.** Let $a \ge 1$ and $L = 12a + 6$, let $p$ be a
+prime with $p \equiv 1 \pmod L$, let $k \ge 1$ and $n = p^k$, and let $b$ be a natural number of
+multiplicative order $L$ modulo $n$; write $b_i = b^i \bmod n$. Let the rows be the integers $c$
+with $1 \le c < n$, $\gcd(c, n) = 1$ and multiplicative order $L$ modulo $n$, and let column $j$
+be the multiset of the digits $\lfloor c^{j+1}/n \rfloor \bmod c$ over these rows. Then
+$\lfloor (b_i + b_{i + L/3} + b_{i + 2L/3})/n \rfloor = 1$ for every $0 \le i < L$ coprime to $L$
+if and only if columns $2a + 1$ and $4a + 2$ are equal and columns $8a + 4$ and $10a + 5$ are
+equal.
+
+The proportion conjectured in the source is not stated here.
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_sq_add_sq_eq
 ---
 
-# Card sq add sq eq
+# Jacobi's formula for the number of representations as a sum of two squares
 
-Theorem 16 (Jacobi's two-square theorem): for `n ≥ 1`, the number
-`r_2(n)` of pairs `(a, b) ∈ ℤ²` with `a² + b² = n` is
-`4 (d_{1,4}(n) - d_{3,4}(n))`.
+**Jacobi's formula for the number of representations as a sum of two squares.** For every
+integer $n \ge 1$, the number $r_2(n)$ of pairs $(a, b) \in \mathbb{Z}^2$ with $a^2 + b^2 = n$
+equals $4\,(d_{1,4}(n) - d_{3,4}(n))$, where $d_{r,4}(n)$ is the number of positive divisors of
+$n$ congruent to $r$ modulo $4$.
 
 ## Depends on
 

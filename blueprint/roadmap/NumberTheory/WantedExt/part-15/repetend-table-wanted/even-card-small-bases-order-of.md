@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.even_card_small_bases_orderOf
 ---
 
-# Even card small bases order Of
+# Small bases of order greater than two come in pairs
 
-For every modulus `n`, the number of small bases `1 ≤ b < n`, `gcd(b, n) = 1`, of repetend
-length (multiplicative order) `L > 2` is even. The record's first sentence (Lemma 2: `b^x` has
-order `L` iff `gcd(x, L) = 1`) is Mathlib `IsOfFinOrder.orderOf_pow` and is not restated.
+**Small bases of order greater than two come in pairs.** For every natural number $n$ and
+every $L > 2$, the number of integers $b$ with $1 \le b < n$ and $\gcd(b, n) = 1$ whose
+multiplicative order modulo $n$ is $L$ is even.
 
 ## Depends on
 

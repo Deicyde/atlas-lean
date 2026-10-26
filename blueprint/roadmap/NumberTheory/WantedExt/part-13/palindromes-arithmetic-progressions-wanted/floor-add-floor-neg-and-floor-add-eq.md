@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.floor_add_floor_neg_and_floor_add_eq
 ---
 
-# Floor add floor neg and floor add eq
+# Two floor-function identities
 
-Floor-function facts (iii) and (v) of Lemma 6: for real `x`, `⌊x⌋ + ⌊-x⌋` is `0` when `x`
-is an integer and `-1` otherwise; and for real `x`, `y`, `⌊x + y⌋ = ⌊x⌋ + ⌊y⌋` when
-`{x} + {y} < 1` and `⌊x⌋ + ⌊y⌋ + 1` otherwise, with `{x} = Int.fract x`. Parts (i), (ii),
-(iv), (vi) of the lemma are existing Mathlib lemmas and are not restated.
+**Two floor-function identities.** For every real number $x$, the sum
+$\lfloor x \rfloor + \lfloor -x \rfloor$ equals $0$ if $x$ is an integer and $-1$ otherwise.
+For all real numbers $x$ and $y$, $\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$ if
+$(x - \lfloor x \rfloor) + (y - \lfloor y \rfloor) < 1$, and
+$\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor + 1$ otherwise.
+
+These are parts (iii) and (v) of the cited lemma; its remaining parts are not restated here.
 
 ## Depends on
 

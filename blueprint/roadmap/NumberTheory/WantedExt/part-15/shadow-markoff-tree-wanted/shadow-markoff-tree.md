@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.shadowMarkoffTree
 ---
 
-# Shadow Markoff Tree
+# Shadow Markoff tree
 
-The solutions of the shadow Markoff tree of the initial triple with shadow part `v`: the root,
-its mutation at position `0`, and the nodes of `ShadowMarkoffTreeNode v`.
+**Shadow Markoff tree.** For $v \in \mathbb{Z}^3$, the shadow Markoff tree of $v$ is the
+set of states $(x, y) \in \mathbb{Q}^3 \times \mathbb{Q}^3$ (classical part $x$, shadow part
+$y$) consisting of the initial triple $r$ with shadow part $v$, the shadow Markoff mutation of
+$r$ at position $0$, and the state $s$ of every lower node $(s, l)$ of the shadow Markoff tree
+of $v$.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Shadow Markoff Tree Node](shadow-markoff-tree-node.md)
-- [Shadow Markoff Mutate](shadow-markoff-mutate.md)
-- [Shadow Markoff Root](shadow-markoff-root.md)
+- [Lower nodes of a shadow Markoff tree](shadow-markoff-tree-node.md)
+- [Shadow Markoff mutation](shadow-markoff-mutate.md)
+- [Initial triple of a shadow Markoff tree](shadow-markoff-root.md)
 
 ## Sources
 

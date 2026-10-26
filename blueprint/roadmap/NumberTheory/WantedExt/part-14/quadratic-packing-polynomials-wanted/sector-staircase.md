@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sectorStaircase
 ---
 
-# Sector Staircase
+# Staircases of a rational sector
 
-The `i`-th staircase `J_i = {(x, y) ∈ I(n/m) : n x - (m - 1) y = l i}` of the sector of
-slope `n / m`, where `l = gcd(m - 1, n)`.
+**Staircases of a rational sector.** For natural numbers $m, n, i$, let
+$l = \gcd(m - 1, n)$. The $i$-th staircase of the sector of slope $n/m$ is
+$J_i = \{(x, y) \in I(n/m) : nx - (m - 1)y = li\}$, where $I(n/m)$ is the set of lattice points
+of that sector.
+
+If $m = 0$, the slope $n/m$ is read as $0$ and $l$ as $\gcd(0, n) = n$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sector Lattice Points](sector-lattice-points.md)
+- [Lattice points of a sector](sector-lattice-points.md)
 
 ## Sources
 

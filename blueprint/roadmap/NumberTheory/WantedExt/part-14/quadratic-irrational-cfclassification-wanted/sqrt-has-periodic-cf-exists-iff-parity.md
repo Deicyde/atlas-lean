@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sqrt_hasPeriodicCF_exists_iff_parity
 ---
 
-# Sqrt has Periodic CF exists iff parity
+# Parity criterion for $\sqrt{d}$ with a given symmetric period
 
-Proposition 1 (quoted from [7]): for `l ≥ 3` and a symmetric sequence of positive integers
-`a₁, …, a_{l-1}`, some positive nonsquare `d` has `√d = [a₀; a₁, …, a_{l-1}, 2a₀]` if and only
-if (i) `q_{l-1}` is odd, or (ii) `q_{l-1}` and `r_{l-2}` are even and `q_{l-2}` is odd. The
-cases `l ≤ 2`, where `r_{l-2}` needs the convention `r_0 = 0`, are omitted.
+**Parity criterion for $\sqrt{d}$ with a given symmetric period.** Let $l \ge 3$ and let
+$a_1, \dots, a_{l-1}$ be positive integers with $a_i = a_{l-i}$ for $1 \le i < l$. Let $q_j$ be the
+denominator of the $j$-th convergent of $[a_0; a_1, a_2, \dots]$ (so $q_0 = 1$, $q_1 = a_1$ and
+$q_{j+2} = a_{j+2} q_{j+1} + q_j$), and let $r_{l-2}$ be the denominator of the $(l-3)$-th
+convergent of $[a_1; a_2, a_3, \dots]$. There are natural numbers $d$ and $a_0$ with $d$ not a
+perfect square and $\sqrt{d} = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0}]$ if and only if
+$q_{l-1}$ is odd, or $q_{l-1}$ and $r_{l-2}$ are even and $q_{l-2}$ is odd.
 
 ## Depends on
 
-- [Has Periodic CF](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
-- [Convergent Den](../quadratic-irrational-cfnonexistence-wanted/convergent-den.md)
+- [Continued fractions with a prescribed period](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
+- [Convergent denominators as continuants](../quadratic-irrational-cfnonexistence-wanted/convergent-den.md)
 
 ## Sources
 

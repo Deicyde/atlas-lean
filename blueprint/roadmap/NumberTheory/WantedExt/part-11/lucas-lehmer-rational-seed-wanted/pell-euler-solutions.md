@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pell_euler_solutions
 ---
 
-# Pell euler solutions
+# Euler's family of solutions of $aT^2 - bU^2 = c$
 
-Euler's observation: let `ab > 1` not be a perfect square and let `(x_k, y_k)`, with
-`x_k + √(ab) y_k = (x_1 + √(ab) y_1)^k`, be the powers of the fundamental solution of
-`x² - ab y² = 1`. If `(T_1, U_1)` solves `aT² - bU² = c`, then
-`T_k = T_1 x_{k-1} + b U_1 y_{k-1}`, `U_k = a T_1 y_{k-1} + U_1 x_{k-1}` (`k ≥ 1`) are
-infinitely many distinct solutions; here indexed by `j = k - 1 ≥ 0`. Added hypothesis `c ≠ 0`:
-for `c = 0` the only solution is `(0, 0)`, since `ab` is not a square.
+**Euler's family of solutions of $aT^2 - bU^2 = c$.** Let $a$, $b$, $c$ be integers
+with $ab > 1$, $ab$ not a perfect square and $c \ne 0$, and let $T_1$, $U_1$ be integers with
+$aT_1^2 - bU_1^2 = c$. Let $\varepsilon = x_1 + y_1\sqrt{ab}$ be the fundamental solution of
+$x^2 - ab\,y^2 = 1$ and, for every natural number $j$, write
+$\varepsilon^j = x_j + y_j\sqrt{ab}$. Then for every $j \ge 0$ the integers
+$T = T_1 x_j + b U_1 y_j$ and $U = a T_1 y_j + U_1 x_j$ satisfy $aT^2 - bU^2 = c$, and different
+$j$ give different pairs $(T, U)$.
+
+The hypothesis $c \ne 0$ is added to the source statement: for $c = 0$ the only integer solution
+is $(0, 0)$, since $ab$ is not a square.
 
 ## Depends on
 

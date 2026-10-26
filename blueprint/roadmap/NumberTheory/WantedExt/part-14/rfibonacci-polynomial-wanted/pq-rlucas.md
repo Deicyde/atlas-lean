@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.pqRLucas
 ---
 
-# Pq RLucas
+# First-kind (p, q)-Lucas polynomials
 
-Definition 2, first kind: the `(p, q)`-analogue `V^{(r,s)}_n(x, y, p, q, m)` of the
-`r`-Lucas polynomial of type `s`, `V_0 = s + 1` and for `n ≥ 1`
-`V_n = ∑_{k=0}^{⌊n/(r+1)⌋} p^{C(n-(r+1)k, 2)} q^{(m+1) C(k, 2)}
-([n - rk, k]_{p,q} + s p^{n-(r+1)k} [n - rk - 1, k - 1]_{p,q}) x^{n-(r+1)k} y^k`
-(the `s`-term is absent for `k = 0`). The paper writes the bracket as
-`[n - rk, k]_{p,q} (1 + s p^{n-(r+1)k} [k]_{p,q} / [n - rk]_{p,q})`; the
-division-free form is the first step of the paper's proof of Theorem 3 and agrees
-with it whenever `[n - rk]_{p,q} ≠ 0`.
+**First-kind (p, q)-Lucas polynomials.** Let $R$ be a commutative semiring, let $r$, $s$ and
+$m$ be natural numbers, let $x, y, p, q \in R$, and write $[a, b]_{p,q}$ for the
+$(p, q)$-binomial coefficients. The first-kind $(p, q)$-analogue $V^{(r,s)}_n(x, y, p, q, m)$ of
+the $r$-Lucas polynomial of type $s$, written $V_n$, is defined by $V_0 = s + 1$ and, for
+$n \ge 1$,
+
+$$
+V_n = \sum_{k=0}^{\lfloor n/(r+1) \rfloor} p^{\binom{n-(r+1)k}{2}} q^{(m+1)\binom{k}{2}}\,
+c_{n,k}\,x^{n-(r+1)k} y^k,
+$$
+
+where $c_{n,0} = [n, 0]_{p,q}$ and, for $k \ge 1$,
+$c_{n,k} = [n - rk, k]_{p,q} + s\,p^{n-(r+1)k} [n - rk - 1, k - 1]_{p,q}$.
+
+The paper writes $c_{n,k}$ as
+$[n - rk, k]_{p,q} (1 + s\,p^{n-(r+1)k} [k]_{p,q} / [n - rk]_{p,q})$, with $[a]_{p,q}$ the
+$(p, q)$-numbers; the division-free form is the first step of the paper's proof of Theorem 3
+and agrees with it whenever $[n - rk]_{p,q} \ne 0$.
 
 ## Depends on
 
@@ -22,7 +32,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pq Binomial](pq-binomial.md)
+- [$(p,q)$-binomial coefficient](pq-binomial.md)
 
 ## Sources
 

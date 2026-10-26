@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.lurothConvergent_succ
 ---
 
-# Luroth Convergent succ
+# Recurrence for Lüroth convergents
 
-Recurrence `x_{n+2} = x_{n+1} + 1/Q_{n+2}` (paper indexing).
+**Recurrence for Lüroth convergents.** For every sequence of natural numbers
+$d_0, d_1, d_2, \dots$ with Lüroth denominators $Q_n$ and Lüroth convergents $x_n$, and every
+$n \ge 0$, $x_{n+1} = x_n + 1/Q_{n+1}$, where $1/Q_{n+1}$ is read as $0$ if $Q_{n+1} = 0$.
 
 ## Depends on
 
-- [Luroth Convergent](luroth-convergent.md)
-- [Luroth Denominator](luroth-denominator.md)
+- [Lüroth convergents](luroth-convergent.md)
+- [Lüroth denominators](luroth-denominator.md)
 
 ## Sources
 

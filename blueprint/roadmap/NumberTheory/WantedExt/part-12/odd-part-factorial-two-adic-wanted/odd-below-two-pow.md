@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddBelowTwoPow
 ---
 
-# Odd Below Two Pow
+# Odd numbers below a power of two
 
-`oddBelowTwoPow e` is `S_e`, the odd positive natural numbers strictly below `2^e`.
-The bounds are encoded by `Ico 1 (2^e)` and oddness by a filter.
+**Odd numbers below a power of two.** For a natural number $e$, $S_e$ is the finite set of odd
+natural numbers $i$ with $1 \le i < 2^e$.
 
 ## Depends on
 

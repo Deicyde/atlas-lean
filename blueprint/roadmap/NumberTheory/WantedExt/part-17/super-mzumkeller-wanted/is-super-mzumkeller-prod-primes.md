@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.isSuperMZumkeller_prod_primes
 ---
 
-# Corollary 1
+# Products of at least three distinct primes are super-m-Zumkeller
 
-**Corollary 1**: the product of `r ≥ 3` distinct primes is
-always super-m-Zumkeller.
+**Products of at least three distinct primes are super-m-Zumkeller.** For every finite set
+$S$ of at least three primes, the product $\prod_{p \in S} p$ is super-m-Zumkeller.
 
 ## Depends on
 
-- [Is Super MZumkeller](is-super-mzumkeller.md)
+- [Super-m-Zumkeller numbers](is-super-mzumkeller.md)
 
 ## Sources
 

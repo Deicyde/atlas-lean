@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.ceilQuotientOddCount_succ_eq
 ---
 
-# Ceil Quotient Odd Count succ eq
+# Ceiling parity count from the floor parity count
 
-Proposition 9, first equality: `𝓒_n = n - 𝓕_{n-1}`, written for `n + 1`.
-The printed second equality `= ∑_{d=2}^n ⌊n/d⌋ (-1)^d` is omitted (false:
-at `n = 3`, `𝓒_3 = 2` while the sum is `1 - 1 = 0`).
+**Ceiling parity count from the floor parity count.** For a natural number $m$, let
+$\mathcal{C}_m$ and $\mathcal{F}_m$ be the numbers of integers $k$ with $1 \le k \le m$ for which
+$\lceil m/k \rceil$, respectively $\lfloor m/k \rfloor$, is odd. Then for every natural number
+$n$, $\mathcal{C}_{n+1} = (n + 1) - \mathcal{F}_n$.
+
+The source prints a second equality $\mathcal{C}_n = \sum_{d=2}^{n} \lfloor n/d \rfloor (-1)^d$,
+which is not part of this statement: it fails at $n = 3$, where $\mathcal{C}_3 = 2$ but the sum
+is $1 - 1 = 0$.
 
 ## Depends on
 
-- [Ceil Quotient Odd Count](ceil-quotient-odd-count.md)
-- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
+- [Ceiling parity count](ceil-quotient-odd-count.md)
+- [Floor sequence parity count](floor-quotient-odd-count.md)
 
 ## Sources
 

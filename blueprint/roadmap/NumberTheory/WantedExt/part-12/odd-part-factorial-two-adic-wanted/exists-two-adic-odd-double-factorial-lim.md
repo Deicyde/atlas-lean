@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_twoAdic_oddDoubleFactorial_limit
 ---
 
-# Exists two Adic odd Double Factorial limit
+# A 2-adic limit of normalized odd double factorials
 
-There is a 2-adic integer `w` agreeing modulo `2^(e-1)` with the normalized
-odd double-factorial difference for every `e≥3` (the paper writes `e≥2`; at
-`e=2` the quotient `(3-1)/4` is not an integer, see Corollary 10).  This packages the defining
-property used later without introducing a global constant; the quotient is
-integer division, whose exactness is supplied by Corollary 10.
+**A 2-adic limit of normalized odd double factorials.** Write $(2^e - 1)!!$ for the product of
+the odd natural numbers from $1$ to $2^e - 1$. There is a 2-adic integer $w$ such that for every
+natural number $e \ge 3$, $2^{e-1}$ divides $w - \lfloor ((2^e - 1)!! - 1) / 2^e \rfloor$ in
+$\mathbb{Z}_2$.
+
+For $e \ge 3$ the division is exact. The paper writes $e \ge 2$, but at $e = 2$ the quotient
+$(3 - 1)/4$ is not an integer.
 
 ## Depends on
 
-- [Odd Double Factorial](odd-double-factorial.md)
+- [Odd double factorial below a power of two](odd-double-factorial.md)
 
 ## Sources
 

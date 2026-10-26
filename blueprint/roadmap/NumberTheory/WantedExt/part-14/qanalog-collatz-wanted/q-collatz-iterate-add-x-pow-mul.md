@@ -12,7 +12,7 @@ For odd `A, B`, `n ∈ ℕ`, `U, V ∈ 𝔽₂[[q]]` with `V` odd, and every `k 
 
 ## Depends on
 
-- [Q Collatz](q-collatz.md)
+- [The q-analog of the 3x+1 map](q-collatz.md)
 
 ## Sources
 

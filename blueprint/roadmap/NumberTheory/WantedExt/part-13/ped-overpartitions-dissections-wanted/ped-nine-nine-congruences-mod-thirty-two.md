@@ -5,19 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.pedNineNine_congruences_mod_thirtyTwo
 ---
 
-# Ped Nine Nine congruences mod thirty Two
+# Congruences modulo 32 for $\mathrm{ped}_{9,9}$
 
-Congruences modulo `32` for `ped_{9,9}`: for all `n, α, β ≥ 0`,
-(18) `∑ ped_{9,9}(3^{4α+2} n + (3^{4α+2} - 1)/2) q^n ≡ 4 f_1^3 f_3 f_4 f_6 / f_2^2 + 16 q f_6^6`
-(stated after multiplying both sides by `f_2^2`),
-(19) `ped_{9,9}(4·3^{4α+6} n + (19·3^{4α+5} - 1)/2) ≡ ped_{9,9}(4·3^{4α+4} n + (19·3^{4α+3} - 1)/2)`,
-(20) `∑ ped_{9,9}(4·3^{4α+4}·5^{2β} n + (19·3^{4α+3}·5^{2β} - 1)/2) q^n ≡ 16 f_1 f_6^3`, and
-(21) `ped_{9,9}(4·3^{4α+4}·5^{2β+1}(5n+i) + (23·3^{4α+3}·5^{2β+1} - 1)/2) ≡ 0` for
-`i ∈ {0, 1, 2, 4}`. All divisions are exact.
+**Congruences modulo 32 for $\mathrm{ped}_{9,9}$.** For $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$, an integer power series in $q$, and let
+$\mathrm{ped}_{9,9}(n)$ be the coefficient of $q^n$ in $f_4 f_{18} / (f_1 f_9)$. Then for all
+natural numbers $\alpha$, $\beta$ and $n$ the following congruences modulo $32$ hold, where
+every division is exact.
+
+(18) The coefficient of $q^n$ in
+$f_2^2 \sum_{m \ge 0} \mathrm{ped}_{9,9}(3^{4\alpha+2} m + (3^{4\alpha+2} - 1)/2) q^m$ is congruent
+to the coefficient of $q^n$ in $4 f_1^3 f_3 f_4 f_6 + 16 q f_2^2 f_6^6$. This is the source's
+congruence $\sum_{m \ge 0} \mathrm{ped}_{9,9}(3^{4\alpha+2} m + (3^{4\alpha+2} - 1)/2) q^m \equiv
+4 f_1^3 f_3 f_4 f_6 / f_2^2 + 16 q f_6^6$ multiplied by $f_2^2$.
+
+(19) $\mathrm{ped}_{9,9}(4 \cdot 3^{4\alpha+6} n + (19 \cdot 3^{4\alpha+5} - 1)/2) \equiv
+\mathrm{ped}_{9,9}(4 \cdot 3^{4\alpha+4} n + (19 \cdot 3^{4\alpha+3} - 1)/2)$.
+
+(20) $\mathrm{ped}_{9,9}(4 \cdot 3^{4\alpha+4} \cdot 5^{2\beta} n +
+(19 \cdot 3^{4\alpha+3} \cdot 5^{2\beta} - 1)/2)$ is congruent to the coefficient of $q^n$ in
+$16 f_1 f_6^3$.
+
+(21) $\mathrm{ped}_{9,9}(4 \cdot 3^{4\alpha+4} \cdot 5^{2\beta+1} (5n + i) +
+(23 \cdot 3^{4\alpha+3} \cdot 5^{2\beta+1} - 1)/2) \equiv 0$ for $i \in \{0, 1, 2, 4\}$.
 
 ## Depends on
 
-- [Ped Nine Nine](ped-nine-nine.md)
+- [The partition function $\mathrm{ped}_{9,9}$](ped-nine-nine.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

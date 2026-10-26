@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.isSuperMZumkeller_prime_pow_iff
 ---
 
-# Theorem 3
+# Super-m-Zumkeller prime powers
 
-**Theorem 3**: for prime `p` and `α ≥ 1`, `p^α` is
-super-m-Zumkeller if and only if
-`α ≡ 0, 2, 5, 7, 8, 10, 13, or 15 (mod 16)`.
+**Super-m-Zumkeller prime powers.** Let $p$ be a prime and $\alpha \ge 1$ an integer. Then
+$p^\alpha$ is super-m-Zumkeller if and only if
+$\alpha \equiv 0, 2, 5, 7, 8, 10, 13$ or $15 \pmod{16}$.
 
 ## Depends on
 
-- [Is Super MZumkeller](is-super-mzumkeller.md)
+- [Super-m-Zumkeller numbers](is-super-mzumkeller.md)
 
 ## Sources
 

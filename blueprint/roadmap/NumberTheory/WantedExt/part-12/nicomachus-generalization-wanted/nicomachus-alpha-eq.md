@@ -12,8 +12,8 @@ lean: MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha_eq
 
 ## Depends on
 
-- [Nicomachus Alpha](nicomachus-alpha.md)
-- [Nicomachus U](nicomachus-u.md)
+- [The Kim–Stolarsky convergents $\alpha_k$](nicomachus-alpha.md)
+- [The Kim–Stolarsky integers $u_k$](nicomachus-u.md)
 
 ## Sources
 

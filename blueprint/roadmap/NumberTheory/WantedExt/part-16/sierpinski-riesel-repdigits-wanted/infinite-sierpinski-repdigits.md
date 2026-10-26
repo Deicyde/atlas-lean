@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.infinite_sierpinski_repdigits
 ---
 
-# Corollary 3.7
+# Infinitely many Sierpiński repdigits in every base $b > 78557$
 
-**Corollary 3.7.** For every `b > 78557` there are infinitely many `b`-repdigit Sierpiński
-numbers.
+**Infinitely many Sierpiński repdigits in every base $b > 78557$.** Let $b > 78557$ be a
+natural number. Then there are infinitely many Sierpiński numbers of the form $k(b^t - 1)/(b - 1)$
+with $1 \le k < b$ and $t \ge 1$, that is, $b$-repdigits: the digit $k$ written $t$ times in
+base $b$.
 
 ## Depends on
 
-- [Is Sierpinski Number](is-sierpinski-number.md)
-- [Repstring](repstring.md)
+- [Sierpiński number](is-sierpinski-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

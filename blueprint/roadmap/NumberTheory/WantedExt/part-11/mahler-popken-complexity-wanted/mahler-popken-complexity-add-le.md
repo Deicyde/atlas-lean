@@ -6,22 +6,25 @@ proof: formalized
 lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexity_add_le
 ---
 
-# Mahler Popken Complexity add le
+# Subadditivity of the $m$-ary complexity under addition
 
-Subadditivity under addition, the analogue of
-`IntegerComplexity.complexity_add_le`.
+**Subadditivity of the $m$-ary complexity under addition.** For natural numbers $m \ge 1$,
+$a \ge 1$ and $b \ge 1$, the $m$-ary Mahler–Popken complexity $\|\cdot\|_m$ satisfies
+$\|a + b\|_m \le \|a\|_m + \|b\|_m$.
+
+This is the analogue of subadditivity under addition for the classical integer complexity.
 
 ## Depends on
 
-- [Mahler Popken Complexity](mahler-popken-complexity.md)
+- [Mahler–Popken complexity](mahler-popken-complexity.md)
 
 ## Proof depends on
 
-- [Mahler Popken Expr](mahler-popken-expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
-- [Mahler Popken Complexity min le](mahler-popken-complexity-min-le.md)
-- [Mahler Popken Complexity spec](mahler-popken-complexity-spec.md)
+- [Mahler–Popken expressions](mahler-popken-expr.md)
+- [Number of leaves of an $m$-ary expression](count.md)
+- [Value of an $m$-ary expression](eval.md)
+- [Expressions bound the $m$-ary complexity from above](mahler-popken-complexity-min-le.md)
+- [The Mahler–Popken complexity is attained](mahler-popken-complexity-spec.md)
 
 ## Sources
 

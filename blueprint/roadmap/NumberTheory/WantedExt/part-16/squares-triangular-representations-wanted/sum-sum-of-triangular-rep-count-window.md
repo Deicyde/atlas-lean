@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_sumOfTriangularRepCount_window
 ---
 
-# Sum sum Of Triangular Rep Count window
+# Window congruence for sums of triangular numbers
 
-For `n ≥ 1`, an odd prime `p` with `p - 1 ≥ n + 1`, and every integer `s ≥ p`:
-`∑_{i=0}^{p-1} t_{s-i}(n) ≡ 0 (mod p)`.
+**Window congruence for sums of triangular numbers.** For an integer $k$, let $t_k(n)$ be the
+coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. Let $n \ge 1$,
+let $p$ be an odd prime with $p - 1 \ge n + 1$, and let $s \ge p$ be an integer. Then $p$ divides
+$\sum_{i=0}^{p-1} t_{s-i}(n)$.
 
 ## Depends on
 
-- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Representation numbers for sums of triangular numbers](sum-of-triangular-rep-count.md)
 
 ## Sources
 

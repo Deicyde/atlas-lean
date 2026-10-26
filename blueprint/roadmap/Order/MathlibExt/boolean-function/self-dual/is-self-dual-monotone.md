@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Boolean Function Dual](boolean-function-dual.md)
+- [Dual of a Boolean function](boolean-function-dual.md)
 
 ## Sources
 

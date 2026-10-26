@@ -4,9 +4,9 @@ navigation: module
 
 # Ramanujan KFunction
 
-- [Ramanujan K](ramanujan-k.md)
-- [Ramanujan K zero](ramanujan-k-zero.md)
-- [Ramanujan K eta quotients](ramanujan-k-eta-quotients.md)
-- [Ramanujan K div sub div sq](ramanujan-k-div-sub-div-sq.md)
-- [Ramanujan K sq relation](ramanujan-k-sq-relation.md)
-- [Ramanujan theta level ten](ramanujan-theta-level-ten.md)
+- [Ramanujan's function $k(q)$](ramanujan-k.md)
+- [Ramanujan's function $k$ vanishes at $0$](ramanujan-k-zero.md)
+- [Eta-quotient expressions for Ramanujan's function $k$](ramanujan-k-eta-quotients.md)
+- [Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient](ramanujan-k-div-sub-div-sq.md)
+- [Modular equation of degree 2 for Ramanujan's function $k$](ramanujan-k-sq-relation.md)
+- [Ramanujan's level-10 theta function identities](ramanujan-theta-level-ten.md)

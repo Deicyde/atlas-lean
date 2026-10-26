@@ -5,25 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.block_match_sternBrocot_mallowsQ
 ---
 
-# Block match stern Brocot mallows Q
+# Block-matching lemma
 
-Block-matching lemma. (i) Equal length-`ℓ` blocks of `SB(α)` at `j₁`, `j₂` together with
-`Q_{j₁} = Q_{j₂}` are equivalent to equal length-`(ℓ+1)` blocks of `Q(SB(α))`. (ii) Equal
-length-`ℓ` blocks of `T(Q(SB(α)))` at `i₁`, `i₂` together with `Q_{o(i₁)} = Q_{o(i₂)}` are
-equivalent to equality of the blocks of `Q(SB(α))` from `o(i₁)` to `o(i₁ + ℓ)` and from `o(i₂)`
-of the same length; then `o(i₂ + k) - o(i₂) = o(i₁ + k) - o(i₁)` for `k ≤ ℓ`. Domain extension:
-the paper assumes `ℓ ≥ 1`, `j₁ < j₂`, `i₁ < i₂`; the statement is trivial for `ℓ = 0`,
-symmetric in the two positions, and trivial for equal positions.
+**Block-matching lemma.** Let $\alpha \in (0, 1)$ be irrational, let $x = \mathrm{SB}(\alpha)$
+be its Stern–Brocot representation, let $q = Q(x)$ be the image of $x$ under Hida's map $Q$ to
+sequences over $\{O_L, E_R, O_R, E_L\}$, and let $T(q)$ be the image of $q$ under Hida's map $T$
+to sequences over $\{L, M, R\}$; all sequences are indexed from $0$. Let $o(i)$ be the $i$-th
+position, counting from $0$, at which $q$ takes the value $O_L$ or $O_R$. Then for all natural
+numbers $\ell$, $j_1$, $j_2$, $i_1$, $i_2$, with $-$ denoting truncated subtraction of natural
+numbers:
+(i) $x_{j_1 + t} = x_{j_2 + t}$ for all $t < \ell$ together with $q_{j_1} = q_{j_2}$ holds if and
+only if $q_{j_1 + t} = q_{j_2 + t}$ for all $t \le \ell$;
+(ii) $T(q)_{i_1 + t} = T(q)_{i_2 + t}$ for all $t < \ell$ together with $q_{o(i_1)} = q_{o(i_2)}$
+holds if and only if $q_{o(i_1) + t} = q_{o(i_2) + t}$ for all $t \le o(i_1 + \ell) - o(i_1)$;
+(iii) if $T(q)_{i_1 + t} = T(q)_{i_2 + t}$ for all $t < \ell$ and $q_{o(i_1)} = q_{o(i_2)}$, then
+$o(i_2 + k) - o(i_2) = o(i_1 + k) - o(i_1)$ for all $k \le \ell$.
+
+The paper assumes $\ell \ge 1$, $j_1 < j_2$ and $i_1 < i_2$; the statement is trivial for
+$\ell = 0$, symmetric in the two positions, and trivial for equal positions.
 
 ## Depends on
 
-- [Mallows Letter](mallows-letter.md)
-- [Mallows Parity Letter](mallows-parity-letter.md)
-- [Stern Brocot Letter](stern-brocot-letter.md)
-- [Mallows Odd Index](mallows-odd-index.md)
-- [Mallows Q](mallows-q.md)
-- [Mallows T](mallows-t.md)
-- [Stern Brocot Rep](stern-brocot-rep.md)
+- [The Mallows alphabet](mallows-letter.md)
+- [The parity alphabet](mallows-parity-letter.md)
+- [Stern–Brocot letters](stern-brocot-letter.md)
+- [Odd positions of a parity sequence](mallows-odd-index.md)
+- [The parity sequence of a Stern–Brocot word](mallows-q.md)
+- [The map $T$](mallows-t.md)
+- [Stern–Brocot representation](stern-brocot-rep.md)
 
 ## Sources
 

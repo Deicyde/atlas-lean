@@ -5,16 +5,23 @@ statement: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_eq_add_two_of_form
 ---
 
-# Corollary 3
+# Four forms of even numbers with 2-complexity $m + 2$
 
-**Corollary 3**: for `m ≥ 3` and positive even `n` with
-`2^m < n ≤ 2^(m+1)`, if `n` is of one of the four forms in
-`twoComplexityAddTwoForm`, then `‖n‖₂ = m + 2`.
+**Four forms of even numbers with 2-complexity $m + 2$.** Write $\|n\|_2$ for the
+2-complexity of $n$. Let $m \ge 3$ and let $n$ be an even natural number with
+$2^m < n \le 2^{m+1}$. Suppose that $n$ has one of the following forms, where all exponents
+are natural numbers:
+(a) $n = 2^m + 2^{m_2} + 2^{m_3}$ with $m > m_2 > m_3 \ge 1$;
+(b) $n = 2^m + 2^{m_2} + 2^{m_3} + 2^{m_4}$ with $m > m_2 > m_3 > m_4 \ge 2$ and
+$m + m_4 = m_2 + m_3$;
+(c) $n = 2^m + 2^{m-3} + 2^{m_2} + 2^{m_2-1}$ with $m \ge m_2 + 3 \ge 6$;
+(d) $n = 2^m + 2^{m-5} + 2^{m-6} + 2^{m-7}$ with $m \ge 10$.
+Then $\|n\|_2 = m + 2$.
 
 ## Depends on
 
-- [Complexity L](complexity-l.md)
-- [Two Complexity Add Two Form](two-complexity-add-two-form.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
+- [Zhang's four exceptional forms](two-complexity-add-two-form.md)
 
 ## Sources
 

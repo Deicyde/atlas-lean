@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_amatoCathetusParams_three
 ---
 
-# One mem amato Cathetus Params three
+# Amato's parameter set for the cathetus $3$ contains $1$
 
-`1 ∈ C(3)` (it generates `(3, 4, 5)`).
+**Amato's parameter set for the cathetus $3$ contains $1$.** We have $1 \in C(3)$, where
+$C(x)$ is Amato's cathetus parameter set.
+
+The parameter $d = 1$ generates the triple $(3, 4, 5)$.
 
 ## Depends on
 
-- [Amato Cathetus Params](amato-cathetus-params.md)
+- [Amato's cathetus parameter set](amato-cathetus-params.md)
 
 ## Sources
 

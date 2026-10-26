@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsNilpotentAt
 ---
 
-# Is Nilpotent At
+# Nilpotent polynomial at a point
 
-A polynomial `u ∈ ℤ[x]` is nilpotent at `r` if some iterate `u^{(n)}(r)`, `n ≥ 1`,
-is `0`.
+**Nilpotent polynomial at a point.** Let $u \in \mathbb{Z}[x]$ and $r \in \mathbb{Z}$, and
+write $u^{(n)}$ for the $n$-fold iterate of $u$ as a map $\mathbb{Z} \to \mathbb{Z}$. Then $u$ is
+nilpotent at $r$ if $u^{(n)}(r) = 0$ for some $n \ge 1$.
 
 ## Depends on
 

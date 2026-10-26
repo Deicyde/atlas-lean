@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.repetend_digit_pow_mul_eq_of_mul_modEq_one
 ---
 
-# Repetend digit pow mul eq of mul mod Eq one
+# Repetend digits are symmetric under inverse indices
 
-Repetend digit formula symmetry: let `b` have order `L` modulo `n`, `b_x = b^x mod n`, and
-`r_{x,j} = ⌊b_x^(j+1)/n⌋ mod b_x` the `j`-th base-`b_x` digit of `1/n`. If `j` is prime to `L` and
-`j j' ≡ 1 (mod L)`, then `r_{xj, j'} = r_{x, j}`.
+**Repetend digits are symmetric under inverse indices.** Let $n, b, x, j, j'$ be natural
+numbers and $L \ge 1$, and suppose $b$ has multiplicative order $L$ modulo $n$. For $y, c \ge 0$
+put $b_y = b^y \bmod n$ and $r_{y,c} = \lfloor b_y^{c+1}/n \rfloor \bmod b_y$, the $c$-th digit
+of $1/n$ in base $b_y$. If $\gcd(j, L) = 1$ and $j j' \equiv 1 \pmod L$, then
+$r_{xj, j'} = r_{x, j}$.
 
 ## Depends on
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WilsonQuotientsWanted.exists_int_eq_wilsonQuotientZPlus_two_mul_and_modEq
 ---
 
-# Exists int eq wilson Quotient ZPlus two mul and mod Eq
+# The sign-adjusted Wilson quotient sum Z⁺(2n) modulo 2n
 
-Morozov's Theorem 5: for the integer value of `Z^+(2n)`,
-it is `0 [ZMOD 2n]` when `n = 2` or `n` is composite, and
-`n + 1 [ZMOD 2n]` when `n` is an odd prime.
+**The sign-adjusted Wilson quotient sum Z⁺(2n) modulo 2n.** Let $n \ge 1$ be a natural
+number. Morozov's sign-adjusted Wilson quotient sum $Z^+(2n)$ is an integer; it satisfies
+$Z^+(2n) \equiv 0 \pmod{2n}$ if $n = 2$ or $n$ is neither $1$ nor prime, and
+$Z^+(2n) \equiv n + 1 \pmod{2n}$ if $n$ is an odd prime.
 
 ## Depends on
 
-- [Wilson Quotient ZPlus](wilson-quotient-zplus.md)
+- [Morozov's sign-adjusted Wilson quotient sum](wilson-quotient-zplus.md)
 
 ## Sources
 

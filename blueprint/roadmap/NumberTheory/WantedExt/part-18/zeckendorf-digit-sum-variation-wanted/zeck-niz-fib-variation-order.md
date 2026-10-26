@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.zeckNIZ_fib_variation_order
 ---
 
-# Zeck NIZ fib variation order
+# The variation by $F_\ell$ on $\mathrm{NIZ}_\ell$ is $1$
 
-For `r = F_ℓ`, `ℓ ≥ 3`: `Δ^{(F_ℓ)} = 1` on `NIZ_ℓ`.
+**The variation by $F_\ell$ on $\mathrm{NIZ}_\ell$ is $1$.** Let $\ell \ge 3$, let
+$F_1 = F_2 = 1, F_3 = 2, \dots$ be the Fibonacci numbers, and let $\Delta^{(F_\ell)}$ be the
+variation of the Zeckendorf sum of digits under adding $F_\ell$ on the Zeckendorf-adic integers
+$\mathbb{X}$. Then $\Delta^{(F_\ell)}(x) = 1$ for every $x \in \mathbb{X}$ in the
+new-information zone $\mathrm{NIZ}_\ell$ of order $\ell$ for $r = F_\ell$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck NIZ](zeck-niz.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [New-information zone](zeck-niz.md)
 
 ## Sources
 

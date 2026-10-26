@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.lurothMap_lurothMap_27_71
 ---
 
-# Luroth Map luroth Map 27 71
+# The Lüroth orbit of $27/71$ has period two
 
-`T(T(27/71)) = 27/71` and the first two digits of `27/71` are `3, 4`, so
-`27/71 = [3, 4, 3, 4, ...]`.
+**The Lüroth orbit of $27/71$ has period two.** The Lüroth map $T$ sends $27/71$ to $20/71$
+and sends $20/71$ to $27/71$; in particular $T(T(27/71)) = 27/71$.
 
 ## Depends on
 
-- [Luroth Map](../luroth-consecutive-digits-wanted/luroth-map.md)
+- [Lüroth map](../luroth-consecutive-digits-wanted/luroth-map.md)
 
 ## Proof depends on
 
-- [Luroth Digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
+- [First Lüroth digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
 
 ## Sources
 

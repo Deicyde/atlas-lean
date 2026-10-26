@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.infinite_riesel_repunits_of_primitive_divisors
 ---
 
-# Theorem 3.13
+# Infinitely many Riesel repunits from primitive divisors of $2^{2^j} - 1$
 
-**Theorem 3.13.** For `1 ≤ j ≤ τ` let `p_j` be a primitive prime divisor of `2^{2^j} - 1`,
-`q ≠ p_τ` another primitive prime divisor of `2^{2^τ} - 1`, and `P = p_1 ⋯ p_τ`. If `b > 2`,
-`b ≡ 1 (mod P)`, and (i) `b ≡ 0 (mod q)`, or (ii) `b ≡ 1 (mod q)`, or (iii) `b ≢ 0, 1 (mod q)` and
-`gcd(P, ord_q(b)) = 1`, then there are infinitely many `b`-repunit Riesel numbers.
+**Infinitely many Riesel repunits from primitive divisors of $2^{2^j} - 1$.** Let $\tau$ be a
+natural number. For $1 \le j \le \tau$ let $p_j$ be a primitive prime divisor of $2^{2^j} - 1$ in
+the sequence $(2^m - 1)_{m \ge 0}$, let $q \ne p_\tau$ be a primitive prime divisor of
+$2^{2^\tau} - 1$ in the same sequence, and put $P = p_1 \cdots p_\tau$. Let $b > 2$ be a natural
+number with $b \equiv 1 \pmod P$, and suppose that (i) $q \mid b$, or (ii) $b \equiv 1 \pmod q$, or
+(iii) $q \nmid b$, $b \not\equiv 1 \pmod q$ and $\gcd(P, \operatorname{ord}_q(b)) = 1$, where
+$\operatorname{ord}_q(b)$ is the multiplicative order of $b$ modulo $q$. Then there are infinitely
+many Riesel numbers among the $b$-repunits $(b^t - 1)/(b - 1)$ with $t \ge 1$.
 
 ## Depends on
 
 - [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
-- [Is Riesel Number](is-riesel-number.md)
-- [Repstring](repstring.md)
+- [Riesel number](is-riesel-number.md)
+- [Repstrings](repstring.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zeckAdicTruncVariation
 ---
 
-# Zeck Adic Trunc Variation
+# Truncated variation of the Zeckendorf digit sum
 
-The truncated variation `Δ_k^{(r)}(x) = s_k(x + r) - s_k(x)`, where
-`s_k(x) = x_2 + ⋯ + x_k` and `x + r = T^[r] x`.
+**Truncated variation of the Zeckendorf digit sum.** Let $T$ be the Zeckendorf odometer
+$x \mapsto x + 1$ on binary sequences, and write $x + r = T^r(x)$ for its $r$-th iterate. For
+$r, k \in \mathbb{N}$ and a binary sequence $x = (x_i)_{i \in \mathbb{N}}$, let
+$s_k(x) = x_2 + \dots + x_k$. The truncated variation is the integer
+$\Delta_k^{(r)}(x) = s_k(x + r) - s_k(x)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 

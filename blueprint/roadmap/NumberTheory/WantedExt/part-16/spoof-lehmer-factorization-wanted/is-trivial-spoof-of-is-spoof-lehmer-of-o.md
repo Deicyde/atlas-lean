@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isTrivialSpoof_of_isSpoofLehmer_of_one_mem
 ---
 
-# Is Trivial Spoof of is Spoof Lehmer of one mem
+# Spoof Lehmer factorizations with a base $1$ are trivial
 
-A Lehmer factorization having `1` as a base is trivial.
+**Spoof Lehmer factorizations with a base $1$ are trivial.** If a finite multiset $F$ of pairs
+$(x, a)$ of natural numbers is a $k$-Lehmer factorization for some integer $k$, and some pair in
+$F$ has base $x = 1$, then every base of $F$ equals $1$, that is, $F$ is trivial.
 
 ## Depends on
 
-- [Is Spoof Lehmer](is-spoof-lehmer.md)
-- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Lehmer factorizations](is-spoof-lehmer.md)
+- [Trivial spoof factorizations](is-trivial-spoof.md)
 
 ## Sources
 

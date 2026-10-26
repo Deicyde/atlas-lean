@@ -5,17 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.SelbergClassFunction.hasSum_logDeriv_aPoint_of_ne_zero
 ---
 
-# Lemma 6, case `a ≠ 0`
+# Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative)
 
-**Lemma 6, case `a ≠ 0`.** For `Re s` large,
-`F^(k+1)(s) / (F^(k)(s) - a) = ∑_{l ≥ 0} ∑_{n₀, …, n_l} (-1)^(k(l+1)) / a^(l+1) · (log n₀)^(k+1)
-(log n₁ ⋯ log n_l)^k a(n₀) ⋯ a(n_l) / (n₀ ⋯ n_l)^s`, as an absolutely convergent sum over
-`l` and `(n₀, …, n_l)`. The paper's range `n_i ≥ ℓ` is written `n_i ≥ 1`: the added terms
-vanish (`log 1 = 0`, and `a(n) = 0` for `2 ≤ n < ℓ`).
+**Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative).** Let $F$ be a function in
+the Selberg class with Dirichlet coefficients $a(n)$, let $k \ge 1$ and let $a \in \mathbb{C}$ with
+$a \ne 0$. Then there is a real number $E$ such that for every $s \in \mathbb{C}$ with
+$\operatorname{Re} s \ge E$,
+
+$$
+\frac{F^{(k+1)}(s)}{F^{(k)}(s) - a} = \sum_{l \ge 0} \sum_{n_0, \dots, n_l \ge 1}
+\frac{(-1)^{k(l+1)}}{a^{l+1}} (\log n_0)^{k+1} (\log n_1 \cdots \log n_l)^k
+\frac{a(n_0) \cdots a(n_l)}{n_0^s \cdots n_l^s},
+$$
+
+where $F^{(k)}$ is the $k$-th derivative of $F$ and the sum over all pairs of $l \ge 0$ and
+positive integers $(n_0, \dots, n_l)$ converges unconditionally (equivalently, absolutely).
+
+The paper sums over $n_i \ge \ell$, where $\ell \ge 2$ is least with $a(\ell) \ne 0$; the added
+terms vanish because $\log 1 = 0$ and $a(n) = 0$ for $2 \le n < \ell$.
 
 ## Depends on
 
-- [Selberg Class Function](selberg-class-function.md)
+- [Functions in the Selberg class](selberg-class-function.md)
 
 ## Sources
 

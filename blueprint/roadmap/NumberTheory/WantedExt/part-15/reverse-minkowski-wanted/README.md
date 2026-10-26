@@ -4,7 +4,7 @@ navigation: module
 
 # Reverse Minkowski
 
-- [Ρ](untitled.md)
-- [B](b.md)
-- [Determinant](determinant.md)
-- [Theorem 1 2](theorem-1-2.md)
+- [Gaussian mass of a lattice](untitled.md)
+- [Basis matrix of a lattice](b.md)
+- [Determinant of a lattice](determinant.md)
+- [Reverse Minkowski theorem](theorem-1-2.md)

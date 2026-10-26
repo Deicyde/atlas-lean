@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.riemannZeta_twelfth_moment_le_log
 ---
 
-# Riemann Zeta twelfth moment le log
+# Heath-Brown's twelfth moment bound with the logarithmic factor
 
-Heath-Brown's twelfth-moment bound on the critical line with the logarithmic factor:
-`∫_1^T |ζ(1/2 + i t)|^{12} dt ≪ T^2 (log T)^{17}` for all sufficiently large `T`.
+**Heath-Brown's twelfth moment bound with the logarithmic factor.** There are constants $C$
+and $T_0$ such that for every real $T \ge T_0$,
+
+$$\int_1^T |\zeta(1/2 + it)|^{12} \, dt \le C T^2 (\log T)^{17}.$$
 
 ## Depends on
 

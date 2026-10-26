@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.three_pow_eq_sq_add_two_iff
 ---
 
-# Three pow eq sq add two iff
+# Solutions of $3^x = y^2 + 2$
 
-The only non-negative solutions of `3ˣ = y² + 2` are `(x, y) = (1, 1)` and `(3, 5)`.
+**Solutions of $3^x = y^2 + 2$.** For natural numbers $x, y$, we have $3^x = y^2 + 2$ if and
+only if $(x, y)$ is $(1, 1)$ or $(3, 5)$.
 
 ## Depends on
 

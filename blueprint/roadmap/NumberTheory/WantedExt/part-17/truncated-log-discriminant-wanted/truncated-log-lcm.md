@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.truncatedLogLcm
 ---
 
-# Truncated Log Lcm
+# Least common multiple of $1, \dots, n$
 
-`L_n = lcm(1, 2, …, n)`.
+**Least common multiple of $1, \dots, n$.** For a natural number $n$, $L_n$ is the least common
+multiple $\operatorname{lcm}(1, 2, \dots, n)$ of the integers from $1$ to $n$; in particular
+$L_0 = 1$.
 
 ## Depends on
 

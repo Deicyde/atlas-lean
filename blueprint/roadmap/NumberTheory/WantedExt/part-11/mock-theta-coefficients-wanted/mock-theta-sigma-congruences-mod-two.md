@@ -5,17 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.mockThetaSigma_congruences_mod_two
 ---
 
-# Mock Theta Sigma congruences mod two
+# Congruences modulo 2 for the mock theta function $\sigma$
 
-Theorem 6: for a prime `p ≥ 5` with `(-2/p) = -1`, every `α ≥ 0` and `1 ≤ j ≤ p - 1`,
-`∑_n P_σ(2 p^{2α} n + (11 p^{2α} + 1)/12) q^n ≡ f_2 ψ(q^3) (mod 2)` and
-`P_σ(2 p^{2α+2} n + 2 p^{2α+1} j + (11 p^{2α+2} + 1)/12) ≡ 0 (mod 2)`. The product
-`f_2 ψ(q^3) = f_2 f_6^2 / f_3` (Equation (10)) is used with `f_3` cleared; the division by
-`12` is exact since `p^2 ≡ 1 (mod 24)`.
+**Congruences modulo 2 for the mock theta function $\sigma$.** Write
+$\sigma(q) = \sum_{n \ge 0} P_\sigma(n) q^n$ for the sixth-order mock theta function $\sigma$ and
+let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime with Legendre symbol
+$\left(\frac{-2}{p}\right) = -1$ and let $\alpha \ge 0$ be an integer. Then, coefficientwise,
+
+$$
+f_3 \sum_{n \ge 0} P_\sigma\Bigl(2 p^{2\alpha} n + \frac{11 p^{2\alpha} + 1}{12}\Bigr) q^n
+\equiv f_2 f_6^2 \pmod 2,
+$$
+
+and for all integers $n \ge 0$ and all integers $j$ with $1 \le j \le p - 1$,
+
+$$
+P_\sigma\Bigl(2 p^{2\alpha+2} n + 2 p^{2\alpha+1} j + \frac{11 p^{2\alpha+2} + 1}{12}\Bigr)
+\equiv 0 \pmod 2.
+$$
+
+Since $f_2 f_6^2 / f_3 = f_2 \psi(q^3)$ with $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, the first
+congruence says that the series of $P_\sigma(2 p^{2\alpha} n + (11 p^{2\alpha} + 1)/12)$ is
+congruent to $f_2 \psi(q^3)$ modulo $2$. The division by $12$ is exact since
+$p^2 \equiv 1 \pmod{24}$.
 
 ## Depends on
 
-- [Mock Theta Sigma](mock-theta-sigma.md)
+- [The sixth-order mock theta function $\sigma(q)$](mock-theta-sigma.md)
 - [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

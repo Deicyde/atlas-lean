@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_eq_zero_iff
 ---
 
-# Complexity L eq zero iff
+# The $l$-complexity vanishes exactly on numbers that cannot be built
 
-`complexityL l n = 0` exactly when `n` cannot be built
-from copies of `l` at all.
+**The $l$-complexity vanishes exactly on numbers that cannot be built.** For natural
+numbers $l$ and $n$, the $l$-complexity of $n$ is $0$ if and only if there is no $k$ such that
+$n$ can be built from $k$ copies of $l$ using addition and multiplication.
 
 ## Depends on
 
-- [Can Build](can-build.md)
-- [Complexity L](complexity-l.md)
+- [Numbers built from copies of $l$](can-build.md)
+- [The $l$-complexity of a natural number](complexity-l.md)
 
 ## Proof depends on
 
-- [One le](one-le.md)
-- [Complexity L spec](complexity-l-spec.md)
+- [Every build uses at least one copy](one-le.md)
+- [A buildable number is built from as many copies as its $l$-complexity](complexity-l-spec.md)
 
 ## Sources
 

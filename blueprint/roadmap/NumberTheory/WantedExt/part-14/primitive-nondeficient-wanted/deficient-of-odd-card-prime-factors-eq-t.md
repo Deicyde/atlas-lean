@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimitiveNondeficientWanted.deficient_of_odd_card_primeFactors_eq_two
 ---
 
-# Lemma
+# Odd numbers with two prime factors are deficient
 
-**Lemma** (classification for `k = 2`, odd case): all odd
-numbers with exactly two distinct prime divisors are deficient.
+**Odd numbers with two prime factors are deficient.** If $n$ is an odd natural number with
+exactly two distinct prime divisors, then $\sigma(n) < 2n$, where $\sigma(n)$ is the sum of the
+positive divisors of $n$.
 
 ## Depends on
 

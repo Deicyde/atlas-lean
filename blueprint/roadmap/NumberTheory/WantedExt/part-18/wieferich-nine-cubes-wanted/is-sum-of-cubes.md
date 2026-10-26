@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.WieferichNineCubesWanted.NumberTheory.IsSumOfCubes
 ---
 
-# Is Sum Of Cubes
+# Sum of $k$ cubes
 
-An integer `n` is a **sum of `k` cubes** if `n = x₁³ + ⋯ + x_k³` for some
-natural numbers `x₁, …, x_k`.
+**Sum of $k$ cubes.** A natural number $n$ is a sum of $k$ cubes if there are natural numbers
+$x_1, \dots, x_k$ with $n = x_1^3 + \dots + x_k^3$.
 
 ## Depends on
 

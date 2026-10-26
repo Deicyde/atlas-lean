@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.zeckAdicVariation_ergodic_average
 ---
 
-# Zeck Adic Variation ergodic average
+# Ergodic theorem for the Zeckendorf digit-sum variation
 
-For `r ≥ 1` and `f : ℤ → ℂ` with `f ∘ Δ^{(r)} ∈ L¹(ℙ)`:
-`(1/N) ∑_{n<N} f(Δ^{(r)}(n)) → ∫ f ∘ Δ^{(r)} dℙ`, where on `ℕ` `Δ^{(r)}(n) = s(n + r) - s(n)`.
+**Ergodic theorem for the Zeckendorf digit-sum variation.** Let $\mu$ be a probability
+measure on the digit sequences $x : \mathbb{N} \to \{0, 1\}$ that gives the complement of the
+Zeckendorf-adic integers $\mathbb{X}$ measure zero and is preserved by the odometer $T$. Let
+$r \ge 1$ and let $f : \mathbb{Z} \to \mathbb{C}$ be such that $f \circ \Delta^{(r)}$ is
+$\mu$-integrable, where $\Delta^{(r)}$ is the variation on $\mathbb{X}$. Write $s(n)$ for the
+number of terms in the Zeckendorf representation of $n$. Then
+
+$$\frac{1}{N} \sum_{n=0}^{N-1} f\bigl(s(n + r) - s(n)\bigr) \to \int f(\Delta^{(r)}(x))\, d\mu(x)$$
+
+as $N \to \infty$.
 
 ## Depends on
 
-- [Zeck Adic](zeck-adic.md)
-- [Zeck Adic Variation](zeck-adic-variation.md)
-- [Zeck Odometer](zeck-odometer.md)
+- [The Zeckendorf-adic integers](zeck-adic.md)
+- [The variation of the Zeckendorf digit sum](zeck-adic-variation.md)
+- [The Zeckendorf odometer](zeck-odometer.md)
 
 ## Sources
 
