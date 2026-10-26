@@ -48,7 +48,8 @@ theorem su2_conj_to_diag (A : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
       (∃ z : ℂ, z * starRingEnd ℂ z = 1 ∧
         (D : Matrix (Fin 2) (Fin 2) ℂ) =
           !![z, (0 : ℂ); 0, starRingEnd ℂ z]) ∧ IsConj A D := by
-  obtain ⟨α, β, hA, hnorm⟩ := su2_matrix_form A.val A.2
+  obtain ⟨α, β, hA, hnorm⟩ :=
+    Matrix.exists_eq_of_mem_specialUnitaryGroup_fin_two A.val A.2
   by_cases hβ : β = 0
   ·
     have hα_norm : Complex.normSq α = 1 := by simp [hβ] at hnorm; exact hnorm
