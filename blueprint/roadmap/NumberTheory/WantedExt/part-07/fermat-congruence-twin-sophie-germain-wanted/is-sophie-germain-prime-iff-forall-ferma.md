@@ -14,7 +14,7 @@ A prime `p` is a Sophie Germain prime if and only if
 
 ## Depends on
 
-- [Is Sophie Germain Prime](../../../MathlibExt/part-11/sophie-germain-prime/is-sophie-germain-prime.md)
+- [Sophie Germain primes](../../../MathlibExt/part-11/sophie-germain-prime/is-sophie-germain-prime.md)
 
 ## Sources
 

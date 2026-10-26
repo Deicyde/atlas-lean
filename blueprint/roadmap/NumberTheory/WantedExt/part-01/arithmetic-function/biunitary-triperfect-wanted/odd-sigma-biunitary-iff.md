@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.odd_sigmaBiunitary_iff
 ---
 
-# Odd sigma Biunitary iff
+# Parity of the biunitary divisor sum
 
-For positive `n`, `σ**(n)` is odd iff `n` is a power of `2` (including `1`).
+**Parity of the biunitary divisor sum.** For every positive integer $n$, the biunitary divisor
+sum $\sigma^{**}(n)$ is odd if and only if $n = 2^k$ for some natural number $k$ (so $n = 1$ is
+included).
 
 ## Depends on
 

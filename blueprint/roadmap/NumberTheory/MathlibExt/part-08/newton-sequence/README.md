@@ -5,5 +5,5 @@ navigation: module
 
 # Newton Sequence
 
-- [Is Newton Sequence](is-newton-sequence.md)
-- [Eq recurrence](eq-recurrence.md)
+- [Newton sequences](is-newton-sequence.md)
+- [The recurrence of a Newton sequence](eq-recurrence.md)

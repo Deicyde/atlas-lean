@@ -5,20 +5,22 @@ statement: formalized
 lean: MathlibExt.NumberTheory.DiophantineApproximation.ScottishBook152Wanted.steinhausDiscFrequenciesExist
 ---
 
-# Steinhaus Disc Frequencies Exist
+# Steinhaus's disc frequencies exist
 
-A disc of radius `1` covers at least two and at most five lattice points.
-Translating it through vectors `n * w` (`n = 1, 2, ...`), where `w` has both
-coordinates irrational and their ratio irrational, the frequencies of the
-counts `2`, `3`, `4` exist: for each `m ∈ {2, 3, 4}` the proportion of
-`n < N` with exactly `m` lattice points in the translated disc converges as
-`N → ∞`. The frequency values themselves are not pinned down here: they are
-the measures of the corresponding regions for the limiting distribution of
-`n * w` modulo the lattice, and in particular depend on `w`.
+**Steinhaus's disc frequencies exist.** Let $w = (w_1, w_2) \in \mathbb{R}^2$ be such that
+$w_1$, $w_2$ and $w_1 / w_2$ are all irrational, and for each natural number $n$ let $c(n)$ be the
+disc lattice count of $w$ and $n$, the number of integer lattice points in the closed disc of
+radius $1$ centred at $n w$. Then for each $m$ equal to $2$, $3$ or $4$, the proportion of the
+integers $n$ with $0 \le n < N$ and $c(n) = m$ converges to a real number as $N \to \infty$.
+
+A closed disc of radius $1$ always covers at least two and at most five lattice points. The
+frequency values themselves are not pinned down here: they are the measures of the corresponding
+regions for the limiting distribution of $n w$ modulo the lattice, and in particular depend on
+$w$.
 
 ## Depends on
 
-- [Disc Lattice Count](disc-lattice-count.md)
+- [Lattice points in a translated unit disc](disc-lattice-count.md)
 
 ## Sources
 

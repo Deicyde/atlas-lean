@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.negabinary_two_digits_complete_iff
 ---
 
-# Negabinary two digits complete iff
+# Negabinary representations with two digits
 
-For integers `a₁, a₂` with `|a₁ - a₂| ≠ 1`, every integer is `∑_{j=0}^k bⱼ(-2)ʲ` with
-digits `bⱼ ∈ {a₁, a₂}` iff `|a₁ - a₂| = 3ᵐ`, `a₁, a₂ ≢ 0 (mod 3)` and
-`max{|a₁|, |a₂|} ≤ 2|a₁ - a₂| - 1`. Restricted reading: the printed statement fails for
-`|a₁ - a₂| = 1` (the digits `{1, 2}` represent every integer, as `G(-2n + 1, -2n + 2)`
-has one component with cycle `(0, 1)`, yet `max{1, 2} = 2 > 1`); the paper's alternative
-`{a₁, a₂} = {0, ±1}` lies in the excluded case and is dropped.
+**Negabinary representations with two digits.** Let $a_1, a_2 \in \mathbb{Z}$ with
+$|a_1 - a_2| \ne 1$. Every integer $z$ can be written as $z = \sum_{j=0}^{k} b_j (-2)^j$ for some
+$k \in \mathbb{N}$ and digits $b_0, \dots, b_k \in \{a_1, a_2\}$ if and only if
+$|a_1 - a_2| = 3^m$ for some integer $m \ge 0$, neither $a_1$ nor $a_2$ is divisible by $3$, and
+$\max\{|a_1|, |a_2|\} \le 2|a_1 - a_2| - 1$.
+
+The hypothesis $|a_1 - a_2| \ne 1$ restricts the printed statement, which fails when
+$|a_1 - a_2| = 1$: the digits $\{1, 2\}$ represent every integer, yet $\max\{1, 2\} = 2 > 1$.
+The paper's alternative $\{a_1, a_2\} = \{0, \pm 1\}$ lies in the excluded case and is dropped.
 
 ## Depends on
 

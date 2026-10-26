@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_add_eq_mul_lucasV_sub
 ---
 
-# Lucas U add eq mul lucas V sub
+# Addition formula for the Lucas sequence $U$
 
-Lemma 2.1 (iv): `U_{m+n} = U_m V_n - y^n U_{m-n}` for `n ≤ m`.
+**Addition formula for the Lucas sequence $U$.** Let $x$ and $y \neq 0$ be integers and let
+$(U_n)$ and $(V_n)$ be the Lucas sequences with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$,
+$V_0 = 2$, $V_1 = x$ and $W_{n+2} = x W_{n+1} - y W_n$ for $W = U, V$. Then for all natural
+numbers $n \leq m$, $U_{m+n} = U_m V_n - y^n U_{m-n}$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

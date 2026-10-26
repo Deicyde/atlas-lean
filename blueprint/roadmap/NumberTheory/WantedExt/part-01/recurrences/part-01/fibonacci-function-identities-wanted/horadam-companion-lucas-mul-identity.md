@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.horadam_companion_lucas_mul_identity
 ---
 
-# Horadam companion lucas mul identity
+# Companion Lucas sequence identity for Horadam sequences
 
-Horadam identity with the companion Lucas sequence: for
-`W (j + 2) = P W (j + 1) - Q W j` with `Q ≠ 0`, the companion sequence
-`V = V(P, Q)` (same recurrence, `V_0 = 2`, `V_1 = P`) and integers `k`, `r`,
-`V_r W_(k+1) - Q V_(r-1) W_k = W_(k+r+1) - Q W_(k+r-1)`.
+**Companion Lucas sequence identity for Horadam sequences.** Let $P$, $Q$ be real numbers
+with $Q \neq 0$. Let $W \colon \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = P W_{j+1} - Q W_j$
+for every integer $j$, and let $V \colon \mathbb{Z} \to \mathbb{R}$ (the companion Lucas sequence)
+satisfy the same recurrence with $V_0 = 2$ and $V_1 = P$. Then for all integers $k$, $r$,
+
+$$V_r W_{k+1} - Q V_{r-1} W_k = W_{k+r+1} - Q W_{k+r-1}.$$
 
 ## Depends on
 

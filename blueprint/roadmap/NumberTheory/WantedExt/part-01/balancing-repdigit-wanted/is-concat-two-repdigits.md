@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsConcatTwoRepdigits
 ---
 
-# Is Concat Two Repdigits
+# Concatenations of two decimal repdigits
 
-Concatenation of two repdigits (in the strict sense of Integers 2025,
-A15): the decimal expansion of `n` consists of a block of `m₁ ≥ 1` digits
-`d₁ ∈ [1, 9]` followed by a block of `m₂ ≥ 1` digits `d₂ ∈ [0, 9]` with
-`d₁ ≠ d₂`, i.e. the expansion has exactly two digit runs.
+**Concatenations of two decimal repdigits.** A natural number $n$ is a concatenation of two
+repdigits if there are digits $d_1, d_2$ with $1 \le d_1 \le 9$, $0 \le d_2 \le 9$ and
+$d_1 \ne d_2$, and block lengths $m_1, m_2 \ge 1$, such that the decimal expansion of $n$ is
+$m_1$ copies of $d_1$ followed by $m_2$ copies of $d_2$; that is,
+$9n = d_1 (10^{m_1} - 1) 10^{m_2} + d_2 (10^{m_2} - 1)$. Equivalently, the decimal expansion of
+$n$ has exactly two runs of equal digits.
 
-The distinctness condition is required by the paper's classifications: for
-example `C_4 = 99` is not listed in its Lemma 5.
+Because of the condition $d_1 \ne d_2$, a repdigit such as $99$ is not a concatenation of two
+repdigits.
 
 ## Depends on
 

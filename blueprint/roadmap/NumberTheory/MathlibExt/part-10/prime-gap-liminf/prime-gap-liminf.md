@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.primeGapLiminf
 ---
 
-# Prime Gap Liminf
+# Liminf of prime gaps
 
-The liminf of actual consecutive-prime gaps, with infinity retained.
+**Liminf of prime gaps.** Let $p_0 < p_1 < p_2 < \cdots$ be the primes in increasing order
+and let $g_n = p_{n+1} - p_n$ be the $n$-th prime gap. The liminf of prime gaps is
+$\liminf_{n \to \infty} g_n$, taken in $\mathbb{N} \cup \{\infty\}$; the value $\infty$ is
+allowed.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Gap](../prime-gap.md)
+- [Prime gap](../prime-gap.md)
 
 ## Sources
 

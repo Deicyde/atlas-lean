@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_prod_choose_row_div
 ---
 
-# Tendsto prod choose row div
+# Asymptotics of the product of a row of Pascal's triangle
 
-Binomial coefficients in a row of Pascal's triangle:
-`∏_{ν=0}^n C(n, ν) ∼ C_row × e^{n^2/2 + n} / ((2π)^{n/2} n^{n/2 + 1/3})` with
-`C_row = (F_1 (2π)^{1/4})^{-1} = A^2 / ((2π)^{1/2} e^{1/12})`.
+**Asymptotics of the product of a row of Pascal's triangle.** Let $F_1$ be the first factorial
+product constant and $A$ the Glaisher–Kinkelin constant, and put
+$C_{\mathrm{row}} = \left(F_1 (2\pi)^{1/4}\right)^{-1}$. As $n \to \infty$, the ratio of
+$\prod_{\nu=0}^{n} \binom{n}{\nu}$ to $e^{n^2/2 + n} / \left((2\pi)^{n/2} n^{n/2 + 1/3}\right)$
+tends to $C_{\mathrm{row}}$, and $C_{\mathrm{row}} = A^2 / \left((2\pi)^{1/2} e^{1/12}\right)$.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

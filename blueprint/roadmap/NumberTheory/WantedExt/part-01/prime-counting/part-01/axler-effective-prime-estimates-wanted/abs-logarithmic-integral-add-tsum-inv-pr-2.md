@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt_of_RH
 ---
 
-# Abs logarithmic Integral add tsum inv prime pow lt of RH
+# Tails of prime power sums under the Riemann hypothesis
 
-Under the Riemann hypothesis, for every integer `n ≥ 2` and real `x ≥ 599`,
-`|li(x^{1-n}) + ∑_{p > x} 1/pⁿ| < (1 + 2n/(2n-1)) (log x + 2/(2n-1)) / (8π x^{n-1/2})`.
+**Tails of prime power sums under the Riemann hypothesis.** Assume the Riemann
+hypothesis. Then for every integer $n \ge 2$ and every real $x \ge 599$,
+
+$$
+\Big|\operatorname{li}(x^{1-n}) + \sum_{p > x} \frac{1}{p^n}\Big| <
+\frac{1}{8\pi x^{n - 1/2}} \Big(1 + \frac{2n}{2n-1}\Big) \Big(\log x + \frac{2}{2n-1}\Big),
+$$
+
+where $\operatorname{li}$ is the logarithmic integral and the sum runs over the primes $p > x$.
 
 ## Depends on
 

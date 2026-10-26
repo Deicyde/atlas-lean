@@ -5,5 +5,5 @@ navigation: module
 
 # Powerful Numbers Arithmetic Progressions
 
-- [Arbitrarily long arithmetic progressions of powerful numbers general](arbitrarily-long-arithmetic-progressions.md)
+- [Arithmetic progressions of 2-full numbers of every length](arbitrarily-long-arithmetic-progressions.md)
 - [Arbitrarily long arithmetic progressions of powerful numbers](arbitrarily-long-arithmetic-progressions-2.md)

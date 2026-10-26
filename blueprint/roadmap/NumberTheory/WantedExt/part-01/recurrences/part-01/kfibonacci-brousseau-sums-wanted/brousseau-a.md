@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.brousseauA
 ---
 
-# Brousseau A
+# The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
-The numbers `A_k^(p)` of Definition 1: `A_k^(0) = 1` and
-`A_k^(p) = (2/k) ∑_{j=1}^{⌈p/2⌉} binom(p, 2j-1) A_k^(p-2j+1)` for `p ≥ 1` (written with
-`p + 1` in place of `p` and `j + 1` in place of `j`).
+**The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums.** For a rational number $k$, the
+rational numbers $A_k^{(p)}$, $p \ge 0$, are defined by $A_k^{(0)} = 1$ and, for $p \ge 1$,
+
+$$
+A_k^{(p)} = \frac{2}{k} \sum_{j=1}^{\lceil p/2 \rceil} \binom{p}{2j-1} A_k^{(p-2j+1)},
+$$
+
+where $2/k$ is read as $0$ when $k = 0$.
 
 ## Depends on
 

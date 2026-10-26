@@ -5,7 +5,7 @@ navigation: module
 
 # Generalized Sylvester
 
-- [Generalized Sylvester](generalized-sylvester.md)
-- [Generalized Sylvester zero](generalized-sylvester-zero.md)
-- [Generalized Sylvester succ](generalized-sylvester-succ.md)
-- [Generalized Sylvester pos](generalized-sylvester-pos.md)
+- [Generalized Sylvester sequence](generalized-sylvester.md)
+- [Initial term of the generalized Sylvester sequence](generalized-sylvester-zero.md)
+- [Recurrence for the generalized Sylvester sequence](generalized-sylvester-succ.md)
+- [Positivity of the generalized Sylvester sequence](generalized-sylvester-pos.md)

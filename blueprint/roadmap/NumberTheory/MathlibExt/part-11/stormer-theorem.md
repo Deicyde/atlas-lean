@@ -6,11 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.stormer_theorem
 ---
 
-# Stormer
+# Størmer's theorem
 
-Stormer's theorem (stormer-s1): for each fixed smoothness bound `y ≥ 2`, there are only
-finitely many pairs of consecutive positive integers both of which are `y`-smooth
-(all prime factors `≤ y`), witnessed by an explicit finite bound `S`.
+**Størmer's theorem.** For every natural number $y \ge 2$, there is a finite set $S$ of
+pairs of natural numbers such that, for every positive integer $n$ such that all prime factors
+of $n$ and all prime factors of $n + 1$ are at most $y$, the pair $(n, n + 1)$ lies in $S$.
 
 ## Depends on
 

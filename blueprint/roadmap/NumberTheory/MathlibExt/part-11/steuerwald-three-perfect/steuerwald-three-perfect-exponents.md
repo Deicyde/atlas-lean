@@ -7,11 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.steuerwald_three_perfect_exponents
 ---
 
-# Steuerwald three perfect exponents
+# Steuerwald's theorem on 3-perfect numbers
 
-Steuerwald's theorem on 3-perfect numbers: if `N = 2 ^ a * 3 ^ b * m` with
-`a, b ≥ 1`, `Nat.Coprime 6 m`, and `ArithmeticFunction.sigma 1 N = 3 * N`,
-then `(a = 1 ∧ b ≠ 1) ∨ (a ≠ 1 ∧ b = 1)`.
+**Steuerwald's theorem on 3-perfect numbers.** Let $N$, $a$, $b$ and $m$ be natural numbers
+with $N = 2^a 3^b m$, $a \ge 1$, $b \ge 1$, and $m$ coprime to $6$. If $\sigma(N) = 3N$, where
+$\sigma(N)$ is the sum of the divisors of $N$, then either $a = 1$ and $b \ne 1$, or $a \ne 1$
+and $b = 1$.
 
 ## Depends on
 

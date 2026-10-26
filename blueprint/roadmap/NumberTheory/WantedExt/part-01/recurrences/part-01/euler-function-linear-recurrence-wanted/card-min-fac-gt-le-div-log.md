@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_minFac_gt_le_div_log
 ---
 
-# Card min Fac gt le div log
+# Sieve bound for integers without small prime factors
 
-Brun sieve bound: uniformly for `x ≥ y ≥ 2`, the number `Φ(x, y)` of positive `n ≤ x` whose
-least prime factor `p(n)` exceeds `y` (with `p(1) = 1`, as `Nat.minFac 1 = 1`) is `≪ x / log y`.
+**Sieve bound for integers without small prime factors.** Write $p(n)$ for the least prime
+factor of an integer $n \ge 2$, and set $p(1) = 1$. There is a constant $C$ such that for all real
+$x$ and $y$ with $2 \le y \le x$, the number of integers $1 \le n \le x$ with $p(n) > y$ is at
+most $C x / \log y$.
 
 ## Depends on
 

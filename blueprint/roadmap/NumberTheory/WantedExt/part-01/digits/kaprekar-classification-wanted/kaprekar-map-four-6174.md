@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kaprekarMap_four_6174
 ---
 
-# Kaprekar Map four 6174
+# 6174 is fixed by the four-digit Kaprekar map
 
-Characteristic value: `f(6174) = 7641 - 1467 = 6174` in `D_4`.
+**6174 is fixed by the four-digit Kaprekar map.** The Kaprekar map with $n = 4$ sends $6174$
+to itself: $7641 - 1467 = 6174$.
 
 ## Depends on
 
-- [Kaprekar Map](kaprekar-map.md)
+- [Kaprekar map](kaprekar-map.md)
 
 ## Sources
 

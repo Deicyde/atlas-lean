@@ -18,7 +18,7 @@ positive root (there the positive root equals `G_m`, and only the negative choic
 
 ## Depends on
 
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

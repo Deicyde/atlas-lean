@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsImmediatePredecessor
 ---
 
-# Is Immediate Predecessor
+# Immediate predecessor
 
-`μ` is the immediate predecessor of `ν` in the collection `E`: the largest element of `E`
-that is `<_a ν`.
+**Immediate predecessor.** Let $E$ be a collection of finitely supported coefficient functions
+$\mathbb N \to \mathbb N$, and let $\lt _a$ be the ascending lexicographic order. A finitely supported
+coefficient function $\mu$ is the immediate predecessor of $\nu$ in $E$ if $\mu \in E$,
+$\mu \lt _a \nu$, and every $\xi \in E$ with $\xi \lt _a \nu$ satisfies $\xi = \mu$ or $\xi \lt _a \mu$.
+That is, $\mu$ is the largest element of $E$ that is $\lt _a \nu$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Asc Lex LT](asc-lex-lt.md)
+- [Ascending lexicographic order](asc-lex-lt.md)
 
 ## Sources
 

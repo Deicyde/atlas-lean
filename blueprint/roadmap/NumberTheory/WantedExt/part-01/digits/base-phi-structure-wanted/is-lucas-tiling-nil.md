@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isLucasTiling_nil
 ---
 
-# Is Lucas Tiling nil
+# Lucas tilings by the empty list
 
-The empty list tiles exactly the empty interval `[b + 1, b]`.
+**Lucas tilings by the empty list.** For all natural numbers $a$ and $b$, the empty list is a
+Lucas tiling of $[a, b]$ if and only if $a = b + 1$.
 
 ## Depends on
 
-- [Is Lucas Tiling](is-lucas-tiling.md)
+- [Lucas tilings](is-lucas-tiling.md)
 
 ## Sources
 

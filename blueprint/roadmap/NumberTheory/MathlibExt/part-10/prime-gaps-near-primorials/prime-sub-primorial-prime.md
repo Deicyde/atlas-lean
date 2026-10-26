@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.AreConsecutivePrimes.prime_sub_primorial_prime
 ---
 
-# Prime sub primorial prime
+# Primes just above a primorial, for a consecutive-prime pair
 
-`prime_sub_primorial_prime_of_between_consecutive_primes` for consecutive primes packaged as
-`AreConsecutivePrimes q r`.
+**Primes just above a primorial, for a consecutive-prime pair.** Let $q < r$ be consecutive
+primes and let $q\#$ be the primorial of $q$, the product of all primes at most $q$. If $p$ is a
+prime with $q\# + 1 < p < q\# + r^2$, then $p - q\#$ is prime.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ lean: MetaMathlibExt.AreConsecutivePrimes.prime_sub_primorial_prime
 
 ## Proof depends on
 
-- [Prime sub primorial prime of between consecutive primes general](prime-sub-primorial-prime-of-between-con.md)
+- [Primes just above a primorial, general form](prime-sub-primorial-prime-of-between-con.md)
 
 ## Sources
 

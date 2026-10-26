@@ -12,12 +12,12 @@ lean: MetaMathlibExt.isBasePhiExpansion_one
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Base phi expansion](is-base-phi-expansion.md)
 
 ## Proof depends on
 
-- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
-- [Base Phi Value](../base-phi-representations-wanted/base-phi-value.md)
+- [Bergman expansions](../base-phi-representations-wanted/is-bergman-expansion.md)
+- [Value of a base phi expansion](../base-phi-representations-wanted/base-phi-value.md)
 
 ## Sources
 

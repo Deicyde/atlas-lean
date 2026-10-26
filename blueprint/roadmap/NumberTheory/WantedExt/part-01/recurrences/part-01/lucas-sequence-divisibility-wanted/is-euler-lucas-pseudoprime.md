@@ -5,20 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.IsEulerLucasPseudoprime
 ---
 
-# Is Euler Lucas Pseudoprime
+# Euler–Lucas pseudoprime
 
-Euler–Lucas pseudoprime: odd composite `N`, `gcd(N, QD) = 1`, and
-`U_{(N-(D/N))/2} ≡ 0` if `(Q/N) = 1`, `V_{(N-(D/N))/2} ≡ 0` if `(Q/N) = -1` (mod `N`).
+**Euler–Lucas pseudoprime.** Let $U$ and $V$ be the Lucas sequences with integer parameters
+$P$ and $Q \neq 0$, and let $D = P^2 - 4Q$. A natural number $N$ is an Euler–Lucas pseudoprime
+with parameters $P, Q$ when $N$ is odd and composite, $\gcd(N, QD) = 1$, and, writing
+$\varepsilon = (D/N)$ for the Jacobi symbol, $N \mid U_{(N-\varepsilon)/2}$ if the Jacobi symbol
+$(Q/N)$ equals $1$, and $N \mid V_{(N-\varepsilon)/2}$ if $(Q/N) = -1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Index of the Lucas pseudoprime congruences](lucas-pseudoprime-index.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

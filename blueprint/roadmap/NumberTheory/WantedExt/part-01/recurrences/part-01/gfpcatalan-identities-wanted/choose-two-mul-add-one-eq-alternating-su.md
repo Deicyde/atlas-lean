@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.choose_two_mul_add_one_eq_alternating_sum
 ---
 
-# Choose two mul add one eq alternating sum
+# Binomial coefficients of odd lower index as an alternating sum
 
-Lemma 3.2 (2): for `0 ≤ k < ⌊(n-1)/2⌋`,
-`C(n, 2k+1) = ∑_{i=k}^{⌊(n-1)/2⌋} (-1)^{i-k} 2^{n-2i-1} C(n-i-1, i) C(i, k)`.
+**Binomial coefficients of odd lower index as an alternating sum.** For natural numbers $n$
+and $k$ with $k < \lfloor (n-1)/2 \rfloor$,
+
+$$\binom{n}{2k+1} = \sum_{i=k}^{\lfloor (n-1)/2 \rfloor} (-1)^{i-k} \, 2^{n-2i-1}
+  \binom{n-i-1}{i} \binom{i}{k}.$$
 
 ## Depends on
 

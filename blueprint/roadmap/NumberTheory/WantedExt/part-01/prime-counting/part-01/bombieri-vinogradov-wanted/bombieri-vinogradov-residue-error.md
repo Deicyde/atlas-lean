@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovResidueError
 ---
 
-# Bombieri Vinogradov Residue Error
+# Residue-class error of Chebyshev's function
 
-The residue-class error of the Chebyshev psi function at level `y` for the
-residue `a` modulo `q`, measured against the inner-variable main term
-`y / φ(q)`.
+**Residue-class error of Chebyshev's function.** For natural numbers $y$, $q$ and $a$, the
+residue-class error is $E(y; q, a) = \left|\psi(y; q, a) - y/\varphi(q)\right|$, where
+$\psi(y; q, a)$ is Chebyshev's function in the residue class of $a$ modulo $q$ and $\varphi$ is
+Euler's totient function.
 
 ## Depends on
 

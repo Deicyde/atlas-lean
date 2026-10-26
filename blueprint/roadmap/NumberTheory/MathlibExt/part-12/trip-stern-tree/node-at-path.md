@@ -6,15 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.TripSternTree.nodeAtPath
 ---
 
-# Node At Path
+# Node selected by a binary path
 
-A finite binary path selects a node by iterating the corresponding
-transitions from the seed: `false` takes the left transition, `true` takes the
-right transition.
+**Node selected by a binary path.** Let $T$ be a TRIP-Stern tree with seed $s$, left
+transition $L$ and right transition $R$. A binary path is a finite sequence of steps, each left
+or right. The node of $T$ selected by a path $(b_1, \dots, b_k)$ is obtained by starting at $s$
+and applying, for $i = 1, \dots, k$ in order, $L$ if $b_i$ is a left step and $R$ if $b_i$ is a
+right step.
 
 ## Depends on
 
-- [Trip Stern Tree](trip-stern-tree.md)
+- [TRIP-Stern tree](trip-stern-tree.md)
 
 ## Sources
 

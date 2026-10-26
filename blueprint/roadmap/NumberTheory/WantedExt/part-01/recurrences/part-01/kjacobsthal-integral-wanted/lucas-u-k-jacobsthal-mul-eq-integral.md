@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_kJacobsthal_mul_eq_integral
 ---
 
-# Lucas U k Jacobsthal mul eq integral
+# Integral representation of k-Jacobsthal numbers at multiples
 
-`J_{k,ℓn} = (n J_{k,ℓ} / 2ⁿ) ∫_{-1}^{1} (j_{k,ℓ} + Δ_k J_{k,ℓ} x)^{n-1} dx`.
+**Integral representation of k-Jacobsthal numbers at multiples.** Let $k$, $\ell$ and $n$ be
+natural numbers, let $J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and
+$k$-Jacobsthal–Lucas numbers, and let $\Delta_k = \sqrt{k^2 + 8}$. Then
+
+$$J_{k,\ell n} = \frac{n J_{k,\ell}}{2^n} \int_{-1}^{1}
+(j_{k,\ell} + \Delta_k J_{k,\ell} x)^{n-1} \, dx.$$
+
+Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

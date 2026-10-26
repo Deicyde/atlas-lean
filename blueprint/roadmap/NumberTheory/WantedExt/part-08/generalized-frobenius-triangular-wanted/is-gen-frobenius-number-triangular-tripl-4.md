@@ -17,7 +17,7 @@ Explicit values for `s = 11, …, 20`, each as `4(g + 1) = (n+1)(n+2) L`:
 
 ## Depends on
 
-- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
 - [Triangular Triple](triangular-triple.md)
 
 ## Sources

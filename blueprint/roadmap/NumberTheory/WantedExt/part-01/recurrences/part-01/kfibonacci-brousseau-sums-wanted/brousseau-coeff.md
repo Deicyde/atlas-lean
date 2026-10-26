@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.brousseauCoeff
 ---
 
-# Brousseau Coeff
+# The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
-The coefficient polynomial `C_k^(p)(n) = ∑_{r=0}^p (-1)^r A_k^(r) binom(p, r) n^(p-r)`
-of Definition 5 (with `0^0 = 1`, which gives the paper's separate value
-`C_k^(p)(0) = (-1)^p A_k^(p)`).
+**The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums.** For a rational
+number $k$, let $A_k^{(r)}$ be the numbers for $k$-Fibonacci Brousseau sums. For a natural number
+$p$ and a rational number $n$,
+
+$$
+C_k^{(p)}(n) = \sum_{r=0}^{p} (-1)^r A_k^{(r)} \binom{p}{r} n^{p-r},
+$$
+
+where $0^0 = 1$; in particular $C_k^{(p)}(0) = (-1)^p A_k^{(p)}$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Brousseau A](brousseau-a.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsLBlock
 ---
 
-# Is LBlock
+# L-blocks
 
-`ζ` is an `L`-block with (zero-based) support interval `[lo, m - 1]` at index `m` (the paper's
-index `n - 1` with `n = m + 1 ≥ 2`): either the maximal block `θ^{m+1}` (`lo = 0`), or a proper
-block, agreeing with `θ^{m+1}` above `lo`, smaller at `lo`, and `0` below `lo`.
+**L-blocks.** Let $L$ be a list of natural numbers, and for each $m$ let $\theta^{m+1}$ be the
+maximal $L$-block, which vanishes from index $m$ on (indices are zero-based). A finitely supported
+coefficient function $\zeta$ is an $L$-block with support interval $[s, m - 1]$ if $1 \le m$,
+$s < m$, and either $s = 0$ and $\zeta = \theta^{m+1}$, or $\zeta_i = \theta^{m+1}_i$ for every
+$i > s$, $\zeta_s < \theta^{m+1}_s$ and $\zeta_i = 0$ for every $i < s$.
+
+In the paper's indexing this is a block at index $n - 1$ with $n = m + 1 \ge 2$.
 
 ## Depends on
 

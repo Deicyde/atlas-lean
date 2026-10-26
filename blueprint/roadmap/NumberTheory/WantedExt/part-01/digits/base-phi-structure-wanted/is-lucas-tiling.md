@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsLucasTiling
 ---
 
-# Is Lucas Tiling
+# Lucas tilings
 
-`IsLucasTiling a b P`: the translated Lucas intervals `Λ_k + t`, `(k, t) ∈ P`, taken in
-the order of `P`, are adjacent and their union is `[a, b]`. The first starts at `a`, each next
-one starts right after the previous one ends, and the last ends at `b` (for `P = []` the
-interval `[a, b]` is empty, `a = b + 1`).
+**Lucas tilings.** Write $\Lambda_k = [\ell_k, h_k]$ for the Lucas interval with left end
+$\ell_k$ and right end $h_k$. For natural numbers $a$, $b$ and a list $P$ of pairs $(k, t)$ of
+natural numbers, $P$ is a Lucas tiling of $[a, b]$ when the translated Lucas intervals
+$\Lambda_k + t$, $(k, t) \in P$, taken in the order of $P$, are adjacent and their union is
+$[a, b]$. Precisely, it is defined by recursion on $P$: the empty list is a Lucas tiling of
+$[a, b]$ exactly when $a = b + 1$, and the list consisting of $(k, t)$ followed by $P$ is a Lucas
+tiling of $[a, b]$ exactly when $\ell_k + t = a$ and $P$ is a Lucas tiling of $[h_k + t + 1, b]$.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

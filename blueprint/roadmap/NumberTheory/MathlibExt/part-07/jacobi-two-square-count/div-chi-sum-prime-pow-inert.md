@@ -6,14 +6,16 @@ proof: formalized
 lean: SumSquares.divChiSum_prime_pow_inert
 ---
 
-# Div Chi Sum prime pow inert
+# The divisor sum of $\chi_4$ at powers of a prime $q \equiv 3 \pmod 4$
 
-On `q ^ f` with `q ≡ 3 mod 4`, the divisor sum is 1 for even `f`
-and 0 for odd `f`.
+**The divisor sum of $\chi_4$ at powers of a prime $q \equiv 3 \pmod 4$.** Let $\chi_4$ be
+the nonprincipal Dirichlet character modulo 4. If $q$ is a prime with $q \equiv 3 \pmod 4$ and
+$f$ is a natural number, then $\sum_{d \mid q^f} \chi_4(d)$ equals $1$ when $f$ is even and $0$
+when $f$ is odd.
 
 ## Depends on
 
-- [Div Chi Sum](div-chi-sum.md)
+- [Divisor sum of the character modulo 4](div-chi-sum.md)
 
 ## Sources
 

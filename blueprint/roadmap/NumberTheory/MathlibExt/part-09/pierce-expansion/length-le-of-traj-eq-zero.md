@@ -6,18 +6,20 @@ proof: formalized
 lean: PierceExpansion.length_le_of_traj_eq_zero
 ---
 
-# Length le of traj eq zero
+# The Pierce length is at most any positive vanishing step
 
-The Pierce length is bounded by any positive vanishing step.
+**The Pierce length is at most any positive vanishing step.** For natural numbers $n$, $a$ and
+$j$ with $j \ge 1$, if the Pierce remainder trajectory $(t_i)_{i \ge 0}$ of $n$ and $a$ satisfies
+$t_j = 0$, then the Pierce length $\ell(n, a)$ satisfies $\ell(n, a) \le j$.
 
 ## Depends on
 
-- [Length](length.md)
-- [Traj](traj.md)
+- [Pierce length](length.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
+- [Pierce trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
 
 ## Sources
 

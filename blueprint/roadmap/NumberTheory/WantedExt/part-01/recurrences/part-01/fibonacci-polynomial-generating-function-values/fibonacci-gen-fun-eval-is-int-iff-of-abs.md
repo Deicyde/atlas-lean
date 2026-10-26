@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciGenFun_eval_isInt_iff_of_abs_lt_radius
 ---
 
-# Fibonacci Gen Fun eval is Int iff of abs lt radius
+# Integer values of the generalized Fibonacci generating function in its interval of convergence
 
-Corollary 1.6 (= Theorem 1.1, Bulawa and Lee): if `b ∣ a` and the rational `q` lies in the
-interval of convergence `|q| < 2 / (a + √(a² + 4b))` of `f(t) = t / (1 - at - bt²)`, then
-`f(q) ∈ ℤ` if and only if `q = F_{2i} / F_{2i+1}` for some `i ∈ ℕ`, where `F_i = F_i(1)`.
+**Integer values of the generalized Fibonacci generating function in its interval of
+convergence.** Let $a$ and $b$ be positive integers with $b \mid a$, and let
+$F_i(x) \in \mathbb{Z}[x]$ be the polynomials with $F_0 = 0$, $F_1 = 1$ and
+$F_{i+2} = ax\,F_{i+1} + b\,F_i$ for all $i \ge 0$. For a rational number $q$ with
+$|q| < 2 / (a + \sqrt{a^2 + 4b})$, the radius of convergence of the power series of
+$t / (1 - at - bt^2)$, the number $q / (1 - aq - bq^2)$ is an integer if and only if
+$q = F_{2i}(1) / F_{2i+1}(1)$ for some $i \in \mathbb{N}$.
+
+The source attributes this result (its Theorem 1.1) to Bulawa and Lee.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

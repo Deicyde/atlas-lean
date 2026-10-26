@@ -5,31 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_quotient_dvd_and_seed_mem_lucasPeriodSet
 ---
 
-# Lucas UPeriod quotient dvd and seed mem lucas Period Set
+# Period quotients and seeds of $S(U)$
 
-Theorem 4.3, the parts on `E_U(p)` and on `s₀`: for nondegenerate `U(a, b)` with `b = ±1`, or
-`b` odd and `a = b - 1`, `E_U(p) = π_U(p) / ρ_U(p)` divides `4` if `b = 1` and `2` otherwise, for
-primes `p ∤ b` (where `E_U(p)` is defined). Let the admissible `s₀` be `1`, together with `6` if
-`a ≡ 3 (mod 6)`, `b = 1` or `a ≡ ±1 (mod 6)`, `b = -1`; `24` if `a ≡ ±1 (mod 6)`, `b = 1`; `12`
-if `a ≡ 3 (mod 6)`, `b = -1`; `2` if `b` is odd and `a = b - 1`. Then each admissible
-`s₀ ∈ S(U)`.
+**Period quotients and seeds of $S(U)$.** Let $U = U(P, Q)$ be a nondegenerate Lucas
+sequence with $Q = -1$, or $Q = 1$, or $Q$ odd and $P = -Q - 1$. Write $\pi_U(m)$ and
+$\rho_U(m)$ for the least period and the least restricted period of $U$ modulo $m$, and $S(U)$
+for the set of positive integers $n$ coprime to $Q$ with $\pi_U(n) \mid n$. For every prime
+$p \nmid Q$, $\rho_U(p)$ divides $\pi_U(p)$, and the quotient $\pi_U(p) / \rho_U(p)$ divides $4$
+if $Q = -1$ and divides $2$ if $Q \ne -1$. Moreover, each of the following numbers $s_0$ lies in
+$S(U)$: $s_0 = 1$; $s_0 = 6$ if $P \equiv 3 \pmod 6$ and $Q = -1$, or if $P \equiv \pm 1 \pmod 6$
+and $Q = 1$; $s_0 = 24$ if $P \equiv \pm 1 \pmod 6$ and $Q = -1$; $s_0 = 12$ if
+$P \equiv 3 \pmod 6$ and $Q = 1$; $s_0 = 2$ if $Q$ is odd and $P = -Q - 1$.
 
-The characterization of `S(U)` by chains `n₀ = s₀`, `n_i = n_(i-1) s_i 2 ^ ε(s_i)` (primes
-`s_i ∣ D U_(n_(i-1))`, `ε(s_i) = max(ν₂(π_U(s_i)) - ν₂(n_(i-1)), 0)`) is false as printed in both
-directions and is omitted. For `(a, b) = (-10, -1)` only `s₀ = 1` is admissible and
-`π_U(2) = 2`, so `2 ∈ S(U)`, but the only chain that could end at `2` has `s₁ = 2`, and then
-`ε(2) = ν₂(π_U(2)) = 1` gives `n₁ = 4`. For `(a, b) = (-11, -1)` (`D = 117`) the chain `s₀ = 1`,
-`s₁ = 13`,
-`s₂ = 53 ∣ U 13 = 2862615066961` gives `ε(53) = ν₂(26) = 1` and `n₂ = 1378`, while
-`π_U(1378) = 78 ∤ 1378`.
+In the paper's notation $W(n + 2) = a W(n + 1) + b W(n)$ one has $a = P$ and $b = -Q$. The
+paper also characterizes $S(U)$ by chains $n_0 = s_0$, $n_i = n_{i-1} s_i 2^{\varepsilon(s_i)}$
+with primes $s_i \mid D U_{n_{i-1}}$, where $D = P^2 - 4Q$ and
+$\varepsilon(s_i) = \max(\nu_2(\pi_U(s_i)) - \nu_2(n_{i-1}), 0)$; that characterization is
+false as printed in both directions and is omitted. For $(P, Q) = (-10, 1)$ only $s_0 = 1$ is
+admissible and $\pi_U(2) = 2$, so $2 \in S(U)$, but the only chain that could end at $2$ has
+$s_1 = 2$, and then $\varepsilon(2) = \nu_2(\pi_U(2)) = 1$ gives $n_1 = 4$. For
+$(P, Q) = (-11, 1)$, where $D = 117$, the chain $s_0 = 1$, $s_1 = 13$,
+$s_2 = 53 \mid U_{13} = 2862615066961$ gives $\varepsilon(53) = \nu_2(26) = 1$ and
+$n_2 = 1378$, while $\pi_U(1378) = 78 \nmid 1378$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Period Set](lucas-period-set.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

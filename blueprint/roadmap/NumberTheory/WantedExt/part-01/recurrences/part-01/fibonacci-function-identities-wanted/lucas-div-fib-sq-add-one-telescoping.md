@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucas_div_fib_sq_add_one_telescoping
 ---
 
-# Lucas div fib sq add one telescoping
+# Two telescoping relations between Lucas and Fibonacci numbers
 
-Two telescoping relations between `L_(2k+1)` and `F_(2k+1)^2 + 1`: for every
-integer `k`,
-`L_(2k+1)/(F_(2k+1)^2+1) = L_(2k)/(F_(2k)^2+1) - L_(2k+2)/(F_(2k+2)^2+1)` and
-`L_(2k+1)/(L_(2k) L_(2k+2)) · (F_(2k)^2+1)(F_(2k+2)^2+1)/(F_(2k+1)^2+1)
-  = (F_(2k+2)^2+1)/L_(2k+2) - (F_(2k)^2+1)/L_(2k)`.
+**Two telescoping relations between Lucas and Fibonacci numbers.** Let $F_m$ be the Fibonacci
+numbers extended to all integers $m$ ($F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$) and
+$L_m = F_{m-1} + F_{m+1}$ the Lucas numbers. Then for every integer $k$,
+
+$$\frac{L_{2k+1}}{F_{2k+1}^2 + 1} = \frac{L_{2k}}{F_{2k}^2 + 1} - \frac{L_{2k+2}}{F_{2k+2}^2 + 1}$$
+
+and
+
+$$\frac{L_{2k+1}}{L_{2k} L_{2k+2}} \cdot \frac{(F_{2k}^2 + 1)(F_{2k+2}^2 + 1)}{F_{2k+1}^2 + 1}
+= \frac{F_{2k+2}^2 + 1}{L_{2k+2}} - \frac{F_{2k}^2 + 1}{L_{2k}}.$$
 
 ## Depends on
 

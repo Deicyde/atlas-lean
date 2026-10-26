@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.simsekNumber_zero_zero
 ---
 
-# Simsek Number zero zero
+# Simsek numbers with both indices zero
 
-Boundary value at `n = 0` and `k = 0`.
+**Simsek numbers with both indices zero.** For every complex number $\lambda$, the Simsek
+number $y_1(0, 0; \lambda)$ equals $1$.
 
 ## Depends on
 
-- [Simsek Number](simsek-number.md)
+- [Simsek numbers](simsek-number.md)
 
 ## Sources
 

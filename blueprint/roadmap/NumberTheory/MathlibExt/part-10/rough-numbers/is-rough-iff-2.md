@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.Prime.isRough_iff
 ---
 
-# Is Rough iff
+# A prime is rough exactly above the bound
 
-A prime `p` is `k`-rough exactly when `k < p`.
+**A prime is rough exactly above the bound.** For natural numbers $p$ and $k$ with $p$
+prime, $p$ is $k$-rough if and only if $k < p$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Lt of prime dvd](lt-of-prime-dvd.md)
+- [Prime divisors of a rough number exceed the bound](lt-of-prime-dvd.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_classification
 ---
 
-# Multiplicative additive on sum two triangular classification
+# Park's theorem on multiplicative functions additive on sums of two triangular numbers
 
-Park's Theorem 1: a multiplicative function additive on pairs from
-`T₂` is either the identity or vanishes outside `{1, 3, 5}` with
-`f 3 * f 5 = 0`.
+**Park's theorem on multiplicative functions additive on sums of two triangular numbers.**
+Let $f$ be a multiplicative arithmetic function with values in $\mathbb{C}$ (so $f$ is defined on
+the natural numbers with $f(0) = 0$) such that $f(a + b) = f(a) + f(b)$ whenever $a$ and $b$ are
+both sums of two positive triangular numbers. Then either $f(n) = n$ for every natural number
+$n$, or $f(n) = 0$ for every natural number $n \notin \{1, 3, 5\}$ and $f(3) f(5) = 0$.
 
 ## Depends on
 
-- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
+- [Sums of two positive triangular numbers](is-sum-two-positive-triangular.md)
 
 ## Sources
 

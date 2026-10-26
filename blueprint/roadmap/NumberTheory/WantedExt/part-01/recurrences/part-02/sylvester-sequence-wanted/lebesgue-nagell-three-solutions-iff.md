@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.lebesgue_nagell_three_solutions_iff
 ---
 
-# Theorem 1, `C = 3`
+# Coprime solutions of $x^2 + 3 = 4y^n$
 
-**Theorem 1, `C = 3`** (Luca--Tengely--Togbé, quoted by Naciri):
-the positive coprime solutions of `x² + 3 = 4yⁿ` with `n ≥ 3` are
-exactly `x = y = 1` (any `n ≥ 3`) and `(n, x, y) = (3, 37, 7)`.
+**Coprime solutions of $x^2 + 3 = 4y^n$.** For natural numbers $n$, $x$ and $y$, the
+conditions $n \ge 3$, $x \ge 1$, $y \ge 1$, $\gcd(x, y) = 1$ and $x^2 + 3 = 4y^n$ hold if and only
+if $n \ge 3$ and either $x = y = 1$ or $(n, x, y) = (3, 37, 7)$ (Luca–Tengely–Togbé).
 
 ## Depends on
 

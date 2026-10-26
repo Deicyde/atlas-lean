@@ -5,21 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.degenerate_secondOrder_sums
 ---
 
-# Degenerate second Order sums
+# Sums of eight degenerate second-order recurrences
 
-Theorem 2.1: sums of the degenerate recurrences of Theorem 1.3. For `(a, b) = (0, 1)`,
-`B_U(n) = ⌈n / 2⌉` and all `A_W(n)` are integers iff `n = 1`; for `(0, -1)`, `(1, -1)`,
-`(-1, -1)`, `(-1, 0)`, `B_W` vanishes at multiples of `4`, `6`, `3`, `2`; for `(2, -1)`,
-`2 B_W(n) = (W 1 - W 0) n (n + 1) + 2 W 0 n`, all `A_W(n)` are integers iff `n` is odd, and
-`B_W(2 n - 1) = (2 n - 1) (n (W 1 - W 0) + W 0)`; for `(-2, -1)`,
-`B_U(n) = (-1) ^ (n + 1) ⌈n / 2⌉` and all `A_W(n)` are integers iff `n = 1`; for `(1, 0)`,
-`B_W(n) = n W 1`. The statements `A_W(kn) = 0` are the vanishing sums.
+**Sums of eight degenerate second-order recurrences.** For an integer sequence
+$(w_j)_{j \ge 0}$ write $B_w(n) = w_1 + \dots + w_n$. Let $u$ be the sequence with $u_0 = 0$,
+$u_1 = 1$ and $u_{j+2} = u_j$, and $v$ the sequence with $v_0 = 0$, $v_1 = 1$ and
+$v_{j+2} = -2 v_{j+1} - v_j$. For every $n \ge 1$: $B_u(n) = \lfloor (n + 1) / 2 \rfloor$ and
+$B_v(n) = (-1)^{n+1} \lfloor (n + 1) / 2 \rfloor$; $n$ divides $B_w(n)$ for every integer
+sequence $w$ with $w_{j+2} = w_j$ if and only if $n = 1$; $n$ divides $B_w(n)$ for every integer
+sequence $w$ with $w_{j+2} = 2 w_{j+1} - w_j$ if and only if $n$ is odd; and $n$ divides
+$B_w(n)$ for every integer sequence $w$ with $w_{j+2} = -2 w_{j+1} - w_j$ if and only if
+$n = 1$. For every integer sequence $w$ and every $n \in \mathbb{N}$: if $w_{j+2} = -w_j$ for all
+$j$, then $B_w(4n) = 0$; if $w_{j+2} = w_{j+1} - w_j$ for all $j$, then $B_w(6n) = 0$; if
+$w_{j+2} = -w_{j+1} - w_j$ for all $j$, then $B_w(3n) = 0$; if $w_{j+2} = w_{j+1}$ for all $j$,
+then $B_w(n) = n w_1$; if $w_{j+2} = -w_{j+1}$ for all $j$, then $B_w(2n) = 0$; and if
+$w_{j+2} = 2 w_{j+1} - w_j$ for all $j$, then $2 B_w(n) = (w_1 - w_0) n (n + 1) + 2 w_0 n$ and,
+when $n \ge 1$, $B_w(2n - 1) = (2n - 1)(n (w_1 - w_0) + w_0)$.
+
+In the paper's notation $W_{j+2} = a W_{j+1} + b W_j$ these are the pairs $(a, b) = (0, 1)$,
+$(0, -1)$, $(1, -1)$, $(-1, -1)$, $(2, -1)$, $(-2, -1)$, $(1, 0)$ and $(-1, 0)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

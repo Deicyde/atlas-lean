@@ -5,9 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSum
 ---
 
-# B Free Divisor Sum
+# The $B_\kappa$-free divisor sum
 
-`D̃_{B_κ,h}(N) = ∑_{f ∈ M_{≤ N}} 1_{B_κ}(f) d_h(f)`.
+**The $B_\kappa$-free divisor sum.** Let $F$ be a field, let $\kappa$ assign a natural number
+to each polynomial in $F[T]$, and let $h$ and $N$ be natural numbers. Then
+$\tilde D_{B_\kappa,h}(N)$ is the sum of $d_h(f)$ over the monic $B_\kappa$-free polynomials
+$f \in F[T]$ of degree at most $N$, where $d_h(f)$ is the number of $h$-tuples of monic
+polynomials with product $f$, and $f$ is $B_\kappa$-free when $P^{\kappa(P)}$ does not divide $f$
+for any monic irreducible $P$.
+
+The sum is meant for finite $F$; if it has infinitely many nonzero terms, its value is $0$.
 
 ## Depends on
 
@@ -15,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is BFree](is-bfree.md)
-- [Monic Divisor Count](monic-divisor-count.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

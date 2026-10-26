@@ -4,7 +4,7 @@ navigation: module
 
 # Buchi Square Sequence Bound
 
-- [Is Buchi Sequence](is-buchi-sequence.md)
-- [Is Trivial](is-trivial.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Büchi sequences](is-buchi-sequence.md)
+- [Trivial sequences in Büchi's problem](is-trivial.md)
+- [Büchi's square-sequence conjecture](conjecture.md)
+- [Resolution of Büchi's square-sequence conjecture](conjecture-holds.md)

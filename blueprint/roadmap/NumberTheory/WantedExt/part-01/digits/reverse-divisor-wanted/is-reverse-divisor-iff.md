@@ -6,14 +6,15 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.isReverseDivisor_iff
 ---
 
-# Is Reverse Divisor iff
+# Characterization of reverse divisors
 
-Characterization of `IsReverseDivisor` by its
-defining existential.
+**Characterization of reverse divisors.** A natural number $n$ is a reverse divisor if and
+only if $n > 0$ and there is a natural number $k \ge 2$ such that the decimal reversal of $n$
+equals $kn$.
 
 ## Depends on
 
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 - [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources

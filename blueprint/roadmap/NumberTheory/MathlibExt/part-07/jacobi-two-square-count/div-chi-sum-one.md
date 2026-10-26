@@ -6,13 +6,14 @@ proof: formalized
 lean: SumSquares.divChiSum_one
 ---
 
-# Div Chi Sum one
+# The divisor sum of $\chi_4$ at one
 
-`divChiSum 1 = 1`.
+**The divisor sum of $\chi_4$ at one.** For the nonprincipal Dirichlet character $\chi_4$
+modulo 4, the sum $\sum_{d \mid 1} \chi_4(d)$ over the divisors of $1$ equals $1$.
 
 ## Depends on
 
-- [Div Chi Sum](div-chi-sum.md)
+- [Divisor sum of the character modulo 4](div-chi-sum.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsLStarFundamentalSequence
 ---
 
-# Is LStar Fundamental Sequence
+# Fundamental sequence of an $L^\ast$-collection
 
-`Q` is the fundamental sequence of `E*` (Theorem 6): strictly decreasing in `(0, 1)` with
-`ε ↦ ∑ ε Q` a bijection `E* → (0, 1)`.
+**Fundamental sequence of an $L^\ast$-collection.** Let $L$ be a list of natural numbers with
+$L^*$-collection $E^*$. A real sequence $(Q_n)_{n \ge 0}$ is a fundamental sequence of $E^*$ if
+it is strictly decreasing, $0 < Q_n < 1$ for every $n$, and the map
+$\varepsilon \mapsto \sum_k \varepsilon_k Q_k$ is a bijection from $E^*$ onto the open interval
+$(0, 1)$.
 
 ## Depends on
 

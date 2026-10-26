@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_zeckendorf_fundamentalSequence
 ---
 
-# Exists Unique zeckendorf fundamental Sequence
+# Fundamental sequences of Zeckendorf collections
 
-Fundamental sequences: for a Zeckendorf collection `E` with immediate predecessors `β̂^n`,
-there is a unique strictly increasing sequence `H` of positive integers with
-`eval_H : E → ℕ` bijective; moreover `H_n = H_1 + ∑ β̂^n H` for `n ≥ 2`, and `eval_H` is
-increasing (`ε <_a δ ↔ eval_H ε < eval_H δ`). Zero-based indices.
+**Fundamental sequences of Zeckendorf collections.** Let $E$ be a Zeckendorf collection and
+index coefficient functions and sequences from $0$. Suppose that, for each $m \ge 1$,
+$\theta^{(m)}$ is the immediate predecessor in $E$ of the coefficient function with entry $1$ at
+index $m$ and $0$ elsewhere. For a sequence $H$ write $\mathrm{eval}_H(\mu) = \sum_k \mu_k H_k$.
+Then there is a unique strictly increasing sequence $H$ of positive integers such that
+$\mathrm{eval}_H$ is a bijection from $E$ onto $\mathbb N$. Moreover, every such $H$ satisfies
+$H_m = H_0 + \mathrm{eval}_H(\theta^{(m)})$ for all $m \ge 1$, and for all $\mu, \nu \in E$,
+$\mu \lt _a \nu$ (that is, $\mu_k < \nu_k$ at the largest index $k$ where $\mu$ and $\nu$ differ)
+if and only if $\mathrm{eval}_H(\mu) < \mathrm{eval}_H(\nu)$.
 
 ## Depends on
 
-- [Asc Lex LT](asc-lex-lt.md)
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
-- [Zeckendorf Eval](zeckendorf-eval.md)
+- [Ascending lexicographic order](asc-lex-lt.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
+- [Evaluation of a coefficient function at an integer sequence](zeckendorf-eval.md)
 
 ## Sources
 

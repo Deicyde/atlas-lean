@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciJordanQuotient_pos
 ---
 
-# Fibonacci Jordan Quotient pos
+# Fibonacci Jordan quotient is positive
 
-`J_{r,F}` is strictly positive.
+**Fibonacci Jordan quotient is positive.** For every natural number $r$, the Jordan-type
+quotient $J_{r,F} = F_{2r+1}! / F_r!$ of Fibonacci factorials is a strictly positive rational
+number.
 
 ## Depends on
 
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Factorial pos](fibonacci-factorial-pos.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci factorials are positive](fibonacci-factorial-pos.md)
 
 ## Sources
 

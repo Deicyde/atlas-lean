@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one
 ---
 
-# Nth Prime lt mul log nth Prime sub one
+# An upper bound for the $n$-th prime in terms of its logarithm
 
-Consequence (4) of Lemma 3: `pₙ < n (log pₙ - 1)` for every `n ≥ 711 = π(5393)`
-(one-indexed `pₙ`). Consequence (3) is omitted: it fails at `n = 6076`, where `p₆₀₇₆ = 60169` and
-`6076 (log 60169 - 1.1) ≈ 60182.2`.
+**An upper bound for the $n$-th prime in terms of its logarithm.** Let $p_n$ denote the
+$n$-th prime, so that $p_1 = 2$. For every integer $n \ge 711$, $p_n < n(\log p_n - 1)$.
+
+Here $711 = \pi(5393)$, where $\pi(x)$ denotes the number of primes at most $x$. The paper's
+companion inequality (3) is not included: it fails at $n = 6076$, where $p_{6076} = 60169$ and
+$6076(\log 60169 - 1.1) \approx 60182.2$.
 
 ## Depends on
 

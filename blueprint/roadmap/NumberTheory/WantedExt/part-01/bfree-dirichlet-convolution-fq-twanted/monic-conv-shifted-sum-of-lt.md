@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.monicConvShiftedSum_of_lt
 ---
 
-# Monic Conv Shifted Sum of lt
+# Shifted partial sums vanish below $\deg f$
 
-`S_f[α, β](n) = 0` when `n < deg f`.
+**Shifted partial sums vanish below $\deg f$.** Let $F$ be a field, let
+$\alpha, \beta \colon F[T] \to \mathbb{C}$ and let $f \in F[T]$. For every natural number
+$n < \deg f$, the shifted partial sum of the Dirichlet convolution satisfies
+$S_f[\alpha, \beta](n) = 0$.
 
 ## Depends on
 
-- [Monic Conv Shifted Sum](monic-conv-shifted-sum.md)
+- [Shifted partial sums of a Dirichlet convolution](monic-conv-shifted-sum.md)
 
 ## Proof depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

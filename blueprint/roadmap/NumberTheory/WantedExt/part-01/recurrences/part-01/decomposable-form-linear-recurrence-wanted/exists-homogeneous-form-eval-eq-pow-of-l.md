@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_homogeneous_form_eval_eq_pow_of_linearRecurrence
 ---
 
-# Exists homogeneous form eval eq pow of linear Recurrence
+# Homogeneous forms taking the values of a power on recurrence sequences
 
-If `k` sequences `ℤ → ℂ` satisfy the same order-`k` linear recurrence and are
-`ℂ`-linearly independent, then some homogeneous form `F` of degree `k` satisfies
-`F(G⁽¹⁾ₙ, …, G⁽ᵏ⁾ₙ) = ((-1)^(k+1) γ₀)ⁿ` for every `n : ℤ`, where `-γ₀` is the constant term
-of the characteristic polynomial. The source's hypothesis `γ₀ ≠ 0` is omitted: for
-`ℤ`-indexed solutions, linear independence already forces it.
+**Homogeneous forms taking the values of a power on recurrence sequences.** Let
+$\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$ and let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$
+be the characteristic polynomial of the recurrence $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$. Let
+$G^{(1)}, \dots, G^{(k)} \colon \mathbb{Z} \to \mathbb{C}$ be $\mathbb{C}$-linearly independent
+sequences, each satisfying this recurrence for every $n \in \mathbb{Z}$. Then there is a
+homogeneous polynomial $F$ of degree $k$ in $k$ variables with complex coefficients such that
+$F(G^{(1)}_n, \dots, G^{(k)}_n) = ((-1)^k \chi(0))^n$ for every $n \in \mathbb{Z}$.
+
+For $k \ge 1$ we have $\chi(0) = -\gamma_0$, so the right side is $((-1)^{k+1} \gamma_0)^n$.
+The source also assumes $\gamma_0 \neq 0$; for $\mathbb{Z}$-indexed solutions, linear
+independence already forces it.
 
 ## Depends on
 

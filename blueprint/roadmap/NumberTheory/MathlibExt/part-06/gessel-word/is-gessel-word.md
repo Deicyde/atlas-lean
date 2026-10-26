@@ -6,20 +6,23 @@ statement: formalized
 lean: MetaMathlibExt.IsGesselWord
 ---
 
-# Is Gessel Word
+# Gessel word
 
-A Gessel word over `S = [n]`.
-
-For every prefix `w'` and every `1 ≤ k ≤ n`, the sum of the signed balances of the
-last `k` labels `n, n - 1, …, n + 1 - k` is nonnegative.
+**Gessel word.** Let $n$ be a natural number. For a word $u$ over the Gessel alphabet over
+$S = [n] = \{1, \dots, n\}$ and a natural number $m$, write $\beta_u(m)$ for the signed balance of
+$m$ in $u$: the number of occurrences of the unbarred letter $m$ in $u$ minus the number of
+occurrences of the barred letter $\bar{m}$ in $u$. A word $w$ over this alphabet is a Gessel word
+when, for every prefix $w'$ of $w$ (including the empty word and $w$ itself) and every $k$ with
+$1 \le k \le n$, we have $\sum_{i=1}^{k} \beta_{w'}(n + 1 - i) \ge 0$, that is, the signed
+balances in $w'$ of the $k$ largest labels $n, n - 1, \dots, n + 1 - k$ have nonnegative sum.
 
 ## Depends on
 
-- [Gessel Alphabet](gessel-alphabet.md)
+- [Gessel alphabet](gessel-alphabet.md)
 
 ## Proof depends on
 
-- [Gessel Balance](gessel-balance.md)
+- [Signed balance of a label](gessel-balance.md)
 
 ## Sources
 

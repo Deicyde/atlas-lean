@@ -4,5 +4,5 @@ navigation: module
 
 # Padovan Sequence
 
-- [Shifted Padovan Sequence](shifted-padovan-sequence.md)
-- [Shifted Padovan Sequence add three](shifted-padovan-sequence-add-three.md)
+- [Shifted Padovan sequence](shifted-padovan-sequence.md)
+- [Recurrence of the shifted Padovan sequence](shifted-padovan-sequence-add-three.md)

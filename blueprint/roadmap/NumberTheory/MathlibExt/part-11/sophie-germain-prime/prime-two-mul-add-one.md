@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.IsSophieGermainPrime.prime_two_mul_add_one
 ---
 
-# Prime two mul add one
+# Safe prime of a Sophie Germain prime
 
-The associated safe prime `2 * p + 1` of a Sophie Germain prime is prime.
+**Safe prime of a Sophie Germain prime.** If $p$ is a Sophie Germain prime, then $2p + 1$ is
+prime.
 
 ## Depends on
 
-- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
+- [Sophie Germain primes](is-sophie-germain-prime.md)
 
 ## Sources
 

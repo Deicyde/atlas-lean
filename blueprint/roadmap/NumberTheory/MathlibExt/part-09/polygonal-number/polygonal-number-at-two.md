@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.polygonalNumber_at_two
 ---
 
-# Polygonal Number at two
+# Polygonal numbers at two
 
-Source initial value at `2`: `p_m(2) = m` for `3 ≤ s`.
+**Polygonal numbers at two.** For every natural number $s \ge 3$, $p_s(2) = s$, where $p_s(n)$
+is the $n$-th $s$-gonal number.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

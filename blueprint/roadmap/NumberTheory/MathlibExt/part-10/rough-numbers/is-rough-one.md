@@ -7,13 +7,15 @@ proof: formalized
 lean: Nat.isRough_one
 ---
 
-# Is Rough one
+# The number $1$ is rough
 
-The unit `1` is rough for every bound by vacuity.
+**The number $1$ is rough.** For every natural number $k$, the number $1$ is $k$-rough.
+
+This holds vacuously, since $1$ has no prime divisors.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Sources
 

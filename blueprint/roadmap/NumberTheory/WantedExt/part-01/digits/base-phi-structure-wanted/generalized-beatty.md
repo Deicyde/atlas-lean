@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.generalizedBeatty
 ---
 
-# Generalized Beatty
+# Generalized Beatty sequence
 
-The generalized Beatty sequence `V(p, q, r)`, `n ↦ p ⌊n φ⌋ + q n + r`.
+**Generalized Beatty sequence.** Let $\varphi$ be the golden ratio. For integers $p, q, r$, the
+generalized Beatty sequence $V(p, q, r)$ is the integer sequence defined for every natural number
+$n$, including $n = 0$, by $V(p, q, r)(n) = p\lfloor n\varphi \rfloor + qn + r$.
 
 ## Depends on
 

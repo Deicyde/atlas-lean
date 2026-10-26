@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.lucas_degenerate_cases
 ---
 
-# Lucas degenerate cases
+# Classification of degenerate Lucas sequences
 
-Degenerate Lucas sequences: let `α, β ∈ ℂ` be the roots of `x² - Px + Q` (so `α + β = P`,
-`αβ = Q`), `D = P² - 4Q`, and `U`, `V` the sequences with `U_0 = 0`, `U_1 = 1`, `V_0 = 2`,
-`V_1 = P` and `W_{n+2} = P W_{n+1} - Q W_n`. If the pair is degenerate (`Q = 0`, or `α/β` is a
-root of unity), then one of: (i) `Q = 0`, `D = P²`, `U_n = P^{n-1}`, `V_n = P^n` for `n ≥ 1`;
-or, for some nonzero integer `M`, (ii) `α/β = 1`, `P = 2M`, `Q = M²`, `D = 0`;
-(iii) `α/β = -1`, `P = 0`, `Q = M`, `D = -4M`; (iv) `α/β` a primitive cube root of unity,
-`P = M`, `Q = M²`, `D = -3M²`; (v) a primitive fourth root, `P = 2M`, `Q = 2M²`,
-`D = -4M²`; (vi) a primitive sixth root, `P = 3M`, `Q = 3M²`, `D = -3M²`. Degeneracy is
-taken in the theorem's own sense (`Q = 0` or `α/β` a root of unity, Mathlib's
-`IsOfFinOrder`); `U` is given by `IsLucasSequenceFirstKind P Q` and `V` by its recurrence,
-because `MetaMathlibExt.LucasSequenceParams` requires `Q ≠ 0`.
+**Classification of degenerate Lucas sequences.** Let $P, Q$ be integers, let
+$\alpha, \beta \in \mathbb{C}$ satisfy $\alpha + \beta = P$ and $\alpha\beta = Q$ (so they are the
+roots of $x^2 - Px + Q$), and let $D = P^2 - 4Q$. Let $(u_n)$ be the Lucas sequence of the first
+kind with parameters $P, Q$, and let $(v_n)$ be the integer sequence with $v_0 = 2$, $v_1 = P$ and
+$v_{n+2} = P v_{n+1} - Q v_n$ for all $n$. Suppose that $Q = 0$ or that $\alpha/\beta$ is a root
+of unity. Then either (i) $Q = 0$, $D = P^2$, and $u_n = P^{n-1}$ and $v_n = P^n$ for every
+$n \ge 1$; or there is a nonzero integer $M$ such that one of the following holds:
+(ii) $\alpha/\beta = 1$, $P = 2M$, $Q = M^2$ and $D = 0$;
+(iii) $\alpha/\beta = -1$, $P = 0$, $Q = M$ and $D = -4M$;
+(iv) $\alpha/\beta$ is a primitive cube root of unity, $P = M$, $Q = M^2$ and $D = -3M^2$;
+(v) $\alpha/\beta$ is a primitive fourth root of unity, $P = 2M$, $Q = 2M^2$ and $D = -4M^2$;
+(vi) $\alpha/\beta$ is a primitive sixth root of unity, $P = 3M$, $Q = 3M^2$ and $D = -3M^2$.
 
 ## Depends on
 

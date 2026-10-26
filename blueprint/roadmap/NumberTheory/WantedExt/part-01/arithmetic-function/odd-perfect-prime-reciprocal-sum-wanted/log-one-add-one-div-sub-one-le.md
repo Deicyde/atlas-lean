@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.log_one_add_one_div_sub_one_le
 ---
 
-# Log one add one div sub one le
+# Upper bound for $\log(1 + 1/(x-1))$
 
-For an integer `x ≥ 2`, `log(1 + 1/(x-1)) ≤ 1/x + 25/(32 x²)`.
+**Upper bound for $\log(1 + 1/(x-1))$.** For every integer $x \ge 2$,
+$\log(1 + 1/(x-1)) \le 1/x + 25/(32x^2)$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

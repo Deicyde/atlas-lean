@@ -12,7 +12,7 @@ Pell–Lucas sequence are `Q_0 = 1` and `Q_1 = 1`.
 
 ## Depends on
 
-- [Pell Lucas Sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
+- [Pell–Lucas sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
 
 ## Sources
 

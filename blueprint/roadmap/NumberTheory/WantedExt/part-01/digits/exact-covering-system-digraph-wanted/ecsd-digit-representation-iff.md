@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_digit_representation_iff
 ---
 
-# Ecsd digit representation iff
+# Digit representations and connected digraphs
 
-For `d ≥ 2`, `D = ±d` and an exact covering system `{(aᵢ, D) : 1 ≤ i ≤ d}`, every
-integer is a sum `∑_{j=0}^k bⱼ Dʲ` with digits `bⱼ ∈ {a₁, …, a_d}` iff the ECSD `G_S`
-has a single component whose cycle contains `0`. The digit-string length `k` ranges over
-`ℕ` (lengths can be padded once `0` is cyclic); the uniqueness clause of the paper is
-omitted.
+**Digit representations and connected digraphs.** Let $d \ge 2$ be a natural number, let
+$D$ be an integer with $|D| = d$, and let $a_1, \dots, a_d$ be integers such that for every
+integer $n$ there is exactly one $i$ with $D \mid n - a_i$. Let
+$G = G(Dn + a_1, \dots, Dn + a_d)$. Then every integer $z$ can be written as
+$z = \sum_{j=0}^{k} b_j D^j$ with $k \in \mathbb{N}$ and digits
+$b_0, \dots, b_k \in \{a_1, \dots, a_d\}$ if and only if the underlying undirected graph of $G$
+is connected and $0$ lies on a directed cycle of $G$.
+
+The paper also states that the representation is unique; that clause is omitted here.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

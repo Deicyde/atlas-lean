@@ -5,5 +5,5 @@ navigation: module
 
 # Dusart Mertens Reciprocal Sum
 
-- [Meissel Mertens Constant](meissel-mertens-constant.md)
-- [Dusart reciprocal prime sum](dusart-reciprocal-prime-sum.md)
+- [The Meissel–Mertens constant](meissel-mertens-constant.md)
+- [Dusart's explicit Mertens second theorem](dusart-reciprocal-prime-sum.md)

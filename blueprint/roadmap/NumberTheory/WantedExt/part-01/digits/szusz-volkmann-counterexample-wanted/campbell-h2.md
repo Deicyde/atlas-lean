@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.campbellH2
 ---
 
-# Campbell H2
+# Campbell's sequence $h_2$
 
-`h₂(n) = 10^k ⌊(∑_{i=1}^{10^k} h₁(i)) / 10^k⌋ + ∑_{i=10^k+1}^{n} h₁(i)` with
-`k = ⌊log₁₀ n⌋` (OEIS A380904).
+**Campbell's sequence $h_2$.** For a natural number $n$, let $k = \lfloor \log_{10} n \rfloor$
+(with $k = 0$ for $n = 0$), let $h_1$ be Campbell's sequence and let
+$S_k = \sum_{i=1}^{10^k} h_1(i)$. Then
+$h_2(n) = 10^k \lfloor S_k / 10^k \rfloor + \sum_{i=10^k+1}^{n} h_1(i)$, where the last sum is
+empty when $n \le 10^k$.
+
+This is OEIS A380904.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Campbell H1](campbell-h1.md)
+- [Campbell's sequence $h_1$](campbell-h1.md)
 
 ## Sources
 

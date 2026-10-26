@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.hasDigitBlock_nil
 ---
 
-# Has Digit Block nil
+# The empty digit block occurs everywhere
 
-The empty block always occurs.
+**The empty digit block occurs everywhere.** For every finite set $S$ of integers, read as the
+positions of the digits $1$ of an expansion, and every integer $k$, the empty word occurs as a
+digit block of $S$ at position $k$.
 
 ## Depends on
 
-- [Has Digit Block](has-digit-block.md)
+- [Digit block of an expansion](has-digit-block.md)
 
 ## Sources
 

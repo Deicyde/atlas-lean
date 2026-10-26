@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.balancingNum_three
 ---
 
-# Balancing Num three
+# The balancing number $B_3$ is $35$
 
-Characteristic value `B_3 = 35`.
+**The balancing number $B_3$ is $35$.** The balancing number $B_3$ equals $35$.
 
 ## Depends on
 
-- [Balancing Num](balancing-num.md)
+- [Balancing numbers](balancing-num.md)
 
 ## Sources
 

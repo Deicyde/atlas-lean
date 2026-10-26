@@ -5,5 +5,5 @@ navigation: module
 
 # Quadratic Gauss Sum Five
 
-- [Quadratic Gauss Sum5](quadratic-gauss-sum5.md)
-- [Quadratic Gauss Sum5 eval](quadratic-gauss-sum5-eval.md)
+- [Quadratic Gauss sum modulo $5$](quadratic-gauss-sum5.md)
+- [Evaluation of the quadratic Gauss sum modulo $5$](quadratic-gauss-sum5-eval.md)

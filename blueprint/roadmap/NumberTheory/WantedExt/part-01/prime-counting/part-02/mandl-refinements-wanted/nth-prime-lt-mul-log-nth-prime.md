@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.nthPrime_lt_mul_log_nthPrime
 ---
 
-# Nth Prime lt mul log nth Prime
+# For $n \ge 7$, the $n$th prime is less than $n$ times its logarithm
 
-Consequence (2) of Lemma 2: `pₙ < n log pₙ` for every `n ≥ 7` (one-indexed `pₙ`, so
-`pₙ = Nat.nth Nat.Prime (n - 1)`).
+**For $n \ge 7$, the $n$th prime is less than $n$ times its logarithm.** For every integer
+$n \ge 7$, the $n$th prime $p_n$ (counting from $p_1 = 2$) satisfies $p_n < n \log p_n$.
 
 ## Depends on
 

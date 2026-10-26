@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.kJacobsthal_binet_identities
 ---
 
-# K Jacobsthal binet identities
+# Binet-type identities for k-Jacobsthal numbers
 
-Binet-type identities: `j_{k,n} + Δ_k J_{k,n} = 2σ_kⁿ`,
-`j_{k,n} - Δ_k J_{k,n} = 2(-2)ⁿ/σ_kⁿ`, and `j_{k,n}² - Δ_k² J_{k,n}² = (-2)^{n+2}`.
+**Binet-type identities for k-Jacobsthal numbers.** Let $k$ and $n$ be natural numbers, let
+$J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and
+$k$-Jacobsthal–Lucas numbers, and let $\Delta_k = \sqrt{k^2 + 8}$ and $\sigma_k = (k + \Delta_k)/2$.
+Then, in $\mathbb{R}$, $j_{k,n} + \Delta_k J_{k,n} = 2\sigma_k^n$ and
+$j_{k,n} - \Delta_k J_{k,n} = 2(-2)^n / \sigma_k^n$, and, in $\mathbb{Z}$,
+$j_{k,n}^2 - (k^2 + 8) J_{k,n}^2 = (-2)^{n+2}$.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

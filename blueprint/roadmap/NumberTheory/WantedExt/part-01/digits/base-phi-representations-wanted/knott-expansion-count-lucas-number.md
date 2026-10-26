@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.knottExpansionCount_lucasNumber
 ---
 
-# Knott Expansion Count lucas Number
+# Knott expansions of Lucas numbers
 
-`Tot_κ(L_{2n}) = Tot_κ(L_{2n+1}) = 2n + 1` for all `n ≥ 1`.
+**Knott expansions of Lucas numbers.** For every $n \ge 1$, each of the Lucas numbers $L_{2n}$
+and $L_{2n+1}$ (with $L_0 = 2$, $L_1 = 1$) has exactly $2n + 1$ Knott expansions.
 
 ## Depends on
 
-- [Knott Expansion Count](knott-expansion-count.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Number of Knott expansions](knott-expansion-count.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

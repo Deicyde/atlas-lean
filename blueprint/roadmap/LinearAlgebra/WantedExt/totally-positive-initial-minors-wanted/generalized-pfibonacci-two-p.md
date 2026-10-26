@@ -15,9 +15,9 @@ number $n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Generalized $p$-Fibonacci sequence](generalized-pfibonacci.md)
-- [Lucas V](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

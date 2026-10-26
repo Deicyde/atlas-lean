@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.three_mul_dvd_one_sub_neg_two_pow_cube
 ---
 
-# Three mul dvd one sub neg two pow cube
+# Divisibility of $1 - (-2)^{3k}$ from $1 - (-2)^k$
 
-If `n ∣ (1 - (-2)ᵏ)/3` then `3n ∣ (1 - (-2)^(3k))/3`, stated in the integral form
-`3n ∣ 1 - (-2)ᵏ → 9n ∣ 1 - (-2)^(3k)` for all `n ∈ ℤ`, `k ∈ ℕ` (the paper has positive
-`n`, `k`).
+**Divisibility of $1 - (-2)^{3k}$ from $1 - (-2)^k$.** For every integer $n$ and every
+natural number $k$, if $3n$ divides $1 - (-2)^k$, then $9n$ divides $1 - (-2)^{3k}$.
+
+Since $3$ always divides $1 - (-2)^k$, this is equivalent to: if $n$ divides
+$(1 - (-2)^k)/3$, then $3n$ divides $(1 - (-2)^{3k})/3$. The paper states it for positive $n$
+and $k$.
 
 ## Depends on
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Noncentral Tanny Dowling Polynomial
 
-- [Noncentral Whitney Second](noncentral-whitney-second.md)
-- [Noncentral Tanny Dowling Polynomial](noncentral-tanny-dowling-polynomial.md)
+- [Noncentral Whitney numbers of the second kind](noncentral-whitney-second.md)
+- [Noncentral Tanny–Dowling polynomials](noncentral-tanny-dowling-polynomial.md)

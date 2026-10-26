@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.genocchiNumber_eq
 ---
 
-# Genocchi Number eq
+# Genocchi numbers from their generating function
 
-Interface restatement of `genocchiNumber`.
+**Genocchi numbers from their generating function.** For every natural number $n$, the
+Genocchi number $G_n$ equals $n!$ times the coefficient of $x^n$ in the Genocchi power series
+$\frac{2x}{e^x + 1} \in \mathbb{Q}[[x]]$.
 
 ## Depends on
 
-- [Genocchi Number](genocchi-number.md)
-- [Genocchi Power Series](genocchi-power-series.md)
+- [Genocchi numbers](genocchi-number.md)
+- [Generating function of the Genocchi numbers](genocchi-power-series.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.polygonalNumber_at_three
 ---
 
-# Polygonal Number at three
+# Polygonal numbers at three
 
-Source initial value at `3`: `p_m(3) = 3 * m - 3` for `3 ≤ s`.
+**Polygonal numbers at three.** For every natural number $s \ge 3$, $p_s(3) = 3s - 3$, where
+$p_s(n)$ is the $n$-th $s$-gonal number.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

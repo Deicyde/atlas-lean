@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.tverbergSum_one
 ---
 
-# Tverberg Sum one
+# Tverberg's sum of a single integer
 
-Characteristic value: `f^(F)({a}, m, k) = F((k + a) / m) - F(k / m)`.
+**Tverberg's sum of a single integer.** For every function $F : \mathbb{R} \to \mathbb{Z}$,
+all integers $a$ and $k$ and every natural number $m$, Tverberg's sum of $F$ for the one-element
+family $(a)$, modulus $m$ and shift $k$ equals $F((k + a)/m) - F(k/m)$, with $x/0 = 0$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

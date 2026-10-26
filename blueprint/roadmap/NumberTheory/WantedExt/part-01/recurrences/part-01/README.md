@@ -19,7 +19,7 @@ navigation: transparent
 - [Jacobsthal Polynomial Square Family Sums](jacobsthal-polynomial-square-family-sums-wanted/README.md)
 - [KFibonacci Brousseau Sums](kfibonacci-brousseau-sums-wanted/README.md)
 - [KJacobsthal Integral](kjacobsthal-integral-wanted/README.md)
-- [Proposition 1](two-mul-lucas-u-add.md)
+- [Addition formula $2U_{m+n} = U_m V_n + V_m U_n$ for Lucas sequences](two-mul-lucas-u-add.md)
 - [Lucas Period Average](lucas-period-average-wanted/README.md)
 - [Lucas Sequence Divisibility](lucas-sequence-divisibility-wanted/README.md)
 - [Lucas Weighted Power Sum](lucas-weighted-power-sum-wanted/README.md)

@@ -14,7 +14,7 @@ every real `x`, with `Eₖ` the Euler (secant) numbers.
 ## Depends on
 
 - [Euler Sec Number](euler-sec-number.md)
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

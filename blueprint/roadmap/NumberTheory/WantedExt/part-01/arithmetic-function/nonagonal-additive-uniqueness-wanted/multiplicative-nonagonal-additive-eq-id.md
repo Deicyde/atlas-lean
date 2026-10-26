@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_nonagonal_additive_eq_id
 ---
 
-# Multiplicative nonagonal additive eq id
+# Additive uniqueness of generalized nonagonal numbers
 
-A multiplicative function `f` with `f (a + b) = f a + f b` for all nonzero generalized
-nonagonal numbers `a` and `b` is the identity.
+**Additive uniqueness of generalized nonagonal numbers.** Let $f$ be a multiplicative
+arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$ for all
+positive integers $a$ and $b$ that are generalized nonagonal numbers, that is, $2a = m(7m - 5)$
+and $2b = k(7k - 5)$ for some integers $m$ and $k$. Then $f(n) = n$ for every natural number $n$.
 
 ## Depends on
 

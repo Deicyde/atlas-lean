@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Bronze Lucas Params](bronze-lucas-params.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -6,11 +6,12 @@ statement: formalized
 lean: Nat.powerfulPart
 ---
 
-# Powerful Part
+# Powerful part of a natural number
 
-The powerful (or `2`-full) part of `n`: the product of the exact prime
-powers in `n` whose exponents are at least two. It is defined to be `1` at
-`n = 0`.
+**Powerful part of a natural number.** For a natural number $n \ge 1$ and a prime $p$, let
+$v_p(n)$ be the exponent of $p$ in $n$. The powerful (or $2$-full) part of $n$ is the product of
+the prime powers $p^{v_p(n)}$ over the primes $p$ dividing $n$ with $v_p(n) \ge 2$ (and $1$ if
+there are none). The powerful part of $0$ is defined to be $1$.
 
 ## Depends on
 

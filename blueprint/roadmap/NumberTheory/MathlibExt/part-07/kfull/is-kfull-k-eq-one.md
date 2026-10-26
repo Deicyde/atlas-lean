@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.isKFull_k_eq_one
 ---
 
-# Is KFull k eq one
+# The $1$-full numbers
 
-Explicit total extension at `k = 1`: every nonzero `n` is `1`-full since
-`p ^ 1 = p`. This lies outside the source scope.
+**The $1$-full numbers.** A natural number $n$ is $1$-full if and only if $n \ne 0$, since
+$p^1 = p$ divides $n$ for every prime $p$ dividing $n$.
+
+The source considers only $k$-full numbers with $k \ge 2$.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

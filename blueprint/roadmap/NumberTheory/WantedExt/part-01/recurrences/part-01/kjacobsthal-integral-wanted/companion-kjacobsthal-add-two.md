@@ -12,7 +12,7 @@ The companion recurrence `𝒥_{k,n+2} = k 𝒥_{k,n+1} + 2 𝒥_{k,n}`.
 
 ## Depends on
 
-- [Companion KJacobsthal](companion-kjacobsthal.md)
+- [Companion $k$-Jacobsthal numbers](companion-kjacobsthal.md)
 
 ## Sources
 

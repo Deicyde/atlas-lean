@@ -16,7 +16,7 @@ so `C_j^{(k)} = polyBernoulliPoly j k (-1)`.
 ## Depends on
 
 - [Height One Multiple Zeta](height-one-multiple-zeta.md)
-- [Poly Bernoulli Poly](../../part-02/bernoulli-stirling-harmonic-wanted/poly-bernoulli-poly.md)
+- [Poly-Bernoulli polynomials](../../part-02/bernoulli-stirling-harmonic-wanted/poly-bernoulli-poly.md)
 
 ## Sources
 

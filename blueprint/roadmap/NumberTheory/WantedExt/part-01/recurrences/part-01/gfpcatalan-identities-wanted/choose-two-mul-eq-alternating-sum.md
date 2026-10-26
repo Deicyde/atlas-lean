@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.choose_two_mul_eq_alternating_sum
 ---
 
-# Choose two mul eq alternating sum
+# Binomial coefficients of even lower index as an alternating sum
 
-Lemma 3.2 (3): for `0 ≤ k < ⌊n/2⌋`,
-`C(n, 2k) = n ∑_{i=k}^{⌊n/2⌋} ((-1)^{i-k}/(n-i)) 2^{n-2i-1} C(n-i, i) C(i, k)`.
+**Binomial coefficients of even lower index as an alternating sum.** For natural numbers $n$
+and $k$ with $k < \lfloor n/2 \rfloor$,
+
+$$\binom{n}{2k} = n \sum_{i=k}^{\lfloor n/2 \rfloor} \frac{(-1)^{i-k}}{n-i} \, 2^{n-2i-1}
+  \binom{n-i}{i} \binom{i}{k},$$
+
+an identity of rational numbers in which the exponent $n-2i-1$ may be $-1$.
 
 ## Depends on
 

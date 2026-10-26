@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_divisors_kappaPow_isBigO
 ---
 
-# Sum divisors kappa Pow is Big O
+# Divisor-count bound over $\kappa$-th powers of monic polynomials
 
-Lemma 8, bound (7): for `κ ≥ 2` and every `ε > 0`,
-`∑_{r ∈ M, deg r^κ ≤ N} ∑_{f ∣ r^κ} ∑_{ℓ ∣ f} 1 = O(q ^ ((1/κ_min + ε) N))` as `N → ∞`.
+**Divisor-count bound over $\kappa$-th powers of monic polynomials.** Let $F$ be a finite
+field with $q$ elements and let $\kappa$ assign a natural number to each polynomial in $F[T]$,
+with $\kappa(P) \ge 2$ for every monic irreducible $P$. For monic $r = \prod_P P^{\nu_P}$ write
+$r^\kappa = \prod_P P^{\nu_P \kappa(P)}$, and let $\kappa_{\min}$ be the minimum of $\kappa(P)$
+over the monic irreducible $P$. Then for every $\varepsilon > 0$, as $N \to \infty$,
+
+$$\sum_{r \text{ monic},\ \deg r^\kappa \le N} \ \sum_{f \mid r^\kappa} \ \sum_{\ell \mid f} 1 =
+O\left(q^{(1/\kappa_{\min} + \varepsilon) N}\right),$$
+
+where $f$ runs over the monic divisors of $r^\kappa$ and $\ell$ over the monic divisors of $f$.
 
 ## Depends on
 
-- [Kappa Min](kappa-min.md)
-- [Kappa Pow](kappa-pow.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
+- [The $\kappa$-power of a polynomial](kappa-pow.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_linear_length
 ---
 
-# Three Term Hofstadter linear length
+# Length of the unpadded sequence from $1, \dots, N$
 
-For `N ≥ 14`, the sequence `B_N` with initial conditions `⟨1, 2, …, N⟩` has exactly
-`N + 24` terms.
+**Length of the unpadded sequence from $1, \dots, N$.** For every natural number $N \ge 14$,
+the sequence $B_N$ with initial conditions $B_N(i) = i$ for $1 \le i \le N$, continued without
+padding by the recurrence $B_N(n) = B_N(n - B_N(n-1)) + B_N(n - B_N(n-2)) + B_N(n - B_N(n-3))$,
+has exactly $N + 24$ terms: $B_N(1), \dots, B_N(N + 24)$ can be computed and $B_N(N + 25)$
+cannot, because the recurrence refers to a nonpositive index or to an index not yet computed.
 
 ## Depends on
 
-- [Three Term Hofstadter Ends After](three-term-hofstadter-ends-after.md)
+- [Exact length of a three-term Hofstadter-like sequence](three-term-hofstadter-ends-after.md)
 
 ## Sources
 

@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.div_log_sub_six_terms_lt_primeCounting
 ---
 
-# Div log sub six terms lt prime Counting
+# Axler's six-term lower bound for the prime-counting function
 
-Lower bound for the prime-counting function matching the first terms of its asymptotic
-expansion: for every real `x ≥ 1751189194177` (the prime `p₆₄₄₉₇₂₅₉₂₈₉`),
-`π(x) > x / (log x - 1 - 1/log x - 2.975666/log² x - 13.024334/log³ x - 70.951332/log⁴ x -
-b₅/log⁵ x - b₆/log⁶ x)` with `b₅ = 460.634397856444` and `b₆ = 3444.031844143556`.
-`π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's six-term lower bound for the prime-counting function.** For every real
+$x \ge 1751189194177$ (the prime $p_{64497259289}$),
+
+$$
+\pi(x) > \frac{x}{\log x - 1 - \frac{1}{\log x} - \frac{2.975666}{\log^2 x} -
+\frac{13.024334}{\log^3 x} - \frac{70.951332}{\log^4 x} - \frac{b_5}{\log^5 x} -
+\frac{b_6}{\log^6 x}},
+$$
+
+where $b_5 = 460.634397856444$, $b_6 = 3444.031844143556$ and $\pi(x)$ is the number of primes
+$p \le x$.
 
 ## Depends on
 

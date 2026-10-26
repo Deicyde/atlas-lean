@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_multiplicative_mul_antimultiplicative
 ---
 
-# Exists Unique multiplicative mul antimultiplicative
+# Unique splitting into multiplicative and antimultiplicative parts
 
-Proposition 2: `U₁ = U_M ⊕ U_A`, i.e. every real arithmetical function `f` with `f 1 = 1`
-is uniquely a Dirichlet convolution `g * h` of a multiplicative `g` and an antimultiplicative `h`.
+**Unique splitting into multiplicative and antimultiplicative parts.** Every real
+arithmetical function $f$ with $f(1) = 1$ can be written in exactly one way as a Dirichlet
+convolution $f = g * h$ of a multiplicative real arithmetical function $g$ and an
+antimultiplicative real arithmetical function $h$.
+
+In the source, writing $U_1$, $U_M$ and $U_A$ for the real arithmetical functions $f$ with
+$f(1) = 1$, the multiplicative ones and the antimultiplicative ones, this is written
+$U_1 = U_M \oplus U_A$.
 
 ## Depends on
 
-- [Is Antimultiplicative](is-antimultiplicative.md)
+- [Antimultiplicative arithmetical functions](is-antimultiplicative.md)
 
 ## Sources
 

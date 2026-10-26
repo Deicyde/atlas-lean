@@ -6,16 +6,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.PrimeCounting.UniformPrimeCountingWanted.uniform_prime_counting_arithmetic_progression
 ---
 
-# Uniform Prime Counting Wanted
+# Siegel–Walfisz theorem for primes in arithmetic progressions
 
-Fix `B > 0`. Uniformly over positive moduli `q ≤ (log x) ^ B` and reduced
-residue classes `b`, the number of primes `p ≤ x` congruent to `b` modulo `q`
-differs from `li(x) / φ(q)` by at most `C * x * exp (-c * sqrt (log x))` for
-sufficiently large `x`. The constants may depend on `B`, but not on `x`, `q`, or `b`.
+**Siegel–Walfisz theorem for primes in arithmetic progressions.** Let $\varphi$ be Euler's
+totient function and let $\mathrm{Li}(x) = \int_2^x du / \log u$. For every real $B > 0$ there are
+real constants $c > 0$, $C > 0$ and $X_0 \ge 2$ such that for every real $x \ge X_0$ and all
+natural numbers $q > 0$ and $b$ with $\gcd(b, q) = 1$ and $q \le (\log x)^B$, the number
+$\pi(x; q, b)$ of primes $p \le x$ with $p \equiv b \pmod q$ satisfies
 
-The count uses `Nat.floor x` so its endpoint is inclusive. The logarithmic integral
-is written explicitly as in the source, rather than using the principal-value
-normalization `Real.logarithmicIntegral`.
+$$\left|\pi(x; q, b) - \frac{\mathrm{Li}(x)}{\varphi(q)}\right| \le C x e^{-c \sqrt{\log x}}.$$
+
+The constants may depend on $B$, but not on $x$, $q$, or $b$. The logarithmic integral is taken
+from $2$, as in the source, rather than as the principal value from $0$.
 
 ## Depends on
 

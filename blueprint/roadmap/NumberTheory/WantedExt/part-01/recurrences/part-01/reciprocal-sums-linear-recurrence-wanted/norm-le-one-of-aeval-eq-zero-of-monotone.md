@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.norm_le_one_of_aeval_eq_zero_of_monotone_coeff
 ---
 
-# Norm le one of aeval eq zero of monotone coeff
+# Eneström–Kakeya theorem
 
-Eneström–Kakeya theorem, monotone form: if a nonzero real polynomial
-`a₀ + a₁ x + ⋯ + aₙ xⁿ` of degree `n` satisfies `0 ≤ a₀ ≤ a₁ ≤ ⋯ ≤ aₙ`, then every complex
-root `z` satisfies `‖z‖ ≤ 1`.
+**Eneström–Kakeya theorem.** Let $a_0 + a_1 x + \cdots + a_n x^n$ be a nonzero real
+polynomial of degree $n$ with $0 \le a_0 \le a_1 \le \cdots \le a_n$. Then every complex root $z$
+of this polynomial satisfies $|z| \le 1$.
 
 ## Depends on
 

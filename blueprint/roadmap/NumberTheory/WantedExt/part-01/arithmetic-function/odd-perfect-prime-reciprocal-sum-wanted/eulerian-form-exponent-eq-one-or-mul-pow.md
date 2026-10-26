@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.eulerianForm_exponent_eq_one_or_mul_pow_five_lt
 ---
 
-# Eulerian Form exponent eq one or mul pow five lt
+# Refined fifth-power bound on the Euler prime of an odd perfect number
 
-If an odd perfect number has Euler form `n = q^e m²`, then `e = 1` or
-`q < (2/((3²)(5²)(11²)(13²)))^{1/5} m^{2/5}`, stated in the equivalent integer form
-`3² 5² 11² 13² q⁵ < 2 m²`.
+**Refined fifth-power bound on the Euler prime of an odd perfect number.** If $(n, q, e, m)$
+is in Eulerian form, that is, $n$ is an odd perfect number, $q$ is a prime coprime to $m$,
+$n = q^e m^2$ and $q \equiv e \equiv 1 \pmod 4$, then $e = 1$ or
+$3^2 \cdot 5^2 \cdot 11^2 \cdot 13^2 \cdot q^5 < 2m^2$, that is,
+$q < \left(2/(3^2 \cdot 5^2 \cdot 11^2 \cdot 13^2)\right)^{1/5} m^{2/5}$.
 
 ## Depends on
 

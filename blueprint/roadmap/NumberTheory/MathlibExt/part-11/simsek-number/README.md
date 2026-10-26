@@ -4,7 +4,7 @@ navigation: module
 
 # Simsek Number
 
-- [Simsek Number](simsek-number.md)
-- [Simsek Number eq sum](simsek-number-eq-sum.md)
-- [Simsek Number zero k](simsek-number-zero-k.md)
-- [Simsek Number zero zero](simsek-number-zero-zero.md)
+- [Simsek numbers](simsek-number.md)
+- [Finite-sum formula for Simsek numbers](simsek-number-eq-sum.md)
+- [Simsek numbers with second index zero](simsek-number-zero-k.md)
+- [Simsek numbers with both indices zero](simsek-number-zero-zero.md)

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gfp_fib_catalan
 ---
 
-# Gfp fib catalan
+# Catalan identity for Fibonacci-type generalized Fibonacci polynomials
 
-Theorem 3.3 (1) (Catalan identity for GFPs of Fibonacci type): for `n ≥ 0`,
-`2^{n-1} F_n = ∑_{i=0}^{⌊(n-1)/2⌋} C(n, 2i+1) d^{n-2i-1} (4g + d²)^i`.
+**Catalan identity for Fibonacci-type generalized Fibonacci polynomials.** Let $d$ and $g$ be
+polynomials with integer coefficients, and let $F_n$ be the generalized Fibonacci polynomials
+defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = d F_{n+1} + g F_n$. Then for every natural number
+$n$ (for $n = 0$ both sides are $0$),
+
+$$2^{n-1} F_n = \sum_{i=0}^{\lfloor (n-1)/2 \rfloor} \binom{n}{2i+1} d^{n-2i-1} (4g + d^2)^i.$$
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_prime_dvd_discr
 ---
 
-# Lucas UPeriod prime dvd discr
+# Primes dividing the discriminant when $Q = \pm 1$
 
-Theorem 3.2: let `b = ±1` and let the prime `ℓ` divide `D`. If `b = 1` then `ℓ = 2` or
-`ℓ ≡ 1 (mod 4)`. If `b = -1` then `a ≡ ±2 (mod ℓ)`; if `a ≡ 2 (mod ℓ)` then
-`E_U(ℓ ^ i) = 1` for `i ≥ 1`, and if `a ≡ -2 (mod ℓ)` and `ℓ > 2` then `E_U(ℓ ^ i) = 2`.
-The `a ≡ 2 (mod ℓ)` claim is restricted to odd `ℓ`: it is false as printed for `ℓ = 2`, e.g.
-`(a, b) = (4, -1)` has `D = 12`, `a ≡ 2 (mod 2)`, but `π_U(4) = 4` and `ρ_U(4) = 2`.
+**Primes dividing the discriminant when $Q = \pm 1$.** Let $U = U(P, Q)$ be a Lucas sequence
+and let $\ell$ be a prime dividing its discriminant $D = P^2 - 4Q$. Write $\pi_U(m)$ and
+$\rho_U(m)$ for the least period and the least restricted period of $U$ modulo $m$. If $Q = -1$,
+then $\ell = 2$ or $\ell \equiv 1 \pmod 4$. If $Q = 1$, then $P \equiv 2 \pmod \ell$ or
+$P \equiv -2 \pmod \ell$; moreover, if $\ell > 2$ and $P \equiv 2 \pmod \ell$, then
+$\pi_U(\ell^i) = \rho_U(\ell^i)$ for every $i \ge 1$, and if $\ell > 2$ and
+$P \equiv -2 \pmod \ell$, then $\pi_U(\ell^i) = 2 \rho_U(\ell^i)$ for every $i \ge 1$.
+
+In the paper's notation $W(n + 2) = a W(n + 1) + b W(n)$ one has $a = P$ and $b = -Q$. The
+restriction to $\ell > 2$ in the case $P \equiv 2 \pmod \ell$ is needed: for $(P, Q) = (4, 1)$
+one has $D = 12$ and $P \equiv 2 \pmod 2$, but $\pi_U(4) = 4$ and $\rho_U(4) = 2$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

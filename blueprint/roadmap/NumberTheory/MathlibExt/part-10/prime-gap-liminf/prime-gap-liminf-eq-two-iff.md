@@ -7,21 +7,24 @@ proof: formalized
 lean: MathlibExt.NumberTheory.primeGapLiminf_eq_two_iff
 ---
 
-# Prime Gap Liminf eq two iff
+# The liminf of prime gaps is two exactly when there are infinitely many twin primes
 
-Equality to two means precisely infinitely many actual twin-prime pairs.
+**The liminf of prime gaps is two exactly when there are infinitely many twin primes.** Let
+$p_0 < p_1 < p_2 < \cdots$ be the primes in increasing order and let $g_n = p_{n+1} - p_n$ be the
+$n$-th prime gap. Then $\liminf_{n \to \infty} g_n = 2$, taken in $\mathbb{N} \cup \{\infty\}$, if
+and only if there are infinitely many primes $p$ such that $p + 2$ is also prime.
 
 ## Depends on
 
-- [Prime Gap Liminf](prime-gap-liminf.md)
+- [Liminf of prime gaps](prime-gap-liminf.md)
 
 ## Proof depends on
 
-- [Prime Gap Liminf le iff infinite](prime-gap-liminf-le-iff-infinite.md)
-- [Prime Gap eq two iff](prime-gap-eq-two-iff.md)
-- [Two le prime Gap](two-le-prime-gap.md)
-- [Two le prime Gap Liminf](two-le-prime-gap-liminf.md)
-- [Prime Gap](../prime-gap.md)
+- [When the liminf of prime gaps is at most a given bound](prime-gap-liminf-le-iff-infinite.md)
+- [A prime gap equals two exactly at a twin prime](prime-gap-eq-two-iff.md)
+- [Prime gaps after the first are at least two](two-le-prime-gap.md)
+- [The liminf of prime gaps is at least two](two-le-prime-gap-liminf.md)
+- [Prime gap](../prime-gap.md)
 
 ## Sources
 

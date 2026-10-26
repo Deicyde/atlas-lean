@@ -13,7 +13,7 @@ For `s = k(k+1) + i` with `0 ≤ i ≤ 2k+1` and `n > N_s` (by parity), with
 
 ## Depends on
 
-- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
 - [Triangular Frobenius Bound](triangular-frobenius-bound.md)
 - [Triangular Frobenius X](triangular-frobenius-x.md)
 - [Triangular Frobenius Y](triangular-frobenius-y.md)

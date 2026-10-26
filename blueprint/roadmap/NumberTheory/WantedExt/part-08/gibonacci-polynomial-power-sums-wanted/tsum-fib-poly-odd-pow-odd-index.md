@@ -15,7 +15,7 @@ Theorem 1.7: for real `x > 0`, a positive integer `k` and `m ∈ ℕ`,
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

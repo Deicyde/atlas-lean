@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.balancingNum_concatTwoRepdigits
 ---
 
-# Balancing Num concat Two Repdigits
+# Balancing numbers that are concatenations of two repdigits
 
-The only balancing number that is a concatenation of two repdigits is `35`.
+**Balancing numbers that are concatenations of two repdigits.** For every natural number $k$,
+if the balancing number $B_k$ is a concatenation of two repdigits, then $B_k = 35$.
 
 ## Depends on
 
-- [Is Concat Two Repdigits](is-concat-two-repdigits.md)
-- [Balancing Num](balancing-num.md)
+- [Concatenations of two decimal repdigits](is-concat-two-repdigits.md)
+- [Balancing numbers](balancing-num.md)
 
 ## Sources
 

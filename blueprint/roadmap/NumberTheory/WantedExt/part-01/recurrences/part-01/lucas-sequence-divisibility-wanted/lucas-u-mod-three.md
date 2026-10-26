@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_mod_three
 ---
 
-# Lucas U mod three
+# Lucas sequences modulo 3
 
-Behaviour of `U(P, Q)` modulo `3` when `3 ∤ gcd(P, Q)`: `U` is periodic modulo `3`
-from `n = 1` on (not from `n = 0` in general: `P = 1`, `Q = 3` gives `U ≡ 0, 1, 1, 1, …`); if
-`3 ∣ Q` then `3 ∤ U_n` for `n ≥ 1`; if `3 ∣ P` then `3 ∣ U_n ↔ 2 ∣ n`;
-if `3 ∤ P` and `Q ≡ -1 (mod 3)` then `3 ∣ U_n ↔ 4 ∣ n`; if `3 ∤ P` and `Q ≡ 1 (mod 3)`
-then `3 ∣ U_n ↔ 3 ∣ n` and `3 ∣ D`. The source's values `ρ(3) = 2, 4, 3` of the rank of
-apparition are the least positive indices these equivalences give.
+**Lucas sequences modulo 3.** Let $U = U(P, Q)$ be the Lucas sequence with integer parameters
+$P$ and $Q \ne 0$, let $D = P^2 - 4Q$, and suppose $3 \nmid \gcd(P, Q)$. Then $U$ is periodic
+modulo $3$ from index $1$ on: there is $k > 0$ with $U_{n+k} \equiv U_n \pmod 3$ for every
+$n \ge 1$. If $3 \mid Q$, then $3 \nmid U_n$ for every $n \ge 1$. If $3 \mid P$, then for every
+$n \ge 0$, $3 \mid U_n$ if and only if $2 \mid n$. If $3 \nmid P$ and $Q \equiv -1 \pmod 3$,
+then for every $n \ge 0$, $3 \mid U_n$ if and only if $4 \mid n$. If $3 \nmid P$ and
+$Q \equiv 1 \pmod 3$, then for every $n \ge 0$, $3 \mid U_n$ if and only if $3 \mid n$; moreover
+$3 \mid D$.
+
+The periodicity need not start at $n = 0$: for $P = 1$ and $Q = 3$, $U$ is $0, 1, 1, 1, \dots$
+modulo $3$. The source's values $\rho(3) = 2, 4, 3$ of the rank of apparition are the least
+positive indices these equivalences give.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

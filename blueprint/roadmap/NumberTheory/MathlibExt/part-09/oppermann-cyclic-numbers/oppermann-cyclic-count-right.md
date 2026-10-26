@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.oppermannCyclicCountRight
 ---
 
-# Oppermann Cyclic Count Right
+# Cyclic numbers in the right Oppermann interval
 
-The number of cyclic integers in the closed interval `[n², n²+n]`.
+**Cyclic numbers in the right Oppermann interval.** For a natural number $n$, this is the
+number of cyclic numbers $k$ with $n^2 \le k \le n^2 + n$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Cyclic Number](is-cyclic-number.md)
+- [Cyclic numbers](is-cyclic-number.md)
 
 ## Sources
 

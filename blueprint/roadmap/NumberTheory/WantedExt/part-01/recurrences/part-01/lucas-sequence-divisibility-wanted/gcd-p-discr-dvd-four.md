@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gcd_p_discr_dvd_four
 ---
 
-# Gcd p discr dvd four
+# Common divisors of $P$ and the discriminant
 
-If `gcd(P, Q) = 1` then `gcd(P, D) ∣ 4`, and `gcd(P, D') = 1` for every odd
-divisor `D'` of `D = P² - 4Q`.
+**Common divisors of $P$ and the discriminant.** Let $P$ and $Q$ be coprime integers and let
+$D = P^2 - 4Q$. Then $\gcd(P, D)$ divides $4$, and $\gcd(P, D') = 1$ for every odd integer $D'$
+dividing $D$.
 
 ## Depends on
 

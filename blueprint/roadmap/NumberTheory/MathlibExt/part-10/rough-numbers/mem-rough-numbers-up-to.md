@@ -16,12 +16,12 @@ source predicate (every prime factor exceeds `k`).
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Eq one of mem smooth Numbers](eq-one-of-mem-smooth-numbers.md)
-- [Ne zero](ne-zero.md)
+- [Only $1$ is rough and smooth at the same bound](eq-one-of-mem-smooth-numbers.md)
+- [Rough numbers are nonzero](ne-zero.md)
 
 ## Sources
 

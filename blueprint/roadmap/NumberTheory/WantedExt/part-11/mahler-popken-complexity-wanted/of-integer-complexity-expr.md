@@ -12,7 +12,7 @@ Translation of classical integer-complexity expressions to
 
 ## Depends on
 
-- [Expr](../../../MathlibExt/part-07/integer-complexity/expr.md)
+- [Expressions built from one, addition and multiplication](../../../MathlibExt/part-07/integer-complexity/expr.md)
 - [Mahler Popken Expr](mahler-popken-expr.md)
 
 ## Sources

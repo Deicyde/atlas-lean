@@ -5,6 +5,6 @@ navigation: module
 
 # Bellotti Wong Zero Count
 
-- [Zeta Zero Count](zeta-zero-count.md)
-- [Bellotti wong zero count bound](bellotti-wong-zero-count-bound.md)
-- [Bellotti wong zero count bound small](bellotti-wong-zero-count-bound-small.md)
+- [Zero-counting function of the Riemann zeta function](zeta-zero-count.md)
+- [First Bellotti–Wong bound on the zero-counting function](bellotti-wong-zero-count-bound.md)
+- [Second Bellotti–Wong bound on the zero-counting function](bellotti-wong-zero-count-bound-small.md)

@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isLucasFrobeniusPseudoprime_of_isEulerLucasPseudoprime
 ---
 
-# Is Lucas Frobenius Pseudoprime of is Euler Lucas Pseudoprime
+# From Euler–Lucas to Frobenius pseudoprimes
 
-For nondegenerate `U(P, Q)`, an Euler–Lucas pseudoprime `N` that is an Euler pseudoprime to
-the base `Q`, with `gcd(N, PQD) = 1`, is a Frobenius pseudoprime (the base `Q` is any nonzero
-integer; the source's Definition 3.7 is stated for positive odd bases).
+**From Euler–Lucas to Frobenius pseudoprimes.** Let $P$ and $Q \neq 0$ be integers forming a
+nondegenerate Lucas pair, and let $D = P^2 - 4Q$. If $N$ is an Euler–Lucas pseudoprime with
+parameters $P, Q$ and an Euler pseudoprime to the base $Q$, and $\gcd(N, PQD) = 1$, then $N$ is a
+Frobenius pseudoprime with parameters $P, Q$.
+
+The base $Q$ is any nonzero integer; the source's Definition 3.7 is stated for positive odd bases.
 
 ## Depends on
 
-- [Is Euler Lucas Pseudoprime](is-euler-lucas-pseudoprime.md)
-- [Is Euler Pseudoprime](is-euler-pseudoprime.md)
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Euler–Lucas pseudoprime](is-euler-lucas-pseudoprime.md)
+- [Euler pseudoprime](is-euler-pseudoprime.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

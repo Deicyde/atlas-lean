@@ -6,15 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polyBernoulliPoly_zero_index
 ---
 
-# Poly Bernoulli Poly zero index
+# Poly-Bernoulli polynomials of degree zero
 
-The degree-zero poly-Bernoulli polynomial equals `1` for every integer order
-`p` and every rational argument `x`; this is the constant term of the stated
-generating function, with no deviation.
+**Poly-Bernoulli polynomials of degree zero.** For every integer $k$ and every rational number
+$x$, the poly-Bernoulli polynomial of degree $0$ and order $k$ satisfies $B_0^{(k)}(x) = 1$.
 
 ## Depends on
 
-- [Poly Bernoulli Poly](poly-bernoulli-poly.md)
+- [Poly-Bernoulli polynomials](poly-bernoulli-poly.md)
 
 ## Proof depends on
 

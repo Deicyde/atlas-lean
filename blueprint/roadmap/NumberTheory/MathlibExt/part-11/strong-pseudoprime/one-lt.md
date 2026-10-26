@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsStrongPseudoprime.one_lt
 ---
 
-# One lt
+# Strong pseudoprimes exceed one
 
-A strong pseudoprime exceeds `1`.
+**Strong pseudoprimes exceed one.** If $n$ is a strong pseudoprime to some base $b$ modulo
+$n$, then $n > 1$.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
+- [Strong pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ through $L(p_n) = 0$ for $n \ge 1$.
 
 ## Depends on
 
-- [Has Jacobi Fraction](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Jacobi continued fraction expansion](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
 
 ## Sources
 

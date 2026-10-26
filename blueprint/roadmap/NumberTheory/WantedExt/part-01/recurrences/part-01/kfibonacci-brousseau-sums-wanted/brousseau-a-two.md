@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.brousseauA_two
 ---
 
-# Brousseau A two
+# The value $A_k^{(2)} = 8/k^2$
 
-`A_k^(2) = 8/k²`.
+**The value $A_k^{(2)} = 8/k^2$.** For every rational number $k$, the number $A_k^{(2)}$ for
+$k$-Fibonacci Brousseau sums equals $8/k^2$, where $8/0$ is read as $0$.
 
 ## Depends on
 
-- [Brousseau A](brousseau-a.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
 
 ## Proof depends on
 
-- [Brousseau A one](brousseau-a-one.md)
+- [The value $A_k^{(1)} = 2/k$](brousseau-a-one.md)
 
 ## Sources
 

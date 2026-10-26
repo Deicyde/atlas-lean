@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_sub_
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

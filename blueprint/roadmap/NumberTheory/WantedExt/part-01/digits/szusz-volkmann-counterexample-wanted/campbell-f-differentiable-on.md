@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.campbellF_differentiableOn
 ---
 
-# Campbell F differentiable On
+# Differentiability of Campbell's interpolation
 
-Lemma 4: `f` is differentiable on `ℝ_{>0}`.
+**Differentiability of Campbell's interpolation.** Campbell's interpolation $f$ is
+differentiable at every real $x > 0$.
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
+- [Campbell's interpolation](campbell-f.md)
 
 ## Sources
 

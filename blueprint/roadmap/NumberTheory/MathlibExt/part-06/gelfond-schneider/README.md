@@ -4,5 +4,5 @@ navigation: module
 
 # Gelfond Schneider
 
-- [Gelfond Schneider complex exp](gelfond-schneider-complex-exp.md)
-- [Gelfond Schneider real rpow](gelfond-schneider-real-rpow.md)
+- [Gelfond–Schneider theorem for every value of a complex power](gelfond-schneider-complex-exp.md)
+- [Gelfond–Schneider theorem for real powers](gelfond-schneider-real-rpow.md)

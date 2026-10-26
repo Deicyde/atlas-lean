@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_basePhiOccurrences_one
 ---
 
-# One mem base Phi Occurrences one
+# A base phi expansion of 1 ends in the digit 1
 
-`1 ∈ R_1`: the expansion `β(1) = 1` ends in the digit `1`.
+**A base phi expansion of 1 ends in the digit 1.** The number $1$ lies in the occurrence
+set of the one-letter digit block $1$ placed at position $0$ (the paper's $R_1$): some base phi
+expansion of $1$ has the digit $1$ at position $0$.
 
 ## Depends on
 
-- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Occurrence set of a digit block](base-phi-occurrences.md)
 
 ## Proof depends on
 
-- [Has Digit Block](has-digit-block.md)
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Digit block of an expansion](has-digit-block.md)
+- [Base phi expansion](is-base-phi-expansion.md)
 - [Is Base Phi Expansion one](is-base-phi-expansion-one.md)
 
 ## Sources

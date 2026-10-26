@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.LindemannWanted.hermite_lindemann
 ---
 
-# Lindemann
+# Hermite–Lindemann theorem
 
-If `α : ℂ` is nonzero and algebraic over `ℚ`, then `Complex.exp α` is transcendental over `ℚ`.
+**Hermite–Lindemann theorem.** If $\alpha$ is a nonzero complex number that is algebraic over
+$\mathbb{Q}$, then $e^{\alpha}$ is transcendental over $\mathbb{Q}$.
 
 ## Depends on
 

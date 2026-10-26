@@ -89,8 +89,12 @@ $D$. -/
 def dfaFound (g : EncodedCFG T) (D : EncodedDFA T) : List ℕ :=
   (dfaStep g D)^[(dfaItems g D).length] []
 
-/-- **The emptiness test** for the intersection: no accepting state `f` has the item
-`(start, D.start, f)`. -/
+/-- **The intersection-emptiness test for a grammar and a DFA.** Let $g$ be an encoded grammar with
+start nonterminal $S$, let $D$ be an encoded DFA with start state $s$, and write
+$\langle \cdot, \cdot \rangle$ for the natural-number pairing. The test of $g$ and $D$ is true
+exactly when there is no accepting state $f$ of $D$ that is also one of the states of $D$ and for
+which the code $\langle S, \langle s, f \rangle \rangle$ is among the found items of $g$ and
+$D$. -/
 def interEmptyB (g : EncodedCFG T) (D : EncodedDFA T) : Bool :=
   !(D.accept.any fun f => Decidability.memB D.states f &&
     Decidability.memB (dfaFound g D) (Nat.pair g.start (Nat.pair D.start f)))

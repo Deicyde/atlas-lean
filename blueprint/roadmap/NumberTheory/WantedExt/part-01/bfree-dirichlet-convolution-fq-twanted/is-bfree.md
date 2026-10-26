@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsBFree
 ---
 
-# Is BFree
+# $B_\kappa$-free polynomials
 
-`f ∈ 𝔽_q[T]` is `B_κ`-free when no `P ^ κ(P)`, `P` monic irreducible, divides it.
+**$B_\kappa$-free polynomials.** Let $F$ be a field and let $\kappa$ assign a natural number to
+each polynomial in $F[T]$. A polynomial $f \in F[T]$ is $B_\kappa$-free when $P^{\kappa(P)}$ does
+not divide $f$ for any monic irreducible $P \in F[T]$.
 
 ## Depends on
 

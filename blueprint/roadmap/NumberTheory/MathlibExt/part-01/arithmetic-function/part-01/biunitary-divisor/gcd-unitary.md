@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

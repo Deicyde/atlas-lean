@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadterLookup
 ---
 
-# Three Term Hofstadter Lookup
+# Value of a partially computed sequence at an index
 
-The value at index `j` of the sequence whose first terms are `xs = #[B(1), …, B(m)]`:
-`xs[j - 1]` for `1 ≤ j ≤ m`, `0` for `j ≤ 0` when `pad`, and undefined otherwise.
+**Value of a partially computed sequence at an index.** Given computed terms
+$B(1), \dots, B(m)$, a choice of whether the sequence is padded, and an integer $j$, the value
+at index $j$ is $B(j)$ when $1 \le j \le m$, is $0$ when $j \le 0$ and the sequence is padded,
+and is undefined otherwise (for $j \le 0$ in the unpadded case, and for $j > m$).
 
 ## Depends on
 

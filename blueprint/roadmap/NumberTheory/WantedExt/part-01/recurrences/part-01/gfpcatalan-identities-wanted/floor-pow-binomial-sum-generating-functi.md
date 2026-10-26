@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.floorPowBinomialSum_generatingFunction
 ---
 
-# Floor Pow Binomial Sum generating Function
+# Generating function of the floor-exponent binomial sums
 
-Theorem 4.4: for `ℓ ≥ 1`, the generating function of `T_ℓ(n; t) = ∑_i C(n, i) t^{⌊i/ℓ⌋}` is
-`(∑_{k=0}^{ℓ-1} ∑_{i=0}^{k} (-1)^i C(i+ℓ-k-1, i) x^k) / ((1-x)^ℓ - t x^ℓ)`, stated as a
-product identity of formal power series.
+**Generating function of the floor-exponent binomial sums.** Let $R$ be a commutative ring,
+$t \in R$ and $\ell \ge 1$ an integer, and for $n \ge 0$ let
+$T_\ell(n; t) = \sum_{i=0}^{n} \binom{n}{i} t^{\lfloor i/\ell \rfloor}$. Then in the ring $R[[x]]$
+of formal power series,
+
+$$\Big(\sum_{n \ge 0} T_\ell(n; t)\, x^n\Big) \big((1-x)^\ell - t x^\ell\big)
+  = \sum_{k=0}^{\ell-1} \Big(\sum_{i=0}^{k} (-1)^i \binom{i+\ell-k-1}{i}\Big) x^k.$$
+
+So the generating function of the $T_\ell(n; t)$ is this polynomial divided by the series
+$(1-x)^\ell - t x^\ell$, which is invertible since its constant term is $1$.
 
 ## Depends on
 

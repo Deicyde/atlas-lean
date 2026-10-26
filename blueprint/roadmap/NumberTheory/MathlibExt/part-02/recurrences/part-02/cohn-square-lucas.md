@@ -17,7 +17,7 @@ This is the third claim of Theorem 2.1 of Keskin and Yosma, which they attribute
 
 ## Depends on
 
-- [Lucas Number](../../../part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

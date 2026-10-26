@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.basePhiValue_empty
 ---
 
-# Base Phi Value empty
+# The empty base phi expansion has value zero
 
-The empty expansion represents `0`.
+**The empty base phi expansion has value zero.** The base phi value of the empty set of
+positions is $0$.
 
 ## Depends on
 
-- [Base Phi Value](base-phi-value.md)
+- [Value of a base phi expansion](base-phi-value.md)
 
 ## Sources
 

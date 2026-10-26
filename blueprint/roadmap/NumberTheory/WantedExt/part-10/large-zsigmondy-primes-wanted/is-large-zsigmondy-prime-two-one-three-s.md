@@ -17,8 +17,8 @@ lean: MetaMathlibExt.isLargeZsigmondyPrime_two_one_three_seven
 
 ## Proof depends on
 
-- [Is Primitive Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-divisor.md)
-- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

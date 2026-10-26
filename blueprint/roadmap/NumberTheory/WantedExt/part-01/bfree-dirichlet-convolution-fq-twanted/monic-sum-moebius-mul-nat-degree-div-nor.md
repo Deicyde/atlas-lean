@@ -5,10 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.monic_sum_moebius_mul_natDegree_div_norm
 ---
 
-# Monic sum moebius mul nat Degree div norm
+# Degree-weighted Möbius sum over the monic divisors of a polynomial over a finite field
 
-For monic `f`, `∑_{g ∈ M, g ∣ f} μ(g) deg(g) / |g| = (Φ(f) / |f|) ∑_{P ∣ f} deg P / (1 - |P|)`,
-with `Φ(f) / |f| = ∏_{P ∣ f} (1 - 1/|P|)` written as the product.
+**Degree-weighted Möbius sum over the monic divisors of a polynomial over a finite field.** Let
+$F$ be a finite field with $q$ elements and let $\mu$ be the Möbius function of $F[T]$. For every
+monic $f \in F[T]$,
+
+$$\sum_{g \text{ monic},\ g \mid f} \frac{\mu(g) \deg g}{q^{\deg g}} =
+\prod_{P \mid f} \left(1 - \frac{1}{q^{\deg P}}\right)
+\sum_{P \mid f} \frac{\deg P}{1 - q^{\deg P}},$$
+
+where in the product and in the sum $P$ runs over the monic irreducible divisors of $f$.
+
+The product is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient function on $F[T]$.
 
 ## Depends on
 

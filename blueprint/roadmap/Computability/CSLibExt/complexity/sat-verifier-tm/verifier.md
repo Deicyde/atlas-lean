@@ -89,7 +89,7 @@ and, if $\mathit{cap}$ is true, every clause of $\varphi$ has at most three lite
 - [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
 - [CNF formula](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNF clause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](../../../MathlibExt/turing-machine/composition/push-bound.md)
 - [Number of push instructions in a TM2 statement](../../../MathlibExt/turing-machine/composition/pushes.md)
 - [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 - [Embedding of a machine in a host](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)

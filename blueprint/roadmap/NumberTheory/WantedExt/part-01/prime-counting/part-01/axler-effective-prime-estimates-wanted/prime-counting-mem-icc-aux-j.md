@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_mem_Icc_auxJ
 ---
 
-# Prime Counting mem Icc aux J
+# Prime counting between the auxiliary functions $J$
 
-Prime counting between the auxiliary functions `J`: let `k ≥ 1`, `η > 0`, `x₁ > 1` with
-`|ϑ(y) - y| < η y / logᵏ y` for every `y ≥ x₁`, and for real `e` set
-`J_{k,e,x₁}(x) = π(x₁) - ϑ(x₁)/log x₁ + x/log x + e x/log^{k+1} x +
-∫_{x₁}^{x} (1/log² t + e/log^{k+2} t) dt` (the paper's (4.1)). Then
-`J_{k,-η,x₁}(x) ≤ π(x) ≤ J_{k,η,x₁}(x)` for every `x ≥ x₁` (non-strict, as the paper prints it).
+**Prime counting between the auxiliary functions $J$.** Let $\pi(x)$ be the number of primes
+$p \le x$ and $\vartheta(x) = \sum_{p \le x} \log p$ Chebyshev's function. Let $k \ge 1$ be an
+integer and let $\eta > 0$ and $x_1 > 1$ be reals with $|\vartheta(y) - y| < \eta y / \log^k y$
+for every real $y \ge x_1$. For reals $e$ and $x \ge x_1$ set
+$J_e(x) = \pi(x_1) - \frac{\vartheta(x_1)}{\log x_1} + \frac{x}{\log x} +
+\frac{e\,x}{\log^{k+1} x} + \int_{x_1}^{x} \left(\frac{1}{\log^2 t} +
+\frac{e}{\log^{k+2} t}\right) dt$.
+Then $J_{-\eta}(x) \le \pi(x) \le J_{\eta}(x)$ for every real $x \ge x_1$.
+
+The inequalities are non-strict, as the paper prints them.
 
 ## Depends on
 

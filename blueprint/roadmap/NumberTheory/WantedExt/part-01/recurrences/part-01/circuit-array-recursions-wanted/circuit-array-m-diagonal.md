@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.circuitArrayM_diagonal
 ---
 
-# Circuit Array M diagonal
+# First entries of the left diagonal of the multivariable circuit array
 
-The left-side diagonal of `C^M`: `C^M₀,₁ = X₁` and `C^M₂,₂ = X₂`.
+**First entries of the left diagonal of the multivariable circuit array.** The multivariable
+circuit array $C^M$, with values in the field of rational functions over $\mathbb{Q}$ in the
+variables $X_0, X_1, \dots$, satisfies $C^M_{0,1} = X_1$ and $C^M_{2,2} = X_2$.
 
 ## Depends on
 
-- [Circuit Array M](circuit-array-m.md)
-- [Circuit Var](circuit-var.md)
+- [Multivariable circuit array](circuit-array-m.md)
+- [Variables of the multivariable circuit array](circuit-var.md)
 
 ## Proof depends on
 
-- [Circuit Edge](circuit-edge.md)
-- [Circuit Grid](circuit-grid.md)
-- [Circuit Reduce](circuit-reduce.md)
+- [Edges of an upright triangle](circuit-edge.md)
+- [Reduced circuit grids](circuit-grid.md)
+- [Row reduction of a labelled triangular grid](circuit-reduce.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lucasBalancingNum_concatTwoRepdigits
 ---
 
-# Lucas Balancing Num concat Two Repdigits
+# Lucas-balancing numbers that are concatenations of two repdigits
 
-The only Lucas-balancing numbers that are concatenations of two repdigits are `17` and `577`.
+**Lucas-balancing numbers that are concatenations of two repdigits.** For every natural
+number $k$, if the decimal expansion of the Lucas-balancing number $C_k$ consists of exactly two
+runs of equal digits, that is, $C_k$ is a block of one repeated digit followed by a block of a
+different repeated digit, then $C_k = 17$ or $C_k = 577$.
 
 ## Depends on
 
-- [Is Concat Two Repdigits](is-concat-two-repdigits.md)
-- [Lucas Balancing Num](lucas-balancing-num.md)
+- [Concatenations of two decimal repdigits](is-concat-two-repdigits.md)
+- [Lucas-balancing numbers (shifted indexing)](lucas-balancing-num.md)
 
 ## Sources
 

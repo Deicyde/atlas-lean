@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfRev
 ---
 
-# Zeckendorf Rev
+# Reversal of the first $n$ entries
 
-`rev_n(ε) = (ε_n, …, ε_1)`: the first `n` entries of `ε` in reverse order, a coefficient
-function with finite support (zero-based: entry `j < n` is `ε (n - 1 - j)`).
+**Reversal of the first $n$ entries.** For $n \in \mathbb N$ and a coefficient function
+$\varepsilon : \mathbb N \to \mathbb N$, $\mathrm{rev}_n(\varepsilon)$ is the finitely supported
+coefficient function whose entry at index $j$ is $\varepsilon(n - 1 - j)$ for $j < n$ and $0$
+for $j \ge n$ (indices start at $0$). In the paper's one-based indexing this is
+$\mathrm{rev}_n(\varepsilon) = (\varepsilon_n, \dots, \varepsilon_1)$.
 
 ## Depends on
 

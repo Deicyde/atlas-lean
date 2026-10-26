@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_le_logarithmicIntegral
 ---
 
-# Prime Counting le logarithmic Integral
+# Büthe's bound of the prime-counting function by the logarithmic integral
 
-Büthe's bound: `π(x) ≤ li(x)` for every real `x` with `2 ≤ x ≤ 10¹⁹`, with `li` the
-principal-value logarithmic integral `∫₀ˣ dt/log t` (`Real.logarithmicIntegralReal`, the paper's
-definition) and `π(x) = Nat.primeCounting ⌊x⌋₊`. The paper prints the non-strict form; Büthe's
-original bound is strict.
+**Büthe's bound of the prime-counting function by the logarithmic integral.** Let $\pi(x)$
+denote the number of primes $p \le x$, and let $\operatorname{li}(x)$ be the logarithmic integral,
+the principal value $\mathrm{PV}\int_0^x \frac{dt}{\log t}$. For every real $x$ with
+$2 \le x \le 10^{19}$, $\pi(x) \le \operatorname{li}(x)$.
+
+The paper prints the non-strict form; Büthe's original bound is strict.
 
 ## Depends on
 

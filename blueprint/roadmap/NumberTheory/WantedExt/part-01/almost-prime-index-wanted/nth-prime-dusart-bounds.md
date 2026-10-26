@@ -5,11 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.nth_prime_dusart_bounds
 ---
 
-# Nth prime dusart bounds
+# Dusart's bounds for the $n$th prime
 
-Dusart's bounds for the `n`th prime `p_n`: `p_n ≥ n (log n + log log n - 1)` and
-`p_n ≥ n (log n + log log n - 1 + (log log n - 2.25) / log n)` for `n ≥ 2`, and
-`p_n ≤ n (log n + log log n - 0.9484)` for `n ≥ 39017`.
+**Dusart's bounds for the $n$th prime.** For $n \ge 1$ let $p_n$ denote the $n$th prime, so
+that $p_1 = 2$, and let $\log$ be the natural logarithm. For every natural number $n \ge 2$,
+
+$$
+p_n \ge n (\log n + \log \log n - 1)
+$$
+
+and
+
+$$
+p_n \ge n \left( \log n + \log \log n - 1 + \frac{\log \log n - 2.25}{\log n} \right),
+$$
+
+and for every natural number $n \ge 39017$,
+
+$$
+p_n \le n (\log n + \log \log n - 0.9484).
+$$
 
 ## Depends on
 

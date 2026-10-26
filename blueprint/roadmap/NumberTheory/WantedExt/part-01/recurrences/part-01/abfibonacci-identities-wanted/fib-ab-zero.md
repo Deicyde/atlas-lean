@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.fibAB_zero
 ---
 
-# Fib AB zero
+# Zeroth (a, b)-Fibonacci number
 
-`F_0 = 0` for the `(a, b)`-Fibonacci numbers.
+**Zeroth (a, b)-Fibonacci number.** For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
+number $F^{a,b}_0$ equals $0$.
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
 
 ## Sources
 

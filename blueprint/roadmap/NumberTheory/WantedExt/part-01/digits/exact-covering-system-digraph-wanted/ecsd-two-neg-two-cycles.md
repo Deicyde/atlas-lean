@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_two_neg_two_cycles
 ---
 
-# Ecsd two neg two cycles
+# Cycles of the digraph $G(2n, -2n + a)$
 
-Cycles of the Type 2 ECSD `G(2n, -2n + a)`, `a ∈ ℕ` odd: (i) the only loops are at
-`0` and, when `3 ∣ a`, at `a / 3`; (ii) `m` is a cyclic vertex iff `0 ≤ m < a / 2`;
-(iii) for `a = t a'`, `C` is a cycle of `G(2n, -2n + a')` iff `tC` is a cycle of
-`G(2n, -2n + a)` (the hypothesis that `a'` is odd is dropped as implied).
+**Cycles of the digraph $G(2n, -2n + a)$.** For an integer $b$ write $G_b$ for the digraph
+$G(2n, -2n + b)$ on $\mathbb{Z}$, with an edge $m \to 2m$ and an edge $m \to -2m + b$ for every
+integer $m$. Let $a$ be an odd natural number. Then (i) $G_a$ has a loop at $m$ if and only if
+$m = 0$ or $3m = a$; (ii) $G_a$ has a directed walk of positive length from $m$ back to $m$ if
+and only if $0 \le m < a/2$; (iii) for all natural numbers $t$ and $a'$ with $a = t a'$, a list
+$(c_1, \dots, c_s)$ of integers is a cycle of $G_{a'}$ if and only if $(t c_1, \dots, t c_s)$ is
+a cycle of $G_a$.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

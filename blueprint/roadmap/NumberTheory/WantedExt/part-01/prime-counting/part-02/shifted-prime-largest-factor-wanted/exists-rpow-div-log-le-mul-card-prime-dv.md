@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_rpow_div_log_le_mul_card_prime_dvd_prime_sub_one
 ---
 
-# Exists rpow div log le mul card prime dvd prime sub one
+# Large prime divisors of shifted primes
 
-With `c = 0.677`, there is `C > 0` such that for all sufficiently large real `x`,
-`x^c / log x ≤ C · #{q prime : q > x^c and q ∣ p - 1 for some prime p ≤ x}`. The congruence
-`p ≡ 1 (mod q)` is written `p % q = 1`; every such `q` is at most `x`, so the count runs over
-`q ≤ ⌊x⌋`.
+**Large prime divisors of shifted primes.** There is a real number $C > 0$ such that for all
+sufficiently large real $x$ we have $x^{0.677} / \log x \le C \cdot N(x)$, where $N(x)$ is the
+number of primes $q \le x$ with $q > x^{0.677}$ such that $q \mid p - 1$ for some prime $p \le x$.
+
+The condition $q \le x$ is automatic, since $q \mid p - 1$ with $p \le x$ forces $q < x$.
 
 ## Depends on
 

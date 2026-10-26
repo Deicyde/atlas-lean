@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_ten_le_card_primeFactors
 ---
 
-# Odd Perfect ten le card prime Factors
+# Nielsen's bound on the number of prime divisors of an odd perfect number
 
-Nielsen (2015), quoted as Lemma 1 (vii): an odd perfect number has at least ten distinct prime
-divisors, and at least twelve if it is not divisible by three.
+**Nielsen's bound on the number of prime divisors of an odd perfect number.** Every odd perfect
+number $N$ has at least ten distinct prime divisors, and at least twelve if $3$ does not divide $N$.
 
 ## Depends on
 

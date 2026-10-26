@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasBalancingNum_repdigitDiff
 ---
 
-# Lucas Balancing Num repdigit Diff
+# Lucas-balancing numbers that are differences of two repdigits
 
-If `C_k` is a difference of two repdigits then `C_k ∈ {3, 17}`; the paper displays
-`C_2 = 3 = 11 - 8` and `C_3 = 17 = 22 - 5`.
+**Lucas-balancing numbers that are differences of two repdigits.** For every natural
+number $k \ge 2$, if the Lucas-balancing number $C_k$ is a difference of two repdigits, then
+$C_k = 3$ or $C_k = 17$.
 
-The hypothesis `2 ≤ k` excludes `C_1 = 1 = 2 - 1`, as in Theorem 2.
+Both values occur: $C_2 = 3 = 11 - 8$ and $C_3 = 17 = 22 - 5$. The hypothesis $k \ge 2$ excludes
+$C_1 = 1 = 2 - 1$.
 
 ## Depends on
 
-- [Is Repdigit Diff](is-repdigit-diff.md)
-- [Lucas Balancing Num](lucas-balancing-num.md)
+- [Differences of two repdigits](is-repdigit-diff.md)
+- [Lucas-balancing numbers (shifted indexing)](lucas-balancing-num.md)
 
 ## Sources
 

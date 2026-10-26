@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_brousseau_sum_mul_odd
 ---
 
-# Corollary 9
+# Brousseau sums of Fibonacci numbers along an odd step
 
-**Corollary 9.** For odd `m` and all `p, n ≥ 0`,
-`L_m ∑_{i=1}^n i^p F_{mi} = C_{L_m}^(p)(n) F_{m(n+1)} + C_{L_m}^(p)(n+1) F_{mn} -
-C_{L_m}^(p)(0) F_m`.
+**Brousseau sums of Fibonacci numbers along an odd step.** Let $F_n$ be the Fibonacci
+numbers, $L_n$ the Lucas numbers and $C_k^{(p)}$ the coefficient polynomials. For every odd
+natural number $m$ and all $n, p \ge 0$,
+
+$$
+L_m \sum_{i=1}^{n} i^p F_{mi} = C_{L_m}^{(p)}(n) F_{m(n+1)} + C_{L_m}^{(p)}(n+1) F_{mn} -
+C_{L_m}^{(p)}(0) F_m.
+$$
 
 ## Depends on
 
-- [Brousseau Coeff](brousseau-coeff.md)
-- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-coeff.md)
+- [Lucas numbers](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

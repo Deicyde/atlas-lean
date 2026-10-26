@@ -5,6 +5,6 @@ navigation: module
 
 # KPerfect
 
-- [Is KPerfect](is-kperfect.md)
-- [Pos k](pos-k.md)
-- [Is KPerfect two iff](is-kperfect-two-iff.md)
+- [$k$-perfect numbers](is-kperfect.md)
+- [The parameter of a $k$-perfect number is positive](pos-k.md)
+- [Perfect numbers are the $2$-perfect numbers](is-kperfect-two-iff.md)

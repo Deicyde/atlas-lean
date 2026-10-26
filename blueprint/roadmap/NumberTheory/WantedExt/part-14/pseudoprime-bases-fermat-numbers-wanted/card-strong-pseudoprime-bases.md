@@ -15,7 +15,7 @@ and let `v = min_p k_p`. Then the number of strong pseudoprime bases `1 ≤ b < 
 
 ## Depends on
 
-- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
+- [Strong pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

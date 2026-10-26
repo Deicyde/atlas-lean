@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.negBaseSqDigitCycles
 ---
 
-# Neg Base Sq Digit Cycles
+# Cycles of the negative-base digit-square map
 
-`U_{2,b}`: the positive integers `u` with `S_{2,b}^m(u) = u` for some `m ≥ 1`.
+**Cycles of the negative-base digit-square map.** For an integer $b$, let $S_{2,b}$ be the
+base-$b$ digit-square sum, which for $b \le -2$ sends an integer to the sum of the squares of its
+base-$b$ digits. Then $U_{2,b}$ is the set of positive integers $u$ such that $S_{2,b}^m(u) = u$
+for some $m \ge 1$, that is, the positive integers lying on a cycle of $S_{2,b}$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Sources
 

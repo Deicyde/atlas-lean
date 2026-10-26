@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_le_centralBinom_mul_choose_of_le
 ---
 
-# Central Binom add le central Binom mul choose of le
+# Allen's inequality for central binomial products
 
-Proposition 1: for positive `x`, `b`, nonnegative `a` and `x ≥ a`,
-`C(2(a+b), a+b) ≤ C(2a, a) C(x+2b, b)`, with equality if and only if `x = a = 1`.
+**Allen's inequality for central binomial products.** Let $x$ and $b$ be positive integers
+and let $a$ be a nonnegative integer with $a \le x$. Then
+$\binom{2(a+b)}{a+b} \le \binom{2a}{a}\binom{x+2b}{b}$, and equality holds if and only if
+$x = 1$ and $a = 1$.
 
 ## Depends on
 

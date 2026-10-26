@@ -11,7 +11,7 @@ The independent second 2026 bound 240, not identified with Zhang's provenance.
 
 ## Depends on
 
-- [Prime Gap Liminf](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
+- [Liminf of prime gaps](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

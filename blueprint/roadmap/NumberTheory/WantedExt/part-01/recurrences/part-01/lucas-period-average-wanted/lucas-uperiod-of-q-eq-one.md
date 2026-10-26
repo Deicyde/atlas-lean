@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_of_q_eq_one
 ---
 
-# Lucas UPeriod of q eq one
+# Period and restricted period of Lucas sequences with $Q = 1$
 
-Corollary 3.2: for nondegenerate `U(a, -1)` and `m ≥ 2`, `E_U(m) = π_U(m) / ρ_U(m)` is
-`1` or `2`, and if `m = ℓ ^ i` with `ℓ` an odd prime, `i ≥ 1` and `ρ_U(m)` even, then
-`E_U(m) = 2`. Part (ii)(b) (`E = 1` or `2` when `ρ` is odd) is the case of part (i).
+**Period and restricted period of Lucas sequences with $Q = 1$.** Let $U$ be the Lucas
+sequence with integer parameters $P$ and $Q = 1$, where the pair $(P, Q)$ is nondegenerate, and
+write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Let
+$m \ge 2$. Then $\pi(m) = \rho(m)$ or $\pi(m) = 2\rho(m)$, and if $m = \ell^i$ for an odd prime
+$\ell$ and some $i \ge 1$ and $\rho(m)$ is even, then $\pi(m) = 2\rho(m)$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

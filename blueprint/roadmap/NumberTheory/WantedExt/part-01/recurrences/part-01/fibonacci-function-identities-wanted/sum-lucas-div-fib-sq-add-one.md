@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_lucas_div_fib_sq_add_one
 ---
 
-# Sum lucas div fib sq add one
+# Telescoping sums of Lucas numbers over Fibonacci squares plus one
 
-Summed forms of Proposition 3: for `n ≥ 0`,
-`∑_(k=1)^n L_(2k+1)/(F_(2k+1)^2+1) = 3/2 - L_(2n+2)/(F_(2n+2)^2+1)`,
-`∑_(k=1)^n L_(2k+1)/(L_(2k) L_(2k+2)) · (F_(2k)^2+1)(F_(2k+2)^2+1)/(F_(2k+1)^2+1)
-  = (F_(2n+2)^2+1)/L_(2n+2) - 2/3`,
-and the series `∑_(k≥1) L_(2k+1)/(F_(2k+1)^2+1)` has sum `3/2`.
-All indices are natural, so `Nat.fib` and `lucasNumber` are used.
+**Telescoping sums of Lucas numbers over Fibonacci squares plus one.** Let $F_m$ denote the
+Fibonacci numbers and $L_m$ the Lucas numbers ($L_0 = 2$, $L_1 = 1$, $L_{m+2} = L_{m+1} + L_m$).
+For every natural number $n$,
+
+$$\sum_{k=1}^{n} \frac{L_{2k+1}}{F_{2k+1}^2 + 1} = \frac{3}{2} - \frac{L_{2n+2}}{F_{2n+2}^2 + 1}$$
+
+and
+
+$$\sum_{k=1}^{n} \frac{L_{2k+1}}{L_{2k} L_{2k+2}} \cdot
+\frac{(F_{2k}^2 + 1)(F_{2k+2}^2 + 1)}{F_{2k+1}^2 + 1} =
+\frac{F_{2n+2}^2 + 1}{L_{2n+2}} - \frac{2}{3},$$
+
+and the real series $\sum_{k \ge 1} L_{2k+1} / (F_{2k+1}^2 + 1)$ has sum $3/2$.
 
 ## Depends on
 
-- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

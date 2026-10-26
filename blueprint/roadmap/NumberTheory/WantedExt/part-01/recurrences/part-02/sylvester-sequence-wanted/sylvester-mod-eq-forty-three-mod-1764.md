@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_modEq_forty_three_mod_1764
 ---
 
-# Proposition 1, congruence (7)
+# Sylvester numbers modulo 1764
 
-**Proposition 1, congruence (7)**: `S_n ≡ 43 (mod 1764)` for
-`n ≥ 3`.
+**Sylvester numbers modulo 1764.** Let $(S_n)_{n \ge 0}$ be the Sylvester sequence,
+$S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $n \ge 3$, $S_n \equiv 43 \pmod{1764}$.
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: PierceExpansion.traj_length_eq_zero
 ---
 
-# Traj length eq zero
+# The Pierce trajectory vanishes at the Pierce length
 
-The Pierce trajectory vanishes at the Pierce length.
+**The Pierce trajectory vanishes at the Pierce length.** For all natural numbers $n$ and $a$,
+the Pierce remainder trajectory $(t_j)_{j \ge 0}$ of $n$ and $a$ satisfies $t_{\ell(n, a)} = 0$,
+where $\ell(n, a)$ is the Pierce length.
 
 ## Depends on
 
-- [Length](length.md)
-- [Traj](traj.md)
+- [Pierce length](length.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
+- [Pierce trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
 
 ## Sources
 

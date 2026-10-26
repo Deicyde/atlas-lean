@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_exists_six_le_factorization_of_lt
 ---
 
-# Odd Perfect exists six le factorization of lt
+# McDaniel's exponent bound for odd perfect numbers below $10^{9118}$
 
-McDaniel (1970), quoted as Lemma 1 (v): an odd perfect number below `10 ^ 9118` has a prime
-divisor whose exponent is at least six.
+**McDaniel's exponent bound for odd perfect numbers below $10^{9118}$.** If $N$ is an odd
+perfect number with $N < 10^{9118}$, then $N$ has a prime divisor whose exponent in the prime
+factorization of $N$ is at least $6$.
 
 ## Depends on
 

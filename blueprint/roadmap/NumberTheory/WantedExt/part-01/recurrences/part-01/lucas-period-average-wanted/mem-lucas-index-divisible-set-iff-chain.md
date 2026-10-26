@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.mem_lucasIndexDivisibleSet_iff_chain
 ---
 
-# Mem lucas Index Divisible Set iff chain
+# Smyth's description of the indices $n$ with $n \mid U_n$
 
-Theorem 4.1 (Smyth): for nondegenerate `U(a, b)` with `gcd(a, b) = 1`, let the admissible
-`q₀` be `1`, together with `6` if `a ≡ 3`, `b ≡ ±1 (mod 6)`, and `12` if `a ≡ ±1`,
-`b ≡ 1 (mod 6)`. Then each admissible `q₀ ∈ T(U)`; `n ∈ T(U)` iff `n = q₀ q₁ ⋯ q_r` for an
-admissible `q₀` and primes `q_i ∣ D U_(q₀ ⋯ q_(i-1))` (repetitions allowed); every prefix
-product `q₀ ⋯ q_i` of such a chain lies in `T(U)`; and if `D = 1` then `T(U) = {1}`.
+**Smyth's description of the indices $n$ with $n \mid U_n$.** Let $P, Q$ be coprime integers
+with $Q \ne 0$ such that the Lucas pair $(P, Q)$ is nondegenerate, let $U = U(P, Q)$ be its Lucas
+sequence, write $a = P$, $b = -Q$ (so that $U_{k+2} = a U_{k+1} + b U_k$) and $D = P^2 - 4Q$, and
+let $T(U)$ be the set of positive integers $n$ coprime to $Q$ with $n \mid U_n$. Call $q_0$
+admissible if $q_0 = 1$, or $q_0 = 6$ with $a \equiv 3$ and $b \equiv \pm 1 \pmod 6$, or
+$q_0 = 12$ with $a \equiv \pm 1$ and $b \equiv 1 \pmod 6$. Call a finite list of primes
+$q_1, \dots, q_r$ ($r \ge 0$, repetitions allowed) a chain from $q_0$ if
+$q_i \mid D \, U_{q_0 q_1 \cdots q_{i-1}}$ for each $i$. Then every admissible $q_0$ lies in
+$T(U)$; a natural number $n$ lies in $T(U)$ if and only if $n = q_0 q_1 \cdots q_r$ for some
+admissible $q_0$ and some chain $q_1, \dots, q_r$ from $q_0$; for every admissible $q_0$ and every
+chain $q_1, \dots, q_r$ from $q_0$, each product $q_0 q_1 \cdots q_i$ with $0 \le i \le r$ lies in
+$T(U)$; and if $D = 1$, then $T(U) = \{1\}$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Index Divisible Set](lucas-index-divisible-set.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Index-divisible set of a Lucas sequence](lucas-index-divisible-set.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

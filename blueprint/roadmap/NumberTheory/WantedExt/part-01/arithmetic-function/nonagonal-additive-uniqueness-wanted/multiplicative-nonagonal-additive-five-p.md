@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_nonagonal_additive_five_pow
 ---
 
-# Multiplicative nonagonal additive five pow
+# Nonagonal additive uniqueness: the step at powers of 5
 
-Theorem 3 (the step for powers of `5`): under the hypotheses of Theorem 1, with
-`β(x) = x/4`, if `r ≥ 3` and `f n = n` for every `n ≤ β(5^r)`, then `f (5^r) = 5^r`.
+**Nonagonal additive uniqueness: the step at powers of 5.** Let $f$ be a multiplicative
+arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$ for all
+positive integers $a$ and $b$ that are generalized nonagonal numbers, that is, $2a = m(7m - 5)$
+and $2b = k(7k - 5)$ for some integers $m$ and $k$. Let $r \ge 3$ be a natural number and put
+$\beta(x) = x/4$. If $f(n) = n$ for every natural number $n \le \beta(5^r)$, then $f(5^r) = 5^r$.
 
 ## Depends on
 

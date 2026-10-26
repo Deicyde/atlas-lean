@@ -14,7 +14,7 @@ indexes `H` by all integers; this statement covers `n ∈ ℕ`.
 ## Depends on
 
 - [Is Gibonacci Good](is-gibonacci-good.md)
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

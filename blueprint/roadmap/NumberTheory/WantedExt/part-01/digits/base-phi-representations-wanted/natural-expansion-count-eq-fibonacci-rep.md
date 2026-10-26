@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.naturalExpansionCount_eq_fibonacciRepresentationCount
 ---
 
-# Natural Expansion Count eq fibonacci Representation Count
+# Natural expansions are counted by Fibonacci representations
 
-For `N > 3` with Bergman expansion `β(N)` whose lowest digit `1` is at position
-`R`, `Tot_ν(N) = Tot_FIB(F_{2 - R} N)`.
+**Natural expansions are counted by Fibonacci representations.** Write $F_k$ for the $k$-th
+Fibonacci number. Let $N > 3$ be a natural number, let $S$ be a Bergman expansion of $N$ and let
+$R$ be the lowest position of a digit $1$ in $S$. Then the number $\mathrm{Tot}_\nu(N)$ of natural
+base phi expansions of $N$ equals the number $\mathrm{Tot}_{\mathrm{FIB}}(F_{2-R} N)$ of
+representations of $F_{2-R} N$ as a sum of Fibonacci numbers with distinct indices at least $2$.
 
 ## Depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Base Phi Value](base-phi-value.md)
-- [Fibonacci Representation Count](fibonacci-representation-count.md)
-- [Natural Expansion Count](natural-expansion-count.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [Number of Fibonacci representations](fibonacci-representation-count.md)
+- [Number of natural expansions](natural-expansion-count.md)
 
 ## Sources
 

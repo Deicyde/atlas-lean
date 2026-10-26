@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadterExtend
 ---
 
-# Three Term Hofstadter Extend
+# Computing further terms of a three-term Hofstadter-like sequence
 
-Extend the computed terms `xs` by the next `k` terms of the recurrence (tail-recursive,
-appending in place), or `none` if the sequence stops earlier.
+**Computing further terms of a three-term Hofstadter-like sequence.** Given terms
+$B(1), \dots, B(m)$, padded with $0$ at nonpositive indices or not, and a natural number $k$,
+this is the list $B(1), \dots, B(m + k)$ obtained by computing $B(m + 1), \dots, B(m + k)$ one
+after another from $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$. It is undefined if
+one of these terms cannot be computed because the formula refers to an undefined index (a
+nonpositive index in the unpadded case, or an index not yet computed).
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Three Term Hofstadter Next](three-term-hofstadter-next.md)
+- [Next term of the three-term Hofstadter-like recurrence](three-term-hofstadter-next.md)
 
 ## Sources
 

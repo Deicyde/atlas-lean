@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.multiple_harmonic_polynomial_congruence
 ---
 
-# Multiple Harmonic Polynomial Congruence
+# Mattarei–Tauraso polynomial congruence for multiple harmonic sums
 
-Polynomial congruence for multiple harmonic sums (JIS Lemma `Gg`):
-for positive `n` and prime `p` with `p > n + 1`, the `H`-weighted `x^k` sum
-equals the signed sum of `(1 - x)^k / k^n` as polynomials over `ZMod p`.
-Source `https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex`,
-semantic concept `jis_sem_1e299eb15a144f108cb2fe31`,
-statement `jis_9e5865a09e42b4fb025d838d`.
+**Mattarei–Tauraso polynomial congruence for multiple harmonic sums.** Let $n \ge 1$ and let
+$p$ be a prime with $p > n + 1$, write $H_r^{(m)}$ for the multiple harmonic sum modulo $p$, and
+write $k^{-1}$ for the inverse of $k$ in $\mathbb{Z}/p\mathbb{Z}$. Then, as polynomials in $x$
+over $\mathbb{Z}/p\mathbb{Z}$,
+
+$$\sum_{k=1}^{p-1} H_{k-1}^{(n-1)} k^{-1} x^k = (-1)^{n-1} \sum_{k=1}^{p-1} (k^{-1})^n (1 - x)^k.$$
 
 ## Depends on
 
-- [Multiple Harmonic](multiple-harmonic.md)
+- [Multiple harmonic sums](multiple-harmonic.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleHarmonicPolynomialCongruence](../../../../sources/v2/MathlibExt.md)
+- `https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex`, Lemma `Gg`, semantic concept `jis_sem_1e299eb15a144f108cb2fe31`, statement `jis_9e5865a09e42b4fb025d838d`.

@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_eq_id_le_21
 ---
 
-# Multiplicative additive on sum two triangular eq id le 21
+# Park's Lemma 2: the identity up to 21 when the value at 2 is nonzero
 
-Park's Lemma 2: under the same hypotheses, if `f 2 ≠ 0`, then
-`f n = n` for every `n ≤ 21`.
+**Park's Lemma 2: the identity up to 21 when the value at 2 is nonzero.** Let $f$ be a
+multiplicative arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$
+whenever $a$ and $b$ are both sums of two positive triangular numbers. If $f(2) \neq 0$, then
+$f(n) = n$ for every natural number $n \le 21$.
 
 ## Depends on
 
-- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
+- [Sums of two positive triangular numbers](is-sum-two-positive-triangular.md)
 
 ## Sources
 

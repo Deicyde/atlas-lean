@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.rosser_nthPrime_lower_bound_zeroBased
 ---
 
-# Rosser Nth Prime Wanted
+# Rosser's lower bound for the $n$th prime
 
-Zero-based form of Rosser's theorem (1.3): `p_n > n log n` for every
-positive integer `n`, specialized at `n = k + 1`. `Nat.nth Nat.Prime k`
-is the `(k + 1)`-st prime; at `k = 0` the bound reads `0 < 2`.
+**Rosser's lower bound for the $n$th prime.** For every positive integer $n$, the $n$th prime
+$p_n$ (counting from $p_1 = 2$) satisfies $p_n > n \log n$.
+
+For $n = 1$ the bound reads $2 > 0$.
 
 ## Depends on
 

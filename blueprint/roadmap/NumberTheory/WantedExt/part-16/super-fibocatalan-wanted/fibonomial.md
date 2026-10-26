@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fibonacci Factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
+- [Fibonacci factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

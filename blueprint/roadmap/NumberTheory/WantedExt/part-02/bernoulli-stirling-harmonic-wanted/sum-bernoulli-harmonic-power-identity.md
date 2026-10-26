@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_bernoulli_harmonic_power_identity
 ---
 
-# Sum bernoulli harmonic power identity
+# A Bernoulli–harmonic power-sum identity
 
-For positive natural numbers `n` and `m`, the sum from `j = 1` through `n` of
-`(choose n j - 1) * (B_j/j) * m^(n-j)` equals
-`m^n * (H_m-H_n)` minus the sum from `j = 1` through `m` of `(m-j)^n/j`.
-All powers, divisions, Bernoulli numbers, and harmonic numbers are in `ℚ`;
-this is a direct formalization with no mathematical deviation.
+**A Bernoulli–harmonic power-sum identity.** Let $B_j$ denote the Bernoulli numbers with
+$B_1 = -\tfrac12$, and let $H_m = \sum_{i=1}^{m} 1/i$ denote the harmonic numbers. For all
+positive integers $n$ and $m$,
+
+$$\sum_{j=1}^{n} \left(\binom{n}{j} - 1\right) \frac{B_j}{j} m^{n-j} =
+m^n (H_m - H_n) - \sum_{j=1}^{m} \frac{(m-j)^n}{j}.$$
 
 ## Depends on
 

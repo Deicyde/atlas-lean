@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFibonacciCatalan_r1
 ---
 
-# Generalized Fibonacci Catalan r1
+# Generalized FiboCatalan numbers at r = 1
 
-T3: at `r = 1` the value equals `2 * F_{2n}! / (F_{n+2}! * F_n!)`.
+**Generalized FiboCatalan numbers at r = 1.** For every natural number $n$, the generalized
+FiboCatalan number with parameters $r = 1$ and $n$ equals $2 F_{2n}! / (F_{n+2}! \, F_n!)$, where
+$F_i$ is the $i$-th Fibonacci number ($F_1 = F_2 = 1$) and $F_m! = F_1 F_2 \cdots F_m$ is the
+Fibonacci factorial (with $F_0! = 1$).
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 - [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
 
 ## Proof depends on
 
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
-- [Fibonacci Jordan Quotient r1](fibonacci-jordan-quotient-r1.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan quotient at one](fibonacci-jordan-quotient-r1.md)
 
 ## Sources
 

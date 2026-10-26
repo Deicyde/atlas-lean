@@ -22,9 +22,9 @@ In the double-root case the hypotheses give $P = 2 \alpha$ and $Q = \alpha^2$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../part-08/lucas-sequence/lucas-v.md)
 
 ## Proof depends on
 

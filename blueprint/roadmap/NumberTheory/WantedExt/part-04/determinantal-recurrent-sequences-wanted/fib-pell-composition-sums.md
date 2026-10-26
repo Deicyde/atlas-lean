@@ -17,7 +17,7 @@ Multinomial-sum formulas for `F_{2n}`, `F_{3n-1}` and `P_{n-1}` (`n ≥ 1`):
 
 ## Depends on
 
-- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_ge_seven_dvd_sigmaBiunitary_prime_pow
 ---
 
-# Exists prime ge seven dvd sigma Biunitary prime pow
+# Prime factors at least $7$ of biunitary divisor sums of odd prime powers
 
-For an odd prime `p` and `g ≥ 4`, `σ**(p^g)` has a prime factor `≥ 7`.
+**Prime factors at least $7$ of biunitary divisor sums of odd prime powers.** For every odd
+prime $p$ and every integer $g \ge 4$, the biunitary divisor sum $\sigma^{**}(p^g)$ has a prime
+factor $q \ge 7$.
 
 ## Depends on
 

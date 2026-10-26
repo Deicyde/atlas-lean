@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.gaussClassNumber_small
 ---
 
-# Gauss Class Number small
+# Class numbers of the discriminants $-3$, $-4$ and $-12$
 
-Characteristic values of the class numbers: `h(-3) = h(-4) = h(-12) = 1` and
-`H(-12) = 2` (the forms `x ^ 2 + 3y ^ 2` and the imprimitive `2x ^ 2 + 2xy + 2y ^ 2`).
+**Class numbers of the discriminants $-3$, $-4$ and $-12$.** The Gauss class numbers satisfy
+$h(-3) = h(-4) = h(-12) = 1$, and the unweighted Hurwitz class number satisfies $H(-12) = 2$.
+
+The two reduced forms of discriminant $-12$ are $x^2 + 3y^2$ and the imprimitive form
+$2x^2 + 2xy + 2y^2$.
 
 ## Depends on
 
-- [Gauss Class Number](gauss-class-number.md)
-- [Unweighted Hurwitz Class Number](unweighted-hurwitz-class-number.md)
+- [Gauss class number of a discriminant](gauss-class-number.md)
+- [Unweighted Hurwitz class number](unweighted-hurwitz-class-number.md)
 
 ## Sources
 

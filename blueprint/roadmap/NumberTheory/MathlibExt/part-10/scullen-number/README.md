@@ -5,5 +5,5 @@ navigation: module
 
 # SCullen Number
 
-- [S Cullen Number](s-cullen-number.md)
-- [Is SCullen Number](is-scullen-number.md)
+- [The $s$-Cullen value](s-cullen-number.md)
+- [$s$-Cullen numbers](is-scullen-number.md)

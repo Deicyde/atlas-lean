@@ -6,17 +6,15 @@ proof: formalized
 lean: SumSquares.representationNumber_two_eq
 ---
 
-# Representation Number two eq
+# Two-square representation numbers count integer pairs
 
-The canonical two-square representation number
-(`SumSquares.representationNumber 2 j`, ordered signed representations
-by `Fin 2 → ℤ` vectors) counts the same representations as the
-Gaussian-norm fiber: expanding `dotProduct` over `Fin 2` and using
-`Fin 2 → ℤ ≃ ℤ × ℤ` identifies both counts.
+**Two-square representation numbers count integer pairs.** For every natural number $j$,
+the representation number $r_2(j)$ equals the number of pairs $(a, b)$ of integers with
+$a^2 + b^2 = j$.
 
 ## Depends on
 
-- [Pair Equiv Gaussian Norm Fiber](pair-equiv-gaussian-norm-fiber.md)
+- [Sums of two squares as Gaussian norms](pair-equiv-gaussian-norm-fiber.md)
 - [Representation numbers of sums of squares](../../part-02/sum-squares/representation-count/representation-number.md)
 
 ## Proof depends on

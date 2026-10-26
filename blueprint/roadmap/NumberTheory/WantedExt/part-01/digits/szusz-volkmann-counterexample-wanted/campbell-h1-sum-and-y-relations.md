@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.campbellH1_sum_and_y_relations
 ---
 
-# Campbell H1 sum and y relations
+# Sums of $h_1$ and the jumps of $h_2$ at powers of ten
 
-Lemma 2: for `ℓ ≥ 1`, `∑_{i=1}^{10^{ℓ+1}-1} h₁(i) = 9090⋯900` (`ℓ` blocks `90`, then `0`),
-written as `∑_{j<ℓ} 900·100^j`; and for `ℓ ≥ 2`, with `y₁(n) = h₂(10^{n-1})` and
-`y₂(n) = h₂(10^n - 1)`, `(y₂(ℓ) - y₁(ℓ)) / (9·10^{ℓ-1} - 1) = 10^{ℓ-1}` and
-`y₁(ℓ + 1) - y₂(ℓ) = 10^{2⌊ℓ/2⌋}`.
+**Sums of $h_1$ and the jumps of $h_2$ at powers of ten.** Let $h_1$ be Campbell's auxiliary
+sequence and $h_2$ Campbell's sequence. For every integer $\ell \ge 1$,
+$\sum_{i=1}^{10^{\ell+1}-1} h_1(i) = \sum_{j=0}^{\ell-1} 900 \cdot 100^j$, the number written
+$9090\cdots900$ ($\ell$ blocks $90$, then $0$). Moreover, writing $y_1(n) = h_2(10^{n-1})$ and
+$y_2(n) = h_2(10^n - 1)$, for every integer $\ell \ge 2$ we have
+$(y_2(\ell) - y_1(\ell)) / (9 \cdot 10^{\ell-1} - 1) = 10^{\ell-1}$ and
+$y_1(\ell + 1) - y_2(\ell) = 10^{2\lfloor \ell/2 \rfloor}$.
 
 ## Depends on
 
-- [Campbell H1](campbell-h1.md)
-- [Campbell H2](campbell-h2.md)
+- [Campbell's sequence $h_1$](campbell-h1.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
 
 ## Sources
 

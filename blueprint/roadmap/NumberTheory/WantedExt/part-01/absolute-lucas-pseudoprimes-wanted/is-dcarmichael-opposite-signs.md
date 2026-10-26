@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isDCarmichael_opposite_signs
 ---
 
-# Is DCarmichael opposite signs
+# Bi-Carmichael numbers for signatures of opposite signs
 
-If `n` is `D`-Carmichael and `D'`-Carmichael for two signatures of opposite signs
-(`(D | n) ≠ (D' | n)`), then the signatures have opposite entries (`(D' | p) = -(D | p)` for
-every prime `p ∣ n`), `ω(n)` is odd and `3 ∤ n`. The paper's `n ∈ C(σ) ∩ C(σ')` is read as `n`
-being `D`-Carmichael with signature `σ` and `D'`-Carmichael with signature `σ'`.
+**Bi-Carmichael numbers for signatures of opposite signs.** Let $D$ and $D'$ be integers and
+let $n$ be both a $D$-Carmichael and a $D'$-Carmichael number whose Jacobi symbols satisfy
+$\left(\frac{D}{n}\right) \ne \left(\frac{D'}{n}\right)$. Then
+$\left(\frac{D'}{p}\right) = -\left(\frac{D}{p}\right)$ for every prime $p \mid n$, the number of
+distinct prime factors of $n$ is odd, and $3 \nmid n$.
+
+This reads the paper's $n \in C(\sigma) \cap C(\sigma')$ as $n$ being $D$-Carmichael with
+signature $\sigma$ and $D'$-Carmichael with signature $\sigma'$.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

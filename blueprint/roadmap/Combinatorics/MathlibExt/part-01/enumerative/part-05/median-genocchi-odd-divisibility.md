@@ -28,12 +28,12 @@ this finite sum instead of his continued fraction.
 
 - [Euler–Seidel matrix](../part-03/euler-seidel-matrix/euler-seidel-matrix.md)
 - [Closed form of the Euler–Seidel matrix](../part-03/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
-- [Genocchi Number](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
 - [Genocchi numbers via Bernoulli numbers](median-genocchi-number/genocchi-number-via-bernoulli.md)
-- [Genocchi Number Via Bernoulli eq genocchi Number](../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-via-bernoulli-eq-genocch.md)
-- [Genocchi Number eq](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number-eq.md)
-- [Genocchi Power Series](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series.md)
-- [Genocchi Power Series eq](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series-eq.md)
+- [The two definitions of the Genocchi numbers agree](../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-via-bernoulli-eq-genocch.md)
+- [Genocchi numbers from their generating function](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number-eq.md)
+- [Generating function of the Genocchi numbers](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series.md)
+- [The Genocchi power series is $2x/(e^x + 1)$](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series-eq.md)
 
 ## Sources
 

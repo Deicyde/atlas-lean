@@ -13,7 +13,7 @@ zero, `R_1 = 0`.
 ## Depends on
 
 - [Perrin Neg](perrin-neg.md)
-- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
+- [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

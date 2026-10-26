@@ -517,7 +517,12 @@ theorem length_stepAux (k : K) (q : TM2.Stmt Γ Λ σ) (v : σ) (S : ∀ k, List
 
 end length
 
-/-- Per-step push budget of a machine. -/
+/-- **Push bound of a finite multi-stack Turing machine.** For a finite multi-stack Turing
+machine $M$ (Mathlib's TM2 model with finitely many labels), the push bound of $M$ is the sum,
+over all labels $l$ of $M$, of the number of push instructions in the statement that $M$
+assigns to $l$.
+
+No stack of $M$ grows by more than the push bound in a single step. -/
 noncomputable def pushBound (M : FinTM2) : ℕ := ∑ l, pushes (M.m l)
 
 theorem length_step (M : FinTM2) (k : M.K) {c c' : M.Cfg} (h : M.step c = some c') :

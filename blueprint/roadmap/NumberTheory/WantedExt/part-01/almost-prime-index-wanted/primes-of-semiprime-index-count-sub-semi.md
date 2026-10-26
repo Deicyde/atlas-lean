@@ -5,15 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.primes_of_semiprime_index_count_sub_semiprimes_of_prime_index
 ---
 
-# Primes of semiprime index count sub semiprimes of prime index
+# Primes of semiprime index eventually outnumber semiprimes of prime index
 
-Eventually there are more primes of semiprime index than semiprimes of prime index up to
-`x`, and `N_{1,2}(x) - N_{2,1}(x) = (x log log x log log log x / log³ x)(1 + O(1/log log log x))`;
-the error is stated as `O(x log log x / log³ x)` after multiplying out the main factor.
+**Primes of semiprime index eventually outnumber semiprimes of prime index.** A semiprime is
+a product of exactly two primes counted with multiplicity. Let $p_i$ denote the $i$th prime
+($p_1 = 2$) and $s_i$ the $i$th semiprime ($s_1 = 4$). For real $x$ let $N_{1,2}(x)$ be the number
+of primes $p_i \le x$ whose index $i$ is a semiprime, and $N_{2,1}(x)$ the number of semiprimes
+$s_i \le x$ whose index $i$ is prime. Then $N_{2,1}(x) < N_{1,2}(x)$ for all sufficiently large
+$x$, and, with $\log$ the natural logarithm, as $x \to \infty$
+
+$$
+N_{1,2}(x) - N_{2,1}(x) = \frac{x \log \log x \, \log \log \log x}{\log^3 x} +
+O\left( \frac{x \log \log x}{\log^3 x} \right).
+$$
+
+This is the form
+$\frac{x \log \log x \, \log \log \log x}{\log^3 x} (1 + O(1 / \log \log \log x))$ with the main
+factor multiplied out.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

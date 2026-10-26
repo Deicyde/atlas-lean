@@ -7,18 +7,18 @@ navigation: module
 
 ## Integer Complexity
 
-- [Expr](expr.md)
+- [Expressions built from one, addition and multiplication](expr.md)
 
 ## Expr
 
-- [Eval](eval.md)
-- [Count](count.md)
+- [Value of an expression](eval.md)
+- [Number of ones in an expression](count.md)
 
 ## Integer Complexity
 
-- [Exists expr of pos](exists-expr-of-pos.md)
-- [Pred](pred.md)
-- [Complexity](complexity.md)
-- [Complexity le](complexity-le.md)
-- [Complexity add le](complexity-add-le.md)
-- [Complexity mul le](complexity-mul-le.md)
+- [Every positive integer is the value of an expression](exists-expr-of-pos.md)
+- [Achievable numbers of ones](pred.md)
+- [Integer complexity](complexity.md)
+- [Expressions bound the integer complexity from above](complexity-le.md)
+- [Integer complexity of a sum](complexity-add-le.md)
+- [Integer complexity of a product](complexity-mul-le.md)

@@ -6,14 +6,15 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isFundamentalImaginaryQuadraticDiscriminant_iff
 ---
 
-# Is Fundamental Imaginary Quadratic Discriminant iff
+# Characterization of fundamental imaginary quadratic discriminants
 
-The fundamental imaginary predicate is exactly negativity together with the canonical
-fundamental-discriminant predicate.
+**Characterization of fundamental imaginary quadratic discriminants.** An integer $D$ is a
+fundamental imaginary quadratic discriminant if and only if $D < 0$ and $D$ is a fundamental
+discriminant.
 
 ## Depends on
 
-- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Fundamental imaginary quadratic discriminant](is-fundamental-imaginary-quadratic-discr.md)
 - [Fundamental discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources

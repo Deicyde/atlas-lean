@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_lucasPeriodSet
 ---
 
-# One mem lucas Period Set
+# The Lucas period set contains $1$
 
-`1 ∈ S(U)`.
+**The Lucas period set contains $1$.** For all integers $P, Q$ with $Q \ne 0$, the number $1$
+lies in the Lucas period set $S(U)$ of $U = U(P, Q)$: the set of positive integers $n$ coprime to
+$Q$ whose period $\pi_U(n)$ modulo $n$ divides $n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Proof depends on
 
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas UPeriod one](lucas-uperiod-one.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Period of a Lucas sequence modulo 1](lucas-uperiod-one.md)
 
 ## Sources
 

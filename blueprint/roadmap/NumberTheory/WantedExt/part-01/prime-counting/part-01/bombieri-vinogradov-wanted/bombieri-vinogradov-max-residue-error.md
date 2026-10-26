@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxResidueError
 ---
 
-# Bombieri Vinogradov Max Residue Error
+# Maximal residue-class error
 
-The maximal residue-class error at level `y` over the reduced residues
-`a < q`, with default zero when there are none.
+**Maximal residue-class error.** For natural numbers $y$ and $q$, $E^{\ast}(y; q)$ is the
+maximum of the residue-class error $E(y; q, a)$ over the natural numbers $a < q$ coprime to $q$,
+and $0$ if there is no such $a$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bombieri Vinogradov Residue Error](bombieri-vinogradov-residue-error.md)
+- [Residue-class error of Chebyshev's function](bombieri-vinogradov-residue-error.md)
 
 ## Sources
 

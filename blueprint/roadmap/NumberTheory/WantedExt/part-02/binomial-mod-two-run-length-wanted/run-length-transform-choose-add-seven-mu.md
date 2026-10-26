@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_add_seven_mul_padovan_three
 ---
 
-# Theorem 13
+# Sum of $\binom{n+7k}{3n+k}\binom{n}{k} \bmod 2$ as a run length transform
 
-**Theorem 13.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n + 7k, 3n + k)` binom(n, k) mod 2]` is the run length transform
-of the Padovan numbers (OEIS A000931) from offset `3`, i.e. `1, 0, 1, 1, 1, 2, 2, 3, …` (`shiftedPadovanSequence i`).
+**Sum of $\binom{n+7k}{3n+k}\binom{n}{k} \bmod 2$ as a run length transform.** For every
+natural number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+7k}{3n+k}\binom{n}{k} \bmod 2\bigr)$
+equals the value at $n$ of the run length transform of the shifted Padovan sequence $P$, given by
+$P(0) = 1$, $P(1) = 0$, $P(2) = 1$ and $P(i + 3) = P(i + 1) + P(i)$, that is,
+$1, 0, 1, 1, 1, 2, 2, 3, \dots$ (the Padovan numbers, OEIS A000931, from offset $3$).
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
-- [Shifted Padovan Sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
+- [Run length transform](run-length-transform.md)
+- [Shifted Padovan sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

@@ -22,9 +22,9 @@ false as printed for `a ≡ 2 (mod 6)` and is restricted to `a ≡ -2 (mod 6)`: 
 
 ## Depends on
 
-- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
+- [Closing of the period orbit](lucas-period-orbit-closes.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [The orbit lcm $L(n)$](lucas-period-orbit-lcm.md)
 
 ## Sources
 

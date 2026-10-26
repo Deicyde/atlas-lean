@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfCollection_subset_iff
 ---
 
-# Zeckendorf Collection subset iff
+# Criterion for one Zeckendorf collection to contain another
 
-Subcollections: if `Ẽ` and `E` are Zeckendorf collections and `β̂^n` are the immediate
-predecessors in `E`, then `E ⊆ Ẽ` if and only if `β̂^n ∈ Ẽ` for all `n ≥ 2`.
+**Criterion for one Zeckendorf collection to contain another.** Let $E$ and $\tilde E$ be
+Zeckendorf collections. For $n \ge 2$ let $\beta^n$ be the basis coefficient function with entry
+$1$ at position $n$ (positions counted from $1$) and $0$ elsewhere, and let $\hat\beta^n$ be the
+immediate predecessor of $\beta^n$ in $E$ (the largest element of $E$ that is $\lt _a \beta^n$ in the
+ascending lexicographic order). Then $E \subseteq \tilde E$ if and only if
+$\hat\beta^n \in \tilde E$ for all $n \ge 2$.
 
 ## Depends on
 
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
 
 ## Sources
 

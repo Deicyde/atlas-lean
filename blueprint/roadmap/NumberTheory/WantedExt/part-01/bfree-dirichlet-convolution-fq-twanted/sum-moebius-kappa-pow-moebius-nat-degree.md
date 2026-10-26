@@ -5,18 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.sum_moebius_kappaPow_moebius_natDegree_isBigO
 ---
 
-# Sum moebius kappa Pow moebius nat Degree is Big O
+# Euler-product asymptotic for a degree-weighted Möbius sum over $\kappa$-th powers
 
-Proposition 2: for `κ ≥ 2`, fixed monic `m` and `ε > 0`,
-`∑_{deg r^κ ≤ N, (r, m) = 1} μ(r)/|r^κ| ∑_{f ∣ r^κ} ∑_{g ∣ f} μ(g) deg(g)/|g|
-= ∏_{P ∤ m} (1 - (κ+1)/|P|^κ + κ/|P|^{κ+1}) ∑_{P ∤ m} κ deg P / (|P|^{κ+1} - |P|(κ+1) + κ)
-+ O(q ^ ((1/κ_min + ε - 1)(N + 1)))`, with `κ = κ(P)`.
+**Euler-product asymptotic for a degree-weighted Möbius sum over $\kappa$-th powers.** Let
+$F$ be a finite field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let
+$\mu$ be the Möbius function of $F[T]$. Let $\kappa$ assign a natural number to each polynomial in
+$F[T]$, with $\kappa(P) \ge 2$ for every monic irreducible $P$. For monic $r = \prod_P P^{\nu_P}$
+write $r^\kappa = \prod_P P^{\nu_P \kappa(P)}$, and let $\kappa_{\min}$ be the minimum of
+$\kappa(P)$ over the monic irreducible $P$. Let $m \in F[T]$ be monic. Then for every
+$\varepsilon > 0$, as $N \to \infty$,
+
+$$\sum_{\substack{r \text{ monic},\ \deg r^\kappa \le N \\ \gcd(r, m) = 1}}
+\frac{\mu(r)}{|r^\kappa|} \sum_{f \mid r^\kappa} \sum_{g \mid f} \frac{\mu(g) \deg g}{|g|} =
+\prod_{P \nmid m} \left(1 - \frac{\kappa(P) + 1}{|P|^{\kappa(P)}} +
+\frac{\kappa(P)}{|P|^{\kappa(P) + 1}}\right)
+\sum_{P \nmid m} \frac{\kappa(P) \deg P}{|P|^{\kappa(P) + 1} - |P| (\kappa(P) + 1) + \kappa(P)} +
+O\left(q^{(1/\kappa_{\min} + \varepsilon - 1)(N + 1)}\right),$$
+
+where $f$ runs over the monic divisors of $r^\kappa$, $g$ over the monic divisors of $f$, and $P$
+in the product and in the sum over the monic irreducible polynomials not dividing $m$.
 
 ## Depends on
 
-- [Fq Norm](fq-norm.md)
-- [Kappa Min](kappa-min.md)
-- [Kappa Pow](kappa-pow.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
+- [The $\kappa$-power of a polynomial](kappa-pow.md)
 
 ## Sources
 

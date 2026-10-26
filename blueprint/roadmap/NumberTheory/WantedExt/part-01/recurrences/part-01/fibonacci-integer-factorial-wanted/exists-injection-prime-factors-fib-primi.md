@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.exists_injection_primeFactors_fibPrimitivePart
 ---
 
-# Exists injection prime Factors fib Primitive Part
+# Prime factors of the primitive parts of the denominator indices
 
-Lemma 1 (Lemma 1 of [3]): let `I`, `J` be finite multisets of indices in
-`M = ℕ \ {1, 2, 6, 12}` (positive integers), with `n_i ≠ m_j` for all `i ∈ I`, `j ∈ J`, such
-that `∏_{i ∈ I} Φ_{n_i} ∏_{j ∈ J} Φ_{m_j}^{-1}` is a natural number. Then there is an injection
-`f` from the multiset of prime factors `p_1 ⋯ p_k` of `∏_{j ∈ J} Ψ_{m_j}` into the multiset
-`{n_i}` with `f(p_l) = p_l^{k_l} z(p_l)`; the injection is encoded as a multiset `e` of pairs
-`(p_l, k_l)` whose first coordinates are the prime factors and whose images are a
-sub-multiset of `I`.
+**Prime factors of the primitive parts of the denominator indices.** Let $I$ and $J$ be finite
+multisets of natural numbers, every element of which is at least $3$ and different from $6$ and
+$12$, such that no element of $I$ equals an element of $J$ and
+$\prod_{a \in I} \Phi_a / \prod_{b \in J} \Phi_b$ is a natural number, where $\Phi_m$ is the
+$m$-th Fibonacci cyclotomic value. Let $\Psi_m$ be the primitive part of the Fibonacci number
+$F_m$ and $z(p)$ the Fibonacci entry point of $p$. Then there is a finite multiset $e$ of pairs
+$(p, k)$ of natural numbers such that the multiset of first coordinates of $e$ is the multiset of
+prime factors of $\prod_{b \in J} \Psi_b$, counted with multiplicity, and the multiset of the
+numbers $p^k z(p)$ for $(p, k) \in e$ is a sub-multiset of $I$.
+
+In other words, there is an injection from the prime factors $p_1, \dots, p_r$ of
+$\prod_{b \in J} \Psi_b$, counted with multiplicity, into $I$ that sends each $p_l$ to an element
+of the form $p_l^{k_l} z(p_l)$.
 
 ## Depends on
 
-- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
-- [Fib Entry Point](fib-entry-point.md)
-- [Fib Primitive Part](fib-primitive-part.md)
+- [Fibonacci cyclotomic values](fib-cyclotomic-value.md)
+- [Entry point in the Fibonacci sequence](fib-entry-point.md)
+- [Primitive part of a Fibonacci number](fib-primitive-part.md)
 
 ## Sources
 

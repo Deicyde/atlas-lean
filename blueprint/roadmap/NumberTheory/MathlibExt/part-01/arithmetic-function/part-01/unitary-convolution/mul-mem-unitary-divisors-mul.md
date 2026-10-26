@@ -14,7 +14,7 @@ unitary divisor of $mn$.
 
 ## Depends on
 
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

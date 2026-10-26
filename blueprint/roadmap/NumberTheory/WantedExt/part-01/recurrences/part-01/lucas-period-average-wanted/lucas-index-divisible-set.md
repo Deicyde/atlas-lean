@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.lucasIndexDivisibleSet
 ---
 
-# Lucas Index Divisible Set
+# Index-divisible set of a Lucas sequence
 
-The set `T(U)` of positive integers `n` coprime to `b` with `n ∣ U n`.
+**Index-divisible set of a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas sequence with
+integer parameters $P$ and $Q \ne 0$, given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$ (the paper's $U(a, b)$ with $a = P$ and $b = -Q$). The set $T(U)$
+consists of the positive integers $n$ with $\gcd(n, Q) = 1$ and $n \mid U_n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

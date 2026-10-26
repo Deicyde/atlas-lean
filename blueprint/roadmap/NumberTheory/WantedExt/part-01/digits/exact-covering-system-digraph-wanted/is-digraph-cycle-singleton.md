@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isDigraphCycle_singleton
 ---
 
-# Is Digraph Cycle singleton
+# One-vertex cycles of a digraph on the integers
 
-A one-vertex list `(x)` is a cycle exactly when `x` carries a loop.
+**One-vertex cycles of a digraph on the integers.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+$x \in \mathbb{Z}$. The one-element list $(x)$ is a cycle of $R$ if and only if $R$ has a loop
+$x \to x$.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
 
 ## Sources
 

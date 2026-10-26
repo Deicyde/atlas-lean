@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lucasIntervalLo
 ---
 
-# Lucas Interval Lo
+# Left end of a Lucas interval
 
-The left end of the Lucas interval `Λ_m`, where `Λ_{2n} = [L_{2n}, L_{2n+1}]` and
-`Λ_{2n+1} = [L_{2n+1} + 1, L_{2n+2} - 1]`: it is `L_m` for even `m` and `L_m + 1` for odd `m`.
+**Left end of a Lucas interval.** Let $L_0 = 2$, $L_1 = 1$, $L_{j+2} = L_{j+1} + L_j$ be the
+Lucas numbers, and let the Lucas intervals be $\Lambda_{2n} = [L_{2n}, L_{2n+1}]$ and
+$\Lambda_{2n+1} = [L_{2n+1} + 1, L_{2n+2} - 1]$. The left end of $\Lambda_m$ is $L_m$ when $m$
+is even and $L_m + 1$ when $m$ is odd.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Base Phi Value](base-phi-value.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Value of a base phi expansion](base-phi-value.md)
 - [Knott Expansions](knott-expansions.md)
 
 ## Sources

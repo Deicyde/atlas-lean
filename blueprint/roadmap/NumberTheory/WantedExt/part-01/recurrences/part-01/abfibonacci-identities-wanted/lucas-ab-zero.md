@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.lucasAB_zero
 ---
 
-# Lucas AB zero
+# Zeroth (a, b)-Lucas number
 
-`L_0 = 2` for the `(a, b)`-Lucas numbers.
+**Zeroth (a, b)-Lucas number.** For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
+$L^{a,b}_0$ equals $2$.
 
 ## Depends on
 
-- [Lucas AB](lucas-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

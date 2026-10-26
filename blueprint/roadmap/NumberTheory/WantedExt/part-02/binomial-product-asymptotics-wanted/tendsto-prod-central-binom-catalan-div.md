@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_prod_centralBinom_catalan_div
 ---
 
-# Tendsto prod central Binom catalan div
+# Asymptotics of products of central binomial coefficients and Catalan numbers
 
-Products of central binomial coefficients and of Catalan numbers:
-`∏_{n=1}^m C(2n, n) ∼ C_{2,1} × 2^{m^2} (4e/π)^{m/2} / m^{m/2 + 3/8}` and
-`∏_{n=1}^m Cat_n ∼ C_Cat × 2^{m^2} (4e^3/π)^{m/2} / m^{3m/2 + 15/8}`, with
-`C_{2,1} = 2^{5/24} A^{3/2} / ((2π)^{1/2} e^{1/8})` and `C_Cat = C_{2,1} (2π)^{-1/2}`.
-The decimal approximations are not part of this statement.
+**Asymptotics of products of central binomial coefficients and Catalan numbers.** Let $A$ be
+the Glaisher–Kinkelin constant, let $\mathrm{Cat}_n$ denote the $n$-th Catalan number, and put
+$C_{2,1} = 2^{5/24} A^{3/2} / \left((2\pi)^{1/2} e^{1/8}\right)$. As $m \to \infty$, the ratio of
+$\prod_{n=1}^{m} \binom{2n}{n}$ to $2^{m^2} (4e/\pi)^{m/2} / m^{m/2 + 3/8}$ tends to $C_{2,1}$,
+and the ratio of $\prod_{n=1}^{m} \mathrm{Cat}_n$ to
+$2^{m^2} (4e^3/\pi)^{m/2} / m^{3m/2 + 15/8}$ tends to $C_{2,1} (2\pi)^{-1/2}$.
+
+The decimal approximations of the constants are not part of this statement.
 
 ## Depends on
 
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

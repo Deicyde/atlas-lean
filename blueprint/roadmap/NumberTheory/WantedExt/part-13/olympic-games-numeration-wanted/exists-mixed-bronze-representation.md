@@ -20,7 +20,7 @@ positive integer `t` is `∑_{k=0}^{n} a_k R_k` with `R_n ≤ t < R_{n+1}`, `a_k
 - [Bronze Companion First](bronze-companion-first.md)
 - [Bronze Companion Second](bronze-companion-second.md)
 - [Bronze Lucas Params](bronze-lucas-params.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

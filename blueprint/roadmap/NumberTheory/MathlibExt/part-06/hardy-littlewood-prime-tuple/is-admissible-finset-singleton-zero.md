@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isAdmissibleFinset_singleton_zero
 ---
 
-# Is Admissible Finset singleton zero
+# The set $\{0\}$ is admissible
 
-The one-element set `{0}` is admissible: it misses the class `1` mod `p`.
+**The set $\{0\}$ is admissible.** The one-element set $\{0\}$ of integers is admissible:
+for every prime $p$ it misses the residue class of $1$ modulo $p$.
 
 ## Depends on
 
-- [Is Admissible Finset](is-admissible-finset.md)
+- [Admissible finite sets of integers](is-admissible-finset.md)
 
 ## Sources
 

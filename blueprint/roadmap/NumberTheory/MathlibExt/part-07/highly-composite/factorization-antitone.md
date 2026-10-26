@@ -7,13 +7,15 @@ proof: formalized
 lean: Nat.IsHighlyComposite.factorization_antitone
 ---
 
-# Factorization antitone
+# Exponents of highly composite numbers are non-increasing
 
-The exponents in the prime factorization of a highly composite number are non-increasing.
+**Exponents of highly composite numbers are non-increasing.** If $H$ is a highly composite
+number and $p \le q$ are primes, then the exponent of $q$ in the prime factorization of $H$ is at
+most the exponent of $p$.
 
 ## Depends on
 
-- [Is Highly Composite](is-highly-composite.md)
+- [Highly composite numbers](is-highly-composite.md)
 
 ## Sources
 

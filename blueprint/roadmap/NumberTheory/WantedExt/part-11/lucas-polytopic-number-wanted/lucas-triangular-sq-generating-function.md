@@ -16,9 +16,9 @@ Stated as an identity of formal power series with the denominator cleared, and w
 
 ## Depends on
 
-- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
-- [Lucas Bracket](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-bracket.md)
-- [Lucasnomial](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
+- [Nondegenerate Lucas parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Lucas brackets](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-bracket.md)
+- [Lucasnomial coefficients](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Genocchi Bernoulli
 
-- [Genocchi Number eq bernoulli](genocchi-number-eq-bernoulli.md)
-- [Genocchi Number Via Bernoulli eq genocchi Number](genocchi-number-via-bernoulli-eq-genocch.md)
+- [Genocchi numbers in terms of Bernoulli numbers](genocchi-number-eq-bernoulli.md)
+- [The two definitions of the Genocchi numbers agree](genocchi-number-via-bernoulli-eq-genocch.md)

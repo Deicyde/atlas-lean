@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.prime_power_lifting_modEq_one
 ---
 
-# Prime power lifting mod Eq one
+# Prime-power lifting of a congruence to one
 
-Prime-power lifting for a natural number congruent to one modulo a prime.
+**Prime-power lifting of a congruence to one.** Let $p$ be a prime and let $n$ and $a$ be
+positive integers. If $a \equiv 1 \pmod p$, then $a^{p^n} \equiv 1 \pmod{p^{n+1}}$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pow pow mod Eq one of mod Eq one](pow-pow-mod-eq-one-of-mod-eq-one.md)
+- [Lifting a congruence to one along powers of the modulus](pow-pow-mod-eq-one-of-mod-eq-one.md)
 
 ## Sources
 

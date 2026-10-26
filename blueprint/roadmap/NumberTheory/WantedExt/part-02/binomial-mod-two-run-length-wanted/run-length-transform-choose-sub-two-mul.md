@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_sub_two_mul_fib
 ---
 
-# Theorem 2
+# Rampersad–Wiebe Theorem 2
 
-**Theorem 2.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n - k, 2k)` binom(n, k) mod 2]` is the run length transform
-of the Fibonacci sequence `1, 1, 2, 3, 5, 8, …` (`Nat.fib (i + 1)`).
+**Rampersad–Wiebe Theorem 2.** Let $(F_j)_{j \ge 0}$ be the Fibonacci numbers, $F_0 = 0$,
+$F_1 = 1$, and let $T$ be the run length transform of $S(i) = F_{i+1}$, i.e. of
+$1, 1, 2, 3, 5, 8, \dots$. Then for every natural number $n$,
+$\sum_{k=0}^{n} \left(\binom{n - k}{2k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

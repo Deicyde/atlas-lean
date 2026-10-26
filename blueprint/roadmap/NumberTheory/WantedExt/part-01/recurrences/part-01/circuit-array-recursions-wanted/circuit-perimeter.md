@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.circuitPerimeter
 ---
 
-# Circuit Perimeter
+# Left-perimeter function
 
-The left-perimeter function `𝒫(T_{r,1}, T_{r+1,1})`: series of the bottom-left arm of
-`T_{r,1}` and the top arm of `T_{r+1,1}`.
+**Left-perimeter function.** Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ be the
+delta-wye resistance function, and for an upright triangle $t$ write $L_t$, $R_t$, $B_t \in K$ for
+the values on its left, right and base edges. For triangles $t$ and $u$, the left-perimeter
+function is $\mathcal{P}(t, u) = \Delta(B_t, L_t, R_t) + \Delta(L_u, R_u, B_u)$, the series
+resistance of the bottom-left arm of $t$ and the top arm of $u$.
+
+In the row reduction of a labelling $T$ it is applied to $t = T_{r,1}$ and $u = T_{r+1,1}$, where
+$T_{r,d}$ is the triangle in row $r$ and diagonal $d$.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Left Arm](circuit-left-arm.md)
-- [Circuit Top Arm](circuit-top-arm.md)
+- [Bottom-left delta-wye arm](circuit-left-arm.md)
+- [Top delta-wye arm](circuit-top-arm.md)
 
 ## Sources
 

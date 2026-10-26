@@ -4,5 +4,5 @@ navigation: module
 
 # Lindemann Weierstrass
 
-- [Lindemann weierstrass'](lindemann-weierstrass.md)
-- [Lindemann weierstrass](lindemann-weierstrass-2.md)
+- [Lindemann–Weierstrass theorem (universe-polymorphic form)](lindemann-weierstrass.md)
+- [Lindemann–Weierstrass theorem](lindemann-weierstrass-2.md)

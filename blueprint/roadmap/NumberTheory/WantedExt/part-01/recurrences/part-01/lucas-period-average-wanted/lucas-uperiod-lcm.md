@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_lcm
 ---
 
-# Lucas UPeriod lcm
+# Periods of Lucas sequences modulo a least common multiple
 
-Theorem 1.2: for `gcd(m n, b) = 1`, `π_U(lcm(m, n)) = lcm(π_U(m), π_U(n))` and
-`ρ_U(lcm(m, n)) = lcm(ρ_U(m), ρ_U(n))` (1.17), and the same for the iterates
-`π_U^i` and `ρ_U^i` (1.18), where `π_U^0(m) = m` and `π_U^(i+1)(m) = π_U(π_U^i(m))`.
+**Periods of Lucas sequences modulo a least common multiple.** Let $U$ be the Lucas sequence
+with integer parameters $P$ and $Q \neq 0$, and write $\pi(m)$ and $\rho(m)$ for its period and
+restricted period modulo $m$. Let $m$ and $n$ be positive integers with $\gcd(mn, Q) = 1$. Then
+$\pi(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\pi(m), \pi(n))$ and
+$\rho(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\rho(m), \rho(n))$, and for every $i \ge 1$
+the $i$-fold iterates $\pi^i$ and $\rho^i$ of the maps $k \mapsto \pi(k)$ and $k \mapsto \rho(k)$
+satisfy $\pi^i(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\pi^i(m), \pi^i(n))$ and
+$\rho^i(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\rho^i(m), \rho^i(n))$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

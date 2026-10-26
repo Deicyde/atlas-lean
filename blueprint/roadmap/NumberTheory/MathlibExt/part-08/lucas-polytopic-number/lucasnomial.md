@@ -6,19 +6,23 @@ statement: formalized
 lean: MetaMathlibExt.lucasnomial
 ---
 
-# Lucasnomial
+# Lucasnomial coefficients
 
-The Lucasnomial coefficient. As for `Nat.choose`, it is zero when
-`k > n`; within its source domain it is the displayed quotient of
-`s,t`-factorials.
+**Lucasnomial coefficients.** Let $(s, t)$ be nondegenerate Lucas parameters and write
+$\{m\}_{s,t}!$ for the $s,t$-factorial of a natural number $m$. For natural numbers $n$ and
+$k$, the Lucasnomial coefficient is the real number
+
+$$\binom{n}{k}_{s,t} = \frac{\{n\}_{s,t}!}{\{k\}_{s,t}! \{n-k\}_{s,t}!}$$
+
+when $k \le n$, and $\binom{n}{k}_{s,t} = 0$ when $k > n$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucas Factorial](lucas-factorial.md)
+- [Factorial of Lucas brackets](lucas-factorial.md)
 
 ## Sources
 

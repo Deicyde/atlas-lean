@@ -5,21 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.pseudoprime_iff_neg_p
 ---
 
-# Pseudoprime iff neg p
+# Lucas-type pseudoprime properties are unchanged by $P \mapsto -P$
 
-For nondegenerate `U(P, Q)` and odd `N > 1` with `gcd(N, QD) = 1`, each of the Lucas,
-Lucas second-kind, Dickson, Dickson second-kind and Frobenius pseudoprime properties holds for
-`(P, Q)` iff it holds for `(-P, Q)`.
+**Lucas-type pseudoprime properties are unchanged by $P \mapsto -P$.** Let $P$ and $Q$ be
+integers such that the Lucas pair $(P, Q)$ is nondegenerate, let $D = P^2 - 4Q$, and let $N > 1$
+be an odd natural number with $\gcd(N, QD) = 1$. Then $N$ is a Lucas pseudoprime for $(P, Q)$ if
+and only if it is one for $(-P, Q)$, and the same holds for Lucas pseudoprimes of the second
+kind, Dickson pseudoprimes, Dickson pseudoprimes of the second kind, and Frobenius pseudoprimes.
 
 ## Depends on
 
-- [Is Dickson Pseudoprime](is-dickson-pseudoprime.md)
-- [Is Dickson Pseudoprime Second Kind](is-dickson-pseudoprime-second-kind.md)
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Is Lucas Pseudoprime Second Kind](is-lucas-pseudoprime-second-kind.md)
+- [Dickson pseudoprimes](is-dickson-pseudoprime.md)
+- [Dickson pseudoprimes of the second kind](is-dickson-pseudoprime-second-kind.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
+- [Lucas pseudoprimes of the second kind](is-lucas-pseudoprime-second-kind.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

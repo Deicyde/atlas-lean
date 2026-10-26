@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.hoeySloaneCarry_two_four_example
 ---
 
-# Hoey Sloane Carry two four example
+# Carries of the $(2, 4)$-Hoey–Sloane machine on $(0,0)(2,3)(1,2)(3,1)$
 
-Characteristic example: on the `(2, 4)`-permutiple string `(0,0)(2,3)(1,2)(3,1)` the
-Hoey-Sloane machine passes through the states `0, 0, 1, 1, 0` (Figure 4 of the paper).
+**Carries of the $(2, 4)$-Hoey–Sloane machine on $(0,0)(2,3)(1,2)(3,1)$.** On the input
+string $(d_0, \hat d_0)(d_1, \hat d_1)(d_2, \hat d_2)(d_3, \hat d_3) = (0,0)(2,3)(1,2)(3,1)$,
+the carries $c_0, c_1, c_2, c_3, c_4$ of the $(2, 4)$-Hoey–Sloane machine are $0, 0, 1, 1, 0$.
+
+This is the $(2, 4)$-permutiple string of $(3, 1, 2, 0)_4 = 216 = 2 \cdot 108 =
+2 \cdot (1, 2, 3, 0)_4$.
 
 ## Depends on
 
-- [Hoey Sloane Carry](hoey-sloane-carry.md)
+- [Carries of the Hoey–Sloane machine](hoey-sloane-carry.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.choose_sub_sub_one_eq_two_zpow_mul_sum
 ---
 
-# Choose sub sub one eq two zpow mul sum
+# Webb–Parberry binomial identity
 
-Lemma 3.2 (1) (Webb and Parberry): for `0 ≤ m < n`,
-`C(n-m-1, m) = 2^{2m-n+1} ∑_{j=m}^{⌊(n-1)/2⌋} C(j, m) C(n, 2j+1)`.
+**Webb–Parberry binomial identity.** For natural numbers $m < n$,
+
+$$\binom{n-m-1}{m} = 2^{2m-n+1} \sum_{j=m}^{\lfloor (n-1)/2 \rfloor} \binom{j}{m} \binom{n}{2j+1},$$
+
+an identity of rational numbers in which the exponent $2m-n+1$ may be negative.
 
 ## Depends on
 

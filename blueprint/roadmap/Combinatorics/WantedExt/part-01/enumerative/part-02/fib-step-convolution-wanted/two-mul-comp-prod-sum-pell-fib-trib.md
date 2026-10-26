@@ -20,7 +20,7 @@ The source prints this identity with a factor $1/2$; it is stated here multiplie
 
 - [Sums over compositions](comp-prod-sum.md)
 - [Fibonacci $m$-step numbers](fib-step.md)
-- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ while `1` is not prime (the proof's appeal to Wilson's theorem modulo `a` needs 
 
 ## Depends on
 
-- [Is Sophie Germain Prime](../../../MathlibExt/part-11/sophie-germain-prime/is-sophie-germain-prime.md)
+- [Sophie Germain primes](../../../MathlibExt/part-11/sophie-germain-prime/is-sophie-germain-prime.md)
 
 ## Sources
 

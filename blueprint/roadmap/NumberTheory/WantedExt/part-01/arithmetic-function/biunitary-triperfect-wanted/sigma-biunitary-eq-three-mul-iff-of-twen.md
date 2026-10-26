@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sigmaBiunitary_eq_three_mul_iff_of_twentySeven_dvd
 ---
 
-# Sigma Biunitary eq three mul iff of twenty Seven dvd
+# The only biunitary triperfect number divisible by $27$ is $2160$
 
-There is exactly one biunitary triperfect number divisible by `3³`, namely `2160`:
-for positive `N` with `27 ∣ N`, `σ**(N) = 3N` iff `N = 2160`.
+**The only biunitary triperfect number divisible by $27$ is $2160$.** For every positive
+integer $N$ divisible by $27$, $\sigma^{**}(N) = 3N$ if and only if $N = 2160$, where
+$\sigma^{**}$ is the biunitary divisor sum.
 
 ## Depends on
 

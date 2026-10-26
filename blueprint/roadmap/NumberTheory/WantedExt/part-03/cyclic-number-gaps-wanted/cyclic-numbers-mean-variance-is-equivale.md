@@ -12,7 +12,7 @@ Campbell and Cohen, Theorem 1, mean and variance: `m(c,n) ~ c_n / 2` and
 
 ## Depends on
 
-- [Is Cyclic Number](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
+- [Cyclic numbers](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

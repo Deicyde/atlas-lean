@@ -19,9 +19,9 @@ prime factor); if moreover `gcd(C(n), a + b - 1) = 1`, then `A_W(C(n))` is an in
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

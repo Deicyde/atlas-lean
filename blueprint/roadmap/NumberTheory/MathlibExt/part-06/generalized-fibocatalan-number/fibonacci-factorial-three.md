@@ -13,11 +13,11 @@ lean: MetaMathlibExt.fibonacciFactorial_three
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial two](fibonacci-factorial-two.md)
+- [Fibonacci factorial at two](fibonacci-factorial-two.md)
 
 ## Sources
 

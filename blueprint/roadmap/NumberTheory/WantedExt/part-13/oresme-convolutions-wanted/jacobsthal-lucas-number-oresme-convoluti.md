@@ -14,7 +14,7 @@ relation); this is the `=` reading, matching Propositions 4.3 and 6.2 and Coroll
 
 ## Depends on
 
-- [Jacobsthal Lucas Number](../../../MathlibExt/part-07/jacobsthal-lucas-number.md)
+- [Jacobsthal–Lucas numbers](../../../MathlibExt/part-07/jacobsthal-lucas-number.md)
 
 ## Sources
 

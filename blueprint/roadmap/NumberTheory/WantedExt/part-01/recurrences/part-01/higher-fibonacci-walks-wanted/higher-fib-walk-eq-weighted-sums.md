@@ -5,18 +5,30 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.higherFibWalk_eq_weighted_sums
 ---
 
-# Theorem 3
+# Explicit formula for the shifted self-convolution of higher-order Fibonacci numbers
 
-**Theorem 3**: the explicit formula for `wₙ⁽ᵐ⁾` in terms of
-`S` and `S₂` at `q = (m+1)/(2m)`.  At `n = 0` the weighted sums
-have upper limit `-1` and are empty.
+**Explicit formula for the shifted self-convolution of higher-order Fibonacci numbers.** Let
+$m \ge 1$ and let $(F_n)_{n \in \mathbb{Z}}$ be a sequence of rational numbers with
+$F_n = F_{n-1} + \dots + F_{n-m}$ for every integer $n$, $F_i = 0$ for $0 \le i < m - 1$ and
+$F_{m-1} = 1$. For $n \ge 0$ let $w_n = \sum_{j=0}^{n} F_{j+m-1} F_{n-j+m-1}$; for integers
+$N$, $l$ and rational $q$ let $S(N, l, q) = \sum_{k=0}^{N} q^k F_{k+l}$ and
+$S_2(N, l, q) = \sum_{k=0}^{N} k q^k F_{k+l}$, both equal to $0$ when $N < 0$. Put
+$q = (m+1)/(2m)$. Then for every integer $n \ge 0$,
+
+$$
+w_n = \left(\frac{2m}{m+1}\right)^{n} +
+\frac{(2m)^{n-1}}{(m+1)^{n}} \bigl((m+2) S(n-1, m, q) + S_2(n-1, m, q) -
+m S(n-1, m-1, q) - S_2(n-1, m-1, q)\bigr).
+$$
+
+At $n = 0$ the weighted sums have upper limit $-1$ and are empty.
 
 ## Depends on
 
-- [Is Standard Higher Fib](is-standard-higher-fib.md)
-- [Higher Fib Walk](higher-fib-walk.md)
-- [Weighted Higher Fib Moment Sum](weighted-higher-fib-moment-sum.md)
-- [Weighted Higher Fib Sum](weighted-higher-fib-sum.md)
+- [The standard order-$m$ Fibonacci sequence](is-standard-higher-fib.md)
+- [Shifted self-convolution](higher-fib-walk.md)
+- [First-moment weighted sum](weighted-higher-fib-moment-sum.md)
+- [Weighted sum of a sequence](weighted-higher-fib-sum.md)
 
 ## Sources
 

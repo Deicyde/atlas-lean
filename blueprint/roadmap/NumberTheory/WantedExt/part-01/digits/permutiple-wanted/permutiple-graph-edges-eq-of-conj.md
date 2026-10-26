@@ -15,7 +15,7 @@ dropped.
 
 ## Depends on
 
-- [Permutiple Graph Edges](permutiple-graph-edges.md)
+- [Edge set of the graph of a numeral](permutiple-graph-edges.md)
 
 ## Sources
 

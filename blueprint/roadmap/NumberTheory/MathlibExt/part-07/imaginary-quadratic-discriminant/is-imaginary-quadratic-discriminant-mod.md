@@ -6,13 +6,14 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_mod
 ---
 
-# Is Imaginary Quadratic Discriminant mod
+# Imaginary quadratic discriminants are congruent to 0 or 1 mod 4
 
-An imaginary quadratic discriminant is congruent to `0` or `1` modulo `4`.
+**Imaginary quadratic discriminants are congruent to 0 or 1 mod 4.** Every imaginary
+quadratic discriminant $D$ satisfies $D \equiv 0 \pmod 4$ or $D \equiv 1 \pmod 4$.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

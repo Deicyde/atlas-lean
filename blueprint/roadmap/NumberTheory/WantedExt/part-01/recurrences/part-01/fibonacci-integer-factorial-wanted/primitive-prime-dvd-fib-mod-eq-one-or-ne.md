@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.primitive_prime_dvd_fib_modEq_one_or_neg_one
 ---
 
-# Primitive prime dvd fib mod Eq one or neg one
+# Carmichael's congruence for primitive prime divisors of Fibonacci numbers
 
-Carmichael's congruence for primitive prime divisors of Fibonacci numbers: for
-`m > 12`, every primitive prime divisor `p` of `F_m` (a prime dividing `F_m` but no
-`F_n` with `0 < n < m`, `IntegerSequence.IsPrimitivePrimeDivisor`) satisfies
-`p ≡ ±1 (mod m)`. The existence half of the quoted theorem (such a prime exists) is
-already proved as `MetaMathlibExt.exists_isPrimitiveDivisor_fib`.
+**Carmichael's congruence for primitive prime divisors of Fibonacci numbers.** Let $F_n$
+denote the $n$-th Fibonacci number. For every natural number $m > 12$, every primitive prime
+divisor $p$ of $F_m$ (a prime $p$ that divides $F_m$ but divides no $F_n$ with $0 < n < m$)
+satisfies $p \equiv \pm 1 \pmod{m}$, that is, $p \equiv 1 \pmod{m}$ or $p + 1 \equiv 0 \pmod{m}$.
+
+This is the congruence half of Carmichael's theorem; the existence of a primitive prime divisor
+of $F_m$ for $m > 12$ is a separate statement.
 
 ## Depends on
 
-- [Is Primitive Prime Divisor](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

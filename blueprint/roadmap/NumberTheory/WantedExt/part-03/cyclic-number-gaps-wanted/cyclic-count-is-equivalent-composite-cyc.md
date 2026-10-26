@@ -12,7 +12,7 @@ Campbell and Cohen, Lemma 1: `A(x) ~ cc(x) ~ x e^{-Î³} / log log log x` as `x â†
 
 ## Depends on
 
-- [Is Cyclic Number](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
+- [Cyclic numbers](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

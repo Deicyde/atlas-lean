@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.two_le_primeGap
 ---
 
-# Two le prime Gap
+# Prime gaps after the first are at least two
 
-After the prime two, both endpoints are odd and every gap is at least two.
+**Prime gaps after the first are at least two.** Let $p_0 < p_1 < p_2 < \cdots$ be the primes
+in increasing order and let $g_n = p_{n+1} - p_n$ be the $n$-th prime gap. For every $n \ge 1$,
+$g_n \ge 2$.
 
 ## Depends on
 
-- [Prime Gap](../prime-gap.md)
+- [Prime gap](../prime-gap.md)
 
 ## Proof depends on
 
-- [Prime Gap pos](prime-gap-pos.md)
+- [Prime gaps are positive](prime-gap-pos.md)
 
 ## Sources
 

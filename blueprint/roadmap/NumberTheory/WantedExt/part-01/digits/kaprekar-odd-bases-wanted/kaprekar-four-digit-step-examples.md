@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.kaprekarFourDigitStep_examples
 ---
 
-# Kaprekar Four Digit Step examples
+# Sample values of the four-digit Kaprekar map
 
-Characteristic values: in base `11`, `(5, 1) ↦ (9, 1)` and `(6, 0) ↦ (5, 5) ↦ (2, 0)`;
-in base `7`, the terminal cycle `(3, 1) ↦ (5, 1) ↦ (5, 3) ↦ (3, 1)`.
+**Sample values of the four-digit Kaprekar map.** The four-digit Kaprekar map satisfies
+$K_{11}(5, 1) = (9, 1)$, $K_{11}(6, 0) = (5, 5)$ and $K_{11}(5, 5) = (2, 0)$ in base $11$, and
+$K_7(3, 1) = (5, 1)$, $K_7(5, 1) = (5, 3)$ and $K_7(5, 3) = (3, 1)$ in base $7$.
+
+In particular $(3, 1) \mapsto (5, 1) \mapsto (5, 3) \mapsto (3, 1)$ is a terminal cycle of $K_7$.
 
 ## Depends on
 
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
 
 ## Sources
 

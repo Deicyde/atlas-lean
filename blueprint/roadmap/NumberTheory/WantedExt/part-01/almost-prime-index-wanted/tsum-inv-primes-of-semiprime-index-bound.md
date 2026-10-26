@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_primes_of_semiprime_index_bounds
 ---
 
-# Tsum inv primes of semiprime index bounds
+# Reciprocal sum of the primes of semiprime index
 
-The sum of reciprocals of the primes of semiprime index satisfies
-`0.9910 < ∑_{n ∈ N_{1,2}} 1/n < 0.9915`.
+**Reciprocal sum of the primes of semiprime index.** Let $N_{1,2}$ be the set of primes $p_i$
+(indexed from $p_1 = 2$) whose index $i$ is a semiprime, that is, a product of two not
+necessarily distinct primes. Then $0.9910 < \sum_{n \in N_{1,2}} 1/n < 0.9915$.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

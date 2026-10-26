@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.primitiveNondeficient_primeReciprocalSum_lt_of_single_odd_exponent
 ---
 
-# Primitive Nondeficient prime Reciprocal Sum lt of single odd exponent
+# Upper bound on the prime reciprocal sum of a primitive non-deficient number with one odd exponent
 
-Let `n` be primitive non-deficient whose prime exponents are all even except that of
-one prime `p_t`, which is odd, and assume `(p_t + 2)/2 ≥ p₁ ≥ 11`. Then
-`T(n) < log 2 - 11/(50 p₁²)`.
+**Upper bound on the prime reciprocal sum of a primitive non-deficient number with one odd
+exponent.** Let $n$ be a primitive non-deficient number with least prime factor $p_1 \ge 11$,
+and let $t$ be a prime factor of $n$ such that the exponent of $t$ in $n$ is odd and the exponent
+of every other prime factor of $n$ is even. Suppose $2 p_1 \le t + 2$, and let
+$T(n) = \sum_{p \mid n} 1/p$, the sum over the primes $p$ dividing $n$. Then
+$T(n) < \log 2 - \frac{11}{50 p_1^2}$.
 
 ## Depends on
 

@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_lucasAverageSet
 ---
 
-# One mem lucas Average Set
+# The Lucas average set contains $1$
 
-`1 ∈ S'(U)`.
+**The Lucas average set contains $1$.** For all integers $P, Q$ with $Q \ne 0$, the number $1$
+lies in the Lucas average set $S'(U)$ of $U = U(P, Q)$: the set of $n$ in the Lucas period set
+$S(U)$ with $n \mid U_1 + \dots + U_n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Average Set](lucas-average-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
 
 ## Proof depends on
 
-- [Lucas Period Set](lucas-period-set.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [One mem lucas Period Set](one-mem-lucas-period-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [The Lucas period set contains $1$](one-mem-lucas-period-set.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_eq_centralBinom_mul_choose_iff_of_le_ten
 ---
 
-# Central Binom add eq central Binom mul choose iff of le ten
+# Central binomial products with $a + b \le 10$
 
-Lemma 1: for positive `x`, `a`, `b` with `a + b ≤ 10`,
-`C(2(a+b), a+b) = C(2a, a) C(x+2b, b)` if and only if `x = a = 1`.
+**Central binomial products with $a + b \le 10$.** Let $x$, $a$, $b$ be positive integers
+with $a + b \le 10$. Then $\binom{2(a+b)}{a+b} = \binom{2a}{a}\binom{x+2b}{b}$ if and only if
+$x = 1$ and $a = 1$.
 
 ## Depends on
 

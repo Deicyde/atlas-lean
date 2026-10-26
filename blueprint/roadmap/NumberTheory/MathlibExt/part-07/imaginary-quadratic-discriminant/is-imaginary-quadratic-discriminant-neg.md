@@ -6,13 +6,14 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_neg
 ---
 
-# Is Imaginary Quadratic Discriminant neg
+# Imaginary quadratic discriminants are negative
 
-An imaginary quadratic discriminant is negative.
+**Imaginary quadratic discriminants are negative.** Every imaginary quadratic discriminant
+$D$ satisfies $D < 0$.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

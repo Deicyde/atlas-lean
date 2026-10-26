@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_primes_of_almostPrime_index_sub_one_isBigO
 ---
 
-# Tsum inv primes of almost Prime index sub one is Big O
+# Reciprocal sum of the primes of $k$-almost prime index
 
-The reciprocal sum of the primes of `k`-almost prime index tends to `1` exponentially fast:
-`∑_{n ∈ N_{1k}} 1/n = 1 + O(e^{-k/2})` as `k → ∞`.
+**Reciprocal sum of the primes of $k$-almost prime index.** For $k \ge 0$ let $N_{1k}$ be
+the set of primes $p_i$ (indexed from $p_1 = 2$) whose index $i$ is a $k$-almost prime, that is,
+has exactly $k$ prime factors counted with multiplicity. Then
+$\sum_{n \in N_{1k}} 1/n = 1 + O(e^{-k/2})$ as $k \to \infty$.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

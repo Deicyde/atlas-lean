@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.alternating_sum_choose_mul_choose_sub
 ---
 
-# Alternating sum choose mul choose sub
+# Alternating sum of shifted binomial coefficients
 
-Lemma 4.1: for `1 ≤ ℓ ≤ n`, `s ≥ 0` and `j ≤ ⌊(n-s)/ℓ⌋`,
-`∑_i C(ℓ, i) (-1)^i C(n-i, ℓj+s) = C(n-ℓ, ℓ(j-1)+s)`. Stated for `j ≥ 1` (the paper's range
-also admits `⌊(1-s)/ℓ⌋ ≤ j ≤ 0`, where the right side can have a negative lower index), with
-`j ≤ ⌊(n-s)/ℓ⌋` written as `ℓ j + s ≤ n`; the sum runs over `i ≤ ℓ`.
+**Alternating sum of shifted binomial coefficients.** Let $\ell$, $n$, $j$ and $s$ be natural
+numbers with $1 \le \ell \le n$, $j \ge 1$ and $\ell j + s \le n$. Then
+
+$$\sum_{i=0}^{\ell} (-1)^i \binom{\ell}{i} \binom{n-i}{\ell j+s} = \binom{n-\ell}{\ell(j-1)+s}.$$
+
+The paper states this for $\lfloor (1-s)/\ell \rfloor \le j \le \lfloor (n-s)/\ell \rfloor$; only
+$j \ge 1$ is stated here, since for $j \le 0$ the right side can have a negative lower index. For
+$j \ge 1$ the bound $j \le \lfloor (n-s)/\ell \rfloor$ is the condition $\ell j + s \le n$.
 
 ## Depends on
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: SumSquares.divChiSum_mul_of_coprime
 ---
 
-# Div Chi Sum mul of coprime
+# The divisor sum of $\chi_4$ is multiplicative
 
-Divisor sums of a completely multiplicative function are multiplicative.
+**The divisor sum of $\chi_4$ is multiplicative.** Let $\chi_4$ be the nonprincipal Dirichlet
+character modulo 4 and, for a natural number $n$, write $S(n) = \sum_{d \mid n} \chi_4(d)$ for
+the sum over the positive divisors $d$ of $n$ (so $S(0) = 0$). If $m$ and $n$ are coprime natural
+numbers, then $S(mn) = S(m)\,S(n)$.
 
 ## Depends on
 
-- [Div Chi Sum](div-chi-sum.md)
+- [Divisor sum of the character modulo 4](div-chi-sum.md)
 
 ## Sources
 

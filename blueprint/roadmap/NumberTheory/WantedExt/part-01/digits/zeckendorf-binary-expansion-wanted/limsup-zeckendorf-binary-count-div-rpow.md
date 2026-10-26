@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.limsup_zeckendorfBinaryCount_div_rpow
 ---
 
-# Limsup zeckendorf Binary Count div rpow
+# Limsup of the count of binary expansions without adjacent ones
 
-Zeckendorf binary expansions: with `z(x)` the number of `n < x` whose binary expansion has no
-two adjacent `1`s (`n &&& (n >>> 1) = 0`), `φ` the golden ratio and `γ = log₂ φ`,
-`limsup z(x) / x^γ = 3^γ (φ + 2) / 5`.
+**Limsup of the count of binary expansions without adjacent ones.** For real $x$ let $z(x)$
+be the number of natural numbers $n < x$ (including $0$) whose binary expansion has no two
+adjacent $1$s, let $\varphi$ be the golden ratio and let $\gamma = \log_2 \varphi$. Then
+$\limsup_{x \to \infty} z(x) / x^{\gamma} = 3^{\gamma} (\varphi + 2) / 5$.
 
 ## Depends on
 

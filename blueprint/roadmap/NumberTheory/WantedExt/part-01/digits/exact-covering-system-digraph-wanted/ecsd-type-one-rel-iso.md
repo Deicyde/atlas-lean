@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_type_one_relIso
 ---
 
-# Ecsd type one rel Iso
+# Normal form of the ECSDs $G(2n + a_1, 2n + a_2)$
 
-Every Type 1 ECSD `G(2n + a₁, 2n + a₂)` (`a₁ - a₂` odd) is isomorphic to
-`G(2n, 2n - a)` for some odd `a ∈ ℕ`.
+**Normal form of the ECSDs $G(2n + a_1, 2n + a_2)$.** For all integers $a_1, a_2$ with
+$a_1 - a_2$ odd, the exact covering system digraph $G(2n + a_1, 2n + a_2)$, with an edge
+$m \to 2m + a_1$ and an edge $m \to 2m + a_2$ for every integer $m$, is isomorphic as a digraph
+to $G(2n, 2n - a)$ for some odd natural number $a$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

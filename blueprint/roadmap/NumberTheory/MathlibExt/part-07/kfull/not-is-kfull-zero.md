@@ -7,13 +7,15 @@ proof: formalized
 lean: Nat.not_isKFull_zero
 ---
 
-# Not is KFull zero
+# Zero is not $k$-full
 
-Zero is never `k`-full: the source works with positive naturals.
+**Zero is not $k$-full.** For every natural number $k$, the number $0$ is not $k$-full.
+
+The source works with positive integers.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

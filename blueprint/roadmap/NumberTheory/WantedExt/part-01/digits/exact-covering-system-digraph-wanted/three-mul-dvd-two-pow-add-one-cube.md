@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.three_mul_dvd_two_pow_add_one_cube
 ---
 
-# Three mul dvd two pow add one cube
+# Divisibility of $2^{3n} + 1$ from $2^n + 1$
 
-If `n ∣ (2ⁿ + 1)/3` then `3n ∣ (2^(3n) + 1)/3`, stated in the equivalent integral
-form `3n ∣ 2ⁿ + 1 → 9n ∣ 2^(3n) + 1` (for `n = 0` the hypothesis fails, so positivity
-is not assumed).
+**Divisibility of $2^{3n} + 1$ from $2^n + 1$.** For every natural number $n$, if $3n$
+divides $2^n + 1$, then $9n$ divides $2^{3n} + 1$.
+
+Equivalently, if $3$ divides $2^n + 1$ and $n$ divides $(2^n + 1)/3$, then $3n$ divides
+$(2^{3n} + 1)/3$. For $n = 0$ the hypothesis fails, so positivity is not assumed.
 
 ## Depends on
 

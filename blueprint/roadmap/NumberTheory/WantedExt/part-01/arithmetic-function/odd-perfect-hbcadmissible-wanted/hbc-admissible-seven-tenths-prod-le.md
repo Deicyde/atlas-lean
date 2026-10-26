@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.hbcAdmissible_seven_tenths_prod_le
 ---
 
-# Hbc Admissible seven tenths prod le
+# Product bound for HBC-admissible tuples at $7/10$
 
-For `k ≥ 3` and every HBC-admissible `k`-tuple `y_1 < ⋯ < y_k` for `7/10`
-(`∏_{i=1}^k (1 - 1/y_i) ≤ 7/10 < ∏_{i=1}^{k-1} (1 - 1/y_i)`),
-`∏_{i=1}^k y_i ≤ (2/7)((√15)^{2^k} - (√15)^{2^{k-1}})` (31). The sharpness remark is not stated.
+**Product bound for HBC-admissible tuples at $7/10$.** Let $k \ge 3$ and let
+$y_1 < y_2 < \dots < y_k$ be positive integers with
+$\prod_{i=1}^{k} (1 - 1/y_i) \le 7/10 < \prod_{i=1}^{k-1} (1 - 1/y_i)$. Then
+$\prod_{i=1}^{k} y_i \le \frac{2}{7}\bigl(\sqrt{15}^{\,2^k} - \sqrt{15}^{\,2^{k-1}}\bigr)$.
 
 ## Depends on
 

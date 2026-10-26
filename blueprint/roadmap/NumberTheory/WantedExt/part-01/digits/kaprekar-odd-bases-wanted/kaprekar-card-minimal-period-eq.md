@@ -5,20 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.kaprekar_card_minimalPeriod_eq
 ---
 
-# Kaprekar card minimal Period eq
+# Explicit count of Kaprekar cycles of each length
 
-Explicit cycle counts: for odd `B > 3` and `L ≥ 1`, the number `N_B(L)` of terminal
-cycles of length `L` of `K_B` on `X_B` is
-`μ_B(L) ⌊(L - 1)/2⌋ + μ_B(2L) + C(μ_B(L), 2) L + ∑_{a < b, lcm(a, b) = L} μ_B(a) μ_B(b) gcd(a, b)`,
-where `μ_B(a) = ∑_{n ∣ B, n > 1, λ(n) = a} φ(n) / (2a)`; stated as: the points of `X_B`
-of minimal period `L` number `L · N_B(L)`. In the sum, `a` and `b` range over divisors
-of `L` (forced by `lcm(a, b) = L`).
+**Explicit count of Kaprekar cycles of each length.** Let $B > 3$ be odd and $L \ge 1$, let
+$K_B$ be the four-digit Kaprekar map and $X_B$ its state space, let $\varphi$ be Euler's totient
+function, and let $\lambda(n)$ denote the projective order of $2$ modulo $n$. For $a \ge 1$ put
+
+$$\mu_B(a) = \sum_{n \mid B,\ n > 1,\ \lambda(n) = a}
+\left\lfloor \frac{\varphi(n)}{2a} \right\rfloor$$
+
+and
+
+$$N_B(L) = \mu_B(L) \left\lfloor \frac{L - 1}{2} \right\rfloor + \mu_B(2L) +
+\binom{\mu_B(L)}{2} L + \sum_{a, b \mid L,\ a < b,\ \operatorname{lcm}(a, b) = L}
+\mu_B(a)\, \mu_B(b) \gcd(a, b),$$
+
+where $n$ ranges over positive divisors of $B$ and $a, b$ in the last sum range over positive
+divisors of $L$. Then exactly $L \cdot N_B(L)$ points of $X_B$ have minimal period $L$ under
+$K_B$.
+
+Here $N_B(L)$ is the number of terminal cycles of length $L$ of $K_B$ on $X_B$.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
-- [Projective Order Two](projective-order-two.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

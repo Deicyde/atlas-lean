@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.LehmerConstant.lehmer1933UpperBound_wanted
 ---
 
-# Lehmer1933 Upper Bound wanted
+# Lehmer's upper bound for Lehmer's constant
 
-Source: Lehmer (1933), catalogue upper bound `C₄₀ₐ ≤ 1.176280...`
-from the Mahler measure of Lehmer's polynomial, rounded up at the sixth
-decimal place.
+**Lehmer's upper bound for Lehmer's constant.** Lehmer's constant is at most
+$1176281/1000000 = 1.176281$.
 
 ## Depends on
 
@@ -18,3 +17,4 @@ decimal place.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Height.LehmerConstantWanted](../../../../../../sources/v2/WantedExt.md)
+- Lehmer (1933), catalogue upper bound `C₄₀ₐ ≤ 1.176280...` from the Mahler measure of Lehmer's polynomial, rounded up at the sixth decimal place.

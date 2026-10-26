@@ -6,9 +6,11 @@ proof: formalized
 lean: SumSquares.re_mul_re_add_two_mul_im_mul_im
 ---
 
-# Re mul re add two mul im mul im
+# Coordinates of an element of norm $N$ in $\mathbb{Z}(\sqrt{-2})$
 
-An element of `ℤ[√-2]` of norm `N` satisfies `re * re + 2 * (im * im) = N`.
+**Coordinates of an element of norm $N$ in $\mathbb{Z}[\sqrt{-2}]$.** Let $N$ be a natural
+number and let $z = a + b\sqrt{-2}$, with $a, b \in \mathbb{Z}$, be an element of
+$\mathbb{Z}[\sqrt{-2}]$ whose norm has absolute value $N$. Then $a^2 + 2b^2 = N$.
 
 ## Depends on
 

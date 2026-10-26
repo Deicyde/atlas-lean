@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.pellLucasSequence
 ---
 
-# Pell Lucas Sequence
+# Pell–Lucas sequence
 
-The Pell–Lucas (associated Pell) sequence `1, 1, 3, 7, 17, …` (OEIS A001333).
+**Pell–Lucas sequence.** The Pell–Lucas (associated Pell) numbers $Q_n$, for natural numbers
+$n$, are defined by $Q_0 = 1$, $Q_1 = 1$ and $Q_{n+2} = 2Q_{n+1} + Q_n$ for every $n$. They begin
+$1, 1, 3, 7, 17, \dots$ (OEIS A001333).
 
 ## Depends on
 

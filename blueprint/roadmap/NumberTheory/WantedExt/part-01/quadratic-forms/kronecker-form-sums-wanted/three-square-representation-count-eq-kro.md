@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.threeSquareRepresentationCount_eq_kronecker_classNumber
 ---
 
-# Three Square Representation Count eq kronecker class Number
+# Gauss's three-square formula after Aygin and Williams
 
-Gauss's formula for `r₃(n)` as reformulated by Aygin and Williams: writing
-`n = 2 ^ α * g * h ^ 2` with `g, h` odd and `g` squarefree,
-`r₃(n) = k(n) ℓ(n) h(d(n))` with `k(n)` from Table 1: `6` (`α` even, `g = 1`), `8`
-(`α` even, `g = 3`), `12` (`α` even, `g ≡ 1 (mod 4)`, `g ≠ 1`), `24` (`α` even,
-`g ≡ 3 (mod 8)`, `g ≠ 3`), `0` (`α` even, `g ≡ 7 (mod 8)`), `12` (`α` odd).
+**Gauss's three-square formula after Aygin and Williams.** Let $n$, $\alpha$, $g$, $h$ be
+natural numbers with $n = 2^\alpha g h^2$, where $g$ and $h$ are odd and $g$ is squarefree. Let
+$d$ be the Kronecker discriminant of $(\alpha, g)$, namely $d = -4g$ if $\alpha$ is even and
+$g \equiv 1 \pmod 4$, $d = -g$ if $\alpha$ is even and $g \equiv 3 \pmod 4$, and $d = -8g$ if
+$\alpha$ is odd. Put $L = \ell(d, h) \, h(d)$, where $\ell(d, h)$ is the Kronecker class
+multiplier and $h(d)$ is the Gauss class number of $d$, and let $r_3(n)$ be the number of ordered
+triples $(x, y, z)$ of integers with $x^2 + y^2 + z^2 = n$. Then: if $\alpha$ is even and $g = 1$,
+then $r_3(n) = 6L$; if $\alpha$ is even and $g = 3$, then $r_3(n) = 8L$; if $\alpha$ is even,
+$g \equiv 1 \pmod 4$ and $g \ne 1$, then $r_3(n) = 12L$; if $\alpha$ is even, $g \equiv 3 \pmod 8$
+and $g \ne 3$, then $r_3(n) = 24L$; if $\alpha$ is even and $g \equiv 7 \pmod 8$, then
+$r_3(n) = 0$; and if $\alpha$ is odd, then $r_3(n) = 12L$.
 
 ## Depends on
 
-- [Gauss Class Number](gauss-class-number.md)
-- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
-- [Kronecker Discriminant](kronecker-discriminant.md)
+- [Gauss class number of a discriminant](gauss-class-number.md)
+- [Kronecker's class-number multiplier](kronecker-class-multiplier.md)
+- [The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$](kronecker-discriminant.md)
 - [Number of representations as a sum of three squares](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources

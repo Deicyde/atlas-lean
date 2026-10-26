@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.abs_primeCounting_sub_logarithmicIntegral_lt
 ---
 
-# Abs prime Counting sub logarithmic Integral lt
+# Johnston's range for Schoenfeld's inequality
 
-Johnston's unconditional range for Schoenfeld's inequality:
-`|π(x) - li(x)| < √x log x / (8π)` for every real `x` with `2657 ≤ x ≤ 1.101 · 10²⁶`.
+**Johnston's range for Schoenfeld's inequality.** For every real $x$ with
+$2657 \le x \le 1.101 \cdot 10^{26}$,
+
+$$
+|\pi(x) - \operatorname{li}(x)| < \frac{\sqrt{x} \log x}{8\pi},
+$$
+
+where $\pi(x)$ is the number of primes $p \le x$ and $\operatorname{li}$ is the logarithmic
+integral.
 
 ## Depends on
 

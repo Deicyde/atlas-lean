@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.IsPowerFree.not_dvd
 ---
 
-# Not dvd
+# A k-free number has no prime k-th power divisor
 
-The prime-power exclusion of a power-free number.
+**A k-free number has no prime k-th power divisor.** If a natural number $n$ is $k$-free and
+$p$ is a prime, then $p^k$ does not divide $n$.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Sources
 

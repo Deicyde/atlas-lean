@@ -5,17 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSum_shortInterval_one
 ---
 
-# B Free Divisor Sum short Interval one
+# B-free polynomials in short intervals
 
-Theorem 5, case `h = 1`: under the hypotheses of `bFreeDivisorSum_shortInterval` with `h = 1`,
-`Ñ_{B_κ,1}(A, Δ) = q^{Δ+1} ∏_P (1 - 1/|P|^{κ(P)}) + O(q ^ ((N-Δ)/2 + (1/κ_min + ε) N))`.
+**B-free polynomials in short intervals.** Let $F$ be a finite field with $q$ elements, write
+$|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\kappa$ assign a natural number to each
+polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every monic irreducible $P$; let $\kappa_{\min}$
+be the minimum of $\kappa(P)$ over the monic irreducible $P$. Assume $\kappa$ is symmetric:
+$\kappa(P^*) = \kappa(P)$ for every monic irreducible $P$ with $P(0) \ne 0$, where $P^*$ is the
+monic scalar multiple of the reversed polynomial $T^{\deg P} P(1/T)$. Let
+$c > (1 + 2/\kappa_{\min})/3$ and $\varepsilon > 0$. Then there is a constant $C$ such that for
+all sufficiently large $N$, every monic $A \in F[T]$ of degree $N$ and every natural number
+$\Delta$ with $cN \le \Delta \le N - 2$,
+
+$$
+\Bigl|\sum_f d_1(f) - q^{\Delta + 1} \prod_P \bigl(1 - |P|^{-\kappa(P)}\bigr)\Bigr| \le
+C q^{(N - \Delta)/2 + (1/\kappa_{\min} + \varepsilon) N},
+$$
+
+where $f$ runs over the $B_\kappa$-free $f \in F[T]$ with $f = A$ or $\deg(f - A) \le \Delta$,
+$d_1(f)$ is $1$ if $f$ is monic and $0$ otherwise, $f$ is $B_\kappa$-free when no $P^{\kappa(P)}$
+with $P$ monic irreducible divides it, and $P$ runs over the monic irreducible polynomials.
 
 ## Depends on
 
-- [Is BFree](is-bfree.md)
-- [Fq Norm](fq-norm.md)
-- [Kappa Min](kappa-min.md)
-- [Monic Divisor Count](monic-divisor-count.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hbcAdmissible_exists_prefix_le_and_prod_le
 ---
 
-# Hbc Admissible exists prefix le and prod le
+# Stone's product bound for HBC-admissible tuples
 
-Main theorem: let `a, d` be coprime positive integers and `y_1 < ⋯ < y_k` positive integers
-with `∏_{i=1}^k (1 - 1/y_i) ≤ a/(a + d) < ∏_{i=1}^{k-1} (1 - 1/y_i)` (18). With `α = (a + d)/d`
-and the calibrating numbers `n_i` of Definition 3, some `κ ∈ [1, k]` has
-`∏_{i ≤ κ} y_i ≤ ∏_{i ≤ κ} n_i` (19); and if `κ_max` is the largest such `κ`, then
-`a ∏_{i=1}^k y_i ≤ d^η F_k(α(κ_max))` (21), where `F_k(x) = x^{2^k} - x^{2^{k-1}}`,
-`α(κ) = α d^{1/2^κ}` for `κ < k`, `α(k) = α` (20), and `η = 1` if `κ_max = k`, else `0`.
-Tuples are indexed `1, …, k` as functions `ℕ → ℕ`; `κ_max` is characterized by (19) holding at
-`κ` and failing at every larger `κ' ≤ k`.
+**Stone's product bound for HBC-admissible tuples.** Let $a$ and $d$ be coprime positive
+integers, let $k \ge 1$, and let $y_1 < y_2 < \dots < y_k$ be positive integers with
+$\prod_{i=1}^{k} (1 - 1/y_i) \le a/(a + d) < \prod_{i=1}^{k-1} (1 - 1/y_i)$ (the source calls such
+a tuple HBC-admissible for $a/(a + d)$). Put $\alpha = (a + d)/d$, let $n_i = 1 + \alpha^{2^{i-1}}$
+for $1 \le i < k$ and $n_k = \alpha^{2^{k-1}}$, and let $F_k(x) = x^{2^k} - x^{2^{k-1}}$. Then some
+$\kappa$ with $1 \le \kappa \le k$ has $\prod_{i=1}^{\kappa} y_i \le \prod_{i=1}^{\kappa} n_i$.
+Moreover, let $\kappa$ with $1 \le \kappa \le k$ satisfy this inequality while every $\kappa'$ with
+$\kappa < \kappa' \le k$ satisfies $\prod_{i=1}^{\kappa'} n_i < \prod_{i=1}^{\kappa'} y_i$, so that
+$\kappa$ is the largest such index. If $\kappa < k$, then
+$a \prod_{i=1}^{k} y_i \le F_k(\alpha d^{1/2^{\kappa}})$; if $\kappa = k$, then
+$a \prod_{i=1}^{k} y_i \le d \, F_k(\alpha)$.
 
 ## Depends on
 

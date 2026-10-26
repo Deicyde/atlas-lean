@@ -4,6 +4,6 @@ navigation: module
 
 # Hyperbolic Floor Sum
 
-- [Summable abs mul log pow div sub](summable-abs-mul-log-pow-div-sub.md)
-- [Hyperbolic floor sum asymptotic](hyperbolic-floor-sum-asymptotic.md)
-- [Hyperbolic floor sum asymptotic additive](hyperbolic-floor-sum-asymptotic-additive.md)
+- [Absolute convergence of a log-weighted difference series](summable-abs-mul-log-pow-div-sub.md)
+- [Asymptotics of hyperbolic floor sums](hyperbolic-floor-sum-asymptotic.md)
+- [Hyperbolic floor sums of additive functions of prime exponents](hyperbolic-floor-sum-asymptotic-additive.md)

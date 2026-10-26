@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominatorLargePart_eventually_gt_descFactorial
 ---
 
-# Bernoulli Diff Denominator Large Part eventually gt desc Factorial
+# $\mathbb{D}^+_n$ eventually exceeds every fixed rising product
 
-For `k ≥ 1` there is `n_k` with `𝔻^+_n > (n + k)_k = (n + 1) ⋯ (n + k)` for all `n > n_k`.
+**$\mathbb{D}^+_n$ eventually exceeds every fixed rising product.** Write $s_p(n)$ for the sum
+of the base-$p$ digits of $n$ and let $\mathbb{D}^+_n$ be the product of the primes $p$ with
+$p^2 > n$ and $s_p(n) \ge p$. For every $k \ge 1$ there is $N$ such that
+$\mathbb{D}^+_n > (n + 1)(n + 2) \cdots (n + k)$ for all $n > N$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+- [Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

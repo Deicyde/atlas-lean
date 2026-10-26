@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.hasPropertyPStar_iff_dvd
 ---
 
-# Theorem 3
+# Has Property PStar iff dvd
 
-**Theorem 3**: an integer `n ≥ 1` has the property
-`P*` if and only if `n` is one of the (positive)
-divisors of `99`.
+**The positive integers with property $P^*$ are the divisors of $99$.** A natural number
+$n \ge 1$ has property $P^*$ if and only if $n$ divides $99$.
 
 ## Depends on
 

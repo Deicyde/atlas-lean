@@ -19,7 +19,7 @@ sequence `pellLucas` (`Q_0 = Q_1 = 2`).
 ## Depends on
 
 - [Pell–Lucas numbers](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
-- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

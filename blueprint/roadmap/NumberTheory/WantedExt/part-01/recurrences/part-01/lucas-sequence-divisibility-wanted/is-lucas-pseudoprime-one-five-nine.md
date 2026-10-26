@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.isLucasPseudoprime_one_five_nine
 ---
 
-# Is Lucas Pseudoprime one five nine
+# $9$ is a Lucas pseudoprime for $(P, Q) = (1, 5)$
 
-`9` is a Lucas pseudoprime with `(P, Q) = (1, 5)` (`D = -19`, `U_8 = -279`).
+**$9$ is a Lucas pseudoprime for $(P, Q) = (1, 5)$.** The number $9$ is a Lucas pseudoprime
+with parameters $P = 1$ and $Q = 5$.
+
+Here the discriminant is $D = P^2 - 4Q = -19$, the Jacobi symbol $(D/9)$ is $1$, and $9$
+divides $U_8 = -279$, where $U_n$ is the Lucas sequence of $(1, 5)$.
 
 ## Depends on
 
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Index of the Lucas pseudoprime congruences](lucas-pseudoprime-index.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

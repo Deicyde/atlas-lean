@@ -5,26 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.bergman_lucas_odd_add
 ---
 
-# Bergman lucas odd add
+# Recursive structure of Bergman expansions, odd Lucas case
 
-Recursive structure theorem, part II, as identities of digit words (free-group
-notation of the paper). If `β(M)` has lowest digit `1` at `a` and highest at `t`,
-removing its leading `10` and trailing `01` leaves the digits at positions in
-`(S.erase a).erase t`. Then, for `n ≥ 2`:
-* `I_n`, `1 ≤ k ≤ L_{2n-2} - 1`:
-  `β(L_{2n+1} + k) = 1000 (10)⁻¹ β(L_{2n-1} + k) (01)⁻¹ 1001`;
-* `K_n`, same `k`:
-  `β(L_{2n+1} + L_{2n-1} + k) = 1010 (10)⁻¹ β(L_{2n-1} + k) (01)⁻¹ 0001`;
-* `J_n`, `0 ≤ k ≤ L_{2n-3}`:
-  `β(L_{2n+1} + L_{2n-2} + k) = 10010 (10)⁻¹ β(L_{2n-2} + k) (01)⁻¹ 001001`.
-The words carry no radix point, so the new expansion is pinned up to its lowest
-position `b`.
+**Recursive structure of Bergman expansions, odd Lucas case.** Let $n \ge 2$, let $k$ be a
+natural number, and write $L_m$ for the $m$-th Lucas number. Call a finite set of integers with no
+two consecutive elements a Bergman expansion. Let $S$ and $T$ be Bergman expansions, let $a$ and
+$t$ be the least and the greatest element of $S$, let $S' = S \setminus \{a, t\}$, and for an
+integer $c$ write $S' + c = \{x + c : x \in S'\}$.
+
+(i) If $1 \le k \le L_{2n-2} - 1$, the base phi value of $S$ is $L_{2n-1} + k$ and that of $T$
+is $L_{2n+1} + k$, then there is an integer $b$ with
+$T = \{b, b + 3, b + (t - a) + 4\} \cup (S' + (b - a + 2))$.
+
+(ii) If $1 \le k \le L_{2n-2} - 1$, the base phi value of $S$ is $L_{2n-1} + k$ and that of $T$
+is $L_{2n+1} + L_{2n-1} + k$, then there is an integer $b$ with
+$T = \{b, b + (t - a) + 2, b + (t - a) + 4\} \cup (S' + (b - a + 2))$.
+
+(iii) If $k \le L_{2n-3}$, the base phi value of $S$ is $L_{2n-2} + k$ and that of $T$ is
+$L_{2n+1} + L_{2n-2} + k$, then there is an integer $b$ with
+$T = \{b, b + 3, b + (t - a) + 4, b + (t - a) + 7\} \cup (S' + (b - a + 4))$.
 
 ## Depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Base Phi Value](base-phi-value.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsHardyLittlewoodAdmissible
 ---
 
-# Is Hardy Littlewood Admissible
+# Hardy–Littlewood admissible tuples
 
-Admissibility of the tuple `b`: `v_p(b) ≠ p` for every prime `p`
-(statement `jis_43e1aedfa0e84467b1f1765e`, concept `jis_sem_c814202d5e6a0edd6fed8bb5`).
+**Hardy–Littlewood admissible tuples.** An $m$-tuple $b$ of integers is admissible when
+$v_p(b) \ne p$ for every prime $p$, where $v_p(b)$ is the number of residue classes modulo $p$
+that contain an entry of $b$.
 
 ## Depends on
 
@@ -17,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
+- [Number of residue classes met by an integer tuple](hardy-littlewood-residue-count.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HardyLittlewoodPrimeTuple](../../../../../sources/v2/MathlibExt.md)
+- statement `jis_43e1aedfa0e84467b1f1765e` (concept `jis_sem_c814202d5e6a0edd6fed8bb5`).

@@ -4,6 +4,6 @@ navigation: module
 
 # Generalized Fuss Catalan Numbers FMNK
 
-- [Generalized Fuss Catalan Number](generalized-fuss-catalan-number.md)
-- [Generalized Fuss Catalan Number eq](generalized-fuss-catalan-number-eq.md)
-- [Generalized Fuss Catalan Number one](generalized-fuss-catalan-number-one.md)
+- [Generalized Fuss–Catalan number](generalized-fuss-catalan-number.md)
+- [Formula for the generalized Fuss–Catalan number](generalized-fuss-catalan-number-eq.md)
+- [Generalized Fuss–Catalan numbers at $n = 1$](generalized-fuss-catalan-number-one.md)

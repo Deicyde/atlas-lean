@@ -5,17 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.weightedMonicConvSum_eq_of_completelyMultiplicative
 ---
 
-# Weighted Monic Conv Sum eq of completely Multiplicative
+# Camargo's identity over $F(T)$
 
-Theorem 6 (function-field Camargo identity): for completely multiplicative `α, β` and any `γ`,
-`D[γ, α, β](n) = ∑_{deg f ≤ n} (γ * μ)(f) ∑_{d ∣ f} α(d) β(f/d) ∑_{ℓ ∣ d} μ(ℓ) β(ℓ)
-D[α, β](n - deg(f ℓ))`, all sums over monic polynomials.
+**Camargo's identity over $F[T]$.** Let $F$ be a finite field and let $\mu$ be the Möbius
+function of $F[T]$. For functions $\alpha, \beta \colon F[T] \to \mathbb{C}$ let
+$(\alpha * \beta)(f) = \sum_{g \mid f} \alpha(g) \beta(f/g)$, over monic divisors $g$, be their
+Dirichlet convolution, and let $D[\alpha, \beta](k)$ be the sum of $(\alpha * \beta)(g)$ over the
+monic $g$ of degree at most $k$, which is $0$ for $k < 0$. For a further function $\gamma$ let
+$D[\gamma, \alpha, \beta](n)$ be the sum of $\gamma(f) (\alpha * \beta)(f)$ over the monic $f$ of
+degree at most $n$. Suppose $\alpha$ and $\beta$ are completely multiplicative, that is,
+$\alpha(1) = 1$ and $\alpha(f g) = \alpha(f) \alpha(g)$ for all $f, g \in F[T]$, and likewise for
+$\beta$, and let $\gamma \colon F[T] \to \mathbb{C}$ be arbitrary. Then for every natural number
+$n$,
+
+$$D[\gamma, \alpha, \beta](n) = \sum_{f \text{ monic},\ \deg f \le n} (\gamma * \mu)(f)
+\sum_{d \mid f} \alpha(d) \beta(f/d) \sum_{\ell \mid d} \mu(\ell) \beta(\ell) \,
+D[\alpha, \beta](n - \deg(f \ell)),$$
+
+where $d$ runs over the monic divisors of $f$ and $\ell$ over the monic divisors of $d$.
 
 ## Depends on
 
-- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
-- [Weighted Monic Conv Sum](weighted-monic-conv-sum.md)
+- [Partial sums of a Dirichlet convolution over monic polynomials](monic-conv-partial-sum.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
+- [Weighted convolution sum](weighted-monic-conv-sum.md)
 
 ## Sources
 

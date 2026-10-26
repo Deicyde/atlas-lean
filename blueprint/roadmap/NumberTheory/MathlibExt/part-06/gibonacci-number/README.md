@@ -5,5 +5,5 @@ navigation: module
 
 # Gibonacci Number
 
-- [Gibonacci Number](gibonacci-number.md)
-- [Gibonacci zero one eq fib](gibonacci-zero-one-eq-fib.md)
+- [Gibonacci numbers](gibonacci-number.md)
+- [Gibonacci numbers starting from 0 and 1 are the Fibonacci numbers](gibonacci-zero-one-eq-fib.md)

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.summable_abs_mul_log_pow_div_sub
 ---
 
-# Summable abs mul log pow div sub
+# Absolute convergence of a log-weighted difference series
 
-If `f(n) ≪ n^α` for some `α ∈ [0, 1)`, then for every fixed integer `i ≥ 0` the series
-`∑_{n ≥ 1} f(n) ((log n)^i/n - (log (n+1))^i/(n+1))` converges absolutely.
+**Absolute convergence of a log-weighted difference series.** Let $f$ be a real function on
+the natural numbers with $f(n) = O(n^\alpha)$ as $n \to \infty$ for some real $\alpha$ with
+$0 \le \alpha < 1$. Then for every natural number $i$ the series
+
+$$\sum_{n \ge 1} f(n) \left( \frac{(\log n)^i}{n} - \frac{(\log (n+1))^i}{n+1} \right)$$
+
+converges absolutely.
 
 ## Depends on
 

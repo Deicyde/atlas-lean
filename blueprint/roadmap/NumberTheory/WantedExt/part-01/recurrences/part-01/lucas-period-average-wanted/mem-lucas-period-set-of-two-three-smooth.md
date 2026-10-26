@@ -5,22 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.mem_lucasPeriodSet_of_two_three_smooth
 ---
 
-# Mem lucas Period Set of two three smooth
+# Members of $S(U)$ of the form $2^i 3^j$
 
-Theorem 2.12: for nondegenerate `U(a, b)` with `b (a + b - 1) ≠ 0`, `n ∈ S(U)` and `A_W(n)`
-is an integer for all `W(a, b)` in the cases (`i, j ≥ 0`): (i) `a ≡ ±1`, `b ≡ 1 (mod 6)`,
-`n = 1` or `n = 2 ^ (i + 3) 3 ^ (j + 1)`; (ii) `a ≡ 1`, `b ≡ -1 (mod 6)`, `n = 1` or
-`n = 2 ^ (i + 1) 3 ^ (j + 1)`; (iii) `a ≡ 3`, `b ≡ -1 (mod 6)`, `n = 1` or
-`n = 2 ^ (i + 2) 3 ^ (j + 1)`; (iv) `a ≡ 3 (mod 6)`, `3 ^ e ∥ a` with `e ≥ 1`,
-`b ≡ 1 (mod 2 · 3 ^ (e + 1))`, `n = 1` or `n = 2 ^ (i + 1) 3 ^ (j + 1)`. The paper's
-`rad(n) ∣ 6` is implied by the displayed forms of `n`.
+**Members of $S(U)$ of the form $2^i 3^j$.** Let $P, Q$ be integers with $Q \ne 0$ such that
+the Lucas pair $(P, Q)$ is nondegenerate, let $U = U(P, Q)$ be its Lucas sequence, write $a = P$
+and $b = -Q$, and suppose $a + b - 1 \ne 0$. Call a positive integer $n$ good if $n$ lies in the
+Lucas period set $S(U)$ (the positive integers $n$ coprime to $Q$ whose period $\pi_U(n)$ modulo
+$n$ divides $n$) and $n$ divides $w_1 + \dots + w_n$ for every integer sequence $w$ with
+$w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$. Then, for all integers $i, j \ge 0$: (i) if
+$a \equiv \pm 1$ and $b \equiv 1 \pmod 6$, then $1$ and $2^{i+3} 3^{j+1}$ are good; (ii) if
+$a \equiv 1$ and $b \equiv -1 \pmod 6$, then $1$ and $2^{i+1} 3^{j+1}$ are good; (iii) if
+$a \equiv 3$ and $b \equiv -1 \pmod 6$, then $1$ and $2^{i+2} 3^{j+1}$ are good; (iv) if $e \ge 1$,
+$a \equiv 3 \pmod 6$, $3^e$ divides $a$ but $3^{e+1}$ does not, and
+$b \equiv 1 \pmod{2 \cdot 3^{e+1}}$, then $1$ and $2^{i+1} 3^{j+1}$ are good.
+
+The paper's condition $\operatorname{rad}(n) \mid 6$ is implied by these forms of $n$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

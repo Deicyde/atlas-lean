@@ -5,17 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.tsum_gibonacciPoly_sq_sub_family
 ---
 
-# Tsum gibonacci Poly sq sub family
+# Reciprocal sums of shifted squares of Fibonacci and Lucas polynomials (Koshy–Gao, Theorem 2.1)
 
-Theorem 2.1 (quoted from Koshy): for real `x > 0` and positive integers `k`, `p`, `r`, `t`
-with `t ≤ 2p`, `α = (x + √(x² + 4))/2` and `g ∈ {f, l}`,
-`Σ_{n≥1} (-1)^{tk} μ ν* f_r f_{2pk} / (g_{(2pn+t-p)k}² - (-1)^{tk} μ ν* f_{pk}²)
-  = g_{tk+r}/g_{tk} - α^r`, where `μ ν* = 1` for `g = f` and `μ ν* = -(x² + 4)` for `g = l`
-(the two cases as a conjunction; summation index shifted to start at `0`).
+**Reciprocal sums of shifted squares of Fibonacci and Lucas polynomials (Koshy–Gao,
+Theorem 2.1).** Let $f_n(x)$ and $l_n(x)$ be the Fibonacci and Lucas polynomials, given by
+$z_{n+2} = x z_{n+1} + z_n$ with initial values $f_0 = 0$, $f_1 = 1$ and $l_0 = 2$, $l_1 = x$.
+Let $x > 0$ be real, let $k$, $p$, $r$, $t$ be positive integers with $t \le 2p$, and let
+$\alpha = (x + \sqrt{x^2 + 4})/2$. Then
+
+$$
+\sum_{n=0}^{\infty} \frac{(-1)^{tk} f_r(x) f_{2pk}(x)}
+{f_{(2pn+p+t)k}(x)^2 - (-1)^{tk} f_{pk}(x)^2} =
+\frac{f_{tk+r}(x)}{f_{tk}(x)} - \alpha^r
+$$
+
+and
+
+$$
+\sum_{n=0}^{\infty} \frac{(-1)^{tk+1} (x^2 + 4) f_r(x) f_{2pk}(x)}
+{l_{(2pn+p+t)k}(x)^2 + (-1)^{tk} (x^2 + 4) f_{pk}(x)^2} =
+\frac{l_{tk+r}(x)}{l_{tk}(x)} - \alpha^r.
+$$
+
+In the source the sums run over $n \ge 1$, with $(2pn + t - p)k$ in place of $(2pn + p + t)k$;
+here the summation index is shifted to start at $n = 0$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

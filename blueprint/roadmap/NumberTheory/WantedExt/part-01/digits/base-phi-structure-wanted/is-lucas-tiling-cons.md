@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isLucasTiling_cons
 ---
 
-# Is Lucas Tiling cons
+# Lucas tilings of a list with a first interval
 
-A tiling starts with a translated interval that begins at `a`.
+**Lucas tilings of a list with a first interval.** Write $\Lambda_k = [\ell_k, h_k]$ for the
+Lucas interval with left end $\ell_k$ and right end $h_k$. For all natural numbers $a$, $b$, $k$,
+$t$ and every list $P$ of pairs of natural numbers, the list consisting of $(k, t)$ followed by
+$P$ is a Lucas tiling of $[a, b]$ if and only if $\ell_k + t = a$ and $P$ is a Lucas tiling of
+$[h_k + t + 1, b]$.
 
 ## Depends on
 
-- [Is Lucas Tiling](is-lucas-tiling.md)
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Lucas tilings](is-lucas-tiling.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.annihilatesSeq_zero
 ---
 
-# Annihilates Seq zero
+# Every operator annihilates the zero sequence
 
-Every operator annihilates the zero sequence.
+**Every operator annihilates the zero sequence.** For every semiring $K$ and every polynomial
+$p \in K[X]$, the operator $p(E)$ annihilates the zero sequence, where $E$ is the translation
+operator $E(G_s) = G_{s+1}$.
 
 ## Depends on
 
-- [Annihilates Seq](annihilates-seq.md)
+- [Annihilator of a sequence](annihilates-seq.md)
 
 ## Sources
 

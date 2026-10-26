@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.balancingNum_two
 ---
 
-# Balancing Num two
+# The balancing number $B_2$ is $6$
 
-Characteristic value `B_2 = 6`.
+**The balancing number $B_2$ is $6$.** The balancing number $B_2$ equals $6$.
 
 ## Depends on
 
-- [Balancing Num](balancing-num.md)
+- [Balancing numbers](balancing-num.md)
 
 ## Sources
 

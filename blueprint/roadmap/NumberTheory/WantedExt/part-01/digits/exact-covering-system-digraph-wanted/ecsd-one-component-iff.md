@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_one_component_iff
 ---
 
-# Ecsd one component iff
+# Connectivity of $G(-2n + 1, -2n + a)$
 
-For `a` even, the ECSD `G(-2n + 1, -2n + a)` has one component iff `a = 1 ± 3ᵐ` for
-some `m ∈ ℕ₀`.
+**Connectivity of $G(-2n + 1, -2n + a)$.** For an even integer $a$, the underlying undirected
+graph of $G(-2n + 1, -2n + a)$ is connected iff $a = 1 + 3^m$ or $a = 1 - 3^m$ for some
+integer $m \ge 0$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

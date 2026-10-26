@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_carries_of_isMotherGraphEdge
 ---
 
-# Exists carries of is Mother Graph Edge
+# Every mother-graph edge induces a carry transition
 
-Every edge `(d₁, d₂)` of the mother graph induces a transition: there are integers
-`0 ≤ c₁, c₂ ≤ n - 1` with `b c₂ - c₁ = n d₂ - d₁`.
+**Every mother-graph edge induces a carry transition.** Let $n$ and $b$ be natural
+numbers. If $(d_1, d_2)$ is an edge of the $(n, b)$-mother graph, then there are natural
+numbers $c_1$ and $c_2$ with $c_1 \le n - 1$ and $c_2 \le n - 1$ such that
+$b c_2 - c_1 = n d_2 - d_1$ as integers.
 
 ## Depends on
 
-- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Edges of the mother graph](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

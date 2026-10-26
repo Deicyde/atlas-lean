@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.at_least_coprime_pairs_inclusion_exclusion
 ---
 
-# At least coprime pairs inclusion exclusion
+# Inclusion–exclusion for at least $r$ coprime pairs
 
-Lemma 6: inclusion–exclusion for `β'_r`, `r ≥ 1`:
-`β'_r(n) = ∑_{j=r}^{k(k-1)/2} (-1)^{j-r} binom(j-1, r-1) ∑_{|E| = j} δ_G(n)`.
+**Inclusion–exclusion for at least $r$ coprime pairs.** Let $k \ge 2$ and $r \ge 1$, and let
+$n = (n_1, \dots, n_k)$ be a tuple of natural numbers (zero allowed). Let $\beta'_r(n)$ be $1$ if
+$\gcd(n_a, n_b) = 1$ for at least $r$ pairs $a < b$, and $0$ otherwise. For a set $E$ of pairs
+$(a, b)$ with $1 \le a < b \le k$, let $\delta_E(n)$ be $1$ if $\gcd(n_a, n_b) = 1$ for every
+$(a, b) \in E$, and $0$ otherwise. Then
+
+$$\beta'_r(n) = \sum_{j=r}^{k(k-1)/2} (-1)^{j-r} \binom{j-1}{r-1} \sum_{|E| = j} \delta_E(n),$$
+
+where the inner sum runs over all sets $E$ of exactly $j$ such pairs.
 
 ## Depends on
 
-- [Coprimality Indicator](coprimality-indicator.md)
-- [Coprime Pair Count](coprime-pair-count.md)
+- [Coprimality indicator of a graph](coprimality-indicator.md)
+- [Number of coprime pairs](coprime-pair-count.md)
 
 ## Sources
 

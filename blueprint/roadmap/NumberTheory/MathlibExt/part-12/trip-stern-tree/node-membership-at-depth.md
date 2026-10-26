@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.TripSternTree.nodeMembershipAtDepth
 ---
 
-# Node Membership At Depth
+# Membership in a level of a TRIP-Stern tree
 
-Membership characterization of a level. Source: Amburg et al., *TRIP-Stern Sequences*, JIS 20
-(2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
+**Membership in a level of a TRIP-Stern tree.** For every TRIP-Stern tree $T$, natural number
+$n$ and node value $y$, $y$ lies in the set of nodes of $T$ at depth $n$ if and only if there is
+a binary path of length $n$ whose selected node in $T$ is $y$.
 
 ## Depends on
 
-- [Trip Stern Tree](trip-stern-tree.md)
-- [Node At Path](node-at-path.md)
+- [TRIP-Stern tree](trip-stern-tree.md)
+- [Node selected by a binary path](node-at-path.md)
 - [Nodes At Depth](nodes-at-depth.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TripSternTree](../../../../../sources/v2/MathlibExt.md)
+- Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.

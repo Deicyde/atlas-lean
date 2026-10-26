@@ -5,6 +5,6 @@ navigation: module
 
 # Dusart2010
 
-- [Dusart 2010 prime interval bound](dusart-2010-prime-interval-bound.md)
-- [Dusart pi upper](dusart-pi-upper.md)
-- [Dusart pi lower](dusart-pi-lower.md)
+- [Dusart's primes in short intervals](dusart-2010-prime-interval-bound.md)
+- [Dusart's upper bound for $\pi(x)$ for all $x > 1$](dusart-pi-upper.md)
+- [Dusart's lower bound for $\pi(x)$ for $x \ge 599$](dusart-pi-lower.md)

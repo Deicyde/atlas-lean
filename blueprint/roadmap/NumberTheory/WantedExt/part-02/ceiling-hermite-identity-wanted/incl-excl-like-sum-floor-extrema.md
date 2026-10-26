@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.inclExclLikeSum_floor_extrema
 ---
 
-# Incl Excl Like Sum floor extrema
+# Extrema of the floor inclusion-exclusion-like sum
 
-Lemma 5 (Onphaeng and Pongsriiam): for `n ≥ 2`, `g_1` has minimum `-2^{n-2}`, attained at
-`x_k = 1/2`, and maximum `2^{n-2} - 1`, attained at `x_k = 1/2 - 1/n²`.
+**Extrema of the floor inclusion-exclusion-like sum.** Let $n \ge 2$ and let $g_1$ be the
+inclusion-exclusion-like sum $g^{(F)}$ in $n$ real variables with $F$ the floor function. Then
+$-2^{n-2} \le g_1(x) \le 2^{n-2} - 1$ for every $x \in \mathbb{R}^n$; the minimum $-2^{n-2}$ is
+attained at the point with all coordinates $1/2$, and the maximum $2^{n-2} - 1$ at the point with
+all coordinates $1/2 - 1/n^2$.
 
 ## Depends on
 
-- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Inclusion-exclusion-like sum](incl-excl-like-sum.md)
 
 ## Sources
 

@@ -6,21 +6,25 @@ proof: formalized
 lean: MetaMathlibExt.companionKJacobsthal_zero_one
 ---
 
-# Companion KJacobsthal zero one
+# The $k$-Jacobsthal numbers as companion numbers
 
-With `(a, b) = (0, 1)` the companion numbers are the `k`-Jacobsthal numbers.
+**The $k$-Jacobsthal numbers as companion numbers.** For a natural number $k$, let
+$\mathcal{J}_{k,n}(a, b)$ denote the companion $k$-Jacobsthal numbers and $J_{k,n} = U_n(k, -2)$
+the $k$-Jacobsthal numbers, the Lucas sequence with parameters $(k, -2)$. Then for every natural
+number $n$, $\mathcal{J}_{k,n}(0, 1) = J_{k,n}$: the companion numbers with initial values $0$ and
+$1$ are the $k$-Jacobsthal numbers.
 
 ## Depends on
 
-- [Companion KJacobsthal](companion-kjacobsthal.md)
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion $k$-Jacobsthal numbers](companion-kjacobsthal.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Companion KJacobsthal add two](companion-kjacobsthal-add-two.md)
-- [Lucas U add two](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-add-two.md)
+- [Recurrence for the Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-add-two.md)
 
 ## Sources
 

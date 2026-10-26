@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.neto_higher_order_bernoulli_identity
 ---
 
-# Neto higher order bernoulli identity
+# Neto's identity for higher-order Bernoulli numbers
 
-Neto identity for higher-order Bernoulli numbers from the JIS source below.
+**Neto's identity for higher-order Bernoulli numbers.** For every complex number $x$ and all
+natural numbers $n$ and $\ell$,
 
-For `x : ℂ` simultaneously the order and scalar base, and `n ℓ : ℕ`, with
-inclusive upper bounds `Finset.range (n + 1)` and `Finset.range (ℓ + 1)`,
-natural exponents, and sign `(-1)^(n + ℓ)`.
+$$\sum_{k=0}^{n} \binom{n}{k} x^{n-k} B_{\ell+k}^{(x)} =
+(-1)^{n+\ell} \sum_{k=0}^{\ell} \binom{\ell}{k} x^{\ell-k} B_{n+k}^{(x)},$$
+
+where $B_m^{(x)}$ is the higher-order Bernoulli number of order $x$.
 
 Proof: The substitution coefficient formula makes both sides polynomial in the order. For natural
 orders, the cited Bernoulli EGF gives the reflection identity, formal differentiation proves Neto's
@@ -21,11 +23,11 @@ formula, and equality on all natural complex points finishes the polynomial argu
 
 ## Depends on
 
-- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
+- [Higher-order Bernoulli numbers](higher-order-bernoulli-number.md)
 
 ## Proof depends on
 
-- [Higher Order Bernoulli Number nat](higher-order-bernoulli-number-nat.md)
+- [Higher-order Bernoulli numbers of natural order](higher-order-bernoulli-number-nat.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ by partial sums (`∑_{k<m} a_k R_k < R_m` for `m ≤ n + 1`); `n` need not be m
 - [Bronze Companion First](bronze-companion-first.md)
 - [Bronze Companion Second](bronze-companion-second.md)
 - [Bronze Lucas Params](bronze-lucas-params.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

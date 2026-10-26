@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.BinomidAverageCondition
 ---
 
-# Binomid Average Condition
+# The Average Condition
 
-The Average Condition: `A_0(η) = A_{i,0}(η)` for some `i ≥ 1`.
+**The Average Condition.** A sequence $\eta = (e_1, e_2, \dots)$ of nonnegative integers
+satisfies the Average Condition when its upper average $A_0(\eta)$, the limit superior as
+$n \to \infty$ of the averages $A_{n,0}(\eta) = (e_1 + \dots + e_n)/n$ taken in the extended
+real line, equals $A_{i,0}(\eta)$ for some $i \ge 1$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binomid Average](binomid-average.md)
-- [Binomid Upper Average](binomid-upper-average.md)
+- [Initial averages of a sequence](binomid-average.md)
+- [Upper average of a sequence](binomid-upper-average.md)
 
 ## Sources
 

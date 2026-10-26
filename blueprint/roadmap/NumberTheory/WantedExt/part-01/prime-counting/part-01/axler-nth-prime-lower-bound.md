@@ -6,18 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.axler_nth_prime_lower_bound
 ---
 
-# Axler Nth Prime Lower Bound Wanted
+# Axler's lower bound for the $n$th prime
 
-Axler's explicit lower bound for the `n`th prime (statement only).
-
-For every integer `n ≥ 2`,
-`pₙ > n * (log n + log log n - 1 + (log log n - 2) / log n -
-((log log n) ^ 2 - 6 * log log n + 11.321) / (2 * (log n) ^ 2))`.
-
-Mathlib's `Nat.nth Nat.Prime` is zero-indexed, so `Nat.nth Nat.Prime (n - 1)`
-is the source's one-indexed `pₙ`; the hypothesis `2 ≤ n` makes the
-subtraction `n - 1` safe. The inequality is strict and the decimal `11.321`
-is kept exactly as stated.
+**Axler's lower bound for the $n$th prime.** For every integer $n \ge 2$, the $n$th prime
+$p_n$ (so that $p_1 = 2$) satisfies
+$p_n > n \left(\log n + \log\log n - 1 + \frac{\log\log n - 2}{\log n} -
+\frac{(\log\log n)^2 - 6 \log\log n + 11.321}{2 \log^2 n}\right)$.
 
 ## Depends on
 

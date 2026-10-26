@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.nine_dvd_of_three_mul_dvd_two_pow_add_one
 ---
 
-# Nine dvd of three mul dvd two pow add one
+# Nine divides $n$ when $n > 3$ and $3n$ divides $2^n + 1$
 
-For `n > 3`, if `n ∣ (2ⁿ + 1)/3` (integral form `3n ∣ 2ⁿ + 1`) then `9 ∣ n`.
+**Nine divides $n$ when $n > 3$ and $3n$ divides $2^n + 1$.** Let $n > 3$ be a natural
+number. If $3n$ divides $2^n + 1$, then $9$ divides $n$.
+
+For odd $n$ the hypothesis says that $n$ divides the integer $(2^n + 1)/3$, which is the form
+in the paper; for even $n$ it never holds, since $3$ does not divide $2^n + 1$.
 
 ## Depends on
 

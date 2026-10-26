@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.HyperfactorialDigitsNormalized
 ---
 
-# Hyperfactorial Digits Normalized
+# Normalized hyperfactorial digit vectors
 
-A finite hyperfactorial digit vector is normalized when its final digit is nonzero.
-The empty vector is normalized vacuously and is the canonical representation of zero.
+**Normalized hyperfactorial digit vectors.** A vector $(h_1, \dots, h_k)$ of natural numbers
+is normalized when either $k = 0$ or its last entry $h_k$ is nonzero. In particular the empty
+vector is normalized; it is the canonical representation of zero.
 
 ## Depends on
 

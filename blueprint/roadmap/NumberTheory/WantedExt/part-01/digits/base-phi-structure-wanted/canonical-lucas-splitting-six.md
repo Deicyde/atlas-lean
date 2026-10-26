@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.canonicalLucasSplitting_six
 ---
 
-# Canonical Lucas Splitting six
+# Canonical splitting of the sixth Lucas interval
 
-`Λ_6 = [Λ_4 + L_5] ∪ [Λ_3 + L_6] ∪ [Λ_4 + L_6]`, with `L_5 = 11`, `L_6 = 18`.
+**Canonical splitting of the sixth Lucas interval.** The canonical splitting of the Lucas
+interval $\Lambda_6$ is the list $[(4, 11), (3, 18), (4, 18)]$.
+
+The pairs stand for the translates $\Lambda_4 + L_5$, $\Lambda_3 + L_6$ and $\Lambda_4 + L_6$,
+where $L_5 = 11$ and $L_6 = 18$ are Lucas numbers.
 
 ## Depends on
 
-- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
+- [Canonical splitting of a Lucas interval](canonical-lucas-splitting.md)
 
 ## Sources
 

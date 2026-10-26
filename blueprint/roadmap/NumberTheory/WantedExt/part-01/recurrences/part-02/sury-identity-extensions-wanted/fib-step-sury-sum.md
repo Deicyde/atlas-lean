@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_sury_sum
 ---
 
-# Theorem 3
+# Step extension of Sury's identity for Fibonacci numbers
 
-**Theorem 3**: the `j`-step Fibonacci identity.  The term
-`F_{j(n-1)}` uses Mathlib's signed Fibonacci extension when `n = 0`.
+**Step extension of Sury's identity for Fibonacci numbers.** Let $F_n$ and $L_n$ be the
+Fibonacci and Lucas numbers at integer indices. For all natural numbers $j \ge 1$ and $n$,
+
+$$L_j^{n+1} F_{j(n-1)} + (-1)^{j(n+1)} F_{2j} = \sum_{i=0}^{n} (-1)^{j(n+i)} L_j^i F_{ji}.$$
+
+When $n = 0$ the index $j(n-1) = -j$ is negative, so $F_{-j} = (-1)^{j+1} F_j$ enters.
 
 ## Depends on
 
-- [Fib At Int](fib-at-int.md)
-- [Lucas At Int](lucas-at-int.md)
+- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Lucas numbers at integer indices](lucas-at-int.md)
 
 ## Sources
 

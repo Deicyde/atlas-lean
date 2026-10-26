@@ -17,7 +17,7 @@ lean: MetaMathlibExt.bronzeCompanionFirst_add_two
 ## Proof depends on
 
 - [Bronze Lucas Params](bronze-lucas-params.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 - [Lucas U bronze Lucas Params add two](lucas-u-bronze-lucas-params-add-two.md)
 
 ## Sources

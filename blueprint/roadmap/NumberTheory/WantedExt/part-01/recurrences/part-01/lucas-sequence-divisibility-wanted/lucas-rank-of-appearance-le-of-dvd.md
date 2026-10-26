@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.lucasRankOfAppearance_le_of_dvd
 ---
 
-# Lucas Rank Of Appearance le of dvd
+# Rank of appearance is at most any positive index of divisibility
 
-`ρ(m) ≤ r` whenever `0 < r` and `m ∣ U_r`.
+**Rank of appearance is at most any positive index of divisibility.** Let $P, Q$ be integers
+with $Q \neq 0$, let $U = U(P, Q)$ be the Lucas sequence, and write $\rho(m)$ for the rank of
+appearance of a natural number $m$ in $U$. If $r > 0$ and $m \mid U_r$, then $\rho(m) \le r$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

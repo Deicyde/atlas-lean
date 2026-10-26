@@ -7,8 +7,8 @@ lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.HasPropertyPStar
 
 # Has Property PStar
 
-The property `P*`: `n` divides the decimal reversal
-of every multiple of `n`.
+**Property $P^*$.** A natural number $n$ has property $P^*$ if $n$ divides the decimal
+reversal of every multiple of $n$.
 
 ## Depends on
 

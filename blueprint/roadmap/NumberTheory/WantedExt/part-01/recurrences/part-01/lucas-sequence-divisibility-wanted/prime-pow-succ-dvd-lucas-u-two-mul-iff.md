@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.prime_pow_succ_dvd_lucasU_two_mul_iff
 ---
 
-# Prime pow succ dvd lucas U two mul iff
+# When $p^{i+1}$ divides $U_{2n}$, for a prime power $p^i$ exactly dividing $P$
 
-Let `gcd(P, Q) = 1` and let `p` be a prime with `p^i ∥ P`, `i ≥ 1`. Then for every
-positive `n`, `p^{i+1} ∣ U_{2n}` if and only if `p ∣ n`.
+**When $p^{i+1}$ divides $U_{2n}$, for a prime power $p^i$ exactly dividing $P$.** Let $P$ and
+$Q$ be coprime integers with $Q \ne 0$, and let $U_n$ be the Lucas sequence $U(P, Q)$. Let $p$ be
+a prime and $i \ge 1$ such that $p^i \mid P$ and $p^{i+1} \nmid P$. Then for every positive
+integer $n$, $p^{i+1} \mid U_{2n}$ if and only if $p \mid n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciPolyGenFun_mem_intPoly_iff
 ---
 
-# Fibonacci Poly Gen Fun mem int Poly iff
+# Integer-polynomial values of the Fibonacci polynomial generating function
 
-Theorem 1.2: if `b ∣ a` and `q(x) ∈ ℚ(x)`, then `f(x, q(x)) ∈ ℤ[x]` if and only if
-`q(x) = F_i(x) / F_{i+1}(x)` for some `i ∈ ℕ` or `q(x) = -F_{i+1}(x) / (b F_i(x))` for some
-`i ≥ 1`.
+**Integer-polynomial values of the Fibonacci polynomial generating function.** Let $a$ and $b$
+be positive integers with $b \mid a$, let $F_i(x) \in \mathbb{Z}[x]$ be the polynomials with
+$F_0 = 0$, $F_1 = 1$ and $F_{i+2} = ax\,F_{i+1} + b\,F_i$ for all $i \ge 0$, and let
+$f(x, t) = t / (1 - axt - bt^2)$. For a rational function $q(x) \in \mathbb{Q}(x)$, the rational
+function $f(x, q(x))$ is a polynomial with integer coefficients if and only if
+$q(x) = F_i(x) / F_{i+1}(x)$ for some $i \in \mathbb{N}$ or
+$q(x) = -F_{i+1}(x) / (b F_i(x))$ for some $i \ge 1$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

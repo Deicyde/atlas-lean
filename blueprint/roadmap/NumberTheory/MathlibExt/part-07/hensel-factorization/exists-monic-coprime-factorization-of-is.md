@@ -7,15 +7,17 @@ proof: formalized
 lean: Polynomial.exists_monic_coprime_factorization_of_isAdicComplete
 ---
 
-# Exists monic coprime factorization of is Adic Complete
+# Hensel lifting of monic coprime factorizations
 
-Standard monic Hensel factor lifting, generic in the ideal.
+**Hensel lifting of monic coprime factorizations.** Let $A$ be a commutative ring and $I$ an
+ideal of $A$ such that $A$ is $I$-adically complete, and let $f \in A[X]$ be monic. Suppose the
+reduction of $f$ modulo $I$ equals $\bar g \bar h$, where $\bar g, \bar h \in (A/I)[X]$ are monic
+and coprime (that is, $a \bar g + b \bar h = 1$ for some $a, b \in (A/I)[X]$). Then there exist
+monic $g, h \in A[X]$ with $f = gh$ whose reductions modulo $I$ are $\bar g$ and $\bar h$
+respectively.
 
-If `A` is `I`-adically complete and a monic polynomial `f` reduces modulo `I`
-to a product of monic coprime polynomials, the factorization lifts to `A`.
-The proof packages the residue factorization via the universal coprime
-factorization ring, lifts its structure map through `I`-adic completeness,
-and evaluates the universal factors over `A`.
+The proof packages the residue factorization via the universal coprime factorization ring, lifts
+its structure map through $I$-adic completeness, and evaluates the universal factors over $A$.
 
 ## Depends on
 

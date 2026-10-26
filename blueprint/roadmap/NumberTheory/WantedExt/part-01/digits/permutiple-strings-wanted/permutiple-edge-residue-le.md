@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.permutiple_edge_residue_le
 ---
 
-# Permutiple edge residue le
+# Edge condition for permutiples
 
-Edge condition: for an `(n, b, σ)`-permutiple, every edge `(d_j, d_{σ(j)})` of its graph
-satisfies `λ(d_j + (b - n) d_{σ(j)}) ≤ n - 1`, where `λ` is the least non-negative residue
-modulo `b` (computed in `ℤ`). The multiplier is positive (`1 ≤ n`): for `n = 0` the only
-permutiples have all digits zero and the bound would read `0 ≤ -1`. This is the case
-`π = 1`, `τ = σ` of `permutiple_basePerm_residue_le`.
+**Edge condition for permutiples.** Let $n \ge 1$, $b$ and $k$ be natural numbers, let $\sigma$
+be a permutation of $\{0, \dots, k\}$ and let $(d_k, \dots, d_0)_b$ be an
+$(n, b, \sigma)$-permutiple, that is, $d_i < b$ for all $i$ and
+$(d_k, \dots, d_0)_b = n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$. Then for every
+$0 \le j \le k$, $\lambda(d_j + (b - n) d_{\sigma(j)}) \le n - 1$, where $\lambda$ is the least
+non-negative residue modulo $b$ and $b - n$ is computed in the integers, so it may be negative.
+
+The hypothesis $n \ge 1$ is needed: for $n = 0$ the only permutiples have all digits zero and the
+bound would read $0 \le -1$.
 
 ## Depends on
 
-- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
+- [Permutiples with a given digit permutation](../permutiple-wanted/is-permutiple.md)
 
 ## Sources
 

@@ -6,16 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.summatory_moebius_div_bound
 ---
 
-# Explicit Mertens Bound Wanted
+# Explicit bounds for the summatory function of $\mu(n)/n$
 
-Explicit Mertens-type bounds for the summatory Möbius-over-`n` function:
-`|∑_{n ≤ x} μ(n)/n| < 0.19/log x` for `x ≥ 33` and `< 546/(log x)^2`
-for `x > 1`.
+**Explicit bounds for the summatory function of $\mu(n)/n$.** Let $\mu$ be the Möbius function.
+For every real $x \ge 33$,
 
-The sum ranges over `Finset.Icc 1 ⌊x⌋₊`, i.e. `n ≤ x`. These bounds
-improve the author's equation (e4) (`0.2185/log x` and `726/(log x)^2`).
-Spot-checked against exact partial sums at `N = 33, 40, 50, 100, 200, 500`,
-all satisfying both bounds (tightest at `N = 40`: `0.0505 < 0.0515`).
+$$\Bigl| \sum_{1 \le n \le x} \frac{\mu(n)}{n} \Bigr| < \frac{0.19}{\log x},$$
+
+and for every real $x > 1$,
+
+$$\Bigl| \sum_{1 \le n \le x} \frac{\mu(n)}{n} \Bigr| < \frac{546}{(\log x)^2}.$$
+
+These bounds improve the estimates $0.2185/\log x$ and $726/(\log x)^2$ of the source's
+equation (e4).
 
 ## Depends on
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.parallelogram_multiplicative_two_pow
 ---
 
-# Parallelogram multiplicative two pow
+# Values of a parallelogram-equation multiplicative function at powers of two
 
-Theorem 3: for `f` multiplicative with `f (m² + n²) + f (m² - n²) = 2 f (m²) + 2 f (n²)`
-(`m > n ≥ 1`), if `f 4 = 0` then `f (2^r) = 0` for `r ≥ 2`; otherwise `f (2^r) = 2^{2r}` for
-`r ≥ 1`.
+**Values of a parallelogram-equation multiplicative function at powers of two.** Let $f$ be
+a complex-valued multiplicative arithmetic function such that
+$f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers $m > n \ge 1$. If $f(4) = 0$,
+then $f(2^r) = 0$ for every integer $r \ge 2$. If $f(4) \ne 0$, then $f(2^r) = 2^{2r}$ for every
+integer $r \ge 1$.
 
 ## Depends on
 

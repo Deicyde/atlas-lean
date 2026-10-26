@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_bernoulliIntegralDerivativeIndices_one
 ---
 
-# One mem bernoulli Integral Derivative Indices one
+# The derivative of $B_1(x)$ has integer coefficients
 
-`B_1'(x) = 1 ∈ ℤ[x]`, so `1 ∈ \overline{𝒮}`.
+**The derivative of $B_1(x)$ has integer coefficients.** The Bernoulli polynomial
+$B_1(x) = x - \tfrac{1}{2}$ has derivative $B_1'(x) = 1 \in \mathbb{Z}[x]$, so $1$ belongs to
+the set $\overline{\mathcal{S}}$ of indices $n \ge 1$ for which $B_n'(x)$ has only integer
+coefficients.
 
 ## Depends on
 
-- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
+- [Indices of Bernoulli polynomials with integral $k$-th derivative](bernoulli-integral-derivative-indices.md)
 
 ## Proof depends on
 

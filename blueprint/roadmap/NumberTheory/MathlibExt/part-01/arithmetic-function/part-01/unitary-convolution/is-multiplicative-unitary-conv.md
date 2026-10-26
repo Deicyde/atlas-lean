@@ -22,7 +22,7 @@ with $d$ running over the unitary divisors of $n$, is multiplicative.
 - [Unitary convolution at $1$](unitary-conv-one.md)
 - [Gcd with a coprime factor preserves unitary divisors](gcd-mem-unitary-divisors-of-mem-mul.md)
 - [Products of unitary divisors of coprime numbers](mul-mem-unitary-divisors-mul.md)
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.IsZeckendorfCollection.zero_mem
 ---
 
-# Zero mem
+# Zeckendorf collections contain zero
 
-A Zeckendorf collection contains the zero coefficient function.
+**Zeckendorf collections contain zero.** Every Zeckendorf collection $E$ of finitely supported
+coefficient functions $\mathbb N \to \mathbb N$ contains the zero coefficient function.
 
 ## Depends on
 
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
 
 ## Proof depends on
 
-- [Asc Lex LT](asc-lex-lt.md)
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Immediate Successor](is-immediate-successor.md)
+- [Ascending lexicographic order](asc-lex-lt.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Immediate successor](is-immediate-successor.md)
 
 ## Sources
 

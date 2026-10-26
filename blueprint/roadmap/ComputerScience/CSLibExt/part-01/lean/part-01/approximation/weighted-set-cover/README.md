@@ -5,7 +5,7 @@ navigation: module
 # Weighted Set Cover
 
 - [Set with the least cost per new element](best-ratio-set.md)
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+- [Weighted greedy set cover](weighted-greedy-set-cover.md)
 
 ## The result is a cover from the family
 

@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_nine_term_arithmetic_progression_binary_quadratic
 ---
 
-# Exists nine term arithmetic progression binary quadratic
+# Binary quadratic forms with non-square discriminant represent nine-term progressions
 
-Choudhry's Theorem 2: every integral binary quadratic form
-whose discriminant is not a perfect square represents a
-nine-term arithmetic progression with nonzero common difference.
+**Binary quadratic forms with non-square discriminant represent nine-term progressions.**
+Let $a, b, c$ be integers such that the discriminant $b^2 - 4ac$ is not a perfect square. Then
+there are integers $u_0$ and $d \ne 0$ such that for every natural number $i < 9$ there are
+integers $x, y$ with $u_0 + id = ax^2 + bxy + cy^2$.
 
-The nonzero-difference clause records the intended parametric
-construction and excludes the constant zero progression.
+The condition $d \ne 0$ excludes constant progressions.
 
 ## Depends on
 

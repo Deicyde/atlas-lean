@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_sq_triangular_additive_sq
 ---
 
-# Multiplicative sq triangular additive sq
+# Square–triangular additivity fixes small squares
 
-Let `f` be multiplicative with `f (u² + t_v) = f (u²) + f (t_v)` for all positive
-`u, v`. If `N ≥ 3` and `f n = n` for `1 ≤ n ≤ N - 1`, then `f (m²) = m²` for every `m` with
-`1 ≤ m ≤ N - 2`.
+**Square–triangular additivity fixes small squares.** Let $t_v = v(v + 1)/2$ denote the
+$v$-th triangular number, and let $f$ be a complex-valued multiplicative arithmetic function
+with $f(u^2 + t_v) = f(u^2) + f(t_v)$ for all positive integers $u$ and $v$. Let $N \ge 3$ be an
+integer such that $f(n) = n$ for every integer $n$ with $1 \le n \le N - 1$. Then
+$f(m^2) = m^2$ for every integer $m$ with $1 \le m \le N - 2$.
 
 ## Depends on
 

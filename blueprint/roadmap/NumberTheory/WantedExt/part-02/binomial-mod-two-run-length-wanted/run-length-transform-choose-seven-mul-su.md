@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_seven_mul_sub_padovan_five
 ---
 
-# Theorem 12
+# Rampersad–Wiebe Theorem 12
 
-**Theorem 12.** The sum `T(n) = ∑_{k=0}^{n} [`binom(-n + 7k, n + k)` binom(n, k) mod 2]` is the run length transform
-of the Padovan numbers (OEIS A000931) from offset `5`, i.e. `1, 1, 1, 2, 2, 3, 4, 5, …` (`shiftedPadovanSequence (i + 2)`). The top entry is negative for small `k`; there the paper's convention `binom(a, b) = 0` for `a < b` agrees with truncated subtraction, since the bottom entry `n + k` is positive whenever the top entry is truncated.
+**Rampersad–Wiebe Theorem 12.** Let $(p_j)_{j \ge 0}$ be the shifted Padovan sequence,
+$p_0 = 1$, $p_1 = 0$, $p_2 = 1$ and $p_{j+3} = p_{j+1} + p_j$, and let $T$ be the run length
+transform of $S(i) = p_{i+2}$, i.e. of $1, 1, 1, 2, 2, 3, 4, 5, \dots$ (the Padovan numbers,
+OEIS A000931, from offset $5$). Then for every natural number $n$,
+$\sum_{k=0}^{n} \left(\binom{7k - n}{n + k} \binom{n}{k} \bmod 2\right) = T(n)$, where a binomial
+coefficient $\binom{a}{b}$ with $a < 0$ is $0$.
+
+Equivalently, a negative top entry $7k - n$ may be replaced by $0$, since the bottom entry $n + k$
+is then positive.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
-- [Shifted Padovan Sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
+- [Run length transform](run-length-transform.md)
+- [Shifted Padovan sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

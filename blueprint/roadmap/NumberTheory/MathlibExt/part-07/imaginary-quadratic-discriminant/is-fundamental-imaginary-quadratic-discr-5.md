@@ -6,15 +6,15 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isFundamentalImaginaryQuadraticDiscriminant_isImaginary
 ---
 
-# Is Fundamental Imaginary Quadratic Discriminant is Imaginary
+# Fundamental imaginary quadratic discriminants are imaginary quadratic discriminants
 
-Every fundamental imaginary quadratic discriminant is an imaginary quadratic
-discriminant.
+**Fundamental imaginary quadratic discriminants are imaginary quadratic discriminants.**
+Every fundamental imaginary quadratic discriminant is an imaginary quadratic discriminant.
 
 ## Depends on
 
-- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Fundamental imaginary quadratic discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Proof depends on
 

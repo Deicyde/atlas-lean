@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isMotherGraphEdge_two_four
 ---
 
-# Is Mother Graph Edge two four
+# An edge and a non-edge of the $(2, 4)$-mother graph
 
-Characteristic values: in the `(2, 4)`-mother graph, `(0, 2)` is an edge
-(`λ(0 + 2·2) = 0`) and `(0, 1)` is not (`λ(0 + 2·1) = 2 > 1`).
+**An edge and a non-edge of the $(2, 4)$-mother graph.** In the $(2, 4)$-mother graph, the
+pair $(0, 2)$ is an edge, since $\lambda(0 + (4 - 2) \cdot 2) = \lambda(4) = 0 \le 1$, and the
+pair $(0, 1)$ is not an edge, since $\lambda(0 + (4 - 2) \cdot 1) = \lambda(2) = 2 > 1$, where
+$\lambda$ is the least non-negative residue modulo $4$.
 
 ## Depends on
 
-- [Is Mother Graph Edge](is-mother-graph-edge.md)
+- [Edges of the mother graph](is-mother-graph-edge.md)
 
 ## Sources
 

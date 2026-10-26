@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_add_two_mul_one_two
 ---
 
-# Theorem 5
+# Sum of $\binom{n+2k}{2k}\binom{n}{k} \bmod 2$ as a run length transform
 
-**Theorem 5.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n + 2k, 2k)` binom(n, k) mod 2]` is the run length transform
-of `1, 2, 2, 2, …`, the sequence of `2`s prepended with a `1`.
+**Sum of $\binom{n+2k}{2k}\binom{n}{k} \bmod 2$ as a run length transform.** For every
+natural number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+2k}{2k}\binom{n}{k} \bmod 2\bigr)$
+equals the value at $n$ of the run length transform of the sequence $S$ with $S(0) = 1$ and
+$S(i) = 2$ for $i \ge 1$, that is, $1, 2, 2, 2, \dots$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

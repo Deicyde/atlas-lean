@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.nStepFibonacci_zero
 ---
 
-# N Step Fibonacci zero
+# Zeroth N-step Fibonacci number
 
-`F^{(N)}_0 = 0`.
+**Zeroth N-step Fibonacci number.** For every natural number $N$, the $N$-step Fibonacci
+number $F^{(N)}_0$ equals $0$.
 
 ## Depends on
 
-- [N Step Fibonacci](n-step-fibonacci.md)
+- [N-step Fibonacci numbers](n-step-fibonacci.md)
 
 ## Sources
 

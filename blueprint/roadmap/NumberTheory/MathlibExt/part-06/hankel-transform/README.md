@@ -5,5 +5,5 @@ navigation: module
 
 # Hankel Transform
 
-- [Hankel Transform](hankel-transform.md)
-- [Has Jacobi Fraction](has-jacobi-fraction.md)
+- [Hankel transform](hankel-transform.md)
+- [Jacobi continued fraction expansion](has-jacobi-fraction.md)

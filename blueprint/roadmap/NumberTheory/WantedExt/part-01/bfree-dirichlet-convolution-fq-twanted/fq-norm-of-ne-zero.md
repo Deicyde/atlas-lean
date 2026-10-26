@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fqNorm_of_ne_zero
 ---
 
-# Fq Norm of ne zero
+# The norm of a nonzero polynomial
 
-For `f ≠ 0`, `|f| = q ^ deg f`.
+**The norm of a nonzero polynomial.** Let $F$ be a finite field with $q$ elements. For every
+nonzero $f \in F[T]$, the norm of $f$ is $|f| = q^{\deg f}$.
 
 ## Depends on
 
-- [Fq Norm](fq-norm.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
 
 ## Sources
 

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.gfp_lucas_eq_sum_choose
 ---
 
-# Gfp lucas eq sum choose
+# Explicit formula for Lucas-type generalized Fibonacci polynomials
 
-Lemma 3.1 (2) (quoted from Flórez and Saunders): for `n ≥ 1`, the Lucas-type GFP satisfies
-`α L_n = ∑_{i=0}^{⌊n/2⌋} (n/(n-i)) C(n-i, i) d^{n-2i} g^i`. The integer `n/(n-i) · C(n-i, i)`
-is written as an exact `ℕ` quotient.
+**Explicit formula for Lucas-type generalized Fibonacci polynomials.** Let $\alpha$ and $p_0$
+be integers with $\alpha p_0 = 2$, let $p_1$ and $g$ be polynomials with integer coefficients, and
+put $d = \alpha p_1$. Let $L_n$ be the generalized Fibonacci polynomials defined by $L_0 = p_0$,
+$L_1 = p_1$ and $L_{n+2} = d L_{n+1} + g L_n$. Then for every $n \ge 1$, writing
+$c_i = \lfloor n \binom{n-i}{i} / (n-i) \rfloor$,
+
+$$\alpha L_n = \sum_{i=0}^{\lfloor n/2 \rfloor} c_i \, d^{n-2i} g^i.$$
+
+The quotient $n \binom{n-i}{i} / (n-i)$ is always an integer, so the floor does not change it;
+the source writes the coefficient as $\frac{n}{n-i} \binom{n-i}{i}$ and quotes the formula from
+Flórez and Saunders.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

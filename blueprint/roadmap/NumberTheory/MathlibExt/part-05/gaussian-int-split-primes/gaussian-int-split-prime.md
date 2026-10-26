@@ -6,9 +6,11 @@ proof: formalized
 lean: GaussianInt.gaussianInt_split_prime
 ---
 
-# Gaussian Int split prime
+# Primes congruent to 1 mod 4 split in the Gaussian integers
 
-A prime `p ≡ 1 mod 4` splits: some Gaussian prime has norm `p`.
+**Primes congruent to 1 mod 4 split in the Gaussian integers.** Let $p$ be a prime with
+$p \equiv 1 \pmod 4$. Then there is a prime element $\pi = a + bi$ of $\mathbb{Z}[i]$ whose norm
+$N(\pi) = a^2 + b^2$ equals $p$.
 
 ## Depends on
 

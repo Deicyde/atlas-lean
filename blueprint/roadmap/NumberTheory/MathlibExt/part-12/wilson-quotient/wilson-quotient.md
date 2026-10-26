@@ -5,14 +5,13 @@ statement: formalized
 lean: Int.wilsonQuotient
 ---
 
-# Wilson Quotient
+# Wilson quotient
 
-Wilson quotient `W(p) = ((p-1)! + 1) / p` as an integer.
+**Wilson quotient.** For a natural number $p$, the Wilson quotient is the integer
+$W(p) = \lfloor ((p-1)! + 1) / p \rfloor$ for $p \ge 1$, and $W(0) = 0$.
 
-For a prime `p` the quotient is integral by Wilson's theorem `p ∣ (p-1)! + 1`
-(`ZMod.wilsons_lemma`). The definition is total on `ℕ`; the source domain
-"odd prime" from Matsuno 2607.10106, ll. 44–51 is imposed as hypotheses where
-needed in the lemmas, not in the type of the definition.
+For a prime $p$, Wilson's theorem $p \mid (p-1)! + 1$ makes the division exact. The definition is
+total on $\mathbb{N}$; the source defines $W_p$ only for odd primes $p$.
 
 ## Depends on
 
@@ -21,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.WilsonQuotient](../../../../../sources/v2/MathlibExt.md)
+- Y. Matsuno, *A resolution of Kellner's conjectures on Wilson quotients*, arXiv:2607.10106v1, lines 44–51.

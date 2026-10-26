@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsDCarmichael
 ---
 
-# Is DCarmichael
+# $D$-Carmichael number
 
-Williams' absolute Lucas `D`-pseudoprime, called a `D`-Carmichael number in the paper: for
-a discriminant `D ≡ 0, 1 (mod 4)` (the paper's standing assumption; for other `D` no Lucas
-sequence has discriminant `D`, so the last clause would be vacuous), an odd composite integer
-`n`, prime to `D`, such that `n ∣ U_{n - εₙ}(P, Q)` with `εₙ = (D | n)`
-for every Lucas sequence `U(P, Q)` with coprime parameters, discriminant `P² - 4Q = D` and `Q`
-prime to `n`.
+**$D$-Carmichael number.** Let $D$ be an integer. A natural number $n$ is a $D$-Carmichael
+number when $D \equiv 0$ or $1 \pmod 4$, $n > 1$ is odd and composite, $D$ and $n$ are coprime,
+and for all integers $P$ and $Q \ne 0$ with $P$ and $Q$ coprime, $P^2 - 4Q = D$ and $Q$ coprime
+to $n$, the number $n$ divides the term $U_{n - \varepsilon_n}(P, Q)$ of the Lucas sequence
+$U(P, Q)$, where $\varepsilon_n = \left(\frac{D}{n}\right)$ is the Jacobi symbol.
+
+These are Williams' absolute Lucas $D$-pseudoprimes. The condition on $D$ is the paper's standing
+assumption; for other $D$ no Lucas sequence has discriminant $D$, so the last clause would be
+vacuous.
 
 ## Depends on
 
@@ -20,9 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Is Coprime](../../../MathlibExt/part-08/lucas-sequence/is-coprime.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Coprime Lucas sequence parameters](../../../MathlibExt/part-08/lucas-sequence/is-coprime.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

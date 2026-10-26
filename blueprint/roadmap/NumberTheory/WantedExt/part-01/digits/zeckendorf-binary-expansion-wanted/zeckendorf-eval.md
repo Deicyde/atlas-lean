@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfEval
 ---
 
-# Zeckendorf Eval
+# Evaluation of a coefficient function at an integer sequence
 
-Evaluation `eval_H(ε) = ∑_k ε_k H_k` of a coefficient function at a sequence `H`.
+**Evaluation of a coefficient function at an integer sequence.** For a sequence $H$ of
+natural numbers and a finitely supported coefficient function
+$\varepsilon \colon \mathbb{N} \to \mathbb{N}$, the evaluation of $\varepsilon$ at $H$ is the
+natural number $\mathrm{eval}_H(\varepsilon) = \sum_{k \ge 0} \varepsilon_k H_k$.
 
 ## Depends on
 

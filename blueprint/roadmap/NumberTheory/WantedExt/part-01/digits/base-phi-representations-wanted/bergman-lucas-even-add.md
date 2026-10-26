@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bergman_lucas_even_add
 ---
 
-# Bergman lucas even add
+# Bergman expansion of $L_{2n} + k$
 
-Recursive structure theorem, part I: for `n ≥ 1` and `0 ≤ k ≤ L_{2n-1}`,
-`β(L_{2n} + k) = β(L_{2n}) + β(k) = 10⋯0 β(k) 0⋯01`, where
-`β(L_{2n}) = 10^{2n}.0^{2n-1}1` has digits `1` at positions `2n` and `-2n`.
+**Bergman expansion of $L_{2n} + k$.** Let $n \ge 1$ and let $k$ be a natural number with
+$k \le L_{2n-1}$, where $L_m$ is the $m$-th Lucas number. Let $S$ and $T$ be finite sets of
+integers, each with no two consecutive elements (Bergman expansions), whose base phi values are
+$k$ and $L_{2n} + k$ respectively. Then $2n \notin S$, $-2n \notin S$, and
+$T = S \cup \{2n, -2n\}$.
 
 ## Depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Base Phi Value](base-phi-value.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

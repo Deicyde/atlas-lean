@@ -27,7 +27,7 @@ $(n+1) c_{n+1} = (2n+1) c_n + 3n c_{n-1}$ (OEIS A002426); both sides agree at $n
 
 ## Depends on
 
-- [Trinomial Coefficient](../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Proof depends on
 

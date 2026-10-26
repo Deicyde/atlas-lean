@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayM_row_one
 ---
 
-# Circuit Array M row one
+# Row 1 of the multivariable circuit array
 
-Corollary 4.10: `C^M₁,ₛ = (9^{s-1} - 1 + X₁)/(3(X₁ + 3·9^{s-2} - 1))` for `s ≥ 2`.
+**Row 1 of the multivariable circuit array.** Let $C^M$ be the multivariable circuit array, with
+values in the field of rational functions over $\mathbb{Q}$ in the variables $X_0, X_1, \dots$.
+For every integer $s \ge 2$,
+$C^M_{1,s} = (9^{s-1} - 1 + X_1)/\bigl(3(X_1 + 3 \cdot 9^{s-2} - 1)\bigr)$.
 
 ## Depends on
 
-- [Circuit Array M](circuit-array-m.md)
-- [Circuit Var](circuit-var.md)
+- [Multivariable circuit array](circuit-array-m.md)
+- [Variables of the multivariable circuit array](circuit-var.md)
 
 ## Sources
 

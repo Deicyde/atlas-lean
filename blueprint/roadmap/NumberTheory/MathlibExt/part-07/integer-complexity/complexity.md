@@ -6,11 +6,11 @@ statement: formalized
 lean: IntegerComplexity.complexity
 ---
 
-# Complexity
+# Integer complexity
 
-Integer complexity: least number of ones needed to express `n`
-   using `1`, `+`, `*` and parentheses. Source C4.
-   Implemented via Nat.find on proved existential predicate.
+**Integer complexity.** The integer complexity of a positive integer $n$ is the least
+number of ones in an expression whose value is $n$, that is, the least number of ones needed
+to write $n$ using $1$, $+$, $\times$ and parentheses.
 
 ## Depends on
 
@@ -18,12 +18,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Expr](expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
-- [Pred](pred.md)
-- [Exists expr of pos](exists-expr-of-pos.md)
+- [Expressions built from one, addition and multiplication](expr.md)
+- [Number of ones in an expression](count.md)
+- [Value of an expression](eval.md)
+- [Achievable numbers of ones](pred.md)
+- [Every positive integer is the value of an expression](exists-expr-of-pos.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IntegerComplexity](../../../../../sources/v2/MathlibExt.md)
+- C4. Implemented via Nat.find on proved existential predicate.

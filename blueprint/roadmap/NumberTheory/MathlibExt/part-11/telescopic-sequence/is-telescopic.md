@@ -6,17 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.IsTelescopic
 ---
 
-# Is Telescopic
+# Telescopic sequences
 
-`G ∈ ℕ₀^k` is telescopic when `k ≥ 2`, `g₁ + g₂ > 0`, and
-`c_j * g_j ∈ ⟨G_{j-1}⟩` for `2 ≤ j ≤ k`.
-
-Here `G.getD (j - 1) 0` is `g_j` (the `j`-th entry, `1`-indexed) and
-`{x | x ∈ G.take (j - 1)}` is the set of the first `j - 1` entries generating
-`⟨G_{j-1}⟩` as an additive submonoid. Source identifiers:
-`jis_480413725b64a0d49eabe98d`, `jis_5da42b058565b53729b9afa2`,
-`jis_a68226f2d394da5aef17cdad`, `jis_ce7ca3b188a2135cbe5b0077`,
-`jis_e21a41021ffe77e39d11f0e2`.
+**Telescopic sequences.** Let $G = (g_1, \dots, g_k)$ be a finite sequence of natural numbers.
+For $0 \le i \le k$ let $d_i$ be the greatest common divisor of $g_1, \dots, g_i$, with $d_0 = 0$,
+and for $1 \le j \le k$ let $c_j = d_{j-1} / d_j$ be the successive gcd quotient, taken to be $0$
+when $d_j = 0$. The sequence $G$ is telescopic when $k \ge 2$, $g_1 + g_2 > 0$, and for every $j$
+with $2 \le j \le k$ the number $c_j g_j$ lies in the additive submonoid of $\mathbb{N}$ generated
+by $g_1, \dots, g_{j-1}$.
 
 ## Depends on
 
@@ -24,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Telescopic C](telescopic-c.md)
+- [Successive gcd quotients](telescopic-c.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TelescopicSequence](../../../../../sources/v2/MathlibExt.md)
+- JIS statements `jis_480413725b64a0d49eabe98d`, `jis_5da42b058565b53729b9afa2`, `jis_a68226f2d394da5aef17cdad`, `jis_ce7ca3b188a2135cbe5b0077`, `jis_e21a41021ffe77e39d11f0e2`.

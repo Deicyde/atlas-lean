@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.factorialProductComparison_one
 ---
 
-# Factorial Product Comparison one
+# Value of the factorial-product comparison function at $1$
 
-`P_k(1) = k^k (2πk/e)^{1/2}`.
+**Value of the factorial-product comparison function at $1$.** For every natural number
+$k$, the factorial-product comparison function $P_k$ satisfies $P_k(1) = k^k (2\pi k/e)^{1/2}$.
 
 ## Depends on
 
-- [Factorial Product Comparison](factorial-product-comparison.md)
+- [Comparison function for products of factorials](factorial-product-comparison.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digitCount
 ---
 
-# Digit Count
+# Digit count
 
-`digitCount b d n` is the number of occurrences of `d` in the minimal
-base-`b` representation of `n`; `Nat.digits b 0 = []`, so zero has length and
-digit count zero. Source: Jean-François Burnol, *Measures for the Summation of
-Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
+**Digit count.** For natural numbers $b$, $d$ and $n$, the digit count of $d$ in $n$ is the
+number of occurrences of the digit $d$ in the minimal base-$b$ representation of $n$ (its base-$b$
+digits without leading zeros). The representation of $0$ is empty, so $0$ has digit count $0$.
+
+For the degenerate bases, the representation of $n \ne 0$ is the single digit $n$ when $b = 0$
+and a string of $n$ ones when $b = 1$.
 
 ## Depends on
 
@@ -19,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.

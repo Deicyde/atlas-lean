@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.floor_ceil_div_add_half
 ---
 
-# Floor ceil div add half
+# Floor and ceiling of a quotient plus one half
 
-Lemma 8: for `q ∈ ℤ` and `m ∈ ℕ` positive, `⌊q/m + 1/2⌋ = ⌊(q + ⌊m/2⌋)/m⌋` and
-`⌈q/m + 1/2⌉ = ⌈(q + ⌈m/2⌉)/m⌉`, with `⌊m/2⌋ = m / 2` and `⌈m/2⌉ = (m + 1) / 2` in `ℕ`. The
-record's brackets are garbled; the bracket types are taken from the paper's statement and proof.
-The ceiling identity fails at `m = 0` (`⌈1/2⌉ = 1`), so `0 < m` is kept.
+**Floor and ceiling of a quotient plus one half.** For every integer $q$ and every positive
+integer $m$, $\lfloor q/m + 1/2 \rfloor = \lfloor (q + \lfloor m/2 \rfloor)/m \rfloor$ and
+$\lceil q/m + 1/2 \rceil = \lceil (q + \lceil m/2 \rceil)/m \rceil$.
 
 ## Depends on
 

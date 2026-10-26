@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mul_dvd_prod_sub_sign_iff
 ---
 
-# Mul dvd prod sub sign iff
+# Ballot's Lemma 2: three divisibilities as one congruence
 
-Ballot's Lemma 2: let `ε₁, ε₂, ε₃ ∈ {±1}`, let `c₁, c₂, c₃` be positive pairwise coprime
-integers, let `g ≠ 0`, and put `n = (c₁ g + ε₁)(c₂ g + ε₂)(c₃ g + ε₃)` and
-`εₙ = ε₁ ε₂ ε₃`. Then `cᵢ g ∣ n - εₙ` for `i = 1, 2, 3` if and only if
-`g (ε₃ c₁ c₂ + ε₂ c₁ c₃ + ε₁ c₂ c₃) + εₙ (ε₁ c₁ + ε₂ c₂ + ε₃ c₃) ≡ 0 (mod c₁ c₂ c₃)`
-(the paper's congruence (9)).
+**Ballot's Lemma 2: three divisibilities as one congruence.** Let
+$\varepsilon_1, \varepsilon_2, \varepsilon_3 \in \{1, -1\}$, let $c_1, c_2, c_3$ be pairwise coprime
+positive integers, let $g \ne 0$ be an integer, and put
+$n = (c_1 g + \varepsilon_1)(c_2 g + \varepsilon_2)(c_3 g + \varepsilon_3)$ and
+$\varepsilon_n = \varepsilon_1 \varepsilon_2 \varepsilon_3$. Then $c_i g \mid n - \varepsilon_n$ for
+$i = 1, 2, 3$ if and only if
+
+$$c_1 c_2 c_3 \mid g (\varepsilon_3 c_1 c_2 + \varepsilon_2 c_1 c_3 + \varepsilon_1 c_2 c_3) +
+\varepsilon_n (\varepsilon_1 c_1 + \varepsilon_2 c_2 + \varepsilon_3 c_3).$$
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.threeQR_isDCarmichael_iff
 ---
 
-# Three QR is DCarmichael iff
+# The $D$-Carmichael numbers of the form $3qr$
 
-`105, 195, 255, 399, 561, 2703` are the only numbers `3qr` (`3 < q < r` primes) that are
-`D`-Carmichael for some discriminant `D ≡ 0, 1 (mod 4)`, and each is so for only one
-signature: any two such `D`, `D'` give the same signs at `3`, `q` and `r`.
+**The $D$-Carmichael numbers of the form $3qr$.** Let $q < r$ be primes with $3 < q$. Then
+$3qr$ is a $D$-Carmichael number for some integer $D$ if and only if $3qr$ is one of $105$,
+$195$, $255$, $399$, $561$ and $2703$. Moreover, for all integers $D$ and $D'$ such that $3qr$
+is both $D$-Carmichael and $D'$-Carmichael, the Jacobi symbols agree at $3$, $q$ and $r$:
+$(D \mid 3) = (D' \mid 3)$, $(D \mid q) = (D' \mid q)$ and $(D \mid r) = (D' \mid r)$.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

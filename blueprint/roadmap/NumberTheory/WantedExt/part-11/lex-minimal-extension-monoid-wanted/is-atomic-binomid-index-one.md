@@ -16,8 +16,8 @@ The constant sequence `1^∞ = (E_1)^∞` is atomic.
 
 ## Proof depends on
 
-- [Is Binomid Index](../../part-02/binomid-index-wanted/is-binomid-index.md)
-- [Is Binomid Index const](../../part-02/binomid-index-wanted/is-binomid-index-const.md)
+- [Binomid index](../../part-02/binomid-index-wanted/is-binomid-index.md)
+- [Constant sequences are binomid indices](../../part-02/binomid-index-wanted/is-binomid-index-const.md)
 
 ## Sources
 

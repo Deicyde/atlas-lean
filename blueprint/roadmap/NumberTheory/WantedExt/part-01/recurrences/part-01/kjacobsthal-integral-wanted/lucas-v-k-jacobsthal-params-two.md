@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasV_kJacobsthalParams_two
 ---
 
-# Lucas V k Jacobsthal Params two
+# The $k$-Jacobsthal-Lucas number $j_{k,2}$
 
-`j_{k,2} = k² + 4`.
+**The $k$-Jacobsthal-Lucas number $j_{k,2}$.** For every natural number $k$, the
+$k$-Jacobsthal-Lucas numbers $j_{k,n} = V_n(k, -2)$, the Lucas sequence $V$ with parameters
+$(P, Q) = (k, -2)$, satisfy $j_{k,2} = k^2 + 4$.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

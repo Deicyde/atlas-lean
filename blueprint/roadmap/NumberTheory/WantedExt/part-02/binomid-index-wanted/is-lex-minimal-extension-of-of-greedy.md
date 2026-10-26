@@ -5,20 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isLexMinimalExtensionOf_of_greedy
 ---
 
-# Is Lex Minimal Extension Of of greedy
+# The lex-minimal extension is computed greedily
 
-Proposition 2: the lex-minimal extension of a finite binomid index is given
-greedily. If the first `m ≥ 1` entries of `f` form a finite binomid index and,
-for every `j ≥ m`, `f j` is the maximum over `1 ≤ k ≤ j` of
-`∑_{i<k} f i - ∑_{j+1-k ≤ i < j} f i` (the paper's
-`f_n = max_{1 ≤ k < n} (∑_{i=1}^k f_i - ∑_{i=n-k+1}^{n-1} f_i)` with `n = j + 1`),
-then `f` is the lex-minimal extension of its first `m` entries. The maximum is
-stated in `ℕ` as: `f j` plus the second sum dominates every first sum, with
-equality for some `k`.
+**The lex-minimal extension is computed greedily.** Let $m \ge 1$ and let
+$f = (f_1, f_2, \dots)$ be a sequence of nonnegative integers whose first $m$ entries form a
+finite binomid index, that is, $\sum_{i=n-k+1}^{n} f_i \ge \sum_{i=1}^{k} f_i$ for all
+$1 \le k \le n \le m$. Suppose that for every $n > m$ the entry $f_n$ equals the maximum,
+over $1 \le k < n$, of the integers $\sum_{i=1}^{k} f_i - \sum_{i=n-k+1}^{n-1} f_i$. Then $f$
+is the lex-minimal extension of $(f_1, \dots, f_m)$.
+
+The differences are taken in the integers and may be negative; the condition says that
+$f_n + \sum_{i=n-k+1}^{n-1} f_i \ge \sum_{i=1}^{k} f_i$ for every $1 \le k < n$, with equality
+for some such $k$.
 
 ## Depends on
 
-- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Lex-minimal extension](is-lex-minimal-extension-of.md)
 
 ## Sources
 

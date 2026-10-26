@@ -11,8 +11,8 @@ Lemma 3: `⌊f(n)⌋ = h₂(n)` for every positive integer `n`, and `f(n) = h₂
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
-- [Campbell H2](campbell-h2.md)
+- [Campbell's interpolation](campbell-f.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
 
 ## Sources
 

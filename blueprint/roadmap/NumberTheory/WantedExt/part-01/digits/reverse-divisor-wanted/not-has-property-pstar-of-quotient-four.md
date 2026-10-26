@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.not_hasPropertyPStar_of_quotient_four
 ---
 
-# Lemma 1
+# Not has Property PStar of quotient four
 
-**Lemma 1**: no reverse divisor with quotient `4`
-has the property `P*`.
+**Reverse divisors with quotient $4$ lack property $P^*$.** If $n > 0$ is a natural number
+whose decimal reversal equals $4n$, then $n$ does not have the property $P^*$.
 
 ## Depends on
 

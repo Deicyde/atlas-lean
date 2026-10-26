@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.min
 ---
 
-# Min
+# The odd greedy choice is minimal
 
-The odd greedy choice is the least admissible
-positive odd denominator.
+**The odd greedy choice is minimal.** If $d$ is the odd greedy choice at a rational number
+$r$, then $d \le e$ for every positive odd natural number $e$ with $1/e \le r$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Sources
 

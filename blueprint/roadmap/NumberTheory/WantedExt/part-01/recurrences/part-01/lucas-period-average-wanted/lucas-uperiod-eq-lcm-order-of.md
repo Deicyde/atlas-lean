@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_eq_lcm_orderOf
 ---
 
-# Lucas UPeriod eq lcm order Of
+# Wyler's theorem on the period of a Lucas sequence
 
-Theorem 3.1 (Wyler): for nondegenerate `U(a, b)` and `m ≥ 2` with `gcd(m, b) = 1`, let
-`h = ord_m(-b)`, `ρ = ρ_U(m)`, `π = π_U(m)` and `H = lcm(h, ρ)`. Then `π = H` or `π = 2 H`.
-If `m = ℓ ^ i` for an odd prime `ℓ` and `i ≥ 1`, then `π = 2 H` when the `2`-adic valuations of
-`h` and `ρ` differ, and `π = H` when they are equal and positive.
+**Wyler's theorem on the period of a Lucas sequence.** Let $U$ be the Lucas sequence with
+integer parameters $P$ and $Q$, where the pair $(P, Q)$ is nondegenerate, and write $\pi(m)$ and
+$\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Let $m \ge 2$ with
+$\gcd(m, Q) = 1$, let $h$ be the multiplicative order of $Q$ modulo $m$, and put
+$H = \operatorname{lcm}(h, \rho(m))$. Then $\pi(m) = H$ or $\pi(m) = 2H$. If moreover
+$m = \ell^i$ for an odd prime $\ell$ and some $i \ge 1$, then $\pi(m) = 2H$ when the $2$-adic
+valuations of $h$ and $\rho(m)$ differ, and $\pi(m) = H$ when they are equal and positive.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

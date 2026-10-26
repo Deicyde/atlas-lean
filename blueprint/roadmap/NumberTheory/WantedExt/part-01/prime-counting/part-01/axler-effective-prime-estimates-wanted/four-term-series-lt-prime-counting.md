@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.four_term_series_lt_primeCounting
 ---
 
-# Four term series lt prime Counting
+# Axler's four-term series lower bound for the prime-counting function
 
-For every real `x ≥ 10384261`,
-`π(x) > x/log x + x/log² x + 2x/log³ x + 6x/log⁴ x`.
-`π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's four-term series lower bound for the prime-counting function.** Let $\pi(x)$ denote
+the number of primes $p \le x$ and $\log$ the natural logarithm. For every real $x \ge 10384261$,
+
+$$
+\pi(x) > \frac{x}{\log x} + \frac{x}{\log^2 x} + \frac{2x}{\log^3 x} + \frac{6x}{\log^4 x}.
+$$
 
 ## Depends on
 

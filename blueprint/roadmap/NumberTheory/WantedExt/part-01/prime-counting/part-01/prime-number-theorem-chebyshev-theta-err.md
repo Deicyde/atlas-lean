@@ -6,16 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.PrimeNumberTheorem.prime_number_theorem_chebyshev_theta_error
 ---
 
-# Chebyshev Theta PNTError Wanted
+# Prime number theorem with error term for Chebyshev's $\theta$
 
-Quantitative prime number theorem for the Chebyshev `θ` function: for every
-real `ε > 0`, `θ(x) - x = O(x * exp(-(log x)^(3/5 - ε)))` as `x → +∞`.
-
-This is stronger than the qualitative Chebyshev-`θ` asymptotic equivalent to the
-repository's existing prime-counting `prime_number_theorem`
-(i.e. `θ(x) ~ x`, vanishing relative error with no rate), and it
-and this exponential asymptotic error rate is distinct from the existing
-explicit polynomial-in-`log x` Dusart bounds, some global and some finite-range.
+**Prime number theorem with error term for Chebyshev's $\theta$.** Let
+$\theta(x) = \sum_{p \le x} \log p$ be the sum of $\log p$ over the primes $p \le x$. For every
+real $\varepsilon > 0$, $\theta(x) - x = O(x \exp(-(\log x)^{3/5 - \varepsilon}))$ as
+$x \to \infty$.
 
 ## Depends on
 

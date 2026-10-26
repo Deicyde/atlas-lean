@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.nthPrime_sq_log_bound
 ---
 
-# Nth Prime sq log bound
+# An explicit inequality between $n$ and the $n$th prime
 
-Proposition 1: for every `n ≥ 1`, with one-indexed `pₙ`,
-`937.5 pₙ² log pₙ + 5674.5 pₙ² > 118.676119576 n² log³ pₙ + 709.7856 n pₙ log² pₙ`.
+**An explicit inequality between $n$ and the $n$th prime.** For every integer $n \ge 1$, the
+$n$th prime $p_n$ (counting from $p_1 = 2$) satisfies
+
+$$118.676119576 \, n^2 (\log p_n)^3 + 709.7856 \, n \, p_n (\log p_n)^2
+< 937.5 \, p_n^2 \log p_n + 5674.5 \, p_n^2.$$
 
 ## Depends on
 

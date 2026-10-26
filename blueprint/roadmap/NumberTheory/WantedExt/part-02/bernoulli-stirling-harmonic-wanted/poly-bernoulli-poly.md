@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.polyBernoulliPoly
 ---
 
-# Poly Bernoulli Poly
+# Poly-Bernoulli polynomials
 
-`polyBernoulliPoly n p x` is the poly-Bernoulli polynomial obtained by
-multiplying the exponential generating function for `polyBernoulli` by
-`exp (x t)`: its `i`th summand is `choose n i * polyBernoulli i p * x^(n-i)`.
-Thus it is the coefficient form of
-`Li_p(1-exp(-t))/(1-exp(-t)) * exp(x t)`; this finite-sum definition replaces
-the paper's generating-function presentation, but has the same normalization
-at `x = 0`.
+**Poly-Bernoulli polynomials.** For a natural number $n$, an integer $k$ and a rational number
+$x$, the poly-Bernoulli polynomial of degree $n$ and order $k$ at $x$ is the rational number
+
+$$B_n^{(k)}(x) = \sum_{i=0}^{n} \binom{n}{i} B_i^{(k)} x^{n-i},$$
+
+where $B_i^{(k)}$ are the poly-Bernoulli numbers.
+
+These are the coefficients of the generating function
+$\frac{\mathrm{Li}_k(1-e^{-t})}{1-e^{-t}} e^{xt} = \sum_{n \ge 0} B_n^{(k)}(x) \frac{t^n}{n!}$,
+which is how the source defines them.
 
 ## Depends on
 

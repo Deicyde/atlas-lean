@@ -7,17 +7,22 @@ lean: MetaMathlibExt.lStarBar_decomposition
 
 # L Star Bar decomposition
 
-`L̄*`-block decompositions (Corollary 1): for `ε ∈ Ẽ*`, either `ε ∈ E*` (the case `ℓ = ∞`) and
-no index `b` as below exists, or there is a unique `b` (the largest `L̄*`-support index) such that
-the part of `ε` below `b` is a sum of disjoint proper `L*`-blocks inside `[1, b]` and the rest `μ`
-satisfies `β̄^{b+1} ≤_d μ` (`b = 0` is the case `ℓ = 0`, `ε = μ`). The decomposition is recorded
-by its index `b`, which determines the blocks.
+**Decomposition along $L^*$-blocks (Corollary 1).** Let $L$ and $\tilde L$ be a periodic
+Zeckendorf pair, let $E^*$ and $\tilde E^*$ be the collections determined by $L$ and $\tilde L$,
+and let $\varepsilon \in \tilde E^*$. Index coefficient functions from $1$. For $b \ge 0$, let
+$\eta_b$ agree with $\varepsilon$ at the indices $\le b$ and vanish elsewhere, and let
+$\mu_b = \varepsilon - \eta_b$. Call $b$ a decomposition index of $\varepsilon$ if $\eta_b$ is a
+sum of disjoint proper $L^*$-blocks with support intervals inside $[1, b]$ and
+$\bar\beta^{b+1} \le_d \mu_b$, where $\bar\beta^{b+1}$ is the maximal $L^*$-block starting at
+index $b + 1$ and $\le_d$ means equal or smaller in the descending lexicographic order. Then
+$\varepsilon \in E^*$ if and only if $\varepsilon$ has no decomposition index, and if
+$\varepsilon \notin E^*$, then $\varepsilon$ has exactly one decomposition index.
 
 ## Depends on
 
-- [Desc Lex LT](desc-lex-lt.md)
-- [Is LStar Block Sum](is-lstar-block-sum.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Descending lexicographic order](desc-lex-lt.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [L Star Collection](l-star-collection.md)
 - [Max LStar Block](max-lstar-block.md)
 

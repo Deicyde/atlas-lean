@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.runLengthTransform_eleven
 ---
 
-# Run Length Transform eleven
+# Run length transform at eleven
 
-The paper's example: `[11]₂ = 1011`, so `T(11) = S(1) S(2)`.
+**Run length transform at eleven.** For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
+length transform $T$ of $S$ satisfies $T(11) = S(1) S(2)$: in binary $11$ is $1011$, whose maximal
+runs of $1$s have lengths $2$ and $1$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Proof depends on
 
-- [Binary Run Lengths](binary-run-lengths.md)
-- [Bit Run Lengths](bit-run-lengths.md)
+- [Binary run lengths](binary-run-lengths.md)
+- [Run lengths of a digit list](bit-run-lengths.md)
 
 ## Sources
 

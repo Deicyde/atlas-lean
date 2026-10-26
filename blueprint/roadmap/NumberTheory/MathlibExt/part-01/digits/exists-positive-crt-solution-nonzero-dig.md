@@ -18,7 +18,7 @@ of $c$.
 
 ## Depends on
 
-- [Nonzero Digit Prod](../../part-10/prodigious-number/nonzero-digit-prod.md)
+- [Product of the nonzero digits](../../part-10/prodigious-number/nonzero-digit-prod.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isRepdigit_of_le
 ---
 
-# Is Repdigit of le
+# Nonzero single digits are repdigits
 
-Characteristic example: every nonzero single digit is a repdigit.
+**Nonzero single digits are repdigits.** Every natural number $d$ with $1 \le d \le 9$ is a
+repdigit.
 
 ## Depends on
 
-- [Is Repdigit](is-repdigit.md)
+- [Decimal repdigits](is-repdigit.md)
 
 ## Sources
 

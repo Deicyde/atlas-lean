@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sigmaBiunitary_prime_pow_div_ge
 ---
 
-# Sigma Biunitary prime pow div ge
+# Lower bounds for the biunitary divisor sum of a prime power
 
-Lower bounds for `σ**(p^e) / p^e` (in `ℚ`) for a prime `p` and `e ≥ 1`: it is at least
-`1 + 1/p²`; at least `1 + 1/p` unless `e = 2`; at least `(1 + 1/p)(1 + 1/p³)` if `e ≥ 3`.
+**Lower bounds for the biunitary divisor sum of a prime power.** Let $p$ be a prime and
+$e \ge 1$, and write $\sigma^{**}$ for the biunitary divisor sum. Then, in $\mathbb{Q}$,
+$\sigma^{**}(p^e)/p^e \ge 1 + 1/p^2$; if moreover $e \ne 2$, then
+$\sigma^{**}(p^e)/p^e \ge 1 + 1/p$; and if $e \ge 3$, then
+$\sigma^{**}(p^e)/p^e \ge (1 + 1/p)(1 + 1/p^3)$.
 
 ## Depends on
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Nat.polygonalNumber_three
 ---
 
-# Polygonal Number three
+# Closed form of the triangular numbers
 
-Triangular specialization `p_3(n) = n * (n + 1) / 2`.
+**Closed form of the triangular numbers.** For every natural number $n$, the $n$-th triangular
+number is $p_3(n) = \frac{n(n + 1)}{2}$, where $p_s(n)$ is the $n$-th $s$-gonal number.
+
+The quotient is exact, since $n(n + 1)$ is even.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

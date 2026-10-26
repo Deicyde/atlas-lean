@@ -5,7 +5,7 @@ navigation: module
 
 # Neto Higher Order Bernoulli
 
-- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
-- [Higher Order Bernoulli Number nat](higher-order-bernoulli-number-nat.md)
-- [Higher Order Bernoulli Number one](higher-order-bernoulli-number-one.md)
-- [Neto higher order bernoulli identity](neto-higher-order-bernoulli-identity.md)
+- [Higher-order Bernoulli numbers](higher-order-bernoulli-number.md)
+- [Higher-order Bernoulli numbers of natural order](higher-order-bernoulli-number-nat.md)
+- [Higher-order Bernoulli numbers of order one](higher-order-bernoulli-number-one.md)
+- [Neto's identity for higher-order Bernoulli numbers](neto-higher-order-bernoulli-identity.md)

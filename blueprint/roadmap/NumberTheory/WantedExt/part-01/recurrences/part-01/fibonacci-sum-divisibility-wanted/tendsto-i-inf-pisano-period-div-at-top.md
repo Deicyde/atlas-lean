@@ -5,17 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.tendsto_iInf_pisanoPeriod_div_atTop
 ---
 
-# Tendsto i Inf pisano Period div at Top
+# The minimum of $\pi(n)/n$ over $1 \le n < N$ tends to zero
 
-The paper's Corollary 1: the minimum of `π(n) / n` over
-positive `n < N` tends to `0` as `N` tends to infinity. The
-finite minimum is written as an infimum indexed by the subtype
-of elements of `Finset.Icc 1 (N - 1)`, so out-of-range indices
-do not contribute an empty infimum.
+**The minimum of $\pi(n)/n$ over $1 \le n < N$ tends to zero.** Let $\pi(n)$ denote the Pisano
+period of $n$. As $N \to \infty$, the minimum of the real numbers $\pi(n)/n$ over the integers
+$1 \le n \le N - 1$ (defined for $N \ge 2$) tends to $0$.
 
 ## Depends on
 
-- [Pisano Period](pisano-period.md)
+- [Pisano period](pisano-period.md)
 
 ## Sources
 

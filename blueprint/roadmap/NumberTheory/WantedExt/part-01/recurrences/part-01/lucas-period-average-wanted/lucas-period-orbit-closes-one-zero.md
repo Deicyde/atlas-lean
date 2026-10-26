@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.lucasPeriodOrbitCloses_one_zero
 ---
 
-# Lucas Period Orbit Closes one zero
+# The period orbit of $1$ closes at step $0$
 
-The orbit of `1` closes at once: `π_U(1) = 1`.
+**The period orbit of $1$ closes at step $0$.** For every Lucas sequence $U = U(P, Q)$, let
+$\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its $i$-th iterate, with
+$\pi_U^0(n) = n$. Then the period orbit of $1$ closes at step $0$: $1$ is coprime to $Q$ and
+$\pi_U^1(1) = \pi_U^0(1)$, that is, $\pi_U(1) = 1$.
 
 ## Depends on
 
-- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Closing of the period orbit](lucas-period-orbit-closes.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas UPeriod one](lucas-uperiod-one.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Period of a Lucas sequence modulo 1](lucas-uperiod-one.md)
 
 ## Sources
 

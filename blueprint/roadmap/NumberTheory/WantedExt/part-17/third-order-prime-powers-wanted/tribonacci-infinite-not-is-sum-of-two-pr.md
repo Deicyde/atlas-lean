@@ -17,7 +17,7 @@ residue class depends on it.
 ## Depends on
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
-- [Tribonacci Sequence With Initial Values001](../../../MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

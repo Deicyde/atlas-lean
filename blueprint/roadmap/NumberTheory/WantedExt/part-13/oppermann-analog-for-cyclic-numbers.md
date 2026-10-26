@@ -18,12 +18,12 @@ equations `eq:CyclicsInSquaresUsingPollackLeft` and
 
 ## Depends on
 
-- [Is Cyclic Number](../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
-- [Oppermann Cyclic Approximation](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-approximation.md)
-- [Oppermann Cyclic Count Left](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-count-left.md)
-- [Oppermann Cyclic Count Right](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-count-right.md)
-- [Oppermann Cyclic Left Approximation](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-left-approximation.md)
-- [Oppermann Cyclic Right Approximation](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-right-approximation.md)
+- [Cyclic numbers](../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
+- [Simplified approximation for cyclic numbers near squares](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-approximation.md)
+- [Cyclic numbers in the left Oppermann interval](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-count-left.md)
+- [Cyclic numbers in the right Oppermann interval](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-count-right.md)
+- [Left-hand approximation for cyclic numbers near squares](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-left-approximation.md)
+- [Right-hand approximation for cyclic numbers near squares](../../MathlibExt/part-09/oppermann-cyclic-numbers/oppermann-cyclic-right-approximation.md)
 
 ## Sources
 

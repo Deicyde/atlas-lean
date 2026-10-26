@@ -11,10 +11,10 @@ lean: MetaMathlibExt.two_mul_companionKJacobsthal
 
 ## Depends on
 
-- [Companion KJacobsthal](companion-kjacobsthal.md)
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Companion $k$-Jacobsthal numbers](companion-kjacobsthal.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

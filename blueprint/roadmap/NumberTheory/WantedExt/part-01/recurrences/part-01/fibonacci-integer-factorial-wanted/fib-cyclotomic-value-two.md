@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fibCyclotomicValue_two
 ---
 
-# Fib Cyclotomic Value two
+# Fibonacci cyclotomic value at $2$
 
-`Φ_2 = 1`, one of the exceptional relations (1).
+**Fibonacci cyclotomic value at $2$.** The Fibonacci cyclotomic value
+$\Phi_2 = \prod_{d \mid 2} F_{2/d}^{\mu(d)} = F_2 / F_1$, where $F_k$ is the $k$-th Fibonacci number
+and $\mu$ is the Möbius function, equals $1$.
 
 ## Depends on
 
-- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
+- [Fibonacci cyclotomic values](fib-cyclotomic-value.md)
 
 ## Sources
 

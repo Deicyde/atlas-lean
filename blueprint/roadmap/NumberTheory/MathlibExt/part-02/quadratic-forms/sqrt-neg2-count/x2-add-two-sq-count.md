@@ -20,9 +20,9 @@ $d \equiv 5, 7 \pmod 8$, and $\chi(d) = 0$ if $d$ is even.
 
 ## Proof depends on
 
-- [Div Chi Neg2 Sum](../../../part-12/x2-y2-count/div-chi-neg2-sum.md)
-- [Rep X2 Y2 Count](../../../part-12/x2-y2-count/rep-x2-y2-count.md)
-- [X2y2 count](../../../part-12/x2-y2-count/x2y2-count.md)
+- [Divisor sum of the character $\chi_{-2}$](../../../part-12/x2-y2-count/div-chi-neg2-sum.md)
+- [Number of elements of $\mathbb{Z}(\sqrt{-2})$ of a given norm](../../../part-12/x2-y2-count/rep-x2-y2-count.md)
+- [Elements of $\mathbb{Z}(\sqrt{-2})$ of norm $t$ counted by a divisor sum](../../../part-12/x2-y2-count/x2y2-count.md)
 
 ## Sources
 

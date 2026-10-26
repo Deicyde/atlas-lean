@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.eventually_zeckendorfDeltaStar_lt_of_mem_lStarClosure
 ---
 
-# Eventually zeckendorf Delta Star lt of mem l Star Closure
+# Strict local maxima of $\delta^{\ast}$ at the closure points
 
-Proposition 8: at each point `x = ∑ ε Q̃` with `ε ∈ Ē* − E*`, `δ*` has a strict local maximum
-(a local maximum attained only at `x` nearby).
+**Strict local maxima of $\delta^{\ast}$ at the closure points.** Let $L$ and $\tilde L$ form a
+periodic Zeckendorf pair, let $Q$ be a fundamental sequence of the collection $E^*$ determined by
+$L$, and let $\tilde Q$ be a fundamental sequence of the collection $\tilde E^*$ determined by
+$\tilde L$. Let $\varepsilon \in \bar E^* \setminus E^*$, where $\bar E^*$ is the closure
+collection of $L$, and put $x = \sum_k \varepsilon_k \tilde Q_k$. Then, for the function
+$\delta^*$ built from $L, \tilde L, Q, \tilde Q$, we have $\delta^*(y) < \delta^*(x)$ for all
+$y \ne x$ sufficiently close to $x$.
 
 ## Depends on
 
-- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Fundamental sequence of an $L^\ast$-collection](is-lstar-fundamental-sequence.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [L Star Closure](l-star-closure.md)
 - [L Star Collection](l-star-collection.md)
 - [Zeckendorf Delta Star](zeckendorf-delta-star.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
 
 ## Sources
 

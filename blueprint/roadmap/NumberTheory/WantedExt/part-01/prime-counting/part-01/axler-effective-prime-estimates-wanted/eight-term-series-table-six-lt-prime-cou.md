@@ -5,11 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.eight_term_series_table_six_lt_primeCounting
 ---
 
-# Eight term series table six lt prime Counting
+# Axler's Table 6 lower bounds for the prime-counting function
 
-Lower bounds `π(x) > x/log x + x/log² x + 2x/log³ x + 5.975666x/log⁴ x + b₅x/log⁵ x +
-b₆x/log⁶ x + b₇x/log⁷ x + b₈x/log⁸ x` for every real `x ≥ x₀`, for the five rows
-`(b₅, b₆, b₇, b₈, x₀)` of Table 6. `π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's Table 6 lower bounds for the prime-counting function.** Let $\pi(x)$ denote the
+number of primes $p \le x$ and $\log$ the natural logarithm. For each of the five rows
+$(b_5, b_6, b_7, b_8, x_0)$ equal to
+$(23.975666, 119.87833, 719.26998, 5034.88986, 1681111802141)$,
+$(23.975666, 119.87833, 719.26998, 0, 721733241667)$,
+$(23.975666, 119.87833, 0, 0, 110838719141)$, $(23.975666, 0, 0, 0, 1331691853)$ and
+$(0, 0, 0, 0, 10383799)$, every real $x \ge x_0$ satisfies
+
+$$
+\pi(x) > \frac{x}{\log x} + \frac{x}{\log^2 x} + \frac{2x}{\log^3 x} +
+\frac{5.975666\,x}{\log^4 x} + \frac{b_5 x}{\log^5 x} + \frac{b_6 x}{\log^6 x} +
+\frac{b_7 x}{\log^7 x} + \frac{b_8 x}{\log^8 x}.
+$$
 
 ## Depends on
 

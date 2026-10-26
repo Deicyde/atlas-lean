@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.infinite_setOf_prime_dvd_nomid_of_not_isLexMinimalExtension
 ---
 
-# Infinite set Of prime dvd nomid of not is Lex Minimal Extension
+# Nomid coefficients of binomid indices that are not lex-minimal extensions
 
-Corollary 2, second part: if a binomid index `μ` is not a lex-minimal
-extension of any finite binomid index and `p` is prime, then there are
-infinitely many `n` such that every `p^μ`-nomid coefficient `[n, k]_{p^μ}`
-with `1 ≤ k < n` is an integer multiple of `p`.
+**Nomid coefficients of binomid indices that are not lex-minimal extensions.** Let
+$\mu = (e_1, e_2, \dots)$ be a binomid index such that for no $m$ is $\mu$ the lex-minimal
+extension of its first $m$ entries, and let $p$ be a prime. Write $f_i = p^{e_i}$ for $i \ge 1$
+and let $[n, k]_f = \frac{f_n f_{n-1} \cdots f_{n-k+1}}{f_k f_{k-1} \cdots f_1}$ be the
+$f$-nomid coefficient. Then there are infinitely many natural numbers $n$ such that for every $k$
+with $1 \le k < n$ the coefficient $[n, k]_f$ is an integer multiple of $p$.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Binomid index](is-binomid-index.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
 - [Generalized binomial coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
 
 ## Sources

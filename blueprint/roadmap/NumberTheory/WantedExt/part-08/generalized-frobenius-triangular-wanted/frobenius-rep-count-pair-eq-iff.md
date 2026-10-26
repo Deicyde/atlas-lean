@@ -14,8 +14,8 @@ For coprime positive `a, b`, `i, s ≥ 0`, a positive `c` divisible by `a` or by
 
 ## Depends on
 
-- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
-- [Frobenius Rep Count](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
+- [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Number of representations by a vector of generators](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
 
 ## Sources
 

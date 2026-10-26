@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.primaryThirteenCarmichael_pairs_of_primeKTuples
 ---
 
-# Primary Thirteen Carmichael pairs of prime KTuples
+# Primary and secondary $13$-Carmichael numbers from prime quadruples
 
-The prime `k`-tuples conjecture implies infinitely many `x ≥ 0` with `p = 78x + 137`, `q = 78x
-+ 139`, `r = 468x + 827`, `s = 468x + 829` all prime; for every such `x`, `m = pqr` and `n = pqs`
-are primary `13`-Carmichael numbers of signatures `- + -` and `- + +`, and `N = pqrs` is a
-secondary `13`-Carmichael number. The prime `k`-tuples conjecture (the paper's Conjecture 1) is
-the hypothesis `hk`: for linear
-forms `aᵢ x + bᵢ` with `aᵢ ≥ 1` whose product has no fixed prime divisor, infinitely many `x`
-make every form a (positive) prime.
+**Primary and secondary $13$-Carmichael numbers from prime quadruples.** Assume the prime
+$k$-tuples conjecture (the paper's Conjecture 1) in the following form: for every finite list
+of linear forms $a_i x + b_i$ with integers $a_i \ge 1$ and $b_i$ such that for every prime
+$\ell$ there is an integer $x$ with $\ell \nmid \prod_i (a_i x + b_i)$, there are infinitely
+many natural numbers $x$ at which every $a_i x + b_i$ is a positive prime.
+For a natural number $x$ put $p = 78x + 137$, $q = 78x + 139$, $r = 468x + 827$ and
+$s = 468x + 829$. Then, first, for every natural number $x$ with $p$, $q$, $r$ and $s$ all
+prime: $pqr$ and $pqs$ are primary $13$-Carmichael numbers; the Jacobi symbols
+$(13 \mid \cdot)$ at the prime factors of $pqr$, listed in increasing order, are $-1, 1, -1$,
+and those at the prime factors of $pqs$ are $-1, 1, 1$; and $pqrs$ is a secondary
+$13$-Carmichael number. Second, there are infinitely many natural numbers $x$ with $p$, $q$,
+$r$ and $s$ all prime.
 
 ## Depends on
 
-- [Is Primary DCarmichael](is-primary-dcarmichael.md)
-- [Is Secondary DCarmichael](is-secondary-dcarmichael.md)
+- [Primary $D$-Carmichael number](is-primary-dcarmichael.md)
+- [Secondary $D$-Carmichael number](is-secondary-dcarmichael.md)
 
 ## Sources
 

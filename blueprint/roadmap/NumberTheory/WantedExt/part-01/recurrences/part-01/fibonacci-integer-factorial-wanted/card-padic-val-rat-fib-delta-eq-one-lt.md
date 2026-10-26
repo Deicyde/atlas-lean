@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.card_padicValRat_fibDelta_eq_one_lt
 ---
 
-# Card padic Val Rat fib Delta eq one lt
+# Bound on denominator indices of $p$-adic valuation one
 
-Lemma 2, in the setting of Section 3: let `n ≥ 37` and `n! = ∏_{i ∈ I} Φ_{n_i}
-∏_{j ∈ J} Φ_{m_j}^{-1}` with `I`, `J` as in Lemma 1. For a prime `p` with `z(p) > 12`, the number
-`N_p` of `j ∈ J` with `ν_p(δ_{m_j}) = 1`, `δ_m = Φ_m / Ψ_m`, satisfies `N_p < 2n/(z(p) p (p-2))`.
+**Bound on denominator indices of $p$-adic valuation one.** Let $n \ge 37$ and let $I$ and $J$
+be finite multisets of natural numbers, every element of which is at least $3$ and different from
+$6$ and $12$, such that no element of $I$ equals an element of $J$ and
+$n! = \prod_{a \in I} \Phi_a / \prod_{b \in J} \Phi_b$, where $\Phi_m$ is the $m$-th Fibonacci
+cyclotomic value. Let $p$ be a prime whose Fibonacci entry point $z(p)$ exceeds $12$, and let
+$N_p$ be the number of elements $m$ of $J$, counted with multiplicity, such that the $p$-adic
+valuation of $\Phi_m / \Psi_m$ is $1$, where $\Psi_m$ is the primitive part of the Fibonacci
+number $F_m$. Then $N_p < \frac{2n}{z(p)\, p\, (p - 2)}$.
 
 ## Depends on
 
-- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
-- [Fib Entry Point](fib-entry-point.md)
-- [Fib Primitive Part](fib-primitive-part.md)
+- [Fibonacci cyclotomic values](fib-cyclotomic-value.md)
+- [Entry point in the Fibonacci sequence](fib-entry-point.md)
+- [Primitive part of a Fibonacci number](fib-primitive-part.md)
 
 ## Sources
 

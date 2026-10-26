@@ -4,5 +4,5 @@ navigation: module
 
 # Vaughan Identity
 
-- [Vaughan identity general](vaughan-identity-general.md)
-- [Vaughan identity](vaughan-identity.md)
+- [Vaughan's identity in a commutative ring](vaughan-identity-general.md)
+- [Vaughan's identity](vaughan-identity.md)

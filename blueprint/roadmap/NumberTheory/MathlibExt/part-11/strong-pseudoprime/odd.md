@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsStrongPseudoprime.odd
 ---
 
-# Odd
+# Strong pseudoprimes are odd
 
-A strong pseudoprime is odd.
+**Strong pseudoprimes are odd.** If $n$ is a strong pseudoprime to some base $b$ modulo $n$,
+then $n$ is odd.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
+- [Strong pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

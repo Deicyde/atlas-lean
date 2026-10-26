@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lucasBalancingNum_two
 ---
 
-# Lucas Balancing Num two
+# The Lucas-balancing number $C_2$ is $3$
 
-Characteristic value `C_2 = 3`.
+**The Lucas-balancing number $C_2$ is $3$.** For the Lucas-balancing numbers defined by
+$C_0 = 3$, $C_1 = 1$ and $C_{n+2} = 6C_{n+1} - C_n$, we have $C_2 = 3$.
 
 ## Depends on
 
-- [Lucas Balancing Num](lucas-balancing-num.md)
+- [Lucas-balancing numbers (shifted indexing)](lucas-balancing-num.md)
 
 ## Sources
 

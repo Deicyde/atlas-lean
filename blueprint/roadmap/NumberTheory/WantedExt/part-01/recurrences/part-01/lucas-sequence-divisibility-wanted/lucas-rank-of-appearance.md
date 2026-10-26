@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasRankOfAppearance
 ---
 
-# Lucas Rank Of Appearance
+# Rank of appearance in a Lucas sequence
 
-The rank of appearance `ρ(m)` of `m` in `U(P, Q)`: the least positive `r` with `m ∣ U_r`
-(the source assumes `gcd(m, Q) = 1`, under which it exists). When no positive `r` has
-`m ∣ U_r`, `sInf` makes this `0`; lack of coprimality alone does not force that.
+**Rank of appearance in a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas sequence with
+integer parameters $P$ and $Q \ne 0$. The rank of appearance $\rho(m)$ of a natural number $m$ in
+$U$ is the least positive integer $r$ with $m \mid U_r$; when no positive $r$ has $m \mid U_r$,
+$\rho(m) = 0$.
+
+When $m \ge 1$ and $\gcd(m, Q) = 1$, such an $r$ always exists (the source defines $\rho(m)$ only
+in this case); it can also exist when $\gcd(m, Q) \ne 1$. For $m = 0$ it need not exist even when
+$\gcd(0, Q) = |Q| = 1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

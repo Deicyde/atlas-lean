@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.permutiple_basePerm_residue_le
 ---
 
-# Permutiple base Perm residue le
+# Holt's residue condition for rearranged permutiples
 
-Necessary condition on the base permutation: if `(d_k, …, d_0)_b` is an
-`(n, b, σ)`-permutiple and `(d_{π(k)}, …, d_{π(0)})_b` is an `(n, b, τ)`-permutiple,
-then `λ(d_j + (b - n) d_{πτπ⁻¹(j)}) ≤ n - 1` for all `0 ≤ j ≤ k`, where `λ` is
-the least non-negative residue modulo `b` (computed in `ℤ`, so `b - n` may be
-negative). The multiplier is positive (`1 ≤ n`): for `n = 0` the only permutiple
-has all digits zero and the bound would read `0 ≤ -1`.
+**Holt's residue condition for rearranged permutiples.** Let $n \ge 1$ and $b \ge 2$ be
+natural numbers, let $d_0, \dots, d_k$ be natural numbers, and write $(e_k, \dots, e_0)_b$
+for the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$. Let $\sigma$, $\pi$ and $\tau$ be
+permutations of $\{0, \dots, k\}$. If $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple
+and $(d_{\pi(k)}, \dots, d_{\pi(0)})_b$ is an $(n, b, \tau)$-permutiple, then for every
+$0 \le j \le k$
+
+$$\lambda\bigl(d_j + (b - n)\, d_{\pi(\tau(\pi^{-1}(j)))}\bigr) \le n - 1,$$
+
+where $\lambda(x)$ is the least non-negative residue of the integer $x$ modulo $b$ (the
+difference $b - n$ is taken in the integers and may be negative).
+
+The hypothesis $n \ge 1$ is needed: for $n = 0$ the only permutiples have all digits zero
+and the bound would read $0 \le -1$.
 
 ## Depends on
 
-- [Is Permutiple](is-permutiple.md)
+- [Permutiples with a given digit permutation](is-permutiple.md)
 
 ## Sources
 

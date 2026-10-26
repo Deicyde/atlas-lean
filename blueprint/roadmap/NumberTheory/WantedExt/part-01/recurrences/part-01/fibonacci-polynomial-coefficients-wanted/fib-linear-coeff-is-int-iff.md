@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fib_linear_coeff_isInt_iff
 ---
 
-# Fib linear coeff is Int iff
+# Integer sequences with linear Fibonacci coefficients
 
-The rational sequence `w_n = (a n + b) F_n + (c n + d) F_{n-1}` is an integer
-sequence if and only if `d` is an integer and
-`a = (-z₁ - 3 z₂ + 2 z₃) / 5`, `b = (6 z₁ + 3 z₂ - 2 z₃) / 5`,
-`c = (-2 z₁ + 4 z₂ - z₃) / 5` for some integers `z₁, z₂, z₃` (then `z₁ = w₁`,
-`z₂ = w₂ - d`, `z₃ = w₃ - d`). Here `F_{n-1}` is written as `F_{n+1} - F_n`.
+**Integer sequences with linear Fibonacci coefficients.** Let $F_n$ be the $n$-th Fibonacci
+number and put $F_{-1} = 1$, so that $F_{n-1} = F_{n+1} - F_n$ for every $n \ge 0$. For rational
+numbers $a, b, c, d$, the number $w_n = (an + b)F_n + (cn + d)F_{n-1}$ is an integer for every
+natural number $n$ if and only if $d$ is an integer and there are integers $z_1, z_2, z_3$ with
+$a = (-z_1 - 3z_2 + 2z_3)/5$, $b = (6z_1 + 3z_2 - 2z_3)/5$ and $c = (-2z_1 + 4z_2 - z_3)/5$.
+
+The integers $z_i$ are then determined by the sequence: $z_1 = w_1$, $z_2 = w_2 - d$ and
+$z_3 = w_3 - d$.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.sq_add_triangular_sub_two_eq
 ---
 
-# Sq add triangular sub two eq
+# A square–triangular number identity
 
-For `n ≥ 2`, `n² + t_{n-2} = (n - 1)² + t_n`, with `t_v = v (v + 1) / 2`.
+**A square–triangular number identity.** Let $t_v = v(v + 1)/2$ denote the $v$-th triangular
+number. For every natural number $n \ge 2$, $n^2 + t_{n-2} = (n - 1)^2 + t_n$.
 
 ## Depends on
 

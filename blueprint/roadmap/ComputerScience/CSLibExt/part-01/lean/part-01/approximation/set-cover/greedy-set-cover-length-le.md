@@ -33,7 +33,7 @@ theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+- [Greedy set cover](greedy-set-cover.md)
 
 ## Proof depends on
 

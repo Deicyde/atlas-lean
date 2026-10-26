@@ -5,6 +5,6 @@ navigation: module
 
 # Nicol Number
 
-- [Is Nicol Number](is-nicol-number.md)
-- [Is TNicol Number](is-tnicol-number.md)
-- [Is Nicol Number](is-nicol-number-2.md)
+- [Nicol numbers](is-nicol-number.md)
+- [$t$-Nicol numbers](is-tnicol-number.md)
+- [Every $t$-Nicol number is a Nicol number](is-nicol-number-2.md)

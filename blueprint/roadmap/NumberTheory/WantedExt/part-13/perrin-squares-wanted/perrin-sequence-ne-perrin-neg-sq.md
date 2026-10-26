@@ -12,7 +12,7 @@ Theorem 3: `R_n = R_{-m} ^ 2` has no solutions in positive integers.
 ## Depends on
 
 - [Perrin Neg](perrin-neg.md)
-- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
+- [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

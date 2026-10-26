@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.negabinary_digits_one_a_complete_iff
 ---
 
-# Negabinary digits one a complete iff
+# Negabinary representations with digits $1$ and $a$
 
-Every integer is `∑_{j=0}^k bⱼ(-2)ʲ` with digits `bⱼ ∈ {1, a}` iff `a = 1 ± 3ᵐ` for
-some `m ∈ ℕ₀`. The length `k` ranges over `ℕ`.
+**Negabinary representations with digits $1$ and $a$.** Let $a \in \mathbb{Z}$. Every integer
+$z$ can be written as $z = \sum_{j=0}^{k} b_j (-2)^j$ for some $k \in \mathbb{N}$ and digits
+$b_0, \dots, b_k \in \{1, a\}$ if and only if $a = 1 + 3^m$ or $a = 1 - 3^m$ for some integer
+$m \ge 0$.
 
 ## Depends on
 

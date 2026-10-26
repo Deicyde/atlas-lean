@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.palindrome_two_pow_base_two_pow_sub_one
 ---
 
-# Palindrome two pow base two pow sub one
+# Palindromic powers of two in a base one less than a power of two
 
-Let `b = 2^x - 1` (`x ≥ 2`), `n ≥ 1`, and let `2^n = (c_k, …, c_0)_b` be a
-palindromic representation (so `k + 1` digits). Then (1) `n > k(x - 1)`; and (2) if
-`r = n - kx ≥ 0` and either `k ≤ x - r`, or `3 ≤ k ≤ x - r + 1` and `x ≥ 3`, then
-the representation is the binomial form `2^r (C(k,k), …, C(k,0))_b`.
+**Palindromic powers of two in a base one less than a power of two.** Let $x \ge 2$ and
+$n \ge 1$ be natural numbers, let $b = 2^x - 1$, and suppose that the base-$b$ representation
+$2^n = (c_k, \dots, c_0)_b$ is a palindrome with $k + 1$ digits. Then (1) $n > k(x - 1)$; and
+(2) if $n = kx + r$ for a natural number $r$, and either $k \le x - r$, or $3 \le k \le x - r + 1$
+and $x \ge 3$, then $c_i = 2^r \binom{k}{i}$ for $i = 0, \dots, k$, that is, the representation
+is the binomial form $2^r (\binom{k}{k}, \dots, \binom{k}{0})_b$.
 
 ## Depends on
 

@@ -5,13 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.mandl_sum_lt_Omega_bound
 ---
 
-# Mandl sum lt Omega bound
+# Explicit upper bound in Mandl's inequality
 
-Proposition 4: for every `n ≥ 64497259289`, with one-indexed `pₙ`, `ℓ = log n`,
-`L = log pₙ` and `M(n) = n pₙ / 2 - ∑_{k ≤ n} p_k`,
-`M(n) < n²/4 + n²/(4ℓ) - n² log ℓ/(4ℓ²) + Ω(n) n²/ℓ²`, where
-`Ω(n) = ℓ²/(4L) + 3.848668 ℓ²/(4L²) - ℓ/4 + log ℓ/4 + τ(L) ℓ²/(8L⁶)` and
-`τ(x) = 34.6x³ + 205.592008x² + 1420.426661948448x + 28890.293784512888`.
+**Explicit upper bound in Mandl's inequality.** Let $p_k$ denote the $k$-th prime, so that
+$p_1 = 2$. For every integer $n \ge 64497259289$, put $\ell = \log n$, $L = \log p_n$,
+$M(n) = \frac{n p_n}{2} - \sum_{k=1}^{n} p_k$,
+
+$$\tau = 34.6L^3 + 205.592008L^2 + 1420.426661948448L + 28890.293784512888$$
+
+and
+
+$$\Omega(n) = \frac{\ell^2}{4L} + \frac{3.848668\,\ell^2}{4L^2} - \frac{\ell}{4} +
+\frac{\log \ell}{4} + \frac{\tau\,\ell^2}{8L^6}.$$
+
+Then
+
+$$M(n) < \frac{n^2}{4} + \frac{n^2}{4\ell} - \frac{n^2 \log \ell}{4\ell^2} +
+\frac{\Omega(n)\, n^2}{\ell^2}.$$
 
 ## Depends on
 

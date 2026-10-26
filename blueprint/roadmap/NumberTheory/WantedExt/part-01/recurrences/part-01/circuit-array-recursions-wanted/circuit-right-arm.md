@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.circuitRightArm
 ---
 
-# Circuit Right Arm
+# Bottom-right delta-wye arm
 
-The `Δ`-`Y` arm from the centre of an upright triangle to its bottom-right vertex,
-`Δ(R, B, L)`.
+**Bottom-right delta-wye arm.** For an upright triangle whose left, right and base edges carry
+the values $L$, $R$, $B$ in a field $K$, the bottom-right arm is
+$\Delta(R, B, L) = \frac{RB}{R + B + L}$, where $\Delta$ is the delta-wye resistance function: the
+arm of the equivalent star from the centre of the triangle to its bottom-right vertex.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Delta](circuit-delta.md)
+- [Delta-wye resistance function](circuit-delta.md)
 
 ## Sources
 

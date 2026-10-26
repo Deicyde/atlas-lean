@@ -5,23 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_of_p_eq_neg_q_sub_one
 ---
 
-# Lucas UPeriod of p eq neg q sub one
+# Lucas sequences with $P = -Q - 1$
 
-Theorem 3.4: for nondegenerate `U(a, b) = U(b - 1, b)` with `b ≠ ±1`, the discriminant is
-`D = (b + 1) ^ 2`, `U n = (b ^ n - (-1) ^ n) / (b + 1)` (roots `b` and `-1`),
-`U (n + 1) = b U n + (-1) ^ n`, and for `gcd(n, b) = 1`: if `ρ_U(n)` is even then
-`π_U(n) = ρ_U(n)` and the multiplier `M_U(n) = U (ρ_U(n) + 1) ≡ 1 (mod n)`; if `ρ_U(n)` is odd
-and `n > 1` then `π_U(n) = 2 ρ_U(n)` and `M_U(n) ≡ -1 (mod n)`; and `π_U(n)` is even for
-`n > 1`. The hypothesis `n > 1` in the odd case is added: as printed the claim fails at `n = 1`,
-where `ρ_U(1) = π_U(1) = 1` (Theorem 1.4 (ix)).
+**Lucas sequences with $P = -Q - 1$.** Let $U$ be the Lucas sequence with integer parameters
+$P$ and $Q$, where $P = -Q - 1$, $Q \neq \pm 1$ and the pair $(P, Q)$ is nondegenerate, and write
+$\pi(n)$ and $\rho(n)$ for the period and the restricted period of $U$ modulo $n$. Then
+$P^2 - 4Q = (Q - 1)^2$, and for every natural number $n$,
+$(1 - Q) U_n = (-Q)^n - (-1)^n$ and $U_{n+1} = -Q U_n + (-1)^n$. Moreover, for every positive
+integer $n$ with $\gcd(n, Q) = 1$: if $\rho(n)$ is even, then $\pi(n) = \rho(n)$ and
+$U_{\rho(n)+1} \equiv 1 \pmod n$; if $n > 1$ and $\rho(n)$ is odd, then $\pi(n) = 2\rho(n)$ and
+$U_{\rho(n)+1} \equiv -1 \pmod n$; and if $n > 1$, then $\pi(n)$ is even.
+
+The hypothesis $n > 1$ in the odd case is needed: for $n = 1$ one has $\rho(1) = \pi(1) = 1$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

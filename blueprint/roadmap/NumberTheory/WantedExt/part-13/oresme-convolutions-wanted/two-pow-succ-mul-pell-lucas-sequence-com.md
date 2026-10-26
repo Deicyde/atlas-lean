@@ -15,7 +15,7 @@ second link `2 - 7n ≡ 0 (mod 49)` fails at `n = 0`.
 
 ## Depends on
 
-- [Pell Lucas Sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
+- [Pell–Lucas sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
 
 ## Sources
 

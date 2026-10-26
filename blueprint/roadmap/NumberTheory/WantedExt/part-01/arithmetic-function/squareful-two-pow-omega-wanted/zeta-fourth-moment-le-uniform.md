@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zeta_fourth_moment_le_uniform
 ---
 
-# Zeta fourth moment le uniform
+# Uniform fourth-moment bound for the Riemann zeta function
 
-Lemma 4 (quoted classical result): uniformly for `1/2 ≤ σ ≤ 1` and large `T`,
-`∫_1^T |ζ(σ + it)|⁴ dt ≪ T (log T)⁴`.
+**Uniform fourth-moment bound for the Riemann zeta function.** There are real constants $C$
+and $T_0$ such that for every real $\sigma$ with $1/2 \le \sigma \le 1$ and every real
+$T \ge T_0$,
+
+$$\int_1^T |\zeta(\sigma + it)|^4 \, dt \le C T (\log T)^4.$$
 
 ## Depends on
 

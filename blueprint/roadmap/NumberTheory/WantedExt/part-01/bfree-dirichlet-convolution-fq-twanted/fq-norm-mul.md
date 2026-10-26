@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.fqNorm_mul
 ---
 
-# Fq Norm mul
+# Multiplicativity of the norm
 
-The norm is multiplicative on nonzero polynomials: `|f g| = |f| |g|`.
+**Multiplicativity of the norm.** Let $F$ be a finite field with $q$ elements, and let
+$|f| = q^{\deg f}$ be the norm of a nonzero $f \in F[T]$. For all nonzero $f, g \in F[T]$,
+$|fg| = |f| \, |g|$.
 
 ## Depends on
 
-- [Fq Norm](fq-norm.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
 
 ## Proof depends on
 
-- [Fq Norm of ne zero](fq-norm-of-ne-zero.md)
+- [The norm of a nonzero polynomial](fq-norm-of-ne-zero.md)
 
 ## Sources
 

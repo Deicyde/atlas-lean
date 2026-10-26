@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squarePyramidalSquareDistance_average_asymptotic
 ---
 
-# Square Pyramidal Square Distance average asymptotic
+# Average distance from square pyramidal numbers to the nearest square
 
-The average `A(x) = (1/x) ∑_{1 ≤ n ≤ x} a_n` of the distance from a square pyramidal number
-to the nearest square satisfies `A(x) = x^{3/2} / (5√3) + O(x^{5/4})` for real `x ≥ 1`, with an
-absolute implied constant.
+**Average distance from square pyramidal numbers to the nearest square.** Let $a_n$ be the
+distance from the $n$-th square pyramidal number to the nearest square, and for real $x \ge 1$
+let $A(x) = \frac{1}{x} \sum_{1 \le n \le x} a_n$. There is a real constant $C$ such that for
+every real $x \ge 1$,
+
+$$\Bigl|A(x) - \frac{x^{3/2}}{5\sqrt{3}}\Bigr| \le C x^{5/4},$$
+
+that is, $A(x) = x^{3/2} / (5\sqrt{3}) + O(x^{5/4})$ with an absolute implied constant.
 
 ## Depends on
 
-- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
+- [Distance from a square pyramidal number to the nearest square](square-pyramidal-square-distance.md)
 
 ## Sources
 

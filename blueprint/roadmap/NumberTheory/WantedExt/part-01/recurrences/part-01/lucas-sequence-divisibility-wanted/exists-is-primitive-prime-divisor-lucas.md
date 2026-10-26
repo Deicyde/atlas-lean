@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPrimitivePrimeDivisor_lucasU_of_discr_pos
 ---
 
-# Exists is Primitive Prime Divisor lucas U of discr pos
+# Carmichael's primitive divisor theorem
 
-Carmichael: for nondegenerate `U(P, Q)` with `gcd(P, Q) = 1` and `D > 0`, `U_n` has a
-primitive prime divisor (a prime `p` with `ρ(p) = n`) for every `n ≥ 1` outside `{1, 2, 6, 12}`.
+**Carmichael's primitive divisor theorem.** Let $P$ and $Q$ be coprime integers forming a
+nondegenerate Lucas pair with discriminant $D = P^2 - 4Q > 0$, and let $(U_n)$ be the Lucas
+sequence $U(P, Q)$. Then for every $n \ge 1$ with $n \notin \{1, 2, 6, 12\}$, the term $U_n$ has
+a primitive prime divisor: a prime $p$ that divides $U_n$ but divides no $U_s$ with $1 \le s < n$.
 
 ## Depends on
 
-- [Is Primitive Prime Divisor](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_single_component_relIso
 ---
 
-# Ecsd single component rel Iso
+# Single-component degree-2 ECSDs up to isomorphism
 
-A degree-2 ECSD `G(d₁n + a₁, d₂n + a₂)` (`d₁, d₂ ∈ {2, -2}`, `a₁ - a₂` odd) with a
-single component is isomorphic to `G(2n, -2n + 1)` or to `G(-2n + 1, -2n + a)` with
-`a = 0`, `a = 2` or `a ≡ 1 (mod 3)`.
+**Single-component degree-2 ECSDs up to isomorphism.** Let $d_1, d_2 \in \{2, -2\}$ and let
+$a_1, a_2$ be integers with $a_1 - a_2$ odd. If the exact covering system digraph
+$G(d_1 n + a_1, d_2 n + a_2)$, with an edge $m \to d_i m + a_i$ for every integer $m$ and
+$i = 1, 2$, has a single component, that is, any two integers are joined by a path in its
+underlying undirected graph, then it is isomorphic as a digraph to $G(2n, -2n + 1)$ or to
+$G(-2n + 1, -2n + a)$ for some integer $a$ with $a = 0$, $a = 2$ or $a \equiv 1 \pmod 3$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

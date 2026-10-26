@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasTriangularNumber
 ---
 
-# Lucas Triangular Number
+# Lucas triangular numbers
 
-The Lucas analogue of the `n`-th triangular number.
+**Lucas triangular numbers.** For nondegenerate Lucas parameters $(s, t)$ and a natural
+number $n$, the $n$-th Lucas triangular number is the Lucasnomial coefficient
+$\binom{n+1}{2}_{s,t}$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucasnomial](lucasnomial.md)
+- [Lucasnomial coefficients](lucasnomial.md)
 
 ## Sources
 

@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tverbergTailSum_roundDown_two_bounds
 ---
 
-# Tverberg Tail Sum round Down two bounds
+# Bounds for two-term tail sums of Tverberg's sum with half-down rounding
 
-Theorem 10: for `a, b ∈ ℤ` and `m, K ∈ ℕ`, `-⌊m/2⌋ ≤ T_4({a, b}, m, K) ≤ ⌊m/2⌋`, and the lower
-bound is attained. The paper's existential is stated through the witness of its proof, for every
-even `m = 2r`: `a = b = K = r`. The paper takes `m, K ≥ 1`; the claims hold trivially at `0`.
+**Bounds for two-term tail sums of Tverberg's sum with half-down rounding.** Let
+$r^-(x) = \lceil x - 1/2 \rceil$. For integers $a, b$ and natural numbers $m, K$, let
+$T(a, b, m, K) = \sum_{k=1}^{K} f^{(r^-)}((a, b), m, k)$, where $f^{(r^-)}$ is Tverberg's sum
+with $F = r^-$. Then $-\lfloor m/2 \rfloor \le T(a, b, m, K) \le \lfloor m/2 \rfloor$ for all
+such $a, b, m, K$, and the lower bound is attained: for every natural number $r$,
+$T(r, r, 2r, r) = -r$.
+
+The paper assumes $m, K \ge 1$ and states attainment as an existence claim; here it is stated
+through the witness of the paper's proof, and the claims hold trivially at $m = 0$ or $K = 0$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

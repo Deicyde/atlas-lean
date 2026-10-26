@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coprimalityIndicator_small_values
 ---
 
-# Coprimality Indicator small values
+# Coprimality indicator of a single edge: examples
 
-Small values: for the single edge `(0, 1)`, `δ_G(2, 3) = 1` and
-`δ_G(2, 4) = 0`.
+**Coprimality indicator of a single edge: examples.** Let $G$ be the graph on the two
+vertices $0, 1$ with the single edge $(0, 1)$, with coprimality indicator $\delta_G$. Then
+$\delta_G(2, 3) = 1$ and $\delta_G(2, 4) = 0$.
 
 ## Depends on
 
-- [Coprimality Indicator](coprimality-indicator.md)
+- [Coprimality indicator of a graph](coprimality-indicator.md)
 
 ## Sources
 

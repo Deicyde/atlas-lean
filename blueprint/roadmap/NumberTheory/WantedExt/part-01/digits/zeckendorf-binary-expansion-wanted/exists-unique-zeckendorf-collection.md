@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_zeckendorfCollection
 ---
 
-# Exists Unique zeckendorf Collection
+# Zeckendorf collections are determined by their immediate predecessors
 
-Zeckendorf collections are determined by their immediate predecessors: given coefficient
-functions `θ^n` of order `n - 1` for `n ≥ 2`, there is a unique Zeckendorf collection with
-`β̂^n = θ^n` for each `n ≥ 2`. Zero-based: `θ m` (`m ≥ 1`) has last nonzero entry at index
-`m - 1`.
+**Zeckendorf collections are determined by their immediate predecessors.** Index
+coefficient functions from $0$, and for $m \in \mathbb N$ let $\beta^{(m)}$ be the coefficient
+function with entry $1$ at index $m$ and $0$ elsewhere. Suppose that for each $m \ge 1$ a finitely
+supported coefficient function $\theta^{(m)}$ is given whose entry at index $m - 1$ is nonzero and
+whose entries at all indices $j \ge m$ are $0$. Then there is a unique Zeckendorf collection $E$
+such that, for every $m \ge 1$, $\theta^{(m)}$ is the immediate predecessor of $\beta^{(m)}$ in
+$E$.
 
 ## Depends on
 
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
 
 ## Sources
 

@@ -23,13 +23,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Level Set](../../../part-11/selberg-sieve/level-set.md)
-- [Level Sum](../../../part-11/selberg-sieve/level-sum.md)
-- [Level Sum ge one](../../../part-11/selberg-sieve/level-sum-ge-one.md)
-- [Level Weights](../../../part-11/selberg-sieve/level-weights.md)
-- [Level Weights err Sum le](../../../part-11/selberg-sieve/level-weights-err-sum-le.md)
-- [Level Weights main Sum](../../../part-11/selberg-sieve/level-weights-main-sum.md)
-- [Level Weights one](../../../part-11/selberg-sieve/level-weights-one.md)
+- [Selberg level set](../../../part-11/selberg-sieve/level-set.md)
+- [Selberg level sum](../../../part-11/selberg-sieve/level-sum.md)
+- [The Selberg level sum is at least one](../../../part-11/selberg-sieve/level-sum-ge-one.md)
+- [Selberg sieve weights](../../../part-11/selberg-sieve/level-weights.md)
+- [Error bound for the Selberg level weights](../../../part-11/selberg-sieve/level-weights-err-sum-le.md)
+- [Main term of the Selberg level weights](../../../part-11/selberg-sieve/level-weights-main-sum.md)
+- [The Selberg level weight at one](../../../part-11/selberg-sieve/level-weights-one.md)
 
 ## Sources
 

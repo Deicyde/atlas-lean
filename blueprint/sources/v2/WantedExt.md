@@ -7,7 +7,7 @@ status: adopted
 
 Established results whose Lean implementation or proof is deferred. Source: <https://github.com/facebookresearch/atlas-lean/tree/main/WantedExt>.
 
-1336 modules declare 13354 public declarations. Leaving
+1336 modules declare 13353 public declarations. Leaving
 out 151 instances, the 13033 with a docstring are
 roadmap articles whose statement is that docstring, with its citations moved
 to the article's sources. Theorems are proved and definitions defined unless

@@ -17,7 +17,7 @@ greatest common unitary divisor satisfies $\gcd_1(a, b) = \gcd_1(b, a)$.
 
 ## Proof depends on
 
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

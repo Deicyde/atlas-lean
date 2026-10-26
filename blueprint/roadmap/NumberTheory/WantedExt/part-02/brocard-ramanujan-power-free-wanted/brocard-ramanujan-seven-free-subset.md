@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.brocardRamanujan_sevenFree_subset
 ---
 
-# Brocard Ramanujan seven Free subset
+# Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ seven-free
 
-The only solutions `(n, x)` of `n! + 1 = x ^ 2` with `x - 1` or `x + 1` a
-`7`-free number are among `(4, 5)`, `(5, 11)` and `(7, 71)`.
+**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ seven-free.** If natural numbers $n$
+and $x$ satisfy $n! + 1 = x^2$ and $x - 1$ or $x + 1$ is $7$-free, then $(n, x)$ is one of
+$(4, 5)$, $(5, 11)$ and $(7, 71)$.
 
 ## Depends on
 
-- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
+- [Power-free natural numbers](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

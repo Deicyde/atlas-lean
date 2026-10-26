@@ -13,8 +13,8 @@ is immediate).
 
 ## Depends on
 
-- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
-- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
+- [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Initial averages of a sequence](../../part-02/binomid-index-wanted/binomid-average.md)
 - [Max Average Indices](max-average-indices.md)
 
 ## Sources

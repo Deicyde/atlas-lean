@@ -19,12 +19,12 @@ where $S(n, k)$ is the Stirling number of the second kind. At $n = 0$ both sides
 
 ## Depends on
 
-- [Genocchi Number](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Proof depends on
 
 - [Garabedian's formula for the Bernoulli numbers, including $n = 0$](../garabedian-bernoulli-stirling/garabedian-genocchi-formula-general.md)
-- [Genocchi Number eq bernoulli](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-eq-bernoulli.md)
+- [Genocchi numbers in terms of Bernoulli numbers](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-eq-bernoulli.md)
 
 ## Sources
 

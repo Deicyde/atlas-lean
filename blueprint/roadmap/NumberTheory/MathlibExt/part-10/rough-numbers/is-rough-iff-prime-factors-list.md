@@ -7,18 +7,20 @@ proof: formalized
 lean: Nat.isRough_iff_primeFactorsList
 ---
 
-# Is Rough iff prime Factors List
+# Roughness through the list of prime factors
 
-Equivalent finite characterization through the prime-factor list.
+**Roughness through the list of prime factors.** For natural numbers $n$ and $k$, $n$ is
+$k$-rough if and only if $n \neq 0$ and every prime in the list of prime factors of $n$
+(with multiplicity) is greater than $k$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Lt of prime dvd](lt-of-prime-dvd.md)
-- [Ne zero](ne-zero.md)
+- [Prime divisors of a rough number exceed the bound](lt-of-prime-dvd.md)
+- [Rough numbers are nonzero](ne-zero.md)
 
 ## Sources
 

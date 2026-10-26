@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.gfp_fib_eq_sum_choose
 ---
 
-# Gfp fib eq sum choose
+# Explicit formula for Fibonacci-type generalized Fibonacci polynomials
 
-Lemma 3.1 (1) (quoted from Flórez and Saunders): for `n ≥ 1`, the Fibonacci-type GFP is
-`F_n = ∑_{i=0}^{⌊(n-1)/2⌋} C(n-i-1, i) d^{n-2i-1} g^i`.
+**Explicit formula for Fibonacci-type generalized Fibonacci polynomials.** Let $d$ and $g$ be
+polynomials with integer coefficients, and let $F_n$ be the generalized Fibonacci polynomials
+defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = d F_{n+1} + g F_n$. Then for every $n \ge 1$,
+
+$$F_n = \sum_{i=0}^{\lfloor (n-1)/2 \rfloor} \binom{n-i-1}{i} d^{n-2i-1} g^i.$$
+
+The source quotes this formula from Flórez and Saunders.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

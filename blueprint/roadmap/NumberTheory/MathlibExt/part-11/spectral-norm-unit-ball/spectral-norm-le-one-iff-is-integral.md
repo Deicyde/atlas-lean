@@ -7,12 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.spectralNorm_le_one_iff_isIntegral
 ---
 
-# Spectral Norm le one iff is Integral
+# Spectral-norm unit ball is the integral closure
 
-Unit ball of the spectral norm: under the essential base-unit-ball hypothesis
-`hA` (the closed unit ball of `K` is exactly the integral closure of `A` in `K`),
-the closed unit ball of the spectral norm on `L` is exactly the integral closure
-of `A` in `L`.
+**Spectral-norm unit ball is the integral closure.** Let $A$ be an integral domain, $K$ a
+complete nontrivially normed field whose norm is ultrametric, and $L$ a field extension of $K$ of
+finite degree, where $K$ and $L$ are $A$-algebras and the algebra maps $A \to K \to L$ compose to
+$A \to L$. Suppose that for every $y \in K$, $\|y\| \le 1$ if and only if $y$ is integral over
+$A$. Then for every $x \in L$, the spectral norm of $x$ over $K$ is at most $1$ if and only if
+$x$ is integral over $A$.
 
 ## Depends on
 

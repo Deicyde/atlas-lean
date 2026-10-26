@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.triangular_sylvester_values_eq
 ---
 
-# Corollary 1(b)
+# The only triangular Sylvester number is $3$
 
-**Corollary 1(b)**: the triangular values hit by the Sylvester
-sequence are exactly `3`.  Triangular is encoded without division by
-`2 * x = m * (m + 1)` for positive `m`.
+**The only triangular Sylvester number is $3$.** Let $S_n$ denote the $n$-th Sylvester
+number. A natural number $x$ equals $S_n$ for some $n$ and satisfies $2x = m(m + 1)$ for some
+natural number $m \ge 1$ if and only if $x = 3$.
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

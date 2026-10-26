@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_product_four_index_identity
 ---
 
-# Gibonacci product four index identity
+# Four-index product identity for two gibonacci sequences
 
-For gibonacci sequences `G`, `H` and integers `k`, `r`, `s`, `t`:
-`F_s (G_0 H_(k+r+t-1) + G_1 H_(k+r+t)) - (-1)^r F_(s-r) G_k (H_(t+1)+H_(t-1))
- + (-1)^r G_k H_(s-r+t) = G_(k+s) H_(r+t)`.
+**Four-index product identity for two gibonacci sequences.** Let
+$G, H : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$ and $j \mapsto H_j$, satisfy
+$G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$, and let $F_m$ be
+the Fibonacci numbers, extended to negative indices by $F_{-m} = (-1)^{m+1} F_m$. Then for all
+integers $k$, $r$, $s$ and $t$,
+
+$$
+F_s (G_0 H_{k+r+t-1} + G_1 H_{k+r+t}) - (-1)^r F_{s-r} G_k (H_{t+1} + H_{t-1}) +
+(-1)^r G_k H_{s-r+t} = G_{k+s} H_{r+t}.
+$$
 
 ## Depends on
 

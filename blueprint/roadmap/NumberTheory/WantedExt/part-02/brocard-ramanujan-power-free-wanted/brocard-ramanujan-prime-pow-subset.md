@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.brocardRamanujan_primePow_subset
 ---
 
-# Brocard Ramanujan prime Pow subset
+# Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power
 
-The only solution `(n, x)` of `n! + 1 = x ^ 2` with `x - 1` or `x + 1` a prime
-power is `(4, 5)`.
+**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power.** If natural numbers
+$n$ and $x$ satisfy $n! + 1 = x^2$ and $x - 1$ or $x + 1$ is a prime power, then
+$(n, x) = (4, 5)$.
 
 ## Depends on
 

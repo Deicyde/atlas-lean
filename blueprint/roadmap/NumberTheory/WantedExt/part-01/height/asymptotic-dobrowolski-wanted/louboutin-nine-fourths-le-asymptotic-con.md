@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.louboutin_nine_fourths_le_asymptoticConstant
 ---
 
-# Louboutin nine fourths le asymptotic Constant
+# Louboutin's lower bound for the asymptotic Dobrowolski constant
 
-Source: Louboutin (1983), as reported by Voutier, coefficient `9/4`.
+**Louboutin's lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+Dobrowolski constant is at least $9/4$, as an extended real number.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ Source: Louboutin (1983), as reported by Voutier, coefficient `9/4`.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Height.AsymptoticDobrowolskiWanted](../../../../../../sources/v2/WantedExt.md)
+- Louboutin (1983), as reported by Voutier, coefficient `9/4`.

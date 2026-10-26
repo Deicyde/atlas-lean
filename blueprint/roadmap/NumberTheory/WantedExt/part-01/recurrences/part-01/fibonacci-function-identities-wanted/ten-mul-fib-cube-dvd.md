@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ten_mul_fib_cube_dvd
 ---
 
-# Ten mul fib cube dvd
+# Ten times a Fibonacci cube divides a Fibonacci–Lucas combination
 
-Divisibility consequence of Proposition 5: for natural `k` and `n`,
-`10 F_k^3` divides `(2n+1) F_(2k) L_((2n+1)k) - F_((2n+1)k) L_k^2`.
+**Ten times a Fibonacci cube divides a Fibonacci–Lucas combination.** Let $F_m$ denote the
+Fibonacci numbers and $L_m$ the Lucas numbers. For all natural numbers $k$ and $n$, the integer
+$10 F_k^3$ divides $(2n+1) F_{2k} L_{(2n+1)k} - F_{(2n+1)k} L_k^2$.
 
 ## Depends on
 
-- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

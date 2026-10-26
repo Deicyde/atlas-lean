@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_centralBinom_mul_choose_sub_one
 ---
 
-# Central Binom add ne central Binom mul choose sub one
+# Central binomial products in the case $x = a - 1$
 
-Lemma 2: for positive `a`, `b` with `4 < 2a ≤ a + b`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(a+2b-1, b)`.
+**Central binomial products in the case $x = a - 1$.** Let $a$ and $b$ be natural numbers
+with $4 < 2a \le a + b$. Then $\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{a+2b-1}{b}$, so the
+equation $\binom{2(a+b)}{a+b} = \binom{2a}{a}\binom{x+2b}{b}$ has no solution with $x = a - 1$.
 
 ## Depends on
 

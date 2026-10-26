@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.SelbergSieve.levelWeights_nu_mul_abs_le
 ---
 
-# Level Weights nu mul abs le
+# Weighted bound for the Selberg level weights
 
-The absolute value of `s.nu d` times the level weight at a divisor `d` is at most one.
+**Weighted bound for the Selberg level weights.** For a bounding sieve whose sifting primes
+have product $P$, with density function $\nu$, a natural number $R \ge 1$ and a divisor $d$ of
+$P$, the level-$R$ Selberg weight $\lambda_d$ at $d$ satisfies $|\nu(d)\,\lambda_d| \le 1$.
 
 ## Depends on
 
-- [Level Weights](level-weights.md)
+- [Selberg sieve weights](level-weights.md)
 
 ## Proof depends on
 
-- [Level Set](level-set.md)
-- [Level Sum](level-sum.md)
-- [Level Sum ge one](level-sum-ge-one.md)
-- [Level Y](level-y.md)
+- [Selberg level set](level-set.md)
+- [Selberg level sum](level-sum.md)
+- [The Selberg level sum is at least one](level-sum-ge-one.md)
+- [Normalized Selberg coefficients](level-y.md)
 
 ## Sources
 

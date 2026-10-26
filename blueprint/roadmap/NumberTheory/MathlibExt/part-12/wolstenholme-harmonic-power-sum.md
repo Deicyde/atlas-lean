@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.wolstenholme_harmonic_power_sum
 ---
 
-# Wolstenholme Power Sums
+# Wolstenholme's congruence for odd powers
 
-For odd `ν ≥ 1` and prime `p ≥ ν + 4`, the `ν`-th harmonic power sum through
-`p - 1` vanishes modulo `p²`. Inverses are taken in `ZMod (p ^ 2)`, where every
-`t < p` is a unit.
+**Wolstenholme's congruence for odd powers.** Let $\nu \ge 1$ be odd and let $p$ be a prime with
+$p \ge \nu + 4$. Then in $\mathbb{Z}/p^2\mathbb{Z}$
 
-The source notes there (lines 108–111) that this is Theorem 131 of Hardy and
-Wright, a generalization of the 1862 Wolstenholme congruence, first studied by
-Leudesdorf.
-Proves `Wanted` entry `wolstenholme_harmonic_power_sum`.
+$$
+\sum_{t=1}^{p-1} (t^{\nu})^{-1} = 0,
+$$
+
+where each $t^{\nu}$ is invertible modulo $p^2$ because $1 \le t < p$.
+
+For $\nu = 1$ this is Wolstenholme's congruence of 1862; the general statement is Theorem 131 of
+Hardy and Wright and was first studied by Leudesdorf.
 
 ## Depends on
 

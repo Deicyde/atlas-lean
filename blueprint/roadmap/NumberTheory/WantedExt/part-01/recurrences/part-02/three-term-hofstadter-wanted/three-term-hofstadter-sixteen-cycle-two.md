@@ -5,21 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_sixteenCycle_two
 ---
 
-# Three Term Hofstadter sixteen Cycle two
+# Second sixteen-cycle lemma for the three-term Hofstadter-like recurrence
 
-Second sixteen-cycle lemma. Let `K, λ, μ₁, μ₂, γ₁, γ₂, γ₃` be positive integers with
-`λ > 31 + K` and `μ₁, μ₂, γ₁, γ₂, γ₃ > λ`. For arbitrary integers `a_1, …, a_K`, the padded
-sequence with initial conditions
-`⟨0̄; a_1, …, a_K, 16, μ₂, 7, γ₂, λ, 16, λ, 16, μ₁, 10, γ₃, μ₂, 7, λ, 16, γ₁⟩` satisfies, from
-index `K + 1` through index `λ`, `B(K+16k) = μ₁ 2^k + γ₁ - 2μ₁`, `B(K+16k+1) = 16`,
-`B(K+16k+2) = μ₂ 2^k`, `B(K+16k+3) = 7`, `B(K+16k+4) = 7k + γ₂`, `B(K+16k+5) = λ`,
-`B(K+16k+6) = 16`, `B(K+16k+7) = λ`, `B(K+16k+8) = 16`, `B(K+16k+9) = μ₁ 2^k`,
-`B(K+16k+10) = 10`, `B(K+16k+11) = 16k + γ₃`, `B(K+16k+12) = μ₂ 2^k`, `B(K+16k+13) = 7`,
-`B(K+16k+14) = λ`, `B(K+16k+15) = 16`.
+**Second sixteen-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$
+be a natural number and let $\lambda$, $\mu_1$, $\mu_2$, $\gamma_1$, $\gamma_2$, $\gamma_3$ be
+integers with $\lambda > 31 + K$ and $\mu_1, \mu_2, \gamma_1, \gamma_2, \gamma_3 > \lambda$. Let
+$a_1, \dots, a_K$ be arbitrary integers and let $B$ be the padded three-term Hofstadter-like
+sequence with initial conditions $a_1, \dots, a_K, 16, \mu_2, 7, \gamma_2, \lambda, 16, \lambda,
+16, \mu_1, 10, \gamma_3, \mu_2, 7, \lambda, 16, \gamma_1$. Then for all natural numbers $k$ and
+$r \le 15$ with $K + 1 \le K + 16k + r \le \lambda$, the term $B(K + 16k + r)$ is defined, and
+these terms are $B(K + 16k) = \mu_1 2^k + \gamma_1 - 2\mu_1$, $B(K + 16k + 1) = 16$,
+$B(K + 16k + 2) = \mu_2 2^k$, $B(K + 16k + 3) = 7$, $B(K + 16k + 4) = 7k + \gamma_2$,
+$B(K + 16k + 5) = \lambda$, $B(K + 16k + 6) = 16$, $B(K + 16k + 7) = \lambda$,
+$B(K + 16k + 8) = 16$, $B(K + 16k + 9) = \mu_1 2^k$, $B(K + 16k + 10) = 10$,
+$B(K + 16k + 11) = 16k + \gamma_3$, $B(K + 16k + 12) = \mu_2 2^k$, $B(K + 16k + 13) = 7$,
+$B(K + 16k + 14) = \lambda$ and $B(K + 16k + 15) = 16$.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

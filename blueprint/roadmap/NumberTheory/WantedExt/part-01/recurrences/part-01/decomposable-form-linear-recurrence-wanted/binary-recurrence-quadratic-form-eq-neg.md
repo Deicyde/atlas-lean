@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.binary_recurrence_quadratic_form_eq_neg_pow_mul_sq
 ---
 
-# Binary recurrence quadratic form eq neg pow mul sq
+# Quadratic form identity for binary recurrences
 
-Two sequences `G`, `H` with `xₙ₊₂ = A xₙ₊₁ + B xₙ` satisfy
-`C_H Gₙ² + C_{GH} Gₙ Hₙ + C_G Hₙ² = (-B)ⁿ Δ²` for all `n ≥ 0`, where
-`C_G = G₁² - A G₀ G₁ - B G₀²`, `C_H = H₁² - A H₀ H₁ - B H₀²`, `C_{GH} = -(E₁₀ + E₀₁)` with
-`E₁₀ = G₁ H₁ - A G₁ H₀ - B G₀ H₀`, `E₀₁ = G₁ H₁ - A G₀ H₁ - B G₀ H₀`, and
-`Δ = G₀ H₁ - G₁ H₀`. Stated over any commutative ring and without the source's `Δ ≠ 0`
-(the identity is polynomial in the initial values); definitions read from
-arXiv:2308.13817v1, Section 6.1.
+**Quadratic form identity for binary recurrences.** Let $R$ be a commutative ring, let
+$A, B \in R$, and let $(G_n)_{n \ge 0}$ and $(H_n)_{n \ge 0}$ be sequences in $R$ with
+$G_{n+2} = A G_{n+1} + B G_n$ and $H_{n+2} = A H_{n+1} + B H_n$ for all $n \ge 0$. Put
+$C_G = G_1^2 - A G_0 G_1 - B G_0^2$, $C_H = H_1^2 - A H_0 H_1 - B H_0^2$,
+$E_{10} = G_1 H_1 - A G_1 H_0 - B G_0 H_0$, $E_{01} = G_1 H_1 - A G_0 H_1 - B G_0 H_0$ and
+$\Delta = G_0 H_1 - G_1 H_0$. Then for every $n \ge 0$,
+
+$$C_H G_n^2 - (E_{10} + E_{01}) G_n H_n + C_G H_n^2 = (-B)^n \Delta^2.$$
+
+The source assumes $\Delta \neq 0$; the identity holds without it, since it is polynomial in the
+initial values. The notation follows Section 6.1 of arXiv:2308.13817v1.
 
 ## Depends on
 

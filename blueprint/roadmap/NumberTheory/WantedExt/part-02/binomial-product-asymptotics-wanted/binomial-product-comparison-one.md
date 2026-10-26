@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.binomialProductComparison_one
 ---
 
-# Binomial Product Comparison one
+# Value of the binomial-product comparison function at $1$
 
-`P_{a,b}(1) = (a^a/(b^b c^c)) / ((2π/e)(bc/a))^{1/2}`.
+**Value of the binomial-product comparison function at $1$.** For natural numbers $a$ and
+$b$, let $c = a - b$ if $b \le a$ and $c = 0$ otherwise. Then the binomial-product comparison
+function $P_{a,b}$ satisfies
+
+$$P_{a,b}(1) = \frac{a^a / (b^b c^c)}{\bigl((2\pi/e)(bc/a)\bigr)^{1/2}}.$$
 
 ## Depends on
 
-- [Binomial Product Comparison](binomial-product-comparison.md)
+- [Comparison function for products of binomial coefficients](binomial-product-comparison.md)
 
 ## Sources
 

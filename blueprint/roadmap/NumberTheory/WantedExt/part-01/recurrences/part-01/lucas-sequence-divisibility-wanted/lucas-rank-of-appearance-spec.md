@@ -6,16 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasRankOfAppearance_spec
 ---
 
-# Lucas Rank Of Appearance spec
+# The rank of appearance in a Lucas sequence is attained
 
-Specification of `ρ(m)`: when some positive `r` has `m ∣ U_r`, `ρ(m)` is itself positive
-and `m ∣ U_{ρ(m)}`; with `lucasRankOfAppearance_le_of_dvd` it is the least such index.
+**The rank of appearance in a Lucas sequence is attained.** Let $U = U(P, Q)$ be a Lucas
+sequence and $m$ a natural number. If $m \mid U_r$ for some positive integer $r$, then the rank of
+appearance $\rho(m)$ of $m$ in $U$ is positive and $m \mid U_{\rho(m)}$.
+
+Together with the bound $\rho(m) \le r$ for every positive $r$ with $m \mid U_r$, this makes
+$\rho(m)$ the least such index.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

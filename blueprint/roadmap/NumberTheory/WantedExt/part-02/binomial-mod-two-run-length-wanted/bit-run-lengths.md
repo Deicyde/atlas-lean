@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bitRunLengths
 ---
 
-# Bit Run Lengths
+# Run lengths of a digit list
 
-The lengths of the maximal runs of `1`s in a list of binary digits, where `c` is the length of
-the run of `1`s read just before the list (a digit other than `1` ends a run).
+**Run lengths of a digit list.** Given a list $b_1, \dots, b_k$ of natural numbers (binary
+digits) and a natural number $c$, this is the list, in order of occurrence, of the lengths of the
+maximal runs of $1$s in the sequence consisting of $c$ ones followed by $b_1, \dots, b_k$, where
+every digit other than $1$ ends a run.
 
 ## Depends on
 

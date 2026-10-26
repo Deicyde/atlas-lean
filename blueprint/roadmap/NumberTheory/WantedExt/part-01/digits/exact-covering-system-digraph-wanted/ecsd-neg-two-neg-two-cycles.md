@@ -5,23 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_neg_two_neg_two_cycles
 ---
 
-# Ecsd neg two neg two cycles
+# Cycles of $G(-2n, -2n + a)$
 
-Cycles of the Type 3.1 ECSD `G(-2n, -2n + a)`, `a ∈ ℕ` odd: (i) the only loops are at
-`0` and, when `3 ∣ a`, at `a / 3`; (ii) `m` is cyclic iff `-a/3 ≤ m ≤ 2a/3`;
-(iii) if `3 ∤ a` there are `a` cyclic vertices, one in each class mod `a`; if `3 ∣ a`
-there are `a + 1`, one in each class except the class of `-a/3 ≡ 2a/3`, and
-`(-a/3, 2a/3)` is a 2-cycle; (iv) with `x̂` the representative of `x` mod `a` in
-`(-a/3, 2a/3]`, written `(x + (a - 1)/3) % a - (a - 1)/3`, the list
-`C = ((-2)ᵏ)^` for `0 ≤ k < ord(-2, a)` is a cycle, and so is each cocycle
-`bC = (b(-2)ᵏ)^` of length `ord(-2, a / gcd(a, b))` for `-a/3 < b < 2a/3`,
-`b ∉ {0, a/3}`; (v) for `a = t a'`, `C` is a cycle of `G(-2n, -2n + a')` iff `tC` is a
-cycle of `G(-2n, -2n + a)` (the hypothesis that `a'` is odd is dropped as implied).
+**Cycles of $G(-2n, -2n + a)$.** Let $a$ be an odd natural number and $G = G(-2n, -2n + a)$.
+A cycle of $G$ is a list $(c_1, \dots, c_t)$, $t \ge 1$, of distinct integers with edges
+$c_1 \to c_2, \dots, c_{t-1} \to c_t$ and $c_t \to c_1$; a vertex is cyclic if it lies on a
+cycle. For an integer $x$ let $\hat{x}$ be the representative of $x$ modulo $a$ in the interval
+$(-a/3, 2a/3]$, and let $\operatorname{ord}_q(-2)$ be the multiplicative order of $-2$ modulo
+$q$. Then:
+(i) for every integer $m$, $G$ has a loop at $m$ iff $m = 0$ or $3m = a$;
+(ii) an integer $m$ is cyclic iff $-a \le 3m \le 2a$;
+(iii) if $3 \nmid a$, then $G$ has exactly $a$ cyclic vertices and each residue class modulo
+$a$ contains exactly one of them; if $3 \mid a$, then $G$ has exactly $a + 1$ cyclic vertices,
+each residue class modulo $a$ other than the class of $2a/3$ contains exactly one of them, and
+the two-vertex list $(-a/3, 2a/3)$ is a cycle of $G$;
+(iv) the list $(\widehat{(-2)^k})_{0 \le k < \operatorname{ord}_a(-2)}$ is a cycle of $G$, and
+for every integer $b$ with $-a < 3b < 2a$, $b \ne 0$ and $3b \ne a$, so is the list
+$(\widehat{b(-2)^k})_{0 \le k < \operatorname{ord}_{a/\gcd(a, b)}(-2)}$;
+(v) if $a = t a'$ with $t, a' \in \mathbb{N}$, then a list $C$ of integers is a cycle of
+$G(-2n, -2n + a')$ iff the list $tC$ obtained by multiplying every entry by $t$ is a cycle of
+$G$.
+
+The paper also assumes $a'$ odd in (v); this follows from $a$ odd.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

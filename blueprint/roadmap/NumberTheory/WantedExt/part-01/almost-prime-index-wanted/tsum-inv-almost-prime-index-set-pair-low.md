@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_almostPrimeIndexSet_pair_lower_bound
 ---
 
-# Tsum inv almost Prime Index Set pair lower bound
+# Lower bound for reciprocal sums over almost primes of almost prime index
 
-For fixed `j ≥ 1`, `∑_{n ∈ N_{jk}} 1/n ≫ k^{j-1}` as `k → ∞`; in particular, for fixed
-`j ≥ 2` this reciprocal sum tends to infinity with `k`.
+**Lower bound for reciprocal sums over almost primes of almost prime index.** A $k$-almost
+prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
+integers $j$ and $k$ let $N_{jk}$ be the set of $j$-almost primes whose index in the increasing
+enumeration of the $j$-almost primes (starting at $1$) is a $k$-almost prime. Fix an integer
+$j \ge 1$. There is a real constant $c > 0$ such that
+
+$$
+\sum_{n \in N_{jk}} \frac{1}{n} \ge c \, k^{j-1}
+$$
+
+for all sufficiently large $k$. Moreover, if $j \ge 2$, then $\sum_{n \in N_{jk}} 1/n \to \infty$
+as $k \to \infty$.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

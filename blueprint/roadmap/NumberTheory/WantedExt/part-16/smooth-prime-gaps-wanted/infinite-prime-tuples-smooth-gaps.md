@@ -17,7 +17,7 @@ increasing `m`-tuples of primes `p_1 < ⋯ < p_m` all of whose gaps `p_i - p_j` 
 
 ## Depends on
 
-- [Is Admissible Finset](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
+- [Admissible finite sets of integers](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
 
 ## Sources
 

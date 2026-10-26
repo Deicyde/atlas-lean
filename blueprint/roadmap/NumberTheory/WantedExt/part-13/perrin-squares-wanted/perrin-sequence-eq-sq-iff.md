@@ -12,7 +12,7 @@ Theorem 1: the only solution of `R_n = R_m ^ 2` in positive integers is
 
 ## Depends on
 
-- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
+- [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

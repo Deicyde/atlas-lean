@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxUpToError
 ---
 
-# Bombieri Vinogradov Max Up To Error
+# Maximal residue-class error up to a level
 
-The maximal residue-class error over all levels `y ≤ x` for the modulus
-`q`, with default zero.
+**Maximal residue-class error up to a level.** For natural numbers $x$ and $q$,
+$E^{\ast\ast}(x; q)$ is the maximum of the maximal residue-class error $E^{\ast}(y; q)$ over the
+natural numbers $y \le x$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bombieri Vinogradov Max Residue Error](bombieri-vinogradov-max-residue-error.md)
+- [Maximal residue-class error](bombieri-vinogradov-max-residue-error.md)
 
 ## Sources
 

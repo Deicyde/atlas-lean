@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsHoeySloaneStep
 ---
 
-# Is Hoey Sloane Step
+# Transitions of the Hoey-Sloane machine
 
-One transition of the `(n, b)`-Hoey-Sloane machine `Γ`: the input `e = (d₁, d₂)`, an
-edge of the mother graph, moves state `c₁` to state `c₂` (both `< n`) when
-`b c₂ - c₁ = n d₂ - d₁` (Equation (1)).
+**Transitions of the Hoey-Sloane machine.** Let $n$, $b$, $c_1$, $c_2$, $d_1$ and $d_2$ be
+natural numbers. The input $e = (d_1, d_2)$ moves state $c_1$ to state $c_2$ in one transition of
+the $(n, b)$-Hoey-Sloane machine $\Gamma$ when $c_1 < n$, $c_2 < n$, $(d_1, d_2)$ is an edge of
+the $(n, b)$-mother graph, and $b c_2 - c_1 = n d_2 - d_1$ in the integers (Equation (1)).
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Edges of the mother graph](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

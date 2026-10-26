@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bernoulli_derivative_integral_iff
 ---
 
-# Bernoulli derivative integral iff
+# Integrality of the derivative of a Bernoulli polynomial
 
-For `n ≥ 1`: `B_n'(x) ∈ ℤ[x]` iff `𝔻^⊥_n = 1`, iff `𝔇_{n-1} = rad(n)`; in these cases `n + 1`
-is prime.
+**Integrality of the derivative of a Bernoulli polynomial.** Let $n \ge 1$, let $B_m(x)$
+denote the $m$-th Bernoulli polynomial, write $s_p(n)$ for the sum of the base-$p$ digits of $n$,
+and let $\mathbb{D}^\perp_n$ be the product of the primes $p$ with $p \nmid n$ and
+$s_p(n) \ge p$. Then $B_n'(x)$ has integer coefficients if and only if $\mathbb{D}^\perp_n = 1$,
+and $\mathbb{D}^\perp_n = 1$ if and only if the denominator of $B_{n-1}(x)$ equals the radical
+$\operatorname{rad}(n)$. Moreover, if $B_n'(x)$ has integer coefficients, then $n + 1$ is prime.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
-- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
+- [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
+- [Indices of Bernoulli polynomials with integral $k$-th derivative](bernoulli-integral-derivative-indices.md)
 - [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources

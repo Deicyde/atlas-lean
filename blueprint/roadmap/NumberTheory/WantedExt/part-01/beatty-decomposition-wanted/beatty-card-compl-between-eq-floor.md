@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.beatty_card_compl_between_eq_floor
 ---
 
-# Beatty card compl between eq floor
+# Counting $\beta$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
-For complementary Beatty sequences with slopes `1 < α < 2` and `β`, the number
-`r n` of elements of `B` strictly between `⌊nα⌋` and `⌊nβ⌋` equals `⌊(2 - α) n⌋` for
-every positive integer `n`.
+**Counting $\beta$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$.**
+Let $\alpha$ be an irrational number with $1 < \alpha < 2$, let $\beta$ be a real number with
+$\alpha^{-1} + \beta^{-1} = 1$, and let $B$ be the set of the numbers $\lfloor k\beta\rfloor$ for
+positive integers $k$. Then for every positive integer $n$, the number of elements of $B$ in the
+open interval $(\lfloor n\alpha\rfloor, \lfloor n\beta\rfloor)$ equals
+$\lfloor n(2 - \alpha)\rfloor$.
+
+By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then complementary.
 
 ## Depends on
 

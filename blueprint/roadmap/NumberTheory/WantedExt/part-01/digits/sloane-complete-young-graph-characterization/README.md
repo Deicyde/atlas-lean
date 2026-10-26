@@ -5,5 +5,5 @@ navigation: module
 
 # Sloane Complete Young Graph Characterization
 
-- [Is Complete Young Graph](is-complete-young-graph.md)
-- [Sloane complete young graph characterization](sloane-complete-young-graph-characteriza.md)
+- [Complete Young graphs](is-complete-young-graph.md)
+- [Characterization of complete Young graphs](sloane-complete-young-graph-characteriza.md)

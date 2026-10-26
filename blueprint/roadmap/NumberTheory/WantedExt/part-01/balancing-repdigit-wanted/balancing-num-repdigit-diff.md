@@ -5,19 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.balancingNum_repdigitDiff
 ---
 
-# Balancing Num repdigit Diff
+# Balancing numbers that are differences of two repdigits
 
-If `B_k` is a difference of two repdigits then `B_k ∈ {6, 35}`; the paper displays
-`B_2 = 6 = 11 - 5` and `B_3 = 35 = 44 - 9`.
+**Balancing numbers that are differences of two repdigits.** Let $k \ge 2$ be a natural
+number. If the balancing number $B_k$ is a difference of two repdigits, then $B_k = 6$ or
+$B_k = 35$.
 
-The hypothesis `2 ≤ k` is included because `B_1 = 1 = 2 - 1` is also a
-difference of two repdigits but is not in the paper's list; with `k ≥ 2` the
-statement was verified computationally for `k ≤ 9`.
+The hypothesis $k \ge 2$ excludes $B_0 = 0 = 1 - 1$ and $B_1 = 1 = 2 - 1$, which are also
+differences of two repdigits.
 
 ## Depends on
 
-- [Is Repdigit Diff](is-repdigit-diff.md)
-- [Balancing Num](balancing-num.md)
+- [Differences of two repdigits](is-repdigit-diff.md)
+- [Balancing numbers](balancing-num.md)
 
 ## Sources
 

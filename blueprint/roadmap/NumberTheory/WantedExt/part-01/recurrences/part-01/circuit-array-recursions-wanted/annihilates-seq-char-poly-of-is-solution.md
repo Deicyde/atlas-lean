@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.annihilatesSeq_charPoly_of_isSolution
 ---
 
-# Annihilates Seq char Poly of is Solution
+# The characteristic polynomial annihilates the solutions of its recurrence
 
-A characteristic polynomial of a sequence annihilates it: if `G` solves the linear recurrence
-`E`, then `E.charPoly` annihilates `G`.
+**The characteristic polynomial annihilates the solutions of its recurrence.** Let $K$ be a
+field, $d \ge 0$ and $a_0, \dots, a_{d-1} \in K$. If a sequence $G \colon \mathbb{N} \to K$
+satisfies $G_{n+d} = \sum_{i=0}^{d-1} a_i G_{n+i}$ for every $n \ge 0$, then the characteristic
+polynomial $X^d - \sum_{i=0}^{d-1} a_i X^i$ of this recurrence annihilates $G$.
 
 ## Depends on
 
-- [Annihilates Seq](annihilates-seq.md)
+- [Annihilator of a sequence](annihilates-seq.md)
 
 ## Sources
 

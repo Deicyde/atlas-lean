@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_small_base_binomialForm_two_pow
 ---
 
-# Exists small base binomial Form two pow
+# Powers of 2 have binomial forms in small bases
 
-For every `n ≥ 2`, `2^n` has a base-`b` binomial form representation for some
-`b ≤ 2^y - 1` with `y ≤ ⌈√(2n)⌉ + 1`.
+**Powers of 2 have binomial forms in small bases.** For every natural number $n \ge 2$ there
+are natural numbers $y$ and $b$ with $y \le \lceil \sqrt{2n} \rceil + 1$ and $2 \le b \le 2^y - 1$
+such that $2^n$ has a base-$b$ representation in binomial form.
 
 ## Depends on
 
-- [Has Binomial Form](has-binomial-form.md)
+- [Binomial form](has-binomial-form.md)
 
 ## Sources
 

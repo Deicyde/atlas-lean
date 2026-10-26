@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_commaParent_of_sq_le
 ---
 
-# Exists comma Parent of sq le
+# Every number at least the square of the base is a comma-child
 
-In base `b ≥ 2`, every `n ≥ b²` is a comma-child of some positive integer (the numbers that
-are not comma-children all lie in `1 ≤ n ≤ b² - 1`).
+**Every number at least the square of the base is a comma-child.** Let $b \ge 2$ and
+$n \ge b^2$. Then there are a positive integer $k$ and a comma candidate digit $y$ of $k$ in
+base $b$ with $n = k + b\,(k \bmod b) + y$, that is, $n$ is a comma-child of $k$.
 
 ## Depends on
 

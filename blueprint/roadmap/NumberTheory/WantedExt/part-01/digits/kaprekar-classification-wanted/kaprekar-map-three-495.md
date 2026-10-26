@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kaprekarMap_three_495
 ---
 
-# Kaprekar Map three 495
+# 495 is fixed by the three-digit Kaprekar map
 
-Characteristic value: `495` is fixed in `D_3`.
+**495 is fixed by the three-digit Kaprekar map.** The Kaprekar map with $n = 3$ sends $495$ to
+itself: $954 - 459 = 495$.
 
 ## Depends on
 
-- [Kaprekar Map](kaprekar-map.md)
+- [Kaprekar map](kaprekar-map.md)
 
 ## Sources
 

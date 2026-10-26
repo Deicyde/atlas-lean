@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.circuitDelta
 ---
 
-# Circuit Delta
+# Delta-wye resistance function
 
-The `Δ`-`Y` resistance function `Δ(x, y, z) = xy / (x + y + z)`.
+**Delta-wye resistance function.** For elements $x$, $y$, $z$ of a field $K$, the delta-wye
+resistance function is $\Delta(x, y, z) = \frac{xy}{x + y + z}$.
+
+Division follows the convention $a / 0 = 0$, so $\Delta(x, y, z) = 0$ when $x + y + z = 0$.
 
 ## Depends on
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.isPowerFree_two
 ---
 
-# Is Power Free two
+# A natural number is 2-free if and only if it is squarefree
 
-`2`-free is exactly squarefree, via `Nat.squarefree_iff_prime_squarefree`.
+**A natural number is 2-free if and only if it is squarefree.** For every natural number $n$,
+$n$ is $2$-free if and only if $n$ is squarefree, that is, $d^2$ divides $n$ only for $d = 1$.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Proof depends on
 
-- [Not dvd](not-dvd.md)
+- [A k-free number has no prime k-th power divisor](not-dvd.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.succ_dvd_of_palindrome_even_length
 ---
 
-# Succ dvd of palindrome even length
+# Even-length palindromes are divisible by the base plus one
 
-A palindromic representation with an even number of digits
-`(c_{2k+1}, …, c_0)_b` of `N` forces `b + 1 ∣ N`.
+**Even-length palindromes are divisible by the base plus one.** Let $b \ge 2$ and let $N$ be a
+natural number whose base-$b$ digits form a palindrome with an even number of digits. Then
+$b + 1$ divides $N$.
 
 ## Depends on
 

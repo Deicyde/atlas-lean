@@ -6,9 +6,12 @@ proof: formalized
 lean: Zsqrtd.NegTwo.natAbs_norm_mod_lt'
 ---
 
-# Nat Abs norm mod lt'
+# The remainder is smaller than the divisor, in absolute norm
 
-The `natAbs` remainder norm is smaller than the divisor norm.
+**The remainder is smaller than the divisor, in absolute norm.** Let $x, y$ be elements of
+$\mathbb{Z}[\sqrt{-2}]$ with $y \ne 0$, and let $N(a + b\sqrt{-2}) = a^2 + 2b^2$ be the norm.
+The remainder $x \bmod y = x - y\,(x / y)$ of the rounding division of $\mathbb{Z}[\sqrt{-2}]$
+satisfies $|N(x \bmod y)| < |N(y)|$ as natural numbers.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm mod lt'](norm-mod-lt.md)
-- [Norm nonneg'](norm-nonneg.md)
+- [The remainder is smaller than the divisor in $\mathbb{Z}(\sqrt{-2})$](norm-mod-lt.md)
+- [The norm on $\mathbb{Z}(\sqrt{-2})$ is nonnegative](norm-nonneg.md)
 
 ## Sources
 

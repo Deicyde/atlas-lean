@@ -15,7 +15,7 @@ $a$ and a unitary divisor of $b$.
 ## Depends on
 
 - [Greatest common unitary divisor](gcd-unitary.md)
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

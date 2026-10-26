@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.gfp_lucas_catalan
 ---
 
-# Gfp lucas catalan
+# Catalan identity for Lucas-type generalized Fibonacci polynomials
 
-Theorem 3.3 (2) (Catalan identity for GFPs of Lucas type): for `n ≥ 0`,
-`α 2^{n-1} L_n = ∑_{i=0}^{⌊n/2⌋} C(n, 2i) d^{n-2i} (4g + d²)^i`, stated as
-`2^n α L_n = 2 ∑ …` so that `n = 0` is included.
+**Catalan identity for Lucas-type generalized Fibonacci polynomials.** Let $\alpha$ and $p_0$
+be integers with $\alpha p_0 = 2$, let $p_1$ and $g$ be polynomials with integer coefficients, and
+put $d = \alpha p_1$. Let $L_n$ be the generalized Fibonacci polynomials defined by $L_0 = p_0$,
+$L_1 = p_1$ and $L_{n+2} = d L_{n+1} + g L_n$. Then for every natural number $n$,
+
+$$2^n \alpha L_n = 2 \sum_{i=0}^{\lfloor n/2 \rfloor} \binom{n}{2i} d^{n-2i} (4g + d^2)^i.$$
+
+Dividing both sides by $2$ gives the source's form, with $\alpha 2^{n-1} L_n$ on the left; the
+factor $2$ is cleared so that $n = 0$ is included.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Zsqrtd.NegTwo.norm_pos'
 ---
 
-# Norm pos'
+# Nonzero elements of $\mathbb{Z}(\sqrt{-2})$ have positive norm
 
-Positivity of the norm on `ℤ√(-2)` away from zero.
+**Nonzero elements of $\mathbb{Z}[\sqrt{-2}]$ have positive norm.** For $x = a + b\sqrt{-2}$
+in $\mathbb{Z}[\sqrt{-2}]$ with norm $N(x) = a^2 + 2b^2$, we have $N(x) > 0$ if and only if
+$x \ne 0$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm eq zero'](norm-eq-zero.md)
-- [Norm nonneg'](norm-nonneg.md)
+- [The norm on $\mathbb{Z}(\sqrt{-2})$ vanishes only at zero](norm-eq-zero.md)
+- [The norm on $\mathbb{Z}(\sqrt{-2})$ is nonnegative](norm-nonneg.md)
 
 ## Sources
 

@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.campbellH2_small
 ---
 
-# Campbell H2 small
+# Small values of Campbell's sequence $h_2$
 
-`h₂(9) = 0`, `h₂(10) = 10`, `h₂(21) = 120`, `h₂(99) = 900` and `h₂(100) = 1000`
-(Example 1 and Section 2.1 of the paper).
+**Small values of Campbell's sequence $h_2$.** The sequence $h_2$ satisfies $h_2(9) = 0$,
+$h_2(10) = 10$, $h_2(21) = 120$, $h_2(99) = 900$ and $h_2(100) = 1000$.
 
 ## Depends on
 
-- [Campbell H2](campbell-h2.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
 
 ## Sources
 

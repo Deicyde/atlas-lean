@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.circuitArrayX_zero_one
 ---
 
-# Circuit Array X zero one
+# First entry of the one-variable circuit array
 
-Proposition 4.1 (iv): `C^X₀,₁ = (X - 3)/X`.
+**First entry of the one-variable circuit array.** The one-variable circuit array $C^X$, with
+entries in the field $\mathbb{Q}(X)$ of rational functions over $\mathbb{Q}$, satisfies
+$C^X_{0,1} = (X - 3)/X$.
 
 ## Depends on
 
-- [Circuit Array X](circuit-array-x.md)
+- [One-variable circuit array](circuit-array-x.md)
 
 ## Proof depends on
 
-- [Circuit Edge](circuit-edge.md)
-- [Circuit Grid](circuit-grid.md)
-- [Circuit Reduce](circuit-reduce.md)
+- [Edges of an upright triangle](circuit-edge.md)
+- [Reduced circuit grids](circuit-grid.md)
+- [Row reduction of a labelled triangular grid](circuit-reduce.md)
 
 ## Sources
 

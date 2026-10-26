@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.palindrome_hasPropertyPStar
 ---
 
-# Proposition 3
+# Palindrome has Property PStar
 
-**Proposition 3**: no palindrome other than
-`1, 3, 9, 11, 33` and `99` has the property `P*`.
+**Palindromes with property $P^*$.** Let $n \ge 1$ be a natural number that is a decimal
+palindrome, that is, whose decimal reversal equals $n$. If $n$ has the property $P^*$, then $n$
+is one of $1$, $3$, $9$, $11$, $33$ and $99$.
 
 ## Depends on
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.prod_one_sub_inv_prime_bounds
 ---
 
-# Prod one sub inv prime bounds
+# Explicit Mertens third theorem
 
-Explicit Mertens third theorem: for every real `x ≥ 1757126630797`,
-`e^{-γ}/log x · exp(-f(x)) < ∏_{p ≤ x} (1 - 1/p) < e^{-γ}/log x · exp(f(x) + 1.02/((x - 1) log x))`
-with `f(x) = 0.024334/(3 log³ x) · (1 + 15/(4 log x))` the right-hand side of (17).
+**Explicit Mertens third theorem.** Let $\gamma$ be the Euler–Mascheroni constant and
+$f(x) = \frac{0.024334}{3 \log^3 x} \left(1 + \frac{15}{4 \log x}\right)$. For every real
+$x \ge 1757126630797$, the product over the primes $p \le x$ satisfies
+$\frac{e^{-\gamma}}{\log x} \exp(-f(x)) < \prod_{p \le x} \left(1 - \frac{1}{p}\right) <
+\frac{e^{-\gamma}}{\log x} \exp\left(f(x) + \frac{1.02}{(x - 1) \log x}\right)$.
 
 ## Depends on
 

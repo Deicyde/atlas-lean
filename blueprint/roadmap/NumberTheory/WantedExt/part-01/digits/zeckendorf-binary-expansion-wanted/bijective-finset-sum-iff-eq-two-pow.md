@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bijective_finset_sum_iff_eq_two_pow
 ---
 
-# Bijective finset sum iff eq two pow
+# Powers of two are the only binary fundamental sequence
 
-Powers of two are the only fundamental sequence of the binary collection: a strictly
-increasing sequence `H` of positive integers has every natural number represented uniquely as
-`∑_{k ∈ s} H k` with `s` finite iff `H k = 2 ^ k` for all `k`.
+**Powers of two are the only binary fundamental sequence.** Let
+$H \colon \mathbb{N} \to \mathbb{N}$ be a strictly increasing sequence of positive integers. Then
+every natural number (including $0$) equals $\sum_{k \in s} H_k$ for exactly one finite set
+$s \subseteq \mathbb{N}$ if and only if $H_k = 2^k$ for all $k$.
 
 ## Depends on
 

@@ -14,7 +14,7 @@ span `⟨L_k(I_k)⟩`.
 
 - [Is Add Monoid Basis](is-add-monoid-basis.md)
 - [Is Atomic Binomid Index](is-atomic-binomid-index.md)
-- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
 
 ## Sources
 

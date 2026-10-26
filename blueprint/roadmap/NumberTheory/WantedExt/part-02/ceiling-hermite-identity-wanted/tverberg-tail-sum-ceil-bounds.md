@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tverbergTailSum_ceil_bounds
 ---
 
-# Tverberg Tail Sum ceil bounds
+# Bounds for tail sums of Tverberg's ceiling sum
 
-Theorem 8: for `ℓ ≥ 2`, `-2^{ℓ-2} ⌊m/2⌋ ≤ T_2(C, m, K) ≤ 2^{ℓ-2} ⌊m/2⌋`, with equality for
-`m = 2r` and every `a_i = r`: `T_2(C, m, m/2) = (-1)^ℓ 2^{ℓ-2} r`. Corrected reading: the record's
-parts (i) and (ii) assert the equality for every `K`, which is false (`ℓ = 3`, `m = 2`,
-`a_i = 1`, `K = 2` gives `T_2 = 0`, not `-2`, and Lemma 7 (ii) gives `T_2(C, m, m) = 0`); the
-paper's proof establishes it at `K = m/2`, which is what is stated. The bound is stated for every
-natural `m` and `K` (trivial at `0`).
+**Bounds for tail sums of Tverberg's ceiling sum.** Let $\ell \ge 2$. For a tuple
+$a = (a_1, \dots, a_\ell)$ of integers and natural numbers $m, K$, let
+$T(a, m, K) = \sum_{k=1}^{K} f^{(\lceil \cdot \rceil)}(a, m, k)$, where $f^{(\lceil \cdot \rceil)}$
+is Tverberg's sum with $F$ the ceiling function. Then
+$-2^{\ell-2} \lfloor m/2 \rfloor \le T(a, m, K) \le 2^{\ell-2} \lfloor m/2 \rfloor$ for all such
+$a, m, K$. Moreover, for every natural number $r$, if $a_i = r$ for every $i$, then
+$T(a, 2r, r) = (-1)^\ell \, 2^{\ell-2} \, r$.
+
+Theorem 8 as recorded asserts this equality for every $K$, which is false: for $\ell = 3$, $m = 2$,
+$a_i = 1$ and $K = 2$ the sum is $0$, not $-2$. The paper's proof establishes it at $K = m/2$,
+which is what is stated here.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

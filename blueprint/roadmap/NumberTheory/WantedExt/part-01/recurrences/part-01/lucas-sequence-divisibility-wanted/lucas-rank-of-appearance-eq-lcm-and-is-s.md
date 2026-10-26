@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasRankOfAppearance_eq_lcm_and_isSuperPseudoprime_iff
 ---
 
-# Lucas Rank Of Appearance eq lcm and is Super Pseudoprime iff
+# Rank of appearance and super Lucas pseudoprimes
 
-For nondegenerate `U(P, Q)`, let `N = ∏ p^{k_p}` be odd composite with `gcd(N, QD) = 1`, and
-for each prime `p ∣ N` let `m_p ≥ k_p` satisfy `ρ(p^{m_p}) = ρ(p) ≠ ρ(p^{m_p+1})`. With
-`h = lcm_{p ∣ N} ρ(p)`: `ρ(N) = h`, and `N` is a super Lucas pseudoprime iff
-`p ≡ (D/p) (mod h)` for every prime `p ∣ N`.
+**Rank of appearance and super Lucas pseudoprimes.** Let $P, Q$ be integers with $Q \neq 0$
+such that the pair $(P, Q)$ is nondegenerate, let $D = P^2 - 4Q$, and write $\rho(m)$ for the rank
+of appearance of $m$ in the Lucas sequence $U(P, Q)$. Let $N > 1$ be an odd number that is not
+prime, with $\gcd(N, QD) = 1$, and for each prime $p \mid N$ let $k_p$ be the exponent of $p$ in
+$N$ and let $m_p \ge k_p$ satisfy $\rho(p^{m_p}) = \rho(p)$ and $\rho(p^{m_p + 1}) \neq \rho(p)$.
+Let $h$ be the least common multiple of the $\rho(p)$ over the primes $p \mid N$. Then
+$\rho(N) = h$, and $N$ is a super Lucas pseudoprime with parameters $(P, Q)$ if and only if
+$p \equiv (D/p) \pmod h$ for every prime $p \mid N$, where $(D/p)$ is the Jacobi symbol.
 
 ## Depends on
 
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Is Super Pseudoprime](is-super-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Super pseudoprime](is-super-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.remainder_bound_of_neg
 ---
 
-# Remainder bound of neg
+# Remainder bound for weighted Lucas power sums when $y = -1$
 
-Lemma 4.2: for `y = -1` (`D = x² + 4`), positive `n, p, q, x` and `k ≥ 3` with
-`Σ_{j=1}^k j U_j^p = U_n^q`, the remainder `R₂ = U_n^q - α^{nq}/D^{q/2}` of Proposition 4.1
-(its definition in that proof) satisfies `D^{q/2} |R₂| < k (D + 1/x)^{q+1} α^{kp - 2k/q + 1}`.
+**Remainder bound for weighted Lucas power sums when $y = -1$.** Let $x$ be a positive
+integer, let $(U_m)$ be the Lucas sequence with parameters $(x, -1)$, given by $U_0 = 0$,
+$U_1 = 1$ and $U_{m+2} = x U_{m+1} + U_m$, and let $D = x^2 + 4$ and $\alpha = (x + \sqrt{D})/2$.
+If positive integers $n$, $p$, $q$ and an integer $k \ge 3$ satisfy
+$\sum_{j=1}^k j U_j^p = U_n^q$, then the remainder $R_2 = U_n^q - \alpha^{nq}/D^{q/2}$ satisfies
+$D^{q/2} |R_2| < k (D + 1/x)^{q+1} \alpha^{kp - 2k/q + 1}$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

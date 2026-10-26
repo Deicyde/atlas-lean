@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isNegBaseHappy_one
 ---
 
-# Is Neg Base Happy one
+# $1$ is happy in every negative base
 
-`1` is `b`-happy for every `b ≤ -2`.
+**$1$ is happy in every negative base.** For every integer $b \le -2$, the integer $1$ is
+$b$-happy.
 
 ## Depends on
 
-- [Is Neg Base Happy](is-neg-base-happy.md)
+- [Happy integers in a negative base](is-neg-base-happy.md)
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
-- [Neg Base Sq Digit Sum of digit](neg-base-sq-digit-sum-of-digit.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
+- [The digit-square sum of a single digit](neg-base-sq-digit-sum-of-digit.md)
 
 ## Sources
 

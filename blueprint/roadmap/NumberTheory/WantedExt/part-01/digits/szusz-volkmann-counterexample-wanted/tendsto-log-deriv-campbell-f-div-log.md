@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_log_deriv_campbellF_div_log
 ---
 
-# Tendsto log deriv campbell F div log
+# Growth exponent of the derivative of Campbell's interpolation
 
-Lemma 7: `η(f') = lim_{x → ∞} log f'(x) / log x` exists and equals `1`.
+**Growth exponent of the derivative of Campbell's interpolation.** For Campbell's
+interpolation $f$, $\log f'(x) / \log x \to 1$ as $x \to \infty$ over the reals; that is,
+$\eta(f') = 1$, where $\eta(h) = \lim_{x \to \infty} \log h(x) / \log x$. Here $f'(x)$ is taken
+to be $0$ at any point where $f$ is not differentiable, and $\log 0 = 0$.
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
+- [Campbell's interpolation](campbell-f.md)
 
 ## Sources
 

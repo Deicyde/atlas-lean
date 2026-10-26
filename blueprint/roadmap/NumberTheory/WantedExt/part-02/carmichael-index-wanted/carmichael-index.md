@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.carmichaelIndex
 ---
 
-# Carmichael Index
+# Carmichael index
 
-The Carmichael index `N(n) = #{a ∈ ℤ | 0 ≤ a ≤ n - 1, aⁿ ≡ a (mod n)}`.
+**Carmichael index.** For a natural number $n$, the Carmichael index $N(n)$ is the number of
+integers $a$ with $0 \le a \le n - 1$ and $a^n \equiv a \pmod{n}$.
 
 ## Depends on
 

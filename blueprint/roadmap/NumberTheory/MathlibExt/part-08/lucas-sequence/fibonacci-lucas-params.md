@@ -6,14 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciLucasParams
 ---
 
-# Fibonacci Lucas Params
+# Fibonacci parameters for Lucas sequences
 
-The parameter pair `(P, Q) = (1, -1)` giving the Fibonacci and classical
-Lucas-number sequences.
+**Fibonacci parameters for Lucas sequences.** The Fibonacci parameters are the Lucas sequence
+parameters $P = 1$ and $Q = -1$; they satisfy the required condition $Q \ne 0$.
+
+These parameters give the Fibonacci and classical Lucas-number sequences.
 
 ## Depends on
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
 
 ## Sources
 

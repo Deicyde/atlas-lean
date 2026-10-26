@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.jacobiSym_prime_add_mul_eq
 ---
 
-# Jacobi Sym prime add mul eq
+# Jacobi symbols of a discriminant $D$ agree at odd primes congruent modulo $D$
 
-Ballot's Lemma 1: for an odd prime `p` and an integer discriminant `D ≡ 0` or `1 (mod 4)`
-prime to `p`, every odd prime of the form `p' = p + D x` (`x ∈ ℤ`) has the same Kronecker
-symbol `(D | p') = (D | p)`. For odd primes the symbol is the Jacobi (Legendre) symbol
-`jacobiSym D p`.
+**Jacobi symbols of a discriminant $D$ agree at odd primes congruent modulo $D$.** Let $p$ and
+$p'$ be odd primes and let $D$ be an integer with $D \equiv 0$ or $1 \pmod 4$ that is coprime to
+$p$. If $p' = p + D x$ for some integer $x$, then the Jacobi symbols agree:
+$\left(\frac{D}{p'}\right) = \left(\frac{D}{p}\right)$.
+
+For an odd prime $p$ the Jacobi symbol $\left(\frac{D}{p}\right)$ is the Legendre symbol and agrees
+with the Kronecker symbol.
 
 ## Depends on
 

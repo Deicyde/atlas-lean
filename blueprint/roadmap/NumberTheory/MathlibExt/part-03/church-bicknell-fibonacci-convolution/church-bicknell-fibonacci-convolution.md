@@ -18,7 +18,7 @@ is the $n$-th Lucas number.
 
 ## Depends on
 
-- [Lucas Number](../../part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../part-08/lucas-sequence/lucas-number.md)
 
 ## Proof depends on
 

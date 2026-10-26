@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.NumberTheory.two_le_primeGapLiminf
 ---
 
-# Two le prime Gap Liminf
+# The liminf of prime gaps is at least two
 
-The elementary lower bound for the least recurring prime gap.
+**The liminf of prime gaps is at least two.** Let $p_0 < p_1 < p_2 < \cdots$ be the primes in
+increasing order and let $g_n = p_{n+1} - p_n$ be the $n$-th prime gap. Then
+$\liminf_{n \to \infty} g_n \ge 2$, where the liminf is taken in $\mathbb{N} \cup \{\infty\}$.
 
 ## Depends on
 
-- [Prime Gap Liminf](prime-gap-liminf.md)
+- [Liminf of prime gaps](prime-gap-liminf.md)
 
 ## Proof depends on
 
-- [Two le prime Gap](two-le-prime-gap.md)
-- [Prime Gap](../prime-gap.md)
+- [Prime gaps after the first are at least two](two-le-prime-gap.md)
+- [Prime gap](../prime-gap.md)
 
 ## Sources
 

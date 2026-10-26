@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_candido_derivative_identity
 ---
 
-# Gibonacci candido derivative identity
+# Cubic gibonacci identity from Candido's identity
 
-A cubic gibonacci identity obtained from Candido's identity: for every
-gibonacci sequence `G` and integer `k`,
-`G_k^2 (G_(k+1)(G_(k+2)+G_k) + G_(k+2)(G_(k+3)+G_(k+1)) - G_k(G_(k+1)+G_(k-1)))
- + G_(k+1)^2 (G_k(G_(k+1)+G_(k-1)) + G_(k+2)(G_(k+3)+G_(k+1)) - G_(k+1)(G_(k+2)+G_k))
- + G_(k+2)^2 (G_k(G_(k+1)+G_(k-1)) + G_(k+1)(G_(k+2)+G_k) - G_(k+2)(G_(k+3)+G_(k+1)))
- = 0`.
+**Cubic gibonacci identity from Candido's identity.** Let $G : \mathbb{Z} \to \mathbb{R}$ be
+a gibonacci sequence, that is, $G_{j+2} = G_{j+1} + G_j$ for every integer $j$. Then for every
+integer $k$,
+
+$$
+G_k^2 \bigl(G_{k+1} (G_{k+2} + G_k) + G_{k+2} (G_{k+3} + G_{k+1}) -
+G_k (G_{k+1} + G_{k-1})\bigr) +
+G_{k+1}^2 \bigl(G_k (G_{k+1} + G_{k-1}) + G_{k+2} (G_{k+3} + G_{k+1}) -
+G_{k+1} (G_{k+2} + G_k)\bigr) +
+G_{k+2}^2 \bigl(G_k (G_{k+1} + G_{k-1}) + G_{k+1} (G_{k+2} + G_k) -
+G_{k+2} (G_{k+3} + G_{k+1})\bigr) = 0.
+$$
 
 ## Depends on
 

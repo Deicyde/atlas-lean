@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.IsRough.ne_zero
 ---
 
-# Ne zero
+# Rough numbers are nonzero
 
-A rough number is nonzero.
+**Rough numbers are nonzero.** For every natural number $k$, every $k$-rough natural number $n$
+satisfies $n \ne 0$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Sources
 

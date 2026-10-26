@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.permutipleCarry_le
 ---
 
-# Permutiple Carry le
+# Carry bound for permutiples
 
-Carry bound: for an `(n, b, σ)`-permutiple, every carry satisfies
-`c_j ≤ n - 1` (`0 ≤ j ≤ k`).
+**Carry bound for permutiples.** Let $n$ and $b \ge 2$ be natural numbers, let $\sigma$
+be a permutation of $\{0, \dots, k\}$, and let $(d_k, \dots, d_0)_b$ be an
+$(n, b, \sigma)$-permutiple, where $(e_k, \dots, e_0)_b$ denotes the base-$b$ numeral
+$\sum_{j=0}^{k} e_j b^j$. Let $c_0, c_1, \dots$ be the carries of the multiplication
+$n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$. Then for every $0 \le j \le k$ we have
+$c_j \le n - 1$ if $n \ge 1$, and $c_j = 0$ if $n = 0$.
 
 ## Depends on
 
-- [Is Permutiple](is-permutiple.md)
-- [Permutiple Carry](permutiple-carry.md)
+- [Permutiples with a given digit permutation](is-permutiple.md)
+- [Carries of a permutiple multiplication](permutiple-carry.md)
 
 ## Sources
 

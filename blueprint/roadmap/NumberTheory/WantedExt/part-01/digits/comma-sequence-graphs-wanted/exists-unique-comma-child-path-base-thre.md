@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.existsUnique_commaChild_path_base_three
 ---
 
-# Exists Unique comma Child path base three
+# There is a unique infinite comma-child path from 1 in base 3
 
-There is a unique infinite path in the base-3 comma-child graph starting at `1`. The
-paper's construction rule (alternate the lower and the higher child at branch points) is
-omitted.
+**There is a unique infinite comma-child path from 1 in base 3.** There is exactly one
+sequence $a_0, a_1, \dots$ of natural numbers with $a_0 = 1$ such that for every $i$ there is a
+comma candidate digit $y$ of $a_i$ in base $3$ with $a_{i+1} = a_i + 3\,(a_i \bmod 3) + y$,
+that is, each $a_{i+1}$ is a base-3 comma-child of $a_i$.
+
+The paper also describes this path (at branch points it alternately takes the lower and the
+higher child); that description is not part of this statement.
 
 ## Depends on
 

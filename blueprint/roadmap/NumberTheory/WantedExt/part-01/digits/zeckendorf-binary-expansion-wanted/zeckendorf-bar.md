@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfBar
 ---
 
-# Zeckendorf Bar
+# The coefficient function $\bar\mu$
 
-`μ̄` for a nonzero finitely supported `μ` (Definition 20): with `μ̌` the largest element of
-`E` below `μ` (`<_a`), `μ̄` is the immediate successor of `μ̌` in `E` (`0` when these do not
-exist).
+**The coefficient function $\bar\mu$.** Let $E$ be a set of finitely supported coefficient
+functions $\mathbb{N} \to \mathbb{N}$ and $\mu$ a finitely supported coefficient function. If
+$\mu$ has an immediate predecessor $\check\mu$ in $E$ (the largest element of $E$ that is
+$\lt _a \mu$ in the ascending lexicographic order) and $\check\mu$ has an immediate successor in
+$E$ (the smallest element of $E$ that is $>_a \check\mu$), then $\bar\mu$ is that immediate
+successor; otherwise $\bar\mu = 0$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Immediate Successor](is-immediate-successor.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Immediate successor](is-immediate-successor.md)
 
 ## Sources
 

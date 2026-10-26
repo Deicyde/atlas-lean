@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_lStarBlockSumCount
 ---
 
-# Has Sum l Star Block Sum Count
+# Generating function of the $L^\ast$-block-sum counts
 
-Generating function: with `f(x) = 1 - ∑_{k=1}^{N-1} e_k x^k - (1 + e_N) x^N`,
-`∑ C_k x^k = (1 - x^N) / f(x)` on an open interval around `0`.
+**Generating function of the $L^\ast$-block-sum counts.** Let $L = (e_1, \dots, e_N)$ be a
+list of natural numbers with $N \ge 2$ and $e_1 \ne 0$. For each $k$ let $C_k$ be the number of
+coefficient functions that are sums of disjoint proper $L^*$-blocks with support intervals inside
+$[1, k]$ (the zero function included), and put
+$f(x) = 1 - \sum_{k=1}^{N-1} e_k x^k - (1 + e_N) x^N$. Then there is a real $r > 0$ such that for
+every real $x$ with $-r < x < r$ the series $\sum_{k \ge 0} C_k x^k$ converges absolutely, with
+sum $(1 - x^N) / f(x)$.
 
 ## Depends on
 

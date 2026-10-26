@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.not_isSignatureCarmichael_four
 ---
 
-# Not is Signature Carmichael four
+# $4$ is not a signature Carmichael number
 
-`4` is not `σ`-Carmichael for any signature: it is not squarefree.
+**$4$ is not a signature Carmichael number.** For every finite sequence $\sigma$ of integers,
+$4$ is not a $\sigma$-Carmichael number, because $4$ is not squarefree.
 
 ## Depends on
 
-- [Is Signature Carmichael](is-signature-carmichael.md)
+- [Carmichael numbers of a signature](is-signature-carmichael.md)
 
 ## Proof depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

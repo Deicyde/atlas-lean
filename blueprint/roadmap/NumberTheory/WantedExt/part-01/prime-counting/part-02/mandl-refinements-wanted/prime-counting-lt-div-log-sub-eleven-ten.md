@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_lt_div_log_sub_eleven_tenths
 ---
 
-# Prime Counting lt div log sub eleven tenths
+# Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function
 
-Dusart upper bound quoted in Lemma 3: `π(x) < x / (log x - 1.1)` for every real
-`x ≥ 60184`.
-The companion lower bound `π(x) > x / (log x - 1)` for `x ≥ 5393` is
-`MetaMathlibExt.dusart_pi_lower_shifted_log`.
+**Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function.** For every
+real number $x \ge 60184$, the number $\pi(x)$ of primes at most $x$ satisfies
+$\pi(x) < x / (\log x - 1.1)$.
 
 ## Depends on
 

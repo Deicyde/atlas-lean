@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtension.binomidAverageCondition
 ---
 
-# Binomid Average Condition
+# Lex-minimal extensions satisfy the Average Condition
 
-Lemma 3: a lex-minimal extension satisfies the Average Condition.
+**Lex-minimal extensions satisfy the Average Condition.** Every lex-minimal extension
+satisfies the Average Condition.
 
 ## Depends on
 
-- [Binomid Average Condition](binomid-average-condition.md)
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [The Average Condition](binomid-average-condition.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
 
 ## Sources
 

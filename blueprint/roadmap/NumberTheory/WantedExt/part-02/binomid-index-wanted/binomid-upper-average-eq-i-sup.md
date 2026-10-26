@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsBinomidIndex.binomidUpperAverage_eq_iSup
 ---
 
-# Binomid Upper Average eq i Sup
+# The upper average of a binomid index is the supremum of its averages
 
-Lemma 2, part 4: for a binomid index `η`, `A_0(η) = sup_{i ≥ 1} A_{i,0}(η)`
-in `EReal`.
+**The upper average of a binomid index is the supremum of its averages.** Let $\eta$ be a
+binomid index, let $s_i$ be the sum of its first $i$ entries, let $A_{i,0}(\eta) = s_i / i$ for
+$i \ge 1$, and let $A_0(\eta) = \limsup_{i \to \infty} A_{i,0}(\eta)$ be its upper average.
+Then, in the extended real numbers, $A_0(\eta) = \sup_{i \ge 1} A_{i,0}(\eta)$.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
-- [Binomid Average](binomid-average.md)
-- [Binomid Upper Average](binomid-upper-average.md)
+- [Binomid index](is-binomid-index.md)
+- [Initial averages of a sequence](binomid-average.md)
+- [Upper average of a sequence](binomid-upper-average.md)
 
 ## Sources
 

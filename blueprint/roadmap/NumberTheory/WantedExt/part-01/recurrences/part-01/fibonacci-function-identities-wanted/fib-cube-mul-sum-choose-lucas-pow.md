@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.fib_cube_mul_sum_choose_lucas_pow
 ---
 
-# Fib cube mul sum choose lucas pow
+# Binomial sum with even powers of a Lucas number
 
-A binomial sum with Lucas powers: for natural `k` and `n`,
-`F_k^3 ∑_(j=0)^n (-1)^((k+1)(n+j)) j C(n+j, 2j) L_k^(2j)
-  = ((2n+1) F_(2k) L_((2n+1)k) - F_((2n+1)k) L_k^2) / 10`.
+**Binomial sum with even powers of a Lucas number.** Let $F_m$ and $L_m$ denote the Fibonacci
+and Lucas numbers. For all natural numbers $k$ and $n$,
+
+$$
+F_k^3 \sum_{j=0}^{n} (-1)^{(k+1)(n+j)}\, j \binom{n+j}{2j} L_k^{2j}
+= \frac{1}{10} \left((2n+1) F_{2k} L_{(2n+1)k} - F_{(2n+1)k} L_k^2\right).
+$$
 
 ## Depends on
 
-- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

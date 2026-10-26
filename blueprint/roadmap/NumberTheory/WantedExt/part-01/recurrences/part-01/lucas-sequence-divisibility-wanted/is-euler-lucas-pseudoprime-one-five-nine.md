@@ -6,20 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.isEulerLucasPseudoprime_one_five_nine
 ---
 
-# Is Euler Lucas Pseudoprime one five nine
+# 9 is an Euler–Lucas pseudoprime for P = 1, Q = 5
 
-`9` is an Euler–Lucas pseudoprime with `(P, Q) = (1, 5)`: `(5/9) = 1` and `U_4 = -9`.
+**9 is an Euler–Lucas pseudoprime for P = 1, Q = 5.** For the Lucas sequences $U$ and $V$
+with parameters $P = 1$ and $Q = 5$, the number $9$ is an Euler–Lucas pseudoprime.
+
+Here $D = P^2 - 4Q = -19$, the Jacobi symbols $(D/9)$ and $(5/9)$ both equal $1$, and $U_4 = -9$.
 
 ## Depends on
 
-- [Is Euler Lucas Pseudoprime](is-euler-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Euler–Lucas pseudoprime](is-euler-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Index of the Lucas pseudoprime congruences](lucas-pseudoprime-index.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

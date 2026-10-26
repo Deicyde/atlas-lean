@@ -7,9 +7,9 @@ navigation: module
 
 ## Baker Wustholz
 
-- [C](c.md)
-- [Modified Height](modified-height.md)
+- [The Baker–Wüstholz constant](c.md)
+- [Modified height](modified-height.md)
 
 ## Baker Wustholz Wanted
 
-- [Baker Wustholz linear Forms logs](baker-wustholz-linear-forms-logs.md)
+- [Baker–Wüstholz theorem on linear forms in logarithms](baker-wustholz-linear-forms-logs.md)

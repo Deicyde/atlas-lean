@@ -15,8 +15,8 @@ system of submonoids `⟨L_k(I_k)⟩` (finitely presented by
 ## Depends on
 
 - [Is Atomic Binomid Index](is-atomic-binomid-index.md)
-- [Is Lex Minimal Extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
-- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Lex-minimal extensions](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
+- [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
 
 ## Sources
 

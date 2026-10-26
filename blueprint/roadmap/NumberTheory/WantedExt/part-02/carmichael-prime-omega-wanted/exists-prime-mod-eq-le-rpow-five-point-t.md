@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_modEq_le_rpow_five_point_two
 ---
 
-# Exists prime mod Eq le rpow five point two
+# Linnik's theorem with exponent 5.2 (Xylouris)
 
-Xylouris's form of Linnik's theorem: for coprime `c` and `d` there is a prime `p ≡ c
-(mod d)` with `p ≪ d^5.2`.
+**Linnik's theorem with exponent 5.2 (Xylouris).** There is a real constant $C$ such that for
+every natural number $d \ge 1$ and every natural number $c$ coprime to $d$, there is a prime
+$p \equiv c \pmod{d}$ with $p \le C d^{5.2}$.
 
 ## Depends on
 

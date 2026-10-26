@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.almostPrimeIndexSet_count_asymptotic
 ---
 
-# Almost Prime Index Set count asymptotic
+# Counting almost primes of iterated almost prime index
 
-For fixed `n ≥ 1` and positive integers `k_1, …, k_n` (here `k_1 = k` and
-`[k_2, …, k_n] = ks`), `N_{k_1 ⋯ k_n}(x) = (x / log^n x) ∏_{i=1}^n (log log x)^{k_i - 1} / (k_i - 1)!
-· (1 + O(1/log log x))`. The extracted exponent `k_1 + ⋯ + k_{n-1} k_n - n` is a typo for
-`k_1 + ⋯ + k_{n-1} + k_n - n`, as the paper's equivalent product form shows.
+**Counting almost primes of iterated almost prime index.** Let $m \ge 1$, let
+$k_1, \dots, k_m$ be positive integers, let $N_{k_1 \cdots k_m}$ be the almost prime index set
+(for $m = 1$ the $k_1$-almost primes, and for $m \ge 2$ the $k_1$-almost primes whose index in
+increasing order, counted from $1$, lies in $N_{k_2 \cdots k_m}$), and for real $x$ let
+$N_{k_1 \cdots k_m}(x)$ be the number of its elements $n \le x$. Writing
+$M(x) = \frac{x}{(\log x)^m} \prod_{i=1}^m \frac{(\log \log x)^{k_i - 1}}{(k_i - 1)!}$, we have
+$N_{k_1 \cdots k_m}(x) - M(x) = O(M(x) / \log \log x)$ as $x \to \infty$.
+
+The paper's displayed exponent $k_1 + \cdots + k_{m-1} k_m - m$ is a typo for
+$k_1 + \cdots + k_{m-1} + k_m - m$, as its equivalent product form shows.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

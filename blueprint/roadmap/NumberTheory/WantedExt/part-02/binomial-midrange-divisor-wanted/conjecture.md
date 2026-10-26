@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BinomialMidrangeDivisorWanted.conjecture
 ---
 
-# Conjecture
+# Erdős Problem 387
 
-Erdős Problem 387: every nontrivial binomial coefficient has a divisor
-whose size is bounded below by a fixed positive proportion of `n`.
+**Erdős Problem 387.** The proposition that there is a real number $c > 0$ such that for all
+natural numbers $n$ and $k$ with $1 \le k < n$, the binomial coefficient $\binom{n}{k}$ has a
+divisor $d$ with $cn < d \le n$.
 
 ## Depends on
 

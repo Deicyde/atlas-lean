@@ -7,8 +7,10 @@ lean: MetaMathlibExt.lStarBlockSumCount
 
 # L Star Block Sum Count
 
-`C_n`: the number of coefficient functions that are sums of disjoint proper `L*`-blocks with
-support intervals inside `[1, n]` (zero-based `[0, n)`), the zero function included; `C_0 = 1`.
+**Number of $L^*$-block sums of length $n$.** For a list $L$ of natural numbers and $n \ge 0$,
+with coefficient functions indexed from $1$, $C_n$ is the number of functions
+$\varepsilon : \mathbb N \to \mathbb N$ that are sums of disjoint proper $L^*$-blocks with
+support intervals inside $[1, n]$. The zero function (the empty sum) is counted, so $C_0 = 1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
 
 ## Sources
 

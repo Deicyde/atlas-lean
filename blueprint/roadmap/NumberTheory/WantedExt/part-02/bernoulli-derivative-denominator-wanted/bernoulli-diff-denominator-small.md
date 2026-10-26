@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominator_small
 ---
 
-# Bernoulli Diff Denominator small
+# First values of $\mathbb{D}_n$
 
-First values `𝔻_1, …, 𝔻_10 = 1, 1, 2, 1, 6, 2, 6, 3, 10, 2`.
+**First values of $\mathbb{D}_n$.** For a natural number $n$ let $\mathbb{D}_n$ be the product
+of the primes $p$ whose base-$p$ digit sum $s_p(n)$ satisfies $s_p(n) \ge p$. Then
+$(\mathbb{D}_1, \mathbb{D}_2, \dots, \mathbb{D}_{10}) = (1, 1, 2, 1, 6, 2, 6, 3, 10, 2)$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
+- [Denominator of $B_n(x) - B_n$](bernoulli-diff-denominator.md)
 
 ## Sources
 

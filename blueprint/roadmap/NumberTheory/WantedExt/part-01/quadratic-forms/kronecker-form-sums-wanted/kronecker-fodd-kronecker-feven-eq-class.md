@@ -5,25 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.kroneckerFOdd_kroneckerFEven_eq_classNumber
 ---
 
-# Kronecker FOdd kronecker FEven eq class Number
+# Aygin–Williams evaluation of Kronecker's sums
 
-Main theorem: writing `n = 2 ^ α * g * h ^ 2` with `g, h` odd and `g` squarefree,
-`F_o(n) = k_o(n) ℓ(n) h(d(n))` and `F_e(n) = k_e(n) ℓ(n) h(d(n))` with Table 2:
-Case 1 (`α` even, `g = 1`): `2 ^ (α/2 - 1)`, `2 ^ (α/2 - 1) - 1/2`;
-Case 2 (`α` even, `g = 3`): `2 ^ (α/2)`, `2 ^ (α/2) - 2/3`;
-Case 3 (`α` even, `g ≡ 1 (mod 4)`, `g ≠ 1`): `2 ^ (α/2)`, `2 ^ (α/2) - 1`;
-Case 4 (`α` even, `g ≡ 3 (mod 8)`, `g ≠ 3`): `3 · 2 ^ (α/2)`, `3 · 2 ^ (α/2) - 2`;
-Case 5 (`α` even, `g ≡ 7 (mod 8)`): `2 ^ (α/2)`, `2 ^ (α/2)`;
-Case 6 (`α` odd): `2 ^ ((α-1)/2)`, `2 ^ ((α-1)/2) - 1`.
-`2 ^ (α/2 - 1)` is written `2 ^ (α / 2) / 2` in `ℚ` (it is `1/2` when `α = 0`).
+**Aygin–Williams evaluation of Kronecker's sums.** Let $n = 2^\alpha g h^2$ with $g$ and $h$
+odd natural numbers and $g$ squarefree. Let $d = -4g$ if $\alpha$ is even and
+$g \equiv 1 \pmod 4$, $d = -g$ if $\alpha$ is even and $g \equiv 3 \pmod 4$, and $d = -8g$ if
+$\alpha$ is odd. Let $L = \ell(d, h) \cdot h(d)$, where $\ell(d, h)$ is Kronecker's class-number
+multiplier and $h(d)$ is the Gauss class number of $d$, and for even $\alpha$ let
+$t = 2^{\alpha/2}$. Then Kronecker's sums $F_o$ and $F_e$ satisfy:
+
+- if $\alpha$ is even and $g = 1$, then $F_o(n) = \frac{t}{2} L$ and
+  $F_e(n) = \left(\frac{t}{2} - \frac{1}{2}\right) L$;
+- if $\alpha$ is even and $g = 3$, then $F_o(n) = tL$ and $F_e(n) = \left(t - \frac{2}{3}\right) L$;
+- if $\alpha$ is even, $g \equiv 1 \pmod 4$ and $g \ne 1$, then $F_o(n) = tL$ and
+  $F_e(n) = (t - 1) L$;
+- if $\alpha$ is even, $g \equiv 3 \pmod 8$ and $g \ne 3$, then $F_o(n) = 3tL$ and
+  $F_e(n) = (3t - 2) L$;
+- if $\alpha$ is even and $g \equiv 7 \pmod 8$, then $F_o(n) = F_e(n) = tL$;
+- if $\alpha$ is odd, then $F_o(n) = 2^{(\alpha - 1)/2} L$ and
+  $F_e(n) = \left(2^{(\alpha - 1)/2} - 1\right) L$.
 
 ## Depends on
 
-- [Gauss Class Number](gauss-class-number.md)
-- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
-- [Kronecker Discriminant](kronecker-discriminant.md)
-- [Kronecker FEven](kronecker-feven.md)
-- [Kronecker FOdd](kronecker-fodd.md)
+- [Gauss class number of a discriminant](gauss-class-number.md)
+- [Kronecker's class-number multiplier](kronecker-class-multiplier.md)
+- [The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$](kronecker-discriminant.md)
+- [Kronecker's sum $F_e(n)$](kronecker-feven.md)
+- [Kronecker's sum $F_o(n)$](kronecker-fodd.md)
 
 ## Sources
 

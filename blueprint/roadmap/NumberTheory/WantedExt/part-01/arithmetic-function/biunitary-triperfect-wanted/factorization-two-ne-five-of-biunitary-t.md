@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.factorization_two_ne_five_of_biunitaryTriperfect
 ---
 
-# Factorization two ne five of biunitary Triperfect
+# No biunitary triperfect number divisible by $27$ is exactly divisible by $2^5$
 
-Section 3 setting (`N` biunitary triperfect, `3^f ∥ N`, `f ≥ 3`): `2^5 ∥ N` is impossible.
+**No biunitary triperfect number divisible by $27$ is exactly divisible by $2^5$.** Let $N$
+be a biunitary triperfect number, that is, a positive integer with $\sigma^{**}(N) = 3N$, where
+$\sigma^{**}$ is the biunitary divisor sum. If $3^3$ divides $N$, then the exact power of $2$
+dividing $N$ is not $2^5$.
 
 ## Depends on
 

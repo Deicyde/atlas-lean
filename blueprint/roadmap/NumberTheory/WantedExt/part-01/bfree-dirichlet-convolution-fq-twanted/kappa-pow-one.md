@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kappaPow_one
 ---
 
-# Kappa Pow one
+# The $\kappa$-power of $1$
 
-`1 ^ κ = 1`.
+**The $\kappa$-power of $1$.** Let $F$ be a field and let $\kappa$ be a function from $F[T]$
+to the natural numbers. Then the $\kappa$-power of the constant polynomial $1$ is $1^\kappa = 1$.
 
 ## Depends on
 
-- [Kappa Pow](kappa-pow.md)
+- [The $\kappa$-power of a polynomial](kappa-pow.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPermutipleString_iff_isLEulerian
 ---
 
-# Exists is Permutiple String iff is LEulerian
+# $L$-Eulerian criterion for permutiple strings
 
-Characterization: for a multiset `cs` of cycles of the `(n, b)`-mother graph, the
-multiset union `C_I` can be ordered into a permutiple string if and only if the multi-image
-union `Δ_I` is `L`-Eulerian.
+**$L$-Eulerian criterion for permutiple strings.** Let $1 < n < b$ and let $I$ be a
+multiset of cycles of the $(n, b)$-mother graph, with multiset union of cycle edges $C_I$
+and multi-image union $\Delta_I$. Then $\Delta_I$ is $L$-Eulerian if and only if there is
+an $(n, b)$-permutiple string $s$ whose multiset of entries is $C_I$.
 
 ## Depends on
 
-- [Is LEulerian](is-leulerian.md)
-- [Is Mother Graph Cycle](is-mother-graph-cycle.md)
-- [Is Permutiple String](is-permutiple-string.md)
-- [Cycle Union](cycle-union.md)
-- [Multi Image Union](multi-image-union.md)
+- [$L$-Eulerian multigraphs](is-leulerian.md)
+- [Cycles of the mother graph](is-mother-graph-cycle.md)
+- [Permutiple strings](is-permutiple-string.md)
+- [Multiset union of cycle edges](cycle-union.md)
+- [Multi-image union of a multiset of cycles](multi-image-union.md)
 
 ## Sources
 

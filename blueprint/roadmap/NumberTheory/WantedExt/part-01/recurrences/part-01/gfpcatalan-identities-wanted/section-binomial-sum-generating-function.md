@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sectionBinomialSum_generatingFunction
 ---
 
-# Section Binomial Sum generating Function
+# Generating function of the binomial section sums
 
-Theorem 4.5: for `0 ≤ s < ℓ`, the generating function of
-`T_{ℓ,s}(n; t) = ∑_i C(n, ℓ i + s) t^i` is
-`(∑_{k=0}^{ℓ-1} ∑_{i=0}^{k} (-1)^i C(ℓ, i) ∑_{r=0}^{k} C(k-i, rℓ+s) t^r x^k) / ((1-x)^ℓ - t x^ℓ)`,
-stated as a product identity of formal power series. The printed numerator has `t^t`, a typo
-for `t^r` (the summation index); the range `s < ℓ` is the one of (4.4). For `s ≥ ℓ` the identity
-fails (`ℓ = 1`, `s = 1`, `t = 2`: the left side is `x/(1 - x)`, the right side `0`).
+**Generating function of the binomial section sums.** Let $R$ be a commutative ring, $t \in R$,
+and let $\ell$ and $s$ be natural numbers with $s < \ell$. Put
+$T_{\ell,s}(n; t) = \sum_{i=0}^{n} \binom{n}{\ell i + s} t^i$. Then, as formal power series in $x$
+over $R$,
+
+$$\Big( \sum_{n \ge 0} T_{\ell,s}(n; t) x^n \Big) \big( (1-x)^\ell - t x^\ell \big) =
+\sum_{k=0}^{\ell-1} \Big( \sum_{i=0}^{k} (-1)^i \binom{\ell}{i} \sum_{r=0}^{k} \binom{k-i}{r\ell+s}
+t^r \Big) x^k.$$
+
+That is, the generating function of $T_{\ell,s}(n; t)$ is this polynomial divided by
+$(1-x)^\ell - t x^\ell$.
+
+The printed numerator in the source has $t^t$, a typo for $t^r$ ($r$ is the summation index), and
+the range $s < \ell$ is the one of (4.4). For $s \ge \ell$ the identity fails: for $\ell = 1$,
+$s = 1$, $t = 2$ the left side is $x/(1-x)$ and the right side is $0$.
 
 ## Depends on
 

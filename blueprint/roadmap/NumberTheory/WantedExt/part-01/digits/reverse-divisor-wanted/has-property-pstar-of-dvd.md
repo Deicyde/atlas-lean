@@ -5,10 +5,9 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.hasPropertyPStar_of_dvd
 ---
 
-# Proposition 1
+# Has Property PStar of dvd
 
-**Proposition 1**: the positive divisors of `99`
-have the property `P*`.
+**Divisors of $99$ have property $P^*$.** Every divisor of $99$ has property $P^*$.
 
 ## Depends on
 

@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tverbergSum_ceil_bounds
 ---
 
-# Tverberg Sum ceil bounds
+# Sharp bounds for Tverberg's ceiling sum
 
-Theorem 4: for `ℓ ≥ 2`, `-2^{ℓ-2} ≤ f_2 ≤ 2^{ℓ-2}`, with equality for `m = 2r` even and every
-`a_i = r`: `f_2(C, m, 0) = (-1)^{ℓ+1} 2^{ℓ-2}` and `f_2(C, m, m/2) = (-1)^ℓ 2^{ℓ-2}` (the paper's
-odd and even cases in one formula). The bound is stated for every natural `m` (trivial at `m = 0`).
+**Sharp bounds for Tverberg's ceiling sum.** Let $\ell \ge 2$ and let $F = \lceil \cdot \rceil$.
+For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let
+$f(a, m, k) =
+\sum_{U \subseteq \{1, \dots, \ell\}} (-1)^{\ell - |U|} F((k + \sum_{i \in U} a_i)/m)$
+be Tverberg's sum of $F$, with $x/0 = 0$. Then $-2^{\ell-2} \le f(a, m, k) \le 2^{\ell-2}$ for
+all such $a$, $m$ and $k$. Both bounds are attained: for every integer $r \ge 1$, if $a_i = r$
+for all $i$ and $m = 2r$, then $f(a, m, 0) = (-1)^{\ell+1} 2^{\ell-2}$ and
+$f(a, m, r) = (-1)^{\ell} 2^{\ell-2}$.
+
+The paper states the equality cases separately for odd and even $\ell$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

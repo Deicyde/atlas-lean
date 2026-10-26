@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_kJacobsthalParams_two
 ---
 
-# Lucas U k Jacobsthal Params two
+# The second k-Jacobsthal number
 
-`J_{k,2} = k`.
+**The second k-Jacobsthal number.** For every natural number $k$, the $k$-Jacobsthal number
+$J_{k,2} = U_2(k, -2)$ equals $k$.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_add_neg_one_pow_mul_eq_lucas_mul
 ---
 
-# Gibonacci add neg one pow mul eq lucas mul
+# Lucas multiplier identity for gibonacci sequences
 
-For a gibonacci sequence `G` and integers `r`, `s`:
-`G_(s+r) + (-1)^r G_(s-r) = L_r G_s`.
+**Lucas multiplier identity for gibonacci sequences.** Let $F_m$ be the Fibonacci numbers,
+extended to all integers $m$ by $F_{m+2} = F_{m+1} + F_m$, and let $L_m = F_{m-1} + F_{m+1}$ be
+the Lucas numbers. Let $G : \mathbb{Z} \to \mathbb{R}$ be a gibonacci sequence, that is,
+$G_{j+2} = G_{j+1} + G_j$ for every integer $j$. Then for all integers $r$ and $s$,
+$G_{s+r} + (-1)^r G_{s-r} = L_r G_s$.
 
 ## Depends on
 

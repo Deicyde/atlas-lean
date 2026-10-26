@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.hurwitz_quaternion_waring_bound
 ---
 
-# Hurwitz Quaternion Waring
+# Waring's problem for Hurwitz quaternion integers
 
-For every positive exponent `ℓ ≡ 1, 2 (mod 3)`, every Hurwitz quaternion
-integer is a sum of at most `g` `ℓ`-th powers of Hurwitz quaternion integers,
-for a uniform bound `g` depending only on `ℓ`.
+**Waring's problem for Hurwitz quaternion integers.** Call a rational quaternion a Hurwitz
+integer if its four coordinates are either all integers or all of the form $a + \tfrac12$ with
+$a$ an integer. For every positive integer $\ell$ with $\ell \equiv 1$ or $\ell \equiv 2 \pmod 3$
+there is a natural number $g$ such that every Hurwitz integer is a sum of at most $g$ $\ell$-th
+powers of Hurwitz integers.
 
 ## Depends on
 

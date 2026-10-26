@@ -6,9 +6,10 @@ proof: formalized
 lean: Zsqrtd.NegTwo.zsqrtd_neg_two_two_eq
 ---
 
-# Zsqrtd neg two two eq
+# $2$ is minus the square of $\sqrt{-2}$
 
-`2` factors in `ℤ[√-2]` as the negation of `(√-2)^2`.
+**$2$ is minus the square of $\sqrt{-2}$.** In $\mathbb{Z}[\sqrt{-2}]$ one has
+$2 = -(\sqrt{-2})^2$.
 
 ## Depends on
 

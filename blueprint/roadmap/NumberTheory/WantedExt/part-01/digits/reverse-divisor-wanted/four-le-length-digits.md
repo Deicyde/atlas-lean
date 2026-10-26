@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.four_le_length_digits
 ---
 
-# Theorem 1
+# Reverse divisors have at least four digits
 
-**Theorem 1**, minimum size: no reverse divisor has
-fewer than four digits.
+**Reverse divisors have at least four digits.** Every reverse divisor has at least four
+decimal digits.
 
 ## Depends on
 
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 
 ## Sources
 

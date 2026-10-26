@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_of_half_le_of_two_le
 ---
 
-# Central Binom add ne of half le of two le
+# Central binomial products with $x \ge 2$ and $a \ge b$
 
-Lemma 8: for positive `a`, `b` and `x ≥ 2` with `a ≥ (a+b)/2`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(x+2b, b)`.
+**Central binomial products with $x \ge 2$ and $a \ge b$.** Let $x$, $a$, $b$ be natural
+numbers with $x \ge 2$ and $1 \le b \le a$. Then
+$\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Depends on
 

@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.jacobsthalLucas_mul_add_eq_integral
 ---
 
-# Jacobsthal Lucas mul add eq integral
+# Integral representation of the Jacobsthal-Lucas numbers along arithmetic progressions
 
-Jacobsthal-Lucas case `k = 1`: `j_{ℓn+r} = 2^{-(n+1)} ∫_{-1}^{1}
-(9nJ_ℓ J_r + j_ℓ j_r + 3(n+1)J_ℓ j_r x)(j_ℓ + 3J_ℓ x)^{n-1} dx`.
+**Integral representation of the Jacobsthal-Lucas numbers along arithmetic progressions.**
+Let $J_m = U_m(1, -2)$ be the Jacobsthal numbers and $j_m = V_m(1, -2)$ the Jacobsthal-Lucas
+numbers ($j_0 = 2$, $j_1 = 1$, $j_{m+2} = j_{m+1} + 2j_m$). For all natural numbers $\ell$, $n$
+and $r$, in $\mathbb{R}$,
+
+$$
+j_{\ell n + r} = \frac{1}{2^{n+1}} \int_{-1}^{1}
+\bigl(9n J_\ell J_r + j_\ell j_r + 3(n+1) J_\ell j_r\,x\bigr)(j_\ell + 3J_\ell x)^{n-1}\,dx,
+$$
+
+where $(j_\ell + 3J_\ell x)^{n-1}$ is an integer power (for $n = 0$ it is the reciprocal).
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

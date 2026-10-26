@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.tsum_rpow_neg_primes_gt_exp_inv_le
 ---
 
-# Tsum rpow neg primes gt exp inv le
+# Uniform tail bound for the prime zeta series
 
-Uniformly for `0 < α ≤ 1`, `∑_{p > exp(1/α)} p^{-(1 + α)} ≤ 0.9235`.
+**Uniform tail bound for the prime zeta series.** For every real $\alpha$ with
+$0 < \alpha \le 1$, $\sum_{p > e^{1/\alpha}} p^{-(1 + \alpha)} \le 0.9235$, where the sum runs
+over the primes $p > e^{1/\alpha}$.
 
 ## Depends on
 

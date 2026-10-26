@@ -6,13 +6,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AlgebraicIntegersWanted.AlgebraicIntegers.IsTotallyPositive
 ---
 
-# Is Totally Positive
+# Totally positive algebraic numbers
 
-We call an algebraic number `α` totally positive if its conjugates `α₁, ..., αₙ` are all
-positive real numbers.
-
-Note that `open ComplexOrder` gives the complex numbers a partial ordering, with `x < y` defined to
-mean that `y - x` is a positive real number.
+**Totally positive algebraic numbers.** A complex number $\alpha$ is totally positive if it is
+algebraic over $\mathbb{Q}$ and every complex root of its minimal polynomial over $\mathbb{Q}$,
+that is, every conjugate of $\alpha$, is a positive real number.
 
 ## Depends on
 

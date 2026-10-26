@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.beatty_card_compl_between_succ_sub
 ---
 
-# Beatty card compl between succ sub
+# Increments of the $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
-For complementary Beatty sequences with slopes `1 < α < 2` and `β`, let `r n` count
-the elements of `B` strictly between `⌊nα⌋` and `⌊nβ⌋`. Then `r (n + 1) - r n` is `0` or
-`1`, and it is `1` exactly when `⌊(n + 1)α⌋ - ⌊nα⌋ = 1`.
+**Increments of the $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and
+$\lfloor n\beta\rfloor$.** Let $\alpha$ be an irrational number with $1 < \alpha < 2$, let $\beta$
+be a real number with $\alpha^{-1} + \beta^{-1} = 1$, let $B$ be the set of the numbers
+$\lfloor k\beta\rfloor$ for positive integers $k$, and for an integer $m$ let $r(m)$ be the number
+of elements of $B$ in the open interval $(\lfloor m\alpha\rfloor, \lfloor m\beta\rfloor)$. Then for
+every positive integer $n$, the difference $r(n + 1) - r(n)$ is $0$ or $1$, and it equals $1$ if
+and only if $\lfloor (n + 1)\alpha\rfloor - \lfloor n\alpha\rfloor = 1$.
+
+By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then complementary.
 
 ## Depends on
 

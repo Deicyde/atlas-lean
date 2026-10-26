@@ -5,20 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.lcm_mem_lucasPeriodSet
 ---
 
-# Lcm mem lucas Period Set
+# Closure of the period set under lcm and products
 
-Theorem 2.4: `S(U)` is closed under `lcm` and products; under the coprimality condition
-for `m n`, all of `m`, `n`, `lcm(m, n)`, `m n` lie in `S'(U)` with integral averages for all
-`W(a, b)`. In particular, if `C(r)`, the least multiple of `r` in `S(U)`, exists and satisfies
-the coprimality condition, then `C'(r) = C(r)` (the least multiple of `r` in `S'(U)`) and
-`A_W(C(r))` is an integer for all `W(a, b)`.
+**Closure of the period set under lcm and products.** Let $U$ be the Lucas sequence with
+parameters $P$ and $Q \ne 0$, given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let
+$S(U)$ be the set of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of $U$
+modulo $n$ divides $n$, and let $S'(U)$ be the set of $n \in S(U)$ with
+$n \mid U_1 + \dots + U_n$. Say that a natural number $x$ has integral averages if
+$x \mid w_1 + \dots + w_x$ for every integer sequence $(w_k)_{k \ge 0}$ with
+$w_{k+2} = P w_{k+1} - Q w_k$ for all $k$, and that $x$ satisfies the coprimality condition if
+either $P - Q - 1 \ne 0$ and $\gcd(P - Q - 1, x) = 1$, or $P - Q - 1 = 0$ and
+$\gcd(Q - 1, x) = 1$. Then for all $m, n \in S(U)$, both $\operatorname{lcm}(m, n)$ and $mn$ lie
+in $S(U)$, and if $mn$ satisfies the coprimality condition, then each of $m$, $n$,
+$\operatorname{lcm}(m, n)$ and $mn$ lies in $S'(U)$ and has integral averages. Moreover, for every
+positive integer $r$ and every $c$, if $c$ is the least element of $S(U)$ divisible by $r$ and $c$
+satisfies the coprimality condition, then $c$ is also the least element of $S'(U)$ divisible by
+$r$, and $c$ has integral averages.
+
+In the paper's notation $a = P$ and $b = -Q$, so $P - Q - 1 = a + b - 1$ and $Q - 1 = -b - 1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

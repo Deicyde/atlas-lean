@@ -7,16 +7,17 @@ lean: MetaMathlibExt.exists_lStarBlockSum_of_properLStarBlock
 
 # Exists l Star Block Sum of proper LStar Block
 
-`L̃*`-decompositions of `L*`-blocks: if `E ⊊ Ẽ` are the periodic Zeckendorf collections
-determined by `L` and `L̃`, every nonzero proper `L*`-block `ζ` with support interval `[i, b]`
-is a sum of disjoint proper `L̃*`-blocks with support intervals inside `[0, b]`, one of them
-ending at `b`.
+**Decomposing $L^*$-blocks into $\tilde L^*$-blocks.** Let $L$ and $\tilde L$ be lists of
+natural numbers of length at least $2$ with nonzero first entries whose periodic Zeckendorf
+collections satisfy $E \subsetneq \tilde E$. If $\zeta$ is a nonzero proper $L^*$-block with
+support interval $[i, b]$, then $\zeta$ is a sum of disjoint proper $\tilde L^*$-blocks whose
+support intervals all lie in $[0, b]$, one of which has support interval $[a, b]$ for some $a$.
 
 ## Depends on
 
-- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
 - [Is Proper LStar Block](is-proper-lstar-block.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

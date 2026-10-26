@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
 
 ## Sources
 

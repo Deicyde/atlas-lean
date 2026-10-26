@@ -7,19 +7,20 @@ proof: formalized
 lean: Nat.IsPowerFree.mono
 ---
 
-# Mono
+# Power-freeness is monotone in the exponent
 
-Monotonicity in the exponent: `k`-free implies `l`-free for `k ≤ l`.
+**Power-freeness is monotone in the exponent.** If a natural number $n$ is $k$-free and
+$k \le l$, then $n$ is $l$-free.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Proof depends on
 
-- [Not dvd](not-dvd.md)
-- [Pos](pos.md)
-- [Two le](two-le.md)
+- [A k-free number has no prime k-th power divisor](not-dvd.md)
+- [Power-free numbers are positive](pos.md)
+- [The exponent of a power-free number is at least two](two-le.md)
 
 ## Sources
 

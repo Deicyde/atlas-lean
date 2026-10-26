@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.almostPrimeIndexSet
 ---
 
-# Almost Prime Index Set
+# Almost primes of almost prime index
 
-`N_{k_1 k_2 ⋯ k_m}` with `k_1 = k` and `[k_2, …, k_m] = L`: for `L = []` the `k`-almost
-primes, and otherwise the `k`-almost primes whose (`1`-based) index lies in `N_{k_2 ⋯ k_m}`.
+**Almost primes of almost prime index.** For natural numbers $k_1, \dots, k_m$ with $m \ge 1$,
+the set $N_{k_1 \cdots k_m}$ of natural numbers is defined by recursion on $m$: $N_{k_1}$ is the
+set of $k_1$-almost primes (the $n \ne 0$ with exactly $k_1$ prime factors counted with
+multiplicity), and for $m \ge 2$, $N_{k_1 \cdots k_m}$ is the set of the $i$th $k_1$-almost
+primes, in increasing order and counted from $1$, for $i \ge 1$ in $N_{k_2 \cdots k_m}$. When
+there are fewer than $i$ $k_1$-almost primes (only for $k_1 = 0$, where $1$ is the only one),
+the $i$th one is taken to be $0$.
 
 ## Depends on
 

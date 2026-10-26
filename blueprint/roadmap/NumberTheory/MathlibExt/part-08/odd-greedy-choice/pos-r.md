@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.pos_r
 ---
 
-# Pos r
+# The odd greedy choice needs a positive remainder
 
-The odd greedy choice is taken at a positive remainder.
+**The odd greedy choice needs a positive remainder.** If $d$ is the odd greedy choice at a
+rational number $r$, then $r > 0$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Sources
 

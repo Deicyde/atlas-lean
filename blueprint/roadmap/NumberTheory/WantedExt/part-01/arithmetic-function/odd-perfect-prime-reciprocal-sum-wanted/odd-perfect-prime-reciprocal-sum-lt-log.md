@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_primeReciprocalSum_lt_log_two_sub
 ---
 
-# Odd Perfect prime Reciprocal Sum lt log two sub
+# Zelinsky's upper bound on the prime reciprocal sum of an odd perfect number
 
-If `n` is an odd perfect number with least prime factor `p₁ ≥ 11`, then
-`T(n) < log 2 - 11/(50 p₁²)`.
+**Zelinsky's upper bound on the prime reciprocal sum of an odd perfect number.** Let $n$ be an
+odd perfect number whose least prime factor $p_1$ satisfies $p_1 \ge 11$, and let
+$T(n) = \sum_{p \mid n} 1/p$, the sum over the primes $p$ dividing $n$. Then
+$T(n) < \log 2 - \frac{11}{50 p_1^2}$.
 
 ## Depends on
 

@@ -19,8 +19,8 @@ The sequence $(T_{2n})$ is the bisection A099463.
 
 ## Depends on
 
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
-- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Trinomial coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.inclExclLikeSum_two
 ---
 
-# Incl Excl Like Sum two
+# The inclusion-exclusion-like sum in two variables
 
-Characteristic value: `g^(F)(x, y) = F(x) + F(y) - F(x + y)`.
+**The inclusion-exclusion-like sum in two variables.** For every function
+$F : \mathbb{R} \to \mathbb{Z}$ and all real numbers $x$ and $y$,
+$g^{(F)}(x, y) = F(x) + F(y) - F(x + y)$.
 
 ## Depends on
 
-- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Inclusion-exclusion-like sum](incl-excl-like-sum.md)
 
 ## Sources
 

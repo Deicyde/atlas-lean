@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nStepFibonacci
 ---
 
-# N Step Fibonacci
+# N-step Fibonacci numbers
 
-The `N`-step Fibonacci numbers `F^{(N)}_n` (Noe and Post convention): `F^{(N)}_0 = 0`,
-`F^{(N)}_1 = 1`, and `F^{(N)}_n = F^{(N)}_{n-1} + ⋯ + F^{(N)}_{n-N}` for `n ≥ 2`, terms with
-nonpositive index being `0` (here an index that truncates to `0` contributes `F^{(N)}_0 = 0`).
+**N-step Fibonacci numbers.** For a natural number $N$, the $N$-step Fibonacci numbers
+$F^{(N)}_n$ ($n \ge 0$), in the convention of Noe and Post, are defined by $F^{(N)}_0 = 0$,
+$F^{(N)}_1 = 1$ and, for $n \ge 2$, $F^{(N)}_n = \sum_{i=1}^{N} F^{(N)}_{n-i}$, where a term
+whose index $n - i$ is negative counts as $0$. In particular $F^{(0)}_n = 0$ for $n \ge 2$.
 
 ## Depends on
 

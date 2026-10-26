@@ -21,8 +21,8 @@ $(a_{i+j})_{0 \le i, j \le n}$ and $(a'_{i+j})_{0 \le i, j \le n}$ are equal.
 
 ## Depends on
 
-- [Has Jacobi Fraction](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
-- [Hankel Transform](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
+- [Jacobi continued fraction expansion](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Hankel transform](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Proof depends on
 

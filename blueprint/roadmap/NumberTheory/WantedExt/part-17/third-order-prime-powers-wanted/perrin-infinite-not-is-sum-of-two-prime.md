@@ -16,7 +16,7 @@ reason as in the Tribonacci statement.
 ## Depends on
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
-- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
+- [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

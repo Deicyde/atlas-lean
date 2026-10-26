@@ -12,15 +12,15 @@ lean: MetaMathlibExt.zeckendorfRevBar_of_not_descLexLT
 
 ## Depends on
 
-- [Desc Lex LT](desc-lex-lt.md)
+- [Descending lexicographic order](desc-lex-lt.md)
 - [Max LStar Block](max-lstar-block.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Proof depends on
 
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
-- [Zeckendorf Bar](zeckendorf-bar.md)
-- [Zeckendorf Rev](zeckendorf-rev.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
+- [The coefficient function $\bar\mu$](zeckendorf-bar.md)
+- [Reversal of the first $n$ entries](zeckendorf-rev.md)
 
 ## Sources
 

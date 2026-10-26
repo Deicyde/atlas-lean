@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ordinaryMomentRecurrence_properties
 ---
 
-# Ordinary Moment Recurrence properties
+# Properties of solutions of the ordinary moment recurrence
 
-Theorem 1(b–d): every zeroth moment is `b`; for `m≥1`, the recurrence family is nonnegative and has
-the stated unique zero case; it decreases in `m`, strictly when nonzero; it
-increases strictly in `j`; and its `j`-limit is `b/(m+1)`. The arbitrary-family
-form follows the paper. Source: Jean-François Burnol, *Measures for the
-Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
+**Properties of solutions of the ordinary moment recurrence.** Let $b > 1$ and $d < b$ be
+natural numbers, and let $(u_{j;m})_{j, m \in \mathbb{N}}$ be a family of real numbers that
+satisfies the ordinary moment recurrence for $b$ and $d$. Then $u_{j;0} = b$ for every $j$, and for
+all $j$ and all $m \ge 1$: $u_{j;m} \ge 0$, with $u_{j;m} = 0$ if and only if $j = 0$, $b = 2$ and
+$d = 1$; $u_{j;m+1} \le u_{j;m}$, with strict inequality when $u_{j;m} \ne 0$;
+$u_{j;m} < u_{j+1;m}$; and $u_{j;m} \to b/(m+1)$ as $j \to \infty$.
 
 ## Depends on
 
-- [Ordinary Moment Recurrence](ordinary-moment-recurrence.md)
+- [Ordinary moment recurrence](ordinary-moment-recurrence.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.

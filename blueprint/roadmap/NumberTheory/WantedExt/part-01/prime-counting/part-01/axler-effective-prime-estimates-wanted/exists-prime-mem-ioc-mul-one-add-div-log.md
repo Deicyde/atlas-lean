@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_mem_Ioc_mul_one_add_div_log_pow
 ---
 
-# Exists prime mem Ioc mul one add div log pow
+# Axler's primes in short intervals
 
-Primes in short intervals: with `a = (1.42969·10¹² - 1)⁻¹` and `b = (1.59753·10¹² - 1)⁻¹`,
-for `1 ≤ n ≤ 5` and every real `x ≥ Xₙ` there is a prime `p` with `x < p ≤ x (1 + aₙ/logⁿ x)`,
-where (Table 1) `a₁ = 43a`, `X₁ = 952527672606693` and `aₙ = 46ⁿ b` for `n = 2, …, 5` with
-`X₂ = 684943746324434`, `X₃ = 543684371469081`, `X₄ = 336149866771577`,
-`X₅ = 246782656239427`. Stated as a conjunction over the five rows.
+**Axler's primes in short intervals.** Let $\log$ denote the natural logarithm, and put
+$a = 1/(1.42969 \cdot 10^{12} - 1)$ and $b = 1/(1.59753 \cdot 10^{12} - 1)$. For every real
+$x \ge 952527672606693$ there is a prime $p$ with $x < p \le x\,(1 + 43a/\log x)$. Moreover, for
+each of the pairs $(n, X_n)$ equal to $(2, 684943746324434)$, $(3, 543684371469081)$,
+$(4, 336149866771577)$ and $(5, 246782656239427)$, and every real $x \ge X_n$, there is a prime
+$p$ with $x < p \le x\,(1 + 46^n b/\log^n x)$.
 
 ## Depends on
 

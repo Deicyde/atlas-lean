@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.inv_le
 ---
 
-# Inv le
+# The odd greedy unit fraction does not exceed the remainder
 
-The unit fraction of the odd greedy choice does not
-exceed the remainder.
+**The odd greedy unit fraction does not exceed the remainder.** If $d$ is the odd greedy
+choice at a rational number $r$, then $1/d \le r$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Sources
 

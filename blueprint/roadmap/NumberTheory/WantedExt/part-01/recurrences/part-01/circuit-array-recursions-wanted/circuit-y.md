@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.circuitY
 ---
 
-# Circuit Y
+# The Y-Δ resistance function
 
-The `Y`-`Δ` resistance function `Y(a, b, c) = (ab + bc + ca) / a`.
+**The Y-Δ resistance function.** For elements $a$, $b$, $c$ of a field $K$, the $Y$-$\Delta$
+resistance function is $Y(a, b, c) = (ab + bc + ca)/a$.
+
+When $a = 0$ the value is $0$, by the convention $x/0 = 0$.
 
 ## Depends on
 

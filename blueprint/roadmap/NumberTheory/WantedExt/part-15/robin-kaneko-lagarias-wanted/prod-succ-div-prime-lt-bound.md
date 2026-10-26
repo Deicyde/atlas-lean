@@ -13,7 +13,7 @@ For `k ≥ 6` and `1 ≤ j ≤ k + 1`, `A(k) < C(k)` with
 
 ## Depends on
 
-- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

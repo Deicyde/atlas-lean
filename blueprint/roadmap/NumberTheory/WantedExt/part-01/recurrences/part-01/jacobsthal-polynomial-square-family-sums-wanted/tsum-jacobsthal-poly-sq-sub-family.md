@@ -5,18 +5,35 @@ statement: formalized
 lean: MetaMathlibExt.tsum_jacobsthalPoly_sq_sub_family
 ---
 
-# Tsum jacobsthal Poly sq sub family
+# Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials (Koshy–Gao, Theorem 3.1)
 
-Theorem 3.1: for real `x > 0` and positive integers `k`, `p`, `r`, `t` with `t ≤ 2p`,
-`w = (1 + √(4x + 1))/2` and `c ∈ {J, j}`,
-`Σ_{n≥1} (-1)^{tk} D* ν* x^{(2pn+t-2p)k} J_r J_{2pk} /
-  (c_{(2pn+t-p)k}² - (-1)^{tk} D* ν* x^{(2pn+t-2p)k} J_{pk}²) = c_{tk+r}/c_{tk} - w^r`, where
-`D* ν* = 1` for `c = J` and `D* ν* = -(4x + 1)` for `c = j` (the two cases as a conjunction;
-summation index shifted to start at `0`).
+**Reciprocal sums of shifted squares of Jacobsthal and Jacobsthal–Lucas polynomials
+(Koshy–Gao, Theorem 3.1).** Let $J_n(x)$ and $j_n(x)$ be the Jacobsthal and Jacobsthal–Lucas
+polynomials, given by $z_{n+2} = z_{n+1} + x z_n$ with initial values $J_0 = 0$, $J_1 = 1$ and
+$j_0 = 2$, $j_1 = 1$. Let $x > 0$ be real, let $k$, $p$, $r$, $t$ be positive integers with
+$t \le 2p$, let $w = (1 + \sqrt{4x + 1})/2$, and write $e_n = (2pn + t)k$. Then
+
+$$
+\sum_{n=0}^{\infty} \frac{(-1)^{tk} x^{e_n} J_r(x) J_{2pk}(x)}
+{J_{(2pn+p+t)k}(x)^2 - (-1)^{tk} x^{e_n} J_{pk}(x)^2} =
+\frac{J_{tk+r}(x)}{J_{tk}(x)} - w^r
+$$
+
+and
+
+$$
+\sum_{n=0}^{\infty} \frac{(-1)^{tk+1} (4x + 1) x^{e_n} J_r(x) J_{2pk}(x)}
+{j_{(2pn+p+t)k}(x)^2 + (-1)^{tk} (4x + 1) x^{e_n} J_{pk}(x)^2} =
+\frac{j_{tk+r}(x)}{j_{tk}(x)} - w^r.
+$$
+
+In the source the sums run over $n \ge 1$, with $(2pn + t - p)k$ in place of $(2pn + p + t)k$
+and exponent $(2pn + t - 2p)k$ in place of $e_n$; here the summation index is shifted to start
+at $n = 0$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

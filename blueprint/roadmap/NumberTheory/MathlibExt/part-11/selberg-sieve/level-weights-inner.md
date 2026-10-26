@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.SelbergSieve.levelWeights_inner
 ---
 
-# Level Weights inner
+# Inversion formula for the Selberg level weights
 
-The divisor sum of the level weights diagonalizes to the normalized `y`-coefficient.
+**Inversion formula for the Selberg level weights.** For a bounding sieve whose sifting primes
+have product $P$, with density function $\nu$, a natural number $R$ and a divisor $l$ of $P$, the
+level-$R$ Selberg weights $\lambda_d$ satisfy $\sum_{d \mid P,\ l \mid d} \nu(d)\,\lambda_d = y_l$,
+where $y_l$ is the normalized level-$R$ Selberg $y$-coefficient at $l$.
 
 ## Depends on
 
-- [Level Weights](level-weights.md)
-- [Level Y](level-y.md)
+- [Selberg sieve weights](level-weights.md)
+- [Normalized Selberg coefficients](level-y.md)
 
 ## Sources
 

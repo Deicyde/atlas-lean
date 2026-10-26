@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.weightedMonicConvSum_zero
 ---
 
-# Weighted Monic Conv Sum zero
+# The weighted convolution sum at degree zero
 
-`D[γ, α, β](0) = γ(1) α(1) β(1)`.
+**The weighted convolution sum at degree zero.** Let $F$ be a field and let
+$\gamma, \alpha, \beta$ be functions from $F[T]$ to $\mathbb{C}$, and write $\alpha * \beta$ for
+the monic Dirichlet convolution. The weighted convolution sum $D(\gamma, \alpha, \beta; 0)$, the
+sum of $\gamma(f)\,(\alpha * \beta)(f)$ over the monic $f \in F[T]$ of degree at most $0$, equals
+$\gamma(1)\,\alpha(1)\,\beta(1)$.
 
 ## Depends on
 
-- [Weighted Monic Conv Sum](weighted-monic-conv-sum.md)
+- [Weighted convolution sum](weighted-monic-conv-sum.md)
 
 ## Proof depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
-- [Monic Dirichlet Conv one](monic-dirichlet-conv-one.md)
-- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
+- [Dirichlet convolution at $1$](monic-dirichlet-conv-one.md)
+- [Monic polynomials of degree zero](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

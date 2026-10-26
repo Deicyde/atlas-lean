@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.nthPrime_gt_mul_log_sub_corollary_one
 ---
 
-# Nth Prime gt mul log sub corollary one
+# Lower bounds for the $n$-th prime in terms of its logarithm
 
-Corollary 1, inequalities (6)-(9): with one-indexed `pₙ` and `L = log pₙ`,
-`pₙ > n (L - 1 - 1.109 / L)` for `n ≥ 2621506158680`,
-`pₙ > n (L - 1 - 1 / L - 3.48 / L²)` for `n ≥ 4605081012945`,
-`pₙ > n (L - 1 - 1 / L - 3.024334 / L² - 14.893 / L³)` for `n ≥ 4514634967572`, and
-`pₙ > n (L - 1 - 1 / L - 3.024334 / L² - 12.975666 / L³ - 79.962 / L⁴)` for `n ≥ 8`.
+**Lower bounds for the $n$-th prime in terms of its logarithm.** Let $p_n$ denote the $n$-th
+prime, so that $p_1 = 2$, and put $L = \log p_n$. Then
+$p_n > n\left(L - 1 - \frac{1.109}{L}\right)$ for every integer $n \ge 2621506158680$,
+$p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.48}{L^2}\right)$ for every integer
+$n \ge 4605081012945$,
+$p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.024334}{L^2} - \frac{14.893}{L^3}\right)$ for every
+integer $n \ge 4514634967572$, and
+$p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.024334}{L^2} - \frac{12.975666}{L^3} -
+\frac{79.962}{L^4}\right)$ for every integer $n \ge 8$.
 
 ## Depends on
 

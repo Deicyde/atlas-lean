@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.kappaMin_le
 ---
 
-# Kappa Min le
+# $\kappa_{\min}$ is a lower bound for $\kappa$
 
-`κ_min ≤ κ(P)` for every monic irreducible `P`.
+**$\kappa_{\min}$ is a lower bound for $\kappa$.** Let $F$ be a field, let $\kappa$ assign a
+natural number to each polynomial in $F[T]$, and let $\kappa_{\min}$ be the minimum of $\kappa(P)$
+over the monic irreducible $P \in F[T]$. Then $\kappa_{\min} \le \kappa(P)$ for every monic
+irreducible $P \in F[T]$.
 
 ## Depends on
 
-- [Kappa Min](kappa-min.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
 
 ## Sources
 

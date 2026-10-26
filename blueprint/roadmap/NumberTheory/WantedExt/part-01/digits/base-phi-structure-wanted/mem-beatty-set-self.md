@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.mem_beattySet₀_self
 ---
 
-# Mem beatty Set₀ self
+# The initial term of a generalized Beatty set
 
-`r = V₀(p, q, r)(0)` is a term of `V₀(p, q, r)`.
+**The initial term of a generalized Beatty set.** For all integers $p$, $q$ and $r$, the
+integer $r$ belongs to the set $V_0(p, q, r)$ of terms $p \lfloor n\varphi \rfloor + qn + r$,
+$n \ge 0$, of the generalized Beatty sequence, where $\varphi$ is the golden ratio; indeed $r$
+is its term at $n = 0$.
 
 ## Depends on
 
-- [Beatty Set₀](beatty-set-2.md)
+- [Terms of a generalized Beatty sequence from index zero](beatty-set-2.md)
 
 ## Proof depends on
 
-- [Generalized Beatty](generalized-beatty.md)
-- [Generalized Beatty zero](generalized-beatty-zero.md)
+- [Generalized Beatty sequence](generalized-beatty.md)
+- [Generalized Beatty sequence at zero](generalized-beatty-zero.md)
 
 ## Sources
 

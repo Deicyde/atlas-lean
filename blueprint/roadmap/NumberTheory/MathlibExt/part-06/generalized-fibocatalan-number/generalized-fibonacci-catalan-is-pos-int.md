@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFibonacciCatalan_isPosInt
 ---
 
-# Generalized Fibonacci Catalan is Pos Int
+# Generalized FiboCatalan numbers are positive integers
 
-T1: for all natural `r, n` the generalized FiboCatalan value is a
-positive integer (a positive natural whose rational cast equals it).
+**Generalized FiboCatalan numbers are positive integers.** For all natural numbers $r$ and
+$n$, the generalized FiboCatalan number with parameters $r$ and $n$ is a positive integer: it
+equals $k$ for some natural number $k \ge 1$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ positive integer (a positive natural whose rational cast equals it).
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
 
 ## Sources
 

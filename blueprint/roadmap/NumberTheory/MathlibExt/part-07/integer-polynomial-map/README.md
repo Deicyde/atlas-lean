@@ -5,8 +5,8 @@ navigation: module
 
 # Integer Polynomial Map
 
-- [Integer Polynomial Map](integer-polynomial-map.md)
-- [To Fun](to-fun.md)
-- [To Fun Reduce](to-fun-reduce.md)
-- [Iterate](iterate.md)
-- [Iterate Reduce](iterate-reduce.md)
+- [Integer polynomial map](integer-polynomial-map.md)
+- [Evaluation of an integer polynomial map](to-fun.md)
+- [Reduction of an integer polynomial map modulo a natural number](to-fun-reduce.md)
+- [Iterates of an integer polynomial map](iterate.md)
+- [Iterates of an integer polynomial map modulo a natural number](iterate-reduce.md)

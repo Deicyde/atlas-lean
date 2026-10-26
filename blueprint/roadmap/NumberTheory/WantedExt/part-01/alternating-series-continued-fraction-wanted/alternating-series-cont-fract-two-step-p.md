@@ -5,21 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.alternatingSeries_contFract_twoStepPattern
 ---
 
-# Alternating Series cont Fract two Step Pattern
+# Alternating series with a two-step continued fraction pattern
 
-Alternating series whose continued fractions follow a two-step partial-quotient pattern (the
-quotients follow the pattern; they need not repeat): let `(x_i)` be positive integers with
-`x_0 = 1` and let `x = ∑_{i ≥ 0} (-1)^i / x_i` be irrational with continued fraction
-`[0; a_1, a_2, …]` and convergents `p_n / q_n`. If `∑_{i=0}^{n} (-1)^i / x_i = p_{n+1} / q_{n+1}`,
-`x_{2n+1} ∣ x_{2n+2}` and
-`x_{2n+3} = (x_{2n+2}/x_{2n+1} · x_{2n}/x_{2n-1} ⋯ x_2/x_1)^2 + x_{2n+2}` for all `n ≥ 0`, then
-(i) `x_n = q_n q_{n+1}`, (ii) `q_{2n+1} ∣ a_{2n+3}`, and (iii) `a_{2n+2} = 1` for `n ≥ 1`.
+**Alternating series with a two-step continued fraction pattern.** Let $(u_i)_{i \ge 0}$ be
+positive integers with $u_0 = 1$, and let $x$ be an irrational real number with
+$\sum_{i \ge 0} (-1)^i / u_i = x$. Write $x = [a_0; a_1, a_2, \dots]$ for its continued fraction
+expansion and $p_n / q_n = [a_0; a_1, \dots, a_n]$ for its convergents, with $q_0 = 1$ and
+$q_1 = a_1$. Suppose that for every $n \ge 0$ we have
+$\sum_{i=0}^{n} (-1)^i / u_i = p_{n+1} / q_{n+1}$, $u_{2n+1} \mid u_{2n+2}$ and
+$u_{2n+3} = \bigl(\prod_{j=0}^{n} u_{2j+2} / u_{2j+1}\bigr)^2 + u_{2n+2}$. Then
+(i) $u_n = q_n q_{n+1}$ for every $n \ge 0$, (ii) for every $n \ge 0$ there is a natural number
+$m$ with $a_{2n+3} = m \, q_{2n+1}$, and (iii) $a_{2n+2} = 1$ for every $n \ge 1$.
 
-`q_n` is `(GenContFract.of x).dens n`, `p_n` is `nums n`, and `a_k` is `partDens.get? (k - 1)`.
-Deviation: part (iii) is stated for `n ≥ 1`. At `n = 0` it fails: the continued fraction
-`[0; 1, 2, 1, 1, 4, 1, 32, 1, 1280, …]` (continued by `a_{2n+4} = 1`, `a_{2n+3} = q_{2n+1}`) with
-`x_n = q_n q_{n+1}` (`q = 1, 1, 3, 4, 7, 32, 39, 1280, …`) satisfies every hypothesis and has
-`a_2 = 2`.
+Part (iii) is stated only for $n \ge 1$, because it can fail at $n = 0$: the continued fraction
+$[0; 1, 2, 1, 1, 4, 1, 32, 1, 1280, \dots]$, continued by $a_{2n+4} = 1$ and
+$a_{2n+3} = q_{2n+1}$, with $u_n = q_n q_{n+1}$ (here $q = 1, 1, 3, 4, 7, 32, 39, 1280, \dots$)
+satisfies every hypothesis and has $a_2 = 2$.
 
 ## Depends on
 

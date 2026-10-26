@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.trinomialTransformSequence_zero
 ---
 
-# Trinomial Transform Sequence zero
+# Zeroth term of the trinomial transform
 
-The zeroth term of a trinomial transform is the zeroth input term.
+**Zeroth term of the trinomial transform.** For every semiring $R$ and every sequence
+$a \colon \mathbb{N} \to R$, the zeroth term of the trinomial transform of $a$ equals $a_0$.
 
 ## Depends on
 
-- [Trinomial Transform Sequence](trinomial-transform-sequence.md)
+- [Trinomial transform](trinomial-transform-sequence.md)
 
 ## Proof depends on
 
-- [Trinomial Coefficient](../trinomial-coefficient.md)
+- [Trinomial coefficient](../trinomial-coefficient.md)
 
 ## Sources
 

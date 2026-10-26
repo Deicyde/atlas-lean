@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.dirichletUnits_multiplicative_antimultiplicative_subgroups
 ---
 
-# Dirichlet Units multiplicative antimultiplicative subgroups
+# Multiplicative and antimultiplicative units form subgroups
 
-Proposition 1: in the unit group `U` of real arithmetical functions under Dirichlet
-convolution, the units with `f 1 = 1`, the multiplicative units and the antimultiplicative units
-form subgroups `U₁`, `U_M`, `U_A` with `U_M ≤ U₁`, `U_A ≤ U₁` and `U_M ∩ U_A = {δ}`.
+**Multiplicative and antimultiplicative units form subgroups.** Let $U$ be the group of units
+of the ring of real arithmetical functions under Dirichlet convolution. The units $f$ with
+$f(1) = 1$, the multiplicative units and the antimultiplicative units form subgroups $U_1$, $U_M$
+and $U_A$ of $U$, respectively. Moreover $U_M \le U_1$, $U_A \le U_1$ and
+$U_M \cap U_A = \{\delta\}$, where $\delta$ is the Dirichlet identity.
 
 ## Depends on
 
-- [Is Antimultiplicative](is-antimultiplicative.md)
+- [Antimultiplicative arithmetical functions](is-antimultiplicative.md)
 
 ## Sources
 

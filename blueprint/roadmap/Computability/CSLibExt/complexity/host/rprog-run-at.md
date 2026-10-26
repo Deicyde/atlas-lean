@@ -42,7 +42,7 @@ every other stack empty.
 - [Stack lengths grow by at most the push bound per step](stk-length-le.md)
 - [Stack lengths when only one stack is filled](update-length-le.md)
 - [Component labels in the reduction host](r.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](../../../MathlibExt/turing-machine/composition/push-bound.md)
 - [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 - [Frame condition for a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
 - [Run embedding for bounded runs](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)

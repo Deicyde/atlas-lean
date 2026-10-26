@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciRepresentationCount_small
 ---
 
-# Fibonacci Representation Count small
+# Small values of the Fibonacci representation count
 
-Small values `Tot_FIB(0), …, Tot_FIB(8) = 1, 1, 1, 2, 1, 2, 2, 1, 3`.
+**Small values of the Fibonacci representation count.** Let $F_i$ be the Fibonacci numbers
+($F_0 = 0$, $F_1 = 1$), and let $\mathrm{Tot}_{\mathrm{FIB}}(m)$ be the number of ways to write
+$m$ as a sum of Fibonacci numbers $F_i$ with distinct indices $i \ge 2$. Then
+$\mathrm{Tot}_{\mathrm{FIB}}(0), \dots, \mathrm{Tot}_{\mathrm{FIB}}(8)$ are
+$1, 1, 1, 2, 1, 2, 2, 1, 3$.
 
 ## Depends on
 
-- [Fibonacci Representation Count](fibonacci-representation-count.md)
+- [Number of Fibonacci representations](fibonacci-representation-count.md)
 
 ## Sources
 

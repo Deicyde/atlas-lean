@@ -4,5 +4,5 @@ navigation: module
 
 # Hyperfactorial Partition
 
-- [Hyperfactorial Digits Normalized](hyperfactorial-digits-normalized.md)
-- [Hyperfactorial Partition](hyperfactorial-partition.md)
+- [Normalized hyperfactorial digit vectors](hyperfactorial-digits-normalized.md)
+- [Hyperfactorial partition](hyperfactorial-partition.md)

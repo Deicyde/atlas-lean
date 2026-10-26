@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.not_satisfiesKnottCondition_neg_one_neg_two
 ---
 
-# Not satisfies Knott Condition neg one neg two
+# The expansion 0.11 violates Knott's truncation rule
 
-`0.11` (which represents `1`) ends in `011` and is not a Knott expansion.
+**The expansion 0.11 violates Knott's truncation rule.** The finite base phi expansion
+$0.11$, with digits $1$ at positions $-1$ and $-2$ and no others, ends in the digits $011$, so it
+does not satisfy Knott's truncation rule.
+
+It represents $1$, since $\varphi^{-1} + \varphi^{-2} = 1$ for the golden ratio $\varphi$, but
+is not a Knott expansion of $1$.
 
 ## Depends on
 
-- [Satisfies Knott Condition](satisfies-knott-condition.md)
+- [Knott's truncation rule](satisfies-knott-condition.md)
 
 ## Sources
 

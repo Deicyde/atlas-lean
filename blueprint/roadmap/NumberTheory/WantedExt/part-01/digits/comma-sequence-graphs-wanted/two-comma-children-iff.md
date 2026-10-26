@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.two_commaChildren_iff
 ---
 
-# Two comma Children iff
+# Numbers with two comma-children
 
-Numbers with two comma-children, in base `b ≥ 2`: (a) a positive `n < b²` has two children
-iff `n = w·b + x` with `1 ≤ x`, `2x ≤ b - 1` and `w = b - 1 - 2x` (so `0 ≤ w ≤ b - 3`);
-(b) an `n ≥ b²` has two children iff its base-`b` representation is
-`d (b-1)…(b-1) d (b-1-d)` with `1 ≤ d ≤ b - 2` and `i ≥ 0` digits `b - 1` (digits listed least
-significant first below). A child of `k` is `k + b·(k mod b) + y` for a digit `y` that is its
-leading digit (`IsCommaCandidate`); distinct digits give distinct children.
+**Numbers with two comma-children.** Fix a base $b \ge 2$, and say that $n$ has at least two
+comma-children if there are distinct digits $y_1 \ne y_2$ below $b$ that are both comma
+candidates for $n$ in base $b$ (distinct candidates $y$ give distinct children
+$n + b\,(n \bmod b) + y$). Then a positive integer $n < b^2$ has at least two comma-children if
+and only if $n = (b - 1 - 2x)\, b + x$ for some $x$ with $1 \le x$ and $2x \le b - 1$; and an
+integer $n \ge b^2$ has at least two comma-children if and only if its base-$b$ representation,
+most significant digit first, is $d\,(b-1) \cdots (b-1)\, d\,(b-1-d)$ with some number $i \ge 0$
+of middle digits $b - 1$ and $1 \le d \le b - 2$.
 
 ## Depends on
 

@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.projectiveOrderTwo
 ---
 
-# Projective Order Two
+# Projective order of 2
 
-The projective order of `2` modulo `n`, `λ(n) = min {m > 0 : 2 ^ m ≡ ±1 (mod n)}`
-(OEIS A003558); defined as `0` when no such `m` exists, which happens exactly for even `n`
-(including `n = 0` and `n = 2`).
+**Projective order of 2.** For a natural number $n$, the projective order of $2$ modulo $n$ is
+the least $m > 0$ with $2^m \equiv 1$ or $2^m \equiv -1 \pmod{n}$,
+
+$$\lambda(n) = \min \{m > 0 : 2^m \equiv \pm 1 \pmod{n}\},$$
+
+and $\lambda(n) = 0$ when no such $m$ exists, which happens exactly when $n$ is even (including
+$n = 0$, where congruence modulo $0$ is equality of integers). For odd $n$ these are the terms of
+OEIS A003558, which lists $\lambda(2k + 1)$ at index $k$.
 
 ## Depends on
 

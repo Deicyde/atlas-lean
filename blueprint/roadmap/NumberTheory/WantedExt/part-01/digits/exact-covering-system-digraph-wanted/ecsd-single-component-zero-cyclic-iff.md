@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_single_component_zero_cyclic_iff
 ---
 
-# Ecsd single component zero cyclic iff
+# Degree-2 ECSDs with one component and $0$ on a cycle
 
-A degree-2 ECSD `G(d₁n + a₁, d₂n + a₂)` (`d₁, d₂ ∈ {2, -2}`, `a₁ - a₂` odd) has a
-single component with cyclic vertex `0` iff it is `G(2n, -2n ± 1)` (in either rule
-order) or it is `G(-2n + a₁, -2n + a₂)` with `|a₁ - a₂| = 3ᵐ`, `a₁, a₂ ≢ 0 (mod 3)` and
-`max{|a₁|, |a₂|} ≤ 2|a₁ - a₂| - 1`. Restricted reading: Type 3 ECSDs with
-`|a₁ - a₂| = 1` are excluded, where the printed statement fails (`G(-2n + 1, -2n + 2)`
-has a single component with cycle `(0, 1)`, but `max{1, 2} = 2 > 2·1 - 1`); the paper's
-alternative `{a₁, a₂} = {0, ±1}` lies in the excluded case and is dropped.
+**Degree-2 ECSDs with one component and $0$ on a cycle.** Let $d_1, d_2 \in \{2, -2\}$ and let
+$a_1, a_2$ be integers with $a_1 - a_2$ odd, excluding the case $d_1 = d_2 = -2$ with
+$|a_1 - a_2| = 1$. Consider the exact covering system digraph $G(d_1 n + a_1, d_2 n + a_2)$, with
+an edge $m \to d_i m + a_i$ for every integer $m$ and $i = 1, 2$. It has a single component (any
+two integers are joined by a path in its underlying undirected graph) and a directed walk of
+positive length from $0$ back to $0$ if and only if one of the following holds: $d_1 = 2$,
+$d_2 = -2$, $a_1 = 0$ and $a_2 = \pm 1$; or $d_1 = -2$, $d_2 = 2$, $a_2 = 0$ and $a_1 = \pm 1$;
+or $d_1 = d_2 = -2$, $|a_1 - a_2| = 3^m$ for some integer $m \ge 0$, neither $a_1$ nor $a_2$ is
+divisible by $3$, and $\max(|a_1|, |a_2|) \le 2|a_1 - a_2| - 1$.
+
+The excluded case behaves differently: $G(-2n + 1, -2n + 2)$ has a single component and the
+cycle $(0, 1)$, although $\max(1, 2) = 2 > 2 \cdot 1 - 1$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

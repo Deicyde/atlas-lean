@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.isZeckendorfCollection_periodic
 ---
 
-# Is Zeckendorf Collection periodic
+# Periodic collections are Zeckendorf collections
 
-Periodic collections: for a list `L = (e_1, …, e_N)` with `N ≥ 2` and `e_1 ≠ 0`, the sums of
-finitely many disjoint `L`-blocks form a Zeckendorf collection with `β̂^n = θ^n` for `n ≥ 2`.
+**Periodic collections are Zeckendorf collections.** Let $L = (e_1, \dots, e_N)$ be a list of
+natural numbers with $N \ge 2$ and $e_1 \ne 0$, and let $E$ be the periodic Zeckendorf collection
+determined by $L$ (the sums of finitely many $L$-blocks with pairwise disjoint support
+intervals). Index coefficient functions from $1$ and let $\beta^n$ be the basis coefficient
+function with entry $1$ at index $n$. Then $E$ is a Zeckendorf collection, and for every
+$n \ge 2$ the immediate predecessor of $\beta^n$ in $E$ is the maximal $L$-block $\theta^n$.
 
 ## Depends on
 
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
 - [Periodic Theta](periodic-theta.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

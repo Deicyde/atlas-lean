@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.circuitGrid
 ---
 
-# Circuit Grid
+# Reduced circuit grids
 
-The all-one grid reduced `m` times, where after the `m`-th reduction every boundary edge
-(left edges on diagonal `1`, right edges on diagonal `r`) is replaced by `bdry m` when that is
-`some x`. With `bdry = none` this is the numerical reduction; Definitions 2.4 and 2.5 replace
-boundary values by variables.
+**Reduced circuit grids.** Let $K$ be a field, and for each $m$ let either a boundary value
+$\beta_m \in K$ be given or none. The labellings $T^m$, which assign a value $T^m_{r,d,e} \in K$ to
+the edge $e$ (left $L$, right $R$ or base $B$) of the upright triangle in row $r$ and diagonal $d$,
+are defined by recursion on $m$: $T^0$ is identically $1$, and $T^{m+1}$ is the row reduction of
+$T^m$, except that if $\beta_{m+1}$ is given then every left edge with $d = 1$ and every right edge
+with $d = r$ takes the value $\beta_{m+1}$.
+
+With no boundary values given this is the numerical reduction of the all-one grid; in
+Definitions 2.4 and 2.5 the boundary values are variables.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Reduce](circuit-reduce.md)
+- [Row reduction of a labelled triangular grid](circuit-reduce.md)
 
 ## Sources
 

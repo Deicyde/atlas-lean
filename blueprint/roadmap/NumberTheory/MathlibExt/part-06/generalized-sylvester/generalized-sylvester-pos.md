@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.generalizedSylvester_pos
 ---
 
-# Generalized Sylvester pos
+# Positivity of the generalized Sylvester sequence
 
-Every term of the generalized Sylvester sequence is positive.
+**Positivity of the generalized Sylvester sequence.** For all natural numbers $n$ and $k$, the
+term $s_k(n)$ of the generalized Sylvester sequence is positive.
 
 ## Depends on
 
-- [Generalized Sylvester](generalized-sylvester.md)
+- [Generalized Sylvester sequence](generalized-sylvester.md)
 
 ## Sources
 

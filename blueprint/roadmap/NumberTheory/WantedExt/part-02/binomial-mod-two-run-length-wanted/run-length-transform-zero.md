@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.runLengthTransform_zero
 ---
 
-# Run Length Transform zero
+# Run length transform at zero
 
-`0` has no runs of `1`s, so every run length transform takes the value `1` at `0`.
+**Run length transform at zero.** For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
+length transform of $S$ takes the value $1$ at $0$, since $0$ has no runs of $1$s in binary.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Proof depends on
 
-- [Binary Run Lengths](binary-run-lengths.md)
-- [Bit Run Lengths](bit-run-lengths.md)
+- [Binary run lengths](binary-run-lengths.md)
+- [Run lengths of a digit list](bit-run-lengths.md)
 
 ## Sources
 

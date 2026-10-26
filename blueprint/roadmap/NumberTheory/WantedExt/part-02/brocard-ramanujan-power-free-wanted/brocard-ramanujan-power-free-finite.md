@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.brocardRamanujan_powerFree_finite
 ---
 
-# Brocard Ramanujan power Free finite
+# Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite
 
-For every `k ≥ 2`, the Brocard-Ramanujan equation `n! + 1 = x ^ 2` has only
-finitely many solutions `(n, x)` with `x - 1` or `x + 1` a `k`-free number.
+**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite.** For every
+natural number $k \ge 2$, there are only finitely many pairs of natural numbers $(n, x)$ with
+$n! + 1 = x^2$ such that $x - 1$ or $x + 1$ is $k$-free.
 
 ## Depends on
 
-- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
+- [Power-free natural numbers](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

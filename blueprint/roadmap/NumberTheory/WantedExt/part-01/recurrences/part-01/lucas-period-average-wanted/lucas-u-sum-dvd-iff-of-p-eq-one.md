@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_sum_dvd_iff_of_p_eq_one
 ---
 
-# Lucas U sum dvd iff of p eq one
+# Divisibility of Lucas sums when $P = 1$
 
-Theorem 2.6: for `a = 1`, `b ≠ 0` and `gcd(n, b) = 1`, `B_U(n) ≡ 0 (mod n)` if and only if
-`U (n + 2) ≡ 1 (mod n)`.
+**Divisibility of Lucas sums when $P = 1$.** Let $U$ be the Lucas sequence $U_0 = 0$,
+$U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with $P = 1$ and $Q \ne 0$. For every positive integer
+$n$ coprime to $Q$, $n \mid U_1 + \cdots + U_n$ if and only if $U_{n+2} \equiv 1 \pmod n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

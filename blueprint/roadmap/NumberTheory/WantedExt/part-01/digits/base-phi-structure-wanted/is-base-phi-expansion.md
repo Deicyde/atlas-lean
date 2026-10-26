@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsBasePhiExpansion
 ---
 
-# Is Base Phi Expansion
+# Base phi expansion
 
-`S` is the base phi expansion of `N`: a Bergman expansion (no two adjacent
-digits `1`) whose value `∑ i ∈ S, φ ^ i` is `N`.
+**Base phi expansion.** Let $\varphi$ be the golden ratio. A finite set $S$ of integers, read as
+the positions of the digits $1$ of a finite expansion with digits $0$ and $1$, is a base phi
+expansion of the natural number $N$ when it is a Bergman expansion (no two digits $1$ are
+adjacent: $i \in S$ implies $i + 1 \notin S$) and its value $\sum_{i \in S} \varphi^i$ equals $N$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
-- [Base Phi Value](../base-phi-representations-wanted/base-phi-value.md)
+- [Bergman expansions](../base-phi-representations-wanted/is-bergman-expansion.md)
+- [Value of a base phi expansion](../base-phi-representations-wanted/base-phi-value.md)
 
 ## Sources
 

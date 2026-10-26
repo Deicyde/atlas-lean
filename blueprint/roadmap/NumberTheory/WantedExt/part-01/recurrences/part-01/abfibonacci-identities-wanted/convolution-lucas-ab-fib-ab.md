@@ -15,8 +15,8 @@ lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.convolutio
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

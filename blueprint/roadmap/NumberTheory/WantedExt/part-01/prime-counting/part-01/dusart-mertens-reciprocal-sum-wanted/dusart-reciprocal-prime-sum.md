@@ -6,16 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.dusart_reciprocal_prime_sum
 ---
 
-# Dusart reciprocal prime sum
+# Dusart's explicit Mertens second theorem
 
-Dusart explicit Mertens second theorem: for `x ≥ 2278383`,
-`∑_{p ≤ x} 1 / p = log log x + B + E` with `|E| ≤ 0.2 / (log x)^3`,
-where `B` is the Meissel–Mertens constant. The sum ranges over
-`Finset.range (⌊x⌋₊ + 1)` filtered by `Nat.Prime`.
+**Dusart's explicit Mertens second theorem.** Let $p$ range over the primes, let $\log$ be
+the natural logarithm, and let
+$B = \lim_{n \to \infty} \bigl(\sum_{p \le n} \frac{1}{p} - \log \log n\bigr)$ be the
+Meissel–Mertens constant. For every real number $x \ge 2278383$ there is a real number $E$ with
+$|E| \le \frac{0.2}{(\log x)^3}$ such that
+
+$$\sum_{p \le x} \frac{1}{p} = \log \log x + B + E.$$
 
 ## Depends on
 
-- [Meissel Mertens Constant](meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](meissel-mertens-constant.md)
 
 ## Sources
 

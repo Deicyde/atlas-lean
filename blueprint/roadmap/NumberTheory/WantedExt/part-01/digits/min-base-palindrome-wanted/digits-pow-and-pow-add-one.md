@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.digits_pow_and_pow_add_one
 ---
 
-# Digits pow and pow add one
+# Digits of a power of the base and of its successor
 
-For every base `z ≥ 2`: (I) `z^n = (1, 0, …, 0)_z` with `n + 1` digits; (II)
-for `n ≥ 1`, `z^n + 1 = (1, 0, …, 0, 1)_z` with `n + 1` digits. Part (III) is
-omitted: as printed (`z^n - 1 = (1, 1, …, 1)_z`) it is false for `z ≥ 3`, e.g.
-`3^2 - 1 = 8 = (2, 2)_3`.
+**Digits of a power of the base and of its successor.** Let $z \ge 2$ and $n$ be natural
+numbers. Then the base-$z$ digits of $z^n$ are a $1$ followed by $n$ zeros, and, if $n \ge 1$,
+the base-$z$ digits of $z^n + 1$ are a $1$, then $n - 1$ zeros, then a $1$.
+
+Part (III) of the source theorem is omitted: as printed ($z^n - 1 = (1, 1, \dots, 1)_z$) it is
+false for $z \ge 3$, for example $3^2 - 1 = 8 = (2, 2)_3$.
 
 ## Depends on
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.nStepFibonacci_three_five
 ---
 
-# N Step Fibonacci three five
+# The tribonacci number with index 5
 
-`F^{(3)}_5 = 7` (tribonacci numbers `0, 1, 1, 2, 4, 7`).
+**The tribonacci number with index 5.** The $3$-step Fibonacci number $F^{(3)}_5$ equals $7$.
+
+The tribonacci numbers $F^{(3)}_0, \dots, F^{(3)}_5$ are $0, 1, 1, 2, 4, 7$.
 
 ## Depends on
 
-- [N Step Fibonacci](n-step-fibonacci.md)
+- [N-step Fibonacci numbers](n-step-fibonacci.md)
 
 ## Proof depends on
 
-- [N Step Fibonacci one](n-step-fibonacci-one.md)
-- [N Step Fibonacci zero](n-step-fibonacci-zero.md)
+- [First N-step Fibonacci number](n-step-fibonacci-one.md)
+- [Zeroth N-step Fibonacci number](n-step-fibonacci-zero.md)
 
 ## Sources
 

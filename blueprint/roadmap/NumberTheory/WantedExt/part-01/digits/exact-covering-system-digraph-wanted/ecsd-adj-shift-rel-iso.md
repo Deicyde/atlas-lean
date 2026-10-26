@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ecsdAdj_shift_relIso
 ---
 
-# Ecsd Adj shift rel Iso
+# Translation isomorphism of exact covering system digraphs
 
-Translating every vertex by `k` is an isomorphism `G_S ≅ G_{S'}` with
-`S' = {(aᵢ - (dᵢ - 1)k, dᵢ)}`. Stated for an arbitrary finite rule list; the paper's
-exact-covering hypothesis on `S` is not needed.
+**Translation isomorphism of exact covering system digraphs.** Let $r \in \mathbb{N}$, let
+$d_1, \dots, d_r$, $a_1, \dots, a_r$ and $k$ be integers, and put $a_i' = a_i - (d_i - 1)k$.
+Then the map $x \mapsto x + k$ is a digraph isomorphism from
+$G(d_1 n + a_1, \dots, d_r n + a_r)$ onto $G(d_1 n + a_1', \dots, d_r n + a_r')$.
+
+The paper's exact-covering hypothesis on the rules is not needed.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

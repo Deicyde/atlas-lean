@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.monicConvPartialSum_of_neg
 ---
 
-# Monic Conv Partial Sum of neg
+# $D(\alpha, \beta)$ vanishes at negative arguments
 
-`D[α, β](n) = 0` for `n < 0`.
+**$D[\alpha, \beta]$ vanishes at negative arguments.** Let $F$ be a field and let
+$\alpha, \beta \colon F[T] \to \mathbb{C}$. For every integer $n < 0$, the partial sum of the
+Dirichlet convolution of $\alpha$ and $\beta$ satisfies $D[\alpha, \beta](n) = 0$.
 
 ## Depends on
 
-- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+- [Partial sums of a Dirichlet convolution over monic polynomials](monic-conv-partial-sum.md)
 
 ## Proof depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.lStarBlockSumCount_zero
 ---
 
-# L Star Block Sum Count zero
+# The empty block-sum count
 
-`C_0 = 1`: only the zero function is a block sum with no support.
+**The empty block-sum count.** For every list $L$ of natural numbers, $C_0 = 1$, where $C_n$
+is the number of sums of disjoint proper $L^*$-blocks with support intervals inside $[1, n]$:
+for $n = 0$ the zero function is the only such sum.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ lean: MetaMathlibExt.lStarBlockSumCount_zero
 
 ## Proof depends on
 
-- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
 - [Max LStar Block](max-lstar-block.md)
 
 ## Sources

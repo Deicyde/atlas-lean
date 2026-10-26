@@ -4,6 +4,6 @@ navigation: module
 
 # Wilson Quotient
 
-- [Wilson Quotient](wilson-quotient.md)
-- [Mul wilson Quotient](mul-wilson-quotient.md)
-- [Factorial eq mul wilson Quotient sub one](factorial-eq-mul-wilson-quotient-sub-one.md)
+- [Wilson quotient](wilson-quotient.md)
+- [Exactness of the Wilson quotient](mul-wilson-quotient.md)
+- [Factorial form of the Wilson quotient identity](factorial-eq-mul-wilson-quotient-sub-one.md)

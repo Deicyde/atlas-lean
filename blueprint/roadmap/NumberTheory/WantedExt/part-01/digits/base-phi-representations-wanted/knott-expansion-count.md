@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.knottExpansionCount
 ---
 
-# Knott Expansion Count
+# Number of Knott expansions
 
-`Tot_κ(N)`, the number of Knott expansions of `N` (OEIS A289749).
+**Number of Knott expansions.** For a natural number $N$, $\mathrm{Tot}_\kappa(N)$ is the
+number of Knott expansions of $N$ (OEIS A289749).
 
 ## Depends on
 

@@ -6,10 +6,10 @@ proof: formalized
 lean: Nat.sq_mod_sixteen_of_odd
 ---
 
-# Sq mod sixteen of odd
+# Odd squares modulo 16
 
-The square of an odd `k` is `1` mod 16 when `k ≡ ±1 mod 8` and `9` mod 16 when
-`k ≡ ±3 mod 8`.
+**Odd squares modulo 16.** For every odd natural number $k$, either $k^2 \equiv 1 \pmod{16}$
+and $k \equiv 1$ or $7 \pmod 8$, or $k^2 \equiv 9 \pmod{16}$ and $k \equiv 3$ or $5 \pmod 8$.
 
 ## Depends on
 

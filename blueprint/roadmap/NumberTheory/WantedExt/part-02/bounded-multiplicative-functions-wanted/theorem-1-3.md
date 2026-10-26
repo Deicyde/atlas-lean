@@ -6,26 +6,45 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.theorem_1_3
 ---
 
-# Theorem 1 3
+# Non-pretentious multiplicative functions do not correlate with polynomial phases on short intervals on average
 
-Statement of Theorem 1.3 (Non-pretentious multiplicative functions do not correlate
-with polynomial phases on short intervals on average):
+**Non-pretentious multiplicative functions do not correlate with polynomial phases on short
+intervals on average.** For a function $g$ on the integers, a natural number $k$, a real $x$ and a
+real $H > 0$ write
 
-Let `k : ℕ`, `θ : ℝ` such that `0 < θ < 1/2` and `η : ℝ` such that `η > 0`. Then there exist
-constants `Q : ℕ` such that `Q > 0`, `C : ℝ` such that `C > 0`, and `B : ℝ`, such that for any
-multiplicative 1-bounded arithmetic function `f : ℕ → ℂ`, any `X : ℝ` such that `X ≥ 1` and any
-`H : ℝ` such that `Xᶿ ≤ H ≤ X¹⁻ᶿ`, if
+$$
+\|g\|_{u^{k+1}[x, x+H]} = \sup_{\deg P \le k} \frac{1}{H}
+\Bigl| \sum_{\lceil x \rceil \le n \le \lfloor x + H \rfloor} g(n) e^{-2\pi i P(n)} \Bigr|,
+$$
 
-`∫ x ∈ [X, 2X], ‖f‖_{uᵏ⁺¹[x, x + H]}dx ≥ ηX`
+the supremum taken over real polynomials $P$ of degree at most $k$. For functions
+$f, g \colon \mathbb{N} \to \mathbb{C}$ and a real $X$ let
 
-then
+$$
+\mathbb{D}(f, g; X) =
+\Bigl( \sum_{p \le X} \frac{1 - \operatorname{Re}\bigl(f(p) \overline{g(p)}\bigr)}{p} \Bigr)^{1/2},
+$$
 
-`M(f;CXᵏ⁺¹/Hᵏ⁺¹,Q) ≤ B`.
+the sum taken over primes $p \le X$, and for a positive integer $Q$ let $M(f; X, Q)$ be the
+infimum of $\mathbb{D}(f, n \mapsto \chi(n) n^{it}; X)$ over real $t$ with $|t| \le X$, positive
+integers $q \le Q$ and Dirichlet characters $\chi$ modulo $q$.
+
+Let $k$ be a natural number, $\theta$ a real number with $0 < \theta < 1/2$ and $\eta > 0$ a real
+number. Then there are a positive integer $Q$ and real numbers $C > 0$ and $B$ such that the
+following holds for every multiplicative arithmetic function $f \colon \mathbb{N} \to \mathbb{C}$
+with $|f(n)| \le 1$ for all $n$, extended to the integers by $f(n) = 0$ for $n \le 0$, every real
+$X \ge 1$ and every real $H$ with $X^\theta \le H \le X^{1-\theta}$: if
+
+$$
+\int_X^{2X} \|f\|_{u^{k+1}[x, x+H]} \, dx \ge \eta X,
+$$
+
+then $M(f; C X^{k+1} / H^{k+1}, Q) \le B$.
 
 ## Depends on
 
 - [Int Extension](int-extension.md)
-- [Is One Bounded](is-one-bounded.md)
+- [1-bounded function](is-one-bounded.md)
 
 ## Sources
 

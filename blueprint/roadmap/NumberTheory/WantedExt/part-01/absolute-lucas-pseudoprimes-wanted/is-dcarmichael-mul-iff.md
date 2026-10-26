@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isDCarmichael_mul_iff
 ---
 
-# Is DCarmichael mul iff
+# Williams' characterization of two-prime $D$-Carmichael numbers
 
-Williams: for `D ≡ 0, 1 (mod 4)` and primes `p₁ < p₂`, the product `p₁p₂` is `D`-Carmichael
-iff `p₂ = p₁ + 2`, `(D | p₁) = -1` and `(D | p₂) = 1`.
+**Williams' characterization of two-prime $D$-Carmichael numbers.** Let $D$ be an integer
+with $D \equiv 0$ or $1 \pmod 4$ and let $p_1 < p_2$ be primes. Then $p_1 p_2$ is a
+$D$-Carmichael number if and only if $p_2 = p_1 + 2$, $\left(\frac{D}{p_1}\right) = -1$ and
+$\left(\frac{D}{p_2}\right) = 1$, where $\left(\frac{D}{p}\right)$ is the Jacobi symbol.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

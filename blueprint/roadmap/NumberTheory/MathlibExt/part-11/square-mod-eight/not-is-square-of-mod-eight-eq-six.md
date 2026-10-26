@@ -6,9 +6,10 @@ proof: formalized
 lean: Nat.not_isSquare_of_mod_eight_eq_six
 ---
 
-# Not is Square of mod eight eq six
+# Numbers congruent to 6 mod 8 are not squares
 
-A natural number congruent to `6` mod 8 is not a square.
+**Numbers congruent to 6 mod 8 are not squares.** If a natural number $n$ satisfies
+$n \equiv 6 \pmod 8$, then $n$ is not the square of a natural number.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sq mod eight](sq-mod-eight.md)
+- [Squares of natural numbers modulo 8](sq-mod-eight.md)
 
 ## Sources
 

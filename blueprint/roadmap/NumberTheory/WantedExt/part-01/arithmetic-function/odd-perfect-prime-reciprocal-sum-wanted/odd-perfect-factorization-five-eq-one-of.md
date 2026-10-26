@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_factorization_five_eq_one_of_dvd
 ---
 
-# Odd Perfect factorization five eq one of dvd
+# Odd perfect numbers divisible by 165 contain 5 exactly once
 
-If `n` is an odd perfect number divisible by `165`, then `5` divides `n` exactly once.
+**Odd perfect numbers divisible by 165 contain 5 exactly once.** If $n$ is an odd perfect
+number divisible by $165$, then $5$ divides $n$ exactly once: $5 \mid n$ but $25 \nmid n$.
 
 ## Depends on
 

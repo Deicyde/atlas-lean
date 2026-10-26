@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtension.apply_period_eq_apply_zero
 ---
 
-# Apply period eq apply zero
+# A lex-minimal extension periodic from its second entry is periodic
 
-Proposition 4: the periodic part of a lex-minimal extension does not begin
-at the second coordinate: if `(e_2, e_3, …)` is periodic with period `p`,
-then `e_1 = e_{1+p}`, so the whole sequence is periodic.
+**A lex-minimal extension periodic from its second entry is periodic.** Let
+$\eta = (e_1, e_2, \dots)$ be a lex-minimal extension and let $p \ge 1$. If $e_{i+p} = e_i$
+for every $i \ge 2$, then $e_{1+p} = e_1$, so the whole sequence $\eta$ is periodic with
+period $p$.
 
 ## Depends on
 
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
 
 ## Sources
 

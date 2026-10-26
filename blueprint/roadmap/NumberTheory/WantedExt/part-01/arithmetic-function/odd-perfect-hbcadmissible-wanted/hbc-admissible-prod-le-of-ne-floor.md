@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hbcAdmissible_prod_le_of_ne_floor
 ---
 
-# Hbc Admissible prod le of ne floor
+# Stone's $d^{3/4}$ product bound for HBC-admissible tuples
 
-Under the hypotheses of Theorem 1 with `k ≥ 2`, unless `y_1 = ⌊1 + α⌋` (`α = (a + d)/d`),
-`a ∏_{i=1}^k y_i ≤ ((a + d)/d^{3/4})^{2^k} - ((a + d)/d^{3/4})^{2^{k-1}}` (27).
+**Stone's $d^{3/4}$ product bound for HBC-admissible tuples.** Let $a$ and $d$ be coprime
+positive integers, let $k \ge 2$, and let $y_1 < y_2 < \dots < y_k$ be positive integers with
+$\prod_{i=1}^{k} (1 - 1/y_i) \le a/(a + d) < \prod_{i=1}^{k-1} (1 - 1/y_i)$ and
+$y_1 \ne \lfloor 1 + (a + d)/d \rfloor$. Put $\beta = (a + d)/d^{3/4}$. Then
+$a \prod_{i=1}^{k} y_i \le \beta^{2^k} - \beta^{2^{k-1}}$.
 
 ## Depends on
 

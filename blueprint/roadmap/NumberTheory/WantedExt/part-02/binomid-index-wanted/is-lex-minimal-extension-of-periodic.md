@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isLexMinimalExtension_of_periodic
 ---
 
-# Is Lex Minimal Extension of periodic
+# Periodic binomid indices are lex-minimal extensions
 
-Proposition 5: a purely periodic infinite binomid index is the
-lex-minimal extension of some finite binomid index.
+**Periodic binomid indices are lex-minimal extensions.** If an infinite binomid index
+$e = (e_1, e_2, \dots)$ is periodic, that is, there is $p \ge 1$ with $e_{i+p} = e_i$ for all
+$i$, then $e$ is a lex-minimal extension: it is the lex-minimal extension of
+$(e_1, \dots, e_m)$ for some $m \ge 0$.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Binomid index](is-binomid-index.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
 
 ## Sources
 

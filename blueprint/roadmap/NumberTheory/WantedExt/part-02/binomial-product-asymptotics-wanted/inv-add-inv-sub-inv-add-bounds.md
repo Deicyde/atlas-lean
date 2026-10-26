@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.inv_add_inv_sub_inv_add_bounds
 ---
 
-# Inv add inv sub inv add bounds
+# Bounds for $1/a + 1/b - 1/(a+b)$
 
-For `a, b ≥ 1` with `a + b ≥ 3`, `g(a,b) = 1/a + 1/b - 1/(a+b)` satisfies
-`7/6 ≥ g(a,b) > 0`.
+**Bounds for $1/a + 1/b - 1/(a+b)$.** Let $a$ and $b$ be natural numbers with $a, b \ge 1$
+and $a + b \ge 3$, and put $g(a,b) = 1/a + 1/b - 1/(a+b)$. Then $0 < g(a,b) \le 7/6$.
 
 ## Depends on
 

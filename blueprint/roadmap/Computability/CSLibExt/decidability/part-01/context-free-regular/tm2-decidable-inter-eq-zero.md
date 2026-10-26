@@ -37,7 +37,7 @@ decidable by a multi-stack machine.
 - [Start states of a right-hand side in a DFA](dfa-starts.md)
 - [One round of the item search against a DFA](dfa-step.md)
 - [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
-- [The emptiness test](inter-empty-b.md)
+- [The intersection-emptiness test for a grammar and a DFA](inter-empty-b.md)
 - [Correctness of the intersection-emptiness test](inter-empty-b-iff.md)
 
 ## Sources

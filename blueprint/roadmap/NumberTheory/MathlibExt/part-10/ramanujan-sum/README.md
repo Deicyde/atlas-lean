@@ -5,7 +5,7 @@ navigation: module
 
 # Ramanujan Sum
 
-- [Ramanujan Sum](ramanujan-sum.md)
-- [Ramanujan Sum zero](ramanujan-sum-zero.md)
-- [Ramanujan Sum modulus one](ramanujan-sum-modulus-one.md)
-- [Ramanujan Sum add mul modulus](ramanujan-sum-add-mul-modulus.md)
+- [Ramanujan sum](ramanujan-sum.md)
+- [Ramanujan sum at zero](ramanujan-sum-zero.md)
+- [Ramanujan sums of modulus one](ramanujan-sum-modulus-one.md)
+- [Periodicity of Ramanujan sums](ramanujan-sum-add-mul-modulus.md)

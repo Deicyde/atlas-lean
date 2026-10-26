@@ -17,8 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [L Star Collection](l-star-collection.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Sources
 

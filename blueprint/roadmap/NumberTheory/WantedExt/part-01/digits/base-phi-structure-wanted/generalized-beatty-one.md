@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.generalizedBeatty_one
 ---
 
-# Generalized Beatty one
+# Generalized Beatty sequence at one
 
-`V(p, q, r)` at `n = 1` is `p + q + r`, since `⌊φ⌋ = 1`.
+**Generalized Beatty sequence at one.** Let $\varphi$ be the golden ratio. For all integers
+$p, q, r$, the generalized Beatty sequence $V(p, q, r)(n) = p\lfloor n\varphi \rfloor + qn + r$
+takes the value $V(p, q, r)(1) = p + q + r$ at $n = 1$, since $\lfloor \varphi \rfloor = 1$.
 
 ## Depends on
 
-- [Generalized Beatty](generalized-beatty.md)
+- [Generalized Beatty sequence](generalized-beatty.md)
 
 ## Sources
 

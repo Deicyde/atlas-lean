@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.zeta_ne_zero_vinogradov_korobov
 ---
 
-# Zeta ne zero vinogradov korobov
+# Vinogradov–Korobov zero-free region
 
-Lemma 6 (quoted classical result, Vinogradov–Korobov zero-free region):
-there is `C* > 0` with `ζ(s) ≠ 0` for
-`σ ≥ 1 - C* / ((log |t|)^{2/3} (log log |t|)^{1/3})`, `|t| ≥ t₀`.
+**Vinogradov–Korobov zero-free region.** There are real constants $C > 0$ and $t_0 \ge 3$
+such that $\zeta(\sigma + it) \ne 0$ for all real $\sigma$ and $t$ with $|t| \ge t_0$ and
+$\sigma \ge 1 - C / \bigl((\log |t|)^{2/3} (\log \log |t|)^{1/3}\bigr)$.
 
 ## Depends on
 

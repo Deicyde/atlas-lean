@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusRepCount
 ---
 
-# Frobenius Rep Count
+# Number of representations by a vector of generators
 
-The number `d(m; a₁, …, a_k)` of representations of an integer `m` as `x₁a₁ + ⋯ + x_ka_k` with
-`xᵢ ∈ ℕ`, as an extended natural number: it is `0` for `m < 0`, finite when every generator is
-positive, and `⊤` when the representation set is infinite.
+**Number of representations by a vector of generators.** For natural numbers
+$a_1, \dots, a_k$ and an integer $m$, the representation count $d(m; a_1, \dots, a_k)$ is the
+number of tuples $(x_1, \dots, x_k)$ of natural numbers with $x_1 a_1 + \dots + x_k a_k = m$,
+counted as an extended natural number, so that it is $\infty$ when there are infinitely many such
+tuples.
+
+It is $0$ for $m < 0$, and finite when every $a_i$ is positive.
 
 ## Depends on
 

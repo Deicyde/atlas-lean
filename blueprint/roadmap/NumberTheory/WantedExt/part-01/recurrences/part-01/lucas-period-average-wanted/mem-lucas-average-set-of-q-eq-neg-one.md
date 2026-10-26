@@ -5,21 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.mem_lucasAverageSet_of_q_eq_neg_one
 ---
 
-# Mem lucas Average Set of q eq neg one
+# Integral averages for $U(P, -1)$
 
-Corollary 2.5: for `U(a, 1)` (`D = a ^ 2 + 4`) and `q > 1` with `Q(q) ≥ 5` and
-`rad(q) ∣ D`, `n ∈ S'(U)` and `A_W(n)` is an integer for all `W(a, 1)` when (`i, j ≥ 0`):
-(i) `a ≡ ±1 (mod 6)`, `n = 2 ^ (i + 3) 3 ^ (j + 1) q`; (ii) `a ≡ 3 (mod 6)`,
-`n = 2 ^ (i + 1) 3 ^ (j + 1)` or `n = 2 ^ (i + 2) 3 ^ (j + 1) q`; (iii) `a ≡ ±2 (mod 12)`,
-`n = 2 ^ (i + 2) q` or `n = 2 ^ (i + 3) 3 ^ (j + 1) q`; (iv) `a ≡ ±6 (mod 12)`,
-`n = 2 ^ (i + 2) 3 ^ j q`. `q ≠ 1` is the convention `Q(1) = 1`; the paper's `n > 1` and
-`rad(n) ∣ 6 D` follow from the displayed forms.
+**Integral averages for $U(P, -1)$.** Let $U = U(P, Q)$ be a Lucas sequence with $Q = -1$,
+so that its discriminant is $D = P^2 + 4$, and let $\pi_U(n)$ be the least period of $U$ modulo
+$n$. Call a natural number $n$ good if $n$ lies in the set $S'(U)$ of positive integers $n$
+coprime to $Q$ with $\pi_U(n) \mid n$ and $n \mid U_1 + \dots + U_n$, and every integer sequence
+$w$ with $w_{k+2} = P w_{k+1} + w_k$ for all $k$ satisfies $n \mid w_1 + \dots + w_n$. Let
+$t \ne 1$ be a natural number all of whose prime factors are at least $5$ and divide $D$, and let
+$i, j \ge 0$.
+(i) If $P \equiv \pm 1 \pmod 6$, then $2^{i+3} 3^{j+1} t$ is good.
+(ii) If $P \equiv 3 \pmod 6$, then $2^{i+1} 3^{j+1}$ and $2^{i+2} 3^{j+1} t$ are good.
+(iii) If $P \equiv \pm 2 \pmod{12}$, then $2^{i+2} t$ and $2^{i+3} 3^{j+1} t$ are good.
+(iv) If $P \equiv 6 \pmod{12}$, then $2^{i+2} 3^j t$ is good.
+
+In the paper's notation $W(n + 2) = a W(n + 1) + b W(n)$ one has $a = P$ and $b = -Q = 1$, and
+the paper's $q$ is $t$. The paper's conditions $n > 1$ and $\operatorname{rad}(n) \mid 6 D$
+follow from the displayed forms.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayX
 ---
 
-# Circuit Array X
+# One-variable circuit array
 
-The one-variable circuit array `C^X_{i,j}` (Table 2): the boundary value `2/3` of the
-once-reduced grid is replaced by `(X - 3)/X`, and the reductions continue.
+**One-variable circuit array.** The one-variable circuit array $C^X_{i,j}$, with entries in
+the field $\mathbb{Q}(X)$ of rational functions in one variable over $\mathbb{Q}$, is the circuit
+array of the reductions of the all-one triangular grid in which, after the first reduction, every
+boundary edge is set to $(X - 3)/X$, and no boundary edge is replaced after any later reduction.
+Thus $C^X_{i,j}$ is the left edge (for even $i$) or the right edge (for odd $i$) of the triangle
+in row $2j - 1$ and diagonal $j - \lfloor (i+1)/2 \rfloor$ of this grid reduced $j$ times, with
+subtraction truncated at $0$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Circuit Array Of](circuit-array-of.md)
+- [Circuit array of a boundary assignment](circuit-array-of.md)
 
 ## Sources
 

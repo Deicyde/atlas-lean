@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.CircuitEdge
 ---
 
-# Circuit Edge
+# Edges of an upright triangle
 
-The three edges of an upright triangle: left, right and base.
+**Edges of an upright triangle.** An upright triangle of the grid has three edges: the left
+edge $L$, the right edge $R$ and the base $B$.
 
 ## Depends on
 

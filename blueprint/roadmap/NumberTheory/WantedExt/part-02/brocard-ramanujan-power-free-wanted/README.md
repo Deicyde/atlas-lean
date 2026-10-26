@@ -4,10 +4,10 @@ navigation: module
 
 # Brocard Ramanujan Power Free
 
-- [Brocard Ramanujan power Free finite](brocard-ramanujan-power-free-finite.md)
-- [Brocard Ramanujan seven Free subset](brocard-ramanujan-seven-free-subset.md)
-- [Brocard Ramanujan few Prime Factors finite](brocard-ramanujan-few-prime-factors-fini.md)
-- [Brocard Ramanujan prime Pow subset](brocard-ramanujan-prime-pow-subset.md)
-- [Le exp of dvd factorial](le-exp-of-dvd-factorial.md)
-- [Le rpow mul pow of dvd factorial](le-rpow-mul-pow-of-dvd-factorial.md)
-- [Brocard Ramanujan polynomial power Free mul few Prime Factors finite](brocard-ramanujan-polynomial-power-free.md)
+- [Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite](brocard-ramanujan-power-free-finite.md)
+- [Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ seven-free](brocard-ramanujan-seven-free-subset.md)
+- [Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite](brocard-ramanujan-few-prime-factors-fini.md)
+- [Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power](brocard-ramanujan-prime-pow-subset.md)
+- [Divisors of a factorial bounded by their largest prime exponent](le-exp-of-dvd-factorial.md)
+- [Divisors of a factorial bounded by their number of prime factors](le-rpow-mul-pow-of-dvd-factorial.md)
+- [Finitely many Brocard–Ramanujan solutions of polynomial shape](brocard-ramanujan-polynomial-power-free.md)

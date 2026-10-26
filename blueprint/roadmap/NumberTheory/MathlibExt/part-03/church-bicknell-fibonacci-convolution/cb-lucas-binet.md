@@ -15,7 +15,7 @@ $\psi = (1 - \sqrt{5})/2$ is its conjugate, and $L_n$ is the $n$-th Lucas number
 
 ## Depends on
 
-- [Lucas Number](../../part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

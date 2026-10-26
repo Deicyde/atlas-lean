@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.IsKPerfect
 ---
 
-# Is KPerfect
+# $k$-perfect numbers
 
-A positive natural number is `k`-perfect when its divisor sum is `k` times the number.
+**$k$-perfect numbers.** For natural numbers $k$ and $n$, the number $n$ is $k$-perfect when
+$n > 0$ and $\sigma(n) = kn$, where $\sigma(n)$ is the sum of the positive divisors of $n$.
 
 ## Depends on
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_add_two
 ---
 
-# Lucas U add two
+# Recurrence for the Lucas sequence $U(P, Q)$
 
-The two-step recurrence for `lucasU`, as a rewrite rule.
+**Recurrence for the Lucas sequence $U(P, Q)$.** For Lucas sequence parameters $(P, Q)$ and
+every natural number $n$, the Lucas sequence $U = U(P, Q)$ satisfies
+$U_{n+2} = P U_{n+1} - Q U_n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
-- [Lucas U](lucas-u.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](lucas-u.md)
 
 ## Sources
 

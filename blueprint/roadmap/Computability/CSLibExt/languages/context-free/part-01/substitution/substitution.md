@@ -30,7 +30,7 @@ lean: Cslib.Language.IsContextFree.substitution
 - [Productions of the substitution grammar](rules.md)
 - [Letter productions of the substitution grammar](sub-rule.md)
 - [Substituting the symbols of a grammar](subst-symbol.md)
-- [Val](val.md)
+- [Intended languages of the substitution grammar](val.md)
 - [Concatenating derivations](../basic/derives-append.md)
 - [Derivations transfer along a renaming of nonterminals](../basic/derives-map-of-forall-mem.md)
 - [Interpretation of a sentential form](../basic/eval-form.md)

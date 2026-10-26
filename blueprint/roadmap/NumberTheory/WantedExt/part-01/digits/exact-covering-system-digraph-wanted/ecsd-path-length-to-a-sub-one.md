@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_path_length_to_a_sub_one
 ---
 
-# Ecsd path length to a sub one
+# Shortest walks to $\pm(a - 1)$ in $G(-2n + 1, -2n + a)$
 
-In the single-component ECSD `G(-2n + 1, -2n + a)` with `a = 1 ± 3ᵐ`, `m ≥ 1`, the
-shortest paths from `0` to `a - 1` and from `0` to `-(a - 1)` have `|a - 1| = 3ᵐ` edges.
-Restricted reading: the paper states this for every `a ∉ {0, 2}`, which is false
-(for `a = 6` the shortest path from `0` to `5` has 4 edges); its proof uses that the
-cycle through `0` has `|a - 1|` edges, which holds in the single-component case.
+**Shortest walks to $\pm(a - 1)$ in $G(-2n + 1, -2n + a)$.** Let $m \ge 1$ be an integer and
+$a = 1 + 3^m$ or $a = 1 - 3^m$. Then in $G(-2n + 1, -2n + a)$ the least $k \in \mathbb{N}$ such
+that $a - 1$ is a $k$-descendant of $0$ (the end of a directed walk of exactly $k$ edges from
+$0$) is $3^m$, and the least $k$ such that $-(a - 1)$ is a $k$-descendant of $0$ is also $3^m$.
+
+The paper states this for every $a \notin \{0, 2\}$, which is false: for $a = 6$ the shortest
+walk from $0$ to $5$ has $4$ edges. Its proof uses that the cycle through $0$ has $|a - 1|$
+edges, which holds when the digraph has a single component.
 
 ## Depends on
 
-- [Is KDescendant](is-kdescendant.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [$k$-descendants in a digraph on the integers](is-kdescendant.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

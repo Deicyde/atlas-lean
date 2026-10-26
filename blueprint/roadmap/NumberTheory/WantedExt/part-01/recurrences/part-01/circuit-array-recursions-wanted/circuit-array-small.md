@@ -6,25 +6,26 @@ proof: formalized
 lean: MetaMathlibExt.circuitArray_small
 ---
 
-# Circuit Array small
+# First entries of the circuit array
 
-Table 1, first entries: `C₀,₁ = 2/3`, `C₀,₂ = 26/27`, `C₁,₂ = 13/12`, `C₂,₂ = 1/2`.
+**First entries of the circuit array.** The circuit array satisfies $C_{0,1} = 2/3$,
+$C_{0,2} = 26/27$, $C_{1,2} = 13/12$ and $C_{2,2} = 1/2$.
 
 ## Depends on
 
-- [Circuit Array](circuit-array.md)
+- [Circuit array](circuit-array.md)
 
 ## Proof depends on
 
-- [Circuit Edge](circuit-edge.md)
-- [Circuit Grid](circuit-grid.md)
-- [Circuit Left Arm](circuit-left-arm.md)
-- [Circuit Left Edge](circuit-left-edge.md)
-- [Circuit Perimeter](circuit-perimeter.md)
-- [Circuit Reduce](circuit-reduce.md)
-- [Circuit Right Arm](circuit-right-arm.md)
-- [Circuit Right Edge](circuit-right-edge.md)
-- [Circuit Top Arm](circuit-top-arm.md)
+- [Edges of an upright triangle](circuit-edge.md)
+- [Reduced circuit grids](circuit-grid.md)
+- [Bottom-left delta-wye arm](circuit-left-arm.md)
+- [Left-edge function](circuit-left-edge.md)
+- [Left-perimeter function](circuit-perimeter.md)
+- [Row reduction of a labelled triangular grid](circuit-reduce.md)
+- [Bottom-right delta-wye arm](circuit-right-arm.md)
+- [Right-edge function](circuit-right-edge.md)
+- [Top delta-wye arm](circuit-top-arm.md)
 
 ## Sources
 

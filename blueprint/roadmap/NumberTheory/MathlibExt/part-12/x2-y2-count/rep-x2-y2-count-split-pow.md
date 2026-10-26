@@ -6,26 +6,30 @@ proof: formalized
 lean: SumSquares.repX2Y2Count_split_pow
 ---
 
-# Rep X2 Y2 Count split pow
+# Elements of $\mathbb{Z}(\sqrt{-2})$ whose norm is a power of a split prime
 
-`repX2Y2Count (p ^ e) = 2 * (e + 1)` for split `p`.
+**Elements of $\mathbb{Z}[\sqrt{-2}]$ whose norm is a power of a split prime.** Write
+$N(a + b\sqrt{-2}) = a^2 + 2b^2$ for the norm of an element of $\mathbb{Z}[\sqrt{-2}]$, where
+$a, b$ are integers. Let $p$ be a prime with $p \equiv 1$ or $p \equiv 3 \pmod 8$, and suppose
+$\pi$ is a prime element of $\mathbb{Z}[\sqrt{-2}]$ with $N(\pi) = p$. Then for every natural
+number $e$, the number of elements of $\mathbb{Z}[\sqrt{-2}]$ of norm $p^e$ is $2(e + 1)$.
 
 ## Depends on
 
-- [Rep X2 Y2 Count](rep-x2-y2-count.md)
+- [Number of elements of $\mathbb{Z}(\sqrt{-2})$ of a given norm](rep-x2-y2-count.md)
 
 ## Proof depends on
 
-- [Div def'](../zsqrtd-neg-two-euclidean/div-def.md)
-- [Nat Abs norm mod lt'](../zsqrtd-neg-two-euclidean/nat-abs-norm-mod-lt.md)
-- [Norm le norm mul left'](../zsqrtd-neg-two-euclidean/norm-le-norm-mul-left.md)
-- [Unit Val](../zsqrtd-neg-two-primes/unit-val.md)
-- [Unit Val Inv](../zsqrtd-neg-two-primes/unit-val-inv.md)
-- [Unit Val complete](../zsqrtd-neg-two-primes/unit-val-complete.md)
-- [Unit Val inj](../zsqrtd-neg-two-primes/unit-val-inj.md)
-- [Unit Val mul unit Val Inv](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
-- [Zsqrtd neg two split conj](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split-conj.md)
-- [Card norm split pow](../zsqrtd-norm-factorization/card-norm-split-pow.md)
+- [Rounding division on $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/div-def.md)
+- [The remainder is smaller than the divisor, in absolute norm](../zsqrtd-neg-two-euclidean/nat-abs-norm-mod-lt.md)
+- [Multiplying by a nonzero element does not decrease the norm in $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/norm-le-norm-mul-left.md)
+- [Enumeration of the units of ℤ(√−2)](../zsqrtd-neg-two-primes/unit-val.md)
+- [Inverses of the enumerated units of ℤ(√−2)](../zsqrtd-neg-two-primes/unit-val-inv.md)
+- [Every unit of ℤ(√−2) is enumerated](../zsqrtd-neg-two-primes/unit-val-complete.md)
+- [The enumeration of the units of ℤ(√−2) is injective](../zsqrtd-neg-two-primes/unit-val-inj.md)
+- [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
+- [Conjugate factorization of an odd prime in $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split-conj.md)
+- [Norm counts at a split prime](../zsqrtd-norm-factorization/card-norm-split-pow.md)
 
 ## Sources
 

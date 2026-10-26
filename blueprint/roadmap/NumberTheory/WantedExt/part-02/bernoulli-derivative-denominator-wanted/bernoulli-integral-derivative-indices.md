@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliIntegralDerivativeIndices
 ---
 
-# Bernoulli Integral Derivative Indices
+# Indices of Bernoulli polynomials with integral $k$-th derivative
 
-The set `\overline{𝒮}_k = {n ≥ 1 : B_n^{(k)}(x) ∈ ℤ[x]}` of indices whose `k`-th derivative
-Bernoulli polynomial has only integral coefficients; `\overline{𝒮} = \overline{𝒮}_1`.
+**Indices of Bernoulli polynomials with integral $k$-th derivative.** For $k \in \mathbb{N}$,
+$\overline{\mathcal{S}}_k$ is the set of $n \ge 1$ such that the $k$-th derivative $B_n^{(k)}(x)$
+of the Bernoulli polynomial $B_n(x)$ has only integer coefficients, that is, has denominator
+equal to $1$. We write $\overline{\mathcal{S}}$ for $\overline{\mathcal{S}}_1$.
 
 ## Depends on
 

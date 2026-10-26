@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_isPeriod_of_secondOrder
 ---
 
-# Lucas UPeriod is Period of second Order
+# Periods of second-order recurrences modulo $m$
 
-Theorem 1.1: if `gcd(m, b) = 1` then `U(a, b)` is purely periodic modulo `m`, `π_U(m)` is
-a period of every recurrence `W(a, b)` modulo `m`, and `ρ_U(m)` is a restricted period of every
-`W(a, b)` modulo `m` (with the multiplier `U (ρ_U(m) + 1)`). "General period" replaces the
-paper's divisibilities `π_W(m) ∣ π_U(m)` and `ρ_W(m) ∣ ρ_U(m)`, which are equivalent by Remark
-1.2.
+**Periods of second-order recurrences modulo $m$.** Let $U$ be the Lucas sequence with
+integer parameters $P$ and $Q \neq 0$, let $m$ be a positive integer with $\gcd(m, Q) = 1$, and
+write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Then
+$\pi(m) > 0$ and $\rho(m) > 0$, and every integer sequence $w$ with
+$w_{k+2} = P w_{k+1} - Q w_k$ for all $k$ satisfies $w_{n + \pi(m)} \equiv w_n \pmod m$ and
+$w_{n + \rho(m)} \equiv U_{\rho(m) + 1} w_n \pmod m$ for every natural number $n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

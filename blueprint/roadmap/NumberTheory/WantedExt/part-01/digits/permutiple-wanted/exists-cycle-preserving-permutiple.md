@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_cyclePreserving_permutiple
 ---
 
-# Exists cycle Preserving permutiple
+# Every permutiple has a cycle-preserving digit permutation
 
-Every permutiple has a cycle-preserving digit permutation: for every
-`(n, b, σ)`-permutiple `(d_k, …, d_0)_b` there is `σ̂` with
-`(d_k, …, d_0)_b = n (d_{σ̂(k)}, …, d_{σ̂(0)})_b` such that each cycle
-`(j, σ̂(j), …, σ̂^{m-1}(j))` of `σ̂` maps to a graph cycle `(d_j, …, d_{σ̂^{m-1}(j)})` of
-`G_p`, i.e. the digits along each `σ̂`-orbit are distinct: `d_{σ̂^i(j)} = d_j` forces
-`σ̂^i(j) = j`. The paper's `1 < n < b` is not needed and is dropped.
+**Every permutiple has a cycle-preserving digit permutation.** Let $n$, $b$ and
+$d_0, \dots, d_k$ be natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$ such
+that $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple. Then there is a permutation
+$\hat\sigma$ of $\{0, \dots, k\}$ such that $(d_k, \dots, d_0)_b$ is also an
+$(n, b, \hat\sigma)$-permutiple and the digits along each cycle of $\hat\sigma$ are distinct:
+for all $j \in \{0, \dots, k\}$ and all $i \ge 0$, if $d_{\hat\sigma^i(j)} = d_j$ then
+$\hat\sigma^i(j) = j$.
+
+Unlike the paper, no assumption $1 < n < b$ is made.
 
 ## Depends on
 
-- [Is Permutiple](is-permutiple.md)
+- [Permutiples with a given digit permutation](is-permutiple.md)
 
 ## Sources
 

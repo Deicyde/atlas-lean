@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_mod_two
 ---
 
-# Lucas U mod two
+# Lucas sequences modulo 2
 
-Behaviour of `U(P, Q)` modulo `2` when `2 ∤ gcd(P, Q)`: `U` is periodic modulo `2`
-from `n = 1` on (not from `n = 0` in general: `P = 1`, `Q = 2` gives `U ≡ 0, 1, 1, 1, …`); if `P` is
-odd and `Q` even then `U_n` is odd for `n ≥ 1`; if `P` is even and
-`Q` odd then `2 ∣ U_n ↔ 2 ∣ n` and `2 ∣ D`; if `P` and `Q` are odd then
-`2 ∣ U_n ↔ 3 ∣ n`.
+**Lucas sequences modulo 2.** Let $U = U(P, Q)$ be the Lucas sequence with integer parameters
+$P$ and $Q \ne 0$, let $D = P^2 - 4Q$, and suppose $2 \nmid \gcd(P, Q)$. Then $U$ is periodic
+modulo $2$ from index $1$ on: there is $k > 0$ with $U_{n+k} \equiv U_n \pmod 2$ for every
+$n \ge 1$. If $P$ is odd and $Q$ is even, then $U_n$ is odd for every $n \ge 1$. If $P$ is even
+and $Q$ is odd, then for every $n \ge 0$, $2 \mid U_n$ if and only if $2 \mid n$; moreover
+$2 \mid D$. If $P$ and $Q$ are both odd, then for every $n \ge 0$, $2 \mid U_n$ if and only if
+$3 \mid n$.
+
+The periodicity need not start at $n = 0$: for $P = 1$ and $Q = 2$, $U$ is $0, 1, 1, 1, \dots$
+modulo $2$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -9,7 +9,7 @@ navigation: module
 - [Least-loaded machine](least-loaded.md)
 - [List scheduling from an intermediate state](list-schedule-scan.md)
 - [Graham's list scheduling](list-schedule.md)
-- [Lpt](lpt.md)
+- [Longest processing time first (LPT)](lpt.md)
 
 ## Schedules
 
@@ -32,7 +32,7 @@ navigation: module
 - [Counting jobs when every machine is heavily loaded](two-mul-le-of-loads-gt.md)
 - [At most two long jobs per machine](count-p-add-count-p-le.md)
 - [The LPT placement step](lpt-step-le.md)
-- [Lpt approx](lpt-approx.md)
+- [Graham's bound for LPT scheduling](lpt-approx.md)
 
 ## Validity and cost
 

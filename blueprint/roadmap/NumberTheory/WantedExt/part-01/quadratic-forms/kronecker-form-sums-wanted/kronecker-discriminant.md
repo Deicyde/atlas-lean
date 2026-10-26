@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kroneckerDiscriminant
 ---
 
-# Kronecker Discriminant
+# The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$
 
-The fundamental discriminant `d(n)` attached to `n = 2 ^ α * g * h ^ 2` (`g, h` odd,
-`g` squarefree), as a function of `α` and `g`: `-4g` if `α` is even and `g ≡ 1 (mod 4)`,
-`-g` if `α` is even and `g ≡ 3 (mod 4)`, and `-8g` if `α` is odd.
+**The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$.** For natural numbers
+$\alpha$ and $g$, let $d(\alpha, g) = -8g$ if $\alpha$ is odd; if $\alpha$ is even, let
+$d(\alpha, g) = -4g$ when $g \equiv 1 \pmod 4$ and $d(\alpha, g) = -g$ otherwise.
+
+In the paper $n = 2^\alpha g h^2$ with $g$ and $h$ odd and $g$ squarefree, so the last case is
+$g \equiv 3 \pmod 4$; the paper writes $d(n)$ for $d(\alpha, g)$, the fundamental discriminant of
+$\mathbb{Q}(\sqrt{-n})$.
 
 ## Depends on
 

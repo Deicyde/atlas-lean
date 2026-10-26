@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsHoeySloaneWord
 ---
 
-# Is Hoey Sloane Word
+# Hoey–Sloane words
 
-The input string `(d_0, d̂_0) ⋯ (d_k, d̂_k)` belongs to the language `L` of the
-`(n, b)`-Hoey-Sloane machine: every input is an edge of the mother graph, every
-transition `c_j → (n d̂_j - d_j + c_j) ÷ b` is an exact division, and the walk starts
-and ends in the state `0`.
+**Hoey–Sloane words.** Let $n$ and $b$ be natural numbers. An input string
+$(d_0, \hat d_0) \cdots (d_k, \hat d_k)$ of pairs of natural numbers belongs to the language $L$
+of the $(n, b)$-Hoey–Sloane machine when, with $c_0, \dots, c_{k+1}$ the carries of the machine
+on this string, every input $(d_j, \hat d_j)$ is an edge of the $(n, b)$-mother graph, $b$
+divides $n \hat d_j - d_j + c_j$ for every $0 \le j \le k$, and $c_{k+1} = 0$.
+
+So the walk starts in the state $c_0 = 0$, every transition is an exact division, and the walk
+ends in the state $0$.
 
 ## Depends on
 
@@ -18,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Mother Graph Edge](is-mother-graph-edge.md)
-- [Hoey Sloane Carry](hoey-sloane-carry.md)
+- [Edges of the mother graph](is-mother-graph-edge.md)
+- [Carries of the Hoey–Sloane machine](hoey-sloane-carry.md)
 
 ## Sources
 

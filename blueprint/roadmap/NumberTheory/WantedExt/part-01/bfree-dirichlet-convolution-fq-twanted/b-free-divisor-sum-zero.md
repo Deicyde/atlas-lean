@@ -6,21 +6,27 @@ proof: formalized
 lean: MetaMathlibExt.bFreeDivisorSum_zero
 ---
 
-# B Free Divisor Sum zero
+# The $B_\kappa$-free divisor sum at degree zero
 
-`D̃_{B_κ,h}(0) = 1` when every `κ(P)` is nonzero.
+**The $B_\kappa$-free divisor sum at degree zero.** Let $F$ be a field and let $\kappa$ assign
+to each polynomial in $F[T]$ a natural number, with $\kappa(P) \ne 0$ for every monic irreducible
+$P$. Call $f \in F[T]$ $B_\kappa$-free when $P^{\kappa(P)}$ does not divide $f$ for any monic
+irreducible $P$, let $d_h(f)$ be the number of $h$-tuples of monic polynomials with product $f$,
+and let $\tilde D_{B_\kappa,h}(N)$ be the sum of $d_h(f)$ over the $B_\kappa$-free monic
+$f \in F[T]$ of degree at most $N$. Then $\tilde D_{B_\kappa,h}(0) = 1$ for every natural number
+$h$.
 
 ## Depends on
 
-- [B Free Divisor Sum](b-free-divisor-sum.md)
+- [The $B_\kappa$-free divisor sum](b-free-divisor-sum.md)
 
 ## Proof depends on
 
-- [Is BFree](is-bfree.md)
-- [Is BFree one](is-bfree-one.md)
-- [Monic Divisor Count](monic-divisor-count.md)
-- [Monic Divisor Count one](monic-divisor-count-one.md)
-- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
+- [The polynomial $1$ is $B_\kappa$-free](is-bfree-one.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
+- [The divisor functions at $1$](monic-divisor-count-one.md)
+- [Monic polynomials of degree zero](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

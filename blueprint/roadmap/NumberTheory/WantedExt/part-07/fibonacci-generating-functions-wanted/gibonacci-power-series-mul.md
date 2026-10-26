@@ -14,7 +14,7 @@ This is the product form of the paper's displayed quotient
 
 ## Depends on
 
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

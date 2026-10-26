@@ -4,11 +4,11 @@ navigation: module
 
 # Odd Greedy Choice
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
-- [Pos r](pos-r.md)
-- [Pos d](pos-d.md)
-- [Odd](odd.md)
-- [Inv le](inv-le.md)
-- [Min](min.md)
-- [Unique](unique.md)
-- [Is Odd Greedy Choice iff](is-odd-greedy-choice-iff.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
+- [The odd greedy choice needs a positive remainder](pos-r.md)
+- [The odd greedy choice is positive](pos-d.md)
+- [The odd greedy choice is odd](odd.md)
+- [The odd greedy unit fraction does not exceed the remainder](inv-le.md)
+- [The odd greedy choice is minimal](min.md)
+- [Uniqueness of the odd greedy choice](unique.md)
+- [Characterization of the odd greedy choice](is-odd-greedy-choice-iff.md)

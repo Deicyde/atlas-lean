@@ -12,14 +12,14 @@ lean: MetaMathlibExt.lucasPeriodOrbitLcm_one
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [The orbit lcm $L(n)$](lucas-period-orbit-lcm.md)
 
 ## Proof depends on
 
-- [Lucas Period Orbit Index](lucas-period-orbit-index.md)
-- [Lucas Period Orbit Index one](lucas-period-orbit-index-one.md)
-- [Lucas UPeriod](lucas-uperiod.md)
+- [The orbit index $\omega(n)$](lucas-period-orbit-index.md)
+- [The orbit index of $1$ is zero](lucas-period-orbit-index-one.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
 
 ## Sources
 

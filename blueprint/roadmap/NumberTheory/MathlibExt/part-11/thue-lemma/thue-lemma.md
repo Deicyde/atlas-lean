@@ -7,16 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.thue_lemma
 ---
 
-# Thue lemma
+# Thue's lemma
 
-Thue's lemma: coprime integers `a`, `n > 1` have nonzero bounded `x`, `y`
-with `x ≡ a * y [ZMOD n]`.
+**Thue's lemma.** Let $a$ and $n$ be integers with $a > 1$, $n > 1$ and $\gcd(a, n) = 1$. Then
+there exist nonzero integers $x$ and $y$ with $|x| < \sqrt{n}$, $|y| < \sqrt{n}$ and
+$x \equiv a y \pmod{n}$.
 
-Both representatives are
-nonzero with `|x|, |y| < √n`, matching the source bounds exactly.
-It follows from `thue_lemma_general`; the hypothesis `ha` is unused and keeps the source's
-shape.
-Proves `Wanted` entry `thue_lemma`.
+The hypothesis $a > 1$ follows the source and is not needed for the conclusion.
 
 ## Depends on
 
@@ -24,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Thue lemma general](thue-lemma-general.md)
+- [Thue's lemma, general form](thue-lemma-general.md)
 
 ## Sources
 

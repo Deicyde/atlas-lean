@@ -11,7 +11,7 @@ The Trivial Lemma, part (i): for any constant `c`, `E - c` annihilates `{cˢ}_{s
 
 ## Depends on
 
-- [Annihilates Seq](annihilates-seq.md)
+- [Annihilator of a sequence](annihilates-seq.md)
 
 ## Sources
 

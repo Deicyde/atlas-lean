@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.liminf_zeckendorfBinaryCount_div_rpow
 ---
 
-# Liminf zeckendorf Binary Count div rpow
+# Liminf of the count of binary expansions without adjacent ones
 
-Zeckendorf binary expansions: with `z(x)` the number of `n < x` whose binary expansion has no
-two adjacent `1`s, `φ` the golden ratio and `γ = log₂ φ`, `liminf z(x) / x^γ = (3φ + 1) / 5`.
+**Liminf of the count of binary expansions without adjacent ones.** For real $x$ let $z(x)$
+be the number of natural numbers $n < x$ (including $0$) whose binary expansion has no two
+adjacent $1$s, let $\varphi$ be the golden ratio and let $\gamma = \log_2 \varphi$. Then
+$\liminf_{x \to \infty} z(x) / x^{\gamma} = (3\varphi + 1) / 5$.
 
 ## Depends on
 

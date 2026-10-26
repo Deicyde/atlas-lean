@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_two_mul_and_lucasU_dvd
 ---
 
-# Lucas U two mul and lucas U dvd
+# Doubling formulas and divisibility for Lucas sequences
 
-Lemma 1.1: `U (2 n) = U n * V n`, `U (2 n + 1) = b * U n ^ 2 + U (n + 1) ^ 2`, and
-`U m ∣ U n` whenever `m ∣ n`. The record's trailing expository text on pure periodicity is not
-part of the lemma.
+**Doubling formulas and divisibility for Lucas sequences.** Let $U$ and $V$ be the Lucas
+sequences with integer parameters $P$ and $Q \neq 0$. Then $U_{2n} = U_n V_n$ and
+$U_{2n+1} = -Q U_n^2 + U_{n+1}^2$ for every natural number $n$, and $U_m \mid U_n$ for all
+natural numbers $m$ and $n$ with $m \mid n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

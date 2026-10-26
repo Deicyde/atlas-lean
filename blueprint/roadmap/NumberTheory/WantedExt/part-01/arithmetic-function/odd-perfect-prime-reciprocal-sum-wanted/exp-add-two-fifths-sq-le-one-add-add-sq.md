@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.exp_add_two_fifths_sq_le_one_add_add_sq
 ---
 
-# Exp add two fifths sq le one add add sq
+# Exponential lower bound for $1 + x + x^2$ on $(0, 1/11)$
 
-For `0 ≤ x ≤ 1/11`, `1 + x + x² ≥ exp(x + 2x²/5)`, with equality exactly at `x = 0`.
+**Exponential lower bound for $1 + x + x^2$ on $[0, 1/11]$.** For every real $x$ with
+$0 \le x \le 1/11$, $\exp(x + 2x^2/5) \le 1 + x + x^2$, with equality if and only if $x = 0$.
 
 ## Depends on
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.circuitArray
 ---
 
-# Circuit Array
+# Circuit array
 
-The numerical circuit array `C_{i,j}` (Table 1), from the all-one grid.
+**Circuit array.** The circuit array $C_{i,j} \in \mathbb{Q}$ is the circuit array of the
+reductions of the all-one triangular grid with no boundary edge replaced: $C_{i,j}$ is the left
+edge (for even $i$) or the right edge (for odd $i$) of the triangle in row $2j - 1$ and diagonal
+$j - \lfloor (i+1)/2 \rfloor$ of the all-one grid reduced $j$ times, with subtraction truncated
+at $0$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Circuit Array Of](circuit-array-of.md)
+- [Circuit array of a boundary assignment](circuit-array-of.md)
 
 ## Sources
 

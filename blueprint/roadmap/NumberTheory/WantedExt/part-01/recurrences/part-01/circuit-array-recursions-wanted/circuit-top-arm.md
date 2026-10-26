@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.circuitTopArm
 ---
 
-# Circuit Top Arm
+# Top delta-wye arm
 
-The `Δ`-`Y` arm from the centre of an upright triangle to its top vertex, `Δ(L, R, B)`.
+**Top delta-wye arm.** For an upright triangle whose left, right and base edges carry the
+values $L$, $R$, $B$ in a field $K$, the top arm is $\Delta(L, R, B) = \frac{LR}{L + R + B}$, where
+$\Delta$ is the delta-wye resistance function: the arm of the equivalent star from the centre of
+the triangle to its top vertex.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Delta](circuit-delta.md)
+- [Delta-wye resistance function](circuit-delta.md)
 
 ## Sources
 

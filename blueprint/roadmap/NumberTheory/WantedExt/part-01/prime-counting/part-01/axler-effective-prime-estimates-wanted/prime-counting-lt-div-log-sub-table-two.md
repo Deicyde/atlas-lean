@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_lt_div_log_sub_table_two
 ---
 
-# Prime Counting lt div log sub table two
+# Axler's Table 2 upper bounds for the prime-counting function
 
-Compact upper bounds `π(x) < x / (log x - a₀ - a₁/log x - a₂/log² x)` for every real
-`x ≥ x₀`, for the three rows `(a₀, a₁, a₂, x₀)` of Table 2:
-`(1.0343, 0, 0, 106640139304611)`, `(1, 1.109, 0, 81250795096339)`,
-`(1, 1, 3.48, 145413088724077)`. `π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's Table 2 upper bounds for the prime-counting function.** Let $\pi(x)$ denote the
+number of primes $p \le x$ and $\log$ the natural logarithm. For each of the three rows
+$(a_0, a_1, a_2, x_0)$ equal to $(1.0343, 0, 0, 106640139304611)$, $(1, 1.109, 0, 81250795096339)$
+and $(1, 1, 3.48, 145413088724077)$, every real $x \ge x_0$ satisfies
+
+$$
+\pi(x) < \frac{x}{\log x - a_0 - \frac{a_1}{\log x} - \frac{a_2}{\log^2 x}}.
+$$
 
 ## Depends on
 

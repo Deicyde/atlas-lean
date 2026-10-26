@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isLexMinimalExtensionOf_periodic_of_monotoneOn
 ---
 
-# Is Lex Minimal Extension Of periodic of monotone On
+# Monotone finite binomid indices extend periodically
 
-Proposition 3: if a finite binomid index `η = (e_1, …, e_m)` (`m ≥ 1`)
-is monotonic increasing, then its lex-minimal extension is the periodic
-repetition `η^∞`. The finite index is the first `m` values of `e`.
+**Monotone finite binomid indices extend periodically.** Let $m \ge 1$ and let
+$e_1 \le e_2 \le \cdots \le e_m$ be nonnegative integers. Then the periodic sequence
+$(e_1, \dots, e_m, e_1, \dots, e_m, \dots)$ is the lex-minimal extension of $(e_1, \dots, e_m)$.
+
+A non-decreasing finite sequence is automatically a finite binomid index.
 
 ## Depends on
 
-- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Lex-minimal extension](is-lex-minimal-extension-of.md)
 
 ## Sources
 

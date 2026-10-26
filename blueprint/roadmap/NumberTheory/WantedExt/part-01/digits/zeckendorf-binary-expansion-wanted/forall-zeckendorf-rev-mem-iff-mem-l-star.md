@@ -14,8 +14,8 @@ all `n` iff `ε ∈ Ē*`. As printed (no `ε ≠ 0`, decompositions with `n ≥ 
 ## Depends on
 
 - [L Star Closure](l-star-closure.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
-- [Zeckendorf Rev](zeckendorf-rev.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
+- [Reversal of the first $n$ entries](zeckendorf-rev.md)
 
 ## Sources
 

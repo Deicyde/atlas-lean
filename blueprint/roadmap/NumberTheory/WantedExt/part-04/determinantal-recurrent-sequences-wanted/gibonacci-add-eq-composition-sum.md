@@ -16,7 +16,7 @@ both zero) as composition sums: for `m ≥ 3`, `n ≥ 1` and `D` either square r
 
 ## Depends on
 
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

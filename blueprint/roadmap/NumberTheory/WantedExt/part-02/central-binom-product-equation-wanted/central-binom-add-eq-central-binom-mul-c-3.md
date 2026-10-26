@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_eq_centralBinom_mul_choose_one_iff
 ---
 
-# Central Binom add eq central Binom mul choose one iff
+# Central binomial products with $x = 1$
 
-Proposition 2: for positive `a`, `b`, `C(2(a+b), a+b) = C(2a, a) C(1+2b, b)` if and only
-if `a = 1`.
+**Central binomial products with $x = 1$.** Let $a$ and $b$ be positive integers. Then
+$\binom{2(a+b)}{a+b} = \binom{2a}{a}\binom{1+2b}{b}$ if and only if $a = 1$.
 
 ## Depends on
 

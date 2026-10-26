@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.IsLucasPseudoprimeSecondKind
 ---
 
-# Is Lucas Pseudoprime Second Kind
+# Lucas pseudoprimes of the second kind
 
-Lucas pseudoprime of the second kind: positive odd composite `N`, `gcd(N, QD) = 1`,
-`U_N ≡ (D/N) (mod N)`.
+**Lucas pseudoprimes of the second kind.** Let $P, Q$ be integers with $Q \neq 0$, let $U_n$
+be the Lucas sequence of $(P, Q)$ and let $D = P^2 - 4Q$. A natural number $N$ is a Lucas
+pseudoprime of the second kind with parameters $P, Q$ if $N$ is odd and composite,
+$\gcd(N, QD) = 1$ and $U_N \equiv (D/N) \pmod{N}$, where $(D/N)$ is the Jacobi symbol.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

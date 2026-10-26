@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Complexity](../../../MathlibExt/part-07/integer-complexity/complexity.md)
+- [Integer complexity](../../../MathlibExt/part-07/integer-complexity/complexity.md)
 
 ## Sources
 

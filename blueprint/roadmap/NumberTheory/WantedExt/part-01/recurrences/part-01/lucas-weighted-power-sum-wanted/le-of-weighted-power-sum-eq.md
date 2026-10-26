@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.le_of_weighted_power_sum_eq
 ---
 
-# Le of weighted power sum eq
+# Bound on the parameter in the weighted power-sum equation for Lucas sequences
 
-Lemma 4.4: for `y = ±1`, positive `n, p, q, x` and `k ≥ 3` with `Σ_{j=1}^k j U_j^p = U_n^q`,
-`x ≤ (k + 1)²/4 + 1`. The standing assumption `k ≥ 3` of Section 4 is kept explicit (for `k = 1`,
-`(n, p, q, x) = (1, 1, 1, 5)` with `y = -1` is a solution and `5 > 2`).
+**Bound on the parameter in the weighted power-sum equation for Lucas sequences.** Let $x$
+be a positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with
+parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$.
+If $n, p, q$ are positive integers and $k \geq 3$ is an integer with
+
+$$
+\sum_{j=1}^{k} j \, U_j^p = U_n^q,
+$$
+
+then $x \leq (k + 1)^2/4 + 1$.
+
+The hypothesis $k \geq 3$ cannot be dropped entirely: for $k = 1$ and $y = -1$,
+$(n, p, q, x) = (1, 1, 1, 5)$ is a solution and $5 > (1 + 1)^2/4 + 1 = 2$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

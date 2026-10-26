@@ -7,22 +7,23 @@ proof: formalized
 lean: IntegerComplexity.complexity_add_le
 ---
 
-# Complexity add le
+# Integer complexity of a sum
 
-Upper bound via addition of optimal witnesses.
+**Integer complexity of a sum.** For all positive integers $a$ and $b$, the integer
+complexity of $a + b$ is at most the sum of the integer complexities of $a$ and $b$.
 
 ## Depends on
 
-- [Complexity](complexity.md)
+- [Integer complexity](complexity.md)
 
 ## Proof depends on
 
-- [Expr](expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
-- [Pred](pred.md)
-- [Complexity le](complexity-le.md)
-- [Exists expr of pos](exists-expr-of-pos.md)
+- [Expressions built from one, addition and multiplication](expr.md)
+- [Number of ones in an expression](count.md)
+- [Value of an expression](eval.md)
+- [Achievable numbers of ones](pred.md)
+- [Expressions bound the integer complexity from above](complexity-le.md)
+- [Every positive integer is the value of an expression](exists-expr-of-pos.md)
 
 ## Sources
 

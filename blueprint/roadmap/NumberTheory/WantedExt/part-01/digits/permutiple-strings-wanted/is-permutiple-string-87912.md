@@ -6,21 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.isPermutipleString_87912
 ---
 
-# Is Permutiple String 87912
+# The permutiple string of $87912 = 4 \cdot 21978$
 
-Characteristic example: `(2, 8)(1, 7)(9, 9)(7, 1)(8, 2)` is a `(4, 10)`-permutiple
-string, produced by `87912 = 4 · 21978`.
+**The permutiple string of $87912 = 4 \cdot 21978$.** The string of inputs
+$(2, 8)(1, 7)(9, 9)(7, 1)(8, 2)$ is a $(4, 10)$-permutiple string. It is produced by the
+$(4, 10)$-permutiple $87912 = 4 \cdot 21978$, whose multiplication reverses the digits.
 
 ## Depends on
 
-- [Is Permutiple String](is-permutiple-string.md)
+- [Permutiple strings](is-permutiple-string.md)
 
 ## Proof depends on
 
-- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
-- [Hoey Sloane Language](hoey-sloane-language.md)
-- [Is Permutiple 87912](../permutiple-wanted/is-permutiple-87912.md)
-- [Mem hoey Sloane Language 87912](mem-hoey-sloane-language-87912.md)
+- [Permutiples with a given digit permutation](../permutiple-wanted/is-permutiple.md)
+- [Language of the Hoey–Sloane machine](hoey-sloane-language.md)
+- [$87912$ is a $(4, 10)$-permutiple by digit reversal](../permutiple-wanted/is-permutiple-87912.md)
+- [A word in the $(4, 10)$-Hoey-Sloane language](mem-hoey-sloane-language-87912.md)
 
 ## Sources
 

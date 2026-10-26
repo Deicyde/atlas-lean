@@ -6,10 +6,10 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Wolstenholme.wolstenholme
 ---
 
-# Wolstenholme
+# Wolstenholme's theorem
 
-If `p ≥ 5` is prime, then the sum of the reciprocals of `1, …, p - 1`
-vanishes modulo `p ^ 2`.
+**Wolstenholme's theorem.** If $p \ge 5$ is prime, then $\sum_{k=1}^{p-1} k^{-1} = 0$ in
+$\mathbb{Z}/p^2\mathbb{Z}$, where $k^{-1}$ is the inverse of $k$ modulo $p^2$.
 
 ## Depends on
 

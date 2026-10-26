@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.monicDivisorCount_one_left
 ---
 
-# Monic Divisor Count one left
+# The divisor function $d_1$ on monic polynomials
 
-`d_1(f) = 1` for monic `f`.
+**The divisor function $d_1$ on monic polynomials.** Let $F$ be a field. For every monic
+$f \in F[T]$, $d_1(f) = 1$, where $d_h(f)$ is the number of $h$-tuples of monic polynomials in
+$F[T]$ whose product is $f$.
 
 ## Depends on
 
-- [Monic Divisor Count](monic-divisor-count.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

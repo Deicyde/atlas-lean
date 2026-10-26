@@ -12,7 +12,7 @@ Every composite Fermat number `F_k` is a strong pseudoprime to the bases
 
 ## Depends on
 
-- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
+- [Strong pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

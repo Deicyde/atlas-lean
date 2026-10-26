@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.eulerianForm_exponent_eq_one_or_pow_five_lt
 ---
 
-# Eulerian Form exponent eq one or pow five lt
+# Fifth-power bound on the Euler prime of an odd perfect number
 
-If an odd perfect number has Euler form `n = q^e m²`, then `e = 1` or
-`q < 2^{1/5} m^{2/5}`, stated in the equivalent integer form `q⁵ < 2 m²`.
+**Fifth-power bound on the Euler prime of an odd perfect number.** If $(n, q, e, m)$ is in
+Eulerian form, that is, $n$ is an odd perfect number, $q$ is a prime coprime to $m$,
+$n = q^e m^2$ and $q \equiv e \equiv 1 \pmod 4$, then $e = 1$ or $q^5 < 2m^2$, that is,
+$q < 2^{1/5} m^{2/5}$.
 
 ## Depends on
 

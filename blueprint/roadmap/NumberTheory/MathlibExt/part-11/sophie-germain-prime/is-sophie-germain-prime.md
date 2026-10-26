@@ -6,11 +6,10 @@ statement: formalized
 lean: Nat.IsSophieGermainPrime
 ---
 
-# Is Sophie Germain Prime
+# Sophie Germain primes
 
-A natural number `p` is a **Sophie Germain prime** if `p` is prime and
-`2 * p + 1` is prime. This formalizes the definition in arXiv:2311.13375,
-lines 83–85, which does not exclude `p = 2`.
+**Sophie Germain primes.** A natural number $p$ is a Sophie Germain prime if $p$ is prime and
+$2p + 1$ is prime. The case $p = 2$ is not excluded.
 
 ## Depends on
 
@@ -19,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SophieGermainPrime](../../../../../sources/v2/MathlibExt.md)
+- arXiv:2311.13375, lines 83–85.

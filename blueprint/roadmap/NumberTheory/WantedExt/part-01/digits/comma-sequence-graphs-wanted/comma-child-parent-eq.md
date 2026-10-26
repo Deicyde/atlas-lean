@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.commaChild_parent_eq
 ---
 
-# Comma Child parent eq
+# Recovering the parent of a comma-child
 
-Recovering the parent: in base `b ≥ 2`, if `n` is a comma-child of a positive `k` then
-`k = n - x·b - f`, where `f = δ(n)` is the leading digit of `n` and `x = (n - f) mod b`; in
-particular, if `n - x·b - f < 0` then `n` is not a comma-child of any positive integer.
+**Recovering the parent of a comma-child.** Fix a base $b \ge 2$ and a natural number $n$.
+Call $n$ a comma-child of $k$ if $n = k + b\,(k \bmod b) + y$ for some comma candidate digit $y$
+of $k$ in base $b$. Let $f$ be the most significant base-$b$ digit of $n$ and let
+$x = (n - f) \bmod b$. If $n$ is a comma-child of a positive integer $k$, then
+$k = n - x b - f$; and if the integer $n - x b - f$ is negative, then $n$ is not a comma-child
+of any positive integer.
 
 ## Depends on
 

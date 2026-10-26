@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSumMod
 ---
 
-# B Free Divisor Sum Mod
+# B-free divisor sum in an arithmetic progression
 
-`D̃_{B_κ,h}(N, a, m) = ∑_{f ∈ M_{≤ N}, f ≡ a (mod m)} 1_{B_κ}(f) d_h(f)`.
+**B-free divisor sum in an arithmetic progression.** For a field $F$, a function
+$\kappa : F[T] \to \mathbb{N}$, natural numbers $h$ and $N$, and $a, m \in F[T]$, the natural
+number $\tilde D_{\kappa,h}(N, a, m)$ is the sum of $d_h(f)$ over the monic $B_\kappa$-free
+$f \in F[T]$ of degree at most $N$ with $f \equiv a \pmod m$, that is, with $m$ dividing $f - a$.
+Here $d_h(f)$ is the number of $h$-tuples of monic polynomials with product $f$, and $f$ is
+$B_\kappa$-free when no $P^{\kappa(P)}$ with $P$ monic irreducible divides it. The sum is finite
+when $F$ is finite; it is taken to be $0$ if infinitely many of its terms are nonzero.
 
 ## Depends on
 
@@ -15,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is BFree](is-bfree.md)
-- [Monic Divisor Count](monic-divisor-count.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

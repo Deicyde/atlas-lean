@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.isKFull_of_two_le
 ---
 
-# Is KFull of two le
+# For $k \ge 2$, $k$-full numbers are $2$-full
 
-Source-facing consequence: for `2 ≤ k`, every `k`-full number is `2`-full.
+**For $k \ge 2$, $k$-full numbers are $2$-full.** Let $k \ge 2$ be a natural number. Every
+$k$-full natural number is $2$-full.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Proof depends on
 
-- [Is KFull mono](is-kfull-mono.md)
+- [Monotonicity of $k$-fullness in $k$](is-kfull-mono.md)
 
 ## Sources
 

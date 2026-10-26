@@ -12,7 +12,7 @@ the Sylvester sequence `2, 3, 7, 43, …`.
 
 ## Depends on
 
-- [Generalized Sylvester](../../../MathlibExt/part-06/generalized-sylvester/generalized-sylvester.md)
+- [Generalized Sylvester sequence](../../../MathlibExt/part-06/generalized-sylvester/generalized-sylvester.md)
 
 ## Sources
 

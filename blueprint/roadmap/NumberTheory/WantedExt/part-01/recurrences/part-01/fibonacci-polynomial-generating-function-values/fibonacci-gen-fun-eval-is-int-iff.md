@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciGenFun_eval_isInt_iff
 ---
 
-# Fibonacci Gen Fun eval is Int iff
+# Integer values of the generalized Fibonacci generating function at rationals
 
-Theorem 1.4 (case `d = 1`): if `b ∣ a`, `q ∈ ℚ` and `F_i = F_i(1)`, then
-`f(q) = q / (1 - aq - bq²) ∈ ℤ` if and only if `q = F_i / F_{i+1}` for some `i ∈ ℕ` or
-`q = -F_{i+1} / (b F_i)` for some `i ≥ 1`.
+**Integer values of the generalized Fibonacci generating function at rationals.** Let $a$ and
+$b$ be positive integers with $b \mid a$, and let $F_i(x) \in \mathbb{Z}[x]$ be the polynomials
+with $F_0 = 0$, $F_1 = 1$ and $F_{i+2} = ax\,F_{i+1} + b\,F_i$ for all $i \ge 0$. For a rational
+number $q$, the number $q / (1 - aq - bq^2)$ is an integer if and only if
+$q = F_i(1) / F_{i+1}(1)$ for some $i \in \mathbb{N}$ or $q = -F_{i+1}(1) / (b F_i(1))$ for some
+$i \ge 1$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

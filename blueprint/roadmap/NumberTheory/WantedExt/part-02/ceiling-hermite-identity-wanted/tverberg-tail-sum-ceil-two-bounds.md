@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tverbergTailSum_ceil_two_bounds
 ---
 
-# Tverberg Tail Sum ceil two bounds
+# Sharp bounds for two-term tail sums of Tverberg's ceiling sum
 
-Theorem 7: for `a, b ∈ ℤ` and `m, K ∈ ℕ`, `0 ≤ T_2({a, b}, m, K) ≤ ⌊m/2⌋`; for `m = 2r` and
-`a = b = r`, `T_2({a, b}, m, m) = 0` and `T_2({a, b}, m, m/2) = ⌊m/2⌋ = r`. The paper takes
-`m, K ≥ 1`; at `m = 0` or `K = 0` the sum is `0` and every claim holds, so no positivity hypotheses.
+**Sharp bounds for two-term tail sums of Tverberg's ceiling sum.** For integers $a, b$ and
+natural numbers $m, K$, let
+$T(a, b, m, K) = \sum_{k=1}^{K} f^{(\lceil \cdot \rceil)}((a, b), m, k)$, where
+$f^{(\lceil \cdot \rceil)}$ is Tverberg's sum with $F$ the ceiling function. Then
+$0 \le T(a, b, m, K) \le \lfloor m/2 \rfloor$ for all such $a, b, m, K$. Moreover, for every
+natural number $r$, $T(r, r, 2r, 2r) = 0$ and $T(r, r, 2r, r) = r$.
+
+The paper assumes $m, K \ge 1$; for $m = 0$ or $K = 0$ the sum is $0$, so these hypotheses are
+not needed.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

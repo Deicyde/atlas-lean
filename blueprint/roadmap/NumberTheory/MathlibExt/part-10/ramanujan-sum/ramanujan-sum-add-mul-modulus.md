@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanSum_add_mul_modulus
 ---
 
-# Ramanujan Sum add mul modulus
+# Periodicity of Ramanujan sums
 
-A Ramanujan sum is periodic in its integer argument with period the modulus.
+**Periodicity of Ramanujan sums.** For every positive integer $n$ and all integers $t$ and $k$,
+the Ramanujan sum $c_n$ of modulus $n$ satisfies $c_n(t + kn) = c_n(t)$.
 
 ## Depends on
 
-- [Ramanujan Sum](ramanujan-sum.md)
+- [Ramanujan sum](ramanujan-sum.md)
 
 ## Sources
 

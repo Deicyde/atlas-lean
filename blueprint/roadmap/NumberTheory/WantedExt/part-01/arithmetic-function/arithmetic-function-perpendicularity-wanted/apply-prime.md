@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsAntimultiplicative.apply_prime
 ---
 
-# Apply prime
+# Antimultiplicative functions vanish at primes
 
-An antimultiplicative function vanishes at every prime.
+**Antimultiplicative functions vanish at primes.** Let $R$ be a type with a zero and a one, and
+let $f$ be an antimultiplicative arithmetical function with values in $R$. Then $f(p) = 0$ for
+every prime $p$.
 
 ## Depends on
 
-- [Is Antimultiplicative](is-antimultiplicative.md)
+- [Antimultiplicative arithmetical functions](is-antimultiplicative.md)
 
 ## Sources
 

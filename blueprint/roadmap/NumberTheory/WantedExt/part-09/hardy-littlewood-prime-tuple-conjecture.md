@@ -13,9 +13,9 @@ has the predicted asymptotic.
 
 ## Depends on
 
-- [Is Hardy Littlewood Admissible](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
-- [Hardy Littlewood Prime Tuple Count](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-prime-tuple-count.md)
-- [Hardy Littlewood Singular Series](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-singular-series.md)
+- [Hardy–Littlewood admissible tuples](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [The prime-tuple counting function](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-prime-tuple-count.md)
+- [The Hardy–Littlewood singular series](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-singular-series.md)
 
 ## Sources
 

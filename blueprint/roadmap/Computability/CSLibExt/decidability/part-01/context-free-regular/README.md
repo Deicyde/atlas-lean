@@ -11,7 +11,7 @@ navigation: module
 - [One round of the item search against a DFA](dfa-step.md)
 - [Candidate items for a grammar and a DFA](dfa-items.md)
 - [Items found for a grammar and a DFA](dfa-found.md)
-- [The emptiness test](inter-empty-b.md)
+- [The intersection-emptiness test for a grammar and a DFA](inter-empty-b.md)
 
 ## Stabilization
 

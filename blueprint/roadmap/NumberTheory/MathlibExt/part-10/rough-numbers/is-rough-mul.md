@@ -7,20 +7,20 @@ proof: formalized
 lean: Nat.isRough_mul
 ---
 
-# Is Rough mul
+# A product is rough exactly when both factors are
 
-Multiplication closure as an if-and-only-if: a product is `k`-rough exactly
-when both factors are.
+**A product is rough exactly when both factors are.** For natural numbers $m$, $n$ and
+$k$, the product $mn$ is $k$-rough if and only if both $m$ and $n$ are $k$-rough.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Lt of prime dvd](lt-of-prime-dvd.md)
-- [Ne zero](ne-zero.md)
-- [Of dvd](of-dvd.md)
+- [Prime divisors of a rough number exceed the bound](lt-of-prime-dvd.md)
+- [Rough numbers are nonzero](ne-zero.md)
+- [Divisors of rough numbers are rough](of-dvd.md)
 
 ## Sources
 

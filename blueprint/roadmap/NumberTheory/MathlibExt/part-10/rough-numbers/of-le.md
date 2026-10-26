@@ -7,18 +7,19 @@ proof: formalized
 lean: Nat.IsRough.of_le
 ---
 
-# Of le
+# Roughness is antitone in the bound
 
-Antitonicity in the bound: a `k`-rough number is `l`-rough for `l ≤ k`.
+**Roughness is antitone in the bound.** Let $k$ and $l$ be natural numbers with $l \le k$.
+Every $k$-rough natural number is $l$-rough.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Lt of prime dvd](lt-of-prime-dvd.md)
-- [Ne zero](ne-zero.md)
+- [Prime divisors of a rough number exceed the bound](lt-of-prime-dvd.md)
+- [Rough numbers are nonzero](ne-zero.md)
 
 ## Sources
 

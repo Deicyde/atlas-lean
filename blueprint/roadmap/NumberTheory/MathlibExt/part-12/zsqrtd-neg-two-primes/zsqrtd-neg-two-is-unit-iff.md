@@ -6,9 +6,10 @@ proof: formalized
 lean: Zsqrtd.NegTwo.zsqrtd_neg_two_isUnit_iff
 ---
 
-# Zsqrtd neg two is Unit iff
+# Units of ℤ(√−2)
 
-The units of `ℤ[√-2]` are exactly `1` and `-1`.
+**Units of ℤ[√−2].** An element $x$ of $\mathbb{Z}[\sqrt{-2}]$ is a unit if and only if $x = 1$
+or $x = -1$.
 
 ## Depends on
 

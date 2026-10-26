@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.minPalindromicBase_two
 ---
 
-# Min Palindromic Base two
+# The minimum palindromic base of two
 
-Characteristic value `b(2) = 3`: `2 = (1,0)_2` is not a palindrome, `2 = (2)_3` is.
+**The minimum palindromic base of two.** The smallest base $b \ge 2$ in which the number $2$
+is a palindrome is $b(2) = 3$: in base $2$ the number $2$ is written $(1, 0)_2$, which is not a
+palindrome, while in base $3$ it is the one-digit palindrome $(2)_3$.
 
 ## Depends on
 
-- [Min Palindromic Base](min-palindromic-base.md)
+- [Minimum palindromic base](min-palindromic-base.md)
 
 ## Sources
 

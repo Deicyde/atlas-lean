@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.not_hasPropertyPStar_of_isReverseDivisor
 ---
 
-# Proposition 4
+# Not has Property PStar of is Reverse Divisor
 
-**Proposition 4**: no reverse divisor has the
-property `P*`.
+**No reverse divisor has property $P^*$.** If $n$ is a reverse divisor, then $n$ does not have
+the property $P^*$.
 
 ## Depends on
 
 - [Has Property PStar](has-property-pstar.md)
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 
 ## Sources
 

@@ -6,16 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.polyBernoulliPoly_zero
 ---
 
-# Poly Bernoulli Poly zero
+# Poly-Bernoulli polynomials at zero
 
-At `x = 0`, the poly-Bernoulli polynomial of degree `n` is the poly-Bernoulli
-number of index `n` and the same integer order `p`; this proves the
-normalization stated with the generating function, with no deviation.
+**Poly-Bernoulli polynomials at zero.** For every natural number $n$ and every integer $k$, the
+poly-Bernoulli polynomial of degree $n$ and order $k$ evaluated at $0$ equals the
+poly-Bernoulli number of index $n$ and order $k$: $B_n^{(k)}(0) = B_n^{(k)}$.
 
 ## Depends on
 
 - [Poly-Bernoulli numbers](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
-- [Poly Bernoulli Poly](poly-bernoulli-poly.md)
+- [Poly-Bernoulli polynomials](poly-bernoulli-poly.md)
 
 ## Sources
 

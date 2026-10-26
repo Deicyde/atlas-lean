@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayX_row_two
 ---
 
-# Circuit Array X row two
+# Row two of the one-variable circuit array
 
-Corollary 4.6: for `s ≥ 2`, `C^X₂,ₛ = (c₂,₀(s) - c₂,₁(s) X + c₂,₂(s) X²)/(9^{s-2}X - 1)²` with
-`c₂,₀(s) = 27·9^{s-3} - 1`, `c₂,₁(s) = 24(2s - 3)·9^{s-3}`, `c₂,₂(s) = 81·81^{s-3} - 3·9^{s-3}`
-(reading the printed `c₂,₂(X²)` as `c₂,₂(s)X²`, as in Remark 4.7).
+**Row two of the one-variable circuit array.** For every natural number $s \ge 2$, the
+one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
+over $\mathbb{Q}$, satisfies
+$C^X_{2,s} = (c_{2,0}(s) - c_{2,1}(s) X + c_{2,2}(s) X^2)/(9^{s-2} X - 1)^2$, where
+$c_{2,0}(s) = 27 \cdot 9^{s-3} - 1$, $c_{2,1}(s) = 24(2s - 3) \cdot 9^{s-3}$ and
+$c_{2,2}(s) = 81 \cdot 81^{s-3} - 3 \cdot 9^{s-3}$, with integer exponents (so $9^{s-3} = 1/9$
+and $81^{s-3} = 1/81$ when $s = 2$).
+
+The printed $c_{2,2}(X^2)$ is read as $c_{2,2}(s) X^2$, as in Remark 4.7.
 
 ## Depends on
 
-- [Circuit Array X](circuit-array-x.md)
+- [One-variable circuit array](circuit-array-x.md)
 
 ## Sources
 

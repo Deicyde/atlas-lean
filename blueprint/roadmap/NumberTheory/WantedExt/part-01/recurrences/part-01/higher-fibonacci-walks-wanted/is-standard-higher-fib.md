@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.IsStandardHigherFib
 ---
 
-# Is Standard Higher Fib
+# The standard order-$m$ Fibonacci sequence
 
-The standard initial conditions for the order-`m` Fibonacci
-sequence, together with the `m`-step recurrence.
+**The standard order-$m$ Fibonacci sequence.** A sequence $F : \mathbb{Z} \to \mathbb{Q}$ is
+the standard order-$m$ Fibonacci sequence if it satisfies the $m$-step Fibonacci recurrence,
+$F_i = 0$ for every natural number $i < m - 1$, and $F_{m-1} = 1$, where $m - 1$ is computed in
+the integers.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Higher Fib Recurrence](is-higher-fib-recurrence.md)
+- [The $m$-step Fibonacci recurrence](is-higher-fib-recurrence.md)
 
 ## Sources
 

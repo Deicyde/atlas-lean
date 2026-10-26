@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.monic_count_natDegree_le
 ---
 
-# Monic count nat Degree le
+# Number of monic polynomials of bounded degree
 
-The number of monic polynomials of degree at most `N` is `(q^{N+1} - 1) / (q - 1)`
-(Proposition 4, case `h = 1`, `m = 1`).
+**Number of monic polynomials of bounded degree.** Let $F$ be a finite field with $q$
+elements and let $N$ be a natural number. The number of monic polynomials in $F[T]$ of degree at
+most $N$ is $(q^{N+1} - 1)/(q - 1)$.
 
 ## Depends on
 

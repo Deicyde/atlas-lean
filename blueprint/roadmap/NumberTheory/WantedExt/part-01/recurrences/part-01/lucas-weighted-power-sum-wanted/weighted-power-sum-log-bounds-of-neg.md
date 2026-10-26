@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.weighted_power_sum_log_bounds_of_neg
 ---
 
-# Weighted power sum log bounds of neg
+# Logarithmic bounds for weighted Lucas power sums when $y < 0$
 
-Lemma 2.4: let `y < 0`, `|y + 1| ≤ x`, `x ≥ 1`, and let positive `n, k, p, q` satisfy
-`Σ_{j=1}^k j U_j^p = U_n^q`. With `α = (x + √D)/2`:
-`log_α k + p log_α x + (k - 2)p < (n - 1)q` if `k ≥ 2`, and
-`q log_α x + (n - 2)q < (k - 1)p + log_α k + log_α(1 + (x² - 2y)/(x^{p-1}(x³ - x² - 2xy + y)))`
-if `k ≥ 3`.
+**Logarithmic bounds for weighted Lucas power sums when $y < 0$.** Let $x \ge 1$ and $y < 0$
+be integers with $|y + 1| \le x$, let $(U_m)$ be the Lucas sequence with parameters $(x, y)$,
+given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$, and let
+$\alpha = (x + \sqrt{x^2 - 4y})/2$. Let $k$ be a natural number and $n$, $p$, $q$ positive
+integers with $\sum_{j=1}^k j U_j^p = U_n^q$. If $k \ge 2$, then
+$\log_\alpha k + p \log_\alpha x + (k - 2)p < (n - 1)q$. If $k \ge 3$, then
+$q \log_\alpha x + (n - 2)q < (k - 1)p + \log_\alpha k +
+\log_\alpha\bigl(1 + (x^2 - 2y)/(x^{p-1}(x^3 - x^2 - 2xy + y))\bigr)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

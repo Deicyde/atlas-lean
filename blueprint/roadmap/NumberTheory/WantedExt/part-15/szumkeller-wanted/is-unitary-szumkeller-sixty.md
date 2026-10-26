@@ -17,7 +17,7 @@ squares of its proper unitary divisors `1, 3, 4, 5, 12, 15, 20`.
 
 ## Proof depends on
 
-- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

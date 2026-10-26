@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.log_nthPrime_ge_log_add_loglog
 ---
 
-# Log nth Prime ge log add loglog
+# Lower bound for the logarithm of the $n$-th prime
 
-Lemma 8 (quoted from the literature):
-`log pₙ ≥ log n + log log n + log(1 + (log log n - 1) / log n)` (one-indexed `pₙ`). The paper
-says "for all positive integers `n`"; the right side is undefined at `n = 1` (`log log 1`) and
-at `n = 2` (the last logarithm's argument is `≈ -0.9715`), so `n ≥ 3`.
+**Lower bound for the logarithm of the $n$-th prime.** Let $p_n$ denote the $n$-th prime, so
+that $p_1 = 2$. For every integer $n \ge 3$,
+
+$$\log p_n \ge \log n + \log\log n + \log\left(1 + \frac{\log\log n - 1}{\log n}\right).$$
+
+The paper states this for all positive integers $n$; the right side is undefined at $n = 1$
+(where $\log\log 1$ appears) and at $n = 2$ (where the last logarithm's argument is about
+$-0.9715$), so $n \ge 3$ is assumed.
 
 ## Depends on
 

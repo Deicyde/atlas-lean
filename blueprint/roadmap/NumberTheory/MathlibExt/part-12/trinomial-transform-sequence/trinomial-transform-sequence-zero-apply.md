@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.trinomialTransformSequence_zero_apply
 ---
 
-# Trinomial Transform Sequence zero apply
+# Trinomial transform of the zero sequence
 
-The trinomial transform of the zero sequence is zero.
+**Trinomial transform of the zero sequence.** For every semiring $R$ and every
+$n \in \mathbb{N}$, the $n$th term of the trinomial transform of the zero sequence
+$\mathbb{N} \to R$ is $0$.
 
 ## Depends on
 
-- [Trinomial Transform Sequence](trinomial-transform-sequence.md)
+- [Trinomial transform](trinomial-transform-sequence.md)
 
 ## Proof depends on
 
-- [Trinomial Coefficient](../trinomial-coefficient.md)
+- [Trinomial coefficient](../trinomial-coefficient.md)
 
 ## Sources
 

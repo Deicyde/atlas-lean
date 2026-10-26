@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gfp_fib_eval_eq_integral
 ---
 
-# Gfp fib eval eq integral
+# Integral representation of Fibonacci-type generalized Fibonacci polynomials
 
-Proposition 5.1: for `n ≥ 2` and a real `x` with `d(x)² + 4 g(x) ≥ 0`,
-`F_n(x) = (n / 2^n) ∫_{-1}^{1} (d(x) + y √(d(x)² + 4 g(x)))^{n-1} dy`.
+**Integral representation of Fibonacci-type generalized Fibonacci polynomials.** Let $d$ and
+$g$ be polynomials with integer coefficients, and let $F_n$ be the generalized Fibonacci
+polynomials defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = d F_{n+1} + g F_n$. If $x$ is a real
+number with $d(x)^2 + 4 g(x) \ge 0$, then for every $n \ge 2$,
+
+$$F_n(x) = \frac{n}{2^n} \int_{-1}^{1} \left( d(x) + y \sqrt{d(x)^2 + 4 g(x)} \right)^{n-1} dy.$$
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

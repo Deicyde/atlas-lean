@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Push Bound](../../../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](../../../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

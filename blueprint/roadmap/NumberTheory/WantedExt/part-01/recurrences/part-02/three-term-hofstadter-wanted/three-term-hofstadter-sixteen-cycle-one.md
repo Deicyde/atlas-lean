@@ -5,22 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_sixteenCycle_one
 ---
 
-# Three Term Hofstadter sixteen Cycle one
+# First sixteen-cycle lemma for the three-term Hofstadter-like recurrence
 
-First sixteen-cycle lemma. Let `K, λ, μ₁, μ₂, γ` be positive integers with `λ > 31 + K` and
-`μ₁, μ₂, γ > λ`. For arbitrary integers `a_1, …, a_K`, the padded sequence with initial
-conditions `⟨0̄; a_1, …, a_K, λ, 7, μ₂, 16, μ₂, 16, μ₁, λ, 7, μ₂, 16, 2μ₂, 16, μ₂, 25, γ, λ, 7⟩`
-satisfies, from index `K + 1` through index `λ`, `B(K+16k) = μ₁ 2^{k-1} + γ - μ₁`,
-`B(K+16k+1) = λ`, `B(K+16k+2) = 7`, `B(K+16k+3) = μ₂ 2^k`, `B(K+16k+4) = 16`,
-`B(K+16k+5) = μ₂ 2^k`, `B(K+16k+6) = 16`, `B(K+16k+7) = μ₁ 2^k`, `B(K+16k+8) = λ`,
-`B(K+16k+9) = 7`, `B(K+16k+10) = μ₂ 2^k`, `B(K+16k+11) = 16`, `B(K+16k+12) = μ₂ 2^{k+1}`,
-`B(K+16k+13) = 16`, `B(K+16k+14) = μ₂ 2^k`, `B(K+16k+15) = 25`.
-Corrected: the paper prints `B(K+16k+12) = μ₂ 2^k`, which contradicts its own initial value
-`B(K+12) = 2μ₂`; the exponent `k+1` matches the initial conditions and every later term.
+**First sixteen-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$ be
+a natural number and let $\lambda$, $\mu_1$, $\mu_2$, $\gamma$ be integers with $\lambda > 31 + K$
+and $\mu_1, \mu_2, \gamma > \lambda$. Let $a_1, \dots, a_K$ be arbitrary integers and let $B$ be
+the padded three-term Hofstadter-like sequence with initial conditions
+$a_1, \dots, a_K, \lambda, 7, \mu_2, 16, \mu_2, 16, \mu_1, \lambda, 7, \mu_2, 16, 2\mu_2, 16,
+\mu_2, 25, \gamma, \lambda, 7$. Then for all natural numbers $k$ and $r \le 15$ with
+$K + 1 \le K + 16k + r \le \lambda$, the term $B(K + 16k + r)$ is defined, and these terms are
+$B(K + 16k) = \mu_1 2^{k-1} + \gamma - \mu_1$, $B(K + 16k + 1) = \lambda$, $B(K + 16k + 2) = 7$,
+$B(K + 16k + 3) = \mu_2 2^k$, $B(K + 16k + 4) = 16$, $B(K + 16k + 5) = \mu_2 2^k$,
+$B(K + 16k + 6) = 16$, $B(K + 16k + 7) = \mu_1 2^k$, $B(K + 16k + 8) = \lambda$,
+$B(K + 16k + 9) = 7$, $B(K + 16k + 10) = \mu_2 2^k$, $B(K + 16k + 11) = 16$,
+$B(K + 16k + 12) = \mu_2 2^{k+1}$, $B(K + 16k + 13) = 16$, $B(K + 16k + 14) = \mu_2 2^k$ and
+$B(K + 16k + 15) = 25$.
+
+Corrected: the paper prints $B(K + 16k + 12) = \mu_2 2^k$, which contradicts its own initial
+value $B(K + 12) = 2\mu_2$; the exponent $k + 1$ matches the initial conditions and every later
+term.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

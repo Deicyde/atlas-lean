@@ -4,13 +4,13 @@ navigation: module
 
 # Lucas Sequence
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
-- [Is Coprime](is-coprime.md)
-- [Lucas U](lucas-u.md)
-- [Lucas V](lucas-v.md)
-- [Fibonacci Lucas Params](fibonacci-lucas-params.md)
-- [Lucas Number](lucas-number.md)
-- [Lucas U fibonacci Lucas Params](lucas-u-fibonacci-lucas-params.md)
-- [Lucas U add two](lucas-u-add-two.md)
-- [Lucas U cassini](lucas-u-cassini.md)
-- [Lucas V fibonacci Lucas Params](lucas-v-fibonacci-lucas-params.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
+- [Coprime Lucas sequence parameters](is-coprime.md)
+- [Lucas sequence $U(P, Q)$](lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](lucas-v.md)
+- [Fibonacci parameters for Lucas sequences](fibonacci-lucas-params.md)
+- [Lucas numbers](lucas-number.md)
+- [The Lucas sequence $U(1, -1)$ is the Fibonacci sequence](lucas-u-fibonacci-lucas-params.md)
+- [Recurrence for the Lucas sequence $U(P, Q)$](lucas-u-add-two.md)
+- [Cassini's identity for Lucas sequences](lucas-u-cassini.md)
+- [The Lucas sequence $V(1, -1)$ gives the Lucas numbers](lucas-v-fibonacci-lucas-params.md)

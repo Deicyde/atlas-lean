@@ -4,7 +4,7 @@ navigation: module
 
 # Bonse Sequence
 
-- [Prime Nth](prime-nth.md)
-- [Is Bonse Seq](is-bonse-seq.md)
-- [Theorem 1](is-bonse-seq-of-liminf-gt.md)
-- [Theorem 2](not-is-bonse-seq-of-liminf-lt.md)
+- [The $m$-th prime, counted from one](prime-nth.md)
+- [Bonse sequence of prime indices](is-bonse-seq.md)
+- [A sufficient condition for a Bonse sequence](is-bonse-seq-of-liminf-gt.md)
+- [A sufficient condition for a non-Bonse sequence](not-is-bonse-seq-of-liminf-lt.md)

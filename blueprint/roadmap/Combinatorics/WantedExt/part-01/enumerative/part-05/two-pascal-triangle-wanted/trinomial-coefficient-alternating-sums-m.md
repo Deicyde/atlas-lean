@@ -24,8 +24,8 @@ The paper does not bound $x$; the last case excludes $n = 0$, where it would nee
 
 ## Depends on
 
-- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
-- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+- [Lucas numbers](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Trinomial coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

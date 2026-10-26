@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_divisors_sigma_gt_exp_sqrt_log_le
 ---
 
-# Card divisors sigma gt exp sqrt log le
+# Integers whose sum of divisors has many divisors
 
-For `x ≥ 10`, the number of positive `n ≤ x` with `τ(σ(n)) > exp(√(log x))` is
-`O(x / (log x)²)`.
+**Integers whose sum of divisors has many divisors.** Let $\sigma(n)$ be the sum of the
+positive divisors of $n$ and $\tau(m)$ the number of positive divisors of $m$. There is a constant
+$C$ such that for every real $x \ge 10$, the number of integers $1 \le n \le x$ with
+$\tau(\sigma(n)) > \exp(\sqrt{\log x})$ is at most $C x / (\log x)^2$.
 
 ## Depends on
 

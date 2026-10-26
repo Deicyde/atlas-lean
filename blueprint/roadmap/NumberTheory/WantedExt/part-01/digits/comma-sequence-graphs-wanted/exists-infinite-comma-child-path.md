@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_infinite_commaChild_path
 ---
 
-# Exists infinite comma Child path
+# The comma-child graph has an infinite path
 
-For every base `b ≥ 2` the comma-child graph `G_c` (positive integers, an edge from `k` to
-each comma-child of `k`) contains an infinite path.
+**The comma-child graph has an infinite path.** For every base $b \ge 2$ there is a sequence
+$a_0, a_1, \dots$ of positive integers such that for every $i$ there is a comma candidate digit
+$y$ of $a_i$ in base $b$ with $a_{i+1} = a_i + b\,(a_i \bmod b) + y$, that is, each $a_{i+1}$ is
+a comma-child of $a_i$.
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.le_rpow_mul_pow_of_dvd_factorial
 ---
 
-# Le rpow mul pow of dvd factorial
+# Divisors of a factorial bounded by their number of prime factors
 
-Lemma 2: if a positive integer `x` divides `n!` (`n ≥ 1`), then for every positive
-integer `a`, `x ≤ n^(n/a) (a ω(x) + 1)^(n ω(x))`, where `ω(x)` is the number of distinct
-prime divisors of `x`.
+**Divisors of a factorial bounded by their number of prime factors.** Let $n \ge 1$ and let
+$x$ be a positive integer dividing $n!$, and write $\omega(x)$ for the number of distinct prime
+divisors of $x$. Then for every positive integer $a$,
+$x \le n^{n/a} (a \, \omega(x) + 1)^{n \, \omega(x)}$, where $n^{n/a}$ is a real power.
 
 ## Depends on
 

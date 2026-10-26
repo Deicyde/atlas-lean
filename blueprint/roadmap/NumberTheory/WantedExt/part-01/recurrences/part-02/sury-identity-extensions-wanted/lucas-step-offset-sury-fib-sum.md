@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.lucas_step_offset_sury_fib_sum
 ---
 
-# Theorem 5, Lucas offset formula
+# Offset step extension of Sury's identity, Lucas form
 
-**Theorem 5, Lucas offset formula**: for `j > |k|`, the `j`-step
-Lucas numbers with offset `k` sum to `F_{j(n+1)}`.
+**Offset step extension of Sury's identity, Lucas form.** Let $F_n$ and $L_n$ be the
+Fibonacci and Lucas numbers at integer indices. For all natural numbers $j$ and $n$ and every
+integer $k$ with $|k| < j$,
+
+$$F_{j(n+1)} = \frac{F_j}{L_k} \sum_{i=0}^{n}
+\left(\frac{(-1)^k L_{j-k}}{L_k}\right)^{n-i} L_{ji+k}.$$
 
 ## Depends on
 
-- [Fib At Int](fib-at-int.md)
-- [Lucas At Int](lucas-at-int.md)
+- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Lucas numbers at integer indices](lucas-at-int.md)
 
 ## Sources
 

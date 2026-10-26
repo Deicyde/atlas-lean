@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.binomidShift_image_inter_eq_zero
 ---
 
-# Binomid Shift image inter eq zero
+# Distinct shifts of lex-minimal extensions meet only in zero
 
-Proposition 6: for `l ≠ m`, `σ^l(L) ∩ σ^m(L) = {0^∞}`.
+**Distinct shifts of lex-minimal extensions meet only in zero.** Let $L$ be the set of
+lex-minimal extensions, and for a natural number $l$ let $\sigma^l$ be the right shift that
+prepends $l$ zeros to a sequence. For natural numbers $l \neq m$,
+$\sigma^l(L) \cap \sigma^m(L) = \{(0, 0, 0, \dots)\}$: the only sequence in both images is
+the zero sequence.
 
 ## Depends on
 
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
-- [Binomid Shift](binomid-shift.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
+- [Right shift of a sequence](binomid-shift.md)
 
 ## Sources
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.negBaseSqDigitSum_of_digit
 ---
 
-# Neg Base Sq Digit Sum of digit
+# The digit-square sum of a single digit
 
-A single nonzero digit `0 < d < |b|` has `S_{2,b}(d) = d²`.
+**The digit-square sum of a single digit.** Let $b$ and $d$ be integers with $0 < d < -b$, so
+that $b \le -2$ and $d$ is a nonzero base-$b$ digit. Then the base-$b$ digit-square sum $S_{2,b}$
+satisfies $S_{2,b}(d) = d^2$.
 
 ## Depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
+- [Truncated digit-square sum in a negative base](neg-base-sq-digit-sum-aux.md)
 
 ## Sources
 

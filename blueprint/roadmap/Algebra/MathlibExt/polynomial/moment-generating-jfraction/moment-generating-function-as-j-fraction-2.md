@@ -35,7 +35,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Jacobi Fraction](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Jacobi continued fraction expansion](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
 - [Moment generating function as a J-fraction, general form](moment-generating-function-as-j-fraction.md)
 
 ## Sources

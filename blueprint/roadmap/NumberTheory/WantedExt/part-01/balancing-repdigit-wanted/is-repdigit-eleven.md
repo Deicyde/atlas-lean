@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.isRepdigit_eleven
 ---
 
-# Is Repdigit eleven
+# Eleven is a repdigit
 
-Characteristic example: `11` is a repdigit.
+**Eleven is a repdigit.** The number $11$ is a repdigit.
 
 ## Depends on
 
-- [Is Repdigit](is-repdigit.md)
+- [Decimal repdigits](is-repdigit.md)
 
 ## Sources
 

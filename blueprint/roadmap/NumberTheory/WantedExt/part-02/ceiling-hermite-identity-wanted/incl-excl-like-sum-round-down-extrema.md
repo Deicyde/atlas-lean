@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.inclExclLikeSum_roundDown_extrema
 ---
 
-# Incl Excl Like Sum round Down extrema
+# Extrema of the round-half-down inclusion-exclusion-like sum
 
-Theorem 3: for `n ≥ 2`, `g_4` (nearest integer, ties down: `⌈x - 1/2⌉`) has minimum
-`-2^{n-2}`, attained at `x_k = 1/2`, and maximum `2^{n-2}`, attained at `x_k = 1/2 + 1/n²`.
+**Extrema of the round-half-down inclusion-exclusion-like sum.** Let $n \ge 2$ and let $g_4$
+be the inclusion-exclusion-like sum $g^{(F)}$ in $n$ real variables with
+$F(y) = \lceil y - 1/2 \rceil$, the nearest integer to $y$ with ties rounded down. Then
+$-2^{n-2} \le g_4(x) \le 2^{n-2}$ for every $x \in \mathbb{R}^n$; the minimum $-2^{n-2}$ is
+attained at the point with all coordinates $1/2$, and the maximum $2^{n-2}$ at the point with all
+coordinates $1/2 + 1/n^2$.
 
 ## Depends on
 
-- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Inclusion-exclusion-like sum](incl-excl-like-sum.md)
 
 ## Sources
 

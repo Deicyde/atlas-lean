@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsSCullenNumber
 ---
 
-# Is SCullen Number
+# $s$-Cullen numbers
 
-A number `m` is an `s`-Cullen number for base `s` when `2 ≤ s` and
-`m = C_{n,s}` for some positive `n`.
+**$s$-Cullen numbers.** For natural numbers $s$ and $n$, write $C_{n,s} = n s^n + 1$ for the
+$s$-Cullen value. A natural number $m$ is an $s$-Cullen number when $s \ge 2$ and $m = C_{n,s}$
+for some natural number $n \ge 1$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [S Cullen Number](s-cullen-number.md)
+- [The $s$-Cullen value](s-cullen-number.md)
 
 ## Sources
 

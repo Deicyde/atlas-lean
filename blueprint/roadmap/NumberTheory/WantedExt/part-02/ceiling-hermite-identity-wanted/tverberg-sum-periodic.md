@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tverbergSum_periodic
 ---
 
-# Tverberg Sum periodic
+# Periodicity of Tverberg's sum
 
-Lemma 3: for `ℓ ≥ 2`, each `f_j` has period `m` in every `a_i` and in `k`. The paper's
-standing hypothesis `ℓ ≥ 2` is needed: at `ℓ = 1`, `f_1({a}, m, k) = ⌊(k+a)/m⌋ - ⌊k/m⌋` shifts by
-`q` when `a` does by `qm`.
+**Periodicity of Tverberg's sum.** Let $\ell \ge 2$ and let $F$ be one of
+$\lfloor \cdot \rfloor$, $\lceil \cdot \rceil$, $r^+(y) = \lfloor y + 1/2 \rfloor$ and
+$r^-(y) = \lceil y - 1/2 \rceil$.
+For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let
+$f(a, m, k) =
+\sum_{U \subseteq \{1, \dots, \ell\}} (-1)^{\ell - |U|} F((k + \sum_{i \in U} a_i)/m)$
+be Tverberg's sum of $F$, with $x/0 = 0$. For every index $i$ and every integer $q$, replacing
+$a_i$ by $a_i + q m$ does not change $f(a, m, k)$, and $f(a, m, k + q m) = f(a, m, k)$.
+
+The hypothesis $\ell \ge 2$ is needed: for $\ell = 1$, $F = \lfloor \cdot \rfloor$ and $m \ge 1$,
+$f((a), m, k) = \lfloor (k + a)/m \rfloor - \lfloor k/m \rfloor$ increases by $q$ when $a$ is
+replaced by $a + q m$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

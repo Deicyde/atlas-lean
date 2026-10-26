@@ -6,9 +6,10 @@ proof: formalized
 lean: Int.sq_emod_eight
 ---
 
-# Sq emod eight
+# Squares of integers modulo 8
 
-Integer squares mod 8 are `0`, `1`, or `4`.
+**Squares of integers modulo 8.** For every integer $x$, the remainder of $x^2$ on division
+by $8$, taken in $\{0, 1, \dots, 7\}$, is $0$, $1$ or $4$.
 
 ## Depends on
 

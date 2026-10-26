@@ -18,7 +18,7 @@ seed-convention reason as in the Tribonacci statement.
 ## Depends on
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
-- [Shifted Padovan Sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
+- [Shifted Padovan sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

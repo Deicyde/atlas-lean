@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.three_digit_binomialForm_two_pow_iff
 ---
 
-# Three digit binomial Form two pow iff
+# Three-digit binomial forms of powers of two
 
-The only 3-digit binomial form representations of `2^n` are
-`2^i (1, 2, 1)_{2^{(n-i)/2} - 1}` with `0 ≤ 3i < n - 2` and `n ≡ i (mod 2)`.
+**Three-digit binomial forms of powers of two.** Let $n$ and $\alpha \ge 1$ be natural numbers
+and let $b \ge 2$ be a base. The base-$b$ representation of $2^n$ is
+$(\alpha, 2\alpha, \alpha)_b$ if and only if there is a natural number $i$ with $3i + 2 < n$,
+$n \equiv i \pmod 2$, $\alpha = 2^i$ and $b = 2^{(n - i)/2} - 1$.
 
 ## Depends on
 

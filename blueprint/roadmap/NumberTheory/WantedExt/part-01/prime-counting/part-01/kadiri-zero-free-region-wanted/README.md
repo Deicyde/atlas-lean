@@ -5,5 +5,5 @@ navigation: module
 
 # Kadiri Zero Free Region
 
-- [Kadiri zero free region](kadiri-zero-free-region.md)
-- [Kadiri zero free region refined](kadiri-zero-free-region-refined.md)
+- [Kadiri's zero-free region for the Riemann zeta function](kadiri-zero-free-region.md)
+- [Kadiri's refined zero-free region for the Riemann zeta function](kadiri-zero-free-region-refined.md)

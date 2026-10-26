@@ -7,14 +7,15 @@ proof: formalized
 lean: Nat.isKFull_iff_factorization
 ---
 
-# Is KFull iff factorization
+# Factorization criterion for $k$-full numbers
 
-Factorization characterization: for `n ≠ 0`, `n` is `k`-full iff every prime
-divisor occurs with multiplicity at least `k`.
+**Factorization criterion for $k$-full numbers.** Let $k$ and $n$ be natural numbers with
+$n \ne 0$, and write $v_p(n)$ for the exponent of a prime $p$ in the prime factorization of
+$n$. Then $n$ is $k$-full if and only if $k \le v_p(n)$ for every prime $p$ dividing $n$.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

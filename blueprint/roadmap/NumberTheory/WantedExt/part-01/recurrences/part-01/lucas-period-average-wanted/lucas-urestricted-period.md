@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasURestrictedPeriod
 ---
 
-# Lucas URestricted Period
+# Restricted period of a Lucas sequence modulo $m$
 
-The (least) restricted period `ρ_U(m)` of `U(a, b)` modulo `m`: the least positive `s`
-with `U s ≡ 0` and `U (s + 1) ≡ M` modulo `m` for a multiplier `M` coprime to `m`
-(equation (1.12)); `U (s + 1)` is then the multiplier `M_U(m)`.
+**Restricted period of a Lucas sequence modulo $m$.** For a Lucas sequence $U = U(P, Q)$ and
+a natural number $m$, the least restricted period $\rho_U(m)$ of $U$ modulo $m$ is the least
+$s > 0$ such that $m \mid U_s$ and $U_{s+1}$ is coprime to $m$, and $0$ if there is no such $s$.
+
+In the paper's terms, $U_{s+1} \equiv M \pmod m$ for a multiplier $M$ coprime to $m$; for
+$s = \rho_U(m)$ this $U_{s+1}$ is the multiplier $M_U(m)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

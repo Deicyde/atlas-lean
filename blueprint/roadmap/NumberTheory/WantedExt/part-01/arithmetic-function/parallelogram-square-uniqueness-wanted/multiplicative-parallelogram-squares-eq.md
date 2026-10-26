@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_parallelogram_squares_eq_sq
 ---
 
-# Multiplicative parallelogram squares eq sq
+# Parallelogram uniqueness of squares for multiplicative functions
 
-A multiplicative function with
-`f (m² + n²) + f (m² - n²) = 2 f (m²) + 2 f (n²)` for all positive integers `m > n` and
-`f 4 ≠ 0` is `f n = n²`.
+**Parallelogram uniqueness of squares for multiplicative functions.** Let $f$ be a
+complex-valued multiplicative arithmetic function
+(so $f(0) = 0$) such that $f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers
+$m > n \ge 1$, and suppose $f(4) \ne 0$. Then $f(n) = n^2$ for every natural number $n$.
 
 ## Depends on
 

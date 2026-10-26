@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.not_isUniversalLinearDForm_mul_succ
 ---
 
-# Not is Universal Linear DForm mul succ
+# $x(x+1)$ is never a universal form
 
-`x (x + 1)` is not a universal form for any `D` and `σ`: it is always even.
+**$x(x+1)$ is never a universal form.** For every integer $D$ and every finite sequence
+$\sigma$ of integers, the product of the linear factors $x$ and $x + 1$ is not a universal
+$D$-form with respect to $\sigma$: since $x(x+1)$ is even for every integer $x$, the prime $2$
+divides every value of the product.
 
 ## Depends on
 
-- [Is Universal Linear DForm](is-universal-linear-dform.md)
+- [Universal $D$-forms](is-universal-linear-dform.md)
 
 ## Proof depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

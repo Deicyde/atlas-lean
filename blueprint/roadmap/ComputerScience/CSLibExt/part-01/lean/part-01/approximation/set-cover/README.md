@@ -5,7 +5,7 @@ navigation: module
 # Set Cover
 
 - [Greedy choice of a set](best-set.md)
-- [Greedy Set Cover](greedy-set-cover.md)
+- [Greedy set cover](greedy-set-cover.md)
 
 ## The result is a cover from the family
 

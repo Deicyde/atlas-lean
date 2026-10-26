@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasPeriodOrbitLcm
 ---
 
-# Lucas Period Orbit Lcm
+# The orbit lcm $L(n)$
 
-`L(n) = lcm(π_U^0(n), π_U^1(n), …, π_U^ω(n)(n))`, equation (2.14). It is meaningful when
-`ω(n)` exists.
+**The orbit lcm $L(n)$.** For a Lucas sequence $U = U(P, Q)$ and a natural number $n$, let
+$\pi_U(m)$ be the period of $U$ modulo $m$, with iterates $\pi_U^i$ and $\pi_U^0(n) = n$, and let
+$\omega(n)$ be the orbit index of $n$ (the least step at which the period orbit of $n$ closes, or
+$0$ if there is none). Then $L(n)$ is defined by
+
+$$L(n) = \operatorname{lcm}\bigl(\pi_U^0(n), \pi_U^1(n), \ldots, \pi_U^{\omega(n)}(n)\bigr).$$
+
+It is meaningful when $\omega(n)$ exists.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Period Orbit Index](lucas-period-orbit-index.md)
-- [Lucas UPeriod](lucas-uperiod.md)
+- [The orbit index $\omega(n)$](lucas-period-orbit-index.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
 
 ## Sources
 

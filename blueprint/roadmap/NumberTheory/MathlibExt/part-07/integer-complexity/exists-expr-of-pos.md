@@ -7,16 +7,17 @@ proof: formalized
 lean: IntegerComplexity.exists_expr_of_pos
 ---
 
-# Exists expr of pos
+# Every positive integer is the value of an expression
 
-Existence of representing expression for every positive natural.
-   Source C2/C4 existence side.
+**Every positive integer is the value of an expression.** For every natural number
+$n > 0$ there is an expression whose value is $n$.
 
 ## Depends on
 
-- [Expr](expr.md)
-- [Eval](eval.md)
+- [Expressions built from one, addition and multiplication](expr.md)
+- [Value of an expression](eval.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IntegerComplexity](../../../../../sources/v2/MathlibExt.md)
+- C2/C4 existence side.

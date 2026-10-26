@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasPeriodOrbitIndex
 ---
 
-# Lucas Period Orbit Index
+# The orbit index $\omega(n)$
 
-The index `ω(n)`: the least `k` with `LucasPeriodOrbitCloses params n k` (`0` when no such
-`k` exists).
+**The orbit index $\omega(n)$.** For a Lucas sequence $U = U(P, Q)$ and a natural number $n$,
+$\omega(n)$ is the least natural number $k$ such that the period orbit of $n$ closes at step $k$,
+and $\omega(n) = 0$ when there is no such $k$. Here $\pi_U(m)$ is the period of $U$ modulo $m$,
+$\pi_U^i$ is its $i$-th iterate with $\pi_U^0(n) = n$, and the orbit of $n$ closes at step $k$
+when $\pi_U^i(n)$ is coprime to $Q$ for all $i \le k$ and $\pi_U^{k+1}(n) = \pi_U^j(n)$ for some
+$j \le k$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
+- [Closing of the period orbit](lucas-period-orbit-closes.md)
 
 ## Sources
 

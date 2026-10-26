@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.balancingNum_concatThreeRepdigits
 ---
 
-# Balancing Num concat Three Repdigits
+# Balancing numbers that are concatenations of three repdigits
 
-The only balancing numbers that are concatenations of three repdigits are `204` and `1189`.
+**Balancing numbers that are concatenations of three repdigits.** For every natural number
+$k$, if the balancing number $B_k$ is a concatenation of three repdigits, then $B_k = 204$ or
+$B_k = 1189$.
 
 ## Depends on
 
-- [Is Concat Three Repdigits](is-concat-three-repdigits.md)
-- [Balancing Num](balancing-num.md)
+- [Concatenations of three decimal repdigits](is-concat-three-repdigits.md)
+- [Balancing numbers](balancing-num.md)
 
 ## Sources
 

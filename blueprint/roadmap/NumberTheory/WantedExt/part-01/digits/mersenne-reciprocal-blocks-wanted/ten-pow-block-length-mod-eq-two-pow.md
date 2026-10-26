@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ten_pow_blockLength_modEq_two_pow
 ---
 
-# Ten pow block Length mod Eq two pow
+# The block-length power of ten is a power of two modulo the Mersenne prime
 
-Proposition 1: let `2^p - 1` be prime and let `p` divide the period `L` of `1/(2^p - 1)`;
-with blocks of length `ℓ = L/p`, `10^ℓ ≡ 2^r (mod 2^p - 1)` for some `r ∈ {1, …, p - 1}`.
+**The block-length power of ten is a power of two modulo the Mersenne prime.** Let $p$ be a
+natural number such that $M = 2^p - 1$ is prime, let $L$ be the multiplicative order of $10$ modulo
+$M$ (the period of the decimal expansion of $1/M$), and suppose that $p$ divides $L$. Then there is
+a natural number $r$ with $1 \le r \le p - 1$ such that $10^{L/p} \equiv 2^r \pmod{M}$.
 
 ## Depends on
 

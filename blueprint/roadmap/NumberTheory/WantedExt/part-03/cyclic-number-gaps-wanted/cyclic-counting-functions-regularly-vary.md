@@ -14,7 +14,7 @@ numbers are regularly varying with index `1`, i.e. `F(λx)/F(x) → λ` as `x �
 
 ## Depends on
 
-- [Is Cyclic Number](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
+- [Cyclic numbers](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

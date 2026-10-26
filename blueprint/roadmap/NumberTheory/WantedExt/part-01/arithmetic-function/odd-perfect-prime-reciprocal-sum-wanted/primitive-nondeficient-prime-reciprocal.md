@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.primitiveNondeficient_primeReciprocalSum_ge
 ---
 
-# Primitive Nondeficient prime Reciprocal Sum ge
+# Lower bound on the prime reciprocal sum of a primitive non-deficient number
 
-If `n` is primitive non-deficient with least prime factor `p₁` and surplus
-`S = H(n) - 2`, then `T(n) ≥ log 2 - 25/(64 p₁) + S/2 - S²/4`.
+**Lower bound on the prime reciprocal sum of a primitive non-deficient number.** Let $n$ be a
+primitive non-deficient number with least prime factor $p_1$, let $T(n) = \sum_{p \mid n} 1/p$
+and $H(n) = \prod_{p \mid n} p/(p-1)$, with the sum and product over the primes $p$ dividing $n$,
+and let $S = H(n) - 2$ be the surplus of $n$. Then
+$T(n) \ge \log 2 - \frac{25}{64 p_1} + \frac{S}{2} - \frac{S^2}{4}$.
 
 ## Depends on
 

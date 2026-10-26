@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_type_three_three_cyclic
 ---
 
-# Ecsd type three three cyclic
+# Cyclic vertices of $G(-2n + 1, -2n + a)$ and their residues when $a \equiv 2 \pmod 3$
 
-For `a ∈ ℤ` even with `a ≡ 2 (mod 3)`, every `m` in the range of Theorem 12 is a
-cyclic vertex of `G(-2n + 1, -2n + a)`; every class modulo `|a - 1|` has a cyclic
-representative, which is unique except for the smallest and largest cyclic vertices,
-which are congruent modulo `|a - 1|` and form a 2-cycle.
+**Cyclic vertices of $G(-2n + 1, -2n + a)$ and their residues when $a \equiv 2 \pmod 3$.** Let
+$a$ be an even integer with $a \equiv 2 \pmod 3$, and call an integer $m$ cyclic if the digraph
+$G(-2n + 1, -2n + a)$ on $\mathbb{Z}$, with an edge $x \to -2x + 1$ and an edge $x \to -2x + a$
+for every integer $x$, has a directed walk of positive length from $m$ back to $m$. Then: if
+$a \ge 2$, every integer $m$ with $-(a - 1)/3 < m < 2a/3$ is cyclic; if $a \le -2$, every integer
+$m$ with $-2(|a| + 1)/3 < m < (|a| + 3)/3$ is cyclic; every residue class modulo $|a - 1|$
+contains a cyclic integer; and there are a least cyclic integer $\ell$ and a greatest cyclic
+integer $h$ such that $\ell \equiv h \pmod{|a - 1|}$, the list $(\ell, h)$ is a cycle, and any
+two distinct cyclic integers that are congruent modulo $|a - 1|$ are $\ell$ and $h$.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

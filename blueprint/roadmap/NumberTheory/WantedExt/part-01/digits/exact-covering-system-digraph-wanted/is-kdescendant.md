@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsKDescendant
 ---
 
-# Is KDescendant
+# $k$-descendants in a digraph on the integers
 
-`IsKDescendant R k m n`: `n` is a `k`-descendant of `m` in the digraph `R`, i.e.
-there is a directed walk of exactly `k` edges from `m` to `n`.
+**$k$-descendants in a digraph on the integers.** Let $R$ be a digraph on $\mathbb{Z}$, let
+$k \in \mathbb{N}$ and let $m, n \in \mathbb{Z}$. Then $n$ is a $k$-descendant of $m$ in $R$ when
+there is a directed walk of exactly $k$ edges from $m$ to $n$, that is, integers
+$m = x_0, x_1, \dots, x_k = n$ such that $R$ has an edge $x_{i-1} \to x_i$ for every
+$1 \le i \le k$.
 
 ## Depends on
 

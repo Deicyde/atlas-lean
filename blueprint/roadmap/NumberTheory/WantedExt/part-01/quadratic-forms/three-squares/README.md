@@ -5,6 +5,6 @@ navigation: module
 
 # Three Squares
 
-- [Hurwitz Class Number](hurwitz-class-number.md)
-- [Three Square Representation Count eq twelve mul hurwitz Class Number four n](three-square-representation-count-eq-twe.md)
-- [Three Square Representation Count eq twenty four mul hurwitz Class Number](three-square-representation-count-eq-twe-2.md)
+- [Hurwitz class number](hurwitz-class-number.md)
+- [Gauss's three-square formula, residues 1, 2, 5, 6 modulo 8](three-square-representation-count-eq-twe.md)
+- [Gauss's three-square formula, residue 3 modulo 8](three-square-representation-count-eq-twe-2.md)

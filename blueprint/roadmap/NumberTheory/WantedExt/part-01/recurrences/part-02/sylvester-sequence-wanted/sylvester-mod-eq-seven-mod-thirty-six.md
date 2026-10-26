@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_modEq_seven_mod_thirty_six
 ---
 
-# Proposition 1, congruence (6)
+# Sylvester numbers modulo 36
 
-**Proposition 1, congruence (6)**: `S_n ≡ 7 (mod 36)` for
-`n ≥ 2`.
+**Sylvester numbers modulo 36.** Let $(S_n)_{n \ge 0}$ be the Sylvester sequence,
+$S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $n \ge 2$, $S_n \equiv 7 \pmod{36}$.
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

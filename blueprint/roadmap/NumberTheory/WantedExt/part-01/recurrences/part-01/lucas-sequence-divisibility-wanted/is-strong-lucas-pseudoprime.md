@@ -5,20 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.IsStrongLucasPseudoprime
 ---
 
-# Is Strong Lucas Pseudoprime
+# Strong Lucas pseudoprimes
 
-Strong Lucas pseudoprime: odd composite `N`, `gcd(N, QD) = 1`, `N - (D/N) = 2^s d` with `d`
-odd, and `U_d ≡ 0` or `V_{2^r d} ≡ 0 (mod N)` for some `0 ≤ r < s`.
+**Strong Lucas pseudoprimes.** Let $P, Q$ be integers with $Q \neq 0$, let $U_n$ and $V_n$ be
+the Lucas sequences of $(P, Q)$ and let $D = P^2 - 4Q$. A natural number $N$ is a strong Lucas
+pseudoprime with parameters $P, Q$ if $N$ is odd and composite, $\gcd(N, QD) = 1$, and, writing
+$N - (D/N) = 2^s d$ with $d$ odd, where $(D/N)$ is the Jacobi symbol, either $N \mid U_d$ or
+$N \mid V_{2^r d}$ for some $r$ with $0 \le r < s$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Index of the Lucas pseudoprime congruences](lucas-pseudoprime-index.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

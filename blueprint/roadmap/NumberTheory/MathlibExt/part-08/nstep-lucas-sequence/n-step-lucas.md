@@ -6,14 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.nStepLucas
 ---
 
-# N Step Lucas
+# n-step Lucas numbers
 
-`n`-step Lucas sequence (source `jis_1628603e2683fb05481e5bfb`, concept
-`jis_sem_4e0294575601a2b8a5f0d3d7`): for `n ≥ 1`, `nStepLucas n m = 2 ^ m - 1`
-for `1 ≤ m ≤ n` and `nStepLucas n m` is the sum of the `n` preceding values for
-`m ≥ n + 1`; by convention `nStepLucas 0 m = 0` for all `m`, and
-`nStepLucas n 0 = 0` as the totalization at `m = 0` outside the source domain
-`m ≥ 1`.
+**n-step Lucas numbers.** For natural numbers $n \ge 1$ and $m$, the $n$-step Lucas number
+$L^{(n)}_m$ is defined by $L^{(n)}_0 = 0$, $L^{(n)}_m = 2^m - 1$ for $1 \le m \le n$, and
+$L^{(n)}_m = \sum_{i=1}^{n} L^{(n)}_{m-i}$ for $m \ge n + 1$. For $n = 0$ we set
+$L^{(0)}_m = 0$ for every $m$.
+
+The source defines $L^{(n)}_m$ only for $m \ge 1$; the value $L^{(n)}_0 = 0$ is a convention.
 
 ## Depends on
 
@@ -21,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [N Step Lucas List](n-step-lucas-list.md)
+- [Finite prefixes of the n-step Lucas numbers](n-step-lucas-list.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NStepLucasSequence](../../../../../sources/v2/MathlibExt.md)
+- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex> (source `jis_1628603e2683fb05481e5bfb`, concept `jis_sem_4e0294575601a2b8a5f0d3d7`).

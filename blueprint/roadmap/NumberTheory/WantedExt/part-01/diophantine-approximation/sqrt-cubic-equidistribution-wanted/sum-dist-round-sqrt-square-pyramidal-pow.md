@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_dist_round_sqrt_squarePyramidal_pow
 ---
 
-# Sum dist round sqrt square Pyramidal pow
+# Power sums of the distance from the square root of a square pyramidal number to the nearest integer
 
-For every positive integer `k` and real `t ≥ 1`,
-`G_k(t) = ∑_{1 ≤ n ≤ t} ‖√P_n‖^k = μ_k t + O_k(t^{3/4})`, where `‖x‖ = |x - round x|` and
-`μ_k = 1/(2^k (k+1))`.
+**Power sums of the distance from the square root of a square pyramidal number to the nearest
+integer.** Let $P_n$ be the $n$-th square pyramidal number and write
+$\|x\| = |x - \operatorname{round}(x)|$ for the distance from a real $x$ to the nearest integer.
+For every positive integer $k$ there is a real constant $C_k$ such that for every real $t \ge 1$,
 
-The source's `h(n) = √(n(n+1)(2n+1)/6)` is `√P_n`; `μ_k` is written as its value.
+$$\Bigl|\sum_{1 \le n \le t} \|\sqrt{P_n}\|^k - \frac{t}{2^k (k + 1)}\Bigr| \le C_k t^{3/4},$$
+
+that is, with $\mu_k = 1/(2^k (k + 1))$ and $G_k(t) = \sum_{1 \le n \le t} \|\sqrt{P_n}\|^k$,
+one has $G_k(t) = \mu_k t + O_k(t^{3/4})$.
+
+The source writes $h(n) = \sqrt{n(n+1)(2n+1)/6}$, which is $\sqrt{P_n}$.
 
 ## Depends on
 
-- [Square Pyramidal Number](square-pyramidal-number.md)
+- [Square pyramidal number](square-pyramidal-number.md)
 
 ## Sources
 

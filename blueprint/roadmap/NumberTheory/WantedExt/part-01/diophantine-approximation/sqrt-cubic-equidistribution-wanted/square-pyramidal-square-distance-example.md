@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.squarePyramidalSquareDistance_examples
 ---
 
-# Square Pyramidal Square Distance examples
+# Small square pyramidal numbers and their distances to squares
 
-`P_1, …, P_4 = 1, 5, 14, 30`, `a_2 = 1` (`P_2 = 5`, nearest square `4`), and
-`P_24 = 4900 = 70²`, so `a_24 = 0` (the cannonball solution).
+**Small square pyramidal numbers and their distances to squares.** Let $P_n$ be the $n$-th
+square pyramidal number and $a_n$ the distance from $P_n$ to the nearest square. Then
+$P_1, P_2, P_3, P_4$ are $1, 5, 14, 30$; $a_2 = 1$ (since $P_2 = 5$ and the nearest square is
+$4$); $P_{24} = 4900 = 70^2$; and $a_{24} = 0$ (the cannonball solution).
 
 ## Depends on
 
-- [Square Pyramidal Number](square-pyramidal-number.md)
-- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
+- [Square pyramidal number](square-pyramidal-number.md)
+- [Distance from a square pyramidal number to the nearest square](square-pyramidal-square-distance.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.hoeySloaneTransition_four_ten
 ---
 
-# Hoey Sloane Transition four ten
+# Two multi-edges of the $(4, 10)$-Hoey–Sloane multigraph
 
-Characteristic values in the `(4, 10)`-Hoey-Sloane multigraph: the label `(2, 8)` sits
-on the multi-edge `0 → 3` and `(1, 7)` on the loop `3 → 3`.
+**Two multi-edges of the $(4, 10)$-Hoey–Sloane multigraph.** In the
+$(4, 10)$-Hoey–Sloane multigraph the label $(2, 8)$ sits on the multi-edge from state $0$
+to state $3$, and the label $(1, 7)$ sits on the loop at state $3$: the Hoey–Sloane
+transition sends $(2, 8)$ to $(0, 3)$ and $(1, 7)$ to $(3, 3)$.
 
 ## Depends on
 
-- [Hoey Sloane Transition](hoey-sloane-transition.md)
+- [Hoey–Sloane transition of a digit pair](hoey-sloane-transition.md)
 
 ## Sources
 

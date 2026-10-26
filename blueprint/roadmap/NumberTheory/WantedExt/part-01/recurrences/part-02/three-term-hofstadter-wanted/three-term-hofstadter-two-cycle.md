@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_twoCycle
 ---
 
-# Three Term Hofstadter two Cycle
+# Two-cycle lemma for the three-term Hofstadter-like recurrence
 
-Two-cycle lemma. Let `K ≥ 1` and `M ≥ K + 5`. For arbitrary integers `a_1, …, a_K`, the
-padded sequence with initial conditions `⟨0̄; a_1, …, a_K, 2, M, 2⟩` satisfies
-`B(K+2k+1) = 2` for all `k ≥ 0` and `B(K+2k) = 2^(k-1) M` for all `k ≥ 1` (forever).
+**Two-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$ be a natural
+number, let $M$ be an integer with $M \ge K + 5$, let $a_1, \dots, a_K$ be arbitrary integers,
+and let $B$ be the padded three-term Hofstadter-like sequence with initial conditions
+$a_1, \dots, a_K, 2, M, 2$. Then for every natural number $k$ the term $B(K + 2k + 1)$ is defined
+and equals $2$, and for every $k \ge 1$ the term $B(K + 2k)$ is defined and equals $2^{k-1} M$.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

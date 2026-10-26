@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_two_two_sub_cycles
 ---
 
-# Ecsd two two sub cycles
+# Cycles of the digraph $G(2n, 2n - a)$
 
-Cycles of the Type 1 ECSD `G(2n, 2n - a)`, `a ∈ ℕ` odd: (i) the only loops are at
-`0` and `a`; (ii) `m` is a cyclic vertex iff `0 ≤ m ≤ a`; (iii) `C = (2ᵏ mod a)` for
-`0 ≤ k < ord(2, a)` is a cycle, every cocycle `bC = (b2ᵏ mod a)` for `1 ≤ b < a`, of
-length `ord(2, a / gcd(a, b))`, is a cycle, and every cycle of length greater than 1 is
-a rotation of such a cocycle; (iv) for `a = t a'`, `C` is a cycle of `G(2n, 2n - a')`
-iff `tC` is a cycle of `G(2n, 2n - a)` (the paper's hypothesis that `a'` is odd follows
-from `a` odd and is dropped). Residues `x mod a` are taken in `[0, a - 1]`.
+**Cycles of the digraph $G(2n, 2n - a)$.** For an integer $b$ write $G_b$ for the digraph
+$G(2n, 2n - b)$ on $\mathbb{Z}$, with an edge $m \to 2m$ and an edge $m \to 2m - b$ for every
+integer $m$. Let $a$ be an odd natural number, write $x \bmod a$ for the residue of $x$ in
+$\{0, \dots, a - 1\}$, and write $\operatorname{ord}(2, q)$ for the multiplicative order of $2$
+modulo $q$. Then (i) $G_a$ has a loop at $m$ if and only if $m = 0$ or $m = a$; (ii) $G_a$ has a
+directed walk of positive length from $m$ back to $m$ if and only if $0 \le m \le a$; (iii) the
+list $(2^k \bmod a)_{0 \le k < \operatorname{ord}(2, a)}$ is a cycle of $G_a$; for every integer
+$b$ with $1 \le b < a$ the list $(b 2^k \bmod a)_{0 \le k < \operatorname{ord}(2, a/\gcd(a, b))}$
+is a cycle of $G_a$; and every cycle of $G_a$ with more than one vertex is a rotation of one of
+these lists for some integer $b$ with $1 \le b < a$; (iv) for all natural numbers $t$ and $a'$
+with $a = t a'$, a list $(c_1, \dots, c_s)$ of integers is a cycle of $G_{a'}$ if and only if
+$(t c_1, \dots, t c_s)$ is a cycle of $G_a$.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

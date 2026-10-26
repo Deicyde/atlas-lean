@@ -5,5 +5,5 @@ navigation: module
 
 # KMahler Function
 
-- [Mahler Subst](mahler-subst.md)
-- [Is KMahler Function](is-kmahler-function.md)
+- [Mahler substitution](mahler-subst.md)
+- [$k$-Mahler functions](is-kmahler-function.md)

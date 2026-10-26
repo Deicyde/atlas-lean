@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.fqNorm
 ---
 
-# Fq Norm
+# Norm of a polynomial over a finite field
 
-The norm `|f| = q ^ deg f` of a nonzero `f ∈ 𝔽_q[T]`, with `|0| = 0`.
+**Norm of a polynomial over a finite field.** Let $F$ be a finite field with $q$ elements. The
+norm of a nonzero $f \in F[T]$ is the real number $|f| = q^{\deg f}$, and $|0| = 0$.
 
 ## Depends on
 

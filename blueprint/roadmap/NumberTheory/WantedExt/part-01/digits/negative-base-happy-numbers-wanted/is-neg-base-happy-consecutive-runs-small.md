@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseHappy_consecutive_runs_small
 ---
 
-# Is Neg Base Happy consecutive runs small
+# Arbitrarily long runs of consecutive happy numbers in bases $-4$, $-6$, $-8$, $-10$
 
-Grundman–Harris, part (3): for `b ∈ {-4, -6, -8, -10}` there are arbitrarily long finite runs
-of consecutive `b`-happy numbers.
+**Arbitrarily long runs of consecutive happy numbers in bases $-4$, $-6$, $-8$, $-10$.** Let
+$b \in \{-4, -6, -8, -10\}$. For every natural number $N$ there is an integer $n$ such that
+$n + i$ is $b$-happy for every $0 \le i < N$.
+
+This is part (3) of the Grundman–Harris theorem.
 
 ## Depends on
 
-- [Is Neg Base Happy](is-neg-base-happy.md)
+- [Happy integers in a negative base](is-neg-base-happy.md)
 
 ## Sources
 

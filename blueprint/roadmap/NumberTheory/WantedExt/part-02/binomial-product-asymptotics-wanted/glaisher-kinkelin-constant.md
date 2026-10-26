@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.glaisherKinkelinConstant
 ---
 
-# Glaisher Kinkelin Constant
+# Glaisher–Kinkelin constant
 
-The Glaisher–Kinkelin constant `A`, defined by `log A = 1/12 - ζ'(-1)`.
+**Glaisher–Kinkelin constant.** The Glaisher–Kinkelin constant is the real number
+
+$$A = \exp\left(\frac{1}{12} - \operatorname{Re} \zeta'(-1)\right),$$
+
+where $\zeta'$ is the complex derivative of the Riemann zeta function $\zeta$. Since $\zeta'(-1)$
+is real, $\log A = \frac{1}{12} - \zeta'(-1)$.
 
 ## Depends on
 

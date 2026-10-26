@@ -13,7 +13,7 @@ with `m = p_{k+1}# / p_j` and `C(k)`, `B(k)` as in
 
 ## Depends on
 
-- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

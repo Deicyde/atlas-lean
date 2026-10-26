@@ -5,23 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.twoFactor_isDCarmichael
 ---
 
-# Two Factor is DCarmichael
+# Two-prime-factor $D$-Carmichael numbers
 
-Two-prime-factor `D`-Carmichael numbers: if `p < q` are primes with `pq` `D`-Carmichael
-(`D ≡ 0, 1 (mod 4)`), then `q = p + 2`, `(p + Dx)(q + Dx)` is a universal `D`-form of
-signature `(-1, 1)` whose prime-factor values are primary `D`-Carmichael numbers, and the prime
-`k`-tuples conjecture gives infinitely many primary `D`-Carmichael numbers of signature
-`(-1, 1)`. Moreover the two-prime-factor `5`-Carmichael numbers are exactly the products
-`(10x + 7)(10x + 9)` with `x ≥ 1` and both factors prime. The prime `k`-tuples conjecture (the
-paper's Conjecture 1) is the hypothesis `hk`: for linear
-forms `aᵢ x + bᵢ` with `aᵢ ≥ 1` whose product has no fixed prime divisor, infinitely many `x`
-make every form a (positive) prime.
+**Two-prime-factor $D$-Carmichael numbers.** Let $D$ be an integer and assume the prime
+$k$-tuples conjecture (the paper's Conjecture 1) in the following form: for every finite list
+of linear forms $a_i x + b_i$ with integers $a_i \ge 1$ and $b_i$ such that for every prime
+$\ell$ there is an integer $x$ with $\ell \nmid \prod_i (a_i x + b_i)$, there are infinitely
+many natural numbers $x$ at which every $a_i x + b_i$ is a positive prime.
+Then, first, for all primes $p < q$ such that $pq$ is a $D$-Carmichael number: the product of
+the linear factors $Dx + p$ and $Dx + q$ is a universal $D$-form with respect to the signature
+$(-1, 1)$; $q = p + 2$; for every integer $x$ at which $p + Dx$ and $q + Dx$ are both positive
+primes, their product is a primary $D$-Carmichael number; and there are infinitely many
+primary $D$-Carmichael numbers $n$ whose Jacobi symbols $(D \mid \cdot)$ at the prime factors
+of $n$, listed in increasing order with multiplicity, are $-1, 1$. Second, a natural number
+$n$ is a $5$-Carmichael number with exactly two prime factors counted with multiplicity if and
+only if $n = (10x + 7)(10x + 9)$ for some natural number $x \ge 1$ with $10x + 7$ and
+$10x + 9$ both prime.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
-- [Is Primary DCarmichael](is-primary-dcarmichael.md)
-- [Is Universal Linear DForm](is-universal-linear-dform.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
+- [Primary $D$-Carmichael number](is-primary-dcarmichael.md)
+- [Universal $D$-forms](is-universal-linear-dform.md)
 
 ## Sources
 

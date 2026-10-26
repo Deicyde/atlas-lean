@@ -13,9 +13,9 @@ the sum of `μ(r)` over monic `r` with `r ^ κ = f`.
 
 ## Depends on
 
-- [Is BFree](is-bfree.md)
-- [Kappa Pow](kappa-pow.md)
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
+- [The $\kappa$-power of a polynomial](kappa-pow.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

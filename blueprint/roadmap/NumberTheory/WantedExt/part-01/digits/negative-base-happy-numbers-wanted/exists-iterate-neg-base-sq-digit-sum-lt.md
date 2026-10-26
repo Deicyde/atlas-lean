@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_iterate_negBaseSqDigitSum_lt
 ---
 
-# Exists iterate neg Base Sq Digit Sum lt
+# A common iterate of the negative-base digit-square map falls below twice the squared base
 
-For `b ≤ -7` and each finite set `A` of positive integers there is `k ≥ 1` with
-`S_{2,b}^k(a) < 2b²` for every `a ∈ A`.
+**A common iterate of the negative-base digit-square map falls below twice the squared base.**
+Let $b \le -7$ be an integer, let $S_{2,b}$ be the map sending an integer to the sum of the
+squares of its base-$b$ digits, and write $S_{2,b}^k$ for its $k$-fold iterate. For every finite
+set $A$ of positive integers there is an integer $k \ge 1$ such that $S_{2,b}^k(a) < 2b^2$ for
+every $a \in A$.
 
 ## Depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Sources
 

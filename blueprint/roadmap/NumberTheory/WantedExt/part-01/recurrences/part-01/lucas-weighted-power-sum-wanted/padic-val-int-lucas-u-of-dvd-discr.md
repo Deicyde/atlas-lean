@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.padicValInt_lucasU_of_dvd_discr
 ---
 
-# Padic Val Int lucas U of dvd discr
+# Valuation of $U_n$ at a prime dividing the discriminant
 
-Lemma 2.6 (Sanna): let `x ≥ 1`, `|y + 1| ≤ x`, `x, y` coprime, and `ℓ` a prime dividing
-`D = x² - 4y`. For `n ≥ 1`, `ν_ℓ(U_n) = ν_ℓ(n) + ν_ℓ(U_ℓ) - 1` if `ℓ ∣ n` and `ν_ℓ(U_n) = 0`
-otherwise; moreover `ν_ℓ(U_ℓ) = 1` if `ℓ ≥ 5`. CORRECTED READING: coprimality of `x, y` (Sanna's
-standing hypothesis) is added; without it `x = 6, y = 3`, `ℓ = 3 ∣ D = 24` has
-`ν₃(U_2) = ν₃(6) = 1 ≠ 0`.
+**Valuation of $U_n$ at a prime dividing the discriminant.** Let $x \ge 1$ and $y \ne 0$ be
+coprime integers with $|y + 1| \le x$, let $(U_m)$ be the Lucas sequence with parameters $(x, y)$,
+given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$, and let $\ell$ be a prime
+dividing $D = x^2 - 4y$. Write $\nu_\ell$ for the $\ell$-adic valuation of an integer, with
+$\nu_\ell(0) = 0$. Then for every $n \ge 1$, $\nu_\ell(U_n) = \nu_\ell(n) + \nu_\ell(U_\ell) - 1$
+if $\ell \mid n$, and $\nu_\ell(U_n) = 0$ if $\ell \nmid n$. Moreover, $\nu_\ell(U_\ell) = 1$ if
+$\ell \ge 5$.
+
+Coprimality of $x$ and $y$ (Sanna's standing hypothesis) is added to the statement of the paper:
+without it, $x = 6$, $y = 3$ and $\ell = 3 \mid D = 24$ give $\nu_3(U_2) = \nu_3(6) = 1 \ne 0$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

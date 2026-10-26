@@ -6,23 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.isOddGreedyChoice_iff
 ---
 
-# Is Odd Greedy Choice iff
+# Characterization of the odd greedy choice
 
-`d` is the odd greedy choice at `r` iff `r` is positive and `d` is
-the least positive odd denominator whose unit fraction does not
-exceed `r`.
+**Characterization of the odd greedy choice.** A natural number $d$ is the odd greedy choice
+at a rational number $r$ if and only if $r > 0$ and $d$ is the least element of the set of
+positive odd natural numbers $e$ with $1/e \le r$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Proof depends on
 
-- [Inv le](inv-le.md)
-- [Min](min.md)
-- [Odd](odd.md)
-- [Pos d](pos-d.md)
-- [Pos r](pos-r.md)
+- [The odd greedy unit fraction does not exceed the remainder](inv-le.md)
+- [The odd greedy choice is minimal](min.md)
+- [The odd greedy choice is odd](odd.md)
+- [The odd greedy choice is positive](pos-d.md)
+- [The odd greedy choice needs a positive remainder](pos-r.md)
 
 ## Sources
 

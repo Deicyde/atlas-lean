@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.subcollectionCount_eval_eq_eval_bar
 ---
 
-# Subcollection Count eval eq eval bar
+# Duality formula
 
-Duality formula: for Zeckendorf collections `E ⊆ Ẽ` with fundamental sequences `H` and `H̃`,
-and nonzero `μ ∈ Ẽ` with `μ̌` the largest element of `E` below `μ` and `μ̄` its immediate
-successor in `E`, `z(∑ μ H̃) = ∑ μ̄ H`.
+**Duality formula.** Let $E \subseteq \tilde E$ be Zeckendorf collections. Let $H$ and
+$\tilde H$ be strictly increasing sequences of positive integers such that
+$\mu \mapsto \sum_k \mu_k H_k$ is a bijection from $E$ onto $\mathbb N$ and
+$\mu \mapsto \sum_k \mu_k \tilde H_k$ is a bijection from $\tilde E$ onto $\mathbb N$. For real
+$x$, let $z(x)$ be the number of natural numbers $n < x$ of the form $n = \sum_k \nu_k \tilde H_k$
+with $\nu \in E$. Let $\mu \in \tilde E$ be nonzero, let $\check\mu$ be the immediate predecessor
+of $\mu$ in $E$ (the largest element of $E$ below $\mu$ in the ascending lexicographic order), and
+let $\bar\mu$ be the immediate successor of $\check\mu$ in $E$. Then
+$z\left(\sum_k \mu_k \tilde H_k\right) = \sum_k \bar\mu_k H_k$.
 
 ## Depends on
 
-- [Is Immediate Predecessor](is-immediate-predecessor.md)
-- [Is Immediate Successor](is-immediate-successor.md)
-- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
-- [Subcollection Count](subcollection-count.md)
-- [Zeckendorf Eval](zeckendorf-eval.md)
+- [Immediate predecessor](is-immediate-predecessor.md)
+- [Immediate successor](is-immediate-successor.md)
+- [Zeckendorf collections](is-zeckendorf-collection.md)
+- [Counting function of a subcollection](subcollection-count.md)
+- [Evaluation of a coefficient function at an integer sequence](zeckendorf-eval.md)
 
 ## Sources
 

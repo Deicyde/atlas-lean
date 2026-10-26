@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_neg_two_descendant_modEq
 ---
 
-# Ecsd neg two descendant mod Eq
+# Descendants modulo the difference of offsets
 
-In `G(-2n + a₁, -2n + a₂)` every `k`-descendant of `m` is congruent to
-`(-2)ᵏm + a₁(1 - (-2)ᵏ)/3` modulo `|a₁ - a₂|` (the quotient is exact). Stated for all
-`a₁, a₂ ∈ ℤ`; the exact-covering condition is not needed.
+**Descendants modulo the difference of offsets.** Let $a_1, a_2, x, y$ be integers and
+$k \in \mathbb{N}$. If $y$ is a $k$-descendant of $x$ in $G(-2n + a_1, -2n + a_2)$, that is,
+the end of a directed walk of exactly $k$ edges from $x$, then
+
+$$y \equiv (-2)^k x + a_1 \cdot \frac{1 - (-2)^k}{3} \pmod{|a_1 - a_2|}.$$
+
+The quotient is an integer because $3$ divides $1 - (-2)^k$.
+
+The exact-covering condition on $a_1, a_2$ is not needed.
 
 ## Depends on
 
-- [Is KDescendant](is-kdescendant.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [$k$-descendants in a digraph on the integers](is-kdescendant.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

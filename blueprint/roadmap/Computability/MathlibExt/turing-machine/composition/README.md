@@ -41,7 +41,7 @@ navigation: module
 ## Output length is bounded by input length plus pushes
 
 - [Number of push instructions in a TM2 statement](pushes.md)
-- [Push Bound](push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](push-bound.md)
 
 ## Monotonicity of `Polynomial ℕ` evaluation
 

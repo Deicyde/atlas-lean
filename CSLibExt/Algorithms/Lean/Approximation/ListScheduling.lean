@@ -118,7 +118,10 @@ inspected. -/
 def listSchedule (m : ℕ) [NeZero m] (ps : List ℕ) : TimeM ℕ (Fin m → List ℕ) :=
   listScheduleScan (fun _ => 0) (fun _ => []) ps
 
-/-- LPT: sort the jobs into nonincreasing order with CSLib's `mergeSort`, then list-schedule. -/
+/-- **Longest processing time first (LPT).** Given $m \ge 1$ identical machines and a list of job
+processing times (natural numbers), LPT sorts the jobs into nonincreasing order by merge sort and
+then applies Graham's list scheduling on $m$ machines to the sorted list. The cost counted is the
+number of comparisons made by merge sort plus the cost of list scheduling, $m$ per job. -/
 def lpt (m : ℕ) [NeZero m] (ps : List ℕ) : TimeM ℕ (Fin m → List ℕ) := do
   let sorted ← mergeSort (ps.map OrderDual.toDual)
   listSchedule m (sorted.map OrderDual.ofDual)
@@ -446,8 +449,12 @@ theorem lpt_step_le [NeZero m] {ps P rest : List ℕ} {p : ℕ} (hps : ps = P ++
       omega
     omega
 
-/-- Graham (1969): LPT has makespan `C` with `3 * m * C ≤ (4 * m - 1) * M` for the makespan `M`
-of every schedule `τ` of the same jobs, i.e. `C ≤ (4/3 - 1/(3m)) M`. -/
+/-- **Graham's bound for LPT scheduling.** Let $m \ge 1$ and let $J$ be a list of natural numbers
+(job processing times). Let $C$ be the makespan of the schedule of $J$ on $m$ machines produced
+by the LPT algorithm, and let $M$ be the makespan of any schedule $\tau$ of $J$ on $m$ machines.
+Then $3mC \le (4m - 1)M$, that is, $C \le (4/3 - 1/(3m))M$.
+
+Source: Graham, "Bounds on multiprocessing timing anomalies", SIAM J. Appl. Math. 17 (1969). -/
 theorem lpt_approx [NeZero m] (ps : List ℕ) (τ : Fin m → List ℕ) (hτ : IsScheduleOf τ ps) :
     3 * m * makespan (lpt m ps).ret ≤ (4 * m - 1) * makespan τ := by
   set sorted := ((mergeSort (ps.map OrderDual.toDual)).ret).map OrderDual.ofDual

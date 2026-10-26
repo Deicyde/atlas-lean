@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.monicDivisorCount
 ---
 
-# Monic Divisor Count
+# The $h$-fold divisor function
 
-The `h`-divisor function `d_h(f) = #{(g_1, …, g_h) ∈ M^h : g_1 ⋯ g_h = f}`.
+**The $h$-fold divisor function.** Let $F$ be a field and $h$ a natural number. For
+$f \in F[T]$, $d_h(f)$ is the number of $h$-tuples $(g_1, \dots, g_h)$ of monic polynomials in
+$F[T]$ with $g_1 \cdots g_h = f$.
 
 ## Depends on
 

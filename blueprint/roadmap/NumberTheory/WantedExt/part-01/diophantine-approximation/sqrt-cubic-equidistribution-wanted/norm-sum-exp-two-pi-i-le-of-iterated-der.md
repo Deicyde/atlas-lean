@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.norm_sum_exp_two_pi_I_le_of_iteratedDeriv_two
 ---
 
-# Norm sum exp two pi I le of iterated Deriv two
+# Second-derivative test for exponential sums
 
-Second-derivative test for exponential sums: let `a < b` be integers and `f` a real `C²`
-function with `f'' ≥ ρ` on `[a, b]` or `f'' ≤ -ρ` on `[a, b]` for some `ρ > 0`. Then
-`|∑_{n=a}^{b} e(f(n))| ≤ (|f'(b) - f'(a)| + 2) (4/√ρ + 3)`, where `e(x) = exp(2πix)`. Here `f`
-is `C²` on all of `ℝ`; every `C²` function on `[a, b]` extends to one, so this loses nothing.
+**Second-derivative test for exponential sums.** Let $a < b$ be integers, let $\rho > 0$,
+and let $f : \mathbb{R} \to \mathbb{R}$ be twice continuously differentiable, with either
+$f''(t) \ge \rho$ for every $t \in [a, b]$ or $f''(t) \le -\rho$ for every $t \in [a, b]$. Then
+
+$$\Bigl|\sum_{n=a}^{b} e(f(n))\Bigr| \le \bigl(|f'(b) - f'(a)| + 2\bigr)
+\Bigl(\frac{4}{\sqrt{\rho}} + 3\Bigr),$$
+
+where $e(x) = e^{2\pi i x}$.
+
+Here $f$ is $C^2$ on all of $\mathbb{R}$; every $C^2$ function on $[a, b]$ extends to one, so
+this loses nothing.
 
 ## Depends on
 

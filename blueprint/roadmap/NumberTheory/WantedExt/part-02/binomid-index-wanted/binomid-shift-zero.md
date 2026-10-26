@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.binomidShift_zero
 ---
 
-# Binomid Shift zero
+# Shifting by zero places is the identity
 
-`σ^0` is the identity.
+**Shifting by zero places is the identity.** For every sequence $\eta$ of nonnegative
+integers, $\sigma^0(\eta) = \eta$, where $\sigma^l$ is the right shift that prepends $l$ zeros.
 
 ## Depends on
 
-- [Binomid Shift](binomid-shift.md)
+- [Right shift of a sequence](binomid-shift.md)
 
 ## Sources
 

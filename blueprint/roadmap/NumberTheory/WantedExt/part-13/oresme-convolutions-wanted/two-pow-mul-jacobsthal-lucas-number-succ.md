@@ -11,7 +11,7 @@ lean: MetaMathlibExt.two_pow_mul_jacobsthalLucasNumber_succ_modEq_nine
 
 ## Depends on
 
-- [Jacobsthal Lucas Number](../../../MathlibExt/part-07/jacobsthal-lucas-number.md)
+- [Jacobsthal–Lucas numbers](../../../MathlibExt/part-07/jacobsthal-lucas-number.md)
 
 ## Sources
 

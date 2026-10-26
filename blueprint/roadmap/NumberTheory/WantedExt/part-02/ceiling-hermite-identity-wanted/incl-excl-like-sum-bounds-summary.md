@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.inclExclLikeSum_bounds_summary
 ---
 
-# Incl Excl Like Sum bounds summary
+# Bounds for the four inclusion-exclusion-like sums
 
-Corollary 1: for `n ≥ 2`, `-2^{n-2} ≤ g_1 ≤ 2^{n-2} - 1`, `-2^{n-2} + 1 ≤ g_2 ≤ 2^{n-2}` and
-`-2^{n-2} ≤ g_3, g_4 ≤ 2^{n-2}`; at `x_k = 1/2`, `g_1 = -2^{n-2} = g_4` and `g_2 = 2^{n-2} = g_3`;
-at `x_k = 1/2 - 1/n²`, `g_1 = 2^{n-2} - 1 = -g_3 - 1`; at `x_k = 1/2 + 1/n²`,
-`g_2 = -2^{n-2} + 1 = -g_4 + 1`.
+**Bounds for the four inclusion-exclusion-like sums.** Let $n \ge 2$ and write $g_1$, $g_2$,
+$g_3$, $g_4$ for the inclusion-exclusion-like sums $g^{(F)}$ in $n$ real variables with $F$ the
+floor function $\lfloor y \rfloor$, the ceiling function $\lceil y \rceil$, the nearest-integer
+function $\lfloor y + 1/2 \rfloor$ (ties rounded up) and $\lceil y - 1/2 \rceil$ (ties rounded
+down), respectively. Then for every $x \in \mathbb{R}^n$,
+$-2^{n-2} \le g_1(x) \le 2^{n-2} - 1$, $-2^{n-2} + 1 \le g_2(x) \le 2^{n-2}$,
+$-2^{n-2} \le g_3(x) \le 2^{n-2}$ and $-2^{n-2} \le g_4(x) \le 2^{n-2}$. At the point with all
+coordinates $1/2$, $g_1 = g_4 = -2^{n-2}$ and $g_2 = g_3 = 2^{n-2}$. At the point with all
+coordinates $1/2 - 1/n^2$, $g_1 = 2^{n-2} - 1 = -g_3 - 1$. At the point with all coordinates
+$1/2 + 1/n^2$, $g_2 = -2^{n-2} + 1 = -g_4 + 1$.
 
 ## Depends on
 
-- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Inclusion-exclusion-like sum](incl-excl-like-sum.md)
 
 ## Sources
 

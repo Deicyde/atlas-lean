@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isBinomidIndex_iff_partialSum
 ---
 
-# Is Binomid Index iff partial Sum
+# Partial-sum characterization of binomid indices
 
-Lemma 1: with `s_n = e_1 + ⋯ + e_n`, `η` is a binomid index if and only if
-`s_n ≥ s_{n-k} + s_k` for `1 ≤ k < n`; and if `η` is the lex-minimal
-extension of its first `m` entries, then `s_n = max_{1 ≤ k < n} (s_{n-k} + s_k)`
-for all `n > m` (the maximum over the empty range, for `n = 1`, is `0`).
+**Partial-sum characterization of binomid indices.** Let $\eta = (e_1, e_2, \dots)$ be a
+sequence of nonnegative integers with partial sums $s_n = e_1 + \dots + e_n$ (so $s_0 = 0$).
+Then $\eta$ is a binomid index if and only if $s_{n-k} + s_k \le s_n$ for all $k$ and $n$ with
+$1 \le k < n$. Moreover, for every $m$, if $\eta$ is the lex-minimal extension of its first $m$
+entries, then for every $n > m$
+
+$$s_n = \max_{1 \le k < n} (s_{n-k} + s_k),$$
+
+where the maximum over the empty range (for $n = 1$) is taken to be $0$.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
-- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Binomid index](is-binomid-index.md)
+- [Lex-minimal extension](is-lex-minimal-extension-of.md)
 
 ## Sources
 

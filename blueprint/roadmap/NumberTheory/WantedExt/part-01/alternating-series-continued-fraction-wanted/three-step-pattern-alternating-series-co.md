@@ -7,16 +7,19 @@ lean: MetaMathlibExt.threeStepPattern_alternatingSeries_contFract
 
 # Three-step pattern as an alternating series
 
-**Three-step pattern as an alternating series**: for `β ≥ 0` and positive integers
-`ω_n`, with `q_n = threeStepPatternDen β ω n`, the series
-`x = ∑_{i ≥ 0} (-1)^i/(q_i q_{i+1})` converges and
-`x = [0; ω₀, 1, 1, ω₁ q₂^β, 1, 1, ω₂ q₅^β, …]`, i.e. `a₀ = 0`, `a₁ = ω₀`,
-`a_{3n+2} = a_{3n+3} = 1` and `a_{3n+4} = ω_{n+1} q_{3n+2}^β`. The paper's `β ∈ ℤ_{>0}` is
-relaxed to `β ≥ 0`; `a_k` is `(GenContFract.of x).partDens.get? (k - 1)`.
+**Three-step pattern as an alternating series.** Let $\beta$ be a natural number, let
+$(\omega_n)_{n \ge 0}$ be positive integers, and let $(q_n)_{n \ge 0}$ be the convergent
+denominators of the three-step pattern for $\beta$ and $(\omega_n)$. Then the series
+$\sum_{i \ge 0} (-1)^i / (q_i q_{i+1})$ converges absolutely, and its sum $x$ has continued
+fraction expansion $[a_0; a_1, a_2, \dots]$ with $a_0 = 0$, $a_1 = \omega_0$, and
+$a_{3n+2} = a_{3n+3} = 1$ and $a_{3n+4} = \omega_{n+1} q_{3n+2}^\beta$ for every $n \ge 0$; that is,
+$x = [0; \omega_0, 1, 1, \omega_1 q_2^\beta, 1, 1, \omega_2 q_5^\beta, \dots]$.
+
+The paper assumes $\beta \ge 1$; the statement here also allows $\beta = 0$.
 
 ## Depends on
 
-- [Three Step Pattern Den](three-step-pattern-den.md)
+- [Convergent denominators of the three-step pattern](three-step-pattern-den.md)
 
 ## Sources
 

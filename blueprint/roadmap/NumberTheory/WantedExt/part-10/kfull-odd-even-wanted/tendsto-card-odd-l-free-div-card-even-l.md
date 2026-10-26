@@ -14,8 +14,8 @@ and `E_{1,l}(x)` of odd and even `l`-free positive integers up to `x` (`[1, l]`-
 
 ## Depends on
 
-- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
-- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
+- [$k$-full numbers](../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [Power-free natural numbers](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

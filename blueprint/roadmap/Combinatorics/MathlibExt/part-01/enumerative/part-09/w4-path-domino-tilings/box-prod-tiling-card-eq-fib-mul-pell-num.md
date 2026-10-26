@@ -17,7 +17,7 @@ the $n$-th Pell number ($p_0 = 0$, $p_1 = 1$, $p_{k+2} = 2 p_{k+1} + p_k$).
 
 ## Depends on
 
-- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

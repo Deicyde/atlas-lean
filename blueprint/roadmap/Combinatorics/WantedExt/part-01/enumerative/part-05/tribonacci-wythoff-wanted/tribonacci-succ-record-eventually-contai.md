@@ -29,7 +29,7 @@ only indices $i$ with $T_{i+1} - \alpha T_i < 0$ (Proposition 4, part 1).
 ## Depends on
 
 - [Tribonacci representation](is-tribonacci-repr.md)
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 - [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources

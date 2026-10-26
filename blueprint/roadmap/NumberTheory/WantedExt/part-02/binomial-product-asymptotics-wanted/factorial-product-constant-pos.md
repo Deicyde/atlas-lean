@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.factorialProductConstant_pos
 ---
 
-# Factorial Product Constant pos
+# Positivity of the factorial-product constants
 
-`F_k > 0`.
+**Positivity of the factorial-product constants.** For every natural number $k$, the
+factorial-product constant $F_k$ is positive.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
 
 ## Proof depends on
 
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

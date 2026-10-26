@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.zeckendorfGenericExponent_spec
 ---
 
-# Zeckendorf Generic Exponent spec
+# The generic exponent satisfies its defining inequality
 
-When some positive integer satisfies the defining inequality, `p` does.
+**The generic exponent satisfies its defining inequality.** Let $Q$ and $\tilde Q$ be real
+sequences with first terms $\omega$ and $\tilde\omega$, put $\gamma = \log_{\tilde\omega} \omega$,
+and let $p$ be the generic exponent of $Q$ and $\tilde Q$. If some positive integer $q$ satisfies
+$\gamma \tilde\omega^{q-1} < \omega^q$, then $p$ is positive and
+$\gamma \tilde\omega^{p-1} < \omega^p$.
 
 ## Depends on
 
-- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
+- [The generic exponent](zeckendorf-generic-exponent.md)
 
 ## Sources
 

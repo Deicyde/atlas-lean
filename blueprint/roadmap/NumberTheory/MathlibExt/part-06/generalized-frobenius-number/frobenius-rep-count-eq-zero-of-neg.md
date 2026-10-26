@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.frobeniusRepCount_eq_zero_of_neg
 ---
 
-# Frobenius Rep Count eq zero of neg
+# Negative integers have no representations
 
-A negative integer has no representation.
+**Negative integers have no representations.** For all natural numbers $a_1, \dots, a_k$ and
+every integer $m < 0$, the representation count $d(m; a_1, \dots, a_k)$ is $0$.
 
 ## Depends on
 
-- [Frobenius Rep Count](frobenius-rep-count.md)
+- [Number of representations by a vector of generators](frobenius-rep-count.md)
 
 ## Sources
 

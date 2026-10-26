@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.IsLucasPseudoprime
 ---
 
-# Is Lucas Pseudoprime
+# Lucas pseudoprimes
 
-Lucas pseudoprime with parameters `P, Q`: a positive odd composite `N` with
-`gcd(N, QD) = 1` and `U_{N-(D/N)} ≡ 0 (mod N)`.
+**Lucas pseudoprimes.** Let $P, Q$ be integers with $Q \neq 0$, let $U_n$ be the Lucas
+sequence of $(P, Q)$ and let $D = P^2 - 4Q$. A natural number $N$ is a Lucas pseudoprime with
+parameters $P, Q$ if $N$ is odd and composite, $\gcd(N, QD) = 1$ and $N$ divides
+$U_{N - (D/N)}$, where $(D/N)$ is the Jacobi symbol.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Index of the Lucas pseudoprime congruences](lucas-pseudoprime-index.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

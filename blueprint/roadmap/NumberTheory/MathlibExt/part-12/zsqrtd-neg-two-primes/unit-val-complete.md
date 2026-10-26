@@ -6,17 +6,19 @@ proof: formalized
 lean: Zsqrtd.NegTwo.unitVal_complete
 ---
 
-# Unit Val complete
+# Every unit of ℤ(√−2) is enumerated
 
-Every unit is enumerated.
+**Every unit of ℤ[√−2] is enumerated.** Let $\varepsilon_0 = 1$ and $\varepsilon_1 = -1$ be the
+enumeration of the units of $\mathbb{Z}[\sqrt{-2}]$. Every unit $u$ of $\mathbb{Z}[\sqrt{-2}]$
+equals $\varepsilon_i$ for some $i \in \{0, 1\}$.
 
 ## Depends on
 
-- [Unit Val](unit-val.md)
+- [Enumeration of the units of ℤ(√−2)](unit-val.md)
 
 ## Proof depends on
 
-- [Zsqrtd neg two is Unit iff](zsqrtd-neg-two-is-unit-iff.md)
+- [Units of ℤ(√−2)](zsqrtd-neg-two-is-unit-iff.md)
 
 ## Sources
 

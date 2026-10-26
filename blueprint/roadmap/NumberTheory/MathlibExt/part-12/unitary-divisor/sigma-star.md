@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.sigmaStar
 ---
 
-# Sigma Star
+# Sum of unitary divisors
 
-The sum of the unitary divisors of `n`, conventionally denoted `σ⋆(n)`.
+**Sum of unitary divisors.** For a natural number $n$, $\sigma^*(n)$ denotes the sum of the
+unitary divisors of $n$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unitary Divisors](unitary-divisors.md)
+- [Unitary divisors](unitary-divisors.md)
 
 ## Sources
 

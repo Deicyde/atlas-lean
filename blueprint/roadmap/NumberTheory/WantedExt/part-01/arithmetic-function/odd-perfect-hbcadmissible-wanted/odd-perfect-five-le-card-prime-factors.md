@@ -5,11 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_five_le_card_primeFactors
 ---
 
-# Odd Perfect five le card prime Factors
+# Sylvester's bound on the number of prime divisors of an odd perfect number
 
-Sylvester (1888), quoted as Lemma 1 (ii): an odd perfect number has at least five distinct
-prime divisors. Odd perfect numbers are `Odd N ∧ N.Perfect`; item (i) of the lemma (Euler's form)
-is the proved `MetaMathlibExt.euler_odd_perfect_form`.
+**Sylvester's bound on the number of prime divisors of an odd perfect number.** Every odd
+perfect number has at least five distinct prime divisors.
 
 ## Depends on
 

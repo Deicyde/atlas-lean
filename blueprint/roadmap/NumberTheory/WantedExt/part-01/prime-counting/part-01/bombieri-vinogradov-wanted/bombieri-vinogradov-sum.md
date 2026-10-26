@@ -6,12 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovSum
 ---
 
-# Bombieri Vinogradov Sum
+# Bombieri–Vinogradov sum
 
-The Bombieri–Vinogradov sum: the previous maximum summed over positive
-moduli `q` with `(q : ℝ) ≤ √x / (log x) ^ (A + 5)`. The enumeration over
-`Finset.range (x + 1)` is nonbinding for sufficiently large `x`, since the
-theorem is eventual.
+**Bombieri–Vinogradov sum.** For a natural number $x$ and a real number $A$, the
+Bombieri–Vinogradov sum $S(x, A)$ is the sum of the maximal residue-class error
+$E^{\ast\ast}(x; q)$ up to $x$ over the integers $q$ with $1 \le q \le x$ and
+$q \le \sqrt{x} / (\log x)^{A + 5}$.
+
+When $A > -5$ and $x \ge 3$, the condition $q \le x$ follows from the other one.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bombieri Vinogradov Max Up To Error](bombieri-vinogradov-max-up-to-error.md)
+- [Maximal residue-class error up to a level](bombieri-vinogradov-max-up-to-error.md)
 
 ## Sources
 

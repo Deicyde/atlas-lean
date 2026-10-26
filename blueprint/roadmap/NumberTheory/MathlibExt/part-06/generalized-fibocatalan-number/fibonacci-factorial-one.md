@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciFactorial_one
 ---
 
-# Fibonacci Factorial one
+# Fibonacci factorial at one
 
-`F_1! = 1` since `F_1 = 1`.
+**Fibonacci factorial at one.** The Fibonacci factorial $F_1!$ equals $1$, since the first
+Fibonacci number is $F_1 = 1$.
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial zero](fibonacci-factorial-zero.md)
+- [Fibonacci factorial at zero](fibonacci-factorial-zero.md)
 
 ## Sources
 

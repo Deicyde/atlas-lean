@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_hirschhorn_constant
 ---
 
-# Tendsto hirschhorn constant
+# Hirschhorn's constant
 
-Hirschhorn's constant `C = lim_{n→∞} n^{-1/12} ∏_{k=1}^n k!/(√(2πk) (k/e)^k)` equals
-`F_1 = (2π)^{1/4} e^{1/12} / A^2`. Only this identification of the constant is
-formalized; Hirschhorn's asymptotic expansion with divergent Bernoulli sums is not.
+**Hirschhorn's constant.** Let $A$ be the Glaisher–Kinkelin constant and $F_1$ the first
+factorial product constant. As $n \to \infty$,
+
+$$n^{-1/12} \prod_{k=1}^{n} \frac{k!}{\sqrt{2\pi k}\,(k/e)^k}
+\to \frac{(2\pi)^{1/4} e^{1/12}}{A^2},$$
+
+and this limit equals $F_1$.
+
+Hirschhorn's asymptotic expansion with divergent Bernoulli sums is not part of this statement.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

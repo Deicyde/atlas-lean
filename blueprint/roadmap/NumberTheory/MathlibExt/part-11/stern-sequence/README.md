@@ -4,8 +4,8 @@ navigation: module
 
 # Stern Sequence
 
-- [Stern Sequence](stern-sequence.md)
-- [Stern zero](stern-zero.md)
-- [Stern one](stern-one.md)
-- [Stern even](stern-even.md)
-- [Stern odd](stern-odd.md)
+- [Stern's diatomic sequence](stern-sequence.md)
+- [Stern sequence at zero](stern-zero.md)
+- [Stern sequence at one](stern-one.md)
+- [Even-index recurrence for the Stern sequence](stern-even.md)
+- [Odd-index recurrence for the Stern sequence](stern-odd.md)

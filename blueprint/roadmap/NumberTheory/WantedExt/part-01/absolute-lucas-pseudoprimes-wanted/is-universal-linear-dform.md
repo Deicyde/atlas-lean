@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsUniversalLinearDForm
 ---
 
-# Is Universal Linear DForm
+# Universal $D$-forms
 
-A universal `D`-form with respect to a signature `σ`, for products of linear factors
-`aᵢ x + bᵢ` (all forms in the paper are of this shape): every factor is irreducible
-(`aᵢ ≠ 0`, `gcd(aᵢ, bᵢ) = 1`), the product is not identically zero modulo any prime, and
-whenever all factors take (positive) prime values at some integer `x`, their product is a
-`D`-Carmichael number with signature `σ`. The paper says "for some `n ≥ 0`"; integer `x` is
-used because its forms `p + D x` (Theorem 4) and Chernick forms (Theorem 5) allow `D < 0`,
-where `x ≥ 0` would leave only finitely many positive values.
+**Universal $D$-forms.** Let $D$ be an integer, $\sigma$ a list of integers, and
+$f(x) = (a_1 x + b_1) \cdots (a_k x + b_k)$ a product of linear factors with integer coefficients.
+Then $f$ is a universal $D$-form with respect to $\sigma$ when: every factor has $a_i \ne 0$ and
+$\gcd(a_i, b_i) = 1$; for every prime $\ell$ there is an integer $x$ with $\ell \nmid f(x)$; and
+for every integer $x$ at which every factor $a_i x + b_i$ is a positive prime, the product $f(x)$
+is $D$-Carmichael and the Jacobi symbols $\left(\frac{D}{p}\right)$, for $p$ running through the
+prime factors of $f(x)$ in increasing order and counted with multiplicity, form the list $\sigma$.
+
+Here $x$ ranges over all integers rather than $x \ge 0$, since forms such as $p + D x$ are
+used with $D < 0$.
 
 ## Depends on
 
@@ -21,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

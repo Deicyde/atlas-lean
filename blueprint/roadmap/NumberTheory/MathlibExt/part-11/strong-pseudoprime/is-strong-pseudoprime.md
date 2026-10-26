@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsStrongPseudoprime
 ---
 
-# Is Strong Pseudoprime
+# Strong pseudoprime
 
-`n` is a *strong pseudoprime* to the base `b ∈ ZMod n`: `n` is an odd composite number
-and, writing `n - 1 = 2 ^ k * d` with `d` odd, either `b ^ d = 1` or `b ^ (2 ^ i * d) = -1`
-for some `i < k`. For odd composite `n` the decomposition `n - 1 = 2 ^ k * d` is unique, so
-the existential matches the paper's fixed `k` and `d`. An integer base is used through its
-residue class.
+**Strong pseudoprime.** Let $n$ be a natural number and $b$ a residue class modulo $n$. Then
+$n$ is a strong pseudoprime to the base $b$ if $n$ is an odd composite number (that is, $n > 1$,
+$n$ is odd and $n$ is not prime) and there are natural numbers $k$ and $d$ with $d$ odd and
+$n - 1 = 2^k d$ such that either $b^d = 1$ or $b^{2^i d} = -1$ for some $i < k$, where the
+powers are computed in $\mathbb{Z}/n\mathbb{Z}$.
+
+For odd composite $n$ the decomposition $n - 1 = 2^k d$ with $d$ odd is unique, so the
+existential agrees with the usual definition for the fixed $k$ and $d$. An integer base is used
+through its residue class modulo $n$.
 
 ## Depends on
 

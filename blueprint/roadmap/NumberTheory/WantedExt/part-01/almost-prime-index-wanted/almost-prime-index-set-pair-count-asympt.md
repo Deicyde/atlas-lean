@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.almostPrimeIndexSet_pair_count_asymptotic
 ---
 
-# Almost Prime Index Set pair count asymptotic
+# Counting almost primes of almost prime index
 
-For fixed `j, k ≥ 1`, the counting function of the `j`-almost primes of `k`-almost prime
-index satisfies `N_{jk}(x) = (x / log² x) (log log x)^{j+k-2} / ((j-1)! (k-1)!) (1 + O(1/log log x))`.
-The paper's clause "the same estimate holds for `N_{kj}`" is the instance with `j` and `k`
+**Counting almost primes of almost prime index.** Let $j, k \ge 1$ be integers and, for real
+$x$, let $N_{jk}(x)$ be the number of $j$-almost primes $n \le x$ whose index in the increasing
+enumeration of the $j$-almost primes, counted from $1$, is a $k$-almost prime. Writing
+$M(x) = \frac{x \, (\log \log x)^{j+k-2}}{(\log x)^2 \, (j-1)! \, (k-1)!}$, we have
+$N_{jk}(x) - M(x) = O(M(x) / \log \log x)$ as $x \to \infty$.
+
+The paper's clause "the same estimate holds for $N_{kj}$" is the instance with $j$ and $k$
 swapped, since the main term is symmetric.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

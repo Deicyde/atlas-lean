@@ -7,20 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasV_fibonacciLucasParams
 ---
 
-# Lucas V fibonacci Lucas Params
+# The Lucas sequence $V(1, -1)$ gives the Lucas numbers
 
-The `V` sequence for `(P, Q) = (1, -1)` is the classical Lucas-number
-sequence.
+**The Lucas sequence $V(1, -1)$ gives the Lucas numbers.** For every natural number $n$, the
+$n$-th term of the companion Lucas sequence $V(1, -1)$ equals the $n$-th Lucas number $L_n$.
 
 ## Depends on
 
-- [Fibonacci Lucas Params](fibonacci-lucas-params.md)
-- [Lucas Number](lucas-number.md)
-- [Lucas V](lucas-v.md)
+- [Fibonacci parameters for Lucas sequences](fibonacci-lucas-params.md)
+- [Lucas numbers](lucas-number.md)
+- [Companion Lucas sequence $V(P, Q)$](lucas-v.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
 
 ## Sources
 

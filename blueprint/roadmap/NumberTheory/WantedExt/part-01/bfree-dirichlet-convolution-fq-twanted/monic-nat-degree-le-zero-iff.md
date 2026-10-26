@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.monic_natDegree_le_zero_iff
 ---
 
-# Monic nat Degree le zero iff
+# Monic polynomials of degree zero
 
-The only monic polynomial of degree at most `0` is `1`.
+**Monic polynomials of degree zero.** Let $F$ be a field. A polynomial $f \in F[T]$ is monic
+of degree at most $0$ if and only if $f = 1$.
 
 ## Depends on
 

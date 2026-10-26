@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.qrDowlingPolynomial
 ---
 
-# Qr Dowling Polynomial
+# $(q, r)$-Dowling polynomial
 
-The `(q, r)`-Dowling polynomial associated to a fixed family `W` of
-`(q, r)`-Whitney coefficients of the second kind.
+**$(q, r)$-Dowling polynomial.** Let $R$ be a semiring and let $W(n, k) \in R$ for all
+natural numbers $n$ and $k$ (intended to be the $(q, r)$-Whitney numbers of the second kind, but
+any family is allowed). For a natural number $n$, the $(q, r)$-Dowling polynomial of $W$ at $n$ is
+the polynomial $\sum_{k=0}^{n} W(n, k)\, x^k$ in $R[x]$.
 
 ## Depends on
 

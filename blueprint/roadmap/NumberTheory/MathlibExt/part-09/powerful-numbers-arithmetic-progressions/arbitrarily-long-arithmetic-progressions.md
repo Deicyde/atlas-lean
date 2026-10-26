@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.arbitrarily_long_arithmetic_progressions_of_powerful_numbers_general
 ---
 
-# Arbitrarily long arithmetic progressions of powerful numbers general
+# Arithmetic progressions of 2-full numbers of every length
 
-For every length `k`, there is a nonconstant arithmetic progression of `k` positive
-powerful numbers. `arbitrarily_long_arithmetic_progressions_of_powerful_numbers` is the
-source-shaped form.
+**Arithmetic progressions of 2-full numbers of every length.** For every natural number
+$k$ there are positive integers $a$ and $d$ such that $a + id$ is $2$-full (powerful) for every
+natural number $i < k$.
 
 ## Depends on
 
-- [Is KFull](../../part-07/kfull/is-kfull.md)
+- [$k$-full numbers](../../part-07/kfull/is-kfull.md)
 
 ## Sources
 

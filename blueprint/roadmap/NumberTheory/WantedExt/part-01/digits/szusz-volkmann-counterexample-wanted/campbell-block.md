@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.campbellBlock
 ---
 
-# Campbell Block
+# Decimal digit block of $h_2(n)$
 
-The base-10 digits of `h₂(n)`, most significant first; `h₂(n) = 0` is written as the single
-digit `0`.
+**Decimal digit block of $h_2(n)$.** For a natural number $n$, the block of $n$ is the list of
+base-$10$ digits of $h_2(n)$, where $h_2$ is Campbell's sequence, written most significant digit
+first; when $h_2(n) = 0$ the block is the single digit $0$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Campbell H2](campbell-h2.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
 
 ## Sources
 

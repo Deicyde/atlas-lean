@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_neg_two_cyclic_residues
 ---
 
-# Ecsd neg two cyclic residues
+# Cyclic vertices in every residue class
 
-Each congruence class modulo `|a₁ - a₂|` contains a cyclic vertex of the ECSD
-`G(-2n + a₁, -2n + a₂)` (`a₁ - a₂` odd).
+**Cyclic vertices in every residue class.** Let $a_1, a_2$ be integers with $a_1 - a_2$
+odd. Then every residue class modulo $|a_1 - a_2|$ contains a vertex that lies on a directed
+cycle of $G(-2n + a_1, -2n + a_2)$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

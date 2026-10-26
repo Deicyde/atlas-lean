@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.threeQR_isDCarmichael_divisibility
 ---
 
-# Three QR is DCarmichael divisibility
+# Divisibility conditions for $D$-Carmichael numbers $3qr$
 
-If `3qr` (`3 < q < r` primes) is `D`-Carmichael of signature `(α, β, γ)` (`D ≡ 0, 1 (mod 4)`),
-then `q - β ∣ 3r - αγ` and `r - γ ∣ 3q - αβ`; moreover `r = 3q + 2γ` if `γ = -αβ`, and
-`2r = 3q + γ` if `γ = αβ`.
+**Divisibility conditions for $D$-Carmichael numbers $3qr$.** Let $D$ be an integer, let
+$q < r$ be primes with $3 < q$, and write $\alpha = (D \mid 3)$, $\beta = (D \mid q)$ and
+$\gamma = (D \mid r)$ for the Jacobi symbols. If $3qr$ is a $D$-Carmichael number, then
+$q - \beta$ divides $3r - \alpha\gamma$ and $r - \gamma$ divides $3q - \alpha\beta$; moreover
+$r = 3q + 2\gamma$ if $\gamma = -\alpha\beta$, and $2r = 3q + \gamma$ if $\gamma = \alpha\beta$.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

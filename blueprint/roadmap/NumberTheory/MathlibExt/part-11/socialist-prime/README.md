@@ -4,5 +4,5 @@ navigation: module
 
 # Socialist Prime
 
-- [Is Socialist Prime](is-socialist-prime.md)
-- [Factorial mod ne](factorial-mod-ne.md)
+- [Socialist primes](is-socialist-prime.md)
+- [Distinct factorial residues modulo a socialist prime](factorial-mod-ne.md)

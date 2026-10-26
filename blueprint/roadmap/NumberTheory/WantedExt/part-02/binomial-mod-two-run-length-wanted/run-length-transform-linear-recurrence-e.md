@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_linearRecurrence_eq_linearRep
 ---
 
-# Theorem 1
+# Run length transform of a linear recurrence (Rampersad–Wiebe Theorem 1)
 
-**Theorem 1.** For `S` as in Lemma 1, the run length transform `T` of `S` is `2`-regular with
-the linear representation `(v, γ(0), γ(1), w)`: `T(n) = v γ([n]₂) w`, where `γ(0)` has first
-column `(S(0), …, S(r))ᵀ` and zeros elsewhere, `γ(1)` is the companion matrix of Lemma 1, and
-`γ([n]₂)` multiplies `γ(b)` over the binary digits `b` of `n` from the most significant one.
+**Run length transform of a linear recurrence (Rampersad–Wiebe Theorem 1).** Let $r \ge 0$, let
+$d_0, \dots, d_r$ be integers, and let $S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = 1$ and
+$S(m + 1) = d_0 S(m) + d_1 S(m - 1) + \dots + d_r S(m - r)$ for all $m \ge r$. Let $T$ be the run
+length transform of $S$, let $v = (1, 0, \dots, 0)$ and $w = (S(0), \dots, S(r))^\top$, let
+$\gamma(0)$ be the $(r + 1) \times (r + 1)$ matrix with first column $w$ and zeros elsewhere, and
+let $\gamma(1)$ be the $(r + 1) \times (r + 1)$ companion matrix with ones on the superdiagonal,
+last row $(d_r, \dots, d_0)$ and zeros elsewhere. Then for every natural number $n$ with binary
+digits $b_1 b_2 \cdots b_t$, most significant first,
+$T(n) = v \, \gamma(b_1) \gamma(b_2) \cdots \gamma(b_t) \, w$, where for $n = 0$ the product of
+matrices is empty and equals the identity.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

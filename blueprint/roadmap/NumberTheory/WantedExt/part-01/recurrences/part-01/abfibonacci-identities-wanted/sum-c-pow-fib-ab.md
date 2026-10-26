@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_c_pow_fibAB
 ---
 
-# Theorem 12
+# Sums of (a, b)-Fibonacci numbers weighted by powers of c
 
-**Theorem 12**: for nonzero `c` with
-`c^2 - a*c - b ≠ 0` and positive `n`,
-`∑_{i=1}^n c^(n-i) F_i
-  = (c^(n+1) - c F_{n+1} - b F_n) / (c^2 - a*c - b)`.
+**Sums of (a, b)-Fibonacci numbers weighted by powers of c.** Let $a, b, c$ be complex
+numbers with $c \ne 0$ and $c^2 - ac - b \ne 0$, and let $(F_n)$ be the $(a, b)$-Fibonacci
+numbers. Then for every integer $n \ge 1$,
+
+$$\sum_{i=1}^{n} c^{n-i} F_i = \frac{c^{n+1} - c F_{n+1} - b F_n}{c^2 - ac - b}.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
 
 ## Sources
 

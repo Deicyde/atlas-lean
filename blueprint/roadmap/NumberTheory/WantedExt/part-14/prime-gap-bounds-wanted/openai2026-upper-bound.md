@@ -11,7 +11,7 @@ The quoted 186 bound; its external analytic and numerical inputs are not assumed
 
 ## Depends on
 
-- [Prime Gap Liminf](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
+- [Liminf of prime gaps](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

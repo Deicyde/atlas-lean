@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.zeckendorfRev_three
 ---
 
-# Zeckendorf Rev three
+# Reversal of the first three entries
 
-`rev_3(ε) = (ε_3, ε_2, ε_1)`.
+**Reversal of the first three entries.** For every coefficient function
+$\varepsilon : \mathbb N \to \mathbb N$, $\mathrm{rev}_3(\varepsilon)$ is the finitely supported
+coefficient function with entries $\varepsilon(2)$, $\varepsilon(1)$, $\varepsilon(0)$ at
+indices $0$, $1$, $2$ and $0$ at every other index. In the paper's one-based indexing,
+$\mathrm{rev}_3(\varepsilon) = (\varepsilon_3, \varepsilon_2, \varepsilon_1)$.
 
 ## Depends on
 
-- [Zeckendorf Rev](zeckendorf-rev.md)
+- [Reversal of the first $n$ entries](zeckendorf-rev.md)
 
 ## Sources
 

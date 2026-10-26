@@ -5,22 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.IsLucasFrobeniusPseudoprime
 ---
 
-# Is Lucas Frobenius Pseudoprime
+# Frobenius pseudoprime for Lucas parameters
 
-Frobenius pseudoprime with parameters `P, Q` in the source's sense (congruences
-(3.1)–(3.4) and `gcd(N, PQD) = 1`; not Grantham's polynomial notion
-`Nat.IsFrobeniusPseudoprime`).
+**Frobenius pseudoprime for Lucas parameters.** Let $U$ and $V$ be the Lucas sequences with
+integer parameters $P$ and $Q \neq 0$, and let $D = P^2 - 4Q$. A natural number $N$ is a
+Frobenius pseudoprime with parameters $P, Q$ when $\gcd(N, PQD) = 1$ and $N$ is a Lucas
+pseudoprime, a Lucas pseudoprime of the second kind, a Dickson pseudoprime and a Dickson
+pseudoprime of the second kind with parameters $P, Q$. Equivalently, $\gcd(N, PQD) = 1$, $N$ is
+odd and composite, and, writing $\varepsilon = (D/N)$ for the Jacobi symbol, $N$ satisfies the
+congruences $U_{N-\varepsilon} \equiv 0$, $U_N \equiv \varepsilon$, $V_N \equiv P$ and
+$V_{N-\varepsilon} \equiv 2Q^{(1-\varepsilon)/2}$ modulo $N$.
+
+This is the notion of the source, not Grantham's Frobenius pseudoprime defined through quotient
+rings of polynomials.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Proof depends on
 
-- [Is Dickson Pseudoprime](is-dickson-pseudoprime.md)
-- [Is Dickson Pseudoprime Second Kind](is-dickson-pseudoprime-second-kind.md)
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Is Lucas Pseudoprime Second Kind](is-lucas-pseudoprime-second-kind.md)
+- [Dickson pseudoprimes](is-dickson-pseudoprime.md)
+- [Dickson pseudoprimes of the second kind](is-dickson-pseudoprime-second-kind.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
+- [Lucas pseudoprimes of the second kind](is-lucas-pseudoprime-second-kind.md)
 
 ## Sources
 

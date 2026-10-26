@@ -43,7 +43,7 @@ language of $D$ is decidable by a multi-stack machine.
 - [One round of the item search against a DFA](../../part-01/context-free-regular/dfa-step.md)
 - [Whether a symbol fits at a DFA state](../../part-01/context-free-regular/dfa-sym-fits.md)
 - [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [The emptiness test](../../part-01/context-free-regular/inter-empty-b.md)
+- [The intersection-emptiness test for a grammar and a DFA](../../part-01/context-free-regular/inter-empty-b.md)
 - [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [The inclusion test for a grammar and a DFA](../../part-01/context-free-regular/subset-b.md)
 - [Correctness of the inclusion test](../../part-01/context-free-regular/subset-b-iff.md)

@@ -15,7 +15,7 @@ integers (the generalized half is
 
 ## Depends on
 
-- [Fibonacci Factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
+- [Fibonacci factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

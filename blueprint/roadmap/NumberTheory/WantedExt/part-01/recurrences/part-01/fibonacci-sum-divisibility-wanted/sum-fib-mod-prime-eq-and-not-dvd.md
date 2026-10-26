@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.sum_fib_mod_prime_eq_and_not_dvd
 ---
 
-# Sum fib mod prime eq and not dvd
+# Sum of the first $p$ Fibonacci numbers modulo a prime $p$
 
-The paper's Theorem 1: for a prime `p > 5`, the sum of the
-first `p` Fibonacci numbers is `1` modulo `p` when
-`p % 5 = 1` or `4`, is `p - 2` modulo `p` when `p % 5 = 2` or
-`3`, and in particular is not divisible by `p`. These are the
-residues forced by the paper's Binet-formula computation.
+**Sum of the first $p$ Fibonacci numbers modulo a prime $p$.** Let $p > 5$ be a prime, let
+$F_i$ denote the $i$-th Fibonacci number, with $F_1 = F_2 = 1$, and let
+$S = F_1 + F_2 + \dots + F_p$. If $p \equiv 1$ or $4 \pmod 5$, then $S$ leaves remainder $1$ on
+division by $p$; if $p \equiv 2$ or $3 \pmod 5$, then $S$ leaves remainder $p - 2$ on division
+by $p$; and in every case $p$ does not divide $S$.
 
 ## Depends on
 

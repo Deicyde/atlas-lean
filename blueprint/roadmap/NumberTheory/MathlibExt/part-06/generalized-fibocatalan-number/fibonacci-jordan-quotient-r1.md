@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciJordanQuotient_r1
 ---
 
-# Fibonacci Jordan Quotient r1
+# Fibonacci Jordan quotient at one
 
-At `r = 1`, `J_{1,F} = 2`.
+**Fibonacci Jordan quotient at one.** The Jordan-type quotient $J_{r,F} = F_{2r+1}! / F_r!$
+of Fibonacci factorials takes the value $J_{1,F} = F_3! / F_1! = 2$.
 
 ## Depends on
 
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Factorial one](fibonacci-factorial-one.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci factorial at one](fibonacci-factorial-one.md)
 - [Fibonacci Factorial three](fibonacci-factorial-three.md)
 
 ## Sources

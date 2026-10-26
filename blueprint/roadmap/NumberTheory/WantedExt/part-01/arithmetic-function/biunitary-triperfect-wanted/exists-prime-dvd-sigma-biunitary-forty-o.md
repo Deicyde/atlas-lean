@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_dvd_sigmaBiunitary_fortyOne_pow
 ---
 
-# Exists prime dvd sigma Biunitary forty One pow
+# Prime factors of the biunitary divisor sum of $41^g$
 
-For `g ≥ 1`, `σ**(41^g)` has a prime factor outside `{2, 3, 5, 13}`.
+**Prime factors of the biunitary divisor sum of $41^g$.** For every integer $g \ge 1$, the
+biunitary divisor sum $\sigma^{**}(41^g)$ has a prime factor $q$ with $q \notin \{2, 3, 5, 13\}$.
 
 ## Depends on
 

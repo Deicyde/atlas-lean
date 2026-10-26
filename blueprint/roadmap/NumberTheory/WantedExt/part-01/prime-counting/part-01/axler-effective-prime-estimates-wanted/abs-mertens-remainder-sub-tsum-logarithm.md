@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.abs_mertensRemainder_sub_tsum_logarithmicIntegral_lt
 ---
 
-# Abs mertens Remainder sub tsum logarithmic Integral lt
+# The Mertens remainder from a Chebyshev bound
 
-The Mertens remainder `S(x) = ∑_{p > x} (log(1 - 1/p) + 1/p)` from a Chebyshev bound: under
-the hypotheses of `abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt`, for every `x ≥ x₀`,
-`|S(x) - ∑_{n ≥ 1} li(x^{-n})/(n+1)| < η ((x+1) log(x/(x-1)) - 1) / log^{k+1} x`.
+**The Mertens remainder from a Chebyshev bound.** Let $k \ge 1$ be an integer and let
+$\eta > 0$ and $x_0 > 1$ be reals such that $|\vartheta(y) - y| < \eta y / \log^k y$ for every
+real $y \ge x_0$, where $\vartheta(y) = \sum_{p \le y} \log p$ is Chebyshev's function. For
+real $x$ let $S(x) = \sum_{p > x} \big(\log(1 - 1/p) + 1/p\big)$, the sum over the primes
+$p > x$. Then for every real $x \ge x_0$,
+
+$$
+\Big|S(x) - \sum_{m \ge 1} \frac{\operatorname{li}(x^{-m})}{m+1}\Big| <
+\frac{\eta}{\log^{k+1} x} \Big((x+1) \log\frac{x}{x-1} - 1\Big),
+$$
+
+where $\operatorname{li}$ is the logarithmic integral.
 
 ## Depends on
 

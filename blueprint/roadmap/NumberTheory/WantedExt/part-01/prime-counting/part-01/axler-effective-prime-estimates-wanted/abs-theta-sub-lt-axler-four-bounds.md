@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.abs_theta_sub_lt_axler_four_bounds
 ---
 
-# Abs theta sub lt axler four bounds
+# Axler's four bounds for Chebyshev's theta function
 
-The paper's inequalities (25)-(28) for Chebyshev's function, re-established after the
-correction of Faber and Kadiri's bounds: `|ϑ(x) - x| < 0.043 x / log³ x` for `x ≥ e⁴⁰`,
-`|ϑ(x) - x| < 0.15 x / log³ x` for `e³⁵ ≤ x < e⁵⁰⁰⁰`, `|ϑ(x) - x| < 99.07 x / log⁴ x` for
-`x ≥ e²⁵`, and `|ϑ(x) - x| < 100 x / log⁴ x` for `x ≥ 70111`. `ϑ` is Mathlib's
-`Chebyshev.theta`.
+**Axler's four bounds for Chebyshev's theta function.** Let
+$\vartheta(x) = \sum_{p \le x} \log p$ be Chebyshev's function, the sum over the primes
+$p \le x$. Then for real $x$ we have
+$|\vartheta(x) - x| < 0.043\, x / \log^3 x$ for $x \ge e^{40}$,
+$|\vartheta(x) - x| < 0.15\, x / \log^3 x$ for $e^{35} \le x < e^{5000}$,
+$|\vartheta(x) - x| < 99.07\, x / \log^4 x$ for $x \ge e^{25}$, and
+$|\vartheta(x) - x| < 100\, x / \log^4 x$ for $x \ge 70111$.
+
+These bounds are re-established after the correction of Faber and Kadiri's bounds.
 
 ## Depends on
 

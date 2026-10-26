@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_pseudoprime_candidates_jacobiSym
 ---
 
-# Lucas U pseudoprime candidates jacobi Sym
+# Pseudoprime candidates from a Lucas sequence
 
-Let `U(P, Q)` be nondegenerate with `gcd(P, Q) = 1` and `D > 0`, and let `m > 1` be
-odd with `gcd(m, PQD) = 1` and `3 ∤ m` when `P ≡ Q ≡ 1 (mod 2)`. Then `N₁ = U_m` and
-`N₂ = U_{2m}/P` are positive, odd, and `gcd(N₁N₂, PQD) = 1`; if `m` is composite both are
-composite; and `(D/m) = (D/N₁) = (D/N₂)` (Jacobi symbols) whenever `P` is odd, or
-`P ≡ 0 (mod 4)` and `Q ≡ -1 (mod 4)`, or `P ≡ 2 (mod 4)` and `Q ≡ -1 (mod 8)`.
+**Pseudoprime candidates from a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas sequence with
+integer parameters $P \ne 0$ and $Q \ne 0$ such that $\gcd(P, Q) = 1$ and $D = P^2 - 4Q > 0$.
+Let $m > 1$ be an odd integer with $\gcd(m, PQD) = 1$, and assume $3 \nmid m$ when $P$ and $Q$
+are both odd. Put $N_1 = U_m$ and $N_2 = U_{2m}/P$. Then $N_1$ and $N_2$ are positive and odd,
+and $\gcd(N_1 N_2, PQD) = 1$. If $m$ is not prime, then $N_1$ and $N_2$ are composite, that is,
+$|N_i| > 1$ and $|N_i|$ is not prime for $i = 1, 2$. If $P$ is odd, or $P \equiv 0 \pmod 4$ and
+$Q \equiv -1 \pmod 4$, or $P \equiv 2 \pmod 4$ and $Q \equiv -1 \pmod 8$, then the Jacobi
+symbols satisfy $(D/m) = (D/|N_1|) = (D/|N_2|)$.
+
+Since $D > 0$, the conditions $P \ne 0$ and $Q \ne 0$ say that $U$ is nondegenerate. The quotient
+$U_{2m}/P$ is an integer because $P \mid U_{2m}$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

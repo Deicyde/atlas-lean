@@ -14,7 +14,7 @@ $U$ is a member of $F$.
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+- [Greedy set cover](greedy-set-cover.md)
 
 ## Proof depends on
 

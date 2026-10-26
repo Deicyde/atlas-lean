@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciJordanQuotient_r0
 ---
 
-# Fibonacci Jordan Quotient r0
+# Fibonacci Jordan quotient at zero
 
-At `r = 0`, `J_{0,F} = 1`.
+**Fibonacci Jordan quotient at zero.** The Jordan-type quotient $J_{r,F} = F_{2r+1}! / F_r!$
+of Fibonacci factorials takes the value $J_{0,F} = F_1! / F_0! = 1$.
 
 ## Depends on
 
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Factorial one](fibonacci-factorial-one.md)
-- [Fibonacci Factorial zero](fibonacci-factorial-zero.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci factorial at one](fibonacci-factorial-one.md)
+- [Fibonacci factorial at zero](fibonacci-factorial-zero.md)
 
 ## Sources
 

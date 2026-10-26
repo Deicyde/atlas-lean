@@ -13,7 +13,7 @@ integer power `b ^ t` and to `-b`. The base is a unit of `ZMod n` (as it must be
 
 ## Depends on
 
-- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
+- [Strong pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

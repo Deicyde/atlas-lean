@@ -5,19 +5,24 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_neg_one_pow_jacobsthal
 ---
 
-# Theorem 10(d)
+# Weighted alternating sums of Jacobsthal and Jacobsthal–Lucas numbers
 
-**Theorem 10(d)**: the Jacobsthal case
-`(a, b) = (1, 2)` (`J` and `j` in the paper):
-`∑ (-1)^i 2^(n-i) J_{2i} = ((-1)^n j_{2n+1} - 2^n) / 9`,
-`∑ (-1)^i 2^(n-i) j_{2i} = (-1)^n J_{2n+1} + 2^n`,
-`∑ (-1)^i 2^(n-i) J_{2i+1} = ((-1)^n j_{2n+2} + 2^(n+2)) / 9`,
-`∑ (-1)^i 2^(n-i) j_{2i+1} = (-1)^n J_{2n+2}`.
+**Weighted alternating sums of Jacobsthal and Jacobsthal–Lucas numbers.** Let $(J_n)$ and
+$(j_n)$ be the Jacobsthal and Jacobsthal–Lucas numbers, that is, the $(1, 2)$-Fibonacci and
+$(1, 2)$-Lucas numbers, viewed as complex numbers. Then for every integer $n \ge 0$,
+
+$$\sum_{i=0}^{n} (-1)^i 2^{n-i} J_{2i} = \frac{(-1)^n j_{2n+1} - 2^n}{9}, \qquad
+\sum_{i=0}^{n} (-1)^i 2^{n-i} j_{2i} = (-1)^n J_{2n+1} + 2^n,$$
+
+
+
+$$\sum_{i=0}^{n} (-1)^i 2^{n-i} J_{2i+1} = \frac{(-1)^n j_{2n+2} + 2^{n+2}}{9}, \qquad
+\sum_{i=0}^{n} (-1)^i 2^{n-i} j_{2i+1} = (-1)^n J_{2n+2}.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

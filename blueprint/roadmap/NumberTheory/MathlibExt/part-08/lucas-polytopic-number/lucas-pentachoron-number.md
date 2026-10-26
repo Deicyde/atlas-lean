@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasPentachoronNumber
 ---
 
-# Lucas Pentachoron Number
+# Lucas pentachoron numbers
 
-The Lucas analogue of the `n`-th pentachoron number.
+**Lucas pentachoron numbers.** For nondegenerate Lucas parameters $(s, t)$ and a natural
+number $n$, the $n$-th Lucas pentachoron number is the Lucasnomial coefficient
+$\binom{n+3}{4}_{s,t}$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucasnomial](lucasnomial.md)
+- [Lucasnomial coefficients](lucasnomial.md)
 
 ## Sources
 

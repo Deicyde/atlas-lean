@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsProdigious
 ---
 
-# Is Prodigious
+# Prodigious numbers
 
-A positive integer `n` is `b`-prodigious iff `2 ≤ b`, `0 < n`,
-and `n` is divisible by the product of its nonzero base-`b` digits.
+**Prodigious numbers.** For natural numbers $b$ and $n$, the number $n$ is $b$-prodigious when
+$b \ge 2$, $n > 0$, and $n$ is divisible by the product of the nonzero digits of $n$ in base $b$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nonzero Digit Prod](nonzero-digit-prod.md)
+- [Product of the nonzero digits](nonzero-digit-prod.md)
 
 ## Sources
 

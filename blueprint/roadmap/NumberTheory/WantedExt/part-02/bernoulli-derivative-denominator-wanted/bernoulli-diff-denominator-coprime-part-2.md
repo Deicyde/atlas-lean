@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominatorCoprimePart_small
 ---
 
-# Bernoulli Diff Denominator Coprime Part small
+# Small values of $\mathbb{D}^\perp_n$
 
-Values `𝔻^⊥_1 = 1`, `𝔻^⊥_2 = 1`, `𝔻^⊥_3 = 2`, `𝔻^⊥_5 = 6`, `𝔻^⊥_9 = 10`.
+**Small values of $\mathbb{D}^\perp_n$.** Write $s_p(n)$ for the sum of the base-$p$ digits
+of $n$, and let $\mathbb{D}^\perp_n$ be the product of the primes $p$ with $p \nmid n$ and
+$s_p(n) \ge p$. Then $\mathbb{D}^\perp_1 = 1$, $\mathbb{D}^\perp_2 = 1$,
+$\mathbb{D}^\perp_3 = 2$, $\mathbb{D}^\perp_5 = 6$ and $\mathbb{D}^\perp_9 = 10$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
 
 ## Sources
 

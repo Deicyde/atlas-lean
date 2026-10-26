@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.parallelogram_multiplicative_add_two
 ---
 
-# Parallelogram multiplicative add two
+# Parallelogram induction: the values at p + 2 and (p + 2)²
 
-Lemma 2.
-Setting: `f` is multiplicative with `f (m² + n²) + f (m² - n²) = 2 f (m²) + 2 f (n²)`
-for `m > n ≥ 1`
-(the setting of Theorems 1 and 2), and `f (q^s) = q^{2s}` for all primes `q < p`, `s ≥ 1`.
-If `p ≡ 3 (mod 4)`, then `f (p + 2) = (p + 2)²` and
-`f ((p + 2)²) = (p + 2)⁴`.
+**Parallelogram induction: the values at p + 2 and (p + 2)².**
+Let $f$ be a complex-valued multiplicative arithmetic function
+(so $f(0) = 0$) such that $f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers
+$m > n \ge 1$.
+Let $p$ be a prime such that $f(q^s) = q^{2s}$ for every prime $q < p$ and every integer
+$s \ge 1$.
+If $p \equiv 3 \pmod 4$, then $f(p + 2) = (p + 2)^2$ and $f((p + 2)^2) = (p + 2)^4$.
 
 ## Depends on
 

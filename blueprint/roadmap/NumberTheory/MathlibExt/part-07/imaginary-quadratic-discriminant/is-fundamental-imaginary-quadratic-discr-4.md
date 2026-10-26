@@ -6,13 +6,14 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isFundamentalImaginaryQuadraticDiscriminant_isFundamentalDiscriminant
 ---
 
-# Is Fundamental Imaginary Quadratic Discriminant is Fundamental Discriminant
+# Fundamental imaginary quadratic discriminants are fundamental discriminants
 
-A fundamental imaginary quadratic discriminant satisfies the canonical predicate.
+**Fundamental imaginary quadratic discriminants are fundamental discriminants.** Every
+fundamental imaginary quadratic discriminant $D$ is a fundamental discriminant.
 
 ## Depends on
 
-- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Fundamental imaginary quadratic discriminant](is-fundamental-imaginary-quadratic-discr.md)
 - [Fundamental discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources

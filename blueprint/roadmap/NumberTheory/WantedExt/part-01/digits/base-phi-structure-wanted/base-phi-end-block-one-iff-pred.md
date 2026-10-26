@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.basePhi_end_block_one_iff_pred
 ---
 
-# Base Phi end block one iff pred
+# End blocks $u1 \cdot 0$ and $u0 \cdot 0$ of consecutive numbers
 
-For a nonempty word `u = d_{m-1} ⋯ d_1` such that `u 1` contains no `11`,
-the block `u 1 · 0` occurs in `β(N)` if and only if `u 0 · 0` occurs in
-`β(N - 1)`, for `N ≥ 1`. The hypothesis that `u 1` has no `11` is the paper's
-implicit standing assumption on digit blocks (for `u = 1` the block `11 · 0`
-never occurs, while `10 · 0` occurs in `β(2) = 10 · 01`).
+**End blocks $u1 \cdot 0$ and $u0 \cdot 0$ of consecutive numbers.** Let $u$ be a nonempty
+word of length $m - 1$, read as the digits $d_{m-1} \cdots d_1$ (a letter $1$ is a digit $1$,
+any other letter a digit $0$), such that the word $u1$ has no two adjacent letters $1$. Then
+for every $N \ge 1$, some base phi expansion of $N$ has digits
+$d_{m-1} \cdots d_1 d_0 \cdot d_{-1} = u1 \cdot 0$ if and only if some base phi expansion of
+$N - 1$ has digits $d_{m-1} \cdots d_1 d_0 \cdot d_{-1} = u0 \cdot 0$.
+
+The hypothesis that $u1$ has no $11$ is the paper's implicit standing assumption on digit blocks:
+for $u = 1$ the block $11 \cdot 0$ never occurs, while $10 \cdot 0$ occurs in the expansion
+$10 \cdot 01$ of $2$.
 
 ## Depends on
 
-- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Occurrence set of a digit block](base-phi-occurrences.md)
 
 ## Sources
 

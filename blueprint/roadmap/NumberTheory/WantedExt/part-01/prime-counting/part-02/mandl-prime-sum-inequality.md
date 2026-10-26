@@ -6,16 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.mandl_prime_sum_inequality
 ---
 
-# Mandl Prime Sum Wanted
+# Mandl's inequality for the sum of the first $n$ primes
 
-Mandl's inequality for the sum of the first `n` primes (statement only).
+**Mandl's inequality for the sum of the first $n$ primes.** Let $p_k$ denote the $k$-th
+prime, so that $p_1 = 2$. For every natural number $n \ge 9$, twice the sum of the first $n$
+primes is at most $n$ times the $n$-th prime: $2(p_1 + \cdots + p_n) \le n \, p_n$.
 
-For every `n ≥ 9`, twice the sum of the first `n` primes is at most `n`
-times the `n`th prime. The source's one-indexed primes `p₁, …, pₙ` become
-zero-indexed `Nat.nth Nat.Prime 0, …, Nat.nth Nat.Prime (n - 1)`, and the
-denominator in Mandl's inequality is cleared.
-
-Dusart proved the inequality for every `n ≥ 9`, as quoted by Axler.
+Dusart proved the inequality for every $n \ge 9$, as quoted by Axler.
 
 ## Depends on
 

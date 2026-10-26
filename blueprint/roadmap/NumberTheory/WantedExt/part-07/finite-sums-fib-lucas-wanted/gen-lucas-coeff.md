@@ -19,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Genocchi Number](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Genocchi numbers](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

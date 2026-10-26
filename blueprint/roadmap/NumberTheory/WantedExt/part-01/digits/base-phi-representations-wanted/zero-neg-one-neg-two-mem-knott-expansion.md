@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.zero_neg_one_neg_two_mem_knottExpansions
 ---
 
-# Zero neg one neg two mem knott Expansions
+# A Knott expansion of two
 
-`1.11` is a Knott expansion of `2`.
+**A Knott expansion of two.** Let $\varphi$ be the golden ratio. The base $\varphi$ expansion
+$1.11$, whose digits $1$ sit at the positions $0$, $-1$ and $-2$, is a Knott expansion of $2$:
+its value is $1 + \varphi^{-1} + \varphi^{-2} = 2$ and it satisfies Knott's truncation rule.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ lean: MetaMathlibExt.zero_neg_one_neg_two_mem_knottExpansions
 
 ## Proof depends on
 
-- [Satisfies Knott Condition](satisfies-knott-condition.md)
-- [Base Phi Value](base-phi-value.md)
-- [Base Phi Value zero neg one neg two](base-phi-value-zero-neg-one-neg-two.md)
+- [Knott's truncation rule](satisfies-knott-condition.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [The base phi expansion $1.11$ has value two](base-phi-value-zero-neg-one-neg-two.md)
 
 ## Sources
 

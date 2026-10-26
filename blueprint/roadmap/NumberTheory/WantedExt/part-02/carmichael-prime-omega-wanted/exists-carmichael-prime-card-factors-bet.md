@@ -5,13 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_carmichael_prime_cardFactors_between_of_heathBrown
 ---
 
-# Exists carmichael prime card Factors between of heath Brown
+# Carmichael numbers with a prime number of prime factors in a range
 
-Theorem 3: for `θ ∈ (1, 2)` with Lemma 1 constant `γ = γ_θ` (any `γ > 0` for which the
-Lemma 1 bound holds for all large `y`) and every sufficiently large `y`, there is a Carmichael
-number `n` with `e^{(γ/4) y^θ log y} ≤ n ≤ e^{e^{19θy}}` and `Ω(n)` prime. The paper's proof
-uses Lemma 2, which assumes Heath-Brown's conjecture (the paper's Conjecture 3); that
-assumption is made explicit as the hypothesis `hHB`, as in Theorem 1.
+**Carmichael numbers with a prime number of prime factors in a range.** Assume Heath-Brown's
+conjecture in the following form: there is a real constant $C$ such that for every natural
+number $d \ge 2$ and every natural number $c$ coprime to $d$ there is a prime $p \equiv c
+\pmod{d}$ with $p \le C d (\log d)^2$. Let $1 < \theta < 2$, and let $\gamma > 0$ be such that
+for all sufficiently large real $y$, the number of primes $q$ with
+$y^\theta / \log y \le q \le y^\theta$ such that every prime divisor of $q - 1$ is at most $y$
+is at least $\gamma y^\theta / \log(y^\theta)$. Then there is a real $Y$ such that for every real
+$y > Y$ there is a Carmichael number $n$ with $e^{(\gamma/4) y^\theta \log y} \le n \le
+e^{e^{19 \theta y}}$ whose number of prime factors counted with multiplicity, $\Omega(n)$, is
+prime.
+
+The paper's proof uses its Lemma 2, which assumes Heath-Brown's conjecture (the paper's
+Conjecture 3); here that assumption is an explicit hypothesis, as in Theorem 1.
 
 ## Depends on
 

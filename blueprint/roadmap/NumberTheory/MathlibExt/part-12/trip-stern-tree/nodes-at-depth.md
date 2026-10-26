@@ -12,11 +12,11 @@ Depth `n` consists of all nodes selected by binary paths of length `n`.
 
 ## Depends on
 
-- [Trip Stern Tree](trip-stern-tree.md)
+- [TRIP-Stern tree](trip-stern-tree.md)
 
 ## Proof depends on
 
-- [Node At Path](node-at-path.md)
+- [Node selected by a binary path](node-at-path.md)
 
 ## Sources
 

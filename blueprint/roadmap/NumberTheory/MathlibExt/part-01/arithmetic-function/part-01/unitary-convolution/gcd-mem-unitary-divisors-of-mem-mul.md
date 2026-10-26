@@ -13,7 +13,7 @@ numbers. If $d$ is a unitary divisor of $mn$, then $\gcd(d, m)$ is a unitary div
 
 ## Depends on
 
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

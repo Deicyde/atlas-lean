@@ -11,7 +11,7 @@ Maynard's bound under the actual dyadic Elliott-Halberstam assumption.
 
 ## Depends on
 
-- [Prime Gap Liminf](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
+- [Liminf of prime gaps](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
 - [Elliott Halberstam](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources

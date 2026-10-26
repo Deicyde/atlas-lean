@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.monicConvPartialSum_zero
 ---
 
-# Monic Conv Partial Sum zero
+# The partial sum $D(\alpha, \beta)(0)$
 
-`D[α, β](0) = α(1) β(1)`.
+**The partial sum $D[\alpha, \beta](0)$.** Let $F$ be a field and let
+$\alpha, \beta \colon F[T] \to \mathbb{C}$. The partial sum of the Dirichlet convolution of
+$\alpha$ and $\beta$ at $0$ is $D[\alpha, \beta](0) = \alpha(1)\, \beta(1)$.
 
 ## Depends on
 
-- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+- [Partial sums of a Dirichlet convolution over monic polynomials](monic-conv-partial-sum.md)
 
 ## Proof depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
-- [Monic Dirichlet Conv one](monic-dirichlet-conv-one.md)
-- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
+- [Dirichlet convolution at $1$](monic-dirichlet-conv-one.md)
+- [Monic polynomials of degree zero](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseHappy_consecutive_runs_even
 ---
 
-# Is Neg Base Happy consecutive runs even
+# Arbitrarily long runs of consecutive happy numbers in even bases at most $-4$
 
-For even `b ≤ -4` there are arbitrarily long finite runs of consecutive `b`-happy numbers.
+**Arbitrarily long runs of consecutive happy numbers in even bases at most $-4$.** Let
+$b \le -4$ be an even integer. For every natural number $N$ there is an integer $n$ such that
+$n + i$ is $b$-happy for every $0 \le i < N$.
 
 ## Depends on
 
-- [Is Neg Base Happy](is-neg-base-happy.md)
+- [Happy integers in a negative base](is-neg-base-happy.md)
 
 ## Sources
 

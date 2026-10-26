@@ -5,13 +5,13 @@ navigation: module
 
 # Hardy Littlewood Prime Tuple
 
-- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
-- [Is Hardy Littlewood Admissible](is-hardy-littlewood-admissible.md)
-- [Hardy Littlewood Prime Tuple Count](hardy-littlewood-prime-tuple-count.md)
-- [Hardy Littlewood Euler Factor](hardy-littlewood-euler-factor.md)
-- [Hardy Littlewood Singular Series](hardy-littlewood-singular-series.md)
-- [Is Admissible Finset](is-admissible-finset.md)
-- [Hardy Littlewood Residue Count ne iff](hardy-littlewood-residue-count-ne-iff.md)
-- [Is Hardy Littlewood Admissible iff is Admissible Finset](is-hardy-littlewood-admissible-iff-is-ad.md)
-- [Is Admissible Finset empty](is-admissible-finset-empty.md)
-- [Is Admissible Finset singleton zero](is-admissible-finset-singleton-zero.md)
+- [Number of residue classes met by an integer tuple](hardy-littlewood-residue-count.md)
+- [Hardy–Littlewood admissible tuples](is-hardy-littlewood-admissible.md)
+- [The prime-tuple counting function](hardy-littlewood-prime-tuple-count.md)
+- [Euler factors of the Hardy–Littlewood singular series](hardy-littlewood-euler-factor.md)
+- [The Hardy–Littlewood singular series](hardy-littlewood-singular-series.md)
+- [Admissible finite sets of integers](is-admissible-finset.md)
+- [Missing a residue class modulo a prime](hardy-littlewood-residue-count-ne-iff.md)
+- [Hardy–Littlewood admissibility via the set of entries](is-hardy-littlewood-admissible-iff-is-ad.md)
+- [The empty set is admissible](is-admissible-finset-empty.md)
+- [The set $\{0\}$ is admissible](is-admissible-finset-singleton-zero.md)

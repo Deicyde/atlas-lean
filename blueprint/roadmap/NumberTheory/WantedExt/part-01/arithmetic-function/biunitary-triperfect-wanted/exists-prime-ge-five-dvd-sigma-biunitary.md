@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_ge_five_dvd_sigmaBiunitary_prime_pow
 ---
 
-# Exists prime ge five dvd sigma Biunitary prime pow
+# Prime factors at least $5$ of biunitary divisor sums of prime powers
 
-For a prime `p` and `g ≥ 2`, `σ**(p^g)` has a prime factor `≥ 5`, except for
-`(p, g) = (2, 4)`. The exception is not in the printed statement: `σ**(2⁴) = 27 = 3³`; the
-paper's proof applies Lemma 2.4 to `p^u + 1` with `g = 2u - 1 - ε`, and `(p, u) = (2, 3)` is
-that lemma's exception.
+**Prime factors at least $5$ of biunitary divisor sums of prime powers.** For every prime $p$
+and every integer $g \ge 2$ with $(p, g) \ne (2, 4)$, the biunitary divisor sum $\sigma^{**}(p^g)$
+has a prime factor $q \ge 5$.
+
+The excluded case is a genuine exception: $\sigma^{**}(2^4) = 1 + 2 + 8 + 16 = 27 = 3^3$. It is
+not in the printed statement; the paper's proof applies Lemma 2.4 to $p^u + 1$ with
+$g = 2u - 1 - \varepsilon$, and $(p, u) = (2, 3)$ is that lemma's exception.
 
 ## Depends on
 

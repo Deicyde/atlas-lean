@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.prod_one_add_inv_prime_bounds
 ---
 
-# Prod one add inv prime bounds
+# Explicit bounds for $\prod_{p \le x} (1 + 1/p)$
 
-For every real `x ≥ 1757126630797`,
-`6e^γ/π² · exp(-f(x) - 1.02/((x - 1) log x)) · log x < ∏_{p ≤ x} (1 + 1/p) <
-6e^γ/π² · (1 + 1/x) · exp(f(x)) · log x`
-with `f(x) = 0.024334/(3 log³ x) · (1 + 15/(4 log x))` the right-hand side of (17).
+**Explicit bounds for $\prod_{p \le x} (1 + 1/p)$.** Let $\gamma$ be the Euler–Mascheroni
+constant and $f(x) = \frac{0.024334}{3 \log^3 x} \left(1 + \frac{15}{4 \log x}\right)$. For every
+real $x \ge 1757126630797$, the product over the primes $p \le x$ satisfies
+$\frac{6 e^{\gamma}}{\pi^2} \exp\left(-f(x) - \frac{1.02}{(x - 1) \log x}\right) \log x <
+\prod_{p \le x} \left(1 + \frac{1}{p}\right) <
+\frac{6 e^{\gamma}}{\pi^2} \left(1 + \frac{1}{x}\right) \exp(f(x)) \log x$.
 
 ## Depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tprod_one_sub_inv_add_eq_one_sub_tsum_add_isBigO
 ---
 
-# Tprod one sub inv add eq one sub tsum add is Big O
+# Asymptotic expansion of a perturbed tail product
 
-Let `1 < μ < λ` (written `α` here) and let `eₖ = O((μ/λ³)^{k/2})`. Then for every
-nonzero real constant `c`, as `n → ∞`,
-`∏_{k ≥ n} (1 - 1/(c λᵏ) + eₖ) = 1 - ∑_{k ≥ n} 1/(c λᵏ) + O((μ/λ³)^{n/2})`.
+**Asymptotic expansion of a perturbed tail product.** Let $\mu$ and $\lambda$ be real numbers
+with $1 < \mu < \lambda$, let $c \ne 0$ be a real number, and let $(e_k)_{k \ge 0}$ be a real
+sequence with $e_k = O\bigl((\mu/\lambda^3)^{k/2}\bigr)$ as $k \to \infty$. Then, as
+$n \to \infty$,
+$\prod_{k \ge n} \bigl(1 - 1/(c\lambda^k) + e_k\bigr) = 1 - \sum_{k \ge n} 1/(c\lambda^k) +
+O\bigl((\mu/\lambda^3)^{n/2}\bigr)$.
 
 ## Depends on
 

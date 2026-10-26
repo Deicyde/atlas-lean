@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fibEntryPoint
 ---
 
-# Fib Entry Point
+# Entry point in the Fibonacci sequence
 
-The entry point (rank of apparition) `z(k)`: the least `m > 0` with `k ∣ F_m` (`0` if
-there is none).
+**Entry point in the Fibonacci sequence.** The entry point (rank of apparition) $z(k)$ of a
+natural number $k$ is the least $m > 0$ such that $k$ divides the Fibonacci number $F_m$, and
+$z(k) = 0$ if there is no such $m$.
 
 ## Depends on
 

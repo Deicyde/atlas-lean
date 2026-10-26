@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.isWieferichPrime_iff_modEq
 ---
 
-# Is Wieferich Prime iff mod Eq
+# Wieferich primes via congruences
 
-The divisibility and modular-congruence forms of the base-two Wieferich condition agree.
+**Wieferich primes via congruences.** For every natural number $p$, $p$ is a Wieferich prime
+if and only if $p$ is prime and $2^{p-1} \equiv 1 \pmod{p^2}$.
 
 ## Depends on
 
-- [Is Wieferich Prime](is-wieferich-prime.md)
+- [Wieferich primes](is-wieferich-prime.md)
 
 ## Sources
 

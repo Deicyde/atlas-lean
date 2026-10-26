@@ -5,11 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.dickman_ge_rpow_neg_mul
 ---
 
-# Dickman ge rpow neg mul
+# Explicit lower bound for the Dickman function
 
-Explicit lower bound for the Dickman function: `ρ(x) ≥ x^(-1.42 x)` for `x ≥ 1`. The Dickman
-function is pinned by the repository predicate `Real.IsDickmanDeBruijn` (normalization on
-`[0, 1]` and `x ρ'(x) + ρ(x - 1) = 0` for `x > 1`).
+**Explicit lower bound for the Dickman function.** Let $\rho$ be a Dickman–de Bruijn
+function. Then $\rho(x) \ge x^{-1.42 x}$ for every real $x \ge 1$.
 
 ## Depends on
 

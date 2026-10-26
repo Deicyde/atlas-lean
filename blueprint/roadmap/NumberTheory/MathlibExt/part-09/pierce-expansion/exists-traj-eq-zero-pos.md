@@ -6,17 +6,19 @@ proof: formalized
 lean: PierceExpansion.exists_traj_eq_zero_pos
 ---
 
-# Exists traj eq zero pos
+# Pierce trajectories vanish at a positive step
 
-Every Pierce trajectory hits `0` at some positive step.
+**Pierce trajectories vanish at a positive step.** For all natural numbers $n$ and $a$, the
+Pierce remainder trajectory $(t_j)_{j \ge 0}$ of $n$ and $a$ (with $t_0 = a$) satisfies $t_j = 0$
+for some $j \ge 1$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero](exists-traj-eq-zero.md)
+- [A bound on when a Pierce trajectory vanishes](exists-traj-eq-zero.md)
 
 ## Sources
 

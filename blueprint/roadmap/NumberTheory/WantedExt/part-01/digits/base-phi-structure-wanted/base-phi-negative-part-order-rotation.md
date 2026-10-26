@@ -5,20 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.basePhi_negative_part_order_rotation
 ---
 
-# Base Phi negative part order rotation
+# The codes of the negative parts follow the golden rotation
 
-Theorem 12: for `n ≥ 1` the permutation `Π^β_{2n}` (the codes `C(N) = Z⁻¹(γ⁻(N))` of the
-`N ∈ Ξ_n` in increasing order, tridents merged, as in Theorem 11) is the order in which the
-first `F_{2n}` iterates of the rotation `z ↦ exp(2πi(z - φ))` occur on the circle: listing it
-as `k - 1` for the iterates `k = 1, …, F_{2n}`, the iterate angles `{-kφ}` increase, i.e. the
-fractional parts `{kφ}` decrease. This is the reading fixed by the paper's worked case
-`n = 3`, where `Π^β_6 = 7 2 5 0 3 6 1 4`. The code function `c` is any function agreeing with
-`C` on base phi expansions.
+**The codes of the negative parts follow the golden rotation.** Let $n \ge 1$, write $\varphi$
+for the golden ratio, $F_k$ for the Fibonacci numbers and $L_k$ for the Lucas numbers, and let
+$c$ be a function from the natural numbers to the natural numbers such that
+$c(N) = \sum_{i \in S,\, i < 0} F_{i+2n}$ (with $F_k$ read as $0$ for $k < 0$) whenever $S$ is a
+base phi expansion of $N$. List the values $c(N)$ for $N = L_{2n-1} + 1, \dots, L_{2n+1}$ (the
+interval $\Xi_n$) in increasing order of $N$, and merge every run of equal consecutive values
+into a single entry. The resulting list is a permutation of $0, 1, \dots, F_{2n} - 1$, and the
+fractional parts $\{(k+1)\varphi\}$ of its entries $k$ strictly decrease along it: if $k$ comes
+before $k'$, then $\{(k'+1)\varphi\} < \{(k+1)\varphi\}$.
+
+This list is the paper's permutation $\Pi^\beta_{2n}$ (the codes $C(N)$ of the negative parts
+$\beta^-(N)$, tridents merged, as in Theorem 11), and the statement says it is the order in
+which the first $F_{2n}$ iterates of the rotation $z \mapsto \exp(2\pi i(z - \varphi))$ occur on
+the circle, the entry $k$ standing for the iterate number $k + 1$. This is the reading fixed by
+the paper's worked case $n = 3$, where $\Pi^\beta_6 = 7\,2\,5\,0\,3\,6\,1\,4$.
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Base phi expansion](is-base-phi-expansion.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

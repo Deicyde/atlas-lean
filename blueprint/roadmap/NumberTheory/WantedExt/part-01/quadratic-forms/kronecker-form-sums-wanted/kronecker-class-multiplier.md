@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.kroneckerClassMultiplier
 ---
 
-# Kronecker Class Multiplier
+# Kronecker's class-number multiplier
 
-The multiplier `ℓ(n)` for `n = 2 ^ α * g * h ^ 2` with discriminant `d = d(n)`:
-the product over the primes `p ∣ h` of
-`(p ^ (v + 1) - 1) / (p - 1) - (d / p) * (p ^ v - 1) / (p - 1)`, `v = v_p(h)`, written
-with geometric sums `∑_{i ≤ v} p ^ i` and `∑_{i < v} p ^ i`, and the Jacobi symbol
-`(d / p)` (the Legendre symbol, since `p` is an odd prime).
+**Kronecker's class-number multiplier.** For an integer $d$ and a natural number $h \ge 1$,
+$\ell(d, h)$ is the product, over the primes $p$ dividing $h$, of
+
+$$\sum_{i=0}^{v} p^i - \left(\frac{d}{p}\right) \sum_{i=0}^{v-1} p^i,$$
+
+where $v$ is the exponent of $p$ in $h$ and $\left(\frac{d}{p}\right)$ is the Jacobi symbol; in
+particular $\ell(d, 1) = 1$. Also $\ell(d, 0) = 1$.
+
+In the paper $h$ is odd, so each $p$ is an odd prime, the symbol is the Legendre symbol, and the
+factor equals $\frac{p^{v+1} - 1}{p - 1} - \left(\frac{d}{p}\right) \frac{p^v - 1}{p - 1}$.
 
 ## Depends on
 

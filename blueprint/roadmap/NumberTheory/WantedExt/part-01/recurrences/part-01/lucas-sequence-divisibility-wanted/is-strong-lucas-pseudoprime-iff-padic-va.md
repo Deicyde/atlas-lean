@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.isStrongLucasPseudoprime_iff_padicValNat_two_eq
 ---
 
-# Is Strong Lucas Pseudoprime iff padic Val Nat two eq
+# Strong Lucas pseudoprimes via the $2$-adic valuation of ranks
 
-For nondegenerate `U(P, Q)` and a Lucas pseudoprime `N` with `gcd(N, PQD) = 1`: every prime
-power `p^k ∥ N` has `ρ(p^k) = ρ(p)`, and `N` is a strong Lucas pseudoprime iff the `2`-adic
-valuations `ν₂(ρ(p))` agree for all primes `p ∣ N`. The source prints `ρ(p_i^{k_i}) = p_i`,
-which is false: `(P, Q) = (1, -1)`, `N = 323 = 17 · 19` has `ρ(17) = 9`, `ρ(19) = 18`; the
-statement uses `ρ(p_i)`, as in Theorems 3.16 and 3.17.
+**Strong Lucas pseudoprimes via the $2$-adic valuation of ranks.** Let $P, Q$ be integers
+such that the Lucas pair $(P, Q)$ is nondegenerate, let $D = P^2 - 4Q$, and let $\rho(m)$ be the
+rank of appearance of $m$ in the Lucas sequence $U(P, Q)$. Let $N$ be a Lucas pseudoprime with
+parameters $P, Q$ such that $\gcd(N, PQD) = 1$. Then $\rho(p^k) = \rho(p)$ for every prime $p$
+dividing $N$, where $p^k$ is the exact power of $p$ dividing $N$; and $N$ is a strong Lucas
+pseudoprime with parameters $P, Q$ if and only if the $2$-adic valuations $\nu_2(\rho(p))$ are
+equal for all primes $p$ dividing $N$.
+
+The source prints $\rho(p_i^{k_i}) = p_i$, which is false: for $(P, Q) = (1, -1)$ and
+$N = 323 = 17 \cdot 19$ one has $\rho(17) = 9$ and $\rho(19) = 18$. The statement uses
+$\rho(p_i)$, as in Theorems 3.16 and 3.17.
 
 ## Depends on
 
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
 
 ## Sources
 

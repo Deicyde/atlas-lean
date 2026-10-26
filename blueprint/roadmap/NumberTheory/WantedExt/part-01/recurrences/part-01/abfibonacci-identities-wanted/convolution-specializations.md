@@ -5,21 +5,23 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.convolution_specializations
 ---
 
-# Corollary 14(b)
+# Fibonacci, Jacobsthal and Pell convolution identities
 
-**Corollary 14(b)**: the specializations
-(i) `∑_{i=1}^n L_{n-i} J_i = j_{n+1} - L_{n+1}
-  = ∑_{i=1}^n j_{n-i} F_i` (Fibonacci/Jacobsthal),
-(ii) `2 ∑_{i=1}^n P_i = (Q_{n+1} - 2) / 2
-  = ∑_{i=1}^n i Q_{n-i}` (Pell), and
-(iii) `∑_{i=1}^n L_{2(n-i)} (2^i - 1)
-  = L_{2n+2} - 2^(n+1) - 1
-  = ∑_{i=1}^n (2^(n-i) + 1) F_{2i}` (Fibonacci).
+**Fibonacci, Jacobsthal and Pell convolution identities.** Write $F_n$ and $L_n$ for the
+Fibonacci and Lucas numbers (the $(1,1)$-Fibonacci and $(1,1)$-Lucas numbers), $J_n$ and $j_n$
+for the Jacobsthal and Jacobsthal–Lucas numbers (the $(1,2)$-Fibonacci and $(1,2)$-Lucas
+numbers), and $P_n$ and $Q_n$ for the Pell and Pell–Lucas numbers (the $(2,1)$-Fibonacci and
+$(2,1)$-Lucas numbers), all as complex numbers. Then for every natural number $n$:
+(i) $\sum_{i=1}^{n} L_{n-i} J_i = j_{n+1} - L_{n+1}$ and
+$\sum_{i=1}^{n} j_{n-i} F_i = j_{n+1} - L_{n+1}$;
+(ii) $2 \sum_{i=1}^{n} P_i = (Q_{n+1} - 2)/2$ and $\sum_{i=1}^{n} i \, Q_{n-i} = (Q_{n+1} - 2)/2$;
+(iii) $\sum_{i=1}^{n} L_{2(n-i)} (2^i - 1) = L_{2n+2} - 2^{n+1} - 1$ and
+$\sum_{i=1}^{n} (2^{n-i} + 1) F_{2i} = L_{2n+2} - 2^{n+1} - 1$.
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

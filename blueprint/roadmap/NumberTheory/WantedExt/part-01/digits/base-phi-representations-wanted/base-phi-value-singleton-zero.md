@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.basePhiValue_singleton_zero
 ---
 
-# Base Phi Value singleton zero
+# The single digit $1$ at position $0$ has value one
 
-`β(1) = 1`: the expansion with a single digit `1` at position `0` represents `1`.
+**The single digit $1$ at position $0$ has value one.** The base phi value of the set $\{0\}$
+is $1$, that is, $\varphi^0 = 1$, where $\varphi$ is the golden ratio.
 
 ## Depends on
 
-- [Base Phi Value](base-phi-value.md)
+- [Value of a base phi expansion](base-phi-value.md)
 
 ## Sources
 

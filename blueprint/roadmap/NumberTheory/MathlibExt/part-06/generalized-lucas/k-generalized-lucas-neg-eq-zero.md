@@ -7,13 +7,15 @@ proof: formalized
 lean: Nat.kGeneralizedLucas_neg_eq_zero
 ---
 
-# K Generalized Lucas neg eq zero
+# $k$-generalized Lucas numbers vanish at negative indices
 
-Source clause: negative initial zeros for `k ≥ 3`.
+**$k$-generalized Lucas numbers vanish at negative indices.** For every natural number
+$k \ge 3$ and every integer $n$ with $2 - k \le n \le -1$, the $k$-generalized Lucas number
+$L^{(k)}_n$ equals $0$.
 
 ## Depends on
 
-- [K Generalized Lucas](k-generalized-lucas.md)
+- [$k$-generalized Lucas numbers](k-generalized-lucas.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kaprekar_minimalPeriod_le_and_prime_of_eq
 ---
 
-# Kaprekar minimal Period le and prime of eq
+# Long Kaprekar cycles force a prime base
 
-For odd `B > 3`, every terminal cycle of `K_B` on `X_B` has length at most
-`(B - 1) / 2`, and if some terminal cycle has length `(B - 1) / 2` then `B` is prime.
+**Long Kaprekar cycles force a prime base.** Let $B > 3$ be odd, let $K_B$ be the four-digit
+Kaprekar map and $X_B$ its state space. Every point of $X_B$ that is periodic for $K_B$ has
+minimal period at most $(B - 1)/2$, and if some point of $X_B$ has minimal period exactly
+$(B - 1)/2$ under $K_B$, then $B$ is prime.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
 
 ## Sources
 

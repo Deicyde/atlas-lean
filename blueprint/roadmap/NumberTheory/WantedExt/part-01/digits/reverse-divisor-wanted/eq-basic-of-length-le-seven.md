@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.eq_basic_of_length_le_seven
 ---
 
-# Theorem 1
+# Reverse divisors with at most seven digits
 
-**Theorem 1**, uniqueness in small lengths: for
-`4`, `5`, `6` or `7` digits, the basic examples are the
-only reverse divisors.
+**Reverse divisors with at most seven digits.** Let $n$ be a reverse divisor with $L$
+decimal digits, where $L \le 7$. Then $n = 11(10^{L-2} - 1)$ or $n = 22(10^{L-2} - 1)$, where
+$L - 2$ is read as $0$ when $L < 2$.
 
 ## Depends on
 
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 
 ## Sources
 

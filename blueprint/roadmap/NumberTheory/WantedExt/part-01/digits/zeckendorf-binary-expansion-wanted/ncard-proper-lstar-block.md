@@ -7,8 +7,11 @@ lean: MetaMathlibExt.ncard_properLStarBlock
 
 # Ncard proper LStar Block
 
-Counting proper blocks: for `s ≤ k` with `k - s + 1 ≡ j (mod N)`, `1 ≤ j ≤ N`, there are
-exactly `e_j` proper `L*`-blocks with support interval `[s, k]`.
+**Number of proper $L^*$-blocks with a given support interval.** Let
+$L = (e_1, \dots, e_N)$ be a list of natural numbers with $N \ge 2$ and $e_1 \ne 0$, let $s \le k$
+be natural numbers, and let $j$ be the integer with $1 \le j \le N$ and
+$k - s + 1 \equiv j \pmod N$. Then there are exactly $e_j$ proper $L^*$-blocks with support
+interval $[s, k]$.
 
 ## Depends on
 

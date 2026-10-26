@@ -5,18 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSumMod_one_isBigO
 ---
 
-# B Free Divisor Sum Mod one is Big O
+# Asymptotic count of B-free polynomials in an arithmetic progression
 
-Theorem 3, case `h = 1`: for `κ ≥ 2`, `m ≠ 0`, `(a, m) = 1` and every `ε > 0`,
-`D̃_{B_κ,1}(N, a, m) = q^N / ((1 - 1/q) |m|) ∏_{P ∤ m} (1 - 1/|P|^{κ(P)})
-+ O(q ^ ((1/κ_min + ε) N))`.
-`m ≠ 0` is added (the modulus of a progression).
+**Asymptotic count of B-free polynomials in an arithmetic progression.** Let $F$ be a finite
+field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\kappa$
+assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every monic
+irreducible $P$; let $\kappa_{\min}$ be the minimum of $\kappa(P)$ over the monic irreducible $P$.
+Let $m \ne 0$ and $a$ be polynomials in $F[T]$ with $a$ coprime to $m$, and let
+$\tilde D_{\kappa,1}(N, a, m)$ be the sum of $d_1(f)$ (which is $1$ for monic $f$) over the monic
+$B_\kappa$-free $f$ of degree at most $N$ with $f \equiv a \pmod m$, where $f$ is $B_\kappa$-free
+when no $P^{\kappa(P)}$ with $P$ monic irreducible divides it. Then for every $\varepsilon > 0$,
+
+$$
+\tilde D_{\kappa,1}(N, a, m) -
+\frac{q^N}{(1 - 1/q) \, |m|} \prod_{P \nmid m} \bigl(1 - |P|^{-\kappa(P)}\bigr) =
+O\bigl(q^{(1/\kappa_{\min} + \varepsilon) N}\bigr)
+$$
+
+as $N \to \infty$, the product running over the monic irreducible $P$ not dividing $m$.
+
+The paper's statement does not list the hypothesis $m \ne 0$; it is implicit, since $m$ is the
+modulus of a progression.
 
 ## Depends on
 
-- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
-- [Fq Norm](fq-norm.md)
-- [Kappa Min](kappa-min.md)
+- [B-free divisor sum in an arithmetic progression](b-free-divisor-sum-mod.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
 
 ## Sources
 

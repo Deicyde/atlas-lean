@@ -6,9 +6,12 @@ proof: formalized
 lean: MetaMathlibExt.one_neg_two_mem_naturalExpansions
 ---
 
-# One neg two mem natural Expansions
+# The expansion 10.01 is a natural expansion of 2
 
-`10.01` is a natural expansion of `2` (it is the Bergman expansion).
+**The expansion 10.01 is a natural expansion of 2.** The finite base phi expansion $10.01$,
+with digits $1$ exactly at positions $1$ and $-2$, is a natural base phi expansion of $2$.
+
+It is the Bergman expansion of $2$.
 
 ## Depends on
 
@@ -16,11 +19,11 @@ lean: MetaMathlibExt.one_neg_two_mem_naturalExpansions
 
 ## Proof depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Satisfies Knott Condition](satisfies-knott-condition.md)
-- [Base Phi Value](base-phi-value.md)
-- [Base Phi Value one neg two](base-phi-value-one-neg-two.md)
-- [Is Bergman Expansion one neg two](is-bergman-expansion-one-neg-two.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Knott's truncation rule](satisfies-knott-condition.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [The base phi expansion $10.01$ has value two](base-phi-value-one-neg-two.md)
+- [The expansion 10.01 is a Bergman expansion](is-bergman-expansion-one-neg-two.md)
 - [Knott Expansions](knott-expansions.md)
 
 ## Sources

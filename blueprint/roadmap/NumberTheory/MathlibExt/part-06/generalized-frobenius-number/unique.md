@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.IsGenFrobeniusNumber.unique
 ---
 
-# Unique
+# Uniqueness of the generalized Frobenius number
 
-The generalized Frobenius number is unique.
+**Uniqueness of the generalized Frobenius number.** For natural numbers $a_1, \dots, a_k$ and
+$s$, if the integers $g$ and $g'$ are both the generalized Frobenius number $g(a_1, \dots, a_k; s)$,
+then $g = g'$.
 
 ## Depends on
 
-- [Is Gen Frobenius Number](is-gen-frobenius-number.md)
+- [Generalized Frobenius number](is-gen-frobenius-number.md)
 
 ## Proof depends on
 
-- [Frobenius Rep Count](frobenius-rep-count.md)
+- [Number of representations by a vector of generators](frobenius-rep-count.md)
 
 ## Sources
 

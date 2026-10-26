@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_add_sub_succ
 ---
 
-# Theorem 6
+# Sum of $\binom{n+k}{n-k}\binom{n}{k} \bmod 2$ as a run length transform
 
-**Theorem 6.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n + k, n - k)` binom(n, k) mod 2]` is the run length transform
-of the positive integers `1, 2, 3, …`.
+**Sum of $\binom{n+k}{n-k}\binom{n}{k} \bmod 2$ as a run length transform.** For every
+natural number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+k}{n-k}\binom{n}{k} \bmod 2\bigr)$
+equals the value at $n$ of the run length transform of the sequence $S(i) = i + 1$ of positive
+integers $1, 2, 3, \dots$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

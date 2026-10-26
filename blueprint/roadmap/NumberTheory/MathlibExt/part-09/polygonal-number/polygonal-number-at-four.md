@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.polygonalNumber_at_four
 ---
 
-# Polygonal Number at four
+# Polygonal numbers at four
 
-Source initial value at `4`: `p_m(4) = 6 * m - 8` for `3 ≤ s`.
+**Polygonal numbers at four.** For every natural number $s \ge 3$, $p_s(4) = 6s - 8$, where
+$p_s(n)$ is the $n$-th $s$-gonal number.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

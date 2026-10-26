@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_sq_triangular_additive_eq_id
 ---
 
-# Multiplicative sq triangular additive eq id
+# Squares and triangular numbers are an additive uniqueness pair
 
-A multiplicative function with `f (u² + t_v) = f (u²) + f (t_v)` for all positive
-`u, v` is the identity.
+**Squares and triangular numbers are an additive uniqueness pair.** Let $t_v = v(v + 1)/2$
+denote the $v$-th triangular number. If $f$ is a complex-valued multiplicative arithmetic
+function with $f(u^2 + t_v) = f(u^2) + f(t_v)$ for all positive integers $u$ and $v$, then
+$f(n) = n$ for every natural number $n$.
 
 ## Depends on
 

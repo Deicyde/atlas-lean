@@ -5,19 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.exists_remainders_weighted_power_sum
 ---
 
-# Exists remainders weighted power sum
+# Remainder form of the weighted power-sum equation for Lucas sequences
 
-Proposition 4.1 (existential reading of "where `|R₁| < …`, `|R₂| < …`"): let `y = ±1`,
-`D = x² - 4y > 0`, `α = (x + √D)/2`, and let positive `n, p, q, x` and `k ≥ 3` satisfy
-`Σ_{j=1}^k j U_j^p = U_n^q`. Then there are reals `R₁, R₂` with `|R₁| < k² α^{k(p-2)}`,
-`|R₂| < α^{n(q-2)}` and
-`D^{(q-p)/2}(kα^p - (k+1)) α^{p(k+1)}/(α^p - 1)² - α^{qn}
-  = D^{q/2} R₂ - D^{q/2} R₁ - D^{(q-p)/2} α^p/(α^p - 1)²`.
+**Remainder form of the weighted power-sum equation for Lucas sequences.** Let $x$ be a
+positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with parameters
+$(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$. Suppose
+$D = x^2 - 4y > 0$ and put $\alpha = (x + \sqrt{D})/2$. Let $n, p, q$ be positive integers and
+$k \geq 3$ an integer with
+
+$$
+\sum_{j=1}^{k} j \, U_j^p = U_n^q.
+$$
+
+Then there are real numbers $R_1, R_2$ with $|R_1| < k^2 \alpha^{k(p-2)}$,
+$|R_2| < \alpha^{n(q-2)}$ and
+
+$$
+\frac{D^{(q-p)/2} (k\alpha^p - (k+1))}{(\alpha^p - 1)^2} \alpha^{p(k+1)} - \alpha^{qn} =
+D^{q/2} R_2 - D^{q/2} R_1 - \frac{D^{(q-p)/2} \alpha^p}{(\alpha^p - 1)^2}.
+$$
+
+The remainders $R_1, R_2$ are only asserted to exist; the source defines them explicitly in its
+proof.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.monic_sum_moebius_div_norm
 ---
 
-# Monic sum moebius div norm
+# Möbius sum over the monic divisors of a polynomial over a finite field
 
-For monic `f`, `∑_{g ∈ M, g ∣ f} μ(g) / |g| = Φ(f) / |f| = ∏_{P ∣ f} (1 - 1 / |P|)`, where
-`Φ(f) = |f| ∏_{P ∣ f} (1 - 1/|P|)` is the paper's Euler totient; the right side is written as
-the product, so `Φ` is not introduced.
+**Möbius sum over the monic divisors of a polynomial over a finite field.** Let $F$ be a finite
+field with $q$ elements and let $\mu$ be the Möbius function of $F[T]$. For every monic
+$f \in F[T]$,
+
+$$\sum_{g \text{ monic},\ g \mid f} \frac{\mu(g)}{q^{\deg g}} =
+\prod_{P \text{ monic irreducible},\ P \mid f} \left(1 - \frac{1}{q^{\deg P}}\right).$$
+
+The right side is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient function on $F[T]$.
 
 ## Depends on
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.wallis_prime_factor_eq
 ---
 
-# Wallis prime factor eq
+# Factor identity for Wallis-type prime products
 
-For every odd prime `p`, `A(p) = (p - χ₄(p))/(p + χ₄(p)) = (1 - χ₄(p)/p)²/(1 - 1/p²)`.
+**Factor identity for Wallis-type prime products.** For every odd prime $p$,
+
+$$\frac{p - \chi_4(p)}{p + \chi_4(p)} = \frac{(1 - \chi_4(p)/p)^2}{1 - 1/p^2},$$
+
+where $\chi_4$ is the nontrivial Dirichlet character modulo $4$.
 
 ## Depends on
 

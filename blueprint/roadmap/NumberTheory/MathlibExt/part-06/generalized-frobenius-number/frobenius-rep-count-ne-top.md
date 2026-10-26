@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.frobeniusRepCount_ne_top
 ---
 
-# Frobenius Rep Count ne top
+# Finitely many representations for positive generators
 
-With positive generators every integer has finitely many representations.
+**Finitely many representations for positive generators.** If $a_1, \dots, a_k$ are positive
+natural numbers, then for every integer $m$ the representation count $d(m; a_1, \dots, a_k)$ is
+finite.
 
 ## Depends on
 
-- [Frobenius Rep Count](frobenius-rep-count.md)
+- [Number of representations by a vector of generators](frobenius-rep-count.md)
 
 ## Sources
 

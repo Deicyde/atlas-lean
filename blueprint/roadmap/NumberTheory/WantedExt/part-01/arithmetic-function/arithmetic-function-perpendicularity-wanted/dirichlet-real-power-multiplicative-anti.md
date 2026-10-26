@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.dirichletRealPower_multiplicative_antimultiplicative_subspaces
 ---
 
-# Dirichlet Real Power multiplicative antimultiplicative subspaces
+# Real powers preserve multiplicativity and antimultiplicativity
 
-Theorem 2: `U_M` and `U_A` are subspaces of `U₁` and `U₁ = U_M ⊕ U_A`. Stated as: the real
-power `F = f^{(α)}` (pinned by `F 1 = 1` and `L(F) = α L(f)`) of a multiplicative function is
-multiplicative and of an antimultiplicative function is antimultiplicative, and every `f ∈ U₁`
-splits uniquely as `g * h` with `g ∈ U_M`, `h ∈ U_A`.
+**Real powers preserve multiplicativity and antimultiplicativity.** Let $L$ denote the
+Rearick logarithm. Let $f$ and $F$ be real arithmetical functions with $f(1) = F(1) = 1$, and let
+$\alpha$ be a real number with $L(F) = \alpha L(f)$. If $f$ is multiplicative, then $F$ is
+multiplicative, and if $f$ is antimultiplicative, then $F$ is antimultiplicative. Moreover, every
+real arithmetical function $f$ with $f(1) = 1$ can be written in exactly one way as a Dirichlet
+convolution $f = g * h$ with $g$ multiplicative and $h$ antimultiplicative.
+
+In the source $F$ is Rearick's real power $f^{(\alpha)}$, and the theorem says that the
+multiplicative and the antimultiplicative functions with $f(1) = 1$ form subspaces of the real
+vector space of all real arithmetical functions $f$ with $f(1) = 1$, whose direct sum is that space.
 
 ## Depends on
 
-- [Is Antimultiplicative](is-antimultiplicative.md)
-- [Rearick Log](../../../../MathlibExt/part-10/rearick-logarithm/rearick-log.md)
+- [Antimultiplicative arithmetical functions](is-antimultiplicative.md)
+- [Rearick logarithm](../../../../MathlibExt/part-10/rearick-logarithm/rearick-log.md)
 
 ## Sources
 

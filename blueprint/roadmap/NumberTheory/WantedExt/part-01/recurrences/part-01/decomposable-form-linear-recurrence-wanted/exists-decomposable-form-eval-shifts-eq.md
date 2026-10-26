@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_decomposable_form_eval_shifts_eq_pow
 ---
 
-# Exists decomposable form eval shifts eq pow
+# Decomposable forms on consecutive terms of one recurrence sequence
 
-For one sequence `G : ℤ → ℂ` satisfying an order-`k` linear recurrence whose window
-vectors `(G_j, …, G_{j+k-1})`, `0 ≤ j < k`, are linearly independent, some product `F` of
-`k` linear forms satisfies `F(Gₙ, …, G_{n+k-1}) = ((-1)^(k+1) γ₀)ⁿ` for every `n : ℤ`.
+**Decomposable forms on consecutive terms of one recurrence sequence.** Let
+$\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$, let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$,
+and let $G \colon \mathbb{Z} \to \mathbb{C}$ satisfy $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$ for
+every $n \in \mathbb{Z}$. Suppose that the $k$ vectors
+$(G_j, G_{j+1}, \dots, G_{j+k-1}) \in \mathbb{C}^k$ for $0 \le j < k$ are linearly independent.
+Then there are linear forms $L_1, \dots, L_k$ in $k$ variables with complex coefficients whose
+product $F = L_1 \cdots L_k$ satisfies $F(G_n, G_{n+1}, \dots, G_{n+k-1}) = ((-1)^k \chi(0))^n$
+for every $n \in \mathbb{Z}$.
+
+For $k \ge 1$ we have $\chi(0) = -\gamma_0$, so the right side is $((-1)^{k+1} \gamma_0)^n$.
 
 ## Depends on
 

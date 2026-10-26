@@ -6,18 +6,18 @@ proof: formalized
 lean: Int.mul_wilsonQuotient
 ---
 
-# Mul wilson Quotient
+# Exactness of the Wilson quotient
 
-Exact recovery: `p * W(p) = (p-1)! + 1` for a prime `p`.
+**Exactness of the Wilson quotient.** For every prime $p$, the Wilson quotient $W(p)$ of $p$
+satisfies $p \, W(p) = (p-1)! + 1$ in $\mathbb{Z}$.
 
-This is the `ℤ`-form of the identity `(p-1)! = -1 + p * w_p` used in
-Avitabile–Mattarei 2308.16034, `AH.tex` ll. 315–321. By Wilson's theorem the
-division in `wilsonQuotient` is exact, so multiplying back recovers the numerator.
+By Wilson's theorem $p$ divides $(p-1)! + 1$, so the division defining $W(p)$ is exact.
 
 ## Depends on
 
-- [Wilson Quotient](wilson-quotient.md)
+- [Wilson quotient](wilson-quotient.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.WilsonQuotient](../../../../../sources/v2/MathlibExt.md)
+- M. Avitabile and S. Mattarei, arXiv:2308.16034, `AH.tex` lines 315–321, which uses $(p-1)! = -1 + p \, w_p$, where $w_p$ is the Wilson quotient.

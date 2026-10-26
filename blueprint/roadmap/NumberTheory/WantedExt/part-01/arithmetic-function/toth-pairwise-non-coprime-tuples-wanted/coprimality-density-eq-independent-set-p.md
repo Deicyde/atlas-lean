@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.coprimalityDensity_eq_independent_set_product
 ---
 
-# Coprimality Density eq independent set product
+# Hu's independent-set formula for the coprimality density
 
-Theorem 1, display (A_G): Hu's form of the constant,
-`A_G = ∏_p ∑_{m=0}^{k} i_m(G) p^{-m} (1 - 1/p)^{k-m}`, where `i_m(G)` is the
-number of independent vertex sets of size `m`.
+**Hu's independent-set formula for the coprimality density.** Let $k$ be a natural number, let
+$E$ be a set of pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$
+with edge set $E$, and let $A_G$ be its coprimality density. For $0 \le m \le k$, let $i_m(G)$ be
+the number of independent sets of $G$ of size $m$, that is, of sets $S \subseteq \{1, \dots, k\}$
+with $|S| = m$ such that no edge of $E$ has both endpoints in $S$. Then
+
+$$A_G = \prod_p \sum_{m=0}^{k} \frac{i_m(G)}{p^m} \left(1 - \frac{1}{p}\right)^{k-m},$$
+
+the product running over all primes $p$.
 
 ## Depends on
 
-- [Coprimality Density](coprimality-density.md)
+- [Coprimality density of a graph](coprimality-density.md)
 
 ## Sources
 

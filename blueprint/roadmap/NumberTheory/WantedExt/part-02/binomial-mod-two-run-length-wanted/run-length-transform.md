@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform
 ---
 
-# Run Length Transform
+# Run length transform
 
-The run length transform of `S`: `T(n) = ∏_{ℓ ∈ 𝓛(n)} S(ℓ)`.
+**Run length transform.** For a sequence $S : \mathbb{N} \to \mathbb{Z}$, the run length
+transform of $S$ is the sequence $T : \mathbb{N} \to \mathbb{Z}$ given by
+$T(n) = \prod_{\ell \in \mathcal{L}(n)} S(\ell)$, where $\mathcal{L}(n)$ is the list of the
+lengths of the maximal runs of $1$s in the binary expansion of $n$, so that each run contributes
+one factor.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binary Run Lengths](binary-run-lengths.md)
+- [Binary run lengths](binary-run-lengths.md)
 
 ## Sources
 

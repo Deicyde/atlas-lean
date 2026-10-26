@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.pisanoPeriod_fib_dvd_two_mul
 ---
 
-# Pisano Period fib dvd two mul
+# The Pisano period of $F_n$ divides $2n$ for even $n$
 
-The paper's Proposition 2: for even `n > 1`, the Pisano
-period of `Nat.fib n` divides `2 * n`.
+**The Pisano period of $F_n$ divides $2n$ for even $n$.** Let $F_n$ denote the $n$-th Fibonacci
+number and $\pi(m)$ the Pisano period of $m$. For every even natural number $n > 1$, $\pi(F_n)$
+divides $2n$.
 
 ## Depends on
 
-- [Pisano Period](pisano-period.md)
+- [Pisano period](pisano-period.md)
 
 ## Sources
 

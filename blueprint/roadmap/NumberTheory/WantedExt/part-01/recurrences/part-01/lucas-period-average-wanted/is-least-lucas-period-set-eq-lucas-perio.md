@@ -15,12 +15,12 @@ as `IsLeast`.
 
 ## Depends on
 
-- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Closing of the period orbit](lucas-period-orbit-closes.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [The orbit lcm $L(n)$](lucas-period-orbit-lcm.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

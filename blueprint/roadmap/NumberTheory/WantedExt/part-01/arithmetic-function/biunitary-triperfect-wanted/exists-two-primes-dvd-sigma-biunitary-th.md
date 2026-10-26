@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_two_primes_dvd_sigmaBiunitary_thirteen_pow
 ---
 
-# Exists two primes dvd sigma Biunitary thirteen pow
+# Two prime factors of the biunitary divisor sum of $13^g$
 
-If `g ≥ 2`, then `σ**(13^g)` has two distinct prime factors outside `{2, 3, 41, 547}`.
+**Two prime factors of the biunitary divisor sum of $13^g$.** For every integer $g \ge 2$, the
+biunitary divisor sum $\sigma^{**}(13^g)$ has two distinct prime factors $q_1$ and $q_2$, neither
+of which lies in $\{2, 3, 41, 547\}$.
 
 ## Depends on
 

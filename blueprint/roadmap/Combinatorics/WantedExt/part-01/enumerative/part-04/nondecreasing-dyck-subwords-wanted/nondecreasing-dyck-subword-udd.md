@@ -30,7 +30,7 @@ $L_1 = 1$).
 
 ## Depends on
 
-- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 - [Bivariate generating function of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-bivariate-gf.md)
 - [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
 - [Generating function of the total subword count in non-decreasing Dyck paths](nondecreasing-dyck-subword-total-gf.md)

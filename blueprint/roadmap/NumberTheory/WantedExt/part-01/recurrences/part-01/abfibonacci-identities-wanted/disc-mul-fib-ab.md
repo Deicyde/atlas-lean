@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.disc_mul_fibAB
 ---
 
-# Corollary 4
+# Discriminant times an (a, b)-Fibonacci number
 
-**Corollary 4**: for `(a, b)`-Fibonacci and
-`(a, b)`-Lucas numbers, and `Δ = a^2 + 4b ≠ 0`,
-`Δ F_{m+1} = L_{m+2} + b L_m`.
+**Discriminant times an (a, b)-Fibonacci number.** Let $a$ and $b$ be complex numbers with
+$a^2 + 4b \ne 0$, and write $F_n$ and $L_n$ for the $(a,b)$-Fibonacci and $(a,b)$-Lucas
+numbers. Then for every natural number $m$,
+
+$$(a^2 + 4b) F_{m+1} = L_{m+2} + b L_m.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: PierceExpansion.length_pos
 ---
 
-# Length pos
+# The Pierce length is positive
 
-The Pierce length is positive.
+**The Pierce length is positive.** For all natural numbers $n$ and $a$, the Pierce length
+$\ell(n, a)$ satisfies $\ell(n, a) \ge 1$.
 
 ## Depends on
 
-- [Length](length.md)
+- [Pierce length](length.md)
 
 ## Proof depends on
 
-- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
-- [Traj](traj.md)
+- [Pierce trajectories vanish at a positive step](exists-traj-eq-zero-pos.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isStrongLucasPseudoprime_of_odd_lucasRankOfAppearance
 ---
 
-# Is Strong Lucas Pseudoprime of odd lucas Rank Of Appearance
+# Lucas pseudoprimes of odd rank are strong
 
-For nondegenerate `U(P, Q)`, a Lucas pseudoprime `N` with `ρ(N)` odd is a strong Lucas
-pseudoprime.
+**Lucas pseudoprimes of odd rank are strong.** Let $P, Q$ be integers such that the Lucas
+pair $(P, Q)$ is nondegenerate, and let $\rho(N)$ be the rank of appearance of $N$ in the Lucas
+sequence $U(P, Q)$. If $N$ is a Lucas pseudoprime with parameters $P, Q$ and $\rho(N)$ is odd,
+then $N$ is a strong Lucas pseudoprime with parameters $P, Q$.
 
 ## Depends on
 
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
 
 ## Sources
 

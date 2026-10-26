@@ -6,9 +6,10 @@ statement: formalized
 lean: IntegerComplexity.Pred
 ---
 
-# Pred
+# Achievable numbers of ones
 
-Predicate: leaf count `c` is achievable for `n`. Replaces Set S.
+**Achievable numbers of ones.** For a positive integer $n$ and a natural number $c$, the
+predicate holds when some expression has value $n$ and exactly $c$ ones.
 
 ## Depends on
 
@@ -16,10 +17,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Expr](expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
+- [Expressions built from one, addition and multiplication](expr.md)
+- [Number of ones in an expression](count.md)
+- [Value of an expression](eval.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IntegerComplexity](../../../../../sources/v2/MathlibExt.md)
+- replaces Set S.

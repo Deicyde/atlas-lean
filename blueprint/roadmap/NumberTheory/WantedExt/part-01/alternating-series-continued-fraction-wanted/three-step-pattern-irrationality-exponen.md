@@ -7,14 +7,21 @@ lean: MetaMathlibExt.threeStepPattern_irrationalityExponent
 
 # Irrationality exponent of the three-step pattern
 
-**Irrationality exponent of the three-step pattern**: for `β ≥ 1` and positive integers
-`ω_n`, the number `x` of `threeStepPattern_alternatingSeries_contFract` has
-`μ(x) ≥ 2 + β + limsup_n ln ω_n / ln q_{3n} ≥ 2 + β ≥ 3`, and `x` is transcendental, with
-`μ(x) ≥ M` encoded as in `twoStepPattern_irrationalityExponent`.
+**Irrationality exponent of the three-step pattern.** Let $\beta \ge 1$ be a natural number,
+let $(\omega_n)_{n \ge 0}$ be positive integers, let $(q_n)_{n \ge 0}$ be the convergent
+denominators of the three-step pattern for $\beta$ and $(\omega_n)$, and let
+$x = \sum_{i \ge 0} (-1)^i / (q_i q_{i+1})$. Let $L$ be the limit superior, in the extended real
+numbers, of $\ln \omega_n / \ln q_{3n}$ as $n \to \infty$. Then $x$ is Liouville with exponent $p$
+for every real $p < 2 + \beta + L$, that is, for each such $p$ there is a constant $C$ such that
+$0 < |x - m/k| < C / k^p$ for infinitely many positive integers $k$, each with some integer $m$.
+Moreover $2 + \beta \le 2 + \beta + L$, and $x$ is transcendental.
+
+In other words, the irrationality exponent of $x$ satisfies $\mu(x) \ge 2 + \beta + L$, where $L$
+may be $+\infty$.
 
 ## Depends on
 
-- [Three Step Pattern Den](three-step-pattern-den.md)
+- [Convergent denominators of the three-step pattern](three-step-pattern-den.md)
 
 ## Sources
 

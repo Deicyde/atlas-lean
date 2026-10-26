@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.almostPrimeIndexSet_nil
 ---
 
-# Almost Prime Index Set nil
+# Almost prime index sets with one index
 
-`N_k` is the set of `k`-almost primes.
+**Almost prime index sets with one index.** For every natural number $k$, the almost prime
+index set $N_k$ with the single index $k$ is the set of $k$-almost primes, the natural numbers
+$n \ne 0$ with exactly $k$ prime factors counted with multiplicity.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

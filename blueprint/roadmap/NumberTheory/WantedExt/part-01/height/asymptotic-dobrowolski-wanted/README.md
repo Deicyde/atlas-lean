@@ -5,8 +5,8 @@ navigation: module
 
 # Asymptotic Dobrowolski
 
-- [Dobrowolski one le asymptotic Constant](dobrowolski-one-le-asymptotic-constant.md)
-- [Cantor Straus two le asymptotic Constant](cantor-straus-two-le-asymptotic-constant.md)
-- [Louboutin nine fourths le asymptotic Constant](louboutin-nine-fourths-le-asymptotic-con.md)
-- [Blanksby Montgomery degree Bound](blanksby-montgomery-degree-bound.md)
-- [Stewart degree Bound](stewart-degree-bound.md)
+- [Dobrowolski's lower bound for the asymptotic Dobrowolski constant](dobrowolski-one-le-asymptotic-constant.md)
+- [Cantor–Straus lower bound for the asymptotic Dobrowolski constant](cantor-straus-two-le-asymptotic-constant.md)
+- [Louboutin's lower bound for the asymptotic Dobrowolski constant](louboutin-nine-fourths-le-asymptotic-con.md)
+- [Blanksby–Montgomery lower bound for the Mahler measure](blanksby-montgomery-degree-bound.md)
+- [Stewart's lower bound for the Mahler measure](stewart-degree-bound.md)

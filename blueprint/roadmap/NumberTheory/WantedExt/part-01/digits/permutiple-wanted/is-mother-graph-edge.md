@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsMotherGraphEdge
 ---
 
-# Is Mother Graph Edge
+# Edges of the mother graph
 
-`(x, y)` is an edge of the `(n, b)`-mother graph `M`: `x` and `y` are base-`b` digits
-and `λ(x + (b - n) y) ≤ n - 1`, where `λ` is the least non-negative residue modulo `b`
-(computed in `ℤ`).
+**Edges of the mother graph.** Let $n$ and $b$ be natural numbers. For natural numbers $x$
+and $y$, the pair $(x, y)$ is an edge of the $(n, b)$-mother graph $M$ when $x < b$, $y < b$ and
+
+$$\lambda(x + (b - n) y) \le n - 1,$$
+
+where $\lambda(z)$ is the least non-negative residue of the integer $z$ modulo $b$, and $b - n$
+and $n - 1$ are computed in the integers.
 
 ## Depends on
 

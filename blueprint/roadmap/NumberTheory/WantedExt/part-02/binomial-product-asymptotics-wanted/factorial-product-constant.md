@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.factorialProductConstant
 ---
 
-# Factorial Product Constant
+# Factorial-product constants
 
-The constants `F_k` of the asymptotic formula for `∏_{ν ≤ n} (kν)!`, defined by the
-closed form `log F_k = (k/4) log(2π) - ((k^2+1)/k) log A + (1 - log k)/(12k)
-- ∑_{ν=1}^{k-1} (ν/k) log Γ(ν/k)`; that this closed form is the asymptotic constant of
-the factorial product is `tendsto_prod_factorial_mul_div` below.
+**Factorial-product constants.** For a natural number $k \ge 1$, the constant $F_k$ is the
+positive real number defined by
+
+$$\log F_k = \frac{k}{4} \log(2\pi) - \frac{k^2+1}{k} \log A + \frac{1 - \log k}{12k} -
+\sum_{\nu=1}^{k-1} \frac{\nu}{k} \log \Gamma\left(\frac{\nu}{k}\right),$$
+
+where $A$ is the Glaisher–Kinkelin constant and $\Gamma$ is the gamma function. For $k = 0$ the
+definition gives $F_0 = 1$.
+
+The constant $F_k$ appears in the asymptotic formula for $\prod_{\nu=1}^{n} (k\nu)!$ as
+$n \to \infty$; that formula is a separate statement.
 
 ## Depends on
 
@@ -18,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

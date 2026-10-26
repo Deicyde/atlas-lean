@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.periodicZeckendorfCollection
 ---
 
-# Periodic Zeckendorf Collection
+# Periodic Zeckendorf collection
 
-The periodic Zeckendorf collection determined by `L`: sums of finitely many `L`-blocks with
-pairwise disjoint support intervals (blocks listed as `(ζ, lo, m)` with support `[lo, m - 1]`).
+**Periodic Zeckendorf collection.** For a list $L$ of natural numbers, the periodic Zeckendorf
+collection determined by $L$ is the set of finitely supported coefficient functions $\mu$ that
+can be written as a sum $\mu = \zeta_1 + \dots + \zeta_r$ of finitely many $L$-blocks
+$\zeta_1, \dots, \zeta_r$ (possibly none, which gives $\mu = 0$) whose support intervals are
+pairwise disjoint.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is LBlock](is-lblock.md)
+- [L-blocks](is-lblock.md)
 
 ## Sources
 

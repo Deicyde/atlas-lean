@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.IsKPerfect.pos_k
 ---
 
-# Pos k
+# The parameter of a $k$-perfect number is positive
 
-The parameter of a `k`-perfect number is positive.
+**The parameter of a $k$-perfect number is positive.** For natural numbers $k$ and $n$, if $n$
+is $k$-perfect, then $k > 0$.
 
 ## Depends on
 
-- [Is KPerfect](is-kperfect.md)
+- [$k$-perfect numbers](is-kperfect.md)
 
 ## Sources
 

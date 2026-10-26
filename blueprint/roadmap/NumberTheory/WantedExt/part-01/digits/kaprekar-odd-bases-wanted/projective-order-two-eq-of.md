@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.projectiveOrderTwo_eq_of
 ---
 
-# Projective Order Two eq of
+# Characterization of the projective order of 2
 
-Characterization of `λ(n)`: the least positive `m` with `2 ^ m ≡ ±1 (mod n)`.
+**Characterization of the projective order of 2.** Let $n$ and $m$ be natural numbers with
+$m > 0$. Suppose that $2^m \equiv 1$ or $2^m \equiv -1 \pmod{n}$, and that for every $k$ with
+$0 < k < m$ neither $2^k \equiv 1$ nor $2^k \equiv -1 \pmod{n}$. Then the projective order of $2$
+modulo $n$ is $\lambda(n) = m$.
 
 ## Depends on
 
-- [Projective Order Two](projective-order-two.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.higherOrderBernoulliNumber_one
 ---
 
-# Higher Order Bernoulli Number one
+# Higher-order Bernoulli numbers of order one
 
-The order-one higher-order Bernoulli numbers are the ordinary Bernoulli numbers.
+**Higher-order Bernoulli numbers of order one.** For every natural number $n$, the
+higher-order Bernoulli number $B_n^{(1)}$ equals the Bernoulli number $B_n$, with the
+convention $B_1 = -1/2$.
 
 ## Depends on
 
-- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
+- [Higher-order Bernoulli numbers](higher-order-bernoulli-number.md)
 
 ## Proof depends on
 
-- [Higher Order Bernoulli Number nat](higher-order-bernoulli-number-nat.md)
+- [Higher-order Bernoulli numbers of natural order](higher-order-bernoulli-number-nat.md)
 
 ## Sources
 

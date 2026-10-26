@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_commaSucc_iff
 ---
 
-# Not comma Succ iff
+# Numbers that are not comma successors
 
-In base `b ≥ 3`, the numbers `n ≥ b² - 1` that are not the comma-successor of any positive
-integer are exactly `c·bⁱ` with `i ≥ 2` and `2 ≤ c ≤ b - 1`.
+**Numbers that are not comma successors.** Let $b \ge 3$ and $n \ge b^2 - 1$. Then $n$ is not
+the comma successor in base $b$ of any positive integer if and only if $n = c\, b^i$ for some
+$i \ge 2$ and some $c$ with $2 \le c \le b - 1$.
 
 ## Depends on
 

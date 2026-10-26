@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.finite_setOf_oddPerfect_card_primeFactors_eq
 ---
 
-# Finite set Of odd Perfect card prime Factors eq
+# Dickson's finiteness theorem for odd perfect numbers
 
-Dickson (1913), quoted as Lemma 1 (iii): for every `m`, only finitely many odd perfect numbers
-have exactly `m` distinct prime divisors.
+**Dickson's finiteness theorem for odd perfect numbers.** For every natural number $m$, there
+are only finitely many odd perfect numbers with exactly $m$ distinct prime divisors.
 
 ## Depends on
 

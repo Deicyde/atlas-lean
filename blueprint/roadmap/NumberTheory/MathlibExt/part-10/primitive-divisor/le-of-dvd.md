@@ -6,14 +6,15 @@ proof: formalized
 lean: IntegerSequence.IsPrimitiveDivisor.le_of_dvd
 ---
 
-# Le of dvd
+# A primitive divisor appears at the least positive index
 
-The index where a primitive divisor occurs is no larger than any positive index where that
-divisor occurs.
+**A primitive divisor appears at the least positive index.** Let $(a_s)_{s \ge 0}$ be a sequence
+of integers and let the natural number $u$ be a primitive divisor of $a_m$. If $n \ge 1$ and $u$
+divides $a_n$, then $m \le n$.
 
 ## Depends on
 
-- [Is Primitive Divisor](is-primitive-divisor.md)
+- [Primitive divisor of an integer sequence](is-primitive-divisor.md)
 
 ## Sources
 

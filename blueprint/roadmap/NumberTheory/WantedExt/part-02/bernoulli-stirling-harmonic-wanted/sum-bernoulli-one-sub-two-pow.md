@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_bernoulli_one_sub_two_pow
 ---
 
-# Sum bernoulli one sub two pow
+# A weighted Bernoulli sum with factors $1 - 2^j$
 
-For positive natural `n`, the sum from `j = 1` through `n` of
-`(choose n j + 1) * (B_j/j) * (1-2^j)` equals `1`. Bernoulli numbers use
-Mathlib's convention `B_1 = -1/2`, and all arithmetic is in `ℚ`; there is no
-mathematical deviation from equation (14).
+**A weighted Bernoulli sum with factors $1 - 2^j$.** Let $B_j$ denote the Bernoulli numbers
+with $B_1 = -\tfrac12$. For every positive integer $n$,
+
+$$\sum_{j=1}^{n} \left(\binom{n}{j} + 1\right) \frac{B_j}{j} \left(1 - 2^j\right) = 1.$$
 
 ## Depends on
 

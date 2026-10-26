@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.parallelogram_multiplicative_five_k_add_three
 ---
 
-# Parallelogram multiplicative five k add three
+# Parallelogram induction: the value at 5k + 3
 
-Lemma 4.
-Setting: `f` is multiplicative with `f (m² + n²) + f (m² - n²) = 2 f (m²) + 2 f (n²)`
-for `m > n ≥ 1`
-(the setting of Theorems 1 and 2), and `f (q^s) = q^{2s}` for all primes `q < p`, `s ≥ 1`.
-If `p = 4k - 1 ≥ 19` and `4 ∤ k`, then `f (5k + 3) = (5k + 3)²`.
+**Parallelogram induction: the value at 5k + 3.**
+Let $f$ be a complex-valued multiplicative arithmetic function
+(so $f(0) = 0$) such that $f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers
+$m > n \ge 1$.
+Let $p$ be a prime such that $f(q^s) = q^{2s}$ for every prime $q < p$ and every integer
+$s \ge 1$.
+If $p = 4k - 1$ for a natural number $k$ with $4 \nmid k$, and $p \ge 19$, then
+$f(5k + 3) = (5k + 3)^2$.
 
 ## Depends on
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Binomid Index](../../part-02/binomid-index-wanted/is-binomid-index.md)
+- [Binomid index](../../part-02/binomid-index-wanted/is-binomid-index.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasRankOfAppearance_one
 ---
 
-# Lucas Rank Of Appearance one
+# Rank of appearance of $1$
 
-`ρ(1) = 1`.
+**Rank of appearance of $1$.** For all integers $P, Q$ with $Q \neq 0$, the rank of
+appearance of $1$ in the Lucas sequence $U(P, Q)$ is $1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

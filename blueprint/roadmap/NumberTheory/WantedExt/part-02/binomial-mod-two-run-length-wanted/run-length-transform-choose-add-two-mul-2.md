@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_add_two_mul_two_mul_sub_lucas
 ---
 
-# Theorem 9
+# Sum of $\binom{n+2k}{2n-k}\binom{n}{k} \bmod 2$ as a run length transform
 
-**Theorem 9.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n + 2k, 2n - k)` binom(n, k) mod 2]` is the run length transform
-of the Lucas numbers prepended with `1, 1`, i.e. `1, 1, 2, 1, 3, 4, 7, 11, …`.
+**Sum of $\binom{n+2k}{2n-k}\binom{n}{k} \bmod 2$ as a run length transform.** For every
+natural number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+2k}{2n-k}\binom{n}{k} \bmod 2\bigr)$
+equals the value at $n$ of the run length transform of the sequence $S$ with $S(0) = S(1) = 1$
+and $S(i) = L_{i-2}$ for $i \ge 2$, where $L_0 = 2, L_1 = 1, L_2 = 3, \dots$ are the Lucas
+numbers; that is, $S$ is $1, 1, 2, 1, 3, 4, 7, 11, \dots$.
 
 ## Depends on
 
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
-- [Run Length Transform](run-length-transform.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

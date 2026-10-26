@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominatorLargePart
 ---
 
-# Bernoulli Diff Denominator Large Part
+# Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$
 
-The factor `𝔻^+_n = ∏_{p > √n, s_p(n) ≥ p} p` of `𝔻_n`; `p > √n` is written `n < p ^ 2`.
+**Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$.** For $n \in \mathbb{N}$,
+write $s_p(n)$ for the sum of the base-$p$ digits of $n$. The number $\mathbb{D}^+_n$ is the
+product of all primes $p$ with $p > \sqrt{n}$ (that is, $p^2 > n$) and $s_p(n) \ge p$; every
+such prime satisfies $p \le n$.
 
 ## Depends on
 

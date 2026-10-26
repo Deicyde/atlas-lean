@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_composite_of_discr_pos
 ---
 
-# Lucas U composite of discr pos
+# Composite terms of Lucas sequences with positive discriminant
 
-For nondegenerate `U(P, Q)` with `gcd(P, Q) = 1` and `D > 0`, and odd `m ≥ 5`:
-if `m` is composite then `U_m` is composite, and `U_{2m}/P` is always composite
-(an integer `N` is composite when `|N| > 1` and `|N|` is not prime).
+**Composite terms of Lucas sequences with positive discriminant.** Let $U = U(P, Q)$ be the
+Lucas sequence with integer parameters $P \ne 0$ and $Q \ne 0$ such that $\gcd(P, Q) = 1$ and
+$D = P^2 - 4Q > 0$, and let $m \ge 5$ be an odd integer. If $m$ is not prime, then $U_m$ is
+composite; and $U_{2m}/P$ is always composite. Here an integer $N$ is composite when $|N| > 1$
+and $|N|$ is not prime.
+
+Since $D > 0$, the conditions $P \ne 0$ and $Q \ne 0$ say that $U$ is nondegenerate. The quotient
+$U_{2m}/P$ is an integer because $P \mid U_{2m}$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

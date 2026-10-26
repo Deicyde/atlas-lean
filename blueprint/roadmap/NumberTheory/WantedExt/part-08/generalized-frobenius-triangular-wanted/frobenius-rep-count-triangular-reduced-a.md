@@ -13,8 +13,8 @@ parity of `n`): with `d₁ = gcd(t_{n+1}, t_{n+2})`,
 
 ## Depends on
 
-- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
-- [Frobenius Rep Count](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
+- [Generalized Frobenius number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Number of representations by a vector of generators](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
 - [Triangular Frobenius Bound](triangular-frobenius-bound.md)
 - [Triangular Frobenius X](triangular-frobenius-x.md)
 - [Triangular Frobenius Y](triangular-frobenius-y.md)

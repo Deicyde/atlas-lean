@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseGood_of_even
 ---
 
-# Is Neg Base Good of even
+# Even bases at most $-4$ make every finite set of positive integers good
 
-For even `b ≤ -4`, every finite set of positive integers is `(2, b)`-good.
+**Even bases at most $-4$ make every finite set of positive integers good.** Let $b \le -4$
+be an even integer. Then every finite set of positive integers is $(2, b)$-good.
 
 ## Depends on
 
-- [Is Neg Base Good](is-neg-base-good.md)
+- [Good sets for the digit-square map](is-neg-base-good.md)
 
 ## Sources
 

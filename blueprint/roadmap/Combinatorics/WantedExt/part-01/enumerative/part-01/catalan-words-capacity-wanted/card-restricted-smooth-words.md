@@ -14,7 +14,7 @@ the central trinomial coefficient: the coefficient of $X^{n-1}$ in $(1 + X + X^2
 ## Depends on
 
 - [Restricted smooth words](restricted-smooth-words.md)
-- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

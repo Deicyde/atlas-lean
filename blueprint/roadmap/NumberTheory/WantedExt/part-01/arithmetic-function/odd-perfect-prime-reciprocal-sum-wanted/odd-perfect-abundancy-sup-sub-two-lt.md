@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_abundancySup_sub_two_lt
 ---
 
-# Odd Perfect abundancy Sup sub two lt
+# Surplus of an odd perfect number with least prime factor at least 11
 
-If `n` is an odd perfect number with least prime factor `p₁ ≥ 11`, then its surplus
-satisfies `S(n) = H(n) - 2 < 25/(8 p₁ log p₁)`.
+**Surplus of an odd perfect number with least prime factor at least 11.** Let $n$ be an odd
+perfect number whose least prime factor $p_1$ satisfies $p_1 \ge 11$, and let
+$H(n) = \prod_{p \mid n} p/(p-1)$, the product over the primes $p$ dividing $n$. Then its surplus
+$H(n) - 2$ satisfies $H(n) - 2 < \frac{25}{8 p_1 \log p_1}$.
 
 ## Depends on
 

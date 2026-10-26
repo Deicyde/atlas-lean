@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.one_add_two_mul_pow_eq_lucasU_pow_iff
 ---
 
-# One add two mul pow eq lucas U pow iff
+# Solutions of $1 + 2x^p = U_n^q$ for Lucas sequences with $y = \pm 1$
 
-Theorem 1.1, first part (= Proposition 3.1, the case `k = 2`): for `y = ±1` and positive
-`n, p, q, x`, `1 + 2x^p = U_n(x, y)^q` holds exactly for
-`(n, p, q, x, y) = (4, p, 1, 1, -1), (1 + 2^{p+1}, p, 1, 2, 1), (3, 2, 2, 2, 1), (3, 1, 1, 2, -1),
-(5, 3, 1, 3, 1)`.
+**Solutions of $1 + 2x^p = U_n^q$ for Lucas sequences with $y = \pm 1$.** Let $x$ be a
+positive integer, let $y \in \{1, -1\}$, and let $(U_m)$ be the Lucas sequence with parameters
+$(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$. For positive integers
+$n$, $p$, $q$, the equation $1 + 2x^p = U_n^q$ holds if and only if $(n, p, q, x, y)$ is one of
+$(4, p, 1, 1, -1)$, $(1 + 2^{p+1}, p, 1, 2, 1)$, $(3, 2, 2, 2, 1)$, $(3, 1, 1, 2, -1)$ and
+$(5, 3, 1, 3, 1)$, where $p$ is arbitrary in the first two.
+
+Since $U_1 = 1$ and $U_2 = x$, this is the case $k = 2$ of the equation
+$\sum_{j=1}^k j U_j^p = U_n^q$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

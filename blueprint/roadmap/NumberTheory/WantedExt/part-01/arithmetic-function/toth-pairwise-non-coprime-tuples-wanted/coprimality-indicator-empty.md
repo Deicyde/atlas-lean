@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coprimalityIndicator_empty
 ---
 
-# Coprimality Indicator empty
+# Coprimality indicator of the empty graph
 
-With no edges, `δ_G = 1`.
+**Coprimality indicator of the empty graph.** Let $k \in \mathbb{N}$ and let $G$ be the graph
+on $k$ vertices with no edges, and let $\delta_G$ be its coprimality indicator. Then
+$\delta_G(n) = 1$ for every $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$.
 
 ## Depends on
 
-- [Coprimality Indicator](coprimality-indicator.md)
+- [Coprimality indicator of a graph](coprimality-indicator.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_three_ne_zero
 ---
 
-# Multiplicative additive on sum two triangular zero of three ne zero
+# Park's Lemma 3: vanishing from 4 to 21 when the value at 2 is zero and at 3 is not
 
-Park's Lemma 3: under the same hypotheses, if `f 2 = 0` and
-`f 3 ≠ 0`, then `f n = 0` for `4 ≤ n ≤ 21`.
+**Park's Lemma 3: vanishing from 4 to 21 when the value at 2 is zero and at 3 is not.** Let
+$f$ be a multiplicative arithmetic function with values in $\mathbb{C}$ such that
+$f(a + b) = f(a) + f(b)$ whenever $a$ and $b$ are both sums of two positive triangular numbers.
+If $f(2) = 0$ and $f(3) \neq 0$, then $f(n) = 0$ for every natural number $n$ with
+$4 \le n \le 21$.
 
 ## Depends on
 
-- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
+- [Sums of two positive triangular numbers](is-sum-two-positive-triangular.md)
 
 ## Sources
 

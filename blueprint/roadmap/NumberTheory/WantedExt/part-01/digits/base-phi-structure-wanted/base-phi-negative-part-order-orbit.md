@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.basePhi_negative_part_order_orbit
 ---
 
-# Base Phi negative part order orbit
+# The codes of the negative parts follow an orbit of addition modulo a Fibonacci number
 
-The order of the `β⁻`-words on `Ξ_n = [L_{2n-1}+1, L_{2n+1}]`, `n ≥ 1`:
-coding each `N ∈ Ξ_n` by `C(N) = Z⁻¹(γ⁻(N)) = ∑_{i ∈ β⁻(N)} F_{i+2n}` and
-merging runs of equal consecutive codes (tridents), the codes in increasing
-order of `N` are `F_{2n} - 1 + j F_{2n-2} mod F_{2n}`, `j = 0, …, F_{2n} - 1`:
-the orbit of `F_{2n} - 1` under addition of `F_{2n-2}` in `ℤ/F_{2n}ℤ`. The code
-function `c` is any function agreeing with `C` on base phi expansions.
+**The codes of the negative parts follow an orbit of addition modulo a Fibonacci number.**
+Let $n \ge 1$, write $F_k$ for the Fibonacci numbers and $L_k$ for the Lucas numbers, and let
+$c$ be a function from the natural numbers to the natural numbers such that
+$c(N) = \sum_{i \in S,\, i < 0} F_{i+2n}$ (with $F_k$ read as $0$ for $k < 0$) whenever $S$ is a
+base phi expansion of $N$. List the values $c(N)$ for $N = L_{2n-1} + 1, \dots, L_{2n+1}$ (the
+interval $\Xi_n$) in increasing order of $N$, and merge every run of equal consecutive values
+into a single entry. The resulting list is $(F_{2n} - 1 + j F_{2n-2}) \bmod F_{2n}$ for
+$j = 0, 1, \dots, F_{2n} - 1$: the orbit of $F_{2n} - 1$ under addition of $F_{2n-2}$ in
+$\mathbb{Z}/F_{2n}\mathbb{Z}$.
+
+Here $c(N)$ is the paper's code $C(N)$ of the negative part $\beta^-(N)$ (the digits of $N$ at
+negative positions), and the merged runs are its tridents.
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Base phi expansion](is-base-phi-expansion.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

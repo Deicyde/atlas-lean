@@ -6,13 +6,15 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.ImaginaryQuadraticDiscriminantDecomposition.u_ge_one
 ---
 
-# U ge one
+# The conductor of a discriminant decomposition is at least one
 
-The conductor stored by a decomposition is at least one.
+**The conductor of a discriminant decomposition is at least one.** For every decomposition of
+an integer $D$ into a conductor $u$ and a fundamental imaginary quadratic discriminant $D_K$,
+we have $u \ge 1$.
 
 ## Depends on
 
-- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
+- [Conductor decomposition of an imaginary quadratic discriminant](imaginary-quadratic-discriminant-decompo.md)
 
 ## Sources
 

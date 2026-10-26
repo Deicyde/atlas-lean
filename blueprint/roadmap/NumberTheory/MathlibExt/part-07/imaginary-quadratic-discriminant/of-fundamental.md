@@ -5,14 +5,17 @@ statement: formalized
 lean: ImaginaryQuadraticDiscriminant.ImaginaryQuadraticDiscriminantDecomposition.ofFundamental
 ---
 
-# Of Fundamental
+# Decomposition from a conductor and a fundamental discriminant
 
-Construct a decomposition from its conductor, fundamental discriminant, and equation.
+**Decomposition from a conductor and a fundamental discriminant.** Let $D$ be an integer. If
+$u \ge 1$ is an integer, $D_K$ is a fundamental imaginary quadratic discriminant and
+$D = u^2 D_K$, then $u$ and $D_K$ form a decomposition of $D$ into the conductor $u$ and the
+fundamental imaginary quadratic discriminant $D_K$.
 
 ## Depends on
 
-- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
-- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Conductor decomposition of an imaginary quadratic discriminant](imaginary-quadratic-discriminant-decompo.md)
+- [Fundamental imaginary quadratic discriminant](is-fundamental-imaginary-quadratic-discr.md)
 
 ## Sources
 

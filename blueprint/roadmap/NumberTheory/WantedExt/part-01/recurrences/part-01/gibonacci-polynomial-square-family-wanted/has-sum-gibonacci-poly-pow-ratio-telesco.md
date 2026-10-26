@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_gibonacciPoly_pow_ratio_telescoping
 ---
 
-# Has Sum gibonacci Poly pow ratio telescoping
+# A telescoping series of powers of gibonacci polynomial ratios
 
-Lemma 2.1: for positive integers `k`, `r`, `t`, `m = λ`, `p` with `t ≤ 2p`, real `x > 0` and
-`g_n = f_n(x)` or `l_n(x)`,
-`∑_{n ≥ 1} [g^λ_{(2pn+t-2p)k+r} / g^λ_{(2pn+t-2p)k} - g^λ_{(2pn+t)k+r} / g^λ_{(2pn+t)k}]
-  = g^λ_{tk+r} / g^λ_{tk} - α^{λr}`,
-as a `HasSum` over `n + 1`. The paper's integer `x` is replaced by real `x > 0` (see the module
-docstring for `x ≤ 0`); `p ≥ 1` follows from `1 ≤ t ≤ 2p`.
+**A telescoping series of powers of gibonacci polynomial ratios.** Let $x > 0$ be real, let
+$\alpha = (x + \sqrt{x^2 + 4})/2$, and let $g_n$ be either the Fibonacci polynomials $f_n(x)$,
+given by $f_0 = 0$ and $f_1 = 1$, or the Lucas polynomials $l_n(x)$, given by $l_0 = 2$ and
+$l_1 = x$, where both satisfy $z_{n+2} = x z_{n+1} + z_n$. Let $k$, $r$, $t$, $\lambda$ be positive
+integers and $p$ a natural number with $t \le 2p$. Then the series
+
+$$\sum_{n=1}^{\infty} \left[ \left( \frac{g_{(2pn+t-2p)k+r}}{g_{(2pn+t-2p)k}} \right)^{\lambda} -
+\left( \frac{g_{(2pn+t)k+r}}{g_{(2pn+t)k}} \right)^{\lambda} \right]$$
+
+converges unconditionally, and its sum is
+$\left( g_{tk+r} / g_{tk} \right)^{\lambda} - \alpha^{\lambda r}$.
+
+The source takes $x$ to be an integer; the statement is made for real $x > 0$, which contains the
+positive integers.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -7,16 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.stern_odd
 ---
 
-# Stern odd
+# Odd-index recurrence for the Stern sequence
 
-Odd recurrence `sternSequence (2 * n + 1) = sternSequence n + sternSequence (n + 1)`
-for `n ≥ 1` (Stern sequence `jis_term_8e87f9eebae5b6160acdc06a`, OEIS A002487;
-JIS Lansing, lines 92-103; JIS Dennison, lines 80-85).
+**Odd-index recurrence for the Stern sequence.** For every natural number $n \ge 1$, the
+Stern sequence $s$ satisfies $s(2n + 1) = s(n) + s(n + 1)$.
 
 ## Depends on
 
-- [Stern Sequence](stern-sequence.md)
+- [Stern's diatomic sequence](stern-sequence.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SternSequence](../../../../../sources/v2/MathlibExt.md)
+- Stern sequence `jis_term_8e87f9eebae5b6160acdc06a`, OEIS A002487; JIS Lansing, lines 92-103; JIS Dennison, lines 80-85.

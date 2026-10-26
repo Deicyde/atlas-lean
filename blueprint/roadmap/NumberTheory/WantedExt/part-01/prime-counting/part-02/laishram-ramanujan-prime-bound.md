@@ -6,13 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.laishram_ramanujan_prime_bound
 ---
 
-# Laishram Ramanujan Prime Bound Wanted
+# Laishram's upper bound for Ramanujan primes
 
-Laishram upper bound for the nth Ramanujan prime (JIS THM laishram):
-if `R` is the nth Ramanujan prime, in the sense of the existing predicate
-`IsNthRamanujanPrime` (which already contains positivity of `n`),
-then `R < p_{3n}` (one-indexed), stated with zero-indexed
-`Nat.nth Nat.Prime (3 * n - 1)`.
+**Laishram's upper bound for Ramanujan primes.** Let $p_k$ denote the $k$-th prime, so that
+$p_1 = 2$. For all natural numbers $n$ and $R$, if $R$ is the $n$-th Ramanujan prime (which
+entails $n \ge 1$), then $R < p_{3n}$.
 
 ## Depends on
 

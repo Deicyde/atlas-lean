@@ -25,7 +25,7 @@ No hypothesis that the $\beta_i$ are nonzero is needed.
 
 ## Depends on
 
-- [Hankel Transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
+- [Hankel transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Sources
 

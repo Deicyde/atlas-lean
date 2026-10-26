@@ -15,10 +15,10 @@ Lemma 3.
 
 ## Depends on
 
-- [Has Base Depth](has-base-depth.md)
-- [Affine Scale Set](affine-scale-set.md)
-- [Irwin Measure](irwin-measure.md)
-- [Normalized String Value](normalized-string-value.md)
+- [Base depth of a real number](has-base-depth.md)
+- [Scaled translate of a set](affine-scale-set.md)
+- [Irwin measure](irwin-measure.md)
+- [Normalized value of a digit string](normalized-string-value.md)
 
 ## Sources
 

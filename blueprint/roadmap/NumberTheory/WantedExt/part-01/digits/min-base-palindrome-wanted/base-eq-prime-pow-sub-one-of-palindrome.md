@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.base_eq_prime_pow_sub_one_of_palindrome
 ---
 
-# Base eq prime pow sub one of palindrome
+# Even-length palindromic prime powers have base one less than a power of the prime
 
-If `p` is prime and `N = p^n` has a palindromic representation
-`(c_k, …, c_0)_b` with `k` odd (an even number of digits), then `b = p^x - 1` for
-some `x`.
+**Even-length palindromic prime powers have base one less than a power of the prime.** Let
+$p$ be a prime and let $n$ and $b \ge 2$ be natural numbers. If the base-$b$ representation of
+$p^n$ is a palindrome with an even number of digits, then $b = p^x - 1$ for some natural number
+$x$.
 
 ## Depends on
 

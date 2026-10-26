@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_lucasIndexDivisibleSet
 ---
 
-# One mem lucas Index Divisible Set
+# The index-divisible set of a Lucas sequence contains $1$
 
-`1 ∈ T(U)`.
+**The index-divisible set of a Lucas sequence contains $1$.** For all integers $P, Q$ with
+$Q \ne 0$, the number $1$ lies in the set $T(U)$ of positive integers $n$ coprime to $Q$ with
+$n \mid U_n$, where $U = U(P, Q)$ is their Lucas sequence.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Index Divisible Set](lucas-index-divisible-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Index-divisible set of a Lucas sequence](lucas-index-divisible-set.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

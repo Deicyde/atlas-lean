@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.calzado_shifted_primes_sifted_multiple_le_sifted
 ---
 
-# Calzado shifted primes sifted multiple le sifted
+# Relative bound for sifted shifted primes divisible by a large prime
 
-Lemma 6, equation (16), which is condition (7) of Theorem 1 for
-`A = {n + a : n ≤ x prime}`: for `a` even and nonzero,
-`S(A_ℓ, P, x^{1/5}) ≪ S(A, P, x^{1/5}) / φ(ℓ)` uniformly for primes
-`x^{1/5} < ℓ ≤ x^{1/2}`, for all sufficiently large `x`.
+**Relative bound for sifted shifted primes divisible by a large prime.** Let $a$ be a nonzero
+even integer. For real $x$ let $S(x)$ be the number of primes $n \le x$ such that no prime
+$q < x^{1/5}$ divides $n + a$, and for a prime $\ell$ let $S_\ell(x)$ be the number of those $n$
+for which moreover $\ell$ divides $n + a$. There is a constant $C$ such that for all sufficiently
+large $x$ and every prime $\ell$ with $x^{1/5} < \ell \le x^{1/2}$,
+$S_\ell(x) \le C S(x) / \varphi(\ell)$, where $\varphi$ is Euler's totient function.
 
 ## Depends on
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.projective_doubling_minimalPeriod_le_projectiveOrderTwo
 ---
 
-# Projective doubling minimal Period le projective Order Two
+# Cycle lengths of doubling on pairs of projective classes
 
-Every cycle of the doubling map `{[r], [s]} ↦ {[2r], [2s]}` on unordered pairs of
-distinct nonzero projective classes modulo `B` has length at most `λ(B)`. A class
-`[x] = {x, -x}` is a `Finset (ZMod B)` and a pair is a two-element set of classes, as in
-`four_digit_kaprekar_structural_classification`; every such pair is periodic and its
-minimal period is at most `λ(B)`.
+**Cycle lengths of doubling on pairs of projective classes.** Let $B > 3$ be odd. For
+$x \in \mathbb{Z}/B\mathbb{Z}$ write $[x] = \{x, -x\}$ and $2C = \{2c : c \in C\}$ for a subset
+$C$ of $\mathbb{Z}/B\mathbb{Z}$, and let $D$ be the doubling map sending a set $T$ of subsets of
+$\mathbb{Z}/B\mathbb{Z}$ to $\{2C : C \in T\}$. If $S = \{[r], [s]\}$ for nonzero
+$r, s \in \mathbb{Z}/B\mathbb{Z}$ with $[r] \ne [s]$, then $S$ is a periodic point of $D$ and
+its minimal period is at most $\lambda(B)$, the projective order of $2$ modulo $B$.
 
 ## Depends on
 
-- [Projective Order Two](projective-order-two.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

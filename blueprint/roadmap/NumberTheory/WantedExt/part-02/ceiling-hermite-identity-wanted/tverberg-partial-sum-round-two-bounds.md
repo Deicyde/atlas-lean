@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tverbergPartialSum_round_two_bounds
 ---
 
-# Tverberg Partial Sum round two bounds
+# Bounds for partial Tverberg sums of two integers under rounding half up
 
-Theorem 9: for `a, b ∈ ℤ`, `m ∈ ℕ` and `K ≥ 0`, `-⌊m/2⌋ ≤ S_3({a, b}, m, K) ≤ ⌊m/2⌋`, and the
-lower bound is attained. The paper's existential "there are `a, b, m, K`" is trivial at `m = 1`
-(`⌊1/2⌋ = 0`); it is stated through the witness of the paper's proof, for every even `m = 2(r + 1)`:
-`a = b = r + 1`, `K = m/2 - 1 = r`. The bound is stated for every natural `m` (trivial at `0`).
+**Bounds for partial Tverberg sums of two integers under rounding half up.** Let
+$r^+(y) = \lfloor y + 1/2 \rfloor$ be rounding to the nearest integer with ties rounded up. For
+integers $a, b, k$ and a natural number $m$, let
+$f(a, b; m, k) = r^+(k/m) - r^+((k + a)/m) - r^+((k + b)/m) + r^+((k + a + b)/m)$ be
+Tverberg's sum of $r^+$ at $(a, b)$, with $x/0 = 0$. For all integers $a, b$ and natural
+numbers $m, K$,
+$-\lfloor m/2 \rfloor \le \sum_{k=0}^{K} f(a, b; m, k) \le \lfloor m/2 \rfloor$. The lower bound
+is attained: for every natural number $r$,
+$\sum_{k=0}^{r} f(r + 1, r + 1; 2(r + 1), k) = -(r + 1)$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

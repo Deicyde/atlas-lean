@@ -14,7 +14,7 @@ lean: MathlibExt.NumberTheory.SuperFibocatalanWanted.fiboCatalan_identity
 ## Depends on
 
 - [Fibo Catalan](fibo-catalan.md)
-- [Fibonacci Factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
+- [Fibonacci factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_lucasU_dvd_lucasU_of_lt
 ---
 
-# Not lucas U dvd lucas U of lt
+# $U_n$ divides none of $U_1, \dots, U_{n-1}$
 
-For nondegenerate `U(P, Q)` with `D > 0` and `n ≥ 3`, the rank of apparition of
-`U_n` is `n`: `U_n` divides no `U_k` with `0 < k < n`.
+**$U_n$ divides none of $U_1, \dots, U_{n-1}$.** Let $P$ and $Q$ be integers with $P \ne 0$,
+$Q \ne 0$ and $D = P^2 - 4Q > 0$, and let $U_n$ be the Lucas sequence $U(P, Q)$. Then for every
+$n \ge 3$ and every $k$ with $0 < k < n$, $U_n$ does not divide $U_k$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

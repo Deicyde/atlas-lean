@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.qrDowlingNumber_eq_sum
 ---
 
-# Qr Dowling Number eq sum
+# $(q, r)$-Dowling numbers as sums of coefficients
 
-A `(q, r)`-Dowling number is the sum of its Whitney coefficients.
+**$(q, r)$-Dowling numbers as sums of coefficients.** Let $R$ be a semiring and let
+$W(n, k) \in R$ for all natural numbers $n$ and $k$. For every natural number $n$, the
+$(q, r)$-Dowling number of $W$ at $n$ equals $\sum_{k=0}^{n} W(n, k)$.
 
 ## Depends on
 
-- [Qr Dowling Number](qr-dowling-number.md)
+- [$(q, r)$-Dowling number](qr-dowling-number.md)
 
 ## Proof depends on
 
-- [Qr Dowling Polynomial](qr-dowling-polynomial.md)
+- [$(q, r)$-Dowling polynomial](qr-dowling-polynomial.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.kappaMin
 ---
 
-# Kappa Min
+# The minimal exponent $\kappa_{\min}$
 
-`κ_min = min_P κ(P)` over the monic irreducible `P`.
+**The minimal exponent $\kappa_{\min}$.** Let $F$ be a field and let $\kappa$ be a function
+from $F[T]$ to the natural numbers. Then $\kappa_{\min}$ is the minimum of $\kappa(P)$ over all
+monic irreducible polynomials $P \in F[T]$.
 
 ## Depends on
 

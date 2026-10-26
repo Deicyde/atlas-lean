@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.thinned_wallis_prime_product_tendsto_pos_iff
 ---
 
-# Thinned wallis prime product tendsto pos iff
+# Convergence of thinned Wallis-type prime products
 
-With the notation of Theorem 1, `lim_{x → ∞} P_S(x)` exists in `(0, ∞)` if and only if
-`μ(S) = 0`.
+**Convergence of thinned Wallis-type prime products.** Let $m \ge 2$, let $q = 2^m$, and let
+$S$ be a set of units of $\mathbb{Z}/q\mathbb{Z}$. Let $\chi_4$ be the nontrivial Dirichlet
+character modulo $4$, put $\mu(S) = \sum_{a \in S} \chi_4(a)$, where $\chi_4(a)$ means $\chi_4$ of
+the reduction of $a$ modulo $4$, and for real $x$ let
+
+$$P_S(x) = \prod_{p \le x,\ p \bmod q \in S} \frac{p - \chi_4(p)}{p + \chi_4(p)},$$
+
+the product running over primes $p$. Then $P_S(x)$ converges as $x \to \infty$ to a positive real
+limit if and only if $\mu(S) = 0$.
 
 ## Depends on
 

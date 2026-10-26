@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isDigraphCycle_pair
 ---
 
-# Is Digraph Cycle pair
+# Two-vertex cycles of a digraph on the integers
 
-A two-vertex list `(x, y)` is a cycle exactly when `x ≠ y` and both edges
-`x → y`, `y → x` are present.
+**Two-vertex cycles of a digraph on the integers.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+$x, y \in \mathbb{Z}$. The list $(x, y)$ is a cycle of $R$ if and only if $x \ne y$ and $R$ has both
+edges $x \to y$ and $y \to x$.
 
 ## Depends on
 
-- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Cycles of a digraph on the integers](is-digraph-cycle.md)
 
 ## Sources
 

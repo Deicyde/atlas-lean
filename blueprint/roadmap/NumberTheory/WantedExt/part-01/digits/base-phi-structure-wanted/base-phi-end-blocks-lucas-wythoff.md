@@ -17,10 +17,10 @@ stated as a union together with a `Disjoint` conjunct.
 
 ## Depends on
 
-- [Base Phi Occurrences](base-phi-occurrences.md)
-- [Beatty Set](beatty-set.md)
-- [Beatty Set₀](beatty-set-2.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Occurrence set of a digit block](base-phi-occurrences.md)
+- [Terms of a generalized Beatty sequence](beatty-set.md)
+- [Terms of a generalized Beatty sequence from index zero](beatty-set-2.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

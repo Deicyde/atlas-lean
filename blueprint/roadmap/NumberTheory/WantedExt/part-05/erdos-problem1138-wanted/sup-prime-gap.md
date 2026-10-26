@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Gap](../../../MathlibExt/part-10/prime-gap.md)
+- [Prime gap](../../../MathlibExt/part-10/prime-gap.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isKDescendant_one
 ---
 
-# Is KDescendant one
+# The $1$-descendants are the out-neighbours
 
-The `1`-descendants (successors) of `m` are the out-neighbours of `m`.
+**The $1$-descendants are the out-neighbours.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+$m, n \in \mathbb{Z}$. Then $n$ is a $1$-descendant of $m$ in $R$ if and only if $R$ has an edge
+$m \to n$.
 
 ## Depends on
 
-- [Is KDescendant](is-kdescendant.md)
+- [$k$-descendants in a digraph on the integers](is-kdescendant.md)
 
 ## Sources
 

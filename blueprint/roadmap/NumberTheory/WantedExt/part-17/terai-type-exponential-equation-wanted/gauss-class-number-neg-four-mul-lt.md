@@ -15,7 +15,7 @@ Gauss-reduced forms of discriminant `-4D`.
 
 ## Depends on
 
-- [Gauss Class Number](../../part-01/quadratic-forms/kronecker-form-sums-wanted/gauss-class-number.md)
+- [Gauss class number of a discriminant](../../part-01/quadratic-forms/kronecker-form-sums-wanted/gauss-class-number.md)
 
 ## Sources
 

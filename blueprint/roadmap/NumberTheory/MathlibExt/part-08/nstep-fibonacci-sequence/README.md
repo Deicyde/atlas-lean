@@ -4,8 +4,8 @@ navigation: module
 
 # NStep Fibonacci Sequence
 
-- [N Step Fibonacci](n-step-fibonacci.md)
-- [N Step Fibonacci add two](n-step-fibonacci-add-two.md)
-- [N Step Fibonacci zero](n-step-fibonacci-zero.md)
-- [N Step Fibonacci one](n-step-fibonacci-one.md)
-- [N Step Fibonacci three five](n-step-fibonacci-three-five.md)
+- [N-step Fibonacci numbers](n-step-fibonacci.md)
+- [Recurrence for the N-step Fibonacci numbers](n-step-fibonacci-add-two.md)
+- [Zeroth N-step Fibonacci number](n-step-fibonacci-zero.md)
+- [First N-step Fibonacci number](n-step-fibonacci-one.md)
+- [The tribonacci number with index 5](n-step-fibonacci-three-five.md)

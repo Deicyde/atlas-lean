@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Push Bound](push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](push-bound.md)
 
 ## Sources
 

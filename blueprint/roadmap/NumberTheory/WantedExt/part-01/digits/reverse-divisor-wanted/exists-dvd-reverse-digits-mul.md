@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.exists_dvd_reverseDigits_mul
 ---
 
-# Proposition 6
+# Sufficient conditions for a multiple with divisible reversal
 
-**Proposition 6**, sufficient conditions: the
-hypothesis of Proposition 6 is satisfied if
-`gcd(n, 10) = 1`, or if `n` is a palindrome, or if `n`
-is a reverse divisor.
+**Sufficient conditions for a multiple with divisible reversal.** Let $n$ be a natural
+number such that $\gcd(n, 10) = 1$, or $n$ equals its decimal reversal, or $n$ is a reverse
+divisor. Then there is a natural number $k_0 \ge 1$ such that $n$ divides the decimal reversal
+of $k_0 n$.
 
 ## Depends on
 
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 - [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources

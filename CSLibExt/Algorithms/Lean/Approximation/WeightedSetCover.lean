@@ -84,9 +84,13 @@ theorem bestRatioSet_eq_none {w : Finset α → ℚ} {F : List (Finset α)} {U :
   rw [this] at hmem
   simp at hmem
 
-/-- Weighted greedy set cover of `U` from the family `F` with costs `w`: take a set meeting `U`
-with the least cost per newly covered element, remove it from `U`, repeat; stop when no set meets
-`U`. -/
+/-- **Weighted greedy set cover.** Let $F = [S_1, \dots, S_n]$ be a list of finite sets, $U$ a
+finite set and $w$ a function giving each finite set $S$ a rational cost $w(S)$. The weighted
+greedy set cover of $U$ from $F$ with costs $w$ is computed as follows. If no $S_i$ meets $U$,
+the result is the empty list. Otherwise let $T$ be the first $S_i$ in the list with
+$S_i \cap U \ne \emptyset$ that minimizes $w(S_i) / |S_i \cap U|$ among the sets of $F$ meeting
+$U$; the result is $T$ followed by the weighted greedy set cover of $U \setminus T$ from $F$ with
+costs $w$. Each step, including the last one, costs $n + |S_1| + \dots + |S_n|$. -/
 def weightedGreedySetCover (w : Finset α → ℚ) (F : List (Finset α)) (U : Finset α) :
     TimeM ℕ (List (Finset α)) := do
   ✓[F.length + (F.map Finset.card).sum]

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseHappy_two_consecutive_runs_odd
 ---
 
-# Is Neg Base Happy two consecutive runs odd
+# Arithmetic progressions of happy numbers in odd negative bases
 
-Grundman–Harris, part (4): for odd `b ≤ -3` there are arbitrarily long finite arithmetic
-progressions with difference `2` of `b`-happy numbers.
+**Arithmetic progressions of happy numbers in odd negative bases.** Let $b \le -3$ be an odd
+integer. For every natural number $N$ there is an integer $n$ such that $n + 2i$ is $b$-happy for
+every natural number $i < N$. Thus there are arbitrarily long finite arithmetic progressions with
+common difference $2$ of $b$-happy integers.
+
+This is part (4) of the theorem of Grundman and Harris.
 
 ## Depends on
 
-- [Is Neg Base Happy](is-neg-base-happy.md)
+- [Happy integers in a negative base](is-neg-base-happy.md)
 
 ## Sources
 

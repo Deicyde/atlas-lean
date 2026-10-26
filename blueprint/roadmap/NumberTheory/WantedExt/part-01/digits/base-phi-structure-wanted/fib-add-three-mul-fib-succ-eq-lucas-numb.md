@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fib_add_three_mul_fib_succ_eq_lucasNumber
 ---
 
-# Fib add three mul fib succ eq lucas Number
+# Lucas numbers from Fibonacci numbers
 
-`F_n + 3 F_{n+1} = L_{n+2}` for all `n ≥ 0`.
+**Lucas numbers from Fibonacci numbers.** For every natural number $n$,
+$F_n + 3F_{n+1} = L_{n+2}$, where $F_j$ is the $j$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$) and
+$L_j$ is the $j$-th Lucas number ($L_0 = 2$, $L_1 = 1$).
 
 ## Depends on
 
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

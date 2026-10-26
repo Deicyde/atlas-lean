@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.beatty_floor_fiber_card_sets_isBeatty
 ---
 
-# Beatty floor fiber card sets is Beatty
+# The values of $\lfloor n\alpha\rfloor$ of each multiplicity form Beatty sets
 
-For irrational `α` with `1 / (k + 1) < α < 1 / k`, the positive integers attained by
-`⌊nα⌋` (`n ≥ 1`) exactly `k + 1` times and those attained exactly `k` times are two
-positive Beatty sets.
+**The values of $\lfloor n\alpha\rfloor$ of each multiplicity form Beatty sets.** Let $k$ be a
+positive integer and let $\alpha$ be an irrational number with $1/(k + 1) < \alpha < 1/k$. Then
+there are real numbers $\gamma > 0$ and $\delta > 0$ such that the positive integers $t$ that
+equal $\lfloor n\alpha\rfloor$ for exactly $k + 1$ positive integers $n$ are exactly the numbers
+$\lfloor m\gamma\rfloor$ for positive integers $m$, and the positive integers $t$ that equal
+$\lfloor n\alpha\rfloor$ for exactly $k$ positive integers $n$ are exactly the numbers
+$\lfloor m\delta\rfloor$ for positive integers $m$.
 
 ## Depends on
 

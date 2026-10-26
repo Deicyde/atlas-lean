@@ -6,13 +6,15 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_mk
 ---
 
-# Is Imaginary Quadratic Discriminant mk
+# Criterion for an imaginary quadratic discriminant
 
-Constructor for an imaginary quadratic discriminant.
+**Criterion for an imaginary quadratic discriminant.** If an integer $D$ satisfies $D < 0$
+and either $D \equiv 0 \pmod 4$ or $D \equiv 1 \pmod 4$, then $D$ is an imaginary quadratic
+discriminant.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

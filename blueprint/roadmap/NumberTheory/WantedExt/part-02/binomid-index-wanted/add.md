@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtension.add
 ---
 
-# Add
+# Lex-minimal extensions are closed under addition
 
-Corollary 1: the componentwise sum of two lex-minimal extensions is a
-lex-minimal extension (so `L` is a monoid under componentwise addition).
+**Lex-minimal extensions are closed under addition.** If $\eta_1$ and $\eta_2$ are
+lex-minimal extensions, then their componentwise sum $\eta_1 + \eta_2$ is a lex-minimal
+extension.
+
+Since the zero sequence is also a lex-minimal extension, the set $L$ of lex-minimal extensions
+is a monoid under componentwise addition.
 
 ## Depends on
 
-- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Lex-minimal extensions](is-lex-minimal-extension.md)
 
 ## Sources
 

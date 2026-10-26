@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_exists_three_large_prime_divisors
 ---
 
-# Odd Perfect exists three large prime divisors
+# Goto–Ohno–Iannucci bounds on the largest prime divisors of an odd perfect number
 
-Goto and Ohno (2008) and Iannucci (1999, 2000), quoted as Lemma 1 (x): the largest, second
-largest and third largest prime divisors of an odd perfect number are at least `10 ^ 8`, `10 ^ 4`
-and `100`. Stated as the existence of three distinct prime divisors `p ≥ 10 ^ 8`, `q ≥ 10 ^ 4`,
-`r ≥ 100`, which is equivalent: the `j`-th largest prime divisor is at least the `j`-th largest of
-`p, q, r`, and conversely the three largest prime divisors are such a triple.
+**Goto–Ohno–Iannucci bounds on the largest prime divisors of an odd perfect number.** If $N$ is
+an odd perfect number, then $N$ has three distinct prime divisors $p$, $q$, $r$ with
+$p \ge 10^8$, $q \ge 10^4$ and $r \ge 100$. Equivalently, the largest, second largest and third
+largest prime divisors of $N$ are at least $10^8$, $10^4$ and $100$ respectively.
 
 ## Depends on
 

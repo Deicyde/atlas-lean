@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.three_digit_palindrome_two_pow_iff
 ---
 
-# Three digit palindrome two pow iff
+# Three-digit palindromic powers of two
 
-`2^n` has a 3-digit palindromic representation in base `b` if and only if
-`b² + 1 ≤ 2^n ≤ b³ - 1` and `(1/b)⌊2^n/b⌋ - (b-1)/b ≤ c ≤ (1/b)⌊2^n/b⌋`, where
-`c = 2^n mod b ≠ 0`.
+**Three-digit palindromic powers of two.** Let $n$ be a natural number, let $b \ge 2$ be a
+base, and let $c = 2^n \bmod b$. The base-$b$ representation of $2^n$ is a palindrome with exactly
+three digits if and only if $b^2 + 1 \le 2^n \le b^3 - 1$, $c \ne 0$, and
+$\frac{1}{b} \lfloor 2^n / b \rfloor - \frac{b - 1}{b} \le c \le
+\frac{1}{b} \lfloor 2^n / b \rfloor$.
 
 ## Depends on
 

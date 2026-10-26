@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_neg_b_pow_fibAB_even_prod
 ---
 
-# Corollary 11
+# Sum of even-indexed (a, b)-Fibonacci numbers weighted by powers of -b
 
-**Corollary 11**:
-`∑_{i=0}^n (-b)^(n-i) F_{2i} = F_n F_{n+1}`.
+**Sum of even-indexed (a, b)-Fibonacci numbers weighted by powers of -b.** Let $a, b$ be
+complex numbers and let $(F_n)$ be the $(a, b)$-Fibonacci numbers. Then for every integer
+$n \ge 0$,
+
+$$\sum_{i=0}^{n} (-b)^{n-i} F_{2i} = F_n F_{n+1}.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
 
 ## Sources
 

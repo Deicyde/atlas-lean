@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.conjectureA_prime_values_four_square
 ---
 
-# Conjecture AFour Square Prime Values Wanted
+# Infinitely many primes of the form $4k^2 + 2k + 1$
 
-Infinitely many `k : ℕ` make `4 * k ^ 2 + 2 * k + 1` prime. The source
-derives this from its Conjecture A (Bunyakovsky); formalized here as the
-infinitude statement alone (a conjecture, not proved here). Scope is only the
-`4 * k ^ 2 + 2 * k + 1` polynomial (source equation `eq:p`), not the full
-Bunyakovsky conjecture nor the `9 * k ^ 2 + 6 * k + 2` sibling.
+**Infinitely many primes of the form $4k^2 + 2k + 1$.** There are infinitely many natural
+numbers $k$ such that $4k^2 + 2k + 1$ is prime.
+
+The source derives this from its Conjecture A (Bunyakovsky's conjecture). Only this polynomial
+is stated here, not the full Bunyakovsky conjecture nor the companion polynomial $9k^2 + 6k + 2$.
 
 ## Depends on
 

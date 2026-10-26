@@ -4,7 +4,7 @@ navigation: module
 
 # Sophie Germain Prime
 
-- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
-- [Is Sophie Germain Prime iff](is-sophie-germain-prime-iff.md)
-- [Prime](prime.md)
-- [Prime two mul add one](prime-two-mul-add-one.md)
+- [Sophie Germain primes](is-sophie-germain-prime.md)
+- [Characterization of Sophie Germain primes](is-sophie-germain-prime-iff.md)
+- [Sophie Germain primes are prime](prime.md)
+- [Safe prime of a Sophie Germain prime](prime-two-mul-add-one.md)

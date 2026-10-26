@@ -16,7 +16,7 @@ $$|T_{n+1} - \alpha T_n| < \frac{2 \alpha^{-n/2}}{|\beta - \gamma|}.$$
 
 ## Depends on
 
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

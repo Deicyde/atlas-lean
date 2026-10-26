@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.fibAB
 ---
 
-# Fib AB
+# The (a, b)-Fibonacci numbers
 
-The `(a, b)`-Fibonacci numbers over `ℂ`:
-`F_0 = 0`, `F_1 = 1`, `F_{n+2} = a F_{n+1} + b F_n`.
+**The (a, b)-Fibonacci numbers.** For complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
+numbers $F^{a,b}_n$, $n \in \mathbb{N}$, are the complex numbers given by $F^{a,b}_0 = 0$,
+$F^{a,b}_1 = 1$ and $F^{a,b}_{n+2} = a F^{a,b}_{n+1} + b F^{a,b}_n$ for every $n$.
 
 ## Depends on
 

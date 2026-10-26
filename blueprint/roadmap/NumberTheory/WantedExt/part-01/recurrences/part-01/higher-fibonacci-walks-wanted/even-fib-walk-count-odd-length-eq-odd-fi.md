@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted.evenFibWalkCount_odd_length_eq_oddFibWalkCount
 ---
 
-# Lemma 5, odd board length
+# Even and odd parts of the Fibonacci self-convolution agree at odd length
 
-**Lemma 5, odd board length**: at board length `2*k - 1`, the
-even-position and odd-position walk counts are equal.
+**Even and odd parts of the Fibonacci self-convolution agree at odd length.** Let $F_n$
+denote the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$) and, for $n \ge 0$, let $E_n$ and $O_n$ be
+the sums of $F_{j+1} F_{n-j+1}$ over the even and over the odd integers $j$ with
+$0 \le j \le n$. For every integer $k \ge 1$, $E_{2k-1} = O_{2k-1}$.
 
 ## Depends on
 
-- [Even Fib Walk Count](even-fib-walk-count.md)
-- [Odd Fib Walk Count](odd-fib-walk-count.md)
+- [Even part of the Fibonacci self-convolution](even-fib-walk-count.md)
+- [Odd part of the Fibonacci walk count](odd-fib-walk-count.md)
 
 ## Sources
 

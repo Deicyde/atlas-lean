@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.polynomialDenominator_bernoulli_zero
 ---
 
-# Polynomial Denominator bernoulli zero
+# The Bernoulli polynomial $B_0(x)$ has denominator one
 
-`B_0(x) = 1` has denominator `1` (the convention `𝔇_0 = 1`).
+**The Bernoulli polynomial $B_0(x)$ has denominator one.** The Bernoulli polynomial
+$B_0(x) = 1$ has denominator $\operatorname{denom}(B_0(x)) = 1$. In the source's notation
+$\mathfrak{D}_n = \operatorname{denom}(B_n(x))$, this is the convention $\mathfrak{D}_0 = 1$.
 
 ## Depends on
 

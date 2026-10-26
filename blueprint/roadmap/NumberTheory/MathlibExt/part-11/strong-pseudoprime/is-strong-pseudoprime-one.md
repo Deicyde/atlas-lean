@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isStrongPseudoprime_one
 ---
 
-# Is Strong Pseudoprime one
+# Every odd composite is a strong pseudoprime to base 1
 
-Every odd composite number is a strong pseudoprime to base `1`.
+**Every odd composite is a strong pseudoprime to base 1.** Every odd composite number $n$
+is a strong pseudoprime to the base $1$.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
+- [Strong pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

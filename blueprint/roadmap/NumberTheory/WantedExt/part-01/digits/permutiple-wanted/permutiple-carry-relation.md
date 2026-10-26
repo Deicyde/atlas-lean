@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.permutipleCarry_relation
 ---
 
-# Permutiple Carry relation
+# Carry relation for permutiples
 
-Carry relation: for an `(n, b, σ)`-permutiple with carries `c_j`,
-`b c_{j+1} - c_j = n d_{σ(j)} - d_j` for all `0 ≤ j ≤ k` (in `ℤ`).
+**Carry relation for permutiples.** Let $n$ and $b \ge 2$ be natural numbers, let
+$\sigma$ be a permutation of $\{0, \dots, k\}$, and let $(d_k, \dots, d_0)_b$ be an
+$(n, b, \sigma)$-permutiple, where $(e_k, \dots, e_0)_b$ denotes the base-$b$ numeral
+$\sum_{j=0}^{k} e_j b^j$. Let $c_0, c_1, \dots$ be the carries of the multiplication
+$n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$. Then for every $0 \le j \le k$,
+
+$$b\, c_{j+1} - c_j = n\, d_{\sigma(j)} - d_j,$$
+
+with both sides computed in the integers.
 
 ## Depends on
 
-- [Is Permutiple](is-permutiple.md)
-- [Permutiple Carry](permutiple-carry.md)
+- [Permutiples with a given digit permutation](is-permutiple.md)
+- [Carries of a permutiple multiplication](permutiple-carry.md)
 
 ## Sources
 

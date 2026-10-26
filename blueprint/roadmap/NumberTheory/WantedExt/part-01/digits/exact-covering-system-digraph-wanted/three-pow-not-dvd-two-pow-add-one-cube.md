@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.three_pow_not_dvd_two_pow_add_one_cube
 ---
 
-# Three pow not dvd two pow add one cube
+# Bounding the power of $3$ dividing $2^{3k} + 1$
 
-If `3ᵐ ∤ (2ᵏ + 1)/3` then `3^(m+1) ∤ (2^(3k) + 1)/3`, stated in the integral form
-`3^(m+1) ∤ 2ᵏ + 1 → 3^(m+2) ∤ 2^(3k) + 1` for all `m, k ∈ ℕ` (equivalent for odd `k`,
-where `3 ∣ 2ᵏ + 1`; for even `k` the conclusion holds since `3 ∤ 2^(3k) + 1`).
+**Bounding the power of $3$ dividing $2^{3k} + 1$.** For all natural numbers $m$ and $k$, if
+$3^{m+1}$ does not divide $2^k + 1$, then $3^{m+2}$ does not divide $2^{3k} + 1$.
+
+For odd $k$, where $3$ divides $2^k + 1$, this says: if $3^m$ does not divide $(2^k + 1)/3$,
+then $3^{m+1}$ does not divide $(2^{3k} + 1)/3$. For even $k$ the conclusion holds since $3$
+does not divide $2^{3k} + 1$.
 
 ## Depends on
 

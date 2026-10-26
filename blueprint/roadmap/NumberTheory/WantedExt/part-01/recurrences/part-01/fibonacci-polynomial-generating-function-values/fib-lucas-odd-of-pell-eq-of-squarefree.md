@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.fibLucas_odd_of_pell_eq_of_squarefree
 ---
 
-# Fib Lucas odd of pell eq of squarefree
+# Pell-type solutions as rescaled odd Fibonacci–Lucas values, squarefree case
 
-Proposition 2.2: if `b ∣ a`, `b` is squarefree and `P, Q ∈ ℕ` satisfy
-`P² - (a² + 4b) Q² = -4b`, then `b^n P = L_{2n+1}` and `b^n Q = F_{2n+1}` for some `n ∈ ℕ`, where
-`F_i = F_i(1)` and `L_i = L_i(1)`.
+**Pell-type solutions as rescaled odd Fibonacci–Lucas values, squarefree case.** Let $a$ and
+$b$ be positive integers with $b \mid a$ and $b$ squarefree, and let
+$F_i(x), L_i(x) \in \mathbb{Z}[x]$ be the polynomials with $F_0 = 0$, $F_1 = 1$, $L_0 = 2$,
+$L_1 = ax$ and $G_{i+2} = ax\,G_{i+1} + b\,G_i$ for $G = F, L$ and all $i \ge 0$. If natural
+numbers $P$ and $Q$ satisfy $P^2 - (a^2 + 4b) Q^2 = -4b$, then there is $n \in \mathbb{N}$ with
+$b^n P = L_{2n+1}(1)$ and $b^n Q = F_{2n+1}(1)$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kaprekar_minimalPeriod_le_and_eq_iff
 ---
 
-# Kaprekar minimal Period le and eq iff
+# Maximal Kaprekar cycle length in odd bases
 
-Cycle-length bound: for odd `B > 3`, every terminal cycle of `K_B` on `X_B` has length
-at most `(B - 1) / 2`, and some terminal cycle has length `(B - 1) / 2` (i.e.
-`c_max(B) = (B - 1) / 2`) if and only if `B ≥ 7`, `B` is prime and `λ(B) = (B - 1) / 2`.
+**Maximal Kaprekar cycle length in odd bases.** Let $B > 3$ be odd, let $K_B$ be the
+four-digit Kaprekar map and $X_B$ its state space, and let $\lambda(B)$ be the projective order
+of $2$ modulo $B$. Every point of $X_B$ that is periodic for $K_B$ has minimal period at most
+$(B - 1)/2$. Moreover, some point of $X_B$ has minimal period exactly $(B - 1)/2$ under $K_B$
+if and only if $B \ge 7$, $B$ is prime and $\lambda(B) = (B - 1)/2$.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
-- [Projective Order Two](projective-order-two.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

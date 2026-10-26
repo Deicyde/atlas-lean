@@ -6,14 +6,16 @@ proof: formalized
 lean: PierceExpansion.length_le_maxLength
 ---
 
-# Length le max Length
+# Each Pierce length is at most the maximal Pierce length
 
-Each Pierce length is bounded by the length function.
+**Each Pierce length is at most the maximal Pierce length.** For natural numbers $n$ and $a$
+with $1 \le a \le n$, the Pierce length $\ell(n, a)$ satisfies $\ell(n, a) \le P(n)$, where
+$P(n) = \max_{1 \le b \le n} \ell(n, b)$ is the maximal Pierce length.
 
 ## Depends on
 
-- [Length](length.md)
-- [Max Length](max-length.md)
+- [Pierce length](length.md)
+- [Maximal Pierce length](max-length.md)
 
 ## Sources
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_product_shift_identity
 ---
 
-# Gibonacci product shift identity
+# Shifted product identity for two gibonacci sequences
 
-For gibonacci sequences `G`, `H` and integers `s`, `k`:
-`G_(k+1) H_(s+1) + G_(k-2) H_(s-2) = 2 G_k H_s + 2 G_(k-1) H_(s-1)`.
+**Shifted product identity for two gibonacci sequences.** Let
+$G, H : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$ and $j \mapsto H_j$, satisfy
+$G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. Then for all
+integers $s$ and $k$,
+
+$$
+G_{k+1} H_{s+1} + G_{k-2} H_{s-2} = 2 G_k H_s + 2 G_{k-1} H_{s-1}.
+$$
 
 ## Depends on
 

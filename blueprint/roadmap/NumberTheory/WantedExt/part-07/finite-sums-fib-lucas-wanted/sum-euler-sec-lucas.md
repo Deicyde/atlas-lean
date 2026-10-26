@@ -13,7 +13,7 @@ C(n,k) C(m,n) Eₖ L_{n-k} = 2`.
 ## Depends on
 
 - [Euler Sec Number](euler-sec-number.md)
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

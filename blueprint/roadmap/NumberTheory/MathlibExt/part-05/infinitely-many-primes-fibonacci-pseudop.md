@@ -7,14 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.infinitely_many_primes_fibonacci_pseudoprime
 ---
 
-# Fibonacci Pseudoprime Infinitude
+# Infinitely many Fibonacci pseudoprimes at twice-prime indices
 
-There are infinitely many primes `p` such that `F_{2p}` is a Fibonacci
-pseudoprime.
-
-A composite `n` is a Fibonacci pseudoprime when `n ∣ F_{n - (5/n)}` with
-`D = 5`; compositeness is stated explicitly (`¬n.Prime ∧ 1 < n`).
-Proves `Wanted` entry `infinitely_many_primes_fibonacci_pseudoprime`.
+**Infinitely many Fibonacci pseudoprimes at twice-prime indices.** Let $F_m$ denote the
+$m$-th Fibonacci number. There are infinitely many primes $p$ such that $n = F_{2p}$ satisfies
+$n > 1$, $n$ is not prime, and $n$ divides $F_{n - \left(\frac{5}{n}\right)}$, where
+$\left(\frac{5}{n}\right)$ is the Jacobi symbol. In other words, $F_{2p}$ is a Fibonacci
+pseudoprime: a composite number $n$ that divides $F_{n - \left(\frac{5}{n}\right)}$.
 
 ## Depends on
 

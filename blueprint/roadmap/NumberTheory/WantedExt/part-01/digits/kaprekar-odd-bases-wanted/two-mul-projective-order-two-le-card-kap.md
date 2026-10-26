@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_projectiveOrderTwo_le_card_kaprekar_cycles
 ---
 
-# Two mul projective Order Two le card kaprekar cycles
+# At least two Kaprekar cycles whose length is the projective order of 2
 
-For odd `B > 17` there are at least two terminal cycles of `K_B` of length `λ(B)`;
-stated as: at least `2 λ(B)` points of `X_B` have minimal period `λ(B)`.
+**At least two Kaprekar cycles whose length is the projective order of 2.** Let $\lambda(B)$
+denote the projective order of $2$ modulo $B$. For every odd base $B > 17$, at least $2\lambda(B)$
+points of the state space $X_B$ have minimal period exactly $\lambda(B)$ under the four-digit
+Kaprekar map $K_B$.
+
+Each terminal cycle of $K_B$ of length $\lambda(B)$ consists of $\lambda(B)$ such points, so this
+says that $K_B$ has at least two terminal cycles of length $\lambda(B)$.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
-- [Projective Order Two](projective-order-two.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

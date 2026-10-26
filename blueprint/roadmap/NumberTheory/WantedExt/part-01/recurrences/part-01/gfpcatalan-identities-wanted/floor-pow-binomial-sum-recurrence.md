@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.floorPowBinomialSum_recurrence
 ---
 
-# Floor Pow Binomial Sum recurrence
+# Recurrence for the floor-exponent binomial sums
 
-Theorem 4.2: for `n ≥ 0` and `ℓ ≥ 1`, the sums `T_ℓ(n; t) = ∑_i C(n, i) t^{⌊i/ℓ⌋}` satisfy
-`∑_{i=0}^{ℓ} C(ℓ, i) (-1)^i T_ℓ(n+ℓ-i; t) - t T_ℓ(n; t) = 0`.
+**Recurrence for the floor-exponent binomial sums.** Let $R$ be a commutative ring, $t \in R$
+and $\ell \ge 1$ an integer, and for $m \ge 0$ let
+$T_\ell(m; t) = \sum_{j=0}^{m} \binom{m}{j} t^{\lfloor j/\ell \rfloor}$. Then for every integer
+$n \ge 0$,
+
+$$\sum_{i=0}^{\ell} (-1)^i \binom{\ell}{i} T_\ell(n+\ell-i; t) - t\, T_\ell(n; t) = 0.$$
 
 ## Depends on
 

@@ -14,13 +14,13 @@ letter $m$ and the barred letter $\bar m$ occur the same number of times in $w$.
 
 ## Depends on
 
-- [Gessel Alphabet](../../part-06/gessel-word/gessel-alphabet.md)
+- [Gessel alphabet](../../part-06/gessel-word/gessel-alphabet.md)
 
 ## Proof depends on
 
-- [Is Gessel Word](../../part-06/gessel-word/is-gessel-word.md)
-- [Gessel Barred Count](../../part-06/gessel-word/gessel-barred-count.md)
-- [Gessel Unbarred Count](../../part-06/gessel-word/gessel-unbarred-count.md)
+- [Gessel word](../../part-06/gessel-word/is-gessel-word.md)
+- [Barred occurrences of a label](../../part-06/gessel-word/gessel-barred-count.md)
+- [Unbarred occurrences of a label](../../part-06/gessel-word/gessel-unbarred-count.md)
 
 ## Sources
 

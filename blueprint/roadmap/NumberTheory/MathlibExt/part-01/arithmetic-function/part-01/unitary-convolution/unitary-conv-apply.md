@@ -17,7 +17,7 @@ with $\gcd(d, n/d) = 1$, and for $n = 0$ there are none, so the sum is $0$.
 ## Depends on
 
 - [Unitary convolution](unitary-conv.md)
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

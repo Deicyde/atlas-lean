@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsPermutipleString
 ---
 
-# Is Permutiple String
+# Permutiple strings
 
-An `(n, b)`-permutiple string: a member of `L` which produces a permutiple, i.e. it is
-`(d₀, d_{σ(0)})(d₁, d_{σ(1)}) ⋯ (d_k, d_{σ(k)})` for an `(n, b, σ)`-permutiple
-`(d_k, …, d₀)_b = n (d_{σ(k)}, …, d_{σ(0)})_b`.
+**Permutiple strings.** Let $n$ and $b$ be natural numbers, and for natural numbers
+$a_0, \dots, a_k$ write $(a_k, \dots, a_0)_b = \sum_{j=0}^{k} a_j b^j$. A string $s$ of inputs
+(pairs of natural numbers) is an $(n, b)$-permutiple string when it belongs to the language $L$ of
+the $(n, b)$-Hoey-Sloane machine and there are a natural number $k$, natural numbers
+$d_0, \dots, d_k$ and a permutation $\sigma$ of $\{0, \dots, k\}$ such that $(d_k, \dots, d_0)_b$
+is an $(n, b, \sigma)$-permutiple, that is, every $d_j$ is less than $b$ and
+$(d_k, \dots, d_0)_b = n (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$, and
+$s = (d_0, d_{\sigma(0)})(d_1, d_{\sigma(1)}) \cdots (d_k, d_{\sigma(k)})$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
-- [Hoey Sloane Language](hoey-sloane-language.md)
+- [Permutiples with a given digit permutation](../permutiple-wanted/is-permutiple.md)
+- [Language of the Hoey–Sloane machine](hoey-sloane-language.md)
 
 ## Sources
 

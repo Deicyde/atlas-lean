@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.dist_round_pow_fourier_expansion
 ---
 
-# Dist round pow fourier expansion
+# Fourier expansion of a power of the distance to the nearest integer
 
-Fourier expansion of `g_k(u) = ‖u‖^k = |u - round u|^k` for a positive integer `k`: with
-`c_k(m) = ∫_0^1 g_k(u) e(-mu) du` and `e(x) = exp(2πix)`, one has
-`c_k(0) = μ_k = 1/(2^k (k+1))`, `|c_k(m)| ≤ C_k / m²` for `m ≠ 0`, the Fourier series converges
-absolutely (`∑ |c_k(m)| < ∞`) and uniformly to `g_k` (symmetric partial sums over `|m| ≤ H`),
-and for every integer `H ≥ 1`, uniformly in real `u`,
-`g_k(u) = μ_k + ∑_{0 < |m| ≤ H} c_k(m) e(mu) + O_k(1/H)`.
+**Fourier expansion of a power of the distance to the nearest integer.** Let $k$ be a
+positive integer, let $g(u) = |u - \operatorname{round}(u)|^k$ be the $k$-th power of the
+distance from a real $u$ to the nearest integer, let $e(x) = e^{2\pi i x}$, and for every
+integer $m$ let $c(m) = \int_0^1 g(u)\, e(-mu)\, du$. Then $c(0) = 1/(2^k (k + 1))$, the mean of
+$g$ over a period; there is a real constant $C$ with $|c(m)| \le C / m^2$ for every integer
+$m \ne 0$; the series $\sum_{m \in \mathbb{Z}} |c(m)|$ converges; the symmetric partial sums
+$\sum_{|m| \le H} c(m)\, e(mu)$ converge to $g(u)$ uniformly in real $u$ as $H \to \infty$; and
+there is a real constant $C'$ such that for every integer $H \ge 1$ and every real $u$,
 
-`μ_k` is written as its value `1/(2^k (k+1))` from the source's equation (periodicmean).
+$$\Bigl|g(u) - c(0) - \sum_{0 < |m| \le H} c(m)\, e(mu)\Bigr| \le \frac{C'}{H}.$$
 
 ## Depends on
 

@@ -6,11 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.meisselMertensConstant
 ---
 
-# Meissel Mertens Constant
+# The Meissel–Mertens constant
 
-The Meissel–Mertens constant
-`B = lim_{x → ∞} (∑_{p ≤ x} 1 / p - log log x) ≈ 0.2614972128`,
-defined by its standard limiting characterization.
+**The Meissel–Mertens constant.** With $p$ ranging over the primes and $\log$ the natural
+logarithm, the Meissel–Mertens constant is the real number
+
+$$B = \lim_{n \to \infty} \Bigl(\sum_{p \le n} \frac{1}{p} - \log \log n\Bigr),$$
+
+the limit taken over natural numbers $n$. Numerically, $B \approx 0.2614972128$.
 
 ## Depends on
 

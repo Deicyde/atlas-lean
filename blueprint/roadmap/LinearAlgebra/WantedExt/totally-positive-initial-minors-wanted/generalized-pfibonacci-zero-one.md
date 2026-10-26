@@ -14,9 +14,9 @@ $F_{p,n}$) is the Lucas sequence $U(p, -1)$: $W_{p,n} = U_n(p, -1)$ for every na
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Generalized $p$-Fibonacci sequence](generalized-pfibonacci.md)
-- [Lucas U](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

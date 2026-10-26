@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.brousseauCoeff_one
 ---
 
-# Brousseau Coeff one
+# The polynomial $C_k^{(1)}(n) = n - 2/k$
 
-`C_k^(1)(n) = n - 2/k`.
+**The polynomial $C_k^{(1)}(n) = n - 2/k$.** For all rational numbers $k$ and $n$, the
+coefficient polynomial $C_k^{(1)}$ for $k$-Fibonacci Brousseau sums satisfies
+$C_k^{(1)}(n) = n - 2/k$, where $2/0$ is read as $0$.
 
 ## Depends on
 
-- [Brousseau Coeff](brousseau-coeff.md)
+- [The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-coeff.md)
 
 ## Proof depends on
 
-- [Brousseau A](brousseau-a.md)
-- [Brousseau A one](brousseau-a-one.md)
-- [Brousseau A zero](brousseau-a-zero.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
+- [The value $A_k^{(1)} = 2/k$](brousseau-a-one.md)
+- [The initial value $A_k^{(0)} = 1$](brousseau-a-zero.md)
 
 ## Sources
 

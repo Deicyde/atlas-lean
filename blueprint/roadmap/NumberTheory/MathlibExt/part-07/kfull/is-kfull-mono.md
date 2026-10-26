@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.isKFull_mono
 ---
 
-# Is KFull mono
+# Monotonicity of $k$-fullness in $k$
 
-Exponent monotonicity: `k`-full implies `j`-full for `j ≤ k`.
+**Monotonicity of $k$-fullness in $k$.** Let $j \le k$ be natural numbers. Every $k$-full
+natural number is $j$-full.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

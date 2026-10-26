@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.polygonalNumber_four
 ---
 
-# Polygonal Number four
+# Square numbers as polygonal numbers
 
-Square specialization `p_4(n) = n ^ 2`.
+**Square numbers as polygonal numbers.** For every natural number $n$, the $n$-th square
+number is $p_4(n) = n^2$, where $p_s(n)$ is the $n$-th $s$-gonal number.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

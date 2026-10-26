@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.coprimalityIndicator_mul
 ---
 
-# Coprimality Indicator mul
+# Multiplicativity of the coprimality indicator
 
-Lemma 4: `δ_G` is multiplicative as a function of `k` variables:
-`δ_G(m₁n₁, …, m_kn_k) = δ_G(m) δ_G(n)` whenever
-`gcd(m₁ ⋯ m_k, n₁ ⋯ n_k) = 1`.
+**Multiplicativity of the coprimality indicator.** Let $G$ be a graph on the vertices
+$0, \dots, k-1$ given by an arbitrary set $E$ of ordered pairs of vertices, with coprimality
+indicator $\delta_G$. If $m, n \in \mathbb{N}^k$ satisfy
+$\gcd(m_0 m_1 \cdots m_{k-1}, n_0 n_1 \cdots n_{k-1}) = 1$, then
+$\delta_G(m_0 n_0, \dots, m_{k-1} n_{k-1}) = \delta_G(m)\, \delta_G(n)$.
 
 ## Depends on
 
-- [Coprimality Indicator](coprimality-indicator.md)
+- [Coprimality indicator of a graph](coprimality-indicator.md)
 
 ## Sources
 

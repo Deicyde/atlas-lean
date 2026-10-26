@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.kGeneralizedLucas_one
 ---
 
-# K Generalized Lucas one
+# $k$-generalized Lucas numbers at index one
 
-Source clause: value `1` at index `1`.
+**$k$-generalized Lucas numbers at index one.** For every natural number $k \ge 2$, the
+$k$-generalized Lucas number $L^{(k)}_1$ equals $1$.
 
 ## Depends on
 
-- [K Generalized Lucas](k-generalized-lucas.md)
+- [$k$-generalized Lucas numbers](k-generalized-lucas.md)
 
 ## Sources
 

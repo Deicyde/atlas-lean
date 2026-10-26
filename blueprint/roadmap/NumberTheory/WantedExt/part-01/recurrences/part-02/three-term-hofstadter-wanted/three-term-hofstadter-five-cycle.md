@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_fiveCycle
 ---
 
-# Three Term Hofstadter five Cycle
+# Five-cycle lemma for the three-term Hofstadter-like recurrence
 
-Five-cycle lemma. Let `K ≥ 3` and `μ ≥ 1`. For arbitrary integers `a_4, …, a_K`, the
-padded sequence with initial conditions `⟨0̄; 1, 2, 3, a_4, …, a_K, K+μ, 3, K+3, K+μ+1, 5⟩`
-satisfies `B(K+5k) = 5`, `B(K+5k+1) = K+3k+μ`, `B(K+5k+2) = 3`, `B(K+5k+3) = K+5k+3`,
-`B(K+5k+4) = K+3k+μ+1` from index `K + 1` through index `K + ⌊(5μ - 15)/2⌋`.
+**Five-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 3$ be a
+natural number, $\mu \ge 1$ an integer, and $a_4, \dots, a_K$ arbitrary integers. Let $B$ be
+the sequence given by $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$, padded with
+$B(n) = 0$ for $n \le 0$, with initial conditions
+$1, 2, 3, a_4, \dots, a_K, K + \mu, 3, K + 3, K + \mu + 1, 5$ at the indices $1, \dots, K + 5$.
+Then for all natural numbers $k$ and $r < 5$ with
+$K + 1 \le K + 5k + r \le K + \lfloor (5\mu - 15)/2 \rfloor$, the term $B(K + 5k + r)$ can be
+computed, and it equals $5$, $K + 3k + \mu$, $3$, $K + 5k + 3$ or $K + 3k + \mu + 1$ according
+as $r = 0, 1, 2, 3$ or $4$.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

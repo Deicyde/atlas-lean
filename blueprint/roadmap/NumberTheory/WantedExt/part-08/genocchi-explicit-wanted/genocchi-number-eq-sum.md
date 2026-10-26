@@ -15,7 +15,7 @@ equality `2(1-2ⁿ)Bₙ = Gₙ` is MathlibExt's proved
 
 ## Depends on
 
-- [Genocchi Number](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Sources
 

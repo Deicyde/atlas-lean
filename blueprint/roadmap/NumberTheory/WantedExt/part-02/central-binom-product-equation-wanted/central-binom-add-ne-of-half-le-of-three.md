@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_of_half_le_of_three_le
 ---
 
-# Central Binom add ne of half le of three le
+# Central binomial products with $a \ge b \ge 3$
 
-Lemma 7: for positive `x`, `a`, `b` with `a ≥ (a+b)/2` and `b ≥ 3`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(x+2b, b)`.
+**Central binomial products with $a \ge b \ge 3$.** Let $x$, $a$, $b$ be natural numbers with
+$x \ge 1$ and $3 \le b \le a$. Then $\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Depends on
 

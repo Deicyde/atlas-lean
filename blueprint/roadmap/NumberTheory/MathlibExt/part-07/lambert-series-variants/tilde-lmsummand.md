@@ -6,12 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.tildeLMSummand
 ---
 
-# Tilde LMSummand
+# Terms of the Lambert-type series $\tilde L_m$
 
-Tilde summand for Gerhold's Lambert-type variant `\tilde L_m`.
-Concept `jis_sem_e9cabece6d32bf6b52d62673`, source
-`jis_f199df27bfb37c3d9b045e32`. It is indexed by `k : Nat` with
-`n = k + 1`, writing `2 * k + 1` for `2 * n - 1`.
+**Terms of the Lambert-type series $\tilde L_m$.** For a complex number $q$ with $|q| < 1$,
+an integer $m \ge 1$ and a natural number $k$, the term of index $k$ is
+$q^{(2k+1)m} / (1 + q^{2k+1})^{2m}$, that is, $q^{(2n-1)m} / (1 + q^{2n-1})^{2m}$ with $n = k + 1$.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LambertSeriesVariants](../../../../../sources/v2/MathlibExt.md)
+- Gerhold, concept `jis_sem_e9cabece6d32bf6b52d62673`, source `jis_f199df27bfb37c3d9b045e32`.

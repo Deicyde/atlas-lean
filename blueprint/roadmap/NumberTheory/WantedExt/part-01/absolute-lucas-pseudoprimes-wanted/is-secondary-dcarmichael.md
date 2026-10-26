@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsSecondaryDCarmichael
 ---
 
-# Is Secondary DCarmichael
+# Secondary $D$-Carmichael number
 
-A secondary `D`-Carmichael number: a `D`-Carmichael number of degree exactly two, i.e.
-`|dₚ| ≤ 2` for all primes `p ∣ n` and `|dₚ| > 1` for some.
+**Secondary $D$-Carmichael number.** Let $D$ be an integer. A natural number $n$ is a
+secondary $D$-Carmichael number when $n$ is a $D$-Carmichael number,
+$|s_p(n) - \varepsilon_n| \le 2 (p - \varepsilon_p)$ for every prime $p \mid n$, and
+$|s_p(n) - \varepsilon_n| > p - \varepsilon_p$ for some prime $p \mid n$, where
+$\varepsilon_m = \left(\frac{D}{m}\right)$ is the Jacobi symbol and $s_p(n) = \sum_i c_i
+\varepsilon_p^i$ is the extended digit sum of the base-$p$ expansion $n = \sum_i c_i p^i$.
+
+In the paper's terms, $n$ has degree exactly two: the number $d_p$ with
+$s_p(n) = \varepsilon_n + d_p (p - \varepsilon_p)$ satisfies $|d_p| \le 2$ for every prime
+$p \mid n$ and $|d_p| > 1$ for some.
 
 ## Depends on
 
@@ -16,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
-- [Lucas Digit Sum](lucas-digit-sum.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
+- [Extended digit sum](lucas-digit-sum.md)
 
 ## Sources
 

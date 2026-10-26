@@ -7,14 +7,20 @@ lean: MetaMathlibExt.mem_lStarClosure_iff_zeckendorfRevBar_eq
 
 # Mem l Star Closure iff zeckendorf Rev Bar eq
 
-Lemma 11: for `ε ∈ Ẽ*`, `ε ∈ Ē*` iff `rev̄(ε) = ε`.
+**Fixed points of $\overline{\mathrm{rev}}$ in $\tilde E^*$.** Let $L$ and $\tilde L$ be
+lists of natural numbers of length at least $2$ with nonzero first entries, such that the
+periodic Zeckendorf collection $E$ of $L$ is a proper subset of the periodic Zeckendorf
+collection $\tilde E$ of $\tilde L$. Let $\tilde E^*$ be the collection $E^*$ determined by
+$\tilde L$, and let $\bar E^*$ and $\overline{\mathrm{rev}}$ be taken with respect to $L$. Then
+for every $\varepsilon \in \tilde E^*$, $\varepsilon \in \bar E^*$ if and only if
+$\overline{\mathrm{rev}}(\varepsilon) = \varepsilon$.
 
 ## Depends on
 
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [L Star Closure](l-star-closure.md)
 - [L Star Collection](l-star-collection.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Sources
 

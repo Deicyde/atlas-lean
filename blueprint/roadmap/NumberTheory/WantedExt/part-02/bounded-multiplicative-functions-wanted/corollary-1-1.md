@@ -6,16 +6,25 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.corollary_1_1
 ---
 
-# Corollary 1 1
+# Liouville's function does not correlate with polynomial phases on short intervals on average
 
-Statement of Corollary 1.1 (Liouville does not correlate with polynomial phases on
-short intervals on average):
+**Liouville's function does not correlate with polynomial phases on short intervals on average.**
+Let $\lambda$ be the Liouville function, extended to the integers by $\lambda(n) = 0$ for
+$n \le 0$, let $k$ be a natural number and let $\theta$ be a real number with $0 < \theta < 1$.
+For real $x$ and $H > 0$ write
 
-Let `λ` denote the liouville function. Fix `k : ℕ` and `θ : ℝ` such that `0 < θ < 1`. Then
+$$
+\|\lambda\|_{u^{k+1}[x, x+H]} = \sup_{\deg P \le k} \frac{1}{H}
+\Bigl| \sum_{\lceil x \rceil \le n \le \lfloor x + H \rfloor} \lambda(n) e^{-2\pi i P(n)} \Bigr|,
+$$
 
-`∫ x ∈ [X, 2X], ‖λ‖_{uᵏ⁺¹[x, x + Xᶿ]}dx = o(X)`
+the supremum taken over real polynomials $P$ of degree at most $k$. Then
 
-as `X → ∞`.
+$$
+\int_X^{2X} \|\lambda\|_{u^{k+1}[x, x + X^\theta]} \, dx = o(X)
+$$
+
+as the real number $X$ tends to infinity.
 
 ## Depends on
 

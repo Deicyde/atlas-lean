@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fibCyclotomicValue
 ---
 
-# Fib Cyclotomic Value
+# Fibonacci cyclotomic values
 
-`Φ_m = Φ_m(α, β) = ∏_{d ∣ m} F_{m/d}^{μ(d)}` for `m > 1`, the value of the homogenized
-`m`-th cyclotomic polynomial at the roots `α, β` of `x² - x - 1`, as a rational number via the
-paper's Möbius inversion formula (at `m = 1` this formula gives `1`, not `Φ_1 = √5`; the index
-`1` is excluded from `M` below).
+**Fibonacci cyclotomic values.** For a natural number $m$, $\Phi_m$ is the rational number
+$\prod_{d \mid m} F_{m/d}^{\mu(d)}$, where $d$ runs over the positive divisors of $m$, $F_k$ is the
+$k$-th Fibonacci number and $\mu$ is the Möbius function. For $m > 1$ this is the value
+$\Phi_m(\alpha, \beta)$ of the homogenized $m$-th cyclotomic polynomial at the roots
+$\alpha, \beta$ of $x^2 - x - 1$.
+
+At $m = 1$ the formula gives $1$, not $\Phi_1(\alpha, \beta) = \alpha - \beta = \sqrt{5}$, and
+$m = 0$ is treated as having no divisors, so $\Phi_0 = 1$.
 
 ## Depends on
 

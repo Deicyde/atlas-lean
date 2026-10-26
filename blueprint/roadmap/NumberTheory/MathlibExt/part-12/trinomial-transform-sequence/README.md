@@ -4,6 +4,6 @@ navigation: module
 
 # Trinomial Transform Sequence
 
-- [Trinomial Transform Sequence](trinomial-transform-sequence.md)
-- [Trinomial Transform Sequence zero](trinomial-transform-sequence-zero.md)
-- [Trinomial Transform Sequence zero apply](trinomial-transform-sequence-zero-apply.md)
+- [Trinomial transform](trinomial-transform-sequence.md)
+- [Zeroth term of the trinomial transform](trinomial-transform-sequence-zero.md)
+- [Trinomial transform of the zero sequence](trinomial-transform-sequence-zero-apply.md)

@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.kGeneralizedLucas_zero
 ---
 
-# K Generalized Lucas zero
+# $k$-generalized Lucas numbers at index zero
 
-Source clause: value `2` at index `0`.
+**$k$-generalized Lucas numbers at index zero.** For every natural number $k \ge 2$, the
+$k$-generalized Lucas number $L^{(k)}_0$ equals $2$.
 
 ## Depends on
 
-- [K Generalized Lucas](k-generalized-lucas.md)
+- [$k$-generalized Lucas numbers](k-generalized-lucas.md)
 
 ## Sources
 

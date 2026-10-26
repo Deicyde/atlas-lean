@@ -14,7 +14,7 @@ of lex-minimal extensions.
 
 - [Is Add Monoid Basis](is-add-monoid-basis.md)
 - [Is Atomic Binomid Index](is-atomic-binomid-index.md)
-- [Is Lex Minimal Extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
+- [Lex-minimal extensions](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
 
 ## Sources
 

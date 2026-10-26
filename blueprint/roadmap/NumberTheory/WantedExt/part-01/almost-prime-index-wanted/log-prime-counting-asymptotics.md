@@ -5,15 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.log_primeCounting_asymptotics
 ---
 
-# Log prime Counting asymptotics
+# Logarithmic expansions of the prime counting function
 
-Expansions of `log π(x)`, `log log π(x)` and `1 / log π(x)` as `x → ∞`:
-`log π(x) = log x - log log x + 1/log x + 3/(2 log² x) + O(1/log³ x)`,
-`log log π(x) = log log x - log log x / log x - (log log x)² / (2 log² x) + 1/log² x
-+ O((log log x)³ / log³ x)`, and
-`1/log π(x) = (1/log x)(1 + log log x / log x + ((log log x)² - 1)/log² x
-+ (log log x)³/log³ x + O(log log x / log³ x))`; the last error is stated as
-`O(log log x / log⁴ x)` after multiplying out the factor `1/log x`.
+**Logarithmic expansions of the prime counting function.** Let $\pi(x)$ be the number of
+primes $p \le x$. As $x \to \infty$,
+
+$$
+\log \pi(x) = \log x - \log \log x + \frac{1}{\log x} + \frac{3}{2 (\log x)^2} +
+O\left(\frac{1}{(\log x)^3}\right),
+$$
+
+
+
+$$
+\log \log \pi(x) = \log \log x - \frac{\log \log x}{\log x} -
+\frac{(\log \log x)^2}{2 (\log x)^2} + \frac{1}{(\log x)^2} +
+O\left(\frac{(\log \log x)^3}{(\log x)^3}\right),
+$$
+
+and
+
+$$
+\frac{1}{\log \pi(x)} - \frac{1}{\log x}\left(1 + \frac{\log \log x}{\log x} +
+\frac{(\log \log x)^2 - 1}{(\log x)^2} + \frac{(\log \log x)^3}{(\log x)^3}\right) =
+O\left(\frac{\log \log x}{(\log x)^4}\right).
+$$
+
+The last expansion is the paper's form, whose error term $O(\log \log x / (\log x)^3)$ sits
+inside the parentheses, multiplied out by the factor $1/\log x$.
 
 ## Depends on
 

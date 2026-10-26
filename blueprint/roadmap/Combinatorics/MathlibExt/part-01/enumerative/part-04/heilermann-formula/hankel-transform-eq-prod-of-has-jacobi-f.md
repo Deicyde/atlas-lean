@@ -22,8 +22,8 @@ that is, $\mu_0^{n+1} \beta_1^n \beta_2^{n-1} \cdots \beta_n$, which is $\mu_0$ 
 
 ## Depends on
 
-- [Has Jacobi Fraction](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
-- [Hankel Transform](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
+- [Jacobi continued fraction expansion](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Hankel transform](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Sources
 

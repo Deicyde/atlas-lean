@@ -22,13 +22,13 @@ representations for small $n$ and a finite computation for the remaining cases.
 
 ## Depends on
 
-- [Polygonal Number](../../part-09/polygonal-number/polygonal-number.md)
+- [Polygonal numbers](../../part-09/polygonal-number/polygonal-number.md)
 
 ## Proof depends on
 
 - [Gauss's Eureka theorem](exists-eq-add-add-triangular.md)
 - [Cauchy's lemma](exists-sum-four-sq-eq-and-sum-eq-of-odd.md)
-- [Polygonal Number four](../../part-09/polygonal-number/polygonal-number-four.md)
+- [Square numbers as polygonal numbers](../../part-09/polygonal-number/polygonal-number-four.md)
 - [Polygonal Number one](../../part-09/polygonal-number/polygonal-number-one.md)
 
 ## Sources

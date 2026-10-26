@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.binaryRunLengths
 ---
 
-# Binary Run Lengths
+# Binary run lengths
 
-The lengths of the maximal runs of `1`s in the binary expansion of `n`, read from the least
-significant bit (the paper's list `𝓛(n)`, whose order does not matter).
+**Binary run lengths.** For a natural number $n$, the binary run lengths of $n$ form the list
+of the lengths of the maximal runs of $1$s in the binary expansion of $n$, in the order in which
+the runs occur when the digits are read from the least significant one. This is the paper's list
+$\mathcal{L}(n)$, whose order does not matter there; for $n = 0$ the list is empty.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bit Run Lengths](bit-run-lengths.md)
+- [Run lengths of a digit list](bit-run-lengths.md)
 
 ## Sources
 

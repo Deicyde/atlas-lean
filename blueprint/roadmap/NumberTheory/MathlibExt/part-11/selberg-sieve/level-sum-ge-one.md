@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.SelbergSieve.levelSum_ge_one
 ---
 
-# Level Sum ge one
+# The Selberg level sum is at least one
 
-The Selberg level sum is at least one when the level is at least one.
+**The Selberg level sum is at least one.** For every bounding sieve and every natural number
+$R \ge 1$, the level-$R$ Selberg sum is at least $1$.
 
 ## Depends on
 
-- [Level Sum](level-sum.md)
+- [Selberg level sum](level-sum.md)
 
 ## Proof depends on
 
-- [Level Set](level-set.md)
+- [Selberg level set](level-set.md)
 
 ## Sources
 

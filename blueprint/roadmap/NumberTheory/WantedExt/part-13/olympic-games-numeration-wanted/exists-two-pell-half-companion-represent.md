@@ -14,8 +14,8 @@ Let `R_k = 2P_k` for odd `k` and `R_k = H_k` for even `k`. Every positive intege
 
 ## Depends on
 
-- [Pell Lucas Sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
-- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
+- [Pell–Lucas sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
+- [Pell numbers](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_gt_div_log_of_seventeen_le
 ---
 
-# Prime Counting gt div log of seventeen le
+# The Rosser–Schoenfeld lower bound $x / \log x$ for the prime-counting function
 
-Rosser–Schoenfeld lower bound quoted as Lemma 2: `x / log x < π(x)` for every real
-`x ≥ 17`.
+**The Rosser–Schoenfeld lower bound $x / \log x$ for the prime-counting function.** For every
+real number $x \ge 17$, the number $\pi(x)$ of primes at most $x$ satisfies
+$x / \log x < \pi(x)$.
 
 ## Depends on
 

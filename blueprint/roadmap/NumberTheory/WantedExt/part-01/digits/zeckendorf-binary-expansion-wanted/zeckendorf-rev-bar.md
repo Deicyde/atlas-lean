@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfRevBar
 ---
 
-# Zeckendorf Rev Bar
+# The map $\overline{\mathrm{rev}}$
 
-`rev̄(ε)` (Definition 23): `β̄^1` if `β̄^1 ≤_d ε`, and otherwise the coordinatewise limit of
-`rev_n(\overline{rev_n(ε)})` as `n → ∞` (each coordinate is eventually constant by Lemma 10; `0`
-for a coordinate that is not).
+**The map $\overline{\mathrm{rev}}$.** Fix a list $L$, and let $E$ be its periodic Zeckendorf
+collection, $\bar\beta^1$ the maximal $L^*$-block starting at index $0$, $\lt _d$ the descending
+lexicographic order, $\mathrm{rev}_n$ the reversal of the first $n$ entries, and $\bar\mu$ the
+bar of a finitely supported $\mu$ relative to $E$. For a coefficient function
+$\varepsilon : \mathbb N \to \mathbb N$, if $\varepsilon \lt _d \bar\beta^1$ fails then
+$\overline{\mathrm{rev}}(\varepsilon) = \bar\beta^1$. If $\varepsilon \lt _d \bar\beta^1$, then
+for each index $i$ the entry of $\overline{\mathrm{rev}}(\varepsilon)$ at $i$ is the eventual
+value, as $n \to \infty$, of the entry of $\mathrm{rev}_n(\overline{\mathrm{rev}_n(\varepsilon)})$
+at $i$ when that entry is eventually constant, and $0$ when it is not.
 
 ## Depends on
 
@@ -17,11 +23,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Desc Lex LT](desc-lex-lt.md)
+- [Descending lexicographic order](desc-lex-lt.md)
 - [Max LStar Block](max-lstar-block.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
-- [Zeckendorf Bar](zeckendorf-bar.md)
-- [Zeckendorf Rev](zeckendorf-rev.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
+- [The coefficient function $\bar\mu$](zeckendorf-bar.md)
+- [Reversal of the first $n$ entries](zeckendorf-rev.md)
 
 ## Sources
 

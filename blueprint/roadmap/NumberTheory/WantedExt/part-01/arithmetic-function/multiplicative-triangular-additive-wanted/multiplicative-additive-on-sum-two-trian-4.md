@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.NumberTheory.ArithmeticFunction.MultiplicativeTriangularAdditiveWanted.multiplicative_additive_on_sum_two_triangular_zero_of_five_ne_zero
 ---
 
-# Multiplicative additive on sum two triangular zero of five ne zero
+# Park's Lemma 4: vanishing from 2 to 21 except at 5
 
-Park's Lemma 4: under the same hypotheses, if `f 2 = 0` and
-`f 5 ≠ 0`, then `f n = 0` for `2 ≤ n ≤ 21` with `n ≠ 5`.
+**Park's Lemma 4: vanishing from 2 to 21 except at 5.** Let $f$ be a multiplicative
+arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$ whenever
+$a$ and $b$ are both sums of two positive triangular numbers. If $f(2) = 0$ and $f(5) \neq 0$,
+then $f(n) = 0$ for every natural number $n$ with $2 \le n \le 21$ and $n \neq 5$.
 
 ## Depends on
 
-- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
+- [Sums of two positive triangular numbers](is-sum-two-positive-triangular.md)
 
 ## Sources
 

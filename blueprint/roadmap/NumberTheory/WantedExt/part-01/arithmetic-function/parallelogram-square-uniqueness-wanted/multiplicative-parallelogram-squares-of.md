@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_parallelogram_squares_of_f_four_eq_zero
 ---
 
-# Multiplicative parallelogram squares of f four eq zero
+# Multiplicative parallelogram solutions vanishing at 4
 
-Theorem 2: a multiplicative function with
-`f (m² + n²) + f (m² - n²) = 2 f (m²) + 2 f (n²)` for all positive integers `m > n` and
-`f 4 = 0` is one of two functions: (1) `f n = 0, 4, 1` for `n ≡ 0`, `2 (mod 4)`, otherwise;
-(2) `f 2 = 4`, `f (2^r) = 0` for `r ≥ 2`, and `f (p^r) = (-1 / p)^r p^r` (Jacobi symbol) for
-odd primes `p` and `r ≥ 1`.
+**Multiplicative parallelogram solutions vanishing at 4.** Let $f$ be a complex-valued
+multiplicative arithmetic function
+(so $f(0) = 0$) such that $f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers
+$m > n \ge 1$, and suppose $f(4) = 0$. Then one of the following holds:
+(1) for every natural number $n$, $f(n) = 0$ if $n \equiv 0 \pmod 4$, $f(n) = 4$ if
+$n \equiv 2 \pmod 4$, and $f(n) = 1$ otherwise;
+(2) $f(2) = 4$, $f(2^r) = 0$ for every $r \ge 2$, and $f(p^r) = \left(\frac{-1}{p}\right)^r p^r$
+for every odd prime $p$ and every $r \ge 1$, where $\left(\frac{-1}{p}\right)$ is the Jacobi
+symbol.
 
 ## Depends on
 

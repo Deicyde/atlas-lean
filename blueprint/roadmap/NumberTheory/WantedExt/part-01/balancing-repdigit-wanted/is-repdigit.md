@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsRepdigit
 ---
 
-# Is Repdigit
+# Decimal repdigits
 
-A (decimal) repdigit: a positive integer all of whose decimal digits are
-equal to some `d` with `1 ≤ d ≤ 9`, with `m ≥ 1` digits.
-
-The condition is written without division as `9 * n = d * (10^m - 1)`.
+**Decimal repdigits.** A natural number $n$ is a repdigit if there are natural numbers $d$
+and $m$ with $1 \le d \le 9$ and $m \ge 1$ such that $9n = d(10^m - 1)$. Equivalently, $n$ is
+the positive integer whose decimal expansion consists of $m$ copies of the digit $d$.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_offset_sury_sum
 ---
 
-# Theorem 5, Fibonacci offset formula
+# Offset step extension of Sury's identity, Fibonacci form
 
-**Theorem 5, Fibonacci offset formula**: for `j > |k| > 0`, the
-`j`-step Fibonacci numbers with offset `k` sum to `F_{j(n+1)}`.
+**Offset step extension of Sury's identity, Fibonacci form.** Let $F_n$ be the Fibonacci
+numbers at integer indices. For all natural numbers $j$ and $n$ and every integer $k$ with
+$0 < |k| < j$,
+
+$$F_{j(n+1)} = \frac{F_j}{F_k} \sum_{i=0}^{n}
+\left(\frac{(-1)^{k+1} F_{j-k}}{F_k}\right)^{n-i} F_{ji+k}.$$
 
 ## Depends on
 
-- [Fib At Int](fib-at-int.md)
+- [Fibonacci numbers at integer indices](fib-at-int.md)
 
 ## Sources
 

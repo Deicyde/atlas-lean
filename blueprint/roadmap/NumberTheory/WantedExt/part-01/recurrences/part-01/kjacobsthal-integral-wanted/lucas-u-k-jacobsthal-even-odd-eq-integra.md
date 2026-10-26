@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_kJacobsthal_even_odd_eq_integral
 ---
 
-# Lucas U k Jacobsthal even odd eq integral
+# Integral representation of even- and odd-indexed k-Jacobsthal numbers
 
-`J_{k,2n} = (kn/2ⁿ) ∫_{-1}^{1} (k² + 4 + kΔ_k x)^{n-1} dx` and
-`J_{k,2n+1} = 2^{-(n+1)} ∫_{-1}^{1} (nk² + k² + 4 + k(n+1)Δ_k x)(k² + 4 + kΔ_k x)^{n-1} dx`.
+**Integral representation of even- and odd-indexed k-Jacobsthal numbers.** Let $k$ and $n$
+be natural numbers, let $J_{k,n} = U_n(k, -2)$ be the $k$-Jacobsthal numbers and let
+$\Delta_k = \sqrt{k^2 + 8}$. Then
+
+$$J_{k,2n} = \frac{kn}{2^n} \int_{-1}^{1} (k^2 + 4 + k \Delta_k x)^{n-1} \, dx$$
+
+and
+
+$$J_{k,2n+1} = \frac{1}{2^{n+1}} \int_{-1}^{1} (nk^2 + k^2 + 4 + k(n+1) \Delta_k x)
+(k^2 + 4 + k \Delta_k x)^{n-1} \, dx.$$
+
+Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isBinomidIndex_const
 ---
 
-# Is Binomid Index const
+# Constant sequences are binomid indices
 
-Constant sequences are binomid indices.
+**Constant sequences are binomid indices.** For every natural number $c$, the constant
+sequence $(c, c, c, \dots)$ is a binomid index.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
+- [Binomid index](is-binomid-index.md)
 
 ## Sources
 

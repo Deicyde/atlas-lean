@@ -7,15 +7,19 @@ lean: MetaMathlibExt.twoStepPattern_alternatingSeries_contFract
 
 # Two-step pattern as an alternating series
 
-**Two-step pattern as an alternating series**: for `β ≥ 0` and positive integers `ω_n`,
-with `q_n = twoStepPatternDen β ω n`, the series `x = ∑_{i ≥ 0} (-1)^i/(q_i q_{i+1})`
-converges and `x = [0; ω₀, 1, ω₁ q₁^β, 1, ω₂ q₃^β, 1, …]`, i.e. `a₀ = 0`, `a₁ = ω₀`,
-`a_{2n+2} = 1` and `a_{2n+3} = ω_{n+1} q_{2n+1}^β`. The paper's `β ∈ ℤ_{>0}` is relaxed to
-`β ≥ 0`; `a_k` is `(GenContFract.of x).partDens.get? (k - 1)` and `a₀` is `.h`.
+**Two-step pattern as an alternating series.** Let $\beta$ be a natural number, let
+$(\omega_n)_{n \ge 0}$ be positive integers, and let $(q_n)_{n \ge 0}$ be the convergent
+denominators of the two-step pattern for $\beta$ and $(\omega_n)$. Then the series
+$\sum_{i \ge 0} (-1)^i / (q_i q_{i+1})$ converges absolutely, and its sum $x$ has continued
+fraction expansion $[a_0; a_1, a_2, \dots]$ with $a_0 = 0$, $a_1 = \omega_0$, and
+$a_{2n+2} = 1$ and $a_{2n+3} = \omega_{n+1} q_{2n+1}^\beta$ for every $n \ge 0$; that is,
+$x = [0; \omega_0, 1, \omega_1 q_1^\beta, 1, \omega_2 q_3^\beta, 1, \dots]$.
+
+The paper assumes $\beta \ge 1$; the statement here also allows $\beta = 0$.
 
 ## Depends on
 
-- [Two Step Pattern Den](two-step-pattern-den.md)
+- [Convergent denominators of the two-step pattern](two-step-pattern-den.md)
 
 ## Sources
 

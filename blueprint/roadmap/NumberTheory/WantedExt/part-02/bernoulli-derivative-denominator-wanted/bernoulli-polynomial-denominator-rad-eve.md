@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.bernoulli_polynomial_denominator_rad_even
 ---
 
-# Bernoulli polynomial denominator rad even
+# Denominators of Bernoulli polynomials are even
 
-For `n ≥ 1`: `𝔇_n = rad(𝒟_n)` where `𝒟_n` is the denominator of
-`S_n(x) = (B_{n+1}(x) - B_{n+1}) / (n + 1)`; `𝔇_n` is even, so `B_n(x) ∉ ℤ[x]`; and `𝔻^⊥_n` is
-even for odd `n ≥ 3` and odd otherwise. Part (iii) is printed as "otherwise, `𝔻^⊥_n` is even",
-which fails at `n = 2` (`𝔻^⊥_2 = 1`); the proof in the paper shows `𝔻^⊥_1 = 1` and
-`2 ∤ 𝔻^⊥_n` for even `n`, and that corrected reading is formalized.
+**Denominators of Bernoulli polynomials are even.** Let $n \ge 1$. Write $\mathfrak{D}_n$ for
+the denominator of the Bernoulli polynomial $B_n(x)$, $\mathcal{D}_n$ for the denominator of
+$S_n(x) = (B_{n+1}(x) - B_{n+1}) / (n + 1)$, where $B_{n+1}$ is the Bernoulli number,
+$\operatorname{rad}(m)$ for the product of the primes dividing $m$, and $\mathbb{D}^{\perp}_n$ for
+the product of the primes $p \nmid n$ whose base-$p$ digit sum $s_p(n)$ satisfies $s_p(n) \ge p$.
+Then $\mathfrak{D}_n = \operatorname{rad}(\mathcal{D}_n)$; $\mathfrak{D}_n$ is even; some
+coefficient of $B_n(x)$ is not an integer; $\mathbb{D}^{\perp}_n$ is even if $n \ge 3$ is odd;
+and $\mathbb{D}^{\perp}_n$ is odd if $n = 1$ or $n$ is even.
+
+Part (iii) of Corollary 8 is printed as "otherwise, $\mathbb{D}^{\perp}_n$ is even", which fails
+at $n = 2$, where $\mathbb{D}^{\perp}_2 = 1$; the proof in the paper shows
+$\mathbb{D}^{\perp}_1 = 1$ and $2 \nmid \mathbb{D}^{\perp}_n$ for even $n$, and the statement
+above follows that proof.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
 - [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources

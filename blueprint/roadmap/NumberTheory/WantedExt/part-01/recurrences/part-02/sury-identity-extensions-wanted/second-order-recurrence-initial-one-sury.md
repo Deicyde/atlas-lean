@@ -5,11 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.second_order_recurrence_initial_one_sury_sum
 ---
 
-# Theorem 1
+# Sury's identity for a second-order recurrence starting at 1
 
-**Theorem 1**: Sury's identity for a second-order recurrence with
-`A 0 = 1`.  With `t = c₁ - A 1`, assumed nonzero as in the source,
-the weighted initial segment determines `A (n+2) - A 1 * A (n+1)`.
+**Sury's identity for a second-order recurrence starting at 1.** Let $c_1, c_2$ be rational
+numbers with $c_2 \neq 0$, and let $(A_n)_{n \ge 0}$ be a sequence of rational numbers with
+$A_0 = 1$ and $A_{n+2} = c_1 A_{n+1} + c_2 A_n$ for all $n \ge 0$. Put $t = c_1 - A_1$ and
+assume $t \neq 0$. Then for every natural number $n$,
+
+$$A_{n+2} - A_1 A_{n+1} = (A_2 - A_1^2) \sum_{i=0}^{n} t^{n-i} A_i.$$
 
 ## Depends on
 

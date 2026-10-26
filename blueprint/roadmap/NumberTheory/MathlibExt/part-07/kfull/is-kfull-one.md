@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.isKFull_one
 ---
 
-# Is KFull one
+# One is $k$-full
 
-One is `k`-full vacuously: it is nonzero and has no prime divisors.
+**One is $k$-full.** For every natural number $k$, the number $1$ is $k$-full: it is nonzero
+and has no prime divisors.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

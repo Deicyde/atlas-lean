@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_eight_mul_sub_period_three
 ---
 
-# Theorem 15
+# Rampersad–Wiebe Theorem 15
 
-**Theorem 15.** The sum `T(n) = ∑_{k=0}^{n} [`binom(-2n + 8k, n + k)` binom(n, k) mod 2]` is the run length transform
-of the periodic sequence `1, 1, 0, 1, 1, 0, …`. The top entry is negative for small `k`; there the paper's convention `binom(a, b) = 0` for `a < b` agrees with truncated subtraction, since the bottom entry `n + k` is positive whenever the top entry is truncated.
+**Rampersad–Wiebe Theorem 15.** Let $T$ be the run length transform of the periodic sequence
+$S$ with $S(i) = 0$ if $i \equiv 2 \pmod 3$ and $S(i) = 1$ otherwise, i.e. of
+$1, 1, 0, 1, 1, 0, \dots$. Then for every natural number $n$,
+$\sum_{k=0}^{n} \left(\binom{8k - 2n}{n + k} \binom{n}{k} \bmod 2\right) = T(n)$, where a binomial
+coefficient $\binom{a}{b}$ with $a < 0$ is $0$.
+
+Equivalently, a negative top entry $8k - 2n$ may be replaced by $0$, since the bottom entry $n + k$
+is then positive.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

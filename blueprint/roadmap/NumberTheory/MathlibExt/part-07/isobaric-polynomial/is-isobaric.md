@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.IsIsobaric
 ---
 
-# Is Isobaric
+# Isobaric polynomial
 
-An isobaric polynomial of isobaric degree `n`: a polynomial over `ℤ` in
-`k` variables that is weighted homogeneous for the source weights `j + 1`.
-This is a source-facing specialization of Mathlib's standard
-`MvPolynomial.IsWeightedHomogeneous` predicate. Source statement:
-`jis_975c9f8263707d64d52bd0a3`.
+**Isobaric polynomial.** Let $k$ and $n$ be natural numbers. A polynomial
+$P \in \mathbb{Z}[t_1, \dots, t_k]$ is isobaric of degree $n$ if every monomial
+$t_1^{\alpha_1} \cdots t_k^{\alpha_k}$ occurring in $P$ with nonzero coefficient satisfies
+$\sum_{j=1}^k j \alpha_j = n$; that is, $P$ is weighted homogeneous of degree $n$ when the
+variable $t_j$ has weight $j$. In particular, the zero polynomial is isobaric of every degree.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IsobaricPolynomial](../../../../../sources/v2/MathlibExt.md)
+- statement `jis_975c9f8263707d64d52bd0a3`.

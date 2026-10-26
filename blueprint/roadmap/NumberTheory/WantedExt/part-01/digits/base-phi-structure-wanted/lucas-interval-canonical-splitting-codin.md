@@ -5,21 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasInterval_canonical_splitting_coding
 ---
 
-# Lucas Interval canonical splitting coding
+# Dekking's Theorem 4: the coding of the canonical splittings of Lucas intervals
 
-Theorem 4: for `n ≥ 3` the canonical splitting of `Λ_n` consists of adjacent translations
-of `Λ_3, Λ_4, Λ_5` whose union is `Λ_n`, and its coding `C` (the list of indices) satisfies
-`C(Λ_{2n+4}) = κⁿ(4)` and `C(Λ_{2n+5}) = κⁿ(5)` for `n ≥ 0`, where `κ` is the morphism
-`3 ↦ 5, 4 ↦ 434, 5 ↦ 545` acting on words by `List.flatMap` (letters other than `3, 4` are
-sent to `545`; only `3, 4, 5` occur). The canonical splitting is `canonicalLucasSplitting`,
-built from the recursion of the paper's Section 4.
+**Dekking's Theorem 4: the coding of the canonical splittings of Lucas intervals.** Write
+$\Lambda_m = [\ell_m, h_m]$ for the Lucas interval with left end $\ell_m$ and right end $h_m$. For
+every $n \ge 3$, every pair $(k, t)$ in the canonical splitting of $\Lambda_n$ has
+$k \in \{3, 4, 5\}$, and the canonical splitting of $\Lambda_n$ is a Lucas tiling of
+$[\ell_n, h_n]$. Let $\kappa$ be the map on finite words of natural numbers that replaces each
+letter $3$ by the word $5$, each letter $4$ by $434$ and every other letter by $545$, and let
+$C(\Lambda_m)$ be the word formed by the first components $k$ of the pairs $(k, t)$ of the
+canonical splitting of $\Lambda_m$, in order. Then for every $n \ge 0$,
+$C(\Lambda_{2n+4}) = \kappa^n(4)$ and $C(\Lambda_{2n+5}) = \kappa^n(5)$, where $\kappa^n$ is the
+$n$-fold iterate of $\kappa$ applied to the one-letter word.
 
 ## Depends on
 
-- [Is Lucas Tiling](is-lucas-tiling.md)
-- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Lucas tilings](is-lucas-tiling.md)
+- [Canonical splitting of a Lucas interval](canonical-lucas-splitting.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

@@ -5,19 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSumMod_two_isBigO
 ---
 
-# B Free Divisor Sum Mod two is Big O
+# Asymptotic for the B-free divisor function in an arithmetic progression
 
-Theorem 3, case `h = 2`: for `κ ≥ 2`, `m ≠ 0`, `(a, m) = 1` and every `ε > 0`,
-`D̃_{B_κ,2}(N, a, m) = q^N Φ(m) / ((1 - 1/q) |m|^2) ∏_{P ∤ m} (1 - (κ+1)/|P|^κ + κ/|P|^{κ+1})
-× [N + 1 - 1/(q - 1) + 2 ∑_{P ∣ m} deg P / (|P| - 1)
-+ ∑_{P ∤ m} κ(κ+1) deg(P) (|P| - 1) / (|P|^{κ+1} - |P|(κ+1) + κ)] + O(q ^ ((1/κ_min + ε) N))`,
-with `Φ(m) / |m| = ∏_{P ∣ m} (1 - 1/|P|)` written as the product.
+**Asymptotic for the B-free divisor function in an arithmetic progression.** Let $F$ be a
+finite field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let
+$\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every
+monic irreducible $P$; let $\kappa_{\min}$ be the minimum of $\kappa(P)$ over the monic
+irreducible $P$. Let $m \ne 0$ and $a$ be polynomials in $F[T]$ with $a$ coprime to $m$, and let
+$\tilde D_{\kappa,2}(N, a, m)$ be the sum of $d_2(f)$ over the monic $B_\kappa$-free $f$ of degree
+at most $N$ with $f \equiv a \pmod m$, where $d_2(f)$ is the number of pairs of monic polynomials
+with product $f$, and $f$ is $B_\kappa$-free when no $P^{\kappa(P)}$ with $P$ monic irreducible
+divides it. Writing $\kappa$ for $\kappa(P)$ inside sums and products over $P$, put
+
+$$
+M(N) = \frac{q^N}{(1 - 1/q) \, |m|} \prod_{P \mid m} \Bigl(1 - \frac{1}{|P|}\Bigr)
+\prod_{P \nmid m} \Bigl(1 - \frac{\kappa + 1}{|P|^{\kappa}} + \frac{\kappa}{|P|^{\kappa + 1}}\Bigr)
+\times \Bigl(N + 1 - \frac{1}{q - 1} + 2 \sum_{P \mid m} \frac{\deg P}{|P| - 1} +
+\sum_{P \nmid m}
+\frac{\kappa (\kappa + 1) \deg P \, (|P| - 1)}{|P|^{\kappa + 1} - |P| (\kappa + 1) + \kappa}\Bigr),
+$$
+
+where $P$ runs over the monic irreducible polynomials dividing, respectively not dividing, $m$.
+Then for every $\varepsilon > 0$,
+$\tilde D_{\kappa,2}(N, a, m) - M(N) = O\bigl(q^{(1/\kappa_{\min} + \varepsilon) N}\bigr)$ as
+$N \to \infty$.
 
 ## Depends on
 
-- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
-- [Fq Norm](fq-norm.md)
-- [Kappa Min](kappa-min.md)
+- [B-free divisor sum in an arithmetic progression](b-free-divisor-sum-mod.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
 
 ## Sources
 

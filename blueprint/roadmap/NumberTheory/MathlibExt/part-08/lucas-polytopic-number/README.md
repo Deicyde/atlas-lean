@@ -4,13 +4,13 @@ navigation: module
 
 # Lucas Polytopic Number
 
-- [Lucas Bracket Aux](lucas-bracket-aux.md)
-- [Lucas Parameters](lucas-parameters.md)
-- [Lucas Bracket](lucas-bracket.md)
-- [Lucas Factorial](lucas-factorial.md)
-- [Lucasnomial](lucasnomial.md)
-- [Lucas Polytopic Number](lucas-polytopic-number.md)
-- [Lucas Triangular Number](lucas-triangular-number.md)
-- [Lucas Tetrahedral Number](lucas-tetrahedral-number.md)
-- [Lucas Pentachoron Number](lucas-pentachoron-number.md)
-- [Lucas Hexateron Number](lucas-hexateron-number.md)
+- [Lucas brackets for arbitrary real parameters](lucas-bracket-aux.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
+- [Lucas brackets](lucas-bracket.md)
+- [Factorial of Lucas brackets](lucas-factorial.md)
+- [Lucasnomial coefficients](lucasnomial.md)
+- [Simplicial Lucas-polytopic numbers](lucas-polytopic-number.md)
+- [Lucas triangular numbers](lucas-triangular-number.md)
+- [Lucas tetrahedral numbers](lucas-tetrahedral-number.md)
+- [Lucas pentachoron numbers](lucas-pentachoron-number.md)
+- [Lucas hexateron numbers](lucas-hexateron-number.md)

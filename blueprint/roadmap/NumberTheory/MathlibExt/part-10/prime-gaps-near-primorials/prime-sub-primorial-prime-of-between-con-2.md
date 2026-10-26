@@ -7,10 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.prime_sub_primorial_prime_of_between_consecutive_primes
 ---
 
-# Prime sub primorial prime of between consecutive primes
+# Primes just above a primorial (Čejchan–Křížek–Somer)
 
-If `q < r` are consecutive primes and a prime `p` satisfies
-`primorial q + 1 < p < primorial q + r ^ 2`, then `p - primorial q` is prime.
+**Primes just above a primorial (Čejchan–Křížek–Somer).** Let $q < r$ be consecutive primes,
+so that no prime lies strictly between them, and let $q\#$ be the primorial of $q$, the product
+of all primes at most $q$. If $p$ is a prime with $q\# + 1 < p < q\# + r^2$, then $p - q\#$ is
+prime.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime sub primorial prime of between consecutive primes general](prime-sub-primorial-prime-of-between-con.md)
+- [Primes just above a primorial, general form](prime-sub-primorial-prime-of-between-con.md)
 
 ## Sources
 

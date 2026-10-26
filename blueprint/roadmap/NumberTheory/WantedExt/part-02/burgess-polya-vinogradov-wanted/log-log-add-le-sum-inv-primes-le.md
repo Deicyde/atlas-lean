@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.log_log_add_le_sum_inv_primes_le
 ---
 
-# Log log add le sum inv primes le
+# Two-sided explicit Mertens bound
 
-Two-sided explicit Mertens bound: for real `x ≥ 2`,
-`log log x + 0.2614 ≤ ∑_{p ≤ x} 1/p ≤ log log x + 0.8666`.
+**Two-sided explicit Mertens bound.** For every real $x \ge 2$,
+$\log \log x + 0.2614 \le \sum_{p \le x} 1/p \le \log \log x + 0.8666$, where the sum runs over
+the primes $p \le x$.
 
 ## Depends on
 

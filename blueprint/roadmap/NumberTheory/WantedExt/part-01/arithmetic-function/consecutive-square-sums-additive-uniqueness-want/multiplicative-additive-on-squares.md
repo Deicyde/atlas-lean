@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_additive_on_squares
 ---
 
-# Multiplicative additive on squares
+# Multiplicative functions additive on pairs of squares
 
-A multiplicative function additive on pairs of positive squares satisfies
-`f 4 ∈ {0, 4}`, `f (q ^ (2k)) = f (q ^ 2) ^ k` for all positive `q, k`, and, when
-`f 4 = 4`, `f (m ^ 2) = m ^ 2` for every positive `m`. The paper's hypothesis `f ≠ 0`
-is implied by `IsMultiplicative`.
+**Multiplicative functions additive on pairs of squares.** Let $f$ be a complex-valued
+multiplicative arithmetic function (so $f(1) = 1$ and $f(ab) = f(a) f(b)$ for coprime $a$ and
+$b$) such that $f(m^2 + n^2) = f(m^2) + f(n^2)$ for all positive integers $m$ and $n$. Then
+$f(4)$ is $0$ or $4$; $f(q^{2k}) = f(q^2)^k$ for all positive integers $q$ and $k$; and if
+$f(4) = 4$, then $f(m^2) = m^2$ for every positive integer $m$.
+
+The source also assumes $f \ne 0$, which follows from $f(1) = 1$.
 
 ## Depends on
 

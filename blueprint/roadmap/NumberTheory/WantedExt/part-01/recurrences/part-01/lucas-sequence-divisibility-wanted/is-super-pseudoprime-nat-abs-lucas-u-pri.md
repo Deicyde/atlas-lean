@@ -5,20 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_prime
 ---
 
-# Is Super Pseudoprime nat Abs lucas U prime
+# Composite terms $|U_p|$ are super strong Lucas pseudoprimes
 
-For nondegenerate `U(P, Q)` with `gcd(P, Q) = 1` and a prime `p ≥ 5` with `gcd(p, PQD) = 1`:
-if `N₁ = |U_p|` is composite then it is a super strong Lucas pseudoprime, and also a super
-Frobenius pseudoprime when `Q = ±1`.
+**Composite terms $|U_p|$ are super strong Lucas pseudoprimes.** Let $P, Q$ be integers with
+$\gcd(P, Q) = 1$ such that the Lucas pair $(P, Q)$ is nondegenerate, let $U_n$ be the Lucas
+sequence of $(P, Q)$ and let $D = P^2 - 4Q$. Let $p \ge 5$ be a prime with $\gcd(p, PQD) = 1$
+such that $|U_p|$ is composite. Then $|U_p|$ is a super strong Lucas pseudoprime with parameters
+$P, Q$, and if $Q = \pm 1$ it is also a super Frobenius pseudoprime with parameters $P, Q$.
 
 ## Depends on
 
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Is Super Pseudoprime](is-super-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Super pseudoprime](is-super-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

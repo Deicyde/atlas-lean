@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.cantorStraus_two_le_asymptoticConstant
 ---
 
-# Cantor Straus two le asymptotic Constant
+# Cantor–Straus lower bound for the asymptotic Dobrowolski constant
 
-Source: Cantor--Straus (1982), as reported by Voutier, coefficient `2`.
+**Cantor–Straus lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+Dobrowolski constant is at least $2$, as an extended real number.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ Source: Cantor--Straus (1982), as reported by Voutier, coefficient `2`.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Height.AsymptoticDobrowolskiWanted](../../../../../../sources/v2/WantedExt.md)
+- Cantor--Straus (1982), as reported by Voutier, coefficient `2`.

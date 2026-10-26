@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.projectiveOrderTwo_le_totient_div_two
 ---
 
-# Projective Order Two le totient div two
+# Projective order of 2 is at most half the totient
 
-For odd `B > 3`, `λ(B) ≤ φ(B) / 2`.
+**Projective order of 2 is at most half the totient.** For every odd natural number $B > 3$,
+the projective order of $2$ modulo $B$ satisfies $\lambda(B) \le \lfloor \varphi(B)/2 \rfloor$,
+where $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Projective Order Two](projective-order-two.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Sources
 

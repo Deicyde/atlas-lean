@@ -5,10 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BernoulliSecondKindWanted.descPochhammer_eq
 ---
 
-# Theorem 5
+# Falling factorials in the Bernoulli polynomial basis
 
-**Theorem 5**: `X^{\underline n} = Bₙ^* +
-∑_{k=1}^n (n/k) s(n-1,k-1) Bₖ(X)` as polynomials.
+**Falling factorials in the Bernoulli polynomial basis.** Let $B_m^*$ be the Bernoulli
+numbers of the second kind, $B_k(X)$ the Bernoulli polynomials over $\mathbb{Q}$ (so that
+$B_1(X) = X - 1/2$), $s(m, j)$ the signed Stirling numbers of the first kind and
+$X^{\underline{n}} = X(X-1)\cdots(X-n+1)$ the falling factorial. For every natural number
+$n$, in $\mathbb{Q}[X]$,
+
+$$X^{\underline{n}} = B_n^* + \sum_{k=1}^{n} \frac{n}{k} \, s(n-1, k-1) \, B_k(X).$$
 
 ## Depends on
 

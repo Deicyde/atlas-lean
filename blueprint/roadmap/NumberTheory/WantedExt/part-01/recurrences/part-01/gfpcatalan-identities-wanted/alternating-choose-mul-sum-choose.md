@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.alternating_choose_mul_sum_choose
 ---
 
-# Alternating choose mul sum choose
+# Alternating sum of binomial row sums
 
-Lemma 4.3: for `n ≥ 0`,
-`∑_{i=0}^{n} C(ℓ, i) (-1)^i ∑_{j=0}^{n-i} C(n-i, j) = ∑_{i=0}^{n} (-1)^i C(i+ℓ-n-1, i)`.
-The right side has an integer upper index, read as the generalized binomial coefficient
-`Ring.choose`; it is the ordinary one for `n < ℓ`, the case used in Theorem 4.4.
+**Alternating sum of binomial row sums.** For all natural numbers $\ell$ and $n$,
+
+$$\sum_{i=0}^{n} (-1)^i \binom{\ell}{i} \sum_{j=0}^{n-i} \binom{n-i}{j}
+  = \sum_{i=0}^{n} (-1)^i \binom{i+\ell-n-1}{i},$$
+
+where on the right $\binom{a}{i} = a(a-1)\cdots(a-i+1)/i!$ is the binomial coefficient with
+integer upper index $a$. For $n < \ell$ the upper index $i + \ell - n - 1$ is nonnegative and this
+is the ordinary binomial coefficient, the case used in Theorem 4.4.
 
 ## Depends on
 

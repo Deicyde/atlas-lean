@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.exactly_coprime_pairs_inclusion_exclusion
 ---
 
-# Exactly coprime pairs inclusion exclusion
+# Inclusion–exclusion for tuples with exactly $r$ coprime pairs
 
-Lemma 5: inclusion–exclusion for `β_r`:
-`β_r(n) = ∑_{j=r}^{k(k-1)/2} (-1)^{j-r} binom(j, r) ∑_{|E| = j} δ_G(n)`;
-the case `r = 0` is the paper's identity for `β`.
+**Inclusion–exclusion for tuples with exactly $r$ coprime pairs.** Let $k \ge 2$, $r \ge 0$
+and $n \in \mathbb{N}^k$, and let $\beta_r(n)$ be $1$ if $n$ has exactly $r$ coprime pairs and $0$
+otherwise. For a set $E$ of pairs $(a, b)$ with $0 \le a < b < k$, let $\delta_E$ be the
+coprimality indicator of the graph with edge set $E$. Then, as integers,
+
+$$\beta_r(n) = \sum_{j=r}^{k(k-1)/2} (-1)^{j-r} \binom{j}{r} \sum_{|E| = j} \delta_E(n),$$
+
+where the inner sum runs over the $j$-element sets $E$ of such pairs.
+
+For $r = 0$ this is the paper's identity for $\beta = \beta_0$, the indicator of pairwise
+non-coprime tuples.
 
 ## Depends on
 
-- [Coprimality Indicator](coprimality-indicator.md)
-- [Coprime Pair Count](coprime-pair-count.md)
+- [Coprimality indicator of a graph](coprimality-indicator.md)
+- [Number of coprime pairs](coprime-pair-count.md)
 
 ## Sources
 

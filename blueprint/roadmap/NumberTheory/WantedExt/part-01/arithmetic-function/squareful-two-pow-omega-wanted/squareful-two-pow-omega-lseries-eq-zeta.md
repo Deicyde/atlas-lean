@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareful_two_pow_omega_LSeries_eq_zeta_quotient_fifteen
 ---
 
-# Squareful two pow omega LSeries eq zeta quotient fifteen
+# Fine zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series
 
-Lemma 1: for `Re s > 1/2`,
-`F(s) = ζ²(2s)ζ²(3s)ζ²(7s)ζ⁴(8s)ζ⁵(12s)ζ¹⁴(13s)ζ⁵(14s) /
-(ζ(4s)ζ²(5s)ζ³(6s)ζ⁵(10s)ζ⁶(11s)) · H₁(s)`, where `H₁` is a Dirichlet series
-converging absolutely for `Re s > 1/15`.
+**Fine zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series.** Let
+$\omega(n)$ be the number of distinct prime factors of $n$, call $n$ squareful when $n \ne 0$ and
+$p^2 \mid n$ for every prime $p \mid n$ (that is, $n$ is $2$-full), and let
+$F(s) = \sum_{n \text{ squareful}} 2^{\omega(n)} n^{-s}$. There is a sequence
+$h : \mathbb{N} \to \mathbb{C}$ whose Dirichlet series $H(s) = \sum_{n \ge 1} h(n) n^{-s}$
+converges absolutely for $\operatorname{Re} s > 1/15$, such that for every complex $s$ with
+$\operatorname{Re} s > 1/2$,
+
+$$F(s) = \frac{\zeta(2s)^2 \zeta(3s)^2 \zeta(7s)^2 \zeta(8s)^4 \zeta(12s)^5 \zeta(13s)^{14}
+\zeta(14s)^5}{\zeta(4s) \zeta(5s)^2 \zeta(6s)^3 \zeta(10s)^5 \zeta(11s)^6} H(s).$$
 
 ## Depends on
 
-- [Is KFull](../../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [$k$-full numbers](../../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Gaussian Int Split Primes
 
-- [Gaussian Int split prime](gaussian-int-split-prime.md)
-- [Gaussian Int split conj](gaussian-int-split-conj.md)
-- [Gaussian Int split nonassociated](gaussian-int-split-nonassociated.md)
-- [Gaussian Int card repr prime pow](gaussian-int-card-repr-prime-pow.md)
+- [Primes congruent to 1 mod 4 split in the Gaussian integers](gaussian-int-split-prime.md)
+- [Factoring a prime as a Gaussian integer times its conjugate](gaussian-int-split-conj.md)
+- [Gaussian integers of split prime norm are not associate to their conjugates](gaussian-int-split-nonassociated.md)
+- [Number of Gaussian integers of norm a power of a split prime](gaussian-int-card-repr-prime-pow.md)

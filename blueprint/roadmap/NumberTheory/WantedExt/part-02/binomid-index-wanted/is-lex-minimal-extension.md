@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtension
 ---
 
-# Is Lex Minimal Extension
+# Lex-minimal extensions
 
-`η` is a lex-minimal extension (of some finite binomid index); these
-form the paper's set `L`.
+**Lex-minimal extensions.** A sequence $e = (e_1, e_2, \dots)$ of nonnegative integers is a
+lex-minimal extension when, for some $m \ge 0$, it is the lex-minimal extension of
+$(e_1, \dots, e_m)$. The set of all lex-minimal extensions is denoted $L$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Lex-minimal extension](is-lex-minimal-extension-of.md)
 
 ## Sources
 

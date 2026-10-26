@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ecsdAdj
 ---
 
-# Ecsd Adj
+# Edge relation of an exact covering system digraph
 
-The edge relation of the exact covering system digraph `G(d₁n + a₁, …, d_r n + a_r)`:
-there is an edge `m → n` iff `n = dᵢ m + aᵢ` for some rule `i`.
+**Edge relation of an exact covering system digraph.** Let $r \in \mathbb{N}$ and let
+$d_1, \dots, d_r$ and $a_1, \dots, a_r$ be integers. The digraph
+$G(d_1 n + a_1, \dots, d_r n + a_r)$ has vertex set $\mathbb{Z}$ and an edge $x \to y$ iff
+$y = d_i x + a_i$ for some $i \in \{1, \dots, r\}$.
+
+When the pairs $(a_i, d_i)$ form an exact covering system this is the paper's digraph $G_S$;
+the definition itself places no condition on the $d_i$ and $a_i$.
 
 ## Depends on
 

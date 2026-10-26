@@ -5,18 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.tsum_inv_almostPrimeIndexSet_triple_isBigO
 ---
 
-# Tsum inv almost Prime Index Set triple is Big O
+# Exponential decay of reciprocal sums over triple almost prime index sets
 
-For fixed `k_1, k_2 ≥ 1`, `∑_{n ∈ N_{k_1 k_2 k}} 1/n ≪ e^{-k/2}` as `k → ∞`. This is the case
-`m = 2` of the paper's bound `≪ 1/(e^{k/2})^{m-1}`, the only case its proof supports: the proof
-bounds the range `2^{k+1} ≤ t ≤ e^{e^{k/1.99}}` by `k^{j+7-m}/2^k`, which is not
-`O(e^{-(m-1)k/2})` once `m ≥ 3`. For `m = 3` and `k_1 = k_2 = k_3 = 1` the single term
-`1/p_{p_{p_{2^k}}}` with `p_n < n (log n + log log n)` (`n ≥ 6`) is `≫ 2^{-k} k^{-3}`, and
-`e^{k} 2^{-k} k^{-3} → ∞`, so the printed bound fails for `m = 3`.
+**Exponential decay of reciprocal sums over triple almost prime index sets.** A $k$-almost
+prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
+integers $a$ and $b$ let $N_{ab}$ be the set of $a$-almost primes whose index in the increasing
+enumeration of the $a$-almost primes (starting at $1$) is a $b$-almost prime, and for positive
+integers $k_1, k_2, k$ let $N_{k_1 k_2 k}$ be the set of $k_1$-almost primes whose index in the
+increasing enumeration of the $k_1$-almost primes lies in $N_{k_2 k}$. Fix positive integers $k_1$
+and $k_2$. Then, as $k \to \infty$,
+
+$$
+\sum_{n \in N_{k_1 k_2 k}} \frac{1}{n} = O\left( e^{-k/2} \right).
+$$
+
+This is the case $m = 2$ of the paper's bound $\ll (e^{k/2})^{-(m-1)}$ for the reciprocal sum of
+$N_{k_1 \cdots k_m k}$, the only case its proof supports. For $m = 3$ and $k_1 = k_2 = k_3 = 1$,
+with $p_n$ the $n$th prime, the single term $1/p_{p_{p_{2^k}}}$ is $\gg 2^{-k} k^{-3}$ because
+$p_n < n (\log n + \log \log n)$ for $n \ge 6$, and $e^{k} 2^{-k} k^{-3} \to \infty$, so the
+printed bound fails for $m = 3$.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

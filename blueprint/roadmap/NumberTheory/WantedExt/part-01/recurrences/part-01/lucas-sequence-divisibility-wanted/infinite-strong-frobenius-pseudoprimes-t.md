@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.infinite_strong_frobenius_pseudoprimes_two_primes
 ---
 
-# Infinite strong frobenius pseudoprimes two primes
+# Rotkiewicz: strong Lucas and Frobenius pseudoprimes with two prime factors
 
-Rotkiewicz: for nondegenerate `U(P, Q)` with `Q = ±1`, infinitely many products `p₁p₂` of
-distinct odd primes are both strong Lucas and Frobenius pseudoprimes.
+**Rotkiewicz: strong Lucas and Frobenius pseudoprimes with two prime factors.** Let $P$ and
+$Q$ be integers forming a nondegenerate Lucas pair with $Q = \pm 1$. Then infinitely many
+products $N = p_1 p_2$ of two distinct odd primes $p_1$ and $p_2$ are both strong Lucas
+pseudoprimes and Frobenius pseudoprimes with parameters $P$ and $Q$.
 
 ## Depends on
 
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

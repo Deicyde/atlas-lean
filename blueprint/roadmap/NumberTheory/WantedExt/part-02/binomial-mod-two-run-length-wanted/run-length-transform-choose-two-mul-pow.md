@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_two_mul_pow_two
 ---
 
-# Theorem 4
+# Rampersad–Wiebe Theorem 4
 
-**Theorem 4.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n, 2k)` binom(n, k) mod 2]` is the run length transform
-of `1, 1, 2, 4, 8, …`, i.e. `1` followed by the positive powers of `2`.
+**Rampersad–Wiebe Theorem 4.** Let $T$ be the run length transform of the sequence $S$ with
+$S(0) = 1$ and $S(i) = 2^{i-1}$ for $i \ge 1$, i.e. of $1, 1, 2, 4, 8, \dots$. Then for every
+natural number $n$, $\sum_{k=0}^{n} \left(\binom{n}{2k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

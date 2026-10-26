@@ -13,7 +13,7 @@ the second kind, as a rational identity.
 
 ## Depends on
 
-- [Genocchi Number](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ statement: formalized
 lean: MetaMathlibExt.lucasBracket
 ---
 
-# Lucas Bracket
+# Lucas brackets
 
-The Lucas bracket sequence with initial values zero and one and recurrence
-`{n + 2}ₛₜ = s * {n + 1}ₛₜ + t * {n}ₛₜ`.
+**Lucas brackets.** For nondegenerate Lucas parameters $(s, t)$, the Lucas brackets are the
+real numbers $\{n\}_{s,t}$, for natural numbers $n$, defined by $\{0\}_{s,t} = 0$,
+$\{1\}_{s,t} = 1$ and $\{n+2\}_{s,t} = s\{n+1\}_{s,t} + t\{n\}_{s,t}$ for every natural
+number $n$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucas Bracket Aux](lucas-bracket-aux.md)
+- [Lucas brackets for arbitrary real parameters](lucas-bracket-aux.md)
 
 ## Sources
 

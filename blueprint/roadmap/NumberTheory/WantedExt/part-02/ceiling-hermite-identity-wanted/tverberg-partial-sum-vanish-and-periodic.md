@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.tverbergPartialSum_vanish_and_periodic
 ---
 
-# Tverberg Partial Sum vanish and periodic
+# Vanishing and periodicity of partial Tverberg sums
 
-Lemma 7: for `ℓ ≥ 2`, (i) `S_j(C, m, m - 1) = 0` for every `j`; (ii) `T_j(C, m, m) = 0` for
-`j = 2, 4`; (iii) `S_j` has period `m` in `K` and in every `a_i`; (iv) so does `T_j` for
-`j = 2, 4`. Periodicity in `K` is stated for shifts `K ↦ K + qm` with `q ∈ ℕ` (the paper's
-`q ∈ ℤ` with `K + qm ≥ 0` is the same statement read from the smaller argument). Parts (i) and (ii)
-hold trivially at `m = 0`.
+**Vanishing and periodicity of partial Tverberg sums.** Let $\ell \ge 2$, let
+$a = (a_1, \dots, a_\ell)$ be integers and let $m$ be a natural number. Let $F$ be one of
+$\lfloor \cdot \rfloor$, $\lceil \cdot \rceil$, $r^+(y) = \lfloor y + 1/2 \rfloor$ and
+$r^-(y) = \lceil y - 1/2 \rceil$, and for an integer $k$ let
+$f^F(a, k) =
+\sum_{U \subseteq \{1, \dots, \ell\}} (-1)^{\ell - |U|} F((k + \sum_{i \in U} a_i)/m)$
+be Tverberg's sum, with $x/0 = 0$. For natural $K$ put $S^F(a, K) = \sum_{k=0}^{K} f^F(a, k)$
+and $T^F(a, K) = \sum_{k=1}^{K} f^F(a, k)$, and for an index $i$ and an integer $p$ let $a'$ be
+$a$ with $a_i$ replaced by $a_i + p m$. Then:
+(i) $\sum_{k=0}^{m-1} f^F(a, k) = 0$ (an empty sum when $m = 0$);
+(ii) $S^F(a, K + q m) = S^F(a, K)$ for all natural $K$ and $q$, and $S^F(a', K) = S^F(a, K)$
+for every natural $K$, every index $i$ and every integer $p$;
+(iii) if $F$ is $\lceil \cdot \rceil$ or $r^-$, then $T^F(a, m) = 0$,
+$T^F(a, K + q m) = T^F(a, K)$ for all natural $K$ and $q$, and $T^F(a', K) = T^F(a, K)$ for
+every natural $K$, every index $i$ and every integer $p$.
 
 ## Depends on
 
-- [Tverberg Sum](tverberg-sum.md)
+- [Tverberg's sum](tverberg-sum.md)
 
 ## Sources
 

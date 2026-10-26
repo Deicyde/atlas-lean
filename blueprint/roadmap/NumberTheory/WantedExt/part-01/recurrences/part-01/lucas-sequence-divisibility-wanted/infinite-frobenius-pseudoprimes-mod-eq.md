@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.infinite_frobenius_pseudoprimes_modEq
 ---
 
-# Infinite frobenius pseudoprimes mod Eq
+# Rotkiewicz: Frobenius pseudoprimes in arithmetic progressions
 
-Rotkiewicz: for nondegenerate `U(P, Q)` with `Q = ±1` and coprime positive `a, b`, the
-progression `ax + b` contains infinitely many Frobenius pseudoprimes.
+**Rotkiewicz: Frobenius pseudoprimes in arithmetic progressions.** Let $P$ and $Q$ be
+integers forming a nondegenerate Lucas pair with $Q = \pm 1$, and let $a$ and $b$ be coprime
+positive integers. Then infinitely many natural numbers $N \equiv b \pmod a$ are Frobenius
+pseudoprimes with parameters $P$ and $Q$.
 
 ## Depends on
 
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

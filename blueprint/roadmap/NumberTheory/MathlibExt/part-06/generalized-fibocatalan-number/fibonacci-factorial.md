@@ -6,11 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciFactorial
 ---
 
-# Fibonacci Factorial
+# Fibonacci factorial
 
-Fibonacci factorial: `F_n! = F_n * F_{n-1} * ... * F_2 * F_1`,
-with the empty convention `F_0! = 1`. Values are in `ℚ` so the source
-ratios are not distorted by `Nat` truncating division. Uses `Nat.fib`.
+**Fibonacci factorial.** For a natural number $n$, the Fibonacci factorial $F_n!$ is the
+rational number $F_n! = F_1 F_2 \cdots F_n$, the product of the first $n$ Fibonacci numbers
+(where $F_1 = F_2 = 1$ and $F_{k+2} = F_{k+1} + F_k$); in particular $F_0! = 1$, the empty
+product.
+
+Values are taken in $\mathbb{Q}$ so that quotients of Fibonacci factorials are exact rather
+than truncated by natural-number division.
 
 ## Depends on
 

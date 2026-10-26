@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_six_mul_alternating
 ---
 
-# Theorem 14
+# Rampersad–Wiebe Theorem 14
 
-**Theorem 14.** The sum `T(n) = ∑_{k=0}^{n} [`binom(6k, n + 3k)` binom(n, k) mod 2]` is the run length transform
-of the sequence alternating between `1` and the positive integers, `1, 1, 1, 2, 1, 3, 1, 4, …`.
+**Rampersad–Wiebe Theorem 14.** Let $T$ be the run length transform of the sequence $S$ with
+$S(i) = 1$ for even $i$ and $S(i) = (i + 1)/2$ for odd $i$, i.e. of $1, 1, 1, 2, 1, 3, 1, 4, \dots$.
+Then for every natural number $n$,
+$\sum_{k=0}^{n} \left(\binom{6k}{n + 3k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

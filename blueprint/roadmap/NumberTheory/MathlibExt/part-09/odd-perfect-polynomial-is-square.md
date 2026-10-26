@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.odd_perfect_polynomial_is_square
 ---
 
-# Odd Perfect Polynomial
+# Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday)
 
-Every odd perfect polynomial over `F₂` is a square (Canaday).
+**Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday).** Let $A$ be a polynomial
+over $\mathbb{F}_2$ that is coprime to both $X$ and $X + 1$ (that is, odd: $A$ has no linear
+factor) and that equals the sum of its monic divisors (that is, perfect). Then $A$ is a square:
+$A = B^2$ for some polynomial $B$ over $\mathbb{F}_2$.
 
-Odd means having no linear factor, i.e. coprime to both `X` and `X + 1`;
-perfect means equal to the sum of all its divisors. Since every nonzero
-polynomial over `F₂` is monic, summing over monic divisors is the full
-divisor sum.
+Since every nonzero polynomial over $\mathbb{F}_2$ is monic, the sum over monic divisors is the
+full divisor sum.
 
 ## Depends on
 

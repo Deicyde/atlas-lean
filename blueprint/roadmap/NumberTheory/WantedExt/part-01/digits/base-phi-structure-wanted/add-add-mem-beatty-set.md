@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.add_add_mem_beattySet
 ---
 
-# Add add mem beatty Set
+# The value at one is a term of a generalized Beatty sequence
 
-`V(p, q, r)(1) = p + q + r` is a term of `V(p, q, r)`.
+**The value at one is a term of a generalized Beatty sequence.** Let $\varphi$ be the golden
+ratio. For all integers $p, q, r$, the number $p + q + r$ is a term
+$p \lfloor n \varphi \rfloor + q n + r$, $n \ge 1$, of the generalized Beatty sequence
+$V(p, q, r)$; it is the term at $n = 1$, since $\lfloor \varphi \rfloor = 1$.
 
 ## Depends on
 
-- [Beatty Set](beatty-set.md)
+- [Terms of a generalized Beatty sequence](beatty-set.md)
 
 ## Proof depends on
 
-- [Generalized Beatty](generalized-beatty.md)
-- [Generalized Beatty one](generalized-beatty-one.md)
+- [Generalized Beatty sequence](generalized-beatty.md)
+- [Generalized Beatty sequence at one](generalized-beatty-one.md)
 
 ## Sources
 

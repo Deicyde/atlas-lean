@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.IsSuperPseudoprime
 ---
 
-# Is Super Pseudoprime
+# Super pseudoprime
 
-Super pseudoprime of type `S`: odd composite `N`, `gcd(N, QD) = 1`, every divisor `> 1` of
-`N` prime or of type `S` (super Lucas, super strong Lucas, super Frobenius pseudoprimes for
-`S = IsLucasPseudoprime L`, `IsStrongLucasPseudoprime L`, `IsLucasFrobeniusPseudoprime L`).
+**Super pseudoprime.** Let $P, Q$ be integers with $Q \neq 0$, let $D = P^2 - 4Q$, and let $S$
+be a property of natural numbers. A natural number $N$ is a super pseudoprime of type $S$ with
+parameters $(P, Q)$ when $N$ is odd, $N > 1$, $N$ is not prime, $\gcd(N, QD) = 1$, and every
+divisor $d > 1$ of $N$ is prime or has property $S$.
+
+Taking for $S$ the property of being a Lucas, strong Lucas or Frobenius pseudoprime with
+parameters $(P, Q)$ gives the super Lucas, super strong Lucas and super Frobenius pseudoprimes.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

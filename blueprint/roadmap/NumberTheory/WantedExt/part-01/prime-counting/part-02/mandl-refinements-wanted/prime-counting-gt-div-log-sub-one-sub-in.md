@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_gt_div_log_sub_one_sub_inv_log
 ---
 
-# Prime Counting gt div log sub one sub inv log
+# Lower bound $x / (\log x - 1 - 1 / \log x)$ for the prime-counting function
 
-Lower bound quoted as Lemma 4: `π(x) > x / (log x - 1 - 1 / log x)` for every real
-`x ≥ 468049`.
+**Lower bound $x / (\log x - 1 - 1 / \log x)$ for the prime-counting function.** For every
+real number $x \ge 468049$, the number $\pi(x)$ of primes at most $x$ satisfies
+$\pi(x) > x / (\log x - 1 - 1 / \log x)$.
 
 ## Depends on
 

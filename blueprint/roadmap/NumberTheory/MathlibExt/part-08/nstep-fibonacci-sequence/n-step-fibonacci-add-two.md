@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.nStepFibonacci_add_two
 ---
 
-# N Step Fibonacci add two
+# Recurrence for the N-step Fibonacci numbers
 
-Recurrence of `F^{(N)}`.
+**Recurrence for the N-step Fibonacci numbers.** For all natural numbers $N$ and $n$, the
+$N$-step Fibonacci numbers $F^{(N)}$ satisfy
+$F^{(N)}_{n+2} = \sum_{i=0}^{N-1} F^{(N)}_{\max(n+1-i,\,0)}$.
 
 ## Depends on
 
-- [N Step Fibonacci](n-step-fibonacci.md)
+- [N-step Fibonacci numbers](n-step-fibonacci.md)
 
 ## Sources
 

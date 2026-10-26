@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.norm_sum_mulChar_divisorCount_le
 ---
 
-# Norm sum mul Char divisor Count le
+# Character sums of the $h$-divisor function over monic polynomials
 
-Proposition 5: for a non-principal Dirichlet character `χ` modulo monic `m` (a multiplicative
-character of `𝔽_q[T]/(m)`, zero off the units) and `h ≥ 1`,
-`|∑_{f ∈ M_{≤ N}} χ^{(h)}(f)| ≤ (√q + 1) ^ (h (deg m - 1))`, where `χ^{(h)}(f) = χ(f) d_h(f)` by
-eq. (8). The paper's trailing `= O(q^{h deg(m)/2})` is a coarser restatement and is omitted.
+**Character sums of the $h$-divisor function over monic polynomials.** Let $F$ be a finite
+field with $q$ elements, let $m \in F[T]$ be monic, and let $\chi$ be a non-principal Dirichlet
+character modulo $m$: a multiplicative character of $F[T]/(m)$, vanishing off the units, other
+than the principal one, evaluated at $f \in F[T]$ through the class of $f$ modulo $m$. Let
+$h \ge 1$ be a natural number and let $d_h$ be the $h$-divisor function, so that $d_h(f)$ is the
+number of $h$-tuples of monic polynomials with product $f$. Then for every natural number $N$,
+
+$$\left| \sum_{f \text{ monic},\ \deg f \le N} \chi(f) \, d_h(f) \right| \le
+(\sqrt{q} + 1)^{h (\deg m - 1)}.$$
 
 ## Depends on
 
-- [Monic Divisor Count](monic-divisor-count.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

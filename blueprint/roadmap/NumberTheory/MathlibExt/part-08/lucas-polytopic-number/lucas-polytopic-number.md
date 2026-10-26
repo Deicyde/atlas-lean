@@ -6,17 +6,20 @@ statement: formalized
 lean: MetaMathlibExt.lucasPolytopicNumber
 ---
 
-# Lucas Polytopic Number
+# Simplicial Lucas-polytopic numbers
 
-The `n`-th simplicial `d`-Lucas-polytopic number.
+**Simplicial Lucas-polytopic numbers.** For nondegenerate Lucas parameters $(s, t)$ and
+natural numbers $n$ and $d$, the $n$-th simplicial $d$-Lucas-polytopic number is the
+Lucasnomial coefficient $\binom{n+d-1}{d}_{s,t}$, where $n + d - 1$ is read as $0$ when
+$n = d = 0$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucasnomial](lucasnomial.md)
+- [Lucasnomial coefficients](lucasnomial.md)
 
 ## Sources
 

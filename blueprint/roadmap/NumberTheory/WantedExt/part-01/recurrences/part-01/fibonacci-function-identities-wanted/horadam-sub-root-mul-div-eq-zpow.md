@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.horadam_sub_root_mul_div_eq_zpow
 ---
 
-# Horadam sub root mul div eq zpow
+# Ratio form of the Binet formula for Horadam sequences
 
-Ratio form of the Binet formula: for a sequence `W (j + 2) = P W (j + 1) - Q W j`
-with `Q ≠ 0` and real numbers `σ`, `τ` with `σ + τ = P`, `σ τ = Q` (the two
-characteristic roots), every integer `k` gives
-`(W_(k+1) - σ W_k)/(W_1 - σ W_0) = τ^k` when `W_1 ≠ σ W_0`, and
-`(W_(k+1) - τ W_k)/(W_1 - τ W_0) = σ^k` when `W_1 ≠ τ W_0`.
-This covers the paper's sequence `W_j(W_0, W_1; p)` (`P = p`, `Q = -1`) and is
-symmetric in the labels `σ`, `τ`.
+**Ratio form of the Binet formula for Horadam sequences.** Let $P$, $Q$, $\sigma$, $\tau$ be
+real numbers with $Q \neq 0$, $\sigma + \tau = P$ and $\sigma \tau = Q$, and let
+$W \colon \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = P W_{j+1} - Q W_j$ for every integer $j$.
+Then for every integer $k$: if $W_1 \neq \sigma W_0$, then
+
+$$\frac{W_{k+1} - \sigma W_k}{W_1 - \sigma W_0} = \tau^k,$$
+
+and if $W_1 \neq \tau W_0$, then
+
+$$\frac{W_{k+1} - \tau W_k}{W_1 - \tau W_0} = \sigma^k.$$
+
+This covers the paper's sequence $W_j(W_0, W_1; p)$, the case $P = p$, $Q = -1$.
 
 ## Depends on
 

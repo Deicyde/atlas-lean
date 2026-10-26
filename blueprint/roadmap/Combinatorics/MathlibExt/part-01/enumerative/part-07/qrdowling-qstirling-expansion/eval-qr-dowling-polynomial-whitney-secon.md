@@ -23,7 +23,7 @@ $$D_n(x) = \sum_{k=0}^{n} \binom{n}{k} r^{n-k} \sum_{j=0}^{k} m^{k-j} S(k, j) \,
 
 - [Complex q-integers](../qrwhitney-numbers/q-brack.md)
 - [(q, r)-Whitney numbers of the second kind](../qrwhitney-numbers/whitney-second.md)
-- [Qr Dowling Polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
+- [$(q, r)$-Dowling polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
 
 ## Proof depends on
 

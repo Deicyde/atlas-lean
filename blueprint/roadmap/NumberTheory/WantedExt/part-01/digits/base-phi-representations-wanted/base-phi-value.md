@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.basePhiValue
 ---
 
-# Base Phi Value
+# Value of a base phi expansion
 
-The real number represented by the finite base phi expansion whose digits `1`
-sit at the positions in `S`, namely `∑ i ∈ S, φ ^ i`.
+**Value of a base phi expansion.** For a finite set $S$ of integers, the base phi value of
+$S$ is the real number $\sum_{i \in S} \varphi^i$, where $\varphi = (1 + \sqrt 5)/2$ is the golden
+ratio. It is the number represented by the base phi expansion with digit $1$ at each position in
+$S$ and digit $0$ at every other position.
 
 ## Depends on
 

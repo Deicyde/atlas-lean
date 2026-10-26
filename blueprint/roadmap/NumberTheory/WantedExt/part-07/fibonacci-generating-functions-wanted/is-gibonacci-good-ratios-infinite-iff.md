@@ -18,7 +18,7 @@ modular inverses written via explicit witnesses. The paper indexes
 ## Depends on
 
 - [Is Gibonacci Good](is-gibonacci-good.md)
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

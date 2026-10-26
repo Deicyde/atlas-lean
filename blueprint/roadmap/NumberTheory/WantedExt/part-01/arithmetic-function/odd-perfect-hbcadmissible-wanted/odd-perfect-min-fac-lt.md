@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_minFac_lt
 ---
 
-# Odd Perfect min Fac lt
+# A linear bound on the smallest prime divisor of an odd perfect number
 
-The smallest prime divisor `p_1` of an odd perfect number `N` with `m` distinct prime
-divisors satisfies `p_1 < 3m/7 + 3` (36). An odd perfect number is `Odd N ∧ N.Perfect`,
-`p_1 = N.minFac` and `m = N.primeFactors.card`.
+**A linear bound on the smallest prime divisor of an odd perfect number.** If $N$ is an odd
+perfect number with $m$ distinct prime divisors, then the smallest prime divisor $p_1$ of $N$
+satisfies $p_1 < 3m/7 + 3$.
 
 ## Depends on
 

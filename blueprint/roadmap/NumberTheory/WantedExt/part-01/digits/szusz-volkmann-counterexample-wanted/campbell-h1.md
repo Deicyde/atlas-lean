@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.campbellH1
 ---
 
-# Campbell H1
+# Campbell's sequence $h_1$
 
-`h₁(n) = 0` for `n < 10` and `h₁(n) = 10^{⌊log₁₀ n⌋}` otherwise (`⌊log₁₀ n⌋` is
-`Nat.log 10 n`).
+**Campbell's sequence $h_1$.** For a natural number $n$, $h_1(n) = 0$ if $n < 10$ and
+$h_1(n) = 10^{\lfloor \log_{10} n \rfloor}$ if $n \ge 10$; thus for $n \ge 10$, $h_1(n)$ is the
+largest power of $10$ that is at most $n$.
 
 ## Depends on
 

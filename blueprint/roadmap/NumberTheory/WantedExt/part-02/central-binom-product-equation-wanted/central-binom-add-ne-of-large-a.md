@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_of_large_a
 ---
 
-# Central Binom add ne of large a
+# No large solutions of the central binomial product equation with a dominant central factor
 
-Lemma 12: for positive `b`, `x ≥ 2`, `a + b ≥ 150` and `a ≥ (171/121) x`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(x+2b, b)`.
+**No large solutions of the central binomial product equation with a dominant central factor.**
+For natural numbers $a$, $b$, $x$ with $b \ge 1$, $x \ge 2$, $a + b \ge 150$ and
+$a \ge \frac{171}{121} x$, we have
+$\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Depends on
 

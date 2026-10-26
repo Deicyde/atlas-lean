@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.NormalNumber.IsAbsolutelyNormal
 ---
 
-# Is Absolutely Normal
+# Absolutely normal numbers
 
-A real number is absolutely normal if it is normal in every base at least two.
+**Absolutely normal numbers.** A real number is absolutely normal if it is normal in every
+base at least two.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Normal In Base](is-normal-in-base.md)
+- [Normal numbers](is-normal-in-base.md)
 
 ## Sources
 

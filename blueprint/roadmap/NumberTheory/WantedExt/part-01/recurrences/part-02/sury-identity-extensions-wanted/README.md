@@ -4,11 +4,11 @@ navigation: module
 
 # Sury Identity Extensions
 
-- [Fib At Int](fib-at-int.md)
-- [Lucas At Int](lucas-at-int.md)
-- [Theorem 1](second-order-recurrence-initial-one-sury.md)
-- [Theorem 2](second-order-recurrence-offset-sury-sum.md)
-- [Theorem 3](fib-step-sury-sum.md)
-- [Theorem 4](lucas-step-sury-sum.md)
-- [Theorem 5, Fibonacci offset formula](fib-step-offset-sury-sum.md)
-- [Theorem 5, Lucas offset formula](lucas-step-offset-sury-fib-sum.md)
+- [Fibonacci numbers at integer indices](fib-at-int.md)
+- [Lucas numbers at integer indices](lucas-at-int.md)
+- [Sury's identity for a second-order recurrence starting at 1](second-order-recurrence-initial-one-sury.md)
+- [Offset form of Sury's identity for a second-order recurrence](second-order-recurrence-offset-sury-sum.md)
+- [Step extension of Sury's identity for Fibonacci numbers](fib-step-sury-sum.md)
+- [Step extension of Sury's identity for Lucas numbers](lucas-step-sury-sum.md)
+- [Offset step extension of Sury's identity, Fibonacci form](fib-step-offset-sury-sum.md)
+- [Offset step extension of Sury's identity, Lucas form](lucas-step-offset-sury-fib-sum.md)

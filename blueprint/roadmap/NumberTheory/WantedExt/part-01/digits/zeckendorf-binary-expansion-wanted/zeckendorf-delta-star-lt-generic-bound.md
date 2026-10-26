@@ -7,21 +7,37 @@ lean: MetaMathlibExt.zeckendorfDeltaStar_lt_genericBound
 
 # Zeckendorf Delta Star lt generic Bound
 
-Lemma 17, with the middle bound read for `∑ ε Q̃ ≥ ω̃` (the normalization `ε_1 ≥ 1` its proof
-assumes): `δ*[ε] < γ⁻¹ (ω/ω̃)^p` for every `ε ∈ Ẽ*`, and if `∑ ε Q̃ ≥ ω̃`, then
-`δ*[ε] < ∑ rev̄(ε) Q / ∑ ε Q̃ < γ⁻¹ (ω/ω̃)^p`. As printed (for all `ε ∈ Ẽ*`) the middle bound fails:
-for `L = (1, 0)`, `L̃ = (1, 1)` (`p = 2`) and `ε = β^4`, `rev̄(ε) = ε` and
-`∑ rev̄(ε) Q / ∑ ε Q̃ = 16 ω^4 = 2.33436… > γ⁻¹ (ω/ω̃)^2 = 2.20076…`.
+**Generic upper bound for $\delta^*$ (Lemma 17).** Let $L$ and $\tilde L$ be lists of length at
+least $2$ with nonzero first entries whose periodic Zeckendorf collections satisfy
+$E \subsetneq \tilde E$, and let $Q$ and $\tilde Q$ be fundamental sequences of the collections
+$E^*$ and $\tilde E^*$ of $L$ and $\tilde L$. Write $\omega$ and $\tilde\omega$ for the first terms
+of $Q$ and $\tilde Q$, $\gamma = \log_{\tilde\omega} \omega$, $p$ for the generic exponent of $Q$
+and $\tilde Q$, $\delta^*$ for the function $\delta^*$ of $L$, $\tilde L$, $Q$, $\tilde Q$,
+$\overline{\mathrm{rev}}$ for the reversal map of $L$ (Definition 23), $\varepsilon_k$ for the
+$k$th entry of a coefficient function $\varepsilon$ ($k \ge 1$), and
+$\sum \varepsilon Q = \sum_{k \ge 1} \varepsilon_k Q_k$ (so that $Q_1 = \omega$). Then
+$\delta^*(\sum \varepsilon \tilde Q) < (\omega / \tilde\omega)^p / \gamma$ for every
+$\varepsilon \in \tilde E^*$, and every $\varepsilon \in \tilde E^*$ with
+$\sum \varepsilon \tilde Q \ge \tilde\omega$ satisfies
+$\delta^*(\sum \varepsilon \tilde Q) <
+\sum \overline{\mathrm{rev}}(\varepsilon) Q / \sum \varepsilon \tilde Q <
+(\omega / \tilde\omega)^p / \gamma$.
+
+Without $\sum \varepsilon \tilde Q \ge \tilde\omega$ (the normalization $\varepsilon_1 \ge 1$ that
+the proof of Lemma 17 assumes) the middle bound fails: for $L = (1, 0)$, $\tilde L = (1, 1)$ (so
+$p = 2$) and $\varepsilon = \beta^4$ (a single $1$ in the fourth entry),
+$\overline{\mathrm{rev}}(\varepsilon) = \varepsilon$ and the middle quotient is
+$16 \omega^4 = 2.33436\ldots$, while $(\omega / \tilde\omega)^2 / \gamma = 2.20076\ldots$.
 
 ## Depends on
 
-- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Fundamental sequence of an $L^\ast$-collection](is-lstar-fundamental-sequence.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [L Star Collection](l-star-collection.md)
 - [Zeckendorf Delta Star](zeckendorf-delta-star.md)
-- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [The generic exponent](zeckendorf-generic-exponent.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Sources
 

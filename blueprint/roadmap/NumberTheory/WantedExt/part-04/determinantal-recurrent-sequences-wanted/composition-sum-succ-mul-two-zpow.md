@@ -12,7 +12,7 @@ For `n ≥ 1`, `∑ m_n(α) 1^{α_1} 3^{α_2} ⋯ ((n+1) 2^{n-2})^{α_n}` equals
 
 ## Depends on
 
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_cardFactors_ge_ten_log_log_le
 ---
 
-# Card card Factors ge ten log log le
+# Integers with many prime factors are rare
 
-For `x ≥ 10`, the number of positive `n ≤ x` with `Ω(n) ≥ 10 log log x` is
-`O(x / (log x)²)`.
+**Integers with many prime factors are rare.** Let $\Omega(n)$ be the number of prime factors
+of $n$ counted with multiplicity. There is a constant $C$ such that for every real $x \ge 10$, the
+number of integers $1 \le n \le x$ with $\Omega(n) \ge 10 \log\log x$ is at most
+$C x / (\log x)^2$.
 
 ## Depends on
 

@@ -12,9 +12,9 @@ Short end blocks: `R_1 = V₀(1,2,1)`, `R_{10} = V(1,2,-1)`,
 
 ## Depends on
 
-- [Base Phi Occurrences](base-phi-occurrences.md)
-- [Beatty Set](beatty-set.md)
-- [Beatty Set₀](beatty-set-2.md)
+- [Occurrence set of a digit block](base-phi-occurrences.md)
+- [Terms of a generalized Beatty sequence](beatty-set.md)
+- [Terms of a generalized Beatty sequence from index zero](beatty-set-2.md)
 
 ## Sources
 

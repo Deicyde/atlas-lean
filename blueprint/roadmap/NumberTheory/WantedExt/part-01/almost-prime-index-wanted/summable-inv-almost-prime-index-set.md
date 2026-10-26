@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.summable_inv_almostPrimeIndexSet
 ---
 
-# Summable inv almost Prime Index Set
+# Convergence of reciprocal sums over almost primes of almost prime index
 
-For positive integers `j, k`, the sum of reciprocals of the `j`-almost primes of
-`k`-almost prime index converges; the same holds for `N_{k_1 ⋯ k_m}` for every `m ≥ 2` and
-positive `k_1, …, k_m` (here `k_1 = k` and `L = [k_2, …, k_m]` is nonempty).
+**Convergence of reciprocal sums over almost primes of almost prime index.** A $k$-almost
+prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
+integers $k_1, \dots, k_m$ let $N_{k_1}$ be the set of $k_1$-almost primes and, for $m \ge 2$, let
+$N_{k_1 k_2 \cdots k_m}$ be the set of $k_1$-almost primes whose index in the increasing
+enumeration of the $k_1$-almost primes (starting at $1$) lies in $N_{k_2 \cdots k_m}$. Then for
+every $m \ge 2$ and all positive integers $k_1, \dots, k_m$ the series
+$\sum_{n \in N_{k_1 k_2 \cdots k_m}} 1/n$ converges.
+
+In particular (the case $m = 2$), for all positive integers $j$ and $k$ the sum of the reciprocals
+of the $j$-almost primes of $k$-almost prime index converges.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

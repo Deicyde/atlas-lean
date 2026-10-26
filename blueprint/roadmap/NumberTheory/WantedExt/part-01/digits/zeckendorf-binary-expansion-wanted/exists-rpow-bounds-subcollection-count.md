@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exists_rpow_bounds_subcollectionCount
 ---
 
-# Exists rpow bounds subcollection Count
+# Power-law bounds for the subcollection count
 
-Main theorem, part (1): let `Ẽ` and `E` be the periodic Zeckendorf collections determined by
-lists `L̃` and `L` (length `≥ 2`, first entry nonzero) with `E` a proper subcollection of `Ẽ`, and
-let `H̃` be the fundamental sequence of `Ẽ`. Then there are positive reals `γ < 1`, `a`, `b` with
-`a < z(x) / x^γ < b` for all sufficiently large `x`.
+**Power-law bounds for the subcollection count.** Let $L$ and $\tilde L$ be lists of natural
+numbers of length at least $2$ with nonzero first entries, and let $E$ and $\tilde E$ be the
+periodic Zeckendorf collections they determine, with $E$ a proper subset of $\tilde E$. Let
+$\tilde H$ be a strictly increasing sequence of positive integers such that
+$\mu \mapsto \sum_k \mu_k \tilde H_k$ is a bijection from $\tilde E$ onto $\mathbb N$, and let
+$z(x)$ be the number of natural numbers $n < x$ of the form $\sum_k \mu_k \tilde H_k$ with
+$\mu \in E$. Then there are reals $\gamma$, $a$ and $b$ with $0 < \gamma < 1$, $a > 0$ and $b > 0$
+such that $a < z(x) / x^\gamma < b$ for all sufficiently large real $x$.
 
 ## Depends on
 
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
-- [Subcollection Count](subcollection-count.md)
-- [Zeckendorf Eval](zeckendorf-eval.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
+- [Counting function of a subcollection](subcollection-count.md)
+- [Evaluation of a coefficient function at an integer sequence](zeckendorf-eval.md)
 
 ## Sources
 

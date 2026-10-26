@@ -5,5 +5,5 @@ navigation: module
 
 # Isobaric Polynomial
 
-- [Isobaric Weight](isobaric-weight.md)
-- [Is Isobaric](is-isobaric.md)
+- [Isobaric weight of an exponent vector](isobaric-weight.md)
+- [Isobaric polynomial](is-isobaric.md)

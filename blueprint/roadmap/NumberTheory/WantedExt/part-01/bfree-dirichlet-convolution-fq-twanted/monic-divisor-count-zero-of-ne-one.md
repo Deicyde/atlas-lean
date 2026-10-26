@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.monicDivisorCount_zero_of_ne_one
 ---
 
-# Monic Divisor Count zero of ne one
+# The divisor function $d_0$ vanishes away from $1$
 
-`d_0(f) = 0` for `f ≠ 1` (the empty product is `1`).
+**The divisor function $d_0$ vanishes away from $1$.** Let $F$ be a field and let $f \in F[T]$
+with $f \ne 1$. Then $d_0(f) = 0$, where $d_h(f)$ is the number of $h$-tuples of monic
+polynomials in $F[T]$ whose product is $f$: the only $0$-tuple is the empty one, whose product
+is $1$.
 
 ## Depends on
 
-- [Monic Divisor Count](monic-divisor-count.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

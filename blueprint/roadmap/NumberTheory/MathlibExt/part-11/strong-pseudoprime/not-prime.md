@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsStrongPseudoprime.not_prime
 ---
 
-# Not prime
+# Strong pseudoprimes are not prime
 
-A strong pseudoprime is not prime.
+**Strong pseudoprimes are not prime.** If $n$ is a strong pseudoprime to some base $b$
+modulo $n$, then $n$ is not prime.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
+- [Strong pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

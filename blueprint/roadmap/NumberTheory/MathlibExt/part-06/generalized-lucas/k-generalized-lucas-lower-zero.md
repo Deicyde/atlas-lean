@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.kGeneralizedLucas_lower_zero
 ---
 
-# K Generalized Lucas lower zero
+# $k$-generalized Lucas numbers at the lowest index
 
-Lowest source index `2 - k` is zero when `k ≥ 3`.
+**$k$-generalized Lucas numbers at the lowest index.** For every natural number $k \ge 3$,
+the $k$-generalized Lucas number $L^{(k)}_{2-k}$ equals $0$.
 
 ## Depends on
 
-- [K Generalized Lucas](k-generalized-lucas.md)
+- [$k$-generalized Lucas numbers](k-generalized-lucas.md)
 
 ## Proof depends on
 
-- [K Generalized Lucas neg eq zero](k-generalized-lucas-neg-eq-zero.md)
+- [$k$-generalized Lucas numbers vanish at negative indices](k-generalized-lucas-neg-eq-zero.md)
 
 ## Sources
 

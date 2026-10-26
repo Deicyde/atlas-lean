@@ -6,9 +6,10 @@ proof: formalized
 lean: Zsqrtd.NegTwo.zsqrtd_neg_two_mod8_obstruction
 ---
 
-# Zsqrtd neg two mod8 obstruction
+# x² + 2y² is never 5 or 7 modulo 8
 
-`x² + 2y²` over `ZMod 8` is never `5` or `7`.
+**x² + 2y² is never 5 or 7 modulo 8.** For all $x, y \in \mathbb{Z}/8\mathbb{Z}$,
+$x^2 + 2y^2 \ne 5$ and $x^2 + 2y^2 \ne 7$.
 
 ## Depends on
 

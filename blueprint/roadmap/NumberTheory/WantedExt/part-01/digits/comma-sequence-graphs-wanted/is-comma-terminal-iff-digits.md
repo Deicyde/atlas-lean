@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.isCommaTerminal_iff_digits
 ---
 
-# Is Comma Terminal iff digits
+# Landmines of the comma sequence
 
-Landmines: in base `b ≥ 2`, a positive integer `n` has no comma-successor (equivalently no
-comma-child) iff its base-`b` representation is `(b-1)…(b-1) x y` with `i ≥ 0` leading digits
-`b - 1`, `1 ≤ x ≤ b - 2` and `y = b - 1 - x`. `Nat.digits` lists digits least significant
-first. "No comma-child" is `IsCommaTerminal b n` (no digit `y` with
-`n + b·(n mod b) + y` having leading digit `y`).
+**Landmines of the comma sequence.** Let $b \ge 2$ and let $n$ be a positive integer. Then no
+digit $y < b$ is a comma candidate for $n$ in base $b$ (so $n$ has no comma successor) if and
+only if the base-$b$ representation of $n$, most significant digit first, is
+$(b-1) \cdots (b-1)\, x\, (b-1-x)$ with some number $i \ge 0$ of leading digits $b - 1$ and
+$1 \le x \le b - 2$.
 
 ## Depends on
 

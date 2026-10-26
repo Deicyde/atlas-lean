@@ -6,9 +6,12 @@ proof: formalized
 lean: Zsqrtd.natAbs_norm_dvd_of_dvd
 ---
 
-# Nat Abs norm dvd of dvd
+# The norm respects divisibility in $\mathbb{Z}(\sqrt{d})$
 
-Norms respect divisibility, on `natAbs`.
+**The norm respects divisibility in $\mathbb{Z}[\sqrt{d}]$.** Let $d$ be an integer and let
+$N(a + b\sqrt{d}) = a^2 - db^2$ be the norm on the ring $\mathbb{Z}[\sqrt{d}]$ of formal
+expressions $a + b\sqrt{d}$ with $a, b \in \mathbb{Z}$ and $\sqrt{d}^2 = d$. If $x$ divides $y$ in
+$\mathbb{Z}[\sqrt{d}]$, then $|N(x)|$ divides $|N(y)|$.
 
 ## Depends on
 

@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fermat Prime](../../../MathlibExt/part-05/is-fermat-prime.md)
+- [Fermat prime](../../../MathlibExt/part-05/is-fermat-prime.md)
 
 ## Sources
 

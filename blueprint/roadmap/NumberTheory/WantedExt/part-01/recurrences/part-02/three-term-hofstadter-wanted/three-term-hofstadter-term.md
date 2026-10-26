@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadterTerm
 ---
 
-# Three Term Hofstadter Term
+# Three-term Hofstadter-like sequence
 
-The term `B(j)` of the sequence with initial conditions `init`, or `none` if the
-sequence stops before index `j`. Index `0` follows `threeTermHofstadterLookup`: it is `0`
-when `pad` and undefined otherwise.
+**Three-term Hofstadter-like sequence.** Let $x_1, \dots, x_m$ be integers ($m \ge 0$), the
+initial conditions, and choose whether the sequence is padded. The sequence $B$ has $B(i) = x_i$
+for $1 \le i \le m$; the padded sequence has $B(i) = 0$ for every integer $i \le 0$, while the
+unpadded one is undefined at every $i \le 0$. For $n > m$,
+
+$$B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3)),$$
+
+which is defined only when every value of $B$ on the right-hand side is defined and the indices
+$n - B(n-1)$, $n - B(n-2)$, $n - B(n-3)$ are less than $n$; once a term is undefined, the
+sequence stops and every later term is undefined. The term at a natural number index $j$ is
+$B(j)$ when this is defined and undefined otherwise; in particular the term at index $0$ is $0$
+for the padded sequence and undefined for the unpadded one.
 
 ## Depends on
 
@@ -17,8 +26,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Three Term Hofstadter Lookup](three-term-hofstadter-lookup.md)
-- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
+- [Value of a partially computed sequence at an index](three-term-hofstadter-lookup.md)
+- [Initial segment of a three-term Hofstadter-like sequence](three-term-hofstadter-prefix.md)
 
 ## Sources
 

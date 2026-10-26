@@ -5,23 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.circuitRightEdge
 ---
 
-# Circuit Right Edge
+# Right-edge function
 
-The right-edge function `ℛ(T_{r,d}, T_{r,d+1}, T_{r+1,d+1})`: `Y`-`Δ` of the out-star at the
-bottom-right vertex of `T_{r,d}`, with the arm of `T_{r,d+1}` (the one opposite the new edge) first.
-This follows Steps 2-5 and Figure 2; the displayed equation (2.4) instead lists `T_{r+1,d}` and puts
-the arm of `T_{r,d}` first, which gives `C₁,₂ = 29/36` against Table 1's `13/12`.
+**Right-edge function.** Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ and
+$Y(a, b, c) = (ab + bc + ca)/a$ be the delta-wye and wye-delta resistance functions, and for an
+upright triangle $t$ write $L_t$, $R_t$, $B_t \in K$ for the values on its left, right and base
+edges. For triangles $t$, $u$, $v$, the right-edge function is
+$\mathcal{R}(t, u, v) = Y(\Delta(B_u, L_u, R_u), \Delta(R_t, B_t, L_t), \Delta(L_v, R_v, B_v))$,
+the wye-delta transform of the star formed by the bottom-left arm of $u$, the bottom-right arm of
+$t$ and the top arm of $v$, with the arm of $u$ first.
+
+In the row reduction of a labelling $T$ it is applied to $t = T_{r,d}$, $u = T_{r,d+1}$ and
+$v = T_{r+1,d+1}$ for $d \ne r$, where $T_{r,d}$ is the triangle in row $r$ and diagonal $d$. This
+follows Steps 2-5 and Figure 2; the displayed equation (2.4) instead uses $T_{r+1,d}$ in place of
+$T_{r+1,d+1}$ and puts the arm of $t$ first, which gives $C_{1,2} = 29/36$ against Table 1's
+$13/12$.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Left Arm](circuit-left-arm.md)
-- [Circuit Right Arm](circuit-right-arm.md)
-- [Circuit Top Arm](circuit-top-arm.md)
-- [Circuit Y](circuit-y.md)
+- [Bottom-left delta-wye arm](circuit-left-arm.md)
+- [Bottom-right delta-wye arm](circuit-right-arm.md)
+- [Top delta-wye arm](circuit-top-arm.md)
+- [The Y-Δ resistance function](circuit-y.md)
 
 ## Sources
 

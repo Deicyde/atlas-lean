@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.circuitVar
 ---
 
-# Circuit Var
+# Variables of the multivariable circuit array
 
-The variable `X_m` in the field of rational functions in `X₀, X₁, …` over `ℚ`.
+**Variables of the multivariable circuit array.** For a natural number $m$, $X_m$ is the
+indeterminate $X_m$ regarded as an element of the field of fractions
+$\mathbb{Q}(X_0, X_1, X_2, \dots)$ of the polynomial ring $\mathbb{Q}[X_0, X_1, X_2, \dots]$ in
+countably many variables.
 
 ## Depends on
 

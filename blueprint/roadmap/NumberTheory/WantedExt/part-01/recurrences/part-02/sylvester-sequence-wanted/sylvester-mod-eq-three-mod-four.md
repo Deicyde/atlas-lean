@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_modEq_three_mod_four
 ---
 
-# Proposition 1, congruence (5)
+# Sylvester numbers modulo 4
 
-**Proposition 1, congruence (5)**: `S_n ≡ 3 (mod 4)` for `n ≥ 1`.
+**Sylvester numbers modulo 4.** Let $(S_n)_{n \ge 0}$ be the Sylvester sequence,
+$S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $n \ge 1$, $S_n \equiv 3 \pmod 4$.
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

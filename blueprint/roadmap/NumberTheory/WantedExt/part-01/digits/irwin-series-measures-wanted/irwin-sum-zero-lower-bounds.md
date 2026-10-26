@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.irwinSum_zero_lowerBounds
 ---
 
-# Irwin Sum zero lower Bounds
+# Lower bounds for the Irwin sum without the digit
 
-Proposition 2: if `b>2` and `d≠0`, `H^{(0)}` exceeds both
-`b log b - b log(1+1/d)` and its consequence `b log(b/2)`. Source:
-Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26
-(2026), Article A11, Proposition 2.
+**Lower bounds for the Irwin sum without the digit.** Let $b > 2$ be a base and let $d$ be a
+nonzero digit, $0 < d < b$. Let $H^{(0)}$ be the Irwin sum of $1/n$ over the positive integers $n$
+whose base-$b$ expansion does not contain $d$. Then
+$b \log b - b \log(1 + 1/d) < H^{(0)}$ and $b \log(b/2) < H^{(0)}$.
 
 ## Depends on
 
-- [Irwin Sum](irwin-sum.md)
+- [Irwin sum](irwin-sum.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 2.

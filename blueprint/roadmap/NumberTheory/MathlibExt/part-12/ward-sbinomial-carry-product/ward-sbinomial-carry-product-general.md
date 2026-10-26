@@ -7,12 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.ward_sbinomial_carry_product_general
 ---
 
-# Ward sbinomial carry product general
+# Ward's identity with hypotheses at positive indices
 
-Ward's identity with hypotheses only on positive indices: if `f k = ∏_{d ∣ k} s d` and
-`s b ≠ 0` for all positive `k` and `b`, then the `f`-factorial quotient
-`f!(n + m) / (f!(n) f!(m))` equals `wardGeneralizedBinomialCoefficient s n m`.
-`ward_sbinomial_carry_product` is the source-shaped form.
+**Ward's identity with hypotheses at positive indices.** Let
+$s, f : \mathbb{N} \to \mathbb{Z}$ satisfy $s(b) \ne 0$ for every $b \ge 1$ and
+$f(k) = \prod_{d \mid k} s(d)$ for every $k \ge 1$, the product running over the positive
+divisors of $k$. Write $f!(t) = \prod_{i=1}^{t} f(i)$. Let $n$ and $m$ be natural numbers, and
+let $\binom{n+m}{n}_s$ be the Ward generalized binomial coefficient of $s$ at $n$ and $m$. Then
+the identity
+
+$$\frac{f!(n+m)}{f!(n) \, f!(m)} = \binom{n+m}{n}_s$$
+
+holds in $\mathbb{Q}$.
 
 ## Depends on
 

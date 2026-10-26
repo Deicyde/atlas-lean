@@ -23,9 +23,9 @@ for a prime $p$, where the coefficient $n$ of the double-root formula is read mo
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

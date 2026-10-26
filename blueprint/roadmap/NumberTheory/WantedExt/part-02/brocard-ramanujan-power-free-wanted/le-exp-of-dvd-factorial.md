@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.le_exp_of_dvd_factorial
 ---
 
-# Le exp of dvd factorial
+# Divisors of a factorial bounded by their largest prime exponent
 
-Lemma 1: if a positive integer `x` divides `n!` (`n ≥ 1`), then
-`x ≤ exp (3 n K(x) / 2)`, where `K(x)` is the largest exponent in the prime factorization
-of `x` (`K(1) = 0`), written `x.primeFactors.sup x.factorization`.
+**Divisors of a factorial bounded by their largest prime exponent.** Let $n \ge 1$ and let
+$x$ be a positive integer dividing $n!$. Write $K(x)$ for the largest exponent in the prime
+factorization of $x$, with $K(1) = 0$. Then $x \le \exp(3 n K(x) / 2)$.
 
 ## Depends on
 

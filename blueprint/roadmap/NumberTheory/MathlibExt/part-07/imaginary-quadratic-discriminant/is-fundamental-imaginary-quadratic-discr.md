@@ -5,10 +5,10 @@ statement: formalized
 lean: ImaginaryQuadraticDiscriminant.IsFundamentalImaginaryQuadraticDiscriminant
 ---
 
-# Is Fundamental Imaginary Quadratic Discriminant
+# Fundamental imaginary quadratic discriminant
 
-A fundamental imaginary quadratic discriminant is a negative instance of the canonical
-fundamental-discriminant predicate `MetaMathlibExt.IsFundamentalDiscriminant`.
+**Fundamental imaginary quadratic discriminant.** An integer $D$ is a fundamental imaginary
+quadratic discriminant if $D < 0$ and $D$ is a fundamental discriminant.
 
 ## Depends on
 

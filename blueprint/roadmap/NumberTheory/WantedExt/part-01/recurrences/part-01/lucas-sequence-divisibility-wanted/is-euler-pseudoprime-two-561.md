@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isEulerPseudoprime_two_561
 ---
 
-# Is Euler Pseudoprime two 561
+# 561 is an Euler pseudoprime to the base 2
 
-`561` is an Euler pseudoprime to the base `2`.
+**561 is an Euler pseudoprime to the base 2.** The composite number $561 = 3 \cdot 11 \cdot 17$
+is an Euler pseudoprime to the base $2$.
 
 ## Depends on
 
-- [Is Euler Pseudoprime](is-euler-pseudoprime.md)
+- [Euler pseudoprime](is-euler-pseudoprime.md)
 
 ## Sources
 

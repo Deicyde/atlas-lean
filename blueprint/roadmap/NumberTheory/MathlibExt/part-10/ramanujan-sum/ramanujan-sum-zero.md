@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanSum_zero
 ---
 
-# Ramanujan Sum zero
+# Ramanujan sum at zero
 
-The Ramanujan sum at zero is Euler's totient function.
+**Ramanujan sum at zero.** For every positive integer $n$, the Ramanujan sum $c_n(0)$ equals
+Euler's totient $\varphi(n)$.
 
 ## Depends on
 
-- [Ramanujan Sum](ramanujan-sum.md)
+- [Ramanujan sum](ramanujan-sum.md)
 
 ## Sources
 

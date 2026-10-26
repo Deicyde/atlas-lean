@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsRough.mul
 ---
 
-# Mul
+# Products of rough numbers are rough
 
-Multiplication closure, forward direction.
+**Products of rough numbers are rough.** For natural numbers $m$, $n$ and $k$, if $m$ and
+$n$ are both $k$-rough, then $mn$ is $k$-rough.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Is Rough mul](is-rough-mul.md)
+- [A product is rough exactly when both factors are](is-rough-mul.md)
 
 ## Sources
 

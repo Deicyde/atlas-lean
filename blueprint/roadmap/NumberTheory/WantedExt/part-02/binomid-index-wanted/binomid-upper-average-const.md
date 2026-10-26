@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.binomidUpperAverage_const
 ---
 
-# Binomid Upper Average const
+# Upper average of a constant sequence
 
-The upper average of the constant sequence `c^∞` is `c`.
+**Upper average of a constant sequence.** For every natural number $c$, the upper average
+$A_0$ of the constant sequence $(c, c, c, \dots)$ equals $c$.
 
 ## Depends on
 
-- [Binomid Upper Average](binomid-upper-average.md)
+- [Upper average of a sequence](binomid-upper-average.md)
 
 ## Proof depends on
 
-- [Binomid Average](binomid-average.md)
-- [Binomid Average const](binomid-average-const.md)
+- [Initial averages of a sequence](binomid-average.md)
+- [Averages of a constant sequence](binomid-average-const.md)
 
 ## Sources
 

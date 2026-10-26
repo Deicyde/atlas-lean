@@ -14,7 +14,7 @@ Meissel–Mertens constant (`≈ 0.261497`, the constant of Tenenbaum's Theorem 
 
 ## Depends on
 
-- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hasBinomialForm_two_pow
 ---
 
-# Has Binomial Form two pow
+# Sufficient condition for a binomial form of a power of 2
 
-If `n = xk + r` with `k ≥ 1`, `r ≥ 0` and `2^r C(k, ⌈k/2⌉) < 2^x - 1`, then `2^n`
-has a representation in base `2^x - 1` in binomial form.
+**Sufficient condition for a binomial form of a power of 2.** Let $n$, $x$, $k$ and $r$ be
+natural numbers with $k \ge 1$, $n = xk + r$ and $2^r\binom{k}{\lceil k/2 \rceil} < 2^x - 1$.
+Then $2^n$ has a base-$(2^x - 1)$ representation in binomial form.
 
 ## Depends on
 
-- [Has Binomial Form](has-binomial-form.md)
+- [Binomial form](has-binomial-form.md)
 
 ## Sources
 

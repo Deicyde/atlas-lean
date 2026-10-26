@@ -5,16 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.semiprime_reciprocal_sum_explicit_estimate
 ---
 
-# Semiprime reciprocal sum explicit estimate
+# Explicit estimate for the reciprocal sum of the semiprimes
 
-Explicit estimate for the reciprocal sum of the semiprimes: for all `x > 1`,
-`∑_{n ∈ N_2, n ≤ x} 1/n = (log log x + β)² / 2 + (P(2) - ζ(2)) / 2 + α₁ / log x + E(x)` with
-`|E(x)| < (log x)^{-3/2}`, where `P(2) = ∑_p p^{-2}`, `ζ(2) = π² / 6`, and
-`α₁ = γ + ∑_p log p / (p (p - 1))`.
+**Explicit estimate for the reciprocal sum of the semiprimes.** A semiprime is a product of
+exactly two primes counted with multiplicity; for real $x$ let $S(x)$ be the sum of $1/n$ over the
+semiprimes $n \le x$. Let $\beta$ be the Meissel–Mertens constant, $\gamma$ the Euler–Mascheroni
+constant and $\log$ the natural logarithm, and put
+
+$$
+P(2) = \sum_{p} \frac{1}{p^2}, \qquad \zeta(2) = \frac{\pi^2}{6}, \qquad
+\alpha_1 = \gamma + \sum_{p} \frac{\log p}{p (p - 1)},
+$$
+
+the sums running over all primes $p$. Then for every real $x > 1$ the error
+
+$$
+E(x) = S(x) - \frac{(\log \log x + \beta)^2}{2} - \frac{P(2) - \zeta(2)}{2} -
+\frac{\alpha_1}{\log x}
+$$
+
+satisfies $|E(x)| < (\log x)^{-3/2}$.
 
 ## Depends on
 
-- [Meissel Mertens Constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lucasInterval_five
 ---
 
-# Lucas Interval five
+# Endpoints of the Lucas interval $\Lambda_5$
 
-`Λ_5 = [12, 17]`.
+**Endpoints of the Lucas interval $\Lambda_5$.** The Lucas interval $\Lambda_5$ has left end
+$12$ and right end $17$, that is, $\Lambda_5 = [12, 17]$.
 
 ## Depends on
 
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

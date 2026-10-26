@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.base_eq_two_pow_sub_one_of_palindrome
 ---
 
-# Base eq two pow sub one of palindrome
+# Even-length palindromic powers of 2 have base one less than a power of 2
 
-If `2^n` has a palindromic representation in base `b` with an even number of
-digits, then `b = 2^x - 1` for some `x`.
+**Even-length palindromic powers of 2 have base one less than a power of 2.** Let $n$ and
+$b \ge 2$ be natural numbers. If the base-$b$ representation of $2^n$ is a palindrome with an
+even number of digits, then $b = 2^x - 1$ for some natural number $x$.
 
 ## Depends on
 

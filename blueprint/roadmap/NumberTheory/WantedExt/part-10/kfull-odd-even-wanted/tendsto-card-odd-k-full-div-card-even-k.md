@@ -17,7 +17,7 @@ The paper's identification of these counts with its `O_{k,⌊x⌋}(x)` and
 
 ## Depends on
 
-- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [$k$-full numbers](../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.exists_sqrt_cubic_equidistributed_mod_one
 ---
 
-# Exists sqrt cubic equidistributed mod one
+# Square roots of cubics with positive leading coefficient are uniformly distributed modulo one
 
-Let `q(t) = a t³ + b t² + c t + d` with real coefficients and `a > 0`. There is an integer
-`T ≥ 1` such that `q(t) > 0` for real `t ≥ T`, the sequence `(√q(n))_{n ≥ T}` is uniformly
-distributed modulo one (each interval `[α, β) ⊆ [0, 1]` receives asymptotic proportion `β - α`
-of the fractional parts of `√q(T + n)`, `n = 0, 1, …`), and, with a constant `C` depending only on
-`q`, for every integer `N ≥ T` and every nonzero integer `γ`,
-`|∑_{n=T}^{N} e(γ √q(n))| ≤ C (|γ|^{1/2} N^{3/4} + |γ| N^{1/2} + |γ|^{-1/2} N^{1/4} + 1)`.
+**Square roots of cubics with positive leading coefficient are uniformly distributed modulo
+one.** Let $q(t) = a t^3 + b t^2 + c t + d$ with real coefficients $a, b, c, d$ and $a > 0$,
+write $\{x\} = x - \lfloor x \rfloor$ for the fractional part of a real $x$, and let
+$e(x) = e^{2\pi i x}$. Then there is an integer $T \ge 1$ with three properties. First,
+$q(t) > 0$ for every real $t \ge T$. Second, the sequence $\sqrt{q(T)}, \sqrt{q(T + 1)}, \dots$
+is uniformly distributed modulo one: for all real $\alpha, \beta$ with $0 \le \alpha < \beta \le 1$,
+
+$$\lim_{N \to \infty} \frac{1}{N}
+\#\bigl\{0 \le n < N : \alpha \le \{\sqrt{q(T + n)}\} < \beta\bigr\} = \beta - \alpha.$$
+
+Third, there is a real constant $C$ such that for every integer $N \ge T$ and every nonzero
+integer $\gamma$,
+
+$$\Bigl|\sum_{n=T}^{N} e\bigl(\gamma \sqrt{q(n)}\bigr)\Bigr| \le
+C \bigl(|\gamma|^{1/2} N^{3/4} + |\gamma| N^{1/2} + |\gamma|^{-1/2} N^{1/4} + 1\bigr).$$
 
 ## Depends on
 

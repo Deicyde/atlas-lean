@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book152
 
-- [Disc Lattice Count](disc-lattice-count.md)
-- [Steinhaus Disc Frequencies Exist](steinhaus-disc-frequencies-exist.md)
+- [Lattice points in a translated unit disc](disc-lattice-count.md)
+- [Steinhaus's disc frequencies exist](steinhaus-disc-frequencies-exist.md)

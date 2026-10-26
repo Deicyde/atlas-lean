@@ -18,7 +18,7 @@ game, which determines the P-positions (`MetaMathlibExt.pPositions_unique`).
 - [Bronze Companion First](bronze-companion-first.md)
 - [Bronze Companion Second](bronze-companion-second.md)
 - [Bronze Lucas Params](bronze-lucas-params.md)
-- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

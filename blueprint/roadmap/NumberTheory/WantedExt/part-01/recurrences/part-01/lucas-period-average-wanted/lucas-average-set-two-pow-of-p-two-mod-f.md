@@ -5,21 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.lucasAverageSet_two_pow_of_p_two_mod_four
 ---
 
-# Lucas Average Set two pow of p two mod four
+# Powers of two when $P \equiv 2$ and $-Q \equiv 1 \pmod 4$
 
-Theorem 2.15: for nondegenerate `U(a, b)` with `a ≡ 2 (mod 4)` and `b ≡ 1 (mod 4)`:
-`2 ^ i ∈ S(U)` for `i ≥ 1`; `B_U(n) ≡ 0 (mod 2 ^ k)` when `2 ^ k ∥ n` with `k ≥ 2`;
-`C'(2) = 4` while `C(2) = 2`; `C'(2 ^ k) = C(2 ^ k) = 2 ^ k` and all `A_W(2 ^ k)` are integers
-for `k ≥ 2`.
+**Powers of two when $P \equiv 2$ and $-Q \equiv 1 \pmod 4$.** Let $P$ and $Q \ne 0$ be
+integers forming a nondegenerate Lucas pair with $P \equiv 2 \pmod 4$ and $-Q \equiv 1 \pmod 4$,
+and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Let $S(U)$ be the set of positive integers $n$ coprime to $Q$ such
+that the period $\pi_U(n)$ of $U$ modulo $n$ divides $n$, let $S'(U)$ be the set of $n \in S(U)$
+with $n \mid U_1 + \dots + U_n$, and say that a natural number $x$ has integral averages if
+$x \mid w_1 + \dots + w_x$ for every integer sequence $(w_k)_{k \ge 0}$ with
+$w_{k+2} = P w_{k+1} - Q w_k$ for all $k$. Then $2^i \in S(U)$ for every $i \ge 1$; for every
+$k \ge 2$ and every natural number $n$ with $2^k \mid n$ and $2^{k+1} \nmid n$, one has
+$2^k \mid U_1 + \dots + U_n$; the least even element of $S'(U)$ is $4$, while the least even
+element of $S(U)$ is $2$; and for every $k \ge 2$, $2^k$ is the least multiple of $2^k$ in
+$S'(U)$ and in $S(U)$, and $2^k$ has integral averages.
+
+In the paper's notation $a = P$ and $b = -Q$, so the hypotheses are $a \equiv 2$ and
+$b \equiv 1 \pmod 4$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

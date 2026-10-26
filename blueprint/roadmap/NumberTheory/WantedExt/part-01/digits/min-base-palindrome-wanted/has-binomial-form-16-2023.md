@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.hasBinomialForm_16_2023
 ---
 
-# Has Binomial Form 16 2023
+# The binomial form of 2023 in base 16
 
-Characteristic example: `2023 = (7, 14, 7)_16 = 7 · (1, 2, 1)_16` is in binomial form.
+**The binomial form of 2023 in base 16.** The number $2023$ has a base-$16$ representation in
+binomial form: its base-$16$ digits are $7, 14, 7$, that is
+$7\binom{2}{2}, 7\binom{2}{1}, 7\binom{2}{0}$.
 
 ## Depends on
 
-- [Has Binomial Form](has-binomial-form.md)
+- [Binomial form](has-binomial-form.md)
 
 ## Sources
 

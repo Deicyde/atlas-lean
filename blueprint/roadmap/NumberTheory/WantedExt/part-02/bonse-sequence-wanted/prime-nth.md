@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BonseWanted.primeNth
 ---
 
-# Prime Nth
+# The $m$-th prime, counted from one
 
-The `m`-th prime, 1-based (`primeNth 1 = 2`); junk
-value `Nat.nth Nat.Prime 0 = 2` at `m = 0` is unused.
+**The $m$-th prime, counted from one.** For $m \ge 1$, $p_m$ is the $m$-th prime, so that
+$p_1 = 2$, $p_2 = 3$, $p_3 = 5$; at $m = 0$ the value is also $2$.
 
 ## Depends on
 

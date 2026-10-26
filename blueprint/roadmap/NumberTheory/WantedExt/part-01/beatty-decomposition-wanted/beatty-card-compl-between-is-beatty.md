@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.beatty_card_compl_between_isBeatty
 ---
 
-# Beatty card compl between is Beatty
+# The $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$ form a Beatty sequence
 
-For complementary Beatty sequences with slopes `1 < α < 2` and `β`, the sequence
-`r n` of elements of `B` strictly between `⌊nα⌋` and `⌊nβ⌋` is a Beatty sequence with
-a slope strictly between `0` and `1`.
+**The $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$ form a
+Beatty sequence.** Let $\alpha$ be an irrational number with $1 < \alpha < 2$, let $\beta$ be a
+real number with $\alpha^{-1} + \beta^{-1} = 1$, and let $B$ be the set of the numbers
+$\lfloor k\beta\rfloor$ for positive integers $k$. Then there is a real number $r$ with
+$0 < r < 1$ such that for every positive integer $n$, the number of elements of $B$ in the open
+interval $(\lfloor n\alpha\rfloor, \lfloor n\beta\rfloor)$ equals $\lfloor nr\rfloor$.
+
+By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then complementary.
 
 ## Depends on
 

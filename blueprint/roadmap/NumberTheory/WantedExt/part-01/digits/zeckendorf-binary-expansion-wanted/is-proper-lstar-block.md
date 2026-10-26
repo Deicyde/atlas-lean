@@ -7,8 +7,11 @@ lean: MetaMathlibExt.IsProperLStarBlock
 
 # Is Proper LStar Block
 
-`ζ` is a proper `L*`-block with (zero-based) support interval `[s, k]`: it agrees with the
-maximal block `β̄` starting at `s` below `k`, is smaller at `k`, and vanishes after `k`.
+**Proper $L^*$-blocks.** Let $L$ be a list of natural numbers, index coefficient functions
+from $1$, and let $\bar\beta^s$ be the maximal $L^*$-block starting at index $s$. For $s \ge 1$,
+a function $\zeta : \mathbb N \to \mathbb N$ is a proper $L^*$-block with support interval
+$[s, k]$ when $s \le k$, $\zeta_i = \bar\beta^s_i$ for all $i < k$, $\zeta_k < \bar\beta^s_k$,
+and $\zeta_i = 0$ for all $i > k$. Since $\bar\beta^s$ vanishes below $s$, so does $\zeta$.
 
 ## Depends on
 

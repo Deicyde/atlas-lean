@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.monic_perron_formula
 ---
 
-# Monic perron formula
+# Perron's formula for monic polynomials over a finite field
 
-Perron's formula over `𝔽_q[T]`: if `A(u) = ∑_{f ∈ M} a(f) u^{deg f}` converges absolutely on
-`|u| ≤ ρ` with `0 < ρ < 1`, then
-`∑_{f ∈ M, deg f ≤ n} a(f) = (2πi)⁻¹ ∮_{|u| = ρ} A(u) / (u^n (1 - u)) du / u`.
-Absolute convergence is stated as summability of `‖a f‖ ρ^{deg f}` over monic `f`.
+**Perron's formula for monic polynomials over a finite field.** Let $F$ be a finite field, let
+$a$ be a complex-valued function on $F[T]$, and let $\rho$ be a real number with $0 < \rho < 1$ such
+that the series $\sum_f |a(f)| \rho^{\deg f}$ over all monic $f \in F[T]$ converges. Put
+$A(u) = \sum_f a(f) u^{\deg f}$, the sum again over all monic $f$. Then for every natural number
+$n$, with the circle $|u| = \rho$ traversed counterclockwise,
+
+$$\sum_{f \text{ monic},\ \deg f \le n} a(f) = \frac{1}{2 \pi i} \oint_{|u| = \rho}
+\frac{A(u)}{u^n (1 - u)} \, \frac{du}{u}.$$
 
 ## Depends on
 

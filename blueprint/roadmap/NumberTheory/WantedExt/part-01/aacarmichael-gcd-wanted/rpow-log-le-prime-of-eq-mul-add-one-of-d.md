@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.rpow_log_le_prime_of_eq_mul_add_one_of_dvd_prod_primes
 ---
 
-# Rpow log le prime of eq mul add one of dvd prod primes
+# Size of the auxiliary primes in the construction
 
-Size of the primes `q ∈ 𝒬ᵢ` in the construction. Let `z` be a natural number and
-`J = ∏_{z/2 ≤ r ≤ z, r prime} r`, and let `𝓡_j` be the set of primes `q = g j + 1` with `g ∣ J`
-and `ω(g) = ⌊log z⌋`. For every real `A` and all sufficiently large `z`, every `q ∈ 𝓡_j` with
-`1 ≤ j ≤ (log z)^{2A}` satisfies `(z/6)^{log z} ≤ q ≤ 2 z^{log z} (log z)^{2A}`.
+**Size of the auxiliary primes in the construction.** For a natural number $z$, let $J$ be the
+product of the primes $r$ with $z/2 \le r \le z$, and write $\omega(g)$ for the number of distinct
+prime factors of $g$. For every real $A$ and all sufficiently large natural numbers $z$ the
+following holds: if $j$, $g$ and $q$ are natural numbers with $1 \le j \le (\log z)^{2A}$,
+$g \mid J$, $\omega(g) = \lfloor \log z \rfloor$, $q$ prime and $q = gj + 1$, then
 
-The paper states the bound for `q ∈ 𝒬ᵢ`, a chosen subset of `𝓡_{j₀}` with `j₀ ≤ (log z)^{2A}`
-(`A ≥ 2` the constant of Conjecture 2); the statement here quantifies over every such `j` and
-every `q ∈ 𝓡_j`, so it covers every choice of `j₀` and `𝒬ᵢ`, and it allows every real `A`.
+$$(z/6)^{\log z} \le q \le 2 z^{\log z} (\log z)^{2A}.$$
+
+In the paper the bound is stated for the primes $q$ of a chosen set $\mathcal{Q}_i$ of such primes
+with a fixed $j = j_0$, and $A \ge 2$ is the constant of Conjecture 2; the statement here covers
+every such $j$ and $q$, and every real $A$.
 
 ## Depends on
 

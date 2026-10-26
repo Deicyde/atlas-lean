@@ -6,10 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.generalArithmeticalEulerianPolynomial
 ---
 
-# General Arithmetical Eulerian Polynomial
+# General arithmetical Eulerian polynomial
 
-The general arithmetical Eulerian polynomial
-`P_n(t;a,d) = ∑_{k=0}^n A_{n,k}(a,d)t^k`.
+**General arithmetical Eulerian polynomial.** Let $R$ be a ring, let $n$ be a natural number,
+and let $a, d \in R$. For each natural number $k$, write $A_{n,k}(a,d) \in R$ for the general
+arithmetical Eulerian number. The general arithmetical Eulerian polynomial is the polynomial
+in the indeterminate $t$
+
+$$P_n(t;a,d) = \sum_{k=0}^{n} A_{n,k}(a,d)\, t^k \in R[t].$$
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [General Arithmetical Eulerian Number](general-arithmetical-eulerian-number.md)
+- [General arithmetical Eulerian number](general-arithmetical-eulerian-number.md)
 
 ## Sources
 

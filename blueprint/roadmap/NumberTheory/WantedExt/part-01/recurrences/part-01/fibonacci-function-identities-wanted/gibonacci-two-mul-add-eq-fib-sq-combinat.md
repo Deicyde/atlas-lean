@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_two_mul_add_eq_fib_sq_combination
 ---
 
-# Gibonacci two mul add eq fib sq combination
+# Gibonacci index doubling via Fibonacci squares
 
-For a gibonacci sequence `G` and integers `k`, `s`:
-`G_(2k+s) = F_(k+1)^2 G_(s+1) + F_k^2 G_s - F_(k-1)^2 G_(s-1)`.
+**Gibonacci index doubling via Fibonacci squares.** Let $F_m$ be the Fibonacci numbers
+extended to all integers $m$ ($F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$), and let
+$G \colon \mathbb{Z} \to \mathbb{R}$ satisfy $G_{j+2} = G_{j+1} + G_j$ for every integer $j$.
+Then for all integers $k$, $s$,
+
+$$G_{2k+s} = F_{k+1}^2 G_{s+1} + F_k^2 G_s - F_{k-1}^2 G_{s-1}.$$
 
 ## Depends on
 

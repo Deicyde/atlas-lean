@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseGood_of_image_comp
 ---
 
-# Is Neg Base Good of image comp
+# Goodness pulls back along compositions of the digit-square map and the successor map
 
-For `b ≤ -2`, a finite set `T` of positive integers and a composition `F` of a finite sequence
-of the maps `S_{2,b}` and `I(t) = t + 1` (the list `ops`, `true` for `S_{2,b}`), if `F(T)` is
-`(2, b)`-good then `T` is `(2, b)`-good.
+**Goodness pulls back along compositions of the digit-square map and the successor map.**
+Let $b \le -2$ be an integer, let $S_{2,b}$ be the map sending an integer to the sum of the
+squares of its base-$b$ digits, and let $I(t) = t + 1$. Let $T$ be a finite set of positive
+integers and let $F$ be a composition $F = f_1 \circ \dots \circ f_m$ with $m \ge 0$ (the empty
+composition being the identity), where each $f_i$ is $S_{2,b}$ or $I$. If the image $F(T)$ is
+$(2, b)$-good, then $T$ is $(2, b)$-good.
 
 ## Depends on
 
-- [Is Neg Base Good](is-neg-base-good.md)
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Good sets for the digit-square map](is-neg-base-good.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Sources
 

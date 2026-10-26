@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.fib_linear_coeff_add_alternating_isInt_iff
 ---
 
-# Fib linear coeff add alternating is Int iff
+# Integer sequences with linear Fibonacci coefficients and an alternating term
 
-The rational sequence `w_n = (a n + b) F_n + (c n + d) F_{n-1} + e + f (-1)^n` is
-an integer sequence if and only if there are integers `w₀, …, w₅` (its initial
-values) with
-`a = (3w₀ + 2w₁ - 7w₂ - w₃ + 4w₄ - w₅) / 5`,
-`b = (-3w₀ - 2w₁ - 3w₂ + 6w₃ + 6w₄ - 4w₅) / 5`,
-`c = (-4w₀ - w₁ + 11w₂ - 2w₃ - 7w₄ + 3w₅) / 5`,
-`d = -2w₁ + w₂ + 2w₃ - w₄`,
-`e = (w₀ + 3w₁ + w₂ - 3w₃ - w₄ + w₅) / 2`,
-`f = (w₀ + w₁ - 3w₂ - w₃ + 3w₄ - w₅) / 2`.
-The extracted text prints `-3w₅` in `c` and `2w₁` in `d`; those versions contradict
-the paper's example `w = (0, 1, 2, 6, 12, 26)`, `c = 3/5`, `d = 0`. Here `F_{n-1}`
-is written as `F_{n+1} - F_n`.
+**Integer sequences with linear Fibonacci coefficients and an alternating term.** Let $F_n$
+be the $n$-th Fibonacci number and put $F_{-1} = 1$, so that $F_{n-1} = F_{n+1} - F_n$ for every
+$n \ge 0$. For rational numbers $a, b, c, d, e, f$, the number
+$w_n = (an + b)F_n + (cn + d)F_{n-1} + e + f(-1)^n$ is an integer for every natural number $n$
+if and only if there are integers $v_0, \dots, v_5$ with
+$a = (3v_0 + 2v_1 - 7v_2 - v_3 + 4v_4 - v_5)/5$,
+$b = (-3v_0 - 2v_1 - 3v_2 + 6v_3 + 6v_4 - 4v_5)/5$,
+$c = (-4v_0 - v_1 + 11v_2 - 2v_3 - 7v_4 + 3v_5)/5$,
+$d = -2v_1 + v_2 + 2v_3 - v_4$,
+$e = (v_0 + 3v_1 + v_2 - 3v_3 - v_4 + v_5)/2$ and
+$f = (v_0 + v_1 - 3v_2 - v_3 + 3v_4 - v_5)/2$.
+
+These integers are then the initial values of the sequence: $v_i = w_i$ for $0 \le i \le 5$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_eleven_le_card_primeFactors_of_not_three_dvd
 ---
 
-# Odd Perfect eleven le card prime Factors of not three dvd
+# Odd perfect numbers not divisible by three have at least eleven prime divisors
 
-Kishore (1981) and Hagis (1983), quoted as Lemma 1 (vi): an odd perfect number not divisible by
-three has at least eleven distinct prime divisors.
+**Odd perfect numbers not divisible by three have at least eleven prime divisors.** Every odd
+perfect number that is not divisible by $3$ has at least $11$ distinct prime divisors. This is due
+to Kishore (1981) and Hagis (1983).
 
 ## Depends on
 

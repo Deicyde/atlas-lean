@@ -19,7 +19,7 @@ navigation: transparent
 - [Buchi Square Sequence Bound](buchi-square-sequence-bound-wanted/README.md)
 - [Burgess Polya Vinogradov](burgess-polya-vinogradov-wanted/README.md)
 - [CRecursive Modular Representations](crecursive-modular-representations-wanted/README.md)
-- [Calegari Dimitrov Tang Linear Independent Wanted](cdt-linear-independent.md)
+- [Calegari–Dimitrov–Tang linear independence theorems](cdt-linear-independent.md)
 - [Carmichael Index](carmichael-index-wanted/README.md)
 - [Carmichael Prime Omega](carmichael-prime-omega-wanted/README.md)
 - [Ceiling Hermite Identity](ceiling-hermite-identity-wanted/README.md)

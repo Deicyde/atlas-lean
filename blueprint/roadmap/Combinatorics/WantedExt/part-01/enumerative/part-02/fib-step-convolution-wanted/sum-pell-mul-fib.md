@@ -18,7 +18,7 @@ $$\sum_{j=0}^{n} \mathcal{P}_j \, F_{n-j} = \mathcal{P}_n - F_n.$$
 ## Depends on
 
 - [Fibonacci $m$-step numbers](fib-step.md)
-- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

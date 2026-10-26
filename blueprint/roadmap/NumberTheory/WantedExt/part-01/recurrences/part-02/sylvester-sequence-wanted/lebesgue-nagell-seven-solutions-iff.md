@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.lebesgue_nagell_seven_solutions_iff
 ---
 
-# Theorem 1, `C = 7`
+# Coprime solutions of $x^2 + 7 = 4y^n$
 
-**Theorem 1, `C = 7`** (Luca--Tengely--Togbé, quoted by Naciri):
-the positive coprime solutions of `x² + 7 = 4yⁿ` with `n ≥ 3` are
-exactly `(n, x, y) = (3, 5, 2)`, `(5, 11, 2)`, and `(13, 181, 2)`.
+**Coprime solutions of $x^2 + 7 = 4y^n$.** For natural numbers $n$, $x$ and $y$, the
+conditions $n \ge 3$, $x \ge 1$, $y \ge 1$, $\gcd(x, y) = 1$ and $x^2 + 7 = 4y^n$ hold if and only
+if $(n, x, y)$ is $(3, 5, 2)$, $(5, 11, 2)$ or $(13, 181, 2)$ (Luca–Tengely–Togbé).
 
 ## Depends on
 

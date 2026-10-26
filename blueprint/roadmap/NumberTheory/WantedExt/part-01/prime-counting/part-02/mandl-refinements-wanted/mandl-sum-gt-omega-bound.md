@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.mandl_sum_gt_omega_bound
 ---
 
-# Mandl sum gt omega bound
+# Explicit lower bound in Mandl's inequality
 
-Proposition 2: for every `n ≥ 4605081012945`, with one-indexed `pₙ`, `ℓ = log n`,
-`L = log pₙ` and `M(n) = n pₙ / 2 - ∑_{k ≤ n} p_k`,
-`M(n) > n²/4 + n²/(4ℓ) - n² log ℓ/(4ℓ²) + ω(n) n²/ℓ²`, where
-`ω(n) = 3.151332 ℓ²/(4L²) + ℓ²/(4L) + 16.7 ℓ²/(4L³) - ℓ/4 + log ℓ/4`.
+**Explicit lower bound in Mandl's inequality.** Let $p_k$ denote the $k$-th prime, so that
+$p_1 = 2$. For every integer $n \ge 4605081012945$, put $\ell = \log n$, $L = \log p_n$,
+$M(n) = \frac{n p_n}{2} - \sum_{k=1}^{n} p_k$ and
+
+$$\omega(n) = \frac{3.151332\,\ell^2}{4L^2} + \frac{\ell^2}{4L} + \frac{16.7\,\ell^2}{4L^3} -
+\frac{\ell}{4} + \frac{\log \ell}{4}.$$
+
+Then
+
+$$M(n) > \frac{n^2}{4} + \frac{n^2}{4\ell} - \frac{n^2 \log \ell}{4\ell^2} +
+\frac{\omega(n)\, n^2}{\ell^2}.$$
 
 ## Depends on
 

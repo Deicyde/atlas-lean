@@ -5,21 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.irwinMeasure_halfOpen_local_mass
 ---
 
-# Irwin Measure half Open local mass
+# Local structure of the Irwin measures on cylinders
 
-Proposition 8: at the exact depth scale, the restriction of `μ_k` is zero
-for `k<j`; for `k≥j`, every subset of the half-open cylinder rescales by
-`b^{-l}` to `μ_{k-j}`. The first clause uses measure restriction and the second
-uses real masses via `.toReal`. Source: Jean-François Burnol, *Measures for the
-Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 8.
+**Local structure of the Irwin measures on cylinders.** Let $b > 1$ and $d < b$ be natural
+numbers, and for each natural number $k$ let $\mu_k$ be the Irwin measure of base $b$ and digit
+$d$ with index $k$. Let $x \in [0, 1)$ have base-$b$ depth $l$, that is, $l$ is the least natural
+number such that $b^l x$ is an integer; let $X$ be a string of $l$ base-$b$ digits, read most
+significant digit first, whose value $n(X)$ satisfies $n(X)/b^l = x$; and let $j$ be the number
+of occurrences of $d$ in $X$. Then for every $k < j$ the restriction of $\mu_k$ to
+$[x, x + b^{-l})$ is the zero measure, and for every $k \ge j$ and every subset
+$U \subseteq [x, x + b^{-l})$, as real numbers $\mu_k(U) = b^{-l} \mu_{k-j}(b^l U - b^l x)$,
+where $b^l U - b^l x$ is the image of $U$ under $y \mapsto b^l y - b^l x$.
 
 ## Depends on
 
-- [Has Base Depth](has-base-depth.md)
-- [Affine Scale Set](affine-scale-set.md)
-- [Irwin Measure](irwin-measure.md)
-- [Normalized String Value](normalized-string-value.md)
+- [Base depth of a real number](has-base-depth.md)
+- [Scaled translate of a set](affine-scale-set.md)
+- [Irwin measure](irwin-measure.md)
+- [Normalized value of a digit string](normalized-string-value.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 8.

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.coprimalityDensity_eq_vertex_cover_product
 ---
 
-# Coprimality Density eq vertex cover product
+# Vertex-cover Euler product for the coprimality density
 
-Theorem 9, display (A_G_version_new): for any vertex cover `J`,
-`A_G = ∏_p ∑'_{L ⊆ J} p^{-|L|} (1 - 1/p)^{|J \ L| + |N(L) \ J|}`, the primed sum
-running over independent subsets `L` of `J`.
+**Vertex-cover Euler product for the coprimality density.** Let $k \ge 2$, let $E$ be a set of
+pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$ with edge set
+$E$, and let $A_G$ be its coprimality density. Let $J \subseteq \{1, \dots, k\}$ be a vertex cover
+of $G$, that is, every edge of $E$ has an endpoint in $J$. For $L \subseteq J$ let $N(L)$ be the
+set of vertices adjacent to some vertex of $L$. Then
+
+$$A_G = \prod_p \sum_{L} \left(\frac{1}{p}\right)^{|L|}
+\left(1 - \frac{1}{p}\right)^{|J \setminus L| + |N(L) \setminus J|},$$
+
+where the product runs over all primes $p$ and the sum over all independent sets $L \subseteq J$
+of $G$, that is, subsets of $J$ such that no edge of $E$ has both endpoints in $L$.
 
 ## Depends on
 
-- [Coprimality Density](coprimality-density.md)
+- [Coprimality density of a graph](coprimality-density.md)
 
 ## Sources
 

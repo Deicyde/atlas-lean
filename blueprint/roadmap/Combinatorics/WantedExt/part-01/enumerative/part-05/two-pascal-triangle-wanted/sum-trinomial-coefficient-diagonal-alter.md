@@ -15,7 +15,7 @@ $n \equiv 2 \pmod 4$, and $S_n = 3$ if $n \equiv 0 \pmod 4$.
 
 ## Depends on
 
-- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+- [Trinomial coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

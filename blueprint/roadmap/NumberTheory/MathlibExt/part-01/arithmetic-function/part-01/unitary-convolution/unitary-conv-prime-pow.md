@@ -20,7 +20,7 @@ $(f \sqcup g)(p^m) = f(1)\, g(p^m) + f(p^m)\, g(1)$.
 ## Proof depends on
 
 - [Unitary convolution as a sum over unitary divisors](unitary-conv-apply.md)
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 - [Unitary divisors of a prime power](unitary-divisors-prime-pow.md)
 
 ## Sources

@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.leadingReciprocal_hasSum_complementaryMoments
 ---
 
-# Leading Reciprocal has Sum complementary Moments
+# Prefix sums as complementary-moment series
 
-Corollary 2: the prefix reciprocal family and the complementary-moment
-series have a common sum; every term on the right is positive and that family
-is summable. Positivity plus summability is the task-permitted formalization of
-the paper's phrase “positive series with geometric convergence”; no explicit
-ratio is asserted. Source: Jean-François Burnol, *Measures for the Summation of
-Irwin Series*, INTEGERS 26 (2026), Article A11, Corollary 2.
+**Prefix sums as complementary-moment series.** Let $b > 1$, let $d < b$ be a digit, let $n$
+be a positive integer, let $k(n)$ be the number of occurrences of $d$ in the base-$b$ expansion
+of $n$, and let $k \ge k(n)$. Write $v_{j;m} = \int_{[0,1)} (1 - x)^m \, d\mu_j(x)$ for the
+complementary moments of the Irwin measure $\mu_j$. Then there is a real number $S$ such that
+the reciprocals $1/N$ of the positive integers $N$ whose base-$b$ expansion begins with that of
+$n$ and contains exactly $k$ occurrences of $d$ have sum $S$, and the series
+$\sum_{m \ge 0} v_{k - k(n);m} / (n+1)^{m+1}$ also has sum $S$. Moreover every term
+$v_{k - k(n);m} / (n+1)^{m+1}$ of this series is positive, and the series is summable.
+
+Positivity plus summability renders the paper's phrase "positive series with geometric
+convergence"; no explicit ratio is asserted.
 
 ## Depends on
 
-- [Complementary Moment](complementary-moment.md)
-- [Digit Count](digit-count.md)
-- [Leading Reciprocal Term](leading-reciprocal-term.md)
+- [Complementary moment](complementary-moment.md)
+- [Digit count](digit-count.md)
+- [Prefix-restricted reciprocal terms](leading-reciprocal-term.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)
+- Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Corollary 2.

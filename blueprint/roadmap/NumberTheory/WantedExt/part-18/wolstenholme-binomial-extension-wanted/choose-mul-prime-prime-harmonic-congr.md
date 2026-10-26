@@ -18,7 +18,7 @@ congruences agree modulo `p^6`).
 
 ## Depends on
 
-- [Higher Order Harmonic](../../../MathlibExt/part-07/higher-harmonic.md)
+- [Higher-order harmonic numbers](../../../MathlibExt/part-07/higher-harmonic.md)
 
 ## Sources
 

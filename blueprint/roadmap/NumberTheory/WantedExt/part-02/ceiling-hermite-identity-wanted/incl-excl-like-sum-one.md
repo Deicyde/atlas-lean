@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.inclExclLikeSum_one
 ---
 
-# Incl Excl Like Sum one
+# The inclusion-exclusion-like sum in one variable
 
-Characteristic value: `g^(F)(x) = F(x)` in one variable.
+**The inclusion-exclusion-like sum in one variable.** For every function
+$F : \mathbb{R} \to \mathbb{Z}$ and every real $x$, the inclusion-exclusion-like sum of $F$ in the
+single variable $x$ is $g^{(F)}(x) = F(x)$.
 
 ## Depends on
 
-- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Inclusion-exclusion-like sum](incl-excl-like-sum.md)
 
 ## Sources
 

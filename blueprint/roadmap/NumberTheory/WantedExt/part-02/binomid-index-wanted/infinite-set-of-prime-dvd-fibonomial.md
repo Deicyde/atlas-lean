@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.infinite_setOf_prime_dvd_fibonomial
 ---
 
-# Infinite set Of prime dvd fibonomial
+# Primes divide all inner Fibonomial coefficients of infinitely many rows
 
-Corollary 4: for every prime `p` there are infinitely many `n` such that
-every Fibonomial coefficient `[n, k]_F = F_n! / (F_k! F_{n-k}!)` with
-`1 ≤ k < n` is an integer multiple of `p` (`F_n!` is
-`fibonacciFactorial`).
+**Primes divide all inner Fibonomial coefficients of infinitely many rows.** Let $F_n$ be
+the Fibonacci numbers and $F_n! = F_1 F_2 \cdots F_n$ the Fibonacci factorial. For every prime
+$p$ there are infinitely many natural numbers $n$ such that for every $k$ with $1 \le k < n$ the
+Fibonomial coefficient $F_n! / (F_k! \, F_{n-k}!)$ is an integer multiple of $p$.
 
 ## Depends on
 
-- [Fibonacci Factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
+- [Fibonacci factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

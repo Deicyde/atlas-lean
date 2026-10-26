@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayOf
 ---
 
-# Circuit Array Of
+# Circuit array of a boundary assignment
 
-The circuit array of a grid family: `C_{i,j} = T^j_{2j-1, j - ⌊(i+1)/2⌋, L}` for even `i` and
-the right edge for odd `i`, meaningful for `0 ≤ i ≤ 2(j - 1)`, `j ≥ 1`.
+**Circuit array of a boundary assignment.** Let $K$ be a field and let $\beta$ assign to each
+natural number $m$ either nothing or a value $\beta(m) \in K$. Let $T^0$ be the all-one triangular
+grid and, for $m \ge 1$, let $T^m$ be obtained from $T^{m-1}$ by one row reduction followed, when
+$\beta(m)$ is given, by setting every boundary edge (left edges on diagonal $1$, right edges on
+diagonal $r$ in row $r$) to $\beta(m)$. For natural numbers $i$ and $j$, the entry $C_{i,j}$ of the
+circuit array of $\beta$ is the resistance of the left edge (for even $i$) or the right edge (for
+odd $i$) of the triangle of $T^j$ in row $2j - 1$ and diagonal $j - \lfloor (i+1)/2 \rfloor$, with
+subtraction truncated at $0$. The entries are meaningful for $j \ge 1$ and $0 \le i \le 2(j - 1)$.
 
 ## Depends on
 
@@ -16,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Circuit Edge](circuit-edge.md)
-- [Circuit Grid](circuit-grid.md)
+- [Edges of an upright triangle](circuit-edge.md)
+- [Reduced circuit grids](circuit-grid.md)
 
 ## Sources
 

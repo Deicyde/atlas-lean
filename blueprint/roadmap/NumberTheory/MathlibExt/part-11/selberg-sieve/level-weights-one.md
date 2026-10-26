@@ -7,20 +7,21 @@ proof: formalized
 lean: MathlibExt.SelbergSieve.levelWeights_one
 ---
 
-# Level Weights one
+# The Selberg level weight at one
 
-The level-`R` Selberg weight at `1` is `1` when `1 ≤ R`.
+**The Selberg level weight at one.** For every bounding sieve and every natural number
+$R \ge 1$, the level-$R$ Selberg weight at $1$ equals $1$.
 
 ## Depends on
 
-- [Level Weights](level-weights.md)
+- [Selberg sieve weights](level-weights.md)
 
 ## Proof depends on
 
-- [Level Set](level-set.md)
-- [Level Sum](level-sum.md)
-- [Level Sum ge one](level-sum-ge-one.md)
-- [Level Y](level-y.md)
+- [Selberg level set](level-set.md)
+- [Selberg level sum](level-sum.md)
+- [The Selberg level sum is at least one](level-sum-ge-one.md)
+- [Normalized Selberg coefficients](level-y.md)
 
 ## Sources
 

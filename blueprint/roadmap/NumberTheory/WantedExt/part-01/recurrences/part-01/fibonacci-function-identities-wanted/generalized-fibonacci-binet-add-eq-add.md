@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.generalizedFibonacci_binet_add_eq_add
 ---
 
-# Generalized Fibonacci binet add eq add
+# Companion Binet formula for generalized Fibonacci sequences
 
-For the generalized Fibonacci sequence `W (j + 2) = p W (j + 1) + W j`, with
-`σ = (p + √(p² + 4))/2`, `τ = (p - √(p² + 4))/2`, `A = W_1 - W_0 τ` and `B = W_1 - W_0 σ`
-(the Binet constants of display (eq.n2r2300) in the journal text, so that
-`W_j = (A σ^j - B τ^j)/(σ - τ)`), every integer `j` gives
-`A σ^j + B τ^j = W_(j+1) + W_(j-1)`.
+**Companion Binet formula for generalized Fibonacci sequences.** Let $p$ be a real number and
+let $W : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = p W_{j+1} + W_j$ for every integer $j$. Put
+$\sigma = (p + \sqrt{p^2 + 4})/2$ and $\tau = (p - \sqrt{p^2 + 4})/2$. Then for every integer
+$j$,
+
+$$
+(W_1 - W_0 \tau) \sigma^j + (W_1 - W_0 \sigma) \tau^j = W_{j+1} + W_{j-1}.
+$$
+
+Here $A = W_1 - W_0 \tau$ and $B = W_1 - W_0 \sigma$ are the Binet constants of $W$, so that
+$W_j = (A \sigma^j - B \tau^j)/(\sigma - \tau)$.
 
 ## Depends on
 

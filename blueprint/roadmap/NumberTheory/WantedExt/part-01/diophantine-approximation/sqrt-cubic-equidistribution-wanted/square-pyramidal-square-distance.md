@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.squarePyramidalSquareDistance
 ---
 
-# Square Pyramidal Square Distance
+# Distance from a square pyramidal number to the nearest square
 
-`a_n = |P_n - y_n²|`, the distance from `P_n` to the nearest square `y_n²` (no ties occur,
-since `m² + m + 1/2` is never an integer), computed from `s = ⌊√P_n⌋` as
-`min (P_n - s²) ((s + 1)² - P_n)`.
+**Distance from a square pyramidal number to the nearest square.** For a natural number
+$n$, let $P_n$ be the $n$-th square pyramidal number and $s = \lfloor \sqrt{P_n} \rfloor$. The
+distance from $P_n$ to the nearest square is
+
+$$a_n = \min\bigl(P_n - s^2, (s + 1)^2 - P_n\bigr).$$
+
+Since $s^2 \le P_n < (s + 1)^2$, this is $a_n = |P_n - y_n^2|$, where $y_n^2$ is the square
+nearest to $P_n$.
+
+No ties occur, since the midpoint $m^2 + m + 1/2$ of two consecutive squares is never an integer.
 
 ## Depends on
 
@@ -17,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Pyramidal Number](square-pyramidal-number.md)
+- [Square pyramidal number](square-pyramidal-number.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ navigation: module
 
 ## Soundness
 
-- [Val](val.md)
+- [Intended languages of the substitution grammar](val.md)
 
 ## Completeness
 

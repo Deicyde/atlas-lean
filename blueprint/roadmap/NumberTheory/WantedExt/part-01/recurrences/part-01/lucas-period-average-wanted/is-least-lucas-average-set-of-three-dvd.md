@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_lucasAverageSet_of_three_dvd
 ---
 
-# Is Least lucas Average Set of three dvd
+# Multiples of $3$ in the average set when $P \equiv -1$ and $Q \equiv 1$
 
-Theorem 2.22: for nondegenerate `U(a, b)` and `n` with `3 ∣ n`, `a ≡ -1` and
-`b ≡ -1 (mod rad(n))`: `C'(n) = C(n) = n` and `A_W(n)` is an integer for all `W(a, b)`.
+**Multiples of $3$ in the average set when $P \equiv -1$ and $Q \equiv 1$.** Let $(P, Q)$ be a
+nondegenerate Lucas pair with Lucas sequence $U$, period set $S(U)$ and average set $S'(U)$. Let
+$n \ge 1$ be divisible by $3$, and suppose that $P \equiv -1$ and $Q \equiv 1 \pmod{\ell}$ for
+every prime $\ell$ dividing $n$. Then $n$ is the least element of $S'(U)$ divisible by $n$ and the
+least element of $S(U)$ divisible by $n$, and $n$ divides $w_1 + \dots + w_n$ for every integer
+sequence $w$ with $w_{j+2} = P w_{j+1} - Q w_j$ for all $j$.
+
+In the paper's notation $a = P$ and $b = -Q$, and the hypotheses read $a \equiv -1$ and
+$b \equiv -1 \pmod{\operatorname{rad}(n)}$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

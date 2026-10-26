@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.knottExpansionCount_fib
 ---
 
-# Knott Expansion Count fib
+# Knott expansions of Fibonacci numbers
 
-`Tot_κ(F_n) = F_n` for all `n ≥ 1`.
+**Knott expansions of Fibonacci numbers.** Let $F_n$ be the Fibonacci numbers ($F_0 = 0$,
+$F_1 = 1$). For every $n \ge 1$, the number of Knott expansions of $F_n$ is $F_n$.
 
 ## Depends on
 
-- [Knott Expansion Count](knott-expansion-count.md)
+- [Number of Knott expansions](knott-expansion-count.md)
 
 ## Sources
 

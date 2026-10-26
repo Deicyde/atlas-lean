@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.simsekNumber_zero_k
 ---
 
-# Simsek Number zero k
+# Simsek numbers with second index zero
 
-Boundary case `k = 0`: only the `j = 0` term survives.
+**Simsek numbers with second index zero.** For every natural number $n$ and every complex
+number $\lambda$, the Simsek number $y_1(n, 0; \lambda)$ equals $0^n$; that is, it equals $1$
+when $n = 0$ and $0$ otherwise.
 
 ## Depends on
 
-- [Simsek Number](simsek-number.md)
+- [Simsek numbers](simsek-number.md)
 
 ## Sources
 

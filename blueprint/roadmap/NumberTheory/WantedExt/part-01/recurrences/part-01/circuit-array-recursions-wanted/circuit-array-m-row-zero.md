@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayM_row_zero
 ---
 
-# Circuit Array M row zero
+# Row 0 of the multivariable circuit array
 
-Corollary 4.8: `C^M₀,ₛ = (9^{s-1} - 1 + X₁)/9^{s-1}` for `s ≥ 1`.
+**Row 0 of the multivariable circuit array.** Let $C^M$ be the multivariable circuit array, with
+values in the field of rational functions over $\mathbb{Q}$ in the variables $X_0, X_1, \dots$.
+For every integer $s \ge 1$, $C^M_{0,s} = (9^{s-1} - 1 + X_1)/9^{s-1}$.
 
 ## Depends on
 
-- [Circuit Array M](circuit-array-m.md)
-- [Circuit Var](circuit-var.md)
+- [Multivariable circuit array](circuit-array-m.md)
+- [Variables of the multivariable circuit array](circuit-var.md)
 
 ## Sources
 

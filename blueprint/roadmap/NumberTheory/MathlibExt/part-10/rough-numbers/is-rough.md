@@ -6,12 +6,13 @@ statement: formalized
 lean: Nat.IsRough
 ---
 
-# Is Rough
+# Rough numbers
 
-A natural number `n` is `k`-rough if it is positive and has no prime factor
-at most `k`: every natural prime divisor `p` of `n` satisfies `k < p`.
-This is the footnote definition of Pandey (`2307.14890v1`, `hybrid.tex` line 91).
-Zero is not rough; `1` is rough for every bound by vacuity.
+**Rough numbers.** Let $n$ and $k$ be natural numbers. Then $n$ is $k$-rough if $n \neq 0$
+and every prime $p$ dividing $n$ satisfies $k < p$; that is, $n$ is positive and has no prime
+factor at most $k$.
+
+In particular $0$ is not rough, and $1$ is $k$-rough for every $k$ by vacuity.
 
 ## Depends on
 
@@ -20,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RoughNumbers](../../../../../sources/v2/MathlibExt.md)
+- Pandey, arXiv 2307.14890v1, footnote definition (`hybrid.tex` line 91).

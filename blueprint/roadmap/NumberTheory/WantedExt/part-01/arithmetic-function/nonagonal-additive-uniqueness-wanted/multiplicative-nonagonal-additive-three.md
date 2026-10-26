@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_nonagonal_additive_three_pow
 ---
 
-# Multiplicative nonagonal additive three pow
+# Nonagonal additive uniqueness: the step at powers of 3
 
-Theorem 2 (the step for powers of `3`): under the hypotheses of Theorem 1, with
-`α(x) = (14/17)(2/3)x - 12/17`, if `f n = n` for every `n < α(3^r)`, then `f (3^r) = 3^r`.
+**Nonagonal additive uniqueness: the step at powers of 3.** Let $f$ be a multiplicative
+arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$ for all
+positive integers $a$ and $b$ that are generalized nonagonal numbers, that is, $2a = m(7m - 5)$
+and $2b = k(7k - 5)$ for some integers $m$ and $k$. Let $r$ be a natural number and put
+$\alpha(x) = \frac{14}{17} \cdot \frac{2}{3} x - \frac{12}{17}$. If $f(n) = n$ for every natural
+number $n < \alpha(3^r)$, then $f(3^r) = 3^r$.
 
 ## Depends on
 

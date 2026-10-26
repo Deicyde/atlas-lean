@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.KellnerLargePartConjecture
 ---
 
-# Kellner Large Part Conjecture
+# Kellner's large-part conjecture
 
-Kellner's conjecture (i): `𝔻^+_n > 1` for all `n > 192`.
+**Kellner's large-part conjecture.** For a natural number $n$, let $\mathbb{D}^+_n$ be the
+product of the primes $p > \sqrt{n}$ with $s_p(n) \ge p$, where $s_p(n)$ is the sum of the
+base-$p$ digits of $n$. This definition is the proposition that $\mathbb{D}^+_n > 1$ for every
+natural number $n > 192$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+- [Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

@@ -16,15 +16,15 @@ unbarred letter $m$ minus the number of occurrences of the barred letter $\bar m
 
 ## Depends on
 
-- [Gessel Alphabet](../../part-06/gessel-word/gessel-alphabet.md)
+- [Gessel alphabet](../../part-06/gessel-word/gessel-alphabet.md)
 - [Complete Gessel words](is-complete-gessel-word.md)
-- [Is Gessel Word](../../part-06/gessel-word/is-gessel-word.md)
-- [Gessel Balance](../../part-06/gessel-word/gessel-balance.md)
+- [Gessel word](../../part-06/gessel-word/is-gessel-word.md)
+- [Signed balance of a label](../../part-06/gessel-word/gessel-balance.md)
 
 ## Proof depends on
 
-- [Gessel Barred Count](../../part-06/gessel-word/gessel-barred-count.md)
-- [Gessel Unbarred Count](../../part-06/gessel-word/gessel-unbarred-count.md)
+- [Barred occurrences of a label](../../part-06/gessel-word/gessel-barred-count.md)
+- [Unbarred occurrences of a label](../../part-06/gessel-word/gessel-unbarred-count.md)
 
 ## Sources
 

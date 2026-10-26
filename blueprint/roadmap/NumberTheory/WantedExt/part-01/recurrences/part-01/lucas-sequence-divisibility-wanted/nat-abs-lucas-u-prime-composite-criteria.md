@@ -5,22 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.natAbs_lucasU_prime_composite_criteria
 ---
 
-# Nat Abs lucas U prime composite criteria
+# Compositeness criteria for $|U_p|$
 
-Compositeness criteria for `|U_p|` (same hypotheses as Theorem 5.1): (i) if `Q` is a perfect
-square and `D > 0`, `|U_p|` is composite with at least two distinct prime factors; (ii) if `2p+1`
-is prime, `|U_p| > 2p+1` and `(D/(2p+1)) = (Q/(2p+1)) = 1`, then `2p+1 ∣ |U_p|`; when `D > 0`
-these Jacobi conditions force `|U_p| > 2p+1` unless `(p, P, Q) = (5, ±1, -2)`, and when `D < 0`
-some `C₁` gives `|U_p| > 2p+1` for all primes `p ≥ C₁`; (iii) if `2p-1` is prime,
-`|U_p| > 2p-1`, `(D/(2p-1)) = -1` and `(Q/(2p-1)) = 1`, then `2p-1 ∣ |U_p|`; when `D > 0` these
-conditions force `|U_p| > 2p-1` unless `(p, P, Q) = (7, ±1, -1)`, and when `D < 0` some `C₂`
-gives `|U_p| > 2p+1` for all primes `p ≥ C₂` (as printed).
+**Compositeness criteria for $|U_p|$.** Let $P$ and $Q$ be coprime integers such that the
+Lucas pair $(P, Q)$ is nondegenerate, let $U_n$ be the Lucas sequence $U(P, Q)$, let
+$D = P^2 - 4Q$, and write $\left(\frac{a}{b}\right)$ for the Jacobi symbol. Call a prime $p$
+admissible if $p \ge 5$ and $\gcd(p, PQD) = 1$. Then the following hold.
+
+First, if $Q$ is the square of an integer and $D > 0$, then for every admissible prime $p$, $|U_p|$
+is greater than $1$, is not prime, and has at least two distinct prime factors.
+
+Second, let $p$ be an admissible prime such that $2p + 1$ is prime and
+$\left(\frac{D}{2p+1}\right) = \left(\frac{Q}{2p+1}\right) = 1$. Then $2p + 1 \mid |U_p|$ if
+$|U_p| > 2p + 1$; and if $D > 0$, then $|U_p| > 2p + 1$ unless $p = 5$, $|P| = 1$ and $Q = -2$.
+
+Third, if $D < 0$, there is a constant $C$ such that $|U_p| > 2p + 1$ for every prime $p \ge C$.
+
+Fourth, let $p$ be an admissible prime such that $2p - 1$ is prime,
+$\left(\frac{D}{2p-1}\right) = -1$ and $\left(\frac{Q}{2p-1}\right) = 1$. Then $2p - 1 \mid |U_p|$
+if $|U_p| > 2p - 1$; and if $D > 0$, then $|U_p| > 2p - 1$ unless $p = 7$, $|P| = 1$ and $Q = -1$.
+
+The source states the bound for $D < 0$ in both parts (ii) and (iii) of Theorem 5.1, as printed
+with $2p + 1$ in each; the third claim above is that bound.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

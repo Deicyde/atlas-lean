@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_prod_choose_div
 ---
 
-# Tendsto prod choose div
+# Asymptotics of products of binomial coefficients $\binom{an}{bn}$
 
-For `a > b ≥ 1` and `c = a - b`, `∏_{n=1}^m C(an, bn) ∼ C_{a,b} × P_{a,b}(m)` with
-`C_{a,b} = c_{a,b} (2π)^{-1/4} ∈ [C_{2,1}, (2π)^{-1/4})`, `c_{a,b} = F_a/(F_b F_c)
-∈ [c_{2,1}, 1)`, `c_{2,1} = F_2/F_1^2`, `C_{2,1} = c_{2,1} (2π)^{-1/4}`. The decimal
-approximations are not part of this statement.
+**Asymptotics of products of binomial coefficients $\binom{an}{bn}$.** Let $a > b \ge 1$ be
+natural numbers, let $F_k$ denote the factorial product constants and $P_{a,b}$ the binomial
+comparison function, and put $c_{a,b} = F_a / (F_b F_{a-b})$ and
+$C_{a,b} = c_{a,b} (2\pi)^{-1/4}$. Then $\prod_{n=1}^{m} \binom{an}{bn} / P_{a,b}(m) \to C_{a,b}$
+as $m \to \infty$; moreover $C_{2,1} \le C_{a,b} < (2\pi)^{-1/4}$ and $c_{2,1} \le c_{a,b} < 1$,
+where $c_{2,1} = F_2 / F_1^2$ and $C_{2,1} = c_{2,1} (2\pi)^{-1/4}$.
+
+The decimal approximations of the constants are not part of this statement.
 
 ## Depends on
 
-- [Binomial Product Comparison](binomial-product-comparison.md)
-- [Factorial Product Constant](factorial-product-constant.md)
+- [Comparison function for products of binomial coefficients](binomial-product-comparison.md)
+- [Factorial-product constants](factorial-product-constant.md)
 
 ## Sources
 

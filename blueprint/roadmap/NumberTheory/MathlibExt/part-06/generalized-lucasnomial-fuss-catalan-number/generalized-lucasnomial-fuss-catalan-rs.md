@@ -6,23 +6,31 @@ statement: formalized
 lean: MetaMathlibExt.generalizedLucasnomialFussCatalanRS
 ---
 
-# Generalized Lucasnomial Fuss Catalan RS
+# Generalized Lucasnomial Fuss–Catalan numbers in the r, s, t notation
 
-Same family under the Ballot, JIS Vol. 24 parameter names:
-`C_{U,r,s}(t) = (U_s / U_{(r-1)*t+s}) * binom{r*t+s-1}{t}_U`,
-for `r >= 2`, `s >= 1`, `t >= 1`.
-Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`;
-source SHA-256 `de2518f50026ac96429ae9113e738d224b1c1b732eec121bd4da5e8d60207f1c`.
+**Generalized Lucasnomial Fuss–Catalan numbers in the r, s, t notation.** Let $P$ be Lucas
+parameters, that is, nonzero reals $p$ and $q$ whose Lucas bracket sequence $U_0 = 0$, $U_1 = 1$,
+$U_{m+2} = pU_{m+1} + qU_m$ satisfies $U_m \ne 0$ for every $m \ge 1$. Write
+$U_m! = U_1 U_2 \cdots U_m$, and let the Lucasnomial coefficient $\binom{m}{k}_U$ be
+$\frac{U_m!}{U_k! \, U_{m-k}!}$ for $k \le m$ and $0$ for $k > m$. For natural numbers $r$, $s$
+and $t$, define the real number
+
+$$C_{U,r,s}(t) = \frac{U_s}{U_{(r-1)t+s}} \binom{rt+s-1}{t}_U.$$
+
+The source takes $r \ge 2$, $s \ge 1$ and $t \ge 1$. Here $r$, $s$ and $t$ range over all natural
+numbers: $r - 1$ and $rt + s - 1$ are truncated at $0$, and the quotient is $0$ when
+$U_{(r-1)t+s} = 0$.
 
 ## Depends on
 
-- [Lucas Parameters](../../part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Nondegenerate Lucas parameters](../../part-08/lucas-polytopic-number/lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucas Bracket](../../part-08/lucas-polytopic-number/lucas-bracket.md)
-- [Lucasnomial](../../part-08/lucas-polytopic-number/lucasnomial.md)
+- [Lucas brackets](../../part-08/lucas-polytopic-number/lucas-bracket.md)
+- [Lucasnomial coefficients](../../part-08/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedLucasnomialFussCatalanNumber](../../../../../sources/v2/MathlibExt.md)
+- Ballot, JIS Vol. 24. Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`; source SHA-256 `de2518f50026ac96429ae9113e738d224b1c1b732eec121bd4da5e8d60207f1c`.

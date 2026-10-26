@@ -6,13 +6,15 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_of_mod_one
 ---
 
-# Is Imaginary Quadratic Discriminant of mod one
+# Negative integers congruent to 1 mod 4 are imaginary quadratic discriminants
 
-Constructor from the `1` modulo `4` case.
+**Negative integers congruent to 1 mod 4 are imaginary quadratic discriminants.** If an
+integer $D$ satisfies $D < 0$ and $D \equiv 1 \pmod 4$, then $D$ is an imaginary quadratic
+discriminant.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

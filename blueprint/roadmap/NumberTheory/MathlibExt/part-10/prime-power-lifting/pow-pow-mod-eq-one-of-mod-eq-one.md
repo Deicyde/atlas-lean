@@ -7,11 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.pow_pow_modEq_one_of_modEq_one
 ---
 
-# Pow pow mod Eq one of mod Eq one
+# Lifting a congruence to one along powers of the modulus
 
-Lifting a congruence to one: if `a ≡ 1 [MOD p]` for any natural modulus `p` (not
-necessarily prime), then `a ^ (p ^ n) ≡ 1 [MOD p ^ (n + 1)]` for every `n`. It is the `Nat.ModEq`
-form of `dvd_sub_pow_of_dvd_sub`; `prime_power_lifting_modEq_one` is the source-shaped form.
+**Lifting a congruence to one along powers of the modulus.** Let $p$, $n$ and $a$ be natural
+numbers. If $a \equiv 1 \pmod p$, then $a^{p^n} \equiv 1 \pmod{p^{n+1}}$.
+
+The modulus $p$ need not be prime.
 
 ## Depends on
 

@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsSignatureCarmichael
 ---
 
-# Is Signature Carmichael
+# Carmichael numbers of a signature
 
-A `σ`-Carmichael number for a signature `σ = (ε₁, …, εᵣ)` of signs (`r ≥ 2`, as signatures
-are defined in the paper): an odd squarefree `n = p₁ ⋯ pᵣ`, `p₁ < ⋯ < pᵣ`, that is
-`D`-Carmichael for every discriminant `D ≡ 0, 1 (mod 4)`
-with `(D | pᵢ) = εᵢ` for all `i`. `Nat.primeFactorsList` lists the `pᵢ` in increasing order.
+**Carmichael numbers of a signature.** Let $\sigma = (\varepsilon_1, \dots, \varepsilon_r)$ be a
+list of integers. A natural number $n$ is $\sigma$-Carmichael when every $\varepsilon_i$ is $1$ or
+$-1$, $r \ge 2$, $n$ is odd and squarefree with exactly $r$ prime factors $p_1 < \dots < p_r$, and
+$n$ is $D$-Carmichael for every integer $D \equiv 0$ or $1 \pmod 4$ whose Jacobi symbols satisfy
+$\left(\frac{D}{p_i}\right) = \varepsilon_i$ for all $i$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

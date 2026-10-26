@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.re_sum_div_primes_cpow_le
 ---
 
-# Re sum div primes cpow le
+# Upper bound for twisted prime sums with real coefficients
 
-For real prime values `g(p)` with `|g(p)| ≤ 1`, `0 < α ≤ 1`, and `λ` defined by
-`∑_{p ≤ exp(1/α)} (1 - g(p))/p = λ ∑_{p ≤ exp(1/α)} 1/p`, for every real `τ`,
-`Re ∑_{p ≤ exp(1/α)} g(p)/p^{1+iτ} ≤ (1 - Kλ) log(1/α) + (2 + 2K) log log(|τ| + 3) + C₀
-+ (K - Kλ)(M + M'(exp(1/α)))` with `C₀ = 7.28` and `K` as in Lemma 7. The paper prints
-`(2 + 2K)(log log |τ| + 3)`; its proof applies Lemma 7, which has `log log(|τ| + 3)`, and the
-printed form fails at `α = 1`, `g ≡ 1`, `τ = 1.0001`. The paper's `α ∈ [0, 1]` is restricted to
-`α > 0`, where `exp(1/α)` is defined. `M + M'(x)` is written per Proposition 1 as
-`M + (∑_{p ≤ x} 1/p - log log x - M)` with `M = meisselMertensConstant`; the binder `lam` is `λ`.
+**Upper bound for twisted prime sums with real coefficients.** Throughout, sums over $p$ run
+over primes. Let $K$ be a real number with
+$\frac{1}{2\pi} \int_0^{2\pi} |\cos t - K| \, dt = 1 - K$. Let $g$ be a real-valued function on
+the natural numbers with $|g(p)| \le 1$ for every prime $p$, let $\alpha$ be a real number with
+$0 < \alpha \le 1$, put $x = e^{1/\alpha}$, and let $\lambda$ be a real number with
+$\sum_{p \le x} (1 - g(p))/p = \lambda \sum_{p \le x} 1/p$. Let $M$ be the Meissel–Mertens
+constant and $M'(x) = \sum_{p \le x} 1/p - \log \log x - M$. Then for every real $\tau$,
+$\operatorname{Re} \sum_{p \le x} g(p)/p^{1 + i\tau}$ is at most
+$(1 - K\lambda) \log(1/\alpha) + (2 + 2K) \log \log(|\tau| + 3) + 7.28 +
+(K - K\lambda)(M + M'(x))$.
+
+The paper prints $(2 + 2K)(\log \log |\tau| + 3)$; its proof applies Lemma 7, which has
+$\log \log(|\tau| + 3)$, and the printed form fails at $\alpha = 1$, $g \equiv 1$,
+$\tau = 1.0001$. The paper allows $\alpha \in [0, 1]$; here $\alpha > 0$, where $e^{1/\alpha}$
+is defined.
 
 ## Depends on
 
-- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

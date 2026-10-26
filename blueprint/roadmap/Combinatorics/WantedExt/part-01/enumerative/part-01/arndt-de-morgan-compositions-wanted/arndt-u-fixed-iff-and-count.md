@@ -17,7 +17,7 @@ sequence, given by $P_0 = 1$, $P_1 = 0$, $P_2 = 1$ and $P_{j+3} = P_{j+1} + P_j$
 ## Depends on
 
 - [The map $U$ on lists](arndt-u.md)
-- [Shifted Padovan Sequence](../../../../../../NumberTheory/MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
+- [Shifted Padovan sequence](../../../../../../NumberTheory/MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

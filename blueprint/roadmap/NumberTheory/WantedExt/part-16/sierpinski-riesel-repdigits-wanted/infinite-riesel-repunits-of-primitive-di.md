@@ -14,7 +14,7 @@ lean: MetaMathlibExt.infinite_riesel_repunits_of_primitive_divisors
 
 ## Depends on
 
-- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 - [Is Riesel Number](is-riesel-number.md)
 - [Repstring](repstring.md)
 

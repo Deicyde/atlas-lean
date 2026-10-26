@@ -6,18 +6,20 @@ proof: formalized
 lean: PierceExpansion.traj_one
 ---
 
-# Traj one
+# First step of the Pierce trajectory
 
-First-step computation.
+**First step of the Pierce trajectory.** Let $n$ and $t$ be natural numbers with $t \ne 0$.
+Then the Pierce remainder trajectory of $t$ with respect to $n$ is, at step $1$, equal to
+$n \bmod t$, the remainder of $n$ modulo $t$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Proof depends on
 
-- [Traj succ of ne zero](traj-succ-of-ne-zero.md)
-- [Traj zero](traj-zero.md)
+- [Step of the Pierce trajectory at a nonzero term](traj-succ-of-ne-zero.md)
+- [Initial term of the Pierce trajectory](traj-zero.md)
 
 ## Sources
 

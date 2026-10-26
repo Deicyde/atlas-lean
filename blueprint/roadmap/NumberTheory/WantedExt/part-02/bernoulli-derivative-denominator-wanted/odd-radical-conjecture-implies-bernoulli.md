@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.odd_radical_conjecture_implies_bernoulli_integral_derivative_conjecture
 ---
 
-# Odd radical conjecture implies bernoulli integral derivative conjecture
+# The odd radical conjecture implies the integral-derivative conjecture
 
-If the odd elements of `\overline{ℛ} = {n ≥ 1 : 𝔻_n = rad(n + 1)}` are exactly
-`{3, 5, 9, 11, 27, 29, 35, 59}` (Conjecture 11 reduced to odd `n`), then
-`\overline{𝒮} = {1, 2, 4, 6, 10, 12, 28, 30, 36, 60}` (Conjecture 1; finiteness follows).
+**The odd radical conjecture implies the integral-derivative conjecture.** For $n \ge 1$, let
+$\mathbb{D}_n$ be the product of the primes $p$ with $s_p(n) \ge p$, where $s_p(n)$ is the sum of
+the base-$p$ digits of $n$, and let $\operatorname{rad}(m)$ be the product of the distinct primes
+dividing $m$. Let $\overline{\mathcal{S}}$ be the set of $n \ge 1$ such that the derivative
+$B_n'(x)$ of the Bernoulli polynomial $B_n(x)$ has only integer coefficients. If the odd
+integers $n \ge 1$ with $\mathbb{D}_n = \operatorname{rad}(n + 1)$ are exactly
+$3, 5, 9, 11, 27, 29, 35, 59$, then
+$\overline{\mathcal{S}} = \{1, 2, 4, 6, 10, 12, 28, 30, 36, 60\}$.
+
+The hypothesis is Conjecture 11 of the source, about the set
+$\overline{\mathcal{R}} = \{n \ge 1 : \mathbb{D}_n = \operatorname{rad}(n + 1)\}$, restricted to
+odd $n$; the conclusion is Conjecture 1, and in particular $\overline{\mathcal{S}}$ is finite.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
-- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
+- [Denominator of $B_n(x) - B_n$](bernoulli-diff-denominator.md)
+- [Indices of Bernoulli polynomials with integral $k$-th derivative](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.exists_int_decomposable_form_eval_eq_det_pow_mul_pow
 ---
 
-# Exists int decomposable form eval eq det pow mul pow
+# Integer decomposable forms on integer recurrence sequences
 
-Integer version: let `k` integer sequences `G⁽¹⁾, …, G⁽ᵏ⁾` satisfy the same order-`k`
-linear recurrence with integer coefficients and `γ₀ ≠ 0`, where `-γ₀` is the constant term of
-the characteristic polynomial, and let `Δ = det (G⁽ʲ⁾ᵢ)_{j, i < k} ≠ 0` be the determinant of
-their initial values. Then some form `F̃` with integer coefficients that is decomposable (over
-`ℂ` it is a product of `k` linear forms, hence homogeneous of degree `k`) satisfies
-`F̃(G⁽¹⁾ₙ, …, G⁽ᵏ⁾ₙ) = Δᵏ δⁿ` for all `n ≥ 0`, where `δ = (-1)^(k+1) γ₀`. The theorem
-statement says "homogeneous form"; decomposability is the paper's description of `F̃` in the
-introduction and follows from Theorem 2, since `F̃ = Δᵏ F`. The source's standing assumption
-`k ≥ 2` is omitted (for `k ≤ 1` the claim holds with `F̃` constant or linear); definitions
-read from arXiv:2308.13817v1.
+**Integer decomposable forms on integer recurrence sequences.** Let
+$\gamma_0, \dots, \gamma_{k-1} \in \mathbb{Z}$, let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$,
+suppose $\chi(0) \neq 0$, and let $G^{(1)}, \dots, G^{(k)} \colon \mathbb{N} \to \mathbb{Z}$ each
+satisfy $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$ for every $n \ge 0$. Suppose that the
+determinant $\Delta$ of the $k \times k$ matrix of initial values $(G^{(j)}_i)$, with rows
+$1 \le j \le k$ and columns $0 \le i < k$, is nonzero. Then there is a polynomial $\tilde F$ in
+$k$ variables with integer coefficients that factors over $\mathbb{C}$ as a product of $k$
+linear forms and satisfies $\tilde F(G^{(1)}_n, \dots, G^{(k)}_n) = \Delta^k ((-1)^k \chi(0))^n$
+for every $n \ge 0$.
+
+For $k \ge 1$ we have $\chi(0) = -\gamma_0$, so the hypothesis says $\gamma_0 \neq 0$ and the
+right side is $\Delta^k ((-1)^{k+1} \gamma_0)^n$. The theorem in the source says "homogeneous
+form"; decomposability is the paper's description of $\tilde F$ in the introduction and follows
+from Theorem 2, since $\tilde F$ is $\Delta^k$ times the form given there. The source's standing
+assumption $k \ge 2$ is omitted (for $k \le 1$ the claim holds with $\tilde F$ constant or
+linear); definitions are read from arXiv:2308.13817v1.
 
 ## Depends on
 

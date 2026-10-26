@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isMotherGraphEdge_four_ten
 ---
 
-# Is Mother Graph Edge four ten
+# Sample edges of the $(4, 10)$-mother graph
 
-Characteristic edges of the `(4, 10)`-mother graph: `(2, 8)` and `(9, 9)` are edges
-(`λ(2 + 6 · 8) = 0`, `λ(9 + 6 · 9) = 3`) and `(2, 1)` is not (`λ(2 + 6 · 1) = 8 > 3`).
+**Sample edges of the $(4, 10)$-mother graph.** In the $(4, 10)$-mother graph, $(2, 8)$ and
+$(9, 9)$ are edges and $(2, 1)$ is not. With $\lambda$ the least non-negative residue modulo
+ten, $\lambda(2 + 6 \cdot 8) = 0 \le 3$ and $\lambda(9 + 6 \cdot 9) = 3 \le 3$, while
+$\lambda(2 + 6 \cdot 1) = 8 > 3$.
 
 ## Depends on
 
-- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Edges of the mother graph](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

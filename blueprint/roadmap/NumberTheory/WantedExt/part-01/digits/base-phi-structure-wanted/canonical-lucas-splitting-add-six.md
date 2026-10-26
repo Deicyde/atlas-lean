@@ -6,14 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.canonicalLucasSplitting_add_six
 ---
 
-# Canonical Lucas Splitting add six
+# Recursion for the canonical splitting
 
-The recursion of the canonical splitting.
+**Recursion for the canonical splitting.** For every natural number $m$, the canonical
+splitting of the Lucas interval $\Lambda_{m+6}$ is the concatenation, in this order, of the
+canonical splitting of $\Lambda_{m+4}$ with $L_{m+5}$ added to the second coordinate of each
+pair, the canonical splitting of $\Lambda_{m+3}$ with $L_{m+6}$ added to the second coordinate of
+each pair, and the canonical splitting of $\Lambda_{m+4}$ with $L_{m+6}$ added to the second
+coordinate of each pair, where $L_j$ is the $j$-th Lucas number.
 
 ## Depends on
 
-- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Canonical splitting of a Lucas interval](canonical-lucas-splitting.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

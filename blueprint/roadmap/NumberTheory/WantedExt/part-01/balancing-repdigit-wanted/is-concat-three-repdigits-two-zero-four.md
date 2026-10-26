@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isConcatThreeRepdigits_twoZeroFour
 ---
 
-# Is Concat Three Repdigits two Zero Four
+# $204$ is a concatenation of three repdigits
 
-Characteristic example: `204 = "2" ‖ "0" ‖ "4"` is a concatenation of three
-repdigits.
+**$204$ is a concatenation of three repdigits.** The number $204$, whose decimal expansion
+consists of the one-digit blocks $2$, $0$ and $4$, is a concatenation of three repdigits.
 
 ## Depends on
 
-- [Is Concat Three Repdigits](is-concat-three-repdigits.md)
+- [Concatenations of three decimal repdigits](is-concat-three-repdigits.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isBasePhiExpansion_zero
 ---
 
-# Is Base Phi Expansion zero
+# Base phi expansion of zero
 
-The empty expansion is the base phi expansion of `0`.
+**Base phi expansion of zero.** The empty set of positions, the expansion with no digit $1$, is
+a base phi expansion of $0$: it has no two adjacent digits $1$, and its value, the empty sum, is
+equal to $0$.
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Base phi expansion](is-base-phi-expansion.md)
 
 ## Proof depends on
 
-- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
-- [Base Phi Value](../base-phi-representations-wanted/base-phi-value.md)
+- [Bergman expansions](../base-phi-representations-wanted/is-bergman-expansion.md)
+- [Value of a base phi expansion](../base-phi-representations-wanted/base-phi-value.md)
 
 ## Sources
 

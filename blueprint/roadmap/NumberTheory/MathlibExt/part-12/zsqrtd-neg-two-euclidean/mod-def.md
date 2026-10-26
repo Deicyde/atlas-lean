@@ -6,9 +6,11 @@ proof: formalized
 lean: Zsqrtd.NegTwo.mod_def'
 ---
 
-# Mod def'
+# Remainder of the rounding division on $\mathbb{Z}(\sqrt{-2})$
 
-Explicit formula for the remainder on `ℤ√(-2)`.
+**Remainder of the rounding division on $\mathbb{Z}[\sqrt{-2}]$.** For all $x, y$ in
+$\mathbb{Z}[\sqrt{-2}]$, the remainder defined in this module is $x \bmod y = x - y\,(x / y)$,
+where $x / y$ is the rounding division of $\mathbb{Z}[\sqrt{-2}]$.
 
 ## Depends on
 

@@ -7,22 +7,35 @@ lean: MetaMathlibExt.zeckendorfDeltaStar_lt_shift_baseN
 
 # Zeckendorf Delta Star lt shift base N
 
-Lemma 19 for the `N`th order Zeckendorf collection `L = (1, …, 1, 0)` (`N - 1` ones) inside
-the base-`N` collection `L̃ = (N - 1, …, N - 1)`: `p = 1` for `N ≥ 4`; and for `N ≥ 3`, if
-`ε ∈ E*` has `ε_1 ≥ 1`, `ε_n = 1` (`n ≥ 3`) and a proper block with support interval
-`[i, n - 1]`, then `ε' = ε + β^{n-1} - β^n ∈ E*` and `δ*[ε] < δ*[ε']`. As printed, `p = 1` fails
-for `N = 3` (`γ = 0.55467… > ω = 0.54368…`, so `p = 2`), and `δ*[ε] < δ*[ε']` fails without
-`ε_1 ≥ 1` (the normalization used where the paper applies it): `ε = β^4`, `ε' = β^3` give
-`δ*[ε] = δ*[ε'] = 1`.
+**Shifting a unit one entry down increases $\delta^*$ (Lemma 19).** Let $N \ge 3$, let
+$L = (1, \dots, 1, 0)$ ($N - 1$ ones followed by $0$, the $N$th order Zeckendorf collection) and
+$\tilde L = (N - 1, \dots, N - 1)$ ($N$ entries, the base-$N$ collection), and let $Q$ and
+$\tilde Q$ be fundamental sequences of the collections $E^*$ and $\tilde E^*$ of $L$ and
+$\tilde L$. Write $\varepsilon_k$ for the $k$th entry of a coefficient function ($k \ge 1$),
+$\beta^k$ for the coefficient function with a single $1$ in entry $k$,
+$\sum \varepsilon \tilde Q = \sum_k \varepsilon_k \tilde Q_k$, $\delta^*$ for the function
+$\delta^*$ of $L$, $\tilde L$, $Q$, $\tilde Q$, and $p$ for the generic exponent of $Q$ and
+$\tilde Q$. Then $p = 1$ if $N \ge 4$. Moreover, let $\varepsilon \in E^*$ with
+$\varepsilon_1 \ge 1$ and let $n \ge 3$ with $\varepsilon_n = 1$. If some decomposition of
+$\varepsilon$ as a sum of disjoint proper $L^*$-blocks has a block whose support interval ends at
+entry $n - 1$, then $\varepsilon' = \varepsilon + \beta^{n-1} - \beta^n$ lies in $E^*$ and
+$\delta^*(\sum \varepsilon \tilde Q) < \delta^*(\sum \varepsilon' \tilde Q)$.
+
+As printed, $p = 1$ fails for $N = 3$: with $\omega$ and $\tilde\omega$ the first terms of $Q$ and
+$\tilde Q$ and $\gamma = \log_{\tilde\omega} \omega$, $\gamma = 0.55467\ldots$ exceeds
+$\omega = 0.54368\ldots$, so $p = 2$. The inequality
+$\delta^*(\sum \varepsilon \tilde Q) < \delta^*(\sum \varepsilon' \tilde Q)$ fails without
+$\varepsilon_1 \ge 1$ (the normalization used where the paper applies it): $\varepsilon = \beta^4$
+and $\varepsilon' = \beta^3$ give the value $1$ on both sides.
 
 ## Depends on
 
-- [Is LStar Block Sum](is-lstar-block-sum.md)
-- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
+- [Fundamental sequence of an $L^\ast$-collection](is-lstar-fundamental-sequence.md)
 - [L Star Collection](l-star-collection.md)
 - [Zeckendorf Delta Star](zeckendorf-delta-star.md)
-- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [The generic exponent](zeckendorf-generic-exponent.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
 
 ## Sources
 

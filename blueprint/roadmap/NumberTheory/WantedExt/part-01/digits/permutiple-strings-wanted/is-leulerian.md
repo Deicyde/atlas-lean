@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsLEulerian
 ---
 
-# Is LEulerian
+# $L$-Eulerian multigraphs
 
-The multigraph with multi-edge multiset `D` is `L`-Eulerian: it contains the zero state,
-it is strongly connected (every vertex reaches every vertex along multi-edges), and the
-indegree equals the outdegree at each vertex.
+**$L$-Eulerian multigraphs.** Let $D$ be a finite multiset of multi-edges $(x, y)$ between
+natural numbers, and call a number a vertex of $D$ when it is an endpoint of some multi-edge in
+$D$. The multigraph $D$ is $L$-Eulerian when $0$ is a vertex of $D$, every vertex $u$ of $D$
+reaches every vertex $v$ of $D$ along a (possibly empty) directed path of multi-edges in $D$, and
+for every natural number $c$ the number of multi-edges in $D$ ending at $c$ equals the number of
+multi-edges in $D$ starting at $c$, counted with multiplicity.
 
 ## Depends on
 

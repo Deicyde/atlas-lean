@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod_of_q_eq_neg_one
 ---
 
-# Lucas UPeriod of q eq neg one
+# Period and restricted period of Lucas sequences with $Q = -1$
 
-Corollary 3.1 (i)-(iii): for nondegenerate `U(a, 1)` and `m ≥ 2`, with `π = π_U(m)`,
-`ρ = ρ_U(m)` and `E = π / ρ`: `E ∈ {1, 2, 4}`; if `m = ℓ ^ i` with `ℓ` an odd prime and
-`i ≥ 1`, then `E = 1`, `2`, `4` according as `ρ ≡ 2 (mod 4)`, `ρ ≡ 0 (mod 4)`, `ρ` odd; and `π`
-is even unless `m = 2` and `a` is odd. Part (iv), about `L(m)`, is not formalized.
+**Period and restricted period of Lucas sequences with $Q = -1$.** Let $U$ be the Lucas
+sequence with integer parameters $P$ and $Q = -1$, where the pair $(P, Q)$ is nondegenerate, and
+write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Let
+$m \ge 2$. Then $\pi(m)$ equals $\rho(m)$, $2\rho(m)$ or $4\rho(m)$. If $m = \ell^i$ for an odd
+prime $\ell$ and some $i \ge 1$, then $\pi(m) = \rho(m)$ when $\rho(m) \equiv 2 \pmod 4$,
+$\pi(m) = 2\rho(m)$ when $\rho(m) \equiv 0 \pmod 4$, and $\pi(m) = 4\rho(m)$ when $\rho(m)$ is
+odd. Finally, $\pi(m)$ is even unless $m = 2$ and $P$ is odd.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

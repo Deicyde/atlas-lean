@@ -5,7 +5,7 @@ navigation: module
 
 # Genocchi Number
 
-- [Genocchi Power Series](genocchi-power-series.md)
-- [Genocchi Number](genocchi-number.md)
-- [Genocchi Power Series eq](genocchi-power-series-eq.md)
-- [Genocchi Number eq](genocchi-number-eq.md)
+- [Generating function of the Genocchi numbers](genocchi-power-series.md)
+- [Genocchi numbers](genocchi-number.md)
+- [The Genocchi power series is $2x/(e^x + 1)$](genocchi-power-series-eq.md)
+- [Genocchi numbers from their generating function](genocchi-number-eq.md)

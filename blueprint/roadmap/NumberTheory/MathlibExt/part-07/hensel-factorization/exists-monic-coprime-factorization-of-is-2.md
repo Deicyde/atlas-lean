@@ -7,13 +7,15 @@ proof: formalized
 lean: Polynomial.exists_monic_coprime_factorization_of_isAdicComplete_natDegree
 ---
 
-# Exists monic coprime factorization of is Adic Complete nat Degree
+# Hensel lifting of monic coprime factorizations, with degrees
 
-Degree corollary of monic Hensel factor lifting.
-
-The lifted factors have the same degrees as the residue factors. The
-`Nontrivial (A ⧸ I)` hypothesis is sharp: over the trivial quotient every
-reduction equality is vacuous, so no degree conclusion can hold there.
+**Hensel lifting of monic coprime factorizations, with degrees.** Let $A$ be a commutative
+ring and $I$ an ideal of $A$ such that $A$ is $I$-adically complete and $A/I$ is not the zero
+ring, and let $f \in A[X]$ be monic. Suppose the reduction of $f$ modulo $I$ equals
+$\bar g \bar h$, where $\bar g, \bar h \in (A/I)[X]$ are monic and coprime (that is,
+$a \bar g + b \bar h = 1$ for some $a, b \in (A/I)[X]$). Then there exist monic $g, h \in A[X]$
+with $f = gh$ whose reductions modulo $I$ are $\bar g$ and $\bar h$ respectively, and such that
+$\deg g = \deg \bar g$ and $\deg h = \deg \bar h$.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists monic coprime factorization of is Adic Complete](exists-monic-coprime-factorization-of-is.md)
+- [Hensel lifting of monic coprime factorizations](exists-monic-coprime-factorization-of-is.md)
 
 ## Sources
 

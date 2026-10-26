@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.projectiveOrderTwo_examples
 ---
 
-# Projective Order Two examples
+# Values of the projective order of 2
 
-Characteristic values: `λ(7) = 3`, `λ(9) = 3`, `λ(11) = 5`, `λ(17) = 4`.
+**Values of the projective order of 2.** Writing $\lambda(n)$ for the projective order of $2$
+modulo $n$, we have $\lambda(7) = 3$, $\lambda(9) = 3$, $\lambda(11) = 5$ and $\lambda(17) = 4$.
 
 ## Depends on
 
-- [Projective Order Two](projective-order-two.md)
+- [Projective order of 2](projective-order-two.md)
 
 ## Proof depends on
 
-- [Projective Order Two eq of](projective-order-two-eq-of.md)
+- [Characterization of the projective order of 2](projective-order-two-eq-of.md)
 
 ## Sources
 

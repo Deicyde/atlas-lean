@@ -4,5 +4,5 @@ navigation: module
 
 # Ward SBinomial Carry Product
 
-- [Ward sbinomial carry product general](ward-sbinomial-carry-product-general.md)
-- [Ward sbinomial carry product](ward-sbinomial-carry-product.md)
+- [Ward's identity with hypotheses at positive indices](ward-sbinomial-carry-product-general.md)
+- [Ward's identity for generalized binomial coefficients](ward-sbinomial-carry-product.md)

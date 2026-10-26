@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cycleEdges_examples
 ---
 
-# Cycle Edges examples
+# Edges of the closed walks $2 \to 8 \to 2$ and $9 \to 9$
 
-Characteristic values: the cycle `2 → 8 → 2` has edges `(2, 8), (8, 2)` and the loop
-at `9` has the single edge `(9, 9)`.
+**Edges of the closed walks $2 \to 8 \to 2$ and $9 \to 9$.** The closed walk with vertex
+list $[2, 8]$ has edge list $[(2, 8), (8, 2)]$, and the closed walk with vertex list $[9]$
+(a loop at $9$) has edge list $[(9, 9)]$.
 
 ## Depends on
 
-- [Cycle Edges](cycle-edges.md)
+- [Edge list of a closed walk](cycle-edges.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_cassini
 ---
 
-# Lucas U cassini
+# Cassini's identity for Lucas sequences
 
-Cassini's identity for `lucasU`:
-`U (n + 1) ^ 2 - U n * U (n + 2) = Q ^ n`.
+**Cassini's identity for Lucas sequences.** For Lucas sequence parameters $(P, Q)$ and every
+natural number $n$, the Lucas sequence $U = U(P, Q)$ satisfies
+$U_{n+1}^2 - U_n U_{n+2} = Q^n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
-- [Lucas U](lucas-u.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](lucas-u.md)
 
 ## Proof depends on
 
-- [Lucas U add two](lucas-u-add-two.md)
+- [Recurrence for the Lucas sequence $U(P, Q)$](lucas-u-add-two.md)
 
 ## Sources
 

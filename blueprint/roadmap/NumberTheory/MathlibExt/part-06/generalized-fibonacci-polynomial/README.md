@@ -4,7 +4,7 @@ navigation: module
 
 # Generalized Fibonacci Polynomial
 
-- [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial.md)
-- [Generalized Fibonacci Polynomial zero](generalized-fibonacci-polynomial-zero.md)
-- [Generalized Fibonacci Polynomial one](generalized-fibonacci-polynomial-one.md)
-- [Generalized Fibonacci Polynomial add two](generalized-fibonacci-polynomial-add-two.md)
+- [Generalized Fibonacci polynomials](generalized-fibonacci-polynomial.md)
+- [Index-zero term of a generalized Fibonacci polynomial sequence](generalized-fibonacci-polynomial-zero.md)
+- [Index-one term of a generalized Fibonacci polynomial sequence](generalized-fibonacci-polynomial-one.md)
+- [Recurrence for generalized Fibonacci polynomials](generalized-fibonacci-polynomial-add-two.md)

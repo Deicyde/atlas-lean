@@ -13,7 +13,7 @@ Total-extension initial value at `0`; the source claims this only for `3 ≤ s`.
 
 ## Depends on
 
-- [Polygonal Number](polygonal-number.md)
+- [Polygonal numbers](polygonal-number.md)
 
 ## Sources
 

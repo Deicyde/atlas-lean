@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_eq_sum_choose
 ---
 
-# Lucas U eq sum choose
+# Binomial-sum formula for the Lucas sequence $U$
 
-Lemma 2.1 (vii): `U_r = Σ_{i=0}^{⌊(r-1)/2⌋} (-y)^i C(r-i-1, i) x^{r-2i-1}` for `r ≥ 1`.
+**Binomial-sum formula for the Lucas sequence $U$.** Let $x$ and $y \neq 0$ be integers and
+let $(U_n)$ be the Lucas sequence with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and
+$U_{n+2} = x U_{n+1} - y U_n$. Then for every $r \geq 1$,
+
+$$
+U_r = \sum_{i=0}^{\lfloor (r-1)/2 \rfloor} (-y)^i \binom{r-i-1}{i} x^{r-2i-1}.
+$$
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

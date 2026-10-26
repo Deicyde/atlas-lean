@@ -7,8 +7,11 @@ lean: MetaMathlibExt.maxLStarBlock
 
 # Max LStar Block
 
-The maximal `L*`-block `β̄` starting at (zero-based) index `s`: `0` below `s`, and
-`e_j` at index `i ≥ s` with `j - 1 = (i - s) mod N` (the paper's `β̄^{s+1}`).
+**The maximal $L^*$-block.** Let $L = (e_1, \dots, e_N)$ be a list of natural numbers and $s$
+an index, with indices starting at $0$. The maximal $L^*$-block starting at $s$ is the
+coefficient function whose entry at index $i$ is $0$ for $i < s$, and $e_j$ for $i \ge s$, where
+$j - 1 = (i - s) \bmod N$ (every entry is $0$ when $L$ is empty). It is the paper's
+$\bar\beta^{s+1}$.
 
 ## Depends on
 

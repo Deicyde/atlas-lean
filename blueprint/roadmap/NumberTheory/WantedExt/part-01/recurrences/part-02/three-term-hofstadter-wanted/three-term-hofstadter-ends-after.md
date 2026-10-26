@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ThreeTermHofstadterEndsAfter
 ---
 
-# Three Term Hofstadter Ends After
+# Exact length of a three-term Hofstadter-like sequence
 
-The sequence with initial conditions `init` has exactly `T` terms: its first `T` terms
-exist and the term at index `T + 1` cannot be computed.
+**Exact length of a three-term Hofstadter-like sequence.** Take integer initial conditions
+$B(1), \dots, B(m)$, and either pad the sequence with $B(n) = 0$ for every $n \le 0$ or leave it
+unpadded. Continue it by $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$ for $n > m$,
+where a term cannot be computed if this formula refers to an undefined index: a nonpositive
+index in the unpadded case, or an index not yet computed. For a natural number $T$, the
+sequence has exactly $T$ terms when $T \ge m$, the terms $B(1), \dots, B(T)$ can all be
+computed, and $B(T + 1)$ cannot.
 
 ## Depends on
 
@@ -16,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Three Term Hofstadter Next](three-term-hofstadter-next.md)
-- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
+- [Next term of the three-term Hofstadter-like recurrence](three-term-hofstadter-next.md)
+- [Initial segment of a three-term Hofstadter-like sequence](three-term-hofstadter-prefix.md)
 
 ## Sources
 

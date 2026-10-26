@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsTNicolNumber
 ---
 
-# Is TNicol Number
+# $t$-Nicol numbers
 
-A `t`-Nicol number is a positive integer `n` such that
-`Nat.totient n + σ(n) = t * n`.
+**$t$-Nicol numbers.** For a natural number $t$, a $t$-Nicol number is a positive integer $n$
+such that $\varphi(n) + \sigma(n) = t n$, where $\varphi$ is Euler's totient function and
+$\sigma(n)$ is the sum of the positive divisors of $n$.
 
 ## Depends on
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.genocchiNumber_eq_bernoulli
 ---
 
-# Genocchi Number eq bernoulli
+# Genocchi numbers in terms of Bernoulli numbers
 
-The Genocchi numbers in terms of the Bernoulli numbers: `G n = 2 * (1 - 2 ^ n) * B n`.
+**Genocchi numbers in terms of Bernoulli numbers.** For every natural number $n$, the Genocchi
+number $G_n$, defined by $\frac{2x}{e^x + 1} = \sum_{m \ge 0} G_m \frac{x^m}{m!}$, satisfies
+$G_n = 2(1 - 2^n) B_n$, where $B_n$ is the $n$-th Bernoulli number with the convention
+$B_1 = -\tfrac{1}{2}$.
 
 ## Depends on
 
-- [Genocchi Number](../genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../genocchi-number/genocchi-number.md)
 
 ## Proof depends on
 
-- [Genocchi Number eq](../genocchi-number/genocchi-number-eq.md)
-- [Genocchi Power Series](../genocchi-number/genocchi-power-series.md)
-- [Genocchi Power Series eq](../genocchi-number/genocchi-power-series-eq.md)
+- [Genocchi numbers from their generating function](../genocchi-number/genocchi-number-eq.md)
+- [Generating function of the Genocchi numbers](../genocchi-number/genocchi-power-series.md)
+- [The Genocchi power series is $2x/(e^x + 1)$](../genocchi-number/genocchi-power-series-eq.md)
 
 ## Sources
 

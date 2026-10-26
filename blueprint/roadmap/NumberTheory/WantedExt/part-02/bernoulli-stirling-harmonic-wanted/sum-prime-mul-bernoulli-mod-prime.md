@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_prime_mul_bernoulli_mod_prime
 ---
 
-# Sum prime mul bernoulli mod prime
+# The congruence $\sum_{j=0}^{p} pB_j \equiv -1 \pmod p$
 
-For an odd prime `p`, the rational sum `sum_{j=0}^p p * B_j` has denominator
-not divisible by `p`, and its image under `ratResidue p` equals that of `-1`.
-The explicit denominator clause and residue equality replace the paper's
-rational congruence notation; `hp2` states oddness as `p != 2`.
+**The congruence $\sum_{j=0}^{p} pB_j \equiv -1 \pmod p$.** Let $B_j$ denote the Bernoulli
+numbers with $B_1 = -\tfrac12$. For every odd prime $p$, the rational number
+$S = \sum_{j=0}^{p} p B_j$ has denominator not divisible by $p$, and its residue modulo $p$ (its
+numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.
 
 ## Depends on
 

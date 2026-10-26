@@ -12,7 +12,7 @@ lean: MetaMathlibExt.tsum_lStarInf_mul_eq
 ## Depends on
 
 - [L Star Collection](l-star-collection.md)
-- [L Star Inf](l-star-inf.md)
+- [The coefficient function $\inf(\varepsilon)$](l-star-inf.md)
 
 ## Sources
 

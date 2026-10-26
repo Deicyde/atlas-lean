@@ -7,19 +7,20 @@ proof: formalized
 lean: MathlibExt.SelbergSieve.levelWeights_support
 ---
 
-# Level Weights support
+# Support of the Selberg level weights
 
-A nonzero level-`R` Selberg weight is supported at an integer at most `R`.
+**Support of the Selberg level weights.** For every bounding sieve and all natural numbers $R$
+and $d$, if the level-$R$ Selberg weight $\lambda_d$ at $d$ is nonzero, then $d \le R$.
 
 ## Depends on
 
-- [Level Weights](level-weights.md)
+- [Selberg sieve weights](level-weights.md)
 
 ## Proof depends on
 
-- [Level Set](level-set.md)
-- [Level Sum](level-sum.md)
-- [Level Y](level-y.md)
+- [Selberg level set](level-set.md)
+- [Selberg level sum](level-sum.md)
+- [Normalized Selberg coefficients](level-y.md)
 
 ## Sources
 

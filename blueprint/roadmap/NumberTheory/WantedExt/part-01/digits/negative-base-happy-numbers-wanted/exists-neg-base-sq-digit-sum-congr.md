@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_negBaseSqDigitSum_congr
 ---
 
-# Exists neg Base Sq Digit Sum congr
+# A congruence for the negative-base digit-square map
 
-For even `b ≤ -12` and `0 < v < 2b²` there are `0 ≤ w < v` and `0 ≤ c ≤ |b| - 2` with
-`S_{2,b}((|b| - 1) b + v - w - 1) - S_{2,b}((|b| - 1) b² + |b| - 1 - w) + 5 + 2c ≡ 0
-(mod |b| + 1)`.
+**A congruence for the negative-base digit-square map.** Let $b \le -12$ be an even integer,
+let $S_{2,b}$ be the map sending an integer to the sum of the squares of its base-$b$ digits, and
+let $v$ be an integer with $0 < v < 2b^2$. Then there are integers $w$ and $c$ with
+$0 \le w < v$ and $0 \le c \le |b| - 2$ such that
+
+$$S_{2,b}\bigl((|b| - 1)b + v - w - 1\bigr) -
+S_{2,b}\bigl((|b| - 1)b^2 + |b| - 1 - w\bigr) + 5 + 2c \equiv 0 \pmod{|b| + 1}.$$
 
 ## Depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.four_le_factorization_two_of_biunitaryTriperfect
 ---
 
-# Four le factorization two of biunitary Triperfect
+# Biunitary triperfect numbers divisible by $27$ are divisible by $16$
 
-Section 3 setting: `N` is biunitary triperfect with `2^e ∥ N`, `3^f ∥ N`, `f ≥ 3`. Then
-`e ≥ 4`.
+**Biunitary triperfect numbers divisible by $27$ are divisible by $16$.** Let $N$ be a
+biunitary triperfect number, that is, a positive integer with $\sigma^{**}(N) = 3N$, where
+$\sigma^{**}$ is the biunitary divisor sum. If $3^3$ divides $N$, then $2^4$ divides $N$.
 
 ## Depends on
 

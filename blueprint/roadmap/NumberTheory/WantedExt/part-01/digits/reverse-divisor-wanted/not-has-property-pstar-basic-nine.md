@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.not_hasPropertyPStar_basic_nine
 ---
 
-# Lemma 2
+# Not has Property PStar basic nine
 
-**Lemma 2**: no basic reverse divisor with quotient
-`9` has the property `P*`.
+**For $k \ge 2$, the number $11 \cdot (10^k - 1)$ lacks property $P^*$.** For every natural
+number $k \ge 2$, the number $11 \cdot (10^k - 1)$ does not have the property $P^*$.
+
+In the source these numbers $1089, 10989, 109989, \dots$ are the basic reverse divisors with
+quotient $9$.
 
 ## Depends on
 

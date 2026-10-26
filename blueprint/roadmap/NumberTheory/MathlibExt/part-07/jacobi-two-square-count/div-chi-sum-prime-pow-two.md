@@ -6,13 +6,15 @@ proof: formalized
 lean: SumSquares.divChiSum_prime_pow_two
 ---
 
-# Div Chi Sum prime pow two
+# The divisor sum of $\chi_4$ at powers of two
 
-On powers of 2 only the divisor 1 contributes.
+**The divisor sum of $\chi_4$ at powers of two.** Let $\chi_4$ be the nonprincipal Dirichlet
+character modulo 4. For every natural number $e$, $\sum_{d \mid 2^e} \chi_4(d) = 1$: only the
+divisor $1$ contributes.
 
 ## Depends on
 
-- [Div Chi Sum](div-chi-sum.md)
+- [Divisor sum of the character modulo 4](div-chi-sum.md)
 
 ## Sources
 

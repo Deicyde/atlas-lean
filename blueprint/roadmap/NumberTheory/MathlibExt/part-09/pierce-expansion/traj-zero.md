@@ -6,13 +6,14 @@ proof: formalized
 lean: PierceExpansion.traj_zero
 ---
 
-# Traj zero
+# Initial term of the Pierce trajectory
 
-Unfolding at step zero.
+**Initial term of the Pierce trajectory.** For all natural numbers $n$ and $a$, the Pierce
+remainder trajectory of $a$ with respect to $n$ has value $a$ at step $0$.
 
 ## Depends on
 
-- [Traj](traj.md)
+- [Pierce remainder trajectory](traj.md)
 
 ## Sources
 

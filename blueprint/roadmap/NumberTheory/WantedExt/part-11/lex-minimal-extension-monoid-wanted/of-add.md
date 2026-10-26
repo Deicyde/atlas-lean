@@ -15,8 +15,8 @@ claim (`η₁`, `η₂` are lex-minimal extensions).
 
 ## Depends on
 
-- [Is Binomid Index](../../part-02/binomid-index-wanted/is-binomid-index.md)
-- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Binomid index](../../part-02/binomid-index-wanted/is-binomid-index.md)
+- [Lex-minimal extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
 
 ## Sources
 

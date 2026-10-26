@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lucas_abs_strictMono_of_discr_pos
 ---
 
-# Lucas abs strict Mono of discr pos
+# Growth and positivity of Lucas sequences with positive discriminant
 
-For nondegenerate `U(P, Q)`, `V(P, Q)` with `D > 0`: `|U_n|` is strictly increasing
-for `n ≥ 2` and `|V_n|` for `n ≥ 1`; if `P > 0` then `U_n > 0` for `n ≥ 1` and `V_n > 0`
-for `n ≥ 0`; and `|U_3| ≥ 3` unless `|P| = -Q = 1`.
+**Growth and positivity of Lucas sequences with positive discriminant.** Let $P, Q$ be
+integers with $P \neq 0$, $Q \neq 0$ and $D = P^2 - 4Q > 0$, and let $U = U(P, Q)$ and
+$V = V(P, Q)$ be the Lucas sequences. Then $|U_n| < |U_{n+1}|$ for every $n \ge 2$ and
+$|V_n| < |V_{n+1}|$ for every $n \ge 1$; if $P > 0$, then $U_n > 0$ for every $n \ge 1$ and
+$V_n > 0$ for every $n \ge 0$; and $|U_3| \ge 3$ unless $|P| = 1$ and $Q = -1$.
+
+When $Q \neq 0$ and $D > 0$, the condition $P \neq 0$ is equivalent to the pair $(P, Q)$ being
+nondegenerate (Theorem 2.1 of the source).
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

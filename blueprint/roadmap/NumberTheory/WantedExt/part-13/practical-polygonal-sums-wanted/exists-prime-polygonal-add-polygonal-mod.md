@@ -14,7 +14,7 @@ the printed statement asks only for an odd prime.
 
 ## Depends on
 
-- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
+- [Polygonal numbers](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

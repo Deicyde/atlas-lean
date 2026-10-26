@@ -14,8 +14,8 @@ proof applies Lemma 2, which needs `f` monic.
 
 ## Depends on
 
-- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
-- [Monic Conv Shifted Sum](monic-conv-shifted-sum.md)
+- [Partial sums of a Dirichlet convolution over monic polynomials](monic-conv-partial-sum.md)
+- [Shifted partial sums of a Dirichlet convolution](monic-conv-shifted-sum.md)
 
 ## Sources
 

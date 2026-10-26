@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFibonacciCatalan_pos
 ---
 
-# Generalized Fibonacci Catalan pos
+# Positivity of generalized FiboCatalan numbers
 
-The generalized value is strictly positive as a rational.
+**Positivity of generalized FiboCatalan numbers.** For all natural numbers $r$ and $n$, the
+generalized FiboCatalan number with parameters $r$ and $n$ is a strictly positive rational
+number.
 
 ## Depends on
 
@@ -17,10 +19,10 @@ The generalized value is strictly positive as a rational.
 
 ## Proof depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
-- [Fibonacci Factorial pos](fibonacci-factorial-pos.md)
-- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
-- [Fibonacci Jordan Quotient pos](fibonacci-jordan-quotient-pos.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
+- [Fibonacci factorials are positive](fibonacci-factorial-pos.md)
+- [Fibonacci Jordan quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan quotient is positive](fibonacci-jordan-quotient-pos.md)
 
 ## Sources
 

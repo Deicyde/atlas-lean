@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.lucasAllAveragesIntegral_lcm
 ---
 
-# Lucas All Averages Integral lcm
+# Integral averages extend to least common multiples
 
-Theorem 2.7: suppose every recurrence `W(a, b)` is purely periodic modulo `n` from the term
-`W 1` on with period dividing `n` (that is, `W (k + n) ≡ W k (mod n)` for `k ≥ 1`), and
-`A_W(n)` is an integer for all `W(a, b)`. If `m ∈ S'(U)`, then `A_W(lcm(m, n))` is an integer
-for all `W(a, b)`.
+**Integral averages extend to least common multiples.** Let $U$ be the Lucas sequence with
+parameters $P$ and $Q \ne 0$, given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$, and
+let $S'(U)$ be the set of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of
+$U$ modulo $n$ divides $n$ and $n \mid U_1 + \dots + U_n$. Call an integer sequence
+$(w_k)_{k \ge 0}$ a recurrence if $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$, and say that a
+natural number $x$ has integral averages if $x \mid w_1 + \dots + w_x$ for every recurrence $w$.
+Let $n > 0$ be such that every recurrence $w$ satisfies $w_{k+n} \equiv w_k \pmod n$ for all
+$k \ge 1$, and suppose $n$ has integral averages. Then $\operatorname{lcm}(m, n)$ has integral
+averages for every $m \in S'(U)$.
+
+In the paper's notation $a = P$ and $b = -Q$, and the recurrences are the sequences $W(a, b)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
 
 ## Sources
 

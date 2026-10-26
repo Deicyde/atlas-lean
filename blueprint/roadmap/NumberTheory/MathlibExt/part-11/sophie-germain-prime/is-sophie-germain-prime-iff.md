@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.isSophieGermainPrime_iff
 ---
 
-# Is Sophie Germain Prime iff
+# Characterization of Sophie Germain primes
 
-Definitional characterization of Sophie Germain primes.
+**Characterization of Sophie Germain primes.** A natural number $p$ is a Sophie Germain prime
+if and only if $p$ is prime and $2p + 1$ is prime.
 
 ## Depends on
 
-- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
+- [Sophie Germain primes](is-sophie-germain-prime.md)
 
 ## Sources
 

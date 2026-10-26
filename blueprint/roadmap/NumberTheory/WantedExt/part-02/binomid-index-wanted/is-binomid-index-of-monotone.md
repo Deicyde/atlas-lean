@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isBinomidIndex_of_monotone
 ---
 
-# Is Binomid Index of monotone
+# Monotone sequences are binomid indices
 
-Proposition 1: a monotonic increasing sequence of nonnegative integers is
-a binomid index.
+**Monotone sequences are binomid indices.** Every non-decreasing sequence
+$e_1 \le e_2 \le \cdots$ of nonnegative integers is an infinite binomid index.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
+- [Binomid index](is-binomid-index.md)
 
 ## Sources
 

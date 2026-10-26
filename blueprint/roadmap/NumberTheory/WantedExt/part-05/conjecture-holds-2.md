@@ -14,7 +14,7 @@ from `OpenConjectures/NumberTheory/ErdosProblem6`.
 
 ## Depends on
 
-- [Prime Gap](../../MathlibExt/part-10/prime-gap.md)
+- [Prime gap](../../MathlibExt/part-10/prime-gap.md)
 
 ## Sources
 

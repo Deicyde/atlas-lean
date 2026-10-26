@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciFactorial_two
 ---
 
-# Fibonacci Factorial two
+# Fibonacci factorial at two
 
-`F_2! = 1` since `F_2 = 1`.
+**Fibonacci factorial at two.** The Fibonacci factorial $F_2! = F_1 F_2$ of the Fibonacci
+numbers $F_1, F_2$ equals $1$, since $F_1 = F_2 = 1$.
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial one](fibonacci-factorial-one.md)
+- [Fibonacci factorial at one](fibonacci-factorial-one.md)
 
 ## Sources
 

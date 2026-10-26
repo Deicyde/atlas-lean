@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_smooth_shifted_primes_ge
 ---
 
-# Exists card smooth shifted primes ge
+# Many primes $q$ with $q - 1$ smooth
 
-Lemma 1 (quoted): for `θ ∈ (1, 2)` and the set
-`𝒬 = {q prime : y^θ / log y ≤ q ≤ y^θ, P(q - 1) ≤ y}` (`P(m)` the largest prime factor of `m`,
-written as "every prime divisor of `q - 1` is at most `y`"), there are constants `γ = γ_θ > 0`
-and `Y = Y_θ` with `|𝒬| ≥ γ y^θ / log(y^θ)` for `y > Y`. The construction of `L'`, `L` and the
-exceptional set `𝒟_B(x)` that follows the lemma in the record is not part of the statement.
+**Many primes $q$ with $q - 1$ smooth.** Let $1 < \theta < 2$. There are real constants
+$\gamma > 0$ and $Y$ such that for every real $y > Y$, the number of primes $q$ with
+$y^\theta / \log y \le q \le y^\theta$ such that every prime divisor of $q - 1$ is at most $y$
+is at least $\gamma y^\theta / \log(y^\theta)$.
 
 ## Depends on
 

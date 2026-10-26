@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.binomidAverage
 ---
 
-# Binomid Average
+# Initial averages of a sequence
 
-The average `A_{i,0}(η) = s_i / i` of the first `i` entries of `η`, where
-`s_i = e_1 + ⋯ + e_i` is `∑ l ∈ Finset.range i, η l`; in Lean `A_{0,0} = 0`.
-The two-index average `A_{i,l}(η) = (s_{i+l} - s_l) / i` is written inline as
-`(∑ j ∈ Finset.Ico l (i + l), η j) / i`.
+**Initial averages of a sequence.** For a sequence $\eta = (e_1, e_2, \dots)$ of
+nonnegative integers and $i \ge 1$, the average $A_{i,0}(\eta)$ is the rational number
+$s_i / i$, where $s_i = e_1 + \dots + e_i$ is the sum of the first $i$ entries; for $i = 0$
+the value is $A_{0,0}(\eta) = 0$.
 
 ## Depends on
 

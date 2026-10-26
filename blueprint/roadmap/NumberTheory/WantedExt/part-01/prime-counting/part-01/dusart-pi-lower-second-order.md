@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.dusart_pi_lower_second_order
 ---
 
-# Dusart Pi Lower Second Order Wanted
+# Dusart's second-order lower bound for $\pi(x)$
 
-Dusart second-order lower bound for `π(x)`: for `x ≥ 88789`,
-`π(x) ≥ x / log x * (1 + 1 / log x + 2 / (log x)^2)`, with `π` as
-`Nat.primeCounting ⌊x⌋₊`.
+**Dusart's second-order lower bound for $\pi(x)$.** Let $\pi(x)$ be the number of primes
+$p \le x$ and let $\log$ be the natural logarithm. For every real number $x \ge 88789$,
+
+$$\pi(x) \ge \frac{x}{\log x}\left(1 + \frac{1}{\log x} + \frac{2}{(\log x)^2}\right).$$
 
 ## Depends on
 

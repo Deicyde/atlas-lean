@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.dusart_pi_upper_shifted_log
 ---
 
-# Dusart Pi Upper Shifted Log Wanted
+# Dusart's shifted-logarithm upper bound for $\pi(x)$
 
-Dusart shifted-log upper bound for `π(x)`: for `x > exp 1.112`,
-`π(x) ≤ x / (log x - 1.112)`, with `π` as `Nat.primeCounting ⌊x⌋₊`.
+**Dusart's shifted-logarithm upper bound for $\pi(x)$.** Let $\pi(x)$ be the number of primes
+$p \le x$ and let $\log$ be the natural logarithm. For every real number $x > e^{1.112}$,
+$\pi(x) \le \frac{x}{\log x - 1.112}$.
 
 ## Depends on
 

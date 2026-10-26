@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.canonicalLucasSplitting_of_lt_six
 ---
 
-# Canonical Lucas Splitting of lt six
+# Canonical splitting of a short Lucas interval
 
-For `m ≤ 5` the canonical splitting of `Λ_m` is `Λ_m` itself.
+**Canonical splitting of a short Lucas interval.** For every natural number $m < 6$, the
+canonical splitting of the Lucas interval $\Lambda_m$ is the one-pair list $[(m, 0)]$, that is,
+$\Lambda_m$ itself.
 
 ## Depends on
 
-- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
+- [Canonical splitting of a Lucas interval](canonical-lucas-splitting.md)
 
 ## Sources
 

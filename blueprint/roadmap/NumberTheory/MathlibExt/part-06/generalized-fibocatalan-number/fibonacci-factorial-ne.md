@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciFactorial_ne
 ---
 
-# Fibonacci Factorial ne
+# Fibonacci factorials are nonzero
 
-Every Fibonacci factorial is nonzero.
+**Fibonacci factorials are nonzero.** For every natural number $n$, the Fibonacci factorial
+$F_n!$ is a nonzero rational number.
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Proof depends on
 
-- [Fibonacci Factorial pos](fibonacci-factorial-pos.md)
+- [Fibonacci factorials are positive](fibonacci-factorial-pos.md)
 
 ## Sources
 

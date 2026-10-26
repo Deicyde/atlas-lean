@@ -5,5 +5,5 @@ navigation: module
 
 # Dusart Mertens Log Sum
 
-- [Mertens Constant](mertens-constant.md)
-- [Dusart log prime sum](dusart-log-prime-sum.md)
+- [The constant in Mertens' first theorem](mertens-constant.md)
+- [Dusart's explicit Mertens first theorem](dusart-log-prime-sum.md)

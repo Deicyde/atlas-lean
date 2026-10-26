@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.reflTransGen_isGoldenMeanFlip_of_isBergmanExpansion
 ---
 
-# Refl Trans Gen is Golden Mean Flip of is Bergman Expansion
+# Golden mean flips connect all expansions to the Bergman expansion
 
-Every finite base phi expansion with digits `0` and `1` of a natural number `N`
-is obtained from the Bergman expansion of `N` by finitely many golden mean flips.
+**Golden mean flips connect all expansions to the Bergman expansion.** Let $N$ be a natural
+number, let $S$ be a Bergman expansion of $N$ and let $T$ be any finite base phi expansion of
+$N$ with digits $0$ and $1$. Then $T$ is obtained from $S$ by finitely many (possibly zero)
+golden mean flips $100 \to 011$.
 
 ## Depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Is Golden Mean Flip](is-golden-mean-flip.md)
-- [Base Phi Value](base-phi-value.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Golden mean flips](is-golden-mean-flip.md)
+- [Value of a base phi expansion](base-phi-value.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isNegBaseHappy_neg_three_iff
 ---
 
-# Is Neg Base Happy neg three iff
+# Happy numbers in base $-3$
 
-Grundman–Harris, part (2): there is an infinite arithmetic progression with difference `2` of
-`-3`-happy numbers; indeed `a ∈ ℤ` is `-3`-happy iff `a ≡ 1 (mod 2)`.
+**Happy numbers in base $-3$.** There is an integer $n$ such that $n + 2i$ is $(-3)$-happy for
+every natural number $i$, and an integer $a$ is $(-3)$-happy if and only if $a \equiv 1 \pmod 2$.
+
+This is part (2) of the Grundman–Harris theorem.
 
 ## Depends on
 
-- [Is Neg Base Happy](is-neg-base-happy.md)
+- [Happy integers in a negative base](is-neg-base-happy.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [$k$-full numbers](../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

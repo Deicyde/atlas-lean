@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.odd_primitiveNondeficient_primeReciprocalSum_ge
 ---
 
-# Odd primitive Nondeficient prime Reciprocal Sum ge
+# Lower bound on the prime reciprocal sum of an odd primitive non-deficient number
 
-If `n` is an odd primitive non-deficient number with least prime factor `p₁` and
-surplus `S = H(n) - 2`, then
-`T(n) ≥ log 2 - (25/(32 p₁ log p₁)) (1 + 2 log log p₁ / log p₁) + S/2 - S²/4`.
-The hypothesis `Odd n` is added: the printed statement fails at `n = 6`.
+**Lower bound on the prime reciprocal sum of an odd primitive non-deficient number.** Let $n$
+be an odd primitive non-deficient number with least prime factor $p_1$, let
+$T(n) = \sum_{p \mid n} 1/p$ and $H(n) = \prod_{p \mid n} p/(p-1)$, with the sum and product over
+the primes $p$ dividing $n$, and let $S = H(n) - 2$ be the surplus of $n$. Then
+$T(n) \ge \log 2 - \frac{25}{32 p_1 \log p_1}
+\left(1 + \frac{2 \log \log p_1}{\log p_1}\right) + \frac{S}{2} - \frac{S^2}{4}$.
+
+The hypothesis that $n$ is odd is added: the statement as printed fails at $n = 6$.
 
 ## Depends on
 

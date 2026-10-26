@@ -7,12 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.prime_sub_primorial_prime_of_between_consecutive_primes_general
 ---
 
-# Prime sub primorial prime of between consecutive primes general
+# Primes just above a primorial, general form
 
-Prime gaps near primorials, with only the hypotheses the argument uses: if no prime lies
-strictly between `q` and `r`, and a prime `p` satisfies
-`primorial q + 1 < p < primorial q + r ^ 2`, then `p - primorial q` is prime.
-`prime_sub_primorial_prime_of_between_consecutive_primes` is the source-shaped form.
+**Primes just above a primorial, general form.** Let $q$ and $r$ be natural numbers such
+that no prime $s$ satisfies $q < s < r$, and let $q\#$ be the primorial of $q$, the product of
+all primes at most $q$. If $p$ is a prime with $q\# + 1 < p < q\# + r^2$, then $p - q\#$ is
+prime.
+
+Neither $q$ nor $r$ needs to be prime, and $q < r$ is not assumed.
 
 ## Depends on
 

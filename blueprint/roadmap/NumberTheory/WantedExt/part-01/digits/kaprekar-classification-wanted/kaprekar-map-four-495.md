@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kaprekarMap_four_495
 ---
 
-# Kaprekar Map four 495
+# The four-digit Kaprekar map sends 495 to 9081
 
-Characteristic value: in `D_4`, `495` is the string `0495` and `f(0495) = 9540 - 0459`.
+**The four-digit Kaprekar map sends 495 to 9081.** With $n = 4$, the number $495$ is padded to
+the digit string $0495$, and the Kaprekar map sends it to $9540 - 0459 = 9081$.
 
 ## Depends on
 
-- [Kaprekar Map](kaprekar-map.md)
+- [Kaprekar map](kaprekar-map.md)
 
 ## Sources
 

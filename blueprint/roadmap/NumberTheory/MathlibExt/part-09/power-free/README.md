@@ -5,11 +5,11 @@ navigation: module
 
 # Power Free
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 - [Is Power Free iff](is-power-free-iff.md)
-- [Two le](two-le.md)
-- [Pos](pos.md)
-- [Not dvd](not-dvd.md)
-- [Of dvd](of-dvd.md)
-- [Mono](mono.md)
-- [Is Power Free two](is-power-free-two.md)
+- [The exponent of a power-free number is at least two](two-le.md)
+- [Power-free numbers are positive](pos.md)
+- [A k-free number has no prime k-th power divisor](not-dvd.md)
+- [Divisors of k-free numbers are k-free](of-dvd.md)
+- [Power-freeness is monotone in the exponent](mono.md)
+- [A natural number is 2-free if and only if it is squarefree](is-power-free-two.md)

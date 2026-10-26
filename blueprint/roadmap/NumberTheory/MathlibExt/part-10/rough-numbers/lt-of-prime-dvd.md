@@ -7,14 +7,14 @@ proof: formalized
 lean: Nat.IsRough.lt_of_prime_dvd
 ---
 
-# Lt of prime dvd
+# Prime divisors of a rough number exceed the bound
 
-Prime-divisor lower-bound projection: every prime divisor of a `k`-rough
-number exceeds `k`.
+**Prime divisors of a rough number exceed the bound.** Let $n$, $k$ and $p$ be natural
+numbers. If $n$ is $k$-rough and $p$ is a prime dividing $n$, then $k < p$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Sources
 

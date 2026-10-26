@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_neg_b_pow_lucasAB
 ---
 
-# Theorem 5(a)
+# Sums of (a, b)-Lucas numbers weighted by powers of -b
 
-**Theorem 5(a)**: for `b ≠ 0`,
-(i) `∑_{i=0}^n (-b)^(n-i) L_{2i+1} = F_{2n+2}` and
-(ii) `∑_{i=0}^n (-b)^(n-i) L_{2i} = F_{2n+1} + (-b)^n`.
+**Sums of (a, b)-Lucas numbers weighted by powers of -b.** Let $a, b$ be complex numbers
+with $b \ne 0$, and let $(F_n)$ and $(L_n)$ be the $(a, b)$-Fibonacci and $(a, b)$-Lucas
+numbers. Then for every integer $n \ge 0$,
+
+$$\sum_{i=0}^{n} (-b)^{n-i} L_{2i+1} = F_{2n+2}
+\quad\text{and}\quad \sum_{i=0}^{n} (-b)^{n-i} L_{2i} = F_{2n+1} + (-b)^n.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

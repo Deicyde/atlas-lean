@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_add_five_mul_two_mul_add_two_mul
 ---
 
-# Theorem 10
+# Sum of $\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2$ as a run length transform
 
-**Theorem 10.** The sum `T(n) = ∑_{k=0}^{n} [`binom(n + 5k, 2n + 2k)` binom(n, k) mod 2]` is the run length transform
-of the sequence `S(n) = S(n - 1) + S(n - 2) - S(n - 3) + S(n - 4)` for `n ≥ 4` with `S(0) = S(1) = S(2) = S(3) = 1`.
+**Sum of $\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2$ as a run length transform.** Let
+$S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = S(1) = S(2) = S(3) = 1$ and
+$S(m) = S(m - 1) + S(m - 2) - S(m - 3) + S(m - 4)$ for every $m \ge 4$. Then for every natural
+number $n$, the sum $\sum_{k=0}^{n} \bigl(\binom{n+5k}{2n+2k}\binom{n}{k} \bmod 2\bigr)$ equals
+the value at $n$ of the run length transform of $S$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

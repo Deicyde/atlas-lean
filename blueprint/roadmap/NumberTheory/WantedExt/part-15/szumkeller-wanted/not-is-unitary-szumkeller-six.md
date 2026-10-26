@@ -16,7 +16,7 @@ lean: MetaMathlibExt.not_isUnitarySZumkeller_six
 
 ## Proof depends on
 
-- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

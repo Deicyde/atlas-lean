@@ -4,5 +4,5 @@ navigation: module
 
 # Prime Power Lifting
 
-- [Pow pow mod Eq one of mod Eq one](pow-pow-mod-eq-one-of-mod-eq-one.md)
-- [Prime power lifting mod Eq one](prime-power-lifting-mod-eq-one.md)
+- [Lifting a congruence to one along powers of the modulus](pow-pow-mod-eq-one-of-mod-eq-one.md)
+- [Prime-power lifting of a congruence to one](prime-power-lifting-mod-eq-one.md)

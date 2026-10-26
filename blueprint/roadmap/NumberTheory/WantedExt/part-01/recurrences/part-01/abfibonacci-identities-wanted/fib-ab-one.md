@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.fibAB_one
 ---
 
-# Fib AB one
+# First (a, b)-Fibonacci number
 
-`F_1 = 1` for the `(a, b)`-Fibonacci numbers.
+**First (a, b)-Fibonacci number.** For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
+number $F^{a,b}_1$ equals $1$.
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
 
 ## Sources
 

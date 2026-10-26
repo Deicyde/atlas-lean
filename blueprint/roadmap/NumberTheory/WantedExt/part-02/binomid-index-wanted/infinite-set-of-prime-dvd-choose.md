@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.infinite_setOf_prime_dvd_choose
 ---
 
-# Infinite set Of prime dvd choose
+# Primes divide all inner binomial coefficients of infinitely many rows
 
-Corollary 3: for every prime `p` there are infinitely many `n` such that
-`p` divides every binomial coefficient `binom(n, k)` with `1 ≤ k < n`.
+**Primes divide all inner binomial coefficients of infinitely many rows.** For every prime
+$p$ there are infinitely many natural numbers $n$ such that $p$ divides the binomial coefficient
+$\binom{n}{k}$ for every $k$ with $1 \le k < n$.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isEulerLucasPseudoprime_of_isStrongLucasPseudoprime
 ---
 
-# Is Euler Lucas Pseudoprime of is Strong Lucas Pseudoprime
+# Strong Lucas pseudoprimes are Euler–Lucas pseudoprimes
 
-A strong Lucas pseudoprime is an Euler–Lucas pseudoprime.
+**Strong Lucas pseudoprimes are Euler–Lucas pseudoprimes.** Let $P$ and $Q \ne 0$ be
+integers. Every strong Lucas pseudoprime with parameters $P$ and $Q$ is an Euler–Lucas
+pseudoprime with parameters $P$ and $Q$.
 
 ## Depends on
 
-- [Is Euler Lucas Pseudoprime](is-euler-lucas-pseudoprime.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Euler–Lucas pseudoprime](is-euler-lucas-pseudoprime.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

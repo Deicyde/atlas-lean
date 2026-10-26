@@ -4,5 +4,5 @@ navigation: module
 
 # Consecutive Square Sums Additive Uniqueness
 
-- [Multiplicative additive on squares](multiplicative-additive-on-squares.md)
-- [Consecutive Square Sums k Additive Uniqueness](consecutive-square-sums-k-additive-uniqu.md)
+- [Multiplicative functions additive on pairs of squares](multiplicative-additive-on-squares.md)
+- [Sums of consecutive squares form a $k$-additive uniqueness set for every $k \ge 2$](consecutive-square-sums-k-additive-uniqu.md)

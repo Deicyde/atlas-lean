@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.negBaseSqDigitSum
 ---
 
-# Neg Base Sq Digit Sum
+# Sum of squared digits in a negative base
 
-The function `S_{2,b}`: the sum of the squares of the base-`b` digits of `a`, for `b ≤ -2`.
-The fuel `2|a| + 2` suffices: the quantity `2a` (for `a ≥ 0`), `2|a| + 1` (for `a < 0`) strictly
-decreases at each digit step.
+**Sum of squared digits in a negative base.** Let $b \le -2$ be an integer. Every integer $a$
+has an expansion $a = \sum_{i=0}^{n} a_i b^i$ with digits $0 \le a_i \le |b| - 1$, unique up to
+leading zero digits, and $S_{2,b}(a) = \sum_{i=0}^{n} a_i^2$ is the sum of the squares of these
+digits. The digits are produced from the least significant one by taking $a_0 = a \bmod b$ and
+passing to $(a - a_0)/b$, until $0$ is reached.
+
+The definition is made for every integer $b$, by running this digit extraction for at most
+$2|a| + 2$ steps; for $b \le -2$ this suffices, since the quantity $2a$ (for $a \ge 0$) or
+$2|a| + 1$ (for $a < 0$) strictly decreases at each step.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
+- [Truncated digit-square sum in a negative base](neg-base-sq-digit-sum-aux.md)
 
 ## Sources
 

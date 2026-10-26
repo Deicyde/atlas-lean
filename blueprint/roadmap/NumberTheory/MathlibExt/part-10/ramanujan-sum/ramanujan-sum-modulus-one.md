@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.ramanujanSum_modulus_one
 ---
 
-# Ramanujan Sum modulus one
+# Ramanujan sums of modulus one
 
-Every Ramanujan sum of modulus one equals one.
+**Ramanujan sums of modulus one.** For every integer $t$, the Ramanujan sum $c_1(t)$ equals
+$1$.
 
 ## Depends on
 
-- [Ramanujan Sum](ramanujan-sum.md)
+- [Ramanujan sum](ramanujan-sum.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ The paper's conjecture on the constant term, stated after this theorem, is not i
 ## Depends on
 
 - [Alternating binomial power sum](alternating-binomial-power-sum.md)
-- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

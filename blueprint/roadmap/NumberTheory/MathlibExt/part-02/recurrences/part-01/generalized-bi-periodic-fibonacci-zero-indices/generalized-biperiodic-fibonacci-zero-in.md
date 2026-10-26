@@ -22,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

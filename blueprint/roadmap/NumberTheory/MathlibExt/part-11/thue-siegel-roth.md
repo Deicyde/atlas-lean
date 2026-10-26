@@ -7,12 +7,12 @@ proof: formalized
 lean: MathlibExt.NumberTheory.ThueSiegelRothWanted.thue_siegel_roth
 ---
 
-# Thue Siegel Roth
+# Thue–Siegel–Roth theorem
 
-For irrational real algebraic `α : ℝ` and any `ε > 0`, only finitely many `q : ℚ` satisfy `|α - q|
-< 1 / (q.den : ℝ) ^ (2+ε)` via `Real.rpow`. Source: K. F. Roth, Rational approximations to
-algebraic numbers, Mathematika 2 (1955) 1–20; predecessors Thue 1909 and Siegel 1921; textbook in
-Schmidt, Diophantine Approximation
+**Thue–Siegel–Roth theorem.** Let $\alpha$ be an irrational real number that is algebraic over
+$\mathbb{Q}$, and let $\varepsilon > 0$ be real. Then only finitely many rational numbers $q$
+satisfy $|\alpha - q| < 1 / b^{2 + \varepsilon}$, where $b$ is the denominator of $q$ in lowest
+terms.
 
 Proof: The proof constructs Siegel's auxiliary polynomial, bounds its index at rational
 approximation points by a Taylor estimate, and contradicts the inductive Roth lemma.
@@ -23,8 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Roth Auxiliary](../part-10/finite-of-divisible-approximations.md)
+- [Roth's theorem with divisibility conditions](../part-10/finite-of-divisible-approximations.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ThueSiegelRoth](../../../../sources/v2/MathlibExt.md)
+- K. F. Roth, Rational approximations to algebraic numbers, Mathematika 2 (1955) 1–20; predecessors Thue 1909 and Siegel 1921; textbook in Schmidt, Diophantine Approximation

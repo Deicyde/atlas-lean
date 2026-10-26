@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isSignatureCarmichael_iff
 ---
 
-# Is Signature Carmichael iff
+# Korselt criterion for $\sigma$-Carmichael numbers
 
-Korselt criterion for `σ`-Carmichael numbers: for a signature `σ = (ε₁, …, εᵣ)` of length
-`r ≥ 2` and an odd positive `n`, `n` is `σ`-Carmichael iff `n` is squarefree with exactly `r`
-prime factors `p₁ < ⋯ < pᵣ` and `pᵢ - εᵢ ∣ n - ε_σ` for all `i`, where `ε_σ = ∏ εᵢ`. The
-length condition `r ≥ 2` comes from the paper's definition of signatures; the record leaves
-the matching of `εₚ` to `p` implicit, here `p = pᵢ` pairs with `εᵢ`.
+**Korselt criterion for $\sigma$-Carmichael numbers.** Let
+$\sigma = (\varepsilon_1, \dots, \varepsilon_r)$ be a list of signs $\varepsilon_i \in \{1, -1\}$ of
+length $r \ge 2$, put $\varepsilon_\sigma = \varepsilon_1 \cdots \varepsilon_r$, and let $n$ be an
+odd natural number. Then $n$ is $\sigma$-Carmichael if and only if $n$ is squarefree, has exactly
+$r$ prime factors $p_1 < \dots < p_r$, and satisfies
+$p_i - \varepsilon_i \mid n - \varepsilon_\sigma$ for every $i$.
 
 ## Depends on
 
-- [Is Signature Carmichael](is-signature-carmichael.md)
+- [Carmichael numbers of a signature](is-signature-carmichael.md)
 
 ## Sources
 

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_lucasV_neg_p
 ---
 
-# Lucas U lucas V neg p
+# Lucas sequences under negation of the first parameter
 
-Changing the sign of `P`: `U_n(-P, Q) = (-1)^{n+1} U_n(P, Q)` and
-`V_n(-P, Q) = (-1)^n V_n(P, Q)`.
+**Lucas sequences under negation of the first parameter.** For integers $P$ and $Q \ne 0$ and
+every natural number $n$, the Lucas sequences $U$ and $V$ satisfy
+$U_n(-P, Q) = (-1)^{n+1} U_n(P, Q)$ and $V_n(-P, Q) = (-1)^n V_n(P, Q)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

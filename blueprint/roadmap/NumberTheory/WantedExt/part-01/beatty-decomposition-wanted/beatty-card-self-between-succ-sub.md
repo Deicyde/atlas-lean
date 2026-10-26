@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.beatty_card_self_between_succ_sub
 ---
 
-# Beatty card self between succ sub
+# Increments of the $\alpha$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
-For complementary Beatty sequences with slopes `α` and `β > 2`, let `q = ⌊β⌋` and let
-`c n` count the elements of `A` strictly between `⌊nα⌋` and `⌊nβ⌋`. Then
-`c (n + 1) - c n` is `q - 2` or `q - 1`, and it is `q - 2` exactly when
-`⌊(n + 1)β⌋ - ⌊nβ⌋ = q`.
+**Increments of the $\alpha$-Beatty counts between $\lfloor n\alpha\rfloor$ and
+$\lfloor n\beta\rfloor$.** Let $\beta$ be an irrational number with $\beta > 2$, let $\alpha$ be a
+real number with $\alpha^{-1} + \beta^{-1} = 1$, let $A$ be the set of the numbers
+$\lfloor k\alpha\rfloor$ for positive integers $k$, and for an integer $m$ let $c(m)$ be the number
+of elements of $A$ in the open interval $(\lfloor m\alpha\rfloor, \lfloor m\beta\rfloor)$. Then for
+every positive integer $n$, the difference $c(n + 1) - c(n)$ is $\lfloor\beta\rfloor - 2$ or
+$\lfloor\beta\rfloor - 1$, and it equals $\lfloor\beta\rfloor - 2$ if and only if
+$\lfloor (n + 1)\beta\rfloor - \lfloor n\beta\rfloor = \lfloor\beta\rfloor$.
+
+By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then complementary.
 
 ## Depends on
 

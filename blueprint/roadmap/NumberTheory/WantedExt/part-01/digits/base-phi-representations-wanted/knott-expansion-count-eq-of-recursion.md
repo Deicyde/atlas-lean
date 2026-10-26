@@ -5,20 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.knottExpansionCount_eq_of_recursion
 ---
 
-# Knott Expansion Count eq of recursion
+# Recursion for the number of Knott expansions
 
-Recursion for `Tot_κ(N)`. The Bergman expansion of `N ≥ 2` has digits `1` at
-positions `p 0 < p 1 < ⋯ < p n`, so `β(N) = 10^{s_n} ⋯ 10^{s_1} 1` with
-`s_k = p k - p (k - 1) - 1`. With `r 0 = 1`, `r 1 = s_1 / 2 + 1` (`s_1` even) or
-`(s_1 + 1) / 2 + 1` (`s_1` odd), and for `2 ≤ k ≤ n`,
-`r k = (s_k / 2 + 1) r (k - 1)` (`s_k` even) or
-`r k = ((s_k + 1) / 2 + 1) r (k - 1) - r (k - 2)` (`s_k` odd), one has
-`Tot_κ(N) = r n`. The halves are cleared by doubling.
+**Recursion for the number of Knott expansions.** Let $\varphi$ be the golden ratio, let
+$N \ge 2$ and $n$ be natural numbers, and let $p_0, \dots, p_n$ be integers with
+$p_{k+1} \ge p_k + 2$ for all $k < n$ and $\sum_{k=0}^{n} \varphi^{p_k} = N$. Thus $N$ has the
+base phi expansion $10^{s_n} \cdots 10^{s_1} 1$ with digits $1$ at positions $p_0 < \dots < p_n$,
+where $s_k = p_k - p_{k-1} - 1$ for $1 \le k \le n$. Let $r_0, r_1, \dots$ be integers with
+$r_0 = 1$; if $n \ge 1$, let $r_1 = s_1/2 + 1$ when $s_1$ is even and $r_1 = (s_1 + 1)/2 + 1$
+when $s_1$ is odd; and for $2 \le k \le n$, let $r_k = (s_k/2 + 1)\, r_{k-1}$ when $s_k$ is even
+and $r_k = ((s_k + 1)/2 + 1)\, r_{k-1} - r_{k-2}$ when $s_k$ is odd. Then the number of Knott
+expansions of $N$ is $r_n$.
 
 ## Depends on
 
-- [Base Phi Value](base-phi-value.md)
-- [Knott Expansion Count](knott-expansion-count.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [Number of Knott expansions](knott-expansion-count.md)
 
 ## Sources
 

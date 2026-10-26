@@ -4,12 +4,12 @@ navigation: module
 
 # Prime Gap Liminf
 
-- [Prime Gap Liminf](prime-gap-liminf.md)
-- [Consecutive nth prime](consecutive-nth-prime.md)
-- [Prime Gap pos](prime-gap-pos.md)
-- [Two le prime Gap](two-le-prime-gap.md)
-- [Two le prime Gap Liminf](two-le-prime-gap-liminf.md)
-- [Prime Gap Liminf le iff infinite](prime-gap-liminf-le-iff-infinite.md)
-- [Prime Gap Liminf ne top iff bounded pairs](prime-gap-liminf-ne-top-iff-bounded-pair.md)
-- [Prime Gap eq two iff](prime-gap-eq-two-iff.md)
-- [Prime Gap Liminf eq two iff](prime-gap-liminf-eq-two-iff.md)
+- [Liminf of prime gaps](prime-gap-liminf.md)
+- [Successive primes in the enumeration are consecutive](consecutive-nth-prime.md)
+- [Prime gaps are positive](prime-gap-pos.md)
+- [Prime gaps after the first are at least two](two-le-prime-gap.md)
+- [The liminf of prime gaps is at least two](two-le-prime-gap-liminf.md)
+- [When the liminf of prime gaps is at most a given bound](prime-gap-liminf-le-iff-infinite.md)
+- [Finite liminf of prime gaps and bounded gaps between primes](prime-gap-liminf-ne-top-iff-bounded-pair.md)
+- [A prime gap equals two exactly at a twin prime](prime-gap-eq-two-iff.md)
+- [The liminf of prime gaps is two exactly when there are infinitely many twin primes](prime-gap-liminf-eq-two-iff.md)

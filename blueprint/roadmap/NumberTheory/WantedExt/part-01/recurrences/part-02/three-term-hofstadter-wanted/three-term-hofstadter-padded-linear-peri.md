@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.threeTermHofstadter_padded_linear_period_seven
 ---
 
-# Three Term Hofstadter padded linear period seven
+# Period-seven pattern of the padded sequence from $1, \dots, N$
 
-For `N ≥ 72`, the padded sequence `B_{N̄}` with initial conditions
-`⟨0̄; 1, 2, …, N⟩` follows the period-`7` pattern
-`B(N+7k) = 7k+2`, `B(N+7k+1) = N+7k+2`, `B(N+7k+2) = N+7k+4`, `B(N+7k+3) = 7`,
-`B(N+7k+4) = 2N+2k+45`, `B(N+7k+5) = 2N+k-7`, `B(N+7k+6) = N-2` (`k ≥ 1`) from index
-`N + 67` through index `2N + ν`, where `ν = -1, -2, -2, -2, 2, 1, 0` for
-`N ≡ 0, 1, …, 6 (mod 7)`.
+**Period-seven pattern of the padded sequence from $1, \dots, N$.** Let $N \ge 72$ be a
+natural number, and let $B$ be the sequence with $B(n) = 0$ for $n \le 0$ and $B(i) = i$ for
+$1 \le i \le N$, continued by the recurrence $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$.
+Let $\nu = -1, -2, -2, -2, 2, 1, 0$ according as $N \equiv 0, 1, 2, 3, 4, 5, 6 \pmod 7$. Then
+for all natural numbers $k \ge 1$ and $r < 7$ with $N + 67 \le N + 7k + r \le 2N + \nu$, the
+term $B(N + 7k + r)$ can be computed, and it equals $7k + 2$, $N + 7k + 2$, $N + 7k + 4$, $7$,
+$2N + 2k + 45$, $2N + k - 7$ or $N - 2$ according as $r = 0, 1, 2, 3, 4, 5$ or $6$.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

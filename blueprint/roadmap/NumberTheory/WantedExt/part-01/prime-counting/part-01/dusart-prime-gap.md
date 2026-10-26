@@ -6,10 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.dusart_prime_gap
 ---
 
-# Dusart Prime Gap Wanted
+# Dusart's short-interval prime gap bound
 
-Dusart prime gap: for `x ≥ 468991632` there is a prime `p` with
-`x < p ≤ x + x / (5000 * (log x)^2)`.
+**Dusart's short-interval prime gap bound.** Let $\log$ be the natural logarithm. For every
+real number $x \ge 468991632$ there is a prime $p$ with $x < p \le x + \frac{x}{5000 (\log x)^2}$.
 
 ## Depends on
 

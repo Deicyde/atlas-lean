@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isLucasFrobeniusPseudoprime_iff_of_not_isStrongLucasPseudoprime
 ---
 
-# Is Lucas Frobenius Pseudoprime iff of not is Strong Lucas Pseudoprime
+# Frobenius criterion for Lucas pseudoprimes that are not strong
 
-For `U(P, Q)` with `Q = ±1`, let `N` be a Lucas pseudoprime with `gcd(N, D) = 1` that is not a
-strong Lucas pseudoprime, and `2^k ∥ ρ(N)`. If `Q = -1`, `N` is a Frobenius pseudoprime iff
-`N ≡ (D/N) (mod 2^{k+1})` and `(D/N) = 1`; if `Q = 1`, iff `N ≡ (D/N) (mod 2^{k+1})`.
+**Frobenius criterion for Lucas pseudoprimes that are not strong.** Let $U$ be the Lucas
+sequence with parameters $P$ and $Q$, where $Q = 1$ or $Q = -1$, and let $D = P^2 - 4Q$. Let $N$
+be a Lucas pseudoprime with parameters $P, Q$ such that $\gcd(N, D) = 1$ and $N$ is not a strong
+Lucas pseudoprime, let $\rho(N)$ be the rank of appearance of $N$ in $U$, and let $k$ be a natural
+number with $2^k \mid \rho(N)$ and $2^{k+1} \nmid \rho(N)$. Write $(D/N)$ for the Jacobi symbol.
+If $Q = -1$, then $N$ is a Frobenius pseudoprime with parameters $P, Q$ if and only if
+$N \equiv (D/N) \pmod{2^{k+1}}$ and $(D/N) = 1$. If $Q = 1$, then $N$ is a Frobenius pseudoprime
+with parameters $P, Q$ if and only if $N \equiv (D/N) \pmod{2^{k+1}}$.
 
 ## Depends on
 
-- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
-- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
-- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Frobenius pseudoprime for Lucas parameters](is-lucas-frobenius-pseudoprime.md)
+- [Lucas pseudoprimes](is-lucas-pseudoprime.md)
+- [Strong Lucas pseudoprimes](is-strong-lucas-pseudoprime.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Rank of appearance in a Lucas sequence](lucas-rank-of-appearance.md)
 
 ## Sources
 

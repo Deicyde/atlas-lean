@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.fib_quadratic_linear_coeff_isInt_iff
 ---
 
-# Fib quadratic linear coeff is Int iff
+# Integer sequences with quadratic and linear Fibonacci coefficients
 
-The rational sequence `w_n = (a n² + b n + c) F_n + (d n + e) F_{n-1}` is an
-integer sequence if and only if `e` is an integer and, for some integers
-`z₁, …, z₄` (then `z₁ = w₁`, `z₂ = w₂ - e`, `z₃ = w₃ - e`, `z₄ = w₄ - 2e`), the
-coefficients are given by formula (2.15):
-`a = (2z₁ - z₂ - 2z₃ + z₄) / 10`, `b = (-56z₁ - 7z₂ + 66z₃ - 23z₄) / 50`,
-`c = (48z₁ + 6z₂ - 28z₃ + 9z₄) / 25`, `d = (-6z₁ + 18z₂ - 9z₃ + 2z₄) / 25`.
-Here `F_{n-1}` is written as `F_{n+1} - F_n`.
+**Integer sequences with quadratic and linear Fibonacci coefficients.** Let $F_n$ be the
+$n$-th Fibonacci number and put $F_{-1} = 1$, so that $F_{n-1} = F_{n+1} - F_n$ for every
+$n \ge 0$. For rational numbers $a, b, c, d, e$, the number
+$w_n = (an^2 + bn + c)F_n + (dn + e)F_{n-1}$ is an integer for every natural number $n$ if and
+only if $e$ is an integer and there are integers $z_1, z_2, z_3, z_4$ with
+$a = (2z_1 - z_2 - 2z_3 + z_4)/10$, $b = (-56z_1 - 7z_2 + 66z_3 - 23z_4)/50$,
+$c = (48z_1 + 6z_2 - 28z_3 + 9z_4)/25$ and $d = (-6z_1 + 18z_2 - 9z_3 + 2z_4)/25$.
+
+The integers $z_i$ are then determined by the sequence: $z_1 = w_1$, $z_2 = w_2 - e$,
+$z_3 = w_3 - e$ and $z_4 = w_4 - 2e$.
 
 ## Depends on
 

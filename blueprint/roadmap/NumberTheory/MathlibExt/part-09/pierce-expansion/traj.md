@@ -5,10 +5,13 @@ statement: formalized
 lean: PierceExpansion.traj
 ---
 
-# Traj
+# Pierce remainder trajectory
 
-Pierce remainder trajectory: `traj 0 = a`, `traj (j+1) = n % traj j`,
-absorbing at `0`.
+**Pierce remainder trajectory.** For natural numbers $n$ and $a$, the Pierce remainder
+trajectory of $a$ with respect to $n$ is the sequence $t_0, t_1, t_2, \dots$ of natural numbers
+with $t_0 = a$ and, for every $j \ge 0$, $t_{j+1} = 0$ if $t_j = 0$, while if $t_j \ne 0$ then
+$t_{j+1} = n \bmod t_j$ is the remainder of $n$ modulo $t_j$. Once the trajectory reaches $0$ it
+stays there.
 
 ## Depends on
 

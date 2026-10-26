@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.div_log_add_one_le_primeCounting
 ---
 
-# Div log add one le prime Counting
+# Lower bound for the prime-counting function at primes $p \ge 19$
 
-For every prime `p ≥ 19`, `π(p) ≥ p / log p + 1`.
+**Lower bound for the prime-counting function at primes $p \ge 19$.** For every prime
+$p \ge 19$, the number $\pi(p)$ of primes at most $p$ satisfies $\pi(p) \ge p/\log p + 1$,
+where $\log$ is the natural logarithm.
 
 ## Depends on
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.binomidAverage_one
 
 ## Depends on
 
-- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
+- [Initial averages of a sequence](../../part-02/binomid-index-wanted/binomid-average.md)
 
 ## Sources
 

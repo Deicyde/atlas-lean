@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.not_isEulerPrime_of_mod_165_eq
 ---
 
-# Not is Euler Prime of mod 165 eq
+# Primes congruent to $-1$ modulo $165$ are not Euler primes
 
-A prime `q ≡ -1 (mod 165)` is not the special (Euler) prime of any odd perfect
-number.
+**Primes congruent to $-1$ modulo $165$ are not Euler primes.** For all natural numbers
+$q$ and $N$ with $q \equiv -1 \pmod{165}$, $q$ is not an Euler prime of $N$. In particular, no
+prime $q \equiv -1 \pmod{165}$ is the Euler prime of an odd perfect number.
 
 ## Depends on
 

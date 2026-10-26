@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fib_add_14475_not_prime
 ---
 
-# Fib add 14475 not prime
+# Fibonacci numbers shifted by $14475$ are never prime
 
-`F_n + 14475` is composite for every `n ≥ 0`.
+**Fibonacci numbers shifted by $14475$ are never prime.** Let $F_n$ be the $n$-th
+Fibonacci number, with $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$. For every
+natural number $n$, the number $F_n + 14475$ is not prime.
 
 ## Depends on
 

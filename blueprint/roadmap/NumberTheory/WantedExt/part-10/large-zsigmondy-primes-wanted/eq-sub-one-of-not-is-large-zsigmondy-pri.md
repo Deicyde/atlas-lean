@@ -12,7 +12,7 @@ that is not a large Zsigmondy prime satisfies `n = q - 1`.
 
 ## Depends on
 
-- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 - [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
 
 ## Sources

@@ -7,11 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.pell_cassini_identity
 ---
 
-# Pell Cassini Identity
+# Cassini's identity for Pell numbers
 
-Cassini's identity for Pell numbers: `P (k-1) * P (k+1) = P k ^ 2 + (-1)^k`
-for `k ≥ 1`, with the Pell sequence abstracted by its initial values and
-recurrence; the casts to `ℤ` carry the signs.
+**Cassini's identity for Pell numbers.** Let $(P_n)_{n \ge 0}$ be the Pell numbers, the
+natural numbers with $P_0 = 0$, $P_1 = 1$ and $P_{n+2} = 2P_{n+1} + P_n$ for every $n \ge 0$.
+Then for every natural number $k \ge 1$,
+
+$$
+P_{k-1} P_{k+1} = P_k^2 + (-1)^k.
+$$
 
 ## Depends on
 

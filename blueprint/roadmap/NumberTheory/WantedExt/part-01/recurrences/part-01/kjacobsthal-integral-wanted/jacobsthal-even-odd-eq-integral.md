@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.jacobsthal_even_odd_eq_integral
 ---
 
-# Jacobsthal even odd eq integral
+# Integral formulas for even- and odd-indexed Jacobsthal numbers
 
-Jacobsthal case `k = 1`: `J_{2n} = (n/2ⁿ) ∫_{-1}^{1} (5 + 3x)^{n-1} dx` and
-`J_{2n+1} = 2^{-(n+1)} ∫_{-1}^{1} (n + 5 + 3(n+1)x)(5 + 3x)^{n-1} dx`.
+**Integral formulas for even- and odd-indexed Jacobsthal numbers.** Let $J_n = U_n(1, -2)$ be
+the Jacobsthal numbers ($J_0 = 0$, $J_1 = 1$, $J_{n+2} = J_{n+1} + 2J_n$). For every natural
+number $n$, in $\mathbb{R}$,
+
+$$
+J_{2n} = \frac{n}{2^n} \int_{-1}^{1} (5 + 3x)^{n-1}\,dx \quad\text{and}\quad
+J_{2n+1} = \frac{1}{2^{n+1}} \int_{-1}^{1} \bigl(n + 5 + 3(n+1)x\bigr)(5 + 3x)^{n-1}\,dx,
+$$
+
+where $(5 + 3x)^{n-1}$ is an integer power (for $n = 0$ it is $(5 + 3x)^{-1}$).
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

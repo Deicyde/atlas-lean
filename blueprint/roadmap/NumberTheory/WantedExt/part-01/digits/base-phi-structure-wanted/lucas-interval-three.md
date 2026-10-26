@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lucasInterval_three
 ---
 
-# Lucas Interval three
+# Endpoints of the Lucas interval $\Lambda_3$
 
-`Λ_3 = [5, 6]`.
+**Endpoints of the Lucas interval $\Lambda_3$.** The Lucas interval $\Lambda_3$ has left end
+$5$ and right end $6$, that is, $\Lambda_3 = [5, 6]$.
 
 ## Depends on
 
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

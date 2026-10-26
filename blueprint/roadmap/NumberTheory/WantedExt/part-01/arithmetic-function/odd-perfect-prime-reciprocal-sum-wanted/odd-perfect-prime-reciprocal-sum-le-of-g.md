@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_primeReciprocalSum_le_of_gcd_fifteen
 ---
 
-# Odd Perfect prime Reciprocal Sum le of gcd fifteen
+# Cohen–Hagis–Suryanarayana bounds on the prime reciprocal sum of an odd perfect number
 
-(Cohen, Hagis, Suryanarayana) Upper bounds for `T(n)` for an odd perfect number `n`,
-by `gcd(15, n)`: `0.693148` for `1`, `0.657304` for `3`, `0.678036` for `5`, and
-`0.673770` for `15`. The table's lower bounds are omitted.
+**Cohen–Hagis–Suryanarayana bounds on the prime reciprocal sum of an odd perfect number.**
+Let $n$ be an odd perfect number and $T(n) = \sum_{p \mid n} 1/p$, the sum over the primes $p$
+dividing $n$. If $\gcd(15, n) = 1$ then $T(n) \le 0.693148$; if $\gcd(15, n) = 3$ then
+$T(n) \le 0.657304$; if $\gcd(15, n) = 5$ then $T(n) \le 0.678036$; and if $\gcd(15, n) = 15$
+then $T(n) \le 0.673770$.
+
+The source table also gives lower bounds, which are not stated here.
 
 ## Depends on
 

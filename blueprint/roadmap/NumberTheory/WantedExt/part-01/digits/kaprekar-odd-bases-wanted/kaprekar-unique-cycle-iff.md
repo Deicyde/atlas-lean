@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kaprekar_unique_cycle_iff
 ---
 
-# Kaprekar unique cycle iff
+# Odd bases with a unique Kaprekar cycle
 
-For odd `B ≥ 3`, `K_B` has a unique terminal cycle on `X_B` (some periodic point `c`
-whose orbit contains every periodic point of `X_B`) if and only if `B ∈ {3, 5, 7}`.
+**Odd bases with a unique Kaprekar cycle.** Let $B \ge 3$ be odd, let $K_B$ be the
+four-digit Kaprekar map and $X_B$ its state space. There is a point $c \in X_B$, periodic for
+$K_B$, whose forward orbit $\{K_B^k(c) : k \ge 0\}$ contains every point of $X_B$ that is
+periodic for $K_B$, if and only if $B \in \{3, 5, 7\}$.
+
+That is, $K_B$ has a unique terminal cycle on $X_B$ exactly when $B$ is $3$, $5$ or $7$.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
 
 ## Sources
 

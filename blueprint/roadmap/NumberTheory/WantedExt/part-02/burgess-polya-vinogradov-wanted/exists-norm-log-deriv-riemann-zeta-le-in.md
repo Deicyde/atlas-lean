@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_norm_logDeriv_riemannZeta_le_inv_norm_add
 ---
 
-# Exists norm log Deriv riemann Zeta le inv norm add
+# Logarithmic derivative of the zeta function near its pole
 
-Near the pole, the logarithmic derivative of the Riemann zeta function satisfies
-`|ζ'/ζ(s)| ≤ 1/|s - 1| + O(1)` uniformly for `s = 1 + α + iτ` with `α → 0⁺` and `|τ| ≤ 1/2`;
-"`α ↘ 0`" is read as: for all `0 < α < α₀`, with one constant `C`.
+**Logarithmic derivative of the zeta function near its pole.** Let $\zeta$ be the Riemann zeta
+function. There are real numbers $C$ and $\alpha_0 > 0$ such that for all real $\alpha$ and $\tau$
+with $0 < \alpha < \alpha_0$ and $|\tau| \le 1/2$, the point $s = 1 + \alpha + i\tau$ satisfies
+$|\zeta'(s)/\zeta(s)| \le 1/|s - 1| + C$.
+
+This is the estimate $|\zeta'(s)/\zeta(s)| \le 1/|s - 1| + O(1)$ as $\alpha \to 0^+$, uniformly
+in $|\tau| \le 1/2$.
 
 ## Depends on
 

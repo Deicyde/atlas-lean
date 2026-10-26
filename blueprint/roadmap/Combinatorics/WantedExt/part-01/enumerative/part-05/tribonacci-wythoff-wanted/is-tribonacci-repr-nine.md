@@ -21,7 +21,7 @@ $9 = T_6 + T_4 = 7 + 2$, the paper's example $(9)_T = 1010$.
 
 ## Proof depends on
 
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

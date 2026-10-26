@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.prime_mul_mem_lucasPeriodSet
 ---
 
-# Prime mul mem lucas Period Set
+# Multiplying a member of $S(U)$ by one of its prime factors
 
-Theorem 2.3: if `n ∈ S(U)` and the prime `ℓ` divides `n`, then `ℓ n ∈ S(U)`; if moreover
-`a + b - 1 ≠ 0` and `gcd(a + b - 1, n) = 1`, or `a + b - 1 = 0` and `gcd(-b - 1, n) = 1`,
-then `ℓ n ∈ S'(U)` and `A_W(ℓ n)` is an integer for all recurrences `W(a, b)`.
+**Multiplying a member of $S(U)$ by one of its prime factors.** Let $P, Q$ be integers with
+$Q \ne 0$, let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and let $S(U)$ be
+the set of positive integers $n$ coprime to $Q$ whose period $\pi_U(n)$ modulo $n$ divides $n$. If
+$n \in S(U)$ and $\ell$ is a prime dividing $n$, then $\ell n \in S(U)$. If moreover
+$a + b - 1 \ne 0$ and $\gcd(a + b - 1, n) = 1$, or $a + b - 1 = 0$ and $\gcd(-b - 1, n) = 1$, then
+$\ell n$ lies in $S'(U)$, the set of $t \in S(U)$ with $t \mid U_1 + \dots + U_t$, and $\ell n$
+divides $w_1 + \dots + w_{\ell n}$ for every integer sequence $w$ with
+$w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

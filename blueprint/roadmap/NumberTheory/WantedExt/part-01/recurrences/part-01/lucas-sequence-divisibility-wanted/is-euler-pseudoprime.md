@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsEulerPseudoprime
 ---
 
-# Is Euler Pseudoprime
+# Euler pseudoprime
 
-Euler pseudoprime to the base `a`: odd composite `N`, `gcd(a, N) = 1`, and
-`a^{(N-1)/2} ≡ (a/N) (mod N)`. The source states the definition for positive odd `a` and applies
-it to the base `Q` (for example `Q = -1` in Remark 3.8); here `a` is any integer.
+**Euler pseudoprime.** Let $a$ be an integer. A natural number $N$ is an Euler pseudoprime to
+the base $a$ when $N$ is odd and composite, $\gcd(a, N) = 1$, and
+$a^{(N-1)/2} \equiv (a/N) \pmod N$, where $(a/N)$ is the Jacobi symbol.
+
+The source states the definition for positive odd $a$ and applies it to the base $Q$ (for
+example $Q = -1$ in Remark 3.8); here $a$ is any integer.
 
 ## Depends on
 

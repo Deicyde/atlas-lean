@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasPeriodOrbitIndex_one
 ---
 
-# Lucas Period Orbit Index one
+# The orbit index of $1$ is zero
 
-`ω(1) = 0`.
+**The orbit index of $1$ is zero.** For every Lucas sequence $U = U(P, Q)$, the orbit index
+of $1$ is $\omega(1) = 0$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas Period Orbit Index](lucas-period-orbit-index.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [The orbit index $\omega(n)$](lucas-period-orbit-index.md)
 
 ## Proof depends on
 
-- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
-- [Lucas Period Orbit Closes one zero](lucas-period-orbit-closes-one-zero.md)
+- [Closing of the period orbit](lucas-period-orbit-closes.md)
+- [The period orbit of $1$ closes at step $0$](lucas-period-orbit-closes-one-zero.md)
 
 ## Sources
 

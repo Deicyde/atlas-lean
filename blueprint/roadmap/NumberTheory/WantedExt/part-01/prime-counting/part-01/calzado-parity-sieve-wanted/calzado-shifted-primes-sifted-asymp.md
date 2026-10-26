@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.calzado_shifted_primes_sifted_asymp
 ---
 
-# Calzado shifted primes sifted asymp
+# Order of magnitude of the sifted shifted primes
 
-Lemma 6, equation (15): for `a` even and nonzero there are constants
-`0 < C₁ < C₂` with `C₁ x / (log x)^2 < S(A, P, x^{1/5}) < C₂ x / (log x)^2`
-for all sufficiently large `x`, where `A = {n + a : n ≤ x prime}`.
+**Order of magnitude of the sifted shifted primes.** Let $a$ be a nonzero even integer, and
+for real $x$ let $S(x)$ be the number of primes $n \le x$ such that no prime $q < x^{1/5}$ divides
+$n + a$. There are constants $0 < C_1 < C_2$ such that
+$C_1 x / (\log x)^2 < S(x) < C_2 x / (\log x)^2$ for all sufficiently large $x$.
 
 ## Depends on
 

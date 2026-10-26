@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.beatty_floor_fiber_card_eq_add_indicator
 ---
 
-# Beatty floor fiber card eq add indicator
+# Multiplicities of $\lfloor n\alpha\rfloor$ are $k$ plus the indicator of a Beatty set
 
-For irrational `α` with `1 / (k + 1) < α < 1 / k`, the sequence `⌊nα⌋` (`n ≥ 1`) is
-the sortjoin of `k` copies of the non-negative integers with a Beatty set `D`: every
-non-negative integer `t` is attained `k` times, plus one more time exactly when `t ∈ D`.
+**Multiplicities of $\lfloor n\alpha\rfloor$ are $k$ plus the indicator of a Beatty set.** Let
+$k$ be a positive integer and let $\alpha$ be an irrational number with
+$1/(k + 1) < \alpha < 1/k$. Then there is a real number $\delta > 0$ such that, writing $D$ for
+the set of the numbers $\lfloor m\delta\rfloor$ for positive integers $m$, every non-negative
+integer $t$ equals $\lfloor n\alpha\rfloor$ for exactly $k + 1$ positive integers $n$ if $t \in D$,
+and for exactly $k$ positive integers $n$ if $t \notin D$.
 
 ## Depends on
 

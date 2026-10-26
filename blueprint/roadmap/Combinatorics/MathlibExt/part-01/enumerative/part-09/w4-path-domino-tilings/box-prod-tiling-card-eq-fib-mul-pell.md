@@ -26,7 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Sellers' domino tiling theorem](box-prod-tiling-card-eq-fib-mul-pell-num.md)
-- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
+- [Pell numbers](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

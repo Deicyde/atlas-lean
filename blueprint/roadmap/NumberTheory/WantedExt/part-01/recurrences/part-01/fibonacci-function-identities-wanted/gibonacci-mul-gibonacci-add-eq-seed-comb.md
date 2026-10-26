@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gibonacci_mul_gibonacci_add_eq_seed_combination
 ---
 
-# Gibonacci mul gibonacci add eq seed combination
+# A sum of two gibonacci products in terms of the seeds
 
-For gibonacci sequences `G`, `H` and integers `k`, `s`:
-`H_(k+1) G_(s+1) + H_k G_s = G_0 H_(k+s) + G_1 H_(k+s+1)`.
+**A sum of two gibonacci products in terms of the seeds.** Let
+$G, H : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$ and $j \mapsto H_j$, satisfy
+$G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. Then for all
+integers $k$ and $s$,
+
+$$
+H_{k+1} G_{s+1} + H_k G_s = G_0 H_{k+s} + G_1 H_{k+s+1}.
+$$
 
 ## Depends on
 

@@ -5,9 +5,9 @@ statement: formalized
 lean: MetaMathlibExt.ten_pow_fifteen_hundred_lt_of_oddPerfect
 ---
 
-# Ten pow fifteen hundred lt of odd Perfect
+# Ochem–Rao lower bound for odd perfect numbers
 
-Ochem and Rao (2012), quoted as Lemma 1 (ix): every odd perfect number exceeds `10 ^ 1500`.
+**Ochem–Rao lower bound for odd perfect numbers.** Every odd perfect number exceeds $10^{1500}$.
 
 ## Depends on
 

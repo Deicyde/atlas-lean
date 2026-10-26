@@ -13,8 +13,8 @@ and `φ'` exchanged.
 
 ## Depends on
 
-- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
-- [Lucasnomial](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
+- [Nondegenerate Lucas parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Lucasnomial coefficients](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 

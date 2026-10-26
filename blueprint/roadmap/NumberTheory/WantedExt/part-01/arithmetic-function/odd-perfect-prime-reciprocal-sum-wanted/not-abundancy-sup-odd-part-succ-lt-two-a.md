@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.not_abundancySup_oddPart_succ_lt_two_and_two_lt
 ---
 
-# Not abundancy Sup odd Part succ lt two and two lt
+# No odd prime $q$ lifts $H$ of the odd part of $q + 1$ across $2$
 
-There is no odd prime `q` with `H(odd(q+1)) < 2` and `H(q · odd(q+1)) > 2`, where
-`odd(m) = ordCompl[2] m` is the largest odd divisor of `m`. The hypothesis `q` odd is
-added: the printed statement fails at `q = 2`.
+**No odd prime $q$ lifts $H$ of the odd part of $q + 1$ across $2$.** For a positive integer
+$m$ write $H(m) = \prod_{p \mid m} p/(p-1)$, the product over the prime divisors of $m$, and
+$\operatorname{odd}(m)$ for the largest odd divisor of $m$. There is no odd prime $q$ with
+$H(\operatorname{odd}(q+1)) < 2$ and $H(q \cdot \operatorname{odd}(q+1)) > 2$.
+
+For $q = 2$ the conclusion fails: $H(3) = 3/2 < 2$ and $H(6) = 3 > 2$.
 
 ## Depends on
 

@@ -6,13 +6,13 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.mul_nines_modEq_eleven
 ---
 
-# Lemma 4
+# A product congruent to $11$ modulo a power of ten
 
-**Lemma 4**: the product of the integer consisting
-of `r` digits `9` followed by `89` with the integer
-consisting of `r + 2` digits `9` ends with `r` digits
-`0` followed by `11`; that is, it is congruent to `11`
-modulo `10^{r+2}`.
+**A product congruent to $11$ modulo a power of ten.** For every natural number $r$, let
+$a = (10^r - 1) \cdot 100 + 89$, the integer whose decimal digits are $r$ nines followed by $89$,
+and let $b = 10^{r+2} - 1$, the integer whose decimal digits are $r + 2$ nines. Then the
+remainder of $ab$ modulo $10^{r+2}$ is $11$; that is, the last $r + 2$ decimal digits of $ab$ are
+$r$ zeros followed by $11$.
 
 ## Depends on
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fib_eq_integral_one_add_mul_sqrt_five
 ---
 
-# Fib eq integral one add mul sqrt five
+# Stewart's integral formula for the Fibonacci numbers
 
-Corollary 5.1 (Stewart): `F_n = (n / 2^n) ∫_{-1}^{1} (1 + y √5)^{n-1} dy`. The corollary
-states no range; it is stated for `n ≥ 1`, where the exponent `n - 1` is a natural number.
+**Stewart's integral formula for the Fibonacci numbers.** For every integer $n \ge 1$, the
+$n$-th Fibonacci number $F_n$ (with $F_0 = 0$ and $F_1 = 1$) satisfies
+
+$$F_n = \frac{n}{2^n} \int_{-1}^{1} \left(1 + y\sqrt{5}\right)^{n-1} dy.$$
 
 ## Depends on
 

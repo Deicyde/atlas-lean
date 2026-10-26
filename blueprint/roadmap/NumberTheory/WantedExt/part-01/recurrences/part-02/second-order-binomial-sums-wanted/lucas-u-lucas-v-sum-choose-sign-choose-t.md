@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_lucasV_sum_choose_sign_choose_two
 ---
 
-# Lucas U lucas V sum choose sign choose two
+# Binomial sums with signs $(-1)^{\binom{k}{2}}$ and Lucas sequences
 
-`∑_{k=0}^{4n+1} binom(4n+1, k) (-1)^{binom(k, 2)} U_k V_{4n+1-k} =
-∑_{k=0}^{4n+1} binom(4n+1, k) (-1)^{binom(k, 2)} V_k U_{4n+1-k} = (-1)^n 2^{2n+1} U_{4n+1}`.
+**Binomial sums with signs $(-1)^{\binom{k}{2}}$ and Lucas sequences.** Let $p$ be an integer
+and let $U_n$ and $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$,
+$U_1 = 1$, $V_0 = 2$, $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every
+natural number $n$,
+
+$$\sum_{k=0}^{4n+1} (-1)^{\binom{k}{2}} \binom{4n+1}{k} U_k V_{4n+1-k} = (-1)^n 2^{2n+1} U_{4n+1}$$
+
+and
+
+$$\sum_{k=0}^{4n+1} (-1)^{\binom{k}{2}} \binom{4n+1}{k} V_k U_{4n+1-k} = (-1)^n 2^{2n+1} U_{4n+1}.$$
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

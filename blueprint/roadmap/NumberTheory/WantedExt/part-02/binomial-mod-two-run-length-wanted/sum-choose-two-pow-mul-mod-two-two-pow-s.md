@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_two_pow_mul_mod_two_two_pow_sub_one
 ---
 
-# Lemma 2
+# Binomial parity sums at one less than a power of two
 
-**Lemma 2.** For `T_m(n) = ∑_{k=0}^{n} [binom(2^m k, n + k) binom(n, k) mod 2]` and
-`n = 2^ℓ - 1`, `T_m(n) = 1` if `ℓ ≡ 0 (mod m)` and `0` otherwise. The paper takes `m ≥ 2`; the
-statement holds for every `m` (with `ℓ ≡ 0 (mod 0)` meaning `ℓ = 0`).
+**Binomial parity sums at one less than a power of two.** For all natural numbers $m$ and
+$\ell$, with $n = 2^\ell - 1$, the sum
+
+$$\sum_{k=0}^{n} \left( \binom{2^m k}{n + k} \binom{n}{k} \bmod 2 \right)$$
+
+equals $1$ if $m$ divides $\ell$, and $0$ otherwise.
+
+The paper takes $m \ge 2$; the statement holds for every $m$, where $0$ divides $\ell$ only
+when $\ell = 0$.
 
 ## Depends on
 

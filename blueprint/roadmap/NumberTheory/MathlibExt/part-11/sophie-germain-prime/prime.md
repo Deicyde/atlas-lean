@@ -7,13 +7,13 @@ proof: formalized
 lean: Nat.IsSophieGermainPrime.prime
 ---
 
-# Prime
+# Sophie Germain primes are prime
 
-A Sophie Germain prime is prime.
+**Sophie Germain primes are prime.** If $p$ is a Sophie Germain prime, then $p$ is prime.
 
 ## Depends on
 
-- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
+- [Sophie Germain primes](is-sophie-germain-prime.md)
 
 ## Sources
 

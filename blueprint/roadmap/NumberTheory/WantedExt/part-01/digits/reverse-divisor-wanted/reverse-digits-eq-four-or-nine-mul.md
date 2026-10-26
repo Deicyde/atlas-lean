@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.reverseDigits_eq_four_or_nine_mul
 ---
 
-# Theorem 1
+# Reverse divisors have quotient $4$ or $9$
 
-**Theorem 1**, quotient classification: the quotient
-of a reverse divisor is either `4` or `9`.
+**Reverse divisors have quotient $4$ or $9$.** If $n$ is a reverse divisor, then the decimal
+reversal of $n$ equals $4n$ or $9n$.
 
 ## Depends on
 
-- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse divisor](is-reverse-divisor.md)
 - [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources

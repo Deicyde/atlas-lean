@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.primaryFiveCarmichael_pairs_of_primeKTuples
 ---
 
-# Primary Five Carmichael pairs of prime KTuples
+# Primary and secondary $5$-Carmichael numbers from prime quadruples
 
-The prime `k`-tuples conjecture implies infinitely many `x ≥ 0` with `p = 30x + 17`, `q = 30x
-+ 19`, `r = 180x + 107`, `s = 180x + 109` all prime; for every such `x`, `m = pqr` and `n = pqs`
-are primary `5`-Carmichael numbers and `N = pqrs` is a secondary `5`-Carmichael number. The prime
-`k`-tuples conjecture (the paper's Conjecture 1) is the hypothesis `hk`: for linear
-forms `aᵢ x + bᵢ` with `aᵢ ≥ 1` whose product has no fixed prime divisor, infinitely many `x`
-make every form a (positive) prime.
+**Primary and secondary $5$-Carmichael numbers from prime quadruples.** Assume the prime
+$k$-tuples conjecture (the paper's Conjecture 1) in the following form: for every finite list
+of linear forms $a_i x + b_i$ with integers $a_i \ge 1$ and $b_i$ such that for every prime
+$\ell$ there is an integer $x$ with $\ell \nmid \prod_i (a_i x + b_i)$, there are infinitely
+many natural numbers $x$ at which every $a_i x + b_i$ is a positive prime.
+For a natural number $x$ put $p = 30x + 17$, $q = 30x + 19$, $r = 180x + 107$ and
+$s = 180x + 109$. Then, first, for every natural number $x$ with $p$, $q$, $r$ and $s$ all
+prime, $pqr$ and $pqs$ are primary $5$-Carmichael numbers and $pqrs$ is a secondary
+$5$-Carmichael number; and second, there are infinitely many natural numbers $x$ with $p$,
+$q$, $r$ and $s$ all prime.
 
 ## Depends on
 
-- [Is Primary DCarmichael](is-primary-dcarmichael.md)
-- [Is Secondary DCarmichael](is-secondary-dcarmichael.md)
+- [Primary $D$-Carmichael number](is-primary-dcarmichael.md)
+- [Secondary $D$-Carmichael number](is-secondary-dcarmichael.md)
 
 ## Sources
 

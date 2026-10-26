@@ -14,7 +14,7 @@ expansion of `n / d` if and only if
 
 ## Depends on
 
-- [Is Odd Greedy Choice](../../../MathlibExt/part-08/odd-greedy-choice/is-odd-greedy-choice.md)
+- [Odd greedy choice](../../../MathlibExt/part-08/odd-greedy-choice/is-odd-greedy-choice.md)
 
 ## Sources
 

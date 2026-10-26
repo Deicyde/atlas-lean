@@ -15,12 +15,12 @@ $m$-th triangular ($3$-gonal) number, so that $T_0 = 0$.
 
 ## Depends on
 
-- [Polygonal Number](../../part-09/polygonal-number/polygonal-number.md)
+- [Polygonal numbers](../../part-09/polygonal-number/polygonal-number.md)
 
 ## Proof depends on
 
 - [Legendre's three-square theorem](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
-- [Polygonal Number three](../../part-09/polygonal-number/polygonal-number-three.md)
+- [Closed form of the triangular numbers](../../part-09/polygonal-number/polygonal-number-three.md)
 
 ## Sources
 

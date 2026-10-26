@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.log_factorialProductConstant_one
 ---
 
-# Log factorial Product Constant one
+# Logarithm of the first factorial product constant
 
-`log F_1 = (1/4) log(2π) + 1/12 - 2 log A`, i.e. `F_1 = (2π)^{1/4} e^{1/12} A^{-2}`.
+**Logarithm of the first factorial product constant.** The factorial product constant $F_1$
+satisfies $\log F_1 = \frac{1}{4} \log(2\pi) + \frac{1}{12} - 2 \log A$, where $A$ is the
+Glaisher–Kinkelin constant.
+
+Equivalently, $F_1 = (2\pi)^{1/4} e^{1/12} A^{-2}$.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

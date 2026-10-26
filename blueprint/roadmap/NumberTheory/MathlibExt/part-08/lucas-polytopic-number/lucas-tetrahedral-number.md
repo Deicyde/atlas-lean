@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasTetrahedralNumber
 ---
 
-# Lucas Tetrahedral Number
+# Lucas tetrahedral numbers
 
-The Lucas analogue of the `n`-th tetrahedral number.
+**Lucas tetrahedral numbers.** For nondegenerate Lucas parameters $(s, t)$ and a natural
+number $n$, the $n$-th Lucas tetrahedral number is the Lucasnomial coefficient
+$\binom{n+2}{3}_{s,t}$.
 
 ## Depends on
 
-- [Lucas Parameters](lucas-parameters.md)
+- [Nondegenerate Lucas parameters](lucas-parameters.md)
 
 ## Proof depends on
 
-- [Lucasnomial](lucasnomial.md)
+- [Lucasnomial coefficients](lucasnomial.md)
 
 ## Sources
 

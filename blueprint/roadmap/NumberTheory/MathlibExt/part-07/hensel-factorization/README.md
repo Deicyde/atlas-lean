@@ -4,5 +4,5 @@ navigation: module
 
 # Hensel Factorization
 
-- [Exists monic coprime factorization of is Adic Complete](exists-monic-coprime-factorization-of-is.md)
-- [Exists monic coprime factorization of is Adic Complete nat Degree](exists-monic-coprime-factorization-of-is-2.md)
+- [Hensel lifting of monic coprime factorizations](exists-monic-coprime-factorization-of-is.md)
+- [Hensel lifting of monic coprime factorizations, with degrees](exists-monic-coprime-factorization-of-is-2.md)

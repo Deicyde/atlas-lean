@@ -6,36 +6,42 @@ proof: formalized
 lean: SumSquares.x2y2_count
 ---
 
-# X2y2 count
+# Elements of $\mathbb{Z}(\sqrt{-2})$ of norm $t$ counted by a divisor sum
 
-The `x ^ 2 + 2 * y ^ 2` representation count: representations of `t ≠ 0`
-number twice the divisor sum of `χ₋₂`.
+**Elements of $\mathbb{Z}[\sqrt{-2}]$ of norm $t$ counted by a divisor sum.** For every
+positive integer $t$, the number of elements $a + b\sqrt{-2}$ of $\mathbb{Z}[\sqrt{-2}]$, with
+$a, b$ integers, of norm $a^2 + 2b^2 = t$ equals $2 \sum_{d \mid t} \chi(d)$, where $d$ runs over
+the positive divisors of $t$ and $\chi$ is the character modulo $8$ given by $\chi(d) = 1$ if
+$d \equiv 1, 3 \pmod 8$, $\chi(d) = -1$ if $d \equiv 5, 7 \pmod 8$, and $\chi(d) = 0$ if $d$ is
+even.
+
+Equivalently, this counts the integer pairs $(x, y)$ with $x^2 + 2y^2 = t$.
 
 ## Depends on
 
-- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
-- [Rep X2 Y2 Count](rep-x2-y2-count.md)
+- [Divisor sum of the character $\chi_{-2}$](div-chi-neg2-sum.md)
+- [Number of elements of $\mathbb{Z}(\sqrt{-2})$ of a given norm](rep-x2-y2-count.md)
 
 ## Proof depends on
 
-- [Div Chi Neg2 Sum mul of coprime](div-chi-neg2-sum-mul-of-coprime.md)
-- [Div Chi Neg2 Sum one](div-chi-neg2-sum-one.md)
-- [Div Chi Neg2 Sum prime pow inert](div-chi-neg2-sum-prime-pow-inert.md)
-- [Div Chi Neg2 Sum prime pow split](div-chi-neg2-sum-prime-pow-split.md)
-- [Div Chi Neg2 Sum prime pow two](div-chi-neg2-sum-prime-pow-two.md)
-- [Rep X2 Y2 Count inert pow](rep-x2-y2-count-inert-pow.md)
-- [Rep X2 Y2 Count split pow](rep-x2-y2-count-split-pow.md)
-- [Rep X2 Y2 Count two pow](rep-x2-y2-count-two-pow.md)
-- [Div def'](../zsqrtd-neg-two-euclidean/div-def.md)
-- [Nat Abs norm mod lt'](../zsqrtd-neg-two-euclidean/nat-abs-norm-mod-lt.md)
-- [Norm le norm mul left'](../zsqrtd-neg-two-euclidean/norm-le-norm-mul-left.md)
-- [Unit Val](../zsqrtd-neg-two-primes/unit-val.md)
-- [Unit Val Inv](../zsqrtd-neg-two-primes/unit-val-inv.md)
-- [Unit Val complete](../zsqrtd-neg-two-primes/unit-val-complete.md)
-- [Unit Val inj](../zsqrtd-neg-two-primes/unit-val-inj.md)
-- [Unit Val mul unit Val Inv](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
-- [Zsqrtd neg two split](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split.md)
-- [Card norm eq mul of prime pow](../zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
+- [Multiplicativity of the divisor sum of $\chi_{-2}$](div-chi-neg2-sum-mul-of-coprime.md)
+- [The divisor sum of $\chi_{-2}$ at $1$](div-chi-neg2-sum-one.md)
+- [The divisor sum of $\chi_{-2}$ at powers of a prime $q \equiv 5, 7 \pmod 8$](div-chi-neg2-sum-prime-pow-inert.md)
+- [The divisor sum of $\chi_{-2}$ at powers of a prime $p \equiv 1, 3 \pmod 8$](div-chi-neg2-sum-prime-pow-split.md)
+- [The divisor sum of $\chi_{-2}$ at powers of $2$](div-chi-neg2-sum-prime-pow-two.md)
+- [Elements of $\mathbb{Z}(\sqrt{-2})$ whose norm is a power of an inert prime](rep-x2-y2-count-inert-pow.md)
+- [Elements of $\mathbb{Z}(\sqrt{-2})$ whose norm is a power of a split prime](rep-x2-y2-count-split-pow.md)
+- [Elements of $\mathbb{Z}(\sqrt{-2})$ whose norm is a power of $2$](rep-x2-y2-count-two-pow.md)
+- [Rounding division on $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/div-def.md)
+- [The remainder is smaller than the divisor, in absolute norm](../zsqrtd-neg-two-euclidean/nat-abs-norm-mod-lt.md)
+- [Multiplying by a nonzero element does not decrease the norm in $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-euclidean/norm-le-norm-mul-left.md)
+- [Enumeration of the units of ℤ(√−2)](../zsqrtd-neg-two-primes/unit-val.md)
+- [Inverses of the enumerated units of ℤ(√−2)](../zsqrtd-neg-two-primes/unit-val-inv.md)
+- [Every unit of ℤ(√−2) is enumerated](../zsqrtd-neg-two-primes/unit-val-complete.md)
+- [The enumeration of the units of ℤ(√−2) is injective](../zsqrtd-neg-two-primes/unit-val-inj.md)
+- [Each enumerated unit of ℤ(√−2) times its listed inverse is one](../zsqrtd-neg-two-primes/unit-val-mul-unit-val-inv.md)
+- [Primes $p \equiv 1, 3 \pmod 8$ are norms of primes of $\mathbb{Z}(\sqrt{-2})$](../zsqrtd-neg-two-primes/zsqrtd-neg-two-split.md)
+- [Norm counts determined by prime powers](../zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
 
 ## Sources
 

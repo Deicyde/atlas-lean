@@ -16,9 +16,9 @@ extended to `n = 0`.
 
 ## Depends on
 
-- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Nondegenerate Lucas parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
 - [Lucas Derivative](lucas-derivative.md)
-- [Lucas Factorial](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-factorial.md)
+- [Factorial of Lucas brackets](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-factorial.md)
 
 ## Sources
 

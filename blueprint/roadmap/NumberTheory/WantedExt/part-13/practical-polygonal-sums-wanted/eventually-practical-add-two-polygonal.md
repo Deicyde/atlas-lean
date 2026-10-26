@@ -12,8 +12,8 @@ For `s > 3`, every sufficiently large positive integer is a practical number plu
 
 ## Depends on
 
-- [Practical Number](../../../MathlibExt/part-09/is-practical-number.md)
-- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
+- [Practical number](../../../MathlibExt/part-09/is-practical-number.md)
+- [Polygonal numbers](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

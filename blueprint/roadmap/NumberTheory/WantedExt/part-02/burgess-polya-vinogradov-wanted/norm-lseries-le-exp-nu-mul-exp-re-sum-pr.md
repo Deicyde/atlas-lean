@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.norm_LSeries_le_exp_nu₂_mul_exp_re_sum_primes
 ---
 
-# Norm LSeries le exp nu₂ mul exp re sum primes
+# Bound for a Dirichlet series by its prime sum
 
-For a completely multiplicative arithmetic function `g` with `|g(n)| ≤ 1` and its Dirichlet series
-`F(s) = ∑ g(n) n^{-s}`, for `Re s > 1`,
-`|F(s)| ≤ exp(ν₂) · exp(Re ∑_p g(p)/p^s)` with `ν₂ ≤ 0.316`. The paper's `ν₂ = γ - M` is written
-here as its prime-series form `∑_p (-log(1 - 1/p) - 1/p)` (the identity used in its proof).
+**Bound for a Dirichlet series by its prime sum.** Let $g$ be a complex-valued completely
+multiplicative arithmetic function with $g(1) = 1$ and $|g(n)| \le 1$ for every $n$, and let
+$F(s) = \sum_{n \ge 1} g(n) n^{-s}$ be its Dirichlet series. Let
+$\nu_2 = \sum_p (-\log(1 - 1/p) - 1/p)$, summed over all primes $p$. Then $\nu_2 \le 0.316$, and
+for every complex $s$ with $\operatorname{Re} s > 1$,
+$|F(s)| \le e^{\nu_2} \exp(\operatorname{Re} \sum_p g(p) p^{-s})$, where $p$ runs over the primes.
+
+In the paper $\nu_2 = \gamma - M$, with $\gamma$ the Euler–Mascheroni constant and $M$ the
+Meissel–Mertens constant; the prime series above is the form of $\nu_2$ used in its proof.
 
 ## Depends on
 

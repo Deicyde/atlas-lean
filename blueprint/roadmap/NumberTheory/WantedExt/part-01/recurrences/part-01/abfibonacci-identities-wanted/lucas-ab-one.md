@@ -6,13 +6,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.lucasAB_one
 ---
 
-# Lucas AB one
+# First (a, b)-Lucas number
 
-`L_1 = a` for the `(a, b)`-Lucas numbers.
+**First (a, b)-Lucas number.** For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
+$L^{a,b}_1$ equals $a$.
 
 ## Depends on
 
-- [Lucas AB](lucas-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

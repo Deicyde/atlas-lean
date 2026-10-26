@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.secondOrder_sum_dvd_of_period_dvd
 ---
 
-# Second Order sum dvd of period dvd
+# Sums of a second-order recurrence over whole periods
 
-Corollary 2.2 (i): if `a + b - 1 ≠ 0`, `gcd(n, b (a + b - 1)) = 1` and `π_U(n) ∣ r`, then
-`U` is purely periodic modulo `n` and `B_W(r) ≡ 0 (mod n)` for all recurrences `W(a, b)`.
-`b ≠ 0` is built into `LucasSequenceParams` (for `b = 0` the hypothesis forces `n = 1`).
-Part (ii) is false as printed and omitted: for `(a, b) = (-6, 7)` (so `a + b - 1 = 0`),
-`n = 3` has `gcd(3, 7 · (-8)) = 1` and `π_U(3) = 2`, but `B_U(2) = 1 - 6 = -5`.
+**Sums of a second-order recurrence over whole periods.** Let $P, Q$ be integers with $Q \ne 0$,
+let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and suppose
+$a + b - 1 \ne 0$. Let $n > 0$ be coprime to $b(a + b - 1)$, and let $\pi_U(n)$ be the period of
+$U$ modulo $n$: the least $r > 0$ with $U_r \equiv 0$ and $U_{r+1} \equiv 1 \pmod n$, or $0$ if
+there is none. Then $\pi_U(n) > 0$, and for every $r \ge 0$ divisible by $\pi_U(n)$ and every
+integer sequence $w$ with $w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$, $n$ divides
+$w_1 + \dots + w_r$.
+
+Part (ii) of the corollary is false as printed and is omitted: for $(a, b) = (-6, 7)$, so that
+$a + b - 1 = 0$, the number $n = 3$ is coprime to $7 \cdot (-8)$ and $\pi_U(3) = 2$, but
+$U_1 + U_2 = 1 - 6 = -5$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
 
 ## Sources
 

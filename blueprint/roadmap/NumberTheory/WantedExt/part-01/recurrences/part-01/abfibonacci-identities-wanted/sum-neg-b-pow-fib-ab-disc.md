@@ -5,18 +5,22 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_neg_b_pow_fibAB_disc
 ---
 
-# Theorem 10(a)
+# Sums of (a, b)-Fibonacci numbers weighted by powers of -b, via Lucas numbers
 
-**Theorem 10(a)**: if `Δ = a^2 + 4b ≠ 0` then
-(i) `∑_{i=0}^n (-b)^(n-i) F_{2i}
-  = (L_{2n+1} + (-1)^(n+1) a b^n) / Δ` and
-(ii) `∑_{i=0}^n (-b)^(n-i) F_{2i+1}
-  = (L_{2n+2} + (-1)^n 2 b^(n+1)) / Δ`.
+**Sums of (a, b)-Fibonacci numbers weighted by powers of -b, via Lucas numbers.** Let $a, b$
+be complex numbers with $\Delta = a^2 + 4b \ne 0$, and let $(F_n)$ and $(L_n)$ be the
+$(a, b)$-Fibonacci and $(a, b)$-Lucas numbers. Then for every integer $n \ge 0$,
+
+$$\sum_{i=0}^{n} (-b)^{n-i} F_{2i} = \frac{L_{2n+1} + (-1)^{n+1} a b^n}{\Delta}$$
+
+and
+
+$$\sum_{i=0}^{n} (-b)^{n-i} F_{2i+1} = \frac{L_{2n+2} + 2 (-1)^n b^{n+1}}{\Delta}.$$
 
 ## Depends on
 
-- [Fib AB](fib-ab.md)
-- [Lucas AB](lucas-ab.md)
+- [The (a, b)-Fibonacci numbers](fib-ab.md)
+- [(a, b)-Lucas numbers](lucas-ab.md)
 
 ## Sources
 

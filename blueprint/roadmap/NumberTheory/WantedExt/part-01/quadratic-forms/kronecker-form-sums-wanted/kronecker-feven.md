@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.kroneckerFEven
 ---
 
-# Kronecker FEven
+# Kronecker's sum $F_e(n)$
 
-Kronecker's `F_e(n)`, equation (5): the weighted number of reduced forms of
-discriminant `-4n` with `a` and `c` both even.
+**Kronecker's sum $F_e(n)$.** For a natural number $n$, $F_e(n)$ is the sum of the weights of
+the reduced positive-definite integral binary quadratic forms $ax^2 + bxy + cy^2$ of
+discriminant $b^2 - 4ac = -4n$ in which $a$ and $c$ are both even. Here a form is reduced when
+$|b| \le a \le c$, with $b \ge 0$ whenever $|b| = a$ or $a = c$, and its weight is $1/2$ if
+$a = c$ and $b = 0$, $1/3$ if $a = b = c$, and $1$ otherwise.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reduced Form Weight](reduced-form-weight.md)
-- [Reduced Forms Of Discriminant](reduced-forms-of-discriminant.md)
+- [Weight of a reduced binary quadratic form](reduced-form-weight.md)
+- [Reduced forms of a given discriminant](reduced-forms-of-discriminant.md)
 
 ## Sources
 

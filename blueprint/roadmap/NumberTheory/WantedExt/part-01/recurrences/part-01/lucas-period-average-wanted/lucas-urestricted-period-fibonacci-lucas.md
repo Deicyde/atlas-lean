@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasURestrictedPeriod_fibonacciLucasParams_two
 ---
 
-# Lucas URestricted Period fibonacci Lucas Params two
+# Restricted period of the Fibonacci sequence modulo 2
 
-The Fibonacci sequence has restricted period `3` modulo `2` (`F 3 = 2`).
+**Restricted period of the Fibonacci sequence modulo 2.** The least restricted period
+modulo $2$ of the Fibonacci sequence $F = U(1, -1)$ equals $3$ (note $F_3 = 2$).
 
 ## Depends on
 
-- [Fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Fibonacci parameters for Lucas sequences](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas U fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-fibonacci-lucas-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [The Lucas sequence $U(1, -1)$ is the Fibonacci sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-fibonacci-lucas-params.md)
 
 ## Sources
 

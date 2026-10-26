@@ -5,20 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.basePhi_positive_part_eq_zeckendorf
 ---
 
-# Base Phi positive part eq zeckendorf
+# Embedding of base phi expansions into Zeckendorf expansions
 
-Embedding into Zeckendorf: `β⁺(N) = Z(N + S(N))` for all `N ≥ 0`, where
-`Z(M)` is the Zeckendorf expansion (digit `e_i` weighted by `F_{i+2}`) and
-`S(N)` is the number of `n ≥ 1` with `3 ⌊n φ⌋ + n + 1 < N`, i.e. the number of
-`M < N` with `d_{-1}(M) = 1`, as in the paper's proof. Both printed formulas for
-`S` are off by one: `S(N) = max {k : 3⌊kφ⌋ + k ≤ N}` gives `S(4) = 1` and
-`Z(5) = 1000 ≠ 101 = β⁺(4)`, and `S(N) = max {k : V(k) ≤ N} - 1` gives
-`S(6) = 0` and `Z(6) = 1001 ≠ 1010 = β⁺(6)`.
+**Embedding of base phi expansions into Zeckendorf expansions.** Let $\varphi$ be the golden
+ratio and let $F_j$ be the Fibonacci numbers, $F_0 = 0$, $F_1 = F_2 = 1$. For a natural number $M$
+let $Z(M)$ be the set of indices $i \ge 0$ such that $F_{i+2}$ occurs in the Zeckendorf
+representation of $M$, so that $M = \sum_{i \in Z(M)} F_{i+2}$. Let $N$ be a natural number, let
+$S$ be a base phi expansion of $N$ (the set of positions of its digits $1$), and let $s(N)$ be the
+number of integers $n$ with $1 \le n \le N$ and $3 \lfloor n \varphi \rfloor + n + 1 < N$. Then
+$\{i \in S : i \ge 0\} = Z(N + s(N))$.
+
+Since $3 \lfloor n \varphi \rfloor + n + 1 > N$ for $n \ge N$, $s(N)$ is the number of all $n \ge 1$
+with $3 \lfloor n \varphi \rfloor + n + 1 < N$, that is, the number of $M < N$ whose digit at
+position $-1$ is $1$, as in the paper's proof. Both formulas for $s(N)$ printed in the paper are off
+by one: $\max\{k : 3 \lfloor k \varphi \rfloor + k \le N\}$ gives $s(4) = 1$, but $Z(5) = \{3\}$
+while $4 = \varphi^2 + 1 + \varphi^{-2}$ has nonnegative positions $\{0, 2\}$; and
+$\max\{k : 3 \lfloor k \varphi \rfloor + k + 1 \le N\} - 1$ gives $s(6) = 0$, but
+$Z(6) = \{0, 3\}$ while $6 = \varphi^3 + \varphi + \varphi^{-4}$ has nonnegative positions
+$\{1, 3\}$.
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
-- [Generalized Beatty](generalized-beatty.md)
+- [Base phi expansion](is-base-phi-expansion.md)
+- [Generalized Beatty sequence](generalized-beatty.md)
 
 ## Sources
 

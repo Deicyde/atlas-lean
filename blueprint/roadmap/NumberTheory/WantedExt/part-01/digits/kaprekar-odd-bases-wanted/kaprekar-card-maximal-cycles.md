@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.kaprekar_card_maximal_cycles
 ---
 
-# Kaprekar card maximal cycles
+# Number of Kaprekar cycles of maximal length
 
-Prime bases and maximal cycles: for odd `B > 3` with a terminal cycle of length
-`q = (B - 1) / 2 = c_max(B)`, there are exactly `⌊(q - 1) / 2⌋` terminal cycles of length
-`q`; stated as: the points of `X_B` of minimal period `q` number `q · ⌊(q - 1) / 2⌋`.
+**Number of Kaprekar cycles of maximal length.** Let $B > 3$ be odd, let $K_B$ be the
+four-digit Kaprekar map and $X_B$ its state space, and put $q = (B - 1)/2$. If some point of
+$X_B$ has minimal period $q$ under $K_B$, then exactly $q \lfloor (q - 1)/2 \rfloor$ points of
+$X_B$ have minimal period $q$ under $K_B$.
+
+Equivalently, $K_B$ then has exactly $\lfloor (q - 1)/2 \rfloor$ terminal cycles of length $q$
+on $X_B$.
 
 ## Depends on
 
-- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
-- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [The four-digit Kaprekar state space](kaprekar-four-digit-states.md)
+- [The four-digit Kaprekar map in difference coordinates](kaprekar-four-digit-step.md)
 
 ## Sources
 

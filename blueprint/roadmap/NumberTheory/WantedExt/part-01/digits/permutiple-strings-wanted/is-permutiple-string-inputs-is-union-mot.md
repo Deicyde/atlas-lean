@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isPermutipleString_inputs_isUnion_motherGraphCycles
 ---
 
-# Is Permutiple String inputs is Union mother Graph Cycles
+# Inputs of a permutiple string lie on mother-graph cycles
 
-The inputs of a permutiple string form a union of cycles of the mother graph: every input
-`(d, d̂)` of `s` is an edge of `M` and lies on a directed cycle of the graph whose edges are
-the inputs of `s` (`d̂` reaches `d`). The paper's standing assumption `1 < n < b` is kept.
+**Inputs of a permutiple string lie on mother-graph cycles.** Let $1 < n < b$ and let $s$ be
+an $(n, b)$-permutiple string. Then every input $(d, \hat d)$ of $s$ is an edge of the
+$(n, b)$-mother graph, and $\hat d$ reaches $d$ along a (possibly empty) directed path in the
+graph whose edges are the inputs of $s$, so $(d, \hat d)$ lies on a directed cycle of that graph.
+In this sense the inputs of $s$ form a union of cycles of the mother graph.
 
 ## Depends on
 
-- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
-- [Is Permutiple String](is-permutiple-string.md)
+- [Edges of the mother graph](../permutiple-wanted/is-mother-graph-edge.md)
+- [Permutiple strings](is-permutiple-string.md)
 
 ## Sources
 

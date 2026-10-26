@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominatorLargePart_dvd_coprimePart
 ---
 
-# Bernoulli Diff Denominator Large Part dvd coprime Part
+# The large-prime part divides the coprime part
 
-For `n ≥ 1`, `𝔻^+_n` divides `𝔻^⊥_n`.
+**The large-prime part divides the coprime part.** Write $s_p(n)$ for the sum of the base-$p$
+digits of $n$, let $\mathbb{D}^+_n$ be the product of the primes $p$ with $p^2 > n$ and
+$s_p(n) \ge p$, and let $\mathbb{D}^\perp_n$ be the product of the primes $p$ with $p \nmid n$
+and $s_p(n) \ge p$. Then $\mathbb{D}^+_n$ divides $\mathbb{D}^\perp_n$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
-- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+- [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
+- [Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ every $n \ge 0$, $2^{n+1} T_{n+2} = y_{3(n+1)}$.
 
 ## Depends on
 
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

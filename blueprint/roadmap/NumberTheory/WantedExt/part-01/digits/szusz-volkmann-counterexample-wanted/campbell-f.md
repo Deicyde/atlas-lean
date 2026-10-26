@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.campbellF
 ---
 
-# Campbell F
+# Campbell's interpolation
 
-Campbell's interpolation `f`: `f(x) = (89/110) e^{(100/89)(11x - 100)} + 1/10` for
-`x ≤ 100/11`, `f(x) = 10x - 90` for `100/11 ≤ x ≤ 10`, and for `m ≥ 2`
-`f(x) = (x (y₂(m) - y₁(m)) - (y₁(m) + 10^{m-1} y₂(m) - 10^m y₁(m))) / (9·10^{m-1} - 1)` for
-`10^{m-1} ≤ x ≤ 10^m - 1` and `f(x) = h₂(10^m - 1) + ∫_{10^m - 1}^x h₃^{(m)}(t) dt` for
-`10^m - 1 ≤ x ≤ 10^m`. For `x > 10` the index is `m = ⌊log₁₀ ⌊x⌋⌋ + 1`, so a power of ten
-`x = 10^{m-1}` uses the left end of its interval (the two pieces agree there). The paper's
-domain is `ℝ_{≥ 0}`; the first formula is used for every `x ≤ 100/11`.
+**Campbell's interpolation.** Let $h_2$ be Campbell's sequence and $h_3^{(m)}$ the auxiliary
+piecewise-linear functions of the construction, and for $n \ge 1$ put $y_1(n) = h_2(10^{n-1})$ and
+$y_2(n) = h_2(10^n - 1)$. Campbell's interpolation is the function $f : \mathbb{R} \to \mathbb{R}$
+with $f(x) = \frac{89}{110} e^{(100/89)(11x - 100)} + \frac{1}{10}$ for $x \le 100/11$ and
+$f(x) = 10x - 90$ for $100/11 < x \le 10$. For $x > 10$ put
+$m = \lfloor \log_{10} \lfloor x \rfloor \rfloor + 1$, so that $m \ge 2$ and
+$10^{m-1} \le x < 10^m$; then
+
+$$
+f(x) = \frac{x (y_2(m) - y_1(m)) - (y_1(m) + 10^{m-1} y_2(m) - 10^m y_1(m))}{9 \cdot 10^{m-1} - 1}
+$$
+
+if $x \le 10^m - 1$, and $f(x) = h_2(10^m - 1) + \int_{10^m - 1}^{x} h_3^{(m)}(t) \, dt$ if
+$x > 10^m - 1$.
+
+The paper defines $f$ on $[0, \infty)$ only; here the first formula is used for every
+$x \le 100/11$. At a power of ten $x = 10^{m-1} > 10$ the formula for index $m$ is used; the piece
+to its left takes the same value there.
 
 ## Depends on
 
@@ -21,8 +32,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Campbell H2](campbell-h2.md)
-- [Campbell H3](campbell-h3.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
+- [Campbell's auxiliary function $h_3^{(m)}$](campbell-h3.md)
 
 ## Sources
 

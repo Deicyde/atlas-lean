@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.powerfulPart_dvd
 ---
 
-# Powerful Part dvd
+# The powerful part of $n$ divides $n$
 
-The powerful part divides the original number.
+**The powerful part of $n$ divides $n$.** For every natural number $n$, the powerful part
+of $n$ divides $n$.
 
 ## Depends on
 
-- [Powerful Part](powerful-part.md)
+- [Powerful part of a natural number](powerful-part.md)
 
 ## Proof depends on
 
-- [Powerful Part factorization](powerful-part-factorization.md)
+- [Prime exponents of the powerful part](powerful-part-factorization.md)
 
 ## Sources
 

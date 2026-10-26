@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.SchurSiegelSmyth.classicalUpperBound_wanted
 ---
 
-# Classical Upper Bound wanted
+# Classical upper bound for the Schur–Siegel–Smyth constant
 
-Source: classical upper bound `C₈₆ ≤ 2`, from the totally positive
-algebraic integers `4 cos^2 (π / n)` whose absolute traces tend to
-`2`.
+**Classical upper bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth trace
+constant $C_{86}$, an extended real number, satisfies $C_{86} \le 2$.
 
 ## Depends on
 
@@ -18,3 +17,4 @@ algebraic integers `4 cos^2 (π / n)` whose absolute traces tend to
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Height.SchurSiegelSmythWanted](../../../../../../sources/v2/WantedExt.md)
+- classical upper bound `C₈₆ ≤ 2`, from the totally positive algebraic integers `4 cos^2 (π / n)` whose absolute traces tend to `2`.

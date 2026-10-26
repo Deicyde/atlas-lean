@@ -5,18 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSumMod_isBigO_of_le_two
 ---
 
-# B Free Divisor Sum Mod is Big O of le two
+# Asymptotic for B-free divisor sums in progressions when h is at most 2
 
-Theorem 4 for `h ∈ {1, 2}`: for `κ ≥ 2`, `m ≠ 0` and `(a, m) = 1`,
-`D̃_{B_κ,h}(N, a, m) = q^N N^{h-1} / (h-1)! · Φ(m)^{h-1} / |m|^h · (1 - 1/q)^{-1}
-∏_{P ∤ m} [1 - |P|^{-κ(P)} (C_P + |P|^{-1} (1 - C_P))] (1 + O(1/N))`, stated as
-`D̃ - main = O(main / N)`, with `Φ(m)^{h-1} / |m|^h = (Φ(m)/|m|)^{h-1} / |m|`. For `h ≥ 3` the
-printed main term is wrong (see the audit row).
+**Asymptotic for B-free divisor sums in progressions when h is at most 2.** Let $F$ be a
+finite field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let
+$\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every
+monic irreducible $P$. Let $m \ne 0$ and $a$ be polynomials in $F[T]$ with $a$ coprime to $m$, let
+$h \in \{1, 2\}$, and let $\tilde D_{\kappa,h}(N, a, m)$ be the sum of $d_h(f)$ over the monic
+$B_\kappa$-free $f$ of degree at most $N$ with $f \equiv a \pmod m$, where $d_h(f)$ is the number
+of $h$-tuples of monic polynomials with product $f$, and $f$ is $B_\kappa$-free when no
+$P^{\kappa(P)}$ with $P$ monic irreducible divides it. Put
+$C_P = \binom{h + \kappa(P) - 1}{\kappa(P)}$ and
+
+$$
+M(N) = \frac{q^N N^{h-1}}{(h-1)!} \cdot
+\frac{\bigl(\prod_{P \mid m} (1 - 1/|P|)\bigr)^{h-1}}{|m| \, (1 - 1/q)}
+\prod_{P \nmid m} \Bigl(1 - |P|^{-\kappa(P)} \bigl(C_P + |P|^{-1} (1 - C_P)\bigr)\Bigr),
+$$
+
+the products running over the monic irreducible $P$ dividing, respectively not dividing, $m$.
+Then $\tilde D_{\kappa,h}(N, a, m) - M(N) = O(M(N)/N)$ as $N \to \infty$.
+
+The paper states this for every $h \ge 1$, but its main term is not correct for $h \ge 3$.
 
 ## Depends on
 
-- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
-- [Fq Norm](fq-norm.md)
+- [B-free divisor sum in an arithmetic progression](b-free-divisor-sum-mod.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
 
 ## Sources
 

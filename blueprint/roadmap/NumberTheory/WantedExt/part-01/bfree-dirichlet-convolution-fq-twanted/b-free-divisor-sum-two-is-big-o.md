@@ -5,18 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSum_two_isBigO
 ---
 
-# B Free Divisor Sum two is Big O
+# Asymptotic for the $B_\kappa$-free sum of the divisor function
 
-Theorem 1, case `h = 2`: for `κ ≥ 2` and every `ε > 0`,
-`D̃_{B_κ,2}(N) = q^N / (1 - 1/q) ∏_P (1 - (κ+1)/|P|^κ + κ/|P|^{κ+1})
-× [N + 1 - 1/(q - 1) + ∑_P κ(κ+1) deg(P) (|P| - 1) / (|P|^{κ+1} - |P|(κ+1) + κ)]
-+ O(q ^ ((1/κ_min + ε) N))`, with `κ = κ(P)`.
+**Asymptotic for the $B_\kappa$-free sum of the divisor function.** Let $F$ be a finite field
+with $q$ elements and let $\kappa$ assign to each polynomial in $F[T]$ a natural number, with
+$\kappa(P) \ge 2$ for every monic irreducible $P$. A polynomial $f$ is $B_\kappa$-free when
+$P^{\kappa(P)}$ does not divide $f$ for any monic irreducible $P$; $d_2(f)$ is the number of
+ordered pairs of monic polynomials with product $f$; $\tilde D_{B_\kappa,2}(N)$ is the sum of
+$d_2(f)$ over the $B_\kappa$-free monic $f$ of degree at most $N$; $\kappa_{\min}$ is the minimum
+of $\kappa(P)$ over the monic irreducible $P$; and for a monic irreducible $P$ we write
+$\kappa_P = \kappa(P)$ and $|P| = q^{\deg P}$ for its norm. Then for every $\varepsilon > 0$, as
+$N \to \infty$,
+
+$$
+\tilde D_{B_\kappa,2}(N) = \frac{q^N}{1 - 1/q}
+\prod_P \left( 1 - \frac{\kappa_P + 1}{|P|^{\kappa_P}} + \frac{\kappa_P}{|P|^{\kappa_P + 1}} \right)
+\left( N + 1 - \frac{1}{q - 1} +
+\sum_P \frac{\kappa_P (\kappa_P + 1) \deg(P) (|P| - 1)}{|P|^{\kappa_P + 1} - |P| (\kappa_P + 1) +
+\kappa_P} \right) + O\left( q^{(1/\kappa_{\min} + \varepsilon) N} \right),
+$$
+
+where the product and the sum run over the monic irreducible polynomials $P$.
 
 ## Depends on
 
-- [B Free Divisor Sum](b-free-divisor-sum.md)
-- [Fq Norm](fq-norm.md)
-- [Kappa Min](kappa-min.md)
+- [The $B_\kappa$-free divisor sum](b-free-divisor-sum.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
+- [The minimal exponent $\kappa_{\min}$](kappa-min.md)
 
 ## Sources
 

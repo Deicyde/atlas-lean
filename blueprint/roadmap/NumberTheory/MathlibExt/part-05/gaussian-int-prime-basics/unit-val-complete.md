@@ -13,7 +13,7 @@ and $u_3 = -i$. Every unit $u$ of $\mathbb{Z}[i]$ equals $u_j$ for some $j \in \
 
 ## Depends on
 
-- [Unit Val](unit-val.md)
+- [Enumeration of the Gaussian units](unit-val.md)
 
 ## Proof depends on
 

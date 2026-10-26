@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsRepdigitDiff
 ---
 
-# Is Repdigit Diff
+# Differences of two repdigits
 
-Expressible as a difference of two repdigits: `n = a - b` with `a, b`
-repdigits and `a ≥ n`.
+**Differences of two repdigits.** A natural number $n$ is a difference of two repdigits if
+there are repdigits $a$ and $b$ with $a = n + b$, that is, $n = a - b$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Repdigit](is-repdigit.md)
+- [Decimal repdigits](is-repdigit.md)
 
 ## Sources
 

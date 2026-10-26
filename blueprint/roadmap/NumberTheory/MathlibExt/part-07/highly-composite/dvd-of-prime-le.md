@@ -7,17 +7,19 @@ proof: formalized
 lean: Nat.IsHighlyComposite.dvd_of_prime_le
 ---
 
-# Dvd of prime le
+# Prime divisors of highly composite numbers form an initial segment
 
-The prime support of a highly composite number is an initial segment of the primes.
+**Prime divisors of highly composite numbers form an initial segment.** If $H$ is a highly
+composite number and $p \le q$ are primes with $q \mid H$, then $p \mid H$. In other words, the
+set of primes dividing $H$ is an initial segment of the primes.
 
 ## Depends on
 
-- [Is Highly Composite](is-highly-composite.md)
+- [Highly composite numbers](is-highly-composite.md)
 
 ## Proof depends on
 
-- [Factorization antitone](factorization-antitone.md)
+- [Exponents of highly composite numbers are non-increasing](factorization-antitone.md)
 
 ## Sources
 

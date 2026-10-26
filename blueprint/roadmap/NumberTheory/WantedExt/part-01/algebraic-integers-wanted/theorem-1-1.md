@@ -6,15 +6,14 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AlgebraicIntegersWanted.AlgebraicIntegers.theorem_1_1
 ---
 
-# Theorem 1 1
+# Smith's upper bound for the Schur–Siegel–Smyth constant
 
-Statement of Theorem 1.1:
-
-We have `λ_SSS < 1.89831`.
+**Smith's upper bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth constant
+satisfies $\lambda_{\mathrm{SSS}} < 1.89831$; this is Theorem 1.1 of the source.
 
 ## Depends on
 
-- [Lambda SSS](lambda-sss.md)
+- [The Schur–Siegel–Smyth constant $\lambda_{\mathrm{SSS}}$](lambda-sss.md)
 
 ## Sources
 

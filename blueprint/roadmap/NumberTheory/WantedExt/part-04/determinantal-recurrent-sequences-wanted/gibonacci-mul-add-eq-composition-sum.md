@@ -19,8 +19,8 @@ sufficient condition for `0 ≤ m ≤ ℓ + 1`).
 
 ## Depends on
 
-- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Gibonacci numbers](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

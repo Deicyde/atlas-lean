@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.campbellH1_small
 ---
 
-# Campbell H1 small
+# Small values of $h_1$
 
-`h₁(9) = 0`, `h₁(10) = 10`, `h₁(99) = 10` and `h₁(100) = 100`.
+**Small values of $h_1$.** Campbell's auxiliary sequence $h_1$ satisfies $h_1(9) = 0$,
+$h_1(10) = 10$, $h_1(99) = 10$ and $h_1(100) = 100$.
 
 ## Depends on
 
-- [Campbell H1](campbell-h1.md)
+- [Campbell's sequence $h_1$](campbell-h1.md)
 
 ## Sources
 

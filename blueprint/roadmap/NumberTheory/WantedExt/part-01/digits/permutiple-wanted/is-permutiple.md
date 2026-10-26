@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsPermutiple
 ---
 
-# Is Permutiple
+# Permutiples with a given digit permutation
 
-`(d_k, …, d_0)_b` is an `(n, b, σ)`-permutiple: every digit is `< b` and
-`(d_k, …, d_0)_b = n · (d_{σ(k)}, …, d_{σ(0)})_b`.
+**Permutiples with a given digit permutation.** Let $n$, $b$ and $d_0, \dots, d_k$ be
+natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$. The numeral
+$(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple when $d_j < b$ for every $j$ and
+
+$$\sum_{j=0}^k d_j b^j = n \sum_{j=0}^k d_{\sigma(j)} b^j,$$
+
+that is, $(d_k, \dots, d_0)_b = n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$.
 
 ## Depends on
 

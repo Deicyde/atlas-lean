@@ -5,6 +5,6 @@ navigation: module
 # Bounded Multiplicative Functions
 
 - [Int Extension](int-extension.md)
-- [Is One Bounded](is-one-bounded.md)
-- [Theorem 1 3](theorem-1-3.md)
-- [Corollary 1 1](corollary-1-1.md)
+- [1-bounded function](is-one-bounded.md)
+- [Non-pretentious multiplicative functions do not correlate with polynomial phases on short intervals on average](theorem-1-3.md)
+- [Liouville's function does not correlate with polynomial phases on short intervals on average](corollary-1-1.md)

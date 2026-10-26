@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasV_quadratic_eq_pm_discr_zpow
 ---
 
-# Lucas V quadratic eq pm discr zpow
+# A quadratic equation in the companion Lucas sequence
 
-Lemma 2.7: for `y = -1` (`D = x² + 4`) and positive `p, q, k, x` with `p` odd, if
-`V_p(x) k² + (V_p(x) - 2)k - 1 = ±D^{p-q} V_p(x)²` (in `ℚ`, `D^{p-q}` an integer power), then
-`(p, q, k, x) ∈ {(1, 1, 1, 1), (1, 1, 2, 1), (1, 1, 2, 5)}`.
+**A quadratic equation in the companion Lucas sequence.** Let $x$ be a positive integer,
+let $(V_n)$ be the companion Lucas sequence with parameters $(x, -1)$, given by $V_0 = 2$,
+$V_1 = x$ and $V_{n+2} = x V_{n+1} + V_n$, and let $D = x^2 + 4$. Let $p, q, k$ be natural numbers
+with $p$ odd and $q, k$ positive. If
+
+$$
+V_p k^2 + (V_p - 2) k - 1 = \pm D^{p-q} V_p^2
+$$
+
+in $\mathbb{Q}$, where the exponent $p - q$ may be negative, then $(p, q, k, x)$ is one of
+$(1, 1, 1, 1)$, $(1, 1, 2, 1)$ and $(1, 1, 2, 5)$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

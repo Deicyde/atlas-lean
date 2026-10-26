@@ -5,5 +5,5 @@ navigation: module
 
 # Brun Constant Bounds
 
-- [Brun Constant lower bound](brun-constant-lower-bound.md)
-- [Brun Constant upper bound](brun-constant-upper-bound.md)
+- [Lower bound for Brun's constant](brun-constant-lower-bound.md)
+- [Upper bound for Brun's constant](brun-constant-upper-bound.md)

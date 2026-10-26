@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_tsum_inv_almostPrimeIndexSet_append_zero
 ---
 
-# Tendsto tsum inv almost Prime Index Set append zero
+# Reciprocal sums over iterated almost prime index sets tend to zero
 
-For fixed `m ≥ 2` and `k_1, …, k_m ≥ 1` (here `k_1 = k` and `[k_2, …, k_m] = ks ≠ []`), the
-reciprocal sum of `N_{k_1 ⋯ k_m k}` tends to `0` as `k → ∞`.
+**Reciprocal sums over iterated almost prime index sets tend to zero.** A $k$-almost prime is
+a positive integer with exactly $k$ prime factors counted with multiplicity. For positive integers
+$k_1, \dots, k_m$ let $N_{k_1}$ be the set of $k_1$-almost primes and, for $m \ge 2$, let
+$N_{k_1 k_2 \cdots k_m}$ be the set of $k_1$-almost primes whose index in the increasing
+enumeration of the $k_1$-almost primes (starting at $1$) lies in $N_{k_2 \cdots k_m}$. Fix
+$m \ge 2$ and positive integers $k_1, \dots, k_m$. Then
+
+$$
+\lim_{k \to \infty} \sum_{n \in N_{k_1 \cdots k_m k}} \frac{1}{n} = 0.
+$$
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

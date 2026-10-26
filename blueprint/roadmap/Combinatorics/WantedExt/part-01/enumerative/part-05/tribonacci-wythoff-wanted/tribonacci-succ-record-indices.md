@@ -21,7 +21,7 @@ is a positive record, and $T_{i+4} - \alpha T_{i+3} < 0$ when $n$ is a negative 
 ## Depends on
 
 - [Tribonacci representation](is-tribonacci-repr.md)
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci sequence](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 - [Tribonacci value of a digit word](tribonacci-value.md)
 
 ## Sources

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.runLengthTransform_choose_three_mul_fib
 ---
 
-# Theorem 3
+# Rampersad–Wiebe Theorem 3
 
-**Theorem 3.** The sum `T(n) = ∑_{k=0}^{n} [`binom(3k, k)` binom(n, k) mod 2]` is the run length transform
-of the truncated Fibonacci sequence `1, 2, 3, 5, 8, …` (`Nat.fib (i + 2)`).
+**Rampersad–Wiebe Theorem 3.** Let $(F_j)_{j \ge 0}$ be the Fibonacci numbers, $F_0 = 0$,
+$F_1 = 1$, and let $T$ be the run length transform of $S(i) = F_{i+2}$, i.e. of
+$1, 2, 3, 5, 8, \dots$. Then for every natural number $n$,
+$\sum_{k=0}^{n} \left(\binom{3k}{k} \binom{n}{k} \bmod 2\right) = T(n)$.
 
 ## Depends on
 
-- [Run Length Transform](run-length-transform.md)
+- [Run length transform](run-length-transform.md)
 
 ## Sources
 

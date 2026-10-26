@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isStrongPseudoprime_2047_two
 ---
 
-# Is Strong Pseudoprime 2047 two
+# 2047 is a strong pseudoprime to base 2
 
-`2047 = 23 * 89` is a strong pseudoprime to base `2` (`2046 = 2 * 1023` and
-`2 ^ 1023 = (2 ^ 11) ^ 93 = 1` in `ZMod 2047`).
+**2047 is a strong pseudoprime to base 2.** The number $2047 = 23 \cdot 89$ is a strong
+pseudoprime to the base $2$.
+
+Indeed $2046 = 2 \cdot 1023$ with $1023$ odd, and $2^{1023} = (2^{11})^{93} = 1$ modulo $2047$.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
+- [Strong pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

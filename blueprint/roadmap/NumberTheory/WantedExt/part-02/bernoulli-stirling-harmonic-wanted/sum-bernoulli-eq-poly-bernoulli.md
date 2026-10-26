@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_bernoulli_eq_polyBernoulli
 ---
 
-# Sum bernoulli eq poly Bernoulli
+# Sums of Bernoulli numbers via poly-Bernoulli polynomials
 
-For natural `n >= 2`, the sum `B_0 + ... + B_n` equals the order-two
-poly-Bernoulli polynomial at `1`, plus `B_n`, minus the order-two
-poly-Bernoulli number, minus `1`. The polynomial is represented by its finite
-coefficient sum rather than by a generating function; this is the only
-representational deviation.
+**Sums of Bernoulli numbers via poly-Bernoulli polynomials.** Let $B_j$ denote the Bernoulli
+numbers with $B_1 = -\tfrac12$, let $B_n^{(2)}$ denote the poly-Bernoulli numbers of order $2$,
+and let $B_n^{(2)}(x)$ denote the poly-Bernoulli polynomials of order $2$. For every natural
+number $n \ge 2$,
+
+$$\sum_{j=0}^{n} B_j = B_n^{(2)}(1) + B_n - B_n^{(2)} - 1.$$
 
 ## Depends on
 
 - [Poly-Bernoulli numbers](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
-- [Poly Bernoulli Poly](poly-bernoulli-poly.md)
+- [Poly-Bernoulli polynomials](poly-bernoulli-poly.md)
 
 ## Sources
 

@@ -5,26 +5,35 @@ statement: formalized
 lean: MetaMathlibExt.basePhi_recursive_structure
 ---
 
-# Base Phi recursive structure
+# Recursive structure theorem for base phi expansions, part (A)
 
-Recursive Structure Theorem, in the index ranges of the arXiv text. With
-`β(M)` for `M ∈ Λ_{2n-1}` (top digits `10` at `2n-1, 2n-2`, bottom digits `01`
-at `1-2n, -2n`) and `M ∈ Λ_{2n-2}` (top `10` at `2n-2`, bottom `01` at `2-2n`),
-for `n ≥ 2`:
-`I_n`: `β(L_{2n+1}+k) = 1000 (10)⁻¹ β(L_{2n-1}+k) (01)⁻¹ 1001`, `1 ≤ k ≤ L_{2n-2}-1`;
-`K_n`: `β(L_{2n+1}+L_{2n-1}+k) = 1010 (10)⁻¹ β(L_{2n-1}+k) (01)⁻¹ 0001`, same `k`;
-`J_n`: `β(L_{2n+1}+L_{2n-2}+k) = 10010 (10)⁻¹ β(L_{2n-2}+k) (01)⁻¹ 001001`,
-`0 ≤ k ≤ L_{2n-3}`. Part (B), `β(L_{2n+2}+k) = β(L_{2n+2}) + β(k)` for `n ≥ 1` and
-`0 ≤ k ≤ L_{2n+1}`, is not restated: it is the existing `bergman_lucas_even_add`
-(`WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean`) at index `n + 1`.
-The record's ranges `k ≤ L_{2n}-1` for `I_n, K_n` and `k ≤ L_{2n-1}` for `J_n`
-are too wide: at `n = 2`, `k = 3`, `β(L_3 + 3) = β(7) = 10000 · 0001` has no
-digit `1` at position `3`.
+**Recursive structure theorem for base phi expansions, part (A).** Let $n \ge 2$ and let $L_j$
+be the Lucas numbers; $k$ denotes a natural number, and base phi expansions are given as sets of
+positions of digits $1$.
+(I) If $1 \le k \le L_{2n-2} - 1$, $T$ is a base phi expansion of $L_{2n-1} + k$ and $S$ is a base
+phi expansion of $L_{2n+1} + k$, then $2n-1 \in T$, $2n-2 \notin T$, $1-2n \notin T$, $-2n \in T$
+and $S = (T \setminus \{2n-1, -2n\}) \cup \{2n+1, 1-2n, -2n-2\}$.
+(K) If $1 \le k \le L_{2n-2} - 1$, $T$ is a base phi expansion of $L_{2n-1} + k$ and $S$ is a base
+phi expansion of $L_{2n+1} + L_{2n-1} + k$, then $2n-1 \in T$, $2n-2 \notin T$, $1-2n \notin T$,
+$-2n \in T$ and $S = (T \setminus \{-2n\}) \cup \{2n+1, -2n-2\}$.
+(J) If $0 \le k \le L_{2n-3}$, $T$ is a base phi expansion of $L_{2n-2} + k$ and $S$ is a base phi
+expansion of $L_{2n+1} + L_{2n-2} + k$, then $2n-2 \in T$, $2n-3 \notin T$, $3-2n \notin T$,
+$2-2n \in T$ and $S = (T \setminus \{2-2n\}) \cup \{2n+1, 1-2n, -2n-2\}$.
+
+In the paper's word notation, where $\beta(M)$ is the expansion of $M$ written as a word of digits
+(with $\cdot$ between positions $0$ and $-1$) and $(10)^{-1}$, $(01)^{-1}$ cancel a leading $10$
+and a trailing $01$, these are
+$\beta(L_{2n+1}+k) = 1000\,(10)^{-1}\,\beta(L_{2n-1}+k)\,(01)^{-1}\,1001$,
+$\beta(L_{2n+1}+L_{2n-1}+k) = 1010\,(10)^{-1}\,\beta(L_{2n-1}+k)\,(01)^{-1}\,0001$ and
+$\beta(L_{2n+1}+L_{2n-2}+k) = 10010\,(10)^{-1}\,\beta(L_{2n-2}+k)\,(01)^{-1}\,001001$. The
+source's ranges $k \le L_{2n} - 1$ for (I) and (K) and $k \le L_{2n-1}$ for (J) are too wide: for
+$n = 2$ and $k = 3$, $\beta(L_3 + 3) = \beta(7) = 10000 \cdot 0001$ has no digit $1$ at
+position $3$.
 
 ## Depends on
 
-- [Is Base Phi Expansion](is-base-phi-expansion.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Base phi expansion](is-base-phi-expansion.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_of_two_le_of_large
 ---
 
-# Central Binom add ne of two le of large
+# No large solutions of the central binomial product equation with shift at least two
 
-Proposition 3: for positive `a`, `b`, `x ≥ 2` and `a + b ≥ 150`,
-`C(2(a+b), a+b) ≠ C(2a, a) C(x+2b, b)`.
+**No large solutions of the central binomial product equation with shift at least two.**
+For natural numbers $a$, $b$, $x$ with $a \ge 1$, $b \ge 1$, $x \ge 2$ and $a + b \ge 150$, we have
+$\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Depends on
 

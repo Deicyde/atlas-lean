@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.periodicTheta_one_zero_three
 ---
 
-# Periodic Theta one zero three
+# The maximal block $\theta^4$ in the Fibonacci case
 
-For `L = (1, 0)` (the Fibonacci case), `θ^4 = (1, 0, 1)`.
+**The maximal block $\theta^4$ in the Fibonacci case.** For $L = (1, 0)$, the maximal $L$-block
+$\theta^4$ is $(1, 0, 1)$: its entries at indices $0$, $1$, $2$ are $1$, $0$, $1$, and all its
+entries from index $3$ on are $0$.
 
 ## Depends on
 

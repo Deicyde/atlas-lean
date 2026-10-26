@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.campbellConcatDigit
 ---
 
-# Campbell Concat Digit
+# Digits of the concatenation $0.h_2(1)h_2(2)\ldots$
 
-The `j`-th digit (0-indexed) after the decimal point of `0.h₂(1)h₂(2)…`: every block is
-nonempty, so the first `j + 1` blocks contain at least `j + 1` digits.
+**Digits of the concatenation $0.h_2(1)h_2(2)\ldots$.** Let $h_2$ be Campbell's sequence.
+For $j \ge 0$, $d_j$ is the digit in position $j$ (counting from $0$) after the decimal point of
+$0.h_2(1)h_2(2)\ldots$, the string obtained by writing the blocks of $h_2(1), h_2(2), \ldots$ one
+after another, where the block of $h_2(n)$ is its list of base-$10$ digits, most significant
+first, with $0$ written as the single digit $0$.
+
+Every block is nonempty, so $d_j$ already lies in the first $j + 1$ blocks.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Campbell Block](campbell-block.md)
+- [Decimal digit block of $h_2(n)$](campbell-block.md)
 
 ## Sources
 

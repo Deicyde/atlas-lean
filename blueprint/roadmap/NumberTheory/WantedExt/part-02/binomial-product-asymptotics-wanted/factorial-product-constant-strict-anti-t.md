@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.factorialProductConstant_strictAnti_tendsto_one
 ---
 
-# Factorial Product Constant strict Anti tendsto one
+# The factorial-product constants decrease strictly to $1$
 
-The sequence `(F_k)_{k ≥ 1}` is strictly decreasing with limit `1`.
+**The factorial-product constants decrease strictly to $1$.** The sequence
+$(F_k)_{k \ge 1}$ of factorial-product constants is strictly decreasing, and $F_k \to 1$ as
+$k \to \infty$.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
 
 ## Sources
 

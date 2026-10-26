@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zeckendorfRealEval
 ---
 
-# Zeckendorf Real Eval
+# Evaluation of a coefficient function at a real sequence
 
-Evaluation `∑ ε Q = ∑_k ε_k Q_k` of a coefficient function at a real sequence.
+**Evaluation of a coefficient function at a real sequence.** For a real sequence $Q$ and a
+coefficient function $\varepsilon \colon \mathbb{N} \to \mathbb{N}$, not necessarily finitely
+supported, the evaluation $\sum \varepsilon Q$ is the sum of the series
+$\sum_{k \ge 0} \varepsilon_k Q_k$, taken to be $0$ when the series is not absolutely summable.
 
 ## Depends on
 

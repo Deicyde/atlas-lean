@@ -11,8 +11,8 @@ Theorem 11: `U` has Lebesgue measure `1`.
 
 ## Depends on
 
-- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Fundamental sequence of an $L^\ast$-collection](is-lstar-fundamental-sequence.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [Zeckendorf Smooth Set](zeckendorf-smooth-set.md)
 
 ## Sources

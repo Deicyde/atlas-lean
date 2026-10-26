@@ -5,6 +5,6 @@ navigation: module
 
 # Telescopic Sequence
 
-- [Telescopic Gcd](telescopic-gcd.md)
-- [Telescopic C](telescopic-c.md)
-- [Is Telescopic](is-telescopic.md)
+- [Prefix gcds of a sequence](telescopic-gcd.md)
+- [Successive gcd quotients](telescopic-c.md)
+- [Telescopic sequences](is-telescopic.md)

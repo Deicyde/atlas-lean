@@ -6,12 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.TripSternTree
 ---
 
-# Trip Stern Tree
+# TRIP-Stern tree
 
-The TRIP-Stern tree for a fixed pair of source transitions induced by `F_0`
-and `F_1`: a distinguished root seed together with a fixed left transition and
-a fixed right transition on node values. A left edge is represented by `false`
-and a right edge by `true`.
+**TRIP-Stern tree.** A TRIP-Stern tree with node values in a type $\alpha$ consists of a root
+seed in $\alpha$ together with two maps from $\alpha$ to $\alpha$, the left transition and the
+right transition. No condition is imposed on the seed or on the two transitions; in the source
+the seed is $(1,1,1)$ and the left and right transitions are induced by the maps $F_0$ and $F_1$
+defined there.
 
 ## Depends on
 

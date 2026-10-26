@@ -5,9 +5,10 @@ statement: formalized
 lean: PierceExpansion.maxLength
 ---
 
-# Max Length
+# Maximal Pierce length
 
-Pierce length function: `max_{1 ≤ a ≤ n} length n a`.
+**Maximal Pierce length.** For a natural number $n$, the maximal Pierce length $P(n)$ is the
+maximum of the Pierce lengths $\ell(n, a)$ over $1 \le a \le n$, with $P(0) = 0$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Length](length.md)
+- [Pierce length](length.md)
 
 ## Sources
 

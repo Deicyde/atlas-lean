@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.brousseauA_zero
 ---
 
-# Brousseau A zero
+# The initial value $A_k^{(0)} = 1$
 
-`A_k^(0) = 1`.
+**The initial value $A_k^{(0)} = 1$.** For every rational number $k$, the number $A_k^{(0)}$
+for $k$-Fibonacci Brousseau sums equals $1$.
 
 ## Depends on
 
-- [Brousseau A](brousseau-a.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
 
 ## Sources
 

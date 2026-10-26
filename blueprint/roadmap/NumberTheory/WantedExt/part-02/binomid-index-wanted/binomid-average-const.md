@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.binomidAverage_const
 ---
 
-# Binomid Average const
+# Averages of a constant sequence
 
-Every average `A_{i,0}` with `i ≥ 1` of the constant sequence `c^∞` equals `c`.
+**Averages of a constant sequence.** For every natural number $c$ and every $i \ge 1$,
+the average $A_{i,0}$ of the first $i$ entries of the constant sequence $(c, c, c, \dots)$
+equals $c$.
 
 ## Depends on
 
-- [Binomid Average](binomid-average.md)
+- [Initial averages of a sequence](binomid-average.md)
 
 ## Sources
 

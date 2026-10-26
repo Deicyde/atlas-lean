@@ -11,7 +11,7 @@ The Polymath8b bound from the retained original v4; erratum applicability is unr
 
 ## Depends on
 
-- [Prime Gap Liminf](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
+- [Liminf of prime gaps](../../../MathlibExt/part-10/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

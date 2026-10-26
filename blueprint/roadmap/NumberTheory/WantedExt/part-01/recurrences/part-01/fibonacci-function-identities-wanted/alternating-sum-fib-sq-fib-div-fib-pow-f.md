@@ -5,23 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.alternating_sum_fib_sq_fib_div_fib_pow_four_sub
 ---
 
-# Alternating sum fib sq fib div fib pow four sub
+# Alternating Fibonacci and Lucas sums from the Gelin–Cesàro identity
 
-Alternating sums from the Gelin-Cesàro derivative identity: for `n ≥ 0`,
-`∑_(k=1)^n (-1)^(k-1) F_(k+2)^2 F_(2k+4)/(F_(k+2)^4 - 1)
-  = 5/6 + (-1)^(n-1)/2 (F_(2n+3)/(F_(n+1)F_(n+2)) - F_(2n+5)/(F_(n+2)F_(n+3))
-    + F_(2n+7)/(F_(n+3)F_(n+4)))` and
-`∑_(k=1)^n (-1)^(k-1) L_(k+2)^2 F_(2k+4)/(L_(k+2)^4 - 25)
-  = 5/14 + (-1)^(n-1)/2 (F_(2n+3)/(L_(n+1)L_(n+2)) - F_(2n+5)/(L_(n+2)L_(n+3))
-    + F_(2n+7)/(L_(n+3)L_(n+4)))`.
-The sign `(-1)^(n-1)` is written `(-1)^(n+1)` (equal for all integers, including
-`n = 0`).  The paper's limiting cases are omitted: the absolute values of the
-summands tend to `√5` and `1/√5`, so the summands do not tend to `0` and neither series
-converges.
+**Alternating Fibonacci and Lucas sums from the Gelin–Cesàro identity.** Let $F_m$ and $L_m$
+denote the Fibonacci and Lucas numbers. For every natural number $n$,
+
+$$
+\sum_{k=1}^{n} \frac{(-1)^{k-1} F_{k+2}^2 F_{2k+4}}{F_{k+2}^4 - 1}
+= \frac{5}{6} + \frac{(-1)^{n+1}}{2} \left(\frac{F_{2n+3}}{F_{n+1} F_{n+2}} -
+\frac{F_{2n+5}}{F_{n+2} F_{n+3}} + \frac{F_{2n+7}}{F_{n+3} F_{n+4}}\right)
+$$
+
+and
+
+$$
+\sum_{k=1}^{n} \frac{(-1)^{k-1} L_{k+2}^2 F_{2k+4}}{L_{k+2}^4 - 25}
+= \frac{5}{14} + \frac{(-1)^{n+1}}{2} \left(\frac{F_{2n+3}}{L_{n+1} L_{n+2}} -
+\frac{F_{2n+5}}{L_{n+2} L_{n+3}} + \frac{F_{2n+7}}{L_{n+3} L_{n+4}}\right).
+$$
+
+The source's limiting cases are not included: the absolute values of the summands tend to
+$\sqrt{5}$ and $1/\sqrt{5}$, so the summands do not tend to $0$ and neither series converges.
 
 ## Depends on
 
-- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

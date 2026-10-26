@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.squarePyramidalNumber
 ---
 
-# Square Pyramidal Number
+# Square pyramidal number
 
-The square pyramidal number `P_n = 1² + 2² + ⋯ + n²`.
+**Square pyramidal number.** For a natural number $n$, the $n$-th square pyramidal number
+is $P_n = 1^2 + 2^2 + \dots + n^2 = \sum_{i=1}^{n} i^2$ (so $P_0 = 0$).
 
 ## Depends on
 

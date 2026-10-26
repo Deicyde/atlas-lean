@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.linearRecurrence_eq_companion_pow
 ---
 
-# Lemma 1
+# Linear recurrences via powers of the companion matrix
 
-**Lemma 1.** Let `S(n + 1) = d₀ S(n) + ⋯ + d_r S(n - r)` for `n ≥ r` with `S(0) = 1` (the
-initial values `c_i = S(i)` are free). With `v = (1, 0, …, 0)`, `w = (S(0), …, S(r))ᵀ`, and the
-companion matrix `γ(1)` (ones on the superdiagonal, last row `d_r, …, d₀`), `S(n) = v γ(1)ⁿ w`.
+**Linear recurrences via powers of the companion matrix.** Let $r$ be a natural number, let
+$d_0, \dots, d_r$ be integers, and let $S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = 1$ and
+$S(m + 1) = d_0 S(m) + d_1 S(m - 1) + \dots + d_r S(m - r)$ for every $m \ge r$. Let $\gamma(1)$
+be the $(r + 1) \times (r + 1)$ integer matrix with rows and columns indexed by $0, \dots, r$
+whose row $i < r$ has a $1$ in column $i + 1$ and zeros elsewhere, and whose last row is
+$(d_r, d_{r-1}, \dots, d_0)$. With $v = (1, 0, \dots, 0)$ and $w = (S(0), \dots, S(r))^{T}$,
+we have $S(n) = v \, \gamma(1)^n \, w$ for every natural number $n$.
+
+The values $S(1), \dots, S(r)$ are arbitrary.
 
 ## Depends on
 

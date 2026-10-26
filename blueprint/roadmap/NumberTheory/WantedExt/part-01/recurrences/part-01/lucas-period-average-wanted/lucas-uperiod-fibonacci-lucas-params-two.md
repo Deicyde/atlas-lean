@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasUPeriod_fibonacciLucasParams_two
 ---
 
-# Lucas UPeriod fibonacci Lucas Params two
+# Period of the Fibonacci sequence modulo 2
 
-The Fibonacci sequence has period `3` modulo `2`.
+**Period of the Fibonacci sequence modulo 2.** The Fibonacci sequence, that is, the Lucas
+sequence with parameters $(P, Q) = (1, -1)$, has period $3$ modulo $2$.
 
 ## Depends on
 
-- [Fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
+- [Fibonacci parameters for Lucas sequences](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

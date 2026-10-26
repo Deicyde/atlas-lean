@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.totient_div_gg_and_sigma_div_ll_log_log
 ---
 
-# Totient div gg and sigma div ll log log
+# Lower bound for Euler's function and upper bound for the sum of divisors
 
-Minimal order of `φ(n)` and maximal order of `σ(n)`: for `n ≥ 3`,
-`φ(n)/n ≫ 1/log log n` and `σ(n)/n ≪ log log n`.
+**Lower bound for Euler's function and upper bound for the sum of divisors.** Let $\varphi$
+be Euler's totient function and $\sigma(n)$ the sum of the positive divisors of $n$. There is a
+constant $C > 0$ such that $\varphi(n)/n \ge C/\log\log n$ for every integer $n \ge 3$, and there
+is a constant $C'$ such that $\sigma(n)/n \le C' \log\log n$ for every integer $n \ge 3$.
 
 ## Depends on
 

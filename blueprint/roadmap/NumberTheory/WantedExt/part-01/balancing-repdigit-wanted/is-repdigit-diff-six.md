@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isRepdigitDiff_six
 ---
 
-# Is Repdigit Diff six
+# Six is a difference of two repdigits
 
-Characteristic example: `6 = 11 - 5` is a difference of two repdigits.
+**Six is a difference of two repdigits.** The number $6$ is a difference of two repdigits:
+$6 = 11 - 5$, where $11$ and $5$ are repdigits.
 
 ## Depends on
 
-- [Is Repdigit Diff](is-repdigit-diff.md)
+- [Differences of two repdigits](is-repdigit-diff.md)
 
 ## Proof depends on
 
-- [Is Repdigit](is-repdigit.md)
-- [Is Repdigit eleven](is-repdigit-eleven.md)
-- [Is Repdigit of le](is-repdigit-of-le.md)
+- [Decimal repdigits](is-repdigit.md)
+- [Eleven is a repdigit](is-repdigit-eleven.md)
+- [Nonzero single digits are repdigits](is-repdigit-of-le.md)
 
 ## Sources
 

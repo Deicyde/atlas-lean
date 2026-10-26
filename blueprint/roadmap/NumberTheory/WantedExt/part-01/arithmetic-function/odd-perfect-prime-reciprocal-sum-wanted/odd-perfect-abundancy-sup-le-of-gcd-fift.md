@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_abundancySup_le_of_gcd_fifteen
 ---
 
-# Odd Perfect abundancy Sup le of gcd fifteen
+# Suryanarayana's bounds on the prime product of an odd perfect number
 
-(Suryanarayana) Upper bounds for `H(n)` for an odd perfect number `n`, by
-`gcd(15, n)`: `2.014754` for `1`, `2.096234` for `3`, `2.031002` for `5`, and `2.165439`
-for `15`.
+**Suryanarayana's bounds on the prime product of an odd perfect number.** Let $n$ be an odd
+perfect number and $H(n) = \prod_{p \mid n} p/(p-1)$, the product over the primes $p$ dividing $n$.
+If $\gcd(15, n) = 1$ then $H(n) \le 2.014754$; if $\gcd(15, n) = 3$ then $H(n) \le 2.096234$;
+if $\gcd(15, n) = 5$ then $H(n) \le 2.031002$; and if $\gcd(15, n) = 15$ then
+$H(n) \le 2.165439$.
 
 ## Depends on
 

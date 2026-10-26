@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.IsWieferichPrime
 ---
 
-# Is Wieferich Prime
+# Wieferich primes
 
-A prime `p` is Wieferich to base two if `p ^ 2 ∣ 2 ^ (p - 1) - 1`.
+**Wieferich primes.** A natural number $p$ is a Wieferich prime (to base $2$) if $p$ is
+prime and $p^2$ divides $2^{p-1} - 1$.
 
 ## Depends on
 

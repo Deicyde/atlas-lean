@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsAACarmichael
 ---
 
-# Is AACarmichael
+# $(a, a)$-Carmichael numbers
 
-An `(a, a)`-Carmichael number: a squarefree natural number `n` such that `p - a ∣ n - a`
-for every prime `p ∣ n`, the divisibility taken in `ℤ`.
+**$(a, a)$-Carmichael numbers.** Let $a$ be an integer. A natural number $n$ is an
+$(a, a)$-Carmichael number if $n$ is squarefree and $p - a$ divides $n - a$ in $\mathbb{Z}$ for
+every prime $p$ dividing $n$.
 
 ## Depends on
 

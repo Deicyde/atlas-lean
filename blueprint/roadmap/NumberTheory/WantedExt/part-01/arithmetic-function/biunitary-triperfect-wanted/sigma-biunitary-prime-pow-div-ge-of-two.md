@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sigmaBiunitary_prime_pow_div_ge_of_two_mul_sub_one_le
 ---
 
-# Sigma Biunitary prime pow div ge of two mul sub one le
+# Comparison bounds for the biunitary divisor sum of a prime power
 
-For a prime `p` and positive integers `m`, `e` with `e ≥ 2m - 1`,
-`σ**(p^e) / p^e ≥ σ**(p^{2m}) / p^{2m}`, and, unless `e = 2m`,
-`σ**(p^e) / p^e ≥ 1 + 1/p + ⋯ + 1/p^m` (in `ℚ`).
+**Comparison bounds for the biunitary divisor sum of a prime power.** Let $p$ be a prime and
+let $m \ge 1$ and $e \ge 2m - 1$ be natural numbers, and write $\sigma^{**}$ for the biunitary
+divisor sum. Then, in $\mathbb{Q}$,
+$\sigma^{**}(p^e)/p^e \ge \sigma^{**}(p^{2m})/p^{2m}$, and if moreover $e \ne 2m$, then
+$\sigma^{**}(p^e)/p^e \ge \sum_{i=0}^{m} 1/p^i$.
 
 ## Depends on
 

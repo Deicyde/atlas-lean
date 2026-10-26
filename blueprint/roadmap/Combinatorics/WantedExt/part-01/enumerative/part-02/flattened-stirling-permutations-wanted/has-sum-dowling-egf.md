@@ -16,7 +16,7 @@ $\sum_{n \ge 0} D_n x^n / n!$ is summable with sum $\exp\bigl(x + (e^{2x} - 1)/2
 ## Depends on
 
 - [(q, r)-Whitney numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-07/qrwhitney-numbers/whitney-second.md)
-- [Qr Dowling Number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
+- [$(q, r)$-Dowling number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
 
 ## Sources
 

@@ -7,16 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.prime_power_factorization_sum_eq_iff
 ---
 
-# Prime Power Factorization Sum
+# Prime powers fixed by a uniform power sum of their prime factors
 
-A prime power `y = p ^ m` is fixed by the sum of the `s`-th powers of its prime
-factors, counted with multiplicity, exactly when `m = p ^ k` and
-`s = p ^ k - k` for some natural number `k`.
+**Prime powers fixed by a uniform power sum of their prime factors.** For positive integers $y$
+and $s$, let $T_s(y) = \sum_q e_q q^s$, where $q$ runs over the primes dividing $y$ and $e_q$ is
+the exponent of $q$ in $y$, so that each prime factor is counted with multiplicity. Let $p$ be a
+prime, let $m$ be a positive integer and let $y = p^m$. Then for every positive integer $s$,
+$T_s(y) = y$ if and only if $m = p^k$ and $s = p^k - k$ for some natural number $k$.
 
-`y.factorization.sum fun q e => e * q ^ s` is the paper's `T_s(y)`; for
-`y = p ^ m` this is `m * p ^ s`, and `m * p ^ s = p ^ m` forces `m` to be a
-power of `p`.
-Proves `Wanted` entry `prime_power_factorization_sum_eq_iff`.
+For $y = p^m$ one has $T_s(y) = m p^s$, and $m p^s = p^m$ forces $m$ to be a power of $p$.
 
 ## Depends on
 

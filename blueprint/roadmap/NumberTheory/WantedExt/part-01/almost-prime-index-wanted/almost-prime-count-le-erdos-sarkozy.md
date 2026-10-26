@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.almostPrime_count_le_erdos_sarkozy
 ---
 
-# Almost Prime count le erdos sarkozy
+# Erdős–Sárközy bound for almost primes
 
-Erdős–Sárközy uniform bound: `N_{k+1}(t) ≪ (k⁴ / 2^k) t log t` for all real `t ≥ 1` and
-integers `k ≥ 1`, with an absolute implied constant.
+**Erdős–Sárközy bound for almost primes.** There is a real constant $C$ such that for every
+integer $k \ge 1$ and every real $t \ge 1$, the number $\pi_{k+1}(t)$ of integers $n$ with
+$1 \le n \le t$ that have exactly $k + 1$ prime factors, counted with multiplicity, satisfies
+$\pi_{k+1}(t) \le C \cdot \frac{k^4}{2^k} \, t \log t$.
 
 ## Depends on
 

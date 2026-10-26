@@ -5,5 +5,5 @@ navigation: module
 
 # NStep Lucas Sequence
 
-- [N Step Lucas List](n-step-lucas-list.md)
-- [N Step Lucas](n-step-lucas.md)
+- [Finite prefixes of the n-step Lucas numbers](n-step-lucas-list.md)
+- [n-step Lucas numbers](n-step-lucas.md)

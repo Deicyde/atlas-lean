@@ -35,7 +35,7 @@ This node has no prerequisites.
 - [Row zero of the second-kind (q, r)-Whitney numbers vanishes off the diagonal](../qrwhitney-numbers/whitney-second-zero-succ.md)
 - [Initial value of the second-kind (q, r)-Whitney numbers](../qrwhitney-numbers/whitney-second-zero-zero.md)
 - [Expansion of the (q, r)-Dowling polynomial in q-Stirling numbers](eval-qr-dowling-polynomial-whitney-secon.md)
-- [Qr Dowling Polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
+- [$(q, r)$-Dowling polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
 
 ## Sources
 

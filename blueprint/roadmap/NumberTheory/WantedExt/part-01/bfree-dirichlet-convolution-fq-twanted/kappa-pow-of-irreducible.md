@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kappaPow_of_irreducible
 ---
 
-# Kappa Pow of irreducible
+# The $\kappa$-power of a monic irreducible polynomial
 
-`P ^ κ = P ^ κ(P)` for monic irreducible `P`.
+**The $\kappa$-power of a monic irreducible polynomial.** Let $F$ be a field and let $\kappa$
+be a function from $F[T]$ to the natural numbers. For every monic irreducible $P \in F[T]$, the
+$\kappa$-power of $P$ is $P^\kappa = P^{\kappa(P)}$.
 
 ## Depends on
 
-- [Kappa Pow](kappa-pow.md)
+- [The $\kappa$-power of a polynomial](kappa-pow.md)
 
 ## Sources
 

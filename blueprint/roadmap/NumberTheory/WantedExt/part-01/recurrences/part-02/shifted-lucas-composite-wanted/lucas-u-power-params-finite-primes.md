@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_power_params_finite_primes
 ---
 
-# Lucas U power params finite primes
+# Lucas sequences with power parameters have finitely many prime terms
 
-Let `x ≠ y` be real numbers with `x + y` and `x y` integers, and let `r > 1`. If
-`P = x ^ r + y ^ r` and `Q = x ^ r y ^ r ≠ 0` satisfy `P ≥ 1` and `P² - 4Q > 0`, then
-`U_n(P, Q)` is prime for only finitely many `n`.
+**Lucas sequences with power parameters have finitely many prime terms.** Let $x \ne y$
+be real numbers such that $x + y$ and $xy$ are integers, and let $r > 1$ be a natural
+number. Let $P$ and $Q$ be integers with $P = x^r + y^r$ and $Q = x^r y^r$, and suppose
+$Q \ne 0$, $P \ge 1$ and $P^2 - 4Q > 0$. Let $U_n = U_n(P, Q)$ be the Lucas sequence with
+$U_0 = 0$, $U_1 = 1$ and $U_{n+2} = PU_{n+1} - QU_n$. Then $|U_n|$ is prime for only
+finitely many natural numbers $n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

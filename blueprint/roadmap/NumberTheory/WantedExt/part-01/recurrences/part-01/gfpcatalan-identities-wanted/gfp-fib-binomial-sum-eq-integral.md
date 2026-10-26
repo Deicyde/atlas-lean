@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.gfp_fib_binomial_sum_eq_integral
 ---
 
-# Gfp fib binomial sum eq integral
+# Binomial sum of generalized Fibonacci polynomials as an integral
 
-Proposition 5.2: for real `k ≥ 2`, `n ≥ 1` and a real `x` with `d(x)² + 4 g(x) ≥ 0`,
-`∑_{i=0}^{n} (-1)^{n+1} C(n, i) (k+1)^i (k-1)^{n-i} g^i F_{n-2i}
-  = n ∫_{-k}^{k} (y √(d² + 4g) + d)^{n-1} dy`.
-The indices `n - 2i < 0` use the extension `F : ℤ → ℝ` of `m ↦ F_m(x)` by the same recurrence
-(the Binet formula of the paper's proof). This extension exists only when `g(x) ≠ 0` (if
-`g(x) = 0`, the recurrence at `m = -1` forces `F_1 = d(x) F_0 = 0`), so the paper's assumption
-`g ≠ 0` is kept as `g(x) ≠ 0`. The paper states no range for `n`; `n ≥ 1` makes the exponent
-`n - 1` a natural number.
+**Binomial sum of generalized Fibonacci polynomials as an integral.** Let $d$ and $g$ be
+polynomials with integer coefficients, let $F_m$ be the generalized Fibonacci polynomials with
+$F_0 = 0$, $F_1 = 1$ and $F_{m+2} = d F_{m+1} + g F_m$, and let $x$ be a real number with
+$d(x)^2 + 4 g(x) \ge 0$ and $g(x) \ne 0$. Let $\Phi \colon \mathbb{Z} \to \mathbb{R}$ satisfy
+$\Phi(m) = F_m(x)$ for $m \ge 0$ and $\Phi(m+2) = d(x) \Phi(m+1) + g(x) \Phi(m)$ for every integer
+$m$. Then for every real $k \ge 2$ and every integer $n \ge 1$,
+
+$$\sum_{i=0}^{n} (-1)^{n+1} \binom{n}{i} (k+1)^i (k-1)^{n-i} g(x)^i \, \Phi(n-2i)
+  = n \int_{-k}^{k} \Big(y \sqrt{d(x)^2 + 4 g(x)} + d(x)\Big)^{n-1} dy.$$
+
+The extension $\Phi$ of $m \mapsto F_m(x)$ to negative indices exists only when $g(x) \ne 0$: if
+$g(x) = 0$, the recurrence at $m = -1$ forces $F_1(x) = d(x) F_0(x) = 0$.
 
 ## Depends on
 
-- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
+- [Generalized Fibonacci polynomials](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_lucasV_alpha_bounds
 ---
 
-# Lucas U lucas V alpha bounds
+# Bounds on Lucas sequences by powers of the dominant root
 
-Lemma 2.2: for `x ≥ 1`, `|y + 1| ≤ x`, `D = x² - 4y > 0` and `α = (x + √D)/2`, for `n ≥ 2`:
-`x α^{n-2} ≤ U_n`; `U_n ≤ α^{n-1}` if `y ≤ 0` and `U_n ≤ α^n/√D` if `y ≥ 0`;
-`x α^{n-1} ≤ V_n ≤ α^{n+1}/x` if `y ≤ 0`; `α^n ≤ V_n ≤ α^{n+1}/√D` if `y ≥ 0`.
+**Bounds on Lucas sequences by powers of the dominant root.** Let $x$ and $y \neq 0$ be
+integers with $x \geq 1$, $|y + 1| \leq x$ and $D = x^2 - 4y > 0$, let $(U_n)$ and $(V_n)$ be the
+Lucas sequences with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$, $V_0 = 2$, $V_1 = x$
+and $W_{n+2} = x W_{n+1} - y W_n$ for $W = U, V$, and put $\alpha = (x + \sqrt{D})/2$. Then for
+every $n \geq 2$ we have $x \alpha^{n-2} \leq U_n$; if $y \leq 0$, then $U_n \leq \alpha^{n-1}$
+and $x \alpha^{n-1} \leq V_n \leq \alpha^{n+1}/x$; and if $y \geq 0$, then
+$U_n \leq \alpha^n/\sqrt{D}$ and $\alpha^n \leq V_n \leq \alpha^{n+1}/\sqrt{D}$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

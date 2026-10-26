@@ -17,7 +17,7 @@ both monochromatic and an $L$-diffsequence; and $L$ is not $r$-accessible for an
 - [$D$-diffsequences](../../accessible-sets-wanted/is-ddiff-sequence.md)
 - [Monochromatic sequences of positive integers](../../accessible-sets-wanted/is-monochromatic.md)
 - [$r$-accessibility for colorings of the positive integers](../../accessible-sets-wanted/is-raccessible.md)
-- [Lucas Number](../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

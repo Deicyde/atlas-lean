@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.lucasUPeriod
 ---
 
-# Lucas UPeriod
+# Period of a Lucas sequence modulo $m$
 
-The (least) period `π_U(m)` of the Lucas sequence `U(a, b)` modulo `m`: the minimal period
-of `(0, 1)` under the step `(x, y) ↦ (y, a * y + b * x)` on `ZMod m × ZMod m`, that is, the
-least positive `r` with `U r ≡ 0` and `U (r + 1) ≡ 1` modulo `m` (equation (1.11)). For
-`m > 0` it is `0` exactly when `U` is not purely periodic modulo `m`, i.e. when
-`gcd(m, b) > 1` (Remark 1.1); at `m = 0` the step acts on `ZMod 0 = ℤ` and the value carries
-no meaning for the paper (for Fibonacci it is `0` although `gcd(0, 1) = 1`).
+**Period of a Lucas sequence modulo $m$.** For a Lucas sequence $U = U(P, Q)$ and a natural
+number $m$, the least period $\pi_U(m)$ of $U$ modulo $m$ is the minimal period of the pair
+$(0, 1)$ under the map $(x, y) \mapsto (y, P y - Q x)$ on pairs of residues modulo $m$, that is,
+the least $r > 0$ with $U_r \equiv 0 \pmod m$ and $U_{r+1} \equiv 1 \pmod m$, and $0$ if there
+is no such $r$.
+
+For $m > 0$, $\pi_U(m) = 0$ exactly when $U$ is not purely periodic modulo $m$, that is, when
+$\gcd(m, Q) > 1$. For $m = 0$ the residues are integers and the congruences are equalities; this
+value has no meaning in the paper (for the Fibonacci sequence it is $0$).
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

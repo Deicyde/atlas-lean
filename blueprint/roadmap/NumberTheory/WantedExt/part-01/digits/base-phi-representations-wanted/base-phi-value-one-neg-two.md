@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.basePhiValue_one_neg_two
 ---
 
-# Base Phi Value one neg two
+# The base phi expansion $10.01$ has value two
 
-`β(2) = 10.01`, that is `φ + φ⁻² = 2`.
+**The base phi expansion $10.01$ has value two.** The base phi value of the set $\{1, -2\}$
+is $2$, that is, $\varphi + \varphi^{-2} = 2$, where $\varphi$ is the golden ratio.
 
 ## Depends on
 
-- [Base Phi Value](base-phi-value.md)
+- [Value of a base phi expansion](base-phi-value.md)
 
 ## Sources
 

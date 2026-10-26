@@ -6,17 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.melham_fibonacci_gibonacci_sum_of_squares
 ---
 
-# Melham fibonacci gibonacci sum of squares
+# Melham's gibonacci sum-of-squares identity
 
-Melham's Fibonacci-gibonacci sum-of-squares identity.
+**Melham's gibonacci sum-of-squares identity.** Let $G : \mathbb{Z} \to \mathbb{Z}$ satisfy
+$G(j+2) = G(j+1) + G(j)$ for every integer $j$, with $G(0) \ne 0$ or $G(1) \ne 0$, and let $F_m$
+denote the $m$-th Fibonacci number. Then for every integer $k$ and every natural number $n \ge 1$,
 
-Concept `jis_dep_be96b0afb535ec80f792ab13`.
+$$6\Bigl(\sum_{j=0}^{2n-1} G(k+j)^2\Bigr)^2 =
+F_{2n}^2\bigl(G(k+n-2)^4 + 4G(k+n-1)^4 + 4G(k+n)^4 + G(k+n+1)^4\bigr).$$
 
-Here `G` is a bi-infinite integer-valued gibonacci sequence, the finite range
-represents `j = 0, …, 2n - 1`, and `Nat.fib (2 * n)` represents `F_(2n)`.
-It follows from `melham_fibonacci_gibonacci_sum_of_squares_general`; the hypotheses
-`hG_nonzero` and `hn` are unused and keep the source's shape.
-Proves `Wanted` entry `melham_fibonacci_gibonacci_sum_of_squares`.
+The hypotheses $G(0) \ne 0$ or $G(1) \ne 0$ and $n \ge 1$ are not needed; they keep the shape of
+the source.
 
 ## Depends on
 
@@ -24,9 +24,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Melham fibonacci gibonacci sum of squares general](melham-fibonacci-gibonacci-sum-of-square.md)
+- [Melham's gibonacci sum-of-squares identity, general form](melham-fibonacci-gibonacci-sum-of-square.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MelhamGibonacci](../../../../../sources/v2/MathlibExt.md)
+- concept `jis_dep_be96b0afb535ec80f792ab13`.
 - <https://cs.uwaterloo.ca/journals/JIS/VOL27/Adegoke/adegoke12.tex>, lines 92–103, 877–880, and 1824–1828. Source hash `ebe2bfa5fe4599897b5f3944fbec475e37d8ef74af7d901116b07e8b81ba229b`.

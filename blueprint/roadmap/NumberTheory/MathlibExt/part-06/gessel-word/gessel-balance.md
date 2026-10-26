@@ -6,18 +6,22 @@ statement: formalized
 lean: MetaMathlibExt.gesselBalance
 ---
 
-# Gessel Balance
+# Signed balance of a label
 
-The signed balance of the unbarred and barred occurrences of the letter labeled `m`.
+**Signed balance of a label.** Let $n$ be a natural number, let $w$ be a word over the Gessel
+alphabet over $[n] = \{1, \dots, n\}$ and let $m$ be a natural number. The signed balance of $m$
+in $w$ is the integer obtained by subtracting the number of occurrences of the barred letter
+$\bar{m}$ in $w$ from the number of occurrences of the unbarred letter $m$ in $w$; it is $0$ when
+$m \notin [n]$.
 
 ## Depends on
 
-- [Gessel Alphabet](gessel-alphabet.md)
+- [Gessel alphabet](gessel-alphabet.md)
 
 ## Proof depends on
 
-- [Gessel Barred Count](gessel-barred-count.md)
-- [Gessel Unbarred Count](gessel-unbarred-count.md)
+- [Barred occurrences of a label](gessel-barred-count.md)
+- [Unbarred occurrences of a label](gessel-unbarred-count.md)
 
 ## Sources
 

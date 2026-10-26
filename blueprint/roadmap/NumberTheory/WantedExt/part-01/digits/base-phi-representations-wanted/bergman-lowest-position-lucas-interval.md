@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bergman_lowest_position_lucasInterval
 ---
 
-# Bergman lowest position lucas Interval
+# Lowest Bergman digit of $N$ from its Lucas interval
 
-Part (b): if the lowest digit `1` of `β(N)` is at position `R`, then `-R = 2n`
-for `N ∈ Λ_{2n}` and `-R = 2n + 2` for `N ∈ Λ_{2n+1}`.
+**Lowest Bergman digit of $N$ from its Lucas interval.** Let $N$ and $n$ be natural numbers,
+let $S$ be a finite set of integers with no two consecutive elements (a Bergman expansion) whose
+base phi value is $N$, and let $R$ be the least element of $S$. Write $L_m$ for the $m$-th Lucas
+number. If $L_{2n} \le N \le L_{2n+1}$, then $-R = 2n$. If $L_{2n+1} + 1 \le N \le L_{2n+2} - 1$,
+then $-R = 2n + 2$.
 
 ## Depends on
 
-- [Is Bergman Expansion](is-bergman-expansion.md)
-- [Base Phi Value](base-phi-value.md)
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Bergman expansions](is-bergman-expansion.md)
+- [Value of a base phi expansion](base-phi-value.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

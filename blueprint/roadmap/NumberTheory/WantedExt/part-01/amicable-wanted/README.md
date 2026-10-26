@@ -4,5 +4,5 @@ navigation: module
 
 # Amicable
 
-- [Lemma 1](tendsto-density-not-dvd-sigma.md)
-- [Lemma 2](sum-sigma-div-lt.md)
+- [A fixed positive integer divides the divisor sum of almost every natural number](tendsto-density-not-dvd-sigma.md)
+- [Linear bound for the partial sums of the abundancy index](sum-sigma-div-lt.md)

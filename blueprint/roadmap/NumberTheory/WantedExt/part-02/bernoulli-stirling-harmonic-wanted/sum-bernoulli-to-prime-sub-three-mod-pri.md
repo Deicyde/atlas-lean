@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_bernoulli_to_prime_sub_three_mod_prime
 ---
 
-# Sum bernoulli to prime sub three mod prime
+# The congruence $\sum_{j=0}^{p-3} B_j \equiv -1 \pmod p$
 
-For a prime `p >= 5`, the rational sum `B_0 + ... + B_(p-3)` has denominator not divisible
-by `p`, and its residue equals that of `-1`. The denominator clause and
-`ratResidue` equality are the formal replacement for rational congruence.
+**The congruence $\sum_{j=0}^{p-3} B_j \equiv -1 \pmod p$.** Let $B_j$ denote the Bernoulli
+numbers with $B_1 = -\tfrac12$. For every prime $p \ge 5$, the rational number
+$S = B_0 + B_1 + \dots + B_{p-3}$ has denominator not divisible by $p$, and its residue modulo
+$p$ (its numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.
 
 ## Depends on
 

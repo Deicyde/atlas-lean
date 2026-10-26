@@ -17,7 +17,7 @@ greatest common unitary divisor satisfies $\gcd_1(0, b) = 0$, since $0$ has no u
 
 ## Proof depends on
 
-- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

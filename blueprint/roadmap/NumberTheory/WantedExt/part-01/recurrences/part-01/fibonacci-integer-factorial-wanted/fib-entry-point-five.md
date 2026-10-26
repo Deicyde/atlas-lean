@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fibEntryPoint_five
 ---
 
-# Fib Entry Point five
+# Fibonacci entry point of $5$
 
-`z(5) = 5`.
+**Fibonacci entry point of $5$.** The least $m > 0$ such that $5$ divides the Fibonacci number
+$F_m$ is $5$, that is, the Fibonacci entry point of $5$ is $z(5) = 5$.
 
 ## Depends on
 
-- [Fib Entry Point](fib-entry-point.md)
+- [Entry point in the Fibonacci sequence](fib-entry-point.md)
 
 ## Sources
 

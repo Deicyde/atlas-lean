@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.pos_d
 ---
 
-# Pos d
+# The odd greedy choice is positive
 
-The odd greedy choice is a positive denominator.
+**The odd greedy choice is positive.** If $d$ is the odd greedy choice at a rational number
+$r$, then $d > 0$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Sources
 

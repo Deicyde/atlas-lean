@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.NormalNumber.IsNormalInBase.isSimplyNormalInBase
 ---
 
-# Is Simply Normal In Base
+# Normal numbers are simply normal
 
-Normality in a base implies simple normality in that base.
+**Normal numbers are simply normal.** If a real number $x$ is normal in base $b$, then $x$ is
+simply normal in base $b$.
 
 ## Depends on
 
-- [Is Normal In Base](is-normal-in-base.md)
-- [Is Simply Normal In Base](is-simply-normal-in-base.md)
+- [Normal numbers](is-normal-in-base.md)
+- [Simply normal numbers](is-simply-normal-in-base.md)
 
 ## Proof depends on
 
-- [Digit Seq](digit-seq.md)
+- [Base-$b$ digits of a real number](digit-seq.md)
 
 ## Sources
 

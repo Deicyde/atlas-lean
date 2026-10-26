@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsNegBaseGood
 ---
 
-# Is Neg Base Good
+# Good sets for the digit-square map
 
-A finite set `T` is `(2, b)`-good if for each `u ∈ U_{2,b}` there exist `n, k ≥ 1` with
-`S_{2,b}^k(t + n) = u` for every `t ∈ T`.
+**Good sets for the digit-square map.** For an integer $b$, let $S_{2,b}$ be the base-$b$
+digit-square map, which for $b \le -2$ sends an integer to the sum of the squares of its base-$b$
+digits; write $S_{2,b}^k$ for its $k$-fold iterate, and let $U_{2,b}$ be the set of positive
+integers $u$ with $S_{2,b}^m(u) = u$ for some $m \ge 1$. A finite set $T$ of integers is
+$(2, b)$-good if for each $u \in U_{2,b}$ there are integers $n \ge 1$ and $k \ge 1$ such that
+$S_{2,b}^k(t + n) = u$ for every $t \in T$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Cycles](neg-base-sq-digit-cycles.md)
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Cycles of the negative-base digit-square map](neg-base-sq-digit-cycles.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Sources
 

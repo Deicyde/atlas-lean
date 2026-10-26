@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.exactly_coprime_pairs_count_asymp
 ---
 
-# Exactly coprime pairs count asymp
+# Asymptotic count of tuples with exactly $r$ coprime pairs
 
-Theorem 11, equation (asympt_form_exact): the number of `n ∈ [1, x]^k` with
-exactly `r` coprime pairs is `C_{k,r} x^k + O(x^{k-1} (log x)^{k-1})`, where
-`C_{k,r} = ∑_{j=r}^{k(k-1)/2} (-1)^{j-r} binom(j, r) ∑_{|E| = j} A_G`.
+**Asymptotic count of tuples with exactly $r$ coprime pairs.** Let $k \ge 2$ and $r \ge 0$.
+For a set $E$ of pairs $(a, b)$ with $0 \le a < b < k$, let $A_E$ be the coprimality density of
+the graph with edge set $E$, and put
+
+$$C_{k,r} = \sum_{j=r}^{k(k-1)/2} (-1)^{j-r} \binom{j}{r} \sum_{|E| = j} A_E,$$
+
+where the inner sum runs over the $j$-element sets $E$ of such pairs. Then there is a real
+constant $C$ such that for every integer $N \ge 2$ the number $T_r(N)$ of tuples
+$n \in \{1, \dots, N\}^k$ with exactly $r$ coprime pairs satisfies
+
+$$|T_r(N) - C_{k,r} N^k| \le C N^{k-1} (\log N)^{k-1}.$$
 
 ## Depends on
 
-- [Coprimality Density](coprimality-density.md)
-- [Coprime Pair Count](coprime-pair-count.md)
+- [Coprimality density of a graph](coprimality-density.md)
+- [Number of coprime pairs](coprime-pair-count.md)
 
 ## Sources
 

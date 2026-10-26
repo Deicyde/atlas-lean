@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.AscLexLT
 ---
 
-# Asc Lex LT
+# Ascending lexicographic order
 
-The ascending lexicographic order `μ <_a ν` on coefficient functions with finite support:
-at the largest index where they differ, `μ` is smaller (some `k` has `μ_k < ν_k` and
-`μ_j = ν_j` for all `j > k`).
+**Ascending lexicographic order.** For coefficient functions
+$\mu, \nu \colon \mathbb{N} \to \mathbb{N}$ with finite support, $\mu \lt _a \nu$ means that there
+is an index $k$ with $\mu_k < \nu_k$ and $\mu_j = \nu_j$ for all $j > k$: at the largest index
+where they differ, $\mu$ is smaller.
 
 ## Depends on
 

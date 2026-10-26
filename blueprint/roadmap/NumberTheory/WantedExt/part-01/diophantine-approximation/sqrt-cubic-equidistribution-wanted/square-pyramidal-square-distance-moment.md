@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.squarePyramidalSquareDistance_moment_asymptotic
 ---
 
-# Square Pyramidal Square Distance moment asymptotic
+# Moments of the distance from square pyramidal numbers to the nearest square
 
-For each positive integer `k`, the `k`-th moment `M_k(x) = ∑_{1 ≤ n ≤ x} a_n^k` satisfies
-`M_k(x) = x^{3k/2 + 1} / (3^{k/2} (3k/2 + 1)(k + 1)) + O_k(x^{3k/2 + 3/4})` for real `x ≥ 1`.
+**Moments of the distance from square pyramidal numbers to the nearest square.** Let $a_n$
+be the distance from the $n$-th square pyramidal number to the nearest square, and for a
+positive integer $k$ and real $x \ge 1$ let $M_k(x) = \sum_{1 \le n \le x} a_n^k$. For every
+positive integer $k$ there is a real constant $C_k$ such that for every real $x \ge 1$,
+
+$$\Bigl|M_k(x) - \frac{x^{3k/2 + 1}}{3^{k/2} (3k/2 + 1)(k + 1)}\Bigr| \le C_k x^{3k/2 + 3/4}.$$
 
 ## Depends on
 
-- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
+- [Distance from a square pyramidal number to the nearest square](square-pyramidal-square-distance.md)
 
 ## Sources
 

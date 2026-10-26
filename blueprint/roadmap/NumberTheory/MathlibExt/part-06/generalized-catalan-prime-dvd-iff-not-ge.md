@@ -7,14 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedCatalan_prime_dvd_iff_not_geometric_sum
 ---
 
-# Generalized Catalan Prime Divisibility
+# Prime divisibility of generalized Catalan numbers
 
-A prime `p` divides the generalized Catalan number `C (p * n) n / ((p - 1) * n + 1)`
-if and only if `n` is not a geometric-sum index `(p ^ k - 1) / (p - 1)`.
+**Prime divisibility of generalized Catalan numbers.** Let $p$ be a prime and $n$ a natural
+number. Then $p$ divides the generalized Catalan number $\frac{1}{(p-1)n+1}\binom{pn}{n}$ (an
+integer) if and only if $n$ is not of the form $\frac{p^k-1}{p-1}$ for any natural number $k$.
 
 The source theorem's "in particular" Mersenne-index clause is already recorded
 as `catalan_odd_iff`; this declaration keeps only the new general-`p` result.
-Proves `Wanted` entry `generalizedCatalan_prime_dvd_iff_not_geometric_sum`.
 
 ## Depends on
 

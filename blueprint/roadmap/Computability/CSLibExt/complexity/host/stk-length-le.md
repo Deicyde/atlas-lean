@@ -15,7 +15,7 @@ some label, state $v'$ and stacks $S'$, then every stack of $S'$ has length at m
 
 ## Depends on
 
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Push bound of a finite multi-stack Turing machine](../../../MathlibExt/turing-machine/composition/push-bound.md)
 - [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on

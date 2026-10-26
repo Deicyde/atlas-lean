@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.monicDivisorCount_one
 ---
 
-# Monic Divisor Count one
+# The divisor functions at $1$
 
-`d_h(1) = 1`.
+**The divisor functions at $1$.** Let $F$ be a field and $h$ a natural number. Then
+$d_h(1) = 1$, where $d_h(f)$ is the number of $h$-tuples of monic polynomials in $F[T]$ whose
+product is $f$: the only such tuple for $f = 1$ has every entry equal to $1$.
 
 ## Depends on
 
-- [Monic Divisor Count](monic-divisor-count.md)
+- [The $h$-fold divisor function](monic-divisor-count.md)
 
 ## Sources
 

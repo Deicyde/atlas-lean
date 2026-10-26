@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.balancingNum
 ---
 
-# Balancing Num
+# Balancing numbers
 
-The balancing numbers `B_n`, defined by `B_0 = 0`, `B_1 = 1` and
-`B_{n+2} = 6 B_{n+1} - B_n`.
+**Balancing numbers.** The balancing numbers are the integers $B_n$ for $n \in \mathbb{N}$
+defined by $B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 6 B_{n+1} - B_n$ for all $n$.
 
 ## Depends on
 

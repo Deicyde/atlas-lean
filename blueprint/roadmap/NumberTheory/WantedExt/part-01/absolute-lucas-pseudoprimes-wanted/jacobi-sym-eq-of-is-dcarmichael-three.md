@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.jacobiSym_eq_of_isDCarmichael_three
 ---
 
-# Jacobi Sym eq of is DCarmichael three
+# Three-prime-factor $D$-Carmichael numbers have a single Jacobi sign
 
-There are no three-prime-factor numbers that are bi-Carmichael with respect to two signatures
-of opposite signs: if `n` has three prime factors and is `D`- and `D'`-Carmichael, then
-`(D | n) = (D' | n)`.
+**Three-prime-factor $D$-Carmichael numbers have a single Jacobi sign.** Let $D$ and $D'$ be
+integers and let $n$ be a natural number with exactly three distinct prime factors. If $n$ is both
+$D$-Carmichael and $D'$-Carmichael, then the Jacobi symbols agree:
+$\left(\frac{D}{n}\right) = \left(\frac{D'}{n}\right)$.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

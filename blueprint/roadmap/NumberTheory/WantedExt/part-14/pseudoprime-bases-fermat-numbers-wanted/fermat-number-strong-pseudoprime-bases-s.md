@@ -17,7 +17,7 @@ multiplicative order `128 = 2 ^ (k + 2)` modulo `F_5`, so `S_5` is cyclic.
 
 ## Depends on
 
-- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
+- [Strong pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominatorLargePart_small
 ---
 
-# Bernoulli Diff Denominator Large Part small
+# Small values of $\mathbb{D}^+_n$
 
-Values `𝔻^+_4 = 1`, `𝔻^+_5 = 3`, `𝔻^+_9 = 5`.
+**Small values of $\mathbb{D}^+_n$.** Write $s_p(n)$ for the sum of the base-$p$ digits of
+$n$, and let $\mathbb{D}^+_n$ be the product of the primes $p$ with $p^2 > n$ and
+$s_p(n) \ge p$. Then $\mathbb{D}^+_4 = 1$, $\mathbb{D}^+_5 = 3$ and $\mathbb{D}^+_9 = 5$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+- [Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

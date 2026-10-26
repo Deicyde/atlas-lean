@@ -7,22 +7,25 @@ proof: formalized
 lean: IntegerComplexity.complexity_le
 ---
 
-# Complexity le
+# Expressions bound the integer complexity from above
 
-Minimality: complexity is least leaf count. Source C4.
+**Expressions bound the integer complexity from above.** Let $n$ be a positive integer. If
+an expression $e$ has value $n$, then the integer complexity of $n$ is at most the number of
+ones of $e$.
 
 ## Depends on
 
-- [Expr](expr.md)
-- [Count](count.md)
-- [Eval](eval.md)
-- [Complexity](complexity.md)
+- [Expressions built from one, addition and multiplication](expr.md)
+- [Number of ones in an expression](count.md)
+- [Value of an expression](eval.md)
+- [Integer complexity](complexity.md)
 
 ## Proof depends on
 
-- [Pred](pred.md)
-- [Exists expr of pos](exists-expr-of-pos.md)
+- [Achievable numbers of ones](pred.md)
+- [Every positive integer is the value of an expression](exists-expr-of-pos.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IntegerComplexity](../../../../../sources/v2/MathlibExt.md)
+- C4.

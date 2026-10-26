@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.div_log_sub_three_terms_lt_primeCounting
 ---
 
-# Div log sub three terms lt prime Counting
+# Axler's unconditional three-term lower bound for the prime-counting function
 
-Unconditional form of the lower bound `π(x) > x / (log x - 1 - 1/log x - 3/log² x)`
-(the paper's inequality (14)), for every real `x ≥ 65405887`; earlier it was known on
-`[65405887, 2.7358·10⁴⁰]`, for `x ≥ 4.8447·10¹⁹³⁷⁷`, and for all `x ≥ 65405887` under the Riemann
-hypothesis. `π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's unconditional three-term lower bound for the prime-counting function.** Let
+$\pi(x)$ denote the number of primes $p \le x$ and $\log$ the natural logarithm. For every real
+$x \ge 65405887$,
+
+$$
+\pi(x) > \frac{x}{\log x - 1 - \frac{1}{\log x} - \frac{3}{\log^2 x}}.
+$$
+
+This is the paper's inequality (14). Before, it was known on the interval
+$[65405887, 2.7358 \cdot 10^{40}]$, for $x \ge 4.8447 \cdot 10^{19377}$, and for all
+$x \ge 65405887$ under the Riemann hypothesis.
 
 ## Depends on
 

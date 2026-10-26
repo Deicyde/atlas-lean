@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coprimePairCount_small_values
 ---
 
-# Coprime Pair Count small values
+# Number of coprime pairs: examples
 
-Small values: `(2, 3, 4)` has two coprime pairs and `(6, 10, 15)` is
-pairwise non-coprime.
+**Number of coprime pairs: examples.** The triple $(2, 3, 4)$ has exactly two coprime pairs
+of components, and the triple $(6, 10, 15)$ has none, that is, its components are pairwise
+non-coprime.
 
 ## Depends on
 
-- [Coprime Pair Count](coprime-pair-count.md)
+- [Number of coprime pairs](coprime-pair-count.md)
 
 ## Sources
 

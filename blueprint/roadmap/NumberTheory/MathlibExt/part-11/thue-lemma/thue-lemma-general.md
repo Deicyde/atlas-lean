@@ -7,11 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.thue_lemma_general
 ---
 
-# Thue lemma general
+# Thue's lemma, general form
 
-Thue's lemma without a lower bound on `a`: for `n > 1` and `a` coprime to `n` there are
-nonzero `x`, `y` with `|x|, |y| < √n` and `x ≡ a * y [ZMOD n]`. `thue_lemma` is the
-source-shaped form.
+**Thue's lemma, general form.** Let $a$ and $n$ be integers with $n > 1$ and
+$\gcd(a, n) = 1$. Then there exist nonzero integers $x$ and $y$ with $|x| < \sqrt{n}$,
+$|y| < \sqrt{n}$ and $x \equiv a y \pmod{n}$. Unlike the source form of Thue's lemma, no lower
+bound on $a$ is assumed.
 
 ## Depends on
 

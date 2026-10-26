@@ -6,13 +6,14 @@ proof: formalized
 lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_iff
 ---
 
-# Is Imaginary Quadratic Discriminant iff
+# Characterization of imaginary quadratic discriminants
 
-Exact unfolding of `IsImaginaryQuadraticDiscriminant`.
+**Characterization of imaginary quadratic discriminants.** An integer $D$ is an imaginary
+quadratic discriminant if and only if $D < 0$ and $D$ is congruent to $0$ or $1$ modulo $4$.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

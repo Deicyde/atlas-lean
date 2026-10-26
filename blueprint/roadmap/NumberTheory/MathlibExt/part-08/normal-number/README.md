@@ -5,8 +5,8 @@ navigation: module
 
 # Normal Number
 
-- [Digit Seq](digit-seq.md)
-- [Is Simply Normal In Base](is-simply-normal-in-base.md)
-- [Is Normal In Base](is-normal-in-base.md)
-- [Is Simply Normal In Base](is-simply-normal-in-base-2.md)
-- [Is Absolutely Normal](is-absolutely-normal.md)
+- [Base-$b$ digits of a real number](digit-seq.md)
+- [Simply normal numbers](is-simply-normal-in-base.md)
+- [Normal numbers](is-normal-in-base.md)
+- [Normal numbers are simply normal](is-simply-normal-in-base-2.md)
+- [Absolutely normal numbers](is-absolutely-normal.md)

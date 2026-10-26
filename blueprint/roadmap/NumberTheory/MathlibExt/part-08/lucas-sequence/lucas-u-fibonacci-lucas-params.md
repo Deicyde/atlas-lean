@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.lucasU_fibonacciLucasParams
 ---
 
-# Lucas U fibonacci Lucas Params
+# The Lucas sequence $U(1, -1)$ is the Fibonacci sequence
 
-The `U` sequence for `(P, Q) = (1, -1)` is the Fibonacci sequence.
+**The Lucas sequence $U(1, -1)$ is the Fibonacci sequence.** For every natural number $n$,
+the $n$-th term of the Lucas sequence $U(1, -1)$ equals the Fibonacci number $F_n$, where
+$F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$.
 
 ## Depends on
 
-- [Fibonacci Lucas Params](fibonacci-lucas-params.md)
-- [Lucas U](lucas-u.md)
+- [Fibonacci parameters for Lucas sequences](fibonacci-lucas-params.md)
+- [Lucas sequence $U(P, Q)$](lucas-u.md)
 
 ## Proof depends on
 
-- [Lucas Sequence Params](lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](lucas-sequence-params.md)
 
 ## Sources
 

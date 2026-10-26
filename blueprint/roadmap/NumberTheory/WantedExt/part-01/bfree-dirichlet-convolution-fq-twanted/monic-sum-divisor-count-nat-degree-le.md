@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.monic_sum_divisorCount_natDegree_le
 ---
 
-# Monic sum divisor Count nat Degree le
+# Summatory divisor function for monic polynomials over a finite field
 
-`∑_{f ∈ M, deg f ≤ N} (1 * 1)(f) = ((N + 1) q^{N+2} - (N + 2) q^{N+1} + 1) / (q - 1)^2`, where
-`(1 * 1)(f)` is the number of monic divisors of `f` (Proposition 4, case `h = 2`, `m = 1`).
+**Summatory divisor function for monic polynomials over a finite field.** Let $F$ be a finite
+field with $q$ elements. For monic $f \in F[T]$, the Dirichlet convolution $(1 * 1)(f)$ of the
+constant function $1$ with itself is the number of monic divisors of $f$. Then for every natural
+number $N$,
+
+$$\sum_{f \text{ monic},\ \deg f \le N} (1 * 1)(f) =
+\frac{(N + 1) q^{N + 2} - (N + 2) q^{N + 1} + 1}{(q - 1)^2}.$$
 
 ## Depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

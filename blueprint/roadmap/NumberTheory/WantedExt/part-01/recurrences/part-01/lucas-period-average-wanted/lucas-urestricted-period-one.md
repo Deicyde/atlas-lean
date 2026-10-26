@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.lucasURestrictedPeriod_one
 ---
 
-# Lucas URestricted Period one
+# Restricted period of a Lucas sequence modulo 1
 
-`ρ_U(1) = 1`.
+**Restricted period of a Lucas sequence modulo 1.** For every Lucas sequence $U = U(P, Q)$,
+the least restricted period $\rho_U(1)$ of $U$ modulo $1$ equals $1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Proof depends on
 
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

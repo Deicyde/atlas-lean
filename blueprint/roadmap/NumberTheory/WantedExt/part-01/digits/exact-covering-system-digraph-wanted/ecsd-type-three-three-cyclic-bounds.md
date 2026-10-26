@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_type_three_three_cyclic_bounds
 ---
 
-# Ecsd type three three cyclic bounds
+# Bounds on the cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 2 \pmod 3$
 
-For `a ∈ ℤ` even with `a ≡ 2 (mod 3)`, every cyclic vertex `m` of the Type 3.3 ECSD
-`G(-2n + 1, -2n + a)` satisfies `-(a - 1)/3 < m < 2a/3` if `a ≥ 2`, and
-`-2(|a| + 1)/3 < m < |a|/3 + 1` if `a ≤ -2`.
+**Bounds on the cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 2 \pmod 3$.** Let $a$
+be an even integer with $a \equiv 2 \pmod 3$, and let $m$ be an integer such that the digraph
+$G(-2n + 1, -2n + a)$ on $\mathbb{Z}$, with an edge $x \to -2x + 1$ and an edge $x \to -2x + a$
+for every integer $x$, has a directed walk of positive length from $m$ back to $m$. If $a \ge 2$,
+then $-(a - 1)/3 < m < 2a/3$; if $a \le -2$, then $-2(|a| + 1)/3 < m < (|a| + 3)/3$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

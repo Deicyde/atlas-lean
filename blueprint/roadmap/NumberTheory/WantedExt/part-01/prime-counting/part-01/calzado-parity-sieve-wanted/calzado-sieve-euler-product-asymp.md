@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.calzado_sieve_euler_product_asymp
 ---
 
-# Calzado sieve euler product asymp
+# Size of the Euler product of a sieve of dimension $k$
 
-Lemma 3: if `P` is a set of primes, `0 ≤ ω(p) < p` for `p ∈ P`, and the
-sieve has dimension `k`, i.e. `∑_{t ≤ p < z, p ∈ P} ω(p) log p / p =
-k log (z / t) + O(1)` uniformly for `2 ≤ t ≤ z`, then
-`V(z) = ∏_{p < z, p ∈ P} (1 - ω(p) / p) ≍ (log z)^{-k}` for `z ≥ 2`.
-The constants depend on `ω` and `P`, not only on `k`.
+**Size of the Euler product of a sieve of dimension $k$.** Let $P$ be a set of primes, $k > 0$
+a real number, and $\omega$ a real-valued function on the natural numbers with
+$0 \le \omega(p) < p$ for $p \in P$. Suppose there is a constant $C_0$ with
+$|\sum_{p \in P,\ t \le p < z} \omega(p) \log p / p - k \log(z/t)| \le C_0$ for all real $t$ and
+$z$ with $2 \le t \le z$. Then there are constants $c > 0$ and $C > 0$ such that for every real
+$z \ge 2$, $c / (\log z)^k \le \prod_{p \in P,\ p < z} (1 - \omega(p)/p) \le C / (\log z)^k$.
+
+The constants depend on $\omega$ and $P$, not only on $k$.
 
 ## Depends on
 

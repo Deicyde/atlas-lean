@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.infinite_carmichael_prime_cardFactors_of_heathBrown
 ---
 
-# Infinite carmichael prime card Factors of heath Brown
+# Infinitely many Carmichael numbers with a prime number of prime factors (conditional)
 
-Conditional on Heath-Brown's conjecture (least prime in a reduced residue class modulo `d`
-is at most `C d log² d`), there are infinitely many Carmichael numbers `n` with `Ω(n)` prime.
+**Infinitely many Carmichael numbers with a prime number of prime factors (conditional).**
+Suppose there is a real constant $C$ such that for every natural number $d \ge 2$ and every
+natural number $c$ coprime to $d$ there is a prime $p \equiv c \pmod{d}$ with
+$p \le C d (\log d)^2$ (Heath-Brown's conjecture on the least prime in an arithmetic
+progression). Then there are infinitely many Carmichael numbers $n$ whose number of prime
+factors counted with multiplicity, $\Omega(n)$, is prime.
 
 ## Depends on
 

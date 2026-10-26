@@ -5,22 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.kaprekarMap_fixed_iff
 ---
 
-# Kaprekar Map fixed iff
+# Classification of decimal Kaprekar numbers
 
-Theorem 3.1: for `n ≥ 3`, a nonzero `α ∈ D_n` is a Kaprekar number if and only if it lies in
-one of the sets `T_1, …, T_5` of Definition 2.1, i.e. it equals `f(s)` for a digit string `s` of
-length `n` of one of the forms (`x ≥ 1`, `y ≥ 0`, blocks repeated as indicated)
-`(495)^{x_1}`; `6174 (36)^{y_2}`; `(123456789)^{x_3} (36)^{y_3}`;
-`(123456789)^{x_{4,1}} (36)^{x_{4,2}} (495)^{2x_{4,2}} (27)^{3x_{4,2}}`;
-`(124578)^{x_{5,1}} (09)^{x_{5,2}} (123456789)^{y_{5,1}} (36)^{y_{5,2}}`.
-Membership of `α ∈ D_n` in `T_i` is read in `D`, where strings of different lengths are
-different elements, so the witness string has length `n` (as numbers, `495 ∈ T_1` is below
-`10^4` but is not a Kaprekar number of `D_4`). The record's "digit `α`" is the number `α`.
+**Classification of decimal Kaprekar numbers.** Let $n \ge 3$ and $0 < \alpha < 10^n$. Then
+the Kaprekar map on $n$-digit strings fixes $\alpha$ if and only if $\alpha$ is the Kaprekar
+difference of some string $s$ of exactly $n$ decimal digits of one of the following five forms,
+where juxtaposition is concatenation, $(w)^k$ is the block $w$ repeated $k$ times, and in each
+form the exponents are chosen independently with $x, x_1, x_2 \ge 1$ and $y, y_1, y_2 \ge 0$:
+$(495)^x$; $6174\,(36)^y$; $(123456789)^x (36)^y$;
+$(123456789)^{x_1} (36)^{x_2} (495)^{2x_2} (27)^{3x_2}$;
+$(124578)^{x_1} (09)^{x_2} (123456789)^{y_1} (36)^{y_2}$.
+
+The witness string must have length $n$: $495$ is the Kaprekar difference of $(495)^1$, but the
+Kaprekar map on $4$-digit strings sends $495$ to $9081$.
 
 ## Depends on
 
-- [Kaprekar Diff](kaprekar-diff.md)
-- [Kaprekar Map](kaprekar-map.md)
+- [Kaprekar difference](kaprekar-diff.md)
+- [Kaprekar map](kaprekar-map.md)
 
 ## Sources
 

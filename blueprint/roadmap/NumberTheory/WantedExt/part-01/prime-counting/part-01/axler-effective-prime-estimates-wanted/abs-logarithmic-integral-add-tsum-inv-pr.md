@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt
 ---
 
-# Abs logarithmic Integral add tsum inv prime pow lt
+# Tails of prime power sums from a Chebyshev bound
 
-Tails of prime power sums from a Chebyshev bound: let `k ≥ 1`, `η > 0`, `x₀ > 1` with
-`|ϑ(y) - y| < η y / logᵏ y` for every `y ≥ x₀`. Then for every integer `n ≥ 2` and `x ≥ x₀`,
-`|li(x^{1-n}) + ∑_{p > x} 1/pⁿ| < η (1 + n/(n-1)) / (x^{n-1} log^{k+1} x)`.
+**Tails of prime power sums from a Chebyshev bound.** Let $k \ge 1$ be an integer and let
+$\eta > 0$ and $x_0 > 1$ be reals such that $|\vartheta(y) - y| < \eta y / \log^k y$ for every
+real $y \ge x_0$, where $\vartheta(y) = \sum_{p \le y} \log p$ is Chebyshev's function. Then
+for every integer $n \ge 2$ and every real $x \ge x_0$,
+
+$$
+\Big|\operatorname{li}(x^{1-n}) + \sum_{p > x} \frac{1}{p^n}\Big| <
+\frac{\eta}{x^{n-1} \log^{k+1} x} \Big(1 + \frac{n}{n-1}\Big),
+$$
+
+where $\operatorname{li}$ is the logarithmic integral and the sums run over primes $p$.
 
 ## Depends on
 

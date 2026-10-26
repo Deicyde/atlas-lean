@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.isLeast_lucasAverageSet_of_odd
 ---
 
-# Is Least lucas Average Set of odd
+# Odd moduli in the average set when $P \equiv 2$ and $Q \equiv 1$
 
-Theorem 2.19: for nondegenerate `U(a, b)` with `a + b - 1 ≠ 0` and odd `n` with
-`a ≡ 2`, `b ≡ -1 (mod rad(n))`: `rad(n) ∣ D`, `C'(n) = C(n) = n`, and `A_W(n)` is an integer
-for all `W(a, b)`. Congruences modulo `rad(n)` are stated prime by prime (equivalent by the
-Chinese remainder theorem), and `C`, `C'` as `IsLeast`.
+**Odd moduli in the average set when $P \equiv 2$ and $Q \equiv 1$.** Let $(P, Q)$ be a
+nondegenerate Lucas pair with $P - Q - 1 \ne 0$, Lucas sequence $U$, period set $S(U)$ and average
+set $S'(U)$. Let $n \ge 1$ be odd, and suppose that $P \equiv 2$ and $Q \equiv 1 \pmod{\ell}$ for
+every prime $\ell$ dividing $n$. Then every prime dividing $n$ divides $P^2 - 4Q$, $n$ is the
+least element of $S'(U)$ divisible by $n$ and the least element of $S(U)$ divisible by $n$, and
+$n$ divides $w_1 + \dots + w_n$ for every integer sequence $w$ with
+$w_{j+2} = P w_{j+1} - Q w_j$ for all $j$.
+
+In the paper's notation $a = P$ and $b = -Q$: the hypotheses read $a + b - 1 \ne 0$, $a \equiv 2$
+and $b \equiv -1 \pmod{\operatorname{rad}(n)}$, and $P^2 - 4Q$ is the discriminant $D = a^2 + 4b$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

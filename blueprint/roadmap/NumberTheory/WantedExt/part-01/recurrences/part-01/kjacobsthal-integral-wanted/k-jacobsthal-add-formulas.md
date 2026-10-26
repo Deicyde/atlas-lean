@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.kJacobsthal_add_formulas
 ---
 
-# K Jacobsthal add formulas
+# Addition formulas for k-Jacobsthal numbers
 
-Addition formulas: `2J_{k,m+n} = J_{k,m} j_{k,n} + J_{k,n} j_{k,m}` and
-`2j_{k,m+n} = j_{k,m} j_{k,n} + Δ_k² J_{k,m} J_{k,n}`.
+**Addition formulas for k-Jacobsthal numbers.** Let $k$, $m$ and $n$ be natural numbers and
+let $J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and
+$k$-Jacobsthal–Lucas numbers. Then $2J_{k,m+n} = J_{k,m} j_{k,n} + J_{k,n} j_{k,m}$ and
+$2j_{k,m+n} = j_{k,m} j_{k,n} + (k^2 + 8) J_{k,m} J_{k,n}$.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

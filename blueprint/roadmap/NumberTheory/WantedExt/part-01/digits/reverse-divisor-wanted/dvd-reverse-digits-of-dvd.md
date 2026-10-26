@@ -5,12 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.dvd_reverseDigits_of_dvd
 ---
 
-# Proposition 5
+# In base $B$, divisors of $B^2 - 1$ divide reversals of their multiples
 
-**Proposition 5**: in base `B ≥ 2`, every positive
-divisor of `B^2 - 1` has the base-`B` property `P_B*`:
-it divides the base-`B` reversal of each of its
-multiples.
+**In base $B$, divisors of $B^2 - 1$ divide reversals of their multiples.** Let $B \ge 2$ be
+a natural number and let $n$ be a natural number dividing $B^2 - 1$. Then $n$ divides the
+base-$B$ reversal of every multiple of $n$.
 
 ## Depends on
 

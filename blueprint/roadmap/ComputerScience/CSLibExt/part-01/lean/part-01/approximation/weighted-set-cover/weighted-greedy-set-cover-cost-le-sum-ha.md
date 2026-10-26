@@ -18,7 +18,7 @@ $H(n) = 1 + \frac{1}{2} + \dots + \frac{1}{n}$ is the $n$-th harmonic number.
 ## Depends on
 
 - [Total cost of a list of sets](total-cost.md)
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+- [Weighted greedy set cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

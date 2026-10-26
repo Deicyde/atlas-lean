@@ -7,7 +7,7 @@ article_id: af_f9d76512d7492f333510693b
 - [Arithmetic Function Perpendicularity](arithmetic-function-perpendicularity-wanted/README.md)
 - [Biunitary Triperfect](biunitary-triperfect-wanted/README.md)
 - [Consecutive Square Sums Additive Uniqueness](consecutive-square-sums-additive-uniqueness-want/README.md)
-- [Explicit Mertens Bound Wanted](summatory-moebius-div-bound.md)
+- [Explicit bounds for the summatory function of $\mu(n)/n$](summatory-moebius-div-bound.md)
 - [Hyperbolic Floor Sum](hyperbolic-floor-sum-wanted/README.md)
 - [Multiplicative Triangular Additive](multiplicative-triangular-additive-wanted/README.md)
 - [Nonagonal Additive Uniqueness](nonagonal-additive-uniqueness-wanted/README.md)

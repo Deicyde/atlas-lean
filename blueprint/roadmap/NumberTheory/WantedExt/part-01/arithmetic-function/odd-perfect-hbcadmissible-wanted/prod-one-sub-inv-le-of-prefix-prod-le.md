@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.prod_one_sub_inv_le_of_prefix_prod_le
 ---
 
-# Prod one sub inv le of prefix prod le
+# Comparison of products of $1 - 1/x$ under prefix-product domination
 
-A product comparison for `1 - 1/x`: let `(z_i)` and `(y_i)` be non-decreasing `k`-tuples of
-reals greater than one with `∏_{i ≤ l} z_i ≤ ∏_{i ≤ l} y_i` for all `1 ≤ l ≤ k` (10). Then
-`∏_{i=1}^k (1 - 1/z_i) ≤ ∏_{i=1}^k (1 - 1/y_i)`, with equality if and only if `z_i = y_i` for
-all `i`. Tuples are indexed by `Fin k` (`i = 0, …, k-1`), and the prefix condition is stated for
-every `l ≤ k` (the case `l = 0` is the empty product).
+**Comparison of products of $1 - 1/x$ under prefix-product domination.** Let $k \ge 0$ and let
+$z_1 \le \dots \le z_k$ and $y_1 \le \dots \le y_k$ be real numbers, all greater than $1$, such
+that $z_1 \cdots z_l \le y_1 \cdots y_l$ for every $l$ with $0 \le l \le k$ (for $l = 0$ both sides
+are the empty product). Then $\prod_{i=1}^k (1 - 1/z_i) \le \prod_{i=1}^k (1 - 1/y_i)$, with
+equality if and only if $z_i = y_i$ for all $i$.
 
 ## Depends on
 

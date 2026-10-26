@@ -5,21 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.div_rpow_lt_add_div_add_rpow_of_genericBound
 ---
 
-# Div rpow lt add div add rpow of generic Bound
+# Monotonicity of the ratio under steep increments
 
-Lemma 18, read for `x = ∑ ε Q̃ ≥ ω̃` (as Lemma 17): with `y = ∑ rev̄(ε) Q`, positive `Δx`, `Δy`
-with `(ω/ω̃)^p ≤ Δy/Δx` give `y/x^γ < (y + Δy)/(x + Δx)^γ`. As printed (all `ε ∈ Ẽ*`) it fails for
-`L = (1, 0)`, `L̃ = (1, 1)`, `ε = β^4` (`x = 1/16`, `y = ω^4`, `y/x^γ = 1`),
-`Δx = 10⁻⁸`, `Δy = (ω/ω̃)^2 Δx`: the right side is `0.99999999364…`.
+**Monotonicity of the ratio under steep increments.** Let $L$ and $\tilde L$ form a periodic
+Zeckendorf pair, let $Q$ be a fundamental sequence of the collection $E^*$ determined by $L$, and
+let $\tilde Q$ be a fundamental sequence of the collection $\tilde E^*$ determined by $\tilde L$.
+Put $\omega = Q_0$, $\tilde\omega = \tilde Q_0$ and $\gamma = \log_{\tilde\omega} \omega$, and let
+$p$ be the generic exponent of $Q, \tilde Q$. Let $\varepsilon \in \tilde E^*$ with
+$x = \sum_k \varepsilon_k \tilde Q_k \ge \tilde\omega$, and put
+$y = \sum_k \overline{\mathrm{rev}}(\varepsilon)_k Q_k$, with $\overline{\mathrm{rev}}$ taken
+with respect to $L$. If $\Delta x > 0$, $\Delta y > 0$ and
+$(\omega / \tilde\omega)^p \le \Delta y / \Delta x$, then
+$y / x^\gamma < (y + \Delta y) / (x + \Delta x)^\gamma$.
+
+The hypothesis $x \ge \tilde\omega$ follows the reading of Lemma 17. As printed (for all
+$\varepsilon \in \tilde E^*$) the lemma fails for $L = (1, 0)$, $\tilde L = (1, 1)$, $\varepsilon$
+the coefficient function with a single $1$ at index $3$ ($x = 1/16$, $y = \omega^4$,
+$y / x^\gamma = 1$), $\Delta x = 10^{-8}$ and $\Delta y = (\omega / \tilde\omega)^2 \Delta x$: the
+right side is $0.99999999364\ldots$.
 
 ## Depends on
 
-- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Fundamental sequence of an $L^\ast$-collection](is-lstar-fundamental-sequence.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [L Star Collection](l-star-collection.md)
-- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [The generic exponent](zeckendorf-generic-exponent.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Sources
 

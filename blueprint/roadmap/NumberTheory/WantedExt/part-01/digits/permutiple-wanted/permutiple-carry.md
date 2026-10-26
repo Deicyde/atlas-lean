@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.permutipleCarry
 ---
 
-# Permutiple Carry
+# Carries of a permutiple multiplication
 
-The carries `c_j` of the single-digit multiplication `n · (d_{σ(k)}, …, d_{σ(0)})_b`:
-`c_0 = 0` and `c_{j+1} = (n d_{σ(j)} + c_j - λ(n d_{σ(j)} + c_j)) / b = ⌊(n d_{σ(j)} + c_j)/b⌋`
-for `0 ≤ j ≤ k` (and `0` beyond `k + 1`).
+**Carries of a permutiple multiplication.** Let $n$, $b$ and $d_0, \dots, d_k$ be
+natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$. The carries of the
+single-digit multiplication $n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$, where
+$(e_k, \dots, e_0)_b$ denotes the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$, are the
+natural numbers $c_0, c_1, c_2, \dots$ defined by $c_0 = 0$,
+$c_{j+1} = \lfloor (n d_{\sigma(j)} + c_j) / b \rfloor$ for $0 \le j \le k$, and
+$c_{j+1} = 0$ for $j > k$. Division by $b = 0$ is taken to give $0$.
 
 ## Depends on
 

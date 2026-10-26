@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.bernoulliDiffDenominator_parity_radical_lcm
 ---
 
-# Bernoulli Diff Denominator parity radical lcm
+# Parity, radical divisibility and an lcm recursion for $\mathbb{D}_n$
 
-For `n ≥ 1`: `𝔻_n` is odd iff `n = 2^e` (`e ≥ 0`); if `n + 1` is composite then
-`rad(n + 1)` divides `𝔻_n` and `𝔻^⊥_n`; and for odd `n ≥ 3`,
-`𝔻_n = lcm(𝔻_{n+1}, rad(n + 1))`.
+**Parity, radical divisibility and an lcm recursion for $\mathbb{D}_n$.** Write $s_p(m)$ for
+the sum of the base-$p$ digits of $m$, let $\mathbb{D}_m$ be the product of the primes $p$ with
+$s_p(m) \ge p$, and let $\mathbb{D}^\perp_m$ be the product of the primes $p$ with $p \nmid m$
+and $s_p(m) \ge p$. Let $n \ge 1$. Then $\mathbb{D}_n$ is odd if and only if $n = 2^e$ for some
+$e \ge 0$. If $n + 1$ is not prime, then the radical $\operatorname{rad}(n + 1)$ divides both
+$\mathbb{D}_n$ and $\mathbb{D}^\perp_n$. If $n \ge 3$ is odd, then
+$\mathbb{D}_n = \operatorname{lcm}(\mathbb{D}_{n+1}, \operatorname{rad}(n + 1))$.
 
 ## Depends on
 
-- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
-- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Denominator of $B_n(x) - B_n$](bernoulli-diff-denominator.md)
+- [Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$](bernoulli-diff-denominator-coprime-part.md)
 
 ## Sources
 

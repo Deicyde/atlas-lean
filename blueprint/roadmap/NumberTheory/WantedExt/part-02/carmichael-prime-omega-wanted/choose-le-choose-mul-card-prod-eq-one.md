@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.choose_le_choose_mul_card_prod_eq_one
 ---
 
-# Choose le choose mul card prod eq one
+# Alford–Granville–Pomerance count of zero-sum subsequences
 
-Alford, Granville, and Pomerance's subsequence count: if `n` is the least length forcing a
-nonempty subsequence with product `1` in the abelian group `G` (the Davenport constant
-`n(G)`) and `r > t > n`, then every sequence of `r` elements of `G` has at least
-`C(r, t) / C(r, n)` distinct subsequences of length between `t - n` and `t` with product `1`.
+**Alford–Granville–Pomerance count of zero-sum subsequences.** Let $G$ be an abelian group
+and let $n$ be the least natural number $m$ such that every sequence of $m$ elements of $G$ has a
+nonempty subsequence with product $1$ (the Davenport constant of $G$). Let $r$ and $t$ be natural
+numbers with $n < t < r$. Then for every sequence $s_1, \dots, s_r$ of elements of $G$, the number
+$M$ of sets $S \subseteq \{1, \dots, r\}$ with $t - n \le |S| \le t$ and $\prod_{i \in S} s_i = 1$
+satisfies $\binom{r}{t} \le \binom{r}{n} M$.
 
 ## Depends on
 

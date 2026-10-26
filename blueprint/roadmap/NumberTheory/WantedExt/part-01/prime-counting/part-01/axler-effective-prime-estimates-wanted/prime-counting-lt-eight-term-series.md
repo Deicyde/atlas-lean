@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_lt_eight_term_series
 ---
 
-# Prime Counting lt eight term series
+# Eight-term upper bound for the prime-counting function
 
-For every real `x > 1`, `π(x)` is below the truncated asymptotic series
-`x/log x + x/log² x + 2x/log³ x + 6.024334x/log⁴ x + 24.024334x/log⁵ x +
-120.12167x/log⁶ x + 720.73002x/log⁷ x + 6098x/log⁸ x`.
-`π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Eight-term upper bound for the prime-counting function.** For every real $x > 1$, the
+number $\pi(x)$ of primes $p \le x$ satisfies
+$\pi(x) < \frac{x}{\log x} + \frac{x}{\log^2 x} + \frac{2x}{\log^3 x} +
+\frac{6.024334\,x}{\log^4 x} + \frac{24.024334\,x}{\log^5 x} + \frac{120.12167\,x}{\log^6 x} +
+\frac{720.73002\,x}{\log^7 x} + \frac{6098\,x}{\log^8 x}$.
 
 ## Depends on
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Nat.IsPowerFree.two_le
 ---
 
-# Two le
+# The exponent of a power-free number is at least two
 
-The exponent restriction of a power-free number.
+**The exponent of a power-free number is at least two.** If a natural number $n$ is $k$-free,
+then $k \ge 2$.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Sources
 

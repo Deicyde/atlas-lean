@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.monicDirichletConv_mul_of_completelyMultiplicative
 ---
 
-# Monic Dirichlet Conv mul of completely Multiplicative
+# Dirichlet convolution of completely multiplicative functions at a product
 
-For completely multiplicative `α, β` and monic `f, g`,
-`(α * β)(f g) = ∑_{ℓ ∈ M, ℓ ∣ f, ℓ ∣ g} μ(ℓ) α(ℓ) β(ℓ) (α * β)(f / ℓ) (α * β)(g / ℓ)`.
-Complete multiplicativity is encoded by taking `α, β` to be monoid homomorphisms
-`F[T] →* ℂ`; every completely multiplicative function on monic polynomials extends to one
-(send nonzero constants to `1` and `0` to `0`), and only values on monic polynomials enter.
+**Dirichlet convolution of completely multiplicative functions at a product.** Let $F$ be a
+field and let $\alpha, \beta : F[T] \to \mathbb{C}$ be completely multiplicative, that is,
+monoid homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. Write
+$\gamma = \alpha * \beta$ for their Dirichlet convolution over monic divisors and $\mu$ for the
+Möbius function. Then for all monic $f, g \in F[T]$,
+
+$$\gamma(fg) = \sum_{\ell} \mu(\ell) \alpha(\ell) \beta(\ell) \gamma(f/\ell) \gamma(g/\ell),$$
+
+where $\ell$ runs over the monic common divisors of $f$ and $g$.
+
+Every completely multiplicative function on monic polynomials extends to such a homomorphism (send
+nonzero constants to $1$ and $0$ to $0$), and only values at monic polynomials enter.
 
 ## Depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_two_neg_two_descendants
 ---
 
-# Ecsd two neg two descendants
+# Descendants in the digraph $G(2n, -2n + a)$
 
-The `k`-descendants (`k ≥ 1`) of `m` in the Type 2 ECSD `G(2n, -2n + a)` are
-`2ᵏm`, `±(2ᵏm - ba)` for `1 ≤ b < 2^(k-1)`, and `-(2ᵏm - 2^(k-1)a)`. Corrected reading:
-the paper prints the last term as `-(2ᵏ - 2^(k-1)a)`, which is false (for `m = 0`,
-`a = 1`, `k = 1` the descendants are `{0, 1}`, not `{0, -1}`); the factor `m` is
-restored as in the paper's proof of Theorem 7. Stated for every `a ∈ ℤ` (the paper
-has `a ∈ ℕ` odd).
+**Descendants in the digraph $G(2n, -2n + a)$.** Let $a$ and $m$ be integers and let
+$k \ge 1$. In the digraph $G(2n, -2n + a)$ on $\mathbb{Z}$, with an edge $x \to 2x$ and an edge
+$x \to -2x + a$ for every integer $x$, the $k$-descendants of $m$ (the ends of directed walks of
+exactly $k$ edges from $m$) are exactly the integers $2^k m$, the integers $2^k m - ba$ and
+$-(2^k m - ba)$ for natural numbers $b$ with $1 \le b < 2^{k-1}$, and $-(2^k m - 2^{k-1} a)$.
+
+This holds for every integer $a$, not only for odd $a$, for which $G(2n, -2n + a)$ is an exact
+covering system digraph.
 
 ## Depends on
 
-- [Is KDescendant](is-kdescendant.md)
-- [Ecsd Adj](ecsd-adj.md)
+- [$k$-descendants in a digraph on the integers](is-kdescendant.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

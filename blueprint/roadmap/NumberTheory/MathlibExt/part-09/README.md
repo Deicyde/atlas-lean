@@ -3,25 +3,25 @@ article_id: af_3255b8db5852dc86793463a7
 navigation: transparent
 ---
 
-# Odd Lichtenberg Numbers to Practical Number
+# Odd Lichtenberg numbers to Practical number
 
-- [Odd Lichtenberg Numbers](odd-lichtenberg.md)
-- [Odd Perfect Polynomial](odd-perfect-polynomial-is-square.md)
+- [Odd Lichtenberg numbers](odd-lichtenberg.md)
+- [Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday)](odd-perfect-polynomial-is-square.md)
 - [Oppermann Cyclic Numbers](oppermann-cyclic-numbers/README.md)
-- [PRecursive Sequence](is-precursive-sequence.md)
+- [P-recursive sequences](is-precursive-sequence.md)
 - [Padovan Sequence](padovan-sequence/README.md)
-- [Pell Cassini Identity](pell-cassini-identity.md)
+- [Cassini's identity for Pell numbers](pell-cassini-identity.md)
 - [Pell Lucas Sequence](pell-lucas-sequence/README.md)
-- [Pell Number Sequence](pell-number.md)
-- [Pentanacci Number](pentanacci-number.md)
-- [Perrin Sequence](perrin-sequence.md)
+- [Pell numbers](pell-number.md)
+- [Pentanacci numbers](pentanacci-number.md)
+- [Perrin sequence](perrin-sequence.md)
 - [Pierce Expansion](pierce-expansion/README.md)
 - [Pisot Number](is-pisot-number.md)
-- [Pisot Root](is-unique-pisot-root.md)
-- [Pocklington Prime Power Criterion](pocklington-prime-power-criterion.md)
+- [Unique Pisot root of a polynomial](is-unique-pisot-root.md)
+- [Pocklington's criterion for $N = Kp^e + 1$](pocklington-prime-power-criterion.md)
 - [Polygonal Number](polygonal-number/README.md)
 - [Polynomial TL1](polynomial-tl1/README.md)
 - [Power Free](power-free/README.md)
-- [Power Sum Vanishing](power-sum-vanishing-mod-prime.md)
+- [Power sums vanish modulo a prime](power-sum-vanishing-mod-prime.md)
 - [Powerful Numbers Arithmetic Progressions](powerful-numbers-arithmetic-progressions/README.md)
-- [Practical Number](is-practical-number.md)
+- [Practical number](is-practical-number.md)

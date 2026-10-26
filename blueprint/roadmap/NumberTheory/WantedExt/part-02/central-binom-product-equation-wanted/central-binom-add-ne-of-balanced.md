@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralBinom_add_ne_of_balanced
 ---
 
-# Central Binom add ne of balanced
+# Central binomial products in the balanced range
 
-Lemma 11: for positive `a`, `b`, `x ≥ 2` with `k = a + b ≥ 75`, `a ≤ 0.9 k` and
-`b ≤ 0.8 k`, `C(2k, k) ≠ C(2a, a) C(x+2b, b)`.
+**Central binomial products in the balanced range.** Let $a$ and $b$ be positive integers,
+let $x \ge 2$ be an integer, and put $k = a + b$. If $k \ge 75$, $a \le \tfrac{9}{10}k$ and
+$b \le \tfrac{4}{5}k$, then $\binom{2k}{k} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 
 ## Depends on
 

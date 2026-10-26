@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_lucasU_kJacobsthal_ratio
 ---
 
-# Tendsto lucas U k Jacobsthal ratio
+# Ratio of consecutive $k$-Jacobsthal numbers
 
-`J_{k,n+1}/J_{k,n} → σ_k = (k + Δ_k)/2` as `n → ∞`.
+**Ratio of consecutive $k$-Jacobsthal numbers.** For every positive integer $k$, the
+$k$-Jacobsthal numbers $J_{k,n} = U_n(k, -2)$, the Lucas sequence $U$ with parameters
+$(P, Q) = (k, -2)$, satisfy $J_{k,n+1}/J_{k,n} \to (k + \sqrt{k^2 + 8})/2$ as $n \to \infty$,
+the quotients taken in $\mathbb{R}$.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

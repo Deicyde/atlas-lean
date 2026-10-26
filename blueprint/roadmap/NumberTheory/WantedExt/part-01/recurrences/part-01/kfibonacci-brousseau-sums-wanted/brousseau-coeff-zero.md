@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.brousseauCoeff_zero
 ---
 
-# Brousseau Coeff zero
+# The polynomial $C_k^{(0)}$ is constant $1$
 
-`C_k^(0)(n) = 1`.
+**The polynomial $C_k^{(0)}$ is constant $1$.** For all rational numbers $k$ and $n$, the
+coefficient polynomial $C_k^{(0)}$ for $k$-Fibonacci Brousseau sums satisfies $C_k^{(0)}(n) = 1$.
 
 ## Depends on
 
-- [Brousseau Coeff](brousseau-coeff.md)
+- [The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-coeff.md)
 
 ## Proof depends on
 
-- [Brousseau A](brousseau-a.md)
-- [Brousseau A zero](brousseau-a-zero.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
+- [The initial value $A_k^{(0)} = 1$](brousseau-a-zero.md)
 
 ## Sources
 

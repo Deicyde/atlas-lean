@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.threeTermHofstadterTerm_bSequence_six_seven
 ---
 
-# Three Term Hofstadter Term b Sequence six seven
+# Sixth and seventh terms of the sequence started at 1, 2, 3, 4, 5
 
-The `B`-sequence `⟨1, 2, 3, 4, 5⟩` continues with `B(6) = 1 + 2 + 3 = 6` and
-`B(7) = B(1) + B(2) + B(3) = 6`.
+**Sixth and seventh terms of the sequence started at 1, 2, 3, 4, 5.** For the unpadded
+three-term Hofstadter-like sequence $B$ with initial conditions $1, 2, 3, 4, 5$, the terms $B(6)$
+and $B(7)$ are defined, with $B(6) = B(1) + B(2) + B(3) = 6$ and $B(7) = B(1) + B(2) + B(3) = 6$.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

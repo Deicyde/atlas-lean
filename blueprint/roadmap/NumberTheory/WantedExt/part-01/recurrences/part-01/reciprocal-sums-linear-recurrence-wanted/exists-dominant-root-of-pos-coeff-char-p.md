@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_dominant_root_of_pos_coeff_charPoly
 ---
 
-# Exists dominant root of pos coeff char Poly
+# Dominant root of $x^m - a_1 x^{m-1} - \cdots - a_m$ with positive coefficients
 
-For `m ≥ 2` and positive integers `a₁, …, aₘ` (here `a i = a_{i+1}`), the polynomial
-`φ(x) = xᵐ - a₁ xᵐ⁻¹ - ⋯ - aₘ` has exactly one positive root `λ`, it satisfies `λ > 1`, and
-the complex roots of `φ` are `λ` (once) together with `m - 1` roots of modulus less
-than `λ`.
+**Dominant root of $x^m - a_1 x^{m-1} - \cdots - a_m$ with positive coefficients.** Let
+$m \ge 2$ and let $a_1, \dots, a_m$ be positive integers. Then the polynomial
+$\varphi(x) = x^m - a_1 x^{m-1} - \cdots - a_m$ has exactly one positive real root $\lambda$,
+this root satisfies $\lambda > 1$, and the complex roots of $\varphi$, counted with
+multiplicity, are $\lambda$ (a simple root) together with $m - 1$ roots of modulus less than
+$\lambda$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.nStepFibonacci_one
 ---
 
-# N Step Fibonacci one
+# First N-step Fibonacci number
 
-`F^{(N)}_1 = 1`.
+**First N-step Fibonacci number.** For every natural number $N$, the $N$-step Fibonacci
+number $F^{(N)}_1$ equals $1$.
 
 ## Depends on
 
-- [N Step Fibonacci](n-step-fibonacci.md)
+- [N-step Fibonacci numbers](n-step-fibonacci.md)
 
 ## Sources
 

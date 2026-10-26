@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.odd
 ---
 
-# Odd
+# The odd greedy choice is odd
 
-The odd greedy choice is odd.
+**The odd greedy choice is odd.** If $d$ is the odd greedy choice at a rational number $r$,
+then $d$ is odd.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Sources
 

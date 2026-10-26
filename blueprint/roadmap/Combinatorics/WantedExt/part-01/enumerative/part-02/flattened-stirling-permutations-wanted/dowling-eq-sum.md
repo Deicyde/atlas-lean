@@ -20,7 +20,7 @@ where $S(a, k)$ are the Stirling numbers of the second kind, with $S(0, 0) = 1$.
 ## Depends on
 
 - [(q, r)-Whitney numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-07/qrwhitney-numbers/whitney-second.md)
-- [Qr Dowling Number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
+- [$(q, r)$-Dowling number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
 
 ## Sources
 

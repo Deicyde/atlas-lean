@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.dobrowolski_one_le_asymptoticConstant
 ---
 
-# Dobrowolski one le asymptotic Constant
+# Dobrowolski's lower bound for the asymptotic Dobrowolski constant
 
-Source: Dobrowolski (1979), as reported by Voutier, coefficient `1`.
+**Dobrowolski's lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+Dobrowolski constant is at least $1$, as an extended real number.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ Source: Dobrowolski (1979), as reported by Voutier, coefficient `1`.
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Height.AsymptoticDobrowolskiWanted](../../../../../../sources/v2/WantedExt.md)
+- Dobrowolski (1979), as reported by Voutier, coefficient `1`.

@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_abs_cos_sub_div_primes_le
 ---
 
-# Sum abs cos sub div primes le
+# Explicit bound for a cosine-weighted sum over primes
 
-With `K ≈ 0.3286` the solution of `(2π)⁻¹ ∫₀^{2π} |cos t - K| dt = 1 - K`, uniformly for
-`0 < α ≤ 1` and real `τ`,
-`∑_{p ≤ exp(1/α)} |cos(τ log p) - K| / p ≤ (1 - K) log(1/α) + (2 + 2K) log log(|τ| + 3) + 7.28`.
-The defining equation of `K` has exactly one real solution, so the hypothesis pins `K`.
+**Explicit bound for a cosine-weighted sum over primes.** Let $K$ be a real number with
+$\frac{1}{2\pi} \int_0^{2\pi} |\cos t - K| \, dt = 1 - K$ (this equation has exactly one real
+solution, $K \approx 0.3286$). Then for every real $\alpha$ with $0 < \alpha \le 1$ and every real
+$\tau$, $\sum_{p \le e^{1/\alpha}} |\cos(\tau \log p) - K|/p \le (1 - K) \log(1/\alpha) +
+(2 + 2K) \log \log(|\tau| + 3) + 7.28$, where the sum runs over the primes $p \le e^{1/\alpha}$.
 
 ## Depends on
 

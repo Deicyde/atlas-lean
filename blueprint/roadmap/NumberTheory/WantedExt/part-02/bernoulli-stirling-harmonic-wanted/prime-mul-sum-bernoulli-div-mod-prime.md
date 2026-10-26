@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.prime_mul_sum_bernoulli_div_mod_prime
 ---
 
-# Prime mul sum bernoulli div mod prime
+# The congruence $p\sum_{j=0}^{p} B_j/(p-j+1) \equiv -1 \pmod p$
 
-For an odd prime `p`, the rational number
-`p * sum_{j=0}^p B_j/(p-j+1)` has denominator not divisible by `p`, and its
-residue equals that of `-1`. Natural subtraction occurs only for `j <= p` in
-the range; the denominator clause and residue equality replace rational
-congruence notation.
+**The congruence $p\sum_{j=0}^{p} B_j/(p-j+1) \equiv -1 \pmod p$.** Let $B_j$ denote the
+Bernoulli numbers with $B_1 = -\tfrac12$. For every odd prime $p$, the rational number
+
+$$S = p \sum_{j=0}^{p} \frac{B_j}{p-j+1}$$
+
+has denominator not divisible by $p$, and its residue modulo $p$ (its numerator times the
+inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.
 
 ## Depends on
 

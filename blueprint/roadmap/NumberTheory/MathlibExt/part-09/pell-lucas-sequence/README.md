@@ -4,5 +4,5 @@ navigation: module
 
 # Pell Lucas Sequence
 
-- [Pell Lucas Sequence](pell-lucas-sequence.md)
-- [Pell Lucas Sequence succ succ](pell-lucas-sequence-succ-succ.md)
+- [Pell–Lucas sequence](pell-lucas-sequence.md)
+- [Recurrence for the Pell–Lucas numbers](pell-lucas-sequence-succ-succ.md)

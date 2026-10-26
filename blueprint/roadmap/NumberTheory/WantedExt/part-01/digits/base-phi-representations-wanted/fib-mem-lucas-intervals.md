@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.fib_mem_lucasIntervals
 ---
 
-# Fib mem lucas Intervals
+# Fibonacci numbers in the Lucas intervals
 
-`F_{2n+2}` lies in the even Lucas interval `Λ_{2n} = [L_{2n}, L_{2n+1}]` and
-`F_{2n+3}` in the odd Lucas interval `Λ_{2n+1} = [L_{2n+1} + 1, L_{2n+2} - 1]`,
-for all `n ≥ 1`.
+**Fibonacci numbers in the Lucas intervals.** Let $F_k$ be the Fibonacci numbers
+($F_0 = 0$, $F_1 = 1$) and $L_k$ the Lucas numbers ($L_0 = 2$, $L_1 = 1$). Call
+$\Lambda_{2n} = [L_{2n}, L_{2n+1}]$ the even Lucas interval and
+$\Lambda_{2n+1} = [L_{2n+1} + 1, L_{2n+2} - 1]$ the odd Lucas interval. For every $n \ge 1$,
+$F_{2n+2} \in \Lambda_{2n}$ and $F_{2n+3} \in \Lambda_{2n+1}$.
 
 ## Depends on
 
-- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ $$\pi_k(x) \sim \frac{x \, (\log \log x)^{k-1}}{(k-1)! \, \log x}.$$
 ## Proof depends on
 
 - [Prime number theorem implies the theta asymptotic](../chebyshev/theta-is-equivalent-of-prime-counting-is.md)
-- [Prime Number Theorem](../../../../part-10/prime-number-theorem.md)
+- [Prime number theorem](../../../../part-10/prime-number-theorem.md)
 
 ## Sources
 

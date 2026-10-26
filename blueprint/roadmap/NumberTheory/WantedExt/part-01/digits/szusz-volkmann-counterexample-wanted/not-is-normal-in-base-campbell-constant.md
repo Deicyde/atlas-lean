@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_isNormalInBase_campbellConstant
 ---
 
-# Not is Normal In Base campbell Constant
+# Campbell's concatenation of $h_2$ is not normal in base $10$
 
-Theorem 8: the concatenation `0.h₂(1)h₂(2)…` is not normal in base 10.
+**Campbell's concatenation of $h_2$ is not normal in base $10$.** Let $h_2$ be Campbell's
+sequence and let $c_0, c_1, c_2, \ldots$ be the base-$10$ digits of $h_2(1), h_2(2), \ldots$,
+each number written most significant digit first and the numbers written one after another (with
+$h_2(n) = 0$ written as the single digit $0$). The real number
+$\sum_{j \ge 0} c_j 10^{-(j+1)} = 0.c_0c_1c_2\ldots$ is not normal in base $10$.
 
 ## Depends on
 
-- [Is Normal In Base](../../../../MathlibExt/part-08/normal-number/is-normal-in-base.md)
-- [Campbell Constant](campbell-constant.md)
+- [Normal numbers](../../../../MathlibExt/part-08/normal-number/is-normal-in-base.md)
+- [Campbell's constant](campbell-constant.md)
 
 ## Sources
 

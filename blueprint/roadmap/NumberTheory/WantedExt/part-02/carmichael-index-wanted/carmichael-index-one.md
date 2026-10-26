@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.carmichaelIndex_one
 ---
 
-# Carmichael Index one
+# The Carmichael index of 1
 
-`N(1) = 1`.
+**The Carmichael index of 1.** The Carmichael index of $1$ is $N(1) = 1$.
 
 ## Depends on
 
-- [Carmichael Index](carmichael-index.md)
+- [Carmichael index](carmichael-index.md)
 
 ## Sources
 

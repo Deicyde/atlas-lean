@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.AmicableWanted.sum_sigma_div_lt
 ---
 
-# Lemma 2
+# Linear bound for the partial sums of the abundancy index
 
-**Lemma 2**: for each real `x ≥ 1`,
-`∑_{n ≤ x} σ n / n < ζ 2 * x`.
+**Linear bound for the partial sums of the abundancy index.** For a positive integer
+$n$ let $\sigma(n)$ denote the sum of the positive divisors of $n$, and let
+$\zeta(2) = \sum_{n=1}^{\infty} 1/n^2$. Then for every real number $x \ge 1$,
+
+$$\sum_{n=1}^{\lfloor x \rfloor} \frac{\sigma(n)}{n} < \zeta(2)\, x.$$
 
 ## Depends on
 

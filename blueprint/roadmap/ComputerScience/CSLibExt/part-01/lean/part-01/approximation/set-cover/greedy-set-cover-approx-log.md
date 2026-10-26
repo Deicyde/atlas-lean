@@ -15,7 +15,7 @@ $|C^*| \cdot (\ln |U| + 1)$, where $|C^*|$ is the length of $C^*$ and $\ln 0 = 0
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+- [Greedy set cover](greedy-set-cover.md)
 
 ## Proof depends on
 

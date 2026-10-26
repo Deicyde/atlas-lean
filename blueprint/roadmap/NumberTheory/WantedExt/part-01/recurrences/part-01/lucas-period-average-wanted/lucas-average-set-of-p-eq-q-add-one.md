@@ -5,29 +5,40 @@ statement: formalized
 lean: MetaMathlibExt.lucasAverageSet_of_p_eq_q_add_one
 ---
 
-# Lucas Average Set of p eq q add one
+# Period and average sets when $P = Q + 1$
 
-Theorem 2.26: for nondegenerate `U(a, -a + 1)` (roots `a - 1` and `1`,
-`D = (a - 2) ^ 2`): (i) `E_U(n) = 1` when `gcd(n, b) = 1`; (ii) if `n ∣ b` and `m ∈ S'(U)` then
-`A_W(m n)` is an integer for all `W(a, -a + 1)`; (iii) `S(U) = T(U)`; (iv) for odd `a`,
-`S'(U) = S(U) = T(U)`, `A_W(n)` is integral for `n ∈ S(U)` and for `n ∣ b`, and for `a = 3`,
-`D = 1` and `S(U) = {1}`; (v) for even `a`, `n ∈ S'(U)` iff `n` is odd and `n ∈ S(U)`, `A_W(n)`
-is integral for odd `n ∈ S(U)`, and if `a = 2 + 2 ^ k` with `k ≥ 1` then `n ∉ S'(U)` for
-`n > 1`. In the repository convention `a = -b + 1` is `P = Q + 1`; `a ≠ 0, 1, 2` follows from
-nondegeneracy. The extracted "`a = 2 + 2k`" is read as `a = 2 + 2 ^ k` (the exponent is set as a
-superscript in the paper); the linear reading is false: for `a = 8` (`b = -7`) one has
-`π_U(3) = 3` and `3 ∣ B_U(3) = 1 + 8 + 57 = 66`, so `3 ∈ S'(U)`.
+**Period and average sets when $P = Q + 1$.** Let $P$ and $Q \ne 0$ be integers forming a
+nondegenerate Lucas pair with $P = Q + 1$, so that the roots of $x^2 - Px + Q$ are $Q$ and $1$,
+and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
+$U_{k+2} = P U_{k+1} - Q U_k$. Write $\pi_U(n)$ for the period of $U$ modulo $n$, $\rho_U(n)$ for
+the least $s > 0$ with $n \mid U_s$ and $U_{s+1}$ coprime to $n$, $S(U)$ for the set of positive
+integers $n$ coprime to $Q$ with $\pi_U(n) \mid n$, $S'(U)$ for the set of $n \in S(U)$ with
+$n \mid U_1 + \dots + U_n$, and $T(U)$ for the set of positive integers $n$ coprime to $Q$ with
+$n \mid U_n$. Say that a natural number $x$ has integral averages if $x \mid w_1 + \dots + w_x$
+for every integer sequence $(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$.
+Then $\pi_U(n) = \rho_U(n)$ for every $n > 0$ coprime to $Q$; $mn$ has integral averages for all
+$n > 0$ dividing $Q$ and all $m \in S'(U)$; and $S(U) = T(U)$. If $P$ is odd, then
+$S'(U) = S(U)$, every $n \in S(U)$ and every $n > 0$ dividing $Q$ has integral averages, and if
+moreover $P = 3$, then $P^2 - 4Q = 1$ and $S(U) = \{1\}$. If $P$ is even, then $S'(U)$ consists
+of the odd elements of $S(U)$, every odd $n \in S(U)$ has integral averages, and if
+$P = 2 + 2^k$ for some $k \ge 1$, then no $n > 1$ lies in $S'(U)$.
+
+In the paper's notation $a = P$ and $b = -Q$, so the hypothesis is $b = -a + 1$, and the paper's
+$E_U(n) = 1$ is $\pi_U(n) = \rho_U(n)$; the paper's conditions $a \ne 0, 1, 2$ follow from
+nondegeneracy. The paper's condition on even $a$ is read as $a = 2 + 2^k$ (the exponent is set as
+a superscript); the linear reading $a = 2 + 2k$ is false: for $a = 8$ ($b = -7$) one has
+$\pi_U(3) = 3$ and $3 \mid U_1 + U_2 + U_3 = 1 + 8 + 57 = 66$, so $3 \in S'(U)$.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Index Divisible Set](lucas-index-divisible-set.md)
-- [Lucas Period Set](lucas-period-set.md)
-- [Lucas UPeriod](lucas-uperiod.md)
-- [Lucas URestricted Period](lucas-urestricted-period.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Index-divisible set of a Lucas sequence](lucas-index-divisible-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
+- [Restricted period of a Lucas sequence modulo $m$](lucas-urestricted-period.md)
 
 ## Sources
 

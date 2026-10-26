@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.circuitBaseEdge
 ---
 
-# Circuit Base Edge
+# Base-edge function
 
-The base-edge function `ℬ(T_{r+2,d+1}, T_{r+1,d}, T_{r+1,d+1})`.
+**Base-edge function.** Let $K$ be a field. For a triangle with left, right and base
+resistances $L$, $R$, $B$ in $K$, its top arm is $\Delta(L, R, B)$, its bottom-right arm is
+$\Delta(R, B, L)$ and its bottom-left arm is $\Delta(B, L, R)$, where
+$\Delta(x, y, z) = xy/(x + y + z)$. For triangles $t$, $u$, $v$, the base-edge function is
+$\mathcal{B}(t, u, v) = Y(a, b, c) = (ab + bc + ca)/a$, where $a$ is the top arm of $t$, $b$ is
+the bottom-right arm of $u$ and $c$ is the bottom-left arm of $v$. In a row reduction, for a row
+$r$ and a diagonal $d$, the triangles $t$, $u$, $v$ are those in row $r + 2$ and diagonal $d + 1$,
+in row $r + 1$ and diagonal $d$, and in row $r + 1$ and diagonal $d + 1$.
 
 ## Depends on
 
-- [Circuit Edge](circuit-edge.md)
+- [Edges of an upright triangle](circuit-edge.md)
 
 ## Proof depends on
 
-- [Circuit Left Arm](circuit-left-arm.md)
-- [Circuit Right Arm](circuit-right-arm.md)
-- [Circuit Top Arm](circuit-top-arm.md)
-- [Circuit Y](circuit-y.md)
+- [Bottom-left delta-wye arm](circuit-left-arm.md)
+- [Bottom-right delta-wye arm](circuit-right-arm.md)
+- [Top delta-wye arm](circuit-top-arm.md)
+- [The Y-Δ resistance function](circuit-y.md)
 
 ## Sources
 

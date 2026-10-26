@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.pellLucasSequence_succ_succ
 ---
 
-# Pell Lucas Sequence succ succ
+# Recurrence for the Pell–Lucas numbers
 
-The defining recurrence of the Pell–Lucas sequence.
+**Recurrence for the Pell–Lucas numbers.** Write $Q_n$ for the $n$-th Pell–Lucas (associated
+Pell) number. For every natural number $n$, $Q_{n+2} = 2Q_{n+1} + Q_n$.
 
 ## Depends on
 
-- [Pell Lucas Sequence](pell-lucas-sequence.md)
+- [Pell–Lucas sequence](pell-lucas-sequence.md)
 
 ## Sources
 

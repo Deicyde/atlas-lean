@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.LucasSequenceParams
 ---
 
-# Lucas Sequence Params
+# Parameters of a Lucas sequence
 
-Integer parameters for a pair of Lucas sequences. The source convention
-requires the second parameter to be nonzero.
+**Parameters of a Lucas sequence.** Lucas sequence parameters are a pair of integers
+$(P, Q)$ with $Q \ne 0$.
+
+The condition $Q \ne 0$ follows the convention of the sources.
 
 ## Depends on
 

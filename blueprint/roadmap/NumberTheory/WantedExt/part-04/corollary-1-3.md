@@ -14,7 +14,7 @@ Suppose `χ` has cubefree conductor `q`. Then
 
 ## Depends on
 
-- [Is Power Free](../../MathlibExt/part-09/power-free/is-power-free.md)
+- [Power-free natural numbers](../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

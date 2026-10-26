@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.TribonacciTetranacciSumsOfSquaresWanted.four_mul_sum_tribonacci_sq
 ---
 
-# Four mul sum tribonacci sq
+# Sum of squares of a Tribonacci sequence
 
-Gryszka's Theorem 1, cleared of the denominator `4`: the sum of
-squares of an arbitrary integer-indexed Tribonacci sequence.
+**Sum of squares of a Tribonacci sequence.** Let $T \colon \mathbb{Z} \to \mathbb{Z}$ satisfy
+$T(m+3) = T(m+2) + T(m+1) + T(m)$ for every integer $m$. Then for every natural number $n$,
+
+$$4 \sum_{k=1}^{n} T(k)^2 = 4\,T(n)\,T(n+1) - 4\,T(0)\,T(1) -
+\bigl(T(n+1) - T(n-1)\bigr)^2 + \bigl(T(1) - T(-1)\bigr)^2.$$
 
 ## Depends on
 

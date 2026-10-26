@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lucas_recurrence_add_modEq_of_dvd_lucasU
 ---
 
-# Lucas recurrence add mod Eq of dvd lucas U
+# Shift congruence for the Lucas recurrence
 
-Let `W` satisfy the Lucas recursion `W_{n+2} = P W_{n+1} - Q W_n`. If `m ∣ U_t` and
-`gcd(m, Q) = 1`, then `W_{n+t} ≡ U_{t+1} W_n (mod m)` for all `n ≥ 0`.
+**Shift congruence for the Lucas recurrence.** Let $U = U(P, Q)$ be the Lucas sequence with
+integer parameters $P$ and $Q \ne 0$, and let $(W_n)_{n \ge 0}$ be a sequence of integers with
+$W_{n+2} = P W_{n+1} - Q W_n$ for every $n \ge 0$. If $t \ge 0$ and $m$ are integers with
+$m \mid U_t$ and $\gcd(m, Q) = 1$, then $W_{n+t} \equiv U_{t+1} W_n \pmod{m}$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

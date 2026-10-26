@@ -17,7 +17,7 @@ If $Q_0 = 1$, then $s$ is MC-finite.
 ## Depends on
 
 - [MC-finite sequences](is-mcfinite.md)
-- [PRecursive Sequence](../../../part-09/is-precursive-sequence.md)
+- [P-recursive sequences](../../../part-09/is-precursive-sequence.md)
 
 ## Proof depends on
 

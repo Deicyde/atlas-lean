@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.brocardRamanujan_fewPrimeFactors_finite
 ---
 
-# Brocard Ramanujan few Prime Factors finite
+# Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite
 
-For every `l ≥ 2`, the Brocard-Ramanujan equation `n! + 1 = x ^ 2` has only
-finitely many solutions `(n, x)` with `x - 1` or `x + 1` having fewer than `l`
-distinct prime divisors.
+**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite.**
+For every natural number $l \ge 2$, there are only finitely many pairs of natural numbers
+$(n, x)$ with $n! + 1 = x^2$ such that $x - 1$ or $x + 1$ has fewer than $l$ distinct prime
+divisors.
 
 ## Depends on
 

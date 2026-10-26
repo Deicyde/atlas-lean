@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.zetaZeroCount
 ---
 
-# Zeta Zero Count
+# Zero-counting function of the Riemann zeta function
 
-Zero-counting function: zeros in the strip with `0 < γ ≤ T`, with multiplicity.
+**Zero-counting function of the Riemann zeta function.** For a real number $T$, $N(T)$ is
+the number of zeros $\rho = \beta + i\gamma$ of the Riemann zeta function with $0 < \beta < 1$
+and $0 < \gamma \le T$, each counted with its multiplicity as a zero.
 
 ## Depends on
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_log_campbellF_div_log
 ---
 
-# Tendsto log campbell F div log
+# Growth exponent of Campbell's interpolation
 
-Lemma 6: `η(f) = lim_{x → ∞} log f(x) / log x` exists and equals `2`.
+**Growth exponent of Campbell's interpolation.** For Campbell's interpolation $f$,
+$\log f(x) / \log x \to 2$ as $x \to \infty$ over the reals; that is, $\eta(f) = 2$, where
+$\eta(h) = \lim_{x \to \infty} \log h(x) / \log x$.
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
+- [Campbell's interpolation](campbell-f.md)
 
 ## Sources
 

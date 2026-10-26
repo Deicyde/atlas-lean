@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists monic coprime factorization of is Adic Complete nat Degree](../../../NumberTheory/MathlibExt/part-07/hensel-factorization/exists-monic-coprime-factorization-of-is-2.md)
+- [Hensel lifting of monic coprime factorizations, with degrees](../../../NumberTheory/MathlibExt/part-07/hensel-factorization/exists-monic-coprime-factorization-of-is-2.md)
 
 ## Sources
 

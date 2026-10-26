@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.brousseauA_one
 ---
 
-# Brousseau A one
+# The value $A_k^{(1)} = 2/k$
 
-`A_k^(1) = 2/k`.
+**The value $A_k^{(1)} = 2/k$.** For every rational number $k$, the number $A_k^{(1)}$ for
+$k$-Fibonacci Brousseau sums equals $2/k$, where $2/0$ is read as $0$.
 
 ## Depends on
 
-- [Brousseau A](brousseau-a.md)
+- [The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums](brousseau-a.md)
 
 ## Proof depends on
 
-- [Brousseau A zero](brousseau-a-zero.md)
+- [The initial value $A_k^{(0)} = 1$](brousseau-a-zero.md)
 
 ## Sources
 

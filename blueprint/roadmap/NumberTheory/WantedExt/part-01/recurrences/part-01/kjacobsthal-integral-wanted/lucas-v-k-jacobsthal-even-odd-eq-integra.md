@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.lucasV_kJacobsthal_even_odd_eq_integral
 ---
 
-# Lucas V k Jacobsthal even odd eq integral
+# Integral representation of even- and odd-indexed k-Jacobsthal–Lucas numbers
 
-`j_{k,2n} = 2^{-n} ∫_{-1}^{1} (k² + 4 + k(n+1)Δ_k x)(k² + 4 + kΔ_k x)^{n-1} dx` and
-`j_{k,2n+1} = (k/2^{n+1}) ∫_{-1}^{1} (nΔ_k² + k² + 4 + k(n+1)Δ_k x)(k² + 4 + kΔ_k x)^{n-1} dx`.
+**Integral representation of even- and odd-indexed k-Jacobsthal–Lucas numbers.** Let $k$ and
+$n$ be natural numbers, let $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal–Lucas numbers and let
+$\Delta_k = \sqrt{k^2 + 8}$. Then
+
+$$j_{k,2n} = \frac{1}{2^n} \int_{-1}^{1} (k^2 + 4 + k(n+1) \Delta_k x)
+(k^2 + 4 + k \Delta_k x)^{n-1} \, dx$$
+
+and
+
+$$j_{k,2n+1} = \frac{k}{2^{n+1}} \int_{-1}^{1} (n(k^2 + 8) + k^2 + 4 + k(n+1) \Delta_k x)
+(k^2 + 4 + k \Delta_k x)^{n-1} \, dx.$$
+
+Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 ## Depends on
 
-- [K Jacobsthal Params](k-jacobsthal-params.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Lucas parameters of the k-Jacobsthal numbers](k-jacobsthal-params.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

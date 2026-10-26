@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.subcollectionCount
 ---
 
-# Subcollection Count
+# Counting function of a subcollection
 
-The counting function `z(x)` of Section 3: the number of natural numbers `n < x` of the form
-`n = ∑ μ H̃` with `μ ∈ E` (the elements of `R(x)`), for a real bound `x`.
+**Counting function of a subcollection.** For a set $E$ of finitely supported coefficient
+functions $\mu : \mathbb{N} \to \mathbb{N}$, a sequence $H : \mathbb{N} \to \mathbb{N}$ and a
+real number $x$, $z(x)$ is the number of natural numbers $n < x$ of the form
+$n = \sum_k \mu_k H_k$ for some $\mu \in E$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zeckendorf Eval](zeckendorf-eval.md)
+- [Evaluation of a coefficient function at an integer sequence](zeckendorf-eval.md)
 
 ## Sources
 

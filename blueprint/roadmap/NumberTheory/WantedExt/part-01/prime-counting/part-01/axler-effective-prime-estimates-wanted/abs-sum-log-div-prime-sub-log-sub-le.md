@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.abs_sum_log_div_prime_sub_log_sub_le
 ---
 
-# Abs sum log div prime sub log sub le
+# Axler's explicit Mertens first theorem
 
-Explicit Mertens first theorem: for every real `x ≥ 1757126630797`,
-`|∑_{p ≤ x} log p / p - log x - E| ≤ 0.024334/(2 log² x) · (1 + 2/log x)`, where `E` is
-`mertensConstant` (the limit of `∑_{p ≤ n} log p / p - log n`, equal to the paper's
-`E = -γ - ∑_p log p / (p (p - 1)) = -1.3325…`).
+**Axler's explicit Mertens first theorem.** For every real $x \ge 1757126630797$,
+
+$$
+\Big|\sum_{p \le x} \frac{\log p}{p} - \log x - E\Big| \le
+\frac{0.024334}{2 \log^2 x} \Big(1 + \frac{2}{\log x}\Big),
+$$
+
+where the sum runs over the primes $p \le x$ and $E$ is Mertens' constant, the limit of
+$\sum_{p \le n} \log p / p - \log n$ as the integer $n$ tends to infinity. It equals
+$-\gamma - \sum_p \log p / (p(p-1)) = -1.3325\ldots$, with $\gamma$ Euler's constant.
 
 ## Depends on
 
-- [Mertens Constant](../dusart-mertens-log-sum-wanted/mertens-constant.md)
+- [The constant in Mertens' first theorem](../dusart-mertens-log-sum-wanted/mertens-constant.md)
 
 ## Sources
 

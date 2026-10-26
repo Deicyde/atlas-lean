@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.circuitArrayX_row_one
 ---
 
-# Circuit Array X row one
+# Row one of the one-variable circuit array
 
-Corollary 4.5, corrected: `C^X₁,ₛ = (3·9^{s-2}X - 1)/(3·9^{s-2}X - 3)` for `s ≥ 2`. The printed
-denominator `3·9^{s-2}X` is the row-`0` formula; Table 2 has `(3X - 1)/(3X - 3)` at `s = 2`
-(`13/12` at `X = 9`, not `26/27`).
+**Row one of the one-variable circuit array.** For every natural number $s \ge 2$, the
+one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
+over $\mathbb{Q}$, satisfies $C^X_{1,s} = (3 \cdot 9^{s-2} X - 1)/(3 \cdot 9^{s-2} X - 3)$.
+
+The printed denominator $3 \cdot 9^{s-2} X$ is the row-zero formula; Table 2 has
+$(3X - 1)/(3X - 3)$ at $s = 2$, which is $13/12$ at $X = 9$, not $26/27$.
 
 ## Depends on
 
-- [Circuit Array X](circuit-array-x.md)
+- [One-variable circuit array](circuit-array-x.md)
 
 ## Sources
 

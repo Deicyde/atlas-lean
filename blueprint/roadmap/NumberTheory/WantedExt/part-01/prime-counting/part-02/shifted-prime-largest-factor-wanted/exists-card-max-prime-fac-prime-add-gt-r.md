@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_maxPrimeFac_prime_add_gt_rpow
 ---
 
-# Exists card max Prime Fac prime add gt rpow
+# Baker–Harman: shifted primes with a large prime factor
 
-Baker–Harman: for every integer `a` and every `0 < θ ≤ 0.677` there is `0 < δ < 1` such that,
-for all sufficiently large real `x`, the number of primes `p ≤ x` whose shift `p + a` has largest
-prime factor `P(p + a) > x^θ` exceeds `δ x / log x`. Here `P(p + a)` is `Nat.maxPrimeFac` of
-`|p + a|`. The quantifier over all `a ∈ ℤ` is the cited lemma's as printed; Baker and Harman
-state the bound for a nonzero shift, and the extra case `a = 0` follows from the prime number
-theorem (every prime in `(x^θ, x]` qualifies, and these number `(1 + o(1)) x / log x`).
+**Baker–Harman: shifted primes with a large prime factor.** For every integer $a$ and every
+real $\theta$ with $0 < \theta \le 0.677$ there is a real $\delta$ with $0 < \delta < 1$ such that,
+for all sufficiently large real $x$, the number of primes $p \le x$ for which the largest prime
+factor $P(|p + a|)$ of $|p + a|$ exceeds $x^\theta$ is greater than $\delta x / \log x$. Here
+$P(0) = 0$ and $P(1) = 1$.
+
+The statement covers every integer $a$, as the cited lemma is printed; Baker and Harman state the
+bound for a nonzero shift, and the case $a = 0$ follows from the prime number theorem, since every
+prime in $(x^\theta, x]$ qualifies and these number $(1 + o(1)) x / \log x$.
 
 ## Depends on
 

@@ -7,12 +7,14 @@ proof: formalized
 lean: MathlibExt.NumberTheory.TranscendenceWanted.gelfondSchneider_complex_exp
 ---
 
-# Gelfond Schneider complex exp
+# Gelfond–Schneider theorem for every value of a complex power
 
-The every-value complex form of Gelfond–Schneider. If `a` and `b` are algebraic, `a ≠ 1`,
-`b` is not rational, and `z` is any logarithm of `a`, then `exp (b * z)` is transcendental.
-The hypothesis `exp z = a` already implies `a ≠ 0`. Taking
-`z = log a + n * (2 * π * I)` recovers every integer-indexed logarithm branch.
+**Gelfond–Schneider theorem for every value of a complex power.** Let $a, b \in \mathbb{C}$
+be algebraic over $\mathbb{Q}$ with $a \neq 1$ and $b \notin \mathbb{Q}$, and let $z \in \mathbb{C}$
+satisfy $e^z = a$. Then $e^{bz}$ is transcendental over $\mathbb{Q}$.
+
+The hypothesis $e^z = a$ already implies $a \neq 0$. Taking $z = \log a + 2 \pi i n$, where
+$\log a$ is the principal logarithm and $n$ is an integer, recovers every branch of $a^b$.
 
 ## Depends on
 

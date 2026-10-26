@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_lt_div_log_sub_six_terms
 ---
 
-# Prime Counting lt div log sub six terms
+# Axler's six-term upper bound for the prime-counting function
 
-Upper bound for the prime-counting function matching the first terms of its asymptotic
-expansion: for every real `x ≥ 48`,
-`π(x) < x / (log x - 1 - 1/log x - 3.024334/log² x - 12.975666/log³ x - 71.048668/log⁴ x -
-a₅/log⁵ x - a₆/log⁶ x)` with `a₅ = 461.364417856444` and `a₆ = 4331.1`.
-`π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's six-term upper bound for the prime-counting function.** Let $\pi(x)$ denote the
+number of primes $p \le x$ and $\log$ the natural logarithm. For every real $x \ge 48$,
+
+$$
+\pi(x) < \frac{x}{\log x - 1 - \frac{1}{\log x} - \frac{3.024334}{\log^2 x} -
+\frac{12.975666}{\log^3 x} - \frac{71.048668}{\log^4 x} - \frac{461.364417856444}{\log^5 x} -
+\frac{4331.1}{\log^6 x}}.
+$$
 
 ## Depends on
 

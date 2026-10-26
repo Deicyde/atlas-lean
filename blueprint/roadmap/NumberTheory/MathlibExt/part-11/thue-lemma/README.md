@@ -5,5 +5,5 @@ navigation: module
 
 # Thue Lemma
 
-- [Thue lemma general](thue-lemma-general.md)
-- [Thue lemma](thue-lemma.md)
+- [Thue's lemma, general form](thue-lemma-general.md)
+- [Thue's lemma](thue-lemma.md)

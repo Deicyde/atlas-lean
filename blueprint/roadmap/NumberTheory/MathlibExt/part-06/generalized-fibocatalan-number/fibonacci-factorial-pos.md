@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciFactorial_pos
 ---
 
-# Fibonacci Factorial pos
+# Fibonacci factorials are positive
 
-Every Fibonacci factorial is strictly positive as a rational.
+**Fibonacci factorials are positive.** For every natural number $n$, the Fibonacci factorial
+$F_n!$ is a strictly positive rational number.
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Sources
 

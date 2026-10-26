@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lucasPseudoprimeIndex
 ---
 
-# Lucas Pseudoprime Index
+# Index of the Lucas pseudoprime congruences
 
-The index `N - (D/N)` of congruences (3.1) and (3.4), with `(D/N)` the Jacobi symbol (as a
-natural number; it is positive for the odd `N > 1` coprime to `D` that the source considers).
+**Index of the Lucas pseudoprime congruences.** Let $P, Q$ be integers with $Q \neq 0$ and
+$D = P^2 - 4Q$. For a natural number $N$, the index is $N - (D/N)$, where $(D/N)$ is the Jacobi
+symbol, replaced by $0$ when this difference is negative. For $N > 1$ the difference is positive.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

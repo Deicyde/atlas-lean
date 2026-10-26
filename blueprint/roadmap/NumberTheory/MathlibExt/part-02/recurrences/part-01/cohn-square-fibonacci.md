@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 - [Cohn's theorem on square Lucas numbers](../part-02/cohn-square-lucas.md)
 - [Cohn's theorem on Lucas numbers of the form $2x^2$](cohn-twice-square-lucas.md)
-- [Lucas Number](../../../part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.primitivePrimeDivisor_pow_sub_one_mod_eq_one
 ---
 
-# Primitive Prime Divisor pow sub one mod eq one
+# Primitive prime divisors of $a^n - 1$ are $1$ modulo $n$
 
-Bang's theorem, congruence half: for integers `a ≥ 2`, `n ≥ 2`, every prime factor of
-`a^n - 1` dividing no `a^m - 1` with `1 ≤ m < n` is `≡ 1 (mod n)`. The existence half (a
-primitive prime factor exists unless `(a, n) = (2, 6)` or `n = 2` and `a + 1` is a power of
-`2`) is `MetaMathlibExt.bangZsigmondy_exists_primitivePrimeDivisor` with `b = 1`.
+**Primitive prime divisors of $a^n - 1$ are $1$ modulo $n$.** Let $a \ge 2$ and $n \ge 2$ be
+natural numbers, and let $p$ be a primitive prime divisor of the integer sequence $m \mapsto
+a^m - 1$ at index $n$, that is, a prime that divides $a^n - 1$ and divides no $a^m - 1$ with
+$1 \le m < n$. Then $p \equiv 1 \pmod n$.
+
+This is the congruence half of Bang's theorem. Its existence half (such a $p$ exists unless
+$(a, n) = (2, 6)$, or $n = 2$ and $a + 1$ is a power of $2$) is the case $b = 1$ of the
+Bang–Zsigmondy theorem.
 
 ## Depends on
 
-- [Is Primitive Prime Divisor](../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Primitive prime divisor of an integer sequence](../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

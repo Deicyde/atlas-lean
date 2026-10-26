@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.benelux_pair_second_kind_iff
 ---
 
-# Benelux pair second kind iff
+# Benelux pairs of the second kind below $1.4 \cdot 10^{12}$
 
-For positive integers `m < n < 1.4 · 10¹²`, `(m, n)` is a Benelux pair of second kind
-if and only if `(m, n) = (35, 4374)` or `(m, n) = (2^k + 1, 2^{2k} + 2^{k+1})` for some
-integer `0 ≤ k ≤ 20`.
+**Benelux pairs of the second kind below $1.4 \cdot 10^{12}$.** Let $m < n$ be
+non-negative integers with $n < 1.4 \cdot 10^{12}$. Then $m$ and $n + 1$ have the same prime
+factors and $m + 1$ and $n$ have the same prime factors (that is, $(m, n)$ is a Benelux pair
+of the second kind) if and only if $(m, n) = (35, 4374)$ or
+$(m, n) = (2^k + 1, 2^{2k} + 2^{k+1})$ for some integer $k$ with $0 \le k \le 20$.
+
+Here $0$ is taken to have no prime factors; for $m = 0$ both sides are false.
 
 ## Depends on
 

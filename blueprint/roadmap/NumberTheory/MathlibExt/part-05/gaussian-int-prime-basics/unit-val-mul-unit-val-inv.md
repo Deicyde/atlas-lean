@@ -14,7 +14,7 @@ Then $u_j v_j = 1$ for every $j \in \{0, 1, 2, 3\}$.
 
 ## Depends on
 
-- [Unit Val](unit-val.md)
+- [Enumeration of the Gaussian units](unit-val.md)
 - [Inverses of the Gaussian units](unit-val-inv.md)
 
 ## Sources

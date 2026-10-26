@@ -7,17 +7,18 @@ proof: formalized
 lean: Nat.IsRough.pos
 ---
 
-# Pos
+# Rough numbers are positive
 
-A rough number is positive.
+**Rough numbers are positive.** For every natural number $k$, every $k$-rough natural number
+$n$ satisfies $n > 0$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Ne zero](ne-zero.md)
+- [Rough numbers are nonzero](ne-zero.md)
 
 ## Sources
 

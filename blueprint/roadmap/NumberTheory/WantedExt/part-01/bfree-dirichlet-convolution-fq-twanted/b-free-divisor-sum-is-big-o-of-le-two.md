@@ -5,17 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.bFreeDivisorSum_isBigO_of_le_two
 ---
 
-# B Free Divisor Sum is Big O of le two
+# Asymptotic for B-free divisor sums when h is at most 2
 
-Theorem 2 for `h ∈ {1, 2}`: for `κ ≥ 2`,
-`D̃_{B_κ,h}(N) = q^N N^{h-1} / (1 - 1/q) ∏_P [1 - |P|^{-κ(P)} (C_P + |P|^{-1} (1 - C_P))]
-(1 + O(1/N))` with `C_P = binom(h + κ(P) - 1, κ(P))`, stated as
-`D̃ - main = O(main / N)`. For `h ≥ 3` the printed main term is wrong (see the audit row).
+**Asymptotic for B-free divisor sums when h is at most 2.** Let $F$ be a finite field with $q$
+elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\kappa$ assign a natural
+number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every monic irreducible $P$. Let
+$h \in \{1, 2\}$ and let $\tilde D_{\kappa,h}(N)$ be the sum of $d_h(f)$ over the monic
+$B_\kappa$-free $f$ of degree at most $N$, where $d_h(f)$ is the number of $h$-tuples of monic
+polynomials with product $f$, and $f$ is $B_\kappa$-free when no $P^{\kappa(P)}$ with $P$ monic
+irreducible divides it. Put $C_P = \binom{h + \kappa(P) - 1}{\kappa(P)}$ and
+
+$$
+M(N) = \frac{q^N N^{h-1}}{1 - 1/q}
+\prod_P \Bigl(1 - |P|^{-\kappa(P)} \bigl(C_P + |P|^{-1} (1 - C_P)\bigr)\Bigr),
+$$
+
+the product running over the monic irreducible $P$. Then
+$\tilde D_{\kappa,h}(N) - M(N) = O(M(N)/N)$ as $N \to \infty$.
+
+The paper states this for every $h \ge 1$, but its main term is not correct for $h \ge 3$.
 
 ## Depends on
 
-- [B Free Divisor Sum](b-free-divisor-sum.md)
-- [Fq Norm](fq-norm.md)
+- [The $B_\kappa$-free divisor sum](b-free-divisor-sum.md)
+- [Norm of a polynomial over a finite field](fq-norm.md)
 
 ## Sources
 

@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.IsOddGreedyChoice.unique
 ---
 
-# Unique
+# Uniqueness of the odd greedy choice
 
-The odd greedy choice at a given remainder is unique.
+**Uniqueness of the odd greedy choice.** If $d$ and $d'$ are both odd greedy choices at the
+same rational number $r$, then $d = d'$.
 
 ## Depends on
 
-- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+- [Odd greedy choice](is-odd-greedy-choice.md)
 
 ## Proof depends on
 
-- [Inv le](inv-le.md)
-- [Min](min.md)
-- [Odd](odd.md)
-- [Pos d](pos-d.md)
+- [The odd greedy unit fraction does not exceed the remainder](inv-le.md)
+- [The odd greedy choice is minimal](min.md)
+- [The odd greedy choice is odd](odd.md)
+- [The odd greedy choice is positive](pos-d.md)
 
 ## Sources
 

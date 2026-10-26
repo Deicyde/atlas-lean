@@ -7,9 +7,11 @@ proof: formalized
 lean: Nat.exists_prime_gt_and_dvd_ascFactorial
 ---
 
-# Sylvester Schur
+# Sylvester–Schur theorem
 
-Sylvester-Schur theorem in Mathlib's `Nat.ascFactorial` API form.
+**Sylvester–Schur theorem.** Let $n$ and $k$ be natural numbers with $0 < k < n$. Then some
+prime $p > k$ divides the product $n(n+1)\cdots(n+k-1)$ of the $k$ consecutive integers starting
+at $n$.
 
 ## Depends on
 

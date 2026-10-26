@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.monicDirichletConv_one
 ---
 
-# Monic Dirichlet Conv one
+# Dirichlet convolution at $1$
 
-The only monic divisor of `1` is `1`, so `(α * β)(1) = α(1) β(1)`.
+**Dirichlet convolution at $1$.** Let $F$ be a field and let $\alpha$ and $\beta$ be functions
+from $F[T]$ to $\mathbb{C}$. Their Dirichlet convolution over monic divisors satisfies
+$(\alpha * \beta)(1) = \alpha(1) \beta(1)$, since the only monic divisor of $1$ is $1$.
 
 ## Depends on
 
-- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Dirichlet convolution over monic divisors](monic-dirichlet-conv.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ exactly `R_{-5} = 4 = R_2 ^ 2 = R_4 ^ 2` and `R_{-18} = 25 = R_5 ^ 2 = R_6 ^ 2`.
 ## Depends on
 
 - [Perrin Neg](perrin-neg.md)
-- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
+- [Perrin sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

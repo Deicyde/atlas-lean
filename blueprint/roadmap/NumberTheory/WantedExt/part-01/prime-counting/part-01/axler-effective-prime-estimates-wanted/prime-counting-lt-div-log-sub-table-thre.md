@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.primeCounting_lt_div_log_sub_table_three
 ---
 
-# Prime Counting lt div log sub table three
+# Axler's Table 3 upper bounds for the prime-counting function
 
-Upper bounds `π(x) < x / (log x - 1 - 1/log x - 3.024334/log² x - a₃/log³ x - a₄/log⁴ x -
-a₅/log⁵ x)` for every real `x ≥ x₀`, for the three rows `(a₃, a₄, a₅, x₀)` of Table 3:
-`(14.893, 0, 0, 142464507937911)`, `(12.975666, 79.962, 0, 22)`,
-`(12.975666, 71.048668, 533.594, 32)`. `π(x)` is `Nat.primeCounting ⌊x⌋₊`.
+**Axler's Table 3 upper bounds for the prime-counting function.** Let $\pi(x)$ denote the
+number of primes $p \le x$ and $\log$ the natural logarithm. For each of the three rows
+$(a_3, a_4, a_5, x_0)$ equal to $(14.893, 0, 0, 142464507937911)$, $(12.975666, 79.962, 0, 22)$
+and $(12.975666, 71.048668, 533.594, 32)$, every real $x \ge x_0$ satisfies
+
+$$
+\pi(x) < \frac{x}{\log x - 1 - \frac{1}{\log x} - \frac{3.024334}{\log^2 x} -
+\frac{a_3}{\log^3 x} - \frac{a_4}{\log^4 x} - \frac{a_5}{\log^5 x}}.
+$$
 
 ## Depends on
 

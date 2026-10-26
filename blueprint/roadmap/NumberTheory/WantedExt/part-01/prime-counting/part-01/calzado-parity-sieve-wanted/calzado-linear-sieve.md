@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.calzado_linear_sieve
 ---
 
-# Calzado linear sieve
+# Rosser–Iwaniec linear sieve
 
-Lemma 5 (the Rosser–Iwaniec linear sieve, quoted from Heath-Brown): with the setting of
-Lemma 2 and the one-dimensional condition
-`∑_{t ≤ ℓ < z, ℓ ∈ P} ω(ℓ) log ℓ / ℓ ≤ log (z / t) + O(1)` uniformly for `2 ≤ t ≤ z`, a level
-`y ≥ z` and `s = log y / log z`,
-`X V(z) (f(s) - C e^{-s} (log y)^{-1/3}) - ∑_{d < y, d ∣ P(z)} |R_d| ≤ S(A, P, z) ≤
-X V(z) (F(s) + C e^{-s} (log y)^{-1/3}) + ∑_{d < y, d ∣ P(z)} |R_d|`, with `C > 0` depending only
-on the constant `C₀` of the condition. `F` and `f` are the continuous functions on `(0, ∞)` with
-`F(s) = 2e^γ / s` (`0 < s ≤ 3`), `f(s) = 0` (`0 < s ≤ 2`), `(s F(s))' = f(s - 1)` (`s > 3`) and
-`(s f(s))' = F(s - 1)` (`s > 2`); in particular `f(s) = 2e^γ log(s - 1) / s` for `2 ≤ s ≤ 4`.
+**Rosser–Iwaniec linear sieve.** Let $\gamma$ be the Euler–Mascheroni constant, $C_0$ a real
+number, and $F, f \colon \mathbb{R} \to \mathbb{R}$ functions continuous on $(0, \infty)$ with
+$F(s) = 2e^{\gamma}/s$ for $0 < s \le 3$ and $f(s) = 0$ for $0 < s \le 2$, such that
+$u \mapsto uF(u)$ has derivative $f(s - 1)$ at every $s > 3$ and $u \mapsto uf(u)$ has derivative
+$F(s - 1)$ at every $s > 2$. Then $f(s) = 2e^{\gamma}\log(s - 1)/s$ for $2 \le s \le 4$, and there
+is a constant $C > 0$ with the following property. Let $P$ be a set of primes, $\omega$ a
+non-negative multiplicative arithmetic function with $\omega(p) < p$ for $p \in P$, $A$ a finite
+multiset of positive integers, and $X > 0$ and $2 \le z \le y$ real numbers such that
+$\sum_{p \in P,\ t \le p < z} \omega(p) \log p / p \le \log(z/t) + C_0$ for every real $t$ with
+$2 \le t \le z$. Write $P(z) = \prod_{p \in P,\ p < z} p$,
+$V(z) = \prod_{p \in P,\ p < z} (1 - \omega(p)/p)$ and $s = \log y / \log z$; let $S$ be the number
+of elements of $A$ coprime to $P(z)$ and $\#A_d$ the number of elements of $A$ divisible by $d$,
+both counted with multiplicity; and let
+$R = \sum_{d \mid P(z),\ d < y} |\#A_d - \omega(d) X / d|$. Then
+$S \le X V(z) (F(s) + C e^{-s} (\log y)^{-1/3}) + R$ and
+$X V(z) (f(s) - C e^{-s} (\log y)^{-1/3}) - R \le S$.
 
 ## Depends on
 

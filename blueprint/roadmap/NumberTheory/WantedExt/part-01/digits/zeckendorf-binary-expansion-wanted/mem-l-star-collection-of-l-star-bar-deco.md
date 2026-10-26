@@ -14,11 +14,11 @@ intervals inside `[0, b)`, and the rest `μ` (zero below `b`) satisfies `β̄^{b
 
 ## Depends on
 
-- [Desc Lex LT](desc-lex-lt.md)
-- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Descending lexicographic order](desc-lex-lt.md)
+- [Sums of disjoint proper $L^\ast$-blocks](is-lstar-block-sum.md)
 - [L Star Collection](l-star-collection.md)
 - [Max LStar Block](max-lstar-block.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

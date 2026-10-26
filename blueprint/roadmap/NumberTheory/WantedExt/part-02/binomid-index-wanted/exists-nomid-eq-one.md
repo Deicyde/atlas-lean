@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtensionOf.exists_nomid_eq_one
 ---
 
-# Exists nomid eq one
+# Lex-minimal extensions have a nomid coefficient equal to one
 
-Corollary 2, first part: if `η` is the lex-minimal extension of its first
-`m ≥ 1` entries and `p` is prime, then for every `n > m` some `p^η`-nomid
-coefficient `[n, k]_{p^η}` with `1 ≤ k < n` equals `1`. The `f`-nomid
-coefficient `[n, k]_f = f_n ⋯ f_{n-k+1} / (f_k ⋯ f_1)` is
-`generalizedBinomialCoefficient f k (n - k)`, applied to the `1`-indexed
-sequence `i ↦ p ^ η (i - 1)`.
+**Lex-minimal extensions have a nomid coefficient equal to one.** Let $m \ge 1$, let
+$\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, and let $p$ be a
+prime. Write $f_i = p^{e_i}$ for $i \ge 1$ and, for $1 \le k \le n$, let
+$[n, k]_f = \frac{f_n f_{n-1} \cdots f_{n-k+1}}{f_k f_{k-1} \cdots f_1}$ be the $f$-nomid
+coefficient, the generalized binomial coefficient of $f$. Then for every $n > m$ there is some $k$
+with $1 \le k < n$ and $[n, k]_f = 1$.
 
 ## Depends on
 
-- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Lex-minimal extension](is-lex-minimal-extension-of.md)
 - [Generalized binomial coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
 
 ## Sources

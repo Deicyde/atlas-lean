@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsBinomidIndex.binomidAverage_props
 ---
 
-# Binomid Average props
+# Averages of a binomid index
 
-Lemma 2, parts 1-3: for a binomid index `η` and `i, l ≥ 1`,
-`A_{i,l} ≥ A_{i,0}`, `A_{ki,0} ≥ A_{i,0}` (for `k ≥ 1`), and
-`A_{i+l,0} = i/(i+l) A_{i,l} + l/(l+i) A_{l,0}`, with `A_{i,0}` as
-`binomidAverage η i` and `A_{i,l}` written out as `(s_{i+l} - s_l) / i`.
+**Averages of a binomid index.** Let $\eta = (e_1, e_2, \dots)$ be a binomid index, write
+$s_n = e_1 + \dots + e_n$, and for $i \ge 1$ and $l \ge 0$ let $A_{i,l} = (s_{i+l} - s_l)/i$
+be the average of $e_{l+1}, \dots, e_{l+i}$. Then for all $i, l \ge 1$: $A_{i,l} \ge A_{i,0}$;
+$A_{ki,0} \ge A_{i,0}$ for every $k \ge 1$; and
+$A_{i+l,0} = \frac{i}{i+l} A_{i,l} + \frac{l}{l+i} A_{l,0}$.
 
 ## Depends on
 
-- [Is Binomid Index](is-binomid-index.md)
-- [Binomid Average](binomid-average.md)
+- [Binomid index](is-binomid-index.md)
+- [Initial averages of a sequence](binomid-average.md)
 
 ## Sources
 

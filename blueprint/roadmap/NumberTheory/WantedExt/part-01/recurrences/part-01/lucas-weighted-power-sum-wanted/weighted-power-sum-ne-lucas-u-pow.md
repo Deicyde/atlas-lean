@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.weighted_power_sum_ne_lucasU_pow
 ---
 
-# Weighted power sum ne lucas U pow
+# No solutions of $\sum_{j=1}^k j U_j^p = U_n^q$ when $y = -1$ and $x \ge 2$ or $y = 1$ and $x \ge 3$, with $k \ge 3$ and exponents at most $11$
 
-Theorem 1.1, second part: for `y = ±1` with `x ≥ 2` when `y = -1` and `x ≥ 3` when `y = 1`,
-and positive `n, p, q` with `max(p, q) ≤ 11` and `k ≥ 3`, `Σ_{j=1}^k j U_j^p ≠ U_n^q`.
+**No solutions of $\sum_{j=1}^k j U_j^p = U_n^q$ when $y = -1$ and $x \ge 2$ or $y = 1$ and
+$x \ge 3$, with $k \ge 3$ and exponents at most $11$.** Let $y \in \{1, -1\}$, let $x$ be an
+integer with $x \ge 2$ if $y = -1$ and $x \ge 3$ if $y = 1$, and let $(U_m)$ be the Lucas sequence
+with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$. If $n$,
+$p$, $q$ are positive integers with $p \le 11$ and $q \le 11$, and $k \ge 3$ is an integer, then
+$\sum_{j=1}^k j U_j^p \ne U_n^q$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

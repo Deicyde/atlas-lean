@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.lucasAllAveragesIntegral_of_dvd_q
 ---
 
-# Lucas All Averages Integral of dvd q
+# Integral averages when $n$ divides $Q$
 
-Theorem 2.10: let `n > 1` and `m ∈ S'(U)`. If `n ∣ b` and `a ≡ 1 (mod n)`, or `n` is even,
-`n ∣ b` and `a ≡ -1 (mod n)`, then `A_W(n)` and `A_W(m n)` are integers for all `W(a, b)`.
+**Integral averages when $n$ divides $Q$.** Let $U$ be the Lucas sequence with parameters $P$
+and $Q \ne 0$, given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$, and let $S'(U)$ be
+the set of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of $U$ modulo $n$
+divides $n$ and $n \mid U_1 + \dots + U_n$. Say that a natural number $x$ has integral averages
+if $x \mid w_1 + \dots + w_x$ for every integer sequence $(w_k)_{k \ge 0}$ with
+$w_{k+2} = P w_{k+1} - Q w_k$ for all $k$. Let $n > 1$ divide $Q$, and suppose that either
+$P \equiv 1 \pmod n$, or $n$ is even and $P \equiv -1 \pmod n$. Then for every $m \in S'(U)$,
+both $n$ and $mn$ have integral averages.
+
+In the paper's notation $a = P$ and $b = -Q$, so $n \mid Q$ is the paper's $n \mid b$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
 
 ## Sources
 

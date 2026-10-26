@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.log_glaisherKinkelinConstant
 ---
 
-# Log glaisher Kinkelin Constant
+# Logarithm of the Glaisher–Kinkelin constant
 
-`log A = 1/12 - ζ'(-1)`.
+**Logarithm of the Glaisher–Kinkelin constant.** The Glaisher–Kinkelin constant $A$ satisfies
+$\log A = \frac{1}{12} - \operatorname{Re} \zeta'(-1)$, where $\zeta'$ is the complex derivative
+of the Riemann zeta function.
 
 ## Depends on
 
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

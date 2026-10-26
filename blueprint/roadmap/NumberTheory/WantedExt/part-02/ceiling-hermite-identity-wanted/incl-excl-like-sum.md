@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.inclExclLikeSum
 ---
 
-# Incl Excl Like Sum
+# Inclusion-exclusion-like sum
 
-The inclusion-exclusion-like sum
-`g^(F)(x_1, …, x_n) = Σ_{∅ ≠ T ⊆ [1, n]} (-1)^{|T| - 1} F(Σ_{i ∈ T} x_i)` (Definition 2 for
-`F = ⌊·⌋`, the general `g^(F)` of Section 1 and Definition 3 for the other `F`).
+**Inclusion-exclusion-like sum.** For a function $F : \mathbb{R} \to \mathbb{Z}$ and real
+numbers $x_1, \dots, x_n$, the inclusion-exclusion-like sum is the integer
+$g^{(F)}(x_1, \dots, x_n) = \sum_T (-1)^{|T| - 1} F\left(\sum_{i \in T} x_i\right)$, where $T$
+ranges over the nonempty subsets of $\{1, \dots, n\}$.
 
 ## Depends on
 

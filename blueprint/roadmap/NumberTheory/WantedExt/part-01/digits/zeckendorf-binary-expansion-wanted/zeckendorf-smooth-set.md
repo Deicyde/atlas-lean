@@ -7,7 +7,11 @@ lean: MetaMathlibExt.zeckendorfSmoothSet
 
 # Zeckendorf Smooth Set
 
-The set `U = eval_Q̃(Ẽ* − Ē*)` (Notation 2).
+**The set $U$ of evaluations of $\tilde E^* \setminus \bar E^*$.** For lists $L$ and
+$\tilde L$ and a real sequence $\tilde Q$, let $\tilde E^*$ be the $\tilde L^*$-collection and
+$\bar E^*$ the closure collection of $L$. The set $U \subseteq \mathbb R$ is the image of
+$\tilde E^* \setminus \bar E^*$ under the evaluation
+$\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 - [L Star Closure](l-star-closure.md)
 - [L Star Collection](l-star-collection.md)
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
 
 ## Sources
 

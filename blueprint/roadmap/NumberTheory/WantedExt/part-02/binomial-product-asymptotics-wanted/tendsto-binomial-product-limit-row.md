@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_binomialProduct_limit_row
 ---
 
-# Tendsto binomial Product limit row
+# Pascal-row asymptotics as a limit of binomial-product asymptotics
 
-Theorem 10 as a limit of Theorem 6: `C_{a,1} → C_row` as `a → ∞`; for `n ≥ 1`,
-`a^{-n(n+1)/2} ∏_{ν=1}^n C(aν, ν) → ∏_{ν=1}^n C(n, ν)`; and for real `x > 0`,
-`a^{-x(x+1)/2} P_{a,1}(x) → P_row(x) = e^{x^2/2 + x}/((2π)^{x/2} x^{x/2+1/3})`. The paper
-does not state the range of `x`; `x > 0` is assumed.
+**Pascal-row asymptotics as a limit of binomial-product asymptotics.** Let $F_k$ denote the
+factorial product constants and $P_{a,b}$ the binomial comparison functions, and let $n \ge 1$
+be a natural number and $x > 0$ a real number. Then, as $a \to \infty$ through the natural
+numbers, $\frac{F_a}{F_1 F_{a-1}} (2\pi)^{-1/4} \to \left(F_1 (2\pi)^{1/4}\right)^{-1}$,
+$a^{-n(n+1)/2} \prod_{\nu=1}^{n} \binom{a\nu}{\nu} \to \prod_{\nu=1}^{n} \binom{n}{\nu}$, and
+$a^{-x(x+1)/2} P_{a,1}(x) \to e^{x^2/2 + x} / \left((2\pi)^{x/2} x^{x/2 + 1/3}\right)$.
+
+The source does not state the range of $x$; the hypothesis $x > 0$ is added here.
 
 ## Depends on
 
-- [Binomial Product Comparison](binomial-product-comparison.md)
-- [Factorial Product Constant](factorial-product-constant.md)
+- [Comparison function for products of binomial coefficients](binomial-product-comparison.md)
+- [Factorial-product constants](factorial-product-constant.md)
 
 ## Sources
 

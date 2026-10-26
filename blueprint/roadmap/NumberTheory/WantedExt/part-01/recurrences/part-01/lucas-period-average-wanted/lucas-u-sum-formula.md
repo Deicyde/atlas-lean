@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_sum_formula
 ---
 
-# Lucas U sum formula
+# Sum of the first $n$ terms of a Lucas sequence
 
-Corollary 2.1: for `b ≠ 0`, `(a + b - 1) B_U(n) = U (n + 1) - 1 + b U n` if
-`a + b - 1 ≠ 0`, and `(-b - 1) B_U(n) = U (n + 1) - 1 - n` if `a + b - 1 = 0`.
+**Sum of the first $n$ terms of a Lucas sequence.** Let $U$ be the Lucas sequence
+$U_0 = 0$, $U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with integer parameters $P$ and $Q \ne 0$,
+and let $B(n) = U_1 + \cdots + U_n$. For every $n \ge 0$: if $P - Q - 1 \ne 0$, then
+$(P - Q - 1) B(n) = U_{n+1} - 1 - Q U_n$; if $P - Q - 1 = 0$, then
+$(Q - 1) B(n) = U_{n+1} - 1 - n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

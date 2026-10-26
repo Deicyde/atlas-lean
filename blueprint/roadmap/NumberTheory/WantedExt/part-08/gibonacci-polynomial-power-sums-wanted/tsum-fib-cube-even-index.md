@@ -12,7 +12,7 @@ Corollary 4.4: `Σ_{n≥1} (4F_{6n} + 3F_{2n})/(F_{2n}² + 1)³ = 5` and
 
 ## Depends on
 
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

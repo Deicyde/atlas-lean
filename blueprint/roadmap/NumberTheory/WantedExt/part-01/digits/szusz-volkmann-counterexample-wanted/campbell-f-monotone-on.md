@@ -11,7 +11,7 @@ Lemma 5: `f` is monotonically increasing (non-decreasing) on `ℝ_{≥ 0}`.
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
+- [Campbell's interpolation](campbell-f.md)
 
 ## Sources
 

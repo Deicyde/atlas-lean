@@ -14,14 +14,14 @@ and let `β̂^{t+1} = θ^{t+1}` be the immediate predecessor of `β^{t+1}` in `E
 
 ## Depends on
 
-- [Asc Lex LT](asc-lex-lt.md)
-- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Ascending lexicographic order](asc-lex-lt.md)
+- [Periodic Zeckendorf pairs](is-periodic-zeckendorf-pair.md)
 - [Max LStar Block](max-lstar-block.md)
 - [Periodic Theta](periodic-theta.md)
-- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
-- [Zeckendorf Bar](zeckendorf-bar.md)
-- [Zeckendorf Rev](zeckendorf-rev.md)
-- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+- [Periodic Zeckendorf collection](periodic-zeckendorf-collection.md)
+- [The coefficient function $\bar\mu$](zeckendorf-bar.md)
+- [Reversal of the first $n$ entries](zeckendorf-rev.md)
+- [The map $\overline{\mathrm{rev}}$](zeckendorf-rev-bar.md)
 
 ## Sources
 

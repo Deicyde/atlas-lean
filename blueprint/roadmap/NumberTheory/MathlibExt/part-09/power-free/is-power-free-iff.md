@@ -13,7 +13,7 @@ Transparent characterization of `IsPowerFree`.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Sources
 

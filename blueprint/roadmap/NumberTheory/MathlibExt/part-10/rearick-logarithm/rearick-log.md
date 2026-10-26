@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.rearickLog
 ---
 
-# Rearick Log
+# Rearick logarithm
 
-The Rearick logarithm of a real arithmetic function `f` with `0 < f 1`: it is `0` at `0`,
-`Real.log (f 1)` at `1`, and `∑ d ∣ n, f d * f⁻¹ (n / d) * Real.log d` at `n > 1`, where `f⁻¹` is
-the Dirichlet inverse of `f`.
+**Rearick logarithm.** Let $f$ be a real-valued arithmetic function with $f(1) > 0$, and let
+$f^{-1}$ be its Dirichlet inverse. The Rearick logarithm of $f$ is the arithmetic function $L(f)$
+with $L(f)(0) = 0$, $L(f)(1) = \log f(1)$, and
+$L(f)(n) = \sum_{d \mid n} f(d) \, f^{-1}(n/d) \log d$ for $n > 1$.
 
 ## Depends on
 

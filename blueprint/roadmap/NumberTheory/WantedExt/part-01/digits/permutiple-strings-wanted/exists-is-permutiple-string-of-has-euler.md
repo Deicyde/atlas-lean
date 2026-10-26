@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPermutipleString_of_hasEulerianCircuitFromZero
 ---
 
-# Exists is Permutiple String of has Eulerian Circuit From Zero
+# Eulerian circuits through zero yield permutiple strings
 
-Sufficient condition (main theorem): let `cs` be a multiset of cycles of the
-`(n, b)`-mother graph, with multiset union `C_I` and multi-image union `Δ_I`. If `Δ_I`
-contains an Eulerian circuit beginning and ending with the zero state, then `C_I` can be
-ordered into a permutiple string.
+**Eulerian circuits through zero yield permutiple strings.** Let $1 < n < b$ and let $I$
+be a multiset of cycles of the $(n, b)$-mother graph, with multiset union of cycle edges
+$C_I$ and multi-image union $\Delta_I$. If $\Delta_I$ has an Eulerian circuit beginning
+and ending at the zero state, then there is an $(n, b)$-permutiple string $s$ whose
+multiset of entries is $C_I$.
 
 ## Depends on
 
-- [Has Eulerian Circuit From Zero](has-eulerian-circuit-from-zero.md)
-- [Is Mother Graph Cycle](is-mother-graph-cycle.md)
-- [Is Permutiple String](is-permutiple-string.md)
-- [Cycle Union](cycle-union.md)
-- [Multi Image Union](multi-image-union.md)
+- [Eulerian circuit through the zero state](has-eulerian-circuit-from-zero.md)
+- [Cycles of the mother graph](is-mother-graph-cycle.md)
+- [Permutiple strings](is-permutiple-string.md)
+- [Multiset union of cycle edges](cycle-union.md)
+- [Multi-image union of a multiset of cycles](multi-image-union.md)
 
 ## Sources
 

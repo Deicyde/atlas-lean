@@ -4,6 +4,6 @@ navigation: module
 
 # Highly Composite
 
-- [Is Highly Composite](is-highly-composite.md)
-- [Factorization antitone](factorization-antitone.md)
-- [Dvd of prime le](dvd-of-prime-le.md)
+- [Highly composite numbers](is-highly-composite.md)
+- [Exponents of highly composite numbers are non-increasing](factorization-antitone.md)
+- [Prime divisors of highly composite numbers form an initial segment](dvd-of-prime-le.md)

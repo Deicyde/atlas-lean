@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.carmichaelIndex_four_and_sixtySix
 ---
 
-# Carmichael Index four and sixty Six
+# The Carmichael indices of 4 and 66
 
-`N(4) = 2` and `N(66) = 24`, as in the paper's Table 1 and Example 3.
+**The Carmichael indices of 4 and 66.** The Carmichael index satisfies $N(4) = 2$ and
+$N(66) = 24$.
 
 ## Depends on
 
-- [Carmichael Index](carmichael-index.md)
+- [Carmichael index](carmichael-index.md)
 
 ## Sources
 

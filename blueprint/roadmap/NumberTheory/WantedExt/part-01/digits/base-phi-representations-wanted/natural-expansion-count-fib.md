@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.naturalExpansionCount_fib
 ---
 
-# Natural Expansion Count fib
+# Natural expansions of Fibonacci numbers
 
-`Tot_ν(F_{2n+2}) = F_{2n+1}` and `Tot_ν(F_{2n+3}) = F_{2n+3}` for all `n ≥ 0`.
+**Natural expansions of Fibonacci numbers.** Write $\mathrm{Tot}_\nu(N)$ for the number of
+natural base phi expansions of a natural number $N$ and $F_k$ for the $k$-th Fibonacci number.
+Then for every $n \ge 0$, $\mathrm{Tot}_\nu(F_{2n+2}) = F_{2n+1}$ and
+$\mathrm{Tot}_\nu(F_{2n+3}) = F_{2n+3}$.
 
 ## Depends on
 
-- [Natural Expansion Count](natural-expansion-count.md)
+- [Number of natural expansions](natural-expansion-count.md)
 
 ## Sources
 

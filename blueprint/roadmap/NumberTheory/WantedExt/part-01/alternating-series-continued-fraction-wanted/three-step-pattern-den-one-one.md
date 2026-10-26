@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.threeStepPatternDen_one_one
 ---
 
-# Three Step Pattern Den one one
+# Small values of the three-step pattern denominators
 
-Small values: for `ω ≡ 1` and `β = 1`, `q = 1, 1, 2, 3, 8, 11, 19, 220, …`.
+**Small values of the three-step pattern denominators.** For $\beta = 1$ and $\omega_n = 1$
+for all $n$, the convergent denominators $q_0, \dots, q_7$ of the three-step pattern are
+$1, 1, 2, 3, 8, 11, 19, 220$.
 
 ## Depends on
 
-- [Three Step Pattern Den](three-step-pattern-den.md)
+- [Convergent denominators of the three-step pattern](three-step-pattern-den.md)
 
 ## Sources
 

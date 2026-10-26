@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.negBaseSqDigitSum_zero
 ---
 
-# Neg Base Sq Digit Sum zero
+# The digit-square sum of zero
 
-`S_{2,b}(0) = 0`.
+**The digit-square sum of zero.** For every integer $b$, the base-$b$ digit-square sum $S_{2,b}$
+satisfies $S_{2,b}(0) = 0$.
 
 ## Depends on
 
-- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Sum of squared digits in a negative base](neg-base-sq-digit-sum.md)
 
 ## Proof depends on
 
-- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
+- [Truncated digit-square sum in a negative base](neg-base-sq-digit-sum-aux.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.two_pow_card_primeFactors_sub_one_dvd_sigmaBiunitary_of_even
 ---
 
-# Two pow card prime Factors sub one dvd sigma Biunitary of even
+# Divisibility of the biunitary divisor sum of an even number by a power of two
 
-For positive even `n`, `2 ^ (ω(n) - 1)` divides `σ**(n)`.
+**Divisibility of the biunitary divisor sum of an even number by a power of two.** For every
+positive even natural number $n$, writing $\omega(n)$ for the number of distinct prime factors of
+$n$, the power $2^{\omega(n) - 1}$ divides the biunitary divisor sum $\sigma^{**}(n)$.
 
 ## Depends on
 

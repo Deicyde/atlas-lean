@@ -14,8 +14,8 @@ large `s` have at least `M` such integers.
 
 ## Depends on
 
-- [Practical Number](../../../MathlibExt/part-09/is-practical-number.md)
-- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
+- [Practical number](../../../MathlibExt/part-09/is-practical-number.md)
+- [Polygonal numbers](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

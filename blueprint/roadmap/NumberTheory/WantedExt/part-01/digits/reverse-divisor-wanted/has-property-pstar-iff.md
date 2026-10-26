@@ -8,8 +8,8 @@ lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.hasPropertyPStar_iff
 
 # Has Property PStar iff
 
-Characterization of `HasPropertyPStar` by its
-defining divisibility condition.
+**Unfolding property $P^*$.** A natural number $n$ has property $P^*$ if and only if $n$
+divides the decimal reversal of every multiple of $n$.
 
 ## Depends on
 

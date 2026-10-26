@@ -11,7 +11,7 @@ lean: MetaMathlibExt.two_pow_mul_lucasNumber_succ_modEq_five
 
 ## Depends on
 
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

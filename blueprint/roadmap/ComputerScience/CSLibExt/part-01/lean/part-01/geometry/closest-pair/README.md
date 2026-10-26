@@ -23,11 +23,11 @@ navigation: module
 
 ## The strip
 
-- [Strip Scan lower](strip-scan-lower.md)
+- [The strip scan bounds every pair with a small vertical gap](strip-scan-lower.md)
 
 ## Divide and conquer
 
-- [Closest Rec is Answer](closest-rec-is-answer.md)
+- [The strip scan bounds every pair with a small vertical gap](closest-rec-is-answer.md)
 
 ## Correctness
 

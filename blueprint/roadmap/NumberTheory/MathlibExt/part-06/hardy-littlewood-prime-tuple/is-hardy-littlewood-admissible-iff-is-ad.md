@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isHardyLittlewoodAdmissible_iff_isAdmissibleFinset
 ---
 
-# Is Hardy Littlewood Admissible iff is Admissible Finset
+# Hardy–Littlewood admissibility via the set of entries
 
-A tuple is Hardy–Littlewood admissible exactly when its set of entries is admissible.
+**Hardy–Littlewood admissibility via the set of entries.** A tuple of integers is
+Hardy–Littlewood admissible exactly when its set of entries is admissible.
 
 ## Depends on
 
-- [Is Admissible Finset](is-admissible-finset.md)
-- [Is Hardy Littlewood Admissible](is-hardy-littlewood-admissible.md)
+- [Admissible finite sets of integers](is-admissible-finset.md)
+- [Hardy–Littlewood admissible tuples](is-hardy-littlewood-admissible.md)
 
 ## Proof depends on
 
-- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
-- [Hardy Littlewood Residue Count ne iff](hardy-littlewood-residue-count-ne-iff.md)
+- [Number of residue classes met by an integer tuple](hardy-littlewood-residue-count.md)
+- [Missing a residue class modulo a prime](hardy-littlewood-residue-count-ne-iff.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.nthPrime_lt_mul_log_nthPrime_sub_one_sub_inv_log
 ---
 
-# Nth Prime lt mul log nth Prime sub one sub inv log
+# A second-order upper bound for the $n$-th prime in terms of its logarithm
 
-Consequence (5) of Lemma 4: `pₙ < n (log pₙ - 1 - 1 / log pₙ)` for every `n ≥ 39071 =
-π(468049)` (one-indexed `pₙ`).
+**A second-order upper bound for the $n$-th prime in terms of its logarithm.** Let $p_n$
+denote the $n$-th prime, so that $p_1 = 2$. For every integer $n \ge 39071$,
+
+$$p_n < n\left(\log p_n - 1 - \frac{1}{\log p_n}\right).$$
+
+Here $39071 = \pi(468049)$, where $\pi(x)$ denotes the number of primes at most $x$.
 
 ## Depends on
 

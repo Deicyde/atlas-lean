@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ecsd_type_two_relIso
 ---
 
-# Ecsd type two rel Iso
+# Normal form of Type 2 exact covering system digraphs
 
-Every Type 2 ECSD `G(2n + a₁, -2n + a₂)` (`a₁ - a₂` odd) is isomorphic to
-`G(2n, -2n + a)` for some odd `a ∈ ℕ`.
+**Normal form of Type 2 exact covering system digraphs.** Let $a_1, a_2 \in \mathbb{Z}$ with
+$a_1 - a_2$ odd, and write $G(2n + a_1, -2n + a_2)$ for the exact covering system digraph on
+$\mathbb{Z}$ with an edge $m \to n$ exactly when $n = 2m + a_1$ or $n = -2m + a_2$. Then there is
+an odd natural number $a$ such that $G(2n + a_1, -2n + a_2)$ is isomorphic as a digraph to
+$G(2n, -2n + a)$, the digraph on $\mathbb{Z}$ with an edge $m \to n$ exactly when $n = 2m$ or
+$n = -2m + a$.
 
 ## Depends on
 
-- [Ecsd Adj](ecsd-adj.md)
+- [Edge relation of an exact covering system digraph](ecsd-adj.md)
 
 ## Sources
 

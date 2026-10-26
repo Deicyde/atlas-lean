@@ -7,19 +7,20 @@ proof: formalized
 lean: Nat.IsRough.eq_one_of_mem_smoothNumbers
 ---
 
-# Eq one of mem smooth Numbers
+# Only $1$ is rough and smooth at the same bound
 
-Bridge to `Nat.smoothNumbers` under Mathlib's strict-bound convention:
-a number that is both `k`-rough and `(k + 1)`-smooth must equal `1`.
+**Only $1$ is rough and smooth at the same bound.** Let $n$ and $k$ be natural
+numbers. If $n$ is $k$-rough and $n$ is positive with every prime factor less than
+$k + 1$, then $n = 1$.
 
 ## Depends on
 
-- [Is Rough](is-rough.md)
+- [Rough numbers](is-rough.md)
 
 ## Proof depends on
 
-- [Lt of prime dvd](lt-of-prime-dvd.md)
-- [Ne zero](ne-zero.md)
+- [Prime divisors of a rough number exceed the bound](lt-of-prime-dvd.md)
+- [Rough numbers are nonzero](ne-zero.md)
 
 ## Sources
 

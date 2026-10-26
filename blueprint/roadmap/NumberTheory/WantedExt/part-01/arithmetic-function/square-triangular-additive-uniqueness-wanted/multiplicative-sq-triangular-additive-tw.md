@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.multiplicative_sq_triangular_additive_two_pow_odd
 ---
 
-# Multiplicative sq triangular additive two pow odd
+# Square–triangular additivity fixes odd powers of two
 
-Let `f` be multiplicative with `f (u² + t_v) = f (u²) + f (t_v)` for all positive
-`u, v`. If `N ≥ 4` and `f n = n` for `1 ≤ n ≤ N - 1`, then `f (2^(2k-1)) = 2^(2k-1)` for
-every positive `k` with `2k ≤ N - 2`.
+**Square–triangular additivity fixes odd powers of two.** Let $t_v = v(v + 1)/2$ denote the
+$v$-th triangular number, and let $f$ be a complex-valued multiplicative arithmetic function
+with $f(u^2 + t_v) = f(u^2) + f(t_v)$ for all positive integers $u$ and $v$. Let $N \ge 4$ be an
+integer such that $f(n) = n$ for every integer $n$ with $1 \le n \le N - 1$. Then
+$f(2^{2k-1}) = 2^{2k-1}$ for every positive integer $k$ with $2k \le N - 2$.
 
 ## Depends on
 

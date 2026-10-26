@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.permutiple_graph_isUnion_motherGraphCycles
 ---
 
-# Permutiple graph is Union mother Graph Cycles
+# Edges of a permutiple's graph lie on cycles of the mother graph
 
-The graph of a permutiple class is a union of cycles of the mother graph: for an
-`(n, b, σ)`-permutiple `p` (whose class `C` has graph `G_C = G_p`), every edge
-`(d_j, d_{σ(j)})` of `G_p` is an edge of `M` and lies on a directed cycle of `G_p`, i.e.
-`d_{σ(j)}` reaches `d_j` along edges of `G_p`. The multiplier is positive (`1 ≤ n`).
+**Edges of a permutiple's graph lie on cycles of the mother graph.** Let $n \ge 1$, $b$ and $k$
+be natural numbers, let $\sigma$ be a permutation of $\{0, \dots, k\}$ and let
+$(d_k, \dots, d_0)_b$ be an $(n, b, \sigma)$-permutiple, that is, $d_i < b$ for all $i$ and
+$(d_k, \dots, d_0)_b = n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$. Its graph has the edges
+$(d_i, d_{\sigma(i)})$ for $0 \le i \le k$. Then for every $0 \le j \le k$, the pair
+$(d_j, d_{\sigma(j)})$ is an edge of the $(n, b)$-mother graph, and $d_j$ is reachable from
+$d_{\sigma(j)}$ along edges of the graph of the permutiple (in zero steps when they are equal),
+so the edge $(d_j, d_{\sigma(j)})$ lies on a directed cycle of that graph.
 
 ## Depends on
 
-- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
-- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
+- [Edges of the mother graph](../permutiple-wanted/is-mother-graph-edge.md)
+- [Permutiples with a given digit permutation](../permutiple-wanted/is-permutiple.md)
 
 ## Sources
 

@@ -5,23 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.unweightedHurwitzClassNumber_neg_four_mul_eq_classNumber
 ---
 
-# Unweighted Hurwitz Class Number neg four mul eq class Number
+# Unweighted Hurwitz class numbers via Gauss class numbers
 
-Evaluation of the unweighted Hurwitz class number `H(-4n)`: writing
-`n = 2 ^ α * g * h ^ 2` with `g, h` odd and `g` squarefree,
-1. `α` even, `g = 1`: `H(-4n) = (2 ^ (α/2) - 1/2) ℓ(n) h(d(n)) + 1/2`;
-2. `α` even, `g = 3`: `H(-4n) = (2 ^ (α/2 + 1) - 2/3) ℓ(n) h(d(n)) + 2/3`;
-3. `α` even, `g ≠ 1`, `g ≡ 1 (mod 4)`: `H(-4n) = (2 ^ (α/2 + 1) - 1) ℓ(n) h(d(n))`;
-4. `α` even, `g ≠ 3`, `g ≡ 3 (mod 8)`: `H(-4n) = (3 · 2 ^ (α/2 + 1) - 2) ℓ(n) h(d(n))`;
-5. `α` even, `g ≡ 7 (mod 8)`: `H(-4n) = 2 ^ (α/2 + 1) ℓ(n) h(d(n))`;
-6. `α` odd: `H(-4n) = (2 ^ ((α + 1)/2) - 1) ℓ(n) h(d(n))`.
+**Unweighted Hurwitz class numbers via Gauss class numbers.** Let $n$, $\alpha$, $g$, $h$ be
+natural numbers with $n = 2^\alpha g h^2$, where $g$ and $h$ are odd and $g$ is squarefree. Let
+$d$ be the Kronecker discriminant of $(\alpha, g)$, namely $d = -4g$ if $\alpha$ is even and
+$g \equiv 1 \pmod 4$, $d = -g$ if $\alpha$ is even and $g \equiv 3 \pmod 4$, and $d = -8g$ if
+$\alpha$ is odd. Put $L = \ell(d, h) \, h(d)$, where $\ell(d, h)$ is the Kronecker class
+multiplier and $h(d)$ is the Gauss class number of $d$, and let $H(-4n)$ be the unweighted
+Hurwitz class number of $-4n$. Then, with $\alpha / 2$ and $(\alpha + 1) / 2$ exact quotients in
+the cases where they occur: if $\alpha$ is even and $g = 1$, then
+$H(-4n) = (2^{\alpha/2} - 1/2) L + 1/2$; if $\alpha$ is even and $g = 3$, then
+$H(-4n) = (2^{\alpha/2 + 1} - 2/3) L + 2/3$; if $\alpha$ is even, $g \ne 1$ and
+$g \equiv 1 \pmod 4$, then $H(-4n) = (2^{\alpha/2 + 1} - 1) L$; if $\alpha$ is even, $g \ne 3$ and
+$g \equiv 3 \pmod 8$, then $H(-4n) = (3 \cdot 2^{\alpha/2 + 1} - 2) L$; if $\alpha$ is even and
+$g \equiv 7 \pmod 8$, then $H(-4n) = 2^{\alpha/2 + 1} L$; and if $\alpha$ is odd, then
+$H(-4n) = (2^{(\alpha + 1)/2} - 1) L$.
 
 ## Depends on
 
-- [Gauss Class Number](gauss-class-number.md)
-- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
-- [Kronecker Discriminant](kronecker-discriminant.md)
-- [Unweighted Hurwitz Class Number](unweighted-hurwitz-class-number.md)
+- [Gauss class number of a discriminant](gauss-class-number.md)
+- [Kronecker's class-number multiplier](kronecker-class-multiplier.md)
+- [The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$](kronecker-discriminant.md)
+- [Unweighted Hurwitz class number](unweighted-hurwitz-class-number.md)
 
 ## Sources
 

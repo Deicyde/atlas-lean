@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.binomidAverageCondition_const
 ---
 
-# Binomid Average Condition const
+# Constant sequences satisfy the Average Condition
 
-Constant sequences satisfy the Average Condition.
+**Constant sequences satisfy the Average Condition.** For every natural number $c$, the
+constant sequence $(c, c, c, \dots)$ satisfies the Average Condition.
 
 ## Depends on
 
-- [Binomid Average Condition](binomid-average-condition.md)
+- [The Average Condition](binomid-average-condition.md)
 
 ## Proof depends on
 
-- [Binomid Average](binomid-average.md)
-- [Binomid Average const](binomid-average-const.md)
-- [Binomid Upper Average](binomid-upper-average.md)
-- [Binomid Upper Average const](binomid-upper-average-const.md)
+- [Initial averages of a sequence](binomid-average.md)
+- [Averages of a constant sequence](binomid-average-const.md)
+- [Upper average of a sequence](binomid-upper-average.md)
+- [Upper average of a constant sequence](binomid-upper-average-const.md)
 
 ## Sources
 

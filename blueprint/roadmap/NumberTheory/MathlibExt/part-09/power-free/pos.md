@@ -7,13 +7,13 @@ proof: formalized
 lean: Nat.IsPowerFree.pos
 ---
 
-# Pos
+# Power-free numbers are positive
 
-Positivity of a power-free number.
+**Power-free numbers are positive.** If a natural number $n$ is $k$-free, then $n > 0$.
 
 ## Depends on
 
-- [Is Power Free](is-power-free.md)
+- [Power-free natural numbers](is-power-free.md)
 
 ## Sources
 

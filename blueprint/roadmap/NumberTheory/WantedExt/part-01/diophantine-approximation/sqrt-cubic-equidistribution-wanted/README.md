@@ -4,13 +4,13 @@ navigation: module
 
 # Sqrt Cubic Equidistribution
 
-- [Norm sum exp two pi I le of iterated Deriv two](norm-sum-exp-two-pi-i-le-of-iterated-der.md)
-- [Exists sqrt cubic equidistributed mod one](exists-sqrt-cubic-equidistributed-mod-on.md)
-- [Square Pyramidal Number](square-pyramidal-number.md)
-- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
-- [Square Pyramidal Square Distance examples](square-pyramidal-square-distance-example.md)
-- [Square Pyramidal Square Distance average asymptotic](square-pyramidal-square-distance-average.md)
-- [Square Pyramidal Square Distance moment asymptotic](square-pyramidal-square-distance-moment.md)
-- [Square Pyramidal dist nearest square root equidistributed](square-pyramidal-dist-nearest-square-roo.md)
-- [Dist round pow fourier expansion](dist-round-pow-fourier-expansion.md)
-- [Sum dist round sqrt square Pyramidal pow](sum-dist-round-sqrt-square-pyramidal-pow.md)
+- [Second-derivative test for exponential sums](norm-sum-exp-two-pi-i-le-of-iterated-der.md)
+- [Square roots of cubics with positive leading coefficient are uniformly distributed modulo one](exists-sqrt-cubic-equidistributed-mod-on.md)
+- [Square pyramidal number](square-pyramidal-number.md)
+- [Distance from a square pyramidal number to the nearest square](square-pyramidal-square-distance.md)
+- [Small square pyramidal numbers and their distances to squares](square-pyramidal-square-distance-example.md)
+- [Average distance from square pyramidal numbers to the nearest square](square-pyramidal-square-distance-average.md)
+- [Moments of the distance from square pyramidal numbers to the nearest square](square-pyramidal-square-distance-moment.md)
+- [The distance from the square root of a square pyramidal number to the nearest integer is uniformly distributed](square-pyramidal-dist-nearest-square-roo.md)
+- [Fourier expansion of a power of the distance to the nearest integer](dist-round-pow-fourier-expansion.md)
+- [Power sums of the distance from the square root of a square pyramidal number to the nearest integer](sum-dist-round-sqrt-square-pyramidal-pow.md)

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lucasInterval_four
 ---
 
-# Lucas Interval four
+# Endpoints of the Lucas interval $\Lambda_4$
 
-`Λ_4 = [7, 11]`.
+**Endpoints of the Lucas interval $\Lambda_4$.** The Lucas interval $\Lambda_4$ has left end
+$7$ and right end $11$, that is, $\Lambda_4 = [7, 11]$.
 
 ## Depends on
 
-- [Lucas Interval Hi](lucas-interval-hi.md)
-- [Lucas Interval Lo](lucas-interval-lo.md)
+- [Right end of a Lucas interval](lucas-interval-hi.md)
+- [Left end of a Lucas interval](lucas-interval-lo.md)
 
 ## Sources
 

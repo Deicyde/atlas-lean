@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.inv_log_semiprime_count_asymptotic
 ---
 
-# Inv log semiprime count asymptotic
+# Expansion of the reciprocal logarithm of the semiprime count
 
-Expansion of `1 / log N_2(x)`:
-`1/log N_2(x) = (1/log x)(1 + log log x / log x - log log log x / log x
-- β / (log x log log x) + O(1/((log x)(log log x)²)))`; the error is stated as
-`O(1/(log² x (log log x)²))` after multiplying out the factor `1/log x`.
+**Expansion of the reciprocal logarithm of the semiprime count.** Let $\pi_2(x)$ be the
+number of integers $n$ with $1 \le n \le x$ that have exactly two prime factors counted with
+multiplicity, and let $\beta$ be the Meissel–Mertens constant. Then, as $x \to \infty$,
+
+$$
+\frac{1}{\log \pi_2(x)} - \frac{1}{\log x}\left(1 + \frac{\log \log x}{\log x} -
+\frac{\log \log \log x}{\log x} - \frac{\beta}{\log x \, \log \log x}\right) =
+O\left(\frac{1}{(\log x)^2 (\log \log x)^2}\right).
+$$
+
+This is the paper's expansion, whose error term $O(1/(\log x \, (\log \log x)^2))$ sits inside
+the parentheses, multiplied out by the factor $1/\log x$.
 
 ## Depends on
 
 - [Counting almost primes](../../../MathlibExt/part-02/prime-counting/part-01/landau-almost-prime-asymptotic/almost-prime-counting.md)
-- [Meissel Mertens Constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

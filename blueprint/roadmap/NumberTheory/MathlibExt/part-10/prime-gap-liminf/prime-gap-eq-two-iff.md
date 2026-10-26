@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.NumberTheory.primeGap_eq_two_iff
 ---
 
-# Prime Gap eq two iff
+# A prime gap equals two exactly at a twin prime
 
-An actual gap two is equivalent to a twin prime at the same prime index.
+**A prime gap equals two exactly at a twin prime.** Let $p_0 < p_1 < p_2 < \cdots$ be the
+primes in increasing order and let $g_n = p_{n+1} - p_n$ be the $n$-th prime gap. For every
+$n \in \mathbb{N}$, $g_n = 2$ if and only if $p_n + 2$ is prime.
 
 ## Depends on
 
-- [Prime Gap](../prime-gap.md)
+- [Prime gap](../prime-gap.md)
 
 ## Proof depends on
 
-- [Two le prime Gap](two-le-prime-gap.md)
+- [Prime gaps after the first are at least two](two-le-prime-gap.md)
 
 ## Sources
 

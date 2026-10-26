@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciFactorial_zero
 ---
 
-# Fibonacci Factorial zero
+# Fibonacci factorial at zero
 
-`F_0! = 1` by the empty-product convention.
+**Fibonacci factorial at zero.** The Fibonacci factorial $F_0!$ equals $1$, by the
+empty-product convention.
 
 ## Depends on
 
-- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci factorial](fibonacci-factorial.md)
 
 ## Sources
 

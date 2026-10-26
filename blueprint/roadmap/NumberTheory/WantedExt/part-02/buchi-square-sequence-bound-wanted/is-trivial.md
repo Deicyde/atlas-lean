@@ -6,13 +6,12 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BuchiSquareSequenceBoundWanted.IsTrivial
 ---
 
-# Is Trivial
+# Trivial sequences in Büchi's problem
 
-A length-`M` Büchi sequence is trivial when, up to independently changing
-the signs of its terms, it is a run of consecutive increasing integers. Since
-independent signs do not change squares, and equality of integer squares
-supplies the necessary signs, this is encoded by requiring an integer `x`
-with `u j ^ 2 = (x + j) ^ 2` for every `j < M`.
+**Trivial sequences in Büchi's problem.** Let $M$ be a natural number. A sequence of
+integers $u_0, u_1, u_2, \dots$ is trivial at length $M$ when there is an integer $x$ with
+$u_j^2 = (x + j)^2$ for every $j < M$; equivalently, after changing the signs of some of its
+terms, its first $M$ terms are the consecutive integers $x, x + 1, \dots, x + M - 1$.
 
 ## Depends on
 

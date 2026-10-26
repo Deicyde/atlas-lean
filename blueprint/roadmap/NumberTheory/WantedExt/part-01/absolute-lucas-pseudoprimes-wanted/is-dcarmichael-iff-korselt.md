@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isDCarmichael_iff_korselt
 ---
 
-# Is DCarmichael iff korselt
+# Williams' Korselt criterion for $D$-Carmichael numbers
 
-Williams' criterion: for `D ≡ 0, 1 (mod 4)` and an odd composite `n` prime to `D`, `n` is
-`D`-Carmichael iff `n` is squarefree and `p - εₚ ∣ n - εₙ` for every prime `p ∣ n`. The record
-states it for every odd positive `n`; primes (and `1`) satisfy the criterion but are not
-`D`-Carmichael, so `n` is taken composite and prime to `D` as in the definition.
+**Williams' Korselt criterion for $D$-Carmichael numbers.** Let $D$ be an integer with
+$D \equiv 0$ or $1 \pmod 4$, and let $n > 1$ be an odd composite natural number coprime to $D$.
+Then $n$ is a $D$-Carmichael number if and only if $n$ is squarefree and
+$p - \left(\frac{D}{p}\right)$ divides $n - \left(\frac{D}{n}\right)$ for every prime $p \mid n$,
+where $\left(\frac{D}{m}\right)$ is the Jacobi symbol.
+
+Primes and $1$ satisfy the condition on the right but are not $D$-Carmichael, which is why $n$ is
+assumed composite; it is assumed coprime to $D$ as in the definition.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
 
 ## Sources
 

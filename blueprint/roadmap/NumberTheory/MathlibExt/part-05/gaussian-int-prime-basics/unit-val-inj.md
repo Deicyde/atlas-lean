@@ -13,7 +13,7 @@ $u_3 = -i$ in $\mathbb{Z}[i]$. For $j, k \in \{0, 1, 2, 3\}$, if $u_j = u_k$ the
 
 ## Depends on
 
-- [Unit Val](unit-val.md)
+- [Enumeration of the Gaussian units](unit-val.md)
 
 ## Sources
 

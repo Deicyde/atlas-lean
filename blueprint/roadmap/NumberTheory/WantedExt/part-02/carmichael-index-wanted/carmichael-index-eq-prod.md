@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.carmichaelIndex_eq_prod
 ---
 
-# Carmichael Index eq prod
+# Product formula for the Carmichael index
 
-Theorem 1: for `n ≥ 2` with prime factorization `n = ∏ pᵢ^{eᵢ}`,
-`N(n) = ∏ᵢ (N(n; pᵢ^{eᵢ}) + 1)`, where `N(n; pᵢ^{eᵢ})` is the number of units of
-`ℤ/pᵢ^{eᵢ}ℤ` whose order divides `gcd(pᵢ - 1, n / pᵢ^{eᵢ} - 1)`. The exponent `eᵢ` is
-`n.factorization p`; the subtraction `n / p^e - 1` is in `ℕ`, where `n / p^e ≥ 1`.
+**Product formula for the Carmichael index.** Let $n \ge 2$ and, for each prime $p$ dividing
+$n$, let $p^{e_p}$ be the largest power of $p$ dividing $n$. Then the Carmichael index of $n$ is
+$N(n) = \prod_p \bigl(N(n; p^{e_p}) + 1\bigr)$, the product running over the primes $p$ dividing
+$n$, where $N(n; p^{e_p})$ is the number of units of $\mathbb{Z}/p^{e_p}\mathbb{Z}$ whose
+multiplicative order divides $\gcd(p - 1, n/p^{e_p} - 1)$.
 
 ## Depends on
 
-- [Carmichael Index](carmichael-index.md)
+- [Carmichael index](carmichael-index.md)
 
 ## Sources
 

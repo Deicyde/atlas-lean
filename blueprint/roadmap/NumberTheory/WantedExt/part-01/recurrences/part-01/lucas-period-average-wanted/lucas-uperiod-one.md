@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lucasUPeriod_one
 ---
 
-# Lucas UPeriod one
+# Period of a Lucas sequence modulo 1
 
-`π_U(1) = 1`.
+**Period of a Lucas sequence modulo 1.** For every Lucas sequence $U = U(P, Q)$, the least
+period $\pi_U(1)$ of $U$ modulo $1$ equals $1$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas UPeriod](lucas-uperiod.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Period of a Lucas sequence modulo $m$](lucas-uperiod.md)
 
 ## Sources
 

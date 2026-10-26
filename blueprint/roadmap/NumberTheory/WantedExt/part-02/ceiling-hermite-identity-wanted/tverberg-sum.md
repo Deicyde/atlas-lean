@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tverbergSum
 ---
 
-# Tverberg Sum
+# Tverberg's sum
 
-Tverberg's sum
-`f^(F)({a_1, …, a_ℓ}, m, k) = Σ_{T ⊆ [1, ℓ]} (-1)^{ℓ - |T|} F((k + Σ_{i ∈ T} a_i) / m)`
-(Definition 1 for `F = ⌊·⌋`, Section 1 and Definition 3 for the other `F`).
+**Tverberg's sum.** Let $F : \mathbb{R} \to \mathbb{Z}$, let $a = (a_1, \dots, a_\ell)$ be a
+tuple of integers, let $m$ be a natural number and let $k$ be an integer. Tverberg's sum is
+$f^{(F)}(a, m, k) = \sum_{T \subseteq \{1, \dots, \ell\}} (-1)^{\ell - |T|}
+F((k + \sum_{i \in T} a_i) / m)$, where the division is in $\mathbb{R}$ (with $x / 0 = 0$).
+
+The paper takes $F = \lfloor \cdot \rfloor$ in Definition 1, and $F = \lceil \cdot \rceil$,
+$x \mapsto \lfloor x + 1/2 \rfloor$ or $x \mapsto \lceil x - 1/2 \rceil$ in Section 1 and
+Definition 3.
 
 ## Depends on
 

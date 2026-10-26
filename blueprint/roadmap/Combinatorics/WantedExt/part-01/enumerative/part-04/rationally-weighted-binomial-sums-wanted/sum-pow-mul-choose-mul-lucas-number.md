@@ -18,7 +18,7 @@ where the terms with $i > N$ vanish because $(N)_i = 0$.
 
 ## Depends on
 
-- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

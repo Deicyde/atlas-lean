@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.oddPerfect_exists_even_factorization_ne_two
 ---
 
-# Odd Perfect exists even factorization ne two
+# Steuerwald's theorem on odd perfect numbers
 
-Steuerwald (1937), quoted as Lemma 1 (iv): the even exponents of an odd perfect number are not
-all equal to two, i.e. some prime divisor has an even exponent different from `2`.
+**Steuerwald's theorem on odd perfect numbers.** If $N$ is an odd perfect number, then $N$ has
+a prime divisor whose exponent in the prime factorization of $N$ is even and different from $2$.
 
 ## Depends on
 

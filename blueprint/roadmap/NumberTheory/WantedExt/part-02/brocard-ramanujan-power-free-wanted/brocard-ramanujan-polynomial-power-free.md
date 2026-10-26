@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.brocardRamanujan_polynomial_powerFree_mul_fewPrimeFactors_finite
 ---
 
-# Brocard Ramanujan polynomial power Free mul few Prime Factors finite
+# Finitely many Brocard–Ramanujan solutions of polynomial shape
 
-Theorem 2: for `k, l ≥ 2`, `m ≥ 1` and a polynomial `P ∈ ℤ[X_1, …, X_m]`, the
-Brocard-Ramanujan equation `n! + 1 = x²` has only finitely many integer solutions `(n, x)`
-with `x = x_1 ⋯ x_m P(x_1, …, x_m) ± 1` for some `x_1, …, x_m ∈ F_k P_l`. As in the paper, `x`
-ranges over `ℤ` (unlike Theorem 1, the sign of `x` matters here, since negation does not preserve
-the shape `x_1 ⋯ x_m P(x_1, …, x_m) ± 1`). Here
-`F_k P_l = {y z}` with `y` a `k`-free positive integer (`K(y) < k`, `Nat.IsPowerFree`) and
-`z` a positive integer with fewer than `l` distinct prime divisors.
+**Finitely many Brocard–Ramanujan solutions of polynomial shape.** Let $k \ge 2$, $l \ge 2$
+and $m \ge 1$ be natural numbers and let $P \in \mathbb{Z}[X_1, \ldots, X_m]$. Write
+$F_k P_l$ for the set of products $y z$ of a $k$-free number $y$ and a positive integer $z$
+with fewer than $l$ distinct prime divisors. Then there are only finitely many pairs $(n, x)$
+of a natural number $n$ and an integer $x$ such that $n! + 1 = x^2$ and
+$x = x_1 \cdots x_m P(x_1, \ldots, x_m) + 1$ or $x = x_1 \cdots x_m P(x_1, \ldots, x_m) - 1$
+for some $x_1, \ldots, x_m \in F_k P_l$.
+
+Here $x$ ranges over the integers, since negating $x$ does not preserve the shape
+$x_1 \cdots x_m P(x_1, \ldots, x_m) \pm 1$.
 
 ## Depends on
 
-- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
+- [Power-free natural numbers](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

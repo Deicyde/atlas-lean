@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.not_hasPropertyPStar_of_not_coprime
 ---
 
-# Proposition 2
+# Not has Property PStar of not coprime
 
-**Proposition 2**: if an integer `n ≥ 1` is not
-coprime with `10`, then it does not have the property
-`P*`.
+**Positive integers sharing a factor with $10$ lack property $P^*$.** If $n \ge 1$ is a
+natural number with $\gcd(n, 10) \ne 1$, then $n$ does not have the property $P^*$.
 
 ## Depends on
 

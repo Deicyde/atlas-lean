@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isAACarmichael_of_prime
 ---
 
-# Is AACarmichael of prime
+# Primes are $(a, a)$-Carmichael numbers
 
-Every prime is an `(a, a)`-Carmichael number, for every integer `a`.
+**Primes are $(a, a)$-Carmichael numbers.** For every integer $a$, every prime $p$ is an
+$(a, a)$-Carmichael number.
 
 ## Depends on
 
-- [Is AACarmichael](is-aacarmichael.md)
+- [$(a, a)$-Carmichael numbers](is-aacarmichael.md)
 
 ## Sources
 

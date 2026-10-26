@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.mahlerSubst
 ---
 
-# Mahler Subst
+# Mahler substitution
 
-Coefficient model of `F (z ^ (k ^ i))` for `F : PowerSeries Complex`,
-used in the defining equation of a `k`-Mahler function
-(concept `jis_sem_5181d154d12c87e1c5d03365`, defining statement
-`jis_e5b3733b8ba6a96c630ed094`,
-source https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex).
+**Mahler substitution.** For a formal power series $F \in \mathbb{C}[[z]]$ and natural numbers
+$k$ and $i$, let $m = k^i$; the power series $F(z^{k^i})$ is defined coefficientwise. When
+$m \ge 1$, its coefficient of $z^n$ is the coefficient of $z^{n/m}$ in $F$ if $m$ divides $n$, and
+$0$ otherwise; this is the substitution $z \mapsto z^m$ in $F$. When $m = 0$ (that is, $k = 0$ and
+$i \ge 1$), it is the constant series equal to the constant term of $F$.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.KMahlerFunction](../../../../../sources/v2/MathlibExt.md)
+- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex (concept `jis_sem_5181d154d12c87e1c5d03365`, defining statement `jis_e5b3733b8ba6a96c630ed094`).

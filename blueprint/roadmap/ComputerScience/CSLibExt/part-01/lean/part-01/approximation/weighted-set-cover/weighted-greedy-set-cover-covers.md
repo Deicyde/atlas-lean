@@ -15,7 +15,7 @@ $F$ with costs $w$.
 
 ## Depends on
 
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+- [Weighted greedy set cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

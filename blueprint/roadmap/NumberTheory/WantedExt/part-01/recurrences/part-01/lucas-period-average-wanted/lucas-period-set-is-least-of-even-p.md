@@ -5,23 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.lucasPeriodSet_isLeast_of_even_p
 ---
 
-# Lucas Period Set is Least of even p
+# Least multiples of $2^k n_1$ in the period set for even $P$
 
-Theorem 2.20: for nondegenerate `U(a, b)` with `a + b - 1 ≠ 0`, `n = 2 ^ k n₁` with
-`k ≥ 1`, odd `n₁ > 1`, `a` even, `a ≡ -2 (mod rad(n₁))` and `b ≡ -1 (mod 4 rad(n₁))`:
-`rad(n₁) ∣ D` and `C(n) = n`; if `a ≡ 2 (mod 4)` then `C'(n)` does not exist; if
-`a ≡ 0 (mod 4)` then `C'(n) = 2 n` with `A_W(2 n)` integral when `n ≡ 2 (mod 4)`, and
-`C'(n) = n` with `A_W(n)` integral when `n ≡ 0 (mod 4)`. The paper's "for all recurrences
-`W(a, -1)`" is read as `W(a, b)`, the recurrences of the theorem's sequence. Congruences
-modulo `rad(n₁)` are stated prime by prime.
+**Least multiples of $2^k n_1$ in the period set for even $P$.** Let $U$ be the Lucas sequence
+$U_0 = 0$, $U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with nondegenerate parameters
+$P, Q \in \mathbb{Z}$. Let $S$ be the set of positive integers $m$ coprime to $Q$ such that the
+period of $U$ modulo $m$ divides $m$, and let $S'$ be the set of $m \in S$ with
+$m \mid U_1 + \cdots + U_m$. Call $m$ *integral for all recurrences* if every integer sequence
+$w$ with $w_{j+2} = P w_{j+1} - Q w_j$ for all $j \ge 0$ satisfies $m \mid w_1 + \cdots + w_m$.
+
+Suppose $P - Q - 1 \ne 0$, $P$ is even and $Q \equiv 1 \pmod 4$. Let $n = 2^k n_1$ with
+$k \ge 1$ and $n_1 > 1$ odd, and suppose $P \equiv -2$ and $Q \equiv 1$ modulo every prime
+dividing $n_1$. Then every prime dividing $n_1$ divides $P^2 - 4Q$, and $n$ is the least element
+of $S$ divisible by $n$. If $P \equiv 2 \pmod 4$, no element of $S'$ is divisible by $n$. If
+$P \equiv 0 \pmod 4$, then for $k = 1$ the least element of $S'$ divisible by $n$ is $2n$, and
+$2n$ is integral for all recurrences; for $k \ge 2$ the least element of $S'$ divisible by $n$
+is $n$, and $n$ is integral for all recurrences.
 
 ## Depends on
 
 - [Nondegenerate Lucas pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas All Averages Integral](lucas-all-averages-integral.md)
-- [Lucas Average Set](lucas-average-set.md)
-- [Lucas Period Set](lucas-period-set.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Integral averages of all recurrences](lucas-all-averages-integral.md)
+- [Average set of a Lucas sequence](lucas-average-set.md)
+- [Moduli divisible by their Lucas period](lucas-period-set.md)
 
 ## Sources
 

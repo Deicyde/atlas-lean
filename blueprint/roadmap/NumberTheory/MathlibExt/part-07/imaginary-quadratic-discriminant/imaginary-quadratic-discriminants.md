@@ -5,9 +5,10 @@ statement: formalized
 lean: ImaginaryQuadraticDiscriminant.imaginaryQuadraticDiscriminants
 ---
 
-# Imaginary Quadratic Discriminants
+# Imaginary quadratic discriminants
 
-The set of imaginary quadratic discriminants.
+**Imaginary quadratic discriminants.** The set of imaginary quadratic discriminants is the set
+of integers $D$ such that $D < 0$ and $D$ is congruent to $0$ or $1$ modulo $4$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+- [Imaginary quadratic discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

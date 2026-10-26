@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hbcCalibrating_prod_identities
 ---
 
-# Hbc Calibrating prod identities
+# Product identities for calibrating numbers
 
-Calibrating numbers for `a/(a + d)`: with `α = (a + d)/d`, `n_i = 1 + α^{2^{i-1}}` for
-`1 ≤ i < k` and `n_k = α^{2^{k-1}}` (Definition 3). Then `∏_{i=1}^k (1 - 1/n_i) = a/(a + d)` (15),
-`∏_{i=1}^j n_i = (d/a)(α^{2^j} - 1)` for `1 ≤ j < k` (16), and
-`∏_{i=1}^k n_i = (d/a)(α^{2^k} - α^{2^{k-1}})` (17). Stated over `ℚ` for positive integers `a`, `d`
-(coprimality is not needed) and `k ≥ 1`.
+**Product identities for calibrating numbers.** Let $a$ and $d$ be positive integers and let
+$k \ge 1$. Put $\alpha = (a + d)/d$, and let $n_i = 1 + \alpha^{2^{i-1}}$ for $1 \le i < k$ and
+$n_k = \alpha^{2^{k-1}}$ (the calibrating numbers for $a/(a + d)$). Then
+$\prod_{i=1}^{k} (1 - 1/n_i) = a/(a + d)$; for every $j$ with $1 \le j < k$,
+$\prod_{i=1}^{j} n_i = (d/a)(\alpha^{2^j} - 1)$; and
+$\prod_{i=1}^{k} n_i = (d/a)(\alpha^{2^k} - \alpha^{2^{k-1}})$.
 
 ## Depends on
 

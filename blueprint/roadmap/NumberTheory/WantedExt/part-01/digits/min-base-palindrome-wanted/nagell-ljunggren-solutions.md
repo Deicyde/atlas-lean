@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.nagell_ljunggren_solutions
 ---
 
-# Nagell ljunggren solutions
+# The Nagell–Ljunggren equation in natural numbers (Bugeaud–Mihăilescu)
 
-Bugeaud–Mihăilescu: apart from `11² = (1,1,1,1,1)_3`, `20² = (1,1,1,1)_7` and
-`7³ = (1,1,1)_18`, the Nagell–Ljunggren equation `(xⁿ - 1)/(x - 1) = y^q` has no
-solution with `x, y ≥ 2`, `n ≥ 3`, `q ≥ 2` if `q = 2`, or `3 ∣ n`, or `4 ∣ n`, or
-`q = 3` and `n ≢ 5 (mod 6)`. The ranges `x, y ≥ 2`, `n ≥ 3`, `q ≥ 2` are the
-standard ones for this equation (not displayed in the paper).
+**The Nagell–Ljunggren equation in natural numbers (Bugeaud–Mihăilescu).** Let $x, y, n, q$
+be natural numbers with $x \ge 2$, $y \ge 2$, $n \ge 3$ and $q \ge 2$ such that
+$(x^n - 1)/(x - 1) = y^q$. If $q = 2$, or $3 \mid n$, or $4 \mid n$, or $q = 3$ and
+$n \not\equiv 5 \pmod 6$, then $(x, y, n, q)$ is one of $(3, 11, 5, 2)$, $(7, 20, 4, 2)$ and
+$(18, 7, 3, 3)$; these are $11^2 = (1,1,1,1,1)_3$, $20^2 = (1,1,1,1)_7$ and $7^3 = (1,1,1)_{18}$.
+
+The ranges $x, y \ge 2$, $n \ge 3$, $q \ge 2$ are the standard ones for this equation (not
+displayed in the paper).
 
 ## Depends on
 

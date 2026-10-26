@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckendorfRealEval_zero
 ---
 
-# Zeckendorf Real Eval zero
+# Evaluating the zero coefficient function
 
-`∑ 0 Q = 0`.
+**Evaluating the zero coefficient function.** For every real sequence $Q$, the evaluation of
+the zero coefficient function at $Q$ is $0$.
 
 ## Depends on
 
-- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Evaluation of a coefficient function at a real sequence](zeckendorf-real-eval.md)
 
 ## Sources
 

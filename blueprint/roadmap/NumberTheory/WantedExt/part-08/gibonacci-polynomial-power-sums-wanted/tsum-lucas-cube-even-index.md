@@ -12,7 +12,7 @@ Corollary 4.6: `Σ_{n≥1} (4L_{6n} - 3L_{2n})/(L_{2n}² - 5)³ = 1` and
 
 ## Depends on
 
-- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

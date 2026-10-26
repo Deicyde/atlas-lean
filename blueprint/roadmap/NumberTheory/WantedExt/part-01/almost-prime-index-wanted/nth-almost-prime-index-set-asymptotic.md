@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.nth_almostPrimeIndexSet_asymptotic
 ---
 
-# Nth almost Prime Index Set asymptotic
+# Size of the nth element of an iterated almost prime index set
 
-For fixed positive integers `k_1, …, k_m` (here `k_1 = k` and `[k_2, …, k_m] = ks`), the
-`n`th member of `N_{k_1 ⋯ k_m}` satisfies
-`p_{k_1,…,k_m,n} = n (log n)^m ∏_{i=1}^m (k_i - 1)! / (log log n)^{k_i - 1} · (1 + O(1/log log n))`.
+**Size of the nth element of an iterated almost prime index set.** Let $m \ge 1$, let
+$k_1, \dots, k_m$ be positive integers, and for $n \ge 1$ let $p_{k_1, \dots, k_m, n}$ be the
+$n$th element, in increasing order, of the almost prime index set $N_{k_1 \cdots k_m}$. Writing
+$P(n) = n (\log n)^m \prod_{i=1}^m \frac{(k_i - 1)!}{(\log \log n)^{k_i - 1}}$, we have
+$p_{k_1, \dots, k_m, n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ through the integers.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

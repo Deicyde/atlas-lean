@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.AnnihilatesSeq
 ---
 
-# Annihilates Seq
+# Annihilator of a sequence
 
-The operator `p(E)` annihilates `G`: `∑ᵢ (coeff p i) G_{s+i} = 0` for every `s ≥ 0`, where `E` is
-the translation operator `E(G_s) = G_{s+1}`.
+**Annihilator of a sequence.** Let $K$ be a semiring, $p = \sum_i a_i X^i \in K[X]$ and
+$G \colon \mathbb{N} \to K$ a sequence, and let $E$ be the translation operator
+$E(G_s) = G_{s+1}$. The operator $p(E)$ annihilates $G$ when $\sum_i a_i G_{s+i} = 0$ for every
+$s \ge 0$.
 
 ## Depends on
 

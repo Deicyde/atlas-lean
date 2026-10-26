@@ -5,23 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.alternatingSeries_contFract_threeStepPattern
 ---
 
-# Alternating Series cont Fract three Step Pattern
+# Alternating series with a three-step continued fraction pattern
 
-Alternating series whose continued fractions follow a three-step partial-quotient pattern:
-let `(x_i)` be positive integers with `x_0 = 1` and let
-`x = ∑_{i ≥ 0} (-1)^i / x_i` be irrational with continued fraction
-`[0; a_1, a_2, …]` and convergents `p_n / q_n`. If `∑_{i=0}^{n} (-1)^i / x_i = p_{n+1} / q_{n+1}`,
-`x_{3n+2} ∣ x_{3n+3}`,
-`x_{3n+2} - x_{3n+1} = (x_{3n+1}/x_{3n} · x_{3n-1}/x_{3n-2} · x_{3n-3}/x_{3n-4} ⋯)^2` and
-`x_{3n+4} - x_{3n+3} = (x_{3n+3}/x_{3n+2})^2 (x_{3n+2} - x_{3n+1})` for all `n ≥ 0`, then
-(i) `x_n = q_n q_{n+1}`, (ii) `q_{3n+2} ∣ a_{3n+4}`, (iii) `a_{3n+3} = 1`, and `a_{3n+2} = 1` for
-`n ≥ 1`.
+**Alternating series with a three-step continued fraction pattern.** Let $(u_i)_{i \ge 0}$
+be positive integers with $u_0 = 1$, and let $x$ be an irrational real number with
+$\sum_{i \ge 0} (-1)^i / u_i = x$. Write $x = [a_0; a_1, a_2, \dots]$ for its continued fraction
+expansion and $p_n / q_n = [a_0; a_1, \dots, a_n]$ for its convergents, with $q_0 = 1$ and
+$q_1 = a_1$. Suppose that for every $n \ge 0$ we have
+$\sum_{i=0}^{n} (-1)^i / u_i = p_{n+1} / q_{n+1}$, $u_{3n+2} \mid u_{3n+3}$,
+$u_{3n+2} - u_{3n+1} = \bigl(\prod_{j=0}^{\lfloor 3n/2 \rfloor} u_{3n-2j+1} / u_{3n-2j}\bigr)^2$
+and $u_{3n+4} - u_{3n+3} = (u_{3n+3} / u_{3n+2})^2 (u_{3n+2} - u_{3n+1})$. Then
+(i) $u_n = q_n q_{n+1}$ for every $n \ge 0$, (ii) for every $n \ge 0$ there is a natural number
+$m$ with $a_{3n+4} = m \, q_{3n+2}$, and (iii) $a_{3n+3} = 1$ for every $n \ge 0$ and
+$a_{3n+2} = 1$ for every $n \ge 1$.
 
-The product is read as `∏ x_{k+1}/x_k` over `k = 3n, 3n - 2, 3n - 4, …, k ≥ 0` (it ends with
-`x_2/x_1` for odd `n` as printed, and with `x_1/x_0` for even `n`). `q_n`, `p_n`, `a_k` are as in
-`alternatingSeries_contFract_twoStepPattern`. Deviation: `a_{3n+2} = 1` is stated for `n ≥ 1`. At
-`n = 0` it fails: `[0; 1, 2, 1, 3, 1, 1, 19, 1, 1, 699, …]` with `x_n = q_n q_{n+1}` satisfies every
-hypothesis and has `a_2 = 2`.
+The product runs over the quotients $u_{k+1} / u_k$ for $k = 3n, 3n - 2, 3n - 4, \dots$, ending
+at $k = 1$ when $n$ is odd and at $k = 0$ when $n$ is even. The condition $a_{3n+2} = 1$ is
+stated only for $n \ge 1$, because it can fail at $n = 0$: the continued fraction
+$[0; 1, 2, 1, 3, 1, 1, 19, 1, 1, 699, \dots]$ with $u_n = q_n q_{n+1}$ satisfies every hypothesis
+and has $a_2 = 2$.
 
 ## Depends on
 

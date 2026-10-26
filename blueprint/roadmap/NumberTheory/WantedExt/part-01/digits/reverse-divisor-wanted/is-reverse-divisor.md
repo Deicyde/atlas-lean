@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.IsReverseDivisor
 ---
 
-# Is Reverse Divisor
+# Reverse divisor
 
-A *reverse divisor* is a positive integer whose
-decimal reversal is `k` times it for some `k ≥ 2`.
+**Reverse divisor.** A natural number $n$ is a reverse divisor if $n > 0$ and there is a
+natural number $k \ge 2$ such that the decimal reversal of $n$ equals $kn$. Since $n > 0$, such a
+$k$ is unique; it is called the quotient of $n$.
 
 ## Depends on
 

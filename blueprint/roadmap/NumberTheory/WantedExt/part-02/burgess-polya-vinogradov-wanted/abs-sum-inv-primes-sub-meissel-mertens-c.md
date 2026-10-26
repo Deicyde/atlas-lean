@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.abs_sum_inv_primes_sub_meisselMertensConstant_le
 ---
 
-# Abs sum inv primes sub meissel Mertens Constant le
+# Mertens' second theorem with the Rosser–Schoenfeld error term
 
-Mertens' second theorem with the Rosser--Schoenfeld error: the Meissel--Mertens constant
-`M = meisselMertensConstant` satisfies `0.2614 ≤ M < 0.2615` and
-`|∑_{p ≤ x} 1/p - log log x - M| ≤ 1 / log² x` for every real `x > 1`.
+**Mertens' second theorem with the Rosser–Schoenfeld error term.** Let $M$ be the
+Meissel–Mertens constant. Then $0.2614 \le M < 0.2615$, and for every real $x > 1$,
+$\left|\sum_{p \le x} 1/p - \log \log x - M\right| \le 1/(\log x)^2$, where the sum runs over the
+primes $p \le x$.
 
 ## Depends on
 
-- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
+- [The Meissel–Mertens constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

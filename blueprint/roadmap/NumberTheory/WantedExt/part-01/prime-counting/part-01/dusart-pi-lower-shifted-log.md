@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.dusart_pi_lower_shifted_log
 ---
 
-# Dusart Pi Lower Shifted Log Wanted
+# Dusart's shifted-logarithm lower bound for $\pi(x)$
 
-Dusart shifted-log lower bound for `π(x)`: for `x ≥ 5393`,
-`π(x) ≥ x / (log x - 1)`, with `π` as `Nat.primeCounting ⌊x⌋₊`.
+**Dusart's shifted-logarithm lower bound for $\pi(x)$.** Let $\pi(x)$ be the number of primes
+$p \le x$ and let $\log$ be the natural logarithm. For every real number $x \ge 5393$,
+$\pi(x) \ge \frac{x}{\log x - 1}$.
 
 ## Depends on
 

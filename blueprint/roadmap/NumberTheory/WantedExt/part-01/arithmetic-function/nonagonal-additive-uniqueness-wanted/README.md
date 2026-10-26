@@ -4,9 +4,9 @@ navigation: module
 
 # Nonagonal Additive Uniqueness
 
-- [Multiplicative nonagonal additive eq id](multiplicative-nonagonal-additive-eq-id.md)
-- [Multiplicative nonagonal additive eq self of le eleven](multiplicative-nonagonal-additive-eq-sel.md)
-- [Multiplicative nonagonal additive three pow](multiplicative-nonagonal-additive-three.md)
-- [Multiplicative nonagonal additive five pow](multiplicative-nonagonal-additive-five-p.md)
-- [Multiplicative nonagonal additive seven pow](multiplicative-nonagonal-additive-seven.md)
-- [Multiplicative nonagonal additive two pow](multiplicative-nonagonal-additive-two-po.md)
+- [Additive uniqueness of generalized nonagonal numbers](multiplicative-nonagonal-additive-eq-id.md)
+- [Nonagonal additive uniqueness: the values up to 11](multiplicative-nonagonal-additive-eq-sel.md)
+- [Nonagonal additive uniqueness: the step at powers of 3](multiplicative-nonagonal-additive-three.md)
+- [Nonagonal additive uniqueness: the step at powers of 5](multiplicative-nonagonal-additive-five-p.md)
+- [Nonagonal additive uniqueness: the step at powers of 7](multiplicative-nonagonal-additive-seven.md)
+- [Nonagonal additive uniqueness: the step at powers of 2](multiplicative-nonagonal-additive-two-po.md)

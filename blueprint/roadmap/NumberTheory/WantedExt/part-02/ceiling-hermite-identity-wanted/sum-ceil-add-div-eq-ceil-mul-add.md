@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_ceil_add_div_eq_ceil_mul_add
 ---
 
-# Sum ceil add div eq ceil mul add
+# Ceiling analogue of Hermite's identity
 
-Ceiling analogue of Hermite's identity: for every real `x` and natural `n`,
-`Σ_{1 ≤ k ≤ n} ⌈x + k/n⌉ = ⌈n x⌉ + n`. The paper states it for `n ∈ ℕ` positive; at `n = 0`
-both sides are `0`, so no hypothesis is needed. The record's brackets are garbled; the
-summand is read as a ceiling from the lemma's title ("an analog of Hermite's identity for the
-ceiling function") and its right-hand side `⌈nx⌉ + n`.
+**Ceiling analogue of Hermite's identity.** For every real number $x$ and every natural
+number $n$, $\sum_{k=1}^{n} \lceil x + k/n \rceil = \lceil n x \rceil + n$.
+
+The paper assumes $n \ge 1$; for $n = 0$ both sides are $0$.
 
 ## Depends on
 

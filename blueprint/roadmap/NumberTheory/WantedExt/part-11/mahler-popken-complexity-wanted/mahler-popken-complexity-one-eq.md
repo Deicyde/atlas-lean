@@ -14,17 +14,17 @@ Mahler-Popken integer complexity `IntegerComplexity.complexity`
 
 ## Depends on
 
-- [Complexity](../../../MathlibExt/part-07/integer-complexity/complexity.md)
+- [Integer complexity](../../../MathlibExt/part-07/integer-complexity/complexity.md)
 - [Mahler Popken Complexity](mahler-popken-complexity.md)
 
 ## Proof depends on
 
-- [Expr](../../../MathlibExt/part-07/integer-complexity/expr.md)
-- [Count](../../../MathlibExt/part-07/integer-complexity/count.md)
-- [Eval](../../../MathlibExt/part-07/integer-complexity/eval.md)
-- [Pred](../../../MathlibExt/part-07/integer-complexity/pred.md)
-- [Complexity le](../../../MathlibExt/part-07/integer-complexity/complexity-le.md)
-- [Exists expr of pos](../../../MathlibExt/part-07/integer-complexity/exists-expr-of-pos.md)
+- [Expressions built from one, addition and multiplication](../../../MathlibExt/part-07/integer-complexity/expr.md)
+- [Number of ones in an expression](../../../MathlibExt/part-07/integer-complexity/count.md)
+- [Value of an expression](../../../MathlibExt/part-07/integer-complexity/eval.md)
+- [Achievable numbers of ones](../../../MathlibExt/part-07/integer-complexity/pred.md)
+- [Expressions bound the integer complexity from above](../../../MathlibExt/part-07/integer-complexity/complexity-le.md)
+- [Every positive integer is the value of an expression](../../../MathlibExt/part-07/integer-complexity/exists-expr-of-pos.md)
 - [Mahler Popken Expr](mahler-popken-expr.md)
 - [Count](count.md)
 - [Eval](eval.md)

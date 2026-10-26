@@ -25,7 +25,7 @@ $\lceil \log_2 0 \rceil$ is read as $0$.
 - [Side-tagged points](tagged.md)
 - [Brute-force closest pair](../closest-pair/brute-min.md)
 - [Cost of the brute-force closest-pair scan](../closest-pair/brute-min-time.md)
-- [Closest Rec is Answer](../closest-pair/closest-rec-is-answer.md)
+- [The strip scan bounds every pair with a small vertical gap](../closest-pair/closest-rec-is-answer.md)
 - [Dist2](../closest-pair/dist2.md)
 - [Strip Scan](../closest-pair/strip-scan.md)
 - [Cost of the strip scan](strip-scan-time-le.md)

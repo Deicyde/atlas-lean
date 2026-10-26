@@ -20,7 +20,7 @@ that has a correct position, is $L_n - n - 1$, where $L_n$ is the $n$-th Lucas n
 - [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
 - [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 - [Cyclic shift left strategy](cyclic-shift-left-strategy.md)
-- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Lucas numbers](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

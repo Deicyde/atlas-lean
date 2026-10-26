@@ -5,5 +5,5 @@ navigation: module
 
 # Polynomial TL1
 
-- [TIntegrand](tintegrand.md)
-- [Is Poly TFamily](is-poly-tfamily.md)
+- [Integrand of the antiderivative condition](tintegrand.md)
+- [Polynomial family defined by an antiderivative](is-poly-tfamily.md)

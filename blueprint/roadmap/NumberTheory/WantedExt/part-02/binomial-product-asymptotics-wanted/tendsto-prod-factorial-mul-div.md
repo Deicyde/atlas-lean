@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_prod_factorial_mul_div
 ---
 
-# Tendsto prod factorial mul div
+# Asymptotics of products of factorials of multiples
 
-For `k ≥ 1`, `∏_{ν=1}^n (kν)! ∼ F_k A^k (2π)^{1/4} × (k e^{-3/2} n)^{k n(n+1)/2}
-(2πk e^{k/2-1} n)^{n/2} n^{(k^2+3k+1)/(12k)}` with `F_k` given by the closed form (3).
-The divergent expansion (4) is not formalized.
+**Asymptotics of products of factorials of multiples.** Let $k \ge 1$ be a natural number, let
+$F_k$ be the $k$-th factorial product constant and $A$ the Glaisher–Kinkelin constant. As
+$n \to \infty$, the ratio of $\prod_{\nu=1}^{n} (k\nu)!$ to
+
+$$A^k (2\pi)^{1/4} \left(k e^{-3/2} n\right)^{k n(n+1)/2}
+\left(2\pi k e^{k/2-1} n\right)^{n/2} n^{(k^2+3k+1)/(12k)}$$
+
+tends to $F_k$.
+
+The divergent asymptotic expansion (4) of the source is not part of this statement.
 
 ## Depends on
 
-- [Factorial Product Constant](factorial-product-constant.md)
-- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+- [Factorial-product constants](factorial-product-constant.md)
+- [Glaisher–Kinkelin constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

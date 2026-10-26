@@ -16,7 +16,7 @@ $m$ plus the total size of the sets of $F$.
 
 ## Depends on
 
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+- [Weighted greedy set cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

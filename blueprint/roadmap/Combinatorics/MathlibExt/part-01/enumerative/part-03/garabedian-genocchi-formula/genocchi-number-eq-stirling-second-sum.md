@@ -23,7 +23,7 @@ the American Mathematical Society 46 (1940), 531–533, DOI 10.1090/S0002-9904-1
 
 ## Depends on
 
-- [Genocchi Number](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi numbers](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Proof depends on
 

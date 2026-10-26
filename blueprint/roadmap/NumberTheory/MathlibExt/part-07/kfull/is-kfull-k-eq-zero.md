@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.isKFull_k_eq_zero
 ---
 
-# Is KFull k eq zero
+# The $0$-full numbers
 
-Explicit total extension at `k = 0`: every nonzero `n` is `0`-full since
-`p ^ 0 = 1`. This lies outside the source scope.
+**The $0$-full numbers.** A natural number $n$ is $0$-full if and only if $n \ne 0$, since
+$p^0 = 1$ divides $n$ for every prime $p$.
+
+The source considers only $k$-full numbers with $k \ge 2$.
 
 ## Depends on
 
-- [Is KFull](is-kfull.md)
+- [$k$-full numbers](is-kfull.md)
 
 ## Sources
 

@@ -6,18 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.isHoeySloaneWord_two_four_example
 ---
 
-# Is Hoey Sloane Word two four example
+# The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language
 
-Edge list of `L`: the `(2, 4)`-permutiple string `(0,0)(2,3)(1,2)(3,1)` lies in `L`.
+**The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language.** The input
+string $(d_0, \hat d_0) \cdots (d_3, \hat d_3) = (0,0)(2,3)(1,2)(3,1)$ belongs to the language
+$L$ of the $(2, 4)$-Hoey–Sloane machine.
+
+This is the $(2, 4)$-permutiple string of $(3, 1, 2, 0)_4 = 216 = 2 \cdot 108 =
+2 \cdot (1, 2, 3, 0)_4$.
 
 ## Depends on
 
-- [Is Hoey Sloane Word](is-hoey-sloane-word.md)
+- [Hoey–Sloane words](is-hoey-sloane-word.md)
 
 ## Proof depends on
 
-- [Is Mother Graph Edge](is-mother-graph-edge.md)
-- [Hoey Sloane Carry](hoey-sloane-carry.md)
+- [Edges of the mother graph](is-mother-graph-edge.md)
+- [Carries of the Hoey–Sloane machine](hoey-sloane-carry.md)
 
 ## Sources
 

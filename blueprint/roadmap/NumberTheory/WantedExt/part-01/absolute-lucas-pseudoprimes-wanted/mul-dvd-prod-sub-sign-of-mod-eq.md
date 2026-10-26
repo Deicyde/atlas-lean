@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.mul_dvd_prod_sub_sign_of_modEq
 ---
 
-# Mul dvd prod sub sign of mod Eq
+# Ballot's Lemma 3: the three divisibilities persist modulo $c_1 c_2 c_3$
 
-Ballot's Lemma 3: with `εᵢ`, `cᵢ`, `g`, `n = (c₁g + ε₁)(c₂g + ε₂)(c₃g + ε₃)` as in Lemma 2
-and `cᵢ g ∣ n - εₙ` for `i = 1, 2, 3`, every nonzero `h ≡ g (mod c₁c₂c₃)` gives
-`cᵢ h ∣ m - εₙ` for `m = (c₁h + ε₁)(c₂h + ε₂)(c₃h + ε₃)`. The record omits the divisibility
-hypothesis on `g`, without which the claim fails (`c = (1, 2, 3)`, `ε = (1, 1, 1)`, `g = h = 1`:
-`2 ∤ 24 - 1`); the paper's proof ("replace
-`g` by `h` in (9)") uses it.
+**Ballot's Lemma 3: the three divisibilities persist modulo $c_1 c_2 c_3$.** Let
+$\varepsilon_1, \varepsilon_2, \varepsilon_3 \in \{1, -1\}$, let $c_1, c_2, c_3$ be pairwise coprime
+positive integers, let $\varepsilon = \varepsilon_1 \varepsilon_2 \varepsilon_3$, and let $g \ne 0$
+be an integer such that $c_i g$ divides
+$(c_1 g + \varepsilon_1)(c_2 g + \varepsilon_2)(c_3 g + \varepsilon_3) - \varepsilon$ for
+$i = 1, 2, 3$. Then every nonzero integer $h \equiv g \pmod{c_1 c_2 c_3}$ satisfies the same
+divisibilities: $c_i h$ divides
+$(c_1 h + \varepsilon_1)(c_2 h + \varepsilon_2)(c_3 h + \varepsilon_3) - \varepsilon$ for
+$i = 1, 2, 3$.
+
+The divisibility hypothesis on $g$ is needed: for $(c_1, c_2, c_3) = (1, 2, 3)$,
+$\varepsilon_1 = \varepsilon_2 = \varepsilon_3 = 1$ and $g = h = 1$, the product is $24$ and
+$2 \nmid 24 - 1$.
 
 ## Depends on
 

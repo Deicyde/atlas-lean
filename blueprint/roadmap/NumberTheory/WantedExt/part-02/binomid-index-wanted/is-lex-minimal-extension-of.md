@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsLexMinimalExtensionOf
 ---
 
-# Is Lex Minimal Extension Of
+# Lex-minimal extension
 
-`η` is the lex-minimal extension of its first `m` entries: `η` is a
-binomid index and is lexicographically at most every binomid index `γ`
-with the same first `m` entries.
+**Lex-minimal extension.** Let $e = (e_1, e_2, \dots)$ be a sequence of nonnegative integers
+and $m \ge 0$. Then $e$ is the lex-minimal extension of $(e_1, \dots, e_m)$ when $e$ is an
+infinite binomid index and, for every infinite binomid index $g$ with $g_i = e_i$ for all
+$i \le m$, either $g = e$ or $e$ is lexicographically smaller than $g$: there is a $j$ with
+$e_i = g_i$ for all $i < j$ and $e_j < g_j$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Binomid Index](is-binomid-index.md)
+- [Binomid index](is-binomid-index.md)
 
 ## Sources
 

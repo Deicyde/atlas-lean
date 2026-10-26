@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.IsPrimaryDCarmichael.isDCarmichael
 ---
 
-# Is DCarmichael
+# Primary $D$-Carmichael numbers are $D$-Carmichael
 
-A primary `D`-Carmichael number is `D`-Carmichael.
+**Primary $D$-Carmichael numbers are $D$-Carmichael.** For every integer $D$ and natural
+number $n$, if $n$ is a primary $D$-Carmichael number, then $n$ is a $D$-Carmichael number.
 
 ## Depends on
 
-- [Is DCarmichael](is-dcarmichael.md)
-- [Is Primary DCarmichael](is-primary-dcarmichael.md)
+- [$D$-Carmichael number](is-dcarmichael.md)
+- [Primary $D$-Carmichael number](is-primary-dcarmichael.md)
 
 ## Proof depends on
 
-- [Lucas Digit Sum](lucas-digit-sum.md)
+- [Extended digit sum](lucas-digit-sum.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvesterNumber
 ---
 
-# Sylvester Number
+# Sylvester numbers
 
-The classical Sylvester sequence `2, 3, 7, 43, …`, as the
-parameter-`1` case of MathlibExt's generalized Sylvester sequence.
+**Sylvester numbers.** The Sylvester numbers $S_0, S_1, S_2, \dots$ are the natural numbers
+given by $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$ for $n \ge 0$, so the sequence begins
+$2, 3, 7, 43, 1807, \dots$. It is the generalized Sylvester sequence with parameter $1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Sylvester](../../../../../MathlibExt/part-06/generalized-sylvester/generalized-sylvester.md)
+- [Generalized Sylvester sequence](../../../../../MathlibExt/part-06/generalized-sylvester/generalized-sylvester.md)
 
 ## Sources
 

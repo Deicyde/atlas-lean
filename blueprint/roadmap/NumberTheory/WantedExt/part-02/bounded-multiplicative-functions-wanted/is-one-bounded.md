@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.IsOneBounded
 ---
 
-# Is One Bounded
+# 1-bounded function
 
-We say that a function `f : ℕ → ℂ` is 1-bounded if for all `n : ℕ`, `‖f n‖ ≤ 1`.
+**1-bounded function.** A function $f \colon \mathbb{N} \to \mathbb{C}$ is 1-bounded if
+$|f(n)| \le 1$ for every natural number $n$.
 
 ## Depends on
 

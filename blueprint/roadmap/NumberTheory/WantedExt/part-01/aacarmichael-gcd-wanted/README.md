@@ -4,9 +4,9 @@ navigation: module
 
 # AACarmichael Gcd
 
-- [Is AACarmichael](is-aacarmichael.md)
-- [Is AACarmichael of prime](is-aacarmichael-of-prime.md)
-- [Aa Carmichael count ge of least prime in progression bound](aa-carmichael-count-ge-of-least-prime-in.md)
-- [Rpow log le prime of eq mul add one of dvd prod primes](rpow-log-le-prime-of-eq-mul-add-one-of-d.md)
-- [Carmichael prod primes eq mul add one le exp](carmichael-prod-primes-eq-mul-add-one-le.md)
-- [Int gcd sub eq of eq mul mul add](int-gcd-sub-eq-of-eq-mul-mul-add.md)
+- [$(a, a)$-Carmichael numbers](is-aacarmichael.md)
+- [Primes are $(a, a)$-Carmichael numbers](is-aacarmichael-of-prime.md)
+- [Conditional lower bound for $(a, a)$-Carmichael numbers with prescribed gcd](aa-carmichael-count-ge-of-least-prime-in.md)
+- [Size of the auxiliary primes in the construction](rpow-log-le-prime-of-eq-mul-add-one-of-d.md)
+- [The Carmichael function of a product of auxiliary primes is small](carmichael-prod-primes-eq-mul-add-one-le.md)
+- [Exact gcd of two shifted values in the construction](int-gcd-sub-eq-of-eq-mul-mul-add.md)

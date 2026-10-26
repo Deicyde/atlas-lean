@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.fibEntryPoint_two
 ---
 
-# Fib Entry Point two
+# Fibonacci entry point of $2$
 
-`z(2) = 3`.
+**Fibonacci entry point of $2$.** The least $m > 0$ such that $2$ divides the Fibonacci number
+$F_m$ is $3$, that is, the Fibonacci entry point of $2$ is $z(2) = 3$.
 
 ## Depends on
 
-- [Fib Entry Point](fib-entry-point.md)
+- [Entry point in the Fibonacci sequence](fib-entry-point.md)
 
 ## Sources
 

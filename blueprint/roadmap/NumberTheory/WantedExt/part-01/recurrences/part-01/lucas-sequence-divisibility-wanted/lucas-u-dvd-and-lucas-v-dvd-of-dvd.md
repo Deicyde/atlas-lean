@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucasU_dvd_and_lucasV_dvd_of_dvd
 ---
 
-# Lucas U dvd and lucas V dvd of dvd
+# Divisibility of Lucas sequences at divisible indices
 
-Divisibility: if `m ∣ n` then `U_m ∣ U_n`, and if moreover `n/m` is odd then
-`V_m ∣ V_n`.
+**Divisibility of Lucas sequences at divisible indices.** Let $U = U(P, Q)$ and
+$V = V(P, Q)$ be the Lucas sequences with integer parameters $P$ and $Q \ne 0$, and let $m$ and
+$n$ be natural numbers with $m \mid n$. Then $U_m \mid U_n$, and if moreover $n/m$ is odd, then
+$V_m \mid V_n$.
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Parameters of a Lucas sequence](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas sequence $U(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Companion Lucas sequence $V(P, Q)$](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

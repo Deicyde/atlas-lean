@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFussCatalanNumber_one
 ---
 
-# Generalized Fuss Catalan Number one
+# Generalized Fuss–Catalan numbers at $n = 1$
 
-The specialization `F_m(1, k) = k`, corresponding to case (c) of the source theorem.
+**Generalized Fuss–Catalan numbers at $n = 1$.** For all natural numbers $m$ and $k$, the
+generalized Fuss–Catalan number $F_m(1, k)$ equals $k$.
 
 ## Depends on
 
-- [Generalized Fuss Catalan Number](generalized-fuss-catalan-number.md)
+- [Generalized Fuss–Catalan number](generalized-fuss-catalan-number.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedFussCatalanNumbersFMNK](../../../../../sources/v2/MathlibExt.md)
+- <https://cs.uwaterloo.ca/journals/JIS/VOL21/He/he61.tex>, case (c) of the source theorem.

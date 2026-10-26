@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isKDescendant_zero
 ---
 
-# Is KDescendant zero
+# The only $0$-descendant of a vertex is itself
 
-The only `0`-descendant of `m` is `m` itself.
+**The only $0$-descendant of a vertex is itself.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+$m, n \in \mathbb{Z}$. Then $n$ is a $0$-descendant of $m$ in $R$ if and only if $n = m$.
 
 ## Depends on
 
-- [Is KDescendant](is-kdescendant.md)
+- [$k$-descendants in a digraph on the integers](is-kdescendant.md)
 
 ## Sources
 

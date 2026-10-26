@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.threeTermHofstadterTerm_zero
 ---
 
-# Three Term Hofstadter Term zero
+# Index zero of the sequence started at 5
 
-Index `0` is `0` in the padded sequence and undefined in the unpadded one.
+**Index zero of the sequence started at 5.** For the three-term Hofstadter-like sequence with
+the single initial condition $5$, the term at index $0$ is defined and equals $0$ when the
+sequence is padded, and it is undefined when the sequence is unpadded.
 
 ## Depends on
 
-- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+- [Three-term Hofstadter-like sequence](three-term-hofstadter-term.md)
 
 ## Sources
 

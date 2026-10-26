@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isBFree_one
 ---
 
-# Is BFree one
+# The polynomial $1$ is $B_\kappa$-free
 
-`1` is `B_κ`-free when every `κ(P)` is nonzero.
+**The polynomial $1$ is $B_\kappa$-free.** Let $F$ be a field and let $\kappa$ assign to each
+polynomial in $F[T]$ a natural number, with $\kappa(P) \ne 0$ for every monic irreducible $P$.
+Then $1$ is $B_\kappa$-free: $P^{\kappa(P)}$ does not divide $1$ for any monic irreducible $P$.
 
 ## Depends on
 
-- [Is BFree](is-bfree.md)
+- [$B_\kappa$-free polynomials](is-bfree.md)
 
 ## Sources
 

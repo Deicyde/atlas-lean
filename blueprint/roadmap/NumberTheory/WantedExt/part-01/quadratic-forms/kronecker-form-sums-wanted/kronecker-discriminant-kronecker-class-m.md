@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.kroneckerDiscriminant_kroneckerClassMultiplier_small
 ---
 
-# Kronecker Discriminant kronecker Class Multiplier small
+# Small values of the discriminant $d(\alpha, g)$ and the multiplier $\ell(d, h)$
 
-Characteristic values of `d(n)` and `ℓ(n)`: `d = -4, -3, -8` for `(α, g) = (0, 1),
-(0, 3), (1, 1)`; `ℓ = 1` for `h = 1`, and `ℓ = 5` for `d = -4`, `h = 3`.
+**Small values of the discriminant $d(\alpha, g)$ and the multiplier $\ell(d, h)$.** The
+discriminant attached to $n = 2^\alpha g h^2$ satisfies $d(0, 1) = -4$, $d(0, 3) = -3$ and
+$d(1, 1) = -8$, and Kronecker's class-number multiplier satisfies $\ell(-4, 1) = 1$ and
+$\ell(-4, 3) = 5$.
 
 ## Depends on
 
-- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
-- [Kronecker Discriminant](kronecker-discriminant.md)
+- [Kronecker's class-number multiplier](kronecker-class-multiplier.md)
+- [The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$](kronecker-discriminant.md)
 
 ## Sources
 

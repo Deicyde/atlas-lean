@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_exists_prime_divisor_mod_four_eq_three
 ---
 
-# Corollary 1(d)
+# Prime divisors congruent to 3 modulo 4 of Sylvester numbers
 
-**Corollary 1(d)**: every Sylvester number after `S₀ = 2` has a
-prime divisor congruent to `3` modulo `4`.
+**Prime divisors congruent to 3 modulo 4 of Sylvester numbers.** Let $(S_n)_{n \ge 0}$ be the
+Sylvester sequence, $S_0 = 2$ and $S_{n+1} = S_n^2 - S_n + 1$. For every $n \ge 1$, $S_n$ has a
+prime divisor $p$ with $p \equiv 3 \pmod 4$.
 
 ## Depends on
 
-- [Sylvester Number](sylvester-number.md)
+- [Sylvester numbers](sylvester-number.md)
 
 ## Sources
 

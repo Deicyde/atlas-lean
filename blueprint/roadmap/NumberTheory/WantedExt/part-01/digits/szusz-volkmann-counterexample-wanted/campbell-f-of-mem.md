@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.campbellF_of_mem
 ---
 
-# Campbell F of mem
+# Campbell's interpolation on $(100/11, 10)$
 
-`f(x) = 10x - 90` for `100/11 < x ≤ 10`.
+**Campbell's interpolation on $(100/11, 10]$.** For every real $x$ with $100/11 < x \le 10$,
+Campbell's interpolation satisfies $f(x) = 10x - 90$.
 
 ## Depends on
 
-- [Campbell F](campbell-f.md)
+- [Campbell's interpolation](campbell-f.md)
 
 ## Proof depends on
 
-- [Campbell H2](campbell-h2.md)
-- [Campbell H3](campbell-h3.md)
+- [Campbell's sequence $h_2$](campbell-h2.md)
+- [Campbell's auxiliary function $h_3^{(m)}$](campbell-h3.md)
 
 ## Sources
 

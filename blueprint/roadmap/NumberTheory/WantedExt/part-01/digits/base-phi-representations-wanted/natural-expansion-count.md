@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.naturalExpansionCount
 ---
 
-# Natural Expansion Count
+# Number of natural expansions
 
-`Tot_ν(N)`, the number of natural base phi expansions of `N`.
+**Number of natural expansions.** For a natural number $N$, $\mathrm{Tot}_\nu(N)$ is the
+number of natural base phi expansions of $N$.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.nth_almostPrimeIndexSet_pair_asymptotic
 ---
 
-# Nth almost Prime Index Set pair asymptotic
+# Size of the nth almost prime of almost prime index
 
-For fixed `j, k ≥ 1`, the `n`th member `p_{j,k,n}` of `N_{jk}` satisfies
-`p_{j,k,n} = n log² n · (j-1)! (k-1)! / (log log n)^{j+k-2} · (1 + O(1/log log n))`.
+**Size of the nth almost prime of almost prime index.** Let $j, k \ge 1$ be integers and, for
+$n \ge 1$, let $p_{j,k,n}$ be the $n$th element, in increasing order, of the set $N_{jk}$ of
+$j$-almost primes whose index in the increasing enumeration of the $j$-almost primes, counted
+from $1$, is a $k$-almost prime. Writing
+$P(n) = \frac{n (\log n)^2 \, (j-1)! \, (k-1)!}{(\log \log n)^{j+k-2}}$, we have
+$p_{j,k,n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ through the integers.
 
 ## Depends on
 
-- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Almost primes of almost prime index](almost-prime-index-set.md)
 
 ## Sources
 

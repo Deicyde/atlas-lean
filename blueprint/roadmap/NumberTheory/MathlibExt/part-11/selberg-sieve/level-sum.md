@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.SelbergSieve.levelSum
 ---
 
-# Level Sum
+# Selberg level sum
 
-The Selberg level sum is the sum of `s.selbergTerms` over the level set.
+**Selberg level sum.** For a bounding sieve whose sifting primes have product $P$, with
+multiplicative density function $\nu$, and a natural number $R$, the level-$R$ Selberg sum is
+$G = \sum_{l \mid P,\ l \le R} g(l)$, where $g(l) = \nu(l) \prod_{p \mid l} (1 - \nu(p))^{-1}$,
+the product running over the primes $p$ dividing $l$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Level Set](level-set.md)
+- [Selberg level set](level-set.md)
 
 ## Sources
 
