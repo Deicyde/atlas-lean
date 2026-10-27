@@ -45,7 +45,7 @@ noncomputable section
 
 namespace CharacterTheory
 
-universe u
+universe uK uG uV uW
 
 open scoped Classical in
 /-- **Schur's lemma, dimension form.** For irreducible representations
@@ -53,10 +53,10 @@ open scoped Classical in
 `Hom_G(ρ, σ)` is one-dimensional if `ρ` and `σ` are equivalent, and
 zero-dimensional otherwise. -/
 theorem finrank_intertwiningMap_eq_one_or_zero
-    {k : Type u} [Field k] [IsAlgClosed k]
-    {G : Type u} [Group G] [Fintype G]
-    {V : Type u} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
-    {W : Type u} [AddCommGroup W] [Module k W] [FiniteDimensional k W]
+    {k : Type uK} [Field k] [IsAlgClosed k]
+    {G : Type uG} [Group G] [Fintype G]
+    {V : Type uV} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
+    {W : Type uW} [AddCommGroup W] [Module k W] [FiniteDimensional k W]
     (ρ : Representation k G V) (σ : Representation k G W)
     [ρ.IsIrreducible] [σ.IsIrreducible] :
     Module.finrank k (ρ.IntertwiningMap σ) =

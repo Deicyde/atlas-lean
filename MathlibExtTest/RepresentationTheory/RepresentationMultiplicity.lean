@@ -20,7 +20,7 @@ set_option linter.style.haveILetI false
 
 open CharacterTheory
 
-universe u
+universe u uK uG uV uW
 
 /-- Every one-dimensional representation is irreducible: its subrepresentations
 are the submodules of a one-dimensional space, hence only `⊥` and `⊤`. -/
@@ -141,5 +141,20 @@ example {G : Type} [Group G] [Fintype G] :
     (fun i j hij => (hij (Subsingleton.elim i j)).elim)
     ⟨Representation.Equiv.refl _⟩
   exact h PUnit.unit
+
+open scoped Classical in
+/-- Heterogeneous universes: Schur's lemma elaborates with the field, group,
+source, and target in four independent universes. This fails to elaborate if
+`finrank_intertwiningMap_eq_one_or_zero` fixes `k`, `G`, `V`, and `W` to a
+single universe. -/
+example {k : Type uK} [Field k] [IsAlgClosed k]
+    {G : Type uG} [Group G] [Fintype G]
+    {V : Type uV} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
+    {W : Type uW} [AddCommGroup W] [Module k W] [FiniteDimensional k W]
+    (ρ : Representation k G V) (σ : Representation k G W)
+    [ρ.IsIrreducible] [σ.IsIrreducible] :
+    Module.finrank k (ρ.IntertwiningMap σ) =
+      if Nonempty (Representation.Equiv σ ρ) then 1 else 0 :=
+  finrank_intertwiningMap_eq_one_or_zero ρ σ
 
 end MathlibExtTest.RepresentationTheory.RepresentationMultiplicity
