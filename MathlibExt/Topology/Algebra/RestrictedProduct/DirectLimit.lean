@@ -118,16 +118,34 @@ def inclusionMap {S T : Finset ι} (h : S ⊆ T) :
     XS X U S → XS X U T :=
   fun ⟨x, hx⟩ => ⟨x, XS_mono X U h hx⟩
 
+/-- The inclusion of pieces is continuous. -/
+theorem continuous_inclusionMap {S T : Finset ι} (h : S ⊆ T) :
+    Continuous (inclusionMap X U h) :=
+  continuous_subtype_val.subtype_mk _
+
 /-- The transition maps of the direct system of pieces. -/
 def transitionMaps :
     ∀ (S T : Finset ι), S ≤ T → XS X U S → XS X U T :=
   fun _ _ h => inclusionMap X U h
+
+/-- The pieces form a directed system under inclusion: the transition maps
+satisfy the identity and composition laws definitionally. -/
+instance : DirectedSystem (fun S : Finset ι => ↥(XS X U S))
+    (fun ⦃S T⦄ (h : S ≤ T) => transitionMaps X U S T h) where
+  map_self := fun ⦃_S⦄ _x => rfl
+  map_map := fun ⦃_k _j _i⦄ _ _ _x => rfl
+
+/-- The transition maps of the direct system of pieces are continuous. -/
+theorem continuous_transitionMaps (S T : Finset ι) (h : S ≤ T) :
+    Continuous (transitionMaps X U S T h) :=
+  continuous_inclusionMap X U h
 
 /-- The direct limit of the pieces `XS X U S`, indexed by finite sets. -/
 abbrev DirectLimitXS :=
   TopologicalSpace.DirectLimit.Space
     (fun S : Finset ι => XS X U S)
     (transitionMaps X U)
+    (continuous_transitionMaps X U)
 
 /-- The cofinite filter is below the principal filter on the complement
 of any finite set. -/
@@ -173,7 +191,8 @@ the pieces: send an element to its class in the piece indexed by its
 support. -/
 noncomputable def toDirectLimit (x : Πʳ i, [X i, U i]) : DirectLimitXS X U :=
   TopologicalSpace.DirectLimit.of (fun S : Finset ι => XS X U S)
-    (transitionMaps X U) (supportFinset X U x)
+    (transitionMaps X U) (continuous_transitionMaps X U)
+    (supportFinset X U x)
     ⟨(x : (i : ι) → X i), mem_XS_support X U x⟩
 
 /-- The backward map from the direct limit of the pieces to the
@@ -181,7 +200,7 @@ restricted product: send a class to the restricted-product element
 carried by any representative. -/
 noncomputable def fromDirectLimit : DirectLimitXS X U → Πʳ i, [X i, U i] :=
   TopologicalSpace.DirectLimit.lift (fun S : Finset ι => XS X U S)
-    (transitionMaps X U)
+    (transitionMaps X U) (continuous_transitionMaps X U)
     (fun S (x : ↥(XS X U S)) => ⟨x.val, XS_mem_restricted X U x.prop⟩)
     (fun _S _T _h _x => rfl)
 
@@ -196,17 +215,17 @@ theorem toDirectLimit_fromDirectLimit (q : DirectLimitXS X U) :
     toDirectLimit X U (fromDirectLimit X U q) = q := by
   obtain ⟨⟨S, x⟩, rfl⟩ :=
     @Quotient.exists_rep _ (TopologicalSpace.DirectLimit.directLimitSetoid _ _) q
-  show toDirectLimit X U
-      (fromDirectLimit X U (TopologicalSpace.DirectLimit.of _ _ S x)) =
-    TopologicalSpace.DirectLimit.of _ _ S x
-  have key : fromDirectLimit X U (TopologicalSpace.DirectLimit.of _ _ S x) =
+  change toDirectLimit X U
+      (fromDirectLimit X U (TopologicalSpace.DirectLimit.of _ _ _ S x)) =
+    TopologicalSpace.DirectLimit.of _ _ _ S x
+  have key : fromDirectLimit X U (TopologicalSpace.DirectLimit.of _ _ _ S x) =
       ⟨x.val, XS_mem_restricted X U x.prop⟩ := rfl
   rw [key]
   unfold toDirectLimit
   have h_le : supportFinset X U ⟨x.val, XS_mem_restricted X U x.prop⟩ ≤ S :=
     supportFinset_le X U x.prop
   exact (TopologicalSpace.DirectLimit.of_comp (fun S : Finset ι => ↥(XS X U S))
-    (transitionMaps X U) h_le _).symm
+    (transitionMaps X U) (continuous_transitionMaps X U) h_le _).symm
 
 /-- The chunk map from a piece into the restricted product with the
 principal filter on the complement of `S`. -/
@@ -248,7 +267,7 @@ theorem continuous_toDirectLimit : Continuous (toDirectLimit X U) := by
   have key : ∀ y : Πʳ i, [X i, U i]_[Filter.principal S],
       toDirectLimit X U (RestrictedProduct.inclusion X U hS y) =
         TopologicalSpace.DirectLimit.of (fun S : Finset ι => ↥(XS X U S))
-          (transitionMaps X U) T
+          (transitionMaps X U) (continuous_transitionMaps X U) T
           ⟨(RestrictedProduct.inclusion X U hS y : (i : ι) → X i),
            inclusion_mem_XS_of_principal X U hS y⟩ := by
     intro y
@@ -256,15 +275,15 @@ theorem continuous_toDirectLimit : Continuous (toDirectLimit X U) := by
     have h_le : supportFinset X U (RestrictedProduct.inclusion X U hS y) ≤ T :=
       supportFinset_le X U (inclusion_mem_XS_of_principal X U hS y)
     exact (TopologicalSpace.DirectLimit.of_comp (fun S : Finset ι => ↥(XS X U S))
-      (transitionMaps X U) h_le _).symm
+      (transitionMaps X U) (continuous_transitionMaps X U) h_le _).symm
   have heq : toDirectLimit X U ∘ RestrictedProduct.inclusion X U hS =
       (fun y => TopologicalSpace.DirectLimit.of (fun S : Finset ι => ↥(XS X U S))
-        (transitionMaps X U) T
+        (transitionMaps X U) (continuous_transitionMaps X U) T
         ⟨(RestrictedProduct.inclusion X U hS y : (i : ι) → X i),
          inclusion_mem_XS_of_principal X U hS y⟩) := by
     ext y; exact key y
   rw [heq]
-  apply (TopologicalSpace.DirectLimit.of_continuous _ _ T).comp
+  apply (TopologicalSpace.DirectLimit.of_continuous _ _ _ T).comp
   apply continuous_induced_rng.mpr
   rw [RestrictedProduct.topologicalSpace_eq_of_principal]
   exact continuous_subtype_val

@@ -116,6 +116,7 @@ example : TopologicalSpace.DirectLimit.of
       (fun S : Finset ℕ => ↥(RestrictedProduct.XS (fun _ : ℕ => ℤ)
         (fun _ => ({0} : Set ℤ)) S))
       (RestrictedProduct.transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
+      (RestrictedProduct.continuous_transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
       {0}
       (RestrictedProduct.transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ))
         ∅ {0} (Finset.empty_subset _) zeroTuple) =
@@ -123,11 +124,13 @@ example : TopologicalSpace.DirectLimit.of
       (fun S : Finset ℕ => ↥(RestrictedProduct.XS (fun _ : ℕ => ℤ)
         (fun _ => ({0} : Set ℤ)) S))
       (RestrictedProduct.transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
+      (RestrictedProduct.continuous_transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
       ∅ zeroTuple :=
   TopologicalSpace.DirectLimit.of_comp
     (fun S : Finset ℕ => ↥(RestrictedProduct.XS (fun _ : ℕ => ℤ)
       (fun _ => ({0} : Set ℤ)) S))
     (RestrictedProduct.transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
+    (RestrictedProduct.continuous_transitionMaps (fun _ : ℕ => ℤ) (fun _ => ({0} : Set ℤ)))
     (Finset.empty_subset _) zeroTuple
 
 end RestrictedProductDirectLimitTest
