@@ -53,7 +53,7 @@ example : ∃ a b : ℕ, a ^ 2 + b ^ 2 = 13 ∧
       Prime (⟨(a : ℤ), -(b : ℤ)⟩ : GaussianInt) :=
   @gaussianInt_split_prime_sq_add_sq 13 ⟨by norm_num⟩ (by norm_num)
 
--- The two split factors for `p = 5` are associates up to a unit:
+-- Alternate sum-of-two-squares presentations can give associated factors:
 -- `(1 - 2 * i) * i = 2 + i`.
 example : Associated (⟨1, -2⟩ : GaussianInt) (⟨2, 1⟩ : GaussianInt) :=
   ⟨⟨⟨0, 1⟩, ⟨0, -1⟩, by decide, by decide⟩, by decide⟩
