@@ -52,7 +52,7 @@ not to `N(0, σ²)`.
 This file therefore adds the hypothesis the book's statement takes for
 granted:
 
-  `hint2 : ∀ n k, Integrable (fun ω => (X n k ω) ^ 2) μ`.
+  `hint2 : ∀ n, ∀ k ∈ Finset.range n, Integrable (fun ω => (X n k ω) ^ 2) μ`.
 
 With it, every variance and Lindeberg integral is a genuine expectation
 and the classical characteristic-function proof goes through.
@@ -217,9 +217,9 @@ characteristic function `exp(-σ²t²/2)`. -/
 theorem lindeberg_charFun_product_tendsto
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
     (X : ℕ → ℕ → Ω → ℝ)
-    (hmeas : ∀ n k, Measurable (X n k))
-    (hmean : ∀ n k, ∫ ω, X n k ω ∂μ = 0)
-    (hint2 : ∀ n k, Integrable (fun ω => (X n k ω) ^ 2) μ)
+    (hmeas : ∀ n, ∀ k ∈ Finset.range n, Measurable (X n k))
+    (hmean : ∀ n, ∀ k ∈ Finset.range n, ∫ ω, X n k ω ∂μ = 0)
+    (hint2 : ∀ n, ∀ k ∈ Finset.range n, Integrable (fun ω => (X n k ω) ^ 2) μ)
     (σ : ℝ) (hσ : 0 < σ)
     (hvar : Tendsto (fun n => ∑ k ∈ Finset.range n,
               ∫ ω, (X n k ω) ^ 2 ∂μ) atTop (𝓝 (σ ^ 2)))
@@ -229,42 +229,49 @@ theorem lindeberg_charFun_product_tendsto
       atTop (𝓝 (Complex.exp (-(↑(σ ^ 2) * ↑t ^ 2 / 2)))) := by
   by_cases ht : t = 0
   · subst ht
-    have h1 : ∀ n k, charFun (μ.map (X n k)) (0 : ℝ) = 1 := by
-      intro n k
+    have h1 : ∀ n, ∀ k ∈ Finset.range n, charFun (μ.map (X n k)) (0 : ℝ) = 1 := by
+      intro n k hk
       have : IsProbabilityMeasure (μ.map (X n k)) :=
         (MeasureTheory.Measure.isProbabilityMeasure_map_iff
-          (hmeas n k).aemeasurable).mpr inferInstance
+          (hmeas n k hk).aemeasurable).mpr inferInstance
       simp [charFun_zero]
-    simp [h1]
+    have hprod1 : (fun n => ∏ k ∈ Finset.range n, charFun (μ.map (X n k)) (0 : ℝ)) =
+        fun _ => 1 := by
+      funext n
+      exact Finset.prod_eq_one (fun k hk => h1 n k hk)
+    rw [hprod1]
+    simp
   -- Integrability of the summands follows from square-integrability.
-  have hX_int : ∀ n k, Integrable (X n k) μ := by
-    intro n k
+  have hX_int : ∀ n, ∀ k ∈ Finset.range n, Integrable (X n k) μ := by
+    intro n k hk
     have hmem : MemLp (X n k) 2 μ :=
-      (memLp_two_iff_integrable_sq (hmeas n k).aestronglyMeasurable).mpr (hint2 n k)
+      (memLp_two_iff_integrable_sq (hmeas n k hk).aestronglyMeasurable).mpr (hint2 n k hk)
     exact hmem.integrable (by norm_num : (1 : ℝ≥0∞) ≤ 2)
   have hE2_nonneg : ∀ n k, 0 ≤ ∫ ω, (X n k ω) ^ 2 ∂μ :=
     fun n k => integral_nonneg fun ω => sq_nonneg _
   -- Characteristic function as an integral over `Ω`.
-  have hchar : ∀ n k, charFun (μ.map (X n k)) t
+  have hchar : ∀ n, ∀ k ∈ Finset.range n, charFun (μ.map (X n k)) t
       = ∫ ω, Complex.exp (↑t * ↑(X n k ω) * Complex.I) ∂μ := by
-    intro n k
-    rw [charFun_apply_real, integral_map (hmeas n k).aemeasurable (by fun_prop)]
+    intro n k hk
+    rw [charFun_apply_real, integral_map (hmeas n k hk).aemeasurable (by fun_prop)]
   -- Integrability of the pieces of the expansion term.
-  have hexp : ∀ n k, Integrable
+  have hexp : ∀ n, ∀ k ∈ Finset.range n, Integrable
       (fun ω => Complex.exp (↑t * ↑(X n k ω) * Complex.I)) μ := by
-    intro n k
+    intro n k hk
+    have hm : Measurable (X n k) := hmeas n k hk
     apply (integrable_const (1 : ℝ)).mono'
     · exact (by fun_prop : AEStronglyMeasurable
         (fun ω => Complex.exp (↑t * ↑(X n k ω) * Complex.I)) μ)
     · exact Filter.Eventually.of_forall fun ω => by
         rw [← Complex.ofReal_mul, Complex.norm_exp_ofReal_mul_I]
-  have hlin : ∀ n k, Integrable (fun ω => ↑t * Complex.I * (↑(X n k ω) : ℂ)) μ := by
-    intro n k
-    exact ((hX_int n k).ofReal).const_mul (↑t * Complex.I)
-  have hsq : ∀ n k, Integrable
+  have hlin : ∀ n, ∀ k ∈ Finset.range n,
+      Integrable (fun ω => ↑t * Complex.I * (↑(X n k ω) : ℂ)) μ := by
+    intro n k hk
+    exact ((hX_int n k hk).ofReal).const_mul (↑t * Complex.I)
+  have hsq : ∀ n, ∀ k ∈ Finset.range n, Integrable
       (fun ω => (↑(t ^ 2 / 2 : ℝ) : ℂ) * (↑((X n k ω) ^ 2) : ℂ)) μ := by
-    intro n k
-    exact ((hint2 n k).ofReal).const_mul (↑(t ^ 2 / 2 : ℝ) : ℂ)
+    intro n k hk
+    exact ((hint2 n k hk).ofReal).const_mul (↑(t ^ 2 / 2 : ℝ) : ℂ)
   -- Pointwise form of the expansion term.
   have hterm : ∀ n k ω, lindebergExpansionTerm t (X n k ω) =
       Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1 -
@@ -275,18 +282,19 @@ theorem lindeberg_charFun_product_tendsto
     push_cast
     ring
   -- The expansion term is integrable.
-  have hF_int : ∀ n k, Integrable (fun ω => lindebergExpansionTerm t (X n k ω)) μ := by
-    intro n k
+  have hF_int : ∀ n, ∀ k ∈ Finset.range n,
+      Integrable (fun ω => lindebergExpansionTerm t (X n k ω)) μ := by
+    intro n k hk
     have hparts : Integrable (fun ω => Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1 -
         (↑t * Complex.I * (↑(X n k ω) : ℂ)) +
         ((↑(t ^ 2 / 2 : ℝ) : ℂ) * (↑((X n k ω) ^ 2) : ℂ))) μ :=
-      (((hexp n k).sub (integrable_const (1 : ℂ))).sub (hlin n k)).add (hsq n k)
+      (((hexp n k hk).sub (integrable_const (1 : ℂ))).sub (hlin n k hk)).add (hsq n k hk)
     exact hparts.congr (Filter.Eventually.of_forall fun ω => (hterm n k ω).symm)
   -- Integral representation of the second-order expansion error.
-  have hRep : ∀ n k, charFun (μ.map (X n k)) t - 1 +
+  have hRep : ∀ n, ∀ k ∈ Finset.range n, charFun (μ.map (X n k)) t - 1 +
         (↑(t ^ 2 / 2 : ℝ) : ℂ) * ↑(∫ ω, (X n k ω) ^ 2 ∂μ)
       = ∫ ω, lindebergExpansionTerm t (X n k ω) ∂μ := by
-    intro n k
+    intro n k hk
     have hsplit : ∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1 -
         (↑t * Complex.I * (↑(X n k ω) : ℂ)) +
         ((↑(t ^ 2 / 2 : ℝ) : ℂ) * (↑((X n k ω) ^ 2) : ℂ))) ∂μ =
@@ -299,22 +307,22 @@ theorem lindeberg_charFun_product_tendsto
           ∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1 -
             (↑t * Complex.I * (↑(X n k ω) : ℂ))) ∂μ +
           ∫ ω, (↑(t ^ 2 / 2 : ℝ) : ℂ) * (↑((X n k ω) ^ 2) : ℂ) ∂μ) from
-        integral_add (by exact (Integrable.sub (Integrable.sub (hexp n k)
-          (integrable_const (1 : ℂ))) (hlin n k))) (hsq n k),
+        integral_add (by exact (Integrable.sub (Integrable.sub (hexp n k hk)
+          (integrable_const (1 : ℂ))) (hlin n k hk))) (hsq n k hk),
         show (∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1 -
             (↑t * Complex.I * (↑(X n k ω) : ℂ))) ∂μ =
           ∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ -
           ∫ ω, ↑t * Complex.I * (↑(X n k ω) : ℂ) ∂μ) from
-        integral_sub (by exact (Integrable.sub (hexp n k) (integrable_const (1 : ℂ))))
-          (hlin n k),
+        integral_sub (by exact (Integrable.sub (hexp n k hk) (integrable_const (1 : ℂ))))
+          (hlin n k hk),
         show (∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ =
           ∫ ω, Complex.exp (↑t * ↑(X n k ω) * Complex.I) ∂μ - ∫ _ : Ω, (1 : ℂ) ∂μ) from
-        integral_sub (hexp n k) (integrable_const (1 : ℂ))]
+        integral_sub (hexp n k hk) (integrable_const (1 : ℂ))]
     rw [integral_congr_ae (Filter.Eventually.of_forall (hterm n k)), hsplit]
-    rw [← hchar n k]
+    rw [← hchar n k hk]
     have h1 : ∫ _ : Ω, (1 : ℂ) ∂μ = 1 := by simp
     have h2 : ∫ ω, ↑t * Complex.I * (↑(X n k ω) : ℂ) ∂μ = 0 := by
-      rw [integral_const_mul, integral_complex_ofReal, hmean n k]
+      rw [integral_const_mul, integral_complex_ofReal, hmean n k hk]
       simp
     have h3 : ∫ ω, (↑(t ^ 2 / 2 : ℝ) : ℂ) * (↑((X n k ω) ^ 2) : ℂ) ∂μ
         = (↑(t ^ 2 / 2 : ℝ) : ℂ) * ↑(∫ ω, (X n k ω) ^ 2 ∂μ) := by
@@ -322,21 +330,21 @@ theorem lindeberg_charFun_product_tendsto
     rw [h1, h2, h3]
     simp
   -- Truncation bound for the expansion error.
-  have hC : ∀ (ε : ℝ), 0 < ε → |t| * ε ≤ 1 → ∀ n k,
+  have hC : ∀ (ε : ℝ), 0 < ε → |t| * ε ≤ 1 → ∀ n, ∀ k ∈ Finset.range n,
       ‖charFun (μ.map (X n k)) t - 1 +
         (↑(t ^ 2 / 2 : ℝ) : ℂ) * ↑(∫ ω, (X n k ω) ^ 2 ∂μ)‖ ≤
         |t| ^ 3 * ε * Real.exp 1 * (∫ ω, (X n k ω) ^ 2 ∂μ) +
           (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) *
             ∫ ω, (X n k ω) ^ 2 * Set.indicator {ω' | ε < |X n k ω'|} 1 ω ∂μ := by
-    intro ε hε hεt n k
-    rw [hRep n k]
+    intro ε hε hεt n k hk
+    rw [hRep n k hk]
     set A : Set Ω := {ω | ε < |X n k ω|} with hA
     have hAmeas : MeasurableSet A := by
       have h := measurableSet_lt (f := fun _ : Ω => ε) (g := fun ω => ‖X n k ω‖)
-        measurable_const (hmeas n k).norm
+        measurable_const (hmeas n k hk).norm
       rw [hA]
       simpa [Real.norm_eq_abs] using h
-    rw [← integral_add_compl hAmeas (hF_int n k)]
+    rw [← integral_add_compl hAmeas (hF_int n k hk)]
     -- Small part: `|X| ≤ ε`, third-order Taylor bound.
     have hsmall : ‖∫ ω in Aᶜ, lindebergExpansionTerm t (X n k ω) ∂μ‖ ≤
         |t| ^ 3 * ε * Real.exp 1 * (∫ ω, (X n k ω) ^ 2 ∂μ) := by
@@ -383,10 +391,10 @@ theorem lindeberg_charFun_product_tendsto
       calc ‖∫ ω in Aᶜ, lindebergExpansionTerm t (X n k ω) ∂μ‖
           ≤ ∫ ω in Aᶜ, |t| ^ 3 * ε * Real.exp 1 * (X n k ω) ^ 2 ∂μ :=
             norm_integral_le_of_norm_le
-              ((hint2 n k).const_mul _).integrableOn
+              ((hint2 n k hk).const_mul _).integrableOn
               (ae_restrict_of_forall_mem hAmeas.compl hpoint)
         _ ≤ ∫ ω, |t| ^ 3 * ε * Real.exp 1 * (X n k ω) ^ 2 ∂μ :=
-            setIntegral_le_integral ((hint2 n k).const_mul _)
+            setIntegral_le_integral ((hint2 n k hk).const_mul _)
               (Filter.Eventually.of_forall fun ω => by positivity)
         _ = |t| ^ 3 * ε * Real.exp 1 * (∫ ω, (X n k ω) ^ 2 ∂μ) := by
             rw [integral_const_mul]
@@ -458,8 +466,8 @@ theorem lindeberg_charFun_product_tendsto
         apply IntegrableOn.add
         · apply IntegrableOn.add
           · exact integrableOn_const
-          · exact ((hX_int n k).abs.const_mul |t|).integrableOn
-        · exact ((hint2 n k).const_mul (t ^ 2 / 2)).integrableOn
+          · exact ((hX_int n k hk).abs.const_mul |t|).integrableOn
+        · exact ((hint2 n k hk).const_mul (t ^ 2 / 2)).integrableOn
       have hCpoint : ∀ ω ∈ A, 2 + |t| * |X n k ω| + (t ^ 2 / 2) * (X n k ω) ^ 2 ≤
           (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) * (X n k ω) ^ 2 := by
         intro ω hω
@@ -482,7 +490,7 @@ theorem lindeberg_charFun_product_tendsto
               (ae_restrict_of_forall_mem hAmeas hpoint)
         _ ≤ ∫ ω in A, (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) * (X n k ω) ^ 2 ∂μ :=
             setIntegral_mono_on hbound_int
-              ((hint2 n k).const_mul _).integrableOn hAmeas hCpoint
+              ((hint2 n k hk).const_mul _).integrableOn hAmeas hCpoint
         _ = (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) * ∫ ω in A, (X n k ω) ^ 2 ∂μ := by
             rw [integral_const_mul]
         _ = (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) *
@@ -505,13 +513,13 @@ theorem lindeberg_charFun_product_tendsto
             (2 / ε ^ 2 + |t| / ε + t ^ 2 / 2) *
               ∫ ω, (X n k ω) ^ 2 * Set.indicator A 1 ω ∂μ := by ring
   -- The Lindeberg term equals the set integral over `{|X| > ε}`.
-  have hLterm_eq : ∀ n k (ε : ℝ), 0 < ε →
+  have hLterm_eq : ∀ n, ∀ k ∈ Finset.range n, ∀ (ε : ℝ), 0 < ε →
       ∫ ω in {ω | ε < |X n k ω|}, (X n k ω) ^ 2 ∂μ =
         ∫ ω, (X n k ω) ^ 2 * Set.indicator {ω' | ε < |X n k ω'|} 1 ω ∂μ := by
-    intro n k ε hε
+    intro n k hk ε hε
     have hAmeas : MeasurableSet {ω | ε < |X n k ω|} := by
       have h := measurableSet_lt (f := fun _ : Ω => ε) (g := fun ω => ‖X n k ω‖)
-        measurable_const (hmeas n k).norm
+        measurable_const (hmeas n k hk).norm
       simpa [Real.norm_eq_abs] using h
     have hInd : (fun ω => (X n k ω) ^ 2 * Set.indicator {ω' | ε < |X n k ω'|} 1 ω) =
         Set.indicator {ω | ε < |X n k ω|} (fun ω => (X n k ω) ^ 2) := by
@@ -543,16 +551,16 @@ theorem lindeberg_charFun_product_tendsto
     filter_upwards [hev] with n hn k hk
     have hAmeas : MeasurableSet {ω | ε₁ < |X n k ω|} := by
       have h := measurableSet_lt (f := fun _ : Ω => ε₁) (g := fun ω => ‖X n k ω‖)
-        measurable_const (hmeas n k).norm
+        measurable_const (hmeas n k hk).norm
       simpa [Real.norm_eq_abs] using h
     have hsplit : ∫ ω, (X n k ω) ^ 2 ∂μ =
         ∫ ω in {ω | ε₁ < |X n k ω|}, (X n k ω) ^ 2 ∂μ +
         ∫ ω in {ω | ε₁ < |X n k ω|}ᶜ, (X n k ω) ^ 2 ∂μ :=
-      (integral_add_compl hAmeas (hint2 n k)).symm
+      (integral_add_compl hAmeas (hint2 n k hk)).symm
     have hsmall : ∫ ω in {ω | ε₁ < |X n k ω|}ᶜ, (X n k ω) ^ 2 ∂μ ≤ η / 2 := by
       calc ∫ ω in {ω | ε₁ < |X n k ω|}ᶜ, (X n k ω) ^ 2 ∂μ
           ≤ ∫ ω in {ω | ε₁ < |X n k ω|}ᶜ, ε₁ ^ 2 ∂μ :=
-            setIntegral_mono_on (hint2 n k).integrableOn (integrableOn_const)
+            setIntegral_mono_on (hint2 n k hk).integrableOn (integrableOn_const)
               hAmeas.compl (fun ω hω => by
                 simp only [Set.mem_compl_iff, Set.mem_ofPred_eq, not_lt] at hω
                 rw [← sq_abs]
@@ -573,7 +581,7 @@ theorem lindeberg_charFun_product_tendsto
     have hterm_le : ∫ ω in {ω | ε₁ < |X n k ω|}, (X n k ω) ^ 2 ∂μ < η / 2 := by
       calc ∫ ω in {ω | ε₁ < |X n k ω|}, (X n k ω) ^ 2 ∂μ
           = ∫ ω, (X n k ω) ^ 2 * Set.indicator {ω' | ε₁ < |X n k ω'|} 1 ω ∂μ :=
-            hLterm_eq n k ε₁ hε₁pos
+            hLterm_eq n k hk ε₁ hε₁pos
         _ ≤ ∑ j ∈ Finset.range n,
               ∫ ω, (X n j ω) ^ 2 * Set.indicator {ω' | ε₁ < |X n j ω'|} 1 ω ∂μ :=
             Finset.single_le_sum (fun j _ => hLterm_nonneg n j ε₁) hk
@@ -639,7 +647,7 @@ theorem lindeberg_charFun_product_tendsto
             (↑(t ^ 2 / 2 : ℝ) : ℂ) * ↑(∫ ω, (X n k ω) ^ 2 ∂μ)‖
         ≤ ∑ k ∈ Finset.range n, (|t| ^ 3 * ε * Real.exp 1 * (∫ ω, (X n k ω) ^ 2 ∂μ) +
             C * ∫ ω, (X n k ω) ^ 2 * Set.indicator {ω' | ε < |X n k ω'|} 1 ω ∂μ) :=
-          Finset.sum_le_sum fun k _ => hC ε hεpos hεt n k
+          Finset.sum_le_sum fun k hk => hC ε hεpos hεt n k hk
       _ = |t| ^ 3 * ε * Real.exp 1 * (∑ k ∈ Finset.range n, ∫ ω, (X n k ω) ^ 2 ∂μ) +
             C * (∑ k ∈ Finset.range n,
               ∫ ω, (X n k ω) ^ 2 * Set.indicator {ω' | ε < |X n k ω'|} 1 ω ∂μ) := by
@@ -678,20 +686,20 @@ theorem lindeberg_charFun_product_tendsto
     filter_upwards [hevE] with n hn k hk
     have hAmeas : MeasurableSet {ω | ε₂ < |X n k ω|} := by
       have h := measurableSet_lt (f := fun _ : Ω => ε₂) (g := fun ω => ‖X n k ω‖)
-        measurable_const (hmeas n k).norm
+        measurable_const (hmeas n k hk).norm
       simpa [Real.norm_eq_abs] using h
     -- `charFun - 1` as an integral.
     have hv : charFun (μ.map (X n k)) t - 1 =
         ∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ := by
-      rw [hchar n k]
+      rw [hchar n k hk]
       rw [show (∫ ω, (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ =
           ∫ ω, Complex.exp (↑t * ↑(X n k ω) * Complex.I) ∂μ -
             ∫ _ : Ω, (1 : ℂ) ∂μ) from
-        integral_sub (hexp n k) (integrable_const (1 : ℂ))]
+        integral_sub (hexp n k hk) (integrable_const (1 : ℂ))]
       simp
     have hfi : Integrable
         (fun ω => Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) μ :=
-      (hexp n k).sub (integrable_const (1 : ℂ))
+      (hexp n k hk).sub (integrable_const (1 : ℂ))
     rw [hv, ← integral_add_compl hAmeas hfi]
     have hsmall_part : ‖∫ ω in {ω | ε₂ < |X n k ω|}ᶜ,
         (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ‖ ≤ 2 * |t| * ε₂ := by
@@ -699,7 +707,7 @@ theorem lindeberg_charFun_product_tendsto
               (Complex.exp (↑t * ↑(X n k ω) * Complex.I) - 1) ∂μ‖
           ≤ ∫ ω in {ω | ε₂ < |X n k ω|}ᶜ, 2 * |t| * |X n k ω| ∂μ :=
             norm_integral_le_of_norm_le
-              (((hX_int n k).abs.const_mul (2 * |t|)).integrableOn)
+              (((hX_int n k hk).abs.const_mul (2 * |t|)).integrableOn)
               (ae_restrict_of_forall_mem hAmeas.compl (fun ω hω => by
                 have hXω : |X n k ω| ≤ ε₂ := by
                   simp only [Set.mem_compl_iff, Set.mem_ofPred_eq, not_lt] at hω
@@ -722,7 +730,7 @@ theorem lindeberg_charFun_product_tendsto
                         Real.norm_eq_abs]
                       ring))
         _ ≤ ∫ ω in {ω | ε₂ < |X n k ω|}ᶜ, 2 * |t| * ε₂ ∂μ :=
-            setIntegral_mono_on (((hX_int n k).abs.const_mul (2 * |t|)).integrableOn)
+            setIntegral_mono_on (((hX_int n k hk).abs.const_mul (2 * |t|)).integrableOn)
               (integrableOn_const) hAmeas.compl (fun ω hω => by
                 have hXω : |X n k ω| ≤ ε₂ := by
                   simp only [Set.mem_compl_iff, Set.mem_ofPred_eq, not_lt] at hω
@@ -754,10 +762,10 @@ theorem lindeberg_charFun_product_tendsto
               have h := sq_le_sq' (a := ε₂) (b := |X n k ω|)
                 (by linarith [abs_nonneg (X n k ω), hε₂pos.le]) (le_of_lt hω')
               rwa [sq_abs] at h)
-            (hint2 n k).integrableOn
+            (hint2 n k hk).integrableOn
         have h2 : ∫ ω in {ω | ε₂ < |X n k ω|}, (X n k ω) ^ 2 ∂μ ≤
             ∫ ω, (X n k ω) ^ 2 ∂μ :=
-          setIntegral_le_integral (hint2 n k)
+          setIntegral_le_integral (hint2 n k hk)
             (Filter.Eventually.of_forall fun ω => sq_nonneg _)
         calc μ.real {ω | ε₂ < |X n k ω|}
             ≤ (1 / ε₂ ^ 2) * (∫ ω in {ω | ε₂ < |X n k ω|}, (X n k ω) ^ 2 ∂μ) := by
@@ -1009,10 +1017,11 @@ for every bounded continuous `f : ℝ →ᵇ ℝ`,
 theorem lindeberg_feller_clt_triangular
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
     (X : ℕ → ℕ → Ω → ℝ)
-    (hind : ∀ n, iIndepFun (m := fun _ => inferInstance) (X n) μ)
-    (hmeas : ∀ n k, Measurable (X n k))
-    (hmean : ∀ n k, ∫ ω, X n k ω ∂μ = 0)
-    (hint2 : ∀ n k, Integrable (fun ω => (X n k ω) ^ 2) μ)
+    (hind : ∀ n, iIndepFun (m := fun _ => inferInstance)
+      ((Finset.range n).restrict (X n)) μ)
+    (hmeas : ∀ n, ∀ k ∈ Finset.range n, Measurable (X n k))
+    (hmean : ∀ n, ∀ k ∈ Finset.range n, ∫ ω, X n k ω ∂μ = 0)
+    (hint2 : ∀ n, ∀ k ∈ Finset.range n, Integrable (fun ω => (X n k ω) ^ 2) μ)
     (σ : ℝ) (hσ : 0 < σ)
     (hvar : Tendsto (fun n => ∑ k ∈ Finset.range n,
               ∫ ω, (X n k ω) ^ 2 ∂μ) atTop (𝓝 (σ ^ 2)))
@@ -1023,7 +1032,7 @@ theorem lindeberg_feller_clt_triangular
   let v : ℝ≥0 := ⟨σ ^ 2, sq_nonneg σ⟩
   have hv : (v : ℝ) = σ ^ 2 := rfl
   have hSn_meas : ∀ n, Measurable (fun ω => ∑ k ∈ Finset.range n, X n k ω) :=
-    fun n => Finset.measurable_sum _ fun k _ => hmeas n k
+    fun n => Finset.measurable_sum _ fun k hk => hmeas n k hk
   have hSn_prob : ∀ n,
       IsProbabilityMeasure (μ.map (fun ω => ∑ k ∈ Finset.range n, X n k ω)) :=
     fun n => ⟨by rw [Measure.map_apply (hSn_meas n) MeasurableSet.univ,
@@ -1041,8 +1050,8 @@ theorem lindeberg_feller_clt_triangular
       ∏ k ∈ Finset.range n, charFun (μ.map (X n k)) t := by
     intro n
     show charFun (μ.map (fun ω => ∑ k ∈ Finset.range n, X n k ω)) t = _
-    have h := ((hind n).restrict (Finset.range n)).charFun_map_fun_finsetSum_eq_prod
-      (fun i _ => (hmeas n i).aemeasurable)
+    have h := (hind n).charFun_map_fun_finsetSum_eq_prod
+      (fun i hi => (hmeas n i hi).aemeasurable)
     exact (congr_fun h t).trans (by simp [Finset.prod_apply])
   have hcharFun_target : charFun (↑μ₀) t =
       Complex.exp (-(↑(σ ^ 2) * ↑t ^ 2 / 2)) := by

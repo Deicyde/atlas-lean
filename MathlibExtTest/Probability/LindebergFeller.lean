@@ -219,9 +219,11 @@ example : ∀ f : ℝ →ᵇ ℝ,
       (fun ω => ∑ k ∈ Finset.range n, scaledRademacher n k ω)
       (Measure.infinitePi (fun _ : ℕ => fairCoin))))
       atTop (𝓝 (∫ x, f x ∂(gaussianReal 0 ⟨1 ^ 2, sq_nonneg 1⟩))) := by
-  apply lindeberg_feller_clt_triangular scaledRademacher iIndepFun_scaledRademacher
-    measurable_scaledRademacher integral_scaledRademacher
-    integrable_sq_scaledRademacher 1 zero_lt_one
+  apply lindeberg_feller_clt_triangular scaledRademacher
+    (fun n => (iIndepFun_scaledRademacher n).restrict (Finset.range n))
+    (fun n k _ => measurable_scaledRademacher n k)
+    (fun n k _ => integral_scaledRademacher n k)
+    (fun n k _ => integrable_sq_scaledRademacher n k) 1 zero_lt_one
     tendsto_sum_sq_scaledRademacher lindeberg_scaledRademacher
 
 /-- The quadratic Taylor bound for `exp` on `‖x‖ ≤ 1`, at a concrete point. -/
