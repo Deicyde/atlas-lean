@@ -24,7 +24,7 @@ to `x` and `q` for a nearest point to `y`,
 * `‖p - q‖ ≤ ‖x - y‖`, and
 * `‖p - q‖ ^ 2 + ‖(x - p) - (y - q)‖ ^ 2 ≤ ‖x - y‖ ^ 2`.
 
-The bundled map `convexProjection K` packages this choice; it is `1`-Lipschitz,
+The function `convexProjection K` packages this choice; it is `1`-Lipschitz,
 it fixes the points of `K`, and it is idempotent.
 
 This generalizes the v1 book's projection proposition
@@ -102,8 +102,8 @@ theorem exists_convexProjection_spec (K : Set F) (x : F) :
 
 /-- The nearest-point projection onto `K`: for a nonempty complete convex
 `K`, `convexProjection K x` is the unique point of `K` nearest to `x`.
-Outside those hypotheses its value is unspecified, and every lemma below
-assumes them. -/
+Outside those hypotheses its value is unspecified. The properties of this
+chosen function below assume them. -/
 noncomputable def convexProjection (K : Set F) (x : F) : F :=
   Classical.choose (exists_convexProjection_spec K x)
 
