@@ -9,6 +9,15 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Probability.BochnerForward
+import Mathlib.Data.Fin.VecNotation
+import Mathlib.Tactic.NormNum
+
+/-!
+# Tests for Bochner forward compatibility
+
+Tests cover normalization, both parts of positive definiteness, the affine counterexample,
+and a nonconstant Dirac characteristic function.
+-/
 
 @[expose] public section
 
@@ -48,12 +57,33 @@ example : ¬ IsCharacteristicFunReal (fun _ : ℝ => 2) := by
   have h0 := (bochner_forward_real _ h).2.2
   norm_num at h0
 
-/-- Positive definiteness of `charFun μ` at a concrete `n = 2` instance:
-the Hermitian form is `‖z 0 * exp (t 0 * x * i) + z 1 * exp (t 1 * x * i)‖²`
-integrated, hence nonnegative. -/
+/-- A two-point characteristic-function quadratic form is real and nonnegative. -/
 example (μ : Measure ℝ) [IsProbabilityMeasure μ] (t : Fin 2 → ℝ) (z : Fin 2 → ℂ) :
-    0 ≤ (∑ i, ∑ j, charFun μ (t i - t j) * z i * starRingEnd ℂ (z j)).re :=
+    (∑ i, ∑ j, charFun μ (t i - t j) * z i * starRingEnd ℂ (z j)).im = 0 ∧
+      0 ≤ (∑ i, ∑ j, charFun μ (t i - t j) * z i * starRingEnd ℂ (z j)).re :=
   charFun_isPositiveDefinite μ 2 t z
+
+/-- The affine function `1 + t` fails reality of its two-point quadratic form. -/
+example : ¬ IsPositiveDefinite (fun t : ℝ => 1 + (t : ℂ)) := by
+  intro h
+  have him := (h 2 ![0, 1] ![1, Complex.I]).1
+  norm_num [Fin.sum_univ_two, Complex.mul_im, Complex.mul_re] at him
+
+/-- The same affine function is excluded by the real-valued predicate. -/
+example : ¬ IsPositiveDefiniteReal (fun t : ℝ => 1 + t) := by
+  intro h
+  have him := (h 2 ![0, 1] ![1, Complex.I]).1
+  norm_num [Fin.sum_univ_two, Function.comp_apply, Complex.mul_im, Complex.mul_re] at him
+
+/-- A nonconstant Dirac characteristic function satisfies both quadratic-form conditions. -/
+example :
+    (∑ i : Fin 2, ∑ j : Fin 2,
+      charFun (Measure.dirac (1 : ℝ)) (![0, 1] i - ![0, 1] j) *
+        ![1, Complex.I] i * starRingEnd ℂ (![1, Complex.I] j)).im = 0 ∧
+    0 ≤ (∑ i : Fin 2, ∑ j : Fin 2,
+      charFun (Measure.dirac (1 : ℝ)) (![0, 1] i - ![0, 1] j) *
+        ![1, Complex.I] i * starRingEnd ℂ (![1, Complex.I] j)).re :=
+  charFun_isPositiveDefinite (Measure.dirac (1 : ℝ)) 2 ![0, 1] ![1, Complex.I]
 
 #print axioms ProbabilityTheory.bochner_forward
 #print axioms ProbabilityTheory.bochner_forward_real
