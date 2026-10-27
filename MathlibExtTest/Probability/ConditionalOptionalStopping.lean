@@ -54,7 +54,7 @@ stopping time is the conditional expectation of the `L¹` limit. -/
 example (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
     {τ : Ω → WithTop ℕ} (hτ : IsStoppingTime ℱ τ) :
     stoppedValueAtTop f τ =ᵐ[μ] μ[ℱ.limitProcess f μ | hτ.measurableSpace] :=
-  MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess hf hui hτ
+  MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_limitProcess hf hui hτ
 
 /-- Whole-process UI callers explicitly use the existing UI preservation API. -/
 example (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
@@ -62,7 +62,7 @@ example (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
     (hLM : L ≤ M) :
     stoppedValueAtTop f L
       =ᵐ[μ] μ[stoppedValueAtTop f M | hL.measurableSpace] :=
-  MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+  MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
     hf (hf.uniformIntegrable_stoppedProcess_of_uniformIntegrable hui M hM) hL hM hLM
 
 /-- A direct client assumes only UI of the process stopped at `M`. -/
@@ -71,7 +71,7 @@ example (hf : Martingale f ℱ μ) {L M : Ω → WithTop ℕ}
     (hL : IsStoppingTime ℱ L) (hM : IsStoppingTime ℱ M) (hLM : L ≤ M) :
     stoppedValueAtTop f L
       =ᵐ[μ] μ[stoppedValueAtTop f M | hL.measurableSpace] :=
-  hf.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity hui hL hM hLM
+  hf.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop hui hL hM hLM
 
 /-- Stopping any martingale at zero supplies UI without a whole-process UI premise. -/
 example (hf : Martingale f ℱ μ) :
@@ -87,7 +87,7 @@ example (hf : Martingale f ℱ μ) :
     rw [hzero]
     exact uniformIntegrable_const (ι := ℕ) le_rfl ENNReal.one_ne_top
       (memLp_one_iff_integrable.mpr (hf.integrable 0))
-  exact hf.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity hui
+  exact hf.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop hui
     (isStoppingTime_const ℱ 0) (isStoppingTime_const ℱ 0) le_rfl
 
 /-- The constant martingale: conditional optional stopping holds for the
@@ -101,7 +101,7 @@ example (c : ℝ) :
           (fun _ : ℝ => ((5 : ℕ) : WithTop ℕ)) |
         (isStoppingTime_const ℱ₀ 0).measurableSpace] := by
   intro ℱ₀ μ₀
-  refine MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+  refine MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
     (martingale_const ℱ₀ μ₀ c)
     (by simpa only [stoppedProcess_const] using
       uniformIntegrable_const (ι := ℕ) le_rfl ENNReal.one_ne_top (memLp_const c))
@@ -109,8 +109,8 @@ example (c : ℝ) :
     (fun ω => by simp)
 
 -- Axiom check for the two main results: only the standard axioms.
-#print axioms MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
-#print axioms MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+#print axioms MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_limitProcess
+#print axioms MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
 
 -- The conditional theorem also handles an actual infinite terminal stopping time.
 example :
@@ -125,7 +125,7 @@ example :
   have htop : IsStoppingTime ℱ₀ (fun _ : ℝ => (⊤ : WithTop ℕ)) := by
     intro i
     simp
-  exact MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+  exact MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
     (martingale_const ℱ₀ μ₀ (3 : ℝ))
     (by simpa only [stoppedProcess_const] using
       uniformIntegrable_const (ι := ℕ) le_rfl ENNReal.one_ne_top (memLp_const (3 : ℝ)))
@@ -145,7 +145,7 @@ example :
       = stoppedValueAtTop f (fun _ : Ω => (⊤ : WithTop ℕ)) :=
   stoppedValueAtTop_stoppedProcess_of_le le_rfl
 
-#check MeasureTheory.Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+#check MeasureTheory.Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
 #print axioms MeasureTheory.stoppedValueAtTop_stoppedProcess_of_le
 
 #print axioms MeasureTheory.stoppedValueAtTop

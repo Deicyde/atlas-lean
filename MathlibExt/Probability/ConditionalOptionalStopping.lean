@@ -280,7 +280,7 @@ bounded optional sampling, and Lévy's upward theorem for the filtration
 `n ↦ ℱ_{τ ∧ n}` identifies the a.e. limit of those conditional
 expectations with `μ[ℱ.limitProcess f μ | ⨆ n, ℱ_{τ ∧ n}] =
 μ[ℱ.limitProcess f μ | ℱ_τ]`. -/
-theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
+theorem Martingale.stoppedValueAtTop_ae_eq_condExp_limitProcess
     (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
     {τ : Ω → WithTop ℕ} (hτ : IsStoppingTime ℱ τ) :
     stoppedValueAtTop f τ =ᵐ[μ] μ[ℱ.limitProcess f μ | hτ.measurableSpace] := by
@@ -387,8 +387,8 @@ private theorem stoppedValueAtTop_ae_eq_condExp_of_uniformIntegrable
     (hLM : L ≤ M) :
     stoppedValueAtTop f L
       =ᵐ[μ] μ[stoppedValueAtTop f M | hL.measurableSpace] := by
-  have hL_eq := hf.stoppedValueAtInfinity_ae_eq_condExp_limitProcess hui hL
-  have hM_eq := hf.stoppedValueAtInfinity_ae_eq_condExp_limitProcess hui hM
+  have hL_eq := hf.stoppedValueAtTop_ae_eq_condExp_limitProcess hui hL
+  have hM_eq := hf.stoppedValueAtTop_ae_eq_condExp_limitProcess hui hM
   exact (hL_eq.trans
     (condExp_condExp_of_le (IsStoppingTime.measurableSpace_mono hL hM hLM)
       hM.measurableSpace_le).symm).trans (condExp_congr_ae hM_eq).symm
@@ -401,7 +401,7 @@ the source's stopped-process UI hypothesis.
 
 Callers with `hui : UniformIntegrable f 1 μ` can supply
 `hf.uniformIntegrable_stoppedProcess_of_uniformIntegrable hui M hM`. -/
-theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+theorem Martingale.stoppedValueAtTop_ae_eq_condExp_stoppedValueAtTop
     (hf : Martingale f ℱ μ) {L M : Ω → WithTop ℕ}
     (hui : UniformIntegrable (stoppedProcess f M) 1 μ)
     (hL : IsStoppingTime ℱ L) (hM : IsStoppingTime ℱ M) (hLM : L ≤ M) :
