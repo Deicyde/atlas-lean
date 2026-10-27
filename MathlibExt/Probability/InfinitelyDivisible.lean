@@ -11,6 +11,8 @@ module
 public import Mathlib.MeasureTheory.Group.Convolution
 public import Mathlib.Probability.Distributions.Poisson.Basic
 
+import Mathlib.Logic.Function.Iterate
+
 /-!
 # Infinitely divisible measures
 
@@ -25,11 +27,15 @@ variable `Y`.
 This formalizes the target "Definition (Infinitely divisible)"
 (Lecture 18 / Lecture 20) of `v1/Atlas/TheoryOfProbability/targets.yaml`,
 following `v1/Atlas/TheoryOfProbability/code/InfinitelyDivisible.lean`
-in v1. The v1 file contains only the definition (`convPow` and
-`IsInfinitelyDivisible`); the algebra of convolution powers, closure of
+in v1. The source-facing predicate requires jointly measurable addition,
+which the generalized v1 definition omitted. The v1 file contains only
+`convPow` and `IsInfinitelyDivisible`; the algebra of convolution powers, closure of
 infinite divisibility under convolution, and the Dirac and Poisson
-examples are new here. The definition is moved from the root namespace
-in v1 into `MeasureTheory.Measure`, alongside `convPow`.
+examples are new here. The predicate is moved from the root namespace in v1 into
+`MeasureTheory.Measure`, alongside `convPow`. The existing characterization
+in `MathlibExt.Probability.LevyKhintchin` uses this predicate and shares
+`convPow`; `isInfinitelyDivisible_iff_exists_iterate` preserves its former
+nonzero-order root interface.
 
 ## Scope
 
@@ -39,15 +45,17 @@ In:
   measure, with its additive and multiplicative algebra
   (`convPow_add`, `convPow_conv`).
 * `MeasureTheory.Measure.IsInfinitelyDivisible`: the definition.
+* The order-one probability consequence and the equivalence with the former
+  nonzero-order iterate hypothesis of `MetaMathlibExt.levy_Khintchin`.
 * Closure of infinite divisibility under convolution
   (`IsInfinitelyDivisible.conv`).
 * The Dirac measure on `ℝ` and the Poisson measure are infinitely
   divisible (`isInfinitelyDivisible_dirac`,
   `isInfinitelyDivisible_poissonMeasure`).
 
-Out: Lévy-Khinchin representations, canonical (Lévy) measures, and
-characterizations via characteristic functions. None of those appear in
-v1, and they are left for a follow-up.
+Out: new Lévy-Khintchin representation proofs or triplet uniqueness.
+The existing one-dimensional characterization is integrated here; the v1
+target being imported is only the definition.
 
 ## Main results
 
@@ -69,8 +77,9 @@ variable {M : Type*} [AddCommMonoid M] [MeasurableSpace M]
 
 /-- The `n`-fold convolution power of a measure `ν` on an additive commutative
 measurable monoid. Defined recursively: `convPow ν 0 = δ_0` (Dirac at the additive
-identity) and `convPow ν (n+1) = convPow ν n ∗ ν`. If `ν` is the law of `Y`, then
-`convPow ν n` is the law of the sum of `n` i.i.d. copies of `Y`. -/
+identity) and `convPow ν (n+1) = convPow ν n ∗ ν`. When addition is jointly
+measurable and `ν` is the law of `Y`, `convPow ν n` is the law of the sum of
+`n` i.i.d. copies of `Y`. -/
 noncomputable def convPow {M : Type*} [AddCommMonoid M] [MeasurableSpace M]
     (ν : Measure M) : ℕ → Measure M
   | 0 => dirac 0
@@ -101,6 +110,21 @@ theorem isProbabilityMeasure_convPow {ν : Measure M} [IsProbabilityMeasure ν] 
   induction n with
   | zero => rw [convPow_zero]; infer_instance
   | succ n ih => rw [convPow_succ]; have h := ih; infer_instance
+
+/-- A positive convolution power agrees with the left-convolution iterate used by
+older root hypotheses. Joint measurability and s-finiteness justify commutativity. -/
+theorem convPow_succ_eq_iterate [MeasurableAdd₂ M] {ν : Measure M} [SFinite ν] (n : ℕ) :
+    convPow ν (n + 1) = Nat.iterate (Measure.conv ν) n ν := by
+  induction n with
+  | zero => exact convPow_one
+  | succ n ih =>
+      have hS := sfinite_convPow (ν := ν) (n + 1)
+      calc
+        convPow ν (n + 1 + 1) = ν ∗ convPow ν (n + 1) := by
+          rw [convPow_succ, conv_comm]
+        _ = ν ∗ Nat.iterate (Measure.conv ν) n ν := by rw [ih]
+        _ = Nat.iterate (Measure.conv ν) (n + 1) ν :=
+          (Function.iterate_succ_apply' (Measure.conv ν) n ν).symm
 
 /-- Convolution powers add exponents: `ν^(m+n) = ν^m ∗ ν^n`. -/
 theorem convPow_add [MeasurableAdd₂ M] {ν : Measure M} [SFinite ν] (m n : ℕ) :
@@ -139,14 +163,41 @@ theorem convPow_conv [MeasurableAdd₂ M] {ν ρ : Measure M} [SFinite ν] [SFin
     rw [convPow_succ, ih, convPow_succ, convPow_succ]
     exact conv_mul_conv
 
-/-- A measure `μ` on an additive commutative measurable monoid is **infinitely
-divisible** if for every `n ≥ 1` there is a probability measure `ν` whose `n`-fold
+/-- A measure `μ` on an additive commutative monoid with jointly measurable addition is
+**infinitely divisible** if for every `n ≥ 1` there is a probability measure `ν` whose `n`-fold
 convolution power equals `μ`. Equivalently, the corresponding random variable `X`
 can, for every `n`, be written in law as the sum of `n` i.i.d. copies of some
 random variable `Y`. -/
 def IsInfinitelyDivisible {M : Type*} [AddCommMonoid M] [MeasurableSpace M]
+    [MeasurableAdd₂ M]
     (μ : Measure M) : Prop :=
   ∀ n : ℕ, n ≥ 1 → ∃ ν : Measure M, IsProbabilityMeasure ν ∧ μ = ν.convPow n
+
+/-- The root of order one shows that an infinitely divisible measure is a probability law. -/
+theorem IsInfinitelyDivisible.isProbabilityMeasure [MeasurableAdd₂ M] {μ : Measure M}
+    (hμ : IsInfinitelyDivisible μ) : IsProbabilityMeasure μ := by
+  obtain ⟨ν, hν, rfl⟩ := hμ 1 le_rfl
+  simpa only [convPow_one] using hν
+
+/-- Infinite divisibility agrees with the nonzero-order iterate formulation formerly used by
+`MetaMathlibExt.levy_Khintchin`. The order zero is excluded in both formulations. -/
+theorem isInfinitelyDivisible_iff_exists_iterate [MeasurableAdd₂ M] (μ : Measure M) :
+    IsInfinitelyDivisible μ ↔
+      ∀ n : ℕ, n ≠ 0 → ∃ ν : Measure M, IsProbabilityMeasure ν ∧
+        μ = Nat.iterate (Measure.conv ν) (n - 1) ν := by
+  constructor
+  · intro hμ n hn
+    obtain ⟨ν, hν, hroot⟩ := hμ n (Nat.one_le_iff_ne_zero.mpr hn)
+    refine ⟨ν, hν, ?_⟩
+    have hpow := convPow_succ_eq_iterate (ν := ν) (n - 1)
+    rw [Nat.sub_add_cancel (Nat.one_le_iff_ne_zero.mpr hn)] at hpow
+    exact hroot.trans hpow
+  · intro hμ n hn
+    obtain ⟨ν, hν, hroot⟩ := hμ n (Nat.one_le_iff_ne_zero.mp hn)
+    refine ⟨ν, hν, ?_⟩
+    have hpow := convPow_succ_eq_iterate (ν := ν) (n - 1)
+    rw [Nat.sub_add_cancel hn] at hpow
+    exact hroot.trans hpow.symm
 
 /-- Infinite divisibility is closed under convolution: if `μ` and `η` are
 infinitely divisible, so is `μ ∗ η`. Given `n`, take the `n`-th roots of

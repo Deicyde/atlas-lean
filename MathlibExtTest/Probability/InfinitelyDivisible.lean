@@ -17,6 +17,8 @@ Signature restatements of the public theorems in
 `MathlibExt.Probability.InfinitelyDivisible`, plus concrete computations:
 the third convolution power of `δ₂` on `ℝ` is `δ₆`, and the second
 convolution power of `Poisson(1)` is `Poisson(2)`.
+Additional checks cover orders zero and one, the zero Poisson rate, the probability consequence,
+and the equivalence with the previous nonzero-order iterate root condition.
 -/
 
 @[expose] public section
@@ -62,5 +64,31 @@ theorem convPow_add_restatement {ν : Measure ℝ} [SFinite ν] (m n : ℕ) :
 theorem convPow_conv_restatement {ν ρ : Measure ℝ} [SFinite ν] [SFinite ρ] (n : ℕ) :
     convPow (ν ∗ ρ) n = convPow ν n ∗ convPow ρ n :=
   convPow_conv n
+
+/-- Order zero is the empty-sum law and is excluded from the root requirement. -/
+theorem convPow_dirac_two_zero : convPow (dirac (2 : ℝ)) 0 = dirac 0 :=
+  convPow_zero _
+
+/-- The first convolution power preserves the original law. -/
+theorem convPow_dirac_two_one : convPow (dirac (2 : ℝ)) 1 = dirac 2 :=
+  convPow_one
+
+/-- Zero is an allowed Poisson rate, including at positive convolution orders. -/
+theorem convPow_poisson_zero_two :
+    convPow (poissonMeasure (0 : ℝ≥0)) 2 = poissonMeasure 0 := by
+  rw [show (2 : ℕ) = 1 + 1 from rfl, convPow_succ_poissonMeasure]
+  simp
+
+/-- No separate probability hypothesis is needed for an infinitely divisible law. -/
+theorem probability_of_isInfinitelyDivisible {μ : Measure ℝ}
+    (hμ : IsInfinitelyDivisible μ) : IsProbabilityMeasure μ :=
+  hμ.isProbabilityMeasure
+
+/-- The shared predicate retains the previous nonzero-order iterate interface. -/
+theorem isInfinitelyDivisible_iff_iterate (μ : Measure ℝ) :
+    IsInfinitelyDivisible μ ↔
+      ∀ n : ℕ, n ≠ 0 → ∃ ν : Measure ℝ, IsProbabilityMeasure ν ∧
+        μ = Nat.iterate (Measure.conv ν) (n - 1) ν :=
+  isInfinitelyDivisible_iff_exists_iterate μ
 
 end MathlibExtTest.Probability.InfinitelyDivisible
