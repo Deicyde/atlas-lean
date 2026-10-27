@@ -279,7 +279,7 @@ factors and the same multiset of exponents.
 This is the book's uniqueness lemma for the `p`-primary torsion subgroup: the
 existence of such a decomposition is Mathlib's
 `AddCommGroup.equiv_directSum_zmod_of_finite`, and batch 24 gives existence in
-invariant-factor form (`exists_invariant_factor_decomposition_finite`); neither
+invariant-factor form (`AddCommGroup.equiv_directSum_invariant_factors_of_finite`); neither
 states uniqueness. -/
 theorem elementary_divisors_unique {p : ℕ} (hp : p.Prime) {n m : ℕ}
     {e : Fin n → ℕ} {f : Fin m → ℕ} (he : ∀ i, 0 < e i) (hf : ∀ i, 0 < f i)
