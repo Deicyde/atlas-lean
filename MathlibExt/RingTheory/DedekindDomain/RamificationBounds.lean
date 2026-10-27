@@ -20,7 +20,7 @@ public import Mathlib.LinearAlgebra.Dimension.Localization
 This file ports ATLAS `NumberTheoryI` Corollary 5.36. In the book's AKLB
 setting (`A` a Dedekind domain with fraction field `K`, `L / K` a finite
 separable extension, `B` the integral closure of `A` in `L`), for each maximal
-ideal `𝔭` of `A` (the nonzero primes in a Dedekind domain) the number `g_𝔭`
+ideal `𝔭` of `A` the number `g_𝔭`
 of primes of `B` above `𝔭`, and the ramification indices `e_𝔮` and residue
 degrees `f_𝔮` of each `𝔮 ∣ 𝔭`, all lie in the
 interval `[1, n]` where `n = [L : K]`.
@@ -58,7 +58,7 @@ private theorem term_le_sum (p : Ideal R) [p.IsMaximal]
 theorem ramificationIdx_mem_Icc (p : Ideal R) [p.IsMaximal]
     (q : Ideal S) [q.IsPrime] [q.LiesOver p] :
     q.ramificationIdx R ∈ Set.Icc 1 (Module.finrank R S) := by
-  refine ⟨Ideal.ramificationIdx_pos q R, ?_⟩
+  refine ⟨Ideal.ramificationIdx_pos R q, ?_⟩
   rw [← Ideal.sum_ramification_inertia_eq_finrank p S]
   exact le_trans (Nat.le_mul_of_pos_right (q.ramificationIdx R)
     (Ideal.inertiaDeg_pos q R)) (term_le_sum p q)
@@ -71,7 +71,7 @@ theorem inertiaDeg_mem_Icc (p : Ideal R) [p.IsMaximal]
   refine ⟨Ideal.inertiaDeg_pos q R, ?_⟩
   rw [← Ideal.sum_ramification_inertia_eq_finrank p S]
   exact le_trans (Nat.le_mul_of_pos_left (q.inertiaDeg R)
-    (Ideal.ramificationIdx_pos q R)) (term_le_sum p q)
+    (Ideal.ramificationIdx_pos R q)) (term_le_sum p q)
 
 /-- The number of primes above `𝔭` lies in `[1, n]`, where
 `n = Module.finrank R S`. ATLAS `NumberTheoryI`, Corollary 5.36 (`g_𝔭` part). -/
@@ -82,7 +82,7 @@ theorem ncard_primesOver_mem_Icc (p : Ideal R) [p.IsMaximal] :
     Fintype.card_eq_sum_ones]
   refine Finset.sum_le_sum fun r _ => ?_
   exact Nat.one_le_iff_ne_zero.mpr
-    (Nat.mul_ne_zero (Ideal.ramificationIdx_pos r.1 R).ne'
+    (Nat.mul_ne_zero (Ideal.ramificationIdx_pos R r.1).ne'
       (Ideal.inertiaDeg_pos r.1 R).ne')
 
 /-- The three bounds of Corollary 5.36 packaged together: for `𝔮` above `𝔭`,
