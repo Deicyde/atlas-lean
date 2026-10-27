@@ -34,9 +34,10 @@ surjective map.
 
 Source: `v1/Atlas/AlgebraNotes/code/Characters.lean` (definitions
 `CharacterTheory.wedderburnIrrep` and theorem
-`CharacterTheory.wedderburnIrrep_isIrreducible`). The v1 statement is
-ported verbatim except for the name of the matrix-to-linear-map
-equivalence, which is `Matrix.toLinAlgEquiv'` in current Mathlib. The
+`CharacterTheory.wedderburnIrrep_isIrreducible`). The v1 theorem
+statement is ported verbatim; the only adaptation is factoring the
+composite algebra map in `wedderburnIrrep` through the auxiliary
+`wedderburnAlgHom`, so that the proof can refer to it directly. The
 corresponding block-size / sum-of-squares consequence was ported
 separately and does not depend on this result.
 -/
