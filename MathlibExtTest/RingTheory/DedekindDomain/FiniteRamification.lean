@@ -27,9 +27,7 @@ example : {P : HeightOneSpectrum B | ¬ Algebra.IsUnramifiedAt A P.asIdeal}.Fini
   Ideal.finite_ramified_primes
 
 /-- Generic application of the "primes of `A`" half of Corollary 12.20. -/
-example : {p : HeightOneSpectrum A |
-    ∃ P : HeightOneSpectrum B,
-      P.asIdeal.LiesOver p.asIdeal ∧ ¬ Algebra.IsUnramifiedAt A P.asIdeal}.Finite :=
+example : {p : HeightOneSpectrum A | ¬ Algebra.IsUnramifiedIn B p.asIdeal}.Finite :=
   Ideal.finite_ramified_primes_below
 
 /-- Concrete instance: only finitely many primes of `ℤ` are ramified over `ℤ`. -/
@@ -37,9 +35,7 @@ example : {P : HeightOneSpectrum ℤ | ¬ Algebra.IsUnramifiedAt ℤ P.asIdeal}.
   Ideal.finite_ramified_primes
 
 /-- Concrete instance: only finitely many primes of `ℤ` below are ramified in `ℤ`. -/
-example : {p : HeightOneSpectrum ℤ |
-    ∃ P : HeightOneSpectrum ℤ,
-      P.asIdeal.LiesOver p.asIdeal ∧ ¬ Algebra.IsUnramifiedAt ℤ P.asIdeal}.Finite :=
+example : {p : HeightOneSpectrum ℤ | ¬ Algebra.IsUnramifiedIn ℤ p.asIdeal}.Finite :=
   Ideal.finite_ramified_primes_below
 
 end MathlibExtTest.RingTheory.DedekindDomain.FiniteRamification

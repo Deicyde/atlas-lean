@@ -56,14 +56,19 @@ theorem Ideal.finite_ramified_primes :
 This is the "primes of `A`" half of ATLAS Corollary 12.20: a prime of `A`
 counts as ramified when some prime of `B` lying over it is ramified. -/
 theorem Ideal.finite_ramified_primes_below :
-    {p : HeightOneSpectrum A |
-      ∃ P : HeightOneSpectrum B,
-        P.asIdeal.LiesOver p.asIdeal ∧ ¬ Algebra.IsUnramifiedAt A P.asIdeal}.Finite := by
+    {p : HeightOneSpectrum A | ¬ Algebra.IsUnramifiedIn B p.asIdeal}.Finite := by
+  classical
   apply (Ideal.finite_ramified_primes (A := A) (B := B).image
     (fun P : HeightOneSpectrum B =>
       ⟨P.asIdeal.under A, inferInstance, mt Ideal.eq_bot_of_under_eq_bot P.ne_bot⟩)).subset
   intro p hp
-  obtain ⟨P, hPLies, hPram⟩ := hp
-  refine ⟨P, hPram, ?_⟩
+  change ¬ Algebra.IsUnramifiedIn B p.asIdeal at hp
+  simp only [Algebra.IsUnramifiedIn, Classical.not_forall] at hp
+  obtain ⟨P, hPprime, hPLies, hPram⟩ := hp
+  let _ : P.IsPrime := hPprime
+  let _ : P.LiesOver p.asIdeal := hPLies
+  let Q : HeightOneSpectrum B :=
+    ⟨P, hPprime, Ideal.ne_bot_of_liesOver_of_ne_bot p.ne_bot P⟩
+  refine ⟨Q, hPram, ?_⟩
   apply HeightOneSpectrum.ext
   exact hPLies.over.symm
