@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
 public import Mathlib.Algebra.DirectSum.Basic
 public import Mathlib.Algebra.Group.Equiv.Basic
 public import Mathlib.Data.Finset.Card

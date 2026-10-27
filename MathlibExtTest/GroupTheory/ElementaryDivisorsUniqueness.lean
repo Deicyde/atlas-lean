@@ -36,7 +36,7 @@ example : ¬ Nonempty ((⨁ i : Fin 1, ZMod (2 ^ ![2] i)) ≃+
   rintro ⟨eB⟩
   have h := elementary_divisors_unique (p := 2) (Nat.prime_two) (e := ![2]) (f := ![1, 1])
     (by decide) (by decide) (A := ⨁ i : Fin 1, ZMod (2 ^ ![2] i)) ⟨AddEquiv.refl _⟩ ⟨eB⟩
-  exact absurd h.1 (by norm_num)
+  exact absurd h.1 (by decide)
 
 /-- The two `2`-primary groups of order `16` with exponent multisets `{3, 1}`
 and `{2, 2}` are not isomorphic. -/
