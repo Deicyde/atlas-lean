@@ -17,7 +17,7 @@ Two ideals `I`, `J` of a Dedekind domain are *similar* if some nonzero
 principal ideal times one equals some (other) nonzero principal ideal times
 the other. Similarity is an equivalence relation, it is preserved under
 multiplication by a further ideal, and for nonzero ideals it is exactly
-equality of the corresponding classes in the class group. In particular, an
+equality of the corresponding classes in the class group. In particular, a nonzero
 ideal is similar to the unit ideal iff it is principal.
 
 Source: `v1/Atlas/AlgebraNotes`, `IdealFactorization.lean`, where only the
@@ -106,7 +106,7 @@ theorem idealsSimilar_iff_mk0_eq {I J : Ideal R} (hI : I ≠ ⊥) (hJ : J ≠ �
   · rintro ⟨a, b, ha, hb, h⟩
     exact ⟨a, b, ha, hb, h⟩
 
-/-- An ideal is similar to the unit ideal iff it is principal. -/
+/-- A nonzero ideal is similar to the unit ideal iff it is principal. -/
 theorem idealsSimilar_top_iff_isPrincipal {I : Ideal R} (hI : I ≠ ⊥) :
     IdealsSimilar I ⊤ ↔ I.IsPrincipal := by
   have htop : (⊤ : Ideal R) ≠ ⊥ := top_ne_bot
