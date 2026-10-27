@@ -13,15 +13,17 @@ public import Mathlib.RingTheory.ClassGroup.Basic
 /-!
 # Ideal similarity
 
-Two ideals `I`, `J` of a Dedekind domain are *similar* if some nonzero
+Two nonzero ideals `I`, `J` of a Dedekind domain are *similar* if some nonzero
 principal ideal times one equals some (other) nonzero principal ideal times
-the other. Similarity is an equivalence relation, it is preserved under
-multiplication by a further ideal, and for nonzero ideals it is exactly
-equality of the corresponding classes in the class group. In particular, a
-nonzero ideal is similar to the unit ideal iff it is principal.
+the other. On nonzero ideals, similarity is an equivalence relation, it is
+preserved under multiplication by a further nonzero ideal, and it is exactly
+equality of the corresponding classes in the class group. In particular, a nonzero
+ideal is similar to the unit ideal iff it is principal.
 
 Source: `v1/Atlas/AlgebraNotes`, `IdealFactorization.lean`, where only the
-definition and the multiplication lemma are given.
+definition and the multiplication lemma are given. The primary target in
+`targets.yaml` defines similarity only for nonzero ideals; the explicit guards
+below restore that restriction, which the archived Lean definition omitted.
 -/
 
 @[expose] public section
@@ -32,28 +34,29 @@ namespace IdealFactorization
 
 variable {R : Type*} [CommRing R] [IsDedekindDomain R]
 
-/-- Two ideals of a Dedekind domain are similar if some nonzero principal
+/-- Two nonzero ideals of a Dedekind domain are similar if some nonzero principal
 ideal times one equals some nonzero principal ideal times the other. -/
 def IdealsSimilar (I J : Ideal R) : Prop :=
-  ∃ a b : R, a ≠ 0 ∧ b ≠ 0 ∧ Ideal.span {a} * I = Ideal.span {b} * J
+  I ≠ ⊥ ∧ J ≠ ⊥ ∧
+    ∃ a b : R, a ≠ 0 ∧ b ≠ 0 ∧ Ideal.span {a} * I = Ideal.span {b} * J
 
-/-- Similarity is reflexive. -/
-theorem idealsSimilar_refl (I : Ideal R) : IdealsSimilar I I :=
-  ⟨1, 1, one_ne_zero, one_ne_zero, by simp⟩
+/-- Similarity is reflexive on nonzero ideals. -/
+theorem idealsSimilar_refl (I : Ideal R) (hI : I ≠ ⊥) : IdealsSimilar I I :=
+  ⟨hI, hI, 1, 1, one_ne_zero, one_ne_zero, by simp⟩
 
 omit [IsDedekindDomain R] in
 /-- Similarity is symmetric. -/
 theorem idealsSimilar_symm {I J : Ideal R} (h : IdealsSimilar I J) :
     IdealsSimilar J I := by
-  obtain ⟨a, b, ha, hb, h⟩ := h
-  exact ⟨b, a, hb, ha, h.symm⟩
+  obtain ⟨hI, hJ, a, b, ha, hb, h⟩ := h
+  exact ⟨hJ, hI, b, a, hb, ha, h.symm⟩
 
 /-- Similarity is transitive. -/
 theorem idealsSimilar_trans {I J K : Ideal R} (hIJ : IdealsSimilar I J)
     (hJK : IdealsSimilar J K) : IdealsSimilar I K := by
-  obtain ⟨a, b, ha, hb, hab⟩ := hIJ
-  obtain ⟨c, d, hc, hd, hcd⟩ := hJK
-  refine ⟨c * a, d * b, mul_ne_zero hc ha, mul_ne_zero hd hb, ?_⟩
+  obtain ⟨hI, _, a, b, ha, hb, hab⟩ := hIJ
+  obtain ⟨_, hK, c, d, hc, hd, hcd⟩ := hJK
+  refine ⟨hI, hK, c * a, d * b, mul_ne_zero hc ha, mul_ne_zero hd hb, ?_⟩
   calc Ideal.span {c * a} * I
       = (Ideal.span {c} * Ideal.span {a}) * I := by
         rw [Ideal.span_singleton_mul_span_singleton]
@@ -66,31 +69,22 @@ theorem idealsSimilar_trans {I J K : Ideal R} (hIJ : IdealsSimilar I J)
     _ = Ideal.span {d * b} * K := by
         rw [Ideal.span_singleton_mul_span_singleton]
 
+/-- Similarity is preserved under multiplication by a further nonzero ideal. -/
+theorem idealsSimilar_mul_right {I I' J : Ideal R} (h : IdealsSimilar I I')
+    (hJ : J ≠ ⊥) : IdealsSimilar (I * J) (I' * J) := by
+  obtain ⟨hI, hI', a, b, ha, hb, hab⟩ := h
+  exact ⟨mul_ne_zero hI hJ, mul_ne_zero hI' hJ, a, b, ha, hb,
+    by rw [← mul_assoc, ← mul_assoc, hab]⟩
+
 omit [IsDedekindDomain R] in
-/-- Similarity is preserved under multiplication by a further ideal. -/
-theorem idealsSimilar_mul_right {I I' J : Ideal R} (h : IdealsSimilar I I') :
-    IdealsSimilar (I * J) (I' * J) := by
-  obtain ⟨a, b, ha, hb, hab⟩ := h
-  exact ⟨a, b, ha, hb, by rw [← mul_assoc, ← mul_assoc, hab]⟩
+/-- No ideal is similar to the zero ideal. -/
+@[simp] theorem idealsSimilar_eq_bot_iff {I : Ideal R} : IdealsSimilar I ⊥ ↔ False := by
+  simp [IdealsSimilar]
 
-/-- An ideal similar to the zero ideal is itself zero. -/
-theorem idealsSimilar_eq_bot_iff {I : Ideal R} : IdealsSimilar I ⊥ ↔ I = ⊥ := by
-  constructor
-  · rintro ⟨a, _, ha, _, h⟩
-    have h' : Ideal.span {a} * I = Ideal.span {a} * ⊥ := by rw [h]; simp
-    exact mul_left_cancel₀ (mt Ideal.span_singleton_eq_bot.mp ha) h'
-  · intro h
-    rw [h]
-    exact idealsSimilar_refl ⊥
-
-/-- An ideal similar to a zero ideal on the other side is itself zero. -/
-theorem idealsSimilar_bot_iff {J : Ideal R} : IdealsSimilar ⊥ J ↔ J = ⊥ := by
-  constructor
-  · intro h
-    exact idealsSimilar_eq_bot_iff.mp (idealsSimilar_symm h)
-  · intro h
-    rw [h]
-    exact idealsSimilar_refl ⊥
+omit [IsDedekindDomain R] in
+/-- The zero ideal is not similar to any ideal. -/
+@[simp] theorem idealsSimilar_bot_iff {J : Ideal R} : IdealsSimilar ⊥ J ↔ False := by
+  simp [IdealsSimilar]
 
 /-- For nonzero ideals, similarity is exactly equality in the class group.
 The characterization is Mathlib's `ClassGroup.mk0_eq_mk0_iff`, restated in
@@ -101,10 +95,10 @@ theorem idealsSimilar_iff_mk0_eq {I J : Ideal R} (hI : I ≠ ⊥) (hJ : J ≠ �
         ClassGroup.mk0 ⟨J, mem_nonZeroDivisors_iff_ne_zero.mpr hJ⟩ := by
   rw [ClassGroup.mk0_eq_mk0_iff]
   constructor
-  · rintro ⟨a, b, ha, hb, h⟩
+  · rintro ⟨_, _, a, b, ha, hb, h⟩
     exact ⟨a, b, ha, hb, h⟩
   · rintro ⟨a, b, ha, hb, h⟩
-    exact ⟨a, b, ha, hb, h⟩
+    exact ⟨hI, hJ, a, b, ha, hb, h⟩
 
 /-- A nonzero ideal is similar to the unit ideal iff it is principal. -/
 theorem idealsSimilar_top_iff_isPrincipal {I : Ideal R} (hI : I ≠ ⊥) :
