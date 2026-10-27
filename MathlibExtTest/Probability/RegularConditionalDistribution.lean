@@ -279,4 +279,151 @@ example : RegularConditionalDistribution (fun b : Bool => Measure.dirac b) id
 
 end NullStates
 
+
+section RawSourceRefinement
+
+/-- At the null state `false`, this raw source family assigns one even to
+the empty set. At `true`, it agrees with the Dirac probability measure. -/
+noncomputable def rawNullStateFamily (b : Bool) (A : Set Bool) : ℝ :=
+  if b then (Measure.dirac true A).toReal else 1
+
+/-- The raw family satisfies all Lecture 26 source clauses, with the sole
+exceptional sample point `false` having zero probability. -/
+theorem rawNullStateFamily_source_clauses :
+    (∀ b A, 0 ≤ rawNullStateFamily b A ∧ rawNullStateFamily b A ≤ 1) ∧
+    (∀ {A : Set Bool}, MeasurableSet A →
+      Measurable[⊤] fun b => rawNullStateFamily b A) ∧
+    (∀ {A : Set Bool}, MeasurableSet A →
+      (fun b => rawNullStateFamily b A) =ᵐ[Measure.dirac true]
+        (Measure.dirac true)⟦(fun _ : Bool => true) ⁻¹' A | ⊤⟧) ∧
+    (∀ᵐ b ∂(Measure.dirac true : Measure Bool), ∃ ν : Measure Bool,
+      IsProbabilityMeasure ν ∧ ∀ A, MeasurableSet A → rawNullStateFamily b A = (ν A).toReal) := by
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · intro b A
+    cases b
+    · simp [rawNullStateFamily]
+    · change 0 ≤ (Measure.dirac true A).toReal ∧ (Measure.dirac true A).toReal ≤ 1
+      refine ⟨ENNReal.toReal_nonneg, ?_⟩
+      simpa only [measureReal_def] using
+        (measureReal_le_one (μ := Measure.dirac true) (s := A))
+  · intro A _
+    exact Measurable.of_comap_le le_top
+  · intro A hA
+    have heq : (fun b => rawNullStateFamily b A) =ᵐ[Measure.dirac true]
+        fun _ => (Measure.dirac true A).toReal := ae_at_true (by simp [rawNullStateFamily])
+    have htop : (⊤ : MeasurableSpace Bool) ≤ (inferInstance : MeasurableSpace Bool) := by
+      intro s _
+      exact (Set.to_countable s).measurableSet
+    exact heq.trans ((regularConditionalDistribution_dirac_const
+      (P := Measure.dirac true) (c := true) (𝒢 := ⊤) htop).ae_eq_condexp hA)
+  · exact ae_at_true ⟨Measure.dirac true, inferInstance,
+      fun A _ => by simp [rawNullStateFamily]⟩
+
+/-- The exceptional point is null, and its empty-set value is one. -/
+theorem rawNullStateFamily_exceptional_empty :
+    (Measure.dirac true : Measure Bool) {false} = 0 ∧ rawNullStateFamily false ∅ = 1 := by
+  simp [rawNullStateFamily]
+
+/-- This valid raw source family has no pointwise measure-valued representation. -/
+theorem rawNullStateFamily_not_pointwise_measure :
+    ¬ ∃ rcd : Bool → Measure Bool, ∀ b A, MeasurableSet A →
+      (rcd b A).toReal = rawNullStateFamily b A := by
+  rintro ⟨rcd, hrcd⟩
+  have h := hrcd false ∅ MeasurableSet.empty
+  simp [rawNullStateFamily] at h
+
+/-- The general-G measure-valued witness supplies the raw source existence
+clauses without asserting representation of every raw family. -/
+theorem measure_valued_witness_gives_raw_family
+    [StandardBorelSpace Ω] [Nonempty Ω] [IsFiniteMeasure μ]
+    {𝒢 : MeasurableSpace α} {Y : α → Ω} (h𝒢 : 𝒢 ≤ mα)
+    (hY : @Measurable α Ω mα ‹MeasurableSpace Ω› Y) :
+    ∃ p : α → Set Ω → ℝ,
+      (∀ a A, 0 ≤ p a A ∧ p a A ≤ 1) ∧
+      (∀ {A : Set Ω}, MeasurableSet A → Measurable[𝒢] fun a => p a A) ∧
+      (∀ {A : Set Ω}, MeasurableSet A →
+        (fun a => p a A) =ᵐ[μ] μ⟦Y ⁻¹' A | 𝒢⟧) ∧
+      (∀ᵐ a ∂μ, ∃ ν : Measure Ω, IsProbabilityMeasure ν ∧
+        ∀ A, MeasurableSet A → p a A = (ν A).toReal) := by
+  obtain ⟨rcd, hrcd⟩ := exists_regularConditionalDistribution_family_of_le (μ := μ) h𝒢 hY
+  refine ⟨fun a A => (rcd a A).toReal, ?_, ?_, hrcd.ae_eq_condexp, ?_⟩
+  · intro a A
+    refine ⟨ENNReal.toReal_nonneg, ?_⟩
+    have hbound : rcd a A ≤ 1 :=
+      (measure_mono (Set.subset_univ A)).trans (hrcd.mass_le_one a)
+    simpa using ENNReal.toReal_mono (by simp : (1 : ENNReal) ≠ ⊤) hbound
+  · exact fun hA => (hrcd.measurable_eval hA).ennreal_toReal
+  · filter_upwards [hrcd.ae_isProbabilityMeasure] with a ha
+    exact ⟨rcd a, ha, fun A _ => rfl⟩
+
+end RawSourceRefinement
+
+section KernelMeasurabilitySetup
+
+/-- A constant Markov kernel with explicitly top conditioning/outcome spaces. -/
+noncomputable def boolTopDiracKernel :
+    @Kernel Bool Bool (⊤ : MeasurableSpace Bool) (⊤ : MeasurableSpace Bool) :=
+  @Kernel.const Bool Bool (⊤ : MeasurableSpace Bool) (⊤ : MeasurableSpace Bool)
+    (@Measure.dirac Bool (⊤ : MeasurableSpace Bool) true)
+
+/-- The identity is not measurable from bottom to top; both spaces are explicit. -/
+theorem bool_id_not_measurable_bot_top :
+    ¬ @Measurable Bool Bool (⊥ : MeasurableSpace Bool) (⊤ : MeasurableSpace Bool) id := by
+  intro h
+  have htop : @MeasurableSet Bool (⊤ : MeasurableSpace Bool) ({true} : Set Bool) := by trivial
+  have hbot := h htop
+  change @MeasurableSet Bool (⊥ : MeasurableSpace Bool) ({true} : Set Bool) at hbot
+  rcases MeasurableSpace.measurableSet_bot_iff.mp hbot with hempty | huniv
+  · have htrue : true ∈ ({true} : Set Bool) := by simp
+    rw [hempty] at htrue
+    simpa using htrue
+  · have hfalse : false ∈ ({true} : Set Bool) := by rw [huniv]; simp
+    simpa using hfalse
+
+/-- The old kernel fields accept a nonmeasurable conditioning map when the
+source measure is zero on the bottom measurable space. -/
+theorem kernel_nonmeasurable_conditioning_zero_old_fields :
+    IsMarkovKernel boolTopDiracKernel ∧
+    (∀ {s : Set Bool}, @MeasurableSet Bool (⊤ : MeasurableSpace Bool) s →
+      (fun a : Bool => (boolTopDiracKernel (id a)).real s) =ᵐ[(0 : @Measure Bool ⊥)]
+        (0 : @Measure Bool ⊥)⟦(fun _ : Bool => true) ⁻¹' s |
+          MeasurableSpace.comap (id : Bool → Bool) (⊤ : MeasurableSpace Bool)⟧) := by
+  refine ⟨?_, fun _ => by
+    rw [ae_zero]
+    change True
+    trivial⟩
+  change IsMarkovKernel (@Kernel.const Bool Bool ⊤ ⊤ (@Measure.dirac Bool ⊤ true))
+  infer_instance
+
+/-- The explicit conditioning-measurability field rejects this zero-measure case. -/
+theorem kernel_nonmeasurable_conditioning_zero_rejected :
+    ¬ @IsRegularConditionalDistribution Bool Bool Bool ⊥ ⊤ ⊤
+      boolTopDiracKernel (fun _ => true) id (0 : @Measure Bool ⊥) := by
+  intro h
+  exact bool_id_not_measurable_bot_top h.measurable_conditioning
+
+/-- The old fields also accept a nonmeasurable target with a measurable
+constant conditioning map under the explicit bottom-space zero measure. -/
+theorem kernel_nonmeasurable_target_zero_old_fields :
+    IsMarkovKernel boolTopDiracKernel ∧
+    (∀ {s : Set Bool}, @MeasurableSet Bool (⊤ : MeasurableSpace Bool) s →
+      (fun a : Bool => (boolTopDiracKernel true).real s) =ᵐ[(0 : @Measure Bool ⊥)]
+        (0 : @Measure Bool ⊥)⟦(id : Bool → Bool) ⁻¹' s |
+          MeasurableSpace.comap (fun _ : Bool => true) (⊤ : MeasurableSpace Bool)⟧) := by
+  refine ⟨?_, fun _ => by
+    rw [ae_zero]
+    change True
+    trivial⟩
+  change IsMarkovKernel (@Kernel.const Bool Bool ⊤ ⊤ (@Measure.dirac Bool ⊤ true))
+  infer_instance
+
+/-- The target-measurability field rejects the independent target-map defect. -/
+theorem kernel_nonmeasurable_target_zero_rejected :
+    ¬ @IsRegularConditionalDistribution Bool Bool Bool ⊥ ⊤ ⊤
+      boolTopDiracKernel id (fun _ => true) (0 : @Measure Bool ⊥) := by
+  intro h
+  exact bool_id_not_measurable_bot_top h.measurable_target
+
+end KernelMeasurabilitySetup
+
 end MathlibExtTest.Probability.RegularConditionalDistribution

@@ -11,44 +11,47 @@ module
 public import Mathlib.Probability.Kernel.CondDistrib
 
 /-!
-# Regular conditional distributions
+# Measure-valued regular conditional distribution refinements
 
-A regular conditional distribution supplies conditioning-measurable versions
-of conditional probabilities that form a probability measure almost surely.
-The family form is indexed by a sample point; the kernel form is indexed by
-the value of a conditioning random variable.
+This module provides a strengthened, measure-valued refinement of the
+Lecture 26 raw set-function definition in
+`v1/Atlas/TheoryOfProbability/targets.yaml`. The archived developments are
+`RegularConditionalDistribution.lean` and `ExistRegularCondProb.lean` in
+`v1/Atlas/TheoryOfProbability/code/`.
 
-## Source and corrections
+The source permits `[0,1]`-valued set functions that form probability
+measures only almost everywhere. Here `rcd ω : Measure S` imposes empty-set
+mass zero and countable additivity at every sample point, including null
+states. Thus not every source family has a pointwise representation in
+this API. The retained family also records conditioning measurability,
+ambient target measurability, and pointwise `[0,1]` bounds; probability
+normalization remains an almost-everywhere condition.
 
-The Lecture 26 definition and existence targets in
-`v1/Atlas/TheoryOfProbability/targets.yaml` are formalized using Mathlib's
-`condDistrib`. The archived files are `RegularConditionalDistribution.lean`
-and `ExistRegularCondProb.lean` in `v1/Atlas/TheoryOfProbability/code/`.
-
-The archived family predicate omitted conditioning measurability and the
-pointwise `[0,1]` range. The family predicate here records those conditions,
-the sub-sigma-algebra inclusion, and target-map measurability. Its original
-almost-everywhere probability condition is retained. Finite measures are
+The general-G measure-valued witness implies the source existence theorem:
+evaluate each witness measure on measurable sets and take `toReal`. Its
+evaluations have the source's range, measurability, per-set a.e. conditional
+expectation, and a.e. probability-measure clauses. This does not identify
+all raw source families with measure-valued families. Finite measures are
 allowed, extending the source's probability-space setting.
 
 ## Scope and Mathlib reuse
 
-* `RegularConditionalDistribution`: family form for a sub-sigma-algebra.
-* `IsRegularConditionalDistribution`: Markov-kernel form for `σ(X)`.
+* `RegularConditionalDistribution`: strengthened measure-valued family.
+* `IsRegularConditionalDistribution`: measurable conditioning/target maps
+  with a Markov kernel for `σ(X)`.
 * `condDistrib_isRegularConditionalDistribution`: canonical kernel packaging.
 * `exists_regularConditionalDistribution`: kernel-form existence.
-* `exists_regularConditionalDistribution_family_of_le`: family-form existence
-  for any sub-sigma-algebra `𝒢 ≤ mα`.
-* `exists_regularConditionalDistribution_family`: the original `σ(X)`
-  family statement, as a corollary of the general result.
+* `exists_regularConditionalDistribution_family_of_le`: measure-valued
+  family existence for any `𝒢 ≤ mα`.
+* `exists_regularConditionalDistribution_family`: the `σ(X)` corollary.
 
-For arbitrary `𝒢`, the conditioning map is `id` from the ambient sample space
-to the same type carrying `𝒢`. The inclusion makes this map measurable, so
-the existing `condDistrib` API applies without a countability assumption on
-`𝒢`. The target is nonempty and standard Borel, and the measure is finite.
-Equality with conditional expectation is asserted almost everywhere for each
-measurable target set, with no pointwise kernel claim at null conditioning
-values. No uniqueness theorem is added.
+The general-G witness uses `id : (α, mα) → (α, 𝒢)` as the conditioning map
+in Mathlib's `condDistrib`. The outcome space is nonempty and standard
+Borel; the measure is finite. No countability assumption on `𝒢` is added.
+Conditional-expectation equality is per measurable target set and almost
+everywhere, so its exceptional set may depend on that target set. The a.e.
+probability condition uses a single full-measure set of sample points.
+No pointwise kernel identity at null conditioning values is claimed.
 -/
 
 @[expose] public section
@@ -60,11 +63,14 @@ namespace ProbabilityTheory
 variable {α β Ω : Type*} {mα : MeasurableSpace α} {mβ : MeasurableSpace β}
   [MeasurableSpace Ω] {μ : Measure α}
 
-/-- **Regular conditional distribution (family form).** The target map is
-ambient-measurable and `𝒢` is a sub-sigma-algebra. Every measurable-set
-evaluation is `𝒢`-measurable and lies in `[0,1]` at every sample point; it
-agrees almost everywhere with the corresponding conditional probability.
-The family is a probability measure almost everywhere. -/
+/-- **Strengthened measure-valued refinement of a regular conditional
+distribution.** Each sample-point value is a measure, enforcing countable
+additivity and empty-set mass zero even at null states. The target is
+ambient-measurable, `𝒢` is a sub-sigma-algebra, and every measurable-set
+evaluation is `𝒢`-measurable with values in `[0,1]` pointwise. Conditional
+expectation agrees a.e. for each measurable set, and probability
+normalization is required a.e. This is stricter than the Lecture 26 raw
+set-function definition at exceptional sample points. -/
 structure RegularConditionalDistribution
     {Ω : Type*} {mΩ : MeasurableSpace Ω} {S : Type*} [MeasurableSpace S]
     (rcd : Ω → Measure S) (X : Ω → S) (𝒢 : MeasurableSpace Ω)
@@ -79,12 +85,14 @@ structure RegularConditionalDistribution
   ae_isProbabilityMeasure : ∀ᵐ ω ∂P, IsProbabilityMeasure (rcd ω)
 
 /-- **Regular conditional distribution (kernel form).** A Markov kernel
-`κ : Kernel β Ω` is a regular conditional distribution of `Y : α → Ω` given
-`X : α → β` under `μ` if for every measurable `s ⊆ Ω`, the function
+`κ : Kernel β Ω` is a regular conditional distribution of measurable `Y : α → Ω` given
+measurable `X : α → β` under `μ` if for every measurable `s ⊆ Ω`, the function
 `a ↦ κ (X a) s` is a version of the conditional probability
 `μ(Y ∈ s | σ(X))`. -/
 structure IsRegularConditionalDistribution
     (κ : Kernel β Ω) (Y : α → Ω) (X : α → β) (μ : Measure α) : Prop where
+  measurable_conditioning : @Measurable α β mα mβ X
+  measurable_target : @Measurable α Ω mα ‹MeasurableSpace Ω› Y
   isMarkovKernel : IsMarkovKernel κ
   ae_eq_condExp : ∀ {s : Set Ω}, MeasurableSet s →
     (fun a => (κ (X a)).real s) =ᵐ[μ] μ⟦Y ⁻¹' s | mβ.comap X⟧
@@ -97,6 +105,8 @@ theorem condDistrib_isRegularConditionalDistribution
     {X : α → β} {Y : α → Ω}
     (hX : Measurable X) (hY : Measurable Y) :
     IsRegularConditionalDistribution (condDistrib Y X μ) Y X μ where
+  measurable_conditioning := hX
+  measurable_target := hY
   isMarkovKernel := inferInstance
   ae_eq_condExp hs := condDistrib_ae_eq_condExp hX hY hs
 
@@ -112,7 +122,7 @@ theorem exists_regularConditionalDistribution
     ∃ κ : Kernel β Ω, IsRegularConditionalDistribution κ Y X μ :=
   ⟨condDistrib Y X μ, condDistrib_isRegularConditionalDistribution hX hY⟩
 
-/-- **Family-form existence for an arbitrary sub-sigma-algebra.** A measurable
+/-- **Measure-valued refinement existence for an arbitrary sub-sigma-algebra.** A measurable
 map into a nonempty standard Borel space has a regular conditional
 distribution given any `𝒢 ≤ mα`, under a finite measure. The witness is
 Mathlib's `condDistrib` with conditioning map `id` into the space carrying `𝒢`. -/
@@ -138,7 +148,7 @@ theorem exists_regularConditionalDistribution_family_of_le
         (condDistrib_ae_eq_condExp (mβ := 𝒢) (μ := μ) hid hY hA)
     ae_isProbabilityMeasure := Filter.Eventually.of_forall fun _ => inferInstance }
 
-/-- **Family-form existence for `σ(X)`.** This retains the original public
+/-- **Measure-valued refinement existence for `σ(X)`.** This retains the original public
 statement and follows from existence for arbitrary sub-sigma-algebras. -/
 theorem exists_regularConditionalDistribution_family
     [StandardBorelSpace Ω] [Nonempty Ω] [IsFiniteMeasure μ]
