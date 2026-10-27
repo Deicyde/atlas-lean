@@ -31,15 +31,12 @@ by injectivity of `ContinuousMap.toLp` (Haar measure on the circle is an
 open-pos measure). This route is independent of Fejér's theorem: it does
 not use Cesàro means.
 
-Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/FourierSeries.lean`
-(Theorem (Fejér), April 22, 2021). Uniqueness of Fourier coefficients is the
-companion to Fejér's theorem in that section: Fejér's theorem recovers `f`
-as the uniform limit of its Cesàro means, built from the same coefficients.
-It is not stated as a separate target in v1, and it is not in the pinned
-Mathlib (`fourierCoeff` has no uniqueness / injectivity statement there)
-nor in the earlier batches of this series (batch 1 proves Fejér's theorem
-without uniqueness; batch 24 proves weak convergence of orthonormal
-sequences without uniqueness).
+Provenance: these declarations are new corollaries of Mathlib's complete
+Fourier basis and coefficient API. The contextual archived file
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/FourierSeries.lean` and its
+Theorem (Fejér) target (April 22, 2021) formalize uniform convergence of
+Cesàro means. The uniqueness statements proved here have no corresponding
+v1 target or archived declaration.
 -/
 
 @[expose] public section
@@ -107,9 +104,9 @@ theorem fourierCoeff_injective :
 
 /-- **Uniqueness on an interval.** Let `f : ℝ → ℂ` be continuous with
 `f a = f (a + T)`. If every Fourier coefficient of `f` on `[a, a + T]`
-vanishes, then `f` vanishes on the whole interval `[a, a + T]`. This is the
-form in which the book states Fejér's theorem (on `[-π, π]` with
-`f (-π) = f π`). -/
+vanishes, then `f` vanishes on the whole interval `[a, a + T]`. This is an
+interval corollary of circle uniqueness; the endpoint condition gives a
+continuous function on `AddCircle T`. -/
 theorem eq_zero_of_fourierCoeffOn_eq_zero {a T : ℝ} (hT : 0 < T)
     {f : ℝ → ℂ} (hf : Continuous f) (hper : f a = f (a + T))
     (h : ∀ n : ℤ,
