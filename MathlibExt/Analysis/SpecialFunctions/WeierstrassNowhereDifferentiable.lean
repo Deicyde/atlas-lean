@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import MathlibExt.Analysis.SpecialFunctions.CosineOscillation
 public import MathlibExt.Analysis.SpecialFunctions.WeierstrassFunction
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Slope
@@ -27,19 +28,6 @@ produces points `y` arbitrarily close to `c` whose difference quotients
 are arbitrarily large, contradicting the convergence of the slope to a
 finite derivative.
 
-## Unify-on-rebase note
-
-This file is self-contained against the base commit, which does not yet
-contain the cosine-oscillation API. The two `private` oscillation lemmas
-below (`exists_cos_sub_cos_ge_one_aux`, `exists_cos_oscillation_aux`)
-duplicate the public API of
-`MathlibExt/Analysis/SpecialFunctions/CosineOscillation.lean`
-(PR #288, merged after the base commit): on rebase onto a main containing
-that file, delete both private lemmas, add the import of
-`CosineOscillation.lean`, and use `Real.exists_cos_oscillation` in
-`weierstrassFun_slope_lower_bound`. Nothing else in this file depends on
-the private lemmas.
-
 ## Main results
 
 * `Real.reverse_triangle_three`: `|a + b + c| ≥ |a| - |b| - |c|`.
@@ -52,8 +40,8 @@ Source: `v1/Atlas/RealAnalysis/targets.yaml`, Theorem (Weierstrass),
 and `v1/Atlas/RealAnalysis/code/Derivatives/Weierstrass.lean`
 (`reverse_triangle_three`, `weierstrass_slope_lower_bound`,
 `weierstrass_nowhere_differentiable`). The cosine-oscillation input to
-the slope lemma is Theorem I of the same v1 file; see the
-unify-on-rebase note above.
+the slope lemma is Theorem I of the same v1 file, available as
+`Real.exists_cos_oscillation` in `CosineOscillation.lean`.
 -/
 
 @[expose] public section
@@ -70,55 +58,6 @@ theorem reverse_triangle_three (a b c : ℝ) : |a + b + c| ≥ |a| - |b| - |c| :
   rw [h3] at h1
   linarith
 
-/-- Cosine oscillation (phase-shift form), private copy of
-`Real.exists_cos_sub_cos_ge_one` from `CosineOscillation.lean`
-(see the unify-on-rebase note in the module docstring). For every angle
-`θ` there is a phase shift `φ` with `π < φ < 3 * π` such that `cos`
-moves by at least `1`: `1 ≤ |cos θ - cos (θ + φ)|`. -/
-private theorem exists_cos_sub_cos_ge_one_aux (θ : ℝ) :
-    ∃ φ : ℝ, π < φ ∧ φ < 3 * π ∧ 1 ≤ |cos θ - cos (θ + φ)| := by
-  have hpi : 0 < π := pi_pos
-  have h1 : cos (θ + 3 * π / 2) = sin θ := by
-    have h : θ + 3 * π / 2 = θ + π + π / 2 := by ring
-    rw [h, cos_add_pi_div_two, sin_add_pi, neg_neg]
-  have h2 : cos (θ + 5 * π / 2) = -sin θ := by
-    have h : θ + 5 * π / 2 = (θ + 2 * π) + π / 2 := by ring
-    rw [h, cos_add_pi_div_two, sin_add_two_pi]
-  by_cases hcase : 1 ≤ |cos θ - sin θ|
-  · exact ⟨3 * π / 2, by linarith, by linarith, by rw [h1]; exact hcase⟩
-  · push Not at hcase
-    refine ⟨5 * π / 2, by linarith, by linarith, ?_⟩
-    rw [h2, sub_neg_eq_add]
-    by_contra hcon
-    push Not at hcon
-    have hkey : (cos θ - sin θ) ^ 2 + (cos θ + sin θ) ^ 2 = 2 := by
-      have h := sin_sq_add_cos_sq θ
-      nlinarith
-    have hlt1 : (cos θ - sin θ) ^ 2 < 1 :=
-      (_root_.sq_lt_one_iff_abs_lt_one _).mpr hcase
-    have hlt2 : (cos θ + sin θ) ^ 2 < 1 :=
-      (_root_.sq_lt_one_iff_abs_lt_one _).mpr hcon
-    linarith
-
-/-- Cosine oscillation (scaled form), private copy of
-`Real.exists_cos_oscillation` from `CosineOscillation.lean`
-(see the unify-on-rebase note in the module docstring). For every `c`
-and every positive natural `K`, there is a point `y` in
-`(c + π / K, c + 3 * π / K)` with `|cos (K * c) - cos (K * y)| ≥ 1`. -/
-private theorem exists_cos_oscillation_aux (c : ℝ) (K : ℕ) (hK : 0 < K) :
-    ∃ y : ℝ, c + π / K < y ∧ y < c + 3 * π / K ∧
-      1 ≤ |cos ((K : ℝ) * c) - cos ((K : ℝ) * y)| := by
-  have hKpos : (0 : ℝ) < K := Nat.cast_pos.mpr hK
-  obtain ⟨φ, hφlo, hφhi, hosc⟩ := exists_cos_sub_cos_ge_one_aux ((K : ℝ) * c)
-  refine ⟨c + φ / K, ?_, ?_, ?_⟩
-  · have h : π / (K : ℝ) < φ / K := by gcongr
-    linarith
-  · have h : φ / (K : ℝ) < (3 * π) / K := by gcongr
-    linarith
-  · have hKy : (K : ℝ) * (c + φ / (K : ℝ)) = (K : ℝ) * c + φ := by field_simp
-    rw [hKy]
-    exact hosc
-
 /-- **Slope blow-up lemma.** For every real `c` and every natural number
 `n`, there exists a point `y ≠ c` with `|y - c| < 3π / 160ⁿ` such that
 the difference quotient of the Weierstrass function between `y` and `c`
@@ -130,7 +69,7 @@ theorem weierstrassFun_slope_lower_bound (c : ℝ) (n : ℕ) :
       |(weierstrassFun y - weierstrassFun c) / (y - c)| ≥
         (40 : ℝ) ^ n / (117 * π) := by
   have hK : (0 : ℕ) < 160 ^ n := by positivity
-  obtain ⟨y, hylb, hyub, hcos_osc⟩ := exists_cos_oscillation_aux c (160 ^ n) hK
+  obtain ⟨y, hylb, hyub, hcos_osc⟩ := Real.exists_cos_oscillation c (160 ^ n) hK
   push_cast at hylb hyub hcos_osc
   have hpi_pos : (0 : ℝ) < π := pi_pos
   have h160n_pos : (0 : ℝ) < (160 : ℝ) ^ n := by positivity
