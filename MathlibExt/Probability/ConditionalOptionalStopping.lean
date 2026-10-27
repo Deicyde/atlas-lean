@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import MathlibExt.Probability.OptionalStoppingUniformIntegrable
 public import Mathlib.Probability.Martingale.Convergence
 public import Mathlib.Probability.Martingale.OptionalSampling
 public import Mathlib.Probability.Martingale.OptionalStopping
@@ -17,26 +18,31 @@ public import Mathlib.MeasureTheory.Function.UniformIntegrable
 public import Mathlib.MeasureTheory.PiSystem
 
 /-!
-# Conditional optional stopping for uniformly integrable martingales
+# Conditional optional stopping with a uniformly integrable stopped process
 
-For a uniformly integrable martingale `f` and stopping times `L ≤ M`
-(possibly infinite), the stopped value at `L` is the conditional
-expectation of the stopped value at `M` given `ℱ_L`:
+For a real martingale `f` and stopping times `L ≤ M` (possibly infinite),
+assume only that the stopped process `n ↦ f_{M ∧ n}` is uniformly integrable.
+Then the stopped value at `L` is the conditional expectation of the stopped
+value at `M` given `ℱ_L`:
 
-`f_L =ᵐ μ[f_M | ℱ_L]`.
+`f_L =ᵐ μ[f_M | ℱ_L]`. The values use the existing
+`stoppedValueAtTop` from `OptionalStoppingUniformIntegrable`.
 
 ## Source
 
-This formalizes the conditional form of the general optional stopping
-theorem (Lecture 29) of `v1/Atlas/TheoryOfProbability/targets.yaml`:
+The general optional stopping theorem (Lecture 29) of
+`v1/Atlas/TheoryOfProbability/targets.yaml` states:
 "If `L ≤ M` are stopping times and `Y_{M ∧ n}` is a uniformly integrable
-submartingale, then `EY_L ≤ EY_M` and `Y_L ≤ E(Y_M | ℱ_L)`." The
-bounded conditional form, the martingale expectation equalities, and the
-submartingale expectation inequality were ported in earlier batches; the
-unbounded conditional form for martingales is proved here. The proof is
-new: the stopped value at an arbitrary stopping time is identified with
-the conditional expectation of the `L¹` limit, via Lévy's upward theorem
-for the filtration `n ↦ ℱ_{τ ∧ n}`.
+submartingale, then `EY_L ≤ EY_M` and `Y_L ≤ E(Y_M | ℱ_L)`."
+This file proves the conditional conclusion for martingales, with equality
+and the source's stopped-process UI hypothesis. The submartingale conditional
+inequality and the expectation conclusion are not proved here.
+
+The limit-process lemma assumes UI of the whole process. Applying that
+lemma to `stoppedProcess f M` gives the main result with UI only after
+stopping at `M`. Its proof identifies stopped values with conditional
+expectations of the `L¹` limit, via Lévy's upward theorem for the filtration
+`n ↦ ℱ_{τ ∧ n}`.
 -/
 
 @[expose] public section
@@ -49,18 +55,6 @@ namespace MeasureTheory
 
 variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]
   {ℱ : Filtration ℕ m0} [SigmaFiniteFiltration μ ℱ] {f : ℕ → Ω → ℝ}
-
-/-- The value of a process `f` at a stopping time `τ : Ω → WithTop ℕ` that may
-take the value `⊤`. On `{τ = ⊤}` the value is the pointwise limit
-`limUnder atTop (fun n => f n ω)`; otherwise it is `f (τ ω) ω`. This is
-the same function as `MeasureTheory.stoppedValueAtTop` in the earlier
-batches on uniformly integrable optional stopping, under a distinct name:
-those batches each define `stoppedValueAtTop` identically, so reusing
-that name here would create a third duplicate definition on rebase. A
-future unification should keep one of these definitions and delete the
-others. -/
-noncomputable def stoppedValueAtInfinity (f : ℕ → Ω → ℝ) (τ : Ω → WithTop ℕ) : Ω → ℝ :=
-  fun ω => if τ ω = ⊤ then limUnder atTop (fun n => f n ω) else stoppedValue f τ ω
 
 /-- The filtration `n ↦ ℱ_{τ ∧ n}` obtained by stopping the filtration
 at the stopping time `τ` and then at the deterministic time `n`. -/
@@ -289,7 +283,7 @@ expectations with `μ[ℱ.limitProcess f μ | ⨆ n, ℱ_{τ ∧ n}] =
 theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
     (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
     {τ : Ω → WithTop ℕ} (hτ : IsStoppingTime ℱ τ) :
-    stoppedValueAtInfinity f τ =ᵐ[μ] μ[ℱ.limitProcess f μ | hτ.measurableSpace] := by
+    stoppedValueAtTop f τ =ᵐ[μ] μ[ℱ.limitProcess f μ | hτ.measurableSpace] := by
   haveI : SigmaFiniteFiltration μ (hτ.stoppedFiltration ℱ) :=
     ⟨fun n => IsStoppingTime.sigmaFinite_stopping_time (hτ.min_const n)⟩
   -- Bounded optional sampling at `τ ∧ n`.
@@ -316,7 +310,7 @@ theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
             (ℱ.le n)
   -- The stopped process converges a.e. to the stopped value at `τ`.
   have hconv : ∀ᵐ ω ∂μ, Tendsto (fun n => stoppedProcess f τ n ω) atTop
-      (𝓝 (stoppedValueAtInfinity f τ ω)) := by
+      (𝓝 (stoppedValueAtTop f τ ω)) := by
     filter_upwards [hf.submartingale.ae_tendsto_limitProcess_of_uniformIntegrable hui]
       with ω hω
     by_cases hτtop : τ ω = ⊤
@@ -328,14 +322,14 @@ theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
         rw [hτtop, min_top_right]
         rfl
       rw [hfun]
-      have hval : stoppedValueAtInfinity f τ ω = ℱ.limitProcess f μ ω := by
+      have hval : stoppedValueAtTop f τ ω = ℱ.limitProcess f μ ω := by
         show (if τ ω = ⊤ then limUnder atTop (fun n => f n ω)
           else stoppedValue f τ ω) = ℱ.limitProcess f μ ω
         rw [ite_eq_left hτtop, hlim]
       rw [hval]
       exact hω
     · obtain ⟨k, hk⟩ := WithTop.ne_top_iff_exists.mp hτtop
-      have hval : stoppedValueAtInfinity f τ ω = f k ω := by
+      have hval : stoppedValueAtTop f τ ω = f k ω := by
         show (if τ ω = ⊤ then limUnder atTop (fun n => f n ω)
           else stoppedValue f τ ω) = f k ω
         rw [ite_eq_right hτtop]
@@ -360,30 +354,65 @@ theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_limitProcess
   filter_upwards [hconv, hlevy, hstep_all] with ω hω hlevyω hstepω
   have hlim1 : Tendsto
       (fun n => (μ[ℱ.limitProcess f μ | (hτ.stoppedFiltration ℱ) n]) ω) atTop
-      (𝓝 (stoppedValueAtInfinity f τ ω)) :=
+      (𝓝 (stoppedValueAtTop f τ ω)) :=
     hω.congr (fun n => hstepω n)
-  have hfinal : stoppedValueAtInfinity f τ ω
+  have hfinal : stoppedValueAtTop f τ ω
       = (μ[ℱ.limitProcess f μ | ⨆ n, (hτ.stoppedFiltration ℱ) n]) ω :=
     tendsto_nhds_unique hlim1 hlevyω
   rwa [hτ.iSup_stoppedFiltration ℱ] at hfinal
 
-/-- **Conditional optional stopping for uniformly integrable
-martingales.** For stopping times `L ≤ M` (possibly infinite),
-`f_L =ᵐ μ[f_M | ℱ_L]`: the stopped value at `L` is the conditional
-expectation of the stopped value at `M` given `ℱ_L`. This is the
-conditional form of the general optional stopping theorem of Lecture 29
-for martingales at arbitrary stopping times; Mathlib only has the
-bounded-stopping-time form. -/
-theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+/-- Stopping at `M` does not change the value at `L ≤ M`, including
+infinite values: on `{L = ⊤}`, the inequality forces `M = ⊤`. -/
+theorem stoppedValueAtTop_stoppedProcess_of_le
+    {L M : Ω → WithTop ℕ} (hLM : L ≤ M) :
+    stoppedValueAtTop (stoppedProcess f M) L = stoppedValueAtTop f L := by
+  funext ω
+  by_cases hLtop : L ω = ⊤
+  · have hMtop : M ω = ⊤ := top_le_iff.mp (hLtop ▸ hLM ω)
+    have hseq : (fun n => stoppedProcess f M n ω) = fun n => f n ω := by
+      funext n
+      exact stoppedProcess_eq_of_le (by rw [hMtop]; exact le_top)
+    simp only [stoppedValueAtTop, hLtop, ite_true]
+    rw [hseq]
+  · obtain ⟨k, hk⟩ := WithTop.ne_top_iff_exists.mp hLtop
+    simp only [stoppedValueAtTop, hLtop, ite_false]
+    rw [← hk]
+    change stoppedProcess f M k ω = f k ω
+    exact stoppedProcess_eq_of_le (by rw [hk]; exact hLM ω)
+
+/-- The whole-process UI case, using the unchanged limit-process engine. -/
+private theorem stoppedValueAtTop_ae_eq_condExp_of_uniformIntegrable
     (hf : Martingale f ℱ μ) (hui : UniformIntegrable f 1 μ)
     {L M : Ω → WithTop ℕ} (hL : IsStoppingTime ℱ L) (hM : IsStoppingTime ℱ M)
     (hLM : L ≤ M) :
-    stoppedValueAtInfinity f L
-      =ᵐ[μ] μ[stoppedValueAtInfinity f M | hL.measurableSpace] := by
+    stoppedValueAtTop f L
+      =ᵐ[μ] μ[stoppedValueAtTop f M | hL.measurableSpace] := by
   have hL_eq := hf.stoppedValueAtInfinity_ae_eq_condExp_limitProcess hui hL
   have hM_eq := hf.stoppedValueAtInfinity_ae_eq_condExp_limitProcess hui hM
   exact (hL_eq.trans
     (condExp_condExp_of_le (IsStoppingTime.measurableSpace_mono hL hM hLM)
       hM.measurableSpace_le).symm).trans (condExp_congr_ae hM_eq).symm
+
+/-- **Conditional optional stopping with UI of the stopped process.**
+For a martingale `f` and stopping times `L ≤ M` (possibly infinite),
+UI of `stoppedProcess f M` suffices for `f_L =ᵐ μ[f_M | ℱ_L]`.
+This proves the martingale conditional conclusion of Lecture 29 with
+the source's stopped-process UI hypothesis.
+
+Callers with `hui : UniformIntegrable f 1 μ` can supply
+`hf.uniformIntegrable_stoppedProcess_of_uniformIntegrable hui M hM`. -/
+theorem Martingale.stoppedValueAtInfinity_ae_eq_condExp_stoppedValueAtInfinity
+    (hf : Martingale f ℱ μ) {L M : Ω → WithTop ℕ}
+    (hui : UniformIntegrable (stoppedProcess f M) 1 μ)
+    (hL : IsStoppingTime ℱ L) (hM : IsStoppingTime ℱ M) (hLM : L ≤ M) :
+    stoppedValueAtTop f L
+      =ᵐ[μ] μ[stoppedValueAtTop f M | hL.measurableSpace] := by
+  have hstop : Martingale (stoppedProcess f M) ℱ μ := by
+    refine martingale_iff.mpr ⟨?_, hf.submartingale.stoppedProcess hM⟩
+    simpa only [stoppedProcess_neg, neg_neg] using
+      (hf.neg.submartingale.stoppedProcess hM).neg
+  have h := stoppedValueAtTop_ae_eq_condExp_of_uniformIntegrable hstop hui hL hM hLM
+  rwa [stoppedValueAtTop_stoppedProcess_of_le (f := f) hLM,
+    stoppedValueAtTop_stoppedProcess_of_le (f := f) (L := M) (M := M) le_rfl] at h
 
 end MeasureTheory
