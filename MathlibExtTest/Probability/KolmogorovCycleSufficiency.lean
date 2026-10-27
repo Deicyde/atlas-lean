@@ -8,9 +8,10 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import MathlibExt.Probability.KolmogorovCycleNecessity
 public import MathlibExt.Probability.KolmogorovCycleSufficiency
-public import Mathlib.Tactic.Linarith
-public import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
 
 /-!
 # Tests for Kolmogorov's cycle theorem, sufficiency half
@@ -23,7 +24,13 @@ the cycle condition, and the one-state chain.
 
 public section
 
-namespace MathlibExt.Probability.KolmogorovCycleSufficiency
+namespace MathlibExtTest.Probability.KolmogorovCycleSufficiency
+
+/-- Both theorem halves apply to the same canonical matrix, giving the equivalence. -/
+example {M : ℕ} (P : StochasticMatrix M) (hirr : P.IsIrreducible) :
+    P.IsReversible ↔ P.KolmogorovCycleCondition :=
+  ⟨StochasticMatrix.kolmogorov_cycle_necessity P hirr,
+    StochasticMatrix.kolmogorov_cycle_sufficiency P hirr⟩
 
 /-- The uniform two-state chain satisfies the hypotheses of the sufficiency
 theorem, and the reversible distribution it produces is `(1/2, 1/2)`:
@@ -192,4 +199,9 @@ example :
   rw [Fin.sum_univ_one] at hsum
   exact hsum
 
-end MathlibExt.Probability.KolmogorovCycleSufficiency
+#check StochasticMatrix.kolmogorov_cycle_necessity
+#check StochasticMatrix.kolmogorov_cycle_sufficiency
+#print axioms StochasticMatrix.kolmogorov_cycle_necessity
+#print axioms StochasticMatrix.kolmogorov_cycle_sufficiency
+
+end MathlibExtTest.Probability.KolmogorovCycleSufficiency

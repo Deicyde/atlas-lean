@@ -8,15 +8,11 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Algebra.BigOperators.Fin
-public import Mathlib.Algebra.Order.BigOperators.Group.Finset
-public import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
-public import Mathlib.Basic.Real.Basic
-public import Mathlib.Data.Fin.Basic
+public import MathlibExt.Probability.KolmogorovCycleNecessity
 public import Mathlib.Data.List.OfFn
 public import Mathlib.Algebra.BigOperators.Field
-public import Mathlib.Tactic.Linarith
-public import Mathlib.Tactic.Ring
+
+import Mathlib.Tactic.Ring
 
 /-!
 # Kolmogorov's cycle theorem, sufficiency half
@@ -54,107 +50,22 @@ the reversible distribution.
 * `StochasticMatrix.kolmogorov_cycle_sufficiency`: the cycle condition
   implies reversibility for an irreducible finite chain.
 
-## Namespacing note
+## Shared API
 
-`StochasticMatrix` and its companions (`Distribution`, `IsStationary`,
-`DetailedBalance`, `IsReversible`, `KolmogorovCycleCondition`) are
-re-declared here inside
-`MathlibExt.Probability.KolmogorovCycleSufficiency`, as namespace-scoped
-copies of the identically named declarations in
-`MathlibExt.Probability.KolmogorovCycleNecessity` (batch 17).
-On rebase, delete the copies in this file and re-point the statements
-at the batch-17 declarations; the proofs are written against the
-v1 names and do not depend on which copy is in scope.
+The matrix, distribution, irreducibility, detailed balance, stationarity,
+and cycle condition are the canonical declarations imported from
+`KolmogorovCycleNecessity`. The new path and weight helpers and sufficiency
+theorem use those declarations directly. The positive-sum argument for
+path extraction does not require another matrix-power nonnegativity lemma.
 -/
 
 @[expose] public section
 
 open Finset BigOperators
 
-namespace MathlibExt.Probability.KolmogorovCycleSufficiency
-
-
-/-- A `StochasticMatrix M` is an `(M+1) × (M+1)` row-stochastic matrix: entries
-`prob i j` are non-negative real numbers, and the rows sum to `1`. This is the
-transition matrix of a Markov chain on the finite state space `Fin (M + 1)`. -/
-structure StochasticMatrix (M : ℕ) where
-  prob : Fin (M + 1) → Fin (M + 1) → ℝ
-  nonneg : ∀ i j, 0 ≤ prob i j
-  row_sum : ∀ i, ∑ j, prob i j = 1
-
-
 namespace StochasticMatrix
 
 variable {M : ℕ}
-
-/-- The `n`-th matrix power of a stochastic transition matrix `P`. Entry `(i,j)` represents
-the probability of moving from state `i` to state `j` in exactly `n` steps. -/
-def matPow (P : StochasticMatrix M) : ℕ → (Fin (M + 1) → Fin (M + 1) → ℝ)
-  | 0 => fun i j => if i = j then 1 else 0
-  | n + 1 => fun i j => ∑ k, P.prob i k * P.matPow n k j
-
-/-- A stochastic matrix `P` is **irreducible** if for every pair of states `i, j` there is some
-positive number of steps `n` such that `P^n i j > 0`; i.e., every state is reachable from every
-other state in finitely many steps. -/
-def IsIrreducible (P : StochasticMatrix M) : Prop :=
-  ∀ i j : Fin (M + 1), ∃ n : ℕ, 0 < n ∧ 0 < P.matPow n i j
-
-/-- A **probability distribution** on the finite state space `Fin (M + 1)`: a function
-`val : Fin (M + 1) → ℝ` whose values are nonnegative and sum to `1`. -/
-structure Distribution (M : ℕ) where
-  val : Fin (M + 1) → ℝ
-  nonneg : ∀ i, 0 ≤ val i
-  sum_one : ∑ i, val i = 1
-
-/-- A distribution `π` is **stationary** for the transition matrix `P` if `π P = π`, i.e.,
-`∑ᵢ π(i) P(i, j) = π(j)` for every state `j`. -/
-def IsStationary (P : StochasticMatrix M) (π : Distribution M) : Prop :=
-  ∀ j, ∑ i, π.val i * P.prob i j = π.val j
-
-/-- The **detailed balance** (reversibility) equations between `P` and `π`:
-`π(i) P(i,j) = π(j) P(j,i)` for all states `i, j`. -/
-def DetailedBalance (P : StochasticMatrix M) (π : Distribution M) : Prop :=
-  ∀ i j : Fin (M + 1), π.val i * P.prob i j = π.val j * P.prob j i
-
-/-- A transition matrix `P` is **reversible** if there exists a distribution `π` that is
-both stationary and satisfies the detailed balance equations with `P`. -/
-def IsReversible (P : StochasticMatrix M) : Prop :=
-  ∃ π : Distribution M, P.IsStationary π ∧ P.DetailedBalance π
-
-/-- If `π` satisfies detailed balance with `P`, then `π` is stationary for `P`. Detailed
-balance is a strictly stronger condition than stationarity. -/
-theorem detailedBalance_isStationary (P : StochasticMatrix M) (π : Distribution M)
-    (hdb : P.DetailedBalance π) : P.IsStationary π := by
-  intro j
-  calc ∑ i, π.val i * P.prob i j
-      = ∑ i, π.val j * P.prob j i := by congr 1; ext i; exact hdb i j
-    _ = π.val j * ∑ i, P.prob j i := by rw [← Finset.mul_sum]
-    _ = π.val j * 1 := by rw [P.row_sum j]
-    _ = π.val j := mul_one _
-
-/-- **Kolmogorov's cycle condition** on a stochastic matrix `P`:
-(1) `symm_support`: `P(x, y) > 0` implies `P(y, x) > 0`; and
-(2) `cycle_prod`: for any loop `x₀, x₁, …, xₙ = x₀` whose reverse path has positive
-probability, the product of forward transition probabilities along the loop equals the
-product of backward transition probabilities. This is the necessary and sufficient
-condition for the existence of a reversible measure for an irreducible chain. -/
-structure KolmogorovCycleCondition (P : StochasticMatrix M) : Prop where
-  symm_support : ∀ x y : Fin (M + 1), P.prob x y > 0 → P.prob y x > 0
-  cycle_prod : ∀ (n : ℕ) (c : Fin (n + 1) → Fin (M + 1)), c 0 = c (Fin.last n) →
-    (∏ i : Fin n, P.prob (c i.succ) (c i.castSucc)) > 0 →
-    (∏ i : Fin n, P.prob (c i.castSucc) (c i.succ)) =
-      (∏ i : Fin n, P.prob (c i.succ) (c i.castSucc))
-
-/-- Every entry of every power of a stochastic matrix is nonnegative. -/
-lemma matPow_nonneg (P : StochasticMatrix M) : ∀ (n : ℕ) (i j : Fin (M + 1)),
-    0 ≤ P.matPow n i j := by
-  intro n
-  induction n with
-  | zero => intro i j; simp only [matPow]; split_ifs <;> linarith
-  | succ k ih =>
-    intro i j
-    simp only [matPow]
-    exact Finset.sum_nonneg (fun c _ => mul_nonneg (P.nonneg i c) (ih c j))
 
 /-- The product of forward transition probabilities along a path: for a list
 of states `[x₀, x₁, …, xₖ]`, returns `∏ᵢ P(xᵢ, xᵢ₊₁)` as a real number.
@@ -227,11 +138,11 @@ lemma exists_path_of_matPow_pos (P : StochasticMatrix M) :
   | succ k ih =>
     intro i j _ hpos
     simp only [matPow] at hpos
-    rw [Finset.sum_pos_iff_of_nonneg
-      (fun m _ => mul_nonneg (P.nonneg i m) (matPow_nonneg P k m j))] at hpos
-    obtain ⟨m, _, hm⟩ := hpos
-    have hPim : 0 < P.prob i m := pos_of_mul_pos_left hm (matPow_nonneg P k m j)
+    have hsum_pos : (∑ m : Fin (M + 1), (0 : ℝ)) <
+        ∑ m, P.prob i m * P.matPow k m j := by simpa using hpos
+    obtain ⟨m, _, hm⟩ := Finset.exists_lt_of_sum_lt hsum_pos
     have hPkj : 0 < P.matPow k m j := pos_of_mul_pos_right hm (P.nonneg i m)
+    have hPim : 0 < P.prob i m := pos_of_mul_pos_left hm hPkj.le
     by_cases hk : k = 0
     · subst hk
       simp only [matPow] at hPkj
@@ -747,6 +658,3 @@ theorem kolmogorov_cycle_sufficiency {M : ℕ} (P : StochasticMatrix M)
 
 
 end StochasticMatrix
-
-
-end MathlibExt.Probability.KolmogorovCycleSufficiency
