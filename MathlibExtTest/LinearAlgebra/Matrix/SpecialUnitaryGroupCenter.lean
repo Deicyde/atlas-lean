@@ -8,9 +8,25 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-import MathlibExt.LinearAlgebra.Matrix.SpecialUnitaryGroupCenter
+import MathlibExt.LinearAlgebra.Matrix.SpecialUnitaryFinTwo
+import MathlibExt.GroupTheory.SU2Basic
+
+/-!
+# Regression tests for the canonical SU(2) center
+
+Exercise both scalar signs, two noncentral matrices, and the canonical
+characterization of a central matrix. Membership fixtures use existing APIs.
+-/
 
 namespace Matrix
+
+private theorem diag_I_mem_specialUnitaryGroup :
+    !![Complex.I, (0 : ℂ); 0, -Complex.I] ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ :=
+  SU2.diag_I_mem
+
+private theorem quarterTurn_mem_specialUnitaryGroup :
+    !![(0 : ℂ), 1; -1, 0] ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ :=
+  SU2.antidiag_mem
 
 -- The identity is central in `SU(2)`.
 example : (1 : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) ∈
@@ -52,5 +68,9 @@ example (M : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ))
     (hM : M ∈ Subgroup.center ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) :
     (M : Matrix (Fin 2) (Fin 2) ℂ) = 1 ∨ (M : Matrix (Fin 2) (Fin 2) ℂ) = -1 :=
   (mem_center_specialUnitaryGroup_fin_two_iff M).mp hM
+
+#print axioms Matrix.mem_center_specialUnitaryGroup_fin_two_iff
+#print axioms diag_I_mem_specialUnitaryGroup
+#print axioms quarterTurn_mem_specialUnitaryGroup
 
 end Matrix
