@@ -344,37 +344,12 @@ theorem cycleWeight_path_independent (P : StochasticMatrix M)
 
   obtain ⟨p3, hp3_head, hp3_last, hp3_pos⟩ := hirr.exists_path j i₀
 
-  have hne1 : path1 ≠ [] := by intro h; simp [h] at h1
-  have hne2 : path2 ≠ [] := by intro h; simp [h] at h2
   have hne3 : p3 ≠ [] := by intro h; simp [h] at hp3_head
 
-  have hlast1 : path1.getLast hne1 = j := by
-    have := List.getLast?_eq_some_getLast hne1; rw [this] at h1'; exact Option.some_injective _ h1'
-  have hhead1 : path1.head hne1 = i₀ := by
-    have := List.head?_eq_some_head hne1; rw [this] at h1; exact Option.some_injective _ h1
-  have hlast2 : path2.getLast hne2 = j := by
-    have := List.getLast?_eq_some_getLast hne2; rw [this] at h2'; exact Option.some_injective _ h2'
-  have hhead2 : path2.head hne2 = i₀ := by
-    have := List.head?_eq_some_head hne2; rw [this] at h2; exact Option.some_injective _ h2
   have hlast3 : p3.getLast hne3 = i₀ := by
     have := List.getLast?_eq_some_getLast hne3; rw [this] at hp3_last; exact Option.some_injective _ hp3_last
   have hhead3 : p3.head hne3 = j := by
     have := List.head?_eq_some_head hne3; rw [this] at hp3_head; exact Option.some_injective _ hp3_head
-
-  have hjoin1 : path1.getLast hne1 = p3.head hne3 := by rw [hlast1, hhead3]
-  have hjoin2 : path2.getLast hne2 = p3.head hne3 := by rw [hlast2, hhead3]
-
-  set c1 := path1 ++ p3.tail with hc1_def
-  set c2 := path2 ++ p3.tail with hc2_def
-
-  have hne_c1 : c1 ≠ [] := List.append_ne_nil_of_left_ne_nil hne1 _
-  have hne_c2 : c2 ≠ [] := List.append_ne_nil_of_left_ne_nil hne2 _
-
-  have happ1 := listRatioProduct_append P path1 p3 hne1 hne3 hjoin1
-  have happ2 := listRatioProduct_append P path2 p3 hne2 hne3 hjoin2
-
-  have hc1_pos := listPathProduct_append_pos P path1 p3 hne1 hne3 hjoin1 hp1 hp3_pos
-  have hc2_pos := listPathProduct_append_pos P path2 p3 hne2 hne3 hjoin2 hp2 hp3_pos
 
   have hp3_rpos := listRatioProduct_pos_of_listPathProduct_pos P hcycle.symm_support p3 hp3_pos
 
@@ -386,30 +361,6 @@ theorem cycleWeight_path_independent (P : StochasticMatrix M)
       simp [List.getLast_singleton] at hlast3
       simp at hhead3
       rw [← hhead3, hlast3]
-
-  have hc1_head : c1.head hne_c1 = i₀ := by
-    show (path1 ++ p3.tail).head _ = i₀
-    rw [List.head_append_of_ne_nil hne1]; exact hhead1
-  have hc2_head : c2.head hne_c2 = i₀ := by
-    show (path2 ++ p3.tail).head _ = i₀
-    rw [List.head_append_of_ne_nil hne2]; exact hhead2
-
-  have hc1_last : c1.getLast hne_c1 = i₀ := by
-    show (path1 ++ p3.tail).getLast _ = i₀
-    by_cases htail_ne : p3.tail = []
-    · simp only [htail_ne, List.append_nil]
-      exact hlast1.trans (hji_of_ptail_nil htail_ne)
-    · rw [List.getLast_append_of_ne_nil _ htail_ne, List.getLast_tail htail_ne, hlast3]
-  have hc2_last : c2.getLast hne_c2 = i₀ := by
-    show (path2 ++ p3.tail).getLast _ = i₀
-    by_cases htail_ne : p3.tail = []
-    · simp only [htail_ne, List.append_nil]
-      exact hlast2.trans (hji_of_ptail_nil htail_ne)
-    · rw [List.getLast_append_of_ne_nil _ htail_ne, List.getLast_tail htail_ne, hlast3]
-
-  have hc1_loop : c1.head hne_c1 = c1.getLast hne_c1 := by rw [hc1_head, hc1_last]
-  have hc2_loop : c2.head hne_c2 = c2.getLast hne_c2 := by rw [hc2_head, hc2_last]
-
 
   suffices h_suffices : ∀ (p : List (Fin (M + 1))),
       p.head? = some i₀ → p.getLast? = some j → 0 < listPathProduct P p →
@@ -466,7 +417,6 @@ theorem cycleWeight_path_independent (P : StochasticMatrix M)
       exact List.eq_nil_of_length_eq_zero this
 
 
-    have hji : j = i₀ := hji_of_ptail_nil hptail
 
 
     have hp_single : p.length = 1 := by

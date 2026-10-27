@@ -19,7 +19,10 @@ import Mathlib.Tactic.NormNum
 Concrete checks on `StochasticMatrix.kolmogorov_cycle_sufficiency`:
 the uniform two-state chain (whose reversible distribution must be
 `(1/2, 1/2)`), the cycle weight on that chain, a one-way chain violating
-the cycle condition, and the one-state chain.
+the cycle condition, and the one-state chain. The nonuniform two-state
+chain checks a cycle weight of `1/2`, a three-edge ratio product,
+normalizer `3/2`, normalized masses `(2/3, 1/3)`, and the actual
+sufficiency witness's masses.
 -/
 
 public section
@@ -198,6 +201,121 @@ example :
   have hsum := π.sum_one
   rw [Fin.sum_univ_one] at hsum
   exact hsum
+
+/-- A nonuniform two-state chain with both rows `(2/3, 1/3)`. -/
+noncomputable def nonuniformTwo : StochasticMatrix 1 where
+  prob := fun _ j => if j = 0 then 2 / 3 else 1 / 3
+  nonneg := by intro i j; split_ifs <;> norm_num
+  row_sum := by
+    intro i
+    change (∑ j : Fin 2, if j = 0 then (2 / 3 : ℝ) else 1 / 3) = 1
+    norm_num [Fin.sum_univ_two]
+
+/-- The explicit reversible input distribution is independent of cycle weights. -/
+noncomputable def nonuniformPi : StochasticMatrix.Distribution 1 where
+  val := fun j => if j = 0 then 2 / 3 else 1 / 3
+  nonneg := by intro j; split_ifs <;> norm_num
+  sum_one := by
+    change (∑ j : Fin 2, if j = 0 then (2 / 3 : ℝ) else 1 / 3) = 1
+    norm_num [Fin.sum_univ_two]
+
+/-- Every state can reach every other state in one positive-probability step. -/
+theorem nonuniformTwo_irreducible : nonuniformTwo.IsIrreducible := by
+  intro i j
+  refine ⟨1, by norm_num, ?_⟩
+  fin_cases i <;> fin_cases j <;>
+    norm_num [StochasticMatrix.matPow, nonuniformTwo, Fin.sum_univ_two]
+
+/-- Detailed balance follows from the explicit row masses, not from sufficiency. -/
+theorem nonuniformTwo_detailedBalance : nonuniformTwo.DetailedBalance nonuniformPi := by
+  intro i j
+  change nonuniformPi.val i * nonuniformPi.val j = nonuniformPi.val j * nonuniformPi.val i
+  exact mul_comm _ _
+
+/-- Canonical necessity supplies the cycle condition for the asymmetric fixture. -/
+theorem nonuniformTwo_cycle : nonuniformTwo.KolmogorovCycleCondition :=
+  StochasticMatrix.kolmogorov_cycle_necessity nonuniformTwo nonuniformTwo_irreducible
+    ⟨nonuniformPi, StochasticMatrix.detailedBalance_isStationary
+      nonuniformTwo nonuniformPi nonuniformTwo_detailedBalance, nonuniformTwo_detailedBalance⟩
+
+/-- Compare the chosen cycle-weight path with an explicit positive path. -/
+theorem nonuniformTwo_cycleWeight_as_path (j : Fin 2) (path : List (Fin 2))
+    (hhead : path.head? = some 0) (hlast : path.getLast? = some j)
+    (hpos : 0 < StochasticMatrix.listPathProduct nonuniformTwo path) :
+    StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 j =
+      StochasticMatrix.listRatioProduct nonuniformTwo path := by
+  change StochasticMatrix.listRatioProduct nonuniformTwo
+    (Classical.choose (nonuniformTwo_irreducible.exists_path 0 j)) = _
+  have hspec := Classical.choose_spec (nonuniformTwo_irreducible.exists_path 0 j)
+  exact StochasticMatrix.cycleWeight_path_independent nonuniformTwo nonuniformTwo_cycle
+    nonuniformTwo_irreducible 0 j
+    (Classical.choose (nonuniformTwo_irreducible.exists_path 0 j)) path
+    hspec.1 hspec.2.1 hhead hlast hspec.2.2 hpos
+
+/-- The reference-state weight is computed using the singleton path `[0]`. -/
+theorem nonuniformTwo_cycleWeight_zero :
+    StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 0 = 1 := by
+  rw [nonuniformTwo_cycleWeight_as_path 0 [0] (by simp) (by simp)
+    (by norm_num [StochasticMatrix.listPathProduct])]
+  rfl
+
+/-- The path `[0,1]` selects `P(0,1)/P(1,0) = 1/2`, not its inverse. -/
+theorem nonuniformTwo_cycleWeight_one :
+    StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 1 = 1 / 2 := by
+  rw [nonuniformTwo_cycleWeight_as_path 1 [0, 1] (by simp) (by simp)
+    (by norm_num [StochasticMatrix.listPathProduct, nonuniformTwo])]
+  norm_num [StochasticMatrix.listRatioProduct, nonuniformTwo]
+
+/-- Three non-unit edge factors multiply as `(1/2) * 2 * (1/2)`. -/
+theorem nonuniformTwo_three_edge_ratio :
+    StochasticMatrix.listRatioProduct nonuniformTwo [0, 1, 0, 1] = 1 / 2 := by
+  norm_num [StochasticMatrix.listRatioProduct, nonuniformTwo]
+
+/-- The cycle-weight normalizer is `1 + 1/2 = 3/2`. -/
+theorem nonuniformTwo_normalizer :
+    (∑ j : Fin 2, StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 j) =
+      3 / 2 := by
+  rw [Fin.sum_univ_two, nonuniformTwo_cycleWeight_zero, nonuniformTwo_cycleWeight_one]
+  norm_num
+
+/-- Normalizing the actual cycle weights gives masses `(2/3,1/3)`. -/
+theorem nonuniformTwo_normalized_weights :
+    StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 0 /
+        (∑ j : Fin 2, StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 j) =
+      2 / 3 ∧
+    StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 1 /
+        (∑ j : Fin 2, StochasticMatrix.cycleWeight nonuniformTwo nonuniformTwo_irreducible 0 j) =
+      1 / 3 := by
+  constructor <;> rw [nonuniformTwo_normalizer]
+  · rw [nonuniformTwo_cycleWeight_zero]
+    norm_num
+  · rw [nonuniformTwo_cycleWeight_one]
+    norm_num
+
+/-- The distribution obtained directly from sufficiency has the same asymmetric masses. -/
+theorem nonuniformTwo_sufficiency_masses :
+    ∃ π : StochasticMatrix.Distribution 1,
+      nonuniformTwo.IsStationary π ∧ nonuniformTwo.DetailedBalance π ∧
+        π.val 0 = 2 / 3 ∧ π.val 1 = 1 / 3 := by
+  obtain ⟨π, hstat, hdb⟩ := StochasticMatrix.kolmogorov_cycle_sufficiency
+    nonuniformTwo nonuniformTwo_irreducible nonuniformTwo_cycle
+  have h01 := hdb 0 1
+  change π.val 0 * (1 / 3) = π.val 1 * (2 / 3) at h01
+  have hsum := π.sum_one
+  rw [Fin.sum_univ_two] at hsum
+  have hmass0 : π.val 0 = 2 / 3 := by linarith
+  have hmass1 : π.val 1 = 1 / 3 := by linarith
+  exact ⟨π, hstat, hdb, hmass0, hmass1⟩
+
+#check nonuniformTwo_cycleWeight_zero
+#check nonuniformTwo_cycleWeight_one
+#check nonuniformTwo_three_edge_ratio
+#check nonuniformTwo_normalizer
+#check nonuniformTwo_normalized_weights
+#check nonuniformTwo_sufficiency_masses
+#print axioms nonuniformTwo_cycleWeight_one
+#print axioms nonuniformTwo_normalized_weights
+#print axioms nonuniformTwo_sufficiency_masses
 
 #check StochasticMatrix.kolmogorov_cycle_necessity
 #check StochasticMatrix.kolmogorov_cycle_sufficiency
