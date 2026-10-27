@@ -23,21 +23,26 @@ normed space `E` over `ℝ` or `ℂ`:
 
 * a weakly convergent sequence is norm-bounded (by the uniform boundedness
   principle applied to the evaluation functionals);
-* the norm is weakly lower semicontinuous: if `u n` converges weakly to
-  `x`, then `‖x‖ ≤ liminf ‖u n‖` (via a Hahn–Banach norming functional);
+* the norm is weakly lower semicontinuous along sequences: if `u n`
+  converges weakly to `x`, then `‖x‖ ≤ liminf ‖u n‖`;
 * bounded linear operators preserve weak convergence.
 
-Weak convergence is stated in the textbook form, `f (u n) → f x` for every
-continuous linear functional `f`, with corollaries in Mathlib's
-`toWeakSpace` form. This is a companion to the Hahn–Banach material of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean` and to the
-weak convergence of orthonormal sequences (batch 24) and Mazur's lemma
-(batch 37). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in the earlier batches of this series: Mathlib has the
-ingredients (Banach–Steinhaus, the Hahn–Banach norming functional
-`exists_dual_vector''`, the bidual isometry, Mazur's theorem in closure
-form) but not these sequential statements. See also Rudin, *Functional
-Analysis*, 2nd edition, Chapter 3.
+This file packages supporting sequence corollaries using canonical
+Mathlib APIs. For boundedness, Banach–Steinhaus is applied to the complete
+strong dual, and the bidual isometry returns a norm bound in `E`.
+The lower-semicontinuity proof uses a Hahn–Banach functional `g` with
+`‖g‖ ≤ 1` and `g x = ‖x‖`. No completeness hypothesis on `E` is needed.
+
+Weak convergence is stated as convergence of every continuous linear
+functional, with equivalent `toWeakSpace` interfaces. These conversions
+specialize `WeakBilin.tendsto_iff_forall_eval_tendsto`; Mathlib's
+`WeakSpace.map` already gives preservation by continuous linear maps.
+
+The archived `v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`
+provides related Hahn–Banach context. The weak convergence of orthonormal
+sequences and Mazur's lemma are supporting companions from batches 24
+and 37. The present sequential results are not imported from a v1 target.
+See also Rudin, *Functional Analysis*, 2nd edition, Chapter 3.
 -/
 
 @[expose] public section
