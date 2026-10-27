@@ -45,6 +45,20 @@ example (p : Ideal ℤ) [p.IsMaximal] (q : Ideal ℤ) [q.IsPrime] [q.LiesOver p]
   obtain ⟨h5, h6⟩ := Set.mem_Icc.mp h.2.2
   exact ⟨Nat.le_antisymm h2 h1, Nat.le_antisymm h4 h3, Nat.le_antisymm h6 h5⟩
 
+/-- The zero maximal ideal over `ℚ` satisfies all three module-rank bounds. -/
+example : (⊥ : Ideal ℚ).ramificationIdx ℚ ∈ Set.Icc 1 1 ∧
+    (⊥ : Ideal ℚ).inertiaDeg ℚ ∈ Set.Icc 1 1 ∧
+    ((⊥ : Ideal ℚ).primesOver ℚ).ncard ∈ Set.Icc 1 1 := by
+  simpa using Ideal.ramification_inertia_card_mem_Icc
+    (R := ℚ) (S := ℚ) (⊥ : Ideal ℚ) (⊥ : Ideal ℚ)
+
+/-- The fraction-field package also covers `ℚ` over itself at the zero prime. -/
+example : (⊥ : Ideal ℚ).ramificationIdx ℚ ∈ Set.Icc 1 1 ∧
+    (⊥ : Ideal ℚ).inertiaDeg ℚ ∈ Set.Icc 1 1 ∧
+    ((⊥ : Ideal ℚ).primesOver ℚ).ncard ∈ Set.Icc 1 1 := by
+  simpa using Ideal.ramification_inertia_card_mem_Icc_of_isFractionRing
+    (R := ℚ) (S := ℚ) ℚ ℚ (⊥ : Ideal ℚ) (⊥ : Ideal ℚ)
+
 end
 
 end MetaMathlibExt
