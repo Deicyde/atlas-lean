@@ -17,7 +17,7 @@ public import Mathlib.CategoryTheory.Preadditive.AdditiveFunctor
 For `G`-modules `A` and `B`, group homology splits over a direct sum:
 `Hₙ(G, A ⊕ B) ≅ Hₙ(G, A) ⊕ Hₙ(G, B)`, and the isomorphism commutes with
 the inclusion and projection maps. This is Corollary 23.22 of ATLAS
-`NumberTheoryI`, Section 23.2.
+`NumberTheoryI`, Section 23.4.
 
 The new content is the additivity of the chains functor: Mathlib has the
 corresponding instance for the cochains functor
