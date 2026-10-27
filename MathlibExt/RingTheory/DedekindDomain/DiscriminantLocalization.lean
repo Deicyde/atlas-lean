@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.RingTheory.DedekindDomain.DifferentLocalization
+public import MathlibExt.RingTheory.DedekindDomain.DiscriminantTower
 public import Mathlib.RingTheory.Ideal.Norm.RelNorm
 
 @[expose] public section
@@ -25,13 +26,16 @@ inside `K`, and `SB` for an arbitrary localization of `B` at
 The discriminant ideal `D_{B / A}` is the norm of the different ideal:
 `Ideal.discriminantIdeal A B = Ideal.spanNorm A (differentIdeal A B)`
 (see `Ideal.discriminantIdeal_eq_spanNorm` in
-`MathlibExt/RingTheory/DedekindDomain/DiscriminantTower.lean`, which is not
-imported here so that this module stays independent of that definition).
-Proposition 12.15 of ATLAS `NumberTheoryI` says that extension of the
-discriminant ideal to `S⁻¹ A` equals the discriminant ideal of the localized
-extension. In `spanNorm` form, that is
-`Ideal.map_discriminantIdeal_eq_localization_ofField` below. It follows from
-the different-ideal localization equality
+`MathlibExt/RingTheory/DedekindDomain/DiscriminantTower.lean`, imported
+here). Proposition 12.15 of ATLAS `NumberTheoryI` says that extension of
+the discriminant ideal to `S⁻¹ A` equals the discriminant ideal of the
+localized extension. That is
+`Ideal.map_discriminantIdeal_eq_localization_ofField` below, stated
+directly in terms of `Ideal.discriminantIdeal`. It follows from the
+`spanNorm`-level lemma
+`Ideal.map_spanNorm_differentIdeal_eq_localization_ofField` by unfolding
+`Ideal.discriminantIdeal` on both sides; the `spanNorm` lemma in turn
+follows from the different-ideal localization equality
 (`Ideal.map_differentIdeal_eq_localization_ofField` in
 `MathlibExt/RingTheory/DedekindDomain/DifferentLocalization.lean`) and
 Mathlib's commutation of `Ideal.spanNorm` with localization
@@ -73,12 +77,26 @@ variable (SB : Type*) [CommRing SB] [Algebra B SB]
   [Module.Finite (Localization.subalgebra.ofField K S hS) SB]
 
 omit [IsFractionRing B L] in
-/-- ATLAS Proposition 12.15, canonical-localization scope: the image of the
-discriminant ideal `Ideal.spanNorm A (differentIdeal A B)` under `A → Aₛ`
-equals the discriminant ideal `Ideal.spanNorm Aₛ (differentIdeal Aₛ SB)` of
-the localized extension `SB / Aₛ`. -/
+/-- The `spanNorm` form of ATLAS Proposition 12.15, canonical-localization
+scope: the image of the discriminant ideal
+`Ideal.spanNorm A (differentIdeal A B)` under `A → Aₛ` equals the
+discriminant ideal `Ideal.spanNorm Aₛ (differentIdeal Aₛ SB)` of the
+localized extension `SB / Aₛ`. The `Ideal.discriminantIdeal` form is
+`Ideal.map_discriminantIdeal_eq_localization_ofField` below. -/
 theorem Ideal.map_spanNorm_differentIdeal_eq_localization_ofField [IsFractionRing B L] :
     Ideal.map (algebraMap A Aₛ) (Ideal.spanNorm A (differentIdeal A B)) =
       Ideal.spanNorm Aₛ (differentIdeal Aₛ SB) := by
   rw [← Ideal.spanIntNorm_localization A (differentIdeal A B) S hS SB,
     Ideal.map_differentIdeal_eq_localization_ofField A K L B S hS SB]
+
+omit [IsFractionRing B L] in
+/-- ATLAS Proposition 12.15, canonical-localization scope: the image of the
+discriminant ideal `Ideal.discriminantIdeal A B` under `A → Aₛ` equals the
+discriminant ideal `Ideal.discriminantIdeal Aₛ SB` of the localized
+extension `SB / Aₛ`. -/
+theorem Ideal.map_discriminantIdeal_eq_localization_ofField [IsFractionRing B L] :
+    Ideal.map (algebraMap A Aₛ) (Ideal.discriminantIdeal A B) =
+      Ideal.discriminantIdeal Aₛ SB := by
+  rw [Ideal.discriminantIdeal_eq_spanNorm A B,
+    Ideal.discriminantIdeal_eq_spanNorm Aₛ SB,
+    Ideal.map_spanNorm_differentIdeal_eq_localization_ofField A K L B S hS SB]

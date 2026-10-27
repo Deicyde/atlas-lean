@@ -16,8 +16,9 @@ public import MathlibExt.RingTheory.DedekindDomain.DiscriminantLocalization
 # Tests for the discriminant ideal under canonical localization (ATLAS Prop. 12.15)
 
 Generic application examples exercising
-`Ideal.map_spanNorm_differentIdeal_eq_localization_ofField`, plus a
-membership-facing consequence of the equality. These are API/inference
+`Ideal.map_spanNorm_differentIdeal_eq_localization_ofField` and
+`Ideal.map_discriminantIdeal_eq_localization_ofField`, plus
+membership-facing consequences of the equalities. These are API/inference
 tests; no new definitions are introduced.
 -/
 
@@ -65,3 +66,17 @@ example (x : Aₛ) :
     x ∈ Ideal.map (algebraMap A Aₛ) (Ideal.spanNorm A (differentIdeal A B)) ↔
       x ∈ Ideal.spanNorm Aₛ (differentIdeal Aₛ SB) := by
   rw [Ideal.map_spanNorm_differentIdeal_eq_localization_ofField A K L B S hS SB]
+
+/-- Generic application of the discriminant-ideal localization equality in
+`Ideal.discriminantIdeal` form. -/
+example :
+    Ideal.map (algebraMap A Aₛ) (Ideal.discriminantIdeal A B) =
+      Ideal.discriminantIdeal Aₛ SB :=
+  Ideal.map_discriminantIdeal_eq_localization_ofField A K L B S hS SB
+
+/-- Membership-facing consequence of the discriminant-ideal equality in
+`Ideal.discriminantIdeal` form. -/
+example (x : Aₛ) :
+    x ∈ Ideal.map (algebraMap A Aₛ) (Ideal.discriminantIdeal A B) ↔
+      x ∈ Ideal.discriminantIdeal Aₛ SB := by
+  rw [Ideal.map_discriminantIdeal_eq_localization_ofField A K L B S hS SB]
