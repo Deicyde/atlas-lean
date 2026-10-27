@@ -43,27 +43,27 @@ example {A A' B : Type*} [CommRing A] [CommRing A'] [CommRing B]
       Algebra.trace A' (A' ⊗[A] B) (Algebra.TensorProduct.includeRight b) :=
   Algebra.trace_baseChange b
 
-/-- Base change along `ℚ → ℝ` with `B = ℚ`: the norm of `2 ⊗ 1` is `2`. -/
+/-- Base change along `ℚ → ℝ` with `B = ℚ`: the norm of `1 ⊗ 2` is `2`. -/
 example : Algebra.norm ℝ
     ((Algebra.TensorProduct.includeRight (2 : ℚ) : ℝ ⊗[ℚ] ℚ)) =
     (2 : ℝ) := by
   rw [← Algebra.norm_baseChange (A := ℚ) (A' := ℝ) (B := ℚ) (2 : ℚ)]
   simp [Algebra.norm_self]
 
-/-- Base change along `ℚ → ℝ` with `B = ℚ`: the trace of `2 ⊗ 1` is `2`. -/
+/-- Base change along `ℚ → ℝ` with `B = ℚ`: the trace of `1 ⊗ 2` is `2`. -/
 example : Algebra.trace ℝ (ℝ ⊗[ℚ] ℚ)
     (Algebra.TensorProduct.includeRight (2 : ℚ)) = (2 : ℝ) := by
   rw [← Algebra.trace_baseChange (A := ℚ) (A' := ℝ) (B := ℚ) (2 : ℚ)]
   simp
 
-/-- Base change along `ℤ → ℚ` with `B = ℤ`: the norm of `5 ⊗ 1` is `5`. -/
+/-- Base change along `ℤ → ℚ` with `B = ℤ`: the norm of `1 ⊗ 5` is `5`. -/
 example : Algebra.norm ℚ
     ((Algebra.TensorProduct.includeRight (5 : ℤ) : ℚ ⊗[ℤ] ℤ)) =
     (5 : ℚ) := by
   rw [← Algebra.norm_baseChange (A := ℤ) (A' := ℚ) (B := ℤ) (5 : ℤ)]
   simp [Algebra.norm_self]
 
-/-- Base change along `ℤ → ℚ` with `B = ℤ`: the trace of `5 ⊗ 1` is `5`. -/
+/-- Base change along `ℤ → ℚ` with `B = ℤ`: the trace of `1 ⊗ 5` is `5`. -/
 example : Algebra.trace ℚ (ℚ ⊗[ℤ] ℤ)
     (Algebra.TensorProduct.includeRight (5 : ℤ)) = (5 : ℚ) := by
   rw [← Algebra.trace_baseChange (A := ℤ) (A' := ℚ) (B := ℤ) (5 : ℤ)]
