@@ -42,7 +42,7 @@ example : ¬ IdealsSimilar (⊥ : Ideal ℤ) (Ideal.span {(6 : ℤ)}) := by
   rw [idealsSimilar_bot_iff]
   exact mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num)
 
--- A principal ideal is similar to the unit ideal.
+-- A nonzero principal ideal is similar to the unit ideal.
 example : IdealsSimilar (Ideal.span {(6 : ℤ)}) ⊤ := by
   rw [idealsSimilar_top_iff_isPrincipal
     (mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num))]
