@@ -10,99 +10,89 @@ module
 
 public import MathlibExt.RingTheory.ClassGroup.IdealSimilarity
 
-@[expose] public section
+/-!
+# Canonical nonzero ideal similarity tests
 
+The source name unfolds to class-group equality. The fraction-field and balanced
+witness descriptions, multiplication and principality use Mathlib directly.
+Concrete integer ideals `(6)`, `(10)` and `(2)` exercise the source witnesses;
+the nonzero carrier excludes the zero ideal structurally.
+-/
+
+@[expose] public noncomputable section
+
+open scoped nonZeroDivisors
 open IdealFactorization
 
--- The equivalence-relation API on nonzero ideals.
-example (I : Ideal ℤ) (hI : I ≠ ⊥) : IdealsSimilar I I :=
-  idealsSimilar_refl I hI
-example (I J K : Ideal ℤ) (hIJ : IdealsSimilar I J) (hJK : IdealsSimilar J K) :
-    IdealsSimilar I K :=
-  idealsSimilar_trans hIJ hJK
+namespace MathlibExtTest.RingTheory.ClassGroup.IdealSimilarity
 
-example (I J : Ideal ℤ) (h : IdealsSimilar I J) : IdealsSimilar J I :=
-  idealsSimilar_symm h
+variable {R : Type*} [CommRing R] [IsDedekindDomain R]
 
-example (I J : Ideal ℤ) (h : IdealsSimilar I J) (K : Ideal ℤ) (hK : K ≠ ⊥) :
-    IdealsSimilar (I * K) (J * K) :=
-  idealsSimilar_mul_right h hK
+/-- The source name is definitionally the canonical class-group equality predicate. -/
+theorem canonical_definition_test (I J : (Ideal R)⁰) :
+    IdealsSimilar I J ↔ ClassGroup.mk0 I = ClassGroup.mk0 J := Iff.rfl
 
--- A concrete similarity in `ℤ`: `(5) * (6) = (30) = (3) * (10)`.
-example : IdealsSimilar (Ideal.span {(6 : ℤ)}) (Ideal.span {(10 : ℤ)}) :=
-  ⟨(mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num)),
-    (mt (Ideal.span_singleton_eq_bot (x := (10 : ℤ))).mp (by norm_num)),
-    5, 3, by norm_num, by norm_num, by
-    rw [Ideal.span_singleton_mul_span_singleton,
-      Ideal.span_singleton_mul_span_singleton]
-    rfl⟩
+example (I : (Ideal R)⁰) : IdealsSimilar I I := rfl
 
--- Multiplication by the nonzero ideal `(2)` preserves the concrete similarity.
-example : IdealsSimilar
-    (Ideal.span {(6 : ℤ)} * Ideal.span {(2 : ℤ)})
-    (Ideal.span {(10 : ℤ)} * Ideal.span {(2 : ℤ)}) := by
-  apply idealsSimilar_mul_right
-  · exact ⟨(mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num)),
-      (mt (Ideal.span_singleton_eq_bot (x := (10 : ℤ))).mp (by norm_num)),
-      5, 3, by norm_num, by norm_num, by
-        rw [Ideal.span_singleton_mul_span_singleton,
-          Ideal.span_singleton_mul_span_singleton]
-        rfl⟩
-  · exact mt (Ideal.span_singleton_eq_bot (x := (2 : ℤ))).mp (by norm_num)
+example (I J : (Ideal R)⁰) (h : IdealsSimilar I J) : IdealsSimilar J I := h.symm
 
--- The source domain excludes the zero ideal on either side, including both.
-example : ¬ IdealsSimilar (⊥ : Ideal ℤ) ⊥ := by
-  simp [IdealsSimilar]
+example (I J K : (Ideal R)⁰) (hIJ : IdealsSimilar I J) (hJK : IdealsSimilar J K) :
+    IdealsSimilar I K := hIJ.trans hJK
 
-example (I : Ideal ℤ) : ¬ IdealsSimilar I ⊥ := by
-  simp
+example (I J A : (Ideal R)⁰) (h : IdealsSimilar I J) :
+    IdealsSimilar (I * A) (J * A) := by
+  simpa only [IdealsSimilar, map_mul] using congrArg (fun c => c * ClassGroup.mk0 A) h
 
-example (J : Ideal ℤ) : ¬ IdealsSimilar ⊥ J := by
-  simp
+example (I J : (Ideal R)⁰) :
+    IdealsSimilar I J ↔ ∃ (a b : R) (_ : a ≠ 0) (_ : b ≠ 0),
+      Ideal.span {a} * (I : Ideal R) = Ideal.span {b} * (J : Ideal R) :=
+  ClassGroup.mk0_eq_mk0_iff
 
-example : ¬ IdealsSimilar (Ideal.span {(6 : ℤ)}) ⊥ := by
-  simp
+example (K : Type*) [Field K] [Algebra R K] [IsFractionRing R K] (I J : (Ideal R)⁰) :
+    IdealsSimilar I J ↔ ∃ (x : K) (_ : x ≠ 0),
+      FractionalIdeal.spanSingleton R⁰ x *
+        ((I : Ideal R) : FractionalIdeal R⁰ K) =
+        ((J : Ideal R) : FractionalIdeal R⁰ K) :=
+  ClassGroup.mk0_eq_mk0_iff_exists_fraction_ring K
 
-example : ¬ IdealsSimilar (⊥ : Ideal ℤ) (Ideal.span {(6 : ℤ)}) := by
-  simp
+example (I : (Ideal R)⁰) : IdealsSimilar I 1 ↔ (I : Ideal R).IsPrincipal := by
+  simpa only [IdealsSimilar, map_one] using ClassGroup.mk0_eq_one_iff I.property
 
-example : ¬ IdealsSimilar (Ideal.span {(0 : ℤ)}) (Ideal.span {(0 : ℤ)}) := by
-  simp [IdealsSimilar]
+example (I : (Ideal R)⁰) : (I : Ideal R) ≠ 0 := nonZeroDivisors.ne_zero I.property
 
--- Multiplication by the zero ideal cannot produce permitted similarity.
-example : ¬ IdealsSimilar
-    (Ideal.span {(6 : ℤ)} * ⊥) (Ideal.span {(10 : ℤ)} * ⊥) := by
-  simp
+example : (⊥ : Ideal ℤ) ∉ (Ideal ℤ)⁰ := by simp [mem_nonZeroDivisors_iff_ne_zero]
 
--- A nonzero principal ideal is similar to the unit ideal.
-example : IdealsSimilar (Ideal.span {(6 : ℤ)}) ⊤ := by
-  rw [idealsSimilar_top_iff_isPrincipal
-    (mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num))]
+private def nzPrincipal (n : ℤ) (hn : n ≠ 0) : (Ideal ℤ)⁰ :=
+  ⟨Ideal.span {n}, mem_nonZeroDivisors_iff_ne_zero.mpr
+    (mt (Ideal.span_singleton_eq_bot (x := n)).mp hn)⟩
+
+private abbrev i6 : (Ideal ℤ)⁰ := nzPrincipal 6 (by norm_num)
+private abbrev i10 : (Ideal ℤ)⁰ := nzPrincipal 10 (by norm_num)
+private abbrev i2 : (Ideal ℤ)⁰ := nzPrincipal 2 (by norm_num)
+
+private theorem six_ten_class_eq : ClassGroup.mk0 i6 = ClassGroup.mk0 i10 := by
+  apply ClassGroup.mk0_eq_mk0_iff.mpr
+  refine ⟨5, 3, by norm_num, by norm_num, ?_⟩
+  change Ideal.span {(5 : ℤ)} * Ideal.span {(6 : ℤ)} =
+    Ideal.span {(3 : ℤ)} * Ideal.span {(10 : ℤ)}
+  rw [Ideal.span_singleton_mul_span_singleton, Ideal.span_singleton_mul_span_singleton]
+  rfl
+
+example : IdealsSimilar i6 i10 := six_ten_class_eq
+
+example : IdealsSimilar (i6 * i2) (i10 * i2) := by
+  simpa only [IdealsSimilar, map_mul] using
+    congrArg (fun c => c * ClassGroup.mk0 i2) six_ten_class_eq
+
+example : IdealsSimilar i6 1 := by
+  change ClassGroup.mk0 i6 = ClassGroup.mk0 (1 : (Ideal ℤ)⁰)
+  rw [map_one, ClassGroup.mk0_eq_one_iff i6.property]
   exact ⟨6, rfl⟩
 
--- The class-group characterization on the concrete pair `(6)`, `(10)`.
-example : ClassGroup.mk0
-      ⟨Ideal.span {(6 : ℤ)}, mem_nonZeroDivisors_iff_ne_zero.mpr
-        (mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num))⟩ =
-    ClassGroup.mk0
-      ⟨Ideal.span {(10 : ℤ)}, mem_nonZeroDivisors_iff_ne_zero.mpr
-        (mt (Ideal.span_singleton_eq_bot (x := (10 : ℤ))).mp (by norm_num))⟩ :=
-  (idealsSimilar_iff_mk0_eq
-    (mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num))
-    (mt (Ideal.span_singleton_eq_bot (x := (10 : ℤ))).mp (by norm_num))).mp
-    ⟨(mt (Ideal.span_singleton_eq_bot (x := (6 : ℤ))).mp (by norm_num)),
-    (mt (Ideal.span_singleton_eq_bot (x := (10 : ℤ))).mp (by norm_num)),
-    5, 3, by norm_num, by norm_num, by
-      rw [Ideal.span_singleton_mul_span_singleton,
-        Ideal.span_singleton_mul_span_singleton]
-      rfl⟩
-
-#print axioms IdealFactorization.idealsSimilar_iff_mk0_eq
 #print axioms IdealFactorization.IdealsSimilar
-#print axioms IdealFactorization.idealsSimilar_refl
-#print axioms IdealFactorization.idealsSimilar_symm
-#print axioms IdealFactorization.idealsSimilar_trans
-#print axioms IdealFactorization.idealsSimilar_mul_right
-#print axioms IdealFactorization.idealsSimilar_eq_bot_iff
-#print axioms IdealFactorization.idealsSimilar_bot_iff
-#print axioms IdealFactorization.idealsSimilar_top_iff_isPrincipal
+#print axioms ClassGroup.mk0_eq_mk0_iff
+#print axioms ClassGroup.mk0_eq_mk0_iff_exists_fraction_ring
+#print axioms ClassGroup.mk0_eq_one_iff
+#print axioms six_ten_class_eq
+
+end MathlibExtTest.RingTheory.ClassGroup.IdealSimilarity
