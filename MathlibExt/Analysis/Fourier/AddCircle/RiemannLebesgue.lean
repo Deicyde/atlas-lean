@@ -20,28 +20,31 @@ For a period `T > 0`, the Fourier coefficients of an integrable function
 `fourierCoeff f n → 0` as `|n| → ∞`. The same holds on an interval
 `[a, b]` for the coefficients `fourierCoeffOn`.
 
-The proof is the textbook density argument. A continuous function is in
-`L²`, so its coefficients are square-summable by Parseval
-(`hasSum_sq_fourierCoeff`), hence tend to `0`. An integrable function is
-approximated in `L¹` by a bounded continuous function
+These are newly proved supporting circle and interval results. The proof
+here uses Mathlib's Parseval identity and continuous-function density.
+A continuous function is in `L²`, so its coefficients are square-summable
+by Parseval (`hasSum_sq_fourierCoeff`), hence tend to `0`. An integrable
+function is approximated in `L¹` by a bounded continuous function
 (`Integrable.exists_boundedContinuous_integral_sub_le`), and each
 coefficient is `1`-Lipschitz for the `L¹` norm
 (`norm_fourierCoeff_le_integral_norm`), so the coefficients of `f` are
 uniformly close to coefficients that tend to `0`.
 
-Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/FourierSeries.lean`
-(Theorem (Fejér), April 22, 2021). The Riemann–Lebesgue lemma is the
-companion to Fejér's theorem in that section: Fejér's theorem recovers `f`
-from its coefficients, while Riemann–Lebesgue says the coefficients
-themselves must vanish at infinity. It is not stated as a separate target
-in v1, and it is not in the pinned Mathlib: Mathlib's Riemann–Lebesgue
-lemma (`tendsto_integral_exp_inner_smul_cocompact`) is for the Fourier
-transform on finite-dimensional real spaces, and `fourierCoeff` on
-`AddCircle T` has no vanishing-at-infinity statement there. Nor is it in
-the earlier batches of this series (batch 1 proves Fejér's theorem without
-it; batch 24 proves weak convergence of orthonormal sequences, which gives
-the result only for `L²` functions, not for `L¹` functions; batch 35 proves
-coefficient uniqueness without vanishing).
+## Provenance
+
+The statements and proofs here are new supporting formalizations of the
+standard Riemann–Lebesgue lemma, assembled from the Mathlib APIs above.
+The archived `v1/Atlas/IntroductionToFunctionalAnalysis/code/FourierSeries.lean`
+and its Theorem (Fejér) target in `targets.yaml` and `report.json` concern
+uniform convergence of Cesàro–Fourier means for continuous periodic
+functions. That archive provides related context only; the results and
+`L¹` density proof here are not imported from the Fejér target.
+
+Mathlib's `tendsto_integral_exp_inner_smul_cocompact` and
+`Real.zero_at_infty_fourier` concern Fourier transforms on real vector
+spaces with the cocompact frequency filter. This module supplies the
+circle and interval coefficient statements along the cofinite filter on
+`ℤ` using Parseval and density.
 -/
 
 @[expose] public section
