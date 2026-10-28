@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Probability.Kernel.IonescuTulcea.Traj
+public import MathlibExt.Probability.MarkovChainConstruction
 public import Mathlib.Probability.Kernel.IonescuTulcea.PartialTraj
 public import Mathlib.Probability.Kernel.MeasurableIntegral
 public import Mathlib.Probability.Kernel.Basic
@@ -48,15 +48,15 @@ coordinates, using the one-step shift `partialTraj_succ_map_drop`),
 and the two trajectory measures are identified by uniqueness of
 projective limits.
 
-## Namespacing note
+## Canonical construction
 
-`markovLiftKernel` is a namespace-scoped copy of the identically named
-definition in `MathlibExt.Probability.MarkovChainConstruction`
-(batch 31), which is not in this branch's base. On rebase, delete the
-copy in this file and re-point the statements at the batch-31
-definition; the proofs do not depend on which copy is in scope.
-`pathFiltration`, `shiftPath`, `MarkovChainPathMeasure` and
-`markovExpectation` are new here.
+The lifted kernel and path measure reuse
+`MathlibExt.Probability.MarkovChainConstruction`. Compatibility abbreviations
+preserve the names and argument order used by the existing Markov-property
+statements. Kernel/probability instances come from that module; this file adds
+the finite-measure instance needed for a finite initial measure.
+`pathFiltration`, `shiftPath`, and `markovExpectation` are supporting interfaces
+for the shifted-trajectory identities here.
 
 ## Main results
 
@@ -135,13 +135,10 @@ lemma dropHist_comp_IicProdIoc (a b : ℕ) :
     show a + (i : ℕ) = a + b + 1
     omega
 
-noncomputable def markovLiftKernel (κ : Kernel S S) (n : ℕ) :
+/-- Compatibility name for the canonical lifted transition kernel. -/
+noncomputable abbrev markovLiftKernel (κ : Kernel S S) (n : ℕ) :
     Kernel ((_i : ↥(Finset.Iic n)) → S) S :=
-  κ.comap (fun x => x ⟨n, Finset.mem_Iic.mpr le_rfl⟩) (measurable_pi_apply _)
-
-instance markovLiftKernel.instIsMarkovKernel (κ : Kernel S S) [IsMarkovKernel κ] (n : ℕ) :
-    IsMarkovKernel (markovLiftKernel κ n) := by
-  unfold markovLiftKernel; infer_instance
+  MathlibExt.Probability.MarkovChainConstruction.markovLiftKernel κ n
 
 variable (κ : Kernel S S) [IsMarkovKernel κ]
 
@@ -330,26 +327,19 @@ lemma pathFiltration_le_pi (S : Type*) [MeasurableSpace S] (n : ℕ) :
 
 /-- The law on path space of the Markov chain with initial distribution `μ` and
 transition kernel `κ`. -/
-noncomputable def MarkovChainPathMeasure
+noncomputable abbrev MarkovChainPathMeasure
     (S : Type*) [MeasurableSpace S]
     (μ : Measure S) (κ : Kernel S S) [IsMarkovKernel κ] :
     @Measure (ℕ → S) MeasurableSpace.pi :=
-  Kernel.trajMeasure (X := fun _ : ℕ => S) μ (markovLiftKernel κ)
-
-noncomputable instance MarkovChainPathMeasure.isProbabilityMeasure
-    (S : Type*) [MeasurableSpace S]
-    (μ : Measure S) [IsProbabilityMeasure μ]
-    (κ : Kernel S S) [IsMarkovKernel κ] :
-    @IsProbabilityMeasure (ℕ → S) MeasurableSpace.pi (MarkovChainPathMeasure S μ κ) := by
-  unfold MarkovChainPathMeasure
-  infer_instance
+  MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure κ μ
 
 noncomputable instance MarkovChainPathMeasure.isFiniteMeasure
     (S : Type*) [MeasurableSpace S]
     (μ : Measure S) [IsFiniteMeasure μ]
     (κ : Kernel S S) [IsMarkovKernel κ] :
     @IsFiniteMeasure (ℕ → S) MeasurableSpace.pi (MarkovChainPathMeasure S μ κ) := by
-  unfold MarkovChainPathMeasure Kernel.trajMeasure
+  unfold MarkovChainPathMeasure
+    MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure Kernel.trajMeasure
   infer_instance
 
 /-- The expectation `E_x Y` of a path functional `Y` under the chain started from `x`. -/
@@ -369,7 +359,8 @@ theorem measurable_markovExpectation
   let e := MeasurableEquiv.piUnique (fun _ : ↥(Finset.Iic 0) => S)
   have hfun : ∀ x : S, markovExpectation S κ Y x = ∫ ω, Y ω ∂(K (e.symm x)) := by
     intro x
-    unfold markovExpectation MarkovChainPathMeasure Kernel.trajMeasure
+    unfold markovExpectation MarkovChainPathMeasure
+      MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure Kernel.trajMeasure
     congr 1
     rw [Measure.map_dirac' (MeasurableEquiv.measurable _),
       Measure.dirac_bind (Kernel.measurable _)]
@@ -382,7 +373,8 @@ singleton history. -/
 theorem MarkovChainPathMeasure_dirac_eq_traj {n : ℕ} (x₀ : Π _i : ↥(Finset.Iic n), S) :
     MarkovChainPathMeasure S (Measure.dirac (x₀ ⟨n, Finset.mem_Iic.mpr le_rfl⟩)) κ
       = Kernel.traj (X := fun _ : ℕ => S) (markovLiftKernel κ) 0 (lastHist n x₀) := by
-  unfold MarkovChainPathMeasure Kernel.trajMeasure
+  unfold MarkovChainPathMeasure
+    MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure Kernel.trajMeasure
   have hsymm : (MeasurableEquiv.piUnique (fun _ : ↥(Finset.Iic 0) => S)).symm
       (x₀ ⟨n, Finset.mem_Iic.mpr le_rfl⟩) = lastHist n x₀ := by
     funext i

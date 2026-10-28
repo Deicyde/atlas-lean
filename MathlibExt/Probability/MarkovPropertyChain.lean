@@ -29,7 +29,7 @@ This formalizes `v1/Atlas/TheoryOfProbability/code/MarkovPropertyChain.lean`
 (`markov_setIntegral_shift`, `markov_property_full`), which rests in v1
 on `integral_shiftPath_traj_eq_markovExpectation`, left unproved there.
 That identity is proved in
-`MathlibExt.Probability.MarkovChainPath.MarkovChainPathMeasure`
+`MathlibExt.Probability.MarkovChainPathMeasure`
 (`integral_shiftPath_traj_eq_markovExpectation`); the two theorems here
 are ported from v1 with no statement change. The strong Markov property
 is in `MathlibExt.Probability.StrongMarkovChain`.
@@ -75,7 +75,9 @@ theorem markov_setIntegral_shift
   set ν := Measure.map (⇑e.symm) μ
 
   have hP_eq : P_μ = K ∘ₘ ν := by
-    simp only [P_μ, MarkovChainPathMeasure, Kernel.trajMeasure, K, ν, κ']
+    simp only [P_μ, MarkovChainPathMeasure,
+      MathlibExt.Probability.MarkovChainConstruction.markovChainMeasure,
+      Kernel.trajMeasure, K, ν, κ']
     rfl
   have hA_pi : @MeasurableSet _ MeasurableSpace.pi A := pathFiltration_le_pi S n A hA
 

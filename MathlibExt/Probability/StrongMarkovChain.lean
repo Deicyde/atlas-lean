@@ -25,14 +25,13 @@ current state.
 
 ## Source
 
-This formalizes `v1/Atlas/TheoryOfProbability/code/StrongMarkovChain.lean`
-(`stoppedPathShift`, `ae_eq_of_ae_eq_restrict_fibers`,
-`strong_markov_chain`), which rests in v1 on the Markov property
-`markov_property_full`, proved in
-`MathlibExt.Probability.MarkovPropertyChain`. The statements are ported
-from v1 with no change, except that the `condExp` applications are written
-with the current Mathlib `μ[f | m]` notation in place of v1's explicit
-`@condExp` calls (whose argument order does not match current Mathlib).
+The Lecture 31 target in `v1/Atlas/TheoryOfProbability/targets.yaml` allows
+an a.s.-finite stopping time. The archived `StrongMarkovChain.lean` instead
+used an everywhere-finite natural-valued time and depended on the admitted
+shifted-trajectory lemma. The full target is `strong_markov_chain_ae_finite`;
+`strong_markov_chain` preserves that archived finite interface as a specialization.
+The ordinary Markov property is proved in `MathlibExt.Probability.MarkovPropertyChain`.
+Mathlib's stopped-value and conditional-expectation APIs are reused throughout.
 
 ## Main results
 
@@ -41,8 +40,10 @@ with the current Mathlib `μ[f | m]` notation in place of v1's explicit
 * `MathlibExt.Probability.StrongMarkovChain.ae_eq_of_ae_eq_restrict_fibers`:
   a.e. equality on each fiber of an `ℕ`-valued function implies a.e.
   equality on the whole space.
-* `MathlibExt.Probability.StrongMarkovChain.strong_markov_chain`: the
-  strong Markov property for Markov chains.
+* `MathlibExt.Probability.StrongMarkovChain.strong_markov_chain_ae_finite`:
+  the strong Markov property with a.s.-finite `WithTop ℕ` stopping times.
+* `MathlibExt.Probability.StrongMarkovChain.strong_markov_chain`:
+  the original everywhere-finite specialization.
 -/
 
 @[expose] public section
@@ -85,11 +86,107 @@ lemma ae_eq_of_ae_eq_restrict_fibers {Ω : Type*} {m0 : MeasurableSpace Ω}
   rw [ae_all_iff]
   exact hfiber
 
-/-- **Strong Markov property for Markov chains** (Lecture 31). For a Markov chain with
-initial distribution `μ` and transition kernel `κ` on a standard Borel state space `S`,
-and a bounded measurable time-indexed functional `Y n`, the conditional expectation of
-`Y (T ω) ∘ θ_T` given the stopping-time σ-algebra `ℱ_T` equals `E_{X_T} (Y (T ω))`.
-This is the discrete-time analogue of `E_μ(Y_N ∘ θ_N | ℱ_N) = E_{X_N} Y_N`. -/
+
+private lemma measurable_stopped_family {Ω : Type*} [MeasurableSpace Ω]
+    (τ : Ω → WithTop ℕ) (hτ : Measurable τ) (u : ℕ → Ω → ℝ)
+    (hu : ∀ n, Measurable (u n)) : Measurable (stoppedValue u τ) := by
+  have hu_joint : Measurable (fun p : ℕ × Ω => u p.1 p.2) :=
+    measurable_from_prod_countable_right hu
+  exact hu_joint.comp ((WithTop.measurable_untopA.comp hτ).prodMk measurable_id)
+
+/-- A.e. equality on every finite fiber, together with a.e. finiteness, gives global a.e. equality. -/
+lemma ae_eq_of_ae_eq_restrict_finite_fibers {Ω : Type*} [MeasurableSpace Ω]
+    (τ : Ω → WithTop ℕ) (μ : Measure Ω) (f g : Ω → ℝ)
+    (hfinite : ∀ᵐ ω ∂μ, τ ω ≠ ⊤)
+    (hmeas : ∀ n : ℕ, MeasurableSet {ω | τ ω = (n : WithTop ℕ)})
+    (h : ∀ n : ℕ, f =ᵐ[μ.restrict {ω | τ ω = (n : WithTop ℕ)}] g) : f =ᵐ[μ] g := by
+  have hall : ∀ᵐ ω ∂μ, ∀ n : ℕ, τ ω = (n : WithTop ℕ) → f ω = g ω := by
+    rw [ae_all_iff]
+    intro n
+    have hn := h n
+    rw [Filter.EventuallyEq, ae_restrict_iff' (hmeas n)] at hn
+    exact hn
+  filter_upwards [hfinite, hall] with ω hfin hω
+  obtain ⟨n, hn⟩ := WithTop.ne_top_iff_exists.mp hfin
+  exact hω n hn.symm
+
+private lemma condExp_stopped_family {Ω : Type*} [MeasurableSpace Ω]
+    (μ : Measure Ω) [IsFiniteMeasure μ] (ℱ : Filtration ℕ ‹MeasurableSpace Ω›)
+    (τ : Ω → WithTop ℕ) (hτ : IsStoppingTime ℱ τ)
+    (hfinite : ∀ᵐ ω ∂μ, τ ω ≠ ⊤)
+    (u v : ℕ → Ω → ℝ) (hu : ∀ n, Measurable (u n))
+    (hbdd : ∃ C : ℝ, ∀ n ω, |u n ω| ≤ C)
+    (hfixed : ∀ n, μ[u n | ℱ n] =ᵐ[μ] v n) :
+    μ[stoppedValue u τ | hτ.measurableSpace] =ᵐ[μ] stoppedValue v τ := by
+  obtain ⟨C, hC⟩ := hbdd
+  have hτ_meas : Measurable τ :=
+    hτ.measurable.mono hτ.measurableSpace_le le_rfl
+  have hf_int : Integrable (stoppedValue u τ) μ :=
+    Integrable.of_bound (measurable_stopped_family τ hτ_meas u hu).aestronglyMeasurable C
+      (ae_of_all μ (fun ω => by simpa only [Real.norm_eq_abs, stoppedValue] using hC (τ ω).untopA ω))
+  apply ae_eq_of_ae_eq_restrict_finite_fibers τ μ _ _ hfinite
+    (fun n => ℱ.le n _ (hτ.measurableSet_eq_of_countable n))
+  intro n
+  let s : Set Ω := {ω | τ ω = (n : WithTop ℕ)}
+  have hs_ℱ : MeasurableSet[ℱ n] s := hτ.measurableSet_eq_of_countable n
+  have hs : MeasurableSet s := ℱ.le n _ hs_ℱ
+  have hn_int : Integrable (u n) μ :=
+    Integrable.of_bound (hu n).aestronglyMeasurable C
+      (ae_of_all μ (fun ω => by simpa only [Real.norm_eq_abs] using hC n ω))
+  have hagree : stoppedValue u τ =ᵐ[μ.restrict s] u n := by
+    rw [Filter.EventuallyEq, ae_restrict_iff' hs]
+    filter_upwards with ω hω
+    change τ ω = (n : WithTop ℕ) at hω
+    simp only [stoppedValue, hω]
+    rw [← ENat.some_eq_natCast, WithTop.untopA_eq_untop (by simp), WithTop.untop_coe]
+  have hlocal : μ[stoppedValue u τ | ℱ n] =ᵐ[μ.restrict s] μ[u n | ℱ n] :=
+    (condExp_restrict_ae_eq_restrict (ℱ.le n) hs_ℱ hf_int).symm.trans
+      ((condExp_congr_ae hagree).trans
+        (condExp_restrict_ae_eq_restrict (ℱ.le n) hs_ℱ hn_int))
+  have hlast : v n =ᵐ[μ.restrict s] stoppedValue v τ := by
+    rw [Filter.EventuallyEq, ae_restrict_iff' hs]
+    filter_upwards with ω hω
+    change τ ω = (n : WithTop ℕ) at hω
+    simp only [stoppedValue, hω]
+    rw [← ENat.some_eq_natCast, WithTop.untopA_eq_untop (by simp), WithTop.untop_coe]
+  have hfixed_s : μ[u n | ℱ n] =ᵐ[μ.restrict s] v n :=
+    ae_restrict_of_ae (hfixed n)
+  exact (condExp_stopping_time_ae_eq_restrict_eq_of_countable hτ n).trans
+    (hlocal.trans (hfixed_s.trans hlast))
+
+
+/-- **Strong Markov property for a.s.-finite stopping times** (Lecture 31).
+The time may equal infinity on a null set. Mathlib's `stoppedValue` evaluates through its
+measurable finite projection; its choice on the infinite event is immaterial to this a.e.
+equality. Conditioning uses the sigma algebra of the original WithTop-valued stopping time. -/
+theorem strong_markov_chain_ae_finite
+    (S : Type*) [MeasurableSpace S] [StandardBorelSpace S] [Nonempty S]
+    (μ : Measure S) [IsFiniteMeasure μ]
+    (κ : Kernel S S) [IsMarkovKernel κ]
+    (T : (ℕ → S) → WithTop ℕ)
+    (hT : @IsStoppingTime (ℕ → S) ℕ MeasurableSpace.pi _ (pathFiltration S) T)
+    (hT_finite : ∀ᵐ ω ∂MarkovChainPathMeasure S μ κ, T ω ≠ ⊤)
+    (Y : ℕ → (ℕ → S) → ℝ)
+    (hY_meas : ∀ n, @Measurable _ _ MeasurableSpace.pi _ (Y n))
+    (hY_bdd : ∃ C : ℝ, ∀ n ω, |Y n ω| ≤ C) :
+    let P_μ := MarkovChainPathMeasure S μ κ
+    P_μ[stoppedValue (fun n ω => Y n (shiftPath n ω)) T | hT.measurableSpace]
+      =ᵐ[P_μ] stoppedValue (fun n ω => markovExpectation S κ (Y n) (ω n)) T := by
+  intro P_μ
+  letI : IsFiniteMeasure P_μ := MarkovChainPathMeasure.isFiniteMeasure S μ κ
+  apply condExp_stopped_family P_μ (pathFiltration S) T hT hT_finite
+    (fun n ω => Y n (shiftPath n ω))
+    (fun n ω => markovExpectation S κ (Y n) (ω n))
+  · intro n
+    exact (hY_meas n).comp (measurable_shiftPath n)
+  · obtain ⟨C, hC⟩ := hY_bdd
+    exact ⟨C, fun n ω => hC n (shiftPath n ω)⟩
+  · intro n
+    exact markov_property_full S μ κ (Y n) (hY_meas n)
+      (by obtain ⟨C, hC⟩ := hY_bdd; exact ⟨C, fun ω => hC n ω⟩) n
+
+/-- The everywhere-finite specialization of `strong_markov_chain_ae_finite`.
+This retains the original usable natural-valued stopping-time interface. -/
 theorem strong_markov_chain
     (S : Type*) [MeasurableSpace S] [StandardBorelSpace S] [Nonempty S]
     (μ : Measure S) [IsFiniteMeasure μ]
@@ -105,125 +202,18 @@ theorem strong_markov_chain
     =ᵐ[P_μ]
       fun ω => markovExpectation S κ (Y (T ω)) (ω (T ω)) := by
   intro P_μ
-
-  have : @IsFiniteMeasure (ℕ → S) MeasurableSpace.pi P_μ :=
-    MarkovChainPathMeasure.isFiniteMeasure S μ κ
-
-  have hT_fiber_meas : ∀ n, @MeasurableSet (ℕ → S) MeasurableSpace.pi {ω | T ω = n} := by
-    intro n
-    have h := hT.measurableSet_eq n
-    have heq : {ω : ℕ → S | T ω = n} = {ω | (T ω : WithTop ℕ) = ↑n} := by
-      ext ω; simp only [Set.mem_ofPred_eq, Nat.cast_inj]
-    rw [heq]
-    exact (pathFiltration S).le n _ h
-
-  apply ae_eq_of_ae_eq_restrict_fibers T P_μ _ _ hT_fiber_meas
-  intro n
-
-  have hstep1 :
-    P_μ[fun ω => Y (T ω) (stoppedPathShift T ω) | hT.measurableSpace]
-    =ᵐ[P_μ.restrict {ω | T ω = n}]
-    P_μ[fun ω => Y (T ω) (stoppedPathShift T ω) | pathFiltration S n] := by
-    have hset : {x : ℕ → S | (fun ω => (T ω : WithTop ℕ)) x = ↑n} = {ω | T ω = n} := by
-      ext ω; simp [Nat.cast_inj]
-    rw [← hset]
-    exact condExp_stopping_time_ae_eq_restrict_eq_of_countable hT n
-
-  have hstep2 :
-    P_μ[fun ω => Y (T ω) (stoppedPathShift T ω) | pathFiltration S n]
-    =ᵐ[P_μ.restrict {ω | T ω = n}]
-    P_μ[Y n ∘ shiftPath n | pathFiltration S n] := by
-    have hs_Fn : @MeasurableSet (ℕ → S) (pathFiltration S n) {ω | T ω = n} := by
-      have h := hT.measurableSet_eq n
-      have heq : {ω : ℕ → S | T ω = n} = {ω | (T ω : WithTop ℕ) = ↑n} := by
-        ext ω; simp only [Set.mem_ofPred_eq, Nat.cast_inj]
-      rw [heq]; exact h
-
-    obtain ⟨C, hC⟩ := hY_bdd
-
-    have hf_meas : @Measurable (ℕ → S) ℝ MeasurableSpace.pi _
-        (fun ω => Y (T ω) (stoppedPathShift T ω)) := by
-      intro A hA
-      have : (fun ω => Y (T ω) (stoppedPathShift T ω)) ⁻¹' A =
-          ⋃ k, {ω | T ω = k} ∩ ((Y k ∘ shiftPath k) ⁻¹' A) := by
-        ext ω
-        simp only [Set.mem_preimage, Set.mem_iUnion, Set.mem_inter_iff,
-          Set.mem_ofPred_eq, Function.comp]
-        constructor
-        · intro h; exact ⟨T ω, rfl, h⟩
-        · rintro ⟨k, hk, hgk⟩
-          rw [show stoppedPathShift T ω = shiftPath k ω from
-            stoppedPathShift_eq_shiftPath_on_eq T k ω hk, hk]
-          exact hgk
-      rw [this]
-      exact MeasurableSet.iUnion (fun k =>
-        (hT_fiber_meas k).inter (((hY_meas k).comp (measurable_shiftPath k)) hA))
-    have hf_int : Integrable (fun ω => Y (T ω) (stoppedPathShift T ω)) P_μ :=
-      Integrable.of_bound hf_meas.aestronglyMeasurable C
-        (ae_of_all P_μ (fun ω => by rw [Real.norm_eq_abs]; exact hC (T ω) (stoppedPathShift T ω)))
-
-    have hg_int : Integrable (Y n ∘ shiftPath n) P_μ :=
-      Integrable.of_bound ((hY_meas n).comp (measurable_shiftPath n)).aestronglyMeasurable C
-        (ae_of_all P_μ (fun ω => by rw [Real.norm_eq_abs]; exact hC n (shiftPath n ω)))
-
-    have hagree : ∀ ω : ℕ → S, ω ∈ {ω | T ω = n} →
-        Y (T ω) (stoppedPathShift T ω) = (Y n ∘ shiftPath n) ω := by
-      intro ω hω
-      simp only [Set.mem_ofPred_eq] at hω
-      simp only [Function.comp, hω]
-      congr 1
-      exact stoppedPathShift_eq_shiftPath_on_eq T n ω hω
-
-    have hind : ({ω | T ω = n} : Set (ℕ → S)).indicator
-        (fun ω => Y (T ω) (stoppedPathShift T ω)) =
-        ({ω | T ω = n} : Set (ℕ → S)).indicator (Y n ∘ shiftPath n) := by
-      ext ω; simp only [Set.indicator]; split_ifs with h
-      · exact hagree ω h
-      · rfl
-    have h1 : P_μ[({ω | T ω = n} : Set (ℕ → S)).indicator
-          (fun ω => Y (T ω) (stoppedPathShift T ω)) | pathFiltration S n]
-        =ᵐ[P_μ]
-        ({ω | T ω = n} : Set (ℕ → S)).indicator
-          (P_μ[fun ω => Y (T ω) (stoppedPathShift T ω) | pathFiltration S n]) :=
-      condExp_indicator hf_int hs_Fn
-    have h2 : P_μ[({ω | T ω = n} : Set (ℕ → S)).indicator
-          (Y n ∘ shiftPath n) | pathFiltration S n]
-        =ᵐ[P_μ]
-        ({ω | T ω = n} : Set (ℕ → S)).indicator
-          (P_μ[Y n ∘ shiftPath n | pathFiltration S n]) :=
-      condExp_indicator hg_int hs_Fn
-    have h3 : P_μ[({ω | T ω = n} : Set (ℕ → S)).indicator
-          (fun ω => Y (T ω) (stoppedPathShift T ω)) | pathFiltration S n]
-        =ᵐ[P_μ]
-        P_μ[({ω | T ω = n} : Set (ℕ → S)).indicator
-          (Y n ∘ shiftPath n) | pathFiltration S n] := by rw [hind]
-    have h4 : ({ω | T ω = n} : Set (ℕ → S)).indicator
-        (P_μ[fun ω => Y (T ω) (stoppedPathShift T ω) | pathFiltration S n])
-      =ᵐ[P_μ]
-      ({ω | T ω = n} : Set (ℕ → S)).indicator
-        (P_μ[Y n ∘ shiftPath n | pathFiltration S n]) :=
-      h1.symm.trans (h3.trans h2)
-    rw [Filter.EventuallyEq, ae_restrict_iff' (hT_fiber_meas n)]
-    filter_upwards [h4] with ω hω hωs
-    simp [hωs] at hω
-    exact hω
-
-  have hstep3 :
-    P_μ[Y n ∘ shiftPath n | pathFiltration S n]
-    =ᵐ[P_μ]
-      fun ω => markovExpectation S κ (Y n) (ω n) :=
-    markov_property_full S μ κ (Y n) (hY_meas n)
-      (by obtain ⟨C, hC⟩ := hY_bdd; exact ⟨C, fun ω => hC n ω⟩) n
-
-  have hstep4 :
-    (fun ω => markovExpectation S κ (Y n) (ω n))
-    =ᵐ[P_μ.restrict {ω | T ω = n}]
-    (fun ω => markovExpectation S κ (Y (T ω)) (ω (T ω))) := by
-    rw [Filter.EventuallyEq, ae_restrict_iff' (hT_fiber_meas n)]
-    filter_upwards with ω hωn
-    rw [hωn]
-
-  exact hstep1.trans
-    (hstep2.trans (Filter.EventuallyEq.trans (ae_restrict_of_ae hstep3) hstep4))
+  have h := strong_markov_chain_ae_finite S μ κ (fun ω => (T ω : WithTop ℕ)) hT
+    (Filter.Eventually.of_forall (fun ω => by simp)) Y hY_meas hY_bdd
+  have hsource :
+      stoppedValue (fun n ω => Y n (shiftPath n ω)) (fun ω => (T ω : WithTop ℕ)) =
+        fun ω => Y (T ω) (stoppedPathShift T ω) := by
+    rfl
+  have htarget :
+      stoppedValue (fun n ω => markovExpectation S κ (Y n) (ω n))
+          (fun ω => (T ω : WithTop ℕ)) =
+        fun ω => markovExpectation S κ (Y (T ω)) (ω (T ω)) := by
+    rfl
+  rw [hsource, htarget] at h
+  exact h
 
 end MathlibExt.Probability.StrongMarkovChain
