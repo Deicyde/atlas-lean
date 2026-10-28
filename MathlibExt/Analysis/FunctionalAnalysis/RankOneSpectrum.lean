@@ -19,10 +19,11 @@ import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.Ring
 
 /-!
-# Spectrum of a rank-one operator
+# Spectrum of operators of rank at most one
 
 For a continuous linear functional `f : E →L[𝕜] 𝕜` and a vector `y : E`,
-the rank-one operator `f.smulRight y : E →L[𝕜] E` sends `x` to `(f x) • y`.
+the operator `f.smulRight y : E →L[𝕜] E` sends `x` to `(f x) • y` and has
+rank at most one. It is zero when `f = 0` or `y = 0`.
 It satisfies the quadratic identity `T * T = (f y) • T`, so its spectrum
 is contained in `{0, f y}`: every other scalar has the explicit resolvent
 `μ⁻¹ • 1 + (μ⁻¹ * (μ - f y)⁻¹) • T`. The two points of that set are
@@ -31,17 +32,23 @@ eigenvalues as soon as they have eigenvectors: `f y` has eigenvector `y`
 (the kernel of `f` is nontrivial, e.g. when `E` has dimension at least `2`).
 Hence, under those two nondegeneracy hypotheses, the spectrum is exactly
 `{0, f y}`. The Hilbert-space form, for `InnerProductSpace.rankOne`, is a
-corollary: its spectrum is `{0, ⟪y, x⟫}`.
+corollary: its spectrum is `{0, inner 𝕜 y x}` when `x ≠ 0` and there is
+a nonzero `w` with `inner 𝕜 y w = 0`.
 
-This is the rank-one case of the spectral computations for concrete
-operators in this library (Volterra, diagonal operators on `ℓ²`, the
-unilateral shift, multiplication operators on `C(X, 𝕜)`); Mathlib has the
-rank-one operator itself (`ContinuousLinearMap.smulRight`,
-`InnerProductSpace.rankOne`) with its norm, adjoint, and trace, but not
-its spectrum.
+## Source and API context
 
-Classical reference: Rudin, *Functional Analysis*, 2nd edition,
-Chapter 4 (rank-one operators) and Chapter 11 (spectra of operators).
+These are newly proved supporting results for the bounded-operator and
+Hilbert-space material in `v1/Atlas/IntroductionToFunctionalAnalysis`.
+The archived `BoundedOperators.lean`, `HilbertSpace.lean`, and
+`SpectralTheory.lean` provide that context; the 72-entry target inventory
+contains no rank-one spectrum target.
+
+The proofs use the existing `ContinuousLinearMap.smulRight` and
+`InnerProductSpace.rankOne` constructions, Mathlib eigenvectors,
+`Module.End.HasEigenvalue.mem_spectrum`, and
+`ContinuousLinearMap.spectrum_eq`. The quadratic identity is a
+specialization of the composition law
+`ContinuousLinearMap.smulRight_comp_smulRight`.
 
 ## Main declarations
 
@@ -68,7 +75,7 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E] [CompleteSpace E]
 
 omit [CompleteSpace E] in
-/-- The quadratic identity for a rank-one operator: `T * T = (f y) • T`. -/
+/-- The quadratic identity for `T = f.smulRight y`: `T * T = (f y) • T`. -/
 theorem smulRight_mul_self (f : E →L[𝕜] 𝕜) (y : E) :
     (f.smulRight y) * (f.smulRight y) = (f y) • (f.smulRight y) := by
   ext x
@@ -77,7 +84,7 @@ theorem smulRight_mul_self (f : E →L[𝕜] 𝕜) (y : E) :
 
 omit [CompleteSpace E] in
 /-- A scalar different from `0` and from `f y` is not in the spectrum of a
-rank-one operator: the resolvent is `μ⁻¹ • 1 + (μ⁻¹ * (μ - f y)⁻¹) • T`. -/
+`f.smulRight y`: the resolvent is `μ⁻¹ • 1 + (μ⁻¹ * (μ - f y)⁻¹) • T`. -/
 theorem not_mem_spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} {μ : 𝕜} (hμ0 : μ ≠ 0)
     (hμ : μ ≠ f y) : μ ∉ spectrum 𝕜 (f.smulRight y) := by
   rw [spectrum.mem_iff, Algebra.algebraMap_eq_smul_one]
@@ -136,7 +143,7 @@ theorem not_mem_spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} {μ : 𝕜} (
             smul_smul, sub_add_comm, ← sub_smul, hcoeff, zero_smul, zero_add]
 
 omit [CompleteSpace E] in
-/-- `f y` is an eigenvalue of the rank-one operator `f.smulRight y`,
+/-- `f y` is an eigenvalue of `f.smulRight y`,
 with eigenvector `y`, whenever `y ≠ 0`. -/
 theorem hasEigenvalue_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) :
     Module.End.HasEigenvalue (f.smulRight y : E →ₗ[𝕜] E) (f y) := by
@@ -145,7 +152,7 @@ theorem hasEigenvalue_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) :
   change (f.smulRight y) y = (f y) • y
   simp [ContinuousLinearMap.smulRight_apply]
 
-/-- `f y` lies in the spectrum of the rank-one operator `f.smulRight y`
+/-- `f y` lies in the spectrum of `f.smulRight y`
 when `y ≠ 0`. -/
 theorem mem_spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) :
     f y ∈ spectrum 𝕜 (f.smulRight y) := by
@@ -153,7 +160,7 @@ theorem mem_spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) :
   exact (hasEigenvalue_smulRight hy).mem_spectrum
 
 omit [CompleteSpace E] in
-/-- `0` is an eigenvalue of the rank-one operator `f.smulRight y`,
+/-- `0` is an eigenvalue of `f.smulRight y`,
 with eigenvector `w`, whenever `w ≠ 0` lies in the kernel of `f`. -/
 theorem hasEigenvalue_zero_smulRight {f : E →L[𝕜] 𝕜} {y : E} {w : E} (hw : w ≠ 0)
     (hfw : f w = 0) :
@@ -163,16 +170,17 @@ theorem hasEigenvalue_zero_smulRight {f : E →L[𝕜] 𝕜} {y : E} {w : E} (hw
   change (f.smulRight y) w = (0 : 𝕜) • w
   simp [ContinuousLinearMap.smulRight_apply, hfw]
 
-/-- `0` lies in the spectrum of the rank-one operator `f.smulRight y`
+/-- `0` lies in the spectrum of `f.smulRight y`
 whenever `f` has a nonzero kernel vector. -/
 theorem mem_spectrum_smulRight_zero {f : E →L[𝕜] 𝕜} {y : E} {w : E} (hw : w ≠ 0)
     (hfw : f w = 0) : (0 : 𝕜) ∈ spectrum 𝕜 (f.smulRight y) := by
   rw [ContinuousLinearMap.spectrum_eq]
   exact (hasEigenvalue_zero_smulRight hw hfw).mem_spectrum
 
-/-- The spectrum of a rank-one operator is exactly `{0, f y}`, provided
-`y ≠ 0` (so the operator is genuinely rank one) and `f` has a nonzero
-kernel vector (so `0` is an eigenvalue). Without the kernel hypothesis
+/-- The spectrum of `f.smulRight y` is exactly `{0, f y}`, provided
+`y ≠ 0` (so `y` is an eigenvector for `f y`) and `f` has a nonzero
+kernel vector (so `0` is an eigenvalue). The zero functional is allowed.
+Without the kernel hypothesis
 this fails: on a one-dimensional space a nonzero rank-one operator is a
 nonzero scalar multiple of the identity, whose spectrum is a singleton. -/
 theorem spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) {w : E} (hw : w ≠ 0)
@@ -193,15 +201,16 @@ theorem spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) {w : E
       rw [hμ]
       exact mem_spectrum_smulRight hy
 
-/-- If `f y = 0`, the spectrum of the rank-one operator is just `{0}`. -/
+/-- If `f y = 0`, `y ≠ 0`, and `f` has a nonzero kernel vector, the spectrum
+of `f.smulRight y` is just `{0}`. -/
 theorem spectrum_smulRight_of_apply_eq_zero {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0)
     {w : E} (hw : w ≠ 0) (hfw : f w = 0) (hfy : f y = 0) :
     spectrum 𝕜 (f.smulRight y) = {0} := by
   rw [spectrum_smulRight hy hw hfw, hfy]
   simp
 
-/-- The Hilbert-space form: the spectrum of the rank-one operator
-`InnerProductSpace.rankOne 𝕜 x y` is `{0, ⟪y, x⟫}`. -/
+/-- If `x ≠ 0` and there is a nonzero `w` with `inner 𝕜 y w = 0`, the
+spectrum of `InnerProductSpace.rankOne 𝕜 x y` is `{0, inner 𝕜 y x}`. -/
 theorem spectrum_rankOne {H : Type*} [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
     [CompleteSpace H] {x y : H} (hx : x ≠ 0) {w : H} (hw : w ≠ 0)
     (hyw : inner 𝕜 y w = 0) :
