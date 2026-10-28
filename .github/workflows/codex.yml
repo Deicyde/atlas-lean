@@ -131,6 +131,7 @@ jobs:
                 context.payload.comment?.body ?? null,
             };
             let ref;
+            let repo = context.payload.repository.full_name;
             let base = "";
             if (
               context.eventName === "issue_comment" &&
@@ -168,15 +169,29 @@ jobs:
                 repo: context.repo.repo,
                 pull_number: number,
               });
+              repo = pr.head.repo?.full_name ?? repo;
               const expectedRepo =
                 context.payload.repository.full_name.toLowerCase();
               const actualRepo =
                 pr.head.repo?.full_name?.toLowerCase();
               // Fork contents are untrusted. They must not run with provider
-              // credentials while Codex uses danger-full-access.
-              if (actualRepo !== expectedRepo) {
+              // credentials while Codex uses danger-full-access on an
+              // automatic (pull_request) run: that trigger comes from the fork
+              // author, with no maintainer approval. A comment-triggered run is
+              // different: check_auth already verified the commenter has
+              // write/maintain/admin, so the maintainer's explicit @codex
+              // comment is the approval to review this fork.
+              if (!actualRepo) {
                 throw new Error(
-                  "Codex execution is disabled for fork pull requests."
+                  "Cannot review a pull request whose head repository is unavailable."
+                );
+              }
+              if (
+                actualRepo !== expectedRepo &&
+                context.eventName === "pull_request"
+              ) {
+                throw new Error(
+                  "Codex execution is disabled for automatic review of fork pull requests; ask a maintainer to comment @codex."
                 );
               }
               ref = pr.head.sha;
@@ -263,6 +278,7 @@ jobs:
               `${JSON.stringify(eventContext, null, 2)}\n`
             );
             core.setOutput("ref", ref);
+            core.setOutput("repo", repo);
             core.setOutput("base", base);
             core.setOutput("context", contextPath);
 
@@ -270,6 +286,7 @@ jobs:
         if: steps.check_auth.outputs.authorized == 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          repository: ${{ steps.target.outputs.repo }}
           ref: ${{ steps.target.outputs.ref }}
           fetch-depth: 0
           persist-credentials: false
@@ -284,6 +301,12 @@ jobs:
           # A pull request must not be able to rewrite the policy used to review itself.
           guide="$RUNNER_TEMP/REVIEWING.md"
           if [[ -n "$BASE_SHA" ]]; then
+            # The checkout is the (possibly fork) head repo, which may not
+            # contain the base SHA if main advanced since the PR opened.
+            # Fetch it from the trusted base repo (public read, no
+            # credentials). Best-effort: git show below is the gate, and
+            # the object is already present for same-repo PRs.
+            git fetch --no-tags "https://github.com/${{ github.repository }}.git" "$BASE_SHA" || true
             git show "$BASE_SHA:REVIEWING.md" > "$guide"
           else
             git show "HEAD:REVIEWING.md" > "$guide"
