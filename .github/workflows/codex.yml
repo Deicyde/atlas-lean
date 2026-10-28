@@ -284,13 +284,27 @@ jobs:
 
       - name: Checkout request target
         if: steps.check_auth.outputs.authorized == 'true'
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          repository: ${{ steps.target.outputs.repo }}
-          ref: ${{ steps.target.outputs.ref }}
-          fetch-depth: 0
-          persist-credentials: false
-          show-progress: false
+        env:
+          TARGET_REPO: ${{ steps.target.outputs.repo }}
+          TARGET_REF: ${{ steps.target.outputs.ref }}
+        run: |
+          set -euo pipefail
+          # Fetch only the reviewed head SHA and its ancestry from the head
+          # repo. A fetch-depth-0 checkout of a fork would fetch every branch
+          # and tag from an attacker-controlled repo, letting a fork exhaust
+          # runner disk or the 40-minute budget with blobs on unrelated refs.
+          # No credentials here: the repos are public and the fetch URL
+          # carries no token (the checkout this replaces used
+          # persist-credentials: false for the same reason).
+          if [[ -z "$TARGET_REPO" || -z "$TARGET_REF" ]]; then
+            echo "Missing checkout target" >&2
+            exit 1
+          fi
+          git init -q -b main
+          git remote set-url origin "https://github.com/${TARGET_REPO}.git" 2>/dev/null ||
+            git remote add origin "https://github.com/${TARGET_REPO}.git"
+          git fetch --no-tags origin "$TARGET_REF"
+          git -c advice.detachedHead=false checkout -q --detach FETCH_HEAD
 
       - name: Load trusted review guide
         if: steps.check_auth.outputs.authorized == 'true'
