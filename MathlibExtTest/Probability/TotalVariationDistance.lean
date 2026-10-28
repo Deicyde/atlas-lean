@@ -30,7 +30,7 @@ example {Ω : Type*} [MeasurableSpace Ω] {μ ν : Measure Ω}
     totalVariationDist μ ν = totalVariationDist ν μ :=
   totalVariationDist_comm
 
-/-- The triangle inequality, restated with its exact public signature. -/
+/-- The finite-measure triangle inequality applied to probability measures. -/
 example {Ω : Type*} [MeasurableSpace Ω] {μ ν ρ : Measure Ω} [IsProbabilityMeasure μ]
     [IsProbabilityMeasure ν] [IsProbabilityMeasure ρ] :
     totalVariationDist μ ρ ≤ totalVariationDist μ ν + totalVariationDist ν ρ :=
@@ -123,6 +123,28 @@ example : totalVariationDist twiceDirac 0 = 2 := by
       {s : Set Unit // MeasurableSet s})
     norm_num [totalVariationDist, twiceDirac, Measure.add_apply] at hu ⊢
     exact hu
+
+/-- Non-probability finite input calls the generalized nonnegativity API. -/
+example : 0 ≤ totalVariationDist twiceDirac 0 :=
+  totalVariationDist_nonneg
+
+/-- The zero measure calls the generalized diagonal API. -/
+example : totalVariationDist (0 : Measure Unit) 0 = 0 :=
+  totalVariationDist_self
+
+/-- The finite symmetry API accepts unequal masses and a zero input. -/
+example : totalVariationDist twiceDirac 0 = totalVariationDist 0 twiceDirac :=
+  totalVariationDist_comm
+
+/-- The finite triangle API compares masses `2`, `1` and `0`. -/
+example : totalVariationDist twiceDirac 0 ≤
+    totalVariationDist twiceDirac (Measure.dirac ()) +
+      totalVariationDist (Measure.dirac ()) 0 :=
+  totalVariationDist_triangle
+
+/-- The finite separation API applies to a non-probability measure and zero. -/
+example : totalVariationDist twiceDirac 0 = 0 ↔ twiceDirac = 0 :=
+  totalVariationDist_eq_zero_iff
 
 #print axioms infiniteAtom_ne_zero
 #print axioms infiniteAtom_not_finite

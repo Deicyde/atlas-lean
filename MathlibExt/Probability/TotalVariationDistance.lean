@@ -26,10 +26,10 @@ namespace MathlibExt.Probability.TotalVariationDistance
 
 For finite measures `μ` and `ν` on the same measurable space, define the
 supremum of `|μ(B) - ν(B)|` over measurable sets `B`. Finiteness makes
-conversion of the masses to real numbers valid. The metric properties
-proved here concern probability measures: nonnegativity, separation,
-symmetry, the triangle inequality, and the bound `1`. Symmetry also has
-a finite-measure interface. The Dirac computations use probability laws.
+conversion of the masses to real numbers valid. The core metric properties
+proved here hold for finite measures: nonnegativity, separation,
+symmetry and the triangle inequality. The bound `1` is specific to
+probability measures. The Dirac computations use probability laws.
 
 ## Source
 
@@ -40,7 +40,8 @@ two probability measures. Its archived definition in
 restriction. This API corrects the omission by requiring finite measures
 explicitly; its probability specialization matches the source supremum.
 The subtype of measurable sets replaces the archive's double `iSup`.
-The metric-property proofs are new.
+The finite-measure metric-property proofs are new extensions of the
+probability-measure source definition.
 
 Mathlib's `SignedMeasure.totalVariation` is a measure-valued operation
 on a signed measure. The function here uses the source's set-supremum
@@ -53,8 +54,8 @@ are unaffected by this namespace of functions and propositions.
 * `totalVariationDist`: `‖μ - ν‖ = sup_B |μ(B) - ν(B)|`.
 * `totalVariationDist_nonneg`, `totalVariationDist_self`,
   `totalVariationDist_comm`, `totalVariationDist_triangle`,
-  `totalVariationDist_le_one`: the metric axioms plus the bound `≤ 1`
-  for probability measures.
+  `totalVariationDist_le_one`: the finite-measure metric axioms, with
+  the bound `≤ 1` for probability measures.
 * `totalVariationDist_eq_zero_iff`: the distance vanishes iff the
   measures are equal.
 * `totalVariationDist_dirac`: the distance between `δ a` and `δ b`
@@ -87,18 +88,30 @@ private lemma abs_toReal_sub_le_one [IsProbabilityMeasure μ] [IsProbabilityMeas
   rw [abs_sub_le_iff]
   exact ⟨by linarith, by linarith⟩
 
-/-- The range of the family defining the total variation distance is
-bounded above (by `1`), for probability measures. -/
-private lemma bddAbove_range [IsProbabilityMeasure μ] [IsProbabilityMeasure ν] :
+/-- Every measurable-set contribution is bounded by the sum of the two real total masses. -/
+private lemma abs_toReal_sub_le_total_mass [IsFiniteMeasure μ] [IsFiniteMeasure ν]
+    {s : Set Ω} :
+    |(μ s).toReal - (ν s).toReal| ≤ (μ Set.univ).toReal + (ν Set.univ).toReal := by
+  have hμ0 : 0 ≤ (μ s).toReal := ENNReal.toReal_nonneg
+  have hν0 : 0 ≤ (ν s).toReal := ENNReal.toReal_nonneg
+  have hμ : (μ s).toReal ≤ (μ Set.univ).toReal :=
+    ENNReal.toReal_mono (measure_ne_top μ Set.univ) (measure_mono (Set.subset_univ s))
+  have hν : (ν s).toReal ≤ (ν Set.univ).toReal :=
+    ENNReal.toReal_mono (measure_ne_top ν Set.univ) (measure_mono (Set.subset_univ s))
+  rw [abs_sub_le_iff]
+  exact ⟨by linarith, by linarith⟩
+
+/-- Finite total masses bound the family defining the distance. -/
+private lemma bddAbove_range [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     BddAbove (Set.range fun s : {s : Set Ω // MeasurableSet s} =>
       |(μ s.1).toReal - (ν s.1).toReal|) := by
-  refine ⟨1, ?_⟩
+  refine ⟨(μ Set.univ).toReal + (ν Set.univ).toReal, ?_⟩
   rintro _ ⟨s, rfl⟩
-  exact abs_toReal_sub_le_one
+  exact abs_toReal_sub_le_total_mass
 
 /-- A single measurable set contributes at most the total variation
 distance. -/
-private lemma le_totalVariationDist [IsProbabilityMeasure μ] [IsProbabilityMeasure ν]
+private lemma le_totalVariationDist [IsFiniteMeasure μ] [IsFiniteMeasure ν]
     {s : Set Ω} (hs : MeasurableSet s) :
     |(μ s).toReal - (ν s).toReal| ≤ totalVariationDist μ ν :=
   le_ciSup bddAbove_range ⟨s, hs⟩
@@ -109,20 +122,20 @@ instance : Nonempty {s : Set Ω // MeasurableSet s} :=
 
 /-- To bound the total variation distance it suffices to bound every
 measurable set's contribution. -/
-private lemma totalVariationDist_le [IsProbabilityMeasure μ] [IsProbabilityMeasure ν]
+private lemma totalVariationDist_le [IsFiniteMeasure μ] [IsFiniteMeasure ν]
     {C : ℝ} (h : ∀ s : Set Ω, MeasurableSet s →
       |(μ s).toReal - (ν s).toReal| ≤ C) :
     totalVariationDist μ ν ≤ C :=
   ciSup_le fun s => h s.1 s.2
 
 /-- Total variation distance is nonnegative. -/
-theorem totalVariationDist_nonneg [IsProbabilityMeasure μ] [IsProbabilityMeasure ν] :
+theorem totalVariationDist_nonneg [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     0 ≤ totalVariationDist μ ν := by
-  have h := le_totalVariationDist (μ := μ) (ν := ν) MeasurableSet.univ
+  have h := le_totalVariationDist (μ := μ) (ν := ν) MeasurableSet.empty
   simpa using h
 
-/-- The total variation distance of a probability measure from itself is zero. -/
-theorem totalVariationDist_self [IsProbabilityMeasure μ] :
+/-- The total variation distance of a finite measure from itself is zero. -/
+theorem totalVariationDist_self [IsFiniteMeasure μ] :
     totalVariationDist μ μ = 0 := by
   refine le_antisymm ?_ totalVariationDist_nonneg
   refine totalVariationDist_le fun s _ => ?_
@@ -135,10 +148,9 @@ theorem totalVariationDist_comm [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     ⨆ s : {s : Set Ω // MeasurableSet s}, |(ν s.1).toReal - (μ s.1).toReal|
   exact iSup_congr fun s => abs_sub_comm _ _
 
-/-- Total variation distance satisfies the triangle inequality, for
-probability measures. -/
-theorem totalVariationDist_triangle [IsProbabilityMeasure μ] [IsProbabilityMeasure ν]
-    [IsProbabilityMeasure ρ] :
+/-- Total variation distance satisfies the triangle inequality for finite measures. -/
+theorem totalVariationDist_triangle [IsFiniteMeasure μ] [IsFiniteMeasure ν]
+    [IsFiniteMeasure ρ] :
     totalVariationDist μ ρ ≤ totalVariationDist μ ν + totalVariationDist ν ρ := by
   refine totalVariationDist_le fun s hs => ?_
   calc |(μ s).toReal - (ρ s).toReal|
@@ -155,9 +167,8 @@ theorem totalVariationDist_le_one [IsProbabilityMeasure μ] [IsProbabilityMeasur
     totalVariationDist μ ν ≤ 1 :=
   totalVariationDist_le fun _ _ => abs_toReal_sub_le_one
 
-/-- Total variation distance vanishes iff the measures are equal, for
-probability measures. -/
-theorem totalVariationDist_eq_zero_iff [IsProbabilityMeasure μ] [IsProbabilityMeasure ν] :
+/-- Total variation distance vanishes iff the finite measures are equal. -/
+theorem totalVariationDist_eq_zero_iff [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     totalVariationDist μ ν = 0 ↔ μ = ν := by
   constructor
   · intro h
