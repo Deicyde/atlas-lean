@@ -23,22 +23,19 @@ functionals `f` of norm at most `1` that vanish on `S`, and the supremum is
 attained: there is such an `f` with `f x = infDist x S`, and if the distance
 is positive, `f` can be chosen with `‖f‖ = 1`. No closedness hypothesis on
 `S` is needed: a functional vanishing on `S` vanishes on its closure, and
-the quotient norm on `E ⧸ S` is the distance to `S` whether or not `S` is
-closed.
+the quotient seminorm on `E ⧸ S` is the distance to `S` whether or not `S`
+is closed.
 
 The proof is the quotient form of Hahn–Banach: apply the norming functional
-(`exists_dual_vector''`) to the class of `x` in `E ⧸ S`, whose norm is
+(`exists_dual_vector''`) to the class of `x` in `E ⧸ S`, whose seminorm is
 `infDist x S`, and pull the resulting functional back along the quotient
 map `S.mkQL`, which has norm at most `1`.
 
-This is a companion to the Hahn–Banach material of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`
-(March 2, 2021). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in base MathlibExt: Mathlib has the Hahn–Banach extension
-theorem (`exists_extension_norm_eq`) and the norming functional
-(`exists_dual_vector`), but no statement relating the distance to a subspace
-to the dual space. Classical reference: Rudin, *Functional Analysis*,
-2nd edition, Theorem 5.8.
+This is a derived supporting result for the Hahn–Banach material in
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`.
+The audited archive and its 72-target inventory provide related extension
+and norming-functional statements. The distance formula is constructed
+here from Mathlib's seminormed quotient and `exists_dual_vector''`.
 
 ## Main declarations
 
