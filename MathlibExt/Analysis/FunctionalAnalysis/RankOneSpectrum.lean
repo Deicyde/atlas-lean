@@ -62,8 +62,8 @@ specialization of the composition law
   nonzero kernel vector.
 * `spectrum_smulRight` : `spectrum 𝕜 T = {0, f y}` under the two
   nondegeneracy hypotheses.
-* `spectrum_smulRight_of_apply_eq_zero` : if `f y = 0` then the spectrum
-  is `{0}`.
+* `spectrum_smulRight_of_apply_eq_zero` : if `y ≠ 0` and `f y = 0`,
+  the spectrum is `{0}`.
 * `spectrum_rankOne` : the Hilbert-space form for `InnerProductSpace.rankOne`.
 -/
 
@@ -201,12 +201,11 @@ theorem spectrum_smulRight {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0) {w : E
       rw [hμ]
       exact mem_spectrum_smulRight hy
 
-/-- If `f y = 0`, `y ≠ 0`, and `f` has a nonzero kernel vector, the spectrum
-of `f.smulRight y` is just `{0}`. -/
+/-- If `y ≠ 0` and `f y = 0`, the spectrum of `f.smulRight y` is just `{0}`.
+The vector `y` itself is the required nonzero kernel witness. -/
 theorem spectrum_smulRight_of_apply_eq_zero {f : E →L[𝕜] 𝕜} {y : E} (hy : y ≠ 0)
-    {w : E} (hw : w ≠ 0) (hfw : f w = 0) (hfy : f y = 0) :
-    spectrum 𝕜 (f.smulRight y) = {0} := by
-  rw [spectrum_smulRight hy hw hfw, hfy]
+    (hfy : f y = 0) : spectrum 𝕜 (f.smulRight y) = {0} := by
+  rw [spectrum_smulRight hy hy hfy, hfy]
   simp
 
 /-- If `x ≠ 0` and there is a nonzero `w` with `inner 𝕜 y w = 0`, the

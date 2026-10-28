@@ -88,8 +88,8 @@ example : (2 : ℝ) ∉ spectrum ℝ testT := by
 
 /-- With the zero functional, the rank-one operator has spectrum `{0}`. -/
 example : spectrum ℝ ((0 : ℝ × ℝ →L[ℝ] ℝ).smulRight testY) = {0} := by
-  apply spectrum_smulRight_of_apply_eq_zero (f := (0 : ℝ × ℝ →L[ℝ] ℝ)) (y := testY)
-    (w := testW) (by simp [testY]) (by simp [testW]) (by simp) (by simp)
+  exact spectrum_smulRight_of_apply_eq_zero (f := (0 : ℝ × ℝ →L[ℝ] ℝ)) (y := testY)
+    (by simp [testY]) (by simp)
 
 /-- The vector `e₀` in `EuclideanSpace ℝ (Fin 2)`. -/
 noncomputable def testE0 : EuclideanSpace ℝ (Fin 2) := PiLp.single 2 (0 : Fin 2) (1 : ℝ)
