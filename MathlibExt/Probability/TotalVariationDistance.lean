@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.MeasureTheory.Measure.MeasureSpaceDef
+public import Mathlib.MeasureTheory.Measure.Typeclasses.Finite
 public import Mathlib.MeasureTheory.Measure.Dirac.Def
 public import Mathlib.MeasureTheory.Measure.Dirac.Basic
 
@@ -21,37 +22,31 @@ open MeasureTheory
 namespace MathlibExt.Probability.TotalVariationDistance
 
 /-!
-# Total variation distance between measures
+# Supremum total variation distance between finite measures
 
-For two measures `μ` and `ν` on the same measurable space, the total
-variation distance is the supremum, over all measurable sets `B`, of
-`|μ(B) - ν(B)|`. This file proves that on probability measures it is a
-metric: it is nonnegative, vanishes exactly on the diagonal, is
-symmetric, satisfies the triangle inequality, and is at most `1`.
-It also computes the distance between two Dirac measures.
+For finite measures `μ` and `ν` on the same measurable space, define the
+supremum of `|μ(B) - ν(B)|` over measurable sets `B`. Finiteness makes
+conversion of the masses to real numbers valid. The metric properties
+proved here concern probability measures: nonnegativity, separation,
+symmetry, the triangle inequality, and the bound `1`. Symmetry also has
+a finite-measure interface. The Dirac computations use probability laws.
 
 ## Source
 
-This formalizes the target "Definition (total variation distance)"
-(Lecture 12) of `v1/Atlas/TheoryOfProbability/targets.yaml`. The v1
-formalization is `v1/Atlas/TheoryOfProbability/code/TotalVariation.lean`,
-which states only the definition (as a double `iSup`, over sets and
-over proofs of measurability); the metric properties below are proved
-here from it.
+The target “Definition (total variation distance)” in
+`v1/Atlas/TheoryOfProbability/targets.yaml` (Lecture 12) defines this for
+two probability measures. Its archived definition in
+`v1/Atlas/TheoryOfProbability/code/TotalVariation.lean` omitted that
+restriction. This API corrects the omission by requiring finite measures
+explicitly; its probability specialization matches the source supremum.
+The subtype of measurable sets replaces the archive's double `iSup`.
+The metric-property proofs are new.
 
-## Relation to Mathlib and to earlier batches
-
-Mathlib has the total variation of a single signed measure
-(`SignedMeasure.totalVariation`, via the Hahn–Jordan decomposition),
-but no supremum distance between two (probability) measures, and no
-statement that it is a metric. No earlier batch in the
-TheoryOfProbability run (batches 1–46) ports the total variation
-distance: batch 45's audit rejects the Legendre transform, the strong
-law, measurability from generators, textbook uniform-integrability
-equivalences, the alternative-condition optional stopping lemma, and
-the centered-sum lemma, and the still-unproved v1 targets (Cramér,
-domain of attraction, Blumenthal, strong Markov for Brownian motion,
-local CLT, Birkhoff) — the total variation distance is not among them.
+Mathlib's `SignedMeasure.totalVariation` is a measure-valued operation
+on a signed measure. The function here uses the source's set-supremum
+convention; no identification with a signed-measure norm or a density
+integral is used. Existing probability-measure topology/metric instances
+are unaffected by this namespace of functions and propositions.
 
 ## Main results
 
@@ -66,13 +61,11 @@ local CLT, Birkhoff) — the total variation distance is not among them.
   is `0` if `a = b` and `1` otherwise.
 -/
 
-/-- The **total variation distance** between two measures `μ` and `ν`,
-defined as `‖μ - ν‖ = sup_B |μ(B) - ν(B)|` where the supremum runs
-over all measurable sets `B`. The supremum is taken over the subtype
-of measurable sets, which is the same supremum as v1's double `iSup`
-over sets and measurability proofs. -/
+/-- The supremum distance between finite measures, using real masses.
+The probability-measure specialization is the Lecture 12 definition.
+The inline finiteness binders are part of this public interface. -/
 noncomputable def totalVariationDist {Ω : Type*} [MeasurableSpace Ω]
-    (μ ν : Measure Ω) : ℝ :=
+    (μ ν : Measure Ω) [IsFiniteMeasure μ] [IsFiniteMeasure ν] : ℝ :=
   ⨆ s : {s : Set Ω // MeasurableSet s}, |(μ s.1).toReal - (ν s.1).toReal|
 
 variable {Ω : Type*} [MeasurableSpace Ω] {μ ν ρ : Measure Ω}
@@ -135,8 +128,8 @@ theorem totalVariationDist_self [IsProbabilityMeasure μ] :
   refine totalVariationDist_le fun s _ => ?_
   simp
 
-/-- Total variation distance is symmetric. -/
-theorem totalVariationDist_comm :
+/-- The supremum distance is symmetric for finite measures. -/
+theorem totalVariationDist_comm [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     totalVariationDist μ ν = totalVariationDist ν μ := by
   show (⨆ s : {s : Set Ω // MeasurableSet s}, |(μ s.1).toReal - (ν s.1).toReal|) =
     ⨆ s : {s : Set Ω // MeasurableSet s}, |(ν s.1).toReal - (μ s.1).toReal|
@@ -182,7 +175,7 @@ theorem totalVariationDist_eq_zero_iff [IsProbabilityMeasure μ] [IsProbabilityM
     exact (ENNReal.toReal_eq_toReal_iff' (measure_ne_top μ s)
       (measure_ne_top ν s)).mp hEq
   · intro h
-    rw [h]
+    subst μ
     exact totalVariationDist_self
 
 /-- The total variation distance between two Dirac measures is `0` if
