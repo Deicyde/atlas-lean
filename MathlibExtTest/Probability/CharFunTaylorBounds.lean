@@ -29,11 +29,11 @@ theorem norm_exp_ofReal_mul_I_sub_one_sub_le_test (u : ℝ) :
 
 /-- Signature restatement: second-order characteristic-function bound. -/
 theorem norm_charFun_sub_one_sub_le_test (X : Ω → ℝ) (hmeas : Measurable X)
-    (hX_int : Integrable X μ) (hX_sq_int : Integrable (fun ω => (X ω) ^ 2) μ)
+    (hX_sq_int : Integrable (fun ω => (X ω) ^ 2) μ)
     (t : ℝ) :
     ‖charFun (μ.map X) t - 1 - ↑t * Complex.I * ↑(∫ ω, X ω ∂μ)‖
       ≤ t ^ 2 * ∫ ω, (X ω) ^ 2 ∂μ :=
-  norm_charFun_sub_one_sub_le X hmeas hX_int hX_sq_int t
+  norm_charFun_sub_one_sub_le X hmeas hX_sq_int t
 
 /-- Signature restatement: first-order characteristic-function bound. -/
 theorem norm_charFun_sub_one_le_test (X : Ω → ℝ) (hmeas : Measurable X)

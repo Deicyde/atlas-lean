@@ -147,16 +147,28 @@ theorem norm_exp_ofReal_mul_I_sub_one_sub_le (u : ℝ) :
           nlinarith [hu2, mul_pos (show (0 : ℝ) < |u| - 2 by linarith)
             (show (0 : ℝ) < |u| + 1 by linarith)]
 
-/-- Second-order Taylor bound for the characteristic function: for an
-integrable, square-integrable real random variable `X`,
+/-- Second-order Taylor bound for the characteristic function: for a
+square-integrable real random variable `X`,
 `‖φ_X(t) - 1 - it𝔼[X]‖ ≤ t² 𝔼[X²]`. -/
 theorem norm_charFun_sub_one_sub_le
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
     (X : Ω → ℝ) (hmeas : Measurable X)
-    (hX_int : Integrable X μ) (hX_sq_int : Integrable (fun ω => (X ω) ^ 2) μ)
+    (hX_sq_int : Integrable (fun ω => (X ω) ^ 2) μ)
     (t : ℝ) :
     ‖charFun (μ.map X) t - 1 - ↑t * Complex.I * ↑(∫ ω, X ω ∂μ)‖
       ≤ t ^ 2 * ∫ ω, (X ω) ^ 2 ∂μ := by
+  have hX_int : Integrable X μ := by
+    have hbound : ∀ ω, |X ω| ≤ ((X ω) ^ 2 + 1) / 2 := by
+      intro ω
+      have h := two_mul_le_add_sq |X ω| (1 : ℝ)
+      rw [sq_abs] at h
+      linarith
+    have hg_int : Integrable (fun ω => ((X ω) ^ 2 + 1) / 2) μ :=
+      (hX_sq_int.add (integrable_const (1 : ℝ))).div_const 2
+    exact hg_int.mono' hmeas.aestronglyMeasurable (by
+      filter_upwards with ω
+      rw [Real.norm_eq_abs]
+      exact hbound ω)
   have hX_ae : AEMeasurable X μ := hmeas.aemeasurable
   -- Integral representation of `charFun (μ.map X) t`.
   have hchar : charFun (μ.map X) t
@@ -268,19 +280,7 @@ theorem norm_charFun_sub_one_le_sq_mul_variance
     (hint2 : Integrable (fun ω => (X ω) ^ 2) μ)
     (t : ℝ) :
     ‖charFun (μ.map X) t - 1‖ ≤ t ^ 2 * ∫ ω, (X ω) ^ 2 ∂μ := by
-  have hX_int : Integrable X μ := by
-    have hbound : ∀ ω, |X ω| ≤ ((X ω) ^ 2 + 1) / 2 := by
-      intro ω
-      have h := two_mul_le_add_sq |X ω| (1 : ℝ)
-      rw [sq_abs] at h
-      linarith
-    have hg_int : Integrable (fun ω => ((X ω) ^ 2 + 1) / 2) μ :=
-      (hint2.add (integrable_const (1 : ℝ))).div_const 2
-    exact hg_int.mono' hmeas.aestronglyMeasurable (by
-      filter_upwards with ω
-      rw [Real.norm_eq_abs]
-      exact hbound ω)
-  have h := norm_charFun_sub_one_sub_le X hmeas hX_int hint2 t
+  have h := norm_charFun_sub_one_sub_le X hmeas hint2 t
   simp only [hmean, Complex.ofReal_zero, mul_zero, sub_zero] at h
   exact h
 
