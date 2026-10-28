@@ -36,7 +36,8 @@ The strict left tail is `μ(Iio(-x))`. For finite measures at nonnegative
 thresholds, its sum with the strict right tail is the real absolute-tail mass.
 The helper definitions are real projections for all measures; probability and
 absolute-tail interpretations are asserted only in their stated finite/domain
-scope. Tail balance requires an eventually positive combined tail. In particular,
+scope. Tail balance is defined for finite measures and requires an eventually
+positive combined tail. In particular,
 eventually zero combined tails, including Dirac masses, have no balance parameter.
 
 The domain-of-attraction and three tail-asymptotic theorems left unproved in v1
@@ -368,17 +369,18 @@ theorem tendsto_combinedTail_atTop (μ : Measure ℝ) [IsFiniteMeasure μ] :
 ### Tail balance
 -/
 
-/-- Tail balance requires an eventually positive combined real tail and a ratio limit.
-For finite probability measures this expresses `P(X > x) / P(|X| > x) → p`.
-The eventual positivity prevents totalized division from accepting an eventual `0 / 0`. -/
-def HasTailBalance (μ : Measure ℝ) (p : ℝ) : Prop :=
+/-- Tail balance for a finite measure requires an eventually positive combined real tail
+and a ratio limit. For probability measures this expresses `P(X > x) / P(|X| > x) → p`.
+Finiteness prevents infinite source tails from collapsing through `toReal`; eventual
+positivity prevents totalized division from accepting an eventual `0 / 0`. -/
+def HasTailBalance (μ : Measure ℝ) [IsFiniteMeasure μ] (p : ℝ) : Prop :=
   0 ≤ p ∧ p ≤ 1 ∧
   (∀ᶠ x in atTop, 0 < combinedTail μ x) ∧
   Tendsto (fun x => rightTail μ x / combinedTail μ x) atTop (𝓝 p)
 
 /-- An eventually zero right tail has balance zero when the combined tail remains
 positive eventually. -/
-theorem hasTailBalance_zero_of_eventually_rightTail_eq_zero (μ : Measure ℝ)
+theorem hasTailBalance_zero_of_eventually_rightTail_eq_zero (μ : Measure ℝ) [IsFiniteMeasure μ]
     (h : ∀ᶠ x in atTop, rightTail μ x = 0)
     (hdenom : ∀ᶠ x in atTop, 0 < combinedTail μ x) : HasTailBalance μ 0 := by
   refine ⟨le_refl 0, by norm_num, hdenom, ?_⟩
@@ -388,7 +390,8 @@ theorem hasTailBalance_zero_of_eventually_rightTail_eq_zero (μ : Measure ℝ)
   exact (tendsto_congr' hev).2 tendsto_const_nhds
 
 /-- An eventually zero denominator cannot define tail balance. -/
-theorem not_hasTailBalance_of_eventually_combinedTail_eq_zero (μ : Measure ℝ) (p : ℝ)
+theorem not_hasTailBalance_of_eventually_combinedTail_eq_zero (μ : Measure ℝ) [IsFiniteMeasure μ]
+    (p : ℝ)
     (hzero : ∀ᶠ x in atTop, combinedTail μ x = 0) : ¬ HasTailBalance μ p := by
   intro hbalance
   obtain ⟨x, hpos, hz⟩ := (hbalance.2.2.1.and hzero).exists

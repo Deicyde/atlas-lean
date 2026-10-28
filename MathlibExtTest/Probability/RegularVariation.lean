@@ -91,7 +91,7 @@ theorem zero_measure_not_tailBalance (p : ℝ) : ¬ HasTailBalance (0 : Measure 
   simp [combinedTail, rightTail, leftTail]
 
 /-- The zero-right-tail criterion now requires an actually positive denominator. -/
-example (μ : Measure ℝ)
+example (μ : Measure ℝ) [IsFiniteMeasure μ]
     (hzero : ∀ᶠ x in atTop, rightTail μ x = 0)
     (hpos : ∀ᶠ x in atTop, 0 < combinedTail μ x) : HasTailBalance μ 0 :=
   hasTailBalance_zero_of_eventually_rightTail_eq_zero μ hzero hpos
@@ -100,5 +100,33 @@ example (μ : Measure ℝ)
 #print axioms IsRegularlyVarying.mul
 #print axioms not_hasTailBalance_dirac
 #print axioms IsSlowlyVarying.mul
+
+
+/-- An infinite negative atom and a finite positive atom on the actual real Borel space. -/
+noncomputable def infiniteTailMeasure : Measure ℝ :=
+  (⊤ : ENNReal) • Measure.dirac (-1 : ℝ) + Measure.dirac (1 : ℝ)
+
+/-- One strict tail and the total mass are infinite; the other strict tail has mass one. -/
+theorem infinite_tail_masses :
+    infiniteTailMeasure (Set.Iio (0 : ℝ)) = ⊤ ∧
+    infiniteTailMeasure (Set.Ioi (0 : ℝ)) = 1 ∧
+    infiniteTailMeasure Set.univ = ⊤ := by
+  refine ⟨?_, ?_, ?_⟩ <;>
+    norm_num [infiniteTailMeasure, Measure.add_apply, Measure.smul_apply,
+      Measure.dirac_apply, smul_eq_mul]
+
+/-- The real projection loses the infinite left mass, leaving a positive denominator
+and ratio one at threshold zero. This is a projection check, not asymptotic balance. -/
+theorem infinite_tail_real_projection :
+    leftTail infiniteTailMeasure 0 = 0 ∧
+    rightTail infiniteTailMeasure 0 = 1 ∧
+    0 < combinedTail infiniteTailMeasure 0 ∧
+    rightTail infiniteTailMeasure 0 / combinedTail infiniteTailMeasure 0 = 1 := by
+  rcases infinite_tail_masses with ⟨hl, hr, _⟩
+  norm_num [leftTail, rightTail, combinedTail, hl, hr]
+
+/-- The fixture cannot supply the finite-measure instance required by tail balance. -/
+theorem infinite_tail_not_finite : ¬ IsFiniteMeasure infiniteTailMeasure := by
+  exact not_isFiniteMeasure_iff.mpr infinite_tail_masses.2.2
 
 end MathlibExtTest.Probability.RegularVariation
