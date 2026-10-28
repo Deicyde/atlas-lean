@@ -21,66 +21,26 @@ public import Mathlib.Topology.MetricSpace.Pseudo.Basic
 /-!
 # Regular variation
 
-A function `L : ℝ → ℝ` is *slowly varying* (at infinity) if it is positive on
-`(0, ∞)` and `L (c * x) / L x → 1` as `x → ∞` for every `c > 0`; a function
-`f` is *regularly varying* of index `ρ` if `f x = x ^ ρ * L x` eventually, for
-some slowly varying `L`. These are the notions behind the domain-of-attraction
-characterization of stable laws: for `0 < α < 2`, a probability measure on `ℝ`
-lies in the domain of attraction of a stable law of index `α` if and only if
-its combined tail `P (|X| > x)` is regularly varying of index `-α` and the
-right/combined tail ratio has a limit (tail balance).
+A slowly varying function is eventually positive and has ratio limit one under
+positive rescaling. A regularly varying function is eventually a power times a
+slowly varying factor. These are asymptotic properties and are preserved by
+changing the function on an eventually avoided set.
 
-## Source
+This module supplies corrected definitions and supporting closure/tail lemmas
+for the Lecture18 domain-of-attraction context in
+`v1/Atlas/TheoryOfProbability/targets.yaml`. The archived `DomainAttraction.lean`
+used global positivity, an inclusive left endpoint, and a totalized tail ratio.
+Those three conventions are corrected here; the archived sources are preserved.
 
-This formalizes the definitions from
-`v1/Atlas/TheoryOfProbability/code/DomainAttraction.lean`
-(`IsSlowlyVarying`, `IsRegularlyVarying`, `rightTail`, `leftTail`,
-`combinedTail`, `HasTailBalance`), which are the inputs of the
-"Domain of attraction to stable random variable" target (Lecture 18) of
-`v1/Atlas/TheoryOfProbability/targets.yaml`. The closure properties, the
-power-function examples, the tail estimates, and the tail-balance examples
-are new here.
+The strict left tail is `μ(Iio(-x))`. For finite measures at nonnegative
+thresholds, its sum with the strict right tail is the real absolute-tail mass.
+The helper definitions are real projections for all measures; probability and
+absolute-tail interpretations are asserted only in their stated finite/domain
+scope. Tail balance requires an eventually positive combined tail. In particular,
+eventually zero combined tails, including Dirac masses, have no balance parameter.
 
-## Scope
-
-In:
-
-* `IsSlowlyVarying`, `IsRegularlyVarying`: the definitions, ported verbatim
-  from v1.
-* `IsSlowlyVarying.of_tendsto`, `IsSlowlyVarying.mul`,
-  `IsSlowlyVarying.const_mul`: closure: any positive function with a
-  positive finite limit at infinity is slowly varying, and slowly varying
-  functions are closed under multiplication and positive scalar
-  multiplication. The constant function `1` and `fun x ↦ 1 + (1 + x)⁻¹`
-  are slowly varying examples.
-* `isRegularlyVarying_rpow`, `IsRegularlyVarying.mul`,
-  `IsRegularlyVarying.const_mul`, `IsRegularlyVarying.of_eventuallyEq`,
-  `IsRegularlyVarying.eventually_pos`: powers are regularly varying, and
-  regularly varying functions are closed under multiplication (indices add),
-  positive scalar multiplication, and eventual equality; a regularly
-  varying function is eventually positive.
-* `rightTail`, `leftTail`, `combinedTail`: the tails of a measure on `ℝ`,
-  ported verbatim from v1, with nonnegativity, the `≤ 1` / `≤ 2` bounds for
-  probability measures, antitonicity, and convergence to `0` at infinity.
-* `HasTailBalance`: the tail-balance definition, ported verbatim from v1,
-  with the general criterion that an eventually vanishing right tail gives
-  tail balance with parameter `0`, and the Dirac-mass example.
-
-Out:
-
-* `IsStable`, `InDomainOfAttraction`, `InDomainOfAttractionIndex` and the
-  convolution machinery (`measureConv`, `convPow`) from
-  `DomainAttraction.lean`: the convolution-power algebra on measures is
-  already in MathlibExt (batch 41, `MeasureTheory.Measure.convPow`), and
-  the domain-of-attraction theorems in v1 are left unproved there
-  (`domain_of_attraction_limit_is_stable`,
-  `domain_of_attraction_of_tail_conditions`,
-  `tail_conditions_of_domain_of_attraction`,
-  `domain_of_attraction_iff_tail_alpha_eq_two`).
-* The three asymptotics in `v1/Atlas/TheoryOfProbability/code/RegularVariation.lean`
-  (`regularlyVarying_generalized_inverse`,
-  `regularlyVarying_truncated_moment`, `regularlyVarying_tail_integral`):
-  all left unproved in v1, not claimed here.
+The domain-of-attraction and three tail-asymptotic theorems left unproved in v1
+are deferred. No stable-law or convolution theory is re-declared here.
 -/
 
 @[expose] public section
@@ -94,16 +54,16 @@ namespace MathlibExt.Probability.RegularVariation
 ### Slowly varying functions
 -/
 
-/-- `L : ℝ → ℝ` is *slowly varying* (at infinity) if it is positive on `(0, ∞)`
+/-- `L : ℝ → ℝ` is *slowly varying* (at infinity) if it is eventually positive at infinity
 and `L (c * x) / L x → 1` as `x → ∞` for every `c > 0`. -/
 def IsSlowlyVarying (L : ℝ → ℝ) : Prop :=
-  (∀ x, 0 < x → 0 < L x) ∧
+  (∀ᶠ x in atTop, 0 < L x) ∧
   ∀ c : ℝ, 0 < c → Tendsto (fun x => L (c * x) / L x) atTop (𝓝 1)
 
 /-- A positive function with a positive finite limit at infinity is slowly
 varying: the ratio of the function at `c * x` and at `x` tends to `a / a = 1`. -/
 theorem IsSlowlyVarying.of_tendsto {L : ℝ → ℝ} {a : ℝ}
-    (hpos : ∀ x, 0 < x → 0 < L x) (hlim : Tendsto L atTop (𝓝 a)) (ha : 0 < a) :
+    (hpos : ∀ᶠ x in atTop, 0 < L x) (hlim : Tendsto L atTop (𝓝 a)) (ha : 0 < a) :
     IsSlowlyVarying L := by
   refine ⟨hpos, fun c hc => ?_⟩
   have h2 : Tendsto (fun x : ℝ => c * x) atTop atTop :=
@@ -115,41 +75,47 @@ theorem IsSlowlyVarying.of_tendsto {L : ℝ → ℝ} {a : ℝ}
 
 /-- The constant function `1` is slowly varying. -/
 theorem isSlowlyVarying_one : IsSlowlyVarying (fun _ => (1 : ℝ)) := by
-  refine ⟨fun _ _ => one_pos, fun c _ => ?_⟩
+  refine ⟨Filter.Eventually.of_forall (fun _ => one_pos), fun c _ => ?_⟩
   simp
 
 /-- A positive constant function is slowly varying. -/
 theorem isSlowlyVarying_const {c : ℝ} (hc : 0 < c) : IsSlowlyVarying (fun _ => c) := by
-  refine ⟨fun _ _ => hc, fun d _ => ?_⟩
+  refine ⟨Filter.Eventually.of_forall (fun _ => hc), fun d _ => ?_⟩
   simp [div_self hc.ne']
 
 /-- Slowly varying functions are closed under multiplication. -/
 theorem IsSlowlyVarying.mul {L₁ L₂ : ℝ → ℝ}
     (h₁ : IsSlowlyVarying L₁) (h₂ : IsSlowlyVarying L₂) :
     IsSlowlyVarying (fun x => L₁ x * L₂ x) := by
-  refine ⟨fun x hx => mul_pos (h₁.1 x hx) (h₂.1 x hx), fun c hc => ?_⟩
-  have h := (h₁.2 c hc).mul (h₂.2 c hc)
-  simp only [mul_one] at h
-  refine h.congr' ?_
-  filter_upwards with x
-  exact div_mul_div_comm _ _ _ _
+  refine ⟨?_, fun c hc => ?_⟩
+  · filter_upwards [h₁.1, h₂.1] with x hx₁ hx₂
+    exact mul_pos hx₁ hx₂
+  · have h := (h₁.2 c hc).mul (h₂.2 c hc)
+    simp only [mul_one] at h
+    refine h.congr' ?_
+    filter_upwards with x
+    exact div_mul_div_comm _ _ _ _
 
 /-- Slowly varying functions are closed under multiplication by a positive
 constant. -/
 theorem IsSlowlyVarying.const_mul {L : ℝ → ℝ} (hL : IsSlowlyVarying L) {c : ℝ}
     (hc : 0 < c) : IsSlowlyVarying (fun x => c * L x) := by
-  refine ⟨fun x hx => mul_pos hc (hL.1 x hx), fun d hd => ?_⟩
-  have heq : (fun x => c * L (d * x) / (c * L x)) = fun x => L (d * x) / L x := by
-    funext x
-    exact mul_div_mul_left _ _ hc.ne'
-  rw [heq]
-  exact hL.2 d hd
+  refine ⟨?_, fun d hd => ?_⟩
+  · filter_upwards [hL.1] with x hx
+    exact mul_pos hc hx
+  · have heq : (fun x => c * L (d * x) / (c * L x)) = fun x => L (d * x) / L x := by
+      funext x
+      exact mul_div_mul_left _ _ hc.ne'
+    rw [heq]
+    exact hL.2 d hd
 
 /-- `fun x ↦ 1 + (1 + x)⁻¹` is slowly varying: it tends to the positive limit
 `1` at infinity. -/
 theorem isSlowlyVarying_one_add_inv :
     IsSlowlyVarying (fun x : ℝ => 1 + (1 + x)⁻¹) := by
-  apply IsSlowlyVarying.of_tendsto (fun x hx => by positivity) _ one_pos
+  apply IsSlowlyVarying.of_tendsto (by
+    filter_upwards [eventually_gt_atTop (0 : ℝ)] with x hx
+    positivity) _ one_pos
   have h : Tendsto (fun x : ℝ => (1 + x)⁻¹) atTop (𝓝 0) := by
     have h1 : Tendsto (fun x : ℝ => 1 + x) atTop atTop := by
       simpa [add_comm] using
@@ -157,6 +123,21 @@ theorem isSlowlyVarying_one_add_inv :
           (tendsto_id : Tendsto (id : ℝ → ℝ) atTop atTop)
     exact tendsto_inv_atTop_zero.comp h1
   simpa using tendsto_const_nhds.add h
+
+/-- Slow variation is preserved by changing the function on an eventually avoided set. -/
+theorem IsSlowlyVarying.of_eventuallyEq {f g : ℝ → ℝ}
+    (hf : IsSlowlyVarying f) (hfg : f =ᶠ[atTop] g) : IsSlowlyVarying g := by
+  refine ⟨?_, fun c hc => ?_⟩
+  · filter_upwards [hf.1, hfg] with x hx hfx
+    rwa [← hfx]
+  · have hscale : Tendsto (fun x : ℝ => c * x) atTop atTop :=
+      tendsto_id.const_mul_atTop hc
+    have hscaled := hfg.comp_tendsto hscale
+    apply (hf.2 c hc).congr'
+    filter_upwards [hfg, hscaled] with x hx hcx
+    change f (c * x) / f x = g (c * x) / g x
+    change f (c * x) = g (c * x) at hcx
+    rw [hx, hcx]
 
 /-!
 ### Regularly varying functions
@@ -215,22 +196,24 @@ theorem IsRegularlyVarying.of_eventuallyEq {f g : ℝ → ℝ} {ρ : ℝ}
 theorem IsRegularlyVarying.eventually_pos {f : ℝ → ℝ} {ρ : ℝ}
     (hf : IsRegularlyVarying f ρ) : ∀ᶠ x in atTop, 0 < f x := by
   obtain ⟨L, hL, hev⟩ := hf
-  filter_upwards [eventually_gt_atTop (0 : ℝ), hev] with x hx hfx
+  filter_upwards [eventually_gt_atTop (0 : ℝ), hL.1, hev] with x hx hLx hfx
   rw [hfx]
-  exact mul_pos (Real.rpow_pos_of_pos hx ρ) (hL.1 x hx)
+  exact mul_pos (Real.rpow_pos_of_pos hx ρ) hLx
 
 /-!
 ### Tails of a measure on `ℝ`
 -/
 
-/-- The right tail probability `μ ((x, ∞))` as a real number. -/
+/-- The real projection of `μ(Ioi x)`; it is the right-tail mass when `μ` is finite. -/
 def rightTail (μ : Measure ℝ) (x : ℝ) : ℝ := (μ (Set.Ioi x)).toReal
 
-/-- The left tail probability `μ ((-∞, -x])` as a real number. -/
-def leftTail (μ : Measure ℝ) (x : ℝ) : ℝ := (μ (Set.Iic (-x))).toReal
+/-- The real projection of the strict left tail `μ(Iio(-x))`, with mass interpretation
+for finite measures. -/
+def leftTail (μ : Measure ℝ) (x : ℝ) : ℝ := (μ (Set.Iio (-x))).toReal
 
-/-- The two-sided tail `μ (|X| > x)` written as the sum of the right and left
-tails. -/
+/-- The sum of the strict right and left real-valued tail projections.
+For a finite measure and `0 ≤ x`, this equals `μ {y | x < |y|}` as a real number.
+At negative thresholds the two sets can overlap, so this is not the absolute-tail mass. -/
 def combinedTail (μ : Measure ℝ) (x : ℝ) : ℝ := rightTail μ x + leftTail μ x
 
 theorem combinedTail_apply (μ : Measure ℝ) (x : ℝ) :
@@ -259,10 +242,10 @@ theorem rightTail_le_one (μ : Measure ℝ) [IsProbabilityMeasure μ] (x : ℝ) 
 /-- The left tail is at most `1` for a probability measure. -/
 theorem leftTail_le_one (μ : Measure ℝ) [IsProbabilityMeasure μ] (x : ℝ) :
     leftTail μ x ≤ 1 := by
-  have h : μ (Set.Iic (-x)) ≤ 1 := by
-    calc μ (Set.Iic (-x)) ≤ μ Set.univ := measure_mono (Set.subset_univ _)
+  have h : μ (Set.Iio (-x)) ≤ 1 := by
+    calc μ (Set.Iio (-x)) ≤ μ Set.univ := measure_mono (Set.subset_univ _)
       _ = 1 := measure_univ
-  have hle : (μ (Set.Iic (-x))).toReal ≤ (1 : ℝ≥0∞).toReal :=
+  have hle : (μ (Set.Iio (-x))).toReal ≤ (1 : ℝ≥0∞).toReal :=
     (ENNReal.toReal_le_toReal (measure_ne_top μ _) ENNReal.one_ne_top).2 h
   simpa [leftTail] using hle
 
@@ -285,7 +268,7 @@ theorem leftTail_antitone (μ : Measure ℝ) [IsFiniteMeasure μ] :
     Antitone (leftTail μ) := by
   intro a b hab
   exact ENNReal.toReal_mono (measure_ne_top μ _)
-    (measure_mono (Set.Iic_subset_Iic.mpr (neg_le_neg hab)))
+    (measure_mono (Set.Iio_subset_Iio (neg_le_neg hab)))
 
 /-- The combined tail is antitone in the threshold. -/
 theorem combinedTail_antitone (μ : Measure ℝ) [IsFiniteMeasure μ] :
@@ -340,23 +323,23 @@ private theorem tendsto_rightTail_nat (μ : Measure ℝ) [IsFiniteMeasure μ] :
   simpa [rightTail] using h2
 
 /-- The left tail at natural-number thresholds tends to `0`, by continuity
-from above for the decreasing sets `(-∞, -n]`, whose intersection is empty. -/
+from above for the decreasing sets `(-∞, -n)`, whose intersection is empty. -/
 private theorem tendsto_leftTail_nat (μ : Measure ℝ) [IsFiniteMeasure μ] :
     Tendsto (fun n : ℕ => leftTail μ n) atTop (𝓝 0) := by
-  have hInter : ⋂ n : ℕ, Set.Iic (-(n : ℝ)) = ∅ := by
+  have hInter : ⋂ n : ℕ, Set.Iio (-(n : ℝ)) = ∅ := by
     ext x
-    simp only [Set.mem_iInter, Set.mem_Iic, Set.mem_empty_iff_false, iff_false,
+    simp only [Set.mem_iInter, Set.mem_Iio, Set.mem_empty_iff_false, iff_false,
       not_forall]
     obtain ⟨n, hn⟩ := exists_nat_gt (-x)
     exact ⟨n, by
       have : (-(n : ℝ)) < x := by linarith
-      exact not_le.mpr this⟩
-  have h := tendsto_measure_iInter_atTop (μ := μ) (s := fun n : ℕ => Set.Iic (-(n : ℝ)))
-    (fun _ => MeasurableSet.nullMeasurableSet measurableSet_Iic)
-    (fun _ _ hnm => Set.Iic_subset_Iic.mpr (neg_le_neg (by exact_mod_cast hnm)))
+      exact not_lt.mpr this.le⟩
+  have h := tendsto_measure_iInter_atTop (μ := μ) (s := fun n : ℕ => Set.Iio (-(n : ℝ)))
+    (fun _ => MeasurableSet.nullMeasurableSet measurableSet_Iio)
+    (fun _ _ hnm => Set.Iio_subset_Iio (neg_le_neg (by exact_mod_cast hnm)))
     ⟨0, measure_ne_top μ _⟩
   rw [hInter, measure_empty] at h
-  have h2 : Tendsto (fun n : ℕ => (μ (Set.Iic (-(n : ℝ)))).toReal) atTop (𝓝 0) := by
+  have h2 : Tendsto (fun n : ℕ => (μ (Set.Iio (-(n : ℝ)))).toReal) atTop (𝓝 0) := by
     rw [← ENNReal.toReal_zero]
     exact (ENNReal.tendsto_toReal_iff (fun _ => measure_ne_top μ _)
       ENNReal.zero_ne_top).2 h
@@ -385,33 +368,45 @@ theorem tendsto_combinedTail_atTop (μ : Measure ℝ) [IsFiniteMeasure μ] :
 ### Tail balance
 -/
 
-/-- `μ` has *tail balance* with parameter `p ∈ [0, 1]` if the ratio of the right
-tail to the combined two-sided tail tends to `p` as `x → ∞`, i.e.
-`P (X > x) / P (|X| > x) → p`. -/
+/-- Tail balance requires an eventually positive combined real tail and a ratio limit.
+For finite probability measures this expresses `P(X > x) / P(|X| > x) → p`.
+The eventual positivity prevents totalized division from accepting an eventual `0 / 0`. -/
 def HasTailBalance (μ : Measure ℝ) (p : ℝ) : Prop :=
   0 ≤ p ∧ p ≤ 1 ∧
+  (∀ᶠ x in atTop, 0 < combinedTail μ x) ∧
   Tendsto (fun x => rightTail μ x / combinedTail μ x) atTop (𝓝 p)
 
-/-- If the right tail is eventually `0`, the tail balance is `0`: the ratio is
-eventually `0 / _ = 0`. -/
+/-- An eventually zero right tail has balance zero when the combined tail remains
+positive eventually. -/
 theorem hasTailBalance_zero_of_eventually_rightTail_eq_zero (μ : Measure ℝ)
-    (h : ∀ᶠ x in atTop, rightTail μ x = 0) : HasTailBalance μ 0 := by
-  refine ⟨le_refl 0, by norm_num, ?_⟩
+    (h : ∀ᶠ x in atTop, rightTail μ x = 0)
+    (hdenom : ∀ᶠ x in atTop, 0 < combinedTail μ x) : HasTailBalance μ 0 := by
+  refine ⟨le_refl 0, by norm_num, hdenom, ?_⟩
   have hev : (fun x => rightTail μ x / combinedTail μ x) =ᶠ[atTop] fun _ => (0 : ℝ) := by
     filter_upwards [h] with x hx
     rw [hx, zero_div]
   exact (tendsto_congr' hev).2 tendsto_const_nhds
 
-/-- The Dirac mass at `a` has tail balance `0`: its right tail vanishes for
-`x ≥ a`. -/
-theorem hasTailBalance_dirac (a : ℝ) : HasTailBalance (Measure.dirac a) 0 := by
-  apply hasTailBalance_zero_of_eventually_rightTail_eq_zero
-  filter_upwards [eventually_ge_atTop a] with x hx
-  have hdirac : Measure.dirac a (Set.Ioi x) = 0 := by
+/-- An eventually zero denominator cannot define tail balance. -/
+theorem not_hasTailBalance_of_eventually_combinedTail_eq_zero (μ : Measure ℝ) (p : ℝ)
+    (hzero : ∀ᶠ x in atTop, combinedTail μ x = 0) : ¬ HasTailBalance μ p := by
+  intro hbalance
+  obtain ⟨x, hpos, hz⟩ := (hbalance.2.2.1.and hzero).exists
+  rw [hz] at hpos
+  exact (lt_irrefl (0 : ℝ)) hpos
+
+/-- Every Dirac mass has eventually zero combined tail, so has no tail-balance parameter. -/
+theorem not_hasTailBalance_dirac (a p : ℝ) : ¬ HasTailBalance (Measure.dirac a) p := by
+  apply not_hasTailBalance_of_eventually_combinedTail_eq_zero
+  filter_upwards [eventually_ge_atTop |a|] with x hx
+  have hr : Measure.dirac a (Set.Ioi x) = 0 := by
     rw [Measure.dirac_apply]
-    exact Set.indicator_of_notMem (not_lt.mpr hx) _
-  show (Measure.dirac a (Set.Ioi x)).toReal = 0
-  rw [hdirac]
-  simp
+    exact Set.indicator_of_notMem (not_lt.mpr ((le_abs_self a).trans hx)) _
+  have hl : Measure.dirac a (Set.Iio (-x)) = 0 := by
+    have hnot : a ∉ Set.Iio (-x) :=
+      not_lt.mpr ((neg_le_neg hx).trans (neg_abs_le a))
+    rw [Measure.dirac_apply]
+    exact Set.indicator_of_notMem hnot (fun _ : ℝ => (1 : ℝ≥0∞))
+  simp only [combinedTail, rightTail, leftTail, hr, hl, ENNReal.toReal_zero, add_zero]
 
 end MathlibExt.Probability.RegularVariation

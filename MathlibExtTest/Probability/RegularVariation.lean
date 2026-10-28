@@ -10,6 +10,8 @@ module
 
 public import MathlibExt.Probability.RegularVariation
 
+import Mathlib.Tactic.NormNum
+
 @[expose] public section
 
 open MeasureTheory Filter
@@ -60,12 +62,43 @@ example (μ : Measure ℝ) [IsProbabilityMeasure μ] (x : ℝ) :
     rightTail μ x ≤ 1 :=
   rightTail_le_one μ x
 
-/-- The Dirac mass has tail balance `0`. -/
-example (a : ℝ) : HasTailBalance (Measure.dirac a) 0 := hasTailBalance_dirac a
+/-- A Dirac mass has no defined tail-balance ratio eventually. -/
+example (a : ℝ) : ¬ HasTailBalance (Measure.dirac a) 0 := not_hasTailBalance_dirac a 0
+
+/-- A bounded-domain modification with value zero at `1` is still slowly varying. -/
+theorem slowlyVarying_bounded_modification :
+    let L : ℝ → ℝ := fun x => if x = 1 then 0 else 1
+    IsSlowlyVarying L ∧ L 1 = 0 := by
+  intro L
+  constructor
+  · apply isSlowlyVarying_one.of_eventuallyEq
+    filter_upwards [eventually_gt_atTop (1 : ℝ)] with x hx
+    simp [L, ne_of_gt hx]
+  · simp [L]
+
+/-- The atom at the excluded left boundary contributes neither to the strict tail
+nor to `P(|X| > 1)`. -/
+theorem strict_left_boundary_atom :
+    leftTail (Measure.dirac (-1 : ℝ)) 1 = 0 ∧
+    combinedTail (Measure.dirac (-1 : ℝ)) 1 = 0 ∧
+    (Measure.dirac (-1 : ℝ) {y : ℝ | (1 : ℝ) < |y|}).toReal = 0 := by
+  refine ⟨?_, ?_, ?_⟩ <;> norm_num [leftTail, combinedTail, rightTail, Measure.dirac_apply]
+
+/-- Totalized `0/0` cannot give the zero measure a tail-balance parameter. -/
+theorem zero_measure_not_tailBalance (p : ℝ) : ¬ HasTailBalance (0 : Measure ℝ) p := by
+  apply not_hasTailBalance_of_eventually_combinedTail_eq_zero
+  filter_upwards with x
+  simp [combinedTail, rightTail, leftTail]
+
+/-- The zero-right-tail criterion now requires an actually positive denominator. -/
+example (μ : Measure ℝ)
+    (hzero : ∀ᶠ x in atTop, rightTail μ x = 0)
+    (hpos : ∀ᶠ x in atTop, 0 < combinedTail μ x) : HasTailBalance μ 0 :=
+  hasTailBalance_zero_of_eventually_rightTail_eq_zero μ hzero hpos
 
 #print axioms tendsto_combinedTail_atTop
 #print axioms IsRegularlyVarying.mul
-#print axioms hasTailBalance_dirac
+#print axioms not_hasTailBalance_dirac
 #print axioms IsSlowlyVarying.mul
 
 end MathlibExtTest.Probability.RegularVariation
