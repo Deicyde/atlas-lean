@@ -35,8 +35,8 @@ below are also ported from that file.
 
 Mathlib has the `L¹`-bounded form of this theorem
 (`Submartingale.ae_tendsto_limitProcess`, which assumes
-`eLpNorm (X n) 1 μ ≤ R` for all `n`), but no packaged statement in the
-textbook's `sup E[X_n⁺] < ∞` form. The bridge is the pointwise identity
+`eLpNorm (X n) 1 μ ≤ R` for all `n`). This API obtains that bound from the
+textbook positive-part hypothesis. The bridge is the pointwise identity
 `‖x‖ = 2 x⁺ - x` together with monotonicity of `∫ X n dμ`, which turns a
 uniform bound on `∫ (X n)⁺ dμ` into a uniform `L¹` bound
 `∫ ‖X n‖ dμ ≤ 2C - ∫ X 0 dμ`.
