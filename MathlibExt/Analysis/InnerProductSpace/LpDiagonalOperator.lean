@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Analysis.InnerProductSpace.l2Space
+public import MathlibExt.Analysis.InnerProductSpace.HilbertBasisDiagonal
 public import Mathlib.Analysis.InnerProductSpace.Adjoint
 public import Mathlib.Analysis.Normed.Operator.Compact.Basic
 
@@ -28,19 +28,20 @@ diagonal operator with conjugate coefficients, it is self-adjoint exactly
 when the coefficients are real, and it is compact exactly when the
 coefficients vanish at infinity (in the cofinite-filter sense).
 
-This is a companion to the Hilbert-space / spectral material of
+These are supporting results for the existing bundled
+`MathlibExt.Analysis.InnerProductSpace.HilbertBasisDiagonal.diagonalOperator`.
+Its `ℓ²` specialization uses the identity Hilbert basis, and its bounded coordinate
+multiplication is implemented by Mathlib's `lp.mapCLM`. The original `diagonalCLM`
+and `diagonalLinMap` names are compatibility abbreviations for that specialization
+and its linear-map projection.
+
+The development is a companion to the Hilbert-space and spectral material in
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean` and
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
-(the Hilbert-basis diagonal operator of batch 19,
-`HilbertBasisDiagonal.diagonalOperator`, is the plain-function version of
-this operator on a general Hilbert basis; it was not bundled as a bounded
-operator, and its norm, adjoint, self-adjointness and compactness were not
-established there). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in base MathlibExt: Mathlib has the `ℓ²` space and its
-inner product (`lp.inner_eq_tsum`), single-coordinate vectors
-(`lp.single`), and the abstract compact-operator API, but no diagonal
-operator on `ℓ²`. See e.g. Reed–Simon, *Methods of Modern Mathematical
-Physics I: Functional Analysis*, Section VI.3, for the classical statements.
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`. The latter's
+Green's square-root expansion supplies the source context for the canonical
+Hilbert-basis diagonal construction. The norm, adjoint, compactness, and spectrum
+results here are supporting theorems; they are not identified as imported v1 targets.
+The archived sources are preserved.
 
 ## Main declarations
 
@@ -79,25 +80,37 @@ theorem memℓp_diagonal (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C
   simp only [norm_mul, RCLike.norm_ofReal, abs_of_nonneg hC0]
   exact mul_le_mul_of_nonneg_right (hC i) (norm_nonneg _)
 
-/-- The diagonal operator as a linear map. -/
-noncomputable def diagonalLinMap (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C) :
-    ℓ²(ι, 𝕜) →ₗ[𝕜] ℓ²(ι, 𝕜) where
-  toFun x := ⟨fun i => a i * x i, memℓp_diagonal a hbdd x⟩
-  map_add' x y := by
-    apply lp.ext
-    funext i
-    simp only [lp.coeFn_add, Pi.add_apply, mul_add]
-  map_smul' c x := by
-    apply lp.ext
-    funext i
-    simp only [lp.coeFn_smul, Pi.smul_apply, smul_eq_mul, RingHom.id_apply]
-    ring
+/-- The existing bounded Hilbert-basis diagonal operator in the identity coordinates of `ℓ²`.
+The bound is normalized so that empty index types also admit a nonnegative bound. -/
+noncomputable abbrev diagonalCLM (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C) :
+    ℓ²(ι, 𝕜) →L[𝕜] ℓ²(ι, 𝕜) :=
+  MathlibExt.Analysis.InnerProductSpace.HilbertBasisDiagonal.diagonalOperator
+    (HilbertBasis.ofRepr (LinearIsometryEquiv.refl 𝕜 (ℓ²(ι, 𝕜)))) a
+    (C := max hbdd.choose 0)
+    (fun i => (hbdd.choose_spec i).trans (le_max_left _ _))
+
+/-- Pointwise action of the shared diagonal operator. -/
+theorem diagonalCLM_apply (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C)
+    (x : ℓ²(ι, 𝕜)) (i : ι) :
+    diagonalCLM a hbdd x i = a i * x i := by
+  let b : HilbertBasis ι 𝕜 (ℓ²(ι, 𝕜)) :=
+    HilbertBasis.ofRepr (LinearIsometryEquiv.refl 𝕜 (ℓ²(ι, 𝕜)))
+  have h := MathlibExt.Analysis.InnerProductSpace.HilbertBasisDiagonal.repr_diagonalOperator_apply
+    (b := b) (a := a) (C := max hbdd.choose 0)
+    (fun j => (hbdd.choose_spec j).trans (le_max_left _ _)) x i
+  rw [← b.repr_apply_apply] at h
+  exact h
+
+/-- Compatibility projection of the shared bounded operator to a linear map. -/
+noncomputable abbrev diagonalLinMap (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C) :
+    ℓ²(ι, 𝕜) →ₗ[𝕜] ℓ²(ι, 𝕜) :=
+  (diagonalCLM a hbdd).toLinearMap
 
 /-- Pointwise action of the diagonal linear map. -/
 theorem diagonalLinMap_apply (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C)
     (x : ℓ²(ι, 𝕜)) (i : ι) :
     diagonalLinMap a hbdd x i = a i * x i :=
-  rfl
+  diagonalCLM_apply a hbdd x i
 
 /-- The diagonal operator is bounded by any uniform bound on its coefficients. -/
 theorem norm_diagonalLinMap_le (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C)
@@ -112,19 +125,6 @@ theorem norm_diagonalLinMap_le (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖
         lp.norm_mono (by norm_num) hpt
     _ = C * ‖x‖ := by
         rw [norm_smul, RCLike.norm_ofReal, abs_of_nonneg hC0]
-
-/-- The diagonal operator with bounded coefficients `a`, as a bounded operator on `ℓ²`. -/
-noncomputable def diagonalCLM (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C) :
-    ℓ²(ι, 𝕜) →L[𝕜] ℓ²(ι, 𝕜) :=
-  (diagonalLinMap a hbdd).mkContinuous (max hbdd.choose 0) (fun x =>
-    norm_diagonalLinMap_le a hbdd (le_max_right _ _)
-      (fun i => (hbdd.choose_spec i).trans (le_max_left _ _)) x)
-
-/-- Pointwise action of the diagonal operator. -/
-theorem diagonalCLM_apply (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C)
-    (x : ℓ²(ι, 𝕜)) (i : ι) :
-    diagonalCLM a hbdd x i = a i * x i :=
-  rfl
 
 /-- The diagonal operator acts on a basis vector by scalar multiplication. -/
 theorem diagonalCLM_single [DecidableEq ι] (a : ι → 𝕜) (hbdd : ∃ C, ∀ i, ‖a i‖ ≤ C)

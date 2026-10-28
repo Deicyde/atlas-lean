@@ -21,8 +21,9 @@ diagonal operator `D_a` on `ℓ²(ι, 𝕜)` is the closure of the range of `a`.
 This is the spectral counterpart of the norm, adjoint and compactness
 results in `LpDiagonalOperator.lean`, and a companion to the Hilbert-space /
 spectral material of `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`.
-It is not one of the 72 v1 targets, and it is not in the pinned Mathlib or in
-base MathlibExt.
+This is a supporting result on the existing bundled Hilbert-basis diagonal API,
+specialized to identity coordinates through `LpDiagonalOperator.diagonalCLM`.
+The archived source supplies context; this theorem is not identified as a v1 target.
 -/
 
 @[expose] public section
