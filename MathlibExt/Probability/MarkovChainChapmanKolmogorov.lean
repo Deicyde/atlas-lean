@@ -29,8 +29,7 @@ namespace MathlibExt.Probability.MarkovChainChapmanKolmogorov
 
 For a discrete-time Markov chain `X` with transition kernel `κ`, the
 `n`-step transition probabilities are given by the powers `κ ^ n` of the
-kernel. This file proves the two forms of that statement that are not
-already in Mathlib:
+kernel. This file derives two consequences of `IsMarkovChain`:
 
 * the conditional form: given the past up to time `m`, the conditional
   probability that `X (m + n)` lies in `B` is `(κ ^ n) (X m) B`;
@@ -39,29 +38,25 @@ already in Mathlib:
 
 ## Source
 
-This formalizes the targets "Definition (Markov chain, general)" and
-"Theorem (Markov property)" (Lecture 30/31) of
-`v1/Atlas/TheoryOfProbability/targets.yaml`. The v1 formalization is
-`v1/Atlas/TheoryOfProbability/code/MarkovChain.lean` (the `IsMarkovChain`
-definition, ported here verbatim) and
-`v1/Atlas/TheoryOfProbability/code/MarkovPropertyChain.lean` (whose
-`IsMarkovChain.markov_property` is the one-step indicator case of the
-conditional form below).
+The `IsMarkovChain` definition comes from "Definition (Markov chain,
+general)" (Lecture 30/31) in `v1/Atlas/TheoryOfProbability/targets.yaml`
+and `v1/Atlas/TheoryOfProbability/code/MarkovChain.lean`. Its fields are
+adaptedness and the one-step conditional-indicator identity. The archived
+`IsMarkovChain.markov_property` in
+`v1/Atlas/TheoryOfProbability/code/MarkovPropertyChain.lean` is a
+projection of that one-step field.
 
-## Relation to Mathlib and to earlier batches
+The two `n`-step results below are new consequences of this definition.
+They do not formalize the separate canonical path-space Markov property
+for arbitrary bounded measurable future path functionals.
 
-Mathlib has the Chapman–Kolmogorov equations for kernel composition
-itself (`ProbabilityTheory.Kernel.pow_add`,
-`ProbabilityTheory.Kernel.pow_add_apply_eq_lintegral`): the `n`-step
-kernel is a composite of one-step kernels. It has no statement linking
-those kernel powers to the conditional law of a Markov chain `X`
-satisfying `IsMarkovChain`. Batch 12 (finite-dimensional distributions)
-proves the unconditional iterated-integral formula for cylinder
-probabilities; it does not state the conditional expectation given
-`ℱ m`, nor the forward law of a single `X (m + n)`. Batches 31 and 42
-build the canonical chain on path space and prove the Markov and strong
-Markov properties there; neither ports the `IsMarkovChain` predicate
-for an arbitrary chain, nor the `n`-step conditional form.
+## Relation to Mathlib
+
+Mathlib provides kernel powers and their composition identities in
+`Mathlib.Probability.Kernel.Composition.Comp`. The induction here uses
+`ProbabilityTheory.Kernel.pow_succ_apply_eq_lintegral`, measure binding,
+and set integrals of conditional expectations. The conditional result
+then uses `MeasureTheory.ae_eq_condExp_of_forall_setIntegral_eq`.
 
 ## Main results
 
