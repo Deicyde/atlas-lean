@@ -58,10 +58,10 @@ example : Tendsto (fun n : ℕ => (ContinuousLinearMap.id ℂ ℂ) (1 / ((n : �
   rw [map_zero f] at h
   exact h
 
-example : Tendsto (fun n : ℕ => toWeakSpace ℝ ℝ
-    ((ContinuousLinearMap.id ℝ ℝ) (1 / ((n : ℝ) + 1))))
-    atTop (𝓝 (toWeakSpace ℝ ℝ ((ContinuousLinearMap.id ℝ ℝ) 0))) := by
-  apply tendsto_weakSpace_apply_of_isCompactOperator_of_tendsto_weakSpace isCompactOperator_id_real
+example : Tendsto (fun n : ℕ =>
+    (ContinuousLinearMap.id ℝ ℝ) (1 / ((n : ℝ) + 1)))
+    atTop (𝓝 ((ContinuousLinearMap.id ℝ ℝ) 0)) := by
+  apply tendsto_apply_of_isCompactOperator_of_tendsto_weakSpace isCompactOperator_id_real
   have hu : Tendsto (fun n : ℕ => (1 : ℝ) / ((n : ℝ) + 1)) atTop (𝓝 (0 : ℝ)) :=
     tendsto_one_div_add_atTop_nhds_zero_nat
   have hweak : Tendsto (fun n : ℕ => toWeakSpace ℝ ℝ (1 / ((n : ℝ) + 1)))

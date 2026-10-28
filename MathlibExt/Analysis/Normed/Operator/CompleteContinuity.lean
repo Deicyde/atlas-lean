@@ -8,14 +8,10 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Analysis.Normed.Operator.BanachSteinhaus
+public import MathlibExt.Analysis.Normed.Module.WeakConvergence
 public import Mathlib.Analysis.Normed.Operator.Compact.Basic
-public import Mathlib.Analysis.Normed.Module.DoubleDual
-public import Mathlib.Analysis.LocallyConvex.SeparatingDual
-public import Mathlib.Analysis.LocallyConvex.WeakSpace
-public import Mathlib.Topology.Algebra.Module.Spaces.WeakBilin
-public import Mathlib.Topology.MetricSpace.Bounded
-public import Mathlib.Topology.Sequences
+
+import Mathlib.Topology.Sequences
 import Mathlib.Tactic.Linarith
 
 /-!
@@ -25,21 +21,19 @@ A compact operator is *completely continuous*: it sends weakly convergent
 sequences to norm-convergent sequences. That is, if `T : E →L[𝕜] F` is
 compact and `u n → x` weakly in `E`, then `T (u n) → T x` in norm in `F`.
 
-This is a companion to the compact-operator material of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
-(the Fredholm alternative, the maximum principle, and the spectral theorem
-for compact self-adjoint operators, April–May 2021 sections) and to the
-Hahn–Banach / weak-convergence material of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`. It is not
-one of the 72 v1 targets, and it is not in the pinned Mathlib or in base
-MathlibExt: Mathlib has compact operators (`IsCompactOperator`), weak
-convergence (`toWeakSpace`, `WeakBilin`), Banach–Steinhaus
-(`banach_steinhaus`), and the separating dual
-(`SeparatingDual.eq_iff_forall_dual_eq`), but no statement that a compact
-operator turns weak convergence into norm convergence. See e.g. Rudin,
-*Functional Analysis*, 2nd edition, Chapter 4, for the
-classical statement. No completeness hypothesis on `E` or `F` is needed:
-Banach–Steinhaus is applied on the (complete) dual `StrongDual 𝕜 E`.
+This is a new proof of a standard companion result motivated by the
+compact-operator material of
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean` and
+the Hahn–Banach material of
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/HahnBanach.lean`.
+Those archived files provide background; this theorem is not a port of
+a v1 target. Rudin, *Functional Analysis*, 2nd edition, Chapter 4 is a
+general background reference, not a source location for this proof.
+
+The weak-convergence ingredients reuse
+`MathlibExt.Analysis.Normed.Module.WeakConvergence`. No completeness
+hypothesis on `E` or `F` is needed: its uniform-boundedness result applies
+Banach–Steinhaus on the complete strong dual.
 
 ## Main declarations
 
@@ -47,7 +41,7 @@ Banach–Steinhaus is applied on the (complete) dual `StrongDual 𝕜 E`.
   theorem, in the textbook all-functionals form of weak convergence.
 * `tendsto_apply_of_isCompactOperator_of_tendsto_zero` : the weakly-null
   special case.
-* `tendsto_weakSpace_apply_of_isCompactOperator_of_tendsto_weakSpace` :
+* `tendsto_apply_of_isCompactOperator_of_tendsto_weakSpace` :
   the same theorem in Mathlib's `toWeakSpace` form.
 -/
 
@@ -56,67 +50,10 @@ Banach–Steinhaus is applied on the (complete) dual `StrongDual 𝕜 E`.
 namespace MathlibExt.Analysis.Normed.Operator.CompleteContinuity
 
 open Set Filter Topology Metric
+open MathlibExt.Analysis.Normed.Module
 
 variable {𝕜 E F : Type*} [RCLike 𝕜] [NormedAddCommGroup E] [NormedSpace 𝕜 E]
   [NormedAddCommGroup F] [NormedSpace 𝕜 F]
-
-/-- A weakly convergent sequence is norm-bounded (uniform boundedness
-applied to the evaluation functionals on the dual). Private helper:
-the statement is the standard Banach–Steinhaus argument. -/
-private theorem exists_forall_norm_le_of_forall_tendsto {u : ℕ → E} {x : E}
-    (h : ∀ f : StrongDual 𝕜 E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x))) :
-    ∃ C, ∀ n, ‖u n‖ ≤ C := by
-  have hpoint : ∀ f : StrongDual 𝕜 E, ∃ C, ∀ n,
-      ‖(NormedSpace.inclusionInDoubleDual 𝕜 E (u n)) f‖ ≤ C := by
-    intro f
-    have hb := Metric.isBounded_range_of_tendsto (fun n => f (u n)) (h f)
-    rw [Metric.isBounded_iff] at hb
-    obtain ⟨C, hC⟩ := hb
-    refine ⟨C + ‖f (u 0)‖, fun n => ?_⟩
-    simp only [NormedSpace.dual_def]
-    have h1 := hC ⟨n, rfl⟩ ⟨0, rfl⟩
-    rw [dist_eq_norm] at h1
-    calc ‖f (u n)‖ = ‖(f (u n) - f (u 0)) + f (u 0)‖ := by rw [sub_add_cancel]
-      _ ≤ ‖f (u n) - f (u 0)‖ + ‖f (u 0)‖ := norm_add_le _ _
-      _ ≤ C + ‖f (u 0)‖ := by linarith
-  obtain ⟨C, hC⟩ := banach_steinhaus (𝕜 := 𝕜) (E := StrongDual 𝕜 E) (F := 𝕜)
-    (g := fun n => NormedSpace.inclusionInDoubleDual 𝕜 E (u n)) hpoint
-  refine ⟨C, fun n => ?_⟩
-  have hnorm : ‖NormedSpace.inclusionInDoubleDual 𝕜 E (u n)‖ = ‖u n‖ :=
-    (NormedSpace.inclusionInDoubleDualLi 𝕜 (E := E)).norm_map (u n)
-  rw [← hnorm]
-  exact hC n
-
-/-- Bounded operators preserve weak convergence, in the all-functionals
-form. Private helper. -/
-private theorem forall_tendsto_of_forall_tendsto_comp {u : ℕ → E} {x : E}
-    (T : E →L[𝕜] F)
-    (h : ∀ f : StrongDual 𝕜 E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x))) :
-    ∀ g : StrongDual 𝕜 F, Tendsto (fun n => g (T (u n))) atTop (𝓝 (g (T x))) := by
-  intro g
-  simpa using h (g.comp T)
-
-/-- Weak convergence in `toWeakSpace` form implies the all-functionals form.
-Private helper. -/
-private theorem forall_tendsto_of_tendsto_weakSpace {u : ℕ → E} {x : E}
-    (h : Tendsto (fun n => toWeakSpace 𝕜 E (u n)) atTop (𝓝 (toWeakSpace 𝕜 E x))) :
-    ∀ f : StrongDual 𝕜 E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x)) := by
-  have hinj : Function.Injective (LinearMap.flip (topDualPairing 𝕜 E)) := by
-    intro a b hab
-    exact SeparatingDual.eq_iff_forall_dual_eq.mpr fun f =>
-      congrFun (congrArg DFunLike.coe hab) f
-  exact (WeakBilin.tendsto_iff_forall_eval_tendsto (topDualPairing 𝕜 E).flip hinj).mp h
-
-/-- The all-functionals form implies weak convergence in `toWeakSpace` form.
-Private helper. -/
-private theorem tendsto_weakSpace_of_forall_tendsto {u : ℕ → F} {y : F}
-    (h : ∀ g : StrongDual 𝕜 F, Tendsto (fun n => g (u n)) atTop (𝓝 (g y))) :
-    Tendsto (fun n => toWeakSpace 𝕜 F (u n)) atTop (𝓝 (toWeakSpace 𝕜 F y)) := by
-  have hinj : Function.Injective (LinearMap.flip (topDualPairing 𝕜 F)) := by
-    intro a b hab
-    exact SeparatingDual.eq_iff_forall_dual_eq.mpr fun f =>
-      congrFun (congrArg DFunLike.coe hab) f
-  exact (WeakBilin.tendsto_iff_forall_eval_tendsto (topDualPairing 𝕜 F).flip hinj).mpr h
 
 /-- **Complete continuity of compact operators.** If `T` is compact and
 `u n → x` weakly, then `T (u n) → T x` in norm.
@@ -132,10 +69,10 @@ theorem tendsto_apply_of_isCompactOperator_of_forall_tendsto {T : E →L[𝕜] F
     (hT : IsCompactOperator (T : E → F)) {u : ℕ → E} {x : E}
     (h : ∀ f : StrongDual 𝕜 E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x))) :
     Tendsto (fun n => T (u n)) atTop (𝓝 (T x)) := by
-  obtain ⟨C, hC⟩ := exists_forall_norm_le_of_forall_tendsto h
+  obtain ⟨C, hC⟩ := WeakConvergence.bddAbove_norm_range_of_forall_tendsto h
   have hweak : ∀ g : StrongDual 𝕜 F,
       Tendsto (fun n => g (T (u n))) atTop (𝓝 (g (T x))) :=
-    forall_tendsto_of_forall_tendsto_comp T h
+    WeakConvergence.tendsto_apply_of_forall_tendsto T h
   by_contra hnot
   rw [Metric.tendsto_atTop] at hnot
   push Not at hnot
@@ -150,7 +87,7 @@ theorem tendsto_apply_of_isCompactOperator_of_forall_tendsto {T : E →L[𝕜] F
     apply hKsub
     refine ⟨u (φ n), ?_, rfl⟩
     rw [Metric.mem_closedBall, dist_zero_right]
-    exact hC (φ n)
+    exact hC ⟨φ n, rfl⟩
   obtain ⟨a, _haK, ψ, hψ, hlim⟩ := hK.tendsto_subseq hmem
   have ha : a = T x := by
     apply (SeparatingDual.eq_iff_forall_dual_eq (R := 𝕜) (V := F)).mpr
@@ -178,15 +115,12 @@ theorem tendsto_apply_of_isCompactOperator_of_tendsto_zero {T : E →L[𝕜] F}
   simpa using
     tendsto_apply_of_isCompactOperator_of_forall_tendsto hT h0
 
-/-- Complete continuity in Mathlib's `toWeakSpace` form. -/
-theorem tendsto_weakSpace_apply_of_isCompactOperator_of_tendsto_weakSpace
+/-- Complete continuity from a weak-space input to norm convergence in `F`. -/
+theorem tendsto_apply_of_isCompactOperator_of_tendsto_weakSpace
     {T : E →L[𝕜] F} (hT : IsCompactOperator (T : E → F)) {u : ℕ → E} {x : E}
     (h : Tendsto (fun n => toWeakSpace 𝕜 E (u n)) atTop (𝓝 (toWeakSpace 𝕜 E x))) :
-    Tendsto (fun n => toWeakSpace 𝕜 F (T (u n))) atTop (𝓝 (toWeakSpace 𝕜 F (T x))) := by
-  apply tendsto_weakSpace_of_forall_tendsto
-  intro g
-  have hmain := tendsto_apply_of_isCompactOperator_of_forall_tendsto hT
-    (forall_tendsto_of_tendsto_weakSpace h)
-  exact (g.continuous.tendsto (T x)).comp hmain
+    Tendsto (fun n => T (u n)) atTop (𝓝 (T x)) := by
+  exact tendsto_apply_of_isCompactOperator_of_forall_tendsto hT
+    (WeakConvergence.forall_tendsto_of_tendsto_weakSpace h)
 
 end MathlibExt.Analysis.Normed.Operator.CompleteContinuity
