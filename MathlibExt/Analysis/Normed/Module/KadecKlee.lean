@@ -11,9 +11,7 @@ module
 public import Mathlib.Analysis.Convex.Uniform
 public import Mathlib.Analysis.InnerProductSpace.Convex
 public import Mathlib.Analysis.Normed.Module.HahnBanach
-public import Mathlib.Analysis.LocallyConvex.SeparatingDual
-public import Mathlib.Analysis.LocallyConvex.WeakSpace
-public import Mathlib.Topology.Algebra.Module.Spaces.WeakBilin
+public import MathlibExt.Analysis.Normed.Module.WeakConvergence
 import Mathlib.Tactic.Linarith
 
 /-!
@@ -28,24 +26,21 @@ so `f (u n) → ‖x‖`; uniform convexity then forces the normalized
 sequence `‖u n‖⁻¹ • u n` to converge in norm to `x / ‖x‖`, and
 rescaling gives the result. No completeness hypothesis is needed.
 
-The statement is over `ℝ` because Mathlib's `UniformConvexSpace` is
-a real-normed-space class. Every real inner product space is
-uniformly convex (`InnerProductSpace.toUniformConvexSpace`), so this
-recovers the real case of the Radon–Riesz theorem for Hilbert spaces
-(`MathlibExt.Analysis.InnerProductSpace.RadonRiesz`, which proves the
-Hilbert case over `ℝ` and `ℂ` by the parallelogram law and is not
-re-proved here); the complex case is not covered by the present
-statement. It is a companion to the weak-convergence material of
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean`
-(continuity of the inner product, Bessel's inequality, Parseval's
-identity) and to the weak convergence of orthonormal sequences. It is
-not one of the 72 v1 targets, and it is in neither the pinned Mathlib
-nor base MathlibExt: Mathlib defines `UniformConvexSpace`
-(`Mathlib/Analysis/Convex/Uniform.lean`) and uses it for
-Milman–Pettis and Banach–Saks in base MathlibExt, but has no
-sequential weak-plus-norm convergence theorem for it. See e.g.
-Brezis, *Functional Analysis, Sobolev Spaces and PDEs*, Chapter 3,
-and Rudin, *Functional Analysis*, Chapter 4.
+This formulation uses real continuous linear functionals (`StrongDual ℝ E`)
+and `toWeakSpace ℝ E`. The norming-functional squeeze uses the order on real
+functional values. Mathlib's `UniformConvexSpace E` is a property of the
+seminormed additive group and has no scalar-field parameter. Real inner product
+spaces have the required instance (`InnerProductSpace.toUniformConvexSpace`),
+so this includes the real inner-product case. The separate module
+`MathlibExt.Analysis.InnerProductSpace.RadonRiesz` treats inner product spaces
+with `RCLike` scalars. This file does not directly state a complex-dual formulation.
+
+These results are new consequences of uniform convexity and Hahn–Banach.
+The archived `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean`
+provides related inner-product material, including continuity, Bessel's inequality
+and Parseval's identity. Those targets supply context; they do not state the
+uniformly convex Kadec–Klee theorem proved here. The weak-topology conversions
+reuse `MathlibExt.Analysis.Normed.Module.WeakConvergence`.
 
 ## Main declarations
 
@@ -215,34 +210,14 @@ theorem tendsto_of_forall_tendsto_and_tendsto_norm {u : ℕ → E} {x : E}
     have h := hv.const_smul r
     simpa only [smul_smul, mul_inv_cancel₀ hr.ne', one_smul] using h
 
--- Weak convergence in `toWeakSpace` form implies the all-functionals form.
-omit [UniformConvexSpace E] in
-private theorem forall_tendsto_of_tendsto_weakSpace {u : ℕ → E} {x : E}
-    (h : Tendsto (fun n => toWeakSpace ℝ E (u n)) atTop (𝓝 (toWeakSpace ℝ E x))) :
-    ∀ f : StrongDual ℝ E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x)) := by
-  have hinj : Function.Injective (LinearMap.flip (topDualPairing ℝ E)) := by
-    intro a b hab
-    exact SeparatingDual.eq_iff_forall_dual_eq.mpr fun f =>
-      congrFun (congrArg DFunLike.coe hab) f
-  exact (WeakBilin.tendsto_iff_forall_eval_tendsto (topDualPairing ℝ E).flip hinj).mp h
-
--- The all-functionals form implies weak convergence in `toWeakSpace` form.
-omit [UniformConvexSpace E] in
-private theorem tendsto_weakSpace_of_forall_tendsto {u : ℕ → E} {x : E}
-    (h : ∀ f : StrongDual ℝ E, Tendsto (fun n => f (u n)) atTop (𝓝 (f x))) :
-    Tendsto (fun n => toWeakSpace ℝ E (u n)) atTop (𝓝 (toWeakSpace ℝ E x)) := by
-  have hinj : Function.Injective (LinearMap.flip (topDualPairing ℝ E)) := by
-    intro a b hab
-    exact SeparatingDual.eq_iff_forall_dual_eq.mpr fun f =>
-      congrFun (congrArg DFunLike.coe hab) f
-  exact (WeakBilin.tendsto_iff_forall_eval_tendsto (topDualPairing ℝ E).flip hinj).mpr h
-
 /-- **Kadec–Klee property, `toWeakSpace` form.** -/
 theorem tendsto_of_tendsto_weakSpace_and_tendsto_norm {u : ℕ → E} {x : E}
     (h : Tendsto (fun n => toWeakSpace ℝ E (u n)) atTop (𝓝 (toWeakSpace ℝ E x)))
     (hnorm : Tendsto (fun n => ‖u n‖) atTop (𝓝 ‖x‖)) :
     Tendsto u atTop (𝓝 x) :=
-  tendsto_of_forall_tendsto_and_tendsto_norm (forall_tendsto_of_tendsto_weakSpace h) hnorm
+  tendsto_of_forall_tendsto_and_tendsto_norm
+    (MathlibExt.Analysis.Normed.Module.WeakConvergence.forall_tendsto_of_tendsto_weakSpace
+      (𝕜 := ℝ) h) hnorm
 
 /-- **Kadec–Klee iff, all-functionals form.** Norm convergence is
 equivalent to weak convergence (in the all-functionals form) together
@@ -261,8 +236,9 @@ theorem tendsto_iff_tendsto_weakSpace_and_tendsto_norm {u : ℕ → E} {x : E} :
       Tendsto (fun n => toWeakSpace ℝ E (u n)) atTop
         (𝓝 (toWeakSpace ℝ E x)) ∧
         Tendsto (fun n => ‖u n‖) atTop (𝓝 ‖x‖) := by
-  refine ⟨fun h => ⟨tendsto_weakSpace_of_forall_tendsto
-    (fun f => (f.continuous.tendsto x).comp h),
+  refine ⟨fun h =>
+    ⟨MathlibExt.Analysis.Normed.Module.WeakConvergence.tendsto_weakSpace_of_forall_tendsto
+      (𝕜 := ℝ) (fun f => (f.continuous.tendsto x).comp h),
     (continuous_norm.tendsto x).comp h⟩, fun h => ?_⟩
   exact tendsto_of_tendsto_weakSpace_and_tendsto_norm h.1 h.2
 
