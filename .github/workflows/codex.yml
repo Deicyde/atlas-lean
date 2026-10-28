@@ -331,19 +331,28 @@ jobs:
           fi
           test -s "$guide"
 
-      - name: Guard fetched object size
+      - name: Guard fetched size
         if: steps.check_auth.outputs.authorized == 'true'
         run: |
           set -euo pipefail
-          # Defense in depth for the partial-clone fetch above: fail closed
-          # if the fetched objects are far beyond a normal checkout (a
-          # .git of ~50 MiB today). The time bound is the 40-minute job
-          # timeout. 2 GiB leaves ample headroom for legitimate growth.
+          # Fail closed before any secret-holding step runs if the
+          # materialized checkout is far beyond a normal one (a .git of
+          # ~50 MiB plus a ~240 MiB working tree today). This counts both
+          # object storage and the working tree, where checkout duplicates
+          # materialized blobs. The time bound is the 40-minute job timeout.
+          # It deliberately runs after fetch/checkout rather than as a
+          # quota during materialization: GitHub-hosted runners are
+          # single-use, so exhaustion during fetch/checkout only fails
+          # this job (those steps fail before Codex runs), while a tmpfs
+          # remount of the workspace would risk breaking every review if
+          # the runner environment ever denies the mount. 2 GiB leaves
+          # ample headroom for legitimate growth.
           max_kib=2097152
-          size_kib="$(du -sk .git | cut -f1)"
-          echo "Fetched .git size: ${size_kib} KiB (limit ${max_kib} KiB)"
-          if (( size_kib > max_kib )); then
-            echo "::error title=Fetched objects::Fetched .git is ${size_kib} KiB, over the ${max_kib} KiB limit; refusing to review." >&2
+          total_kib="$(du -sk . | cut -f1)"
+          git_kib="$(du -sk .git | cut -f1)"
+          echo "Materialized checkout: ${total_kib} KiB total (${git_kib} KiB .git), limit ${max_kib} KiB"
+          if (( total_kib > max_kib )); then
+            echo "::error title=Fetched size::Materialized checkout is ${total_kib} KiB, over the ${max_kib} KiB limit; refusing to review." >&2
             exit 1
           fi
 
