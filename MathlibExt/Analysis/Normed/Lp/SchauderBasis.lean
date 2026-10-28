@@ -21,14 +21,13 @@ fact they form an *unconditional* Schauder basis: every `x ∈ ℓ^p` is the sum
 `x i • e i` over finite subsets of `ι`, directed by inclusion. When `ι = ℕ`
 this gives the classical (conditional) Schauder basis, whose `n`-th partial-sum
 projection is truncation to the first `n` coordinates. The projections are
-contractive: the basis constant is `1`.
+contractive: their operator norms are at most `1`.
 
-This is the companion in the `v1` Functional Analysis book of the `L^p`-norm
-material (April 6, 2021 section): the book defines `L^p` spaces and proves
-Hölder's and Minkowski's inequalities, and the unit vectors are the textbook
-Schauder basis of the sequence space `ℓ^p`. Mathlib provides the abstract
-`SchauderBasis` / `UnconditionalSchauderBasis` structures and the
-finitely-supported approximation `lp.hasSum_single`, but no `ℓ^p` instance.
+This construction complements the `L^p`-norm material in the archived `v1`
+Functional Analysis book (April 6, 2021): the book defines `L^p` spaces and
+proves Hölder's and Minkowski's inequalities, but does not state this basis
+construction. The proof instantiates Mathlib's abstract `SchauderBasis` and
+`UnconditionalSchauderBasis` structures using `lp.hasSum_single`.
 
 ## Main declarations
 
@@ -150,7 +149,7 @@ theorem norm_lpSchauderBasis_proj_apply_le [DecidableEq ι] (hp : p ≠ ⊤)
   exact (Real.rpow_le_rpow_iff (norm_nonneg _) (norm_nonneg _) hp0).mp hle
 
 /-- Every basis projection of the `ℓ^p` Schauder basis has operator norm at most `1`:
-the basis constant is `1`. -/
+the operator-norm bound is `1`, including an empty index type. -/
 theorem norm_lpSchauderBasis_proj_le [DecidableEq ι] (hp : p ≠ ⊤) (A : Finset ι) :
     ‖(lpUnconditionalSchauderBasis (ι := ι) (𝕜 := 𝕜) (p := p) hp).proj A‖ ≤ 1 := by
   refine ContinuousLinearMap.opNorm_le_bound _ zero_le_one fun x => ?_
