@@ -9,8 +9,11 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Analysis.FunctionalAnalysis.MultiplicationOperator
+public import Mathlib.Topology.Perfect
+public import Mathlib.Topology.Order.IntermediateValue
 
 import Mathlib.Tactic.FinCases
+import Mathlib.Tactic.NormNum
 
 /-!
 # Tests for multiplication operators on `C(X, 𝕜)`
@@ -103,5 +106,35 @@ example : spectrum ℝ (mulCLM (⟨Subtype.val, continuous_subtype_val⟩ :
     C(Set.Icc (0 : ℝ) 1, ℝ))) = Set.Icc 0 1 := by
   rw [spectrum_mulCLM]
   exact Subtype.range_val
+
+/-- The attained midpoint lies in the spectrum, but its singleton fiber has empty
+interior in the actual interval subtype and hence it is not an eigenvalue. -/
+theorem interval_identity_midpoint_spectral_not_eigenvalue :
+    let φ : C(Set.Icc (0 : ℝ) 1, ℝ) := ⟨Subtype.val, continuous_subtype_val⟩
+    (1 / 2 : ℝ) ∈ spectrum ℝ (mulCLM φ) ∧
+      ¬ Module.End.HasEigenvalue
+        (mulCLM φ : C(Set.Icc (0 : ℝ) 1, ℝ) →ₗ[ℝ] C(Set.Icc (0 : ℝ) 1, ℝ)) (1 / 2) := by
+  intro φ
+  let midpoint : Set.Icc (0 : ℝ) 1 := ⟨1 / 2, by norm_num⟩
+  have hfiber : φ ⁻¹' {(1 / 2 : ℝ)} = {midpoint} := by
+    ext x
+    change ((x : ℝ) = (1 / 2 : ℝ)) ↔ x = midpoint
+    constructor
+    · intro hx
+      exact Subtype.ext hx
+    · intro hx
+      exact congrArg Subtype.val hx
+  letI : ConnectedSpace (Set.Icc (0 : ℝ) 1) :=
+    isConnected_iff_connectedSpace.mp (isConnected_Icc (by norm_num))
+  letI : Nontrivial (Set.Icc (0 : ℝ) 1) :=
+    ⟨⟨⟨0, by norm_num⟩, ⟨1, by norm_num⟩, by
+      intro h
+      have hval := congrArg Subtype.val h
+      norm_num at hval⟩⟩
+  constructor
+  · rw [spectrum_mulCLM]
+    exact ⟨midpoint, rfl⟩
+  · rw [hasEigenvalue_mulCLM_iff, hfiber, interior_singleton]
+    simp
 
 end MathlibExtTest.Analysis.FunctionalAnalysis.MultiplicationOperatorTests
