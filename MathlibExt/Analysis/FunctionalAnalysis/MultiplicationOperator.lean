@@ -9,6 +9,9 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.Normed.Operator.Mul
+public import Mathlib.Analysis.Normed.Operator.Banach
+public import Mathlib.Algebra.Algebra.Bilinear
+public import Mathlib.Topology.ContinuousMap.Units
 public import Mathlib.Analysis.Normed.Algebra.Spectrum
 public import Mathlib.Analysis.RCLike.Basic
 public import Mathlib.LinearAlgebra.Eigenspace.Basic
@@ -18,24 +21,24 @@ public import Mathlib.Topology.UrysohnsLemma
 
 import Mathlib.Tactic.Continuity
 import Mathlib.Tactic.Ring
-import Mathlib.Topology.Algebra.GroupWithZero
 
 /-!
 # Multiplication operators on `C(X, 𝕜)`
 
-For a compact Hausdorff space `X` and `φ : C(X, 𝕜)`, the multiplication
-operator `M_φ : C(X, 𝕜) →L[𝕜] C(X, 𝕜)` sends `f` to `φ * f`. It is the
-textbook first example of a bounded operator whose spectrum can be read
-off directly: the spectrum of `M_φ` is exactly the range of `φ`, and
-`μ` is an eigenvalue of `M_φ` exactly when `φ` takes the value `μ` on a
-set with nonempty interior. In particular `M_φ` is invertible exactly
-when `φ` vanishes nowhere. This is the companion, for continuous
-functions, of the diagonal-operator spectral picture on `ℓ²`; the
-diagonal case is not re-proved here, and the operator itself is
-`ContinuousLinearMap.mul`, used, not re-defined from scratch.
+For a compact space `X` and `φ : C(X, 𝕜)`, multiplication sends `f` to `φ * f`.
+The operator is Mathlib's `ContinuousLinearMap.mul`. Its spectrum is the range of
+`φ`, and it is invertible exactly when `φ` vanishes nowhere. These results use
+Mathlib's unit reflection for the left regular representation together with
+`ContinuousMap.spectrum_eq_range`.
 
-Classical reference: Rudin, *Functional Analysis*, 2nd edition,
-Chapter 11 (multiplication operators / commutative Banach algebras).
+When `X` is also Hausdorff, `μ` is an eigenvalue exactly when the fiber
+`φ ⁻¹' {μ}` has nonempty interior. This criterion uses a nonzero continuous
+eigenvector in one direction and a Urysohn bump function in the other.
+
+These are derived supporting results for continuous-function operators. They are
+companions to the archived functional-analysis operator/spectrum context, rather
+than imports of named v1 multiplication-operator targets. The archived sources
+are preserved. No precise external textbook locator is asserted here.
 
 ## Main declarations
 
@@ -84,77 +87,28 @@ theorem mulCLM_algebraMap (μ : 𝕜) :
   ext f x
   simp [mulCLM_apply, Algebra.algebraMap_eq_smul_one, smul_eq_mul]
 
+/-- The left regular representation reflects units, also as a continuous endomorphism. -/
+private theorem isUnit_mulCLM_iff_isUnit (φ : C(X, 𝕜)) :
+    IsUnit (mulCLM φ) ↔ IsUnit φ := by
+  rw [ContinuousLinearMap.isUnit_iff_isUnit_toLinearMap]
+  change IsUnit (Algebra.lmul 𝕜 C(X, 𝕜) φ) ↔ IsUnit φ
+  exact Algebra.lmul_isUnit_iff
+
 /-- The spectrum of the multiplication operator is the range of the multiplier. -/
 theorem spectrum_mulCLM (φ : C(X, 𝕜)) : spectrum 𝕜 (mulCLM φ) = Set.range φ := by
+  rw [← ContinuousMap.spectrum_eq_range φ]
   ext μ
-  constructor
-  · intro hμ
-    by_contra hmem
-    -- `μ` is not in the range, so `μ - φ` is nowhere zero; its pointwise
-    -- inverse is continuous and gives a two-sided inverse of `μ • 1 - M_φ`.
-    have hne : ∀ x : X, μ - φ x ≠ 0 := by
-      intro x hx
-      exact hmem ⟨x, (sub_eq_zero.mp hx).symm⟩
-    let ψ : C(X, 𝕜) :=
-      ⟨fun x => (μ - φ x)⁻¹, (continuous_const.sub φ.continuous).inv₀ hne⟩
-    have hψx : ∀ x : X, ψ x = (μ - φ x)⁻¹ := fun _ => rfl
-    have hψ : (algebraMap 𝕜 C(X, 𝕜) μ - φ) * ψ = 1 := by
-      apply ContinuousMap.ext
-      intro x
-      simp only [ContinuousMap.mul_apply, ContinuousMap.sub_apply, ContinuousMap.one_apply,
-        hψx]
-      rw [show (algebraMap 𝕜 C(X, 𝕜) μ) x = μ by simp [algebraMap_apply]]
-      exact mul_inv_cancel₀ (hne x)
-    have hdecomp : algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) μ - mulCLM φ =
-        mulCLM (algebraMap 𝕜 C(X, 𝕜) μ - φ) := by
-      rw [← mulCLM_algebraMap, mulCLM_sub]
-    have hunit : IsUnit (algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) μ - mulCLM φ) := by
-      refine ⟨⟨mulCLM (algebraMap 𝕜 C(X, 𝕜) μ - φ), mulCLM ψ, ?_, ?_⟩, hdecomp.symm⟩
-      · rw [← mulCLM_mul, hψ, mulCLM_one]
-      · rw [← mulCLM_mul, mul_comm, hψ, mulCLM_one]
-    exact (spectrum.mem_iff.mp hμ) hunit
-  · rintro ⟨x₀, hx₀⟩ hunit
-    -- `μ` is attained at `x₀`, so every function in the range of
-    -- `μ • 1 - M_φ` vanishes at `x₀`, but `1` does not.
-    obtain ⟨S, hS⟩ := hunit.exists_right_inv
-    have h1 : ((algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) μ - mulCLM φ) * S)
-        (1 : C(X, 𝕜)) = 1 := by
-      rw [hS]
-      simp
-    have h2 := ContinuousMap.congr_fun h1 x₀
-    simp only [mul_apply_eq_comp,
-      sub_apply, smul_apply, one_apply_eq_self, mulCLM_apply, ContinuousMap.mul_apply,
-      ContinuousMap.sub_apply, ContinuousMap.one_apply, ContinuousMap.smul_apply,
-      Algebra.algebraMap_eq_smul_one, smul_eq_mul] at h2
-    rw [hx₀] at h2
-    simp at h2
+  rw [spectrum.mem_iff, spectrum.mem_iff]
+  have hdecomp : algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) μ - mulCLM φ =
+      mulCLM (algebraMap 𝕜 C(X, 𝕜) μ - φ) := by
+    rw [← mulCLM_algebraMap, mulCLM_sub]
+  rw [hdecomp, isUnit_mulCLM_iff_isUnit]
 
 /-- The multiplication operator is invertible exactly when the multiplier
 vanishes nowhere. -/
 theorem isUnit_mulCLM_iff (φ : C(X, 𝕜)) :
-    IsUnit (mulCLM φ) ↔ ∀ x : X, φ x ≠ 0 := by
-  constructor
-  · intro hunit x hx
-    have hmem : (0 : 𝕜) ∈ spectrum 𝕜 (mulCLM φ) := by
-      rw [spectrum_mulCLM]
-      exact ⟨x, hx⟩
-    rw [spectrum.mem_iff] at hmem
-    apply hmem
-    have hzero : algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) (0 : 𝕜) - mulCLM φ = -mulCLM φ := by
-      simp
-    rw [hzero]
-    exact hunit.neg
-  · intro hne
-    have hmem : (0 : 𝕜) ∉ spectrum 𝕜 (mulCLM φ) := by
-      rw [spectrum_mulCLM]
-      rintro ⟨x, hx⟩
-      exact hne x hx
-    rw [spectrum.mem_iff] at hmem
-    push Not at hmem
-    have hzero : algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) (0 : 𝕜) - mulCLM φ = -mulCLM φ := by
-      simp
-    rw [hzero] at hmem
-    exact (IsUnit.neg_iff _).mp hmem
+    IsUnit (mulCLM φ) ↔ ∀ x : X, φ x ≠ 0 :=
+  (isUnit_mulCLM_iff_isUnit φ).trans (ContinuousMap.isUnit_iff_forall_ne_zero φ)
 
 /-- `μ` is an eigenvalue of the multiplication operator exactly when `φ`
 takes the value `μ` on a set with nonempty interior. -/
