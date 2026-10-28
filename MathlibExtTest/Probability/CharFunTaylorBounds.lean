@@ -17,11 +17,6 @@ open MathlibExt.Probability.CharFunTaylorBounds
 
 variable {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
 
-/-- Signature restatement: first-order pointwise bound. -/
-theorem norm_exp_ofReal_mul_I_sub_one_le_test (u : ℝ) :
-    ‖Complex.exp (↑u * Complex.I) - 1‖ ≤ |u| :=
-  norm_exp_ofReal_mul_I_sub_one_le u
-
 /-- Signature restatement: second-order pointwise bound. -/
 theorem norm_exp_ofReal_mul_I_sub_one_sub_le_test (u : ℝ) :
     ‖Complex.exp (↑u * Complex.I) - 1 - ↑u * Complex.I‖ ≤ u ^ 2 :=

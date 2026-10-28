@@ -26,8 +26,8 @@ These are the two helper estimates stated (but left unproved) in
 imaginary axis) and `norm_charFun_sub_one_le_sq_mul_variance` (the
 characteristic-function bound for a mean-zero, square-integrable variable).
 Both are proved here exactly as stated in v1, with no statement correction.
-The first-order bounds are new companions, proved by the same integral
-argument. Batch 29 (`LindebergFeller.lean`) proved only the qualified
+The first-order characteristic-function bound is a new companion, using
+Mathlib’s pointwise first-order bound and the same integral argument. Batch 29 (`LindebergFeller.lean`) proved only the qualified
 pointwise estimate `‖exp (↑x * I) - 1 - ↑x * I‖ ≤ x ^ 2` under `‖x‖ ≤ 1`
 (as `ProbabilityTheory.norm_exp_ofReal_mul_I_sub_one_sub_le`) and did not
 port the characteristic-function bound; the unqualified pointwise bound
@@ -39,24 +39,6 @@ and the characteristic-function bound below are new.
 open MeasureTheory Filter Complex
 
 namespace MathlibExt.Probability.CharFunTaylorBounds
-
-/-- First-order estimate along the imaginary axis:
-`‖e^{iu} - 1‖ ≤ |u|`. -/
-theorem norm_exp_ofReal_mul_I_sub_one_le (u : ℝ) :
-    ‖Complex.exp (↑u * Complex.I) - 1‖ ≤ |u| := by
-  have h : Complex.exp (↑u * Complex.I) - 1 = Complex.exp (Complex.I * ↑u) - 1 := by
-    rw [mul_comm]
-  rw [h, Complex.norm_exp_I_mul_ofReal_sub_one]
-  calc ‖(2 : ℝ) * Real.sin (u / 2)‖
-      = 2 * |Real.sin (u / 2)| := by
-        rw [Real.norm_eq_abs, abs_mul]
-        norm_num
-    _ ≤ 2 * |u / 2| := by
-        have h := Real.abs_sin_le_abs (x := u / 2)
-        linarith
-    _ = |u| := by
-        rw [abs_div, abs_two]
-        ring
 
 /-- Second-order estimate along the imaginary axis:
 `‖e^{iu} - 1 - iu‖ ≤ u²`, for every real `u` (no size restriction).
@@ -259,7 +241,9 @@ theorem norm_charFun_sub_one_le
             (Filter.Eventually.of_forall fun ω => rfl)
         apply integral_mono_ae hrem1_int.norm (hX_int.const_mul |t|)
         filter_upwards with ω
-        have h := norm_exp_ofReal_mul_I_sub_one_le (t * X ω)
+        have h : ‖Complex.exp (↑(t * X ω) * Complex.I) - 1‖ ≤ |t * X ω| := by
+          simpa only [mul_comm, Real.norm_eq_abs] using
+            (Real.norm_exp_I_mul_ofReal_sub_one_le (x := t * X ω))
         have heq : (↑t * ↑(X ω) * Complex.I : ℂ) = ↑(t * X ω) * Complex.I := by
           push_cast
           ring
