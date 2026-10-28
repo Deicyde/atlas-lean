@@ -8,12 +8,28 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import Mathlib.Analysis.Normed.Operator.Banach
 public import Mathlib.Analysis.Normed.Operator.Compact.FredholmAlternative
 public import Mathlib.Analysis.Normed.Operator.Compact.FiniteDimension
 public import Mathlib.Analysis.Normed.Module.HahnBanach
 public import Mathlib.Topology.MetricSpace.Antilipschitz
 public import Mathlib.Analysis.Normed.Group.Uniform
 public import Mathlib.Topology.Algebra.Module.FiniteDimension
+
+/-!
+# Riesz–Schauder kernel and range results
+
+Source context: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
+`SpectralTheory.fredholm_alternative_full` (May 11, 2021), the archived
+self-adjoint Hilbert-space Fredholm alternative. This module generalizes its
+kernel and closed-range conclusions to general compact operators on Banach
+spaces over `RCLike` scalars, at nonzero `μ`.
+
+The kernel proof makes the identity on the kernel compact. The range proof
+uses a Hahn–Banach projection and compactness on a complement to obtain a
+lower bound. The alternative then uses Mathlib's compact-operator
+eigenvalue/resolvent dichotomy. The archived self-adjoint proof is not imported.
+-/
 
 @[expose] public section
 
@@ -97,7 +113,7 @@ space and `μ ≠ 0`, the range of `μ • 1 - T` is closed. The proof restricts
 `μ • 1 - T` to a closed complement of its kernel, where it is bounded below:
 a sequence argument using compactness of `T` shows the restriction is
 antilipschitz, hence its range is closed. -/
-theorem isClosed_range_sub_smul_one (hT : IsCompactOperator T) (hμ : μ ≠ 0) :
+theorem isClosed_range_smul_one_sub (hT : IsCompactOperator T) (hμ : μ ≠ 0) :
     IsClosed (LinearMap.range ((μ • 1 - T : E →L[𝕜] E).toLinearMap) : Set E) := by
   classical
   set S : E →L[𝕜] E := μ • 1 - T with hS
@@ -210,7 +226,7 @@ theorem fredholm_alternative (hT : IsCompactOperator T) (hμ : μ ≠ 0) :
         IsClosed (LinearMap.range ((μ • 1 - T : E →L[𝕜] E).toLinearMap) : Set E)) := by
   rcases hT.hasEigenvalue_or_mem_resolventSet hμ with h | h
   · right
-    refine ⟨?_, finiteDimensional_ker hT hμ, isClosed_range_sub_smul_one hT hμ⟩
+    refine ⟨?_, finiteDimensional_ker hT hμ, isClosed_range_smul_one_sub hT hμ⟩
     obtain ⟨v, hv⟩ := h.exists_hasEigenvector
     rw [ne_eq, Submodule.eq_bot_iff]
     push Not

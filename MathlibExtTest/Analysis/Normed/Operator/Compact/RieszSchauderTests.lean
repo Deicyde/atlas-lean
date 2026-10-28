@@ -56,7 +56,7 @@ example : IsClosed (LinearMap.range
     (((1 : ℝ) • 1 - 1 : (Fin 2 → ℝ) →L[ℝ] (Fin 2 → ℝ)).toLinearMap) : Set (Fin 2 → ℝ)) := by
   have hT : IsCompactOperator (1 : (Fin 2 → ℝ) →L[ℝ] (Fin 2 → ℝ)) :=
     isCompactOperator_of_locallyCompactSpace_dom 1
-  exact isClosed_range_sub_smul_one hT (one_ne_zero (α := ℝ))
+  exact isClosed_range_smul_one_sub hT (one_ne_zero (α := ℝ))
 
 /-- The zero operator on `ℓ²(ℕ, ℝ)`: `1 • 1 - 0 = 1` is bijective, the first
 branch of the Fredholm alternative in infinite dimensions. -/
@@ -96,7 +96,7 @@ example : LinearMap.range (((1 : ℂ) • 1 - 0 :
   have hT : IsCompactOperator
       (0 : EuclideanSpace ℂ (Fin 2) →L[ℂ] EuclideanSpace ℂ (Fin 2)) :=
     isCompactOperator_zero
-  exact range_eq_orthogonal_ker_sub_smul_one_adjoint hT (one_ne_zero (α := ℂ))
+  exact range_eq_orthogonal_ker_smul_one_sub_adjoint hT (one_ne_zero (α := ℂ))
 
 /-- Every compact operator at a nonzero scalar has a closed range: check the
 statement on the zero operator on `ℓ²(ℕ, ℝ)`, where the range is `⊤`. -/
@@ -105,7 +105,7 @@ example : IsClosed (LinearMap.range
       : Set (lp (fun _ : ℕ ↦ ℝ) 2)) := by
   have hT : IsCompactOperator (0 : (lp (fun _ : ℕ ↦ ℝ) 2) →L[ℝ] (lp (fun _ : ℕ ↦ ℝ) 2)) :=
     isCompactOperator_zero
-  exact isClosed_range_sub_smul_one hT (one_ne_zero (α := ℝ))
+  exact isClosed_range_smul_one_sub hT (one_ne_zero (α := ℝ))
 
 end
 
