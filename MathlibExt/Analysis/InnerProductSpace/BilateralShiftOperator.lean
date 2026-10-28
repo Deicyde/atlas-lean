@@ -32,12 +32,9 @@ This is a companion to the Hilbert-space / spectral material of
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean` and
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
 (the spectral theorem, the Fredholm alternative, the Green's
-operator). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in base MathlibExt: Mathlib has the `ℓ²` space and
-its inner product (`lp.inner_eq_tsum`) and single-coordinate vectors
-(`lp.single`), but no shift operator on `ℓ²(ℤ, 𝕜)`. See e.g. Reed–Simon,
-*Methods of Modern Mathematical Physics I: Functional Analysis*,
-Section VII.2, for the classical statements.
+operator). It is not one of the 72 v1 targets. The construction below
+uses Mathlib's `ℓ²` space, its inner product (`lp.inner_eq_tsum`), and
+single-coordinate vectors (`lp.single`).
 
 ## Main declarations
 

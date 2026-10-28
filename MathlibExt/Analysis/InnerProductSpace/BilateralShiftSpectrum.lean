@@ -41,9 +41,8 @@ has three parts:
 This is a companion to the Hilbert-space / spectral material of
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean` and
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`.
-It is not one of the 72 v1 targets, and it is not in the pinned Mathlib
-or in base MathlibExt. See e.g. Reed–Simon, *Methods of Modern
-Mathematical Physics I: Functional Analysis*, Section VII.2.
+It is not one of the 72 v1 targets. The proof below uses the bilateral
+shift construction and Mathlib's unitary-spectrum and Banach-operator APIs.
 
 ## Main declarations
 
