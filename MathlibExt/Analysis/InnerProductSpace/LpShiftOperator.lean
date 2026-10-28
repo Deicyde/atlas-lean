@@ -27,21 +27,17 @@ coordinate `0` and shifts every other coordinate up by one:
 shift `B`, `(B x) n = x (n + 1)`. The shift is the textbook example
 of an isometry that is not unitary: `B ∘ S = 1` while
 `S ∘ B = 1 - rankOne e₀ e₀`, where `e₀` is the first standard basis
-vector, so `S` is injective but not surjective. The spectrum of `S`
-(and of `B`, proved in `LpShiftOperatorSpectrum.lean`) is the closed
-unit disc.
+vector, so `S` is injective but not surjective. The spectra of `S`
+and `B` (proved in `LpShiftOperatorSpectrum.lean`) are the closed unit
+ball in the scalar field: the disc for `ℂ` and the interval `[-1, 1]` for `ℝ`.
 
-This is a companion to the Hilbert-space / spectral material of
+These are new derived supporting results. The archived Hilbert-space and
+spectral material in
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean` and
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
-(the spectral theorem, the Fredholm alternative, the Green's
-operator). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in base MathlibExt: Mathlib has the `ℓ²` space and
-its inner product (`lp.inner_eq_tsum`), single-coordinate vectors
-(`lp.single`), and rank-one operators (`InnerProductSpace.rankOne`),
-but no shift operator on `ℓ²`. See e.g. Reed–Simon, *Methods of
-Modern Mathematical Physics I: Functional Analysis*, Section VII.2,
-for the classical statements.
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean` supplies
+related context, rather than an exact unilateral-shift target or proof.
+The construction reuses Mathlib's `ℓ²` space, coordinate vectors, inner product,
+adjoint and rank-one operator APIs.
 
 ## Main declarations
 

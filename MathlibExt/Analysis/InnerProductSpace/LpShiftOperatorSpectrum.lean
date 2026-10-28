@@ -19,15 +19,16 @@ import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
 
 /-!
-# The spectrum of the unilateral shift is the closed unit disc
+# The spectrum of the unilateral shift is the closed unit ball
 
 For the unilateral shift `S` on `ℓ²(ℕ, 𝕜)` and its adjoint, the
-backward shift `B`, the spectrum is the closed unit disc
-`Metric.closedBall 0 1`. The proof has three parts:
+backward shift `B`, the spectrum is `Metric.closedBall 0 1` in the scalar field:
+the closed unit disc for `ℂ` and the interval `[-1, 1]` for `ℝ`. The proof has
+three parts:
 
 * `‖S‖ ≤ 1` (and `‖B‖ ≤ 1`), so either spectrum is contained in the
-  closed unit disc (`spectrum.subset_closedBall_norm`).
-* The open unit disc is contained in either spectrum: if `‖μ‖ < 1`,
+  closed unit ball (`spectrum.norm_le_norm_mul_of_mem`).
+* The open unit ball is contained in either spectrum: if `‖μ‖ < 1`,
   the geometric vector `v = (1, c, c², …)` with `c = star μ`
   satisfies `B v = (star μ) • v`; pairing `(μ • 1 - S) x = v`
   against `v` gives `‖v‖² = 0`, a contradiction, so
@@ -35,16 +36,15 @@ backward shift `B`, the spectrum is the closed unit disc
   Dually, `v = (1, μ, μ², …)` is in the kernel of `μ • 1 - B`, so
   `μ • 1 - B` is not injective, hence not a unit.
 * The boundary follows because the spectrum is closed
-  (`spectrum.isClosed`) and the closed disc is the closure of the
-  open disc (`Metric.closure_ball`).
+  (`spectrum.isClosed`) and the closed unit ball is the closure of the
+  open unit ball (`closure_ball`).
 
-This is a companion to the Hilbert-space / spectral material of
+These spectrum computations are new derived results. The archived
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/HilbertSpace.lean` and
-`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`.
-It is not one of the 72 v1 targets, and it is not in the pinned
-Mathlib or in base MathlibExt. See e.g. Reed–Simon, *Methods of
-Modern Mathematical Physics I: Functional Analysis*, Section VII.2,
-for the classical statements.
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean` provide
+related context; they do not supply an exact shift-spectrum target or proof.
+The proof below uses the geometric vectors, the adjoint relation, and Mathlib's
+unit/bijectivity, spectrum-bound and closedness APIs.
 
 ## Main declarations
 
@@ -117,7 +117,7 @@ theorem algebraMap_sub_apply (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) 
   rw [Algebra.algebraMap_eq_smul_one]
   simp only [sub_apply, smul_apply, one_apply_eq_self]
 
-/-- Every point of the open unit disc is in the spectrum of the
+/-- Every point of the open unit ball is in the spectrum of the
 unilateral shift: if `μ • 1 - S` were a unit, it would be surjective, but
 pairing `(μ • 1 - S) x = v` against the geometric eigenvector `v` of
 `B` with eigenvalue `star μ` gives `‖v‖² = 0`. -/
@@ -141,7 +141,7 @@ theorem mem_spectrum_shiftCLM_of_norm_lt {μ : 𝕜} (hμ : ‖μ‖ < 1) :
   exact geometricVec_ne_zero hc
     (inner_self_eq_zero.mp (hinner.symm.trans hLHS))
 
-/-- Every point of the open unit disc is in the spectrum of the
+/-- Every point of the open unit ball is in the spectrum of the
 backward shift: the geometric vector is in the kernel of `μ • 1 - B`,
 so `μ • 1 - B` is not injective, hence not a unit. -/
 theorem mem_spectrum_backwardCLM_of_norm_lt {μ : 𝕜} (hμ : ‖μ‖ < 1) :
@@ -156,7 +156,7 @@ theorem mem_spectrum_backwardCLM_of_norm_lt {μ : 𝕜} (hμ : ‖μ‖ < 1) :
     rw [algebraMap_sub_apply, backwardCLM_geometricVec hμ, sub_self]
   exact geometricVec_ne_zero hμ (hinj (by rw [hmap, map_zero]))
 
-/-- The spectrum of the unilateral shift is the closed unit disc. -/
+/-- The spectrum of the unilateral shift is the closed unit ball. -/
 theorem spectrum_shiftCLM :
     spectrum 𝕜 (shiftCLM (𝕜 := 𝕜)) = Metric.closedBall 0 1 := by
   apply Subset.antisymm
@@ -176,7 +176,7 @@ theorem spectrum_shiftCLM :
     exact mem_spectrum_shiftCLM_of_norm_lt (by
       simpa [Metric.mem_ball, dist_eq_norm] using hμ)
 
-/-- The spectrum of the backward shift is the closed unit disc. -/
+/-- The spectrum of the backward shift is the closed unit ball. -/
 theorem spectrum_backwardCLM :
     spectrum 𝕜 (backwardCLM (𝕜 := 𝕜)) = Metric.closedBall 0 1 := by
   apply Subset.antisymm
