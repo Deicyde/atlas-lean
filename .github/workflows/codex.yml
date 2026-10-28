@@ -293,6 +293,10 @@ jobs:
           # repo. A fetch-depth-0 checkout of a fork would fetch every branch
           # and tag from an attacker-controlled repo, letting a fork exhaust
           # runner disk or the 40-minute budget with blobs on unrelated refs.
+          # --filter=blob:none goes further: blobs materialize on demand
+          # for the checkout and the diff below, so blobs that exist only
+          # in intermediate commits (added then deleted, never in the
+          # final tree or the diff) are never downloaded at all.
           # No credentials here: the repos are public and the fetch URL
           # carries no token (the checkout this replaces used
           # persist-credentials: false for the same reason).
@@ -303,7 +307,7 @@ jobs:
           git init -q -b main
           git remote set-url origin "https://github.com/${TARGET_REPO}.git" 2>/dev/null ||
             git remote add origin "https://github.com/${TARGET_REPO}.git"
-          git fetch --no-tags origin "$TARGET_REF"
+          git fetch --no-tags --filter=blob:none origin "$TARGET_REF"
           git -c advice.detachedHead=false checkout -q --detach FETCH_HEAD
 
       - name: Load trusted review guide
@@ -326,6 +330,22 @@ jobs:
             git show "HEAD:REVIEWING.md" > "$guide"
           fi
           test -s "$guide"
+
+      - name: Guard fetched object size
+        if: steps.check_auth.outputs.authorized == 'true'
+        run: |
+          set -euo pipefail
+          # Defense in depth for the partial-clone fetch above: fail closed
+          # if the fetched objects are far beyond a normal checkout (a
+          # .git of ~50 MiB today). The time bound is the 40-minute job
+          # timeout. 2 GiB leaves ample headroom for legitimate growth.
+          max_kib=2097152
+          size_kib="$(du -sk .git | cut -f1)"
+          echo "Fetched .git size: ${size_kib} KiB (limit ${max_kib} KiB)"
+          if (( size_kib > max_kib )); then
+            echo "::error title=Fetched objects::Fetched .git is ${size_kib} KiB, over the ${max_kib} KiB limit; refusing to review." >&2
+            exit 1
+          fi
 
       - name: Prepare isolated Codex runtime
         if: steps.check_auth.outputs.authorized == 'true'
