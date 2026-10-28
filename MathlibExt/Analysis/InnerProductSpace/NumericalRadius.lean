@@ -19,10 +19,10 @@ For a bounded operator `T` on a complex Hilbert space, the numerical radius is
 
   `w(T) = sup { ‖⟪T x, x⟫‖ : ‖x‖ = 1 }`,
 
-the largest modulus in the numerical range. Base MathlibExt already has the
-numerical range as a set (`numericalRange` in
-`MathlibExt/Analysis/InnerProductSpace/ToeplitzHausdorff.lean`) and its
-convexity (Toeplitz–Hausdorff), but no radius. The main results here are the
+the supremum of the moduli in the numerical range. It need not be attained.
+The existing `numericalRange` API in
+`MathlibExt/Analysis/InnerProductSpace/ToeplitzHausdorff.lean` uses the same
+quadratic form on unit vectors. The main results here are the
 standard two-sided estimate, valid for complex Hilbert spaces only:
 
 * `w(T) ≤ ‖T‖`, by Cauchy–Schwarz;
@@ -41,9 +41,10 @@ has numerical radius `0` and norm `1`), so everything is stated over `ℂ`.
 
 This is a companion to the self-adjoint / spectral material of
 `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`
-(May 2021). It is not one of the 72 v1 targets, and it is not in the
-pinned Mathlib or in base MathlibExt. Classical reference: Rudin,
-*Functional Analysis*, 2nd edition, Chapter 12.
+(May 2021). It is a newly proved supporting result outside the 72 v1 targets.
+The radius is linked to the existing numerical range; the Cartesian parts
+are the operator-valued forms of Mathlib's `realPart` and `imaginaryPart`.
+The two-sided estimate uses Mathlib's adjoint and Rayleigh-quotient APIs.
 
 ## Main declarations
 
