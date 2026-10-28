@@ -19,7 +19,7 @@ For `1 ≤ p < ∞`, the unit vectors `e i = lp.single p i 1` form a Schauder ba
 of `ℓ^p (ι, 𝕜)`, with coordinate functionals given by evaluation at `i`. In
 fact they form an *unconditional* Schauder basis: every `x ∈ ℓ^p` is the sum of
 `x i • e i` over finite subsets of `ι`, directed by inclusion. When `ι = ℕ`
-this gives the classical (conditional) Schauder basis, whose `n`-th partial-sum
+this gives the classical sequential Schauder basis, whose `n`-th partial-sum
 projection is truncation to the first `n` coordinates. The projections are
 contractive: their operator norms are at most `1`.
 
@@ -74,7 +74,7 @@ noncomputable def lpUnconditionalSchauderBasis [DecidableEq ι] (hp : p ≠ ⊤)
     rw [hfun]
     exact h
 
-/-- The unit vectors of `ℓ^p (ℕ, 𝕜)` form a classical (conditional) Schauder basis. -/
+/-- The unit vectors of `ℓ^p (ℕ, 𝕜)` form a classical sequential Schauder basis. -/
 noncomputable def lpSchauderBasis (hp : p ≠ ⊤) :
     SchauderBasis 𝕜 (lp (fun _ : ℕ => 𝕜) p) where
   basis i := lp.single p i 1
