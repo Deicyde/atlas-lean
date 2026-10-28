@@ -32,7 +32,7 @@ example := (satisfiesLDP_dirac (0 : ℝ)).borel_bounds (Set.Iic 1)
 can be recovered from its Borel bounds. -/
 example : SatisfiesLDP (fun _ => Measure.dirac (0 : ℝ)) (diracRate 0) :=
   satisfiesLDP_of_borel_bounds (satisfiesLDP_dirac 0).isRateFunction
-    (fun Γ => (satisfiesLDP_dirac (0 : ℝ)).borel_bounds Γ)
+    (fun Γ _hΓ => (satisfiesLDP_dirac (0 : ℝ)).borel_bounds Γ)
 
 /-- `x ↦ ENNReal.ofReal |x|` is a good rate function on `ℝ`. -/
 example : IsGoodRateFunction (fun x : ℝ => ENNReal.ofReal |x|) :=
@@ -57,6 +57,17 @@ example : (⨅ x ∈ Set.Icc (0 : ℝ) 1, ((diracRate (0 : ℝ) x : ℝ≥0∞) 
 since the center does not lie in the interval. -/
 example : (⨅ x ∈ Set.Ioc (0 : ℝ) 1, ((diracRate (0 : ℝ) x : ℝ≥0∞) : EReal)) = ⊤ :=
   iInf_diracRate_of_notMem (by simp)
+
+/-- A caller with bounds only for measurable sets can use the converse. -/
+example {X : Type*} [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X]
+    {μ : ℕ → Measure X} {I : X → ℝ≥0∞} (hRate : IsRateFunction I)
+    (hBorel : ∀ Γ : Set X, MeasurableSet Γ →
+      - (⨅ x ∈ interior Γ, (I x : EReal)) ≤
+          liminf (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ∧
+        limsup (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ≤
+          - (⨅ x ∈ closure Γ, (I x : EReal))) :
+    SatisfiesLDP μ I :=
+  satisfiesLDP_of_borel_bounds hRate hBorel
 
 #print axioms satisfiesLDP_dirac
 #print axioms isGoodRateFunction_abs

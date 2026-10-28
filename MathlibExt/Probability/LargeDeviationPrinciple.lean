@@ -38,10 +38,10 @@ A sequence of measures `μₙ` satisfies a large deviation principle (LDP)
 with rate function `I` and speed `n` if the logarithmic asymptotics of
 `μₙ(Γ)` are controlled by the infimum of `I` over `Γ`: roughly,
 `μₙ(Γ) ≈ exp (-n inf_{x ∈ Γ} I(x))`. This file ports the definitions
-from `v1/Atlas/TheoryOfProbability/code/LargeDeviations.lean`, with one
-correction to the definition of a good rate function (see below), and
-proves the Borel-set form of the bounds, the Dirac-mass example, and a
-good rate function on `ℝ`.
+from `v1/Atlas/TheoryOfProbability/code/LargeDeviations.lean`, with
+finite-level goodness and topological/measurable-space compatibility
+made explicit (see below), and proves measurable-set bounds, the Dirac-mass
+example, and a good rate function on `ℝ`.
 
 ## Source
 
@@ -61,7 +61,14 @@ But `{x | I x ≤ ⊤}` is the whole space, so on any non-compact space
 (such as `ℝ`) no good rate function exists under that definition.
 The standard definition only requires compactness for finite levels,
 and that is what is formalized here:
-`∀ a : ℝ, IsCompact {x | I x ≤ ENNReal.ofReal a}`.
+`∀ a : ℝ, IsCompact {x | I x ≤ ENNReal.ofReal a}`. Negative real
+levels are clipped to `0`, so they repeat the zero-level condition.
+
+The LDP structure explicitly requires `OpensMeasurableSpace X`, ensuring
+that the open and closed sets in its bounds are measurable. The converse
+accepts bounds only for measurable sets; on a `BorelSpace X` these are
+the textbook Borel sets. The forward bounds also hold for arbitrary sets
+through monotonicity of measures, and are retained as stronger corollaries.
 
 ## Main results
 
@@ -69,12 +76,10 @@ and that is what is formalized here:
 * `IsGoodRateFunction`: a rate function with compact finite sub-level
   sets (corrected definition, see above).
 * `IsConvexRateFunction`: a rate function that is convex.
-* `SatisfiesLDP`: the LDP bounds, in the open/closed form of v1.
-* `SatisfiesLDP.borel_bounds`: the equivalent bounds for an arbitrary
-  Borel set `Γ`, with `interior Γ` and `closure Γ` in place of the open
-  and closed sets.
-* `satisfiesLDP_of_borel_bounds`: the converse, so the Borel form and
-  the open/closed form of the LDP are equivalent.
+* `SatisfiesLDP`: open/closed LDP bounds with explicit measurable-open-set compatibility.
+* `SatisfiesLDP.borel_bounds`: bounds for any set `Γ`, including measurable
+  sets, with `interior Γ` and `closure Γ` in place of open and closed sets.
+* `satisfiesLDP_of_borel_bounds`: measurable-set bounds imply the open/closed LDP.
 * `satisfiesLDP_dirac`: the Dirac mass at `x₀` satisfies the LDP with
   the rate function that is `0` at `x₀` and `∞` elsewhere.
 * `isGoodRateFunction_abs`: `x ↦ ENNReal.ofReal |x|` is a good rate
@@ -89,8 +94,7 @@ structure IsRateFunction {X : Type*} [TopologicalSpace X] (I : X → ℝ≥0∞)
   lowerSemicontinuous : LowerSemicontinuous I
 
 /-- A **good rate function** is a rate function whose finite sub-level
-sets `{x | I x ≤ a}` are all compact. Goodness ensures that the
-variational problems `inf_{x ∈ Γ} I(x)` are attained. This is the
+sets `{x | I x ≤ a}` are all compact. This is the
 corrected form of v1's definition: v1 quantified over all
 `a : ℝ≥0∞`, including `a = ⊤`, which forces the whole space to be
 compact and makes the definition vacuous on non-compact spaces. -/
@@ -110,9 +114,10 @@ structure IsConvexRateFunction {X : Type*} [TopologicalSpace X] [AddCommMonoid X
 deviation principle** with rate function `I : X → [0, ∞]` and speed
 `n` if `I` is a rate function and the following asymptotic bounds
 hold: a `liminf` lower bound over open sets `U` and a `limsup` upper
-bound over closed sets `F`. -/
+bound over closed sets `F`. `OpensMeasurableSpace X` ensures that these sets
+are measurable in the measure space used by `μ`. -/
 structure SatisfiesLDP {X : Type*} [TopologicalSpace X] [MeasurableSpace X]
-    (μ : ℕ → Measure X) (I : X → ℝ≥0∞) : Prop where
+    [OpensMeasurableSpace X] (μ : ℕ → Measure X) (I : X → ℝ≥0∞) : Prop where
   isRateFunction : IsRateFunction I
   lower_bound : ∀ U : Set X, IsOpen U →
     - (⨅ x ∈ U, (I x : EReal)) ≤
@@ -136,7 +141,8 @@ variable {X : Type*} [TopologicalSpace X] [MeasurableSpace X]
 
 /-- The LDP lower bound for an arbitrary set `Γ`, with its interior in
 place of the open set: `-inf_{interior Γ} I ≤ liminf (1/n) log μₙ(Γ)`. -/
-theorem SatisfiesLDP.borel_lower_bound {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
+theorem SatisfiesLDP.borel_lower_bound [OpensMeasurableSpace X]
+    {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
     (h : SatisfiesLDP μ I) (Γ : Set X) :
     - (⨅ x ∈ interior Γ, (I x : EReal)) ≤
       liminf (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop := by
@@ -150,7 +156,8 @@ theorem SatisfiesLDP.borel_lower_bound {μ : ℕ → Measure X} {I : X → ℝ�
 
 /-- The LDP upper bound for an arbitrary set `Γ`, with its closure in
 place of the closed set: `limsup (1/n) log μₙ(Γ) ≤ -inf_{closure Γ} I`. -/
-theorem SatisfiesLDP.borel_upper_bound {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
+theorem SatisfiesLDP.borel_upper_bound [OpensMeasurableSpace X]
+    {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
     (h : SatisfiesLDP μ I) (Γ : Set X) :
     limsup (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ≤
       - (⨅ x ∈ closure Γ, (I x : EReal)) := by
@@ -162,9 +169,10 @@ theorem SatisfiesLDP.borel_upper_bound {μ : ℕ → Measure X} {I : X → ℝ�
   · exact ENNReal.log_monotone (measure_mono subset_closure)
   · exact EReal.inv_nonneg_of_nonneg (by exact_mod_cast Nat.zero_le n)
 
-/-- The LDP bounds for an arbitrary set `Γ`, in the Borel form of the
-textbook statement. -/
-theorem SatisfiesLDP.borel_bounds {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
+/-- The LDP bounds hold for an arbitrary set `Γ` by monotonicity.
+This stronger all-set corollary includes the textbook measurable/Borel-set form. -/
+theorem SatisfiesLDP.borel_bounds [OpensMeasurableSpace X]
+    {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
     (h : SatisfiesLDP μ I) (Γ : Set X) :
     - (⨅ x ∈ interior Γ, (I x : EReal)) ≤
         liminf (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ∧
@@ -172,22 +180,23 @@ theorem SatisfiesLDP.borel_bounds {μ : ℕ → Measure X} {I : X → ℝ≥0∞
         - (⨅ x ∈ closure Γ, (I x : EReal)) :=
   ⟨h.borel_lower_bound Γ, h.borel_upper_bound Γ⟩
 
-/-- Conversely, the Borel-form bounds imply the open/closed form: for
-an open set, `interior Γ = Γ`, and for a closed set, `closure Γ = Γ`.
-Together with `SatisfiesLDP.borel_bounds`, the two formulations are
-equivalent. -/
-theorem satisfiesLDP_of_borel_bounds {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
+/-- Conversely, bounds for measurable sets imply the open/closed form.
+Open and closed sets are measurable by `OpensMeasurableSpace X`, and their
+interior/closure equals the set itself. On a Borel space this is the
+textbook Borel-set converse. -/
+theorem satisfiesLDP_of_borel_bounds [OpensMeasurableSpace X]
+    {μ : ℕ → Measure X} {I : X → ℝ≥0∞}
     (hRate : IsRateFunction I)
-    (h : ∀ Γ : Set X,
+    (h : ∀ Γ : Set X, MeasurableSet Γ →
       - (⨅ x ∈ interior Γ, (I x : EReal)) ≤
           liminf (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ∧
         limsup (fun n => ((n : ℕ) : EReal)⁻¹ * ENNReal.log (μ n Γ)) atTop ≤
           - (⨅ x ∈ closure Γ, (I x : EReal))) :
     SatisfiesLDP μ I := by
   refine ⟨hRate, fun U hU => ?_, fun F hF => ?_⟩
-  · have hU' := (h U).1
+  · have hU' := (h U hU.measurableSet).1
     rwa [hU.interior_eq] at hU'
-  · have hF' := (h F).2
+  · have hF' := (h F hF.measurableSet).2
     rwa [hF.closure_eq] at hF'
 
 omit [TopologicalSpace X] [MeasurableSpace X] in
