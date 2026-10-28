@@ -10,6 +10,8 @@ module
 
 public import Mathlib.Analysis.Normed.Lp.lpSpace
 public import Mathlib.Analysis.Normed.Module.Dual
+public import Mathlib.Topology.ContinuousMap.ZeroAtInfty
+public import Mathlib.Topology.Compactness.Compact
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
@@ -23,13 +25,15 @@ subspace of `ℓ^∞(ι, 𝕜)` of sequences tending to `0`. Its continuous dual
 isometrically isomorphic to `ℓ¹(ι, 𝕜)`: the isomorphism sends `a ∈ ℓ¹` to
 the functional `x ↦ ∑' i, a i * x i`.
 
-This is the companion in the `v1` Functional Analysis book of the `L^p`-norm
-and dual-space material (February–April 2021 sections): the book defines the
-dual space of a normed space and the `L^p` norms, and the `ℓ^p`-duality
-companion (batch 43) covers `ℓ^p` for `1 ≤ p < ∞`; the `c₀` case is the
-remaining sequence-space duality. The heart of the proof is the same
-finite-subset test-vector argument, with the unit-modulus scalar
-`conj w / ‖w‖` in place of the test vector used for `ℓ^p`.
+The public space is Mathlib's `ZeroAtInftyContinuousMap` on the index type
+with its discrete topology, so the standard normed-space and completeness
+instances apply. The `ℓ^∞` submodule representation is retained only through
+its canonical coordinate-preserving linear isometric equivalence.
+
+This duality is a new derived supporting result. The archived dual-space,
+`L^p` and Hahn–Banach material provides related context, not an exact `c₀`
+duality target or proof. The coefficient estimate uses finite subsets and
+`conj w / ‖w‖`; finite truncations then recover each functional.
 
 ## Main declarations
 
@@ -45,14 +49,15 @@ finite-subset test-vector argument, with the unit-modulus scalar
 
 namespace MathlibExt.Analysis.Normed.Lp.DualC0
 
-open scoped ENNReal Topology
+open scoped ENNReal Topology ZeroAtInfty
 open Filter
 
 universe u v
 
 section C0
 
-/-- The sequences vanishing at infinity, as a submodule of `ℓ^∞`. -/
+/-- The `ℓ^∞` representation of canonical `c₀`, retained for compatibility.
+`c0LpEquiv` identifies it isometrically with the standard space. -/
 noncomputable def c0Submodule (𝕜 : Type u) [RCLike 𝕜] (ι : Type v) :
     Submodule 𝕜 (lp (fun _ : ι => 𝕜) ∞) where
   carrier := { f | Filter.Tendsto (⇑f) Filter.cofinite (𝓝 0) }
@@ -76,26 +81,96 @@ noncomputable def c0Submodule (𝕜 : Type u) [RCLike 𝕜] (ι : Type v) :
     rw [hfun]
     simpa only [smul_zero] using Filter.Tendsto.const_smul hf c
 
-/-- The space `c₀(ι, 𝕜)` of sequences vanishing at infinity. -/
-abbrev c0 (𝕜 : Type u) [RCLike 𝕜] (ι : Type v) : Type (max u v) := ↥(c0Submodule 𝕜 ι)
+/-- The canonical `C₀` space on the index type with its discrete topology.
+The scalar/index argument order is retained, and no topology on `ι` is assumed. -/
+abbrev c0 (𝕜 : Type u) [RCLike 𝕜] (ι : Type v) : Type (max u v) :=
+  @ZeroAtInftyContinuousMap ι 𝕜 ⊥ _ _
 
-variable {𝕜 : Type u} [RCLike 𝕜] {ι : Type v} [DecidableEq ι]
+variable {𝕜 : Type u} [RCLike 𝕜] {ι : Type v}
 
-omit [DecidableEq ι] in
-/-- The norm of a `c₀` element is the norm of the underlying `ℓ^∞` element. -/
-theorem c0_norm (x : c0 𝕜 ι) : ‖x‖ = ‖(x : lp (fun _ : ι => 𝕜) ∞)‖ :=
-  (Submodule.norm_coe x).symm
+/-- Canonical `C₀` functions on the discrete index vanish along `cofinite`. -/
+theorem c0_tendsto_zero (x : c0 𝕜 ι) : Tendsto (x : ι → 𝕜) cofinite (𝓝 0) := by
+  letI : TopologicalSpace ι := ⊥
+  letI : DiscreteTopology ι := ⟨rfl⟩
+  have h := x.zero_at_infty'
+  rw [Filter.cocompact_eq_cofinite] at h
+  exact h
 
-omit [DecidableEq ι] in
-/-- A coordinate of a `c₀` element is bounded by its norm. -/
+/-- A coordinate of a canonical `c₀` element is bounded by its norm. -/
 theorem c0_apply_norm_le (x : c0 𝕜 ι) (i : ι) : ‖(x : ι → 𝕜) i‖ ≤ ‖x‖ := by
-  rw [c0_norm]
-  exact lp.norm_apply_le_norm (by simp : (∞ : ℝ≥0∞) ≠ 0) _ i
+  letI : TopologicalSpace ι := ⊥
+  have h := BoundedContinuousFunction.norm_coe_le_norm x.toBCF i
+  rwa [ZeroAtInftyContinuousMap.norm_toBCF_eq_norm] at h
+
+/-- The coordinate-preserving inclusion of canonical `c₀` in `ℓ^∞`. -/
+noncomputable def c0ToLp (x : c0 𝕜 ι) : lp (fun _ : ι => 𝕜) ∞ :=
+  ⟨(x : ι → 𝕜), memℓp_infty ⟨‖x‖, by
+    rintro _ ⟨i, rfl⟩
+    exact c0_apply_norm_le x i⟩⟩
+
+noncomputable instance : CoeTC (c0 𝕜 ι) (lp (fun _ : ι => 𝕜) ∞) := ⟨c0ToLp⟩
+
+@[simp] theorem c0ToLp_apply (x : c0 𝕜 ι) (i : ι) : c0ToLp x i = (x : ι → 𝕜) i := rfl
+
+/-- The canonical norm equals the supremum norm of the `ℓ^∞` inclusion. -/
+theorem c0_norm (x : c0 𝕜 ι) : ‖x‖ = ‖(x : lp (fun _ : ι => 𝕜) ∞)‖ := by
+  letI : TopologicalSpace ι := ⊥
+  apply le_antisymm
+  · rw [← ZeroAtInftyContinuousMap.norm_toBCF_eq_norm (f := x)]
+    apply (BoundedContinuousFunction.norm_le (norm_nonneg _)).mpr
+    intro i
+    exact lp.norm_apply_le_norm (by simp : (∞ : ℝ≥0∞) ≠ 0) (x : lp (fun _ : ι => 𝕜) ∞) i
+  · apply lp.norm_le_of_forall_le (norm_nonneg x)
+    exact c0_apply_norm_le x
+
+/-- Build canonical `c₀` from an `ℓ^∞` sequence and its cofinite limit.
+This is the migration helper for the former subtype constructor. -/
+noncomputable def c0OfLp (x : lp (fun _ : ι => 𝕜) ∞)
+    (hx : Tendsto (x : ι → 𝕜) cofinite (𝓝 0)) : c0 𝕜 ι := by
+  letI : TopologicalSpace ι := ⊥
+  letI : DiscreteTopology ι := ⟨rfl⟩
+  exact ZeroAtInftyContinuousMap.mk
+    ⟨(x : ι → 𝕜), continuous_of_discreteTopology⟩ (by
+      rw [Filter.cocompact_eq_cofinite]
+      exact hx)
+
+@[simp] theorem c0OfLp_apply (x : lp (fun _ : ι => 𝕜) ∞)
+    (hx : Tendsto (x : ι → 𝕜) cofinite (𝓝 0)) (i : ι) :
+    (c0OfLp x hx : ι → 𝕜) i = x i := rfl
+
+/-- The canonical space and its existing `ℓ^∞` submodule representation are
+linearly isometric through the unchanged coordinate function. -/
+noncomputable def c0LpEquiv : c0 𝕜 ι ≃ₗᵢ[𝕜] ↥(c0Submodule 𝕜 ι) := by
+  letI : TopologicalSpace ι := ⊥
+  exact
+    { toFun x := ⟨(x : lp (fun _ : ι => 𝕜) ∞), c0_tendsto_zero x⟩
+      invFun x := c0OfLp (x : lp (fun _ : ι => 𝕜) ∞) x.2
+      left_inv x := by
+        apply ZeroAtInftyContinuousMap.ext
+        intro i
+        rfl
+      right_inv x := by
+        apply Subtype.ext
+        apply lp.ext
+        rfl
+      map_add' x y := by
+        apply Subtype.ext
+        apply lp.ext
+        funext i
+        rfl
+      map_smul' c x := by
+        apply Subtype.ext
+        apply lp.ext
+        funext i
+        rfl
+      norm_map' x := (c0_norm x).symm }
+
+variable [DecidableEq ι]
 
 /-- The sequence which is `a` at `i` and `0` elsewhere, as an element of `c₀`. -/
 noncomputable def c0Single (i : ι) (a : 𝕜) : c0 𝕜 ι := by
   classical
-  refine ⟨lp.single ∞ i a, ?_⟩
+  refine c0OfLp (lp.single ∞ i a) ?_
   have hev : (fun _ : ι => (0 : 𝕜)) =ᶠ[Filter.cofinite]
       (⇑(lp.single (E := fun _ : ι => 𝕜) ∞ i a : lp (fun _ : ι => 𝕜) ∞)) := by
     show ∀ᶠ j in Filter.cofinite, (0 : 𝕜) = (lp.single (E := fun _ : ι => 𝕜) ∞ i a) j
@@ -128,15 +203,16 @@ noncomputable def c0FinsetSum (s : Finset ι) (c : ι → 𝕜) : c0 𝕜 ι :=
 theorem c0FinsetSum_apply (s : Finset ι) (c : ι → 𝕜) (j : ι) :
     ((c0FinsetSum (𝕜 := 𝕜) (ι := ι) s c : c0 𝕜 ι) : ι → 𝕜) j
       = if j ∈ s then c j else 0 := by
-  have hcoe : ((c0FinsetSum (𝕜 := 𝕜) (ι := ι) s c : c0 𝕜 ι) :
-        lp (fun _ : ι => 𝕜) ∞)
-      = ∑ i ∈ s, ((c i • c0Single (𝕜 := 𝕜) (ι := ι) i (1 : 𝕜) : c0 𝕜 ι) :
-        lp (fun _ : ι => 𝕜) ∞) :=
-    map_sum (Submodule.subtype (c0Submodule 𝕜 ι)) _ _
-  show ((c0FinsetSum (𝕜 := 𝕜) (ι := ι) s c : c0 𝕜 ι) : ι → 𝕜) j = _
-  rw [hcoe, lp.coeFn_sum]
-  simp only [Finset.sum_apply, Submodule.coe_smul, lp.coeFn_smul, Pi.smul_apply,
-    smul_eq_mul, c0Single_apply, mul_ite, mul_one, mul_zero]
+  letI : TopologicalSpace ι := ⊥
+  let ev : c0 𝕜 ι →+ 𝕜 :=
+    { toFun := fun x => (x : ι → 𝕜) j
+      map_zero' := rfl
+      map_add' := fun _ _ => rfl }
+  change ev (∑ i ∈ s, c i • c0Single i (1 : 𝕜)) = if j ∈ s then c j else 0
+  rw [map_sum]
+  change (∑ i ∈ s, ((c i • c0Single i (1 : 𝕜) : c0 𝕜 ι) : ι → 𝕜) j) = _
+  simp only [ZeroAtInftyContinuousMap.smul_apply, smul_eq_mul, c0Single_apply,
+    mul_ite, mul_one, mul_zero]
   exact Finset.sum_ite_eq s j c
 
 /-- A functional applied to a finitely supported sequence. -/
@@ -182,12 +258,12 @@ noncomputable def c0PairingLin (a : lp (fun _ : ι => 𝕜) 1) : c0 𝕜 ι →�
   map_add' x y := by
     rw [← Summable.tsum_add (summable_c0Pairing a x) (summable_c0Pairing a y)]
     refine tsum_congr fun i => ?_
-    simp [Submodule.coe_add, mul_add]
+    simp [ZeroAtInftyContinuousMap.coe_add, mul_add]
   map_smul' c x := by
     simp only [RingHom.id_apply, smul_eq_mul]
     rw [← tsum_mul_left]
     refine tsum_congr fun i => ?_
-    simp [lp.coeFn_smul, Pi.smul_apply, smul_eq_mul]
+    simp [ZeroAtInftyContinuousMap.coe_smul, Pi.smul_apply, smul_eq_mul]
     ring
 
 /-- The pairing applied to `a` and `x`, by definition. -/
@@ -284,7 +360,7 @@ variable {𝕜 : Type u} [RCLike 𝕜] {ι : Type v} [DecidableEq ι]
 noncomputable def c0Coeff (Φ : StrongDual 𝕜 (c0 𝕜 ι)) : ι → 𝕜 :=
   fun i => Φ (c0Single i (1 : 𝕜))
 
-/-- The unit-modulus scalar with `unitScalar w * w = ‖w‖`. -/
+/-- The normalized scalar, zero at zero, with `unitScalar w * w = ‖w‖`. -/
 noncomputable def c0UnitScalar (w : 𝕜) : 𝕜 :=
   if w = 0 then 0 else (starRingEnd 𝕜) w / (↑‖w‖ : 𝕜)
 
@@ -310,14 +386,15 @@ theorem norm_c0UnitScalar_le (w : 𝕜) : ‖c0UnitScalar (𝕜 := 𝕜) w‖ �
 /-- The finite-subset estimate for the coefficients of a dual functional. -/
 theorem c0Coeff_finset_sum_le (Φ : StrongDual 𝕜 (c0 𝕜 ι)) (s : Finset ι) :
     ∑ i ∈ s, ‖c0Coeff (𝕜 := 𝕜) (ι := ι) Φ i‖ ≤ ‖Φ‖ := by
+  letI : TopologicalSpace ι := ⊥
   classical
   set x : c0 𝕜 ι := c0FinsetSum (𝕜 := 𝕜) (ι := ι) s (fun i => c0UnitScalar (𝕜 := 𝕜) (c0Coeff Φ i))
     with hxdef
   have hnormx : ‖x‖ ≤ 1 := by
-    rw [c0_norm]
-    apply lp.norm_le_of_forall_le (by norm_num : (0 : ℝ) ≤ 1)
+    rw [← ZeroAtInftyContinuousMap.norm_toBCF_eq_norm (f := x)]
+    apply (BoundedContinuousFunction.norm_le (by norm_num : (0 : ℝ) ≤ 1)).mpr
     intro j
-    show ‖((x : c0 𝕜 ι) : ι → 𝕜) j‖ ≤ 1
+    change ‖((x : c0 𝕜 ι) : ι → 𝕜) j‖ ≤ 1
     rw [hxdef, c0FinsetSum_apply]
     by_cases hj : j ∈ s
     · rw [ite_eq_left hj]
@@ -364,6 +441,7 @@ variable {𝕜 : Type u} [RCLike 𝕜] {ι : Type v} [DecidableEq ι]
 /-- The pairing with the coefficient sequence reproduces a functional, by
 finite truncation: the partial sums over finite sets tend to `Φ x`. -/
 theorem c0DualPairing_surjective : Function.Surjective (c0DualPairing (𝕜 := 𝕜) (ι := ι)) := by
+  letI : TopologicalSpace ι := ⊥
   classical
   intro Φ
   refine ⟨c0CoeffLp Φ, ?_⟩
@@ -379,7 +457,8 @@ theorem c0DualPairing_surjective : Function.Surjective (c0DualPairing (𝕜 := �
     set δ : ℝ := ε / (‖Φ‖ + 1) with hδdef
     have hδpos : 0 < δ := div_pos hε (by positivity)
     have hev : ∀ᶠ i in Filter.cofinite, ‖(x : ι → 𝕜) i‖ < δ := by
-      have hx : Filter.Tendsto (⇑(x : lp (fun _ : ι => 𝕜) ∞)) Filter.cofinite (𝓝 0) := x.2
+      have hx : Filter.Tendsto (⇑(x : lp (fun _ : ι => 𝕜) ∞)) Filter.cofinite (𝓝 0) :=
+        c0_tendsto_zero x
       have h := (Metric.tendsto_nhds).mp hx δ hδpos
       exact h.mono fun i hi => by rwa [dist_eq_norm, sub_zero] at hi
     have hfin : { i : ι | ¬ ‖(x : ι → 𝕜) i‖ < δ }.Finite :=
@@ -392,9 +471,10 @@ theorem c0DualPairing_surjective : Function.Surjective (c0DualPairing (𝕜 := �
       exact mul_comm _ _
     rw [htrunc, dist_eq_norm, ← map_sub]
     have hnorm : ‖c0Trunc (𝕜 := 𝕜) (ι := ι) s x - x‖ ≤ δ := by
-      rw [c0_norm]
-      apply lp.norm_le_of_forall_le hδpos.le
+      rw [← ZeroAtInftyContinuousMap.norm_toBCF_eq_norm (f := c0Trunc s x - x)]
+      apply (BoundedContinuousFunction.norm_le hδpos.le).mpr
       intro j
+      change ‖((c0Trunc s x - x : c0 𝕜 ι) : ι → 𝕜) j‖ ≤ δ
       have hsub : ((c0Trunc (𝕜 := 𝕜) (ι := ι) s x - x : c0 𝕜 ι) : ι → 𝕜) j
           = ((c0Trunc (𝕜 := 𝕜) (ι := ι) s x : c0 𝕜 ι) : ι → 𝕜) j - (x : ι → 𝕜) j := by
         simp

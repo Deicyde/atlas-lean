@@ -14,7 +14,7 @@ public import MathlibExt.Analysis.Normed.Lp.DualC0
 
 namespace MathlibExtTest.Analysis.Normed.Lp.DualC0
 
-open scoped ENNReal Topology
+open scoped ENNReal Topology ZeroAtInfty
 
 open MathlibExt.Analysis.Normed.Lp.DualC0
 
@@ -69,19 +69,19 @@ example : c0DualPairing (𝕜 := ℝ) (ι := ℕ) (lp.single 1 0 (1 : ℝ))
 
 /-- The sequence `n ↦ 1 / (n + 1)`, as an element of `c₀(ℕ, ℝ)`. -/
 noncomputable def testSeq : c0 ℝ ℕ :=
-  ⟨⟨fun n : ℕ => (1 : ℝ) / ((n : ℝ) + 1), memℓp_infty ⟨1, by
+  c0OfLp ⟨fun n : ℕ => (1 : ℝ) / ((n : ℝ) + 1), memℓp_infty ⟨1, by
       rintro y ⟨n, rfl⟩
       show ‖(1 : ℝ) / ((n : ℝ) + 1)‖ ≤ 1
       rw [norm_div, norm_one, Real.norm_of_nonneg (by positivity : (0 : ℝ) ≤ (n : ℝ) + 1)]
       apply div_le_one_of_le₀
       · have h0 : (0 : ℝ) ≤ (n : ℝ) := Nat.cast_nonneg n
         linarith
-      · positivity⟩⟩, by
+      · positivity⟩⟩ (by
     have h : Filter.Tendsto (fun n : ℕ => (1 : ℝ) / ((n : ℝ) + 1))
         Filter.cofinite (𝓝 0) := by
       rw [Nat.cofinite_eq_atTop]
       exact tendsto_one_div_add_atTop_nhds_zero_nat
-    exact h⟩
+    exact h)
 
 -- Evaluation at `0` picks out the first term of `testSeq`.
 example : c0Eval (𝕜 := ℝ) (ι := ℕ) 0 testSeq = 1 := by
@@ -93,5 +93,29 @@ example : c0Eval (𝕜 := ℝ) (ι := ℕ) 1 testSeq = 1 / 2 := by
   show ((testSeq : c0 ℝ ℕ) : ℕ → ℝ) 1 = 1 / 2
   simp [testSeq]
   norm_num
+
+/-- The public canonical space has its standard completeness instance for any index. -/
+example (𝕜 : Type*) [RCLike 𝕜] (ι : Type*) : CompleteSpace (c0 𝕜 ι) := inferInstance
+
+-- These direct standard-type checks exercise both an inhabited and an empty index.
+#check (c0DualEquiv (𝕜 := ℝ) (ι := ℕ) :
+  lp (fun _ : ℕ => ℝ) 1 ≃ₗᵢ[ℝ] StrongDual ℝ C₀(ℕ, ℝ))
+#check (c0DualEquiv (𝕜 := ℂ) (ι := Empty) :
+  lp (fun _ : Empty => ℂ) 1 ≃ₗᵢ[ℂ] StrongDual ℂ C₀(Empty, ℂ))
+
+/-- The compatibility representation preserves the nonconstant sequence coordinate. -/
+example : (c0LpEquiv (𝕜 := ℝ) (ι := ℕ) testSeq : lp (fun _ : ℕ => ℝ) ∞) 1 = 1 / 2 := by
+  change (testSeq : ℕ → ℝ) 1 = 1 / 2
+  simp [testSeq]
+  norm_num
+
+/-- The complex pairing is bilinear multiplication, without conjugating a coefficient. -/
+example : c0DualPairing (𝕜 := ℂ) (ι := ℕ) (lp.single 1 0 Complex.I)
+    (c0Single 0 Complex.I) = -1 := by
+  rw [c0DualPairing_apply, tsum_eq_single 0]
+  · simp [c0Single_apply]
+  · intro j hj
+    rw [lp.single_apply_ne _ _ _ hj]
+    simp
 
 end MathlibExtTest.Analysis.Normed.Lp.DualC0
