@@ -48,7 +48,7 @@ Chapter 5, for the classical statements.
 * `FiniteFrame.frameOperatorInv` : the inverse frame operator `S⁻¹`.
 * `FiniteFrame.frame_reconstruction` : `x = ∑ i, ⟪f i, S⁻¹ x⟫_𝕜 • f i`.
 * `FiniteFrame.dualFrame` : the canonical dual frame `S⁻¹ (f i)`.
-* `FiniteFrame.isFrame_dualFrame` : the dual frame is a frame with the sharp
+* `FiniteFrame.isFrame_dualFrame` : the dual frame is a frame with reciprocal
   bounds `1 / B`, `1 / A`.
 * `FiniteFrame.frameOperator_eq_smul_one_of_isTightFrame` : a tight frame
   (equal bounds) has frame operator `A • 1`.
@@ -338,7 +338,7 @@ theorem frameOperator_dualFrame {f : ι → E} {A B : ℝ} (hf : IsFrame (𝕜 :
   rw [← ContinuousLinearMap.comp_apply, frameOperator_comp_frameOperatorInv]
   rfl
 
-/-- The canonical dual frame is a frame, with the sharp bounds `1 / B` and
+/-- The canonical dual frame is a frame, with reciprocal bounds `1 / B` and
 `1 / A`. -/
 theorem isFrame_dualFrame {f : ι → E} {A B : ℝ} (hf : IsFrame (𝕜 := 𝕜) f A B) :
     IsFrame (𝕜 := 𝕜) (dualFrame hf) (1 / B) (1 / A) := by
