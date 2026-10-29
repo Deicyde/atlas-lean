@@ -66,6 +66,10 @@ theorem norm_lpTwoPlus_at_p3 : ‖lpTwoPlus (3 : ENNReal)‖ = (2 : ℝ) ^ ((1 :
   have hfact : Fact (1 ≤ (3 : ENNReal)) := ⟨by norm_num⟩
   rw [norm_lpTwoPlus_of_ne_top (by simp), show (3 : ENNReal).toReal = (3 : ℝ) from by simp]
 
+/-- The norm of `(1, 1)` in `PiLp 4 (Fin 2 → ℝ)` is `2 ^ (1 / 4)`. -/
+theorem norm_lpTwoPlus_at_p4 : ‖lpTwoPlus (4 : ENNReal)‖ = (2 : ℝ) ^ ((1 : ℝ) / 4) := by
+  rw [norm_lpTwoPlus_of_ne_top (by simp), show (4 : ENNReal).toReal = (4 : ℝ) from by simp]
+
 /-- The norm of `(1, 1) + (1, -1)` in `PiLp 3 (Fin 2 → ℝ)` is `2`. -/
 theorem norm_add_at_p3 :
     ‖lpTwoPlus (3 : ENNReal) + lpTwoMinus (3 : ENNReal)‖ = 2 := by
@@ -98,6 +102,21 @@ theorem midpoint_eq_one_at_p1 :
   show ‖(1 / 2 : ℝ) • lpTwoPlus (1 : ENNReal)‖ = 1
   rw [norm_smul, norm_lpTwoPlus_of_ne_top (by simp)]
   norm_num [ENNReal.toReal_one, Real.rpow_one]
+
+/-- At `p = 4`, the standard strict-convexity API handles unequal positive weights. -/
+theorem convex_combination_lt_one_at_p4 :
+    ‖(1 / 4 : ℝ) • testSingle (4 : ENNReal) 0 +
+      (3 / 4 : ℝ) • testSingle (4 : ENNReal) 1‖ < 1 := by
+  let _ := strictConvexSpace_piLp_two (p := (4 : ENNReal))
+    (by norm_num [ENNReal.toReal_ofNat]) (by simp)
+  refine norm_combo_lt_of_ne ?_ ?_ ?_ (by norm_num) (by norm_num) (by norm_num)
+  · simp [testSingle, PiLp.norm_single]
+  · simp [testSingle, PiLp.norm_single]
+  · intro h
+    have h1 := congrArg
+      (fun z : PiLp (4 : ENNReal) (fun _ : Fin 2 => ℝ) => z (1 : Fin 2)) h
+    simp only [testSingle, PiLp.single_eq_same] at h1
+    norm_num at h1
 
 #print axioms parallelogram_eq_iff_piLp_two
 #print axioms not_innerProductSpace_piLp_two

@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Analysis.Convex.StrictConvexSpace
 public import Mathlib.Analysis.InnerProductSpace.Basic
 public import Mathlib.Analysis.InnerProductSpace.PiL2
 public import Mathlib.Analysis.Normed.Lp.PiLp
@@ -48,8 +49,11 @@ and its `L^p`-norm material, not one of the numbered `v1` targets.
   instance on `PiLp p (Fin 2 → ℝ)` induces the `ℓ^p` norm.
 * `piLp_two_strictConvex` : for `1 < p < ∞`, the midpoint of two distinct
   unit vectors in `PiLp p (Fin 2 → ℝ)` has norm `< 1`.
+* `strictConvexSpace_piLp_two` : the corresponding standard `StrictConvexSpace` instance.
 * `not_strictConvex_piLp_two_one`, `not_strictConvex_piLp_two_top` :
   strict convexity fails at the endpoints `p = 1` and `p = ∞`.
+* `not_strictConvexSpace_piLp_two_one`, `not_strictConvexSpace_piLp_two_top` :
+  those endpoint failures as negations of the standard class.
 -/
 
 @[expose] public section
@@ -328,6 +332,15 @@ theorem piLp_two_strictConvex (hp1 : 1 < p.toReal) (hp : p ≠ ⊤)
           Real.rpow_nonneg (abs_nonneg _) _) hsum (by positivity)
     _ = 1 := Real.one_rpow _
 
+/-- The real `PiLp p` space on two coordinates is strictly convex for `1 < p < ∞`,
+as an instance of Mathlib's standard strict-convexity class. -/
+theorem strictConvexSpace_piLp_two (hp1 : 1 < p.toReal) (hp : p ≠ ⊤) :
+    StrictConvexSpace ℝ (PiLp p (fun _ : Fin 2 => ℝ)) := by
+  apply StrictConvexSpace.of_norm_combo_lt_one
+  intro x y hx hy hxy
+  refine ⟨1 / 2, 1 / 2, by norm_num, ?_⟩
+  simpa only [smul_add] using piLp_two_strictConvex hp1 hp x y hx hy hxy
+
 /-- Strict convexity fails at `p = 1`: the unit vectors `(1, 0)` and `(0, 1)`
 have midpoint `(1 / 2, 1 / 2)` of norm `1`. -/
 theorem not_strictConvex_piLp_two_one :
@@ -346,6 +359,15 @@ theorem not_strictConvex_piLp_two_one :
     rw [norm_smul, norm_lpTwoPlus_of_ne_top h1top]
     norm_num [ENNReal.toReal_one, Real.rpow_one]
 
+/-- The real two-coordinate `PiLp 1` space is not strictly convex in the standard sense. -/
+theorem not_strictConvexSpace_piLp_two_one :
+    ¬ StrictConvexSpace ℝ (PiLp (1 : ENNReal) (fun _ : Fin 2 => ℝ)) := by
+  intro h
+  let _ := h
+  obtain ⟨x, y, hx, hy, hxy, hmid⟩ := not_strictConvex_piLp_two_one
+  have hlt := (norm_midpoint_lt_iff (x := x) (y := y) (hx.trans hy.symm)).2 hxy
+  exact hlt.ne (hmid.trans hx.symm)
+
 /-- Strict convexity fails at `p = ∞`: the unit vectors `(1, 1)` and `(1, -1)`
 have midpoint `(1, 0)` of norm `1`. -/
 theorem not_strictConvex_piLp_two_top :
@@ -363,5 +385,14 @@ theorem not_strictConvex_piLp_two_top :
         (2 : ℝ) • PiLp.single (⊤ : ENNReal) 0 (1 : ℝ) := lpTwoPlus_add_lpTwoMinus
     rw [hsum, smul_smul]
     norm_num [PiLp.norm_single]
+
+/-- The real two-coordinate `PiLp ∞` space is not strictly convex in the standard sense. -/
+theorem not_strictConvexSpace_piLp_two_top :
+    ¬ StrictConvexSpace ℝ (PiLp (⊤ : ENNReal) (fun _ : Fin 2 => ℝ)) := by
+  intro h
+  let _ := h
+  obtain ⟨x, y, hx, hy, hxy, hmid⟩ := not_strictConvex_piLp_two_top
+  have hlt := (norm_midpoint_lt_iff (x := x) (y := y) (hx.trans hy.symm)).2 hxy
+  exact hlt.ne (hmid.trans hx.symm)
 
 end MathlibExt.Analysis.FunctionalAnalysis.LpGeometry
